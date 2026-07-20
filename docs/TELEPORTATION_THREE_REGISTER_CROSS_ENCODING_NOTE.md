@@ -26,9 +26,11 @@ The stated surface remains the Kogut-Susskind cell/taste factorization:
 C^(side^dim) = C^((side/2)^dim cells) tensor C^(2^dim tastes)
 ```
 
-This remains ordinary quantum state teleportation only.  It does not claim
-matter teleportation, mass transfer, charge transfer, energy transfer, object
-transport, or faster-than-light signaling.
+This is only the ideal finite-dimensional logical teleportation identity. It
+does not claim a physical teleportation implementation, apparatus or resource
+preparation, Hamiltonian or matter transport, noise tolerance, durable-record
+production, an unbounded-lattice result, mass, charge, or energy transfer,
+object transport, or faster-than-light signaling.
 
 ## Map Requirements
 
@@ -106,9 +108,10 @@ Pi_zx^AR = (V_A tensor V_R) pi_zx (V_A^dag tensor V_R^dag)
 
 for `z,x in {0,1}`.  The two joint observables `Z tensor Z` and `X tensor X`
 are commuting Hermitian involutions: the two local Pauli anticommutations
-cancel in their tensor product. Their four joint eigenspaces are
-one-dimensional, so the four `pi_zx` are rank-one orthogonal projectors
-summing to `I_4`. The embedded projectors therefore sum to
+cancel in their tensor product. The four explicit Bell vectors defined below
+form an orthonormal basis with the four displayed joint-eigenvalue pairs, so
+the four `pi_zx` are rank-one orthogonal projectors summing to `I_4`. The
+embedded projectors therefore sum to
 `P_A tensor P_R` and are the correct Bell measurement on the two encoded
 Alice-side supports.
 
@@ -419,4 +422,5 @@ Larger even lattices can be requested but are not claimed by the default run.
 The Bell resource, Bell measurement, conversion maps, and Bob corrections are
 ideal logical objects.  The runner does not derive a physical resource
 preparation channel, measurement apparatus, durable record, Hamiltonian
-transport, noise model, or readout model.
+transport, noise model, readout model, physical teleportation implementation,
+or unbounded-lattice result.

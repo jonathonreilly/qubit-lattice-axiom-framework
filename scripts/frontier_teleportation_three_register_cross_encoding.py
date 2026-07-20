@@ -15,9 +15,11 @@ factorization used by the protocol, portability, and cross-encoding runners:
 
     C^(side^dim) = C^((side/2)^dim cells) tensor C^(2^dim tastes)
 
-This is ordinary quantum state teleportation only.  It does not claim matter
-transport, mass transfer, charge transfer, energy transfer, object transport,
-or faster-than-light signaling.
+This checks only the ideal finite-dimensional logical teleportation identity.
+It does not claim a physical teleportation implementation, apparatus or
+resource preparation, Hamiltonian or matter transport, noise tolerance,
+durable-record production, an unbounded-lattice result, mass, charge, or
+energy transfer, object transport, or faster-than-light signaling.
 """
 
 from __future__ import annotations
@@ -1422,7 +1424,7 @@ def print_summary(
     max_triples_per_geometry: int,
 ) -> bool:
     print("THREE-REGISTER CROSS-ENCODING TASTE-QUBIT TELEPORTATION CERTIFICATE")
-    print("Scope: exact finite logical algebra; quantum state teleportation only")
+    print("Scope: exact finite logical algebra; ideal state-transfer identity only")
     print()
     print(f"Requested dimensions: {dims}")
     print(f"Requested side lengths: {sides}")
@@ -1492,7 +1494,7 @@ def print_summary(
     print("  It does not derive apparatus dynamics, durable records, resource")
     print("  preparation, Hamiltonian transport, noise tolerance, matter transfer,")
     print("  object transport, charge transfer, mass transfer, energy transfer,")
-    print("  or FTL signaling.")
+    print("  physical teleportation, an unbounded-lattice result, or FTL signaling.")
 
     logical = structural_certificate.logical
     pass_checks = {

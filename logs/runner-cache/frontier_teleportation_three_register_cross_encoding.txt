@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_teleportation_three_register_cross_encoding.py
-runner_sha256: 2f8368e032383845fa4ed68eb294906e3ca2e001e3a71d26df7c77ae4f33d3ad
+runner_sha256: b21a419a5173dd8e48f4827d70ee1ec3766a6510f6cd260d5fd15e2104741c62
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 3.27
+elapsed_sec: 3.19
 status: ok
 ----- stdout -----
 THREE-REGISTER CROSS-ENCODING TASTE-QUBIT TELEPORTATION CERTIFICATE
-Scope: exact finite logical algebra; quantum state teleportation only
+Scope: exact finite logical algebra; ideal state-transfer identity only
 
 Requested dimensions: (1, 2, 3)
 Requested side lengths: (2, 4)
@@ -217,7 +217,7 @@ Claim boundary:
   It does not derive apparatus dynamics, durable records, resource
   preparation, Hamiltonian transport, noise tolerance, matter transfer,
   object transport, charge transfer, mass transfer, energy transfer,
-  or FTL signaling.
+  physical teleportation, an unbounded-lattice result, or FTL signaling.
 
 Acceptance gates:
   exhaustive encoding-isometry premises: PASS

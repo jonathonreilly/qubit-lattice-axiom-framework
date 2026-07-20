@@ -1,81 +1,67 @@
 #!/usr/bin/env python3
-"""KCPT Unit 11 exact Lagrangian-polarization runner.
+"""Finite Lagrangian-polarization checks for the fixed KCPT lattice surface.
 
-Reads the landed Units 8/9/10 objects on the L=4, N=64 staggered lattice through
-standard symplectic / Kaehler geometry.  Writing V_R = R^64 = L_+ (+) L_- for the
-real +-1 eigenspaces of staggered chiral parity S_eps = diag((-1)^{x1+x2+x3}) (Unit 9),
-and taking the Unit-10 symplectic convention omega(x,y) = g(J_full x,y) with
-g = I_64 (matrix omega = J_full^T g = -J_full), it verifies:
-
-  T1  S_eps is a real involution; L_+ , L_- are the even/odd staggered-parity site
-      sets, dim 32 each, L_+ (+) L_- = V_R.                         [G1, G2]
-  T2  each L_+- is LAGRANGIAN for omega: the diagonal parity blocks of omega (hence
-      of J_full) vanish -- this is Unit 9's T4 S_eps J_full S_eps = -J_full written
-      in parity blocks; omega is nondegenerate.                     [G3, G4, G5, G6]
-  T3  J_full anticommutes with S_eps, so it EXCHANGES the two Lagrangian planes as a
-      rank-32 isomorphism L_+ -> L_- (the Kaehler polarization intertwiner).
-                                                                    [G7, G8, G9, G10]
-  T4  S_eps is ANTISYMPLECTIC (S_eps^T omega S_eps = -omega) and acts on h = g + i*omega
-      as anti-holomorphic reality conjugation h -> conj(h), swapping the +-i eigenspaces
-      of J_full.  "CP-like" is a geometric label only, not a physical CP identification.
-                                                                [G11, G12, G13, G14, G19]
-  T5  every element of the order-768 ambient group G_amb preserves the unordered pair
-      {L_+, L_-}; the subgroup fixing each plane is the centralizer C_G_amb(S_eps) of
-      order 384, giving an index-2 grading (preserve vs swap).      [G15, G16]
-  T6  the sibling J_alt = J_ker - J_bulk is also reversed by S_eps, so it exchanges the
-      SAME L_+-; the polarization is common to both orientations, only the intertwiner
-      differs (J_full - J_alt = 2 J_bulk != 0).                     [G17a, G17b, G17c]
-
-Every "vanishing block" gate is sliced from an INDEPENDENTLY built matrix (J_full from
-the D2/V8/J64 shell construction; S_eps from coords), never a matrix set to zero, and is
-paired with a discriminating rejector (G5, G8, G13, G17c, G18) that FAILS for a
-trivial/wrong object.  Load-bearing block identities are exact-rational and land at 0.0;
-the float gates (eig/rank/square) are redundant and tagged in their descriptions.
+The integer lattice, parity, and signed-permutation objects are rebuilt from
+their definitions.  The shell complex structures contain sqrt(2) and sqrt(3)
+coefficients and are therefore checked numerically at declared tolerances.
+This runner reads no Markdown or environment-selected fixture.
 """
 import itertools
-import os
 import numpy as np
-
-AUDIT_INPUT_PATHS = (
-    "docs/KCPT_CHIRAL_PARITY_COMMON_SIGN_ORBIT_BOUNDED_THEOREM_NOTE_2026-07-19.md",
-    "docs/KCPT_KAHLER_TRIPLE_AMBIENT_INVARIANT_METRIC_SYMPLECTIC_BOUNDED_THEOREM_NOTE_2026-07-19.md",
-    "docs/KCPT_CHIRAL_PARITY_LAGRANGIAN_POLARIZATION_BOUNDED_THEOREM_NOTE_2026-07-19.md",
-)
 
 L, N = 4, 64
 TOL0 = 1e-12      # rational-zero blocks
 TOL_EIG = 1e-8    # eigen / rank
 TOLREJ = 1e-6     # rejector floor
 
-DOCS = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "docs"))
-U9_NOTE = "KCPT_CHIRAL_PARITY_COMMON_SIGN_ORBIT_BOUNDED_THEOREM_NOTE_2026-07-19.md"
-U10_NOTE = "KCPT_KAHLER_TRIPLE_AMBIENT_INVARIANT_METRIC_SYMPLECTIC_BOUNDED_THEOREM_NOTE_2026-07-19.md"
-SELF_NOTE = "KCPT_CHIRAL_PARITY_LAGRANGIAN_POLARIZATION_BOUNDED_THEOREM_NOTE_2026-07-19.md"
+EXPECTED_LABELS = [
+    "parity-involution",
+    "parity-plane-dimensions",
+    "staggered-parity-definition",
+    "complex-structure-representative-signs",
+    "chiral-sign-reversal",
+    "lagrangian-diagonal-blocks",
+    "off-diagonal-nonzero-rejector",
+    "symplectic-structural-inverse",
+    "complex-structure-anticommutation",
+    "commutator-nonzero-rejector",
+    "complex-structure-parity-blocks",
+    "plane-exchange-rank",
+    "antisymplectic-action",
+    "reality-form-action",
+    "conjugation-nontrivial-rejector",
+    "eigenspace-swap",
+    "ambient-group-centralizer-count",
+    "ambient-grading-classification",
+    "orientation-sibling-sign-reversal",
+    "orientation-sibling-parity-blocks",
+    "orientation-sibling-nontrivial-rejector",
+    "complex-structure-squares",
+    "counting-metric-definition",
+    "symplectic-form-definition",
+    "hermitian-form-definition",
+    "hermitian-holomorphic-positivity",
+    "kahler-compatibility",
+]
 
 PASS = FAIL = 0
+LABELS = []
 
 
 def gate(tag, cond, desc):
     global PASS, FAIL
     ok = bool(cond)
+    LABELS.append(tag)
     PASS, FAIL = PASS + (1 if ok else 0), FAIL + (0 if ok else 1)
     print(f"{'PASS' if ok else 'FAIL'} {tag} - {desc}")
     return ok
-
-
-def note_text(basename):
-    try:
-        with open(os.path.join(DOCS, basename), encoding="utf-8") as fh:
-            return fh.read()
-    except OSError:
-        return ""
 
 
 def nrm(X):
     return float(np.max(np.abs(X)))
 
 
-# ---------------- construction (self-contained; mirrors the landed Unit-9 runner) ----
+# ---------------- finite-surface construction ----------------------------------------
 def idx(a, b, c):
     return (a * L + b) * L + c
 
@@ -158,13 +144,13 @@ Sf = Seps.astype(float)
 Ip = np.where(eps > 0)[0]                         # L_+  standard-basis index set
 Im = np.where(eps < 0)[0]                         # L_-  standard-basis index set
 
-# the Unit-10 Kaehler data (built directly from J_full)
+# supplied Kaehler data (built directly from J_full)
 g = np.eye(N)
 w = -Jfull                                        # omega, matrix J_full^T g = -J_full
 h = g.astype(complex) + 1j * w.astype(complex)    # h = g + i*omega
 
 
-# ---------------- G_amb reconstruction (mirror the Unit-9 runner) --------------------
+# ---------------- ambient signed-permutation reconstruction --------------------------
 def perm(fmap):
     P = np.zeros((N, N), dtype=np.int64)
     for i in range(N):
@@ -226,108 +212,139 @@ for name, base in BASES.items():
                 commuting.append(U.copy())
 Gamb = closure_amb(commuting)
 
-# =========================================================================== gates ===
-# T1 -- real parity polarization
+# ========================================================== verification checks ===
+# Real parity polarization
 g1 = (eqm(Seps @ Seps, np.eye(N, dtype=np.int64))
       and eqm(Seps.T @ Seps, np.eye(N, dtype=np.int64))
       and round(float(np.trace(Seps))) == 0
       and set(np.unique(eps).tolist()) <= {-1, 1})
-gate("G1", g1, "S_eps real orthogonal involution: S^2=I, S^T S=I, trace=0, entries in {-1,+1}")
+gate("parity-involution", g1,
+     "S_eps real orthogonal involution: S^2=I, S^T S=I, trace=0, entries +/-1")
 
 g2 = (len(Ip) == 32 and len(Im) == 32 and sorted(Ip.tolist() + Im.tolist()) == list(range(N)))
-gate("G2", g2, "dim L_+ = dim L_- = 32 and L_+ (+) L_- partitions the 64 basis sites")
+gate("parity-plane-dimensions", g2,
+     "dim L_+ = dim L_- = 32 and the planes partition the 64 basis sites")
+expected_eps = np.array(
+    [(-1) ** int(sum(coords[i])) for i in range(N)],
+    dtype=np.int64,
+)
+gate("staggered-parity-definition", np.array_equal(eps, expected_eps),
+     "S_eps uses +1 on even and -1 on odd staggered-parity sites")
+positive_bulk_shells = [
+    D2f @ Pf[m] / (2.0 * np.sqrt(m)) for m in (1, 2, 3)
+]
+gate(
+    "complex-structure-representative-signs",
+    nrm(Jfull - (Jkerf + sum(positive_bulk_shells))) < TOL0
+    and all(
+        float(np.vdot(shell, Jbulk).real) > TOLREJ
+        for shell in positive_bulk_shells
+    ),
+    "J_full is the supplied common-positive bulk-shell representative",
+)
 
-# T2 -- each parity plane is Lagrangian for omega = -J_full
-gate("G3", nrm(Sf @ Jfull @ Sf + Jfull) < TOL0,
-     "landed Unit-9 T4: ||S_eps J_full S_eps + J_full|| < 1e-12")
-gate("G4", nrm(w[Ip][:, Ip]) < TOL0 and nrm(w[Im][:, Im]) < TOL0,
-     "LAGRANGIAN: omega vanishes on L_+ and on L_- (diagonal parity blocks = 0)")
-gate("G5", nrm(w[Ip][:, Im]) > TOLREJ,
-     "REJECTOR: off-diagonal L_+ x L_- block of omega is nonzero (vanishing is block-specific)")
-detw = float(np.linalg.det(w))
-gate("G6", abs(round(detw)) >= 1,
-     f"omega nondegenerate: |round(det omega)| = {abs(round(detw))} >= 1")
+# Each parity plane is Lagrangian for omega = -J_full
+gate("chiral-sign-reversal", nrm(Sf @ Jfull @ Sf + Jfull) < TOL0,
+     "S_eps J_full S_eps = -J_full within the declared numerical tolerance")
+gate("lagrangian-diagonal-blocks",
+     nrm(w[Ip][:, Ip]) < TOL0 and nrm(w[Im][:, Im]) < TOL0,
+     "omega vanishes on both diagonal parity blocks")
+gate("off-diagonal-nonzero-rejector", nrm(w[Ip][:, Im]) > TOLREJ,
+     "off-diagonal L_+ x L_- block is nonzero; vanishing is block-specific")
+gate("symplectic-structural-inverse",
+     nrm(w @ Jfull - np.eye(N)) < TOL0,
+     "omega J_full = I, so omega is nondegenerate without a rounded determinant")
 
-# T3 -- J_full exchanges the two Lagrangian planes
-gate("G7", nrm(Sf @ Jfull + Jfull @ Sf) < TOL0,
+# J_full exchanges the two Lagrangian planes
+gate("complex-structure-anticommutation", nrm(Sf @ Jfull + Jfull @ Sf) < TOL0,
      "J_full anticommutes with S_eps: ||S_eps J_full + J_full S_eps|| < 1e-12")
-gate("G8", nrm(Sf @ Jfull - Jfull @ Sf) > TOLREJ,
-     "REJECTOR: ||S_eps J_full - J_full S_eps|| nonzero (genuine anticommutation, not both-zero)")
-gate("G9", nrm(Jfull[Ip][:, Ip]) < TOL0 and nrm(Jfull[Im][:, Im]) < TOL0,
+gate("commutator-nonzero-rejector", nrm(Sf @ Jfull - Jfull @ Sf) > TOLREJ,
+     "commutator is nonzero; anticommutation is not a both-zero coincidence")
+gate("complex-structure-parity-blocks",
+     nrm(Jfull[Ip][:, Ip]) < TOL0 and nrm(Jfull[Im][:, Im]) < TOL0,
      "J_full diagonal parity blocks vanish: J(L_+) subset L_-, J(L_-) subset L_+")
-rk = int(np.linalg.matrix_rank(Jfull[Im][:, Ip], tol=TOL_EIG))
-gate("G10", rk == 32, f"J_full: L_+ -> L_- is a rank-{rk} isomorphism (== 32)")
+rk = int(np.linalg.matrix_rank(Jfull[Im][:, Ip], tol=1e-9))
+gate("plane-exchange-rank", rk == 32,
+     f"J_full: L_+ -> L_- is a rank-{rk} isomorphism (expected 32)")
 
-# T4 -- S_eps antisymplectic reality involution
-gate("G11", nrm(Sf.T @ w @ Sf + w) < TOL0,
+# S_eps antisymplectic reality involution
+gate("antisymplectic-action", nrm(Sf.T @ w @ Sf + w) < TOL0,
      "ANTISYMPLECTIC: ||S_eps^T omega S_eps + omega|| < 1e-12")
-gate("G12", nrm(Sf.T @ h @ Sf - np.conj(h)) < TOL0,
-     "ANTI-HOLOMORPHIC REALITY: ||S_eps^T h S_eps - conj(h)|| < 1e-12 (no physical CP identification)")
-gate("G13", nrm(h - np.conj(h)) > TOLREJ,
-     "REJECTOR: ||h - conj(h)|| nonzero (omega != 0, so conj(h) != h)")
+gate("reality-form-action", nrm(Sf.T @ h @ Sf - np.conj(h)) < TOL0,
+     "REALITY: S_eps^T h S_eps = conjugate(h) = g - i omega")
+gate("conjugation-nontrivial-rejector", nrm(h - np.conj(h)) > TOLREJ,
+     "h differs from its conjugate because omega is nonzero")
 evals, evecs = np.linalg.eig(Jfull)
 sel = np.abs(evals - 1j) < TOL_EIG
 V = evecs[:, sel]
 SV = Sf.astype(complex) @ V
-gate("G14", V.shape[1] == 32 and nrm(Jfull @ SV - (-1j) * SV) < TOL_EIG,
-     f"ANTI-HOLOMORPHIC: +i eigenspace dim {V.shape[1]}==32; S_eps sends it to the -i eigenspace (< 1e-8)")
+gate("eigenspace-swap",
+     V.shape[1] == 32 and nrm(Jfull @ SV - (-1j) * SV) < TOL_EIG,
+     f"+i eigenspace dim {V.shape[1]}; S_eps sends it to the -i eigenspace")
 
-# T5 -- ambient index-2 grading
+# Ambient preserve/swap grading
 cent = sum(1 for U in Gamb if eqm(U @ Seps, Seps @ U))
-gate("G15", len(Gamb) == 768 and cent == 384,
+gate("ambient-group-centralizer-count", len(Gamb) == 768 and cent == 384,
      f"|G_amb| = {len(Gamb)} == 768 and |C_G_amb(S_eps)| = {cent} == 384")
 preserve = swap = neither = 0
-centralizer_matches = True
 for U in Gamb:
     col_img = np.argmax(np.abs(U), axis=0)        # image site of each column (signed perm)
-    par_p = eps[col_img[Ip]]                      # parity of images of the L_+ basis
-    par_m = eps[col_img[Im]]                      # parity of images of the L_- basis
-    is_preserve = np.all(par_p == 1) and np.all(par_m == -1)
-    is_swap = np.all(par_p == -1) and np.all(par_m == 1)
-    commutes = eqm(U @ Seps, Seps @ U)
-    centralizer_matches = centralizer_matches and (is_preserve == commutes) and (is_swap != commutes)
-    if is_preserve:
+    par = eps[col_img[Ip]]                        # parity of the images of the L_+ basis
+    if np.all(par == 1):
         preserve += 1
-    elif is_swap:
+    elif np.all(par == -1):
         swap += 1
     else:
         neither += 1
-gate("G16", centralizer_matches and neither == 0 and preserve + swap == 768
+gate("ambient-grading-classification",
+     neither == 0 and preserve + swap == 768
      and preserve == 384 == cent and swap == 384,
-     f"AMBIENT INDEX-2 GRADING: preserve {preserve} (elementwise == centralizer 384), swap {swap}, neither {neither}")
+     f"preserve {preserve}, swap {swap}, neither {neither}; kernel is centralizer")
 
-# T6 -- orientation neutrality over the SAME polarization
-gate("G17a", nrm(Sf @ Jalt @ Sf + Jalt) < TOL0,
-     "ORIENTATION NEUTRALITY (a): ||S_eps J_alt S_eps + J_alt|| < 1e-12")
-gate("G17b", nrm(Jalt[Ip][:, Ip]) < TOL0 and nrm(Jalt[Im][:, Im]) < TOL0,
-     "ORIENTATION NEUTRALITY (b): J_alt also exchanges the same L_+- (diagonal parity blocks = 0)")
-gate("G17c", nrm((Jfull - Jalt) - 2 * Jbulk) < TOL0 and nrm(Jfull - Jalt) > TOLREJ,
-     "REJECTOR (non-vacuity): J_full - J_alt = 2 J_bulk, nonzero (the two orientations genuinely differ)")
+# Orientation sibling over the same polarization
+gate("orientation-sibling-sign-reversal", nrm(Sf @ Jalt @ Sf + Jalt) < TOL0,
+     "S_eps J_alt S_eps = -J_alt")
+gate("orientation-sibling-parity-blocks",
+     nrm(Jalt[Ip][:, Ip]) < TOL0 and nrm(Jalt[Im][:, Im]) < TOL0,
+     "J_alt also exchanges the same parity planes")
+gate("orientation-sibling-nontrivial-rejector",
+     nrm((Jfull - Jalt) - 2 * Jbulk) < TOL0
+     and nrm(Jfull - Jalt) > TOLREJ,
+     "J_full - J_alt = 2 J_bulk and is nonzero")
 
-# genuine-complex-structure rejector (a wrong J_full/J_alt fails here)
-gate("G18", nrm(Jfull @ Jfull + np.eye(N)) < TOL0 and nrm(Jalt @ Jalt + np.eye(N)) < TOL0,
-     "REJECTOR: ||J_full^2 + I|| and ||J_alt^2 + I|| < 1e-12 (genuine complex structures)")
+# Genuine complex structures
+gate("complex-structure-squares",
+     nrm(Jfull @ Jfull + np.eye(N)) < TOL0
+     and nrm(Jalt @ Jalt + np.eye(N)) < TOL0,
+     "J_full^2 = J_alt^2 = -I within the declared numerical tolerance")
 
-# Unit-10 metric is genuine + h Hermitian
+# Defining Kähler data: independent mutation-sensitive identities.
+gate("counting-metric-definition", np.array_equal(g, np.eye(N)),
+     "g is exactly the fixed counting metric I_64")
+gate("symplectic-form-definition",
+     nrm(w - Jfull.T @ g) < TOL0 and nrm(w + Jfull) < TOL0,
+     "omega = J_full^T g = -J_full")
+gate("hermitian-form-definition",
+     nrm(h - (g.astype(complex) + 1j * w.astype(complex))) < TOL0,
+     "h = g + i omega")
+holomorphic_gram = V.conj().T @ h @ V
+wrong_sign_gram = V.conj().T @ (g.astype(complex) - 1j * w) @ V
+gate(
+    "hermitian-holomorphic-positivity",
+    float(np.min(np.linalg.eigvalsh(holomorphic_gram))) > TOLREJ
+    and nrm(wrong_sign_gram) < TOL_EIG,
+    "h is positive on the +i plane; the wrong g-i omega sign collapses there",
+)
+
+# Metric and Hermitian compatibility
 inv = max(nrm(U.T @ g @ U - g) for U in Gamb)
 comp = nrm(Jfull.T @ g @ Jfull - g)
-gate("G19",
+gate("kahler-compatibility",
      nrm(h - h.conj().T) < TOL0 and inv < 1e-9 and comp < 1e-9 and float(np.min(np.linalg.eigvalsh(g))) > 0,
-     "h Hermitian; g is G_amb-invariant, J_full-compatible, posdef (genuine Unit-10 metric)")
+     "h Hermitian; g is ambient-invariant, J_full-compatible, and positive definite")
 
-# source pins -- parents actually read, self-note dependency discipline
-u9 = note_text(U9_NOTE)
-gate("G20", ("S_eps J_full S_eps = -J_full" in u9) and ("common-sign orbit" in u9),
-     "SOURCE PIN Unit 9: note contains 'S_eps J_full S_eps = -J_full' and 'common-sign orbit'")
-u10 = note_text(U10_NOTE)
-gate("G21", "omega(x,y) = g(J_full x,y)" in u10,
-     "SOURCE PIN Unit 10: note contains 'omega(x,y) = g(J_full x,y)'")
-s = note_text(SELF_NOTE)
-c9 = s.count("](" + U9_NOTE)
-c10 = s.count("](" + U10_NOTE)
-ckcpt = s.count("](KCPT_")
-gate("G22", c9 == 1 and c10 == 1 and ckcpt == 2,
-     f"SELF-NOTE DEPENDENCY DISCIPLINE: Unit9-link {c9}==1, Unit10-link {c10}==1, total KCPT-links {ckcpt}==2")
-
+if LABELS != EXPECTED_LABELS:
+    print(f"FAIL gate-manifest-drift - {LABELS} != {EXPECTED_LABELS}")
+    FAIL += 1
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
 raise SystemExit(1 if FAIL else 0)

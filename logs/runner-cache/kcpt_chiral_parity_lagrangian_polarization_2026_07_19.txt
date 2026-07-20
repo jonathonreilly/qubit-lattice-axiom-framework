@@ -1,37 +1,39 @@
 ===== runner cache v1 =====
 runner: scripts/kcpt_chiral_parity_lagrangian_polarization_2026_07_19.py
-runner_sha256: 5d91ed5d983558817952d47df2f5bca11129ab2c35673c58e55ce64078e9193d
-input_fingerprint_sha256: dc0ce303249b061431627570c8967e43a99095b6a2f775d295ab89b713f11fd8
+runner_sha256: 32ab05139b80917789e75789e3c89b5d57cac114026108f414b37dd8c68411bf
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 22.47
+elapsed_sec: 17.53
 status: ok
 ----- stdout -----
-PASS G1 - S_eps real orthogonal involution: S^2=I, S^T S=I, trace=0, entries in {-1,+1}
-PASS G2 - dim L_+ = dim L_- = 32 and L_+ (+) L_- partitions the 64 basis sites
-PASS G3 - landed Unit-9 T4: ||S_eps J_full S_eps + J_full|| < 1e-12
-PASS G4 - LAGRANGIAN: omega vanishes on L_+ and on L_- (diagonal parity blocks = 0)
-PASS G5 - REJECTOR: off-diagonal L_+ x L_- block of omega is nonzero (vanishing is block-specific)
-PASS G6 - omega nondegenerate: |round(det omega)| = 1 >= 1
-PASS G7 - J_full anticommutes with S_eps: ||S_eps J_full + J_full S_eps|| < 1e-12
-PASS G8 - REJECTOR: ||S_eps J_full - J_full S_eps|| nonzero (genuine anticommutation, not both-zero)
-PASS G9 - J_full diagonal parity blocks vanish: J(L_+) subset L_-, J(L_-) subset L_+
-PASS G10 - J_full: L_+ -> L_- is a rank-32 isomorphism (== 32)
-PASS G11 - ANTISYMPLECTIC: ||S_eps^T omega S_eps + omega|| < 1e-12
-PASS G12 - ANTI-HOLOMORPHIC REALITY: ||S_eps^T h S_eps - conj(h)|| < 1e-12 (no physical CP identification)
-PASS G13 - REJECTOR: ||h - conj(h)|| nonzero (omega != 0, so conj(h) != h)
-PASS G14 - ANTI-HOLOMORPHIC: +i eigenspace dim 32==32; S_eps sends it to the -i eigenspace (< 1e-8)
-PASS G15 - |G_amb| = 768 == 768 and |C_G_amb(S_eps)| = 384 == 384
-PASS G16 - AMBIENT INDEX-2 GRADING: preserve 384 (elementwise == centralizer 384), swap 384, neither 0
-PASS G17a - ORIENTATION NEUTRALITY (a): ||S_eps J_alt S_eps + J_alt|| < 1e-12
-PASS G17b - ORIENTATION NEUTRALITY (b): J_alt also exchanges the same L_+- (diagonal parity blocks = 0)
-PASS G17c - REJECTOR (non-vacuity): J_full - J_alt = 2 J_bulk, nonzero (the two orientations genuinely differ)
-PASS G18 - REJECTOR: ||J_full^2 + I|| and ||J_alt^2 + I|| < 1e-12 (genuine complex structures)
-PASS G19 - h Hermitian; g is G_amb-invariant, J_full-compatible, posdef (genuine Unit-10 metric)
-PASS G20 - SOURCE PIN Unit 9: note contains 'S_eps J_full S_eps = -J_full' and 'common-sign orbit'
-PASS G21 - SOURCE PIN Unit 10: note contains 'omega(x,y) = g(J_full x,y)'
-PASS G22 - SELF-NOTE DEPENDENCY DISCIPLINE: Unit9-link 1==1, Unit10-link 1==1, total KCPT-links 2==2
-TOTAL: PASS=24 FAIL=0
+PASS parity-involution - S_eps real orthogonal involution: S^2=I, S^T S=I, trace=0, entries +/-1
+PASS parity-plane-dimensions - dim L_+ = dim L_- = 32 and the planes partition the 64 basis sites
+PASS staggered-parity-definition - S_eps uses +1 on even and -1 on odd staggered-parity sites
+PASS complex-structure-representative-signs - J_full is the supplied common-positive bulk-shell representative
+PASS chiral-sign-reversal - S_eps J_full S_eps = -J_full within the declared numerical tolerance
+PASS lagrangian-diagonal-blocks - omega vanishes on both diagonal parity blocks
+PASS off-diagonal-nonzero-rejector - off-diagonal L_+ x L_- block is nonzero; vanishing is block-specific
+PASS symplectic-structural-inverse - omega J_full = I, so omega is nondegenerate without a rounded determinant
+PASS complex-structure-anticommutation - J_full anticommutes with S_eps: ||S_eps J_full + J_full S_eps|| < 1e-12
+PASS commutator-nonzero-rejector - commutator is nonzero; anticommutation is not a both-zero coincidence
+PASS complex-structure-parity-blocks - J_full diagonal parity blocks vanish: J(L_+) subset L_-, J(L_-) subset L_+
+PASS plane-exchange-rank - J_full: L_+ -> L_- is a rank-32 isomorphism (expected 32)
+PASS antisymplectic-action - ANTISYMPLECTIC: ||S_eps^T omega S_eps + omega|| < 1e-12
+PASS reality-form-action - REALITY: S_eps^T h S_eps = conjugate(h) = g - i omega
+PASS conjugation-nontrivial-rejector - h differs from its conjugate because omega is nonzero
+PASS eigenspace-swap - +i eigenspace dim 32; S_eps sends it to the -i eigenspace
+PASS ambient-group-centralizer-count - |G_amb| = 768 == 768 and |C_G_amb(S_eps)| = 384 == 384
+PASS ambient-grading-classification - preserve 384, swap 384, neither 0; kernel is centralizer
+PASS orientation-sibling-sign-reversal - S_eps J_alt S_eps = -J_alt
+PASS orientation-sibling-parity-blocks - J_alt also exchanges the same parity planes
+PASS orientation-sibling-nontrivial-rejector - J_full - J_alt = 2 J_bulk and is nonzero
+PASS complex-structure-squares - J_full^2 = J_alt^2 = -I within the declared numerical tolerance
+PASS counting-metric-definition - g is exactly the fixed counting metric I_64
+PASS symplectic-form-definition - omega = J_full^T g = -J_full
+PASS hermitian-form-definition - h = g + i omega
+PASS hermitian-holomorphic-positivity - h is positive on the +i plane; the wrong g-i omega sign collapses there
+PASS kahler-compatibility - h Hermitian; g is ambient-invariant, J_full-compatible, and positive definite
+TOTAL: PASS=27 FAIL=0
 
 ----- stderr -----
 

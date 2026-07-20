@@ -1,58 +1,151 @@
+---
+claim_id: kcpt_chiral_parity_lagrangian_polarization_bounded_theorem_note_2026-07-19
+claim_type: bounded_theorem
+claim_scope: "Conditional finite-surface symplectic packaging on the fixed 4^3 staggered lattice. Given the linked chiral-parity sign-reversal theorem and Kähler-triple theorem, the even and odd staggered-parity planes are complementary Lagrangian subspaces for omega=-J_full; J_full exchanges them; S_eps is a real-linear antisymplectic involution that swaps the +/-i eigenspaces after complexification; the order-768 ambient group has a preserve/swap Z/2 grading with order-384 centralizer kernel; and J_alt exchanges the same parity planes. This is a mathematical finite representation statement, not a physical CP identification, orientation selection, dynamics, measure, continuum, or retained-grade claim."
+upstream_dependencies:
+  - kcpt_chiral_parity_common_sign_orbit_bounded_theorem_note_2026-07-19
+  - kcpt_kahler_triple_ambient_invariant_metric_symplectic_bounded_theorem_note_2026-07-19
+runner: scripts/kcpt_chiral_parity_lagrangian_polarization_2026_07_19.py
+---
+
 # KCPT chiral parity: Lagrangian polarization of the Kähler triple
 
-Date: 2026-07-19
-
+**Date:** 2026-07-19
 **Type:** bounded_theorem
+**Claim type:** bounded_theorem
+**Scope:** conditional on the two linked finite-surface theorems below. The
+result is a symplectic-geometric reading of computed blocks, not a physical
+identification.
+**Audit-status authority:** independent audit lane only. This note sets no
+audit verdict and predicts none.
+**Primary runner:**
+[`scripts/kcpt_chiral_parity_lagrangian_polarization_2026_07_19.py`](../scripts/kcpt_chiral_parity_lagrangian_polarization_2026_07_19.py)
+**Runner cache:**
+[`logs/runner-cache/kcpt_chiral_parity_lagrangian_polarization_2026_07_19.txt`](../logs/runner-cache/kcpt_chiral_parity_lagrangian_polarization_2026_07_19.txt)
 
-**Claim boundary:** This is a bounded theorem on one fixed finite surface — the real site representation `V_R ≅ R^64` of the full `4^3` staggered lattice, its complexification `V_R ⊗ C ≅ C^64`, its antisymmetric integer adjacency `D2`, the corner-wave kernel frame `V8`, the bulk operator `M = D2 @ D2`, and three landed objects it reads through standard symplectic and Kähler geometry: the total complex structure `J_full = J_ker + J_bulk` (`J_full^2 = -I_64`, ambient-invariant), the staggered chiral parity `S_eps = diag((-1)^{x_1+x_2+x_3})` (a real involution with `S_eps J_full S_eps = -J_full`), and the Unit-10 Kähler triple `(g, J_full, omega)` with `g = I_64` and convention `omega(x,y) = g(J_full x,y)`, matrix `omega = J_full^T g = -J_full`. Writing `V_R = L_+ (+) L_-` for the real `±1` eigenspaces of `S_eps` (the even/odd staggered-parity site sets, each of dimension `32`), it records that each `L_±` is a Lagrangian subspace of `omega`, that `J_full` exchanges the two Lagrangian planes as a linear isomorphism `L_+ -> L_-`, that `S_eps` is an antisymplectic anti-holomorphic reality involution acting on `h = g + i*omega` as the conjugation `h -> conj(h)`, and that the order-`768` ambient group `G_amb` carries an index-`2` grading (preserve versus swap of the polarization) whose kernel is exactly the centralizer `C_{G_amb}(S_eps)` of order `384`. The symplectic-geometric packaging is the new content; its algebraic core — the vanishing diagonal parity blocks `J_full[L_+,L_+] = J_full[L_-,L_-] = 0` — is the Unit-9 identity `S_eps J_full S_eps = -J_full` re-expressed in parity blocks, not re-derived here. The polarization `{L_±}` is common to both orientations: the sibling `J_alt = J_ker - J_bulk` also exchanges the same `L_±`, and the relationship between the two orientations is inherited unchanged from Unit 9's common-sign-orbit result. `g = I_64` is the Unit-10 counting-choice metric representative, one point of a compatible-metric cone, not a forced one, so `h` and the reality reading inherit that choice. It fixes no free parameter, selects no orientation, and chooses no dynamics; it is `r`-neutral and measure-neutral. Its only inputs are the two linked dependency notes; the symplectic and Kähler vocabulary (Lagrangian subspace, polarization, antisymplectic, anti-holomorphic reality involution) is descriptive of the computed structure, not an imported axiom. Every vanishing-block gate slices an independently built matrix and is paired with a discriminating rejector; each float gate is redundant with an exact statement.
+## Supplied finite surface
 
-## Setting
+Work on the real site representation `V_R ~= R^64` of the fixed `4^3`
+staggered lattice and its complexification. The
+[`chiral-parity common-sign-orbit theorem`](KCPT_CHIRAL_PARITY_COMMON_SIGN_ORBIT_BOUNDED_THEOREM_NOTE_2026-07-19.md)
+supplies the real involution
 
-The surface and its landed complex structure are the ones fixed upstream. The staggered chiral parity `S_eps` and its action on `J_full` are established in [the chiral-parity common-sign-orbit note](KCPT_CHIRAL_PARITY_COMMON_SIGN_ORBIT_BOUNDED_THEOREM_NOTE_2026-07-19.md): `S_eps = diag((-1)^{x_1+x_2+x_3})` is a real involution, and its landed T4 is the total complex-structure sign reversal `S_eps J_full S_eps = -J_full`, scoped to the common-sign orbit `orbit_H(J_full) = {J_full, -J_full}`. The metric, symplectic form, and Hermitian form are the ones assembled in [the Kähler-triple note](KCPT_KAHLER_TRIPLE_AMBIENT_INVARIANT_METRIC_SYMPLECTIC_BOUNDED_THEOREM_NOTE_2026-07-19.md): the `G_amb`-invariant triple `(g, J_full, omega)` on `V_R ≅ R^64`, with `g = I_64`, convention `omega(x,y) = g(J_full x,y)`, matrix `omega = -J_full`, and positive-definite Hermitian form `h = g + i*omega` on the `32`-dimensional `+i` eigenspace in `V_R ⊗ C`. The total complex structure `J_full = J_ker + J_bulk` and its orientation sibling `J_alt = J_ker - J_bulk` are the `Unit 8` assembly these two parents both read; `Unit 8` enters this note only through them, so it is named in backticks and carries no separate dependency edge.
+> `S_eps = diag((-1)^(x_1+x_2+x_3))`
 
-This note takes one move both parents leave to the side: it reads the single real involution `S_eps` and the landed symplectic form `omega = -J_full` together, in the parity blocks of `S_eps`. The bounded theorem has six parts.
+and the exact relation `S_eps J_full S_eps = -J_full`. That theorem explicitly
+does not give this real-linear site-parity map a physical identification.
 
-## T1 — real parity polarization
+The
+[`ambient-invariant Kähler-triple theorem`](KCPT_KAHLER_TRIPLE_AMBIENT_INVARIANT_METRIC_SYMPLECTIC_BOUNDED_THEOREM_NOTE_2026-07-19.md)
+supplies the fixed counting metric and conventions
 
-The chiral parity `S_eps` is a real involution on `V_R ≅ R^64`: diagonal with entries in `{-1,+1}`, `S_eps^2 = I`, orthogonal (`S_eps^T S_eps = I`), and traceless. Its real `±1` eigenspaces `L_+` and `L_-` are the even and odd staggered-parity site sets; each has dimension `32`, and together they partition the standard basis, `L_+ (+) L_- = V_R`. This is the real polarization the rest of the note reads.  [gates G1, G2]
+> `g = I_64`, `omega(x,y)=g(J_full x,y)`,
+> `omega = J_full^T g = -J_full`, `h=g+i omega`.
 
-## T2 — each parity plane is Lagrangian
+It also supplies `J_full^2=-I_64`, compatibility with `g`, and the
+order-`768` ambient signed-permutation group `G_amb`. The metric `g=I_64` is
+one disclosed representative in the compatible positive cone, not a forced
+metric. Consequently the Hermitian form inherits that choice.
 
-Take the Unit-10 symplectic convention `omega(x,y) = g(J_full x,y)` with `g = I_64`, whose matrix is `omega = J_full^T g = -J_full` (`J_full` antisymmetric). Restricted to `L_+` and to `L_-`, the form vanishes: the diagonal parity blocks `omega[L_+,L_+]` and `omega[L_-,L_-]` are zero, equivalently the diagonal parity blocks of `J_full` vanish. Since `dim L_± = 32` is exactly half of `64`, each `L_±` is a Lagrangian subspace of `omega`. This is Unit 9's T4, `S_eps J_full S_eps = -J_full`, written in parity blocks: the sign reversal is exactly the statement that the diagonal blocks vanish. The form is nondegenerate — its off-diagonal `L_+ × L_-` block is nonzero and its determinant is a nonzero integer — so the two Lagrangian planes are genuinely complementary, not a degenerate coincidence.  [gates G3, G4, G5, G6]
+Let `L_+` and `L_-` be the `+1` and `-1` eigenspaces of `S_eps`. They are the
+real spans of the even and odd staggered-parity sites. Each has dimension
+`32`, and `V_R=L_+ direct-sum L_-`.
 
-## T3 — `J_full` exchanges the Lagrangian planes
+## Real parity polarization
 
-`J_full` anticommutes with `S_eps`, `S_eps J_full + J_full S_eps = 0`, and the anticommutation is genuine (the commutator `S_eps J_full - J_full S_eps` is nonzero). Anticommutation gives `J_full(L_+) ⊂ L_-` and `J_full(L_-) ⊂ L_+`; together with `J_full^2 = -I`, it makes both inclusions equalities and the off-diagonal block `J_full: L_+ -> L_-` a full-rank `32` linear isomorphism. Hence `(L_+, L_-)` is a transverse Lagrangian pair and `J_full` is the Kähler polarization intertwiner exchanging them.  [gates G7, G8, G9, G10, G18]
+The involution is real, orthogonal, traceless, and diagonal with entries
+`+1` and `-1`. Its two eigenspaces therefore partition the standard real site
+basis into two `32`-planes.
 
-## T4 — `S_eps` is an antisymplectic anti-holomorphic reality involution
+The relation `S_eps J_full S_eps=-J_full` is equivalent to the vanishing of
+the two diagonal parity blocks of `J_full`. Since `omega=-J_full`,
 
-Against the symplectic form `S_eps` is antisymplectic: `S_eps^T omega S_eps = -omega`. On the Unit-10 Hermitian form `h = g + i*omega` with `g = I_64` it acts as a reality conjugation, `S_eps^T h S_eps = conj(h) = g - i*omega`, and the conjugation is nontrivial (`h != conj(h)` because `omega != 0`). Equivalently, on `V_R ⊗ C`, `S_eps` carries the `+i` eigenspace of `J_full` — the `32`-dimensional holomorphic plane — onto the `-i` eigenspace: `J_full(S_eps V) = -i (S_eps V)` for every `V` with `J_full V = i V`. Thus `S_eps` is an anti-holomorphic reality involution. Calling this structure CP-like is only a geometric label here; the theorem makes no physical CP-field identification.  [gates G11, G12, G13, G14, G19]
+> `omega|_(L_+ x L_+) = 0`, and
+> `omega|_(L_- x L_-) = 0`.
 
-## T5 — ambient index-2 grading
+The form is nondegenerate structurally: `omega J_full=(-J_full)J_full=I_64`,
+so `J_full` is its explicit inverse. Each isotropic plane has half the real
+dimension of `V_R`; hence each is Lagrangian, and together they form a
+complementary Lagrangian polarization.
 
-Every element of the order-`768` ambient group `G_amb` is a signed permutation that shifts total staggered parity uniformly, so it maps `L_+` entirely into `L_+` or entirely into `L_-`; either way it preserves the unordered pair `{L_+, L_-}`. The subgroup fixing each plane — the elements that send `L_+` to `L_+` and `L_-` to `L_-` — is exactly the centralizer `C_{G_amb}(S_eps)`, of order `384`; the complementary coset of `384` elements swaps `L_+ <-> L_-`. This is an index-`2` grading `G_amb -> Z/2` (preserve versus swap) with kernel the centralizer, and `384 + 384 = 768`.  [gates G15, G16]
+## Plane-exchanging complex structure
 
-## T6 — orientation neutrality over the same polarization
+Anticommutation, `S_eps J_full+J_full S_eps=0`, sends each parity eigenspace
+to the other. Because `J_full^2=-I_64`, this restriction is injective and its
+inverse is `-J_full`; therefore
 
-The orientation sibling `omega_alt = -J_alt` — the `Unit 8` orientation sibling, the Unit-10 non-uniqueness witness — is also reversed by `S_eps`, `S_eps J_alt S_eps = -J_alt`, so `J_alt` too exchanges the SAME parity planes `L_±`: the real polarization `{L_±}` is common to both orientations, and only the exchanging intertwiner differs (`J_full` versus `J_alt`, with `J_full - J_alt = 2 J_bulk != 0`). The relationship between the two orientations is inherited unchanged from Unit 9's common-sign orbit — `orbit_H(J_full) = {J_full, -J_full}`, with `J_alt` in a distinct relative-sign class — and this note adds no further constraint on it; it only records that whichever orientation is read, the underlying Lagrangian polarization is the one fixed by `S_eps`.  [gates G17a, G17b, G17c]
+> `J_full : L_+ -> L_-`
 
-## What the runner checks
+is a rank-`32` isomorphism, and likewise in the reverse direction. This is the
+mathematical Kähler-polarization intertwiner on the supplied finite surface.
 
-The paired runner rebuilds every object from scratch — `D2`, `V8`, `J64`, the shells `Q_m`/`N_m`, `J_ker`, `J_bulk`, `J_full`, `J_alt`, the regenerated `768`-member `G_amb`, the chiral parity `S_eps`, and `g = I_64`, `omega = -J_full`, `h = g + i*omega` — and slices every vanishing-block gate out of an independently assembled matrix.
+## Antisymplectic reality action
 
-| Theorem | What it checks | Gates |
-|---------|----------------|-------|
-| T1 | `S_eps` real involution (`S^2 = I`, orthogonal, traceless, entries `±1`); `dim L_± = 32` partitioning `V_R` | G1, G2 |
-| T2 | landed `S_eps J_full S_eps = -J_full`; `omega` vanishes on `L_+` and `L_-`; rejector that the `L_+ × L_-` block is nonzero; nonzero-integer `det omega` | G3, G4, G5, G6 |
-| T3 | `{S_eps, J_full} = 0` with nonzero-commutator rejector; diagonal `J_full` blocks vanish; `L_+ -> L_-` rank `32` | G7, G8, G9, G10 |
-| T4 | `S_eps^T omega S_eps = -omega`; `S_eps^T h S_eps = conj(h)` with nontrivial-conjugation rejector; `+i -> -i` eigenspace swap; `h` Hermitian and `g` a genuine invariant compatible posdef metric; no physical CP identification | G11, G12, G13, G14, G19 |
-| T5 | `|G_amb| = 768`, `|centralizer| = 384`; every element preserves or swaps `{L_±}`, `384` preserve `= centralizer`, `384` swap | G15, G16 |
-| T6 | `S_eps J_alt S_eps = -J_alt`; `J_alt` exchanges the same `L_±`; rejector `J_full - J_alt = 2 J_bulk != 0` | G17a, G17b, G17c |
-| — | rejector that `J_full` and `J_alt` are genuine complex structures (`J^2 = -I`) | G18 |
-| — | source pins: the two parent notes are actually read (`S_eps J_full S_eps = -J_full` and `common-sign orbit` in Unit 9; `omega(x,y) = g(J_full x,y)` in Unit 10) and this note carries exactly the two dependency links | G20, G21, G22 |
+The same sign reversal gives
 
-## Boundary (honest-auditor read)
+> `S_eps^T omega S_eps = -omega`.
 
-The algebraic core of this unit — the vanishing diagonal parity blocks `J_full[L_+,L_+] = J_full[L_-,L_-] = 0` — is Unit 9's landed T4 `S_eps J_full S_eps = -J_full` re-expressed in the parity blocks of `S_eps`; this note does not re-derive it. The new content is the symplectic-geometric packaging: the real Lagrangian polarization (T1–T2), the plane-exchanging Kähler intertwiner (T3), the antisymplectic anti-holomorphic reality involution `h -> conj(h)` (T4), and the concrete ambient index-`2` grading with kernel the centralizer of order `384` (T5). The CP-like wording is only a geometric label for this reality structure, not a physical CP-field identification. `g = I_64` is the Unit-10 counting-choice metric representative — one point of a compatible-metric cone, not a forced one — so `h` and the reality reading inherit that choice; a different compatible metric would give a different Hermitian form while leaving the real polarization `{L_±}` and the parity-block vanishing untouched. The result reads a fixed finite symmetry structure on the `L = 4` torus: no continuum or infinite-volume claim, no Hamiltonian or admissibility dynamics, no probability weight, and nothing pre-record is chosen. It is `r`-neutral and measure-neutral, since `S_eps` commutes with the bulk operator `M`. Its only inputs are the two linked dependency notes; the standard symplectic and Kähler vocabulary is descriptive of the computed blocks, not an imported axiom.
+Thus `S_eps` is a real-linear antisymplectic involution. On the supplied
+Hermitian form it gives
 
-The [paired runner](../scripts/kcpt_chiral_parity_lagrangian_polarization_2026_07_19.py) rebuilds all objects, checks the twenty-four gates above with exact tolerances (`1e-12` for the rational-zero blocks, `1e-8` for eigen and rank, `1e-6` for the rejectors), and prints `TOTAL: PASS=N FAIL=0`, exiting nonzero on any failure. Its cached output belongs at `logs/runner-cache/kcpt_chiral_parity_lagrangian_polarization_2026_07_19.txt`.
+> `S_eps^T h S_eps = g-i omega = conjugate(h)`.
+
+After complexification, `S_eps` maps the `+i` eigenspace of `J_full` to the
+`-i` eigenspace. This is an algebraic reality action on the complexified
+finite representation. No charge-conjugation operator, physical CP map, or
+observable readout is constructed or claimed.
+
+## Ambient preserve/swap grading
+
+Every element of `G_amb` is a signed permutation that changes total
+staggered parity uniformly. It therefore either preserves both planes or
+swaps them. The elements preserving each plane are exactly those commuting
+with `S_eps`, namely `C_(G_amb)(S_eps)`. Exact enumeration of the integer
+signed permutations gives
+
+> `|G_amb|=768`, `|C_(G_amb)(S_eps)|=384`,
+
+with `384` preserving elements, `384` swapping elements, and none outside
+those classes. Composition adds the preserve/swap parity modulo two, so this
+is a surjective homomorphism `G_amb -> Z/2` with the centralizer as kernel.
+
+## Orientation-sibling boundary
+
+The supplied sibling `J_alt=J_ker-J_bulk` also anticommutes with `S_eps` and
+therefore exchanges the same two parity planes. It differs nontrivially from
+`J_full`, since
+
+> `J_full-J_alt=2J_bulk != 0`.
+
+The real polarization is common to these two supplied complex structures;
+the exchanging intertwiner differs. This statement does not select either
+orientation or collapse the larger relative-sign family described by the
+chiral-parity dependency.
+
+## Claim boundaries
+
+- The block-vanishing algebra is the linked chiral-parity theorem expressed
+  in the parity basis; the new result is its bounded symplectic packaging and
+  the explicit ambient preserve/swap grading.
+- The result is conditional on two currently unaudited bounded dependencies
+  and therefore makes no retained-grade or publication-usable claim.
+- It is confined to the fixed `4^3` finite surface. It supplies no continuum,
+  infinite-volume, Hamiltonian, admissibility-dynamics, measure, or
+  probability statement.
+- It is neutral in `r`, measure, metric selection, and orientation selection.
+- Standard Lagrangian, Kähler, antisymplectic, and reality terminology
+  describes the computed finite linear algebra; it is not imported as an
+  additional axiom.
+
+## Verification
+
+The paired runner reconstructs the lattice matrices and all `768` ambient
+signed permutations. Integer parity and group-classification assertions are
+checked exactly. Matrices involving the shell coefficients in
+`Q(sqrt(2),sqrt(3))` are evaluated numerically with declared tolerances, so
+those gates are numerical certificates rather than exact-arithmetic ones. The
+runner separately checks the definitions `g=I_64`,
+`omega=J_full^T g=-J_full`, and `h=g+i omega`; checks the structural inverse
+`omega J_full=I_64` instead of rounding a floating determinant; and carries
+descriptive check names. It reads no mutable Markdown or environment-selected
+fixture, so its cache is pinned only to its own source content.

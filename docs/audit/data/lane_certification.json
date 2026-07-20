@@ -102,10 +102,6 @@
         {
           "claim_id": "three_generation_observable_theorem_note",
           "effective_status": "unaudited"
-        },
-        {
-          "claim_id": "z2_hw1_mass_matrix_parametrization_note",
-          "effective_status": "audit_in_progress"
         }
       ],
       "certified": false,
@@ -115,7 +111,7 @@
       "roots": [
         "charged_lepton_koide_value_full_chain_of_custody_2026-06-02"
       ],
-      "uncertified_count": 26
+      "uncertified_count": 25
     },
     {
       "blocking": [
@@ -2831,10 +2827,6 @@
         {
           "claim_id": "yt_zero_import_chain_note",
           "effective_status": "unaudited"
-        },
-        {
-          "claim_id": "z2_hw1_mass_matrix_parametrization_note",
-          "effective_status": "audit_in_progress"
         }
       ],
       "certified": false,
@@ -2844,9 +2836,9 @@
       "roots": [
         "strong_cp_theta_zero_note"
       ],
-      "uncertified_count": 652
+      "uncertified_count": 651
     }
   ],
-  "repo_head": "e9d00a2d1575b93ec9be7deb1ae621b5e2dcfb84",
+  "repo_head": "698cbfc09425721ae7aadc5291101cb9473322d1",
   "schema": "lane_certification_v2"
 }

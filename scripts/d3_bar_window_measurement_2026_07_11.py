@@ -7,8 +7,8 @@
 Modes are ``--validate`` (default), ``--full``, and ``--report``.  The
 claim-bearing mode is intentionally guarded by live ``k=4``, ``k=5``, and
 ``q=9,10,11`` cube gathers before any trace can start.  ``--report`` reads
-only completed streams/checkpoints and never evolves or reconstructs an
-observable.
+only the committed streams, preflight record, and compact completion manifest;
+it never evolves or reconstructs an observable.
 
 SPEC-NOTE (frozen bar-window memo, inherited bar-location parent): this runner uses the trajectory's
 verified ``t=0`` row for every dynamical excess, ends the dt-halving grid at
@@ -94,8 +94,9 @@ FROZEN_RESERVE_SECONDS = 0.70 * 3600.0
 STREAM_SCHEMA = "d3-bar-window-observable-v1"
 CHECKPOINT_SCHEMA = "d3-bar-window-checkpoint-v1"
 GROUND_SCHEMA = "d3-bar-window-ground-doublet-v1"
-REPORT_SCHEMA = "d3-bar-location-report-v1"
+REPORT_SCHEMA = "d3-bar-location-report-v2"
 PREFLIGHT_SCHEMA = "d3-bar-window-preflight-v1"
+EVIDENCE_MANIFEST_SCHEMA = "d3-bar-window-committed-evidence-v1"
 
 BOUNDARY_SENTENCES = (
     "Not basis-neutral: the ZZ bond and the declared Z pointer privilege the Z basis, by construction.",
@@ -127,6 +128,22 @@ PARENT_PROTOCOL_PATH = REPO_ROOT / "docs" / "D3_BAR_LOCATION_DESIGN_SCOUT_2026-0
 RUN_DIR = REPO_ROOT / "logs" / "runner-cache" / "d3_bar_window_checkpoints"
 REPORT_CACHE_PATH = RUN_DIR / "bar_location_report.json"
 PREFLIGHT_CACHE_PATH = RUN_DIR / "cube_gather_preflight.json"
+EVIDENCE_MANIFEST_PATH = RUN_DIR / "committed_evidence_manifest.json"
+
+# Literal declaration consumed by the dependency-aware runner-cache layer.
+AUDIT_INPUT_PATHS = (
+    "docs/D3_BAR_WINDOW_DESIGN_DELTA_2026-07-11.md",
+    "docs/D3_BAR_LOCATION_DESIGN_SCOUT_2026-07-10.md",
+    "scripts/d3_cubic_orbit_engine_2026_07_09.py",
+    "scripts/d3_bar_location_engine_ext_2026_07_10.py",
+    "logs/runner-cache/d3_bar_window_checkpoints/cube_gather_preflight.json",
+    "logs/runner-cache/d3_bar_window_checkpoints/lam_0p02_observables.jsonl",
+    "logs/runner-cache/d3_bar_window_checkpoints/lam_0p05_observables.jsonl",
+    "logs/runner-cache/d3_bar_window_checkpoints/lam_0p10_observables.jsonl",
+    "logs/runner-cache/d3_bar_window_checkpoints/lam_0p20_observables.jsonl",
+    "logs/runner-cache/d3_bar_window_checkpoints/dt_half_lam_0p10_observables.jsonl",
+    "logs/runner-cache/d3_bar_window_checkpoints/committed_evidence_manifest.json",
+)
 
 PAULI_X = np.asarray([[0.0, 1.0], [1.0, 0.0]], dtype=np.complex128)
 PAULI_Y = np.asarray([[0.0, -1j], [1j, 0.0]], dtype=np.complex128)
@@ -2640,15 +2657,23 @@ def _analyze_cases(
         assert event is not None
         theta = float(event["theta_star"])
         headline_values.append(theta)
-        status = "inside" if theta >= BAR_WINDOW_FLOOR else "BAR-BELOW-WINDOW"
-        below_window = below_window or status == "BAR-BELOW-WINDOW"
+        status = (
+            "inside-declared-floor"
+            if theta >= BAR_WINDOW_FLOOR
+            else "COMPARATOR-BELOW-DECLARED-FLOOR"
+        )
+        below_window = below_window or status == "COMPARATOR-BELOW-DECLARED-FLOOR"
         bar_cases[float(summary["lam"])] = {"theta_star": theta, "status": status}
     if not headline_values:
         check_05 = "unavailable"
         headline_median = None
         headline_range = (None, None)
     else:
-        check_05 = "BAR-BELOW-WINDOW" if below_window else "inside"
+        check_05 = (
+            "COMPARATOR-BELOW-DECLARED-FLOOR"
+            if below_window
+            else "inside-declared-floor"
+        )
         headline_median = float(np.median(np.asarray(headline_values)))
         headline_range = (min(headline_values), max(headline_values))
 
@@ -2711,9 +2736,9 @@ def _analyze_cases(
     if not machinery or not check_01:
         verdict, exit_code = "MACHINERY-FAIL", 2
     elif not (check_02 and check_03 and check_04):
-        verdict, exit_code = "BAR-NOT-PINNED", 1
+        verdict, exit_code = "COMPARATOR-GATE-NOT-MET", 1
     else:
-        verdict, exit_code = "BAR-DERIVED-EFFECTIVE", 0
+        verdict, exit_code = "BOUNDED-MEASURED-SUPPORT", 0
     return {
         "summaries": summaries,
         "fine_summary": fine_summary,
@@ -2843,7 +2868,7 @@ def _six_output_lines(
         for lam in result["w_full"]
     )
     bar = (
-        f"BAR delta-medians={delta_parts} factor={_fmt(result['delta_factor'])}(<1.5); "
+        f"COMPARATOR delta-medians={delta_parts} factor={_fmt(result['delta_factor'])}(<1.5); "
         f"field-factor={_fmt(result['field_factor'])}(<1.5); "
         f"headline {bar_parts if bar_parts else 'unavailable'}; "
         f"median={_fmt(result['headline_median'])} "
@@ -2882,7 +2907,7 @@ def _six_output_lines(
         )
         if not passed
     ]
-    flags = ["BAR-BELOW-WINDOW"] if result["below_window"] else []
+    flags = ["COMPARATOR-BELOW-DECLARED-FLOOR"] if result["below_window"] else []
     if result["noncontiguous_window"]:
         flags.append("NONCONTIGUOUS-WINDOW")
     persistence_values = [
@@ -2916,7 +2941,7 @@ def _failure_lines(mode: str, exc: BaseException) -> list[str]:
         f"SETUP{methods_label} mode={mode} status=incomplete {SPEC_NOTE}",
         f"EVENTS{methods_label} unavailable",
         f"PROFILE+DEMOLITION{methods_label} unavailable",
-        f"BAR{methods_label} unavailable",
+        f"COMPARATOR{methods_label} unavailable",
         f"CHECKS+MACHINERY{methods_label} MACHINERY=FAIL error={type(exc).__name__}:{message}",
         f"TOTAL MACHINERY-FAIL{methods_label} theta*=unavailable window=[] boundary=(unavailable) persistence=unavailable failed=MACHINERY {SPEC_NOTE}",
     ]
@@ -2960,6 +2985,8 @@ def _result_cache_summary(result: Mapping[str, object]) -> dict[str, object]:
                         "norm_errors",
                         "overlap",
                         "stationary_event_counts",
+                        "stationary_observable_max_deviation",
+                        "demolition",
                         "role",
                     )
                 },
@@ -3034,6 +3061,73 @@ def _write_report_cache(
     _atomic_write_json(REPORT_CACHE_PATH, payload)
 
 
+def _sha256_path(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for block in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(block)
+    return digest.hexdigest()
+
+
+def _load_completion_manifest(identity: RunIdentity) -> dict[str, object]:
+    """Load and authenticate the compact provenance/completion record.
+
+    The state-vector checkpoints used during the long run are intentionally
+    not repository artifacts.  This manifest binds the committed observable
+    streams and preflight record to both the generation sources and the
+    reporting sources.  The latter may differ only because the report reader
+    was repaired after the measurement completed.
+    """
+
+    if not EVIDENCE_MANIFEST_PATH.exists():
+        raise FileNotFoundError("missing committed evidence manifest")
+    with EVIDENCE_MANIFEST_PATH.open("r", encoding="utf-8") as handle:
+        payload = json.load(handle)
+    exact = (
+        payload.get("schema") == EVIDENCE_MANIFEST_SCHEMA
+        and payload.get("protocol_hash") == identity.protocol_hash
+        and payload.get("parent_protocol_hash") == identity.parent_protocol_hash
+        and payload.get("fragment_descriptor_checksum")
+        == identity.fragment_descriptor_checksum
+        and payload.get("boundary_sentences") == list(identity.boundary_sentences)
+    )
+    if not exact:
+        raise RuntimeError("committed evidence manifest identity mismatch")
+
+    reporter_sources = payload.get("reporter_sources")
+    generation_sources = payload.get("generation_sources")
+    if not isinstance(reporter_sources, Mapping) or not isinstance(
+        generation_sources, Mapping
+    ):
+        raise RuntimeError("evidence manifest lacks source provenance maps")
+    for label, source_map in (
+        ("reporter", reporter_sources),
+        ("generation", generation_sources),
+    ):
+        for relpath, expected_hash in source_map.items():
+            path = REPO_ROOT / str(relpath)
+            if not path.is_file():
+                raise FileNotFoundError(f"{label} source missing: {relpath}")
+            actual_hash = _sha256_path(path)
+            if label == "generation" and str(relpath) == (
+                "scripts/d3_bar_window_measurement_2026_07_11.py"
+            ):
+                # The long-run source is retained as an exact historical hash;
+                # the current reporter is separately authenticated above.
+                continue
+            if actual_hash != str(expected_hash):
+                raise RuntimeError(f"{label} source hash mismatch: {relpath}")
+
+    artifacts = payload.get("artifacts")
+    if not isinstance(artifacts, Mapping):
+        raise RuntimeError("evidence manifest lacks artifact provenance")
+    for relpath, expected_hash in artifacts.items():
+        path = REPO_ROOT / str(relpath)
+        if not path.is_file() or _sha256_path(path) != str(expected_hash):
+            raise RuntimeError(f"committed artifact hash mismatch: {relpath}")
+    return dict(payload)
+
+
 def _load_preflight(
     *,
     identity: RunIdentity,
@@ -3068,6 +3162,7 @@ def _load_report_case(
     dt: float,
     n_steps: int,
     fine: bool,
+    completion_manifest: Mapping[str, object],
 ) -> tuple[dict[str, object], str, str]:
     prefix = _trace_prefix(lam, fine=fine)
     run_kind = "cube-dt-halving" if fine else "cube-full"
@@ -3089,27 +3184,28 @@ def _load_report_case(
         for row in rows
     ):
         raise RuntimeError(f"observable stream {prefix} changes basis/lookup identity")
-    checkpoint_path = _newest_checkpoint_path(prefix)
-    if checkpoint_path is None:
-        raise FileNotFoundError(f"missing checkpoint for {prefix}")
-    checkpoint = _load_trace_checkpoint(
-        checkpoint_path,
-        identity=identity,
-        expected_prefix=prefix,
-        expected_lam=lam,
-        expected_dt=dt,
-        expected_n_steps=n_steps,
-        expected_basis_checksum=basis_checksum,
-        expected_lookup_checksum=lookup_checksum,
-        expected_initial_checksum=None,
-        expected_state_size=None,
-        load_state=False,
+    cases = completion_manifest.get("cases")
+    if not isinstance(cases, Mapping) or not isinstance(cases.get(prefix), Mapping):
+        raise RuntimeError(f"completion manifest lacks case {prefix}")
+    case_manifest = dict(cases[prefix])
+    expected_stream = str(_stream_path(lam, fine=fine).relative_to(REPO_ROOT))
+    exact_case = (
+        case_manifest.get("stream_path") == expected_stream
+        and int(case_manifest.get("row_count", -1)) == n_steps + 1
+        and int(case_manifest.get("first_step", -1)) == 0
+        and int(case_manifest.get("last_step", -1)) == n_steps
+        and float(case_manifest.get("lam", math.nan)) == float(lam)
+        and float(case_manifest.get("dt", math.nan)) == float(dt)
+        and int(case_manifest.get("n_steps", -1)) == n_steps
+        and case_manifest.get("basis_checksum") == basis_checksum
+        and case_manifest.get("raw_to_orbit_checksum") == lookup_checksum
     )
-    if int(checkpoint["step"]) != n_steps:
-        raise RuntimeError(f"newest checkpoint for {prefix} is not complete")
-    if _json_dumps(checkpoint["rows"]) != _json_dumps(rows):
-        raise RuntimeError(f"checkpoint/stream normalized JSON mismatch for {prefix}")
-    ground = dict(checkpoint["ground"])
+    if not exact_case:
+        raise RuntimeError(f"completion manifest case mismatch for {prefix}")
+    ground_payload = case_manifest.get("ground")
+    if not isinstance(ground_payload, Mapping):
+        raise RuntimeError(f"completion manifest lacks ground summary for {prefix}")
+    ground = dict(ground_payload)
     if (
         ground.get("protocol_hash") != identity.protocol_hash
         or ground.get("parent_protocol_hash") != identity.parent_protocol_hash
@@ -3118,10 +3214,10 @@ def _load_report_case(
         != identity.fragment_descriptor_checksum
         or ground.get("boundary_sentences") != list(identity.boundary_sentences)
     ):
-        raise RuntimeError(f"checkpoint ground metadata identity mismatch for {prefix}")
-    completion_wall = float(checkpoint["metadata"].get("run_wall_seconds", math.nan))
+        raise RuntimeError(f"manifest ground metadata identity mismatch for {prefix}")
+    completion_wall = float(case_manifest.get("completion_wall_seconds", math.nan))
     if not np.isfinite(completion_wall) or completion_wall < 0.0:
-        raise RuntimeError(f"checkpoint {prefix} lacks valid cumulative wall metadata")
+        raise RuntimeError(f"manifest {prefix} lacks valid cumulative wall metadata")
     return {
         "rows": rows,
         "ground": ground,
@@ -3239,6 +3335,7 @@ def run_full() -> int:
 def run_report() -> int:
     _require_engine_api()
     identity = _identity()
+    completion_manifest = _load_completion_manifest(identity)
     prior_report: dict[str, object] | None = None
     if REPORT_CACHE_PATH.exists():
         with REPORT_CACHE_PATH.open("r", encoding="utf-8") as handle:
@@ -3259,7 +3356,12 @@ def run_report() -> int:
     lookup_checksum: str | None = None
     for lam in LAMBDAS:
         case, local_basis, local_lookup = _load_report_case(
-            identity=identity, lam=lam, dt=DT, n_steps=N_STEPS, fine=False
+            identity=identity,
+            lam=lam,
+            dt=DT,
+            n_steps=N_STEPS,
+            fine=False,
+            completion_manifest=completion_manifest,
         )
         cases[lam] = case
         if basis_checksum is None:
@@ -3272,6 +3374,7 @@ def run_report() -> int:
         dt=FINE_DT,
         n_steps=FINE_N_STEPS,
         fine=True,
+        completion_manifest=completion_manifest,
     )
     if basis_checksum != fine_basis or lookup_checksum != fine_lookup:
         raise RuntimeError("dt-halving trace identity differs from main traces")
@@ -3340,7 +3443,7 @@ def _validation_lines(
         + f"; preflight-gather-seconds[k4,k5,q9,q10,q11]={_fmt_vector([timings[name] for name in ('k4','k5','q9','q10','q11')])}"
     )
     bar = (
-        "BAR SLAB-METHODS-ONLY unavailable no-physics-claim; "
+        "COMPARATOR SLAB-METHODS-ONLY unavailable no-physics-claim; "
         f"launch-projection={float(preflight['projected_wall_seconds'])/3600.0:.4g}h/"
         f"{float(preflight['projected_rss_gb']):.3f}GiB gate={preflight['gate']}"
     )
@@ -3458,7 +3561,7 @@ def _parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
         description="Validate, run, or report the frozen d=3 bar-location protocol."
     )
     modes = parser.add_mutually_exclusive_group()
-    modes.add_argument("--validate", action="store_true", help="methods validation (default)")
+    modes.add_argument("--validate", action="store_true", help="live methods validation")
     modes.add_argument("--full", action="store_true", help="claim-bearing overnight cube run")
     modes.add_argument("--report", action="store_true", help="regenerate six lines from artifacts")
     return parser.parse_args(argv)
@@ -3486,10 +3589,17 @@ def main(argv: Sequence[str] | None = None) -> int:
             for line in _failure_lines("report", exc):
                 print(line)
             return 2
+    if args.validate:
+        try:
+            return run_validate()
+        except Exception as exc:  # noqa: BLE001 - validation also keeps six lines.
+            for line in _failure_lines("validate-SLAB-METHODS-ONLY", exc):
+                print(line)
+            return 2
     try:
-        return run_validate()
-    except Exception as exc:  # noqa: BLE001 - validation also keeps six lines.
-        for line in _failure_lines("validate-SLAB-METHODS-ONLY", exc):
+        return run_report()
+    except Exception as exc:  # noqa: BLE001 - default is cache-friendly reporting.
+        for line in _failure_lines("report", exc):
             print(line)
         return 2
 

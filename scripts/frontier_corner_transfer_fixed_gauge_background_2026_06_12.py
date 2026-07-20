@@ -4,11 +4,12 @@
 Verification companion for
 docs/CORNER_TRANSFER_EXTENDS_TO_FIXED_GAUGE_BACKGROUNDS_BOUNDED_NOTE_2026-06-12.md.
 
-This runner stays on the fixed-background surface. It reuses the retained
-position-space two-step transfer construction from the fixed-gauge RP engine,
-adds the AC_phi_lambda circulant channel decomposition, and checks the theorem
-parts N1--N5 plus source-note firewall checks. It does not integrate over gauge
-backgrounds.
+This runner stays on the fixed-background surface. It reuses only the
+conditional anti-Hermitian recurrence algebra from the cited finite-matrix
+theorem, adds the AC_phi_lambda circulant channel decomposition, and checks the
+theorem parts N1--N5 plus source-note firewall checks. It inherits no physical
+transfer, reflection-positivity, or P2 authority from the cited theorem and
+does not integrate over gauge backgrounds.
 """
 from __future__ import annotations
 
@@ -472,10 +473,23 @@ def main() -> int:
     substep1 = SUBSTEP1.read_text()
     registrable = REGISTRABLE.read_text()
 
-    check("engine grep: config-by-config phrase present", "config-by-config" in engine)
-    check("engine grep: B[U]^dag B[U] two-step phrase present", "T_hat^2[U] = B[U]^dag B[U]" in engine)
-    check("engine grep: fixed arbitrary SU(3)/U(1) temporal-gauge authority present",
-          "fixed, arbitrary `SU(3)`" in engine and "`U(1)`" in engine and "temporal gauge" in engine)
+    check("engine contract: anti-Hermitian recurrence inputs are explicit",
+          "h^dag = -h" in engine and "Supply the alternating recurrence" in engine)
+    check("engine contract: exact positive-definite modal theorem is present",
+          "`C(h,m)` is Hermitian positive definite" in engine
+          and "exp(+2 asinh(sqrt(m^2 + lambda_j^2)))" in engine
+          and "exp(-2 asinh(sqrt(m^2 + lambda_j^2)))" in engine)
+    check("engine firewall: physical transfer, RP, and P2 are explicitly excluded",
+          "No quantum-transfer, reflection-positivity, dynamical-gauge, P2" in engine
+          and "a second-quantized or many-body operator `Gamma(t1)`" in engine)
+    legacy_physical_claims = (
+        "T_hat^2[U] = B[U]^dag B[U]",
+        "positive Hermitian config-by-config",
+        "Fixed-Gauge RP Transfer Positivity",
+        "This is exactly the two-step reflection-positivity statement",
+    )
+    check("engine firewall: deleted physical/RP claims remain absent",
+          not any(claim in engine for claim in legacy_physical_claims))
     check("substep1 grep: canonical Berezin determinant side present",
           "Berezin" in substep1 and "det(M)" in substep1)
     check("registrability grep: Record-registrable / phase-free class present",
@@ -521,7 +535,7 @@ def main() -> int:
     print()
     print(f"SCORECARD: PASS={PASS} FAIL={FAIL}")
     print("SUMMARY: fixed-background corner transfer checks complete; U-integrated gauge dynamics remains the named open.")
-    return 0 if PASS == 30 and FAIL == 0 else 1
+    return 0 if PASS == 31 and FAIL == 0 else 1
 
 
 if __name__ == "__main__":

@@ -1,100 +1,66 @@
 ===== runner cache v1 =====
 runner: scripts/rp_p2_gauge_extension_and_labeling_indifference_2026_05_28.py
-runner_sha256: a38cd90fa1d7e291d082ab7670277610d1a73e20266e5684589cd2f272f79548
+runner_sha256: 08e97c0fa45ef482f5618c1b4c32cee2532e802999ff1a232b0f52948f1bcfb6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.30
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 ==============================================================================
-FIXED-GAUGE RP TRANSFER + STANDALONE RELABELING-INVARIANCE EXHIBIT
+CONDITIONAL STATIC-RECURRENCE POSITIVITY + FINITE CONJUGATION INVARIANCE
 ==============================================================================
-Staggered KS, temporal gauge U_0=1, m=0.5, eta_0=1, eta_1(t)=(-1)^t.
-Free case (free two-step transfer-matrix positivity row) was U=1 momentum-diagonal; here: fixed SU(3)/U(1),
-position space, config-by-config.  Relabeling invariance: det/spec/Z
-invariant under hw=1 triplet relabeling.
+INPUT FIREWALL: h^dag=-h and the alternating recurrence are supplied.
+No axiom-to-carrier, quantum-transfer, second-quantization, RP, P2, or
+AC_phi_lambda identification is tested or claimed.
 
-------------------------------------------------------------------------------
-MODAL TRANSFER FORMULA: anti-Hermitian spatial-hop eigenvalue i*lambda
-    gives transfer eigenvalues exp(+/-2 asinh(sqrt(m^2+lambda^2)))
-------------------------------------------------------------------------------
-    lambda samples=[-3.0, -1.25, -0.2, 0.0, 0.7, 2.5]
-    max eigenvalue residual=3.553e-15  max |Im|=8.979e-17
-    min transfer eigenvalue=2.565791e-02  -> PASS
+MODAL 2 BY 2 FORMULA
+    max spectral residual = 1.421e-14
+    max Hermiticity error = 0.000e+00
+    max |det-1|           = 4.441e-15
+    minimum eigenvalue    = 2.565791e-02
+    modal transfer formula: PASS
 
-------------------------------------------------------------------------------
-FREE-CASE BRIDGE: position-space 2-step decaying eigenvalues at U=1
-    reproduce momentum-space free spectrum {e^{-2E(p)}}
-------------------------------------------------------------------------------
-    L_s=3: max|pos-mom residual|=2.220e-16  max|Im(decay)|=6.833e-42  -> ok
-    L_s=4: max|pos-mom residual|=6.106e-16  max|Im(decay)|=5.175e-28  -> ok
-    L_s=6: max|pos-mom residual|=4.163e-16  max|Im(decay)|=2.004e-16  -> ok
-    free-case bridge = PASS
+IDENTITY-LINK SPECIALIZATION OF THE SAME SUPPLIED RECURRENCE
+    length=3: position/Fourier residual=1.388e-15, min eig=1.715729e-01
+    length=4: position/Fourier residual=2.665e-15, min eig=1.458980e-01
+    length=6: position/Fourier residual=2.665e-15, min eig=1.715729e-01
+    identity-link specialization: PASS
 
-------------------------------------------------------------------------------
-SAMPLED SU(3) PER-CONFIG POSITIVITY: fixed random spatial backgrounds
-    spec(T2cl[U]) subset R_{>0}; T_hat^2[U]=B[U]^dag B[U]; H_hat[U]>=0
-------------------------------------------------------------------------------
-    configs=200  (SU(3), L_s=4, 3 colors -> 12 spatial modes)
-    max |Im(decay eig)| over configs   = 7.529e-16  (want ~0)
-    min decaying eigenvalue mu          = 1.458981e-01  (want >0)
-    max decaying eigenvalue mu          = 3.819653e-01  (<=1)
-    min single-particle eig(H_hat[U])   = 4.812127e-01  (>=0)
-    many-body T_hat^2 min eig           = 4.832304e-04  (>0)
-    many-body ||T_hat^2 - B^dag B||     = 2.78e-17
-    positivity failures (configs)       = 0 / 200
-    sampled SU(3) positivity = PASS
+SAMPLED SU(3) STATIC-LINK MATRIX EXHIBIT
+    supplied link lists    = 200
+    max ||h+h^dag||        = 0.000e+00
+    max ||C-C^dag||        = 0.000e+00
+    max ||C-T_even^dag T_even|| = 0.000e+00
+    max modal residual     = 1.155e-14
+    min eig(C)             = 1.458981e-01
+    failed lists           = 0 / 200
+    sampled SU(3) matrix positivity: PASS
 
-------------------------------------------------------------------------------
-SAMPLED U(1) PER-CONFIG POSITIVITY (Abelian cross-check)
-------------------------------------------------------------------------------
-    configs=200  (U(1), L_s=6, 1 'color' -> 6 spatial modes)
-    max |Im(decay eig)| over configs   = 5.020e-16  (want ~0)
-    min decaying eigenvalue mu          = 1.458988e-01  (want >0)
-    min single-particle eig(H_hat[U])   = 4.812143e-01  (>=0)
-    many-body T_hat^2 min eig           = 1.097269e-04  (>0)
-    positivity failures (configs)       = 0 / 200
-    sampled U(1) positivity = PASS
+SAMPLED U(1) STATIC-LINK MATRIX EXHIBIT
+    supplied link lists    = 200
+    max ||h+h^dag||        = 0.000e+00
+    max ||C-C^dag||        = 0.000e+00
+    max ||C-T_even^dag T_even|| = 0.000e+00
+    max modal residual     = 8.882e-15
+    min eig(C)             = 1.458988e-01
+    failed lists           = 0 / 200
+    sampled U(1) matrix positivity: PASS
 
-------------------------------------------------------------------------------
-B   STANDALONE RELABELING INVARIANCE: det(M_KS+mI), spec(H_hat), Z=Tr(e^{-beta H_hat})
-    invariant under hw=1 triplet relabeling (permutation conjugation)
-------------------------------------------------------------------------------
-    hw=1 triplet permutations tested    = 6 (all of S_3)
-    staggered-embedded relabelings      = 6
-    faithful-surface check: ||M_KS+M_KS^dag||=0.0e+00  ||{eps,M_KS}||=0.0e+00  (anti-Hermitian plus epsilon anticommutation)
-    baseline det(M_KS+mI)               = 0.77247620+0.0e+00j  (real-positive, matches determinant context row)
-    max |det(M) deviation| over relabels= 9.992e-16
-    max |det(H3) deviation| over S_3    = 2.776e-17
-    max |spec(H_hat) deviation| over S_3= 4.441e-16
-    baseline Z = Tr(e^{-beta H_hat})   = 1.36957843
-    max |Z(triplet) deviation| over S_3 = 1.776e-15
-    determinant invariance = PASS
-    spectrum invariance    = PASS
-    trace invariance       = PASS
-
-------------------------------------------------------------------------------
-U-INTEGRATED RP BOUNDARY (not claimed by this runner)
-------------------------------------------------------------------------------
-    This runner supplies only the fixed-background fermion transfer factor.
-    It does not prove <Theta(F)F> >= 0 for the full dynamical-gauge theory,
-    and it does not apply the abstract gauge-half Cauchy-Schwarz identity
-    to Wilson plaquette half-actions or temporal-gauge boundary data.
-
-    DOWNSTREAM CONTEXT NOT CLAIMED HERE:
-    This runner does not close any P2/AC_phi_lambda residual. It only
-    supplies the finite det/spec/Z relabeling-invariance facts that
-    downstream rows may cite after separate audit.
+FINITE PERMUTATION-CONJUGATION INVARIANCE
+    permutations tested    = 6 (all of S_3)
+    |det(M)| baseline      = 7.41590041
+    Tr(exp(-beta H))       = 9.31710117
+    max determinant dev    = 2.809e-15
+    max spectrum dev       = 6.661e-16
+    max exp-trace dev      = 8.882e-15
+    determinant invariance: PASS
+    spectrum invariance: PASS
+    exponential-trace invariance: PASS
 
 ==============================================================================
 SCORECARD: PASS=7 FAIL=0
-  modal transfer formula : anti-Hermitian-hop eigenmode gives positive transfer pair
-  free-case bridge       : position-space build faithful to free dispersion
-  sampled SU(3) positivity: fixed-background transfer positivity exhibit
-  sampled U(1) positivity : Abelian cross-check
-  determinant invariance  : det(M_KS+mI) relabeling-invariant
-  spectrum invariance     : spec(H_hat) relabeling-invariant
-  trace invariance        : Z=Tr(e^{-beta H_hat}) relabeling-invariant
+  claim surface: conditional finite-matrix theorem only
+  excluded: quantum transfer, Gamma/Fock map, U integration, RP, P2, AC_phi_lambda
 ==============================================================================
 
 ----- stderr -----

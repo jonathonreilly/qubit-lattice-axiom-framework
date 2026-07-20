@@ -14,11 +14,12 @@ and does not assert a retained outcome for this packet.
 FIREWALL: fixed background only. This note proves (N1)--(N5) on the supplied
 corner-axis surface at a fixed spatial gauge background in temporal gauge. The
 computed witness class is arbitrary finite `U(1)` phase backgrounds at
-`L_s = 2`; the retained fixed-gauge engine supplies the general
-fixed-background `SU(3)`/`U(1)` authority. The note does **not** integrate over
-backgrounds, does **not** supply the gauge measure, does **not** select a
-species reading, does **not** select an occupancy cell, does **not** fix `r`,
-and leaves the binary untouched.
+`L_s = 2`. The cited conditional finite-matrix theorem supplies only the
+anti-Hermitian recurrence algebra used by the finite construction; it supplies
+no physical transfer, reflection-positivity, or P2 authority. This note does
+**not** integrate over backgrounds, does **not** supply the gauge measure, does
+**not** select a species reading, does **not** select an occupancy cell, does
+**not** fix `r`, and leaves the binary untouched.
 
 The U-INTEGRATED level remains the named open next path: what is still missing
 is the measure over backgrounds and the full gauge dynamics. This note narrows
@@ -43,10 +44,10 @@ diagonalizes `C`, so `H(delta)` splits into three channels; under
 `delta -> -delta`, channel `0` is fixed and the doublet channels `1` and `2`
 swap.
 
-The retained fixed-background engine gives the position-space two-step
-staggered transfer construction. At fixed `U`, the spatial hop is
-anti-Hermitian; each positive channel mass `lambda_k` therefore inherits
-config-by-config two-step positivity:
+The cited conditional matrix theorem gives the position-space two-step matrix
+for an explicitly supplied alternating recurrence. At fixed `U`, this packet's
+supplied spatial hop is anti-Hermitian; each positive channel mass `lambda_k`
+therefore inherits finite-matrix two-step positivity:
 
 ```text
 T_k^2[U] = B_k[U]^dag B_k[U] >= 0.
@@ -58,11 +59,11 @@ T_k^2[U] = B_k[U]^dag B_k[U] >= 0.
 acts on the internal factor and the gauge background acts on the spatial
 factor. They commute, so the Fourier/circulant basis block-diagonalizes the
 fixed-background action into three channels with masses `lambda_k`. Each
-channel inherits the retained fixed-background two-step positivity
-`T_k^2[U] = B_k[U]^dag B_k[U]`, positive Hermitian config-by-config. The runner
-checks the block residual and the channel positivity on two fixed random
-`U(1)` backgrounds and both parameter points. Check tags: `N1a`, `N1b`,
-`N1c`.
+channel inherits the cited theorem's conditional finite-matrix positivity
+`T_k^2[U] = B_k[U]^dag B_k[U]` once this packet's recurrence and carrier are
+supplied. The runner checks the block residual and the channel positivity on
+two fixed random `U(1)` backgrounds and both parameter points. Check tags:
+`N1a`, `N1b`, `N1c`.
 
 **(N2) Corner transfer at fixed background.** Define the fixed-background
 corner transfer by tensoring the three channel transfers:
@@ -155,7 +156,8 @@ the U-INTEGRATED gauge-dynamics level.
 ## Dependencies
 
 - [`RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md`](RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md)
-  -- the retained fixed-gauge engine (N1/N2 authority; construction reused).
+  -- conditional anti-Hermitian recurrence algebra used by N1/N2; it supplies
+  no quantum-transfer, reflection-positivity, or P2 conclusion.
 - [`STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md)
   -- the canonical pair measure (N3's Berezin side).
 - [`REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`](REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md)
@@ -183,7 +185,7 @@ Run:
 python3 scripts/frontier_corner_transfer_fixed_gauge_background_2026_06_12.py
 ```
 
-Expected scorecard: `PASS=30 FAIL=0`. The runner prints the two parameter
+Expected scorecard: `PASS=31 FAIL=0`. The runner prints the two parameter
 points, the two fixed random `U(1)` witness seeds, the channel positivity
 minima, the `dim 64` corner positivity check, Berezin normalization forcing,
 the `K`-real and conjugated-background complement checks, firewall checks, and

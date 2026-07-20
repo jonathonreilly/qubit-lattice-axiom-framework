@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/microcausality_directional_tilt_axis_cone_refinement_2026_07_18.py
-runner_sha256: 4022a2af728423d8d8fff4ecc1390c8079155529cbc5c38f71974414bbccc718
+runner_sha256: be9d1e6b84ff0b4de204443437906e167a2274a706003a6dd775bc2647e29b7d
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.38
@@ -15,7 +15,7 @@ PASS: indicator-bound exact threshold and below-threshold instances
 PASS: axis-offset-witness exact 2m-2 offset and m=1 counterexample to 2m-1
 PASS: series-assembly reconstructed parent k-term sums to theorem display
 PASS: display-decay exact y=5/2 spatial factor (4/25)^m
-PASS: offset-prefactor-mutation false 2m-1 offset and y/S prefactor rejected
+PASS: offset-prefactor-mutation two-site slope rejects coupled 2m-1 and y/S edit
 PASS: scan-value S_parallel(5/2)=1801/100 exactly
 PASS: parent-comparison exact positive-series lower bounds and rational margin
 PASS: scan-interval-comparisons rational atanh bounds prove all five pairs

@@ -243,13 +243,64 @@ def main():
         and sp.Rational(4, 25) < 1,
     )
 
-    true_prefactor = y**2 / s_s
-    false_prefactor = y / s_s
+    pauli_x = sp.Matrix([[0, 1], [1, 0]])
+    pauli_z = sp.Matrix([[1, 0], [0, -1]])
+    identity_2 = sp.eye(2)
+    witness_h = sp.kronecker_product(pauli_x, pauli_x)
+    witness_a = sp.kronecker_product(pauli_z, identity_2)
+    witness_b = sp.kronecker_product(identity_2, pauli_z)
+    first_commutator = witness_h * witness_a - witness_a * witness_h
+    commutator_derivative = sp.I * (
+        first_commutator * witness_b - witness_b * first_commutator
+    )
+    exact_derivative_norm_squared = sp.simplify(
+        commutator_derivative.conjugate().T * commutator_derivative
+    )
+    display_linear_coefficient = sp.simplify(
+        sp.diff(display, t_s)
+        .subs(
+            {
+                t_s: 0,
+                a_n: 1,
+                b_n: 1,
+                n_s: 1,
+                m_s: 1,
+                j_s: 1,
+                s_s: s_parallel,
+            }
+        )
+    )
+    false_display = (
+        2
+        * a_n
+        * b_n
+        * n_s
+        * (y / s_s)
+        * y ** (-2 * m_s)
+        * (sp.exp(2 * j_s * s_s * t_s) - 1)
+    )
+    false_linear_coefficient = sp.simplify(
+        sp.diff(false_display, t_s)
+        .subs(
+            {
+                t_s: 0,
+                a_n: 1,
+                b_n: 1,
+                n_s: 1,
+                m_s: 1,
+                j_s: 1,
+                s_s: s_parallel,
+                y: y52,
+            }
+        )
+    )
     checks.check(
-        "offset-prefactor-mutation false 2m-1 offset and y/S prefactor rejected",
+        "offset-prefactor-mutation two-site slope rejects coupled 2m-1 and y/S edit",
         witness_gain < 1
-        and sp.simplify(true_prefactor - false_prefactor) != 0
-        and sp.simplify((true_prefactor / false_prefactor) - y) == 0,
+        and exact_derivative_norm_squared == 16 * sp.eye(4)
+        and display_linear_coefficient == 4
+        and false_linear_coefficient == sp.Rational(8, 5)
+        and false_linear_coefficient < 4,
     )
 
     exact_s52 = sp.Rational(1801, 100)

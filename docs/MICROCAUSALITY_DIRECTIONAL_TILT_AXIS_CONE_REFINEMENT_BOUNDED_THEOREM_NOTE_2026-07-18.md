@@ -142,7 +142,9 @@ At `y=5/2`, the exact readout is
 
 > `v_axis(5/2)=(1801/100)J/ln(5/2)`.
 
-It is below the parent's `20eJ` readout. Indeed,
+Its coefficient is strictly below `20e`; consequently
+`v_axis(5/2) <= 20eJ` for `J>=0`, with strict inequality when `J>0`.
+Indeed,
 `e > sum_{n=0}^6 1/n! = 1957/720`, while the positive atanh series gives
 
 > `ln(5/2)=2 atanh(3/7)

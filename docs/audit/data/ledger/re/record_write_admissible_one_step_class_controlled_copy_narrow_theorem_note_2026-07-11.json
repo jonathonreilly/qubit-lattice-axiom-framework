@@ -34,7 +34,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 8.687,
+  "load_bearing_score": 8.7,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -55,6 +55,6 @@
   },
   "runner_path": "scripts/record_write_admissible_one_step_class_controlled_copy_2026_07_11.py",
   "title": "Admissible One-Step Record-Write Class: Controlled-Copy Narrow Theorem",
-  "transitive_descendants": 102,
+  "transitive_descendants": 103,
   "verdict_rationale": null
 }

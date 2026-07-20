@@ -63,7 +63,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "retained_bounded",
-  "load_bearing_score": 15.254,
+  "load_bearing_score": 15.255,
   "load_bearing_step": "For each checked radius R = 2, 3, 4, the runner constructs the declared cubical boundary triangulation and cone-cap complex and verifies the five listed finite combinatorial properties.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "retained_bounded",
@@ -126,6 +126,6 @@
   },
   "runner_path": "scripts/frontier_pl_topology_finite_cone_cap_certificate.py",
   "title": "PL-Topology Infrastructure \u2014 Finite Cone-Cap Boundary Certificate",
-  "transitive_descendants": 1220,
+  "transitive_descendants": 1221,
   "verdict_rationale": "The current note no longer imports PL Schoenflies, homogeneity, every-cap-homeomorphic closure, S^3 compactification, or physical closure as load-bearing conclusions. The executable evidence is bounded to R = 2, 3, 4 and verifies only finite combinatorial identities for the declared cubical-boundary cone-cap construction. This is clean as a bounded finite certificate, but it must not be cited as a general PL topology theorem or as a physical compactification theorem."
 }

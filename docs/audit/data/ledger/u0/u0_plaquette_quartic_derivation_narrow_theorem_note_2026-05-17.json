@@ -41,7 +41,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 11.502,
+  "load_bearing_score": 11.504,
   "load_bearing_step": "At L=4, the unit-mean equation <P>/u_0^4=1 gives u_0^4=<P>, whose unique positive solution is u_0=<P>^{1/4}.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -1313,6 +1313,6 @@
   },
   "runner_path": "scripts/frontier_u0_plaquette_quartic_derivation.py",
   "title": "u_0 = <P>^{1/4} Plaquette-Quartic-Exponent Narrow Theorem",
-  "transitive_descendants": 724,
+  "transitive_descendants": 725,
   "verdict_rationale": "The runner genuinely verifies the load-bearing scalar factorization, fourth-power equation, and unique positive root rather than merely printing the result. However, P2 is explicitly identified as a named external admission and is neither an accepted framework premise nor a retained-grade cited authority in the restricted packet. Therefore the fourth-root conclusion is valid conditionally on P2 but is not eligible for audited_clean status."
 }

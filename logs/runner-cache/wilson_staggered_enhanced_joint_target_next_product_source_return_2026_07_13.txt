@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/wilson_staggered_enhanced_joint_target_next_product_source_return_2026_07_13.py
+runner_sha256: 0216b06ec5695f4ea81c031904701df719345ee15d071a249ca814eaf2fa8c89
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+PASS enhanced_completed_joint_activity: K_dec=1.620107585289108e-10, K_T=1.742570618731203e-10<c, D=36.787944758200140@n=100, tau=6.410559165914614e-09, visible micro rows=1.0e-20>ulp(K_T), log10 G upper bound=-369.788, log10 centered tail=-737.814
+PASS uniform_enhanced_two_mark_tube: K_delta=1.000500340965404e-03<c, D_delta=40.877743210929708@n=111, tau_delta=0.040898196020431, M_delta=98.154220326636704, tube=8.678223362291083e-04<delta, margin=1.321776637708917e-04
+PASS independent_decimal_tube_reconstruction: Decimal n=111, tau=0.040898196020431383879619661845566322957281593438810319310660238053105116580247290, M=98.154220326636681916984771544665456311675773406610390818108561691780956973434543, lhs=0.00086782233622910825835342789439137215251442914297232086788708304246239925588920837, margin=0.00013217766377089174164657210560862784748557085702767913211291695753760074411079163
+PASS three_way_source_split_and_factorization: max factorization error=5.551e-17, mixed local/centered=7.546e-09, mixed raw/centered=1.171e-09, centered expectation=0.0e+00
+PASS coefficient_valued_next_product_output_split: reconstruction error=0.0e+00, P_rel E_1 residual=0.0e+00, E_1 centered=1.7e-18, retained raw complement=-0.047
+PASS scalar_trace_reference_and_traceless_ledger: reconstruction error=0.0e+00, traceless trace=5.3e-23, |scalar|=6.318e-07<=op=2.274e-06<=epsilon_Q=3.791e-06, m_1/m=1.000000631774353
+PASS gap_atom_and_reference_transition_return: complete charge=1.867836809216916e-03, eps_Q=3.790646118961641e-06, gap/m=0.999996209353881, theta_atom=4.437241454001003, logT_ref=1.608234205929530e-05, returned=(4.437225371658944,0.2)>(4.4,0.2), torsor isometry=True, expm1(delta)=1.000500166708342e-03<c
+PASS finite_horizon_not_autonomous_boundary: m=1e64 enhanced rerun fails (Block40 enhanced K_T=1.7409211424631766e+17 must be below c_40h=0.2); unchanged next atom theta before eta charge=0.427252825960914<4.4; enhanced source theta=12.4
+PASS hidden_condition_phrase_scan: pre-N3 note plus pre-scan runner counts={'we assume': 0, 'by construction': 0, 'as is standard': 0, 'the framework provides': 0, 'bridge context': 0, 'background': 0, 'naturally': 0, 'obviously': 0, 'standard qft': 0, 'registered': 0, 'canonical': 0}
+PASS source_contract: missing=[], forbidden_hits=[]
+PASS repository_dependency_set: markdown_dependency_set=['WILSON_STAGGERED_COMPLETED_JOINT_TWO_MARK_COVARIANCE_NONLINEAR_SOURCE_OUTPUT_TUBE_BOUNDED_THEOREM_NOTE_2026-07-13.md', 'WILSON_STAGGERED_ENHANCED_MOMENT_GENERATED_BASE_DECORATED_FACTOR_RETURN_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_EXTERNAL_SHORTEST_SCHUR_CENTER_HAAR_TAIL_PROJECTED_QUADRATIC_WEYL_CONDITIONAL_REFERENCE_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_EXTRACTED_S2_FUTURE_CENTER_PRODUCT_REFERENCE_COUNTERTERM_PERSISTENT_GAP_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_SCALAR_PRODUCT_REFERENCE_COMPLETED_JOINT_OUTER_HAAR_ACTUAL_OUTPUT_ATOM_RETURN_BOUNDED_THEOREM_NOTE_2026-07-13.md']
+SCORECARD PASS=11 FAIL=0
+
+----- stderr -----
+

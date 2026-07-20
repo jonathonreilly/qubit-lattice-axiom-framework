@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/wilson_staggered_site_block_syntactic_support_tree_span_marked_response_return_2026_07_12.py
+runner_sha256: e7c849890a1bedb5be2c356e710105ffc2307cde654c517d2eeede8739754a70
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.37
+status: ok
+----- stdout -----
 PASS actual_hidden_external_coordinate_partition_and_ownership: 56 nonskeleton + 4 skeleton B = 60 hidden Haar; 15 I1 Gaussian; 4 W + 1 K1 slot external; even block trivial and 15 hidden blocks have 5 coordinates
 PASS external_w_mark_stays_in_physical_hidden_raw_arm: F(W)=W has E_hid F=F and Q_hid F=0; formal Q_W F is nonzero and survives E_hid
 PASS skeleton_substitution_and_hidden_expectation_are_contractive: Z2 fixture: (B,W)->(V1,V2) is bijective, sup norm is preserved, and fixed-W E_B is contractive
@@ -16,3 +24,6 @@ PASS weak_diameter_codomain_is_not_block43_strong_arm: proved Lambda_out=.1 < Bl
 PASS source_contract: missing=[], forbidden_hits=[]
 PASS repository_dependency_set: markdown_dependency_set=['WILSON_STAGGERED_BLOCK_SATURATED_PRODUCT_REFERENCE_SPLIT_HANDOFF_SCALAR_NEXT_ACTIVITY_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_CONSTRAINED_FIBER_TWO_LAYER_KP_COMPLEX_SOURCE_POLYMER_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_ENHANCED_MOMENT_GENERATED_BASE_DECORATED_FACTOR_RETURN_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_K_RETAINING_MARKED_ATTACHMENT_STRONG_WEAK_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_TWO_HORIZON_SKELETON_PULLBACK_CANONICAL_REHOEFFDING_INTERTWINING_BOUNDED_THEOREM_NOTE_2026-07-12.md']
 SCORECARD PASS=17 FAIL=0
+
+----- stderr -----
+

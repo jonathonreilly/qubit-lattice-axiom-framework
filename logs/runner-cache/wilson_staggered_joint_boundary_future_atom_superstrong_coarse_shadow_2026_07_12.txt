@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/wilson_staggered_joint_boundary_future_atom_superstrong_coarse_shadow_2026_07_12.py
+runner_sha256: b2d87de891638e4c8f4868137171bb6fc29cb879aafa5609dd594369d420cb40
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
 PASS current_evaluation_commutes_with_canonical_future_atoms: max commutator=2.776e-17, reconstruction=0.000e+00
 PASS future_atom_fusion_can_create_genuine_empty_atom: tag empty=0.000e+00, tag nonempty=1.000e+00, fused empty range=[1.000e+00,1.000e+00], max fused nonempty=0.000e+00
 PASS doubled_hidden_weights_pay_next_strong_coarse_shadow: max output/input weight ratio=2.718281828459055e+00 <= exp(Lambda)=2.718281828459045e+00
@@ -5,3 +13,6 @@ PASS strict_future_atom_superstrong_to_strong_witness: hidden_theta=8.0000200000
 PASS source_contract: missing=[], forbidden_hits=[]
 PASS repository_dependency_set: markdown_dependency_set=['WILSON_STAGGERED_CURRENT_CHART_AUTONOMY_AND_NEXT_SCALE_GRASSMANN_HANDOFF_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_DECLARED_RG_CHART_RAW_LIFT_GEOMETRIC_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_JOINT_PRODUCT_REFERENCE_DETERMINANT_COUNTERTERM_OUTER_HAAR_COLORED_RESPONSE_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_ONE_HORIZON_HAAR_BEREZIN_HOEFFDING_LINEAGE_CLUSTER_LIFT_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_TWO_HORIZON_SKELETON_PULLBACK_CANONICAL_REHOEFFDING_INTERTWINING_BOUNDED_THEOREM_NOTE_2026-07-12.md']
 SCORECARD PASS=6 FAIL=0
+
+----- stderr -----
+

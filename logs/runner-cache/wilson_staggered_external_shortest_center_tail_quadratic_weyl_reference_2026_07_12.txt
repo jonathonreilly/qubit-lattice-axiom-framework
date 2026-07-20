@@ -1,4 +1,12 @@
-PASS finite_lattice_boundary_norm_and_bipartite_parity: ||R_KI||^2=2.040816326530612e-02=1/m^2; ||R_KI(R_II/mu)R_IK||=0.000e+00
+===== runner cache v1 =====
+runner: scripts/wilson_staggered_external_shortest_center_tail_quadratic_weyl_reference_2026_07_12.py
+runner_sha256: 9a3d74b42a0ce4d611e8052f3f30cf3abf5bb01f64a1311892069e3dff56081f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+PASS finite_lattice_boundary_norm_and_bipartite_parity: ||R_KI||^2=2.040816326530613e-02=1/m^2; ||R_KI(R_II/mu)R_IK||=0.000e+00
 PASS finite_lattice_length_four_tail_bound: E_>=4 PSD lower=1.576e-16; ||E_>=4||=1.617275444849463e-06 <= 4.314394221300380e-06
 PASS finite_lattice_full_and_shortest_gap_checks: gap full=7.282911547990663>=7.282798833819242; gap shortest=7.282913165266106=7.282913165266106
 PASS pointwise_internal_resolvent_locality: max_(d_I<=4) |A_2^-1(u,v)|/[mu^-1 h^d/(1-h^2)]=0.998606145850563
@@ -14,3 +22,6 @@ PASS finite_positive_correlated_reference_normalization: gap=2.092296703857310, 
 PASS source_contract: missing=[], forbidden_hits=[]
 PASS repository_dependency_set: markdown_dependency_set=['WILSON_STAGGERED_CONSTRAINED_FIBER_DOBRUSHIN_AND_RAW_RG_UNIT_DIRECTIONS_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_ENHANCED_MOMENT_GENERATED_BASE_DECORATED_FACTOR_RETURN_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_EXTRACTED_S2_FUTURE_CENTER_PRODUCT_REFERENCE_COUNTERTERM_PERSISTENT_GAP_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_FIXED_BACKGROUND_CORRELATED_BEREZIN_CROSS_WICK_CLUSTER_LOCALITY_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_SITE_BLOCK_SYNTACTIC_SUPPORT_TREE_SPAN_MARKED_RESPONSE_RETURN_BOUNDED_THEOREM_NOTE_2026-07-12.md']
 SCORECARD PASS=15 FAIL=0
+
+----- stderr -----
+

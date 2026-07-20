@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/wilson_staggered_future_s2_center_reference_ledger_2026_07_12.py
+runner_sha256: 588c4e888fee4920d41a33d1dbab13b22b7f579a5e3bd52fe93bd9b9b8ed6dbc
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
 PASS extracted_s2_center_parameters_and_gap: mu=7.285714285714286, k=0.035714285714286, spectrum enclosure=[7.000000000000000,7.571428571428571], h2=3.921568627450980e-02
 PASS same_gap_chart_product_gaussian_contractivity: eta=m^(-1/2)=0.377964473009227, product contraction ratios=[1.0, 0.9607843137254901, 0.923106497500961, 0.8869062426970016], correlated gap norm=1
 PASS local_product_gaussian_atom_transition: delta_mu=1-(m/mu)^3=1.130937573029980e-01, r*=1+sqrt(2)=2.414213562373, old-to-new split cost<=1.159938725397631
@@ -12,3 +20,6 @@ PASS future_center_colored_response_requires_physical_red_factor: A2(K_R2=0 at f
 PASS source_contract: missing=[], forbidden_hits=[]
 PASS repository_dependency_set: markdown_dependency_set=['MASSIVE_WILSON_STAGGERED_FACTOR_TWO_GAUGE_BLOCK_SCHUR_OS_SEMIGROUP_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_GAUSSIAN_ADAPTED_BEREZIN_HANDOFF_AND_SHORTEST_QUADRATIC_CENTER_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_JOINT_BOUNDARY_CANONICAL_FUTURE_ATOM_SUPERSTRONG_STRONG_COARSE_SHADOW_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_JOINT_PRODUCT_REFERENCE_DETERMINANT_COUNTERTERM_OUTER_HAAR_COLORED_RESPONSE_BOUNDED_THEOREM_NOTE_2026-07-12.md']
 SCORECARD PASS=13 FAIL=0
+
+----- stderr -----
+

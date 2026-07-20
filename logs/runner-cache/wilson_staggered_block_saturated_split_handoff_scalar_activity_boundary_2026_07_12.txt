@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/wilson_staggered_block_saturated_split_handoff_scalar_activity_boundary_2026_07_12.py
+runner_sha256: 995a0f1b515df063e892e472e706b71f416cbad8fe51558a5c00d41f040a2819
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
 PASS fixed_product_reference_coefficient_atom_algebra: M(fg)=1.756622336628731 <= M(f)M(g)=1.925378094096269
 PASS block_saturated_split_and_local_section_constant_one: (n=1,d=0): N/M=8.739845e-01, section/M=0.000000e+00; (n=2,d=1): N/M=9.083277e-01, section/M=3.434319e-02; (n=7,d=1): N/M=8.786324e-01, section/M=4.647833e-03; (n=7,d=4): N/M=8.750216e-01, section/M=1.037072e-03
 PASS split_handoff_is_not_a_global_algebra_norm: a weak empty factor extending a strong centered carrier has unbounded strong/weak ratios ['1.491825e+00', '5.459842e+01', '2.353970e+17'] as added support grows; no global M_s algebra claim is made
@@ -11,3 +19,6 @@ PASS shortest_center_relative_hopping_squares: j=0: h=2.000000E-88, R=-log(C_*h)
 PASS source_contract: missing=[], forbidden_hits=[]
 PASS repository_dependency_set: markdown_dependency_set=['WILSON_STAGGERED_DECLARED_RG_CHART_RAW_LIFT_GEOMETRIC_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_ENHANCED_MOMENT_GENERATED_BASE_DECORATED_FACTOR_RETURN_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_EXTRACTED_S2_FUTURE_CENTER_PRODUCT_REFERENCE_COUNTERTERM_PERSISTENT_GAP_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_K_RETAINING_MARKED_ATTACHMENT_STRONG_WEAK_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_TWO_HORIZON_SKELETON_PULLBACK_CANONICAL_REHOEFFDING_INTERTWINING_BOUNDED_THEOREM_NOTE_2026-07-12.md']
 SCORECARD PASS=12 FAIL=0
+
+----- stderr -----
+

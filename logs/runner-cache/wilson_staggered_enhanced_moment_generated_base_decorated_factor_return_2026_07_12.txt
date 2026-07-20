@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/wilson_staggered_enhanced_moment_generated_base_decorated_factor_return_2026_07_12.py
+runner_sha256: 211ca6262cf32d8b247a40e0dab380d831dfd65f311ccebea7daf82ac0a66ac6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
 PASS declared_next_fiber_support_count: |X|=1: links=4, gaussian=1, total=5; |X|=2: links=8, gaussian=2, total=10; |X|=7: links=28, gaussian=7, total=35; |X|=31: links=124, gaussian=31, total=155; negative orientations are daggers, not new coordinates
 PASS constant_one_atom_reconstruction_allows_empty: reconstruction error=1.110e-16, weighted atom norm=6.802691, C_*^3||f||=227.694192, nonzero empty atom norm=1.500e-01
 PASS constant_one_decorated_atom_algebra_fixture: N_r(fg)=7.290841517777313 <= N_r(f)N_r(g)=13.367116405632004
@@ -12,3 +20,6 @@ PASS finite_horizon_backward_moment_identity_160: a_in=160.0, a_out=(a_in-2c)/2-
 PASS source_contract: missing=[], forbidden_hits=[]
 PASS repository_dependency_set: markdown_dependency_set=['WILSON_STAGGERED_CONSTRAINED_FIBER_DOBRUSHIN_AND_RAW_RG_UNIT_DIRECTIONS_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_CURRENT_CHART_AUTONOMY_AND_NEXT_SCALE_GRASSMANN_HANDOFF_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_EXTRACTED_S2_FUTURE_CENTER_PRODUCT_REFERENCE_COUNTERTERM_PERSISTENT_GAP_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_JOINT_BOUNDARY_CANONICAL_FUTURE_ATOM_SUPERSTRONG_STRONG_COARSE_SHADOW_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_TWO_HORIZON_SKELETON_PULLBACK_CANONICAL_REHOEFFDING_INTERTWINING_BOUNDED_THEOREM_NOTE_2026-07-12.md']
 SCORECARD PASS=13 FAIL=0
+
+----- stderr -----
+

@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/wilson_staggered_constrained_fiber_two_layer_kp_source_polymer_2026_07_12.py
+runner_sha256: d8cee550ca1907634ec8b41743c7a73a4eb12d5dc34c552ccd4ff23c27266a12
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
 PASS wilson_midpoint_centering: centered_sup=0.150000000000, target=0.150000000000
 PASS hidden_plaquette_incidence: 2 footprints * 6 plaquettes=12
 PASS kp_point_m10: K=0.108098237701, c=0.120000, epsilon=0.011901762299, q=0.222703167050
@@ -13,3 +21,6 @@ PASS coarse_anchor_multiplicity: 64 anchored fine links + 4 incoming skeleton en
 PASS source_contract: missing=[], forbidden_hits=[]
 PASS sole_repository_dependency: markdown_dependency_set=['WILSON_STAGGERED_RAW_CONSTRAINED_ACTION_HESSIAN_DECAY_BOUNDED_THEOREM_NOTE_2026-07-12.md']
 SCORECARD PASS=14 FAIL=0
+
+----- stderr -----
+

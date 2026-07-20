@@ -236,12 +236,12 @@ are included.
 |---|---|---|---|
 | Constrained-fiber image specification | `ATTEMPTED` | Sections 1--3 prove non-null exponential quasilocality in (0.2). | Sharper fiber criteria can enlarge the region. |
 | Kozlov norm-summable representation | `ATTEMPTED` | Section 4 verifies the exact hypotheses. | More constructive representatives may preserve additional structure. |
-| Sullivan covariant representation | `ATTEMPTED` | Not used. | A symmetry-adapted variation-summable action can be studied separately. |
-| Dobrushin--Shlosman complete analyticity | `ATTEMPTED` | Ordinary weighted comparison is not renamed complete analyticity. | A block condition can supply all-order source control. |
-| Kotecky--Preiss joint polymer expansion | `ATTEMPTED` | No coupled activity row is supplied. | A deeper small-coupling/high-mass region may close it directly. |
-| Dependency-graph cumulant bounds | `ATTEMPTED` | Pair comparison alone is insufficient. | A uniform source neighborhood can provide the missing factorial/tree estimate. |
-| Taste-faithful hypercube blocking | `ATTEMPTED` | The current retained carrier remains form-migrating. | A covariant spin--taste multiplet remains live. |
-| Projected/rescaled irrelevant map | `ATTEMPTED` | No projection or rescaling is declared here. | Raw unit directions can be removed from the tested complement. |
+| Sullivan covariant representation | `UNTESTED / LIVE` | Not used. | A symmetry-adapted variation-summable action can be studied separately. |
+| Dobrushin--Shlosman complete analyticity | `UNTESTED / LIVE` | Ordinary weighted comparison is not a test of complete analyticity. | A block condition can supply all-order source control. |
+| Kotecky--Preiss joint polymer expansion | `UNTESTED / LIVE` | No coupled activity row is supplied. | A deeper small-coupling/high-mass region may close it directly. |
+| Dependency-graph cumulant bounds | `UNTESTED / LIVE` | Pair comparison is not an execution of this route. | A uniform source neighborhood can provide the missing factorial/tree estimate. |
+| Taste-faithful hypercube blocking | `UNTESTED / LIVE` | No covariant spin--taste block is constructed. | A covariant spin--taste multiplet remains live. |
+| Projected/rescaled irrelevant map | `UNTESTED / LIVE` | No projection or rescaling is declared here. | Raw unit directions can be removed from the tested complement. |
 
 ### N2 — wall-independence audit
 
@@ -331,3 +331,7 @@ walls.
 | Raw unit directions | Full-space raw contraction was excluded | No projected/rescaled conclusion is inferred. |
 
 No wall is retired by relabeling and no axiom update is requested.
+
+**No-Go Discipline status: PARTIAL ATTEMPT.** The constrained-fiber and
+Kozlov representation routes are executed. The six alternatives labeled
+`UNTESTED / LIVE` are inventory only and do not count toward an N1 PASS.

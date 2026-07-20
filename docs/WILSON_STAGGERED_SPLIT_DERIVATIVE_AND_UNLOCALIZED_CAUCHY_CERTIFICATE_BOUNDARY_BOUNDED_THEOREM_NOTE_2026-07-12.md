@@ -301,9 +301,9 @@ They are deliberately restricted to the estimates actually tested.
 | Exact conditional-centering split | `ATTEMPTED` | Equations (0.3)--(0.5) kill the linear kernel but expose a nonzero Hessian. |
 | Larger finite local jets | `ATTEMPTED` | Fixed-support plaquette characters leave an infinite tail and the exact floor (0.9). |
 | Product-fiber quotient norm | `ATTEMPTED` | Makes `E_0` contractive tautologically but loses a proved local section and nonlinear algebra. |
-| Block-shadow/local-section norm | `ATTEMPTED` | Reduces the task to (2.2); that estimate remains live. |
-| Forced-attachment marked clusters | `ATTEMPTED` | The missing subtraction is identified in (0.10); the current absolute proof did not retain its `K_joint` factor. |
-| Peter--Weyl/Casimir-weighted smoothing | `ATTEMPTED` | Inspection of the present sup/projective coefficient norm shows that it has no representation-index weight; a new weighted norm remains live. |
+| Block-shadow/local-section norm | `UNTESTED / LIVE` | No local-section estimate is proved; (2.2) names the live obligation. |
+| Forced-attachment marked clusters | `UNTESTED / LIVE` | The missing subtraction is identified in (0.10), but no marked-cluster estimate is executed here. |
+| Peter--Weyl/Casimir-weighted smoothing | `UNTESTED / LIVE` | The present norm has no representation-index weight and no weighted replacement is constructed. |
 
 The narrow result closes only the first black-box certificate and the claim
 that finite projection alone deletes every tail.
@@ -393,4 +393,6 @@ unlocalized joint-polymer/RG-chart certificate cannot prove `q<1`, and that fini
 not delete the fixed-support character tail. No physical contraction route is
 declared closed.
 
-**No-Go Discipline status: PASS.**
+**No-Go Discipline status: PARTIAL ATTEMPT.** Several rows identify live norm
+or smoothing routes without executing them. They remain untested and do not
+count toward an N1 PASS.

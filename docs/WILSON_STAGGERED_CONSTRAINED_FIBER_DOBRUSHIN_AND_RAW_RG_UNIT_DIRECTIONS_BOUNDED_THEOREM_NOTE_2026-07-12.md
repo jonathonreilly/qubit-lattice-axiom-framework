@@ -270,12 +270,12 @@ all eight checks are load-bearing.
 |---|---|---|---|
 | Deep constrained-fiber Dobrushin control | `ATTEMPTED` | Equations (2.1)--(2.3) close it for `alpha<1/2`. | Sharper or block estimates can enlarge the region. |
 | Full strict-wedge inheritance | `ATTEMPTED` | The available footprint row gives only `2alpha`. | Failure of this majorant is not fiber nonuniqueness. |
-| Joint gauge--Grassmann polymer space | `ATTEMPTED` | Section 1 defines the closed coefficient space and norm. | Its exact coarse interaction still needs a uniform decomposition bound. |
-| Kotecky--Preiss cluster expansion | `ATTEMPTED` | No coupled constrained-fiber activity row is supplied here. | The new fiber mixing is a usable input to a future activity bound. |
-| Relevant-coordinate projection/rescaling | `ATTEMPTED` | Equation (0.6) proves why it is necessary. | Projection can remove the exact raw unit directions. |
-| Auxiliary-field Gaussianization | `ATTEMPTED` | No auxiliary carrier is introduced. | A larger field space can trade higher monomials for conditional bilinears. |
-| Taste-faithful hypercube variables | `ATTEMPTED` | One-even-site decimation remains form-migrating. | A covariant spin--taste multiplet remains live. |
-| Balaban/Dimock or block-RG architecture | `ATTEMPTED` | Existing theorems do not cover this coupled fiber. | Their small/large-field and block methods can be adapted. |
+| Joint gauge--Grassmann polymer space | `PARTIAL / LIVE` | Section 1 defines the coefficient space and norm but does not execute a uniform decomposition bound. | Its exact coarse interaction still needs that bound. |
+| Kotecky--Preiss cluster expansion | `UNTESTED / LIVE` | No coupled constrained-fiber activity row is supplied here. | The new fiber mixing is a usable input to a future activity bound. |
+| Relevant-coordinate projection/rescaling | `UNTESTED / LIVE` | Equation (0.6) motivates this route but no projection is executed. | Projection can remove the exact raw unit directions. |
+| Auxiliary-field Gaussianization | `UNTESTED / LIVE` | No auxiliary carrier is introduced. | A larger field space can trade higher monomials for conditional bilinears. |
+| Taste-faithful hypercube variables | `UNTESTED / LIVE` | No covariant spin--taste reorganization is executed. | A covariant spin--taste multiplet remains live. |
+| Balaban/Dimock or block-RG architecture | `UNTESTED / LIVE` | No such architecture is instantiated for this coupled fiber. | Their small/large-field and block methods can be investigated separately. |
 
 ### N2 — wall-independence audit
 
@@ -363,6 +363,6 @@ sufficient majorant, not an optimal phase boundary.
 No prior route was closed by renaming. The positive deep-fiber theorem and the
 raw unit-direction identity both sharpen the next constructive task.
 
-**No-Go Discipline status: PASS.** All eight checks are answered; eight routes
-are tested; the negative boundary is limited to the unprojected raw step; and
+**No-Go Discipline status: PARTIAL ATTEMPT.** All eight bookkeeping sections are answered, but only the routes explicitly exercised above count as attempted; live and partial routes are not an N1 PASS. Two routes
+are attempted; the negative boundary is limited to the unprojected raw step; and
 no projected RG, continuum route, or axiom family is declared closed.

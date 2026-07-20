@@ -440,4 +440,6 @@ the Grassmann tensor explosion is repaired by its covariance norm and the
 dominant apparent interaction is moved to its exact quadratic coordinate.
 The remaining spatial handoff is not an axiom-update signal.
 
-**No-Go Discipline status: PASS.**
+**No-Go Discipline status: PARTIAL ATTEMPT.** The listed rows include
+sequential construction steps and boundary controls rather than five
+independent route families; no N1 PASS or route foreclosure is claimed.

@@ -1,6 +1,6 @@
 {
- "edge_count": 14843,
- "node_count": 4420,
+ "edge_count": 14866,
+ "node_count": 4432,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -15198,8 +15198,56 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "wilson_staggered_constrained_fiber_dobrushin_and_raw_rg_unit_directions_bounded_theorem_note_2026-07-12": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "wilson_staggered_constrained_fiber_two_layer_kp_complex_source_polymer_bounded_theorem_note_2026-07-12": {
+   "deps_hash": "0b494805bc96",
+   "out_degree": 1
+  },
+  "wilson_staggered_current_chart_autonomy_and_next_scale_grassmann_handoff_bounded_theorem_note_2026-07-12": {
+   "deps_hash": "3e6ff0f6036e",
+   "out_degree": 2
+  },
+  "wilson_staggered_declared_rg_chart_raw_lift_geometric_contraction_bounded_theorem_note_2026-07-12": {
+   "deps_hash": "7a1a9ddff7ce",
+   "out_degree": 2
+  },
+  "wilson_staggered_deep_fiber_coarse_gauge_gibbsianness_bounded_theorem_note_2026-07-12": {
+   "deps_hash": "577f6d5f534e",
+   "out_degree": 1
+  },
+  "wilson_staggered_gaussian_adapted_berezin_handoff_and_shortest_quadratic_center_bounded_theorem_note_2026-07-12": {
+   "deps_hash": "1fc586e7517c",
+   "out_degree": 4
+  },
+  "wilson_staggered_k_retaining_marked_attachment_strong_weak_contraction_bounded_theorem_note_2026-07-12": {
+   "deps_hash": "dbf618cd808d",
+   "out_degree": 2
+  },
   "wilson_staggered_minimal_block_spectrum_bridge_note_2026-06-13": {
    "deps_hash": "a3b7cbcdca3c",
+   "out_degree": 2
+  },
+  "wilson_staggered_one_horizon_haar_berezin_hoeffding_lineage_cluster_lift_bounded_theorem_note_2026-07-12": {
+   "deps_hash": "b477263fbd57",
+   "out_degree": 4
+  },
+  "wilson_staggered_raw_constrained_action_hessian_decay_bounded_theorem_note_2026-07-12": {
+   "deps_hash": "577f6d5f534e",
+   "out_degree": 1
+  },
+  "wilson_staggered_retained_grassmann_two_layer_kp_polymer_norm_bounded_theorem_note_2026-07-12": {
+   "deps_hash": "2fa9e03034d0",
+   "out_degree": 2
+  },
+  "wilson_staggered_split_derivative_and_unlocalized_cauchy_certificate_boundary_bounded_theorem_note_2026-07-12": {
+   "deps_hash": "fc32ab3a6dde",
+   "out_degree": 2
+  },
+  "wilson_staggered_two_horizon_skeleton_pullback_canonical_rehoeffding_intertwining_bounded_theorem_note_2026-07-12": {
+   "deps_hash": "807ac7b46bf4",
    "out_degree": 2
   },
   "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30": {

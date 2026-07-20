@@ -349,7 +349,7 @@ that boundary from becoming a same-norm or physical no-go.
 | Strong split source norm | `ATTEMPTED` | Raw lifts and centered marks give the strict one-step bound (0.9). |
 | Nonquotient direct-sum algebra | `ATTEMPTED` | Equation (4.2) retains centered products with algebra constant three, but no small next-level handoff. |
 | Absolute Cauchy plus raw geometry | `ATTEMPTED` | Reapplying the direct dependency's exact inequality leaves the unlocalized certificate above 68. |
-| Present Peter--Weyl-unweighted coefficient norm | `ATTEMPTED` | Fixed-support characters receive no representation-index damping; a weighted refinement remains live. |
+| Present Peter--Weyl-unweighted coefficient norm | `PARTIAL / LIVE` | The current norm is inspected and shown to lack representation-index damping; no weighted refinement is constructed. |
 
 No alternative block, multistep, or representation-weighted route is declared
 closed.
@@ -444,4 +444,6 @@ stops at a one-step strong-to-weak contraction.
 The remaining autonomy question is another constructive norm/self-map target.
 It is not an axiom contradiction and not a physical continuum no-go.
 
-**No-Go Discipline status: PASS.**
+**No-Go Discipline status: PARTIAL ATTEMPT.** The attachment and rerooting
+rows are sequential parts of one constructive route, not independent attack
+families; live norm refinements remain untested and no N1 PASS is claimed.

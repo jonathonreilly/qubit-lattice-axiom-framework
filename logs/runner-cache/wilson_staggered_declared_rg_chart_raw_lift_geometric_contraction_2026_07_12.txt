@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/wilson_staggered_declared_rg_chart_raw_lift_geometric_contraction_2026_07_12.py
+runner_sha256: 49732ea44d7be060214545a0d2aed866c9371642f1d17d13a7722ef7237ee29a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.02
+status: ok
+----- stdout -----
 PASS zero_diameter_projector: rank_fixture=1, complement_terms=3
 PASS extended_raw_lift_geometric_suppression: coarse=0.387258788964, fine_lift=0.568890092245, ratio=0.680726900052, exp(-lambda)=0.794533602503
 PASS factor_two_support_inequalities: checked_supports=3
@@ -9,3 +17,6 @@ PASS schur_coordinate_tangent_bounds: m=12:dm=0.138889,dt=0.388889; m=16:dm=0.13
 PASS source_contract: missing=[], forbidden_hits=[]
 PASS repository_dependency_set: markdown_dependency_set=['WILSON_STAGGERED_CONSTRAINED_FIBER_DOBRUSHIN_AND_RAW_RG_UNIT_DIRECTIONS_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_RETAINED_GRASSMANN_TWO_LAYER_KP_POLYMER_NORM_BOUNDED_THEOREM_NOTE_2026-07-12.md']
 SCORECARD PASS=10 FAIL=0
+
+----- stderr -----
+

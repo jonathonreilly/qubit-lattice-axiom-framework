@@ -447,4 +447,6 @@ coefficient through the next skeleton and recomputes canonical atoms. The
 result repairs the coefficient tag-update wall while preserving the strong-
 spatial, covariance, center, invariant-ball, and continuum walls.
 
-**No-Go Discipline status: PASS.**
+**No-Go Discipline status: PARTIAL ATTEMPT.** These rows are executed checks
+within one two-horizon construction, not five independent closures of the
+iteration residual; no N1 PASS or route foreclosure is claimed.

@@ -250,12 +250,12 @@ therefore load-bearing.
 |---|---|---|---|
 | Zero-diameter coefficient projection | `ATTEMPTED` | Equations (1.2)--(1.3) and runner. | Exact finite-rank chart component. |
 | Finite Berezin/Peter--Weyl jets | `ATTEMPTED` | Equation (1.4) constructs bounded finite Gram-dual projectors. | Many finite choices exist; none is promoted physically. |
-| Taylor/background jets | `ATTEMPTED` | Compared with Haar coefficient extraction. | Requires a declared background and is not used. |
+| Taylor/background jets | `UNTESTED / LIVE` | Not used in this construction. | Requires a declared background. |
 | Factor-two support dilation | `ATTEMPTED` | Equations (2.1)--(2.3) and runner. | Extended raw lifts contract by `exp(-lambda)`. |
 | Field normalization | `ATTEMPTED` | Equations (3.1) and (0.1). | Exact `rho>0` torsor; no selector found in dependencies. |
-| Direct derivative from joint analyticity | `ATTEMPTED` | Section 4 separates existence from a scale-weighted operator bound. | Does not yet prove the non-fiber part of (4.2). |
+| Direct derivative from joint analyticity | `PARTIAL / LIVE` | Section 4 separates existence from a scale-weighted operator bound but does not prove the non-fiber part of (4.2). | The missing operator estimate remains live. |
 | Enlarged finite jet space | `ATTEMPTED` | Runner compares nested jet sets. | Changes coordinates but does not select one. |
-| Alternative norm/block kernel | `ATTEMPTED` | The direct dependencies were scanned for an autonomous support norm or selected block; neither supplies one. | Remains live for the full derivative. |
+| Alternative norm/block kernel | `UNTESTED / LIVE` | No alternative norm or block kernel is constructed here. | Remains live for the full derivative. |
 
 ### N2 — wall-independence audit
 
@@ -340,3 +340,8 @@ could close the full derivative. Correct; all remain live.
 
 No route is closed by relabeling, no physical beta function is claimed, and no
 axiom update is requested.
+
+**No-Go Discipline status: PARTIAL ATTEMPT.** The finite chart and lift
+calculations are executed, while the background-jet, full-derivative, and
+alternative-norm routes remain partial or untested and do not count toward an
+N1 PASS.

@@ -310,8 +310,9 @@ python3 scripts/wilson_staggered_one_horizon_hoeffding_lineage_cluster_lift_2026
 The runner checks the exact `r_*` identities, canonical finite-product
 Hoeffding reconstruction, the black-box atom bound, dummy-coordinate
 annihilation, nonzero products of centered atoms, decorated factor-collection
-evaluation, the tagged activity series and beta interval, marked constants,
-and the source/dependency contract. The two infinite cluster recursions use
+evaluation, the cubic center moments, the normalized alternating-tensor
+singlet projector and its idempotence, the tagged activity series and beta
+interval, marked constants, and the source/dependency contract. The two infinite cluster recursions use
 the displayed analytic KP majorant.
 
 ## 6. No-Go Discipline N1--N8
@@ -400,4 +401,6 @@ black-box atom cost, while only nonzero canonical components enter lineage.
 The resulting one-horizon lift is progress toward, not a relabeling of, an
 autonomous RG norm.
 
-**No-Go Discipline status: PASS.**
+**No-Go Discipline status: PARTIAL ATTEMPT.** These are five executed checks
+inside the present one-horizon construction, not five independent closures of
+the iteration residual; the explicitly live alternatives remain untested.

@@ -219,15 +219,49 @@ def main() -> None:
 
     omega = complex(-0.5, math.sqrt(3.0) / 2.0)
     center_moments = [sum(omega ** (power * moment) for power in range(3)) / 3.0 for moment in range(1, 4)]
-    epsilon_component = 1.0 / 6.0
+
+    # Build the normalized SU(3) alternating tensor rather than stipulating
+    # its Haar-projector coefficient.  On the six permutation basis states,
+    # P = |epsilon><epsilon| / <epsilon,epsilon>; checking P^2=P makes the
+    # selected 1/6 coefficient mutation-sensitive.
+    permutations = list(itertools.permutations(range(3)))
+
+    def permutation_sign(permutation):
+        inversions = sum(
+            permutation[left] > permutation[right]
+            for left in range(3) for right in range(left + 1, 3)
+        )
+        return -1.0 if inversions % 2 else 1.0
+
+    epsilon = {permutation: permutation_sign(permutation) for permutation in permutations}
+    epsilon_norm_sq = sum(value * value for value in epsilon.values())
+    projector = {
+        (left, right): epsilon[left] * epsilon[right] / epsilon_norm_sq
+        for left in permutations for right in permutations
+    }
+    projector_residual = max(
+        abs(
+            sum(projector[(left, middle)] * projector[(middle, right)] for middle in permutations)
+            - projector[(left, right)]
+        )
+        for left in permutations for right in permutations
+    )
+    epsilon_component = projector[((0, 1, 2), (0, 1, 2))]
+    center_residual = max(
+        abs(center_moments[0]),
+        abs(center_moments[1]),
+        abs(center_moments[2] - 1.0),
+    )
     checks.append(
         (
             "center_charge_allows_cubic_haar_singlet",
-            abs(center_moments[0]) < 1.0e-15
-            and abs(center_moments[1]) < 1.0e-15
-            and abs(center_moments[2] - 1.0) < 1.0e-15
-            and epsilon_component > 0.0,
-            f"SU3-center moments E[z],E[z^2],E[z^3]={center_moments}; Haar U11 U22 U33 epsilon coefficient={epsilon_component:g}",
+            center_residual < 1.0e-15
+            and math.isclose(epsilon_norm_sq, 6.0)
+            and projector_residual < 1.0e-15
+            and math.isclose(epsilon_component, 1.0 / 6.0),
+            f"SU3-center max residual={center_residual:.3e}; "
+            f"epsilon norm^2={epsilon_norm_sq:.0f}, projector-idempotence residual={projector_residual:.3e}, "
+            f"Haar U11 U22 U33 epsilon coefficient={epsilon_component:.12f}",
         )
     )
 

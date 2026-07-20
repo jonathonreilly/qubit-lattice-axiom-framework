@@ -395,7 +395,7 @@ advances a prior no-go-sensitive RG campaign.
 | Coefficientwise complex disks | `ATTEMPTED` | Compared with the common margin after (3.4). | Strictly weaker than the simultaneous algebra estimate. |
 | Direct exterior-algebra regrouping | `ATTEMPTED` | Runner evaluates the exact finite identity and logarithm. | Confirms higher connected degree generation. |
 | Hidden-to-coarse support conversion | `ATTEMPTED` | Section 4 and runner. | Preserves endpoints and the safe 68 multiplicity. |
-| Auxiliary-field/taste-faithful reorganizations | `ATTEMPTED` | Not used in the positive proof. | Remain live routes to larger or more physical regions. |
+| Auxiliary-field/taste-faithful reorganizations | `UNTESTED / LIVE` | Not used in the positive proof. | Remain live routes to larger or more physical regions. |
 
 ### N2 — wall-independence audit
 
@@ -491,3 +491,7 @@ RG domain.
 
 No partial closure is relabeled as contraction or continuum physics, and no
 axiom update is requested.
+
+**No-Go Discipline status: PARTIAL ATTEMPT.** The seven explicit algebraic
+routes above were exercised, but the auxiliary/taste reorganization is live
+and untested and does not count toward an N1 PASS.

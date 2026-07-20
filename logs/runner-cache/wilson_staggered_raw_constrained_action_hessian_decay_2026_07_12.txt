@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/wilson_staggered_raw_constrained_action_hessian_decay_2026_07_12.py
+runner_sha256: 7fbe80a101e0d6edde2394039719b86703f0f0657ee73a57c32c836e2bf35d75
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.02
+status: ok
+----- stdout -----
 PASS deep_fiber_margin: q0=2alpha=0.748784292630
 PASS first_response_sign: DR=0.071692756243, E[F]=0.071692756236
 PASS mixed_hessian_sign: D2R=-0.226540453063, -Cov=-0.226540467154
@@ -7,3 +15,6 @@ PASS positive_exponential_hessian_rate: lambda_H=0.080000, bound_at_40=1.4055932
 PASS source_contract: missing=[], forbidden_hits=[]
 PASS direct_dependency: markdown_dependency_set=['WILSON_STAGGERED_CONSTRAINED_FIBER_DOBRUSHIN_AND_RAW_RG_UNIT_DIRECTIONS_BOUNDED_THEOREM_NOTE_2026-07-12.md']
 SCORECARD PASS=8 FAIL=0
+
+----- stderr -----
+

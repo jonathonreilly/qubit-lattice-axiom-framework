@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/wilson_staggered_split_derivative_cauchy_certificate_boundary_2026_07_12.py
+runner_sha256: 9b1bf55632689e8cb3e1cff3f914367eb6f9b2f45ea1d0e4d56e10472b4083c2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.02
+status: ok
+----- stdout -----
 PASS banach_derivative_and_covariance: DR_direct=(0.02727272727272726, -0.008374655647382922), DR_expectation=(0.02727272727272726, -0.008374655647382922), D2_direct=(0.016997245179063362, -0.017250772184656486), -Cov=(0.016997245179063362, -0.017250772184656486)
 PASS split_projection_identities: E(Lf)=(0.31000000000000005, -0.09), E(centered)=(-2.1026951223961298e-17, 2.4850033264681535e-18)
 PASS centered_kernel_not_nonlinear: E(h)=0.0, E(h^2)=1.0, D2R[h,h]=-1.0
@@ -8,3 +16,6 @@ PASS finite_jet_plaquette_character_tail: jet_rank=9, kernel_index=9, coarse=(d2
 PASS source_contract: missing=[], forbidden_hits=[]
 PASS repository_dependency_set: markdown_dependency_set=['WILSON_STAGGERED_DECLARED_RG_CHART_RAW_LIFT_GEOMETRIC_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_RETAINED_GRASSMANN_TWO_LAYER_KP_POLYMER_NORM_BOUNDED_THEOREM_NOTE_2026-07-12.md']
 SCORECARD PASS=9 FAIL=0
+
+----- stderr -----
+

@@ -322,4 +322,6 @@ absolute Cauchy certificate was repaired by forced attachment. The same pattern
 supports another constructive norm refinement here. The current-chart
 boundary is not an axiom-update signal.
 
-**No-Go Discipline status: PASS.**
+**No-Go Discipline status: PARTIAL ATTEMPT.** The listed calculations are
+executed boundary checks, not five independent closures of the autonomy wall;
+no N1 PASS or route foreclosure is claimed.

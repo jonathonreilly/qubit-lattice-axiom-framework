@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/wilson_staggered_current_chart_autonomy_grassmann_handoff_2026_07_12.py
+runner_sha256: 5333af3ef539d578adcd7e70c365eeac4df8df9b0522d35954fd47d1b258c9b5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.02
+status: ok
+----- stdout -----
 PASS straight_dyadic_support_semigroup: axes=4, H_2_after_H_4=H_8
 PASS straight_support_size_diameter: q=4, coarse=(size=5,diam=4), lifted=(size=17,diam=16), general_size_cap=65
 PASS origin_cell_saturation_reflection_failure: theta(Sat({0}))=[-1, 0], Sat(theta({0}))=[0, 1]
@@ -7,3 +15,6 @@ PASS one_index_martingale_algebra_boundary: a_h=1/9; J=2:C_alg>=0.444444; J=4:C_
 PASS source_contract: missing=[], forbidden_hits=[]
 PASS repository_dependency_set: markdown_dependency_set=['MASSIVE_WILSON_STAGGERED_FACTOR_TWO_GAUGE_BLOCK_SCHUR_OS_SEMIGROUP_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_K_RETAINING_MARKED_ATTACHMENT_STRONG_WEAK_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_RETAINED_GRASSMANN_TWO_LAYER_KP_POLYMER_NORM_BOUNDED_THEOREM_NOTE_2026-07-12.md']
 SCORECARD PASS=8 FAIL=0
+
+----- stderr -----
+

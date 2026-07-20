@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/wilson_staggered_constrained_fiber_dobrushin_raw_rg_unit_directions_2026_07_12.py
+runner_sha256: 2a1227e8c62222ea5af7ae73fb0e36b23d274515070053fe8a263c2c993b243c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
 PASS Hidden-coordinate footprints partition fine links and have size at most two: coordinates=8, links=12, max footprint=2
 PASS Footprint aggregation bounds the hidden Dobrushin row by twice the fine row: fine=0.370000, hidden=0.709464, ratio=1.917469
 PASS The deep constrained-fiber wedge has the stated exact numerical examples: m0=6.5990796748, beta8=0.0169782141, beta10=0.0238489507
@@ -6,5 +14,8 @@ PASS Finite Grassmann logarithm generates a balanced quartic connected coefficie
 PASS A fiber-measurable perturbation passes exactly through raw integration: maximum residual=2.78e-16
 PASS The common unrescaled sup coefficient norm has an exact directional ratio one: input=0.314353, output=0.314353, ratio=1.000000000000
 PASS The candidate anchored norm is finite on a sampled exponential polymer tail: partial80=0.705417, tail40to80=0.000e+00
-PASS Source-note bounded theorem and N1-N8 contract: missing=[]; missing N2 pairs=[]; attempted=8
+PASS Source-note bounded theorem and N1-N8 contract: missing=[]; missing N2 pairs=[]; attempted=2; partial_live=1; untested_live=5
 SCORECARD PASS=9 FAIL=0
+
+----- stderr -----
+

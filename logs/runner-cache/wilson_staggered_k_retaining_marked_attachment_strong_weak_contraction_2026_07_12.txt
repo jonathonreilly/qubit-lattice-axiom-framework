@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/wilson_staggered_k_retaining_marked_attachment_strong_weak_contraction_2026_07_12.py
+runner_sha256: e2a065b80f001a84e381adf73767117a883c7f04a787c9e195da80dff7dcfc8b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.02
+status: ok
+----- stdout -----
 PASS k_retaining_base_bound_m12: K=0.090084010199, c=0.120000000000, old=8.164081020170, sharpened=6.128776315741
 PASS k_retaining_base_bound_m16: K=0.106977939166, c=0.120000000000, old=8.164081020170, sharpened=7.278138022653
 PASS k_retaining_base_bound_m20: K=0.098883241708, c=0.125000000000, old=8.504251062677, sharpened=6.727423307032
@@ -8,3 +16,6 @@ PASS conditional_ball_scalar_feasibility: r_src=9.995003309722248e-04, delta=1.0
 PASS source_contract: missing=[], forbidden_hits=[]
 PASS repository_dependency_set: markdown_dependency_set=['WILSON_STAGGERED_RETAINED_GRASSMANN_TWO_LAYER_KP_POLYMER_NORM_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_SPLIT_DERIVATIVE_AND_UNLOCALIZED_CAUCHY_CERTIFICATE_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-12.md']
 SCORECARD PASS=9 FAIL=0
+
+----- stderr -----
+

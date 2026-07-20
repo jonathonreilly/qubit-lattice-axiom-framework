@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/wilson_staggered_two_horizon_skeleton_pullback_reatomization_2026_07_12.py
+runner_sha256: 7236f1bca154bbdccf15e76a62b1f3f01d16861e0def57f55649d8bcd2b1553f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
 PASS two_level_atom_constant: r*=2.414213562373095, C*=5.828427124746190
 PASS nested_reatomization_reconstruction_and_bound: atoms=16, reconstruction_error=1.110e-16, nested_norm=3.264213562373<=black_box=1350.178986134421
 PASS independent_horizon_projections_commute: max_commutator=1.735e-17
@@ -13,3 +21,6 @@ PASS strict_two_horizon_beta_interval: beta_ceiling=1.505860908679052e-12, K(0.9
 PASS source_contract: missing=[], forbidden_hits=[]
 PASS repository_dependency_set: markdown_dependency_set=['MASSIVE_WILSON_STAGGERED_FACTOR_TWO_GAUGE_BLOCK_SCHUR_OS_SEMIGROUP_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_DECLARED_RG_CHART_RAW_LIFT_GEOMETRIC_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_ONE_HORIZON_HAAR_BEREZIN_HOEFFDING_LINEAGE_CLUSTER_LIFT_BOUNDED_THEOREM_NOTE_2026-07-12.md']
 SCORECARD PASS=14 FAIL=0
+
+----- stderr -----
+

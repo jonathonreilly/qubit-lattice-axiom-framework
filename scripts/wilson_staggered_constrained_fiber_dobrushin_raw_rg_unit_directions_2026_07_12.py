@@ -208,7 +208,7 @@ def main() -> int:
         "### N6 — partial-closure and primitive scan",
         "### N7 — hostile steelman",
         "### N8 — cross-cycle echo",
-        "**No-Go Discipline status: PASS.**",
+        "**No-Go Discipline status: PARTIAL ATTEMPT.**",
     ]
     # Either line-wrapping form of the volume-uniform boundary is enough.
     volume_needles = required[4:6]
@@ -217,6 +217,8 @@ def main() -> int:
     if not any(item in text for item in volume_needles):
         missing.append("volume-uniform coarse interaction boundary")
     attempted = text.count("| `ATTEMPTED` |")
+    partial_live = text.count("| `PARTIAL / LIVE` |")
+    untested_live = text.count("| `UNTESTED / LIVE` |")
     n2_conditions = [
         "uniform connected-polymer/cumulant bound",
         "relevant-coordinate extraction and rescaling",
@@ -230,8 +232,16 @@ def main() -> int:
     missing_pairs = [item for item in n2_pairs if item not in text]
     check(
         "Source-note bounded theorem and N1-N8 contract",
-        not missing and not missing_pairs and attempted >= 8,
-        f"missing={missing}; missing N2 pairs={missing_pairs}; attempted={attempted}",
+        not missing
+        and not missing_pairs
+        and attempted == 2
+        and partial_live == 1
+        and untested_live == 5,
+        (
+            f"missing={missing}; missing N2 pairs={missing_pairs}; "
+            f"attempted={attempted}; partial_live={partial_live}; "
+            f"untested_live={untested_live}"
+        ),
     )
 
     print(f"SCORECARD PASS={PASS} FAIL={FAIL}")

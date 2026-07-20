@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/wilson_staggered_gaussian_adapted_berezin_quadratic_center_2026_07_12.py
+runner_sha256: 9a973f186c5ddf61bf544ff352819ee54e73ba617d87e63f93fecef047a0e7c4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
 PASS gaussian_adapted_tensor_norm: old_one_site=1.0e+48, old_fifteen_site=1e720, eta_m=0.01, adapted_fifteen_site=1
 PASS three_color_covariance_minor_bound: contractions=[1.0, 0.0001, 1e-08, 1e-12], adapted_ratios=[1.0, 1.0, 1.0, 0.9999999999999998]
 PASS interaction_updates_quadratic_center: G[(bar_zeta zeta)(bar_psi psi)]={(2, 3): 0.0001}
@@ -13,3 +21,6 @@ PASS conditional_ball_scalar_feasibility: r_src=9.995003056365085e-04, delta=1.0
 PASS source_contract: missing=[], forbidden_hits=[]
 PASS repository_dependency_set: markdown_dependency_set=['MASSIVE_WILSON_STAGGERED_FACTOR_TWO_GAUGE_BLOCK_SCHUR_OS_SEMIGROUP_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_CURRENT_CHART_AUTONOMY_AND_NEXT_SCALE_GRASSMANN_HANDOFF_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_DECLARED_RG_CHART_RAW_LIFT_GEOMETRIC_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_K_RETAINING_MARKED_ATTACHMENT_STRONG_WEAK_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_RETAINED_GRASSMANN_TWO_LAYER_KP_POLYMER_NORM_BOUNDED_THEOREM_NOTE_2026-07-12.md']
 SCORECARD PASS=14 FAIL=0
+
+----- stderr -----
+

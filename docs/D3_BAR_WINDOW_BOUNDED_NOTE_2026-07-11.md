@@ -97,8 +97,7 @@ The following are supplied inputs rather than derived conclusions:
 - first-sampled-hit selection, the four-point field ladder, and one
   time-step-halving comparison.
 
-The repository's
-[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) is context only:
+The repository's `docs/MINIMAL_AXIOMS_2026-06-29.md` is context only:
 its Record clause does not supply quantum Darwinism, Holevo information,
 conditional mutual information, this pointer basis, `R >= 2`, any numerical
 gate, or the finite-time persistence surrogate. Nothing here is claimed to be

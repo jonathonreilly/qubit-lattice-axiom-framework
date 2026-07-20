@@ -4,7 +4,7 @@
 ``D3_BAR_WINDOW_DESIGN_DELTA_2026-07-11.md`` is the frozen protocol;
 ``D3_BAR_LOCATION_DESIGN_SCOUT_2026-07-10.md`` is its inherited parent.
 
-Modes are ``--validate`` (default), ``--full``, and ``--report``.  The
+Modes are ``--report`` (default), ``--validate``, and ``--full``.  The
 claim-bearing mode is intentionally guarded by live ``k=4``, ``k=5``, and
 ``q=9,10,11`` cube gathers before any trace can start.  ``--report`` reads
 only the committed streams, preflight record, and compact completion manifest;
@@ -36,6 +36,7 @@ import math
 import os
 from pathlib import Path
 import signal
+import subprocess
 import sys
 import time
 from typing import Any, Callable, Iterable, Mapping, Sequence
@@ -129,6 +130,38 @@ RUN_DIR = REPO_ROOT / "logs" / "runner-cache" / "d3_bar_window_checkpoints"
 REPORT_CACHE_PATH = RUN_DIR / "bar_location_report.json"
 PREFLIGHT_CACHE_PATH = RUN_DIR / "cube_gather_preflight.json"
 EVIDENCE_MANIFEST_PATH = RUN_DIR / "committed_evidence_manifest.json"
+
+EVIDENCE_SOURCE_PATHS = frozenset(
+    {
+        "docs/D3_BAR_LOCATION_DESIGN_SCOUT_2026-07-10.md",
+        "docs/D3_BAR_WINDOW_DESIGN_DELTA_2026-07-11.md",
+        "scripts/d3_bar_location_engine_ext_2026_07_10.py",
+        "scripts/d3_bar_window_measurement_2026_07_11.py",
+        "scripts/d3_cubic_orbit_engine_2026_07_09.py",
+    }
+)
+HISTORICAL_GENERATION_RUNNER = (
+    "scripts/d3_bar_window_measurement_2026_07_11.py"
+)
+EVIDENCE_ARTIFACT_PATHS = frozenset(
+    {
+        "logs/runner-cache/d3_bar_window_checkpoints/cube_gather_preflight.json",
+        "logs/runner-cache/d3_bar_window_checkpoints/dt_half_lam_0p10_observables.jsonl",
+        "logs/runner-cache/d3_bar_window_checkpoints/lam_0p02_observables.jsonl",
+        "logs/runner-cache/d3_bar_window_checkpoints/lam_0p05_observables.jsonl",
+        "logs/runner-cache/d3_bar_window_checkpoints/lam_0p10_observables.jsonl",
+        "logs/runner-cache/d3_bar_window_checkpoints/lam_0p20_observables.jsonl",
+    }
+)
+EVIDENCE_CASE_KEYS = frozenset(
+    {
+        "dt_half_lam_0p10",
+        "lam_0p02",
+        "lam_0p05",
+        "lam_0p10",
+        "lam_0p20",
+    }
+)
 
 # Literal declaration consumed by the dependency-aware runner-cache layer.
 AUDIT_INPUT_PATHS = (
@@ -3069,6 +3102,40 @@ def _sha256_path(path: Path) -> str:
     return digest.hexdigest()
 
 
+def _exact_mapping(
+    payload: object, *, label: str, expected_keys: frozenset[str]
+) -> Mapping[str, object]:
+    if not isinstance(payload, Mapping):
+        raise RuntimeError(f"evidence manifest lacks {label} map")
+    actual_keys = frozenset(str(key) for key in payload)
+    if actual_keys != expected_keys:
+        missing = sorted(expected_keys - actual_keys)
+        extra = sorted(actual_keys - expected_keys)
+        raise RuntimeError(
+            f"evidence manifest {label} keys mismatch: "
+            f"missing={missing}, extra={extra}"
+        )
+    return payload
+
+
+def _sha256_git_blob(blob_oid: object) -> str:
+    oid = str(blob_oid)
+    if len(oid) != 40 or any(char not in "0123456789abcdef" for char in oid):
+        raise RuntimeError("historical generation blob OID is malformed")
+    completed = subprocess.run(
+        ["git", "cat-file", "blob", oid],
+        cwd=REPO_ROOT,
+        capture_output=True,
+        check=False,
+    )
+    if completed.returncode != 0:
+        raise RuntimeError(
+            "historical generation blob is unavailable: "
+            + completed.stderr.decode("utf-8", errors="replace").strip()
+        )
+    return hashlib.sha256(completed.stdout).hexdigest()
+
+
 def _load_completion_manifest(identity: RunIdentity) -> dict[str, object]:
     """Load and authenticate the compact provenance/completion record.
 
@@ -3083,6 +3150,8 @@ def _load_completion_manifest(identity: RunIdentity) -> dict[str, object]:
         raise FileNotFoundError("missing committed evidence manifest")
     with EVIDENCE_MANIFEST_PATH.open("r", encoding="utf-8") as handle:
         payload = json.load(handle)
+    if not isinstance(payload, Mapping):
+        raise RuntimeError("committed evidence manifest must be a mapping")
     exact = (
         payload.get("schema") == EVIDENCE_MANIFEST_SCHEMA
         and payload.get("protocol_hash") == identity.protocol_hash
@@ -3094,37 +3163,62 @@ def _load_completion_manifest(identity: RunIdentity) -> dict[str, object]:
     if not exact:
         raise RuntimeError("committed evidence manifest identity mismatch")
 
-    reporter_sources = payload.get("reporter_sources")
-    generation_sources = payload.get("generation_sources")
-    if not isinstance(reporter_sources, Mapping) or not isinstance(
-        generation_sources, Mapping
-    ):
-        raise RuntimeError("evidence manifest lacks source provenance maps")
+    reporter_sources = _exact_mapping(
+        payload.get("reporter_sources"),
+        label="reporter_sources",
+        expected_keys=EVIDENCE_SOURCE_PATHS,
+    )
+    generation_sources = _exact_mapping(
+        payload.get("generation_sources"),
+        label="generation_sources",
+        expected_keys=EVIDENCE_SOURCE_PATHS,
+    )
+    generation_blobs = _exact_mapping(
+        payload.get("generation_blobs"),
+        label="generation_blobs",
+        expected_keys=frozenset({HISTORICAL_GENERATION_RUNNER}),
+    )
     for label, source_map in (
         ("reporter", reporter_sources),
         ("generation", generation_sources),
     ):
         for relpath, expected_hash in source_map.items():
-            path = REPO_ROOT / str(relpath)
-            if not path.is_file():
-                raise FileNotFoundError(f"{label} source missing: {relpath}")
-            actual_hash = _sha256_path(path)
-            if label == "generation" and str(relpath) == (
-                "scripts/d3_bar_window_measurement_2026_07_11.py"
-            ):
-                # The long-run source is retained as an exact historical hash;
-                # the current reporter is separately authenticated above.
-                continue
+            if label == "generation" and relpath == HISTORICAL_GENERATION_RUNNER:
+                actual_hash = _sha256_git_blob(generation_blobs[relpath])
+            else:
+                path = REPO_ROOT / str(relpath)
+                if not path.is_file():
+                    raise FileNotFoundError(f"{label} source missing: {relpath}")
+                actual_hash = _sha256_path(path)
             if actual_hash != str(expected_hash):
                 raise RuntimeError(f"{label} source hash mismatch: {relpath}")
 
-    artifacts = payload.get("artifacts")
-    if not isinstance(artifacts, Mapping):
-        raise RuntimeError("evidence manifest lacks artifact provenance")
+    artifacts = _exact_mapping(
+        payload.get("artifacts"),
+        label="artifacts",
+        expected_keys=EVIDENCE_ARTIFACT_PATHS,
+    )
     for relpath, expected_hash in artifacts.items():
         path = REPO_ROOT / str(relpath)
         if not path.is_file() or _sha256_path(path) != str(expected_hash):
             raise RuntimeError(f"committed artifact hash mismatch: {relpath}")
+    cases = _exact_mapping(
+        payload.get("cases"),
+        label="cases",
+        expected_keys=EVIDENCE_CASE_KEYS,
+    )
+    for case_key, raw_case in cases.items():
+        if not isinstance(raw_case, Mapping):
+            raise RuntimeError(f"evidence manifest case is malformed: {case_key}")
+        stream_path = str(raw_case.get("stream_path", ""))
+        stream_hash = str(raw_case.get("stream_sha256", ""))
+        if (
+            stream_path not in EVIDENCE_ARTIFACT_PATHS
+            or stream_hash != str(artifacts.get(stream_path, ""))
+        ):
+            raise RuntimeError(
+                f"evidence manifest case/artifact hash mismatch: {case_key}"
+            )
     return dict(payload)
 
 
@@ -3199,6 +3293,10 @@ def _load_report_case(
         and int(case_manifest.get("n_steps", -1)) == n_steps
         and case_manifest.get("basis_checksum") == basis_checksum
         and case_manifest.get("raw_to_orbit_checksum") == lookup_checksum
+        and case_manifest.get("stream_sha256")
+        == completion_manifest["artifacts"][expected_stream]
+        and case_manifest.get("stream_sha256")
+        == _sha256_path(_stream_path(lam, fine=fine))
     )
     if not exact_case:
         raise RuntimeError(f"completion manifest case mismatch for {prefix}")

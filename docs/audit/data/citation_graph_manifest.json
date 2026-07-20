@@ -1,6 +1,6 @@
 {
- "edge_count": 14961,
- "node_count": 4457,
+ "edge_count": 14963,
+ "node_count": 4458,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -6941,6 +6941,10 @@
   "kcpt_coupling_triple_two_presentation_derivable_class_spectral_pairing_bounded_theorem_note_2026-07-16": {
    "deps_hash": "2e8f0e7f8554",
    "out_degree": 5
+  },
+  "kcpt_holomorphic_gamb_representation_bounded_theorem_note_2026-07-20": {
+   "deps_hash": "7437a31a290a",
+   "out_degree": 2
   },
   "kcpt_kahler_triple_ambient_invariant_metric_symplectic_bounded_theorem_note_2026-07-19": {
    "deps_hash": "7dbbc3154bd8",

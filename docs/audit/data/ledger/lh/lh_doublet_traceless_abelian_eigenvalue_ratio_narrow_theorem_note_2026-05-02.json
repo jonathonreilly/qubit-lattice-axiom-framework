@@ -51,7 +51,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "decoration_under_graph_first_su3_integration_note",
-  "load_bearing_score": 12.585,
+  "load_bearing_score": 12.586,
   "load_bearing_step": "Using the retained 6-state Sym\u00b2 and 2-state Anti\u00b2 multiplicities, tracelessness gives 6\u00b7\u03b1 + 2\u00b7\u03b2 = 0, hence \u03b2 = -3\u03b1 and the Sym\u00b2:Anti\u00b2 eigenvalue ratio is 1:(-3).",
   "load_bearing_step_class": "A",
   "max_descendant_status": "unknown",
@@ -324,6 +324,6 @@
   },
   "runner_path": "scripts/frontier_lh_doublet_traceless_abelian_ratio.py",
   "title": "LH-Doublet Traceless Abelian Eigenvalue Ratio (Narrow Theorem)",
-  "transitive_descendants": 1085,
+  "transitive_descendants": 1086,
   "verdict_rationale": "The load-bearing work is a class A algebraic identity over retained-grade inputs. The primary runner source confirms it checks note scope, hard-coded retained multiplicities, exact Fraction algebra, and retained-grade ledger status, with no external comparator or first-principles operator computation. Because the theorem reduces to a narrow algebraic corollary of the graph-first SU3 integration parent plus standard tracelessness arithmetic, it fits the decoration policy rather than a new independent theorem."
 }

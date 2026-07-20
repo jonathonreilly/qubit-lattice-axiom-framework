@@ -1349,6 +1349,6 @@
   },
   "runner_path": "scripts/fermion_parity_z2_grading_check.py",
   "title": "Fermion-Parity Grading on an Ordered Finite Occupation Space",
-  "transitive_descendants": 1621,
+  "transitive_descendants": 1622,
   "verdict_rationale": null
 }

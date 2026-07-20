@@ -56,7 +56,7 @@
   ],
   "independence": "fresh_context",
   "intrinsic_status": "retained",
-  "load_bearing_score": 15.713,
+  "load_bearing_score": 15.714,
   "load_bearing_step": "The Hessian therefore reduces to the binary orthogonality sum sum_s (-1)^{s_i} (-1)^{s_j}, which is 8 for i=j and 0 for i!=j.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -78,6 +78,6 @@
   },
   "runner_path": "scripts/frontier_taste_scalar_isotropy.py",
   "title": "Taste-Scalar Coleman-Weinberg Isotropy Theorem",
-  "transitive_descendants": 838,
+  "transitive_descendants": 839,
   "verdict_rationale": "The proposed positive_theorem type is correct for the scoped exact Hessian-isotropy statement. The source note's proof sketch compresses the derivative step, but the displayed eigenvalue formula plus standard chain rule make the Hessian coefficient common across all sign sectors at the axis, leaving exactly the binary orthogonality identity. The cached runner output for SHA 519c1d8d830ea43f8cdcd866565184a4d2d1c8d4c9b0318557fe22df5f35c59b reports THEOREM PASS=30 and FAIL=0, checking the shift algebra, eigenvalue sign sum, binary orthogonality, and finite-difference Hessian isotropy for representative smooth functions. The six bounded gauge/thermal passes are outside this audited scope and are not used for closure."
 }

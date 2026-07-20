@@ -1,18 +1,20 @@
 # Enhanced completed-joint running-local-jet target-to-next-product-source return
 
 **Date:** 2026-07-13
-**Type:** bounded_theorem
-**Status:** unaudited candidate; effective status is pipeline-derived only after independent audit.
+**Type:** open_gate
+**Status:** conditional on the open Block47 two-root proof obligation; effective status is pipeline-derived only after independent audit.
 **Primary runner:** [`scripts/wilson_staggered_enhanced_joint_target_next_product_source_return_2026_07_13.py`](../scripts/wilson_staggered_enhanced_joint_target_next_product_source_return_2026_07_13.py)
 
 ## 0. Result and scope
 
-One enhanced finite-regulator completed-joint source ball returns to the next
+Conditional on Block47's unproved constant-one two-root inequality, one
+enhanced finite-regulator completed-joint source ball would return to the next
 declared **product-coordinate source bundle** after the raw diameter-zero
 local jet is extracted once into running data, the scalar trace of its
 quadratic part updates the onsite product Gaussian, and the remaining local
-jet stays explicit.  This closes a
-target-to-next-product-source return section.  It does not construct the next
+jet stays explicit. The present note verifies the remaining arithmetic and
+coordinate splits but does not close a target-to-next-product-source return
+section. It does not construct the next
 correlated scalar-reference split, an autonomous fixed-chart ball, or a
 horizon-uniform induction.
 
@@ -53,7 +55,8 @@ After completing the scalar-reference joint graph,
 K_T=1.742570618731203 10^(-10)<0.01.                              (0.3)
 ```
 
-On the whole radius-`delta` ball the conservative two-root bound gives
+If the Block47 two-root bound holds with constant one, the whole
+radius-`delta` ball gives
 
 ```text
 K_delta=0.001000500340965404<0.01,
@@ -96,8 +99,9 @@ theta_return=theta_atom-log T_ref
 lambda_return=0.2,                                                (0.7)
 ```
 
-and `expm1(delta)=0.001000500166708342<0.01`.  After the next raw local jet is
-moved into running data, the residual therefore belongs to a next
+and `expm1(delta)=0.001000500166708342<0.01`. Conditional on the same open
+inequality, after the next raw local jet is moved into running data, the
+residual would belong to a next
 product-coordinate source bundle at weights `(4.4,0.2)`, numerically matching
 the centered weights used by Block47, with potential norm at most `delta` and
 a strict spatial margin `0.03722537165894391`.  The traceless Hermitian
@@ -106,11 +110,11 @@ not absorbed into the scalar product Gaussian.  Membership in Block47's
 correlated `C_ref=L E_ref` split is not inferred.
 
 The price is explicit.  The same enhanced source moments fail the upstream
-Block40/42 activity test at `m=10^64`; this theorem uses `m=10^96`.  The input
+Block40/42 activity test at `m=10^64`; this diagnostic uses `m=10^96`. The input
 weights `(12.42,0.4)` are also stronger than the returned weights
 `(4.4,0.2)`.  No fixed-m or all-horizon claim is made.
 
-## 1. Enhanced completed joint graph and uniform tube
+## 1. Enhanced completed joint graph and conditional tube
 
 Let `Phi_46^(enh)` denote the complete Block46 graph rebuilt at (0.1)--(0.2),
 with the same phase order:
@@ -148,15 +152,15 @@ q=max(exp(-0.2),q_centered)=0.8187307530779818.                   (1.2)
 ```
 
 For `||H||_48<=delta`, raw fiber constants cancel from the normalized
-functional and the centered activity rises by at most `expm1(delta)`.  The
-two-root proof of Block47 applies on the enhanced graph with
+functional and the centered activity rises by at most `expm1(delta)`. The
+open two-root obligation of Block47 would apply on the enhanced graph with
 
 ```text
 P_2<=(1-tau_delta)^(-4),
 M_delta=68exp(0.2)P_2.                                           (1.3)
 ```
 
-Equations (0.4) follow.  An independent 80-digit Decimal reconstruction uses
+Equations (0.4) then follow conditionally. An independent 80-digit Decimal reconstruction uses
 the exact integer optimizer `n=111`; it does not call the binary64 Hessian
 row as its arithmetic oracle.
 
@@ -210,8 +214,9 @@ convenient direct-sum source norm is
 ```
 
 Because `j` cancels from normalized responses and
-`||g||_raw+||h^o||_joint<=delta`, the enhanced Block47 activity, Hessian, and
-Taylor rows remain valid without charging `j` as a polymer activity.
+`||g||_raw+||h^o||_joint<=delta`, the enhanced Block47 activity and
+conditional Hessian/Taylor rows do not require charging `j` as a polymer
+activity.
 
 At the output, first change to the next product dictionary.  Let `E_1` be its
 product expectation, `L_1` its retained-coefficient lift, and
@@ -300,11 +305,12 @@ For the fixed-field route, apply the next site-block atom decomposition to
 K_1^fac<=expm1(delta)<c.                                         (3.5)
 ```
 
-Equations (0.6)--(0.7) pay the next source weights.  The returned residual has
+Equations (0.6)--(0.7) conditionally pay the next source weights. The returned residual has
 no raw `P_0` arm, its `Q_1` arm lies at `(4.4,0.2)`, and its raw non-onsite arm
-is bounded by the stronger diameter gain `exp(-0.2)`.  Together with the
-separate running coefficient `j_1`, this is the claimed
-target-to-next-product-source return section.
+is bounded by the stronger diameter gain `exp(-0.2)`. Together with the
+separate running coefficient `j_1`, this would give the
+target-to-next-product-source return section if the Block47 two-root
+obligation were discharged.
 
 It is not yet a second physical RG theorem.  That requires rebuilding the
 next correlated scalar-reference determinant, proving its marked and
@@ -338,7 +344,7 @@ Lambda_(j+1)=Lambda_j/2.                                         (4.2)
 
 At fixed input moments both reserves decay.  Holding a prescribed positive
 output instead requires the source moments to grow backward with the horizon,
-which in turn pushes the massive activity witness outward.  The theorem does
+which in turn pushes the massive activity witness outward. The conditional diagnostic does
 not establish a horizon-uniform moment/mass schedule, a same-chart fixed
 point, or a continuum limit.
 
@@ -352,23 +358,24 @@ python3 scripts/wilson_staggered_enhanced_joint_target_next_product_source_retur
 
 The runner checks: a fresh enhanced Block42 composition; the 120-digit
 shortest, Gaussian/boundary, determinant, and tail rows; visible outward
-ownership above the aggregate ulp; the completed joint activity; the uniform
-two-mark/Taylor tube; an independent 80-digit optimizer and tube
+ownership above the aggregate ulp; the completed joint activity; the
+conditional two-mark/Taylor tube arithmetic; an independent 80-digit optimizer and tube
 reconstruction; a finite-model three-way source split with both raw non-onsite
 and centered arms; the coefficient-valued next-product output split; a
 non-scalar Hermitian quadratic fixture with scalar/traceless reconstruction;
 the gap and fixed-field reference transition; returned source weights and
 factor activity; the `m=10^64` enhanced-moment failure; the finite-horizon
-fixed-weight boundary; the source contract; and exactly five dependencies.
-The arbitrary-regulator cluster bounds and the operator inequality
-`|tr Q|/3<=||Q||_op` remain analytic content of Sections 1--3.
+fixed-weight boundary; the source contract; and exactly five dependencies. It
+does not check the Block47 constant-one two-root injection. The operator
+inequality `|tr Q|/3<=||Q||_op` remains analytic content of Sections 1--3.
 
 ## 6. No-Go Discipline N1--N8
 
-The positive return leaves a named all-horizon boundary, so the complete
+The conditional return diagnostic leaves a named all-horizon boundary, so the complete
 stress test is recorded.  The negative statement is only:
 
-**NG48:** this one enhanced finite-horizon return section does not itself
+**NG48:** even if its inherited proof gate closes, this one enhanced
+finite-horizon return section does not itself
 supply a fixed-m, fixed-chart, all-horizon RG induction.  It is a logical
 non-implication from the displayed certificate, not a physical RG no-go.
 
@@ -437,7 +444,7 @@ fixed-point, critical, physical-law, or continuum closure.
 | Enhanced-factor note, equations (0.4)--(0.10) | fresh higher-moment generated-factor row | enhanced base in Section 1 | Yes |
 | External-shortest-center note, Sections 1--4 | Decimal tail, scalar reference, Weyl ownership | micro rows and gap ledger | Yes |
 | Block46, Sections 3--6 | completed joint phase order and physical atom return | enhanced parameter rerun | Yes |
-| Block47, Sections 1--4 | exact Hessian, conservative pair bound, nonlinear tube | equations (0.4), (1.3) | Yes |
+| Block47, Sections 1--4 | exact Hessian plus open pair bound and conditional nonlinear tube | equations (0.4), (1.3) | Conditional |
 | Framework dynamics-selection result | law/time/probability underdetermination | not used | Residual mismatch; dropped |
 
 ### N5 — rhetoric and resolution audit
@@ -445,7 +452,7 @@ fixed-point, critical, physical-law, or continuum closure.
 | resolution | tested? | supported statement |
 |---|---:|---|
 | One enhanced finite-regulator generated graph | Yes | Base activity and all visible micro rows close. |
-| Whole restricted radius-`0.001` ball | Yes | Uniform pair/Taylor, gap, atom, and return rows close. |
+| Whole restricted radius-`0.001` ball | Partial | Conditional pair/Taylor, gap, atom, and return arithmetic close; the pair inequality is open. |
 | Full diameter-zero local jet | Yes | Exact affine factorization and one output projection/recentering. |
 | One old/new scalar product reference transition | Yes | Exact torsor route and conservative fixed-field cost. |
 | Second physical hidden integration | No | `W2` remains. |
@@ -454,8 +461,9 @@ fixed-point, critical, physical-law, or continuum closure.
 
 ### N6 — partial closure and primitive scan
 
-The theorem closes one target/source chart mismatch by spending enhanced
-moments and translating the full local jet.  It does not close the next
+The note shows how one target/source chart mismatch would close after spending
+enhanced moments and translating the full local jet, but the inherited
+two-root obligation remains open. It also does not close the next
 correlated graph, a uniform schedule, or a critical trajectory.  Lattice,
 Qubit, Admissibility, and Record and the approved primitive registry neither
 supply nor obstruct the remaining analytic schedules and cluster bounds.
@@ -466,7 +474,8 @@ No axiom-update stop is triggered.
 
 The strongest objection is that moving from `m=10^64` to `m=10^96` and from
 source weights `(4.4,0.2)` to `(12.42,0.4)` is not an autonomous return.  The
-objection is correct.  This theorem proves a scale-indexed return section, not
+objection is correct. Even conditional on the Block47 inequality, this note
+would give a scale-indexed return section, not
 fixed-chart invariance.  A sharper lineage/root-carrier norm could lower the
 site surcharge and a shortest-center-relative schedule could make later
 activities cheaper.  Those routes defeat any broader impossibility claim but
@@ -481,16 +490,17 @@ are not supplied by the displayed certificate.
 | Empty future onsite atoms | Violated raw-quadratic-only source restriction | Three-way source split and coefficient-valued next-product projection | Retired for one bundle handoff. |
 | Block42 finite-horizon moment recurrence | Source moments grow backward | One `m=10^96` enhanced witness | Preserved as the all-horizon boundary. |
 | Block46 unchanged reuse failure | Fixed source missed response/factor return | Different enhanced source chart | Not contradicted; original fixed-chart failure remains. |
-| Block47 source/output tube | Target weaker than source | Paid site, diameter, and reference margins | Upgraded to one target-to-next-source section. |
+| Block47 source/output tube | Two-root inequality open; target weaker than source | Paid site, diameter, and reference margins conditionally | Not upgraded until the inherited proof gate closes. |
 
 **No-Go Discipline status:** `PASS` for NG48 at the displayed finite-horizon
 resolution.
 
 ## 7. Claim boundary
 
-The result is one finite-regulator, fixed-sector, enhanced-moment,
-restricted-class radius-`0.001` nonlinear tube whose running-local-jet output
-returns to the next declared product-coordinate source bundle.  It is not an
+The proved result is the finite-regulator enhanced-moment base arithmetic,
+coordinate splitting, and conditional return ledger. The restricted-class
+radius-`0.001` nonlinear tube and its next product-coordinate source return
+remain conditional on Block47's constant-one two-root inequality. It is not an
 autonomous invariant ball, a second physical RG step, an all-horizon
 construction, a continuum limit, or a derivation of dynamics, time, unitarity,
 or probability.  Its effective status is set only by the independent audit

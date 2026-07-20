@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Checks an enhanced joint tube and target-to-next-product-source return."""
+"""Checks enhanced-return arithmetic conditional on an open two-root bound."""
 
 from __future__ import annotations
 
@@ -257,7 +257,7 @@ def main() -> None:
 
     checks.append(
         (
-            "uniform_enhanced_two_mark_tube",
+            "conditional_uniform_enhanced_two_mark_tube_arithmetic",
             rows["delta"] < rows["source_radius"]
             and rows["K_ball"] < rows["allowance"]
             and rows["tau_ball"] < 1.0
@@ -591,7 +591,8 @@ def main() -> None:
     )
 
     required = [
-        "**Type:** bounded_theorem",
+        "**Type:** open_gate",
+        "conditional on the open Block47 two-root proof obligation",
         "P_rel=P_0",
         "j=P_rel E_ref H",
         "g=(1-P_rel)E_ref H",

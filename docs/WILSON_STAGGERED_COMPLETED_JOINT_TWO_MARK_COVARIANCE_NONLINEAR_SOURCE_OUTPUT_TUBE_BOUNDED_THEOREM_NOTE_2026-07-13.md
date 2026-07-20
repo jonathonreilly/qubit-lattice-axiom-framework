@@ -1,17 +1,20 @@
 # Completed-joint two-mark covariance and nonlinear source/output tube
 
 **Date:** 2026-07-13
-**Type:** bounded_theorem
-**Status:** unaudited candidate; effective status is pipeline-derived only after independent audit.
+**Type:** open_gate
+**Status:** open two-root proof obligation; effective status is pipeline-derived only after independent audit.
 **Primary runner:** [`scripts/wilson_staggered_completed_joint_two_mark_nonlinear_tube_2026_07_13.py`](../scripts/wilson_staggered_completed_joint_two_mark_nonlinear_tube_2026_07_13.py)
 **Cached output:** [`logs/runner-cache/wilson_staggered_completed_joint_two_mark_nonlinear_tube_2026_07_13.txt`](../logs/runner-cache/wilson_staggered_completed_joint_two_mark_nonlinear_tube_2026_07_13.txt)
 
 ## 0. Result and scope
 
-The completed one-horizon Block46 graph has a uniform two-mark covariance
-bound on a nonzero strong perturbation ball, and Taylor's theorem closes one
-nonlinear residual source/output Banach-bundle tube with a separately bounded
-running-center ledger.  At the same finite-regulator
+The completed one-horizon Block46 graph supplies the exact Hessian identity,
+the vanishing raw Hessian blocks, and a numerical diagnostic for a possible
+two-mark covariance bound. It does **not** yet prove that bound: the required
+constant-one two-root cluster injection has not paid the meeting-anchor, cut,
+support, and routing multiplicities. Consequently the nonlinear residual
+source/output tube below is conditional on the explicit open obligation in
+Section 2. At the same finite-regulator
 Wilson--staggered `SU(3)`, `beta=0`, `m=10^64` witness, every perturbation in
 the restricted raw-quadratic/centered source class (1.2a) with strong split
 norm at most
@@ -20,7 +23,8 @@ norm at most
 delta=0.001                                                     (0.1)
 ```
 
-fits in the joint expansion.  A conservative pair majorant gives
+fits in the joint expansion. If the unproved pair majorant (2.4) holds with
+constant one, the resulting arithmetic is
 
 ```text
 M_delta=88.82169800480513,
@@ -37,8 +41,9 @@ theta_atom(delta)=0.426574016916734>0.400001,
 expm1(delta)=0.001000500166708342<0.01.                          (0.3)
 ```
 
-This is a genuine nonlinear one-horizon theorem for the displayed source and
-residual-output Banach bundles.  It is not a same-domain invariant ball: the centered
+This is an open proof gate with a reproducible conditional arithmetic
+certificate, not a nonlinear one-horizon theorem. Even conditional on the
+missing inequality, it is not a same-domain invariant ball: the centered
 source uses the full `(Theta+2c,Lambda)=(4.4,0.2)` graph weights, while the
 fresh output lands in the weaker `(theta,lambda)=(0.400001,0.1)` atom chart.
 It supplies neither an all-horizon running-center recursion nor a critical
@@ -146,7 +151,7 @@ centered/centered block requires a cluster bound.  Product centering does not
 make that block vanish: already two zero-mean marks can have a nonzero direct
 pair `E_ref(F^oG^o)`.
 
-## 2. Exact two-root majorant
+## 2. Open two-root majorant obligation
 
 Let the base graph have total rooted activity `K`, hard-core allowance `c`,
 and
@@ -176,28 +181,24 @@ P_side(tau)<=1+H(tau)
             =(1-tau)^(-2).                                      (2.3)
 ```
 
-For the ordered bilinear pair `(F,G)`, split the connected objects into a
+For the ordered bilinear pair `(F,G)`, one would need to split the connected objects into a
 direct overlap, two marks in one first-layer polymer, and marks in distinct
 hard-core polymers.  Root the first side at `F` and the second at `G`.  In the
 same-polymer case, cut the unique factor-tree path at its first meeting edge;
 in the distinct-polymer case, also cut the unique hard-core path at its first
-meeting polymer.  Retain that labeled meeting anchor and cut as part of the
-image, and assign shared path material to the `F` side.  The two rooted
-histories plus this label reconstruct the original connected object, so this
-injects every connected object into an ordered pair of complete rooted-side
-histories with retained cut data.
-The projective coefficient norm and mark-support convolution are
-submultiplicative with constant one.  Hence the connected subset is bounded by
-the product of the two full side sums.  This deliberately includes
-disconnected pairs and counts shared middle paths more than once:
+meeting polymer. Retaining that labeled meeting anchor and cut is a proposed
+map, not a proved constant-one injection. The present construction does not
+show that the meeting-anchor/cut sum, common-path assignment,
+same-polymer/distinct-polymer split, and mark-support convolution are already
+paid by the two scalar side series. Therefore the following inequality is the
+exact open obligation, not a conclusion:
 
 ```text
 P_2(tau)<=P_side(tau)^2<=(1-tau)^(-4).                           (2.4)
 ```
 
-The mixed derivative receives no external factor two.  The output is one
-connected coarse carrier; the established hidden-to-coarse routing pays
-`68exp(Lambda/2)` once, not once per input mark.  For unit strong directions,
+The mixed derivative receives no external factor two. If (2.4) and its
+once-only output routing are proved, then for unit strong directions,
 
 ```text
 ||D^2T_Phi[F,G]||_weak
@@ -206,7 +207,7 @@ connected coarse carrier; the established hidden-to-coarse routing pays
 M(K)=68exp(Lambda/2)/(1-KD(K))^4.                                (2.5)
 ```
 
-Here `T_res` includes the contractive quadratic-center-complement projection.
+Equation (2.5) is conditional on (2.4). Here `T_res` includes the contractive quadratic-center-complement projection.
 Hermitian quadratic projection and symmetrization belong to the separate
 center ledger.
 The constant-three product estimate for the full direct-sum algebra is not
@@ -214,7 +215,7 @@ inserted into (2.5): the raw Hessian blocks vanish before multiplication, and
 the centered/centered bilinear mark convolution uses the declared projective
 mark norm with constant one.
 
-## 3. Uniformity on the radius-0.001 source ball
+## 3. Conditional radius-0.001 arithmetic
 
 Let `Phi_46` be the actual completed base.  Block46 gives
 
@@ -257,19 +258,20 @@ M_delta=68exp(0.1)/(1-tau_delta)^4
        =88.82169800480513.                                       (3.3)
 ```
 
-This is a uniform Hessian bound on the whole radius-`delta` strong ball, not
-the smaller base-only value `75.154...`.  The source analyticity margin is
+Conditional on (2.4), this would be a uniform Hessian bound on the whole
+radius-`delta` strong ball, not the smaller base-only value `75.154...`.
+The independently established source analyticity margin is
 
 ```text
 r_src=log(1+c-K_T)=0.009949854790553249>delta.                    (3.4)
 ```
 
 Thus every base on the segment stays in the same zero-free joint logarithm
-branch and obeys (2.5).
+branch; it obeys (2.5) only if the open two-root obligation is discharged.
 
-## 4. Nonlinear residual tube and separate center membership
+## 4. Conditional nonlinear-tube diagnostic
 
-Taylor's theorem at the actual base, (3.1), and the uniform (3.3) give
+If (2.4) supplies the uniform Hessian estimate (3.3), Taylor's theorem gives
 
 ```text
 ||T_res(Phi_46+H)||_weak
@@ -284,8 +286,9 @@ B+q delta+(M_delta/2)delta^2
  <0.001=delta.                                                    (4.1)
 ```
 
-Convexity of the scalar majorant gives the same bound throughout the ball.
-This proves the claimed residual source/output Banach-bundle tube.  Here `B`
+Convexity of the scalar majorant gives the same conditional arithmetic
+throughout the ball. This does not prove a residual source/output
+Banach-bundle tube. Here `B`
 is a safe upper bound for the actual base residual output; it is not a
 same-space displacement from a fixed point.
 
@@ -342,21 +345,22 @@ blocks in a nontrivially tilted finite model; a nonzero centered/centered
 covariance; the mixed derivative sign and absence of an extra factor two; the
 two-layer `n+1` one-side series and the conservative
 `[1+H]^2=(1-tau)^(-4)` pair envelope; all uniform
-ball, Hessian, Taylor, gap, `eta`, atom, and factor rows; an independent
+ball, conditional Hessian/Taylor, gap, `eta`, atom, and factor rows; an independent
 80-digit Decimal reconstruction of the activity, optimizer, Hessian, and tube;
 the source contract;
-and exactly four dependencies.  The general rooted-side injection and
-Banach-algebra cluster estimates are analytic content of Sections 1--4.
+and exactly four dependencies. It does not check the general rooted-side
+injection. That constant-one inequality is the open proof gate in Section 2.
 
 ## 6. No-Go Discipline N1--N8
 
-This theorem contains a named same-domain/all-horizon boundary, so the full
+This open-gate note contains a named same-domain/all-horizon boundary, so the full
 stress test is recorded even though no new physical impossibility is claimed.
 
 **NG47:** this finite one-horizon cross-norm two-mark residual tube does not by
 itself furnish an invariant RG ball, because it supplies neither a same-space
-endomorphism nor certified reuse on a second horizon.  `NG47` is only a
-logical non-implication from the displayed theorem, not a physical RG no-go.
+endomorphism nor certified reuse on a second horizon. `NG47` is only a
+logical non-implication from the displayed conditional diagnostic, not a
+physical RG no-go.
 
 ### N1 — alternative-route enumeration
 
@@ -444,18 +448,18 @@ nonclaims or residuals.
 | resolution | tested? | supported statement |
 |---|---:|---|
 | One finite two-coordinate covariance fixture | Yes | Sign, raw-block vanishing, direct pair, no factor two. |
-| One completed finite-regulator graph | Yes | Uniform pair bound and radius-`0.001` tube. |
-| Whole restricted strong ball at one horizon | Yes | Worst activity, Hessian, gap, and atom rows are recomputed. |
+| One completed finite-regulator graph | Partial | Base identities and conditional radius-`0.001` arithmetic; the pair bound is open. |
+| Whole restricted strong ball at one horizon | Partial | Worst activity, conditional Hessian, gap, and atom rows are recomputed. |
 | Same-domain next-scale ball | No | `W1` remains. |
 | All horizons / running center | No | `W1-W2` remain. |
 | Taste / continuum / Lorentzian theory | No | `W4-W6` remain. |
 
 ### N6 — partial closure and primitive scan
 
-The two-mark theorem retires the old unlocalized Cauchy wall for one
-actual completed graph: it retains the small activity and rooted marked paths
-instead of replacing the row by the allowance.  It also upgrades Block46's
-single output into a nonzero nonlinear tube.  The target/source chart mismatch
+The two-mark attempt does not retire the old two-mark wall: it retains the
+small activity and rooted marked paths but leaves the constant-one cut/support
+sum open. It therefore does not yet upgrade Block46's single output into a
+nonzero nonlinear tube. The target/source chart mismatch
 and running-center/all-horizon tasks still have multiple live mechanisms from
 N1.  The Lattice, Qubit, Admissibility, and Record axioms and the approved
 primitive registry neither provide nor obstruct those analytic mechanisms.
@@ -466,31 +470,32 @@ No axiom-update stop is triggered.
 
 The strongest objection is that a source/output tube is not yet an RG
 invariant ball.  The objection is correct: Block46's target atom chart has
-smaller spatial and diameter exponents than this theorem's centered source
+smaller spatial and diameter exponents than this note's centered source
 chart, and no identity embeds it back.  A scale-indexed Banach bundle or
 lineage-preserving section could nevertheless turn exactly this tube into one
 step of an all-horizon induction.  That live route defeats any broader no-go
-but does not change the bounded one-horizon statement proved here.
+but does not discharge the prior two-root proof obligation.
 
 ### N8 — cross-cycle echo
 
 | prior wall/path | earlier status | mechanism applied here | disposition |
 |---|---|---|---|
 | Raw Hessian | Local bosonic pair covariance only | Completed joint Banach graph and strong split | Retired for the displayed actual all-degree graph. |
-| Unlocalized Cauchy certificate | Absolute bound above 68 | Actual `K_delta`, direct pair, conservative two-side rooted envelope | Retired on the radius-`0.001` ball. |
-| K-retaining one-mark theorem | Strong-to-weak linear contraction only | Uniform two-mark bound plus Taylor | Upgraded to one nonlinear bundle tube. |
+| Unlocalized Cauchy certificate | Absolute bound above 68 | Actual `K_delta`, direct pair, proposed two-side rooted envelope | Not retired; constant-one injection remains open. |
+| K-retaining one-mark theorem | Strong-to-weak linear contraction only | Conditional two-mark arithmetic plus Taylor | Not upgraded without the open inequality. |
 | Block43 unchanged-ledger wall | Same fixed chart could not iterate | Target/source mismatch remains explicit | Not retired; scale-indexed/lineage escapes stay live. |
-| Block46 unchanged next reuse | Response and factor certificates both missed | The theorem perturbs the first completed horizon, not the failed next ledger | Preserved; no contradictory iteration claim. |
+| Block46 unchanged next reuse | Response and factor certificates both missed | The conditional diagnostic perturbs the first completed horizon, not the failed next ledger | Preserved; no contradictory iteration claim. |
 
 **No-Go Discipline status:** `PASS` for the named bundle-versus-same-domain
 boundary.
 
 ## 7. Claim-strength disposition
 
-`PASS WITH BOUNDED CLAIMS` is the intended review disposition.  The bounded
-candidate is one finite-regulator, fixed-sector, restricted-class,
-radius-`0.001` nonlinear residual source/output tube with a conservative
-two-mark cluster majorant and separate center ledger.  It is not an
+`OPEN GATE` is the intended review disposition. The proved content is the
+finite-regulator Hessian identity, vanishing raw blocks, source analyticity,
+and conditional arithmetic. A restricted-class radius-`0.001` nonlinear
+residual tube remains conditional on the constant-one two-root cluster
+majorant. Even if that obligation is closed, it is not an
 autonomous RG ball, physical fixed point, all-horizon construction, continuum
 limit, or derivation of dynamics, time, unitarity, or probability.
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Checks the completed-joint two-mark bound and one nonlinear bundle tube."""
+"""Checks arithmetic conditional on an open completed-joint two-mark bound."""
 
 from __future__ import annotations
 
@@ -63,7 +63,8 @@ def tube_rows(delta: float = 0.001) -> dict[str, float]:
     conversion = SAFE_ROOTS * math.exp(base["lambda"] / 2.0)
     # One complete rooted marked side costs 1+H=(1-tau)^-2.  Multiplying
     # the two ordered sides overcounts disconnected and shared structures,
-    # so (1-tau)^-4 is a conservative two-mark envelope.
+    # so (1-tau)^-4 is the explicit conditional two-mark envelope. This
+    # scalar series does not prove the required cluster injection.
     pair_envelope = 1.0 / (1.0 - tau) ** 4
     hessian = conversion * pair_envelope
     base_output = base["B_out_total"]
@@ -221,7 +222,7 @@ def main() -> None:
     conservative_two_mark = closed_pair**2
     checks.append(
         (
-            "conservative_two_mark_two_side_envelope",
+            "conditional_two_mark_two_side_series",
             math.isclose(distributed_sum, coefficient_sum, rel_tol=1.0e-14)
             and coefficient_sum <= closed_pair
             and math.isclose(1.0 + h_function, closed_pair, rel_tol=1.0e-14)
@@ -279,7 +280,7 @@ def main() -> None:
     )
     checks.append(
         (
-            "uniform_strong_ball_pair_hessian_bound",
+            "conditional_uniform_strong_ball_pair_hessian_arithmetic",
             rows["delta"] < rows["source_radius"]
             and rows["K_ball"] < rows["base_allowance"]
             and rows["tau"] < 1.0
@@ -297,7 +298,7 @@ def main() -> None:
     )
     checks.append(
         (
-            "one_horizon_nonlinear_residual_source_output_tube",
+            "conditional_one_horizon_nonlinear_tube_arithmetic",
             rows["tube_left"] < rows["delta"]
             and rows["tube_margin"] > 1.4e-5,
             "B={:.15e}, q={:.15f}, delta={:.6f}, B+qdelta+(M/2)delta^2={:.15e}<delta, margin={:.15e}".format(
@@ -354,13 +355,14 @@ def main() -> None:
         )
     )
     required = [
-        "**Type:** bounded_theorem",
+        "**Type:** open_gate",
+        "constant-one two-root cluster",
         "D^2R_Phi[F,G]=-Cov_Phi(F,G)",
         "T_res=(1-P_quad)D_(2,1)R",
         "[1+H]^2=(1-tau)^(-4)",
         "K_delta=K_T+expm1(delta)",
         "B+q delta+(M_delta/2)delta^2",
-        "source/output Banach-bundle tube",
+        "open proof gate",
         "No axiom-update stop",
         "### N1",
         "### N2",

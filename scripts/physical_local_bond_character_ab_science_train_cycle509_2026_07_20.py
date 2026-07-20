@@ -75,6 +75,10 @@ AB_TRAIN_MANIFEST_SHA256 = "f6dfdbd48ef38a10f2b7659ef5192950a0c17c257c042be8515d
 
 TRAIN_AUTHORIZATION_ENV = "CYCLE509_TRAIN_AUTHORIZATION"
 TRAIN_AUTHORIZATION_TOKEN = "root-cycle509-revision2-train-after-dry-review-2026-07-20"
+REPLAY_AUTHORIZATION_ENV = "CYCLE509_REPLAY_AUTHORIZATION"
+REPLAY_AUTHORIZATION_TOKEN = (
+    "root-cycle509-attempt2-after-postprocess-repair-review-2026-07-20"
+)
 SCOUT_AUTHORIZATION_ENV = "CYCLE509_SCOUT_AUTHORIZATION"
 HELD_AUTHORIZATION_ENV = "CYCLE509_HELD_AUTHORIZATION"
 SCIENCE_INTEGRITY_ENV = "CYCLE509_SCIENCE_INTEGRITY_SHA256"
@@ -248,15 +252,17 @@ def file_sha(path: Path) -> str:
 
 def authorization_allowed(mode: str, environ: Mapping[str, str]) -> bool:
     train = TRAIN_AUTHORIZATION_ENV in environ
+    replay = REPLAY_AUTHORIZATION_ENV in environ
     scout = SCOUT_AUTHORIZATION_ENV in environ
     held = HELD_AUTHORIZATION_ENV in environ
     integrity = SCIENCE_INTEGRITY_ENV in environ
     if mode == "dry-contract":
-        return not train and not scout and not held and not integrity
+        return not train and not replay and not scout and not held and not integrity
     if mode == "science-train":
         return (
-            train and integrity and not scout and not held
+            train and replay and integrity and not scout and not held
             and environ[TRAIN_AUTHORIZATION_ENV] == TRAIN_AUTHORIZATION_TOKEN
+            and environ[REPLAY_AUTHORIZATION_ENV] == REPLAY_AUTHORIZATION_TOKEN
             and environ[SCIENCE_INTEGRITY_ENV] == file_sha(Path(__file__))
         )
     return False
@@ -267,7 +273,8 @@ def enforce_authorization(mode: str, environ: Mapping[str, str]) -> None:
         return
     present = tuple(
         name for name in (
-            TRAIN_AUTHORIZATION_ENV, SCOUT_AUTHORIZATION_ENV,
+            TRAIN_AUTHORIZATION_ENV, REPLAY_AUTHORIZATION_ENV,
+            SCOUT_AUTHORIZATION_ENV,
             HELD_AUTHORIZATION_ENV,
             SCIENCE_INTEGRITY_ENV,
         ) if name in environ
@@ -284,6 +291,19 @@ def geometry_by_name(name: str) -> contract.CorridorGeometry:
     if name == "train-mirrored":
         return contract.TRAIN_MIRRORED
     raise ValueError("non-train geometry is unreachable")
+
+
+def geometry_by_identity_name(name: str) -> contract.CorridorGeometry:
+    by_full_name = {
+        contract.TRAIN_CANONICAL.name: contract.TRAIN_CANONICAL,
+        contract.TRAIN_MIRRORED.name: contract.TRAIN_MIRRORED,
+    }
+    try:
+        return by_full_name[name]
+    except KeyError as error:
+        raise ValueError(
+            "unknown full train geometry identity: " + repr(name)
+        ) from error
 
 
 def build_ab_train_manifest() -> tuple[dict, ...]:
@@ -306,6 +326,108 @@ def row_identity(index: int, row: dict) -> dict:
         "geometry": row["geometry"]["name"],
         "deletion": row["deletion"],
         "row_sha256": object_digest(row),
+    }
+
+
+def postprocess_identity_validation(
+    identities: tuple[dict, ...], expected_identities: tuple[dict, ...],
+) -> dict:
+    """Validate every outcome-free identity assumption used downstream."""
+    expected_grid = {
+        (source_beta, probe_beta)
+        for source_beta in BETA_VALUES for probe_beta in BETA_VALUES
+    }
+    allowed_roles = {
+        "primary-mass-grid", "mirrored-direction-control",
+        "selected-deletion",
+    }
+    checks = {
+        "ordered_identities_exact": identities == expected_identities,
+        "rows_exactly_34": len(identities) == 34,
+        "routes_exact": {
+            identity["route"] for identity in identities
+        } == {ROUTE_A, ROUTE_B},
+        "roles_exact": all(
+            identity["role"] in allowed_roles for identity in identities
+        ),
+        "geometry_names_exact": all(
+            identity["geometry"] == (
+                contract.TRAIN_MIRRORED.name
+                if identity["role"] == "mirrored-direction-control"
+                else contract.TRAIN_CANONICAL.name
+            )
+            for identity in identities
+        ),
+        "role_deletions_exact": all(
+            (
+                identity["deletion"] == NO_DELETION
+                if identity["role"] != "selected-deletion"
+                else identity["deletion"] in DELETIONS
+            )
+            for identity in identities
+        ),
+    }
+    route_details = {}
+    route_checks = []
+    for route in (ROUTE_A, ROUTE_B):
+        route_rows = [
+            identity for identity in identities if identity["route"] == route
+        ]
+        primary = [
+            identity for identity in route_rows
+            if identity["role"] == "primary-mass-grid"
+        ]
+        mirrored = [
+            identity for identity in route_rows
+            if identity["role"] == "mirrored-direction-control"
+        ]
+        deletions = [
+            identity for identity in route_rows
+            if identity["role"] == "selected-deletion"
+        ]
+        primary_grid = [
+            (identity["source_beta"], identity["probe_beta"])
+            for identity in primary
+        ]
+        deletion_names = [identity["deletion"] for identity in deletions]
+        baselines = [
+            identity for identity in primary
+            if identity["source_beta"] == "-4pi/9"
+            and identity["probe_beta"] == "-4pi/9"
+            and identity["geometry"] == contract.TRAIN_CANONICAL.name
+            and identity["deletion"] == NO_DELETION
+        ]
+        route_pass = bool(
+            len(route_rows) == 17
+            and len(primary) == 9
+            and len(mirrored) == 1
+            and len(deletions) == 7
+            and len(set(primary_grid)) == 9
+            and set(primary_grid) == expected_grid
+            and len(set(deletion_names)) == 7
+            and set(deletion_names) == set(DELETIONS)
+            and len(baselines) == 1
+            and mirrored[0]["source_beta"] == "-4pi/9"
+            and mirrored[0]["probe_beta"] == "-4pi/9"
+        )
+        route_checks.append(route_pass)
+        route_details[route] = {
+            "rows": len(route_rows),
+            "primary_rows": len(primary),
+            "mirror_rows": len(mirrored),
+            "deletion_rows": len(deletions),
+            "unique_primary_grid_points": len(set(primary_grid)),
+            "unique_deletions": len(set(deletion_names)),
+            "middle_mass_deletion_baselines": len(baselines),
+            "pass": route_pass,
+        }
+    checks["per_route_exact_nonvacuous"] = all(route_checks)
+    return {
+        "pass": all(checks.values()),
+        "checks": checks,
+        "routes": route_details,
+        "observed_ordered_identity_sha256": object_digest(identities),
+        "expected_ordered_identity_sha256": object_digest(expected_identities),
     }
 
 
@@ -2163,10 +2285,7 @@ def seal_row_artifact(
     logical_hashes = {
         name: logical_array_sha256(value) for name, value in arrays.items()
     }
-    geometry_contract = geometry_by_name(
-        "train-mirrored" if "mirrored" in result["row"]["geometry"]
-        else "train-canonical"
-    )
+    geometry_contract = geometry_by_identity_name(result["row"]["geometry"])
     artifact_metadata = {
         "schema": "Cycle509-A/B-row-artifact-v2",
         "row_identity": result["row"],
@@ -2440,19 +2559,26 @@ def deletion_distance(
     }
 
 
+def discover_deletion_baselines(results: list[dict]) -> dict:
+    matches = [
+        result for result in results
+        if result["row"]["role"] == "primary-mass-grid"
+        and result["row"]["source_beta"] == "-4pi/9"
+        and result["row"]["probe_beta"] == "-4pi/9"
+        and result["row"]["geometry"] == contract.TRAIN_CANONICAL.name
+        and result["row"]["deletion"] == NO_DELETION
+    ]
+    if (
+        len(matches) != 2
+        or {result["row"]["route"] for result in matches}
+        != {ROUTE_A, ROUTE_B}
+    ):
+        raise RuntimeError("intact middle-mass deletion baselines missing or duplicated")
+    return {result["row"]["route"]: result for result in matches}
+
+
 def apply_deletion_audits(results: list[dict], staging: Path) -> None:
-    baselines = {}
-    for result in results:
-        identity = result["row"]
-        if (
-            identity["role"] == "primary-mass-grid"
-            and identity["source_beta"] == "-4pi/9"
-            and identity["probe_beta"] == "-4pi/9"
-            and identity["geometry"] == "train-canonical"
-        ):
-            baselines[identity["route"]] = result
-    if set(baselines) != {ROUTE_A, ROUTE_B}:
-        raise RuntimeError("intact middle-mass deletion baselines missing")
+    baselines = discover_deletion_baselines(results)
     for result in results:
         identity = result["row"]
         if identity["role"] != "selected-deletion":
@@ -2561,31 +2687,41 @@ def apply_deletion_audits(results: list[dict], staging: Path) -> None:
 def mirror_audits(results: list[dict]) -> dict:
     audits = {}
     for route in (ROUTE_A, ROUTE_B):
-        canonical = next(
+        canonical_matches = [
             result for result in results
             if result["row"]["route"] == route
             and result["row"]["role"] == "primary-mass-grid"
             and result["row"]["source_beta"] == "-4pi/9"
             and result["row"]["probe_beta"] == "-4pi/9"
-        )
-        mirrored = next(
+            and result["row"]["geometry"] == contract.TRAIN_CANONICAL.name
+            and result["row"]["deletion"] == NO_DELETION
+        ]
+        mirrored_matches = [
             result for result in results
             if result["row"]["route"] == route
             and result["row"]["role"] == "mirrored-direction-control"
-        )
+            and result["row"]["source_beta"] == "-4pi/9"
+            and result["row"]["probe_beta"] == "-4pi/9"
+            and result["row"]["geometry"] == contract.TRAIN_MIRRORED.name
+            and result["row"]["deletion"] == NO_DELETION
+        ]
+        if len(canonical_matches) != 1 or len(mirrored_matches) != 1:
+            raise RuntimeError("mirror audit rows missing or duplicated")
+        canonical = canonical_matches[0]
+        mirrored = mirrored_matches[0]
         if route == ROUTE_A:
-            carried = max(abs(a - b) for a, b in zip(
+            carried = float(max(abs(a - b) for a, b in zip(
                 canonical["route_A"]["front_trace_carried"],
                 mirrored["route_A"]["front_trace_carried"],
-            ))
-            lab_reversal = max(abs(a + b) for a, b in zip(
+            )))
+            lab_reversal = float(max(abs(a + b) for a, b in zip(
                 canonical["route_A"]["front_trace_lab"],
                 mirrored["route_A"]["front_trace_lab"],
-            ))
+            )))
             audits[route] = {
                 "carried_response_residual": carried,
                 "lab_axis_sign_reversal_residual": lab_reversal,
-                "pass": max(carried, lab_reversal) <= NUMERIC_GATE,
+                "pass": bool(max(carried, lab_reversal) <= NUMERIC_GATE),
             }
         else:
             left = [decode_complex(value) for value in canonical["route_B"]["primary_response_phasors"]]
@@ -2593,9 +2729,84 @@ def mirror_audits(results: list[dict]) -> dict:
             residual = max(abs(np.conj(a) - b) for a, b in zip(left, right))
             audits[route] = {
                 "response_phasor_conjugacy_residual": float(residual),
-                "pass": residual <= NUMERIC_GATE,
+                "pass": bool(residual <= NUMERIC_GATE),
             }
     return audits
+
+
+def outcome_free_postprocess_host_fixture() -> dict:
+    manifest = build_ab_train_manifest()
+    identities = tuple(
+        row_identity(index, row) for index, row in enumerate(manifest)
+    )
+    identity_validation = postprocess_identity_validation(
+        identities, identities
+    )
+    identity_only_results = [{"row": identity} for identity in identities]
+    baselines = discover_deletion_baselines(identity_only_results)
+    mirror_rows = []
+    for route in (ROUTE_A, ROUTE_B):
+        for role in ("primary-mass-grid", "mirrored-direction-control"):
+            matches = [
+                identity for identity in identities
+                if identity["route"] == route
+                and identity["role"] == role
+                and identity["source_beta"] == "-4pi/9"
+                and identity["probe_beta"] == "-4pi/9"
+            ]
+            if len(matches) != 1:
+                raise RuntimeError("outcome-free mirror fixture identity drift")
+            identity = matches[0]
+            if route == ROUTE_A:
+                route_payload = {
+                    "front_trace_carried": [0.25, -0.5],
+                    "front_trace_lab": (
+                        [0.25, -0.5]
+                        if role == "primary-mass-grid" else [-0.25, 0.5]
+                    ),
+                }
+                mirror_rows.append({"row": identity, "route_A": route_payload})
+            else:
+                route_payload = {
+                    "primary_response_phasors": (
+                        [[0.6, 0.8], [-0.8, 0.6]]
+                        if role == "primary-mass-grid"
+                        else [[0.6, -0.8], [-0.8, -0.6]]
+                    ),
+                }
+                mirror_rows.append({"row": identity, "route_B": route_payload})
+    mirror = mirror_audits(mirror_rows)
+    encoded = json_bytes(mirror)
+    json_native = bool(
+        json.loads(encoded.decode("utf-8")) == mirror
+        and all(type(mirror[route]["pass"]) is bool for route in mirror)
+        and all(
+            type(value) in (bool, float, int, str)
+            for route in mirror.values() for value in route.values()
+        )
+    )
+    full_names = {
+        identity["geometry"] for identity in identities
+    } == {contract.TRAIN_CANONICAL.name, contract.TRAIN_MIRRORED.name}
+    return {
+        "amplitudes_evolved": 0,
+        "actual_row_identity_geometry_names": sorted({
+            identity["geometry"] for identity in identities
+        }),
+        "deletion_baseline_routes": sorted(baselines),
+        "identity_validation_pass": bool(identity_validation["pass"]),
+        "mirror_pass_types_are_builtin_bool": all(
+            type(mirror[route]["pass"]) is bool for route in mirror
+        ),
+        "mirror_payload_json_native": json_native,
+        "pass": bool(
+            identity_validation["pass"]
+            and full_names
+            and set(baselines) == {ROUTE_A, ROUTE_B}
+            and all(mirror[route]["pass"] for route in mirror)
+            and json_native
+        ),
+    }
 
 
 def response_gate_audits(results: list[dict]) -> dict:
@@ -2621,6 +2832,26 @@ def response_gate_audits(results: list[dict]) -> dict:
         result for result in results
         if result["row"]["role"] == "selected-deletion"
     ]
+    if (
+        len(primary) != 20
+        or sum(result["row"]["route"] == ROUTE_A for result in primary) != 10
+        or sum(result["row"]["route"] == ROUTE_B for result in primary) != 10
+        or len(deletions) != 14
+        or any(
+            sum(result["row"]["route"] == route for result in deletions) != 7
+            for route in (ROUTE_A, ROUTE_B)
+        )
+        or sum(
+            result["row"]["deletion"] == "mediator-stream"
+            for result in deletions
+        ) != 2
+        or sum(
+            result["row"]["deletion"]
+            in ("source-mass-factor", "probe-mass-factor")
+            for result in deletions
+        ) != 4
+    ):
+        raise RuntimeError("response-gate identity cardinality is not exact")
     structural_valid = all(
         result["deletion_audit"].get("valid", False) for result in deletions
     )
@@ -2661,15 +2892,31 @@ def response_gate_audits(results: list[dict]) -> dict:
     }
 
 
+def exact_primary_grid(results: list[dict], route: str) -> dict:
+    primary_rows = [
+        result for result in results
+        if result["row"]["route"] == route
+        and result["row"]["role"] == "primary-mass-grid"
+        and result["row"]["geometry"] == contract.TRAIN_CANONICAL.name
+        and result["row"]["deletion"] == NO_DELETION
+    ]
+    keys = [
+        (result["row"]["source_beta"], result["row"]["probe_beta"])
+        for result in primary_rows
+    ]
+    expected = {
+        (source_beta, probe_beta)
+        for source_beta in BETA_VALUES for probe_beta in BETA_VALUES
+    }
+    if len(primary_rows) != 9 or len(set(keys)) != 9 or set(keys) != expected:
+        raise RuntimeError("primary scaling grid missing, duplicated, or noncanonical")
+    return {key: result for key, result in zip(keys, primary_rows)}
+
+
 def swap_scaling_audits(results: list[dict]) -> list[dict]:
     output = []
     for route in (ROUTE_A, ROUTE_B):
-        primary = {
-            (result["row"]["source_beta"], result["row"]["probe_beta"]): result
-            for result in results
-            if result["row"]["route"] == route
-            and result["row"]["role"] == "primary-mass-grid"
-        }
+        primary = exact_primary_grid(results, route)
         for (source_name, probe_name), result in sorted(primary.items()):
             response = result[
                 "route_A" if route == ROUTE_A else "route_B"
@@ -2745,15 +2992,8 @@ def source_law_scaling_summary(
     route_summaries = {}
     source_tables = {}
     for route in (ROUTE_A, ROUTE_B):
-        primary = [
-            result for result in results
-            if result["row"]["route"] == route
-            and result["row"]["role"] == "primary-mass-grid"
-        ]
-        primary_by_key = {
-            (result["row"]["source_beta"], result["row"]["probe_beta"]): result
-            for result in primary
-        }
+        primary_by_key = exact_primary_grid(results, route)
+        primary = list(primary_by_key.values())
         source_table = {
             key: float(result["source_ledger"]["active_mediator_weight_update1"])
             for key, result in primary_by_key.items()
@@ -2919,6 +3159,8 @@ def source_law_scaling_dry_fixture() -> dict:
                         "route": route, "role": "primary-mass-grid",
                         "source_beta": source_name,
                         "probe_beta": probe_name,
+                        "geometry": contract.TRAIN_CANONICAL.name,
+                        "deletion": NO_DELETION,
                     },
                     "source_ledger": {
                         "active_mediator_weight_update1": float(source_mass**2)
@@ -3059,6 +3301,17 @@ def science_train() -> None:
     results, ledger = run_rows_in_fresh_processes(
         manifest, staging, dependency_bundle, mask_library
     )
+    expected_identities = tuple(
+        row_identity(index, row) for index, row in enumerate(manifest)
+    )
+    identity_validation = postprocess_identity_validation(
+        tuple(result["row"] for result in results), expected_identities
+    )
+    if not identity_validation["pass"]:
+        raise RuntimeError(
+            "runtime postprocess identity validation failed: "
+            + json_bytes(identity_validation).decode("utf-8")
+        )
     apply_deletion_audits(results, staging)
     mirror = mirror_audits(results)
     response_gates = response_gate_audits(results)
@@ -3802,6 +4055,10 @@ def contract_checks() -> tuple[dict[str, bool], dict]:
     resource_payload = parse_qualified_resource()
     manifest_digest = object_digest(rows)
     identities = tuple(row_identity(index, row) for index, row in enumerate(rows))
+    postprocess_identities = postprocess_identity_validation(
+        identities, identities
+    )
+    postprocess_host_fixture = outcome_free_postprocess_host_fixture()
     exemplar = science_output_exemplar(rows)
     mask_contract = factored_mask_dry_contract()
     one_particle_fixture = safe_train_one_particle_fixture()
@@ -3830,34 +4087,61 @@ def contract_checks() -> tuple[dict[str, bool], dict]:
         "cli_exact": CLI_MODES == ("dry-contract", "science-train"),
         "authorization_dry_clean_only": authorization_allowed("dry-contract", {}),
         "authorization_dry_rejects_train_even_empty": not authorization_allowed("dry-contract", {TRAIN_AUTHORIZATION_ENV: ""}),
+        "authorization_dry_rejects_replay_even_empty": not authorization_allowed("dry-contract", {REPLAY_AUTHORIZATION_ENV: ""}),
         "authorization_dry_rejects_scout_even_empty": not authorization_allowed("dry-contract", {SCOUT_AUTHORIZATION_ENV: ""}),
         "authorization_dry_rejects_held_even_empty": not authorization_allowed("dry-contract", {HELD_AUTHORIZATION_ENV: ""}),
         "authorization_dry_rejects_integrity_even_empty": not authorization_allowed("dry-contract", {SCIENCE_INTEGRITY_ENV: ""}),
         "authorization_train_exact_distinct": authorization_allowed("science-train", {
             TRAIN_AUTHORIZATION_ENV: TRAIN_AUTHORIZATION_TOKEN,
+            REPLAY_AUTHORIZATION_ENV: REPLAY_AUTHORIZATION_TOKEN,
             SCIENCE_INTEGRITY_ENV: file_sha(Path(__file__)),
         }),
-        "authorization_train_missing_integrity_rejected": not authorization_allowed("science-train", {TRAIN_AUTHORIZATION_ENV: TRAIN_AUTHORIZATION_TOKEN}),
+        "authorization_train_missing_replay_rejected": not authorization_allowed("science-train", {
+            TRAIN_AUTHORIZATION_ENV: TRAIN_AUTHORIZATION_TOKEN,
+            SCIENCE_INTEGRITY_ENV: file_sha(Path(__file__)),
+        }),
+        "authorization_replay_missing_train_rejected": not authorization_allowed("science-train", {
+            REPLAY_AUTHORIZATION_ENV: REPLAY_AUTHORIZATION_TOKEN,
+            SCIENCE_INTEGRITY_ENV: file_sha(Path(__file__)),
+        }),
+        "authorization_train_wrong_replay_rejected": not authorization_allowed("science-train", {
+            TRAIN_AUTHORIZATION_ENV: TRAIN_AUTHORIZATION_TOKEN,
+            REPLAY_AUTHORIZATION_ENV: "wrong",
+            SCIENCE_INTEGRITY_ENV: file_sha(Path(__file__)),
+        }),
+        "authorization_train_missing_integrity_rejected": not authorization_allowed("science-train", {
+            TRAIN_AUTHORIZATION_ENV: TRAIN_AUTHORIZATION_TOKEN,
+            REPLAY_AUTHORIZATION_ENV: REPLAY_AUTHORIZATION_TOKEN,
+        }),
         "authorization_train_wrong_integrity_rejected": not authorization_allowed("science-train", {
             TRAIN_AUTHORIZATION_ENV: TRAIN_AUTHORIZATION_TOKEN,
+            REPLAY_AUTHORIZATION_ENV: REPLAY_AUTHORIZATION_TOKEN,
             SCIENCE_INTEGRITY_ENV: "wrong",
         }),
         "authorization_train_wrong_rejected": not authorization_allowed("science-train", {
             TRAIN_AUTHORIZATION_ENV: "wrong",
+            REPLAY_AUTHORIZATION_ENV: REPLAY_AUTHORIZATION_TOKEN,
             SCIENCE_INTEGRITY_ENV: file_sha(Path(__file__)),
         }),
         "authorization_train_plus_scout_rejected": not authorization_allowed("science-train", {
             TRAIN_AUTHORIZATION_ENV: TRAIN_AUTHORIZATION_TOKEN,
+            REPLAY_AUTHORIZATION_ENV: REPLAY_AUTHORIZATION_TOKEN,
             SCIENCE_INTEGRITY_ENV: file_sha(Path(__file__)),
             SCOUT_AUTHORIZATION_ENV: "",
         }),
         "authorization_train_plus_held_rejected": not authorization_allowed("science-train", {
             TRAIN_AUTHORIZATION_ENV: TRAIN_AUTHORIZATION_TOKEN,
+            REPLAY_AUTHORIZATION_ENV: REPLAY_AUTHORIZATION_TOKEN,
             SCIENCE_INTEGRITY_ENV: file_sha(Path(__file__)),
             HELD_AUTHORIZATION_ENV: "",
         }),
         "ordered_tuple_exactly_34": len(ORDERED_AB_TRAIN_KEYS) == len(rows) == 34,
         "ordered_rows_unique": unique,
+        "postprocess_identities_exact_nonvacuous": postprocess_identities["pass"],
+        "outcome_free_postprocess_host_fixture": (
+            postprocess_host_fixture["pass"]
+            and postprocess_host_fixture["amplitudes_evolved"] == 0
+        ),
         "ab_manifest_hash": manifest_digest == AB_TRAIN_MANIFEST_SHA256,
         "routes_17_each": len(route_a) == len(route_b) == 17,
         "roles_exact": sum(row["role"] == "primary-mass-grid" for row in rows) == 18 and sum(row["role"] == "mirrored-direction-control" for row in rows) == 2 and sum(row["role"] == "selected-deletion" for row in rows) == 14,
@@ -3905,6 +4189,8 @@ def contract_checks() -> tuple[dict[str, bool], dict]:
     details = {
         "ab_train_manifest_sha256": manifest_digest,
         "ordered_rows": identities,
+        "postprocess_identity_validation": postprocess_identities,
+        "outcome_free_postprocess_host_fixture": postprocess_host_fixture,
         "counts": EXPECTED_COUNTS,
         "resource_binding": {
             "runner_sha256": RESOURCE_RUNNER_SHA256,

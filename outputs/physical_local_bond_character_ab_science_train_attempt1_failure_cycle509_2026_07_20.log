@@ -1,0 +1,33 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-science.BB0KQV/scripts/physical_local_bond_character_ab_science_train_cycle509_2026_07_20.py", line 3962, in <module>
+    main()
+    ~~~~^^
+  File "/private/tmp/toe-science.BB0KQV/scripts/physical_local_bond_character_ab_science_train_cycle509_2026_07_20.py", line 3958, in main
+    science_train()
+    ~~~~~~~~~~~~~^^
+  File "/private/tmp/toe-science.BB0KQV/scripts/physical_local_bond_character_ab_science_train_cycle509_2026_07_20.py", line 3062, in science_train
+    apply_deletion_audits(results, staging)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-science.BB0KQV/scripts/physical_local_bond_character_ab_science_train_cycle509_2026_07_20.py", line 2455, in apply_deletion_audits
+    raise RuntimeError("intact middle-mass deletion baselines missing")
+RuntimeError: intact middle-mass deletion baselines missing
+real 2543.97
+user 2227.10
+sys 209.15
+          1875066880  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+            94049594  page reclaims
+                7550  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+               47427  voluntary context switches
+             3453677  involuntary context switches
+         21775102043  instructions retired
+          7933505306  cycles elapsed
+           260063880  peak memory footprint

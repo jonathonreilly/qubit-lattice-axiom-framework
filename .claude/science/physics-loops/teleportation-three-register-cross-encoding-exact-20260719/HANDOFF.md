@@ -18,8 +18,10 @@ preserves all four negative-control families.
 
 The result is finite ideal logical algebra only. It supplies no apparatus,
 preparation, transport, noise, durable-record, matter-transfer, or physical
-teleportation claim. No audit verdict was authored or applied, and
-independent review/audit remain required.
+teleportation claim. No audit verdict was authored or applied. Independent
+review tightened the Bell-projector justification and physical-claim boundary,
+then returned a clean bounded-claim disposition; independent audit remains
+required.
 
-Next exact action: run independent review on PR #5539, then route the changed
-claim through the repository's independent audit process after landing.
+Next exact action: land the reviewed PR, then route the changed claim through
+the repository's independent audit process.

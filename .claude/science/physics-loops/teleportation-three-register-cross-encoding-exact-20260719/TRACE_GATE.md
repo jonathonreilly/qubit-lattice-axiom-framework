@@ -7,7 +7,7 @@ target_blocker_text: "Residual risk is limited to the finite sampling boundary: 
 source_of_blocker_text: audit_ledger
 reachability_to_target: closes
 artifact_role: runner_certificate
-next_trace_action: "Submit the source repair for review, then leave any audit verdict and effective-status transition to an independent audit lane."
+next_trace_action: "Land the reviewed source repair, then leave any audit verdict and effective-status transition to an independent audit lane."
 ```
 
 The exact proof factors through 131 local encoding certificates and one

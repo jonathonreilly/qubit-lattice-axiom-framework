@@ -1,0 +1,537 @@
+{
+  "schema": "cycle512-route-c-q6-factorized-resource-scout-receipt-v1",
+  "status": "update2-unpruned-packed-numerical-rank9-qualified-depth5-open",
+  "pass": true,
+  "authority": "none",
+  "audit": "unset",
+  "source": {
+    "runner_path": "scripts/physical_route_c_q6_factorized_resource_scout_cycle512_2026_07_20.py",
+    "runner_sha256": "d90525f7c25c92762851ac07b9ea58c28123c378fd0fdea6ce3ab565108834fe",
+    "raw_transcript_path": "outputs/physical_route_c_q6_factorized_resource_scout_cycle512_2026_07_20.log",
+    "raw_transcript_sha256": "203a24590329119b44ce13f2c3c39581f011457cd4db217e62c3f985ea840f67",
+    "raw_transcript_exit_code": 0,
+    "raw_transcript_numeric_string_caveat": "84 NumPy count leaves were serialized as strings by default=str; this typed receipt normalizes only the selected count fields and preserves the raw bytes unchanged",
+    "upstream_evidence": {
+      "Cycle511_receipt_sha256": "a205f8ddd3e3a17c8f8816d9298beb78edb38ff3634a3cea265554ecca77bb36",
+      "Cycle511_runner_sha256": "d80285b0338072dbf3053177c9685c669ed26aa2e7c9fd055b58ecaea963e5b0",
+      "RouteC8_sha256": "bb3ea5f4f6d951ea55071daab10b0417c99bbf8da95497165ecb5c6fd8ba59ef",
+      "contract_hashes": {
+        "authorization": "b351db1be8de62acdbfacca9cbfa89424705d230f564d5c4bc6cb6358be3d83e",
+        "boundary": "5436bd18ae02e5fc88a508967094dc95a60e102738048a3730c1ce45867afc26",
+        "deletion": "00555251b807eb0b8040717f9a77c1c7af485b64317ace2973c299c7fb94520b",
+        "free": "19f170f573833451e8025b70cc0ca8a01bdd75f3f6cbb9bc900900c2eb18f4af",
+        "observable": "c1e36d84110591c225c3c6062ddd8e0dfa7c261bdc4647061225da8b18d30102",
+        "occupation_species": "7103fe496547e8c25117347aea7ab5cc0c20e3e5195a81c7571feb20609b6ecf",
+        "packet": "c77a770aeae53aa84bfd48a1692ea8f1599ca22f1d3121f6a5aac06cb5e4145c",
+        "preservation": "ba9ae4779f05b0f79fd24f3149f2655957ec662ca61ad19e3e475d2cd94c4597",
+        "update": "1f2aff2a0021afa3fd3584d3e460114945d46e59af23e4618f7b7195793ef545"
+      },
+      "intact_row_sha256": "076f0afe77d36d86d4c3429079be2352005c483776621e2ebb421f1f1a879045"
+    }
+  },
+  "scope": {
+    "authorization": {
+      "current_runner_sha256": "d90525f7c25c92762851ac07b9ea58c28123c378fd0fdea6ce3ab565108834fe",
+      "exact_frozen_Cycle511_scout_token_match": true,
+      "frozen_Cycle511_scout_contract_matches": true,
+      "held_rows": 0,
+      "implementation_scope": "one hash-bound Cycle512 Q6 update2/numerical-rank9 technical prefix invocation",
+      "mode": "resource-scout",
+      "new_execution_scope_or_token_introduced": false,
+      "present_authorization_variables": [
+        "CYCLE511_ROUTE_C_SCOUT_AUTHORIZATION"
+      ],
+      "refit": false,
+      "response_quarantined": true,
+      "runner_integrity_sha256_match": true,
+      "runner_integrity_variable_present": true,
+      "science_rows": 0,
+      "scope": "RouteC8 index0 intact L15 middle-beta resource sentinel only",
+      "selector": false
+    },
+    "Cycle511_full_sentinel_complete": false,
+    "frozen_target_depth": 5,
+    "completed_unpruned_numerical_updates": 2
+  },
+  "resource": {
+    "elapsed_seconds": 366.12564245797694,
+    "maximum_RSS_bytes": 623607808,
+    "process_swap_count": 0,
+    "wall": null,
+    "limits": {
+      "RSS_bytes": 3000000000,
+      "preallocation_abort_bytes": 2700000000,
+      "swap_count": 0,
+      "wall_seconds": 1200.0
+    },
+    "evidence_origin": "embedded process monotonic-time and getrusage metrics; raw process exit code is externally bound by the wrapper; no separate external wall-clock corroboration"
+  },
+  "execution": {
+    "classifier_emitted": false,
+    "held_rows_executed": 0,
+    "occupation_or_bond_fields_emitted": 0,
+    "refit": false,
+    "resource_invocations": 1,
+    "resource_scout_executed": true,
+    "response_rows_executed": 0,
+    "response_values_emitted": 0,
+    "science_rows_executed": 0,
+    "selector": false,
+    "state_hashes_emitted": 0
+  },
+  "preservation": {
+    "pass": true,
+    "one_particle_mass_maximum_residual": 4.440892098500626E-16,
+    "coin_all24_covariance_maximum": 0.0,
+    "collision_all24_covariance_residual": 0.0,
+    "emitter_all24_covariance_residual": 0.0,
+    "stream_all24_covariance_failures": 0,
+    "global_CAR_spectator_fixture_pass": true,
+    "exhaustive_local_collision_component_maximum_N_le_2_Q_le_6": 4,
+    "execution_touched_local_collision_component_maximum": 2
+  },
+  "exact_support": {
+    "pass": true,
+    "coefficient_field": "Q(zeta_9), reduced by Phi_9=x^6+x^3+1",
+    "contact_tag": "formal z=exp(i*37/100), polynomial degree at most two",
+    "supplied_contact_decimal_interpretation": "0.37 is treated as exact 37/100",
+    "analytic_support_theorem_import": "Lindemann-Weierstrass: exp(i*37/100) is transcendental over the algebraic field Q(zeta_9), so a nonzero formal contact polynomial cannot vanish at the declared contact phase",
+    "rows": [
+      {
+        "analytic_collision_opportunity_counts": {
+          "0": 1990,
+          "1": 178,
+          "2": 1
+        },
+        "analytic_collision_sectors_k0_k1_k2": [
+          1537542,
+          43578,
+          81
+        ],
+        "analytic_nonzero_support_through_update2": [
+          9,
+          81,
+          2169
+        ],
+        "analytic_packed_support_update2": 1625022,
+        "analytic_pre_collision_product_support": 1581201,
+        "analytic_zero_stored_keys_through_update2": [
+          0,
+          72,
+          2742
+        ],
+        "axis": 0,
+        "outgoing_only_active_mode_incidents": 0,
+        "raw_coin_contributions_updates1_2": [
+          306,
+          5502
+        ],
+        "stored_canonical_keys_through_update2": [
+          9,
+          153,
+          4911
+        ]
+      },
+      {
+        "analytic_collision_opportunity_counts": {
+          "0": 1990,
+          "1": 178,
+          "2": 1
+        },
+        "analytic_collision_sectors_k0_k1_k2": [
+          1537542,
+          43578,
+          81
+        ],
+        "analytic_nonzero_support_through_update2": [
+          9,
+          81,
+          2169
+        ],
+        "analytic_packed_support_update2": 1625022,
+        "analytic_pre_collision_product_support": 1581201,
+        "analytic_zero_stored_keys_through_update2": [
+          0,
+          72,
+          2742
+        ],
+        "axis": 1,
+        "outgoing_only_active_mode_incidents": 0,
+        "raw_coin_contributions_updates1_2": [
+          306,
+          5502
+        ],
+        "stored_canonical_keys_through_update2": [
+          9,
+          153,
+          4911
+        ]
+      },
+      {
+        "analytic_collision_opportunity_counts": {
+          "0": 1990,
+          "1": 178,
+          "2": 1
+        },
+        "analytic_collision_sectors_k0_k1_k2": [
+          1537542,
+          43578,
+          81
+        ],
+        "analytic_nonzero_support_through_update2": [
+          9,
+          81,
+          2169
+        ],
+        "analytic_packed_support_update2": 1625022,
+        "analytic_pre_collision_product_support": 1581201,
+        "analytic_zero_stored_keys_through_update2": [
+          0,
+          72,
+          2742
+        ],
+        "axis": 2,
+        "outgoing_only_active_mode_incidents": 0,
+        "raw_coin_contributions_updates1_2": [
+          306,
+          5502
+        ],
+        "stored_canonical_keys_through_update2": [
+          9,
+          153,
+          4911
+        ]
+      }
+    ],
+    "collision_nonzero_condition": {
+      "scope": "analytic post-collision support count is conditional on the supplied diagonal and exchange coefficients being nonzero",
+      "observed_diagonal_coefficient": 0.9987329089332052,
+      "observed_exchange_magnitude": 0.05032471176090357,
+      "interval_certificate_present": false
+    }
+  },
+  "all_axis_Schmidt": {
+    "ceiling": 1E-12,
+    "component_count": 3,
+    "depth5_feasibility_established": false,
+    "maximum_spectrum_residual": 6.772360450213455E-15,
+    "numerical_rank9_is_update2_prefix_only": true,
+    "numerical_rank_at_declared_cutoff_each": [
+      9,
+      9,
+      9
+    ],
+    "pass": true
+  },
+  "component_results": [
+    {
+      "axis": 0,
+      "support_oracles_pass": true,
+      "materialization": {
+        "active_inputs": 46575,
+        "actual_local_lookup_calls": 7121601,
+        "branch_histogram": {
+          "1": 3533544,
+          "2": 46494,
+          "4": 81
+        },
+        "cartesian_inputs": 3580119,
+        "diagonal_contributions": 3580119,
+        "generated_contributions": 3626856,
+        "lawful_target_failures": 0,
+        "maximum_branches": 4,
+        "nonfinite_amplitude_failures": 0,
+        "off_diagonal_contributions": 46737,
+        "pack_roundtrip_failures": 0,
+        "packed_key_collisions": 0,
+        "source_occupied_cell_gate_stages": 7098273,
+        "unique_packed_keys": 3626856
+      },
+      "packed_support": {
+        "stored_canonical_keys": 3626856,
+        "machine_nonzero_values": 1890378,
+        "machine_exact_zero_values": 1736478,
+        "analytic_nonzero_support": 1625022,
+        "values_at_or_below_diagnostic_ceiling": 2001834,
+        "squared_norm_at_or_below_diagnostic_ceiling": 1.2969934469235717E-33,
+        "nonfinite_value_count": 0,
+        "state_was_pruned": false
+      },
+      "factor_Schmidt": {
+        "pass": true,
+        "factor_count": 9,
+        "factor_matrix_shapes": {
+          "X": [
+            5104,
+            9
+          ],
+          "Y": [
+            1296,
+            9
+          ],
+          "core": [
+            9,
+            9
+          ]
+        },
+        "numerical_rank_at_declared_cutoff": 9,
+        "relative_rank_cutoff": 1E-12,
+        "ninth_to_first_ratio": 5.559981615112777E-11,
+        "singular_values": [
+          0.9999998521288024,
+          0.00038442150149889387,
+          0.0003844215014988934,
+          0.000009626644323834725,
+          0.000009482424447545573,
+          8.866793920895842E-8,
+          2.2204135574204893E-9,
+          2.2204135574203135E-9,
+          5.5599807929516366E-11
+        ],
+        "numerical_truncation_used": false,
+        "discarded_norm": 0.0,
+        "factor_norm_residual": 1.4210854715202004E-14,
+        "QR_orthogonality_residual": 9.774173288023743E-14,
+        "core_SVD_reconstruction_residual": 1.8658825423700425E-16,
+        "stream_Gram_residual": 1.1102569059430467E-16,
+        "factor_vs_packed": {
+          "L2_residual": 4.154678936338152E-20,
+          "L2_to_ninth_singular_value_ratio": 7.47246994379013E-10,
+          "ceiling": 1E-12,
+          "magnitude_pruning_used": false,
+          "outside_factor_basis_machine_nonzero_values": 0,
+          "outside_factor_basis_stored_keys": 0,
+          "pass": true,
+          "resolves_ninth_component": true,
+          "scratch_complex128_bytes": 105836544
+        }
+      },
+      "joint_norm_residual": 2.9618529850949926E-12,
+      "matched_free": {
+        "axis": 0,
+        "inverse_state_residual": 1.5625586940730333E-15,
+        "maximum_norm_residual": 8.43769498715119E-15,
+        "mediator_basis_configurations": 1,
+        "repeat_state_residual": 0.0,
+        "response_computed": false,
+        "stored_canonical_keys_by_update": [
+          9,
+          153,
+          4911
+        ]
+      }
+    },
+    {
+      "axis": 1,
+      "support_oracles_pass": true,
+      "materialization": {
+        "active_inputs": 46575,
+        "actual_local_lookup_calls": 7121601,
+        "branch_histogram": {
+          "1": 3533544,
+          "2": 46494,
+          "4": 81
+        },
+        "cartesian_inputs": 3580119,
+        "diagonal_contributions": 3580119,
+        "generated_contributions": 3626856,
+        "lawful_target_failures": 0,
+        "maximum_branches": 4,
+        "nonfinite_amplitude_failures": 0,
+        "off_diagonal_contributions": 46737,
+        "pack_roundtrip_failures": 0,
+        "packed_key_collisions": 0,
+        "source_occupied_cell_gate_stages": 7098273,
+        "unique_packed_keys": 3626856
+      },
+      "packed_support": {
+        "stored_canonical_keys": 3626856,
+        "machine_nonzero_values": 1890378,
+        "machine_exact_zero_values": 1736478,
+        "analytic_nonzero_support": 1625022,
+        "values_at_or_below_diagnostic_ceiling": 2001834,
+        "squared_norm_at_or_below_diagnostic_ceiling": 1.2969934469235725E-33,
+        "nonfinite_value_count": 0,
+        "state_was_pruned": false
+      },
+      "factor_Schmidt": {
+        "pass": true,
+        "factor_count": 9,
+        "factor_matrix_shapes": {
+          "X": [
+            5104,
+            9
+          ],
+          "Y": [
+            1296,
+            9
+          ],
+          "core": [
+            9,
+            9
+          ]
+        },
+        "numerical_rank_at_declared_cutoff": 9,
+        "relative_rank_cutoff": 1E-12,
+        "ninth_to_first_ratio": 5.559981615112704E-11,
+        "singular_values": [
+          0.9999998521287972,
+          0.0003844215014988934,
+          0.0003844215014988932,
+          0.000009626644323834801,
+          0.00000948242444754565,
+          8.866793920895842E-8,
+          2.2204135574204082E-9,
+          2.2204135574204057E-9,
+          5.5599807929515345E-11
+        ],
+        "numerical_truncation_used": false,
+        "discarded_norm": 0.0,
+        "factor_norm_residual": 6.217248937900877E-15,
+        "QR_orthogonality_residual": 4.702232663302574E-14,
+        "core_SVD_reconstruction_residual": 1.8658735993234524E-16,
+        "stream_Gram_residual": 1.1102569059430467E-16,
+        "factor_vs_packed": {
+          "L2_residual": 4.41011352369794E-20,
+          "L2_to_ninth_singular_value_ratio": 7.931886256313515E-10,
+          "ceiling": 1E-12,
+          "magnitude_pruning_used": false,
+          "outside_factor_basis_machine_nonzero_values": 0,
+          "outside_factor_basis_stored_keys": 0,
+          "pass": true,
+          "resolves_ninth_component": true,
+          "scratch_complex128_bytes": 105836544
+        }
+      },
+      "joint_norm_residual": 2.9622970743048427E-12,
+      "matched_free": {
+        "axis": 1,
+        "inverse_state_residual": 1.4509101770428126E-15,
+        "maximum_norm_residual": 8.659739592076221E-15,
+        "mediator_basis_configurations": 1,
+        "repeat_state_residual": 0.0,
+        "response_computed": false,
+        "stored_canonical_keys_by_update": [
+          9,
+          153,
+          4911
+        ]
+      }
+    },
+    {
+      "axis": 2,
+      "support_oracles_pass": true,
+      "materialization": {
+        "active_inputs": 46575,
+        "actual_local_lookup_calls": 7121601,
+        "branch_histogram": {
+          "1": 3533544,
+          "2": 46494,
+          "4": 81
+        },
+        "cartesian_inputs": 3580119,
+        "diagonal_contributions": 3580119,
+        "generated_contributions": 3626856,
+        "lawful_target_failures": 0,
+        "maximum_branches": 4,
+        "nonfinite_amplitude_failures": 0,
+        "off_diagonal_contributions": 46737,
+        "pack_roundtrip_failures": 0,
+        "packed_key_collisions": 0,
+        "source_occupied_cell_gate_stages": 7098273,
+        "unique_packed_keys": 3626856
+      },
+      "packed_support": {
+        "stored_canonical_keys": 3626856,
+        "machine_nonzero_values": 1890378,
+        "machine_exact_zero_values": 1736478,
+        "analytic_nonzero_support": 1625022,
+        "values_at_or_below_diagnostic_ceiling": 2001834,
+        "squared_norm_at_or_below_diagnostic_ceiling": 1.2969934469235727E-33,
+        "nonfinite_value_count": 0,
+        "state_was_pruned": false
+      },
+      "factor_Schmidt": {
+        "pass": true,
+        "factor_count": 9,
+        "factor_matrix_shapes": {
+          "X": [
+            5104,
+            9
+          ],
+          "Y": [
+            1296,
+            9
+          ],
+          "core": [
+            9,
+            9
+          ]
+        },
+        "numerical_rank_at_declared_cutoff": 9,
+        "relative_rank_cutoff": 1E-12,
+        "ninth_to_first_ratio": 5.559981615112652E-11,
+        "singular_values": [
+          0.9999998521287956,
+          0.0003844215014988934,
+          0.00038442150149889333,
+          0.000009626644323834833,
+          0.000009482424447545684,
+          8.866793920895842E-8,
+          2.2204135574204086E-9,
+          2.2204135574204074E-9,
+          5.5599807929514744E-11
+        ],
+        "numerical_truncation_used": false,
+        "discarded_norm": 0.0,
+        "factor_norm_residual": 1.9984014443252818E-15,
+        "QR_orthogonality_residual": 2.2137412529404654E-14,
+        "core_SVD_reconstruction_residual": 1.8658785858616301E-16,
+        "stream_Gram_residual": 1.1102569059430467E-16,
+        "factor_vs_packed": {
+          "L2_residual": 4.6515383332589104E-20,
+          "L2_to_ninth_singular_value_ratio": 8.366105039707657E-10,
+          "ceiling": 1E-12,
+          "magnitude_pruning_used": false,
+          "outside_factor_basis_machine_nonzero_values": 0,
+          "outside_factor_basis_stored_keys": 0,
+          "pass": true,
+          "resolves_ninth_component": true,
+          "scratch_complex128_bytes": 105836544
+        }
+      },
+      "joint_norm_residual": 2.9622970743048427E-12,
+      "matched_free": {
+        "axis": 2,
+        "inverse_state_residual": 1.2502375999054872E-15,
+        "maximum_norm_residual": 9.547918011776346E-15,
+        "mediator_basis_configurations": 1,
+        "repeat_state_residual": 0.0,
+        "response_computed": false,
+        "stored_canonical_keys_by_update": [
+          9,
+          153,
+          4911
+        ]
+      }
+    }
+  ],
+  "residuals": {
+    "maximum_reported_technical_residual": 2.9622970743048427E-12
+  },
+  "no_go_disposition": {
+    "status": "partial-narrowing-resource-model-only",
+    "allowed_negative": "For one axial component, the declared counterfactual-no-collision update-3 full in-core flat Cartesian plan has 46,425 x 4,096 = 190,156,800 complex slots. Complex128 values alone require 3,042,508,800 bytes, exceeding the 3,000,000,000-byte RSS ceiling and 2,700,000,000-byte preallocation gate. Thus that specific full in-core flat materialization is ineligible under the declared resource contract. The 24,340,070,400-byte packed figure is a 128-byte-per-entry estimate, not measured RSS. This does not bound actual interacting update-3 support, exact factor, tensor-network, sparse, or out-of-core routes, or depth-5 feasibility, and creates no substrate or axiom pressure.",
+    "representation_independent_negative_passes": false,
+    "substrate_obstruction": false,
+    "axiom_pressure": false,
+    "open_routes": [
+      "factor-Schmidt continuation beyond update2",
+      "coherent branch DAG",
+      "charge-aware tensor network",
+      "Heisenberg or reduced-observable hybrid",
+      "exact reachable-configuration propagation",
+      "out-of-core or distributed exact propagation"
+    ]
+  }
+}

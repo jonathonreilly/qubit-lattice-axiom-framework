@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/microcausality_graph_metric_class_and_d3_discharge_2026_07_20.py
+runner_sha256: 716830567fb95c64467823c83bddb0b68e88737c35b0fb4972eab9d5316b0372
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.50
+status: ok
+----- stdout -----
+PASS: G1 torus l1 spheres on (Z/6)^3: 6, 18, 35 vs Z^3's 6, 18, 38 (equality below L/2; first deficit exactly at r = 3 = L/2)
+PASS: G2 torus l_inf spheres: (Z/6)^3 gives 26, 98, 91 (deficit at r = 3 = L/2); (Z/8)^3 gives 26, 98, 218 = 24r^2+2 below L/2
+PASS: G3 torus conversion d1 <= 3 d_inf (enumerated), coordinatewise |a|_L <= |a| (instances), and the periodic seam bond has torus diameter 1 (not L-1)
+PASS: G4 chain lemma on the 6-cycle (instance illustration, not the general lemma): reach <= sum of torus diameters for all mixed-size two-step chains from X = {0}
+PASS: G5 d = 3 radicand m^2 + sum sin^2 >= m^2 (symbolic, three terms), E_3 >= arcsinh(m) with a strict instance, and 0 < t <= e^{-2 arcsinh(m)} < 1
+PASS: G6 taste degeneracy sin^2(k + pi) = sin^2(k) (symbolic)
+PASS: G7 per-mode composition -log Gamma(e^{-2 a_tau E})/(2 a_tau) = dGamma(E) with the 2 a_tau factor independent of the E argument's dimension content (symbolic two-mode exemplar), and the mode count (L/2)^d 2^d = L^d (symbolic)
+PASS: G8 kernel constant: C_d^2 = m^2 + (d-1) + cosh^2(eta), d-monotone (C_3 > C_1 by the +2), instance C_3(1/4, 1/2) exact
+PASS: G9 feed re-gate: numerator 24x(1+x)+2x(1-x)^2 = 2x(13+10x+x^2) and the envelope evaluates to 585 (in C_3 units) at x = 1/2
+PASS: G10 threshold is per-chosen-eta: mu = eta/6 admissible and mu = eta/2 rejected at eta = arcsinh(m)/4; the false universal claim exhibited (arcsinh(m)/6 > eta/3 at this eta); r_3 > 0
+PASS: G11 alias law (exact toy, d = 1, L = 6, symbol cos 4k): the torus DFT kernel equals the alias sum sum_n h(z + nL) at every z, and the naive infinite-lattice restriction is WRONG at z = 2, 4 (the aliasing exhibit)
+PASS: G12 alias transfer: ||z + nL||_inf >= max(L||n||_inf - L/2, ||z||_inf,L) enumerated (d = 2, L = 6, ||n||_inf <= 2); shell sums by finite-N telescoping (geometric exact, j^2 remainder of degree >= N+1) with the note-carried limit; the rational identity 24 u(1+u)/(1-u)^3 + 2u/(1-u) = 2u(13+10u+u^2)/(1-u)^3; A_3(0) = 1
+PASS: G13 end-to-end d = 1 torus instance (m = 1/2, L = 6, eta = (3/4) arcsinh(1/2), eta' = eta/2): exact parity zeros h_L(1) = h_L(3) = h_L(5) = 0, and |h_L(z)| <= C_1 A_1 e^{-eta' d_L(z)} at every z (50-digit instance margins)
+PASS: N1 block07 audited step sentences (chain lemma, meeting bound, constants) — the steps the extension carries
+PASS: N2 dispersion note: E_d display, C_d bound, taste-corner degeneracy sentence, corner parameterization p_r = k + pi r, even periods, one-particle boundary, r_d remark
+PASS: N3 block10's two open-item sentences — the items answered here
+PASS: N4 RP-positivity intertwiner (the functor authority)
+PASS: N5 block08 feed authority (the Z^3 shell chain consumed)
+PASS: N6 axiom memo supplies no dynamics
+PASS: N7 self-pin needles (anti-drift for the target note; NOT independent evidence)
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

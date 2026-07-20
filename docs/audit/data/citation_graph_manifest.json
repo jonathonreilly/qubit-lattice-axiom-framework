@@ -1,6 +1,6 @@
 {
- "edge_count": 14955,
- "node_count": 4456,
+ "edge_count": 14961,
+ "node_count": 4457,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1595,8 +1595,8 @@
    "out_degree": 11
   },
   "canonical_harness_index": {
-   "deps_hash": "bb11da915060",
-   "out_degree": 316
+   "deps_hash": "26b7d16d8cb3",
+   "out_degree": 317
   },
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",
@@ -8901,6 +8901,10 @@
   "microcausality_many_body_nested_commutator_lightcone_bounded_theorem_note_2026-07-18": {
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
+  },
+  "microcausality_matrix_fiber_trace_norm_lemma_and_feed_bounded_theorem_note_2026-07-18": {
+   "deps_hash": "f68c3d7dfe0e",
+   "out_degree": 5
   },
   "microcausality_volume_uniform_sequence_count_coefficient_bounds_bounded_theorem_note_2026-07-18": {
    "deps_hash": "6848dd238023",

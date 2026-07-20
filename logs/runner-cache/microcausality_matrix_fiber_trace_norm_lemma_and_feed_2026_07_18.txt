@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/microcausality_matrix_fiber_trace_norm_lemma_and_feed_2026_07_18.py
+runner_sha256: 93d035d6bccca0303db3749865996610e8dced784e5153317ba108a138b939d5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.39
+status: ok
+----- stdout -----
+PASS: pair-trace-norm-identity eight matrices including complex and nonnormal cases
+PASS: three-fiber-degenerate-case explicit eigenvector attains trace norm 9/2
+PASS: fiber-mode-rotation-car real and complex unitary rotations preserve CAR
+PASS: disjoint-hop-joint-spectrum commuting spectra add and norm is 3
+PASS: onsite-subset-sum-bound strict diag(1,-1) and saturated diag(1,2)
+PASS: trace-to-operator-envelope S1<=n_f*op with identity attainment
+PASS: fiber-bilinear-evenness pair and onsite terms commute with parity
+PASS: activity-envelope-formulas direct 293nf, coarse 585nf, missing-factor rejected
+PASS: su2-fixed-fiber-values n_f=2 gives direct 586K and coarse 1170K
+PASS: finite-open-ambient-metrics shells and sharp l1<=3linf conversion
+PASS: zero-activity-branch identity evolution avoids the activity quotient
+PASS: uniform-corollary-monotonicity growth increases with activity and direct<=coarse
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

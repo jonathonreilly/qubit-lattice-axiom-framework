@@ -1,6 +1,6 @@
 {
- "edge_count": 14920,
- "node_count": 4445,
+ "edge_count": 14923,
+ "node_count": 4448,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2741,6 +2741,18 @@
   "d31_magnitude_exponent_translation_probe_2026-06-05": {
    "deps_hash": "b9f48e3c2767",
    "out_degree": 11
+  },
+  "d3_bar_location_design_scout_2026-07-10": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "d3_bar_window_bounded_note_2026-07-11": {
+   "deps_hash": "708d92b50338",
+   "out_degree": 2
+  },
+  "d3_bar_window_design_delta_2026-07-11": {
+   "deps_hash": "1ce8622e067d",
+   "out_degree": 1
   },
   "d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12": {
    "deps_hash": "c8eee4235fc9",

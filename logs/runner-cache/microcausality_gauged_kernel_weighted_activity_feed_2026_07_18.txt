@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/microcausality_gauged_kernel_weighted_activity_feed_2026_07_18.py
+runner_sha256: 7cf7eb50047dcea38b2fd14096c073881c14c0dc489d21843ccd44e18dd5cb3b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.26
+status: ok
+----- stdout -----
+PASS: scalar-car-pair-norm exact |k|=1/2, size-two envelope=1, even Hermitian
+PASS: linf-shell-count exact 24r^2+2 values 26,98,218
+PASS: ambient-metric-conversion l1<=3linf on open Z3 subsets with equality
+PASS: activity-factor-assembly pair-norm two times support-size two and closed shell sum
+PASS: activity-closed-values envelope=585 scalar=293 reject missing-factor=147
+PASS: decay-threshold mu<eta/3 gives q<1 while above threshold gives q>1
+PASS: finite-open-region-envelope truncated ambient shells lie below infinite envelope
+PASS: background-sign-uniformity eight sign backgrounds give envelope 11/2 and exact 13/4
+PASS: zero-activity-branch zero Hamiltonian gives identity evolution without dividing by kappa
+PASS: uniform-corollary-monotonicity growth increases with kappa and coarse support ratio
+PASS: gaussian-identity-shift scalar log-factor drops from every commutator
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

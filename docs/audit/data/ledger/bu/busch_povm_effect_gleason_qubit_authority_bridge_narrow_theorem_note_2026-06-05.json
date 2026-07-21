@@ -1,24 +1,79 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-21T16:40:14.817481+00:00",
+  "audit_invocation_history": [
+    "67febcc2f2d3487e941aea39a48385ca"
+  ],
+  "audit_invocation_id": "67febcc2f2d3487e941aea39a48385ca",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 0,
+      "counts": {
+        "A": 16,
+        "B": 1,
+        "C": 8,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true,
+      "runner_path": "scripts/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.py"
+    },
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {
+      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    },
+    "dep_claim_scope": {
+      "minimal_axioms": null
+    },
+    "dep_claim_type": {
+      "minimal_axioms": "meta"
+    },
+    "dep_effective_status": {
+      "minimal_axioms": "meta"
+    },
+    "deps": [
+      "minimal_axioms"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 13.012,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "c7fcaca394bf2438a6e64b84f8b26130d485232c1f5416ee74ceb76832e88656",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "829ff335ed0dd026003c6c6f1f99fcd86150de74b576c1e9e89b81cea1ed1449",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "829ff335ed0dd026003c6c6f1f99fcd86150de74b576c1e9e89b81cea1ed1449",
+    "runner_path": "scripts/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 729
+  },
+  "audit_status": "audited_failed",
+  "auditor": "codex-audit-batch-B-20260721-2cce180a",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "Step (C) asserts, but does not establish, that the effect functional has a well-defined additive real-linear extension independent of the chosen shift-and-scale representation. The runner defines every tested functional as m(E)=Tr(\u03c3_true E), so it cannot supply the missing universal extension argument.",
   "claim_id": "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05",
-  "claim_scope": null,
+  "claim_scope": "For the accepted one-qubit carrier M_2(C), whether the stated M1\u2013M3 hypotheses force a unique density-matrix representation m(E)=Tr(\u03c3E).",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint_after_invalidation",
+  "claim_type_last_reviewed": "2026-07-21T16:40:14.817481+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,19 +81,20 @@
     "minimal_axioms"
   ],
   "direct_in_degree": 7,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_failed",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "fresh_context",
+  "intrinsic_status": "audited_failed",
   "load_bearing_score": 13.012,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Every Hermitian H is a real combination of effects; (A) and (B) define a unique real-linear functional F on Herm(M_2) with F(E)=m(E) on effects.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "18f535e625cc7da0198c0d15cb80c551a6b4acdd2b11d41e5dd071bc188cdbb1",
   "note_path": "docs/BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -5309,14 +5365,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 40,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 40
   },
   "runner_path": "scripts/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.py",
   "title": "Busch / CFMR Effect-Valued (POVM) Gleason Theorem On The Qubit `M_2(C)` \u2014 Reproven-From-Primitives Authority Bridge Narrow Theorem Note",
   "transitive_descendants": 729,
-  "verdict_rationale": null
+  "verdict_rationale": "The claim quantifies over every effect functional satisfying M1\u2013M3. Partial additivity and real homogeneity are sketched, but the indispensable, weaker-than-target extension lemma in step (C)\u2014including independence of representation and additivity on arbitrary Hermitian differences\u2014is asserted without proof. All 40 runner checks begin with an already trace-form functional, so they verify reconstruction identities inside the claimed conclusion class rather than the universal implication."
 }

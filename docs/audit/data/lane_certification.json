@@ -405,7 +405,7 @@
         },
         {
           "claim_id": "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05",
-          "effective_status": "unaudited"
+          "effective_status": "audited_failed"
         },
         {
           "claim_id": "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20",
@@ -2827,6 +2827,6 @@
       "uncertified_count": 649
     }
   ],
-  "repo_head": "95f54df0b248cbccfba7e403ed1e6c79e198816e",
+  "repo_head": "125ab73901f9a02abb607d7991c9d80a957bb17d",
   "schema": "lane_certification_v2"
 }

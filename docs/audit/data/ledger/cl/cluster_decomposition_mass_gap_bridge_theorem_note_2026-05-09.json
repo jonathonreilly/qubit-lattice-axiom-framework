@@ -1,43 +1,92 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-21T17:23:01.493454+00:00",
+  "audit_invocation_history": [
+    "ee8770df2c874795b9e422756c1e2e97"
+  ],
+  "audit_invocation_id": "ee8770df2c874795b9e422756c1e2e97",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 16,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/cluster_decomposition_mass_gap_bridge_check.py"
+    },
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 12.16,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "c7fcaca394bf2438a6e64b84f8b26130d485232c1f5416ee74ceb76832e88656",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/cluster_decomposition_mass_gap_bridge_check.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "370ae4055c497df85870e36357f136e8c3e63b056efb40f9c73b50c9d15517a0",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "370ae4055c497df85870e36357f136e8c3e63b056efb40f9c73b50c9d15517a0",
+    "runner_path": "scripts/cluster_decomposition_mass_gap_bridge_check.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 808
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260721-ad025eff",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The spectral, Cauchy\u2013Schwarz, trace-distance, and finite-dimensional Boltzmann inequalities close for the stipulated abstract transfer matrix. The restricted packet supplies no one-hop authority establishing the imported canonical transfer matrix and Hamiltonian-logarithm structure.",
   "claim_id": "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
-  "claim_scope": null,
+  "claim_scope": "Finite-dimensional bounds for the formal transfer-insertion correlator \u27e8A T\u0303^n B\u27e9, including the q_\u03b2 correction, conditional on a positive Hermitian transfer matrix with a well-defined Hamiltonian logarithm and unique top eigenvalue; no derivation of the canonical transfer matrix, its gap, the physical local-correlator identification, spatial clustering, or infinite-volume/continuum clustering was audited.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-21T17:23:01.493454+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 5,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 12.16,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Cauchy\u2013Schwarz gives |\u03a3_{k\u22651}(\u03bb_k/M_T)^n\u27e80|A|k\u27e9\u27e8k|B|0\u27e9| \u2264 (\u03bb_1/M_T)^n\u2016A\u2016\u2016B\u2016 = exp(-n\u0394_T)\u2016A\u2016\u2016B\u2016.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "6efb8b670324283b221f5d7062b39231c326b4b248ae70db60c3189913ce870a",
   "note_path": "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md",
-  "notes_for_re_audit_if_any": null,
-  "open_dependency_paths": [],
+  "notes_for_re_audit_if_any": "missing_dependency_edge: wire the named reflection-positivity and spectrum-condition support notes as direct one-hop dependencies, require retained-grade status, and re-audit the transfer-matrix/logarithm bridge.",
+  "open_dependency_paths": [
+    "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md",
+    "docs/AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md"
+  ],
   "previous_audits": [
     {
       "archived_at": "2026-05-30T22:12:17.433707+00:00",
@@ -1666,14 +1715,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 5,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 5
   },
   "runner_path": "scripts/cluster_decomposition_mass_gap_bridge_check.py",
   "title": "Mass-Gap Bridge for Cluster Decomposition on Cl(3) \u2297 Z^3",
   "transitive_descendants": 808,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: the formal finite-dimensional inequalities are correct, but the canonical transfer matrix and self-adjoint Hamiltonian logarithm are imported from named support artifacts absent from the one-hop authority packet. Why this blocks: the runner tests constructed positive matrices and therefore verifies the algebra without establishing those repository-level inputs. Repair target: wire the reflection-positivity and spectrum-condition notes as direct dependencies and establish their retained-grade status. Claim boundary until fixed: only the formal transfer-insertion bounds conditional on a positive Hermitian transfer matrix with a well-defined logarithm and unique top eigenvalue are supported."
 }

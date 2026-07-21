@@ -1,0 +1,595 @@
+#!/usr/bin/env python3
+"""KCPT Dirac-symmetry five-module selective CP-fusion: the generated real associative algebra
+A = <D2, J_full, rho(H)> has center Z(A) of dimension 5, fusing ONLY the unique chi_sgn-swap
+pair {12+, 12-} into one irreducible 24 while keeping every other Unit-14 constituent separate.
+
+Rebuilds, from the bare L=4, N=64 staggered-lattice site construction (no import of any other
+runner), the antisymmetric integer adjacency D2, its float form D2f, the bulk operator
+M = D2 @ D2, the Unit-8 total complex structure J_full (J_full^2 = -I), the chiral parity
+S_eps = diag((-1)^{x1+x2+x3}), the order-768 ambient group G_amb, its order-1536 extension
+H = <G_amb, S_eps>, and the SIX Unit-14 CP-completed H-constituents
+C^64 = 8 + 8 + 12 + 12 + 12+ + 12- (tags ind8(W4) x2, ind12(W6) x2, split12_+(W12),
+split12_-(W12)).  It then forms the real associative algebra A = <D2, J_full, rho(H)> and:
+
+  T1  A decomposes C^64 into EXACTLY FIVE irreducible A-modules of dims [8, 8, 12, 12, 24];
+      equivalently the center/commutant Z(A) has dimension 5.  The six multiplicity-free
+      H-constituents collapse to five A-modules: the chi_sgn-swap pair {12+, 12-} FUSES into a
+      single irreducible 24 (local-commutant dim 1), every other constituent stays separate.
+  T2  SELECTIVITY IS STRUCTURALLY FORCED.  D2 and J_full are each G_amb-invariant and
+      chi_sgn-ODD (S_eps X S_eps = -X), i.e. they transform in the chi_sgn representation of H.
+      By Schur such an operator connects constituents V_i -> V_j iff V_j = V_i (x) chi_sgn.
+      The ONLY off-diagonal chi_sgn-partner pair among the six is {12+, 12-}
+      (12- = 12+ (x) chi_sgn, Unit 16); the four others are chi_sgn-self, so they stay resolved.
+      In particular the two M-degenerate induced-12's (both on M-shell -8) are chi_sgn-self and
+      are NOT connected by D2 / J_full, so they stay separate.
+  T3  THREE-TIER NESTING as subalgebras of End(C^64):  C[M] = C^4  <  Z(A) = C^5  <  End_H = C^6.
+      C[M] = span{I, M, M^2, M^3} (the Dirac-radius / even reach, Unit 18) resolves only the four
+      M-shells [8, 24, 24, 8].  Z(A) SPLITS the -8 shell into the two induced-12's but keeps the
+      -4 shell fused as the irreducible 24.  End_H further splits the -4 shell into 12+ and 12-.
+      Each inclusion step splits exactly ONE M-shell; the fused-24 module projector equals the
+      -4 M-shell projector P_{12+} + P_{12-}.
+
+PHYSICS READING (recorded honestly, geometric labels only): relative to the full symmetry End_H
+the operator algebra A conserves exactly FIVE central charges, losing exactly ONE -- the CP-charge
+of the swap pair, the unique symmetry charge whose separating idempotent P_{12+} fails to commute
+with the Dirac operators (||[D2, P_{12+}]|| = 0.354 != 0) -- while GAINING resolution of the
+induced-12 charge that the Dirac radius alone (C[M]) cannot see.  This sharpens the symmetric
+"two dims M cannot resolve" reading of Units 17/18 into an ASYMMETRIC statement: under A the
+induced-12 degeneracy is resolved, the CP degeneracy is fused/protected.  "CP" and "chiral" are
+geometric labels for S_eps and the two chi_sgn-graded halves of the real-12 only, never a
+statement about Standard-Model CP or chirality.
+
+ANTI-FABRICATION DISCIPLINE.  Every rank / trace / commutator norm / singular value is recomputed
+from the real matrices D2, J_full, M, S_eps, the constituent projectors P_k and the actual 1536
+elements of rho(H) -- never from its target.  dim Z(A) = 5 is obtained as the null-space dimension
+6 - rank of the real constraint map c |-> ([P_k, D2], [P_k, J_full]) (single nonzero singular value
+~ 15.49), NOT from the edge graph; the fused 24 is certified irreducible by a local-commutant SVD
+rank (dim 1), not by any parity proxy.  J_full is the genuine complex structure (J^2 = -I,
+antisymmetric, orthogonal, and neither +S_eps nor -S_eps).  The wrong hypotheses are explicitly
+rejected: no-fusion (rank 0, dim 6) and both-pairs-fuse (rank 2, dim 4) both FAIL the dim-5 gate,
+and the two induced-12's are shown NOT to fuse so the module count is 5, not 4.
+"""
+import itertools
+import os
+import numpy as np
+
+# Every note this runner reads (two parents + this unit's own note), repo-relative.
+AUDIT_INPUT_PATHS = (
+    "docs/KCPT_CP_COMPLETION_UNDER_EXTENDED_GROUP_BOUNDED_THEOREM_NOTE_2026-07-20.md",
+    "docs/KCPT_CHIRAL_PARITY_COMMON_SIGN_ORBIT_BOUNDED_THEOREM_NOTE_2026-07-19.md",
+    "docs/KCPT_DIRAC_RADIUS_GRADING_OF_END_H_BOUNDED_THEOREM_NOTE_2026-07-20.md",   # self-note
+)
+
+L, N = 4, 64
+TOL0 = 1e-12
+TOL_F = 1e-9
+TOL_EIG = 1e-8
+TOLREJ = 1e-6
+TOL_COMM = 1e-6
+
+DOCS = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "docs"))
+U14_NOTE = "KCPT_CP_COMPLETION_UNDER_EXTENDED_GROUP_BOUNDED_THEOREM_NOTE_2026-07-20.md"
+U9_NOTE = "KCPT_CHIRAL_PARITY_COMMON_SIGN_ORBIT_BOUNDED_THEOREM_NOTE_2026-07-19.md"
+SELF_NOTE = "KCPT_DIRAC_RADIUS_GRADING_OF_END_H_BOUNDED_THEOREM_NOTE_2026-07-20.md"
+U8_NOTE = "KCPT_TOTAL_COMPLEX_STRUCTURE_AMBIENT_INVARIANT_KERNEL_BULK_ASSEMBLY_BOUNDED_THEOREM_NOTE_2026-07-19.md"
+U10_NOTE = "KCPT_KAHLER_TRIPLE_AMBIENT_INVARIANT_METRIC_SYMPLECTIC_BOUNDED_THEOREM_NOTE_2026-07-19.md"
+U11_NOTE = "KCPT_CHIRAL_PARITY_LAGRANGIAN_POLARIZATION_BOUNDED_THEOREM_NOTE_2026-07-19.md"
+U12_NOTE = "KCPT_HOLOMORPHIC_GAMB_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-07-20.md"
+U13_NOTE = "KCPT_HOLOMORPHIC_REALITY_CP_CENSUS_FROBENIUS_SCHUR_BOUNDED_THEOREM_NOTE_2026-07-20.md"
+
+# PRESERVE VERBATIM source-pin substrings (grepped from the on-disk parent notes):
+PIN_U14 = "9216 / 1536 = 6"
+PIN_U9 = "S_eps J_full S_eps = -J_full"
+
+PASS = FAIL = 0
+
+
+def gate(tag, cond, desc):
+    global PASS, FAIL
+    ok = bool(cond)
+    PASS, FAIL = PASS + (1 if ok else 0), FAIL + (0 if ok else 1)
+    print(f"{'PASS' if ok else 'FAIL'} {tag} - {desc}")
+    return ok
+
+
+def note_text(basename):
+    try:
+        with open(os.path.join(DOCS, basename), encoding="utf-8") as fh:
+            return fh.read()
+    except OSError:
+        return ""
+
+
+def nrm(X):
+    return float(np.max(np.abs(X)))
+
+
+def eqm(a, b):
+    return np.array_equal(a, b)
+
+
+# ---------------- construction (VERBATIM object-identical to the Unit-14 runner) ---------
+def idx(a, b, c):
+    return (a * L + b) * L + c
+
+
+coords = np.zeros((N, 3), dtype=np.int64)
+for a in range(L):
+    for b in range(L):
+        for c in range(L):
+            coords[idx(a, b, c)] = (a, b, c)
+
+
+def eta_mu(mu, x):
+    if mu == 0:
+        return 1
+    if mu == 1:
+        return (-1) ** int(x[0])
+    return (-1) ** int(x[0] + x[1])
+
+
+e = [np.array([1, 0, 0]), np.array([0, 1, 0]), np.array([0, 0, 1])]
+D2 = np.zeros((N, N), dtype=np.int64)
+for i in range(N):
+    x = coords[i]
+    for mu in range(3):
+        D2[i, idx(*((x + e[mu]) % L))] += eta_mu(mu, x)
+        D2[i, idx(*((x - e[mu]) % L))] -= eta_mu(mu, x)
+
+SUBSETS = [(), (0,), (1,), (2,), (0, 1), (0, 2), (1, 2), (0, 1, 2)]
+sidx = {frozenset(S): k for k, S in enumerate(SUBSETS)}
+V8 = np.zeros((N, 8), dtype=np.int64)
+for i in range(N):
+    x = coords[i]
+    for k, S in enumerate(SUBSETS):
+        V8[i, k] = (-1) ** int(sum(x[j] for j in S))
+
+
+def sgn_subset(S):
+    Sset = frozenset(S)
+    return ((-1) ** len(Sset & frozenset({0, 2}))) * (1 if 1 in Sset else -1)
+
+
+J64 = np.zeros((8, 8), dtype=np.int64)
+for k, S in enumerate(SUBSETS):
+    T = frozenset(S) ^ frozenset({1})
+    J64[sidx[T], k] = 64 * sgn_subset(S)
+Jker_int = V8 @ J64 @ V8.T
+
+M = D2 @ D2
+lam = [0, -4, -8, -12]
+Fac = [M - lam[m] * np.eye(N, dtype=np.int64) for m in range(4)]
+Q = []
+for m in range(4):
+    P0 = np.eye(N, dtype=np.int64)
+    for mp in range(4):
+        if mp != m:
+            P0 = P0 @ Fac[mp]
+    Q.append(P0)
+Nm = []
+for m in range(4):
+    v = 1
+    for mp in range(4):
+        if mp != m:
+            v *= (lam[m] - lam[mp])
+    Nm.append(v)
+
+D2f = D2.astype(float)
+Pf = [Q[m].astype(float) / Nm[m] for m in range(4)]
+Jkerf = Jker_int.astype(float) / (64.0 ** 2)
+Jbulk = sum(D2f @ Pf[m] / (2.0 * np.sqrt(m)) for m in (1, 2, 3))
+Jfull = Jkerf + Jbulk
+
+# rational sqrt(m)->1 proxy: a discriminating counter-object ONLY (anti-proxy rejector)
+Jbulk_proxy = sum(D2f @ Pf[m] / 2.0 for m in (1, 2, 3))
+Jfull_proxy = Jkerf + Jbulk_proxy
+
+eps = np.array([(-1) ** int(coords[i][0] + coords[i][1] + coords[i][2]) for i in range(N)], dtype=np.int64)
+Seps_int = np.diag(eps)
+Seps = Seps_int.astype(float)
+I64i = np.eye(N, dtype=np.int64)
+
+
+def perm(fmap):
+    P0 = np.zeros((N, N), dtype=np.int64)
+    for i in range(N):
+        y = np.array(fmap(coords[i])) % L
+        P0[i, idx(int(y[0]), int(y[1]), int(y[2]))] = 1
+    return P0
+
+
+UR = perm(lambda x: (x[1], x[2], x[0]))
+U2m = perm(lambda x: (-x[1], -x[0], -x[2]))
+STAB = np.eye(N, dtype=np.int64)
+TR = {t: perm(lambda x, t=t: (x[0] - t[0], x[1] - t[1], x[2] - t[2]))
+      for t in itertools.product(range(L), repeat=3)}
+
+
+def signfield(bits):
+    a1, a2, a3, b12, b13, b23 = bits
+    d = np.zeros(N, dtype=np.int64)
+    for i in range(N):
+        x1, x2, x3 = coords[i]
+        expo = a1 * x1 + a2 * x2 + a3 * x3 + b12 * x1 * x2 + b13 * x1 * x3 + b23 * x2 * x3
+        d[i] = (-1) ** int(expo)
+    return d
+
+
+ALLBITS = list(itertools.product([0, 1], repeat=6))
+SF = {bits: signfield(bits) for bits in ALLBITS}
+BASES = {"stab": STAB, "U2": U2m, "UR": UR}
+
+
+def closure_grp(gs):
+    gs = [g0.copy() for g0 in gs]
+    elts = {g0.tobytes(): g0 for g0 in gs}
+    frontier = list(elts.values())
+    while frontier:
+        nf = []
+        for xg in frontier:
+            for g0 in gs:
+                p = xg @ g0
+                key = p.tobytes()
+                if key not in elts:
+                    elts[key] = p
+                    nf.append(p)
+        frontier = nf
+    return list(elts.values())
+
+
+commuting = []
+for name, base in BASES.items():
+    for bits in ALLBITS:
+        dd = np.diag(SF[bits])
+        for t in itertools.product(range(L), repeat=3):
+            U = dd @ base @ TR[t]
+            if eqm(U @ D2, D2 @ U):
+                commuting.append(U.copy())
+Gamb = closure_grp(commuting)
+Gamb_set = {U.tobytes() for U in Gamb}
+
+Gsorted = sorted(Gamb, key=lambda U: U.tobytes())
+gens_G = []
+seenG = {I64i.tobytes()}
+gen_closure_G = 0
+for U in Gsorted:
+    if eqm(U, I64i) or U.tobytes() in seenG:
+        continue
+    gens_G.append(U)
+    cl = closure_grp(gens_G)
+    seenG = {x.tobytes() for x in cl}
+    gen_closure_G = len(cl)
+    if gen_closure_G == 768:
+        break
+
+gens_H = gens_G + [Seps_int]
+Hgrp = closure_grp(gens_H)
+gen_closure_H = len(Hgrp)
+Hset = {h.tobytes() for h in Hgrp}
+coset = [Seps_int @ g for g in Gamb]
+coset_bytes = [c.tobytes() for c in coset]
+gamb_in_H = all(g.tobytes() in Hset for g in Gamb)
+coset_in_H = all(cb in Hset for cb in coset_bytes)
+coset_disjoint = all(cb not in Gamb_set for cb in coset_bytes)
+
+# exact-integer commutant discriminators (chi(h) = tr(h) in Z for signed perms)
+SG = sum(int(np.trace(g)) ** 2 for g in Gamb)
+SH = sum(int(np.trace(h)) ** 2 for h in Hgrp)
+Scoset = sum(int(np.trace(c)) ** 2 for c in coset)
+maxtr_coset = max(abs(int(np.trace(c))) for c in coset)
+cG = SG // len(Gamb)
+cH = SH // len(Hgrp)
+
+# holomorphic / anti-holomorphic frames
+evals, evecs = np.linalg.eig(Jfull)
+selp = np.where(np.abs(evals - 1j) < TOL_EIG)[0]
+selm = np.where(np.abs(evals + 1j) < TOL_EIG)[0]
+Bh, _ = np.linalg.qr(evecs[:, selp])
+Bm, _ = np.linalg.qr(evecs[:, selm])
+PiW = Bh @ Bh.conj().T
+PiHm = Bm @ Bm.conj().T
+
+
+def commutant_dim(mats, r):
+    Ir = np.eye(r, dtype=complex)
+    A = np.vstack([np.kron(m.T, Ir) - np.kron(Ir, m) for m in mats])
+    s = np.linalg.svd(A, compute_uv=False)
+    return int(np.sum(s < TOL_COMM))
+
+
+def commutant_basis(mats, r, d):
+    Ir = np.eye(r, dtype=complex)
+    A = np.vstack([np.kron(m.T, Ir) - np.kron(Ir, m) for m in mats])
+    Uc, s, Vh = np.linalg.svd(A, full_matrices=False)
+    del Uc, A
+    return [np.conj(Vh[-(i + 1)]).reshape(r, r, order="F") for i in range(d)]
+
+
+def split_block(Z, basis_mats, r, d):
+    for seed in range(128):
+        rng = np.random.default_rng(seed)
+        cc = rng.standard_normal(len(basis_mats)) + 1j * rng.standard_normal(len(basis_mats))
+        Y = sum(cc[i] * basis_mats[i] for i in range(len(basis_mats)))
+        Hs = Y + Y.conj().T
+        ww, VV = np.linalg.eigh(Hs)
+        spread = float(ww[-1] - ww[0])
+        if spread <= 0:
+            continue
+        thr = 1e-4 * spread
+        grp = [[0]]
+        for j in range(1, r):
+            if ww[j] - ww[j - 1] > thr:
+                grp.append([j])
+            else:
+                grp[-1].append(j)
+        intra = max((ww[g[-1]] - ww[g[0]]) for g in grp)
+        inter = min((ww[grp[t + 1][0]] - ww[grp[t][-1]]) for t in range(len(grp) - 1)) \
+            if len(grp) > 1 else 0.0
+        if len(grp) == d and inter > 1e6 * max(intra, 1e-18):
+            return [Z @ VV[:, g] for g in grp], [len(g) for g in grp], seed
+    return None, None, -1
+
+
+# 5 holomorphic G_amb-idempotents on W (Unit-12 census)
+Cgens = [Bh.conj().T @ g.astype(complex) @ Bh for g in gens_G]
+dimcW = commutant_dim(Cgens, 32)
+BsW = commutant_basis(Cgens, 32, dimcW)
+subZW, ranksW, seedW = split_block(Bh, BsW, 32, dimcW)
+order = list(np.argsort(ranksW))
+subZW = [subZW[i] for i in order]
+ranksW = [ranksW[i] for i in order]
+PW = [z @ z.conj().T for z in subZW]
+PHm = [Seps.astype(complex) @ p @ Seps.astype(complex) for p in PW]
+
+# the SIX CP-completed H-constituents (Unit 14): tag, 64xd orthobasis Z, W-source rank,
+# is_split flag (True for the two halves of the unique rank-12 real block).
+gens_Hc = [g.astype(complex) for g in gens_H]
+constituents = []  # (tag, Z, wrank, is_split)
+for k in range(len(PW)):
+    wrank = ranksW[k]
+    block = PW[k] + PHm[k]
+    r = int(round(np.trace(block).real))
+    ww, VV = np.linalg.eigh((block + block.conj().T) / 2)
+    Z = VV[:, -r:]
+    matsH = [Z.conj().T @ g @ Z for g in gens_Hc]
+    d = commutant_dim(matsH, r)
+    if d == 1:
+        constituents.append((f"ind{r}(W{wrank})", Z, wrank, False))
+    else:
+        BsB = commutant_basis(matsH, r, d)
+        subZb, subr, seedb = split_block(Z, BsB, r, d)
+        ordb = list(np.argsort(subr))
+        subZb = [subZb[i] for i in ordb]
+        for h_i, zz in enumerate(subZb):
+            constituents.append((f"split12_{'+' if h_i == 0 else '-'}(W{wrank})", zz, wrank, True))
+
+
+# ============================ generated-algebra A = <D2, J_full, rho(H)> analysis ===========
+import sys
+np.set_printoptions(precision=4, suppress=True, linewidth=140)
+I64 = np.eye(64)
+def nrm(A): return float(np.max(np.abs(A)))
+_P=[0]; _F=[0]
+def gate(name, cond, msg):
+    ok = bool(cond); print(f"[{'PASS' if ok else 'FAIL'}] {name}: {msg}")
+    (_P if ok else _F).__setitem__(0, (_P if ok else _F)[0]+1)
+# derived objects
+tags=[c[0] for c in constituents]; Zs=[c[1] for c in constituents]
+Ps=[Z@Z.conj().T for Z in Zs]; dims=[Z.shape[1] for Z in Zs]; n=len(constituents)
+D2r=D2f.astype(float); Jf=np.asarray(Jfull,dtype=float); Mf=M.astype(float); Se=Seps.astype(float)
+mshell=np.array([np.trace(Ps[k]@Mf).real/dims[k] for k in range(n)])
+i_plus =next(k for k in range(n) if tags[k].startswith("split12_+"))
+i_minus=next(k for k in range(n) if tags[k].startswith("split12_-"))
+i_ind12=[k for k in range(n) if tags[k].startswith("ind12")]
+i_ind8 =[k for k in range(n) if tags[k].startswith("ind8")]
+# chi_sgn(h) = +1 on G_amb, -1 on the S_eps coset
+gamb_bytes=set(g.astype(np.int64).tobytes() for g in Gamb)
+def chi_sgn(h): return 1.0 if h.astype(np.int64).tobytes() in gamb_bytes else -1.0
+
+# ---- precompute (perf only; every gated quantity is still recomputed from real matrices) ----
+Hf=[h.astype(float) for h in Hgrp]
+Gf=[g.astype(float) for g in Gamb]
+Hc=[h.astype(complex) for h in Hgrp]
+chi_vec=np.array([chi_sgn(h) for h in Hgrp])
+_HERE=os.path.dirname(os.path.abspath(__file__)); _ROOT=os.path.dirname(_HERE)
+def read_repo(rel):
+    with open(os.path.join(_ROOT, rel), encoding="utf-8") as fh:
+        return fh.read()
+
+# ============================ gates ==========================================================
+# G01 -- J_full is a complex structure J^2 = -I
+gate("G01", nrm(Jf@Jf+I64)<1e-9, f"||Jfull^2+I||={nrm(Jf@Jf+I64):.2e}")
+
+# G02 -- M = D2 @ D2 exactly (integer)
+_v02=nrm(Mf - D2r@D2r)
+gate("G02", _v02==0.0, f"||M - D2@D2||={_v02:.2e} (exact integer)")
+
+# G03 -- D2 and J_full both preserve the M-shells: [D2,M]=0 and [J_full,M]=0
+_c1=nrm(D2r@Mf-Mf@D2r); _c2=nrm(Jf@Mf-Mf@Jf)
+gate("G03", _c1<1e-9 and _c2<1e-9, f"||[D2,M]||={_c1:.2e}  ||[Jfull,M]||={_c2:.2e}")
+
+# G04 -- [D2, J_full] = 0 (Unit 17): the two Dirac operators commute
+_c04=nrm(D2r@Jf-Jf@D2r)
+gate("G04", _c04<1e-9, f"||[D2,Jfull]||={_c04:.2e}")
+
+# G05 -- dim End_H = 6 via character orthonormality (six mult-free inequivalent irreducibles)
+chars=np.zeros((n,len(Hgrp)),dtype=complex)
+for i in range(n):
+    _Zih=Zs[i].conj().T
+    for x in range(len(Hgrp)):
+        chars[i,x]=np.trace(_Zih @ Hc[x] @ Zs[i])
+Gm=(chars.conj() @ chars.T)/len(Hgrp)
+_gd=nrm(Gm-np.eye(n))
+iso=(np.abs(Gm)>0.5).astype(int)          # V_i ~ V_j  <=>  |Gram_ij| ~ 1
+end_h_dim=int(iso.sum())                   # dim End_H = # ordered isomorphic pairs
+gate("G05", _gd<1e-9 and end_h_dim==6, f"||Gram-I||={_gd:.2e}  dim_End_H={end_h_dim}")
+
+# G06 -- the six H-constituent projectors: idempotent, orthogonal, complete, dims [8,8,12,12,12,12]
+_idem=max(nrm(P@P-P) for P in Ps)
+_orth=max(nrm(Ps[i]@Ps[j]) for i in range(n) for j in range(n) if i!=j)
+_sumc=nrm(sum(Ps)-I64)
+_td=sorted(int(round(np.trace(P).real)) for P in Ps)
+gate("G06", _idem<1e-9 and _orth<1e-9 and _sumc<1e-9 and _td==[8,8,12,12,12,12],
+     f"max||P^2-P||={_idem:.2e}  max||PiPj||={_orth:.2e}  ||sumP-I||={_sumc:.2e}  dims={_td}")
+
+# G07 -- D2 is chi_sgn-ODD (S_eps D2 S_eps = -D2) with a live wrong-sign rejector
+_odd7=nrm(Se@D2r@Se + D2r); _wrong7=nrm(Se@D2r@Se - D2r)
+gate("G07", _odd7<1e-9 and _wrong7>1.0,
+     f"||Se D2 Se + D2||={_odd7:.2e}  wrong-sign ||Se D2 Se - D2||={_wrong7:.3f} (>1)")
+
+# G08 -- J_full is chi_sgn-ODD (Unit 9) with a live wrong-sign rejector at J_full's
+#        max-entry scale (max|J_full|~0.374, not 1): a chi_sgn-EVEN J collapses it to 0.
+_odd8=nrm(Se@Jf@Se + Jf); _wrong8=nrm(Se@Jf@Se - Jf)
+gate("G08", _odd8<1e-9 and _wrong8>nrm(Jf),
+     f"||Se Jf Se + Jf||={_odd8:.2e}  wrong-sign ||Se Jf Se - Jf||={_wrong8:.3f} (>|Jf|={nrm(Jf):.3f})")
+
+# G09 -- M is chi_sgn-EVEN (S_eps M S_eps = M): every f(M) is blind to the twist
+_v09=nrm(Se@Mf@Se - Mf)
+gate("G09", _v09<1e-9, f"||Se M Se - M||={_v09:.2e}")
+
+# G07b -- D2 is G_amb-invariant (with G07 => D2 transforms in chi_sgn under H)
+_gi=max(nrm(D2r@g - g@D2r) for g in Gf)
+gate("G07b", _gi<1e-9, f"max_g ||[D2,g]||={_gi:.2e}  (|G_amb|={len(Gf)})")
+
+# G10 -- per-element 12- = 12+ (x) chi_sgn over ALL 1536 elements of H
+_dev10=max(abs(chars[i_minus,x]-chi_vec[x]*chars[i_plus,x]) for x in range(len(Hgrp)))
+gate("G10", _dev10<1e-9, f"max_x |chi(12-) - chi_sgn*chi(12+)|={_dev10:.2e}")
+
+# G11 -- {12+,12-} is the UNIQUE chi_sgn-swap pair; the other four are chi_sgn-self
+def _match(k):
+    tw=chi_vec*chars[k,:]
+    devs=[float(np.max(np.abs(tw-chars[j,:]))) for j in range(n)]
+    j=int(np.argmin(devs)); return j, devs[j]
+_matches={k:_match(k) for k in range(n)}
+_ok_swap=(_matches[i_plus][0]==i_minus and _matches[i_minus][0]==i_plus
+          and _matches[i_plus][1]<1e-9 and _matches[i_minus][1]<1e-9)
+_ok_self=all(_matches[k][0]==k and _matches[k][1]<1e-9 for k in i_ind8+i_ind12)
+gate("G11", _ok_swap and _ok_self,
+     "twist-match  " + "  ".join(f"{tags[k]}->{tags[_matches[k][0]]}({_matches[k][1]:.1e})" for k in range(n)))
+
+# G12 -- dim Z(A) = 5 via INDEPENDENT null-space of the [P_k, D2]/[P_k, J_full] constraint map
+cols=[]
+for k in range(n):
+    _cd=(Ps[k]@D2r - D2r@Ps[k]).ravel()
+    _cj=(Ps[k]@Jf  - Jf @Ps[k]).ravel()
+    cols.append(np.concatenate([_cd,_cj]))
+A=np.array(cols).T
+sv=np.linalg.svd(A, compute_uv=False)
+rank=int(np.sum(sv>1e-9*sv[0])); commdim=n-rank
+gate("G12", rank==1 and commdim==5 and rank!=0 and rank!=2,
+     f"sv={np.array2string(sv, precision=4)}  rank={rank}  dim_Z(A)={commdim}  "
+     f"(rejects rank0->dim6 no-fusion, rank2->dim4 both-fuse)")
+
+# G13 -- the connection graph has EXACTLY ONE edge {12+,12-}
+edges=set()
+for i in range(n):
+    for j in range(n):
+        if i!=j and max(nrm(Ps[i]@D2r@Ps[j]), nrm(Ps[i]@Jf@Ps[j]))>1e-9:
+            edges.add((min(i,j),max(i,j)))
+_target={(min(i_plus,i_minus),max(i_plus,i_minus))}
+_epm=nrm(Ps[i_plus]@D2r@Ps[i_minus])
+gate("G13", edges==_target, f"edges(tags)={sorted((tags[a],tags[b]) for a,b in edges)}  ||P12+ D2 P12-||={_epm:.3f}")
+
+# G14 -- the four chi_sgn-self constituents are CENTRAL in A
+_worst14=max(max(nrm(D2r@Ps[k]-Ps[k]@D2r), nrm(Jf@Ps[k]-Ps[k]@Jf)) for k in i_ind8+i_ind12)
+gate("G14", _worst14<1e-9, f"max||[D2/Jf, P_self]||={_worst14:.2e}  (over the 4 chi_sgn-self constituents)")
+
+# G15 -- the CP-pair projectors are NON-central individually, but their SUM is central
+_d15=nrm(D2r@Ps[i_plus]-Ps[i_plus]@D2r)
+_j15=nrm(Jf @Ps[i_plus]-Ps[i_plus]@Jf)
+_s15=nrm(D2r@(Ps[i_plus]+Ps[i_minus]) - (Ps[i_plus]+Ps[i_minus])@D2r)
+gate("G15", _d15>1e-2 and _j15>1e-2 and _s15<1e-9,
+     f"||[D2,P12+]||={_d15:.3f}  ||[Jf,P12+]||={_j15:.3f}  ||[D2,P12++P12-]||={_s15:.2e}")
+
+# G16 -- the FIVE minimal central idempotents: dims [8,8,12,12,24]
+a8=max(i_ind8, key=lambda k: mshell[k])   # ind8 on M-shell 0
+b8=min(i_ind8, key=lambda k: mshell[k])   # ind8 on M-shell -12
+Pmods=[Ps[a8], Ps[b8], Ps[i_ind12[0]], Ps[i_ind12[1]], Ps[i_plus]+Ps[i_minus]]
+_idem16=max(nrm(P@P-P) for P in Pmods)
+_orth16=max(nrm(Pmods[i]@Pmods[j]) for i in range(5) for j in range(5) if i!=j)
+_sum16=nrm(sum(Pmods)-I64)
+_td16=sorted(int(round(np.trace(P).real)) for P in Pmods)
+gate("G16", _idem16<1e-9 and _orth16<1e-9 and _sum16<1e-9 and _td16==[8,8,12,12,24],
+     f"max||P^2-P||={_idem16:.2e}  max||PiPj||={_orth16:.2e}  ||sumP-I||={_sum16:.2e}  dims={_td16}")
+
+# G17 -- each module projector is CENTRAL in A (commutes with D2, J_full and all 1536 of rho(H))
+_worst_dj=0.0; _worst_h=0.0
+for Pm in Pmods:
+    _worst_dj=max(_worst_dj, nrm(D2r@Pm-Pm@D2r), nrm(Jf@Pm-Pm@Jf))
+    _worst_h =max(_worst_h, max(nrm(h@Pm-Pm@h) for h in Hf))
+gate("G17", _worst_dj<1e-9 and _worst_h<1e-9,
+     f"max||[D2/Jf, Pmod]||={_worst_dj:.2e}  max_h||[h, Pmod]||={_worst_h:.2e}  (5 idempotents x 1536)")
+
+# G18 -- the fused 24 is IRREDUCIBLE as an A-module (local commutant of D2 on the 24-block has dim 1)
+L=np.array([ (Ps[i_plus]@D2r-D2r@Ps[i_plus]).ravel(),
+             (Ps[i_minus]@D2r-D2r@Ps[i_minus]).ravel() ]).T
+svl=np.linalg.svd(L, compute_uv=False)
+rankl=int(np.sum(svl>1e-9*svl[0])); loc=2-rankl
+gate("G18", rankl==1 and loc==1,
+     f"svl={np.array2string(svl, precision=4)}  rank={rankl}  local_commutant_dim={loc}  (loc==2 would be reducible)")
+
+# G19 -- C[M] has dim 4 (four M-shells) and every M-shell projector is central in A
+evs=sorted(set(round(v,6) for v in np.linalg.eigvalsh(Mf)))
+Ls={}; _worst19=0.0
+for s in evs:
+    Lp=I64.copy()
+    for s2 in evs:
+        if s2!=s:
+            Lp=Lp@((Mf - s2*I64)/(s - s2))
+    Ls[s]=Lp
+    _worst19=max(_worst19, nrm(D2r@Lp-Lp@D2r), nrm(Jf@Lp-Lp@Jf))
+gate("G19", len(evs)==4 and _worst19<1e-9, f"M-shells={evs}  max||[D2/Jf, L_s]||={_worst19:.2e}")
+
+# G20 -- C[M] STRICTLY inside Z(A): the two induced-12's share M-shell -8, but a central rank-12
+#        idempotent sits strictly inside the rank-24 minimal idempotent of C[M]
+_m0=float(mshell[i_ind12[0]]); _m1=float(mshell[i_ind12[1]])
+_km8=next(s for s in evs if abs(s-(-8.0))<1e-6)
+_trL8=int(round(np.trace(Ls[_km8]).real)); _trI12=int(round(np.trace(Ps[i_ind12[0]]).real))
+gate("G20", abs(_m0-_m1)<1e-9 and abs(_m0-(-8.0))<1e-6 and _trL8==24 and _trI12==12,
+     f"mshell(ind12)=({_m0:.1f},{_m1:.1f})  tr(L_-8)={_trL8}  tr(P_ind12)={_trI12}  => dim Z(A) > 4")
+
+# G21 -- Z(A) STRICTLY inside End_H: P_{12+} is an H-block-scalar but NOT central in A
+_hs21=max(nrm(h@Ps[i_plus]-Ps[i_plus]@h) for h in Hf)
+_nc21=nrm(D2r@Ps[i_plus]-Ps[i_plus]@D2r)
+gate("G21", _hs21<1e-9 and _nc21>1e-2,
+     f"max_h||[h,P12+]||={_hs21:.2e} (in End_H)  ||[D2,P12+]||={_nc21:.3f} (not central) => dim Z(A) < 6")
+
+# G22 -- the three nested dimensions are exactly (4, 5, 6)
+gate("G22", len(evs)==4 and commdim==5 and end_h_dim==6 and (4<5<6),
+     f"(dim C[M], dim Z(A), dim End_H) = ({len(evs)}, {commdim}, {end_h_dim})  with 4 < 5 < 6")
+
+# G23 -- J_full is the GENUINE complex structure, not a parity/sign proxy.  Distance to
+#        +-S_eps saturates at max|Se|=1 (J_full has zero diagonal, S_eps has +-1 diagonal);
+#        a sign proxy J=+-S_eps would collapse one of the two distances to 0.
+_j2=nrm(Jf@Jf+I64); _anti=nrm(Jf+Jf.T); _oJ=nrm(Jf@Jf.T-I64)
+_dS=nrm(Jf-Se); _dpS=nrm(Jf+Se)
+gate("G23", _j2<1e-9 and _anti<1e-9 and _oJ<1e-9 and _dS>nrm(Se)-1e-9 and _dpS>nrm(Se)-1e-9,
+     f"||J^2+I||={_j2:.2e}  ||J+J^T||={_anti:.2e}  ||JJ^T-I||={_oJ:.2e}  ||J-Se||={_dS:.3f} (>=|Se|)  ||J+Se||={_dpS:.3f} (>=|Se|)")
+
+# G24 -- WRONG-HYPOTHESIS rejector: the two induced-12's do NOT fuse (module count is 5, not 4)
+_e1=nrm(Ps[i_ind12[0]]@D2r@Ps[i_ind12[1]]); _e2=nrm(Ps[i_ind12[0]]@Jf@Ps[i_ind12[1]])
+gate("G24", _e1<1e-9 and _e2<1e-9, f"||P_a D2 P_b||={_e1:.2e}  ||P_a Jf P_b||={_e2:.2e}  (no induced-12 edge => 5 modules)")
+
+# G-PIN-U14 -- the Unit-14 note carries the six-constituent decomposition string
+_u14=read_repo("docs/KCPT_CP_COMPLETION_UNDER_EXTENDED_GROUP_BOUNDED_THEOREM_NOTE_2026-07-20.md")
+gate("G-PIN-U14", "C^64 = 8 + 8 + 12 + 12" in _u14, "U14 note carries 'C^64 = 8 + 8 + 12 + 12'")
+
+# G-PIN-U16 -- the Unit-16 note carries the chi_sgn covariance identity
+_u16=read_repo("docs/KCPT_SYMPLECTIC_LEG_CHISGN_COVARIANCE_OMEGA_PAIRING_BOUNDED_THEOREM_NOTE_2026-07-20.md")
+gate("G-PIN-U16", "= χ_sgn(h)" in _u16, "U16 note carries '= chi_sgn(h)'")
+
+# G-PIN-SELF -- this note's dependency EDGES are exactly {Unit 14, Unit 16}; Units 17/18 backticked only
+import re
+_self=read_repo("docs/KCPT_DIRAC_SYMMETRY_FIVE_MODULE_SELECTIVE_CP_FUSION_BOUNDED_THEOREM_NOTE_2026-07-21.md")
+_links=set(re.findall(r"\]\((KCPT_[^)]+\.md)\)", _self))
+U14_B="KCPT_CP_COMPLETION_UNDER_EXTENDED_GROUP_BOUNDED_THEOREM_NOTE_2026-07-20.md"
+U16_B="KCPT_SYMPLECTIC_LEG_CHISGN_COVARIANCE_OMEGA_PAIRING_BOUNDED_THEOREM_NOTE_2026-07-20.md"
+U17_B="KCPT_DIRAC_RADIUS_GRADING_OF_END_H_BOUNDED_THEOREM_NOTE_2026-07-20.md"
+U18_B="KCPT_DIRAC_EVEN_ALGEBRA_REACH_CHARACTER_CP_CHARGE_BOUNDED_THEOREM_NOTE_2026-07-21.md"
+_u17_ctx=(U17_B in _self) and (U17_B not in _links)
+_u18_ctx=(U18_B in _self) and (U18_B not in _links)
+gate("G-PIN-SELF", _links=={U14_B,U16_B} and _u17_ctx and _u18_ctx,
+     f"edges={sorted(_links)}  U17_backtick_only={_u17_ctx}  U18_backtick_only={_u18_ctx}")
+
+print(f"TOTAL: PASS={_P[0]} FAIL={_F[0]}")
+sys.exit(0 if _F[0]==0 else 1)

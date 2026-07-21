@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/kcpt_dirac_symmetry_five_module_selective_cp_fusion_2026_07_21.py
+runner_sha256: 0936203d8740fc3892038d4b94ce4075f37c4f3b06564f6b7e5d204c0cce98ce
+input_fingerprint_sha256: 891aef17bbcd3095fa11d41a3dca733643b7000d39d37aa87654e48e67ee5d10
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 27.95
+status: ok
+----- stdout -----
+[PASS] G01: ||Jfull^2+I||=4.44e-16
+[PASS] G02: ||M - D2@D2||=0.00e+00 (exact integer)
+[PASS] G03: ||[D2,M]||=0.00e+00  ||[Jfull,M]||=4.44e-16
+[PASS] G04: ||[D2,Jfull]||=2.22e-16
+[PASS] G05: ||Gram-I||=3.33e-16  dim_End_H=6
+[PASS] G06: max||P^2-P||=1.85e-16  max||PiPj||=3.67e-16  ||sumP-I||=1.71e-15  dims=[8, 8, 12, 12, 12, 12]
+[PASS] G07: ||Se D2 Se + D2||=0.00e+00  wrong-sign ||Se D2 Se - D2||=2.000 (>1)
+[PASS] G08: ||Se Jf Se + Jf||=0.00e+00  wrong-sign ||Se Jf Se - Jf||=0.748 (>|Jf|=0.374)
+[PASS] G09: ||Se M Se - M||=0.00e+00
+[PASS] G07b: max_g ||[D2,g]||=0.00e+00  (|G_amb|=768)
+[PASS] G10: max_x |chi(12-) - chi_sgn*chi(12+)|=3.72e-15
+[PASS] G11: twist-match  ind8(W4)->ind8(W4)(2.4e-15)  ind8(W4)->ind8(W4)(4.2e-15)  ind12(W6)->ind12(W6)(6.0e-15)  ind12(W6)->ind12(W6)(4.0e-15)  split12_+(W12)->split12_-(W12)(3.7e-15)  split12_-(W12)->split12_+(W12)(3.7e-15)
+[PASS] G12: sv=[15.4919  0.      0.      0.      0.      0.    ]  rank=1  dim_Z(A)=5  (rejects rank0->dim6 no-fusion, rank2->dim4 both-fuse)
+[PASS] G13: edges(tags)=[('split12_+(W12)', 'split12_-(W12)')]  ||P12+ D2 P12-||=0.302
+[PASS] G14: max||[D2/Jf, P_self]||=1.19e-14  (over the 4 chi_sgn-self constituents)
+[PASS] G15: ||[D2,P12+]||=0.354  ||[Jf,P12+]||=0.177  ||[D2,P12++P12-]||=4.58e-15
+[PASS] G16: max||P^2-P||=3.33e-16  max||PiPj||=5.00e-16  ||sumP-I||=1.71e-15  dims=[8, 8, 12, 12, 24]
+[PASS] G17: max||[D2/Jf, Pmod]||=1.19e-14  max_h||[h, Pmod]||=3.52e-14  (5 idempotents x 1536)
+[PASS] G18: svl=[13.8564  0.    ]  rank=1  local_commutant_dim=1  (loc==2 would be reducible)
+[PASS] G19: M-shells=[np.float64(-12.0), np.float64(-8.0), np.float64(-4.0), np.float64(-0.0)]  max||[D2/Jf, L_s]||=4.16e-17
+[PASS] G20: mshell(ind12)=(-8.0,-8.0)  tr(L_-8)=24  tr(P_ind12)=12  => dim Z(A) > 4
+[PASS] G21: max_h||[h,P12+]||=2.56e-15 (in End_H)  ||[D2,P12+]||=0.354 (not central) => dim Z(A) < 6
+[PASS] G22: (dim C[M], dim Z(A), dim End_H) = (4, 5, 6)  with 4 < 5 < 6
+[PASS] G23: ||J^2+I||=4.44e-16  ||J+J^T||=0.00e+00  ||JJ^T-I||=4.44e-16  ||J-Se||=1.000 (>=|Se|)  ||J+Se||=1.000 (>=|Se|)
+[PASS] G24: ||P_a D2 P_b||=9.03e-16  ||P_a Jf P_b||=3.19e-16  (no induced-12 edge => 5 modules)
+[PASS] G-PIN-U14: U14 note carries 'C^64 = 8 + 8 + 12 + 12'
+[PASS] G-PIN-U16: U16 note carries '= chi_sgn(h)'
+[PASS] G-PIN-SELF: edges=['KCPT_CP_COMPLETION_UNDER_EXTENDED_GROUP_BOUNDED_THEOREM_NOTE_2026-07-20.md', 'KCPT_SYMPLECTIC_LEG_CHISGN_COVARIANCE_OMEGA_PAIRING_BOUNDED_THEOREM_NOTE_2026-07-20.md']  U17_backtick_only=True  U18_backtick_only=True
+TOTAL: PASS=28 FAIL=0
+
+----- stderr -----
+

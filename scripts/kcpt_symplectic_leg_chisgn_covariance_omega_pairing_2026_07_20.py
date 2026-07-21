@@ -20,7 +20,8 @@ J_full^T g = -J_full). This unit certifies:
       h in H -- omega is PRESERVED on the 768 G_amb elements (+omega, the Unit-10 fact)
       and SIGN-REVERSED on the 768 S_eps-coset elements (-omega). The generator identity
       S_eps^T omega S_eps = -omega follows from Unit 9's S_eps J_full S_eps = -J_full
-      with omega = -J_full and S_eps diagonal. EXACT (deviation 0) on all 1536 elements;
+      with omega = -J_full and S_eps diagonal. The rebuilt floating matrices give
+      bit-for-bit zero deviation on all 1536 elements after the group/coset coverage is gated;
       each check carries a live wrong-sign rejector 2*max|omega| = 0.748 exceeding
       max|omega| = 0.3739.                              [G-OMEGA-INV / COSET / SEPS]
   T2  omega-PAIRING census Omega_ij = Z_i^T omega Z_j (transpose, no conjugation) of the
@@ -33,7 +34,8 @@ J_full^T g = -J_full). This unit certifies:
       chi_sgn-invariant and self-pair; 12^- = 12^+ (x) chi_sgn forces the 12^+ self-block
       to zero and canonically pairs the chiral backbone 12^+ <-> 12^-.
   T3  SYMMETRIC-vs-ANTISYMMETRIC contrast on 12^+: the invariant SYMMETRIC form has
-      min singular value ~1.0 (== the Unit-15 value form_cp[4]) so 12^+ is nondegenerate
+      all singular values equal to the structural target 1 (also consistent with the
+      Unit-15 census), so 12^+ is nondegenerate
       under it, while the ANTISYMMETRIC omega self-block on the SAME 12^+ vanishes -- the
       isotropy is omega's antisymmetry twisted by chi_sgn (12^+ (x) chi_sgn = 12^- != 12^+),
       not a subspace degeneracy.                              [G-CONTRAST-SYMVSANTI]
@@ -45,11 +47,12 @@ G_amb and 768 coset elements, NEVER computed from a target; each covariance gate
 live wrong-sign rejector (a wrong-sign deviation is 2*max|omega| > max|omega|). The pairing
 pattern is read from REAL SVD numeric ranks of Z_i^T omega Z_j and REAL Frobenius norms of
 the blocks against a fixed floor -- a spurious pairing or a collapsed self-block FAILS. The
-T3 contrast recomputes the Unit-15 symmetric-form min singular value form_cp[4]
-INDEPENDENTLY and requires it to MATCH while the antisymmetric self-block VANISHES, so a
+T3 contrast gates the symmetric-form singular spectrum directly against the structural
+target 1 while the antisymmetric self-block VANISHES, so a
 computation using the wrong (symmetric) form gets nondegeneracy everywhere and FAILS.
-Every constituent is a real orthonormal block and every h in H is a real signed
-permutation, so no irrational value is ever gated; the census is decided by rank / zero
+Every constituent is represented by a Hermitian-orthonormal basis of its complexification,
+and every h in H is a real signed permutation; the bilinear blocks therefore use transpose,
+not conjugate transpose. No irrational value is gated; the census is decided by rank / zero
 STRUCTURE and explicit wrong-sign or wrong-value rejectors.
 """
 import itertools
@@ -270,6 +273,16 @@ for U in Gsorted:
 # ---------------- extend by S_eps: H = <G_amb, S_eps>, order 1536 -----------------------
 gens_H = gens_G + [Seps_int]
 coset = [Seps_int @ g for g in Gamb]             # the nontrivial coset S_eps * G_amb
+Gamb_keys = {g.tobytes() for g in Gamb}
+coset_keys = {c.tobytes() for c in coset}
+gamb_complete = len(Gamb) == 768 and len(Gamb_keys) == 768
+extension_complete = (
+    gamb_complete
+    and len(coset) == 768
+    and len(coset_keys) == 768
+    and Gamb_keys.isdisjoint(coset_keys)
+    and all((Seps_int @ g @ Seps_int).tobytes() in Gamb_keys for g in Gamb)
+)
 
 # ---------------- holomorphic / anti-holomorphic frames --------------------------------
 evals, evecs = np.linalg.eig(Jfull)
@@ -365,21 +378,7 @@ else:
 P6 = [PW[0] + PHm[0], PW[1] + PHm[1], PW[2] + PHm[2], PW[3] + PHm[3],
       ZhalfW[0] @ ZhalfW[0].conj().T,
       ZhalfW[1] @ ZhalfW[1].conj().T]
-ranks6 = sorted(int(round(np.trace(P).real)) for P in P6)
-
-# --- Unit-15 invariant symmetric bilinear form min singular value (T3 contrast anchor) ---
-def form_minsv(P):
-    r = int(round(np.trace(P).real))
-    if r <= 0:
-        return 0.0
-    _w, V = np.linalg.eigh((P + P.conj().T) / 2.0)
-    Z = V[:, -r:]                                # 64 x r, Z^H Z = I
-    G = Z.T @ Z                                  # complex SYMMETRIC (NO conjugation) = restricted B
-    s = np.linalg.svd(G, compute_uv=False)
-    return float(s.min())
-
-
-form_cp = [form_minsv(P) for P in P6]                  # CP-completed: each ~ 1.0
+ranks6 = [int(np.linalg.matrix_rank(P, tol=TOL_EIG)) for P in P6]
 
 # ==================================== gates
 
@@ -414,12 +413,26 @@ def cov_dev(u, sign):
 
 Z6 = [orthobasis(P) for P in P6]
 labels6 = ["8_a", "8_b", "12_a", "12_b", "12+", "12-"]
+decomp_sum = nrm(sum(P6) - np.eye(N))
+decomp_herm = max(nrm(P - P.conj().T) for P in P6)
+decomp_idem = max(nrm(P @ P - P) for P in P6)
+decomp_orth = max(
+    nrm(P6[i] @ P6[j])
+    for i in range(len(P6))
+    for j in range(len(P6))
+    if i != j
+)
+decomp_hinv = max(nrm(g @ P - P @ g) for g in gensHc for P in P6)
 
 # ---- inherited-construction sanity (build on a verified base, not a fabricated one) ----
 gate("G-CONSTRUCT-J2", nrm(Jfull @ Jfull + np.eye(N)) < TOL_F,
      "inherited J_full^2 = -I (Unit 8 total complex structure)")
-gate("G-DECOMP-COMPLETE", nrm(sum(P6) - np.eye(N)) < TOL_F,
-     "six Unit-14 constituent projectors resolve the identity (sum = I_64)")
+gate("G-DECOMP-COMPLETE",
+     decomp_sum < TOL_F and decomp_herm < TOL_F and decomp_idem < TOL_F
+     and decomp_orth < TOL_F and decomp_hinv < TOL_F,
+     f"six Unit-14 constituent projectors are Hermitian/idempotent/orthogonal/H-invariant "
+     f"and resolve I_64 (residuals {decomp_herm:.1e}/{decomp_idem:.1e}/"
+     f"{decomp_orth:.1e}/{decomp_hinv:.1e}/{decomp_sum:.1e})")
 gate("G-DECOMP-RANKS", ranks6 == [8, 8, 12, 12, 12, 12],
      f"constituent ranks {ranks6} == [8, 8, 12, 12, 12, 12]")
 
@@ -430,14 +443,17 @@ gate("G-OMEGA-DEF", nrm(omega + omega.T) < TOL_F and numrank(omega) == 64,
 # ---- T1: chi_sgn = +1 on all 768 G_amb (invariant); wrong-sign rejector live ----
 inv_max = max(cov_dev(g, +1) for g in Gamb)
 inv_wrong = max(cov_dev(g, -1) for g in Gamb)
-gate("G-OMEGA-INV", inv_max < TOL_F and inv_wrong > maxabs_w,
-     f"g^T w g = +w on all 768 G_amb (max dev {inv_max:.1e}); wrong-sign rejector {inv_wrong:.3f} > max|w| {maxabs_w:.3f}")
+gate("G-OMEGA-INV", gamb_complete and inv_max < TOL_F and inv_wrong > maxabs_w,
+     f"|G_amb|={len(Gamb_keys)}==768 and g^T w g = +w on every element (max dev {inv_max:.1e}); "
+     f"wrong-sign rejector {inv_wrong:.3f} > max|w| {maxabs_w:.3f}")
 
 # ---- T1: chi_sgn = -1 on all 768 S_eps-coset (negated); wrong-sign rejector live ----
 cos_neg = max(cov_dev(c, -1) for c in coset)
 cos_wrong = max(cov_dev(c, +1) for c in coset)
-gate("G-OMEGA-COSET", cos_neg < TOL_F and cos_wrong > maxabs_w,
-     f"c^T w c = -w on all 768 S_eps-coset (max dev {cos_neg:.1e}); wrong-sign rejector {cos_wrong:.3f} > max|w| {maxabs_w:.3f}")
+gate("G-OMEGA-COSET", extension_complete and cos_neg < TOL_F and cos_wrong > maxabs_w,
+     f"768-element disjoint normalized S_eps-coset gives |H|={len(Gamb_keys | coset_keys)}==1536 "
+     f"and c^T w c = -w on every coset element (max dev {cos_neg:.1e}); "
+     f"wrong-sign rejector {cos_wrong:.3f} > max|w| {maxabs_w:.3f}")
 
 # ---- T1: S_eps carries the negation (the Unit-9 covariance input S_eps J_full S_eps = -J_full, in omega form) ----
 seps_neg = cov_dev(Seps_int, -1)
@@ -481,15 +497,17 @@ gate("G-PAIR-RANK",
      f"assembled G antisymmetric, rank {grank} == 64; accounting {self_ranks} + 2*{rk[4][5]} = {total_form_rank} == 64")
 
 # ---- anti-fabrication spine: on 12+ ALONE, the SYMMETRIC form is nondegenerate but omega is isotropic ----
-# same basis Z6[4]: symmetric u^T v is nondegenerate (min-sv ~1, == Unit-15 form_cp[4]) while the
+# same basis Z6[4]: symmetric u^T v has unit singular spectrum while the
 # antisymmetric u^T omega v vanishes. Proves the isotropy is omega's antisymmetry x chi_sgn
 # (12+ (x) chi_sgn = 12- != 12+), NOT a subspace degeneracy. A fabricator using the wrong (symmetric)
 # form gets nondegenerate everywhere and FAILS this contrast.
-sym4 = float(np.linalg.svd(Z6[4].T @ Z6[4], compute_uv=False).min())
+sym4_svals = np.linalg.svd(Z6[4].T @ Z6[4], compute_uv=False)
+sym4_unit_dev = float(np.max(np.abs(sym4_svals - 1.0)))
 asym4 = frob[4][4]
 gate("G-CONTRAST-SYMVSANTI",
-     sym4 > 0.5 and asym4 < FZ and abs(sym4 - form_cp[4]) < TOL_EIG,
-     f"12+: symmetric form min-sv {sym4:.3f} nondegenerate (== form_cp[4] {form_cp[4]:.3f}); omega self ||{asym4:.1e}|| isotropic")
+     sym4_unit_dev < TOL0 and asym4 < FZ,
+     f"12+: all 12 symmetric-form singular values equal 1 (max dev {sym4_unit_dev:.1e}); "
+     f"omega self ||{asym4:.1e}|| isotropic")
 
 # ---- source-pin gates ----
 gate("G-PIN-U14", PIN_U14 in note_text(U14_NOTE),

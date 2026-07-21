@@ -739,6 +739,94 @@
         "total_pass": 27
       },
       "verdict_rationale": "Issue: neither cited upstream authority is supplied, while the runner hard-codes the retained generator matrices and marks the observable-descent/kernel steps true instead of deriving them from packet authorities. Why this blocks: the finite matrix calculation establishes the result only conditional on those imported inputs and therefore cannot certify the retained-package claim or its derived no-proper-quotient boundary. Repair target: wire both named upstream notes as direct dependencies and supply their retained status and full one-hop content, or provide a self-contained derivation of the generator realization and descent lemma. Claim boundary until fixed: conditional on the stated three-corner sector and generator matrices, every nonzero algebra-preserving linear quotient has dimension three."
+    },
+    {
+      "archived_at": "2026-07-21T01:53:24.251913+00:00",
+      "audit_date": "2026-07-21T01:51:33.072439+00:00",
+      "audit_invocation_history": [
+        "6cc5f670c76343978af917952936efb3"
+      ],
+      "audit_invocation_id": "6cc5f670c76343978af917952936efb3",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 0,
+          "counts": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0
+          },
+          "decoration_candidate": false,
+          "dominant_class": null,
+          "exists": true,
+          "runner_path": "scripts/frontier_three_generation_observable_count_corollary.py"
+        },
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 11.781,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "c7fcaca394bf2438a6e64b84f8b26130d485232c1f5416ee74ceb76832e88656",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_three_generation_observable_count_corollary.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "09070c3f94208a84370d18d8eb08493dc1d8b442789b06328d050e3fd3ae087e",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "09070c3f94208a84370d18d8eb08493dc1d8b442789b06328d050e3fd3ae087e",
+        "runner_path": "scripts/frontier_three_generation_observable_count_corollary.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 109
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260721-b0edd03f",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic quotient argument closes for the supplied 3-by-3 matrices, but the retained-sector identification and kernel-descent premise are not discharged because the packet contains no cited authorities and the runner asserts the descent step with True.",
+      "claim_scope": "Conditional on the stated three-corner hw=1 sector and matrices realizing the retained generation generators, every nonzero linear quotient on which those generators descend has dimension three.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-21T01:51:33.072439+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "If every retained generator descends under a nonzero quotient Q, then ker(Q) is M_3(C)-invariant, so irreducibility forces ker(Q) = {0} and dim(H_red) = 3.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_dependency_edge: wire docs/THREE_GENERATION_STRUCTURE_NOTE.md and docs/THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md as direct dependencies so the restricted packet includes their retained scopes and observable-descent lemma, then re-audit.",
+      "open_dependency_paths": [
+        "docs/THREE_GENERATION_STRUCTURE_NOTE.md",
+        "docs/THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 21,
+        "B": 1,
+        "C": 5,
+        "D": 0,
+        "total_pass": 27
+      },
+      "verdict_rationale": "Issue: the note says its corollary imports two retained inputs, but the restricted packet provides no cited authorities, while the runner hard-codes the generator matrices and marks the observable-descent kernel step as True. Why this blocks: the finite-dimensional implication is valid for the supplied matrices, but the packet does not establish that those matrices and the three-corner sector are the retained operator and observable surface claimed by the note. Repair target: add the two named source notes as direct dependencies, including the descent lemma and their retained scopes, and rerun the audit. Claim boundary until fixed: conditional on the stated sector, matrices, and descent hypothesis, every nonzero algebra-preserving quotient has dimension three."
     }
   ],
   "prose_corrections": [],

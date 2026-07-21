@@ -597,7 +597,7 @@
         },
         {
           "claim_id": "dm_leptogenesis_pmns_projector_interface_note_2026-04-16",
-          "effective_status": "unaudited"
+          "effective_status": "audit_in_progress"
         },
         {
           "claim_id": "dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16",
@@ -2823,6 +2823,6 @@
       "uncertified_count": 648
     }
   ],
-  "repo_head": "955ba4e1da0cec0093014ff43fc823c10486f397",
+  "repo_head": "11bb59eaaeb5eeb5f0ac7e1fc11c78e4a3babf0f",
   "schema": "lane_certification_v2"
 }

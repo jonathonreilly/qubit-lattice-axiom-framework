@@ -1,12 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/kcpt_extended_group_reality_census_2026_07_20.py
-runner_sha256: 93aebf06fefc4f25172e6042e936588ca2e47f713e36797b4115be9dc3a5e9ef
-input_fingerprint_sha256: bf54f35fb9ea467695a0449da5b1e6e55255988a79424b07a38008e53eea639d
+runner_sha256: 15b11e9999525deed9f85a0f3b016a0d98ee9da82f1c2e62fea1fc1e25a562cc
+input_fingerprint_sha256: 0c7dc4840a8411e236ff334476f299744c5880748af7efb480381df20e021c63
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 24.50
+elapsed_sec: 27.21
 status: ok
 ----- stdout -----
+PASS G-CONSTRUCT-GROUP - reconstructed group structure: |G_amb|=768==768, |H|=1536==1536; G_amb subset H, and the 768-element S_eps*G_amb coset is disjoint and completes H; REJECTORS |H| != 768, != 3072
 PASS G-CONSTRUCT-J2 - [FLOAT] independent rebuild J_full^2 = -I_64 (||J^2+I||=4.4e-16<1e-9, well within spec's <0.13), antisymmetric (||J+J^T||=0.0e+00<1e-9): shell/kernel machinery, no sign proxy
 PASS G-CONSTRUCT-PROXY - ANTI-PROXY REJECTOR: the sqrt(m)->1 rational stand-in (/2.0 for /(2 sqrt m)) FAILS J^2=-I (||J_proxy^2+I||=0.625~0.6, >0.1) and differs from J_full (0.126>1e-6): the shell normalizers are load-bearing
 PASS G-CONSTRUCT-SEPS - S_eps J_full S_eps = -J_full [FLOAT] (||.+J||=0.0e+00<1e-9), REJECTOR != +J_full (||.-J||=0.748>1e-6); and EXACT integer S_eps D2 S_eps = -D2 (!= +D2): S_eps carries W <-> H_-
@@ -18,14 +19,14 @@ PASS G-FSGROUP-FS - METHOD A group-sum FS_i = tr(P_i . T), T = mean_H h@h: FS_gr
 PASS G-FSFORM-CP - METHOD B symmetric-form min-sv (CP-completed) = [1.0, 1.0, 1.0, 1.0, 1.0, 1.0] all >1e-6 (~1.0): B(u,v)=u^T v nondegenerate on every CP-completed block -> +1
 PASS G-FSFORM-WONLY - BUILT-IN W-ONLY REJECTOR (W totally B-isotropic): form min-sv on holomorphic-only PW[k] (k=0..3, complex-type) = ['2.7e-16', '6.6e-16', '2.1e-16', '8.3e-17'] all <1e-6, while CP-completed all >1e-6 -- reality is CAUSED by the S_eps CP-doubling, not assumed
 PASS G-AGREE - methods A and B AGREE on all six (A=[1, 1, 1, 1, 1, 1], B=[1, 1, 1, 1, 1, 1], both all +1); no constituent complex-type (all |FS_group|=1: min 1.0000) and none symplectic (no -1: min Re 1.0000>0)
-PASS G-REALCHAR - chi_i(h) = tr(P_i h) REAL over all 1536 h in H: max_h|Im chi_i(h)| over the six constituents = 5.5e-15<1e-9 -- self-dual/real-type directly
+PASS G-REALCHAR - chi_i(h) = tr(P_i h) REAL over all 1536 h in H: max_h|Im chi_i(h)| over the six constituents = 5.5e-15<1e-9 -- self-dual directly; the FS/form gates distinguish orthogonal from quaternionic type
 PASS G-REALIFY-BEFORE - BEFORE census over G_amb on the FIVE holomorphic PW (ranks 4,4,6,6,12): FS_G sorted [0, 0, 0, 0, 1]==[0,0,0,0,1] (four complex-type 0 + one real +1), sum 1==1 [reproduces Unit-13 (0, 0, 0, 0, +1)]
 PASS G-REALIFY-AFTER - AFTER census over H: sum(FS_H)=6==6 vs sum(FS_G)=1==1 -- CP-completion REALIFIES. The four complex-type W-blocks FLIP 0->+1 (True); the unique real 12 STAYS +1 in BOTH split halves (True)
 PASS G-COUNT - c_H = (Sum_{h in H} tr(h)^2)/|H| = 9216/1536 = 6==6 [EXACT INTEGER signed-perm traces] -- six distinct H-constituents; REJECTORS c_H != 5 (unsplit) / != 7
 PASS G-PIN-U14 - SOURCE PIN Unit 14: CP-completion note contains `C^64 = 8 + 8 + 12 + 12 + 12⁺ + 12⁻` (the six-constituent decomposition being censused)
 PASS G-PIN-U13 - SOURCE PIN Unit 13: reality/CP-census note contains `FS = (0, 0, 0, 0, +1)` (the before-census)
 PASS G-PIN-SELF - SELF-NOTE DEPENDENCY DISCIPLINE: total KCPT-links 2==2 (Unit14 1==1, Unit13 1==1); Unit9 0==0 and Unit10 0==0 markdown links (backticked names only)
-TOTAL: PASS=18 FAIL=0
+TOTAL: PASS=19 FAIL=0
 
 ----- stderr -----
 

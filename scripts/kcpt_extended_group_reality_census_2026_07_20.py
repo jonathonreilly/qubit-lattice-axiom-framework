@@ -41,22 +41,26 @@ singular values -- NEVER from the ranks or the expected +1. The BUILT-IN discrim
 J_full is real antisymmetric, so its +-i eigenspaces W and H_- are each TOTALLY
 B-isotropic (u^T v = 0), hence the symmetric form VANISHES on any holomorphic-only
 block PW[k] (min-sv ~ 0, a LIVE rejector gate) and is NONDEGENERATE (min-sv = 1) only
-after the S_eps CP-doubling PW[k]+PHm[k]. Reality is CAUSED by the CP-completion, not
-assumed. Every h in H is a signed permutation so tr(h) in Z and every chi_i(h) =
-tr(P_i h) is real -- there is NO irrationality anywhere in this census; reality is
-decided by gate STRUCTURE (group sum + form nondegeneracy), never by a numeric
-irrational value.
+after the S_eps CP-doubling PW[k]+PHm[k]. For the four complex-type blocks, the +1
+type is CAUSED by the CP-completion; the real rank-12 instead splits into two +1
+extensions. Every h in H is a signed permutation so the full character tr(h) is
+integral and every constituent character chi_i(h) = tr(P_i h) is real.  The
+12^+/- half-characters can still take the Unit-14 irrational values +/-2*sqrt(2);
+this census decides reality by gate STRUCTURE (group sum + form nondegeneracy),
+never by gating an individual irrational character value.
 """
 import itertools
 import os
 import numpy as np
 
-# The two landed notes this runner reads, repo-relative (Unit 14 primary, Unit 13
-# before-census). Plain literal tuple, statically ast-parseable by the runner-cache
-# input fingerprint, matching the Unit-14 runner's declaration mechanism.
+# The three landed notes this runner reads, repo-relative (Unit 14 primary, Unit 13
+# before-census, and this note for dependency-discipline checks). Plain literal tuple,
+# statically ast-parseable by the runner-cache input fingerprint, matching the Unit-14
+# runner's declaration mechanism.
 AUDIT_INPUT_PATHS = (
     "docs/KCPT_CP_COMPLETION_UNDER_EXTENDED_GROUP_BOUNDED_THEOREM_NOTE_2026-07-20.md",
     "docs/KCPT_HOLOMORPHIC_REALITY_CP_CENSUS_FROBENIUS_SCHUR_BOUNDED_THEOREM_NOTE_2026-07-20.md",
+    "docs/KCPT_EXTENDED_GROUP_REALITY_CENSUS_FROBENIUS_SCHUR_BOUNDED_THEOREM_NOTE_2026-07-20.md",
 )
 
 L, N = 4, 64
@@ -416,6 +420,19 @@ FS_G = [float(np.trace(PW[k] @ TG).real) for k in range(5)]   # [0,0,0,0,1]
 
 # ==================================== gates =====================================
 # ---- G-CONSTRUCT: independent J_full rebuild + anti-proxy + S_eps sign reversals ------
+group_structure_ok = (
+    len(Gamb) == 768
+    and len(Hgrp) == 1536
+    and Gamb_set <= Hset
+    and len(coset) == 768
+    and not ({x.tobytes() for x in coset} & Gamb_set)
+    and ({x.tobytes() for x in coset} | Gamb_set) == Hset
+)
+gate("G-CONSTRUCT-GROUP", group_structure_ok,
+     f"reconstructed group structure: |G_amb|={len(Gamb)}==768, |H|={len(Hgrp)}==1536; "
+     f"G_amb subset H, and the {len(coset)}-element S_eps*G_amb coset is disjoint and completes H; "
+     f"REJECTORS |H| != 768, != 3072")
+
 j2 = nrm(Jfull @ Jfull + np.eye(N))
 janti = nrm(Jfull + Jfull.T)
 gate("G-CONSTRUCT-J2", j2 < TOL_F and janti < TOL_F,
@@ -495,7 +512,8 @@ gate("G-AGREE", agree and none_complex and none_symp,
 # ---- G-REALCHAR: characters are real over all of H (independent of the h^2 sum) -------
 gate("G-REALCHAR", all(m < TOL_F for m in char_imax),
      f"chi_i(h) = tr(P_i h) REAL over all {len(Hgrp)} h in H: max_h|Im chi_i(h)| over the six "
-     f"constituents = {max(char_imax):.1e}<1e-9 -- self-dual/real-type directly")
+     f"constituents = {max(char_imax):.1e}<1e-9 -- self-dual directly; the FS/form gates "
+     f"distinguish orthogonal from quaternionic type")
 
 # ---- G-REALIFY: tie Unit 13 (before) to this unit (after) -- the CP-completion realifies
 FS_G_round = sorted(int(round(x)) for x in FS_G)

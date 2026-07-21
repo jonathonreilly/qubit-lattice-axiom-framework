@@ -1,9 +1,10 @@
 {
   "audit_date": null,
   "audit_invocation_history": [
-    "db93c7033c054f82bfb6e09e7257eaa4"
+    "db93c7033c054f82bfb6e09e7257eaa4",
+    "eb3265c8c23247e58f1eefa25ecb2f9a"
   ],
-  "audit_invocation_id": "db93c7033c054f82bfb6e09e7257eaa4",
+  "audit_invocation_id": "eb3265c8c23247e58f1eefa25ecb2f9a",
   "audit_state_snapshot": null,
   "audit_status": "audit_in_progress",
   "auditor": null,
@@ -11,7 +12,7 @@
   "auditor_family": null,
   "auditor_model": null,
   "auditor_reasoning_effort": null,
-  "blocker": "awaiting_cross_confirmation",
+  "blocker": "cross_confirmation_disagreement",
   "chain_closes": null,
   "chain_closure_explanation": null,
   "claim_id": "flavor_native_double_shift_corner_coupling_note_2026-05-30",
@@ -51,8 +52,37 @@
       "verdict": "audited_clean",
       "verdict_rationale": "The claim is a self-contained finite algebraic calculation, and the runner constructs the eight corners, shift matrices, and triplet projection rather than merely printing the expected result. All four checks pass and directly verify the scoped identities and formulas. The note explicitly excludes any derivation of the coefficient ratio or physical flavor identification, so those unproved statements are outside the audited scope."
     },
-    "second_audit": null,
-    "status": "awaiting_second"
+    "second_audit": {
+      "audit_date": "2026-07-21T18:00:53.385604+00:00",
+      "audit_invocation_id": "eb3265c8c23247e58f1eefa25ecb2f9a",
+      "auditor": "codex-audit-batch-B-20260721-de917ba2",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "chain_closes": false,
+      "chain_closure_explanation": "The four finite calculations are correct, but the substantive derived negative boundary that a single shift is not a within-triplet operator lacks the route-diverse N1/N7 and five-resolution N5 execution evidence required for ratification.",
+      "claim_scope": "Finite (Z_2)^3 corner-cube projection identities on the Hamming-weight-1 triplet, the spectrum of Y=aI+b(J-I), and the resulting Koide-ratio formula; no physical coefficient, mass hierarchy, or flavor-sector identification was audited.",
+      "claim_type": "bounded_theorem",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "P S_mu P^T = 0, while P(S_y S_z + S_z S_x + S_x S_y)P^T = J-I on the Hamming-weight-1 triplet.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "notes_for_re_audit_if_any": "runner_artifact_issue: add live route-diverse N1/N7 evidence and the five required N5 resolution-class checks for the single-shift boundary, then rerun the restricted audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 0,
+        "C": 2,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict": "audited_conditional",
+      "verdict_rationale": "N1/N2: the runner exhaustively verifies all three single shifts and the double-shift sum, but it supplies no route-diverse stress-test record for the asserted negative boundary. N3/N5: the load-bearing \u201cis not\u201d statement is supported by zero projection, while the \u201cdoes not\u201d clauses delimit scope; however, the required five-resolution N5 evidence is absent. N4/N6/N8 have no completed prior-witness, partial-closure, or cross-cycle dispositions for this boundary, and N7 lacks an independent steelman resolution. The positive finite identities therefore pass computationally, but the derived negative boundary remains conditional under the binding no-go-discipline policy."
+    },
+    "status": "disagreement"
   },
   "decoration_parent_claim_id": null,
   "deps": [],

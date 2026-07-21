@@ -1,0 +1,101 @@
+{
+  "status": "cycle522-opposite-carrier-reearned-algebraic-compiler-certified",
+  "authority": "none",
+  "audit": "unset",
+  "runner_sha256": "d6a7700d7575dfba02d4b4d2438e54d37a02c6ca7f71673c8a871b474f6e088b",
+  "note_sha256": "f6bf4133144bd1b73beda81d6a7e365ce5accbf472f345c2082e4a41a08ef97d",
+  "tests_passed": 13,
+  "tests_total": 13,
+  "pass": true,
+  "elapsed_seconds": 166.01483808306511,
+  "maximum_RSS_bytes": 506200064,
+  "process_swap_count": 0,
+  "lawful_sizes": [5, 6],
+  "new_M2_relative_to_inherited_roles": 0,
+  "selector": "D(S)={d not in S : (d xor 1) in S}",
+  "selector_normalization": "sqrt((6-|S|)/|D(S)|)",
+  "odd_selector_tests": 768,
+  "odd_selector_failures": 0,
+  "local_M64": {
+    "number_sectors": [0, 1, 2, 3, 4, 5, 6],
+    "flagged_microsectors": 159,
+    "logical_dimension": 127,
+    "selected_rank": 127,
+    "selected_Gram_residual_upper_bound": 8.89e-16,
+    "role_constrained_rank": 127,
+    "raw_rank_without_cell_role": 121,
+    "raw_Gram_operator_residual": 1.0,
+    "rebuilt_coin_intertwiner_residual_upper_bound": 1.25e-15,
+    "rebuilt_coin_unitarity_residual_upper_bound": 6.04e-15,
+    "rebuilt_active_offdiagonal_microterms": 1608,
+    "number_changing_microterms": 0,
+    "port_constraint_commutator_failures": 0,
+    "fixed_sector_commutator_failures": 0,
+    "maximum_transition_support_M2": 27
+  },
+  "inherited_coin_countercontrol": {
+    "intertwiner_residual": 5.441845322043213,
+    "leakage_operator_norm": 0.9402775659787453,
+    "rebuilt_vs_inherited_operator_norm": 1.7837492182395673
+  },
+  "proper_cubic": {
+    "frames": 24,
+    "group_products": 576,
+    "branch_failures": 0,
+    "group_failures": 0,
+    "maximum_covariance_residual_upper_bound": 1.57e-15
+  },
+  "adjacent_twelve_cell_N_le_2": {
+    "logical_columns": 2629,
+    "excitation_seeds": 10009,
+    "singleton_fibers": 10009,
+    "expanded_rows": 10768384,
+    "branches_per_column": 4096,
+    "exact_squared_branch_weight": [1, 4096],
+    "native_comparator_doubletons": 24,
+    "native_comparator_Gram_residual": [1, 400]
+  },
+  "seven_cell_all_order_N_le_2": {
+    "logical_columns": 904,
+    "branches_per_column": 128,
+    "structural_branches": 115712,
+    "physical_rows": 115712,
+    "row_reuses": 0,
+    "maximum_norm_residual_upper_bound": 2.23e-16,
+    "factor_orders": 5040,
+    "maximum_base_branch_support_M2": 33,
+    "maximum_support_with_order_role_M2": 46
+  },
+  "two_cell_all_Fock": {
+    "logical_columns": 4096,
+    "physical_reduced_rays": 25088,
+    "matrix_nonzeros": 25600,
+    "processed_Gram_operator_residual": 0.0,
+    "raw_Gram_maximum_upper_bound": 4.45e-16,
+    "minimum_Gram_eigenvalue": 0.9999999999999997,
+    "dense_update_intertwiner_residual": 0.0,
+    "maximum_randomized_inverse_residual_upper_bound": 5.90e-16,
+    "patch_union_M2": 83,
+    "maximum_joint_branch_support_M2": 65
+  },
+  "mass": {
+    "Cycle219_fixture": 0.4534056541748851,
+    "recovered_fixture": 0.4534056541748851,
+    "uniform_eigenvector_residual": 3.8571762755144336e-16
+  },
+  "boundary": {
+    "bounded_local_even_CAR_encoding": true,
+    "adjacent_static_Gram_closed_without_new_tag": true,
+    "one_full_two_cell_free_plus_contact_seam": true,
+    "all_24_proper_cubic_frames": true,
+    "held_L6": true,
+    "inherited_native_coin_preserves_selected_code": false,
+    "rebuilt_dense_coin_succeeds": true,
+    "rebuilt_coefficients_derived_from_primitive_law": false,
+    "primitive_one_and_two_M2_gate_synthesis": false,
+    "recurrent_multi_edge_shared_cell_compiler": false,
+    "physical_time_derived": false,
+    "route_independent_obstruction": false,
+    "axiom_pressure": false
+  }
+}

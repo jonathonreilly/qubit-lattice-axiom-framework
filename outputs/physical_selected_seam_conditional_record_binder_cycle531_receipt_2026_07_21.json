@@ -1,0 +1,95 @@
+{
+  "status": "cycle531-selected-seam-conditional-record-interface-binder",
+  "authority": "none",
+  "audit": "unset",
+  "runner_sha256": "8885593dcc644e601179891265c226158c8835a8a143ed7205c0cc7e291e9057",
+  "note_sha256": "ed40564d4e57090cf03e706b54964e5a24cb735f9ca14df8f008fecffc388042",
+  "tests_passed": 7,
+  "tests_total": 7,
+  "pass": true,
+  "elapsed_seconds_internal": 11.535541374934837,
+  "timed_wall_seconds": 95.73,
+  "maximum_RSS_bytes": 882851840,
+  "process_swap_count": 0,
+  "theorem_layers": {
+    "I": "EDGE/current/K yields a reversible pre-Record interface and never selects MEMBER",
+    "II": "given supplied law-owned MEMBER and matching provenance, EDGE triggers the Cycle508 occurrence and admitted-atom image"
+  },
+  "strict_upstream_hashes": {
+    "Cycle526_runner": "7c3d4a35664eaf5c7737c86464ca069e15ce29c40f61778081af8139970c37cd",
+    "Cycle526_note": "2db4d547b284d7c2e19fcd10182ddf682a2ccd6b3907bf075b4097c8e9312615",
+    "Cycle505_runner": "87f96ab5c7fd9e96c91cb32de0e2dd012e60d6cce62cf90403fb91a5e041275e",
+    "Cycle505_note": "c3e8a1220172d5052089511616ad0ca2cdf6f6db5c92dc520c03a22600e112f4",
+    "Cycle508_train_runner": "b223ff44b159a598ef52ea21b3e758a1303e126d7f53474f799ed14c0a829dc6",
+    "Cycle508_held_runner": "f2a1c2a7ce2603fceb1a86b05c24e897111fbf44dde3e0ac0366e58c3c97a3d6",
+    "Cycle508_held_note": "8651a1bcfb39b2e2b8980bd5a25a352ffbe3e8e7a199ff421fc47f3a576c03c7",
+    "Cycle500_runner": "01c459cd067e4b02b60558a3c29c95a0f93b3fd1d916a27176e35128f1668a90",
+    "Cycle500_note": "0ba90e82d3759726914cf72d5f27f1687995045ce0c642e809f7bce713f79caa",
+    "realized_state_primitive": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+    "Born_frequency_boundary": "f01676e96d4470498db667224a922847c98e0425bbdc88354513b7d61c38f081",
+    "premise_registry": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5"
+  },
+  "exhaustive_interface": {
+    "complete_Cycle526_Fock_x_K_columns": 65536,
+    "conditional_member_columns": 65536,
+    "moving_event_columns": 32768,
+    "layer_I_failures": 0,
+    "conditional_layer_II_failures": 0,
+    "inverse_failures": 0,
+    "work_cleanup_failures": 0,
+    "input_mutations": 0,
+    "maximum_imported_phase_modulus_residual": 0.0
+  },
+  "Cycle508_comparator": {
+    "labels_tested": 5,
+    "occurrence_atom_output_failures": 0,
+    "member_production_law_reproduced": false
+  },
+  "resources": {
+    "Cycle526_imported_envelope_M2": 106,
+    "Cycle505_imported_binding_envelope_M2": 45,
+    "new_cross_lane_M2": 25,
+    "bounded_composite_M2": 176,
+    "logical_gates": 62,
+    "maximum_logical_support_M2": 3,
+    "routing_adjacent_SWAPS": 4099,
+    "routing_CNOT_primitives": 24594,
+    "nearest_neighbor_operations_including_three_site_Toffoli": 24656,
+    "routed_schedule_sha256": "a56a160379beea8d4e0b40955cb1ff7166ee36fe8aee7ffde5523a1f44bc4c50",
+    "routed_logical_failures": 0,
+    "routed_inverse_failures": 0
+  },
+  "covariance": {
+    "proper_cubic_frames": 24,
+    "bridge_frame_tests": 5760,
+    "bridge_frame_failures": 0,
+    "endpoint_preserving_frames": 12,
+    "endpoint_reversing_frames": 12,
+    "signed_current_action": "J_plus and J_minus exchange under endpoint reversal"
+  },
+  "deletions_and_domain": {
+    "delete_EDGE_basis_residual": 1.4142135623730951,
+    "delete_MEMBER_basis_residual": 1.4142135623730951,
+    "delete_binding_predicate_basis_residual": 1.4142135623730951,
+    "delete_law_receipt_basis_residual": 1.4142135623730951,
+    "individual_gate_witness_checks": 3229,
+    "unwitnessed_gate_deletions": 0,
+    "malformed_domain_rejections": 7,
+    "expected_malformed_domain_rejections": 7
+  },
+  "boundary": {
+    "physical_port_interface_binder": true,
+    "integrated_full_amplitude_176_M2_encoder": false,
+    "one_two_M2_reduction_of_Toffoli_layer": false,
+    "autonomous_member_or_receipt_preparation": false,
+    "intermediate_imported_constraint_preservation": false,
+    "actualization_law_derived": false,
+    "framework_Record_derived": false,
+    "realized_history_derived": false,
+    "Born_probability_or_sampler_derived": false,
+    "physical_time_derived": false,
+    "energy_stress_source_or_gravity_derived": false,
+    "shared_substrate_obstruction": false,
+    "axiom_pressure": false
+  }
+}

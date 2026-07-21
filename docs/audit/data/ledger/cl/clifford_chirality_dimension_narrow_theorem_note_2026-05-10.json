@@ -31,7 +31,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 10.506,
+  "load_bearing_score": 10.508,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -728,6 +728,102 @@
         "total_pass": 25
       },
       "verdict_rationale": "T1, the even-dimensional construction, and the d_s=3 parity specialization are genuine class-A algebra, and all 25 reported checks pass; the accepted Z^3 premise is used within its stated boundary. The artifact also asserts an odd-dimensional no-go boundary, triggering N1-N8. N1 lacks five distinct evidenced attack mechanisms; N2 has only the parity wall; N3 reveals no hidden premise beyond accepted axiom wording; N4 supplies no prior witness; and N5 lacks live checks at all five required resolutions. N6 and N8 are not completely dispositioned and no independent N7 steelman resolution is supplied, so the negative half remains audit-conditional rather than disproved."
+    },
+    {
+      "archived_at": "2026-07-21T17:11:01.192821+00:00",
+      "audit_date": "2026-07-21T16:58:14.812266+00:00",
+      "audit_invocation_history": [
+        "4ed707a0dbd74731adc7759a5fbdfa14"
+      ],
+      "audit_invocation_id": "4ed707a0dbd74731adc7759a5fbdfa14",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 0,
+            "B": 0,
+            "C": 1,
+            "D": 0
+          },
+          "decoration_candidate": false,
+          "dominant_class": "C",
+          "exists": true,
+          "runner_path": "scripts/frontier_clifford_chirality_dimension_narrow.py"
+        },
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 10.506,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "c7fcaca394bf2438a6e64b84f8b26130d485232c1f5416ee74ceb76832e88656",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_clifford_chirality_dimension_narrow.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "0fcf04fd632a7c7166da66db1aac03096be839a97ea9a7af03082eecf3fa2fe9",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "0fcf04fd632a7c7166da66db1aac03096be839a97ea9a7af03082eecf3fa2fe9",
+        "runner_path": "scripts/frontier_clifford_chirality_dimension_narrow.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 726
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260721-e36b9016",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic proof is sound on its stated internal-Clifford-algebra domain, but the claim includes a substantive odd-dimensional no-go result and the supplied live runner lacks the five-route N1 stress test and five-resolution N5 evidence required for clean negative certification.",
+      "claim_scope": "Complex Clifford-algebra volume-element parity and the even-dimensional internal chirality construction; the odd-dimensional nonexistence branch and resulting conditional Z^3 parity boundary remain pending no-go-discipline certification.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-21T16:58:14.812266+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "A Clifford-basis monomial anticommutes with every generator only when it is the full volume element and n is even, so A_n is zero for odd n and spans omega for even n.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary",
+        "no_go_result"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "other: add a current-cycle no-go audit runner supplying at least five distinct attack-route tests and explicit per_element, per_site, per_mode, per_block, and lattice_wide resolution lines, then re-audit the full iff claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 25,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 25
+      },
+      "verdict_rationale": "The volume-element identity, even-n chirality construction, and Clifford-basis necessity argument are algebraically correct, and the Z^3 specialization follows under the explicitly conditional total-algebra hypothesis. However, the odd-n nonexistence result and exclusion of even d_t are substantive negative assertions. Because the current-cycle runner does not provide the mandatory no-go stress-test and resolution evidence, the full iff claim cannot receive audited_clean certification in this packet."
     }
   ],
   "prose_corrections": [],
@@ -741,6 +837,6 @@
   },
   "runner_path": "scripts/frontier_clifford_chirality_dimension_narrow.py",
   "title": "Clifford Chirality-Dimension Narrow Theorem",
-  "transitive_descendants": 726,
+  "transitive_descendants": 727,
   "verdict_rationale": null
 }

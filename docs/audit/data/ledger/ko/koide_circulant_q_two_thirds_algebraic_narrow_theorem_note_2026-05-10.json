@@ -102,7 +102,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "retained",
-  "load_bearing_score": 30.726,
+  "load_bearing_score": 30.728,
   "load_bearing_step": "Using T1 and T2 gives sum_k x_k = 3 v_0 and sum_k x_k^2 = 6 v_0^2, hence their ratio is 6 v_0^2 / (3 v_0)^2 = 2/3.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -1338,6 +1338,6 @@
   },
   "runner_path": "scripts/frontier_koide_circulant_q_two_thirds_algebraic_narrow.py",
   "title": "Koide Q = 2/3 Circulant Algebraic Narrow Theorem",
-  "transitive_descendants": 846,
+  "transitive_descendants": 847,
   "verdict_rationale": "The claim is a self-contained exact algebraic identity and does not depend on the parent note or any physical identification. The runner genuinely performs exact symbolic checks of T1-T3, while the positivity-qualified corollary follows immediately from sqrt(x_k^2) = x_k. The exclusions concerning masses, coefficient selection, scale, and phase correctly limit scope rather than supply load-bearing premises."
 }

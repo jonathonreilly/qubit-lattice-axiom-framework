@@ -32,7 +32,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 11.508,
+  "load_bearing_score": 11.51,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -110,6 +110,6 @@
   },
   "runner_path": "scripts/frontier_hierarchy_matsubara_free_energy_density_narrow.py",
   "title": "Hierarchy Matsubara Free-Energy Density - Narrow Algebraic Theorem",
-  "transitive_descendants": 727,
+  "transitive_descendants": 728,
   "verdict_rationale": null
 }

@@ -5152,6 +5152,91 @@
         "total_pass": 35
       },
       "verdict_rationale": "The positive algebra is correct: products of unitaries are unitary, squared entry magnitudes are doubly stochastic, and ordered simple-spectrum diagonalizers differ only by phases. However, the note also asserts derived no-go boundaries for degenerate spectra and absent eigenvalue labels; the current evidence supplies phase, permutation, and one finite degenerate-basis test but not five distinct N1 attack mechanisms, a complete N2 wall-independence treatment, or complete N3-N4 scans. For N5-N7, stdout lacks the required five-resolution rhetoric checks, exhaustive partial-closure dispositions, and an independently evidenced steelman resolution. The N8 index is present, but its candidates are not exhaustively dispositioned here, so the no-go-discipline gate cannot pass even though the narrow algebraic result is sound."
+    },
+    {
+      "archived_at": "2026-07-21T17:37:59.715875+00:00",
+      "audit_date": "2026-07-21T17:36:14.631810+00:00",
+      "audit_invocation_history": [
+        "43206bb95e604bc4a2fc92dc26b679b0"
+      ],
+      "audit_invocation_id": "43206bb95e604bc4a2fc92dc26b679b0",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 0,
+            "B": 2,
+            "C": 14,
+            "D": 0
+          },
+          "decoration_candidate": false,
+          "dominant_class": "C",
+          "exists": true,
+          "runner_path": "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py"
+        },
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 18.57,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "c7fcaca394bf2438a6e64b84f8b26130d485232c1f5416ee74ceb76832e88656",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "563fa74307f829d7cb673e7a6497a76aad85a5d78c378ddc1dc7b877651fd31f",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "563fa74307f829d7cb673e7a6497a76aad85a5d78c378ddc1dc7b877651fd31f",
+        "runner_path": "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 759
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260721-682c4d9a",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The mathematical proof closes on its stated hypotheses, but the full audit chain does not close for the asserted degenerate-spectrum boundary because N5's five-resolution execution record and N7's independent resolution surface are absent.",
+      "claim_scope": "For fixed 3 x 3 unitary eigenvector matrices, U_pair is unitary and |U_pair|^2 is doubly stochastic and rephasing-invariant; for simple spectra with ascending labels the ordered packet is intrinsic, while degeneracy destroys intrinsicness.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-21T17:36:14.631810+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "For simple spectra with ascending-eigenvalue labels, any other ordered diagonalizer differs only by diagonal column phases, so |U_e^dagger U_nu|^2 is intrinsic to the pair.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: add current-cycle N1-N8 stress output containing the required five resolution-class lines for every authenticated negative phrase and an independent N7 resolution surface.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 21,
+        "B": 14,
+        "C": 0,
+        "D": 0,
+        "total_pass": 35
+      },
+      "verdict_rationale": "The finite algebra and simple-spectrum ordered-label uniqueness are valid and are computed rather than merely printed by the runner. N1 and N2 are substantively addressed by rephasing, row/column relabeling, and degenerate-eigenspace-rotation checks, with the label and degeneracy boundaries distinct. N3, N4, N6, and N8 reveal no load-bearing hidden admission, no prior-ruled witness, and no relevant registry or cross-cycle candidate for this finite-dimensional claim. N5 and N7 cannot be certified from the restricted packet because stdout supplies neither the mandated five resolution-class lines for each authenticated negative phrase nor an independent resolution surface, so audited_clean is unavailable."
     }
   ],
   "prose_corrections": [],

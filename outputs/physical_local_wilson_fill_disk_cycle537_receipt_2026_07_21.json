@@ -1,0 +1,66 @@
+{
+  "status": "cycle537-local-fill-disk-algebraic-partial-closure",
+  "authority": "none",
+  "audit": "unset",
+  "runner_sha256": "cd00034db5e106accfd95e33de5c9b3b2a26b2c35719611454c3486481ad47ac",
+  "note_sha256": "e413a8c079fa2d5ff14d1b46d19df60cd07d853d118b51d8494632cc03a427f8",
+  "tests_passed": 10,
+  "tests_total": 10,
+  "pass": true,
+  "elapsed_seconds_internal": 186.66296724998392,
+  "timed_wall_seconds": 189.06,
+  "maximum_RSS_bytes": 130891776,
+  "process_swap_count": 0,
+  "factorization": {
+    "lengths": [5, 6],
+    "rough_M2": [2750, 4752],
+    "added_fill_M2": [120, 180],
+    "total_M2": [2870, 4932],
+    "stabilizer_rank": [1996, 3421],
+    "code_exponent": [874, 1511],
+    "fixed_parity_sector_exponent": [873, 1510],
+    "target_Fock_exponent": [750, 1296],
+    "gauge_qubits": [124, 215],
+    "Wilson_rank_increments_after_local_fill": [[0, 0, 0], [0, 0, 0]],
+    "Wilson_initializer_rows_supplied": 0,
+    "both_matter_parity_sectors_nonempty": true,
+    "explicit_dressed_gauge_exhausts_commutant": true
+  },
+  "bounded_support": {
+    "maximum_dressed_local_constraint_M2": 34,
+    "maximum_dressed_matter_M2": 14,
+    "maximum_dressed_gauge_M2": 22,
+    "maximum_fill_X_star_M2": 4,
+    "maximum_fill_Z_face_M2": 11,
+    "maximum_onsite_M2": 7,
+    "maximum_contact_M2": 16,
+    "maximum_B_FSWAP_block_M2": 17,
+    "maximum_dual_path_edges_L5_L6": 4
+  },
+  "covariance": {
+    "proper_cubic_frames": 24,
+    "frame_products": 576,
+    "frame_orbit_failures": 0,
+    "runtime_frame_query": false,
+    "compile_time_retriangulated_fill_orbit": true,
+    "one_fixed_frame_independent_cap_triangulation_claimed": false
+  },
+  "deletions": {
+    "full_stabilizer_rank": 442,
+    "delete_one_fill_face_rank": 441,
+    "delete_one_fill_star_rank": 441,
+    "delete_one_fill_face_Wilson_rank_increment": 1,
+    "deleted_FSWAP_fourth_term_residual": 1.0
+  },
+  "boundary": {
+    "three_Wilson_words_in_span_of_bounded_local_fill_checks": true,
+    "fixed_target_tensor_gauge_algebra_closed": true,
+    "new_cap_sheet_topology_imported": true,
+    "fixed_single_frame_independent_physical_embedding_closed": false,
+    "bounded_state_preparation_circuit_closed": false,
+    "unconditional_existing_M2_substrate_compiler_claimed": false,
+    "shared_substrate_obstruction": false,
+    "axiom_pressure": false,
+    "broad_negative_gate": "FAIL / DO NOT SHIP"
+  }
+}

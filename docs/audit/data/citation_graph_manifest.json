@@ -1,6 +1,6 @@
 {
- "edge_count": 14977,
- "node_count": 4464,
+ "edge_count": 14979,
+ "node_count": 4465,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -6945,6 +6945,10 @@
   "kcpt_cp_completion_under_extended_group_bounded_theorem_note_2026-07-20": {
    "deps_hash": "f2454b007e3d",
    "out_degree": 3
+  },
+  "kcpt_dirac_even_algebra_reach_character_cp_charge_bounded_theorem_note_2026-07-21": {
+   "deps_hash": "a5586bc5ff1d",
+   "out_degree": 2
   },
   "kcpt_dirac_radius_grading_of_end_h_bounded_theorem_note_2026-07-20": {
    "deps_hash": "655c89a06c96",

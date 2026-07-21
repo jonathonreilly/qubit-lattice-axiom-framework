@@ -1,0 +1,72 @@
+{
+  "status": "cycle523-protected-shadow-onsite-primitive-compiler-certified",
+  "authority": "none",
+  "audit": "unset",
+  "runner_sha256": "d9dd02bbb4dfacebf0f75f6b8c56881ff56653843cb7ed75baa381d5aa605b9d",
+  "note_sha256": "a8fc040d97e019214000eec4bdef702f259b9f30c011b77c97261e5c1288cf20",
+  "Cycle522_runner_sha256": "d6a7700d7575dfba02d4b4d2438e54d37a02c6ca7f71673c8a871b474f6e088b",
+  "tests_passed": 8,
+  "tests_total": 8,
+  "pass": true,
+  "elapsed_seconds": 66.0075873330934,
+  "maximum_RSS_bytes": 116867072,
+  "process_swap_count": 0,
+  "lawful_sizes": [5, 6],
+  "onsite_compiler": {
+    "logical_dimension": 64,
+    "physical_dimension": 128,
+    "active_M2_per_cell": 7,
+    "primitive_support_M2": 2,
+    "primitive_gates": 88,
+    "QR_Givens": 10,
+    "QR_onsite_phases": 1,
+    "coin_calls": 31,
+    "contact_pairs": 15,
+    "contact_calls": 45,
+    "onsite_EG_intertwiner_residual": 5.272182555577386e-15,
+    "maximum_column_residual": 9.992007221626409e-16,
+    "terminal_code_leakage_residual": 0.0,
+    "inverse_roundtrip_residual": 7.504184205291937e-15,
+    "mass_fixture_residual": 2.220446049250313e-16
+  },
+  "proper_cubic": {
+    "frames": 24,
+    "frame_products": 576,
+    "pure_geometric_coin_failed_frames": 22,
+    "maximum_pure_geometric_coin_residual": 9.237604307034013,
+    "maximum_corrected_frame_code_residual": 8.102539046077842e-15,
+    "frame_product_failures": 0,
+    "maximum_routed_Koszul_CZ_calls": 45
+  },
+  "native_shadow_decoder": {
+    "selected_patterns_per_cell": 160,
+    "decoded_occupation_words": 64,
+    "degree_two_feature_rank": 68,
+    "degree_two_feature_nullity": 38,
+    "L5_direction_tests": 120000,
+    "L6_direction_tests": 207360,
+    "direction_test_failures": 0,
+    "compute_calls": 282,
+    "compute_uncompute_calls": 564,
+    "Toffoli_reconstruction_residual": 7.346882794269506e-16,
+    "nearest_neighbor_routing_synthesized": false,
+    "bare_recurrent_native_amplitude_transition_synthesized": false
+  },
+  "schedule": {
+    "L5_gate_calls": 12500,
+    "L6_gate_calls": 21600,
+    "derived_depth_upper_bound": 98,
+    "host_adaptive_control": false,
+    "derived_order_is_causal_time": false
+  },
+  "stream_boundary": {
+    "L5_two_particle_pairs": 280875,
+    "L5_wrong_exchange_signs": 60600,
+    "L6_two_particle_pairs": 839160,
+    "L6_wrong_exchange_signs": 154800,
+    "operator_norm_residual": 2.0,
+    "full_Cycle230_stream_compiler_claimed": false,
+    "route_independent_obstruction": false,
+    "axiom_pressure": false
+  }
+}

@@ -1,6 +1,6 @@
 {
- "edge_count": 14979,
- "node_count": 4465,
+ "edge_count": 14981,
+ "node_count": 4466,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -6952,6 +6952,10 @@
   },
   "kcpt_dirac_radius_grading_of_end_h_bounded_theorem_note_2026-07-20": {
    "deps_hash": "655c89a06c96",
+   "out_degree": 2
+  },
+  "kcpt_dirac_symmetry_five_module_selective_cp_fusion_bounded_theorem_note_2026-07-21": {
+   "deps_hash": "a5586bc5ff1d",
    "out_degree": 2
   },
   "kcpt_extended_group_reality_census_frobenius_schur_bounded_theorem_note_2026-07-20": {

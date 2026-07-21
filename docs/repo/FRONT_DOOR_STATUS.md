@@ -31,7 +31,7 @@ Owner-approval history for axioms and primitives:
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3849 |
+| Ledger rows | 3850 |
 | Applied audit verdicts | 459 |
 | Retained-grade rows, including boxed decorations | 408 |
 | Retained positive theorems | 84 |
@@ -39,7 +39,7 @@ Owner-approval history for axioms and primitives:
 | Retained bounded rows | 308 |
 | Boxed decorations under retained parents | 16 |
 | Open gates | 2 |
-| Unaudited rows | 3020 |
+| Unaudited rows | 3021 |
 | Retained-pending-chain rows | 5 |
 | Audited conditional rows | 22 |
 | Audited renaming rows | 15 |
@@ -54,13 +54,13 @@ Full audit-ratified row list: [`docs/repo/RETAINED_BACKBONE.md`](RETAINED_BACKBO
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 3057 |
+| Total pending rows | 3058 |
 | Ready rows | 642 |
 | Cycle-break targets | 59 |
 | Critical pending | 660 |
 | High pending | 371 |
 | Medium pending | 839 |
-| Leaf pending | 1187 |
+| Leaf pending | 1188 |
 
 Next ready rows by queue order:
 
@@ -164,25 +164,25 @@ Lane rows advanced by the simulated interleave (positions gained; complete list)
 - `dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17`: +9
 - `higgs_mechanism_note`: +9
 - `lorentz_violation_derived_note`: +8
+- `koide_q23_oh_covariance_nogo_note_2026-04-22`: +8
 - `tensor_support_center_excess_law_note`: +7
 - `dm_neutrino_odd_circulant_z2_slot_theorem_note_2026-04-15`: +7
 - `universal_gr_casimir_block_localization_note`: +7
-- `koide_q23_oh_covariance_nogo_note_2026-04-22`: +7
+- `koide_native_zero_section_closure_route_note_2026-04-24`: +7
 - `s3_boundary_link_theorem_note`: +6
 - `g_bare_rigidity_theorem_note`: +6
 - `rconn_derived_note`: +6
-- `koide_native_zero_section_closure_route_note_2026-04-24`: +6
+- `q_integer_spectrum_theorem_note_2026-05-02`: +6
 - `physical_lattice_necessity_note`: +5
 - `hypercharge_identification_note`: +5
 - `planck_target3_clifford_phase_bridge_theorem_note_2026-04-25`: +5
 - `single_axiom_hilbert_note`: +5
+- `signed_gravity_response_lane_status_note_2026-04-26`: +5
 - `planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30`: +5
-- `q_integer_spectrum_theorem_note_2026-05-02`: +5
 - `teleportation_native_axioms_theory_note`: +5
 - `yt_color_projection_correction_note`: +4
 - `three_generation_observable_count_corollary_note_2026-05-03`: +4
 - `koide_q_delta_residual_cohomology_obstruction_no_go_note_2026-04-24`: +4
-- `signed_gravity_response_lane_status_note_2026-04-26`: +4
 - `bh_entropy_rt_ratio_widom_no_go_note`: +4
 - `charged_lepton_two_higgs_canonical_reduction_note`: +4
 - `s3_mass_matrix_conditional_degeneracy_note_2026-07-11`: +3
@@ -233,6 +233,7 @@ Non-lane rows deferred by the simulated interleave (positions lost; complete lis
 - `su3_wigner_intertwiner_block1_theorem_note_2026-05-03`: -8
 - `lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10`: -8
 - `dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16`: -8
+- `koide_aps_eta_topological_robustness_bounded_theorem_note_2026-07-02`: -8
 - `real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08`: -7
 - `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09`: -7
 - `gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06`: -7
@@ -262,7 +263,7 @@ Non-lane rows deferred by the simulated interleave (positions lost; complete lis
 - `staggered_scalar_mass_class_bounded_premise_bridge_note_2026-06-03`: -7
 - `koide_mru_weight_class_obstruction_theorem_note_2026-04-19`: -7
 - `gauge_vacuum_plaquette_distinct_shell_exact_core_narrow_theorem_note_2026-05-29`: -7
-- `koide_aps_eta_topological_robustness_bounded_theorem_note_2026-07-02`: -7
+- `koide_r_half_dynamical_determinant_route_pruning_no_go_note_2026-06-08`: -7
 - `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17`: -6
 - `flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15`: -6
 - `qcd_low_energy_running_bridge_note_2026-05-01`: -6
@@ -274,8 +275,8 @@ Non-lane rows deferred by the simulated interleave (positions lost; complete lis
 - `flavor_r_half_stable_under_thermalizing_arrow_2026-06-02`: -5
 - `gravity_sign_audit_2026-04-10`: -5
 - `koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29`: -5
+- `complex_action_note`: -5
 - `schur_covariance_inheritance_narrow_theorem_note_2026-05-02`: -5
-- `koide_r_half_dynamical_determinant_route_pruning_no_go_note_2026-06-08`: -5
 - `abj_epsilon_index_square_block_no_go_note_2026-05-30`: -4
 - `koide_z3_equivariant_anticommuting_no_go_note_2026-05-16`: -4
 - `koide_emergent_time_eta_conjugation_parity_bounded_note_2026-05-30`: -4
@@ -283,7 +284,6 @@ Non-lane rows deferred by the simulated interleave (positions lost; complete lis
 - `first_order_coframe_unconditionality_no_go_theorem_note_2026-04-30`: -4
 - `bh_quarter_wald_newton_coefficient_narrow_theorem_note_2026-05-10`: -4
 - `ac_reta_hclass_hunit_readout_derivation_obligation`: -4
-- `complex_action_note`: -4
 - `gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17`: -4
 - `fermion_parity_z2_grading_theorem_note_2026-05-02`: -3
 - `clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10`: -3
@@ -332,19 +332,19 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 4463 |
+| Citation-graph nodes | 4464 |
 | Critical nodes | 755 |
 | High nodes | 440 |
 | Medium nodes | 1116 |
-| Leaf nodes | 2152 |
+| Leaf nodes | 2153 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 2109 descendants; score 268.043
-- `graph_first_su3_integration_note` - critical; 1662 descendants; score 64.200
-- `three_generation_observable_theorem_note` - critical; 1270 descendants; score 62.312
+- `minimal_axioms` - critical; 2110 descendants; score 268.044
+- `graph_first_su3_integration_note` - critical; 1663 descendants; score 64.200
+- `three_generation_observable_theorem_note` - critical; 1271 descendants; score 62.313
 - `quark_route2_exact_readout_map_note_2026-04-19` - critical; 197 descendants; score 61.629
-- `observable_principle_from_axiom_note` - critical; 1109 descendants; score 61.616
-- `plaquette_self_consistency_note` - critical; 1245 descendants; score 49.283
-- `key_terminology` - critical; 1292 descendants; score 44.837
-- `minimal_axioms_2026-05-03` - critical; 1140 descendants; score 44.156
+- `observable_principle_from_axiom_note` - critical; 1110 descendants; score 61.618
+- `plaquette_self_consistency_note` - critical; 1246 descendants; score 49.284
+- `key_terminology` - critical; 1293 descendants; score 44.838
+- `minimal_axioms_2026-05-03` - critical; 1141 descendants; score 44.157

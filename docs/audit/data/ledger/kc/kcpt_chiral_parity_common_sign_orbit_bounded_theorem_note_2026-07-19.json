@@ -29,13 +29,13 @@
     "kcpt_ambient_lattice_symmetry_kernel_isolation_averaged_complex_structure_bounded_theorem_note_2026-07-19",
     "kcpt_total_complex_structure_ambient_invariant_kernel_bulk_assembly_bounded_theorem_note_2026-07-19"
   ],
-  "direct_in_degree": 3,
+  "direct_in_degree": 4,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 5.587,
+  "load_bearing_score": 6.17,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -56,6 +56,6 @@
   },
   "runner_path": "scripts/kcpt_chiral_parity_common_sign_orbit_2026_07_19.py",
   "title": "KCPT chiral parity: total complex-structure sign reversal and the common-sign orbit",
-  "transitive_descendants": 16,
+  "transitive_descendants": 17,
   "verdict_rationale": null
 }

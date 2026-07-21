@@ -29,7 +29,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 18.566,
+  "load_bearing_score": 18.568,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -5165,6 +5165,6 @@
   },
   "runner_path": "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
   "title": "DM Leptogenesis PMNS Projector Interface",
-  "transitive_descendants": 757,
+  "transitive_descendants": 758,
   "verdict_rationale": null
 }

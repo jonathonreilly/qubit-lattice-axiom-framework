@@ -57,11 +57,13 @@ SCHEMA_INVALID_RESULTS = {"malformed_json", "validation_failed"}
 SCHEMA_QUARANTINE_RESULT = "schema_invalid_quarantined"
 SCHEMA_DEFERRED_RESULT = "schema_invalid_peer_deferred"
 SCHEMA_SUPERSEDED_RESULT = "schema_invalid_attempt_superseded"
+BLOCKED_ROW_QUARANTINE_RESULT = "blocked_row_reentry_quarantined"
 SCHEMA_RECOVERY_RESULTS = {
     SCHEMA_QUARANTINE_RESULT,
     SCHEMA_DEFERRED_RESULT,
     SCHEMA_SUPERSEDED_RESULT,
 }
+CAMPAIGN_EXCLUSION_RESULTS = {BLOCKED_ROW_QUARANTINE_RESULT}
 SCIENCE_FIX_RESULTS = {"science_fix_dispatched", "science_fix_dispatch_failed"}
 MIN_DELIVERY_BYTES = 200
 PACKET_COMPLETION_STALL_SECONDS = 20 * 60
@@ -1208,6 +1210,83 @@ def persist_campaign_quarantine(
             )
 
 
+def _latest_invalidation_reason(row: dict) -> str:
+    for archived in reversed(row.get("previous_audits") or []):
+        if not isinstance(archived, dict):
+            continue
+        reason = str(archived.get("invalidation_reason") or "").strip()
+        if reason:
+            return reason
+    return "pipeline_reset_to_unaudited_after_applied_verdict"
+
+
+def blocked_row_reentries(
+    selected_rows: list[dict],
+    current_rows: dict[str, dict],
+    report: list[dict],
+) -> dict[str, str]:
+    """Find applied verdicts that the pipeline made immediately selectable.
+
+    The inner batch already skips every attempted row for its own lifetime.
+    This detects the narrower cross-process failure mode: an accepted verdict
+    was committed, but pipeline invalidation reset the same unchanged row to
+    ``unaudited`` and the canonical selector would choose it again.  Such a row
+    cannot make further scientific progress inside the same campaign.
+    """
+    applied = {
+        item.get("cid")
+        for item in report
+        if item.get("result") in SUCCESS_RESULTS - {"compute_required"}
+        and item.get("commit")
+    }
+    reentries: dict[str, str] = {}
+    for selected in selected_rows:
+        cid = selected["claim_id"]
+        row = current_rows.get(cid) or {}
+        if cid not in applied or row.get("audit_status") != "unaudited":
+            continue
+        targets, _ = compute_targets({cid}, current_rows)
+        if not any(target.get("claim_id") == cid for target in targets):
+            continue
+        reason = _latest_invalidation_reason(row)
+        reentries[cid] = reason
+        report.append(
+            {
+                "cid": cid,
+                "result": BLOCKED_ROW_QUARANTINE_RESULT,
+                "detail": (
+                    f"{reason}; accepted verdict was reset to unaudited and "
+                    "dep-ready, so the row is excluded for this campaign"
+                ),
+            }
+        )
+    return reentries
+
+
+def persist_blocked_row_reentries(
+    path: Path | None,
+    reentries: dict[str, str],
+) -> None:
+    if path is None or not reentries:
+        return
+    existing = load_campaign_quarantine(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("a", encoding="utf-8") as handle:
+        for cid in sorted(set(reentries) - existing):
+            handle.write(
+                json.dumps(
+                    {
+                        "claim_id": cid,
+                        "reason": BLOCKED_ROW_QUARANTINE_RESULT,
+                        "invalidation_reason": reentries[cid],
+                        "recorded_at": datetime.now(timezone.utc).isoformat(),
+                    },
+                    sort_keys=True,
+                )
+                + "\n"
+            )
+
+
 def apply_serialized(
     jobs: list[dict],
     report: list[dict],
@@ -1415,7 +1494,8 @@ def main() -> int:
         default=None,
         help=(
             "JSONL file shared by one top-level campaign; exhausted "
-            "schema-invalid claims are skipped for the rest of that campaign"
+            "schema-invalid claims and post-verdict blocked-row reentries are "
+            "skipped for the rest of that campaign"
         ),
     )
     parser.add_argument(
@@ -1579,6 +1659,9 @@ def main() -> int:
         # claim toward the same outcome. Repair, not repetition, moves it.
         session_skipped.update(row["claim_id"] for row in batch)
         current_rows = load_rows()
+        reentries = blocked_row_reentries(batch, current_rows, report)
+        session_skipped.update(reentries)
+        persist_blocked_row_reentries(args.campaign_quarantine_file, reentries)
         disagreements = append_judicial_handoffs(batch, current_rows, report)
         (workdir / "report.jsonl").write_text(
             "".join(json.dumps(item, sort_keys=True) + "\n" for item in report),
@@ -1647,6 +1730,7 @@ def report_has_hard_blocker(report: list[dict]) -> bool:
         | RESUMABLE_HANDOFF_RESULTS
         | SCIENCE_FIX_RESULTS
         | SCHEMA_RECOVERY_RESULTS
+        | CAMPAIGN_EXCLUSION_RESULTS
     )
     recovered = {
         item.get("cid")

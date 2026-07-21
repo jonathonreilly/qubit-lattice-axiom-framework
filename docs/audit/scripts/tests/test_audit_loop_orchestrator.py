@@ -129,6 +129,64 @@ class SchemaRecoveryTest(unittest.TestCase):
         self.assertEqual(records[0]["claim_id"], "row")
         self.assertEqual(records[0]["failures"][0]["detail"], "N8 exact validator error")
 
+    def test_dep_ready_post_verdict_reset_is_persisted_across_batches(self):
+        selected = [{"claim_id": "row"}]
+        current = {
+            "row": {
+                "claim_id": "row",
+                "audit_status": "unaudited",
+                "previous_audits": [
+                    {"invalidation_reason": "no_go_discipline_packet_missing"}
+                ],
+            }
+        }
+        report = [
+            {
+                "cid": "row",
+                "result": "audited_conditional",
+                "commit": "deadbeef",
+            }
+        ]
+        with mock.patch.object(batch, "compute_targets", return_value=([current["row"]], [])):
+            reentries = batch.blocked_row_reentries(selected, current, report)
+
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "campaign-row-exclusions.jsonl"
+            batch.persist_blocked_row_reentries(path, reentries)
+            batch.persist_blocked_row_reentries(path, reentries)
+            records = [json.loads(line) for line in path.read_text().splitlines()]
+            loaded = batch.load_campaign_quarantine(path)
+
+        self.assertEqual(
+            reentries, {"row": "no_go_discipline_packet_missing"}
+        )
+        self.assertEqual(loaded, {"row"})
+        self.assertEqual(len(records), 1)
+        self.assertEqual(
+            records[0]["reason"], batch.BLOCKED_ROW_QUARANTINE_RESULT
+        )
+        self.assertEqual(
+            report[-1]["result"], batch.BLOCKED_ROW_QUARANTINE_RESULT
+        )
+
+    def test_banked_clean_seat_remains_eligible_for_second_pass(self):
+        selected = [{"claim_id": "row"}]
+        current = {
+            "row": {
+                "claim_id": "row",
+                "audit_status": "audit_in_progress",
+                "cross_confirmation": {"status": "awaiting_second"},
+            }
+        }
+        report = [
+            {"cid": "row", "result": "audited_clean", "commit": "deadbeef"}
+        ]
+        with mock.patch.object(batch, "compute_targets") as compute_targets:
+            reentries = batch.blocked_row_reentries(selected, current, report)
+
+        self.assertEqual(reentries, {})
+        compute_targets.assert_not_called()
+
     def test_science_handoff_requires_valid_actionable_verdict(self):
         job = {
             "cid": "row",

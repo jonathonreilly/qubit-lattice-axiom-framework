@@ -90,7 +90,7 @@ def remaining_blocker_count() -> int | None:
     )
 
 
-def schema_quarantine_count() -> int:
+def campaign_exclusion_count(reason: str) -> int:
     path = PROGRESS.get("quarantine_file")
     if not isinstance(path, Path) or not path.exists():
         return 0
@@ -105,9 +105,17 @@ def schema_quarantine_count() -> int:
         except json.JSONDecodeError:
             continue
         cid = row.get("claim_id") if isinstance(row, dict) else None
-        if isinstance(cid, str) and cid:
+        if isinstance(cid, str) and cid and row.get("reason") == reason:
             claim_ids.add(cid)
     return len(claim_ids)
+
+
+def schema_quarantine_count() -> int:
+    return campaign_exclusion_count(batch.SCHEMA_QUARANTINE_RESULT)
+
+
+def blocked_row_reentry_count() -> int:
+    return campaign_exclusion_count(batch.BLOCKED_ROW_QUARANTINE_RESULT)
 
 
 def audit_status_snapshot() -> dict[str, str | None]:
@@ -158,7 +166,8 @@ def summary_line(final: bool = False) -> str:
         f"canary={PROGRESS['canary_state']} "
         f"ready_rows={ready if ready is not None else 'unknown'} "
         f"remaining_lane_blockers={blockers if blockers is not None else 'unknown'} "
-        f"schema_quarantined={schema_quarantine_count()}"
+        f"schema_quarantined={schema_quarantine_count()} "
+        f"blocked_row_reentries={blocked_row_reentry_count()}"
     )
 
 
@@ -450,7 +459,7 @@ def main(argv: list[str] | None = None) -> int:
         tempfile.mkdtemp(prefix="audit_loop_campaign_")
     )
     campaign_dir.mkdir(parents=True, exist_ok=True)
-    args.campaign_quarantine_file = campaign_dir / "schema-invalid-quarantine.jsonl"
+    args.campaign_quarantine_file = campaign_dir / "campaign-row-exclusions.jsonl"
     PROGRESS["quarantine_file"] = args.campaign_quarantine_file
     emit(f"campaign artifacts: {campaign_dir}")
     try:
@@ -520,6 +529,12 @@ def main(argv: list[str] | None = None) -> int:
                     emit(
                         "fixed point excludes campaign-scoped schema-invalid "
                         f"quarantines: {args.campaign_quarantine_file}"
+                    )
+                if blocked_row_reentry_count():
+                    emit(
+                        "fixed point excludes post-verdict rows that immediately "
+                        "re-entered dep-ready selection; all other eligible rows "
+                        f"were drained: {args.campaign_quarantine_file}"
                     )
                 break
 

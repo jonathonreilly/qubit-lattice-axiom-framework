@@ -414,8 +414,10 @@ The graph-cycle warning is currently expected. Treat any error as a blocker.
 
 ## Blocked-Row Loop Guard
 
-- If applying a verdict and rerunning the pipeline immediately invalidates that same row, returns it to the ready queue, or creates a dependency-status cycle that cannot be resolved by the audit verdict alone, do not keep retrying the row in the same audit loop.
-- Restore the pre-claim generated audit diff for that row, record a session-local blocked/skip entry with the claim id and the exact tooling reason, and continue with the next ready row.
+- If applying a verdict and rerunning the pipeline immediately invalidates that same row, returns it to the dep-ready queue, or creates a dependency-status cycle that cannot be resolved by the audit verdict alone, do not keep retrying the row in the same audit campaign.
+- The canonical top-level orchestrator must persist the claim id and exact invalidation reason in its campaign exclusion JSONL and pass that file to every later batch and lane. A batch-local skip set is insufficient because the next batch process would forget it.
+- Treat an accepted verdict as a blocked-row reentry when the post-pipeline row is again `unaudited` and the canonical development-tier selector would immediately choose it. Exclude it for the rest of the campaign, report `blocked_row_reentry_quarantined`, and continue draining every other eligible row. Do not exclude `audit_in_progress` / `awaiting_second` rows; they must resume the missing clean seat normally.
+- Do not stop the top-level drainer merely because a row was excluded this way. Reach the fixed point over all non-excluded rows, then report the blocked rows and their exact invalidation reasons separately from schema-invalid quarantines.
 - Do not write an unsupported blocked verdict into the ledger unless `apply_audit.py` provides such a route. Report skipped blocked rows at the end of the loop and require upstream dependency/status repair before retrying them.
 
 ## Long-Running Runner / Timeout Guard

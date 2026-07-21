@@ -1,0 +1,32 @@
+{
+  "status": "cycle517-adjacent-two-star-static-character-preflight-certified",
+  "authority": "none",
+  "audit": "unset",
+  "runner_sha256": "ad8b0c71840cbfa56aae3ae9da44eceec1cad7d84be06bab32604eb5f6fbb4a3",
+  "note_sha256": "51c3b92448f7779fe838c51265b279d82f48e3b19f6c0464b95f18112bf07a74",
+  "tests_passed": 7,
+  "tests_total": 7,
+  "pass": true,
+  "elapsed_seconds": 44.7051867909031,
+  "maximum_RSS_bytes": 105283584,
+  "process_swap_count": 0,
+  "L5_pair_tests": 261624,
+  "L6_pair_tests": 261624,
+  "active_edges": 15,
+  "inactive_pairs": 51,
+  "anticommuting_cases_per_active_edge": 200,
+  "pair_summary_sha256": "e38941f1753d51a72c43c3f62091c71b802060b08adbdf62a40c32997c420157",
+  "acyclic_orientations": 19208,
+  "cyclic_orientation_words": 13560,
+  "minimum_static_M2_address_bits": 15,
+  "linear_extension_histogram_sha256": "fa2bf7a73849928daad03cbb74182ba46b7f8c06dd1c6449a99bc37ebe7ca379",
+  "unit_witness_tests": 720,
+  "unit_witness_signature_sha256": "6e83bc192e672215f921832677bb3a2bc857a82c912b2c58b45f1ef06b299186",
+  "boundary": {
+    "static_order_character_preflight": true,
+    "twelve_cell_isometry_proven": false,
+    "schedule_compiler_proven": false,
+    "route_independent_obstruction": false,
+    "axiom_pressure": false
+  }
+}

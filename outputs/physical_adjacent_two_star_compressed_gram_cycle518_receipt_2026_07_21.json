@@ -1,0 +1,46 @@
+{
+  "status": "cycle518-native-adjacent-two-star-Gram-counterexample-certified",
+  "authority": "none",
+  "audit": "unset",
+  "runner_sha256": "8f505d2de6476bdbc20f87a901e8be9fe46deda5b568c98d750977069a352e53",
+  "note_sha256": "7278244447e4074e66966e418710e2ad401befc4b8cbfb9d0a30088c0f837107",
+  "tests_passed": 9,
+  "tests_total": 9,
+  "pass": true,
+  "elapsed_seconds": 45.28051041602157,
+  "maximum_RSS_bytes": 259276800,
+  "process_swap_count": 0,
+  "excitation_seeds_per_size": 238681,
+  "quotient_fibers_per_size": 238657,
+  "fiber_histogram": {
+    "1": 238633,
+    "2": 24
+  },
+  "expanded_collision_pairs_per_size": 6144,
+  "unique_physical_rows_per_size": 245512192,
+  "relative_phase_histogram_per_size": {
+    "0": 4096,
+    "2": 2048
+  },
+  "signed_S12_character_sum_histogram_per_size": {
+    "0": 16,
+    "479001600": 8
+  },
+  "fixed_order_nonzero_Gram_pairs": 24,
+  "fixed_order_operator_residual": [1, 400],
+  "fixed_order_Frobenius_residual_squared": [3, 10000],
+  "weighted_order_nonzero_Gram_pairs": 8,
+  "weighted_order_operator_residual": [1, 400],
+  "weighted_order_Frobenius_residual_squared": [1, 10000],
+  "abstract_collision_signature_sha256": "85c36d610d60d6abcab18caaa9e44ebcc3165cafec1deda8df2a19181700d2b3",
+  "collision_rows_sha256": "6def9bd6f18b500eebe14b237fa60d363eefe19c3264bc741806507f3098b806",
+  "proper_frame_collision_tests": 1152,
+  "proper_frame_zero_character_tests": 384,
+  "boundary": {
+    "route_specific_counterexample": true,
+    "physical_M2_compiler_proven": false,
+    "repair_routes_open": true,
+    "route_independent_obstruction": false,
+    "axiom_pressure": false
+  }
+}

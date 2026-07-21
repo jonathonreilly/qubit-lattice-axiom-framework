@@ -1,0 +1,92 @@
+{
+  "status": "cycle529-exact-stateful-runtime-with-preparation-and-fixed-chart-walls",
+  "authority": "none",
+  "audit": "unset",
+  "runner_sha256": "55b6811c71962bf612f13f27dab010e46b72352cda70f2acea35e6602ba9182d",
+  "note_sha256": "e4df6e600bb49f3b97f69706c614875bfe664fa6624fa75b277308683c8ca2b0",
+  "tests_passed": 10,
+  "tests_total": 10,
+  "pass": true,
+  "elapsed_seconds": 110.30384949990548,
+  "maximum_RSS_bytes": 108544000,
+  "process_swap_count": 0,
+  "lawful_sizes": [5, 6],
+  "strict_upstream_hashes": {
+    "Cycle219": "ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a",
+    "Cycle230": "b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae",
+    "Cycle231": "5adb6dc52f6352a5367a2b56da94854e511f9dd174688029f1841e5004a91c32",
+    "Cycle523": "d9dd02bbb4dfacebf0f75f6b8c56881ff56653843cb7ed75baa381d5aa605b9d",
+    "Cycle525_runner": "379c67315de8d235f8d5287b281b6291d0a10731d030338d8bde0676a4c0b785",
+    "Cycle525_note": "43a39dd4a33d06eaf11369eb84d436761832974a4f759aec44e9ab6b919e44a8",
+    "Cycle528_runner": "5eb5160688465283126b990873398c2b8914e39a49f10919128b0b5d77496da5",
+    "Cycle528_note": "2ff16e5eae9bf56b3950dc9bcf9ddd7ec3484c6ea1c5aa452656238963939bfb"
+  },
+  "exact_runtime": {
+    "encoding": "E|n> = |n, a=A n, b=A P n>",
+    "physical_B": "CZ(q_i,a_i); endpoint FSWAP P; SWAP(a_i,b_i)",
+    "full_Fock_coefficient_failures_L5": 0,
+    "full_Fock_coefficient_failures_L6": 0,
+    "vacuum_N1_N2_tests_L5": 281626,
+    "vacuum_N1_N2_tests_L6": 840457,
+    "intertwiner_failures": 0,
+    "terminal_code_leakage_failures": 0,
+    "inverse_roundtrip_failures": 0,
+    "two_cell_full_Fock_tests_each_size": 4096,
+    "straight_three_cell_N_le_3_tests_each_size": 988,
+    "corner_three_cell_N_le_3_tests_each_size": 988,
+    "high_sector_failures": 0
+  },
+  "runtime_resources": {
+    "active_M2_per_cell": 19,
+    "B_calls_per_cell": 15,
+    "combined_calls_per_cell_with_Cycle523": 112,
+    "maximum_gate_support_M2": 2,
+    "matter_pair_physical_L1": 6,
+    "matter_pair_nearest_neighbor_routing_synthesized": false,
+    "placement_collisions": 0,
+    "runtime_layout_frame_failures": 0,
+    "runtime_edge_set_frame_failures": 0
+  },
+  "deletions": {
+    "deleted_CZ_phase_failures_L5": 60600,
+    "deleted_CZ_phase_failures_L6": 154800,
+    "deleted_CZ_basis_residual": 2.0,
+    "deleted_bank_SWAP_code_failures_L5": 281250,
+    "deleted_bank_SWAP_code_failures_L6": 839808,
+    "perturbed_CZ_basis_residual": 9.999999995833334e-05
+  },
+  "charted_encoding_wall": {
+    "maximum_constraint_support_M2_L5": 601,
+    "maximum_constraint_support_M2_L6": 1081,
+    "direct_preparation_CNOTs_L5": 121200,
+    "direct_preparation_CNOTs_L6": 309600,
+    "maximum_dependency_coarse_L1_L5": 6,
+    "maximum_dependency_coarse_L1_L6": 9,
+    "global_site_major_order_used": true,
+    "fixed_chart_passing_frames": 1,
+    "fixed_chart_failed_frames": 23,
+    "abstract_chart_orbit_members": 24,
+    "abstract_frame_product_failures": 0,
+    "local_chart_selector_prepared": false,
+    "correlated_shadow_coin_recode_synthesized": false
+  },
+  "fixtures_only": {
+    "Cycle523_onsite_intertwiner_residual": 5.272182555577386e-15,
+    "Cycle523_onsite_leakage_residual": 0.0,
+    "Cycle219_mass_residual": 2.220446049250313e-16,
+    "Cycle230_contact_active_states": 15,
+    "full_correlated_update_intertwiner_claimed": false
+  },
+  "boundary": {
+    "exact_stateful_recurrent_B_runtime": true,
+    "physical_M2_compiler_complete": false,
+    "bounded_local_constraints": false,
+    "bounded_depth_local_preparation": false,
+    "fixed_code_all24_covariance": false,
+    "global_parity_service": false,
+    "runtime_host_choice": false,
+    "broad_no_go_gate": "FAIL / DO NOT SHIP",
+    "shared_substrate_obstruction": false,
+    "axiom_pressure": false
+  }
+}

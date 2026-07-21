@@ -391,6 +391,7 @@ Return a single JSON object with exactly these fields. No other prose.
 
 ```json
 {
+  "compute_required": null,
   "claim_id": "{{CLAIM_ID}}",
   "audit_invocation_id": "{{AUDIT_INVOCATION_ID}}",
   "load_bearing_step": "<one-sentence quote or paraphrase from the note>",
@@ -415,6 +416,13 @@ Return a single JSON object with exactly these fields. No other prose.
 
 Use `null` when the structured packet is not required and you do not choose to
 supply it. Otherwise replace it with:
+
+The CLI response schema is closed: inside a supplied packet, conditional keys
+are always present. Use `null` for an inapplicable scalar/object field and an
+empty array for an inapplicable list; do not omit keys. In particular, a PASS
+packet uses `demotion`, `prior_claim_scope`, `narrowed_claim_scope`, and
+`next_route` as `null`, and `corrected_wall_set` as `[]`. The semantic
+validator still requires substantive values whenever the condition applies.
 
 ```json
 {

@@ -129,6 +129,58 @@ class SchemaRecoveryTest(unittest.TestCase):
         self.assertEqual(records[0]["claim_id"], "row")
         self.assertEqual(records[0]["failures"][0]["detail"], "N8 exact validator error")
 
+    def test_invalid_optional_packet_is_dropped_without_completion(self):
+        invocation = "a" * 32
+        blob = {
+            "claim_id": "row",
+            "audit_invocation_id": invocation,
+            "load_bearing_step": "The bounded implication follows.",
+            "load_bearing_step_class": "B",
+            "claim_type": "bounded_theorem",
+            "claim_scope": "The bounded implication.",
+            "chain_closes": False,
+            "chain_closure_explanation": "A named wall remains.",
+            "verdict": "audited_conditional",
+            "verdict_rationale": "The named wall remains open.",
+            "negative_assertion_classes": ["bounded_with_named_walls"],
+            "notes_for_re_audit_if_any": "scope_too_broad: narrow the claim.",
+            "no_go_discipline": {"required": True, "status": "FAIL"},
+        }
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            raw = root / "raw.json"
+            raw.write_text(json.dumps(blob), encoding="utf-8")
+            job = {
+                "cid": "row",
+                "pass": 1,
+                "stalled": False,
+                "returncode": 0,
+                "raw_output": raw,
+                "row": {
+                    "claim_id": "row",
+                    "note_path": "",
+                    "claim_type": "bounded_theorem",
+                },
+                "evidence_manifest": {},
+                "invocation_id": invocation,
+                "transport_bound": None,
+                "auditor": "test-auditor",
+                "independence": "cross_family",
+                "delivery": root / "delivery.json",
+                "workdir": root,
+                "isolated": root,
+            }
+            with mock.patch.object(batch, "packet_completion_pass") as completion:
+                envelope, result = batch.finalize_worker(job)
+
+        completion.assert_not_called()
+        self.assertIsNone(envelope["audit"]["no_go_discipline"])
+        self.assertEqual(
+            envelope["audit"]["negative_assertion_classes"],
+            ["bounded_with_named_walls"],
+        )
+        self.assertIn("optional", result["detail"])
+
     def test_dep_ready_post_verdict_reset_is_persisted_across_batches(self):
         selected = [{"claim_id": "row"}]
         current = {
@@ -427,8 +479,8 @@ class SchemaRecoveryTest(unittest.TestCase):
             return_value=(envelope, {"result": "delivery_validated"}),
         ), mock.patch.object(
             batch,
-            "apply_one_serialized",
-            return_value=(True, {"cid": "row", "result": "audited_failed"}),
+            "apply_claim_serialized",
+            return_value=(True, [{"cid": "row", "result": "audited_failed"}]),
         ):
             ok, _, quarantines, handoffs = batch.apply_serialized([job], [])
 
@@ -464,8 +516,8 @@ class SchemaRecoveryTest(unittest.TestCase):
         with mock.patch.object(batch, "finalize_worker", side_effect=finalize), \
                 mock.patch.object(
                     batch,
-                    "apply_one_serialized",
-                    return_value=(True, {"cid": "row", "result": "audited_clean"}),
+                    "apply_claim_serialized",
+                    return_value=(True, [{"cid": "row", "result": "audited_clean"}]),
                 ):
             ok, _, quarantines, _ = batch.apply_serialized(jobs, report)
 
@@ -504,6 +556,70 @@ class SchemaRecoveryTest(unittest.TestCase):
         self.assertEqual(payload["rows"][0]["claim_id"], "row")
         self.assertTrue(popen.call_args.kwargs["start_new_session"])
         self.assertIn("--retry-failed", popen.call_args.args[0])
+
+    def test_missing_dependency_edge_is_dispatched(self):
+        job = {
+            "cid": "row",
+            "row": {
+                "note_path": "docs/ROW.md",
+                "claim_type": "bounded_theorem",
+                "transitive_descendants": 2,
+            },
+        }
+        envelope = {
+            "audit": {
+                "verdict": "audited_conditional",
+                "claim_type": "bounded_theorem",
+                "claim_scope": "The bounded implication.",
+                "load_bearing_step_class": "B",
+                "notes_for_re_audit_if_any": (
+                    "missing_dependency_edge: cite the retained authority"
+                ),
+                "verdict_rationale": "The cited authority is absent.",
+                "load_bearing_step": "The implication follows from the authority.",
+                "audit_invocation_id": "e" * 32,
+            }
+        }
+
+        handoff = batch.science_fix_handoff(job, envelope)
+
+        self.assertEqual(
+            handoff["category"], "conditional_missing_dependency_edge"
+        )
+
+
+class ClaimTransactionTest(unittest.TestCase):
+    def test_two_seats_share_pipeline_commit_and_push(self):
+        row = {"claim_id": "critical", "criticality": "critical"}
+        deliveries = [
+            (
+                {"cid": "critical", "pass": seat, "row": row},
+                {
+                    "audit": {"verdict": "audited_clean"},
+                    "evidence_manifest": {},
+                },
+            )
+            for seat in (1, 2)
+        ]
+        pushed = mock.Mock(returncode=0, stdout="", stderr="")
+        with mock.patch.object(
+            batch, "sync_origin_main", return_value=(True, "base")
+        ), mock.patch.object(
+            batch.audit_runner, "apply_one", return_value=(True, "applied")
+        ) as apply_one, mock.patch.object(
+            batch, "run_generated_gates", return_value=(True, "gated")
+        ) as gates, mock.patch.object(
+            batch, "stage_and_commit", return_value=(True, "commit")
+        ) as commit, mock.patch.object(batch, "sh", return_value=pushed) as sh:
+            ok, results = batch.apply_claim_serialized(deliveries, retries=3)
+
+        self.assertTrue(ok)
+        self.assertEqual(apply_one.call_count, 2)
+        gates.assert_called_once_with()
+        commit.assert_called_once()
+        self.assertEqual(sh.call_count, 1)
+        self.assertEqual([item["pass"] for item in results], [1, 2])
+        self.assertEqual({item["commit"] for item in results}, {"commit"})
 
 
 class AutomaticPanelResumeTest(unittest.TestCase):

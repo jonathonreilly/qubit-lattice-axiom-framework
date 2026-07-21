@@ -35,5 +35,27 @@ class HealLegacyLinkPrefixesTest(unittest.TestCase):
         self.assertEqual(gcp.heal_legacy_link_prefixes(once), once)
 
 
+class ConditionalCategoryCoverageTest(unittest.TestCase):
+    def test_missing_dependency_edge_has_generated_section(self):
+        rows = {
+            "claim": {
+                "audit_status": "audited_conditional",
+                "notes_for_re_audit_if_any": (
+                    "missing_dependency_edge: cite the retained authority"
+                ),
+                "transitive_descendants": 3,
+            }
+        }
+
+        by_class = gcp.collect_rows(rows, synthesized=set())
+
+        self.assertEqual(
+            [item["cid"] for item in by_class[
+                "audited_conditional_missing_dependency_edge"
+            ]],
+            ["claim"],
+        )
+
+
 if __name__ == "__main__":
     unittest.main()

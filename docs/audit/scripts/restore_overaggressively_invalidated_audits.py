@@ -10,11 +10,10 @@ Restored categories:
 
   3. `no_go_discipline_packet_missing` invalidations whose archived audit
      is restorable under the CURRENT no-go trigger. The restoration guard
-     re-runs the live source/output gate: a row that still asserts a
-     gated negative boundary without a packet, or whose archived packet
-     does not round-trip validation, stays invalidated for fresh audit.
-     Only rows the trigger-precision repair no longer gates (honest
-     scoping surfaces and misparse classes) become eligible.
+     re-runs the live source/output gate: retained clean/no-go authority that
+     still requires a packet, or any archived packet that does not round-trip
+     validation, stays invalidated for fresh audit. Development-tier non-clean
+     repair verdicts follow their live optional-packet contract.
 
   4. `dep_weakened:dep_id:before->after` invalidations whose `dep_id`
      has already recovered on the live ledger — through a landed
@@ -571,11 +570,14 @@ def restore_audit_from_previous(
         note_body = (REPO_ROOT / note_path).read_text(encoding="utf-8", errors="replace")
     except OSError:
         pass
-    # Restoring archived clean authority is a certification-like act:
-    # evaluate the negative-boundary gate in the forensic tier so a
-    # packetless negative row cannot re-enter authority through a
-    # development-tier restoration pass (two-tier assurance, 2026-07-12).
-    with _forensic_gate():
+    # Restoring archived clean authority is a certification-like act and uses
+    # the forensic tier. A non-clean development verdict is repair-queue
+    # evidence, not retained authority, so it must use the same packet-binding
+    # rule as live validation/invalidation instead of being promoted to a
+    # stronger tier merely by the restoration transport.
+    restoring_clean = new_row.get("audit_status") == "audited_clean"
+    gate_context = _forensic_gate() if restoring_clean else contextlib.nullcontext()
+    with gate_context:
         source_required = no_go_discipline_gate.source_requires_no_go_discipline(
             note_path, note_body, new_row.get("claim_type")
         )
@@ -591,10 +593,11 @@ def restore_audit_from_previous(
         "no_go_discipline": new_row.get("no_go_discipline"),
         "negative_assertion_classes": new_row.get("negative_assertion_classes"),
     }
-    with _forensic_gate():
+    gate_context = _forensic_gate() if restoring_clean else contextlib.nullcontext()
+    with gate_context:
         output_required = no_go_discipline_gate.output_requires_no_go_discipline(
-        gate_blob
-    )
+            gate_blob
+        )
     # Honor a non-empty declaration present on EITHER storage surface:
     # the archived audit or the reset live row (legacy archives predate
     # the field, but a surviving live declaration is still the auditor's
@@ -606,14 +609,12 @@ def restore_audit_from_previous(
         isinstance(d, list) and bool(d)
         for d in (declared_archived, declared_live)
     )
+    packet_binds = no_go_discipline_gate.packet_requirement_binds(
+        gate_blob, source_required=source_required
+    )
     if (
-        bool(new_row.get("negative_assertion_classes"))
-        and new_row.get("no_go_discipline") is None
-    ):
-        return None
-    if (
-        new_row.get("audit_status") == "audited_clean"
-        and (source_required or output_required or declared_requires)
+        (source_required or output_required or declared_requires)
+        and packet_binds
         and new_row.get("no_go_discipline") is None
     ):
         return None

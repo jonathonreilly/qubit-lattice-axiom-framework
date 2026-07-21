@@ -280,9 +280,12 @@ python3 docs/audit/scripts/orchestrate_audit_batch.py \
   xhigh reasoning exactly — per seat, regardless of who orchestrates. Do not
   escalate seats to max; do not mix families inside one row's
   cross-confirmation without the owner's seating policy saying so.
-- **Commits stay serialized** one claim at a time (apply -> pipeline -> lint
-  -> commit -> push inside the drainer). Never add a second committer against
-  the same checkout; parallelism lives in the auditor seats only.
+- **Commits stay serialized** one claim at a time (apply every validated seat
+  for that claim -> one pipeline -> one lint -> one commit -> one push inside
+  the drainer). A simultaneous critical pair is one claim transaction, not two
+  generated-surface transactions; push-race retry replays the whole pair from
+  refreshed `origin/main`. Never add a second committer against the same
+  checkout; parallelism lives in the auditor seats only.
 - **Concurrency budget (shared codex pool).** Auditor seats, review-loop
   reviewers, and judicial panels all draw on one pool. Keep the TOTAL
   concurrent codex processes across every lane at or under ~8-10, and
@@ -349,6 +352,16 @@ returned JSON that the audit contract cannot apply (for example malformed
 JSON, an incomplete N1-N8 packet, or a field whose value contradicts the
 schema). It does not show that the source claim is false or needs editing.
 
+- Every restricted Codex seat (ordinary audit, focused packet completion, and
+  judicial judge) must use CLI `--output-schema` with a transport-level JSON
+  object schema. The canonical Python validators remain the only semantic
+  schema authority; the CLI schema prevents fences/preambles/malformed JSON
+  without duplicating the evolving audit policy.
+- In the development tier, an invalid *optional* N1-N8 packet on a non-clean,
+  non-no-go verdict is removed mechanically only when the unchanged validator
+  accepts the same verdict, declaration, rationale, and every other field with
+  `no_go_discipline=null`. Do this before launching completion. Never use this
+  normalization for clean authority, a no-go source/type, or forensic work.
 - Give parseable N1-N8 structural-packet rejects bounded, error-specific
   completion attempts in the same restricted seat. Preserve every top-level
   scientific judgment; only repair the rejected structural packet. Malformed
@@ -371,6 +384,9 @@ schema). It does not show that the source claim is false or needs editing.
   completed audit batch; it may edit only an isolated worktree and may only
   open a PR. Review-loop and a later independent audit remain mandatory before
   any repair reaches retained state.
+- `missing_dependency_edge` is a repair-actionable conditional class and maps
+  to the `conditional_missing_dependency_edge` science-fix category; do not
+  strand it merely because `missing_bridge_theorem` has a separate lane.
 
 Reaching a development fixed point with schema quarantines means the
 actionable queue drained except for the explicitly reported malformed

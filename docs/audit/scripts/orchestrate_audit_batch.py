@@ -1379,16 +1379,7 @@ def scope_for_args(args: argparse.Namespace, rows: dict[str, dict]) -> set[str]:
     return {claim.strip() for claim in args.claims.split(",") if claim.strip()}
 
 
-def main() -> int:
-    drain_lock = None
-
-    def finish(code: int) -> int:
-        nonlocal drain_lock
-        if drain_lock is not None:
-            drain_lock.close()
-            drain_lock = None
-        return code
-
+def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Parallel development-tier audit drainer")
     scope_group = parser.add_mutually_exclusive_group(required=True)
     scope_group.add_argument("--lane", help="lane name from lane_certification_config.json")
@@ -1404,7 +1395,7 @@ def main() -> int:
             "(gate/template calibration, packet-policy revision)."
         ),
     )
-    parser.add_argument("--max-workers", type=int, default=6)
+    parser.add_argument("--max-workers", type=int, default=10)
     parser.add_argument("--rounds", type=int, default=6)
     parser.add_argument("--stall-minutes", type=int, default=45)
     parser.add_argument("--runner-timeout-sec", type=int, default=120)
@@ -1427,6 +1418,20 @@ def main() -> int:
         ),
     )
     parser.add_argument("--dry-run", action="store_true")
+    return parser
+
+
+def main() -> int:
+    drain_lock = None
+
+    def finish(code: int) -> int:
+        nonlocal drain_lock
+        if drain_lock is not None:
+            drain_lock.close()
+            drain_lock = None
+        return code
+
+    parser = build_parser()
     args = parser.parse_args()
     PROGRESS["dry_run"] = bool(args.dry_run)
     if not args.dry_run:

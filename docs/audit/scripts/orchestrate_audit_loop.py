@@ -394,7 +394,7 @@ def build_parser() -> argparse.ArgumentParser:
         description="Panel-aware end-to-end audit backlog drainer"
     )
     parser.add_argument("--lane", action="append", help="limit to a configured lane")
-    parser.add_argument("--max-workers", type=int, default=4)
+    parser.add_argument("--max-workers", type=int, default=10)
     parser.add_argument(
         "--max-passes",
         type=int,

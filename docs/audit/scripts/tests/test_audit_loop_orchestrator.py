@@ -19,7 +19,7 @@ import orchestrate_audit_loop as audit_loop
 def _args() -> argparse.Namespace:
     return argparse.Namespace(
         lane=None,
-        max_workers=4,
+        max_workers=10,
         max_passes=0,
         max_lane_cycles=0,
         batch_rounds=6,
@@ -31,6 +31,37 @@ def _args() -> argparse.Namespace:
         skip_forensic_canary=True,
         dry_run=False,
     )
+
+
+class WorkerDefaultTest(unittest.TestCase):
+    def test_top_level_loop_defaults_to_ten_parallel_workers(self):
+        args = audit_loop.build_parser().parse_args([])
+        self.assertEqual(args.max_workers, 10)
+
+    def test_standalone_batch_defaults_to_ten_parallel_workers(self):
+        args = batch.build_parser().parse_args(["--claims", "row"])
+        self.assertEqual(args.max_workers, 10)
+
+    def test_top_level_loop_propagates_worker_limit_to_batch(self):
+        args = _args()
+        command = audit_loop.batch_command("lane_a", args)
+        worker_flag = command.index("--max-workers")
+        self.assertEqual(command[worker_flag + 1], "10")
+
+        args.max_workers = 7
+        command = audit_loop.batch_command("lane_a", args)
+        worker_flag = command.index("--max-workers")
+        self.assertEqual(command[worker_flag + 1], "7")
+
+    def test_batch_selection_fills_ten_worker_capacity(self):
+        rows = [
+            {"claim_id": f"row-{index}", "criticality": "high"}
+            for index in range(11)
+        ]
+        selected = batch.selected_batch(rows, max_workers=10)
+        self.assertEqual([row["claim_id"] for row in selected], [
+            f"row-{index}" for index in range(10)
+        ])
 
 
 class BatchExitSemanticsTest(unittest.TestCase):

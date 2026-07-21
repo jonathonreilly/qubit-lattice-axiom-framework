@@ -1,4 +1,4 @@
 interface:
   display_name: "Audit Loop"
-  short_description: "Run hostile claim audits from the repo queue"
-  default_prompt: "Use $audit-loop to audit the next claim in the repository audit queue and land the result."
+  short_description: "Drain claim audits with 10 parallel workers"
+  default_prompt: "Use $audit-loop to drain the repository audit backlog with 10 parallel fresh-context workers and serialized verified landings."

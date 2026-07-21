@@ -197,7 +197,7 @@ premises, and permitted metadata context satisfy the marker. Treat a lane's
 cascade queues: draining those rows moves a flagship lane toward
 certification.
 
-## Default Entry: Do The Right Thing, In Parallel (owner-directed 2026-07-17)
+## Default Entry: Do The Right Thing, In Parallel (owner-directed 2026-07-20)
 
 Invoking this skill WITHOUT a specific named claim — including a bare,
 argument-less invocation — means: drain the backlog, in parallel, with the
@@ -209,18 +209,21 @@ default session is:
 2. Launch the panel-aware top-level drainer:
 
    ```bash
-   python3 docs/audit/scripts/orchestrate_audit_loop.py --max-workers 4
+   python3 docs/audit/scripts/orchestrate_audit_loop.py --max-workers 10
    ```
 
    This command owns the complete control loop: finish pending judicial work,
    drain configured development lanes in order, immediately panel every fresh
    cross-seat disagreement, resume the same lane after the panel lands, repeat
-   until a full pass lands nothing new, then run one forensic canary. Raise
-   toward 6 workers only in a quiet pool per the budget below. The supervisor
-   holds the clone-wide audit lock for the complete campaign and hands that
-   lock to its batch/panel children. It runs the panel sweep after every batch
-   termination before propagating any unrelated hard batch failure, so a mixed
-   result cannot strand a valid judicial handoff.
+   until a full pass lands nothing new, then run one forensic canary. Ten
+   workers is the owner-directed default. Lower it only when another active
+   campaign is already consuming the shared Codex pool or a concrete machine,
+   rate-limit, or service constraint requires it; never silently fall back to
+   a lower four- or six-seat configuration. The supervisor holds the
+   clone-wide audit lock for the complete campaign and hands that lock to its
+   batch/panel children. It runs the panel sweep after every batch termination
+   before propagating any unrelated hard batch failure, so a mixed result
+   cannot strand a valid judicial handoff.
 3. If the user names a lane, pass `--lane <name>`. Otherwise the orchestrator
    iterates lanes from `docs/audit/data/lane_certification_config.json`,
    selecting entries whose generated `lane_certification.json` record still
@@ -284,12 +287,15 @@ python3 docs/audit/scripts/orchestrate_audit_batch.py \
   -> commit -> push inside the drainer). Never add a second committer against
   the same checkout; parallelism lives in the auditor seats only.
 - **Concurrency budget (shared codex pool).** Auditor seats, review-loop
-  reviewers, and judicial panels all draw on one pool. Keep the TOTAL
-  concurrent codex processes across every lane at or under ~8-10, and
-  coordinate before raising `--max-workers` while review campaigns run.
-  Measured 2026-07-17: ~18 concurrent processes collapsed lane throughput
-  from 6-11 landed verdicts/hour to ~1 every 3 hours; a 4-6 seat drain in a
-  quiet pool is the sweet spot.
+  reviewers, and judicial panels all draw on one pool. The audit-loop default
+  is one 10-seat orchestrator. Keep the TOTAL concurrent Codex processes
+  across every lane at or under about 10: when another review or judicial
+  campaign is already active, reduce this orchestrator's seat count enough to
+  stay within that total rather than starting a second audit orchestrator.
+  Measured 2026-07-17: about 18 concurrent processes collapsed lane
+  throughput from 6-11 landed verdicts/hour to about 1 every 3 hours. That
+  result is the reason for the 10-seat ceiling, not a reason to default back
+  to four or six seats in a quiet pool.
 - **Development tier only.** The drainer already skips `no_go` rows,
   non-batch-auditable claim types, and forensic-shaped sources at selection;
   do not force them in via `--claims`.

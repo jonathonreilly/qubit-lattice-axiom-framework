@@ -1,0 +1,84 @@
+{
+  "status": "cycle548-two-adjacent-star-recurrence-tournament",
+  "authority": "none",
+  "audit": "unset",
+  "runner_sha256": "23b3b1a66cd60366a43fcd7a4d15ad9da68f9dc6a6aa40e774d0e94c8317ef80",
+  "note_sha256": "db16fe47dae51428447f42b88418fd0181a8908fee16a95f73b4bbf60fa23c04",
+  "certificate_sha256": "65daf62de65520ac2874d61fc4ad58f97a3dd5538155fa22cc4abc7b65a2fdd9",
+  "tests_passed": 12,
+  "tests_total": 12,
+  "pass": true,
+  "elapsed_seconds_internal": 208.96603787504137,
+  "timed_wall_seconds": 210.57,
+  "maximum_RSS_bytes": 177979392,
+  "process_swap_count": 0,
+  "declared_target": {
+    "geometry": "six-cell five-seam adjacent double star",
+    "complete_sector_cutoff": "N<=2",
+    "logical_columns": 667,
+    "lawful_orders": ["A_then_B", "B_then_A"],
+    "order_difference_raw_maximum": 0.753076624400765,
+    "order_difference_nonzeros": 61701,
+    "maximum_repeat_inverse_residual": 3.2086675760508887e-15,
+    "maximum_repeat_norm_residual": 4.440892098500626e-16
+  },
+  "route_A": {
+    "disposition": "exact symmetric comparator; bounded but very large",
+    "S6_orders": 720,
+    "order_resolved_decoder_rows": 30735360,
+    "decoder_collisions": 0,
+    "maximum_preparation_residual": 5.550139255393381e-15,
+    "maximum_inverse_residual": 7.363713786656372e-15
+  },
+  "route_B": {
+    "disposition": "strongest exact bounded route",
+    "fixed_decoder_rows": 42688,
+    "literal_slot_X_toggles": 2,
+    "slot_returns_after_two_updates": true,
+    "host_slot_query": false,
+    "slot_square_target_raw_maximum": 0.0,
+    "unconditioned_materialized_rows": 69973,
+    "controlled_slot_skeleton_calls": 139951,
+    "controlled_three_M2_macro_calls": 126936,
+    "controlled_two_M2_macro_calls": 13008,
+    "required_logical_wire_pairs": 1091,
+    "required_pair_route_failures": 0,
+    "maximum_required_pair_route_edges": 38,
+    "symbolic_slot_cycle_sha256": "747fe8fddfe1b61395b26ebf3b8479cfa277ade22e4ab5de871a548b86bf4e02",
+    "controlled_macros_exact_counted_not_materialized": true,
+    "slot_initial_value_and_program_supplied": true
+  },
+  "route_C": {
+    "disposition": "tested parity coloring fails odd L5 and passes even L6",
+    "L5_same_color_collisions": 90,
+    "L5_frame_color_permutation_failures": 111,
+    "L6_same_color_collisions": 0,
+    "L6_frame_color_permutation_failures": 0,
+    "shared_obstruction": false
+  },
+  "fixtures": {
+    "Cycle219_mass_fixture": 0.4534056541748851,
+    "maximum_mass_fixture_residual": 5.551115123125783e-17,
+    "contact_nontrivial_columns_per_star": 60,
+    "deleted_second_star_raw_residual": 1.316097915613727,
+    "deleted_shared_seam_raw_residual": 0.8740010519307571
+  },
+  "covariance": {
+    "proper_cubic_frames": 24,
+    "frame_products": 576,
+    "maximum_update_raw_residual": 6.206335383118183e-17,
+    "maximum_sweep_raw_residual": 2.2591401799415137e-16,
+    "failures": 0
+  },
+  "boundary": {
+    "fixed_patch_recurrence_closed": true,
+    "arbitrary_network_closed": false,
+    "N3_and_higher_closed": false,
+    "selected_to_rough_transducer_closed": false,
+    "reference_or_blank_genesis_closed": false,
+    "schedule_called_time": false,
+    "shared_substrate_obstruction": false,
+    "axiom_pressure": false,
+    "broad_no_go_gate": "FAIL / DO NOT SHIP"
+  }
+}

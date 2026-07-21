@@ -908,10 +908,6 @@
           "effective_status": "unaudited"
         },
         {
-          "claim_id": "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
-          "effective_status": "audit_in_progress"
-        },
-        {
           "claim_id": "fermion_parity_z2_grading_theorem_note_2026-05-02",
           "effective_status": "unaudited"
         },
@@ -2820,9 +2816,9 @@
       "roots": [
         "strong_cp_theta_zero_note"
       ],
-      "uncertified_count": 648
+      "uncertified_count": 647
     }
   ],
-  "repo_head": "152b3e60c44cb04d20a70a880a2073b6e5babd6a",
+  "repo_head": "ce48fd76221460d51c76419d1a294c1ede82309f",
   "schema": "lane_certification_v2"
 }

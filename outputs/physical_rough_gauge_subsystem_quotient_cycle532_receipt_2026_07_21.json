@@ -1,0 +1,74 @@
+{
+  "status": "cycle532-local-gauge-subsystem-with-typed-topological-initialization",
+  "authority": "none",
+  "audit": "unset",
+  "runner_sha256": "8bf1c836661b4c902d09cf2f7d147b07c3083404569ce9bc0a2b3dd4820233da",
+  "note_sha256": "5f668f6cc04a5eece23f913d5869f57553df583c23d6dbb5cdac6756be41bfc3",
+  "tests_passed": 11,
+  "tests_total": 11,
+  "pass": true,
+  "elapsed_seconds_internal": 145.30057099997066,
+  "timed_wall_seconds": 145.86,
+  "maximum_RSS_bytes": 151928832,
+  "process_swap_count": 0,
+  "factorization": {
+    "physical_M2_per_cell": 22,
+    "fixed_code_exponent": "7N-1",
+    "target_full_Fock_exponent": "6N",
+    "gauge_qubits": "N-1",
+    "matter_quotient_dimension": "12N-1",
+    "matter_symplectic_rank": "12N-2",
+    "gauge_quotient_dimension": "2N-1",
+    "gauge_symplectic_rank": "2N-2",
+    "explicit_gauge_exhausts_full_matter_commutant": true,
+    "both_matter_parity_sectors_nonempty": true,
+    "train_L5_physical_M2": 2750,
+    "held_L6_physical_M2": 4752
+  },
+  "bounded_construction": {
+    "maximum_local_constraint_weight": 28,
+    "maximum_gauge_Z_weight": 6,
+    "maximum_gauge_A_weight": 18,
+    "maximum_B_FSWAP_support_M2": 13,
+    "B_FSWAP_blocks_per_cell": 3,
+    "maximum_onsite_hopping_support_M2": 7,
+    "maximum_contact_word_support_M2": 12,
+    "placement_collisions_L5_L6": 0
+  },
+  "covariance": {
+    "proper_cubic_frames": 24,
+    "frame_products": 576,
+    "single_face_X_Z_group_law_cases": 684288,
+    "mismatches": 0,
+    "active_runtime_frame_selector": false,
+    "abstract_chart_orbit_substituted": false
+  },
+  "residuals_and_deletions": {
+    "FSWAP_matrix_residual": 0.0,
+    "FSWAP_unitarity_residual": 0.0,
+    "FSWAP_inverse_square_residual": 0.0,
+    "deleted_fourth_term_residual": 1.0,
+    "bare_stream_cell_constraint_syndrome": 2,
+    "dressed_stream_cell_constraint_syndrome": 0,
+    "deleted_gauge_A_matter_commutator_failures": 6,
+    "undeleted_gauge_A_matter_commutator_failures": 0
+  },
+  "topological_boundary": {
+    "Wilson_initializers": 3,
+    "maximum_Wilson_weight_L5": 33,
+    "maximum_Wilson_weight_held_L6": 39,
+    "local_only_extra_matter_central_characters": 3,
+    "bounded_local_or_autonomous_initializer_supplied": false,
+    "bounded_code_state_preparation_supplied": false,
+    "runtime_sector_selector": false,
+    "global_parity_service": false
+  },
+  "boundary": {
+    "physical_compiler_unconditional": false,
+    "literal_one_two_M2_FSWAP_factorization_frozen": false,
+    "site_major_A_AP_chart_required": false,
+    "shared_substrate_obstruction": false,
+    "axiom_pressure": false,
+    "broad_no_go_gate": "FAIL / DO NOT SHIP"
+  }
+}

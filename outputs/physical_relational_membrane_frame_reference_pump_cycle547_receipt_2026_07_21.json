@@ -1,0 +1,84 @@
+{
+  "status": "cycle547-target-transparent-relational-sector-transport-rough-product-encoder-open",
+  "authority": "none",
+  "audit": "unset",
+  "runner_sha256": "6a9f909483ca55da72810a3bc3a00a851e92d196eb0d195cb448e24a0866d948",
+  "note_sha256": "77a7b90a9fbafafc9a9f4737c83d979a4aa7f7ef7095af2c95cfb55238494f0c",
+  "tests_passed": 10,
+  "tests_total": 10,
+  "pass": true,
+  "elapsed_seconds_internal": 163.8279185409192,
+  "timed_wall_seconds": 164.73,
+  "maximum_RSS_bytes": 126631936,
+  "process_swap_count": 0,
+  "fixed_field_layout": {
+    "train_held_lengths": [5, 6],
+    "field_M2_per_cell": 18,
+    "field_M2_L5_L6": [2250, 3888],
+    "field_constraint_edges_L5_L6": [2250, 3888],
+    "maximum_equality_router_distance": 16,
+    "rough_or_field_collisions": 0,
+    "proper_cubic_frames": 24,
+    "frame_products": 576,
+    "coordinate_constraint_or_group_failures": 0,
+    "runtime_frame_selector": false,
+    "one_fixed_physical_object": true
+  },
+  "product_reset_consensus": {
+    "lawful_truth_cases_per_size": 512,
+    "truth_or_complement_failures": 0,
+    "cells_reached_L5_L6": [125, 216],
+    "convergence_rounds_L5_L6": [6, 9],
+    "local_rule_support_cells": 7,
+    "signed_one_hot_all24_failures": 0,
+    "postselection": false,
+    "unitary_inverse_claimed": false,
+    "applies_to_new_field_M2_only": true
+  },
+  "relational_algebra": {
+    "identity": "C^dagger O C = L(O)",
+    "relational_lift": "L(O)=O product_a Z(s_a)^eta0_a CZ(s_a,b_a)^chi_a",
+    "matter_generators_L5_L6": [2625, 4536],
+    "gauge_generators_L5_L6": [500, 864],
+    "branch_truth_tests_L5_L6": [200000, 345600],
+    "branch_failures": 0,
+    "runtime_signature_linearity_tests_per_size": 2592,
+    "linearity_failures": 0,
+    "maximum_field_factors_per_displayed_generator": 3,
+    "Pauli_phase_and_commutation_preserved": true,
+    "extra_relational_logical_bits": 6,
+    "bare_target_after_field_erasure_claimed": false
+  },
+  "local_correction": {
+    "controlled_membrane_factors_L5_L6": [150, 216],
+    "primitive_support_M2": 3,
+    "maximum_physical_L1_diameter": 3,
+    "branch_control_covariance_tests_per_size": 9216,
+    "signed_membrane_or_control_covariance_failures": 0,
+    "coherent_reverse_dagger_exists": true,
+    "deleted_factor_local_syndromes": [4, 4, 4],
+    "terminal_fields_are_retained_lawful_state": true
+  },
+  "inherited_target": {
+    "Cycle537_tests_passed": 10,
+    "Cycle537_tests_total": 10,
+    "Gamma_P_mass_contact_seam_both_parities_replay_pass": true
+  },
+  "preparation_boundary": {
+    "new_frame_syndrome_marker_M2_start_from_product_reset": true,
+    "Wilson_syndrome_extraction_and_local_flood_constructed": true,
+    "rough_matter_gauge_M2_start_from_product_reset": false,
+    "rough_local_code_input": "supplied lawful encoded state",
+    "full_from_product_rough_code_encoder": false,
+    "extra_relational_bits_retired": false,
+    "end_to_end_recurrent_enlarged_field_update": false
+  },
+  "boundary": {
+    "Cycle544_target_dephasing_wall_closed_relationally": true,
+    "Wilson_reference_sector_transport_closed": true,
+    "full_product_input_rough_code_preparation_closed": false,
+    "shared_substrate_obstruction": false,
+    "minimum_content_theorem": false,
+    "axiom_pressure": false
+  }
+}

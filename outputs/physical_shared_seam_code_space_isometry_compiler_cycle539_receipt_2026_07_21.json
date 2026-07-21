@@ -1,0 +1,102 @@
+{
+  "status": "cycle539-explicit-path-corner-star-code-space-isometry-partial-closure",
+  "authority": "none",
+  "audit": "unset",
+  "runner_sha256": "aa126a6363f9fc8c08d28a47b840c1b6e0a7c0b47bbe296087340b804a0087d1",
+  "note_sha256": "7d95064985bd9b2d6312ec49fa738f86fd7bba289316539a06f71931a958fcc1",
+  "tests_passed": 10,
+  "tests_total": 10,
+  "pass": true,
+  "elapsed_seconds_internal": 41.54437829100061,
+  "timed_wall_seconds": 43.09,
+  "maximum_RSS_bytes": 432160768,
+  "process_swap_count": 0,
+  "patches": {
+    "path": {
+      "cells": 3,
+      "seams": 2,
+      "logical_columns_n0_to_n3": 988,
+      "joint_order_count": 6,
+      "joint_native_role_bits": 38,
+      "q_order_native_rows": 49728,
+      "decoder_collisions_L5_L6": [0, 0],
+      "maximum_combined_Pauli_support_M2": 42,
+      "selected_Pauli_factors": 52374,
+      "live_M2_upper_bound": 205,
+      "physical_update_Toffoli_upper_bound": 19896368
+    },
+    "corner": {
+      "cells": 3,
+      "seams": 2,
+      "logical_columns_n0_to_n3": 988,
+      "joint_order_count": 6,
+      "joint_native_role_bits": 38,
+      "q_order_native_rows": 49728,
+      "decoder_collisions_L5_L6": [0, 0],
+      "maximum_combined_Pauli_support_M2": 42,
+      "selected_Pauli_factors": 52734,
+      "live_M2_upper_bound": 205,
+      "physical_update_Toffoli_upper_bound": 19911488
+    },
+    "degree_three_star": {
+      "cells": 4,
+      "seams": 3,
+      "logical_columns_n0_to_n2": 301,
+      "joint_order_count": 24,
+      "joint_native_role_bits": 50,
+      "q_order_native_rows": 115584,
+      "decoder_collisions_L5_L6": [0, 0],
+      "maximum_combined_Pauli_support_M2": 27,
+      "selected_Pauli_factors": 287616,
+      "live_M2_upper_bound": 273,
+      "physical_update_Toffoli_upper_bound": 86057236
+    }
+  },
+  "state_preparation": {
+    "maximum_branch_residual": 1.5700924586837752e-16,
+    "maximum_branch_inverse_residual": 2.4196749845665633e-16,
+    "S3_order_residual": 3.764949453935611e-16,
+    "S4_order_residual": 5.661048867003676e-16,
+    "branch_and_work_terminal_leakage": 0,
+    "L5_L6_decoder_digests_match": true
+  },
+  "routing_and_covariance": {
+    "proper_cubic_frames": 24,
+    "frame_products": 576,
+    "path_corner_universal_pair_routes_per_size": 20910,
+    "star_universal_pair_routes_per_size": 37128,
+    "maximum_route_edges": 64,
+    "mapped_wire_edge_or_group_failures": 0,
+    "runtime_frame_query": false
+  },
+  "physics_residuals": {
+    "path_corner_rest_mass": 0.4534056541748851,
+    "star_rest_mass": 0.45340565417488515,
+    "Cycle219_mass_fixture": 0.4534056541748851,
+    "path_corner_uniform_one_particle": 3.534751832054436e-16,
+    "star_uniform_one_particle": 2.4097051235218626e-16,
+    "patch_update_frame_maximum": 0.0,
+    "Cycle219_coin": 5.0207498326926886e-15,
+    "Cycle230_contact": 2.149937642474629e-15,
+    "selected_seam_recurrence": 1.5416528402018934e-15,
+    "selected_seam_inverse": 1.1429443574931856e-15
+  },
+  "deletions": {
+    "state_Givens_minimum_residual": 0.41744238123296284,
+    "order_Givens_minimum_residual": 0.20520716180211218,
+    "delete_one_S3_order_Gram_residual": 0.16666666666666666,
+    "delete_one_S4_order_Gram_residual": 0.041666666666666664,
+    "delete_shared_middle_role_Gram_residual": 0.5,
+    "decoder_legality_and_route_deletions_detected": true
+  },
+  "boundary": {
+    "Cycle525_dense_completion_removed_on_declared_patches": true,
+    "fixed_Wilson_reference_preparation_closed": false,
+    "full_Fock_sector_patches_closed": false,
+    "different_overlapping_patch_volume_recurrence_closed": false,
+    "unconditional_full_physical_site_compiler_complete": false,
+    "shared_substrate_obstruction": false,
+    "axiom_pressure": false,
+    "broad_negative_gate": "FAIL / DO NOT SHIP"
+  }
+}

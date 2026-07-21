@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/kcpt_dirac_symmetry_five_module_selective_cp_fusion_2026_07_21.py
-runner_sha256: 0936203d8740fc3892038d4b94ce4075f37c4f3b06564f6b7e5d204c0cce98ce
-input_fingerprint_sha256: 891aef17bbcd3095fa11d41a3dca733643b7000d39d37aa87654e48e67ee5d10
+runner_sha256: d60eeb0c1e46285e902578a4b5f0d1afbca7c6f5121ae0a8bbfec3ced40122f9
+input_fingerprint_sha256: 5f5fc4684265c0e651156c2e55903edae6abda03a821036ac1c0ff34914e17e1
 timeout_sec: 180
 exit_code: 0
-elapsed_sec: 27.95
+elapsed_sec: 28.07
 status: ok
 ----- stdout -----
 [PASS] G01: ||Jfull^2+I||=4.44e-16
@@ -16,7 +16,7 @@ status: ok
 [PASS] G07: ||Se D2 Se + D2||=0.00e+00  wrong-sign ||Se D2 Se - D2||=2.000 (>1)
 [PASS] G08: ||Se Jf Se + Jf||=0.00e+00  wrong-sign ||Se Jf Se - Jf||=0.748 (>|Jf|=0.374)
 [PASS] G09: ||Se M Se - M||=0.00e+00
-[PASS] G07b: max_g ||[D2,g]||=0.00e+00  (|G_amb|=768)
+[PASS] G07b: |G_amb|=768  |H|=1536  |coset|=768  H=G_amb disjoint-union coset=True  max_g ||[D2,g]||=0.00e+00  max_g ||[Jf,g]||=0.00e+00
 [PASS] G10: max_x |chi(12-) - chi_sgn*chi(12+)|=3.72e-15
 [PASS] G11: twist-match  ind8(W4)->ind8(W4)(2.4e-15)  ind8(W4)->ind8(W4)(4.2e-15)  ind12(W6)->ind12(W6)(6.0e-15)  ind12(W6)->ind12(W6)(4.0e-15)  split12_+(W12)->split12_-(W12)(3.7e-15)  split12_-(W12)->split12_+(W12)(3.7e-15)
 [PASS] G12: sv=[15.4919  0.      0.      0.      0.      0.    ]  rank=1  dim_Z(A)=5  (rejects rank0->dim6 no-fusion, rank2->dim4 both-fuse)

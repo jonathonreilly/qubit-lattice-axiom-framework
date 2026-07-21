@@ -5209,6 +5209,101 @@
         "total_pass": 40
       },
       "verdict_rationale": "Steps A and B correctly derive partial additivity and real homogeneity, and steps D and E would close once a real-linear extension exists. However, step C asserts rather than proves the required well-defined cone-extension lemma, while the runner tests only functionals created as m(E)=Tr(\u03c3_true E), so its 40 passes are consistency checks that already assume the contested representation class. The bounded qubit theorem therefore remains conditional on an explicit proof of that extension lemma."
+    },
+    {
+      "archived_at": "2026-07-21T16:42:00.530812+00:00",
+      "audit_date": "2026-07-21T16:40:14.805499+00:00",
+      "audit_invocation_history": [
+        "e94fff680c39434d8cc22894a5aaaa20"
+      ],
+      "audit_invocation_id": "e94fff680c39434d8cc22894a5aaaa20",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 0,
+          "counts": {
+            "A": 16,
+            "B": 1,
+            "C": 8,
+            "D": 1
+          },
+          "decoration_candidate": false,
+          "dominant_class": "A",
+          "exists": true,
+          "runner_path": "scripts/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.py"
+        },
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 13.012,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "c7fcaca394bf2438a6e64b84f8b26130d485232c1f5416ee74ceb76832e88656",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "829ff335ed0dd026003c6c6f1f99fcd86150de74b576c1e9e89b81cea1ed1449",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "829ff335ed0dd026003c6c6f1f99fcd86150de74b576c1e9e89b81cea1ed1449",
+        "runner_path": "scripts/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 729
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260721-907fb5a3",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The analytic effect-cone extension and Riesz argument is sound in outline, but the advertised runner evidence is self-confirming because every sampled m is first defined as Tr(\u03c3_true E). Part 8 additionally tests g_bad against 1/2+n_z/4 rather than the unique axis-matched trace form 1/2+n_z/2.",
+      "claim_scope": "For the accepted one-qubit carrier M_2(C), whether M1\u2013M3 force a unique density-matrix representation m(E)=Tr(\u03c3E), including the claimed primitive proof and companion-runner checks.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-21T16:40:14.805499+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Partial additivity and bounded homogeneity define a unique real-linear functional F on Herm(M_2), after which finite-dimensional Riesz representation gives F(H)=Tr(\u03c3H) for a unique Hermitian \u03c3.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: prove the well-defined real-linear effect-cone extension explicitly, correct the Part 8 affine coefficient, and test the implication without constructing every sampled functional from a preselected density matrix.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 40,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 40
+      },
+      "verdict_rationale": "Issue: the runner presupposes the representation theorem through make_trace_functional, and its Part 8 affine-interpolant calculation has a factor-of-two normalization error. Why this blocks: the qubit theorem is mathematically plausible and the written A\u2013E outline can be completed, but the claimed independent exact/machine verification and the displayed projective no-go guard do not close as written. For the embedded derived no-go boundary, N1 supplies only one executed counterexample mechanism and N5 lacks the required five-resolution evidence; N2 identifies only projective underdetermination, N3 exposes no additional load-bearing admission, N4 has no prior witness, N6 supplies no applicable partial closure, N7 awaits the corrected affine test, and N8 supplies no applicable retirement. Repair target and claim boundary: add an explicit well-defined effect-cone extension proof, replace the Part 8 interpolant by 1/2+n_z/2, and add tests not initialized from \u03c3_true; until then the partial-additivity identities and trace-form examples remain safe, but the fully runner-certified universal theorem plus derived no-go guard does not."
     }
   ],
   "prose_corrections": [],

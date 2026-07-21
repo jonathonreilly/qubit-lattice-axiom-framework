@@ -32,11 +32,11 @@ Owner-approval history for axioms and primitives:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3851 |
-| Applied audit verdicts | 466 |
-| Retained-grade rows, including boxed decorations | 410 |
+| Applied audit verdicts | 467 |
+| Retained-grade rows, including boxed decorations | 411 |
 | Retained positive theorems | 86 |
 | Retained no-go rows | 0 |
-| Retained bounded rows | 308 |
+| Retained bounded rows | 309 |
 | Boxed decorations under retained parents | 16 |
 | Open gates | 2 |
 | Unaudited rows | 3015 |
@@ -54,10 +54,10 @@ Full audit-ratified row list: [`docs/repo/RETAINED_BACKBONE.md`](RETAINED_BACKBO
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 3057 |
-| Ready rows | 640 |
+| Total pending rows | 3056 |
+| Ready rows | 639 |
 | Cycle-break targets | 59 |
-| Critical pending | 658 |
+| Critical pending | 657 |
 | High pending | 371 |
 | Medium pending | 839 |
 | Leaf pending | 1189 |
@@ -110,7 +110,7 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 | Lane rows already in actual ready top-10 | 2 |
 | Lane rows added since prior pass | 0 |
 | Lane rows removed since prior pass | 1 |
-| Non-lane rows deferred by simulated interleave | 116 |
+| Non-lane rows deferred by simulated interleave | 115 |
 
 Named lane membership churn since the prior pass:
 - removed: `ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26`
@@ -143,17 +143,17 @@ Hypothetical next dispatch top-10 under OFF-ONLY banded interleave (ready rows, 
 - 10. sim `abj_epsilon_index_square_block_no_go_note_2026-05-30` / actual `flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15` ← differs
 
 Lane rows advanced by the simulated interleave (positions gained; complete list):
-- `quark_route2_exact_readout_map_note_2026-04-19`: +51
-- `universal_gr_lorentzian_global_atlas_closure_note`: +51
-- `planck_boundary_orientation_incidence_no_go_note_2026-04-30`: +46
-- `planck_parent_source_hidden_character_no_go_note_2026-04-24`: +41
-- `koide_q_delta_linking_relation_theorem_note_2026-04-20`: +40
-- `self_gravity_backreaction_closure_note`: +40
-- `g_bare_dynamical_fixation_obstruction_note_2026-04-18`: +39
-- `koide_q_readout_factorization_theorem_2026-04-22`: +17
-- `koide_q_onsite_source_domain_no_go_synthesis_note_2026-04-25`: +17
-- `koide_frobenius_isotype_split_uniqueness_note_2026-04-21`: +16
-- `koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24`: +15
+- `quark_route2_exact_readout_map_note_2026-04-19`: +50
+- `universal_gr_lorentzian_global_atlas_closure_note`: +50
+- `planck_boundary_orientation_incidence_no_go_note_2026-04-30`: +45
+- `planck_parent_source_hidden_character_no_go_note_2026-04-24`: +40
+- `koide_q_delta_linking_relation_theorem_note_2026-04-20`: +39
+- `self_gravity_backreaction_closure_note`: +39
+- `g_bare_dynamical_fixation_obstruction_note_2026-04-18`: +38
+- `koide_q_readout_factorization_theorem_2026-04-22`: +16
+- `koide_q_onsite_source_domain_no_go_synthesis_note_2026-04-25`: +16
+- `koide_frobenius_isotype_split_uniqueness_note_2026-04-21`: +15
+- `koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24`: +14
 - `pmns_uniform_scalar_deformation_boundary_note`: +12
 - `pmns_oriented_cycle_channel_value_law_note`: +11
 - `pmns_hw1_source_transfer_boundary_note`: +11
@@ -214,7 +214,6 @@ Non-lane rows deferred by the simulated interleave (positions lost; complete lis
 - `su3_cube_index_graph_shortcut_open_gate_note_2026-05-03`: -12
 - `gate_b_poisson_self_gravity_note`: -11
 - `pmns_graph_axis_to_active_lane_bridge_note`: -11
-- `staggered_fermion_card_2026-04-11`: -11
 - `koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05`: -11
 - `lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27`: -11
 - `record_history_order_time_rate_firewall_2026-06-05`: -11
@@ -225,7 +224,7 @@ Non-lane rows deferred by the simulated interleave (positions lost; complete lis
 - `dm_leptogenesis_dweh_even_split_transfer_layer_note_2026-04-19`: -11
 - `plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06`: -10
 - `poisson_self_gravity_loop_v3_note`: -10
-- `dm_leptogenesis_pmns_projector_interface_note_2026-04-16`: -10
+- `staggered_fermion_card_2026-04-11`: -10
 - `dm_pmns_asymptotic_source_no_go_note_2026-04-20`: -10
 - `ckm_mass_basis_nni_structural_identities_narrow_theorem_note_2026-06-17`: -10
 - `dm_live_constants_canonical_edge_certificate_note_2026-06-18`: -10

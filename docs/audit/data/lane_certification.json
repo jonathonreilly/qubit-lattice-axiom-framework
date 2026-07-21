@@ -88,10 +88,6 @@
           "effective_status": "unaudited"
         },
         {
-          "claim_id": "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17",
-          "effective_status": "audit_in_progress"
-        },
-        {
           "claim_id": "three_generation_observable_count_corollary_note_2026-05-03",
           "effective_status": "unaudited"
         },
@@ -111,7 +107,7 @@
       "roots": [
         "charged_lepton_koide_value_full_chain_of_custody_2026-06-02"
       ],
-      "uncertified_count": 25
+      "uncertified_count": 24
     },
     {
       "blocking": [
@@ -2300,10 +2296,6 @@
           "effective_status": "unaudited"
         },
         {
-          "claim_id": "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17",
-          "effective_status": "audit_in_progress"
-        },
-        {
           "claim_id": "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac",
           "effective_status": "unaudited"
         },
@@ -2832,9 +2824,9 @@
       "roots": [
         "strong_cp_theta_zero_note"
       ],
-      "uncertified_count": 650
+      "uncertified_count": 649
     }
   ],
-  "repo_head": "e7347a439d765c6339e0a700e7d9d566d0f78a21",
+  "repo_head": "45a53f3709b5e2983ac42e1936b89a0d785b725f",
   "schema": "lane_certification_v2"
 }

@@ -1,0 +1,110 @@
+{
+  "schema": "cycle516-cycle515-koszul-frame-bridge-attempt4-receipt-v1",
+  "date": "2026-07-21",
+  "attempt": 4,
+  "authority": "none",
+  "audit": "unset",
+  "status": "cycle516-koszul-corrected-all-order-frame-certified",
+  "pass": true,
+  "command": "python3 scripts/physical_cycle515_koszul_frame_bridge_cycle516_2026_07_20.py --mode frame-certificate",
+  "runner": {
+    "path": "scripts/physical_cycle515_koszul_frame_bridge_cycle516_2026_07_20.py",
+    "sha256": "3c4318a84c661893932c8d41a90db36445f80cefd092a6a3fffb56cbf8abfa9c"
+  },
+  "dry": {
+    "path": "outputs/physical_cycle515_koszul_frame_bridge_cycle516_dry_2026_07_21.log",
+    "sha256": "2240ce21169dc6e9ba42277c1c68cc0b70b188d4a83b2bb49c91e1a0c9381920",
+    "tests_passed": 10,
+    "tests_total": 10,
+    "pass": true
+  },
+  "target": {
+    "path": "outputs/physical_cycle515_koszul_frame_bridge_cycle516_attempt4_2026_07_21.log",
+    "sha256": "710673f10229675789ab84abe24d15238f0b9b1674608b0254a77c02860ebcce",
+    "tests_passed": 12,
+    "tests_total": 12,
+    "pass": true,
+    "elapsed_seconds": 337.5217365839053,
+    "maximum_RSS_bytes": 139182080,
+    "process_swap_count": 0
+  },
+  "note": {
+    "path": "docs/work_history/repo/review_feedback/PHYSICAL_CYCLE515_KOSZUL_FRAME_BRIDGE_CYCLE516_NOTE_2026-07-21.md",
+    "sha256": "5f32e766fad91a960031bf68dac4ba3b2498b02b5fc4fce9ac1c795e67c23597"
+  },
+  "physical_cross_factor_certificate": {
+    "sizes": [5, 6],
+    "affine_local_term_rows_each": 15456,
+    "ordered_distinct_cell_pair_rows_each": 3995712,
+    "ordered_distinct_cell_pair_rows_total": 7991424,
+    "target_reference_commutator_mask_phase_failures_each": 0,
+    "maximum_local_amplitude_covariance_residual_each": 0.0,
+    "maximum_pair_amplitude_covariance_residual_each": 0.0,
+    "source_target_pair_masks_each": [0, 1, 2, 4, 8, 16, 32],
+    "pair_mask_histogram_sha256_each": "2f94d6a1b7fae9e65a1c685b6ae983d99cd3deaccf5bac30c4528ab9d24f59d4",
+    "nontrivial_Koszul_arm_pair_support_count_each": 15,
+    "nontrivial_Koszul_pair_rows": 180
+  },
+  "frame_algebra": {
+    "proper_cubic_frames": 24,
+    "role_transport_rows": 120960,
+    "D_character_rows": 2661120,
+    "D_character_failures": 0,
+    "C_Koszul_cocycle_rows": 520704,
+    "C_Koszul_cocycle_failures": 0,
+    "combined_B_D_C_Y_rows": 21696,
+    "combined_B_D_C_Y_failures": 0,
+    "restricted_K_E7_rows": 21696,
+    "restricted_K_E7_failures": 0,
+    "restricted_K_group_products": 576,
+    "restricted_K_group_failures": 0
+  },
+  "update_covariance": {
+    "logical_dimension": 904,
+    "Gstar_unitarity_residual": 1.877427078863363e-14,
+    "maximum_corrected_K_covariance_residual": 1.387000447936191e-15,
+    "maximum_ungraded_covariance_residual": 36.33180424917016,
+    "delete_Koszul_Y_pair_phase_residual": 2.0,
+    "delete_Koszul_Y_logical_intertwiner_residual": 2
+  },
+  "theorem": {
+    "correlated_E7_frame_intertwiner_proven_algebraically": true,
+    "restricted_K_physical_group_law_proven_algebraically": true,
+    "Gphysical_frame_covariance_on_code_proven_algebraically": true,
+    "primitive_synthesis_proven": false,
+    "local_constraint_synthesis_proven": false,
+    "adjacent_maximal_stars_open": true,
+    "recurrent_volume_open": true
+  },
+  "supplied": {
+    "dense_E_pi_C_f_E_pi_dagger": true,
+    "dense_Q": true,
+    "off_code_completion": true,
+    "bounded_patch_branch_shell_matrix_unit_application": true,
+    "constraint_enforcement": true,
+    "unused_role_domain_completion": true
+  },
+  "no_go_discipline": {
+    "result": "positive-bounded-with-corrected-wall-count",
+    "broad_no_go": "FAIL_NOT_PROPOSED",
+    "shared_obstruction": false,
+    "axiom_pressure": false
+  },
+  "previous_attempts": [
+    {
+      "attempt": 1,
+      "packaged": false,
+      "reason": "predicate specification expected 21 nontrivial Koszul witness pairs although proper frames fix the center and the exact support has 15 arm-arm pairs; every primitive residual was clean"
+    },
+    {
+      "attempt": 2,
+      "packaged": false,
+      "reason": "interrupted before completion to replace the inaccurate singular-orbit nomenclature with exact support terminology"
+    },
+    {
+      "attempt": 3,
+      "packaged": false,
+      "reason": "successful terminal run was repeated without code changes to obtain an exact hashable transcript through the patch workflow"
+    }
+  ]
+}

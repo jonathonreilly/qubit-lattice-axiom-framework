@@ -1,0 +1,87 @@
+{
+  "status": "cycle545-fixed-shared-volume-overlapping-recurrence-compiler",
+  "authority": "none",
+  "audit": "unset",
+  "runner_sha256": "b8dd10dd87c361215a3e94c661be75ed5042ba55c42b4b0140b092b6b819fd79",
+  "note_sha256": "e1fd77a21cd1f2aac8b7c0a5afb66a43275fb1c202f576f958c126d235f5a4bb",
+  "tests_passed": 10,
+  "tests_total": 10,
+  "pass": true,
+  "elapsed_seconds_internal": 218.58468533400446,
+  "timed_wall_seconds": 221.84,
+  "maximum_RSS_bytes": 326090752,
+  "process_swap_count": 0,
+  "global_code_isometry": {
+    "train_held_lengths": [5, 6],
+    "four_cell_complete_sector_cutoff": 3,
+    "logical_columns": 2325,
+    "sector_dimensions_N0_N1_N2_N3": [1, 24, 276, 2024],
+    "order_resolved_decoder_rows_per_size": 917376,
+    "within_q_order_decoder_collisions": 0,
+    "normalized_decoder_sha256": "43d162470685b53ff04a78af4b540749109737fe9cd2147a2bf1d341a9c47402",
+    "L5_L6_decoder_digest_match": true,
+    "terminal_branch_order_work_leakage": 0
+  },
+  "overlapping_recurrence": {
+    "fixed_volume": "four-cell degree-three star",
+    "A_cells": [0, 1, 2],
+    "B_cells": [0, 1, 3],
+    "shared_cells": [0, 1],
+    "shared_seam": 0,
+    "single_global_S4_order_register": true,
+    "separate_patch_order_registers": false,
+    "lawful_order_raw_difference": 0.751201387068515,
+    "lawful_order_difference_nonzero_entries": 1084860,
+    "maximum_single_update_unitarity_residual": 3.33067310140326e-15,
+    "maximum_repeat_norm_residual": 4.440892098500626e-16,
+    "maximum_repeat_inverse_residual": 4.757868702965895e-15,
+    "compiled_mass": 0.4534056541748851,
+    "mass_fixture_residual": 0.0,
+    "contact_nontrivial_columns_per_update": 915,
+    "Cycle230_seams_per_update": 2
+  },
+  "literal_physical_schedule": {
+    "compiler_live_M2": 273,
+    "primitives_per_order": 38552,
+    "one_M2_primitives_per_order": 4870,
+    "nearest_neighbor_two_M2_primitives_per_order": 33682,
+    "Cycle540_four_rotation_FSWAP_blocks": 304,
+    "raw_FSWAP_phase_product": "1",
+    "maximum_stage_color_classes": 3,
+    "same_color_collision_failures": 0,
+    "nearest_neighbor_failures": 0,
+    "terminal_route_displacement": 0
+  },
+  "covariance": {
+    "proper_cubic_frames": 24,
+    "frame_products": 576,
+    "maximum_update_residual": 1.8619006149354548e-16,
+    "maximum_sweep_residual": 4.47545209131181e-16,
+    "logical_or_schedule_frame_failures": 0,
+    "runtime_frame_selector": false
+  },
+  "deletions": {
+    "deleted_branch_Givens_residual": 0.41744238123296284,
+    "deleted_order_Givens_residual": 0.20520716180211218,
+    "deleted_second_update_residual": 1.316097915613727,
+    "deleted_shared_seam_residual": 0.8740010519307571,
+    "deleted_return_SWAP_leaves_displaced_data": true
+  },
+  "target_and_carrier_boundary": {
+    "Cycle532_target_times_gauge_replay_pass": true,
+    "Gamma_P_mass_contact_seam_replay_pass": true,
+    "Cycle539_selected_carrier_equals_Cycle532_rough_carrier": false,
+    "physical_selected_to_rough_transducer_supplied": false,
+    "common_object": "target CAR update only"
+  },
+  "boundary": {
+    "fixed_patch_simultaneous_recurrence_closed": true,
+    "all_volume_translation_equivariant_tiling_closed": false,
+    "fixed_reference_genesis_closed": false,
+    "route_blank_genesis_closed": false,
+    "all_four_cell_sectors_N4_through_N24_closed": false,
+    "shared_substrate_obstruction": false,
+    "minimum_content_theorem": false,
+    "axiom_pressure": false
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "status": "cycle541-finite-open-dilation-conditional-on-supplied-stochastic-kernel-product-genesis-read",
+  "authority": "none",
+  "audit": "unset",
+  "runner_sha256": "2101f9cc0dbf8fefafecd08205b4af4618bbaddf1130fe2bbb593b5abb4246a4",
+  "note_sha256": "824e827470585f036a8ef7db90d7600ec909a02b4b95e3b18562a467091ad2bc",
+  "tests_passed": 9,
+  "tests_total": 9,
+  "pass": true,
+  "elapsed_seconds_internal": 113.38558966596611,
+  "timed_wall_seconds": 239.90,
+  "maximum_RSS_bytes": 685244416,
+  "process_swap_count": 0,
+  "physical_dilation": {
+    "total_M2": 720,
+    "new_M2": 544,
+    "active_bath_M2": 125,
+    "fresh_environment_M2": 375,
+    "trial_pointer_M2": 4,
+    "append_only_candidate_output_M2": 40,
+    "logical_gates": 1798,
+    "maximum_displayed_support_M2": 3,
+    "nearest_neighbor_primitives": 9206020,
+    "routing_adjacent_SWAPS": 1534037,
+    "schedule_sha256": "227e26c16e7eec03e88ee368c368c6683c2723bb937432e336b578d24117c3e6",
+    "host_randomness_calls": 0,
+    "kernel_or_q_calls_in_physical_schedule": 0
+  },
+  "composition": {
+    "physical_columns": 7500,
+    "member_binding_mismatch_columns": 6000,
+    "member_occurrence_reset_output_failures": 0,
+    "exact_Cycle531_midpoint_failures": 0,
+    "enlarged_dilation_inverse_failures": 0,
+    "terminal_scratch_failures": 0,
+    "proper_cubic_columns": 9000,
+    "proper_cubic_failures": 0
+  },
+  "capacity_and_entropy": {
+    "basis_origin_sequences": 125,
+    "permanence_horizon_trials": 4,
+    "prior_output_overwrite_failures": 0,
+    "fifth_trial_lawful_domain_rejected_for_every_origin": true,
+    "correlated_genesis_words": [[0, 0, 0, 0], [1, 1, 1, 1], [2, 2, 2, 2], [3, 3, 3, 3], [4, 4, 4, 4]],
+    "member_entropy_bits_range": [1.689366190049587, 2.090392217285188],
+    "microstate_entropy_bits_range": [6.333222379824312, 6.734248407059913],
+    "reset_work_derived": false,
+    "candidate_output_is_framework_Record": false,
+    "realized_history_claimed": false
+  },
+  "controls": {
+    "deletion_witnesses": 13,
+    "deletion_basis_residual": 1.4142135623730951,
+    "physical_four_trial_capacity_sufficient_for_N5000": false,
+    "near_q_synthetic_controls_accepted": 4,
+    "biased_synthetic_controls_rejected": 4,
+    "empirical_corpus_evaluated": false
+  },
+  "boundary": {
+    "stochastic_kernel_separately_supplied": true,
+    "product_genesis_independence_separately_supplied": true,
+    "law_owned_read_ontology_separately_supplied": true,
+    "autonomous_product_genesis_preparation_closed": false,
+    "reusable_irreversible_reset_closed": false,
+    "framework_Record_closed": false,
+    "Born_probability_closed": false,
+    "physical_time_closed": false,
+    "source_or_gravity_closed": false,
+    "shared_substrate_obstruction": false,
+    "axiom_pressure": false
+  }
+}

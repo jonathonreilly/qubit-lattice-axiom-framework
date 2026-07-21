@@ -102,7 +102,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "retained",
-  "load_bearing_score": 31.831,
+  "load_bearing_score": 31.833,
   "load_bearing_step": "Since H^*=-H and P H P=-H, the two sign reversals cancel so (P K) H (P K)^{-1}=H, direction by direction as well as for H.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -1998,6 +1998,6 @@
   },
   "runner_path": "scripts/frontier_cpt_exact.py",
   "title": "Exact antiunitary symmetry of the free staggered Hermitian lift",
-  "transitive_descendants": 910,
+  "transitive_descendants": 911,
   "verdict_rationale": "The proof correctly establishes the real anti-Hermiticity of D and tracks both unitary spectral flips and the additional sign introduced by antiunitary conjugation of i. It also proves the involution and direction-resolved statements without extending the result to physical CPT or interacting theories. The runner genuinely constructs the finite-lattice operators and supplies 115 exact algebraic checks rather than printing hard-coded outcomes."
 }

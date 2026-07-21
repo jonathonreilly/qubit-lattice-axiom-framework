@@ -57,7 +57,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 20.51,
+  "load_bearing_score": 20.511,
   "load_bearing_step": "Tracelessness gives 6 alpha + 2 beta = 0, hence beta = -3 alpha, and substituting the supplied alpha = 1/3 yields the spectrum (+1/3,-1).",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -755,6 +755,6 @@
   },
   "runner_path": "scripts/frontier_hypercharge_identification_scope_repair_2026_07_04.py",
   "title": "Name-Free U(1) Two-Block Algebra",
-  "transitive_descendants": 1030,
+  "transitive_descendants": 1031,
   "verdict_rationale": "The runner genuinely constructs the swap projectors and embedded operators, confirming the ranks, one-dimensional traceless kernel, eigenvalue ratio, spectrum, and commutators rather than merely printing expected constants. The structural +1:(-3) result is an exact algebraic consequence of the stated decomposition. However, the normalized (+1/3,-1) result depends on the explicitly supplied alpha=1/3 normalization, which the packet says is not derived, so the full scoped claim remains conditional."
 }

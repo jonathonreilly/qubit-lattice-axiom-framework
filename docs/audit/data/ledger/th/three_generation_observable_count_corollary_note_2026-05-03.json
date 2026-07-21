@@ -29,7 +29,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 11.768,
+  "load_bearing_score": 11.781,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -566,6 +566,91 @@
         "total_pass": 27
       },
       "verdict_rationale": "The matrix-unit construction and irreducibility implication correctly establish count preservation on the instantiated representation. However, the restricted packet supplies no one-hop authorities for the two explicitly load-bearing retained inputs, so their connection to the retained Cl(3)/Z^3 surface remains unverified. For N1-N8 purposes, the sole negative assertion is the derived absence of nonzero proper algebra-preserving quotients; the missing dependency evidence prevents clean certification, and no broader wall is established."
+    },
+    {
+      "archived_at": "2026-07-21T01:40:16.889784+00:00",
+      "audit_date": "2026-07-21T01:35:27.660299+00:00",
+      "audit_invocation_history": [
+        "469b75c093d140b18b46d0889e434daa"
+      ],
+      "audit_invocation_id": "469b75c093d140b18b46d0889e434daa",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 0,
+          "counts": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0
+          },
+          "decoration_candidate": false,
+          "dominant_class": null,
+          "exists": true,
+          "runner_path": "scripts/frontier_three_generation_observable_count_corollary.py"
+        },
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 11.768,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "c7fcaca394bf2438a6e64b84f8b26130d485232c1f5416ee74ceb76832e88656",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_three_generation_observable_count_corollary.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "09070c3f94208a84370d18d8eb08493dc1d8b442789b06328d050e3fd3ae087e",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "09070c3f94208a84370d18d8eb08493dc1d8b442789b06328d050e3fd3ae087e",
+        "runner_path": "scripts/frontier_three_generation_observable_count_corollary.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 108
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260721-80b9992d",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite-dimensional quotient argument closes for the supplied matrices, but neither cited authority establishing the orbit/species identification and retained operator representation is included. The runner hard-codes those inputs rather than deriving or authenticating them.",
+      "claim_scope": "Conditional on the stated three-corner hw=1 sector and matrices realizing the retained generation generators, every nonzero linear quotient on which those generators descend has dimension three.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-21T01:35:27.660299+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Because the stated generators span M_3(C), every nonzero quotient on which they descend has invariant kernel {0} and therefore preserves dimension three.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add docs/THREE_GENERATION_STRUCTURE_NOTE.md and docs/THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md as direct authenticated dependencies, regenerate the restricted packet, and re-audit the orbit/species and retained-generator identifications.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 26,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 27
+      },
+      "verdict_rationale": "Issue: the authority block supplies no cited authorities even though the note relies on two upstream retained claims, while the runner directly assigns the Wilson mass and generator matrices and asserts observable descent. Why this blocks: the matrix-unit calculation proves conditional irreducibility but does not establish that its hard-coded objects are the retained generation algebra and lightest nonzero-mass species. Repair target: supply both named upstream notes as authenticated one-hop dependencies so their status and exact identification claims can be checked. Claim boundary until fixed: the algebraic nonexistence subclaim is exact for the stated matrices; N1 alternatives leave its quantified domain, N2 reduces to irreducibility and the missing retained-representation identification, N3 exposes that missing import, N4 supplies no prior witness, N5 is finite-dimensional, N6 supplies no replacement authority, N7 favors the matrix-unit proof, and N8 provides no applicable echo that repairs the omitted inputs."
     }
   ],
   "prose_corrections": [],
@@ -579,6 +664,6 @@
   },
   "runner_path": "scripts/frontier_three_generation_observable_count_corollary.py",
   "title": "Three-Generation Observable Count Corollary Note",
-  "transitive_descendants": 108,
+  "transitive_descendants": 109,
   "verdict_rationale": null
 }

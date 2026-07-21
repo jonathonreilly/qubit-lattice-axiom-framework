@@ -72,7 +72,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "retained",
-  "load_bearing_score": 25.185,
+  "load_bearing_score": 25.186,
   "load_bearing_step": "For H(phi) = sum_i phi_i S_i, V_sel(phi) = Tr H(phi)^4 - (1/8)(Tr H(phi)^2)^2 = 32 sum_{i<j} phi_i^2 phi_j^2, which normalizes to the pairwise-overlap potential with axis minima.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "retained_no_go",
@@ -309,6 +309,6 @@
   },
   "runner_path": "scripts/frontier_graph_first_selector_derivation.py",
   "title": "Graph-First Weak-Axis Selector Derivation",
-  "transitive_descendants": 1645,
+  "transitive_descendants": 1646,
   "verdict_rationale": "The runner constructs the canonical Pauli-x cube shifts directly and verifies their algebraic properties, trace identities, normalized overlap form, axis minima, and residual stabilizers. Its checks are internal algebra over the stated graph-shift surface, with no external comparator, tuned numerical scale, or imported physical bridge. The cited SU(3) integration note is not load-bearing for this selector derivation, and the source note explicitly bounds away downstream abelian or phenomenological claims."
 }

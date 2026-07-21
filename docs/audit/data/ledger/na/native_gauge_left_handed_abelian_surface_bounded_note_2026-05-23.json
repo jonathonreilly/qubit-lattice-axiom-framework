@@ -52,7 +52,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "decoration_under_graph_first_su3_integration_note",
-  "load_bearing_score": 11.926,
+  "load_bearing_score": 11.927,
   "load_bearing_step": "The residual swap tau is an involution, so Pi_+ and Pi_- are complementary projectors with doubled symmetric/antisymmetric ranks 6 and 2, making Y_like traceless with eigenvalues +1/3 and -1 on those blocks.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "unknown",
@@ -73,6 +73,6 @@
   },
   "runner_path": "scripts/frontier_native_gauge_left_handed_abelian_surface_bounded_2026_05_23.py",
   "title": "Native Gauge Left-Handed Abelian Surface Bounded Note",
-  "transitive_descendants": 1375,
+  "transitive_descendants": 1376,
   "verdict_rationale": "The runner genuinely constructs the residual swap on the eight cube vertices for all three selected axes, forms the projectors, and checks ranks, trace, Hermiticity, and eigenvalue multiplicities. The dependency checks are ledger/status checks rather than physics derivations, while the load-bearing eigenvalue calculation is algebraic over the retained graph-first SU3 integration parent. Because the same abelian eigenvalue surface is already explicitly contained in that parent and this note deliberately narrows scope rather than adding a new theorem, the appropriate conservative verdict is decoration, not a new bounded theorem."
 }

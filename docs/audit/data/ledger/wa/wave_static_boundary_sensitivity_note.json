@@ -64,7 +64,7 @@
   ],
   "independence": "fresh_context",
   "intrinsic_status": "retained_bounded",
-  "load_bearing_score": 9.982,
+  "load_bearing_score": 9.984,
   "load_bearing_step": "Enlarging PW from 6.0 to 9.0 at shared H = 0.5 changes dS by 17.54% and rel_MS by 88.41%, so they are not preserved within 5%.",
   "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
@@ -191,6 +191,6 @@
   },
   "runner_path": "scripts/wave_static_boundary_sensitivity.py",
   "title": "Wave Static Boundary Sensitivity",
-  "transitive_descendants": 714,
+  "transitive_descendants": 715,
   "verdict_rationale": "The note makes a bounded negative stability claim, and the provided runner output matches the reported dS, rel_MS, residuals, and boundary-move percentages. The runner source does not merely print constants; it constructs the static solve, calls the wave/beam machinery, computes dM and dS, and derives rel_MS and relative moves from those values. No cited upstream authority is required for the narrow statement that this particular computation shows material finite-box sensitivity."
 }

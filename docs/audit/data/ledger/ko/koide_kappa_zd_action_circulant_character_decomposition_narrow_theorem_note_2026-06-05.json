@@ -1,24 +1,77 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-21T00:45:57.374280+00:00",
+  "audit_invocation_history": [
+    "a70db32fbf3e44a1b7d20aeb1f756835"
+  ],
+  "audit_invocation_id": "a70db32fbf3e44a1b7d20aeb1f756835",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 3
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true,
+      "runner_path": "scripts/audit_companion_koide_kappa_zd_action_character_2026_06_05.py"
+    },
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "Pure algebraic Fourier/character identities relating H = aI + bC + b\u0304C\u00b2 on R \u00d7 C to the C_3 character coefficients of its eigenvalue triple."
+    },
+    "dep_claim_type": {
+      "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "retained"
+    },
+    "deps": [
+      "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 10.064,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "c7fcaca394bf2438a6e64b84f8b26130d485232c1f5416ee74ceb76832e88656",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/audit_companion_koide_kappa_zd_action_character_2026_06_05.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "2d0ee93d16b72876b651dea3cb7852d5207e3bf72dc605197be6ebfec246a75f",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "2d0ee93d16b72876b651dea3cb7852d5207e3bf72dc605197be6ebfec246a75f",
+    "runner_path": "scripts/audit_companion_koide_kappa_zd_action_character_2026_06_05.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 756
+  },
+  "audit_status": "audited_failed",
+  "auditor": "codex-audit-batch-A-20260721-13e04c1b",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "Equation (4) establishes that C \u00b7 C^k is an eigenline, but not that it is the entire eigenvalue-omega^k eigenspace of rho on M_d(C); that ambient eigenspace contains all E_{i,i+k} and has complex dimension d. The stated real decomposition remains valid after explicitly restricting the eigenspace claim to the complex circulant subalgebra.",
   "claim_id": "koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05",
-  "claim_scope": null,
+  "claim_scope": "The clock-conjugation action on the complex circulant subalgebra and its induced real decomposition of Herm_circ(d), including the asserted eigenspace identification in M_d(C).",
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-21T00:45:57.374280+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,19 +79,20 @@
     "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09"
   ],
   "direct_in_degree": 1,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_failed",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_failed",
   "load_bearing_score": 10.064,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Hence the complex line C \u00b7 C^k \u2282 M_d(C) is the eigenspace of rho with eigenvalue omega^k.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "f34f5ef23a0a0eb812ed1771317baf49ac929c5afafcea6ad6de90b375a638f0",
   "note_path": "docs/KOIDE_KAPPA_ZD_ACTION_CIRCULANT_CHARACTER_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-05.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Re-audit after the ambient eigenspace wording is restricted to the complex circulant subalgebra and the runner checks that scoped statement.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -124,14 +178,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 112,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 112
   },
   "runner_path": "scripts/audit_companion_koide_kappa_zd_action_character_2026_06_05.py",
   "title": "Koide kappa Z_d-Action Circulant Character Decomposition Narrow Theorem",
   "transitive_descendants": 756,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: C2 identifies C \u00b7 C^k as the eigenspace in M_d(C), although clock conjugation has a d-dimensional eigenvalue-omega^k space spanned by the matrix units E_{i,i+k}. Why this blocks: the runner checks only the action matrix in the C-power basis and therefore does not establish the source's ambient M_d(C) eigenspace statement. Repair target: qualify C2 and the claim scope so that C \u00b7 C^k is the eigenspace within the complex circulant subalgebra, or merely an eigenline in M_d(C). Claim boundary until fixed: equation (4) supports the character decomposition of circulants and the resulting real trivial/doublet/sign decomposition, but not the asserted full-M_d(C) eigenspace identification."
 }

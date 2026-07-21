@@ -53,7 +53,7 @@
         },
         {
           "claim_id": "koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05",
-          "effective_status": "unaudited"
+          "effective_status": "audited_failed"
         },
         {
           "claim_id": "koide_q_delta_residual_cohomology_obstruction_no_go_note_2026-04-24",
@@ -1421,7 +1421,7 @@
         },
         {
           "claim_id": "koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05",
-          "effective_status": "unaudited"
+          "effective_status": "audited_failed"
         },
         {
           "claim_id": "koide_moment_ratio_uniformity_theorem_note_2026-04-19",
@@ -2827,6 +2827,6 @@
       "uncertified_count": 649
     }
   ],
-  "repo_head": "9f60394ef1db541fc37b384feec7e2e6cc23fbd4",
+  "repo_head": "aa5d83ba680d66ce88cd5bfd12a85b61292928f1",
   "schema": "lane_certification_v2"
 }

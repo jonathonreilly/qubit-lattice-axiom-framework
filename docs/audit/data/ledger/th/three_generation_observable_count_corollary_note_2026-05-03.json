@@ -305,6 +305,94 @@
         "total_pass": 27
       },
       "verdict_rationale": "The orbit enumeration and matrix-unit calculations support the conditional algebraic corollary on the instantiated C^3 model. They do not establish that this hard-coded model is the retained hw=1 operator surface, because the two expressly load-bearing cited notes are absent from the authority packet. The embedded no-proper-quotient assertion also lacks complete N1-N8 support: the packet provides no five-route stress test, independent wall analysis, resolved steelman, or applicable cross-cycle disposition that repairs the missing authority link."
+    },
+    {
+      "archived_at": "2026-07-21T01:17:06.719048+00:00",
+      "audit_date": "2026-07-21T01:10:13.230899+00:00",
+      "audit_invocation_history": [
+        "a97b431944b84dde8d9a0ded8ed1518d"
+      ],
+      "audit_invocation_id": "a97b431944b84dde8d9a0ded8ed1518d",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 0,
+          "counts": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0
+          },
+          "decoration_candidate": false,
+          "dominant_class": null,
+          "exists": true,
+          "runner_path": "scripts/frontier_three_generation_observable_count_corollary.py"
+        },
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 11.768,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "c7fcaca394bf2438a6e64b84f8b26130d485232c1f5416ee74ceb76832e88656",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_three_generation_observable_count_corollary.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "09070c3f94208a84370d18d8eb08493dc1d8b442789b06328d050e3fd3ae087e",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "09070c3f94208a84370d18d8eb08493dc1d8b442789b06328d050e3fd3ae087e",
+        "runner_path": "scripts/frontier_three_generation_observable_count_corollary.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 108
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260721-59b2b5f7",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite-dimensional implication closes once the hw=1 count and M_3(C) action are assumed, but the restricted packet supplies neither cited upstream authority that establishes those inputs as retained-grade.",
+      "claim_scope": "The asserted preservation of the hw=1 count of three under every nonzero quotient preserving the retained generation algebra.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-21T01:10:13.230899+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Any quotient preserving all retained generators has M_3(C)-invariant kernel; irreducibility and a nonzero target force ker(Q) = {0}, so dim(H_red) = 3.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add explicit dependency edges for docs/THREE_GENERATION_STRUCTURE_NOTE.md and docs/THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md, include their authenticated retained-grade text and status in the restricted packet, and add a dated downstream-hygiene line to this note's Authority boundary so its hash drift requeues the row.",
+      "open_dependency_paths": [
+        "docs/THREE_GENERATION_STRUCTURE_NOTE.md",
+        "docs/THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 22,
+        "B": 0,
+        "C": 5,
+        "D": 0,
+        "total_pass": 27
+      },
+      "verdict_rationale": "The orbit enumeration and matrix-unit argument support the conditional finite-dimensional result. However, the runner hard-codes the translation characters and C3 action, while several final implications are asserted with unconditional True checks rather than derived from an accepted axiom. The note explicitly depends on two purportedly retained authorities, but section 2 supplies no cited authorities, so their content and status cannot be authenticated. For the derived no-proper-quotient boundary, the N1-N8 judgment remains non-clean: no alternative-route, residual, rhetoric-resolution, partial-closure, steelman, or cross-cycle evidence repairs those missing premises."
     }
   ],
   "prose_corrections": [],

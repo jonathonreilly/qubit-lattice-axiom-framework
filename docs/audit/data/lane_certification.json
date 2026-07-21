@@ -37,7 +37,7 @@
         },
         {
           "claim_id": "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23",
@@ -2827,6 +2827,6 @@
       "uncertified_count": 649
     }
   ],
-  "repo_head": "45a53f3709b5e2983ac42e1936b89a0d785b725f",
+  "repo_head": "9f60394ef1db541fc37b384feec7e2e6cc23fbd4",
   "schema": "lane_certification_v2"
 }

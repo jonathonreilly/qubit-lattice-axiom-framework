@@ -63,7 +63,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "retained",
-  "load_bearing_score": 13.707,
+  "load_bearing_score": 13.714,
   "load_bearing_step": "Hermiticity, anti-commutation, and Hv = \u03bbv imply \u03bb\u27e8v|\u0393_\u03c7|v\u27e9 = \u2212\u03bb\u27e8v|\u0393_\u03c7|v\u27e9, so \u27e8v|\u0393_\u03c7|v\u27e9 = 0 when \u03bb \u2260 0.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -84,6 +84,6 @@
   },
   "runner_path": "scripts/frontier_koide_anticommuting_operator_derivation.py",
   "title": "Koide Anti-Commuting Operator \u2192 LCC Derivation Theorem",
-  "transitive_descendants": 208,
+  "transitive_descendants": 209,
   "verdict_rationale": "The load-bearing argument is a valid standalone algebraic closure and imports no empirical value, open authority, or framework realization. The supplied runner performs genuine symbolic matrix checks and explicit eigenvector tests rather than merely printing expected constants. The note correctly confines its conclusion to the conditional theorem and does not claim that the required H exists in the framework."
 }

@@ -31,7 +31,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 10.998,
+  "load_bearing_score": 11.0,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -1566,6 +1566,6 @@
   },
   "runner_path": "scripts/frontier_hierarchy_d4_density_scale_readout_bridge_2026_06_16.py",
   "title": "Hierarchy D4 Density-Scale Readout Bridge Bounded Theorem Note",
-  "transitive_descendants": 722,
+  "transitive_descendants": 723,
   "verdict_rationale": null
 }

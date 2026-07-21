@@ -74,7 +74,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 15.585,
+  "load_bearing_score": 15.6,
   "load_bearing_step": "Sharpening p\u2192p\u00b2/Z on the two-sector distribution reduces precisely to r\u21a62r\u00b2.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -1922,6 +1922,6 @@
   },
   "runner_path": "scripts/flavor_r_half_is_the_records_flow_separatrix_2026_06_02.py",
   "title": "Flavor \u2014 stipulated records map: `r=1/2` is the unstable separatrix of `r\u21922r\u00b2`.",
-  "transitive_descendants": 95,
+  "transitive_descendants": 96,
   "verdict_rationale": "The runner correctly verifies the fixed points, local stability, basin behavior, and entropy comparators for the stipulated one-dimensional map, although its exact-map and entropy checks are partly finite-sample rather than symbolic. The unresolved terminal obligation is the derivation or retained-grade licensing of the two-sector L\u00fcders update as a records flow; that physical identification is stronger than the conditional map theorem but prevents an unconditional framework chain. The note properly excludes that identification from its bounded scope, so the conditional algebraic result survives while clean framework closure does not."
 }

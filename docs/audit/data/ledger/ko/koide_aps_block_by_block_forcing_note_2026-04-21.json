@@ -63,7 +63,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "decoration_under_koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
-  "load_bearing_score": 14.018,
+  "load_bearing_score": 14.02,
   "load_bearing_step": "L_C_3(N) = (1/3)(1/3 + 1/3) = 2/9.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -1799,6 +1799,6 @@
   },
   "runner_path": "scripts/frontier_koide_aps_block_by_block_forcing.py",
   "title": "Delta Support Route C3 Local-Density Boundary Manifest",
-  "transitive_descendants": 732,
+  "transitive_descendants": 733,
   "verdict_rationale": "The direct result repeats the finite average already proved by the retained fixed-locus authority and applies only exact algebra. It adds no independent framework computation and has no external comparator checks, so it is a single-parent algebraic decoration rather than a new bounded theorem. The runner failures expect the supplier's former retained_bounded status and older claim-scope wording, while the supplied current retained theorem still explicitly covers the local representation and density."
 }

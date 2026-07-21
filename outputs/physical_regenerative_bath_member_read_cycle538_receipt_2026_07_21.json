@@ -1,0 +1,95 @@
+{
+  "status": "constructive deterministic read comparator; stochastic/reset/Born/Record walls remain open",
+  "authority": "none",
+  "audit": "unset",
+  "runner_sha256": "d794bc9084cd4b670b80ccce3fb2dfb008b39f174979cf17c36984bc840b8be4",
+  "note_sha256": "068ea67f53bce065ef8e2eb5053ab787e7f33b152617bca727df7fb3e5c96e97",
+  "tests_passed": 9,
+  "tests_failed": 0,
+  "pass": true,
+  "elapsed_seconds_internal": 135.77164466597605,
+  "timed_wall_seconds": 262.36,
+  "maximum_RSS_bytes": 719732736,
+  "process_swap_count": 0,
+  "composition": {
+    "law_fixtures": 4,
+    "Cycle531_columns": 37500,
+    "mismatched_member_binding_columns": 30000,
+    "member_occurrence_failures": 0,
+    "Cycle531_midpoint_failures": 0,
+    "inverse_failures": 0,
+    "terminal_scratch_failures": 0
+  },
+  "deterministic_read": {
+    "bath_states": 125,
+    "single_member_given_microstate": true,
+    "read_ontology_supplied": true,
+    "stochastic_transition_law": null,
+    "probability_measure_over_bath_genesis": null,
+    "Born_calibration": null,
+    "p_hat_equals_q_exactly": false,
+    "count_allocations": [
+      [4, 36, 25, 19, 41],
+      [6, 17, 9, 51, 42],
+      [8, 66, 19, 32, 0],
+      [6, 19, 16, 44, 40]
+    ],
+    "maximum_componentwise_p_hat_minus_q": [
+      0.004698660624847473,
+      0.0025441430718647906,
+      0.004264000205567053,
+      0.004041252625493638
+    ]
+  },
+  "recurrence_and_independence": {
+    "bath_period": 125,
+    "echo_exact_return_steps": 250,
+    "same_label_bigram_fractions": [0.96, 0.96, 0.968, 0.96],
+    "iid_same_label_comparators": [0.254656, 0.305344, 0.37152, 0.268096],
+    "repeated_trial_independence": false,
+    "reset_entropy_sink": null,
+    "entropy_export": null,
+    "permanent_Record_or_history": null
+  },
+  "blinded_rejection_surface": {
+    "rule": "accept exactly a cyclic rotation of the compiled 125-label table",
+    "admitted_rotations_per_fixture": 125,
+    "Cycle534_rotation_rejected": true,
+    "Cycle536_constant_rejected": true,
+    "reversed_partition_rejected": true,
+    "observed_empirical_corpus": null,
+    "likelihood_or_p_value": null
+  },
+  "routing_and_covariance": {
+    "total_port_composite_M2": 326,
+    "logical_gates": 1028,
+    "routing_adjacent_SWAPS": 250325,
+    "nearest_neighbor_primitives": 1502978,
+    "maximum_displayed_support_M2": 3,
+    "routed_logical_or_inverse_failures": 0,
+    "proper_cubic_frames": 24,
+    "frame_columns": 36000,
+    "frame_failures": 0,
+    "two_site_Toffoli_decomposition_supplied": false,
+    "schedule_sha256": "419255c64139cee8956dabca03e73201494d65278f7e4926a0e2fa6e8acdfa39"
+  },
+  "deletions": {
+    "witnesses": 25,
+    "unwitnessed": 0,
+    "basis_residual": 1.4142135623730951,
+    "bath_input_deletion_rejected": true,
+    "malformed_partition_rejected": true
+  },
+  "boundary": {
+    "pointwise_deterministic_read_closed_given_supplied_ontology": true,
+    "stochastic_law_closed": false,
+    "fresh_independence_closed": false,
+    "entropy_export_reset_closed": false,
+    "permanent_Record": false,
+    "realized_history": false,
+    "Born_probability": false,
+    "shared_substrate_obstruction": false,
+    "minimum_content_theorem": false,
+    "axiom_pressure": false
+  }
+}

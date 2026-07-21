@@ -1,0 +1,81 @@
+{
+  "status": "cycle533-explicit-selected-seam-code-space-isometry-partial-closure",
+  "authority": "none",
+  "audit": "unset",
+  "runner_sha256": "72fe24e03b38812ef9f6dc610bc445b5ea6046a30683c2b734e9c0396e84facd",
+  "note_sha256": "e15712305bd770cff61133f184d02da1714c50453bb5f3c492f1cc3051e119c2",
+  "tests_passed": 12,
+  "tests_total": 12,
+  "pass": true,
+  "elapsed_seconds_internal": 147.6766446250258,
+  "timed_wall_seconds": 148.37,
+  "maximum_RSS_bytes": 557318144,
+  "process_swap_count": 0,
+  "code_space_isometry": {
+    "identity": "W G_q W^dagger E12 = E12 G_coarse",
+    "local_q_blocks": 4096,
+    "structural_rays": 25600,
+    "unique_q_plus_joint_role_patterns": 25600,
+    "within_q_decoder_collisions": 0,
+    "E12_Gram_residual_L5_L6": [0.0, 0.0],
+    "branch_terminal_leakage": 0,
+    "conjunction_work_terminal_leakage": 0,
+    "arbitrary_2_power_95_unitary_synthesized": false
+  },
+  "explicit_circuit": {
+    "branch_Givens_both_cells": 192,
+    "controlled_Gray_X_macros": 64,
+    "selected_Pauli_lookup_entries": 320,
+    "controlled_single_Pauli_factors": 5778,
+    "joint_decoder_MCUs": 35840,
+    "joint_decoder_equality_controls": 38,
+    "legality_projector_minterms": 25600,
+    "maximum_single_Pauli_support_M2": 35,
+    "maximum_combined_Pauli_support_M2": 63,
+    "compiler_live_wire_upper_bound_M2": 135,
+    "physical_update_Toffoli_upper_count": 5413020,
+    "constant_not_efficiency_claim": true
+  },
+  "routing_and_covariance": {
+    "proper_cubic_frames": 24,
+    "frame_products": 576,
+    "maximum_NN_route_edges": 48,
+    "mapped_NN_edge_failures_L5_L6": [0, 0],
+    "mapped_frame_group_failures_L5_L6": [0, 0],
+    "runtime_frame_query": false,
+    "compile_time_schedule_orbit": true
+  },
+  "physics_residuals": {
+    "Cycle219_coin": 5.0207498326926886e-15,
+    "Cycle230_contact": 2.149937642474629e-15,
+    "compiled_rest_mass": 0.453405654174885,
+    "rest_mass_fixture": 0.4534056541748851,
+    "uniform_one_particle": 8.7159799596118e-16,
+    "axis_FSWAP_braid_maximum": 0.0,
+    "two_step_recurrence_maximum": 1.5416528402018934e-15,
+    "inverse_maximum": 1.1429443574931856e-15
+  },
+  "route_specific_failures": {
+    "direct_separator_candidates": 21504,
+    "direct_separator_failures": 6144,
+    "one_cell_decoder_tests": 51200,
+    "one_cell_decoder_failures": 22272,
+    "joint_decoder_bypasses_both_failures": true
+  },
+  "deletions": {
+    "deleted_state_Givens_minimum_residual": 0.41744238123296284,
+    "deleted_branch_erase_minimum_amplitude": 0.16666666666666666,
+    "deleted_legality_minterm_rejected_rays": 1,
+    "deleted_SELECT_detected": true,
+    "deleted_return_route_SWAP_detected": true
+  },
+  "boundary": {
+    "Cycle530_dense_S_import_removed_on_declared_code_space": true,
+    "fixed_Wilson_reference_preparation_closed": false,
+    "simultaneous_recurrent_volume_shared_seams_closed": false,
+    "global_Jordan_Wigner_or_parity_service": false,
+    "shared_substrate_obstruction": false,
+    "axiom_pressure": false,
+    "broad_negative_gate": "FAIL / DO NOT SHIP"
+  }
+}

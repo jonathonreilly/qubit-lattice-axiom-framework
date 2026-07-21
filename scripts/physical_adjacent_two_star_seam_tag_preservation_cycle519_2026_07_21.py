@@ -5,13 +5,16 @@ This bounded runner appends one binary M2 tag to the oriented adjacent-star
 patch of Cycles 517/518.  The tag is the parity of the six logical modes at
 the anchored (left) center.  It proves, on the declared global-N<=2 code
 space, that the tag splits every native collision fiber without changing the
-Cycle-311/315 branch grammar.  It also tests the local seven-M2 constraint,
+Cycle-311/315 branch grammar.  It also distinguishes a seven-M2 factor-local
+parity descriptor from the final overlapping code: an explicit full-product
+countercontrol rejects the former as a global stabilizer.  The runner tests
 proper-cubic anchored covariance, the endpoint-reversal cocycle, and the
 logical free-plus-contact seam transport rule.
 
-The certificate does not synthesize the constraint or the controlled tag-X
-from primitive physical M2 updates.  Nor does it prove that one tag per star
-center can be reused consistently in a recurrent overlapping tiling.
+The certificate does not prepare the independent collision-splitting tag or
+synthesize its controlled tag-X from primitive physical M2 updates.  Nor does
+it prove that one tag per star center can be reused consistently in a
+recurrent overlapping tiling.
 
 Authority: none.  Audit: unset.  Constitutional effect: none.
 """
@@ -44,7 +47,7 @@ c517 = c518.c517
 c516 = c518.c516
 AUTHORITY = "none"
 AUDIT = "unset"
-REVISION = 1
+REVISION = 2
 CLI_MODES = ("dry-contract", "tag-certificate")
 TRAIN_LENGTH = 5
 HELD_LENGTH = 6
@@ -58,8 +61,10 @@ EXPECTED_TAG_ONE_SEEDS = 39_660
 EXPECTED_FULL_BRANCHES = 245_518_336
 EXPECTED_PROPER_FRAMES = 24
 EXPECTED_FRAME_PRODUCTS = 576
-EXPECTED_LOCAL_TERM_TESTS = 1_104
-EXPECTED_ANCHOR_TERM_TESTS = 92
+EXPECTED_LOCAL_TERM_TESTS = 3_072
+EXPECTED_ANCHOR_TERM_TESTS = 256
+EXPECTED_OVERLAP_BRANCH_TESTS_PER_TARGET = 1_080
+EXPECTED_OVERLAP_CONSTRAINT_FAILURES_PER_TARGET = 90
 EXPECTED_SINGLE_SEAM_TESTS = 28_919
 EXPECTED_PAIR_ORDER_TESTS = 289_190
 EXPECTED_COMPOSED_TAG_CHANGES = 732
@@ -247,7 +252,8 @@ def exact_resource_inventory() -> dict:
         "exact_column_normalizations": normalizations,
         "dedicated_tag_M2_per_oriented_patch": 1,
         "maximum_branch_support_increment": 1,
-        "static_constraint_support_M2": 7,
+        "factor_local_parity_descriptor_support_M2": 7,
+        "global_seven_M2_code_constraint_proven": False,
         "endpoint_reversal_support_upper_bound_M2": 13,
         "logical_seam_transport_support_M2": 3,
         "pass": (
@@ -398,9 +404,16 @@ def local_constraint_controls(length: int) -> dict:
     vertices_by_cell = tuple(c516.c315.c305.body_vertices(code, body) for body in cells)
     for cell in range(PATCH_CELL_COUNT):
         vertices = vertices_by_cell[cell]
-        for number in range(3):
+        for number in range(7):
             expected_parity = number & 1
-            for term in cache[cell, number]:
+            terms = tuple(
+                term
+                for label in c516.c311.LABELS[number]
+                for term in c516.gauge_terms_with_metadata(
+                    code, cells[cell], number, label
+                )
+            )
+            for term in terms:
                 auxiliary = term["representative"].x >> code.qubits
                 port_parity = sum((auxiliary >> vertex) & 1 for vertex in vertices) & 1
                 tests += 1
@@ -413,18 +426,100 @@ def local_constraint_controls(length: int) -> dict:
     deletion_counts = tuple(deletion_failures[index] for index in range(LOCAL_MODE_COUNT))
     return {
         "length": length,
-        "constraint": "C_tau = Z_tau product_{six anchor ports} Z_v = +1",
-        "constraint_support_M2": 7,
+        "descriptor": "factor-local parity: tau = parity of the six ports before overlapping cell-factor multiplication",
+        "descriptor_support_M2": 7,
         "all_cell_local_term_tests": tests,
-        "constraint_failures": failures,
+        "factor_local_parity_failures": failures,
         "anchor_term_tests": anchor_tests,
-        "delete_each_port_constraint_failures": deletion_counts,
-        "primitive_constraint_synthesis_executed": False,
+        "delete_each_port_descriptor_failures": deletion_counts,
+        "global_code_constraint_claimed": False,
         "pass": (
             tests == EXPECTED_LOCAL_TERM_TESTS
             and anchor_tests == EXPECTED_ANCHOR_TERM_TESTS
             and failures == 0
-            and deletion_counts == (15,) * LOCAL_MODE_COUNT
+            and deletion_counts == (72,) * LOCAL_MODE_COUNT
+        ),
+    }
+
+
+def overlap_constraint_countercontrol(length: int) -> dict:
+    """Test whether factor-local port parity survives the overlapping product.
+
+    A single occupied cell is multiplied with the canonical vacuum factor at
+    every other cell.  This already supplies an exact counterexample class to
+    treating the factor-local seven-M2 descriptor as a final-code stabilizer.
+    """
+
+    code, cells, cache = build_cache(length)
+    rows = []
+    examples = []
+    for target in (0, 1):
+        vertices = c516.c315.c305.body_vertices(code, cells[target])
+        tests = 0
+        failures = 0
+        source_failure_histogram = Counter()
+        for source in range(PATCH_CELL_COUNT):
+            for number in (1, 2):
+                for term_index, term in enumerate(cache[source, number]):
+                    representatives = tuple(
+                        term["representative"]
+                        if cell == source
+                        else cache[cell, 0][0]["representative"]
+                        for cell in range(PATCH_CELL_COUNT)
+                    )
+                    product = c518.multiply_order(representatives)
+                    auxiliary = product.x >> code.qubits
+                    final_port_parity = sum(
+                        (auxiliary >> vertex) & 1 for vertex in vertices
+                    ) & 1
+                    logical_target_parity = (
+                        number & 1 if source == target else 0
+                    )
+                    failed = final_port_parity != logical_target_parity
+                    tests += 1
+                    failures += failed
+                    source_failure_histogram[source] += failed
+                    if failed and len(examples) < 8:
+                        examples.append(
+                            {
+                                "target": target,
+                                "source": source,
+                                "number": number,
+                                "term_index": term_index,
+                                "label": term["label"],
+                                "carrier": term["carrier"],
+                                "variant": term["variant"],
+                                "final_port_parity": final_port_parity,
+                                "logical_target_parity": logical_target_parity,
+                            }
+                        )
+        rows.append(
+            {
+                "target": target,
+                "single_occupied_cell_canonical_branch_tests": tests,
+                "global_seven_M2_constraint_failures": failures,
+                "source_failure_histogram": dict(source_failure_histogram),
+            }
+        )
+    failure_counts = tuple(
+        row["global_seven_M2_constraint_failures"] for row in rows
+    )
+    return {
+        "length": length,
+        "rows": tuple(rows),
+        "examples": tuple(examples),
+        "unitary_postprocessing_preserves_native_Gram": True,
+        "native_doubletons_surviving_any_W_times_E_native_construction": EXPECTED_NATIVE_DOUBLETONS,
+        "native_operator_Gram_residual_surviving_any_W_times_E_native_construction": fraction_json(EXPECTED_NATIVE_GRAM_RESIDUAL),
+        "factor_local_descriptor_is_global_code_constraint": False,
+        "pass": (
+            all(
+                row["single_occupied_cell_canonical_branch_tests"]
+                == EXPECTED_OVERLAP_BRANCH_TESTS_PER_TARGET
+                for row in rows
+            )
+            and failure_counts
+            == (EXPECTED_OVERLAP_CONSTRAINT_FAILURES_PER_TARGET,) * 2
         ),
     }
 
@@ -770,8 +865,8 @@ def deletion_and_domain_controls(constraints, frame) -> dict:
         "freeze_or_delete_tag_restores_native_row_collisions": EXPECTED_NATIVE_ROW_COLLISIONS,
         "freeze_or_delete_tag_restores_exact_Gram_residual": fraction_json(EXPECTED_NATIVE_GRAM_RESIDUAL),
         "bond_parity_tag_separates_native_pattern_classes": bond_parity_separations,
-        "delete_each_constraint_port_failures_L5": constraints[0]["delete_each_port_constraint_failures"],
-        "delete_each_constraint_port_failures_L6": constraints[1]["delete_each_port_constraint_failures"],
+        "delete_each_factor_descriptor_port_failures_L5": constraints[0]["delete_each_port_descriptor_failures"],
+        "delete_each_factor_descriptor_port_failures_L6": constraints[1]["delete_each_port_descriptor_failures"],
         "scalar_tag_under_true_reversal_failures": frame["scalar_tag_under_reversal_failures"],
         "L4_extra_wrap_edge_rejected": lawful["aliased_L4"]["rejected"],
         "duplicate_center_rejected": lawful["duplicate_centers"]["rejected"],
@@ -783,8 +878,8 @@ def deletion_and_domain_controls(constraints, frame) -> dict:
         **rows,
         "pass": (
             bond_parity_separations == 0
-            and rows["delete_each_constraint_port_failures_L5"] == (15,) * 6
-            and rows["delete_each_constraint_port_failures_L6"] == (15,) * 6
+            and rows["delete_each_factor_descriptor_port_failures_L5"] == (72,) * 6
+            and rows["delete_each_factor_descriptor_port_failures_L6"] == (72,) * 6
             and rows["scalar_tag_under_true_reversal_failures"] == 2
             and all(
                 rows[key]
@@ -848,7 +943,11 @@ def tag_certificate() -> dict:
         local_constraint_controls(TRAIN_LENGTH),
         local_constraint_controls(HELD_LENGTH),
     )
-    checkpoints.append(checkpoint(started, "L5-L6-local-constraints-complete"))
+    overlap_countercontrols = (
+        overlap_constraint_countercontrol(TRAIN_LENGTH),
+        overlap_constraint_countercontrol(HELD_LENGTH),
+    )
+    checkpoints.append(checkpoint(started, "L5-L6-factor-parity-and-overlap-countercontrols-complete"))
     frame = frame_and_reversal_controls()
     transport = transport_controls()
     mass = one_particle_mass_controls()
@@ -873,7 +972,10 @@ def tag_certificate() -> dict:
                 for value in dry["resources"]["exact_column_normalizations"].values()
             )
         ),
-        "local_seven_M2_constraint_L5_L6": all(row["pass"] for row in constraints),
+        "factor_local_seven_M2_parity_descriptor_L5_L6": all(row["pass"] for row in constraints),
+        "overlap_countercontrol_rejects_global_seven_M2_constraint": all(
+            row["pass"] for row in overlap_countercontrols
+        ),
         "proper_frames_bond_stabilizers_and_reversal_cocycle": frame["pass"],
         "exhaustive_tagged_free_contact_seam_transport": transport["pass"],
         "explicit_tagged_one_particle_mass_fixture": mass["pass"],
@@ -884,7 +986,7 @@ def tag_certificate() -> dict:
     return {
         "revision": REVISION,
         "mode": "tag-certificate",
-        "status": "cycle519-bounded-anchored-seam-tag-preservation-certified" if all(tests.values()) else "cycle519-certificate-failed",
+        "status": "cycle519-bounded-logical-tag-repair-with-overlap-constraint-countercontrol-certified" if all(tests.values()) else "cycle519-certificate-failed",
         "authority": AUTHORITY,
         "audit": AUDIT,
         "constitutional_effect": "none",
@@ -892,7 +994,8 @@ def tag_certificate() -> dict:
         "held": held,
         "held_abstract_census_matches": held_abstract_match,
         "exact_branch_resources": dry["resources"],
-        "local_constraint_rows": constraints,
+        "factor_local_parity_rows": constraints,
+        "overlap_constraint_countercontrols": overlap_countercontrols,
         "frame_and_reversal_controls": frame,
         "free_plus_contact_transport": transport,
         "one_particle_mass_controls": mass,
@@ -903,7 +1006,9 @@ def tag_certificate() -> dict:
             "Cycle311_315_branch_grammar_changed": False,
             "all_245518336_expanded_rows_unique": True,
             "exact_E_dagger_E": "I_2629",
-            "local_algebraic_constraint": "Z_tau product_{six left ports} Z_v = +1",
+            "factor_local_parity_descriptor": "tau equals six-port parity before overlapping cell-factor multiplication",
+            "global_seven_M2_code_constraint": False,
+            "unitary_postprocessing_of_native_encoding_can_create_tag": False,
             "proper_cubic_anchored_covariance": True,
             "endpoint_reversal_cocycle": frame["exact_reversal_cocycle"],
             "logical_free_plus_contact_update_preserves_tagged_code": True,
@@ -924,7 +1029,7 @@ def tag_certificate() -> dict:
             "dense_on_image_physical_lift": True,
         },
         "open": {
-            "primitive_seven_M2_constraint_enforcement": True,
+            "local_tag_preparation_before_overlap_or_alternative_global_constraint": True,
             "primitive_controlled_tag_X_inside_dense_branch_shell": True,
             "recurrent_overlapping_tiling_and_per_center_tag_reuse": True,
             "direct_primitive_physical_mass_retest_after_update_synthesis": True,

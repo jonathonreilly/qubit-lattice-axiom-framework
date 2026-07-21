@@ -61,27 +61,42 @@ E_\tau^\dagger E_\tau=I_{2629}
 on the declared global-\(N\leq2\) code space.  This is an exact structural
 identity, not a numerical-tolerance statement.
 
-## Local seven-M2 constraint
+## Factor-local seven-M2 descriptor and overlap countercontrol
 
-Let the six port-occupation M2s at the anchored center have Z operators
-\(Z_v\), and let \(Z_\tau\) act on the new tag.  The tagged code obeys the
-bounded algebraic constraint
+Let the six port M2s owned by one cell factor have Z operators \(Z_v\), and
+let \(Z_\tau\) act on the new tag.  Before neighboring cell factors are
+multiplied in, one local factor obeys the parity descriptor
 
 \[
 C_\tau=Z_\tau\prod_{v\in\operatorname{star}(L)}Z_v=+1.
 \]
 
-Every native local \(n=0,1,2\) gauge term has port-tag parity equal to its
-logical number parity.  The runner checks 1,104 terms per size: 92 terms on
-each of twelve cells, with zero failures at L5 and L6.  On the anchored cell,
-deleting any one of the six port factors produces exactly 15 failures among
-92 terms, for every factor and at both sizes.  Thus the tested constraint has
-support exactly seven M2s and every port factor is operationally necessary
-for this representative grammar.
+The corrected runner checks the complete local M64 grammar, \(n=0,\ldots,6\):
+3,072 factor terms per size, 256 at each cell, with zero parity failures at L5
+and L6.  On the anchor, deleting any one port produces exactly 72 failures.
+This establishes an exact seven-M2 **factor-local descriptor**.
 
-This is constraint identification, not primitive synthesis.  No Cycle-519
-gate constructs a local projector, penalty-free invariant subspace, or
-autonomous update whose lawful states are exactly the \(C_\tau=+1\) sector.
+It is not a constraint on the final overlapping code.  Neighboring cell
+representatives act on the same nominal anchor-port M2s.  Multiplying one
+occupied cell factor by the canonical vacuum factors at the other eleven
+cells gives 1,080 exact branches for each endpoint.  Ninety branches per
+endpoint violate \(C_\tau=+1\), identically at L5 and L6.  For example, an
+odd carrier choice at the right center can flip the left-center port parity
+while the logical left number remains zero.
+
+There is also an information-theoretic countercontrol.  If \(W\) is any fixed
+unitary applied to the native encoding and blank auxiliaries, then
+
+\[
+ (W(E\otimes|0\rangle))^\dagger W(E\otimes|0\rangle)=E^\dagger E.
+\]
+
+Thus post-processing the already-collided native row cannot create two
+different tag values for the Cycle-518 doubleton.  The independently appended
+logical tag still proves the static isometry above, but its local preparation
+must occur before the distinguishing factor information is lost, or a
+different global constraint/representative must be constructed.  Cycle 519
+does neither.
 
 ## Proper-cubic frames and endpoint reversal
 
@@ -178,16 +193,18 @@ patch is exactly \(\tau_0\), and endpoint reversal exchanges the two center
 roles instead of manufacturing an unrelated seam resource.  This architecture
 has the right locality and overlap shape, but Cycle 519 does not prove that
 overlapping seven-cell stars preserve all shared tags under a recurrent
-schedule.  Recurrent overlap consistency, simultaneous constraint
-enforcement, and update compatibility across several adjacent patches remain
+schedule.  Recurrent overlap consistency, tag preparation before factor
+collapse, and update compatibility across several adjacent patches remain
 terminal tests.
 
 The resource theorem actually proved is therefore conservative: one extra
 M2 per oriented adjacent-center patch, branch support increased by at most
-one, static constraint support seven M2s, reversal supported on the tag plus
-the twelve endpoint ports, and logical seam transport supported on the tag
-plus two occupation controls.  Per-center reuse may reduce the global
-overhead, but that reduction is not a Cycle-519 theorem.
+one, a factor-local parity descriptor supported on seven M2s, reversal
+supported abstractly on the tag plus the endpoint parity labels, and logical
+seam transport supported on the tag plus two occupation controls.  No
+globally enforced seven-M2 constraint is part of the theorem.  Per-center
+reuse may reduce the global overhead, but that reduction is not a Cycle-519
+theorem.
 
 ## Deletion, comparator, and lawful-domain controls
 
@@ -195,9 +212,11 @@ Deleting or freezing the dedicated tag restores the complete Cycle-518
 defect: 24 native doubletons, 6,144 expanded row collisions, and exact Gram
 residual \(1/400\).  Replacing \(p_L\) by bond parity
 \(p_L\oplus p_R\) separates zero of the 24 doubletons.  Deleting any one port
-factor from the seven-M2 constraint yields 15 local term failures.  Treating
-the tag as a scalar under true reversal violates two of four constrained
-parity states.
+factor from the seven-M2 factor descriptor yields 72 local-term failures over
+the full M64 grammar.  The overlap countercontrol then finds 90 final-product
+violations per endpoint, so this deletion test must not be read as constraint
+enforcement.  Treating the tag as a scalar under true reversal violates two
+of four abstract parity-labelled states.
 
 The lawful domain remains L=5 and held L=6, the exact twelve distinct cells
 in the Cycle-517 adjacent-center patch, all 24 determinant-+1 cubic frames,
@@ -206,8 +225,8 @@ periodic wrap edge.  Duplicate centers, nonadjacent centers, determinant--1
 frames, and \(N>2\) are rejected.  No boundary or thermodynamic-limit claim
 is inferred.
 
-The final target certificate passed all 11 gates in 21.694 seconds with
-maximum RSS 268,713,984 bytes and process swap count zero.  This includes the
+The corrected revision-2 target certificate passed all 12 gates in 28.843
+seconds with maximum RSS 280,281,088 bytes and process swap count zero.  This includes the
 explicit tagged one-particle mass gate.  The ordered tagged
 seed-key stream digests were
 `18559365b43922f75f7ca69ad3c7b03d82146169f4d5cc5cdb32473d7038c026`
@@ -234,10 +253,12 @@ The exact positive statement is:
 > append one anchored tag \(\tau=N_L\bmod2\) to the native Cycle-311/315
 > branch grammar.  The compressed seed census then has 238,681 singleton
 > fibers, all 245,518,336 expanded rows are structurally unique, and the
-> encoding is exactly isometric.  The code obeys the displayed local
-> seven-M2 constraint, transforms covariantly under all 24 anchored
-> proper-cubic frames and the displayed endpoint-reversal cocycle, and is
-> preserved by the tested logical free-plus-contact seam transport.
+> encoding is exactly isometric.  The independently appended tag transforms
+> covariantly under all 24 anchored proper-cubic frames and the displayed
+> endpoint-reversal cocycle, and is preserved by the tested logical
+> free-plus-contact seam transport.  The seven-M2 parity relation holds for
+> isolated cell factors but fails as a final overlapping-code constraint in
+> 90 of 1,080 exact single-occupied-cell branches per endpoint.
 
 The supplied inventory is explicit:
 
@@ -249,7 +270,8 @@ The supplied inventory is explicit:
 | Cycle-518 quotient | vacuum-toggle orbit criterion, exact native doubletons and \(1/400\) deletion residual | any universal obstruction |
 | logical coin exterior lift | local-number preservation | autonomous primitive realization |
 | onsite contact diagonal | occupation preservation | primitive contact synthesis |
-| local occupation controls | pre-swap \(n_a,n_b\) exposed to tag rule | bounded M2 circuit or law exposing them |
+| logical occupation controls | pre-swap \(n_a,n_b\) supplied to the tag rule | physical controls exposing them before overlap information is lost |
+| independent tag preparation | append \(\tau=N_L\bmod2\) before product-row collision | any local preparation or final-code constraint realizing that append |
 
 The theorem does not yet establish a primitive physical
 \(G_{\rm physical}\) satisfying
@@ -279,23 +301,34 @@ repairs remain live, and no shared substrate obstruction is present.
 2. **Weighted order character — ATTEMPTED.**  Cycle 518 cancelled sixteen
    overlaps but left eight zero-character pairs of magnitude \(1/400\).
 3. **Dedicated anchored seam tag — ATTEMPTED.**  Cycle 519 succeeds on the
-   bounded static encoding and logical free-plus-contact transport, subject
-   to the primitive and recurrence walls stated above.
+   bounded static encoding and logical free-plus-contact transport.  The
+   simple seven-M2 relation is then falsified as a final overlapping-code
+   constraint, so tag preparation remains supplied.
 4. **Opposite-carrier representative — ATTEMPTED.**  The independent bounded
    comparator gives singleton fibers with zero added M2 but changes the
    branch grammar and must re-earn the older fixtures.
-5. **Reuse a free per-cell r role as the tag — ATTEMPTED.**  The narrow
+5. **Post-encoding six-port parity fanout — ATTEMPTED / NARROWLY
+   FALSIFIED.**  Unitary Gram invariance preserves all 24 native doubletons,
+   and the exact overlap countercontrol has 90 final-port parity failures in
+   1,080 branches per endpoint.
+6. **Pre-overlap factor-local tag write — OPEN / LIVE.**  The full local M64
+   parity descriptor and commuting six-CNOT algebra are positive, but no
+   reversible factor-preparation interface retains the tag through the
+   overlapping product yet.
+7. **Reuse a free per-cell r role as the tag — ATTEMPTED.**  The narrow
    attempted reuse does not separate the native doubletons because the
    relevant vacuum role is quotiented exactly where it is free.
-6. **Changed non-stabilizer faces — UNTESTED / LIVE.**  A local face-path
+8. **Changed non-stabilizer faces — UNTESTED / LIVE.**  A local face-path
    representative could separate the fibers without an added tag but must
    preserve the local column and frame bridge.
-7. **Edge- or plaquette-flux role — UNTESTED / LIVE.**  A relational bounded
+9. **Edge- or plaquette-flux role — UNTESTED / LIVE.**  A relational bounded
    gauge character may encode the endpoint parity with different recurrence
    properties.
-8. **Autonomous staggered schedule — UNTESTED / LIVE.**  A microstep role may
-   separate and transport the fibers, but it needs explicit covariance,
-   coherent lumpability, and schedule closure.
+10. **Autonomous staggered schedule — PRIOR PARTIAL / LIVE.**  A four-state
+   scalar cursor gives a conditional host-free C/A/B/contact macrocycle and
+   the orbit-wide decorated stream is frame covariant, but tag preparation,
+   final-code enforcement, cursor synchronization, and primitive decorated
+   gates remain open.
 
 The two successful bounded constructions alone rule out a broad negative
 claim.  The four untested families additionally prevent any minimum-content
@@ -305,8 +338,8 @@ claim about one extra M2.
 
 After closing the static separation defect, the surviving walls collapse to:
 
-- **W_primitive:** synthesize and enforce the seven-M2 constraint from lawful
-  primitive M2 operations;
+- **W_prepare:** prepare the independent tag before overlapping-factor
+  information is lost, or construct a genuine final-code local constraint;
 - **W_update:** synthesize the physical controlled tag transport and off-code
   completion, then retest the already-closed logical mass fixture on that
   primitive realization;
@@ -319,16 +352,17 @@ The pairwise independence audit is:
 
 | pair | same failed object? | does closing either automatically close the other? | separable tests? |
 |---|---|---|---|
-| W_primitive / W_update | no | no | yes |
-| W_primitive / W_recur | no | no | yes |
-| W_primitive / W_prediction | no | no | yes |
+| W_prepare / W_update | no | no | yes |
+| W_prepare / W_recur | no | no | yes |
+| W_prepare / W_prediction | no | no | yes |
 | W_update / W_recur | no | no | yes |
 | W_update / W_prediction | no | no | yes |
 | W_recur / W_prediction | no | no | yes |
 
 The primitive physical mass retest is downstream validation of W_update, not
-an independent wall.  Static injectivity, exact normalization, constraint
-identification, and logical transport are closed only on the bounded domain.
+an independent wall.  Static injectivity, exact normalization, the
+factor-local parity descriptor, and logical transport are closed only on the
+bounded domain.  Final-code constraint identification is explicitly open.
 
 ### N3 — hidden-wall scan
 
@@ -336,8 +370,9 @@ The packet does not hide an ordering, parity service, scheduler, vacuum
 choice, or continuum bridge.  Every imported object is listed in the supplied
 inventory.  “Covariant” is split into anchored 24-frame covariance and true
 same-bond reversal, with the latter carrying an explicit cocycle.  “Local” is
-accompanied by support counts.  “Preserves” refers to the logical tagged code;
-primitive physical realization is explicitly open.  The preferred
+split into factor-local and final-code claims; the countercontrol prevents
+their conflation.  “Preserves” refers to the logical tagged code; primitive
+physical realization is explicitly open.  The preferred
 per-center architecture is labelled a proposal, not a certified recurrent
 compiler.
 
@@ -349,16 +384,19 @@ defect and its \(1/400\) residual.  Cycles 311/315 supply the local branch
 grammar; Cycles 515/516 supply only the dense-star product and frame/Koszul
 bridge.  None of those cycles is cited as a physical tagged update or
 recurrent compiler.  No response/source, time, Born, Record, or prediction
-residual is used to close a Cycle-519 wall.
+residual is used to close a Cycle-519 wall.  The corrected negative matches
+the same native encoding exactly: fixed-unitary postprocessing retains its 24
+doubletons and \(1/400\) residual, while the L5/L6 full-product witness gives
+90/1,080 failures per endpoint.  It is not generalized to other encodings.
 
 ### N5 — rhetoric audit
 
 “All rows” means all 245,518,336 analytic branch rows generated by the native
 grammar on this exact twelve-cell, global-\(N\leq2\) domain.  “Exact isometry”
-means the structural identity Gram on its 2,629 columns.  “Local constraint”
-means a seven-M2 algebraic relation, not synthesized enforcement.  “Update”
-means the exhaustive logical occupation/tag rule plus inherited FSWAP phase,
-not a bare-M2 law.  “Mass preserved” refers to the explicit tagged logical
+means the structural identity Gram on its 2,629 columns.  “Seven-M2 parity”
+means a factor-local descriptor and explicitly not a global code constraint.
+“Update” means the exhaustive logical occupation/tag rule plus inherited
+FSWAP phase, not a bare-M2 law.  “Mass preserved” refers to the explicit tagged logical
 one-particle matrix; the primitive physical realization remains untested.  No
 “minimum,” “necessary in every
 compiler,” or constitutional language follows.
@@ -369,19 +407,21 @@ Cycle 519 itself is the partial-closure witness: one bounded parity tag closes
 the entire static Cycle-518 collision residual without changing the native
 branch grammar.  The opposite-carrier comparator closes the same residual by
 a different primary object.  The next constructive path is to synthesize a
-bounded parity-controlled tag operation and constraint, then test shared
-per-center reuse on three or more overlapping stars.  None of these steps
-requires an axiom revision.
+tag write while the distinguishing factor-local information still exists, or
+find a different global constraint, then test shared per-center reuse on three
+or more overlapping stars.  None of these steps requires an axiom revision.
 
 ### N7 — hostile steelman
 
-A hostile reviewer can still reject this as a physical compiler because the
-runner reads logical occupations to update the tag and does not derive that
-controlled-X from the primitive M2 substrate.  The dense on-image lift may
-hide a nonlocal implementation, and one independent tag per oriented patch
+A hostile reviewer must reject this as a physical compiler because the tag
+cannot be computed by post-processing the already-collided native row and the
+seven-port descriptor fails on exact overlapping products.  The runner also
+reads logical occupations to update the tag rather than deriving physical
+controls.  The dense on-image lift may hide a nonlocal implementation, and
+one independent tag per oriented patch
 may become inconsistent or unnecessarily expensive under recurrent overlap.
 The opposite-carrier route may ultimately dominate by avoiding the added M2.
-These objections keep W_primitive, W_update, and W_recur live; they do not
+These objections keep W_prepare, W_update, and W_recur live; they do not
 undo the bounded static isometry theorem and they forbid a no-go inference.
 
 ### N8 — cross-cycle echo
@@ -400,18 +440,20 @@ revision.
 | wall | Cycle-519 change | remaining exact obligation |
 |---|---|---|
 | \(C_{\rm ref}\) | unchanged; fixed-Wilson reference structure remains supplied | derive or replace the reference substrate |
-| \(C_{\rm num}\) | advanced: local center-number parity is retained as an explicit bounded tag and exact constraint | extend beyond global \(N\leq2\); derive tag initialization/enforcement |
+| \(C_{\rm num}\) | advanced: logical center-number parity is retained as an explicit bounded tag; the full local M64 factor grammar has the exact parity descriptor | prepare the tag before overlap information loss or find a final-code constraint; widen the adjacent-star theorem beyond global \(N\leq2\) |
 | \(C_{\rm wrap}\) | unchanged; L4 wrap alias remains rejected | recurrent/boundary/thermodynamic controls |
 | \(C_{\rm int}\) | advanced at logical level: contact and all eleven seam transports preserve the tagged code, and the explicit tagged one-particle mass fixture passes | primitive physical controlled tag update and physical mass retest |
-| \(C_{\rm local}\) | materially advanced: exact bounded isometry, seven-M2 constraint, 24-frame covariance, and reversal cocycle | primitive constraint synthesis and overlapping per-center reuse |
+| \(C_{\rm local}\) | advanced but corrected: exact bounded static isometry, 24-frame covariance, and reversal cocycle; the proposed seven-M2 final constraint is falsified | local tag preparation/final-code enforcement, primitive update, and overlapping per-center reuse |
 | \(C_{\rm source}\) | unchanged | autonomous source/response bridge and new prediction |
 
-The optimal next campaign is a primitive-and-recurrence tournament.  First,
-synthesize the seven-M2 parity constraint and the three-M2 logical tag update
-from the allowed local M2 operations inside the native dense shell.  In
-parallel, instantiate one shared per-center tag on the smallest three-star
-overlap, require simultaneous local constraints, all proper-cubic placements,
-seam-order independence, leakage/deletion controls, and a direct
+The optimal next campaign is an information-retention-and-recurrence
+tournament.  First, write the tag while each cell factor's number parity is
+still locally available, or construct an alternative final-code constraint
+that survives overlapping multiplication; post-processing the collided row
+is ruled out exactly.  In parallel, instantiate one shared per-center tag on
+the smallest three-star overlap, require genuine simultaneous final-code
+constraints, all proper-cubic placements, seam-order independence,
+leakage/deletion controls, and a direct
 primitive physical one-particle mass retest against the now-explicit logical
 fixture.  Keep the opposite-carrier comparator alive as the
 zero-new-M2 branch-grammar route.  Only after one route supplies an actual

@@ -1,0 +1,71 @@
+{
+  "status": "cycle540-literal-NN-one-two-M2-rough-FSWAP-compiler",
+  "authority": "none",
+  "audit": "unset",
+  "runner_sha256": "1bb1528459fecb9f78ed3fe4c295d75e94ffb07745a1aa807bcdd4d276bf87fa",
+  "note_sha256": "31cee95d562ac8fe3e5394f846394f27fe3d58c3050626a134ace9b89e543b21",
+  "tests_passed": 10,
+  "tests_total": 10,
+  "pass": true,
+  "elapsed_seconds_internal": 209.91677004192024,
+  "timed_wall_seconds": 211.34,
+  "maximum_RSS_bytes": 131530752,
+  "process_swap_count": 0,
+  "logical_identity": {
+    "formula": "R4 R3 R2 R1 = -i FSWAP",
+    "rotation_signs": [-1, -1, -1, 1],
+    "raw_minus_i_FSWAP_residual": 6.661349775818914e-16,
+    "phase_corrected_FSWAP_residual": 6.661349775818914e-16,
+    "maximum_conjugation_residual": 1.3322676295501878e-15,
+    "inverse_residual": 1.3322699551637828e-15
+  },
+  "physical_schedules": {
+    "lengths": [5, 6],
+    "outer_edges": [375, 648],
+    "nonseam_edges": [300, 540],
+    "seam_edges": [75, 108],
+    "minimum_primitives_per_block": 760,
+    "maximum_primitives_per_block": 776,
+    "maximum_Pauli_word_support_M2": 11,
+    "maximum_FSWAP_union_support_M2": 13,
+    "maximum_route_tree_M2": 166,
+    "maximum_root_L1_radius": 17,
+    "maximum_block_L1_diameter": 33,
+    "stabilizer_commutator_failures": 0,
+    "gauge_commutator_failures": 0,
+    "physical_conjugation_failures": 0,
+    "final_code_leakage": 0,
+    "route_blank_return_residual": 0,
+    "schedule_sha256_L5_L6": [
+      "86919a3a94acb6fde695a11025e7446fcbd2cb4fc264213e4720de7c42e64b0c",
+      "22580fc756f191342c1c4d2f7914b6113af2de9eae57a56bec83701c2b58d7bc"
+    ]
+  },
+  "whole_layer": {
+    "maximum_conflict_degree_L5_L6": [10, 10],
+    "supplied_color_classes_L5_L6": [7, 6],
+    "same_color_route_collisions": 0,
+    "all_size_color_law_claimed": false
+  },
+  "covariance": {
+    "proper_cubic_frames": 24,
+    "frame_products": 576,
+    "framed_factor_cases": 7776,
+    "oriented_endpoint_reversals": 972,
+    "transformed_factor_or_compilation_failures": 0,
+    "framed_schedule_color_collisions": 0,
+    "runtime_frame_selector": false
+  },
+  "resources_and_boundary": {
+    "active_rough_M2_per_cell": 22,
+    "supplied_odd_coordinate_reset_blank_M2_per_cell": 28672,
+    "total_active_plus_route_M2_per_cell": 28694,
+    "blank_genesis_and_reset_supplied": true,
+    "finite_L5_L6_color_tables_supplied": true,
+    "topological_Wilson_initialization_retired": false,
+    "minimum_blank_or_gate_claim": false,
+    "shared_substrate_obstruction": false,
+    "axiom_pressure": false,
+    "broad_no_go_gate": "FAIL / DO NOT SHIP"
+  }
+}

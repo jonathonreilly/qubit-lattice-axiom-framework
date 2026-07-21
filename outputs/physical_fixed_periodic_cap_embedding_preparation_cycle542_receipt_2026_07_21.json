@@ -1,0 +1,66 @@
+{
+  "status": "cycle542-fixed-periodic-cubical-cap-falsified-preparation-open",
+  "authority": "none",
+  "audit": "unset",
+  "runner_sha256": "856db2e2990fb5fe2a5604c70cfe8a9d8ad077a4cad63b14cf82d63150c38a15",
+  "note_sha256": "348f07d57ebf58547503ac20a2b94d9c9bd15348a4e83ac7dd489567b877cad0",
+  "tests_passed": 12,
+  "tests_total": 12,
+  "pass": true,
+  "elapsed_seconds_internal": 202.78950695798267,
+  "timed_wall_seconds": 204.76,
+  "maximum_RSS_bytes": 119963648,
+  "process_swap_count": 0,
+  "microgrid_identification": {
+    "lengths": [5, 6],
+    "fine_torus_sides": [80, 96],
+    "installed_M2": [512000, 884736],
+    "rough_M2": [2750, 4752],
+    "blank_M2_after_rough": [509250, 879984],
+    "requested_fill_M2": [120, 180],
+    "coordinate_collisions": 0,
+    "role_or_coordinate_mismatches": 0,
+    "all24_rough_coordinate_failures": 0
+  },
+  "cubical_homology": {
+    "elementary_plaquettes_tested_L5_L6": [1536000, 2654208],
+    "cut_cocycle_failures": 0,
+    "axial_Wilson_cut_characters": [[1, 0, 0], [0, 1, 0], [0, 0, 1]],
+    "cubical_2_chain_boundary_character": [0, 0, 0],
+    "abstract_fill_perimeter_edges_L5_L6": [20, 24],
+    "target_NN_boundary_edges_L5_L6": [80, 96],
+    "one_disk_blocked_before_three_disk_collision": true,
+    "scope": "genuine cubical 2-chain in the unchanged periodic fine torus"
+  },
+  "preparation": {
+    "fill_M2_L5_L6": [120, 180],
+    "fill_Z_faces_L5_L6": [75, 108],
+    "fill_X_stars_L5_L6": [48, 75],
+    "Z_reset_anticommuting_pairs_L5_L6": [192, 300],
+    "X_reset_anticommuting_pairs_L5_L6": [240, 360],
+    "Y_reset_anticommuting_pairs_L5_L6": [432, 660],
+    "compatible_single_axis_product_resets": 0,
+    "maximum_check_support_M2": 11,
+    "local_check_measurement_macro_constructed": true,
+    "deterministic_local_correction_or_convergence_constructed": false,
+    "full_product_input_code_space_isometry_constructed": false
+  },
+  "covariance": {
+    "proper_cubic_frames": 24,
+    "frame_products": 576,
+    "signed_axis_or_group_failures": 0,
+    "runtime_frame_selector": false,
+    "compile_time_presentation_orbit_substituted": false
+  },
+  "boundary": {
+    "site_count_obstruction": false,
+    "fixed_unchanged_periodic_cubical_cap_route_falsified": true,
+    "nongeometric_local_hypergraph_route_open": true,
+    "open_cut_sheet_route_open": true,
+    "dynamic_puncture_route_open": true,
+    "general_local_preparation_route_open": true,
+    "shared_substrate_obstruction": false,
+    "axiom_pressure": false,
+    "broad_negative_gate": "FAIL / DO NOT SHIP"
+  }
+}

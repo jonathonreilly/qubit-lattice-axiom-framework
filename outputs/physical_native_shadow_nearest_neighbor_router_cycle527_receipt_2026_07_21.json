@@ -1,0 +1,83 @@
+{
+  "status": "cycle527-selected-native-shadow-integer-NN-routing-closure",
+  "authority": "none",
+  "audit": "unset",
+  "runner_sha256": "2ca2021fa76b889128b587a6a0d67986e236319ea8fb7ccd1dfaf31982c55fa0",
+  "note_sha256": "2a99f741015c9484d0eeb42332a52adfd488e6542ee71b0595c3373aa335905c",
+  "tests_passed": 5,
+  "tests_total": 5,
+  "pass": true,
+  "elapsed_seconds": 89.90809883305337,
+  "maximum_RSS_bytes": 161464320,
+  "process_swap_count": 0,
+  "lawful_sizes": [5, 6],
+  "strict_upstream_hashes": {
+    "Cycle235": "dd955ce629cde5e225b625be89f5f71045d688083a032b7bf104efa9b3f1bb34",
+    "Cycle269": "c7b8673eb1a0dced08131820caa1fb2400fc8d1f73cfe2cddf5f8a28f9045d35",
+    "Cycle311": "4495bf39e1e2661866501e377b8ec1aefff656e261e428fa5b6738f73b49699c",
+    "Cycle522": "d6a7700d7575dfba02d4b4d2438e54d37a02c6ca7f71673c8a871b474f6e088b",
+    "Cycle523": "d9dd02bbb4dfacebf0f75f6b8c56881ff56653843cb7ed75baa381d5aa605b9d",
+    "Cycle526": "7c3d4a35664eaf5c7737c86464ca069e15ce29c40f61778081af8139970c37cd"
+  },
+  "primitive_controls": {
+    "remote_CNOT_path_lengths": [1, 2, 3, 5, 11, 16],
+    "remote_CNOT_exhaustive_basis_tests": 135260,
+    "remote_CNOT_exhaustive_failures": 0,
+    "distance11_deleted_CNOT_core_wrong_outputs": 2048,
+    "distance11_deleted_return_SWAP_dirty_intermediates": 2048,
+    "Toffoli_reconstruction_residual": 7.346882794269506e-16,
+    "Toffoli_inverse_residual": 1.2749064385906742e-15,
+    "ordinary_SWAP_vs_fermionic_FSWAP_Frobenius": 2.0
+  },
+  "per_cell": {
+    "integer_microgrid_scale": 16,
+    "installed_M2": 4096,
+    "inherited_native_M2": 23,
+    "occupation_shadow_M2": 6,
+    "blank_route_work_M2": 4067,
+    "nearest_neighbor_gate_calls_compute": 1338,
+    "nearest_neighbor_gate_calls_compute_inverse": 2676,
+    "maximum_primitive_support_M2": 2,
+    "maximum_compute_uses_of_one_edge": 40,
+    "maximum_roundtrip_uses_of_one_edge": 80
+  },
+  "L5": {
+    "coarse_cells": 125,
+    "installed_M2_union": 512000,
+    "decoder_tests": 120000,
+    "decoder_failures": 0,
+    "cell_color_phases": 4,
+    "same_color_support_collisions": 0,
+    "gate_layer_operand_collisions": 0,
+    "canonical_schedule_sha256": "5c8792e9b409e9a0123dd4e63962ad9c1e4f8d58223fd3b564f064c60f8df69c"
+  },
+  "L6_held": {
+    "coarse_cells": 216,
+    "installed_M2_union": 884736,
+    "decoder_tests": 207360,
+    "decoder_failures": 0,
+    "cell_color_phases": 2,
+    "same_color_support_collisions": 0,
+    "gate_layer_operand_collisions": 0,
+    "canonical_schedule_sha256": "740a4818609fc36039cd9bc992536aa93d9a1c05d768fdc07f171309112fc67c"
+  },
+  "covariance": {
+    "proper_cubic_frames_each_size": 24,
+    "frame_products_each_size": 576,
+    "coordinate_injection_failures": 0,
+    "nearest_neighbor_failures": 0,
+    "frame_path_or_support_failures": 0,
+    "frame_group_failures": 0
+  },
+  "boundary": {
+    "pre_seam_decoder_routing_wall_closed": true,
+    "transformed_output_cleanup_synthesized": false,
+    "full_Cycle230_intertwiner_claimed": false,
+    "full_blank_microgrid_is_supplied": true,
+    "color_phase_called_causal_time": false,
+    "global_Jordan_Wigner_ordering": false,
+    "nonlocal_parity_service": false,
+    "shared_substrate_obstruction": false,
+    "axiom_pressure": false
+  }
+}

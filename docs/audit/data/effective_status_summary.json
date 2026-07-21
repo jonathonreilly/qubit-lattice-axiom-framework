@@ -84,7 +84,7 @@
     "audited_conditional": 26,
     "audited_failed": 3,
     "audited_numerical_match": 6,
-    "audited_renaming": 15,
+    "audited_renaming": 16,
     "decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": 1,
     "decoration_under_d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12": 1,
     "decoration_under_graph_first_su3_integration_note": 8,
@@ -99,7 +99,7 @@
     "retained": 87,
     "retained_bounded": 309,
     "retained_pending_chain": 5,
-    "unaudited": 3014
+    "unaudited": 3013
   },
   "retained_pending_chain_count": 5,
   "retained_pending_chain_examples": [

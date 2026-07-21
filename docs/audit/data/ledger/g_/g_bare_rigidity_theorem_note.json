@@ -1,24 +1,51 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-21T19:04:25.629816+00:00",
+  "audit_invocation_history": [
+    "7ffbcdc17ef2445ebd408147f299ca8a"
+  ],
+  "audit_invocation_id": "7ffbcdc17ef2445ebd408147f299ca8a",
+  "audit_state_snapshot": {
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+      "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded."
+    },
+    "dep_claim_type": {
+      "graph_first_su3_integration_note": "positive_theorem",
+      "native_gauge_closure_note": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "graph_first_su3_integration_note": "retained",
+      "native_gauge_closure_note": "retained"
+    },
+    "deps": [
+      "graph_first_su3_integration_note",
+      "native_gauge_closure_note"
+    ],
+    "helper_runner_hashes": {
+      "scripts/frontier_su3_holonomy_exponential_bridge.py": "128a218a16d2ef73b1b07c123acfdb8a759e62ea29b951131f910850b6dd6db9"
+    },
+    "load_bearing_score": 18.725,
+    "runner_hash": "db2d18436d13b2cce202c7b80aab4e72ae8d8a2ff6e6fb3ca42c3f4e8d1cd0e2",
+    "transitive_descendants": 1196
+  },
+  "audit_status": "audited_renaming",
+  "auditor": "codex-audit-batch-B-20260721-a89a8444",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The finite-link logarithm and fixed generator normalization close algebraically. The missing step is an action- or Hamiltonian-level derivation showing that no independently physical coupling remains; rewriting the coefficient vector as g A^a does not establish that conclusion.",
   "claim_id": "g_bare_rigidity_theorem_note",
-  "claim_scope": null,
+  "claim_scope": "The fixed trace-normalized SU(3) basis and a finite-link logarithm permit U = exp(i A^a T_a a); calling this coefficient parametrization g_bare = 1 is notation only, with no action-level coupling audited.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint_after_invalidation",
+  "claim_type_last_reviewed": "2026-07-21T19:04:25.629816+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -27,21 +54,22 @@
     "native_gauge_closure_note"
   ],
   "direct_in_degree": 17,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_renaming",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [
     "scripts/frontier_su3_holonomy_exponential_bridge.py"
   ],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "fresh_context",
+  "intrinsic_status": "audited_renaming",
   "load_bearing_score": 18.725,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Therefore, in the canonical normalized basis the link-holonomy expression carries no independent multiplicative bare coupling; standard notation rewrites this as g_bare = 1.",
+  "load_bearing_step_class": "F",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "a9d3a45950911f285fb44224dfd53e9f21ceef98b4bf67af683c01064045497f",
   "note_path": "docs/G_BARE_RIGIDITY_THEOREM_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "scope_too_broad: Retag the row as a finite-link canonical-coordinate convention, or add a retained action/Hamiltonian-level bridge proving that no independently physical bare coupling survives.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -748,14 +776,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 48,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 48
   },
   "runner_path": "scripts/frontier_g_bare_rigidity_theorem.py",
   "title": "Gauge-Normalization Rigidity Theorem",
   "transitive_descendants": 1196,
-  "verdict_rationale": null
+  "verdict_rationale": "The spectral-theorem bridge correctly supplies a traceless-Hermitian logarithm for each finite SU(3) link, and the matrix checks correctly show that scalar dilation changes the fixed generator Gram form. The load-bearing move to g_bare = 1 is nevertheless an explicit notation rewrite: the runner verifies only that multiplying coefficients by g multiplies A_op by g. Because no action-level or Hamiltonian-level coupling is analyzed, the claimed removal of a physical bare parameter reduces to coordinate relabeling."
 }

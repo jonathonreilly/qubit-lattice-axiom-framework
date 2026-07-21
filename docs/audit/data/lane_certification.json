@@ -957,7 +957,7 @@
         },
         {
           "claim_id": "g_bare_rigidity_theorem_note",
-          "effective_status": "unaudited"
+          "effective_status": "audited_renaming"
         },
         {
           "claim_id": "g_bare_structural_normalization_theorem_note_2026-04-18",
@@ -2811,6 +2811,6 @@
       "uncertified_count": 645
     }
   ],
-  "repo_head": "85d79b4a496d35bad642c4314ba7226869edec2a",
+  "repo_head": "6320fded41b716a26e2bd38a06e0369796036c83",
   "schema": "lane_certification_v2"
 }

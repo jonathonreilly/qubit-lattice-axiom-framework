@@ -121,11 +121,11 @@ These dispatch targets have been re-audited after their manifest's `generated_da
 | 7 | `g_bare_structural_normalization_theorem_note_2026-04-18` | bounded_theorem / unaudited / unaudited | blocked_convention_see_G_BARE_PROMOTION_PANEL_FINDING_2026-05-28 |
 | 8 | `g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19` | bounded_theorem / unaudited / unaudited | blocked_convention_see_G_BARE_PROMOTION_PANEL_FINDING_2026-05-28 |
 | 9 | `g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19` | bounded_theorem / unaudited / unaudited | blocked_convention_see_G_BARE_PROMOTION_PANEL_FINDING_2026-05-28 |
-| 10 | `g_bare_rigidity_theorem_note` | bounded_theorem / unaudited / unaudited | blocked_convention_see_G_BARE_PROMOTION_PANEL_FINDING_2026-05-28 |
+| 10 | `g_bare_rigidity_theorem_note` | bounded_theorem / audited_renaming / audited_renaming | blocked_convention_see_G_BARE_PROMOTION_PANEL_FINDING_2026-05-28 |
 | 11 | `g_bare_forced_by_ward_rep_b_independence_theorem_note_2026-05-09` | bounded_theorem / unaudited / unaudited | blocked_convention_see_G_BARE_PROMOTION_PANEL_FINDING_2026-05-28 |
 | 12 | `g_bare_two_ward_closure_note_2026-04-18` | positive_theorem / unaudited / unaudited | blocked_convention_see_G_BARE_PROMOTION_PANEL_FINDING_2026-05-28 |
 | 13 | `wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08` | bounded_theorem / unaudited / unaudited | exact_content_already_lifted_in_companion |
-| 14 | `g_bare_rigidity_theorem_note` | bounded_theorem / unaudited / unaudited | load_bearing_in_open_g_bare_closure |
+| 14 | `g_bare_rigidity_theorem_note` | bounded_theorem / audited_renaming / audited_renaming | load_bearing_in_open_g_bare_closure |
 | 15 | `koide_circulant_wilson_target_note_2026-04-18` | positive_theorem / unaudited / unaudited | assembler_not_source_of_exact_statement |
 | 16 | `r_base_group_theory_derivation_theorem_note_2026-04-24` | bounded_theorem / unaudited / unaudited | exact_arithmetic_conditional_on_admitted_normalization |
 | 17 | `generation_axiom_boundary_note` | bounded_theorem / audited_clean / retained_bounded | bounded_terminal_after_dispatch_audit; positive_theorem promotion is not supported by current source scope. Future promotion requires a source PR that splits or strengthens the claim. |

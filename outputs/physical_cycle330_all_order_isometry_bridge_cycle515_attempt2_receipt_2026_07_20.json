@@ -1,0 +1,73 @@
+{
+  "schema": "cycle515-cycle330-all-order-isometry-bridge-attempt2-receipt-v1",
+  "date": "2026-07-20",
+  "attempt": 2,
+  "authority": "none",
+  "audit": "unset",
+  "status": "cycle515-all-5040-same-code-isometry-certified",
+  "pass": true,
+  "command": "python3 scripts/physical_cycle330_all_order_isometry_bridge_cycle515_2026_07_20.py --mode all-order-certificate",
+  "runner": {
+    "path": "scripts/physical_cycle330_all_order_isometry_bridge_cycle515_2026_07_20.py",
+    "sha256": "93afe1600cb3fb8b7844729521b005ce62f957a128a6ffb9493a03a1d9932e96"
+  },
+  "dry": {
+    "path": "outputs/physical_cycle330_all_order_isometry_bridge_cycle515_dry_2026_07_20.log",
+    "sha256": "7ef8b552f8dd08770691c1281b354970641bb75191c5a15e26b1e54078204b56",
+    "tests_passed": 14,
+    "tests_total": 14,
+    "pass": true
+  },
+  "target": {
+    "path": "outputs/physical_cycle330_all_order_isometry_bridge_cycle515_attempt2_2026_07_20.log",
+    "sha256": "636d067ddd9284e59f24999666c5110fce425e60a7baa48d714b2a023abab1b1",
+    "tests_passed": 13,
+    "tests_total": 13,
+    "pass": true,
+    "elapsed_seconds": 69.10966804099735,
+    "maximum_RSS_bytes": 1435680768,
+    "process_swap_count": 0
+  },
+  "note": {
+    "path": "docs/work_history/repo/review_feedback/PHYSICAL_CYCLE330_ALL_ORDER_ISOMETRY_BRIDGE_CYCLE515_NOTE_2026-07-20.md",
+    "sha256": "99696f55a6e1f8f29958d878bdbd5bb0f889c59be8707e93206d1648ba94850a"
+  },
+  "exact_census": {
+    "sizes": [5, 6],
+    "logical_columns_each": 904,
+    "structural_branches_each": 2459648,
+    "physical_rows_each": 2459648,
+    "collision_pairs_each": 0,
+    "maximum_multiplicity_each": 1,
+    "incompatible_mask_pairs_each": 0,
+    "mask_histogram_sha256_each": "398beef0400305f150184ab23afcfeb6da1da102b8d3f0ab7c45443e09806a4d",
+    "maximum_amplitude_squared_residual_each": 1.1102230246251565e-16
+  },
+  "theorem": {
+    "S7_orders_covered": 5040,
+    "S7_orders_unproved_on_declared_domain": 0,
+    "physical_branch_shell_rank": 2459648,
+    "Q_rank": 4556160,
+    "exact_code_intersection_rank": 904,
+    "same_code_algebraic_update_lift": true,
+    "primitive_synthesis_proven": false,
+    "local_constraint_synthesis_proven": false,
+    "all_order_proper_cubic_physical_covariance_proven": false
+  },
+  "supplied": {
+    "bounded_patch_branch_shell_matrix_unit_application": true,
+    "Q_constraint_enforcement": true,
+    "correlated_role_preparation": true,
+    "unused_role_domain_completion": true
+  },
+  "no_go_discipline": {
+    "result": "positive-bounded-with-corrected-wall-count",
+    "broad_no_go": "FAIL_NOT_PROPOSED",
+    "shared_obstruction": false,
+    "axiom_pressure": false
+  },
+  "previous_attempt": {
+    "packaged": false,
+    "reason": "superseded before staging by corrected primitive-synthesis and covariance-scope semantics"
+  }
+}

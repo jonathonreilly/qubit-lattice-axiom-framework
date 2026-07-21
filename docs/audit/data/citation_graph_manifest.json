@@ -1,6 +1,6 @@
 {
- "edge_count": 14971,
- "node_count": 4461,
+ "edge_count": 14973,
+ "node_count": 4462,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -6945,6 +6945,10 @@
   "kcpt_cp_completion_under_extended_group_bounded_theorem_note_2026-07-20": {
    "deps_hash": "f2454b007e3d",
    "out_degree": 3
+  },
+  "kcpt_extended_group_reality_census_frobenius_schur_bounded_theorem_note_2026-07-20": {
+   "deps_hash": "fec360d7b74e",
+   "out_degree": 2
   },
   "kcpt_holomorphic_gamb_representation_bounded_theorem_note_2026-07-20": {
    "deps_hash": "7437a31a290a",

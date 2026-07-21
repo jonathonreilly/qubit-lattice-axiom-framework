@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/kcpt_dirac_radius_grading_of_end_h_2026_07_20.py
+runner_sha256: 48f1f69678b52958b4ecc3fa5ae126f902893bf3ca0ce19a0f3daf6651e94a1b
+input_fingerprint_sha256: 5dbc28789b45f5499937b1728318b0c0517d5e936c5014e00b516feb5228570d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 28.63
+status: ok
+----- stdout -----
+PASS G1 - |G_amb|=768==768; |H|=1536==1536==2*768; G_amb subset H (True), coset S_eps*G_amb subset H (True) and DISJOINT (True: index 2)
+PASS G2 - [FLOAT] J_full^2=-I (||J^2+I||=4.4e-16<1e-9), antisym (||J+J^T||=0.0e+00); ANTI-PROXY: sqrt(m)->1 proxy fails J^2=-I (||.||=0.625>1e-6) and differs from J_full (0.126>1e-6) -- shell sqrt(m) normalizers load-bearing, J_full no sign proxy
+PASS G3 - [FLOAT] P := D2*J_full is real-symmetric (||P-P^T||=2.2e-16<1e-9) because D2 and J_full COMMUTE (||P-J_full*D2||=2.2e-16<1e-9); P nonzero (||P||=2.244>1) and P != D2, P != J_full (genuine product)
+PASS G4 - [FLOAT] THE THEOREM: max_{h in H} ||[P,h]|| = 2.2e-16<1e-9 over ALL 1536 elements -- P in End_H(C^64), the c_H=6 commutant
+PASS G5 - ANTI-FAB CONTRAST: neither factor is H-invariant -- max_h ||[D2,h]||=2.000>1 and max_h ||[J_full,h]||=0.748>0.5; both chi_sgn-ODD (S_eps D2 S_eps==-D2 exact: True), product chi_sgn-EVEN; S_eps preserves D2^2-shells (||S_eps M S_eps - M||=0.0e+00). P's H-invariance is a genuine odd*odd=even effect
+PASS G6 - exact-integer commutant pins (Unit-14 reproduced): c_G=12==12, c_H=6==6 [Sum tr^2 = 9216/768, 9216/1536]; coset traceless (Sum tr^2=0==0, max|tr|=0==0). c_H=6 = the number of constituents P is block-scalar on
+PASS G7 - the SIX Unit-14 constituents rebuilt object-identically: dims (sorted) [8, 8, 12, 12, 12, 12]==[8,8,12,12,12,12], count 6==6==c_H; exactly 2==2 are the CP-split pair (both from the unique rank-12 W-source: True), 4==4 induced
+PASS G8 - [FLOAT] CLOSED FORM P == -|D2| == -sqrt(-D2^2): ||P - (-sqrt(-M))||=2.2e-15<1e-9 (|D2| reproduced from an INDEPENDENT eigh(M)); M-shell dims (m=0..3) [8, 24, 24, 8]==[8,24,24,8] and P's own spectrum tiles the same shells [8, 24, 24, 8]==[8,24,24,8]
+PASS G9 - [FLOAT] BLOCK-SCALAR CENSUS: on every constituent Z_i^H P Z_i = lambda_i I (max ||blk-lam I||=4.4e-15<1e-9), and lambda_i == -2 sqrt(m_i) with m_i from an INDEPENDENT Z_i^H M Z_i (=[0, 3, 2, 2, 1, 1], scalar dev 1.1e-14); P block-diagonal (max off-block |Z_i^H P Z_j|=4.0e-14<1e-9)
+PASS G10 - THE COMPUTED ASSIGNMENT: CP-split pair {12+,12-} both at m=[1, 1]==[1,1] (RADIUS-DEGENERATE, lambda=-2); induced 12's at m=[2, 2]==[2,2] (lambda=-2sqrt2); induced 8's at the extreme shells m(set)=[0, 3]=={0,3} (kernel + top). Dirac radius does NOT separate 12+ from 12- -- CP grading independent of radius grading
+PASS G11 - ANTI-FAB: D2 alone has a NONZERO chi_sgn off-block |Z_12+^H D2 Z_12-|=1.241>1 and is NOT block-scalar (max D2-alone |blk-scal|=2.770>1), so P's block-diagonality is NOT inherited from D2; the sqrt(m)->1 proxy gives INTEGER block values -2m [-6, -4, -2, 0] (in {0,-2,-4,-6}), NOT the irrational -2sqrt m -- no integer proxy fakes it
+PASS G-PIN-U14 - SOURCE PIN Unit 14: CP-completion note contains `9216 / 1536 = 6` (c_H=6, the six constituents P is block-scalar on)
+PASS G-PIN-U9 - SOURCE PIN Unit 9: common-sign-orbit note contains `S_eps J_full S_eps = -J_full` (with S_eps D2 S_eps=-D2, the two sign reversals that make P chi_sgn-even -> H-invariant)
+PASS G-PIN-SELF - SELF-NOTE DEPENDENCY DISCIPLINE: total KCPT-links 2==2 (Unit14 1==1, Unit9 1==1); Units 8/10/11/12/13 linked 0/0/0/0/0==0 (backticked only, never `](...)`)
+PASS G-MEM - MEMORY-BUDGET: greedy generating sets close exactly -- G_amb 4 gens -> 768==768, H 5 gens -> 1536==1536; commutant kron stacks use these generators, never a per-element stack over 768/1536 (OOM-avoiding)
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

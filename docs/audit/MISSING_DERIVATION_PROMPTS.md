@@ -2423,7 +2423,7 @@ _1 rows in this category._
 
 ### `flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15`
 
-**Note:** [docs/FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md](../FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md)  |  **Descendants:** 1192  |  **Class:** A
+**Note:** [docs/FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md](../FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md)  |  **Descendants:** 1196  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md.
@@ -2454,7 +2454,36 @@ drive.
 
 Auditor judged that a clean bounded core exists inside a claim whose current scope includes an unclosed extension. To close: split the clean bounded core out as its own retained-grade claim and demote the extension to bounded or open scope.
 
-_0 rows in this category._
+_1 rows in this category._
+
+
+### `flavor_r_half_stable_under_thermalizing_arrow_2026-06-02`
+
+**Note:** [docs/FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW_2026-06-02.md](../FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW_2026-06-02.md)  |  **Descendants:** 90  |  **Class:** A
+
+```
+Use the physics-loop skill to close the conditional audit on docs/FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW_2026-06-02.md.
+
+Current audit state:
+- audit_status: audited_conditional
+- claim_type: bounded_theorem
+- load_bearing_step_class: A
+- claim_scope: Conditional stability of r=1/2 under g(r)=sqrt(r/2), HS two-sector equipartition, Q=1/3+(2/3)r, and the stated endpoint spectra, excluding physical partition and arrow selection.
+
+Auditor's verdict_rationale:
+Issue: The runner sets a=1 and b=1, so the r=1 endpoint [0,0,3] is verified only on the phase-aligned b/a=1 slice, whereas r=|b|²/a²=1 leaves the phase free. Why this blocks: for generic complex b with |b|=a, the spectrum of aI+bC+conj(b)C² differs, so the full stated scope does not follow. Repair target: add and justify the phase constraint or state the phase-dependent endpoint spectrum and extend the runner accordingly. Claim boundary until fixed: stability under the supplied scalar map, HS equipartition, and the Q identity remain supported, but generic r=1 endpoint exclusion does not.
+
+Auditor-quoted load-bearing step:
+For g(r)=sqrt(r/2), g'(1/2)=1/2<1, so r=1/2 is stable under the supplied map.
+
+Auditor's repair target (canonical class + action):
+scope_too_broad: Restrict the r=1 endpoint-spectrum assertion to the phase-aligned b/a=1 slice, or derive the required phase constraint, and extend the runner across the allowed phase.
+
+Goal: close the chain so a re-audit of this same note can land
+audited_clean at retained-grade. Use the physics-loop skill to iterate.
+Do not over-prescribe approach — explore the framework, let the skill
+drive.
+```
 
 
 ## audited_conditional_missing_bridge_theorem
@@ -2466,7 +2495,7 @@ _6 rows in this category._
 
 ### `abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18`
 
-**Note:** [docs/ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md](../ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md)  |  **Descendants:** 1370  |  **Class:** A
+**Note:** [docs/ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md](../ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md)  |  **Descendants:** 1374  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md.
@@ -2495,7 +2524,7 @@ drive.
 
 ### `hypercharge_identification_note`
 
-**Note:** [docs/HYPERCHARGE_IDENTIFICATION_NOTE.md](../HYPERCHARGE_IDENTIFICATION_NOTE.md)  |  **Descendants:** 1027  |  **Class:** A
+**Note:** [docs/HYPERCHARGE_IDENTIFICATION_NOTE.md](../HYPERCHARGE_IDENTIFICATION_NOTE.md)  |  **Descendants:** 1031  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/HYPERCHARGE_IDENTIFICATION_NOTE.md.
@@ -2524,7 +2553,7 @@ drive.
 
 ### `dm_neutrino_cascade_geometry_note_2026-04-14`
 
-**Note:** [docs/DM_NEUTRINO_CASCADE_GEOMETRY_NOTE_2026-04-14.md](../DM_NEUTRINO_CASCADE_GEOMETRY_NOTE_2026-04-14.md)  |  **Descendants:** 832  |  **Class:** A
+**Note:** [docs/DM_NEUTRINO_CASCADE_GEOMETRY_NOTE_2026-04-14.md](../DM_NEUTRINO_CASCADE_GEOMETRY_NOTE_2026-04-14.md)  |  **Descendants:** 836  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/DM_NEUTRINO_CASCADE_GEOMETRY_NOTE_2026-04-14.md.
@@ -2553,7 +2582,7 @@ drive.
 
 ### `gravity_full_self_consistency_note`
 
-**Note:** [docs/GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md](../GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md)  |  **Descendants:** 754  |  **Class:** A
+**Note:** [docs/GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md](../GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md)  |  **Descendants:** 758  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md.
@@ -2582,7 +2611,7 @@ drive.
 
 ### `dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16`
 
-**Note:** [docs/DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md](../DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md)  |  **Descendants:** 750  |  **Class:** A
+**Note:** [docs/DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md](../DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md)  |  **Descendants:** 754  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md.
@@ -2611,7 +2640,7 @@ drive.
 
 ### `ac_reta_hclass_hunit_readout_derivation_obligation`
 
-**Note:** [docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md](../AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md)  |  **Descendants:** 93  |  **Class:** F
+**Note:** [docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md](../AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md)  |  **Descendants:** 97  |  **Class:** F
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md.

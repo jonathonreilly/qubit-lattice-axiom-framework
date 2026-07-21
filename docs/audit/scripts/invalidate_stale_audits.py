@@ -421,6 +421,10 @@ def detect_invalidation(row: dict, rows: dict[str, dict]) -> str | None:
         audit_status not in {None, "unaudited"}
         and bool(row.get("negative_assertion_classes"))
         and packet is None
+        and no_go_discipline_gate.packet_requirement_binds(
+            {**row, "verdict": audit_status},
+            source_required=source_required,
+        )
     ):
         return "no_go_discipline_packet_missing"
 

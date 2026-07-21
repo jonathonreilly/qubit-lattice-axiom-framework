@@ -140,6 +140,310 @@ CODEX_HARD_INPUT_CHAR_LIMIT = 1_048_576
 OUTPUT_INSTRUCTIONS_MARKER = "\n\n---\nOUTPUT INSTRUCTIONS (binding):"
 
 
+def _closed_schema(properties: dict[str, dict]) -> dict:
+    return {
+        "type": "object",
+        "properties": properties,
+        "required": list(properties),
+        "additionalProperties": False,
+    }
+
+
+def _nullable(schema: dict) -> dict:
+    return {"anyOf": [schema, {"type": "null"}]}
+
+
+def _string_schema(*, enum: tuple[str, ...] | None = None) -> dict:
+    schema: dict = {"type": "string"}
+    if enum is not None:
+        schema["enum"] = list(enum)
+    return schema
+
+
+def _string_array_schema() -> dict:
+    return {"type": "array", "items": _string_schema()}
+
+
+def no_go_output_schema() -> dict:
+    """Closed transport schema for the canonical N1-N8 response packet.
+
+    Conditional fields are present as nullable values because strict Codex
+    output schemas require every declared property in ``required``. The
+    canonical validators still enforce when those values must be substantive.
+    """
+    evidence_fields = {
+        "evidence_path": _string_schema(),
+        "evidence_locator": _string_schema(),
+    }
+    n1_route = _closed_schema({
+        "route_id": _string_schema(),
+        "route_class": _string_schema(enum=(
+            "algebraic_rearrangement",
+            "symmetry_or_representation",
+            "alternate_carrier_or_sector",
+            "boundary_or_initial_condition",
+            "normalization_or_units",
+            "dynamical_or_effective_action",
+            "lattice_scale_or_limit",
+            "numerical_or_finite_case",
+            "convention_or_relabeling",
+            "alternate_observable_or_readout",
+            "topology_or_global_structure",
+            "dependency_or_registry_reclassification",
+        )),
+        "mechanism": _string_schema(),
+        "attempt": _string_schema(),
+        "outcome": _string_schema(),
+        "honesty_marker": _string_schema(enum=("ATTEMPTED", "RULED OUT BY PRIOR")),
+        "disposition": _string_schema(enum=("CLOSED", "OPEN", "UNTESTED")),
+        "prior_witness_id": _nullable(_string_schema()),
+        **evidence_fields,
+    })
+    n2_pair = _closed_schema({
+        "left": _string_schema(),
+        "right": _string_schema(),
+        "left_closes_right": {"type": "boolean"},
+        "right_closes_left": {"type": "boolean"},
+        "independent": {"type": "boolean"},
+        "rationale": _string_schema(),
+        **evidence_fields,
+    })
+    n3_hit = _closed_schema({
+        "phrase": _string_schema(),
+        "occurrence_group_id": _string_schema(),
+        "occurrence_count": {"type": "integer"},
+        "occurrence_locator_sha256": _string_schema(),
+        "classification": _string_schema(enum=(
+            "retained_authority", "hidden_admission", "non_load_bearing"
+        )),
+        "promoted_wall": _nullable(_string_schema()),
+        "rationale": _nullable(_string_schema()),
+        **evidence_fields,
+    })
+    n4_witness = _closed_schema({
+        "witness_id": _string_schema(),
+        "route_id": _string_schema(),
+        "witness_residual": _string_schema(),
+        "witness_residual_id": _string_schema(),
+        "claim_residual": _string_schema(),
+        "claim_residual_id": _string_schema(),
+        "match": {"type": "boolean"},
+        **evidence_fields,
+        "claim_evidence_path": _string_schema(),
+        "claim_evidence_locator": _string_schema(),
+    })
+    n5_statement = _closed_schema({
+        "phrase": _string_schema(),
+        "occurrence_group_id": _string_schema(),
+        "occurrence_count": {"type": "integer"},
+        "occurrence_locator_sha256": _string_schema(),
+        "resolution_classes_checked": _string_array_schema(),
+        "tested_resolutions": _string_array_schema(),
+        "untested_resolutions": _string_array_schema(),
+        **evidence_fields,
+        "resolution_evidence_path": _string_schema(),
+        "resolution_evidence_locator": _string_schema(),
+    })
+    n6_candidate = _closed_schema({
+        "candidate_id": _string_schema(),
+        "kind": _string_schema(enum=(
+            "approved_primitive", "open_gate", "convention_reframe",
+            "definition_refactor",
+        )),
+        "indexed_basis": _string_schema(),
+        "affected_wall": _string_schema(),
+        "closure_mechanism": _string_schema(),
+        "could_close_wall": {"type": "boolean"},
+        "addressed": {"type": "boolean"},
+        "disposition": _string_schema(),
+        **evidence_fields,
+    })
+    n8_echo = _closed_schema({
+        "candidate_id": _string_schema(),
+        "mechanism": _string_schema(),
+        "retired": _nullable({"type": "boolean"}),
+        "applicable": {"type": "boolean"},
+        "addressed": {"type": "boolean"},
+        "disposition": _string_schema(),
+        **evidence_fields,
+    })
+    scan_common = {
+        "scan_scope": _string_schema(),
+        "scanned_evidence_paths": _string_array_schema(),
+    }
+    section_tail = {
+        "none_found_reason": _nullable(_string_schema()),
+        "unresolved": _string_array_schema(),
+        **evidence_fields,
+    }
+    packet = _closed_schema({
+        "required": {"type": "boolean"},
+        "status": _string_schema(enum=("PASS", "FAIL")),
+        "N1_alternative_routes": {"type": "array", "items": n1_route},
+        "N2_wall_independence": _closed_schema({
+            "walls": _string_array_schema(),
+            "pairwise_checks": {"type": "array", "items": n2_pair},
+            "collapsed_wall_set": _string_array_schema(),
+            "unresolved": _string_array_schema(),
+            **evidence_fields,
+        }),
+        "N3_hidden_wall_scan": _closed_schema({
+            **scan_common,
+            "hits": {"type": "array", "items": n3_hit},
+            **section_tail,
+        }),
+        "N4_residual_matching": _closed_schema({
+            **scan_common,
+            "witnesses": {"type": "array", "items": n4_witness},
+            **section_tail,
+        }),
+        "N5_rhetoric_audit": _closed_schema({
+            **scan_common,
+            "statements": {"type": "array", "items": n5_statement},
+            **section_tail,
+        }),
+        "N6_partial_closure_scan": _closed_schema({
+            "scan_scope": _string_schema(),
+            "premise_classes_checked": _string_array_schema(),
+            "candidates": {"type": "array", "items": n6_candidate},
+            **section_tail,
+        }),
+        "N7_steelman": _closed_schema({
+            "route_id": _string_schema(),
+            "argument": _string_schema(),
+            "resolution": _string_schema(),
+            "resolved": {"type": "boolean"},
+            **evidence_fields,
+            "resolution_evidence_path": _string_schema(),
+            "resolution_evidence_locator": _string_schema(),
+        }),
+        "N8_cross_cycle_echo": _closed_schema({
+            "packet_complete": {"type": "boolean"},
+            "no_go_row_universe_count": {"type": "integer"},
+            "no_go_row_universe_sha256": _string_schema(),
+            "echoes": {"type": "array", "items": n8_echo},
+            **section_tail,
+        }),
+        "failures": _string_array_schema(),
+        "demotion": _nullable(_string_schema(enum=(
+            "partial-attempt-with-named-untested-routes",
+            "partial-narrowing",
+            "bounded-with-corrected-wall-count",
+            "stretch-attempt-with-honest-residual",
+        ))),
+        "prior_claim_scope": _nullable(_string_schema()),
+        "narrowed_claim_scope": _nullable(_string_schema()),
+        "corrected_wall_set": _string_array_schema(),
+        "next_route": _nullable(_closed_schema({
+            "route_id": _string_schema(),
+            "reason_untested": _string_schema(),
+        })),
+    })
+    return _nullable(packet)
+
+
+def audit_verdict_output_schema(*, allow_compute_required: bool = True) -> dict:
+    audit_properties = {
+        "claim_id": _string_schema(),
+        "audit_invocation_id": _string_schema(),
+        "load_bearing_step": _string_schema(),
+        "load_bearing_step_class": _string_schema(enum=tuple("ABCDEFG")),
+        "claim_type": _string_schema(enum=(
+            "positive_theorem", "bounded_theorem", "no_go", "open_gate",
+            "decoration", "meta",
+        )),
+        "claim_scope": _string_schema(),
+        "chain_closes": {"type": "boolean"},
+        "chain_closure_explanation": _string_schema(),
+        "runner_check_breakdown": _closed_schema({
+            "A": {"type": "integer"},
+            "B": {"type": "integer"},
+            "C": {"type": "integer"},
+            "D": {"type": "integer"},
+            "total_pass": {"type": "integer"},
+        }),
+        "verdict": _string_schema(enum=(
+            "audited_clean", "audited_renaming", "audited_conditional",
+            "audited_decoration", "audited_numerical_match", "audited_failed",
+        )),
+        "verdict_rationale": _string_schema(),
+        "negative_assertion_classes": {
+            "type": "array",
+            "items": _string_schema(enum=(
+                "no_go_result", "stretch_attempt_negative",
+                "bounded_with_named_walls", "derived_no_go_boundary",
+                "conditional_wall_rationale",
+            )),
+        },
+        "decoration_parent_claim_id": _nullable(_string_schema()),
+        "open_dependency_paths": _string_array_schema(),
+        "auditor_confidence": _string_schema(enum=("low", "medium", "high")),
+        "notes_for_re_audit_if_any": _string_schema(),
+        "no_go_discipline": no_go_output_schema(),
+    }
+    if not allow_compute_required:
+        return _closed_schema({
+            "compute_required": {"type": "null"},
+            **audit_properties,
+        })
+    # The Codex structured-output endpoint requires a root object and rejects
+    # a root-level anyOf. Use one closed discriminated surface instead: normal
+    # audits set compute_required=null; the compute escape sets it to one line
+    # and every audit field to null. The semantic parser removes the null
+    # transport discriminator before canonical validation/apply.
+    return _closed_schema({
+        "compute_required": _nullable(_string_schema()),
+        **{
+            name: schema if name == "no_go_discipline" else _nullable(schema)
+            for name, schema in audit_properties.items()
+        },
+    })
+
+
+def judicial_vote_output_schema() -> dict:
+    return _closed_schema({
+        "sided_with": _string_schema(enum=("first", "second", "hybrid", "neither")),
+        "ratified_verdict": _string_schema(enum=(
+            "audited_clean", "audited_renaming", "audited_conditional",
+            "audited_decoration", "audited_failed", "audited_numerical_match",
+        )),
+        "ratified_claim_type": _string_schema(enum=(
+            "positive_theorem", "bounded_theorem", "no_go", "open_gate",
+            "decoration", "meta",
+        )),
+        "ratified_claim_scope": _string_schema(),
+        "ratified_load_bearing_step": _nullable(_string_schema()),
+        "ratified_load_bearing_step_class": _string_schema(enum=tuple("ABCDEFG")),
+        "negative_assertion_classes": _string_array_schema(),
+        "judgment_rationale": _string_schema(),
+        "first_auditor_error": _string_schema(),
+        "second_auditor_error": _string_schema(),
+        "hybrid_resolution_note": _nullable(_string_schema()),
+        "ratified_decoration_parent_claim_id": _nullable(_string_schema()),
+        "notes_for_re_audit_if_any": _nullable(_string_schema()),
+        "no_go_discipline": no_go_output_schema(),
+    })
+
+
+def write_object_output_schema(
+    path: Path,
+    *,
+    response_kind: str = "audit",
+    allow_compute_required: bool = True,
+) -> Path:
+    """Write the closed transport schema used by a restricted Codex seat."""
+    if response_kind == "audit":
+        schema = audit_verdict_output_schema(
+            allow_compute_required=allow_compute_required
+        )
+    elif response_kind == "judicial_vote":
+        schema = judicial_vote_output_schema()
+    else:
+        raise ValueError(f"unknown Codex response schema kind {response_kind!r}")
+    path.write_text(json.dumps(schema, sort_keys=True) + "\n", encoding="utf-8")
+    return path
+
+
 def prompt_exceeds_hard_input_limit(prompt: str) -> bool:
     return len(prompt) > CODEX_HARD_INPUT_CHAR_LIMIT
 
@@ -1287,15 +1591,15 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
         "OUTPUT INSTRUCTIONS (binding):\n"
         "If the runner output is missing only because of timeout, missing\n"
         "stdout, or compute-budget exhaustion AND the load-bearing step\n"
-        "cannot be judged without that completed run, return EXACTLY one\n"
-        "line of the form:\n"
-        "    COMPUTE_REQUIRED: <one sentence naming the missing run / cached\n"
-        "    certificate / independent derivation needed>\n"
-        "and nothing else. Do NOT fabricate a terminal verdict in that case.\n"
+        "cannot be judged without that completed run, use the response schema's\n"
+        "compute variant: set compute_required to one sentence naming the\n"
+        "missing run / cached certificate / independent derivation needed,\n"
+        "and set EVERY other top-level field to null. Do NOT fabricate a\n"
+        "terminal verdict in that case.\n"
         "\n"
-        "Otherwise, respond with EXACTLY one JSON object matching the schema\n"
-        "in section 5. No markdown fences, no preamble, no explanation\n"
-        "outside the JSON.\n"
+        "Otherwise, set compute_required=null and respond with EXACTLY one JSON\n"
+        "object matching the remaining schema in section 5. No markdown\n"
+        "fences, no preamble, no explanation outside the JSON.\n"
     )
     return prompt
 
@@ -1428,7 +1732,13 @@ def run_codex(prompt: str, isolated_dir: Path, timeout_sec: int,
     isolated_dir.mkdir(parents=True, exist_ok=True)
     cmd = ["codex", "exec", "--skip-git-repo-check"]
     last_message_path = isolated_dir / "codex-last-message.txt"
-    cmd += ["--output-last-message", str(last_message_path)]
+    output_schema_path = write_object_output_schema(
+        isolated_dir / "codex-final-response.schema.json"
+    )
+    cmd += [
+        "--output-schema", str(output_schema_path),
+        "--output-last-message", str(last_message_path),
+    ]
     if reasoning_effort:
         cmd += ["-c", f"model_reasoning_effort={reasoning_effort!r}"]
     if model:
@@ -1588,10 +1898,18 @@ def parse_verdict_json(reply: str) -> dict | None:
     # Drop any tokens-used trailer
     if "\ntokens used" in reply:
         reply = reply.split("\ntokens used", 1)[0].rstrip()
+    def normalized(parsed: object) -> dict | None:
+        if not isinstance(parsed, dict):
+            return None
+        if parsed.get("compute_required") is None:
+            parsed = dict(parsed)
+            parsed.pop("compute_required", None)
+        return parsed
+
     # Try direct parse first
     try:
         parsed = json.loads(reply)
-        return parsed if isinstance(parsed, dict) else None
+        return normalized(parsed)
     except json.JSONDecodeError:
         pass
     # Strip markdown fences if present
@@ -1599,7 +1917,7 @@ def parse_verdict_json(reply: str) -> dict | None:
         stripped = reply.strip("`").lstrip("json").strip()
         try:
             parsed = json.loads(stripped)
-            return parsed if isinstance(parsed, dict) else None
+            return normalized(parsed)
         except json.JSONDecodeError:
             pass
 
@@ -1615,8 +1933,9 @@ def parse_verdict_json(reply: str) -> dict | None:
         candidate = reply[first_open : last_close + 1]
         try:
             parsed = json.loads(candidate)
-            if isinstance(parsed, dict):
-                return parsed
+            normalized_parsed = normalized(parsed)
+            if normalized_parsed is not None:
+                return normalized_parsed
             cursor = first_open + 1
         except json.JSONDecodeError:
             cursor = first_open + 1
@@ -1943,9 +2262,31 @@ def bind_authenticated_n6_candidate_locators(
 
 
 def compute_required_reason(reply: str | None) -> str | None:
-    """Accept only the exact one-line COMPUTE_REQUIRED escape protocol."""
+    """Accept only the governed compute-required escape protocols.
+
+    New structured-output seats return a one-field JSON object.  The legacy
+    exact line remains readable so an in-flight worker started before this
+    migration can still finish without being converted into a false verdict.
+    """
     if not reply:
         return None
+    try:
+        payload = json.loads(reply.strip())
+    except json.JSONDecodeError:
+        payload = None
+    if (
+        isinstance(payload, dict)
+        and "compute_required" in payload
+        and isinstance(payload["compute_required"], str)
+        and payload["compute_required"].strip()
+        and "\n" not in payload["compute_required"].strip()
+        and all(
+            value is None
+            for name, value in payload.items()
+            if name != "compute_required"
+        )
+    ):
+        return payload["compute_required"].strip()[:300]
     match = re.fullmatch(
         r"COMPUTE_REQUIRED:\s*([^\r\n]+)",
         reply.strip(),

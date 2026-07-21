@@ -9504,7 +9504,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 "no_go_discipline_packet_missing",
             )
 
-    def test_packetless_declared_negative_conditional_is_invalidated(self):
+    def test_packetless_declared_negative_conditional_remains_repair_queue(self):
         m = _import("invalidate_stale_audits")
         row = {
             "claim_id": "declared_negative_conditional",
@@ -9513,10 +9513,15 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "claim_type": "bounded_theorem",
             "negative_assertion_classes": ["bounded_with_named_walls"],
         }
-        self.assertEqual(
-            m.detect_invalidation(row, {"declared_negative_conditional": row}),
-            "no_go_discipline_packet_missing",
-        )
+        with mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": ""}):
+            self.assertIsNone(
+                m.detect_invalidation(row, {"declared_negative_conditional": row})
+            )
+        with mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": "1"}):
+            self.assertEqual(
+                m.detect_invalidation(row, {"declared_negative_conditional": row}),
+                "no_go_discipline_packet_missing",
+            )
 
     def test_live_packet_invalid_under_current_policy_is_invalidated(self):
         m = _import("invalidate_stale_audits")
@@ -9975,7 +9980,7 @@ class BatchOrchestratorRoundSemanticsTest(unittest.TestCase):
             m.audit_runner, "PROMPT_TEMPLATE_PATH"
         ) as template_path, mock.patch.object(
             m.subprocess, "Popen", return_value=proc
-        ):
+        ) as popen:
             template_path.read_text.return_value = "template"
             first = m.launch_worker(
                 rows["spin_row"], rows, 1, workdir, 120, 1
@@ -9988,6 +9993,13 @@ class BatchOrchestratorRoundSemanticsTest(unittest.TestCase):
         self.assertNotEqual(first["isolated"], second["isolated"])
         self.assertIn("-r1-p1", str(first["isolated"]))
         self.assertIn("-r2-p1", str(second["isolated"]))
+        command = popen.call_args_list[0].args[0]
+        self.assertIn("--output-schema", command)
+        schema_path = Path(command[command.index("--output-schema") + 1])
+        schema = json.loads(schema_path.read_text())
+        self.assertEqual(schema["type"], "object")
+        self.assertFalse(schema["additionalProperties"])
+        self.assertIn("compute_required", schema["required"])
 
     def test_conditional_rows_wait_for_repair_across_runs(self):
         """A re-queued audited_conditional row is not re-targeted until its
@@ -10229,6 +10241,32 @@ class CodexAuditRunnerModelPolicyTest(unittest.TestCase):
             "priority": priority,
             "supported_reasoning_levels": levels,
         }
+
+    def test_codex_output_schemas_close_every_object(self):
+        m = _import_codex_audit_runner()
+
+        def assert_closed(schema):
+            if not isinstance(schema, dict):
+                return
+            if schema.get("type") == "object":
+                self.assertIs(schema.get("additionalProperties"), False)
+                self.assertEqual(
+                    set(schema.get("required") or []),
+                    set((schema.get("properties") or {}).keys()),
+                )
+            for value in schema.values():
+                if isinstance(value, dict):
+                    assert_closed(value)
+                elif isinstance(value, list):
+                    for item in value:
+                        assert_closed(item)
+
+        audit_schema = m.audit_verdict_output_schema()
+        panel_schema = m.judicial_vote_output_schema()
+        self.assertEqual(audit_schema["type"], "object")
+        self.assertEqual(panel_schema["type"], "object")
+        assert_closed(audit_schema)
+        assert_closed(panel_schema)
 
     def test_best_cached_model_uses_highest_full_gpt_version_not_cache_order(self):
         m = _import_codex_audit_runner()
@@ -11533,15 +11571,31 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
     def test_compute_required_escape_must_be_exact_one_line(self):
         m = _import_codex_audit_runner()
         self.assertEqual(
+            m.compute_required_reason(
+                '{"compute_required":"need the cached certificate",'
+                '"claim_id":null,"verdict":null}'
+            ),
+            "need the cached certificate",
+        )
+        self.assertEqual(
             m.compute_required_reason("COMPUTE_REQUIRED: need the long run"),
             "need the long run",
         )
+        self.assertIsNone(m.compute_required_reason(
+            '{"compute_required":"need it","extra":"not governed"}'
+        ))
         self.assertIsNone(m.compute_required_reason(
             '{"verdict_rationale":"COMPUTE_REQUIRED: quoted only"}'
         ))
         self.assertIsNone(m.compute_required_reason(
             "COMPUTE_REQUIRED: first line\nextra output"
         ))
+        self.assertEqual(
+            m.parse_verdict_json(
+                '{"compute_required":null,"claim_id":"row","verdict":"audited_failed"}'
+            ),
+            {"claim_id": "row", "verdict": "audited_failed"},
+        )
 
 
 class RelabelUnverifiedCodexAuditsTest(unittest.TestCase):
@@ -11898,7 +11952,7 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
             m.restore_audit_from_previous(row, {cid: row})
         )
 
-    def test_restore_refuses_packetless_declared_negative_conditional(self):
+    def test_restore_allows_packetless_declared_negative_conditional_in_development(self):
         m = self._import_and_patch()
         cid = "packetless_declared_conditional"
         note_path = "docs/POSITIVE_CONDITIONAL.md"
@@ -11913,8 +11967,11 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
         ]
         row = self._seed_with_archived(cid, archived)
         row["note_path"] = note_path
-        self.assertIsNone(
-            m.restore_audit_from_previous(row, {cid: row})
+        restored = m.restore_audit_from_previous(row, {cid: row})
+        self.assertIsNotNone(restored)
+        self.assertEqual(
+            restored["negative_assertion_classes"],
+            ["bounded_with_named_walls"],
         )
 
     def test_selects_only_packet_missing_rows_whose_trigger_no_longer_fires(self):
@@ -14390,24 +14447,27 @@ class BatchOrchestratorSeatBankingTest(unittest.TestCase):
                 "result": "validation_failed", "detail": "N7 wording",
             }
 
-        def fake_apply_one(job, envelope, retries):
-            verdict = envelope["audit"]["verdict"]
-            applied.append((job["cid"], job["pass"], verdict))
-            if verdict == "audited_clean":
-                job["row"]["audit_status"] = "audit_in_progress"
-                job["row"]["cross_confirmation"] = {
-                    "status": "awaiting_second",
-                }
-            else:
-                job["row"]["audit_status"] = verdict
-            return True, {
-                "cid": job["cid"], "pass": job["pass"],
-                "result": verdict,
-            }
+        def fake_apply_claim(deliveries, retries):
+            results = []
+            for job, envelope in deliveries:
+                verdict = envelope["audit"]["verdict"]
+                applied.append((job["cid"], job["pass"], verdict))
+                if verdict == "audited_clean":
+                    job["row"]["audit_status"] = "audit_in_progress"
+                    job["row"]["cross_confirmation"] = {
+                        "status": "awaiting_second",
+                    }
+                else:
+                    job["row"]["audit_status"] = verdict
+                results.append({
+                    "cid": job["cid"], "pass": job["pass"],
+                    "result": verdict,
+                })
+            return True, results
 
         report = []
         with mock.patch.object(m, "finalize_worker", side_effect=fake_finalize), \
-                mock.patch.object(m, "apply_one_serialized", side_effect=fake_apply_one):
+                mock.patch.object(m, "apply_claim_serialized", side_effect=fake_apply_claim):
             ok, _, _, _ = m.apply_serialized(jobs, report)
         return ok, report, applied, jobs[0]["row"]
 

@@ -149,6 +149,15 @@ class AuditHandoffTest(unittest.TestCase):
         self.assertIn("The implication is only asserted.", rows[0]["prompt_body"])
         self.assertNotIn("arbitrary edits", rows[0]["prompt_body"])
 
+    def test_missing_dependency_edge_maps_to_actionable_lane(self):
+        self.assertEqual(
+            sfl.audit_repair_category(
+                "audited_conditional",
+                "missing_dependency_edge: cite the retained authority",
+            ),
+            "conditional_missing_dependency_edge",
+        )
+
     def test_rejects_untrusted_or_incomplete_handoff(self):
         cases = (
             [],

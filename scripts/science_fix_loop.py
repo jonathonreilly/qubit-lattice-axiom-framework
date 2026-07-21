@@ -171,6 +171,7 @@ CATEGORIES = (
     "open_gate",
     "conditional_runner_artifact_issue",
     "conditional_scope_too_broad",
+    "conditional_missing_dependency_edge",
     "conditional_missing_bridge_theorem",
 )
 # Scheduling rank within a difficulty bucket: mechanical categories close
@@ -182,9 +183,10 @@ CATEGORY_RANK = {
     "numerical_match": 1,
     "conditional_runner_artifact_issue": 2,
     "conditional_scope_too_broad": 3,
-    "open_gate": 4,
-    "failed": 5,
-    "conditional_missing_bridge_theorem": 6,
+    "conditional_missing_dependency_edge": 4,
+    "open_gate": 5,
+    "failed": 6,
+    "conditional_missing_bridge_theorem": 7,
 }
 
 # NOTE (governance): publication-lane prioritization is deliberately ABSENT.
@@ -256,6 +258,7 @@ def parse_prompts(prompts_file: Path = PROMPTS_FILE):
         r"audited_renaming|audited_failed|audited_numerical_match|open_gate"
         r"|audited_conditional_runner_artifact_issue"
         r"|audited_conditional_scope_too_broad"
+        r"|audited_conditional_missing_dependency_edge"
         r"|audited_conditional_missing_bridge_theorem"
         r")\b"
     )
@@ -266,6 +269,7 @@ def parse_prompts(prompts_file: Path = PROMPTS_FILE):
         "open_gate": "open_gate",
         "audited_conditional_runner_artifact_issue": "conditional_runner_artifact_issue",
         "audited_conditional_scope_too_broad": "conditional_scope_too_broad",
+        "audited_conditional_missing_dependency_edge": "conditional_missing_dependency_edge",
         "audited_conditional_missing_bridge_theorem": "conditional_missing_bridge_theorem",
     }
     for m in re.finditer(header_pattern, text, re.MULTILINE):
@@ -303,6 +307,7 @@ def audit_repair_category(audit_verdict: str, repair_target: str) -> str | None:
         conditional_categories = {
             "runner_artifact_issue": "conditional_runner_artifact_issue",
             "scope_too_broad": "conditional_scope_too_broad",
+            "missing_dependency_edge": "conditional_missing_dependency_edge",
             "missing_bridge_theorem": "conditional_missing_bridge_theorem",
         }
         prefix = repair_target.split("—", 1)[0].split(":", 1)[0].strip().lower()

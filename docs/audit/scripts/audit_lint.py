@@ -586,7 +586,11 @@ def main() -> int:
         required = source_required or no_go_discipline_gate.output_requires_no_go_discipline(
             audit_like
         ) or bool(audit_like.get("negative_assertion_classes"))
-        if required and packet is None:
+        binds = no_go_discipline_gate.packet_requirement_binds(
+            {**audit_like, "verdict": verdict},
+            source_required=source_required,
+        )
+        if required and binds and packet is None:
             message = (
                 f"{cid}: {label} lacks structured No-Go Discipline and "
                 "cannot be authoritative until fresh re-audit"

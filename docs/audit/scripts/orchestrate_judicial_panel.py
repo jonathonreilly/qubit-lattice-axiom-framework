@@ -587,6 +587,10 @@ def launch_judge(
     isolated = workdir / f"isolated-{tag}"
     isolated.mkdir(parents=True, exist_ok=False)
     (isolated / "PANEL_TASK.md").write_text(prompt, encoding="utf-8")
+    output_schema = audit_runner.write_object_output_schema(
+        isolated / "PANEL_RESPONSE.schema.json",
+        response_kind="judicial_vote",
+    )
     raw_output = workdir / f"raw-{tag}.txt"
     log_path = workdir / f"log-{tag}.txt"
     log_handle = log_path.open("w", encoding="utf-8")
@@ -602,6 +606,7 @@ def launch_judge(
                 "codex", "exec", "--skip-git-repo-check", "--ignore-rules",
                 "--sandbox", "read-only", "--model", batch.MODEL,
                 "-c", f"model_reasoning_effort='{batch.REASONING}'",
+                "--output-schema", str(output_schema),
                 "--output-last-message", str(raw_output), instruction,
             ],
             stdin=subprocess.DEVNULL,

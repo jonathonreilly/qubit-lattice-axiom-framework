@@ -7,13 +7,14 @@ The existing prompts file covers:
 
 The audited_conditional cohort was missing — the autonomous
 science_fix_loop.py had no queue for it. This script extends coverage
-to the three auditor-written conditional repair classes whose verdicts
+to the four auditor-written conditional repair classes whose verdicts
 contain a concrete repair target. Current category counts are printed at
 runtime because the audit ledger changes as hygiene repairs reset rows for
 re-audit:
 
   audited_conditional_runner_artifact_issue
   audited_conditional_scope_too_broad
+  audited_conditional_missing_dependency_edge
   audited_conditional_missing_bridge_theorem
 
 Synthesized backfilled rows (from backfill_repair_class.py) are
@@ -22,7 +23,7 @@ boilerplate verdict_rationale, not stated by an independent auditor.
 Those rows need re-audit, not autonomous derivation work.
 
 Usage:
-  # idempotent: rewrites the three conditional sections at the file end
+  # idempotent: rewrites the four conditional sections at the file end
   python3 docs/audit/scripts/generate_conditional_prompts.py
 """
 from __future__ import annotations
@@ -66,6 +67,10 @@ CONDITIONAL_SECTIONS = [
         "Auditor judged that a clean bounded core exists inside a claim whose current scope includes an unclosed extension. To close: split the clean bounded core out as its own retained-grade claim and demote the extension to bounded or open scope.",
     ),
     (
+        "audited_conditional_missing_dependency_edge",
+        "Auditor judged that the stated step depends on an authority that is absent from the governed dependency graph. To close: add the exact retained authority edge and align the citing scope, or narrow the claim if no such authority exists.",
+    ),
+    (
         "audited_conditional_missing_bridge_theorem",
         "Auditor judged that the chain needs a new theorem for a physical carrier, readout, unit map, boundary condition, sector choice, normalization, or observable bridge. To close: derive the missing bridge from retained primitives so the audited claim no longer asserts it.",
     ),
@@ -107,6 +112,7 @@ def collect_rows(rows: dict[str, dict], synthesized: set[str]) -> dict[str, list
     map_class = {
         "runner_artifact_issue": "audited_conditional_runner_artifact_issue",
         "scope_too_broad": "audited_conditional_scope_too_broad",
+        "missing_dependency_edge": "audited_conditional_missing_dependency_edge",
         "missing_bridge_theorem": "audited_conditional_missing_bridge_theorem",
     }
     for cid, row in rows.items():

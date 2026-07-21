@@ -466,6 +466,18 @@ def launch_worker(
         evidence_manifest_out=evidence_manifest,
         audit_invocation_id=invocation_id,
     )
+    clipped_evidence = prompt_has_clipped_evidence(evidence_manifest)
+    if clipped_evidence:
+        prompt += (
+            "\n\n---\nPACKET COMPLETENESS PREFLIGHT (binding):\n"
+            "The restricted packet contains clipped load-bearing evidence at "
+            f"{json.dumps(clipped_evidence)}. audited_clean is forbidden. "
+            "Return the honest non-clean verdict and repair target. On this "
+            "development-tier non-no-go row, preserve any negative-boundary "
+            "judgment in negative_assertion_classes and rationale prose, but "
+            "leave no_go_discipline=null unless you can supply a structurally "
+            "valid optional packet from the rendered evidence.\n"
+        )
     if len(prompt) > audit_runner.CODEX_INPUT_CHAR_LIMIT:
         raise ValueError(
             f"{cid}: development packet is {len(prompt)} characters; "
@@ -480,6 +492,9 @@ def launch_worker(
     isolated.mkdir(parents=True, exist_ok=False)
     prompt_path = isolated / "AUDIT_TASK.md"
     prompt_path.write_text(prompt, encoding="utf-8")
+    output_schema = audit_runner.write_object_output_schema(
+        isolated / "AUDIT_RESPONSE.schema.json"
+    )
     raw_output = workdir / f"raw-{tag}.txt"
     delivery = workdir / f"delivery-{tag}.json"
     log_path = workdir / f"log-{tag}.txt"
@@ -495,6 +510,7 @@ def launch_worker(
                 "codex", "exec", "--skip-git-repo-check", "--ignore-rules",
                 "--sandbox", "read-only", "--model", MODEL,
                 "-c", f"model_reasoning_effort='{REASONING}'",
+                "--output-schema", str(output_schema),
                 "--output-last-message", str(raw_output), instruction,
             ],
             stdin=subprocess.DEVNULL,
@@ -705,6 +721,10 @@ def packet_completion_pass(
     blob_path.write_text(json.dumps(blob, indent=1), encoding="utf-8")
     out_path = workdir / f"completion-{attempt_key}-out.json"
     out_path.unlink(missing_ok=True)
+    output_schema = audit_runner.write_object_output_schema(
+        job["isolated"] / "AUDIT_COMPLETION_RESPONSE.schema.json",
+        allow_compute_required=False,
+    )
     log_path = workdir / f"completion-{attempt_key}.log"
     error_block = (
         "\nThe validator rejected the previous packet with EXACTLY this "
@@ -749,6 +769,7 @@ def packet_completion_pass(
         "--ignore-user-config", "--ephemeral",
         "--sandbox", "read-only", "--model", MODEL,
         "-c", f"model_reasoning_effort='{REASONING}'",
+        "--output-schema", str(output_schema),
         "--output-last-message", str(out_path), spec,
     ]
     sandbox_exec = Path("/usr/bin/sandbox-exec")
@@ -806,6 +827,8 @@ def packet_completion_pass(
         return None
     if not isinstance(completed, dict):
         return None
+    if completed.get("compute_required") is None:
+        completed.pop("compute_required", None)
     packet = completed.get("no_go_discipline")
     if not isinstance(packet, dict):
         return None
@@ -872,6 +895,24 @@ def finalize_worker(job: dict) -> tuple[dict | None, dict]:
             str(err or ""),
         ))
 
+    optional_packet_dropped = False
+    if error and _packet_error(error) and isinstance(blob.get("no_go_discipline"), dict):
+        # In the development tier a non-clean verdict on a non-no-go source
+        # carries its negative judgment in the declaration/rationale; the
+        # heavyweight packet is optional.  A volunteered but schema-invalid
+        # optional packet must not consume two 20-minute completion attempts
+        # or quarantine an otherwise valid scientific verdict.  Prove that it
+        # is optional by removing only that field and rerunning the unchanged
+        # canonical validator; clean/no-go/forensic verdicts still fail closed.
+        without_optional_packet = dict(blob)
+        without_optional_packet["no_go_discipline"] = None
+        if audit_runner.validate_verdict(
+            without_optional_packet, cid, **validation_args
+        ) is None:
+            blob = without_optional_packet
+            error = None
+            optional_packet_dropped = True
+
     completion_attempt = 0
     while (
         error
@@ -909,7 +950,10 @@ def finalize_worker(job: dict) -> tuple[dict | None, dict]:
     temporary = job["delivery"].with_suffix(".tmp")
     temporary.write_text(json.dumps(envelope, sort_keys=True), encoding="utf-8")
     temporary.replace(job["delivery"])
-    return envelope, {**base, "result": "delivery_validated"}
+    result = {**base, "result": "delivery_validated"}
+    if optional_packet_dropped:
+        result["detail"] = "invalid optional development-tier no_go_discipline dropped"
+    return envelope, result
 
 
 def clean_main_error() -> str | None:
@@ -960,14 +1004,8 @@ def allowed_generated_path(path: str) -> bool:
     )
 
 
-def run_apply_gates(envelope: dict) -> tuple[bool, str]:
-    ok, message = audit_runner.apply_one(
-        envelope["audit"],
-        propagate=False,
-        evidence_manifest=envelope["evidence_manifest"],
-    )
-    if not ok:
-        return False, f"apply rejected: {message[:400]}"
+def run_generated_gates() -> tuple[bool, str]:
+    """Run the expensive generated-surface gates once per claim transaction."""
     pipeline = sh(["bash", str(SCRIPTS / "run_pipeline.sh")], timeout=1800)
     if pipeline.returncode != 0:
         return False, f"pipeline failed: {(pipeline.stderr or pipeline.stdout)[-400:]}"
@@ -981,6 +1019,18 @@ def run_apply_gates(envelope: dict) -> tuple[bool, str]:
     if unexpected:
         return False, f"unexpected generated paths: {unexpected[:8]}"
     return True, "gates passed"
+
+
+def run_apply_gates(envelope: dict) -> tuple[bool, str]:
+    """Compatibility wrapper for one-seat callers and focused tests."""
+    ok, message = audit_runner.apply_one(
+        envelope["audit"],
+        propagate=False,
+        evidence_manifest=envelope["evidence_manifest"],
+    )
+    if not ok:
+        return False, f"apply rejected: {message[:400]}"
+    return run_generated_gates()
 
 
 def stage_and_commit(message: str) -> tuple[bool, str]:
@@ -1002,47 +1052,106 @@ def stage_and_commit(message: str) -> tuple[bool, str]:
     return True, committed.stdout.strip()
 
 
+def reset_to_origin_main() -> tuple[bool, str]:
+    reset = sh(["git", "reset", "--hard", "origin/main"])
+    if reset.returncode != 0:
+        return False, f"reset failed: {(reset.stderr or reset.stdout).strip()[:240]}"
+    error = clean_main_error()
+    return (error is None, error or "reset to origin/main")
+
+
+def apply_claim_serialized(
+    deliveries: list[tuple[dict, dict]],
+    retries: int,
+) -> tuple[bool, list[dict]]:
+    """Apply every validated seat for one claim as one transaction.
+
+    Critical rows commonly deliver both independent seats together. Applying
+    them before one pipeline/lint/commit/push preserves every seat transition
+    while amortizing the generated-surface cost. Push-race retries replay the
+    complete claim transaction from the refreshed canonical parent.
+    """
+    ordered = sorted(deliveries, key=lambda item: item[0]["pass"])
+    claim_ids = {job["cid"] for job, _ in ordered}
+    if len(claim_ids) != 1 or not ordered:
+        raise ValueError("one non-empty claim delivery group is required")
+    cid = next(iter(claim_ids))
+    for attempt in range(1, retries + 1):
+        synced, detail = sync_origin_main()
+        if not synced:
+            return False, [{"cid": cid, "result": "sync_blocked", "detail": detail}]
+
+        for job, envelope in ordered:
+            applied, apply_detail = audit_runner.apply_one(
+                envelope["audit"],
+                propagate=False,
+                evidence_manifest=envelope["evidence_manifest"],
+            )
+            if not applied:
+                reset_to_origin_main()
+                return False, [{
+                    "cid": cid,
+                    "pass": job["pass"],
+                    "result": "apply_or_gate_failed",
+                    "detail": f"apply rejected: {apply_detail[:400]}",
+                }]
+
+        gated, detail = run_generated_gates()
+        if not gated:
+            reset_to_origin_main()
+            return False, [{"cid": cid, "result": "apply_or_gate_failed", "detail": detail}]
+        verdicts = [str(envelope["audit"].get("verdict")) for _, envelope in ordered]
+        seats = ["first" if job["pass"] == 1 else "second" for job, _ in ordered]
+        committed, detail = stage_and_commit(
+            f"audit: {cid} {'+'.join(verdicts)} "
+            f"(codex-cli, {MODEL}, {REASONING}, {'+'.join(seats)}/batch)"
+        )
+        if not committed:
+            reset_to_origin_main()
+            return False, [{"cid": cid, "result": "commit_failed", "detail": detail}]
+        local_commit = detail
+        push = sh(["git", "push", "-q", "origin", "HEAD:main"])
+        if push.returncode == 0:
+            return True, [
+                {
+                    "cid": cid,
+                    "pass": job["pass"],
+                    "result": envelope["audit"].get("verdict"),
+                    "commit": local_commit,
+                }
+                for job, envelope in ordered
+            ]
+
+        fetch = sh(["git", "fetch", "origin", "main", "-q"])
+        if fetch.returncode != 0:
+            return False, [{"cid": cid, "result": "push_failed", "detail": "push and follow-up fetch failed"}]
+        landed = sh(["git", "merge-base", "--is-ancestor", local_commit, "origin/main"])
+        if landed.returncode == 0:
+            return True, [
+                {
+                    "cid": cid,
+                    "pass": job["pass"],
+                    "result": envelope["audit"].get("verdict"),
+                    "commit": local_commit,
+                }
+                for job, envelope in ordered
+            ]
+        if attempt == retries:
+            return False, [{"cid": cid, "result": "push_race_exhausted"}]
+        reset, reset_detail = reset_to_origin_main()
+        if not reset:
+            return False, [{"cid": cid, "result": "race_reset_failed", "detail": reset_detail}]
+    return False, [{"cid": cid, "result": "unreachable"}]
+
+
 def apply_one_serialized(
     job: dict,
     envelope: dict,
     retries: int,
 ) -> tuple[bool, dict]:
-    cid = job["cid"]
-    pass_no = job["pass"]
-    verdict = envelope["audit"].get("verdict")
-    for attempt in range(1, retries + 1):
-        synced, detail = sync_origin_main()
-        if not synced:
-            return False, {"cid": cid, "pass": pass_no, "result": "sync_blocked", "detail": detail}
-        gated, detail = run_apply_gates(envelope)
-        if not gated:
-            return False, {"cid": cid, "pass": pass_no, "result": "apply_or_gate_failed", "detail": detail}
-        pass_word = "first" if pass_no == 1 else "second"
-        committed, detail = stage_and_commit(
-            f"audit: {cid} {verdict} (codex-cli, {MODEL}, {REASONING}, {pass_word}/batch)"
-        )
-        if not committed:
-            return False, {"cid": cid, "pass": pass_no, "result": "commit_failed", "detail": detail}
-        local_commit = detail
-        push = sh(["git", "push", "-q", "origin", "HEAD:main"])
-        if push.returncode == 0:
-            return True, {"cid": cid, "pass": pass_no, "result": verdict, "commit": local_commit}
-
-        fetch = sh(["git", "fetch", "origin", "main", "-q"])
-        if fetch.returncode != 0:
-            return False, {"cid": cid, "pass": pass_no, "result": "push_failed", "detail": "push and follow-up fetch failed"}
-        landed = sh(["git", "merge-base", "--is-ancestor", local_commit, "origin/main"])
-        if landed.returncode == 0:
-            return True, {"cid": cid, "pass": pass_no, "result": verdict, "commit": local_commit}
-        if attempt == retries:
-            return False, {"cid": cid, "pass": pass_no, "result": "push_race_exhausted"}
-        error = clean_main_error()
-        if error:
-            return False, {"cid": cid, "pass": pass_no, "result": "race_retry_dirty", "detail": error}
-        reset = sh(["git", "reset", "--hard", "origin/main"])
-        if reset.returncode != 0:
-            return False, {"cid": cid, "pass": pass_no, "result": "race_reset_failed"}
-    return False, {"cid": cid, "pass": pass_no, "result": "unreachable"}
+    """Backward-compatible one-seat facade over the claim transaction."""
+    ok, results = apply_claim_serialized([(job, envelope)], retries)
+    return ok, results[0]
 
 
 def science_fix_handoff(job: dict, envelope: dict) -> dict | None:
@@ -1061,6 +1170,7 @@ def science_fix_handoff(job: dict, envelope: dict) -> dict | None:
         conditional_categories = {
             "runner_artifact_issue": "conditional_runner_artifact_issue",
             "scope_too_broad": "conditional_scope_too_broad",
+            "missing_dependency_edge": "conditional_missing_dependency_edge",
             "missing_bridge_theorem": "conditional_missing_bridge_theorem",
         }
         prefix = notes.split("—", 1)[0].split(":", 1)[0].strip().lower()
@@ -1395,12 +1505,16 @@ def apply_serialized(
             ),
         })
 
-    for key in sorted(deliveries):
-        job, envelope = deliveries[key]
-        if job["cid"] in invalid_claims:
+    for cid in sorted({delivery_cid for delivery_cid, _ in deliveries}):
+        if cid in invalid_claims:
             continue
-        ok, result = apply_one_serialized(job, envelope, retries)
-        report.append(result)
+        claim_deliveries = [
+            deliveries[key]
+            for key in sorted(deliveries)
+            if key[0] == cid
+        ]
+        ok, results = apply_claim_serialized(claim_deliveries, retries)
+        report.extend(results)
         if not ok:
             return (
                 False,
@@ -1408,9 +1522,10 @@ def apply_serialized(
                 schema_quarantines,
                 list(science_handoffs.values()),
             )
-        handoff = science_fix_handoff(job, envelope)
-        if handoff is not None:
-            science_handoffs[job["cid"]] = handoff
+        for job, envelope in claim_deliveries:
+            handoff = science_fix_handoff(job, envelope)
+            if handoff is not None:
+                science_handoffs[job["cid"]] = handoff
     hard_invalid_claims = invalid_claims - schema_quarantines
     return (
         not hard_invalid_claims,

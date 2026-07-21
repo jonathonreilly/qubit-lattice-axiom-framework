@@ -16,12 +16,12 @@ file per claim), summarized in
 
 | Metric | Value |
 |---|---:|
-| Retained positive rows | 86 |
+| Retained positive rows | 87 |
 | Retained bounded rows | 309 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 16 |
 
-## Retained positive rows (86)
+## Retained positive rows (87)
 
 Sorted by load-bearing graph score (descending).
 
@@ -38,6 +38,7 @@ Sorted by load-bearing graph score (descending).
 - [`staggered_only_det_positivity_case_a_note_2026-05-17`](../../docs/STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md) — score 21.231; audited 2026-05-23T19:08:58.399053+00:00
 - [`z2_hw1_mass_matrix_parametrization_note`](../../docs/Z2_HW1_MASS_MATRIX_PARAMETRIZATION_NOTE.md) — score 20.017; audited 2026-07-20T22:41:42.856310+00:00
 - [`s3_taste_cube_decomposition_note`](../../docs/S3_TASTE_CUBE_DECOMPOSITION_NOTE.md) — score 19.002; audited 2026-05-23T14:10:38.971653+00:00
+- [`fermion_parity_z2_grading_theorem_note_2026-05-02`](../../docs/FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md) — score 18.668; audited 2026-07-21T18:58:15.506988+00:00
 - [`ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26`](../../docs/EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md) — score 18.547; audited 2026-07-21T18:00:53.377100+00:00
 - [`gauge_scalar_temporal_completion_theorem_note`](../../docs/GAUGE_SCALAR_TEMPORAL_COMPLETION_THEOREM_NOTE.md) — score 17.731; audited 2026-05-23T13:36:42.061961+00:00
 - [`naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10`](../../docs/NAIVE_LATTICE_FERMION_TWO_POWER_D_SPECIES_COUNT_NARROW_THEOREM_NOTE_2026-05-10.md) — score 16.211; audited 2026-05-22T16:13:26.228372+00:00

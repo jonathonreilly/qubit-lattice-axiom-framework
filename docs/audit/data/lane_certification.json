@@ -433,7 +433,7 @@
         },
         {
           "claim_id": "circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
-          "effective_status": "unaudited"
+          "effective_status": "audit_in_progress"
         },
         {
           "claim_id": "ckm_a_squared_below_w2_y_quantum_closure_theorem_note_2026-04-25",
@@ -2827,6 +2827,6 @@
       "uncertified_count": 649
     }
   ],
-  "repo_head": "125ab73901f9a02abb607d7991c9d80a957bb17d",
+  "repo_head": "a33fd118b292f789463219712800d2643c88f3c5",
   "schema": "lane_certification_v2"
 }

@@ -533,7 +533,7 @@
         },
         {
           "claim_id": "cpt_squared_is_identity_theorem_note_2026-05-02",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "dm_dple_dimension_parametric_extremum_theorem_note_2026-04-19",
@@ -2823,6 +2823,6 @@
       "uncertified_count": 648
     }
   ],
-  "repo_head": "7bd08921f90e412a412d8e610553ef3d7229ebc9",
+  "repo_head": "dc5dd9bcca361290ea40d68df7c49d9677a2b8e8",
   "schema": "lane_certification_v2"
 }

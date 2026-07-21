@@ -921,7 +921,7 @@
         },
         {
           "claim_id": "flavor_native_double_shift_corner_coupling_note_2026-05-30",
-          "effective_status": "audit_in_progress"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "free_bilinear_quasilocal_lr_bridge_theorem_note_2026-06-10",
@@ -2819,6 +2819,6 @@
       "uncertified_count": 647
     }
   ],
-  "repo_head": "0d73e6804a709156c611da5c3307bebbfdbbb654",
+  "repo_head": "d3896dbb6d5ebf343facb0805552bab0db225017",
   "schema": "lane_certification_v2"
 }

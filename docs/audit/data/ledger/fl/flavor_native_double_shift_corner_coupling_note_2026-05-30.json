@@ -1,29 +1,74 @@
 {
-  "audit_date": null,
+  "audit_date": "2026-07-21T18:13:19.632870+00:00",
   "audit_invocation_history": [
     "db93c7033c054f82bfb6e09e7257eaa4",
-    "eb3265c8c23247e58f1eefa25ecb2f9a"
+    "eb3265c8c23247e58f1eefa25ecb2f9a",
+    "8a78e00086fd4597ad45ef0c0cf12768"
   ],
-  "audit_invocation_id": "eb3265c8c23247e58f1eefa25ecb2f9a",
-  "audit_state_snapshot": null,
-  "audit_status": "audit_in_progress",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
-  "blocker": "cross_confirmation_disagreement",
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "audit_invocation_id": "8a78e00086fd4597ad45ef0c0cf12768",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/flavor_native_double_shift_corner_coupling_2026_05_30.py"
+    },
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 10.508,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "c7fcaca394bf2438a6e64b84f8b26130d485232c1f5416ee74ceb76832e88656",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/flavor_native_double_shift_corner_coupling_2026_05_30.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "0e454bbf2f2344cf196ae2000c5d0c45521e938b744337bca00e6a0653ed79e5",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "0e454bbf2f2344cf196ae2000c5d0c45521e938b744337bca00e6a0653ed79e5",
+    "runner_path": "scripts/flavor_native_double_shift_corner_coupling_2026_05_30.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 727
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-judicial-1-20260721-84adf558",
+  "auditor_confidence": "judicial",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The runner constructs the finite matrices and verifies identities already stated in the note, so the load-bearing calculation is class A. Zero compression on this fixed carrier is an exact bounded identity rather than a route-general negative assertion. However, the binding rubric requires every audited_clean verdict to include a structured N1-N8 PASS object, and the restricted packet lacks the route-specific execution evidence needed to construct one validly; the applyable disposition is therefore conditional despite the closed algebraic calculation.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260721-84adf558\", \"judge\": 1, \"rationale\": \"The runner constructs the finite matrices and verifies identities already stated in the note, so the load-bearing calculation is class A. Zero compression on this fixed carrier is an exact bounded identity rather than a route-general negative assertion. However, the binding rubric requires every audited_clean verdict to include a structured N1-N8 PASS object, and the restricted packet lacks the route-specific execution evidence needed to construct one validly; the applyable disposition is therefore conditional despite the closed algebraic calculation.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"Verified finite algebra on the defined (Z_2)^3 corner representation: every single-flip compression vanishes, the symmetric double-flip compression equals J-I, and the stated spectrum and Koide identity follow; physical coefficient selection and charged-lepton interpretation are excluded.\", \"A\", []]}, {\"auditor\": \"codex-judicial-2-20260721-89a83cc5\", \"judge\": 2, \"rationale\": \"The runner constructs the finite matrices and checks identities already stated in the note, so the load-bearing calculation is class A. Zero compression on this fixed carrier is an exact bounded identity rather than a route-general negative assertion. However, the binding rubric requires every audited_clean verdict to include a structured N1-N8 PASS object, and the restricted packet lacks the route-specific execution evidence needed to construct one validly; the applyable disposition is therefore conditional despite the closed algebraic calculation.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"Verified finite algebra on the defined (Z_2)^3 corner representation: every single-flip compression vanishes, the symmetric double-flip compression equals J-I, and the stated spectrum and Koide identity follow; physical coefficient selection and charged-lepton interpretation are excluded.\", \"A\", []]}, {\"auditor\": \"codex-judicial-3-20260721-6c745c2a\", \"judge\": 3, \"rationale\": \"The runner constructs the finite matrices and checks identities already stated in the note, so the load-bearing calculation is class A. Zero compression on this fixed carrier is an exact bounded identity rather than a route-general negative assertion. However, the binding rubric requires every audited_clean verdict to include a structured N1-N8 PASS object, and the restricted packet lacks the route-specific execution evidence needed to construct one validly; the applyable disposition is therefore conditional despite the closed algebraic calculation.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"Verified finite algebra on the defined (Z_2)^3 corner representation: every single-flip compression vanishes, the symmetric double-flip compression equals J-I, and the stated spectrum and Koide identity follow; physical coefficient selection and charged-lepton interpretation are excluded.\", \"A\", []]}, {\"auditor\": \"codex-judicial-4-20260721-b62c69fd\", \"judge\": 4, \"rationale\": \"The runner constructs the finite matrices and checks identities already stated in the note, so the load-bearing calculation is class A. Zero compression on this fixed carrier is an exact bounded identity rather than a route-general negative assertion. However, the binding rubric requires every audited_clean verdict to include a structured N1-N8 PASS object, and the restricted packet lacks the route-specific execution evidence needed to construct one validly; the applyable disposition is therefore conditional despite the closed algebraic calculation.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"Verified finite algebra on the defined (Z_2)^3 corner representation: every single-flip compression vanishes, the symmetric double-flip compression equals J-I, and the stated spectrum and Koide identity follow; physical coefficient selection and charged-lepton interpretation are excluded.\", \"A\", []]}, {\"auditor\": \"codex-judicial-5-20260721-7a592e3b\", \"judge\": 5, \"rationale\": \"The runner constructs the finite operators and verifies identities already stated in the note, so the load-bearing calculation is class A. Zero compression on this fixed carrier is an exact bounded identity, not a route-general negative assertion. The mathematics closes, but the binding rubric requires every audited_clean verdict to include a structured N1-N8 record, which the restricted packet cannot support; audited_conditional is therefore the conservative applyable verdict.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"Verified finite algebra on the defined (Z_2)^3 corner representation: every single-flip compression vanishes, the symmetric double-flip compression equals J-I, and the stated spectrum and Koide identity follow; physical coefficient selection and charged-lepton interpretation are excluded.\", \"A\", []]}]",
   "claim_id": "flavor_native_double_shift_corner_coupling_note_2026-05-30",
-  "claim_scope": "Finite (Z_2)^3 corner-cube projection identities on the Hamming-weight-1 triplet, the spectrum of Y=aI+b(J-I), and the resulting Koide-ratio formula; no physical coefficient, mass hierarchy, or flavor-sector identification was audited.",
+  "claim_scope": "Verified finite algebra on the defined (Z_2)^3 corner representation: every single-flip compression vanishes, the symmetric double-flip compression equals J-I, and the stated spectrum and Koide identity follow; physical coefficient selection and charged-lepton interpretation are excluded.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-16T02:03:00.005721+00:00",
-  "claim_type_provenance": "audited_pending_cross_confirmation",
+  "claim_type_last_reviewed": "2026-07-21T18:13:19.632870+00:00",
+  "claim_type_provenance": "judicial_review",
   "criticality": "critical",
   "cross_confirmation": {
+    "agreement_schema": "audit_tuple_v2",
     "first_audit": {
       "audit_date": "2026-07-16T02:03:00.005721+00:00",
       "audit_invocation_id": "db93c7033c054f82bfb6e09e7257eaa4",
@@ -52,6 +97,7 @@
       "verdict": "audited_clean",
       "verdict_rationale": "The claim is a self-contained finite algebraic calculation, and the runner constructs the eight corners, shift matrices, and triplet projection rather than merely printing the expected result. All four checks pass and directly verify the scoped identities and formulas. The note explicitly excludes any derivation of the coefficient ratio or physical flavor identification, so those unproved statements are outside the audited scope."
     },
+    "mode": "judicial_third_pass",
     "second_audit": {
       "audit_date": "2026-07-21T18:00:53.385604+00:00",
       "audit_invocation_id": "eb3265c8c23247e58f1eefa25ecb2f9a",
@@ -82,24 +128,43 @@
       "verdict": "audited_conditional",
       "verdict_rationale": "N1/N2: the runner exhaustively verifies all three single shifts and the double-shift sum, but it supplies no route-diverse stress-test record for the asserted negative boundary. N3/N5: the load-bearing \u201cis not\u201d statement is supported by zero projection, while the \u201cdoes not\u201d clauses delimit scope; however, the required five-resolution N5 evidence is absent. N4/N6/N8 have no completed prior-witness, partial-closure, or cross-cycle dispositions for this boundary, and N7 lacks an independent steelman resolution. The positive finite identities therefore pass computationally, but the derived negative boundary remains conditional under the binding no-go-discipline policy."
     },
-    "status": "disagreement"
+    "status": "third_confirmed_hybrid",
+    "third_audit": {
+      "audit_date": "2026-07-21T18:13:19.632870+00:00",
+      "audit_invocation_id": "8a78e00086fd4597ad45ef0c0cf12768",
+      "auditor": "codex-judicial-1-20260721-84adf558",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "claim_scope": "Verified finite algebra on the defined (Z_2)^3 corner representation: every single-flip compression vanishes, the symmetric double-flip compression equals J-I, and the stated spectrum and Koide identity follow; physical coefficient selection and charged-lepton interpretation are excluded.",
+      "claim_type": "bounded_theorem",
+      "first_auditor_error": "The first position's mathematical assessment is sound, but its audited_clean tuple supplies no structured no_go_discipline object, contrary to the rubric's explicit clean-verdict requirement and the prior panel's recorded application failures.",
+      "independence": "judicial_review",
+      "judgment_rationale": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The runner constructs the finite matrices and verifies identities already stated in the note, so the load-bearing calculation is class A. Zero compression on this fixed carrier is an exact bounded identity rather than a route-general negative assertion. However, the binding rubric requires every audited_clean verdict to include a structured N1-N8 PASS object, and the restricted packet lacks the route-specific execution evidence needed to construct one validly; the applyable disposition is therefore conditional despite the closed algebraic calculation.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260721-84adf558\", \"judge\": 1, \"rationale\": \"The runner constructs the finite matrices and verifies identities already stated in the note, so the load-bearing calculation is class A. Zero compression on this fixed carrier is an exact bounded identity rather than a route-general negative assertion. However, the binding rubric requires every audited_clean verdict to include a structured N1-N8 PASS object, and the restricted packet lacks the route-specific execution evidence needed to construct one validly; the applyable disposition is therefore conditional despite the closed algebraic calculation.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"Verified finite algebra on the defined (Z_2)^3 corner representation: every single-flip compression vanishes, the symmetric double-flip compression equals J-I, and the stated spectrum and Koide identity follow; physical coefficient selection and charged-lepton interpretation are excluded.\", \"A\", []]}, {\"auditor\": \"codex-judicial-2-20260721-89a83cc5\", \"judge\": 2, \"rationale\": \"The runner constructs the finite matrices and checks identities already stated in the note, so the load-bearing calculation is class A. Zero compression on this fixed carrier is an exact bounded identity rather than a route-general negative assertion. However, the binding rubric requires every audited_clean verdict to include a structured N1-N8 PASS object, and the restricted packet lacks the route-specific execution evidence needed to construct one validly; the applyable disposition is therefore conditional despite the closed algebraic calculation.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"Verified finite algebra on the defined (Z_2)^3 corner representation: every single-flip compression vanishes, the symmetric double-flip compression equals J-I, and the stated spectrum and Koide identity follow; physical coefficient selection and charged-lepton interpretation are excluded.\", \"A\", []]}, {\"auditor\": \"codex-judicial-3-20260721-6c745c2a\", \"judge\": 3, \"rationale\": \"The runner constructs the finite matrices and checks identities already stated in the note, so the load-bearing calculation is class A. Zero compression on this fixed carrier is an exact bounded identity rather than a route-general negative assertion. However, the binding rubric requires every audited_clean verdict to include a structured N1-N8 PASS object, and the restricted packet lacks the route-specific execution evidence needed to construct one validly; the applyable disposition is therefore conditional despite the closed algebraic calculation.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"Verified finite algebra on the defined (Z_2)^3 corner representation: every single-flip compression vanishes, the symmetric double-flip compression equals J-I, and the stated spectrum and Koide identity follow; physical coefficient selection and charged-lepton interpretation are excluded.\", \"A\", []]}, {\"auditor\": \"codex-judicial-4-20260721-b62c69fd\", \"judge\": 4, \"rationale\": \"The runner constructs the finite matrices and checks identities already stated in the note, so the load-bearing calculation is class A. Zero compression on this fixed carrier is an exact bounded identity rather than a route-general negative assertion. However, the binding rubric requires every audited_clean verdict to include a structured N1-N8 PASS object, and the restricted packet lacks the route-specific execution evidence needed to construct one validly; the applyable disposition is therefore conditional despite the closed algebraic calculation.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"Verified finite algebra on the defined (Z_2)^3 corner representation: every single-flip compression vanishes, the symmetric double-flip compression equals J-I, and the stated spectrum and Koide identity follow; physical coefficient selection and charged-lepton interpretation are excluded.\", \"A\", []]}, {\"auditor\": \"codex-judicial-5-20260721-7a592e3b\", \"judge\": 5, \"rationale\": \"The runner constructs the finite operators and verifies identities already stated in the note, so the load-bearing calculation is class A. Zero compression on this fixed carrier is an exact bounded identity, not a route-general negative assertion. The mathematics closes, but the binding rubric requires every audited_clean verdict to include a structured N1-N8 record, which the restricted packet cannot support; audited_conditional is therefore the conservative applyable verdict.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"Verified finite algebra on the defined (Z_2)^3 corner representation: every single-flip compression vanishes, the symmetric double-flip compression equals J-I, and the stated spectrum and Koide identity follow; physical coefficient selection and charged-lepton interpretation are excluded.\", \"A\", []]}]",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "second_auditor_error": "The second position incorrectly classifies checks of stated finite algebraic identities as class C and promotes the fixed-domain equality P S_mu P^T=0 into derived_no_go_boundary; its conditional outcome is retained only for the separate clean-verdict packet requirement.",
+      "sided_with": "hybrid",
+      "verdict": "audited_conditional"
+    }
   },
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 2,
-  "effective_status": "audit_in_progress",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "audit_in_progress",
+  "independence": "judicial_review",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 10.508,
   "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "57cb8d5128f39767d767f80245b8a5afe6069e19607fb5933ade6e3d0b848ec8",
   "note_path": "docs/FLAVOR_NATIVE_DOUBLE_SHIFT_CORNER_COUPLING_NOTE_2026-05-30.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "other: supply an authenticated structured N1-N8 PASS packet satisfying the clean-verdict rule, or repair that rule for positive bounded identities before re-audit.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1334,5 +1399,5 @@
   "runner_path": "scripts/flavor_native_double_shift_corner_coupling_2026_05_30.py",
   "title": "Flavor Native Double-Shift Corner Coupling (Bounded Support)",
   "transitive_descendants": 727,
-  "verdict_rationale": null
+  "verdict_rationale": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The runner constructs the finite matrices and verifies identities already stated in the note, so the load-bearing calculation is class A. Zero compression on this fixed carrier is an exact bounded identity rather than a route-general negative assertion. However, the binding rubric requires every audited_clean verdict to include a structured N1-N8 PASS object, and the restricted packet lacks the route-specific execution evidence needed to construct one validly; the applyable disposition is therefore conditional despite the closed algebraic calculation.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260721-84adf558\", \"judge\": 1, \"rationale\": \"The runner constructs the finite matrices and verifies identities already stated in the note, so the load-bearing calculation is class A. Zero compression on this fixed carrier is an exact bounded identity rather than a route-general negative assertion. However, the binding rubric requires every audited_clean verdict to include a structured N1-N8 PASS object, and the restricted packet lacks the route-specific execution evidence needed to construct one validly; the applyable disposition is therefore conditional despite the closed algebraic calculation.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"Verified finite algebra on the defined (Z_2)^3 corner representation: every single-flip compression vanishes, the symmetric double-flip compression equals J-I, and the stated spectrum and Koide identity follow; physical coefficient selection and charged-lepton interpretation are excluded.\", \"A\", []]}, {\"auditor\": \"codex-judicial-2-20260721-89a83cc5\", \"judge\": 2, \"rationale\": \"The runner constructs the finite matrices and checks identities already stated in the note, so the load-bearing calculation is class A. Zero compression on this fixed carrier is an exact bounded identity rather than a route-general negative assertion. However, the binding rubric requires every audited_clean verdict to include a structured N1-N8 PASS object, and the restricted packet lacks the route-specific execution evidence needed to construct one validly; the applyable disposition is therefore conditional despite the closed algebraic calculation.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"Verified finite algebra on the defined (Z_2)^3 corner representation: every single-flip compression vanishes, the symmetric double-flip compression equals J-I, and the stated spectrum and Koide identity follow; physical coefficient selection and charged-lepton interpretation are excluded.\", \"A\", []]}, {\"auditor\": \"codex-judicial-3-20260721-6c745c2a\", \"judge\": 3, \"rationale\": \"The runner constructs the finite matrices and checks identities already stated in the note, so the load-bearing calculation is class A. Zero compression on this fixed carrier is an exact bounded identity rather than a route-general negative assertion. However, the binding rubric requires every audited_clean verdict to include a structured N1-N8 PASS object, and the restricted packet lacks the route-specific execution evidence needed to construct one validly; the applyable disposition is therefore conditional despite the closed algebraic calculation.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"Verified finite algebra on the defined (Z_2)^3 corner representation: every single-flip compression vanishes, the symmetric double-flip compression equals J-I, and the stated spectrum and Koide identity follow; physical coefficient selection and charged-lepton interpretation are excluded.\", \"A\", []]}, {\"auditor\": \"codex-judicial-4-20260721-b62c69fd\", \"judge\": 4, \"rationale\": \"The runner constructs the finite matrices and checks identities already stated in the note, so the load-bearing calculation is class A. Zero compression on this fixed carrier is an exact bounded identity rather than a route-general negative assertion. However, the binding rubric requires every audited_clean verdict to include a structured N1-N8 PASS object, and the restricted packet lacks the route-specific execution evidence needed to construct one validly; the applyable disposition is therefore conditional despite the closed algebraic calculation.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"Verified finite algebra on the defined (Z_2)^3 corner representation: every single-flip compression vanishes, the symmetric double-flip compression equals J-I, and the stated spectrum and Koide identity follow; physical coefficient selection and charged-lepton interpretation are excluded.\", \"A\", []]}, {\"auditor\": \"codex-judicial-5-20260721-7a592e3b\", \"judge\": 5, \"rationale\": \"The runner constructs the finite operators and verifies identities already stated in the note, so the load-bearing calculation is class A. Zero compression on this fixed carrier is an exact bounded identity, not a route-general negative assertion. The mathematics closes, but the binding rubric requires every audited_clean verdict to include a structured N1-N8 record, which the restricted packet cannot support; audited_conditional is therefore the conservative applyable verdict.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"Verified finite algebra on the defined (Z_2)^3 corner representation: every single-flip compression vanishes, the symmetric double-flip compression equals J-I, and the stated spectrum and Koide identity follow; physical coefficient selection and charged-lepton interpretation are excluded.\", \"A\", []]}]"
 }

@@ -1,0 +1,68 @@
+{
+  "status": "cycle544-fixed-chain-rank-positive-locality-negative-dynamic-pump-partial",
+  "authority": "none",
+  "audit": "unset",
+  "runner_sha256": "343678a4f109906529c1982672f180afaf90605950766f2acafed480a930a365",
+  "note_sha256": "9b4d06fc15bca6f51fd88bea129f78d747b0b8685fcd724fb6a30880e47b5726",
+  "tests_passed": 11,
+  "tests_total": 11,
+  "pass": true,
+  "elapsed_seconds_internal": 204.77259683294687,
+  "timed_wall_seconds": 207.19,
+  "maximum_RSS_bytes": 150339584,
+  "process_swap_count": 0,
+  "fixed_chain": {
+    "train_held_lengths": [5, 6],
+    "total_M2_L5_L6": [2774, 4782],
+    "added_chain_M2_L5_L6": [24, 30],
+    "stabilizer_rank_L5_L6": [1900, 3271],
+    "code_exponent_L5_L6": [874, 1511],
+    "both_matter_parities_nonempty": true,
+    "matter_gauge_parity_equal": true,
+    "maximum_chain_check_support_M2": 10,
+    "maximum_chain_check_physical_L1_diameter": 20,
+    "site_collisions": 0,
+    "proper_cubic_frames": 24,
+    "frame_products": 576,
+    "frame_or_incidence_failures": 0
+  },
+  "locality_witness": {
+    "maximum_one_chain_added_X_L5_L6": [4, 5],
+    "unique_open_chain_solution_L5_L6": [4, 5],
+    "total_added_X_witness_L5_L6": [15, 18],
+    "maximum_dressed_local_support_M2_L5_L6": [38, 40],
+    "maximum_dressed_local_physical_L1_diameter_L5_L6": [72, 88],
+    "uniform_constant_dressing_bound_established": false
+  },
+  "dynamic_pump": {
+    "six_reset_syndrome_tokens": 6,
+    "postselection_used": false,
+    "one_sweep_all_plus_convergence": true,
+    "pump_channel_idempotent": true,
+    "coherent_pre_reset_inverse_exists": true,
+    "terminal_reset_is_irreversible": true,
+    "membrane_weight_L5_L6": [25, 36],
+    "maximum_one_way_route_L5_L6": [76, 108],
+    "non_nearest_neighbor_route_edges": 0,
+    "target_transparency_commutator_failures_L5_L6": [300, 432],
+    "target_preserving_affine_solution_per_axis": false,
+    "lawful_domain": "Cycle532 bounded-local rough code"
+  },
+  "inherited_target": {
+    "Cycle537_replay_passed": true,
+    "full_Fock_Gamma_P_pass": true,
+    "mass_contact_and_seam_pass": true,
+    "both_matter_parities": true
+  },
+  "boundary": {
+    "fixed_hypergraph_rank_wall_closed": true,
+    "fixed_hypergraph_covariance_wall_closed": true,
+    "fixed_hypergraph_uniform_dressing_wall_closed": false,
+    "dynamic_sector_convergence_closed": true,
+    "target_transparent_product_input_preparation_closed": false,
+    "full_physical_compiler_closed": false,
+    "shared_substrate_obstruction": false,
+    "minimum_content_theorem": false,
+    "axiom_pressure": false
+  }
+}

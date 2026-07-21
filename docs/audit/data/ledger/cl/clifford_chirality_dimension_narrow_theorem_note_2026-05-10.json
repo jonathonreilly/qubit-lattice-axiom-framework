@@ -824,6 +824,101 @@
         "total_pass": 25
       },
       "verdict_rationale": "The volume-element identity, even-n chirality construction, and Clifford-basis necessity argument are algebraically correct, and the Z^3 specialization follows under the explicitly conditional total-algebra hypothesis. However, the odd-n nonexistence result and exclusion of even d_t are substantive negative assertions. Because the current-cycle runner does not provide the mandatory no-go stress-test and resolution evidence, the full iff claim cannot receive audited_clean certification in this packet."
+    },
+    {
+      "archived_at": "2026-07-21T17:14:03.714581+00:00",
+      "audit_date": "2026-07-21T16:58:14.825385+00:00",
+      "audit_invocation_history": [
+        "593d2bb7896248a3960de136fca7bb68"
+      ],
+      "audit_invocation_id": "593d2bb7896248a3960de136fca7bb68",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 0,
+            "B": 0,
+            "C": 1,
+            "D": 0
+          },
+          "decoration_candidate": false,
+          "dominant_class": "C",
+          "exists": true,
+          "runner_path": "scripts/frontier_clifford_chirality_dimension_narrow.py"
+        },
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 10.508,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "c7fcaca394bf2438a6e64b84f8b26130d485232c1f5416ee74ceb76832e88656",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_clifford_chirality_dimension_narrow.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "0fcf04fd632a7c7166da66db1aac03096be839a97ea9a7af03082eecf3fa2fe9",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "0fcf04fd632a7c7166da66db1aac03096be839a97ea9a7af03082eecf3fa2fe9",
+        "runner_path": "scripts/frontier_clifford_chirality_dimension_narrow.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 727
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-B-20260721-7182114d",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic derivation is sound, but clean closure is withheld because the odd-n nonexistence assertion lacks the mandatory current-cycle N1, N5, and N7 no-go-certification evidence.",
+      "claim_scope": "Standalone complex Clifford-algebra parity theorem: an internal chirality involution in Cl(p,q) exists iff p+q is even; conditionally taking the total algebra as Cl(d_s,d_t), the accepted Z^3 spatial premise d_s=3 implies d_t is odd.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-21T16:58:14.825385+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "`gamma_S gamma_mu = (-1)^{r - 1_{mu in S}} gamma_mu gamma_S`, so simultaneous anticommutation with every generator is possible only for the full volume monomial when `n` is even.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "no_go_result"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: add a current-cycle audit block containing five distinct N1 attack-route probes, the five required N5 resolution-class lines for every authenticated negative-phrase group, and an independent N7 resolution surface, then re-run this row.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 25,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 25
+      },
+      "verdict_rationale": "The Clifford-basis parity proof correctly establishes the volume-element identity, even-dimensional chirality involution, and conditional d_s=3 parity consequence. The note also asserts a substantive odd-dimensional no-go result, while the supplied runner lacks the mandatory five-resolution rhetoric probes and sufficient independently evidenced attack-route coverage for a clean verdict. N1 has fewer than five live distinct route classes, N2 has only the single internal-algebra exclusion boundary, N3 reveals no load-bearing hidden admission, and N4 has no prior-ruled residual witness. N5 lacks the prescribed resolution lines, N6 exposes no relevant indexed closure candidate, N7 lacks an independent resolution surface naming the boundary, and N8's indexed echoes are unrelated to this Clifford-parity scope."
     }
   ],
   "prose_corrections": [],

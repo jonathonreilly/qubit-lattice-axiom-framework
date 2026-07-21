@@ -16,12 +16,12 @@ file per claim), summarized in
 
 | Metric | Value |
 |---|---:|
-| Retained positive rows | 84 |
+| Retained positive rows | 85 |
 | Retained bounded rows | 308 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 16 |
 
-## Retained positive rows (84)
+## Retained positive rows (85)
 
 Sorted by load-bearing graph score (descending).
 
@@ -59,6 +59,7 @@ Sorted by load-bearing graph score (descending).
 - [`staggered_graph_portability_note`](../../docs/STAGGERED_GRAPH_PORTABILITY_NOTE.md) — score 11.170; audited 2026-05-05T06:31:24.580329+00:00
 - [`cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19`](../../docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md) — score 10.992; audited 2026-05-29T02:03:27.054059+00:00
 - [`abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18`](../../docs/ABJ_P_COMP_SCALE_FREE_SINGLET_COMPLETION_CLASSIFICATION_NOTE_2026-06-18.md) — score 10.926; audited 2026-07-20T23:42:02.126081+00:00
+- [`circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02`](../../docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md) — score 10.486; audited 2026-07-21T16:40:14.832259+00:00
 - [`eta_holonomy_base_flux_scope_boundary_note_2026-06-06`](../../docs/ETA_HOLONOMY_BASE_FLUX_SCOPE_BOUNDARY_NOTE_2026-06-06.md) — score 10.096; audited 2026-07-18T06:29:49.810608+00:00
 - [`scalar_3plus1_temporal_ratio_note`](../../docs/SCALAR_3PLUS1_TEMPORAL_RATIO_NOTE.md) — score 8.822; audited 2026-05-23T13:54:19.575626+00:00
 - [`koide_cone_three_form_equivalence_narrow_theorem_note_2026-05-02`](../../docs/KOIDE_CONE_THREE_FORM_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-02.md) — score 8.781; audited 2026-05-05T11:37:06.412053+00:00

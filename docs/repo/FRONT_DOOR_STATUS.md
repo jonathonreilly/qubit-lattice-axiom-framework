@@ -32,9 +32,9 @@ Owner-approval history for axioms and primitives:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3850 |
-| Applied audit verdicts | 462 |
-| Retained-grade rows, including boxed decorations | 408 |
-| Retained positive theorems | 84 |
+| Applied audit verdicts | 463 |
+| Retained-grade rows, including boxed decorations | 409 |
+| Retained positive theorems | 85 |
 | Retained no-go rows | 0 |
 | Retained bounded rows | 308 |
 | Boxed decorations under retained parents | 16 |
@@ -54,10 +54,10 @@ Full audit-ratified row list: [`docs/repo/RETAINED_BACKBONE.md`](RETAINED_BACKBO
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 3058 |
-| Ready rows | 642 |
+| Total pending rows | 3057 |
+| Ready rows | 641 |
 | Cycle-break targets | 59 |
-| Critical pending | 660 |
+| Critical pending | 659 |
 | High pending | 371 |
 | Medium pending | 839 |
 | Leaf pending | 1188 |
@@ -110,7 +110,7 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 | Lane rows already in actual ready top-10 | 2 |
 | Lane rows added since prior pass | 0 |
 | Lane rows removed since prior pass | 0 |
-| Non-lane rows deferred by simulated interleave | 116 |
+| Non-lane rows deferred by simulated interleave | 115 |
 
 Admitted ids currently absent from lane candidates:
 - `bridge_gap_action_form_uniqueness_no_go_note_2026-05-06`
@@ -139,8 +139,8 @@ Hypothetical next dispatch top-10 under OFF-ONLY banded interleave (ready rows, 
 - 10. sim `abj_epsilon_index_square_block_no_go_note_2026-05-30` / actual `flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15` ← differs
 
 Lane rows advanced by the simulated interleave (positions gained; complete list):
-- `quark_route2_exact_readout_map_note_2026-04-19`: +51
-- `universal_gr_lorentzian_global_atlas_closure_note`: +51
+- `quark_route2_exact_readout_map_note_2026-04-19`: +50
+- `universal_gr_lorentzian_global_atlas_closure_note`: +50
 - `planck_boundary_orientation_incidence_no_go_note_2026-04-30`: +45
 - `planck_parent_source_hidden_character_no_go_note_2026-04-24`: +40
 - `koide_q_delta_linking_relation_theorem_note_2026-04-20`: +39
@@ -305,7 +305,6 @@ Non-lane rows deferred by the simulated interleave (positions lost; complete lis
 - `post_record_count_probability_firewall_2026-06-06`: -2
 - `koide_mru_demotion_note_2026-04-20`: -2
 - `observable_principle_p1_exponent_fixing_irreducibility_narrow_note_2026-05-31`: -2
-- `circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02`: -2
 - `cpt_squared_is_identity_theorem_note_2026-05-02`: -2
 - `koide_a1_loop_final_status_2026-04-22`: -2
 - `cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10`: -2

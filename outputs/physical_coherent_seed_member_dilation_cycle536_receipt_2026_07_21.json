@@ -1,0 +1,81 @@
+{
+  "status": "finite coherent dilation; not stochastic dynamics or actualization",
+  "authority": "none",
+  "audit": "unset",
+  "runner_sha256": "911d500b42d6c45644ad6d0a9f50a79572380e7b01592a6bf66a842c3c4fcf2f",
+  "note_sha256": "e15944633127890fe27cb52193960a28d9860212d5d7aafd70f15eef2e987457",
+  "tests_passed": 8,
+  "tests_failed": 0,
+  "pass": true,
+  "elapsed_seconds_internal": 73.80988366610836,
+  "timed_wall_seconds": 193.34,
+  "maximum_RSS_bytes": 709558272,
+  "process_swap_count": 0,
+  "composition": {
+    "Cycle531_binding_head_K_current_columns": 1200,
+    "preparation_member_type_failures": 0,
+    "Cycle531_midpoint_failures": 0,
+    "occurrence_failures": 0,
+    "inverse_failures": 0,
+    "terminal_scratch_failures": 0,
+    "source_or_seed_mutations": 0,
+    "mismatched_seed_binding_occurrences": 0
+  },
+  "derived_dilation": {
+    "retained_seed_M2": 5,
+    "total_port_composite_M2": 206,
+    "derived_seed_diagonal_equals_operational_q": true,
+    "maximum_q_diagonal_residual": 5.551115123125783e-17,
+    "actual_member_read": null,
+    "p_equals_q_stochastic_kernel_derived": false,
+    "Born_derived": false,
+    "sampler": null,
+    "host_randomness_calls": 0
+  },
+  "recurrence_and_independence": {
+    "retained_seed_period": 1,
+    "echo_head_period": 5,
+    "echo_archive_period": 10,
+    "exact_ten_step_return": true,
+    "actual_empirical_strings": null,
+    "fresh_product_independence_derived": false,
+    "same_seed_vs_fresh_product_TV": [
+      0.7467648282773651,
+      0.6942593037478927,
+      0.9199590713745073,
+      0.972585710332243
+    ],
+    "new_independent_event_requires": "fresh independently prepared branch/seed bath or a reset/renewal law"
+  },
+  "routing_and_covariance": {
+    "proper_cubic_frames": 24,
+    "frame_tests": 1800,
+    "frame_failures": 0,
+    "recurrent_gates": 176,
+    "prepare_recur_unprepare_gates": 186,
+    "routing_adjacent_SWAPS": 21603,
+    "nearest_neighbor_primitives": 129804,
+    "maximum_displayed_support_M2": 3,
+    "routed_logical_failures": 0,
+    "routed_inverse_failures": 0,
+    "two_site_Toffoli_decomposition_supplied": false,
+    "routed_schedule_sha256": "ad73383c7cd2f10adbc61b266b0570d50f00cb80f56dc95287b540d36f665991"
+  },
+  "deletions": {
+    "witnesses": 48,
+    "unwitnessed": 0,
+    "basis_residual": 1.4142135623730951,
+    "retained_seed_deletion_rejected": true
+  },
+  "boundary": {
+    "coherent_premeasurement_dilation_closed": true,
+    "stochastic_dynamics_closed": false,
+    "branch_actualization_closed": false,
+    "fresh_bath_reset_and_independence_closed": false,
+    "framework_Record": false,
+    "realized_history": false,
+    "shared_substrate_obstruction": false,
+    "minimum_content_theorem": false,
+    "axiom_pressure": false
+  }
+}

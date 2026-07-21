@@ -1,0 +1,97 @@
+{
+  "status": "cycle546-current-selected-carried-source-prediction-bridge",
+  "authority": "none",
+  "audit": "unset",
+  "runner_sha256": "2564dedf95509a51a599c99baea8414a48c7b7fcf6b45c17ed1335a01417decb",
+  "note_sha256": "d8f33d91f14578b8c9d0efb24260283c8bbc32532564b66cddd4a9e2f7a858e0",
+  "tests_passed": 9,
+  "tests_total": 9,
+  "pass": true,
+  "elapsed_seconds_internal": 85.94163420901168,
+  "timed_wall_seconds": 190.58,
+  "maximum_RSS_bytes_internal": 984498176,
+  "maximum_RSS_bytes_timed": 1031733248,
+  "process_swap_count": 0,
+  "current_adapter": {
+    "complete_two_cell_Fock_columns": 4096,
+    "NULL_columns": 2048,
+    "PLUS_columns": 1024,
+    "MINUS_columns": 1024,
+    "continuity_or_constraint_failures": 0,
+    "lawful_words_EDGE_PLUS_MINUS": {
+      "NULL": [0, 0, 0],
+      "PLUS": [1, 1, 0],
+      "MINUS": [1, 0, 1]
+    }
+  },
+  "fixed_tensor_circuit": {
+    "train_held_lengths": [5, 6],
+    "track_tensor_qubits_L5_L6": [5, 7],
+    "complete_basis_dimensions_L5_L6": [256, 1024],
+    "permutation_unique_rows_L5_L6": [256, 1024],
+    "off_code_inverse_failures": 0,
+    "lawful_sparse_vs_tensor_failures": 0,
+    "invalid_current_words_flagged_by_local_code_constraint": 5,
+    "double_current_words_have_defined_reversible_action": true,
+    "permutation_sha256_L5": "cbc560c1d74d3ee433ebaf855d17669cf489e77f463792272a374854d39d8a9b",
+    "permutation_sha256_L6": "f74c50c04a4003bdb30806f3dd064a4b97c45ec20d7b4d4fa2c9b7f4efa029aa",
+    "fixed_controlled_Fredkins_L5_L6": [4, 6],
+    "bare_one_two_M2_calls_L5_L6": [68, 102],
+    "host_selected_engine_branches": 0,
+    "fixed_engine_role_argument": "A_to_C"
+  },
+  "physical_intertwiner": {
+    "encoding_shape_L5_L6": [[261328, 988], [261328, 988]],
+    "Gram_raw_maximum": 7.771561172376096e-16,
+    "coherent_current_EG_residual": 3.039243645234439e-14,
+    "logical_inverse_residual": 2.679498340154846e-15,
+    "physical_inverse_residual": 3.936521516524749e-14,
+    "maximum_EG_inverse_norm_leakage_residual": 1.4366285938649526e-13,
+    "terminal_external_track_weight": 0.0
+  },
+  "prediction_replay": {
+    "Cycle434_maximum_state_residual": 7.174143862652868e-17,
+    "PLUS_receiver_response": 0.00013490525789067813,
+    "MINUS_receiver_response": 0.00013490525789067805,
+    "receiver_response_reciprocity_residual": 8.131516293641283e-20,
+    "PLUS_receiver_x_coordinate": 0.000153739423,
+    "MINUS_receiver_x_coordinate": -0.000153739423,
+    "receiver_odd_vector_residual": 3.492517279405034e-18,
+    "source_backreaction_odd_vector_residual": 3.2812479117024205e-17,
+    "new_parameter_fit_count": 0,
+    "Cycle420_type_match_claimed": false,
+    "Cycle432_same_apparatus_claimed": false
+  },
+  "controls": {
+    "proper_cubic_frames": 24,
+    "endpoint_reversing_frames": 12,
+    "track_frame_failures": 0,
+    "maximum_rotated_odd_vector_residual": 3.4925172794050346e-18,
+    "current0_full_apparatus_residual": 0.0,
+    "deleted_token_current_emitter_receiver_or_transport_response": 0.0,
+    "contact_deleted_receiver": 0.00012992082665171258,
+    "mass_fixture": 0.4534056541748851,
+    "receiver_contact_nontrivial_columns": 645,
+    "upstream_contact_nontrivial_columns": 4047
+  },
+  "resources": {
+    "Cycle526_selected_current_patch_M2": 106,
+    "Cycle429_matter_role_union_M2": 118,
+    "Cycle429_internal_reservoir_field_M2": 21,
+    "maximum_new_Y_track_M2": 5,
+    "conservative_additive_total_M2": 250,
+    "maximum_new_gate_support_after_supplied_Toffoli_decomposition_M2": 2
+  },
+  "boundary": {
+    "Cycle526_to_Cycle434_prediction_bridge_closed": true,
+    "primitive_recoil_source_compiler_closed": false,
+    "current_correlated_input_preparation_closed": false,
+    "Cycle539_to_Cycle540_carrier_transducer_closed": false,
+    "Cycle420_named_moving_source_surface_closed": false,
+    "physical_energy_source_or_gravity_derived": false,
+    "Record_or_Born_law_derived": false,
+    "shared_substrate_obstruction": false,
+    "minimum_content_theorem": false,
+    "axiom_pressure": false
+  }
+}

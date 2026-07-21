@@ -187,6 +187,172 @@ class SchemaRecoveryTest(unittest.TestCase):
         self.assertEqual(reentries, {})
         compute_targets.assert_not_called()
 
+    def test_two_batches_exclude_reset_row_and_continue_other_seats(self):
+        def row(
+            cid: str,
+            *,
+            audit_status: str = "unaudited",
+            criticality: str | None = None,
+            cross_status: str | None = None,
+            previous_audits: list[dict] | None = None,
+            effective_status: str = "ready_for_audit",
+        ) -> dict:
+            return {
+                "claim_id": cid,
+                "note_path": f"docs/nonexistent-{cid}.md",
+                "claim_type": "positive_theorem",
+                "criticality": criticality,
+                "audit_status": audit_status,
+                "effective_status": effective_status,
+                "cross_confirmation": (
+                    {"status": cross_status} if cross_status else None
+                ),
+                "deps": [],
+                "previous_audits": previous_audits or [],
+            }
+
+        blocked_before = row("blocked")
+        other_before = row("other")
+        second_before = row(
+            "second",
+            audit_status="audit_in_progress",
+            criticality="critical",
+            cross_status="awaiting_second",
+        )
+        first_rows = {
+            item["claim_id"]: item
+            for item in (blocked_before, other_before, second_before)
+        }
+        blocked_after = row(
+            "blocked",
+            previous_audits=[
+                {
+                    "audit_status": "audited_conditional",
+                    "invalidation_reason": "no_go_discipline_packet_missing",
+                }
+            ],
+        )
+        first_after = dict(first_rows, blocked=blocked_after)
+        second_after = {
+            "blocked": blocked_after,
+            "other": row(
+                "other",
+                audit_status="audited_clean",
+                effective_status="retained",
+            ),
+            "second": row(
+                "second",
+                audit_status="audited_clean",
+                criticality="critical",
+                effective_status="retained",
+            ),
+        }
+        launched_by_batch: list[list[tuple[str, int]]] = []
+
+        def run_batch(
+            workdir: Path,
+            exclusion_file: Path,
+            before: dict[str, dict],
+            after: dict[str, dict],
+            max_workers: int,
+        ) -> int:
+            launched: list[tuple[str, int]] = []
+            launched_by_batch.append(launched)
+
+            def launch_worker(selected, _rows, pass_no, *_args):
+                launched.append((selected["claim_id"], pass_no))
+                return {
+                    "cid": selected["claim_id"],
+                    "pass": pass_no,
+                    "row": selected,
+                }
+
+            def apply_serialized(jobs, report, _retries):
+                for job in jobs:
+                    report.append(
+                        {
+                            "cid": job["cid"],
+                            "pass": job["pass"],
+                            "result": "audited_conditional",
+                            "commit": f"commit-{job['cid']}",
+                        }
+                    )
+                return True, set(), set(), []
+
+            argv = [
+                "orchestrate_audit_batch.py",
+                "--claims",
+                "blocked,other,second",
+                "--max-workers",
+                str(max_workers),
+                "--rounds",
+                "1",
+                "--campaign-quarantine-file",
+                str(exclusion_file),
+            ]
+            lock = mock.Mock()
+            with mock.patch.object(sys, "argv", argv), mock.patch.dict(
+                os.environ,
+                {"AUDIT_BATCH_WORKDIR": str(workdir)},
+            ), mock.patch.object(
+                batch, "acquire_exclusive_drain_lock", return_value=lock
+            ), mock.patch.object(
+                batch, "clean_main_error", return_value=None
+            ), mock.patch.object(
+                batch, "load_rows", side_effect=[before, after]
+            ), mock.patch.object(
+                batch, "source_requires_forensic", return_value=False
+            ), mock.patch.object(
+                batch, "launch_worker", side_effect=launch_worker
+            ), mock.patch.object(
+                batch, "wait_workers"
+            ), mock.patch.object(
+                batch, "start_progress_ticker"
+            ), mock.patch.object(
+                batch, "maybe_progress_summary"
+            ), mock.patch.object(
+                batch, "apply_serialized", side_effect=apply_serialized
+            ):
+                result = batch.main()
+            lock.close.assert_called_once_with()
+            return result
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            exclusion_file = root / "campaign-row-exclusions.jsonl"
+            first_rc = run_batch(
+                root / "batch-1",
+                exclusion_file,
+                first_rows,
+                first_after,
+                max_workers=1,
+            )
+            records_after_first = [
+                json.loads(line)
+                for line in exclusion_file.read_text(encoding="utf-8").splitlines()
+            ]
+            second_rc = run_batch(
+                root / "batch-2",
+                exclusion_file,
+                first_after,
+                second_after,
+                max_workers=2,
+            )
+
+        self.assertEqual((first_rc, second_rc), (0, 0))
+        self.assertEqual(launched_by_batch[0], [("blocked", 1)])
+        self.assertNotIn(("blocked", 1), launched_by_batch[1])
+        self.assertEqual(
+            launched_by_batch[1],
+            [("other", 1), ("second", 2)],
+        )
+        self.assertEqual(len(records_after_first), 1)
+        self.assertEqual(records_after_first[0]["claim_id"], "blocked")
+        self.assertEqual(
+            records_after_first[0]["invalidation_reason"],
+            "no_go_discipline_packet_missing",
+        )
+
     def test_science_handoff_requires_valid_actionable_verdict(self):
         job = {
             "cid": "row",

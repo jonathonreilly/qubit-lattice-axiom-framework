@@ -278,6 +278,93 @@
         "total_pass": 5
       },
       "verdict_rationale": "Issue: the runner establishes finite-dimensional matrix identities but not the physical identification of their spectral projectors with the actual einselected partition, and its Born-weight calculation does not derive Born\u2192r=1 or block-counting\u2192r=1/2. Why this blocks: K-reality, a non-scalar monitoring interaction, the decoherence bridge, and the weight-to-r normalization remain supplied physical content rather than consequences of the cited authorities. Repair target: add retained derivations of the monitoring/einselection and normalization bridges, state the non-scalar hypothesis, and make the runner derive rather than juxtapose the block weights and r assignments. Claim boundary until fixed: the algebra supports singlet/doublet degeneracy and no-op dephasing under the stated assumptions; N1 has fewer than five evidenced alternative mechanisms, N2 does not fully establish independence of the two residual inputs, N3 identifies those inputs as explicit assumptions, N4 has no one-hop witness to match, N5 lacks five-resolution tests, N6 supplies no demonstrated partial closure, N7 leaves the physical-monitoring steelman unresolved, and N8 lacks completed current-scope dispositions."
+    },
+    {
+      "archived_at": "2026-07-21T19:09:26.935846+00:00",
+      "audit_date": "2026-07-21T19:04:25.620489+00:00",
+      "audit_invocation_history": [
+        "988cc8fa0d8b46d9932fbe61e342cc61"
+      ],
+      "audit_invocation_id": "988cc8fa0d8b46d9932fbe61e342cc61",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 0,
+            "B": 0,
+            "C": 6,
+            "D": 0
+          },
+          "decoration_candidate": false,
+          "dominant_class": "C",
+          "exists": true,
+          "runner_path": "scripts/flavor_einselection_2sector_modulo_kreality_2026_06_02.py"
+        },
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 15.543,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "c7fcaca394bf2438a6e64b84f8b26130d485232c1f5416ee74ceb76832e88656",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/flavor_einselection_2sector_modulo_kreality_2026_06_02.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "c558fc452e6788916ab0f8d625f8cecb011d5157db090b0785a37cb82bbd84f2",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "c558fc452e6788916ab0f8d625f8cecb011d5157db090b0785a37cb82bbd84f2",
+        "runner_path": "scripts/flavor_einselection_2sector_modulo_kreality_2026_06_02.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 745
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-B-20260721-6d65f016",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic partition and block-diagonal no-op subclaims close, but the restricted packet neither derives K-reality/nontrivial monitoring nor supplies a physical bridge mapping Born block weights to the parameter r.",
+      "claim_scope": "The conditional C3/K-real singlet-doublet pointer reduction, the block-dephasing no-op on r, and the Born-versus-block-counting weighting distinction.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-21T19:04:25.620489+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "A C\u2083-invariant and K-real monitored Hermitian observable lies in span_R{I,C+C\u00b2}, whose nontrivial component has eigenvalues {2,-1,-1}, isolating the singlet while leaving the doublet degenerate.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale",
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive and retain the physical K-reality/nontrivial-monitoring selector and an explicit mapping from Born block weights to r, then replace the finite-r check with a symbolic universal check.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The commutant/eigenspace algebra is sound: a real Hermitian circulant cannot split the conjugate doublet, and C3 invariance gives P0HP1=0. The runner's five passes are algebraic checks, although B1 samples finitely many r values and B2 computes dimension weights and Q values without deriving their identification with r=1. The result therefore remains conditional on the unprovided K-reality and state-to-r bridge, while its negative conclusions are bounded to the stated C3/K-real matrix family."
     }
   ],
   "prose_corrections": [],

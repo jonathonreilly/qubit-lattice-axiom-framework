@@ -1,36 +1,36 @@
 ===== runner cache v1 =====
 runner: scripts/kcpt_dirac_even_algebra_reach_character_cp_charge_2026_07_21.py
-runner_sha256: bcc7ee850f079e0de6f2e73fa388e0ee646b89cd6219ba2e25c32ec8f20f5773
-input_fingerprint_sha256: c5fe18ba1a82f5407b275e0be4cee8e43b6adca831537432206bc3fbe7af1181
+runner_sha256: 22778ed41a0bee7b9b856cd604836500fe7dbaa16986c82d008e2a41ab00f969
+input_fingerprint_sha256: c43d715f4fe424b09516f2b0d3226fe4a8f2b3a9451732f73d6aaeed785c0f57
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 25.64
+elapsed_sec: 29.20
 status: ok
 ----- stdout -----
 
 === KCPT Unit 18: even lattice-Dirac algebra <D2,J_full>^H = C[M] reaches 4 of the 6 commutant dims; the CP-charge is character-level ===
 PASS G-CONSTRUCT-J2 - J_full^2 = -I_64 (total complex structure)
 PASS G-CONSTRUCT-M - M = D2^2 spectrum multiplicities {0:8, -4:24, -8:24, -12:8}
-PASS G-CONSTRUCT-SIX - six constituents ranks [8,8,12,12,12,12], orthogonal Hermitian idempotents summing to I
-PASS G-GROUP - |G_amb| = 768, |H = <G_amb, S_eps>| = 1536
-PASS G-T1-CHARORTHO - six-character Gram = I_6 (all irreducible & inequivalent) => dim End_H(C^64) = 6
+PASS G-CONSTRUCT-SIX - six H-invariant constituents ranks [8,8,12,12,12,12], orthogonal Hermitian idempotents summing to I
+PASS G-GROUP - |G_amb| = 768 and H = G_amb disjoint-union S_eps G_amb has 1536 unique elements (index 2)
+PASS G-T1-CHARORTHO - computed six-character Gram = I_6 (max residual 3.33e-16) => dim End_H(C^64) = 6
 PASS G-T2-CMRANK - rank{v(I), v(M), v(M^2), v(M^3)} = 4 = dim C[M] (M has four distinct shells)
-PASS G-T2-EVENREACH - rank{C[M] + all even words deg<=6} = 4 => the H-invariant even Dirac algebra equals C[M]
+PASS G-T2-EVENREACH - 85 even words deg<=6 add no rank to C[M]; [D2,J_full]=0 and D2 J_full in C[M] reduce every even word
 PASS G-T2-EVENBLOCK - every even word equals its block-scalar reconstruction (H-invariant); max residual 2.12e-11
-PASS G-T2-PROOT - P := D2 J_full is symmetric with P^2 = -M (so P = -sqrt(-M) in C[M]); self-contained via [D2,J_full]=0
-PASS G-REJ-D2ODD - S_eps D2 S_eps = -D2 (D2 is S_eps-odd => not H-invariant)
-PASS G-REJ-JODD - S_eps J_full S_eps = -J_full (J_full is S_eps-odd => not H-invariant)
-PASS G-REJ-PEVEN - S_eps (D2 J_full) S_eps = +D2 J_full (even product is S_eps-even -- the grading that selects even words)
+PASS G-T2-PROOT - P := D2 J_full = -sqrt(-M) from the rebuilt shell projectors (root residual 3.05e-16); P symmetric, P^2=-M
+PASS G-REJ-D2ODD - D2 is G_amb-invariant but S_eps-odd and has nonzero 12+/12- off-block 1.276 => not H-invariant
+PASS G-REJ-JODD - J_full is G_amb-invariant but S_eps-odd and has nonzero 12+/12- off-block 0.638 => not H-invariant
+PASS G-REJ-PEVEN - nonzero D2 J_full is S_eps-even and H-invariant (generator commutator residual 2.22e-16)
 PASS G-T3-MSHELLS - constituent M-shells (multiset) = {0, -4, -4, -8, -8, -12}
 PASS G-T3-DEGENPAIRS - CP-pair share M-shell -4; two induced-12 share M-shell -8; two induced-8 M-distinct (0 vs -12)
 PASS G-GAP - dim End_H - dim C[M] = 2 = number of intra-shell (M-degenerate) constituent pairs
-PASS G-T4-ISOEQ - each isotypic projector (d/|H|) sum_h conj(chi) rho(h) equals its constituent projector
+PASS G-T4-ISOEQ - all six character projectors (d/|H|) sum_h conj(chi) rho(h) reconstruct their constituent projectors; max residual 1.76e-14
 PASS G-T4-RANK5 - adjoining the CP isotypic projector raises reach 4 -> 5
 PASS G-T4-RANK6 - adjoining the induced-12 isotypic projector raises reach 5 -> 6 = dim End_H
 PASS G-T4-SEPSPLIT - CP isotypic charge separates {12+,12-}: block-scalar 1 on one, 0 on its chi_sgn-twin
 PASS G-T4-SEPIND - induced-12 isotypic charge separates the two M-shell(-8) constituents: 1 vs 0
-PASS G-T5-MCPEVEN - S_eps M S_eps = M (M is CP-even => every f(M) is blind to the chi_sgn twist)
-PASS G-T5-TWIST - chi_{cp0}(h) = chi_sgn(h) * chi_{cp1}(h) for all h: the CP-pair are chi_sgn-twists
+PASS G-T5-MCPEVEN - S_eps M S_eps = M (computed residual 0.00e+00); f(M) is constant on the twist-pair's common shell
+PASS G-T5-TWIST - max_h |chi_12+(h)-chi_sgn(h)chi_12-(h)| = 3.55e-15; the central projector is character-sensitive, not chi_sgn-odd
 PASS G-PIN-U14 - U14 six-constituent decomposition sentence present in the U14 note
 PASS G-PIN-U16 - U16 chi_sgn-covariance sentence present in the U16 note
 PASS G-PIN-SELF - self-note dependency inventory: exactly U14 + U16 linked (2 edges), U17 backticked (0)

@@ -26,8 +26,9 @@ C^64 = 8 + 8 + 12 + 12 + 12^+ + 12^- (Unit 14).  It then forms P := D2 @ J_full 
       W-source that splits) BOTH sit at m=1 (lambda=-2) -- RADIUS-DEGENERATE; the two
       induced 12's (rank-6 W-source) BOTH sit at m=2 (lambda=-2sqrt2); the two induced 8's
       (rank-4 W-source) occupy the two EXTREME shells {m=0 (kernel), m=3 (top)}.  So the
-      Dirac radius does NOT separate 12^+ from 12^- -- CP grading and radius grading are
-      independent quantum numbers.
+      Dirac radius does NOT separate 12^+ from 12^- -- the two quotient-sign-related
+      H-constituents receive the same scalar from P.  The labels are not pointwise S_eps
+      eigenvalues, and no statement about all H-invariant data is made.
   T4  ANTI-FABRICATION contrast: neither D2 nor J_full alone is block-scalar / H-invariant
       (max_h ||[D2,h]|| >= 1, max_h ||[J_full,h]|| >= 0.5); D2 has a nonzero chi_sgn
       off-block Z_{12+}^H D2 Z_{12-} >= 1 whereas P's is zero.  A rational sqrt(m)->1 proxy
@@ -373,6 +374,8 @@ commD2 = max(nrm(D2f @ g.astype(float) - g.astype(float) @ D2f) for g in Hgrp)
 commJ = max(nrm(Jfull @ g.astype(float) - g.astype(float) @ Jfull) for g in Hgrp)
 SepsD2 = Seps_int @ D2 @ Seps_int
 sMs = nrm(Seps @ M.astype(float) @ Seps - M.astype(float))
+sJs = nrm(Seps @ Jfull @ Seps + Jfull)
+sPs = nrm(Seps @ P @ Seps - P)
 
 # T2 closed form  P == -|D2| == -sqrt(-M),  reproduced from an INDEPENDENT eigh(M).
 # |D2| = sqrt(-M) is the operator square root of the positive-semidefinite -M; the kernel
@@ -472,10 +475,12 @@ gate("G4", commP < TOL_F,
      f"[FLOAT] THE THEOREM: max_{{h in H}} ||[P,h]|| = {commP:.1e}<1e-9 over ALL {len(Hgrp)} "
      f"elements -- P in End_H(C^64), the c_H=6 commutant")
 
-gate("G5", commD2 > 1.0 and commJ > 0.5 and eqm(SepsD2, -D2) and sMs < TOL_F,
+gate("G5", commD2 > 1.0 and commJ > 0.5 and eqm(SepsD2, -D2)
+     and sJs < TOL_F and sPs < TOL_F and sMs < TOL_F,
      f"ANTI-FAB CONTRAST: neither factor is H-invariant -- max_h ||[D2,h]||={commD2:.3f}>1 and "
      f"max_h ||[J_full,h]||={commJ:.3f}>0.5; both chi_sgn-ODD (S_eps D2 S_eps==-D2 exact: "
-     f"{eqm(SepsD2, -D2)}), product chi_sgn-EVEN; S_eps preserves D2^2-shells "
+     f"{eqm(SepsD2, -D2)}, ||S_eps J_full S_eps+J_full||={sJs:.1e}<1e-9), product "
+     f"chi_sgn-EVEN (||S_eps P S_eps-P||={sPs:.1e}<1e-9); S_eps preserves D2^2-shells "
      f"(||S_eps M S_eps - M||={sMs:.1e}). P's H-invariance is a genuine odd*odd=even effect")
 
 gate("G6", cG == 12 and cH == 6 and Scoset == 0 and maxtr_coset == 0,
@@ -511,17 +516,18 @@ gate("G10", m_split == [1, 1] and m_ind12 == [2, 2] and set(m_ind8) == {0, 3},
      f"THE COMPUTED ASSIGNMENT: CP-split pair {{12+,12-}} both at m={m_split}==[1,1] "
      f"(RADIUS-DEGENERATE, lambda=-2); induced 12's at m={m_ind12}==[2,2] (lambda=-2sqrt2); "
      f"induced 8's at the extreme shells m(set)={sorted(set(m_ind8))}=={{0,3}} (kernel + top). "
-     f"Dirac radius does NOT separate 12+ from 12- -- CP grading independent of radius grading")
+     f"Dirac radius does NOT separate 12+ from 12- -- the quotient-sign-related H-constituents "
+     f"receive the same scalar from P")
 
 proxy_int = all(abs(v - round(v)) < 1e-6 for v in proxy_census)
 proxy_vals = sorted(set(round(v) for v in proxy_census))
 d2_offblock = d2_pm is not None and d2_pm > 1.0
 gate("G11", d2_offblock and max(c[8] for c in census) > 1.0 and proxy_int
-     and proxy_vals != [0, -2, -3, -4] and set(proxy_vals) <= {0, -2, -4, -6},
+     and proxy_vals == [-6, -4, -2, 0],
      f"ANTI-FAB: D2 alone has a NONZERO chi_sgn off-block |Z_12+^H D2 Z_12-|={d2_pm:.3f}>1 and is "
      f"NOT block-scalar (max D2-alone |blk-scal|={max(c[8] for c in census):.3f}>1), so P's "
      f"block-diagonality is NOT inherited from D2; the sqrt(m)->1 proxy gives INTEGER block values "
-     f"-2m {proxy_vals} (in {{0,-2,-4,-6}}), NOT the irrational -2sqrt m -- no integer proxy fakes it")
+     f"-2m {proxy_vals}==[-6,-4,-2,0], NOT the irrational -2sqrt m -- no integer proxy fakes it")
 
 # ---- source pins + self-note dependency discipline -----------------------------------
 gate("G-PIN-U14", PIN_U14 in note_text(U14_NOTE),

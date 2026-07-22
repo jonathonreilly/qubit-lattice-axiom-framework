@@ -1,0 +1,493 @@
+PASS Cycle580/582 receipts and Cycle563 mass fixture are exact-pinned :: {'expected': {'Cycle580 runner': 'c46917d4a932cd3ad9a78e0547625055f5adf9d5cf7393700d7e6715dd515cd3', 'Cycle580 note': 'e8ca5acdaec0c7ec5f0ba9772d7736352bcf132e961483d93f19c679439df276', 'Cycle580 receipt': 'bff5c4a6a691a991dd18058e7600dc7d8e102e569f4d32ef9f91711eef3c14ab', 'Cycle582 runner': '47c5138720add60ed6fa8b6506dcb8a9cbee9af5a1ab3defbc7aea4c3cfa290a', 'Cycle582 note/receipt': 'c65613cd5f6bffa1cf4cc84ba08815fd9d569627d579438f9a39fa00601fcbc6', 'Cycle582 transcript': '58045c2dd7af2671e522d7e471e7caa89d92dfec9dc72710072c3fa5b81ebf35', 'Cycle563 receipt': '350e2c1922379bb42091e1cb5685c9e1f698ed23b81acf7c14803ba5043fcfc1'}, 'observed': {'Cycle580 runner': 'c46917d4a932cd3ad9a78e0547625055f5adf9d5cf7393700d7e6715dd515cd3', 'Cycle580 note': 'e8ca5acdaec0c7ec5f0ba9772d7736352bcf132e961483d93f19c679439df276', 'Cycle580 receipt': 'bff5c4a6a691a991dd18058e7600dc7d8e102e569f4d32ef9f91711eef3c14ab', 'Cycle582 runner': '47c5138720add60ed6fa8b6506dcb8a9cbee9af5a1ab3defbc7aea4c3cfa290a', 'Cycle582 note/receipt': 'c65613cd5f6bffa1cf4cc84ba08815fd9d569627d579438f9a39fa00601fcbc6', 'Cycle582 transcript': '58045c2dd7af2671e522d7e471e7caa89d92dfec9dc72710072c3fa5b81ebf35', 'Cycle563 receipt': '350e2c1922379bb42091e1cb5685c9e1f698ed23b81acf7c14803ba5043fcfc1'}, 'checks': {'Cycle580_transcript': True, 'Cycle580_parent10': True, 'Cycle582_agent7': True, 'Cycle582_parent_hash': True, 'Cycle582_rank_scope': True, 'Cycle582_no_axiom_pressure': True, 'Cycle563_mass': True, 'Cycle580_base_all24': True, 'Cycle580_base_all576': True, 'authority_audit': True}, 'note_missing': (), 'Cycle219_one_particle_mass_fixture_residual': 8.7159799596118e-16, 'Cycle580_base_all24_edge_tests': 816, 'Cycle580_base_all576_role_tests': 6336, 'mass_fixture_changed_by_exact_compiler': False, 'pass': True}
+PASS Route A compiles exact H3 E G = G_physical E into a literal full-space two-M2 NN circuit :: {'route': 'A literal H3 phase/cursor/conveyor two-M2 NN compiler', 'identity_controls': {'Toffoli_15_call_residual': 7.346882794269506e-16, 'Fredkin_17_call_residual': 7.346882794269506e-16, 'CCZ_17_call_residual': 1.1335532999722767e-15, 'controlled_H_unitarity_residual': 3.1560822113208575e-16, 'deleted_Toffoli_call_residual': 4.0, 'supplied_T_phase_angle_radians': 0.7853981633974483, 'supplied_T_matrix_SHA256': 'f9203f40d54bd38c70ed741465103c917e11691bf88ec6b5df6109d51becd49c', 'supplied_T_dagger_matrix_SHA256': 'e022459238788f401f6e594af09080583dc0060fd39752b7fa26eef2199cd2ca', 'supplied_controlled_H_matrix_SHA256': 'b2f6431af8c0fc10917ef921e524337b463f5eaeef4c72c7afa330f21f9613d2', 'T_and_T_dagger_are_new_beyond_Cycle580_alphabet': True, 'controlled_H_is_supplied_not_decomposed': True, 'physical_two_M2_alphabet': ('CNOT', 'SWAP', 'H tensor I', 'T tensor I', 'T_dagger tensor I', 'controlled-H'), 'compiler_uses_only_Cycle580_H_CNOT_CZ_SWAP_alphabet': False, 'Toffoli_calls': 15, 'Fredkin_calls': 17, 'CCZ_calls': 17, 'pass': True}, 'physical_M2': 56, 'layout': '56-site proper-cubic line', 'all_gates_exactly_two_M2': True, 'all_gates_cubic_nearest_neighbor': True, 'adjacency_failures': 0, 'full_space_gate_unitarity_max': 4.463374267214424e-16, 'full_space_unitary_off_code_rule': 'apply the same fixed circuit to every 56-M2 bitstring; multiple heads activate multiple controlled macros before rail permutation', 'declared_code_quantum_dimension_not_materialized': 4398046511104, 'declared_controller_rows': 33, 'EG_maximum_residual': 0.0, 'routed_wrap_basis_residual': 7.669733616450728e-15, 'routed_controlled_H_basis_residual': 7.301383309274022e-15, 'routing_wire_certificates': 740, 'routing_wire_certificate_failures': 0, 'manifest_SHA256': '9a632c499c6f602678efb9f4161b437edf992c586f5d12afdf07b1082511521c', 'compiler_scope': 'exact arbitrary-two-M2-local-matrix compiler with supplied pi/4 T/T_dagger and controlled-H matrices; not a Cycle580-alphabet-only compiler', 'primitive_counts': {'controlled_Cycle580_macros': 20, 'packet_conveyor_Fredkins': 24, 'cursor_increment_Fredkins': 2, 'phase_increment_SWAPS': 10, 'expanded_one_two_M2_primitives': 740, 'routed_two_M2_NN_gates': 14320, 'routing_SWAPS': 13580}, 'proper_cubic_frames': 24, 'covariance_action': 'each proper-cubic frame rotates the complete 56-site line and every gate edge; this is one covariant embedding per frame, not one simultaneously isotropic occupied volume', 'all24_edge_tests': 343680, 'all24_edge_failures': 0, 'all24_collision_failures': 0, 'controller_H11_H3_code_preserved_on_declared_rows': True, 'local_exactly_one_enforcement_constructed': False, 'adjacent_hard_core_constraint_counterexample': (1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0), 'counterexample_adjacent_violations': 0, 'controller_genesis_derived': False, 'host_selects_phase_or_cursor': False, 'host_repeats_fixed_gate_manifest': True, 'finite_H3_exactness': True, 'uniform_arbitrary_H_depth_or_radius_closed': False, 'pass': True}
+PASS Route B gives a finite train/held radius-one streaming-QCA law without relabeling boundary supply as renewal :: {'route': 'B translation-invariant finite-corridor streaming-QCA candidate', 'macrocell_M2': 31, 'macrocell_roles': 'station-system 6 + program marker 1 + A/B packet buffers 24', 'local_law': 'same marker-controlled Cycle580 scatter at every cell, then uniform onsite A/B SWAP and cross-edge B_i/A_(i+1) SWAP', 'bulk_translation_invariance': 'the same controlled scatter and two SWAP layers occur at every macrocell/edge', 'boundary_initial_state': 'finite periodic corridor cut with supplied A packets, blank B buffers, and one supplied station marker', 'marker_controlled_scatter_two_M2_compiler': 'relabel Route-A phase control as the local marker and reuse the exact controlled-H/Toffoli/Fredkin expansions', 'quantum_train_held_rows': [(2, 1, 0, 0.0), (2, 2, 1, 0.0), (3, 1, 0, 0.0), (3, 2, 2, 0.0), (3, 3, 1, 0.0)], 'quantum_EG_maximum_residual': 0.0, 'one_step_inverse_maximum_residual': 9.42055475210265e-16, 'deleted_cross_lane_residual': 2.82842712474619, 'first_capacity_overrun_global_change': 3.937003937005905, 'reentered_packet_archive_change': 0.5077524002897471, 'symbolic_lengths_tested': (2, 17), 'symbolic_length_rows_SHA256': '1881d24c1597d9507271ae3d955b4ee74f4feba370da8b590c0f1b91ea922af6', 'symbolic_shift_failures': 0, 'symbolic_inverse_failures': 0, 'symbolic_deletion_failures': 0, 'layer_collision_failures': 0, 'collision_and_inverse_scope': 'declared 31-M2 macrocells and their A/B packet edges', 'arbitrary_length_identity': 'for every N>=2, two disjoint SWAP layers map A_i to A_(i+1) and return every B_i blank', 'law_radius_macrocells': 1, 'train_capacity_events': 2, 'held_capacity_events': 3, 'first_packet_reentry_event_held': 4, 'proper_cubic_frames': 24, 'all24_conveyor_edge_tests': 2880, 'all24_conveyor_edge_failures': 0, 'all24_conveyor_collision_failures': 0, 'boundary_supplies_low_entropy_packets': True, 'boundary_supply_called_renewal': False, 'station_marker_genesis_derived': False, 'finite_periodic_corridor_not_infinite_stationary_state': True, 'pass': True}
+PASS Route C exactly reuses the named active carrier block by swapping the full output algebra into a fresh archive block :: {'route': 'C archive-preserving full-block SWAP role reset by export', 'active_block_M2': 18, 'fresh_blank_archive_block_M2_per_invocation': 18, 'two_M2_NN_SWAPS': 18, 'parallel_depth': 1, 'joint_nonzero_rows': 4096, 'block_SWAP_to_blank_tensor_output_residual': 0.0, 'block_SWAP_inverse_residual': 0.0, 'deleted_first_pair_SWAP_residual': 2.82842712474619, 'archive_output_density_residual': 4.440892098500626e-16, 'active_blank_density_residual': 9.992007221626409e-16, 'full_output_algebra_Pauli_generators': 36, 'output_algebra_generator_mapping_failures': 0, 'faithful_independent_output_algebra': True, 'exact_resource_ledger': ({'completed_invocations': 0, 'fresh_blank_blocks_consumed': 0, 'fresh_M2_consumed': 0, 'spent_archive_blocks_retained': 0, 'active_role_blocks_reused': 0}, {'completed_invocations': 1, 'fresh_blank_blocks_consumed': 1, 'fresh_M2_consumed': 18, 'spent_archive_blocks_retained': 1, 'active_role_blocks_reused': 1}, {'completed_invocations': 2, 'fresh_blank_blocks_consumed': 2, 'fresh_M2_consumed': 36, 'spent_archive_blocks_retained': 2, 'active_role_blocks_reused': 2}, {'completed_invocations': 3, 'fresh_blank_blocks_consumed': 3, 'fresh_M2_consumed': 54, 'spent_archive_blocks_retained': 3, 'active_role_blocks_reused': 3}), 'active_role_reused': True, 'fresh_low_entropy_block_consumed': True, 'catalyst_returned': False, 'catalytic_reuse_claimed': False, 'renewal_or_resource_thermodynamics_derived': False, 'proper_cubic_frames': 24, 'all24_pair_edge_tests': 432, 'all24_pair_edge_failures': 0, 'layout': 'active_i at (i,0,0), fresh/archive_i at (i,1,0); gate pair (i,18+i)', 'pass': True}
+PASS N1-N8 keeps every negative route-specific and refuses shared-obstruction, minimum, or axiom-pressure promotion :: {'N1_routes': ({'family': 'finite routed unary controller', 'object_formulation': '56-M2 H3 line circuit with one-hot phase/cursor and packet permutation encoding', 'mechanism_invariant': 'exact controlled-H/Toffoli/Fredkin expansion plus reversible NN SWAP routing', 'terminal_obligation': 'locally enforce/generate the controller, obtain uniform arbitrary-H causal depth, and derive or retire the supplied pi/4 and controlled-H alphabet', 'status': 'ATTEMPTED', 'evidence': 'Route A closes literal finite-H3 two-M2 NN EG but not controller genesis/enforcement'}, {'family': 'finite-corridor streaming QCA', 'object_formulation': 'uniform marker-controlled scatter with doubled A/B packet registers', 'mechanism_invariant': 'two disjoint SWAP layers give exact radius-one packet translation', 'terminal_obligation': 'supply a stationary infinite boundary state or autonomous finite regeneration law', 'status': 'ATTEMPTED', 'evidence': 'Route B closes train/held corridors and arbitrary-N shift identity, not boundary-state physics'}, {'family': 'full-block archive swap reuse', 'object_formulation': '18 pairwise SWAPs between the active output block and a fresh blank archive block', 'mechanism_invariant': 'unitary algebra transport preserves the full output while returning the named active role blank', 'terminal_obligation': 'account for or regenerate the consumed low-entropy archive block', 'status': 'ATTEMPTED', 'evidence': 'Route C is exact but consumes one fresh 18-M2 block per invocation'}, {'family': 'coherent teleportation reuse', 'object_formulation': 'Bell-pair transfer with coherent syndrome and correction carriers', 'mechanism_invariant': 'teleport the reusable carrier state while exporting a faithful syndrome/output algebra', 'terminal_obligation': 'construct local coherent correction and exact Bell-resource ledger without actuality imports', 'status': 'UNTESTED_OPEN_NOT_COUNTED', 'evidence': 'concrete reopening route not attempted in Cycle584'}, {'family': 'error-corrected catalytic workspace', 'object_formulation': 'encoded catalyst plus outward syndrome/history stream', 'mechanism_invariant': 'return the catalyst exactly while exporting every independent output distinction', 'terminal_obligation': 'give a finite local catalyst-return circuit and faithful resource balance', 'status': 'UNTESTED_OPEN_NOT_COUNTED', 'evidence': 'concrete reopening route not attempted in Cycle584'}), 'N1_qualifying': 3, 'N1_required': 5, 'N1_status': 'FAIL', 'N2_walls': ('controller-code local enforcement and genesis', 'uniform arbitrary-H recurrence depth and stationary boundary state', 'fresh low-entropy archive or reservoir balance', 'derive or retire the supplied pi/4 phase and controlled-H gate alphabet'), 'N2_pairwise': ({'pair': ('controller-code local enforcement and genesis', 'uniform arbitrary-H recurrence depth and stationary boundary state'), 'left_closes_right': 'no', 'left_to_right_reason': 'a valid local controller does not make routed depth uniform or prepare a stationary boundary', 'right_closes_left': 'no', 'right_to_left_reason': 'a QCA shift law does not enforce or create its marker/controller word', 'independent': True}, {'pair': ('controller-code local enforcement and genesis', 'fresh low-entropy archive or reservoir balance'), 'left_closes_right': 'no', 'left_to_right_reason': 'controller enforcement does not regenerate consumed blank archives', 'right_closes_left': 'no', 'right_to_left_reason': 'a resource balance does not create the lawful program head', 'independent': True}, {'pair': ('controller-code local enforcement and genesis', 'derive or retire the supplied pi/4 phase and controlled-H gate alphabet'), 'left_closes_right': 'no', 'left_to_right_reason': 'controller enforcement supplies no physical pi/4 phase or controlled-H law', 'right_closes_left': 'no', 'right_to_left_reason': 'a local gate alphabet does not create or enforce the controller word', 'independent': True}, {'pair': ('uniform arbitrary-H recurrence depth and stationary boundary state', 'fresh low-entropy archive or reservoir balance'), 'left_closes_right': 'no', 'left_to_right_reason': 'uniform flow can transport a finite stock without regenerating it', 'right_closes_left': 'no', 'right_to_left_reason': 'fresh-resource balance supplies no bounded-depth controller/scatter compiler', 'independent': True}, {'pair': ('uniform arbitrary-H recurrence depth and stationary boundary state', 'derive or retire the supplied pi/4 phase and controlled-H gate alphabet'), 'left_closes_right': 'no', 'left_to_right_reason': 'uniform transport does not derive the local compilation matrices', 'right_closes_left': 'no', 'right_to_left_reason': 'a local gate alphabet does not prepare the stationary state or bound arbitrary-H routing', 'independent': True}, {'pair': ('fresh low-entropy archive or reservoir balance', 'derive or retire the supplied pi/4 phase and controlled-H gate alphabet'), 'left_closes_right': 'no', 'left_to_right_reason': 'resource balance does not derive a pi/4 phase or controlled-H matrix', 'right_closes_left': 'no', 'right_to_left_reason': 'the gate alphabet does not regenerate fresh low-entropy blocks', 'independent': True}), 'N3_hidden_hits': [], 'N4_residual_table': ({'witness': 'Cycle582 Route A', 'witness_residual': 'literal controller/conveyor two-M2 NN layout open', 'Cycle584_claim': 'finite H3 routed layout closed', 'match': 'yes'}, {'witness': 'Cycle582 Route B', 'witness_residual': 'finite stock has no stationary fresh/spent balance', 'Cycle584_claim': 'finite uniform transport only; balance remains open', 'match': 'yes'}, {'witness': 'Cycle582 Route C', 'witness_residual': 'tested copy-then-uncompute maps fail exact active reset', 'Cycle584_claim': 'different full-block SWAP export closes named-role reset at fresh-block cost', 'match': 'yes'}, {'witness': 'Cycle563 receipt', 'witness_residual': 'one-particle mass fixture residual', 'Cycle584_claim': 'unchanged exact compiler target', 'match': 'yes'}, {'witness': 'Cycle580 base layout', 'witness_residual': '18-M2 single-invocation station', 'Cycle584_claim': '56-M2 recurrent-controller layout', 'match': 'no — base all24 retained but not used as closure evidence'}), 'N5': 'finite H3 routing, finite N2/N3 corridors, and one full-block SWAP contract are the only tested resolutions; no lattice-wide negative ships', 'N6_partial_closure_paths': ('replace one-hot heads by a locally constrained domain-wall clock with an explicit initialization front', 'take the finite-corridor rule to an infinite quasi-local algebra with a specified shift-invariant boundary state', 'coherently teleport the active blank while retaining syndrome and output algebras', 'close resource balance with a separately derived low-entropy preparation/export law', 'derive pi/4 phase and controlled-H matrices from a retained M2 gate family or keep them as bounded imports with an explicit retirement audit'), 'N7_steelman': {'mechanism': 'A locally constrained domain-wall program QCA can stream a shift-invariant encoded-plus reservoir through the exact Cycle584 scatter, export spent packets along a second ray, and coherently error-correct a catalytic station while preserving the output algebra.', 'terminal_obligation': 'Construct the translation-invariant two-M2 rule, derive its local gate matrices, and prove the shift-invariant lawful state, controller genesis, catalyst return, and arbitrary-volume collision/resource obligations.', 'disposition': 'concrete untested mechanism; broad recurrence, renewal, or reuse negatives are premature'}, 'N8_cross_cycle_echo': ('Cycle574 representation and readiness gaps were retired by explicit encodings rather than new axioms', 'Cycle577 isometry-only gap was retired by the Cycle580 full-space circuit', 'Cycle582 code-coordinate controller gap is narrowed here by finite H3 literal routing', 'Cycle44 protected block-SWAP shows that named carrier reuse can coexist with outward information export'), 'artifact_status': 'POSITIVE_FINITE_CONSTRUCTIONS_WITH_EXPLICIT_RESOURCE_AND_GENESIS_RESIDUALS', 'broad_no_go': 'FAIL_DO_NOT_SHIP', 'minimum_content': 'FAIL_DO_NOT_SHIP', 'shared_obstruction': 'DO_NOT_SHIP', 'axiom_pressure': 'DO_NOT_SHIP', 'inventory': {'supplied': ('exact Cycle580/582 circuits, code domains, finite H3 packets, and candidate output semantics', 'pure encoded-plus/zero or full 18-M2 blank boundary blocks and a one-hot station/program marker', 'fixed finite gate manifest, corridor cut, periodic finite capacity, and noiseless two-M2 gates', 'pi/4 T/T_dagger one-M2 phases embedded as T tensor I and an exact supplied two-M2 controlled-H matrix'), 'derived': ('literal 56-M2 H3 two-M2 NN full-space unitary with exact declared-code EG', 'uniform finite-corridor radius-one packet shift, inverse, deletion, capacity, and N-parametric permutation identity', 'faithful full-output-algebra block SWAP with exact active-role reset and resource debit', 'all24 finite layouts and unchanged exact-pinned mass fixture'), 'open': ('local exactly-one controller/station-marker enforcement and genesis', 'uniform arbitrary-H two-M2 causal depth and infinite stationary QCA state', 'derivation or retirement of the supplied pi/4 phase and controlled-H compilation matrices from a physical M2 gate family', 'renewal, resource thermodynamics, entropy/temperature/work/energy/source/gravity', 'actual branch, framework Record, realized history, derived Born/frequency law, and physical time')}, 'pass': True}
+PASS cold resource caps :: {'elapsed_seconds': 55.2562189999735, 'rss_bytes': 231636992, 'wall_cap_seconds': 360.0, 'rss_cap_bytes': 3221225472}
+{
+  "dependency_mass": {
+    "Cycle219_one_particle_mass_fixture_residual": 8.7159799596118e-16,
+    "Cycle580_base_all24_edge_tests": 816,
+    "Cycle580_base_all576_role_tests": 6336,
+    "checks": {
+      "Cycle563_mass": true,
+      "Cycle580_base_all24": true,
+      "Cycle580_base_all576": true,
+      "Cycle580_parent10": true,
+      "Cycle580_transcript": true,
+      "Cycle582_agent7": true,
+      "Cycle582_no_axiom_pressure": true,
+      "Cycle582_parent_hash": true,
+      "Cycle582_rank_scope": true,
+      "authority_audit": true
+    },
+    "expected": {
+      "Cycle563 receipt": "350e2c1922379bb42091e1cb5685c9e1f698ed23b81acf7c14803ba5043fcfc1",
+      "Cycle580 note": "e8ca5acdaec0c7ec5f0ba9772d7736352bcf132e961483d93f19c679439df276",
+      "Cycle580 receipt": "bff5c4a6a691a991dd18058e7600dc7d8e102e569f4d32ef9f91711eef3c14ab",
+      "Cycle580 runner": "c46917d4a932cd3ad9a78e0547625055f5adf9d5cf7393700d7e6715dd515cd3",
+      "Cycle582 note/receipt": "c65613cd5f6bffa1cf4cc84ba08815fd9d569627d579438f9a39fa00601fcbc6",
+      "Cycle582 runner": "47c5138720add60ed6fa8b6506dcb8a9cbee9af5a1ab3defbc7aea4c3cfa290a",
+      "Cycle582 transcript": "58045c2dd7af2671e522d7e471e7caa89d92dfec9dc72710072c3fa5b81ebf35"
+    },
+    "mass_fixture_changed_by_exact_compiler": false,
+    "note_missing": [],
+    "observed": {
+      "Cycle563 receipt": "350e2c1922379bb42091e1cb5685c9e1f698ed23b81acf7c14803ba5043fcfc1",
+      "Cycle580 note": "e8ca5acdaec0c7ec5f0ba9772d7736352bcf132e961483d93f19c679439df276",
+      "Cycle580 receipt": "bff5c4a6a691a991dd18058e7600dc7d8e102e569f4d32ef9f91711eef3c14ab",
+      "Cycle580 runner": "c46917d4a932cd3ad9a78e0547625055f5adf9d5cf7393700d7e6715dd515cd3",
+      "Cycle582 note/receipt": "c65613cd5f6bffa1cf4cc84ba08815fd9d569627d579438f9a39fa00601fcbc6",
+      "Cycle582 runner": "47c5138720add60ed6fa8b6506dcb8a9cbee9af5a1ab3defbc7aea4c3cfa290a",
+      "Cycle582 transcript": "58045c2dd7af2671e522d7e471e7caa89d92dfec9dc72710072c3fa5b81ebf35"
+    },
+    "pass": true
+  },
+  "discipline_inventory": {
+    "N1_qualifying": 3,
+    "N1_required": 5,
+    "N1_routes": [
+      {
+        "evidence": "Route A closes literal finite-H3 two-M2 NN EG but not controller genesis/enforcement",
+        "family": "finite routed unary controller",
+        "mechanism_invariant": "exact controlled-H/Toffoli/Fredkin expansion plus reversible NN SWAP routing",
+        "object_formulation": "56-M2 H3 line circuit with one-hot phase/cursor and packet permutation encoding",
+        "status": "ATTEMPTED",
+        "terminal_obligation": "locally enforce/generate the controller, obtain uniform arbitrary-H causal depth, and derive or retire the supplied pi/4 and controlled-H alphabet"
+      },
+      {
+        "evidence": "Route B closes train/held corridors and arbitrary-N shift identity, not boundary-state physics",
+        "family": "finite-corridor streaming QCA",
+        "mechanism_invariant": "two disjoint SWAP layers give exact radius-one packet translation",
+        "object_formulation": "uniform marker-controlled scatter with doubled A/B packet registers",
+        "status": "ATTEMPTED",
+        "terminal_obligation": "supply a stationary infinite boundary state or autonomous finite regeneration law"
+      },
+      {
+        "evidence": "Route C is exact but consumes one fresh 18-M2 block per invocation",
+        "family": "full-block archive swap reuse",
+        "mechanism_invariant": "unitary algebra transport preserves the full output while returning the named active role blank",
+        "object_formulation": "18 pairwise SWAPs between the active output block and a fresh blank archive block",
+        "status": "ATTEMPTED",
+        "terminal_obligation": "account for or regenerate the consumed low-entropy archive block"
+      },
+      {
+        "evidence": "concrete reopening route not attempted in Cycle584",
+        "family": "coherent teleportation reuse",
+        "mechanism_invariant": "teleport the reusable carrier state while exporting a faithful syndrome/output algebra",
+        "object_formulation": "Bell-pair transfer with coherent syndrome and correction carriers",
+        "status": "UNTESTED_OPEN_NOT_COUNTED",
+        "terminal_obligation": "construct local coherent correction and exact Bell-resource ledger without actuality imports"
+      },
+      {
+        "evidence": "concrete reopening route not attempted in Cycle584",
+        "family": "error-corrected catalytic workspace",
+        "mechanism_invariant": "return the catalyst exactly while exporting every independent output distinction",
+        "object_formulation": "encoded catalyst plus outward syndrome/history stream",
+        "status": "UNTESTED_OPEN_NOT_COUNTED",
+        "terminal_obligation": "give a finite local catalyst-return circuit and faithful resource balance"
+      }
+    ],
+    "N1_status": "FAIL",
+    "N2_pairwise": [
+      {
+        "independent": true,
+        "left_closes_right": "no",
+        "left_to_right_reason": "a valid local controller does not make routed depth uniform or prepare a stationary boundary",
+        "pair": [
+          "controller-code local enforcement and genesis",
+          "uniform arbitrary-H recurrence depth and stationary boundary state"
+        ],
+        "right_closes_left": "no",
+        "right_to_left_reason": "a QCA shift law does not enforce or create its marker/controller word"
+      },
+      {
+        "independent": true,
+        "left_closes_right": "no",
+        "left_to_right_reason": "controller enforcement does not regenerate consumed blank archives",
+        "pair": [
+          "controller-code local enforcement and genesis",
+          "fresh low-entropy archive or reservoir balance"
+        ],
+        "right_closes_left": "no",
+        "right_to_left_reason": "a resource balance does not create the lawful program head"
+      },
+      {
+        "independent": true,
+        "left_closes_right": "no",
+        "left_to_right_reason": "controller enforcement supplies no physical pi/4 phase or controlled-H law",
+        "pair": [
+          "controller-code local enforcement and genesis",
+          "derive or retire the supplied pi/4 phase and controlled-H gate alphabet"
+        ],
+        "right_closes_left": "no",
+        "right_to_left_reason": "a local gate alphabet does not create or enforce the controller word"
+      },
+      {
+        "independent": true,
+        "left_closes_right": "no",
+        "left_to_right_reason": "uniform flow can transport a finite stock without regenerating it",
+        "pair": [
+          "uniform arbitrary-H recurrence depth and stationary boundary state",
+          "fresh low-entropy archive or reservoir balance"
+        ],
+        "right_closes_left": "no",
+        "right_to_left_reason": "fresh-resource balance supplies no bounded-depth controller/scatter compiler"
+      },
+      {
+        "independent": true,
+        "left_closes_right": "no",
+        "left_to_right_reason": "uniform transport does not derive the local compilation matrices",
+        "pair": [
+          "uniform arbitrary-H recurrence depth and stationary boundary state",
+          "derive or retire the supplied pi/4 phase and controlled-H gate alphabet"
+        ],
+        "right_closes_left": "no",
+        "right_to_left_reason": "a local gate alphabet does not prepare the stationary state or bound arbitrary-H routing"
+      },
+      {
+        "independent": true,
+        "left_closes_right": "no",
+        "left_to_right_reason": "resource balance does not derive a pi/4 phase or controlled-H matrix",
+        "pair": [
+          "fresh low-entropy archive or reservoir balance",
+          "derive or retire the supplied pi/4 phase and controlled-H gate alphabet"
+        ],
+        "right_closes_left": "no",
+        "right_to_left_reason": "the gate alphabet does not regenerate fresh low-entropy blocks"
+      }
+    ],
+    "N2_walls": [
+      "controller-code local enforcement and genesis",
+      "uniform arbitrary-H recurrence depth and stationary boundary state",
+      "fresh low-entropy archive or reservoir balance",
+      "derive or retire the supplied pi/4 phase and controlled-H gate alphabet"
+    ],
+    "N3_hidden_hits": [],
+    "N4_residual_table": [
+      {
+        "Cycle584_claim": "finite H3 routed layout closed",
+        "match": "yes",
+        "witness": "Cycle582 Route A",
+        "witness_residual": "literal controller/conveyor two-M2 NN layout open"
+      },
+      {
+        "Cycle584_claim": "finite uniform transport only; balance remains open",
+        "match": "yes",
+        "witness": "Cycle582 Route B",
+        "witness_residual": "finite stock has no stationary fresh/spent balance"
+      },
+      {
+        "Cycle584_claim": "different full-block SWAP export closes named-role reset at fresh-block cost",
+        "match": "yes",
+        "witness": "Cycle582 Route C",
+        "witness_residual": "tested copy-then-uncompute maps fail exact active reset"
+      },
+      {
+        "Cycle584_claim": "unchanged exact compiler target",
+        "match": "yes",
+        "witness": "Cycle563 receipt",
+        "witness_residual": "one-particle mass fixture residual"
+      },
+      {
+        "Cycle584_claim": "56-M2 recurrent-controller layout",
+        "match": "no \u2014 base all24 retained but not used as closure evidence",
+        "witness": "Cycle580 base layout",
+        "witness_residual": "18-M2 single-invocation station"
+      }
+    ],
+    "N5": "finite H3 routing, finite N2/N3 corridors, and one full-block SWAP contract are the only tested resolutions; no lattice-wide negative ships",
+    "N6_partial_closure_paths": [
+      "replace one-hot heads by a locally constrained domain-wall clock with an explicit initialization front",
+      "take the finite-corridor rule to an infinite quasi-local algebra with a specified shift-invariant boundary state",
+      "coherently teleport the active blank while retaining syndrome and output algebras",
+      "close resource balance with a separately derived low-entropy preparation/export law",
+      "derive pi/4 phase and controlled-H matrices from a retained M2 gate family or keep them as bounded imports with an explicit retirement audit"
+    ],
+    "N7_steelman": {
+      "disposition": "concrete untested mechanism; broad recurrence, renewal, or reuse negatives are premature",
+      "mechanism": "A locally constrained domain-wall program QCA can stream a shift-invariant encoded-plus reservoir through the exact Cycle584 scatter, export spent packets along a second ray, and coherently error-correct a catalytic station while preserving the output algebra.",
+      "terminal_obligation": "Construct the translation-invariant two-M2 rule, derive its local gate matrices, and prove the shift-invariant lawful state, controller genesis, catalyst return, and arbitrary-volume collision/resource obligations."
+    },
+    "N8_cross_cycle_echo": [
+      "Cycle574 representation and readiness gaps were retired by explicit encodings rather than new axioms",
+      "Cycle577 isometry-only gap was retired by the Cycle580 full-space circuit",
+      "Cycle582 code-coordinate controller gap is narrowed here by finite H3 literal routing",
+      "Cycle44 protected block-SWAP shows that named carrier reuse can coexist with outward information export"
+    ],
+    "artifact_status": "POSITIVE_FINITE_CONSTRUCTIONS_WITH_EXPLICIT_RESOURCE_AND_GENESIS_RESIDUALS",
+    "axiom_pressure": "DO_NOT_SHIP",
+    "broad_no_go": "FAIL_DO_NOT_SHIP",
+    "inventory": {
+      "derived": [
+        "literal 56-M2 H3 two-M2 NN full-space unitary with exact declared-code EG",
+        "uniform finite-corridor radius-one packet shift, inverse, deletion, capacity, and N-parametric permutation identity",
+        "faithful full-output-algebra block SWAP with exact active-role reset and resource debit",
+        "all24 finite layouts and unchanged exact-pinned mass fixture"
+      ],
+      "open": [
+        "local exactly-one controller/station-marker enforcement and genesis",
+        "uniform arbitrary-H two-M2 causal depth and infinite stationary QCA state",
+        "derivation or retirement of the supplied pi/4 phase and controlled-H compilation matrices from a physical M2 gate family",
+        "renewal, resource thermodynamics, entropy/temperature/work/energy/source/gravity",
+        "actual branch, framework Record, realized history, derived Born/frequency law, and physical time"
+      ],
+      "supplied": [
+        "exact Cycle580/582 circuits, code domains, finite H3 packets, and candidate output semantics",
+        "pure encoded-plus/zero or full 18-M2 blank boundary blocks and a one-hot station/program marker",
+        "fixed finite gate manifest, corridor cut, periodic finite capacity, and noiseless two-M2 gates",
+        "pi/4 T/T_dagger one-M2 phases embedded as T tensor I and an exact supplied two-M2 controlled-H matrix"
+      ]
+    },
+    "minimum_content": "FAIL_DO_NOT_SHIP",
+    "pass": true,
+    "shared_obstruction": "DO_NOT_SHIP"
+  },
+  "fail": 0,
+  "pass": 6,
+  "resources": {
+    "elapsed_seconds": 55.2562189999735,
+    "rss_bytes": 231636992,
+    "rss_cap_bytes": 3221225472,
+    "wall_cap_seconds": 360.0
+  },
+  "route_A": {
+    "EG_maximum_residual": 0.0,
+    "adjacency_failures": 0,
+    "adjacent_hard_core_constraint_counterexample": [
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "all24_collision_failures": 0,
+    "all24_edge_failures": 0,
+    "all24_edge_tests": 343680,
+    "all_gates_cubic_nearest_neighbor": true,
+    "all_gates_exactly_two_M2": true,
+    "compiler_scope": "exact arbitrary-two-M2-local-matrix compiler with supplied pi/4 T/T_dagger and controlled-H matrices; not a Cycle580-alphabet-only compiler",
+    "controller_H11_H3_code_preserved_on_declared_rows": true,
+    "controller_genesis_derived": false,
+    "counterexample_adjacent_violations": 0,
+    "covariance_action": "each proper-cubic frame rotates the complete 56-site line and every gate edge; this is one covariant embedding per frame, not one simultaneously isotropic occupied volume",
+    "declared_code_quantum_dimension_not_materialized": 4398046511104,
+    "declared_controller_rows": 33,
+    "finite_H3_exactness": true,
+    "full_space_gate_unitarity_max": 4.463374267214424e-16,
+    "full_space_unitary_off_code_rule": "apply the same fixed circuit to every 56-M2 bitstring; multiple heads activate multiple controlled macros before rail permutation",
+    "host_repeats_fixed_gate_manifest": true,
+    "host_selects_phase_or_cursor": false,
+    "identity_controls": {
+      "CCZ_17_call_residual": 1.1335532999722767e-15,
+      "CCZ_calls": 17,
+      "Fredkin_17_call_residual": 7.346882794269506e-16,
+      "Fredkin_calls": 17,
+      "T_and_T_dagger_are_new_beyond_Cycle580_alphabet": true,
+      "Toffoli_15_call_residual": 7.346882794269506e-16,
+      "Toffoli_calls": 15,
+      "compiler_uses_only_Cycle580_H_CNOT_CZ_SWAP_alphabet": false,
+      "controlled_H_is_supplied_not_decomposed": true,
+      "controlled_H_unitarity_residual": 3.1560822113208575e-16,
+      "deleted_Toffoli_call_residual": 4.0,
+      "pass": true,
+      "physical_two_M2_alphabet": [
+        "CNOT",
+        "SWAP",
+        "H tensor I",
+        "T tensor I",
+        "T_dagger tensor I",
+        "controlled-H"
+      ],
+      "supplied_T_dagger_matrix_SHA256": "e022459238788f401f6e594af09080583dc0060fd39752b7fa26eef2199cd2ca",
+      "supplied_T_matrix_SHA256": "f9203f40d54bd38c70ed741465103c917e11691bf88ec6b5df6109d51becd49c",
+      "supplied_T_phase_angle_radians": 0.7853981633974483,
+      "supplied_controlled_H_matrix_SHA256": "b2f6431af8c0fc10917ef921e524337b463f5eaeef4c72c7afa330f21f9613d2"
+    },
+    "layout": "56-site proper-cubic line",
+    "local_exactly_one_enforcement_constructed": false,
+    "manifest_SHA256": "9a632c499c6f602678efb9f4161b437edf992c586f5d12afdf07b1082511521c",
+    "pass": true,
+    "physical_M2": 56,
+    "primitive_counts": {
+      "controlled_Cycle580_macros": 20,
+      "cursor_increment_Fredkins": 2,
+      "expanded_one_two_M2_primitives": 740,
+      "packet_conveyor_Fredkins": 24,
+      "phase_increment_SWAPS": 10,
+      "routed_two_M2_NN_gates": 14320,
+      "routing_SWAPS": 13580
+    },
+    "proper_cubic_frames": 24,
+    "route": "A literal H3 phase/cursor/conveyor two-M2 NN compiler",
+    "routed_controlled_H_basis_residual": 7.301383309274022e-15,
+    "routed_wrap_basis_residual": 7.669733616450728e-15,
+    "routing_wire_certificate_failures": 0,
+    "routing_wire_certificates": 740,
+    "uniform_arbitrary_H_depth_or_radius_closed": false
+  },
+  "route_B": {
+    "all24_conveyor_collision_failures": 0,
+    "all24_conveyor_edge_failures": 0,
+    "all24_conveyor_edge_tests": 2880,
+    "arbitrary_length_identity": "for every N>=2, two disjoint SWAP layers map A_i to A_(i+1) and return every B_i blank",
+    "boundary_initial_state": "finite periodic corridor cut with supplied A packets, blank B buffers, and one supplied station marker",
+    "boundary_supplies_low_entropy_packets": true,
+    "boundary_supply_called_renewal": false,
+    "bulk_translation_invariance": "the same controlled scatter and two SWAP layers occur at every macrocell/edge",
+    "collision_and_inverse_scope": "declared 31-M2 macrocells and their A/B packet edges",
+    "deleted_cross_lane_residual": 2.82842712474619,
+    "finite_periodic_corridor_not_infinite_stationary_state": true,
+    "first_capacity_overrun_global_change": 3.937003937005905,
+    "first_packet_reentry_event_held": 4,
+    "held_capacity_events": 3,
+    "law_radius_macrocells": 1,
+    "layer_collision_failures": 0,
+    "local_law": "same marker-controlled Cycle580 scatter at every cell, then uniform onsite A/B SWAP and cross-edge B_i/A_(i+1) SWAP",
+    "macrocell_M2": 31,
+    "macrocell_roles": "station-system 6 + program marker 1 + A/B packet buffers 24",
+    "marker_controlled_scatter_two_M2_compiler": "relabel Route-A phase control as the local marker and reuse the exact controlled-H/Toffoli/Fredkin expansions",
+    "one_step_inverse_maximum_residual": 9.42055475210265e-16,
+    "pass": true,
+    "proper_cubic_frames": 24,
+    "quantum_EG_maximum_residual": 0.0,
+    "quantum_train_held_rows": [
+      [
+        2,
+        1,
+        0,
+        0.0
+      ],
+      [
+        2,
+        2,
+        1,
+        0.0
+      ],
+      [
+        3,
+        1,
+        0,
+        0.0
+      ],
+      [
+        3,
+        2,
+        2,
+        0.0
+      ],
+      [
+        3,
+        3,
+        1,
+        0.0
+      ]
+    ],
+    "reentered_packet_archive_change": 0.5077524002897471,
+    "route": "B translation-invariant finite-corridor streaming-QCA candidate",
+    "station_marker_genesis_derived": false,
+    "symbolic_deletion_failures": 0,
+    "symbolic_inverse_failures": 0,
+    "symbolic_length_rows_SHA256": "1881d24c1597d9507271ae3d955b4ee74f4feba370da8b590c0f1b91ea922af6",
+    "symbolic_lengths_tested": [
+      2,
+      17
+    ],
+    "symbolic_shift_failures": 0,
+    "train_capacity_events": 2
+  },
+  "route_C": {
+    "active_blank_density_residual": 9.992007221626409e-16,
+    "active_block_M2": 18,
+    "active_role_reused": true,
+    "all24_pair_edge_failures": 0,
+    "all24_pair_edge_tests": 432,
+    "archive_output_density_residual": 4.440892098500626e-16,
+    "block_SWAP_inverse_residual": 0.0,
+    "block_SWAP_to_blank_tensor_output_residual": 0.0,
+    "catalyst_returned": false,
+    "catalytic_reuse_claimed": false,
+    "deleted_first_pair_SWAP_residual": 2.82842712474619,
+    "exact_resource_ledger": [
+      {
+        "active_role_blocks_reused": 0,
+        "completed_invocations": 0,
+        "fresh_M2_consumed": 0,
+        "fresh_blank_blocks_consumed": 0,
+        "spent_archive_blocks_retained": 0
+      },
+      {
+        "active_role_blocks_reused": 1,
+        "completed_invocations": 1,
+        "fresh_M2_consumed": 18,
+        "fresh_blank_blocks_consumed": 1,
+        "spent_archive_blocks_retained": 1
+      },
+      {
+        "active_role_blocks_reused": 2,
+        "completed_invocations": 2,
+        "fresh_M2_consumed": 36,
+        "fresh_blank_blocks_consumed": 2,
+        "spent_archive_blocks_retained": 2
+      },
+      {
+        "active_role_blocks_reused": 3,
+        "completed_invocations": 3,
+        "fresh_M2_consumed": 54,
+        "fresh_blank_blocks_consumed": 3,
+        "spent_archive_blocks_retained": 3
+      }
+    ],
+    "faithful_independent_output_algebra": true,
+    "fresh_blank_archive_block_M2_per_invocation": 18,
+    "fresh_low_entropy_block_consumed": true,
+    "full_output_algebra_Pauli_generators": 36,
+    "joint_nonzero_rows": 4096,
+    "layout": "active_i at (i,0,0), fresh/archive_i at (i,1,0); gate pair (i,18+i)",
+    "output_algebra_generator_mapping_failures": 0,
+    "parallel_depth": 1,
+    "pass": true,
+    "proper_cubic_frames": 24,
+    "renewal_or_resource_thermodynamics_derived": false,
+    "route": "C archive-preserving full-block SWAP role reset by export",
+    "two_M2_NN_SWAPS": 18
+  },
+  "summary": {
+    "actual_branch": null,
+    "audit": "unset",
+    "authority": "none",
+    "axiom_pressure": null,
+    "derived_Born_probability": null,
+    "energy_source_or_thermodynamics": null,
+    "framework_Record": null,
+    "physical_time": null,
+    "renewable_resource_law": null,
+    "strongest_result": "literal exact finite-H3 arbitrary-two-M2-matrix NN compiler, with supplied pi/4 phases and controlled-H, plus finite streaming and full-output block-SWAP constructions"
+  }
+}
+RESULT pass=6 fail=0
+authority=none; audit=unset; boundary supply and finite archive conservation are not renewal/thermodynamics; phase is not time; output algebra is not Record/Born/source
+       55.41 real        53.78 user         0.33 sys
+           243662848  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               18913  page reclaims
+                  46  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 280  voluntary context switches
+               69221  involuntary context switches
+        710700270149  instructions retired
+        175552988546  cycles elapsed
+           238502512  peak memory footprint

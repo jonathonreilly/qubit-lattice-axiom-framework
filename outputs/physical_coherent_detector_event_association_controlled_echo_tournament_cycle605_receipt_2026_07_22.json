@@ -1,0 +1,1023 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "axiom_pressure": false,
+  "constitutional_effect": "none",
+  "elapsed_seconds": 2.1398980000521988,
+  "frozen_law_sha256": "d3353a3c4c098fecc5c54209e8498d4703f3951700b8ad71660abaecbcb7bb87",
+  "highest_honest_terminal": "exact decoded-N2 A2 predicate circuit, exact algebraic coherent-d path-erasure identity, explicit detector/binder candidate association, and exact N4-free controlled-contact circuit; physical code-compatible membership routing, controlled-G, grade-changing X/Y read pulse, selector genesis, actual occurrence/Record, proper time, calibration, Born rule, and gravity/source response remain open",
+  "maturity": {
+    "Born_probability_repo_strict": [
+      4.2,
+      3.65
+    ],
+    "causal_time_repo_strict": [
+      4.04,
+      3.86
+    ],
+    "gravity_source_repo_strict": [
+      4.1,
+      3.85
+    ],
+    "inertia_matter_repo_strict": [
+      4.84,
+      4.9
+    ],
+    "operational_quantum_records_repo_strict": [
+      4.84,
+      4.68
+    ]
+  },
+  "maximum_RSS_bytes": 1110425600,
+  "membership_compiler": {
+    "Toffoli_decomposition_residual": 7.93119113412187e-16,
+    "clean_work_M2": 5,
+    "counts_per_predicate_copy": {
+      "NN_route_return_SWAPs": 40,
+      "adjacent_fermionic_Givens": 16,
+      "elementary_total": 215,
+      "installed_two_M2_gates": 117,
+      "logical_two_M2_gates": 61,
+      "one_M2_gates": 98,
+      "serial_depth": 215
+    },
+    "decoded_N2_predicate": "Q^dagger then equality 110000 then Q",
+    "exact_inverse": "reverse elementary word with T/Tdg and Q/Qdag exchanged",
+    "full_computational_Hilbert_unitary": true,
+    "literal_NN_line": [
+      "q0",
+      "q1",
+      "w0",
+      "q2",
+      "w1",
+      "q3",
+      "w2",
+      "q4",
+      "w3",
+      "q5",
+      "w4",
+      "pointer"
+    ],
+    "pass": true,
+    "physical_code_interface": {
+      "accepted_compiler_maximum_route_edges": 32,
+      "accepted_route_B_exact_Givens_L6_total": 15984,
+      "accepted_route_B_exact_Givens_per_cell": 74,
+      "missing": [
+        "literal selected-factor/local-encoder decode order and per-readout NN SWAP total",
+        "proof that rotating persistent q M2 without Wdagger preserves auxiliary dressing"
+      ],
+      "strict_physical_predicate_closed": false
+    },
+    "retained_pointer_M2": 1,
+    "work_returns_blank": true
+  },
+  "no_go_discipline": {
+    "N1_attempted": 5,
+    "N1_broad_negative_gate": "not invoked; positive partial closures exist",
+    "N1_normalized_route_families": [
+      {
+        "attempted": true,
+        "disposition": "positive but not phase readout",
+        "mechanism_invariant": "commuting P_a/P_Ga copies",
+        "object_formulation": "which-channel sharp instrument",
+        "terminal_obligation": "channel populations"
+      },
+      {
+        "attempted": true,
+        "disposition": "algebraic positive; physical control open",
+        "mechanism_invariant": "path-H, controlled-G, membership erasure",
+        "object_formulation": "coherent detector preparation",
+        "terminal_obligation": "prepare d and inverse"
+      },
+      {
+        "attempted": true,
+        "disposition": "grade pulse open",
+        "mechanism_invariant": "U_d inverse plus vacuum/A2 grade pulse",
+        "object_formulation": "even X/Y Naimark readout",
+        "terminal_obligation": "complex amplitude and phase"
+      },
+      {
+        "attempted": true,
+        "disposition": "positive coherent association",
+        "mechanism_invariant": "pointer XOR and occupied binder",
+        "object_formulation": "detector-certified rotor",
+        "terminal_obligation": "candidate opportunity/rollover"
+      },
+      {
+        "attempted": true,
+        "disposition": "contact positive; controlled free/genesis open",
+        "mechanism_invariant": "phase-polynomial local contact",
+        "object_formulation": "controlled-contact echo",
+        "terminal_obligation": "actual/reference echo"
+      },
+      {
+        "attempted": false,
+        "disposition": "N4 remains out of domain",
+        "mechanism_invariant": "N4 encounter",
+        "object_formulation": "two independent dimers",
+        "terminal_obligation": "independent matter standard"
+      },
+      {
+        "attempted": false,
+        "disposition": "occurrence/Record open",
+        "mechanism_invariant": "actual permanent events",
+        "object_formulation": "Record-admitted detector corpus",
+        "terminal_obligation": "proper-time calibration"
+      }
+    ],
+    "N1_required_for_broad_negative": 5,
+    "N2_directional_wall_pairs": [
+      {
+        "collapsed": false,
+        "left_to_right": "controlled-G plus code-compatible physical membership and grade pulse does not supply selection/admission of one coherent candidate as an occurrence/Record",
+        "pair": [
+          "physical coherent detector",
+          "event actuality"
+        ],
+        "right_to_left": "selection/admission of one coherent candidate as an occurrence/Record does not supply controlled-G plus code-compatible physical membership and grade pulse"
+      },
+      {
+        "collapsed": false,
+        "left_to_right": "controlled-G plus code-compatible physical membership and grade pulse does not supply autonomous preparation/stabilization of the actual/reference cat field",
+        "pair": [
+          "physical coherent detector",
+          "selector genesis"
+        ],
+        "right_to_left": "autonomous preparation/stabilization of the actual/reference cat field does not supply controlled-G plus code-compatible physical membership and grade pulse"
+      },
+      {
+        "collapsed": false,
+        "left_to_right": "controlled-G plus code-compatible physical membership and grade pulse does not supply calibration of permanent event intervals to a physical time standard",
+        "pair": [
+          "physical coherent detector",
+          "proper time"
+        ],
+        "right_to_left": "calibration of permanent event intervals to a physical time standard does not supply controlled-G plus code-compatible physical membership and grade pulse"
+      },
+      {
+        "collapsed": false,
+        "left_to_right": "controlled-G plus code-compatible physical membership and grade pulse does not supply local enforcement of the inherited global N<=3 cutoff",
+        "pair": [
+          "physical coherent detector",
+          "global domain"
+        ],
+        "right_to_left": "local enforcement of the inherited global N<=3 cutoff does not supply controlled-G plus code-compatible physical membership and grade pulse"
+      },
+      {
+        "collapsed": false,
+        "left_to_right": "selection/admission of one coherent candidate as an occurrence/Record does not supply autonomous preparation/stabilization of the actual/reference cat field",
+        "pair": [
+          "event actuality",
+          "selector genesis"
+        ],
+        "right_to_left": "autonomous preparation/stabilization of the actual/reference cat field does not supply selection/admission of one coherent candidate as an occurrence/Record"
+      },
+      {
+        "collapsed": false,
+        "left_to_right": "selection/admission of one coherent candidate as an occurrence/Record does not supply calibration of permanent event intervals to a physical time standard",
+        "pair": [
+          "event actuality",
+          "proper time"
+        ],
+        "right_to_left": "calibration of permanent event intervals to a physical time standard does not supply selection/admission of one coherent candidate as an occurrence/Record"
+      },
+      {
+        "collapsed": false,
+        "left_to_right": "selection/admission of one coherent candidate as an occurrence/Record does not supply local enforcement of the inherited global N<=3 cutoff",
+        "pair": [
+          "event actuality",
+          "global domain"
+        ],
+        "right_to_left": "local enforcement of the inherited global N<=3 cutoff does not supply selection/admission of one coherent candidate as an occurrence/Record"
+      },
+      {
+        "collapsed": false,
+        "left_to_right": "autonomous preparation/stabilization of the actual/reference cat field does not supply calibration of permanent event intervals to a physical time standard",
+        "pair": [
+          "selector genesis",
+          "proper time"
+        ],
+        "right_to_left": "calibration of permanent event intervals to a physical time standard does not supply autonomous preparation/stabilization of the actual/reference cat field"
+      },
+      {
+        "collapsed": false,
+        "left_to_right": "autonomous preparation/stabilization of the actual/reference cat field does not supply local enforcement of the inherited global N<=3 cutoff",
+        "pair": [
+          "selector genesis",
+          "global domain"
+        ],
+        "right_to_left": "local enforcement of the inherited global N<=3 cutoff does not supply autonomous preparation/stabilization of the actual/reference cat field"
+      },
+      {
+        "collapsed": false,
+        "left_to_right": "calibration of permanent event intervals to a physical time standard does not supply local enforcement of the inherited global N<=3 cutoff",
+        "pair": [
+          "proper time",
+          "global domain"
+        ],
+        "right_to_left": "local enforcement of the inherited global N<=3 cutoff does not supply calibration of permanent event intervals to a physical time standard"
+      }
+    ],
+    "N3_hidden_supplies": [
+      "beta=-0.3, g=0.37, L3/L6 and held-out L4, N=2 detector code",
+      "blank path/pointers/work, H/T phases, noiseless coherent control",
+      "accepted G/G^-1, local encoder theorem, supplied global N<=3 domain",
+      "occupied binder, root rotor, selector cat field and reference genesis"
+    ],
+    "N4_exact_residual_matching": {
+      "Cycle602_exact_match": "the missing cross term, not projector noncommutation, distinguishes which-channel copying from the frozen coherent detector",
+      "Route_A": {
+        "commutator": 0.0,
+        "interference_loss": 0.003209185236062409,
+        "surface": "physical_coherent_detector_event_association_controlled_echo_tournament_cycle605_2026_07_22.py:315"
+      },
+      "Route_B": {
+        "lawful_truth_failures": 0,
+        "surface": "physical_coherent_detector_event_association_controlled_echo_tournament_cycle605_2026_07_22.py:530"
+      },
+      "Route_C": {
+        "surface": "physical_coherent_detector_event_association_controlled_echo_tournament_cycle605_2026_07_22.py:643",
+        "truth_residual": 7.108895957933346e-16
+      }
+    },
+    "N5_resolution_rhetoric": "finite exact L3/L6/L4 N=2 detector algebra, seven-M2 local contact line, and prefixes through 8; no arbitrary-size physical readout, event actuality, Record, proper time, energy, or Born claim",
+    "N6_new_axiom_gate_invoked": false,
+    "N6_partial_closure_paths": [
+      "extract and route the accepted W/Wdagger local decoder as an explicit readout macro",
+      "compile controlled G from the accepted physical factor list or replace it by a direct d-state circuit",
+      "compile the vacuum/A2 X/Y pulse; derive actual occurrence and Record admission",
+      "derive selector genesis or avoid the direct-sum echo"
+    ],
+    "N7_hostile_steelman": "A hostile constructor can control every accepted physical G factor, use the exact path-erasure identity, and then compile the remaining grade pulse; the finite walls are explicit engineering obligations, not a no-go.",
+    "N8_cross_cycle_echo": "Cycles170/243 forbid schedule-to-time promotion; Cycles451/498/504/570 retain identity, predecessor and rollover; Cycle602's coherent aggregate\u2014not its two separate populations\u2014is the readout target.",
+    "axiom_pressure": false,
+    "minimum_content_claim_shipped": false,
+    "negative_claim_shipped": false,
+    "pass": true,
+    "shared_obstruction": false
+  },
+  "note_contract": {
+    "missing": [],
+    "pass": true,
+    "required": 29
+  },
+  "note_sha256": "831fd6e20630d0fcc3623ffb9197fab2e420f0ec9f9378136f74ef888c3b3a03",
+  "pass": true,
+  "route_A": {
+    "coherent_preparation": {
+      "Hadamard_XY_readout_requires": "U_d inverse followed by a vacuum/A2 grade-changing X/Y pulse and pointer; that pulse remains supplied",
+      "absolute_complex_phase_boundary": "d+ and d+i memberships expose relative a/Ga interference; phase of <d|psi> against a fixed origin needs a physical reference arm",
+      "coherent_detector_preparation_identity": "H_path; controlled-G; G^-1; A2-membership-X_path; G",
+      "coherent_preparation_residual": 5.916983715440049e-16,
+      "controlled_G_elementary_physical_layout_synthesized": false,
+      "d_plus_and_d_plus_i_relative_interference": [
+        {
+          "Im_relative_interference": -5.551115123125783e-17,
+          "P_d_plus_i_weight": 0.4999999999999996,
+          "P_d_plus_weight": 0.4999999999999996,
+          "Re_relative_interference": -5.551115123125783e-17,
+          "q": 1,
+          "split": "train"
+        },
+        {
+          "Im_relative_interference": -1.3877787807814457e-17,
+          "P_d_plus_i_weight": 0.09548472984700875,
+          "P_d_plus_weight": 0.09548472984700875,
+          "Re_relative_interference": -1.3877787807814457e-17,
+          "q": 2,
+          "split": "train"
+        },
+        {
+          "Im_relative_interference": 0.00523711740495765,
+          "P_d_plus_i_weight": 0.10082062291131288,
+          "P_d_plus_weight": 0.09879269074241764,
+          "Re_relative_interference": 0.003209185236062409,
+          "q": 3,
+          "split": "train"
+        },
+        {
+          "Im_relative_interference": -0.01004288847904733,
+          "P_d_plus_i_weight": 0.25384648137976706,
+          "P_d_plus_weight": 0.2657236954796701,
+          "Re_relative_interference": 0.0018343256208557257,
+          "q": 4,
+          "split": "train"
+        },
+        {
+          "Im_relative_interference": -5.551115123125783e-17,
+          "P_d_plus_i_weight": 0.4999999999999996,
+          "P_d_plus_weight": 0.4999999999999996,
+          "Re_relative_interference": -5.551115123125783e-17,
+          "q": 1,
+          "split": "held"
+        },
+        {
+          "Im_relative_interference": -1.3877787807814457e-17,
+          "P_d_plus_i_weight": 0.09548472984700875,
+          "P_d_plus_weight": 0.09548472984700875,
+          "Re_relative_interference": -1.3877787807814457e-17,
+          "q": 2,
+          "split": "held"
+        },
+        {
+          "Im_relative_interference": 0.0,
+          "P_d_plus_i_weight": 0.09548472984700863,
+          "P_d_plus_weight": 0.09548472984700863,
+          "Re_relative_interference": 0.0,
+          "q": 3,
+          "split": "held"
+        },
+        {
+          "Im_relative_interference": -1.1102230246251565e-16,
+          "P_d_plus_i_weight": 0.2637905941994677,
+          "P_d_plus_weight": 0.2637905941994677,
+          "Re_relative_interference": -1.1102230246251565e-16,
+          "q": 4,
+          "split": "held"
+        },
+        {
+          "Im_relative_interference": -5.551115123125783e-17,
+          "P_d_plus_i_weight": 0.2637905941994676,
+          "P_d_plus_weight": 0.2637905941994676,
+          "Re_relative_interference": -5.551115123125783e-17,
+          "q": 5,
+          "split": "held"
+        },
+        {
+          "Im_relative_interference": -2.7755575615628914e-17,
+          "P_d_plus_i_weight": 0.1335862098368123,
+          "P_d_plus_weight": 0.1335862098368123,
+          "Re_relative_interference": -2.7755575615628914e-17,
+          "q": 6,
+          "split": "held"
+        },
+        {
+          "Im_relative_interference": -5.551115123125783e-17,
+          "P_d_plus_i_weight": 0.4999999999999996,
+          "P_d_plus_weight": 0.4999999999999996,
+          "Re_relative_interference": -5.551115123125783e-17,
+          "q": 1,
+          "split": "held_out_size"
+        },
+        {
+          "Im_relative_interference": -1.3877787807814457e-17,
+          "P_d_plus_i_weight": 0.09548472984700875,
+          "P_d_plus_weight": 0.09548472984700875,
+          "Re_relative_interference": -1.3877787807814457e-17,
+          "q": 2,
+          "split": "held_out_size"
+        },
+        {
+          "Im_relative_interference": 0.0,
+          "P_d_plus_i_weight": 0.09548472984700863,
+          "P_d_plus_weight": 0.09548472984700863,
+          "Re_relative_interference": 0.0,
+          "q": 3,
+          "split": "held_out_size"
+        },
+        {
+          "Im_relative_interference": -8.326672684688674e-17,
+          "P_d_plus_i_weight": 0.23991826458237026,
+          "P_d_plus_weight": 0.23991826458237026,
+          "Re_relative_interference": -8.326672684688674e-17,
+          "q": 4,
+          "split": "held_out_size"
+        },
+        {
+          "Im_relative_interference": -8.326672684688674e-17,
+          "P_d_plus_i_weight": 0.2399182645823701,
+          "P_d_plus_weight": 0.2399182645823701,
+          "Re_relative_interference": -8.326672684688674e-17,
+          "q": 5,
+          "split": "held_out_size"
+        },
+        {
+          "Im_relative_interference": -2.7755575615628914e-17,
+          "P_d_plus_i_weight": 0.14898183504973567,
+          "P_d_plus_weight": 0.14898183504973567,
+          "Re_relative_interference": -2.7755575615628914e-17,
+          "q": 6,
+          "split": "held_out_size"
+        }
+      ],
+      "declared_inverse_residual": 1.4340978779080623e-15,
+      "maximum_quadrature_identity_residual": 1.1102230246251565e-16,
+      "maximum_relative_interference_signal": 0.01004288847904733,
+      "membership_predicate_called_phase_or_amplitude_readout": false,
+      "offcode_full_space_inverse_residual": 1.7236753648881522e-15,
+      "offcode_norm_residual": 1.3322676295501878e-15,
+      "path_erasure_leakage_on_declared_a_input": 1.8889546759398252e-16,
+      "reason": "its reduced pointer statistics omit 2 Re(alpha* conjugate(beta))/2 and contain no aggregate complex phase",
+      "which_channel_copy_is_not_Cycle602_detector": true
+    },
+    "declared_readout_code": "global N=2 physical code with blank path, pointer, and five work M2",
+    "deletion": {
+      "controlled_G_deleted_target_residual": 0.7653668647301793,
+      "membership_eraser_deleted_path_leakage": 0.7071067811865475
+    },
+    "frame_products": 576,
+    "full_space_unitary_extension": true,
+    "maximum_all24_update_covariance_residual": 2.397692742256886e-16,
+    "maximum_all576_projector_group_residual": 0.0,
+    "maximum_inverse_residual": 2.328276530778557e-15,
+    "maximum_lawful_N2_leakage": 1.3322676295501878e-14,
+    "maximum_nonzero_interference_cross_term": 0.003209185236062409,
+    "maximum_order_swap_disturbance": 0.0,
+    "maximum_pointer_sector_norm_residual": 2.5979218776228663e-14,
+    "maximum_projector_commutator": 0.0,
+    "maximum_which_channel_vs_coherent_detector_weight_residual": 0.003209185236062409,
+    "pass": true,
+    "predicate_compiler": {
+      "Toffoli_decomposition_residual": 7.93119113412187e-16,
+      "clean_work_M2": 5,
+      "counts_per_predicate_copy": {
+        "NN_route_return_SWAPs": 40,
+        "adjacent_fermionic_Givens": 16,
+        "elementary_total": 215,
+        "installed_two_M2_gates": 117,
+        "logical_two_M2_gates": 61,
+        "one_M2_gates": 98,
+        "serial_depth": 215
+      },
+      "decoded_N2_predicate": "Q^dagger then equality 110000 then Q",
+      "exact_inverse": "reverse elementary word with T/Tdg and Q/Qdag exchanged",
+      "full_computational_Hilbert_unitary": true,
+      "literal_NN_line": [
+        "q0",
+        "q1",
+        "w0",
+        "q2",
+        "w1",
+        "q3",
+        "w2",
+        "q4",
+        "w3",
+        "q5",
+        "w4",
+        "pointer"
+      ],
+      "pass": true,
+      "physical_code_interface": {
+        "accepted_compiler_maximum_route_edges": 32,
+        "accepted_route_B_exact_Givens_L6_total": 15984,
+        "accepted_route_B_exact_Givens_per_cell": 74,
+        "missing": [
+          "literal selected-factor/local-encoder decode order and per-readout NN SWAP total",
+          "proof that rotating persistent q M2 without Wdagger preserves auxiliary dressing"
+        ],
+        "strict_physical_predicate_closed": false
+      },
+      "retained_pointer_M2": 1,
+      "work_returns_blank": true
+    },
+    "proper_cubic_frames": 24,
+    "retained_environment": "two which-channel pointer M2; five equality work M2 return blank",
+    "rows": [
+      {
+        "length": 3,
+        "projector_commutator": 0.0,
+        "split": "train",
+        "words": [
+          {
+            "Cycle602_coherent_aggregate": {
+              "imag": 0.0,
+              "real": 0.7071067811865474
+            },
+            "coherent_detector_weight": 0.4999999999999998,
+            "interference_cross_term": 1.1102230246251565e-16,
+            "law_applications_not_time": 1,
+            "onsite_amplitude": {
+              "imag": 0.0,
+              "real": 0.0
+            },
+            "transported_amplitude": {
+              "imag": 0.0,
+              "real": 0.9999999999999997
+            },
+            "which_channel_pointer_weight_after_beamsplitter_normalization": 0.49999999999999967
+          },
+          {
+            "Cycle602_coherent_aggregate": {
+              "imag": 0.15452805989245166,
+              "real": 0.26759261677573165
+            },
+            "coherent_detector_weight": 0.0954847298470087,
+            "interference_cross_term": -5.551115123125783e-17,
+            "law_applications_not_time": 2,
+            "onsite_amplitude": {
+              "imag": 0.2185356780671071,
+              "real": 0.378433107835146
+            },
+            "transported_amplitude": {
+              "imag": 0.0,
+              "real": 0.0
+            },
+            "which_channel_pointer_weight_after_beamsplitter_normalization": 0.09548472984700876
+          },
+          {
+            "Cycle602_coherent_aggregate": {
+              "imag": 0.14978643898698865,
+              "real": 0.2763271854849153
+            },
+            "coherent_detector_weight": 0.09879269074241764,
+            "interference_cross_term": 0.003209185236062409,
+            "law_applications_not_time": 3,
+            "onsite_amplitude": {
+              "imag": -0.006705664592137496,
+              "real": 0.012352545530007263
+            },
+            "transported_amplitude": {
+              "imag": 0.218535678067107,
+              "real": 0.37843310783514583
+            },
+            "which_channel_pointer_weight_after_beamsplitter_normalization": 0.09558350550635523
+          },
+          {
+            "Cycle602_coherent_aggregate": {
+              "imag": 0.3952689853025164,
+              "real": 0.3308868760431414
+            },
+            "coherent_detector_weight": 0.26572369547967023,
+            "interference_cross_term": 0.0018343256208558367,
+            "law_applications_not_time": 4,
+            "onsite_amplitude": {
+              "imag": 0.5657004243924078,
+              "real": 0.4555921621814685
+            },
+            "transported_amplitude": {
+              "imag": -0.0067056645921374945,
+              "real": 0.012352545530007258
+            },
+            "which_channel_pointer_weight_after_beamsplitter_normalization": 0.2638893698588144
+          }
+        ]
+      },
+      {
+        "length": 6,
+        "projector_commutator": 0.0,
+        "split": "held",
+        "words": [
+          {
+            "Cycle602_coherent_aggregate": {
+              "imag": 0.0,
+              "real": 0.7071067811865474
+            },
+            "coherent_detector_weight": 0.4999999999999998,
+            "interference_cross_term": 1.1102230246251565e-16,
+            "law_applications_not_time": 1,
+            "onsite_amplitude": {
+              "imag": 0.0,
+              "real": 0.0
+            },
+            "transported_amplitude": {
+              "imag": 0.0,
+              "real": 0.9999999999999997
+            },
+            "which_channel_pointer_weight_after_beamsplitter_normalization": 0.49999999999999967
+          },
+          {
+            "Cycle602_coherent_aggregate": {
+              "imag": 0.15452805989245166,
+              "real": 0.26759261677573165
+            },
+            "coherent_detector_weight": 0.0954847298470087,
+            "interference_cross_term": -5.551115123125783e-17,
+            "law_applications_not_time": 2,
+            "onsite_amplitude": {
+              "imag": 0.21853567806710708,
+              "real": 0.378433107835146
+            },
+            "transported_amplitude": {
+              "imag": 0.0,
+              "real": 0.0
+            },
+            "which_channel_pointer_weight_after_beamsplitter_normalization": 0.09548472984700876
+          },
+          {
+            "Cycle602_coherent_aggregate": {
+              "imag": 0.15452805989245158,
+              "real": 0.26759261677573154
+            },
+            "coherent_detector_weight": 0.0954847298470086,
+            "interference_cross_term": -2.7755575615628914e-17,
+            "law_applications_not_time": 3,
+            "onsite_amplitude": {
+              "imag": 0.0,
+              "real": 0.0
+            },
+            "transported_amplitude": {
+              "imag": 0.21853567806710694,
+              "real": 0.37843310783514583
+            },
+            "which_channel_pointer_weight_after_beamsplitter_normalization": 0.09548472984700863
+          },
+          {
+            "Cycle602_coherent_aggregate": {
+              "imag": 0.40001060620797935,
+              "real": 0.3221523073339577
+            },
+            "coherent_detector_weight": 0.2637905941994678,
+            "interference_cross_term": 0.0,
+            "law_applications_not_time": 4,
+            "onsite_amplitude": {
+              "imag": 0.5657004243924076,
+              "real": 0.4555921621814685
+            },
+            "transported_amplitude": {
+              "imag": 0.0,
+              "real": 0.0
+            },
+            "which_channel_pointer_weight_after_beamsplitter_normalization": 0.2637905941994678
+          },
+          {
+            "Cycle602_coherent_aggregate": {
+              "imag": 0.400010606207979,
+              "real": 0.3221523073339575
+            },
+            "coherent_detector_weight": 0.2637905941994675,
+            "interference_cross_term": -1.6653345369377348e-16,
+            "law_applications_not_time": 5,
+            "onsite_amplitude": {
+              "imag": 0.0,
+              "real": 0.0
+            },
+            "transported_amplitude": {
+              "imag": 0.5657004243924075,
+              "real": 0.45559216218146825
+            },
+            "which_channel_pointer_weight_after_beamsplitter_normalization": 0.26379059419946765
+          },
+          {
+            "Cycle602_coherent_aggregate": {
+              "imag": 0.3627330597032465,
+              "real": 0.044843474833395236
+            },
+            "coherent_detector_weight": 0.1335862098368123,
+            "interference_cross_term": -2.7755575615628914e-17,
+            "law_applications_not_time": 6,
+            "onsite_amplitude": {
+              "imag": 0.5129820125534208,
+              "real": 0.06341825029332411
+            },
+            "transported_amplitude": {
+              "imag": 0.0,
+              "real": 0.0
+            },
+            "which_channel_pointer_weight_after_beamsplitter_normalization": 0.13358620983681233
+          }
+        ]
+      },
+      {
+        "length": 4,
+        "projector_commutator": 0.0,
+        "split": "held_out_size",
+        "words": [
+          {
+            "Cycle602_coherent_aggregate": {
+              "imag": 0.0,
+              "real": 0.7071067811865474
+            },
+            "coherent_detector_weight": 0.4999999999999998,
+            "interference_cross_term": 1.1102230246251565e-16,
+            "law_applications_not_time": 1,
+            "onsite_amplitude": {
+              "imag": 0.0,
+              "real": 0.0
+            },
+            "transported_amplitude": {
+              "imag": 0.0,
+              "real": 0.9999999999999997
+            },
+            "which_channel_pointer_weight_after_beamsplitter_normalization": 0.49999999999999967
+          },
+          {
+            "Cycle602_coherent_aggregate": {
+              "imag": 0.15452805989245166,
+              "real": 0.26759261677573165
+            },
+            "coherent_detector_weight": 0.0954847298470087,
+            "interference_cross_term": -5.551115123125783e-17,
+            "law_applications_not_time": 2,
+            "onsite_amplitude": {
+              "imag": 0.21853567806710708,
+              "real": 0.378433107835146
+            },
+            "transported_amplitude": {
+              "imag": 0.0,
+              "real": 0.0
+            },
+            "which_channel_pointer_weight_after_beamsplitter_normalization": 0.09548472984700876
+          },
+          {
+            "Cycle602_coherent_aggregate": {
+              "imag": 0.15452805989245158,
+              "real": 0.26759261677573154
+            },
+            "coherent_detector_weight": 0.0954847298470086,
+            "interference_cross_term": -2.7755575615628914e-17,
+            "law_applications_not_time": 3,
+            "onsite_amplitude": {
+              "imag": 0.0,
+              "real": 0.0
+            },
+            "transported_amplitude": {
+              "imag": 0.21853567806710694,
+              "real": 0.37843310783514583
+            },
+            "which_channel_pointer_weight_after_beamsplitter_normalization": 0.09548472984700863
+          },
+          {
+            "Cycle602_coherent_aggregate": {
+              "imag": 0.40603931592398157,
+              "real": 0.2739531684546749
+            },
+            "coherent_detector_weight": 0.23991826458237037,
+            "interference_cross_term": 2.7755575615628914e-17,
+            "law_applications_not_time": 4,
+            "onsite_amplitude": {
+              "imag": 0.5742263074363885,
+              "real": 0.3874282862836823
+            },
+            "transported_amplitude": {
+              "imag": 0.0,
+              "real": 0.0
+            },
+            "which_channel_pointer_weight_after_beamsplitter_normalization": 0.23991826458237034
+          },
+          {
+            "Cycle602_coherent_aggregate": {
+              "imag": 0.40603931592398135,
+              "real": 0.27395316845467466
+            },
+            "coherent_detector_weight": 0.23991826458237003,
+            "interference_cross_term": -1.3877787807814457e-16,
+            "law_applications_not_time": 5,
+            "onsite_amplitude": {
+              "imag": 0.0,
+              "real": 0.0
+            },
+            "transported_amplitude": {
+              "imag": 0.5742263074363884,
+              "real": 0.3874282862836821
+            },
+            "which_channel_pointer_weight_after_beamsplitter_normalization": 0.23991826458237017
+          },
+          {
+            "Cycle602_coherent_aggregate": {
+              "imag": 0.38160988313952837,
+              "real": 0.05792868149691624
+            },
+            "coherent_detector_weight": 0.14898183504973567,
+            "interference_cross_term": -2.7755575615628914e-17,
+            "law_applications_not_time": 6,
+            "onsite_amplitude": {
+              "imag": 0.539677872271533,
+              "real": 0.08192352702333032
+            },
+            "transported_amplitude": {
+              "imag": 0.0,
+              "real": 0.0
+            },
+            "which_channel_pointer_weight_after_beamsplitter_normalization": 0.1489818350497357
+          }
+        ]
+      }
+    ],
+    "strict_physical_coherent_detector_closed": false
+  },
+  "route_B": {
+    "actual_occurrence_Record_and_proper_time_open": true,
+    "association_word": "CNOT(p0,certificate); CNOT(p1,certificate); TOFFOLI(certificate,binder,opportunity); Cycle570 rotor",
+    "candidate_opportunity_called_event_or_Record": false,
+    "candidate_opportunity_is_coherent": true,
+    "deletion_controls": {
+      "delete_binder_Toffoli_missed": 1,
+      "delete_p1_certificate_CNOT_missed": 1,
+      "dirty_certificate_with_pointers_00_extra": 1
+    },
+    "frame_products": 576,
+    "lawful_truth_failures": 0,
+    "material_detector_state_and_occupied_binder_supplied": true,
+    "new_elementary_gate_counts_per_encounter": {
+      "CNOT": 2,
+      "NN_route_return_SWAPs": 6,
+      "TOFFOLI": 1,
+      "Toffoli_as_one_two_M2_gates": 15,
+      "installed_serial_total": 23,
+      "new_total_before_NN_routing": 17
+    },
+    "pass": true,
+    "physical_detector_pointer_input_supplied": true,
+    "pointer_binder_to_opportunity_map_derived": true,
+    "proper_cubic_frames": 24,
+    "rows": {
+      "1": {
+        "certified_detector_encounters_not_time": 1,
+        "identity_and_predecessor_inherited_from_Cycle570": true,
+        "inverse_exact": true,
+        "rollover": 0,
+        "rotor_count_not_time": 1,
+        "terminal_certificate_matches_pointer_XOR": true
+      },
+      "2": {
+        "certified_detector_encounters_not_time": 2,
+        "identity_and_predecessor_inherited_from_Cycle570": true,
+        "inverse_exact": true,
+        "rollover": 0,
+        "rotor_count_not_time": 2,
+        "terminal_certificate_matches_pointer_XOR": true
+      },
+      "4": {
+        "certified_detector_encounters_not_time": 4,
+        "identity_and_predecessor_inherited_from_Cycle570": true,
+        "inverse_exact": true,
+        "rollover": 1,
+        "rotor_count_not_time": 4,
+        "terminal_certificate_matches_pointer_XOR": true
+      },
+      "5": {
+        "certified_detector_encounters_not_time": 5,
+        "identity_and_predecessor_inherited_from_Cycle570": true,
+        "inverse_exact": true,
+        "rollover": 1,
+        "rotor_count_not_time": 5,
+        "terminal_certificate_matches_pointer_XOR": true
+      },
+      "8": {
+        "certified_detector_encounters_not_time": 8,
+        "identity_and_predecessor_inherited_from_Cycle570": true,
+        "inverse_exact": true,
+        "rollover": 2,
+        "rotor_count_not_time": 8,
+        "terminal_certificate_matches_pointer_XOR": true
+      }
+    },
+    "truth_table": [
+      {
+        "binder": 0,
+        "certificate": 0,
+        "lawful_N2_pointer_word": true,
+        "opportunity": 0,
+        "p0": 0,
+        "p1": 0
+      },
+      {
+        "binder": 1,
+        "certificate": 0,
+        "lawful_N2_pointer_word": true,
+        "opportunity": 0,
+        "p0": 0,
+        "p1": 0
+      },
+      {
+        "binder": 0,
+        "certificate": 1,
+        "lawful_N2_pointer_word": true,
+        "opportunity": 0,
+        "p0": 0,
+        "p1": 1
+      },
+      {
+        "binder": 1,
+        "certificate": 1,
+        "lawful_N2_pointer_word": true,
+        "opportunity": 1,
+        "p0": 0,
+        "p1": 1
+      },
+      {
+        "binder": 0,
+        "certificate": 1,
+        "lawful_N2_pointer_word": true,
+        "opportunity": 0,
+        "p0": 1,
+        "p1": 0
+      },
+      {
+        "binder": 1,
+        "certificate": 1,
+        "lawful_N2_pointer_word": true,
+        "opportunity": 1,
+        "p0": 1,
+        "p1": 0
+      },
+      {
+        "binder": 0,
+        "certificate": 0,
+        "lawful_N2_pointer_word": false,
+        "opportunity": 0,
+        "p0": 1,
+        "p1": 1
+      },
+      {
+        "binder": 1,
+        "certificate": 0,
+        "lawful_N2_pointer_word": false,
+        "opportunity": 0,
+        "p0": 1,
+        "p1": 1
+      }
+    ]
+  },
+  "route_C": {
+    "all24_pair_orbit_failures": 0,
+    "all576_direction_group_failures": 0,
+    "controlled_free_update_compiled": false,
+    "counts": {
+      "NN_route_return_SWAPs": 680,
+      "controlled_pair_phase_macros": 15,
+      "elementary_total_per_cell": 935,
+      "held_L6_cells": 216,
+      "held_elementary_total": 201960,
+      "installed_two_M2_gates": 830,
+      "logical_CNOT": 150,
+      "one_M2_phase_gates": 105,
+      "serial_depth_per_cell": 935
+    },
+    "covariance_reason": "all 15 unordered direction pairs are included and scalar selector is frame-fixed",
+    "deleted_one_contact_pair_signal": 0.36789306705608243,
+    "direct_sum_reference_independent_genesis_supplied": true,
+    "frame_products": 576,
+    "full_path_echo_strict_physical_closed": false,
+    "inverse": "reverse the same route-return word and negate all phase angles",
+    "lawful_executed_matter_domain": "same complete global N<=3 code as Cycle590; no N4 fixture",
+    "literal_local_NN_line": [
+      "selector",
+      "q0",
+      "q1",
+      "q2",
+      "q3",
+      "q4",
+      "q5"
+    ],
+    "pass": true,
+    "phase_polynomial": "xyz=(x+y+z-(x XOR y)-(x XOR z)-(y XOR z)+(x XOR y XOR z))/4",
+    "proper_cubic_frames": 24,
+    "selector_M2_per_cell": 1,
+    "selector_checks_preserved_not_enforced": true,
+    "selector_equality_checks_per_cell": 3,
+    "selector_field_genesis_supplied": true,
+    "truth_table_maximum_residual_N0_through_N6": 7.108895957933346e-16
+  },
+  "runner_sha256": "201461575d99bb54c6c68a0293064885f05cf016eae9f77ec8dd4b360d8eaf82",
+  "shared_obstruction": false,
+  "shore": {
+    "Cycle602_pass": true,
+    "expected": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_TRANSPORTED_OBSERVABLE_RAMSEY_ECHO_EVENT_ROTOR_TOURNAMENT_CYCLE602_NOTE_2026-07-22.md": "06bb25903cca7004ed47bade96a21a135467a4b0ab4ee6214fa22dd4ef7698fe",
+      "outputs/physical_transported_observable_ramsey_echo_event_rotor_tournament_cycle602_receipt_2026_07_22.json": "dfab872f4f6aff8c27fa71d70a2b85975e769c8eac8850b1d0aac85f6b9ab5d4",
+      "scripts/physical_transported_observable_ramsey_echo_event_rotor_tournament_cycle602_2026_07_22.py": "a56a4521acaba5263549f0a83d79dce39ddcd71a37d5a4f2c83e260f49def6c5"
+    },
+    "observed": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_TRANSPORTED_OBSERVABLE_RAMSEY_ECHO_EVENT_ROTOR_TOURNAMENT_CYCLE602_NOTE_2026-07-22.md": "06bb25903cca7004ed47bade96a21a135467a4b0ab4ee6214fa22dd4ef7698fe",
+      "outputs/physical_transported_observable_ramsey_echo_event_rotor_tournament_cycle602_receipt_2026_07_22.json": "dfab872f4f6aff8c27fa71d70a2b85975e769c8eac8850b1d0aac85f6b9ab5d4",
+      "scripts/physical_transported_observable_ramsey_echo_event_rotor_tournament_cycle602_2026_07_22.py": "a56a4521acaba5263549f0a83d79dce39ddcd71a37d5a4f2c83e260f49def6c5"
+    },
+    "retained_physical_fixtures": {
+      "Cycle230_contact_factorization_residual": 0.0,
+      "Cycle230_held_seam_translation_residual": 0.0,
+      "one_particle_mass_residual": 1.1102230246251565e-16
+    }
+  },
+  "six_wall_ledger": {
+    "C_int": "selector-controlled onsite contact now has an exact N4-free 1/2-M2 phase circuit; controlled free update and branch genesis remain open",
+    "C_local": "A2 decoded predicate and controlled contact have literal NN schedules; physical W readout routing and controlled-G keep the coherent detector open",
+    "C_num": "L3/L6 plus held-out L4 separate coherent aggregate from which-channel populations; no arbitrary-size or empirical-unit theorem",
+    "C_ref": "coherent d preparation identity is exact algebraically; physical controlled-G, code-compatible predicate, and grade pulse remain explicit",
+    "C_source": "no source-conditioned detector response, lapse, redshift, backreaction, or gravity law is derived",
+    "C_wrap": "detector/binder gates derive a coherent candidate opportunity and drive exact rollover; occurrence, Record, calibration, and proper time remain open"
+  },
+  "slater_mesh": {
+    "adjacent_number_preserving_Givens": 8,
+    "first_orbital": [
+      0.0,
+      0.0,
+      -0.4999999999999997,
+      -0.5000000000000003,
+      0.4999999999999999,
+      0.4999999999999999
+    ],
+    "mesh_digest": "5c2cdae94d6aa0efbb3979b7af792f9818dbe6e24e13b6102a6aa91f149ef542",
+    "one_M2_diagonal_minus_signs": 0,
+    "pass": true,
+    "residuals": {
+      "Slater_reconstruction": 5.4672143489065705e-16,
+      "antisymmetric_rank": 2,
+      "mesh_matrix": 6.442343541099382e-16,
+      "orthogonality": 7.987089712905829e-16,
+      "wedge_A2": 3.8659043403122315e-16
+    },
+    "second_orbital": [
+      0.5773502691896258,
+      0.5773502691896258,
+      -0.28867513459481287,
+      -0.2886751345948128,
+      -0.2886751345948129,
+      -0.28867513459481287
+    ]
+  },
+  "status": "PASS",
+  "tests_failed": 0,
+  "tests_passed": 9
+}

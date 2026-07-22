@@ -8,6 +8,7 @@ import os
 import subprocess
 import sys
 import tempfile
+import threading
 import time
 import unittest
 from pathlib import Path
@@ -791,7 +792,7 @@ class ClaimTransactionTest(unittest.TestCase):
         self.assertTrue(result)
         self.assertEqual(streamed, [[1, 2]])
 
-    def test_wait_workers_uses_file_mtime_across_long_callback(self):
+    def test_wait_workers_enforces_stall_during_long_callback(self):
         class FakeProc:
             next_pid = 2000
 
@@ -813,6 +814,8 @@ class ClaimTransactionTest(unittest.TestCase):
 
             def job(cid, done=False):
                 log_path = root / f"{cid}.log"
+                log_handle = log_path.open("w", encoding="utf-8")
+                os.utime(log_path, (0.0, 0.0))
                 return {
                     "cid": cid,
                     "row": {"claim_id": cid},
@@ -820,8 +823,9 @@ class ClaimTransactionTest(unittest.TestCase):
                     "proc": FakeProc(done),
                     "raw_output": root / f"{cid}.out",
                     "log_path": log_path,
-                    "log_handle": log_path.open("w", encoding="utf-8"),
+                    "log_handle": log_handle,
                     "last_size": 0,
+                    "last_activity": (0, 0.0),
                     "last_progress": 0.0,
                     "last_progress_wall": 0.0,
                     "stalled": False,
@@ -829,19 +833,26 @@ class ClaimTransactionTest(unittest.TestCase):
 
             ready = job("ready", done=True)
             slow = job("slow")
+            callback_started = threading.Event()
+            release_callback = threading.Event()
 
             def callback(claim_jobs):
                 if claim_jobs[0]["cid"] == "ready":
-                    slow["log_handle"].write("progress")
-                    slow["log_handle"].flush()
-                    os.utime(slow["log_path"], (1.0, 1.0))
+                    callback_started.set()
+                    self.assertTrue(release_callback.wait(timeout=2))
                 return True
 
             with mock.patch.object(
-                batch.time, "time", side_effect=[0.0, 3600.0, 3600.0]
+                batch.time, "time", side_effect=[0.0, 3600.0]
             ), mock.patch.object(
-                batch.time, "sleep", return_value=None
-            ), mock.patch.object(batch.os, "killpg") as killpg:
+                batch.time,
+                "sleep",
+                side_effect=lambda _seconds: callback_started.wait(timeout=2),
+            ), mock.patch.object(
+                batch.os,
+                "killpg",
+                side_effect=lambda _pid, _signal: release_callback.set(),
+            ) as killpg:
                 result = batch.wait_workers(
                     [ready, slow],
                     stall_minutes=1,
@@ -933,7 +944,7 @@ class ClaimTransactionTest(unittest.TestCase):
             checkpoint_path = data / "static_pipeline_checkpoint.json"
             checkpoint_path.write_text(
                 json.dumps({
-                    "schema": "audit_static_pipeline_checkpoint_v1",
+                    "schema": batch.static_checkpoint.FINAL_SCHEMA,
                     "static_cache_sha256": {
                         name: hashlib.sha256(b"{}").hexdigest()
                         for name in batch.static_checkpoint.STATIC_CACHE_NAMES
@@ -999,16 +1010,24 @@ class ClaimTransactionTest(unittest.TestCase):
             (root / ".gitignore").write_text(
                 "docs/audit/data/citation_graph.json\n"
                 "docs/audit/data/runner_classification.json\n"
-                "docs/audit/data/static_pipeline_checkpoint.json\n",
+                "docs/audit/data/static_pipeline_checkpoint.json\n"
+                "docs/ignored_local_note.md\n"
+                "scripts/ignored_runner.py\n",
                 encoding="utf-8",
             )
             data = root / "docs" / "audit" / "data"
             shard = data / "ledger" / "ro" / "row.json"
             shard.parent.mkdir(parents=True)
+            ignored_note = root / "docs" / "ignored_local_note.md"
+            ignored_note.parent.mkdir(parents=True, exist_ok=True)
+            ignored_note.write_text("# Local graph input\n", encoding="utf-8")
+            ignored_runner = root / "scripts" / "ignored_runner.py"
+            ignored_runner.parent.mkdir(parents=True)
+            ignored_runner.write_text("assert True\n", encoding="utf-8")
             before = {
                 "claim_id": "row",
                 "deps": ["dep"],
-                "runner_path": "scripts/runner.py",
+                "runner_path": "scripts/ignored_runner.py",
                 "audit_status": "unaudited",
             }
             shard.write_text(json.dumps(before), encoding="utf-8")
@@ -1027,14 +1046,58 @@ class ClaimTransactionTest(unittest.TestCase):
             ), mock.patch.object(
                 batch.static_checkpoint, "CHECKPOINT", checkpoint
             ):
-                wrote, write_detail = (
-                    batch.static_checkpoint.write_checkpoint()
+                began, begin_detail = batch.static_checkpoint.begin_checkpoint()
+                stale_prepare_ok, stale_prepare_detail = (
+                    batch.static_checkpoint.prepare_checkpoint()
+                )
+                (data / "citation_graph.json").write_bytes(
+                    (data / "citation_graph.json").read_bytes()
+                )
+                prepared, prepare_detail = (
+                    batch.static_checkpoint.prepare_checkpoint()
+                )
+                (data / "runner_classification.json").write_bytes(
+                    (data / "runner_classification.json").read_bytes()
+                )
+                captured, capture_detail = (
+                    batch.static_checkpoint.capture_checkpoint()
+                )
+                finalized, finalize_detail = (
+                    batch.static_checkpoint.finalize_checkpoint()
                 )
                 shard.write_text(
                     json.dumps(dict(before, audit_status="audited_clean")),
                     encoding="utf-8",
                 )
                 audit_ok, _ = batch.static_checkpoint.verify_checkpoint()
+                ignored_note.write_text(
+                    "# Changed local graph input\n", encoding="utf-8"
+                )
+                ignored_note_ok, ignored_note_detail = (
+                    batch.static_checkpoint.verify_checkpoint()
+                )
+                ignored_note.write_text(
+                    "# Local graph input\n", encoding="utf-8"
+                )
+                ignored_runner.write_text("assert False\n", encoding="utf-8")
+                ignored_runner_ok, ignored_runner_detail = (
+                    batch.static_checkpoint.verify_checkpoint()
+                )
+                ignored_runner.write_text("assert True\n", encoding="utf-8")
+                shard.write_text(
+                    json.dumps(dict(before, novel_topology={"edge": "new"})),
+                    encoding="utf-8",
+                )
+                unknown_field_ok, unknown_field_detail = (
+                    batch.static_checkpoint.verify_checkpoint()
+                )
+                shard.write_text(json.dumps(before), encoding="utf-8")
+                ledger_sidecar = shard.parent / "topology.sidecar"
+                ledger_sidecar.write_text("new topology\n", encoding="utf-8")
+                ledger_sidecar_ok, ledger_sidecar_detail = (
+                    batch.static_checkpoint.verify_checkpoint()
+                )
+                ledger_sidecar.unlink()
                 shard.write_text(
                     json.dumps(dict(before, deps=["rewired"])),
                     encoding="utf-8",
@@ -1043,8 +1106,21 @@ class ClaimTransactionTest(unittest.TestCase):
                     batch.static_checkpoint.verify_checkpoint()
                 )
 
-        self.assertTrue(wrote, write_detail)
+        self.assertTrue(began, begin_detail)
+        self.assertFalse(stale_prepare_ok)
+        self.assertIn("not rebuilt", stale_prepare_detail)
+        self.assertTrue(prepared, prepare_detail)
+        self.assertTrue(captured, capture_detail)
+        self.assertTrue(finalized, finalize_detail)
         self.assertTrue(audit_ok)
+        self.assertFalse(ignored_note_ok)
+        self.assertIn("static repository inputs changed", ignored_note_detail)
+        self.assertFalse(ignored_runner_ok)
+        self.assertIn("static repository inputs changed", ignored_runner_detail)
+        self.assertFalse(unknown_field_ok)
+        self.assertIn("static repository inputs changed", unknown_field_detail)
+        self.assertFalse(ledger_sidecar_ok)
+        self.assertIn("static repository inputs changed", ledger_sidecar_detail)
         self.assertFalse(topology_ok)
         self.assertIn("static repository inputs changed", detail)
 

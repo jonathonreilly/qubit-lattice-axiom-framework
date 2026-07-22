@@ -61,6 +61,8 @@ fi
 # and closes the orchestrator-check/shell-use gap.
 if [[ "${PIPELINE_MODE}" == "verdict-only" ]]; then
   python3 docs/audit/scripts/static_pipeline_checkpoint.py verify
+else
+  python3 docs/audit/scripts/static_pipeline_checkpoint.py begin
 fi
 
 echo "==> 0-ledger/18 ledger_io.py --materialize (sharded ledger -> monolith read cache)"
@@ -89,8 +91,14 @@ echo "==> 3/18 sanitize_legacy_audit_artifacts.py"
 python3 docs/audit/scripts/sanitize_legacy_audit_artifacts.py
 
 if [[ "${PIPELINE_MODE}" == "full" ]]; then
+  echo "==> 3b/18 static_pipeline_checkpoint.py prepare (fresh graph/seed proof)"
+  python3 docs/audit/scripts/static_pipeline_checkpoint.py prepare
+
   echo "==> 4/18 classify_runner_passes.py"
   python3 docs/audit/scripts/classify_runner_passes.py
+
+  echo "==> 4b/18 static_pipeline_checkpoint.py capture (fresh classifier proof)"
+  python3 docs/audit/scripts/static_pipeline_checkpoint.py capture
 else
   echo "==> 4/18 reuse verified runner classification (verdict-only)"
 fi
@@ -172,8 +180,14 @@ echo "==> 18/18 repo_invariants_check.py (authority-link guard)"
 python3 docs/audit/scripts/repo_invariants_check.py --check --enforce-links
 
 if [[ "${PIPELINE_MODE}" == "full" ]]; then
-  echo "==> 18b/18 static_pipeline_checkpoint.py write (successful full-build checkpoint)"
-  python3 docs/audit/scripts/static_pipeline_checkpoint.py write
+  echo "==> 18b/18 static_pipeline_checkpoint.py finalize (successful full-build checkpoint)"
+  python3 docs/audit/scripts/static_pipeline_checkpoint.py finalize
+else
+  # Close the proof/use window for direct callers. Any source or cache change
+  # while verdict-dependent stages were running makes the fast run fail rather
+  # than reporting success from mixed static state.
+  echo "==> 18b/18 static_pipeline_checkpoint.py verify (post-use checkpoint)"
+  python3 docs/audit/scripts/static_pipeline_checkpoint.py verify
 fi
 
 echo

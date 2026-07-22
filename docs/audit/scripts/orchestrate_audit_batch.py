@@ -22,12 +22,14 @@ import fcntl
 import hashlib
 import json
 import os
+import queue
 import re
 import shutil
 import signal
 import subprocess
 import sys
 import tempfile
+import threading
 import time
 import uuid
 from collections import Counter
@@ -620,10 +622,10 @@ def wait_workers(
 ) -> bool | None:
     """Monitor seats and optionally drain each complete claim immediately.
 
-    Critical rows remain atomic because the callback fires only after every
-    launched seat for that claim has exited. The callback itself is serial,
-    preserving the one-committer invariant, while unrelated slow seats keep
-    running instead of holding a bulk-synchronous wave barrier.
+    Critical rows remain atomic because the callback is queued only after every
+    launched seat for that claim has exited. One dedicated committer thread
+    consumes that queue serially while this thread continues enforcing worker
+    stall deadlines.
 
     Returns ``True``/``False`` when streaming is requested, and ``None`` for
     the legacy wait-only behavior used by judicial-panel callers.
@@ -631,9 +633,44 @@ def wait_workers(
     pending = set(range(len(jobs)))
     dispatched_claims: set[str] = set()
     stall_seconds = stall_minutes * 60
+    commit_queue: queue.Queue[list[dict] | object] = queue.Queue()
+    commit_stop = object()
+    commit_failed = threading.Event()
+    commit_errors: list[BaseException] = []
+    committer: threading.Thread | None = None
+
+    if on_claim_ready is not None:
+        def _commit_loop() -> None:
+            while True:
+                item = commit_queue.get()
+                try:
+                    if item is commit_stop:
+                        return
+                    if commit_failed.is_set():
+                        continue
+                    assert isinstance(item, list)
+                    if not on_claim_ready(item):
+                        commit_failed.set()
+                except BaseException as exc:
+                    commit_errors.append(exc)
+                    commit_failed.set()
+                finally:
+                    commit_queue.task_done()
+
+        committer = threading.Thread(
+            target=_commit_loop,
+            daemon=True,
+            name="audit-serial-committer",
+        )
+        committer.start()
+
     PROGRESS["jobs"] = jobs
     try:
         while pending:
+            if commit_failed.is_set():
+                terminate_workers([jobs[index] for index in pending])
+                pending.clear()
+                break
             now = time.monotonic()
             now_wall = time.time()
             for index in list(pending):
@@ -692,21 +729,23 @@ def wait_workers(
                 for cid in ready_claims:
                     claim_jobs = [job for job in jobs if job["cid"] == cid]
                     dispatched_claims.add(cid)
-                    if not on_claim_ready(claim_jobs):
-                        terminate_workers([jobs[index] for index in pending])
-                        pending.clear()
-                        return False
+                    commit_queue.put(claim_jobs)
             if pending:
                 time.sleep(2)
-        return True if on_claim_ready is not None else None
+
+        if committer is not None:
+            commit_queue.put(commit_stop)
+            committer.join()
+            if commit_errors:
+                raise commit_errors[0]
+            return not commit_failed.is_set()
+        return None
     except BaseException:
-        for index in pending:
-            job = jobs[index]
-            try:
-                os.killpg(job["proc"].pid, signal.SIGKILL)
-            except ProcessLookupError:
-                pass
-            job["returncode"] = job["proc"].wait()
+        terminate_workers([jobs[index] for index in pending])
+        if committer is not None and committer.is_alive():
+            commit_failed.set()
+            commit_queue.put(commit_stop)
+            committer.join()
         raise
     finally:
         PROGRESS["jobs"] = None

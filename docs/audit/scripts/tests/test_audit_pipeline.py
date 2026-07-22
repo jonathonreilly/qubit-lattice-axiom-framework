@@ -10084,14 +10084,25 @@ class AuditDataFilesCoverPipelineSurfacesTest(unittest.TestCase):
             PROJECT_ROOT / "docs" / "audit" / "scripts" / "run_pipeline.sh"
         ).read_text(encoding="utf-8")
         verify = "python3 docs/audit/scripts/static_pipeline_checkpoint.py verify"
-        write = "python3 docs/audit/scripts/static_pipeline_checkpoint.py write"
+        begin = "python3 docs/audit/scripts/static_pipeline_checkpoint.py begin"
+        prepare = "python3 docs/audit/scripts/static_pipeline_checkpoint.py prepare"
+        capture = "python3 docs/audit/scripts/static_pipeline_checkpoint.py capture"
+        finalize = "python3 docs/audit/scripts/static_pipeline_checkpoint.py finalize"
         first_skipped_stage = 'if [[ "${PIPELINE_MODE}" == "full" ]]; then'
+        classifier = "python3 docs/audit/scripts/classify_runner_passes.py"
         invariant = "python3 docs/audit/scripts/repo_invariants_check.py"
 
-        self.assertEqual(script.count(verify), 1)
-        self.assertEqual(script.count(write), 1)
+        self.assertEqual(script.count(verify), 2)
+        self.assertEqual(script.count(begin), 1)
+        self.assertEqual(script.count(prepare), 1)
+        self.assertEqual(script.count(capture), 1)
+        self.assertEqual(script.count(finalize), 1)
+        self.assertNotIn("static_pipeline_checkpoint.py write", script)
         self.assertLess(script.index(verify), script.index(first_skipped_stage))
-        self.assertGreater(script.index(write), script.rindex(invariant))
+        self.assertLess(script.index(prepare), script.index(classifier))
+        self.assertGreater(script.index(capture), script.index(classifier))
+        self.assertGreater(script.index(finalize), script.rindex(invariant))
+        self.assertGreater(script.rindex(verify), script.rindex(invariant))
 
 
 class BatchOrchestratorRoundSemanticsTest(unittest.TestCase):

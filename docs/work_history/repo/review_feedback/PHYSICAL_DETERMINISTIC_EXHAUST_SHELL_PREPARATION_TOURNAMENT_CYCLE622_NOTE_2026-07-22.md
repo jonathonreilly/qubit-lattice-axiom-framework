@@ -157,7 +157,7 @@ c219/c210 modules only; symmetry-block Arnoldi, ARPACK-confirmed, residuals
    earlier next-campaign paragraph.
 
 Worker artifacts (session scratchpad), SHA-256:
-masked_eigen.json  55b39c2f2c39262750a367e13f4dd825  (full hash in work log)
-masked_eigen.py    (full hash in work log)
+masked_eigen.json  eda675d3d4e96ae995f20e23345f42e93b13b58564bca363a338837cf8ef90dc
+masked_eigen.py    cc1563ce6ef28b0c2fda5f86c97b3a67f728ed46afa62c6b10c062ff44057add
 This appendix changes only the human-readable note; the runner, receipt, and
 cold transcript remain byte-frozen as run.

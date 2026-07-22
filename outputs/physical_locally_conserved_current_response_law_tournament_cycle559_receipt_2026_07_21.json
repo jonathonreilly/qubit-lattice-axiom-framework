@@ -1,0 +1,75 @@
+{
+  "status": "cycle559-orientation-independent-locally-conserved-resource-current-held-response-bounded-positive",
+  "authority": "none",
+  "audit": "unset",
+  "runner_sha256": "a6475b85ad4c87cae58ee09d371ff91f82719d50e72e8f5ff88d5030fef681be",
+  "note_sha256": "4410c285e8c2a41969a8854258ccaeaaad6c0b3a3340bae1ed39fdfbe9ca1136",
+  "parent_certificate_sha256": "2947e9d222c265be998e6d956fea704fac2cdca498d60058939ba17a64b388eb",
+  "tests_passed": 11,
+  "tests_total": 11,
+  "pass": true,
+  "elapsed_seconds_internal": 1.8782056249910966,
+  "timed_wall_seconds": 2.28,
+  "maximum_RSS_bytes": 78036992,
+  "process_swap_count": 0,
+  "route_dispositions": {
+    "R1_receiver_only": "positive response; exact conservation requires one explicit auxiliary debit",
+    "R5_equal_and_opposite": "exact signed endpoint conservation; no propagated response or feedback",
+    "R6_orientation_independent_mediator": "strongest bounded constructive route; exact local resource continuity and nonzero held response with no orientation control in the update"
+  },
+  "orientation_independent_dynamic_contract": {
+    "forward_update_parameters": ["state", "sites", "deletions"],
+    "inverse_update_parameters": ["state", "sites"],
+    "current_word_received_by_forward_or_inverse": false,
+    "current_control_M2_rails": 0,
+    "current_or_orientation_copy_M2": 0,
+    "installed_endpoint_vertices": 4,
+    "both_endpoint_matter_outputs_retained": true,
+    "orientation_selected_only_by_supplied_initial_parked_occupation": true,
+    "vacuum_plus_Q1_sector_locally_enforced": false
+  },
+  "exact_residuals": {
+    "maximum_local_continuity": 4.440892098500626e-16,
+    "maximum_global_number_and_norm": 3.774758283725532e-15,
+    "maximum_one_step_inverse": 9.24604192790478e-16,
+    "PLUS_MINUS_full_endpoint_vector_reciprocity": 0.0,
+    "maximum_all24_update_intertwiner": 1.328890415590402e-16,
+    "maximum_all576_representation_product": 0.0,
+    "coherent_vacuum_left_right_source_vector": 1.0344538778264393e-16
+  },
+  "finite_response_table": {
+    "train_L5": {
+      "separation_1": 0.023279482797930028,
+      "separation_2": 0.0017280434045744272
+    },
+    "held_L6_no_refit_not_blind": {
+      "separation_1": 0.04058730941165698,
+      "separation_2": 0.0068883472856884845,
+      "separation_3": 0.0029071613314210886
+    },
+    "distance_coefficient_inserted": false,
+    "receiver_deletion_terminal_response": 0.0,
+    "receiver_deletion_field_feedback_contrast": 0.24221881154936017
+  },
+  "physical_resources": {
+    "L5_M2_and_code_dimension": [754, 755],
+    "held_L6_M2_and_code_dimension": [1300, 1301],
+    "overhead_per_cubic_cell_M2": 6,
+    "maximum_resolved_gate_support_M2": 2,
+    "global_parity_or_Jordan_Wigner_service": false
+  },
+  "scope_boundary": {
+    "coefficient_one_resource_number_normalized": true,
+    "source_location_preparation_derived": false,
+    "vacuum_plus_Q1_sector_locally_enforced": false,
+    "physical_energy_stress_identified": false,
+    "matter_or_Cycle230_contact_composed": false,
+    "asymptotic_or_inverse_square_kernel_derived": false,
+    "force_work_or_gravity_claim": false,
+    "squared_amplitude_called_Born_probability": false,
+    "schedule_called_physical_time": false,
+    "shared_substrate_obstruction": false,
+    "axiom_pressure": false,
+    "broad_negative_gate": "FAIL / DO NOT SHIP"
+  }
+}

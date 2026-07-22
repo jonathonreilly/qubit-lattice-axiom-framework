@@ -1,0 +1,2551 @@
+{
+  "HEAD": "40d88e464dbf77deea4e38c8f9275b96e21ebc19",
+  "audit": "unset",
+  "authority": "none",
+  "constitutional_effect": "none",
+  "elapsed_seconds": 240.94184299989138,
+  "maximum_RSS_bytes": 114147328,
+  "no_go_discipline": {
+    "N1_attempted_or_prior_scoped_families": 5,
+    "N1_normalized_families": [
+      {
+        "disposition": "closes exact compact-register global permutation on code; simultaneous elementary supercell packing and malformed collision closure remain open",
+        "family": "compact reversible double buffer",
+        "marker": "ATTEMPTED",
+        "mechanism": "equality-controlled scatter, copy-clear, and local buffer SWAP",
+        "object": "two 4-M2 words per species/cell",
+        "strength": "target-equivalent at compact-register level on supplied code",
+        "terminal_obligation": "exact simultaneous compact global shift with elementary bounded gates"
+      },
+      {
+        "disposition": "exact global stream; 28-M2 exchange not elementarily lowered",
+        "family": "direction-expanded partitioned QCA",
+        "marker": "ATTEMPTED",
+        "mechanism": "cubic-symmetric local exchange and bipartite-role intercell SWAP matching",
+        "object": "compact word plus Out/In direction lanes",
+        "strength": "target-equivalent with a local block import",
+        "terminal_obligation": "collision-separated global shift without parity coloring"
+      },
+      {
+        "disposition": "two consecutive shifts exact; uniform phase genesis supplied",
+        "family": "state-carried buffer phase",
+        "marker": "ATTEMPTED",
+        "mechanism": "phase-conditioned direction matching and local phase toggle",
+        "object": "two compact buffers plus local phase field",
+        "strength": "target-equivalent on uniform-phase sector",
+        "terminal_obligation": "recurrent shift without host tick parity"
+      },
+      {
+        "disposition": "finite errors explicit; global-volume bounds saturate",
+        "family": "finite Clifford+T word approximation",
+        "marker": "ATTEMPTED",
+        "mechanism": "exhaustive word search modulo global phase and telescoping bounds",
+        "object": "depth-bounded H/T/Tdg words for Cycle603 one-M2 angles",
+        "strength": "weaker",
+        "terminal_obligation": "precision-bounded replacement of calibrated rotations"
+      },
+      {
+        "disposition": "local events exact but did not supply a global schedule",
+        "family": "independent crossed-link endpoint gates",
+        "marker": "RULED OUT BY PRIOR CYCLE603 WHEN USED ALONE",
+        "mechanism": "Gray C7X event circuits without a global matching composition",
+        "object": "Cycle603 eight-bit link transpositions",
+        "strength": "weaker",
+        "terminal_obligation": "one simultaneous torus stream"
+      },
+      {
+        "disposition": "concrete counterroute preventing a collision/enforcement no-go",
+        "family": "autonomous collision-repair gauge reservoir",
+        "marker": "LIVE_UNTESTED",
+        "mechanism": "retain collision history and repair/reject without erasure",
+        "object": "reversible syndrome/debris fields coupled to compact buffers",
+        "strength": "unknown/comparable",
+        "terminal_obligation": "full malformed-sector covariance and return to code"
+      }
+    ],
+    "N2_directional_pairs": [
+      {
+        "first": "clean buffer/scratch initialization and renewal",
+        "first_closes_second": false,
+        "independent_as_current_imports_not_shared_obstructions": true,
+        "second": "translation-invariant physical supercell packing of parallel routed events",
+        "second_closes_first": false
+      },
+      {
+        "first": "clean buffer/scratch initialization and renewal",
+        "first_closes_second": false,
+        "independent_as_current_imports_not_shared_obstructions": true,
+        "second": "malformed multi-carrier collision repair or enforcement",
+        "second_closes_first": false
+      },
+      {
+        "first": "clean buffer/scratch initialization and renewal",
+        "first_closes_second": false,
+        "independent_as_current_imports_not_shared_obstructions": true,
+        "second": "elementary lowering of the 28-M2 lane exchange",
+        "second_closes_first": false
+      },
+      {
+        "first": "clean buffer/scratch initialization and renewal",
+        "first_closes_second": false,
+        "independent_as_current_imports_not_shared_obstructions": true,
+        "second": "uniform phase-field genesis for phase-carried scheduling",
+        "second_closes_first": false
+      },
+      {
+        "first": "clean buffer/scratch initialization and renewal",
+        "first_closes_second": false,
+        "independent_as_current_imports_not_shared_obstructions": true,
+        "second": "precision scaling beyond finite H/T/Tdg depth",
+        "second_closes_first": false
+      },
+      {
+        "first": "translation-invariant physical supercell packing of parallel routed events",
+        "first_closes_second": false,
+        "independent_as_current_imports_not_shared_obstructions": true,
+        "second": "malformed multi-carrier collision repair or enforcement",
+        "second_closes_first": false
+      },
+      {
+        "first": "translation-invariant physical supercell packing of parallel routed events",
+        "first_closes_second": false,
+        "independent_as_current_imports_not_shared_obstructions": true,
+        "second": "elementary lowering of the 28-M2 lane exchange",
+        "second_closes_first": false
+      },
+      {
+        "first": "translation-invariant physical supercell packing of parallel routed events",
+        "first_closes_second": false,
+        "independent_as_current_imports_not_shared_obstructions": true,
+        "second": "uniform phase-field genesis for phase-carried scheduling",
+        "second_closes_first": false
+      },
+      {
+        "first": "translation-invariant physical supercell packing of parallel routed events",
+        "first_closes_second": false,
+        "independent_as_current_imports_not_shared_obstructions": true,
+        "second": "precision scaling beyond finite H/T/Tdg depth",
+        "second_closes_first": false
+      },
+      {
+        "first": "malformed multi-carrier collision repair or enforcement",
+        "first_closes_second": false,
+        "independent_as_current_imports_not_shared_obstructions": true,
+        "second": "elementary lowering of the 28-M2 lane exchange",
+        "second_closes_first": false
+      },
+      {
+        "first": "malformed multi-carrier collision repair or enforcement",
+        "first_closes_second": false,
+        "independent_as_current_imports_not_shared_obstructions": true,
+        "second": "uniform phase-field genesis for phase-carried scheduling",
+        "second_closes_first": false
+      },
+      {
+        "first": "malformed multi-carrier collision repair or enforcement",
+        "first_closes_second": false,
+        "independent_as_current_imports_not_shared_obstructions": true,
+        "second": "precision scaling beyond finite H/T/Tdg depth",
+        "second_closes_first": false
+      },
+      {
+        "first": "elementary lowering of the 28-M2 lane exchange",
+        "first_closes_second": false,
+        "independent_as_current_imports_not_shared_obstructions": true,
+        "second": "uniform phase-field genesis for phase-carried scheduling",
+        "second_closes_first": false
+      },
+      {
+        "first": "elementary lowering of the 28-M2 lane exchange",
+        "first_closes_second": false,
+        "independent_as_current_imports_not_shared_obstructions": true,
+        "second": "precision scaling beyond finite H/T/Tdg depth",
+        "second_closes_first": false
+      },
+      {
+        "first": "uniform phase-field genesis for phase-carried scheduling",
+        "first_closes_second": false,
+        "independent_as_current_imports_not_shared_obstructions": true,
+        "second": "precision scaling beyond finite H/T/Tdg depth",
+        "second_closes_first": false
+      }
+    ],
+    "N2_pair_count": 15,
+    "N3_hidden_condition_scan": {
+      "Clifford+T search depth": "explicit maximum depth ten; no optimality claim",
+      "exactly one word per species": "explicit Cycle600 global code sector",
+      "global elementary geometry": "event-local 11-M2 NN route is explicit; translation-invariant simultaneous supercell packing is not",
+      "lane exchange": "explicit 28-M2 block import in Route B",
+      "periodic boundary": "explicit test fixture; local template has no size query",
+      "three fixed compute/copy/swap substeps": "explicit gate-product definition; not time",
+      "uncited_standard_or_obvious_hits": 0,
+      "uniform clock phase": "locally checkable but supplied sector in Route C",
+      "zero secondary buffers and scratch": "explicit supplied local resource"
+    },
+    "N4_residual_matching": [
+      {
+        "current_residual": "Route A supplies an exact role-separated compact-register product, but not yet a physical supercell embedding for all routed gates",
+        "match": false,
+        "witness": "Cycle603 Route A",
+        "witness_residual": "no simultaneous conflict-free global stream schedule"
+      },
+      {
+        "current_residual": "finite H/T/Tdg approximation errors and scaling measured; exact import not retired",
+        "match": true,
+        "witness": "Cycle603 precision route",
+        "witness_residual": "parameterized RY/RZ/P angle import"
+      },
+      {
+        "current_residual": "compact collision leaves code; lane route retains multiple syndromic lanes",
+        "match": true,
+        "witness": "Cycle600/603 malformed controls",
+        "witness_residual": "remote duplicate/collision sectors locally admissible"
+      }
+    ],
+    "N5_rhetoric_resolution": [
+      "global-stream closure is on the supplied exactly-one/species Cycle600 code, not every malformed word configuration",
+      "Route A is exact and tested lattice-wide at compact-register resolution; its elementary lowering is only event-local until a simultaneous cubic supercell packing is materialized; Route B retains one 28-M2 block import",
+      "no-host claim excludes runtime parity/color/origin/size queries but does not turn the fixed circuit product into causal time",
+      "Clifford+T precision is only exhaustive through word depth ten and is not exact or asymptotically optimal"
+    ],
+    "N6_partial_closure_paths": [
+      "materialize a proper-cubic supercell with directed-edge ports and verify every simultaneous route collision on L3/L6/L7 and all frames",
+      "add reversible collision syndrome/debris registers and prove a cubic-covariant repair/decoupling theorem",
+      "lower the six disjoint Route-B block transpositions with counted C27X scratch/routing",
+      "prepare the uniform Route-C phase field as a local ground/dark sector or avoid it using Route A",
+      "replace brute-force depth-ten search by a certified single-qubit synthesis algorithm at a declared epsilon"
+    ],
+    "N7_hostile_steelman": "A hostile reviewer should reject any locality, collision, or precision no-go. Route A already gives the missing parity-free compact global shift on the declared code, Route B shows that direction lanes can make every intercell call a literal partition matching, and Route C carries tick parity in state. A reversible collision-syndrome reservoir can retain malformed history, while certified Clifford+T synthesis can drive one-gate error arbitrarily below this depth-ten search. Those live constructions prevent shared-obstruction language.",
+    "N8_cross_cycle_echo": "Cycles560/563 retired decoder/order services with bounded tables, Cycle580 retired a gate-layout import, Cycle600 retired the full N<=3 carrier lift, and Cycle603 reduced local word events to bounded gates. Cycle606 now composes those events into an exact lattice-wide compact-register shift on code while isolating its physical packing boundary; the repeated constructive pattern again rejects constitutional escalation.",
+    "axiom_pressure": false,
+    "minimum_content_claim_shipped": false,
+    "negative_claim_shipped": false,
+    "pass_for_scoped_dispositions_and_withholding_broad_negative": true,
+    "route_evidence": {
+      "A": true,
+      "B": true,
+      "C": true,
+      "precision": true
+    },
+    "shared_obstruction": false,
+    "skill_freshness": {
+      "local_skill_sha256": "aeac7b2b7df30c350961f4b36b980a91e9c2ebeca3f35b6c1adcd731071bdab5",
+      "newer_origin_main_version_followed": true,
+      "origin_main_checked": true,
+      "origin_main_skill_sha256": "7d1aea8243ddd972331b935e2e836657e72115da3efe259f828fe862469d68b7",
+      "proof_search_governance_followed": true
+    }
+  },
+  "note_contract": {
+    "forbidden_hits": [],
+    "missing": [],
+    "required": [
+      "Authority: none",
+      "Audit: unset",
+      "Cycle 606",
+      "Route A",
+      "Route B",
+      "Route C",
+      "double buffer",
+      "partitioned",
+      "state-carried",
+      "global stream",
+      "L3",
+      "L6",
+      "L7",
+      "all 24",
+      "all 576",
+      "translation",
+      "nearest-neighbor",
+      "inverse",
+      "deletion",
+      "malformed",
+      "off-code",
+      "collision",
+      "Clifford+T",
+      "depth ten",
+      "N1",
+      "N8",
+      "schedule is not time",
+      "carrier bookkeeping",
+      "no axiom pressure"
+    ]
+  },
+  "note_sha256": "e02301935132c35240032b3b0757ccdb92f23ae337f4d850e73777a5b4b2eed9",
+  "optimal_next_campaign": "materialize and exhaustively collision-check one translation-invariant proper-cubic M2 supercell for Route A, including scratch and directed-edge routes; then compose the physical stream with Cycle603 coin/contact and pursue collision syndrome plus certified epsilon-target Clifford+T synthesis",
+  "pass": true,
+  "pins": {
+    "docs/work_history/repo/review_feedback/PHYSICAL_CARRIER_PREPARATION_ELEMENTARY_SYNTHESIS_TOURNAMENT_CYCLE603_NOTE_2026-07-22.md": "1a79520c68cb2ade0770424fdc54ce09eaf4bf5a6d5fe44b13f05a2a2e96567b",
+    "outputs/physical_carrier_preparation_elementary_synthesis_tournament_cycle603_cold_2026_07_22.txt": "749c0126587c46b86e03ba329724757e651a0f35abc502e92e8391d40b94b5fa",
+    "outputs/physical_carrier_preparation_elementary_synthesis_tournament_cycle603_receipt_2026_07_22.json": "fe7ce320f172ac5637503cda5c94c5dbe82d2564811554877746576fa7a0f1de",
+    "scripts/physical_carrier_preparation_elementary_synthesis_tournament_cycle603_2026_07_22.py": "2935a840aab56d1b7525365537d2aa450028552418d3f290b22b761f709c29b7"
+  },
+  "precision_bounded_Clifford_T": {
+    "alphabet": [
+      "H",
+      "T",
+      "Tdg"
+    ],
+    "exact_Clifford_T_closure_claimed": false,
+    "fault_tolerant_synthesis_optimality_claimed": false,
+    "global_phase_quotiented": true,
+    "inherited_calibration_inputs": {
+      "beta": -0.3,
+      "contact_g": 0.37,
+      "provenance": "Cycle603 compiled coin and contact gate lists"
+    },
+    "one_species_approximate_scratch_leakage": 3.831620355454435e-15,
+    "one_species_compiled_coin_ray_Frobenius_residual": 3.940416210503757,
+    "parameterized_instances_replaced_in_one_species_coin": 864,
+    "pass_as_precision_bounded_attempt": true,
+    "pass_exact_or_global_precision_target": false,
+    "search": {
+      "candidates_tested": 88572,
+      "checkpoints": [
+        {
+          "candidates_tested_cumulative": 12,
+          "maximum_word_depth": 2,
+          "unique_parameter_targets": 41,
+          "weighted_telescoping_bound_per_cell_capped": 2.0,
+          "weighted_telescoping_bound_per_cell_uncapped": 348.11320219633836,
+          "worst_single_gate_ray_operator_residual": 0.7653668647301796
+        },
+        {
+          "candidates_tested_cumulative": 120,
+          "maximum_word_depth": 4,
+          "unique_parameter_targets": 41,
+          "weighted_telescoping_bound_per_cell_capped": 2.0,
+          "weighted_telescoping_bound_per_cell_uncapped": 298.39750070251597,
+          "worst_single_gate_ray_operator_residual": 0.40993751953986024
+        },
+        {
+          "candidates_tested_cumulative": 1092,
+          "maximum_word_depth": 6,
+          "unique_parameter_targets": 41,
+          "weighted_telescoping_bound_per_cell_capped": 2.0,
+          "weighted_telescoping_bound_per_cell_uncapped": 232.31121837762012,
+          "worst_single_gate_ray_operator_residual": 0.2928932188134525
+        },
+        {
+          "candidates_tested_cumulative": 9840,
+          "maximum_word_depth": 8,
+          "unique_parameter_targets": 41,
+          "weighted_telescoping_bound_per_cell_capped": 2.0,
+          "weighted_telescoping_bound_per_cell_uncapped": 44.918041936088265,
+          "worst_single_gate_ray_operator_residual": 0.15818455508731935
+        },
+        {
+          "candidates_tested_cumulative": 88572,
+          "maximum_word_depth": 10,
+          "unique_parameter_targets": 41,
+          "weighted_telescoping_bound_per_cell_capped": 2.0,
+          "weighted_telescoping_bound_per_cell_uncapped": 44.91804193608823,
+          "worst_single_gate_ray_operator_residual": 0.15818455508731935
+        }
+      ],
+      "rows": [
+        {
+          "best_word": "TT",
+          "best_word_depth": 2,
+          "families": [
+            "RZ(theta)"
+          ],
+          "ray_operator_residual": 0.0,
+          "uses_per_cell": 324,
+          "word_sha256": "9779469589f956f434b70b578302dcbaa084a5eabb0124ccd61b0ae58c596e70"
+        },
+        {
+          "best_word": "T",
+          "best_word_depth": 1,
+          "families": [
+            "P(theta)"
+          ],
+          "ray_operator_residual": 0.0,
+          "uses_per_cell": 225,
+          "word_sha256": "e632b7095b0bf32c260fa4c539e9fd7b852d0de454e9be26f24d0d6f91d069d3"
+        },
+        {
+          "best_word": "tttHttHttH",
+          "best_word_depth": 10,
+          "families": [
+            "RZ(theta)"
+          ],
+          "ray_operator_residual": 0.08493367793231957,
+          "uses_per_cell": 36,
+          "word_sha256": "f3121f24ca8c01c4f6640be136672b4e1d2be62f2496b8e5d13999a1e902f348"
+        },
+        {
+          "best_word": "TTHTTTHTTH",
+          "best_word_depth": 10,
+          "families": [
+            "RY(theta)"
+          ],
+          "ray_operator_residual": 0.130806258460286,
+          "uses_per_cell": 54,
+          "word_sha256": "83da0a02485f5f9ed437db667a9a8afa2d1959c074511c69e9c1a9abaab31fcc"
+        },
+        {
+          "best_word": "ttHTHTT",
+          "best_word_depth": 7,
+          "families": [
+            "RY(theta)"
+          ],
+          "ray_operator_residual": 0.13080625846028607,
+          "uses_per_cell": 54,
+          "word_sha256": "592dd28b3d333f9b3105904349c48740195b16aa2f4bcc548ab5f9b9ac479627"
+        },
+        {
+          "best_word": "THTTHTTH",
+          "best_word_depth": 8,
+          "families": [
+            "RZ(theta)"
+          ],
+          "ray_operator_residual": 0.08493367793231961,
+          "uses_per_cell": 36,
+          "word_sha256": "7bf22bb0e0b3671014fe8e661af2be228fe9d29623fdb215c4600a985ef39ebf"
+        },
+        {
+          "best_word": "tt",
+          "best_word_depth": 2,
+          "families": [
+            "RZ(theta)"
+          ],
+          "ray_operator_residual": 1.5700924586837752e-16,
+          "uses_per_cell": 306,
+          "word_sha256": "0e07cf830957701d43c183f1515f63e6b68027e528f43ef52b1527a520ddec82"
+        },
+        {
+          "best_word": "t",
+          "best_word_depth": 1,
+          "families": [
+            "P(theta)"
+          ],
+          "ray_operator_residual": 0.0,
+          "uses_per_cell": 117,
+          "word_sha256": "e3b98a4da31a127d4bde6e43033f66ba274cab0eb7eb1c70ec41402bf6273dd8"
+        },
+        {
+          "best_word": "TTTTTTTTT",
+          "best_word_depth": 9,
+          "families": [
+            "RZ(theta)"
+          ],
+          "ray_operator_residual": 0.08493367793231942,
+          "uses_per_cell": 18,
+          "word_sha256": "eecf22c3c7391e0583aaf74dd120ac92fab5d99da5dbc72e58122923c500f2ba"
+        },
+        {
+          "best_word": "HttHttHt",
+          "best_word_depth": 8,
+          "families": [
+            "RZ(theta)"
+          ],
+          "ray_operator_residual": 0.08493367793231947,
+          "uses_per_cell": 18,
+          "word_sha256": "a3f4e679da9b27a6d150aeb59d0db98ec23f14cbffb93c87831f565db5555698"
+        },
+        {
+          "best_word": "tT",
+          "best_word_depth": 2,
+          "families": [
+            "P(theta)",
+            "RY(theta)",
+            "RZ(theta)"
+          ],
+          "ray_operator_residual": 1.1102230246251565e-16,
+          "uses_per_cell": 558,
+          "word_sha256": "21041b0f2f72b3ad8518093ee1ad3f5eba5694e6d4819cfe775583a450f103ce"
+        },
+        {
+          "best_word": "ttHtHTT",
+          "best_word_depth": 7,
+          "families": [
+            "RY(theta)"
+          ],
+          "ray_operator_residual": 2.6588315948265754e-16,
+          "uses_per_cell": 288,
+          "word_sha256": "cb832fa0852abc2ef5fe0c083acd28d6c746ae66ddb6cd9afee0851a0373e79e"
+        },
+        {
+          "best_word": "ttHTHTT",
+          "best_word_depth": 7,
+          "families": [
+            "RY(theta)"
+          ],
+          "ray_operator_residual": 2.1240992559359732e-16,
+          "uses_per_cell": 288,
+          "word_sha256": "592dd28b3d333f9b3105904349c48740195b16aa2f4bcc548ab5f9b9ac479627"
+        },
+        {
+          "best_word": "tHtHTHTH",
+          "best_word_depth": 8,
+          "families": [
+            "RY(theta)"
+          ],
+          "ray_operator_residual": 0.15818455508731935,
+          "uses_per_cell": 18,
+          "word_sha256": "f48172904fa8de7ade1997e31eaba6e456c7f29f3aca801ad8da14ab7f053f87"
+        },
+        {
+          "best_word": "THtHtHTH",
+          "best_word_depth": 8,
+          "families": [
+            "RY(theta)"
+          ],
+          "ray_operator_residual": 0.15818455508731935,
+          "uses_per_cell": 18,
+          "word_sha256": "38bf0aa575a34bf3dec062a3d45de9d775d667fc692d404982140293f0a29581"
+        },
+        {
+          "best_word": "TTTT",
+          "best_word_depth": 4,
+          "families": [
+            "RZ(theta)"
+          ],
+          "ray_operator_residual": 2.0001021803551224e-16,
+          "uses_per_cell": 27,
+          "word_sha256": "3fd8b2c4aea744d950ecb00284070196d22689496b95cef3f3ad7077d360ed38"
+        },
+        {
+          "best_word": "TTTT",
+          "best_word_depth": 4,
+          "families": [
+            "RZ(theta)"
+          ],
+          "ray_operator_residual": 7.754553812077691e-17,
+          "uses_per_cell": 27,
+          "word_sha256": "3fd8b2c4aea744d950ecb00284070196d22689496b95cef3f3ad7077d360ed38"
+        },
+        {
+          "best_word": "tHttTHTHTH",
+          "best_word_depth": 10,
+          "families": [
+            "RY(theta)"
+          ],
+          "ray_operator_residual": 0.14777554038546542,
+          "uses_per_cell": 18,
+          "word_sha256": "0a1285cccb3a43e8e938fcb91dadcf3d971ba57efc1888fa70eeaec2174ee079"
+        },
+        {
+          "best_word": "tHTHTHtHtT",
+          "best_word_depth": 10,
+          "families": [
+            "RY(theta)"
+          ],
+          "ray_operator_residual": 0.14777554038546545,
+          "uses_per_cell": 18,
+          "word_sha256": "8f448bdc0e4df95d060c58744688b70bcd7381b6d4dac0b46892a7bcb8e169cb"
+        },
+        {
+          "best_word": "ttHttHTT",
+          "best_word_depth": 8,
+          "families": [
+            "RY(theta)"
+          ],
+          "ray_operator_residual": 0.13080625846028607,
+          "uses_per_cell": 18,
+          "word_sha256": "63e3b81d71692a125dc160caf7a111b36dcdf270df29d3723e6238187ea5be41"
+        },
+        {
+          "best_word": "ttHTTHTTHH",
+          "best_word_depth": 10,
+          "families": [
+            "RY(theta)"
+          ],
+          "ray_operator_residual": 0.13080625846028604,
+          "uses_per_cell": 18,
+          "word_sha256": "c8247a1df57b3961ab2b26e85b7907492113971c7957522212b9485f21935f28"
+        },
+        {
+          "best_word": "HttHttHtt",
+          "best_word_depth": 9,
+          "families": [
+            "RZ(theta)"
+          ],
+          "ray_operator_residual": 0.01889162131708466,
+          "uses_per_cell": 12,
+          "word_sha256": "382fb52f48c20ab7e36a9e3e68bd4eeb2514b3f9a82e605216a7996f523f18c4"
+        },
+        {
+          "best_word": "tHttHttHt",
+          "best_word_depth": 9,
+          "families": [
+            "P(theta)"
+          ],
+          "ray_operator_residual": 0.01889162131708455,
+          "uses_per_cell": 6,
+          "word_sha256": "fa24bc358080feae89d5c86d4607a811a2f95973cd913a2e3246dad75bb73a81"
+        },
+        {
+          "best_word": "TTTTTTTT",
+          "best_word_depth": 8,
+          "families": [
+            "RZ(theta)"
+          ],
+          "ray_operator_residual": 0.037781557023036254,
+          "uses_per_cell": 6,
+          "word_sha256": "c47d5b6d00f7dd5c875fb694e909d6d67d115c1ad40ee2e8b981ab3213a53bd8"
+        },
+        {
+          "best_word": "TTTTTTTT",
+          "best_word_depth": 8,
+          "families": [
+            "RZ(theta)"
+          ],
+          "ray_operator_residual": 0.018891621317084353,
+          "uses_per_cell": 6,
+          "word_sha256": "c47d5b6d00f7dd5c875fb694e909d6d67d115c1ad40ee2e8b981ab3213a53bd8"
+        },
+        {
+          "best_word": "TTTTTTTT",
+          "best_word_depth": 8,
+          "families": [
+            "P(theta)"
+          ],
+          "ray_operator_residual": 0.018891621317084356,
+          "uses_per_cell": 3,
+          "word_sha256": "c47d5b6d00f7dd5c875fb694e909d6d67d115c1ad40ee2e8b981ab3213a53bd8"
+        },
+        {
+          "best_word": "tT",
+          "best_word_depth": 2,
+          "families": [
+            "RZ(theta)"
+          ],
+          "ray_operator_residual": 0.03778155702303659,
+          "uses_per_cell": 3,
+          "word_sha256": "21041b0f2f72b3ad8518093ee1ad3f5eba5694e6d4819cfe775583a450f103ce"
+        },
+        {
+          "best_word": "TTTTTTTT",
+          "best_word_depth": 8,
+          "families": [
+            "RZ(theta)"
+          ],
+          "ray_operator_residual": 0.01860782927453542,
+          "uses_per_cell": 36,
+          "word_sha256": "c47d5b6d00f7dd5c875fb694e909d6d67d115c1ad40ee2e8b981ab3213a53bd8"
+        },
+        {
+          "best_word": "TTTTTTTT",
+          "best_word_depth": 8,
+          "families": [
+            "P(theta)"
+          ],
+          "ray_operator_residual": 0.01860782927453542,
+          "uses_per_cell": 18,
+          "word_sha256": "c47d5b6d00f7dd5c875fb694e909d6d67d115c1ad40ee2e8b981ab3213a53bd8"
+        },
+        {
+          "best_word": "tHttHttHt",
+          "best_word_depth": 9,
+          "families": [
+            "RZ(theta)"
+          ],
+          "ray_operator_residual": 0.03721404776789509,
+          "uses_per_cell": 18,
+          "word_sha256": "fa24bc358080feae89d5c86d4607a811a2f95973cd913a2e3246dad75bb73a81"
+        },
+        {
+          "best_word": "tT",
+          "best_word_depth": 2,
+          "families": [
+            "RZ(theta)"
+          ],
+          "ray_operator_residual": 0.018607829274535755,
+          "uses_per_cell": 18,
+          "word_sha256": "21041b0f2f72b3ad8518093ee1ad3f5eba5694e6d4819cfe775583a450f103ce"
+        },
+        {
+          "best_word": "tT",
+          "best_word_depth": 2,
+          "families": [
+            "P(theta)"
+          ],
+          "ray_operator_residual": 0.018607829274535755,
+          "uses_per_cell": 9,
+          "word_sha256": "21041b0f2f72b3ad8518093ee1ad3f5eba5694e6d4819cfe775583a450f103ce"
+        },
+        {
+          "best_word": "TTTTTTTT",
+          "best_word_depth": 8,
+          "families": [
+            "RZ(theta)"
+          ],
+          "ray_operator_residual": 0.03721404776789489,
+          "uses_per_cell": 9,
+          "word_sha256": "c47d5b6d00f7dd5c875fb694e909d6d67d115c1ad40ee2e8b981ab3213a53bd8"
+        },
+        {
+          "best_word": "tttHttHttH",
+          "best_word_depth": 10,
+          "families": [
+            "RZ(theta)"
+          ],
+          "ray_operator_residual": 0.01889162131708459,
+          "uses_per_cell": 24,
+          "word_sha256": "f3121f24ca8c01c4f6640be136672b4e1d2be62f2496b8e5d13999a1e902f348"
+        },
+        {
+          "best_word": "tttHttHttH",
+          "best_word_depth": 10,
+          "families": [
+            "P(theta)"
+          ],
+          "ray_operator_residual": 0.018891621317084554,
+          "uses_per_cell": 12,
+          "word_sha256": "f3121f24ca8c01c4f6640be136672b4e1d2be62f2496b8e5d13999a1e902f348"
+        },
+        {
+          "best_word": "TTTTTTTTTT",
+          "best_word_depth": 10,
+          "families": [
+            "RZ(theta)"
+          ],
+          "ray_operator_residual": 0.03778155702303628,
+          "uses_per_cell": 12,
+          "word_sha256": "b4f4f09aeaeee321c5b80d29871d2854e19a0180115de5bd820e6ce32a67b278"
+        },
+        {
+          "best_word": "TTTTTTTTT",
+          "best_word_depth": 9,
+          "families": [
+            "RZ(theta)"
+          ],
+          "ray_operator_residual": 0.018891621317084394,
+          "uses_per_cell": 12,
+          "word_sha256": "eecf22c3c7391e0583aaf74dd120ac92fab5d99da5dbc72e58122923c500f2ba"
+        },
+        {
+          "best_word": "TTTTTTTTT",
+          "best_word_depth": 9,
+          "families": [
+            "P(theta)"
+          ],
+          "ray_operator_residual": 0.018891621317084318,
+          "uses_per_cell": 6,
+          "word_sha256": "eecf22c3c7391e0583aaf74dd120ac92fab5d99da5dbc72e58122923c500f2ba"
+        },
+        {
+          "best_word": "tt",
+          "best_word_depth": 2,
+          "families": [
+            "RZ(theta)"
+          ],
+          "ray_operator_residual": 0.03778155702303668,
+          "uses_per_cell": 6,
+          "word_sha256": "0e07cf830957701d43c183f1515f63e6b68027e528f43ef52b1527a520ddec82"
+        },
+        {
+          "best_word": "tttttttt",
+          "best_word_depth": 8,
+          "families": [
+            "P(theta)"
+          ],
+          "ray_operator_residual": 0.09246702631329441,
+          "uses_per_cell": 6,
+          "word_sha256": "5208dce8de0fed86f96119e8259e7f99b9fdda607810db3c54e36aa6ac163469"
+        },
+        {
+          "best_word": "TTTTTTTT",
+          "best_word_depth": 8,
+          "families": [
+            "P(theta)"
+          ],
+          "ray_operator_residual": 0.09246702631329441,
+          "uses_per_cell": 3,
+          "word_sha256": "c47d5b6d00f7dd5c875fb694e909d6d67d115c1ad40ee2e8b981ab3213a53bd8"
+        }
+      ]
+    },
+    "status": "finite H/T/Tdg search gives explicit depth-2..10 approximation/error bounds; it does not give exact or scalable global closure",
+    "stream_additional_analog_error": 0,
+    "volume_and_q_update_scaling": [
+      {
+        "length": 3,
+        "q_updates": 1,
+        "telescoping_operator_bound_capped": 2.0,
+        "telescoping_operator_bound_uncapped": 1212.7871322743822
+      },
+      {
+        "length": 3,
+        "q_updates": 10,
+        "telescoping_operator_bound_capped": 2.0,
+        "telescoping_operator_bound_uncapped": 12127.871322743822
+      },
+      {
+        "length": 3,
+        "q_updates": 100,
+        "telescoping_operator_bound_capped": 2.0,
+        "telescoping_operator_bound_uncapped": 121278.71322743822
+      },
+      {
+        "length": 6,
+        "q_updates": 1,
+        "telescoping_operator_bound_capped": 2.0,
+        "telescoping_operator_bound_uncapped": 9702.297058195058
+      },
+      {
+        "length": 6,
+        "q_updates": 10,
+        "telescoping_operator_bound_capped": 2.0,
+        "telescoping_operator_bound_uncapped": 97022.97058195058
+      },
+      {
+        "length": 6,
+        "q_updates": 100,
+        "telescoping_operator_bound_capped": 2.0,
+        "telescoping_operator_bound_uncapped": 970229.7058195057
+      },
+      {
+        "length": 7,
+        "q_updates": 1,
+        "telescoping_operator_bound_capped": 2.0,
+        "telescoping_operator_bound_uncapped": 15406.888384078262
+      },
+      {
+        "length": 7,
+        "q_updates": 10,
+        "telescoping_operator_bound_capped": 2.0,
+        "telescoping_operator_bound_uncapped": 154068.88384078263
+      },
+      {
+        "length": 7,
+        "q_updates": 100,
+        "telescoping_operator_bound_capped": 2.0,
+        "telescoping_operator_bound_uncapped": 1540688.8384078261
+      }
+    ]
+  },
+  "route_A_compact_double_buffer": {
+    "broader_exact_domain": "the same identity holds on any B=0 valid-word configuration whose translated carriers do not collide, but that domain is not claimed invariant under repeated updates",
+    "collisions_leave_declared_code_and_are_detected": true,
+    "collisions_locally_rejected_or_repaired": false,
+    "declared_code_space": "B=0, one valid nonzero word per species globally; bound labels shift and neutral labels remain",
+    "event_local_elementary_NN_template_executed": true,
+    "exactly_one_sector_locally_generated": false,
+    "fixed_sublayer_sequence_is_physical_time": false,
+    "full_space_unitary_reason": "each equality-controlled XOR and local SWAP is a full-space involution; inverse reverses the three fixed substeps",
+    "gate_template": {
+      "clean_flag_and_work_M2_per_species": 3,
+      "complete_update_constant_serial_NN_depth_species_parallel": 11656,
+      "complete_update_per_cell_base_gate_count": 14040,
+      "complete_update_per_cell_gate_counts": {
+        "CNOT": 5592,
+        "H": 1800,
+        "SWAP": 12,
+        "T": 3150,
+        "Tdg": 3150,
+        "X": 336
+      },
+      "gate_alphabet": [
+        "X",
+        "H",
+        "T",
+        "Tdg",
+        "CNOT",
+        "SWAP"
+      ],
+      "local_buffer_SWAP_routing": {
+        "all24_rotated_line_edge_failures": 0,
+        "all24_rotated_line_injection_failures": 0,
+        "all_two_M2_instances_after_move_apply_restore_are_NN": true,
+        "base_gate_count": 4,
+        "base_pair_or_range_failures": 0,
+        "line_sites": 11,
+        "literal_coordinates": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            0
+          ],
+          [
+            9,
+            0,
+            0
+          ],
+          [
+            10,
+            0,
+            0
+          ]
+        ],
+        "literal_routed_edge_checks": 52,
+        "literal_routed_edge_failures": 0,
+        "maximum_pre_route_pair_distance": 7,
+        "one_M2_gate_count": 0,
+        "routed_two_site_instances_including_SWAPS": 52,
+        "routing_SWAP_count_move_and_restore": 48,
+        "serial_nearest_neighbor_depth": 52,
+        "two_M2_gate_count": 4
+      },
+      "maximum_gate_support_M2": 2,
+      "maximum_live_M2_per_cell_species_parallel": 33,
+      "one_copy_or_clear_phase_one_species_counts": {
+        "CNOT": 932,
+        "H": 300,
+        "T": 525,
+        "Tdg": 525,
+        "X": 56
+      },
+      "parameterized_angle_gates": 0,
+      "persistent_active_plus_buffer_M2_per_cell": 24,
+      "scratch_returns_clean": true,
+      "template_depends_on_volume_parity_origin_or_size": false,
+      "word_blocks": [
+        {
+          "base_gate_count": 157,
+          "gate_counts": {
+            "CNOT": 61,
+            "H": 20,
+            "T": 35,
+            "Tdg": 35,
+            "X": 6
+          },
+          "popcount": 1,
+          "routing": {
+            "all24_rotated_line_edge_failures": 0,
+            "all24_rotated_line_injection_failures": 0,
+            "all_two_M2_instances_after_move_apply_restore_are_NN": true,
+            "base_gate_count": 157,
+            "base_pair_or_range_failures": 0,
+            "line_sites": 11,
+            "literal_coordinates": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0
+              ],
+              [
+                3,
+                0,
+                0
+              ],
+              [
+                4,
+                0,
+                0
+              ],
+              [
+                5,
+                0,
+                0
+              ],
+              [
+                6,
+                0,
+                0
+              ],
+              [
+                7,
+                0,
+                0
+              ],
+              [
+                8,
+                0,
+                0
+              ],
+              [
+                9,
+                0,
+                0
+              ],
+              [
+                10,
+                0,
+                0
+              ]
+            ],
+            "literal_routed_edge_checks": 287,
+            "literal_routed_edge_failures": 0,
+            "maximum_pre_route_pair_distance": 6,
+            "one_M2_gate_count": 96,
+            "routed_two_site_instances_including_SWAPS": 287,
+            "routing_SWAP_count_move_and_restore": 226,
+            "serial_nearest_neighbor_depth": 383,
+            "two_M2_gate_count": 61
+          },
+          "schedule_sha256": "42679d3949cd83ca17174bc545abe4185275327e403b80cab796d76a7fc84e94",
+          "word": 1
+        },
+        {
+          "base_gate_count": 157,
+          "gate_counts": {
+            "CNOT": 61,
+            "H": 20,
+            "T": 35,
+            "Tdg": 35,
+            "X": 6
+          },
+          "popcount": 1,
+          "routing": {
+            "all24_rotated_line_edge_failures": 0,
+            "all24_rotated_line_injection_failures": 0,
+            "all_two_M2_instances_after_move_apply_restore_are_NN": true,
+            "base_gate_count": 157,
+            "base_pair_or_range_failures": 0,
+            "line_sites": 11,
+            "literal_coordinates": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0
+              ],
+              [
+                3,
+                0,
+                0
+              ],
+              [
+                4,
+                0,
+                0
+              ],
+              [
+                5,
+                0,
+                0
+              ],
+              [
+                6,
+                0,
+                0
+              ],
+              [
+                7,
+                0,
+                0
+              ],
+              [
+                8,
+                0,
+                0
+              ],
+              [
+                9,
+                0,
+                0
+              ],
+              [
+                10,
+                0,
+                0
+              ]
+            ],
+            "literal_routed_edge_checks": 285,
+            "literal_routed_edge_failures": 0,
+            "maximum_pre_route_pair_distance": 5,
+            "one_M2_gate_count": 96,
+            "routed_two_site_instances_including_SWAPS": 285,
+            "routing_SWAP_count_move_and_restore": 224,
+            "serial_nearest_neighbor_depth": 381,
+            "two_M2_gate_count": 61
+          },
+          "schedule_sha256": "a590b4a509dad5cb4de73c551a48dc59cce7c1ecab1c27349b1239735a2f4375",
+          "word": 2
+        },
+        {
+          "base_gate_count": 156,
+          "gate_counts": {
+            "CNOT": 62,
+            "H": 20,
+            "T": 35,
+            "Tdg": 35,
+            "X": 4
+          },
+          "popcount": 2,
+          "routing": {
+            "all24_rotated_line_edge_failures": 0,
+            "all24_rotated_line_injection_failures": 0,
+            "all_two_M2_instances_after_move_apply_restore_are_NN": true,
+            "base_gate_count": 156,
+            "base_pair_or_range_failures": 0,
+            "line_sites": 11,
+            "literal_coordinates": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0
+              ],
+              [
+                3,
+                0,
+                0
+              ],
+              [
+                4,
+                0,
+                0
+              ],
+              [
+                5,
+                0,
+                0
+              ],
+              [
+                6,
+                0,
+                0
+              ],
+              [
+                7,
+                0,
+                0
+              ],
+              [
+                8,
+                0,
+                0
+              ],
+              [
+                9,
+                0,
+                0
+              ],
+              [
+                10,
+                0,
+                0
+              ]
+            ],
+            "literal_routed_edge_checks": 296,
+            "literal_routed_edge_failures": 0,
+            "maximum_pre_route_pair_distance": 6,
+            "one_M2_gate_count": 94,
+            "routed_two_site_instances_including_SWAPS": 296,
+            "routing_SWAP_count_move_and_restore": 234,
+            "serial_nearest_neighbor_depth": 390,
+            "two_M2_gate_count": 62
+          },
+          "schedule_sha256": "c4b8415f93edca08a02540a1985632d9fad7e1945d465f0256de19232eb33a74",
+          "word": 3
+        },
+        {
+          "base_gate_count": 157,
+          "gate_counts": {
+            "CNOT": 61,
+            "H": 20,
+            "T": 35,
+            "Tdg": 35,
+            "X": 6
+          },
+          "popcount": 1,
+          "routing": {
+            "all24_rotated_line_edge_failures": 0,
+            "all24_rotated_line_injection_failures": 0,
+            "all_two_M2_instances_after_move_apply_restore_are_NN": true,
+            "base_gate_count": 157,
+            "base_pair_or_range_failures": 0,
+            "line_sites": 11,
+            "literal_coordinates": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0
+              ],
+              [
+                3,
+                0,
+                0
+              ],
+              [
+                4,
+                0,
+                0
+              ],
+              [
+                5,
+                0,
+                0
+              ],
+              [
+                6,
+                0,
+                0
+              ],
+              [
+                7,
+                0,
+                0
+              ],
+              [
+                8,
+                0,
+                0
+              ],
+              [
+                9,
+                0,
+                0
+              ],
+              [
+                10,
+                0,
+                0
+              ]
+            ],
+            "literal_routed_edge_checks": 283,
+            "literal_routed_edge_failures": 0,
+            "maximum_pre_route_pair_distance": 5,
+            "one_M2_gate_count": 96,
+            "routed_two_site_instances_including_SWAPS": 283,
+            "routing_SWAP_count_move_and_restore": 222,
+            "serial_nearest_neighbor_depth": 379,
+            "two_M2_gate_count": 61
+          },
+          "schedule_sha256": "c97ba01597bea5a0f6dd64cedc50500eea93217f0a1935e845b56e8782708d0b",
+          "word": 4
+        },
+        {
+          "base_gate_count": 156,
+          "gate_counts": {
+            "CNOT": 62,
+            "H": 20,
+            "T": 35,
+            "Tdg": 35,
+            "X": 4
+          },
+          "popcount": 2,
+          "routing": {
+            "all24_rotated_line_edge_failures": 0,
+            "all24_rotated_line_injection_failures": 0,
+            "all_two_M2_instances_after_move_apply_restore_are_NN": true,
+            "base_gate_count": 156,
+            "base_pair_or_range_failures": 0,
+            "line_sites": 11,
+            "literal_coordinates": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0
+              ],
+              [
+                3,
+                0,
+                0
+              ],
+              [
+                4,
+                0,
+                0
+              ],
+              [
+                5,
+                0,
+                0
+              ],
+              [
+                6,
+                0,
+                0
+              ],
+              [
+                7,
+                0,
+                0
+              ],
+              [
+                8,
+                0,
+                0
+              ],
+              [
+                9,
+                0,
+                0
+              ],
+              [
+                10,
+                0,
+                0
+              ]
+            ],
+            "literal_routed_edge_checks": 294,
+            "literal_routed_edge_failures": 0,
+            "maximum_pre_route_pair_distance": 6,
+            "one_M2_gate_count": 94,
+            "routed_two_site_instances_including_SWAPS": 294,
+            "routing_SWAP_count_move_and_restore": 232,
+            "serial_nearest_neighbor_depth": 388,
+            "two_M2_gate_count": 62
+          },
+          "schedule_sha256": "e32e32412750932110b70f2ba7d6292f065873af70d5dd87c315760111cb8dc5",
+          "word": 5
+        },
+        {
+          "base_gate_count": 156,
+          "gate_counts": {
+            "CNOT": 62,
+            "H": 20,
+            "T": 35,
+            "Tdg": 35,
+            "X": 4
+          },
+          "popcount": 2,
+          "routing": {
+            "all24_rotated_line_edge_failures": 0,
+            "all24_rotated_line_injection_failures": 0,
+            "all_two_M2_instances_after_move_apply_restore_are_NN": true,
+            "base_gate_count": 156,
+            "base_pair_or_range_failures": 0,
+            "line_sites": 11,
+            "literal_coordinates": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0
+              ],
+              [
+                3,
+                0,
+                0
+              ],
+              [
+                4,
+                0,
+                0
+              ],
+              [
+                5,
+                0,
+                0
+              ],
+              [
+                6,
+                0,
+                0
+              ],
+              [
+                7,
+                0,
+                0
+              ],
+              [
+                8,
+                0,
+                0
+              ],
+              [
+                9,
+                0,
+                0
+              ],
+              [
+                10,
+                0,
+                0
+              ]
+            ],
+            "literal_routed_edge_checks": 292,
+            "literal_routed_edge_failures": 0,
+            "maximum_pre_route_pair_distance": 5,
+            "one_M2_gate_count": 94,
+            "routed_two_site_instances_including_SWAPS": 292,
+            "routing_SWAP_count_move_and_restore": 230,
+            "serial_nearest_neighbor_depth": 386,
+            "two_M2_gate_count": 62
+          },
+          "schedule_sha256": "e5905d5fa82b5323dc29c74e35cdb127d2a0f9518e953243d4bf261292f7a150",
+          "word": 6
+        },
+        {
+          "base_gate_count": 155,
+          "gate_counts": {
+            "CNOT": 63,
+            "H": 20,
+            "T": 35,
+            "Tdg": 35,
+            "X": 2
+          },
+          "popcount": 3,
+          "routing": {
+            "all24_rotated_line_edge_failures": 0,
+            "all24_rotated_line_injection_failures": 0,
+            "all_two_M2_instances_after_move_apply_restore_are_NN": true,
+            "base_gate_count": 155,
+            "base_pair_or_range_failures": 0,
+            "line_sites": 11,
+            "literal_coordinates": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0
+              ],
+              [
+                3,
+                0,
+                0
+              ],
+              [
+                4,
+                0,
+                0
+              ],
+              [
+                5,
+                0,
+                0
+              ],
+              [
+                6,
+                0,
+                0
+              ],
+              [
+                7,
+                0,
+                0
+              ],
+              [
+                8,
+                0,
+                0
+              ],
+              [
+                9,
+                0,
+                0
+              ],
+              [
+                10,
+                0,
+                0
+              ]
+            ],
+            "literal_routed_edge_checks": 303,
+            "literal_routed_edge_failures": 0,
+            "maximum_pre_route_pair_distance": 6,
+            "one_M2_gate_count": 92,
+            "routed_two_site_instances_including_SWAPS": 303,
+            "routing_SWAP_count_move_and_restore": 240,
+            "serial_nearest_neighbor_depth": 395,
+            "two_M2_gate_count": 63
+          },
+          "schedule_sha256": "efe92e503ed14bd823e123f70688e2b6cba20425f882dbd8a139291a57e91ece",
+          "word": 7
+        },
+        {
+          "base_gate_count": 157,
+          "gate_counts": {
+            "CNOT": 61,
+            "H": 20,
+            "T": 35,
+            "Tdg": 35,
+            "X": 6
+          },
+          "popcount": 1,
+          "routing": {
+            "all24_rotated_line_edge_failures": 0,
+            "all24_rotated_line_injection_failures": 0,
+            "all_two_M2_instances_after_move_apply_restore_are_NN": true,
+            "base_gate_count": 157,
+            "base_pair_or_range_failures": 0,
+            "line_sites": 11,
+            "literal_coordinates": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0
+              ],
+              [
+                3,
+                0,
+                0
+              ],
+              [
+                4,
+                0,
+                0
+              ],
+              [
+                5,
+                0,
+                0
+              ],
+              [
+                6,
+                0,
+                0
+              ],
+              [
+                7,
+                0,
+                0
+              ],
+              [
+                8,
+                0,
+                0
+              ],
+              [
+                9,
+                0,
+                0
+              ],
+              [
+                10,
+                0,
+                0
+              ]
+            ],
+            "literal_routed_edge_checks": 281,
+            "literal_routed_edge_failures": 0,
+            "maximum_pre_route_pair_distance": 5,
+            "one_M2_gate_count": 96,
+            "routed_two_site_instances_including_SWAPS": 281,
+            "routing_SWAP_count_move_and_restore": 220,
+            "serial_nearest_neighbor_depth": 377,
+            "two_M2_gate_count": 61
+          },
+          "schedule_sha256": "c7be129699794c12a55b649ee48f6e2ff2b9849866d4f7d33e6dbcd533682f6d",
+          "word": 8
+        },
+        {
+          "base_gate_count": 156,
+          "gate_counts": {
+            "CNOT": 62,
+            "H": 20,
+            "T": 35,
+            "Tdg": 35,
+            "X": 4
+          },
+          "popcount": 2,
+          "routing": {
+            "all24_rotated_line_edge_failures": 0,
+            "all24_rotated_line_injection_failures": 0,
+            "all_two_M2_instances_after_move_apply_restore_are_NN": true,
+            "base_gate_count": 156,
+            "base_pair_or_range_failures": 0,
+            "line_sites": 11,
+            "literal_coordinates": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0
+              ],
+              [
+                3,
+                0,
+                0
+              ],
+              [
+                4,
+                0,
+                0
+              ],
+              [
+                5,
+                0,
+                0
+              ],
+              [
+                6,
+                0,
+                0
+              ],
+              [
+                7,
+                0,
+                0
+              ],
+              [
+                8,
+                0,
+                0
+              ],
+              [
+                9,
+                0,
+                0
+              ],
+              [
+                10,
+                0,
+                0
+              ]
+            ],
+            "literal_routed_edge_checks": 292,
+            "literal_routed_edge_failures": 0,
+            "maximum_pre_route_pair_distance": 6,
+            "one_M2_gate_count": 94,
+            "routed_two_site_instances_including_SWAPS": 292,
+            "routing_SWAP_count_move_and_restore": 230,
+            "serial_nearest_neighbor_depth": 386,
+            "two_M2_gate_count": 62
+          },
+          "schedule_sha256": "28688daf650459007b08c846fd1e819dc2142cb900298f1c682e09c963f16bd9",
+          "word": 9
+        },
+        {
+          "base_gate_count": 156,
+          "gate_counts": {
+            "CNOT": 62,
+            "H": 20,
+            "T": 35,
+            "Tdg": 35,
+            "X": 4
+          },
+          "popcount": 2,
+          "routing": {
+            "all24_rotated_line_edge_failures": 0,
+            "all24_rotated_line_injection_failures": 0,
+            "all_two_M2_instances_after_move_apply_restore_are_NN": true,
+            "base_gate_count": 156,
+            "base_pair_or_range_failures": 0,
+            "line_sites": 11,
+            "literal_coordinates": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0
+              ],
+              [
+                3,
+                0,
+                0
+              ],
+              [
+                4,
+                0,
+                0
+              ],
+              [
+                5,
+                0,
+                0
+              ],
+              [
+                6,
+                0,
+                0
+              ],
+              [
+                7,
+                0,
+                0
+              ],
+              [
+                8,
+                0,
+                0
+              ],
+              [
+                9,
+                0,
+                0
+              ],
+              [
+                10,
+                0,
+                0
+              ]
+            ],
+            "literal_routed_edge_checks": 290,
+            "literal_routed_edge_failures": 0,
+            "maximum_pre_route_pair_distance": 5,
+            "one_M2_gate_count": 94,
+            "routed_two_site_instances_including_SWAPS": 290,
+            "routing_SWAP_count_move_and_restore": 228,
+            "serial_nearest_neighbor_depth": 384,
+            "two_M2_gate_count": 62
+          },
+          "schedule_sha256": "43714817cc26673c5ff841bb66a6bab720fac3df07378e6dd4181f7bfab61f6e",
+          "word": 10
+        },
+        {
+          "base_gate_count": 155,
+          "gate_counts": {
+            "CNOT": 63,
+            "H": 20,
+            "T": 35,
+            "Tdg": 35,
+            "X": 2
+          },
+          "popcount": 3,
+          "routing": {
+            "all24_rotated_line_edge_failures": 0,
+            "all24_rotated_line_injection_failures": 0,
+            "all_two_M2_instances_after_move_apply_restore_are_NN": true,
+            "base_gate_count": 155,
+            "base_pair_or_range_failures": 0,
+            "line_sites": 11,
+            "literal_coordinates": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0
+              ],
+              [
+                3,
+                0,
+                0
+              ],
+              [
+                4,
+                0,
+                0
+              ],
+              [
+                5,
+                0,
+                0
+              ],
+              [
+                6,
+                0,
+                0
+              ],
+              [
+                7,
+                0,
+                0
+              ],
+              [
+                8,
+                0,
+                0
+              ],
+              [
+                9,
+                0,
+                0
+              ],
+              [
+                10,
+                0,
+                0
+              ]
+            ],
+            "literal_routed_edge_checks": 301,
+            "literal_routed_edge_failures": 0,
+            "maximum_pre_route_pair_distance": 6,
+            "one_M2_gate_count": 92,
+            "routed_two_site_instances_including_SWAPS": 301,
+            "routing_SWAP_count_move_and_restore": 238,
+            "serial_nearest_neighbor_depth": 393,
+            "two_M2_gate_count": 63
+          },
+          "schedule_sha256": "a3d01dd43f3874e2be70d3e9fac8bad794dbeb4a4bc703844f171c170805cb9e",
+          "word": 11
+        },
+        {
+          "base_gate_count": 156,
+          "gate_counts": {
+            "CNOT": 62,
+            "H": 20,
+            "T": 35,
+            "Tdg": 35,
+            "X": 4
+          },
+          "popcount": 2,
+          "routing": {
+            "all24_rotated_line_edge_failures": 0,
+            "all24_rotated_line_injection_failures": 0,
+            "all_two_M2_instances_after_move_apply_restore_are_NN": true,
+            "base_gate_count": 156,
+            "base_pair_or_range_failures": 0,
+            "line_sites": 11,
+            "literal_coordinates": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0
+              ],
+              [
+                3,
+                0,
+                0
+              ],
+              [
+                4,
+                0,
+                0
+              ],
+              [
+                5,
+                0,
+                0
+              ],
+              [
+                6,
+                0,
+                0
+              ],
+              [
+                7,
+                0,
+                0
+              ],
+              [
+                8,
+                0,
+                0
+              ],
+              [
+                9,
+                0,
+                0
+              ],
+              [
+                10,
+                0,
+                0
+              ]
+            ],
+            "literal_routed_edge_checks": 288,
+            "literal_routed_edge_failures": 0,
+            "maximum_pre_route_pair_distance": 5,
+            "one_M2_gate_count": 94,
+            "routed_two_site_instances_including_SWAPS": 288,
+            "routing_SWAP_count_move_and_restore": 226,
+            "serial_nearest_neighbor_depth": 382,
+            "two_M2_gate_count": 62
+          },
+          "schedule_sha256": "d9296a5db26c4aacccb252981f90619358d3054b957d1c949ea37b019221eb80",
+          "word": 12
+        },
+        {
+          "base_gate_count": 155,
+          "gate_counts": {
+            "CNOT": 63,
+            "H": 20,
+            "T": 35,
+            "Tdg": 35,
+            "X": 2
+          },
+          "popcount": 3,
+          "routing": {
+            "all24_rotated_line_edge_failures": 0,
+            "all24_rotated_line_injection_failures": 0,
+            "all_two_M2_instances_after_move_apply_restore_are_NN": true,
+            "base_gate_count": 155,
+            "base_pair_or_range_failures": 0,
+            "line_sites": 11,
+            "literal_coordinates": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0
+              ],
+              [
+                3,
+                0,
+                0
+              ],
+              [
+                4,
+                0,
+                0
+              ],
+              [
+                5,
+                0,
+                0
+              ],
+              [
+                6,
+                0,
+                0
+              ],
+              [
+                7,
+                0,
+                0
+              ],
+              [
+                8,
+                0,
+                0
+              ],
+              [
+                9,
+                0,
+                0
+              ],
+              [
+                10,
+                0,
+                0
+              ]
+            ],
+            "literal_routed_edge_checks": 299,
+            "literal_routed_edge_failures": 0,
+            "maximum_pre_route_pair_distance": 6,
+            "one_M2_gate_count": 92,
+            "routed_two_site_instances_including_SWAPS": 299,
+            "routing_SWAP_count_move_and_restore": 236,
+            "serial_nearest_neighbor_depth": 391,
+            "two_M2_gate_count": 63
+          },
+          "schedule_sha256": "e80aecb4f129937e473f3ee2cf576f2e21dbd80e48d366d1f8417df59c16eda8",
+          "word": 13
+        },
+        {
+          "base_gate_count": 155,
+          "gate_counts": {
+            "CNOT": 63,
+            "H": 20,
+            "T": 35,
+            "Tdg": 35,
+            "X": 2
+          },
+          "popcount": 3,
+          "routing": {
+            "all24_rotated_line_edge_failures": 0,
+            "all24_rotated_line_injection_failures": 0,
+            "all_two_M2_instances_after_move_apply_restore_are_NN": true,
+            "base_gate_count": 155,
+            "base_pair_or_range_failures": 0,
+            "line_sites": 11,
+            "literal_coordinates": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0
+              ],
+              [
+                3,
+                0,
+                0
+              ],
+              [
+                4,
+                0,
+                0
+              ],
+              [
+                5,
+                0,
+                0
+              ],
+              [
+                6,
+                0,
+                0
+              ],
+              [
+                7,
+                0,
+                0
+              ],
+              [
+                8,
+                0,
+                0
+              ],
+              [
+                9,
+                0,
+                0
+              ],
+              [
+                10,
+                0,
+                0
+              ]
+            ],
+            "literal_routed_edge_checks": 297,
+            "literal_routed_edge_failures": 0,
+            "maximum_pre_route_pair_distance": 5,
+            "one_M2_gate_count": 92,
+            "routed_two_site_instances_including_SWAPS": 297,
+            "routing_SWAP_count_move_and_restore": 234,
+            "serial_nearest_neighbor_depth": 389,
+            "two_M2_gate_count": 63
+          },
+          "schedule_sha256": "a0b13659dfc79168a4aa6eebc6d446f8c8ac192348d597b8909cce3e9868a3e4",
+          "word": 14
+        },
+        {
+          "base_gate_count": 154,
+          "gate_counts": {
+            "CNOT": 64,
+            "H": 20,
+            "T": 35,
+            "Tdg": 35
+          },
+          "popcount": 4,
+          "routing": {
+            "all24_rotated_line_edge_failures": 0,
+            "all24_rotated_line_injection_failures": 0,
+            "all_two_M2_instances_after_move_apply_restore_are_NN": true,
+            "base_gate_count": 154,
+            "base_pair_or_range_failures": 0,
+            "line_sites": 11,
+            "literal_coordinates": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0
+              ],
+              [
+                3,
+                0,
+                0
+              ],
+              [
+                4,
+                0,
+                0
+              ],
+              [
+                5,
+                0,
+                0
+              ],
+              [
+                6,
+                0,
+                0
+              ],
+              [
+                7,
+                0,
+                0
+              ],
+              [
+                8,
+                0,
+                0
+              ],
+              [
+                9,
+                0,
+                0
+              ],
+              [
+                10,
+                0,
+                0
+              ]
+            ],
+            "literal_routed_edge_checks": 308,
+            "literal_routed_edge_failures": 0,
+            "maximum_pre_route_pair_distance": 6,
+            "one_M2_gate_count": 90,
+            "routed_two_site_instances_including_SWAPS": 308,
+            "routing_SWAP_count_move_and_restore": 244,
+            "serial_nearest_neighbor_depth": 398,
+            "two_M2_gate_count": 64
+          },
+          "schedule_sha256": "43aa105d53845b764de4ebfda350f2e77ee6855790a49fb91bfcbd5d92d9c799",
+          "word": 15
+        }
+      ]
+    },
+    "global_route_vertex_disjointness_or_bounded_conflict_schedule_proved": false,
+    "host_parity_color_origin_or_size_query": false,
+    "invalid_extension": "single invalid labels 10..15 have zero displacement and return identically; arbitrary malformed/dirty states remain reversible but need not decode",
+    "locally_enforced_auxiliary_constraints": "B=0 and word validity are on-cell checks; no gauge service or ordering is used",
+    "nonlocal_sector_boundary": "exactly one carrier/species is inherited from Cycle600 and is not locally generated or enforced; it prevents same-species incoming collisions",
+    "pass_elementary_translation_invariant_global_packing": false,
+    "pass_exact_declared_code_global_stream": true,
+    "pass_full_malformed_code_preservation": false,
+    "physical_update": "scatter B_(x+v(w)) XOR= w controlled by A_x=w; clear A_x XOR=w controlled by B_(x+v(w))=w; local SWAP(A_x,B_x)",
+    "rows": [
+      {
+        "all24_code_commutator_failures": 0,
+        "all576_site_and_word_group_failures": 0,
+        "collision_control": {
+          "inverse_recovers_malformed_input": true,
+          "output_nonzero_active_words": 1,
+          "output_nonzero_buffer_words": 3,
+          "output_passes_exactly_one_valid_sector": false,
+          "two_incoming_sources_distinct": true
+        },
+        "complete_update_gate_instances": 379080,
+        "constant_NN_depth": 11656,
+        "delete_each_macro_stage_difference_words": {
+          "clear": 1,
+          "scatter": 2,
+          "swap": 2
+        },
+        "dirty_buffer_domain_pass": false,
+        "dirty_buffer_inverse_recovery": true,
+        "exterior_reordering_signs": [
+          -1,
+          1
+        ],
+        "factorized_exterior_samples": 31,
+        "frame_and_reverse_orders_tested_per_sublayer": 26,
+        "frame_order_failures_scatter_plus_clear": 0,
+        "frame_products": 576,
+        "invalid_single_word_rows": 486,
+        "invalid_word_identity_failures": 0,
+        "lawful_complete_macro_blank_buffer_failures": 0,
+        "lawful_single_species_site_label_rows": 729,
+        "lawful_stream_failures": 0,
+        "length": 3,
+        "maximum_double_buffer_EG_residual": 0.0,
+        "maximum_inverse_EG_residual": 0.0,
+        "maximum_live_M2_species_parallel": 891,
+        "pairwise_commutator_failures_scatter_plus_clear": 0,
+        "persistent_M2": 648,
+        "proper_cubic_frames": 24,
+        "random_full_space_inverse_failures": 0,
+        "random_full_space_inverse_trials": 10,
+        "remote_collision_inverse_failures": 0,
+        "remote_collision_pairs_leaving_declared_code": 15,
+        "remote_two_carrier_collision_pairs": 15,
+        "scatter_then_clear_order_is_still_a_fixed_macro_product": true,
+        "sites_and_words_per_frame_product": 432,
+        "split": "train",
+        "translation_commutator_failures": 0,
+        "translations_tested": 27,
+        "volume": 27,
+        "word_pairs_tested_per_sublayer": 105
+      },
+      {
+        "all24_code_commutator_failures": 0,
+        "all576_site_and_word_group_failures": 0,
+        "collision_control": {
+          "inverse_recovers_malformed_input": true,
+          "output_nonzero_active_words": 1,
+          "output_nonzero_buffer_words": 3,
+          "output_passes_exactly_one_valid_sector": false,
+          "two_incoming_sources_distinct": true
+        },
+        "complete_update_gate_instances": 3032640,
+        "constant_NN_depth": 11656,
+        "delete_each_macro_stage_difference_words": {
+          "clear": 1,
+          "scatter": 2,
+          "swap": 2
+        },
+        "dirty_buffer_domain_pass": false,
+        "dirty_buffer_inverse_recovery": true,
+        "exterior_reordering_signs": [
+          -1,
+          1
+        ],
+        "factorized_exterior_samples": 31,
+        "frame_and_reverse_orders_tested_per_sublayer": 26,
+        "frame_order_failures_scatter_plus_clear": 0,
+        "frame_products": 576,
+        "invalid_single_word_rows": 3888,
+        "invalid_word_identity_failures": 0,
+        "lawful_complete_macro_blank_buffer_failures": 0,
+        "lawful_single_species_site_label_rows": 5832,
+        "lawful_stream_failures": 0,
+        "length": 6,
+        "maximum_double_buffer_EG_residual": 0.0,
+        "maximum_inverse_EG_residual": 0.0,
+        "maximum_live_M2_species_parallel": 7128,
+        "pairwise_commutator_failures_scatter_plus_clear": 0,
+        "persistent_M2": 5184,
+        "proper_cubic_frames": 24,
+        "random_full_space_inverse_failures": 0,
+        "random_full_space_inverse_trials": 10,
+        "remote_collision_inverse_failures": 0,
+        "remote_collision_pairs_leaving_declared_code": 15,
+        "remote_two_carrier_collision_pairs": 15,
+        "scatter_then_clear_order_is_still_a_fixed_macro_product": true,
+        "sites_and_words_per_frame_product": 3456,
+        "split": "held",
+        "translation_commutator_failures": 0,
+        "translations_tested": 216,
+        "volume": 216,
+        "word_pairs_tested_per_sublayer": 105
+      },
+      {
+        "all24_code_commutator_failures": 0,
+        "all576_site_and_word_group_failures": 0,
+        "collision_control": {
+          "inverse_recovers_malformed_input": true,
+          "output_nonzero_active_words": 1,
+          "output_nonzero_buffer_words": 3,
+          "output_passes_exactly_one_valid_sector": false,
+          "two_incoming_sources_distinct": true
+        },
+        "complete_update_gate_instances": 4815720,
+        "constant_NN_depth": 11656,
+        "delete_each_macro_stage_difference_words": {
+          "clear": 1,
+          "scatter": 2,
+          "swap": 2
+        },
+        "dirty_buffer_domain_pass": false,
+        "dirty_buffer_inverse_recovery": true,
+        "exterior_reordering_signs": [
+          -1,
+          1
+        ],
+        "factorized_exterior_samples": 31,
+        "frame_and_reverse_orders_tested_per_sublayer": 26,
+        "frame_order_failures_scatter_plus_clear": 0,
+        "frame_products": 576,
+        "invalid_single_word_rows": 6174,
+        "invalid_word_identity_failures": 0,
+        "lawful_complete_macro_blank_buffer_failures": 0,
+        "lawful_single_species_site_label_rows": 9261,
+        "lawful_stream_failures": 0,
+        "length": 7,
+        "maximum_double_buffer_EG_residual": 0.0,
+        "maximum_inverse_EG_residual": 0.0,
+        "maximum_live_M2_species_parallel": 11319,
+        "pairwise_commutator_failures_scatter_plus_clear": 0,
+        "persistent_M2": 8232,
+        "proper_cubic_frames": 24,
+        "random_full_space_inverse_failures": 0,
+        "random_full_space_inverse_trials": 10,
+        "remote_collision_inverse_failures": 0,
+        "remote_collision_pairs_leaving_declared_code": 15,
+        "remote_two_carrier_collision_pairs": 15,
+        "scatter_then_clear_order_is_still_a_fixed_macro_product": true,
+        "sites_and_words_per_frame_product": 5488,
+        "split": "held-out-size",
+        "translation_commutator_failures": 0,
+        "translations_tested": 343,
+        "volume": 343,
+        "word_pairs_tested_per_sublayer": 105
+      }
+    ],
+    "sharp_geometric_import": "one translation-invariant cubic supercell embedding, including scratch coordinates, whose simultaneous routed event instances are vertex-disjoint or have an explicit bounded conflict schedule",
+    "status": "exact constant-overhead compact-register double-buffer permutation on the supplied one-carrier/species code; event-local elementary NN lowering is explicit, but one translation-invariant simultaneous supercell packing remains open",
+    "translation_invariant_global_supercell_embedding_executed": false
+  },
+  "route_B_direction_partitioned_QCA": {
+    "C27X_Toffoli_calls_with_25_clean_work_each": 51,
+    "Gray_C27X_calls_per_exchange_block": 38,
+    "elementary_NN_lowering_executed": false,
+    "host_parity_color_origin_or_size_query": false,
+    "local_exchange": "six disjoint transpositions between A=4+d/all lanes zero and A=0/lane_d=4+d",
+    "local_exchange_basis_transpositions": 6,
+    "local_exchange_support_M2": 28,
+    "partition_layer": "SWAP Out_d(x) with In_d(x+v_d); distinct Out/In roles make a perfect matching without parity coloring",
+    "pass_elementary_gate_target": false,
+    "pass_exact_global_stream_with_named_block_import": true,
+    "pass_physical_supercell_and_elementary_gate_target": false,
+    "persistent_M2_per_cell": 156,
+    "rows": [
+      {
+        "all24_code_and_lane_covariance_failures": 0,
+        "intercell_word_SWAPS": 1944,
+        "inverse_failures": 0,
+        "lawful_rows": 729,
+        "lawful_stream_failures": 0,
+        "length": 3,
+        "malformed_inverse_recovery": true,
+        "malformed_multiple_incoming_lanes_retained": 2,
+        "partition_pair_conflicts": 0,
+        "partition_pairs": 486,
+        "persistent_M2": 4212,
+        "split": "train"
+      },
+      {
+        "all24_code_and_lane_covariance_failures": 0,
+        "intercell_word_SWAPS": 15552,
+        "inverse_failures": 0,
+        "lawful_rows": 5832,
+        "lawful_stream_failures": 0,
+        "length": 6,
+        "malformed_inverse_recovery": true,
+        "malformed_multiple_incoming_lanes_retained": 2,
+        "partition_pair_conflicts": 0,
+        "partition_pairs": 3888,
+        "persistent_M2": 33696,
+        "split": "held"
+      },
+      {
+        "all24_code_and_lane_covariance_failures": 0,
+        "intercell_word_SWAPS": 24696,
+        "inverse_failures": 0,
+        "lawful_rows": 9261,
+        "lawful_stream_failures": 0,
+        "length": 7,
+        "malformed_inverse_recovery": true,
+        "malformed_multiple_incoming_lanes_retained": 2,
+        "partition_pair_conflicts": 0,
+        "partition_pairs": 6174,
+        "persistent_M2": 53508,
+        "split": "held-out-size"
+      }
+    ],
+    "sharp_gate_import": "one cubic-covariant 28-M2 local exchange permutation, full-space identity on every other local row",
+    "sharp_geometric_import": "one translation-invariant cubic placement of all lane and exchange registers on physical M2 sites",
+    "status": "exact translation/proper-cubic partitioned word-register stream with explicit direction lanes; local 28-M2 compact/lane exchange and its physical supercell placement remain sharply scoped imports"
+  },
+  "route_C_state_carried_phase": {
+    "C6X_clean_work_M2": 5,
+    "branch_gate_control": "word equality plus phase(source)=phase(target)=p",
+    "explicit_elementary_gate_count_executed": false,
+    "host_tick_parity_color_origin_or_size_query": false,
+    "intertwiner": "G_register E_p = E_(1-p) G_coarse for p=0,1; decoder reads A for p=0 and B for p=1",
+    "pass_exact_phase_carried_global_stream": true,
+    "pass_phase_genesis": false,
+    "phase_advance": "parallel local X on every p_x; self-inverse and preserves every NN equality/inequality syndrome",
+    "phase_bit_is_physical_time": false,
+    "phase_constraint": "p_x=p_y on every NN edge; connectedness makes the lawful phase globally uniform",
+    "phase_constraint_dynamically_repaired_or_generated": false,
+    "phase_constraint_locally_checkable": true,
+    "rows": [
+      {
+        "inverse_failures": 0,
+        "lawful_stream_failures": 0,
+        "length": 3,
+        "malformed_nonuniform_full_space_inverse": true,
+        "maximum_live_with_five_work_M2_per_species": 1080,
+        "nonuniform_phase_syndrome_before_after_local_advance": [
+          42,
+          42
+        ],
+        "persistent_active_buffer_clock_M2": 675,
+        "phase0_and_phase1_lawful_rows": 1458,
+        "single_phase_flip_syndrome": 6,
+        "split": "train",
+        "two_consecutive_shift_failures": 0,
+        "uniform_constraint_preserved_by_bitwise_reversible_advance": true,
+        "uniform_phase0_syndrome": 0,
+        "uniform_phase1_syndrome": 0
+      },
+      {
+        "inverse_failures": 0,
+        "lawful_stream_failures": 0,
+        "length": 6,
+        "malformed_nonuniform_full_space_inverse": true,
+        "maximum_live_with_five_work_M2_per_species": 8640,
+        "nonuniform_phase_syndrome_before_after_local_advance": [
+          318,
+          318
+        ],
+        "persistent_active_buffer_clock_M2": 5400,
+        "phase0_and_phase1_lawful_rows": 11664,
+        "single_phase_flip_syndrome": 6,
+        "split": "held",
+        "two_consecutive_shift_failures": 0,
+        "uniform_constraint_preserved_by_bitwise_reversible_advance": true,
+        "uniform_phase0_syndrome": 0,
+        "uniform_phase1_syndrome": 0
+      },
+      {
+        "inverse_failures": 0,
+        "lawful_stream_failures": 0,
+        "length": 7,
+        "malformed_nonuniform_full_space_inverse": true,
+        "maximum_live_with_five_work_M2_per_species": 13720,
+        "nonuniform_phase_syndrome_before_after_local_advance": [
+          476,
+          476
+        ],
+        "persistent_active_buffer_clock_M2": 8575,
+        "phase0_and_phase1_lawful_rows": 18522,
+        "single_phase_flip_syndrome": 6,
+        "split": "held-out-size",
+        "two_consecutive_shift_failures": 0,
+        "uniform_constraint_preserved_by_bitwise_reversible_advance": true,
+        "uniform_phase0_syndrome": 0,
+        "uniform_phase1_syndrome": 0
+      }
+    ],
+    "sharp_import": "phase-controlled equality-XOR block; Cycle603 CkX/Toffoli lowering applies with k=6",
+    "status": "exact two-buffer stream with a locally checkable uniform phase bit selecting the active buffer; the phase replaces host tick parity but its uniform genesis is supplied",
+    "translation_invariant_global_supercell_embedding_executed": false
+  },
+  "route_disposition": {
+    "A": "exact compact-register global stream on supplied code with event-local elementary lowering; physical supercell packing, zero buffer/scratch, and global one-carrier enforcement remain supplied",
+    "B": "exact direction-expanded partitioned register stream with one sharp 28-M2 local exchange and physical-placement import",
+    "C": "exact phase-carried recurrent register stream on locally checkable uniform-phase sector; phase genesis, elementary count, and physical packing remain supplied",
+    "precision": "explicit depth<=10 H/T/Tdg approximants and accumulation bounds; no exact or scalable precision closure"
+  },
+  "runner_sha256": "5dea1105139de76975a59efdae86d623a3b5715966b3d02631f65498baa3020d",
+  "shared_obstruction_or_axiom_pressure": false,
+  "shore": {
+    "Cycle603_global_stream_was_open": true,
+    "Cycle603_pass": true
+  },
+  "status": "cycle606-global-carrier-stream-qca-approximation-tournament",
+  "strongest_constructive_result": "an exact constant-overhead translation/proper-cubic compact-register double-buffer permutation implements the simultaneous Cycle600 three-species torus stream on the declared one-carrier/species code for L3/L6/L7 with no parity/color/origin/size query; each event has a bounded support-two Clifford+T/CNOT/SWAP NN template, while simultaneous physical supercell packing remains explicit and open",
+  "tests_failed": 0,
+  "tests_passed": 8
+}

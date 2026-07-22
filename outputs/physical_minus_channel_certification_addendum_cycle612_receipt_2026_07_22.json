@@ -1,0 +1,92 @@
+{
+ "cycle": "612-addendum",
+ "authority": "none",
+ "audit": "unset",
+ "frozen_contract_sha256": "d45cad77c7d74df1951930ae796295fd8c405cc59d668f2fda98ca430b32cea1",
+ "consumed": {
+  "cycle610_runner": "61d624d3f47e371a3b99f55a3c60db68c1fe77f5d93a21651f9172b2d49f1458",
+  "cycle611_runner": "9f1d4a2aabca8af1f61ef42071c8d2bce05018eace7a6f0886d769871689a13d"
+ },
+ "channel_factors": {
+  "plus_bound_factor": 0.013749355556730332,
+  "minus_bound_factor": 1.9862506444432695
+ },
+ "rows": {
+  "pa_state_minus": {
+   "rate": -0.4732862903225806,
+   "rate_T2": -0.4737903225806452,
+   "fine_rate": -0.47357971506585766,
+   "locked": true,
+   "convention_independent": true,
+   "rate_matches": true,
+   "certified": true,
+   "predicted": -0.47357742338851666
+  },
+  "pa_state_plus": {
+   "rate": 0.034274193548387094,
+   "rate_T2": 0.03377016129032258,
+   "fine_rate": 0.0339673864249691,
+   "locked": false,
+   "convention_independent": false,
+   "rate_matches": false,
+   "certified": false,
+   "predicted": -0.47357742338851666
+  },
+  "raw_source_minus": {
+   "rate": -0.2696572580645161,
+   "rate_T2": -0.2701612903225806,
+   "fine_rate": -0.2699322726726929,
+   "locked": false,
+   "convention_independent": false,
+   "rate_matches": false,
+   "certified": false,
+   "predicted": -0.47357742338851666
+  },
+  "raw_source_plus": {
+   "rate": 0.049899193548387094,
+   "rate_T2": 0.049899193548387094,
+   "fine_rate": 0.049933577819205245,
+   "locked": true,
+   "convention_independent": false,
+   "rate_matches": false,
+   "certified": false,
+   "predicted": -0.47357742338851666
+  },
+  "bound_eigenvector_minus": {
+   "rate": -0.4737903225806452,
+   "rate_T2": -0.4732862903225806,
+   "fine_rate": -0.47357742338869263,
+   "locked": true,
+   "convention_independent": true,
+   "rate_matches": true,
+   "certified": true,
+   "predicted": -0.47357742338851666
+  },
+  "bound_eigenvector_plus": {
+   "rate": -0.4732862903225806,
+   "rate_T2": -0.4737903225806452,
+   "fine_rate": -0.47357742338869113,
+   "locked": true,
+   "convention_independent": true,
+   "rate_matches": true,
+   "certified": true,
+   "predicted": -0.47357742338851666
+  }
+ },
+ "open_row_raw_minus_certified": false,
+ "channel_selection": {
+  "pa_state": "minus",
+  "raw_source": "none",
+  "bound_eigenvector": "both",
+  "contact_off": "none"
+ },
+ "interpretation_firewall": [
+  "the channel sign is apparatus structure within the fixed Cycle-602 two-channel family, selected by the law's own certificates, not by spectral data",
+  "a certified rate is a dimensionless relational candidate, not proper time, lapse, or energy",
+  "the plus-channel falsification rows of Cycles 610-612 stand unchanged; this addendum refines the candidate law, it does not repair preregistered failures"
+ ],
+ "elapsed_seconds": 7.242326736450195,
+ "pass_count": 5,
+ "fail_count": 0,
+ "pass": true
+}

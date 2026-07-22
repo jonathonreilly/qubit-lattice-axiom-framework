@@ -198,22 +198,29 @@ the same rate ratios; only the tick unit is conventional.
 
 ### Motion (reaches the Cycle-583 spectral surface)
 
-| row | theta (this runner) | independent worker | retained Cycle-578 (L11) |
+| row | theta (this runner) | independent worker (final) | retained Cycle-578 (L11) |
 |---|---|---|---|
 | L9, K=0 | `-2.975574708447` | `-2.9755747084365` | `-2.97557567317691` (L11) |
-| L9, K1=2*pi*3/128 | `-2.971580376379` | (branch jump, rejected) | `-2.972928065176` (L11) |
-| L13, K=0 | `-2.975575908169` | — | Cycle-583 L->inf `-2.975575990912` |
-| L13, K2=2*pi*6/128 | `-2.966481085938` | — | — |
-| L9, beta=-0.35 | `-2.962262618149` | — | — |
+| L9, K1=2*pi*3/128 | `-2.971580376379` | `-2.9715803763898` | `-2.972928065176` (L11) |
+| L13, K=0 | `-2.975575908169` | `-2.9755759081719` | Cycle-583 L->inf `-2.975575990912` |
+| L13, K2=2*pi*6/128 | `-2.966481085938` | `-2.9664810859608` | — |
+| L9, beta=-0.35 | `-2.962262618149` | `-2.9622626181448` | — |
 
-The worker's independent implementation agrees at K=0 to `1e-11`.  Its K != 0
-row self-reported a continuation collapse (consecutive null-vector overlap
-0.000) and landed on a different channel; the supervisor rejected that row
-against the retained Cycle-578 dispersion, which continues
-`-2.9756 -> -2.9729` at the same K label with the same sign and magnitude as
-this runner's A2-overlap-tracked branch.  Disagreement between independent
-implementations was surfaced, adjudicated against retained evidence, and
-recorded — the cross-check performed exactly its function.
+The worker's independent implementation confirms **all five** spectral rows to
+at most `2.3e-11`.  The verification had two stages, both recorded: the
+worker's mid-flight K != 0 continuation first collapsed onto a different
+channel (self-reported consecutive null-vector overlap 0.000, value
+`-3.0142`), which the supervisor provisionally rejected against the retained
+Cycle-578 dispersion (`-2.9756 -> -2.9729` at the same K label); the worker's
+final deliverable then replaced det-minimization with smallest-singular-value
+refinement plus a predictor-corrector branch tracker (adjacent-step overlaps
+0.998-0.9998) and converged to this runner's A2-tracked branch on every row.
+The worker also reports monotone L9/L13 convergence of the K=0 root toward
+the retained Cycle-583 infinite-sum value (`1.3e-6` and `8.3e-8` gaps) and
+upward dispersion on both moving rows, both consistent with the retained
+shore.  Disagreement between independent implementations was surfaced,
+adjudicated against retained evidence, resolved by the worker's own
+diagnostics, and recorded — the cross-check performed exactly its function.
 
 Measured ratios (purified rows): train `0.998952 (ticks)` /
 `0.9986576266913 (lift sum)` versus prediction `0.9986576266911`; held
@@ -436,9 +443,14 @@ runner SHA-256:               61d624d3f47e371a3b99f55a3c60db68c1fe77f5d93a21651f
 receipt SHA-256:              0816073d1861bb8b36238ec4948c387801a75442c797baf4a52e335cf6d30ccc
 cold transcript SHA-256:      95cb76b9471e5f861f6b65c7e0e73fd51bb267f8d7db5bac8ed6717c4520d0d7
 frozen contract SHA-256:      52666bb481107d722f976a4ebb72943d802211acac84e6108dca8f5daa233406
-worker root file SHA-256:     d27f8e84f23d9953fe137e983a624f232e2417a225b22e25d935c172f59aea24
-worker solver SHA-256:        2a95c2cb6020955b368848ab9dc4252ee04db3e9d589d7b9966380facca0f25b
+worker root file SHA-256:     3ef1fe2987236e4e02bdd5b9511067e3e4ec4e50b61175e23dc6505dd2c181af
+worker solver SHA-256:        a2c75d3406645884328f6d8eb23fb26f0020f11e02da79321f68d3396b2502ee
 ```
 
 The worker cross-implementation artifacts are retained outside the repository
-in the session scratchpad; their hashes above pin the adjudicated comparison.
+in the session scratchpad; the hashes above pin the worker's FINAL five-row
+deliverable.  An earlier mid-flight snapshot of the worker's incremental root
+file (SHA-256
+`d27f8e84f23d9953fe137e983a624f232e2417a225b22e25d935c172f59aea24`) contained
+the later-corrected K != 0 branch hop discussed in Route C; both hashes are
+recorded so the two-stage verification is fully reconstructible.

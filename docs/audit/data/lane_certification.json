@@ -1369,7 +1369,7 @@
         },
         {
           "claim_id": "koide_mru_demotion_note_2026-04-20",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "koide_mru_weight_class_obstruction_theorem_note_2026-04-19",
@@ -2767,6 +2767,6 @@
       "uncertified_count": 634
     }
   ],
-  "repo_head": "0dc597a853f1271492761e1fa831958847cf05e3",
+  "repo_head": "c215227efcf07e40871a3d1b3763344fc821969f",
   "schema": "lane_certification_v2"
 }

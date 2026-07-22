@@ -1,24 +1,78 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-22T20:16:51.590363+00:00",
+  "audit_invocation_history": [
+    "0b1cc1af837f4c6b9806757414e36892",
+    "cf9686dacaa24a53b0349dd59b785e53"
+  ],
+  "audit_invocation_id": "cf9686dacaa24a53b0349dd59b785e53",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 3,
+      "counts": {
+        "A": 17,
+        "B": 1,
+        "C": 3,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true,
+      "runner_path": "scripts/frontier_koide_mru_demotion_bridge_corollary_2026_06_18.py"
+    },
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19": "Exact Fourier identity a_0^2-2|z|^2=3(a^2-2|b|^2) and equivalent polynomial zero locus on Herm_circ(3), including b=0, with the kappa=2 ratio form restricted to b!=0."
+    },
+    "dep_claim_type": {
+      "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19": "retained"
+    },
+    "deps": [
+      "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 11.49,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_koide_mru_demotion_bridge_corollary_2026_06_18.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "c654a4a2181c71ba623643b952fe22ac394c144c9514eea2030dcb26dfea9aed",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "c654a4a2181c71ba623643b952fe22ac394c144c9514eea2030dcb26dfea9aed",
+    "runner_path": "scripts/frontier_koide_mru_demotion_bridge_corollary_2026_06_18.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 718
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-B-20260722-230fb2e9",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The finite-algebra counterexample closes Path A, but the bounded demotion does not satisfy the required negative-claim discipline: alternative phase-decoupling mechanisms remain explicitly open and are not exhaustively dispositioned.",
   "claim_id": "koide_mru_demotion_note_2026-04-20",
-  "claim_scope": null,
+  "claim_scope": "On Herm_circ(3), generic b\u2192e^{i\u03b8}b changes tr(H^3) and det(H), so the displayed spectral-observable Path A does not derive a continuous SO(2) quotient; no other attack route or physical Koide closure is audited.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-22T20:16:51.590363+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,20 +80,33 @@
     "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19"
   ],
   "direct_in_degree": 4,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "fresh_context",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 11.49,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Because tr(H^3)=3a^3+18a|b|^2+3(b^3+bbar^3) and det(H)=a^3+b^3+bbar^3\u22123a|b|^2 retain cos(3 arg b), a generic phase rotation is not a spectral symmetry and Path A does not derive the SO(2) quotient.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls",
+    "conditional_wall_rationale",
+    "derived_no_go_boundary",
+    "stretch_attempt_negative"
+  ],
   "note_hash": "025309b22b8750a56976cab60fbce3ba6a89e74f6210cf7b566fb0166e9614a1",
   "note_path": "docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md",
-  "notes_for_re_audit_if_any": null,
-  "open_dependency_paths": [],
+  "notes_for_re_audit_if_any": "scope_too_broad: narrow the registered theorem claim to the displayed Path-A trace/determinant counterexample, leave demotion and status reclassification as metadata, and re-audit that source-grounded scope.",
+  "open_dependency_paths": [
+    "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md",
+    "docs/THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md",
+    "docs/KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md",
+    "docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md",
+    "docs/KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md",
+    "docs/KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md"
+  ],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
     {
@@ -1624,14 +1691,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
+    "A": 7,
+    "B": 9,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 16
   },
   "runner_path": "scripts/frontier_koide_mru_demotion_bridge_corollary_2026_06_18.py",
   "title": "Koide MRU Formal Demotion Note",
   "transitive_descendants": 718,
-  "verdict_rationale": null
+  "verdict_rationale": "The runner performs genuine class-A symbolic and finite-matrix checks and verifies the claimed phase sensitivity, while its source-boundary checks are class B. N1\u2013N2 test only the alternate-observable Path A and leave future phase-channel decoupling routes open; N3\u2013N5 show explicit boundary rhetoric, no prior residual witness, and no five-resolution exhaustive test. N6\u2013N7 find no supplied primitive or reframe closing the physical scalar-measure quotient, while the strongest spectral-symmetry steelman is defeated by the cubic-trace and determinant counterexample. N8 is packet-complete, but the note does not disposition the indexed cross-cycle alternatives, so its honest route-local negative result cannot receive a clean negative-claim verdict."
 }

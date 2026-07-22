@@ -17,7 +17,7 @@ file per claim), summarized in
 | Metric | Value |
 |---|---:|
 | Retained positive rows | 92 |
-| Retained bounded rows | 311 |
+| Retained bounded rows | 312 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 17 |
 
@@ -118,7 +118,7 @@ Sorted by load-bearing graph score (descending).
 - [`replay_environment_note`](../../docs/REPLAY_ENVIRONMENT_NOTE.md) — score 0.000; audited 2026-05-01T23:28:33.389906+00:00
 - [`staggered_graph_portability_stress_note`](../../docs/STAGGERED_GRAPH_PORTABILITY_STRESS_NOTE.md) — score 0.000; audited 2026-05-05T11:44:13.477263+00:00
 
-## Retained bounded rows (311)
+## Retained bounded rows (312)
 
 Sorted by load-bearing graph score (descending).
 
@@ -136,6 +136,7 @@ Sorted by load-bearing graph score (descending).
 - [`hierarchy_spatial_bc_and_u0_scaling_note`](../../docs/HIERARCHY_SPATIAL_BC_AND_U0_SCALING_NOTE.md) — score 13.731; audited 2026-05-05T09:59:06.642371+00:00
 - [`valley_linear_action_note`](../../docs/VALLEY_LINEAR_ACTION_NOTE.md) — score 13.190; audited 2026-05-11T22:50:45.104109+00:00
 - [`alt_connectivity_family_sign_note`](../../docs/ALT_CONNECTIVITY_FAMILY_SIGN_NOTE.md) — score 12.687; audited 2026-05-04T23:31:29.820978+00:00
+- [`gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06`](../../docs/GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md) — score 12.140; audited 2026-07-22T19:45:55.898794+00:00
 - [`alt_connectivity_family_basin_note`](../../docs/ALT_CONNECTIVITY_FAMILY_BASIN_NOTE.md) — score 12.100; audited 2026-05-05T04:20:10.208839+00:00
 - [`second_grown_family_sign_note`](../../docs/SECOND_GROWN_FAMILY_SIGN_NOTE.md) — score 12.100; audited 2026-05-06T02:47:50.916426+00:00
 - [`lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10`](../../docs/LIEB_ROBINSON_EQUAL_TIME_TENSOR_LOCALITY_NARROW_THEOREM_NOTE_2026-05-10.md) — score 12.016; audited 2026-05-29T20:59:18.926390+00:00

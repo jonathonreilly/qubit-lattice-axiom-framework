@@ -367,6 +367,12 @@ schema). It does not show that the source claim is false or needs editing.
   scientific judgment; only repair the rejected structural packet. Malformed
   JSON and other contract rejects without a narrow judgment-preserving repair
   target go directly to the same exhausted-delivery path.
+- Treat an incompatible verdict/type tuple as a schema-invalid delivery, not
+  as a scientific seat. In particular, `audited_decoration` requires
+  `claim_type=decoration` plus a decoration parent, while `audited_clean`
+  cannot ratify `decoration` or `meta`. Quarantine or retry the invalid seat
+  under the normal delivery rules. Launch a judicial panel only when two
+  validator-clean, applyable seats disagree on their scientific tuples.
 - If a valid critical clean seat survives beside an invalid peer, bank the
   valid seat and let the next top-level batch retry only the missing peer. If
   no valid delivery survives, record every exact validator error and

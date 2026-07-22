@@ -379,7 +379,10 @@ Definitions you must use:
   - `audited_decoration` — every load-bearing step is class (A), the
     note has zero (D) checks, and the chain reduces to a single upstream
     parent claim plus standard mathematics. (See
-    `ALGEBRAIC_DECORATION_POLICY.md`'s definition.)
+    `ALGEBRAIC_DECORATION_POLICY.md`'s definition.) This verdict requires
+    `claim_type = decoration` and a non-null `decoration_parent_claim_id`.
+    Conversely, `audited_clean` cannot ratify `claim_type = decoration` or
+    `claim_type = meta`.
   - `audited_numerical_match` — class (G) load-bearing step. The chain
     works only at a chosen input scale or chosen input value, with the
     input itself imported from a calibrated external source.
@@ -799,20 +802,21 @@ caught downstream.
 - The wrapping script substitutes the variables, sends the prompt to the
   current best full Codex GPT model in a fresh session, captures the JSON
   response, and validates it against the schema.
-- If JSON parsing fails or required fields are missing, the response is
-  logged as `audit_status = audit_in_progress` with `blocker:
-  malformed_audit_response` and the audit is re-queued.
+- If JSON parsing fails, required fields are missing, or the verdict/type
+  tuple is semantically incompatible, the delivery is rejected before apply.
+  The top-level campaign records the exact validator error, quarantines a row
+  with no surviving valid seat for that campaign, and continues other ready
+  rows. Such a contract reject is not a scientific disagreement.
 - For `criticality: critical` claims (by transitive-descendant count;
   the audit lane intentionally does not use author-declared flagship
   status), the pipeline runs the prompt twice in independent sessions
   and requires matching `verdict`, `claim_type`, and
   `load_bearing_step_class` before landing `audited_clean`. A same-family
   second audit is eligible only when recorded as `independence:
-  fresh_context` from a distinct restricted-input session. Mismatches
-  promote to a judicial third-auditor review. The judicial auditor receives
-  the restricted source packet and the two prior audit arguments, then
-  records whether the first audit, second audit, or neither should be
-  ratified.
+  fresh_context` from a distinct restricted-input session. Only two
+  validator-clean, applyable seats whose scientific tuples disagree promote
+  to a five-judge panel. Invalid seats are quarantined or retried as missing
+  seats; they never create a judicial disagreement.
 - The auditor's session metadata (model version, session ID, timestamp)
   is recorded in the audit row's `auditor` field; the exact
   `auditor_family`, for example `codex-gpt-5.6`, is set automatically when

@@ -1,0 +1,89 @@
+{
+  "status": "cycle555-global-selected-network-N2-compiler",
+  "authority": "none",
+  "audit": "unset",
+  "runner_sha256": "bf7699b9463dcc5f032635094573f163daa40dae8fb0c7ebe094770c13fc40db",
+  "note_sha256": "eee7b2f3c1549b7a59a9257a44547a9769284a7d64558bdf59ab55ee0c078ffd",
+  "parent_certificate_sha256": "71518933d6932724931a819ea9a96c01c422a60d88f064c5bd87922b123a30c2",
+  "tests_passed": 11,
+  "tests_total": 11,
+  "pass": true,
+  "elapsed_seconds_internal": 59.48331074998714,
+  "timed_wall_seconds": 61.05,
+  "maximum_RSS_bytes": 163037184,
+  "process_swap_count": 0,
+  "complete_global_N0_N1_N2_encoder": {
+    "train_L3": {
+      "cells": 27,
+      "CAR_modes": 162,
+      "complete_columns": 13204,
+      "unique_companion_pivots": 27,
+      "minimum_GF2_branch_difference_rank": 27,
+      "decoder_CNOTs": 27
+    },
+    "held_L4": {
+      "cells": 64,
+      "CAR_modes": 384,
+      "complete_columns": 73921,
+      "unique_companion_pivots": 64,
+      "minimum_GF2_branch_difference_rank": 64,
+      "decoder_CNOTs": 64
+    },
+    "maximum_preparation_residual": 1.5700924586837752e-16,
+    "maximum_preparation_inverse_residual": 2.220446049250313e-16,
+    "minimum_deleted_branch_Givens_code_ray_residual": 0.7653668647301795,
+    "minimum_deleted_companion_CNOT_branch_leakage_norm": 0.7071067811865475,
+    "foreign_companion_pivot_failures": 0,
+    "global_Jordan_Wigner_string_or_parity_service": false,
+    "host_runtime_branch_order_or_sector_query": false
+  },
+  "layout_and_covariance": {
+    "train_L3": {
+      "compiler_live_M2": 818,
+      "required_logical_wire_pairs": 3382,
+      "distinct_route_edges": 12261,
+      "maximum_required_pair_route_edges": 57
+    },
+    "held_L4": {
+      "compiler_live_M2": 1929,
+      "required_logical_wire_pairs": 8442,
+      "distinct_route_edges": 32326,
+      "maximum_required_pair_route_edges": 95
+    },
+    "proper_cubic_frames": 24,
+    "frame_products": 576,
+    "mapped_wire_route_or_group_failures": 0,
+    "constant_storage_overhead_per_coarse_cell": true
+  },
+  "complete_network_N2_update": {
+    "train_L3": {
+      "maximum_inverse_residual": 3.369905720946661e-15,
+      "deleted_one_star_vector_residual": 0.6441817724023454,
+      "deleted_all_contact_vector_residual": 0.1778509956372444,
+      "maximum_covariance_residual": 3.757813366489876e-16
+    },
+    "held_L4": {
+      "maximum_inverse_residual": 3.557034954898172e-15,
+      "deleted_one_star_vector_residual": 0.430327267330417,
+      "deleted_all_contact_vector_residual": 0.1188079476663609,
+      "maximum_covariance_residual": 3.849733568341742e-16
+    },
+    "terminal_branch_route_counter_work_leakage": 0,
+    "one_particle_mass_fixture_preserved": true,
+    "local_contact_and_five_seams_preserved": true,
+    "intertwiner_zero_is_circuit_identity_not_independent_numerical_evidence": true
+  },
+  "scope_boundary": {
+    "global_selected_encoder_complete_N0_N1_N2_L3_L4_closed": true,
+    "N3_and_higher_global_sectors_closed": false,
+    "arbitrary_size_closed": false,
+    "fixed_reference_genesis_closed": false,
+    "blank_genesis_and_renewal_closed": false,
+    "compile_time_factor_and_scheduler_order_retired": false,
+    "autonomous_causal_update_law_closed": false,
+    "selected_to_rough_carrier_transducer_closed": false,
+    "shared_substrate_obstruction": false,
+    "axiom_pressure": false,
+    "broad_no_go_gate": "FAIL / DO NOT SHIP"
+  }
+}

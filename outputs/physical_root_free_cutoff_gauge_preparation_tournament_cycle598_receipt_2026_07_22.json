@@ -1,0 +1,1100 @@
+{
+  "HEAD": "70a1c54281afdfce255f5115cb84c3766813316e",
+  "audit": "unset",
+  "authority": "none",
+  "constitutional_effect": "none",
+  "elapsed_seconds": 38.85988212493248,
+  "maturity": {
+    "Born_probability_repo_strict": [
+      4.2,
+      3.65
+    ],
+    "causal_time_repo_strict": [
+      3.95,
+      3.8
+    ],
+    "gravity_source_repo_strict": [
+      4.1,
+      3.85
+    ],
+    "inertia_matter_repo_strict": [
+      4.9,
+      4.93
+    ],
+    "operational_quantum_records_repo_strict": [
+      4.8,
+      4.65
+    ]
+  },
+  "maximum_RSS_bytes": 156073984,
+  "no_go_discipline": {
+    "N1_attempted_families": 5,
+    "N1_family_normalization_complete": true,
+    "N1_normalized_approach_families": [
+      {
+        "disposition": "exact arbitrary finite L and L7; misses constant overhead and root freedom",
+        "family": "size-indexed prime Gauss flux",
+        "marker": "ATTEMPTED",
+        "mechanism": "telescoping modular Gauss law with k(L)>6L^3",
+        "object": "one Z_k(L) word on each oriented link",
+        "terminal_obligation": "exact arbitrary-size cutoff with size-independent M2 per cell and no root"
+      },
+      {
+        "disposition": "fixed catalog aliases; growing catalog grows aggregate link width",
+        "family": "finite-product CRT Gauss flux",
+        "marker": "ATTEMPTED",
+        "mechanism": "simultaneous local Gauss congruences and CRT reconstruction",
+        "object": "coprime local clock-factor words",
+        "terminal_obligation": "fixed factor catalog separates N<=3 at arbitrary volume"
+      },
+      {
+        "disposition": "root-free coherent N1 lift; duplicate species leaves genesis and full N-body lift open",
+        "family": "three mobile capacity anti-charge carriers",
+        "marker": "ATTEMPTED",
+        "mechanism": "local binding, co-hop, and conserved prepared species number",
+        "object": "three species of absent/inactive/bound local carrier words",
+        "terminal_obligation": "root-free cutoff with local unique genesis and coherent matter lift"
+      },
+      {
+        "disposition": "exact uniform fiber; imports root/tree/order, growing depth, and exact qudit Fourier gates",
+        "family": "reversible spanning-tree affine preparer",
+        "marker": "ATTEMPTED",
+        "mechanism": "unique NN tree completion of every chord assignment",
+        "object": "chord Fourier registers, tree flux words, and vertex accumulators",
+        "terminal_obligation": "autonomous root-free bounded-depth pure uniform-fiber preparation"
+      },
+      {
+        "disposition": "preserves Gauss and uniformizes only within fixed harmonic/syndrome sectors",
+        "family": "local plaquette cooling/uniformization",
+        "marker": "ATTEMPTED",
+        "mechanism": "translation-covariant local random or coherent plaquette shifts",
+        "object": "elementary contractible flux-loop moves",
+        "terminal_obligation": "prepare the full lawful pure fiber and repair malformed syndromes from blank"
+      },
+      {
+        "disposition": "syndrome extraction is local; autonomous coherent routing remains a live constructive route",
+        "family": "local Gauss-projector measurement and decoder",
+        "marker": "LIVE_UNTESTED",
+        "mechanism": "bounded local syndrome extraction followed by paired-defect routing",
+        "object": "vertex Fourier syndrome ancillas plus correction strings",
+        "terminal_obligation": "translation-covariant autonomous correction with no root or decoder service"
+      }
+    ],
+    "N1_required_before_negative": 5,
+    "N2_directional_wall_pairs": [
+      {
+        "first": "size-uniform link word",
+        "first_closes_second": false,
+        "first_to_second": "replace growing modular/CRT distinguishability by a fixed local alphabet mechanism does not supply transport or eliminate the fixed -3 background without a selected cell",
+        "independent": true,
+        "second": "root-free capacity reference",
+        "second_closes_first": false,
+        "second_to_first": "transport or eliminate the fixed -3 background without a selected cell does not supply replace growing modular/CRT distinguishability by a fixed local alphabet mechanism"
+      },
+      {
+        "first": "size-uniform link word",
+        "first_closes_second": false,
+        "first_to_second": "replace growing modular/CRT distinguishability by a fixed local alphabet mechanism does not supply derive one globally unique carrier of each species from local rules",
+        "independent": true,
+        "second": "unique mobile-carrier genesis",
+        "second_closes_first": false,
+        "second_to_first": "derive one globally unique carrier of each species from local rules does not supply replace growing modular/CRT distinguishability by a fixed local alphabet mechanism"
+      },
+      {
+        "first": "size-uniform link word",
+        "first_closes_second": false,
+        "first_to_second": "replace growing modular/CRT distinguishability by a fixed local alphabet mechanism does not supply intertwine indistinguishable N-body coin/contact/stream dynamics",
+        "independent": true,
+        "second": "coherent full many-body carrier lift",
+        "second_closes_first": false,
+        "second_to_first": "intertwine indistinguishable N-body coin/contact/stream dynamics does not supply replace growing modular/CRT distinguishability by a fixed local alphabet mechanism"
+      },
+      {
+        "first": "size-uniform link word",
+        "first_closes_second": false,
+        "first_to_second": "replace growing modular/CRT distinguishability by a fixed local alphabet mechanism does not supply prepare amplitudes rather than only a classical mixture over flux solutions",
+        "independent": true,
+        "second": "pure uniform-fiber preparation",
+        "second_closes_first": false,
+        "second_to_first": "prepare amplitudes rather than only a classical mixture over flux solutions does not supply replace growing modular/CRT distinguishability by a fixed local alphabet mechanism"
+      },
+      {
+        "first": "size-uniform link word",
+        "first_closes_second": false,
+        "first_to_second": "replace growing modular/CRT distinguishability by a fixed local alphabet mechanism does not supply replace tree/order/random external scheduling by a local law",
+        "independent": true,
+        "second": "autonomous bounded-depth control",
+        "second_closes_first": false,
+        "second_to_first": "replace tree/order/random external scheduling by a local law does not supply replace growing modular/CRT distinguishability by a fixed local alphabet mechanism"
+      },
+      {
+        "first": "size-uniform link word",
+        "first_closes_second": false,
+        "first_to_second": "replace growing modular/CRT distinguishability by a fixed local alphabet mechanism does not supply supply the three torus winding coordinates",
+        "independent": true,
+        "second": "harmonic-sector coverage",
+        "second_closes_first": false,
+        "second_to_first": "supply the three torus winding coordinates does not supply replace growing modular/CRT distinguishability by a fixed local alphabet mechanism"
+      },
+      {
+        "first": "size-uniform link word",
+        "first_closes_second": false,
+        "first_to_second": "replace growing modular/CRT distinguishability by a fixed local alphabet mechanism does not supply move and annihilate arbitrary separated Gauss defects coherently",
+        "independent": true,
+        "second": "malformed-syndrome repair",
+        "second_closes_first": false,
+        "second_to_first": "move and annihilate arbitrary separated Gauss defects coherently does not supply replace growing modular/CRT distinguishability by a fixed local alphabet mechanism"
+      },
+      {
+        "first": "root-free capacity reference",
+        "first_closes_second": false,
+        "first_to_second": "transport or eliminate the fixed -3 background without a selected cell does not supply derive one globally unique carrier of each species from local rules",
+        "independent": true,
+        "second": "unique mobile-carrier genesis",
+        "second_closes_first": false,
+        "second_to_first": "derive one globally unique carrier of each species from local rules does not supply transport or eliminate the fixed -3 background without a selected cell"
+      },
+      {
+        "first": "root-free capacity reference",
+        "first_closes_second": false,
+        "first_to_second": "transport or eliminate the fixed -3 background without a selected cell does not supply intertwine indistinguishable N-body coin/contact/stream dynamics",
+        "independent": true,
+        "second": "coherent full many-body carrier lift",
+        "second_closes_first": false,
+        "second_to_first": "intertwine indistinguishable N-body coin/contact/stream dynamics does not supply transport or eliminate the fixed -3 background without a selected cell"
+      },
+      {
+        "first": "root-free capacity reference",
+        "first_closes_second": false,
+        "first_to_second": "transport or eliminate the fixed -3 background without a selected cell does not supply prepare amplitudes rather than only a classical mixture over flux solutions",
+        "independent": true,
+        "second": "pure uniform-fiber preparation",
+        "second_closes_first": false,
+        "second_to_first": "prepare amplitudes rather than only a classical mixture over flux solutions does not supply transport or eliminate the fixed -3 background without a selected cell"
+      },
+      {
+        "first": "root-free capacity reference",
+        "first_closes_second": false,
+        "first_to_second": "transport or eliminate the fixed -3 background without a selected cell does not supply replace tree/order/random external scheduling by a local law",
+        "independent": true,
+        "second": "autonomous bounded-depth control",
+        "second_closes_first": false,
+        "second_to_first": "replace tree/order/random external scheduling by a local law does not supply transport or eliminate the fixed -3 background without a selected cell"
+      },
+      {
+        "first": "root-free capacity reference",
+        "first_closes_second": false,
+        "first_to_second": "transport or eliminate the fixed -3 background without a selected cell does not supply supply the three torus winding coordinates",
+        "independent": true,
+        "second": "harmonic-sector coverage",
+        "second_closes_first": false,
+        "second_to_first": "supply the three torus winding coordinates does not supply transport or eliminate the fixed -3 background without a selected cell"
+      },
+      {
+        "first": "root-free capacity reference",
+        "first_closes_second": false,
+        "first_to_second": "transport or eliminate the fixed -3 background without a selected cell does not supply move and annihilate arbitrary separated Gauss defects coherently",
+        "independent": true,
+        "second": "malformed-syndrome repair",
+        "second_closes_first": false,
+        "second_to_first": "move and annihilate arbitrary separated Gauss defects coherently does not supply transport or eliminate the fixed -3 background without a selected cell"
+      },
+      {
+        "first": "unique mobile-carrier genesis",
+        "first_closes_second": false,
+        "first_to_second": "derive one globally unique carrier of each species from local rules does not supply intertwine indistinguishable N-body coin/contact/stream dynamics",
+        "independent": true,
+        "second": "coherent full many-body carrier lift",
+        "second_closes_first": false,
+        "second_to_first": "intertwine indistinguishable N-body coin/contact/stream dynamics does not supply derive one globally unique carrier of each species from local rules"
+      },
+      {
+        "first": "unique mobile-carrier genesis",
+        "first_closes_second": false,
+        "first_to_second": "derive one globally unique carrier of each species from local rules does not supply prepare amplitudes rather than only a classical mixture over flux solutions",
+        "independent": true,
+        "second": "pure uniform-fiber preparation",
+        "second_closes_first": false,
+        "second_to_first": "prepare amplitudes rather than only a classical mixture over flux solutions does not supply derive one globally unique carrier of each species from local rules"
+      },
+      {
+        "first": "unique mobile-carrier genesis",
+        "first_closes_second": false,
+        "first_to_second": "derive one globally unique carrier of each species from local rules does not supply replace tree/order/random external scheduling by a local law",
+        "independent": true,
+        "second": "autonomous bounded-depth control",
+        "second_closes_first": false,
+        "second_to_first": "replace tree/order/random external scheduling by a local law does not supply derive one globally unique carrier of each species from local rules"
+      },
+      {
+        "first": "unique mobile-carrier genesis",
+        "first_closes_second": false,
+        "first_to_second": "derive one globally unique carrier of each species from local rules does not supply supply the three torus winding coordinates",
+        "independent": true,
+        "second": "harmonic-sector coverage",
+        "second_closes_first": false,
+        "second_to_first": "supply the three torus winding coordinates does not supply derive one globally unique carrier of each species from local rules"
+      },
+      {
+        "first": "unique mobile-carrier genesis",
+        "first_closes_second": false,
+        "first_to_second": "derive one globally unique carrier of each species from local rules does not supply move and annihilate arbitrary separated Gauss defects coherently",
+        "independent": true,
+        "second": "malformed-syndrome repair",
+        "second_closes_first": false,
+        "second_to_first": "move and annihilate arbitrary separated Gauss defects coherently does not supply derive one globally unique carrier of each species from local rules"
+      },
+      {
+        "first": "coherent full many-body carrier lift",
+        "first_closes_second": false,
+        "first_to_second": "intertwine indistinguishable N-body coin/contact/stream dynamics does not supply prepare amplitudes rather than only a classical mixture over flux solutions",
+        "independent": true,
+        "second": "pure uniform-fiber preparation",
+        "second_closes_first": false,
+        "second_to_first": "prepare amplitudes rather than only a classical mixture over flux solutions does not supply intertwine indistinguishable N-body coin/contact/stream dynamics"
+      },
+      {
+        "first": "coherent full many-body carrier lift",
+        "first_closes_second": false,
+        "first_to_second": "intertwine indistinguishable N-body coin/contact/stream dynamics does not supply replace tree/order/random external scheduling by a local law",
+        "independent": true,
+        "second": "autonomous bounded-depth control",
+        "second_closes_first": false,
+        "second_to_first": "replace tree/order/random external scheduling by a local law does not supply intertwine indistinguishable N-body coin/contact/stream dynamics"
+      },
+      {
+        "first": "coherent full many-body carrier lift",
+        "first_closes_second": false,
+        "first_to_second": "intertwine indistinguishable N-body coin/contact/stream dynamics does not supply supply the three torus winding coordinates",
+        "independent": true,
+        "second": "harmonic-sector coverage",
+        "second_closes_first": false,
+        "second_to_first": "supply the three torus winding coordinates does not supply intertwine indistinguishable N-body coin/contact/stream dynamics"
+      },
+      {
+        "first": "coherent full many-body carrier lift",
+        "first_closes_second": false,
+        "first_to_second": "intertwine indistinguishable N-body coin/contact/stream dynamics does not supply move and annihilate arbitrary separated Gauss defects coherently",
+        "independent": true,
+        "second": "malformed-syndrome repair",
+        "second_closes_first": false,
+        "second_to_first": "move and annihilate arbitrary separated Gauss defects coherently does not supply intertwine indistinguishable N-body coin/contact/stream dynamics"
+      },
+      {
+        "first": "pure uniform-fiber preparation",
+        "first_closes_second": false,
+        "first_to_second": "prepare amplitudes rather than only a classical mixture over flux solutions does not supply replace tree/order/random external scheduling by a local law",
+        "independent": true,
+        "second": "autonomous bounded-depth control",
+        "second_closes_first": false,
+        "second_to_first": "replace tree/order/random external scheduling by a local law does not supply prepare amplitudes rather than only a classical mixture over flux solutions"
+      },
+      {
+        "first": "pure uniform-fiber preparation",
+        "first_closes_second": false,
+        "first_to_second": "prepare amplitudes rather than only a classical mixture over flux solutions does not supply supply the three torus winding coordinates",
+        "independent": true,
+        "second": "harmonic-sector coverage",
+        "second_closes_first": false,
+        "second_to_first": "supply the three torus winding coordinates does not supply prepare amplitudes rather than only a classical mixture over flux solutions"
+      },
+      {
+        "first": "pure uniform-fiber preparation",
+        "first_closes_second": false,
+        "first_to_second": "prepare amplitudes rather than only a classical mixture over flux solutions does not supply move and annihilate arbitrary separated Gauss defects coherently",
+        "independent": true,
+        "second": "malformed-syndrome repair",
+        "second_closes_first": false,
+        "second_to_first": "move and annihilate arbitrary separated Gauss defects coherently does not supply prepare amplitudes rather than only a classical mixture over flux solutions"
+      },
+      {
+        "first": "autonomous bounded-depth control",
+        "first_closes_second": false,
+        "first_to_second": "replace tree/order/random external scheduling by a local law does not supply supply the three torus winding coordinates",
+        "independent": true,
+        "second": "harmonic-sector coverage",
+        "second_closes_first": false,
+        "second_to_first": "supply the three torus winding coordinates does not supply replace tree/order/random external scheduling by a local law"
+      },
+      {
+        "first": "autonomous bounded-depth control",
+        "first_closes_second": false,
+        "first_to_second": "replace tree/order/random external scheduling by a local law does not supply move and annihilate arbitrary separated Gauss defects coherently",
+        "independent": true,
+        "second": "malformed-syndrome repair",
+        "second_closes_first": false,
+        "second_to_first": "move and annihilate arbitrary separated Gauss defects coherently does not supply replace tree/order/random external scheduling by a local law"
+      },
+      {
+        "first": "harmonic-sector coverage",
+        "first_closes_second": false,
+        "first_to_second": "supply the three torus winding coordinates does not supply move and annihilate arbitrary separated Gauss defects coherently",
+        "independent": true,
+        "second": "malformed-syndrome repair",
+        "second_closes_first": false,
+        "second_to_first": "move and annihilate arbitrary separated Gauss defects coherently does not supply supply the three torus winding coordinates"
+      }
+    ],
+    "N2_pair_count": 28,
+    "N3_hidden_condition_scan": {
+      "Cycle593 root/background": "retained only in Route A and tree comparator, explicitly absent in Route B",
+      "mobile species sector": "exactly one word per species remains a supplied global sector",
+      "plaquette uniformizer": "lawful seed, fixed Gauss syndrome, and fixed harmonic sector supplied",
+      "size indexed prime and word width": "explicit supplied compile-time family parameter",
+      "tree/chord preparation": "root, spanning tree, postorder, blank accumulators, and p-point Fourier gates supplied",
+      "uncited_standard_or_obvious_hits": 0
+    },
+    "N4_residual_matching": [
+      {
+        "current_residual": "removed by k(7)=2063",
+        "match": true,
+        "witness": "Cycle593 accepted Route A",
+        "witness_residual": "L7 alias under fixed k=1297"
+      },
+      {
+        "current_residual": "root removed and coherent N1 lift closed; remote duplicate/full N-body residual remains",
+        "match": true,
+        "witness": "Cycle593 accepted Route B",
+        "witness_residual": "remote duplicate species and coherent lift open"
+      },
+      {
+        "current_residual": "exact scheduled tree preparation constructed; autonomous/root-free preparation remains",
+        "match": true,
+        "witness": "Cycle593 uniform-fiber statement",
+        "witness_residual": "physical gauge-fiber preparation supplied"
+      }
+    ],
+    "N5_rhetoric_resolution": [
+      "this k(L) binary/CRT construction has growing words; no claim covers every fixed-alphabet cutoff code",
+      "this three-species carrier check admits a remote duplicate; no claim covers every mobile reservoir",
+      "this tree circuit is exact but ordered; no claim says every exact preparer requires a tree",
+      "these plaquette moves preserve winding and syndrome; no claim covers non-plaquette dissipative laws"
+    ],
+    "N6_partial_closure_paths": [
+      "combine the root-free carrier sector with a genuine local uniqueness/genesis mechanism",
+      "construct the antisymmetric full N<=3 carrier isometry and compile the six-mode coin/contact tables",
+      "add autonomous harmonic registers and coherent syndrome-pair routing to plaquette dynamics",
+      "test hierarchical fixed-alphabet counters or topological capacity defects instead of modular magnitude"
+    ],
+    "N7_hostile_steelman": "A hostile reviewer should reject shared-obstruction language: Route A closes arbitrary finite size if logarithmic per-cell words are allowed; Route B closes root and translation covariance if a three-carrier sector is prepared; Route C exactly prepares the uniform fiber if a tree schedule and Fourier gates are allowed.  These positive partial closures show separable imports, not a constitutional wall.",
+    "N8_cross_cycle_echo": "Cycles560/563/590/593 repeatedly retired one host/global import while exposing the next.  Cycle598 repeats that constructive pattern: L7 alias, root choice, and preparation are separately movable, so their present conjunction is not evidence for a new axiom.",
+    "axiom_pressure": false,
+    "minimum_content_claim_shipped": false,
+    "negative_claim_shipped": false,
+    "pass_for_scoped_dispositions_and_withholding_broad_negative": true,
+    "route_evidence": {
+      "A": true,
+      "B": true,
+      "C": true
+    },
+    "shared_obstruction": false,
+    "skill_freshness": {
+      "local_skill_sha256": "aeac7b2b7df30c350961f4b36b980a91e9c2ebeca3f35b6c1adcd731071bdab5",
+      "newer_origin_main_version_followed": true,
+      "origin_main_checked": true,
+      "origin_main_skill_sha256": "7d1aea8243ddd972331b935e2e836657e72115da3efe259f828fe862469d68b7"
+    }
+  },
+  "note_sha256": "8938c4d0392c3e99b79b43b3fe723b0ee107430f4a0620f9e8f1bbc7dedca700",
+  "optimal_next_campaign": "compile the full antisymmetric N<=3 massive coin/contact/stream lift on the root-free carrier sector and attack unique three-carrier genesis with a translation-covariant topological or local-defect mechanism; in parallel replace the tree schedule by coherent syndrome routing plus autonomous harmonic-sector preparation",
+  "pass": true,
+  "pins": {
+    "docs/work_history/repo/review_feedback/PHYSICAL_LOCAL_CUTOFF_GAUGE_ENFORCEMENT_TOURNAMENT_CYCLE593_NOTE_2026-07-22.md": "9b2aa57915f269313855de3782e7ad4a13522c764eff483be8fc1cc234ffe1b9",
+    "outputs/physical_local_cutoff_gauge_enforcement_tournament_cycle593_cold_2026_07_22.txt": "212de7551c2a4c20ce12d7b9a97efd07f6392d379860ad2c075442df59b4f61a",
+    "outputs/physical_local_cutoff_gauge_enforcement_tournament_cycle593_receipt_2026_07_22.json": "52506df00424acaa04fae2658d813b7e96b0258d0dc34b36e91faeb656c8e32b",
+    "scripts/physical_local_cutoff_gauge_enforcement_tournament_cycle593_2026_07_22.py": "a9208a889273eb1a2704190d2c14db5fffb5c70b0e06adb54bd8d08e333fcfba"
+  },
+  "route_A_size_indexed_prime_and_CRT": {
+    "CRT_comparator": {
+      "fixed_catalog_L6_alias_N": 213,
+      "fixed_factor_catalog_arbitrary_size": false,
+      "fixed_first_four_factor_product": 210,
+      "growing_factor_catalog_constant_overhead": false,
+      "rows": [
+        {
+          "CRT_product": 210,
+          "aggregate_link_word_M2": 9,
+          "exact_N_le_3": true,
+          "factor_count": 4,
+          "factors": [
+            2,
+            3,
+            5,
+            7
+          ],
+          "length": 3,
+          "matter_capacity": 162
+        },
+        {
+          "CRT_product": 2310,
+          "aggregate_link_word_M2": 13,
+          "exact_N_le_3": true,
+          "factor_count": 5,
+          "factors": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "length": 6,
+          "matter_capacity": 1296
+        },
+        {
+          "CRT_product": 2310,
+          "aggregate_link_word_M2": 13,
+          "exact_N_le_3": true,
+          "factor_count": 5,
+          "factors": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "length": 7,
+          "matter_capacity": 2058
+        },
+        {
+          "CRT_product": 30030,
+          "aggregate_link_word_M2": 17,
+          "exact_N_le_3": true,
+          "factor_count": 6,
+          "factors": [
+            2,
+            3,
+            5,
+            7,
+            11,
+            13
+          ],
+          "length": 12,
+          "matter_capacity": 10368
+        }
+      ]
+    },
+    "asymptotic_word_width": "w(L)=3 log2(L)+O(1)",
+    "every_declared_gauge_word_EG_residual": 0,
+    "exact_link_word_scaling": "three outgoing w(L)-M2 flux words per cell; 3*w(L) persistent M2 per cell plus three root spectators",
+    "family_definition": "k(L) is the least prime strictly greater than 6L^3; w(L)=ceil(log2(k(L)))",
+    "frame_products": 576,
+    "inherited_fixtures": {
+      "Cycle230_contact_factorization_residual": 2.149937642474629e-15,
+      "Cycle230_seam_braid_residual": 0,
+      "one_particle_mass_residual": 8.7159799596118e-16
+    },
+    "pass_as_route_audit": true,
+    "pass_full_target": false,
+    "proper_cubic_frames": 24,
+    "root_free": false,
+    "rows": [
+      {
+        "accepted_N_S_pairs": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            0
+          ]
+        ],
+        "all24_covariance_failures": 0,
+        "all576_group_failures": 0,
+        "deleted_crossed_link_update_syndrome_sites": 2,
+        "exact_N_le_3": true,
+        "exact_binary_word_M2": 8,
+        "fixed_root_translation_syndrome_sites": 2,
+        "invalid_binary_labels_rejected": 93,
+        "layout": {
+          "average_extended_M2_per_cell": 77.11111111111111,
+          "cells": 27,
+          "extended_live_M2": 2082,
+          "fine_lattice_modulus": 48,
+          "flux_word_M2": 8,
+          "frame_group_failures": 0,
+          "frame_products": 576,
+          "inherited_M2": 1431,
+          "inherited_M2_per_cell": 53.0,
+          "length": 3,
+          "mapped_wire_injection_failures": 0,
+          "maximum_new_role_radius_fine_L1": 4,
+          "new_flux_M2": 648,
+          "new_role_coordinate_sha256": "30f431fd9ee4b40361a712c31494572662bd790cae62f552e4fab7c8f333e9b1",
+          "new_root_spectator_M2": 3,
+          "proper_cubic_frames": 24,
+          "runtime_frame_query": false
+        },
+        "length": 3,
+        "local_crossed_link_update_support_M2": 10,
+        "local_update_inverse_failures": 0,
+        "matter_capacity": 162,
+        "maximum_Gauss_residual": 0,
+        "maximum_root_Gauss_check_support_M2": 57,
+        "modulus_strictly_above_capacity": true,
+        "selected_next_prime_modulus": 163,
+        "split": "train",
+        "stream_inverse_residual": 0
+      },
+      {
+        "accepted_N_S_pairs": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            0
+          ]
+        ],
+        "all24_covariance_failures": 0,
+        "all576_group_failures": 0,
+        "deleted_crossed_link_update_syndrome_sites": 2,
+        "exact_N_le_3": true,
+        "exact_binary_word_M2": 11,
+        "fixed_root_translation_syndrome_sites": 2,
+        "invalid_binary_labels_rejected": 751,
+        "layout": {
+          "average_extended_M2_per_cell": 86.01388888888889,
+          "cells": 216,
+          "extended_live_M2": 18579,
+          "fine_lattice_modulus": 96,
+          "flux_word_M2": 11,
+          "frame_group_failures": 0,
+          "frame_products": 576,
+          "inherited_M2": 11448,
+          "inherited_M2_per_cell": 53.0,
+          "length": 6,
+          "mapped_wire_injection_failures": 0,
+          "maximum_new_role_radius_fine_L1": 4,
+          "new_flux_M2": 7128,
+          "new_role_coordinate_sha256": "1b9f26dbd85eff667cfda569ce7ca01b114c17fbd72ff7d31be7624f40f8ef94",
+          "new_root_spectator_M2": 3,
+          "proper_cubic_frames": 24,
+          "runtime_frame_query": false
+        },
+        "length": 6,
+        "local_crossed_link_update_support_M2": 13,
+        "local_update_inverse_failures": 0,
+        "matter_capacity": 1296,
+        "maximum_Gauss_residual": 0,
+        "maximum_root_Gauss_check_support_M2": 75,
+        "modulus_strictly_above_capacity": true,
+        "selected_next_prime_modulus": 1297,
+        "split": "held",
+        "stream_inverse_residual": 0
+      },
+      {
+        "accepted_N_S_pairs": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            0
+          ]
+        ],
+        "all24_covariance_failures": 0,
+        "all576_group_failures": 0,
+        "deleted_crossed_link_update_syndrome_sites": 2,
+        "exact_N_le_3": true,
+        "exact_binary_word_M2": 12,
+        "fixed_root_translation_syndrome_sites": 2,
+        "invalid_binary_labels_rejected": 2033,
+        "layout": {
+          "average_extended_M2_per_cell": 89.00874635568513,
+          "cells": 343,
+          "extended_live_M2": 30530,
+          "fine_lattice_modulus": 112,
+          "flux_word_M2": 12,
+          "frame_group_failures": 0,
+          "frame_products": 576,
+          "inherited_M2": 18179,
+          "inherited_M2_per_cell": 53.0,
+          "length": 7,
+          "mapped_wire_injection_failures": 0,
+          "maximum_new_role_radius_fine_L1": 4,
+          "new_flux_M2": 12348,
+          "new_role_coordinate_sha256": "c868e0fa52843eeeafcc2b58e1a243e51c2b9b3e4ac740ee315889e544c3b55b",
+          "new_root_spectator_M2": 3,
+          "proper_cubic_frames": 24,
+          "runtime_frame_query": false
+        },
+        "length": 7,
+        "local_crossed_link_update_support_M2": 14,
+        "local_update_inverse_failures": 0,
+        "matter_capacity": 2058,
+        "maximum_Gauss_residual": 0,
+        "maximum_root_Gauss_check_support_M2": 81,
+        "modulus_strictly_above_capacity": true,
+        "selected_next_prime_modulus": 2063,
+        "split": "held-out-size",
+        "stream_inverse_residual": 0
+      }
+    ],
+    "size_independent_constant_overhead_per_cell": false,
+    "status": "exact arbitrary-finite-size family with scale-indexed local words; not constant-overhead and not root-free",
+    "translation_covariant_with_fixed_root": false,
+    "uniform_fiber_EG_residual": 0
+  },
+  "route_B_root_free_mobile_capacity": {
+    "coherent_one_particle_mass_coin": {
+      "EG_residual": 0.0,
+      "beta": -0.3,
+      "isometry_residual": 5.438959822042073e-16,
+      "maximum_all24_embedding_covariance_residual": 0.0
+    },
+    "contact_fixture_lift_residual": 0,
+    "contact_fixture_reason": "the accepted occupation-diagonal contact phase acts identically on every injective species assignment",
+    "full_many-body_indistinguishable_coin_lift_certified": false,
+    "held_average_M2_per_cell": 65,
+    "held_extended_live_M2": 14040,
+    "inherited_fixtures": {
+      "Cycle230_contact_factorization_residual": 2.149937642474629e-15,
+      "Cycle230_seam_braid_residual": 0,
+      "one_particle_mass_residual": 8.7159799596118e-16
+    },
+    "local_check_support_M2": 18,
+    "local_cohop_support_M2": 10,
+    "local_conservation_of_prepared_species_counts": true,
+    "local_word": "one 4-M2 word per species per cell: labels 0..7 are absent, inactive-neutral, or bound to one of six matter directions; labels 8..15 are rejected",
+    "modulus_or_growing_word": false,
+    "pass_as_route_audit": true,
+    "pass_full_target": false,
+    "persistent_carrier_M2_per_cell": 12,
+    "root_or_fixed_background": false,
+    "rows": [
+      {
+        "all24_covariance_failures": 0,
+        "all576_group_failures": 0,
+        "cohop_inverse_residual": 0,
+        "cohop_local_checks": {
+          "invalid_four_M2_labels": 0,
+          "matter_bound_anticharge_mismatches": 0,
+          "multiple_species_same_mode_collisions": 0,
+          "pass": true
+        },
+        "deleted_carrier_hop_mismatch_signal": 2,
+        "lawful_global_species_counts": [
+          1,
+          1,
+          1
+        ],
+        "lawful_local_checks": {
+          "invalid_four_M2_labels": 0,
+          "matter_bound_anticharge_mismatches": 0,
+          "multiple_species_same_mode_collisions": 0,
+          "pass": true
+        },
+        "layout": {
+          "cells": 27,
+          "extended_M2_per_cell": 65.0,
+          "extended_live_M2": 1755,
+          "fine_lattice_modulus": 48,
+          "frame_group_failures": 0,
+          "frame_products": 576,
+          "inherited_M2": 1431,
+          "inherited_M2_per_cell": 53.0,
+          "length": 3,
+          "mapped_wire_injection_failures": 0,
+          "maximum_new_role_radius_fine_L1": 3,
+          "new_carrier_M2": 324,
+          "new_role_coordinate_sha256": "8012b8690723c676ff5e57f61acf5bf0b1affbc2359215823cd314e9e24e4bf2",
+          "proper_cubic_frames": 24,
+          "runtime_frame_query": false
+        },
+        "length": 3,
+        "off_grid_word_rejections": 1,
+        "remote_duplicate_species_N4_global_counts": [
+          2,
+          1,
+          1
+        ],
+        "remote_duplicate_species_N4_local_checks": {
+          "invalid_four_M2_labels": 0,
+          "matter_bound_anticharge_mismatches": 0,
+          "multiple_species_same_mode_collisions": 0,
+          "pass": true
+        },
+        "remote_duplicate_species_N4_passes_local_checks": true,
+        "split": "train",
+        "translation_covariance_failures": 0,
+        "translations_tested": 27
+      },
+      {
+        "all24_covariance_failures": 0,
+        "all576_group_failures": 0,
+        "cohop_inverse_residual": 0,
+        "cohop_local_checks": {
+          "invalid_four_M2_labels": 0,
+          "matter_bound_anticharge_mismatches": 0,
+          "multiple_species_same_mode_collisions": 0,
+          "pass": true
+        },
+        "deleted_carrier_hop_mismatch_signal": 2,
+        "lawful_global_species_counts": [
+          1,
+          1,
+          1
+        ],
+        "lawful_local_checks": {
+          "invalid_four_M2_labels": 0,
+          "matter_bound_anticharge_mismatches": 0,
+          "multiple_species_same_mode_collisions": 0,
+          "pass": true
+        },
+        "layout": {
+          "cells": 216,
+          "extended_M2_per_cell": 65.0,
+          "extended_live_M2": 14040,
+          "fine_lattice_modulus": 96,
+          "frame_group_failures": 0,
+          "frame_products": 576,
+          "inherited_M2": 11448,
+          "inherited_M2_per_cell": 53.0,
+          "length": 6,
+          "mapped_wire_injection_failures": 0,
+          "maximum_new_role_radius_fine_L1": 3,
+          "new_carrier_M2": 2592,
+          "new_role_coordinate_sha256": "9e00ad805b53121a94e7cf2a1eebe654e639917a7be2909b894a7607e3fef8a8",
+          "proper_cubic_frames": 24,
+          "runtime_frame_query": false
+        },
+        "length": 6,
+        "off_grid_word_rejections": 1,
+        "remote_duplicate_species_N4_global_counts": [
+          2,
+          1,
+          1
+        ],
+        "remote_duplicate_species_N4_local_checks": {
+          "invalid_four_M2_labels": 0,
+          "matter_bound_anticharge_mismatches": 0,
+          "multiple_species_same_mode_collisions": 0,
+          "pass": true
+        },
+        "remote_duplicate_species_N4_passes_local_checks": true,
+        "split": "held",
+        "translation_covariance_failures": 0,
+        "translations_tested": 216
+      },
+      {
+        "all24_covariance_failures": 0,
+        "all576_group_failures": 0,
+        "cohop_inverse_residual": 0,
+        "cohop_local_checks": {
+          "invalid_four_M2_labels": 0,
+          "matter_bound_anticharge_mismatches": 0,
+          "multiple_species_same_mode_collisions": 0,
+          "pass": true
+        },
+        "deleted_carrier_hop_mismatch_signal": 2,
+        "lawful_global_species_counts": [
+          1,
+          1,
+          1
+        ],
+        "lawful_local_checks": {
+          "invalid_four_M2_labels": 0,
+          "matter_bound_anticharge_mismatches": 0,
+          "multiple_species_same_mode_collisions": 0,
+          "pass": true
+        },
+        "layout": {
+          "cells": 343,
+          "extended_M2_per_cell": 65.0,
+          "extended_live_M2": 22295,
+          "fine_lattice_modulus": 112,
+          "frame_group_failures": 0,
+          "frame_products": 576,
+          "inherited_M2": 18179,
+          "inherited_M2_per_cell": 53.0,
+          "length": 7,
+          "mapped_wire_injection_failures": 0,
+          "maximum_new_role_radius_fine_L1": 3,
+          "new_carrier_M2": 4116,
+          "new_role_coordinate_sha256": "f9195cff4f5a60795296264bee6284e41cb102d1ee21b074162bfbe450b84293",
+          "proper_cubic_frames": 24,
+          "runtime_frame_query": false
+        },
+        "length": 7,
+        "off_grid_word_rejections": 1,
+        "remote_duplicate_species_N4_global_counts": [
+          2,
+          1,
+          1
+        ],
+        "remote_duplicate_species_N4_local_checks": {
+          "invalid_four_M2_labels": 0,
+          "matter_bound_anticharge_mismatches": 0,
+          "multiple_species_same_mode_collisions": 0,
+          "pass": true
+        },
+        "remote_duplicate_species_N4_passes_local_checks": true,
+        "split": "held-out-size",
+        "translation_covariance_failures": 0,
+        "translations_tested": 343
+      }
+    ],
+    "seam_fixture_lift_residual": 0,
+    "seam_fixture_reason": "the accepted signed occupation permutation co-transports the bound carrier word",
+    "status": "root-free translation-covariant conserved capacity sector; unique three-carrier genesis remains supplied",
+    "translation_covariant_on_declared_sector": true,
+    "unique_one_carrier_per_species_genesis_locally_enforced": false
+  },
+  "route_C_uniform_fiber_preparation": {
+    "gauge_preparation_is_constraint_enforcement": false,
+    "local_plaquette_cooling_proxy": {
+      "Gauss_syndrome_repair": false,
+      "changes_harmonic_sector": false,
+      "local_and_translation_covariant": true,
+      "pass_as_scoped_uniformizer_audit": true,
+      "prepares_full_uniform_pure_fiber_from_blank": false,
+      "rows": [
+        {
+          "all24_elementary_plaquette_orbit_failures": 0,
+          "all576_group_failures": 0,
+          "bounded_size_independent_mixing_depth_certified": false,
+          "contractible_cycle_dimension": 52,
+          "delete_three_of_four_plaquette_legs_syndrome_sites": 2,
+          "full_cycle_dimension": 55,
+          "inverse_gap_proxy": 0.6666666666666667,
+          "length": 3,
+          "malformed_Gauss_syndrome_sites": 2,
+          "malformed_syndrome_change_under_plaquette_update": 0,
+          "missing_harmonic_sectors": 3,
+          "one_tracer_diffusion_gap_proxy": 1.4999999999999998,
+          "plaquette_Gauss_syndrome_sites": 0,
+          "plaquette_update_support_M2": 32,
+          "split": "train",
+          "translation_covariance_failures": 0,
+          "translations_tested": 27,
+          "winding_before_after": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "all24_elementary_plaquette_orbit_failures": 0,
+          "all576_group_failures": 0,
+          "bounded_size_independent_mixing_depth_certified": false,
+          "contractible_cycle_dimension": 430,
+          "delete_three_of_four_plaquette_legs_syndrome_sites": 2,
+          "full_cycle_dimension": 433,
+          "inverse_gap_proxy": 2.0000000000000004,
+          "length": 6,
+          "malformed_Gauss_syndrome_sites": 2,
+          "malformed_syndrome_change_under_plaquette_update": 0,
+          "missing_harmonic_sectors": 3,
+          "one_tracer_diffusion_gap_proxy": 0.4999999999999999,
+          "plaquette_Gauss_syndrome_sites": 0,
+          "plaquette_update_support_M2": 44,
+          "split": "held",
+          "translation_covariance_failures": 0,
+          "translations_tested": 216,
+          "winding_before_after": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "all24_elementary_plaquette_orbit_failures": 0,
+          "all576_group_failures": 0,
+          "bounded_size_independent_mixing_depth_certified": false,
+          "contractible_cycle_dimension": 684,
+          "delete_three_of_four_plaquette_legs_syndrome_sites": 2,
+          "full_cycle_dimension": 687,
+          "inverse_gap_proxy": 2.655970555211364,
+          "length": 7,
+          "malformed_Gauss_syndrome_sites": 2,
+          "malformed_syndrome_change_under_plaquette_update": 0,
+          "missing_harmonic_sectors": 3,
+          "one_tracer_diffusion_gap_proxy": 0.3765101981412664,
+          "plaquette_Gauss_syndrome_sites": 0,
+          "plaquette_update_support_M2": 48,
+          "split": "held-out-size",
+          "translation_covariance_failures": 0,
+          "translations_tested": 343,
+          "winding_before_after": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ]
+    },
+    "malformed_off_grid_controls": {
+      "binary_labels_at_or_above_k_rejected_before_update": true,
+      "modular_updates_preserve_valid_labels": true,
+      "plaquette_updates_conserve_any_preexisting_Gauss_syndrome": true
+    },
+    "pass_as_route_audit": true,
+    "pass_full_target": false,
+    "reversible_tree_affine_bijection": {
+      "autonomous": false,
+      "bounded_depth": false,
+      "exact_uniform_fiber_preparation_given_uniform_chords": true,
+      "pass": true,
+      "root_free": false,
+      "rows": [
+        {
+          "autonomous_host_free": false,
+          "bounded_depth_independent_of_L": false,
+          "chord_recovery_failures": 0,
+          "chord_registers": 55,
+          "cycle_space_dimension": 55,
+          "deleted_nonzero_tree_edge_syndrome_sites": 2,
+          "depth_recurrence": "D(L) <= 14L^3 + 3(L^3-1) after one parallel local qudit-Fourier layer",
+          "distinct_sample_hashes": 24,
+          "exact_p_point_Fourier_gate_over_binary_M2_supplied": true,
+          "extra_accumulator_M2_per_cell": 8,
+          "fiber_cardinality": "163^55",
+          "length": 3,
+          "maximum_modular_gate_support_M2": 16,
+          "modulus": 163,
+          "oriented_links": 81,
+          "preferred_root_tree_and_postorder_supplied": true,
+          "sampled_Gauss_failures": 0,
+          "sequential_modular_word_operation_upper_bound": 456,
+          "split": "train",
+          "tree_links": 26,
+          "tree_nearest_neighbour_failures": 0,
+          "uniformity_reason": "every chord assignment has one unique tree completion, hence the chord-to-fiber map is an affine bijection",
+          "vertices": 27,
+          "word_M2": 8
+        },
+        {
+          "autonomous_host_free": false,
+          "bounded_depth_independent_of_L": false,
+          "chord_recovery_failures": 0,
+          "chord_registers": 433,
+          "cycle_space_dimension": 433,
+          "deleted_nonzero_tree_edge_syndrome_sites": 2,
+          "depth_recurrence": "D(L) <= 14L^3 + 3(L^3-1) after one parallel local qudit-Fourier layer",
+          "distinct_sample_hashes": 24,
+          "exact_p_point_Fourier_gate_over_binary_M2_supplied": true,
+          "extra_accumulator_M2_per_cell": 11,
+          "fiber_cardinality": "1297^433",
+          "length": 6,
+          "maximum_modular_gate_support_M2": 22,
+          "modulus": 1297,
+          "oriented_links": 648,
+          "preferred_root_tree_and_postorder_supplied": true,
+          "sampled_Gauss_failures": 0,
+          "sequential_modular_word_operation_upper_bound": 3669,
+          "split": "held",
+          "tree_links": 215,
+          "tree_nearest_neighbour_failures": 0,
+          "uniformity_reason": "every chord assignment has one unique tree completion, hence the chord-to-fiber map is an affine bijection",
+          "vertices": 216,
+          "word_M2": 11
+        },
+        {
+          "autonomous_host_free": false,
+          "bounded_depth_independent_of_L": false,
+          "chord_recovery_failures": 0,
+          "chord_registers": 687,
+          "cycle_space_dimension": 687,
+          "deleted_nonzero_tree_edge_syndrome_sites": 2,
+          "depth_recurrence": "D(L) <= 14L^3 + 3(L^3-1) after one parallel local qudit-Fourier layer",
+          "distinct_sample_hashes": 24,
+          "exact_p_point_Fourier_gate_over_binary_M2_supplied": true,
+          "extra_accumulator_M2_per_cell": 12,
+          "fiber_cardinality": "2063^687",
+          "length": 7,
+          "maximum_modular_gate_support_M2": 24,
+          "modulus": 2063,
+          "oriented_links": 1029,
+          "preferred_root_tree_and_postorder_supplied": true,
+          "sampled_Gauss_failures": 0,
+          "sequential_modular_word_operation_upper_bound": 5828,
+          "split": "held-out-size",
+          "tree_links": 342,
+          "tree_nearest_neighbour_failures": 0,
+          "uniformity_reason": "every chord assignment has one unique tree completion, hence the chord-to-fiber map is an affine bijection",
+          "vertices": 343,
+          "word_M2": 12
+        }
+      ]
+    },
+    "status": "exact scheduled tree preparation plus root-free local plaquette uniformizer; neither is an autonomous root-free full-fiber preparer"
+  },
+  "runner_sha256": "89c733e3be55ec287e338c4d9ed6062ec8cb222345ff72596662c43b3f1ae6a5",
+  "shared_obstruction_or_axiom_pressure": false,
+  "shore": {
+    "Cycle593_pass": true,
+    "Cycle593_tests_passed": 7,
+    "L7_alias_failure": true,
+    "accepted_current_note_sha256": "9b2aa57915f269313855de3782e7ad4a13522c764eff483be8fc1cc234ffe1b9",
+    "every_word_EG_residual": 0,
+    "finite_L3_L6_local_enforcement": true,
+    "fixtures": {
+      "Cycle230_contact_factorization_residual": 2.149937642474629e-15,
+      "Cycle230_seam_braid_residual": 0,
+      "one_particle_mass_residual": 8.7159799596118e-16
+    },
+    "gauge_preparation_supplied": true,
+    "receipt_pre_appendix_note_sha256": "39c5381f0fde2cdc86419dae68f4c5b4c3014be9d5f1dd002a6370c104af0f52",
+    "uniform_fiber_EG_residual": 0
+  },
+  "six_wall_ledger": {
+    "C_int": "Cycle590 mass/contact/seam fixtures survive; the root-free carrier has an exact coherent N1 mass lift and basis contact/seam lift, but its full indistinguishable N<=3 coin compiler remains open",
+    "C_local": "arbitrary-finite-size local Gauss enforcement and exact scheduled uniform-fiber preparation are constructed separately; size-uniform overhead, local carrier genesis, and autonomous root-free pure preparation remain open",
+    "C_num": "k(L)>6L^3 removes every finite-size modular alias including L7 exactly; binary or CRT link width grows with L, while the carrier route avoids magnitude at the cost of a supplied sector",
+    "C_ref": "Route B removes the cubic-fixed root/background on a translation-covariant prepared three-carrier sector; local unique carrier genesis remains open",
+    "C_source": "background and mobile anti-charge labels are capacity bookkeeping only, not empirical energy, stress, source, gravity, or a source law",
+    "C_wrap": "every size-indexed prime family is recurrent under winding; local plaquette preparation leaves three harmonic sectors separately supplied"
+  },
+  "status": "cycle598-arbitrary-size-root-free-cutoff-gauge-preparation-tournament",
+  "strongest_constructive_result": "for every declared finite L, k(L)=least prime above 6L^3 gives exact local N<=3 Gauss enforcement and exact every-code-word E/G with recurrent winding and all24/576 covariance; L7 uses k=2063, but link M2 per cell grows as 3 ceil(log2 k(L))) and the root/preparation imports are not simultaneously retired",
+  "tests_failed": 0,
+  "tests_passed": 7
+}

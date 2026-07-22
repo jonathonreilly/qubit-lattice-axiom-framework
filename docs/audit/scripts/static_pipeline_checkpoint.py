@@ -142,6 +142,15 @@ def _receipt_path(nonce: str, stage: str) -> Path:
     return DATA / f"static_pipeline_receipt_{nonce}_{stage}.json"
 
 
+def _cleanup_receipts(nonce: str) -> tuple[bool, str]:
+    try:
+        for stage in ("citation_graph", "seed_ledger", "runner_classification"):
+            _receipt_path(nonce, stage).unlink(missing_ok=True)
+    except OSError as exc:
+        return False, f"cannot remove static producer receipt: {exc}"
+    return True, "static producer receipts removed"
+
+
 def _atomic_write(path: Path, payload: dict) -> tuple[bool, str]:
     temporary = path.with_suffix(".tmp")
     try:
@@ -604,7 +613,36 @@ def finalize_checkpoint() -> tuple[bool, str]:
     payload = {**checkpoint, "schema": FINAL_SCHEMA}
     ok, write_detail = _write_checkpoint(payload)
     fingerprint = checkpoint["static_input_sha256"]
-    return (ok, f"finalized full checkpoint {fingerprint[:12]}" if ok else write_detail)
+    if not ok:
+        return False, write_detail
+    cleaned, cleanup_detail = _cleanup_receipts(checkpoint["build_nonce"])
+    if not cleaned:
+        return False, cleanup_detail
+    return True, f"finalized full checkpoint {fingerprint[:12]}"
+
+
+def abort_checkpoint() -> tuple[bool, str]:
+    """Remove only this full build's transient receipts and partial proof."""
+    nonce, detail = _environment_nonce(BUILD_NONCE_ENV, required=True)
+    if nonce is None:
+        return False, detail
+    cleaned, detail = _cleanup_receipts(nonce)
+    if not cleaned:
+        return False, detail
+    try:
+        checkpoint = json.loads(CHECKPOINT.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        checkpoint = None
+    if (
+        isinstance(checkpoint, dict)
+        and checkpoint.get("build_nonce") == nonce
+        and checkpoint.get("schema") != FINAL_SCHEMA
+    ):
+        try:
+            CHECKPOINT.unlink(missing_ok=True)
+        except OSError as exc:
+            return False, f"cannot remove partial full-build checkpoint: {exc}"
+    return True, "full-build transient receipts removed"
 
 
 def verify_checkpoint() -> tuple[bool, str]:
@@ -642,7 +680,9 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "action",
-        choices=("begin", "prepare", "capture", "finalize", "verify", "identity"),
+        choices=(
+            "begin", "prepare", "capture", "finalize", "abort", "verify", "identity"
+        ),
     )
     args = parser.parse_args()
     actions = {
@@ -650,6 +690,7 @@ def main() -> int:
         "prepare": prepare_checkpoint,
         "capture": capture_checkpoint,
         "finalize": finalize_checkpoint,
+        "abort": abort_checkpoint,
         "verify": verify_checkpoint,
         "identity": checkpoint_identity,
     }

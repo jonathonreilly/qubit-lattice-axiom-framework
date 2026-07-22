@@ -70,6 +70,7 @@ else
     python3 -c 'import secrets; print(secrets.token_hex(16))'
   )"
   export AUDIT_STATIC_BUILD_NONCE
+  trap 'python3 docs/audit/scripts/static_pipeline_checkpoint.py abort >/dev/null 2>&1 || true' EXIT
   python3 docs/audit/scripts/static_pipeline_checkpoint.py begin
 fi
 

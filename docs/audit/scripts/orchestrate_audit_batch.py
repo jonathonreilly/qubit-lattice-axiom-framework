@@ -57,6 +57,15 @@ SUCCESS_RESULTS = {
     "compute_required",
 }
 _COMMAND_CONTEXT = threading.local()
+
+
+def _command_cancel_event() -> threading.Event | None:
+    return getattr(_COMMAND_CONTEXT, "cancel_event", None)
+
+
+def _command_cancelled() -> bool:
+    event = _command_cancel_event()
+    return event is not None and event.is_set()
 RESUMABLE_HANDOFF_RESULTS = {"judicial_panel_required"}
 SCHEMA_INVALID_RESULTS = {"malformed_json", "validation_failed"}
 SCHEMA_QUARANTINE_RESULT = "schema_invalid_quarantined"
@@ -143,8 +152,13 @@ def acquire_exclusive_drain_lock(label: str):
     return handle
 
 
-def sh(cmd: list[str], timeout: int | None = 120) -> subprocess.CompletedProcess:
-    cancel_event = getattr(_COMMAND_CONTEXT, "cancel_event", None)
+def sh(
+    cmd: list[str],
+    timeout: int | None = 120,
+    *,
+    honor_cancel: bool = True,
+) -> subprocess.CompletedProcess:
+    cancel_event = _command_cancel_event() if honor_cancel else None
     if cancel_event is not None and cancel_event.is_set():
         return subprocess.CompletedProcess(cmd, 125, "", "cancelled before launch")
     proc = subprocess.Popen(
@@ -884,6 +898,8 @@ def packet_completion_pass(
     codex_bin = shutil.which("codex")
     if not codex_bin:
         return None
+    if _command_cancelled():
+        return None
     command = [
         codex_bin, "exec", "--skip-git-repo-check", "--ignore-rules",
         "--ignore-user-config", "--ephemeral",
@@ -921,7 +937,12 @@ def packet_completion_pass(
         polling_failed = False
         try:
             while time.monotonic() < deadline and proc.poll() is None:
-                time.sleep(PACKET_COMPLETION_POLL_SECONDS)
+                cancel_event = _command_cancel_event()
+                if cancel_event is not None:
+                    if cancel_event.wait(PACKET_COMPLETION_POLL_SECONDS):
+                        break
+                else:
+                    time.sleep(PACKET_COMPLETION_POLL_SECONDS)
             if proc.poll() is None:
                 try:
                     proc.wait(timeout=PACKET_COMPLETION_EXIT_GRACE_SECONDS)
@@ -1087,13 +1108,16 @@ def finalize_worker(job: dict) -> tuple[dict | None, dict]:
     return envelope, result
 
 
-def clean_main_error() -> str | None:
-    branch = sh(["git", "rev-parse", "--abbrev-ref", "HEAD"])
+def clean_main_error(*, honor_cancel: bool = True) -> str | None:
+    branch = sh(
+        ["git", "rev-parse", "--abbrev-ref", "HEAD"],
+        honor_cancel=honor_cancel,
+    )
     if branch.returncode != 0:
         return "cannot determine current branch"
     if branch.stdout.strip() != "main":
         return f"not on main (currently {branch.stdout.strip()!r})"
-    status = sh(["git", "status", "--porcelain"])
+    status = sh(["git", "status", "--porcelain"], honor_cancel=honor_cancel)
     if status.returncode != 0:
         return "cannot determine worktree status"
     if status.stdout.strip():
@@ -1219,10 +1243,15 @@ def stage_and_commit(message: str) -> tuple[bool, str]:
 
 
 def reset_to_origin_main() -> tuple[bool, str]:
-    reset = sh(["git", "reset", "--hard", "origin/main"])
+    # Rollback must remain available after a cancellation request; otherwise
+    # an interrupted commit/push can strand dirty or ahead local main state.
+    reset = sh(
+        ["git", "reset", "--hard", "origin/main"],
+        honor_cancel=False,
+    )
     if reset.returncode != 0:
         return False, f"reset failed: {(reset.stderr or reset.stdout).strip()[:240]}"
-    error = clean_main_error()
+    error = clean_main_error(honor_cancel=False)
     return (error is None, error or "reset to origin/main")
 
 
@@ -1288,8 +1317,14 @@ def apply_claim_serialized(
                 for job, envelope in ordered
             ]
 
+        if _command_cancelled():
+            reset_to_origin_main()
+            return False, [{"cid": cid, "result": "commit_cancelled"}]
+
         fetch = sh(["git", "fetch", "origin", "main", "-q"])
         if fetch.returncode != 0:
+            if _command_cancelled():
+                reset_to_origin_main()
             return False, [{"cid": cid, "result": "push_failed", "detail": "push and follow-up fetch failed"}]
         landed = sh(["git", "merge-base", "--is-ancestor", local_commit, "origin/main"])
         if landed.returncode == 0:

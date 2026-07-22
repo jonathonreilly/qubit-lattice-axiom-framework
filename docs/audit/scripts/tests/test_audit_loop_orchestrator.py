@@ -911,22 +911,72 @@ class ClaimTransactionTest(unittest.TestCase):
         self.assertTrue(all(job["log_handle"].closed for job in (ready, slow)))
         killpg.assert_called_once()
 
-    def test_committer_shell_command_is_cancellable(self):
+    def test_committer_shell_skips_launch_when_already_cancelled(self):
         cancel = threading.Event()
         cancel.set()
         batch._COMMAND_CONTEXT.cancel_event = cancel
         started = time.monotonic()
         try:
-            result = batch.sh(
-                [sys.executable, "-c", "pass"],
-                timeout=30,
-            )
+            with mock.patch.object(batch.subprocess, "Popen") as popen:
+                result = batch.sh(
+                    [sys.executable, "-c", "pass"],
+                    timeout=30,
+                )
+        finally:
+            del batch._COMMAND_CONTEXT.cancel_event
+
+        popen.assert_not_called()
+        self.assertEqual(result.returncode, 125)
+        self.assertIn("cancelled", result.stderr)
+        self.assertLess(time.monotonic() - started, 3)
+
+    def test_committer_shell_rechecks_cancel_after_short_command(self):
+        cancel = threading.Event()
+        proc = mock.Mock(returncode=0)
+        proc.communicate.side_effect = lambda timeout=None: (
+            cancel.set() or "stdout",
+            "stderr",
+        )
+        batch._COMMAND_CONTEXT.cancel_event = cancel
+        try:
+            with mock.patch.object(batch.subprocess, "Popen", return_value=proc):
+                result = batch.sh(["quick-command"])
         finally:
             del batch._COMMAND_CONTEXT.cancel_event
 
         self.assertEqual(result.returncode, 125)
-        self.assertIn("cancelled", result.stderr)
-        self.assertLess(time.monotonic() - started, 3)
+        self.assertEqual(result.stdout, "stdout")
+        self.assertEqual(result.stderr, "stderr")
+
+    def test_committer_shell_preserves_normal_short_command_result(self):
+        cancel = threading.Event()
+        proc = mock.Mock(returncode=7)
+        proc.communicate.return_value = ("stdout", "stderr")
+        batch._COMMAND_CONTEXT.cancel_event = cancel
+        try:
+            with mock.patch.object(batch.subprocess, "Popen", return_value=proc):
+                result = batch.sh(["quick-command"])
+        finally:
+            del batch._COMMAND_CONTEXT.cancel_event
+
+        self.assertEqual(result.returncode, 7)
+        self.assertEqual(result.stdout, "stdout")
+        self.assertEqual(result.stderr, "stderr")
+
+    def test_rollback_commands_bypass_committer_cancellation(self):
+        reset = mock.Mock(returncode=0, stdout="", stderr="")
+        branch = mock.Mock(returncode=0, stdout="main\n", stderr="")
+        status = mock.Mock(returncode=0, stdout="", stderr="")
+        with mock.patch.object(
+            batch, "sh", side_effect=[reset, branch, status]
+        ) as sh:
+            ok, detail = batch.reset_to_origin_main()
+
+        self.assertTrue(ok, detail)
+        self.assertEqual(sh.call_count, 3)
+        self.assertTrue(
+            all(call.kwargs.get("honor_cancel") is False for call in sh.call_args_list)
+        )
 
     def test_verdict_only_path_allowlist_is_narrower_than_commit_allowlist(self):
         self.assertTrue(
@@ -1108,6 +1158,9 @@ class ClaimTransactionTest(unittest.TestCase):
                 finalized, finalize_detail = (
                     batch.static_checkpoint.finalize_checkpoint()
                 )
+                receipts_cleaned = not list(
+                    data.glob("static_pipeline_receipt_*.json")
+                )
                 shard.write_text(
                     json.dumps(dict(before, audit_status="audited_clean")),
                     encoding="utf-8",
@@ -1186,6 +1239,7 @@ class ClaimTransactionTest(unittest.TestCase):
         self.assertTrue(classifier_receipt_ok, classifier_receipt_detail)
         self.assertTrue(captured, capture_detail)
         self.assertTrue(finalized, finalize_detail)
+        self.assertTrue(receipts_cleaned)
         self.assertTrue(audit_ok)
         self.assertFalse(wrong_identity_ok)
         self.assertIn("changed during fast use", wrong_identity_detail)

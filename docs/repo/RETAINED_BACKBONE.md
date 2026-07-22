@@ -16,12 +16,12 @@ file per claim), summarized in
 
 | Metric | Value |
 |---|---:|
-| Retained positive rows | 90 |
+| Retained positive rows | 91 |
 | Retained bounded rows | 311 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 17 |
 
-## Retained positive rows (90)
+## Retained positive rows (91)
 
 Sorted by load-bearing graph score (descending).
 
@@ -49,6 +49,7 @@ Sorted by load-bearing graph score (descending).
 - [`hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10`](../../docs/HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md) — score 14.895; audited 2026-07-18T03:11:38.381968+00:00
 - [`koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18`](../../docs/KOIDE_GAMMA_AXIS_COVARIANT_FULL_CUBE_ORBIT_LAW_NOTE_2026-04-18.md) — score 14.281; audited 2026-05-10T14:44:09.593722+00:00
 - [`cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10`](../../docs/CUBIC_COXETER_REGGE_DEFICIT_VANISHING_NARROW_THEOREM_NOTE_2026-05-10.md) — score 14.018; audited 2026-05-22T03:13:54.866266+00:00
+- [`gauge_vacuum_plaquette_connected_hierarchy_theorem_note`](../../docs/GAUGE_VACUUM_PLAQUETTE_CONNECTED_HIERARCHY_THEOREM_NOTE.md) — score 13.760; audited 2026-07-22T19:33:03.603578+00:00
 - [`koide_anticommuting_operator_derivation_theorem_note_2026-05-10`](../../docs/KOIDE_ANTICOMMUTING_OPERATOR_DERIVATION_THEOREM_NOTE_2026-05-10.md) — score 13.741; audited 2026-07-10T16:57:30.154028+00:00
 - [`alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10`](../../docs/ALPHA_S_TADPOLE_IMPROVEMENT_VERTEX_POWER_NARROW_THEOREM_NOTE_2026-05-10.md) — score 13.646; audited 2026-06-11T13:12:46.274572+00:00
 - [`koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19`](../../docs/KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md) — score 13.518; audited 2026-07-19T20:40:28.715868+00:00

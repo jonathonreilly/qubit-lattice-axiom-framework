@@ -1012,10 +1012,6 @@
           "effective_status": "unaudited"
         },
         {
-          "claim_id": "gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
-          "effective_status": "audit_in_progress"
-        },
-        {
           "claim_id": "gauge_vacuum_plaquette_constant_lift_obstruction_note",
           "effective_status": "unaudited"
         },
@@ -2784,9 +2780,9 @@
       "roots": [
         "strong_cp_theta_zero_note"
       ],
-      "uncertified_count": 639
+      "uncertified_count": 638
     }
   ],
-  "repo_head": "6ad6a9452528ff37316bc4410750c56137d5c5c9",
+  "repo_head": "539c919ab26bf8b11ddc3df69032c3c96e75e77c",
   "schema": "lane_certification_v2"
 }

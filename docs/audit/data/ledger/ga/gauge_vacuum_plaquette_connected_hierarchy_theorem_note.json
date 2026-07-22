@@ -1,28 +1,53 @@
 {
-  "audit_date": null,
+  "audit_date": "2026-07-22T19:33:03.603578+00:00",
   "audit_invocation_history": [
-    "a9d23294987a4125a7508ffdb4f19ba8"
+    "a9d23294987a4125a7508ffdb4f19ba8",
+    "2e34fdb13c5540099520c3e7c0881439"
   ],
-  "audit_invocation_id": "a9d23294987a4125a7508ffdb4f19ba8",
-  "audit_state_snapshot": null,
-  "audit_status": "audit_in_progress",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
-  "blocker": "awaiting_cross_confirmation",
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "audit_invocation_id": "2e34fdb13c5540099520c3e7c0881439",
+  "audit_state_snapshot": {
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "gauge_vacuum_plaquette_reduction_existence_theorem_note": "For every integer L >= 2 on the finite periodic SU(3) Wilson L^4 product-Haar space and beta >= 0, P_1plaq and P_L are real-analytic strictly increasing bijections onto [0,1), so beta_eff,L = P_1plaq^(-1) composed with P_L exists uniquely, is real analytic and strictly increasing, and satisfies beta_eff,L(0) = 0 and beta_eff,L'(0) = 1; no physical reduction law or interpretation of beta is included.",
+      "gauge_vacuum_plaquette_susceptibility_flow_theorem_note": "On finite periodic SU(3) Wilson L^4 surfaces with L >= 2 and finite beta >= 0, differentiating the retained inverse-coordinate identity yields the susceptibility quotient and integral representation while leaving chi_L unevaluated."
+    },
+    "dep_claim_type": {
+      "gauge_vacuum_plaquette_reduction_existence_theorem_note": "bounded_theorem",
+      "gauge_vacuum_plaquette_susceptibility_flow_theorem_note": "decoration"
+    },
+    "dep_effective_status": {
+      "gauge_vacuum_plaquette_reduction_existence_theorem_note": "retained_bounded",
+      "gauge_vacuum_plaquette_susceptibility_flow_theorem_note": "decoration_under_gauge_vacuum_plaquette_reduction_existence_theorem_note"
+    },
+    "deps": [
+      "gauge_vacuum_plaquette_reduction_existence_theorem_note",
+      "gauge_vacuum_plaquette_susceptibility_flow_theorem_note"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 13.76,
+    "runner_hash": "1b12f0476e232e166635160d919e2633e86ae9b7292e315d5a0ea9c0a0f3f3d1",
+    "transitive_descendants": 866
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-audit-batch-B-20260722-619faf60",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The uniform source shift makes \u2202\u03b2 equal to the sum of plaquette-source derivatives, and commuting finite derivatives yields the cumulant hierarchy. Direct differentiation of the retained inverse-coordinate identity independently reproduces both displayed beta_eff derivative formulas.",
   "claim_id": "gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
   "claim_scope": "The exact finite-periodic-Wilson common-source identity, connected-cumulant hierarchy, two- and three-point shell sums, and first two derivative identities for the defined inverse coordinate.",
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": "2026-07-22T18:42:21.286288+00:00",
-  "claim_type_provenance": "audited_pending_cross_confirmation",
+  "claim_type_last_reviewed": "2026-07-22T19:33:03.603578+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "critical",
   "cross_confirmation": {
+    "agreement_schema": "audit_tuple_v2",
     "first_audit": {
       "audit_date": "2026-07-22T18:42:21.286288+00:00",
       "audit_invocation_id": "a9d23294987a4125a7508ffdb4f19ba8",
@@ -51,8 +76,35 @@
       "verdict": "audited_clean",
       "verdict_rationale": "The uniform source substitution makes the beta derivative exactly the sum of plaquette-source derivatives, and commuting those derivatives yields the stated hierarchy and shell sums. Independently differentiating P_L(beta) = P_1plaq(beta_eff(beta)) once and twice reproduces both coordinate formulas, including the curvature term\u2019s sign and denominator. The retained-grade authorities supply the defined coordinate, while the connected-hierarchy result is self-contained rather than a renaming or single-parent decoration."
     },
-    "second_audit": null,
-    "status": "awaiting_second"
+    "second_audit": {
+      "audit_date": "2026-07-22T19:33:03.603578+00:00",
+      "audit_invocation_id": "2e34fdb13c5540099520c3e7c0881439",
+      "auditor": "codex-audit-batch-B-20260722-619faf60",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "chain_closes": true,
+      "chain_closure_explanation": "The uniform source shift makes \u2202\u03b2 equal to the sum of plaquette-source derivatives, and commuting finite derivatives yields the cumulant hierarchy. Direct differentiation of the retained inverse-coordinate identity independently reproduces both displayed beta_eff derivative formulas.",
+      "claim_scope": "The exact finite-periodic-Wilson common-source identity, connected-cumulant hierarchy, two- and three-point shell sums, and first two derivative identities for the defined inverse coordinate.",
+      "claim_type": "positive_theorem",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "From W_L[J;beta] = W_tilde_L({beta + J_p}_p), the chain rule gives d/d beta = sum_r d/d J_r and hence d C_n/d beta = sum_r C_(n+1).",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict": "audited_clean",
+      "verdict_rationale": "The load-bearing hierarchy is exact multivariable calculus on the finite generating functional, not a numerical fit, definition of the conclusion, or imported physical bridge. Independently commuting the source derivatives verifies the shell sums, while two applications of the ordinary chain rule give the stated first- and second-derivative coordinate identities with the correct sign and powers of chi_1plaq. The retained upstream authorities supply the inverse coordinate and its nonvanishing derivative; the claim remains explicitly limited to finite volume and to coordinate identities rather than a Wilson reduction mechanism."
+    },
+    "status": "confirmed"
   },
   "decoration_parent_claim_id": null,
   "deps": [
@@ -60,19 +112,20 @@
     "gauge_vacuum_plaquette_susceptibility_flow_theorem_note"
   ],
   "direct_in_degree": 8,
-  "effective_status": "audit_in_progress",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "retained",
+  "effective_status_reason": "self",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "audit_in_progress",
+  "independence": "fresh_context",
+  "intrinsic_status": "retained",
   "load_bearing_score": 13.76,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "From W_L[J;beta] = W_tilde_L({beta + J_p}_p), the chain rule gives d/d beta = sum_r d/d J_r and hence d C_n/d beta = sum_r C_(n+1).",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "b1fe4ba821945813d691150f8442f87ed47c93cb8f902f89a7da36c47378c5e1",
   "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_CONNECTED_HIERARCHY_THEOREM_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -1623,14 +1676,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 4,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 4
   },
   "runner_path": "scripts/frontier_gauge_vacuum_plaquette_connected_hierarchy_theorem.py",
   "title": "Gauge-Vacuum Plaquette Finite Connected-Hierarchy Projection Theorem",
   "transitive_descendants": 866,
-  "verdict_rationale": null
+  "verdict_rationale": "The load-bearing hierarchy is exact multivariable calculus on the finite generating functional, not a numerical fit, definition of the conclusion, or imported physical bridge. Independently commuting the source derivatives verifies the shell sums, while two applications of the ordinary chain rule give the stated first- and second-derivative coordinate identities with the correct sign and powers of chi_1plaq. The retained upstream authorities supply the inverse coordinate and its nonvanishing derivative; the claim remains explicitly limited to finite volume and to coordinate identities rather than a Wilson reduction mechanism."
 }

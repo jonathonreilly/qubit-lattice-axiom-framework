@@ -1,0 +1,77 @@
+{
+  "status": "cycle560-complete-global-N3-returned-slot-compiler",
+  "authority": "none",
+  "audit": "unset",
+  "runner_sha256": "30dc85fd6a1f328bdd095d41d2a3ddb6d1fd71eb4298b34bc635e3ea530a3764",
+  "note_sha256": "7c1a237b075b503eb4c3649ca16b0e6036acdb2e19bfca7bbf30e11c7dd1518d",
+  "parent_certificate_sha256": "3209e58d16c6060af5e45c5367efd82d56684d77831b6b05df2024bb21955d0a",
+  "tests_passed": 13,
+  "tests_total": 13,
+  "pass": true,
+  "elapsed_seconds_internal": 149.2421887080418,
+  "timed_wall_seconds": 149.81,
+  "maximum_RSS_bytes": 751681536,
+  "process_swap_count": 0,
+  "strongest_constructive_result": {
+    "complete_selected_N0_N1_N2_N3_encoder_L3_columns": 708724,
+    "held_complete_selected_N0_N1_N2_N3_encoder_L4_columns": 9437505,
+    "complete_dense_contact_sensitive_N3_update_L3": true,
+    "exact_code_space_physical_intertwiner": true,
+    "global_Jordan_Wigner_string_or_runtime_parity_service": false,
+    "runtime_host_branch_sector_order_or_frame_query": false
+  },
+  "three_cell_exhaustive_gate": {
+    "columns": 988,
+    "product_rays": 8288,
+    "maximum_column_norm_error": 6.661338147750939e-16,
+    "route_B_decoder_collisions": 0,
+    "route_C_prefix_pattern_conflicts": 0,
+    "terminal_branch_or_slot_leakage": 0,
+    "L3_and_held_L4": true
+  },
+  "route_disposition_and_layout": {
+    "route_B": "exact and physically leaner six-M2 local one-hot branch",
+    "route_C": "exact returned logical three-M2 slot on an explicitly costed blank rail",
+    "route_B_live_M2_per_cell_L3_L4": 53.0,
+    "route_C_live_M2_per_cell_L3": 114.77777777777777,
+    "route_C_live_M2_per_cell_L4": 111.59375,
+    "maximum_NN_route_edges_B": 32,
+    "maximum_NN_route_edges_C": 48,
+    "proper_cubic_frames": 24,
+    "frame_products": 576,
+    "layout_or_frame_failures": 0
+  },
+  "complete_L3_update": {
+    "periodic_cells": 27,
+    "global_CAR_modes": 162,
+    "complete_state_dimension": 708724,
+    "maximum_inverse_residual": 2.6141032400394886e-15,
+    "maximum_norm_residual": 2.220446049250313e-16,
+    "maximum_all24_covariance_residual": 4.75255665087917e-16,
+    "maximum_pair_antisymmetry_residual": 1.5332934166833741e-18,
+    "maximum_triple_antisymmetry_residual": 2.2113472136733112e-18,
+    "deleted_one_star_vector_residual": 0.7746006701907014,
+    "deleted_all_contact_vector_residual": 0.32770199861425353
+  },
+  "fixtures": {
+    "Cycle219_mass_source": 0.4534056541748851,
+    "Cycle219_mass_compiled": 0.453405654174885,
+    "Cycle219_mass_residual": 8.7159799596118e-16,
+    "Cycle230_contact_factorization_residual": 2.149937642474629e-15,
+    "Cycle230_axis_seam_braid_residual": 0.0
+  },
+  "scope_boundary": {
+    "held_L4_dense_N3_update_performed": false,
+    "held_L4_minimum_four_live_tensors_bytes": 3623878656,
+    "arbitrary_size_or_all_sector_compiler_closed": false,
+    "compile_time_lexicographic_factor_and_update_order_retired": false,
+    "fixed_reference_or_blank_genesis_closed": false,
+    "blank_rail_renewal_closed": false,
+    "selected_to_rough_transducer_closed": false,
+    "schedule_called_time": false,
+    "slot_return_called_Record": false,
+    "shared_substrate_obstruction": false,
+    "axiom_pressure": false,
+    "broad_no_go_gate": "FAIL / DO NOT SHIP"
+  }
+}

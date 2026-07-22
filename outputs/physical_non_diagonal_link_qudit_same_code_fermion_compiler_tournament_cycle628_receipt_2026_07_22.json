@@ -1,0 +1,1129 @@
+{
+  "HEAD": "d06ca18d7827cec6b759838828fb495664b0ec2a",
+  "audit": "unset",
+  "authority": "none",
+  "common_physical_register": {
+    "active_M2_roles_per_coarse_cell": 48,
+    "adjacent_auxiliary_chain_failures": 0,
+    "all24_frame_failures": 0,
+    "all576_group_failures": 0,
+    "face_ring_corresponding_cross_NN_failures": 0,
+    "fine_supercell_linear_size": 129,
+    "maximum_off_diagonal_face_CZ_route_sites": 4,
+    "off_diagonal_face_CZ_path_failures": 0,
+    "orientation_one_hot_M2": 0,
+    "pass": true,
+    "role_families": {
+      "aux_A_prefix_or_syndrome": [
+        [
+          -32,
+          0,
+          0
+        ],
+        [
+          32,
+          0,
+          0
+        ],
+        [
+          0,
+          -32,
+          0
+        ],
+        [
+          0,
+          32,
+          0
+        ],
+        [
+          0,
+          0,
+          -32
+        ],
+        [
+          0,
+          0,
+          32
+        ]
+      ],
+      "aux_B_twist_or_archive": [
+        [
+          -31,
+          0,
+          0
+        ],
+        [
+          31,
+          0,
+          0
+        ],
+        [
+          0,
+          -31,
+          0
+        ],
+        [
+          0,
+          31,
+          0
+        ],
+        [
+          0,
+          0,
+          -31
+        ],
+        [
+          0,
+          0,
+          31
+        ]
+      ],
+      "aux_C_prefix_buffer_or_clean_resource": [
+        [
+          -30,
+          0,
+          0
+        ],
+        [
+          30,
+          0,
+          0
+        ],
+        [
+          0,
+          -30,
+          0
+        ],
+        [
+          0,
+          30,
+          0
+        ],
+        [
+          0,
+          0,
+          -30
+        ],
+        [
+          0,
+          0,
+          30
+        ]
+      ],
+      "data": [
+        [
+          -60,
+          0,
+          0
+        ],
+        [
+          60,
+          0,
+          0
+        ],
+        [
+          0,
+          -60,
+          0
+        ],
+        [
+          0,
+          60,
+          0
+        ],
+        [
+          0,
+          0,
+          -60
+        ],
+        [
+          0,
+          0,
+          60
+        ]
+      ],
+      "face_qudit_ring": [
+        [
+          64,
+          1,
+          0
+        ],
+        [
+          64,
+          -1,
+          0
+        ],
+        [
+          64,
+          0,
+          1
+        ],
+        [
+          64,
+          0,
+          -1
+        ],
+        [
+          -64,
+          1,
+          0
+        ],
+        [
+          -64,
+          -1,
+          0
+        ],
+        [
+          -64,
+          0,
+          1
+        ],
+        [
+          -64,
+          0,
+          -1
+        ],
+        [
+          1,
+          64,
+          0
+        ],
+        [
+          -1,
+          64,
+          0
+        ],
+        [
+          0,
+          64,
+          1
+        ],
+        [
+          0,
+          64,
+          -1
+        ],
+        [
+          1,
+          -64,
+          0
+        ],
+        [
+          -1,
+          -64,
+          0
+        ],
+        [
+          0,
+          -64,
+          1
+        ],
+        [
+          0,
+          -64,
+          -1
+        ],
+        [
+          1,
+          0,
+          64
+        ],
+        [
+          -1,
+          0,
+          64
+        ],
+        [
+          0,
+          1,
+          64
+        ],
+        [
+          0,
+          -1,
+          64
+        ],
+        [
+          1,
+          0,
+          -64
+        ],
+        [
+          -1,
+          0,
+          -64
+        ],
+        [
+          0,
+          1,
+          -64
+        ],
+        [
+          0,
+          -1,
+          -64
+        ]
+      ]
+    },
+    "role_injection_failures": 0,
+    "supplied": "129^3 centers, radial/tangential role shells, blank face rings, and blank auxiliary/routing M2s"
+  },
+  "constitutional_effect": "none",
+  "elapsed_seconds": 42.952656875015236,
+  "fixtures": {
+    "Cycle620_common_E_support_two_precedent_pass": true,
+    "Cycle622_mass_contact_seam_factor_order": {
+      "Cycle610_factor_order_receipt": {
+        "Cycle230_contact_free_generator_noncommutation_witness": 2.3934793937974876,
+        "Cycle230_free_factorization_residual": 0.0,
+        "Cycle230_random_antisymmetric_probe_seed": 2301,
+        "Cycle230_reverse_schedule_difference": 0.5202793649337463,
+        "accepted_Cycle230_application_order": "onsite coin -> stream S (U=S C) -> onsite contact",
+        "delete_each_factor_difference": {
+          "delete_coin_difference": 1.9020837629144585,
+          "delete_contact_difference": 0.08827995040981686,
+          "delete_stream_difference": 1.9968896435700219
+        },
+        "fixed_microstep_order_is_supplied_law_content_not_time": true,
+        "literal_compiler_factor_order": [
+          "factor_0 controlled onsite coin",
+          "factor_1 controlled stream S, completing free U=S C",
+          "factor_2 controlled onsite contact"
+        ],
+        "pass": true
+      },
+      "Cycle610_fixture_receipt": {
+        "all24_bus_paths_are_literal_spatial_rotations_selected_by_the_intrinsic_role_field": true,
+        "all_coarse_cells_execute_onsite_bus_in_parallel_without_cross_cell_edges": true,
+        "bus_NN_edges_checked": 2146688,
+        "bus_adjacency_failures": 0,
+        "bus_index_inverse_failures": 0,
+        "bus_sites": 2146689,
+        "fixture_residuals": {
+          "Cycle600_coin_EG_residual": 1.154543706932542e-15,
+          "Cycle600_contact_EG_residual": 0.0,
+          "Cycle600_local_stream_seam_EG_residual": 0.0,
+          "coin_clean_scratch_leakage": 2.890151575626252e-15,
+          "compiled_word_coin_EG_residual": 4.0336968129257627e-13,
+          "contact_inverse_phase_residual": 0.0,
+          "contact_phase_residual": 0.0,
+          "one_particle_mass_coin_compiled_full16_residual": 8.619648052454238e-14,
+          "one_particle_mass_coin_symmetry_residual": 1.731958809481102e-16
+        },
+        "inherited_parameterized_angle_import_retained": true,
+        "logical_coordinate_injection_failure": 0,
+        "onsite_work_coordinate": [
+          0,
+          0,
+          0
+        ],
+        "pass": true,
+        "physical_routing_preserves_fixture_by_exact_move_apply_restore_conjugation": true,
+        "routed_blocks": [
+          {
+            "base_gate_instances": 8400,
+            "block": "coin",
+            "constant_serial_routed_depth": 15528,
+            "maximum_bus_distance": 4,
+            "move_apply_restore_SWAP_instances": 7128,
+            "one_M2_gate_instances": 5520,
+            "routed_support_at_most_two": true,
+            "two_M2_gate_instances": 2880
+          },
+          {
+            "base_gate_instances": 477,
+            "block": "contact",
+            "constant_serial_routed_depth": 37563305,
+            "maximum_bus_distance": 668240,
+            "move_apply_restore_SWAP_instances": 37562828,
+            "one_M2_gate_instances": 315,
+            "routed_support_at_most_two": true,
+            "two_M2_gate_instances": 162
+          }
+        ],
+        "serpentine_bus_formula": "z-major; y reverses with z; x reverses with y+z; local coordinates subtract H"
+      },
+      "contact_unitarity_residual": 0.0,
+      "local_coin_unitarity_residual": 5.297945988401815e-15,
+      "mass_fixture": {
+        "Cycle600_coin_EG_residual": 1.154543706932542e-15,
+        "Cycle600_contact_EG_residual": 0.0,
+        "Cycle600_local_stream_seam_EG_residual": 0.0,
+        "coin_clean_scratch_leakage": 2.890151575626252e-15,
+        "compiled_word_coin_EG_residual": 4.0336968129257627e-13,
+        "contact_inverse_phase_residual": 0.0,
+        "contact_phase_residual": 0.0,
+        "one_particle_mass_coin_compiled_full16_residual": 8.619648052454238e-14,
+        "one_particle_mass_coin_symmetry_residual": 1.731958809481102e-16
+      },
+      "one_particle_contact_identity_residual": 0.0,
+      "pass": true,
+      "supplied_beta": -0.3,
+      "supplied_contact_g": 0.37,
+      "supplied_order": "onsite coin -> A -> B -> onsite contact"
+    },
+    "contact_preserved": true,
+    "factor_order_preserved": true,
+    "one_particle_mass_preserved": true,
+    "pass": true,
+    "seam_preserved": true
+  },
+  "joint_disposition": {
+    "E_Gcoarse_equals_Gphysical_E_full_update": false,
+    "L3_L6_L7_controls": true,
+    "bounded_constant_overhead": true,
+    "bounded_full_update_including_coin": false,
+    "bounded_local_encoder": false,
+    "fixtures": true,
+    "joint_all24_all576": false,
+    "joint_support_two_NN_compiler": false,
+    "locally_enforced_auxiliary_code": true,
+    "odd_even_coherent_controls": true,
+    "partial_all24_all576": true,
+    "partial_support_two_or_disclosed_bounded_macro": true,
+    "resource_accounted_one_shot_reset": true,
+    "same_common_48_role_register": true,
+    "same_concrete_local_E_across_routes": false,
+    "same_concrete_local_G_across_routes": false,
+    "success": false,
+    "why_no_join": "A preserves its local non-diagonal face code but misses global stream signs; B repairs every stream sign only with a lattice-scale ordering phase/prefix preparation and makes the onsite coin lattice-wide; C renews local blanks only by consuming a retained clean register."
+  },
+  "maturity_0_to_5": {
+    "Born_probability": 1.5,
+    "causal_time": 2.0,
+    "gravity_source": 2.5,
+    "inertia_matter": 3.5,
+    "operational_quantum_records": 3.0
+  },
+  "maximum_RSS_bytes": 114491392,
+  "no_go_discipline": {
+    "N1_negative_gate_status": "FAIL: two materially distinct live families remain",
+    "N1_normalized_alternative_families": [
+      {
+        "evidence": "Cycle628 Route A",
+        "family": "non-diagonal covariant face-qudit block buffer",
+        "marker": "ATTEMPTED",
+        "tuple": [
+          "four-M2 face Fock block",
+          "complete graded block swap",
+          "full Gamma(S) and local coin"
+        ]
+      },
+      {
+        "evidence": "Cycle628 Route B",
+        "family": "dynamical line-prefix/spin-twist code",
+        "marker": "ATTEMPTED",
+        "tuple": [
+          "Z2 prefix/twist link algebra",
+          "local seam phase and prefix QCA",
+          "bounded translation-covariant E and coin"
+        ]
+      },
+      {
+        "evidence": "Cycle628 Route C",
+        "family": "resource-accounted reversible reset",
+        "marker": "ATTEMPTED",
+        "tuple": [
+          "three-register local reservoir",
+          "unitary garbage transfer",
+          "renewable clean auxiliary preparation"
+        ]
+      },
+      {
+        "evidence": "Cycle622 Route B",
+        "family": "occupation-diagonal dressing",
+        "marker": "RULED OUT BY PRIOR at its exact scope",
+        "tuple": [
+          "diagonal Fock phase",
+          "pair-orbit cocycle",
+          "bounded all-size stream conjugacy"
+        ]
+      },
+      {
+        "evidence": "Cycle617 Route A",
+        "family": "rough-terminal Pauli subsystem",
+        "marker": "RULED OUT BY PRIOR at its exact scope",
+        "tuple": [
+          "Pauli stabilizer subsystem",
+          "local commutant",
+          "common full-Fock E"
+        ]
+      },
+      {
+        "evidence": "not attempted; blocks a general negative",
+        "family": "translation-invariant fermionic PEPS/MPO encoder",
+        "marker": "UNTESTED_LIVE",
+        "tuple": [
+          "virtual graded tensor network",
+          "pull-through parity tensor",
+          "bounded local tensor E/G with mobile spin structure"
+        ]
+      },
+      {
+        "evidence": "not attempted; blocks a general negative",
+        "family": "non-Abelian higher-group fixed-point gauge code",
+        "marker": "UNTESTED_LIVE",
+        "tuple": [
+          "matrix-valued higher-group links",
+          "dynamical holonomy condensation",
+          "unique local same-code sector and update"
+        ]
+      }
+    ],
+    "N2_collapsed_wall_set": [
+      "W_stream: full-lattice exterior stream phase",
+      "W_coin: bounded onsite coin after encoding conjugacy",
+      "W_prep: bounded translation-free prefix/twist preparation",
+      "W_layout: literal common NN macro for the full E/G",
+      "W_resource: indefinite clean-resource renewal"
+    ],
+    "N2_pairwise_wall_independence": [
+      {
+        "independent_at_current_evidence": true,
+        "left_closes_right": false,
+        "pair": [
+          "W_stream: full-lattice exterior stream phase",
+          "W_coin: bounded onsite coin after encoding conjugacy"
+        ],
+        "right_closes_left": false
+      },
+      {
+        "independent_at_current_evidence": true,
+        "left_closes_right": false,
+        "pair": [
+          "W_stream: full-lattice exterior stream phase",
+          "W_prep: bounded translation-free prefix/twist preparation"
+        ],
+        "right_closes_left": false
+      },
+      {
+        "independent_at_current_evidence": true,
+        "left_closes_right": false,
+        "pair": [
+          "W_stream: full-lattice exterior stream phase",
+          "W_layout: literal common NN macro for the full E/G"
+        ],
+        "right_closes_left": false
+      },
+      {
+        "independent_at_current_evidence": true,
+        "left_closes_right": false,
+        "pair": [
+          "W_stream: full-lattice exterior stream phase",
+          "W_resource: indefinite clean-resource renewal"
+        ],
+        "right_closes_left": false
+      },
+      {
+        "independent_at_current_evidence": true,
+        "left_closes_right": false,
+        "pair": [
+          "W_coin: bounded onsite coin after encoding conjugacy",
+          "W_prep: bounded translation-free prefix/twist preparation"
+        ],
+        "right_closes_left": false
+      },
+      {
+        "independent_at_current_evidence": true,
+        "left_closes_right": false,
+        "pair": [
+          "W_coin: bounded onsite coin after encoding conjugacy",
+          "W_layout: literal common NN macro for the full E/G"
+        ],
+        "right_closes_left": false
+      },
+      {
+        "independent_at_current_evidence": true,
+        "left_closes_right": false,
+        "pair": [
+          "W_coin: bounded onsite coin after encoding conjugacy",
+          "W_resource: indefinite clean-resource renewal"
+        ],
+        "right_closes_left": false
+      },
+      {
+        "independent_at_current_evidence": true,
+        "left_closes_right": false,
+        "pair": [
+          "W_prep: bounded translation-free prefix/twist preparation",
+          "W_layout: literal common NN macro for the full E/G"
+        ],
+        "right_closes_left": false
+      },
+      {
+        "independent_at_current_evidence": true,
+        "left_closes_right": false,
+        "pair": [
+          "W_prep: bounded translation-free prefix/twist preparation",
+          "W_resource: indefinite clean-resource renewal"
+        ],
+        "right_closes_left": false
+      },
+      {
+        "independent_at_current_evidence": true,
+        "left_closes_right": false,
+        "pair": [
+          "W_layout: literal common NN macro for the full E/G",
+          "W_resource: indefinite clean-resource renewal"
+        ],
+        "right_closes_left": false
+      }
+    ],
+    "N3_hidden_condition_scan": [
+      {
+        "classification": "explicit supplied layout/genesis condition",
+        "phrase": "face-ring role shell"
+      },
+      {
+        "classification": "explicit W_prep/reference condition",
+        "phrase": "grouped order and fixed seam"
+      },
+      {
+        "classification": "explicit W_resource initial-state import",
+        "phrase": "blank face/archive/resource"
+      },
+      {
+        "classification": "pinned supplied law content",
+        "phrase": "Cycle230 beta/g/order/precision"
+      }
+    ],
+    "N4_residual_matching": [
+      {
+        "current": "matrix-valued prefix/twist stream",
+        "match": false,
+        "prior": "Cycle622 diagonal cocycle",
+        "prior_residual": "diagonal scalar stream conjugacy",
+        "use": "route boundary only"
+      },
+      {
+        "current": "graded four-mode face blocks for full S",
+        "match": false,
+        "prior": "Cycle617 endpoint fSWAP",
+        "prior_residual": "direct endpoint B signs",
+        "use": "adjacent prior only"
+      },
+      {
+        "current": "garbage moved into debited clean resource",
+        "match": true,
+        "prior": "Cycle622 archive QCA",
+        "prior_residual": "garbage retained in archive",
+        "use": "renewal ledger continuation"
+      }
+    ],
+    "N5_resolution_audit": "A classifies the declared uniform four-M2 face block and local braid phase, not all non-diagonal qudits; B is one Z2 prefix/twist and grouped-order construction, not all higher groups; C is one finite reversible reservoir, not all open-system reset laws",
+    "N6_partial_closure_paths": "retain A's covariant face-block channel and B's exact stream sign identity; a tensor-network encoder may absorb the reordering phase, and an explicit bath/source law may retire rather than axiomatize the resource debit",
+    "N7_steelman_against_negative": "A hostile reviewer can replace the fixed grouped-order phase by a translation-invariant fermionic PEPS/MPO tensor whose virtual parity index is the local prefix qubit, promote the seam to a mobile gauge defect, and conjugate the coin by a local tensor pull-through identity. The terminal obligation is explicit bounded tensors on the 48-role-or-smaller register, exact all24/all576 pull-through, and a prepared local parent-code state; Cycle628 does not test that mechanism.",
+    "N8_cross_cycle_echo": "Cycles610 and 620 show that large clean-role macros can retire packing walls; Cycles617 and 622 show route-specific parity and Wilson walls can be partially retired by changing resolution. That constructive history prevents foreclosure here.",
+    "axiom_pressure": false,
+    "classification": "partial-attempt-with-named-untested-routes",
+    "minimum_content_claim_shipped": false,
+    "negative_claim_shipped": false,
+    "pass_for_withholding_negative": true,
+    "route_independent_obstruction_claimed": false,
+    "skill_freshness": {
+      "followed": "origin/main normalized-family version",
+      "local_sha256": "aeac7b2b7df30c350961f4b36b980a91e9c2ebeca3f35b6c1adcd731071bdab5",
+      "origin_main_commit_seen": "0e0cc9e750",
+      "origin_main_sha256": "7d1aea8243ddd972331b935e2e836657e72115da3efe259f828fe862469d68b7"
+    }
+  },
+  "note_contract": {
+    "forbidden_hits": [],
+    "missing": []
+  },
+  "note_sha256": "328a4269a4dcd2855723b448ac662faca1ec8ba35c08882c65830990092c28ef",
+  "optimal_next_campaign": "construct a translation-invariant fermionic PEPS/MPO pull-through tensor that absorbs Route B's reordering phase and keeps the onsite coin bounded, with a mobile locally prepared spin-structure defect",
+  "pass": true,
+  "pins": {
+    "docs/work_history/repo/review_feedback/PHYSICAL_PAIR_SUPERCELL_RECEIVER_FEEDBACK_QUASIENERGY_TOURNAMENT_CYCLE620_NOTE_2026-07-22.md": "355510cc9f627e6bd20e5db323d3166d3b6ef24a99d28aab8a702fd9ad0abc5a",
+    "docs/work_history/repo/review_feedback/PHYSICAL_SAME_CODE_HIGHER_FORM_FERMION_ENCODING_TOURNAMENT_CYCLE622_NOTE_2026-07-22.md": "9e14328100329ce07dcf3df942a72443783aca9ddc79e78322731d8614b9ab19",
+    "outputs/physical_pair_supercell_receiver_feedback_quasienergy_tournament_cycle620_cold_2026_07_22.txt": "98577d96cbe5cb7306ec7233a85ec6fef2bf13030fadbfc433ec9a6c75ad8065",
+    "outputs/physical_pair_supercell_receiver_feedback_quasienergy_tournament_cycle620_receipt_2026_07_22.json": "0d6b15cfb16fc4b2d0cb4e440bc3da9898837d195c809b0f89dfd406d6094104",
+    "outputs/physical_same_code_higher_form_fermion_encoding_tournament_cycle622_cold_2026_07_22.txt": "39a4901e45a157d45190a011f7b967732baa8cfd3177d92ca2418a3de3f5a37b",
+    "outputs/physical_same_code_higher_form_fermion_encoding_tournament_cycle622_receipt_2026_07_22.json": "a32e3dcaa2c46dd69ee55e534118aa9182d4a662d85354117f14842e62ff38b1",
+    "scripts/physical_pair_supercell_receiver_feedback_quasienergy_tournament_cycle620_2026_07_22.py": "290d41dadcd038359fbadfefed7980142d1337c3dac563eed97d6bb1eb4956c9",
+    "scripts/physical_same_code_higher_form_fermion_encoding_tournament_cycle622_2026_07_22.py": "b9704927bb33ab53e098ad4fa542b91ba5277d2ebdeb92e9591ee551ad479780"
+  },
+  "route_A": {
+    "blank_face_code_preserved_after_encode_swap_decode": true,
+    "face_block_swap": {
+      "added_off_diagonal_cross_face_CZ": 12,
+      "basis_map_failures": 0,
+      "complete_graded_swap_phase_failures_all256": 0,
+      "complete_uniform_code_residual": 0.0,
+      "corresponding_cross_face_fSWAP_are_literal_NN": true,
+      "delete_one_off_diagonal_CZ_witness": {
+        "deleted_phase": 1,
+        "intact_phase": -1,
+        "left_word": 1,
+        "right_word": 2
+      },
+      "inverse_failures": 0,
+      "off_diagonal_CZ_uses_move_apply_restore_paths_at_most_four_sites": true,
+      "pass_complete_graded_block_swap": true,
+      "primitive_support": 2,
+      "raw_four_corresponding_fSWAP_phase_failures_all256": 120,
+      "raw_uniform_code_leakage_norm": 0.8660254037844386,
+      "raw_uniform_desired_graded_residual": 1.7320508075688772,
+      "raw_uniform_two_occupied_projection_amplitude": 0.5
+    },
+    "factor_schedule_is_not_time": true,
+    "full_stream_sign_rows": [
+      {
+        "all24_local_face_pair_covariance_failures": 0,
+        "all576_mode_action_failures": 0,
+        "coherent_odd_even_EG_witness_residual": 1.4142135623730951,
+        "first_graded_witness": {
+          "Gamma_phase": -1,
+          "graded_face_phase": 1,
+          "mapped": [
+            54,
+            20
+          ],
+          "occupied": [
+            0,
+            2
+          ]
+        },
+        "first_ordinary_witness": {
+          "Gamma_phase": -1,
+          "mapped": [
+            54,
+            20
+          ],
+          "occupied": [
+            0,
+            2
+          ],
+          "physical_phase": 1
+        },
+        "graded_block_swap_sign_mismatches": 4113,
+        "length": 3,
+        "modes": 162,
+        "ordinary_block_swap_sign_mismatches": 4194,
+        "two_particle_coefficients_exhausted": 13041,
+        "undirected_face_block_pairs": 81
+      },
+      {
+        "all24_local_face_pair_covariance_failures": 0,
+        "all576_mode_action_failures": 0,
+        "coherent_odd_even_EG_witness_residual": 1.4142135623730951,
+        "first_graded_witness": {
+          "Gamma_phase": -1,
+          "graded_face_phase": 1,
+          "mapped": [
+            216,
+            38
+          ],
+          "occupied": [
+            0,
+            2
+          ]
+        },
+        "first_ordinary_witness": {
+          "Gamma_phase": -1,
+          "mapped": [
+            216,
+            38
+          ],
+          "occupied": [
+            0,
+            2
+          ],
+          "physical_phase": 1
+        },
+        "graded_block_swap_sign_mismatches": 155016,
+        "length": 6,
+        "modes": 1296,
+        "ordinary_block_swap_sign_mismatches": 155664,
+        "two_particle_coefficients_exhausted": 839160,
+        "undirected_face_block_pairs": 648
+      },
+      {
+        "all24_local_face_pair_covariance_failures": 0,
+        "all576_mode_action_failures": 0,
+        "coherent_odd_even_EG_witness_residual": 1.4142135623730951,
+        "first_graded_witness": {
+          "Gamma_phase": -1,
+          "graded_face_phase": 1,
+          "mapped": [
+            294,
+            44
+          ],
+          "occupied": [
+            0,
+            2
+          ]
+        },
+        "first_ordinary_witness": {
+          "Gamma_phase": -1,
+          "mapped": [
+            294,
+            44
+          ],
+          "occupied": [
+            0,
+            2
+          ],
+          "physical_phase": 1
+        },
+        "graded_block_swap_sign_mismatches": 340893,
+        "length": 7,
+        "modes": 2058,
+        "ordinary_block_swap_sign_mismatches": 341922,
+        "two_particle_coefficients_exhausted": 2116653,
+        "undirected_face_block_pairs": 1029
+      }
+    ],
+    "full_update_witness_survives_coin_preimage_and_contact_unitarity": true,
+    "global_Jordan_Wigner_or_parity_service_used": false,
+    "linear_E_on_coherent_odd_even_Fock": true,
+    "local_face_isometry": {
+      "Fock_unitarity_residual": 5.140404540208181e-16,
+      "blank_four_M2_face_ring_imported": true,
+      "coherent_zero_one_residual": 0.0,
+      "face_qudit_physical_dimension": 16,
+      "logical_face_subspace_dimension": 2,
+      "occupied_uniform_W_residual": 0.0,
+      "one_particle_unitarity_residual": 0.0,
+      "ring_S4_permutation_commutator_failures": 0,
+      "support_two_Givens_macro_angles": [
+        "asin(1/2)",
+        "asin(1/sqrt(3))",
+        "pi/4",
+        "pi/2"
+      ],
+      "vacuum_residual": 0.0
+    },
+    "locally_checkable_blank_face_code": true,
+    "malformed_nonblank_face_words_detected_per_face": 15,
+    "one_particle_mass_contact_seam_fixtures_preserved": true,
+    "one_particle_stream_exact": true,
+    "onsite_coin_before_face_encode_uses_same_local_Cycle230_Fock_coin": true,
+    "onsite_contact_after_face_decode_is_unchanged_and_local": true,
+    "pass_non_diagonal_local_face_block_compiler": true,
+    "pass_required_full_Fock_stream_EG": false,
+    "pass_required_same_code_full_update": false,
+    "reason": "the non-diagonal face isometry and complete graded block exchange are exact, but a product of local counterflow block braids supplies only the listed face-pair phases, not Gamma(S) on the full lattice",
+    "route": "A_non_diagonal_four_M2_face_qudit_double_buffer"
+  },
+  "route_B": {
+    "autonomous_prefix_twist_preparation": false,
+    "both_parities_and_all_finite_density_words": true,
+    "bounded_local_E": false,
+    "bounded_onsite_coin_after_conjugacy": false,
+    "contact_remains_local_under_diagonal_reordering_phase": true,
+    "exact_algebraic_full_Fock_stream_EG": true,
+    "local_constraint_weight_at_most_four": true,
+    "odd_even_coherent_extension_is_isometric": true,
+    "one_particle_coin_and_mass_unchanged_because_reordering_phase_is_quadratic": true,
+    "pass_exact_stream_with_supplied_nonlocal_E": true,
+    "pass_required_bounded_same_code_full_update": false,
+    "prefix_and_twist_update_uses_X_CNOT_CZ_support_at_most_two": true,
+    "proper_cubic_all24_all576": true,
+    "reason": "the matrix-valued prefix/twist code repairs every stream pair coefficient, but E contains lattice-scale reordering phases and prefix preparation; conjugating the onsite coin exposes the listed lattice-wide spectator strings, and the fixed seam is not translation invariant",
+    "route": "B_dynamic_Z2_spin_structure_prefix_twist_qubits",
+    "rows": [
+      {
+        "all24_seam_frame_failures": 0,
+        "all576_seam_action_failures": 0,
+        "canonical_grouped_conjugacy_failures_all_pairs": 0,
+        "canonical_to_grouped_reordering_pair_terms": 5562,
+        "coin_witness": {
+          "cell": [
+            2,
+            0,
+            0
+          ],
+          "direction_pair": [
+            0,
+            5
+          ],
+          "first_spectators": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        "expected_grouped_cycle_phase_pair_terms": 108,
+        "grouped_cycle_phase_pair_terms": 108,
+        "length": 3,
+        "long_reordering_witness": {
+          "cells": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "pair": [
+            1,
+            78
+          ]
+        },
+        "maximum_conjugated_coin_spectator_torus_distance": 3,
+        "maximum_conjugated_onsite_coin_spectator_modes": 146,
+        "maximum_reordering_pair_torus_distance": 3,
+        "modes": 162,
+        "nonidentity_translation_seam_failures": 26,
+        "prefix_twist_code": {
+          "code_exponent": 4,
+          "constraint_rank": 5,
+          "constraint_rows": 6,
+          "delete_seam_constraint_rank_loss": 1,
+          "expected_rank": 5,
+          "line_length": 3,
+          "local_code_failures": 0,
+          "local_seam_phase_failures": 0,
+          "local_update_preservation_failures": 0,
+          "maximum_constraint_weight": 4,
+          "prefix_update": "n'_j=n_(j-1); p'=p; g'_0=g_(L-1) xor p; g'_j=g_(j-1) for j>0",
+          "seam_phase": "Z(n_last) CZ(n_last,p) = (-1)^[n_last(P xor 1)]",
+          "valid_occupation_root_words": 16
+        },
+        "seam_modes": 54,
+        "stream_cycles": 54
+      },
+      {
+        "all24_seam_frame_failures": 0,
+        "all576_seam_action_failures": 0,
+        "canonical_grouped_conjugacy_failures_all_pairs": 0,
+        "canonical_to_grouped_reordering_pair_terms": 370980,
+        "coin_witness": {
+          "cell": [
+            5,
+            0,
+            0
+          ],
+          "direction_pair": [
+            0,
+            5
+          ],
+          "first_spectators": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        "expected_grouped_cycle_phase_pair_terms": 1080,
+        "grouped_cycle_phase_pair_terms": 1080,
+        "length": 6,
+        "long_reordering_witness": {
+          "cells": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              3,
+              3
+            ]
+          ],
+          "pair": [
+            1,
+            774
+          ]
+        },
+        "maximum_conjugated_coin_spectator_torus_distance": 9,
+        "maximum_conjugated_onsite_coin_spectator_modes": 1250,
+        "maximum_reordering_pair_torus_distance": 9,
+        "modes": 1296,
+        "nonidentity_translation_seam_failures": 215,
+        "prefix_twist_code": {
+          "code_exponent": 7,
+          "constraint_rank": 11,
+          "constraint_rows": 12,
+          "delete_seam_constraint_rank_loss": 1,
+          "expected_rank": 11,
+          "line_length": 6,
+          "local_code_failures": 0,
+          "local_seam_phase_failures": 0,
+          "local_update_preservation_failures": 0,
+          "maximum_constraint_weight": 4,
+          "prefix_update": "n'_j=n_(j-1); p'=p; g'_0=g_(L-1) xor p; g'_j=g_(j-1) for j>0",
+          "seam_phase": "Z(n_last) CZ(n_last,p) = (-1)^[n_last(P xor 1)]",
+          "valid_occupation_root_words": 128
+        },
+        "seam_modes": 216,
+        "stream_cycles": 216
+      },
+      {
+        "all24_seam_frame_failures": 0,
+        "all576_seam_action_failures": 0,
+        "canonical_grouped_conjugacy_failures_all_pairs": 0,
+        "canonical_to_grouped_reordering_pair_terms": 937566,
+        "coin_witness": {
+          "cell": [
+            6,
+            0,
+            0
+          ],
+          "direction_pair": [
+            0,
+            5
+          ],
+          "first_spectators": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        "expected_grouped_cycle_phase_pair_terms": 1764,
+        "grouped_cycle_phase_pair_terms": 1764,
+        "length": 7,
+        "long_reordering_witness": {
+          "cells": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              3,
+              3
+            ]
+          ],
+          "pair": [
+            1,
+            1026
+          ]
+        },
+        "maximum_conjugated_coin_spectator_torus_distance": 9,
+        "maximum_conjugated_onsite_coin_spectator_modes": 1998,
+        "maximum_reordering_pair_torus_distance": 9,
+        "modes": 2058,
+        "nonidentity_translation_seam_failures": 342,
+        "prefix_twist_code": {
+          "code_exponent": 8,
+          "constraint_rank": 13,
+          "constraint_rows": 14,
+          "delete_seam_constraint_rank_loss": 1,
+          "expected_rank": 13,
+          "line_length": 7,
+          "local_code_failures": 0,
+          "local_seam_phase_failures": 0,
+          "local_update_preservation_failures": 0,
+          "maximum_constraint_weight": 4,
+          "prefix_update": "n'_j=n_(j-1); p'=p; g'_0=g_(L-1) xor p; g'_j=g_(j-1) for j>0",
+          "seam_phase": "Z(n_last) CZ(n_last,p) = (-1)^[n_last(P xor 1)]",
+          "valid_occupation_root_words": 256
+        },
+        "seam_modes": 294,
+        "stream_cycles": 294
+      }
+    ],
+    "supplied_seam_root_and_grouped_mode_order": true,
+    "translation_covariant_fixed_code": false
+  },
+  "route_C": {
+    "all24_pair_set_failures": 0,
+    "all576_pair_set_failures": 0,
+    "all64_forward_failures": 0,
+    "all64_inverse_failures": 0,
+    "clean_register_capacity_debit_per_cell_per_invocation": 6,
+    "coherent_transfer_residual": 0.0,
+    "delete_each_swap_witness": {
+      "delete_A_F_swap": {
+        "input": 1,
+        "output": [
+          0,
+          1,
+          0
+        ]
+      },
+      "delete_S_A_swap": {
+        "input": 1,
+        "output": [
+          1,
+          0,
+          0
+        ]
+      }
+    },
+    "discard_spent_register_isometry_Gram_residual": 63.49803146555018,
+    "forward_map": "|s>|0_archive>|0_fresh> -> |0>|0>|s_spent>",
+    "held_size_resource_ledger": [
+      {
+        "clean_resource_M2_register_debit_per_invocation": 162,
+        "finite_clean_reservoir_updates_before_exhaustion": "reservoir_M2 / (6 L^3)",
+        "length": 3,
+        "spent_registers_retained_per_invocation": 162,
+        "split": "train"
+      },
+      {
+        "clean_resource_M2_register_debit_per_invocation": 1296,
+        "finite_clean_reservoir_updates_before_exhaustion": "reservoir_M2 / (6 L^3)",
+        "length": 6,
+        "spent_registers_retained_per_invocation": 1296,
+        "split": "held"
+      },
+      {
+        "clean_resource_M2_register_debit_per_invocation": 2058,
+        "finite_clean_reservoir_updates_before_exhaustion": "reservoir_M2 / (6 L^3)",
+        "length": 7,
+        "spent_registers_retained_per_invocation": 2058,
+        "split": "held-out-size"
+      }
+    ],
+    "host_reset_or_erasure_used": false,
+    "indefinite_finite_reservoir_renewal": false,
+    "inverse_restores_clean_resource_by_returning_syndrome": true,
+    "malformed_nonblank_archive_or_fresh_leakage_cases": 4095,
+    "number_conservation_failures": 0,
+    "occupied_spent_M2_sum_over_all64_inputs": 192,
+    "pass_autonomous_indefinite_renewal": false,
+    "pass_one_invocation_resource_accounted_reset": true,
+    "route": "C_reversible_resource_accounted_blank_archive_reset",
+    "spent_garbage_retained": true
+  },
+  "route_by_route_disposition": {
+    "A": "retain face-qudit W isometry and complete graded block swap; local counterflow braid phases miss Gamma(S)",
+    "B": "retain exact all-pair stream conjugacy and local prefix/twist constraints; bounded E, translation-free preparation, and bounded coin fail",
+    "C": "retain one-shot reset with exact clean-register debit and garbage; finite reservoir is not indefinite renewal"
+  },
+  "runner_sha256": "64df2d912b7c7011834418f51743cfc501c358350e2d3ea0c82b5a17260989e2",
+  "shared_obstruction_or_axiom_pressure": false,
+  "status": "cycle628-non-diagonal-link-qudit-same-code-fermion-compiler-tournament",
+  "strongest_constructive_result": "an exact covariant non-diagonal four-M2 face-qudit isometry and complete graded block exchange, plus an exact full-Fock line-prefix/twist stream intertwiner whose lattice-scale encoding phase and coin strings are measured rather than hidden",
+  "supplied_structure_inventory": [
+    "129^3 coarse centers and radial/tangential 48-role shells",
+    "blank face-qudit, prefix-buffer, archive, clean-resource, and routing M2s",
+    "uniform face mode and its exact Givens angles/factorization",
+    "Cycle230 six-mode CAR target, beta, contact g, coin-stream-contact order, and precision",
+    "periodic L3/L6/L7 domains, grouped mode order, fixed seam/root, and initial/boundary state",
+    "finite clean reservoir capacity; any bath, erasure, measurement, or entropy-export law"
+  ],
+  "tests_failed": 0,
+  "tests_passed": 13,
+  "updated_dependency_ledger": {
+    "C_int": "contact and one-particle mass remain local; the reordering-conjugated multiparticle coin becomes lattice-wide",
+    "C_local": "advanced by exact graded face blocks and weight-four prefix constraints; one bounded common E/G still remains",
+    "C_num": "advanced by a coherent non-diagonal face isometry and exact matrix-valued stream sign identity; bounded full update remains open",
+    "C_ref": "sharpened: fixed grouped order/seam is the exact reference cost of Route B; role shells remain supplied",
+    "C_source": "advanced to an exact six-clean-M2-per-cell-per-use resource debit; no indefinite renewal/source law is derived",
+    "C_wrap": "advanced by explicit line-twist/seam parity handling on L3/L6/L7; the seam/root remains supplied"
+  }
+}

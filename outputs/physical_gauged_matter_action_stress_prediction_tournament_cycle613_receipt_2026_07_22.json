@@ -1,0 +1,704 @@
+{
+  "HEAD": "60ea80fdaec68eef2b50899fd2eff9828e6a46f0",
+  "audit": "unset",
+  "authority": "none",
+  "constitutional_effect": "none",
+  "cycle": 613,
+  "decisive_answer": "the tested compact gauge action jointly selects the unit current, reciprocal electric kick, and Gauss law, but it does not select absolute coupling/action normalization or unique physical stress; on a periodic torus it excludes an isolated charge, while its automatic zero-total divJ source is exactly incompatible with the monopole 5/(32pi) surface. This is a candidate-law partial, not a gravity no-go.",
+  "elapsed_seconds": 21.87866162508726,
+  "foundation_recon": {
+    "approved_primitives": "scale reference, kinetic isotropy, realized-state slot; none supplies coupling, stress, source, or gravity",
+    "axioms": "Lattice, Qubit, Admissibility, Record; no dynamics/gauge/source-action bridge",
+    "strong_science": [
+      "Cycle564 contact-inclusive action/current",
+      "Cycle572 reciprocal curvature Hessian",
+      "Cycle576 Regge deficit/Bianchi/R3 bridge",
+      "Cycle604 reciprocal ledger and 5/(32pi) prediction",
+      "Cycles609/611 aggregate field and matter-variation current"
+    ]
+  },
+  "inventory": {
+    "derived_or_executed": [
+      "full coin/stream/contact gauge covariance",
+      "Peierls current and reciprocal E kick",
+      "local Gauss preservation and inverse",
+      "magnetic Bianchi identity",
+      "canonical tensor for chosen localization",
+      "action-rescaling discriminator",
+      "two conserved improvements",
+      "divJ=Ldelta/6 identity",
+      "exact local static response",
+      "no-refit monopole compatibility falsification",
+      "all24/all576"
+    ],
+    "not_derived": [
+      "absolute physical coupling",
+      "unique physical stress tensor",
+      "metric/gravity identification",
+      "isolated compact-torus charge genesis",
+      "monopole source",
+      "physical NN schedule",
+      "time",
+      "event selection",
+      "Born probability",
+      "Record actuality"
+    ],
+    "supplied": [
+      "U(1) compact group and unit representation",
+      "F17 modulus and symplectic factor order",
+      "Cycle219 coin/Cycle230 contact",
+      "periodic boundary",
+      "action normalization",
+      "coframe localization",
+      "improvement definitions",
+      "finite horizons",
+      "5/(32pi) comparator",
+      "matched-word mapping",
+      "aggregate-not-NN execution"
+    ]
+  },
+  "maturity_0_to_5": {
+    "Born_probability": 2.0,
+    "gravity_source": 3.85,
+    "inertia_matter": 4.45,
+    "operational_quantum_records": 4.0,
+    "time": 3.0
+  },
+  "maximum_RSS_bytes": 167100416,
+  "no_go_discipline": {
+    "N1_normalized_families": [
+      [
+        "compact U(1) link gauging",
+        "Gauss/current action",
+        "ATTEMPTED_POSITIVE_WITH_TORUS_BOUNDARY"
+      ],
+      [
+        "coframe variation of joined action",
+        "canonical tensor plus improvements",
+        "ATTEMPTED_PARTIAL"
+      ],
+      [
+        "continuity divJ prediction source",
+        "zero-total local response",
+        "ATTEMPTED_COMPATIBILITY_NEGATIVE"
+      ],
+      [
+        "Cycle576 Regge deficit action",
+        "metric Bianchi source",
+        "PRIOR_POSITIVE_NORMALIZATION_OPEN"
+      ],
+      [
+        "open-boundary electric flux",
+        "nonzero total charge through boundary",
+        "LIVE_UNTESTED"
+      ],
+      [
+        "particle-antiparticle charged sector",
+        "neutral monopole pair source",
+        "LIVE_UNTESTED"
+      ],
+      [
+        "quasienergy/log-unitary metric variation",
+        "band stress representative",
+        "LIVE_UNTESTED"
+      ]
+    ],
+    "N2_pairwise_wall_independence": [
+      {
+        "independent": true,
+        "left": "W_normalization",
+        "left_closes_right": false,
+        "right": "W_stress",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_normalization",
+        "left_closes_right": false,
+        "right": "W_zero",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_normalization",
+        "left_closes_right": false,
+        "right": "W_metric",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_normalization",
+        "left_closes_right": false,
+        "right": "W_prediction",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_normalization",
+        "left_closes_right": false,
+        "right": "W_packing",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_normalization",
+        "left_closes_right": false,
+        "right": "W_event",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_stress",
+        "left_closes_right": false,
+        "right": "W_zero",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_stress",
+        "left_closes_right": false,
+        "right": "W_metric",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_stress",
+        "left_closes_right": false,
+        "right": "W_prediction",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_stress",
+        "left_closes_right": false,
+        "right": "W_packing",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_stress",
+        "left_closes_right": false,
+        "right": "W_event",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_zero",
+        "left_closes_right": false,
+        "right": "W_metric",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_zero",
+        "left_closes_right": false,
+        "right": "W_prediction",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_zero",
+        "left_closes_right": false,
+        "right": "W_packing",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_zero",
+        "left_closes_right": false,
+        "right": "W_event",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_metric",
+        "left_closes_right": false,
+        "right": "W_prediction",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_metric",
+        "left_closes_right": false,
+        "right": "W_packing",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_metric",
+        "left_closes_right": false,
+        "right": "W_event",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_prediction",
+        "left_closes_right": false,
+        "right": "W_packing",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_prediction",
+        "left_closes_right": false,
+        "right": "W_event",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_packing",
+        "left_closes_right": false,
+        "right": "W_event",
+        "right_closes_left": false
+      }
+    ],
+    "N3_hidden_wall_scan": [
+      "U(1) group and unit representation",
+      "F17 modulus",
+      "symplectic action order",
+      "overall action normalization",
+      "periodic boundary",
+      "coframe localization",
+      "two improvement families",
+      "finite Cesaro horizons",
+      "5/(32pi) target",
+      "matched-word mapping",
+      "physical NN packing"
+    ],
+    "N4_residual_matching": [
+      [
+        "Cycle611",
+        "unit current and improvement ambiguity",
+        "Routes A/B",
+        "exact residual match"
+      ],
+      [
+        "Cycle576",
+        "Regge metric action",
+        "Route A link gauge action",
+        "different source; not cited as gravity identification"
+      ],
+      [
+        "Cycle604",
+        "monopole Green prediction",
+        "Route C divJ source",
+        "exact comparator; incompatibility scoped to this source"
+      ]
+    ],
+    "N5_rhetoric_audit": {
+      "not_event": "static/Cesaro/word comparisons only; no occurrence, time, Record, or probability",
+      "not_gravity": "site/link/lattice gauge and response tested; no metric or operational gravity response",
+      "not_stress_energy": "canonical/improved tensors tested locally and integrated; no empirical stress identification"
+    },
+    "N6_partial_closure_paths": [
+      "gauging retires current/Gauss reciprocity import",
+      "open boundaries could admit total flux",
+      "opposite charged matter could close compact zero mode",
+      "Regge coframe variation could supply a metric tensor",
+      "path coloring could retire packing"
+    ],
+    "N7_steelman": "A hostile reviewer should reject a broad negative: open-boundary flux, a derived antiparticle sector, the retained Regge deficit action, or a quasienergy metric variation could produce a zero-mode-compatible monopole source and select a stress representative. Cycle613 only falsifies the divJ source against one monopole surface.",
+    "N8_cross_cycle_echo": {
+      "Cycle564_576": "action/current and Regge routes stayed positive with normalization open",
+      "Cycle604_611": "reciprocal response and currents closed imports incrementally",
+      "Cycle613": "compact Gauss and divJ sharpen the residual without constitutional closure"
+    },
+    "axiom_pressure": false,
+    "broad_negative_gate": "FAIL / DO NOT SHIP",
+    "minimum_content_claim": false,
+    "shared_obstruction": false,
+    "walls": {
+      "W_event": "response and matched words do not select time, occurrence, Record, or probability",
+      "W_metric": "the link gauge action is not identified with a metric or operational gravitational response",
+      "W_normalization": "unit gauge representation does not select physical coupling or overall action normalization",
+      "W_packing": "aggregate F17 update is not a materialized physical NN schedule",
+      "W_prediction": "divJ is exactly incompatible with the monopole prediction surface, but other source objects remain live",
+      "W_stress": "chosen localization gives a canonical tensor but improvements and physical stress identification remain open",
+      "W_zero": "compact periodic Gauss code excludes isolated nonzero charge unless boundary flux or opposite charge is supplied"
+    }
+  },
+  "optimal_next_campaign": "replace periodic isolated charge by a locally generated opposite-charge matter sector or controlled open-boundary flux, then vary the joined Regge-plus-gauge action against an operational metric response to select normalization and improvement",
+  "pass": true,
+  "pins": {
+    "docs/work_history/repo/review_feedback/PHYSICAL_MATTER_VARIATION_CURRENT_STRESS_COMPENSATOR_SOURCE_TOURNAMENT_CYCLE611_NOTE_2026-07-22.md": "102b57283c55a190ba02289d2689ac8a6e6f97aff58e13036df1dd8a66e97308",
+    "outputs/physical_dynamical_metric_source_law_bridge_tournament_cycle576_receipt_2026_07_22.json": "06456c1443f5464949f40d81e9f1c6316b3e4e8405415b5b0035e39d4b88c3bd",
+    "outputs/physical_matter_variation_current_stress_compensator_source_tournament_cycle611_cold_2026_07_22.txt": "64b83d76bc28276d0484533e1d71c59ae6ed36fc6281ae7aafe11e91ef868290",
+    "outputs/physical_matter_variation_current_stress_compensator_source_tournament_cycle611_receipt_2026_07_22.json": "e32ec66403d0173865f24f047439f85e1c354e2156973dcdd94c4217c6fdbd82",
+    "outputs/physical_rational_regge_reciprocal_response_prediction_bridge_cycle604_receipt_2026_07_22.json": "c8210a1f170c3b11258f9876a0013b981b4b3c44a592423c8ce48a34a479b5ee",
+    "scripts/physical_matter_variation_current_stress_compensator_source_tournament_cycle611_2026_07_22.py": "358473ff93ad613324dd39bcee12467f3191927ef9c2e632aaf0137d735c02e6"
+  },
+  "route_A_fully_gauged_joint_action": {
+    "F17_labels_are_real_energy_or_stress": false,
+    "Gauss_constraint": "G_x=div E_x-rho_x; temporal multiplier variation imposes G_x=0",
+    "action_is_gravity": false,
+    "all576_total_link_failures": 0,
+    "compensator_genesis_used": false,
+    "disposition": "CONSTRUCTIVE_GAUGED_JOINT_ACTION_AND_GAUSS_LAW; ISOLATED_TORUS_CHARGE_AND_GRAVITY_ID_OPEN",
+    "explicit_action": "A=sum_links[E DeltaQ-1/2 E^2]+sum_matter_hops psi* U[Q] psi-1/2 sum_plaquettes B^2-g sum_x binom(N_x,2); update index and temporal multiplier are not physical time",
+    "gauge_transformation": "psi_x->omega^theta_x psi_x; Q_a(x)->Q_a(x)+theta(x+e_a)-theta(x); contact N_x is invariant",
+    "joint_update": "accepted coin/contact, Peierls stream, E<-E-J-grad_Q(B^2/2), Q<-Q+E",
+    "local_coin_contact_cubic_controls": {
+      "coin_all24_cubic_covariance_residual": 0,
+      "contact_all24_cubic_covariance_residual": 0
+    },
+    "maximum_Gauss_or_continuity_residual": 0,
+    "maximum_all24_joint_covariance_residual": 0,
+    "maximum_full_gauge_covariance_residual": 7.195067539997724e-16,
+    "maximum_inverse_residual": 1.1102427333171252e-16,
+    "maximum_magnetic_Bianchi_residual": 0,
+    "minimum_current_deletion_signal": 1,
+    "neutral_compiler_words_charged": false,
+    "object": "compact F17 U(1) link action gauging the full accepted coin-stream-contact matter update",
+    "periodic_single_charge_lies_on_Gauss_code_space": false,
+    "physical_NN_execution_closed": false,
+    "physical_coupling_or_action_normalization_derived": false,
+    "representation_charge": 1,
+    "representation_charge_is_unique_physical_coupling": false,
+    "rows": [
+      {
+        "Fock_joint_controls": {
+          "coherent_coin_contact_norm_residual": 2.220446049250313e-16,
+          "controlled_outputs_retained": 64,
+          "host_branch_selection_used": false,
+          "local_Fock_words_exhausted": 64,
+          "maximum_Fock_Gauss_preservation_residual": 0,
+          "maximum_Fock_continuity_residual": 0,
+          "maximum_Fock_joint_inverse_residual": 0,
+          "minimum_nonvacuum_current_deletion_signal": 1
+        },
+        "Gauss_preservation_residual": 0,
+        "all24_joint_covariance_residual": 0,
+        "all576_link_representation_failures": 0,
+        "branch_phase_norm_residual": 0.0,
+        "coin_local_gauge_covariance_residual": 1.5004649333588417e-16,
+        "contact_local_gauge_covariance_residual": 7.195067539997724e-16,
+        "current_backreaction_deletion_signal": 1,
+        "fixture": "TRAIN_L3",
+        "gauge_covariance_residual": 5.986255670794916e-16,
+        "held": false,
+        "joint_inverse_residual": 2.724653071301905e-17,
+        "lawful_F17_word_leakage": 0,
+        "length": 3,
+        "magnetic_Bianchi_residual": 0,
+        "matter_continuity_residual": 0,
+        "periodic_single_charge_Gauss_constraint_sum_mod17": 1
+      },
+      {
+        "Fock_joint_controls": {
+          "coherent_coin_contact_norm_residual": 1.1102230246251565e-16,
+          "controlled_outputs_retained": 64,
+          "host_branch_selection_used": false,
+          "local_Fock_words_exhausted": 64,
+          "maximum_Fock_Gauss_preservation_residual": 0,
+          "maximum_Fock_continuity_residual": 0,
+          "maximum_Fock_joint_inverse_residual": 0,
+          "minimum_nonvacuum_current_deletion_signal": 1
+        },
+        "Gauss_preservation_residual": 0,
+        "all24_joint_covariance_residual": 0,
+        "all576_link_representation_failures": 0,
+        "branch_phase_norm_residual": 1.1102230246251565e-16,
+        "coin_local_gauge_covariance_residual": 1.543471277146207e-16,
+        "contact_local_gauge_covariance_residual": 7.195067539997724e-16,
+        "current_backreaction_deletion_signal": 1,
+        "fixture": "HELD_L6",
+        "gauge_covariance_residual": 6.728193815419859e-16,
+        "held": true,
+        "joint_inverse_residual": 1.1102427333171252e-16,
+        "lawful_F17_word_leakage": 0,
+        "length": 6,
+        "magnetic_Bianchi_residual": 0,
+        "matter_continuity_residual": 0,
+        "periodic_single_charge_Gauss_constraint_sum_mod17": 1
+      },
+      {
+        "Fock_joint_controls": {
+          "coherent_coin_contact_norm_residual": 4.440892098500626e-16,
+          "controlled_outputs_retained": 64,
+          "host_branch_selection_used": false,
+          "local_Fock_words_exhausted": 64,
+          "maximum_Fock_Gauss_preservation_residual": 0,
+          "maximum_Fock_continuity_residual": 0,
+          "maximum_Fock_joint_inverse_residual": 0,
+          "minimum_nonvacuum_current_deletion_signal": 1
+        },
+        "Gauss_preservation_residual": 0,
+        "all24_joint_covariance_residual": 0,
+        "all576_link_representation_failures": 0,
+        "branch_phase_norm_residual": 0.0,
+        "coin_local_gauge_covariance_residual": 1.5702997796829593e-16,
+        "contact_local_gauge_covariance_residual": 7.195067539997724e-16,
+        "current_backreaction_deletion_signal": 1,
+        "fixture": "OUT_HELD_L7",
+        "gauge_covariance_residual": 6.517625712973022e-16,
+        "held": true,
+        "joint_inverse_residual": 4.170107353027923e-18,
+        "lawful_F17_word_leakage": 0,
+        "length": 7,
+        "magnetic_Bianchi_residual": 0,
+        "matter_continuity_residual": 0,
+        "periodic_single_charge_Gauss_constraint_sum_mod17": 1
+      }
+    ]
+  },
+  "route_B_action_stress_selection": {
+    "action_normalization_selected": false,
+    "action_rescaling": "multiplying the full action by 2 preserves stationary equations and gauge symmetry but doubles the tensor/source",
+    "all576_tensor_group_failures": 0,
+    "canonical_localization": "positive-link variation symmetrically incidence-averaged to endpoint sites",
+    "canonical_tensor_is_unique_physical_stress": false,
+    "disposition": "CONSTRUCTIVE_CANONICAL_TENSOR_FOR_CHOSEN_LOCALIZATION; UNIQUE_PHYSICAL_STRESS_NOT_SELECTED",
+    "explicit_varied_action": "A_matter=sum_oriented_hops psi* exp(iQ) psi-g sum_x binom(N_x,2); contact has zero U(1)/hop-coframe variation",
+    "improvement_coefficient_selected": false,
+    "maximum_action_variation_residual": 1.5231791930677585e-12,
+    "maximum_all24_canonical_covariance_residual": 0,
+    "maximum_improvement_conservation_residual": 0,
+    "minimum_action_rescaling_source_signal": 0.5773524074555542,
+    "minimum_independent_improvement_local_signal": 0.5,
+    "object": "canonical coframe tensor induced by the explicit Peierls matter-hop plus onsite-contact action sector",
+    "rows": [
+      {
+        "action_rescaling_rows": [
+          {
+            "action_scale": 1,
+            "derivative_over_unscaled": 1,
+            "integrated_tensor_norm": 0.577549635880469,
+            "same_stationary_equations_and_gauge_symmetry": true
+          },
+          {
+            "action_scale": 2,
+            "derivative_over_unscaled": 2,
+            "integrated_tensor_norm": 1.155099271760938,
+            "same_stationary_equations_and_gauge_symmetry": true
+          }
+        ],
+        "action_rescaling_source_signal": 0.577549635880469,
+        "canonical_site_tensor_all24_covariance_residual": 0,
+        "chosen_action_coframe_derivative_residual": 1.5231791930677585e-12,
+        "contact_variation": "present in the action and zero under coframe/U(1) variation because it depends only on onsite N_x",
+        "curl_improvement_divergence_residual": 0.0,
+        "curl_improvement_integrated_residual": 0.0,
+        "curl_local_redistribution_signal": 0.5,
+        "fixture": "TRAIN_L3",
+        "held": false,
+        "length": 3,
+        "symmetric_improvement_divergence_residual": 0.0,
+        "symmetric_improvement_integrated_residual": 0.0,
+        "symmetric_local_redistribution_signal": 1.0
+      },
+      {
+        "action_rescaling_rows": [
+          {
+            "action_scale": 1,
+            "derivative_over_unscaled": 1,
+            "integrated_tensor_norm": 0.5773524074555542,
+            "same_stationary_equations_and_gauge_symmetry": true
+          },
+          {
+            "action_scale": 2,
+            "derivative_over_unscaled": 2,
+            "integrated_tensor_norm": 1.1547048149111083,
+            "same_stationary_equations_and_gauge_symmetry": true
+          }
+        ],
+        "action_rescaling_source_signal": 0.5773524074555542,
+        "canonical_site_tensor_all24_covariance_residual": 0,
+        "chosen_action_coframe_derivative_residual": 1.0313761386571782e-12,
+        "contact_variation": "present in the action and zero under coframe/U(1) variation because it depends only on onsite N_x",
+        "curl_improvement_divergence_residual": 0.0,
+        "curl_improvement_integrated_residual": 0.0,
+        "curl_local_redistribution_signal": 0.5,
+        "fixture": "HELD_L6",
+        "held": true,
+        "length": 6,
+        "symmetric_improvement_divergence_residual": 0.0,
+        "symmetric_improvement_integrated_residual": 0.0,
+        "symmetric_local_redistribution_signal": 1.0
+      },
+      {
+        "action_rescaling_rows": [
+          {
+            "action_scale": 1,
+            "derivative_over_unscaled": 1,
+            "integrated_tensor_norm": 0.5774167090153601,
+            "same_stationary_equations_and_gauge_symmetry": true
+          },
+          {
+            "action_scale": 2,
+            "derivative_over_unscaled": 2,
+            "integrated_tensor_norm": 1.1548334180307203,
+            "same_stationary_equations_and_gauge_symmetry": true
+          }
+        ],
+        "action_rescaling_source_signal": 0.5774167090153601,
+        "canonical_site_tensor_all24_covariance_residual": 0,
+        "chosen_action_coframe_derivative_residual": 3.6684038002512413e-13,
+        "contact_variation": "present in the action and zero under coframe/U(1) variation because it depends only on onsite N_x",
+        "curl_improvement_divergence_residual": 0.0,
+        "curl_improvement_integrated_residual": 0.0,
+        "curl_local_redistribution_signal": 0.5,
+        "fixture": "OUT_HELD_L7",
+        "held": true,
+        "length": 7,
+        "symmetric_improvement_divergence_residual": 0.0,
+        "symmetric_improvement_integrated_residual": 0.0,
+        "symmetric_local_redistribution_signal": 1.0
+      }
+    ],
+    "tensor_is_stress_energy_or_gravity": false
+  },
+  "route_C_prediction_compatibility": {
+    "Cycle604_Green_rows": [
+      {
+        "fixture": "HELD_AXIS",
+        "lattice_Green": 0.001243473937256251,
+        "measured_cubic_coefficient": 0.04977088975252286,
+        "point": [
+          64,
+          0,
+          0
+        ],
+        "predicted_5_over_32pi": 0.0497359197162173,
+        "relative_residual": 0.0007031142985813865
+      },
+      {
+        "fixture": "HELD_FACE",
+        "lattice_Green": 0.0014067168165679941,
+        "measured_cubic_coefficient": 0.04964894710920089,
+        "point": [
+          40,
+          40,
+          0
+        ],
+        "predicted_5_over_32pi": 0.0497359197162173,
+        "relative_residual": 0.001748688020904332
+      },
+      {
+        "fixture": "HELD_BODY",
+        "lattice_Green": 0.001435674424674776,
+        "measured_cubic_coefficient": 0.04974396712637085,
+        "point": [
+          32,
+          32,
+          32
+        ],
+        "predicted_5_over_32pi": 0.0497359197162173,
+        "relative_residual": 0.00016180278156041616
+      }
+    ],
+    "Cycle604_maximum_5_over_32pi_relative_residual": 0.001748688020904332,
+    "all576_scalar_representation_failures": 0,
+    "coefficient_relative_residual": 1.0,
+    "compatibility_failure_is_universal_gravity_no_go": false,
+    "disposition": "SOURCE_ROUTE_COMPATIBILITY_FALSIFICATION_AGAINST_MONOPOLE_5_OVER_32PI; NOT_A_GRAVITY_NO_GO",
+    "existing_monopole_prediction_coefficient": "5/(32pi)",
+    "matched_event_surface": {
+      "Cycle570_matched_endpoint_receipt_passes": true,
+      "advance_candidate": [
+        5,
+        4
+      ],
+      "advance_fraction": "5/4",
+      "delay_candidate": [
+        3,
+        4
+      ],
+      "delay_fraction": "3/4",
+      "mapping_from_response_sign_to_delay_or_advance_is_supplied": true,
+      "receiver_zero": [
+        4,
+        4
+      ],
+      "response_sign_at_frozen_far_receiver": -1.0,
+      "source_off": [
+        4,
+        4
+      ]
+    },
+    "matched_words_are_events": false,
+    "maximum_Cesaro_to_own_static_residual": 0.0033515973522711684,
+    "maximum_all24_source_covariance_residual": 0,
+    "maximum_exact_static_solution_residual": 6.520554475598079e-17,
+    "maximum_laplacian_identity_residual": 0,
+    "minimum_deletion_signal": 0.16666666666666666,
+    "minimum_monopole_surface_incompatibility": 0.41732158268029523,
+    "object": "zero-total continuity source div J from the gauged accepted matter stream",
+    "parameters_refit": 0,
+    "predicted_far_cubic_coefficient_for_divJ_source": 0.0,
+    "preregistered_source_character": "zero-total divergence/Laplacian source (sum of six branch dipoles; cubic first moment vanishes), not a monopole source",
+    "rows": [
+      {
+        "Cesaro_to_own_static_relative_residual": 0.0033515973522711684,
+        "all24_source_covariance_residual": 0,
+        "delete_one_current_branch_signal": 0.16666666666666666,
+        "deletion_zero_mode_failure": 0.1666666666666667,
+        "endpoint_norm_not_time": 0.10883999015845537,
+        "exact_local_static_solution_residual": 2.468554782592993e-17,
+        "fixture": "TRAIN_L3",
+        "held": false,
+        "horizon_update_count": 384,
+        "laplacian_identity_residual": 0.0,
+        "length": 3,
+        "monopole_Green_surface_relative_incompatibility": 0.41732158268029523,
+        "parameters_refit": 0,
+        "source_identity": "sigma=rho_before-rho_after=div J=L delta_0/6",
+        "zero_total_residual": 8.326672684688674e-17
+      },
+      {
+        "Cesaro_to_own_static_relative_residual": 0.002083275979821528,
+        "all24_source_covariance_residual": 0,
+        "delete_one_current_branch_signal": 0.16666666666666666,
+        "deletion_zero_mode_failure": 0.1666666666666667,
+        "endpoint_norm_not_time": 0.2238592681326267,
+        "exact_local_static_solution_residual": 4.6987250768383034e-17,
+        "fixture": "HELD_L6",
+        "held": true,
+        "horizon_update_count": 768,
+        "laplacian_identity_residual": 0.0,
+        "length": 6,
+        "monopole_Green_surface_relative_incompatibility": 0.6314240886237973,
+        "parameters_refit": 0,
+        "source_identity": "sigma=rho_before-rho_after=div J=L delta_0/6",
+        "zero_total_residual": 8.326672684688674e-17
+      },
+      {
+        "Cesaro_to_own_static_relative_residual": 0.001040842151126787,
+        "all24_source_covariance_residual": 0,
+        "delete_one_current_branch_signal": 0.16666666666666666,
+        "deletion_zero_mode_failure": 0.16666666666666677,
+        "endpoint_norm_not_time": 0.2314485238790612,
+        "exact_local_static_solution_residual": 6.520554475598079e-17,
+        "fixture": "OUT_HELD_L7",
+        "held": true,
+        "horizon_update_count": 1536,
+        "laplacian_identity_residual": 0.0,
+        "length": 7,
+        "monopole_Green_surface_relative_incompatibility": 0.6754270112996393,
+        "parameters_refit": 0,
+        "source_identity": "sigma=rho_before-rho_after=div J=L delta_0/6",
+        "zero_total_residual": 1.3877787807814457e-16
+      }
+    ]
+  },
+  "shared_obstruction_or_axiom_pressure": false,
+  "shore": {
+    "Cycle576_pass": true,
+    "Cycle604_pass": true,
+    "Cycle611_pass": true,
+    "contact": 2.149937642474629e-15,
+    "hashes_match": true,
+    "mass": 8.7159799596118e-16,
+    "seam": 0
+  },
+  "six_wall_ledger": {
+    "C_int": "ADVANCED: one action joins full matter gauge phase, electric recoil, magnetic curl, and Gauss law",
+    "C_local": "ADVANCED LAW-LEVEL: local support, inverse, continuity, Bianchi and covariance pass; physical NN packing remains open",
+    "C_num": "ADVANCED: Gauss source is accepted matter occupation; neutral compiler words remain uncharged",
+    "C_ref": "ADVANCED: gauge covariance selects unit representation current and reciprocal kick; physical coupling and action normalization remain supplied",
+    "C_source": "SHARPENED: compact Gauss excludes isolated periodic charge and automatic divJ fails the monopole shore; open-boundary/opposite-charge/Regge source routes remain live",
+    "C_wrap": "ADVANCED: compact F17 link action and Gauss preservation are exact; labels remain non-energy/non-stress"
+  },
+  "strongest_constructive_result": "one compact F17 link action fully gauges the accepted coin-stream-contact matter law and yields an exact reciprocal current kick, magnetic Bianchi identity, local Gauss preservation, inverse, and proper-cubic covariance",
+  "tests_failed": 0,
+  "tests_passed": 9
+}

@@ -32,9 +32,9 @@ Owner-approval history for axioms and primitives:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3852 |
-| Applied audit verdicts | 512 |
-| Retained-grade rows, including boxed decorations | 417 |
-| Retained positive theorems | 89 |
+| Applied audit verdicts | 513 |
+| Retained-grade rows, including boxed decorations | 418 |
+| Retained positive theorems | 90 |
 | Retained no-go rows | 0 |
 | Retained bounded rows | 311 |
 | Boxed decorations under retained parents | 17 |
@@ -54,10 +54,10 @@ Full audit-ratified row list: [`docs/repo/RETAINED_BACKBONE.md`](RETAINED_BACKBO
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 3050 |
+| Total pending rows | 3049 |
 | Ready rows | 638 |
 | Cycle-break targets | 59 |
-| Critical pending | 650 |
+| Critical pending | 649 |
 | High pending | 372 |
 | Medium pending | 839 |
 | Leaf pending | 1189 |
@@ -265,8 +265,8 @@ Non-lane rows deferred by the simulated interleave (positions lost; complete lis
 - `single_clock_uniqueness_scope_boundary_2026-06-06`: -7
 - `clifford_chirality_dimension_narrow_theorem_note_2026-05-10`: -7
 - `flavor_native_double_shift_corner_coupling_note_2026-05-30`: -7
-- `koide_cyclic_wilson_descendant_law_note_2026-04-18`: -7
 - `dm_leptogenesis_pmns_transport_selector_firewall_note_2026-06-17`: -7
+- `koide_circulant_wilson_target_note_2026-04-18`: -7
 - `strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16`: -7
 - `lattice_nn_light_cone_note`: -7
 - `record_clock_rate_normalization_gate_2026-06-06`: -7

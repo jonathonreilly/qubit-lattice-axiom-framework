@@ -1,9 +1,10 @@
 {
   "audit_date": null,
   "audit_invocation_history": [
-    "df3dbe3889fb4f96a383945732caa147"
+    "df3dbe3889fb4f96a383945732caa147",
+    "8bb914aea32849c6a1137126c1f85f82"
   ],
-  "audit_invocation_id": "df3dbe3889fb4f96a383945732caa147",
+  "audit_invocation_id": "8bb914aea32849c6a1137126c1f85f82",
   "audit_state_snapshot": null,
   "audit_status": "audit_in_progress",
   "auditor": null,
@@ -11,7 +12,7 @@
   "auditor_family": null,
   "auditor_model": null,
   "auditor_reasoning_effort": null,
-  "blocker": "awaiting_cross_confirmation",
+  "blocker": "cross_confirmation_disagreement",
   "chain_closes": null,
   "chain_closure_explanation": null,
   "claim_id": "koide_moment_ratio_uniformity_theorem_note_2026-04-19",
@@ -51,8 +52,35 @@
       "verdict": "audited_clean",
       "verdict_rationale": "The theorem is a self-contained algebraic and elementary analytic result on an explicitly formal two-variable carrier. The runner genuinely differentiates the stated functional, checks the equal-radius solution and kappa substitution, samples the strict inequality away from the optimum, and supplies a relevant weighted negative control; it imports no physical premise or external comparator. The note carefully excludes the unproved physical quotient and charged-lepton identification from the audited scope."
     },
-    "second_audit": null,
-    "status": "awaiting_second"
+    "second_audit": {
+      "audit_date": "2026-07-22T19:33:03.636156+00:00",
+      "audit_invocation_id": "8bb914aea32849c6a1137126c1f85f82",
+      "auditor": "codex-audit-batch-B-20260722-64b6ecfb",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "chain_closes": true,
+      "chain_closure_explanation": "The constrained maximization closes: the unique maximum has equal radii. The stated kappa value then follows exactly by substitution into its stipulated definition, rather than as an independent result.",
+      "claim_scope": "The formal positive two-variable constrained maximum and the value of the explicitly defined kappa at that maximum.",
+      "claim_type": "bounded_theorem",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "Define kappa := 2 rho_plus^2 / rho_perp^2.",
+      "load_bearing_step_class": "E",
+      "negative_assertion_classes": [],
+      "notes_for_re_audit_if_any": "other: Keep the equal-radii maximization as the substantive theorem and label kappa=2 as a definitional corollary; an independent kappa claim requires a separately motivated identification.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 15,
+        "B": 8,
+        "C": 0,
+        "D": 0,
+        "total_pass": 23
+      },
+      "verdict": "audited_renaming",
+      "verdict_rationale": "The constrained maximization is correct: positivity and fixed energy yield the sole stationary point at equal radii, and endpoint divergence makes it the unique global maximum. However, the reported kappa=2 is obtained only after defining kappa := 2 rho_plus^2 / rho_perp^2; once equal radii are established, the value 2 is a definition substitution rather than an independently derived invariant. The runner accurately checks the bounded algebra and its weighted negative control but does not alter that classification."
+    },
+    "status": "disagreement"
   },
   "decoration_parent_claim_id": null,
   "deps": [],

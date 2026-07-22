@@ -1,0 +1,1509 @@
+{
+  "HEAD": "1baa7161c7576c328c612ebc30f9c4033d1f82d8",
+  "audit": "unset",
+  "authority": "none",
+  "constitutional_effect": "none",
+  "elapsed_seconds": 3.1620211249683052,
+  "maximum_RSS_bytes": 181288960,
+  "no_go_discipline": {
+    "N1_attempted_or_prior_scoped_families": 5,
+    "N1_normalized_families": [
+      {
+        "disposition": "exact over parameterized one-M2 rotations; global shift schedule not compiled",
+        "family": "structured word-table circuit",
+        "marker": "ATTEMPTED",
+        "mechanism": "pair-H/qutrit spectral factorization, reversible predicates, and Gray transpositions",
+        "object": "three 4-M2 carrier words and clean Boolean scratch",
+        "strength": "weaker than full finite-alphabet/global-shift target",
+        "terminal_obligation": "support-two exact coin/contact/link event circuits"
+      },
+      {
+        "disposition": "nearest P(k*pi/4) words were executed and miss every inherited eigen/contact phase; this does not test general Clifford+T words",
+        "family": "fixed diagonal T-phase-grid compiler",
+        "marker": "ATTEMPTED",
+        "mechanism": "replace inherited analog rotations by finite exact phase words",
+        "object": "Cycle580 H/CNOT/CZ/SWAP alphabet and Clifford-phase extensions",
+        "strength": "target-equivalent only for the alphabet residual",
+        "terminal_obligation": "exact beta=-0.3 and g=0.37 amplitudes"
+      },
+      {
+        "disposition": "closed exactly in N=1; vacuum and N2 Dicke remain global ground competitors",
+        "family": "cubic swap parent Hamiltonian",
+        "marker": "ATTEMPTED",
+        "mechanism": "connected-edge equality and spectral gap",
+        "object": "one-excitation graph Laplacian",
+        "strength": "target-equivalent for sector parent only",
+        "terminal_obligation": "unique uniform W inside N=1 with held-size scaling"
+      },
+      {
+        "disposition": "common N1 dark ray/gap closed; convergence/rate and sector genesis unproved",
+        "family": "local dark-jump cooling",
+        "marker": "ATTEMPTED",
+        "mechanism": "drain edge-antisymmetric amplitude into the symmetric ray",
+        "object": "edge jumps |psi+><psi-|",
+        "strength": "weaker",
+        "terminal_obligation": "unique W common dark vector and autonomous preparation"
+      },
+      {
+        "disposition": "covariant loop orbit exists but winding/one-mark sectors are supplied",
+        "family": "topological winding/mark preparation",
+        "marker": "RULED OUT BY PRIOR CYCLE600 FOR THAT FAMILY",
+        "mechanism": "Gauss conservation and Wilson-line schedule",
+        "object": "marked noncontractible Z2 loops",
+        "strength": "weaker",
+        "terminal_obligation": "one point carrier without supplied winding or mark sector"
+      },
+      {
+        "disposition": "concrete steelman; prevents broad synthesis/genesis no-go",
+        "family": "fault-tolerant approximation and autonomous number-selecting reservoir",
+        "marker": "LIVE_UNTESTED",
+        "mechanism": "precision-bounded synthesis and reservoir spectral selection",
+        "object": "approximate finite words plus local open-system number control",
+        "strength": "unknown/comparable",
+        "terminal_obligation": "replace exact analog angles and select N=1 globally"
+      }
+    ],
+    "N2_directional_pairs": [
+      {
+        "first": "finite accepted alphabet or calibrated analog one-M2 rotations",
+        "first_closes_second": false,
+        "independent_as_current_imports_not_no_go_walls": true,
+        "second": "one simultaneous conflict-free global stream schedule",
+        "second_closes_first": false
+      },
+      {
+        "first": "finite accepted alphabet or calibrated analog one-M2 rotations",
+        "first_closes_second": false,
+        "independent_as_current_imports_not_no_go_walls": true,
+        "second": "exact N=1 species-sector genesis",
+        "second_closes_first": false
+      },
+      {
+        "first": "finite accepted alphabet or calibrated analog one-M2 rotations",
+        "first_closes_second": false,
+        "independent_as_current_imports_not_no_go_walls": true,
+        "second": "dark semigroup convergence and autonomous rate",
+        "second_closes_first": false
+      },
+      {
+        "first": "finite accepted alphabet or calibrated analog one-M2 rotations",
+        "first_closes_second": false,
+        "independent_as_current_imports_not_no_go_walls": true,
+        "second": "clean scratch initialization and renewal",
+        "second_closes_first": false
+      },
+      {
+        "first": "one simultaneous conflict-free global stream schedule",
+        "first_closes_second": false,
+        "independent_as_current_imports_not_no_go_walls": true,
+        "second": "exact N=1 species-sector genesis",
+        "second_closes_first": false
+      },
+      {
+        "first": "one simultaneous conflict-free global stream schedule",
+        "first_closes_second": false,
+        "independent_as_current_imports_not_no_go_walls": true,
+        "second": "dark semigroup convergence and autonomous rate",
+        "second_closes_first": false
+      },
+      {
+        "first": "one simultaneous conflict-free global stream schedule",
+        "first_closes_second": false,
+        "independent_as_current_imports_not_no_go_walls": true,
+        "second": "clean scratch initialization and renewal",
+        "second_closes_first": false
+      },
+      {
+        "first": "exact N=1 species-sector genesis",
+        "first_closes_second": false,
+        "independent_as_current_imports_not_no_go_walls": true,
+        "second": "dark semigroup convergence and autonomous rate",
+        "second_closes_first": false
+      },
+      {
+        "first": "exact N=1 species-sector genesis",
+        "first_closes_second": false,
+        "independent_as_current_imports_not_no_go_walls": true,
+        "second": "clean scratch initialization and renewal",
+        "second_closes_first": false
+      },
+      {
+        "first": "dark semigroup convergence and autonomous rate",
+        "first_closes_second": false,
+        "independent_as_current_imports_not_no_go_walls": true,
+        "second": "clean scratch initialization and renewal",
+        "second_closes_first": false
+      }
+    ],
+    "N2_pair_count": 10,
+    "N3_hidden_condition_scan": {
+      "N1 sector": "explicit supplied global count",
+      "analog angles": "explicit inherited beta/contact calibration",
+      "clean scratch": "explicit supplied zero-state resource",
+      "full space extension": "invalid words use m=0 and word coin identity; scratch unitary is explicit",
+      "parent/dissipator coupling and clock": "explicit supplied candidate parameters",
+      "routing and global stream order": "explicit compile schedule; not time",
+      "uncited_standard_or_obvious_hits": 0
+    },
+    "N4_residual_matching": [
+      {
+        "current_residual": "support-two parametric event compiler executed; finite accepted alphabet/global shift remain",
+        "match": true,
+        "witness": "Cycle600 Route A",
+        "witness_residual": "elementary 12-role synthesis unexecuted"
+      },
+      {
+        "current_residual": "unique gapped W parent in N=1 constructed",
+        "match": true,
+        "witness": "Cycle600 N6/N7",
+        "witness_residual": "one-excitation parent Hamiltonian untested"
+      },
+      {
+        "current_residual": "local common-dark jump family constructed; convergence/genesis remain",
+        "match": true,
+        "witness": "Cycle600 N6/N7",
+        "witness_residual": "dissipative W dark state untested"
+      }
+    ],
+    "N5_rhetoric_resolution": [
+      "finite-alphabet nonclosure is only for the executed Cycle580 H/CNOT/CZ/SWAP comparison, not all elementary alphabets",
+      "the stream residual is only the missing simultaneous global conflict-free schedule, not the exact crossed-link tables or Cycle600 abstract map",
+      "W uniqueness is only inside N=1; vacuum and N2 Dicke competitors are explicitly tested",
+      "dark uniqueness means common pure dark vector, not a proved unique Lindblad stationary state or preparation law"
+    ],
+    "N6_partial_closure_paths": [
+      "choose and ratify a parameterized one-M2 rotation alphabet with calibration tests, or compile a precision-bounded Clifford+T approximation",
+      "add a bounded second word buffer or a reversible partitioned-QCA shift and count its scratch/layout cost",
+      "construct a local reservoir/penalty whose global ground or stationary sector is exactly N=1 without size-host data",
+      "prove the dark-jump Lindbladian primitive and gap/convergence theorem, then compile it into a physical recurrence"
+    ],
+    "N7_hostile_steelman": "A hostile reviewer should reject both an elementary-synthesis no-go and a genesis no-go. The exact parametric support-two compiler already removes arbitrary multi-controlled tables, so a calibrated RY/RZ/P elementary alphabet or ordinary precision-bounded Clifford+T synthesis could retire the remaining angle import. Likewise the gapped W parent and local dark jumps expose a concrete route in which a number-selecting reservoir or gauge charge fixes N=1. Neither the fault-tolerant approximation nor that reservoir was attempted, and a double-buffer partitioned QCA could compile the global shift at constant overhead.",
+    "N8_cross_cycle_echo": "Cycles560/563 retired decoder/order services by explicit bounded tables, Cycle580 retired an isometry-only gate gap with H/CNOT/CZ/SWAP, and Cycle600 retired the full N<=3 carrier-law gap. Cycle603 again narrows two imports constructively; the history supports another compiler/preparer cycle, not constitutional language.",
+    "axiom_pressure": false,
+    "minimum_content_claim_shipped": false,
+    "negative_claim_shipped": false,
+    "pass_for_scoped_dispositions_and_withholding_broad_negative": true,
+    "route_evidence": {
+      "A": true,
+      "B": true,
+      "C": true
+    },
+    "shared_obstruction": false,
+    "skill_freshness": {
+      "local_skill_sha256": "aeac7b2b7df30c350961f4b36b980a91e9c2ebeca3f35b6c1adcd731071bdab5",
+      "newer_origin_main_version_followed": true,
+      "origin_main_checked": true,
+      "origin_main_skill_sha256": "7d1aea8243ddd972331b935e2e836657e72115da3efe259f828fe862469d68b7",
+      "proof_search_governance_followed": true
+    }
+  },
+  "note_contract": {
+    "forbidden_hits": [],
+    "missing": [],
+    "required_phrases": [
+      "Authority: none",
+      "Audit: unset",
+      "Cycle 603",
+      "Route A",
+      "Route B",
+      "Route C",
+      "12-M2",
+      "parameterized",
+      "finite",
+      "H/CNOT/CZ/SWAP",
+      "off-code",
+      "nearest-neighbor",
+      "SWAP",
+      "L3",
+      "L6",
+      "L7",
+      "all 24",
+      "all 576",
+      "N=1",
+      "vacuum",
+      "two-excitation",
+      "W",
+      "gap",
+      "dark",
+      "genesis",
+      "schedule is not time",
+      "carrier bookkeeping",
+      "N1",
+      "N8",
+      "no axiom pressure"
+    ]
+  },
+  "note_sha256": "5151ebfc5f87ee0305070aa9bd2956e82f054b33e64007b51f8fc6cc3a3ea1f7",
+  "optimal_next_campaign": "compile a constant-overhead double-buffer or partitioned-QCA global carrier shift and choose either a calibrated parametric M2 rotation contract or a precision-bounded Clifford+T target; in parallel add and test a local number-selecting reservoir for the W parent/dark family",
+  "pass": true,
+  "pins": {
+    "docs/work_history/repo/review_feedback/PHYSICAL_ROOT_FREE_FULL_N3_CARRIER_GENESIS_TOURNAMENT_CYCLE600_NOTE_2026-07-22.md": "f3d0eb88946c14b94ba9e5f8de436c6af808ad37a7e8250f6ed10e42492848ea",
+    "outputs/physical_root_free_full_N3_carrier_genesis_tournament_cycle600_cold_2026_07_22.txt": "ae85d6e4dc29b240d5eb2374ce22a2836dc0c7b0f85831406462779b1803f183",
+    "outputs/physical_root_free_full_N3_carrier_genesis_tournament_cycle600_receipt_2026_07_22.json": "3bddb02e1297440781fbd960a07e1b4ee021c9eadba8a6a5372dbb9812fb7cbd",
+    "scripts/physical_root_free_full_N3_carrier_genesis_tournament_cycle600_2026_07_22.py": "5b9bb9c1ae8585b7395f1a1a94040016ff8cc73e5cfbb430b16183e7133b64ba"
+  },
+  "route_A_structured_elementary_compiler": {
+    "Cycle600_EG_reproduction": {
+      "Cycle600_coin_EG_residual_recomputed": 1.154543706932542e-15,
+      "Cycle600_contact_EG_residual_recomputed": 0.0,
+      "Cycle600_embedding_dimension": [
+        1000,
+        42
+      ],
+      "Cycle600_local_stream_EG_residual_recomputed": 0.0,
+      "compiled_word_coin_EG_residual": 4.0336968129257627e-13,
+      "compiled_word_valid_restriction_residual": 6.691653345493114e-14
+    },
+    "contact": {
+      "clean_flag_M2": 3,
+      "contact_inverse_phase_residual": 0.0,
+      "contact_phase_residual": 0.0,
+      "delete_one_pair_phase_max_row_residual": 0.36789306705608243,
+      "full_16_cubed_rows_exhausted": 4096,
+      "gate_counts": {
+        "CNOT": 162,
+        "H": 36,
+        "P(theta)": 27,
+        "RY(theta)": 36,
+        "RZ(theta)": 54,
+        "T": 63,
+        "Tdg": 63,
+        "X": 36
+      },
+      "matter_predicate": "m(q3q2q1q0)=(not q3 and q2) XOR (q3 and not q2 and not q1)",
+      "off_code_extension_rule": "invalid 10..15 has m=0; phases among any other valid bound words remain active",
+      "off_code_rule_residual": 0.0,
+      "predicate_failures": 0,
+      "routing": {
+        "all24_rotated_line_edge_failures": 0,
+        "all24_rotated_line_injection_failures": 0,
+        "all_two_M2_instances_after_move_apply_restore_are_NN": true,
+        "base_gate_count": 477,
+        "base_pair_or_range_failures": 0,
+        "line_sites": 16,
+        "literal_coordinates": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            0
+          ],
+          [
+            9,
+            0,
+            0
+          ],
+          [
+            10,
+            0,
+            0
+          ],
+          [
+            11,
+            0,
+            0
+          ],
+          [
+            12,
+            0,
+            0
+          ],
+          [
+            13,
+            0,
+            0
+          ],
+          [
+            14,
+            0,
+            0
+          ],
+          [
+            15,
+            0,
+            0
+          ]
+        ],
+        "literal_routed_edge_checks": 1942,
+        "literal_routed_edge_failures": 0,
+        "maximum_pre_route_pair_distance": 15,
+        "one_M2_gate_count": 315,
+        "routed_two_site_instances_including_SWAPS": 1942,
+        "routing_SWAP_count_move_and_restore": 1780,
+        "serial_nearest_neighbor_depth": 2257,
+        "two_M2_gate_count": 162
+      },
+      "schedule_sha256": "508a119d4e9b1f82b853ca2a25c516a0081d807398841e88ef877518594cd3d9",
+      "scratch_returns_clean_by_exact_inverse": true,
+      "shared_AND_work_M2": 1,
+      "valid_10_cubed_rows": 1000
+    },
+    "covariance_and_sizes": {
+      "all24_hop_table_covariance_failures": 0,
+      "all576_valid_and_invalid_word_group_failures": 0,
+      "frame_products": 576,
+      "proper_cubic_frames": 24,
+      "size_rows": [
+        {
+          "Cycle600_abstract_global_stream_map_retained": true,
+          "conditional_clean_scratch_M2_if_one_patch_per_cell": 135,
+          "crossed_link_base_gate_calls_if_serialized": 547884,
+          "crossed_link_direction_table_calls": 486,
+          "crossed_link_routing_SWAPS_if_serialized": 1458000,
+          "full_global_conflict_free_shift_schedule_compiled": false,
+          "length": 3,
+          "maximum_live_M2_with_reused_patch_scratch": 459,
+          "onsite_coin_base_gate_calls": 226800,
+          "onsite_coin_routing_SWAPS": 659016,
+          "onsite_contact_base_gate_calls": 12879,
+          "onsite_contact_routing_SWAPS": 48060,
+          "persistent_carrier_M2": 324,
+          "split": "train"
+        },
+        {
+          "Cycle600_abstract_global_stream_map_retained": true,
+          "conditional_clean_scratch_M2_if_one_patch_per_cell": 1080,
+          "crossed_link_base_gate_calls_if_serialized": 4383072,
+          "crossed_link_direction_table_calls": 3888,
+          "crossed_link_routing_SWAPS_if_serialized": 11664000,
+          "full_global_conflict_free_shift_schedule_compiled": false,
+          "length": 6,
+          "maximum_live_M2_with_reused_patch_scratch": 3672,
+          "onsite_coin_base_gate_calls": 1814400,
+          "onsite_coin_routing_SWAPS": 5272128,
+          "onsite_contact_base_gate_calls": 103032,
+          "onsite_contact_routing_SWAPS": 384480,
+          "persistent_carrier_M2": 2592,
+          "split": "held"
+        },
+        {
+          "Cycle600_abstract_global_stream_map_retained": true,
+          "conditional_clean_scratch_M2_if_one_patch_per_cell": 1715,
+          "crossed_link_base_gate_calls_if_serialized": 6960156,
+          "crossed_link_direction_table_calls": 6174,
+          "crossed_link_routing_SWAPS_if_serialized": 18522000,
+          "full_global_conflict_free_shift_schedule_compiled": false,
+          "length": 7,
+          "maximum_live_M2_with_reused_patch_scratch": 5831,
+          "onsite_coin_base_gate_calls": 2881200,
+          "onsite_coin_routing_SWAPS": 8371944,
+          "onsite_contact_base_gate_calls": 163611,
+          "onsite_contact_routing_SWAPS": 610540,
+          "persistent_carrier_M2": 4116,
+          "split": "held-out-size"
+        }
+      ]
+    },
+    "exact_accepted_finite_alphabet_elementary_closure": false,
+    "exact_support_two_parametric_event_compiler": true,
+    "gate_alphabet": {
+      "T_or_parametric_rotations_previously_accepted_by_Cycle580": false,
+      "analog_angles_are_inherited_calibration_not_derived": true,
+      "arbitrary_basis_two_level_gates_retained": false,
+      "arbitrary_multi_controlled_phases_retained": false,
+      "beta": -0.3,
+      "contact_coupling": 0.37,
+      "exact_finite_Cycle580_H_CNOT_CZ_SWAP_closure": false,
+      "executed_diagonal_T_power_grid_comparator": {
+        "exact_grid_matches": 0,
+        "minimum_nonzero_residual": 0.14872736371156664,
+        "rows": [
+          {
+            "angle": 0.15113521805829508,
+            "nearest_T_power": 0,
+            "nearest_k_pi_over_4": 0.0,
+            "unit_complex_residual": 0.15099141709769634
+          },
+          {
+            "angle": -2.990457435531498,
+            "nearest_T_power": -4,
+            "nearest_k_pi_over_4": -3.141592653589793,
+            "unit_complex_residual": 0.15099141709769626
+          },
+          {
+            "angle": -2.990457435531498,
+            "nearest_T_power": -4,
+            "nearest_k_pi_over_4": -3.141592653589793,
+            "unit_complex_residual": 0.15099141709769626
+          },
+          {
+            "angle": -0.1488647819417049,
+            "nearest_T_power": 0,
+            "nearest_k_pi_over_4": 0.0,
+            "unit_complex_residual": 0.14872736371156664
+          },
+          {
+            "angle": -0.1488647819417049,
+            "nearest_T_power": 0,
+            "nearest_k_pi_over_4": 0.0,
+            "unit_complex_residual": 0.14872736371156664
+          },
+          {
+            "angle": -0.1488647819417049,
+            "nearest_T_power": 0,
+            "nearest_k_pi_over_4": 0.0,
+            "unit_complex_residual": 0.14872736371156664
+          },
+          {
+            "angle": 0.37,
+            "nearest_T_power": 0,
+            "nearest_k_pi_over_4": 0.0,
+            "unit_complex_residual": 0.36789306705608243
+          }
+        ],
+        "scope": "nearest exact P(k*pi/4) for inherited eigen/contact phases only; not all Clifford+T words"
+      },
+      "fault_tolerant_approximation_compiled": false,
+      "fixed_discrete": [
+        "X",
+        "H",
+        "T",
+        "Tdg",
+        "CNOT",
+        "SWAP"
+      ],
+      "maximum_executed_gate_support_M2": 2,
+      "parameterized_one_M2": [
+        "RY(theta)",
+        "RZ(theta)",
+        "P(theta)"
+      ],
+      "parameterized_one_M2_gate_instances_onsite": 2709
+    },
+    "inherited_Cycle600_full_N3_compiler": true,
+    "local_gate_identities": {
+      "Toffoli_Clifford_T_residual": 7.346882794269506e-16,
+      "controlled_contact_phase_residual": 0.0
+    },
+    "pass_as_scoped_route": true,
+    "pass_full_requested_elementary_and_global_layout_target": false,
+    "scratch_and_schedule": {
+      "clean_scratch_initialization_and_renewal_supplied": true,
+      "global_conflict_free_stream_schedule_compiled": false,
+      "maximum_live_if_scratch_allocated_per_cell": 17,
+      "maximum_reused_clean_scratch_M2_per_active_patch": 5,
+      "move_apply_restore_routing_schedule_supplied": true,
+      "persistent_Cycle600_carrier_M2_per_cell": 12,
+      "schedule_is_physical_time": false
+    },
+    "status": "exact support-two parametric one-M2-rotation compiler for onsite coin/contact and each crossed-link word transposition; finite Cycle580 alphabet and conflict-free global shift schedule remain open",
+    "stream_direction_tables": [
+      {
+        "C7X_basis_edge_transpositions": 3,
+        "C7X_clean_scratch_truth_failures": 0,
+        "C7X_clean_scratch_truth_rows": 768,
+        "delete_one_Gray_edge_permutation_differences": 2,
+        "direction": 0,
+        "endpoint_hamming_distance": 2,
+        "gate_counts": {
+          "CNOT": 198,
+          "H": 66,
+          "T": 117,
+          "Tdg": 114,
+          "X": 42
+        },
+        "inverse_permutation_failures": 0,
+        "permutation_failures": 0,
+        "routing": {
+          "all24_rotated_line_edge_failures": 0,
+          "all24_rotated_line_injection_failures": 0,
+          "all_two_M2_instances_after_move_apply_restore_are_NN": true,
+          "base_gate_count": 537,
+          "base_pair_or_range_failures": 0,
+          "line_sites": 13,
+          "literal_coordinates": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0
+            ],
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              7,
+              0,
+              0
+            ],
+            [
+              8,
+              0,
+              0
+            ],
+            [
+              9,
+              0,
+              0
+            ],
+            [
+              10,
+              0,
+              0
+            ],
+            [
+              11,
+              0,
+              0
+            ],
+            [
+              12,
+              0,
+              0
+            ]
+          ],
+          "literal_routed_edge_checks": 1618,
+          "literal_routed_edge_failures": 0,
+          "maximum_pre_route_pair_distance": 11,
+          "one_M2_gate_count": 339,
+          "routed_two_site_instances_including_SWAPS": 1618,
+          "routing_SWAP_count_move_and_restore": 1420,
+          "serial_nearest_neighbor_depth": 1957,
+          "two_M2_gate_count": 198
+        },
+        "schedule_sha256": "8b1afced5ebcffedb601d04362638ab149e4b9149f48d1cea31c58ab661c8398",
+        "word_label": 4
+      },
+      {
+        "C7X_basis_edge_transpositions": 7,
+        "C7X_clean_scratch_truth_failures": 0,
+        "C7X_clean_scratch_truth_rows": 1792,
+        "delete_one_Gray_edge_permutation_differences": 2,
+        "direction": 1,
+        "endpoint_hamming_distance": 4,
+        "gate_counts": {
+          "CNOT": 462,
+          "H": 154,
+          "T": 273,
+          "Tdg": 266,
+          "X": 92
+        },
+        "inverse_permutation_failures": 0,
+        "permutation_failures": 0,
+        "routing": {
+          "all24_rotated_line_edge_failures": 0,
+          "all24_rotated_line_injection_failures": 0,
+          "all_two_M2_instances_after_move_apply_restore_are_NN": true,
+          "base_gate_count": 1247,
+          "base_pair_or_range_failures": 0,
+          "line_sites": 13,
+          "literal_coordinates": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0
+            ],
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              7,
+              0,
+              0
+            ],
+            [
+              8,
+              0,
+              0
+            ],
+            [
+              9,
+              0,
+              0
+            ],
+            [
+              10,
+              0,
+              0
+            ],
+            [
+              11,
+              0,
+              0
+            ],
+            [
+              12,
+              0,
+              0
+            ]
+          ],
+          "literal_routed_edge_checks": 3794,
+          "literal_routed_edge_failures": 0,
+          "maximum_pre_route_pair_distance": 11,
+          "one_M2_gate_count": 785,
+          "routed_two_site_instances_including_SWAPS": 3794,
+          "routing_SWAP_count_move_and_restore": 3332,
+          "serial_nearest_neighbor_depth": 4579,
+          "two_M2_gate_count": 462
+        },
+        "schedule_sha256": "e30b0fbf0c28d7772b92fa42e750434c1f152efdd41aa7c1703a850911e0d7b6",
+        "word_label": 5
+      },
+      {
+        "C7X_basis_edge_transpositions": 7,
+        "C7X_clean_scratch_truth_failures": 0,
+        "C7X_clean_scratch_truth_rows": 1792,
+        "delete_one_Gray_edge_permutation_differences": 2,
+        "direction": 2,
+        "endpoint_hamming_distance": 4,
+        "gate_counts": {
+          "CNOT": 462,
+          "H": 154,
+          "T": 273,
+          "Tdg": 266,
+          "X": 92
+        },
+        "inverse_permutation_failures": 0,
+        "permutation_failures": 0,
+        "routing": {
+          "all24_rotated_line_edge_failures": 0,
+          "all24_rotated_line_injection_failures": 0,
+          "all_two_M2_instances_after_move_apply_restore_are_NN": true,
+          "base_gate_count": 1247,
+          "base_pair_or_range_failures": 0,
+          "line_sites": 13,
+          "literal_coordinates": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0
+            ],
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              7,
+              0,
+              0
+            ],
+            [
+              8,
+              0,
+              0
+            ],
+            [
+              9,
+              0,
+              0
+            ],
+            [
+              10,
+              0,
+              0
+            ],
+            [
+              11,
+              0,
+              0
+            ],
+            [
+              12,
+              0,
+              0
+            ]
+          ],
+          "literal_routed_edge_checks": 3778,
+          "literal_routed_edge_failures": 0,
+          "maximum_pre_route_pair_distance": 11,
+          "one_M2_gate_count": 785,
+          "routed_two_site_instances_including_SWAPS": 3778,
+          "routing_SWAP_count_move_and_restore": 3316,
+          "serial_nearest_neighbor_depth": 4563,
+          "two_M2_gate_count": 462
+        },
+        "schedule_sha256": "0338dc48f9df7452ff591635609ab73cd021bad8b731d9015351cfb6cd916b7e",
+        "word_label": 6
+      },
+      {
+        "C7X_basis_edge_transpositions": 11,
+        "C7X_clean_scratch_truth_failures": 0,
+        "C7X_clean_scratch_truth_rows": 2816,
+        "delete_one_Gray_edge_permutation_differences": 2,
+        "direction": 3,
+        "endpoint_hamming_distance": 6,
+        "gate_counts": {
+          "CNOT": 726,
+          "H": 242,
+          "T": 429,
+          "Tdg": 418,
+          "X": 134
+        },
+        "inverse_permutation_failures": 0,
+        "permutation_failures": 0,
+        "routing": {
+          "all24_rotated_line_edge_failures": 0,
+          "all24_rotated_line_injection_failures": 0,
+          "all_two_M2_instances_after_move_apply_restore_are_NN": true,
+          "base_gate_count": 1949,
+          "base_pair_or_range_failures": 0,
+          "line_sites": 13,
+          "literal_coordinates": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0
+            ],
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              7,
+              0,
+              0
+            ],
+            [
+              8,
+              0,
+              0
+            ],
+            [
+              9,
+              0,
+              0
+            ],
+            [
+              10,
+              0,
+              0
+            ],
+            [
+              11,
+              0,
+              0
+            ],
+            [
+              12,
+              0,
+              0
+            ]
+          ],
+          "literal_routed_edge_checks": 5962,
+          "literal_routed_edge_failures": 0,
+          "maximum_pre_route_pair_distance": 11,
+          "one_M2_gate_count": 1223,
+          "routed_two_site_instances_including_SWAPS": 5962,
+          "routing_SWAP_count_move_and_restore": 5236,
+          "serial_nearest_neighbor_depth": 7185,
+          "two_M2_gate_count": 726
+        },
+        "schedule_sha256": "17efd7a15548ba10955ee5524d185c22989c840c8bf03b6f4801d4c6a5122dba",
+        "word_label": 7
+      },
+      {
+        "C7X_basis_edge_transpositions": 3,
+        "C7X_clean_scratch_truth_failures": 0,
+        "C7X_clean_scratch_truth_rows": 768,
+        "delete_one_Gray_edge_permutation_differences": 2,
+        "direction": 4,
+        "endpoint_hamming_distance": 2,
+        "gate_counts": {
+          "CNOT": 198,
+          "H": 66,
+          "T": 117,
+          "Tdg": 114,
+          "X": 42
+        },
+        "inverse_permutation_failures": 0,
+        "permutation_failures": 0,
+        "routing": {
+          "all24_rotated_line_edge_failures": 0,
+          "all24_rotated_line_injection_failures": 0,
+          "all_two_M2_instances_after_move_apply_restore_are_NN": true,
+          "base_gate_count": 537,
+          "base_pair_or_range_failures": 0,
+          "line_sites": 13,
+          "literal_coordinates": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0
+            ],
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              7,
+              0,
+              0
+            ],
+            [
+              8,
+              0,
+              0
+            ],
+            [
+              9,
+              0,
+              0
+            ],
+            [
+              10,
+              0,
+              0
+            ],
+            [
+              11,
+              0,
+              0
+            ],
+            [
+              12,
+              0,
+              0
+            ]
+          ],
+          "literal_routed_edge_checks": 1594,
+          "literal_routed_edge_failures": 0,
+          "maximum_pre_route_pair_distance": 12,
+          "one_M2_gate_count": 339,
+          "routed_two_site_instances_including_SWAPS": 1594,
+          "routing_SWAP_count_move_and_restore": 1396,
+          "serial_nearest_neighbor_depth": 1933,
+          "two_M2_gate_count": 198
+        },
+        "schedule_sha256": "0ac1c1dc65c8ee1d2359d8c5059b6cf42faf701847def3cc8a79437d9e9b7a89",
+        "word_label": 8
+      },
+      {
+        "C7X_basis_edge_transpositions": 7,
+        "C7X_clean_scratch_truth_failures": 0,
+        "C7X_clean_scratch_truth_rows": 1792,
+        "delete_one_Gray_edge_permutation_differences": 2,
+        "direction": 5,
+        "endpoint_hamming_distance": 4,
+        "gate_counts": {
+          "CNOT": 462,
+          "H": 154,
+          "T": 273,
+          "Tdg": 266,
+          "X": 92
+        },
+        "inverse_permutation_failures": 0,
+        "permutation_failures": 0,
+        "routing": {
+          "all24_rotated_line_edge_failures": 0,
+          "all24_rotated_line_injection_failures": 0,
+          "all_two_M2_instances_after_move_apply_restore_are_NN": true,
+          "base_gate_count": 1247,
+          "base_pair_or_range_failures": 0,
+          "line_sites": 13,
+          "literal_coordinates": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0
+            ],
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              7,
+              0,
+              0
+            ],
+            [
+              8,
+              0,
+              0
+            ],
+            [
+              9,
+              0,
+              0
+            ],
+            [
+              10,
+              0,
+              0
+            ],
+            [
+              11,
+              0,
+              0
+            ],
+            [
+              12,
+              0,
+              0
+            ]
+          ],
+          "literal_routed_edge_checks": 3762,
+          "literal_routed_edge_failures": 0,
+          "maximum_pre_route_pair_distance": 12,
+          "one_M2_gate_count": 785,
+          "routed_two_site_instances_including_SWAPS": 3762,
+          "routing_SWAP_count_move_and_restore": 3300,
+          "serial_nearest_neighbor_depth": 4547,
+          "two_M2_gate_count": 462
+        },
+        "schedule_sha256": "91093113e9306ebd506c110b1afb2315b0326dded0792652dfdb566dfabe82c3",
+        "word_label": 9
+      }
+    ],
+    "word_coin": {
+      "basis_phase_count_including_qutrit_signs": 6,
+      "clean_scratch_return_leakage": 2.890151575626252e-15,
+      "coin_eigenphases_radians": [
+        0.15113521805829508,
+        -2.990457435531498,
+        -2.990457435531498,
+        -0.1488647819417049,
+        -0.1488647819417049,
+        -0.1488647819417049
+      ],
+      "coin_symmetry_pair_H_offblock_residual": 1.731958809481102e-16,
+      "compiled_full16_residual": 8.619648052454238e-14,
+      "compiled_inverse_residual": 1.6885415039396943e-13,
+      "delete_one_elementary_gate_index": 1400,
+      "delete_one_elementary_gate_output_residual": 5.6568542494922625,
+      "even_qutrit_offdiagonal_residual": 9.055501409323786e-17,
+      "literal_onsite_line_layout": {
+        "all24_rotated_line_edge_failures": 0,
+        "all24_rotated_line_injection_failures": 0,
+        "all_two_M2_instances_after_move_apply_restore_are_NN": true,
+        "base_gate_count": 8400,
+        "base_pair_or_range_failures": 0,
+        "line_sites": 16,
+        "literal_coordinates": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            0
+          ],
+          [
+            9,
+            0,
+            0
+          ],
+          [
+            10,
+            0,
+            0
+          ],
+          [
+            11,
+            0,
+            0
+          ],
+          [
+            12,
+            0,
+            0
+          ],
+          [
+            13,
+            0,
+            0
+          ],
+          [
+            14,
+            0,
+            0
+          ],
+          [
+            15,
+            0,
+            0
+          ]
+        ],
+        "literal_routed_edge_checks": 27288,
+        "literal_routed_edge_failures": 0,
+        "maximum_pre_route_pair_distance": 12,
+        "one_M2_gate_count": 5520,
+        "routed_two_site_instances_including_SWAPS": 27288,
+        "routing_SWAP_count_move_and_restore": 24408,
+        "serial_nearest_neighbor_depth": 32808,
+        "two_M2_gate_count": 2880
+      },
+      "odd_sector_scalar_residual": 4.8074067159589095e-17,
+      "one_species_gate_count": 2800,
+      "one_species_gate_counts": {
+        "CNOT": 960,
+        "H": 192,
+        "P(theta)": 144,
+        "RY(theta)": 288,
+        "RZ(theta)": 432,
+        "T": 336,
+        "Tdg": 336,
+        "X": 112
+      },
+      "one_species_schedule_sha256": "5d93fda19843aa939c49dad5896226a87ac3be57a346e5b64380b60038db1922",
+      "pair_selective_H_count": 6,
+      "qutrit_two_level_factor_count_both_directions": 6,
+      "structured_coin_full16_residual": 9.824356424874167e-16,
+      "structured_coin_invalid_word_identity_residual": 0.0,
+      "structured_high_level_gate_count": 18,
+      "three_species_gate_counts": {
+        "CNOT": 2880,
+        "H": 576,
+        "P(theta)": 432,
+        "RY(theta)": 864,
+        "RZ(theta)": 1296,
+        "T": 1008,
+        "Tdg": 1008,
+        "X": 336
+      },
+      "three_species_schedule_sha256": "29fe5f17780d11facb16015a9bbcd87988844ecfbaa89805e5944b42bb21eaf8"
+    }
+  },
+  "route_B_W_parent_Hamiltonian": {
+    "N1_sector_supplied": true,
+    "N2_Dicke_is_global_ground_competitor": true,
+    "chemical_potential_or_number_penalty_constructed": false,
+    "gap_scaling": "Delta_L=4 sin^2(pi/L), hence Delta_L~4 pi^2/L^2",
+    "local_support_M2": 2,
+    "local_term": "h_xy=I-SWAP_xy; in N=1 this is (|x>-|y>)(<x|-<y|)",
+    "pass_as_sector_parent": true,
+    "pass_global_genesis": false,
+    "preparation_dynamics_constructed": false,
+    "proper_cubic_covariant": true,
+    "rows": [
+      {
+        "N1_gap": 2.999999999999997,
+        "N1_zero_eigenvalue_multiplicity": 1,
+        "all24_edge_failures": 0,
+        "all576_group_failures_on_42_sites": 0,
+        "analytic_gap_4sin2_pi_over_L": 2.9999999999999996,
+        "delete_one_edge_N1_gap": 2.6277186767309852,
+        "delete_one_edge_W_residual": 5.4672143489065705e-16,
+        "delete_one_edge_operator_Frobenius_residual": 2.0,
+        "fixed_number_ground_dimensions_N0_N1_N2_NV": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "frame_products": 576,
+        "full_Hilbert_common_swap_ground_dimension": 28,
+        "gap_formula_residual": 2.6645352591003757e-15,
+        "gap_times_L_squared": 26.99999999999997,
+        "length": 3,
+        "local_edge_terms": 81,
+        "proper_cubic_frames": 24,
+        "remote_localized_two_excitation_basis_energy": 12,
+        "split": "train",
+        "translation_edge_failures": 0,
+        "translations_tested": 27,
+        "uniform_N2_Dicke_edge_antisymmetric_residual": 0,
+        "uniform_N2_Dicke_parent_energy": 0,
+        "uniform_W_norm_residual": 0.0,
+        "uniform_W_parent_residual": 6.280369834735101e-16,
+        "vacuum_energy": 0,
+        "volume": 27
+      },
+      {
+        "N1_gap": 0.9999999999999943,
+        "N1_zero_eigenvalue_multiplicity": 1,
+        "all24_edge_failures": 0,
+        "all576_group_failures_on_42_sites": 0,
+        "analytic_gap_4sin2_pi_over_L": 0.9999999999999998,
+        "delete_one_edge_N1_gap": 0.9844071983830566,
+        "delete_one_edge_W_residual": 0.0,
+        "delete_one_edge_operator_Frobenius_residual": 2.0,
+        "fixed_number_ground_dimensions_N0_N1_N2_NV": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "frame_products": 576,
+        "full_Hilbert_common_swap_ground_dimension": 217,
+        "gap_formula_residual": 5.440092820663267e-15,
+        "gap_times_L_squared": 35.999999999999794,
+        "length": 6,
+        "local_edge_terms": 648,
+        "proper_cubic_frames": 24,
+        "remote_localized_two_excitation_basis_energy": 12,
+        "split": "held",
+        "translation_edge_failures": 0,
+        "translations_tested": 216,
+        "uniform_N2_Dicke_edge_antisymmetric_residual": 0,
+        "uniform_N2_Dicke_parent_energy": 0,
+        "uniform_W_norm_residual": 6.661338147750939e-16,
+        "uniform_W_parent_residual": 0.0,
+        "vacuum_energy": 0,
+        "volume": 216
+      },
+      {
+        "N1_gap": 0.7530203962825273,
+        "N1_zero_eigenvalue_multiplicity": 1,
+        "all24_edge_failures": 0,
+        "all576_group_failures_on_42_sites": 0,
+        "analytic_gap_4sin2_pi_over_L": 0.7530203962825329,
+        "delete_one_edge_N1_gap": 0.7458212216071513,
+        "delete_one_edge_W_residual": 1.442222014787673e-16,
+        "delete_one_edge_operator_Frobenius_residual": 2.0,
+        "fixed_number_ground_dimensions_N0_N1_N2_NV": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "frame_products": 576,
+        "full_Hilbert_common_swap_ground_dimension": 344,
+        "gap_formula_residual": 5.662137425588298e-15,
+        "gap_times_L_squared": 36.897999417843835,
+        "length": 7,
+        "local_edge_terms": 1029,
+        "proper_cubic_frames": 24,
+        "remote_localized_two_excitation_basis_energy": 12,
+        "split": "held-out-size",
+        "translation_edge_failures": 0,
+        "translations_tested": 343,
+        "uniform_N2_Dicke_edge_antisymmetric_residual": 0,
+        "uniform_N2_Dicke_parent_energy": 0,
+        "uniform_W_norm_residual": 0.0,
+        "uniform_W_parent_residual": 1.415262216750919e-16,
+        "vacuum_energy": 0,
+        "volume": 343
+      }
+    ],
+    "status": "exact cubic ferromagnetic-swap parent: W is unique and gapped only within supplied N=1; vacuum and every symmetric Dicke sector are also zero-energy",
+    "translation_invariant": true,
+    "unique_global_genesis": false,
+    "vacuum_is_global_ground_competitor": true
+  },
+  "route_C_dark_jump_sector_selector": {
+    "JdaggerJ_minus_projector_residual": 2.220446049250313e-16,
+    "Lindblad_rate_or_physical_clock_derived": false,
+    "complete_semigroup_unique_stationary_state_proved": false,
+    "declared_input_sector": "exactly one excitation shared by bound/neutral carrier modes",
+    "excitation_number_conserved": true,
+    "finite_scheduled_Kraus_compiler_executed": false,
+    "jump": "J_xy=|psi+><psi-| on each unoriented cubic edge; orientation reversal changes only its global sign",
+    "jump_support_M2": 2,
+    "pass_as_dark_sector_candidate": true,
+    "pass_unique_genesis_or_preparation": false,
+    "prepares_or_enforces_N1_from_vacuum": false,
+    "remote_N2_competitor_excluded": false,
+    "rows": [
+      {
+        "all24_jump_ray_covariance_failures": 0,
+        "all576_group_failures": 0,
+        "analytic_dark_gap_2sin2_pi_over_L": 1.4999999999999998,
+        "common_dark_N1_dimension": 1,
+        "common_dark_dimension_across_all_number_sectors": 28,
+        "common_dark_dimensions_N0_N1_N2_NV": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "dark_gap_formula_residual": 1.3322676295501878e-15,
+        "dark_parent_gap": 1.4999999999999984,
+        "delete_six_incident_jumps_common_dark_dimension": 2,
+        "jump_instances": 81,
+        "length": 3,
+        "split": "train",
+        "translation_failures": 0,
+        "uniform_N2_Dicke_common_dark": true,
+        "uniform_W_jump_residual": 3.1401849173675503e-16,
+        "vacuum_common_dark": true
+      },
+      {
+        "all24_jump_ray_covariance_failures": 0,
+        "all576_group_failures": 0,
+        "analytic_dark_gap_2sin2_pi_over_L": 0.4999999999999999,
+        "common_dark_N1_dimension": 1,
+        "common_dark_dimension_across_all_number_sectors": 217,
+        "common_dark_dimensions_N0_N1_N2_NV": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "dark_gap_formula_residual": 2.7200464103316335e-15,
+        "dark_parent_gap": 0.49999999999999717,
+        "delete_six_incident_jumps_common_dark_dimension": 2,
+        "jump_instances": 648,
+        "length": 6,
+        "split": "held",
+        "translation_failures": 0,
+        "uniform_N2_Dicke_common_dark": true,
+        "uniform_W_jump_residual": 0.0,
+        "vacuum_common_dark": true
+      },
+      {
+        "all24_jump_ray_covariance_failures": 0,
+        "all576_group_failures": 0,
+        "analytic_dark_gap_2sin2_pi_over_L": 0.37651019814126646,
+        "common_dark_N1_dimension": 1,
+        "common_dark_dimension_across_all_number_sectors": 344,
+        "common_dark_dimensions_N0_N1_N2_NV": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "dark_gap_formula_residual": 2.831068712794149e-15,
+        "dark_parent_gap": 0.37651019814126363,
+        "delete_six_incident_jumps_common_dark_dimension": 2,
+        "jump_instances": 1029,
+        "length": 7,
+        "split": "held-out-size",
+        "translation_failures": 0,
+        "uniform_N2_Dicke_common_dark": true,
+        "uniform_W_jump_residual": 7.076311083754595e-17,
+        "vacuum_common_dark": true
+      }
+    ],
+    "static_parent_common_kernel_certified": true,
+    "status": "local excitation-conserving jump family has W as the unique common dark vector within N=1; semigroup convergence and sector genesis are not certified",
+    "vacuum_genesis": false
+  },
+  "route_disposition": {
+    "A": "scoped pass: exact parametric event compiler; finite Cycle580 alphabet, scratch renewal, and one simultaneous global stream schedule remain open",
+    "B": "pass as sector parent: W unique/gapped within N=1; vacuum and N2 Dicke prevent global genesis",
+    "C": "pass as dark-kernel candidate: local W common-dark ray; convergence/rate and sector genesis unproved"
+  },
+  "runner_sha256": "2935a840aab56d1b7525365537d2aa450028552418d3f290b22b761f709c29b7",
+  "shared_obstruction_or_axiom_pressure": false,
+  "shore": {
+    "accepted_cycle600": "a300290fb2361c4b0a2eef7da3ab27a70b9abc69",
+    "accepted_full_N3_compiler": true
+  },
+  "status": "cycle603-carrier-preparation-elementary-synthesis-tournament",
+  "strongest_constructive_result": "an exact full-space support-two circuit over explicit fixed gates plus parameterized one-M2 RY/RZ/P rotations compiles the structured Cycle600 onsite coin/contact and every crossed-link valid-word transposition on literal bounded NN event patches; separately, a local cubic parent makes W unique and gapped within N=1",
+  "tests_failed": 0,
+  "tests_passed": 7
+}

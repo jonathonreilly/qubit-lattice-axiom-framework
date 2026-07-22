@@ -1,0 +1,870 @@
+PASS Route A exactly queries and copies the Cycle577 grade distribution while retaining every coherent sector and supplied-copy import :: {'route': 'A coherent Cycle577-projector/Cycle580-pointer query', 'complete_Cycle580_instrument_residual': 4.440926982597988e-16, 'complete_Cycle580_inverse_residual': 8.906865629316332e-16, 'query_elementary_gates': 9, 'copy_CNOTs': 3, 'physical_M2_per_query_copy': 18, 'supplied_identically_prepared_query_copies': 4, 'physical_M2_per_four_query_batch': 72, 'maximum_projector_formula_residual': 2.220446049250313e-16, 'maximum_query_distribution_residual': 4.440892098500626e-16, 'maximum_copied_label_distribution_residual': 4.440892098500626e-16, 'maximum_exact_inverse_residual': 4.446523297499064e-16, 'maximum_boundary_dual_rail_leakage': 0.0, 'four_query_sector_ledger_residual': 1.7985612998927536e-14, 'active_query_gate_deletion_fixture_L1': 1.4999999999999996, 'active_copy_gate_deletion_fixture_L1': 1.4999999999999998, 'all_retained_sectors': True, 'coherent_grade_register_is_objective_probability': False, 'state_copy_preparation_or_no_cloning_derived': False, 'proper_cubic_frames': 24, 'all24_query_copy_edge_tests': 240, 'all24_query_copy_edge_failures': 0, 'rows': [{'name': 'train_uniform', 'split': 'train', 'exact_grade': (0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125), 'nonzero_single_query_sectors': 8, 'retained_four_query_tuple_sectors': 4096, 'maximum_single_component_empirical_variance': 0.02734375, 'numeric_grade_word_or_objective_sector_derived': False}, {'name': 'train_basis_corner', 'split': 'train', 'exact_grade': (1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0), 'nonzero_single_query_sectors': 1, 'retained_four_query_tuple_sectors': 1, 'maximum_single_component_empirical_variance': 0.0, 'numeric_grade_word_or_objective_sector_derived': False}, {'name': 'train_asymmetric', 'split': 'train', 'exact_grade': (0.09375, 0.09375, 0.03125, 0.03125, 0.28125, 0.28125, 0.09375, 0.09375), 'nonzero_single_query_sectors': 8, 'retained_four_query_tuple_sectors': 4096, 'maximum_single_component_empirical_variance': 0.050537109375, 'numeric_grade_word_or_objective_sector_derived': False}, {'name': 'held_offgrid_7over11_4over9_5over13', 'split': 'held', 'exact_grade': (0.10878010878010878, 0.17404817404817405, 0.06216006216006216, 0.09945609945609946, 0.13597513597513597, 0.21756021756021757, 0.0777000777000777, 0.12432012432012432), 'nonzero_single_query_sectors': 8, 'retained_four_query_tuple_sectors': 4096, 'maximum_single_component_empirical_variance': 0.04255694232384209, 'numeric_grade_word_or_objective_sector_derived': False}, {'name': 'held_offgrid_11over17_13over19_17over23', 'split': 'held', 'exact_grade': (0.32723112128146453, 0.11549333692286984, 0.17848970251716248, 0.06299636559429264, 0.15102974828375287, 0.05330461704132454, 0.08237986270022883, 0.029075245658904295), 'nonzero_single_query_sectors': 8, 'retained_four_query_tuple_sectors': 4096, 'maximum_single_component_empirical_variance': 0.055037728636585, 'numeric_grade_word_or_objective_sector_derived': False}], 'pass': True}
+PASS Route B uses one reversible fixed-point product rule over all 125 parameter words with no program selector or answer ROM :: {'route': 'B reversible unary fixed-point product-family synthesizer', 'parameter_fraction_bits': 2, 'transition_bits': 6, 'physical_M2': 525, 'logical_gate_count': 3072, 'exhaustive_parameter_words': 125, 'exhaustive_mask_failures': 0, 'inverse_failures': 0, 'binary_code_failures': 0, 'maximum_projector_formula_residual': 2.220446049250313e-16, 'maximum_exact_quantized_product_synthesis_residual': 0.0, 'maximum_approximation_bound_violation': 0.0, 'parameter_bit_deletion_L1': 0.5, 'absent_parameter_word_refusals': 1, 'Cycle592_answer_table_reads': 0, 'program_selector_M2': 0, 'state_specific_answer_rows': 0, 'static_nearest_neighbor_compiler': {'line_M2': 525, 'logical_Toffoli': 1536, 'literal_one_M2_primitives': 15360, 'literal_two_M2_core_primitives': 9216, 'adjacent_route_and_return_SWAPS': 1128448, 'nearest_neighbor_two_M2_calls': 1137664, 'maximum_unrouted_operand_distance': 513, 'route_adjacency_failures': 0, 'ordered_operand_failures': 0, 'terminal_wire_restoration_failures': 0, 'route_manifest_sha256': 'cee60ebbb81be5bb48945d3e84d301d08237e11af9e57ee438e1d997cd20436d', 'proper_cubic_frames': 24, 'all24_line_edge_tests': 12576, 'all24_line_edge_failures': 0, 'runtime_data_selects_route': False, 'pass': True}, 'rows': [{'name': 'train_uniform', 'split': 'train', 'parameters': ('1/2', '1/2', '1/2'), 'quantized_parameters': ('1/2', '1/2', '1/2'), 'denominator64_counts': (8, 8, 8, 8, 8, 8, 8, 8), 'target_to_synthesized_L1': 0.0, 'product_parameter_L1_bound': 0.0}, {'name': 'train_basis_corner', 'split': 'train', 'parameters': ('1', '1', '1'), 'quantized_parameters': ('1', '1', '1'), 'denominator64_counts': (64, 0, 0, 0, 0, 0, 0, 0), 'target_to_synthesized_L1': 0.0, 'product_parameter_L1_bound': 0.0}, {'name': 'train_asymmetric', 'split': 'train', 'parameters': ('3/4', '1/4', '1/2'), 'quantized_parameters': ('3/4', '1/4', '1/2'), 'denominator64_counts': (6, 6, 2, 2, 18, 18, 6, 6), 'target_to_synthesized_L1': 0.0, 'product_parameter_L1_bound': 0.0}, {'name': 'held_offgrid_7over11_4over9_5over13', 'split': 'held', 'parameters': ('7/11', '4/9', '5/13'), 'quantized_parameters': ('3/4', '1/2', '1/2'), 'denominator64_counts': (12, 12, 4, 4, 12, 12, 4, 4), 'target_to_synthesized_L1': 0.2880730380730381, 'product_parameter_L1_bound': 0.5691530691530692}, {'name': 'held_offgrid_11over17_13over19_17over23', 'split': 'held', 'parameters': ('11/17', '13/19', '17/23'), 'quantized_parameters': ('3/4', '3/4', '3/4'), 'denominator64_counts': (27, 9, 9, 3, 9, 3, 3, 1), 'target_to_synthesized_L1': 0.2395510835913313, 'product_parameter_L1_bound': 0.35920043074438013}], 'pass': True}
+PASS Route C deterministically consumes the derived grade mask with an exhaustive discrepancy certificate and explicit approximation/resource budget :: {'route': 'C deterministic +25 low-discrepancy physical rotor', 'physical_M2_per_occurrence_fixture': 1168, 'rotor_increment': 25, 'rotor_genesis': 9, 'rotor_period': 64, 'exhaustive_grade_words': 125, 'exhaustive_prefixes_per_word': 64, 'rotor_maximum_per_history_count_discrepancy': '67/32', 'natural_order_comparator_discrepancy': '16', 'EG_failures': 0, 'inverse_failures': 0, 'grade_mask_ledger_failures': 0, 'unchanged_Cycle552_interface_failures': 0, 'maximum_error_budget_violation': 0.0, 'active_select_deletion_residual': 1.4142135623730951, 'active_rotor_edge_deletion_residual': 1.4142135623730951, 'deleted_grade_word_refusals': 1, 'absent_grade_word_refusals': 1, 'host_sampler_or_answer_table_tokens': 0, 'carrier_and_grade_mask_catalytically_retained': True, 'fresh_blank_archive_M2_per_occurrence': 8, 'archive_packet_renewal_derived': False, 'rotor_frequency_promoted_to_Born': False, 'static_nearest_neighbor_compiler': {'line_M2': 1168, 'logical_Toffoli': 1024, 'literal_one_M2_primitives': 9216, 'literal_two_M2_core_primitives': 7304, 'adjacent_route_and_return_SWAPS': 7612272, 'nearest_neighbor_two_M2_calls': 7619576, 'maximum_unrouted_operand_distance': 1088, 'route_adjacency_failures': 0, 'ordered_operand_failures': 0, 'terminal_wire_restoration_failures': 0, 'route_manifest_sha256': '7d1935645a672d54518e407bf79a1a1237b61950ca25239e14fa7570af1fcf32', 'proper_cubic_frames': 24, 'all24_line_edge_tests': 28008, 'all24_line_edge_failures': 0, 'runtime_data_selects_route': False, 'pass': True}, 'rows': [{'name': 'train_uniform', 'split': 'train', 'corpus_size': 128, 'denominator64_grade': (0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125), 'finite_rotor_frequency': (0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125), 'rotor_to_grade_L1': 0.0, 'grade_approximation_L1': 0.0, 'frequency_to_target_L1': 0.0, 'parameter_approximation_bound': 0.0, 'rotor_discrepancy_bound': 0.130859375, 'combined_L1_bound': 0.130859375}, {'name': 'train_basis_corner', 'split': 'train', 'corpus_size': 96, 'denominator64_grade': (1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0), 'finite_rotor_frequency': (1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0), 'rotor_to_grade_L1': 0.0, 'grade_approximation_L1': 0.0, 'frequency_to_target_L1': 0.0, 'parameter_approximation_bound': 0.0, 'rotor_discrepancy_bound': 0.17447916666666666, 'combined_L1_bound': 0.17447916666666666}, {'name': 'train_asymmetric', 'split': 'train', 'corpus_size': 160, 'denominator64_grade': (0.09375, 0.09375, 0.03125, 0.03125, 0.28125, 0.28125, 0.09375, 0.09375), 'finite_rotor_frequency': (0.1, 0.09375, 0.025, 0.03125, 0.28125, 0.28125, 0.09375, 0.09375), 'rotor_to_grade_L1': 0.012500000000000004, 'grade_approximation_L1': 0.0, 'frequency_to_target_L1': 0.012500000000000004, 'parameter_approximation_bound': 0.0, 'rotor_discrepancy_bound': 0.1046875, 'combined_L1_bound': 0.1046875}, {'name': 'held_offgrid_7over11_4over9_5over13', 'split': 'held', 'corpus_size': 137, 'denominator64_grade': (0.1875, 0.1875, 0.0625, 0.0625, 0.1875, 0.1875, 0.0625, 0.0625), 'finite_rotor_frequency': (0.1897810218978102, 0.1897810218978102, 0.058394160583941604, 0.058394160583941604, 0.1897810218978102, 0.18248175182481752, 0.06569343065693431, 0.06569343065693431), 'rotor_to_grade_L1': 0.02645985401459852, 'grade_approximation_L1': 0.2880730380730381, 'frequency_to_target_L1': 0.3010792937800237, 'parameter_approximation_bound': 0.5691530691530692, 'rotor_discrepancy_bound': 0.12226277372262774, 'combined_L1_bound': 0.6914158428756969}, {'name': 'held_offgrid_11over17_13over19_17over23', 'split': 'held', 'corpus_size': 211, 'denominator64_grade': (0.421875, 0.140625, 0.140625, 0.046875, 0.140625, 0.046875, 0.046875, 0.015625), 'finite_rotor_frequency': (0.4218009478672986, 0.14218009478672985, 0.14218009478672985, 0.04739336492890995, 0.14218009478672985, 0.04739336492890995, 0.04265402843601896, 0.014218009478672985), 'rotor_to_grade_L1': 0.011404028436018914, 'grade_approximation_L1': 0.2395510835913313, 'frequency_to_target_L1': 0.2425131688993882, 'parameter_approximation_bound': 0.35920043074438013, 'rotor_discrepancy_bound': 0.07938388625592417, 'combined_L1_bound': 0.4385843170003043}], 'pass': True}
+PASS all24/all576 conditional-occurrence covariance and malformed-domain controls remain exact :: {'proper_cubic_frames': 24, 'all24_member_tests': 96, 'all24_member_failures': 0, 'all576_axis_tests': 1728, 'all576_axis_failures': 0, 'malformed_domain_refusals': 6, 'malformed_domain_total': 6, 'pass': True}
+PASS exact shores, rule-before-held freeze, inventory, and full N1-N8 prevent state-family and Born overclaim :: {'expected': {'Cycle595 runner': 'cdfcddb00974205faa8bc60c617ff0dd42bf9f8947b0a55a4b172157b2d28de2', 'Cycle595 note': 'b1b1fc0960f69abcf9050b7eee2f3387188d45ea7704ca2db87381cd5fd3b730', 'Cycle592 runner': 'ab565af6aa59e66cea7b1ce625c08f8a88235ae9f7415e5e7d89d63af34ce9ce', 'Cycle592 note': 'dccf62d6126287b20cbf96ff410534adfa1746d9cf3aba94fbfb2893855be212', 'Cycle580 runner': 'c46917d4a932cd3ad9a78e0547625055f5adf9d5cf7393700d7e6715dd515cd3', 'Cycle580 note': 'e8ca5acdaec0c7ec5f0ba9772d7736352bcf132e961483d93f19c679439df276', 'Cycle577 runner': '93bf1fa2859289b13037bfe7882cce86732e9377ed8b60e56c3bd55ebc0ce74f', 'Cycle577 note': '23ef5601b73c121d5e82c9031ec0ff4acffdc5471c43aa4dec63a78085aa7c0f'}, 'observed': {'Cycle595 runner': 'cdfcddb00974205faa8bc60c617ff0dd42bf9f8947b0a55a4b172157b2d28de2', 'Cycle595 note': 'b1b1fc0960f69abcf9050b7eee2f3387188d45ea7704ca2db87381cd5fd3b730', 'Cycle592 runner': 'ab565af6aa59e66cea7b1ce625c08f8a88235ae9f7415e5e7d89d63af34ce9ce', 'Cycle592 note': 'dccf62d6126287b20cbf96ff410534adfa1746d9cf3aba94fbfb2893855be212', 'Cycle580 runner': 'c46917d4a932cd3ad9a78e0547625055f5adf9d5cf7393700d7e6715dd515cd3', 'Cycle580 note': 'e8ca5acdaec0c7ec5f0ba9772d7736352bcf132e961483d93f19c679439df276', 'Cycle577 runner': '93bf1fa2859289b13037bfe7882cce86732e9377ed8b60e56c3bd55ebc0ce74f', 'Cycle577 note': '23ef5601b73c121d5e82c9031ec0ff4acffdc5471c43aa4dec63a78085aa7c0f'}, 'synthesis_law_sha256': '9a2a6121730ad67c6049a42150a056687cc33fc6771897425fccb3d9e5b877b6', 'expected_synthesis_law_sha256': '9a2a6121730ad67c6049a42150a056687cc33fc6771897425fccb3d9e5b877b6', 'held_declaration_sha256': 'c6b3077028e2b78180183a209e3c8bfbb49f32b3398dbe3f40ac6ea265fdc9af', 'note_missing': (), 'declared_runner_sha256': '7dec66d44101d26f563bea079fa62b56daeb1d2d5a21a7a98c6f66fc22392d77', 'runner_sha256': '7dec66d44101d26f563bea079fa62b56daeb1d2d5a21a7a98c6f66fc22392d77', 'discipline': {'N1_routes': ({'family': 'coherent projector-query tuple register', 'object': 'Cycle577 projectors and Cycle580 extraction unitary', 'mechanism': 'four-copy coherent query sector weights', 'status': 'ATTEMPTED', 'terminal': 'derive a reusable numeric grade without supplied identical copies or sector selection'}, {'family': 'reversible fixed-point product synthesizer', 'object': 'unary parameter registers and 4x4x4 microaddress mask', 'mechanism': 'reversible literal products', 'status': 'ATTEMPTED', 'terminal': 'derive the parameter-register/state calibration and expand family/precision'}, {'family': 'deterministic lattice rotor', 'object': 'one-carrier 64-cycle and derived grade mask', 'mechanism': 'exhaustively bounded +25 discrepancy', 'status': 'ATTEMPTED', 'terminal': 'derive Born calibration, actuality, and archive renewal'}, {'family': 'full quantum amplitude estimation', 'object': 'phase/kickback grade register', 'mechanism': 'controlled projector reflections', 'status': 'UNTESTED_OPEN_NOT_COUNTED', 'terminal': 'compile controlled reflections, phase arithmetic, copy supply, and error bound locally'}, {'family': 'renewable stochastic reservoir', 'object': 'stationary local bath transition kernel', 'mechanism': 'mixing invariant measure', 'status': 'UNTESTED_OPEN_NOT_COUNTED', 'terminal': 'derive kernel, invariant law, resource renewal, and actuality owner'}, {'family': 'adaptive physical tomography', 'object': 'renewable calibration corpus and estimator', 'mechanism': 'confidence-controlled state-family learning', 'status': 'UNTESTED_OPEN_NOT_COUNTED', 'terminal': 'derive independent trials, estimator dynamics, stopping rule, and Record semantics'}), 'N1_qualifying': 3, 'N1_required': 5, 'N1_status': 'FAIL', 'N2_collapsed_walls': ('state-to-parameter calibration', 'state-family and precision coverage', 'objective actuality', 'Record permanence', 'frequency-to-Born calibration', 'resource renewal'), 'N2_pairwise': ({'pair': ('state-to-parameter calibration', 'state-family and precision coverage'), 'left_closes_right': False, 'right_closes_left': False, 'independent': True, 'reason': 'the two conditions have distinct typed witnesses and neither construction supplies the other'}, {'pair': ('state-to-parameter calibration', 'objective actuality'), 'left_closes_right': False, 'right_closes_left': False, 'independent': True, 'reason': 'the two conditions have distinct typed witnesses and neither construction supplies the other'}, {'pair': ('state-to-parameter calibration', 'Record permanence'), 'left_closes_right': False, 'right_closes_left': False, 'independent': True, 'reason': 'the two conditions have distinct typed witnesses and neither construction supplies the other'}, {'pair': ('state-to-parameter calibration', 'frequency-to-Born calibration'), 'left_closes_right': False, 'right_closes_left': False, 'independent': True, 'reason': 'the two conditions have distinct typed witnesses and neither construction supplies the other'}, {'pair': ('state-to-parameter calibration', 'resource renewal'), 'left_closes_right': False, 'right_closes_left': False, 'independent': True, 'reason': 'the two conditions have distinct typed witnesses and neither construction supplies the other'}, {'pair': ('state-family and precision coverage', 'objective actuality'), 'left_closes_right': False, 'right_closes_left': False, 'independent': True, 'reason': 'the two conditions have distinct typed witnesses and neither construction supplies the other'}, {'pair': ('state-family and precision coverage', 'Record permanence'), 'left_closes_right': False, 'right_closes_left': False, 'independent': True, 'reason': 'the two conditions have distinct typed witnesses and neither construction supplies the other'}, {'pair': ('state-family and precision coverage', 'frequency-to-Born calibration'), 'left_closes_right': False, 'right_closes_left': False, 'independent': True, 'reason': 'the two conditions have distinct typed witnesses and neither construction supplies the other'}, {'pair': ('state-family and precision coverage', 'resource renewal'), 'left_closes_right': False, 'right_closes_left': False, 'independent': True, 'reason': 'the two conditions have distinct typed witnesses and neither construction supplies the other'}, {'pair': ('objective actuality', 'Record permanence'), 'left_closes_right': False, 'right_closes_left': False, 'independent': True, 'reason': 'the two conditions have distinct typed witnesses and neither construction supplies the other'}, {'pair': ('objective actuality', 'frequency-to-Born calibration'), 'left_closes_right': False, 'right_closes_left': False, 'independent': True, 'reason': 'the two conditions have distinct typed witnesses and neither construction supplies the other'}, {'pair': ('objective actuality', 'resource renewal'), 'left_closes_right': False, 'right_closes_left': False, 'independent': True, 'reason': 'the two conditions have distinct typed witnesses and neither construction supplies the other'}, {'pair': ('Record permanence', 'frequency-to-Born calibration'), 'left_closes_right': False, 'right_closes_left': False, 'independent': True, 'reason': 'the two conditions have distinct typed witnesses and neither construction supplies the other'}, {'pair': ('Record permanence', 'resource renewal'), 'left_closes_right': False, 'right_closes_left': False, 'independent': True, 'reason': 'the two conditions have distinct typed witnesses and neither construction supplies the other'}, {'pair': ('frequency-to-Born calibration', 'resource renewal'), 'left_closes_right': False, 'right_closes_left': False, 'independent': True, 'reason': 'the two conditions have distinct typed witnesses and neither construction supplies the other'}), 'N3_explicit_supplies': ('four identically prepared input copies', 'two-bit unary parameter/state calibration', 'blank pointer/copy/work/mask/archive M2', 'finite 64-address chart and rotor genesis', 'Cycle552 conditional member/history interface', 'finite corpus sizes and held preparations'), 'N3_hidden_phrase_scan': 'all load-bearing construction choices promoted to supplied inventory', 'N4_residual_matches': ({'witness': 'Cycle595 finite answer ROM/off-grid refusal', 'current_residual': 'replace state-specific rows on declared product family', 'match': True, 'disposition': 'closed only at two-bit parameter precision'}, {'witness': 'Cycle580 local unitary/inverse compiler', 'current_residual': 'physical projector-query locality and inverse', 'match': True, 'disposition': 'exact shore, no probability semantics'}, {'witness': 'Cycle577 projector instrument', 'current_residual': 'Z-X-Z grade formula', 'match': True, 'disposition': 'exact projector identity'}, {'witness': 'Cycle592 occurrence/frequency bridge', 'current_residual': 'conditional occurrence and finite frequency propagation', 'match': True, 'disposition': 'frequency retained without Born promotion'}), 'N5_rhetoric': ('coherent grade register statement is scoped to the tested four-copy block, not lattice-wide', 'rotor-frequency statement is scoped to finite declared corpora, not every asymptotic process', 'schedule/time, resource/energy, and packet/Record are typed non-promotions at the constructed block'), 'N6_partial_closure_paths': ('retain Route A as a coherent projector-query diagnostic', 'retain Route B/C as a finite-precision product-family compiler', 'increase unary precision and prove scalable local arithmetic bounds', 'derive parameter-register/state calibration without answer rows', 'derive renewable archive formation and separate actuality/Record law'), 'N6_new_axiom_required': False, 'N7_steelman': {'mechanism': 'a locally compiled controlled-reflection amplitude-estimation network could transform the exact Cycle577 query into a reusable b-bit grade register, while a scalable reversible comparator and renewable record medium remove the supplied parameter word and archive debit', 'terminal': 'construct controlled reflections, copy/source ledger, phase-error theorem, scalable NN arithmetic, actuality owner, and blinded renewable Records', 'status': 'open and therefore defeats any broad no-go'}, 'N8_cross_cycle_echo': ('Cycle577 turned projector identities into an exact local instrument without actuality', 'Cycle580 retired the host-gate compiler import but not query-copy or Born semantics', 'Cycle592 exposed the finite answer-ROM and frequency-calibration imports', 'Cycle595 retired the balanced innovation word with an orbit-index carrier but retained the state-family wall', 'Cycle597 retires per-state rows only for one fixed-precision product family'), 'broad_no_go': 'FAIL_DO_NOT_SHIP', 'minimum_content': 'FAIL_DO_NOT_SHIP', 'shared_obstruction': 'NOT_ESTABLISHED', 'axiom_pressure': 'NONE'}, 'inventory': {'supplied': ('four identically prepared input copies', 'two-bit unary parameter/state calibration', 'blank pointer/copy/work/mask/archive M2', 'finite 64-address chart and rotor genesis', 'Cycle552 conditional member/history interface', 'finite corpus sizes and held preparations'), 'derived': ('exact coherent projector-query distribution and inverse', 'one row-free reversible denominator-64 product-family grade mask', 'deterministic physical rotor with exhaustive finite discrepancy certificate', 'explicit approximation plus rotor-frequency error budgets through conditional occurrence'), 'open': ('objective actuality and framework Record', 'Born/probability calibration', 'state-to-parameter ownership and family/precision scaling', 'copy/archive renewal', 'time, energy, source, stress, gravity, noise, and infinite-volume integration')}, 'pass': True}
+PASS cold resource caps :: {'elapsed_seconds': 2.763732707942836, 'maximum_RSS_bytes': 1196998656, 'wall_cap_seconds': 360.0, 'RSS_cap_bytes': 3221225472}
+{
+  "covariance_domain": {
+    "all24_member_failures": 0,
+    "all24_member_tests": 96,
+    "all576_axis_failures": 0,
+    "all576_axis_tests": 1728,
+    "malformed_domain_refusals": 6,
+    "malformed_domain_total": 6,
+    "pass": true,
+    "proper_cubic_frames": 24
+  },
+  "dependency_discipline_inventory": {
+    "declared_runner_sha256": "7dec66d44101d26f563bea079fa62b56daeb1d2d5a21a7a98c6f66fc22392d77",
+    "discipline": {
+      "N1_qualifying": 3,
+      "N1_required": 5,
+      "N1_routes": [
+        {
+          "family": "coherent projector-query tuple register",
+          "mechanism": "four-copy coherent query sector weights",
+          "object": "Cycle577 projectors and Cycle580 extraction unitary",
+          "status": "ATTEMPTED",
+          "terminal": "derive a reusable numeric grade without supplied identical copies or sector selection"
+        },
+        {
+          "family": "reversible fixed-point product synthesizer",
+          "mechanism": "reversible literal products",
+          "object": "unary parameter registers and 4x4x4 microaddress mask",
+          "status": "ATTEMPTED",
+          "terminal": "derive the parameter-register/state calibration and expand family/precision"
+        },
+        {
+          "family": "deterministic lattice rotor",
+          "mechanism": "exhaustively bounded +25 discrepancy",
+          "object": "one-carrier 64-cycle and derived grade mask",
+          "status": "ATTEMPTED",
+          "terminal": "derive Born calibration, actuality, and archive renewal"
+        },
+        {
+          "family": "full quantum amplitude estimation",
+          "mechanism": "controlled projector reflections",
+          "object": "phase/kickback grade register",
+          "status": "UNTESTED_OPEN_NOT_COUNTED",
+          "terminal": "compile controlled reflections, phase arithmetic, copy supply, and error bound locally"
+        },
+        {
+          "family": "renewable stochastic reservoir",
+          "mechanism": "mixing invariant measure",
+          "object": "stationary local bath transition kernel",
+          "status": "UNTESTED_OPEN_NOT_COUNTED",
+          "terminal": "derive kernel, invariant law, resource renewal, and actuality owner"
+        },
+        {
+          "family": "adaptive physical tomography",
+          "mechanism": "confidence-controlled state-family learning",
+          "object": "renewable calibration corpus and estimator",
+          "status": "UNTESTED_OPEN_NOT_COUNTED",
+          "terminal": "derive independent trials, estimator dynamics, stopping rule, and Record semantics"
+        }
+      ],
+      "N1_status": "FAIL",
+      "N2_collapsed_walls": [
+        "state-to-parameter calibration",
+        "state-family and precision coverage",
+        "objective actuality",
+        "Record permanence",
+        "frequency-to-Born calibration",
+        "resource renewal"
+      ],
+      "N2_pairwise": [
+        {
+          "independent": true,
+          "left_closes_right": false,
+          "pair": [
+            "state-to-parameter calibration",
+            "state-family and precision coverage"
+          ],
+          "reason": "the two conditions have distinct typed witnesses and neither construction supplies the other",
+          "right_closes_left": false
+        },
+        {
+          "independent": true,
+          "left_closes_right": false,
+          "pair": [
+            "state-to-parameter calibration",
+            "objective actuality"
+          ],
+          "reason": "the two conditions have distinct typed witnesses and neither construction supplies the other",
+          "right_closes_left": false
+        },
+        {
+          "independent": true,
+          "left_closes_right": false,
+          "pair": [
+            "state-to-parameter calibration",
+            "Record permanence"
+          ],
+          "reason": "the two conditions have distinct typed witnesses and neither construction supplies the other",
+          "right_closes_left": false
+        },
+        {
+          "independent": true,
+          "left_closes_right": false,
+          "pair": [
+            "state-to-parameter calibration",
+            "frequency-to-Born calibration"
+          ],
+          "reason": "the two conditions have distinct typed witnesses and neither construction supplies the other",
+          "right_closes_left": false
+        },
+        {
+          "independent": true,
+          "left_closes_right": false,
+          "pair": [
+            "state-to-parameter calibration",
+            "resource renewal"
+          ],
+          "reason": "the two conditions have distinct typed witnesses and neither construction supplies the other",
+          "right_closes_left": false
+        },
+        {
+          "independent": true,
+          "left_closes_right": false,
+          "pair": [
+            "state-family and precision coverage",
+            "objective actuality"
+          ],
+          "reason": "the two conditions have distinct typed witnesses and neither construction supplies the other",
+          "right_closes_left": false
+        },
+        {
+          "independent": true,
+          "left_closes_right": false,
+          "pair": [
+            "state-family and precision coverage",
+            "Record permanence"
+          ],
+          "reason": "the two conditions have distinct typed witnesses and neither construction supplies the other",
+          "right_closes_left": false
+        },
+        {
+          "independent": true,
+          "left_closes_right": false,
+          "pair": [
+            "state-family and precision coverage",
+            "frequency-to-Born calibration"
+          ],
+          "reason": "the two conditions have distinct typed witnesses and neither construction supplies the other",
+          "right_closes_left": false
+        },
+        {
+          "independent": true,
+          "left_closes_right": false,
+          "pair": [
+            "state-family and precision coverage",
+            "resource renewal"
+          ],
+          "reason": "the two conditions have distinct typed witnesses and neither construction supplies the other",
+          "right_closes_left": false
+        },
+        {
+          "independent": true,
+          "left_closes_right": false,
+          "pair": [
+            "objective actuality",
+            "Record permanence"
+          ],
+          "reason": "the two conditions have distinct typed witnesses and neither construction supplies the other",
+          "right_closes_left": false
+        },
+        {
+          "independent": true,
+          "left_closes_right": false,
+          "pair": [
+            "objective actuality",
+            "frequency-to-Born calibration"
+          ],
+          "reason": "the two conditions have distinct typed witnesses and neither construction supplies the other",
+          "right_closes_left": false
+        },
+        {
+          "independent": true,
+          "left_closes_right": false,
+          "pair": [
+            "objective actuality",
+            "resource renewal"
+          ],
+          "reason": "the two conditions have distinct typed witnesses and neither construction supplies the other",
+          "right_closes_left": false
+        },
+        {
+          "independent": true,
+          "left_closes_right": false,
+          "pair": [
+            "Record permanence",
+            "frequency-to-Born calibration"
+          ],
+          "reason": "the two conditions have distinct typed witnesses and neither construction supplies the other",
+          "right_closes_left": false
+        },
+        {
+          "independent": true,
+          "left_closes_right": false,
+          "pair": [
+            "Record permanence",
+            "resource renewal"
+          ],
+          "reason": "the two conditions have distinct typed witnesses and neither construction supplies the other",
+          "right_closes_left": false
+        },
+        {
+          "independent": true,
+          "left_closes_right": false,
+          "pair": [
+            "frequency-to-Born calibration",
+            "resource renewal"
+          ],
+          "reason": "the two conditions have distinct typed witnesses and neither construction supplies the other",
+          "right_closes_left": false
+        }
+      ],
+      "N3_explicit_supplies": [
+        "four identically prepared input copies",
+        "two-bit unary parameter/state calibration",
+        "blank pointer/copy/work/mask/archive M2",
+        "finite 64-address chart and rotor genesis",
+        "Cycle552 conditional member/history interface",
+        "finite corpus sizes and held preparations"
+      ],
+      "N3_hidden_phrase_scan": "all load-bearing construction choices promoted to supplied inventory",
+      "N4_residual_matches": [
+        {
+          "current_residual": "replace state-specific rows on declared product family",
+          "disposition": "closed only at two-bit parameter precision",
+          "match": true,
+          "witness": "Cycle595 finite answer ROM/off-grid refusal"
+        },
+        {
+          "current_residual": "physical projector-query locality and inverse",
+          "disposition": "exact shore, no probability semantics",
+          "match": true,
+          "witness": "Cycle580 local unitary/inverse compiler"
+        },
+        {
+          "current_residual": "Z-X-Z grade formula",
+          "disposition": "exact projector identity",
+          "match": true,
+          "witness": "Cycle577 projector instrument"
+        },
+        {
+          "current_residual": "conditional occurrence and finite frequency propagation",
+          "disposition": "frequency retained without Born promotion",
+          "match": true,
+          "witness": "Cycle592 occurrence/frequency bridge"
+        }
+      ],
+      "N5_rhetoric": [
+        "coherent grade register statement is scoped to the tested four-copy block, not lattice-wide",
+        "rotor-frequency statement is scoped to finite declared corpora, not every asymptotic process",
+        "schedule/time, resource/energy, and packet/Record are typed non-promotions at the constructed block"
+      ],
+      "N6_new_axiom_required": false,
+      "N6_partial_closure_paths": [
+        "retain Route A as a coherent projector-query diagnostic",
+        "retain Route B/C as a finite-precision product-family compiler",
+        "increase unary precision and prove scalable local arithmetic bounds",
+        "derive parameter-register/state calibration without answer rows",
+        "derive renewable archive formation and separate actuality/Record law"
+      ],
+      "N7_steelman": {
+        "mechanism": "a locally compiled controlled-reflection amplitude-estimation network could transform the exact Cycle577 query into a reusable b-bit grade register, while a scalable reversible comparator and renewable record medium remove the supplied parameter word and archive debit",
+        "status": "open and therefore defeats any broad no-go",
+        "terminal": "construct controlled reflections, copy/source ledger, phase-error theorem, scalable NN arithmetic, actuality owner, and blinded renewable Records"
+      },
+      "N8_cross_cycle_echo": [
+        "Cycle577 turned projector identities into an exact local instrument without actuality",
+        "Cycle580 retired the host-gate compiler import but not query-copy or Born semantics",
+        "Cycle592 exposed the finite answer-ROM and frequency-calibration imports",
+        "Cycle595 retired the balanced innovation word with an orbit-index carrier but retained the state-family wall",
+        "Cycle597 retires per-state rows only for one fixed-precision product family"
+      ],
+      "axiom_pressure": "NONE",
+      "broad_no_go": "FAIL_DO_NOT_SHIP",
+      "minimum_content": "FAIL_DO_NOT_SHIP",
+      "shared_obstruction": "NOT_ESTABLISHED"
+    },
+    "expected": {
+      "Cycle577 note": "23ef5601b73c121d5e82c9031ec0ff4acffdc5471c43aa4dec63a78085aa7c0f",
+      "Cycle577 runner": "93bf1fa2859289b13037bfe7882cce86732e9377ed8b60e56c3bd55ebc0ce74f",
+      "Cycle580 note": "e8ca5acdaec0c7ec5f0ba9772d7736352bcf132e961483d93f19c679439df276",
+      "Cycle580 runner": "c46917d4a932cd3ad9a78e0547625055f5adf9d5cf7393700d7e6715dd515cd3",
+      "Cycle592 note": "dccf62d6126287b20cbf96ff410534adfa1746d9cf3aba94fbfb2893855be212",
+      "Cycle592 runner": "ab565af6aa59e66cea7b1ce625c08f8a88235ae9f7415e5e7d89d63af34ce9ce",
+      "Cycle595 note": "b1b1fc0960f69abcf9050b7eee2f3387188d45ea7704ca2db87381cd5fd3b730",
+      "Cycle595 runner": "cdfcddb00974205faa8bc60c617ff0dd42bf9f8947b0a55a4b172157b2d28de2"
+    },
+    "expected_synthesis_law_sha256": "9a2a6121730ad67c6049a42150a056687cc33fc6771897425fccb3d9e5b877b6",
+    "held_declaration_sha256": "c6b3077028e2b78180183a209e3c8bfbb49f32b3398dbe3f40ac6ea265fdc9af",
+    "inventory": {
+      "derived": [
+        "exact coherent projector-query distribution and inverse",
+        "one row-free reversible denominator-64 product-family grade mask",
+        "deterministic physical rotor with exhaustive finite discrepancy certificate",
+        "explicit approximation plus rotor-frequency error budgets through conditional occurrence"
+      ],
+      "open": [
+        "objective actuality and framework Record",
+        "Born/probability calibration",
+        "state-to-parameter ownership and family/precision scaling",
+        "copy/archive renewal",
+        "time, energy, source, stress, gravity, noise, and infinite-volume integration"
+      ],
+      "supplied": [
+        "four identically prepared input copies",
+        "two-bit unary parameter/state calibration",
+        "blank pointer/copy/work/mask/archive M2",
+        "finite 64-address chart and rotor genesis",
+        "Cycle552 conditional member/history interface",
+        "finite corpus sizes and held preparations"
+      ]
+    },
+    "note_missing": [],
+    "observed": {
+      "Cycle577 note": "23ef5601b73c121d5e82c9031ec0ff4acffdc5471c43aa4dec63a78085aa7c0f",
+      "Cycle577 runner": "93bf1fa2859289b13037bfe7882cce86732e9377ed8b60e56c3bd55ebc0ce74f",
+      "Cycle580 note": "e8ca5acdaec0c7ec5f0ba9772d7736352bcf132e961483d93f19c679439df276",
+      "Cycle580 runner": "c46917d4a932cd3ad9a78e0547625055f5adf9d5cf7393700d7e6715dd515cd3",
+      "Cycle592 note": "dccf62d6126287b20cbf96ff410534adfa1746d9cf3aba94fbfb2893855be212",
+      "Cycle592 runner": "ab565af6aa59e66cea7b1ce625c08f8a88235ae9f7415e5e7d89d63af34ce9ce",
+      "Cycle595 note": "b1b1fc0960f69abcf9050b7eee2f3387188d45ea7704ca2db87381cd5fd3b730",
+      "Cycle595 runner": "cdfcddb00974205faa8bc60c617ff0dd42bf9f8947b0a55a4b172157b2d28de2"
+    },
+    "pass": true,
+    "runner_sha256": "7dec66d44101d26f563bea079fa62b56daeb1d2d5a21a7a98c6f66fc22392d77",
+    "synthesis_law_sha256": "9a2a6121730ad67c6049a42150a056687cc33fc6771897425fccb3d9e5b877b6"
+  },
+  "fail": 0,
+  "pass": 6,
+  "resources": {
+    "RSS_cap_bytes": 3221225472,
+    "elapsed_seconds": 2.763732707942836,
+    "maximum_RSS_bytes": 1196998656,
+    "wall_cap_seconds": 360.0
+  },
+  "route_A": {
+    "active_copy_gate_deletion_fixture_L1": 1.4999999999999998,
+    "active_query_gate_deletion_fixture_L1": 1.4999999999999996,
+    "all24_query_copy_edge_failures": 0,
+    "all24_query_copy_edge_tests": 240,
+    "all_retained_sectors": true,
+    "coherent_grade_register_is_objective_probability": false,
+    "complete_Cycle580_instrument_residual": 4.440926982597988e-16,
+    "complete_Cycle580_inverse_residual": 8.906865629316332e-16,
+    "copy_CNOTs": 3,
+    "four_query_sector_ledger_residual": 1.7985612998927536e-14,
+    "maximum_boundary_dual_rail_leakage": 0.0,
+    "maximum_copied_label_distribution_residual": 4.440892098500626e-16,
+    "maximum_exact_inverse_residual": 4.446523297499064e-16,
+    "maximum_projector_formula_residual": 2.220446049250313e-16,
+    "maximum_query_distribution_residual": 4.440892098500626e-16,
+    "pass": true,
+    "physical_M2_per_four_query_batch": 72,
+    "physical_M2_per_query_copy": 18,
+    "proper_cubic_frames": 24,
+    "query_elementary_gates": 9,
+    "route": "A coherent Cycle577-projector/Cycle580-pointer query",
+    "rows": [
+      {
+        "exact_grade": [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        "maximum_single_component_empirical_variance": 0.02734375,
+        "name": "train_uniform",
+        "nonzero_single_query_sectors": 8,
+        "numeric_grade_word_or_objective_sector_derived": false,
+        "retained_four_query_tuple_sectors": 4096,
+        "split": "train"
+      },
+      {
+        "exact_grade": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_single_component_empirical_variance": 0.0,
+        "name": "train_basis_corner",
+        "nonzero_single_query_sectors": 1,
+        "numeric_grade_word_or_objective_sector_derived": false,
+        "retained_four_query_tuple_sectors": 1,
+        "split": "train"
+      },
+      {
+        "exact_grade": [
+          0.09375,
+          0.09375,
+          0.03125,
+          0.03125,
+          0.28125,
+          0.28125,
+          0.09375,
+          0.09375
+        ],
+        "maximum_single_component_empirical_variance": 0.050537109375,
+        "name": "train_asymmetric",
+        "nonzero_single_query_sectors": 8,
+        "numeric_grade_word_or_objective_sector_derived": false,
+        "retained_four_query_tuple_sectors": 4096,
+        "split": "train"
+      },
+      {
+        "exact_grade": [
+          0.10878010878010878,
+          0.17404817404817405,
+          0.06216006216006216,
+          0.09945609945609946,
+          0.13597513597513597,
+          0.21756021756021757,
+          0.0777000777000777,
+          0.12432012432012432
+        ],
+        "maximum_single_component_empirical_variance": 0.04255694232384209,
+        "name": "held_offgrid_7over11_4over9_5over13",
+        "nonzero_single_query_sectors": 8,
+        "numeric_grade_word_or_objective_sector_derived": false,
+        "retained_four_query_tuple_sectors": 4096,
+        "split": "held"
+      },
+      {
+        "exact_grade": [
+          0.32723112128146453,
+          0.11549333692286984,
+          0.17848970251716248,
+          0.06299636559429264,
+          0.15102974828375287,
+          0.05330461704132454,
+          0.08237986270022883,
+          0.029075245658904295
+        ],
+        "maximum_single_component_empirical_variance": 0.055037728636585,
+        "name": "held_offgrid_11over17_13over19_17over23",
+        "nonzero_single_query_sectors": 8,
+        "numeric_grade_word_or_objective_sector_derived": false,
+        "retained_four_query_tuple_sectors": 4096,
+        "split": "held"
+      }
+    ],
+    "state_copy_preparation_or_no_cloning_derived": false,
+    "supplied_identically_prepared_query_copies": 4
+  },
+  "route_B": {
+    "Cycle592_answer_table_reads": 0,
+    "absent_parameter_word_refusals": 1,
+    "binary_code_failures": 0,
+    "exhaustive_mask_failures": 0,
+    "exhaustive_parameter_words": 125,
+    "inverse_failures": 0,
+    "logical_gate_count": 3072,
+    "maximum_approximation_bound_violation": 0.0,
+    "maximum_exact_quantized_product_synthesis_residual": 0.0,
+    "maximum_projector_formula_residual": 2.220446049250313e-16,
+    "parameter_bit_deletion_L1": 0.5,
+    "parameter_fraction_bits": 2,
+    "pass": true,
+    "physical_M2": 525,
+    "program_selector_M2": 0,
+    "route": "B reversible unary fixed-point product-family synthesizer",
+    "rows": [
+      {
+        "denominator64_counts": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "name": "train_uniform",
+        "parameters": [
+          "1/2",
+          "1/2",
+          "1/2"
+        ],
+        "product_parameter_L1_bound": 0.0,
+        "quantized_parameters": [
+          "1/2",
+          "1/2",
+          "1/2"
+        ],
+        "split": "train",
+        "target_to_synthesized_L1": 0.0
+      },
+      {
+        "denominator64_counts": [
+          64,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "name": "train_basis_corner",
+        "parameters": [
+          "1",
+          "1",
+          "1"
+        ],
+        "product_parameter_L1_bound": 0.0,
+        "quantized_parameters": [
+          "1",
+          "1",
+          "1"
+        ],
+        "split": "train",
+        "target_to_synthesized_L1": 0.0
+      },
+      {
+        "denominator64_counts": [
+          6,
+          6,
+          2,
+          2,
+          18,
+          18,
+          6,
+          6
+        ],
+        "name": "train_asymmetric",
+        "parameters": [
+          "3/4",
+          "1/4",
+          "1/2"
+        ],
+        "product_parameter_L1_bound": 0.0,
+        "quantized_parameters": [
+          "3/4",
+          "1/4",
+          "1/2"
+        ],
+        "split": "train",
+        "target_to_synthesized_L1": 0.0
+      },
+      {
+        "denominator64_counts": [
+          12,
+          12,
+          4,
+          4,
+          12,
+          12,
+          4,
+          4
+        ],
+        "name": "held_offgrid_7over11_4over9_5over13",
+        "parameters": [
+          "7/11",
+          "4/9",
+          "5/13"
+        ],
+        "product_parameter_L1_bound": 0.5691530691530692,
+        "quantized_parameters": [
+          "3/4",
+          "1/2",
+          "1/2"
+        ],
+        "split": "held",
+        "target_to_synthesized_L1": 0.2880730380730381
+      },
+      {
+        "denominator64_counts": [
+          27,
+          9,
+          9,
+          3,
+          9,
+          3,
+          3,
+          1
+        ],
+        "name": "held_offgrid_11over17_13over19_17over23",
+        "parameters": [
+          "11/17",
+          "13/19",
+          "17/23"
+        ],
+        "product_parameter_L1_bound": 0.35920043074438013,
+        "quantized_parameters": [
+          "3/4",
+          "3/4",
+          "3/4"
+        ],
+        "split": "held",
+        "target_to_synthesized_L1": 0.2395510835913313
+      }
+    ],
+    "state_specific_answer_rows": 0,
+    "static_nearest_neighbor_compiler": {
+      "adjacent_route_and_return_SWAPS": 1128448,
+      "all24_line_edge_failures": 0,
+      "all24_line_edge_tests": 12576,
+      "line_M2": 525,
+      "literal_one_M2_primitives": 15360,
+      "literal_two_M2_core_primitives": 9216,
+      "logical_Toffoli": 1536,
+      "maximum_unrouted_operand_distance": 513,
+      "nearest_neighbor_two_M2_calls": 1137664,
+      "ordered_operand_failures": 0,
+      "pass": true,
+      "proper_cubic_frames": 24,
+      "route_adjacency_failures": 0,
+      "route_manifest_sha256": "cee60ebbb81be5bb48945d3e84d301d08237e11af9e57ee438e1d997cd20436d",
+      "runtime_data_selects_route": false,
+      "terminal_wire_restoration_failures": 0
+    },
+    "transition_bits": 6
+  },
+  "route_C": {
+    "EG_failures": 0,
+    "absent_grade_word_refusals": 1,
+    "active_rotor_edge_deletion_residual": 1.4142135623730951,
+    "active_select_deletion_residual": 1.4142135623730951,
+    "archive_packet_renewal_derived": false,
+    "carrier_and_grade_mask_catalytically_retained": true,
+    "deleted_grade_word_refusals": 1,
+    "exhaustive_grade_words": 125,
+    "exhaustive_prefixes_per_word": 64,
+    "fresh_blank_archive_M2_per_occurrence": 8,
+    "grade_mask_ledger_failures": 0,
+    "host_sampler_or_answer_table_tokens": 0,
+    "inverse_failures": 0,
+    "maximum_error_budget_violation": 0.0,
+    "natural_order_comparator_discrepancy": "16",
+    "pass": true,
+    "physical_M2_per_occurrence_fixture": 1168,
+    "rotor_frequency_promoted_to_Born": false,
+    "rotor_genesis": 9,
+    "rotor_increment": 25,
+    "rotor_maximum_per_history_count_discrepancy": "67/32",
+    "rotor_period": 64,
+    "route": "C deterministic +25 low-discrepancy physical rotor",
+    "rows": [
+      {
+        "combined_L1_bound": 0.130859375,
+        "corpus_size": 128,
+        "denominator64_grade": [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        "finite_rotor_frequency": [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        "frequency_to_target_L1": 0.0,
+        "grade_approximation_L1": 0.0,
+        "name": "train_uniform",
+        "parameter_approximation_bound": 0.0,
+        "rotor_discrepancy_bound": 0.130859375,
+        "rotor_to_grade_L1": 0.0,
+        "split": "train"
+      },
+      {
+        "combined_L1_bound": 0.17447916666666666,
+        "corpus_size": 96,
+        "denominator64_grade": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "finite_rotor_frequency": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "frequency_to_target_L1": 0.0,
+        "grade_approximation_L1": 0.0,
+        "name": "train_basis_corner",
+        "parameter_approximation_bound": 0.0,
+        "rotor_discrepancy_bound": 0.17447916666666666,
+        "rotor_to_grade_L1": 0.0,
+        "split": "train"
+      },
+      {
+        "combined_L1_bound": 0.1046875,
+        "corpus_size": 160,
+        "denominator64_grade": [
+          0.09375,
+          0.09375,
+          0.03125,
+          0.03125,
+          0.28125,
+          0.28125,
+          0.09375,
+          0.09375
+        ],
+        "finite_rotor_frequency": [
+          0.1,
+          0.09375,
+          0.025,
+          0.03125,
+          0.28125,
+          0.28125,
+          0.09375,
+          0.09375
+        ],
+        "frequency_to_target_L1": 0.012500000000000004,
+        "grade_approximation_L1": 0.0,
+        "name": "train_asymmetric",
+        "parameter_approximation_bound": 0.0,
+        "rotor_discrepancy_bound": 0.1046875,
+        "rotor_to_grade_L1": 0.012500000000000004,
+        "split": "train"
+      },
+      {
+        "combined_L1_bound": 0.6914158428756969,
+        "corpus_size": 137,
+        "denominator64_grade": [
+          0.1875,
+          0.1875,
+          0.0625,
+          0.0625,
+          0.1875,
+          0.1875,
+          0.0625,
+          0.0625
+        ],
+        "finite_rotor_frequency": [
+          0.1897810218978102,
+          0.1897810218978102,
+          0.058394160583941604,
+          0.058394160583941604,
+          0.1897810218978102,
+          0.18248175182481752,
+          0.06569343065693431,
+          0.06569343065693431
+        ],
+        "frequency_to_target_L1": 0.3010792937800237,
+        "grade_approximation_L1": 0.2880730380730381,
+        "name": "held_offgrid_7over11_4over9_5over13",
+        "parameter_approximation_bound": 0.5691530691530692,
+        "rotor_discrepancy_bound": 0.12226277372262774,
+        "rotor_to_grade_L1": 0.02645985401459852,
+        "split": "held"
+      },
+      {
+        "combined_L1_bound": 0.4385843170003043,
+        "corpus_size": 211,
+        "denominator64_grade": [
+          0.421875,
+          0.140625,
+          0.140625,
+          0.046875,
+          0.140625,
+          0.046875,
+          0.046875,
+          0.015625
+        ],
+        "finite_rotor_frequency": [
+          0.4218009478672986,
+          0.14218009478672985,
+          0.14218009478672985,
+          0.04739336492890995,
+          0.14218009478672985,
+          0.04739336492890995,
+          0.04265402843601896,
+          0.014218009478672985
+        ],
+        "frequency_to_target_L1": 0.2425131688993882,
+        "grade_approximation_L1": 0.2395510835913313,
+        "name": "held_offgrid_11over17_13over19_17over23",
+        "parameter_approximation_bound": 0.35920043074438013,
+        "rotor_discrepancy_bound": 0.07938388625592417,
+        "rotor_to_grade_L1": 0.011404028436018914,
+        "split": "held"
+      }
+    ],
+    "static_nearest_neighbor_compiler": {
+      "adjacent_route_and_return_SWAPS": 7612272,
+      "all24_line_edge_failures": 0,
+      "all24_line_edge_tests": 28008,
+      "line_M2": 1168,
+      "literal_one_M2_primitives": 9216,
+      "literal_two_M2_core_primitives": 7304,
+      "logical_Toffoli": 1024,
+      "maximum_unrouted_operand_distance": 1088,
+      "nearest_neighbor_two_M2_calls": 7619576,
+      "ordered_operand_failures": 0,
+      "pass": true,
+      "proper_cubic_frames": 24,
+      "route_adjacency_failures": 0,
+      "route_manifest_sha256": "7d1935645a672d54518e407bf79a1a1237b61950ca25239e14fa7570af1fcf32",
+      "runtime_data_selects_route": false,
+      "terminal_wire_restoration_failures": 0
+    },
+    "unchanged_Cycle552_interface_failures": 0
+  },
+  "summary": {
+    "audit": "unset",
+    "authority": "none",
+    "axiom_pressure": null,
+    "derived_Born_probability": null,
+    "energy_or_source": null,
+    "framework_Record": null,
+    "objective_actuality": null,
+    "physical_time": null,
+    "strongest_result": "one reversible row-free denominator-64 product-family grade synthesizer feeding a deterministic local rotor and unchanged conditional occurrence"
+  }
+}
+RESULT pass=6 fail=0
+authority=none; audit=unset; coherent grade register is not objective probability; rotor frequency is not Born; schedule is not time; spent resource is not energy; packet is not Record
+       85.79 real        84.10 user         0.67 sys
+          1196998656  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              148694  page reclaims
+                  78  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1338  voluntary context switches
+               77254  involuntary context switches
+       1293414105612  instructions retired
+        295002995996  cycles elapsed
+          1280509272  peak memory footprint

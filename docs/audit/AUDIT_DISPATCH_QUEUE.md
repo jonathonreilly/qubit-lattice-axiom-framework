@@ -59,7 +59,7 @@ These dispatch targets have been re-audited after their manifest's `generated_da
 | 3 | resolved_or_superseded | `gauge_scalar_temporal_completion_theorem_note` | positive_theorem / audited_clean / retained |
 | 4 | resolved_or_superseded | `gauge_vacuum_plaquette_mixed_cumulant_audit_note` | positive_theorem / audited_failed / audited_failed |
 | 5 | resolved_or_superseded | `scalar_3plus1_temporal_ratio_note` | positive_theorem / audited_clean / retained |
-| 6 | resolved_or_superseded | `gauge_vacuum_plaquette_connected_hierarchy_theorem_note` | open_gate / unaudited / unaudited |
+| 6 | resolved_or_superseded | `gauge_vacuum_plaquette_connected_hierarchy_theorem_note` | positive_theorem / audit_in_progress / audit_in_progress |
 | 7 | resolved_or_superseded | `gauge_vacuum_plaquette_spectral_measure_theorem_note` | bounded_theorem / unaudited / unaudited |
 | 8 | resolved_or_superseded | `gauge_vacuum_plaquette_distinct_shell_theorem_note` | bounded_theorem / unaudited / unaudited |
 | 9 | resolved_or_superseded | `su3_wigner_intertwiner_block2_theorem_note_2026-05-03` | bounded_theorem / unaudited / unaudited |

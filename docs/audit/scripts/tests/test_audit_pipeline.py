@@ -13998,6 +13998,26 @@ class JudicialPanelOrchestratorTest(unittest.TestCase):
         self.assertFalse(ok)
         self.assertIn("current source and cross-confirmation seats", detail)
 
+        unknown_minority_classes = copy.deepcopy(blob)
+        panel_votes = unknown_minority_classes["judicial_panel_record_v1"][
+            "votes"
+        ]
+        for vote in panel_votes[3:]:
+            vote.update({
+                "sided_with": "hybrid",
+                "ratified_claim_scope": "a minority corrected identity",
+                "negative_assertion_classes": ["invented_negative_class"],
+                "first_auditor_error": "first scope is too broad",
+                "second_auditor_error": "second scope is too narrow",
+                "hybrid_resolution_note": "combine the bounded pieces",
+            })
+        ledger = {"schema_version": 1, "rows": {row["claim_id"]: row}}
+        ok, detail = apply_mod.apply_judicial_review(
+            ledger, unknown_minority_classes
+        )
+        self.assertFalse(ok)
+        self.assertIn("unknown classes", detail)
+
     def test_hybrid_blob_with_novel_scope_applies(self):
         m = _import("orchestrate_judicial_panel")
         apply_mod = _import("apply_audit")
@@ -14058,6 +14078,36 @@ class JudicialPanelOrchestratorTest(unittest.TestCase):
         vote, status = m.collect_vote(job)
         self.assertIsNone(vote)
         self.assertIn("must explain the second auditor's error", status)
+
+        hybrid_without_note = self._vote(
+            sided_with="hybrid",
+            first_auditor_error="first scope is too broad",
+            second_auditor_error="second scope is too narrow",
+        )
+        raw.write_text(
+            json.dumps(hybrid_without_note) + " " * 200, encoding="utf-8"
+        )
+        vote, status = m.collect_vote(job)
+        self.assertIsNone(vote)
+        self.assertIn("non-empty hybrid_resolution_note", status)
+        with self.assertRaisesRegex(ValueError, "hybrid_resolution_note"):
+            m.judicial_blob(
+                self._row(),
+                hybrid_without_note,
+                [hybrid_without_note] * 5,
+                5,
+            )
+
+        unknown_negative_class = self._vote(
+            negative_assertion_classes=["invented_negative_class"]
+        )
+        raw.write_text(
+            json.dumps(unknown_negative_class) + " " * 200,
+            encoding="utf-8",
+        )
+        vote, status = m.collect_vote(job)
+        self.assertIsNone(vote)
+        self.assertIn("unknown classes", status)
 
     def test_panel_rejects_semantically_incompatible_votes(self):
         m = _import("orchestrate_judicial_panel")
@@ -14597,12 +14647,36 @@ class JudicialPanelOrchestratorTest(unittest.TestCase):
             "result": "no_majority",
             "disagreement_fingerprint": m.disagreement_fingerprint(row),
             "votes": votes,
+            "failures": [],
+            "tally": m.serialized_tally(votes),
+            "untrusted_extra": "must not reach the next panel",
         }
         path = self.tmp / "prior.json"
         path.write_text(json.dumps(record), encoding="utf-8")
         grouped, error = m.load_prior_panels([str(path)], {"claim-a": row})
         self.assertIsNone(error)
         self.assertEqual(grouped["claim-a"][0]["cid"], "claim-a")
+        self.assertNotIn("untrusted_extra", grouped["claim-a"][0])
+
+        forged_tally = {**record, "tally": []}
+        forged_tally_path = self.tmp / "forged-tally.json"
+        forged_tally_path.write_text(
+            json.dumps(forged_tally), encoding="utf-8"
+        )
+        _grouped, error = m.load_prior_panels(
+            [str(forged_tally_path)], {"claim-a": row}
+        )
+        self.assertIn("inconsistent tally metadata", error)
+
+        forged_failures = {**record, "failures": ["fabricated failure"]}
+        forged_failures_path = self.tmp / "forged-failures.json"
+        forged_failures_path.write_text(
+            json.dumps(forged_failures), encoding="utf-8"
+        )
+        _grouped, error = m.load_prior_panels(
+            [str(forged_failures_path)], {"claim-a": row}
+        )
+        self.assertIn("inconsistent failure metadata", error)
         _grouped, error = m.load_prior_panels(
             [str(path)], {"claim-b": self._row("claim-b")}
         )
@@ -14642,6 +14716,7 @@ class JudicialPanelOrchestratorTest(unittest.TestCase):
                 "failures": [
                     "judge5:vote_contract_error:invalid verdict/type tuple"
                 ],
+                "tally": m.serialized_tally(votes),
             }
 
         valid_path = self.tmp / "valid-contract-retry.json"
@@ -14681,6 +14756,66 @@ class JudicialPanelOrchestratorTest(unittest.TestCase):
                 )
                 self.assertIn("invalid contract-retry record", error)
 
+    def test_prior_panel_result_metadata_is_validated(self):
+        m = _import("orchestrate_judicial_panel")
+        row = self._row("result-metadata")
+        votes = [
+            {
+                "judge": judge,
+                "auditor": f"judge-{judge}",
+                **(
+                    self._vote()
+                    if judge <= 3
+                    else self._vote(
+                        sided_with="second",
+                        ratified_verdict="audited_conditional",
+                        ratified_claim_scope="a conditional identity",
+                        first_auditor_error="missed the condition",
+                        second_auditor_error="none",
+                        notes_for_re_audit_if_any=(
+                            "other: check the stated condition"
+                        ),
+                    )
+                ),
+            }
+            for judge in range(1, 6)
+        ]
+        record = {
+            "schema": "judicial_panel_record_v1",
+            "cid": row["claim_id"],
+            "panel": 1,
+            "invocation_id": "9" * 32,
+            "result": "majority_unapplyable",
+            "disagreement_fingerprint": m.disagreement_fingerprint(row),
+            "votes": votes,
+            "failures": [],
+            "tally": m.serialized_tally(votes),
+            "apply_errors": [
+                {
+                    "judge": judge,
+                    "auditor": f"judge-{judge}",
+                    "error": "candidate failed a bounded apply check",
+                }
+                for judge in range(1, 4)
+            ],
+        }
+        valid_path = self.tmp / "valid-unapplyable.json"
+        valid_path.write_text(json.dumps(record), encoding="utf-8")
+        grouped, error = m.load_prior_panels(
+            [str(valid_path)], {row["claim_id"]: row}
+        )
+        self.assertIsNone(error)
+        self.assertEqual(len(grouped[row["claim_id"]][0]["apply_errors"]), 3)
+
+        forged = copy.deepcopy(record)
+        forged["apply_errors"][0]["judge"] = 5
+        forged_path = self.tmp / "forged-unapplyable.json"
+        forged_path.write_text(json.dumps(forged), encoding="utf-8")
+        _grouped, error = m.load_prior_panels(
+            [str(forged_path)], {row["claim_id"]: row}
+        )
+        self.assertIn("invalid apply-error metadata", error)
+
     def test_resumed_contract_retry_budget_counts_only_complete_history(self):
         m = _import("orchestrate_judicial_panel")
         row = self._row()
@@ -14704,6 +14839,14 @@ class JudicialPanelOrchestratorTest(unittest.TestCase):
                 "failures": [
                     "judge5:vote_contract_error:invalid verdict/type tuple"
                 ],
+                "tally": m.serialized_tally([
+                    {
+                        "judge": judge,
+                        "auditor": f"round-{panel_no}-judge-{judge}",
+                        **self._vote(),
+                    }
+                    for judge in range(1, 5)
+                ]),
             })
         launches = []
 

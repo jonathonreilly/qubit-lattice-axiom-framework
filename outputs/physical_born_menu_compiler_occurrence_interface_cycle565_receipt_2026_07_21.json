@@ -1,0 +1,87 @@
+{
+  "status": "cycle565-physical-finite-born-menu-and-conditional-occurrence-interface-bounded-positive",
+  "authority": "none",
+  "audit": "unset",
+  "runner_sha256": "b4b6e2c4491c5a6b30389764e8ac597ce07e1dac3f31c7cb8fff9297ac04437a",
+  "note_sha256": "72dd62448eaf685de0a7f1cc4ce9d164363428976eafc8efb93c973b8856f39a",
+  "parent_transcript_sha256": "0f5ddcba2203db571cadc5ca7ae55a538e8eef9bc46cf2142ccf7ef57fd60471",
+  "tests_passed": 10,
+  "tests_total": 10,
+  "pass": true,
+  "timed_wall_seconds": 88.06,
+  "maximum_RSS_bytes": 904822784,
+  "process_swap_count": 0,
+  "finite_menu_compiler": {
+    "eligible_programs": 7,
+    "registration_M2": 5,
+    "analog_M2": 48,
+    "resource_M2": 72,
+    "menu_compiler_M2": 125,
+    "maximum_literal_support_M2": 2,
+    "literal_registration_gate_residual": 2.220446049250313e-16,
+    "Toffoli_reconstruction_residual": 7.346882794269506e-16,
+    "registration_intertwiner_residual": 0.0,
+    "analog_intertwiner_residual": 1.279416899945322e-15,
+    "analog_inverse_residual": 2.331872224293612e-15,
+    "analog_leakage": 6.94186801199942e-16,
+    "adjacent_Givens": 81,
+    "adjacent_CNOTs": 72
+  },
+  "route_A_ternary_Naimark": {
+    "maximum_effect_sum_residual": 3.1473877936705556e-16,
+    "maximum_branch_effect_residual": 1.6079679568759646e-16,
+    "held_context_isometry_residual": 2.1945786489313596e-16,
+    "held_context_grade_residual": 1.1102230246251565e-16,
+    "rho_grade_functional_supplied": true,
+    "branch_norm_called_probability": false
+  },
+  "route_B_mixed_projective": {
+    "maximum_effect_merge_residual": 2.220446049250313e-16,
+    "maximum_grade_merge_residual": 1.1102230246251565e-16,
+    "refinement_CP_residual": 1.1102230246251565e-16,
+    "distinct_decomposition_CP_separator": 0.3535533905932737,
+    "nonlinear_fine_sum_separator": 0.3749999999999999,
+    "fine_tags_erased": false
+  },
+  "route_C_resource_split": {
+    "input_excitations": 24,
+    "output_excitations": 24,
+    "train_partition": [4, 8],
+    "held_partition": [2, 2, 8],
+    "refinement_grade_residual": 0.0,
+    "resource_called_energy": false
+  },
+  "conditional_occurrence_interface": {
+    "Cycle552_interface_M2": 276,
+    "bounded_product_envelope_M2": 401,
+    "interface_rows": 19,
+    "failures": 0,
+    "inverse_failures": 0,
+    "mismatch_failures": 0,
+    "lawful_domain_refusals": 5,
+    "supplied_member_source": "Cycle552 MEMBER_STATE and law word",
+    "different_supplied_grades_same_member_same_interface": true,
+    "grade_selects_objective_member": false,
+    "framework_Record_produced": false,
+    "unified_menu_to_member_selector_constructed": false
+  },
+  "covariance_and_deletions": {
+    "proper_cubic_frames": 24,
+    "frame_products": 576,
+    "frame_failures": 0,
+    "analog_Givens_deletion_minimum": 0.6058108930553722,
+    "resource_CNOT_deletion_residual": 1.4142135623730951,
+    "malformed_refusals": 7
+  },
+  "scope_boundary": {
+    "universal_or_autonomous_menu_eligibility_closed": false,
+    "physical_grade_functional_selected": false,
+    "objective_member_tied_to_grade": false,
+    "framework_Record_formation_closed": false,
+    "Born_frequency_calibration_closed": false,
+    "unbounded_tiling_or_resource_renewal_closed": false,
+    "shared_substrate_obstruction": false,
+    "axiom_pressure": false,
+    "broad_no_go_gate": "FAIL / DO NOT SHIP"
+  }
+}

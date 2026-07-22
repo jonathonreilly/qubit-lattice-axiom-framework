@@ -126,7 +126,7 @@ These dispatch targets have been re-audited after their manifest's `generated_da
 | 12 | `g_bare_two_ward_closure_note_2026-04-18` | positive_theorem / unaudited / unaudited | blocked_convention_see_G_BARE_PROMOTION_PANEL_FINDING_2026-05-28 |
 | 13 | `wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08` | bounded_theorem / unaudited / unaudited | exact_content_already_lifted_in_companion |
 | 14 | `g_bare_rigidity_theorem_note` | bounded_theorem / audited_renaming / audited_renaming | load_bearing_in_open_g_bare_closure |
-| 15 | `koide_circulant_wilson_target_note_2026-04-18` | positive_theorem / unaudited / unaudited | assembler_not_source_of_exact_statement |
+| 15 | `koide_circulant_wilson_target_note_2026-04-18` | positive_theorem / audit_in_progress / audit_in_progress | assembler_not_source_of_exact_statement |
 | 16 | `r_base_group_theory_derivation_theorem_note_2026-04-24` | bounded_theorem / unaudited / unaudited | exact_arithmetic_conditional_on_admitted_normalization |
 | 17 | `generation_axiom_boundary_note` | bounded_theorem / audited_clean / retained_bounded | bounded_terminal_after_dispatch_audit; positive_theorem promotion is not supported by current source scope. Future promotion requires a source PR that splits or strengthens the claim. |
 | 18 | `native_gauge_closure_note` | positive_theorem / audited_clean / retained | bounded_terminal_after_dispatch_audit; positive_theorem promotion is not supported by current source scope. Future promotion requires a source PR that splits or strengthens the structural gauge-closure claim. |

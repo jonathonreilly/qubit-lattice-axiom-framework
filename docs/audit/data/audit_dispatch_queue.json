@@ -3179,9 +3179,9 @@
       "state": "retired"
     },
     {
-      "actual_audit_status": "unaudited",
+      "actual_audit_status": "audit_in_progress",
       "actual_claim_type": "positive_theorem",
-      "actual_effective_status": "unaudited",
+      "actual_effective_status": "audit_in_progress",
       "audit_question": null,
       "claim_id": "koide_circulant_wilson_target_note_2026-04-18",
       "expected_current_audit_status": null,

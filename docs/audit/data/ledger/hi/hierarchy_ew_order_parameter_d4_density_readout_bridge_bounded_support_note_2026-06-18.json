@@ -1,45 +1,163 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
-  "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "audit_date": "2026-07-22T20:28:51.421599+00:00",
+  "audit_invocation_history": [
+    "43d1cb2921c445cd9e9bef3c039c058a",
+    "4e8e3077e4524e1cb4ba3c456f660913"
+  ],
+  "audit_invocation_id": "4e8e3077e4524e1cb4ba3c456f660913",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 0,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "exists": true,
+      "runner_path": "scripts/frontier_hierarchy_ew_order_parameter_d4_density_readout_bridge_2026_06_18.py"
+    },
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "Exact finite-dimensional diagonalization and scalar identities for the explicitly defined real-linear map L and quadratic form Q on C^2, without physical identification.",
+      "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16": "Exact positive-real algebra mapping a fixed D=4 density coefficient ratio to an inverse fourth-root scale ratio, including sign, reference normalization, and the stated APBC endpoint evaluations; no electroweak VEV identification."
+    },
+    "dep_claim_type": {
+      "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "positive_theorem",
+      "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16": "decoration"
+    },
+    "dep_effective_status": {
+      "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "retained",
+      "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16": "decoration_under_hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10"
+    },
+    "deps": [
+      "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+      "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 10.506,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_hierarchy_ew_order_parameter_d4_density_readout_bridge_2026_06_18.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "2e6ca95bbb9567620a868c0717e7cb602dbf21ba66b0426ee4eb95c248136daa",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "2e6ca95bbb9567620a868c0717e7cb602dbf21ba66b0426ee4eb95c248136daa",
+    "runner_path": "scripts/frontier_hierarchy_ew_order_parameter_d4_density_readout_bridge_2026_06_18.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 726
+  },
+  "audit_status": "audit_in_progress",
+  "auditor": "codex-audit-batch-A-20260722-817eb7b8",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": "cross_confirmation_disagreement",
+  "chain_closes": false,
+  "chain_closure_explanation": "The finite algebra closes independently, but the source predicts 12 passing checks while the included runner executes and reports 13. The as-written verification contract is therefore stale.",
   "claim_id": "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18",
-  "claim_scope": null,
+  "claim_scope": "For the defined neutral vector H(v) and a supplied positive quartic D=4 density, the q=v^2 substitution, inverse fourth-root fixed-density ratio, and as-written runner verification total.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-22T20:28:51.421599+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "critical",
-  "cross_confirmation": null,
+  "cross_confirmation": {
+    "first_audit": {
+      "audit_date": "2026-07-22T20:28:51.421599+00:00",
+      "audit_invocation_id": "43d1cb2921c445cd9e9bef3c039c058a",
+      "auditor": "codex-audit-batch-A-20260722-817eb7b8",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite algebra closes independently, but the source predicts 12 passing checks while the included runner executes and reports 13. The as-written verification contract is therefore stale.",
+      "claim_scope": "For the defined neutral vector H(v) and a supplied positive quartic D=4 density, the q=v^2 substitution, inverse fourth-root fixed-density ratio, and as-written runner verification total.",
+      "claim_type": "bounded_theorem",
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "For positive equal-density endpoints, q(H(v))=v^2 implies rho_*=A(L)v(L)^4 and v(L)/v_ref=(A_ref/A(L))^(1/4).",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "notes_for_re_audit_if_any": "Correct the Verification block's expected total from 12 to 13, or reconcile the runner check count, then re-audit the unchanged algebra.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 4,
+        "C": 0,
+        "D": 0,
+        "total_pass": 13
+      },
+      "verdict": "audited_failed",
+      "verdict_rationale": "Issue: The theorem's algebra checks, but its Verification section predicts TOTAL: PASS=12 FAIL=0 while the included runner executes and reports 13 passes. Why this blocks: the source is stale relative to its primary verification artifact, despite independent confirmation of q=v^2, rho_*=Av^4, and the inverse fourth-root ratio. Repair target: update the expected total to 13 or reconcile the runner's check set and rerun it. Claim boundary until fixed: the exact finite algebra is supported, but the note's verification claim is not."
+    },
+    "mode": "terminal_second_pass",
+    "second_audit": {
+      "audit_date": "2026-07-22T20:28:51.429573+00:00",
+      "audit_invocation_id": "4e8e3077e4524e1cb4ba3c456f660913",
+      "auditor": "codex-audit-batch-B-20260722-c7b011c6",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "chain_closes": true,
+      "chain_closure_explanation": "The bounded algebra closes: evaluating the defined neutral vector gives q(H(v))=v^2, after which the fixed-density inverse fourth-root ratio follows by exact substitution. Physical Higgs-density identification, endpoint selection, and absolute scale are outside the audited scope.",
+      "claim_scope": "For H(v)=(0,v/sqrt(2))^T with v>0 and a supplied positive density rho_*=A(L)[2 H^dagger H]^2 with A(L)>0, establish q(H(v))=v^2, rho_*=A(L)v(L)^4, and v(L)/v_ref=(A_ref/A(L))^(1/4), together with formal fixed-coupling scalar-readout compatibility.",
+      "claim_type": "decoration",
+      "decoration_parent_claim_id": "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16",
+      "independence": "fresh_context",
+      "load_bearing_step": "Therefore any positive quartic D=4 density on this order-parameter coordinate is exactly rho_* = A(L) v(L)^4.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "notes_for_re_audit_if_any": "Re-audit if the note later adds an independent physical carrier, endpoint-selection result, or absolute-scale conclusion.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 13
+      },
+      "verdict": "audited_decoration",
+      "verdict_rationale": "Every scientific load-bearing step is exact class-A algebra, and the runner contains no external comparator. The fourth-root density readout is already supplied by the single D4 density-scale parent; evaluating q on the defined neutral vector and restating the formal quadratic-form readouts add no independent physical content. The properly scoped result is therefore an algebraic decoration under that parent, not a new bounded theorem."
+    },
+    "status": "disagreement"
+  },
   "decoration_parent_claim_id": null,
   "deps": [
     "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
     "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16"
   ],
   "direct_in_degree": 2,
-  "effective_status": "unaudited",
+  "effective_status": "audit_in_progress",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audit_in_progress",
   "load_bearing_score": 10.506,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "For positive equal-density endpoints, q(H(v))=v^2 implies rho_*=A(L)v(L)^4 and v(L)/v_ref=(A_ref/A(L))^(1/4).",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "279dc21f6e60db28c16f5d621a990953db6b70854eef05ec4473bcf7b717c901",
   "note_path": "docs/HIERARCHY_EW_ORDER_PARAMETER_D4_DENSITY_READOUT_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Correct the Verification block's expected total from 12 to 13, or reconcile the runner check count, then re-audit the unchanged algebra.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -183,14 +301,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
+    "A": 9,
+    "B": 4,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 13
   },
   "runner_path": "scripts/frontier_hierarchy_ew_order_parameter_d4_density_readout_bridge_2026_06_18.py",
   "title": "Hierarchy EW Order-Parameter D4 Density Readout Bridge",
   "transitive_descendants": 726,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: The theorem's algebra checks, but its Verification section predicts TOTAL: PASS=12 FAIL=0 while the included runner executes and reports 13 passes. Why this blocks: the source is stale relative to its primary verification artifact, despite independent confirmation of q=v^2, rho_*=Av^4, and the inverse fourth-root ratio. Repair target: update the expected total to 13 or reconcile the runner's check set and rerun it. Claim boundary until fixed: the exact finite algebra is supported, but the note's verification claim is not."
 }

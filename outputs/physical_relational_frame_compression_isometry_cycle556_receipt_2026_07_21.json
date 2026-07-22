@@ -1,0 +1,77 @@
+{
+  "status": "cycle556-three-recipient-isometry-and-gauge-quotient-closed-strict-no-recipient-rank-obstruction",
+  "authority": "none",
+  "audit": "unset",
+  "runner_sha256": "88f28df65369737b68b2804c15988aee58b2c396d09ed8aaffd99fa472bcc4d3",
+  "note_sha256": "cd2a13f0949e7372e2ac97fb3c655ee8801c1200aa87ee15b75947692b154435",
+  "parent_certificate_sha256": "522d02e8bafd6085a628438b06bf7a307b77da10457f322a0be01b8c79a5e03d",
+  "tests_passed": 12,
+  "tests_total": 12,
+  "pass": true,
+  "elapsed_seconds_internal": 236.96551112493034,
+  "timed_wall_seconds": 238.63,
+  "maximum_RSS_bytes": 158351360,
+  "process_swap_count": 0,
+  "information_rank_contract": {
+    "six_bit_input_dimension_per_unchanged_target_gauge_ray": 64,
+    "three_bit_strict_terminal_dimension_per_same_ray": 8,
+    "strict_no_recipient_rank_deficiency": 56,
+    "minimum_isometric_recipient_dimension": 8,
+    "minimum_isometric_recipient_qubits": 3,
+    "true_dimension_reducing_blank_retirement_constructed": false,
+    "information_transfer_with_three_recipient_qubits_constructed": true
+  },
+  "recipient_isometry": {
+    "L5": {
+      "branch_intertwining_tests": 200000,
+      "chi_dependent_branch_tests": 19200,
+      "remote_SWAP_calls": 9000,
+      "Wilson_and_recipient_sink_M2": 1500
+    },
+    "held_L6": {
+      "branch_intertwining_tests": 345600,
+      "chi_dependent_branch_tests": 27648,
+      "remote_SWAP_calls": 15552,
+      "Wilson_and_recipient_sink_M2": 2592
+    },
+    "intertwining_chi_endpoint_route_permutation_or_inverse_failures": 0,
+    "old_frame_and_syndrome_sources_terminally_blank": true,
+    "recipient_contains_original_frame_information": true,
+    "physical_content_compression_claimed": false,
+    "source_sink_check_group_conjugation_claimed": false,
+    "changing_check_or_code_deformation_law_constructed": false
+  },
+  "dressed_nonCSS_gauge_quotient": {
+    "full_sink_logical_quotient_dimension_and_rank": [12, 12],
+    "frame_gauge_dimension_and_rank": [6, 6],
+    "protected_Wilson_commutant_dimension_and_rank": [6, 6],
+    "target_dressed_gauge_commutator_tests_L5_L6": [600000, 1036800],
+    "target_dressed_gauge_commutator_failures": 0,
+    "dressed_logical_gauge_support_L5_L6": [50, 72],
+    "bounded_implementation_primitive_support_M2": 3,
+    "physical_frame_information_blank": false,
+    "physical_Hilbert_dimension_reduced": false
+  },
+  "route_controls": {
+    "Clifford_chi_mixed_derivative_tests_L5_L6": [300, 432],
+    "Clifford_classification_failures": 0,
+    "existing_full_gauge_absorption_requires_reserved_input_fraction": "1/8",
+    "dissipative_target_channel_preserved": true,
+    "all_zero_frame_reset_retained_check_failures_L5_L6": [375, 648],
+    "autonomous_changing_check_removal_law_constructed": false,
+    "all24_all576_phase_aware_failures": 0,
+    "mass_contact_seam_GammaP_inverse_deletion_replay": true
+  },
+  "scope_boundary": {
+    "strict_no_recipient_isometry_narrow_no_go": true,
+    "minimum_isometric_recipient_qubits_under_exact_contract": 3,
+    "six_protected_reference_bits_proved_minimum": false,
+    "recipient_route_called_compression": false,
+    "gauge_quotient_called_physical_blanking": false,
+    "full_physical_recurrent_update": false,
+    "rough_source_product_encoder": false,
+    "shared_substrate_obstruction": false,
+    "axiom_pressure": false,
+    "broad_negative_gate": "FAIL / DO NOT SHIP"
+  }
+}

@@ -1021,7 +1021,7 @@
         },
         {
           "claim_id": "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "gauge_vacuum_plaquette_local_environment_factorization_theorem_note",
@@ -2799,6 +2799,6 @@
       "uncertified_count": 642
     }
   ],
-  "repo_head": "9031d5e22dab83ba172b8dbbc73adf479fcc7de8",
+  "repo_head": "45a3d378f62f7b5df470b3f05185942eeb444e6c",
   "schema": "lane_certification_v2"
 }

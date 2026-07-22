@@ -39,6 +39,7 @@ from pathlib import Path
 
 import no_go_discipline_gate
 import audit_invocation
+import audit_contract
 
 import ledger_io
 
@@ -542,6 +543,13 @@ def audit_summary_tuple_schema_error(summary: object) -> str | None:
     claim_type = summary.get("claim_type")
     if claim_type not in ALLOWED_CLAIM_TYPES:
         return f"audit summary has invalid claim_type {claim_type!r}"
+    tuple_error = audit_contract.verdict_claim_type_error(
+        verdict,
+        claim_type,
+        summary.get("decoration_parent_claim_id"),
+    )
+    if tuple_error:
+        return f"audit summary has incompatible verdict/claim_type: {tuple_error}"
     scope = summary.get("claim_scope")
     if not isinstance(scope, str) or not scope.strip():
         return "audit summary claim_scope must be a non-empty string"
@@ -1175,10 +1183,15 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
         judgment.get("ratified_decoration_parent_claim_id")
         or judgment.get("decoration_parent_claim_id")
     )
-    if ratified_verdict == "audited_decoration" and not ratified_decoration_parent:
-        return False, "judicial audited_decoration requires decoration_parent_claim_id"
     ratified_class = judgment.get("ratified_load_bearing_step_class")
     final_claim_type = ratified_claim_type or chosen_claim_type or row.get("claim_type")
+    tuple_error = audit_contract.verdict_claim_type_error(
+        ratified_verdict,
+        final_claim_type,
+        ratified_decoration_parent,
+    )
+    if tuple_error:
+        return False, f"judicial verdict/claim_type incompatibility: {tuple_error}"
     note_path = row.get("note_path") or ""
     note_body = ""
     if note_path:
@@ -1492,13 +1505,13 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
         )
         audit["no_go_discipline"] = packet
 
-    if verdict == "audited_clean" and claim_type in {"decoration", "meta"}:
-        return False, f"audited_clean cannot ratify claim_type={claim_type!r}"
-    if verdict == "audited_decoration":
-        if claim_type != "decoration":
-            return False, "audited_decoration requires claim_type='decoration'"
-        if not audit.get("decoration_parent_claim_id"):
-            return False, "audited_decoration requires decoration_parent_claim_id"
+    tuple_error = audit_contract.verdict_claim_type_error(
+        verdict,
+        claim_type,
+        audit.get("decoration_parent_claim_id"),
+    )
+    if tuple_error:
+        return False, tuple_error
 
     independence = audit["independence"]
     if independence not in ALLOWED_INDEPENDENCE:

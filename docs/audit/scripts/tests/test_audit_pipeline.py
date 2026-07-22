@@ -8144,6 +8144,36 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             ) or "",
         )
 
+    def test_runner_rejects_semantically_incompatible_verdict_type_tuple(self):
+        m = _import_codex_audit_runner()
+        base = {
+            field: "test value" for field in m.REQUIRED_VERDICT_FIELDS
+        }
+        base.update({
+            "claim_id": "target",
+            "claim_type": "bounded_theorem",
+            "verdict": "audited_decoration",
+            "negative_assertion_classes": [],
+            "no_go_discipline": None,
+            "decoration_parent_claim_id": "parent",
+        })
+        self.assertEqual(
+            m.validate_verdict(base, "target"),
+            "audited_decoration requires claim_type='decoration'",
+        )
+
+        base.update({
+            "claim_type": "decoration",
+            "verdict": "audited_clean",
+        })
+        self.assertEqual(
+            m.validate_verdict(base, "target"),
+            "audited_clean cannot ratify claim_type='decoration'",
+        )
+
+        base["verdict"] = "audited_decoration"
+        self.assertIsNone(m.validate_verdict(base, "target"))
+
     def test_validation_repair_prompt_reuses_packet_and_preserves_strict_gate(self):
         m = _import_codex_audit_runner()
         original_prompt = "restricted packet with EXACT EVIDENCE LOCATOR"
@@ -13759,6 +13789,65 @@ class JudicialPanelOrchestratorTest(unittest.TestCase):
         self.assertIsNone(vote)
         self.assertIn("must explain the second auditor's error", status)
 
+    def test_panel_rejects_semantically_incompatible_votes(self):
+        m = _import("orchestrate_judicial_panel")
+        decoration_as_theorem = self._vote(
+            ratified_verdict="audited_decoration",
+            ratified_claim_type="bounded_theorem",
+            ratified_decoration_parent_claim_id="parent",
+        )
+        self.assertIn(
+            "audited_decoration requires claim_type='decoration'",
+            m.vote_schema_error(decoration_as_theorem) or "",
+        )
+
+        clean_decoration = self._vote(
+            ratified_verdict="audited_clean",
+            ratified_claim_type="decoration",
+            ratified_decoration_parent_claim_id="parent",
+        )
+        self.assertIn(
+            "audited_clean cannot ratify claim_type='decoration'",
+            m.vote_schema_error(clean_decoration) or "",
+        )
+
+        valid_decoration = self._vote(
+            ratified_verdict="audited_decoration",
+            ratified_claim_type="decoration",
+            ratified_decoration_parent_claim_id="parent",
+        )
+        self.assertIsNone(m.vote_schema_error(valid_decoration))
+
+    def test_judicial_apply_rejects_incompatible_tuple_defense_in_depth(self):
+        panel = _import("orchestrate_judicial_panel")
+        apply_mod = _import("apply_audit")
+        row = self._row("incompatible-judicial")
+        vote = self._vote(
+            sided_with="hybrid",
+            hybrid_resolution_note="combine the sound bounded pieces",
+            first_auditor_error="first scope is too broad",
+            second_auditor_error="second scope is too narrow",
+        )
+        blob = panel.judicial_blob(
+            row, vote, [vote] * 5, 5, invocation_id="7" * 32
+        )
+        blob.update({
+            "ratified_verdict": "audited_decoration",
+            "ratified_claim_type": "bounded_theorem",
+            "ratified_decoration_parent_claim_id": "parent",
+        })
+        ledger = {
+            "schema_version": 1,
+            "rows": {"incompatible-judicial": row},
+        }
+        before = copy.deepcopy(ledger)
+        ok, detail = apply_mod.apply_judicial_review(ledger, blob)
+        self.assertFalse(ok)
+        self.assertIn(
+            "audited_decoration requires claim_type='decoration'", detail
+        )
+        self.assertEqual(ledger, before)
+
     def test_sided_vote_must_match_selected_seat_before_blob(self):
         m = _import("orchestrate_judicial_panel")
         row = self._row()
@@ -14569,6 +14658,77 @@ class BatchOrchestratorSeatBankingTest(unittest.TestCase):
                     if verdict == "audited_conditional"
                     else "non_terminal_failed",
                 )
+
+    def test_incompatible_tuple_is_quarantined_before_apply(self):
+        m = _import("orchestrate_audit_batch")
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            row = {
+                "claim_id": "incompatible",
+                "claim_type": "bounded_theorem",
+                "criticality": "critical",
+                "audit_status": "unaudited",
+                "effective_status": "unaudited",
+                "cross_confirmation": None,
+                "deps": [],
+                "note_path": "",
+            }
+            jobs = []
+            for pass_no, invocation_id in ((1, "a" * 32), (2, "b" * 32)):
+                raw = root / f"raw-{pass_no}.txt"
+                raw.write_text(
+                    json.dumps({
+                        "claim_id": "incompatible",
+                        "audit_invocation_id": invocation_id,
+                        "load_bearing_step": "an exact bounded identity",
+                        "load_bearing_step_class": "A",
+                        "claim_type": "bounded_theorem",
+                        "claim_scope": "the bounded identity",
+                        "chain_closes": True,
+                        "chain_closure_explanation": "the identity closes",
+                        "verdict": "audited_decoration",
+                        "verdict_rationale": "algebraic reduction",
+                        "negative_assertion_classes": [],
+                        "decoration_parent_claim_id": "parent",
+                        "no_go_discipline": None,
+                    }),
+                    encoding="utf-8",
+                )
+                jobs.append({
+                    "cid": "incompatible",
+                    "pass": pass_no,
+                    "row": row,
+                    "stalled": False,
+                    "returncode": 0,
+                    "raw_output": raw,
+                    "invocation_id": invocation_id,
+                    "transport_bound": None,
+                    "evidence_manifest": {},
+                    "delivery": root / f"delivery-{pass_no}.json",
+                    "workdir": root,
+                })
+
+            report = []
+            with mock.patch.object(m, "apply_claim_serialized") as apply_mock:
+                ok, _, _, _ = m.apply_serialized(jobs, report)
+
+        self.assertTrue(ok)
+        apply_mock.assert_not_called()
+        self.assertEqual(
+            sum(item["result"] == "validation_failed" for item in report),
+            2,
+        )
+        self.assertTrue(all(
+            "audited_decoration requires claim_type='decoration'"
+            in item.get("detail", "")
+            for item in report
+            if item["result"] == "validation_failed"
+        ))
+        self.assertIn(
+            "schema_invalid_quarantined",
+            {item["result"] for item in report},
+        )
+        self.assertFalse(m.report_has_hard_blocker(report))
 
 class N5AdministrativeNegationExclusionTest(unittest.TestCase):
     """N5 administrative calibration fails safe on mixed evidence."""

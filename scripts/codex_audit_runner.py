@@ -62,6 +62,7 @@ import premise_nodes
 import ledger_io
 import no_go_discipline_gate
 import audit_invocation
+import audit_contract
 import compute_audit_dispatch_queue
 
 LEDGER_PATH = AUDIT_DIR / "data" / "audit_ledger.json"
@@ -1966,6 +1967,13 @@ def validate_verdict(
         return invocation_error
     if expected_invocation_id is not None and blob.get("audit_invocation_id") != expected_invocation_id:
         return "audit_invocation_id is absent or does not match the prompt-bound invocation"
+    tuple_error = audit_contract.verdict_claim_type_error(
+        blob.get("verdict"),
+        blob.get("claim_type"),
+        blob.get("decoration_parent_claim_id"),
+    )
+    if tuple_error:
+        return tuple_error
     forensic_tier = bool(
         source_requires_no_go
         or blob.get("claim_type") == "no_go"

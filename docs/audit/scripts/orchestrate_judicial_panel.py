@@ -40,6 +40,7 @@ from pathlib import Path
 SCRIPTS = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPTS))
 import ledger_io  # noqa: E402
+import audit_contract  # noqa: E402
 import orchestrate_audit_batch as batch  # noqa: E402
 import seed_audit_ledger as seed_ledger  # noqa: E402
 
@@ -154,6 +155,13 @@ def vote_schema_error(vote: object) -> str | None:
         return "vote has invalid ratified_verdict"
     if vote.get("ratified_claim_type") not in ALLOWED_CLAIM_TYPES:
         return "vote has invalid ratified_claim_type"
+    tuple_error = audit_contract.verdict_claim_type_error(
+        vote.get("ratified_verdict"),
+        vote.get("ratified_claim_type"),
+        vote.get("ratified_decoration_parent_claim_id"),
+    )
+    if tuple_error:
+        return f"vote has incompatible verdict/claim_type: {tuple_error}"
     for field in (
         "ratified_claim_scope",
         "ratified_load_bearing_step_class",

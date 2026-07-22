@@ -1116,10 +1116,6 @@
           "effective_status": "unaudited"
         },
         {
-          "claim_id": "hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10",
-          "effective_status": "unaudited"
-        },
-        {
           "claim_id": "hierarchy_effective_potential_endpoint_note",
           "effective_status": "unaudited"
         },
@@ -2780,9 +2776,9 @@
       "roots": [
         "strong_cp_theta_zero_note"
       ],
-      "uncertified_count": 638
+      "uncertified_count": 637
     }
   ],
-  "repo_head": "71b6048bcef64b717b75df920a802d5c342a20c4",
+  "repo_head": "b3de330418fadcce55ca88aef826031f2c05f97f",
   "schema": "lane_certification_v2"
 }

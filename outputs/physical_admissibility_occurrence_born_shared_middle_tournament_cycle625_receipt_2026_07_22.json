@@ -2,7 +2,7 @@
   "audit": "unset",
   "authority": "none",
   "axiom_pressure": false,
-  "elapsed_seconds": 1.7888091249624267,
+  "elapsed_seconds": 1.667964500025846,
   "highest_honest_terminal": "bounded candidate local formation/admission interface downstream of supplied bare occurrence plus bounded candidate grade/corpus; not extensional law identification, actuality, Record, realized history, or Born probability",
   "inventory": {
     "derived": [
@@ -29,7 +29,7 @@
       "finite noiseless gates and the byte-pinned Cycle523 one-/two-M2 lowering used by Cycles597/614"
     ]
   },
-  "maximum_RSS_bytes": 29442048,
+  "maximum_RSS_bytes": 29278208,
   "no_go_discipline": {
     "N1_broad_negative_gate": "FAIL_DO_NOT_SHIP",
     "N1_normalized_families": [
@@ -447,7 +447,7 @@
       "axiom pressure: none"
     ]
   },
-  "note_sha256": "9cfe494cbcb2370e0bd39d3895b64ce6d33fb11318fad74d6ede868e697d1a00",
+  "note_sha256": "66a940163d027f7b891004356cb9060671409ce194f7fd6e8fd28f21b0710de1",
   "optimal_next_campaign": "extensional-law exposure tournament across constrained-QCA, stochastic-dilation, and dissipative-formation updates, composed into the unchanged shared-middle interface before blinded Record-corpus tests",
   "pass": true,
   "route_A_structural_relation": {
@@ -2418,7 +2418,7 @@
     "runtime_state_specific_ROM": false,
     "unordered_complete_block_called_realized_corpus": false
   },
-  "runner_sha256": "a70356530d8aea5f3366796b2eb3a5d653d89163973c5de4809a3fa9875f1a5f",
+  "runner_sha256": "f77ffd6c3c12eb8ac1818026c5c3712fd4a8f57903909a5ee54a49278ef9e50e",
   "shared_substrate_obstruction": false,
   "shore": {
     "Cycle614_621_receipt_contract": true,

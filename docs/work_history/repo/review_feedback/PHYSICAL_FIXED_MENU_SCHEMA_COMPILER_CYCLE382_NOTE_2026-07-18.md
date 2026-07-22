@@ -1,6 +1,6 @@
 # Physical fixed-menu-schema compiler — Cycle 382 (2026-07-18)
 
-Status: **constructive retained-grade candidate, runner green; authority: none;
+Classification: **bounded constructive candidate, runner green; authority: none;
 audit: unset.**  This note does not alter axioms, foundation, Qualification,
 primitives, registries, policies, queues, or audit status.  There is no axiom
 pressure.

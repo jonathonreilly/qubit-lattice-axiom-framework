@@ -1068,7 +1068,7 @@ def note_text(receipt: dict[str, object]) -> str:
     )
     return f"""# Physical Admissibility / occurrence / Born shared-middle tournament — Cycle 625
 
-Status: **positive supplied physical shared middle and ROM-free bounded grade block; the retained surfaces do not identify the extensional formation/admission, actuality, Record, frame/menu, or Born law**
+Classification: **positive supplied physical shared middle and ROM-free bounded grade block; the retained surfaces do not identify the extensional formation/admission, actuality, Record, frame/menu, or Born law**
 
 Authority: **none**
 

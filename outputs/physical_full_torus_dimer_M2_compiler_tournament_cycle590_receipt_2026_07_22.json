@@ -1,0 +1,642 @@
+{
+  "HEAD": "aba7b7ce7e9c6054984c7c981c4378d662e68a9e",
+  "audit": "unset",
+  "authority": "none",
+  "constitutional_effect": "none",
+  "elapsed_seconds": 204.41743012494408,
+  "highest_honest_terminal": "exact held L6 domain-matched N=2 full-torus free-plus-contact packet composed with a bounded 53-M2-per-cell physical compiler; the global N<=3 cutoff, preparation, fresh pointer resources, N4/four-CAR scattering, continuum, source and Born law remain supplied/open",
+  "maturity": {
+    "Born_probability_repo_strict": [
+      4.2,
+      3.65
+    ],
+    "causal_time_repo_strict": [
+      3.95,
+      3.8
+    ],
+    "gravity_source_repo_strict": [
+      4.1,
+      3.85
+    ],
+    "inertia_matter_repo_strict": [
+      4.82,
+      4.9
+    ],
+    "operational_quantum_records_repo_strict": [
+      4.8,
+      4.65
+    ]
+  },
+  "maximum_RSS_bytes": 565362688,
+  "no_go_discipline": {
+    "N1_normalized_alternatives": [
+      [
+        "full-torus direct CAR packet",
+        "positive held L6"
+      ],
+      [
+        "local gauge/auxiliary W563 compiler",
+        "positive held L6 with supplied cutoff"
+      ],
+      [
+        "direction-resolved local Naimark pointer",
+        "positive observable, fresh resources"
+      ],
+      [
+        "locally enforced number-cutoff Gauss law",
+        "open"
+      ],
+      [
+        "complete N=4/four-CAR dimer scattering compiler",
+        "open"
+      ],
+      [
+        "branch-aware A2/T2 spectral instrument",
+        "open"
+      ],
+      [
+        "local packet preparation circuit",
+        "open"
+      ]
+    ],
+    "N1_qualifying_constructive_families": 3,
+    "N1_required_before_negative": 5,
+    "N2_directional_wall_pairs": [
+      {
+        "collapsed": false,
+        "first_to_second": "local cutoff enforcement needs bounded Gauss/check law, not larger complete CAR code and interaction",
+        "second_to_first": "N4/four-CAR dynamics needs larger complete CAR code and interaction, not bounded Gauss/check law"
+      },
+      {
+        "collapsed": false,
+        "first_to_second": "local cutoff enforcement needs bounded Gauss/check law, not held co-moving spectral branches",
+        "second_to_first": "intrinsic A2/T2 resolution needs held co-moving spectral branches, not bounded Gauss/check law"
+      },
+      {
+        "collapsed": false,
+        "first_to_second": "local cutoff enforcement needs bounded Gauss/check law, not bounded autonomous state synthesis",
+        "second_to_first": "packet preparation needs bounded autonomous state synthesis, not bounded Gauss/check law"
+      },
+      {
+        "collapsed": false,
+        "first_to_second": "local cutoff enforcement needs bounded Gauss/check law, not reset/archive member law",
+        "second_to_first": "renewable pointer resources needs reset/archive member law, not bounded Gauss/check law"
+      },
+      {
+        "collapsed": false,
+        "first_to_second": "local cutoff enforcement needs bounded Gauss/check law, not scaling theorem and measured unit map",
+        "second_to_first": "continuum/empirical calibration needs scaling theorem and measured unit map, not bounded Gauss/check law"
+      },
+      {
+        "collapsed": false,
+        "first_to_second": "N4/four-CAR dynamics needs larger complete CAR code and interaction, not held co-moving spectral branches",
+        "second_to_first": "intrinsic A2/T2 resolution needs held co-moving spectral branches, not larger complete CAR code and interaction"
+      },
+      {
+        "collapsed": false,
+        "first_to_second": "N4/four-CAR dynamics needs larger complete CAR code and interaction, not bounded autonomous state synthesis",
+        "second_to_first": "packet preparation needs bounded autonomous state synthesis, not larger complete CAR code and interaction"
+      },
+      {
+        "collapsed": false,
+        "first_to_second": "N4/four-CAR dynamics needs larger complete CAR code and interaction, not reset/archive member law",
+        "second_to_first": "renewable pointer resources needs reset/archive member law, not larger complete CAR code and interaction"
+      },
+      {
+        "collapsed": false,
+        "first_to_second": "N4/four-CAR dynamics needs larger complete CAR code and interaction, not scaling theorem and measured unit map",
+        "second_to_first": "continuum/empirical calibration needs scaling theorem and measured unit map, not larger complete CAR code and interaction"
+      },
+      {
+        "collapsed": false,
+        "first_to_second": "intrinsic A2/T2 resolution needs held co-moving spectral branches, not bounded autonomous state synthesis",
+        "second_to_first": "packet preparation needs bounded autonomous state synthesis, not held co-moving spectral branches"
+      },
+      {
+        "collapsed": false,
+        "first_to_second": "intrinsic A2/T2 resolution needs held co-moving spectral branches, not reset/archive member law",
+        "second_to_first": "renewable pointer resources needs reset/archive member law, not held co-moving spectral branches"
+      },
+      {
+        "collapsed": false,
+        "first_to_second": "intrinsic A2/T2 resolution needs held co-moving spectral branches, not scaling theorem and measured unit map",
+        "second_to_first": "continuum/empirical calibration needs scaling theorem and measured unit map, not held co-moving spectral branches"
+      },
+      {
+        "collapsed": false,
+        "first_to_second": "packet preparation needs bounded autonomous state synthesis, not reset/archive member law",
+        "second_to_first": "renewable pointer resources needs reset/archive member law, not bounded autonomous state synthesis"
+      },
+      {
+        "collapsed": false,
+        "first_to_second": "packet preparation needs bounded autonomous state synthesis, not scaling theorem and measured unit map",
+        "second_to_first": "continuum/empirical calibration needs scaling theorem and measured unit map, not bounded autonomous state synthesis"
+      },
+      {
+        "collapsed": false,
+        "first_to_second": "renewable pointer resources needs reset/archive member law, not scaling theorem and measured unit map",
+        "second_to_first": "continuum/empirical calibration needs scaling theorem and measured unit map, not reset/archive member law"
+      }
+    ],
+    "N3_hidden_supplies": [
+      "beta=-0.3, g=0.37, L3/L6 tori, K labels, eigensolver target and packet weights",
+      "complete global N<=3 lawful-domain cutoff, compile-time colors/layer order",
+      "blank pointer and dephasing M2, noiseless exact local gates"
+    ],
+    "N4_residual_matching": [
+      "Cycle563/569 physical-M2 compiler wall is closed for this held N2 packet",
+      "Cycle583 second-mode wall remains a spectral issue, not a compiler obstruction",
+      "global cutoff locality and N4 are deliberately not conflated"
+    ],
+    "N5_resolution": "exact finite L3/L6 N2 packet and complete N<=3 compiler tables only",
+    "N6_partial_closure_paths": [
+      "add local number-regulating gauge dynamics without changing packet sector",
+      "extend local tables to complete N=4 and execute two-dimer scattering",
+      "compile a held branch-aware A2/T2 projector and local preparation circuit"
+    ],
+    "N7_hostile_steelman": "A hostile reviewer can promote total number to a locally conserved gauge charge with bounded ancillas, then reuse the already-positive L6 W563 geometry; this concrete route prevents treating the supplied global cutoff as a shared locality obstruction.",
+    "N8_cross_cycle_echo": "Cycle560 constructed local encoder tables, Cycle563 retired runtime factor order, Cycle569 preserved contact/seam/mass, and this cycle domain-matches Cycle578's dimer. The remaining cutoff supply may likewise admit a constructive retirement.",
+    "axiom_pressure": false,
+    "negative_claim_shipped": false,
+    "shared_obstruction": false
+  },
+  "note_sha256": "0bbee94bf3fcc70cee7c234d678fad3ba369810b461e73c93744fa92dc4adf33",
+  "pass": true,
+  "pins": {
+    "outputs/physical_enlarged_link_contact_work_tournament_cycle569_receipt_2026_07_22.json": "c80aae229d3721b273d12188960e2a4b16402d10a982856bec76c465dad52baa",
+    "outputs/physical_held_sparse_order_retirement_cycle563_receipt_2026_07_21.json": "350e2c1922379bb42091e1cb5685c9e1f698ed23b81acf7c14803ba5043fcfc1",
+    "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py": "ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a",
+    "scripts/physical_contact_dimer_infinite_internal_content_tournament_cycle583_2026_07_22.py": "3f1672ef0d2c0063d5760a6b0885d75cb75b63c64b44951399fd0762d5499f7f",
+    "scripts/physical_enlarged_link_contact_work_tournament_cycle569_2026_07_22.py": "c0f06a9cc9ffc4dcfe1d80b94da10bbef81ca1c74fddddac48712b0a7c332ced",
+    "scripts/physical_global_N3_returned_slot_compiler_cycle560_2026_07_21.py": "30dc85fd6a1f328bdd095d41d2a3ddb6d1fd71eb4298b34bc635e3ea530a3764",
+    "scripts/physical_held_sparse_order_retirement_cycle563_2026_07_21.py": "444a5c0fb3cb1758236ddefaeb472d0002cadb256d3c4df723fd562129c7325b",
+    "scripts/physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_2026_07_22.py": "25806853483a822b86dd55c50ebedb7957395151ef262317110b348c6931b9ab",
+    "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py": "c410b754d4e984f6ee5ccbc7c5a52e776c50c91c4daa12d798044f104cc7435b"
+  },
+  "retained_fixtures": {
+    "Cycle230_contact_factorization_residual": 2.149937642474629e-15,
+    "Cycle230_seam_braid_residual": 0,
+    "one_particle_mass_residual": 8.7159799596118e-16
+  },
+  "route_A_full_torus_packet": {
+    "pass": true,
+    "rows": [
+      {
+        "K_index_labels": [
+          -1,
+          0,
+          1
+        ],
+        "Pauli_forbidden_exchange_fixed_basis_zeros": 6,
+        "center_gauge_compatible_COM_grid_labels": 27,
+        "compatible_but_unselected_packet_labels": 24,
+        "compatible_total_momentum_rule": "K_i L/(4 pi) is integer",
+        "contact_deletion_signal": 0.1772801157200838,
+        "dense_two_CAR_amplitude_entries": 26244,
+        "even_torus_seam_weight": 0.0,
+        "exchange_self_inverse_relative_sites": 1,
+        "fiber_rows": [
+          {
+            "continuation_points_including_K0": 13,
+            "embedded_exchange_residual": 0.0,
+            "embedded_norm_residual": 1.3322676295501878e-15,
+            "individual_full_torus_update_residual": 6.933215240723181e-16,
+            "intermediate_noncompatible_K_used_only_for_branch_selection": true,
+            "minimum_adjacent_branch_overlap": 0.7839524033206757,
+            "momentum": [
+              -4.1887902047863905,
+              0.0,
+              0.0
+            ],
+            "onsite_A2_source_fraction": 0.9489001377182545,
+            "onsite_A2_source_weight": 0.18108514102747006,
+            "phase": -2.8636822367922257,
+            "quotient_columns": 483,
+            "relative_contact_weight": 0.19083687927679222,
+            "relative_eigen_residual": 8.910066786257054e-16
+          },
+          {
+            "continuation_points_including_K0": 1,
+            "embedded_exchange_residual": 0.0,
+            "embedded_norm_residual": 6.328271240363392e-15,
+            "individual_full_torus_update_residual": 6.13423630800806e-16,
+            "intermediate_noncompatible_K_used_only_for_branch_selection": false,
+            "minimum_adjacent_branch_overlap": 1.0,
+            "momentum": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "onsite_A2_source_fraction": 0.9999999999999993,
+            "onsite_A2_source_weight": 0.264013803525729,
+            "phase": -2.9789445604663647,
+            "quotient_columns": 483,
+            "relative_contact_weight": 0.2640138035257292,
+            "relative_eigen_residual": 6.029689190904235e-16
+          },
+          {
+            "continuation_points_including_K0": 13,
+            "embedded_exchange_residual": 0.0,
+            "embedded_norm_residual": 1.5543122344752192e-15,
+            "individual_full_torus_update_residual": 7.533436911033786e-16,
+            "intermediate_noncompatible_K_used_only_for_branch_selection": true,
+            "minimum_adjacent_branch_overlap": 0.7839524033206764,
+            "momentum": [
+              4.1887902047863905,
+              0.0,
+              0.0
+            ],
+            "onsite_A2_source_fraction": 0.9489001377182547,
+            "onsite_A2_source_weight": 0.18108514102746992,
+            "phase": -2.8636822367922257,
+            "quotient_columns": 483,
+            "relative_contact_weight": 0.19083687927679205,
+            "relative_eigen_residual": 8.215932132153882e-16
+          }
+        ],
+        "full_torus_one_particle_modes": 162,
+        "incompatible_K_2pi_over_L_rejected": true,
+        "length": 3,
+        "maximum_all24_covariance_residual": 0.0,
+        "maximum_distinct_K_overlap": 1.4918357244867073e-14,
+        "onsite_contact_weight": 0.23220782242974078,
+        "ordinary_COM_grid_labels": 27,
+        "packet_exchange_residual": 0.0,
+        "packet_full_torus_update_residual": 2.127374657910841e-15,
+        "packet_inverse_residual": 4.558963847421759e-16,
+        "packet_is_full_spatial_torus_not_full_COM_band": true,
+        "packet_norm_residual": 1.1102230246251565e-16,
+        "parity_incompatible_COM_grid_labels": 0,
+        "proper_cubic_frames": "train-inherited",
+        "selected_packet_momentum_labels": 3,
+        "split": "train"
+      },
+      {
+        "K_index_labels": [
+          -1,
+          0,
+          1
+        ],
+        "Pauli_forbidden_exchange_fixed_basis_zeros": 48,
+        "center_gauge_compatible_COM_grid_labels": 27,
+        "compatible_but_unselected_packet_labels": 24,
+        "compatible_total_momentum_rule": "K_i L/(4 pi) is integer",
+        "contact_deletion_signal": 0.14883274583737294,
+        "dense_two_CAR_amplitude_entries": 1679616,
+        "even_torus_seam_weight": 0.15509880896710615,
+        "exchange_self_inverse_relative_sites": 8,
+        "fiber_rows": [
+          {
+            "continuation_points_including_K0": 13,
+            "embedded_exchange_residual": 0.0,
+            "embedded_norm_residual": 2.19824158875781e-14,
+            "individual_full_torus_update_residual": 7.688403507847512e-16,
+            "intermediate_noncompatible_K_used_only_for_branch_selection": true,
+            "minimum_adjacent_branch_overlap": 0.7605929143612091,
+            "momentum": [
+              -2.0943951023931953,
+              0.0,
+              0.0
+            ],
+            "onsite_A2_source_fraction": 0.985892228639499,
+            "onsite_A2_source_weight": 0.026966475066121168,
+            "phase": -2.869972465066687,
+            "quotient_columns": 3864,
+            "relative_contact_weight": 0.02735235584860434,
+            "relative_eigen_residual": 1.7197368195710391e-15
+          },
+          {
+            "continuation_points_including_K0": 1,
+            "embedded_exchange_residual": 0.0,
+            "embedded_norm_residual": 1.1790568521519162e-13,
+            "individual_full_torus_update_residual": 6.625971386822024e-16,
+            "intermediate_noncompatible_K_used_only_for_branch_selection": false,
+            "minimum_adjacent_branch_overlap": 1.0,
+            "momentum": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "onsite_A2_source_fraction": 0.9999999999999992,
+            "onsite_A2_source_weight": 0.26846080520692467,
+            "phase": -2.9771814800643273,
+            "quotient_columns": 3864,
+            "relative_contact_weight": 0.2684608052069249,
+            "relative_eigen_residual": 6.282359432018985e-16
+          },
+          {
+            "continuation_points_including_K0": 13,
+            "embedded_exchange_residual": 0.0,
+            "embedded_norm_residual": 3.774758283725532e-14,
+            "individual_full_torus_update_residual": 8.064388798153578e-16,
+            "intermediate_noncompatible_K_used_only_for_branch_selection": true,
+            "minimum_adjacent_branch_overlap": 0.7605929143612039,
+            "momentum": [
+              2.0943951023931953,
+              0.0,
+              0.0
+            ],
+            "onsite_A2_source_fraction": 0.9858922286394989,
+            "onsite_A2_source_weight": 0.02696647506612105,
+            "phase": -2.869972465066687,
+            "quotient_columns": 3864,
+            "relative_contact_weight": 0.027352355848604223,
+            "relative_eigen_residual": 1.4531508576646936e-15
+          }
+        ],
+        "full_torus_one_particle_modes": 1296,
+        "incompatible_K_2pi_over_L_rejected": true,
+        "length": 6,
+        "maximum_all24_covariance_residual": 1.926558180433186e-16,
+        "maximum_distinct_K_overlap": 2.3570034812792073e-13,
+        "onsite_contact_weight": 0.16366423359527255,
+        "ordinary_COM_grid_labels": 216,
+        "packet_exchange_residual": 0.0,
+        "packet_full_torus_update_residual": 6.36135076417095e-14,
+        "packet_inverse_residual": 7.916863210665842e-16,
+        "packet_is_full_spatial_torus_not_full_COM_band": true,
+        "packet_norm_residual": 3.9745984281580604e-14,
+        "parity_incompatible_COM_grid_labels": 189,
+        "proper_cubic_frames": 24,
+        "selected_packet_momentum_labels": 3,
+        "split": "held"
+      }
+    ]
+  },
+  "route_B_physical_M2_compiler": {
+    "encoder": {
+      "E_network_Gram_raw_maximum": 0,
+      "Wdagger_W_declared_input_residual": 0,
+      "complete_global_N0_N1_N2_N3": {
+        "complete_columns": 362798137,
+        "occupation_partition_columns": {
+          "N0_vacuum": 1,
+          "N1_one_cell": 1296,
+          "N2_same_cell": 3240,
+          "N2_two_cells": 835920,
+          "N3_same_cell": 4320,
+          "N3_three_cells": 357773760,
+          "N3_two_plus_one": 4179600
+        },
+        "ordinary_companion_columns": 362796409,
+        "partition_sum": 362798137,
+        "pass": true,
+        "same_cell_special_six_ray_columns": 1728,
+        "sector_dimensions": {
+          "0": 1,
+          "1": 1296,
+          "2": 839160,
+          "3": 361957680
+        }
+      },
+      "controlled_single_Pauli_factors": 442476,
+      "fixed_cell_factor_order": "lexicographic base-chart order transported as an ordered circuit; it supplies no runtime parity sign, branch, sector, or frame query",
+      "global_CAR_modes": 1296,
+      "global_Jordan_Wigner_string_or_parity_service": false,
+      "held_size": false,
+      "length": 6,
+      "local_ray_histogram": {
+        "2": 7344,
+        "6": 1728
+      },
+      "local_words_per_cell": 42,
+      "locally_enforced_constraint_audit": {
+        "fixed_check_cases": 59608224,
+        "fixed_sector_commutator_failures": 0,
+        "port_constraint_cases": 32472576,
+        "port_constraint_commutator_failures": 0,
+        "route_B_six_M2_number_predicate": true,
+        "route_C_three_M2_validity_and_blank_predicate": true,
+        "selected_entries": 25056
+      },
+      "maximum_local_ray_norm_error": 2.220446049250313e-16,
+      "maximum_single_representative_fine_L1_radius": 16,
+      "maximum_single_representative_support_M2": 32,
+      "pass": true,
+      "periodic_cells": 216,
+      "preparation_sha256": "0947dd024265c25511fbee6380201b713df7af729775ba9f7387e74b79a8beb1",
+      "resource": {
+        "elapsed_seconds": 74.49163629102986,
+        "label": "Cycle560-global-encoder-L6",
+        "maximum_RSS_bytes": 565362688,
+        "process_swap_count": 0
+      },
+      "route_B_one_hot": {
+        "branch_M2_per_cell": 6,
+        "decoder_uses_same_exhaustive_physical_pattern_theorem": true,
+        "deleted_first_Givens_minimum_residual": 0.41744238123296284,
+        "deleted_one_ordinary_companion_decoder_residual": 0.7071067811865475,
+        "deleted_one_special_pattern_decoder_row_residual": 0.4082482904638631,
+        "exact_Givens": 15984,
+        "exact_complete_global_inverse": true,
+        "locally_checked_number_one_then_terminal_zero": true,
+        "maximum_inverse_residual": 2.4196749845665633e-16,
+        "maximum_preparation_residual": 1.5700924586837752e-16,
+        "pass": true,
+        "terminal_branch_leakage": 0
+      },
+      "route_C_returned_slot": {
+        "all_N3_word_foreign_companion_flips": 0,
+        "deleted_first_Givens_minimum_residual": 0.41744238123296284,
+        "deleted_one_ordinary_companion_decoder_residual": 0.7071067811865475,
+        "deleted_one_special_pattern_decoder_row_residual": 0.4082482904638631,
+        "exact_Givens": 15984,
+        "exact_complete_global_inverse": true,
+        "foreign_vacuum_native_role_flips": 0,
+        "host_previous_branch_sector_parity_order_or_frame_query": false,
+        "invalid_values_rejected": 2,
+        "logical_slot_M2": 3,
+        "maximum_inverse_residual": 2.4196749845665633e-16,
+        "maximum_preparation_residual": 1.5700924586837752e-16,
+        "ordinary_branch_zero_companion_failures": 0,
+        "ordinary_companion_CNOT_words_per_cell": 34,
+        "ordinary_own_companion_failures": 0,
+        "pass": true,
+        "special_local_pattern_collisions": 0,
+        "special_local_pattern_decoder_rows": 10368,
+        "special_local_pattern_decoder_rows_per_cell": 48,
+        "terminal_slot_leakage": 0,
+        "valid_values": 6,
+        "why_complete_global_N3_follows": "ordinary words decode on a foreign-invariant companion; if the current word has six rays it already contains all three particles, so every foreign word is vacuum and neither vacuum ray flips any current native decoder role"
+      },
+      "selected_lookup_entries": 25056,
+      "selected_representative_union_M2": 4968,
+      "special_pattern_sha256": "93a57408b96aba70098cd61971caa46de315eee1ab1400c4f5b0d62a43c3d7cb",
+      "unique_companion_pivots": 216
+    },
+    "exact_EG_equals_GphysicalE_residual": 0,
+    "fixtures": {
+      "Cycle230_contact_factorization_residual": 2.149937642474629e-15,
+      "Cycle230_seam_braid_residual": 0,
+      "one_particle_mass_residual": 8.7159799596118e-16
+    },
+    "global_N_le_3_cutoff_locally_enforced": false,
+    "global_N_le_3_cutoff_supplied_as_code_domain": true,
+    "held_length": 6,
+    "lawful_executed_sector": "complete full-torus N=2 packet inside declared complete global N<=3 code",
+    "local_constraints": {
+      "fixed_check_cases": 59608224,
+      "fixed_check_failures": 0,
+      "maximum_local_radius": 16,
+      "maximum_local_support": 32,
+      "port_constraint_cases": 32472576,
+      "port_constraint_failures": 0
+    },
+    "pass": true,
+    "physical_layout": {
+      "branch_or_slot_station_M2": 1296,
+      "clean_local_conjunction_work_M2": 3888,
+      "compiler_live_M2": 11448,
+      "compiler_live_M2_per_cell": 53.0,
+      "dedicated_blank_slot_rail_M2": 0,
+      "distinct_NN_route_edges": 385448,
+      "frame_group_failures": 0,
+      "frame_products": 576,
+      "held_size": false,
+      "length": 6,
+      "logical_returned_slot_M2": null,
+      "mapped_NN_edge_failures": 0,
+      "mapped_wire_injection_failures": 0,
+      "maximum_route_edges": 32,
+      "maximum_slot_rail_segment_edges": 0,
+      "pass": true,
+      "periodic_cells": 216,
+      "persistent_q_M2": 1296,
+      "physical_q_collisions": 0,
+      "physical_selected_reference_M2": 4968,
+      "proper_cubic_frames": 24,
+      "required_local_macro_pairs": 599004,
+      "resource": {
+        "elapsed_seconds": 93.49625891598407,
+        "label": "Cycle560-layout-B-L6",
+        "maximum_RSS_bytes": 565362688,
+        "process_swap_count": 0
+      },
+      "reverse_route_after_each_remote_macro": true,
+      "route": "B",
+      "route_edge_failures": 0,
+      "runtime_host_branch_sector_parity_order_or_frame_query": false,
+      "slot_rail_reversed_by_Wdagger": false,
+      "slot_rail_role_collisions": 0,
+      "slot_transport_policy": "six locally constrained one-hot M2 per cell",
+      "uniform_slot_station_offsets": [],
+      "wire_collisions": 0
+    },
+    "proof_scope": "Cycle560 local encoder tables and Cycle563 local colored factor identity apply to every complete N<=3 column; Cycle590 Route A supplies an explicit lawful held N=2 full-torus vector",
+    "runtime_global_parity_Jordan_Wigner_or_lexicographic_service": false,
+    "selected_factor_order": {
+      "canonical_lexicographic_cells": 216,
+      "cells_per_color": {
+        "0": 108,
+        "1": 108
+      },
+      "conflict_degree_histogram": {
+        "6": 216
+      },
+      "correction_edge_matching_layers": 5,
+      "correction_layer_endpoint_collisions": 0,
+      "correction_non_NN_edges": 0,
+      "correction_rows_per_edge_histogram": {
+        "48": 324
+      },
+      "correction_sha256": "5c6cacb5534a96863647714923cac599edda65a1256eee027078bfc65cfa1a03",
+      "declared_domain": "complete global N<=3",
+      "frame_group_failures": 0,
+      "frame_products": 576,
+      "gate_or_layer_depth_called_physical_time": false,
+      "held_size": false,
+      "identity_proof": "every non-NN selected pair commutes; same-color factors commute; each reversed NN Pauli pair contributes one exhaustively tabulated local -1 phase, so the colored product equals the canonical product",
+      "inverted_nearest_neighbour_correction_edges": 324,
+      "lawful_anticonmutation_conflict_edges": 648,
+      "lawful_local_phase_correction_rows": 15552,
+      "length": 6,
+      "local_cell_color_modulus": 2,
+      "mapped_cell_injection_failures": 0,
+      "mapped_conflict_edge_NN_failures": 0,
+      "maximum_conflict_degree": 6,
+      "minimum_deleted_one_correction_row_residual": 0.9999999999999998,
+      "nonnearest_anticommuting_rows": 0,
+      "pairwise_reordering_identity_residual": 0,
+      "pass": true,
+      "periodic_cells": 216,
+      "proper_cubic_frames": 24,
+      "remaining_compile_time_convention": "two/three color labels, their bounded layer order, and Route-C rail path",
+      "resource": {
+        "elapsed_seconds": 30.40893358294852,
+        "label": "Cycle563-selected-order-L6",
+        "maximum_RSS_bytes": 565362688,
+        "process_swap_count": 0
+      },
+      "retired_structure": "the length-dependent lexicographic cell traversal is absent at runtime",
+      "route_B_one_hot_fanout": {
+        "branch_labels_retained_until_local_phase_correction": true,
+        "existing_Cycle560_local_work_suffices": true,
+        "global_lexicographic_runtime_traversal": false,
+        "maximum_clean_conjunction_work_M2": 12,
+        "maximum_q_plus_active_rail_controls_per_edge_row": 14,
+        "pass": true
+      },
+      "route_C_returned_slot": {
+        "correction_reads_q_plus_current_local_physical_patterns": true,
+        "existing_Cycle560_local_work_suffices": true,
+        "global_lexicographic_runtime_traversal": false,
+        "maximum_clean_conjunction_work_M2": 12,
+        "maximum_q_plus_pattern_controls_per_edge_row": 14,
+        "maximum_word_conditioned_pattern_roles_per_cell": 5,
+        "pass": true,
+        "pooled_two_cell_Cycle560_work_M2": 36,
+        "single_slot_routing_path_remains_compile_time_supply": true,
+        "slot_returns_before_correction": true
+      },
+      "same_color_anticommuting_rows": 0,
+      "selected_factor_parallel_color_layers": 2,
+      "special_six_ray_correction_rows": 0,
+      "transport_policy": "transport base color labels, correction matchings, ordered color layers and local tables; no runtime frame or order query"
+    }
+  },
+  "route_C_local_pointer": {
+    "A2_or_T2_eigenbranch_certified": false,
+    "N2_local_projector_orthogonality_residual": 0,
+    "Naimark_isometry_residual": 0,
+    "compiled_observable_intertwiner_residual": 0,
+    "deleted_maximum_cell_pointer_signal": 0.0001136242493190856,
+    "direction_pair": [
+      0,
+      2
+    ],
+    "direction_pair_irrep_weights": {
+      "A1": 0.0,
+      "A2": 0.08333333333333331,
+      "E": 0.16666666666666663,
+      "T1": 0.4999999999999999,
+      "T2": 0.24999999999999992
+    },
+    "direction_pair_orbit_size": 12,
+    "extended_live_M2": 11880,
+    "extended_live_M2_per_cell": 55,
+    "fresh_dephasing_environment_M2_per_cell": 1,
+    "fresh_pointer_M2_per_cell": 1,
+    "held_length": 6,
+    "held_pointer_extension_M2": 432,
+    "interpretation": "a local direction-resolved pair projector has nonzero A2 and T2 components; it is not an A2/T2 spectral measurement and the pointer copy is not a Record",
+    "local_support_M2": 3,
+    "maximum_cell_event_weight": 0.0001136242493190856,
+    "onsite_event_pointer_one_weight": 0.013645607168869109,
+    "pass": true,
+    "pointer_is_Record": false,
+    "proper_cubic_frames": 24,
+    "runtime_global_order_or_parity_service": false
+  },
+  "runner_sha256": "5fbf3bcecc54df9912f9b79d2e5c45d51f145279c1ed83f507bc24e9e1980029",
+  "six_wall_ledger": {
+    "C_int": "actual free-plus-contact two-CAR update is domain-matched and physically compiled for N=2",
+    "C_local": "held L6 exact local W/G composition at 53 M2 per cell; global N<=3 cutoff remains supplied, not local",
+    "C_num": "exact finite amplitudes, event weights, and deletion residuals only; no empirical units",
+    "C_ref": "full-torus compatible K packet is now a literal compiler-domain reference; autonomous local preparation remains open",
+    "C_source": "beta and g remain supplied common-mode parameters; no gravity/source response",
+    "C_wrap": "held even-torus seam is represented; renewal/archive and unbounded stabilization remain open"
+  },
+  "status": "cycle590-full-torus-dimer-M2-compiler",
+  "tests_failed": 0,
+  "tests_passed": 7
+}

@@ -1,5 +1,5 @@
 {
- "as_of_date": "2026-07-21",
+ "as_of_date": "2026-07-22",
  "lane_ids": [
   "a3_option_c_brannen_rivero_physical_lattice_bounded_obstruction_note_2026-05-08_optc",
   "a3_r1_review_confirms_obstruction_note_2026-05-08_r1hr",
@@ -187,12 +187,10 @@
   "ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07",
   "evanescent_barrier_amplitude_suppression_theorem_note",
   "ew_current_matching_rule_open_gate_note_2026-05-03",
-  "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
   "ew_lattice_cos_sq_theta_w_complement_bridge_theorem_note_2026-04-26",
   "fractional_charge_denominator_from_n_c_theorem_note_2026-04-24",
   "frontier_extension_lane_opening_note_2026-04-25",
   "g_bare_dynamical_fixation_obstruction_note_2026-04-18",
-  "g_bare_rigidity_theorem_note",
   "g_bare_structural_normalization_theorem_note_2026-04-18",
   "g_bare_two_ward_closure_note_2026-04-18",
   "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",

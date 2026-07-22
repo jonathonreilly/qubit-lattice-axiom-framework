@@ -50,7 +50,7 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 13.12,
+  "load_bearing_score": 13.122,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -227,6 +227,6 @@
   },
   "runner_path": "scripts/frontier_s3_time_constructed_support_tensor_primitive.py",
   "title": "Constructed Route-2 Support Tensor Primitive: Bounded Response Jacobian",
-  "transitive_descendants": 786,
+  "transitive_descendants": 787,
   "verdict_rationale": null
 }

@@ -42,7 +42,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 12.713,
+  "load_bearing_score": 12.714,
   "load_bearing_step": "For the stipulated Gamma_1 and O_0/T_1/T_2 bases, the second-order return operators on T_1 are diag(1,0,0) via O_0 and diag(0,1,1) via T_2, summing to I_3.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -1440,6 +1440,6 @@
   },
   "runner_path": "scripts/frontier_dm_neutrino_cascade_geometry.py",
   "title": "DM Neutrino Cascade Geometry Note",
-  "transitive_descendants": 838,
+  "transitive_descendants": 839,
   "verdict_rationale": "The runner genuinely constructs the stated matrices and projectors, performs the matrix multiplications, and supports all six exact algebraic checks; it is not merely printing pass constants. Those checks establish the 1+2 decomposition only for the stipulated C^8 representation. The physical weak-axis Yukawa identification, C^16 chiral embedding, operator chain, and sector normalization remain unsupplied, as the note itself acknowledges."
 }

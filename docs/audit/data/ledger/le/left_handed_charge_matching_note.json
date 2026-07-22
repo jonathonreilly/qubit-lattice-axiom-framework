@@ -57,7 +57,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "decoration_under_graph_first_su3_integration_note",
-  "load_bearing_score": 29.087,
+  "load_bearing_score": 29.089,
   "load_bearing_step": "Tracelessness on the LH-doublet multiplicities gives 6\u03b1 + 2\u03b2 = 0, hence \u03b2 = -3\u03b1 and \u03b1 : \u03b2 = 1 : (-3).",
   "load_bearing_step_class": "A",
   "max_descendant_status": "unknown",
@@ -524,6 +524,6 @@
   },
   "runner_path": "scripts/frontier_graph_first_su3_integration.py",
   "title": "Left-Handed Charge Matching on the Selected-Axis Surface",
-  "transitive_descendants": 1087,
+  "transitive_descendants": 1088,
   "verdict_rationale": "The audited load-bearing content is a class-A algebraic corollary of the graph-first selected-axis commutant decomposition: once the 6-state and 2-state blocks are supplied, tracelessness uniquely fixes the scale-free ratio. The runner substantively verifies the graph-first decomposition and related finite-dimensional algebra, with no external comparator checks. The note does not close a new physical identification beyond the upstream graph-first SU(3) parent and explicitly demotes the absolute hypercharge-like pattern to a convention-fixed, non-load-bearing corollary."
 }

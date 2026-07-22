@@ -2418,12 +2418,12 @@ drive.
 
 Auditor judged the load-bearing step blocked by a runner, log, classifier, threshold, import, or pass/fail accounting problem. To close: repair the runner per the auditor's repair_target sentence and rerun, or replace the runner with a self-contained certificate.
 
-_1 rows in this category._
+_2 rows in this category._
 
 
 ### `flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15`
 
-**Note:** [docs/FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md](../FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md)  |  **Descendants:** 1196  |  **Class:** A
+**Note:** [docs/FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md](../FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md)  |  **Descendants:** 1199  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md.
@@ -2450,16 +2450,104 @@ drive.
 ```
 
 
+### `axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05`
+
+**Note:** [docs/AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md](../AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)  |  **Descendants:** 836  |  **Class:** A
+
+```
+Use the physics-loop skill to close the conditional audit on docs/AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md.
+
+Current audit state:
+- audit_status: audited_conditional
+- claim_type: bounded_theorem
+- load_bearing_step_class: A
+- claim_scope: Finite-volume two-slice pure-gauge SU(N) Wilson reflection positivity for β≥0 and bounded measurable plus-slice observables on the explicit temporal-gauge carrier.
+
+Auditor's verdict_rationale:
+The mathematical chain presented in the source closes on its stated finite two-slice pure-gauge scope, and the available runner record reports 34 passes with no failures. However, the rendered live stdout is clipped before its N1-N3 evidence and supplies no live independent-helper stdout, so the mandatory authenticated N1-N8 packet for an audited_clean verdict cannot be constructed from this restricted packet. This is an audit-artifact completeness limitation rather than a substantive defect in the theorem.
+
+Auditor-quoted load-bearing step:
+The exponential character expansion has coefficients c_λ(α)=sum_(n≥0)(α/2)^n M_(λ,n)/n!≥0 because every tensor-product multiplicity M_(λ,n) is a nonnegative integer.
+
+Auditor's repair target (canonical class + action):
+runner_artifact_issue: rerender the complete primary normal-mode stdout together with the independent helper stdout, preserving the live N1-N8 lines and locators, then repeat the clean-verdict audit.
+
+Goal: close the chain so a re-audit of this same note can land
+audited_clean at retained-grade. Use the physics-loop skill to iterate.
+Do not over-prescribe approach — explore the framework, let the skill
+drive.
+```
+
+
 ## audited_conditional_scope_too_broad
 
 Auditor judged that a clean bounded core exists inside a claim whose current scope includes an unclosed extension. To close: split the clean bounded core out as its own retained-grade claim and demote the extension to bounded or open scope.
 
-_1 rows in this category._
+_3 rows in this category._
+
+
+### `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09`
+
+**Note:** [docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md](../CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md)  |  **Descendants:** 809  |  **Class:** A
+
+```
+Use the physics-loop skill to close the conditional audit on docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md.
+
+Current audit state:
+- audit_status: audited_conditional
+- claim_type: bounded_theorem
+- load_bearing_step_class: A
+- claim_scope: Finite-dimensional bounds for the formal transfer-insertion correlator ⟨A T̃^n B⟩, including the q_β correction, conditional on a strictly positive Hermitian transfer matrix with a unique top eigenvalue; the canonical-transfer-matrix construction, gap derivation, physical local-correlator identification, spatial clustering, and infinite-volume or continuum clustering are outside the ratified scope.
+
+Auditor's verdict_rationale:
+Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The spectral identity, corrected adjoint placement, operator-norm estimate, and 6q_β trace-distance correction close on the strictly positive finite-dimensional domain. The source nevertheless permits a positive-semidefinite T while treating −log(T/M_T) as an everywhere-defined self-adjoint Hamiltonian, so its written domain is too broad for audited_clean. E4 is a counterexample showing that the gap hypothesis cannot be removed from the uniform theorem, not an independent general no-go boundary requiring N1–N8 certification.
+[panel breakdown] [{"auditor": "codex-judicial-1-20260721-9a972d1b", "judge": 1, "rationale": "The spectral identity, corrected adjoint placement, operator-norm estimate, and 6q_\u03b2 trace-distance correction close on the strictly positive finite-dimensional domain. The source nevertheless permits a positive-semidefinite T while treating \u2212log(T/M_T) as an everywhere-defined self-adjoint Hamiltonian, so its written domain is too broad for audited_clean. E4 is a counterexample showing that the gap hypothesis cannot be removed from the uniform theorem, not an independent general no-go boundary requiring N1\u2013N8 certification.", "tuple": ["hybrid", "audited_conditional", "bounded_theorem", "Finite-dimensional bounds for the formal transfer-insertion correlator \u27e8A T\u0303^n B\u27e9, including the q_\u03b2 correction, conditional on a strictly positive Hermitian transfer matrix with a unique top eigenvalue; the canonical-transfer-matrix construction, gap derivation, physical local-correlator identification, spatial clustering, and infinite-volume or continuum clustering are outside the ratified scope.", "A", []]}, {"auditor": "codex-judicial-2-20260721-bc3cb351", "judge": 2, "rationale": "The spectral expansion, corrected adjoint placement, operator-norm estimate, and 6q_\u03b2 trace-distance correction close on the strictly positive finite-dimensional domain. The source nevertheless permits zero eigenvalues while treating \u2212log(T/M_T) as an everywhere-defined self-adjoint Hamiltonian, so its written domain is too broad for audited_clean. E4 is a counterexample showing that the gap hypothesis cannot be removed from the uniform theorem; it is not an independent general no-go boundary requiring N1\u2013N8 certification.", "tuple": ["hybrid", "audited_conditional", "bounded_theorem", "Finite-dimensional bounds for the formal transfer-insertion correlator \u27e8A T\u0303^n B\u27e9, including the q_\u03b2 correction, conditional on a strictly positive Hermitian transfer matrix with a unique top eigenvalue; the canonical-transfer-matrix construction, gap derivation, physical local-correlator identification, spatial clustering, and infinite-volume or continuum clustering are outside the ratified scope.", "A", []]}, {"auditor": "codex-judicial-3-20260721-30338a1e", "judge": 3, "rationale": "The spectral identity, corrected adjoint placement, operator-norm estimate, and 6q_\u03b2 trace-distance correction close on the strictly positive finite-dimensional domain. The source nevertheless permits a positive-semidefinite T while treating \u2212log(T/M_T) as an everywhere-defined self-adjoint Hamiltonian, so the as-written domain is too broad for clean ratification. E4 is one counterexample showing that the gap hypothesis cannot be removed from the uniform theorem; it is not an independent general no-go boundary requiring N1\u2013N8 certification.", "tuple": ["hybrid", "audited_conditional", "bounded_theorem", "Finite-dimensional bounds for the formal transfer-insertion correlator \u27e8A T\u0303^n B\u27e9, including the q_\u03b2 correction, conditional on a strictly positive Hermitian transfer matrix with a unique top eigenvalue; the canonical-transfer-matrix construction, gap derivation, physical local-correlator identification, spatial clustering, and infinite-volume or continuum clustering are outside the ratified scope.", "A", []]}, {"auditor": "codex-judicial-4-20260721-82c916e3", "judge": 4, "rationale": "The spectral identity, corrected adjoint placement, operator-norm estimate, and 6q_\u03b2 trace-distance correction close on the strictly positive finite-dimensional domain. The source nevertheless allows positive-semidefinite T with zero eigenvalues while treating \u2212log(T/M_T) as an everywhere-defined self-adjoint Hamiltonian, so its written scope is too broad for audited_clean. E4 is a counterexample showing that the gap hypothesis cannot be removed from the uniform theorem, not an exhaustive no-go assertion requiring N1\u2013N8 certification.", "tuple": ["hybrid", "audited_conditional", "bounded_theorem", "Finite-dimensional bounds for the formal transfer-insertion correlator \u27e8A T\u0303^n B\u27e9, including the q_\u03b2 correction, conditional on a strictly positive Hermitian transfer matrix with a unique top eigenvalue; the canonical-transfer-matrix construction, gap derivation, physical local-correlator identification, spatial clustering, and infinite-volume or continuum clustering are outside the ratified scope.", "A", []]}, {"auditor": "codex-judicial-5-20260721-23132536", "judge": 5, "rationale": "The spectral identity, corrected adjoint placement, operator-norm estimate, and 6q_\u03b2 trace-distance correction close on the strictly positive finite-dimensional domain. The source nevertheless permits a positive-semidefinite T while treating \u2212log(T/M_T) as an everywhere-defined self-adjoint Hamiltonian, so its as-written domain is too broad for audited_clean. E4 is a counterexample showing that the gap hypothesis cannot be removed from the uniform theorem, not a separate general no-go claim requiring N1\u2013N8 certification.", "tuple": ["hybrid", "audited_conditional", "bounded_theorem", "Finite-dimensional bounds for the formal transfer-insertion correlator \u27e8A T\u0303^n B\u27e9, including the q_\u03b2 correction, conditional on a strictly positive Hermitian transfer matrix with a unique top eigenvalue; the canonical-transfer-matrix construction, gap derivation, physical local-correlator identification, spatial clustering, and infinite-volume or continuum clustering are outside the ratified scope.", "A", []]}]
+
+Auditor-quoted load-bearing step:
+Cauchy–Schwarz gives |Σ_{k≥1}(λ_k/M_T)^n⟨0|A|k⟩⟨k|B|0⟩| ≤ (λ_1/M_T)^n‖A‖‖B‖ = exp(-nΔ_T)‖A‖‖B‖.
+
+Auditor's repair target (canonical class + action):
+scope_too_broad: require T to be strictly positive/invertible or define the logarithm and thermal state on the kernel explicitly, and keep the result labeled as a formal transfer-insertion bound unless a physical local-correlator identification is supplied.
+
+Goal: close the chain so a re-audit of this same note can land
+audited_clean at retained-grade. Use the physics-loop skill to iterate.
+Do not over-prescribe approach — explore the framework, let the skill
+drive.
+```
+
+
+### `cpt_squared_is_identity_theorem_note_2026-05-02`
+
+**Note:** [docs/CPT_SQUARED_IS_IDENTITY_THEOREM_NOTE_2026-05-02.md](../CPT_SQUARED_IS_IDENTITY_THEOREM_NOTE_2026-05-02.md)  |  **Descendants:** 718  |  **Class:** A
+
+```
+Use the physics-loop skill to close the conditional audit on docs/CPT_SQUARED_IS_IDENTITY_THEOREM_NOTE_2026-05-02.md.
+
+Current audit state:
+- audit_status: audited_conditional
+- claim_type: positive_theorem
+- load_bearing_step_class: A
+- claim_scope: (CPT)² = I exactly on H_phys with no phase factor, where C is sublattice parity, P is spatial inversion, and T is complex conjugation.
+
+Auditor's verdict_rationale:
+The retained authority proves state-space square identities for both CPK and Theta_H=PK, but it defines the declared time-reversal representative as T_H=CK and explicitly withholds a physical H_phys/CPT identification. The runner independently checks only the four-site CPK algebra. Therefore the finite-lattice algebra closes, while the claimed identification on RP-reconstructed H_phys remains an uncited physical-space bridge.
+
+Auditor-quoted load-bearing step:
+T·CP = (CP)*·T = CP·T, so (CPT)² = (CP)²·T² = I.
+
+Auditor's repair target (canonical class + action):
+scope_too_broad: Narrow the claim to the finite-lattice state-space identity (CPK)²=I and add a dated downstream-hygiene line to this note's own boundary stating that no H_phys or physical CPT identification is claimed.
+
+Goal: close the chain so a re-audit of this same note can land
+audited_clean at retained-grade. Use the physics-loop skill to iterate.
+Do not over-prescribe approach — explore the framework, let the skill
+drive.
+```
 
 
 ### `flavor_r_half_stable_under_thermalizing_arrow_2026-06-02`
 
-**Note:** [docs/FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW_2026-06-02.md](../FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW_2026-06-02.md)  |  **Descendants:** 90  |  **Class:** A
+**Note:** [docs/FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW_2026-06-02.md](../FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW_2026-06-02.md)  |  **Descendants:** 93  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW_2026-06-02.md.
@@ -2495,7 +2583,7 @@ _6 rows in this category._
 
 ### `abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18`
 
-**Note:** [docs/ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md](../ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md)  |  **Descendants:** 1374  |  **Class:** A
+**Note:** [docs/ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md](../ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md)  |  **Descendants:** 1377  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md.
@@ -2524,7 +2612,7 @@ drive.
 
 ### `hypercharge_identification_note`
 
-**Note:** [docs/HYPERCHARGE_IDENTIFICATION_NOTE.md](../HYPERCHARGE_IDENTIFICATION_NOTE.md)  |  **Descendants:** 1031  |  **Class:** A
+**Note:** [docs/HYPERCHARGE_IDENTIFICATION_NOTE.md](../HYPERCHARGE_IDENTIFICATION_NOTE.md)  |  **Descendants:** 1034  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/HYPERCHARGE_IDENTIFICATION_NOTE.md.
@@ -2553,7 +2641,7 @@ drive.
 
 ### `dm_neutrino_cascade_geometry_note_2026-04-14`
 
-**Note:** [docs/DM_NEUTRINO_CASCADE_GEOMETRY_NOTE_2026-04-14.md](../DM_NEUTRINO_CASCADE_GEOMETRY_NOTE_2026-04-14.md)  |  **Descendants:** 836  |  **Class:** A
+**Note:** [docs/DM_NEUTRINO_CASCADE_GEOMETRY_NOTE_2026-04-14.md](../DM_NEUTRINO_CASCADE_GEOMETRY_NOTE_2026-04-14.md)  |  **Descendants:** 839  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/DM_NEUTRINO_CASCADE_GEOMETRY_NOTE_2026-04-14.md.
@@ -2582,7 +2670,7 @@ drive.
 
 ### `gravity_full_self_consistency_note`
 
-**Note:** [docs/GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md](../GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md)  |  **Descendants:** 758  |  **Class:** A
+**Note:** [docs/GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md](../GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md)  |  **Descendants:** 761  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md.
@@ -2611,7 +2699,7 @@ drive.
 
 ### `dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16`
 
-**Note:** [docs/DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md](../DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md)  |  **Descendants:** 754  |  **Class:** A
+**Note:** [docs/DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md](../DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md)  |  **Descendants:** 757  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md.
@@ -2640,7 +2728,7 @@ drive.
 
 ### `ac_reta_hclass_hunit_readout_derivation_obligation`
 
-**Note:** [docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md](../AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md)  |  **Descendants:** 97  |  **Class:** F
+**Note:** [docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md](../AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md)  |  **Descendants:** 100  |  **Class:** F
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md.

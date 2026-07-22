@@ -54,7 +54,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "retained_pending_chain",
-  "load_bearing_score": 18.838,
+  "load_bearing_score": 18.839,
   "load_bearing_step": "Writing the post-a_x state as a tensor with contents c_y, the rule T_a maps c_y to c_{y-a}, moving the sole sigma-minus action from x to x+a and proving T_a a_x T_a^dagger = a_{x+a}.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -836,6 +836,6 @@
   },
   "runner_path": "scripts/tensor_product_translation_fermion_operator_bridge_check_2026_05_25.py",
   "title": "Tensor-Product Translation / Fermion Operator Bridge Narrow Theorem",
-  "transitive_descendants": 1293,
+  "transitive_descendants": 1294,
   "verdict_rationale": "The general proof correctly derives T1-T4 from the supplied operator definitions and periodic factor permutation. The runner genuinely constructs the matrices and reports 131 exact passes, but these are class-(A) identity checks rather than class-(C) first-principles computations because T_a, a_x, and the tensor-product representation are stipulated inputs. With one upstream framework premise and standard tensor-product algebra, the result is an exact algebraic bridge/decoration, not an independent physical fermion-construction theorem."
 }

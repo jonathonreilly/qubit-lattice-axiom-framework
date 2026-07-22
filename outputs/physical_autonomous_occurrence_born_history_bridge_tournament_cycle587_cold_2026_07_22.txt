@@ -1,0 +1,468 @@
+PASS Route A compiles a bounded autonomous-after-front domain-wall member occurrence while retaining all coherent sectors :: {'route': 'A local program-ring/domain-wall conditional member compiler', 'supported_L41_pointer_labels': (0, 3, 5, 6), 'program_word_sha256': 'e4857579be05be0330585f94e31e3be7a8b466986379bcd7202f3b5072193691', 'physical_M2_before_Cycle552': 66, 'bounded_product_envelope_M2': 342, 'law_radius_program_cells': 1, 'EG_rows_L5_held_L6': 32, 'EG_failures': 0, 'inverse_failures': 0, 'hit_rows': 8, 'exact_Cycle552_531_interface_failures': 0, 'lawful_idle_nohit_failures': 0, 'member_gate_deletion_residual': 1.0, 'malformed_domain_refusals': 2, 'coherent_four_sector_Gram_residual': 0.0, 'coherent_sectors_retained': 4, 'coherent_pointer_selects_one_objective_member': False, 'domain_wall_front_and_program_supplied': True, 'logical_Toffoli': 84, 'literal_one_two_M2_gates_from_Toffoli': 1260, 'maximum_literal_support_M2': 2, 'Toffoli_reconstruction_residual': 7.346882794269506e-16, 'static_nearest_neighbor_line_compiler': {'line_M2': 66, 'logical_Toffoli': 84, 'literal_one_M2_primitives': 756, 'literal_two_M2_core_primitives': 508, 'adjacent_route_and_return_SWAPS': 26624, 'nearest_neighbor_two_M2_calls': 27132, 'maximum_unrouted_operand_distance': 61, 'route_adjacency_failures': 0, 'ordered_operand_failures': 0, 'terminal_wire_restoration_failures': 0, 'route_manifest_sha256': '124601dfd71149cdd3a32354da07c7074b0c7156d8dedaf05f4a2f81ecd1315b', 'proper_cubic_frames': 24, 'all24_line_edge_tests': 1560, 'all24_line_edge_failures': 0, 'runtime_data_selects_route': False, 'pass': True}, 'pass': True}
+PASS Route B gives local redundancy and a visible finite debit but exact re-entry falsifies global irreversibility :: {'route': 'B redundant consistency archive with reversible ready/spent debit', 'physical_M2': 59, 'bounded_product_envelope_M2': 335, 'basis_rows': 4, 'replica_or_packet_failures': 0, 'consistency_syndrome_failures': 0, 'resource_ledger_failures': 0, 'inverse_failures': 0, 'single_replica_deletion_residual': 1.7320508075688772, 'single_replica_fault_detected': True, 'debit_deletion_residual': 1.4142135623730951, 'exact_reentry_restores_ready_and_erases_archive': True, 'local_pointer_coherence_loss_when_archive_ignored': 0.8660254037844386, 'complete_global_state_norm': 1.0, 'finite_debit_is_globally_irreversible': False, 'redundant_packet_is_framework_Record': False, 'objective_member_selected_from_coherent_pointer': False, 'static_nearest_neighbor_line_compiler': {'line_M2': 59, 'logical_Toffoli': 41, 'literal_one_M2_primitives': 369, 'literal_two_M2_core_primitives': 280, 'adjacent_route_and_return_SWAPS': 18180, 'nearest_neighbor_two_M2_calls': 18460, 'maximum_unrouted_operand_distance': 58, 'route_adjacency_failures': 0, 'ordered_operand_failures': 0, 'terminal_wire_restoration_failures': 0, 'route_manifest_sha256': '45f754cb7b88be0b692476c4e361df57382892cee4a4c59776a373b72410b75d', 'proper_cubic_frames': 24, 'all24_line_edge_tests': 1392, 'all24_line_edge_failures': 0, 'runtime_data_selects_route': False, 'pass': True}, 'pass': True}
+PASS Route C gives a no-fit repeatable uniform-fixture match and the same-law biased held control falsifies universality :: {'route': 'C fixed repeated-history rotor versus exact Cycle41 candidate Born surface', 'rotor_word': (0, 3, 5, 6), 'rotor_word_sha256': 'e4857579be05be0330585f94e31e3be7a8b466986379bcd7202f3b5072193691', 'physical_controller_M2': 4, 'per_emitted_archive_cell_M2': 8, 'train_sizes': (8, 12), 'held_sizes': (17, 31), 'Cycle41_grade_vector': (0.2499999999999999, 0.0, 0.0, 0.2499999999999999, 0.0, 0.2499999999999999, 0.2499999999999999, 0.0), 'direct_branch_grade_residual': 0.0, 'frequency_rows': [{'size': 8, 'L1_grade_residual': 4.440892098500626e-16, 'Linf_grade_residual': 1.1102230246251565e-16, 'prefix_discrepancy_bound_1_over_N': True}, {'size': 12, 'L1_grade_residual': 4.440892098500626e-16, 'Linf_grade_residual': 1.1102230246251565e-16, 'prefix_discrepancy_bound_1_over_N': True}, {'size': 17, 'L1_grade_residual': 0.08823529411764686, 'Linf_grade_residual': 0.04411764705882365, 'prefix_discrepancy_bound_1_over_N': True}, {'size': 31, 'L1_grade_residual': 0.048387096774193755, 'Linf_grade_residual': 0.02419354838709667, 'prefix_discrepancy_bound_1_over_N': True}], 'exact_multiple_of_four_failures': 0, 'held_prefix_bound_failures': 0, 'repeatability_failures': 0, 'head_advance_deletion_L1_residual': 0.06451612903225809, 'biased_state_grade_vector': (0.5, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0), 'same_law_biased_held_L1_residual': 1.5, 'same_law_biased_held_Linf_residual': 0.5, 'rotor_forbidden_numeric_or_probability_ports': (), 'grade_used_to_construct_or_fit_rotor': False, 'finite_deterministic_history_is_probability_sample': False, 'fixture_match_is_universal_Born_bridge': False, 'pass': True}
+PASS all24/all576 covariance and lawful-domain controls remain exact :: {'proper_cubic_frames': 24, 'new_scalar_route_tests': 24, 'new_scalar_failures': 0, 'Cycle552_member_frame_tests': 96, 'Cycle552_member_frame_failures': 0, 'all576_axis_product_tests': 1728, 'all576_axis_product_failures': 0, 'malformed_domain_refusals': 4, 'malformed_domain_total': 4, 'pass': True}
+PASS exact shores, supplied inventory, and fresh N1-N8 prevent semantic promotion or axiom pressure :: {'expected_hashes': {'Cycle531 runner': '8885593dcc644e601179891265c226158c8835a8a143ed7205c0cc7e291e9057', 'Cycle531 note': 'ed40564d4e57090cf03e706b54964e5a24cb735f9ca14df8f008fecffc388042', 'Cycle552 runner': '405cacd821b5453045f8a8920b1ab0fc2dca5ac90fb150e9b4a95f6f218ac8a4', 'Cycle552 note': '919f95dd43d8bdd5ba65fba071f58a6d054a89b3d7d4b7cc04686c8c28cdbf42', 'Cycle565 runner': 'b4b6e2c4491c5a6b30389764e8ac597ce07e1dac3f31c7cb8fff9297ac04437a', 'Cycle565 note': '72dd62448eaf685de0a7f1cc4ce9d164363428976eafc8efb93c973b8856f39a', 'Cycle571 runner': '7221d59558e4d731f98a2a4523c280aa98b889f23ea3f7be1acc8919395dfee8', 'Cycle571 note': 'b254476f392597c03f27581fbc4f559266ed42984ac86a516888ee81d2aff8e2', 'Cycle577 runner': '93bf1fa2859289b13037bfe7882cce86732e9377ed8b60e56c3bd55ebc0ce74f', 'Cycle577 note': '23ef5601b73c121d5e82c9031ec0ff4acffdc5471c43aa4dec63a78085aa7c0f', 'Cycle580 runner': 'c46917d4a932cd3ad9a78e0547625055f5adf9d5cf7393700d7e6715dd515cd3', 'Cycle580 note': 'e8ca5acdaec0c7ec5f0ba9772d7736352bcf132e961483d93f19c679439df276', 'Cycle582 runner': '47c5138720add60ed6fa8b6506dcb8a9cbee9af5a1ab3defbc7aea4c3cfa290a', 'Cycle582 note': 'c65613cd5f6bffa1cf4cc84ba08815fd9d569627d579438f9a39fa00601fcbc6', 'Cycle584 runner': '556e3e4759033706c795c9b65f55f12afaaaf84b8858dc4bb06b1c0a93400ab3', 'Cycle584 note': '7e5ae8971e1b4f3be6bba50d25aa0b3d373f79d2b3224622fa1c4f829f7982dc'}, 'observed_hashes': {'Cycle531 runner': '8885593dcc644e601179891265c226158c8835a8a143ed7205c0cc7e291e9057', 'Cycle531 note': 'ed40564d4e57090cf03e706b54964e5a24cb735f9ca14df8f008fecffc388042', 'Cycle552 runner': '405cacd821b5453045f8a8920b1ab0fc2dca5ac90fb150e9b4a95f6f218ac8a4', 'Cycle552 note': '919f95dd43d8bdd5ba65fba071f58a6d054a89b3d7d4b7cc04686c8c28cdbf42', 'Cycle565 runner': 'b4b6e2c4491c5a6b30389764e8ac597ce07e1dac3f31c7cb8fff9297ac04437a', 'Cycle565 note': '72dd62448eaf685de0a7f1cc4ce9d164363428976eafc8efb93c973b8856f39a', 'Cycle571 runner': '7221d59558e4d731f98a2a4523c280aa98b889f23ea3f7be1acc8919395dfee8', 'Cycle571 note': 'b254476f392597c03f27581fbc4f559266ed42984ac86a516888ee81d2aff8e2', 'Cycle577 runner': '93bf1fa2859289b13037bfe7882cce86732e9377ed8b60e56c3bd55ebc0ce74f', 'Cycle577 note': '23ef5601b73c121d5e82c9031ec0ff4acffdc5471c43aa4dec63a78085aa7c0f', 'Cycle580 runner': 'c46917d4a932cd3ad9a78e0547625055f5adf9d5cf7393700d7e6715dd515cd3', 'Cycle580 note': 'e8ca5acdaec0c7ec5f0ba9772d7736352bcf132e961483d93f19c679439df276', 'Cycle582 runner': '47c5138720add60ed6fa8b6506dcb8a9cbee9af5a1ab3defbc7aea4c3cfa290a', 'Cycle582 note': 'c65613cd5f6bffa1cf4cc84ba08815fd9d569627d579438f9a39fa00601fcbc6', 'Cycle584 runner': '556e3e4759033706c795c9b65f55f12afaaaf84b8858dc4bb06b1c0a93400ab3', 'Cycle584 note': '7e5ae8971e1b4f3be6bba50d25aa0b3d373f79d2b3224622fa1c4f829f7982dc'}, 'note_missing_contract_fragments': (), 'declared_runner_sha256': '2879d5a2641b334553769f15cf3a6f152f9f16f8f80b23db723448533c28c494', 'runner_sha256': '2879d5a2641b334553769f15cf3a6f152f9f16f8f80b23db723448533c28c494', 'discipline': {'N1_routes': ({'family': 'TI domain-wall/program QCA', 'status': 'ATTEMPTED', 'terminal': 'derive front/program genesis and one actuality owner for a coherent pointer'}, {'family': 'decoherence/redundancy/debit', 'status': 'ATTEMPTED', 'terminal': 'derive irreversible admission/permanence rather than reversible archive correlation'}, {'family': 'fixed held-history rotor', 'status': 'ATTEMPTED', 'terminal': 'derive a state-dependent grade/frequency law without importing a distribution'}, {'family': 'local stochastic innovation field', 'status': 'UNTESTED_OPEN_NOT_COUNTED', 'terminal': 'construct innovations and lawful grade coupling with no host sampler'}, {'family': 'unique-extension realized-history law', 'status': 'UNTESTED_OPEN_NOT_COUNTED', 'terminal': 'construct covariant successor ownership and readable permanent Records'}, {'family': 'objective-collapse carrier bath', 'status': 'UNTESTED_OPEN_NOT_COUNTED', 'terminal': 'give bounded update, conservation/resource ledger, and blinded calibration'}), 'N1_qualifying': 3, 'N1_required': 5, 'N1_status': 'FAIL', 'N2_walls': ('member genesis', 'objective actuality', 'Record admission/permanence', 'grade-to-law identification', 'realized-corpus frequency calibration'), 'N2_pairwise': ({'pair': ('member genesis', 'objective actuality'), 'independent': True, 'reason': "neither wall's tested output has the other's typed input or closure witness"}, {'pair': ('member genesis', 'Record admission/permanence'), 'independent': True, 'reason': "neither wall's tested output has the other's typed input or closure witness"}, {'pair': ('member genesis', 'grade-to-law identification'), 'independent': True, 'reason': "neither wall's tested output has the other's typed input or closure witness"}, {'pair': ('member genesis', 'realized-corpus frequency calibration'), 'independent': True, 'reason': "neither wall's tested output has the other's typed input or closure witness"}, {'pair': ('objective actuality', 'Record admission/permanence'), 'independent': True, 'reason': "neither wall's tested output has the other's typed input or closure witness"}, {'pair': ('objective actuality', 'grade-to-law identification'), 'independent': True, 'reason': "neither wall's tested output has the other's typed input or closure witness"}, {'pair': ('objective actuality', 'realized-corpus frequency calibration'), 'independent': True, 'reason': "neither wall's tested output has the other's typed input or closure witness"}, {'pair': ('Record admission/permanence', 'grade-to-law identification'), 'independent': True, 'reason': "neither wall's tested output has the other's typed input or closure witness"}, {'pair': ('Record admission/permanence', 'realized-corpus frequency calibration'), 'independent': True, 'reason': "neither wall's tested output has the other's typed input or closure witness"}, {'pair': ('grade-to-law identification', 'realized-corpus frequency calibration'), 'independent': True, 'reason': "neither wall's tested output has the other's typed input or closure witness"}), 'N3_explicit_supplies': ('Cycle41 law and candidate grade', 'four supported labels and rotor order', 'domain-wall front/program', 'pure coherent pointer preparation', 'blank archives and ready resource', 'Cycle552 law word/binding/head/K', 'noiseless X/CNOT/Toffoli/SWAP gates', 'proper-cubic chart', 'finite train/held cuts'), 'N4_residual_matching': ({'route': 'A', 'witness': 'four orthogonal coherent output sectors', 'matches': 'conditional member compiler, not objective actuality'}, {'route': 'B', 'witness': 'exact inverse re-entry', 'matches': 'finite redundant archive/debit, not irreversible Record'}, {'route': 'C', 'witness': 'same-law biased held L1 residual > 1', 'matches': 'fixture-specific deterministic agreement, not universal Born law'}), 'N5_rhetoric': 'only conditional member, finite archive, candidate grade, and deterministic frequency comparator are claimed', 'N6_partial_closure': ('retain Route A as an exact deterministic conditional member/occurrence compiler after supplied front genesis', 'retain Route B as a fault-visible finite archive and resource-debit diagnostic below Record status', 'retain Route C as a preregistered uniform-fixture frequency comparator and biased-state falsifier', 'couple a local innovation field to the Cycle565 grade only through a separately justified physical law', 'admit only framework-typed Records, then compare a blinded held corpus without fitting the member source'), 'N7_hostile_steelman': {'mechanism': 'a translation-invariant innovation bath could locally prepare the domain-wall front, choose one pointer sector through a new objective update, debit a nonreentering formation resource, and append readable Records whose blinded frequencies obey a separately derived Cycle565 grade functional', 'terminal_obligation': 'construct the bounded physical update, prove lawful renewal/permanence and all24 covariance, preregister its transition law without reading held counts, and reject the biased-state control only when the independently predicted grade changes', 'status': 'open constructive route; no route-independent obstruction follows'}, 'N8_cross_cycle_echo': ('Cycle531 separated edge/binding from member ownership', 'Cycle552 separated autonomous recurrence from supplied genesis', 'Cycle565 separated finite grades from member selection', 'Cycle571 separated raw first hit and protected append from actuality/admission', 'Cycles577-584 separated coherent pointer recurrence/resource export from Record and Born semantics'), 'broad_no_go': 'FAIL_DO_NOT_SHIP', 'minimum_content': 'FAIL_DO_NOT_SHIP', 'shared_obstruction': 'NOT_ESTABLISHED', 'axiom_pressure': 'NONE'}, 'inventory': {'supplied': ('Cycle41 law and candidate grade', 'four supported labels and rotor order', 'domain-wall front/program', 'pure coherent pointer preparation', 'blank archives and ready resource', 'Cycle552 law word/binding/head/K', 'noiseless X/CNOT/Toffoli/SWAP gates', 'proper-cubic chart', 'finite train/held cuts'), 'derived': ('bounded program-ring/member EG and exact Cycle552/531 conditional occurrence', 'three-copy syndrome archive with exact resource debit, deletion, and inverse re-entry', 'fixed no-fit frequency comparator, held-prefix bound, and biased-state counter-control', 'all24/all576 finite covariance and explicit lawful-domain refusals'), 'open': ('law/front/innovation genesis and objective actuality owner', 'selected framework Record formation, irreversible permanence, deletion restrictions, and unbounded realized history', 'physical selection of the grade functional, probability meaning, independence/stationarity, and empirical calibration', 'translation-invariant renewal/resource thermodynamics and physical time')}, 'pass': True}
+PASS cold resource caps :: {'elapsed_seconds': 0.3472762079909444, 'maximum_RSS_bytes': 916766720, 'wall_cap_seconds': 360.0, 'RSS_cap_bytes': 3221225472}
+{
+  "covariance_domain": {
+    "Cycle552_member_frame_failures": 0,
+    "Cycle552_member_frame_tests": 96,
+    "all576_axis_product_failures": 0,
+    "all576_axis_product_tests": 1728,
+    "malformed_domain_refusals": 4,
+    "malformed_domain_total": 4,
+    "new_scalar_failures": 0,
+    "new_scalar_route_tests": 24,
+    "pass": true,
+    "proper_cubic_frames": 24
+  },
+  "dependency_discipline_inventory": {
+    "declared_runner_sha256": "2879d5a2641b334553769f15cf3a6f152f9f16f8f80b23db723448533c28c494",
+    "discipline": {
+      "N1_qualifying": 3,
+      "N1_required": 5,
+      "N1_routes": [
+        {
+          "family": "TI domain-wall/program QCA",
+          "status": "ATTEMPTED",
+          "terminal": "derive front/program genesis and one actuality owner for a coherent pointer"
+        },
+        {
+          "family": "decoherence/redundancy/debit",
+          "status": "ATTEMPTED",
+          "terminal": "derive irreversible admission/permanence rather than reversible archive correlation"
+        },
+        {
+          "family": "fixed held-history rotor",
+          "status": "ATTEMPTED",
+          "terminal": "derive a state-dependent grade/frequency law without importing a distribution"
+        },
+        {
+          "family": "local stochastic innovation field",
+          "status": "UNTESTED_OPEN_NOT_COUNTED",
+          "terminal": "construct innovations and lawful grade coupling with no host sampler"
+        },
+        {
+          "family": "unique-extension realized-history law",
+          "status": "UNTESTED_OPEN_NOT_COUNTED",
+          "terminal": "construct covariant successor ownership and readable permanent Records"
+        },
+        {
+          "family": "objective-collapse carrier bath",
+          "status": "UNTESTED_OPEN_NOT_COUNTED",
+          "terminal": "give bounded update, conservation/resource ledger, and blinded calibration"
+        }
+      ],
+      "N1_status": "FAIL",
+      "N2_pairwise": [
+        {
+          "independent": true,
+          "pair": [
+            "member genesis",
+            "objective actuality"
+          ],
+          "reason": "neither wall's tested output has the other's typed input or closure witness"
+        },
+        {
+          "independent": true,
+          "pair": [
+            "member genesis",
+            "Record admission/permanence"
+          ],
+          "reason": "neither wall's tested output has the other's typed input or closure witness"
+        },
+        {
+          "independent": true,
+          "pair": [
+            "member genesis",
+            "grade-to-law identification"
+          ],
+          "reason": "neither wall's tested output has the other's typed input or closure witness"
+        },
+        {
+          "independent": true,
+          "pair": [
+            "member genesis",
+            "realized-corpus frequency calibration"
+          ],
+          "reason": "neither wall's tested output has the other's typed input or closure witness"
+        },
+        {
+          "independent": true,
+          "pair": [
+            "objective actuality",
+            "Record admission/permanence"
+          ],
+          "reason": "neither wall's tested output has the other's typed input or closure witness"
+        },
+        {
+          "independent": true,
+          "pair": [
+            "objective actuality",
+            "grade-to-law identification"
+          ],
+          "reason": "neither wall's tested output has the other's typed input or closure witness"
+        },
+        {
+          "independent": true,
+          "pair": [
+            "objective actuality",
+            "realized-corpus frequency calibration"
+          ],
+          "reason": "neither wall's tested output has the other's typed input or closure witness"
+        },
+        {
+          "independent": true,
+          "pair": [
+            "Record admission/permanence",
+            "grade-to-law identification"
+          ],
+          "reason": "neither wall's tested output has the other's typed input or closure witness"
+        },
+        {
+          "independent": true,
+          "pair": [
+            "Record admission/permanence",
+            "realized-corpus frequency calibration"
+          ],
+          "reason": "neither wall's tested output has the other's typed input or closure witness"
+        },
+        {
+          "independent": true,
+          "pair": [
+            "grade-to-law identification",
+            "realized-corpus frequency calibration"
+          ],
+          "reason": "neither wall's tested output has the other's typed input or closure witness"
+        }
+      ],
+      "N2_walls": [
+        "member genesis",
+        "objective actuality",
+        "Record admission/permanence",
+        "grade-to-law identification",
+        "realized-corpus frequency calibration"
+      ],
+      "N3_explicit_supplies": [
+        "Cycle41 law and candidate grade",
+        "four supported labels and rotor order",
+        "domain-wall front/program",
+        "pure coherent pointer preparation",
+        "blank archives and ready resource",
+        "Cycle552 law word/binding/head/K",
+        "noiseless X/CNOT/Toffoli/SWAP gates",
+        "proper-cubic chart",
+        "finite train/held cuts"
+      ],
+      "N4_residual_matching": [
+        {
+          "matches": "conditional member compiler, not objective actuality",
+          "route": "A",
+          "witness": "four orthogonal coherent output sectors"
+        },
+        {
+          "matches": "finite redundant archive/debit, not irreversible Record",
+          "route": "B",
+          "witness": "exact inverse re-entry"
+        },
+        {
+          "matches": "fixture-specific deterministic agreement, not universal Born law",
+          "route": "C",
+          "witness": "same-law biased held L1 residual > 1"
+        }
+      ],
+      "N5_rhetoric": "only conditional member, finite archive, candidate grade, and deterministic frequency comparator are claimed",
+      "N6_partial_closure": [
+        "retain Route A as an exact deterministic conditional member/occurrence compiler after supplied front genesis",
+        "retain Route B as a fault-visible finite archive and resource-debit diagnostic below Record status",
+        "retain Route C as a preregistered uniform-fixture frequency comparator and biased-state falsifier",
+        "couple a local innovation field to the Cycle565 grade only through a separately justified physical law",
+        "admit only framework-typed Records, then compare a blinded held corpus without fitting the member source"
+      ],
+      "N7_hostile_steelman": {
+        "mechanism": "a translation-invariant innovation bath could locally prepare the domain-wall front, choose one pointer sector through a new objective update, debit a nonreentering formation resource, and append readable Records whose blinded frequencies obey a separately derived Cycle565 grade functional",
+        "status": "open constructive route; no route-independent obstruction follows",
+        "terminal_obligation": "construct the bounded physical update, prove lawful renewal/permanence and all24 covariance, preregister its transition law without reading held counts, and reject the biased-state control only when the independently predicted grade changes"
+      },
+      "N8_cross_cycle_echo": [
+        "Cycle531 separated edge/binding from member ownership",
+        "Cycle552 separated autonomous recurrence from supplied genesis",
+        "Cycle565 separated finite grades from member selection",
+        "Cycle571 separated raw first hit and protected append from actuality/admission",
+        "Cycles577-584 separated coherent pointer recurrence/resource export from Record and Born semantics"
+      ],
+      "axiom_pressure": "NONE",
+      "broad_no_go": "FAIL_DO_NOT_SHIP",
+      "minimum_content": "FAIL_DO_NOT_SHIP",
+      "shared_obstruction": "NOT_ESTABLISHED"
+    },
+    "expected_hashes": {
+      "Cycle531 note": "ed40564d4e57090cf03e706b54964e5a24cb735f9ca14df8f008fecffc388042",
+      "Cycle531 runner": "8885593dcc644e601179891265c226158c8835a8a143ed7205c0cc7e291e9057",
+      "Cycle552 note": "919f95dd43d8bdd5ba65fba071f58a6d054a89b3d7d4b7cc04686c8c28cdbf42",
+      "Cycle552 runner": "405cacd821b5453045f8a8920b1ab0fc2dca5ac90fb150e9b4a95f6f218ac8a4",
+      "Cycle565 note": "72dd62448eaf685de0a7f1cc4ce9d164363428976eafc8efb93c973b8856f39a",
+      "Cycle565 runner": "b4b6e2c4491c5a6b30389764e8ac597ce07e1dac3f31c7cb8fff9297ac04437a",
+      "Cycle571 note": "b254476f392597c03f27581fbc4f559266ed42984ac86a516888ee81d2aff8e2",
+      "Cycle571 runner": "7221d59558e4d731f98a2a4523c280aa98b889f23ea3f7be1acc8919395dfee8",
+      "Cycle577 note": "23ef5601b73c121d5e82c9031ec0ff4acffdc5471c43aa4dec63a78085aa7c0f",
+      "Cycle577 runner": "93bf1fa2859289b13037bfe7882cce86732e9377ed8b60e56c3bd55ebc0ce74f",
+      "Cycle580 note": "e8ca5acdaec0c7ec5f0ba9772d7736352bcf132e961483d93f19c679439df276",
+      "Cycle580 runner": "c46917d4a932cd3ad9a78e0547625055f5adf9d5cf7393700d7e6715dd515cd3",
+      "Cycle582 note": "c65613cd5f6bffa1cf4cc84ba08815fd9d569627d579438f9a39fa00601fcbc6",
+      "Cycle582 runner": "47c5138720add60ed6fa8b6506dcb8a9cbee9af5a1ab3defbc7aea4c3cfa290a",
+      "Cycle584 note": "7e5ae8971e1b4f3be6bba50d25aa0b3d373f79d2b3224622fa1c4f829f7982dc",
+      "Cycle584 runner": "556e3e4759033706c795c9b65f55f12afaaaf84b8858dc4bb06b1c0a93400ab3"
+    },
+    "inventory": {
+      "derived": [
+        "bounded program-ring/member EG and exact Cycle552/531 conditional occurrence",
+        "three-copy syndrome archive with exact resource debit, deletion, and inverse re-entry",
+        "fixed no-fit frequency comparator, held-prefix bound, and biased-state counter-control",
+        "all24/all576 finite covariance and explicit lawful-domain refusals"
+      ],
+      "open": [
+        "law/front/innovation genesis and objective actuality owner",
+        "selected framework Record formation, irreversible permanence, deletion restrictions, and unbounded realized history",
+        "physical selection of the grade functional, probability meaning, independence/stationarity, and empirical calibration",
+        "translation-invariant renewal/resource thermodynamics and physical time"
+      ],
+      "supplied": [
+        "Cycle41 law and candidate grade",
+        "four supported labels and rotor order",
+        "domain-wall front/program",
+        "pure coherent pointer preparation",
+        "blank archives and ready resource",
+        "Cycle552 law word/binding/head/K",
+        "noiseless X/CNOT/Toffoli/SWAP gates",
+        "proper-cubic chart",
+        "finite train/held cuts"
+      ]
+    },
+    "note_missing_contract_fragments": [],
+    "observed_hashes": {
+      "Cycle531 note": "ed40564d4e57090cf03e706b54964e5a24cb735f9ca14df8f008fecffc388042",
+      "Cycle531 runner": "8885593dcc644e601179891265c226158c8835a8a143ed7205c0cc7e291e9057",
+      "Cycle552 note": "919f95dd43d8bdd5ba65fba071f58a6d054a89b3d7d4b7cc04686c8c28cdbf42",
+      "Cycle552 runner": "405cacd821b5453045f8a8920b1ab0fc2dca5ac90fb150e9b4a95f6f218ac8a4",
+      "Cycle565 note": "72dd62448eaf685de0a7f1cc4ce9d164363428976eafc8efb93c973b8856f39a",
+      "Cycle565 runner": "b4b6e2c4491c5a6b30389764e8ac597ce07e1dac3f31c7cb8fff9297ac04437a",
+      "Cycle571 note": "b254476f392597c03f27581fbc4f559266ed42984ac86a516888ee81d2aff8e2",
+      "Cycle571 runner": "7221d59558e4d731f98a2a4523c280aa98b889f23ea3f7be1acc8919395dfee8",
+      "Cycle577 note": "23ef5601b73c121d5e82c9031ec0ff4acffdc5471c43aa4dec63a78085aa7c0f",
+      "Cycle577 runner": "93bf1fa2859289b13037bfe7882cce86732e9377ed8b60e56c3bd55ebc0ce74f",
+      "Cycle580 note": "e8ca5acdaec0c7ec5f0ba9772d7736352bcf132e961483d93f19c679439df276",
+      "Cycle580 runner": "c46917d4a932cd3ad9a78e0547625055f5adf9d5cf7393700d7e6715dd515cd3",
+      "Cycle582 note": "c65613cd5f6bffa1cf4cc84ba08815fd9d569627d579438f9a39fa00601fcbc6",
+      "Cycle582 runner": "47c5138720add60ed6fa8b6506dcb8a9cbee9af5a1ab3defbc7aea4c3cfa290a",
+      "Cycle584 note": "7e5ae8971e1b4f3be6bba50d25aa0b3d373f79d2b3224622fa1c4f829f7982dc",
+      "Cycle584 runner": "556e3e4759033706c795c9b65f55f12afaaaf84b8858dc4bb06b1c0a93400ab3"
+    },
+    "pass": true,
+    "runner_sha256": "2879d5a2641b334553769f15cf3a6f152f9f16f8f80b23db723448533c28c494"
+  },
+  "fail": 0,
+  "pass": 6,
+  "resources": {
+    "RSS_cap_bytes": 3221225472,
+    "elapsed_seconds": 0.3472762079909444,
+    "maximum_RSS_bytes": 916766720,
+    "wall_cap_seconds": 360.0
+  },
+  "route_A": {
+    "EG_failures": 0,
+    "EG_rows_L5_held_L6": 32,
+    "Toffoli_reconstruction_residual": 7.346882794269506e-16,
+    "bounded_product_envelope_M2": 342,
+    "coherent_four_sector_Gram_residual": 0.0,
+    "coherent_pointer_selects_one_objective_member": false,
+    "coherent_sectors_retained": 4,
+    "domain_wall_front_and_program_supplied": true,
+    "exact_Cycle552_531_interface_failures": 0,
+    "hit_rows": 8,
+    "inverse_failures": 0,
+    "law_radius_program_cells": 1,
+    "lawful_idle_nohit_failures": 0,
+    "literal_one_two_M2_gates_from_Toffoli": 1260,
+    "logical_Toffoli": 84,
+    "malformed_domain_refusals": 2,
+    "maximum_literal_support_M2": 2,
+    "member_gate_deletion_residual": 1.0,
+    "pass": true,
+    "physical_M2_before_Cycle552": 66,
+    "program_word_sha256": "e4857579be05be0330585f94e31e3be7a8b466986379bcd7202f3b5072193691",
+    "route": "A local program-ring/domain-wall conditional member compiler",
+    "static_nearest_neighbor_line_compiler": {
+      "adjacent_route_and_return_SWAPS": 26624,
+      "all24_line_edge_failures": 0,
+      "all24_line_edge_tests": 1560,
+      "line_M2": 66,
+      "literal_one_M2_primitives": 756,
+      "literal_two_M2_core_primitives": 508,
+      "logical_Toffoli": 84,
+      "maximum_unrouted_operand_distance": 61,
+      "nearest_neighbor_two_M2_calls": 27132,
+      "ordered_operand_failures": 0,
+      "pass": true,
+      "proper_cubic_frames": 24,
+      "route_adjacency_failures": 0,
+      "route_manifest_sha256": "124601dfd71149cdd3a32354da07c7074b0c7156d8dedaf05f4a2f81ecd1315b",
+      "runtime_data_selects_route": false,
+      "terminal_wire_restoration_failures": 0
+    },
+    "supported_L41_pointer_labels": [
+      0,
+      3,
+      5,
+      6
+    ]
+  },
+  "route_B": {
+    "basis_rows": 4,
+    "bounded_product_envelope_M2": 335,
+    "complete_global_state_norm": 1.0,
+    "consistency_syndrome_failures": 0,
+    "debit_deletion_residual": 1.4142135623730951,
+    "exact_reentry_restores_ready_and_erases_archive": true,
+    "finite_debit_is_globally_irreversible": false,
+    "inverse_failures": 0,
+    "local_pointer_coherence_loss_when_archive_ignored": 0.8660254037844386,
+    "objective_member_selected_from_coherent_pointer": false,
+    "pass": true,
+    "physical_M2": 59,
+    "redundant_packet_is_framework_Record": false,
+    "replica_or_packet_failures": 0,
+    "resource_ledger_failures": 0,
+    "route": "B redundant consistency archive with reversible ready/spent debit",
+    "single_replica_deletion_residual": 1.7320508075688772,
+    "single_replica_fault_detected": true,
+    "static_nearest_neighbor_line_compiler": {
+      "adjacent_route_and_return_SWAPS": 18180,
+      "all24_line_edge_failures": 0,
+      "all24_line_edge_tests": 1392,
+      "line_M2": 59,
+      "literal_one_M2_primitives": 369,
+      "literal_two_M2_core_primitives": 280,
+      "logical_Toffoli": 41,
+      "maximum_unrouted_operand_distance": 58,
+      "nearest_neighbor_two_M2_calls": 18460,
+      "ordered_operand_failures": 0,
+      "pass": true,
+      "proper_cubic_frames": 24,
+      "route_adjacency_failures": 0,
+      "route_manifest_sha256": "45f754cb7b88be0b692476c4e361df57382892cee4a4c59776a373b72410b75d",
+      "runtime_data_selects_route": false,
+      "terminal_wire_restoration_failures": 0
+    }
+  },
+  "route_C": {
+    "Cycle41_grade_vector": [
+      0.2499999999999999,
+      0.0,
+      0.0,
+      0.2499999999999999,
+      0.0,
+      0.2499999999999999,
+      0.2499999999999999,
+      0.0
+    ],
+    "biased_state_grade_vector": [
+      0.5,
+      0.0,
+      0.0,
+      0.0,
+      0.5,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "direct_branch_grade_residual": 0.0,
+    "exact_multiple_of_four_failures": 0,
+    "finite_deterministic_history_is_probability_sample": false,
+    "fixture_match_is_universal_Born_bridge": false,
+    "frequency_rows": [
+      {
+        "L1_grade_residual": 4.440892098500626e-16,
+        "Linf_grade_residual": 1.1102230246251565e-16,
+        "prefix_discrepancy_bound_1_over_N": true,
+        "size": 8
+      },
+      {
+        "L1_grade_residual": 4.440892098500626e-16,
+        "Linf_grade_residual": 1.1102230246251565e-16,
+        "prefix_discrepancy_bound_1_over_N": true,
+        "size": 12
+      },
+      {
+        "L1_grade_residual": 0.08823529411764686,
+        "Linf_grade_residual": 0.04411764705882365,
+        "prefix_discrepancy_bound_1_over_N": true,
+        "size": 17
+      },
+      {
+        "L1_grade_residual": 0.048387096774193755,
+        "Linf_grade_residual": 0.02419354838709667,
+        "prefix_discrepancy_bound_1_over_N": true,
+        "size": 31
+      }
+    ],
+    "grade_used_to_construct_or_fit_rotor": false,
+    "head_advance_deletion_L1_residual": 0.06451612903225809,
+    "held_prefix_bound_failures": 0,
+    "held_sizes": [
+      17,
+      31
+    ],
+    "pass": true,
+    "per_emitted_archive_cell_M2": 8,
+    "physical_controller_M2": 4,
+    "repeatability_failures": 0,
+    "rotor_forbidden_numeric_or_probability_ports": [],
+    "rotor_word": [
+      0,
+      3,
+      5,
+      6
+    ],
+    "rotor_word_sha256": "e4857579be05be0330585f94e31e3be7a8b466986379bcd7202f3b5072193691",
+    "route": "C fixed repeated-history rotor versus exact Cycle41 candidate Born surface",
+    "same_law_biased_held_L1_residual": 1.5,
+    "same_law_biased_held_Linf_residual": 0.5,
+    "train_sizes": [
+      8,
+      12
+    ]
+  },
+  "summary": {
+    "audit": "unset",
+    "authority": "none",
+    "axiom_pressure": null,
+    "derived_Born_probability": null,
+    "framework_Record": null,
+    "objective_member_from_coherent_pointer": null,
+    "realized_history": null,
+    "shared_obstruction": null,
+    "strongest_constructive_result": "bounded autonomous-after-front domain-wall compiler into exact Cycle552/531 conditional occurrence"
+  }
+}
+RESULT pass=6 fail=0
+authority=none; audit=unset; conditional member is not objective actuality; copied pointer is not Record; deterministic fixture frequency is not derived Born probability
+       88.35 real        86.10 user         0.92 sys
+           927989760  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              326631  page reclaims
+                  74  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                2000  voluntary context switches
+               85402  involuntary context switches
+       1262167248806  instructions retired
+        297318349984  cycles elapsed
+          1035732144  peak memory footprint

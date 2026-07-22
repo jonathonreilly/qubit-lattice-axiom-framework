@@ -1113,7 +1113,7 @@
         },
         {
           "claim_id": "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18",
-          "effective_status": "audit_in_progress"
+          "effective_status": "audited_failed"
         },
         {
           "claim_id": "hierarchy_fixed_density_physical_selector_no_go_note_2026-06-18",
@@ -2763,6 +2763,6 @@
       "uncertified_count": 633
     }
   ],
-  "repo_head": "2513b7bb193273ebac28a46f9c891f3c4c475590",
+  "repo_head": "4299a6b8cf4b9d44b5be6090d0e53394891f2875",
   "schema": "lane_certification_v2"
 }

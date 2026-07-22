@@ -1,10 +1,11 @@
 {
-  "audit_date": "2026-07-22T20:28:51.421599+00:00",
+  "audit_date": "2026-07-22T20:41:19.815718+00:00",
   "audit_invocation_history": [
     "43d1cb2921c445cd9e9bef3c039c058a",
-    "4e8e3077e4524e1cb4ba3c456f660913"
+    "4e8e3077e4524e1cb4ba3c456f660913",
+    "7bb2bd57812047218513ead15b8212f2"
   ],
-  "audit_invocation_id": "4e8e3077e4524e1cb4ba3c456f660913",
+  "audit_invocation_id": "7bb2bd57812047218513ead15b8212f2",
   "audit_state_snapshot": {
     "artifact_classifier_state": {
       "assert_count": 1,
@@ -61,24 +62,25 @@
     "schema": "blocker_fingerprint_v1",
     "transitive_descendants": 726
   },
-  "audit_status": "audit_in_progress",
-  "auditor": "codex-audit-batch-A-20260722-817eb7b8",
-  "auditor_confidence": "high",
+  "audit_status": "audited_failed",
+  "auditor": "codex-judicial-1-20260722-a65805a8",
+  "auditor_confidence": "judicial",
   "auditor_family": "codex-gpt-5.6",
   "auditor_model": "gpt-5.6-sol",
   "auditor_reasoning_effort": "xhigh",
-  "blocker": "cross_confirmation_disagreement",
+  "blocker": null,
   "chain_closes": false,
-  "chain_closure_explanation": "The finite algebra closes independently, but the source predicts 12 passing checks while the included runner executes and reports 13. The as-written verification contract is therefore stale.",
+  "chain_closure_explanation": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The packet explicitly scopes the as-written runner verification total: the source expects TOTAL: PASS=12 FAIL=0, while the supplied runner executes 13 checks and reports TOTAL: PASS=13 FAIL=0. Although the class-A finite algebra closes, that factual mismatch leaves the full scoped claim false as written, so audited_failed is the correct conservative tuple.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260722-a65805a8\", \"judge\": 1, \"rationale\": \"The packet explicitly scopes the as-written runner verification total: the source expects TOTAL: PASS=12 FAIL=0, while the supplied runner executes 13 checks and reports TOTAL: PASS=13 FAIL=0. Although the class-A finite algebra closes, that factual mismatch leaves the full scoped claim false as written, so audited_failed is the correct conservative tuple.\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"For the defined neutral vector H(v) and a supplied positive quartic D=4 density, the q=v^2 substitution, inverse fourth-root fixed-density ratio, and as-written runner verification total.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-2-20260722-4a46c039\", \"judge\": 2, \"rationale\": \"The packet explicitly makes the as-written runner verification total part of the supplied claim scope. The source predicts PASS=12, while the completed runner executes and reports PASS=13; under the rubric, that stale completed-run mismatch is valid audit evidence even though the underlying finite algebra closes.\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"For the defined neutral vector H(v) and a supplied positive quartic D=4 density, the q=v^2 substitution, inverse fourth-root fixed-density ratio, and as-written runner verification total.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-3-20260722-3f08296a\", \"judge\": 3, \"rationale\": \"The restricted packet confirms 13 executed passing checks (3+4+2+4), while the source note\\u2019s Verification block predicts TOTAL: PASS=12 FAIL=0. Because the authenticated claim scope expressly includes the as-written runner verification total, the full chain does not close despite the underlying class-A algebra being correct.\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"For the defined neutral vector H(v) and a supplied positive quartic D=4 density, the q=v^2 substitution, inverse fourth-root fixed-density ratio, and as-written runner verification total.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-4-20260722-40cd6dcd\", \"judge\": 4, \"rationale\": \"The class-A finite algebra is supported, but the source's Verification block explicitly predicts TOTAL: PASS=12 FAIL=0 while the included completed runner reports TOTAL: PASS=13 FAIL=0. Because the packet treats completed stale-number mismatches as valid audit evidence, the as-written verification contract does not close on its own terms.\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"For the defined neutral vector H(v) and a supplied positive quartic D=4 density, the q=v^2 substitution, inverse fourth-root fixed-density ratio, and as-written runner verification total.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-5-20260722-a41e5520\", \"judge\": 5, \"rationale\": \"The source note explicitly predicts TOTAL: PASS=12 FAIL=0, while the completed primary runner reports TOTAL: PASS=13 FAIL=0. The packet expressly treats completed runner mismatches and stale numbers as valid audit evidence. Although the finite algebra closes, the as-written verification claim is false, so the bounded-theorem artifact cannot be ratified until that mismatch is repaired.\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"For the defined neutral vector H(v) and a supplied positive quartic D=4 density, the q=v^2 substitution, inverse fourth-root fixed-density ratio, and as-written runner verification total.\", \"A\", null, []]}]",
   "claim_id": "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18",
   "claim_scope": "For the defined neutral vector H(v) and a supplied positive quartic D=4 density, the q=v^2 substitution, inverse fourth-root fixed-density ratio, and as-written runner verification total.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-22T20:28:51.421599+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": "2026-07-22T20:41:19.815718+00:00",
+  "claim_type_provenance": "judicial_review",
   "criticality": "critical",
   "cross_confirmation": {
+    "agreement_schema": "audit_tuple_v2",
     "first_audit": {
       "audit_date": "2026-07-22T20:28:51.421599+00:00",
       "audit_invocation_id": "43d1cb2921c445cd9e9bef3c039c058a",
@@ -107,7 +109,130 @@
       "verdict": "audited_failed",
       "verdict_rationale": "Issue: The theorem's algebra checks, but its Verification section predicts TOTAL: PASS=12 FAIL=0 while the included runner executes and reports 13 passes. Why this blocks: the source is stale relative to its primary verification artifact, despite independent confirmation of q=v^2, rho_*=Av^4, and the inverse fourth-root ratio. Repair target: update the expected total to 13 or reconcile the runner's check set and rerun it. Claim boundary until fixed: the exact finite algebra is supported, but the note's verification claim is not."
     },
-    "mode": "terminal_second_pass",
+    "judicial_panel_record_v1": {
+      "cid": "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18",
+      "disagreement_fingerprint": {
+        "claim_id": "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18",
+        "first_audit_invocation_id": "43d1cb2921c445cd9e9bef3c039c058a",
+        "note_hash": "279dc21f6e60db28c16f5d621a990953db6b70854eef05ec4473bcf7b717c901",
+        "schema": "judicial_disagreement_fingerprint_v1",
+        "seat_summaries_sha256": "3202431dd2ada97b126acefb2123288cfd37769c11c6854703057e38a8d483e3",
+        "second_audit_invocation_id": "4e8e3077e4524e1cb4ba3c456f660913"
+      },
+      "failures": [],
+      "invocation_id": "7bb2bd57812047218513ead15b8212f2",
+      "majority_count": 5,
+      "panel": 1,
+      "result": "majority_candidate",
+      "schema": "judicial_panel_record_v1",
+      "tally": [
+        {
+          "count": 5,
+          "tuple": [
+            "first",
+            "audited_failed",
+            "bounded_theorem",
+            "For the defined neutral vector H(v) and a supplied positive quartic D=4 density, the q=v^2 substitution, inverse fourth-root fixed-density ratio, and as-written runner verification total.",
+            "A",
+            null,
+            []
+          ]
+        }
+      ],
+      "votes": [
+        {
+          "auditor": "codex-judicial-1-20260722-a65805a8",
+          "first_auditor_error": "none",
+          "hybrid_resolution_note": null,
+          "judge": 1,
+          "judgment_rationale": "The packet explicitly scopes the as-written runner verification total: the source expects TOTAL: PASS=12 FAIL=0, while the supplied runner executes 13 checks and reports TOTAL: PASS=13 FAIL=0. Although the class-A finite algebra closes, that factual mismatch leaves the full scoped claim false as written, so audited_failed is the correct conservative tuple.",
+          "negative_assertion_classes": [],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "Correct the Verification block's expected total from 12 to 13, or reconcile the runner check count, then re-audit the unchanged algebra.",
+          "ratified_claim_scope": "For the defined neutral vector H(v) and a supplied positive quartic D=4 density, the q=v^2 substitution, inverse fourth-root fixed-density ratio, and as-written runner verification total.",
+          "ratified_claim_type": "bounded_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "For positive equal-density endpoints, q(H(v))=v^2 implies rho_*=A(L)v(L)^4 and v(L)/v_ref=(A_ref/A(L))^(1/4).",
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_failed",
+          "second_auditor_error": "The second position omitted the explicitly scoped as-written verification total and therefore ratified a decoration despite the source's false PASS=12 expectation against the runner's computed PASS=13 result.",
+          "sided_with": "first"
+        },
+        {
+          "auditor": "codex-judicial-2-20260722-4a46c039",
+          "first_auditor_error": "none",
+          "hybrid_resolution_note": null,
+          "judge": 2,
+          "judgment_rationale": "The packet explicitly makes the as-written runner verification total part of the supplied claim scope. The source predicts PASS=12, while the completed runner executes and reports PASS=13; under the rubric, that stale completed-run mismatch is valid audit evidence even though the underlying finite algebra closes.",
+          "negative_assertion_classes": [],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "Correct the Verification block's expected total from 12 to 13, or reconcile the runner check count, then re-audit the unchanged algebra.",
+          "ratified_claim_scope": "For the defined neutral vector H(v) and a supplied positive quartic D=4 density, the q=v^2 substitution, inverse fourth-root fixed-density ratio, and as-written runner verification total.",
+          "ratified_claim_type": "bounded_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "For positive equal-density endpoints, q(H(v))=v^2 implies rho_*=A(L)v(L)^4 and v(L)/v_ref=(A_ref/A(L))^(1/4).",
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_failed",
+          "second_auditor_error": "The second position narrows away the supplied verification-total obligation and ratifies the algebra as a decoration without resolving the source's explicit PASS=12 prediction against the runner's PASS=13 result.",
+          "sided_with": "first"
+        },
+        {
+          "auditor": "codex-judicial-3-20260722-3f08296a",
+          "first_auditor_error": "none",
+          "hybrid_resolution_note": null,
+          "judge": 3,
+          "judgment_rationale": "The restricted packet confirms 13 executed passing checks (3+4+2+4), while the source note\u2019s Verification block predicts TOTAL: PASS=12 FAIL=0. Because the authenticated claim scope expressly includes the as-written runner verification total, the full chain does not close despite the underlying class-A algebra being correct.",
+          "negative_assertion_classes": [],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "Correct the Verification block's expected total from 12 to 13, or reconcile the runner check count, then re-audit the unchanged algebra.",
+          "ratified_claim_scope": "For the defined neutral vector H(v) and a supplied positive quartic D=4 density, the q=v^2 substitution, inverse fourth-root fixed-density ratio, and as-written runner verification total.",
+          "ratified_claim_type": "bounded_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "For positive equal-density endpoints, q(H(v))=v^2 implies rho_*=A(L)v(L)^4 and v(L)/v_ref=(A_ref/A(L))^(1/4).",
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_failed",
+          "second_auditor_error": "The second position narrowed away the authenticated as-written runner verification total and declared chain_closes=true despite the packet\u2019s explicit 12-versus-13 mismatch.",
+          "sided_with": "first"
+        },
+        {
+          "auditor": "codex-judicial-4-20260722-40cd6dcd",
+          "first_auditor_error": "none",
+          "hybrid_resolution_note": null,
+          "judge": 4,
+          "judgment_rationale": "The class-A finite algebra is supported, but the source's Verification block explicitly predicts TOTAL: PASS=12 FAIL=0 while the included completed runner reports TOTAL: PASS=13 FAIL=0. Because the packet treats completed stale-number mismatches as valid audit evidence, the as-written verification contract does not close on its own terms.",
+          "negative_assertion_classes": [],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "Correct the Verification block's expected total from 12 to 13, or reconcile the runner check count, then re-audit the unchanged algebra.",
+          "ratified_claim_scope": "For the defined neutral vector H(v) and a supplied positive quartic D=4 density, the q=v^2 substitution, inverse fourth-root fixed-density ratio, and as-written runner verification total.",
+          "ratified_claim_type": "bounded_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "For positive equal-density endpoints, q(H(v))=v^2 implies rho_*=A(L)v(L)^4 and v(L)/v_ref=(A_ref/A(L))^(1/4).",
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_failed",
+          "second_auditor_error": "The second position ignored the explicit 12-versus-13 verification-total mismatch and therefore ratified a closed decoration despite the source's false as-written reproduction claim.",
+          "sided_with": "first"
+        },
+        {
+          "auditor": "codex-judicial-5-20260722-a41e5520",
+          "first_auditor_error": "none",
+          "hybrid_resolution_note": null,
+          "judge": 5,
+          "judgment_rationale": "The source note explicitly predicts TOTAL: PASS=12 FAIL=0, while the completed primary runner reports TOTAL: PASS=13 FAIL=0. The packet expressly treats completed runner mismatches and stale numbers as valid audit evidence. Although the finite algebra closes, the as-written verification claim is false, so the bounded-theorem artifact cannot be ratified until that mismatch is repaired.",
+          "negative_assertion_classes": [],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "Correct the Verification block's expected total from 12 to 13, or reconcile the runner check count, then re-audit the unchanged algebra.",
+          "ratified_claim_scope": "For the defined neutral vector H(v) and a supplied positive quartic D=4 density, the q=v^2 substitution, inverse fourth-root fixed-density ratio, and as-written runner verification total.",
+          "ratified_claim_type": "bounded_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": null,
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_failed",
+          "second_auditor_error": "The second position overlooks the explicit source-versus-runner total mismatch and ratifies a decoration by narrowing away the note's false as-written verification claim.",
+          "sided_with": "first"
+        }
+      ]
+    },
+    "mode": "judicial_panel_majority",
     "second_audit": {
       "audit_date": "2026-07-22T20:28:51.429573+00:00",
       "audit_invocation_id": "4e8e3077e4524e1cb4ba3c456f660913",
@@ -136,7 +261,25 @@
       "verdict": "audited_decoration",
       "verdict_rationale": "Every scientific load-bearing step is exact class-A algebra, and the runner contains no external comparator. The fourth-root density readout is already supplied by the single D4 density-scale parent; evaluating q on the defined neutral vector and restating the formal quadratic-form readouts add no independent physical content. The properly scoped result is therefore an algebraic decoration under that parent, not a new bounded theorem."
     },
-    "status": "disagreement"
+    "status": "third_confirmed_first",
+    "third_audit": {
+      "audit_date": "2026-07-22T20:41:19.815718+00:00",
+      "audit_invocation_id": "7bb2bd57812047218513ead15b8212f2",
+      "auditor": "codex-judicial-1-20260722-a65805a8",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "claim_scope": "For the defined neutral vector H(v) and a supplied positive quartic D=4 density, the q=v^2 substitution, inverse fourth-root fixed-density ratio, and as-written runner verification total.",
+      "claim_type": "bounded_theorem",
+      "first_auditor_error": "none",
+      "independence": "judicial_review",
+      "judgment_rationale": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The packet explicitly scopes the as-written runner verification total: the source expects TOTAL: PASS=12 FAIL=0, while the supplied runner executes 13 checks and reports TOTAL: PASS=13 FAIL=0. Although the class-A finite algebra closes, that factual mismatch leaves the full scoped claim false as written, so audited_failed is the correct conservative tuple.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260722-a65805a8\", \"judge\": 1, \"rationale\": \"The packet explicitly scopes the as-written runner verification total: the source expects TOTAL: PASS=12 FAIL=0, while the supplied runner executes 13 checks and reports TOTAL: PASS=13 FAIL=0. Although the class-A finite algebra closes, that factual mismatch leaves the full scoped claim false as written, so audited_failed is the correct conservative tuple.\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"For the defined neutral vector H(v) and a supplied positive quartic D=4 density, the q=v^2 substitution, inverse fourth-root fixed-density ratio, and as-written runner verification total.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-2-20260722-4a46c039\", \"judge\": 2, \"rationale\": \"The packet explicitly makes the as-written runner verification total part of the supplied claim scope. The source predicts PASS=12, while the completed runner executes and reports PASS=13; under the rubric, that stale completed-run mismatch is valid audit evidence even though the underlying finite algebra closes.\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"For the defined neutral vector H(v) and a supplied positive quartic D=4 density, the q=v^2 substitution, inverse fourth-root fixed-density ratio, and as-written runner verification total.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-3-20260722-3f08296a\", \"judge\": 3, \"rationale\": \"The restricted packet confirms 13 executed passing checks (3+4+2+4), while the source note\\u2019s Verification block predicts TOTAL: PASS=12 FAIL=0. Because the authenticated claim scope expressly includes the as-written runner verification total, the full chain does not close despite the underlying class-A algebra being correct.\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"For the defined neutral vector H(v) and a supplied positive quartic D=4 density, the q=v^2 substitution, inverse fourth-root fixed-density ratio, and as-written runner verification total.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-4-20260722-40cd6dcd\", \"judge\": 4, \"rationale\": \"The class-A finite algebra is supported, but the source's Verification block explicitly predicts TOTAL: PASS=12 FAIL=0 while the included completed runner reports TOTAL: PASS=13 FAIL=0. Because the packet treats completed stale-number mismatches as valid audit evidence, the as-written verification contract does not close on its own terms.\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"For the defined neutral vector H(v) and a supplied positive quartic D=4 density, the q=v^2 substitution, inverse fourth-root fixed-density ratio, and as-written runner verification total.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-5-20260722-a41e5520\", \"judge\": 5, \"rationale\": \"The source note explicitly predicts TOTAL: PASS=12 FAIL=0, while the completed primary runner reports TOTAL: PASS=13 FAIL=0. The packet expressly treats completed runner mismatches and stale numbers as valid audit evidence. Although the finite algebra closes, the as-written verification claim is false, so the bounded-theorem artifact cannot be ratified until that mismatch is repaired.\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"For the defined neutral vector H(v) and a supplied positive quartic D=4 density, the q=v^2 substitution, inverse fourth-root fixed-density ratio, and as-written runner verification total.\", \"A\", null, []]}]",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "second_auditor_error": "The second position omitted the explicitly scoped as-written verification total and therefore ratified a decoration despite the source's false PASS=12 expectation against the runner's computed PASS=13 result.",
+      "sided_with": "first",
+      "verdict": "audited_failed"
+    }
   },
   "decoration_parent_claim_id": null,
   "deps": [
@@ -144,11 +287,11 @@
     "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16"
   ],
   "direct_in_degree": 2,
-  "effective_status": "audit_in_progress",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_failed",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audit_in_progress",
+  "independence": "judicial_review",
+  "intrinsic_status": "audited_failed",
   "load_bearing_score": 10.506,
   "load_bearing_step": "For positive equal-density endpoints, q(H(v))=v^2 implies rho_*=A(L)v(L)^4 and v(L)/v_ref=(A_ref/A(L))^(1/4).",
   "load_bearing_step_class": "A",
@@ -310,5 +453,5 @@
   "runner_path": "scripts/frontier_hierarchy_ew_order_parameter_d4_density_readout_bridge_2026_06_18.py",
   "title": "Hierarchy EW Order-Parameter D4 Density Readout Bridge",
   "transitive_descendants": 726,
-  "verdict_rationale": "Issue: The theorem's algebra checks, but its Verification section predicts TOTAL: PASS=12 FAIL=0 while the included runner executes and reports 13 passes. Why this blocks: the source is stale relative to its primary verification artifact, despite independent confirmation of q=v^2, rho_*=Av^4, and the inverse fourth-root ratio. Repair target: update the expected total to 13 or reconcile the runner's check set and rerun it. Claim boundary until fixed: the exact finite algebra is supported, but the note's verification claim is not."
+  "verdict_rationale": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The packet explicitly scopes the as-written runner verification total: the source expects TOTAL: PASS=12 FAIL=0, while the supplied runner executes 13 checks and reports TOTAL: PASS=13 FAIL=0. Although the class-A finite algebra closes, that factual mismatch leaves the full scoped claim false as written, so audited_failed is the correct conservative tuple.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260722-a65805a8\", \"judge\": 1, \"rationale\": \"The packet explicitly scopes the as-written runner verification total: the source expects TOTAL: PASS=12 FAIL=0, while the supplied runner executes 13 checks and reports TOTAL: PASS=13 FAIL=0. Although the class-A finite algebra closes, that factual mismatch leaves the full scoped claim false as written, so audited_failed is the correct conservative tuple.\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"For the defined neutral vector H(v) and a supplied positive quartic D=4 density, the q=v^2 substitution, inverse fourth-root fixed-density ratio, and as-written runner verification total.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-2-20260722-4a46c039\", \"judge\": 2, \"rationale\": \"The packet explicitly makes the as-written runner verification total part of the supplied claim scope. The source predicts PASS=12, while the completed runner executes and reports PASS=13; under the rubric, that stale completed-run mismatch is valid audit evidence even though the underlying finite algebra closes.\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"For the defined neutral vector H(v) and a supplied positive quartic D=4 density, the q=v^2 substitution, inverse fourth-root fixed-density ratio, and as-written runner verification total.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-3-20260722-3f08296a\", \"judge\": 3, \"rationale\": \"The restricted packet confirms 13 executed passing checks (3+4+2+4), while the source note\\u2019s Verification block predicts TOTAL: PASS=12 FAIL=0. Because the authenticated claim scope expressly includes the as-written runner verification total, the full chain does not close despite the underlying class-A algebra being correct.\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"For the defined neutral vector H(v) and a supplied positive quartic D=4 density, the q=v^2 substitution, inverse fourth-root fixed-density ratio, and as-written runner verification total.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-4-20260722-40cd6dcd\", \"judge\": 4, \"rationale\": \"The class-A finite algebra is supported, but the source's Verification block explicitly predicts TOTAL: PASS=12 FAIL=0 while the included completed runner reports TOTAL: PASS=13 FAIL=0. Because the packet treats completed stale-number mismatches as valid audit evidence, the as-written verification contract does not close on its own terms.\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"For the defined neutral vector H(v) and a supplied positive quartic D=4 density, the q=v^2 substitution, inverse fourth-root fixed-density ratio, and as-written runner verification total.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-5-20260722-a41e5520\", \"judge\": 5, \"rationale\": \"The source note explicitly predicts TOTAL: PASS=12 FAIL=0, while the completed primary runner reports TOTAL: PASS=13 FAIL=0. The packet expressly treats completed runner mismatches and stale numbers as valid audit evidence. Although the finite algebra closes, the as-written verification claim is false, so the bounded-theorem artifact cannot be ratified until that mismatch is repaired.\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"For the defined neutral vector H(v) and a supplied positive quartic D=4 density, the q=v^2 substitution, inverse fourth-root fixed-density ratio, and as-written runner verification total.\", \"A\", null, []]}]"
 }

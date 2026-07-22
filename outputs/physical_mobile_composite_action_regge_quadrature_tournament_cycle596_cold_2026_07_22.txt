@@ -1,0 +1,78 @@
+CYCLE 596 SCOPE-CORRECTED COLD EXECUTION — 2026-07-22
+HEAD 70a1c54281afdfce255f5115cb84c3766813316e
+COMMAND /usr/bin/time -lp python3 scripts/physical_mobile_composite_action_regge_quadrature_tournament_cycle596_2026_07_22.py
+
+PASS exact dependency hashes are frozen :: {}
+PASS scoped note contract is complete :: ()
+PASS Route A local diagonal-pair coin and full encoded actual update intertwine
+PASS Route A is mobile, translation/all24 covariant and inverse
+PASS Route A seed debit, joint continuity and deletion controls are exact/active
+PASS Route A uses bounded constant M2 overhead without claiming autonomous genesis or staticity
+PASS Route A preserves inherited mass/contact/seam fixtures
+PASS Route B PSD action uniquely selects the plus partial-fSWAP orientation before held rows
+PASS Route B reciprocal, endpoint, inverse and all24 controls pass
+PASS Route B retains the selected reciprocal nonconservation/contact falsifier
+PASS Route C exactly reconstructs the actual finite-torus sinc metric map
+PASS Route C finite code-space actual-Regge generator/update have exact EG and four nulls
+PASS Route C inverse/leakage/deletion and raw-update separation controls pass
+PASS Route C all24/all576 candidate frame representation closes
+PASS Route C size control exposes nonconstant auxiliary/radius growth without broadening the claim
+PASS mobile conserved source retains the paid solver and exact K_join=L
+PASS typed far shore remains exact while response sign, lapse/proper time and Record stay open
+PASS full N1-N8 discipline forbids shared obstruction, minimum claim or axiom pressure
+
+FROZEN_NUMERICAL_SUMMARY
+route_A.maximum_local_pair_coin_EG_residual=2.7194799110210365e-16
+route_A.maximum_full_encoded_update_residual=0.0
+route_A.maximum_local_pair_coin_unitarity_residual=1.457107483136023e-15
+route_A.maximum_inverse_residual=5.6536475966848605e-15
+route_A.maximum_local_continuity_residual=2.220446049250313e-16
+route_A.maximum_translation_covariance_residual=0.0
+route_A.maximum_all24_covariance_residual=0.0
+route_A.minimum_mobility_signal=1.0
+route_A.minimum_binder_stream_deletion_signal=1.0
+route_A.physical_M2_added_per_cell=7
+route_A.Cycle593_full_held_L6_M2_after_extension_including_root=20091
+route_A.mass_fixture_relative_residual=2.220446049250313e-16
+route_A.seam_singular_values=[0.9945275076026864,0.9944929466328961,0.9944929466328959,0.9944929466328959]
+route_B.selected_branch=1
+route_B.plus_local_action_eigenvalues=[0.0,3.141592653589793]
+route_B.minus_local_action_eigenvalues=[-3.141592653589793,0.0]
+route_B.local_reciprocal_finite_difference_residual=5.167866135025179e-12
+route_B.literal_partial_fSWAP_endpoint_residual=1.0955382005482242e-15
+route_B.minimum_normalized_full_update_nonconservation_defect=0.666666666666668
+route_B.minimum_actual_contact_expectation_witness=0.0007952873177519137
+route_C.maximum_exact_line_factor_residual=5.553934417046551e-15
+route_C.maximum_exact_metric_map_residual=1.2356492672524801e-15
+route_C.maximum_generator_EG_residual=2.2398521631339534e-14
+route_C.maximum_update_EG_residual=1.1047023988622154e-15
+route_C.maximum_four_null_eigenvalue_residual=2.079937365868325e-15
+route_C.maximum_code_leakage=7.975863291170078e-15
+route_C.maximum_inverse_residual=1.3352020529170097e-15
+route_C.minimum_raw_Regge_image_leakage=0.44550253229430753
+route_C.minimum_quadrature_deletion_signal=0.35828648721198714
+route_C.fixed_train_radius_one_L7_failure_signal=0.6451097584704377
+route_C.assumed_candidate_rail_and_terminal_description=one-excitation DFT sample rails with two-M2 pairwise terminals; assumed presentation only
+route_C.executed_physical_M2_gate_factorization=false
+route_C.executed_bounded_layout_certificate=false
+route_C.executed_bounded_depth_certificate=false
+route_C.dense_update_gate_synthesis_open=true
+route_C.is_physical_site_compiler=false
+route_C.size_L3_samples_per_edge_total_radius=27,127,3
+route_C.size_L4_samples_per_edge_total_radius=64,249,6
+route_C.size_L5_samples_per_edge_total_radius=125,431,6
+route_C.size_L7_samples_per_edge_total_radius=343,1023,9
+join.K_join_equals_L_maximum_residual=1.3322676295501878e-15
+join.maximum_inherited_Green_residual=0.001748688020904332
+join.ratios=4:4,4:4,3:4,5:4
+no_go.normalized_family_count=8
+no_go.broad_negative_gate=FAIL / DO NOT SHIP
+no_go.shared_obstruction=false
+no_go.minimum_content_claim=false
+no_go.axiom_pressure=false
+
+SUMMARY PASS 18 FAIL 0
+real 90.58
+user 88.15
+sys 1.38
+maximum resident set size 958070784

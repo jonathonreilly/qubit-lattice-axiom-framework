@@ -1,0 +1,1585 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "axiom_pressure": false,
+  "constitutional_effect": "none",
+  "elapsed_seconds": 1.2328584589995444,
+  "frozen_law_sha256": "a4b44c209aae33f4ec680353f62eae693b567f627b15b8531b0abd86f647d4cd",
+  "highest_honest_terminal": "autonomous-after-matter-genesis basis-code admission candidate plus finite predecessor/archive data; not actuality, framework Record, permanence, realized history, Born probability, or time",
+  "malformed_deletion_renewal_controls": {
+    "Cycle608_612_detector_sizes": [
+      [
+        "train",
+        3
+      ],
+      [
+        "held_out",
+        4
+      ],
+      [
+        "held",
+        6
+      ]
+    ],
+    "candidate_rule_deletion_visible": true,
+    "finite_capacity_and_erasing_inverse_visible": true,
+    "finite_protection_called_permanence": false,
+    "malformed_rejections": 9,
+    "malformed_total": 9,
+    "mask_or_frequency_called_Born": false,
+    "matter_unchanged": true,
+    "one_particle_mass_fixture_residual": 1.1102230246251565e-16,
+    "pass": true,
+    "pointer_or_packet_called_Record": false,
+    "predecessor_and_history_deletions_visible": true,
+    "recurrence_or_prefix_called_time": false,
+    "time_side_interface": {
+      "future_adapter": "if a later time-side result exposes a locally available physical branch label, it may be copied only as an additional candidate-packet payload and must rerun locality/covariance/deletion",
+      "locally_exact_pinned_branch_consumed": false,
+      "scientific_dependency": false,
+      "would_supply_admission_actuality_or_permanence": false
+    }
+  },
+  "maturity": {
+    "Born_probability_repo_strict": [
+      4.21,
+      3.69
+    ],
+    "causal_time_repo_strict": [
+      4.1,
+      3.91
+    ],
+    "gravity_source_repo_strict": [
+      4.13,
+      3.88
+    ],
+    "inertia_matter_repo_strict": [
+      4.84,
+      4.9
+    ],
+    "operational_quantum_records_repo_strict": [
+      4.88,
+      4.75
+    ]
+  },
+  "maximum_RSS_bytes": 767885312,
+  "no_go_discipline": {
+    "N1_attempted_qualifying_families": 3,
+    "N1_broad_negative_gate": "FAIL_DO_NOT_SHIP",
+    "N1_normalized_route_families": [
+      {
+        "family": "state-local unique quorum",
+        "mechanism": "majority plus symmetric exactly-one and packet-local freshness",
+        "object": "six incident triplicate Pd endpoint words",
+        "status": "ATTEMPTED_POSITIVE_BASIS_CONDITIONAL",
+        "terminal": "objective selection on coherent inputs and identification with the physical Admissibility rule"
+      },
+      {
+        "family": "finite reversible debit archive",
+        "mechanism": "fixed forward append with exact reverse re-entry",
+        "object": "ready/spent medium and triplicate packets",
+        "status": "ATTEMPTED_POSITIVE_FINITE",
+        "terminal": "non-erasing renewal and all-future physical preservation"
+      },
+      {
+        "family": "predecessor grade-history chain",
+        "mechanism": "deterministic rotor and local predecessor propagation",
+        "object": "local DAG packets plus denominator-64 mask",
+        "status": "ATTEMPTED_POSITIVE_CONDITIONAL",
+        "terminal": "derive parameter calibration, actuality, Record status, and probability law"
+      },
+      {
+        "family": "objective stochastic collapse field",
+        "mechanism": "covariant noise/collapse with conserved exhaust",
+        "object": "local stochastic state variable",
+        "status": "OPEN_NOT_COUNTED",
+        "terminal": "derive kernel, actuality, resource balance, and held calibration"
+      },
+      {
+        "family": "unique-extension successor law",
+        "mechanism": "one covariant successor per formation context",
+        "object": "extensional local Admissibility relation",
+        "status": "OPEN_NOT_COUNTED",
+        "terminal": "derive rule content, coherent-sector ownership, and permanent Record continuation"
+      },
+      {
+        "family": "dissipative stationary reservoir",
+        "mechanism": "mixing plus irreversible exhaust and renewal",
+        "object": "open local medium",
+        "status": "OPEN_NOT_COUNTED",
+        "terminal": "derive stationary state, inaccessible inverse, and Records"
+      },
+      {
+        "family": "constrained record-preserving QCA",
+        "mechanism": "every future channel fixes admitted record projectors",
+        "object": "post-formation operation algebra",
+        "status": "OPEN_NOT_COUNTED",
+        "terminal": "derive activation only after formation without suppressing pre-record coherence"
+      },
+      {
+        "family": "infinite tail-sector record",
+        "mechanism": "sector separation beyond finite local inverse",
+        "object": "quasilocal representation/tail charge",
+        "status": "OPEN_NOT_COUNTED",
+        "terminal": "derive finite-time local entry, capacity, and readable outcome"
+      }
+    ],
+    "N1_required_for_broad_negative": 5,
+    "N2_all_ordered_pairs_independent_on_exhibited_interfaces": true,
+    "N2_collapsed_walls": {
+      "W_actuality": "select one objective sector for coherent physical matter input",
+      "W_grade": "derive the state-to-parameter/mask transition calibration",
+      "W_law": "identify the fixed unique-quorum/successor update with the framework's physical Admissibility/formation law",
+      "W_preservation": "derive an all-future physical operation class preserving admitted content",
+      "W_probability": "derive objective ensemble/corpus, probability meaning, and frequency calibration",
+      "W_renewal": "renew fresh medium/capacity without erasing protected history or importing a stream"
+    },
+    "N2_directional_pair_count": 30,
+    "N2_directional_wall_pairs": [
+      {
+        "closure_implied": false,
+        "from": "W_law",
+        "reason": "closing W_law neither constructs nor logically selects W_actuality",
+        "to": "W_actuality"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_law",
+        "reason": "closing W_law neither constructs nor logically selects W_preservation",
+        "to": "W_preservation"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_law",
+        "reason": "closing W_law neither constructs nor logically selects W_renewal",
+        "to": "W_renewal"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_law",
+        "reason": "closing W_law neither constructs nor logically selects W_grade",
+        "to": "W_grade"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_law",
+        "reason": "closing W_law neither constructs nor logically selects W_probability",
+        "to": "W_probability"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_actuality",
+        "reason": "closing W_actuality neither constructs nor logically selects W_law",
+        "to": "W_law"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_actuality",
+        "reason": "closing W_actuality neither constructs nor logically selects W_preservation",
+        "to": "W_preservation"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_actuality",
+        "reason": "closing W_actuality neither constructs nor logically selects W_renewal",
+        "to": "W_renewal"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_actuality",
+        "reason": "closing W_actuality neither constructs nor logically selects W_grade",
+        "to": "W_grade"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_actuality",
+        "reason": "closing W_actuality neither constructs nor logically selects W_probability",
+        "to": "W_probability"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_preservation",
+        "reason": "closing W_preservation neither constructs nor logically selects W_law",
+        "to": "W_law"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_preservation",
+        "reason": "closing W_preservation neither constructs nor logically selects W_actuality",
+        "to": "W_actuality"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_preservation",
+        "reason": "closing W_preservation neither constructs nor logically selects W_renewal",
+        "to": "W_renewal"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_preservation",
+        "reason": "closing W_preservation neither constructs nor logically selects W_grade",
+        "to": "W_grade"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_preservation",
+        "reason": "closing W_preservation neither constructs nor logically selects W_probability",
+        "to": "W_probability"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_renewal",
+        "reason": "closing W_renewal neither constructs nor logically selects W_law",
+        "to": "W_law"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_renewal",
+        "reason": "closing W_renewal neither constructs nor logically selects W_actuality",
+        "to": "W_actuality"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_renewal",
+        "reason": "closing W_renewal neither constructs nor logically selects W_preservation",
+        "to": "W_preservation"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_renewal",
+        "reason": "closing W_renewal neither constructs nor logically selects W_grade",
+        "to": "W_grade"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_renewal",
+        "reason": "closing W_renewal neither constructs nor logically selects W_probability",
+        "to": "W_probability"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_grade",
+        "reason": "closing W_grade neither constructs nor logically selects W_law",
+        "to": "W_law"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_grade",
+        "reason": "closing W_grade neither constructs nor logically selects W_actuality",
+        "to": "W_actuality"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_grade",
+        "reason": "closing W_grade neither constructs nor logically selects W_preservation",
+        "to": "W_preservation"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_grade",
+        "reason": "closing W_grade neither constructs nor logically selects W_renewal",
+        "to": "W_renewal"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_grade",
+        "reason": "closing W_grade neither constructs nor logically selects W_probability",
+        "to": "W_probability"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_probability",
+        "reason": "closing W_probability neither constructs nor logically selects W_law",
+        "to": "W_law"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_probability",
+        "reason": "closing W_probability neither constructs nor logically selects W_actuality",
+        "to": "W_actuality"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_probability",
+        "reason": "closing W_probability neither constructs nor logically selects W_preservation",
+        "to": "W_preservation"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_probability",
+        "reason": "closing W_probability neither constructs nor logically selects W_renewal",
+        "to": "W_renewal"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_probability",
+        "reason": "closing W_probability neither constructs nor logically selects W_grade",
+        "to": "W_grade"
+      }
+    ],
+    "N3_hidden_wall_scan": "Cycle608 chart/path-cat/binder/matter genesis; candidate unique-quorum law; blank target; endpoint triplication; explicit 92-M2 predicate layout, clean work, literal gate identity and joint-line routing; finite noiseless gates; frontier genesis; ready/spent medium; finite H3/H4/H6; site-tagged packet identity; Cycle597 unary parameter calibration, mask precision, rotor genesis; empty history line; frame chart; and held cuts are explicit",
+    "N4_exact_residual_matching": [
+      {
+        "current_residual": "remove runtime admission inputs while retaining candidate-law identification and actuality",
+        "match": true,
+        "witness": "Cycle612",
+        "witness_residual": "computed Pd endpoint but supplied admission law/domain/freshness"
+      },
+      {
+        "current_residual": "quantify H3/H4/H6 survival, debit, inverse, and renewal",
+        "match": true,
+        "witness": "Cycle571",
+        "witness_residual": "finite append inverse and resource renewal below Record"
+      },
+      {
+        "current_residual": "same finite-protection versus permanence boundary",
+        "match": true,
+        "witness": "Cycle587",
+        "witness_residual": "redundant packet exact re-entry erases archive"
+      },
+      {
+        "current_residual": "attach those labels to predecessor candidates without Born promotion",
+        "match": true,
+        "witness": "Cycle597",
+        "witness_residual": "grade mask and rotor conditional on parameter calibration; archive renewal open"
+      },
+      {
+        "current_residual": "candidate rule is not selected as the physical formation law",
+        "match": true,
+        "witness": "Record formation certification",
+        "witness_residual": "occurrence strength without site/content/weight/rate rule"
+      },
+      {
+        "current_residual": "separate W_law from W_preservation",
+        "match": true,
+        "witness": "Admissibility continuation note",
+        "witness_residual": "successor support and all-future preservation are independent"
+      }
+    ],
+    "N5_rhetoric_audit": [
+      {
+        "phrase": "basis-code predicate is not actuality",
+        "tested": "all 64 ideal words and six coherent basis sectors",
+        "untested": "general collapse/noise/infinite-sector mechanisms",
+        "wording": "route-scoped only"
+      },
+      {
+        "phrase": "finite protection is not permanence",
+        "tested": "H3/H4/H6 forward words and exact erasing inverse",
+        "untested": "arbitrary future operation algebras and infinite media",
+        "wording": "finite-route scoped"
+      },
+      {
+        "phrase": "candidate counts are not Born",
+        "tested": "two Cycle597 held masks, alternative order, finite error budget",
+        "untested": "objective stochastic laws and blinded realized Records",
+        "wording": "candidate-chain scoped"
+      }
+    ],
+    "N6_partial_closure_paths": [
+      "derive the extensional fixed Admissibility successor rule and compare it with unique quorum",
+      "derive a coherent-sector actuality mechanism with retained exhaust and no host selector",
+      "derive a post-formation operation theorem Phi*(P)=P for every later physical channel",
+      "derive translation-invariant non-erasing medium renewal or a lawful terminal saturated state",
+      "derive state-to-grade calibration and then test blinded actual Records rather than candidate packets"
+    ],
+    "N7_hostile_steelman": "A constrained local QCA could make the unique-quorum rule the extensional fixed successor law, transfer the winning matter excitation into a tail or metastable charge whose allowed post-formation algebra fixes its packet, and recycle local exhaust into fresh medium while a separately derived amplitude-estimation register controls a stochastic transition.  The terminal obligations are exact rule identification, coherent-sector actuality, finite-time entry into the preserving sector, non-erasing renewal, and blinded Record frequencies.  None is tested here.",
+    "N8_cross_cycle_echo": "Cycle508 separated actual-member/Record machinery from Born; Cycle568/571 separated objective carrier and finite append from admission/permanence; Cycle587 actively reversed redundancy; Cycles592/595/597 retired ROM/enumerator imports while preserving grade and probability boundaries; Cycle612 supplied the physical matter endpoint but not admission.  Earlier host wiring gaps did close constructively, so the remaining routes stay open.",
+    "axiom_pressure": false,
+    "minimum_content_claim_shipped": false,
+    "negative_claim_shipped": false,
+    "pass": true,
+    "shared_substrate_obstruction": false
+  },
+  "note_contract": {
+    "missing": [],
+    "pass": true,
+    "required_fragments": [
+      "authority: none",
+      "audit: unset",
+      "basis-code unique-quorum admission candidate",
+      "not an actuality selector",
+      "not a framework record",
+      "no runtime admission rom",
+      "finite protection and finite forward survival are not record permanence",
+      "candidate packet frequencies are not born weights",
+      "not a realized corpus",
+      "all 24 proper-cubic frames",
+      "576 ordered products",
+      "held-out l4",
+      "held l6",
+      "recurrence, forward applications, prefix lengths, and predecessor depth are not called time",
+      "realized-state primitive permits pointwise evaluation only",
+      "n1",
+      "n8",
+      "broad no-go: fail / do not ship",
+      "no axiom pressure",
+      "later time-side result"
+    ]
+  },
+  "note_sha256": "d9164a42bc3cba10fb6d142b9ae5152543274c5d18ced5a070e5533c488a7ca2",
+  "optimal_next_campaign": "derive or falsify identification of the symmetric local successor rule with the extensional physical Admissibility law, then construct a post-formation operation algebra and non-erasing renewal medium before any actual Record or Born-corpus claim",
+  "pass": true,
+  "route_A_all24_all576": {
+    "all24_covariance_failures": 0,
+    "all24_truth_tests": 1536,
+    "all576_direction_composition_tests": 3456,
+    "all576_group_failures": 0,
+    "direction_onehot_transports_with_frame": true,
+    "ordered_frame_products": 576,
+    "pass": true,
+    "proper_cubic_frames": 24,
+    "route_B_archive_all24_failures": 0,
+    "route_B_archive_all24_tests": 24,
+    "route_C_held_history_all24_failures": 0,
+    "route_C_held_history_all24_tests": 8352,
+    "scalar_packet_fields_transform_trivially": true
+  },
+  "route_A_state_local_unique_quorum": {
+    "basis_packet_called_actual_or_Record": false,
+    "candidate_rule_selected_as_framework_Admissibility_rule": false,
+    "coherent_sectors_retained": 6,
+    "coherent_six_sector_Gram_off_diagonal_count": 0,
+    "disposition": "positive autonomous-after-matter-genesis basis-code unique-quorum admission candidate",
+    "double_endpoint_copy_fault_failures": 0,
+    "double_endpoint_copy_faults_refused": 18,
+    "ideal_failures": 0,
+    "ideal_truth_rows": 64,
+    "inverse_failures": 0,
+    "local_freshness_computed_from_target_packet": true,
+    "materialized_reversible_predicate_circuit": {
+      "bounded_M2": 92,
+      "clean_work_M2": 46,
+      "clean_work_failures": 0,
+      "constant_overhead_per_declared_cell": true,
+      "deletion_visible": true,
+      "disposition": "materialized bounded reversible unique-quorum/freshness/packet circuit",
+      "endpoint_input_M2": 18,
+      "fault_failures": 0,
+      "forward_reverse_adjacent_SWAPS": 81078,
+      "inverse_failures": 0,
+      "joint_local_line_block_M2": 92,
+      "literal_NN_calls": 248096,
+      "literal_gate_kinds": {
+        "CNOT": 1926,
+        "H": 596,
+        "T": 1192,
+        "Tdg": 894,
+        "X": 254
+      },
+      "literal_one_two_M2_gate_count": 4862,
+      "logical_gate_count": 690,
+      "logical_gate_kinds": {
+        "CNOT": 138,
+        "TOFFOLI": 298,
+        "X": 254
+      },
+      "maximum_literal_gate_support_M2": 2,
+      "maximum_unrouted_literal_pair_distance_M2": 66,
+      "nonfresh_failures": 0,
+      "operand_or_restoration_failures": 0,
+      "packet_input_output_M2": 27,
+      "pass": true,
+      "retained_admit_output_M2": 1,
+      "route_failures": 0,
+      "routed_vs_direct_failures": 0,
+      "schedule_and_route_SHA256": "04f9e226d0145779f0e2f524907d8eecae7b247b7d1c1ac9d2e512efd61960e4",
+      "toffoli_literal_identity_pass": true,
+      "truth_failures": 0
+    },
+    "pass": true,
+    "physical_counts": [
+      {
+        "compute_and_reverse_Cycle608_endpoint_elementary_gates": 65217679884,
+        "computed_Pd_endpoint_copies_per_radius_one_star": 18,
+        "length": 3,
+        "materialized_predicate_block_M2": 92,
+        "maximum_literal_gate_support_M2": 2,
+        "new_packet_M2": 27,
+        "new_predicate_literal_gate_count": 4862,
+        "new_predicate_literal_gate_kinds": {
+          "CNOT": 1926,
+          "H": 596,
+          "T": 1192,
+          "Tdg": 894,
+          "X": 254
+        },
+        "new_predicate_logical_gate_count": 690,
+        "new_predicate_logical_gate_kinds": {
+          "CNOT": 138,
+          "TOFFOLI": 298,
+          "X": 254
+        },
+        "split": "train"
+      },
+      {
+        "compute_and_reverse_Cycle608_endpoint_elementary_gates": 158905290636,
+        "computed_Pd_endpoint_copies_per_radius_one_star": 18,
+        "length": 4,
+        "materialized_predicate_block_M2": 92,
+        "maximum_literal_gate_support_M2": 2,
+        "new_packet_M2": 27,
+        "new_predicate_literal_gate_count": 4862,
+        "new_predicate_literal_gate_kinds": {
+          "CNOT": 1926,
+          "H": 596,
+          "T": 1192,
+          "Tdg": 894,
+          "X": 254
+        },
+        "new_predicate_logical_gate_count": 690,
+        "new_predicate_logical_gate_kinds": {
+          "CNOT": 138,
+          "TOFFOLI": 298,
+          "X": 254
+        },
+        "split": "held_out"
+      },
+      {
+        "compute_and_reverse_Cycle608_endpoint_elementary_gates": 531782407692,
+        "computed_Pd_endpoint_copies_per_radius_one_star": 18,
+        "length": 6,
+        "materialized_predicate_block_M2": 92,
+        "maximum_literal_gate_support_M2": 2,
+        "new_packet_M2": 27,
+        "new_predicate_literal_gate_count": 4862,
+        "new_predicate_literal_gate_kinds": {
+          "CNOT": 1926,
+          "H": 596,
+          "T": 1192,
+          "Tdg": 894,
+          "X": 254
+        },
+        "new_predicate_logical_gate_count": 690,
+        "new_predicate_logical_gate_kinds": {
+          "CNOT": 138,
+          "TOFFOLI": 298,
+          "X": 254
+        },
+        "split": "held"
+      }
+    ],
+    "preferred_incident_order": false,
+    "radius_one_incident_endpoints": 6,
+    "runtime_actuality_token": false,
+    "runtime_admission_ROM": false,
+    "runtime_innovation_stream": false,
+    "single_endpoint_copy_fault_failures": 0,
+    "single_endpoint_copy_faults_corrected": 18,
+    "spurious_single_copy_fault_controls": 90,
+    "spurious_single_copy_fault_failures": 0,
+    "truth_table": [
+      {
+        "admit": 0,
+        "classification": "no-hit",
+        "incident_majorities": 0,
+        "matter_word": "000000",
+        "selected_direction": null
+      },
+      {
+        "admit": 1,
+        "classification": "unique",
+        "incident_majorities": 1,
+        "matter_word": "000001",
+        "selected_direction": 5
+      },
+      {
+        "admit": 1,
+        "classification": "unique",
+        "incident_majorities": 1,
+        "matter_word": "000010",
+        "selected_direction": 4
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 2,
+        "matter_word": "000011",
+        "selected_direction": null
+      },
+      {
+        "admit": 1,
+        "classification": "unique",
+        "incident_majorities": 1,
+        "matter_word": "000100",
+        "selected_direction": 3
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 2,
+        "matter_word": "000101",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 2,
+        "matter_word": "000110",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 3,
+        "matter_word": "000111",
+        "selected_direction": null
+      },
+      {
+        "admit": 1,
+        "classification": "unique",
+        "incident_majorities": 1,
+        "matter_word": "001000",
+        "selected_direction": 2
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 2,
+        "matter_word": "001001",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 2,
+        "matter_word": "001010",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 3,
+        "matter_word": "001011",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 2,
+        "matter_word": "001100",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 3,
+        "matter_word": "001101",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 3,
+        "matter_word": "001110",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 4,
+        "matter_word": "001111",
+        "selected_direction": null
+      },
+      {
+        "admit": 1,
+        "classification": "unique",
+        "incident_majorities": 1,
+        "matter_word": "010000",
+        "selected_direction": 1
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 2,
+        "matter_word": "010001",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 2,
+        "matter_word": "010010",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 3,
+        "matter_word": "010011",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 2,
+        "matter_word": "010100",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 3,
+        "matter_word": "010101",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 3,
+        "matter_word": "010110",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 4,
+        "matter_word": "010111",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 2,
+        "matter_word": "011000",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 3,
+        "matter_word": "011001",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 3,
+        "matter_word": "011010",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 4,
+        "matter_word": "011011",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 3,
+        "matter_word": "011100",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 4,
+        "matter_word": "011101",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 4,
+        "matter_word": "011110",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 5,
+        "matter_word": "011111",
+        "selected_direction": null
+      },
+      {
+        "admit": 1,
+        "classification": "unique",
+        "incident_majorities": 1,
+        "matter_word": "100000",
+        "selected_direction": 0
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 2,
+        "matter_word": "100001",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 2,
+        "matter_word": "100010",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 3,
+        "matter_word": "100011",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 2,
+        "matter_word": "100100",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 3,
+        "matter_word": "100101",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 3,
+        "matter_word": "100110",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 4,
+        "matter_word": "100111",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 2,
+        "matter_word": "101000",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 3,
+        "matter_word": "101001",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 3,
+        "matter_word": "101010",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 4,
+        "matter_word": "101011",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 3,
+        "matter_word": "101100",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 4,
+        "matter_word": "101101",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 4,
+        "matter_word": "101110",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 5,
+        "matter_word": "101111",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 2,
+        "matter_word": "110000",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 3,
+        "matter_word": "110001",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 3,
+        "matter_word": "110010",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 4,
+        "matter_word": "110011",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 3,
+        "matter_word": "110100",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 4,
+        "matter_word": "110101",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 4,
+        "matter_word": "110110",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 5,
+        "matter_word": "110111",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 3,
+        "matter_word": "111000",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 4,
+        "matter_word": "111001",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 4,
+        "matter_word": "111010",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 5,
+        "matter_word": "111011",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 4,
+        "matter_word": "111100",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 5,
+        "matter_word": "111101",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 5,
+        "matter_word": "111110",
+        "selected_direction": null
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "incident_majorities": 6,
+        "matter_word": "111111",
+        "selected_direction": null
+      }
+    ]
+  },
+  "route_B_finite_resource_survival": {
+    "deletion_failures": 0,
+    "disposition": "positive finite reversible resource-debit and redundant-packet survival theorem",
+    "double_replica_bit_fault_wrong_result_control_failures": 0,
+    "double_replica_bit_fault_wrong_result_control_tests": 81,
+    "endogenous_non_erasing_renewal": false,
+    "external_renewal": "would require new blank media/resources and is not derived",
+    "finite_forward_survival_called_permanence": false,
+    "forward_application_label_called_time": false,
+    "forward_failures": 0,
+    "inverse_failures": 0,
+    "inverse_renewal": "restores all ready resources only by erasing every candidate packet",
+    "one_fault_corrected_and_detected": true,
+    "packet_called_framework_Record": false,
+    "pass": true,
+    "repetition_code_distance": 3,
+    "rows": [
+      {
+        "capacity": 3,
+        "deletions": [
+          {
+            "deletion": "ready-debit",
+            "head": 1,
+            "packets": 1,
+            "ready": 3,
+            "resources": 4,
+            "spent": 1,
+            "visible": true
+          },
+          {
+            "deletion": "spent-credit",
+            "head": 1,
+            "packets": 1,
+            "ready": 2,
+            "resources": 2,
+            "spent": 0,
+            "visible": true
+          },
+          {
+            "deletion": "packet-write",
+            "head": 1,
+            "packets": 0,
+            "ready": 2,
+            "resources": 3,
+            "spent": 1,
+            "visible": true
+          },
+          {
+            "deletion": "head-advance",
+            "head": 0,
+            "packets": 1,
+            "ready": 2,
+            "resources": 3,
+            "spent": 1,
+            "visible": true
+          }
+        ],
+        "exact_full_inverse_erases_packets_and_restores_ready": true,
+        "exhausted_forward_reentry_refused": true,
+        "forward_survival_horizons_not_time": [
+          {
+            "observed_forward_states_including_formation": 3,
+            "packet_index": 0,
+            "subsequent_forward_applications_survived": 2
+          },
+          {
+            "observed_forward_states_including_formation": 2,
+            "packet_index": 1,
+            "subsequent_forward_applications_survived": 1
+          },
+          {
+            "observed_forward_states_including_formation": 1,
+            "packet_index": 2,
+            "subsequent_forward_applications_survived": 0
+          }
+        ],
+        "old_packet_changes": 0,
+        "physical_M2_upper_bound": 91,
+        "snapshots": [
+          {
+            "forward_application_label_not_time": 1,
+            "head": 1,
+            "old_packets_changed": 0,
+            "packets": 1,
+            "ready": 2,
+            "spent": 1
+          },
+          {
+            "forward_application_label_not_time": 2,
+            "head": 2,
+            "old_packets_changed": 0,
+            "packets": 2,
+            "ready": 1,
+            "spent": 2
+          },
+          {
+            "forward_application_label_not_time": 3,
+            "head": 3,
+            "old_packets_changed": 0,
+            "packets": 3,
+            "ready": 0,
+            "spent": 3
+          }
+        ],
+        "split": "train"
+      },
+      {
+        "capacity": 4,
+        "deletions": [
+          {
+            "deletion": "ready-debit",
+            "head": 1,
+            "packets": 1,
+            "ready": 4,
+            "resources": 5,
+            "spent": 1,
+            "visible": true
+          },
+          {
+            "deletion": "spent-credit",
+            "head": 1,
+            "packets": 1,
+            "ready": 3,
+            "resources": 3,
+            "spent": 0,
+            "visible": true
+          },
+          {
+            "deletion": "packet-write",
+            "head": 1,
+            "packets": 0,
+            "ready": 3,
+            "resources": 4,
+            "spent": 1,
+            "visible": true
+          },
+          {
+            "deletion": "head-advance",
+            "head": 0,
+            "packets": 1,
+            "ready": 3,
+            "resources": 4,
+            "spent": 1,
+            "visible": true
+          }
+        ],
+        "exact_full_inverse_erases_packets_and_restores_ready": true,
+        "exhausted_forward_reentry_refused": true,
+        "forward_survival_horizons_not_time": [
+          {
+            "observed_forward_states_including_formation": 4,
+            "packet_index": 0,
+            "subsequent_forward_applications_survived": 3
+          },
+          {
+            "observed_forward_states_including_formation": 3,
+            "packet_index": 1,
+            "subsequent_forward_applications_survived": 2
+          },
+          {
+            "observed_forward_states_including_formation": 2,
+            "packet_index": 2,
+            "subsequent_forward_applications_survived": 1
+          },
+          {
+            "observed_forward_states_including_formation": 1,
+            "packet_index": 3,
+            "subsequent_forward_applications_survived": 0
+          }
+        ],
+        "old_packet_changes": 0,
+        "physical_M2_upper_bound": 121,
+        "snapshots": [
+          {
+            "forward_application_label_not_time": 1,
+            "head": 1,
+            "old_packets_changed": 0,
+            "packets": 1,
+            "ready": 3,
+            "spent": 1
+          },
+          {
+            "forward_application_label_not_time": 2,
+            "head": 2,
+            "old_packets_changed": 0,
+            "packets": 2,
+            "ready": 2,
+            "spent": 2
+          },
+          {
+            "forward_application_label_not_time": 3,
+            "head": 3,
+            "old_packets_changed": 0,
+            "packets": 3,
+            "ready": 1,
+            "spent": 3
+          },
+          {
+            "forward_application_label_not_time": 4,
+            "head": 4,
+            "old_packets_changed": 0,
+            "packets": 4,
+            "ready": 0,
+            "spent": 4
+          }
+        ],
+        "split": "held_out"
+      },
+      {
+        "capacity": 6,
+        "deletions": [
+          {
+            "deletion": "ready-debit",
+            "head": 1,
+            "packets": 1,
+            "ready": 6,
+            "resources": 7,
+            "spent": 1,
+            "visible": true
+          },
+          {
+            "deletion": "spent-credit",
+            "head": 1,
+            "packets": 1,
+            "ready": 5,
+            "resources": 5,
+            "spent": 0,
+            "visible": true
+          },
+          {
+            "deletion": "packet-write",
+            "head": 1,
+            "packets": 0,
+            "ready": 5,
+            "resources": 6,
+            "spent": 1,
+            "visible": true
+          },
+          {
+            "deletion": "head-advance",
+            "head": 0,
+            "packets": 1,
+            "ready": 5,
+            "resources": 6,
+            "spent": 1,
+            "visible": true
+          }
+        ],
+        "exact_full_inverse_erases_packets_and_restores_ready": true,
+        "exhausted_forward_reentry_refused": true,
+        "forward_survival_horizons_not_time": [
+          {
+            "observed_forward_states_including_formation": 6,
+            "packet_index": 0,
+            "subsequent_forward_applications_survived": 5
+          },
+          {
+            "observed_forward_states_including_formation": 5,
+            "packet_index": 1,
+            "subsequent_forward_applications_survived": 4
+          },
+          {
+            "observed_forward_states_including_formation": 4,
+            "packet_index": 2,
+            "subsequent_forward_applications_survived": 3
+          },
+          {
+            "observed_forward_states_including_formation": 3,
+            "packet_index": 3,
+            "subsequent_forward_applications_survived": 2
+          },
+          {
+            "observed_forward_states_including_formation": 2,
+            "packet_index": 4,
+            "subsequent_forward_applications_survived": 1
+          },
+          {
+            "observed_forward_states_including_formation": 1,
+            "packet_index": 5,
+            "subsequent_forward_applications_survived": 0
+          }
+        ],
+        "old_packet_changes": 0,
+        "physical_M2_upper_bound": 181,
+        "snapshots": [
+          {
+            "forward_application_label_not_time": 1,
+            "head": 1,
+            "old_packets_changed": 0,
+            "packets": 1,
+            "ready": 5,
+            "spent": 1
+          },
+          {
+            "forward_application_label_not_time": 2,
+            "head": 2,
+            "old_packets_changed": 0,
+            "packets": 2,
+            "ready": 4,
+            "spent": 2
+          },
+          {
+            "forward_application_label_not_time": 3,
+            "head": 3,
+            "old_packets_changed": 0,
+            "packets": 3,
+            "ready": 3,
+            "spent": 3
+          },
+          {
+            "forward_application_label_not_time": 4,
+            "head": 4,
+            "old_packets_changed": 0,
+            "packets": 4,
+            "ready": 2,
+            "spent": 4
+          },
+          {
+            "forward_application_label_not_time": 5,
+            "head": 5,
+            "old_packets_changed": 0,
+            "packets": 5,
+            "ready": 1,
+            "spent": 5
+          },
+          {
+            "forward_application_label_not_time": 6,
+            "head": 6,
+            "old_packets_changed": 0,
+            "packets": 6,
+            "ready": 0,
+            "spent": 6
+          }
+        ],
+        "split": "held"
+      }
+    ],
+    "single_replica_bit_fault_failures": 0,
+    "single_replica_bit_fault_tests": 81,
+    "two_faults_can_change_majority": true
+  },
+  "route_C_predecessor_grade_history": {
+    "calibrated_parameter_word_supplied": true,
+    "candidate_frequency_called_Born": false,
+    "candidate_packet_count_called_realized_corpus": false,
+    "computed_matter_endpoint_used_per_node": true,
+    "disposition": "positive local predecessor-DAG candidate carrying conditional Cycle597 grade-mask labels",
+    "distinct_supplied_masks_on_same_matter_endpoint_and_DAG": true,
+    "failures": 0,
+    "grade_mask_selected_as_probability": false,
+    "local_predecessor_edge_support_M2": 2,
+    "pass": true,
+    "physical_inverse_and_archive_renewal_open_for_long_chain": true,
+    "realized_state_primitive_selects_state_or_weight": false,
+    "rotor_genesis": 9,
+    "rotor_increment": 25,
+    "rotor_maximum_per_history_count_discrepancy": "67/32",
+    "rows": [
+      {
+        "acyclic_predecessor_candidate": true,
+        "candidate_packet_count": 137,
+        "candidate_packet_frequency_counts": [
+          26,
+          26,
+          8,
+          8,
+          26,
+          25,
+          9,
+          9
+        ],
+        "combined_L1_bound": 0.6914158428756969,
+        "count_preserving_alternative_order_frequency_residual": 0,
+        "count_preserving_alternative_order_separator": 64,
+        "delete_history_onehot_invalidates_chain": true,
+        "delete_predecessor_invalidates_chain": true,
+        "denominator64_mask_counts": [
+          12,
+          12,
+          4,
+          4,
+          12,
+          12,
+          4,
+          4
+        ],
+        "frequency_to_mask_L1": 0.02645985401459854,
+        "frequency_to_target_L1": 0.3010792937800237,
+        "grade_approximation_L1": 0.2880730380730381,
+        "maximum_predecessor_depth_not_time": 136,
+        "name": "held_offgrid_7over11_4over9_5over13",
+        "parameter_approximation_bound": 0.5691530691530692,
+        "parameters": [
+          "7/11",
+          "4/9",
+          "5/13"
+        ],
+        "rotor_discrepancy_bound": 0.12226277372262774,
+        "split": "held",
+        "supplied_quantized_parameter_word": [
+          3,
+          2,
+          2
+        ],
+        "unique_root": true
+      },
+      {
+        "acyclic_predecessor_candidate": true,
+        "candidate_packet_count": 211,
+        "candidate_packet_frequency_counts": [
+          89,
+          30,
+          30,
+          10,
+          30,
+          10,
+          9,
+          3
+        ],
+        "combined_L1_bound": 0.4385843170003043,
+        "count_preserving_alternative_order_frequency_residual": 0,
+        "count_preserving_alternative_order_separator": 56,
+        "delete_history_onehot_invalidates_chain": true,
+        "delete_predecessor_invalidates_chain": true,
+        "denominator64_mask_counts": [
+          27,
+          9,
+          9,
+          3,
+          9,
+          3,
+          3,
+          1
+        ],
+        "frequency_to_mask_L1": 0.011404028436018957,
+        "frequency_to_target_L1": 0.24251316889938815,
+        "grade_approximation_L1": 0.23955108359133126,
+        "maximum_predecessor_depth_not_time": 210,
+        "name": "held_offgrid_11over17_13over19_17over23",
+        "parameter_approximation_bound": 0.35920043074438013,
+        "parameters": [
+          "11/17",
+          "13/19",
+          "17/23"
+        ],
+        "rotor_discrepancy_bound": 0.07938388625592417,
+        "split": "held",
+        "supplied_quantized_parameter_word": [
+          3,
+          3,
+          3
+        ],
+        "unique_root": true
+      }
+    ]
+  },
+  "runner_sha256": "ca84ee27a2d8fa67e17336717613e7a2cd05c46421e6d0cc5f4ee6a860938240",
+  "shared_substrate_obstruction": false,
+  "shore": {
+    "Cycle571_pass": true,
+    "Cycle608_pass": true,
+    "Cycle612_pass": true,
+    "Record_and_realized_state_surfaces_read_only": true,
+    "expected_sha256": {
+      "docs/ADMISSIBILITY_RECORD_CONTINUATION_REFINEMENT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-13.md": "d22a7ec84c3ffc8a57f46d9d2353d47837aad19d3ea6a041836f9e5334d314d9",
+      "docs/MINIMAL_AXIOMS_2026-06-29.md": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+      "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "docs/RECORD_FORMATION_APPEND_CERTIFICATION_BOUNDED_NOTE_2026-07-04.md": "8b2315c8756f77d31de75a84b65bb7526db81eea176fdcf80bcd03a4ca8ef77d",
+      "docs/RECORD_PERMANENCE_FORCES_FRESH_SITE_DOUBLE_REGISTRATION_AND_AGREEMENT_SURVIVAL_BOUNDED_THEOREM_NOTE_2026-07-11.md": "5ed49dd0e0db1183cb464c3daa3748be593387ca177f7bf4ad8d40c215e85e9e",
+      "docs/audit/data/axiom_premise_nodes.json": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+      "docs/work_history/repo/review_feedback/PHYSICAL_AUTONOMOUS_OCCURRENCE_BORN_HISTORY_BRIDGE_TOURNAMENT_CYCLE587_NOTE_2026-07-22.md": "6938f48fa4e55dc7037a461802ec2f655893a9d9f68ffe65139950e6a07fd8db",
+      "docs/work_history/repo/review_feedback/PHYSICAL_MATTER_CAUSED_CAUSAL_INTERVAL_PROPER_TIME_BRIDGE_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md": "920776555dce6505bccb0e46e552e90d24858c08cfb7f6978d884f10a5bb0789",
+      "docs/work_history/repo/review_feedback/PHYSICAL_PREREGISTERED_INNOVATION_RECORD_FREQUENCY_BRIDGE_TOURNAMENT_CYCLE592_NOTE_2026-07-22.md": "dccf62d6126287b20cbf96ff410534adfa1746d9cf3aba94fbfb2893855be212",
+      "docs/work_history/repo/review_feedback/PHYSICAL_RENEWABLE_FIRST_HIT_RECORD_ADMISSION_TOURNAMENT_CYCLE571_NOTE_2026-07-22.md": "b254476f392597c03f27581fbc4f559266ed42984ac86a516888ee81d2aff8e2",
+      "docs/work_history/repo/review_feedback/PHYSICAL_STATE_FAMILY_GRADE_TRANSITION_SYNTHESIS_TOURNAMENT_CYCLE597_NOTE_2026-07-22.md": "fdbfc68540be31de9d5199e25b1b71a440b9126447f383146caa07b70599c4b2",
+      "docs/work_history/repo/review_feedback/PHYSICAL_TI_INNOVATION_BATH_OFFGRID_HISTORY_TOURNAMENT_CYCLE595_NOTE_2026-07-22.md": "b1b1fc0960f69abcf9050b7eee2f3387188d45ea7704ca2db87381cd5fd3b730",
+      "outputs/physical_matter_caused_causal_interval_proper_time_bridge_tournament_cycle612_receipt_2026_07_22.json": "e7a8ea3dcbe370c9f8c6a94770508d1710a7013ce4ba62a1ad67e345fe1e2d11",
+      "outputs/physical_radius_one_dressed_detector_controlled_update_recurrence_tournament_cycle608_receipt_2026_07_22.json": "b9980fa13434a55f6209203f8801a367c0139ebacddcf13732a02b486f8f4096",
+      "outputs/physical_renewable_first_hit_record_admission_tournament_cycle571_receipt_2026_07_22.json": "98529eac92ef8b54d30fb5923abf23f5ec74618eef01b615d28dc618f1d03f0f",
+      "scripts/physical_autonomous_occurrence_born_history_bridge_tournament_cycle587_2026_07_22.py": "2879d5a2641b334553769f15cf3a6f152f9f16f8f80b23db723448533c28c494",
+      "scripts/physical_matter_caused_causal_interval_proper_time_bridge_tournament_cycle612_2026_07_22.py": "91f22d23dd2730f76a05736634236d41036f68eaedc4921daca69de25ab6a344",
+      "scripts/physical_preregistered_innovation_record_frequency_bridge_tournament_cycle592_2026_07_22.py": "ab565af6aa59e66cea7b1ce625c08f8a88235ae9f7415e5e7d89d63af34ce9ce",
+      "scripts/physical_radius_one_dressed_detector_controlled_update_recurrence_tournament_cycle608_2026_07_22.py": "59a1125e1e71872b69c8b0e48cd114b221a107ee3d3f396cd28c4f87d233e41b",
+      "scripts/physical_renewable_first_hit_record_admission_tournament_cycle571_2026_07_22.py": "7221d59558e4d731f98a2a4523c280aa98b889f23ea3f7be1acc8919395dfee8",
+      "scripts/physical_state_family_grade_transition_synthesis_tournament_cycle597_2026_07_22.py": "7dec66d44101d26f563bea079fa62b56daeb1d2d5a21a7a98c6f66fc22392d77",
+      "scripts/physical_ti_innovation_bath_offgrid_history_tournament_cycle595_2026_07_22.py": "cdfcddb00974205faa8bc60c617ff0dd42bf9f8947b0a55a4b172157b2d28de2"
+    },
+    "observed_sha256": {
+      "docs/ADMISSIBILITY_RECORD_CONTINUATION_REFINEMENT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-13.md": "d22a7ec84c3ffc8a57f46d9d2353d47837aad19d3ea6a041836f9e5334d314d9",
+      "docs/MINIMAL_AXIOMS_2026-06-29.md": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+      "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "docs/RECORD_FORMATION_APPEND_CERTIFICATION_BOUNDED_NOTE_2026-07-04.md": "8b2315c8756f77d31de75a84b65bb7526db81eea176fdcf80bcd03a4ca8ef77d",
+      "docs/RECORD_PERMANENCE_FORCES_FRESH_SITE_DOUBLE_REGISTRATION_AND_AGREEMENT_SURVIVAL_BOUNDED_THEOREM_NOTE_2026-07-11.md": "5ed49dd0e0db1183cb464c3daa3748be593387ca177f7bf4ad8d40c215e85e9e",
+      "docs/audit/data/axiom_premise_nodes.json": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+      "docs/work_history/repo/review_feedback/PHYSICAL_AUTONOMOUS_OCCURRENCE_BORN_HISTORY_BRIDGE_TOURNAMENT_CYCLE587_NOTE_2026-07-22.md": "6938f48fa4e55dc7037a461802ec2f655893a9d9f68ffe65139950e6a07fd8db",
+      "docs/work_history/repo/review_feedback/PHYSICAL_MATTER_CAUSED_CAUSAL_INTERVAL_PROPER_TIME_BRIDGE_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md": "920776555dce6505bccb0e46e552e90d24858c08cfb7f6978d884f10a5bb0789",
+      "docs/work_history/repo/review_feedback/PHYSICAL_PREREGISTERED_INNOVATION_RECORD_FREQUENCY_BRIDGE_TOURNAMENT_CYCLE592_NOTE_2026-07-22.md": "dccf62d6126287b20cbf96ff410534adfa1746d9cf3aba94fbfb2893855be212",
+      "docs/work_history/repo/review_feedback/PHYSICAL_RENEWABLE_FIRST_HIT_RECORD_ADMISSION_TOURNAMENT_CYCLE571_NOTE_2026-07-22.md": "b254476f392597c03f27581fbc4f559266ed42984ac86a516888ee81d2aff8e2",
+      "docs/work_history/repo/review_feedback/PHYSICAL_STATE_FAMILY_GRADE_TRANSITION_SYNTHESIS_TOURNAMENT_CYCLE597_NOTE_2026-07-22.md": "fdbfc68540be31de9d5199e25b1b71a440b9126447f383146caa07b70599c4b2",
+      "docs/work_history/repo/review_feedback/PHYSICAL_TI_INNOVATION_BATH_OFFGRID_HISTORY_TOURNAMENT_CYCLE595_NOTE_2026-07-22.md": "b1b1fc0960f69abcf9050b7eee2f3387188d45ea7704ca2db87381cd5fd3b730",
+      "outputs/physical_matter_caused_causal_interval_proper_time_bridge_tournament_cycle612_receipt_2026_07_22.json": "e7a8ea3dcbe370c9f8c6a94770508d1710a7013ce4ba62a1ad67e345fe1e2d11",
+      "outputs/physical_radius_one_dressed_detector_controlled_update_recurrence_tournament_cycle608_receipt_2026_07_22.json": "b9980fa13434a55f6209203f8801a367c0139ebacddcf13732a02b486f8f4096",
+      "outputs/physical_renewable_first_hit_record_admission_tournament_cycle571_receipt_2026_07_22.json": "98529eac92ef8b54d30fb5923abf23f5ec74618eef01b615d28dc618f1d03f0f",
+      "scripts/physical_autonomous_occurrence_born_history_bridge_tournament_cycle587_2026_07_22.py": "2879d5a2641b334553769f15cf3a6f152f9f16f8f80b23db723448533c28c494",
+      "scripts/physical_matter_caused_causal_interval_proper_time_bridge_tournament_cycle612_2026_07_22.py": "91f22d23dd2730f76a05736634236d41036f68eaedc4921daca69de25ab6a344",
+      "scripts/physical_preregistered_innovation_record_frequency_bridge_tournament_cycle592_2026_07_22.py": "ab565af6aa59e66cea7b1ce625c08f8a88235ae9f7415e5e7d89d63af34ce9ce",
+      "scripts/physical_radius_one_dressed_detector_controlled_update_recurrence_tournament_cycle608_2026_07_22.py": "59a1125e1e71872b69c8b0e48cd114b221a107ee3d3f396cd28c4f87d233e41b",
+      "scripts/physical_renewable_first_hit_record_admission_tournament_cycle571_2026_07_22.py": "7221d59558e4d731f98a2a4523c280aa98b889f23ea3f7be1acc8919395dfee8",
+      "scripts/physical_state_family_grade_transition_synthesis_tournament_cycle597_2026_07_22.py": "7dec66d44101d26f563bea079fa62b56daeb1d2d5a21a7a98c6f66fc22392d77",
+      "scripts/physical_ti_innovation_bath_offgrid_history_tournament_cycle595_2026_07_22.py": "cdfcddb00974205faa8bc60c617ff0dd42bf9f8947b0a55a4b172157b2d28de2"
+    },
+    "pass": true
+  },
+  "six_wall_ledger": {
+    "C_int": "matter endpoints, packet admission, resource debit, and predecessor payloads compose on the basis code; coherent-sector actualization and all-future preservation remain open",
+    "C_local": "radius-one unordered endpoint rule now has an explicit 92-M2 reversible schedule and 4,862-gate support-two literal lowering with clean work/joint-line routing; L3/L4/L6, all24/all576, faults and malformed controls pass; chart/path-cat and volume/noise remain open",
+    "C_num": "two held grade masks and finite predecessor counts retain exact error budgets; parameter calibration, probability meaning, and realized-corpus theorem remain supplied/open",
+    "C_ref": "physical Pd endpoint provenance now feeds a state-local symmetric unique-quorum packet without runtime admission bits; candidate-law identification and coherent actuality remain open",
+    "C_source": "ready/spent medium is explicitly conserved and exhausted; it is not energy/stress and non-erasing renewal/source dynamics remain open",
+    "C_wrap": "finite H3/H4/H6 forward survival, exhaustion, and erasing inverse are exact; no prefix/depth is time and no finite protection is permanence"
+  },
+  "status": "positive autonomous basis-code admission candidate and quantified finite survival; no actuality, framework Record, permanence, or Born closure",
+  "strongest_constructive_result": "materialized 92-M2 reversible symmetric unique-quorum/freshness/packet circuit driven only by computed physical matter endpoints, with support-two lowering, clean work, and exact finite resource/debit survival diagnostics",
+  "supplied_derived_open_inventory": {
+    "derived": [
+      "all 64 ideal radius-one truth rows with no-hit/collision refusal and unique basis-code admission",
+      "materialized 92-M2 reversible majority/syndrome/exactly-one/freshness/packet circuit with 46 clean-work M2",
+      "4,862-gate support-two literal lowering with bounded joint-line routing and exact operand restoration",
+      "local packet freshness without a runtime fresh token and no runtime admission ROM/actuality token/innovation stream",
+      "single endpoint-copy fault correction/syndrome, double-copy refusal, coherent-sector retention, and exact inverse",
+      "finite H3/H4/H6 ready-to-spent debit, old-packet stability, exact exhaustion, erasing inverse, and fault-distance census",
+      "local unique-root acyclic predecessor candidates carrying two held Cycle597 label masks and finite error budgets",
+      "all24/all576 covariance, malformed/deletion controls, and one-particle mass preservation"
+    ],
+    "forbidden_relabels": {
+      "basis_admission_candidate_called_actuality_or_Record": false,
+      "finite_forward_survival_called_permanence": false,
+      "forward_application_or_predecessor_depth_called_time": false,
+      "grade_mask_or_candidate_frequency_called_Born": false,
+      "pointer_copy_called_Record": false
+    },
+    "open": [
+      "identification of the candidate update with the extensional physical Admissibility/formation law",
+      "objective actuality selection on coherent matter inputs",
+      "framework Record identification and all-future physical preservation/permanence",
+      "non-erasing capacity/resource renewal, noise, infinite volume, and thermodynamic meaning",
+      "state-to-parameter/grade calibration, objective stochastic law, probability meaning, blinded realized corpus, and convergence",
+      "autonomous chart/path-cat/binder/source preparation and local enforcement of N<=3",
+      "physical time, rate, energy/stress/source/gravity interpretation, and the optional future time-side branch adapter"
+    ],
+    "supplied": [
+      "approved Lattice/Qubit/Admissibility/Record axioms and pointwise-only realized-state primitive",
+      "Cycle608/612 M2 matter detector, chart/path-cat/binder/matter genesis, and complete global N<=3 lawful domain",
+      "the fixed Cycle614 symmetric unique-quorum candidate update and triplicate packet grammar",
+      "blank local packet capacity, finite noiseless gates, and bounded routing/frame chart",
+      "Route-B frontier genesis and finite H3/H4/H6 ready medium",
+      "site-tagged immutable packet identity for the finite predecessor candidate",
+      "Cycle597 two-bit unary state/parameter calibration, mask rule/precision, carrier genesis, and held state preparations",
+      "finite empty history lines of lengths 137 and 211"
+    ]
+  },
+  "tests_failed": 0,
+  "tests_passed": 10
+}

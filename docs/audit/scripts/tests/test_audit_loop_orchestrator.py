@@ -918,7 +918,7 @@ class ClaimTransactionTest(unittest.TestCase):
         started = time.monotonic()
         try:
             result = batch.sh(
-                [sys.executable, "-c", "import time; time.sleep(30)"],
+                [sys.executable, "-c", "pass"],
                 timeout=30,
             )
         finally:

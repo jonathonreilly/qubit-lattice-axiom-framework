@@ -144,6 +144,9 @@ def acquire_exclusive_drain_lock(label: str):
 
 
 def sh(cmd: list[str], timeout: int | None = 120) -> subprocess.CompletedProcess:
+    cancel_event = getattr(_COMMAND_CONTEXT, "cancel_event", None)
+    if cancel_event is not None and cancel_event.is_set():
+        return subprocess.CompletedProcess(cmd, 125, "", "cancelled before launch")
     proc = subprocess.Popen(
         cmd,
         cwd=REPO_ROOT,
@@ -153,12 +156,15 @@ def sh(cmd: list[str], timeout: int | None = 120) -> subprocess.CompletedProcess
         start_new_session=True,
     )
     deadline = time.monotonic() + timeout if timeout is not None else None
-    cancel_event = getattr(_COMMAND_CONTEXT, "cancel_event", None)
     while True:
         remaining = None if deadline is None else max(0.0, deadline - time.monotonic())
         poll_window = 1.0 if remaining is None else min(1.0, remaining)
         try:
             stdout, stderr = proc.communicate(timeout=poll_window)
+            if cancel_event is not None and cancel_event.is_set():
+                return subprocess.CompletedProcess(
+                    cmd, 125, stdout or "", stderr or "cancelled during command"
+                )
             return subprocess.CompletedProcess(cmd, proc.returncode, stdout, stderr)
         except subprocess.TimeoutExpired:
             cancelled = cancel_event is not None and cancel_event.is_set()

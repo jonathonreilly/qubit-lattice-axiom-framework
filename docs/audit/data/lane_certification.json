@@ -1121,7 +1121,7 @@
         },
         {
           "claim_id": "hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10",
-          "effective_status": "audit_in_progress"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "hierarchy_effective_potential_endpoint_note",
@@ -2791,6 +2791,6 @@
       "uncertified_count": 640
     }
   ],
-  "repo_head": "d3fe6cbac0c25156a7f343d4d39d5abc520d4707",
+  "repo_head": "d73ce4ee970402ebc0caff185903de08f4dc5459",
   "schema": "lane_certification_v2"
 }

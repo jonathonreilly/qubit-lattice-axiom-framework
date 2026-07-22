@@ -1,0 +1,75 @@
+{
+  "status": "cycle551-boundary-aware-multistar-decoded-runtime-schedulers-verified",
+  "authority": "none",
+  "audit": "unset",
+  "runner_sha256": "ab3c21d18e5644de3471f2474415a2c44f3a0ff9f646b24d73d2a3ca1a573dc2",
+  "note_sha256": "15441dc81ff96527e67e5346493fc3d5ebbc0734d3d1982a77b900b53c290b40",
+  "parent_certificate_sha256": "8ed5991e0b7fd8c365054e7bd2b4e4da7fa707103e6e30b0b018e71e31674b50",
+  "tests_passed": 12,
+  "tests_total": 12,
+  "pass": true,
+  "elapsed_seconds_internal": 291.4168545830762,
+  "timed_wall_seconds_including_reconnect_suspension": 1384.32,
+  "maximum_RSS_bytes": 168411136,
+  "process_swap_count": 0,
+  "route_A_physical_footprint_coloring": {
+    "L5_stars": 125,
+    "L6_stars": 216,
+    "L5_color_classes": 8,
+    "L6_color_classes": 6,
+    "L5_L6_same_color_collisions": 0,
+    "translated_origin_cases_L5_L6": [125, 216],
+    "translated_network_definition_failures": 0,
+    "corrected_macro_calls_L5_L6": [4216300, 7557408]
+  },
+  "route_B_returned_slot_network": {
+    "L5_pair_and_singleton_blocks": [50, 25],
+    "L6_pair_and_singleton_blocks": [108, 0],
+    "L5_L6_block_color_classes": [6, 3],
+    "same_color_controlled_footprint_collisions": 0,
+    "singleton_1334_dimensional_square_residual": 0.0,
+    "terminal_slot_leakage_norm": 0.0,
+    "deleted_second_half_slot_leakage_norm": 1.0,
+    "unexpanded_calls_L5_L6": [8432650, 15114708]
+  },
+  "route_C_one_hot_Hamiltonian_token": {
+    "cycle_vertices_L5_L6": [125, 216],
+    "cycle_duplicates_or_coarse_NN_failures": 0,
+    "rail_M2_L5_L6": [2404, 4185],
+    "rail_role_or_NN_failures": 0,
+    "token_returns_to_origin": true,
+    "unexpanded_calls_L5_L6": [4223441, 7569816]
+  },
+  "network_one_particle_controls": {
+    "dimensions_L5_L6": [750, 1296],
+    "maximum_repeat_inverse_residual_L5": 3.2952973516871954e-15,
+    "maximum_repeat_inverse_residual_L6": 3.516936473710875e-15,
+    "maximum_covariance_vector_residual_L5": 2.8505382403564044e-16,
+    "maximum_covariance_vector_residual_L6": 2.8351028557162606e-16,
+    "covariance_failures": 0,
+    "frame_products": 576
+  },
+  "local_multiparticle_controls": {
+    "complete_six_cell_sector": "N=0,1,2; 667 columns",
+    "maximum_sector_unitarity_residual": 6.661430332022944e-16,
+    "mass_fixture": 0.45340565417488515,
+    "mass_fixture_residual": 5.551115123125783e-17,
+    "mass_eigenvector_residual": 2.4097051235218626e-16,
+    "contact_nontrivial_columns_per_star": 60,
+    "deleted_adjacent_star_residual": 1.316097915613727,
+    "deleted_shared_seam_residual": 0.8740010519307571
+  },
+  "evidence_boundary": {
+    "decoded_runtime_finite_scheduler_L5_L6_closed": true,
+    "network_wide_one_particle_vectors_tested": true,
+    "local_complete_multiparticle_blocks_tested": true,
+    "network_wide_multiparticle_matrix_tested": false,
+    "global_selected_encoder_materialized": false,
+    "global_selected_reference_genesis_derived": false,
+    "autonomous_update_choice_derived": false,
+    "compiler_schedule_called_physical_time": false,
+    "shared_substrate_obstruction": false,
+    "axiom_pressure": false,
+    "broad_no_go_gate": "FAIL / DO NOT SHIP"
+  }
+}

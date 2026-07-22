@@ -1,0 +1,659 @@
+PASS Route A exactly compiles the preregistered rational grade table into the member/occurrence interface with explicit address-law import :: {'route': 'A physical rational-reservoir grade-table compiler', 'preregistration_sha256': 'e2412661758ab9c7b2d36f0a1f5c9151453253429a0be796f29357bd770894ca', 'physical_M2_before_Cycle552': 363, 'bounded_product_envelope_M2': 639, 'L5_held_L6_EG_rows': 48, 'EG_failures': 0, 'inverse_failures': 0, 'table_history_member_failures': 0, 'exact_Cycle552_531_interface_failures': 0, 'resource_ledger_failures': 0, 'independent_grade_rows': [{'program': 0, 'name': 'cluster_uniform_train', 'independent_grade': (0.2499999999999999, 0.0, 0.0, 0.2499999999999999, 0.0, 0.2499999999999999, 0.2499999999999999, 0.0), 'table_grade': (0.25, 0.0, 0.0, 0.25, 0.0, 0.25, 0.25, 0.0), 'L1_residual': 4.440892098500626e-16}, {'program': 1, 'name': 'computational_000_held', 'independent_grade': (0.5, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0), 'table_grade': (0.5, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0), 'L1_residual': 0.0}, {'program': 2, 'name': 'left_3to1_bias_held', 'independent_grade': (0.37499999999999994, 0.0, 0.125, 0.0, 0.37499999999999994, 0.0, 0.125, 0.0), 'table_grade': (0.375, 0.0, 0.125, 0.0, 0.375, 0.0, 0.125, 0.0), 'L1_residual': 1.1102230246251565e-16}], 'maximum_independent_grade_L1_residual': 4.440892098500626e-16, 'candidate_transition_kernel_stochastic_failures': 0, 'active_member_deletion_residual': 1.4142135623730951, 'physical_update_forbidden_numeric_or_sampler_ports': (), 'static_nearest_neighbor_line_compiler': {'line_M2': 363, 'logical_Toffoli': 344, 'literal_one_M2_primitives': 3096, 'literal_two_M2_core_primitives': 2092, 'adjacent_route_and_return_SWAPS': 538632, 'nearest_neighbor_two_M2_calls': 540724, 'maximum_unrouted_operand_distance': 352, 'route_adjacency_failures': 0, 'ordered_operand_failures': 0, 'terminal_wire_restoration_failures': 0, 'route_manifest_sha256': '4663bcf457c96d68de7910cae6ea1c1a56a58a02def3f38d34c0b3ce5a9e69fd', 'proper_cubic_frames': 24, 'all24_line_edge_tests': 8688, 'all24_line_edge_failures': 0, 'runtime_data_selects_route': False, 'pass': True}, 'coherent_equal_address_input_retains_all_eight_address_output_sectors': True, 'uniform_objective_address_distribution_derived': False, 'table_multiplicity_and_candidate_address_law_supplied': True, 'pass': True}
+PASS Route B gives a supplied typed innovation/admission candidate with visible debit and reentry-versus-inverse separation :: {'route': 'B typed innovation plus finite protected-append candidate', 'physical_M2': 58, 'lawful_rows': 24, 'packet_failures': 0, 'inverse_failures': 0, 'resource_ledger_failures': 0, 'actuality_or_admissibility_veto_failures': 0, 'innovation_word_sha256': 'df584c80887da1cbe47191be241eaa6d2b07cd9bbef52435f5b4cb9344d6515c', 'innovation_address_counts': (8, 8, 8, 8, 8, 8, 8, 8), 'finite_eight_address_stock_first_exhausted_repeat_index': 8, 'forward_reentry_refused_by_fresh_domain': True, 'exact_physical_inverse_remains_accessible': True, 'single_replica_deletion_residual': 1.0, 'debit_deletion_residual': 1.4142135623730951, 'lock_deletion_residual': 1.0, 'static_nearest_neighbor_line_compiler': {'line_M2': 58, 'logical_Toffoli': 40, 'literal_one_M2_primitives': 360, 'literal_two_M2_core_primitives': 246, 'adjacent_route_and_return_SWAPS': 9436, 'nearest_neighbor_two_M2_calls': 9682, 'maximum_unrouted_operand_distance': 46, 'route_adjacency_failures': 0, 'ordered_operand_failures': 0, 'terminal_wire_restoration_failures': 0, 'route_manifest_sha256': '95325a367930c66227d3e02aedeb03c00d865295ad8578ef0c2f68acad8230e9', 'proper_cubic_frames': 24, 'all24_line_edge_tests': 1368, 'all24_line_edge_failures': 0, 'runtime_data_selects_route': False, 'pass': True}, 'finite_ready_resource_renews': False, 'actuality_token_and_uniform_innovation_law_supplied': True, 'candidate_packet_is_framework_Record': False, 'global_irreversibility_or_permanence_derived': False, 'pass': True}
+PASS Route C gives preregistered train/two-held grade-frequency equality while counter-controls show frequency does not identify law, genesis, or actuality :: {'route': 'C preregistered deterministic unique-extension comparator', 'preregistration_sha256': 'e2412661758ab9c7b2d36f0a1f5c9151453253429a0be796f29357bd770894ca', 'expected_preregistration_sha256': 'e2412661758ab9c7b2d36f0a1f5c9151453253429a0be796f29357bd770894ca', 'train_held_frequency_rows': [{'program': 0, 'name': 'cluster_uniform_train', 'split': 'train', 'size': 32, 'predicted_grade': (0.2499999999999999, 0.0, 0.0, 0.2499999999999999, 0.0, 0.2499999999999999, 0.2499999999999999, 0.0), 'innovation_frequency': (0.25, 0.0, 0.0, 0.25, 0.0, 0.25, 0.25, 0.0), 'deterministic_frequency': (0.25, 0.0, 0.0, 0.25, 0.0, 0.25, 0.25, 0.0), 'innovation_L1_residual': 4.440892098500626e-16, 'deterministic_L1_residual': 4.440892098500626e-16}, {'program': 1, 'name': 'computational_000_held', 'split': 'held', 'size': 40, 'predicted_grade': (0.5, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0), 'innovation_frequency': (0.5, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0), 'deterministic_frequency': (0.5, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0), 'innovation_L1_residual': 0.0, 'deterministic_L1_residual': 0.0}, {'program': 2, 'name': 'left_3to1_bias_held', 'split': 'held', 'size': 56, 'predicted_grade': (0.37499999999999994, 0.0, 0.125, 0.0, 0.37499999999999994, 0.0, 0.125, 0.0), 'innovation_frequency': (0.375, 0.0, 0.125, 0.0, 0.375, 0.0, 0.125, 0.0), 'deterministic_frequency': (0.375, 0.0, 0.125, 0.0, 0.375, 0.0, 0.125, 0.0), 'innovation_L1_residual': 1.1102230246251565e-16, 'deterministic_L1_residual': 1.1102230246251565e-16}], 'innovation_frequency_failures': 0, 'deterministic_frequency_failures': 0, 'one_step_physical_EG_failures': 0, 'head_inverse_failures': 0, 'head_advance_deletion_L1_residual': 1.25, 'count_preserving_table_permutation_frequency_residual': 0.0, 'count_preserving_table_permutation_ordered_string_separator': 56, 'different_genesis_same_frequency_residual': 0.0, 'different_genesis_ordered_string_separator': 56, 'physical_update_forbidden_numeric_or_sampler_ports': (), 'head_static_nearest_neighbor_line_compiler': {'line_M2': 8, 'logical_Toffoli': 0, 'literal_one_M2_primitives': 0, 'literal_two_M2_core_primitives': 21, 'adjacent_route_and_return_SWAPS': 0, 'nearest_neighbor_two_M2_calls': 21, 'maximum_unrouted_operand_distance': 1, 'route_adjacency_failures': 0, 'ordered_operand_failures': 0, 'terminal_wire_restoration_failures': 0, 'route_manifest_sha256': 'a4a1ba32764702cf4f05468634b80cd03e46dd03f02c808fcca0f46f71202524', 'proper_cubic_frames': 24, 'all24_line_edge_tests': 168, 'all24_line_edge_failures': 0, 'runtime_data_selects_route': False, 'pass': True}, 'table_and_initial_head_supplied': True, 'unique_deterministic_string_is_objective_actuality_or_probability_sample': False, 'frequency_identifies_microscopic_law_or_genesis': False, 'pass': True}
+PASS all24/all576 covariance and lawful-domain controls are exact :: {'proper_cubic_frames': 24, 'all24_member_frame_tests': 96, 'all24_member_frame_failures': 0, 'all576_axis_product_tests': 1728, 'all576_axis_product_failures': 0, 'new_ROM_innovation_archive_fields_are_proper_cubic_scalars': True, 'malformed_domain_refusals': 7, 'malformed_domain_total': 7, 'pass': True}
+PASS exact shores, preregistration, supplied inventory, and fresh N1-N8 prevent actuality/Record/Born or axiom-pressure promotion :: {'expected_hashes': {'Cycle565 runner': 'b4b6e2c4491c5a6b30389764e8ac597ce07e1dac3f31c7cb8fff9297ac04437a', 'Cycle565 note': '72dd62448eaf685de0a7f1cc4ce9d164363428976eafc8efb93c973b8856f39a', 'Cycle571 runner': '7221d59558e4d731f98a2a4523c280aa98b889f23ea3f7be1acc8919395dfee8', 'Cycle571 note': 'b254476f392597c03f27581fbc4f559266ed42984ac86a516888ee81d2aff8e2', 'Cycle577 runner': '93bf1fa2859289b13037bfe7882cce86732e9377ed8b60e56c3bd55ebc0ce74f', 'Cycle577 note': '23ef5601b73c121d5e82c9031ec0ff4acffdc5471c43aa4dec63a78085aa7c0f', 'Cycle580 runner': 'c46917d4a932cd3ad9a78e0547625055f5adf9d5cf7393700d7e6715dd515cd3', 'Cycle580 note': 'e8ca5acdaec0c7ec5f0ba9772d7736352bcf132e961483d93f19c679439df276', 'Cycle582 runner': '47c5138720add60ed6fa8b6506dcb8a9cbee9af5a1ab3defbc7aea4c3cfa290a', 'Cycle582 note': 'c65613cd5f6bffa1cf4cc84ba08815fd9d569627d579438f9a39fa00601fcbc6', 'Cycle584 runner': '556e3e4759033706c795c9b65f55f12afaaaf84b8858dc4bb06b1c0a93400ab3', 'Cycle584 note': '7e5ae8971e1b4f3be6bba50d25aa0b3d373f79d2b3224622fa1c4f829f7982dc', 'Cycle587 runner': '2879d5a2641b334553769f15cf3a6f152f9f16f8f80b23db723448533c28c494'}, 'observed_hashes': {'Cycle565 runner': 'b4b6e2c4491c5a6b30389764e8ac597ce07e1dac3f31c7cb8fff9297ac04437a', 'Cycle565 note': '72dd62448eaf685de0a7f1cc4ce9d164363428976eafc8efb93c973b8856f39a', 'Cycle571 runner': '7221d59558e4d731f98a2a4523c280aa98b889f23ea3f7be1acc8919395dfee8', 'Cycle571 note': 'b254476f392597c03f27581fbc4f559266ed42984ac86a516888ee81d2aff8e2', 'Cycle577 runner': '93bf1fa2859289b13037bfe7882cce86732e9377ed8b60e56c3bd55ebc0ce74f', 'Cycle577 note': '23ef5601b73c121d5e82c9031ec0ff4acffdc5471c43aa4dec63a78085aa7c0f', 'Cycle580 runner': 'c46917d4a932cd3ad9a78e0547625055f5adf9d5cf7393700d7e6715dd515cd3', 'Cycle580 note': 'e8ca5acdaec0c7ec5f0ba9772d7736352bcf132e961483d93f19c679439df276', 'Cycle582 runner': '47c5138720add60ed6fa8b6506dcb8a9cbee9af5a1ab3defbc7aea4c3cfa290a', 'Cycle582 note': 'c65613cd5f6bffa1cf4cc84ba08815fd9d569627d579438f9a39fa00601fcbc6', 'Cycle584 runner': '556e3e4759033706c795c9b65f55f12afaaaf84b8858dc4bb06b1c0a93400ab3', 'Cycle584 note': '7e5ae8971e1b4f3be6bba50d25aa0b3d373f79d2b3224622fa1c4f829f7982dc', 'Cycle587 runner': '2879d5a2641b334553769f15cf3a6f152f9f16f8f80b23db723448533c28c494'}, 'preregistration_sha256': 'e2412661758ab9c7b2d36f0a1f5c9151453253429a0be796f29357bd770894ca', 'note_missing_contract_fragments': (), 'declared_runner_sha256': 'ab565af6aa59e66cea7b1ce625c08f8a88235ae9f7415e5e7d89d63af34ce9ce', 'runner_sha256': 'ab565af6aa59e66cea7b1ce625c08f8a88235ae9f7415e5e7d89d63af34ce9ce', 'discipline': {'N1_routes': ({'family': 'rational local reservoir ROM', 'status': 'ATTEMPTED', 'terminal': 'derive address innovation distribution and table/grade law rather than supply them'}, {'family': 'typed stochastic innovation/admission', 'status': 'ATTEMPTED', 'terminal': 'derive objective entropy innovations, admission law, and noninvertible permanence'}, {'family': 'deterministic unique extension', 'status': 'ATTEMPTED', 'terminal': 'derive program/head genesis and explain state-dependent table selection without grade import'}, {'family': 'physical collapse noise field', 'status': 'UNTESTED_OPEN_NOT_COUNTED', 'terminal': 'construct covariant noise dynamics and conserved resource ledger'}, {'family': 'typicality/ergodic environment', 'status': 'UNTESTED_OPEN_NOT_COUNTED', 'terminal': 'derive invariant measure, mixing, actuality, and Record readout'}, {'family': 'algorithmic unique-history selector', 'status': 'UNTESTED_OPEN_NOT_COUNTED', 'terminal': 'derive a local rule that changes with quantum grade without encoding its answer table'}), 'N1_qualifying': 3, 'N1_required': 5, 'N1_status': 'FAIL', 'N2_walls': ('member genesis', 'objective actuality', 'Record admission/permanence', 'grade-to-transition-law selection', 'frequency calibration/independence', 'resource renewal'), 'N2_pairwise': ({'pair': ('member genesis', 'objective actuality'), 'independent': True, 'reason': 'the tested closure object for either wall has no typed proof of the other'}, {'pair': ('member genesis', 'Record admission/permanence'), 'independent': True, 'reason': 'the tested closure object for either wall has no typed proof of the other'}, {'pair': ('member genesis', 'grade-to-transition-law selection'), 'independent': True, 'reason': 'the tested closure object for either wall has no typed proof of the other'}, {'pair': ('member genesis', 'frequency calibration/independence'), 'independent': True, 'reason': 'the tested closure object for either wall has no typed proof of the other'}, {'pair': ('member genesis', 'resource renewal'), 'independent': True, 'reason': 'the tested closure object for either wall has no typed proof of the other'}, {'pair': ('objective actuality', 'Record admission/permanence'), 'independent': True, 'reason': 'the tested closure object for either wall has no typed proof of the other'}, {'pair': ('objective actuality', 'grade-to-transition-law selection'), 'independent': True, 'reason': 'the tested closure object for either wall has no typed proof of the other'}, {'pair': ('objective actuality', 'frequency calibration/independence'), 'independent': True, 'reason': 'the tested closure object for either wall has no typed proof of the other'}, {'pair': ('objective actuality', 'resource renewal'), 'independent': True, 'reason': 'the tested closure object for either wall has no typed proof of the other'}, {'pair': ('Record admission/permanence', 'grade-to-transition-law selection'), 'independent': True, 'reason': 'the tested closure object for either wall has no typed proof of the other'}, {'pair': ('Record admission/permanence', 'frequency calibration/independence'), 'independent': True, 'reason': 'the tested closure object for either wall has no typed proof of the other'}, {'pair': ('Record admission/permanence', 'resource renewal'), 'independent': True, 'reason': 'the tested closure object for either wall has no typed proof of the other'}, {'pair': ('grade-to-transition-law selection', 'frequency calibration/independence'), 'independent': True, 'reason': 'the tested closure object for either wall has no typed proof of the other'}, {'pair': ('grade-to-transition-law selection', 'resource renewal'), 'independent': True, 'reason': 'the tested closure object for either wall has no typed proof of the other'}, {'pair': ('frequency calibration/independence', 'resource renewal'), 'independent': True, 'reason': 'the tested closure object for either wall has no typed proof of the other'}), 'N3_explicit_supplies': ('three input-state preparations and Cycle41 projector dictionary', 'literal rational history/member ROM and program labels', 'candidate uniform 1/8 address law and 64-token balanced innovation word', 'objective interpretation of one innovation/address token', 'actuality and admissibility tokens plus fresh blank archive capacity', 'Cycle552 law/binding/head/current/K inputs', 'noiseless gate alphabet, static line router, and proper-cubic chart', 'finite corpus cuts and supplied access restriction after append'), 'N4_residual_matching': ({'route': 'A', 'witness': 'zero table/independent-grade residual on three inputs', 'matches': 'conditional rational kernel compilation; distribution/table law still supplied'}, {'route': 'A coherent', 'witness': 'eight retained address/output sectors', 'matches': 'unitary correlation, not objective innovation'}, {'route': 'B', 'witness': 'forward reentry refused but exact inverse accessible', 'matches': 'supplied lawful domain, not global irreversibility/permanence'}, {'route': 'C', 'witness': 'same frequencies under different table order and head genesis', 'matches': 'frequency agreement does not identify law/genesis/actuality'}), 'N5_rhetoric': 'candidate transition law, supplied innovation, conditional append, and frequency comparator only; no objective/Record/Born promotion', 'N6_partial_closure': ('retain the exact three-input rational table compiler as a candidate transition-law test bench', 'retain the typed innovation/admission cell as a finite conditional append with explicit inverse/access boundary', 'retain deterministic unique extension as a no-sampler comparator, not probability ontology', 'derive a physical innovation distribution from a separately conserved local bath and preregister it before new held inputs', 'replace supplied admission/access restriction with a framework-selected formation/permanence law before calling packets Records'), 'N7_hostile_steelman': {'mechanism': 'a covariant local bath with a derived stationary eight-address marginal could feed the fixed rational ROM, while a separately selected formation law consumes a nonrecoverable thermodynamic resource and admits readable Records; an input-independent preregistration would then predict blinded frequencies for a larger state family', 'terminal_obligation': 'construct the bath and formation update on physical M2, prove renewal/resource balance and permanence/access restrictions, derive rather than insert the grade-to-ROM relation, and pass held states not used to choose the table denominator or rows', 'status': 'concrete open route; route-independent negative and axiom pressure remain premature'}, 'N8_cross_cycle_echo': ('Cycle565 compiled finite grades but had no member port', 'Cycle571 supplied actuality/admission and retained an invertible finite append', 'Cycles577-584 retained every coherent pointer sector and finite resource exhaust', 'Cycle587 matched one uniform deterministic fixture but failed a changed state', 'Cycle592 repairs that state-dependence conditionally by encoding a supplied three-program rational law and does not promote the import'), 'broad_no_go': 'FAIL_DO_NOT_SHIP', 'minimum_content': 'FAIL_DO_NOT_SHIP', 'shared_obstruction': 'NOT_ESTABLISHED', 'axiom_pressure': 'NONE'}, 'inventory': {'supplied': ('three input-state preparations and Cycle41 projector dictionary', 'literal rational history/member ROM and program labels', 'candidate uniform 1/8 address law and 64-token balanced innovation word', 'objective interpretation of one innovation/address token', 'actuality and admissibility tokens plus fresh blank archive capacity', 'Cycle552 law/binding/head/current/K inputs', 'noiseless gate alphabet, static line router, and proper-cubic chart', 'finite corpus cuts and supplied access restriction after append'), 'derived': ('three exact rational table/grade equalities and bounded NN physical member/occurrence compiler', 'typed finite admission/debit packet with deletion, veto, forward-reentry, and inverse controls', 'train plus two held frequency equality for supplied innovation and deterministic extension corpora', 'count-preserving law/genesis separators, all24/all576, and malformed-domain refusals'), 'open': ('derivation of quantum state preparation, grade functional, rational table, and address distribution', 'objective actuality owner and framework-selected Record formation/permanence/readability', 'innovation renewal, thermodynamic nonreentry, stationarity/independence, larger held family and asymptotic calibration', 'physical time, matter-compatible integration, energy/stress/source/gravity and continuum volume')}, 'pass': True}
+PASS cold resource caps :: {'elapsed_seconds': 0.25914566696155816, 'maximum_RSS_bytes': 966230016, 'wall_cap_seconds': 360.0, 'RSS_cap_bytes': 3221225472}
+{
+  "covariance_domain": {
+    "all24_member_frame_failures": 0,
+    "all24_member_frame_tests": 96,
+    "all576_axis_product_failures": 0,
+    "all576_axis_product_tests": 1728,
+    "malformed_domain_refusals": 7,
+    "malformed_domain_total": 7,
+    "new_ROM_innovation_archive_fields_are_proper_cubic_scalars": true,
+    "pass": true,
+    "proper_cubic_frames": 24
+  },
+  "dependency_discipline_inventory": {
+    "declared_runner_sha256": "ab565af6aa59e66cea7b1ce625c08f8a88235ae9f7415e5e7d89d63af34ce9ce",
+    "discipline": {
+      "N1_qualifying": 3,
+      "N1_required": 5,
+      "N1_routes": [
+        {
+          "family": "rational local reservoir ROM",
+          "status": "ATTEMPTED",
+          "terminal": "derive address innovation distribution and table/grade law rather than supply them"
+        },
+        {
+          "family": "typed stochastic innovation/admission",
+          "status": "ATTEMPTED",
+          "terminal": "derive objective entropy innovations, admission law, and noninvertible permanence"
+        },
+        {
+          "family": "deterministic unique extension",
+          "status": "ATTEMPTED",
+          "terminal": "derive program/head genesis and explain state-dependent table selection without grade import"
+        },
+        {
+          "family": "physical collapse noise field",
+          "status": "UNTESTED_OPEN_NOT_COUNTED",
+          "terminal": "construct covariant noise dynamics and conserved resource ledger"
+        },
+        {
+          "family": "typicality/ergodic environment",
+          "status": "UNTESTED_OPEN_NOT_COUNTED",
+          "terminal": "derive invariant measure, mixing, actuality, and Record readout"
+        },
+        {
+          "family": "algorithmic unique-history selector",
+          "status": "UNTESTED_OPEN_NOT_COUNTED",
+          "terminal": "derive a local rule that changes with quantum grade without encoding its answer table"
+        }
+      ],
+      "N1_status": "FAIL",
+      "N2_pairwise": [
+        {
+          "independent": true,
+          "pair": [
+            "member genesis",
+            "objective actuality"
+          ],
+          "reason": "the tested closure object for either wall has no typed proof of the other"
+        },
+        {
+          "independent": true,
+          "pair": [
+            "member genesis",
+            "Record admission/permanence"
+          ],
+          "reason": "the tested closure object for either wall has no typed proof of the other"
+        },
+        {
+          "independent": true,
+          "pair": [
+            "member genesis",
+            "grade-to-transition-law selection"
+          ],
+          "reason": "the tested closure object for either wall has no typed proof of the other"
+        },
+        {
+          "independent": true,
+          "pair": [
+            "member genesis",
+            "frequency calibration/independence"
+          ],
+          "reason": "the tested closure object for either wall has no typed proof of the other"
+        },
+        {
+          "independent": true,
+          "pair": [
+            "member genesis",
+            "resource renewal"
+          ],
+          "reason": "the tested closure object for either wall has no typed proof of the other"
+        },
+        {
+          "independent": true,
+          "pair": [
+            "objective actuality",
+            "Record admission/permanence"
+          ],
+          "reason": "the tested closure object for either wall has no typed proof of the other"
+        },
+        {
+          "independent": true,
+          "pair": [
+            "objective actuality",
+            "grade-to-transition-law selection"
+          ],
+          "reason": "the tested closure object for either wall has no typed proof of the other"
+        },
+        {
+          "independent": true,
+          "pair": [
+            "objective actuality",
+            "frequency calibration/independence"
+          ],
+          "reason": "the tested closure object for either wall has no typed proof of the other"
+        },
+        {
+          "independent": true,
+          "pair": [
+            "objective actuality",
+            "resource renewal"
+          ],
+          "reason": "the tested closure object for either wall has no typed proof of the other"
+        },
+        {
+          "independent": true,
+          "pair": [
+            "Record admission/permanence",
+            "grade-to-transition-law selection"
+          ],
+          "reason": "the tested closure object for either wall has no typed proof of the other"
+        },
+        {
+          "independent": true,
+          "pair": [
+            "Record admission/permanence",
+            "frequency calibration/independence"
+          ],
+          "reason": "the tested closure object for either wall has no typed proof of the other"
+        },
+        {
+          "independent": true,
+          "pair": [
+            "Record admission/permanence",
+            "resource renewal"
+          ],
+          "reason": "the tested closure object for either wall has no typed proof of the other"
+        },
+        {
+          "independent": true,
+          "pair": [
+            "grade-to-transition-law selection",
+            "frequency calibration/independence"
+          ],
+          "reason": "the tested closure object for either wall has no typed proof of the other"
+        },
+        {
+          "independent": true,
+          "pair": [
+            "grade-to-transition-law selection",
+            "resource renewal"
+          ],
+          "reason": "the tested closure object for either wall has no typed proof of the other"
+        },
+        {
+          "independent": true,
+          "pair": [
+            "frequency calibration/independence",
+            "resource renewal"
+          ],
+          "reason": "the tested closure object for either wall has no typed proof of the other"
+        }
+      ],
+      "N2_walls": [
+        "member genesis",
+        "objective actuality",
+        "Record admission/permanence",
+        "grade-to-transition-law selection",
+        "frequency calibration/independence",
+        "resource renewal"
+      ],
+      "N3_explicit_supplies": [
+        "three input-state preparations and Cycle41 projector dictionary",
+        "literal rational history/member ROM and program labels",
+        "candidate uniform 1/8 address law and 64-token balanced innovation word",
+        "objective interpretation of one innovation/address token",
+        "actuality and admissibility tokens plus fresh blank archive capacity",
+        "Cycle552 law/binding/head/current/K inputs",
+        "noiseless gate alphabet, static line router, and proper-cubic chart",
+        "finite corpus cuts and supplied access restriction after append"
+      ],
+      "N4_residual_matching": [
+        {
+          "matches": "conditional rational kernel compilation; distribution/table law still supplied",
+          "route": "A",
+          "witness": "zero table/independent-grade residual on three inputs"
+        },
+        {
+          "matches": "unitary correlation, not objective innovation",
+          "route": "A coherent",
+          "witness": "eight retained address/output sectors"
+        },
+        {
+          "matches": "supplied lawful domain, not global irreversibility/permanence",
+          "route": "B",
+          "witness": "forward reentry refused but exact inverse accessible"
+        },
+        {
+          "matches": "frequency agreement does not identify law/genesis/actuality",
+          "route": "C",
+          "witness": "same frequencies under different table order and head genesis"
+        }
+      ],
+      "N5_rhetoric": "candidate transition law, supplied innovation, conditional append, and frequency comparator only; no objective/Record/Born promotion",
+      "N6_partial_closure": [
+        "retain the exact three-input rational table compiler as a candidate transition-law test bench",
+        "retain the typed innovation/admission cell as a finite conditional append with explicit inverse/access boundary",
+        "retain deterministic unique extension as a no-sampler comparator, not probability ontology",
+        "derive a physical innovation distribution from a separately conserved local bath and preregister it before new held inputs",
+        "replace supplied admission/access restriction with a framework-selected formation/permanence law before calling packets Records"
+      ],
+      "N7_hostile_steelman": {
+        "mechanism": "a covariant local bath with a derived stationary eight-address marginal could feed the fixed rational ROM, while a separately selected formation law consumes a nonrecoverable thermodynamic resource and admits readable Records; an input-independent preregistration would then predict blinded frequencies for a larger state family",
+        "status": "concrete open route; route-independent negative and axiom pressure remain premature",
+        "terminal_obligation": "construct the bath and formation update on physical M2, prove renewal/resource balance and permanence/access restrictions, derive rather than insert the grade-to-ROM relation, and pass held states not used to choose the table denominator or rows"
+      },
+      "N8_cross_cycle_echo": [
+        "Cycle565 compiled finite grades but had no member port",
+        "Cycle571 supplied actuality/admission and retained an invertible finite append",
+        "Cycles577-584 retained every coherent pointer sector and finite resource exhaust",
+        "Cycle587 matched one uniform deterministic fixture but failed a changed state",
+        "Cycle592 repairs that state-dependence conditionally by encoding a supplied three-program rational law and does not promote the import"
+      ],
+      "axiom_pressure": "NONE",
+      "broad_no_go": "FAIL_DO_NOT_SHIP",
+      "minimum_content": "FAIL_DO_NOT_SHIP",
+      "shared_obstruction": "NOT_ESTABLISHED"
+    },
+    "expected_hashes": {
+      "Cycle565 note": "72dd62448eaf685de0a7f1cc4ce9d164363428976eafc8efb93c973b8856f39a",
+      "Cycle565 runner": "b4b6e2c4491c5a6b30389764e8ac597ce07e1dac3f31c7cb8fff9297ac04437a",
+      "Cycle571 note": "b254476f392597c03f27581fbc4f559266ed42984ac86a516888ee81d2aff8e2",
+      "Cycle571 runner": "7221d59558e4d731f98a2a4523c280aa98b889f23ea3f7be1acc8919395dfee8",
+      "Cycle577 note": "23ef5601b73c121d5e82c9031ec0ff4acffdc5471c43aa4dec63a78085aa7c0f",
+      "Cycle577 runner": "93bf1fa2859289b13037bfe7882cce86732e9377ed8b60e56c3bd55ebc0ce74f",
+      "Cycle580 note": "e8ca5acdaec0c7ec5f0ba9772d7736352bcf132e961483d93f19c679439df276",
+      "Cycle580 runner": "c46917d4a932cd3ad9a78e0547625055f5adf9d5cf7393700d7e6715dd515cd3",
+      "Cycle582 note": "c65613cd5f6bffa1cf4cc84ba08815fd9d569627d579438f9a39fa00601fcbc6",
+      "Cycle582 runner": "47c5138720add60ed6fa8b6506dcb8a9cbee9af5a1ab3defbc7aea4c3cfa290a",
+      "Cycle584 note": "7e5ae8971e1b4f3be6bba50d25aa0b3d373f79d2b3224622fa1c4f829f7982dc",
+      "Cycle584 runner": "556e3e4759033706c795c9b65f55f12afaaaf84b8858dc4bb06b1c0a93400ab3",
+      "Cycle587 runner": "2879d5a2641b334553769f15cf3a6f152f9f16f8f80b23db723448533c28c494"
+    },
+    "inventory": {
+      "derived": [
+        "three exact rational table/grade equalities and bounded NN physical member/occurrence compiler",
+        "typed finite admission/debit packet with deletion, veto, forward-reentry, and inverse controls",
+        "train plus two held frequency equality for supplied innovation and deterministic extension corpora",
+        "count-preserving law/genesis separators, all24/all576, and malformed-domain refusals"
+      ],
+      "open": [
+        "derivation of quantum state preparation, grade functional, rational table, and address distribution",
+        "objective actuality owner and framework-selected Record formation/permanence/readability",
+        "innovation renewal, thermodynamic nonreentry, stationarity/independence, larger held family and asymptotic calibration",
+        "physical time, matter-compatible integration, energy/stress/source/gravity and continuum volume"
+      ],
+      "supplied": [
+        "three input-state preparations and Cycle41 projector dictionary",
+        "literal rational history/member ROM and program labels",
+        "candidate uniform 1/8 address law and 64-token balanced innovation word",
+        "objective interpretation of one innovation/address token",
+        "actuality and admissibility tokens plus fresh blank archive capacity",
+        "Cycle552 law/binding/head/current/K inputs",
+        "noiseless gate alphabet, static line router, and proper-cubic chart",
+        "finite corpus cuts and supplied access restriction after append"
+      ]
+    },
+    "note_missing_contract_fragments": [],
+    "observed_hashes": {
+      "Cycle565 note": "72dd62448eaf685de0a7f1cc4ce9d164363428976eafc8efb93c973b8856f39a",
+      "Cycle565 runner": "b4b6e2c4491c5a6b30389764e8ac597ce07e1dac3f31c7cb8fff9297ac04437a",
+      "Cycle571 note": "b254476f392597c03f27581fbc4f559266ed42984ac86a516888ee81d2aff8e2",
+      "Cycle571 runner": "7221d59558e4d731f98a2a4523c280aa98b889f23ea3f7be1acc8919395dfee8",
+      "Cycle577 note": "23ef5601b73c121d5e82c9031ec0ff4acffdc5471c43aa4dec63a78085aa7c0f",
+      "Cycle577 runner": "93bf1fa2859289b13037bfe7882cce86732e9377ed8b60e56c3bd55ebc0ce74f",
+      "Cycle580 note": "e8ca5acdaec0c7ec5f0ba9772d7736352bcf132e961483d93f19c679439df276",
+      "Cycle580 runner": "c46917d4a932cd3ad9a78e0547625055f5adf9d5cf7393700d7e6715dd515cd3",
+      "Cycle582 note": "c65613cd5f6bffa1cf4cc84ba08815fd9d569627d579438f9a39fa00601fcbc6",
+      "Cycle582 runner": "47c5138720add60ed6fa8b6506dcb8a9cbee9af5a1ab3defbc7aea4c3cfa290a",
+      "Cycle584 note": "7e5ae8971e1b4f3be6bba50d25aa0b3d373f79d2b3224622fa1c4f829f7982dc",
+      "Cycle584 runner": "556e3e4759033706c795c9b65f55f12afaaaf84b8858dc4bb06b1c0a93400ab3",
+      "Cycle587 runner": "2879d5a2641b334553769f15cf3a6f152f9f16f8f80b23db723448533c28c494"
+    },
+    "pass": true,
+    "preregistration_sha256": "e2412661758ab9c7b2d36f0a1f5c9151453253429a0be796f29357bd770894ca",
+    "runner_sha256": "ab565af6aa59e66cea7b1ce625c08f8a88235ae9f7415e5e7d89d63af34ce9ce"
+  },
+  "fail": 0,
+  "pass": 6,
+  "resources": {
+    "RSS_cap_bytes": 3221225472,
+    "elapsed_seconds": 0.25914566696155816,
+    "maximum_RSS_bytes": 966230016,
+    "wall_cap_seconds": 360.0
+  },
+  "route_A": {
+    "EG_failures": 0,
+    "L5_held_L6_EG_rows": 48,
+    "active_member_deletion_residual": 1.4142135623730951,
+    "bounded_product_envelope_M2": 639,
+    "candidate_transition_kernel_stochastic_failures": 0,
+    "coherent_equal_address_input_retains_all_eight_address_output_sectors": true,
+    "exact_Cycle552_531_interface_failures": 0,
+    "independent_grade_rows": [
+      {
+        "L1_residual": 4.440892098500626e-16,
+        "independent_grade": [
+          0.2499999999999999,
+          0.0,
+          0.0,
+          0.2499999999999999,
+          0.0,
+          0.2499999999999999,
+          0.2499999999999999,
+          0.0
+        ],
+        "name": "cluster_uniform_train",
+        "program": 0,
+        "table_grade": [
+          0.25,
+          0.0,
+          0.0,
+          0.25,
+          0.0,
+          0.25,
+          0.25,
+          0.0
+        ]
+      },
+      {
+        "L1_residual": 0.0,
+        "independent_grade": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "name": "computational_000_held",
+        "program": 1,
+        "table_grade": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "L1_residual": 1.1102230246251565e-16,
+        "independent_grade": [
+          0.37499999999999994,
+          0.0,
+          0.125,
+          0.0,
+          0.37499999999999994,
+          0.0,
+          0.125,
+          0.0
+        ],
+        "name": "left_3to1_bias_held",
+        "program": 2,
+        "table_grade": [
+          0.375,
+          0.0,
+          0.125,
+          0.0,
+          0.375,
+          0.0,
+          0.125,
+          0.0
+        ]
+      }
+    ],
+    "inverse_failures": 0,
+    "maximum_independent_grade_L1_residual": 4.440892098500626e-16,
+    "pass": true,
+    "physical_M2_before_Cycle552": 363,
+    "physical_update_forbidden_numeric_or_sampler_ports": [],
+    "preregistration_sha256": "e2412661758ab9c7b2d36f0a1f5c9151453253429a0be796f29357bd770894ca",
+    "resource_ledger_failures": 0,
+    "route": "A physical rational-reservoir grade-table compiler",
+    "static_nearest_neighbor_line_compiler": {
+      "adjacent_route_and_return_SWAPS": 538632,
+      "all24_line_edge_failures": 0,
+      "all24_line_edge_tests": 8688,
+      "line_M2": 363,
+      "literal_one_M2_primitives": 3096,
+      "literal_two_M2_core_primitives": 2092,
+      "logical_Toffoli": 344,
+      "maximum_unrouted_operand_distance": 352,
+      "nearest_neighbor_two_M2_calls": 540724,
+      "ordered_operand_failures": 0,
+      "pass": true,
+      "proper_cubic_frames": 24,
+      "route_adjacency_failures": 0,
+      "route_manifest_sha256": "4663bcf457c96d68de7910cae6ea1c1a56a58a02def3f38d34c0b3ce5a9e69fd",
+      "runtime_data_selects_route": false,
+      "terminal_wire_restoration_failures": 0
+    },
+    "table_history_member_failures": 0,
+    "table_multiplicity_and_candidate_address_law_supplied": true,
+    "uniform_objective_address_distribution_derived": false
+  },
+  "route_B": {
+    "actuality_or_admissibility_veto_failures": 0,
+    "actuality_token_and_uniform_innovation_law_supplied": true,
+    "candidate_packet_is_framework_Record": false,
+    "debit_deletion_residual": 1.4142135623730951,
+    "exact_physical_inverse_remains_accessible": true,
+    "finite_eight_address_stock_first_exhausted_repeat_index": 8,
+    "finite_ready_resource_renews": false,
+    "forward_reentry_refused_by_fresh_domain": true,
+    "global_irreversibility_or_permanence_derived": false,
+    "innovation_address_counts": [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+    ],
+    "innovation_word_sha256": "df584c80887da1cbe47191be241eaa6d2b07cd9bbef52435f5b4cb9344d6515c",
+    "inverse_failures": 0,
+    "lawful_rows": 24,
+    "lock_deletion_residual": 1.0,
+    "packet_failures": 0,
+    "pass": true,
+    "physical_M2": 58,
+    "resource_ledger_failures": 0,
+    "route": "B typed innovation plus finite protected-append candidate",
+    "single_replica_deletion_residual": 1.0,
+    "static_nearest_neighbor_line_compiler": {
+      "adjacent_route_and_return_SWAPS": 9436,
+      "all24_line_edge_failures": 0,
+      "all24_line_edge_tests": 1368,
+      "line_M2": 58,
+      "literal_one_M2_primitives": 360,
+      "literal_two_M2_core_primitives": 246,
+      "logical_Toffoli": 40,
+      "maximum_unrouted_operand_distance": 46,
+      "nearest_neighbor_two_M2_calls": 9682,
+      "ordered_operand_failures": 0,
+      "pass": true,
+      "proper_cubic_frames": 24,
+      "route_adjacency_failures": 0,
+      "route_manifest_sha256": "95325a367930c66227d3e02aedeb03c00d865295ad8578ef0c2f68acad8230e9",
+      "runtime_data_selects_route": false,
+      "terminal_wire_restoration_failures": 0
+    }
+  },
+  "route_C": {
+    "count_preserving_table_permutation_frequency_residual": 0.0,
+    "count_preserving_table_permutation_ordered_string_separator": 56,
+    "deterministic_frequency_failures": 0,
+    "different_genesis_ordered_string_separator": 56,
+    "different_genesis_same_frequency_residual": 0.0,
+    "expected_preregistration_sha256": "e2412661758ab9c7b2d36f0a1f5c9151453253429a0be796f29357bd770894ca",
+    "frequency_identifies_microscopic_law_or_genesis": false,
+    "head_advance_deletion_L1_residual": 1.25,
+    "head_inverse_failures": 0,
+    "head_static_nearest_neighbor_line_compiler": {
+      "adjacent_route_and_return_SWAPS": 0,
+      "all24_line_edge_failures": 0,
+      "all24_line_edge_tests": 168,
+      "line_M2": 8,
+      "literal_one_M2_primitives": 0,
+      "literal_two_M2_core_primitives": 21,
+      "logical_Toffoli": 0,
+      "maximum_unrouted_operand_distance": 1,
+      "nearest_neighbor_two_M2_calls": 21,
+      "ordered_operand_failures": 0,
+      "pass": true,
+      "proper_cubic_frames": 24,
+      "route_adjacency_failures": 0,
+      "route_manifest_sha256": "a4a1ba32764702cf4f05468634b80cd03e46dd03f02c808fcca0f46f71202524",
+      "runtime_data_selects_route": false,
+      "terminal_wire_restoration_failures": 0
+    },
+    "innovation_frequency_failures": 0,
+    "one_step_physical_EG_failures": 0,
+    "pass": true,
+    "physical_update_forbidden_numeric_or_sampler_ports": [],
+    "preregistration_sha256": "e2412661758ab9c7b2d36f0a1f5c9151453253429a0be796f29357bd770894ca",
+    "route": "C preregistered deterministic unique-extension comparator",
+    "table_and_initial_head_supplied": true,
+    "train_held_frequency_rows": [
+      {
+        "deterministic_L1_residual": 4.440892098500626e-16,
+        "deterministic_frequency": [
+          0.25,
+          0.0,
+          0.0,
+          0.25,
+          0.0,
+          0.25,
+          0.25,
+          0.0
+        ],
+        "innovation_L1_residual": 4.440892098500626e-16,
+        "innovation_frequency": [
+          0.25,
+          0.0,
+          0.0,
+          0.25,
+          0.0,
+          0.25,
+          0.25,
+          0.0
+        ],
+        "name": "cluster_uniform_train",
+        "predicted_grade": [
+          0.2499999999999999,
+          0.0,
+          0.0,
+          0.2499999999999999,
+          0.0,
+          0.2499999999999999,
+          0.2499999999999999,
+          0.0
+        ],
+        "program": 0,
+        "size": 32,
+        "split": "train"
+      },
+      {
+        "deterministic_L1_residual": 0.0,
+        "deterministic_frequency": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "innovation_L1_residual": 0.0,
+        "innovation_frequency": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "name": "computational_000_held",
+        "predicted_grade": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "program": 1,
+        "size": 40,
+        "split": "held"
+      },
+      {
+        "deterministic_L1_residual": 1.1102230246251565e-16,
+        "deterministic_frequency": [
+          0.375,
+          0.0,
+          0.125,
+          0.0,
+          0.375,
+          0.0,
+          0.125,
+          0.0
+        ],
+        "innovation_L1_residual": 1.1102230246251565e-16,
+        "innovation_frequency": [
+          0.375,
+          0.0,
+          0.125,
+          0.0,
+          0.375,
+          0.0,
+          0.125,
+          0.0
+        ],
+        "name": "left_3to1_bias_held",
+        "predicted_grade": [
+          0.37499999999999994,
+          0.0,
+          0.125,
+          0.0,
+          0.37499999999999994,
+          0.0,
+          0.125,
+          0.0
+        ],
+        "program": 2,
+        "size": 56,
+        "split": "held"
+      }
+    ],
+    "unique_deterministic_string_is_objective_actuality_or_probability_sample": false
+  },
+  "summary": {
+    "audit": "unset",
+    "authority": "none",
+    "axiom_pressure": null,
+    "derived_Born_probability": null,
+    "framework_Record": null,
+    "innovation_distribution_derived": null,
+    "objective_actuality": null,
+    "shared_obstruction": null,
+    "strongest_constructive_result": "bounded three-input rational candidate-law compiler into exact Cycle552/531 conditional occurrence with preregistered held equality"
+  }
+}
+RESULT pass=6 fail=0
+authority=none; audit=unset; supplied rational/stochastic law is not derived Born probability; conditional append is not Record; reversible sectors are not objective actuality
+       80.97 real        79.54 user         0.74 sys
+           970752000  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              259982  page reclaims
+                  44  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 470  voluntary context switches
+               66557  involuntary context switches
+       1264253333107  instructions retired
+        283258866617  cycles elapsed
+          1033880776  peak memory footprint

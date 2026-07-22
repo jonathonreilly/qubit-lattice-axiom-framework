@@ -1,0 +1,73 @@
+{
+  "status": "cycle558-one-shot-physical-frame-blanking-CPTP-closed-renewal-resource-explicit",
+  "authority": "none",
+  "audit": "unset",
+  "runner_sha256": "8fa50e2ce1177975b196dabfbb8fef7007d682c2ef7a35be1f021afe3b0d3adf",
+  "note_sha256": "fdef53324db3276bf40e045a389aeeedc756ffd5cfdf19c9f3296c11ea329ebd",
+  "parent_certificate_sha256": "55b4463fb164b0933119403cf6e57ccee956237e29ac66c942d9e863cf3381cd",
+  "tests_passed": 12,
+  "tests_total": 12,
+  "pass": true,
+  "elapsed_seconds_internal": 157.34679958294146,
+  "timed_wall_seconds": 159.13,
+  "maximum_RSS_bytes": 116047872,
+  "process_swap_count": 0,
+  "strongest_constructive_result": {
+    "old_frame_M2_terminally_blank": true,
+    "nearest_neighbor_parallel_SWAP_export": true,
+    "full_displayed_target_channel_preserved": true,
+    "exact_phase_aware_check_group_conjugation": true,
+    "one_shot_retirement_closed": true,
+    "closed_resource_autonomous_renewal": false
+  },
+  "information_and_entropy_ledger": {
+    "input_frame_logical_qubits": 3,
+    "terminal_old_frame_logical_qubits": 0,
+    "environment_logical_qubits": 3,
+    "lawful_environment_states": 8,
+    "minimum_coherent_environment_dimension": 8,
+    "minimum_coherent_environment_qubits": 3,
+    "evaluated_Kraus_Hilbert_Schmidt_Gram_rank": 8,
+    "evaluated_Kraus_completeness_residual": 0.0,
+    "maximum_entropy_export_per_uniform_cycle_bits": 3
+  },
+  "size_controls": {
+    "L5": {
+      "old_frame_and_environment_M2_each": 750,
+      "frame_rows": 2625,
+      "frame_rank": 747,
+      "initial_and_terminal_combined_rank": 1497,
+      "target_branch_tests": 200000,
+      "chi_branch_tests": 19200
+    },
+    "held_L6": {
+      "old_frame_and_environment_M2_each": 1296,
+      "frame_rows": 4536,
+      "frame_rank": 1293,
+      "initial_and_terminal_combined_rank": 2589,
+      "target_branch_tests": 345600,
+      "chi_branch_tests": 27648
+    },
+    "check_conjugation_target_branch_and_chi_failures": 0,
+    "all24_all576_failures": 0
+  },
+  "route_dispositions": {
+    "A_persistent_spent_unitary": "one-shot exact with inverse; consumes 6N fresh spent M2 per repeated use",
+    "B_Stinespring_CPTP": "strongest one-shot retirement; repeatable only with a named reset entropy sink",
+    "C_straight_radial_defect": "offset 3 to 4 relocation closes; offset 7 to 8 has 375/648 endpoint collisions and minus-identity rows, route-specific only",
+    "D_abstract_three_bit_decoder": "algebraically exact; bounded NN all24 compiler open",
+    "E_measurement_reset": "target exact but leaves 6N classical spent bits carrying three logical entropy bits"
+  },
+  "scope_boundary": {
+    "physical_content_destroyed_by_persistent_route": false,
+    "environment_trace_hidden": false,
+    "environment_reset_sink_derived": false,
+    "full_physical_recurrent_update": false,
+    "rough_source_product_encoder": false,
+    "bath_output_called_Record_or_realized_history": false,
+    "schedule_called_physical_time": false,
+    "shared_substrate_obstruction": false,
+    "axiom_pressure": false,
+    "broad_negative_gate": "FAIL / DO NOT SHIP"
+  }
+}

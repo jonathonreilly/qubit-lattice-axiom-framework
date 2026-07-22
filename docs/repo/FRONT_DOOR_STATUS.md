@@ -32,14 +32,14 @@ Owner-approval history for axioms and primitives:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3852 |
-| Applied audit verdicts | 507 |
-| Retained-grade rows, including boxed decorations | 416 |
+| Applied audit verdicts | 508 |
+| Retained-grade rows, including boxed decorations | 417 |
 | Retained positive theorems | 89 |
 | Retained no-go rows | 0 |
 | Retained bounded rows | 311 |
-| Boxed decorations under retained parents | 16 |
+| Boxed decorations under retained parents | 17 |
 | Open gates | 2 |
-| Unaudited rows | 2977 |
+| Unaudited rows | 2976 |
 | Retained-pending-chain rows | 5 |
 | Audited conditional rows | 54 |
 | Audited renaming rows | 16 |
@@ -54,10 +54,10 @@ Full audit-ratified row list: [`docs/repo/RETAINED_BACKBONE.md`](RETAINED_BACKBO
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 3051 |
+| Total pending rows | 3050 |
 | Ready rows | 638 |
 | Cycle-break targets | 59 |
-| Critical pending | 651 |
+| Critical pending | 650 |
 | High pending | 372 |
 | Medium pending | 839 |
 | Leaf pending | 1189 |
@@ -78,11 +78,11 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **559**.
+- Non-retained-grade cited rows in publication tables: **558**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 231 |
+| critical | `unaudited` | 230 |
 | high | `unaudited` | 171 |
 | medium | `unaudited` | 129 |
 | critical | `audited_conditional` | 13 |
@@ -99,23 +99,24 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 
 | Metric | Value |
 |---|---:|
-| Publication-lane size (shadow, admitted only) | 573 |
+| Publication-lane size (shadow, admitted only) | 572 |
 | Manifest state | ok |
 | Manifest pending additions | 0 |
 | Manifest pending removals | 0 |
 | Unmanifested candidates (need pending entries) | 0 |
-| Admitted ids absent from lane candidates | 17 |
+| Admitted ids absent from lane candidates | 18 |
 | Live conditional/failed rows that would park | 4 |
 | Live rows fail-open (legacy/unversioned snapshot) | 42 |
 | Lane rows already in actual ready top-10 | 3 |
 | Lane rows added since prior pass | 0 |
-| Lane rows removed since prior pass | 3 |
+| Lane rows removed since prior pass | 4 |
 | Non-lane rows deferred by simulated interleave | 116 |
 
 Named lane membership churn since the prior pass:
 - removed: `gauge_vacuum_plaquette_framework_point_underdetermination_note`
 - removed: `gauge_vacuum_plaquette_reduction_existence_theorem_note`
 - removed: `gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note`
+- removed: `gauge_vacuum_plaquette_susceptibility_flow_theorem_note`
 
 Admitted ids currently absent from lane candidates:
 - `bridge_gap_action_form_uniqueness_no_go_note_2026-05-06`
@@ -128,6 +129,7 @@ Admitted ids currently absent from lane candidates:
 - `gauge_vacuum_plaquette_framework_point_underdetermination_note`
 - `gauge_vacuum_plaquette_reduction_existence_theorem_note`
 - `gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note`
+- `gauge_vacuum_plaquette_susceptibility_flow_theorem_note`
 - `koide_aps_block_by_block_forcing_note_2026-04-21`
 - `koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19`
 - `oh_schur_boundary_action_note`
@@ -202,7 +204,7 @@ Lane rows advanced by the simulated interleave (positions gained; complete list)
 - `cpt_particle_antiparticle_lifetime_equality_theorem_note_2026-05-02`: +3
 - `s3_mass_matrix_conditional_degeneracy_note_2026-07-11`: +2
 - `unit_singlet_overlap_narrow_theorem_note_2026-05-02`: +2
-- `gauge_vacuum_plaquette_susceptibility_flow_theorem_note`: +2
+- `gauge_vacuum_plaquette_connected_hierarchy_theorem_note`: +2
 - `gauge_vacuum_plaquette_perron_jacobi_underdetermination_note`: +2
 - `gauge_vacuum_plaquette_mixed_cumulant_audit_note`: +2
 - `action_normalization_note`: +2

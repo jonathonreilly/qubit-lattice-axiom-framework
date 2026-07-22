@@ -1,10 +1,10 @@
 # Audit Queue
 
-**Total pending:** 3051
+**Total pending:** 3050
 **Ready (all deps at retained-grade/metadata tiers or supplied axioms/approved primitives):** 638
 
 By criticality:
-- `critical`: 651
+- `critical`: 650
 - `high`: 372
 - `medium`: 839
 - `leaf`: 1189
@@ -41,7 +41,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 24 | `dm_neutrino_dirac_bridge_theorem_note_2026-04-15` | positive_theorem | non_terminal_conditional | critical | 887 | 18.29 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_dm_neutrino_dirac_bridge_theorem.py` |
 | 25 | `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | unaudited | critical | 872 | 23.27 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_su3_character_diagonal_convolution_equivalence_narrow.py` |
 | 26 | `yt_ew_m_residual_note_2026-05-02` | no_go | unaudited | critical | 870 | 11.27 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/yt_ew_m_residual_channel_check.py` |
-| 27 | `gauge_vacuum_plaquette_susceptibility_flow_theorem_note` | bounded_theorem | unaudited | critical | 867 | 11.76 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_gauge_vacuum_plaquette_susceptibility_flow_theorem.py` |
+| 27 | `gauge_vacuum_plaquette_connected_hierarchy_theorem_note` | open_gate | unaudited | critical | 866 | 13.76 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_gauge_vacuum_plaquette_connected_hierarchy_theorem.py` |
 | 28 | `gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10` | bounded_theorem | non_terminal_conditional | critical | 860 | 23.75 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_gauge_vacuum_plaquette_finite_tensor_word_packet.py` |
 | 29 | `sm_relativistic_dof_count_import_note_2026-05-17` | bounded_theorem | unaudited | critical | 858 | 15.75 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_sm_relativistic_dof_finite_inventory.py` |
 | 30 | `gauge_vacuum_plaquette_constant_lift_obstruction_note` | positive_theorem | unaudited | critical | 857 | 13.74 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_gauge_vacuum_plaquette_constant_lift_obstruction.py` |

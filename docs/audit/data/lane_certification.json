@@ -1433,7 +1433,7 @@
         },
         {
           "claim_id": "lattice_nn_light_cone_note",
-          "effective_status": "unaudited"
+          "effective_status": "audit_in_progress"
         },
         {
           "claim_id": "lattice_physical_matching_cluster_obstruction_note_2026-05-02",
@@ -2763,6 +2763,6 @@
       "uncertified_count": 633
     }
   ],
-  "repo_head": "71d4d9af3c6f7c20627bafd38782103e8d5e3a76",
+  "repo_head": "2709718e43f0cd7005383c2fdd0d0da8ba0ebda4",
   "schema": "lane_certification_v2"
 }

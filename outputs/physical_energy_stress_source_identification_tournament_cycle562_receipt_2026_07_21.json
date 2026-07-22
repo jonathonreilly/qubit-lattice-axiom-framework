@@ -1,0 +1,68 @@
+{
+  "status": "cycle562-physical-rest-normalized-local-source-current-bounded-positive",
+  "authority": "none",
+  "audit": "unset",
+  "runner_sha256": "b1c601a7538f6e19b71386e26fd45dda8ecc9e22915acf17b90d30021e8b8ae9",
+  "note_sha256": "816646ca26cd1105103980b5c035a8e2616176033aa5801ae59fd33452debc8d",
+  "parent_transcript_sha256": "9f653028eccaf24049f6176f7bf322c4ebd7dc52164c68f747d1efff5784614f",
+  "tests_passed": 10,
+  "tests_total": 10,
+  "pass": true,
+  "elapsed_seconds_internal": 2.034773499937728,
+  "timed_wall_seconds": 2.68,
+  "maximum_RSS_bytes": 249364480,
+  "process_swap_count": 0,
+  "route_A_local_deviation_current": {
+    "Cycle219_mass": 0.4534056541748851,
+    "independent_scale_mass_over_Krest": 19.887601513037797,
+    "held_L7_separation3_density": 0.17911654322087361,
+    "maximum_explicit_link_continuity_residual": 3.885780586188048e-16,
+    "maximum_independent_onsite_coin_density_residual": 3.3306690738754696e-16,
+    "maximum_total_conservation_residual": 1.4210854715202004e-14,
+    "maximum_all24_density_covariance_residual": 2.220446049250313e-16,
+    "maximum_all24_vector_current_covariance_residual": 2.220446049250313e-16,
+    "maximum_resolved_gate_support_M2": 2,
+    "code_leakage": 0.0,
+    "full_spatial_stress_tensor_identified": false
+  },
+  "route_B_actual_contact_impulse": {
+    "maximum_exact_impulse_balance_residual": 2.4666950469751056e-16,
+    "minimum_actual_contact_impulse_norm": 0.7076928174344371,
+    "contact_dressed_K_commutator_residual": 1.4210854715202004e-14,
+    "contact_dressed_K_conservation_residual": 7.105427357601002e-15,
+    "seven_M2_maximum_intertwiner_residual": 3.597533769998862e-16,
+    "separately_pinned_support_M2": 49,
+    "full_joint_physical_contact_mediator_state_intertwiner_executed": false,
+    "called_physical_work_energy_force_or_gravity": false
+  },
+  "route_C_stationary_dressed_observable": {
+    "held_L10_separation4_density": 1.2308485722772588e-06,
+    "maximum_eigen_residual": 6.35414340463092e-16,
+    "maximum_stationary_density_residual": 2.3852447794681098e-18,
+    "maximum_shifted_resolvent_residual": 2.167938169041427e-15,
+    "maximum_all24_update_covariance_residual": 1.2891992047881027e-16,
+    "selector_and_preparation_supplied": true,
+    "contains_Cycle230_matter_or_contact": false,
+    "eigenphase_called_energy_or_rate": false
+  },
+  "Cycle559_bridge_disposition": {
+    "rest_ray_match_residual": 6.661338147750939e-16,
+    "localized_operator_mismatch": 39.32179737190074,
+    "candidate_bridge_energy_drift": 25.808597459744924,
+    "Cycle559_number_drift": 3.774758283725532e-15,
+    "dynamic_conserved_identification": false,
+    "route_specific_failed_join_only": true
+  },
+  "scope_boundary": {
+    "phase_origin_derived": false,
+    "K_law_selected_by_substrate": false,
+    "full_stress_energy_source_tensor_closed": false,
+    "physical_clock_or_work_unit_derived": false,
+    "complete_joint_many_excitation_M2_compiler_closed": false,
+    "endogenous_source_preparation_closed": false,
+    "gravity_claim": false,
+    "shared_substrate_obstruction": false,
+    "axiom_pressure": false,
+    "broad_no_go_gate": "FAIL / DO NOT SHIP"
+  }
+}

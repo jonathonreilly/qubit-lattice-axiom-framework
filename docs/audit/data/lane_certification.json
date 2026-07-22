@@ -1089,7 +1089,7 @@
         },
         {
           "claim_id": "gravity_law_cleanup_note",
-          "effective_status": "audit_in_progress"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11",
@@ -2791,6 +2791,6 @@
       "uncertified_count": 640
     }
   ],
-  "repo_head": "7d8f806766f5cf73739ae5d3e4e10008846b07f2",
+  "repo_head": "49fb486281044b92a826693a13f963fe1f037a93",
   "schema": "lane_certification_v2"
 }

@@ -1,29 +1,83 @@
 {
-  "audit_date": null,
+  "audit_date": "2026-07-22T18:35:32.826985+00:00",
   "audit_invocation_history": [
     "0db634b160c84d82a9381632e582a3e9",
-    "8dea8d574f7c4927948eb21ed01ae335"
+    "8dea8d574f7c4927948eb21ed01ae335",
+    "53980d6f5df44529abf572b49cbb45fb"
   ],
-  "audit_invocation_id": "8dea8d574f7c4927948eb21ed01ae335",
-  "audit_state_snapshot": null,
-  "audit_status": "audit_in_progress",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
-  "blocker": "cross_confirmation_disagreement",
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "audit_invocation_id": "53980d6f5df44529abf572b49cbb45fb",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true,
+      "runner_path": "scripts/gravity_distance_fixed_geometry.py"
+    },
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {
+      "scripts/generative_causal_dag_interference.py": "61266823b2ba7a2b225f15dbd54bae3044a627a1ed59704e1a96b0846247a57f"
+    },
+    "load_bearing_score": 10.992,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/generative_causal_dag_interference.py": {
+        "cache_exit_code": null,
+        "cache_freshness": "missing",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": null,
+        "cache_status": null
+      },
+      "scripts/gravity_distance_fixed_geometry.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "caebed0844eda3827a918d70657dd54d2bf29f581412a2ea0335e15c56a90821",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "caebed0844eda3827a918d70657dd54d2bf29f581412a2ea0335e15c56a90821",
+    "runner_path": "scripts/gravity_distance_fixed_geometry.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 719
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-judicial-1-20260722-6748e9d0",
+  "auditor_confidence": "judicial",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The runner genuinely computes the six rows and endpoint-peak tail diagnostic, so class C and a bounded theorem remain appropriate. However, the minimal-axiom authority expressly withholds dynamics, weights, source/action, and physical-observable bridges, while the runner stipulates each of those ingredients. The result therefore closes only conditionally as software/model output and not as a framework-derived gravity statement.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260722-6748e9d0\", \"judge\": 1, \"rationale\": \"The runner genuinely computes the six rows and endpoint-peak tail diagnostic, so class C and a bounded theorem remain appropriate. However, the minimal-axiom authority expressly withholds dynamics, weights, source/action, and physical-observable bridges, while the runner stipulates each of those ingredients. The result therefore closes only conditionally as software/model output and not as a framework-derived gravity statement.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"On the stipulated generated-DAG runner and cached b-window, the six t-values are descriptive and the code reports no review-safe falling-tail fit; no significance or physical force-law claim is audited.\", \"C\", null, [\"bounded_with_named_walls\", \"stretch_attempt_negative\"]]}, {\"auditor\": \"codex-judicial-2-20260722-b4882c45\", \"judge\": 2, \"rationale\": \"The source and helper code genuinely compute the six rows and the endpoint-peak branch genuinely produces the no-fit report. However, the continuous generated DAG, BETA/K band, 0.1/r field, propagation action, barrier/slit construction, and centroid observable are stipulated rather than derived from any supplied framework premise, so the result closes only as conditional software/model output.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"On the stipulated generated-DAG runner and cached b-window, the six t-values are descriptive and the code reports no review-safe falling-tail fit; no significance or physical force-law claim is audited.\", \"C\", null, [\"bounded_with_named_walls\", \"stretch_attempt_negative\"]]}, {\"auditor\": \"codex-judicial-3-20260722-1cca5064\", \"judge\": 3, \"rationale\": \"The runner genuinely computes the six descriptive rows and emits the no-fit report because the positive maximum lies at the sampled endpoint, but that verifies only the stipulated software model. The restricted packet supplies no framework-to-runner bridge for the hard-coded field, propagation/action, geometry, or centroid observable, so retained scientific closure is conditional.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"On the stipulated generated-DAG runner and cached b-window, the six t-values are descriptive and the code reports no review-safe falling-tail fit; no significance or physical force-law claim is audited.\", \"C\", null, [\"bounded_with_named_walls\", \"stretch_attempt_negative\"]]}, {\"auditor\": \"codex-judicial-4-20260722-4547a2d4\", \"judge\": 4, \"rationale\": \"The runner source genuinely computes the six reported rows and its endpoint peak causes the no-fit message, so class C correctly describes the computational step rather than a renaming or hard-coded match. However, the packet supplies no authority or axiom-level derivation for the runner's continuous random DAG, BETA/K band, 0.1/r field, action formula, barrier/slit construction, or centroid observable. The result therefore closes only as output of the stipulated model and remains conditional as a framework scientific claim.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"On the stipulated generated-DAG runner and cached b-window, the six t-values are descriptive and the code reports no review-safe falling-tail fit; no significance or physical force-law claim is audited.\", \"C\", null, [\"bounded_with_named_walls\", \"stretch_attempt_negative\"]]}, {\"auditor\": \"codex-judicial-5-20260722-5b852d8f\", \"judge\": 5, \"rationale\": \"The runner genuinely computes and reproduces the cached rows, but that establishes only conditional output of its stipulated generated-DAG model. Because the restricted packet supplies no framework-to-runner bridge for the field, action, geometry, and readout choices, the bounded scientific chain does not close at audited-clean grade.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"On the stipulated generated-DAG runner and cached b-window, the six t-values are descriptive and the code reports no review-safe falling-tail fit; no significance or physical force-law claim is audited.\", \"C\", null, [\"bounded_with_named_walls\", \"stretch_attempt_negative\"]]}]",
   "claim_id": "gravity_law_cleanup_note",
-  "claim_scope": "The provided primary-runner output contains the listed descriptive t-values and no review-safe falling-tail fit on the cached b-window.",
+  "claim_scope": "On the stipulated generated-DAG runner and cached b-window, the six t-values are descriptive and the code reports no review-safe falling-tail fit; no significance or physical force-law claim is audited.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": "2026-07-16T05:37:59.241348+00:00",
-  "claim_type_provenance": "audited_pending_cross_confirmation",
+  "claim_type_last_reviewed": "2026-07-22T18:35:32.826985+00:00",
+  "claim_type_provenance": "judicial_review",
   "criticality": "critical",
   "cross_confirmation": {
+    "agreement_schema": "audit_tuple_v2",
     "first_audit": {
       "audit_date": "2026-07-16T05:37:59.241348+00:00",
       "audit_invocation_id": "0db634b160c84d82a9381632e582a3e9",
@@ -52,6 +106,148 @@
       "verdict": "audited_clean",
       "verdict_rationale": "The primary and helper sources genuinely compute the six rows from generated DAGs rather than printing or importing the contested values. The computed positive peak occurs at the largest sampled b-value, leaving no post-peak points and directly producing the reported absence of a review-safe falling-tail fit. The audited scope is expressly descriptive and does not promote significance, a physical gravity law, or mass scaling, so the runner's stipulated model parameters are not being laundered into those broader conclusions."
     },
+    "judicial_panel_record_v1": {
+      "cid": "gravity_law_cleanup_note",
+      "disagreement_fingerprint": {
+        "claim_id": "gravity_law_cleanup_note",
+        "first_audit_invocation_id": "0db634b160c84d82a9381632e582a3e9",
+        "note_hash": "d7814ad7bf67709f7aa7950db90bcb51ac14fb5f22a13c94834a27d77ecdd5d7",
+        "schema": "judicial_disagreement_fingerprint_v1",
+        "seat_summaries_sha256": "8840ed9c30936e2ea77c7ea3650d687de6f2452e2b0364ce83c4ec79e3c14784",
+        "second_audit_invocation_id": "8dea8d574f7c4927948eb21ed01ae335"
+      },
+      "failures": [],
+      "invocation_id": "53980d6f5df44529abf572b49cbb45fb",
+      "majority_count": 5,
+      "panel": 1,
+      "result": "majority_candidate",
+      "schema": "judicial_panel_record_v1",
+      "tally": [
+        {
+          "count": 5,
+          "tuple": [
+            "second",
+            "audited_conditional",
+            "bounded_theorem",
+            "On the stipulated generated-DAG runner and cached b-window, the six t-values are descriptive and the code reports no review-safe falling-tail fit; no significance or physical force-law claim is audited.",
+            "C",
+            null,
+            [
+              "bounded_with_named_walls",
+              "stretch_attempt_negative"
+            ]
+          ]
+        }
+      ],
+      "votes": [
+        {
+          "auditor": "codex-judicial-1-20260722-6748e9d0",
+          "first_auditor_error": "The first position mistakes faithful computation inside a stipulated model for first-principles closure from the framework baseline. The packet\u2019s axioms do not supply the runner\u2019s continuous random DAG, BETA/K band, 0.1/r field, propagation/action rule, barrier geometry, or centroid readout, so reproducing stdout cannot by itself earn audited_clean.",
+          "hybrid_resolution_note": null,
+          "judge": 1,
+          "judgment_rationale": "The runner genuinely computes the six rows and endpoint-peak tail diagnostic, so class C and a bounded theorem remain appropriate. However, the minimal-axiom authority expressly withholds dynamics, weights, source/action, and physical-observable bridges, while the runner stipulates each of those ingredients. The result therefore closes only conditionally as software/model output and not as a framework-derived gravity statement.",
+          "negative_assertion_classes": [
+            "bounded_with_named_walls",
+            "stretch_attempt_negative"
+          ],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: supply retained derivations of the field, propagation/action, geometry, and detector-centroid prescriptions from the framework baseline, or narrow the artifact explicitly to a stipulated software-output certificate with no gravity interpretation and add a dated downstream-hygiene line to this note's boundary.",
+          "ratified_claim_scope": "On the stipulated generated-DAG runner and cached b-window, the six t-values are descriptive and the code reports no review-safe falling-tail fit; no significance or physical force-law claim is audited.",
+          "ratified_claim_type": "bounded_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "The binding content is the raw per-b t-values on the cached sweep and the runner's report that there are not enough falling-tail points for a review-safe power-law fit.",
+          "ratified_load_bearing_step_class": "C",
+          "ratified_verdict": "audited_conditional",
+          "second_auditor_error": "none",
+          "sided_with": "second"
+        },
+        {
+          "auditor": "codex-judicial-2-20260722-b4882c45",
+          "first_auditor_error": "The first position conflates a genuine non-hard-coded computation inside the stipulated runner with scientific closure from the framework baseline; the packet supplies no derivation of the runner's field, propagation/action, geometry, or centroid readout from the accepted axioms.",
+          "hybrid_resolution_note": null,
+          "judge": 2,
+          "judgment_rationale": "The source and helper code genuinely compute the six rows and the endpoint-peak branch genuinely produces the no-fit report. However, the continuous generated DAG, BETA/K band, 0.1/r field, propagation action, barrier/slit construction, and centroid observable are stipulated rather than derived from any supplied framework premise, so the result closes only as conditional software/model output.",
+          "negative_assertion_classes": [
+            "bounded_with_named_walls",
+            "stretch_attempt_negative"
+          ],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: supply retained derivations of the field, propagation/action, geometry, and detector-centroid prescriptions from the framework baseline, or narrow the artifact explicitly to a stipulated software-output certificate with no gravity interpretation and add a dated downstream-hygiene line to this note's boundary.",
+          "ratified_claim_scope": "On the stipulated generated-DAG runner and cached b-window, the six t-values are descriptive and the code reports no review-safe falling-tail fit; no significance or physical force-law claim is audited.",
+          "ratified_claim_type": "bounded_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "The binding content is the raw per-b t-values on the cached sweep and the runner's report that there are not enough falling-tail points for a review-safe power-law fit.",
+          "ratified_load_bearing_step_class": "C",
+          "ratified_verdict": "audited_conditional",
+          "second_auditor_error": "none",
+          "sided_with": "second"
+        },
+        {
+          "auditor": "codex-judicial-3-20260722-1cca5064",
+          "first_auditor_error": "It treated computation from a stipulated generated-DAG model as first-principles framework closure. The packet does not derive the runner's field, propagation/action, geometry, or centroid readout from the accepted axioms, which expressly omit such dynamics and observable bridges.",
+          "hybrid_resolution_note": null,
+          "judge": 3,
+          "judgment_rationale": "The runner genuinely computes the six descriptive rows and emits the no-fit report because the positive maximum lies at the sampled endpoint, but that verifies only the stipulated software model. The restricted packet supplies no framework-to-runner bridge for the hard-coded field, propagation/action, geometry, or centroid observable, so retained scientific closure is conditional.",
+          "negative_assertion_classes": [
+            "bounded_with_named_walls",
+            "stretch_attempt_negative"
+          ],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: supply retained derivations of the field, propagation/action, geometry, and detector-centroid prescriptions from the framework baseline, or narrow the artifact explicitly to a stipulated software-output certificate with no gravity interpretation and add a dated downstream-hygiene line to this note's boundary.",
+          "ratified_claim_scope": "On the stipulated generated-DAG runner and cached b-window, the six t-values are descriptive and the code reports no review-safe falling-tail fit; no significance or physical force-law claim is audited.",
+          "ratified_claim_type": "bounded_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "The binding content is the raw per-b t-values on the cached sweep and the runner's report that there are not enough falling-tail points for a review-safe power-law fit.",
+          "ratified_load_bearing_step_class": "C",
+          "ratified_verdict": "audited_conditional",
+          "second_auditor_error": "none",
+          "sided_with": "second"
+        },
+        {
+          "auditor": "codex-judicial-4-20260722-4547a2d4",
+          "first_auditor_error": "It treated computation within a stipulated runner as first-principles framework closure, despite the packet stating that the load-bearing step must derive from an axiom and providing no derivation of the runner's field, propagation/action, geometry, or centroid readout prescriptions from the framework baseline.",
+          "hybrid_resolution_note": null,
+          "judge": 4,
+          "judgment_rationale": "The runner source genuinely computes the six reported rows and its endpoint peak causes the no-fit message, so class C correctly describes the computational step rather than a renaming or hard-coded match. However, the packet supplies no authority or axiom-level derivation for the runner's continuous random DAG, BETA/K band, 0.1/r field, action formula, barrier/slit construction, or centroid observable. The result therefore closes only as output of the stipulated model and remains conditional as a framework scientific claim.",
+          "negative_assertion_classes": [
+            "bounded_with_named_walls",
+            "stretch_attempt_negative"
+          ],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: supply retained derivations of the field, propagation/action, geometry, and detector-centroid prescriptions from the framework baseline, or narrow the artifact explicitly to a stipulated software-output certificate with no gravity interpretation and add a dated downstream-hygiene line to this note's boundary.",
+          "ratified_claim_scope": "On the stipulated generated-DAG runner and cached b-window, the six t-values are descriptive and the code reports no review-safe falling-tail fit; no significance or physical force-law claim is audited.",
+          "ratified_claim_type": "bounded_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "The binding content is the raw per-b t-values on the cached sweep and the runner's report that there are not enough falling-tail points for a review-safe power-law fit.",
+          "ratified_load_bearing_step_class": "C",
+          "ratified_verdict": "audited_conditional",
+          "second_auditor_error": "none",
+          "sided_with": "second"
+        },
+        {
+          "auditor": "codex-judicial-5-20260722-5b852d8f",
+          "first_auditor_error": "It treated computation inside a stipulated model as framework-derived closure and omitted the note\u2019s bounded negative assertions, despite the packet providing no derivation of the field, propagation, geometry, or centroid readout from accepted premises.",
+          "hybrid_resolution_note": null,
+          "judge": 5,
+          "judgment_rationale": "The runner genuinely computes and reproduces the cached rows, but that establishes only conditional output of its stipulated generated-DAG model. Because the restricted packet supplies no framework-to-runner bridge for the field, action, geometry, and readout choices, the bounded scientific chain does not close at audited-clean grade.",
+          "negative_assertion_classes": [
+            "bounded_with_named_walls",
+            "stretch_attempt_negative"
+          ],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: supply retained derivations of the field, propagation/action, geometry, and detector-centroid prescriptions from the framework baseline, or narrow the artifact explicitly to a stipulated software-output certificate with no gravity interpretation and add a dated downstream-hygiene line to this note's boundary.",
+          "ratified_claim_scope": "On the stipulated generated-DAG runner and cached b-window, the six t-values are descriptive and the code reports no review-safe falling-tail fit; no significance or physical force-law claim is audited.",
+          "ratified_claim_type": "bounded_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "The binding content is the raw per-b t-values on the cached sweep and the runner's report that there are not enough falling-tail points for a review-safe power-law fit.",
+          "ratified_load_bearing_step_class": "C",
+          "ratified_verdict": "audited_conditional",
+          "second_auditor_error": "none",
+          "sided_with": "second"
+        }
+      ]
+    },
+    "mode": "judicial_panel_majority",
     "second_audit": {
       "audit_date": "2026-07-22T18:23:13.486447+00:00",
       "audit_invocation_id": "8dea8d574f7c4927948eb21ed01ae335",
@@ -83,26 +279,51 @@
       "verdict": "audited_conditional",
       "verdict_rationale": "The supplied stdout reproduces all six rows, and the source computes them rather than printing expected constants; its peak/tail branch emits the no-fit message because the positive maximum is at the endpoint. Nevertheless, class-C clean closure from the framework baseline is absent: the continuous random DAG, BETA/K band, 0.1/r field, action formula, barrier/slit choices, and centroid readout are stipulated in code and are not derived from any supplied axiom or retained authority. Accordingly, the result is usable only as conditional software/model output, not as a framework-derived gravity statement. For N1\u2013N8, dynamics, normalization, observable, and lattice-scale alternatives remain untested; the independent wall is the missing framework-to-runner bridge; the note's boundary and registration language is disclosure; no prior residual witness or indexed partial-closure or cross-cycle candidate closes the gap; and no independent steelman or five-resolution rhetoric test is supplied."
     },
-    "status": "disagreement"
+    "status": "third_confirmed_second",
+    "third_audit": {
+      "audit_date": "2026-07-22T18:35:32.826985+00:00",
+      "audit_invocation_id": "53980d6f5df44529abf572b49cbb45fb",
+      "auditor": "codex-judicial-1-20260722-6748e9d0",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "claim_scope": "On the stipulated generated-DAG runner and cached b-window, the six t-values are descriptive and the code reports no review-safe falling-tail fit; no significance or physical force-law claim is audited.",
+      "claim_type": "bounded_theorem",
+      "first_auditor_error": "The first position mistakes faithful computation inside a stipulated model for first-principles closure from the framework baseline. The packet\u2019s axioms do not supply the runner\u2019s continuous random DAG, BETA/K band, 0.1/r field, propagation/action rule, barrier geometry, or centroid readout, so reproducing stdout cannot by itself earn audited_clean.",
+      "independence": "judicial_review",
+      "judgment_rationale": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The runner genuinely computes the six rows and endpoint-peak tail diagnostic, so class C and a bounded theorem remain appropriate. However, the minimal-axiom authority expressly withholds dynamics, weights, source/action, and physical-observable bridges, while the runner stipulates each of those ingredients. The result therefore closes only conditionally as software/model output and not as a framework-derived gravity statement.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260722-6748e9d0\", \"judge\": 1, \"rationale\": \"The runner genuinely computes the six rows and endpoint-peak tail diagnostic, so class C and a bounded theorem remain appropriate. However, the minimal-axiom authority expressly withholds dynamics, weights, source/action, and physical-observable bridges, while the runner stipulates each of those ingredients. The result therefore closes only conditionally as software/model output and not as a framework-derived gravity statement.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"On the stipulated generated-DAG runner and cached b-window, the six t-values are descriptive and the code reports no review-safe falling-tail fit; no significance or physical force-law claim is audited.\", \"C\", null, [\"bounded_with_named_walls\", \"stretch_attempt_negative\"]]}, {\"auditor\": \"codex-judicial-2-20260722-b4882c45\", \"judge\": 2, \"rationale\": \"The source and helper code genuinely compute the six rows and the endpoint-peak branch genuinely produces the no-fit report. However, the continuous generated DAG, BETA/K band, 0.1/r field, propagation action, barrier/slit construction, and centroid observable are stipulated rather than derived from any supplied framework premise, so the result closes only as conditional software/model output.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"On the stipulated generated-DAG runner and cached b-window, the six t-values are descriptive and the code reports no review-safe falling-tail fit; no significance or physical force-law claim is audited.\", \"C\", null, [\"bounded_with_named_walls\", \"stretch_attempt_negative\"]]}, {\"auditor\": \"codex-judicial-3-20260722-1cca5064\", \"judge\": 3, \"rationale\": \"The runner genuinely computes the six descriptive rows and emits the no-fit report because the positive maximum lies at the sampled endpoint, but that verifies only the stipulated software model. The restricted packet supplies no framework-to-runner bridge for the hard-coded field, propagation/action, geometry, or centroid observable, so retained scientific closure is conditional.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"On the stipulated generated-DAG runner and cached b-window, the six t-values are descriptive and the code reports no review-safe falling-tail fit; no significance or physical force-law claim is audited.\", \"C\", null, [\"bounded_with_named_walls\", \"stretch_attempt_negative\"]]}, {\"auditor\": \"codex-judicial-4-20260722-4547a2d4\", \"judge\": 4, \"rationale\": \"The runner source genuinely computes the six reported rows and its endpoint peak causes the no-fit message, so class C correctly describes the computational step rather than a renaming or hard-coded match. However, the packet supplies no authority or axiom-level derivation for the runner's continuous random DAG, BETA/K band, 0.1/r field, action formula, barrier/slit construction, or centroid observable. The result therefore closes only as output of the stipulated model and remains conditional as a framework scientific claim.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"On the stipulated generated-DAG runner and cached b-window, the six t-values are descriptive and the code reports no review-safe falling-tail fit; no significance or physical force-law claim is audited.\", \"C\", null, [\"bounded_with_named_walls\", \"stretch_attempt_negative\"]]}, {\"auditor\": \"codex-judicial-5-20260722-5b852d8f\", \"judge\": 5, \"rationale\": \"The runner genuinely computes and reproduces the cached rows, but that establishes only conditional output of its stipulated generated-DAG model. Because the restricted packet supplies no framework-to-runner bridge for the field, action, geometry, and readout choices, the bounded scientific chain does not close at audited-clean grade.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"On the stipulated generated-DAG runner and cached b-window, the six t-values are descriptive and the code reports no review-safe falling-tail fit; no significance or physical force-law claim is audited.\", \"C\", null, [\"bounded_with_named_walls\", \"stretch_attempt_negative\"]]}]",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "stretch_attempt_negative"
+      ],
+      "second_auditor_error": "none",
+      "sided_with": "second",
+      "verdict": "audited_conditional"
+    }
   },
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 3,
-  "effective_status": "audit_in_progress",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [
     "scripts/generative_causal_dag_interference.py"
   ],
-  "independence": null,
-  "intrinsic_status": "audit_in_progress",
+  "independence": "judicial_review",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 10.992,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The binding content is the raw per-b t-values on the cached sweep and the runner's report that there are not enough falling-tail points for a review-safe power-law fit.",
+  "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls",
+    "stretch_attempt_negative"
+  ],
   "note_hash": "d7814ad7bf67709f7aa7950db90bcb51ac14fb5f22a13c94834a27d77ecdd5d7",
   "note_path": "docs/GRAVITY_LAW_CLEANUP_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "missing_bridge_theorem: supply retained derivations of the field, propagation/action, geometry, and detector-centroid prescriptions from the framework baseline, or narrow the artifact explicitly to a stipulated software-output certificate with no gravity interpretation and add a dated downstream-hygiene line to this note's boundary.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -334,5 +555,5 @@
   "runner_path": "scripts/gravity_distance_fixed_geometry.py",
   "title": "Gravity Law Cleanup Note",
   "transitive_descendants": 719,
-  "verdict_rationale": null
+  "verdict_rationale": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The runner genuinely computes the six rows and endpoint-peak tail diagnostic, so class C and a bounded theorem remain appropriate. However, the minimal-axiom authority expressly withholds dynamics, weights, source/action, and physical-observable bridges, while the runner stipulates each of those ingredients. The result therefore closes only conditionally as software/model output and not as a framework-derived gravity statement.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260722-6748e9d0\", \"judge\": 1, \"rationale\": \"The runner genuinely computes the six rows and endpoint-peak tail diagnostic, so class C and a bounded theorem remain appropriate. However, the minimal-axiom authority expressly withholds dynamics, weights, source/action, and physical-observable bridges, while the runner stipulates each of those ingredients. The result therefore closes only conditionally as software/model output and not as a framework-derived gravity statement.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"On the stipulated generated-DAG runner and cached b-window, the six t-values are descriptive and the code reports no review-safe falling-tail fit; no significance or physical force-law claim is audited.\", \"C\", null, [\"bounded_with_named_walls\", \"stretch_attempt_negative\"]]}, {\"auditor\": \"codex-judicial-2-20260722-b4882c45\", \"judge\": 2, \"rationale\": \"The source and helper code genuinely compute the six rows and the endpoint-peak branch genuinely produces the no-fit report. However, the continuous generated DAG, BETA/K band, 0.1/r field, propagation action, barrier/slit construction, and centroid observable are stipulated rather than derived from any supplied framework premise, so the result closes only as conditional software/model output.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"On the stipulated generated-DAG runner and cached b-window, the six t-values are descriptive and the code reports no review-safe falling-tail fit; no significance or physical force-law claim is audited.\", \"C\", null, [\"bounded_with_named_walls\", \"stretch_attempt_negative\"]]}, {\"auditor\": \"codex-judicial-3-20260722-1cca5064\", \"judge\": 3, \"rationale\": \"The runner genuinely computes the six descriptive rows and emits the no-fit report because the positive maximum lies at the sampled endpoint, but that verifies only the stipulated software model. The restricted packet supplies no framework-to-runner bridge for the hard-coded field, propagation/action, geometry, or centroid observable, so retained scientific closure is conditional.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"On the stipulated generated-DAG runner and cached b-window, the six t-values are descriptive and the code reports no review-safe falling-tail fit; no significance or physical force-law claim is audited.\", \"C\", null, [\"bounded_with_named_walls\", \"stretch_attempt_negative\"]]}, {\"auditor\": \"codex-judicial-4-20260722-4547a2d4\", \"judge\": 4, \"rationale\": \"The runner source genuinely computes the six reported rows and its endpoint peak causes the no-fit message, so class C correctly describes the computational step rather than a renaming or hard-coded match. However, the packet supplies no authority or axiom-level derivation for the runner's continuous random DAG, BETA/K band, 0.1/r field, action formula, barrier/slit construction, or centroid observable. The result therefore closes only as output of the stipulated model and remains conditional as a framework scientific claim.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"On the stipulated generated-DAG runner and cached b-window, the six t-values are descriptive and the code reports no review-safe falling-tail fit; no significance or physical force-law claim is audited.\", \"C\", null, [\"bounded_with_named_walls\", \"stretch_attempt_negative\"]]}, {\"auditor\": \"codex-judicial-5-20260722-5b852d8f\", \"judge\": 5, \"rationale\": \"The runner genuinely computes and reproduces the cached rows, but that establishes only conditional output of its stipulated generated-DAG model. Because the restricted packet supplies no framework-to-runner bridge for the field, action, geometry, and readout choices, the bounded scientific chain does not close at audited-clean grade.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"On the stipulated generated-DAG runner and cached b-window, the six t-values are descriptive and the code reports no review-safe falling-tail fit; no significance or physical force-law claim is audited.\", \"C\", null, [\"bounded_with_named_walls\", \"stretch_attempt_negative\"]]}]"
 }

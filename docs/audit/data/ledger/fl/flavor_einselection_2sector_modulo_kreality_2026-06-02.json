@@ -1,42 +1,93 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-21T19:04:25.620489+00:00",
+  "audit_invocation_history": [
+    "988cc8fa0d8b46d9932fbe61e342cc61"
+  ],
+  "audit_invocation_id": "988cc8fa0d8b46d9932fbe61e342cc61",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 6,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/flavor_einselection_2sector_modulo_kreality_2026_06_02.py"
+    },
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 15.543,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "c7fcaca394bf2438a6e64b84f8b26130d485232c1f5416ee74ceb76832e88656",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/flavor_einselection_2sector_modulo_kreality_2026_06_02.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "c558fc452e6788916ab0f8d625f8cecb011d5157db090b0785a37cb82bbd84f2",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "c558fc452e6788916ab0f8d625f8cecb011d5157db090b0785a37cb82bbd84f2",
+    "runner_path": "scripts/flavor_einselection_2sector_modulo_kreality_2026_06_02.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 745
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-B-20260721-6d65f016",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The algebraic partition and block-diagonal no-op subclaims close, but the restricted packet neither derives K-reality/nontrivial monitoring nor supplies a physical bridge mapping Born block weights to the parameter r.",
   "claim_id": "flavor_einselection_2sector_modulo_kreality_2026-06-02",
-  "claim_scope": null,
+  "claim_scope": "The conditional C3/K-real singlet-doublet pointer reduction, the block-dephasing no-op on r, and the Born-versus-block-counting weighting distinction.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint_after_invalidation",
+  "claim_type_last_reviewed": "2026-07-21T19:04:25.620489+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 12,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "fresh_context",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 15.545,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "A C\u2083-invariant and K-real monitored Hermitian observable lies in span_R{I,C+C\u00b2}, whose nontrivial component has eigenvalues {2,-1,-1}, isolating the singlet while leaving the doublet degenerate.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls",
+    "conditional_wall_rationale",
+    "derived_no_go_boundary"
+  ],
+  "no_go_discipline": null,
   "note_hash": "caea92c62c97fe5534aedcf9d8b88b48284ca20c185a87496402624b45753b03",
   "note_path": "docs/FLAVOR_EINSELECTION_2SECTOR_MODULO_KREALITY_2026-06-02.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "missing_bridge_theorem: derive and retain the physical K-reality/nontrivial-monitoring selector and an explicit mapping from Born block weights to r, then replace the finite-r check with a symbolic universal check.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -369,15 +420,24 @@
   ],
   "prose_corrections": [],
   "prose_status": "clean",
+  "restoration_history": [
+    {
+      "archived_at": "2026-07-21T19:09:26.935846+00:00",
+      "archived_audit_sha256": "73205b1e21e3ae85382453aa1b89df4d0f8fb070adb5191224fa20ee7fc76509",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "restoration_policy": "restore_overaggressive_invalidation.v2",
+      "restored_at": "2026-07-22T17:21:20.741266+00:00"
+    }
+  ],
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 5,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 5
   },
   "runner_path": "scripts/flavor_einselection_2sector_modulo_kreality_2026_06_02.py",
   "title": "Flavor \u2014 einselection reduces the *partition* half of the gate to K-reality (sound), but does NOT deliver r=1/2: H is already block-diagonal, and the genuine Born/thermalizing measure gives r=1, not r=1/2. Residual = two physical inputs (K-reality + the block-counting measure).",
   "transitive_descendants": 746,
-  "verdict_rationale": null
+  "verdict_rationale": "The commutant/eigenspace algebra is sound: a real Hermitian circulant cannot split the conjugate doublet, and C3 invariance gives P0HP1=0. The runner's five passes are algebraic checks, although B1 samples finitely many r values and B2 computes dimension weights and Q values without deriving their identification with r=1. The result therefore remains conditional on the unprovided K-reality and state-to-r bridge, while its negative conclusions are bounded to the stated C3/K-real matrix family."
 }

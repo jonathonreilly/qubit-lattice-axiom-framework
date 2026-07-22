@@ -1,24 +1,45 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-17T18:05:49.891586+00:00",
+  "audit_invocation_history": [
+    "23dd2123e28d4021bd0ebf5d694802c3"
+  ],
+  "audit_invocation_id": "23dd2123e28d4021bd0ebf5d694802c3",
+  "audit_state_snapshot": {
+    "criticality": "high",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16": "Bounded algebraic certificate for the displayed staggered parity, identity, and lapse operator forms on finite sites/rational test profiles; excludes external literature correctness, uniqueness, framework derivation, continuum/GR consequences, and gate closure."
+    },
+    "dep_claim_type": {
+      "staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16": "retained_bounded"
+    },
+    "deps": [
+      "staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 10.459,
+    "runner_hash": "cd6f3369f8a163536527828be220df13b433c3354fabc0935e7dc6b277a70688",
+    "transitive_descendants": 87
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-loop-recovery-12h-20260717-1a82dbf4d8c34421a6a1dc5b95565ba3-gravity_sign_audit_2026--001",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The runner closes the scoped finite identity/parity computation, but the source also asserts a floor- and domain-dependent lapse negative boundary without the required N1-N8 evidence. Splitting or fully auditing that assertion is required before the note-level chain closes.",
   "claim_id": "gravity_sign_audit_2026-04-10",
-  "claim_scope": null,
+  "claim_scope": "Finite configured 1D well/hill diagnostic for the stipulated identity and parity on-site Hamiltonian forms at n=61, mass=0.30, dt=0.12, steps=20.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint_after_invalidation",
+  "claim_type_last_reviewed": "2026-07-17T18:05:49.891586+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,19 +47,26 @@
     "staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16"
   ],
   "direct_in_degree": 8,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 10.459,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The runner verifies that the identity and parity evolutions conserve norm and produce identity TOWARD/TOWARD versus parity TOWARD/AWAY in the configured finite test.",
+  "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls",
+    "conditional_wall_rationale",
+    "derived_no_go_boundary",
+    "stretch_attempt_negative"
+  ],
+  "no_go_discipline": null,
   "note_hash": "4e898acbb165e8cf3645bcdbeed3aca71666f4b45f636fadcc66e23352a2e5c5",
   "note_path": "docs/GRAVITY_SIGN_AUDIT_2026-04-10.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "scope_too_broad: split the lapse negative-boundary assertions into a separate audited row and retain here only the identity/parity finite diagnostic; add a dated downstream-hygiene line to this note's own boundary stating that downstream users must not cite this row for lapse closure.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -435,15 +463,24 @@
   ],
   "prose_corrections": [],
   "prose_status": "clean",
+  "restoration_history": [
+    {
+      "archived_at": "2026-07-17T18:05:59.390435+00:00",
+      "archived_audit_sha256": "ba564b88abef7c7a606f24be3ce5a10ed173b5aeab76209d59cb0ed0d7181602",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "restoration_policy": "restore_overaggressive_invalidation.v2",
+      "restored_at": "2026-07-22T17:21:20.752671+00:00"
+    }
+  ],
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 9,
     "B": 0,
-    "C": 0,
+    "C": 8,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 17
   },
   "runner_path": "scripts/frontier_gravity_sign_well_hill_diagnostic.py",
   "title": "Gravity Sign Well/Hill Diagnostic",
   "transitive_descendants": 87,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: The 17 checks support the finite identity/parity result, but the same artifact substantively asserts a floor-dependent lapse negative boundary without a complete negative-claim packet. N1 evidences only the finite floor/weak-field route; N2 leaves the lapse positivity/regularization wall; N3 finds no hidden premise in the retained authority, N4 no matching prior witness, N5 no five-resolution live tests, N6 no indexed candidate that closes it, N7 no independently resolved steelman, and N8 no applicable echo supplying the missing evidence. Why this blocks: a clean verdict is forbidden when an asserted negative boundary fails the mandatory discipline even if excluded from PASS accounting. Repair target and claim boundary until fixed: separate the lapse discussion into its own open/no-go row with N1-N8 evidence, leaving this note limited to the computed configured identity/parity signs."
 }

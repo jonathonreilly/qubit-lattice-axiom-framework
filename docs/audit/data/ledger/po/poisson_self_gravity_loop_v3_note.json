@@ -1,44 +1,66 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-18T06:20:23.780620+00:00",
+  "audit_invocation_history": [
+    "0322367566cb4ada9a85894cfb212d76"
+  ],
+  "audit_invocation_id": "0322367566cb4ada9a85894cfb212d76",
+  "audit_state_snapshot": {
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {
+      "scripts/minimal_source_driven_field_probe.py": "16768d58d878f744a7092dca878fd2cb66f6bae8a73ada64ef3fd7e785208457"
+    },
+    "load_bearing_score": 11.508,
+    "runner_hash": "6f33585df07358cc2bc242c6ddff94846554e0fe94aafaecc0833c575f1a7a80",
+    "transitive_descendants": 727
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-loop-drain-ready-20260717-4dd943a7aebf4d66ac6ee9d8b9a4f186-poisson_self_gravity_loo-001",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The runner computes the nine shifts and six-step residuals, but those finite results do not establish general nonconvergence or the mechanism-level characterization. The propagation law, screened kernel, gain normalization, iteration cutoff, and selected observables are code-defined inputs rather than consequences of the supplied axioms.",
   "claim_id": "poisson_self_gravity_loop_v3_note",
-  "claim_scope": null,
+  "claim_scope": "Restricted finite-harness claim that nine nonzero-coupling rows show small matched-null shifts, miss the stated tolerance after six iterations, and therefore constitute a weak control rather than a self-gravity mechanism.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "needs_reaudit_after_invalidation",
+  "claim_type_last_reviewed": "2026-07-18T06:20:23.780620+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 4,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [
     "scripts/minimal_source_driven_field_probe.py"
   ],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 11.592,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Small centroid and phase-ramp shifts appear at nonzero coupling, but the matched-null loop does not converge cleanly enough to promote the tested family to a self-gravity mechanism.",
+  "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls",
+    "conditional_wall_rationale",
+    "derived_no_go_boundary",
+    "stretch_attempt_negative"
+  ],
+  "no_go_discipline": null,
   "note_hash": "da5b483741130bdccdb04b4753f00d7f8d50fd96f6c9a0fb896ffb2367cc2bef",
   "note_path": "docs/POISSON_SELF_GRAVITY_LOOP_V3_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "scope_too_broad: replace the mechanism and nonconvergence conclusions with a table-only finite-run statement of the nine shifts and six-step residuals, refresh the stale Born figures, and add a dated boundary line in this note disavowing general convergence or mechanism claims.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-fresh-context",
   "previous_audits": [
@@ -437,15 +459,24 @@
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
+  "restoration_history": [
+    {
+      "archived_at": "2026-07-18T06:20:39.756311+00:00",
+      "archived_audit_sha256": "c1be8ad44711a5395a502d7b926311408c3afa92c4732f9e3f9083e828850ec9",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "restoration_policy": "restore_overaggressive_invalidation.v2",
+      "restored_at": "2026-07-22T17:21:20.761769+00:00"
+    }
+  ],
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
-    "C": 0,
+    "C": 1,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 1
   },
   "runner_path": "scripts/poisson_self_gravity_loop_v3.py",
   "title": "Poisson Self-Gravity Loop V3 Note \u2014 Nonzero-Coupling Falsifier (Binding)",
   "transitive_descendants": 771,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: the live computation supports the printed finite rows, but N1/N7 leave stronger iteration, lattice-limit, alternative-dynamics, and alternative-observable routes untested, so the strongest steelman is unresolved. Why this blocks: N2 shows that small response and failure to meet tolerance are independent limitations; N3 exposes the kernel, gain, relaxation, cutoff, and readout as load-bearing model choices; N4 supplies no retained one-hop residual witness. N5 lacks per-element, per-site, per-mode, per-block, and lattice-wide live checks for the negative rhetoric, while N6 candidates do not derive the chosen dynamics and N8's similar self-gravity records are contextual rather than proof for this runner. Repair target and claim boundary until fixed: retain only the nine computed shifts and six-step residuals, derive or explicitly condition the model/readout choices, and do not infer general nonconvergence or mechanism exclusion."
 }

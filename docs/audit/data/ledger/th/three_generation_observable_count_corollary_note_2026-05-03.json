@@ -1,43 +1,96 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-21T15:37:49.318008+00:00",
+  "audit_invocation_history": [
+    "7725d797446f4f0d909deeae607e7e3f"
+  ],
+  "audit_invocation_id": "7725d797446f4f0d909deeae607e7e3f",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true,
+      "runner_path": "scripts/frontier_three_generation_observable_count_corollary.py"
+    },
+    "criticality": "high",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 11.781,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "c7fcaca394bf2438a6e64b84f8b26130d485232c1f5416ee74ceb76832e88656",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_three_generation_observable_count_corollary.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "09070c3f94208a84370d18d8eb08493dc1d8b442789b06328d050e3fd3ae087e",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "09070c3f94208a84370d18d8eb08493dc1d8b442789b06328d050e3fd3ae087e",
+    "runner_path": "scripts/frontier_three_generation_observable_count_corollary.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 109
+  },
+  "audit_status": "audited_failed",
+  "auditor": "codex-audit-batch-A-20260721-289d43c1",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The theorem does not require H_red or Q to be nonzero, so the zero quotient Q:C^3\u2192{0} satisfies generator descent but contradicts the conclusion. The proof and runner silently add the missing nonzero-target hypothesis.",
   "claim_id": "three_generation_observable_count_corollary_note_2026-05-03",
-  "claim_scope": null,
+  "claim_scope": "On H_hw=1=C^3, every linear quotient to H_red on which T_x, T_y, T_z, and C3[111] descend is asserted to be an isomorphism preserving count three.",
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem (corollary)",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint_after_invalidation",
+  "claim_type_last_reviewed": "2026-07-21T15:37:49.318008+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 10,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_failed",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_failed",
   "load_bearing_score": 11.82,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Any quotient preserving all retained generators has an invariant kernel, so irreducibility and a nonzero target force the kernel to vanish and preserve dimension three.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "derived_no_go_boundary",
+    "no_go_result"
+  ],
+  "no_go_discipline": null,
   "note_hash": "9ec850895c5a3066b691378c510ab7df4ec193f91e70984c6a16458a15179770",
   "note_path": "docs/THREE_GENERATION_OBSERVABLE_COUNT_COROLLARY_NOTE_2026-05-03.md",
-  "notes_for_re_audit_if_any": null,
-  "open_dependency_paths": [],
+  "notes_for_re_audit_if_any": "Re-audit after explicitly restricting the theorem and runner to nonzero quotients, replacing literal equality of spaces with isomorphism where intended, and supplying the two cited authority texts.",
+  "open_dependency_paths": [
+    "docs/THREE_GENERATION_STRUCTURE_NOTE.md",
+    "docs/THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md"
+  ],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
     {
@@ -920,15 +973,24 @@
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
+  "restoration_history": [
+    {
+      "archived_at": "2026-07-21T15:39:40.608361+00:00",
+      "archived_audit_sha256": "1d51dfb83eec96303d8b3e75cdc6a39c4f989be45abcd383482426c99d406b31",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "restoration_policy": "restore_overaggressive_invalidation.v2",
+      "restored_at": "2026-07-22T17:21:20.792526+00:00"
+    }
+  ],
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
+    "A": 21,
+    "B": 6,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 27
   },
   "runner_path": "scripts/frontier_three_generation_observable_count_corollary.py",
   "title": "Three-Generation Observable Count Corollary Note",
   "transitive_descendants": 112,
-  "verdict_rationale": null
+  "verdict_rationale": "The finite-dimensional implication is valid only after adding a nonzero-target hypothesis; as written, the zero quotient is a counterexample. The runner masks this defect by passing the claim that Q is nonzero with a literal True rather than deriving it from the theorem's hypotheses. The restricted packet also omits both authorities that the note says supply its orbit and operator-algebra inputs. N1/N7's zero-quotient stress test defeats the strongest claim; N2 has only that quotient wall, N3/N5 expose the unstated premise behind \u201cany quotient\u201d and \u201ccannot,\u201d N4 supplies no prior witness, and N6/N8 provide no candidate that inserts the missing quantifier."
 }

@@ -14,11 +14,11 @@
   "chain_closure_explanation": null,
   "claim_id": "dm_neutrino_weak_vector_theorem_note_2026-04-15",
   "claim_scope": null,
-  "claim_type": "bounded_theorem",
+  "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "needs_reaudit_after_invalidation",
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -5149,10 +5149,74 @@
         "total_pass": 18
       },
       "verdict_rationale": "Issue: The runner genuinely verifies the explicit Clifford packet, SU(2) closure, vector and Casimir relations, trace Gram matrices, and three rescalings, but it contains no derivation identifying this matrix SU(2) and Y_i with the physical electroweak-neutrino bridge and no second-order coefficient computation. Why this blocks: N1 tests only algebraic covariance and rescaling; N2 leaves the physical-carrier and suppression-law walls independent; N3 flags the source's sector, normalization, and obstruction language as carrying the unsupported extension; N4 supplies no matching prior witness; and N5 has no per-element, per-site, per-mode, per-block, or lattice-wide negative-resolution execution. N6's supplied premises and indexed candidates do not close either wall, N7's strongest rescaling steelman establishes only non-uniqueness under the displayed homogeneous equations, and N8's indexed echoes are either inapplicable or do not provide the missing electroweak bridge. Repair target: add a retained physical weak-sector bridge identification and an independent second-order-law authority, or narrow the note to the abstract finite-matrix statement; until then, the exact algebraic multiplet and its covariance rescaling invariance are the safe claim boundary."
+    },
+    {
+      "archived_at": "2026-07-22T17:21:27.042499+00:00",
+      "audit_date": "2026-07-18T03:34:12.100591+00:00",
+      "audit_invocation_history": [
+        "35e0108979de46da8e6d475cc32c39f8"
+      ],
+      "audit_invocation_id": "35e0108979de46da8e6d475cc32c39f8",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 10.719,
+        "runner_hash": "3da2fa02ce2b619ebf408dbfa0d1b4f9617d9c04fd313de2acc865d5bdf4d121",
+        "transitive_descendants": 842
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-drain-ready-20260717-66d68f87c684438a903579f6801b4901-dm_neutrino_weak_vector_-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite-matrix identities close algebraically, but the chain to the physical weak bridge and its second-order suppression law does not. A retained physical identification and an independent coefficient-law derivation are missing.",
+      "claim_scope": "The finite-matrix SU(2) vector identities and whether their homogeneity establishes that the physical neutrino bridge coefficient and second-order suppression law remain unfixed.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-18T03:34:12.100591+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "runner_hash_changed:3da2fa02->e92e0401",
+      "load_bearing_step": "For any scalar lambda, both the weak-vector commutator and Casimir equations remain valid for lambda Y_i, so covariance does not fix the absolute normalization.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale",
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained theorem identifying B_a and Y_i with the physical electroweak-neutrino bridge and either cite or compute the second-order suppression law; if the physical wording is instead narrowed, also add a dated downstream-hygiene line to this note's own boundary before re-audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "Issue: The runner genuinely verifies the explicit Clifford packet, SU(2) closure, vector and Casimir relations, trace Gram matrices, and three rescalings, but it contains no derivation identifying this matrix SU(2) and Y_i with the physical electroweak-neutrino bridge and no second-order coefficient computation. Why this blocks: N1 tests only algebraic covariance and rescaling; N2 leaves the physical-carrier and suppression-law walls independent; N3 flags the source's sector, normalization, and obstruction language as carrying the unsupported extension; N4 supplies no matching prior witness; and N5 has no per-element, per-site, per-mode, per-block, or lattice-wide negative-resolution execution. N6's supplied premises and indexed candidates do not close either wall, N7's strongest rescaling steelman establishes only non-uniqueness under the displayed homogeneous equations, and N8's indexed echoes are either inapplicable or do not provide the missing electroweak bridge. Repair target: add a retained physical weak-sector bridge identification and an independent second-order-law authority, or narrow the note to the abstract finite-matrix statement; until then, the exact algebraic multiplet and its covariance rescaling invariance are the safe claim boundary."
     }
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
+  "restoration_history": [
+    {
+      "archived_at": "2026-07-18T03:34:25.281379+00:00",
+      "archived_audit_sha256": "2c9aaf900c541c5aacc959baf29c9aae61af58d4eba8c3a03c4cf6a128bf443c",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "restoration_policy": "restore_overaggressive_invalidation.v2",
+      "restored_at": "2026-07-22T17:21:20.740754+00:00"
+    }
+  ],
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

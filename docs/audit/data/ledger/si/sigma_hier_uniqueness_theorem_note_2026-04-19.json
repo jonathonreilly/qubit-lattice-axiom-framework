@@ -1,24 +1,45 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-17T18:19:28.056555+00:00",
+  "audit_invocation_history": [
+    "629cc4e5b65b440695f91c7595131402"
+  ],
+  "audit_invocation_id": "629cc4e5b65b440695f91c7595131402",
+  "audit_state_snapshot": {
+    "criticality": "high",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "neutrino_dirac_pmns_retained_lane_packet_2026-04-16": null
+    },
+    "dep_claim_type": {
+      "neutrino_dirac_pmns_retained_lane_packet_2026-04-16": "meta"
+    },
+    "dep_effective_status": {
+      "neutrino_dirac_pmns_retained_lane_packet_2026-04-16": "meta"
+    },
+    "deps": [
+      "neutrino_dirac_pmns_retained_lane_packet_2026-04-16"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 9.804,
+    "runner_hash": "fa68d56412f3e244bca4f2f49705a40bd4591285d9b4cd21da41197d0271f5e0",
+    "transitive_descendants": 78
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-loop-recovery-12h-20260717-506c038ff1f74539a31829ca33854964-sigma_hier_uniqueness_th-001",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "At the supplied pin, the runner eigendecomposes H, enumerates all six row permutations, finds exactly two magnitude-passers, and applies the supplied sign cut to leave one. It does not independently derive the pairing-conditioned pin or either observational comparator.",
   "claim_id": "sigma_hier_uniqueness_theorem_note_2026-04-19",
-  "claim_scope": null,
+  "claim_scope": "At the pinned PMNS chamber point (m_*, delta_*, q_+*)=(0.657061, 0.933806, 0.715042), the S3 hierarchy pairing sigma=(2,1,0) is the unique permutation satisfying the runner's NuFit 5.3 NO magnitude windows and the imposed sin(delta_CP)<0 comparator, with chamber-wide uniqueness and derivation of the pin/A-BCC out of scope.",
   "claim_type": "open_gate",
   "claim_type_author_hint": "open_gate",
   "claim_type_author_hint_raw": "open_gate",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint_after_invalidation",
+  "claim_type_last_reviewed": "2026-07-17T18:19:28.056555+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,20 +47,26 @@
     "neutrino_dirac_pmns_retained_lane_packet_2026-04-16"
   ],
   "direct_in_degree": 7,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 9.804,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The 9/9 magnitude filter leaves (2,0,1) and (2,1,0), and applying the supplied sin(delta_CP)<0 comparator uniquely retains (2,1,0).",
+  "load_bearing_step_class": "D",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "conditional_wall_rationale"
+  ],
+  "no_go_discipline": null,
   "note_hash": "b3a707a8bb923ed20cd08ea944df2e27c75ecf720d9e4c6c10ab2c417e040dda",
   "note_path": "docs/SIGMA_HIER_UNIQUENESS_THEOREM_NOTE_2026-04-19.md",
-  "notes_for_re_audit_if_any": null,
-  "open_dependency_paths": [],
+  "notes_for_re_audit_if_any": "missing_bridge_theorem: provide an independent pairing-free derivation of the chamber pin and a retained CP-sign selector, then rerun and re-audit the six-permutation table.",
+  "open_dependency_paths": [
+    "docs/NEUTRINO_DIRAC_PMNS_RETAINED_LANE_PACKET_2026-04-16.md"
+  ],
   "previous_audits": [
     {
       "archived_at": "2026-04-29T23:15:46.070588+00:00",
@@ -222,15 +249,24 @@
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
+  "restoration_history": [
+    {
+      "archived_at": "2026-07-17T18:19:43.197540+00:00",
+      "archived_audit_sha256": "8316338c9f83f40fc49169384a80ba4ee53b11398b486f9369cbbfde95ecb857",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "restoration_policy": "restore_overaggressive_invalidation.v2",
+      "restored_at": "2026-07-22T17:21:20.780403+00:00"
+    }
+  ],
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 15,
     "B": 0,
     "C": 0,
-    "D": 0,
-    "total_pass": 0
+    "D": 18,
+    "total_pass": 33
   },
   "runner_path": "scripts/frontier_sigma_hier_uniqueness_theorem.py",
   "title": "\u03c3_hier Supplied-Input Selection Replay",
   "transitive_descendants": 78,
-  "verdict_rationale": null
+  "verdict_rationale": "The runner genuinely evaluates the hard-coded H at the supplied pin, enumerates S3, and checks the hard-coded NuFit windows and sign comparator; its 33/0 result supports the finite conditional table, not a framework-internal derivation. The load-bearing operation is class D because the unique survivor is determined by supplied observational comparators, while the pin was constructed using the target pairing. The only one-hop authority is meta and explicitly reports no positive sole-axiom PMNS closure, so the result remains audited_conditional. For the note's narrower negative aside, N1 supplies no route-exhaustion campaign, N2 has only the stated nonselection wall, N3 makes the pin/windows/sign inputs explicit, N4 supplies no residual witness, N5 is predominantly scope hygiene, N6 supplies no selector-closing candidate, N7 has no independently resolved steelman, and N8's indexed echoes are unrelated; therefore the aside is conditional_wall_rationale rather than an audited no-go."
 }

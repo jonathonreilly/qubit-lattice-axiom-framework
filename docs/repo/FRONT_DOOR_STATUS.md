@@ -32,16 +32,16 @@ Owner-approval history for axioms and primitives:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3852 |
-| Applied audit verdicts | 470 |
+| Applied audit verdicts | 499 |
 | Retained-grade rows, including boxed decorations | 412 |
 | Retained positive theorems | 87 |
 | Retained no-go rows | 0 |
 | Retained bounded rows | 309 |
 | Boxed decorations under retained parents | 16 |
 | Open gates | 2 |
-| Unaudited rows | 3014 |
+| Unaudited rows | 2985 |
 | Retained-pending-chain rows | 5 |
-| Audited conditional rows | 26 |
+| Audited conditional rows | 50 |
 | Audited renaming rows | 16 |
 | Audited numerical-match rows | 6 |
 | Citation cycles detected | 58 |
@@ -64,14 +64,14 @@ Full audit-ratified row list: [`docs/repo/RETAINED_BACKBONE.md`](RETAINED_BACKBO
 
 Next ready rows by queue order:
 
-- [`cl3_complexification_split_narrow_theorem_note_2026-05-10`](../../docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; unaudited
-- [`cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10`](../../docs/CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; unaudited
+- [`cl3_complexification_split_narrow_theorem_note_2026-05-10`](../../docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; non_terminal_failed
+- [`cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10`](../../docs/CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; non_terminal_conditional
 - [`s3_mass_matrix_conditional_degeneracy_note_2026-07-11`](../../docs/S3_MASS_MATRIX_CONDITIONAL_DEGENERACY_NOTE_2026-07-11.md) - critical; non_terminal_conditional
-- [`clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10`](../../docs/CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; unaudited
+- [`clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10`](../../docs/CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; non_terminal_conditional
 - [`abj_epsilon_index_square_block_no_go_note_2026-05-30`](../../docs/ABJ_EPSILON_INDEX_SQUARE_BLOCK_NO_GO_NOTE_2026-05-30.md) - critical; unaudited
 - [`abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18`](../../docs/ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md) - critical; non_terminal_conditional
 - [`staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17`](../../docs/STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md) - critical; unaudited
-- [`s3_boundary_link_theorem_note`](../../docs/S3_BOUNDARY_LINK_THEOREM_NOTE.md) - critical; unaudited
+- [`s3_boundary_link_theorem_note`](../../docs/S3_BOUNDARY_LINK_THEOREM_NOTE.md) - critical; non_terminal_conditional
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
@@ -82,18 +82,18 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 244 |
-| high | `unaudited` | 173 |
+| critical | `unaudited` | 235 |
+| high | `unaudited` | 171 |
 | medium | `unaudited` | 129 |
+| critical | `audited_conditional` | 12 |
 | ? | `unresolved` | 4 |
-| critical | `audited_conditional` | 4 |
 | critical | `audited_renaming` | 2 |
+| high | `audited_conditional` | 2 |
 | critical | `audit_in_progress` | 1 |
+| critical | `audited_failed` | 1 |
 | critical | `audited_numerical_match` | 1 |
 | critical | `retained_pending_chain` | 1 |
-| high | `audited_conditional` | 1 |
-| high | `audited_numerical_match` | 1 |
-| medium | `audited_conditional` | 1 |
+| high | `audited_failed` | 1 |
 
 ## Dispatch Shadow Report (no dispatch effect)
 
@@ -105,16 +105,12 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 | Manifest pending removals | 0 |
 | Unmanifested candidates (need pending entries) | 0 |
 | Admitted ids absent from lane candidates | 14 |
-| Live conditional/failed rows that would park | 10 |
-| Live rows fail-open (legacy/unversioned snapshot) | 19 |
+| Live conditional/failed rows that would park | 0 |
+| Live rows fail-open (legacy/unversioned snapshot) | 42 |
 | Lane rows already in actual ready top-10 | 3 |
 | Lane rows added since prior pass | 0 |
-| Lane rows removed since prior pass | 2 |
+| Lane rows removed since prior pass | 0 |
 | Non-lane rows deferred by simulated interleave | 114 |
-
-Named lane membership churn since the prior pass:
-- removed: `ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26`
-- removed: `g_bare_rigidity_theorem_note`
 
 Admitted ids currently absent from lane candidates:
 - `bridge_gap_action_form_uniqueness_no_go_note_2026-05-06`

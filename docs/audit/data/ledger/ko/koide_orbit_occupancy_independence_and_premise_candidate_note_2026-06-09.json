@@ -1,59 +1,24 @@
 {
-  "audit_date": "2026-07-13T01:57:53.503308+00:00",
-  "audit_invocation_history": [
-    "b3f9a9086899c88b8c242f4a35de15c0"
-  ],
-  "audit_invocation_id": "b3f9a9086899c88b8c242f4a35de15c0",
-  "audit_state_snapshot": {
-    "criticality": "high",
-    "dep_axiom_premise_note_hash": {
-      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
-      "realized_state_primitive": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
-    },
-    "dep_claim_scope": {
-      "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04": null,
-      "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": null,
-      "minimal_axioms": null,
-      "realized_state_primitive": null
-    },
-    "dep_claim_type": {
-      "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04": "bounded_theorem",
-      "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
-      "minimal_axioms": "meta",
-      "realized_state_primitive": "meta"
-    },
-    "dep_effective_status": {
-      "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04": "unaudited",
-      "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "unaudited",
-      "minimal_axioms": "meta",
-      "realized_state_primitive": "meta"
-    },
-    "deps": [
-      "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04",
-      "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
-      "minimal_axioms",
-      "realized_state_primitive"
-    ],
-    "load_bearing_score": 11.248,
-    "runner_hash": "82023d87fec6dbad5a63e2b95d655369d6c85836128766a861f162d693d946a4",
-    "transitive_descendants": 37
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-loop",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The Gaussian integrals and aggregate fork close algebraically, but the direct Q-dictionary and K/CPT orbit-context dependencies are unaudited and therefore do not provide retained-grade chain closure.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
-  "claim_scope": "On the supplied two-orbit local bookkeeping surface, the stated Gaussian has r=1, while the supplied aggregate count n_d gives r=n_d/2 and Q=(1+n_d)/3 without selecting n_d.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-13T01:57:53.503308+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -64,336 +29,20 @@
     "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04"
   ],
   "direct_in_degree": 12,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "fresh_context",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 12.248,
-  "load_bearing_step": "Using E_s = 3a^2, E_d = 6|b|^2, E_s = epsilon, and E_d = n_d epsilon gives r = n_d/2 and Q = (1+n_d)/3.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "bounded_with_named_walls",
-    "derived_no_go_boundary"
-  ],
-  "no_go_discipline": {
-    "N1_alternative_routes": [
-      {
-        "attempt": "The current registry and minimal-axiom dependency boundary were checked directly for the proposed n_d rule.",
-        "disposition": "CLOSED",
-        "evidence_locator": "the proposed equipartition-granularity condition is absent from the approved premise registry",
-        "evidence_path": "audit-packet://runner-stdout/koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
-        "honesty_marker": "ATTEMPTED",
-        "mechanism": "The approved premise registry could already classify the aggregate counting rule as supplied authority.",
-        "outcome": "The registry contains only the four approved nodes and no aggregate equipartition-granularity premise, so this route is closed for the current packet.",
-        "route_class": "dependency_or_registry_reclassification",
-        "route_id": "registry_surface"
-      },
-      {
-        "attempt": "The realized-state primitive text was checked for a state value, averaging rule, or preferred condition.",
-        "disposition": "CLOSED",
-        "evidence_locator": "realized-state primitive supplies pointwise evaluation but no averaging or state-contingent value",
-        "evidence_path": "audit-packet://runner-stdout/koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
-        "honesty_marker": "ATTEMPTED",
-        "mechanism": "The realized state boundary could supply a pointwise state-contingent value of r or n_d.",
-        "outcome": "The primitive permits pointwise evaluation but supplies no state-contingent value, so it cannot select either horn.",
-        "route_class": "boundary_or_initial_condition",
-        "route_id": "realized_state_surface"
-      },
-      {
-        "attempt": "Both solution families were transported under b to omega b and b to conjugate(b) on the finite local carrier.",
-        "disposition": "CLOSED",
-        "evidence_locator": "both aggregate conditions are invariant under b -> omega b and b -> conjugate(b)",
-        "evidence_path": "audit-packet://runner-stdout/koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
-        "honesty_marker": "ATTEMPTED",
-        "mechanism": "The checked Z_3 and conjugation symmetry might distinguish the n_d=1 and n_d=2 aggregate relations.",
-        "outcome": "Both aggregate relations remain invariant under the same symmetry actions, so symmetry does not select one horn.",
-        "route_class": "symmetry_or_representation",
-        "route_id": "symmetry_surface"
-      },
-      {
-        "attempt": "Every disjoint subset pair of the two-cell readout algebra was enumerated for both aggregate horns.",
-        "disposition": "CLOSED",
-        "evidence_locator": "both two-cell witness readouts are finitely additive (all disjoint subsets)",
-        "evidence_path": "audit-packet://runner-stdout/koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
-        "honesty_marker": "ATTEMPTED",
-        "mechanism": "Finite Record readout additivity might force equal energies for the singlet and doublet outcome cells.",
-        "outcome": "Both readout assignments are finitely additive, so the observable additivity requirement does not fix their relative energies.",
-        "route_class": "alternate_observable_or_readout",
-        "route_id": "readout_surface"
-      },
-      {
-        "attempt": "Cartesian and polar integrals were compared and an arbitrary multiplicative normalization was inserted into numerator and denominator.",
-        "disposition": "CLOSED",
-        "evidence_locator": "a multiplicative measure normalization cancels from the normalized moment",
-        "evidence_path": "audit-packet://runner-stdout/koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
-        "honesty_marker": "ATTEMPTED",
-        "mechanism": "A Gaussian measure normalization or coordinate convention might change the normalized moment from r=1 to r=1/2.",
-        "outcome": "The coordinate forms agree and the normalization cancels, leaving the exact Gaussian moment r=1.",
-        "route_class": "normalization_or_units",
-        "route_id": "normalization_surface"
-      },
-      {
-        "attempt": "The restricted orbit carrier and supplied-context authority were checked separately from the energy bookkeeping.",
-        "disposition": "CLOSED",
-        "evidence_locator": "ORBIT-INDEXING and the determinant-character/log-character homomorphism boundary are supplied context structure",
-        "evidence_path": "docs/KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md",
-        "honesty_marker": "ATTEMPTED",
-        "mechanism": "The supplied K/CPT sector orbit indexing might itself equate the aggregate channel energies.",
-        "outcome": "The orbit sector labels provide two cells but no weighting, energy equality, or n_d value, so indexing alone does not select the horn.",
-        "route_class": "alternate_carrier_or_sector",
-        "route_id": "orbit_sector_surface"
-      },
-      {
-        "attempt": "The restricted packet was checked for such a retained theorem and the runner was inspected for a full lattice construction.",
-        "disposition": "CLOSED",
-        "evidence_locator": "A concrete realization of the Admissibility rule, record-production dynamics, or a physical readout/action bridge",
-        "evidence_path": "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
-        "honesty_marker": "ATTEMPTED",
-        "mechanism": "A concrete Admissibility, dynamics, or physical readout theorem could select the aggregate doublet counting unit.",
-        "outcome": "No such dynamics or effective action is present, and the scoped claim explicitly leaves that future route open rather than foreclosing it.",
-        "route_class": "dynamical_or_effective_action",
-        "route_id": "future_dynamics_surface"
-      }
-    ],
-    "N2_wall_independence": {
-      "collapsed_wall_set": [
-        "aggregate doublet counting unit n_d selection residual"
-      ],
-      "evidence_locator": "There is one selection residual after conditioning on the supplied orbit context: the aggregate doublet counting unit n_d.",
-      "evidence_path": "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
-      "pairwise_checks": [],
-      "unresolved": [],
-      "walls": [
-        "aggregate doublet counting unit n_d selection residual"
-      ]
-    },
-    "N3_hidden_wall_scan": {
-      "evidence_locator": "no standard-QFT, probability, dynamics, normalization, or physical-species bridge is hidden in the conclusion",
-      "evidence_path": "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
-      "hits": [
-        {
-          "classification": "non_load_bearing",
-          "evidence_locator": "a conditional algebraic fork and a source-text nonselection boundary",
-          "evidence_path": "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
-          "occurrence_count": 1,
-          "occurrence_group_id": "824c69a25d383a2a",
-          "occurrence_locator_sha256": "824c69a25d383a2abfb68306132674bbf72687ed23001caf9ef4e7a0b8bcec21",
-          "phrase": "boundary",
-          "rationale": "This occurrence labels the explicitly narrowed source-text conclusion and does not introduce a premise beyond the listed supplied context."
-        },
-        {
-          "classification": "non_load_bearing",
-          "evidence_locator": "A multiplicative normalization of the same measure cancels between numerator and denominator.",
-          "evidence_path": "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
-          "occurrence_count": 1,
-          "occurrence_group_id": "628a82b277e92750",
-          "occurrence_locator_sha256": "628a82b277e92750c98a66b046cf995ff03a845a05bf748561322071b08bb6e7",
-          "phrase": "normalization",
-          "rationale": "The occurrence is a tested cancellation of an arbitrary multiplicative factor and supplies no selected normalization or value."
-        },
-        {
-          "classification": "non_load_bearing",
-          "evidence_locator": "does not treat the condition as an existing primitive",
-          "evidence_path": "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
-          "occurrence_count": 1,
-          "occurrence_group_id": "d03c46497643dd3d",
-          "occurrence_locator_sha256": "d03c46497643dd3d08f4defee89a3786b5026fb4bdb17ac1e5a183a0cb9a4ee9",
-          "phrase": "primitive",
-          "rationale": "This occurrence expressly denies premise weight to the proposed condition and therefore does not silently import the missing selection rule."
-        }
-      ],
-      "none_found_reason": "",
-      "scan_scope": "The controlled hidden-premise phrases were checked across the source and both ordinary one-hop authorities; explicit accepted-premise notes were handled by the primitive registry check.",
-      "scanned_evidence_paths": [
-        "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
-        "docs/KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md",
-        "docs/KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md"
-      ],
-      "unresolved": []
-    },
-    "N4_residual_matching": {
-      "evidence_locator": "Historical PR numbers and failed campaign summaries are not used as load-bearing witnesses.",
-      "evidence_path": "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
-      "none_found_reason": "",
-      "scan_scope": "The premise and supplied-context citations were checked for whether they address the same n_d-selection residual asserted by the scoped source boundary.",
-      "scanned_evidence_paths": [
-        "docs/KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md",
-        "docs/MINIMAL_AXIOMS_2026-06-29.md",
-        "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
-        "docs/KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md"
-      ],
-      "unresolved": [],
-      "witnesses": [
-        {
-          "claim_evidence_locator": "the enumerated checked surface does not itself select n_d",
-          "claim_evidence_path": "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
-          "claim_residual": "whether the current restricted packet selects the aggregate doublet counting unit n_d",
-          "claim_residual_id": "residual:koide.nd_selection",
-          "evidence_locator": "A choice not fixed by the supplied structure remains a named conditional or open dependency.",
-          "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
-          "match": true,
-          "route_id": "registry_surface",
-          "witness_id": "minimal_axiom_selection_boundary",
-          "witness_residual": "whether the current restricted packet selects the aggregate doublet counting unit n_d",
-          "witness_residual_id": "residual:koide.nd_selection"
-        },
-        {
-          "claim_evidence_locator": "the enumerated checked surface does not itself select n_d",
-          "claim_evidence_path": "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
-          "claim_residual": "whether the current restricted packet selects the aggregate doublet counting unit n_d",
-          "claim_residual_id": "residual:koide.nd_selection",
-          "evidence_locator": "no state, averaging over alternatives, measure, weighting, probability rule",
-          "evidence_path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
-          "match": true,
-          "route_id": "realized_state_surface",
-          "witness_id": "realized_state_selection_boundary",
-          "witness_residual": "whether the current restricted packet selects the aggregate doublet counting unit n_d",
-          "witness_residual_id": "residual:koide.nd_selection"
-        },
-        {
-          "claim_evidence_locator": "Orbit indexing is an explicit upstream condition, not a second independent wall.",
-          "claim_evidence_path": "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
-          "claim_residual": "whether the current restricted packet selects the aggregate doublet counting unit n_d",
-          "claim_residual_id": "residual:koide.nd_selection",
-          "evidence_locator": "ORBIT-INDEXING and the determinant-character/log-character homomorphism boundary are supplied context structure.",
-          "evidence_path": "docs/KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md",
-          "match": true,
-          "route_id": "orbit_sector_surface",
-          "witness_id": "orbit_indexing_energy_boundary",
-          "witness_residual": "whether the current restricted packet selects the aggregate doublet counting unit n_d",
-          "witness_residual_id": "residual:koide.nd_selection"
-        }
-      ]
-    },
-    "N5_rhetoric_audit": {
-      "evidence_locator": "It does not claim a per-component, per-site, full-lattice, or dynamics-level no-go.",
-      "evidence_path": "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
-      "none_found_reason": "",
-      "scan_scope": "The scoped does-not-select statement and all per-element, per-site, per-mode, per-block, and lattice-wide readings were checked against the stated local boundary.",
-      "scanned_evidence_paths": [
-        "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md"
-      ],
-      "statements": [
-        {
-          "evidence_locator": "the enumerated checked surface does not itself select n_d",
-          "evidence_path": "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
-          "occurrence_count": 1,
-          "occurrence_group_id": "17873c8a8d938224",
-          "occurrence_locator_sha256": "17873c8a8d93822427b944e89511ddec08fec6bd703df8ef404e713dddca48b6",
-          "phrase": "does not",
-          "resolution_classes_checked": [
-            "per_element",
-            "per_site",
-            "per_mode",
-            "per_block",
-            "lattice_wide"
-          ],
-          "resolution_evidence_locator": "Scope boundaries",
-          "resolution_evidence_path": "audit-packet://runner-stdout/koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
-          "tested_resolutions": [
-            "per_element: the algebra checks the scalar energy and ratio equations only, without a componentwise fixed-basis exclusion.",
-            "per_site: the source constructs no lattice site model, and the negative statement is explicitly not promoted to a per-site theorem.",
-            "per_mode: the Gaussian a, x, and y coordinate moments are checked, while a future microscopic modal dynamics is not ruled out.",
-            "per_block: the singlet and doublet aggregate block relations are the exact finite surface on which nonselection is asserted.",
-            "lattice_wide: no full Z^3 realization or universal dynamics no-go is claimed, so the source boundary remains local and conditional."
-          ],
-          "untested_resolutions": []
-        }
-      ],
-      "unresolved": []
-    },
-    "N6_partial_closure_scan": {
-      "candidates": [
-        {
-          "addressed": true,
-          "affected_wall": "aggregate doublet counting unit n_d selection residual",
-          "candidate_id": "approved_primitive_realized_state",
-          "closure_mechanism": "The indexed basis pointwise evaluation at a supplied law-admissible realized state could close the wall only if it also supplied state-contingent content, which it expressly does not.",
-          "could_close_wall": false,
-          "disposition": "The aggregate doublet counting unit n_d selection residual remains because pointwise evaluation supplies no n_d value or selector.",
-          "evidence_locator": "This is pointwise evaluation, not a state-selection rule.",
-          "evidence_path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
-          "indexed_basis": "pointwise evaluation at a supplied law-admissible realized state",
-          "kind": "approved_primitive"
-        },
-        {
-          "addressed": true,
-          "affected_wall": "aggregate doublet counting unit n_d selection residual",
-          "candidate_id": "future_law_certificate",
-          "closure_mechanism": "A concrete Admissibility rule, record-production dynamics, or a physical readout/action bridge could distinguish the two horns and thereby close this local selection residual.",
-          "could_close_wall": true,
-          "disposition": "The aggregate doublet counting unit n_d selection residual is explicitly left open to that future certificate, so the narrow boundary does not misclassify it as a new axiom requirement.",
-          "evidence_locator": "A future retained derivation from a concrete Admissibility rule or dynamics could close it.",
-          "evidence_path": "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
-          "indexed_basis": "concrete Admissibility rule, record-production dynamics, or a physical readout/action bridge",
-          "kind": "open_gate"
-        }
-      ],
-      "evidence_locator": "Existing registered primitives are not counted as walls and do not supply the missing condition.",
-      "evidence_path": "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
-      "none_found_reason": "",
-      "premise_classes_checked": [
-        "axiom_or_approved_primitive",
-        "open_gate",
-        "convention_not_accepted",
-        "definition_or_scope_reframe"
-      ],
-      "scan_scope": "The axiom registry, approved realized-state primitive, open dynamics/readout theorem path, and convention-versus-physics distinction were checked.",
-      "unresolved": []
-    },
-    "N7_steelman": {
-      "argument": "A concrete Admissibility, dynamics, or physical readout theorem could select the aggregate doublet counting unit. The restricted packet was checked for such a retained theorem and the runner was inspected for a full lattice construction. A future microscopic construction could therefore pick n_d=1 and defeat any universal independence claim.",
-      "evidence_locator": "A concrete realization of the Admissibility rule, record-production dynamics, or a physical readout/action bridge could distinguish the two aggregate horns.",
-      "evidence_path": "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
-      "resolution": "The aggregate doublet counting unit n_d selection residual is asserted only for the enumerated current packet; the source expressly leaves future Admissibility, dynamics, and readout certificates open, so that steelman does not defeat the narrow source-text nonselection boundary.",
-      "resolution_evidence_locator": "Further physical structure requires a retained derivation or bridge",
-      "resolution_evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
-      "resolved": true,
-      "route_id": "future_dynamics_surface"
-    },
-    "N8_cross_cycle_echo": {
-      "echoes": [
-        {
-          "addressed": true,
-          "applicable": false,
-          "candidate_id": "kinetic_isotropy_primitive_reframe",
-          "disposition": "The mechanism explicit primitive approval can retire a similar missing-structure wall is addressed, but no reviewed approval registers n_d and the existing kinetic primitive has unrelated scope.",
-          "evidence_locator": "Explicitly approved framework primitive for the space-time kinetic-form isotropy",
-          "evidence_path": "docs/audit/data/axiom_premise_nodes.json",
-          "mechanism": "explicit primitive approval can retire a similar missing-structure wall",
-          "retired": null
-        },
-        {
-          "addressed": true,
-          "applicable": true,
-          "candidate_id": "realized_state_interface_clarification",
-          "disposition": "The mechanism realized-state interface clarifies evaluation without supplying selection data is applicable and already addressed: it permits evaluation but cannot choose n_d.",
-          "evidence_locator": "This is pointwise evaluation, not a state-selection rule.",
-          "evidence_path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
-          "mechanism": "realized-state interface clarifies evaluation without supplying selection data",
-          "retired": null
-        }
-      ],
-      "evidence_locator": "Similar structural gaps have sometimes been resolved by explicit primitive approval",
-      "evidence_path": "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
-      "none_found_reason": "",
-      "packet_complete": true,
-      "unresolved": []
-    },
-    "failures": [],
-    "required": true,
-    "status": "PASS"
-  },
   "note_hash": "bcfc11d07a3dd4594663539324a631120e2ed7a29bc05a39fed551701f091769",
   "note_path": "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
-  "notes_for_re_audit_if_any": "dependency_not_retained: audit the direct Q-dictionary and K/CPT supplied-context dependencies first, then recheck the same Gaussian/fork scope without expanding it to a full-lattice selection theorem.",
-  "open_dependency_paths": [
-    "docs/KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md",
-    "docs/KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md"
-  ],
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
   "previous_audits": [
     {
       "archived_at": "2026-06-30T15:13:04.501344+00:00",
@@ -697,19 +346,406 @@
         "total_pass": 34
       },
       "verdict_rationale": "Issue: the holomorphic cell's claimed r=1/2 is inconsistent with its displayed radial Gaussian measure, because that complex measure has two real quadratic degrees of freedom. Why this blocks: the rho orientation and assertion that the witnesses differ exactly by occupancy are not derived; the runner instead hard-codes the disputed equipartition assignment and marks several model-consistency conditions True. Repair target: derive both models using a common action/measure normalization and executable checks of every shared constraint, or remove the unsupported r/Q consequence map. Claim boundary until fixed: the axioms do not themselves name an occupancy rule, but this packet does not prove the stated two-horn numerical independence certificate."
+    },
+    {
+      "archived_at": "2026-07-22T17:21:36.028413+00:00",
+      "audit_date": "2026-07-13T01:57:53.503308+00:00",
+      "audit_invocation_history": [
+        "b3f9a9086899c88b8c242f4a35de15c0"
+      ],
+      "audit_invocation_id": "b3f9a9086899c88b8c242f4a35de15c0",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+          "realized_state_primitive": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+        },
+        "dep_claim_scope": {
+          "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04": null,
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": null,
+          "minimal_axioms": null,
+          "realized_state_primitive": null
+        },
+        "dep_claim_type": {
+          "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04": "bounded_theorem",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta",
+          "realized_state_primitive": "meta"
+        },
+        "dep_effective_status": {
+          "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04": "unaudited",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "unaudited",
+          "minimal_axioms": "meta",
+          "realized_state_primitive": "meta"
+        },
+        "deps": [
+          "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "minimal_axioms",
+          "realized_state_primitive"
+        ],
+        "load_bearing_score": 11.248,
+        "runner_hash": "82023d87fec6dbad5a63e2b95d655369d6c85836128766a861f162d693d946a4",
+        "transitive_descendants": 37
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Gaussian integrals and aggregate fork close algebraically, but the direct Q-dictionary and K/CPT orbit-context dependencies are unaudited and therefore do not provide retained-grade chain closure.",
+      "claim_scope": "On the supplied two-orbit local bookkeeping surface, the stated Gaussian has r=1, while the supplied aggregate count n_d gives r=n_d/2 and Q=(1+n_d)/3 without selecting n_d.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-13T01:57:53.503308+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04:unaudited->audited_conditional",
+      "load_bearing_step": "Using E_s = 3a^2, E_d = 6|b|^2, E_s = epsilon, and E_d = n_d epsilon gives r = n_d/2 and Q = (1+n_d)/3.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "The current registry and minimal-axiom dependency boundary were checked directly for the proposed n_d rule.",
+            "disposition": "CLOSED",
+            "evidence_locator": "the proposed equipartition-granularity condition is absent from the approved premise registry",
+            "evidence_path": "audit-packet://runner-stdout/koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "The approved premise registry could already classify the aggregate counting rule as supplied authority.",
+            "outcome": "The registry contains only the four approved nodes and no aggregate equipartition-granularity premise, so this route is closed for the current packet.",
+            "route_class": "dependency_or_registry_reclassification",
+            "route_id": "registry_surface"
+          },
+          {
+            "attempt": "The realized-state primitive text was checked for a state value, averaging rule, or preferred condition.",
+            "disposition": "CLOSED",
+            "evidence_locator": "realized-state primitive supplies pointwise evaluation but no averaging or state-contingent value",
+            "evidence_path": "audit-packet://runner-stdout/koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "The realized state boundary could supply a pointwise state-contingent value of r or n_d.",
+            "outcome": "The primitive permits pointwise evaluation but supplies no state-contingent value, so it cannot select either horn.",
+            "route_class": "boundary_or_initial_condition",
+            "route_id": "realized_state_surface"
+          },
+          {
+            "attempt": "Both solution families were transported under b to omega b and b to conjugate(b) on the finite local carrier.",
+            "disposition": "CLOSED",
+            "evidence_locator": "both aggregate conditions are invariant under b -> omega b and b -> conjugate(b)",
+            "evidence_path": "audit-packet://runner-stdout/koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "The checked Z_3 and conjugation symmetry might distinguish the n_d=1 and n_d=2 aggregate relations.",
+            "outcome": "Both aggregate relations remain invariant under the same symmetry actions, so symmetry does not select one horn.",
+            "route_class": "symmetry_or_representation",
+            "route_id": "symmetry_surface"
+          },
+          {
+            "attempt": "Every disjoint subset pair of the two-cell readout algebra was enumerated for both aggregate horns.",
+            "disposition": "CLOSED",
+            "evidence_locator": "both two-cell witness readouts are finitely additive (all disjoint subsets)",
+            "evidence_path": "audit-packet://runner-stdout/koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Finite Record readout additivity might force equal energies for the singlet and doublet outcome cells.",
+            "outcome": "Both readout assignments are finitely additive, so the observable additivity requirement does not fix their relative energies.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "readout_surface"
+          },
+          {
+            "attempt": "Cartesian and polar integrals were compared and an arbitrary multiplicative normalization was inserted into numerator and denominator.",
+            "disposition": "CLOSED",
+            "evidence_locator": "a multiplicative measure normalization cancels from the normalized moment",
+            "evidence_path": "audit-packet://runner-stdout/koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "A Gaussian measure normalization or coordinate convention might change the normalized moment from r=1 to r=1/2.",
+            "outcome": "The coordinate forms agree and the normalization cancels, leaving the exact Gaussian moment r=1.",
+            "route_class": "normalization_or_units",
+            "route_id": "normalization_surface"
+          },
+          {
+            "attempt": "The restricted orbit carrier and supplied-context authority were checked separately from the energy bookkeeping.",
+            "disposition": "CLOSED",
+            "evidence_locator": "ORBIT-INDEXING and the determinant-character/log-character homomorphism boundary are supplied context structure",
+            "evidence_path": "docs/KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "The supplied K/CPT sector orbit indexing might itself equate the aggregate channel energies.",
+            "outcome": "The orbit sector labels provide two cells but no weighting, energy equality, or n_d value, so indexing alone does not select the horn.",
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "orbit_sector_surface"
+          },
+          {
+            "attempt": "The restricted packet was checked for such a retained theorem and the runner was inspected for a full lattice construction.",
+            "disposition": "CLOSED",
+            "evidence_locator": "A concrete realization of the Admissibility rule, record-production dynamics, or a physical readout/action bridge",
+            "evidence_path": "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "A concrete Admissibility, dynamics, or physical readout theorem could select the aggregate doublet counting unit.",
+            "outcome": "No such dynamics or effective action is present, and the scoped claim explicitly leaves that future route open rather than foreclosing it.",
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "future_dynamics_surface"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "aggregate doublet counting unit n_d selection residual"
+          ],
+          "evidence_locator": "There is one selection residual after conditioning on the supplied orbit context: the aggregate doublet counting unit n_d.",
+          "evidence_path": "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
+          "pairwise_checks": [],
+          "unresolved": [],
+          "walls": [
+            "aggregate doublet counting unit n_d selection residual"
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "no standard-QFT, probability, dynamics, normalization, or physical-species bridge is hidden in the conclusion",
+          "evidence_path": "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
+          "hits": [
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "a conditional algebraic fork and a source-text nonselection boundary",
+              "evidence_path": "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
+              "occurrence_count": 1,
+              "occurrence_group_id": "824c69a25d383a2a",
+              "occurrence_locator_sha256": "824c69a25d383a2abfb68306132674bbf72687ed23001caf9ef4e7a0b8bcec21",
+              "phrase": "boundary",
+              "rationale": "This occurrence labels the explicitly narrowed source-text conclusion and does not introduce a premise beyond the listed supplied context."
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "A multiplicative normalization of the same measure cancels between numerator and denominator.",
+              "evidence_path": "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
+              "occurrence_count": 1,
+              "occurrence_group_id": "628a82b277e92750",
+              "occurrence_locator_sha256": "628a82b277e92750c98a66b046cf995ff03a845a05bf748561322071b08bb6e7",
+              "phrase": "normalization",
+              "rationale": "The occurrence is a tested cancellation of an arbitrary multiplicative factor and supplies no selected normalization or value."
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "does not treat the condition as an existing primitive",
+              "evidence_path": "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
+              "occurrence_count": 1,
+              "occurrence_group_id": "d03c46497643dd3d",
+              "occurrence_locator_sha256": "d03c46497643dd3d08f4defee89a3786b5026fb4bdb17ac1e5a183a0cb9a4ee9",
+              "phrase": "primitive",
+              "rationale": "This occurrence expressly denies premise weight to the proposed condition and therefore does not silently import the missing selection rule."
+            }
+          ],
+          "none_found_reason": "",
+          "scan_scope": "The controlled hidden-premise phrases were checked across the source and both ordinary one-hop authorities; explicit accepted-premise notes were handled by the primitive registry check.",
+          "scanned_evidence_paths": [
+            "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
+            "docs/KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md",
+            "docs/KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md"
+          ],
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "Historical PR numbers and failed campaign summaries are not used as load-bearing witnesses.",
+          "evidence_path": "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
+          "none_found_reason": "",
+          "scan_scope": "The premise and supplied-context citations were checked for whether they address the same n_d-selection residual asserted by the scoped source boundary.",
+          "scanned_evidence_paths": [
+            "docs/KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md",
+            "docs/MINIMAL_AXIOMS_2026-06-29.md",
+            "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+            "docs/KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md"
+          ],
+          "unresolved": [],
+          "witnesses": [
+            {
+              "claim_evidence_locator": "the enumerated checked surface does not itself select n_d",
+              "claim_evidence_path": "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
+              "claim_residual": "whether the current restricted packet selects the aggregate doublet counting unit n_d",
+              "claim_residual_id": "residual:koide.nd_selection",
+              "evidence_locator": "A choice not fixed by the supplied structure remains a named conditional or open dependency.",
+              "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+              "match": true,
+              "route_id": "registry_surface",
+              "witness_id": "minimal_axiom_selection_boundary",
+              "witness_residual": "whether the current restricted packet selects the aggregate doublet counting unit n_d",
+              "witness_residual_id": "residual:koide.nd_selection"
+            },
+            {
+              "claim_evidence_locator": "the enumerated checked surface does not itself select n_d",
+              "claim_evidence_path": "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
+              "claim_residual": "whether the current restricted packet selects the aggregate doublet counting unit n_d",
+              "claim_residual_id": "residual:koide.nd_selection",
+              "evidence_locator": "no state, averaging over alternatives, measure, weighting, probability rule",
+              "evidence_path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+              "match": true,
+              "route_id": "realized_state_surface",
+              "witness_id": "realized_state_selection_boundary",
+              "witness_residual": "whether the current restricted packet selects the aggregate doublet counting unit n_d",
+              "witness_residual_id": "residual:koide.nd_selection"
+            },
+            {
+              "claim_evidence_locator": "Orbit indexing is an explicit upstream condition, not a second independent wall.",
+              "claim_evidence_path": "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
+              "claim_residual": "whether the current restricted packet selects the aggregate doublet counting unit n_d",
+              "claim_residual_id": "residual:koide.nd_selection",
+              "evidence_locator": "ORBIT-INDEXING and the determinant-character/log-character homomorphism boundary are supplied context structure.",
+              "evidence_path": "docs/KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md",
+              "match": true,
+              "route_id": "orbit_sector_surface",
+              "witness_id": "orbit_indexing_energy_boundary",
+              "witness_residual": "whether the current restricted packet selects the aggregate doublet counting unit n_d",
+              "witness_residual_id": "residual:koide.nd_selection"
+            }
+          ]
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "It does not claim a per-component, per-site, full-lattice, or dynamics-level no-go.",
+          "evidence_path": "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
+          "none_found_reason": "",
+          "scan_scope": "The scoped does-not-select statement and all per-element, per-site, per-mode, per-block, and lattice-wide readings were checked against the stated local boundary.",
+          "scanned_evidence_paths": [
+            "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md"
+          ],
+          "statements": [
+            {
+              "evidence_locator": "the enumerated checked surface does not itself select n_d",
+              "evidence_path": "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
+              "occurrence_count": 1,
+              "occurrence_group_id": "17873c8a8d938224",
+              "occurrence_locator_sha256": "17873c8a8d93822427b944e89511ddec08fec6bd703df8ef404e713dddca48b6",
+              "phrase": "does not",
+              "resolution_classes_checked": [
+                "per_element",
+                "per_site",
+                "per_mode",
+                "per_block",
+                "lattice_wide"
+              ],
+              "resolution_evidence_locator": "Scope boundaries",
+              "resolution_evidence_path": "audit-packet://runner-stdout/koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
+              "tested_resolutions": [
+                "per_element: the algebra checks the scalar energy and ratio equations only, without a componentwise fixed-basis exclusion.",
+                "per_site: the source constructs no lattice site model, and the negative statement is explicitly not promoted to a per-site theorem.",
+                "per_mode: the Gaussian a, x, and y coordinate moments are checked, while a future microscopic modal dynamics is not ruled out.",
+                "per_block: the singlet and doublet aggregate block relations are the exact finite surface on which nonselection is asserted.",
+                "lattice_wide: no full Z^3 realization or universal dynamics no-go is claimed, so the source boundary remains local and conditional."
+              ],
+              "untested_resolutions": []
+            }
+          ],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "affected_wall": "aggregate doublet counting unit n_d selection residual",
+              "candidate_id": "approved_primitive_realized_state",
+              "closure_mechanism": "The indexed basis pointwise evaluation at a supplied law-admissible realized state could close the wall only if it also supplied state-contingent content, which it expressly does not.",
+              "could_close_wall": false,
+              "disposition": "The aggregate doublet counting unit n_d selection residual remains because pointwise evaluation supplies no n_d value or selector.",
+              "evidence_locator": "This is pointwise evaluation, not a state-selection rule.",
+              "evidence_path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+              "indexed_basis": "pointwise evaluation at a supplied law-admissible realized state",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "affected_wall": "aggregate doublet counting unit n_d selection residual",
+              "candidate_id": "future_law_certificate",
+              "closure_mechanism": "A concrete Admissibility rule, record-production dynamics, or a physical readout/action bridge could distinguish the two horns and thereby close this local selection residual.",
+              "could_close_wall": true,
+              "disposition": "The aggregate doublet counting unit n_d selection residual is explicitly left open to that future certificate, so the narrow boundary does not misclassify it as a new axiom requirement.",
+              "evidence_locator": "A future retained derivation from a concrete Admissibility rule or dynamics could close it.",
+              "evidence_path": "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
+              "indexed_basis": "concrete Admissibility rule, record-production dynamics, or a physical readout/action bridge",
+              "kind": "open_gate"
+            }
+          ],
+          "evidence_locator": "Existing registered primitives are not counted as walls and do not supply the missing condition.",
+          "evidence_path": "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
+          "none_found_reason": "",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "open_gate",
+            "convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "The axiom registry, approved realized-state primitive, open dynamics/readout theorem path, and convention-versus-physics distinction were checked.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "A concrete Admissibility, dynamics, or physical readout theorem could select the aggregate doublet counting unit. The restricted packet was checked for such a retained theorem and the runner was inspected for a full lattice construction. A future microscopic construction could therefore pick n_d=1 and defeat any universal independence claim.",
+          "evidence_locator": "A concrete realization of the Admissibility rule, record-production dynamics, or a physical readout/action bridge could distinguish the two aggregate horns.",
+          "evidence_path": "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
+          "resolution": "The aggregate doublet counting unit n_d selection residual is asserted only for the enumerated current packet; the source expressly leaves future Admissibility, dynamics, and readout certificates open, so that steelman does not defeat the narrow source-text nonselection boundary.",
+          "resolution_evidence_locator": "Further physical structure requires a retained derivation or bridge",
+          "resolution_evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "resolved": true,
+          "route_id": "future_dynamics_surface"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "kinetic_isotropy_primitive_reframe",
+              "disposition": "The mechanism explicit primitive approval can retire a similar missing-structure wall is addressed, but no reviewed approval registers n_d and the existing kinetic primitive has unrelated scope.",
+              "evidence_locator": "Explicitly approved framework primitive for the space-time kinetic-form isotropy",
+              "evidence_path": "docs/audit/data/axiom_premise_nodes.json",
+              "mechanism": "explicit primitive approval can retire a similar missing-structure wall",
+              "retired": null
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "realized_state_interface_clarification",
+              "disposition": "The mechanism realized-state interface clarifies evaluation without supplying selection data is applicable and already addressed: it permits evaluation but cannot choose n_d.",
+              "evidence_locator": "This is pointwise evaluation, not a state-selection rule.",
+              "evidence_path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+              "mechanism": "realized-state interface clarifies evaluation without supplying selection data",
+              "retired": null
+            }
+          ],
+          "evidence_locator": "Similar structural gaps have sometimes been resolved by explicit primitive approval",
+          "evidence_path": "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
+          "none_found_reason": "",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "failures": [],
+        "required": true,
+        "status": "PASS"
+      },
+      "notes_for_re_audit_if_any": "dependency_not_retained: audit the direct Q-dictionary and K/CPT supplied-context dependencies first, then recheck the same Gaussian/fork scope without expanding it to a full-lattice selection theorem.",
+      "open_dependency_paths": [
+        "docs/KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md",
+        "docs/KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 24,
+        "B": 3,
+        "C": 0,
+        "D": 0,
+        "total_pass": 27
+      },
+      "verdict_rationale": "Issue: The local Gaussian, trace, and aggregate-fork algebra survives independent recomputation, but the direct Q-dictionary and K/CPT orbit-context authorities are not retained-grade. Why this blocks: Their unaudited status prevents the supplied orbit indexing and adjacent Q authority from propagating, even though the narrow N1-N8 nonselection gate passes and the finite supplied-condition law-domain checks are locally decidable, invariant under the checked actions, and extensionally distinct. Repair target: Independently audit the two named direct dependencies and require a retained certificate before any per-outcome-cell condition is adopted as a law domain. Claim boundary until fixed: Conditionally on the enumerated local surface, the Gaussian gives r=1 and a supplied n_d gives the exact fork, but neither n_d=1 nor a full-lattice physical readout law is derived."
     }
   ],
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 24,
-    "B": 3,
+    "A": 0,
+    "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 27
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_koide_orbit_occupancy_independence_2026_06_09.py",
   "title": "Koide Orbit-Occupancy Gaussian Moments and the Aggregate Equipartition-Granularity Fork",
   "transitive_descendants": 75,
-  "verdict_rationale": "Issue: The local Gaussian, trace, and aggregate-fork algebra survives independent recomputation, but the direct Q-dictionary and K/CPT orbit-context authorities are not retained-grade. Why this blocks: Their unaudited status prevents the supplied orbit indexing and adjacent Q authority from propagating, even though the narrow N1-N8 nonselection gate passes and the finite supplied-condition law-domain checks are locally decidable, invariant under the checked actions, and extensionally distinct. Repair target: Independently audit the two named direct dependencies and require a retained certificate before any per-outcome-cell condition is adopted as a law domain. Claim boundary until fixed: Conditionally on the enumerated local surface, the Gaussian gives r=1 and a supplied n_d gives the exact fork, but neither n_d=1 nor a full-lattice physical readout law is derived."
+  "verdict_rationale": null
 }

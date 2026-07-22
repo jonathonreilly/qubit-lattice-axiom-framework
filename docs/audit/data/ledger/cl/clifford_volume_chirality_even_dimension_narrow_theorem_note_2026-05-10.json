@@ -1,42 +1,91 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-21T16:58:14.835435+00:00",
+  "audit_invocation_history": [
+    "36cf52a3fccc4e9190fd2b98a7f6600f"
+  ],
+  "audit_invocation_id": "36cf52a3fccc4e9190fd2b98a7f6600f",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true,
+      "runner_path": "scripts/audit_companion_clifford_volume_chirality_even_dimension_exact.py"
+    },
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 13.933,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "c7fcaca394bf2438a6e64b84f8b26130d485232c1f5416ee74ceb76832e88656",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/audit_companion_clifford_volume_chirality_even_dimension_exact.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "552d7bd8f6086c4355df50e1a2363e4ee3e2f7a530100a14d9985d213bcf4dc9",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "552d7bd8f6086c4355df50e1a2363e4ee3e2f7a530100a14d9985d213bcf4dc9",
+    "runner_path": "scripts/audit_companion_clifford_volume_chirality_even_dimension_exact.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 1381
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260721-5f510fc6",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The mathematical derivation closes, but clean audit-chain certification lacks complete live execution evidence for two required N1 routes because the rendered runner stdout begins mid-record.",
   "claim_id": "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
-  "claim_scope": null,
+  "claim_scope": "Pure complexified Clifford-algebra claim that a square-normalized internal element anticommuting with every generator exists exactly for even total dimension, implying odd d_t when d_s=3.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint_after_invalidation",
+  "claim_type_last_reviewed": "2026-07-21T16:58:14.835435+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 7,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 13.934,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "For odd n, centrality and invertibility of the volume element imply that every internal element anticommuting with all generators is zero.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "no_go_result"
+  ],
+  "no_go_discipline": null,
   "note_hash": "4933c69dfc48ac2a842a024f0c6f2c1b422d49c12700a518927729405d00474c",
   "note_path": "docs/CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "runner_artifact_issue: include complete unclipped current-cycle stdout containing all five N1_ROUTE records, then rerun the clean audit gate.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1658,15 +1707,24 @@
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
+  "restoration_history": [
+    {
+      "archived_at": "2026-07-21T17:17:01.954166+00:00",
+      "archived_audit_sha256": "447ee08188d93c48dd218cd2bf511e28ec272a8d716fd41daf2b1b507b3f5538",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "restoration_policy": "restore_overaggressive_invalidation.v2",
+      "restored_at": "2026-07-22T17:21:20.736123+00:00"
+    }
+  ],
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 79,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 79
   },
   "runner_path": "scripts/audit_companion_clifford_volume_chirality_even_dimension_exact.py",
   "title": "Clifford Volume-Element Chirality Forces Even Total Dimension Narrow Theorem",
   "transitive_descendants": 1382,
-  "verdict_rationale": null
+  "verdict_rationale": "The source gives a sound algebraic proof from the Clifford relations, covering the even construction, the odd internal-kernel exclusion, and the d_s=3 parity consequence. The runner source genuinely constructs and solves the full coefficient systems, supplies independent matrix checks and mutation falsifiers, and reports 79 class-A passes. N1 clean certification nevertheless fails because the rendered current-cycle stdout contains only three complete route records; the first two are absent or truncated, and runner source cannot substitute for live ATTEMPTED-route evidence. N2 has one internal-kernel wall, N3's boundary and canonical occurrences are non-load-bearing, N4 has no prior-ruled route, N5 supplies all five resolutions, N6 candidates do not close or alter the pure Clifford issue, N7 resolves the external-carrier steelman, and N8 exposes no applicable current-scope echo, leaving only the N1 artifact deficiency."
 }

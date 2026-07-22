@@ -1,11 +1,11 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 2145,
+    "bounded_theorem": 2143,
     "decoration": 24,
     "meta": 363,
     "no_go": 437,
     "open_gate": 209,
-    "positive_theorem": 674
+    "positive_theorem": 676
   },
   "cycle_examples": [
     [
@@ -81,8 +81,8 @@
   "cycles_detected": 58,
   "effective_status_counts": {
     "audit_in_progress": 12,
-    "audited_conditional": 26,
-    "audited_failed": 3,
+    "audited_conditional": 50,
+    "audited_failed": 8,
     "audited_numerical_match": 6,
     "audited_renaming": 16,
     "decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": 1,
@@ -99,7 +99,7 @@
     "retained": 87,
     "retained_bounded": 309,
     "retained_pending_chain": 5,
-    "unaudited": 3014
+    "unaudited": 2985
   },
   "retained_pending_chain_count": 5,
   "retained_pending_chain_examples": [

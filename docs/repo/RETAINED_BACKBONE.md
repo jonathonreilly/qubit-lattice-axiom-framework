@@ -16,12 +16,12 @@ file per claim), summarized in
 
 | Metric | Value |
 |---|---:|
-| Retained positive rows | 88 |
+| Retained positive rows | 89 |
 | Retained bounded rows | 311 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 16 |
 
-## Retained positive rows (88)
+## Retained positive rows (89)
 
 Sorted by load-bearing graph score (descending).
 
@@ -37,6 +37,7 @@ Sorted by load-bearing graph score (descending).
 - [`site_phase_cube_shift_intertwiner_note`](../../docs/SITE_PHASE_CUBE_SHIFT_INTERTWINER_NOTE.md) — score 24.009; audited 2026-05-02T15:37:57.008099+00:00
 - [`staggered_only_det_positivity_case_a_note_2026-05-17`](../../docs/STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md) — score 21.233; audited 2026-05-23T19:08:58.399053+00:00
 - [`z2_hw1_mass_matrix_parametrization_note`](../../docs/Z2_HW1_MASS_MATRIX_PARAMETRIZATION_NOTE.md) — score 20.018; audited 2026-07-20T22:41:42.856310+00:00
+- [`gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note`](../../docs/GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md) — score 19.752; audited 2026-07-22T18:23:13.468991+00:00
 - [`s3_taste_cube_decomposition_note`](../../docs/S3_TASTE_CUBE_DECOMPOSITION_NOTE.md) — score 19.003; audited 2026-05-23T14:10:38.971653+00:00
 - [`fermion_parity_z2_grading_theorem_note_2026-05-02`](../../docs/FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md) — score 18.669; audited 2026-07-21T18:58:15.506988+00:00
 - [`ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26`](../../docs/EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md) — score 18.549; audited 2026-07-21T18:00:53.377100+00:00

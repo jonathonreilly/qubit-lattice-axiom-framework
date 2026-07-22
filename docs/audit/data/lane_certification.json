@@ -1044,10 +1044,6 @@
           "effective_status": "unaudited"
         },
         {
-          "claim_id": "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
-          "effective_status": "audit_in_progress"
-        },
-        {
           "claim_id": "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note",
           "effective_status": "unaudited"
         },
@@ -2796,9 +2792,9 @@
       "roots": [
         "strong_cp_theta_zero_note"
       ],
-      "uncertified_count": 642
+      "uncertified_count": 641
     }
   ],
-  "repo_head": "45a3d378f62f7b5df470b3f05185942eeb444e6c",
+  "repo_head": "021bf43020cb7f2d82967780e22feaa93da5eea3",
   "schema": "lane_certification_v2"
 }

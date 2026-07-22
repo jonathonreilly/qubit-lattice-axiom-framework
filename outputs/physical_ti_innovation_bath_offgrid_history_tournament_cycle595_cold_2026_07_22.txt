@@ -1,0 +1,747 @@
+PASS Route A derives a uniform orbit-index address marginal from a TI reversible bath while exposing zero stochastic mixing and unchanged-ROM off-grid refusal :: {'route': 'A TI doubled-lane reversible one-carrier address bath', 'bath_law_sha256': 'ea1150b018833b032fd5bb0b9fa1466d54140f33e5897623efa0318d7864c175', 'physical_M2': 16, 'translation_invariant_radius_cells': 1, 'parallel_SWAP_layers': 2, 'nearest_neighbor_two_M2_SWAPS_per_step': 16, 'EG_failures': 0, 'inverse_failures': 0, 'carrier_ledger_failures': 0, 'orbit_rows': [{'genesis': 0, 'first_orbit': (1, 2, 3, 4, 5, 6, 7, 0), 'orbit_index_average': (0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125)}, {'genesis': 1, 'first_orbit': (2, 3, 4, 5, 6, 7, 0, 1), 'orbit_index_average': (0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125)}, {'genesis': 2, 'first_orbit': (3, 4, 5, 6, 7, 0, 1, 2), 'orbit_index_average': (0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125)}, {'genesis': 3, 'first_orbit': (4, 5, 6, 7, 0, 1, 2, 3), 'orbit_index_average': (0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125)}, {'genesis': 4, 'first_orbit': (5, 6, 7, 0, 1, 2, 3, 4), 'orbit_index_average': (0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125)}, {'genesis': 5, 'first_orbit': (6, 7, 0, 1, 2, 3, 4, 5), 'orbit_index_average': (0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125)}, {'genesis': 6, 'first_orbit': (7, 0, 1, 2, 3, 4, 5, 6), 'orbit_index_average': (0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125)}, {'genesis': 7, 'first_orbit': (0, 1, 2, 3, 4, 5, 6, 7), 'orbit_index_average': (0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125)}], 'uniform_invariant_residual': 0.0, 'eight_step_orbit_index_average_maximum_L1_residual': 0.0, 'instantaneous_delta_to_uniform_TV_every_step': 0.875, 'permutation_spectral_gap': -1.1102230246251565e-15, 'stochastic_mixing_or_convergence_derived': False, 'exact_Cycle592_552_531_interface_failures': 0, 'new_offgrid_held_rows': [{'name': 'offgrid_X_2over3', 'size': 72, 'grade': (0.6666666666666666, 0.0, 0.0, 0.0, 0.3333333333333333, 0.0, 0.0, 0.0), 'best_unchanged_ROM_L1': 0.3333333333333333, 'best_any_denominator8_L1': 0.08333333333333331, 'best_denominator8_counts': (5, 0, 0, 0, 3, 0, 0, 0)}, {'name': 'offgrid_Z2over3_X3over5', 'size': 120, 'grade': (0.39999999999999986, 0.0, 0.19999999999999993, 0.0, 0.2666666666666666, 0.0, 0.1333333333333333, 0.0), 'best_unchanged_ROM_L1': 0.21666666666666648, 'best_any_denominator8_L1': 0.09999999999999984, 'best_denominator8_counts': (3, 0, 2, 0, 2, 0, 1, 0)}], 'unchanged_Cycle592_ROM_lawful_domain_refusals': 2, 'cross_edge_deletion_residual': 1.4142135623730951, 'proper_cubic_frames': 24, 'all24_ring_edge_tests': 384, 'all24_ring_edge_failures': 0, 'bath_carrier_catalytically_recurs': True, 'fresh_ROM_archive_blocks_per_occurrence': 1, 'ROM_archive_resource_renewal_derived': False, 'uniform_probability_or_objective_actuality_derived': False, 'pass': True}
+PASS Route B derives a uniform reduced marginal from a local coherent dilation but retains all sectors and consumes unrenewed fresh source/sink M2 :: {'route': 'B open coherent H3/address-environment bath', 'physical_M2_per_episode': 6, 'one_M2_H': 3, 'nearest_neighbor_address_environment_CNOT': 3, 'uniform_reduced_address_residual': 1.5700924586837752e-16, 'uniform_reduced_environment_residual': 1.5700924586837752e-16, 'full_unitary_inverse_residual': 4.448190982337658e-16, 'delete_H_reduced_residual': 0.3535533905932736, 'delete_environment_copy_reduced_residual': 0.3535533905932736, 'global_pure_entropy_bits': 3.2034265038149176e-16, 'reduced_address_entropy_bits': 2.9999999999999996, 'entropy_called_thermodynamic_or_work': False, 'fresh_zero_M2_source_per_episode': 6, 'retained_environment_sink_M2_per_episode': 3, 'finite_two_episode_fresh_M2_debit': 12, 'source_sink_renewal_derived': False, 'all_eight_coherent_sectors_retained': True, 'objective_address_or_Record_derived': False, 'proper_cubic_frames': 24, 'all24_copy_edge_tests': 72, 'all24_copy_edge_failures': 0, 'pass': True}
+PASS Route C gives an exact table-independent seven-cycle typicality comparator whose orbit visibly fails the required uniform-eight marginal :: {'route': 'C table-independent reversible seven-cycle LFSR typicality comparator', 'bath_law_sha256': 'ea1150b018833b032fd5bb0b9fa1466d54140f33e5897623efa0318d7864c175', 'orbit_from_one': (3, 7, 6, 5, 2, 4, 1), 'zero_fixed_orbit': (0, 0, 0, 0, 0, 0, 0), 'permutation_orbit_failures': 0, 'inverse_failures': 0, 'seven_orbit_address_to_uniform8_L1_residual': 0.24999999999999994, 'unchanged_ROM_frequency_rows': [{'program': 0, 'seven_orbit_history_frequency': (0.14285714285714285, 0.0, 0.0, 0.2857142857142857, 0.0, 0.2857142857142857, 0.2857142857142857, 0.0), 'target_table_grade': (0.25, 0.0, 0.0, 0.25, 0.0, 0.25, 0.25, 0.0), 'L1_residual': 0.21428571428571425}, {'program': 1, 'seven_orbit_history_frequency': (0.42857142857142855, 0.0, 0.0, 0.0, 0.5714285714285714, 0.0, 0.0, 0.0), 'target_table_grade': (0.5, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0), 'L1_residual': 0.14285714285714285}, {'program': 2, 'seven_orbit_history_frequency': (0.2857142857142857, 0.0, 0.14285714285714285, 0.0, 0.42857142857142855, 0.0, 0.14285714285714285, 0.0), 'target_table_grade': (0.375, 0.0, 0.125, 0.0, 0.375, 0.0, 0.125, 0.0), 'L1_residual': 0.17857142857142855}], 'feedback_deletion_residual': 1.4142135623730951, 'static_nearest_neighbor_line_compiler': {'line_M2': 3, 'logical_Toffoli': 0, 'literal_one_M2_primitives': 0, 'literal_two_M2_core_primitives': 3, 'adjacent_route_and_return_SWAPS': 4, 'nearest_neighbor_two_M2_calls': 7, 'maximum_unrouted_operand_distance': 2, 'route_adjacency_failures': 0, 'ordered_operand_failures': 0, 'terminal_wire_restoration_failures': 0, 'route_manifest_sha256': '804c490c2e6e6d7c6376a2597c2874c546a734f74f982e0c7b0a9c07d168c8f0', 'proper_cubic_frames': 24, 'all24_line_edge_tests': 48, 'all24_line_edge_failures': 0, 'runtime_data_selects_route': False, 'pass': True}, 'law_contains_ROM_table_or_grade': False, 'typicality_measure_or_objective_genesis_derived': False, 'pass': True}
+PASS all24/all576 and lawful-domain controls remain exact :: {'proper_cubic_frames': 24, 'all24_member_tests': 96, 'all24_member_failures': 0, 'all576_axis_tests': 1728, 'all576_axis_failures': 0, 'malformed_domain_refusals': 5, 'malformed_domain_total': 5, 'pass': True}
+PASS exact shores, bath-before-held freeze, inventory, and N1-N8 block overclaim and axiom pressure :: {'expected': {'Cycle592 runner': 'ab565af6aa59e66cea7b1ce625c08f8a88235ae9f7415e5e7d89d63af34ce9ce', 'Cycle592 note': 'dccf62d6126287b20cbf96ff410534adfa1746d9cf3aba94fbfb2893855be212', 'Cycle587 runner': '2879d5a2641b334553769f15cf3a6f152f9f16f8f80b23db723448533c28c494', 'Cycle584 runner': '556e3e4759033706c795c9b65f55f12afaaaf84b8858dc4bb06b1c0a93400ab3', 'Cycle582 runner': '47c5138720add60ed6fa8b6506dcb8a9cbee9af5a1ab3defbc7aea4c3cfa290a', 'Cycle580 runner': 'c46917d4a932cd3ad9a78e0547625055f5adf9d5cf7393700d7e6715dd515cd3', 'Cycle577 runner': '93bf1fa2859289b13037bfe7882cce86732e9377ed8b60e56c3bd55ebc0ce74f', 'Cycle571 runner': '7221d59558e4d731f98a2a4523c280aa98b889f23ea3f7be1acc8919395dfee8', 'Cycle565 runner': 'b4b6e2c4491c5a6b30389764e8ac597ce07e1dac3f31c7cb8fff9297ac04437a'}, 'observed': {'Cycle592 runner': 'ab565af6aa59e66cea7b1ce625c08f8a88235ae9f7415e5e7d89d63af34ce9ce', 'Cycle592 note': 'dccf62d6126287b20cbf96ff410534adfa1746d9cf3aba94fbfb2893855be212', 'Cycle587 runner': '2879d5a2641b334553769f15cf3a6f152f9f16f8f80b23db723448533c28c494', 'Cycle584 runner': '556e3e4759033706c795c9b65f55f12afaaaf84b8858dc4bb06b1c0a93400ab3', 'Cycle582 runner': '47c5138720add60ed6fa8b6506dcb8a9cbee9af5a1ab3defbc7aea4c3cfa290a', 'Cycle580 runner': 'c46917d4a932cd3ad9a78e0547625055f5adf9d5cf7393700d7e6715dd515cd3', 'Cycle577 runner': '93bf1fa2859289b13037bfe7882cce86732e9377ed8b60e56c3bd55ebc0ce74f', 'Cycle571 runner': '7221d59558e4d731f98a2a4523c280aa98b889f23ea3f7be1acc8919395dfee8', 'Cycle565 runner': 'b4b6e2c4491c5a6b30389764e8ac597ce07e1dac3f31c7cb8fff9297ac04437a'}, 'bath_law_sha256': 'ea1150b018833b032fd5bb0b9fa1466d54140f33e5897623efa0318d7864c175', 'expected_bath_law_sha256': 'ea1150b018833b032fd5bb0b9fa1466d54140f33e5897623efa0318d7864c175', 'held_sha256': '5ca581dadcbe5dc88f24345562f7cc1691cf0d97facacd3aef6cf3aeb4883337', 'note_missing': (), 'declared_runner_sha256': 'cdfcddb00974205faa8bc60c617ff0dd42bf9f8947b0a55a4b172157b2d28de2', 'runner_sha256': 'cdfcddb00974205faa8bc60c617ff0dd42bf9f8947b0a55a4b172157b2d28de2', 'discipline': {'N1_routes': ({'family': 'TI reversible Margolus carrier bath', 'status': 'ATTEMPTED', 'terminal': 'derive objective sampling/Record law and renew ROM archives'}, {'family': 'open coherent uniform-address dilation', 'status': 'ATTEMPTED', 'terminal': 'derive fresh source/sink renewal and one objective address'}, {'family': 'table-independent LFSR typicality', 'status': 'ATTEMPTED', 'terminal': 'derive correct eight-address invariant orbit and actuality measure'}, {'family': 'chaotic reversible lattice gas', 'status': 'UNTESTED_OPEN_NOT_COUNTED', 'terminal': 'prove ergodic marginal/mixing on a physical invariant shell'}, {'family': 'dissipative stationary reservoir', 'status': 'UNTESTED_OPEN_NOT_COUNTED', 'terminal': 'construct source/sink balance and thermodynamic semantics'}, {'family': 'continuous grade compiler', 'status': 'UNTESTED_OPEN_NOT_COUNTED', 'terminal': 'synthesize off-grid transition law without finite answer-table import'}), 'N1_qualifying': 3, 'N1_required': 5, 'N1_status': 'FAIL', 'N2_walls': ('bath stationary marginal', 'objective actuality', 'ROM/state-family law', 'Record permanence', 'frequency/probability calibration', 'resource renewal'), 'N2_pairs': ({'pair': ('bath stationary marginal', 'objective actuality'), 'independent': True, 'reason': "neither tested closure has the other's typed witness"}, {'pair': ('bath stationary marginal', 'ROM/state-family law'), 'independent': True, 'reason': "neither tested closure has the other's typed witness"}, {'pair': ('bath stationary marginal', 'Record permanence'), 'independent': True, 'reason': "neither tested closure has the other's typed witness"}, {'pair': ('bath stationary marginal', 'frequency/probability calibration'), 'independent': True, 'reason': "neither tested closure has the other's typed witness"}, {'pair': ('bath stationary marginal', 'resource renewal'), 'independent': True, 'reason': "neither tested closure has the other's typed witness"}, {'pair': ('objective actuality', 'ROM/state-family law'), 'independent': True, 'reason': "neither tested closure has the other's typed witness"}, {'pair': ('objective actuality', 'Record permanence'), 'independent': True, 'reason': "neither tested closure has the other's typed witness"}, {'pair': ('objective actuality', 'frequency/probability calibration'), 'independent': True, 'reason': "neither tested closure has the other's typed witness"}, {'pair': ('objective actuality', 'resource renewal'), 'independent': True, 'reason': "neither tested closure has the other's typed witness"}, {'pair': ('ROM/state-family law', 'Record permanence'), 'independent': True, 'reason': "neither tested closure has the other's typed witness"}, {'pair': ('ROM/state-family law', 'frequency/probability calibration'), 'independent': True, 'reason': "neither tested closure has the other's typed witness"}, {'pair': ('ROM/state-family law', 'resource renewal'), 'independent': True, 'reason': "neither tested closure has the other's typed witness"}, {'pair': ('Record permanence', 'frequency/probability calibration'), 'independent': True, 'reason': "neither tested closure has the other's typed witness"}, {'pair': ('Record permanence', 'resource renewal'), 'independent': True, 'reason': "neither tested closure has the other's typed witness"}, {'pair': ('frequency/probability calibration', 'resource renewal'), 'independent': True, 'reason': "neither tested closure has the other's typed witness"}), 'N3_supplies': ('one-carrier genesis', 'finite periodic ring and chart', 'H and zero-state source', 'environment trace/access', 'unchanged Cycle592 ROM/program domain', 'Cycle552 interface inputs', 'fresh ROM/archive capacity', 'held states and finite sizes'), 'N4_residuals': ({'route': 'A', 'witness': 'uniform orbit-index average but TV=7/8 and spectral gap zero', 'meaning': 'equidistribution, not stochastic mixing/probability'}, {'route': 'A held', 'witness': 'unchanged ROM refusal and positive denominator-eight residual', 'meaning': 'declared finite ROM wall, not universal impossibility'}, {'route': 'B', 'witness': 'uniform reduced diagonal and exact global inverse', 'meaning': 'open-channel marginal, not objective address/irreversibility'}, {'route': 'C', 'witness': 'seven-cycle marginal differs from uniform eight', 'meaning': 'this table-independent typicality law fails target'}), 'N5': 'bounded route results only; no probability/Record/energy/time promotion', 'N6': ('retain Route A as a catalytic deterministic address enumerator', 'retain Route B as a uniform coherent source diagnostic', 'retain Route C as an orbit-support falsifier', 'build held-state-independent continuous/rational approximation compiler with error budget', 'derive stationary resource bath and separate framework Record law before probability calibration'), 'N7': {'mechanism': 'a chaotic reversible lattice gas on a derived microcanonical shell could have an eight-address factor with provable mixing, while a continuous grade compiler and renewable formation medium handle off-grid states and Records', 'terminal': 'construct the local law, invariant shell, mixing bound, grade compiler, resource balance, actuality owner, and blinded Records', 'status': 'open'}, 'N8': ('Cycle584 derived local transport but not stationary boundary supply', 'Cycle592 supplied balanced address words and finite ROM', 'Cycle595 derives deterministic orbit equidistribution but not mixing', 'open dilation gives uniform marginal while retaining coherent sectors', 'new off-grid states isolate the unchanged-ROM domain wall'), 'broad_no_go': 'FAIL_DO_NOT_SHIP', 'minimum_content': 'FAIL_DO_NOT_SHIP', 'shared_obstruction': 'NOT_ESTABLISHED', 'axiom_pressure': 'NONE'}, 'inventory': {'supplied': ('one-carrier genesis', 'finite periodic ring and chart', 'H and zero-state source', 'environment trace/access', 'unchanged Cycle592 ROM/program domain', 'Cycle552 interface inputs', 'fresh ROM/archive capacity', 'held states and finite sizes'), 'derived': ('TI catalytic address orbit and uniform eight-step orbit-index average', 'open coherent uniform reduced marginal', 'LFSR orbit falsifier', 'off-grid fixed-ROM/denominator residuals and all controls'), 'open': ('objective actuality and Record', 'stochastic mixing/invariant physical ensemble', 'continuous off-grid ROM', 'archive/source renewal and thermodynamics', 'Born calibration/time/source/gravity')}, 'pass': True}
+PASS cold resource caps :: {'elapsed_seconds': 0.17494270799215883, 'maximum_RSS_bytes': 811024384, 'wall_cap_seconds': 360.0, 'RSS_cap_bytes': 3221225472}
+{
+  "covariance_domain": {
+    "all24_member_failures": 0,
+    "all24_member_tests": 96,
+    "all576_axis_failures": 0,
+    "all576_axis_tests": 1728,
+    "malformed_domain_refusals": 5,
+    "malformed_domain_total": 5,
+    "pass": true,
+    "proper_cubic_frames": 24
+  },
+  "dependency_discipline_inventory": {
+    "bath_law_sha256": "ea1150b018833b032fd5bb0b9fa1466d54140f33e5897623efa0318d7864c175",
+    "declared_runner_sha256": "cdfcddb00974205faa8bc60c617ff0dd42bf9f8947b0a55a4b172157b2d28de2",
+    "discipline": {
+      "N1_qualifying": 3,
+      "N1_required": 5,
+      "N1_routes": [
+        {
+          "family": "TI reversible Margolus carrier bath",
+          "status": "ATTEMPTED",
+          "terminal": "derive objective sampling/Record law and renew ROM archives"
+        },
+        {
+          "family": "open coherent uniform-address dilation",
+          "status": "ATTEMPTED",
+          "terminal": "derive fresh source/sink renewal and one objective address"
+        },
+        {
+          "family": "table-independent LFSR typicality",
+          "status": "ATTEMPTED",
+          "terminal": "derive correct eight-address invariant orbit and actuality measure"
+        },
+        {
+          "family": "chaotic reversible lattice gas",
+          "status": "UNTESTED_OPEN_NOT_COUNTED",
+          "terminal": "prove ergodic marginal/mixing on a physical invariant shell"
+        },
+        {
+          "family": "dissipative stationary reservoir",
+          "status": "UNTESTED_OPEN_NOT_COUNTED",
+          "terminal": "construct source/sink balance and thermodynamic semantics"
+        },
+        {
+          "family": "continuous grade compiler",
+          "status": "UNTESTED_OPEN_NOT_COUNTED",
+          "terminal": "synthesize off-grid transition law without finite answer-table import"
+        }
+      ],
+      "N1_status": "FAIL",
+      "N2_pairs": [
+        {
+          "independent": true,
+          "pair": [
+            "bath stationary marginal",
+            "objective actuality"
+          ],
+          "reason": "neither tested closure has the other's typed witness"
+        },
+        {
+          "independent": true,
+          "pair": [
+            "bath stationary marginal",
+            "ROM/state-family law"
+          ],
+          "reason": "neither tested closure has the other's typed witness"
+        },
+        {
+          "independent": true,
+          "pair": [
+            "bath stationary marginal",
+            "Record permanence"
+          ],
+          "reason": "neither tested closure has the other's typed witness"
+        },
+        {
+          "independent": true,
+          "pair": [
+            "bath stationary marginal",
+            "frequency/probability calibration"
+          ],
+          "reason": "neither tested closure has the other's typed witness"
+        },
+        {
+          "independent": true,
+          "pair": [
+            "bath stationary marginal",
+            "resource renewal"
+          ],
+          "reason": "neither tested closure has the other's typed witness"
+        },
+        {
+          "independent": true,
+          "pair": [
+            "objective actuality",
+            "ROM/state-family law"
+          ],
+          "reason": "neither tested closure has the other's typed witness"
+        },
+        {
+          "independent": true,
+          "pair": [
+            "objective actuality",
+            "Record permanence"
+          ],
+          "reason": "neither tested closure has the other's typed witness"
+        },
+        {
+          "independent": true,
+          "pair": [
+            "objective actuality",
+            "frequency/probability calibration"
+          ],
+          "reason": "neither tested closure has the other's typed witness"
+        },
+        {
+          "independent": true,
+          "pair": [
+            "objective actuality",
+            "resource renewal"
+          ],
+          "reason": "neither tested closure has the other's typed witness"
+        },
+        {
+          "independent": true,
+          "pair": [
+            "ROM/state-family law",
+            "Record permanence"
+          ],
+          "reason": "neither tested closure has the other's typed witness"
+        },
+        {
+          "independent": true,
+          "pair": [
+            "ROM/state-family law",
+            "frequency/probability calibration"
+          ],
+          "reason": "neither tested closure has the other's typed witness"
+        },
+        {
+          "independent": true,
+          "pair": [
+            "ROM/state-family law",
+            "resource renewal"
+          ],
+          "reason": "neither tested closure has the other's typed witness"
+        },
+        {
+          "independent": true,
+          "pair": [
+            "Record permanence",
+            "frequency/probability calibration"
+          ],
+          "reason": "neither tested closure has the other's typed witness"
+        },
+        {
+          "independent": true,
+          "pair": [
+            "Record permanence",
+            "resource renewal"
+          ],
+          "reason": "neither tested closure has the other's typed witness"
+        },
+        {
+          "independent": true,
+          "pair": [
+            "frequency/probability calibration",
+            "resource renewal"
+          ],
+          "reason": "neither tested closure has the other's typed witness"
+        }
+      ],
+      "N2_walls": [
+        "bath stationary marginal",
+        "objective actuality",
+        "ROM/state-family law",
+        "Record permanence",
+        "frequency/probability calibration",
+        "resource renewal"
+      ],
+      "N3_supplies": [
+        "one-carrier genesis",
+        "finite periodic ring and chart",
+        "H and zero-state source",
+        "environment trace/access",
+        "unchanged Cycle592 ROM/program domain",
+        "Cycle552 interface inputs",
+        "fresh ROM/archive capacity",
+        "held states and finite sizes"
+      ],
+      "N4_residuals": [
+        {
+          "meaning": "equidistribution, not stochastic mixing/probability",
+          "route": "A",
+          "witness": "uniform orbit-index average but TV=7/8 and spectral gap zero"
+        },
+        {
+          "meaning": "declared finite ROM wall, not universal impossibility",
+          "route": "A held",
+          "witness": "unchanged ROM refusal and positive denominator-eight residual"
+        },
+        {
+          "meaning": "open-channel marginal, not objective address/irreversibility",
+          "route": "B",
+          "witness": "uniform reduced diagonal and exact global inverse"
+        },
+        {
+          "meaning": "this table-independent typicality law fails target",
+          "route": "C",
+          "witness": "seven-cycle marginal differs from uniform eight"
+        }
+      ],
+      "N5": "bounded route results only; no probability/Record/energy/time promotion",
+      "N6": [
+        "retain Route A as a catalytic deterministic address enumerator",
+        "retain Route B as a uniform coherent source diagnostic",
+        "retain Route C as an orbit-support falsifier",
+        "build held-state-independent continuous/rational approximation compiler with error budget",
+        "derive stationary resource bath and separate framework Record law before probability calibration"
+      ],
+      "N7": {
+        "mechanism": "a chaotic reversible lattice gas on a derived microcanonical shell could have an eight-address factor with provable mixing, while a continuous grade compiler and renewable formation medium handle off-grid states and Records",
+        "status": "open",
+        "terminal": "construct the local law, invariant shell, mixing bound, grade compiler, resource balance, actuality owner, and blinded Records"
+      },
+      "N8": [
+        "Cycle584 derived local transport but not stationary boundary supply",
+        "Cycle592 supplied balanced address words and finite ROM",
+        "Cycle595 derives deterministic orbit equidistribution but not mixing",
+        "open dilation gives uniform marginal while retaining coherent sectors",
+        "new off-grid states isolate the unchanged-ROM domain wall"
+      ],
+      "axiom_pressure": "NONE",
+      "broad_no_go": "FAIL_DO_NOT_SHIP",
+      "minimum_content": "FAIL_DO_NOT_SHIP",
+      "shared_obstruction": "NOT_ESTABLISHED"
+    },
+    "expected": {
+      "Cycle565 runner": "b4b6e2c4491c5a6b30389764e8ac597ce07e1dac3f31c7cb8fff9297ac04437a",
+      "Cycle571 runner": "7221d59558e4d731f98a2a4523c280aa98b889f23ea3f7be1acc8919395dfee8",
+      "Cycle577 runner": "93bf1fa2859289b13037bfe7882cce86732e9377ed8b60e56c3bd55ebc0ce74f",
+      "Cycle580 runner": "c46917d4a932cd3ad9a78e0547625055f5adf9d5cf7393700d7e6715dd515cd3",
+      "Cycle582 runner": "47c5138720add60ed6fa8b6506dcb8a9cbee9af5a1ab3defbc7aea4c3cfa290a",
+      "Cycle584 runner": "556e3e4759033706c795c9b65f55f12afaaaf84b8858dc4bb06b1c0a93400ab3",
+      "Cycle587 runner": "2879d5a2641b334553769f15cf3a6f152f9f16f8f80b23db723448533c28c494",
+      "Cycle592 note": "dccf62d6126287b20cbf96ff410534adfa1746d9cf3aba94fbfb2893855be212",
+      "Cycle592 runner": "ab565af6aa59e66cea7b1ce625c08f8a88235ae9f7415e5e7d89d63af34ce9ce"
+    },
+    "expected_bath_law_sha256": "ea1150b018833b032fd5bb0b9fa1466d54140f33e5897623efa0318d7864c175",
+    "held_sha256": "5ca581dadcbe5dc88f24345562f7cc1691cf0d97facacd3aef6cf3aeb4883337",
+    "inventory": {
+      "derived": [
+        "TI catalytic address orbit and uniform eight-step orbit-index average",
+        "open coherent uniform reduced marginal",
+        "LFSR orbit falsifier",
+        "off-grid fixed-ROM/denominator residuals and all controls"
+      ],
+      "open": [
+        "objective actuality and Record",
+        "stochastic mixing/invariant physical ensemble",
+        "continuous off-grid ROM",
+        "archive/source renewal and thermodynamics",
+        "Born calibration/time/source/gravity"
+      ],
+      "supplied": [
+        "one-carrier genesis",
+        "finite periodic ring and chart",
+        "H and zero-state source",
+        "environment trace/access",
+        "unchanged Cycle592 ROM/program domain",
+        "Cycle552 interface inputs",
+        "fresh ROM/archive capacity",
+        "held states and finite sizes"
+      ]
+    },
+    "note_missing": [],
+    "observed": {
+      "Cycle565 runner": "b4b6e2c4491c5a6b30389764e8ac597ce07e1dac3f31c7cb8fff9297ac04437a",
+      "Cycle571 runner": "7221d59558e4d731f98a2a4523c280aa98b889f23ea3f7be1acc8919395dfee8",
+      "Cycle577 runner": "93bf1fa2859289b13037bfe7882cce86732e9377ed8b60e56c3bd55ebc0ce74f",
+      "Cycle580 runner": "c46917d4a932cd3ad9a78e0547625055f5adf9d5cf7393700d7e6715dd515cd3",
+      "Cycle582 runner": "47c5138720add60ed6fa8b6506dcb8a9cbee9af5a1ab3defbc7aea4c3cfa290a",
+      "Cycle584 runner": "556e3e4759033706c795c9b65f55f12afaaaf84b8858dc4bb06b1c0a93400ab3",
+      "Cycle587 runner": "2879d5a2641b334553769f15cf3a6f152f9f16f8f80b23db723448533c28c494",
+      "Cycle592 note": "dccf62d6126287b20cbf96ff410534adfa1746d9cf3aba94fbfb2893855be212",
+      "Cycle592 runner": "ab565af6aa59e66cea7b1ce625c08f8a88235ae9f7415e5e7d89d63af34ce9ce"
+    },
+    "pass": true,
+    "runner_sha256": "cdfcddb00974205faa8bc60c617ff0dd42bf9f8947b0a55a4b172157b2d28de2"
+  },
+  "fail": 0,
+  "pass": 6,
+  "resources": {
+    "RSS_cap_bytes": 3221225472,
+    "elapsed_seconds": 0.17494270799215883,
+    "maximum_RSS_bytes": 811024384,
+    "wall_cap_seconds": 360.0
+  },
+  "route_A": {
+    "EG_failures": 0,
+    "ROM_archive_resource_renewal_derived": false,
+    "all24_ring_edge_failures": 0,
+    "all24_ring_edge_tests": 384,
+    "bath_carrier_catalytically_recurs": true,
+    "bath_law_sha256": "ea1150b018833b032fd5bb0b9fa1466d54140f33e5897623efa0318d7864c175",
+    "carrier_ledger_failures": 0,
+    "cross_edge_deletion_residual": 1.4142135623730951,
+    "eight_step_orbit_index_average_maximum_L1_residual": 0.0,
+    "exact_Cycle592_552_531_interface_failures": 0,
+    "fresh_ROM_archive_blocks_per_occurrence": 1,
+    "instantaneous_delta_to_uniform_TV_every_step": 0.875,
+    "inverse_failures": 0,
+    "nearest_neighbor_two_M2_SWAPS_per_step": 16,
+    "new_offgrid_held_rows": [
+      {
+        "best_any_denominator8_L1": 0.08333333333333331,
+        "best_denominator8_counts": [
+          5,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0
+        ],
+        "best_unchanged_ROM_L1": 0.3333333333333333,
+        "grade": [
+          0.6666666666666666,
+          0.0,
+          0.0,
+          0.0,
+          0.3333333333333333,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "name": "offgrid_X_2over3",
+        "size": 72
+      },
+      {
+        "best_any_denominator8_L1": 0.09999999999999984,
+        "best_denominator8_counts": [
+          3,
+          0,
+          2,
+          0,
+          2,
+          0,
+          1,
+          0
+        ],
+        "best_unchanged_ROM_L1": 0.21666666666666648,
+        "grade": [
+          0.39999999999999986,
+          0.0,
+          0.19999999999999993,
+          0.0,
+          0.2666666666666666,
+          0.0,
+          0.1333333333333333,
+          0.0
+        ],
+        "name": "offgrid_Z2over3_X3over5",
+        "size": 120
+      }
+    ],
+    "orbit_rows": [
+      {
+        "first_orbit": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          0
+        ],
+        "genesis": 0,
+        "orbit_index_average": [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ]
+      },
+      {
+        "first_orbit": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          0,
+          1
+        ],
+        "genesis": 1,
+        "orbit_index_average": [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ]
+      },
+      {
+        "first_orbit": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          0,
+          1,
+          2
+        ],
+        "genesis": 2,
+        "orbit_index_average": [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ]
+      },
+      {
+        "first_orbit": [
+          4,
+          5,
+          6,
+          7,
+          0,
+          1,
+          2,
+          3
+        ],
+        "genesis": 3,
+        "orbit_index_average": [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ]
+      },
+      {
+        "first_orbit": [
+          5,
+          6,
+          7,
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "genesis": 4,
+        "orbit_index_average": [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ]
+      },
+      {
+        "first_orbit": [
+          6,
+          7,
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "genesis": 5,
+        "orbit_index_average": [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ]
+      },
+      {
+        "first_orbit": [
+          7,
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "genesis": 6,
+        "orbit_index_average": [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ]
+      },
+      {
+        "first_orbit": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "genesis": 7,
+        "orbit_index_average": [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ]
+      }
+    ],
+    "parallel_SWAP_layers": 2,
+    "pass": true,
+    "permutation_spectral_gap": -1.1102230246251565e-15,
+    "physical_M2": 16,
+    "proper_cubic_frames": 24,
+    "route": "A TI doubled-lane reversible one-carrier address bath",
+    "stochastic_mixing_or_convergence_derived": false,
+    "translation_invariant_radius_cells": 1,
+    "unchanged_Cycle592_ROM_lawful_domain_refusals": 2,
+    "uniform_invariant_residual": 0.0,
+    "uniform_probability_or_objective_actuality_derived": false
+  },
+  "route_B": {
+    "all24_copy_edge_failures": 0,
+    "all24_copy_edge_tests": 72,
+    "all_eight_coherent_sectors_retained": true,
+    "delete_H_reduced_residual": 0.3535533905932736,
+    "delete_environment_copy_reduced_residual": 0.3535533905932736,
+    "entropy_called_thermodynamic_or_work": false,
+    "finite_two_episode_fresh_M2_debit": 12,
+    "fresh_zero_M2_source_per_episode": 6,
+    "full_unitary_inverse_residual": 4.448190982337658e-16,
+    "global_pure_entropy_bits": 3.2034265038149176e-16,
+    "nearest_neighbor_address_environment_CNOT": 3,
+    "objective_address_or_Record_derived": false,
+    "one_M2_H": 3,
+    "pass": true,
+    "physical_M2_per_episode": 6,
+    "proper_cubic_frames": 24,
+    "reduced_address_entropy_bits": 2.9999999999999996,
+    "retained_environment_sink_M2_per_episode": 3,
+    "route": "B open coherent H3/address-environment bath",
+    "source_sink_renewal_derived": false,
+    "uniform_reduced_address_residual": 1.5700924586837752e-16,
+    "uniform_reduced_environment_residual": 1.5700924586837752e-16
+  },
+  "route_C": {
+    "bath_law_sha256": "ea1150b018833b032fd5bb0b9fa1466d54140f33e5897623efa0318d7864c175",
+    "feedback_deletion_residual": 1.4142135623730951,
+    "inverse_failures": 0,
+    "law_contains_ROM_table_or_grade": false,
+    "orbit_from_one": [
+      3,
+      7,
+      6,
+      5,
+      2,
+      4,
+      1
+    ],
+    "pass": true,
+    "permutation_orbit_failures": 0,
+    "route": "C table-independent reversible seven-cycle LFSR typicality comparator",
+    "seven_orbit_address_to_uniform8_L1_residual": 0.24999999999999994,
+    "static_nearest_neighbor_line_compiler": {
+      "adjacent_route_and_return_SWAPS": 4,
+      "all24_line_edge_failures": 0,
+      "all24_line_edge_tests": 48,
+      "line_M2": 3,
+      "literal_one_M2_primitives": 0,
+      "literal_two_M2_core_primitives": 3,
+      "logical_Toffoli": 0,
+      "maximum_unrouted_operand_distance": 2,
+      "nearest_neighbor_two_M2_calls": 7,
+      "ordered_operand_failures": 0,
+      "pass": true,
+      "proper_cubic_frames": 24,
+      "route_adjacency_failures": 0,
+      "route_manifest_sha256": "804c490c2e6e6d7c6376a2597c2874c546a734f74f982e0c7b0a9c07d168c8f0",
+      "runtime_data_selects_route": false,
+      "terminal_wire_restoration_failures": 0
+    },
+    "typicality_measure_or_objective_genesis_derived": false,
+    "unchanged_ROM_frequency_rows": [
+      {
+        "L1_residual": 0.21428571428571425,
+        "program": 0,
+        "seven_orbit_history_frequency": [
+          0.14285714285714285,
+          0.0,
+          0.0,
+          0.2857142857142857,
+          0.0,
+          0.2857142857142857,
+          0.2857142857142857,
+          0.0
+        ],
+        "target_table_grade": [
+          0.25,
+          0.0,
+          0.0,
+          0.25,
+          0.0,
+          0.25,
+          0.25,
+          0.0
+        ]
+      },
+      {
+        "L1_residual": 0.14285714285714285,
+        "program": 1,
+        "seven_orbit_history_frequency": [
+          0.42857142857142855,
+          0.0,
+          0.0,
+          0.0,
+          0.5714285714285714,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "target_table_grade": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "L1_residual": 0.17857142857142855,
+        "program": 2,
+        "seven_orbit_history_frequency": [
+          0.2857142857142857,
+          0.0,
+          0.14285714285714285,
+          0.0,
+          0.42857142857142855,
+          0.0,
+          0.14285714285714285,
+          0.0
+        ],
+        "target_table_grade": [
+          0.375,
+          0.0,
+          0.125,
+          0.0,
+          0.375,
+          0.0,
+          0.125,
+          0.0
+        ]
+      }
+    ],
+    "zero_fixed_orbit": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "summary": {
+    "audit": "unset",
+    "authority": "none",
+    "axiom_pressure": null,
+    "derived_Born_probability": null,
+    "framework_Record": null,
+    "objective_actuality": null,
+    "stochastic_mixing": null,
+    "strongest_result": "TI catalytic one-carrier address bath with exact uniform orbit-index marginal feeding unchanged Cycle592/552/531"
+  }
+}
+RESULT pass=6 fail=0
+authority=none; audit=unset; coherent sectors are not objective actuality; packet is not Record; frequency is not probability; spent token is not energy; schedule is not time
+       87.18 real        84.75 user         0.82 sys
+           910458880  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              226850  page reclaims
+                 521  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1177  voluntary context switches
+               94030  involuntary context switches
+       1262952394565  instructions retired
+        293577998998  cycles elapsed
+          1033405640  peak memory footprint

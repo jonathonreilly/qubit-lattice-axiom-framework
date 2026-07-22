@@ -85,7 +85,7 @@
         },
         {
           "claim_id": "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "three_generation_observable_count_corollary_note_2026-05-03",
@@ -2273,7 +2273,7 @@
         },
         {
           "claim_id": "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
@@ -2811,6 +2811,6 @@
       "uncertified_count": 645
     }
   ],
-  "repo_head": "781e13c9ebd916572b616bb6f3c322831ac168a6",
+  "repo_head": "0588877da78f12bdf6b9b3140f5e79507fead566",
   "schema": "lane_certification_v2"
 }

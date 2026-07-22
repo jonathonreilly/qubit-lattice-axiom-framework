@@ -1,0 +1,1693 @@
+{
+  "Cycle537_fill_disk_cold_comparator": {
+    "alternative_route_discriminators": {
+      "fan_disk_disposition": "rank-correct and dihedral-covariant, but the center-star check grows with L",
+      "pass": true,
+      "ring_relational_field_disposition": "local and covariant but leaves three replacement logicals; it is not the target factor",
+      "rooted_chain_disposition": "rank-correct but one linear local-algebra dressing grows across the root cut",
+      "rows": [
+        {
+          "fan_center_star_weight": 5,
+          "length": 5,
+          "ring_fill_added_M2_per_axis": 5,
+          "ring_fill_checks_per_axis": 5,
+          "ring_fill_net_exponent_reduction_per_axis": 0,
+          "rooted_linear_dressing_maximum_X_support": 4,
+          "rooted_open_chain_added_M2_per_axis": 4,
+          "rooted_open_chain_checks_per_axis": 5
+        },
+        {
+          "fan_center_star_weight": 6,
+          "length": 6,
+          "ring_fill_added_M2_per_axis": 6,
+          "ring_fill_checks_per_axis": 6,
+          "ring_fill_net_exponent_reduction_per_axis": 0,
+          "rooted_linear_dressing_maximum_X_support": 5,
+          "rooted_open_chain_added_M2_per_axis": 5,
+          "rooted_open_chain_checks_per_axis": 6
+        }
+      ],
+      "square_fill_disposition": "bounded face/star constraints and exact target factor; fixed old-periodic embedding remains open"
+    },
+    "audit": "unset",
+    "authority": "none",
+    "boundary": {
+      "axiom_pressure": false,
+      "bounded_state_preparation_circuit_closed": false,
+      "broad_negative_gate": "FAIL / DO NOT SHIP",
+      "fixed_single_frame_independent_physical_embedding_closed": false,
+      "fixed_target_tensor_gauge_algebra_closed": true,
+      "new_cap_sheet_topology_imported": true,
+      "shared_substrate_obstruction": false,
+      "three_Wilson_words_in_span_of_bounded_local_fill_checks": true,
+      "unconditional_existing_M2_substrate_compiler_claimed": false
+    },
+    "causal_type_boundary": {
+      "algebraic_factorization_called_realized_encoding": false,
+      "fill_schedule_called_physical_time": false,
+      "phase_called_physical_energy": false,
+      "puncture_state_called_Record": false
+    },
+    "constitutional_effect": "none",
+    "covariance": {
+      "L5_held_L6_fill_orbits": [
+        {
+          "axis_position_labels": 15,
+          "frame_group_failures": 0,
+          "frame_orbit_failures": 0,
+          "held": false,
+          "length": 5,
+          "pass": true,
+          "presentation_digests": [
+            "6ba88f92bf24a21dcd8008c6445ead729b294886e3a7e002cd0b82ad93b59bd4",
+            "a85ccbfef07512094312ca98cc1146333a7d435eb0ecbd99f6b6b940c68c9ec1",
+            "3f8511cb07e9282065e6631f73876d10a06695c20ec29c89a516d7e32e31f4b2",
+            "2237faba6be66c72ed41bd873a8f501d71b8394ef2b4d7c3a198b02b1ae92cdd",
+            "d4153608f422757d20ca69461a6a756e6465a446ccb5739c7801a8c312c209bf",
+            "8004e255520d2e15a9868bfb19ab9d40b30c97bcdacb94e300820b4485e172b1",
+            "be8344fd0e25e8d5083db24818d970c446d961b3ccf5627ae14c4a005f6c9a7b",
+            "256fe41080cb4e3f90e08c64df4715fcf6d3c5187b3e076bb5d6c84b31f74ade",
+            "64345e5a962d6a258c1a3aa0aaeada32dc396dfac4d521f85e15724251d6cb80",
+            "eb70110ec0f71dd1b11193f855a387ffcd129a13965cabffb1c7383acc9490d9",
+            "72e8dbb13edc9555f2ed5245adc11152889298361069241886638d2e355ea3e2",
+            "41cfaecf80dd1e5f4fd7d974a1cf980f599f83b39a78ab81b042f8f5585a950c",
+            "3b95d8750e72e05f257e59ea24c58f1dbb72e41de048e80d14c85359d104f6ca",
+            "3b26f510941c13d33813cdcefa780f45397fd854bfa549cdd5a223cbcae25ff3",
+            "57af600086c58fdda50f85bcdf09a0b5941825406b87f296b93c9c415782df06",
+            "28bb6b8f6f9e47dd83ba4456f29de9a027aa77a11aecd11109ef88e2293f6499",
+            "0e18d54f8800d7175906568f39d010fb02b94bcca7ab9f419981ce46c6a56fe5",
+            "913922111c37b3bc050c42c0f0ee461409059f10ee0a3f24cf0df1efbe3755da",
+            "ab8e60cc21bc0d13e3ee5b8c87124b62de016280f81526d5232cf208108e113b",
+            "34da2823d488c92115debd360b7df4334751ac569fab1637c5011a26954e1585",
+            "b702bfd33f92f7bc0622378482f6ae6aa76276a9d2dc8d50a08719ba54468949",
+            "38be33561c48dfe0d5eac9e79a076823a2beb85eff4d7cde25aa919bba34f111",
+            "87e907b18fa0a874d0ee3746f38cc8a026010bc3781dfcb38fa1eaafebd8a9bf",
+            "e10ae5538484f0a56ced602dba18b277b00d4e9ed997fb1f4674419bfda831cd"
+          ]
+        },
+        {
+          "axis_position_labels": 18,
+          "frame_group_failures": 0,
+          "frame_orbit_failures": 0,
+          "held": true,
+          "length": 6,
+          "pass": true,
+          "presentation_digests": [
+            "96a939ba8cbd3fc48b8ab5e173bb494c3888a049b1f60ea7af54cd22b6eb0ab2",
+            "5cc0dd94baa89b411d4df8f274476eea3563d593d5282edbbf61afb918d3e377",
+            "c4c81a761af05343249f14713eeed99ea5a727e998e417f1db3de6165d232659",
+            "d5d28f2dddff504c29be187e62f3a265a5813d44cc0ecc1c88891944db855807",
+            "0f85b70d36e507e7c7803c7546d0775258f47154aee09e6f097dcccaac727afa",
+            "056bfd08670838904109c60266d4c9e2494325b652e33f759a2225f851ca7bf5",
+            "8e24e8f06310b99f0f43ed9ca767eaaa2b883c20697616f4079406efe4f274c0",
+            "d814d845af079abd9debb934a318c3728f41d200ed3d1ec1d07dcac449ca42f3",
+            "fbe4f21aa396383c23674e27a1aa6a8a065a3cb4d5217913400d3968f6136b65",
+            "d1d0a842eb552c791e64b07ab92837bb894e8f2c6a319d39cecf4b75d04f97e9",
+            "3d98c77d9ff37652f774056284d0f21d64c337b833967e74ff05d94e6e86ebc2",
+            "63028444169bcf88387c2de9ec1ab1a76cf25bcba1232cc520dc65f7e1f7a994",
+            "4c423c6350b5d6333617b5569dc2126ffff759c56ee9c292fb7478b46c17a8c8",
+            "ec07c6fdcb2afde153d70105938e6e28853756006b769e051392abbda33c499f",
+            "b9e85bd769009b69e6c1790b113cceaa17761add7873c03d915d494ee8987453",
+            "4b7660577920e7b3c6f168f0124588134b2c9f74f08b19ea82c3e4a11e0b0f74",
+            "e297d5080470bf9a0910b6c23f2441bb08a1e7bc691013a15aa3caf0edbec33d",
+            "44e6aa7a3b7ed82eb3228b97e2866fc90707db72ef1f69772e4856ff4c344c3a",
+            "c67c07ab11aae1b9c6a528b7411b1bbc3d4297167270d296e9391402ccd7d8ac",
+            "5631653a6026369b23c75e2ac2af622fb8351b625302686866c2c21c816cf808",
+            "8cbeabd60936da5618ab64519b12ddbe1771121775213fa3e11176b0b5873c03",
+            "0ec6ca4446933aa9d5ecc54b1fe03a155580d34f81f721a0f42cef8b44a29553",
+            "9c128ee85e94abcea1df40d62dde6713c408bd02c40dce6d91dc4f8134a3a68d",
+            "e4a9709c0b176f6c84bd87a206319839a1f0b4055060aac3f8c8b0f32aa0bac1"
+          ]
+        }
+      ],
+      "compile_time_retriangulated_fill_orbit": true,
+      "frame_products": 576,
+      "mapped_fill_presentation_digests": [
+        "6ba88f92bf24a21dcd8008c6445ead729b294886e3a7e002cd0b82ad93b59bd4",
+        "a85ccbfef07512094312ca98cc1146333a7d435eb0ecbd99f6b6b940c68c9ec1",
+        "3f8511cb07e9282065e6631f73876d10a06695c20ec29c89a516d7e32e31f4b2",
+        "2237faba6be66c72ed41bd873a8f501d71b8394ef2b4d7c3a198b02b1ae92cdd",
+        "d4153608f422757d20ca69461a6a756e6465a446ccb5739c7801a8c312c209bf",
+        "8004e255520d2e15a9868bfb19ab9d40b30c97bcdacb94e300820b4485e172b1",
+        "be8344fd0e25e8d5083db24818d970c446d961b3ccf5627ae14c4a005f6c9a7b",
+        "256fe41080cb4e3f90e08c64df4715fcf6d3c5187b3e076bb5d6c84b31f74ade",
+        "64345e5a962d6a258c1a3aa0aaeada32dc396dfac4d521f85e15724251d6cb80",
+        "eb70110ec0f71dd1b11193f855a387ffcd129a13965cabffb1c7383acc9490d9",
+        "72e8dbb13edc9555f2ed5245adc11152889298361069241886638d2e355ea3e2",
+        "41cfaecf80dd1e5f4fd7d974a1cf980f599f83b39a78ab81b042f8f5585a950c",
+        "3b95d8750e72e05f257e59ea24c58f1dbb72e41de048e80d14c85359d104f6ca",
+        "3b26f510941c13d33813cdcefa780f45397fd854bfa549cdd5a223cbcae25ff3",
+        "57af600086c58fdda50f85bcdf09a0b5941825406b87f296b93c9c415782df06",
+        "28bb6b8f6f9e47dd83ba4456f29de9a027aa77a11aecd11109ef88e2293f6499",
+        "0e18d54f8800d7175906568f39d010fb02b94bcca7ab9f419981ce46c6a56fe5",
+        "913922111c37b3bc050c42c0f0ee461409059f10ee0a3f24cf0df1efbe3755da",
+        "ab8e60cc21bc0d13e3ee5b8c87124b62de016280f81526d5232cf208108e113b",
+        "34da2823d488c92115debd360b7df4334751ac569fab1637c5011a26954e1585",
+        "b702bfd33f92f7bc0622378482f6ae6aa76276a9d2dc8d50a08719ba54468949",
+        "38be33561c48dfe0d5eac9e79a076823a2beb85eff4d7cde25aa919bba34f111",
+        "87e907b18fa0a874d0ee3746f38cc8a026010bc3781dfcb38fa1eaafebd8a9bf",
+        "e10ae5538484f0a56ced602dba18b277b00d4e9ed997fb1f4674419bfda831cd",
+        "96a939ba8cbd3fc48b8ab5e173bb494c3888a049b1f60ea7af54cd22b6eb0ab2",
+        "5cc0dd94baa89b411d4df8f274476eea3563d593d5282edbbf61afb918d3e377",
+        "c4c81a761af05343249f14713eeed99ea5a727e998e417f1db3de6165d232659",
+        "d5d28f2dddff504c29be187e62f3a265a5813d44cc0ecc1c88891944db855807",
+        "0f85b70d36e507e7c7803c7546d0775258f47154aee09e6f097dcccaac727afa",
+        "056bfd08670838904109c60266d4c9e2494325b652e33f759a2225f851ca7bf5",
+        "8e24e8f06310b99f0f43ed9ca767eaaa2b883c20697616f4079406efe4f274c0",
+        "d814d845af079abd9debb934a318c3728f41d200ed3d1ec1d07dcac449ca42f3",
+        "fbe4f21aa396383c23674e27a1aa6a8a065a3cb4d5217913400d3968f6136b65",
+        "d1d0a842eb552c791e64b07ab92837bb894e8f2c6a319d39cecf4b75d04f97e9",
+        "3d98c77d9ff37652f774056284d0f21d64c337b833967e74ff05d94e6e86ebc2",
+        "63028444169bcf88387c2de9ec1ab1a76cf25bcba1232cc520dc65f7e1f7a994",
+        "4c423c6350b5d6333617b5569dc2126ffff759c56ee9c292fb7478b46c17a8c8",
+        "ec07c6fdcb2afde153d70105938e6e28853756006b769e051392abbda33c499f",
+        "b9e85bd769009b69e6c1790b113cceaa17761add7873c03d915d494ee8987453",
+        "4b7660577920e7b3c6f168f0124588134b2c9f74f08b19ea82c3e4a11e0b0f74",
+        "e297d5080470bf9a0910b6c23f2441bb08a1e7bc691013a15aa3caf0edbec33d",
+        "44e6aa7a3b7ed82eb3228b97e2866fc90707db72ef1f69772e4856ff4c344c3a",
+        "c67c07ab11aae1b9c6a528b7411b1bbc3d4297167270d296e9391402ccd7d8ac",
+        "5631653a6026369b23c75e2ac2af622fb8351b625302686866c2c21c816cf808",
+        "8cbeabd60936da5618ab64519b12ddbe1771121775213fa3e11176b0b5873c03",
+        "0ec6ca4446933aa9d5ecc54b1fe03a155580d34f81f721a0f42cef8b44a29553",
+        "9c128ee85e94abcea1df40d62dde6713c408bd02c40dce6d91dc4f8134a3a68d",
+        "e4a9709c0b176f6c84bd87a206319839a1f0b4055060aac3f8c8b0f32aa0bac1"
+      ],
+      "one_fixed_frame_independent_cap_triangulation_claimed": false,
+      "pass": true,
+      "proper_cubic_frames": 24,
+      "rough_fixed_target_frame_and_group_certificate": {
+        "abstract_chart_orbit_substituted": false,
+        "active_runtime_frame_selector": false,
+        "fixed_all_plus_Wilson_code_frame_failures": 0,
+        "frame_products": 576,
+        "gauge_A_frame_failures": 0,
+        "gauge_Z_frame_failures": 0,
+        "length": 3,
+        "pass": true,
+        "proper_cubic_frames": 24,
+        "single_face_X_Z_group_law_cases": 684288,
+        "single_face_X_Z_group_law_mismatches": 0
+      },
+      "runtime_frame_query": false,
+      "statement": "all 24 frame-specific cap presentations and all 576 signed-axis compositions close; a single embedded cap triangulation is not claimed"
+    },
+    "deletions": {
+      "delete_one_dressing_X": {
+        "deleted_disk_X_site": 594,
+        "fill_face_syndrome_violations": 2,
+        "original_added_X": 2
+      },
+      "delete_one_fill_face_Wilson_rank_increment": 1,
+      "delete_one_fill_face_rank": 441,
+      "delete_one_fill_star_rank": 441,
+      "deleted_FSWAP_fourth_term_residual": 1.0,
+      "full_stabilizer_rank": 442,
+      "pass": true,
+      "phase_inconsistencies_full_face_deleted_star_deleted": [
+        0,
+        0,
+        0
+      ]
+    },
+    "explicit_encoding_status": {
+      "abstract_quotient_called_encoding": false,
+      "code_space_isometry_or_state_preparation_circuit_constructed": false,
+      "local_stabilizer_and_operator_presentation_constructed": true,
+      "ordinary_period32_three_dimensional_cap_embedding_constructed": false
+    },
+    "factorization_L5_L6": [
+      {
+        "Wilson_initializer_rows_supplied": 0,
+        "Wilson_rank_increments_after_local_fill": [
+          0,
+          0,
+          0
+        ],
+        "added_fill_M2": 120,
+        "average_M2_per_coarse_cell": 22.96,
+        "both_matter_parity_sectors_nonempty": true,
+        "coarse_cells": 125,
+        "code_exponent": 874,
+        "expected_target_parity_plus_gauge_exponent": 873,
+        "explicit_dressed_gauge_exhausts_commutant": true,
+        "factorization": "H_local-fill = H_target-full-Fock tensor H_(N-1)-gauge, sectorwise across the shared matter/gauge parity center",
+        "fill_constraint_minus_added_M2_per_axis": 1,
+        "fill_constraint_mutual_commutator_failures": 0,
+        "fill_disk_interior_edge_M2_per_axis": 40,
+        "fill_faces_per_axis": 25,
+        "fill_interior_stars_per_axis": 16,
+        "fixed_parity_sector_exponent": 873,
+        "full_matter_commutant_dimension": 249,
+        "full_matter_commutant_symplectic_rank": 248,
+        "gauge_matter_commutator_failures": 0,
+        "gauge_qubits": 124,
+        "gauge_quotient_dimension": 249,
+        "gauge_stabilizer_commutator_failures": 0,
+        "gauge_symplectic_rank": 248,
+        "held": false,
+        "length": 5,
+        "matter_gauge_parities_equal_on_code": true,
+        "matter_quotient_dimension": 1499,
+        "matter_stabilizer_commutator_failures": 0,
+        "matter_symplectic_rank": 1498,
+        "maximum_added_disk_X_by_family": {
+          "gauge": 4,
+          "local": 9,
+          "matter": 4
+        },
+        "maximum_dual_path_edges_by_family": {
+          "gauge": 4,
+          "local": 4,
+          "matter": 4
+        },
+        "maximum_support_M2": {
+          "dressed_gauge": 22,
+          "dressed_local_constraint": 34,
+          "dressed_matter": 14,
+          "fill_X_star": 4,
+          "fill_Z_face": 11
+        },
+        "pass": true,
+        "resource": {
+          "elapsed_seconds": 6.284898417070508,
+          "label": "Cycle537-factorization-L5",
+          "maximum_RSS_bytes": 289423360,
+          "process_swap_count": 0
+        },
+        "rough_M2": 2750,
+        "stabilizer_rank": 1996,
+        "target_Fock_exponent": 750,
+        "total_M2": 2870
+      },
+      {
+        "Wilson_initializer_rows_supplied": 0,
+        "Wilson_rank_increments_after_local_fill": [
+          0,
+          0,
+          0
+        ],
+        "added_fill_M2": 180,
+        "average_M2_per_coarse_cell": 22.833333333333332,
+        "both_matter_parity_sectors_nonempty": true,
+        "coarse_cells": 216,
+        "code_exponent": 1511,
+        "expected_target_parity_plus_gauge_exponent": 1510,
+        "explicit_dressed_gauge_exhausts_commutant": true,
+        "factorization": "H_local-fill = H_target-full-Fock tensor H_(N-1)-gauge, sectorwise across the shared matter/gauge parity center",
+        "fill_constraint_minus_added_M2_per_axis": 1,
+        "fill_constraint_mutual_commutator_failures": 0,
+        "fill_disk_interior_edge_M2_per_axis": 60,
+        "fill_faces_per_axis": 36,
+        "fill_interior_stars_per_axis": 25,
+        "fixed_parity_sector_exponent": 1510,
+        "full_matter_commutant_dimension": 431,
+        "full_matter_commutant_symplectic_rank": 430,
+        "gauge_matter_commutator_failures": 0,
+        "gauge_qubits": 215,
+        "gauge_quotient_dimension": 431,
+        "gauge_stabilizer_commutator_failures": 0,
+        "gauge_symplectic_rank": 430,
+        "held": true,
+        "length": 6,
+        "matter_gauge_parities_equal_on_code": true,
+        "matter_quotient_dimension": 2591,
+        "matter_stabilizer_commutator_failures": 0,
+        "matter_symplectic_rank": 2590,
+        "maximum_added_disk_X_by_family": {
+          "gauge": 4,
+          "local": 9,
+          "matter": 4
+        },
+        "maximum_dual_path_edges_by_family": {
+          "gauge": 4,
+          "local": 4,
+          "matter": 4
+        },
+        "maximum_support_M2": {
+          "dressed_gauge": 22,
+          "dressed_local_constraint": 34,
+          "dressed_matter": 14,
+          "fill_X_star": 4,
+          "fill_Z_face": 11
+        },
+        "pass": true,
+        "resource": {
+          "elapsed_seconds": 26.940861665992998,
+          "label": "Cycle537-factorization-L6",
+          "maximum_RSS_bytes": 321421312,
+          "process_swap_count": 0
+        },
+        "rough_M2": 4752,
+        "stabilizer_rank": 3421,
+        "target_Fock_exponent": 1296,
+        "total_M2": 4932
+      }
+    ],
+    "inherited_target": {
+      "FSWAP_polynomial_inverse": {
+        "deleted_fourth_term_residual": 1.0,
+        "inverse_square_residual": 0.0,
+        "matrix_residual": 0.0,
+        "pass": true,
+        "perturbed_phase_basis_residual": 9.999999995833334e-05,
+        "unitarity_residual": 0.0
+      },
+      "full_Fock_Gamma_P": {
+        "Cycle529_15_call_chart_runtime_retained_literally": false,
+        "Cycle529_chart_CZ_and_bank_SWAP_calls_removed_modulo_gauge": 12,
+        "complete_low_sector_censuses": [
+          {
+            "complete_tests": 281626,
+            "deleted_CZ_basis_residual": 2,
+            "deleted_CZ_layer_first_witness": [
+              0,
+              1
+            ],
+            "deleted_CZ_layer_phase_failures": 60600,
+            "deleted_bank_SWAP_code_failures": 281250,
+            "deleted_bank_SWAP_first_witness": [
+              0
+            ],
+            "inverse_roundtrip_failures": 0,
+            "length": 5,
+            "modes": 750,
+            "pass": true,
+            "perturbed_first_active_CZ_basis_residual": 9.999999995833334e-05,
+            "sectors": {
+              "one_particle": {
+                "bank_failures": 0,
+                "inverse_failures": 0,
+                "phase_failures": 0,
+                "tests": 750
+              },
+              "two_particle": {
+                "bank_failures": 0,
+                "inverse_failures": 0,
+                "phase_failures": 0,
+                "tests": 280875
+              },
+              "vacuum": {
+                "bank_failures": 0,
+                "inverse_failures": 0,
+                "phase_failures": 0,
+                "tests": 1
+              }
+            },
+            "terminal_code_leakage_failures": 0
+          },
+          {
+            "complete_tests": 840457,
+            "deleted_CZ_basis_residual": 2,
+            "deleted_CZ_layer_first_witness": [
+              0,
+              1
+            ],
+            "deleted_CZ_layer_phase_failures": 154800,
+            "deleted_bank_SWAP_code_failures": 839808,
+            "deleted_bank_SWAP_first_witness": [
+              0
+            ],
+            "inverse_roundtrip_failures": 0,
+            "length": 6,
+            "modes": 1296,
+            "pass": true,
+            "perturbed_first_active_CZ_basis_residual": 9.999999995833334e-05,
+            "sectors": {
+              "one_particle": {
+                "bank_failures": 0,
+                "inverse_failures": 0,
+                "phase_failures": 0,
+                "tests": 1296
+              },
+              "two_particle": {
+                "bank_failures": 0,
+                "inverse_failures": 0,
+                "phase_failures": 0,
+                "tests": 839160
+              },
+              "vacuum": {
+                "bank_failures": 0,
+                "inverse_failures": 0,
+                "phase_failures": 0,
+                "tests": 1
+              }
+            },
+            "terminal_code_leakage_failures": 0
+          }
+        ],
+        "higher_sector_controls": [
+          {
+            "Cycle525_matching_three_cell_dimension": true,
+            "deterministic_high_sector_failures": {
+              "bank_failure": 0,
+              "inverse_failure": 0,
+              "phase_failure": 0,
+              "target_failure": 0
+            },
+            "deterministic_high_sector_tests": 120,
+            "deterministic_high_sector_weights": [
+              4,
+              6,
+              187,
+              375,
+              749
+            ],
+            "length": 5,
+            "pass": true,
+            "three_cell_corner_total_N_le_3": {
+              "failures": {
+                "bank_failure": 0,
+                "inverse_failure": 0,
+                "phase_failure": 0,
+                "target_failure": 0
+              },
+              "pass": true,
+              "tests": 988
+            },
+            "three_cell_straight_total_N_le_3": {
+              "failures": {
+                "bank_failure": 0,
+                "inverse_failure": 0,
+                "phase_failure": 0,
+                "target_failure": 0
+              },
+              "pass": true,
+              "tests": 988
+            },
+            "two_cell_full_Fock": {
+              "failures": {
+                "bank_failure": 0,
+                "inverse_failure": 0,
+                "phase_failure": 0,
+                "target_failure": 0
+              },
+              "pass": true,
+              "tests": 4096
+            }
+          },
+          {
+            "Cycle525_matching_three_cell_dimension": true,
+            "deterministic_high_sector_failures": {
+              "bank_failure": 0,
+              "inverse_failure": 0,
+              "phase_failure": 0,
+              "target_failure": 0
+            },
+            "deterministic_high_sector_tests": 120,
+            "deterministic_high_sector_weights": [
+              4,
+              6,
+              324,
+              648,
+              1295
+            ],
+            "length": 6,
+            "pass": true,
+            "three_cell_corner_total_N_le_3": {
+              "failures": {
+                "bank_failure": 0,
+                "inverse_failure": 0,
+                "phase_failure": 0,
+                "target_failure": 0
+              },
+              "pass": true,
+              "tests": 988
+            },
+            "three_cell_straight_total_N_le_3": {
+              "failures": {
+                "bank_failure": 0,
+                "inverse_failure": 0,
+                "phase_failure": 0,
+                "target_failure": 0
+              },
+              "pass": true,
+              "tests": 988
+            },
+            "two_cell_full_Fock": {
+              "failures": {
+                "bank_failure": 0,
+                "inverse_failure": 0,
+                "phase_failure": 0,
+                "target_failure": 0
+              },
+              "pass": true,
+              "tests": 4096
+            }
+          }
+        ],
+        "pass": true,
+        "quadratic_full_Fock_theorems": [
+          {
+            "coefficient_identity_failures": 0,
+            "first_failure": null,
+            "full_Fock_extension": "both exterior and endpoint signs are quadratic occupation characters; coefficient equality plus zero constant/linear terms proves every sector",
+            "length": 5,
+            "mode_pairs": 280875,
+            "pass": true,
+            "quadratic_residual_coefficients": 60600,
+            "symmetric_residual_matrix_GF2_rank": 576,
+            "vacuum_linear_or_constant_residual_terms": 0
+          },
+          {
+            "coefficient_identity_failures": 0,
+            "first_failure": null,
+            "full_Fock_extension": "both exterior and endpoint signs are quadratic occupation characters; coefficient equality plus zero constant/linear terms proves every sector",
+            "length": 6,
+            "mode_pairs": 839160,
+            "pass": true,
+            "quadratic_residual_coefficients": 154800,
+            "symmetric_residual_matrix_GF2_rank": 1040,
+            "vacuum_linear_or_constant_residual_terms": 0
+          }
+        ],
+        "rough_gauge_B_blocks_per_cell": 3,
+        "rough_pullback_statement": "each mapped outer-edge FSWAP is the exact B/A polynomial; the faithful matter quotient therefore pulls the product back to Gamma(P)"
+      },
+      "mass_contact_and_seam": {
+        "Cycle219_mass_fixture_residual": 2.220446049250313e-16,
+        "Cycle230_contact_active_two_particle_states": 15,
+        "Cycle230_contact_deletion_residual": 0.36789306705608243,
+        "Cycle230_seam_singular_values": [
+          0.49577140670498115,
+          0.45566604871445016
+        ],
+        "Cycle230_seam_subchecks": {
+          "fail": 0,
+          "pass": 6
+        },
+        "Cycle523_full_M64_onsite_pass": true,
+        "correlated_shadow_coin_and_reverse_A_transition_synthesized": false,
+        "full_update_physical_intertwiner_claimed": false,
+        "interpretation": "re-executed logical comparators; preservation follows conditionally through the faithful fixed-spin matter factor, not through a prepared E circuit",
+        "onsite_intertwiner_residual": 5.272182555577386e-15,
+        "onsite_inverse_residual": 7.504184205291937e-15,
+        "onsite_leakage_residual": 0.0,
+        "pass": true,
+        "rough_code_mass_contact_seam_matrix_enumerated": false
+      },
+      "pass": true
+    },
+    "mode": "fill-disk-certificate",
+    "onsite_contact_B_L5_L6": [
+      {
+        "B_FSWAP_blocks": 375,
+        "B_FSWAP_blocks_per_cell": 3.0,
+        "contact_pairs": 15,
+        "length": 5,
+        "maximum_dressed_B_FSWAP_block_support_M2": 17,
+        "maximum_dressed_contact_support_M2": 16,
+        "maximum_dressed_onsite_hopping_support_M2": 7,
+        "onsite_contact_gauge_failures": 0,
+        "onsite_contact_stabilizer_failures": 0,
+        "onsite_endpoint_incidence_failures": 0,
+        "onsite_pairs": 15,
+        "pass": true
+      },
+      {
+        "B_FSWAP_blocks": 648,
+        "B_FSWAP_blocks_per_cell": 3.0,
+        "contact_pairs": 15,
+        "length": 6,
+        "maximum_dressed_B_FSWAP_block_support_M2": 17,
+        "maximum_dressed_contact_support_M2": 16,
+        "maximum_dressed_onsite_hopping_support_M2": 7,
+        "onsite_contact_gauge_failures": 0,
+        "onsite_contact_stabilizer_failures": 0,
+        "onsite_endpoint_incidence_failures": 0,
+        "onsite_pairs": 15,
+        "pass": true
+      }
+    ],
+    "pass": true,
+    "resources": {
+      "checkpoints": [
+        {
+          "elapsed_seconds": 3.2499665394425392e-06,
+          "label": "initial",
+          "maximum_RSS_bytes": 224559104,
+          "process_swap_count": 0
+        },
+        {
+          "elapsed_seconds": 33.381369499955326,
+          "label": "L5-L6-fill-factorizations",
+          "maximum_RSS_bytes": 321421312,
+          "process_swap_count": 0
+        },
+        {
+          "elapsed_seconds": 40.91507374995854,
+          "label": "all24-576-fill-orbit",
+          "maximum_RSS_bytes": 321421312,
+          "process_swap_count": 0
+        },
+        {
+          "elapsed_seconds": 139.97729633399285,
+          "label": "deletions-alternatives-target",
+          "maximum_RSS_bytes": 321421312,
+          "process_swap_count": 0
+        }
+      ],
+      "elapsed_seconds": 139.97741724993102,
+      "hard_wall_seconds": 1200.0,
+      "maximum_RSS_bytes": 321421312,
+      "process_swap_count": 0
+    },
+    "revision": 1,
+    "status": "cycle537-local-fill-disk-algebraic-partial-closure",
+    "strongest_constructive_result": "three bounded square fill disks replace the three growing Wilson rows; their dressed L5/L6 code is exactly full-Fock target tensor N-1 gauge",
+    "supplied_structure_inventory": {
+      "Cycle219_coin_Cycle230_contact_and_factor_order": true,
+      "Cycle532_rough_graph_matter_and_gauge_Paulis": true,
+      "finite_periodic_L5_L6_domains": true,
+      "frame_specific_compile_time_retriangulation": true,
+      "growing_Wilson_initializer_rows": false,
+      "initial_local_stabilizer_state_preparation": false,
+      "old_period32_cap_sheet_embedding": false,
+      "one_macro_origin_and_three_axial_attachment_loops": true,
+      "runtime_sector_or_parity_query": false,
+      "three_square_cap_sheet_topologies": true
+    },
+    "tests": {
+      "L5_held_L6_local_fill_target_tensor_gauge": true,
+      "all24_576_compile_time_fill_presentation_orbit": true,
+      "both_parities_and_full_commutant": true,
+      "bounded_dressed_onsite_contact_and_B": true,
+      "dry_contract": true,
+      "full_Fock_GammaP_mass_contact_seam_preserved": true,
+      "inverse_leakage_and_deletions": true,
+      "resource_contract": true,
+      "ring_rooted_fan_route_discriminators": true,
+      "supply_boundary_and_no_axiom_pressure": true
+    },
+    "tests_passed": 10,
+    "tests_total": 10
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundaries": {
+    "Cycle537_fixed_old_substrate_cap_embedding_closed": false,
+    "arbitrary_rough_matter_to_selected_q_transducer_closed": false,
+    "axiom_pressure": false,
+    "bounded_autonomous_reference_controller_closed": false,
+    "broad_no_go_gate": "FAIL / DO NOT SHIP",
+    "fresh_entropy_reservoir_genesis_and_indefinite_renewal_closed": false,
+    "prepared_selected_N3_encoder_and_update_exact": true,
+    "product_to_fixed_selected_reference_exact": true,
+    "selected_auxiliary_blank_renewal_exact": true,
+    "shared_substrate_obstruction": false
+  },
+  "causal_type_boundary": {
+    "compiler_schedule_called_physical_time": false,
+    "generator_called_rate": false,
+    "preparation_called_Born_or_source_law": false,
+    "reset_environment_output_called_Record": false,
+    "wrapped_phase_called_physical_energy": false
+  },
+  "complete_selected_N3_encoders_L3_L4": [
+    {
+      "E_network_Gram_raw_maximum": 0,
+      "Wdagger_W_declared_input_residual": 0,
+      "complete_global_N0_N1_N2_N3": {
+        "complete_columns": 708724,
+        "occupation_partition_columns": {
+          "N0_vacuum": 1,
+          "N1_one_cell": 162,
+          "N2_same_cell": 405,
+          "N2_two_cells": 12636,
+          "N3_same_cell": 540,
+          "N3_three_cells": 631800,
+          "N3_two_plus_one": 63180
+        },
+        "ordinary_companion_columns": 708508,
+        "partition_sum": 708724,
+        "pass": true,
+        "same_cell_special_six_ray_columns": 216,
+        "sector_dimensions": {
+          "0": 1,
+          "1": 162,
+          "2": 13041,
+          "3": 695520
+        }
+      },
+      "controlled_single_Pauli_factors": 56835,
+      "fixed_cell_factor_order": "lexicographic base-chart order transported as an ordered circuit; it supplies no runtime parity sign, branch, sector, or frame query",
+      "global_CAR_modes": 162,
+      "global_Jordan_Wigner_string_or_parity_service": false,
+      "held_size": false,
+      "length": 3,
+      "local_ray_histogram": {
+        "2": 918,
+        "6": 216
+      },
+      "local_words_per_cell": 42,
+      "locally_enforced_constraint_audit": {
+        "fixed_check_cases": 939600,
+        "fixed_sector_commutator_failures": 0,
+        "port_constraint_cases": 507384,
+        "port_constraint_commutator_failures": 0,
+        "route_B_six_M2_number_predicate": true,
+        "route_C_three_M2_validity_and_blank_predicate": true,
+        "selected_entries": 3132
+      },
+      "maximum_local_ray_norm_error": 2.220446049250313e-16,
+      "maximum_single_representative_fine_L1_radius": 16,
+      "maximum_single_representative_support_M2": 32,
+      "pass": true,
+      "periodic_cells": 27,
+      "preparation_sha256": "d49f71de0f4fb016a72d731af0f10f8a207726dc23c0f84682ec511c625df09a",
+      "resource": {
+        "elapsed_seconds": 1.7017287909984589,
+        "label": "Cycle560-global-encoder-L3",
+        "maximum_RSS_bytes": 114688000,
+        "process_swap_count": 0
+      },
+      "route_B_one_hot": {
+        "branch_M2_per_cell": 6,
+        "decoder_uses_same_exhaustive_physical_pattern_theorem": true,
+        "deleted_first_Givens_minimum_residual": 0.41744238123296284,
+        "deleted_one_ordinary_companion_decoder_residual": 0.7071067811865475,
+        "deleted_one_special_pattern_decoder_row_residual": 0.4082482904638631,
+        "exact_Givens": 1998,
+        "exact_complete_global_inverse": true,
+        "locally_checked_number_one_then_terminal_zero": true,
+        "maximum_inverse_residual": 2.4196749845665633e-16,
+        "maximum_preparation_residual": 1.5700924586837752e-16,
+        "pass": true,
+        "terminal_branch_leakage": 0
+      },
+      "route_C_returned_slot": {
+        "all_N3_word_foreign_companion_flips": 0,
+        "deleted_first_Givens_minimum_residual": 0.41744238123296284,
+        "deleted_one_ordinary_companion_decoder_residual": 0.7071067811865475,
+        "deleted_one_special_pattern_decoder_row_residual": 0.4082482904638631,
+        "exact_Givens": 1998,
+        "exact_complete_global_inverse": true,
+        "foreign_vacuum_native_role_flips": 0,
+        "host_previous_branch_sector_parity_order_or_frame_query": false,
+        "invalid_values_rejected": 2,
+        "logical_slot_M2": 3,
+        "maximum_inverse_residual": 2.4196749845665633e-16,
+        "maximum_preparation_residual": 1.5700924586837752e-16,
+        "ordinary_branch_zero_companion_failures": 0,
+        "ordinary_companion_CNOT_words_per_cell": 34,
+        "ordinary_own_companion_failures": 0,
+        "pass": true,
+        "special_local_pattern_collisions": 0,
+        "special_local_pattern_decoder_rows": 1296,
+        "special_local_pattern_decoder_rows_per_cell": 48,
+        "terminal_slot_leakage": 0,
+        "valid_values": 6,
+        "why_complete_global_N3_follows": "ordinary words decode on a foreign-invariant companion; if the current word has six rays it already contains all three particles, so every foreign word is vacuum and neither vacuum ray flips any current native decoder role"
+      },
+      "selected_lookup_entries": 3132,
+      "selected_representative_union_M2": 621,
+      "special_pattern_sha256": "bccde2ffe56c5116ab802fb0c391529dfe1c793c2c5ce6c718adff282375f123",
+      "unique_companion_pivots": 27
+    },
+    {
+      "E_network_Gram_raw_maximum": 0,
+      "Wdagger_W_declared_input_residual": 0,
+      "complete_global_N0_N1_N2_N3": {
+        "complete_columns": 9437505,
+        "occupation_partition_columns": {
+          "N0_vacuum": 1,
+          "N1_one_cell": 384,
+          "N2_same_cell": 960,
+          "N2_two_cells": 72576,
+          "N3_same_cell": 1280,
+          "N3_three_cells": 8999424,
+          "N3_two_plus_one": 362880
+        },
+        "ordinary_companion_columns": 9436993,
+        "partition_sum": 9437505,
+        "pass": true,
+        "same_cell_special_six_ray_columns": 512,
+        "sector_dimensions": {
+          "0": 1,
+          "1": 384,
+          "2": 73536,
+          "3": 9363584
+        }
+      },
+      "controlled_single_Pauli_factors": 132936,
+      "fixed_cell_factor_order": "lexicographic base-chart order transported as an ordered circuit; it supplies no runtime parity sign, branch, sector, or frame query",
+      "global_CAR_modes": 384,
+      "global_Jordan_Wigner_string_or_parity_service": false,
+      "held_size": true,
+      "length": 4,
+      "local_ray_histogram": {
+        "2": 2176,
+        "6": 512
+      },
+      "local_words_per_cell": 42,
+      "locally_enforced_constraint_audit": {
+        "fixed_check_cases": 5248768,
+        "fixed_sector_commutator_failures": 0,
+        "port_constraint_cases": 2850816,
+        "port_constraint_commutator_failures": 0,
+        "route_B_six_M2_number_predicate": true,
+        "route_C_three_M2_validity_and_blank_predicate": true,
+        "selected_entries": 7424
+      },
+      "maximum_local_ray_norm_error": 2.220446049250313e-16,
+      "maximum_single_representative_fine_L1_radius": 16,
+      "maximum_single_representative_support_M2": 32,
+      "pass": true,
+      "periodic_cells": 64,
+      "preparation_sha256": "71da3bdd163dcde6d5f43cfd15fa7e8e574d5a6308834bc8185315b5c7cc2858",
+      "resource": {
+        "elapsed_seconds": 7.413976042065769,
+        "label": "Cycle560-global-encoder-L4",
+        "maximum_RSS_bytes": 131792896,
+        "process_swap_count": 0
+      },
+      "route_B_one_hot": {
+        "branch_M2_per_cell": 6,
+        "decoder_uses_same_exhaustive_physical_pattern_theorem": true,
+        "deleted_first_Givens_minimum_residual": 0.41744238123296284,
+        "deleted_one_ordinary_companion_decoder_residual": 0.7071067811865475,
+        "deleted_one_special_pattern_decoder_row_residual": 0.4082482904638631,
+        "exact_Givens": 4736,
+        "exact_complete_global_inverse": true,
+        "locally_checked_number_one_then_terminal_zero": true,
+        "maximum_inverse_residual": 2.4196749845665633e-16,
+        "maximum_preparation_residual": 1.5700924586837752e-16,
+        "pass": true,
+        "terminal_branch_leakage": 0
+      },
+      "route_C_returned_slot": {
+        "all_N3_word_foreign_companion_flips": 0,
+        "deleted_first_Givens_minimum_residual": 0.41744238123296284,
+        "deleted_one_ordinary_companion_decoder_residual": 0.7071067811865475,
+        "deleted_one_special_pattern_decoder_row_residual": 0.4082482904638631,
+        "exact_Givens": 4736,
+        "exact_complete_global_inverse": true,
+        "foreign_vacuum_native_role_flips": 0,
+        "host_previous_branch_sector_parity_order_or_frame_query": false,
+        "invalid_values_rejected": 2,
+        "logical_slot_M2": 3,
+        "maximum_inverse_residual": 2.4196749845665633e-16,
+        "maximum_preparation_residual": 1.5700924586837752e-16,
+        "ordinary_branch_zero_companion_failures": 0,
+        "ordinary_companion_CNOT_words_per_cell": 34,
+        "ordinary_own_companion_failures": 0,
+        "pass": true,
+        "special_local_pattern_collisions": 0,
+        "special_local_pattern_decoder_rows": 3072,
+        "special_local_pattern_decoder_rows_per_cell": 48,
+        "terminal_slot_leakage": 0,
+        "valid_values": 6,
+        "why_complete_global_N3_follows": "ordinary words decode on a foreign-invariant companion; if the current word has six rays it already contains all three particles, so every foreign word is vacuum and neither vacuum ray flips any current native decoder role"
+      },
+      "selected_lookup_entries": 7424,
+      "selected_representative_union_M2": 1472,
+      "special_pattern_sha256": "7b7b0c2899b879dabf6105f4653d403fbf2415393adc58dd326c923eb535dc49",
+      "unique_companion_pivots": 64
+    }
+  ],
+  "constitutional_effect": "none",
+  "dependency_ledger": {
+    "C_int": "retained: mass, contact, seam, inverse and held free-plus-contact intertwiner pass",
+    "C_local": "advances for reset/renewal and algebraic reference prep; growing routed phase program and rough-selected bridge remain",
+    "C_num": "retained: complete selected global N=0,1,2,3 L3/held-L4 code and update survive",
+    "C_ref": "advances materially: fixed selected reference has an exact product compiler and all auxiliary blanks have exact renewal; controller and reservoir genesis remain supplied",
+    "C_source": "unchanged",
+    "C_wrap": "unchanged: tree/program layers and reset rounds are not time or realized history"
+  },
+  "genesis_and_renewal_ledger": {
+    "arbitrary_rough_to_selected_bridge": "open",
+    "core_selected_reference_genesis": "exact from reset product by explicit Clifford; growing phase graph, root/tree and routed program remain supplied",
+    "entropy_destination": "explicit environment of one M2 per reset M2; environment output is not a Record",
+    "environment_genesis_and_indefinite_reuse": "fresh low-entropy reservoir supplied; no closed finite recurrent renewal law",
+    "q_genesis": "not reset or invented: q is declared input data on the lawful N<=3 domain",
+    "rough_gauge_genesis": "not required by product route and not derived",
+    "selected_auxiliary_renewal": "exact after every use; old auxiliary quantum state moves to environment",
+    "selected_port_branch_slot_work_rail_genesis": "exact from fresh colocated |0> environment by local SWAP"
+  },
+  "literal_M2_layouts_L3_L4": [
+    {
+      "B": {
+        "branch_or_slot_station_M2": 162,
+        "clean_local_conjunction_work_M2": 486,
+        "compiler_live_M2": 1431,
+        "compiler_live_M2_per_cell": 53.0,
+        "dedicated_blank_slot_rail_M2": 0,
+        "distinct_NN_route_edges": 53977,
+        "frame_group_failures": 0,
+        "frame_products": 576,
+        "held_size": false,
+        "length": 3,
+        "logical_returned_slot_M2": null,
+        "mapped_NN_edge_failures": 0,
+        "mapped_wire_injection_failures": 0,
+        "maximum_route_edges": 32,
+        "maximum_slot_rail_segment_edges": 0,
+        "pass": true,
+        "periodic_cells": 27,
+        "persistent_q_M2": 162,
+        "physical_q_collisions": 0,
+        "physical_selected_reference_M2": 621,
+        "proper_cubic_frames": 24,
+        "required_local_macro_pairs": 78588,
+        "resource": {
+          "elapsed_seconds": 13.006705291103572,
+          "label": "Cycle560-layout-B-L3",
+          "maximum_RSS_bytes": 119275520,
+          "process_swap_count": 0
+        },
+        "reverse_route_after_each_remote_macro": true,
+        "route": "B",
+        "route_edge_failures": 0,
+        "runtime_host_branch_sector_parity_order_or_frame_query": false,
+        "slot_rail_reversed_by_Wdagger": false,
+        "slot_rail_role_collisions": 0,
+        "slot_transport_policy": "six locally constrained one-hot M2 per cell",
+        "uniform_slot_station_offsets": [],
+        "wire_collisions": 0
+      },
+      "C": {
+        "branch_or_slot_station_M2": 81,
+        "clean_local_conjunction_work_M2": 486,
+        "compiler_live_M2": 3099,
+        "compiler_live_M2_per_cell": 114.77777777777777,
+        "dedicated_blank_slot_rail_M2": 1830,
+        "distinct_NN_route_edges": 53550,
+        "frame_group_failures": 0,
+        "frame_products": 576,
+        "held_size": false,
+        "length": 3,
+        "logical_returned_slot_M2": 3,
+        "mapped_NN_edge_failures": 0,
+        "mapped_wire_injection_failures": 0,
+        "maximum_route_edges": 48,
+        "maximum_slot_rail_segment_edges": 48,
+        "pass": true,
+        "periodic_cells": 27,
+        "persistent_q_M2": 162,
+        "physical_q_collisions": 0,
+        "physical_selected_reference_M2": 621,
+        "proper_cubic_frames": 24,
+        "required_local_macro_pairs": 72432,
+        "resource": {
+          "elapsed_seconds": 23.48351641697809,
+          "label": "Cycle560-layout-C-L3",
+          "maximum_RSS_bytes": 122454016,
+          "process_swap_count": 0
+        },
+        "reverse_route_after_each_remote_macro": true,
+        "route": "C",
+        "route_edge_failures": 0,
+        "runtime_host_branch_sector_parity_order_or_frame_query": false,
+        "slot_rail_reversed_by_Wdagger": true,
+        "slot_rail_role_collisions": 0,
+        "slot_transport_policy": "one logical three-M2 slot moves through a supplied dedicated blank three-lane rail in fixed factor order and returns blank at every station",
+        "uniform_slot_station_offsets": [
+          [
+            -2,
+            -1,
+            0
+          ],
+          [
+            -2,
+            0,
+            -1
+          ],
+          [
+            -2,
+            0,
+            1
+          ]
+        ],
+        "wire_collisions": 0
+      },
+      "length": 3
+    },
+    {
+      "B": {
+        "branch_or_slot_station_M2": 384,
+        "clean_local_conjunction_work_M2": 1152,
+        "compiler_live_M2": 3392,
+        "compiler_live_M2_per_cell": 53.0,
+        "dedicated_blank_slot_rail_M2": 0,
+        "distinct_NN_route_edges": 119994,
+        "frame_group_failures": 0,
+        "frame_products": 576,
+        "held_size": true,
+        "length": 4,
+        "logical_returned_slot_M2": null,
+        "mapped_NN_edge_failures": 0,
+        "mapped_wire_injection_failures": 0,
+        "maximum_route_edges": 32,
+        "maximum_slot_rail_segment_edges": 0,
+        "pass": true,
+        "periodic_cells": 64,
+        "persistent_q_M2": 384,
+        "physical_q_collisions": 0,
+        "physical_selected_reference_M2": 1472,
+        "proper_cubic_frames": 24,
+        "required_local_macro_pairs": 181864,
+        "resource": {
+          "elapsed_seconds": 31.210897792014293,
+          "label": "Cycle560-layout-B-L4",
+          "maximum_RSS_bytes": 162545664,
+          "process_swap_count": 0
+        },
+        "reverse_route_after_each_remote_macro": true,
+        "route": "B",
+        "route_edge_failures": 0,
+        "runtime_host_branch_sector_parity_order_or_frame_query": false,
+        "slot_rail_reversed_by_Wdagger": false,
+        "slot_rail_role_collisions": 0,
+        "slot_transport_policy": "six locally constrained one-hot M2 per cell",
+        "uniform_slot_station_offsets": [],
+        "wire_collisions": 0
+      },
+      "C": {
+        "branch_or_slot_station_M2": 192,
+        "clean_local_conjunction_work_M2": 1152,
+        "compiler_live_M2": 7142,
+        "compiler_live_M2_per_cell": 111.59375,
+        "dedicated_blank_slot_rail_M2": 4134,
+        "distinct_NN_route_edges": 119169,
+        "frame_group_failures": 0,
+        "frame_products": 576,
+        "held_size": true,
+        "length": 4,
+        "logical_returned_slot_M2": 3,
+        "mapped_NN_edge_failures": 0,
+        "mapped_wire_injection_failures": 0,
+        "maximum_route_edges": 48,
+        "maximum_slot_rail_segment_edges": 48,
+        "pass": true,
+        "periodic_cells": 64,
+        "persistent_q_M2": 384,
+        "physical_q_collisions": 0,
+        "physical_selected_reference_M2": 1472,
+        "proper_cubic_frames": 24,
+        "required_local_macro_pairs": 167464,
+        "resource": {
+          "elapsed_seconds": 56.764421125059016,
+          "label": "Cycle560-layout-C-L4",
+          "maximum_RSS_bytes": 162545664,
+          "process_swap_count": 0
+        },
+        "reverse_route_after_each_remote_macro": true,
+        "route": "C",
+        "route_edge_failures": 0,
+        "runtime_host_branch_sector_parity_order_or_frame_query": false,
+        "slot_rail_reversed_by_Wdagger": true,
+        "slot_rail_role_collisions": 0,
+        "slot_transport_policy": "one logical three-M2 slot moves through a supplied dedicated blank three-lane rail in fixed factor order and returns blank at every station",
+        "uniform_slot_station_offsets": [
+          [
+            -2,
+            -1,
+            0
+          ],
+          [
+            -2,
+            0,
+            -1
+          ],
+          [
+            -2,
+            0,
+            1
+          ]
+        ],
+        "wire_collisions": 0
+      },
+      "length": 4
+    }
+  ],
+  "mass_contact_seam_fixtures": {
+    "Cycle219_mass_fixture": {
+      "compiled": 0.453405654174885,
+      "source": 0.4534056541748851,
+      "uniform_residual": 8.7159799596118e-16
+    },
+    "Cycle230_contact_and_seam": {
+      "axis_seam_braids": [
+        {
+          "adjacent_FSWAP_factors": 13,
+          "axis": 0,
+          "braid_intertwining_residual": 0.0,
+          "braid_raw_maximum": 0.0,
+          "complete_Fock_columns": 4096,
+          "deleted_first_braid_FSWAP_residual": 2.0,
+          "naive_endpoint_FSWAP_residual": 1.9999999999999996
+        },
+        {
+          "adjacent_FSWAP_factors": 13,
+          "axis": 1,
+          "braid_intertwining_residual": 0.0,
+          "braid_raw_maximum": 0.0,
+          "complete_Fock_columns": 4096,
+          "deleted_first_braid_FSWAP_residual": 2.0,
+          "naive_endpoint_FSWAP_residual": 2.0
+        },
+        {
+          "adjacent_FSWAP_factors": 13,
+          "axis": 2,
+          "braid_intertwining_residual": 0.0,
+          "braid_raw_maximum": 0.0,
+          "complete_Fock_columns": 4096,
+          "deleted_first_braid_FSWAP_residual": 1.9999999999999996,
+          "naive_endpoint_FSWAP_residual": 2.0
+        }
+      ],
+      "contact_factorization_residual": 2.149937642474629e-15,
+      "contact_nontrivial_columns": 4047
+    },
+    "pass": true,
+    "selected_event_current_adapter": {
+      "Fredkin_decomposition_basis_failures": 0,
+      "P_w_terminal_work_failures": 0,
+      "complete_blank_output_data_K_tests": 65536,
+      "event_current_truth_failures": 0,
+      "local_continuity_failures": 0,
+      "one_hot_K_transition_failures": 0,
+      "pass": true,
+      "retained_event_current_bank_reuse_called_fresh_Record": false,
+      "two_step_fresh_receipt_recurrence_failures": 0
+    }
+  },
+  "maturity_scores_0_to_5": {
+    "Born_and_probability": 2.0,
+    "change": "+0.1 operational from explicit preparation/entropy bookkeeping; no Record, time, matter-law, source or Born closure",
+    "gravity_and_source": 2.1,
+    "inertia_and_matter": 4.4,
+    "operational_quantum_and_records": 3.7,
+    "time": 1.8
+  },
+  "mode": "reference-renewal-certificate",
+  "no_go_N1_N8": {
+    "N1": "A local SWAP entropy-export reset ATTEMPTED/SUCCEEDS for blanks; direct stabilizer pumping ATTEMPTED/DOES NOT CLOSE bounded reference genesis; B cycle-space/tree plus phase Clifford ATTEMPTED/SUCCEEDS exactly but retains a growing program; reversible Wilson-register retention ATTEMPTED/PRESERVES information but not the rough-selected matter bridge; C fill disk ATTEMPTED BY STRICT RERUN/SUCCEEDS algebraically while preparation/embedding remain; dynamic puncture, symmetric local bath and finite-light-cone quotient remain open",
+    "N2": "autonomous reference control, rough-selected matter transduction and fresh entropy-reservoir genesis are pairwise independent after route-specific cap embedding/preparation is nested under reference control",
+    "N3": "reset product, fresh environment, root, tree, chords, phase graph, router, finite sizes, q/cutoff, selected tables/angles, frame transport and Cycle537 cap topology are explicit supplies",
+    "N4": "Cycle532 lines 249-284 witness the same Wilson preparation boundary; Cycle537 lines 33-40 witness cap embedding/preparation only; Cycle560 lines 348-367 witness selected reference/blank/bridge imports. Each is used only for its matching residual; Cycle563 order work is not negative evidence",
+    "N5": "one reset M2, one tree edge, one phase pair, one fixed reference, one selected N<=3 network, one rough gauge factor and arbitrary-size autonomy are separated; only the resolutions explicitly enumerated are claimed",
+    "N6": "the exact growing program can be attacked by a local quadratic-phase factorization; the cap can be embedded or swept dynamically; a symmetric bath can replace the rooted controller; reservoir regeneration and the rough-selected decoder are independent constructive paths, not axiom requests",
+    "N7": "a hostile reviewer should reject any reference-genesis no-go: the exact cycle-space compiler proves the target is reachable from product input, and its dense effective phase graph may be only a poor basis hiding a bounded local factorization on the filled complex. The terminal obligation is that local factorization/controller, not new constitutional content",
+    "N8": "Cycles235/247/269/529/532/537/533/560/563 repeatedly retired apparent global walls by new carriers, caps, local decoders or sparse organization; the same mechanism remains live for phase-program autonomy and the bridge",
+    "axiom_pressure": false,
+    "broad_no_go_gate": "FAIL / DO NOT SHIP",
+    "finite_closed_exact_reset_minimum_content": "for a d-dimensional arbitrary reset input, unitarity sends d orthogonal inputs with one fixed output A state to d orthogonal environment states; therefore dim(E)>=d. The SWAP construction attains equality",
+    "pairwise_N2_wall_table": [
+      {
+        "first_closes_second": false,
+        "independent": true,
+        "pair": [
+          "W_autonomous_reference_controller",
+          "W_rough_selected_transducer"
+        ],
+        "second_closes_first": false
+      },
+      {
+        "first_closes_second": false,
+        "independent": true,
+        "pair": [
+          "W_autonomous_reference_controller",
+          "W_entropy_reservoir_genesis"
+        ],
+        "second_closes_first": false
+      },
+      {
+        "first_closes_second": false,
+        "independent": true,
+        "pair": [
+          "W_rough_selected_transducer",
+          "W_entropy_reservoir_genesis"
+        ],
+        "second_closes_first": false
+      }
+    ],
+    "shared_obstruction": false
+  },
+  "pass": true,
+  "prepared_selected_intertwiner": {
+    "Cycle563_E_Gcoarse_minus_Gphysical_E_residual": 0.0,
+    "blank_reset_residual": 0,
+    "composition_residual": 0,
+    "declared_input": "arbitrary q state in complete global N<=3, core edge/reference M2 and vertex work reset product, plus fresh local entropy environment",
+    "full_rough_to_selected_arbitrary_matter_transducer_materialized": false,
+    "q_preservation_residual": 0,
+    "reference_preparation_residual": 0,
+    "selected_E_Gram_residual": 0,
+    "selected_Wdagger_W_residual": 0
+  },
+  "resources": {
+    "RSS_guard_bytes": 2900000000,
+    "checkpoints": [
+      {
+        "elapsed_seconds": 0.008170958026312292,
+        "label": "initial",
+        "maximum_RSS_bytes": 109854720,
+        "process_swap_count": 0
+      },
+      {
+        "elapsed_seconds": 0.7634419170208275,
+        "label": "product-reference-L3-L4-L5",
+        "maximum_RSS_bytes": 114638848,
+        "process_swap_count": 0
+      },
+      {
+        "elapsed_seconds": 41.176344832987525,
+        "label": "selected-encoder-layout-cov-L3",
+        "maximum_RSS_bytes": 128958464,
+        "process_swap_count": 0
+      },
+      {
+        "elapsed_seconds": 145.54044091701508,
+        "label": "selected-encoder-layout-cov-L4",
+        "maximum_RSS_bytes": 162545664,
+        "process_swap_count": 0
+      },
+      {
+        "elapsed_seconds": 147.52439745794982,
+        "label": "renewal-and-fixtures",
+        "maximum_RSS_bytes": 224493568,
+        "process_swap_count": 0
+      },
+      {
+        "elapsed_seconds": 287.5080946669914,
+        "label": "fill-disk-comparator",
+        "maximum_RSS_bytes": 321421312,
+        "process_swap_count": 0
+      },
+      {
+        "elapsed_seconds": 287.5094485000009,
+        "label": "final",
+        "maximum_RSS_bytes": 321421312,
+        "process_swap_count": 0
+      }
+    ],
+    "elapsed_seconds": 287.5094485000009,
+    "hard_wall_seconds": 1800.0,
+    "maximum_RSS_bytes": 321421312,
+    "process_swap_count": 0
+  },
+  "revision": 2,
+  "route_tournament": {
+    "A_dissipative_stabilizer_pump": {
+      "blank_work_reset_with_explicit_entropy_environment": "EXACT LOCAL POSITIVE",
+      "bounded_autonomous_reference_pump_closed": false,
+      "direct_fundamental_stabilizer_pump_maximum_support_L3_L4_L5": [
+        45,
+        66,
+        77
+      ],
+      "fresh_reference_or_nonlocal_syndrome_service_required": true,
+      "route_specific_disposition": "blank renewal closes; reference genesis does not",
+      "selected_reference_replacement_by_SWAP_with_prepared_reference_bath": "exact but circular for genesis"
+    },
+    "B_reversible_relational_subsystem": {
+      "Wilson_information_register_M2_for_arbitrary_sector": 3,
+      "Wilson_register_dimension": 8,
+      "arbitrary_Wilson_information_erased": false,
+      "arbitrary_rough_sector_same_target_intertwiner_closed": false,
+      "frame_root_tree_phase_program_retained_as_supply": true,
+      "growing_phase_program_observed": true,
+      "maximum_phase_partner_degree_L3_L4_L5": [
+        116,
+        244,
+        369
+      ],
+      "product_to_fixed_reference_Clifford_exact_L3_L4_L5": true,
+      "route_specific_disposition": "exact product reference, bridge open",
+      "tree_accumulator_returns_blank": true,
+      "why": "Cycle532 Wilson characters are central matter characters; retaining their three bits preserves reversibility but does not supply the missing twisted-sector-to-one-selected-target transducer"
+    },
+    "C_fill_disk_defect_seed": {
+      "Cycle537_cold_rerun_pass": true,
+      "Wilson_rows_replaced_by_bounded_fill_checks": true,
+      "all24_576_compile_time_presentation_orbit": true,
+      "fixed_old_substrate_embedding_closed": false,
+      "route_specific_disposition": "strongest local algebra, preparation/embedding open",
+      "state_preparation_isometry_closed": false,
+      "target_times_gauge_mass_contact_seam_preserved": true
+    },
+    "blank_entropy_renewal": {
+      "arbitrary_entanglement_with_q_reference_allowed": true,
+      "channel": "SWAP every auxiliary A with a colocated fresh |0> environment E; for arbitrary rho_QA, tracing E leaves rho_Q tensor |0><0|_A",
+      "environment_carries_old_quantum_state_not_a_pointer_copy": true,
+      "finite_closed_reservoir_recurrent_renewal_closed": false,
+      "fresh_low_entropy_environment_genesis_supplied": true,
+      "pass": true,
+      "rows": [
+        {
+          "core_fixed_reference_M2_not_reset_by_this_channel": 405,
+          "covariance_failures": 0,
+          "deleted_one_SWAP_worst_case_reset_residual": 1.4142135623730951,
+          "entropy_bound_achieved": true,
+          "environment_dimension_log2": 864,
+          "environment_lower_bound_log2_for_arbitrary_reset": 864,
+          "environment_output_called_Record": false,
+          "frame_products": 576,
+          "fresh_environment_M2": 864,
+          "held_size": false,
+          "length": 3,
+          "local_colocated_SWAPs": 864,
+          "maximum_support_M2": 2,
+          "old_auxiliary_state_transferred_to_environment": true,
+          "parallel_SWAP_layers": 1,
+          "pass": true,
+          "proper_cubic_frames": 24,
+          "q_and_reference_reduced_state_residual": 0,
+          "reset_output_residual": 0,
+          "route": "B",
+          "runtime_host_branch_sector_frame_order_or_parity_query": false,
+          "selected_port_branch_slot_work_rail_M2_reset": 864
+        },
+        {
+          "core_fixed_reference_M2_not_reset_by_this_channel": 405,
+          "covariance_failures": 0,
+          "deleted_one_SWAP_worst_case_reset_residual": 1.4142135623730951,
+          "entropy_bound_achieved": true,
+          "environment_dimension_log2": 2613,
+          "environment_lower_bound_log2_for_arbitrary_reset": 2613,
+          "environment_output_called_Record": false,
+          "frame_products": 576,
+          "fresh_environment_M2": 2613,
+          "held_size": false,
+          "length": 3,
+          "local_colocated_SWAPs": 2613,
+          "maximum_support_M2": 2,
+          "old_auxiliary_state_transferred_to_environment": true,
+          "parallel_SWAP_layers": 1,
+          "pass": true,
+          "proper_cubic_frames": 24,
+          "q_and_reference_reduced_state_residual": 0,
+          "reset_output_residual": 0,
+          "route": "C",
+          "runtime_host_branch_sector_frame_order_or_parity_query": false,
+          "selected_port_branch_slot_work_rail_M2_reset": 2613
+        },
+        {
+          "core_fixed_reference_M2_not_reset_by_this_channel": 960,
+          "covariance_failures": 0,
+          "deleted_one_SWAP_worst_case_reset_residual": 1.4142135623730951,
+          "entropy_bound_achieved": true,
+          "environment_dimension_log2": 2048,
+          "environment_lower_bound_log2_for_arbitrary_reset": 2048,
+          "environment_output_called_Record": false,
+          "frame_products": 576,
+          "fresh_environment_M2": 2048,
+          "held_size": true,
+          "length": 4,
+          "local_colocated_SWAPs": 2048,
+          "maximum_support_M2": 2,
+          "old_auxiliary_state_transferred_to_environment": true,
+          "parallel_SWAP_layers": 1,
+          "pass": true,
+          "proper_cubic_frames": 24,
+          "q_and_reference_reduced_state_residual": 0,
+          "reset_output_residual": 0,
+          "route": "B",
+          "runtime_host_branch_sector_frame_order_or_parity_query": false,
+          "selected_port_branch_slot_work_rail_M2_reset": 2048
+        },
+        {
+          "core_fixed_reference_M2_not_reset_by_this_channel": 960,
+          "covariance_failures": 0,
+          "deleted_one_SWAP_worst_case_reset_residual": 1.4142135623730951,
+          "entropy_bound_achieved": true,
+          "environment_dimension_log2": 5990,
+          "environment_lower_bound_log2_for_arbitrary_reset": 5990,
+          "environment_output_called_Record": false,
+          "frame_products": 576,
+          "fresh_environment_M2": 5990,
+          "held_size": true,
+          "length": 4,
+          "local_colocated_SWAPs": 5990,
+          "maximum_support_M2": 2,
+          "old_auxiliary_state_transferred_to_environment": true,
+          "parallel_SWAP_layers": 1,
+          "pass": true,
+          "proper_cubic_frames": 24,
+          "q_and_reference_reduced_state_residual": 0,
+          "reset_output_residual": 0,
+          "route": "C",
+          "runtime_host_branch_sector_frame_order_or_parity_query": false,
+          "selected_port_branch_slot_work_rail_M2_reset": 5990
+        }
+      ],
+      "unitary_dilation": true
+    }
+  },
+  "selected_all24_576_covariance_L3_L4": [
+    {
+      "frame_group_failures": 0,
+      "frame_group_products": 576,
+      "held": false,
+      "held_size_for_Cycle557": false,
+      "length": 3,
+      "maximum_covariance_residuals": {
+        "coin": 1.5574068580638927e-15,
+        "composition": 1.5574068580638927e-15,
+        "contact": 0,
+        "isometry": 0,
+        "stream": 0
+      },
+      "normalization_orbit_failures": 0,
+      "pass": true,
+      "physical_branch_failures": 0,
+      "proper_cubic_frames": 24,
+      "resource": {
+        "elapsed_seconds": 2.198487290996127,
+        "label": "Cycle533-covariance-L3",
+        "maximum_RSS_bytes": 128958464,
+        "process_swap_count": 0
+      },
+      "scope": "selected-shell isometry/stream/coin/contact/composition plus the Cycle557 literal branch/slot wire-and-route layout",
+      "selected_local_shell": true,
+      "selector_failures": 0
+    },
+    {
+      "frame_group_failures": 0,
+      "frame_group_products": 576,
+      "held": false,
+      "held_size_for_Cycle557": true,
+      "length": 4,
+      "maximum_covariance_residuals": {
+        "coin": 1.5574068580638927e-15,
+        "composition": 1.5574068580638927e-15,
+        "contact": 0,
+        "isometry": 0,
+        "stream": 0
+      },
+      "normalization_orbit_failures": 0,
+      "pass": true,
+      "physical_branch_failures": 0,
+      "proper_cubic_frames": 24,
+      "resource": {
+        "elapsed_seconds": 8.90832287503872,
+        "label": "Cycle533-covariance-L4",
+        "maximum_RSS_bytes": 162545664,
+        "process_swap_count": 0
+      },
+      "scope": "selected-shell isometry/stream/coin/contact/composition plus the Cycle557 literal branch/slot wire-and-route layout",
+      "selected_local_shell": true,
+      "selector_failures": 0
+    }
+  ],
+  "selected_reference_product_compiler_L3_L4_L5": [
+    {
+      "B_constraint_rank": 161,
+      "NN_routed_two_M2_gate_estimate": 346115,
+      "bounded_autonomous_program_closed": false,
+      "chord_H_gates": 244,
+      "commuting_phase_CZ_pairs": 6253,
+      "cycle_space_dimension": 244,
+      "deleted_one_chord_H_loses_one_cycle_dimension": true,
+      "deleted_one_tree_CNOT_nonzero_B_syndrome": true,
+      "diagonal_S_or_Sdagger_gates": 170,
+      "exact_inverse_residual": 0,
+      "exact_reference_preparation_residual": 0,
+      "frame_group_failures": 0,
+      "frame_products": 576,
+      "graph_vertices": 162,
+      "held_size": false,
+      "length": 3,
+      "linear_Z_sign_gates": 175,
+      "local_tree_CNOTs": 971,
+      "loop_X_rank": 244,
+      "maximum_fundamental_cycle_Pauli_support": 45,
+      "maximum_fundamental_cycle_X_support": 15,
+      "maximum_phase_pair_route_distance": 58,
+      "maximum_phase_partner_degree": 116,
+      "maximum_tree_depth": 7,
+      "minimum_deleted_active_phase_gate_vector_residual": 1.0,
+      "pass": true,
+      "periodic_cells": 27,
+      "phase_gates_order_independent": true,
+      "phase_program_sha256": "b1d79d7b2d21a1653aec1645a3944625caf3bd89469dcc8da4fe5933cc9e4754",
+      "physical_fixed_reference_M2": 405,
+      "positive_direction_antipodal_axis_tie_supplies": 82,
+      "product_input": "edge M2 reset to zero; one reset accumulator M2 per graph vertex",
+      "proper_cubic_frames": 24,
+      "quadratic_phase_asymmetry_failures": 0,
+      "quadratic_phase_density": 0.21291319537758668,
+      "quadratic_phase_gate_mismatches": 0,
+      "quadratic_phase_hermiticity_failures": 0,
+      "quadratic_phase_matrix_ones": 12676,
+      "recurrence_size": false,
+      "reference_phase_inconsistencies": 0,
+      "reference_stabilizer_rank": 405,
+      "resource": {
+        "elapsed_seconds": 0.04602849995717406,
+        "label": "Cycle567-product-reference-L3",
+        "maximum_RSS_bytes": 110526464,
+        "process_swap_count": 0
+      },
+      "runtime_host_global_order_query": false,
+      "runtime_host_sector_parity_or_frame_query": false,
+      "transported_program_policy": "transport root, tree, chord labels, phase graph and NN routes; the unique fixed reference is covariant, but the program is supplied",
+      "tree_accumulator_terminal_leakage": 0,
+      "tree_encoder_column_failures": 0,
+      "why_not_autonomous_closure": "the phase partner degree and routed program grow over L3/L4/L5, and no physical controller or renewal law for that program is compiled"
+    },
+    {
+      "B_constraint_rank": 383,
+      "NN_routed_two_M2_gate_estimate": 2392842,
+      "bounded_autonomous_program_closed": false,
+      "chord_H_gates": 577,
+      "commuting_phase_CZ_pairs": 29830,
+      "cycle_space_dimension": 577,
+      "deleted_one_chord_H_loses_one_cycle_dimension": true,
+      "deleted_one_tree_CNOT_nonzero_B_syndrome": true,
+      "diagonal_S_or_Sdagger_gates": 312,
+      "exact_inverse_residual": 0,
+      "exact_reference_preparation_residual": 0,
+      "frame_group_failures": 0,
+      "frame_products": 576,
+      "graph_vertices": 384,
+      "held_size": true,
+      "length": 4,
+      "linear_Z_sign_gates": 392,
+      "local_tree_CNOTs": 2303,
+      "loop_X_rank": 577,
+      "maximum_fundamental_cycle_Pauli_support": 66,
+      "maximum_fundamental_cycle_X_support": 24,
+      "maximum_phase_pair_route_distance": 96,
+      "maximum_phase_partner_degree": 244,
+      "maximum_tree_depth": 12,
+      "minimum_deleted_active_phase_gate_vector_residual": 1.0,
+      "pass": true,
+      "periodic_cells": 64,
+      "phase_gates_order_independent": true,
+      "phase_program_sha256": "611524a3b0376bf42e1ddabd7c89f180a39f907ea972c79439259d0869b0ba59",
+      "physical_fixed_reference_M2": 960,
+      "positive_direction_antipodal_axis_tie_supplies": 5084,
+      "product_input": "edge M2 reset to zero; one reset accumulator M2 per graph vertex",
+      "proper_cubic_frames": 24,
+      "quadratic_phase_asymmetry_failures": 0,
+      "quadratic_phase_density": 0.18013450315232377,
+      "quadratic_phase_gate_mismatches": 0,
+      "quadratic_phase_hermiticity_failures": 0,
+      "quadratic_phase_matrix_ones": 59972,
+      "recurrence_size": false,
+      "reference_phase_inconsistencies": 0,
+      "reference_stabilizer_rank": 960,
+      "resource": {
+        "elapsed_seconds": 0.17982700001448393,
+        "label": "Cycle567-product-reference-L4",
+        "maximum_RSS_bytes": 111820800,
+        "process_swap_count": 0
+      },
+      "runtime_host_global_order_query": false,
+      "runtime_host_sector_parity_or_frame_query": false,
+      "transported_program_policy": "transport root, tree, chord labels, phase graph and NN routes; the unique fixed reference is covariant, but the program is supplied",
+      "tree_accumulator_terminal_leakage": 0,
+      "tree_encoder_column_failures": 0,
+      "why_not_autonomous_closure": "the phase partner degree and routed program grow over L3/L4/L5, and no physical controller or renewal law for that program is compiled"
+    },
+    {
+      "B_constraint_rank": 749,
+      "NN_routed_two_M2_gate_estimate": 6366517,
+      "bounded_autonomous_program_closed": false,
+      "chord_H_gates": 1126,
+      "commuting_phase_CZ_pairs": 67835,
+      "cycle_space_dimension": 1126,
+      "deleted_one_chord_H_loses_one_cycle_dimension": true,
+      "deleted_one_tree_CNOT_nonzero_B_syndrome": true,
+      "diagonal_S_or_Sdagger_gates": 722,
+      "exact_inverse_residual": 0,
+      "exact_reference_preparation_residual": 0,
+      "frame_group_failures": 0,
+      "frame_products": 576,
+      "graph_vertices": 750,
+      "held_size": false,
+      "length": 5,
+      "linear_Z_sign_gates": 644,
+      "local_tree_CNOTs": 4499,
+      "loop_X_rank": 1126,
+      "maximum_fundamental_cycle_Pauli_support": 77,
+      "maximum_fundamental_cycle_X_support": 27,
+      "maximum_phase_pair_route_distance": 106,
+      "maximum_phase_partner_degree": 369,
+      "maximum_tree_depth": 13,
+      "minimum_deleted_active_phase_gate_vector_residual": 1.0,
+      "pass": true,
+      "periodic_cells": 125,
+      "phase_gates_order_independent": true,
+      "phase_program_sha256": "55d2aef926d01afb4749c71104bddc728f947efc67881b010bc4c137283318db",
+      "physical_fixed_reference_M2": 1875,
+      "positive_direction_antipodal_axis_tie_supplies": 466,
+      "product_input": "edge M2 reset to zero; one reset accumulator M2 per graph vertex",
+      "proper_cubic_frames": 24,
+      "quadratic_phase_asymmetry_failures": 0,
+      "quadratic_phase_density": 0.10757518874085478,
+      "quadratic_phase_gate_mismatches": 0,
+      "quadratic_phase_hermiticity_failures": 0,
+      "quadratic_phase_matrix_ones": 136392,
+      "recurrence_size": true,
+      "reference_phase_inconsistencies": 0,
+      "reference_stabilizer_rank": 1875,
+      "resource": {
+        "elapsed_seconds": 0.5276722919661552,
+        "label": "Cycle567-product-reference-L5",
+        "maximum_RSS_bytes": 114638848,
+        "process_swap_count": 0
+      },
+      "runtime_host_global_order_query": false,
+      "runtime_host_sector_parity_or_frame_query": false,
+      "transported_program_policy": "transport root, tree, chord labels, phase graph and NN routes; the unique fixed reference is covariant, but the program is supplied",
+      "tree_accumulator_terminal_leakage": 0,
+      "tree_encoder_column_failures": 0,
+      "why_not_autonomous_closure": "the phase partner degree and routed program grow over L3/L4/L5, and no physical controller or renewal law for that program is compiled"
+    }
+  ],
+  "status": "cycle567-exact-product-reference-and-entropy-optimal-blank-renewal",
+  "strongest_constructive_result": "from reset product M2, an exact cycle-space/tree plus quadratic-phase Clifford prepares the unique fixed-Wilson selected reference at L3, held L4 and recurrence L5; independently, one colocated SWAP per selected auxiliary renews every port/branch/slot/work/rail M2 exactly while exporting its old quantum state to a dimension-minimal environment",
+  "supplied_structure": {
+    "BFS_root_spanning_tree_and_chord_labels": true,
+    "Cycle537_cap_topology_macro_origin_and_retriangulation": true,
+    "NN_router_and_transported_compile_time_frame_program": true,
+    "finite_L3_L4_L5_and_Cycle537_L5_L6_domains": true,
+    "fresh_entropy_environment_per_renewal": true,
+    "persistent_q_and_complete_global_N_at_most_3_cutoff": true,
+    "quadratic_phase_graph_and_sign_table": true,
+    "reset_product_edge_vertex_and_environment_M2": true,
+    "runtime_host_sector_frame_global_order_or_parity_service": false,
+    "selected_coefficients_Paulis_angles_and_local_decoders": true
+  },
+  "tests": {
+    "Cycle537_fill_disk_comparator": true,
+    "complete_selected_N3_encoders_L3_L4": true,
+    "dry_contract": true,
+    "entropy_environment_lower_bound_achieved": true,
+    "exact_local_blank_entropy_renewal": true,
+    "exact_product_fixed_reference_L3_L4_L5": true,
+    "honest_autonomy_bridge_reservoir_boundaries": true,
+    "literal_M2_layouts_L3_L4": true,
+    "mass_contact_seam": true,
+    "no_host_sector_frame_global_order_or_parity_service": true,
+    "no_shared_obstruction_or_axiom_pressure": true,
+    "prepared_selected_intertwiner_exact": true,
+    "resource_contract": true,
+    "selected_all24_576_covariance": true,
+    "tree_work_blank_and_deletions": true
+  },
+  "tests_passed": 15,
+  "tests_total": 15
+}

@@ -53,11 +53,11 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "decoration_under_gauge_vacuum_plaquette_reduction_existence_theorem_note",
-  "load_bearing_score": 11.762,
+  "load_bearing_score": 15.762,
   "load_bearing_step": "Differentiating the coordinate identity gives `chi_L(beta) = chi_1plaq(beta_eff,L(beta)) * beta_eff,L'(beta)`.",
   "load_bearing_step_class": "A",
-  "max_descendant_status": "audit_in_progress",
-  "max_descendant_status_rank": 30,
+  "max_descendant_status": "retained_no_go",
+  "max_descendant_status_rank": 100,
   "negative_assertion_classes": [
     "bounded_with_named_walls",
     "derived_no_go_boundary"

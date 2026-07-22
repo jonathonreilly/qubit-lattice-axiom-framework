@@ -1,0 +1,86 @@
+{
+  "status": "cycle564-physical-compiled-N2-interacting-deviation-current-bounded-positive",
+  "authority": "none",
+  "audit": "unset",
+  "runner_sha256": "d15d0661407df3325d72e06bbf5cbc9316afe9906499af223bccf8cd29ee686c",
+  "note_sha256": "e6df9590ef7e29f97a332417c49606a07aecdfadbaf4ec85660f8272b4f2acd3",
+  "parent_transcript_sha256": "e224973d6ae8d75fd97006addd1e3e2f2a441602cdf62d51b60d1ba4dc022980",
+  "tests_passed": 11,
+  "tests_total": 11,
+  "pass": true,
+  "elapsed_seconds_internal": 10.26369545806665,
+  "timed_wall_seconds": 10.98,
+  "maximum_RSS_bytes": 386039808,
+  "process_swap_count": 0,
+  "fixed_candidate_update": {
+    "matter": "Cycle219 beta=-0.3 coin and CAR stream",
+    "contact": "actual Cycle230 g=0.37 same-cell pair phase",
+    "mediator": "Cycle293 six-hard-core-M2 coin, scalar vertex, and stream",
+    "mediator_vertex_angle": 0.3627245233399081,
+    "law_and_factor_order_supplied": true
+  },
+  "route_A_selected_action_variation": {
+    "finite_difference_residual": 2.736660897895149e-09,
+    "global_phase_Ward_residual": 3.1669916149235617e-16,
+    "free_Cycle562_T00_residual": 0.0,
+    "Cycle562_T0i_mismatch": 0.1442571990517585,
+    "identified_as_Cycle562_current": false,
+    "geometric_coordinate_or_metric_variation_executed": false,
+    "full_Tij_derived": false
+  },
+  "route_B_direct_interacting_current": {
+    "maximum_gatewise_matter_continuity_residual": 5.995204332975845e-15,
+    "deviation_current_continuity_basis": "same exact gatewise matter-number identity applied to chi=(I-G)psi by linearity",
+    "G_chi_redundant_sparse_state_materialized": false,
+    "maximum_inverse_residual": 3.2851713279723548e-15,
+    "maximum_norm_residual": 4.9182879990894435e-14,
+    "free_N1_Cycle562_density_residual": 0.0,
+    "free_N1_Cycle562_link_current_residual": 0.0,
+    "held_L4_N2_total_candidate": 40.82099610558357,
+    "held_L4_origin_density": 12.642831772417809,
+    "held_contact_deletion_signal": 0.5437713457666291,
+    "held_mediator_vertex_deletion_signal": 0.15032616283217237,
+    "held_refit_parameters": 0,
+    "maximum_all24_factor_covariance_residual": 1.602143998693333e-15,
+    "frame_products": 576,
+    "maximum_frame_product_residual": 0.0
+  },
+  "physical_M2_lift": {
+    "declared_matter_sector": "N=2 subset of Cycle560 complete N<=3 code",
+    "combined_route_B_M2_L3": 1593,
+    "combined_route_B_M2_held_L4": 3776,
+    "combined_route_C_M2_L3": 3261,
+    "combined_route_C_M2_held_L4": 7526,
+    "maximum_route_length": 48,
+    "code_space_intertwiner_residual": 0.0,
+    "full_dense_physical_state_materialized": false,
+    "global_matter_N2_sector_locally_enforced": false,
+    "target_code_leakage": 0.0
+  },
+  "Cycle559_join_control": {
+    "held_mediator_count_gain": 0.18884882419307025,
+    "mass_times_count_gain": 0.08562512467341689,
+    "Cycle293_vertex_identified_with_Cycle559_conserving_vertex": false,
+    "reservoir_completed_join_open": true,
+    "route_specific_only": true
+  },
+  "route_C_stationary_comparison": {
+    "held_L11_separation5_density": 6.914206456337991e-07,
+    "held_eigen_residual": 6.263905804346173e-16,
+    "held_stationary_density_residual": 7.589415207398531e-19,
+    "held_shifted_resolvent_residual": 2.108755610911033e-15,
+    "contains_actual_contact_or_many_matter": false,
+    "selector_and_preparation_supplied": true
+  },
+  "scope_boundary": {
+    "physical_energy_fully_identified": false,
+    "full_stress_tensor_identified": false,
+    "physical_clock_or_work_unit_derived": false,
+    "gravity_claim": false,
+    "action_phase_zero_and_normalization_selected_by_substrate": false,
+    "endogenous_source_preparation_closed": false,
+    "shared_substrate_obstruction": false,
+    "axiom_pressure": false,
+    "broad_no_go_gate": "FAIL / DO NOT SHIP"
+  }
+}

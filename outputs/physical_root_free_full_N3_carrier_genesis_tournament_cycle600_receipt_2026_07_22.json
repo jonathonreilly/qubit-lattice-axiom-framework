@@ -1,0 +1,966 @@
+{
+  "HEAD": "f2a9611ac0db798f4ca4b2e34a780235fb5204a5",
+  "audit": "unset",
+  "authority": "none",
+  "constitutional_effect": "none",
+  "elapsed_seconds": 30.080885541043244,
+  "maturity": {
+    "Born_probability_repo_strict": [
+      4.2,
+      3.65
+    ],
+    "causal_time_repo_strict": [
+      3.95,
+      3.8
+    ],
+    "gravity_source_repo_strict": [
+      4.1,
+      3.85
+    ],
+    "inertia_matter_repo_strict": [
+      4.92,
+      4.94
+    ],
+    "operational_quantum_records_repo_strict": [
+      4.8,
+      4.65
+    ]
+  },
+  "maximum_RSS_bytes": 238567424,
+  "no_go_discipline": {
+    "N1_attempted_families": 5,
+    "N1_family_normalization_complete": true,
+    "N1_normalized_approach_families": [
+      {
+        "disposition": "compiler closes exactly on a supplied one-carrier/species sector",
+        "family": "three-carrier exterior compiler",
+        "marker": "ATTEMPTED",
+        "mechanism": "species-sign representation and functorial exterior lift",
+        "object": "wedge^3 of six matter plus three neutral orbitals",
+        "strength_vs_target": "target-equivalent for the compiler half only",
+        "terminal_obligation": "complete N<=3 coin/stream/contact/seam EG with no classical labels"
+      },
+      {
+        "disposition": "covariant orbit and scheduled Wilson line constructed; topological and one-mark sectors supplied",
+        "family": "topological winding-loop carrier",
+        "marker": "ATTEMPTED",
+        "mechanism": "local Gauss conservation and harmonic winding",
+        "object": "three species of marked noncontractible Z2 loops",
+        "strength_vs_target": "weaker",
+        "terminal_obligation": "generate and locally bind exactly one point carrier/species without supplied topology/mark count"
+      },
+      {
+        "disposition": "exact nonempty-input normalization; path/head/debris remain supplied and pre-scan duplicates are lawful",
+        "family": "reversible saturating scan",
+        "marker": "ATTEMPTED",
+        "mechanism": "carried seen-bit keeps one active and reversibly records duplicates",
+        "object": "fixed-alphabet carrier/debris/head words on a NN Hamiltonian path",
+        "strength_vs_target": "weaker",
+        "terminal_obligation": "static root-free unique genesis with no head/order/schedule or residual debris"
+      },
+      {
+        "disposition": "one survivor from tested nonempty words; nonunitary, scheduled, and vacuum remains empty",
+        "family": "dissipative local coalescence",
+        "marker": "ATTEMPTED",
+        "mechanism": "diffusion plus A+A->A absorbing reaction",
+        "object": "mobile binary carrier lattice gas",
+        "strength_vs_target": "weaker",
+        "terminal_obligation": "coherent reversible unique carrier preparation including vacuum genesis"
+      },
+      {
+        "disposition": "all 256 radius-one rules stay uniform; quantum W-state/nonuniform-seed routes remain live",
+        "family": "deterministic translation-equivariant blank cellular automaton",
+        "marker": "ATTEMPTED",
+        "mechanism": "translation-equivariance preserves the uniform-state subspace",
+        "object": "fixed-alphabet local CA from a uniform blank",
+        "strength_vs_target": "weaker and classical",
+        "terminal_obligation": "produce exactly one localized classical carrier from blank"
+      },
+      {
+        "disposition": "concrete route not ruled out",
+        "family": "autonomous quantum W-state genesis",
+        "marker": "LIVE_UNTESTED",
+        "mechanism": "frustration-free or dissipative amplitude selection",
+        "object": "translation-invariant one-excitation ground/dark state",
+        "strength_vs_target": "unknown/comparable",
+        "terminal_obligation": "unique pure one-carrier state with local gap/preparation and three-species composition"
+      }
+    ],
+    "N1_required_before_negative": 5,
+    "N2_directional_wall_pairs": [
+      {
+        "first": "one-carrier-per-species sector genesis",
+        "first_closes_second": false,
+        "first_to_second": "derive global species count one from a local autonomous mechanism does not supply prepare each unused carrier in its spatial W orbital",
+        "independent": true,
+        "second": "translation-uniform neutral-orbital preparation",
+        "second_closes_first": false,
+        "second_to_first": "prepare each unused carrier in its spatial W orbital does not supply derive global species count one from a local autonomous mechanism"
+      },
+      {
+        "first": "one-carrier-per-species sector genesis",
+        "first_closes_second": false,
+        "first_to_second": "derive global species count one from a local autonomous mechanism does not supply decompose the executed code table into accepted bounded elementary gates",
+        "independent": true,
+        "second": "elementary M2 gate synthesis for the 12-role table",
+        "second_closes_first": false,
+        "second_to_first": "decompose the executed code table into accepted bounded elementary gates does not supply derive global species count one from a local autonomous mechanism"
+      },
+      {
+        "first": "one-carrier-per-species sector genesis",
+        "first_closes_second": false,
+        "first_to_second": "derive global species count one from a local autonomous mechanism does not supply create the required harmonic loop without a selected Wilson schedule",
+        "independent": true,
+        "second": "topological winding-sector preparation",
+        "second_closes_first": false,
+        "second_to_first": "create the required harmonic loop without a selected Wilson schedule does not supply derive global species count one from a local autonomous mechanism"
+      },
+      {
+        "first": "one-carrier-per-species sector genesis",
+        "first_closes_second": false,
+        "first_to_second": "derive global species count one from a local autonomous mechanism does not supply select exactly one point on a noncontractible loop",
+        "independent": true,
+        "second": "one local binding mark per loop",
+        "second_closes_first": false,
+        "second_to_first": "select exactly one point on a noncontractible loop does not supply derive global species count one from a local autonomous mechanism"
+      },
+      {
+        "first": "one-carrier-per-species sector genesis",
+        "first_closes_second": false,
+        "first_to_second": "derive global species count one from a local autonomous mechanism does not supply replace scan resources and retained duplicate history",
+        "independent": true,
+        "second": "head/path/debris retirement",
+        "second_closes_first": false,
+        "second_to_first": "replace scan resources and retained duplicate history does not supply derive global species count one from a local autonomous mechanism"
+      },
+      {
+        "first": "one-carrier-per-species sector genesis",
+        "first_closes_second": false,
+        "first_to_second": "derive global species count one from a local autonomous mechanism does not supply remove duplicates without irreversible erasure or label decoherence",
+        "independent": true,
+        "second": "coherent reversible saturation",
+        "second_closes_first": false,
+        "second_to_first": "remove duplicates without irreversible erasure or label decoherence does not supply derive global species count one from a local autonomous mechanism"
+      },
+      {
+        "first": "translation-uniform neutral-orbital preparation",
+        "first_closes_second": false,
+        "first_to_second": "prepare each unused carrier in its spatial W orbital does not supply decompose the executed code table into accepted bounded elementary gates",
+        "independent": true,
+        "second": "elementary M2 gate synthesis for the 12-role table",
+        "second_closes_first": false,
+        "second_to_first": "decompose the executed code table into accepted bounded elementary gates does not supply prepare each unused carrier in its spatial W orbital"
+      },
+      {
+        "first": "translation-uniform neutral-orbital preparation",
+        "first_closes_second": false,
+        "first_to_second": "prepare each unused carrier in its spatial W orbital does not supply create the required harmonic loop without a selected Wilson schedule",
+        "independent": true,
+        "second": "topological winding-sector preparation",
+        "second_closes_first": false,
+        "second_to_first": "create the required harmonic loop without a selected Wilson schedule does not supply prepare each unused carrier in its spatial W orbital"
+      },
+      {
+        "first": "translation-uniform neutral-orbital preparation",
+        "first_closes_second": false,
+        "first_to_second": "prepare each unused carrier in its spatial W orbital does not supply select exactly one point on a noncontractible loop",
+        "independent": true,
+        "second": "one local binding mark per loop",
+        "second_closes_first": false,
+        "second_to_first": "select exactly one point on a noncontractible loop does not supply prepare each unused carrier in its spatial W orbital"
+      },
+      {
+        "first": "translation-uniform neutral-orbital preparation",
+        "first_closes_second": false,
+        "first_to_second": "prepare each unused carrier in its spatial W orbital does not supply replace scan resources and retained duplicate history",
+        "independent": true,
+        "second": "head/path/debris retirement",
+        "second_closes_first": false,
+        "second_to_first": "replace scan resources and retained duplicate history does not supply prepare each unused carrier in its spatial W orbital"
+      },
+      {
+        "first": "translation-uniform neutral-orbital preparation",
+        "first_closes_second": false,
+        "first_to_second": "prepare each unused carrier in its spatial W orbital does not supply remove duplicates without irreversible erasure or label decoherence",
+        "independent": true,
+        "second": "coherent reversible saturation",
+        "second_closes_first": false,
+        "second_to_first": "remove duplicates without irreversible erasure or label decoherence does not supply prepare each unused carrier in its spatial W orbital"
+      },
+      {
+        "first": "elementary M2 gate synthesis for the 12-role table",
+        "first_closes_second": false,
+        "first_to_second": "decompose the executed code table into accepted bounded elementary gates does not supply create the required harmonic loop without a selected Wilson schedule",
+        "independent": true,
+        "second": "topological winding-sector preparation",
+        "second_closes_first": false,
+        "second_to_first": "create the required harmonic loop without a selected Wilson schedule does not supply decompose the executed code table into accepted bounded elementary gates"
+      },
+      {
+        "first": "elementary M2 gate synthesis for the 12-role table",
+        "first_closes_second": false,
+        "first_to_second": "decompose the executed code table into accepted bounded elementary gates does not supply select exactly one point on a noncontractible loop",
+        "independent": true,
+        "second": "one local binding mark per loop",
+        "second_closes_first": false,
+        "second_to_first": "select exactly one point on a noncontractible loop does not supply decompose the executed code table into accepted bounded elementary gates"
+      },
+      {
+        "first": "elementary M2 gate synthesis for the 12-role table",
+        "first_closes_second": false,
+        "first_to_second": "decompose the executed code table into accepted bounded elementary gates does not supply replace scan resources and retained duplicate history",
+        "independent": true,
+        "second": "head/path/debris retirement",
+        "second_closes_first": false,
+        "second_to_first": "replace scan resources and retained duplicate history does not supply decompose the executed code table into accepted bounded elementary gates"
+      },
+      {
+        "first": "elementary M2 gate synthesis for the 12-role table",
+        "first_closes_second": false,
+        "first_to_second": "decompose the executed code table into accepted bounded elementary gates does not supply remove duplicates without irreversible erasure or label decoherence",
+        "independent": true,
+        "second": "coherent reversible saturation",
+        "second_closes_first": false,
+        "second_to_first": "remove duplicates without irreversible erasure or label decoherence does not supply decompose the executed code table into accepted bounded elementary gates"
+      },
+      {
+        "first": "topological winding-sector preparation",
+        "first_closes_second": false,
+        "first_to_second": "create the required harmonic loop without a selected Wilson schedule does not supply select exactly one point on a noncontractible loop",
+        "independent": true,
+        "second": "one local binding mark per loop",
+        "second_closes_first": false,
+        "second_to_first": "select exactly one point on a noncontractible loop does not supply create the required harmonic loop without a selected Wilson schedule"
+      },
+      {
+        "first": "topological winding-sector preparation",
+        "first_closes_second": false,
+        "first_to_second": "create the required harmonic loop without a selected Wilson schedule does not supply replace scan resources and retained duplicate history",
+        "independent": true,
+        "second": "head/path/debris retirement",
+        "second_closes_first": false,
+        "second_to_first": "replace scan resources and retained duplicate history does not supply create the required harmonic loop without a selected Wilson schedule"
+      },
+      {
+        "first": "topological winding-sector preparation",
+        "first_closes_second": false,
+        "first_to_second": "create the required harmonic loop without a selected Wilson schedule does not supply remove duplicates without irreversible erasure or label decoherence",
+        "independent": true,
+        "second": "coherent reversible saturation",
+        "second_closes_first": false,
+        "second_to_first": "remove duplicates without irreversible erasure or label decoherence does not supply create the required harmonic loop without a selected Wilson schedule"
+      },
+      {
+        "first": "one local binding mark per loop",
+        "first_closes_second": false,
+        "first_to_second": "select exactly one point on a noncontractible loop does not supply replace scan resources and retained duplicate history",
+        "independent": true,
+        "second": "head/path/debris retirement",
+        "second_closes_first": false,
+        "second_to_first": "replace scan resources and retained duplicate history does not supply select exactly one point on a noncontractible loop"
+      },
+      {
+        "first": "one local binding mark per loop",
+        "first_closes_second": false,
+        "first_to_second": "select exactly one point on a noncontractible loop does not supply remove duplicates without irreversible erasure or label decoherence",
+        "independent": true,
+        "second": "coherent reversible saturation",
+        "second_closes_first": false,
+        "second_to_first": "remove duplicates without irreversible erasure or label decoherence does not supply select exactly one point on a noncontractible loop"
+      },
+      {
+        "first": "head/path/debris retirement",
+        "first_closes_second": false,
+        "first_to_second": "replace scan resources and retained duplicate history does not supply remove duplicates without irreversible erasure or label decoherence",
+        "independent": true,
+        "second": "coherent reversible saturation",
+        "second_closes_first": false,
+        "second_to_first": "remove duplicates without irreversible erasure or label decoherence does not supply replace scan resources and retained duplicate history"
+      }
+    ],
+    "N2_pair_count": 21,
+    "N3_hidden_condition_scan": {
+      "Wilson/scan/coalescence schedules": "explicit supplied compile schedules, not physical time",
+      "blank debris and unique head": "explicit supplied scan resources",
+      "loop winding/mark": "both explicit supplied sectors",
+      "neutral pattern and phase/sign convention": "explicit supplied code convention",
+      "one carrier per species": "explicit supplied global sector",
+      "physical table extension and elementary decomposition": "unitary code table executed; off-code extension/decomposition supplied",
+      "translation-uniform neutral W orbitals": "explicit supplied preparation",
+      "uncited_standard_or_obvious_hits": 0
+    },
+    "N4_residual_matching": [
+      {
+        "current_residual": "closed by the exterior three-carrier EG theorem",
+        "match": true,
+        "witness": "Cycle598 Route B",
+        "witness_residual": "full indistinguishable N<=3 carrier coin lift uncertified"
+      },
+      {
+        "current_residual": "still open after topological/saturation/CA attempts",
+        "match": true,
+        "witness": "Cycle598 Route B",
+        "witness_residual": "remote duplicate species; unique genesis supplied"
+      },
+      {
+        "current_residual": "topological loop orbit generation requires Wilson schedule",
+        "match": true,
+        "witness": "Cycle598 Route C",
+        "witness_residual": "harmonic sectors and autonomous preparation supplied"
+      }
+    ],
+    "N5_rhetoric_resolution": [
+      "tested: all six auxiliary-species permutations act by one global ray sign on every local N<=3 code column",
+      "tested: this marked straight-loop family admits a remote second mark; no statement covers every topological code",
+      "tested: this reversible scan leaves pre-scan duplicates and debris; no statement covers every autonomous saturation law",
+      "tested: deterministic classical translation-equivariant CA from uniform blank stays uniform; quantum W-state genesis is explicitly untested"
+    ],
+    "N6_partial_closure_paths": [
+      "construct a local parent Hamiltonian or dissipator whose unique one-excitation dark state is the translation-uniform neutral/carrier W state",
+      "compile the 12-role exterior code table into accepted elementary M2 gates",
+      "use topological winding only as a conserved certificate while a separate local endpoint/mark code supplies point binding",
+      "make debris a coherent gauge reservoir and prove decoupling instead of erasing it"
+    ],
+    "N7_hostile_steelman": "A hostile reviewer should accept the compiler half and reject any genesis no-go: the exterior code shows auxiliary labels can be pure gauge, while a frustration-free one-excitation parent Hamiltonian or translation-invariant dissipative dark-state construction could prepare a W carrier without a classical localized seed.  That concrete quantum route was not attempted, so the remaining genesis residual is a next construction, not a shared obstruction.",
+    "N8_cross_cycle_echo": "Cycles560/563 replaced global decoder/order services by bounded tables, and Cycle598 removed the fixed root on a prepared sector.  Cycle600 likewise closes the previously open full carrier compiler while leaving sector preparation explicit; the same import-retirement pattern argues for another constructive cycle rather than constitutional language.",
+    "axiom_pressure": false,
+    "minimum_content_claim_shipped": false,
+    "negative_claim_shipped": false,
+    "pass_for_scoped_dispositions_and_withholding_broad_negative": true,
+    "route_evidence": {
+      "A": true,
+      "B": true,
+      "C": true
+    },
+    "shared_obstruction": false,
+    "skill_freshness": {
+      "local_skill_sha256": "aeac7b2b7df30c350961f4b36b980a91e9c2ebeca3f35b6c1adcd731071bdab5",
+      "newer_origin_main_version_followed": true,
+      "origin_main_checked": true,
+      "origin_main_skill_sha256": "7d1aea8243ddd972331b935e2e836657e72115da3efe259f828fe862469d68b7",
+      "proof_search_governance_followed": true
+    }
+  },
+  "note_sha256": "492d41772d95bdf8ce4dc7c1ae753ab4f2a7f258ce5369b0449ccb4881b9ba64",
+  "optimal_next_campaign": "construct a translation-invariant one-excitation parent Hamiltonian or dissipative dark-state preparer for each carrier/neutral species and compile the executed 12-role exterior table into accepted elementary M2 gates, with gap, leakage, malformed-sector, and held-size controls",
+  "pass": true,
+  "pins": {
+    "docs/work_history/repo/review_feedback/PHYSICAL_ROOT_FREE_CUTOFF_GAUGE_PREPARATION_TOURNAMENT_CYCLE598_NOTE_2026-07-22.md": "6f5f9e52ef41e8b6cd4863eec6c40fff3d8047612c6596e926123617016ab1e0",
+    "outputs/physical_root_free_cutoff_gauge_preparation_tournament_cycle598_cold_2026_07_22.txt": "19811196cdedba8ebea3607e6a38ab3f83a5c68d6f264ceed795c13cb8fe44a9",
+    "outputs/physical_root_free_cutoff_gauge_preparation_tournament_cycle598_receipt_2026_07_22.json": "d5a47bf415883fdf95e2faf0c74f4e8b0e2caa7b75c8fc504f89e984834f19b6",
+    "scripts/physical_root_free_cutoff_gauge_preparation_tournament_cycle598_2026_07_22.py": "89c733e3be55ec287e338c4d9ed6062ec8cb222345ff72596662c43b3f1ae6a5"
+  },
+  "route_A_full_N3_exterior_carrier_compiler": {
+    "carrier_word": "each carrier has nine global orbital levels (six bound matter directions plus three neutral types); one 4-M2 word/species/cell encodes 0 absent, 1..3 neutral type, 4..9 bound direction, with 10..15 rejected",
+    "coherent_superposition_across_N0_N1_N2_N3_EG_residual": 2.6344305725804126e-16,
+    "complete_N4_interactions_claimed": false,
+    "composed_with_Cycle590_53_M2_matter_update": false,
+    "composition_boundary": "this is a standalone carrier presentation replacing, not independently tensoring with, the Cycle590 matter representation; no 53+12 joint EG is claimed",
+    "declared_code_dimension": 42,
+    "declared_observables": "S3-invariant observables only; number/contact descend exactly, while a species-resolved probe is outside the quotient code",
+    "exactly_one_carrier_per_species_sector_supplied": true,
+    "executed_local_table_support": {
+      "elementary_M2_gate_decomposition_executed": false,
+      "elementary_gate_count_claimed": false,
+      "onsite coin/contact code table": "three four-M2 carrier words = 12 M2 support; 42 code columns and 1000 local-word tensor rows executed",
+      "stream carrier hop table": "two four-M2 words for one species across a crossed link = 8 M2 basis support"
+    },
+    "factorized_certificate": "the 42-column/1000-row exhaustive onsite table, the explicit normalized neutral-W orbitals, and exact L3/L6/L7 stream/contact word samples certify the separate local and transport factors",
+    "full_three_carrier_exterior_dimension": 84,
+    "full_volume_encoder_definition": "E_L maps Fock_{N<=3}(C^{6V}) into wedge^3(C^{6V} direct-sum span{chi_0,chi_1,chi_2}), with chi_r=V^-1/2 sum_x |x,r>",
+    "full_volume_matrix_materialized": false,
+    "held_L6_live_M2": 2592,
+    "inherited_Cycle230_contact_and_seam_fixtures": {
+      "Cycle230_contact_factorization_residual": 2.149937642474629e-15,
+      "Cycle230_seam_braid_residual": 0,
+      "one_particle_mass_residual": 8.7159799596118e-16
+    },
+    "isometry_residual": 1.4390135079995448e-15,
+    "local_eight_M2_hop_table": {
+      "directions": 6,
+      "inverse_failures": 0,
+      "moved_or_inverse_moved_rows": 12,
+      "two_word_rows_exhausted": 1536,
+      "valid_label_leakage_failures": 0
+    },
+    "local_one_word_and_collision_checks_enforce_global_sector": false,
+    "local_stream_inverse_EG_residual": 0.0,
+    "local_stream_permutation_N_le_3_EG_residual": 0.0,
+    "logical_local_dimension_N_le_3": 42,
+    "massive_coin": {
+      "beta": -0.3,
+      "complete_N_le_3_EG_residual": 1.154543706932542e-15,
+      "deleted_one_species_coin_code_leakage": 4.887228505907074,
+      "inverse_EG_residual": 1.1215866800225846e-15,
+      "logical_unitarity_residual": 4.442837376751779e-15
+    },
+    "maximum_new_role_radius_fine_L1": 3,
+    "maximum_species_permutation_ray_residual": 0.0,
+    "maximum_species_symmetric_observable_ray_residual": 0.0,
+    "maximum_species_update_ray_residual": 9.124820155734822e-16,
+    "neutral_orbitals": [
+      "three orthogonal internal neutral types, each explicitly normalized as V^-1/2 sum_x |x,r> over local site words",
+      "logical N retains neutral types r_0 through r_(2-N)"
+    ],
+    "number_observable_descent_residual": 0.0,
+    "occupied_orbital_tensor_dimension_without_absent_word": 729,
+    "onsite_even_contact_N_le_3_EG_residual": 0.0,
+    "pass": true,
+    "persistent_carrier_M2_per_cell": 12,
+    "physical_three_species_local_word_dimension": 1000,
+    "post_coin_carrier_collision_amplitude": 1.6549873848272747e-16,
+    "proper_cubic": {
+      "frame_products": 576,
+      "frames": 24,
+      "local_group_failures": 0,
+      "maximum_embedding_covariance_residual": 0.0,
+      "maximum_mass_coin_commutator": 0.0
+    },
+    "remote_extra_and_missing_carriers_pass_local_checks": true,
+    "runtime_particle_label_matching_order_parity_or_host_query": false,
+    "seam_exterior_lift_residual": 0.0,
+    "size_rows": [
+      {
+        "all24_stream_commutator_failures": 0,
+        "all576_group_failures_on_42_modes": 0,
+        "deleted_carrier_stream_update_residual": 0.4082482904638631,
+        "lawful_global_species_counts": [
+          1,
+          1,
+          1
+        ],
+        "lawful_sector_local_checks": {
+          "decoded_matter_occupations": 0,
+          "invalid_four_M2_labels": 0,
+          "multiple_species_same_matter_mode": 0,
+          "pass": true
+        },
+        "layout": {
+          "cells": 27,
+          "fine_lattice_modulus": 48,
+          "frame_group_failures": 0,
+          "frame_products": 576,
+          "length": 3,
+          "mapped_wire_injection_failures": 0,
+          "maximum_role_radius_fine_L1": 3,
+          "proper_cubic_frames": 24,
+          "role_coordinate_sha256": "8012b8690723c676ff5e57f61acf5bf0b1affbc2359215823cd314e9e24e4bf2",
+          "standalone_carrier_M2": 324,
+          "standalone_carrier_M2_per_cell": 12.0
+        },
+        "length": 3,
+        "maximum_global_contact_EG_residual": 0.0,
+        "maximum_sample_stream_exterior_residual": 0.0,
+        "maximum_stream_inverse_word_residual": 0.0,
+        "missing_global_species_counts": [
+          0,
+          1,
+          1
+        ],
+        "missing_species_local_checks": {
+          "decoded_matter_occupations": 0,
+          "invalid_four_M2_labels": 0,
+          "multiple_species_same_matter_mode": 0,
+          "pass": true
+        },
+        "neutral_local_update_identity_residual": 0,
+        "neutral_uniform_orbital_all24_residual": 0.0,
+        "neutral_uniform_orbital_gram_residual": 3.1401849173675503e-16,
+        "neutral_uniform_orbital_translation_residual": 0.0,
+        "remote_extra_global_species_counts": [
+          2,
+          1,
+          1
+        ],
+        "remote_extra_species_local_checks": {
+          "decoded_matter_occupations": 0,
+          "invalid_four_M2_labels": 0,
+          "multiple_species_same_matter_mode": 0,
+          "pass": true
+        },
+        "sampled_code_words": 33,
+        "split": "train",
+        "stream_signs_observed": [
+          -1,
+          1
+        ],
+        "translation_stream_commutator_failures": 0,
+        "translations_tested": 27
+      },
+      {
+        "all24_stream_commutator_failures": 0,
+        "all576_group_failures_on_42_modes": 0,
+        "deleted_carrier_stream_update_residual": 0.4082482904638631,
+        "lawful_global_species_counts": [
+          1,
+          1,
+          1
+        ],
+        "lawful_sector_local_checks": {
+          "decoded_matter_occupations": 0,
+          "invalid_four_M2_labels": 0,
+          "multiple_species_same_matter_mode": 0,
+          "pass": true
+        },
+        "layout": {
+          "cells": 216,
+          "fine_lattice_modulus": 96,
+          "frame_group_failures": 0,
+          "frame_products": 576,
+          "length": 6,
+          "mapped_wire_injection_failures": 0,
+          "maximum_role_radius_fine_L1": 3,
+          "proper_cubic_frames": 24,
+          "role_coordinate_sha256": "9e00ad805b53121a94e7cf2a1eebe654e639917a7be2909b894a7607e3fef8a8",
+          "standalone_carrier_M2": 2592,
+          "standalone_carrier_M2_per_cell": 12.0
+        },
+        "length": 6,
+        "maximum_global_contact_EG_residual": 0.0,
+        "maximum_sample_stream_exterior_residual": 0.0,
+        "maximum_stream_inverse_word_residual": 0.0,
+        "missing_global_species_counts": [
+          0,
+          1,
+          1
+        ],
+        "missing_species_local_checks": {
+          "decoded_matter_occupations": 0,
+          "invalid_four_M2_labels": 0,
+          "multiple_species_same_matter_mode": 0,
+          "pass": true
+        },
+        "neutral_local_update_identity_residual": 0,
+        "neutral_uniform_orbital_all24_residual": 0.0,
+        "neutral_uniform_orbital_gram_residual": 1.5700924586837752e-16,
+        "neutral_uniform_orbital_translation_residual": 0.0,
+        "remote_extra_global_species_counts": [
+          2,
+          1,
+          1
+        ],
+        "remote_extra_species_local_checks": {
+          "decoded_matter_occupations": 0,
+          "invalid_four_M2_labels": 0,
+          "multiple_species_same_matter_mode": 0,
+          "pass": true
+        },
+        "sampled_code_words": 33,
+        "split": "held",
+        "stream_signs_observed": [
+          -1,
+          1
+        ],
+        "translation_stream_commutator_failures": 0,
+        "translations_tested": 216
+      },
+      {
+        "all24_stream_commutator_failures": 0,
+        "all576_group_failures_on_42_modes": 0,
+        "deleted_carrier_stream_update_residual": 0.4082482904638631,
+        "lawful_global_species_counts": [
+          1,
+          1,
+          1
+        ],
+        "lawful_sector_local_checks": {
+          "decoded_matter_occupations": 0,
+          "invalid_four_M2_labels": 0,
+          "multiple_species_same_matter_mode": 0,
+          "pass": true
+        },
+        "layout": {
+          "cells": 343,
+          "fine_lattice_modulus": 112,
+          "frame_group_failures": 0,
+          "frame_products": 576,
+          "length": 7,
+          "mapped_wire_injection_failures": 0,
+          "maximum_role_radius_fine_L1": 3,
+          "proper_cubic_frames": 24,
+          "role_coordinate_sha256": "f9195cff4f5a60795296264bee6284e41cb102d1ee21b074162bfbe450b84293",
+          "standalone_carrier_M2": 4116,
+          "standalone_carrier_M2_per_cell": 12.0
+        },
+        "length": 7,
+        "maximum_global_contact_EG_residual": 0.0,
+        "maximum_sample_stream_exterior_residual": 0.0,
+        "maximum_stream_inverse_word_residual": 0.0,
+        "missing_global_species_counts": [
+          0,
+          1,
+          1
+        ],
+        "missing_species_local_checks": {
+          "decoded_matter_occupations": 0,
+          "invalid_four_M2_labels": 0,
+          "multiple_species_same_matter_mode": 0,
+          "pass": true
+        },
+        "neutral_local_update_identity_residual": 0,
+        "neutral_uniform_orbital_all24_residual": 0.0,
+        "neutral_uniform_orbital_gram_residual": 1.1537776118301384e-15,
+        "neutral_uniform_orbital_translation_residual": 0.0,
+        "remote_extra_global_species_counts": [
+          2,
+          1,
+          1
+        ],
+        "remote_extra_species_local_checks": {
+          "decoded_matter_occupations": 0,
+          "invalid_four_M2_labels": 0,
+          "multiple_species_same_matter_mode": 0,
+          "pass": true
+        },
+        "sampled_code_words": 33,
+        "split": "held-out-size",
+        "stream_signs_observed": [
+          -1,
+          1
+        ],
+        "translation_stream_commutator_failures": 0,
+        "translations_tested": 343
+      }
+    ],
+    "species_labels_classical_particle_identities": false,
+    "species_permutation_sign_rows": [
+      {
+        "permutation": [
+          0,
+          1,
+          2
+        ],
+        "residual": 0.0,
+        "sign": 1
+      },
+      {
+        "permutation": [
+          0,
+          2,
+          1
+        ],
+        "residual": 0.0,
+        "sign": -1
+      },
+      {
+        "permutation": [
+          1,
+          0,
+          2
+        ],
+        "residual": 0.0,
+        "sign": -1
+      },
+      {
+        "permutation": [
+          1,
+          2,
+          0
+        ],
+        "residual": 0.0,
+        "sign": 1
+      },
+      {
+        "permutation": [
+          2,
+          0,
+          1
+        ],
+        "residual": 0.0,
+        "sign": 1
+      },
+      {
+        "permutation": [
+          2,
+          1,
+          0
+        ],
+        "residual": 0.0,
+        "sign": -1
+      }
+    ],
+    "species_ray_reason": "every S3 species permutation multiplies every declared code state by its global sign",
+    "standalone_physical_M2_per_cell": 12,
+    "status": "exact full N=0,1,2,3 exterior carrier law on the supplied one-carrier-per-species sector",
+    "uniform_neutral_orbital_preparation_supplied": true
+  },
+  "route_B_topological_winding_genesis": {
+    "Wilson_line_schedule_host_free_or_autonomous": false,
+    "Wilson_line_schedule_is_physical_time": false,
+    "couples_to_route_A_point_carrier_without_extra_mark_sector": false,
+    "exactly_one_local_matter_binding_mark_enforced": false,
+    "local_loop_check_support_M2_per_species": 7,
+    "local_word_per_species_per_cell": "three outgoing Z2 link bits plus one mark bit",
+    "pass_as_route_audit": true,
+    "pass_unique_genesis_target": false,
+    "persistent_M2_per_cell_three_species": 12,
+    "rows": [
+      {
+        "Wilson_line_schedule_calls": 3,
+        "all24_covariance_failures": 0,
+        "all576_group_failures": 0,
+        "deleted_edge_Gauss_syndrome_sites": 2,
+        "final_generation_residual": 0,
+        "intermediate_Gauss_syndrome_sites": [
+          2,
+          2,
+          0
+        ],
+        "inverse_residual": 0,
+        "length": 3,
+        "local_loop_and_one_mark_checks": {
+          "invalid_mark_words": 0,
+          "loop_Gauss_syndrome_sites": 0,
+          "marks_not_on_degree_two_loop": 0,
+          "pass": true
+        },
+        "plaquette_winding_change": [
+          0,
+          0,
+          0
+        ],
+        "remote_duplicate_mark_count": 2,
+        "remote_duplicate_mark_local_checks": {
+          "invalid_mark_words": 0,
+          "loop_Gauss_syndrome_sites": 0,
+          "marks_not_on_degree_two_loop": 0,
+          "pass": true
+        },
+        "remote_duplicate_mark_passes_local_checks": true,
+        "split": "train",
+        "straight_loop_orbit_size": 27,
+        "translation_covariance_failures": 0,
+        "translations_tested": 27,
+        "winding": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "Wilson_line_schedule_calls": 6,
+        "all24_covariance_failures": 0,
+        "all576_group_failures": 0,
+        "deleted_edge_Gauss_syndrome_sites": 2,
+        "final_generation_residual": 0,
+        "intermediate_Gauss_syndrome_sites": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          0
+        ],
+        "inverse_residual": 0,
+        "length": 6,
+        "local_loop_and_one_mark_checks": {
+          "invalid_mark_words": 0,
+          "loop_Gauss_syndrome_sites": 0,
+          "marks_not_on_degree_two_loop": 0,
+          "pass": true
+        },
+        "plaquette_winding_change": [
+          0,
+          0,
+          0
+        ],
+        "remote_duplicate_mark_count": 2,
+        "remote_duplicate_mark_local_checks": {
+          "invalid_mark_words": 0,
+          "loop_Gauss_syndrome_sites": 0,
+          "marks_not_on_degree_two_loop": 0,
+          "pass": true
+        },
+        "remote_duplicate_mark_passes_local_checks": true,
+        "split": "held",
+        "straight_loop_orbit_size": 108,
+        "translation_covariance_failures": 0,
+        "translations_tested": 216,
+        "winding": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "Wilson_line_schedule_calls": 7,
+        "all24_covariance_failures": 0,
+        "all576_group_failures": 0,
+        "deleted_edge_Gauss_syndrome_sites": 2,
+        "final_generation_residual": 0,
+        "intermediate_Gauss_syndrome_sites": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          0
+        ],
+        "inverse_residual": 0,
+        "length": 7,
+        "local_loop_and_one_mark_checks": {
+          "invalid_mark_words": 0,
+          "loop_Gauss_syndrome_sites": 0,
+          "marks_not_on_degree_two_loop": 0,
+          "pass": true
+        },
+        "plaquette_winding_change": [
+          0,
+          0,
+          0
+        ],
+        "remote_duplicate_mark_count": 2,
+        "remote_duplicate_mark_local_checks": {
+          "invalid_mark_words": 0,
+          "loop_Gauss_syndrome_sites": 0,
+          "marks_not_on_degree_two_loop": 0,
+          "pass": true
+        },
+        "remote_duplicate_mark_passes_local_checks": true,
+        "split": "held-out-size",
+        "straight_loop_orbit_size": 147,
+        "translation_covariance_failures": 0,
+        "translations_tested": 343,
+        "winding": [
+          1,
+          0,
+          0
+        ]
+      }
+    ],
+    "selected_loop_axis_origin_orbit_state_supplied": true,
+    "status": "translation/proper-cubic covariant straight-loop orbit with an explicit scheduled Wilson-line genesis; topological and one-mark sectors remain supplied",
+    "topological_winding_changed_by_local_plaquette_updates": false,
+    "uniform_superposition_over_3L2_straight_loops_prepared": false
+  },
+  "route_C_fixed_alphabet_saturation": {
+    "blank_deterministic_CA": {
+      "rules_exhausted": 256,
+      "scope": "classical deterministic blank-to-localized-one genesis only; quantum W-state and nonuniform seeds remain live",
+      "translation_equivariance_induction": "a uniform blank is fixed inside the uniform subspace by every deterministic translation-equivariant local rule"
+    },
+    "dissipative_coalescence": {
+      "coherent_Route_A_lift_certified": false,
+      "creates_carrier_from_vacuum": false,
+      "local_reaction": "10->01 diffusion and 11->01 coalescence along transported NN schedule",
+      "nonempty_input_required": true,
+      "unitary_or_reversible": false
+    },
+    "pass_as_route_audit": true,
+    "pass_unique_genesis_target": false,
+    "reversible_scan": {
+      "additional_debris_M2_per_cell": 3,
+      "blank_debris_unique_head_base_path_and_schedule_supplied": true,
+      "head_and_seen_track_M2_per_cell": 2,
+      "held_L6_live_M2": 3672,
+      "local_scan_gate_support_M2": 6,
+      "post_scan_debris_can_be_erased_unitarily": false,
+      "pre_scan_remote_duplicates_locally_admissible": true,
+      "standalone_total_M2_per_cell_if_composed_with_Route_A": 17,
+      "static_local_enforcement": false
+    },
+    "rows": [
+      {
+        "all24_schedule_family_failures": 0,
+        "all576_group_failures": 0,
+        "debris_count": 2,
+        "delete_coalescence_rule_final_active_count": 3,
+        "delete_one_saturation_call_active_count": 2,
+        "delete_one_saturation_call_debris_count": 1,
+        "dissipative_coalescence_final_active_count": 1,
+        "elementary_CA_nonuniform_outputs": 0,
+        "elementary_CA_rules_exhausted_from_blank": 256,
+        "elementary_CA_unique_outputs": 0,
+        "initial_active_count": 3,
+        "length": 3,
+        "malformed_nonblank_debris_overlap_rejections": 2,
+        "nearest_neighbour_path_failures": 0,
+        "reversible_inverse_residual": 0,
+        "saturated_active_count": 1,
+        "schedule_calls": 27,
+        "split": "train",
+        "translation_schedule_family_failures": 0,
+        "translations_tested": 27,
+        "vacuum_genesis_count": 0
+      },
+      {
+        "all24_schedule_family_failures": 0,
+        "all576_group_failures": 0,
+        "debris_count": 2,
+        "delete_coalescence_rule_final_active_count": 3,
+        "delete_one_saturation_call_active_count": 2,
+        "delete_one_saturation_call_debris_count": 1,
+        "dissipative_coalescence_final_active_count": 1,
+        "elementary_CA_nonuniform_outputs": 0,
+        "elementary_CA_rules_exhausted_from_blank": 256,
+        "elementary_CA_unique_outputs": 0,
+        "initial_active_count": 3,
+        "length": 6,
+        "malformed_nonblank_debris_overlap_rejections": 2,
+        "nearest_neighbour_path_failures": 0,
+        "reversible_inverse_residual": 0,
+        "saturated_active_count": 1,
+        "schedule_calls": 216,
+        "split": "held",
+        "translation_schedule_family_failures": 0,
+        "translations_tested": 216,
+        "vacuum_genesis_count": 0
+      },
+      {
+        "all24_schedule_family_failures": 0,
+        "all576_group_failures": 0,
+        "debris_count": 2,
+        "delete_coalescence_rule_final_active_count": 3,
+        "delete_one_saturation_call_active_count": 2,
+        "delete_one_saturation_call_debris_count": 1,
+        "dissipative_coalescence_final_active_count": 1,
+        "elementary_CA_nonuniform_outputs": 0,
+        "elementary_CA_rules_exhausted_from_blank": 256,
+        "elementary_CA_unique_outputs": 0,
+        "initial_active_count": 3,
+        "length": 7,
+        "malformed_nonblank_debris_overlap_rejections": 2,
+        "nearest_neighbour_path_failures": 0,
+        "reversible_inverse_residual": 0,
+        "saturated_active_count": 1,
+        "schedule_calls": 343,
+        "split": "held-out-size",
+        "translation_schedule_family_failures": 0,
+        "translations_tested": 343,
+        "vacuum_genesis_count": 0
+      }
+    ],
+    "schedule_calls_are_physical_time": false,
+    "status": "exact reversible saturation relative to nonempty input and supplied path/head, plus dissipative and blank-CA comparators; not static unique genesis"
+  },
+  "runner_sha256": "5b9bb9c1ae8585b7395f1a1a94040016ff8cc73e5cfbb430b16183e7133b64ba",
+  "shared_obstruction_or_axiom_pressure": false,
+  "shore": {
+    "Cycle598_pass": true,
+    "Cycle598_tests_passed": 7,
+    "accepted_current_note_sha256": "6f5f9e52ef41e8b6cd4863eec6c40fff3d8047612c6596e926123617016ab1e0",
+    "carrier_M2_per_cell": 12,
+    "fixtures": {
+      "Cycle230_contact_factorization_residual": 2.149937642474629e-15,
+      "Cycle230_seam_braid_residual": 0,
+      "one_particle_mass_residual": 8.7159799596118e-16
+    },
+    "held_extended_M2": 14040,
+    "receipt_pre_appendix_note_sha256": "8938c4d0392c3e99b79b43b3fe723b0ee107430f4a0620f9e8f1bbc7dedca700",
+    "root_free_prepared_sector": true,
+    "unique_genesis_locally_enforced": false
+  },
+  "six_wall_ledger": {
+    "C_int": "major movement: the complete N=0..3 massive coin, stream, onsite contact, and seam law has one exact standalone antisymmetric carrier EG; elementary 12-role M2 gate synthesis remains open",
+    "C_local": "all update tables are bounded and constant-overhead on the prepared sector; scan/coalescence/CA tests do not yet replace global sector preparation by static autonomous local enforcement",
+    "C_num": "three conserved carriers give constant N<=3 capacity with no growing modulus on the declared sector; unique global count genesis remains open",
+    "C_ref": "the exterior carrier compiler is root-free and species permutations are pure ray signs; the one-carrier/species and neutral-W preparations remain supplied",
+    "C_source": "carrier, neutral, loop, mark, and debris roles are capacity bookkeeping only, not empirical charge, energy, stress, source, or gravity",
+    "C_wrap": "the full stream/seam exterior signs are exact; winding-loop topology is covariant but its harmonic sector and one binding mark remain supplied"
+  },
+  "status": "cycle600-root-free-full-N3-carrier-compiler-genesis-tournament",
+  "strongest_constructive_result": "an exact 42-column exterior isometry into the 1,000-row three-species four-M2 local-word tensor (729 occupied-orbital rows before the absent word is added) carries every N=0,1,2,3 Cycle219 massive coin state and the Cycle230 stream/contact/seam law as a standalone 12-M2/cell presentation, with species permutations acting only by global sign, L3/L6/L7 stream/contact samples, every translation, and all24/576 covariance; exactly-one species genesis and neutral-W preparation remain supplied",
+  "tests_failed": 0,
+  "tests_passed": 7
+}

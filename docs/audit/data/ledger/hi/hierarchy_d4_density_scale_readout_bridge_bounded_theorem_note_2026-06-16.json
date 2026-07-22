@@ -1,44 +1,67 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-22T20:02:06.117902+00:00",
+  "audit_invocation_history": [
+    "b5588aa5c6054df8a6c3db63bc622086",
+    "298c2734b03c43a6a8fb3aa2b3531b4e"
+  ],
+  "audit_invocation_id": "298c2734b03c43a6a8fb3aa2b3531b4e",
+  "audit_state_snapshot": {
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10": "For a positive quantity of mass dimension d and a dimensionless prefactor, a simple-power extraction has mass dimension one iff its exponent is 1/d; among positive integers, exponent 1/4 uniquely corresponds to d = 4."
+    },
+    "dep_claim_type": {
+      "hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10": "retained"
+    },
+    "deps": [
+      "hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 11.008,
+    "runner_hash": "f6911850ced876af0ba90258ca80e7103b05db6a15b28fde23db21176b5869b8",
+    "transitive_descendants": 727
+  },
+  "audit_status": "audited_decoration",
+  "auditor": "codex-audit-batch-B-20260722-04b29193",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The scoped positive-real identity closes exactly: division by the fixed density relation and the unique positive fourth root force inverse placement, sign, and reference normalization. It closes only as an algebraic corollary, not as a physical VEV bridge.",
   "claim_id": "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16",
-  "claim_scope": null,
-  "claim_type": "bounded_theorem",
+  "claim_scope": "Exact positive-real algebra mapping a fixed D=4 density coefficient ratio to an inverse fourth-root scale ratio, including sign, reference normalization, and the stated APBC endpoint evaluations; no electroweak VEV identification.",
+  "claim_type": "decoration",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-22T20:02:06.117902+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "critical",
   "cross_confirmation": null,
-  "decoration_parent_claim_id": null,
+  "decoration_parent_claim_id": "hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10",
   "deps": [
     "hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10"
   ],
   "direct_in_degree": 3,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "decoration_under_hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10",
+  "effective_status_reason": "decoration_parent_retained",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "fresh_context",
+  "intrinsic_status": "decoration_under_hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10",
   "load_bearing_score": 11.008,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "From rho_* = A_ref v_ref^4 = A(L) v(L)^4 with all quantities positive, v(L)/v_ref = (A_ref/A(L))^(1/4).",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "8c4a19f6cf5b4088b37dfb71da1554134155264b20f865fe882bc4ae4ac6f3f9",
   "note_path": "docs/HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Recheck classification only if a future revision derives the fixed-density readout or the physical VEV and coefficient-surface identification instead of assuming them.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1558,14 +1581,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
+    "A": 13,
+    "B": 4,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 17
   },
   "runner_path": "scripts/frontier_hierarchy_d4_density_scale_readout_bridge_2026_06_16.py",
   "title": "Hierarchy D4 Density-Scale Readout Bridge Bounded Theorem Note",
   "transitive_descendants": 727,
-  "verdict_rationale": null
+  "verdict_rationale": "Independent algebra confirms the inverse fourth-root ratio, its monotonic sign, and exact reference normalization. Independent finite-sum and continuum-integral checks also give A_2=1/(8u_0^2), A_4=1/(7u_0^2), and A_inf=1/(4sqrt(3)u_0^2), hence the stated endpoint ratios. Every load-bearing result is nevertheless class-A algebra over the stated readout/formula and the single retained dimensional parent, with no external comparator or independent physical identification, so the result is an algebraic decoration rather than a bounded theorem."
 }

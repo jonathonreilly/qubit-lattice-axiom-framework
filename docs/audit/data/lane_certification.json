@@ -1104,10 +1104,6 @@
           "effective_status": "unaudited"
         },
         {
-          "claim_id": "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16",
-          "effective_status": "unaudited"
-        },
-        {
           "claim_id": "hierarchy_dimensional_compression_note",
           "effective_status": "unaudited"
         },
@@ -2768,9 +2764,9 @@
       "roots": [
         "strong_cp_theta_zero_note"
       ],
-      "uncertified_count": 635
+      "uncertified_count": 634
     }
   ],
-  "repo_head": "0dcdfdb314fcda1023a5d3941dca9fa3f95fd436",
+  "repo_head": "42d700dfcbff85f932a03b0cbc47895426e72559",
   "schema": "lane_certification_v2"
 }

@@ -1,9 +1,10 @@
 {
   "audit_date": null,
   "audit_invocation_history": [
-    "13a00ffd6e9d4372818b0f7e22b0b26e"
+    "13a00ffd6e9d4372818b0f7e22b0b26e",
+    "76d8fdbc9f004498ab9e98e0062732eb"
   ],
-  "audit_invocation_id": "13a00ffd6e9d4372818b0f7e22b0b26e",
+  "audit_invocation_id": "76d8fdbc9f004498ab9e98e0062732eb",
   "audit_state_snapshot": null,
   "audit_status": "audit_in_progress",
   "auditor": null,
@@ -11,7 +12,7 @@
   "auditor_family": null,
   "auditor_model": null,
   "auditor_reasoning_effort": null,
-  "blocker": "awaiting_cross_confirmation",
+  "blocker": "cross_confirmation_disagreement",
   "chain_closes": null,
   "chain_closure_explanation": null,
   "claim_id": "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06",
@@ -51,8 +52,35 @@
       "verdict": "audited_clean",
       "verdict_rationale": "The claim is a genuine class-A mathematical closure under its explicitly stated thermal hypotheses, not a definition, renaming, tuned numerical match, or external-comparator check. The source proof establishes the ratio directly; the runner\u2019s algebraic checks agree, while its wiring, premise-value, and prose guards are class-B verification rather than load-bearing derivation. The inventory counts and downstream g_* value are outside the audited theorem\u2019s closure and are correctly presented only as parent-premise arithmetic."
     },
-    "second_audit": null,
-    "status": "awaiting_second"
+    "second_audit": {
+      "audit_date": "2026-07-22T19:01:07.456797+00:00",
+      "audit_invocation_id": "76d8fdbc9f004498ab9e98e0062732eb",
+      "auditor": "codex-audit-batch-B-20260722-1dcc6992",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "chain_closes": false,
+      "chain_closure_explanation": "The series and Gamma-function calculation closes the exact ratio I_F/I_B=7/8, but the absolute energy-density coefficients additionally require an unestablished phase-space normalization.",
+      "claim_scope": "Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and the absolute coefficients are rho_B=(pi^2/30)T^4 and rho_F=(7/8)(pi^2/30)T^4.",
+      "claim_type": "bounded_theorem",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "Multiplying the exact Bose and Fermi integrals by the common phase-space prefactor (1/(2 pi^2)) T^4 gives the claimed per-degree coefficients.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "notes_for_re_audit_if_any": "scope_too_broad \u2014 either restrict the claim to the exact 7/8 integral ratio or add and verify the one-particle phase-space measure as an explicit hypothesis before re-audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 17,
+        "C": 0,
+        "D": 0,
+        "total_pass": 29
+      },
+      "verdict": "audited_conditional",
+      "verdict_rationale": "Issue: The series/Gamma algebra correctly gives I_F/I_B=7/8, but the absolute per-degree densities insert the phase-space prefactor 1/(2 pi^2) without deriving it or listing the d^3p/(2 pi)^3 state-counting measure as a hypothesis or retained input. Why this blocks: massless dispersion, zero chemical potential, and natural units do not by themselves fix that normalization, and the runner merely hard-codes the prefactor. Repair target: explicitly add the one-particle phase-space density-of-states measure as a stated hypothesis or provide a retained thermal phase-space normalization derivation. Claim boundary until fixed: the dimensionless integral identity I_F/I_B=7/8 is clean, while the absolute rho_B and rho_F coefficients remain conditional."
+    },
+    "status": "disagreement"
   },
   "decoration_parent_claim_id": null,
   "deps": [

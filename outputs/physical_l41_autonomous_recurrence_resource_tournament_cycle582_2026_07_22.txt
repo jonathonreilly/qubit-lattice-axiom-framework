@@ -1,0 +1,425 @@
+PASS Cycle580 single-invocation target and Cycle582 note contract are exact-pinned :: {'expected': {'Cycle580 runner': 'c46917d4a932cd3ad9a78e0547625055f5adf9d5cf7393700d7e6715dd515cd3', 'Cycle580 note': 'e8ca5acdaec0c7ec5f0ba9772d7736352bcf132e961483d93f19c679439df276', 'Cycle580 receipt': 'bff5c4a6a691a991dd18058e7600dc7d8e102e569f4d32ef9f91711eef3c14ab'}, 'observed': {'Cycle580 runner': 'c46917d4a932cd3ad9a78e0547625055f5adf9d5cf7393700d7e6715dd515cd3', 'Cycle580 note': 'e8ca5acdaec0c7ec5f0ba9772d7736352bcf132e961483d93f19c679439df276', 'Cycle580 receipt': 'bff5c4a6a691a991dd18058e7600dc7d8e102e569f4d32ef9f91711eef3c14ab'}, 'receipt_checks': {'runner': True, 'note': True, 'transcript': True, 'parent_10_of_10': True, 'single_invocation_closed': True, 'recurrence_open': True, 'authority_audit': True}, 'Cycle580_agent_transcript_SHA256_from_receipt': '186fa69e34c55655194d79329fc2fbf1c5521006f4ffc295c5a49c70747e6763', 'note_missing': (), 'pass': True}
+PASS Route A gives exact finite-horizon recurrence under one in-state-controlled update with explicit locality residual :: {'route': 'A priority in-state phase/program plus resource cursor', 'train_horizon': 2, 'single_invocation_Cycle580_VB_residual': 1.760210900903115e-18, 'repeated_direct_residuals': [0.0, 0.0], 'autonomous_step_inverse_residual_max': 6.280369834735101e-16, 'final_repeated_Gram_residual': 1.2560739669470201e-15, 'slot0_archive_invariance_after_second_invocation': 5.551115123125783e-17, 'slot1_unused_fresh_invariance_after_first_invocation': 3.3306690738754696e-16, 'head_advance_deletion_residual': 3.9999999999999996, 'cursor_advance_deletion_residual': 3.9999999999999996, 'final_system_code_leakage': 0.0, 'final_all_resource_environment_code_leakage': 0.0, 'coherent_H_noise_rows': [(0.001, 0.0014142135476417034), (0.01, 0.014142120892344281)], 'head_H11_embedding_shape': (2048, 11), 'cursor_H2_embedding_shape': (4, 2), 'head_H11_isometry_residual': 0.0, 'cursor_H2_isometry_residual': 0.0, 'physical_M2_at_train_horizon': 43, 'maximum_phase_cursor_controlled_support_M2': 4, 'same_autonomous_step_law_repeated': True, 'host_selects_layer': False, 'host_repeats_same_law': True, 'controller_nearest_neighbor_gate_decomposition_constructed': False, 'local_controller_code_enforcement_constructed': False, 'malformed_controller_states_refused': 6, 'malformed_controller_total': 6, 'phase_is_time': False, 'pass': True}
+PASS Route B gives an exact held-horizon debit/archive ledger and visibly refuses to call finite stock renewable :: {'route': 'B finite conveyor/reservoir debit', 'train_horizon': 2, 'held_horizon': 3, 'active_system_M2': 6, 'fresh_resource_M2_per_invocation': 12, 'held_initial_fresh_resource_M2': 36, 'phase_head_M2': 11, 'held_cursor_M2': 3, 'held_total_physical_M2': 56, 'debit_rows': ({'completed_invocations': 0, 'fresh_slots_remaining': 3, 'spent_archive_slots': 0, 'fresh_M2_remaining': 36}, {'completed_invocations': 1, 'fresh_slots_remaining': 2, 'spent_archive_slots': 1, 'fresh_M2_remaining': 24}, {'completed_invocations': 2, 'fresh_slots_remaining': 1, 'spent_archive_slots': 2, 'fresh_M2_remaining': 12}, {'completed_invocations': 3, 'fresh_slots_remaining': 0, 'spent_archive_slots': 3, 'fresh_M2_remaining': 0}), 'history_owner': 'each spent 12-M2 packet retains old-input environment plus pointer/dephasing outputs', 'held_Gram_residual': 6.280369834735101e-16, 'slot0_archive_held_invariance': 5.551115123125783e-17, 'overrun_reuses_spent_slot0_change': 0.5077524002897471, 'packet_labels_after_left_rotation': (1, 2, 0), 'packet_inverse_recovered': (0, 1, 2), 'deleted_conveyor_swap_labels': (0, 2, 1), 'conveyor_two_M2_SWAPS_per_boundary': 24, 'conveyor_depth_per_boundary': 2, 'phase_controlled_active_station_max_support_M2': 3, 'replicated_local_phase_ring_synchronization_genesis_derived': False, 'literal_conveyor_geometry_constructed': False, 'finite_stock_is_renewable': False, 'stationary_fresh_spent_balance_derived': False, 'pass': True}
+PASS Route C exact tests expose the output-erasure versus reusable-carrier tradeoff without promoting it to a universal no-go :: {'route': 'C reversible uncompute/reset attempts', 'full_inverse_initial_residual': 8.906865629316332e-16, 'full_inverse_pointer_output_erasure_trace_distance': 0.7499999999999991, 'full_inverse_dephasing_output_erasure_trace_distance': 0.7499999999999992, 'full_inverse_old_input_environment_erasure_trace_distance': 0.9354143466934843, 'full_inverse_restored_system_trace_distance': 5.551115123125783e-16, 'pointer_dephase_archive_invariance_through_inverse': 1.6653345369377348e-16, 'active_18M2_reset_fidelity_after_pointer_dephase_copy': 0.2499999999999996, 'active_18M2_reset_infidelity_after_pointer_dephase_copy': 0.7500000000000004, 'old_input_copy_coherent_restored_system_trace_distance': 0.4999999999999999, 'supported_pointer_labels': 4, 'normalized_supported_active_branch_Gram_residual': 4.440892098500626e-16, 'old_input_dimension': 8, 'branch_conditioned_reset_contract_rank': 32, 'branch_conditioned_reset_contract_archive_qubits_at_least': 5, 'dimension_bound_is_contract_scoped_not_general_recurrence_minimum': True, 'full_inverse_reuses_carriers_only_by_erasing_episode': True, 'copy_then_uncompute_exact_active_reset_achieved': False, 'universal_archive_preserving_reset_no_go_claimed': False, 'pass': True}
+PASS repeated invocation preserves input distinction globally and in the first spent environment while retaining the all24 base geometry :: {'global_input_0_7_overlap_after_held_horizon': 0.0, 'global_input_0_7_trace_distance': 1.0, 'active_reduced_input_0_7_trace_distance': 0.0, 'slot0_old_input_environment_0_7_trace_distance': 0.9999999999999998, 'matter_distinction_retained_globally': True, 'matter_distinction_retained_in_active_reduced_system': False, 'base_Cycle580_proper_frames': 24, 'base_layout_all24_collision_failures': 0, 'Cycle580_all24_edge_tests_from_receipt': 816, 'Cycle580_all576_projector_role_tests_from_receipt': 6336, 'controller_and_conveyor_literal_cubic_layout_constructed': False, 'pass': True}
+PASS N1-N8 fails broad negatives honestly and retains a positive finite-horizon construction with route-specific falsifiers :: {'N1_routes': ({'family': 'in-state phase plus cursor', 'object_formulation': 'finite-horizon sparse isometry with unary H11 program and H_H resource cursor', 'mechanism_invariant': 'one homogeneous phase-conditioned update, reversible clock/cursor permutation, disjoint spent slots', 'terminal_obligation': 'compile the controlled update and conveyor into a literal collision-safe cubic NN law with local controller enforcement', 'status': 'ATTEMPTED', 'evidence': 'Route A exact at code-coordinate finite horizon; physical controller routing/enforcement remains open', 'citation': 'Cycle582 runner:route_a_controls'}, {'family': 'finite conveyor and debit', 'object_formulation': 'H supplied 12-M2 resource packets with spent-history ownership', 'mechanism_invariant': 'packet permutation, exact debit, archive spectator invariance', 'terminal_obligation': 'derive stationary fresh/spent balance rather than modulo reuse of spent stock', 'status': 'ATTEMPTED', 'evidence': 'Route B passes held H3 and detects first overrun; finite stock is exhausted', 'citation': 'Cycle582 runner:route_b_controls'}, {'family': 'reversible uncompute/reset', 'object_formulation': 'Cycle580 inverse with zero, pointer-copy, and old-input-copy archives', 'mechanism_invariant': 'global unitarity, which-history retention, active reset fidelity', 'terminal_obligation': 'reset carriers while retaining an independent faithful quantum output/history owner', 'status': 'ATTEMPTED', 'evidence': 'Route C exact tested attempts expose erasure or reset/coherence residuals', 'citation': 'Cycle582 runner:route_c_controls'}, {'family': 'bi-infinite fresh/spent streaming QCA', 'object_formulation': 'translation-invariant reservoir and garbage rays', 'mechanism_invariant': 'ballistic carrier flow and local scattering', 'terminal_obligation': 'prove stationary low-entropy inflow, collision safety, and arbitrary-volume recurrence', 'status': 'UNTESTED_OPEN_NOT_COUNTED', 'evidence': 'concrete reopen route; no Cycle582 construction or retained ruling-out authority', 'citation': 'Cycle483 and Cycle580 optimal-next-campaign receipts'}, {'family': 'error-corrected catalytic workspace', 'object_formulation': 'encoded catalyst plus syndrome/garbage export', 'mechanism_invariant': 'coherent correction and catalytic return', 'terminal_obligation': 'return the catalyst exactly while binding all exported syndrome/history information', 'status': 'UNTESTED_OPEN_NOT_COUNTED', 'evidence': 'mathematically actionable route not attempted here', 'citation': 'Cycle582 N7 steelman'}), 'N1_qualifying': 3, 'N1_required': 5, 'N1_status': 'FAIL', 'N2_walls': ('literal local controller/conveyor compilation', 'stationary fresh/spent resource balance', 'archive-preserving exact carrier reset', 'controller/code enforcement and noise tolerance'), 'N2_pairwise': ({'pair': ('literal local controller/conveyor compilation', 'stationary fresh/spent resource balance'), 'left_closes_right': 'no', 'left_to_right_reason': 'a local controller can still consume finite stock', 'right_closes_left': 'no', 'right_to_left_reason': 'stationary carrier balance supplies no local program routing', 'independent': True}, {'pair': ('literal local controller/conveyor compilation', 'archive-preserving exact carrier reset'), 'left_closes_right': 'no', 'left_to_right_reason': 'local scheduling does not make inverse reset preserve archives', 'right_closes_left': 'no', 'right_to_left_reason': 'archive-preserving reset does not place or clock gates', 'independent': True}, {'pair': ('literal local controller/conveyor compilation', 'controller/code enforcement and noise tolerance'), 'left_closes_right': 'no', 'left_to_right_reason': 'a compiled controller can lack enforcement/noise repair', 'right_closes_left': 'no', 'right_to_left_reason': 'enforcement does not compile the recurrence geometry', 'independent': True}, {'pair': ('stationary fresh/spent resource balance', 'archive-preserving exact carrier reset'), 'left_closes_right': 'no', 'left_to_right_reason': 'renewal can export rather than reset spent carriers', 'right_closes_left': 'no', 'right_to_left_reason': 'reset of one carrier does not prove stationary supply balance', 'independent': True}, {'pair': ('stationary fresh/spent resource balance', 'controller/code enforcement and noise tolerance'), 'left_closes_right': 'no', 'left_to_right_reason': 'stationary flow can carry uncorrected controller faults', 'right_closes_left': 'no', 'right_to_left_reason': 'error correction does not generate low-entropy inflow', 'independent': True}, {'pair': ('archive-preserving exact carrier reset', 'controller/code enforcement and noise tolerance'), 'left_closes_right': 'no', 'left_to_right_reason': 'archive-preserving reset can be noise-fragile', 'right_closes_left': 'no', 'right_to_left_reason': 'enforcement does not solve quantum output retention during reset', 'independent': True}), 'N3_hidden_hits': [{'pattern': 'are standard', 'line': 423, 'text': 'orthogonal labels, and garbage/history export are standard methods. No general', 'classification': 'non-load-bearing prior-art attribution'}], 'N4_residual_table': ({'witness': 'Cycle580 receipt', 'witness_residual': 'compile-time order; no in-state program or recurrence', 'claimed_closed': 'finite-horizon in-state code-coordinate scheduling', 'match': 'yes'}, {'witness': 'Cycle483 note', 'witness_residual': 'finite bath/export is not renewal', 'claimed_closed': 'finite debit only, not renewal', 'match': 'yes'}, {'witness': 'Cycle577 note', 'witness_residual': 'inverse erases the output episode', 'claimed_closed': 'three explicit uncompute/reset attempts', 'match': 'yes'}, {'witness': 'Cycle580 layout', 'witness_residual': 'single-invocation NN gates', 'claimed_closed': 'autonomous controller NN layout', 'match': 'no — base geometry only; dropped as controller-layout closure'}), 'N5': 'negative observations are limited to the tested finite horizons and three explicit Route-C maps', 'N6_partial_closure_paths': ('spatial program-token QCA compiling phase controls into two-M2 NN scatterings', 'bi-infinite or stationary fresh/spent carrier flow with explicit boundary state', 'coherent error-corrected catalyst with syndrome/history export', 'bounded archive teleport/swap followed by independently proved carrier re-preparation'), 'N7_steelman': {'mechanism': 'a translation-invariant reversible QCA streams a bi-infinite encoded-plus/zero reservoir through one local Cycle580 scattering station, carries spent packets outward, and transports a spatial program token whose collisions implement each elementary gate', 'terminal_obligation': 'construct the bounded-neighborhood update, prove stationary fresh/spent balance and collision safety at arbitrary volume, and preserve a faithful independent output algebra', 'disposition': 'concrete untested route; any broad recurrence/reset no-go is premature'}, 'N8_cross_cycle_echo': ('Cycle574 representation gap retired by faithful W encoding', 'Cycle577 isometry-only gap retired by Cycle580 elementary circuit', 'Cycle483 hidden discard retired at finite export but not renewal', 'Cycle580 host-order gap narrowed here to controller locality/enforcement'), 'artifact_status': 'POSITIVE_FINITE_HORIZON_PARTIAL_CONSTRUCTION_WITH_ROUTE_SPECIFIC_FALSIFIERS', 'broad_no_go': 'FAIL_DO_NOT_SHIP', 'minimum_content': 'FAIL_DO_NOT_SHIP', 'shared_obstruction': 'DO_NOT_SHIP', 'axiom_pressure': 'DO_NOT_SHIP', 'inventory': {'supplied': ('Cycle580 exact 18-M2 elementary circuit and base cubic layout', 'finite H resource packets, pure encoded-plus/zero preparation, unary phase/cursor code domains', 'same autonomous update invocation count, modulo cursor convention, noiseless controlled gates, and held boundaries', 'candidate traces, conditional pointer typing, site-only proper-cubic presentation, and global trace functional'), 'derived': ('exact H1 Cycle580 equality and H2/H3 repeated finite-horizon code-coordinate recurrence', 'exact archive invariance, inverse step, debit ledger, overrun detection, and global input-distinction retention', 'exact full-inverse output erasure plus pointer/dephase-copy and old-input-copy reset residuals', 'active deletions, coherent gate-noise response, malformed-controller refusal, and base all24 geometry'), 'open': ('literal proper-cubic NN decomposition of phase/cursor controls and conveyor routing', 'local controller/code enforcement, repair, noise threshold, and arbitrary-volume collision theorem', 'stationary fresh/spent balance, carrier genesis, renewal, entropy sink, temperature, and unbounded horizon', 'archive-preserving exact quantum carrier reset beyond the attempted copy schemes', 'actual branch, framework Record, Born/frequency calibration, physical time, energy, source, gravity, and matter-compatible active nonerasure')}, 'pass': True}
+PASS cold resource caps :: {'elapsed_seconds': 2.546142000006512, 'rss_bytes': 291192832, 'wall_cap_seconds': 360.0, 'rss_cap_bytes': 3221225472}
+{
+  "dependency": {
+    "Cycle580_agent_transcript_SHA256_from_receipt": "186fa69e34c55655194d79329fc2fbf1c5521006f4ffc295c5a49c70747e6763",
+    "expected": {
+      "Cycle580 note": "e8ca5acdaec0c7ec5f0ba9772d7736352bcf132e961483d93f19c679439df276",
+      "Cycle580 receipt": "bff5c4a6a691a991dd18058e7600dc7d8e102e569f4d32ef9f91711eef3c14ab",
+      "Cycle580 runner": "c46917d4a932cd3ad9a78e0547625055f5adf9d5cf7393700d7e6715dd515cd3"
+    },
+    "note_missing": [],
+    "observed": {
+      "Cycle580 note": "e8ca5acdaec0c7ec5f0ba9772d7736352bcf132e961483d93f19c679439df276",
+      "Cycle580 receipt": "bff5c4a6a691a991dd18058e7600dc7d8e102e569f4d32ef9f91711eef3c14ab",
+      "Cycle580 runner": "c46917d4a932cd3ad9a78e0547625055f5adf9d5cf7393700d7e6715dd515cd3"
+    },
+    "pass": true,
+    "receipt_checks": {
+      "authority_audit": true,
+      "note": true,
+      "parent_10_of_10": true,
+      "recurrence_open": true,
+      "runner": true,
+      "single_invocation_closed": true,
+      "transcript": true
+    }
+  },
+  "discipline_inventory": {
+    "N1_qualifying": 3,
+    "N1_required": 5,
+    "N1_routes": [
+      {
+        "citation": "Cycle582 runner:route_a_controls",
+        "evidence": "Route A exact at code-coordinate finite horizon; physical controller routing/enforcement remains open",
+        "family": "in-state phase plus cursor",
+        "mechanism_invariant": "one homogeneous phase-conditioned update, reversible clock/cursor permutation, disjoint spent slots",
+        "object_formulation": "finite-horizon sparse isometry with unary H11 program and H_H resource cursor",
+        "status": "ATTEMPTED",
+        "terminal_obligation": "compile the controlled update and conveyor into a literal collision-safe cubic NN law with local controller enforcement"
+      },
+      {
+        "citation": "Cycle582 runner:route_b_controls",
+        "evidence": "Route B passes held H3 and detects first overrun; finite stock is exhausted",
+        "family": "finite conveyor and debit",
+        "mechanism_invariant": "packet permutation, exact debit, archive spectator invariance",
+        "object_formulation": "H supplied 12-M2 resource packets with spent-history ownership",
+        "status": "ATTEMPTED",
+        "terminal_obligation": "derive stationary fresh/spent balance rather than modulo reuse of spent stock"
+      },
+      {
+        "citation": "Cycle582 runner:route_c_controls",
+        "evidence": "Route C exact tested attempts expose erasure or reset/coherence residuals",
+        "family": "reversible uncompute/reset",
+        "mechanism_invariant": "global unitarity, which-history retention, active reset fidelity",
+        "object_formulation": "Cycle580 inverse with zero, pointer-copy, and old-input-copy archives",
+        "status": "ATTEMPTED",
+        "terminal_obligation": "reset carriers while retaining an independent faithful quantum output/history owner"
+      },
+      {
+        "citation": "Cycle483 and Cycle580 optimal-next-campaign receipts",
+        "evidence": "concrete reopen route; no Cycle582 construction or retained ruling-out authority",
+        "family": "bi-infinite fresh/spent streaming QCA",
+        "mechanism_invariant": "ballistic carrier flow and local scattering",
+        "object_formulation": "translation-invariant reservoir and garbage rays",
+        "status": "UNTESTED_OPEN_NOT_COUNTED",
+        "terminal_obligation": "prove stationary low-entropy inflow, collision safety, and arbitrary-volume recurrence"
+      },
+      {
+        "citation": "Cycle582 N7 steelman",
+        "evidence": "mathematically actionable route not attempted here",
+        "family": "error-corrected catalytic workspace",
+        "mechanism_invariant": "coherent correction and catalytic return",
+        "object_formulation": "encoded catalyst plus syndrome/garbage export",
+        "status": "UNTESTED_OPEN_NOT_COUNTED",
+        "terminal_obligation": "return the catalyst exactly while binding all exported syndrome/history information"
+      }
+    ],
+    "N1_status": "FAIL",
+    "N2_pairwise": [
+      {
+        "independent": true,
+        "left_closes_right": "no",
+        "left_to_right_reason": "a local controller can still consume finite stock",
+        "pair": [
+          "literal local controller/conveyor compilation",
+          "stationary fresh/spent resource balance"
+        ],
+        "right_closes_left": "no",
+        "right_to_left_reason": "stationary carrier balance supplies no local program routing"
+      },
+      {
+        "independent": true,
+        "left_closes_right": "no",
+        "left_to_right_reason": "local scheduling does not make inverse reset preserve archives",
+        "pair": [
+          "literal local controller/conveyor compilation",
+          "archive-preserving exact carrier reset"
+        ],
+        "right_closes_left": "no",
+        "right_to_left_reason": "archive-preserving reset does not place or clock gates"
+      },
+      {
+        "independent": true,
+        "left_closes_right": "no",
+        "left_to_right_reason": "a compiled controller can lack enforcement/noise repair",
+        "pair": [
+          "literal local controller/conveyor compilation",
+          "controller/code enforcement and noise tolerance"
+        ],
+        "right_closes_left": "no",
+        "right_to_left_reason": "enforcement does not compile the recurrence geometry"
+      },
+      {
+        "independent": true,
+        "left_closes_right": "no",
+        "left_to_right_reason": "renewal can export rather than reset spent carriers",
+        "pair": [
+          "stationary fresh/spent resource balance",
+          "archive-preserving exact carrier reset"
+        ],
+        "right_closes_left": "no",
+        "right_to_left_reason": "reset of one carrier does not prove stationary supply balance"
+      },
+      {
+        "independent": true,
+        "left_closes_right": "no",
+        "left_to_right_reason": "stationary flow can carry uncorrected controller faults",
+        "pair": [
+          "stationary fresh/spent resource balance",
+          "controller/code enforcement and noise tolerance"
+        ],
+        "right_closes_left": "no",
+        "right_to_left_reason": "error correction does not generate low-entropy inflow"
+      },
+      {
+        "independent": true,
+        "left_closes_right": "no",
+        "left_to_right_reason": "archive-preserving reset can be noise-fragile",
+        "pair": [
+          "archive-preserving exact carrier reset",
+          "controller/code enforcement and noise tolerance"
+        ],
+        "right_closes_left": "no",
+        "right_to_left_reason": "enforcement does not solve quantum output retention during reset"
+      }
+    ],
+    "N2_walls": [
+      "literal local controller/conveyor compilation",
+      "stationary fresh/spent resource balance",
+      "archive-preserving exact carrier reset",
+      "controller/code enforcement and noise tolerance"
+    ],
+    "N3_hidden_hits": [
+      {
+        "classification": "non-load-bearing prior-art attribution",
+        "line": 423,
+        "pattern": "are standard",
+        "text": "orthogonal labels, and garbage/history export are standard methods. No general"
+      }
+    ],
+    "N4_residual_table": [
+      {
+        "claimed_closed": "finite-horizon in-state code-coordinate scheduling",
+        "match": "yes",
+        "witness": "Cycle580 receipt",
+        "witness_residual": "compile-time order; no in-state program or recurrence"
+      },
+      {
+        "claimed_closed": "finite debit only, not renewal",
+        "match": "yes",
+        "witness": "Cycle483 note",
+        "witness_residual": "finite bath/export is not renewal"
+      },
+      {
+        "claimed_closed": "three explicit uncompute/reset attempts",
+        "match": "yes",
+        "witness": "Cycle577 note",
+        "witness_residual": "inverse erases the output episode"
+      },
+      {
+        "claimed_closed": "autonomous controller NN layout",
+        "match": "no \u2014 base geometry only; dropped as controller-layout closure",
+        "witness": "Cycle580 layout",
+        "witness_residual": "single-invocation NN gates"
+      }
+    ],
+    "N5": "negative observations are limited to the tested finite horizons and three explicit Route-C maps",
+    "N6_partial_closure_paths": [
+      "spatial program-token QCA compiling phase controls into two-M2 NN scatterings",
+      "bi-infinite or stationary fresh/spent carrier flow with explicit boundary state",
+      "coherent error-corrected catalyst with syndrome/history export",
+      "bounded archive teleport/swap followed by independently proved carrier re-preparation"
+    ],
+    "N7_steelman": {
+      "disposition": "concrete untested route; any broad recurrence/reset no-go is premature",
+      "mechanism": "a translation-invariant reversible QCA streams a bi-infinite encoded-plus/zero reservoir through one local Cycle580 scattering station, carries spent packets outward, and transports a spatial program token whose collisions implement each elementary gate",
+      "terminal_obligation": "construct the bounded-neighborhood update, prove stationary fresh/spent balance and collision safety at arbitrary volume, and preserve a faithful independent output algebra"
+    },
+    "N8_cross_cycle_echo": [
+      "Cycle574 representation gap retired by faithful W encoding",
+      "Cycle577 isometry-only gap retired by Cycle580 elementary circuit",
+      "Cycle483 hidden discard retired at finite export but not renewal",
+      "Cycle580 host-order gap narrowed here to controller locality/enforcement"
+    ],
+    "artifact_status": "POSITIVE_FINITE_HORIZON_PARTIAL_CONSTRUCTION_WITH_ROUTE_SPECIFIC_FALSIFIERS",
+    "axiom_pressure": "DO_NOT_SHIP",
+    "broad_no_go": "FAIL_DO_NOT_SHIP",
+    "inventory": {
+      "derived": [
+        "exact H1 Cycle580 equality and H2/H3 repeated finite-horizon code-coordinate recurrence",
+        "exact archive invariance, inverse step, debit ledger, overrun detection, and global input-distinction retention",
+        "exact full-inverse output erasure plus pointer/dephase-copy and old-input-copy reset residuals",
+        "active deletions, coherent gate-noise response, malformed-controller refusal, and base all24 geometry"
+      ],
+      "open": [
+        "literal proper-cubic NN decomposition of phase/cursor controls and conveyor routing",
+        "local controller/code enforcement, repair, noise threshold, and arbitrary-volume collision theorem",
+        "stationary fresh/spent balance, carrier genesis, renewal, entropy sink, temperature, and unbounded horizon",
+        "archive-preserving exact quantum carrier reset beyond the attempted copy schemes",
+        "actual branch, framework Record, Born/frequency calibration, physical time, energy, source, gravity, and matter-compatible active nonerasure"
+      ],
+      "supplied": [
+        "Cycle580 exact 18-M2 elementary circuit and base cubic layout",
+        "finite H resource packets, pure encoded-plus/zero preparation, unary phase/cursor code domains",
+        "same autonomous update invocation count, modulo cursor convention, noiseless controlled gates, and held boundaries",
+        "candidate traces, conditional pointer typing, site-only proper-cubic presentation, and global trace functional"
+      ]
+    },
+    "minimum_content": "FAIL_DO_NOT_SHIP",
+    "pass": true,
+    "shared_obstruction": "DO_NOT_SHIP"
+  },
+  "fail": 0,
+  "matter_geometry": {
+    "Cycle580_all24_edge_tests_from_receipt": 816,
+    "Cycle580_all576_projector_role_tests_from_receipt": 6336,
+    "active_reduced_input_0_7_trace_distance": 0.0,
+    "base_Cycle580_proper_frames": 24,
+    "base_layout_all24_collision_failures": 0,
+    "controller_and_conveyor_literal_cubic_layout_constructed": false,
+    "global_input_0_7_overlap_after_held_horizon": 0.0,
+    "global_input_0_7_trace_distance": 1.0,
+    "matter_distinction_retained_globally": true,
+    "matter_distinction_retained_in_active_reduced_system": false,
+    "pass": true,
+    "slot0_old_input_environment_0_7_trace_distance": 0.9999999999999998
+  },
+  "pass": 7,
+  "resources": {
+    "elapsed_seconds": 2.546142000006512,
+    "rss_bytes": 291192832,
+    "rss_cap_bytes": 3221225472,
+    "wall_cap_seconds": 360.0
+  },
+  "route_A": {
+    "autonomous_step_inverse_residual_max": 6.280369834735101e-16,
+    "coherent_H_noise_rows": [
+      [
+        0.001,
+        0.0014142135476417034
+      ],
+      [
+        0.01,
+        0.014142120892344281
+      ]
+    ],
+    "controller_nearest_neighbor_gate_decomposition_constructed": false,
+    "cursor_H2_embedding_shape": [
+      4,
+      2
+    ],
+    "cursor_H2_isometry_residual": 0.0,
+    "cursor_advance_deletion_residual": 3.9999999999999996,
+    "final_all_resource_environment_code_leakage": 0.0,
+    "final_repeated_Gram_residual": 1.2560739669470201e-15,
+    "final_system_code_leakage": 0.0,
+    "head_H11_embedding_shape": [
+      2048,
+      11
+    ],
+    "head_H11_isometry_residual": 0.0,
+    "head_advance_deletion_residual": 3.9999999999999996,
+    "host_repeats_same_law": true,
+    "host_selects_layer": false,
+    "local_controller_code_enforcement_constructed": false,
+    "malformed_controller_states_refused": 6,
+    "malformed_controller_total": 6,
+    "maximum_phase_cursor_controlled_support_M2": 4,
+    "pass": true,
+    "phase_is_time": false,
+    "physical_M2_at_train_horizon": 43,
+    "repeated_direct_residuals": [
+      0.0,
+      0.0
+    ],
+    "route": "A priority in-state phase/program plus resource cursor",
+    "same_autonomous_step_law_repeated": true,
+    "single_invocation_Cycle580_VB_residual": 1.760210900903115e-18,
+    "slot0_archive_invariance_after_second_invocation": 5.551115123125783e-17,
+    "slot1_unused_fresh_invariance_after_first_invocation": 3.3306690738754696e-16,
+    "train_horizon": 2
+  },
+  "route_B": {
+    "active_system_M2": 6,
+    "conveyor_depth_per_boundary": 2,
+    "conveyor_two_M2_SWAPS_per_boundary": 24,
+    "debit_rows": [
+      {
+        "completed_invocations": 0,
+        "fresh_M2_remaining": 36,
+        "fresh_slots_remaining": 3,
+        "spent_archive_slots": 0
+      },
+      {
+        "completed_invocations": 1,
+        "fresh_M2_remaining": 24,
+        "fresh_slots_remaining": 2,
+        "spent_archive_slots": 1
+      },
+      {
+        "completed_invocations": 2,
+        "fresh_M2_remaining": 12,
+        "fresh_slots_remaining": 1,
+        "spent_archive_slots": 2
+      },
+      {
+        "completed_invocations": 3,
+        "fresh_M2_remaining": 0,
+        "fresh_slots_remaining": 0,
+        "spent_archive_slots": 3
+      }
+    ],
+    "deleted_conveyor_swap_labels": [
+      0,
+      2,
+      1
+    ],
+    "finite_stock_is_renewable": false,
+    "fresh_resource_M2_per_invocation": 12,
+    "held_Gram_residual": 6.280369834735101e-16,
+    "held_cursor_M2": 3,
+    "held_horizon": 3,
+    "held_initial_fresh_resource_M2": 36,
+    "held_total_physical_M2": 56,
+    "history_owner": "each spent 12-M2 packet retains old-input environment plus pointer/dephasing outputs",
+    "literal_conveyor_geometry_constructed": false,
+    "overrun_reuses_spent_slot0_change": 0.5077524002897471,
+    "packet_inverse_recovered": [
+      0,
+      1,
+      2
+    ],
+    "packet_labels_after_left_rotation": [
+      1,
+      2,
+      0
+    ],
+    "pass": true,
+    "phase_controlled_active_station_max_support_M2": 3,
+    "phase_head_M2": 11,
+    "replicated_local_phase_ring_synchronization_genesis_derived": false,
+    "route": "B finite conveyor/reservoir debit",
+    "slot0_archive_held_invariance": 5.551115123125783e-17,
+    "stationary_fresh_spent_balance_derived": false,
+    "train_horizon": 2
+  },
+  "route_C": {
+    "active_18M2_reset_fidelity_after_pointer_dephase_copy": 0.2499999999999996,
+    "active_18M2_reset_infidelity_after_pointer_dephase_copy": 0.7500000000000004,
+    "branch_conditioned_reset_contract_archive_qubits_at_least": 5,
+    "branch_conditioned_reset_contract_rank": 32,
+    "copy_then_uncompute_exact_active_reset_achieved": false,
+    "dimension_bound_is_contract_scoped_not_general_recurrence_minimum": true,
+    "full_inverse_dephasing_output_erasure_trace_distance": 0.7499999999999992,
+    "full_inverse_initial_residual": 8.906865629316332e-16,
+    "full_inverse_old_input_environment_erasure_trace_distance": 0.9354143466934843,
+    "full_inverse_pointer_output_erasure_trace_distance": 0.7499999999999991,
+    "full_inverse_restored_system_trace_distance": 5.551115123125783e-16,
+    "full_inverse_reuses_carriers_only_by_erasing_episode": true,
+    "normalized_supported_active_branch_Gram_residual": 4.440892098500626e-16,
+    "old_input_copy_coherent_restored_system_trace_distance": 0.4999999999999999,
+    "old_input_dimension": 8,
+    "pass": true,
+    "pointer_dephase_archive_invariance_through_inverse": 1.6653345369377348e-16,
+    "route": "C reversible uncompute/reset attempts",
+    "supported_pointer_labels": 4,
+    "universal_archive_preserving_reset_no_go_claimed": false
+  },
+  "summary": {
+    "actual_branch": null,
+    "audit": "unset",
+    "authority": "none",
+    "derived_Born_probability": null,
+    "energy_or_source": null,
+    "framework_Record": null,
+    "physical_time": null,
+    "renewable_resource_law": null,
+    "strongest_result": "exact H2/H3 in-state-controlled finite-stock recurrence of Cycle580 V_B at code-coordinate resolution"
+  }
+}
+RESULT pass=7 fail=0
+authority=none; audit=unset; finite stock is not renewable; copied pointer is not Record; candidate trace is not Born; phase is not time; carrier count is not energy/source
+        2.67 real         2.51 user         0.06 sys
+           291192832  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               18747  page reclaims
+                  45  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 111  voluntary context switches
+                4817  involuntary context switches
+         34944258467  instructions retired
+          8980981259  cycles elapsed
+           278610544  peak memory footprint

@@ -1,34 +1,268 @@
 {
   "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
+  "audit_invocation_history": [
+    "5de4abb0b1f54e40b75d0faf46f3246f",
+    "93f84a3171df40f2b35ca09c81587bf3"
+  ],
+  "audit_invocation_id": "93f84a3171df40f2b35ca09c81587bf3",
   "audit_state_snapshot": null,
-  "audit_status": "unaudited",
+  "audit_status": "audit_in_progress",
   "auditor": null,
   "auditor_confidence": null,
   "auditor_family": null,
   "auditor_model": null,
   "auditor_reasoning_effort": null,
-  "blocker": null,
+  "blocker": "cross_confirmation_disagreement",
   "chain_closes": null,
   "chain_closure_explanation": null,
   "claim_id": "koide_cyclic_wilson_descendant_law_note_2026-04-18",
-  "claim_scope": null,
+  "claim_scope": "The exact finite-dimensional cyclic projection, three-response Riesz reconstruction, and cone-equation equivalence on the Hermitian adjacent-chain algebra; no physical Wilson-descendant identification is included.",
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-22T19:03:22.576213+00:00",
+  "claim_type_provenance": "audited_pending_cross_confirmation",
   "criticality": "critical",
-  "cross_confirmation": null,
+  "cross_confirmation": {
+    "first_audit": {
+      "audit_date": "2026-07-22T19:03:22.576213+00:00",
+      "audit_invocation_id": "5de4abb0b1f54e40b75d0faf46f3246f",
+      "auditor": "codex-audit-batch-A-20260722-cd9138a2",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "chain_closes": true,
+      "chain_closure_explanation": "The adjacent generators produce every matrix unit, the cyclic average is an orthogonal projector, the full Hermitian commutant is the stated three-dimensional span, and its exact Gram matrix yields the Riesz formula. Direct substitution proves the response-form cone equation, including all degenerate cases.",
+      "claim_scope": "The exact finite-dimensional cyclic projection, three-response Riesz reconstruction, and cone-equation equivalence on the Hermitian adjacent-chain algebra; no physical Wilson-descendant identification is included.",
+      "claim_type": "positive_theorem",
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Solving all real and imaginary entries of HC-CH=0 gives H=aB0+xB1+yB2, after which the nonsingular Gram matrix diag(3,6,6) gives the unique Riesz representative.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "validator kills wrong Koide factor",
+            "disposition": "CLOSED",
+            "evidence_locator": "validator kills wrong Koide factor",
+            "evidence_path": "audit-packet://runner-stdout/koide_cyclic_wilson_descendant_law_note_2026-04-18",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "wrong Koide factor",
+            "outcome": "errors=['koide_factor']",
+            "prior_witness_id": null,
+            "route_class": "algebraic_rearrangement",
+            "route_id": "factor_mutation"
+          },
+          {
+            "attempt": "the full 18-by-9 real commutator system has rank six",
+            "disposition": "CLOSED",
+            "evidence_locator": "the full 18-by-9 real commutator system has rank six",
+            "evidence_path": "audit-packet://runner-stdout/koide_cyclic_wilson_descendant_law_note_2026-04-18",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "commutator system",
+            "outcome": "shape=(18, 9) rank=6",
+            "prior_witness_id": null,
+            "route_class": "symmetry_or_representation",
+            "route_id": "commutator_rank"
+          },
+          {
+            "attempt": "validator kills wrong projector normalization",
+            "disposition": "CLOSED",
+            "evidence_locator": "validator kills wrong projector normalization",
+            "evidence_path": "audit-packet://runner-stdout/koide_cyclic_wilson_descendant_law_note_2026-04-18",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "wrong projector normalization",
+            "outcome": "errors=['projector_normalization']",
+            "prior_witness_id": null,
+            "route_class": "normalization_or_units",
+            "route_id": "projector_normalization"
+          },
+          {
+            "attempt": "real-linear functional validator kills nonlinear functional misuse",
+            "disposition": "CLOSED",
+            "evidence_locator": "real-linear functional validator kills nonlinear functional misuse",
+            "evidence_path": "audit-packet://runner-stdout/koide_cyclic_wilson_descendant_law_note_2026-04-18",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "nonlinear functional misuse",
+            "outcome": "['functional_linearity']",
+            "prior_witness_id": null,
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "nonlinear_readout"
+          },
+          {
+            "attempt": "the self-contained proof has no hidden source-note dependency link",
+            "disposition": "CLOSED",
+            "evidence_locator": "the self-contained proof has no hidden source-note dependency link",
+            "evidence_path": "audit-packet://runner-stdout/koide_cyclic_wilson_descendant_law_note_2026-04-18",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "dependency link",
+            "outcome": "links=[]",
+            "prior_witness_id": null,
+            "route_class": "dependency_or_registry_reclassification",
+            "route_id": "dependency_scan"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "wrong projector normalization"
+          ],
+          "evidence_locator": "validator kills wrong projector normalization",
+          "evidence_path": "audit-packet://runner-stdout/koide_cyclic_wilson_descendant_law_note_2026-04-18",
+          "pairwise_checks": [],
+          "unresolved": [],
+          "walls": [
+            "wrong projector normalization"
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "Adjacent-Chain Cyclic-Response Compression and Riesz-Reconstruction Lemma",
+          "evidence_path": "docs/KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md",
+          "hits": [],
+          "none_found_reason": "The authenticated source manifest contains no hidden-wall phrase groups, and there are no ordinary one-hop authorities to scan.",
+          "scan_scope": "The complete source note and all ordinary one-hop-authority surfaces were checked for authenticated admission, premise, convention, boundary, normalization, obstruction, and wall phrases.",
+          "scanned_evidence_paths": [
+            "docs/KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md"
+          ],
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "Adjacent-Chain Cyclic-Response Compression and Riesz-Reconstruction Lemma",
+          "evidence_path": "docs/KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md",
+          "none_found_reason": "No N1 route is marked RULED OUT BY PRIOR, and the packet supplies no one-hop authority carrying a residual witness.",
+          "scan_scope": "All one-hop-authority and claim residual surfaces in the restricted packet were checked.",
+          "scanned_evidence_paths": [],
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "No microscopic source functional, physical carrier or readout, mass identification, selector, or observed comparator is asserted.",
+          "evidence_path": "docs/KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md",
+          "none_found_reason": "The manifest authenticates no substantive negative-rhetoric occurrence group; the source's final sentence is an administrative scope disclaimer rather than a no-go assertion.",
+          "scan_scope": "The complete source was checked for authenticated negative or universal-resolution rhetoric at all required resolutions.",
+          "scanned_evidence_paths": [
+            "docs/KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md"
+          ],
+          "statements": [],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "affected_wall": "wrong projector normalization",
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "closure_mechanism": "Explicitly approved framework primitive for the single dimensionful scale reference a^{-1}. Units conversion only: carries no dimensionless content and does not assert a/l_P=1. Dependencies on this primitive chain-satisfy without bounding downstream rows. This candidate could affect only a physical units convention, not the algebraic factor one-third required by the order-three group average.",
+              "could_close_wall": false,
+              "disposition": "wrong projector normalization is closed internally by the exact order-three average and mutation test; a dimensionful scale-reference premise neither changes nor supplies that projector coefficient.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/koide_cyclic_wilson_descendant_law_note_2026-04-18",
+              "indexed_basis": "Explicitly approved framework primitive for the single dimensionful scale reference a^{-1}. Units conversion only: carries no dimensionless content and does not assert a/l_P=1. Dependencies on this primitive chain-satisfy without bounding downstream rows.",
+              "kind": "approved_primitive"
+            }
+          ],
+          "evidence_locator": "approved_primitive:scale_reference_primitive",
+          "evidence_path": "audit-packet://partial-closure-index/koide_cyclic_wilson_descendant_law_note_2026-04-18",
+          "none_found_reason": null,
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "open_gate",
+            "convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "The supplied axiom, approved-primitive, open-obligation, convention, definition, and scope-reframe index was checked against the normalization stress-test wall.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "  [PASS][MUTATION] validator kills wrong projector normalization  (errors=['projector_normalization'])",
+          "evidence_locator": "validator kills wrong projector normalization",
+          "evidence_path": "audit-packet://runner-stdout/koide_cyclic_wilson_descendant_law_note_2026-04-18",
+          "resolution": "        (\"wrong projector normalization\", \"projector_normalization\", {\"projector_denominator\": 2}),",
+          "resolution_evidence_locator": "wrong projector normalization\",\"projector_normalization",
+          "resolution_evidence_path": "scripts/frontier_koide_cyclic_wilson_descendant_law.py",
+          "resolved": true,
+          "route_id": "projector_normalization"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "similar_negative_boundary:koide_a1_probe_q_readout_functional_bounded_obstruction_note_2026-05-09_probe16",
+              "disposition": "functional** on the `(a,|b|)` plane; the cited content does not select a member. This earlier functional-selection boundary is inapplicable because the audited scope supplies an arbitrary real-linear functional and proves only its finite-dimensional restriction; it asserts no physical readout or selected member.",
+              "evidence_locator": "similar_negative_boundary:koide_a1_probe_q_readout_functional_bounded_obstruction_note_2026-05-09_probe16",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_cyclic_wilson_descendant_law_note_2026-04-18",
+              "mechanism": "functional** on the `(a,|b|)` plane; the cited content does not select a member",
+              "retired": null
+            }
+          ],
+          "evidence_locator": "no_go_row_universe_sha256:680a4e1f29260096f5f48e4a47e4ae58f386f35a692570469ce24e781721d326",
+          "evidence_path": "audit-packet://cross-cycle-index/koide_cyclic_wilson_descendant_law_note_2026-04-18",
+          "no_go_row_universe_count": 437,
+          "no_go_row_universe_sha256": "680a4e1f29260096f5f48e4a47e4ae58f386f35a692570469ce24e781721d326",
+          "none_found_reason": null,
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "corrected_wall_set": [],
+        "demotion": null,
+        "failures": [],
+        "narrowed_claim_scope": null,
+        "next_route": null,
+        "prior_claim_scope": null,
+        "required": true,
+        "status": "PASS"
+      },
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 40,
+        "B": 4,
+        "C": 0,
+        "D": 0,
+        "total_pass": 44
+      },
+      "verdict": "audited_clean",
+      "verdict_rationale": "The note proves a self-contained finite-dimensional algebraic theorem: adjacent generators give M3(C), the exact commutant computation gives the three-dimensional fixed space, and the Gram calculation yields the stated Riesz reconstruction and cone equivalence. The symbolic runner recomputes these facts and rejects normalization, orientation, dimension, linearity, reconstruction, and factor mutations, with no external comparator or imported physical premise. The historical claim identifier does not enlarge the audited conclusion into a physical Wilson-descendant law because the source expressly excludes such an identification."
+    },
+    "second_audit": {
+      "audit_date": "2026-07-22T19:03:22.584426+00:00",
+      "audit_invocation_id": "93f84a3171df40f2b35ca09c81587bf3",
+      "auditor": "codex-audit-batch-B-20260722-ec8af6da",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "chain_closes": true,
+      "chain_closure_explanation": "Independent matrix multiplication confirms A_adj=M3(C), the three-dimensional Hermitian commutant, G=diag(3,6,6), the Riesz coefficients, and the cone factor. The symbolic runner computes these identities and rejects hostile sign, orientation, dimension, and normalization mutations.",
+      "claim_scope": "For the supplied 3x3 cycle, the Hermitian commutant is three-real-dimensional, admits the stated orthogonal projection and unique three-response Riesz reconstruction, and obeys the stated equivalent cone equation.",
+      "claim_type": "positive_theorem",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "Solving every real and imaginary entry of HC-CH=0 gives H=aB0+xB1+yB2, after which the diagonal Gram matrix fixes the unique Riesz coefficients and cone transformation.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 26,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 44
+      },
+      "verdict": "audited_clean",
+      "verdict_rationale": "The result is a self-contained finite-dimensional algebraic theorem over explicitly supplied matrices and a real-linear functional. Manual calculation independently confirms the generated full matrix algebra, commutant parametrization, projector, Gram normalization, Riesz formula, and factor-two cone identity. The runner recomputes those quantities symbolically without fitted inputs or external comparators; physical Wilson-descendant interpretation remains outside the audited scope."
+    },
+    "status": "disagreement"
+  },
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 2,
-  "effective_status": "unaudited",
+  "effective_status": "audit_in_progress",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
-  "intrinsic_status": "unaudited",
+  "intrinsic_status": "audit_in_progress",
   "load_bearing_score": 10.508,
   "load_bearing_step": null,
   "load_bearing_step_class": null,

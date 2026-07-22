@@ -1349,7 +1349,7 @@
         },
         {
           "claim_id": "koide_cyclic_wilson_descendant_law_note_2026-04-18",
-          "effective_status": "unaudited"
+          "effective_status": "audit_in_progress"
         },
         {
           "claim_id": "koide_emergent_time_eta_conjugation_parity_bounded_note_2026-05-30",
@@ -2791,6 +2791,6 @@
       "uncertified_count": 640
     }
   ],
-  "repo_head": "f0e7549aaf65164ed0d455c760524675ad1e1db6",
+  "repo_head": "bd79c4b66f6ea51253d02851475ca7d6a4cd7f1b",
   "schema": "lane_certification_v2"
 }

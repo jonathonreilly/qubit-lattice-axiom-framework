@@ -56,6 +56,16 @@ ALLOWED_SIDES = audit_contract.JUDICIAL_SIDES
 ALLOWED_VERDICTS = audit_contract.TERMINAL_VERDICTS
 ALLOWED_CLAIM_TYPES = audit_contract.CLAIM_TYPES
 VOTE_FIELDS = audit_contract.JUDICIAL_VOTE_FIELDS
+PUBLIC_VOTE_FIELDS = (
+    "judge",
+    "auditor",
+    *VOTE_FIELDS,
+    "ratified_load_bearing_step",
+    "hybrid_resolution_note",
+    "ratified_decoration_parent_claim_id",
+    "notes_for_re_audit_if_any",
+    "no_go_discipline",
+)
 
 SEAT_ARGUMENT_FIELDS = (
     "verdict",
@@ -85,6 +95,15 @@ def norm_scope(value: str) -> str:
 
 def vote_tuple(vote: dict) -> tuple:
     return audit_contract.judicial_vote_tuple(vote)
+
+
+def serialized_tally(votes: list[dict]) -> list[dict]:
+    """Return the canonical JSON form of the complete-tuple vote tally."""
+    tally = Counter(vote_tuple(vote) for vote in votes)
+    return [
+        {"tuple": [*key[:6], list(key[6])], "count": count}
+        for key, count in tally.most_common()
+    ]
 
 
 def disagreement_fingerprint(row: dict) -> dict:
@@ -539,10 +558,24 @@ def collect_vote(job: dict) -> tuple[dict | None, str]:
 
 
 def public_vote(vote: dict) -> dict:
-    return {
+    stored = {
+        **{key: value for key, value in vote.items() if not key.startswith("_")},
         "judge": vote.get("_panel_judge"),
         "auditor": vote.get("_panel_auditor"),
-        **{key: value for key, value in vote.items() if not key.startswith("_")},
+    }
+    return {
+        key: copy.deepcopy(stored[key])
+        for key in PUBLIC_VOTE_FIELDS
+        if key in stored
+    }
+
+
+def canonical_prior_vote(vote: dict) -> dict:
+    """Strip untrusted prior-history fields before showing them to judges."""
+    return {
+        key: copy.deepcopy(vote[key])
+        for key in PUBLIC_VOTE_FIELDS
+        if key in vote
     }
 
 
@@ -554,6 +587,13 @@ def judicial_blob(
     invocation_id: str | None = None,
     panel_no: int = 1,
 ) -> dict:
+    for index, vote in enumerate(votes, 1):
+        schema_error = vote_schema_error(vote)
+        if schema_error:
+            raise ValueError(f"panel vote {index} is invalid: {schema_error}")
+        context_error = sided_vote_context_error(row, vote)
+        if context_error:
+            raise ValueError(f"panel vote {index} is invalid: {context_error}")
     context_error = sided_vote_context_error(row, representative)
     if context_error:
         raise ValueError(context_error)
@@ -579,7 +619,6 @@ def judicial_blob(
     )
     side = representative.get("sided_with")
     panel_invocation_id = invocation_id or uuid.uuid4().hex
-    panel_tally = Counter(vote_tuple(vote) for vote in votes)
     cross = row.get("cross_confirmation") or {}
     chosen = (
         (cross.get(f"{side}_audit") or {})
@@ -630,10 +669,7 @@ def judicial_blob(
             "majority_count": majority,
             "votes": [public_vote(vote) for vote in votes],
             "failures": [],
-            "tally": [
-                {"tuple": [*key[:6], list(key[6])], "count": count}
-                for key, count in panel_tally.most_common()
-            ],
+            "tally": serialized_tally(votes),
         },
     }
     optional_sources = (chosen, representative) if chosen else (representative,)
@@ -659,10 +695,9 @@ def judicial_blob(
             blob["no_go_discipline"] = copy.deepcopy(source["no_go_discipline"])
             break
     if side == "hybrid":
-        blob["hybrid_resolution_note"] = (
-            representative.get("hybrid_resolution_note")
-            or representative.get("judgment_rationale")
-        )
+        blob["hybrid_resolution_note"] = representative[
+            "hybrid_resolution_note"
+        ]
     return blob
 
 
@@ -955,10 +990,7 @@ def run_panel(
             "disagreement_fingerprint": disagreement_fingerprint(row),
             "votes": [public_vote(vote) for vote in votes],
             "failures": failures,
-            "tally": [
-                {"tuple": [*key[:6], list(key[6])], "count": n}
-                for key, n in tally.most_common()
-            ],
+            "tally": serialized_tally(votes),
         }
         if len(votes) != PANEL_SIZE:
             if failures and len(contract_failures) == len(failures):
@@ -1157,6 +1189,8 @@ def load_prior_panels(
                 return {}, f"prior panel {path} has an invalid contract-retry record"
         elif len(votes) != PANEL_SIZE:
             return {}, f"prior panel {path} does not contain five vote records"
+        elif record.get("failures") != []:
+            return {}, f"prior panel {path} has inconsistent failure metadata"
         for vote in votes:
             schema_error = vote_schema_error(vote)
             if schema_error:
@@ -1181,6 +1215,7 @@ def load_prior_panels(
             return {}, f"prior panel {path} contains an invalid auditor identity"
         if len(set(vote_auditors)) != len(votes):
             return {}, f"prior panel {path} does not preserve distinct identities"
+        expected_tally = serialized_tally(votes)
         if result == "contract_invalid_retry":
             failure_judges: list[int] = []
             for failure in failures:
@@ -1204,10 +1239,38 @@ def load_prior_panels(
                 return {}, (
                     f"prior panel {path} has an invalid contract-retry record"
                 )
-            grouped.setdefault(cid, []).append(record)
+            if record.get("tally") != expected_tally:
+                return {}, f"prior panel {path} has inconsistent tally metadata"
+            canonical = {
+                "schema": "judicial_panel_record_v1",
+                "cid": cid,
+                "panel": panel_no,
+                "invocation_id": invocation_id,
+                "result": result,
+                "disagreement_fingerprint": copy.deepcopy(
+                    expected_fingerprint
+                ),
+                "votes": [canonical_prior_vote(vote) for vote in votes],
+                "failures": copy.deepcopy(record["failures"]),
+                "tally": copy.deepcopy(expected_tally),
+            }
+            grouped.setdefault(cid, []).append(canonical)
             continue
         if set(vote_judges) != set(range(1, PANEL_SIZE + 1)):
             return {}, f"prior panel {path} does not preserve all five judge seats"
+        if record.get("tally") != expected_tally:
+            return {}, f"prior panel {path} has inconsistent tally metadata"
+        canonical = {
+            "schema": "judicial_panel_record_v1",
+            "cid": cid,
+            "panel": panel_no,
+            "invocation_id": invocation_id,
+            "result": result,
+            "disagreement_fingerprint": copy.deepcopy(expected_fingerprint),
+            "votes": [canonical_prior_vote(vote) for vote in votes],
+            "failures": [],
+            "tally": copy.deepcopy(expected_tally),
+        }
         tally = Counter(vote_tuple(vote) for vote in votes)
         top_tuple, count = tally.most_common(1)[0]
         if result == "no_majority" and count >= MAJORITY:
@@ -1220,7 +1283,47 @@ def load_prior_panels(
             count >= MAJORITY and top_tuple[0] != "neither"
         ):
             return {}, f"prior panel {path} has an inconsistent unapplyable result"
-        grouped.setdefault(cid, []).append(record)
+        if result == "majority_neither":
+            if record.get("majority") != count:
+                return {}, f"prior panel {path} has inconsistent majority metadata"
+            canonical["majority"] = count
+            canonical["detail"] = (
+                "a neither majority is recorded but never applied; the "
+                "audit-loop skill requires a fresh five-judge panel"
+            )
+        if result == "majority_unapplyable":
+            apply_errors = record.get("apply_errors")
+            majority_votes = [
+                vote for vote in votes if vote_tuple(vote) == top_tuple
+            ]
+            if not isinstance(apply_errors, list) or len(apply_errors) != count:
+                return {}, f"prior panel {path} has invalid apply-error metadata"
+            canonical_errors = []
+            for rejection, majority_vote in zip(apply_errors, majority_votes):
+                expected_identity = (
+                    majority_vote.get("judge"),
+                    majority_vote.get("auditor"),
+                )
+                if (
+                    not isinstance(rejection, dict)
+                    or (rejection.get("judge"), rejection.get("auditor"))
+                    != expected_identity
+                    or not isinstance(rejection.get("error"), str)
+                    or not rejection["error"].strip()
+                    or hard_apply_blocker(rejection["error"])
+                ):
+                    return {}, (
+                        f"prior panel {path} has invalid apply-error metadata"
+                    )
+                canonical_errors.append(
+                    {
+                        "judge": expected_identity[0],
+                        "auditor": expected_identity[1],
+                        "error": rejection["error"],
+                    }
+                )
+            canonical["apply_errors"] = canonical_errors
+        grouped.setdefault(cid, []).append(canonical)
     for records in grouped.values():
         records.sort(key=lambda record: record["panel"])
         rounds = [record["panel"] for record in records]

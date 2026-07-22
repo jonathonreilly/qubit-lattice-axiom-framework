@@ -40,6 +40,13 @@ CLAIM_TYPES = {
     "decoration",
     "meta",
 }
+POLICY_NEGATIVE_ASSERTION_CLASSES = {
+    "no_go_result",
+    "stretch_attempt_negative",
+    "bounded_with_named_walls",
+    "derived_no_go_boundary",
+    "conditional_wall_rationale",
+}
 
 
 def terminal_compute_required_error(payload: object) -> str | None:
@@ -136,6 +143,14 @@ def judicial_vote_schema_error(vote: object) -> str | None:
         isinstance(item, str) and item.strip() for item in declared
     ):
         return "negative_assertion_classes must be a list of non-empty strings"
+    unknown_classes = sorted(
+        set(declared) - POLICY_NEGATIVE_ASSERTION_CLASSES
+    )
+    if unknown_classes:
+        return (
+            "negative_assertion_classes contains unknown classes "
+            f"{unknown_classes}"
+        )
     for field in (
         "hybrid_resolution_note",
         "ratified_decoration_parent_claim_id",
@@ -149,6 +164,11 @@ def judicial_vote_schema_error(vote: object) -> str | None:
     if "no_go_discipline" in vote and vote["no_go_discipline"] is not None:
         if not isinstance(vote["no_go_discipline"], dict):
             return "no_go_discipline must be an object or null"
+    if vote.get("sided_with") == "hybrid" and (
+        not isinstance(vote.get("hybrid_resolution_note"), str)
+        or not vote["hybrid_resolution_note"].strip()
+    ):
+        return "a hybrid vote must provide a non-empty hybrid_resolution_note"
     first_error = str(vote.get("first_auditor_error") or "").strip().lower()
     second_error = str(vote.get("second_auditor_error") or "").strip().lower()
     if vote.get("sided_with") == "first" and second_error == "none":

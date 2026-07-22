@@ -1,0 +1,730 @@
+{
+  "HEAD": "69cc37a3ec32b03539fa9e54d447bb214b1c5575",
+  "audit": "unset",
+  "authority": "none",
+  "constitutional_effect": "none",
+  "elapsed_seconds": 6.077134832972661,
+  "joint_disposition": {
+    "E_Gcoarse_equals_Gphysical_E_on_declared_full_Fock_code": false,
+    "all24_all576_covariance": true,
+    "bounded_support_and_constant_overhead": true,
+    "factor_order_preserved": true,
+    "local_contact_and_Cycle230_seam_preserved": true,
+    "locally_enforced_auxiliary_gauge_constraints": false,
+    "no_global_Jordan_Wigner_or_nonlocal_parity_service": true,
+    "noncommutation_witness": 2.3934793937974876,
+    "one_particle_mass_fixture_preserved": true,
+    "pass": false,
+    "same_encoding_composes_A_B_C": false,
+    "strongest_constructive_result": "the global exactly-one-carrier restriction is unnecessary for the bounded covariant even-CAR operator algebra inside each fixed-flux Cycle251 sector: its 22-M2/cell bounded generators carry arbitrary finite density in both parity sectors, while a separate one-word six-face construction removes Cycle610's 24-one-hot orientation field at geometry resolution",
+    "why_joint_fails": "Route A is a fixed-Wilson-flux sectorwise even-observable subsystem without a literal Cycle610 coordinate composition or common pure full-Fock E; Route B is a tagged collision permutation without CAR signs; Route C removes the 24-one-hot role field but its endpoint B swaps disagree with Gamma(B).  These are not the same encoding."
+  },
+  "maturity_0_to_5": {
+    "Born_probability": 1.5,
+    "causal_time": 2.0,
+    "gravity_source": 2.5,
+    "inertia_matter": 3.5,
+    "operational_quantum_records": 3.0
+  },
+  "maximum_RSS_bytes": 172359680,
+  "no_go_discipline": {
+    "N1_alternative_route_enumeration": [
+      "A local puncture/gauge subsystem (executed)",
+      "B reversible tagged collision reservoir (executed)",
+      "C frame-free six-face shell word (executed)",
+      "Cycle248 bounded full-Fock spectator encoding (prior; update strings grow)",
+      "Cycle260 local parity-shuttle/transport attempts (prior)",
+      "Cycle312 local full-Fock extension attempts (prior; higher-number signs recur)",
+      "higher-form or non-Pauli gauge embedding (live, unexecuted)",
+      "autonomous dissipative/code-preparation dynamics (live, unexecuted)"
+    ],
+    "N2_wall_independence_audit": {
+      "all_pairs": [
+        [
+          "common coherent full-Fock E across parity blocks",
+          "strictly local enforcement of the three Wilson flux relations"
+        ],
+        [
+          "common coherent full-Fock E across parity blocks",
+          "generalized recurrent tagged-traffic capacity outside the Cycle230 domain"
+        ],
+        [
+          "common coherent full-Fock E across parity blocks",
+          "frame-free endpoint-stream CAR sign"
+        ],
+        [
+          "common coherent full-Fock E across parity blocks",
+          "autonomous preparation of the locally checkable code state"
+        ],
+        [
+          "strictly local enforcement of the three Wilson flux relations",
+          "generalized recurrent tagged-traffic capacity outside the Cycle230 domain"
+        ],
+        [
+          "strictly local enforcement of the three Wilson flux relations",
+          "frame-free endpoint-stream CAR sign"
+        ],
+        [
+          "strictly local enforcement of the three Wilson flux relations",
+          "autonomous preparation of the locally checkable code state"
+        ],
+        [
+          "generalized recurrent tagged-traffic capacity outside the Cycle230 domain",
+          "frame-free endpoint-stream CAR sign"
+        ],
+        [
+          "generalized recurrent tagged-traffic capacity outside the Cycle230 domain",
+          "autonomous preparation of the locally checkable code state"
+        ],
+        [
+          "frame-free endpoint-stream CAR sign",
+          "autonomous preparation of the locally checkable code state"
+        ]
+      ],
+      "conclusion": "the four observed residuals are distinct and preparation is a fifth wall; none is inferred from another",
+      "pair_count": 10,
+      "walls": [
+        "common coherent full-Fock E across parity blocks",
+        "strictly local enforcement of the three Wilson flux relations",
+        "generalized recurrent tagged-traffic capacity outside the Cycle230 domain",
+        "frame-free endpoint-stream CAR sign",
+        "autonomous preparation of the locally checkable code state"
+      ]
+    },
+    "N3_hidden_wall_scan": "the local checks define a code space but do not autonomously prepare it; Route A's exact target sector also fixes three noncontractible Wilson relations and a period-16 physical role marker; the frame-free word uses supplied coarse supercell centers and blank routing paths; beta, g, factor order, and phase precision remain supplied",
+    "N4_residual_matching": {
+      "A": [
+        162,
+        1296,
+        2058
+      ],
+      "A_fixed_flux_selector_support": [
+        28,
+        39,
+        45
+      ],
+      "B_CAR_residual": 2.0,
+      "B_Cycle230_capacity_overflow": 0,
+      "B_generalized_tagged_traffic_overflow": 35,
+      "C_sign_mismatch_counts": [
+        4140,
+        154800,
+        340452
+      ]
+    },
+    "N5_rhetoric_audit": "sectorwise even algebra is not called full-Fock E; collision sorting is not called CAR; a frame-free geometric word is not called a CAR-faithful compiler; no minimum-content or impossibility claim ships",
+    "N6_partial_closure_path_scan": "retain A as the strongest physical operator substrate and C as a role-genesis-free layout lemma; seek one encoding that gives odd-sector coherence and the same frame-free stream",
+    "N7_steelman": "a non-Pauli/higher-form local gauge code or autonomous code-preparation QCA may identify the two gauge parity factors without a global service",
+    "N8_cross_cycle_echo": "Cycle248, 251, 261, 276, and 312 separate bounded even algebra from full-Fock state encoding; this recurrence motivates another constructive family but does not establish a substrate-independent obstruction",
+    "axiom_pressure": false,
+    "minimum_content_claim_shipped": false,
+    "negative_claim_shipped": false,
+    "normalized_proof_search_family_complete": false,
+    "pass_for_withholding_no_go": true,
+    "route_independent_shared_obstruction": false
+  },
+  "note_contract": {
+    "forbidden_hits": [],
+    "missing": []
+  },
+  "note_sha256": "3f53f7040b6d95f2decb226b34b229f70263241399090badf4b99e7307d36fd3",
+  "optimal_next_campaign": "construct one frame-covariant non-Pauli or higher-form gauge encoding with a bounded cross-parity isometry, autonomous local syndrome preparation, and the literal six-face B stream in the same code; test odd/even coherent sectors on L3/L6/L7 before any renewed no-go claim",
+  "pass": true,
+  "pins": {
+    "docs/work_history/repo/review_feedback/COVARIANT_VERTEX_GAMMA_CAR_COMPILER_CYCLE261_NOTE_2026-07-17.md": "c4fc2dc16bfe8dfcdddfec85204561081b1fa6690bfa2949b620ba6651f08b25",
+    "docs/work_history/repo/review_feedback/FINAL_M64_PHYSICAL_M2_COMPILER_TOURNAMENT_SYNTHESIS_CYCLE276_NOTE_2026-07-17.md": "8780be14db95a5f4cdb957559d2e6c538a8adea417cad1034910acd82ac000bc",
+    "docs/work_history/repo/review_feedback/PHYSICAL_CYCLE269_LOCAL_FOCK_EXTENSION_CYCLE312_NOTE_2026-07-18.md": "0153d6d44bf426e83da49b2057adbe8e7394fe4dfe4247a93519a31c58595d38",
+    "docs/work_history/repo/review_feedback/PHYSICAL_PROPER_CUBIC_SUPERCELL_STREAM_COMPOSITION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md": "6ee48e029ca6023e55cd834bd2ad2fcbb24275b48f9b25e1c03777e0d2c3d835",
+    "docs/work_history/repo/review_feedback/ROUGH_TERMINAL_SUBSYSTEM_GAUGE_FACTORIZATION_CYCLE251_NOTE_2026-07-17.md": "63cc264d2509e700cd250b35ac56ce1b465d21bd0f76416bfbe7d23ecaeb332c",
+    "outputs/physical_proper_cubic_supercell_stream_composition_tournament_cycle610_cold_2026_07_22.txt": "e5602522dc73cf07cad7bf660a0cc44246fdd4de36be3ff76e618936e4d54bc2",
+    "outputs/physical_proper_cubic_supercell_stream_composition_tournament_cycle610_receipt_2026_07_22.json": "51373236a754b8ea941514609251b6721578c1f4fdfaa443958b7e7c7fba1c63",
+    "scripts/covariant_vertex_gamma_car_compiler_cycle261_2026_07_17.py": "96714dd8e4654f55fe1294822952010bfe58224fe976ba3187d37a0252d64212",
+    "scripts/final_m64_physical_m2_compiler_tournament_synthesis_cycle276_2026_07_17.py": "a2cd1c68e24e2c87c3edd7b8c61a8d7165adecd4927ac812917f16a9b101e604",
+    "scripts/physical_cycle269_local_fock_extension_cycle312_2026_07_18.py": "0aaab171ac23b28d8e6daa583e2e256bc872f971ec7f282898edea726d96ccd8",
+    "scripts/physical_proper_cubic_supercell_stream_composition_tournament_cycle610_2026_07_22.py": "997234878a564cb8554ff5184888fe06b920db32bb54b5df6febfdc88a90e7de",
+    "scripts/rough_terminal_subsystem_gauge_factorization_cycle251_2026_07_17.py": "6a62b47e6dedf6347a411d1d173b131e1c017ac69776a2a187c59ef22425d61d"
+  },
+  "route_A": {
+    "all24_and_translation_covariance_reexecuted": true,
+    "arbitrary_finite_density_occupations_within_each_parity_block": true,
+    "both_parity_blocks_present": true,
+    "bounded_local_syndrome_checks_exist": true,
+    "bounded_operator_router": {
+      "Cycle610_literal_bounded_bus_available": true,
+      "literal_coordinate_embedding_of_all_22_Cycle251_roles_into_the_Cycle610_bus_constructed": false,
+      "maximum_CNOT_compute_uncompute_per_Pauli_rotation": 34,
+      "maximum_input_Pauli_support": 18,
+      "primitive_CNOT_ladder_support": 2,
+      "primitive_Rz_support": 1,
+      "primitive_basis_change_support": 1,
+      "scope": "generic constant-support Pauli-routing recipe only; it is not a composed NN coordinate compiler, odd creator, or state-preparation encoder"
+    },
+    "common_pure_full_Fock_E_across_coherent_parity_blocks_constructed": false,
+    "fully_locally_enforced_exact_code_space": false,
+    "global_Jordan_Wigner_or_parity_service": false,
+    "local_occupation_and_coherence_controls": {
+      "CAR_residual": 0.0,
+      "Pauli_exclusion_same_mode_double_creation": 0,
+      "adjacent_two_mode_occupancies_in_domain": 15,
+      "all_64_occupations_in_domain": true,
+      "coherent_both_parity_norm_residual": 0.0,
+      "even_occupations": 32,
+      "even_odd_block_leakage": 0.0,
+      "odd_occupations": 32,
+      "parity_commutator": 0.0,
+      "scope": "abstract six-mode Cycle230 target fixture; not a physical encoding E",
+      "vacuum_and_fully_occupied_in_domain": true
+    },
+    "pass_bounded_even_CAR_in_fixed_flux_sector": true,
+    "pass_fully_locally_constrained_even_CAR_code": false,
+    "pass_literal_physical_NN_coordinate_compiler": false,
+    "pass_required_common_full_Fock_E": false,
+    "reason_common_E_not_closed": "the auxiliary parity is locked to matter parity and no bounded local identification H_gauge,+ <-> H_gauge,- or preparation circuit is constructed",
+    "route": "A_local_gauge_parity_syndrome",
+    "rows": [
+      {
+        "M2_per_coarse_cell": 22.0,
+        "P_g_equals_P_m": true,
+        "bounded_local_code_exponent": 191,
+        "bounded_local_stabilizer_rank": 403,
+        "coarse_cells": 27,
+        "code_exponent": 188,
+        "delete_one_independent_Wilson_index": 621,
+        "deleted_Wilson_rank_loss": 1,
+        "deleted_bounded_local_constraint_rank_loss": 1,
+        "gauge_quotient_dimension": 53,
+        "gauge_symplectic_rank": 52,
+        "global_Wilson_rank_increment": 3,
+        "length": 3,
+        "local_code_gauge_quotient_dimension": 56,
+        "local_code_matter_gauge_intersection": 4,
+        "local_code_matter_quotient_dimension": 326,
+        "matter_gauge_intersection": 1,
+        "matter_quotient_dimension": 323,
+        "matter_symplectic_rank": 322,
+        "maximum_auxiliary_generator_weight": 18,
+        "maximum_bounded_local_constraint_weight": 28,
+        "maximum_full_fixed_flux_stabilizer_weight": 28,
+        "maximum_mapped_matter_generator_weight": 11,
+        "physical_M2_qubits": 594,
+        "root_tree_canonical_maximum_weight": 162,
+        "root_tree_raw_maximum_weight": 18,
+        "split": "train",
+        "stabilizer_rank": 406
+      },
+      {
+        "M2_per_coarse_cell": 22.0,
+        "P_g_equals_P_m": true,
+        "bounded_local_code_exponent": 1514,
+        "bounded_local_stabilizer_rank": 3238,
+        "coarse_cells": 216,
+        "code_exponent": 1511,
+        "delete_one_independent_Wilson_index": 4968,
+        "deleted_Wilson_rank_loss": 1,
+        "deleted_bounded_local_constraint_rank_loss": 1,
+        "gauge_quotient_dimension": 431,
+        "gauge_symplectic_rank": 430,
+        "global_Wilson_rank_increment": 3,
+        "length": 6,
+        "local_code_gauge_quotient_dimension": 434,
+        "local_code_matter_gauge_intersection": 4,
+        "local_code_matter_quotient_dimension": 2594,
+        "matter_gauge_intersection": 1,
+        "matter_quotient_dimension": 2591,
+        "matter_symplectic_rank": 2590,
+        "maximum_auxiliary_generator_weight": 18,
+        "maximum_bounded_local_constraint_weight": 28,
+        "maximum_full_fixed_flux_stabilizer_weight": 39,
+        "maximum_mapped_matter_generator_weight": 11,
+        "physical_M2_qubits": 4752,
+        "root_tree_canonical_maximum_weight": 1296,
+        "root_tree_raw_maximum_weight": 18,
+        "split": "held",
+        "stabilizer_rank": 3241
+      },
+      {
+        "M2_per_coarse_cell": 22.0,
+        "P_g_equals_P_m": true,
+        "bounded_local_code_exponent": 2403,
+        "bounded_local_stabilizer_rank": 5143,
+        "coarse_cells": 343,
+        "code_exponent": 2400,
+        "delete_one_independent_Wilson_index": 7889,
+        "deleted_Wilson_rank_loss": 1,
+        "deleted_bounded_local_constraint_rank_loss": 1,
+        "gauge_quotient_dimension": 685,
+        "gauge_symplectic_rank": 684,
+        "global_Wilson_rank_increment": 3,
+        "length": 7,
+        "local_code_gauge_quotient_dimension": 688,
+        "local_code_matter_gauge_intersection": 4,
+        "local_code_matter_quotient_dimension": 4118,
+        "matter_gauge_intersection": 1,
+        "matter_quotient_dimension": 4115,
+        "matter_symplectic_rank": 4114,
+        "maximum_auxiliary_generator_weight": 18,
+        "maximum_bounded_local_constraint_weight": 28,
+        "maximum_full_fixed_flux_stabilizer_weight": 45,
+        "maximum_mapped_matter_generator_weight": 11,
+        "physical_M2_qubits": 7546,
+        "root_tree_canonical_maximum_weight": 2058,
+        "root_tree_raw_maximum_weight": 18,
+        "split": "held-out-size",
+        "stabilizer_rank": 5146
+      }
+    ],
+    "runtime_global_parity_service_used": false,
+    "sectorwise_even_update_spectator_independent": true,
+    "sectorwise_factorization": "H_code=(H_matter,+ tensor H_gauge,+) direct-sum (H_matter,- tensor H_gauge,-)",
+    "tested_fixed_flux_selector_expected_support": [
+      28,
+      39,
+      45
+    ],
+    "tested_fixed_flux_selector_maximum_support": [
+      28,
+      39,
+      45
+    ],
+    "tested_root_tree_canonical_support": [
+      162,
+      1296,
+      2058
+    ],
+    "tested_root_tree_expected_support": [
+      162,
+      1296,
+      2058
+    ],
+    "three_noncontractible_Wilson_flux_selectors_required_for_exact_fixed_sector": true
+  },
+  "route_B": {
+    "Cycle230_lawful_stream_capacity": {
+      "maximum_incoming_directional_modes_per_cell": 6,
+      "overflow_at_capacity_seven": 0,
+      "pass": true
+    },
+    "adjacent_compare_exchange_stages": 28,
+    "all_256_occupation_patterns_tested": true,
+    "coherent_extension_is_unitary": true,
+    "collision_and_CAR_sign_separated": true,
+    "deleted_comparator_stage": 0,
+    "deleted_comparator_witness_mask": 254,
+    "eight_packet_overflow_flag": 1,
+    "exhaustive_sort_failures": 0,
+    "history_archive_bits_per_macro": 28,
+    "input_lanes": 8,
+    "inverse_failures": 0,
+    "maximum_gate_neighborhood_lanes": 2,
+    "number_conservation_failures": 0,
+    "odd_even_parity_failures": 0,
+    "overflow_rows": [
+      {
+        "admitted": 0,
+        "input_packets": 0,
+        "overflow": 0,
+        "reservoir_capacity": 7
+      },
+      {
+        "admitted": 1,
+        "input_packets": 1,
+        "overflow": 0,
+        "reservoir_capacity": 7
+      },
+      {
+        "admitted": 2,
+        "input_packets": 2,
+        "overflow": 0,
+        "reservoir_capacity": 7
+      },
+      {
+        "admitted": 3,
+        "input_packets": 3,
+        "overflow": 0,
+        "reservoir_capacity": 7
+      },
+      {
+        "admitted": 4,
+        "input_packets": 4,
+        "overflow": 0,
+        "reservoir_capacity": 7
+      },
+      {
+        "admitted": 5,
+        "input_packets": 5,
+        "overflow": 0,
+        "reservoir_capacity": 7
+      },
+      {
+        "admitted": 6,
+        "input_packets": 6,
+        "overflow": 0,
+        "reservoir_capacity": 7
+      },
+      {
+        "admitted": 7,
+        "input_packets": 7,
+        "overflow": 0,
+        "reservoir_capacity": 7
+      },
+      {
+        "admitted": 7,
+        "input_packets": 8,
+        "overflow": 1,
+        "reservoir_capacity": 7
+      }
+    ],
+    "packet_creator_CAR_anticommutator_residual": 2.0,
+    "packet_creator_commutator_residual": 0.0,
+    "pass_CAR_sign_service": false,
+    "pass_Cycle230_recurrent_stream_capacity": true,
+    "pass_generalized_tagged_recurrent_traffic_without_overflow": false,
+    "pass_one_macro_collision_sorter": true,
+    "reason_coherent_extension_is_unitary": "each archived comparator is predicate-XOR then controlled SWAP; the inverse reverses the SWAP and clears the predicate",
+    "recurrent_six_predecessor_stress": {
+      "arrivals_per_target": 42,
+      "overflow_packets": 35,
+      "retained_capacity": 7,
+      "scope": "generalized tagged traffic allowing seven packets per incoming bond; outside Cycle230's one fermion per directional mode domain"
+    },
+    "renewal_archive_clean_failures": 0,
+    "reservoir_capacity": 7,
+    "route": "B_reversible_local_collision_syndrome_reservoir"
+  },
+  "route_C": {
+    "B_full_Fock_sign_rows": [
+      {
+        "B_involution_failures": 0,
+        "first_witness": {
+          "abstract_Gamma_B_sign": -1,
+          "endpoint_fSWAP_product_sign": 1,
+          "mapped_modes": [
+            109,
+            54
+          ],
+          "occupied_input_modes": [
+            0,
+            1
+          ]
+        },
+        "length": 3,
+        "modes": 162,
+        "sign_mismatches": 4140,
+        "two_particle_basis_states": 13041
+      },
+      {
+        "B_involution_failures": 0,
+        "first_witness": {
+          "abstract_Gamma_B_sign": -1,
+          "endpoint_fSWAP_product_sign": 1,
+          "mapped_modes": [
+            1081,
+            216
+          ],
+          "occupied_input_modes": [
+            0,
+            1
+          ]
+        },
+        "length": 6,
+        "modes": 1296,
+        "sign_mismatches": 154800,
+        "two_particle_basis_states": 839160
+      },
+      {
+        "B_involution_failures": 0,
+        "first_witness": {
+          "abstract_Gamma_B_sign": -1,
+          "endpoint_fSWAP_product_sign": 1,
+          "mapped_modes": [
+            1765,
+            294
+          ],
+          "occupied_input_modes": [
+            0,
+            1
+          ]
+        },
+        "length": 7,
+        "modes": 2058,
+        "sign_mismatches": 340452,
+        "two_particle_basis_states": 2116653
+      }
+    ],
+    "all24_rows": [
+      {
+        "A_reverse_covariance_failures": 0,
+        "B_edge_set_covariant_L3": true,
+        "coin_covariance_residual": 0.0,
+        "full_local_word_covariance_residual": 8.875492057522731e-16,
+        "shell_set_preserved": true
+      },
+      {
+        "A_reverse_covariance_failures": 0,
+        "B_edge_set_covariant_L3": true,
+        "coin_covariance_residual": 0.0,
+        "full_local_word_covariance_residual": 1.6509464324509504e-15,
+        "shell_set_preserved": true
+      },
+      {
+        "A_reverse_covariance_failures": 0,
+        "B_edge_set_covariant_L3": true,
+        "coin_covariance_residual": 0.0,
+        "full_local_word_covariance_residual": 1.6358207110275723e-15,
+        "shell_set_preserved": true
+      },
+      {
+        "A_reverse_covariance_failures": 0,
+        "B_edge_set_covariant_L3": true,
+        "coin_covariance_residual": 0.0,
+        "full_local_word_covariance_residual": 9.21597896696421e-16,
+        "shell_set_preserved": true
+      },
+      {
+        "A_reverse_covariance_failures": 0,
+        "B_edge_set_covariant_L3": true,
+        "coin_covariance_residual": 0.0,
+        "full_local_word_covariance_residual": 1.6304219215154774e-15,
+        "shell_set_preserved": true
+      },
+      {
+        "A_reverse_covariance_failures": 0,
+        "B_edge_set_covariant_L3": true,
+        "coin_covariance_residual": 0.0,
+        "full_local_word_covariance_residual": 1.707098942126145e-15,
+        "shell_set_preserved": true
+      },
+      {
+        "A_reverse_covariance_failures": 0,
+        "B_edge_set_covariant_L3": true,
+        "coin_covariance_residual": 0.0,
+        "full_local_word_covariance_residual": 1.7067022643062977e-15,
+        "shell_set_preserved": true
+      },
+      {
+        "A_reverse_covariance_failures": 0,
+        "B_edge_set_covariant_L3": true,
+        "coin_covariance_residual": 0.0,
+        "full_local_word_covariance_residual": 1.5995257244249129e-15,
+        "shell_set_preserved": true
+      },
+      {
+        "A_reverse_covariance_failures": 0,
+        "B_edge_set_covariant_L3": true,
+        "coin_covariance_residual": 0.0,
+        "full_local_word_covariance_residual": 1.7067022643062975e-15,
+        "shell_set_preserved": true
+      },
+      {
+        "A_reverse_covariance_failures": 0,
+        "B_edge_set_covariant_L3": true,
+        "coin_covariance_residual": 0.0,
+        "full_local_word_covariance_residual": 1.424001265710382e-15,
+        "shell_set_preserved": true
+      },
+      {
+        "A_reverse_covariance_failures": 0,
+        "B_edge_set_covariant_L3": true,
+        "coin_covariance_residual": 0.0,
+        "full_local_word_covariance_residual": 1.3832037130210612e-15,
+        "shell_set_preserved": true
+      },
+      {
+        "A_reverse_covariance_failures": 0,
+        "B_edge_set_covariant_L3": true,
+        "coin_covariance_residual": 0.0,
+        "full_local_word_covariance_residual": 1.6900101753313671e-15,
+        "shell_set_preserved": true
+      },
+      {
+        "A_reverse_covariance_failures": 0,
+        "B_edge_set_covariant_L3": true,
+        "coin_covariance_residual": 0.0,
+        "full_local_word_covariance_residual": 1.707098942126145e-15,
+        "shell_set_preserved": true
+      },
+      {
+        "A_reverse_covariance_failures": 0,
+        "B_edge_set_covariant_L3": true,
+        "coin_covariance_residual": 0.0,
+        "full_local_word_covariance_residual": 1.4549889127976345e-15,
+        "shell_set_preserved": true
+      },
+      {
+        "A_reverse_covariance_failures": 0,
+        "B_edge_set_covariant_L3": true,
+        "coin_covariance_residual": 0.0,
+        "full_local_word_covariance_residual": 1.3832037130210612e-15,
+        "shell_set_preserved": true
+      },
+      {
+        "A_reverse_covariance_failures": 0,
+        "B_edge_set_covariant_L3": true,
+        "coin_covariance_residual": 0.0,
+        "full_local_word_covariance_residual": 1.6787951461334143e-15,
+        "shell_set_preserved": true
+      },
+      {
+        "A_reverse_covariance_failures": 0,
+        "B_edge_set_covariant_L3": true,
+        "coin_covariance_residual": 0.0,
+        "full_local_word_covariance_residual": 1.5995257244249129e-15,
+        "shell_set_preserved": true
+      },
+      {
+        "A_reverse_covariance_failures": 0,
+        "B_edge_set_covariant_L3": true,
+        "coin_covariance_residual": 0.0,
+        "full_local_word_covariance_residual": 1.6900101753313671e-15,
+        "shell_set_preserved": true
+      },
+      {
+        "A_reverse_covariance_failures": 0,
+        "B_edge_set_covariant_L3": true,
+        "coin_covariance_residual": 0.0,
+        "full_local_word_covariance_residual": 1.6787951461334143e-15,
+        "shell_set_preserved": true
+      },
+      {
+        "A_reverse_covariance_failures": 0,
+        "B_edge_set_covariant_L3": true,
+        "coin_covariance_residual": 0.0,
+        "full_local_word_covariance_residual": 1.6193588792995919e-15,
+        "shell_set_preserved": true
+      },
+      {
+        "A_reverse_covariance_failures": 0,
+        "B_edge_set_covariant_L3": true,
+        "coin_covariance_residual": 0.0,
+        "full_local_word_covariance_residual": 9.596769216062948e-16,
+        "shell_set_preserved": true
+      },
+      {
+        "A_reverse_covariance_failures": 0,
+        "B_edge_set_covariant_L3": true,
+        "coin_covariance_residual": 0.0,
+        "full_local_word_covariance_residual": 1.5981425952949909e-15,
+        "shell_set_preserved": true
+      },
+      {
+        "A_reverse_covariance_failures": 0,
+        "B_edge_set_covariant_L3": true,
+        "coin_covariance_residual": 0.0,
+        "full_local_word_covariance_residual": 1.598142595294991e-15,
+        "shell_set_preserved": true
+      },
+      {
+        "A_reverse_covariance_failures": 0,
+        "B_edge_set_covariant_L3": true,
+        "coin_covariance_residual": 0.0,
+        "full_local_word_covariance_residual": 0.0,
+        "shell_set_preserved": true
+      }
+    ],
+    "all576_failures": 0,
+    "all576_frame_products": 576,
+    "coin_Givens_factors": 13,
+    "coin_exterior_lift_residual": 4.897409575925298e-15,
+    "coin_one_mode_phase_factors": 6,
+    "coin_reconstruction_residual": 1.1276930177485768e-15,
+    "coin_triangularization_residual": 1.2619382578581019e-15,
+    "factor_order_and_noncommutation": {
+      "Cycle230_contact_free_generator_noncommutation_witness": 2.3934793937974876,
+      "Cycle230_free_factorization_residual": 0.0,
+      "Cycle230_random_antisymmetric_probe_seed": 2301,
+      "Cycle230_reverse_schedule_difference": 0.5202793649337463,
+      "accepted_Cycle230_application_order": "onsite coin -> stream S (U=S C) -> onsite contact",
+      "delete_each_factor_difference": {
+        "delete_coin_difference": 1.9020837629144585,
+        "delete_contact_difference": 0.08827995040981686,
+        "delete_stream_difference": 1.9968896435700219
+      },
+      "fixed_microstep_order_is_supplied_law_content_not_time": true,
+      "literal_compiler_factor_order": [
+        "factor_0 controlled onsite coin",
+        "factor_1 controlled stream S, completing free U=S C",
+        "factor_2 controlled onsite contact"
+      ],
+      "pass": true
+    },
+    "fine_supercell_scale": 129,
+    "full_Fock_CAR_intertwining": false,
+    "host_selected_frames": 0,
+    "intercell_B_directed_incidences_per_coarse_cell": 6,
+    "intercell_B_edges_L3": 81,
+    "intercell_B_undirected_fSWAPs_per_coarse_cell": 3,
+    "literal_frame_free_word": "Gamma(C) on the six face modes; onsite opposite-face A; nearest-neighbor cross-face B; onsite pair contact",
+    "literal_word_sha256": "10bc2b36f25d10dab65b180513fc26a85ae8164197b5711168d35eb42b63a0f5",
+    "maximum_primitive_support_M2": 2,
+    "maximum_radial_path_sites": 129,
+    "orientation_bits": 0,
+    "pass_frame_free_bounded_word": true,
+    "pass_required_full_Fock_compiler": false,
+    "path_failures": 0,
+    "role_genesis_removed_at_register_word_geometry_resolution": true,
+    "route": "C_frame_free_six_face_shell",
+    "routed_fSWAP_instances_per_cell": 7874,
+    "single_word_not_24_analytic_rotations": true,
+    "six_mode_shell_coordinates": [
+      [
+        -64,
+        0,
+        0
+      ],
+      [
+        64,
+        0,
+        0
+      ],
+      [
+        0,
+        -64,
+        0
+      ],
+      [
+        0,
+        64,
+        0
+      ],
+      [
+        0,
+        0,
+        -64
+      ],
+      [
+        0,
+        0,
+        64
+      ]
+    ],
+    "two_mode_factors_per_cell_excluding_intercell_B": 31
+  },
+  "route_by_route_disposition": {
+    "A": "retain bounded covariant even-CAR generators in a fixed-flux sector; three nonlocal Wilson selectors and a common pure full-Fock E remain",
+    "B": "retain collision lemma only: exact finite reversible sorter and sufficient Cycle230 capacity, but no CAR sign; generalized multi-packet traffic overflows",
+    "C": "retain frame-free geometry/word lemma only: no 24-one-hot genesis, but endpoint B fails full-Fock signs"
+  },
+  "runner_sha256": "97e0dca22e676e7aa3818ea613d209d4ed33885b176af2f1f9ed659d3d20b0c3",
+  "shared_obstruction_or_axiom_pressure": false,
+  "status": "cycle617-local-sector-role-genesis-closure-tournament",
+  "strongest_constructive_result": "the global exactly-one-carrier restriction is unnecessary for the bounded covariant even-CAR operator algebra inside each fixed-flux Cycle251 sector: its 22-M2/cell bounded generators carry arbitrary finite density in both parity sectors, while a separate one-word six-face construction removes Cycle610's 24-one-hot orientation field at geometry resolution",
+  "supplied_structure_inventory": [
+    "coarse 129^3 supercell centers and blank routing paths",
+    "Cycle230 six-mode CAR law, beta, contact g, and coin-A-B-contact factor order",
+    "Cycle251 puncture topology, local stabilizer code state, and three fixed Wilson-flux selectors",
+    "Cycle251 period-16 physical role marker and supplied macro-cell roles",
+    "finite reservoir capacity and blank 28-bit comparator archive",
+    "canonical occupation-label order used only to audit, not serve, CAR signs",
+    "gate angle precision and initial/boundary-state selection"
+  ],
+  "tests_failed": 0,
+  "tests_passed": 11,
+  "updated_dependency_ledger": {
+    "C_int": "unchanged constructive local contact and noncommutation fixture; coupling g remains supplied",
+    "C_local": "improved: bounded 22-M2 even-CAR generators plus frame-free shell; three Wilson selectors and the joint full-Fock local compiler remain open",
+    "C_num": "improved at even-observable finite-density resolution; common cross-parity pure E remains open",
+    "C_ref": "unchanged: reference/phase selection remains supplied",
+    "C_source": "unchanged: no autonomous source/resource law derived",
+    "C_wrap": "unchanged: Cycle230 modular seam fixture reproduced from the accepted shore"
+  }
+}

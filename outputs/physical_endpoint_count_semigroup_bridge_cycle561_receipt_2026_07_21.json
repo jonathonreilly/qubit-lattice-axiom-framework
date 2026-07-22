@@ -1,0 +1,78 @@
+{
+  "status": "cycle561-physical-endpoint-count-contraction-semigroup-bridge",
+  "authority": "none",
+  "audit": "unset",
+  "runner_sha256": "bfb1632eca160c8995b369585a9014662def9717dd2ec44158944dd56a4f0ccf",
+  "note_sha256": "d11db6ca84cc155b050955820d4c1cad31b31df6a5c708603541813e90828784",
+  "parent_transcript_sha256": "6857e30bc057c0ff45dc48e54108ad919c6115a3c89a2c3633483c01ef70b5ab",
+  "tests_passed": 11,
+  "tests_total": 11,
+  "pass": true,
+  "timed_wall_seconds": 89.07,
+  "maximum_RSS_bytes": 1163182080,
+  "process_swap_count": 0,
+  "exact_pinned_dependencies": {
+    "Cycle469_runner_sha256": "ac706716229b81876c2a730a524d0610dee0b41c2fb92dc95a22f6a4260b0fa1",
+    "Cycle498_runner_sha256": "839276eaa67d8a97413ca395ebc571774b797dc7dfae942a70cdec383b40fb97",
+    "Cycle504_runner_sha256": "fe1e96fbed14befd235b7799deecbf471f4862130d5fb0a1f905d75246bc226e"
+  },
+  "strongest_constructive_result": {
+    "law": "tau = decoded common-unit probe endpoint count / supplied four-cell standard",
+    "additive_under_declared_concatenation": true,
+    "refinement_invariant_q1_q2_q3": true,
+    "unchanged_Cycle469_seeds_reproduced_without_refit": true,
+    "maximum_train_held_EG_inverse_norm_residual": 3.2641975085005567e-14,
+    "full_operator_semigroup_residuals": [
+      2.7755575615628914e-17,
+      1.3877787807814457e-17,
+      1.0408340855860843e-17
+    ],
+    "held_order_resegmentation_residual": 0.0
+  },
+  "route_dispositions": {
+    "raw_ratio": "single-cell compatible but nonadditive on concatenated fixtures",
+    "extensive_count": "strongest positive additive and refinement-invariant bridge",
+    "pair_valued": "associative sufficient statistic with explicit homomorphic projection",
+    "signed_contrast": "additive but delay is negative and leaves the retained contraction domain",
+    "carry_certified_Cycle504": "positive finite N8 producer route with a functional decoded-count-to-seed seam"
+  },
+  "route_specific_negative_controls": {
+    "raw_ratio_multi_cell_seed_residuals": [
+      0.22738859523572053,
+      0.211878021969129,
+      0.2787209772375831,
+      0.17707991423385738
+    ],
+    "signed_delay_parameter": -0.25,
+    "signed_delay_expanded_seed_norm": 1.4046567950154853,
+    "promoted_to_universal_time_no_go": false
+  },
+  "physical_compiler": {
+    "Cycle498_endpoint_codec_M2": 56,
+    "Cycle498_NN_primitives_per_endpoint": 7498,
+    "bridge_word_M2": 81,
+    "joined_finite_bridge_M2": 8506,
+    "classifier_logical_gates": 248,
+    "classifier_NN_primitives": 85568,
+    "seed_route_truth_rows": 56,
+    "seed_route_truth_failures": 0,
+    "seed_route_adjacent_SWAPS_forward_reverse": 309834,
+    "adjacent_Givens": 15488,
+    "maximum_terminal_support_M2": 3,
+    "proper_cubic_frames": 24,
+    "frame_failures": 0
+  },
+  "scope_boundary": {
+    "candidate_endpoint_called_Record_or_actual_history": false,
+    "dimensionless_endpoint_count_called_coordinate_or_proper_time": false,
+    "generator_element_called_rate": false,
+    "four_cell_standard_and_common_profile_derived": false,
+    "endpoint_formation_and_actuality_derived": false,
+    "size_uniform_renewable_accumulator_closed": false,
+    "exponential_generator_seed_law_selected": false,
+    "universal_clock_equivalence_or_proper_time_closed": false,
+    "shared_substrate_obstruction": false,
+    "axiom_pressure": false,
+    "broad_time_no_go_gate": "FAIL / DO NOT SHIP"
+  }
+}

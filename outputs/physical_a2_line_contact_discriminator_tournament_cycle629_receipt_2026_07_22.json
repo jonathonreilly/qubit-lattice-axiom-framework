@@ -1,0 +1,84 @@
+{
+ "cycle": 629,
+ "authority": "none",
+ "audit": "unset",
+ "frozen_contract_sha256": "77a152201d9a2fab6396f087ed11cfb82aee4e76c8bc155b16acc77d5939697a",
+ "consumed": {
+  "c610": "61d624d3f47e371a3b99f55a3c60db68c1fe77f5d93a21651f9172b2d49f1458",
+  "c611": "9f1d4a2aabca8af1f61ef42071c8d2bce05018eace7a6f0886d769871689a13d",
+  "c622": "a4e3521829555eeff89fa22797f6ddfcdc70e3012a412555211db328430f39d7"
+ },
+ "cycle_number_note": "joint lane max observed 628; claiming 629; PR #5523 ready but 573/575/578/583 substrate unlanded on main (citations refer to in-tree campaign surfaces)",
+ "spectral_rows": {
+  "ball3_g0.37": {
+   "abs": 0.999109373594012,
+   "arg": 0.30654753336866636,
+   "residual": 2.3497402073550424e-13,
+   "interior_weight": 0.9999999999999991,
+   "antisym": 2.919594317009366e-14
+  },
+  "ball3_g0.185": {
+   "abs": 0.9985106020357565,
+   "arg": -3.0263829019634225,
+   "residual": 2.579933361820857e-13,
+   "interior_weight": 1.0000000000000013,
+   "antisym": 3.87020680906797e-14
+  },
+  "ball3_g0.0": {
+   "abs": 0.9980901117622297,
+   "arg": -3.066253761813115,
+   "residual": 7.06140853840399e-13,
+   "interior_weight": 1.0000000000000004,
+   "antisym": 1.0961075818365254e-13
+  },
+  "ball4_g0.37": null,
+  "ball4_g0.0": null
+ },
+ "verdict": {
+  "reading": "R1_contact_dependent",
+  "persists_at_g0": false,
+  "phase_g037": 0.30654753336866636,
+  "phase_g0": -3.066253761813115,
+  "phase_g0185": -3.0263829019634225,
+  "phase_shift_g0_to_g037": 2.910384011997805
+ },
+ "bs_scan": {
+  "window_min": 1.123619162708616e-10,
+  "at_theta": 0.29998079266839706,
+  "coarse_min": 0.002432005546640917,
+  "bs_visible": true
+ },
+ "unmasked_g0": {
+  "rate_T1": -0.023185483870967742,
+  "locked": false,
+  "convention_independent": true,
+  "locks_at_dust_line": false
+ },
+ "beat_word": {
+  "predicted_lines": [
+   -2.975574708446694,
+   0.30654753336866636
+  ],
+  "found_lines": [
+   -2.9754126895460007,
+   0.3133679321968659
+  ],
+  "peak_mags": [
+   454.80010838853707,
+   59.628043920197
+  ],
+  "median_floor": 0.08505157172770339,
+  "bin_width": 0.003165332648453192,
+  "survivor_norm_sq": 0.2525965797979323
+ },
+ "interpretation_firewall": [
+  "a spectral line is not energy; a beat is not a clock law",
+  "the DFT of a retained word is data analysis, not a physical instrument claim",
+  "the verdict is a reported reading under frozen criteria; no vernier clock is built here (scoping only, by owner directive)",
+  "the +0.31 line's irrep/localization statements are finite L9 declared-code statements"
+ ],
+ "elapsed_seconds": 42.838144063949585,
+ "pass_count": 4,
+ "fail_count": 2,
+ "pass": false
+}

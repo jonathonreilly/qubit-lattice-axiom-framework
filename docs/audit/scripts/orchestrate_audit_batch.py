@@ -31,6 +31,7 @@ import tempfile
 import time
 import uuid
 from collections import Counter
+from collections.abc import Callable
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -41,6 +42,7 @@ SCIENCE_FIX = REPO_ROOT / "scripts" / "science_fix_loop.py"
 sys.path.insert(0, str(REPO_ROOT / "scripts"))
 import codex_audit_runner as audit_runner  # noqa: E402
 import ledger_io  # noqa: E402
+import static_pipeline_checkpoint as static_checkpoint  # noqa: E402
 
 MODEL = "gpt-5.6-sol"
 AUDITOR_FAMILY = "codex-gpt-5.6"
@@ -523,6 +525,7 @@ def launch_worker(
         log_handle.close()
         raise
     now = time.monotonic()
+    now_wall = time.time()
     return {
         "cid": cid,
         "row": row,
@@ -540,7 +543,9 @@ def launch_worker(
         "independence": seat_independence(row, pass_no),
         "workdir": workdir,
         "last_size": 0,
+        "last_activity": (0, 0.0),
         "last_progress": now,
+        "last_progress_wall": now_wall,
         "stalled": False,
     }
 
@@ -608,39 +613,92 @@ def start_progress_ticker() -> None:
     threading.Thread(target=_loop, daemon=True, name="drain-progress").start()
 
 
-def wait_workers(jobs: list[dict], stall_minutes: int = 45) -> None:
+def wait_workers(
+    jobs: list[dict],
+    stall_minutes: int = 45,
+    on_claim_ready: Callable[[list[dict]], bool] | None = None,
+) -> bool | None:
+    """Monitor seats and optionally drain each complete claim immediately.
+
+    Critical rows remain atomic because the callback fires only after every
+    launched seat for that claim has exited. The callback itself is serial,
+    preserving the one-committer invariant, while unrelated slow seats keep
+    running instead of holding a bulk-synchronous wave barrier.
+
+    Returns ``True``/``False`` when streaming is requested, and ``None`` for
+    the legacy wait-only behavior used by judicial-panel callers.
+    """
     pending = set(range(len(jobs)))
+    dispatched_claims: set[str] = set()
     stall_seconds = stall_minutes * 60
     PROGRESS["jobs"] = jobs
     try:
         while pending:
             now = time.monotonic()
+            now_wall = time.time()
             for index in list(pending):
                 job = jobs[index]
                 job.setdefault("started", now)
+                job.setdefault("last_progress_wall", now_wall)
+                job.setdefault("last_activity", (job.get("last_size", 0), 0.0))
                 output = job["raw_output"]
-                output_size = output.stat().st_size if output.exists() else 0
-                log_size = job["log_path"].stat().st_size if job["log_path"].exists() else 0
+                output_stat = output.stat() if output.exists() else None
+                log_path = job["log_path"]
+                log_stat = log_path.stat() if log_path.exists() else None
+                output_size = output_stat.st_size if output_stat else 0
+                log_size = log_stat.st_size if log_stat else 0
                 size = output_size + log_size
-                if size != job["last_size"]:
+                activity_mtime = max(
+                    output_stat.st_mtime if output_stat else 0.0,
+                    log_stat.st_mtime if log_stat else 0.0,
+                )
+                activity = (size, activity_mtime)
+                if activity != job["last_activity"]:
+                    job["last_activity"] = activity
                     job["last_size"] = size
                     job["last_progress"] = now
+                    if activity_mtime:
+                        job["last_progress_wall"] = activity_mtime
                 returncode = job["proc"].poll()
                 if returncode is not None:
                     job["returncode"] = returncode
                     job["proc"].wait()
+                    if not job["log_handle"].closed:
+                        job["log_handle"].close()
                     pending.remove(index)
                     continue
-                if now - job["last_progress"] >= stall_seconds:
+                if now_wall - job["last_progress_wall"] >= stall_seconds:
                     job["stalled"] = True
                     try:
                         os.killpg(job["proc"].pid, signal.SIGKILL)
                     except ProcessLookupError:
                         pass
                     job["returncode"] = job["proc"].wait()
+                    if not job["log_handle"].closed:
+                        job["log_handle"].close()
                     pending.remove(index)
+
+            if on_claim_ready is not None:
+                ready_claims = sorted({
+                    job["cid"]
+                    for job in jobs
+                    if job["cid"] not in dispatched_claims
+                    and all(
+                        peer.get("returncode") is not None
+                        for peer in jobs
+                        if peer["cid"] == job["cid"]
+                    )
+                })
+                for cid in ready_claims:
+                    claim_jobs = [job for job in jobs if job["cid"] == cid]
+                    dispatched_claims.add(cid)
+                    if not on_claim_ready(claim_jobs):
+                        terminate_workers([jobs[index] for index in pending])
+                        pending.clear()
+                        return False
             if pending:
                 time.sleep(2)
+        return True if on_claim_ready is not None else None
     except BaseException:
         for index in pending:
             job = jobs[index]
@@ -1002,9 +1060,20 @@ def sync_origin_main() -> tuple[bool, str]:
 
 
 def changed_paths() -> list[str]:
-    names = set(sh(["git", "diff", "--name-only"]).stdout.splitlines())
-    names.update(sh(["git", "diff", "--name-only", "--cached"]).stdout.splitlines())
-    names.update(sh(["git", "ls-files", "--others", "--exclude-standard"]).stdout.splitlines())
+    names: set[str] = set()
+    commands = (
+        ["git", "diff", "--name-only"],
+        ["git", "diff", "--name-only", "--cached"],
+        ["git", "ls-files", "--others", "--exclude-standard"],
+    )
+    for command in commands:
+        result = sh(command)
+        if result.returncode != 0:
+            raise RuntimeError(
+                f"{' '.join(command)} failed: "
+                f"{(result.stderr or result.stdout).strip()[:240]}"
+            )
+        names.update(result.stdout.splitlines())
     return sorted(name for name in names if name)
 
 
@@ -1015,9 +1084,27 @@ def allowed_generated_path(path: str) -> bool:
     )
 
 
+def verdict_only_generated_path(path: str) -> bool:
+    return static_checkpoint.verdict_generated_path(path)
+
+
+def verdict_only_pipeline_eligibility() -> tuple[bool, str]:
+    """Fail-closed wrapper around the shell entry point's shared proof."""
+    return static_checkpoint.verify_checkpoint()
+
+
 def run_generated_gates() -> tuple[bool, str]:
-    """Run the expensive generated-surface gates once per claim transaction."""
-    pipeline = sh(["bash", str(SCRIPTS / "run_pipeline.sh")], timeout=1800)
+    """Run generated-surface gates once per claim transaction."""
+    verdict_only, mode_detail = verdict_only_pipeline_eligibility()
+    pipeline_command = ["bash", str(SCRIPTS / "run_pipeline.sh")]
+    if verdict_only:
+        pipeline_command.append("--verdict-only")
+    print(
+        "generated gate mode: "
+        f"{'verdict-only' if verdict_only else 'full'} ({mode_detail})",
+        flush=True,
+    )
+    pipeline = sh(pipeline_command, timeout=1800)
     if pipeline.returncode != 0:
         return False, f"pipeline failed: {(pipeline.stderr or pipeline.stdout)[-400:]}"
     lint = sh([sys.executable, str(SCRIPTS / "audit_lint.py"), "--strict"], timeout=600)
@@ -1026,7 +1113,13 @@ def run_generated_gates() -> tuple[bool, str]:
     diff_check = sh(["git", "diff", "--check"])
     if diff_check.returncode != 0:
         return False, f"git diff --check failed: {diff_check.stdout[-400:]}"
-    unexpected = [path for path in changed_paths() if not allowed_generated_path(path)]
+    try:
+        unexpected = [
+            path for path in changed_paths()
+            if not allowed_generated_path(path)
+        ]
+    except RuntimeError as exc:
+        return False, f"generated-path inspection failed: {exc}"
     if unexpected:
         return False, f"unexpected generated paths: {unexpected[:8]}"
     return True, "gates passed"
@@ -1760,14 +1853,50 @@ def main() -> int:
             raise
         if not jobs:
             break
-        print(f"   launched {len(jobs)} detached workers; waiting (stall {args.stall_minutes}m)")
-        wait_workers(jobs, args.stall_minutes)
-        (
-            applied_ok,
-            compute_skips,
-            schema_quarantines,
-            round_science_handoffs,
-        ) = apply_serialized(jobs, report, args.push_retries)
+        print(
+            f"   launched {len(jobs)} detached workers; streaming complete "
+            f"claims to one committer (stall {args.stall_minutes}m)"
+        )
+        compute_skips: set[str] = set()
+        schema_quarantines: set[str] = set()
+        round_science_handoffs_by_claim: dict[str, dict] = {}
+
+        def apply_ready_claim(claim_jobs: list[dict]) -> bool:
+            ok, skipped, quarantined, handoffs = apply_serialized(
+                claim_jobs, report, args.push_retries
+            )
+            compute_skips.update(skipped)
+            schema_quarantines.update(quarantined)
+            round_science_handoffs_by_claim.update(
+                {row["claim_id"]: row for row in handoffs}
+            )
+            return ok
+
+        streamed = wait_workers(
+            jobs,
+            args.stall_minutes,
+            on_claim_ready=apply_ready_claim,
+        )
+        if streamed is True:
+            applied_ok = True
+            round_science_handoffs = list(
+                round_science_handoffs_by_claim.values()
+            )
+        elif streamed is False:
+            applied_ok = False
+            round_science_handoffs = list(
+                round_science_handoffs_by_claim.values()
+            )
+        else:
+            # Compatibility for focused tests/mocks that replace the legacy
+            # two-argument waiter. Production wait_workers always returns an
+            # exact bool when a streaming callback is supplied.
+            (
+                applied_ok,
+                compute_skips,
+                schema_quarantines,
+                round_science_handoffs,
+            ) = apply_serialized(jobs, report, args.push_retries)
         session_skipped.update(compute_skips)
         session_skipped.update(schema_quarantines)
         persist_campaign_quarantine(

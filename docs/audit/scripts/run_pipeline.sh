@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
-# Run the full audit-lane pipeline end to end.
+# Run the audit-lane pipeline end to end.
+#
+# ``--verdict-only`` reuses checkpoint-bound citation and runner caches while
+# retaining every verdict-dependent propagation, lint, render, and invariant
+# gate. The shell entry point repeats the complete checkpoint proof, so direct
+# callers cannot bypass eligibility with stale-but-present caches.
 #
 # This script is mechanical and deterministic. It does NOT perform any
 # audits — those are done by the current best Codex GPT model at maximum
@@ -38,6 +43,26 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "${SCRIPT_DIR}/../../.." && pwd)"
 cd "${REPO_ROOT}"
 
+PIPELINE_MODE="full"
+if [[ $# -gt 1 ]]; then
+  echo "usage: $0 [--verdict-only]" >&2
+  exit 2
+fi
+if [[ $# -eq 1 ]]; then
+  if [[ "$1" != "--verdict-only" ]]; then
+    echo "usage: $0 [--verdict-only]" >&2
+    exit 2
+  fi
+  PIPELINE_MODE="verdict-only"
+fi
+
+# Repeat the complete proof inside the shell entry point immediately before
+# cache use. This binds even direct invocations to the full-build checkpoint
+# and closes the orchestrator-check/shell-use gap.
+if [[ "${PIPELINE_MODE}" == "verdict-only" ]]; then
+  python3 docs/audit/scripts/static_pipeline_checkpoint.py verify
+fi
+
 echo "==> 0-ledger/18 ledger_io.py --materialize (sharded ledger -> monolith read cache)"
 python3 docs/audit/scripts/ledger_io.py --materialize
 
@@ -47,20 +72,28 @@ python3 docs/audit/scripts/check_axiom_premise_clean.py
 echo "==> 0a/18 audit_model_family_normalization_guard.py (guard: model/family provenance stays compatible)"
 python3 scripts/audit_model_family_normalization_guard.py
 
-echo "==> 1/18 build_citation_graph.py"
-python3 docs/audit/scripts/build_citation_graph.py
+if [[ "${PIPELINE_MODE}" == "full" ]]; then
+  echo "==> 1/18 build_citation_graph.py"
+  python3 docs/audit/scripts/build_citation_graph.py
 
-echo "==> 1b/18 write_citation_graph_manifest.py (tracked graph-topology acknowledgment)"
-python3 docs/audit/scripts/write_citation_graph_manifest.py
+  echo "==> 1b/18 write_citation_graph_manifest.py (tracked graph-topology acknowledgment)"
+  python3 docs/audit/scripts/write_citation_graph_manifest.py
 
-echo "==> 2/18 seed_audit_ledger.py"
-python3 docs/audit/scripts/seed_audit_ledger.py
+  echo "==> 2/18 seed_audit_ledger.py"
+  python3 docs/audit/scripts/seed_audit_ledger.py
+else
+  echo "==> 1-2/18 reuse verified citation graph and seeded ledger (verdict-only)"
+fi
 
 echo "==> 3/18 sanitize_legacy_audit_artifacts.py"
 python3 docs/audit/scripts/sanitize_legacy_audit_artifacts.py
 
-echo "==> 4/18 classify_runner_passes.py"
-python3 docs/audit/scripts/classify_runner_passes.py
+if [[ "${PIPELINE_MODE}" == "full" ]]; then
+  echo "==> 4/18 classify_runner_passes.py"
+  python3 docs/audit/scripts/classify_runner_passes.py
+else
+  echo "==> 4/18 reuse verified runner classification (verdict-only)"
+fi
 
 echo "==> 5/18 compute_load_bearing.py"
 python3 docs/audit/scripts/compute_load_bearing.py
@@ -137,6 +170,11 @@ python3 docs/audit/scripts/render_front_door_status.py
 
 echo "==> 18/18 repo_invariants_check.py (authority-link guard)"
 python3 docs/audit/scripts/repo_invariants_check.py --check --enforce-links
+
+if [[ "${PIPELINE_MODE}" == "full" ]]; then
+  echo "==> 18b/18 static_pipeline_checkpoint.py write (successful full-build checkpoint)"
+  python3 docs/audit/scripts/static_pipeline_checkpoint.py write
+fi
 
 echo
 echo "Pipeline complete."

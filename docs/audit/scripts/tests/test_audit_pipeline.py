@@ -10079,6 +10079,20 @@ class AuditDataFilesCoverPipelineSurfacesTest(unittest.TestCase):
                 f"generated-untracked surface is not gitignored: {path}",
             )
 
+    def test_verdict_only_shell_rechecks_and_preserves_full_checkpoint(self):
+        script = (
+            PROJECT_ROOT / "docs" / "audit" / "scripts" / "run_pipeline.sh"
+        ).read_text(encoding="utf-8")
+        verify = "python3 docs/audit/scripts/static_pipeline_checkpoint.py verify"
+        write = "python3 docs/audit/scripts/static_pipeline_checkpoint.py write"
+        first_skipped_stage = 'if [[ "${PIPELINE_MODE}" == "full" ]]; then'
+        invariant = "python3 docs/audit/scripts/repo_invariants_check.py"
+
+        self.assertEqual(script.count(verify), 1)
+        self.assertEqual(script.count(write), 1)
+        self.assertLess(script.index(verify), script.index(first_skipped_stage))
+        self.assertGreater(script.index(write), script.rindex(invariant))
+
 
 class BatchOrchestratorRoundSemanticsTest(unittest.TestCase):
     """Round semantics regression pins (theta canary, 2026-07-12): a

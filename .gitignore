@@ -46,4 +46,5 @@ docs/audit/data/audit_queue.json
 docs/audit/data/publication_gap.json
 docs/audit/data/audit_publication_lane.json
 docs/audit/data/runner_classification.json
+docs/audit/data/static_pipeline_checkpoint.json
 docs/audit/AUDIT_LEDGER.md

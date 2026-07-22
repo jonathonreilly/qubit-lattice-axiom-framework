@@ -2,10 +2,13 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
+import subprocess
 import sys
 import tempfile
+import time
 import unittest
 from pathlib import Path
 from unittest import mock
@@ -690,6 +693,395 @@ class SchemaRecoveryTest(unittest.TestCase):
 
 
 class ClaimTransactionTest(unittest.TestCase):
+    def test_wait_workers_streams_complete_claim_before_slower_claim(self):
+        class FakeProc:
+            def __init__(self, polls):
+                self.polls = iter(polls)
+                self.returncode = None
+                self.pid = 1234
+
+            def poll(self):
+                if self.returncode is None:
+                    value = next(self.polls)
+                    if value is not None:
+                        self.returncode = value
+                return self.returncode
+
+            def wait(self):
+                return self.returncode
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+
+            def job(cid, polls):
+                log_path = root / f"{cid}.log"
+                return {
+                    "cid": cid,
+                    "row": {"claim_id": cid},
+                    "pass": 1,
+                    "proc": FakeProc(polls),
+                    "raw_output": root / f"{cid}.out",
+                    "log_path": log_path,
+                    "log_handle": log_path.open("w", encoding="utf-8"),
+                    "last_size": 0,
+                    "last_progress": time.monotonic(),
+                    "stalled": False,
+                }
+
+            jobs = [job("ready", [0]), job("slow", [None, 0])]
+            streamed = []
+            with mock.patch.object(batch.time, "sleep", return_value=None):
+                result = batch.wait_workers(
+                    jobs,
+                    stall_minutes=45,
+                    on_claim_ready=lambda claim_jobs: (
+                        streamed.append(claim_jobs[0]["cid"]) or True
+                    ),
+                )
+
+        self.assertTrue(result)
+        self.assertEqual(streamed, ["ready", "slow"])
+
+    def test_wait_workers_holds_critical_claim_until_both_seats_exit(self):
+        class FakeProc:
+            def __init__(self, polls):
+                self.polls = iter(polls)
+                self.returncode = None
+                self.pid = 1234
+
+            def poll(self):
+                if self.returncode is None:
+                    value = next(self.polls)
+                    if value is not None:
+                        self.returncode = value
+                return self.returncode
+
+            def wait(self):
+                return self.returncode
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+
+            def job(pass_no, polls):
+                log_path = root / f"critical-{pass_no}.log"
+                return {
+                    "cid": "critical",
+                    "row": {"claim_id": "critical", "criticality": "critical"},
+                    "pass": pass_no,
+                    "proc": FakeProc(polls),
+                    "raw_output": root / f"critical-{pass_no}.out",
+                    "log_path": log_path,
+                    "log_handle": log_path.open("w", encoding="utf-8"),
+                    "last_size": 0,
+                    "last_progress": time.monotonic(),
+                    "stalled": False,
+                }
+
+            jobs = [job(1, [0]), job(2, [None, 0])]
+            streamed = []
+            with mock.patch.object(batch.time, "sleep", return_value=None):
+                result = batch.wait_workers(
+                    jobs,
+                    on_claim_ready=lambda claim_jobs: (
+                        streamed.append(sorted(job["pass"] for job in claim_jobs))
+                        or True
+                    ),
+                )
+
+        self.assertTrue(result)
+        self.assertEqual(streamed, [[1, 2]])
+
+    def test_wait_workers_uses_file_mtime_across_long_callback(self):
+        class FakeProc:
+            next_pid = 2000
+
+            def __init__(self, done=False):
+                self.returncode = 0 if done else None
+                self.pid = FakeProc.next_pid
+                FakeProc.next_pid += 1
+
+            def poll(self):
+                return self.returncode
+
+            def wait(self):
+                if self.returncode is None:
+                    self.returncode = -9
+                return self.returncode
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+
+            def job(cid, done=False):
+                log_path = root / f"{cid}.log"
+                return {
+                    "cid": cid,
+                    "row": {"claim_id": cid},
+                    "pass": 1,
+                    "proc": FakeProc(done),
+                    "raw_output": root / f"{cid}.out",
+                    "log_path": log_path,
+                    "log_handle": log_path.open("w", encoding="utf-8"),
+                    "last_size": 0,
+                    "last_progress": 0.0,
+                    "last_progress_wall": 0.0,
+                    "stalled": False,
+                }
+
+            ready = job("ready", done=True)
+            slow = job("slow")
+
+            def callback(claim_jobs):
+                if claim_jobs[0]["cid"] == "ready":
+                    slow["log_handle"].write("progress")
+                    slow["log_handle"].flush()
+                    os.utime(slow["log_path"], (1.0, 1.0))
+                return True
+
+            with mock.patch.object(
+                batch.time, "time", side_effect=[0.0, 3600.0, 3600.0]
+            ), mock.patch.object(
+                batch.time, "sleep", return_value=None
+            ), mock.patch.object(batch.os, "killpg") as killpg:
+                result = batch.wait_workers(
+                    [ready, slow],
+                    stall_minutes=1,
+                    on_claim_ready=callback,
+                )
+
+        self.assertTrue(result)
+        self.assertTrue(slow["stalled"])
+        killpg.assert_called_once()
+
+    def test_wait_workers_callback_failure_terminates_remaining_seats(self):
+        class FakeProc:
+            next_pid = 3000
+
+            def __init__(self, done=False):
+                self.returncode = 0 if done else None
+                self.pid = FakeProc.next_pid
+                FakeProc.next_pid += 1
+
+            def poll(self):
+                return self.returncode
+
+            def wait(self):
+                if self.returncode is None:
+                    self.returncode = -9
+                return self.returncode
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+
+            def job(cid, done=False):
+                log_path = root / f"{cid}.log"
+                return {
+                    "cid": cid,
+                    "row": {"claim_id": cid},
+                    "pass": 1,
+                    "proc": FakeProc(done),
+                    "raw_output": root / f"{cid}.out",
+                    "log_path": log_path,
+                    "log_handle": log_path.open("w", encoding="utf-8"),
+                    "last_size": 0,
+                    "last_progress": time.monotonic(),
+                    "stalled": False,
+                }
+
+            ready = job("ready", done=True)
+            slow = job("slow")
+            with mock.patch.object(batch.os, "killpg") as killpg:
+                result = batch.wait_workers(
+                    [ready, slow],
+                    on_claim_ready=lambda _jobs: False,
+                )
+
+        self.assertFalse(result)
+        self.assertEqual(slow["returncode"], -9)
+        self.assertTrue(all(job["log_handle"].closed for job in (ready, slow)))
+        killpg.assert_called_once()
+
+    def test_verdict_only_path_allowlist_is_narrower_than_commit_allowlist(self):
+        self.assertTrue(
+            batch.verdict_only_generated_path(
+                "docs/audit/data/ledger/ro/row.json"
+            )
+        )
+        self.assertTrue(
+            batch.verdict_only_generated_path(
+                "docs/publication/ci3_z3/RESULTS_INDEX_EFFECTIVE_STATUS.md"
+            )
+        )
+        self.assertFalse(
+            batch.verdict_only_generated_path(
+                "docs/audit/data/lane_certification_config.json"
+            )
+        )
+        self.assertFalse(
+            batch.verdict_only_generated_path(
+                "docs/audit/scripts/audit_lint.py"
+            )
+        )
+
+    def test_verdict_only_eligibility_rejects_cache_hash_mismatch(self):
+        checkpoint = "c" * 40
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            data = root / "docs" / "audit" / "data"
+            data.mkdir(parents=True)
+            for name in batch.static_checkpoint.STATIC_CACHE_NAMES:
+                (data / name).write_text("{}", encoding="utf-8")
+            checkpoint_path = data / "static_pipeline_checkpoint.json"
+            checkpoint_path.write_text(
+                json.dumps({
+                    "schema": "audit_static_pipeline_checkpoint_v1",
+                    "static_cache_sha256": {
+                        name: hashlib.sha256(b"{}").hexdigest()
+                        for name in batch.static_checkpoint.STATIC_CACHE_NAMES
+                    },
+                    "static_input_sha256": checkpoint,
+                }),
+                encoding="utf-8",
+            )
+            (data / "runner_classification.json").write_text(
+                '{"stale": true}', encoding="utf-8"
+            )
+            with mock.patch.object(
+                batch.static_checkpoint, "REPO_ROOT", root
+            ), mock.patch.object(
+                batch.static_checkpoint, "DATA", data
+            ), mock.patch.object(
+                batch.static_checkpoint, "CHECKPOINT", checkpoint_path
+            ):
+                eligible, detail = batch.verdict_only_pipeline_eligibility()
+
+        self.assertFalse(eligible)
+        self.assertIn("do not match", detail)
+
+    def test_verdict_only_eligibility_rejects_git_inspection_failure(self):
+        with mock.patch.object(
+            batch.static_checkpoint,
+            "verify_checkpoint",
+            return_value=(False, "git diff --name-only failed"),
+        ):
+            eligible, detail = batch.verdict_only_pipeline_eligibility()
+
+        self.assertFalse(eligible)
+        self.assertIn("git diff", detail)
+
+    def test_checkpoint_worktree_inspection_fails_closed(self):
+        failed = mock.Mock(returncode=128, stdout="", stderr="index failure")
+        with mock.patch.object(
+            batch.static_checkpoint, "run_git", return_value=failed
+        ):
+            fingerprint, detail = (
+                batch.static_checkpoint.static_input_fingerprint()
+            )
+
+        self.assertIsNone(fingerprint)
+        self.assertIn("failed", detail)
+
+    def test_static_checkpoint_end_to_end_accepts_only_audit_row_delta(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+
+            def git(*args):
+                return subprocess.run(
+                    ["git", *args],
+                    cwd=root,
+                    check=True,
+                    capture_output=True,
+                    text=True,
+                ).stdout.strip()
+
+            git("init", "-q")
+            git("config", "user.email", "checkpoint-test@example.invalid")
+            git("config", "user.name", "Checkpoint Test")
+            (root / ".gitignore").write_text(
+                "docs/audit/data/citation_graph.json\n"
+                "docs/audit/data/runner_classification.json\n"
+                "docs/audit/data/static_pipeline_checkpoint.json\n",
+                encoding="utf-8",
+            )
+            data = root / "docs" / "audit" / "data"
+            shard = data / "ledger" / "ro" / "row.json"
+            shard.parent.mkdir(parents=True)
+            before = {
+                "claim_id": "row",
+                "deps": ["dep"],
+                "runner_path": "scripts/runner.py",
+                "audit_status": "unaudited",
+            }
+            shard.write_text(json.dumps(before), encoding="utf-8")
+            git("add", ".gitignore", str(shard.relative_to(root)))
+            git("commit", "-qm", "baseline")
+
+            for name in batch.static_checkpoint.STATIC_CACHE_NAMES:
+                content = f"{{\"cache\": \"{name}\"}}\n".encode()
+                (data / name).write_bytes(content)
+            checkpoint = data / "static_pipeline_checkpoint.json"
+
+            with mock.patch.object(
+                batch.static_checkpoint, "REPO_ROOT", root
+            ), mock.patch.object(
+                batch.static_checkpoint, "DATA", data
+            ), mock.patch.object(
+                batch.static_checkpoint, "CHECKPOINT", checkpoint
+            ):
+                wrote, write_detail = (
+                    batch.static_checkpoint.write_checkpoint()
+                )
+                shard.write_text(
+                    json.dumps(dict(before, audit_status="audited_clean")),
+                    encoding="utf-8",
+                )
+                audit_ok, _ = batch.static_checkpoint.verify_checkpoint()
+                shard.write_text(
+                    json.dumps(dict(before, deps=["rewired"])),
+                    encoding="utf-8",
+                )
+                topology_ok, detail = (
+                    batch.static_checkpoint.verify_checkpoint()
+                )
+
+        self.assertTrue(wrote, write_detail)
+        self.assertTrue(audit_ok)
+        self.assertFalse(topology_ok)
+        self.assertIn("static repository inputs changed", detail)
+
+    def test_run_generated_gates_selects_verdict_only_pipeline(self):
+        completed = mock.Mock(returncode=0, stdout="", stderr="")
+        with mock.patch.object(
+            batch,
+            "verdict_only_pipeline_eligibility",
+            return_value=(True, "safe"),
+        ), mock.patch.object(batch, "changed_paths", return_value=[]), \
+             mock.patch.object(batch, "sh", return_value=completed) as sh:
+            ok, detail = batch.run_generated_gates()
+
+        self.assertTrue(ok)
+        self.assertEqual(detail, "gates passed")
+        self.assertEqual(
+            sh.call_args_list[0].args[0],
+            ["bash", str(batch.SCRIPTS / "run_pipeline.sh"), "--verdict-only"],
+        )
+
+    def test_run_generated_gates_falls_back_to_full_pipeline(self):
+        completed = mock.Mock(returncode=0, stdout="", stderr="")
+        with mock.patch.object(
+            batch,
+            "verdict_only_pipeline_eligibility",
+            return_value=(False, "source changed"),
+        ), mock.patch.object(batch, "changed_paths", return_value=[]), \
+             mock.patch.object(batch, "sh", return_value=completed) as sh:
+            ok, detail = batch.run_generated_gates()
+
+        self.assertTrue(ok)
+        self.assertEqual(detail, "gates passed")
+        self.assertEqual(
+            sh.call_args_list[0].args[0],
+            ["bash", str(batch.SCRIPTS / "run_pipeline.sh")],
+        )
+
     def test_two_seats_share_pipeline_commit_and_push(self):
         row = {"claim_id": "critical", "criticality": "critical"}
         deliveries = [
@@ -721,6 +1113,48 @@ class ClaimTransactionTest(unittest.TestCase):
         self.assertEqual(sh.call_count, 1)
         self.assertEqual([item["pass"] for item in results], [1, 2])
         self.assertEqual({item["commit"] for item in results}, {"commit"})
+
+    def test_push_race_replays_both_critical_seats_as_one_transaction(self):
+        row = {"claim_id": "critical", "criticality": "critical"}
+        deliveries = [
+            (
+                {"cid": "critical", "pass": seat, "row": row},
+                {
+                    "audit": {"verdict": "audited_clean"},
+                    "evidence_manifest": {},
+                },
+            )
+            for seat in (1, 2)
+        ]
+        commands = [
+            mock.Mock(returncode=1, stdout="", stderr="push race"),
+            mock.Mock(returncode=0, stdout="", stderr=""),
+            mock.Mock(returncode=1, stdout="", stderr="not landed"),
+            mock.Mock(returncode=0, stdout="", stderr=""),
+        ]
+        with mock.patch.object(
+            batch, "sync_origin_main", return_value=(True, "base")
+        ), mock.patch.object(
+            batch.audit_runner, "apply_one", return_value=(True, "applied")
+        ) as apply_one, mock.patch.object(
+            batch, "run_generated_gates", return_value=(True, "gated")
+        ) as gates, mock.patch.object(
+            batch,
+            "stage_and_commit",
+            side_effect=[(True, "commit-1"), (True, "commit-2")],
+        ) as commit, mock.patch.object(
+            batch, "reset_to_origin_main", return_value=(True, "reset")
+        ) as reset, mock.patch.object(
+            batch, "sh", side_effect=commands
+        ):
+            ok, results = batch.apply_claim_serialized(deliveries, retries=2)
+
+        self.assertTrue(ok)
+        self.assertEqual(apply_one.call_count, 4)
+        self.assertEqual(gates.call_count, 2)
+        self.assertEqual(commit.call_count, 2)
+        reset.assert_called_once_with()
+        self.assertEqual({item["commit"] for item in results}, {"commit-2"})
 
 
 class AutomaticPanelResumeTest(unittest.TestCase):

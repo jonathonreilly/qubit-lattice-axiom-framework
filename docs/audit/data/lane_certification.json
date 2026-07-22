@@ -1041,7 +1041,7 @@
         },
         {
           "claim_id": "gauge_vacuum_plaquette_reduction_existence_theorem_note",
-          "effective_status": "unaudited"
+          "effective_status": "audit_in_progress"
         },
         {
           "claim_id": "gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17",
@@ -2811,6 +2811,6 @@
       "uncertified_count": 645
     }
   ],
-  "repo_head": "d8db27eea82a08d1194f42a8d3081f68b766570e",
+  "repo_head": "5e636623233ad1947782fb4182d71750ddf3b593",
   "schema": "lane_certification_v2"
 }

@@ -1,0 +1,104 @@
+{
+  "status": "cycle568-parent-verified-bounded-positive-conditional",
+  "authority": "none",
+  "audit": "unset",
+  "runner_sha256": "eeb044df6b4d73ace0f707908d9101919d69df4002fdeb249f2c71d4f1735179",
+  "note_sha256": "6879e89721609e7e4673334346942d772c031871b044e1a216565f2efc89fcbb",
+  "parent_cold_transcript_sha256": "3d0110b3047e12799e6a4f2ef7fd354075c51f4e5b8cadd4583c42f67620d181",
+  "full_tests_passed": 12,
+  "full_tests_total": 12,
+  "pass": true,
+  "parent_timed_wall_seconds": 85.00,
+  "parent_maximum_RSS_bytes": 861372416,
+  "parent_process_swap_count": 0,
+  "exact_squares": {
+    "route_A_cases": 38,
+    "route_B_cases": 38,
+    "route_C_cases": 168,
+    "EG_failures": 0,
+    "inverse_failures": 0,
+    "interface_failures": 0,
+    "archive_failures": 0,
+    "mismatch_failures": 0,
+    "held_size_failures": 0
+  },
+  "route_disposition": {
+    "A": {
+      "result": "exact basis-sector orthogonal environment retention; coherent input retains every correlated sector and does not select one objective member",
+      "orthogonal_environment_Gram_residual": 0,
+      "retention_sink_banks": 4,
+      "framework_Record": false
+    },
+    "B": {
+      "result": "strongest conditional route: one supplied objective innovation token and one law token transfer into the exact Cycle552 ports with a retained correlation sink",
+      "menu_member_rows": 19,
+      "conserved_token_total": 7,
+      "ledger_failures": 0,
+      "sink_member_correlation_failures": 0,
+      "correlation_gate_deletion_bit_residual": 2,
+      "distribution_or_frequency_law": false,
+      "framework_Record": false
+    },
+    "C": {
+      "result": "fixed deterministic threshold ROM with retained unary seed and hidden label; seed, table, law source, and ontology remain supplied",
+      "unary_seed_M2": 12,
+      "seed_retained": true,
+      "threshold_table_sha256": "b72c62f2a47e436ee9b4e1785690408e7e665a18a1759c54a7fa6a985b859c64",
+      "refinement_failures": 0,
+      "frequency_bridge_claimed": false,
+      "framework_Record": false
+    }
+  },
+  "protected_commit_candidate": {
+    "exact_Cycle531_fields": 12,
+    "member_copies": 3,
+    "law_word_copies": 3,
+    "menu_program_rails": 7,
+    "second_Cycle552_recurrence_leaves_packet_unchanged": true,
+    "single_replica_fault_detected": true,
+    "formation_deletion_basis_residual": 4.242640687119285,
+    "close_deletion_basis_residual": 4.123105625617661,
+    "commit_deletion_basis_residual": 4.0,
+    "member_replica_deletion_basis_residual": 1.0,
+    "formation_close_commit_are_reversible_diagnostics": true,
+    "pointer_copying_is_Record": false,
+    "packet_is_framework_Record": false
+  },
+  "grade_firewall": {
+    "distinct_supplied_grades_produce_same_physical_output": true,
+    "algebraic_grade_selects_member": false,
+    "grade_weight_norm_diagonal_probability_sampler_ports": 0
+  },
+  "locality_and_covariance": {
+    "route_A_total_M2": 374,
+    "route_B_total_M2": 364,
+    "route_C_total_M2": 366,
+    "Cycle565_plus_route_A_product_envelope_M2": 499,
+    "Cycle565_plus_route_B_product_envelope_M2": 489,
+    "Cycle565_plus_route_C_product_envelope_M2": 491,
+    "maximum_literal_support_M2": 2,
+    "proper_cubic_frame_comparisons": 1008,
+    "all24_covariance_failures": 0,
+    "ordered_frame_products": 576,
+    "all576_role_tests": 6912,
+    "all576_group_failures": 0,
+    "combined_resource_trace_sha256": "7705a2ce37439b318d33c08095f296192d13627959e14f7f12c610a443b9b004"
+  },
+  "controls": {
+    "malformed_domain_refusals": 15,
+    "terminal_work_or_inverse_leakage_failures": 0,
+    "off_code_coercions": 0
+  },
+  "scope_boundary": {
+    "conditional_objective_member_source_constructed": true,
+    "source_ontology_or_genesis_derived": false,
+    "stochastic_renewal_derived": false,
+    "grade_to_member_coupling_constructed": false,
+    "framework_Record_admission_constructed": false,
+    "realized_history_constructed": false,
+    "Born_frequency_theorem_constructed": false,
+    "shared_substrate_obstruction": false,
+    "axiom_pressure": false,
+    "broad_no_go_gate": "FAIL / DO NOT SHIP"
+  }
+}

@@ -2008,10 +2008,6 @@
           "effective_status": "audited_conditional"
         },
         {
-          "claim_id": "record_clock_rate_normalization_gate_2026-06-06",
-          "effective_status": "audit_in_progress"
-        },
-        {
           "claim_id": "record_formation_append_consistency_sweep_2026-07-04",
           "effective_status": "meta"
         },
@@ -2764,9 +2760,9 @@
       "roots": [
         "strong_cp_theta_zero_note"
       ],
-      "uncertified_count": 634
+      "uncertified_count": 633
     }
   ],
-  "repo_head": "bf4d918c78eb412414835ed754ebabc479f76ba0",
+  "repo_head": "2513b7bb193273ebac28a46f9c891f3c4c475590",
   "schema": "lane_certification_v2"
 }

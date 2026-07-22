@@ -1,0 +1,1043 @@
+{
+  "HEAD": "04dcdaf8df353cc327456612311e2fb8ae0e8820",
+  "audit": "unset",
+  "authority": "none",
+  "constitutional_effect": "none",
+  "elapsed_seconds": 8.908353459089994,
+  "highest_honest_terminal": "exact finite-volume L3/L6 N<=3 enforcement by bounded Z1297 Gauss checks and local current-coupled flux dynamics, composed with the Cycle590 physical compiler; the modulus is held-capacity-selected, the cubic-fixed root/background and gauge-state preparation are supplied, L7 aliases, and arbitrary size/N4 dynamics remain open",
+  "maturity": {
+    "Born_probability_repo_strict": [
+      4.2,
+      3.65
+    ],
+    "causal_time_repo_strict": [
+      3.95,
+      3.8
+    ],
+    "gravity_source_repo_strict": [
+      4.1,
+      3.85
+    ],
+    "inertia_matter_repo_strict": [
+      4.9,
+      4.93
+    ],
+    "operational_quantum_records_repo_strict": [
+      4.8,
+      4.65
+    ]
+  },
+  "maximum_RSS_bytes": 125698048,
+  "no_go_discipline": {
+    "N1_attempted_families": 4,
+    "N1_negative_gate_pass": false,
+    "N1_normalized_approach_families": [
+      {
+        "disposition": "positive on L3/L6 with root, k=1297, and preparation supplies; L7 alias",
+        "family": "finite-group Gauss/flux with capacity reservoir",
+        "marker": "ATTEMPTED",
+        "object_mechanism_obligation": "Z_k oriented links / telescoping modular Gauss law / prove finite-volume exact N<=3 and every-word local dynamics"
+      },
+      {
+        "disposition": "static solutions exist; the tested finite integer alphabet is not recurrent under unbounded winding",
+        "family": "exact-integer or rotor Gauss flux",
+        "marker": "ATTEMPTED",
+        "object_mechanism_obligation": "integer/rotor links / exact divergence / close repeated periodic winding with finite physical M2"
+      },
+      {
+        "disposition": "local co-hop positive; remote duplicate species and quantum-label lift remain",
+        "family": "three mobile worldline-token species",
+        "marker": "ATTEMPTED",
+        "object_mechanism_obligation": "bound token fields / conserved species / enforce one global token of each species locally and lift the quantum coin"
+      },
+      {
+        "disposition": "exact flagger; unique head/order supplied and invalid blank word locally admissible before scan",
+        "family": "time-multiplexed saturation verifier",
+        "marker": "ATTEMPTED",
+        "object_mechanism_obligation": "carried counter/head / reversible prefix accumulation / turn final flag into phase-independent static enforcement"
+      },
+      {
+        "disposition": "concrete live route; not ruled out",
+        "family": "translation-invariant hierarchical tiling counter",
+        "marker": "UNTESTED",
+        "object_mechanism_obligation": "self-similar coordinate tiles / distributed prefix invariant / remove unique reset and preferred chart on a torus"
+      },
+      {
+        "disposition": "concrete live route; not ruled out",
+        "family": "open-boundary or mobile anti-charge reservoir",
+        "marker": "UNTESTED",
+        "object_mechanism_obligation": "three physical anti-charges / exact neutral Gauss law / obtain periodic proper-cubic domain without a fixed root"
+      },
+      {
+        "disposition": "concrete live route; not ruled out",
+        "family": "topological one-loop capacity sectors",
+        "marker": "UNTESTED",
+        "object_mechanism_obligation": "higher-form flux loops / topological conservation / enforce at most three loops without a supplied sector"
+      }
+    ],
+    "N1_required_before_negative": 5,
+    "N2_collapsed_wall_count": 6,
+    "N2_directional_wall_pairs": [
+      {
+        "first": "held-capacity modulus",
+        "first_closes_second": false,
+        "first_to_second": "choose k above declared finite Pauli capacity does not supply three local spectator charges and fixed -3 reference",
+        "independent": true,
+        "second": "cubic-fixed root/background",
+        "second_closes_first": false,
+        "second_to_first": "three local spectator charges and fixed -3 reference does not supply choose k above declared finite Pauli capacity"
+      },
+      {
+        "first": "held-capacity modulus",
+        "first_closes_second": false,
+        "first_to_second": "choose k above declared finite Pauli capacity does not supply prepare a locally constrained flux fiber or its uniform state",
+        "independent": true,
+        "second": "gauge-code preparation",
+        "second_closes_first": false,
+        "second_to_first": "prepare a locally constrained flux fiber or its uniform state does not supply choose k above declared finite Pauli capacity"
+      },
+      {
+        "first": "held-capacity modulus",
+        "first_closes_second": false,
+        "first_to_second": "choose k above declared finite Pauli capacity does not supply scale the modulus or replace modular charge",
+        "independent": true,
+        "second": "arbitrary-size alias removal",
+        "second_closes_first": false,
+        "second_to_first": "scale the modulus or replace modular charge does not supply choose k above declared finite Pauli capacity"
+      },
+      {
+        "first": "held-capacity modulus",
+        "first_closes_second": false,
+        "first_to_second": "choose k above declared finite Pauli capacity does not supply enforce unique species and indistinguishable coherent coin action",
+        "independent": true,
+        "second": "token genesis/quantum lift",
+        "second_closes_first": false,
+        "second_to_first": "enforce unique species and indistinguishable coherent coin action does not supply choose k above declared finite Pauli capacity"
+      },
+      {
+        "first": "held-capacity modulus",
+        "first_closes_second": false,
+        "first_to_second": "choose k above declared finite Pauli capacity does not supply locally generate one head/chart and make flag phase-independent",
+        "independent": true,
+        "second": "verifier head/order/static admission",
+        "second_closes_first": false,
+        "second_to_first": "locally generate one head/chart and make flag phase-independent does not supply choose k above declared finite Pauli capacity"
+      },
+      {
+        "first": "cubic-fixed root/background",
+        "first_closes_second": false,
+        "first_to_second": "three local spectator charges and fixed -3 reference does not supply prepare a locally constrained flux fiber or its uniform state",
+        "independent": true,
+        "second": "gauge-code preparation",
+        "second_closes_first": false,
+        "second_to_first": "prepare a locally constrained flux fiber or its uniform state does not supply three local spectator charges and fixed -3 reference"
+      },
+      {
+        "first": "cubic-fixed root/background",
+        "first_closes_second": false,
+        "first_to_second": "three local spectator charges and fixed -3 reference does not supply scale the modulus or replace modular charge",
+        "independent": true,
+        "second": "arbitrary-size alias removal",
+        "second_closes_first": false,
+        "second_to_first": "scale the modulus or replace modular charge does not supply three local spectator charges and fixed -3 reference"
+      },
+      {
+        "first": "cubic-fixed root/background",
+        "first_closes_second": false,
+        "first_to_second": "three local spectator charges and fixed -3 reference does not supply enforce unique species and indistinguishable coherent coin action",
+        "independent": true,
+        "second": "token genesis/quantum lift",
+        "second_closes_first": false,
+        "second_to_first": "enforce unique species and indistinguishable coherent coin action does not supply three local spectator charges and fixed -3 reference"
+      },
+      {
+        "first": "cubic-fixed root/background",
+        "first_closes_second": false,
+        "first_to_second": "three local spectator charges and fixed -3 reference does not supply locally generate one head/chart and make flag phase-independent",
+        "independent": true,
+        "second": "verifier head/order/static admission",
+        "second_closes_first": false,
+        "second_to_first": "locally generate one head/chart and make flag phase-independent does not supply three local spectator charges and fixed -3 reference"
+      },
+      {
+        "first": "gauge-code preparation",
+        "first_closes_second": false,
+        "first_to_second": "prepare a locally constrained flux fiber or its uniform state does not supply scale the modulus or replace modular charge",
+        "independent": true,
+        "second": "arbitrary-size alias removal",
+        "second_closes_first": false,
+        "second_to_first": "scale the modulus or replace modular charge does not supply prepare a locally constrained flux fiber or its uniform state"
+      },
+      {
+        "first": "gauge-code preparation",
+        "first_closes_second": false,
+        "first_to_second": "prepare a locally constrained flux fiber or its uniform state does not supply enforce unique species and indistinguishable coherent coin action",
+        "independent": true,
+        "second": "token genesis/quantum lift",
+        "second_closes_first": false,
+        "second_to_first": "enforce unique species and indistinguishable coherent coin action does not supply prepare a locally constrained flux fiber or its uniform state"
+      },
+      {
+        "first": "gauge-code preparation",
+        "first_closes_second": false,
+        "first_to_second": "prepare a locally constrained flux fiber or its uniform state does not supply locally generate one head/chart and make flag phase-independent",
+        "independent": true,
+        "second": "verifier head/order/static admission",
+        "second_closes_first": false,
+        "second_to_first": "locally generate one head/chart and make flag phase-independent does not supply prepare a locally constrained flux fiber or its uniform state"
+      },
+      {
+        "first": "arbitrary-size alias removal",
+        "first_closes_second": false,
+        "first_to_second": "scale the modulus or replace modular charge does not supply enforce unique species and indistinguishable coherent coin action",
+        "independent": true,
+        "second": "token genesis/quantum lift",
+        "second_closes_first": false,
+        "second_to_first": "enforce unique species and indistinguishable coherent coin action does not supply scale the modulus or replace modular charge"
+      },
+      {
+        "first": "arbitrary-size alias removal",
+        "first_closes_second": false,
+        "first_to_second": "scale the modulus or replace modular charge does not supply locally generate one head/chart and make flag phase-independent",
+        "independent": true,
+        "second": "verifier head/order/static admission",
+        "second_closes_first": false,
+        "second_to_first": "locally generate one head/chart and make flag phase-independent does not supply scale the modulus or replace modular charge"
+      },
+      {
+        "first": "token genesis/quantum lift",
+        "first_closes_second": false,
+        "first_to_second": "enforce unique species and indistinguishable coherent coin action does not supply locally generate one head/chart and make flag phase-independent",
+        "independent": true,
+        "second": "verifier head/order/static admission",
+        "second_closes_first": false,
+        "second_to_first": "locally generate one head/chart and make flag phase-independent does not supply enforce unique species and indistinguishable coherent coin action"
+      }
+    ],
+    "N3_hidden_condition_scan": {
+      "counter head/path/frame": "explicit schedule and blank-resource supplies",
+      "modulus/volume": "explicit k=1297 chosen from L6 maximum 1296",
+      "root/background": "explicit supplied finite-volume capacity reference",
+      "token genesis": "explicit global one-per-species supply",
+      "uncited_standard_or_obvious_hits": 0,
+      "uniform gauge fiber": "exact intertwiner device; physical preparation supplied"
+    },
+    "N4_residual_matching": [
+      {
+        "current_residual": "finite L3/L6 N<=3 local enforcement",
+        "match": true,
+        "witness": "Cycle590 accepted note/receipt",
+        "witness_residual": "global N<=3 cutoff supplied, not locally enforced"
+      },
+      {
+        "current_residual": "global-number enforcement",
+        "match": false,
+        "use": "positive inherited compiler only, not obstruction witness",
+        "witness": "Cycle563 selected-factor order retirement",
+        "witness_residual": "runtime fermion-factor order/parity service"
+      },
+      {
+        "current_residual": "finite total-number capacity",
+        "match": false,
+        "use": "cross-cycle constructive analogy only",
+        "witness": "Cycles236/242 local Gauss and decoder probes",
+        "witness_residual": "local CAR strings/syndrome completion"
+      }
+    ],
+    "N5_rhetoric_resolution": [
+      "tested: this finite Z1297 lift aliases at L7; not asserted for every finite-group gauge code",
+      "tested: Route-B co-location checks admit one remote duplicate N4 word; not asserted for every token code",
+      "tested: Route-C blank N4 word is locally admissible before this scan; not asserted for every autonomous verifier",
+      "tested: finite exact-integer link alphabet accumulates harmonic winding in this lift; infinite rotors remain open"
+    ],
+    "N6_partial_closure_paths": [
+      "use k(L)>6L^3 as an explicit finite-volume family and audit scale-dependent resource",
+      "replace fixed root by three mobile anti-charges with locally conserved genesis",
+      "construct a local dissipative or Hamiltonian gauge-state preparation without identifying it with enforcement",
+      "develop hierarchical reset-free tilings or higher-form capacity sectors"
+    ],
+    "N7_hostile_steelman": "A hostile reviewer should reject a broad locality obstruction immediately: Route A already supplies an exact finite-volume counterexample. Moreover, a family k(L)>6L^3, three mobile anti-charges replacing the root, and a local gauge-cooling preparation gives a concrete route toward larger volumes. The terminal obligations are size-uniform overhead, root-free covariance, and autonomous preparation\u2014not a new axiom.",
+    "N8_cross_cycle_echo": "Cycles560/563 converted global decoder/order descriptions into bounded local tables and transported colors; Cycle590 then domain-matched the dimer.  Cycle593 applies the same import-bound-retire pattern to the number cutoff, so today's root/modulus/preparation supplies are next constructive audits, not constitutional evidence.",
+    "axiom_pressure": false,
+    "minimum_content_claim_shipped": false,
+    "negative_claim_shipped": false,
+    "pass_for_withholding_negative": true,
+    "shared_obstruction": false,
+    "skill_freshness": {
+      "local_skill_sha256": "aeac7b2b7df30c350961f4b36b980a91e9c2ebeca3f35b6c1adcd731071bdab5",
+      "newer_origin_main_version_followed": true,
+      "origin_main_checked": true,
+      "origin_main_skill_sha256": "7d1aea8243ddd972331b935e2e836657e72115da3efe259f828fe862469d68b7"
+    }
+  },
+  "note_sha256": "39c5381f0fde2cdc86419dae68f4c5b4c3014be9d5f1dd002a6370c104af0f52",
+  "optimal_next_campaign": "replace the cubic-fixed root/background with three locally generated mobile anti-charges and construct autonomous uniform-gauge-fiber preparation, then test a size-indexed k(L)>6L^3 family without conflating it with complete N4 interactions",
+  "pass": true,
+  "pins": {
+    "docs/work_history/repo/review_feedback/PHYSICAL_FULL_TORUS_DIMER_M2_COMPILER_TOURNAMENT_CYCLE590_NOTE_2026-07-22.md": "3ee6ba9bd5a01a5cab88832788156597a1491d7c2d47f9378caca624a35a1936",
+    "outputs/physical_full_torus_dimer_M2_compiler_tournament_cycle590_receipt_2026_07_22.json": "ebc13a522e439e2a1618421773751c096b210cc4be25476511dead5a6ea241f7",
+    "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py": "ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a",
+    "scripts/physical_enlarged_link_contact_work_tournament_cycle569_2026_07_22.py": "c0f06a9cc9ffc4dcfe1d80b94da10bbef81ca1c74fddddac48712b0a7c332ced",
+    "scripts/physical_full_torus_dimer_M2_compiler_tournament_cycle590_2026_07_22.py": "5fbf3bcecc54df9912f9b79d2e5c45d51f145279c1ed83f507bc24e9e1980029",
+    "scripts/physical_global_N3_returned_slot_compiler_cycle560_2026_07_21.py": "30dc85fd6a1f328bdd095d41d2a3ddb6d1fd71eb4298b34bc635e3ea530a3764",
+    "scripts/physical_held_sparse_order_retirement_cycle563_2026_07_21.py": "444a5c0fb3cb1758236ddefaeb472d0002cadb256d3c4df723fd562129c7325b",
+    "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py": "b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae"
+  },
+  "route_A_finite_volume_modular_Gauss": {
+    "L7_alias_failure": true,
+    "all24_covariance_failures": 0,
+    "all576_group_failures": 0,
+    "arbitrary_size_closure": false,
+    "arithmetic_rows": [
+      {
+        "N_plus_S_range": [
+          0,
+          165
+        ],
+        "accepted_N_S_pairs": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            0
+          ]
+        ],
+        "exact_N_le_3": true,
+        "length": 3,
+        "matter_capacity": 162
+      },
+      {
+        "N_plus_S_range": [
+          0,
+          1299
+        ],
+        "accepted_N_S_pairs": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            0
+          ]
+        ],
+        "exact_N_le_3": true,
+        "length": 6,
+        "matter_capacity": 1296
+      },
+      {
+        "N_plus_S_range": [
+          0,
+          2061
+        ],
+        "accepted_N_S_pairs": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            1297,
+            3
+          ],
+          [
+            1298,
+            2
+          ],
+          [
+            1299,
+            1
+          ],
+          [
+            1300,
+            0
+          ]
+        ],
+        "exact_N_le_3": false,
+        "length": 7,
+        "matter_capacity": 2058
+      }
+    ],
+    "constraints": {
+      "Gauss_check_support": "six incident 11-M2 link words + six matter occupation M2; root also sees three spectator M2",
+      "commuting_dimensionless_check_projectors": [
+        "one Gauss residue-zero projector per cell",
+        "one valid-label projector per 11-M2 oriented link word",
+        "one four-word prefix projector on the three root spectator M2"
+      ],
+      "invalid_11_M2_link_labels_rejected": 751,
+      "invalid_label_interval": [
+        1297,
+        2047
+      ],
+      "local_stream_flux_update_support_M2": 13,
+      "maximum_Gauss_check_support_M2": 75,
+      "penalty_coefficient_and_empirical_interpretation_supplied": true,
+      "root_background_charge": -3,
+      "root_prefix_valid_words": [
+        "000",
+        "100",
+        "110",
+        "111"
+      ]
+    },
+    "exact_integer_winding_audit": {
+      "Z1297_link_alphabet_recurrent": true,
+      "finite_exact_integer_link_alphabet_recurrent": false,
+      "harmonic_flux_magnitude_after_windings": 10,
+      "interpretation": "the finite modular lift closes repeated torus winding; it is not an arbitrary-volume exact-integer rotor",
+      "one_particle_x_windings": 10
+    },
+    "exact_intertwiner": {
+      "complete_N4_dynamics_supplied_or_claimed": false,
+      "enlarged_gauge_code_every_word_EG_residual": 0,
+      "every_word_reason": "onsite coin/contact preserve cell charge; each basis stream word updates its crossed links by local signed current; linearity covers every gauge-code superposition",
+      "gauge_code_preparation_supplied": true,
+      "held_packet_update_residual": 6.36135076417095e-14,
+      "inherited_Cycle590_physical_EG_residual": 0,
+      "matter_only_uniform_flux_fiber_EG_residual": 0,
+      "uniform_fiber_reason": "signed-current translation is a bijection between equal-cardinality flux-solution fibers, so normalized uniform fibers map exactly without a tree or order"
+    },
+    "fixed_background_deletion_signal": 1,
+    "frame_products": 576,
+    "layouts": [
+      {
+        "average_extended_M2_per_cell": 86.11111111111111,
+        "cells": 27,
+        "extended_live_M2": 2325,
+        "fine_lattice_modulus": 48,
+        "frame_group_failures": 0,
+        "frame_products": 576,
+        "inherited_Cycle590_M2": 1431,
+        "inherited_M2_per_cell": 53.0,
+        "length": 3,
+        "mapped_wire_injection_failures": 0,
+        "maximum_new_role_radius_fine_L1": 4,
+        "new_flux_M2": 891,
+        "new_root_spectator_M2": 3,
+        "pass": true,
+        "proper_cubic_frames": 24,
+        "runtime_frame_query": false,
+        "transport_policy": "rotate the base local role layout and oriented-link values as one compile-time frame family"
+      },
+      {
+        "average_extended_M2_per_cell": 86.01388888888889,
+        "cells": 216,
+        "extended_live_M2": 18579,
+        "fine_lattice_modulus": 96,
+        "frame_group_failures": 0,
+        "frame_products": 576,
+        "inherited_Cycle590_M2": 11448,
+        "inherited_M2_per_cell": 53.0,
+        "length": 6,
+        "mapped_wire_injection_failures": 0,
+        "maximum_new_role_radius_fine_L1": 4,
+        "new_flux_M2": 7128,
+        "new_root_spectator_M2": 3,
+        "pass": true,
+        "proper_cubic_frames": 24,
+        "runtime_frame_query": false,
+        "transport_policy": "rotate the base local role layout and oriented-link values as one compile-time frame family"
+      }
+    ],
+    "link_update_deletion_Gauss_violations": 2,
+    "local_modular_update_inverse_failures": 0,
+    "maximum_all24_rotated_Gauss_residual": 0,
+    "maximum_all24_update_covariance_residual": 0,
+    "missing_root_check_admits_N4": true,
+    "modulus_selected_from_held_L6_Pauli_capacity": true,
+    "pass": true,
+    "prime_modulus": true,
+    "proper_cubic_frames": 24,
+    "runtime_global_order_parity_or_count_service": false,
+    "sample_rows": [
+      {
+        "length": 3,
+        "maximum_Gauss_residual": 0,
+        "maximum_stream_inverse_residual": 0,
+        "sampled_lawful_configurations": 20,
+        "split": "train"
+      },
+      {
+        "length": 6,
+        "maximum_Gauss_residual": 0,
+        "maximum_stream_inverse_residual": 0,
+        "sampled_lawful_configurations": 20,
+        "split": "held"
+      }
+    ],
+    "selected_modulus": 1297,
+    "small_Z4_aliases": [
+      [
+        4,
+        3
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        6,
+        1
+      ],
+      [
+        7,
+        0
+      ],
+      [
+        8,
+        3
+      ]
+    ],
+    "status": "positive finite-volume local enforcement with named root/capacity/preparation supplies",
+    "supplied_root_background": true,
+    "three_root_spectator_deletion_signals": [
+      1,
+      1,
+      1
+    ],
+    "uniform_flux_fibers": [
+      {
+        "flux_solution_count": "1297^55",
+        "flux_solution_count_exponent": 55,
+        "incidence_rank_over_Z1297": 26,
+        "independent_of_lawful_charge_word": true,
+        "length": 3,
+        "log10_flux_solution_count": 171.2116986846244
+      },
+      {
+        "flux_solution_count": "1297^433",
+        "flux_solution_count_exponent": 433,
+        "incidence_rank_over_Z1297": 215,
+        "independent_of_lawful_charge_word": true,
+        "length": 6,
+        "log10_flux_solution_count": 1347.9030096444067
+      }
+    ]
+  },
+  "route_B_mobile_token_species": {
+    "full_quantum_coin_and_fermionic_exchange_lift_certified": false,
+    "held_average_M2_per_cell": 71.01388888888889,
+    "held_extended_live_M2": 15339,
+    "local_cohop_support_M2": 4,
+    "pass_as_route_audit": true,
+    "pass_as_target_enforcement": false,
+    "persistent_token_M2_per_cell": 18,
+    "preparation_distinct_from_enforcement": true,
+    "proper_cubic_frames": 24,
+    "remote_duplicate_species_N4_rejected": false,
+    "root_reservoir_M2": 3,
+    "rows": [
+      {
+        "all24_local_check_covariance_failures": 0,
+        "cohop_inverse_residual": 0,
+        "cohop_local_checks": {
+          "matter_token_co_location_mismatches": 0,
+          "multiple_species_same_mode_collisions": 0,
+          "pass": true
+        },
+        "deleted_token_hop_local_mismatches": 2,
+        "lawful_global_species_counts": [
+          1,
+          1,
+          1
+        ],
+        "lawful_local_checks": {
+          "matter_token_co_location_mismatches": 0,
+          "multiple_species_same_mode_collisions": 0,
+          "pass": true
+        },
+        "length": 3,
+        "remote_duplicate_species_N4_global_counts": [
+          2,
+          1,
+          1
+        ],
+        "remote_duplicate_species_N4_local_checks": {
+          "matter_token_co_location_mismatches": 0,
+          "multiple_species_same_mode_collisions": 0,
+          "pass": true
+        },
+        "remote_duplicate_species_N4_passes_every_bounded_colocation_check": true,
+        "split": "train"
+      },
+      {
+        "all24_local_check_covariance_failures": 0,
+        "cohop_inverse_residual": 0,
+        "cohop_local_checks": {
+          "matter_token_co_location_mismatches": 0,
+          "multiple_species_same_mode_collisions": 0,
+          "pass": true
+        },
+        "deleted_token_hop_local_mismatches": 2,
+        "lawful_global_species_counts": [
+          1,
+          1,
+          1
+        ],
+        "lawful_local_checks": {
+          "matter_token_co_location_mismatches": 0,
+          "multiple_species_same_mode_collisions": 0,
+          "pass": true
+        },
+        "length": 6,
+        "remote_duplicate_species_N4_global_counts": [
+          2,
+          1,
+          1
+        ],
+        "remote_duplicate_species_N4_local_checks": {
+          "matter_token_co_location_mismatches": 0,
+          "multiple_species_same_mode_collisions": 0,
+          "pass": true
+        },
+        "remote_duplicate_species_N4_passes_every_bounded_colocation_check": true,
+        "split": "held"
+      }
+    ],
+    "status": "positive conserved co-hop relative to supplied one-token-per-species sector; not local cutoff enforcement",
+    "unique_token_genesis_locally_enforced": false
+  },
+  "route_C_time_multiplexed_counter": {
+    "all576_group_failures": 0,
+    "blank_invalid_N4_is_locally_admissible_before_scan": true,
+    "counter_modulus": 2048,
+    "counter_track_M2_per_cell": 11,
+    "counter_word_M2": 11,
+    "flag_is_static_constraint_enforcement": false,
+    "frame_products": 576,
+    "head_M2_per_cell": 1,
+    "held_average_M2_per_cell": 65.00462962962963,
+    "held_extended_live_M2": 14041,
+    "local_add_inverse_failures": 0,
+    "local_add_support_M2": 17,
+    "pass_as_route_audit": true,
+    "pass_as_target_enforcement": false,
+    "preferred_snake_and_frame_transport_supplied": true,
+    "proper_cubic_frames": 24,
+    "rows": [
+      {
+        "all24_rows": [
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 27,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 27,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 27,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 27,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 27,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 27,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 27,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 27,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 27,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 27,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 27,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 27,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 27,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 27,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 27,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 27,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 27,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 27,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 27,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 27,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 27,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 27,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 27,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 27,
+            "overflow_flag": 1
+          }
+        ],
+        "cells_scanned": 27,
+        "coverage_failures": 0,
+        "delete_one_occupied_cell_addition": {
+          "counted_number": 3,
+          "forward_trace_sha256": "10050bd71fc6e7f302604431ab1204e9c6f6dfcdd0516d4afc482f1984f72ece",
+          "overflow_flag": 0,
+          "restored_counter": 0
+        },
+        "lawful_N3": {
+          "counted_number": 3,
+          "forward_trace_sha256": "10050bd71fc6e7f302604431ab1204e9c6f6dfcdd0516d4afc482f1984f72ece",
+          "overflow_flag": 0,
+          "restored_counter": 0
+        },
+        "length": 3,
+        "malformed_nonblank_initial_counter": {
+          "counted_number": 4,
+          "forward_trace_sha256": "0a8e2637974fb7c444b9e9ad358b828fccfc282482e00ea777ab9bb2c5219479",
+          "overflow_flag": 1,
+          "restored_counter": 1
+        },
+        "nearest_neighbour_path_failures": 0,
+        "overflow_N4": {
+          "counted_number": 4,
+          "forward_trace_sha256": "85c10457b0a0e88b34da831d4cfb47678f6081d47ed9d4c6ed09d3b2a3a13cec",
+          "overflow_flag": 1,
+          "restored_counter": 0
+        },
+        "schedule_calls_called_physical_time": false,
+        "split": "train",
+        "stroboscopic_schedule_calls": 55
+      },
+      {
+        "all24_rows": [
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 216,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 216,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 216,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 216,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 216,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 216,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 216,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 216,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 216,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 216,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 216,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 216,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 216,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 216,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 216,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 216,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 216,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 216,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 216,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 216,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 216,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 216,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 216,
+            "overflow_flag": 1
+          },
+          {
+            "NN_failures": 0,
+            "counted_number": 4,
+            "coverage": 216,
+            "overflow_flag": 1
+          }
+        ],
+        "cells_scanned": 216,
+        "coverage_failures": 0,
+        "delete_one_occupied_cell_addition": {
+          "counted_number": 3,
+          "forward_trace_sha256": "16bf86ae7aef13723c22adc73a7a30664bbc40d50fd3c725d51ef47245d819d5",
+          "overflow_flag": 0,
+          "restored_counter": 0
+        },
+        "lawful_N3": {
+          "counted_number": 3,
+          "forward_trace_sha256": "16bf86ae7aef13723c22adc73a7a30664bbc40d50fd3c725d51ef47245d819d5",
+          "overflow_flag": 0,
+          "restored_counter": 0
+        },
+        "length": 6,
+        "malformed_nonblank_initial_counter": {
+          "counted_number": 4,
+          "forward_trace_sha256": "e5194bf251bca8d6b96a095f609487ff27d0bc59099c11e87866733c0e54eceb",
+          "overflow_flag": 1,
+          "restored_counter": 1
+        },
+        "nearest_neighbour_path_failures": 0,
+        "overflow_N4": {
+          "counted_number": 4,
+          "forward_trace_sha256": "bf901fc57636d14fa253c49cd0ee31472012d40bc2b7ab9f061f84fc09593399",
+          "overflow_flag": 1,
+          "restored_counter": 0
+        },
+        "schedule_calls_called_physical_time": false,
+        "split": "held",
+        "stroboscopic_schedule_calls": 433
+      }
+    ],
+    "runtime_global_count_service_retired": false,
+    "status": "exact local reversible overflow flagger; not static local enforcement",
+    "unique_head_and_blank_counter_locally_enforced": false
+  },
+  "runner_sha256": "a9208a889273eb1a2704190d2c14db5fffb5c70b0e06adb54bd8d08e333fcfba",
+  "shore": {
+    "Cycle590": {
+      "accepted_current_note_sha256": "3ee6ba9bd5a01a5cab88832788156597a1491d7c2d47f9378caca624a35a1936",
+      "accepted_post_run_note_clarification": true,
+      "compiler_M2_per_cell": 53.0,
+      "compiler_live_M2": 11448,
+      "exact_EG_residual": 0,
+      "global_cutoff_locally_enforced": false,
+      "held_packet_all24_residual": 1.926558180433186e-16,
+      "held_packet_update_residual": 6.36135076417095e-14,
+      "pass": true,
+      "receipt_pre_clarification_note_sha256": "0bbee94bf3fcc70cee7c234d678fad3ba369810b461e73c93744fa92dc4adf33",
+      "tests_passed": 7
+    },
+    "fixtures": {
+      "Cycle230_contact_factorization_residual": 2.149937642474629e-15,
+      "Cycle230_seam_braid_residual": 0,
+      "one_particle_mass_residual": 8.7159799596118e-16
+    }
+  },
+  "six_wall_ledger": {
+    "C_int": "Cycle590 mass/contact/seam and N2 update square are preserved by the number-conserving gauge lift",
+    "C_local": "major movement: finite L3/L6 global N<=3 promise is replaced by bounded local checks and link updates; gauge-state preparation remains supplied",
+    "C_num": "local modular Gauss arithmetic enforces N+S=3 exactly within held capacity; empirical units and arbitrary-size modulus family remain open",
+    "C_ref": "three cubic-fixed root capacity bits and background -3 replace the silent cutoff reference on L3/L6; root-free realization remains open",
+    "C_source": "fixed background -3 is capacity bookkeeping, not empirical energy, stress, source, or gravity",
+    "C_wrap": "Z1297 closes repeated torus winding at held size; exact-integer winding grows and L7 modular aliases reopen"
+  },
+  "status": "cycle593-finite-volume-local-cutoff-gauge-enforcement",
+  "tests_failed": 0,
+  "tests_passed": 7
+}

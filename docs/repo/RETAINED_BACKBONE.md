@@ -17,7 +17,7 @@ file per claim), summarized in
 | Metric | Value |
 |---|---:|
 | Retained positive rows | 92 |
-| Retained bounded rows | 312 |
+| Retained bounded rows | 313 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 17 |
 
@@ -41,12 +41,12 @@ Sorted by load-bearing graph score (descending).
 - [`s3_taste_cube_decomposition_note`](../../docs/S3_TASTE_CUBE_DECOMPOSITION_NOTE.md) — score 19.003; audited 2026-05-23T14:10:38.971653+00:00
 - [`fermion_parity_z2_grading_theorem_note_2026-05-02`](../../docs/FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md) — score 18.669; audited 2026-07-21T18:58:15.506988+00:00
 - [`ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26`](../../docs/EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md) — score 18.549; audited 2026-07-21T18:00:53.377100+00:00
+- [`hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10`](../../docs/HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md) — score 17.895; audited 2026-07-18T03:11:38.381968+00:00
 - [`gauge_scalar_temporal_completion_theorem_note`](../../docs/GAUGE_SCALAR_TEMPORAL_COMPLETION_THEOREM_NOTE.md) — score 17.733; audited 2026-05-23T13:36:42.061961+00:00
 - [`naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10`](../../docs/NAIVE_LATTICE_FERMION_TWO_POWER_D_SPECIES_COUNT_NARROW_THEOREM_NOTE_2026-05-10.md) — score 16.212; audited 2026-05-22T16:13:26.228372+00:00
 - [`taste_scalar_isotropy_theorem_note`](../../docs/TASTE_SCALAR_ISOTROPY_THEOREM_NOTE.md) — score 15.723; audited 2026-05-05T09:07:06.655756+00:00
 - [`staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17`](../../docs/STAGGERED_DIRAC_SUBSTEP4_AC_LAMBDA_SIMULTANEOUS_DIAGONALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md) — score 15.320; audited 2026-07-21T00:11:34.230442+00:00
 - [`reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10`](../../docs/REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md) — score 15.218; audited 2026-05-29T01:07:36.331883+00:00
-- [`hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10`](../../docs/HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md) — score 14.895; audited 2026-07-18T03:11:38.381968+00:00
 - [`koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18`](../../docs/KOIDE_GAMMA_AXIS_COVARIANT_FULL_CUBE_ORBIT_LAW_NOTE_2026-04-18.md) — score 14.281; audited 2026-05-10T14:44:09.593722+00:00
 - [`cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10`](../../docs/CUBIC_COXETER_REGGE_DEFICIT_VANISHING_NARROW_THEOREM_NOTE_2026-05-10.md) — score 14.018; audited 2026-05-22T03:13:54.866266+00:00
 - [`gauge_vacuum_plaquette_connected_hierarchy_theorem_note`](../../docs/GAUGE_VACUUM_PLAQUETTE_CONNECTED_HIERARCHY_THEOREM_NOTE.md) — score 13.760; audited 2026-07-22T19:33:03.603578+00:00
@@ -118,7 +118,7 @@ Sorted by load-bearing graph score (descending).
 - [`replay_environment_note`](../../docs/REPLAY_ENVIRONMENT_NOTE.md) — score 0.000; audited 2026-05-01T23:28:33.389906+00:00
 - [`staggered_graph_portability_stress_note`](../../docs/STAGGERED_GRAPH_PORTABILITY_STRESS_NOTE.md) — score 0.000; audited 2026-05-05T11:44:13.477263+00:00
 
-## Retained bounded rows (312)
+## Retained bounded rows (313)
 
 Sorted by load-bearing graph score (descending).
 
@@ -145,6 +145,7 @@ Sorted by load-bearing graph score (descending).
 - [`causal_propagating_field_live_packet_note_2026-06-05`](../../docs/CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md) — score 11.615; audited 2026-06-21T05:47:30.165796+00:00
 - [`pmns_oriented_cycle_selection_structure_note`](../../docs/PMNS_ORIENTED_CYCLE_SELECTION_STRUCTURE_NOTE.md) — score 11.587; audited 2026-07-11T18:19:30.117160+00:00
 - [`physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30`](../../docs/PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md) — score 11.547; audited 2026-07-11T18:19:42.644325+00:00
+- [`koide_moment_ratio_uniformity_theorem_note_2026-04-19`](../../docs/KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md) — score 11.496; audited 2026-07-22T19:51:35.649534+00:00
 - [`wave_equation_gravity_note`](../../docs/WAVE_EQUATION_GRAVITY_NOTE.md) — score 11.490; audited 2026-05-05T11:29:56.869099+00:00
 - [`staggered_os0_supplied_action_ks_blocking_four_taste_module_narrow_theorem_note_2026-07-11`](../../docs/STAGGERED_OS0_SUPPLIED_ACTION_KS_BLOCKING_FOUR_TASTE_MODULE_NARROW_THEOREM_NOTE_2026-07-11.md) — score 11.203; audited 2026-07-18T01:33:18.664218+00:00
 - [`lattice_nn_continuum_note`](../../docs/LATTICE_NN_CONTINUUM_NOTE.md) — score 11.200; audited 2026-05-07T02:02:43.497032+00:00

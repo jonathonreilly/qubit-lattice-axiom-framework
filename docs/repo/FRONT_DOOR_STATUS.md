@@ -32,11 +32,11 @@ Owner-approval history for axioms and primitives:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3852 |
-| Applied audit verdicts | 516 |
-| Retained-grade rows, including boxed decorations | 421 |
+| Applied audit verdicts | 517 |
+| Retained-grade rows, including boxed decorations | 422 |
 | Retained positive theorems | 92 |
 | Retained no-go rows | 0 |
-| Retained bounded rows | 312 |
+| Retained bounded rows | 313 |
 | Boxed decorations under retained parents | 17 |
 | Open gates | 2 |
 | Unaudited rows | 2971 |
@@ -54,10 +54,10 @@ Full audit-ratified row list: [`docs/repo/RETAINED_BACKBONE.md`](RETAINED_BACKBO
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 3046 |
-| Ready rows | 636 |
+| Total pending rows | 3045 |
+| Ready rows | 635 |
 | Cycle-break targets | 59 |
-| Critical pending | 646 |
+| Critical pending | 645 |
 | High pending | 372 |
 | Medium pending | 839 |
 | Leaf pending | 1189 |
@@ -110,7 +110,7 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 | Lane rows already in actual ready top-10 | 3 |
 | Lane rows added since prior pass | 0 |
 | Lane rows removed since prior pass | 5 |
-| Non-lane rows deferred by simulated interleave | 115 |
+| Non-lane rows deferred by simulated interleave | 114 |
 
 Named lane membership churn since the prior pass:
 - removed: `gauge_vacuum_plaquette_connected_hierarchy_theorem_note`
@@ -153,13 +153,13 @@ Hypothetical next dispatch top-10 under OFF-ONLY banded interleave (ready rows, 
 - 10. sim `abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18` / actual `physical_lattice_necessity_note` ← differs
 
 Lane rows advanced by the simulated interleave (positions gained; complete list):
-- `quark_route2_exact_readout_map_note_2026-04-19`: +51
-- `universal_gr_lorentzian_global_atlas_closure_note`: +51
-- `planck_boundary_orientation_incidence_no_go_note_2026-04-30`: +46
-- `planck_parent_source_hidden_character_no_go_note_2026-04-24`: +41
-- `koide_q_delta_linking_relation_theorem_note_2026-04-20`: +40
-- `self_gravity_backreaction_closure_note`: +40
-- `g_bare_dynamical_fixation_obstruction_note_2026-04-18`: +39
+- `quark_route2_exact_readout_map_note_2026-04-19`: +50
+- `universal_gr_lorentzian_global_atlas_closure_note`: +50
+- `planck_boundary_orientation_incidence_no_go_note_2026-04-30`: +45
+- `planck_parent_source_hidden_character_no_go_note_2026-04-24`: +40
+- `koide_q_delta_linking_relation_theorem_note_2026-04-20`: +39
+- `self_gravity_backreaction_closure_note`: +39
+- `g_bare_dynamical_fixation_obstruction_note_2026-04-18`: +38
 - `koide_q_readout_factorization_theorem_2026-04-22`: +17
 - `koide_q_onsite_source_domain_no_go_synthesis_note_2026-04-25`: +17
 - `koide_frobenius_isotype_split_uniqueness_note_2026-04-21`: +16
@@ -273,7 +273,6 @@ Non-lane rows deferred by the simulated interleave (positions lost; complete lis
 - `record_clock_rate_normalization_gate_2026-06-06`: -7
 - `record_function_finite_sector_algebra_2026-06-05`: -7
 - `koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19`: -7
-- `koide_moment_ratio_uniformity_theorem_note_2026-04-19`: -7
 - `staggered_chiral_symmetry_spectrum_theorem_note_2026-05-02`: -7
 - `staggered_scalar_mass_class_bounded_premise_bridge_note_2026-06-03`: -7
 - `koide_mru_weight_class_obstruction_theorem_note_2026-04-19`: -7

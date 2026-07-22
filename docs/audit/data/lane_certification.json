@@ -1372,10 +1372,6 @@
           "effective_status": "audited_failed"
         },
         {
-          "claim_id": "koide_moment_ratio_uniformity_theorem_note_2026-04-19",
-          "effective_status": "audit_in_progress"
-        },
-        {
           "claim_id": "koide_mru_demotion_note_2026-04-20",
           "effective_status": "unaudited"
         },
@@ -2772,9 +2768,9 @@
       "roots": [
         "strong_cp_theta_zero_note"
       ],
-      "uncertified_count": 636
+      "uncertified_count": 635
     }
   ],
-  "repo_head": "fbda05074790219aaa99640c1a80d7dc54458040",
+  "repo_head": "0dcdfdb314fcda1023a5d3941dca9fa3f95fd436",
   "schema": "lane_certification_v2"
 }

@@ -62,10 +62,31 @@ If the runner output is absent only because the runner timed out, exceeded
 the audit wall-time budget, or is known to require a long compute run, that
 is not a scientific audit verdict. Do not convert mere noncompletion into
 `audited_conditional` or `audited_failed`. If the load-bearing step cannot be
-judged without the missing run, return exactly:
+judged without the missing run, return exactly the closed response object
+below: `compute_required` is the only non-null value and every other
+top-level field remains present as `null`.
 
-```
-COMPUTE_REQUIRED: <one sentence naming the missing completed run, sliced runner, cached certificate, or independent derivation needed>
+```json
+{
+  "compute_required": "<one sentence naming the missing completed run, sliced runner, cached certificate, or independent derivation needed>",
+  "claim_id": null,
+  "audit_invocation_id": null,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "claim_type": null,
+  "claim_scope": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "runner_check_breakdown": null,
+  "verdict": null,
+  "verdict_rationale": null,
+  "negative_assertion_classes": null,
+  "decoration_parent_claim_id": null,
+  "open_dependency_paths": null,
+  "auditor_confidence": null,
+  "notes_for_re_audit_if_any": null,
+  "no_go_discipline": null
+}
 ```
 
 The wrapper must then leave the row pending or blocked for compute and must
@@ -474,8 +495,8 @@ validator still requires substantive values whenever the condition applies.
         "occurrence_count": 1,
         "occurrence_locator_sha256": "<orchestrator-authenticated grouped locator digest>",
         "classification": "<retained_authority | hidden_admission | non_load_bearing>",
-        "promoted_wall": "<matching N2 wall when hidden_admission, otherwise omit>",
-        "rationale": "<required for non_load_bearing: 40+ characters explaining why this exact occurrence carries no premise load>",
+        "promoted_wall": "<matching N2 wall when hidden_admission, otherwise null>",
+        "rationale": "<required for non_load_bearing: 40+ characters explaining why this exact occurrence carries no premise load, otherwise null>",
         "evidence_path": "<manifest path>",
         "evidence_locator": "<actual locator>"
       }
@@ -629,7 +650,10 @@ When the gate is `FAIL`, list only the genuinely evidenced routes; fewer than
 five is valid and records the N1 failure. Do not fabricate extra routes merely
 to reach five.
 
-For `PASS`, omit the five FAIL-only fields. For `FAIL`, all five are required.
+For `PASS`, keep the five FAIL-only fields present: set `demotion`,
+`prior_claim_scope`, `narrowed_claim_scope`, and `next_route` to `null`, and
+set `corrected_wall_set` to `[]`. For `FAIL`, all five require the substantive
+values specified by the semantic contract.
 The orchestrator adds `evidence_snapshot` after validating the exact rendered
 packet; do not emit or fabricate that field. An `audited_clean` PASS must carry
 `chain_closes=true`.

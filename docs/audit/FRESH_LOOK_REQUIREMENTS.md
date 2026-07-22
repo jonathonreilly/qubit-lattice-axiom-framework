@@ -166,20 +166,23 @@ For critical claims:
   `auditor_family` than the first, or record `independence: fresh_context`
   from a distinct same-family auditor/session using only the Section 2
   restricted inputs.
-- Both must return matching `verdict`, matching `claim_type`, and matching
-  `load_bearing_step_class` before the row may move to `audited_clean`.
-- Disagreement on `claim_type` or `load_bearing_step_class` promotes the
-  claim to a third-auditor review and logs the disagreement in
-  `cross_confirmation.status = disagreement`.
-- The third-auditor review is judicial, not a blind retry. The third
-  auditor receives the restricted source packet plus the two prior audit
-  arguments, decides whether the first, second, or neither audit is
-  correct, and records `sided_with` plus a ratified verdict/class/scope.
-  The ledger status must match that decision (`third_confirmed_first`,
-  `third_confirmed_second`, or, after an explicitly human-authorized panel
-  that selects a third applyable tuple, `third_confirmed_hybrid`); a third
-  auditor that cannot ratify an applyable tuple leaves the row blocked for
-  human review.
+- Both must return a matching applyable tuple: `verdict`, `claim_type`,
+  normalized `claim_scope`, `load_bearing_step_class`, decoration parent when
+  applicable, and `negative_assertion_classes`.
+- Disagreement between two validator-clean seats records
+  `cross_confirmation.status = disagreement` and promotes the claim to a
+  governed five-judge panel. A contract-invalid seat is missing, not
+  disagreeing, and must be reseated before any panel.
+- Every panel judge receives the restricted source packet plus both prior
+  audit arguments. At least three of five must match on the complete ratified
+  tuple, including `sided_with` and any decoration parent. A panel with no
+  applyable majority, a majority for neither, or an unapplyable hybrid launches
+  another fresh five-judge panel carrying every prior vote and rationale.
+  Legacy ledger statuses `third_confirmed_first`, `third_confirmed_second`,
+  and `third_confirmed_hybrid` store the representative majority judgment;
+  they do not authorize resolution by one third auditor. Stop only when a hard
+  tooling or policy blocker prevents another required panel or applying an
+  otherwise applyable majority, never merely for human review.
 
 Claims at `criticality = high` (`transitive_descendants >= 30`)
 require `independence != weak` but do not require cross-confirmation by

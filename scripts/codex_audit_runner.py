@@ -596,10 +596,9 @@ def resolve_audit_model() -> tuple[str, str, str, list[str]]:
     return selected, codex_family_for_model(selected), source, warnings
 
 
-# Statuses where this runner SHOULD NOT proceed automatically. Disagreements
-# and three-way disagreements need a judicial third-auditor pass that the
-# operator runs manually (per docs/audit/FRESH_LOOK_REQUIREMENTS.md and
-# apply_audit.py's apply_judicial_review path).
+# Statuses where this ordinary-seat runner SHOULD NOT proceed. The top-level
+# audit loop owns the governed five-judge panel and repeat-panel continuation
+# for disagreements (per FRESH_LOOK_REQUIREMENTS.md and audit-loop/SKILL.md).
 SKIP_BLOCKERS = {
     "cross_confirmation_disagreement",
     "third_auditor_disagreement",
@@ -710,11 +709,14 @@ def determine_audit_role(led_row: dict, auditor_family: str,
         cc = {}
     cc_status = cc.get("status")
 
-    # Skip rows that need judicial / human resolution.
+    # Skip rows owned by the top-level five-judge panel orchestrator.
     if blocker in SKIP_BLOCKERS:
-        return "skip", f"blocker={blocker} (judicial review needed; manual)"
+        return "skip", f"blocker={blocker} (governed five-judge panel required)"
     if cc_status in {"disagreement", "three_way_disagreement", "disagreement_irresolvable"}:
-        return "skip", f"cross_confirmation.status={cc_status} (judicial review needed; manual)"
+        return "skip", (
+            f"cross_confirmation.status={cc_status} "
+            "(governed five-judge panel required)"
+        )
 
     # Second-pass on a critical-row first audit that is awaiting cross-confirmation.
     if audit_status == "audit_in_progress" and cc_status == "awaiting_second":
@@ -1955,6 +1957,9 @@ def validate_verdict(
     """Return an error string if the verdict is unusable, else None."""
     if not isinstance(blob, dict):
         return "verdict must be a JSON object"
+    compute_error = audit_contract.terminal_compute_required_error(blob)
+    if compute_error:
+        return compute_error
     missing = REQUIRED_VERDICT_FIELDS - set(blob)
     if missing:
         return f"missing fields: {sorted(missing)}"
@@ -2272,9 +2277,10 @@ def bind_authenticated_n6_candidate_locators(
 def compute_required_reason(reply: str | None) -> str | None:
     """Accept only the governed compute-required escape protocols.
 
-    New structured-output seats return a one-field JSON object.  The legacy
-    exact line remains readable so an in-flight worker started before this
-    migration can still finish without being converted into a false verdict.
+    New structured-output seats return a closed JSON object whose one non-null
+    field is ``compute_required``. The legacy exact line remains readable so
+    an in-flight worker started before this migration can still finish without
+    being converted into a false verdict.
     """
     if not reply:
         return None
@@ -2829,7 +2835,7 @@ def main() -> int:
     print("  first-pass with no prior audit                    -> cross_family")
     print("  second-pass after a prior audit by a different family -> cross_family")
     print("  second-pass after a prior audit by Codex            -> fresh_context")
-    print("  rows in disagreement / awaiting-judicial-review     -> skipped (manual)")
+    print("  rows in disagreement / awaiting-judicial-review     -> top-level panel lane")
     if args.from_dispatch:
         print("Source: audit_dispatch_queue.json (live targeted re-audits)")
         print(f"  ready_only={not args.allow_blocked}")

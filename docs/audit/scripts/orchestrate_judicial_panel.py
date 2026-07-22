@@ -8,7 +8,7 @@ judges with distinct identities. Each judge votes on the full tuple
 
     (sided_with, ratified_verdict, ratified_claim_type,
      ratified_claim_scope, ratified_load_bearing_step_class,
-     negative_assertion_classes)
+     ratified_decoration_parent_claim_id, negative_assertion_classes)
 
 and must explain the error in the position it votes against. A majority is
 at least three matching full-tuple votes out of five (whitespace-only scope
@@ -50,6 +50,8 @@ REPO_ROOT = batch.REPO_ROOT
 PANEL_SIZE = 5
 MAJORITY = 3
 MIN_VOTE_BYTES = 120
+MAX_FRESH_PANEL_CONTRACT_RETRIES = 2
+VOTE_CONTRACT_ERROR_PREFIX = "vote_contract_error:"
 
 ALLOWED_SIDES = {"first", "second", "hybrid", "neither"}
 ALLOWED_VERDICTS = {
@@ -116,6 +118,10 @@ def vote_tuple(vote: dict) -> tuple:
         vote.get("ratified_claim_type"),
         norm_scope(vote.get("ratified_claim_scope") or ""),
         vote.get("ratified_load_bearing_step_class"),
+        audit_contract.decoration_parent_tuple_key(
+            vote.get("ratified_verdict"),
+            vote.get("ratified_decoration_parent_claim_id"),
+        ),
         classes_key,
     )
 
@@ -227,6 +233,17 @@ def sided_vote_context_error(row: dict, vote: dict) -> str | None:
             tuple(sorted(vote.get("negative_assertion_classes") or [])),
             tuple(sorted(chosen.get("negative_assertion_classes") or [])),
         ),
+        (
+            "decoration_parent_claim_id",
+            audit_contract.decoration_parent_tuple_key(
+                vote.get("ratified_verdict"),
+                vote.get("ratified_decoration_parent_claim_id"),
+            ),
+            audit_contract.decoration_parent_tuple_key(
+                chosen.get("verdict"),
+                chosen.get("decoration_parent_claim_id"),
+            ),
+        ),
     )
     mismatches = [name for name, actual, expected in comparisons if actual != expected]
     if mismatches:
@@ -270,6 +287,16 @@ def seat_context_error(row: dict) -> str | None:
         summary = cross.get(label) or {}
         if not summary:
             return f"{label} summary is missing"
+        tuple_error = audit_contract.verdict_claim_type_error(
+            summary.get("verdict"),
+            summary.get("claim_type"),
+            summary.get("decoration_parent_claim_id"),
+        )
+        if tuple_error:
+            return (
+                f"{label} has an incompatible verdict/claim_type tuple: "
+                f"{tuple_error}; fresh cross-confirmation seats are required"
+            )
         if str(summary.get("verdict_rationale") or "").strip():
             continue
         invocation_id = str(summary.get("audit_invocation_id") or "")
@@ -293,11 +320,10 @@ def seat_context_error(row: dict) -> str | None:
 
 
 RESEAT_REASON = (
-    "cross_confirmation_reseat: the recorded seats lack invocation-bound "
-    "full rationales (pre-2026-07-13 apply contract) and envelope backfill "
-    "(backfill_cross_seat_rationales.py) could not recover them; the seats "
-    "are archived here with full provenance and the row is reopened for "
-    "fresh cross-confirmation under the rationale-preserving apply contract"
+    "cross_confirmation_reseat: the recorded seats do not satisfy the current "
+    "rationale-preserving, semantically applyable seat contract; the seats are "
+    "archived here with full provenance and the row is reopened for fresh "
+    "cross-confirmation before any judicial panel"
 )
 
 
@@ -472,8 +498,10 @@ def panel_instructions(
     if prior_panels:
         prior_block = (
             "\n### Prior panel outcomes\n\n"
-            "Earlier five-judge panels on this same disagreement produced the\n"
-            "complete vote/rationale breakdowns below but no applyable majority.\n"
+            "Earlier panel attempts on this same disagreement produced the\n"
+            "vote/rationale and validator-error breakdowns below but no applyable\n"
+            "majority. Contract-invalid attempts may contain fewer than five\n"
+            "accepted votes because invalid vote tuples carry no authority.\n"
             "Weigh their arguments; you are not bound by them.\n\n"
             + json.dumps(prior_panels, indent=1, sort_keys=True)
             + "\n"
@@ -661,7 +689,7 @@ def collect_vote(job: dict) -> tuple[dict | None, str]:
         return None, "malformed_vote_json"
     schema_error = vote_schema_error(vote)
     if schema_error:
-        return None, schema_error
+        return None, f"{VOTE_CONTRACT_ERROR_PREFIX}{schema_error}"
     return vote, "ok"
 
 
@@ -692,7 +720,7 @@ def judicial_blob(
         {
             "judge": vote.get("_panel_judge", index + 1),
             "auditor": vote.get("_panel_auditor"),
-            "tuple": list(vote_tuple(vote)[:5]) + [list(vote_tuple(vote)[5])],
+            "tuple": list(vote_tuple(vote)[:6]) + [list(vote_tuple(vote)[6])],
             "rationale": str(vote.get("judgment_rationale") or "")[:600],
         }
         for index, vote in enumerate(votes)
@@ -980,6 +1008,11 @@ def run_panel(
 
     panel_history = copy.deepcopy(prior_panels)
     panel_no = len(panel_history) + 1
+    consecutive_contract_retries = 0
+    for prior in reversed(panel_history):
+        if prior.get("result") != "contract_invalid_retry":
+            break
+        consecutive_contract_retries += 1
     while True:
         jobs = []
         try:
@@ -1027,14 +1060,23 @@ def run_panel(
             }
         votes: list[dict] = []
         failures: list[str] = []
+        contract_failures: list[str] = []
         for job in jobs:
             vote, status = collect_vote(job)
             if vote is None:
-                failures.append(f"judge{job['judge']}:{status}")
+                failure = f"judge{job['judge']}:{status}"
+                failures.append(failure)
+                if status.startswith(VOTE_CONTRACT_ERROR_PREFIX):
+                    contract_failures.append(failure)
             else:
                 context_error = sided_vote_context_error(row, vote)
                 if context_error:
-                    failures.append(f"judge{job['judge']}:{context_error}")
+                    failure = (
+                        f"judge{job['judge']}:{VOTE_CONTRACT_ERROR_PREFIX}"
+                        f"{context_error}"
+                    )
+                    failures.append(failure)
+                    contract_failures.append(failure)
                 else:
                     vote["_panel_judge"] = job["judge"]
                     vote["_panel_auditor"] = job["auditor"]
@@ -1050,11 +1092,35 @@ def run_panel(
             "votes": [public_vote(vote) for vote in votes],
             "failures": failures,
             "tally": [
-                {"tuple": [*key[:5], list(key[5])], "count": n}
+                {"tuple": [*key[:6], list(key[6])], "count": n}
                 for key, n in tally.most_common()
             ],
         }
         if len(votes) != PANEL_SIZE:
+            if failures and len(contract_failures) == len(failures):
+                consecutive_contract_retries += 1
+                if (
+                    consecutive_contract_retries
+                    <= MAX_FRESH_PANEL_CONTRACT_RETRIES
+                ):
+                    record["result"] = "contract_invalid_retry"
+                    write_panel_record(workdir, cid, panel_no, record)
+                    panel_history.append(record)
+                    print(
+                        f"   {cid}: panel {panel_no} had schema-invalid vote "
+                        "deliveries; launching a fresh five-judge panel with "
+                        "the exact validator errors"
+                    )
+                    panel_no += 1
+                    continue
+                record["result"] = "panel_contract_retries_exhausted"
+                write_panel_record(workdir, cid, panel_no, record)
+                return {
+                    "cid": cid,
+                    "result": "panel_contract_retries_exhausted",
+                    "detail": ";".join(failures),
+                    "votes": record["votes"],
+                }
             record["result"] = "panel_delivery_short"
             write_panel_record(workdir, cid, panel_no, record)
             return {
@@ -1064,6 +1130,7 @@ def run_panel(
                 "votes": record["votes"],
             }
 
+        consecutive_contract_retries = 0
         top_tuple, count = tally.most_common(1)[0]
         if count < MAJORITY:
             record["result"] = "no_majority"
@@ -1158,7 +1225,12 @@ def workdir_guard_error(workdir: Path) -> str | None:
     )
 
 
-PRIOR_PANEL_RESULTS = {"no_majority", "majority_neither", "majority_unapplyable"}
+PRIOR_PANEL_RESULTS = {
+    "no_majority",
+    "majority_neither",
+    "majority_unapplyable",
+    "contract_invalid_retry",
+}
 
 
 def load_prior_panels(
@@ -1202,8 +1274,23 @@ def load_prior_panels(
             )
         if record.get("result") not in PRIOR_PANEL_RESULTS:
             return {}, f"prior panel {path} has invalid result {record.get('result')!r}"
+        result = record["result"]
         votes = record.get("votes")
-        if not isinstance(votes, list) or len(votes) != PANEL_SIZE:
+        if not isinstance(votes, list):
+            return {}, f"prior panel {path} has no vote list"
+        if result == "contract_invalid_retry":
+            failures = record.get("failures")
+            if (
+                len(votes) >= PANEL_SIZE
+                or not isinstance(failures, list)
+                or not failures
+                or not all(
+                    VOTE_CONTRACT_ERROR_PREFIX in str(failure)
+                    for failure in failures
+                )
+            ):
+                return {}, f"prior panel {path} has an invalid contract-retry record"
+        elif len(votes) != PANEL_SIZE:
             return {}, f"prior panel {path} does not contain five vote records"
         for vote in votes:
             schema_error = vote_schema_error(vote)
@@ -1212,13 +1299,15 @@ def load_prior_panels(
             context_error = sided_vote_context_error(target_rows[cid], vote)
             if context_error:
                 return {}, f"prior panel {path} contains invalid vote: {context_error}"
-        if len({vote.get("judge") for vote in votes}) != PANEL_SIZE:
-            return {}, f"prior panel {path} does not preserve five distinct judges"
-        if len({vote.get("auditor") for vote in votes}) != PANEL_SIZE:
-            return {}, f"prior panel {path} does not preserve five distinct identities"
+        if len({vote.get("judge") for vote in votes}) != len(votes):
+            return {}, f"prior panel {path} does not preserve distinct judges"
+        if len({vote.get("auditor") for vote in votes}) != len(votes):
+            return {}, f"prior panel {path} does not preserve distinct identities"
+        if result == "contract_invalid_retry":
+            grouped.setdefault(cid, []).append(record)
+            continue
         tally = Counter(vote_tuple(vote) for vote in votes)
         top_tuple, count = tally.most_common(1)[0]
-        result = record["result"]
         if result == "no_majority" and count >= MAJORITY:
             return {}, f"prior panel {path} labels a majority as no_majority"
         if result == "majority_neither" and not (

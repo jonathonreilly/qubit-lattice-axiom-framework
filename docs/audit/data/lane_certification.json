@@ -1141,7 +1141,7 @@
         },
         {
           "claim_id": "hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "hierarchy_matsubara_decomposition_note",
@@ -2791,6 +2791,6 @@
       "uncertified_count": 640
     }
   ],
-  "repo_head": "f9a155ffe2fddf9258d332e9e11d8ab45dc5790d",
+  "repo_head": "f0e7549aaf65164ed0d455c760524675ad1e1db6",
   "schema": "lane_certification_v2"
 }

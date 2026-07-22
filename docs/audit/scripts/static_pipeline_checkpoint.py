@@ -9,12 +9,15 @@ an optimization receipt, never an audit authority.
 from __future__ import annotations
 
 import argparse
+import fcntl
 import hashlib
 import json
 import os
 import re
 import subprocess
 import time
+from contextlib import contextmanager
+from functools import wraps
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
@@ -114,6 +117,23 @@ RUNNER_PATH_RE = re.compile(
     r"(scripts/[A-Za-z0-9_./\-]+\.py)|"
     r"(?<![A-Za-z0-9_./\-])([A-Za-z0-9_.\-]+\.py)"
 )
+
+
+@contextmanager
+def _checkpoint_lock():
+    lock_path = CHECKPOINT.with_suffix(".lock")
+    with lock_path.open("w", encoding="utf-8") as handle:
+        fcntl.flock(handle, fcntl.LOCK_EX)
+        yield
+
+
+def checkpoint_locked(function):
+    @wraps(function)
+    def wrapped(*args, **kwargs):
+        with _checkpoint_lock():
+            return function(*args, **kwargs)
+
+    return wrapped
 
 
 def run_git(args: list[str]) -> subprocess.CompletedProcess:
@@ -394,6 +414,7 @@ def static_input_fingerprint(
     return digest.hexdigest(), "static input tree fingerprinted"
 
 
+@checkpoint_locked
 def record_producer_receipt(stage: str) -> tuple[bool, str]:
     """Record proof from the successful producer process itself.
 
@@ -501,6 +522,7 @@ def _matches_checkpoint(checkpoint: dict) -> tuple[bool, str]:
     return True, f"checkpoint {fingerprint[:12]} matches current inputs"
 
 
+@checkpoint_locked
 def begin_checkpoint() -> tuple[bool, str]:
     """Invalidate fast mode and record inputs before any full-build stage."""
     nonce, detail = _environment_nonce(BUILD_NONCE_ENV, required=True)
@@ -519,6 +541,7 @@ def begin_checkpoint() -> tuple[bool, str]:
     return (ok, f"began full build {fingerprint[:12]}" if ok else detail)
 
 
+@checkpoint_locked
 def prepare_checkpoint() -> tuple[bool, str]:
     """Prove graph/seed completion and snapshot classifier inputs."""
     checkpoint, detail = _read_checkpoint(
@@ -563,6 +586,7 @@ def prepare_checkpoint() -> tuple[bool, str]:
     )
 
 
+@checkpoint_locked
 def capture_checkpoint() -> tuple[bool, str]:
     """Bind freshly generated static caches to unchanged classifier inputs."""
     checkpoint, detail = _read_checkpoint(
@@ -600,6 +624,7 @@ def capture_checkpoint() -> tuple[bool, str]:
     return (ok, f"captured full-build caches {fingerprint[:12]}" if ok else detail)
 
 
+@checkpoint_locked
 def finalize_checkpoint() -> tuple[bool, str]:
     """Finalize only when the rest of the full pipeline preserved the proof."""
     checkpoint, detail = _read_checkpoint(
@@ -621,6 +646,7 @@ def finalize_checkpoint() -> tuple[bool, str]:
     return True, f"finalized full checkpoint {fingerprint[:12]}"
 
 
+@checkpoint_locked
 def abort_checkpoint() -> tuple[bool, str]:
     """Remove only this full build's transient receipts and partial proof."""
     nonce, detail = _environment_nonce(BUILD_NONCE_ENV, required=True)
@@ -645,6 +671,7 @@ def abort_checkpoint() -> tuple[bool, str]:
     return True, "full-build transient receipts removed"
 
 
+@checkpoint_locked
 def verify_checkpoint() -> tuple[bool, str]:
     checkpoint, detail = _read_checkpoint(FINAL_SCHEMA)
     if checkpoint is None:
@@ -663,6 +690,7 @@ def verify_checkpoint() -> tuple[bool, str]:
     return True, f"full checkpoint {checkpoint['static_input_sha256'][:12]} verified"
 
 
+@checkpoint_locked
 def checkpoint_identity() -> tuple[bool, str]:
     checkpoint, detail = _read_checkpoint(FINAL_SCHEMA)
     if checkpoint is None:

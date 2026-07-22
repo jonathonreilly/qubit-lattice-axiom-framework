@@ -83,6 +83,7 @@ MIN_DELIVERY_BYTES = 200
 PACKET_COMPLETION_STALL_SECONDS = 20 * 60
 PACKET_COMPLETION_POLL_SECONDS = 15
 PACKET_COMPLETION_EXIT_GRACE_SECONDS = 10
+COMMAND_TERMINATION_GRACE_SECONDS = 5
 INHERITED_DRAIN_LOCK_FD_ENV = "AUDIT_DRAIN_LOCK_FD"
 
 
@@ -185,11 +186,23 @@ def sh(
             timed_out = deadline is not None and time.monotonic() >= deadline
             if not cancelled and not timed_out:
                 continue
+        # Give shells a catchable termination first so EXIT traps can remove
+        # nonce-bound checkpoint receipts. Escalate only when the whole
+        # process group ignores the grace period.
         try:
-            os.killpg(proc.pid, signal.SIGKILL)
+            os.killpg(proc.pid, signal.SIGTERM)
         except ProcessLookupError:
             pass
-        stdout, stderr = proc.communicate()
+        try:
+            stdout, stderr = proc.communicate(
+                timeout=COMMAND_TERMINATION_GRACE_SECONDS
+            )
+        except subprocess.TimeoutExpired:
+            try:
+                os.killpg(proc.pid, signal.SIGKILL)
+            except ProcessLookupError:
+                pass
+            stdout, stderr = proc.communicate()
         reason = "cancelled" if cancelled else f"timed out after {timeout}s"
         return subprocess.CompletedProcess(
             cmd, 125 if cancelled else 124, stdout or "", stderr or reason
@@ -834,6 +847,38 @@ def schema_repair_guidance(blob: dict, validator_error: str | None) -> str:
     return ""
 
 
+def _wait_for_packet_completion(proc: subprocess.Popen) -> tuple[bool, int]:
+    """Wait for packet repair, killing promptly when the committer is cancelled."""
+    deadline = time.monotonic() + PACKET_COMPLETION_STALL_SECONDS
+    polling_failed = False
+    cancelled = False
+    try:
+        while time.monotonic() < deadline and proc.poll() is None:
+            cancel_event = _command_cancel_event()
+            if cancel_event is not None:
+                if cancel_event.wait(PACKET_COMPLETION_POLL_SECONDS):
+                    cancelled = True
+                    break
+            else:
+                time.sleep(PACKET_COMPLETION_POLL_SECONDS)
+        cancelled = cancelled or _command_cancelled()
+        if proc.poll() is None and not cancelled:
+            try:
+                proc.wait(timeout=PACKET_COMPLETION_EXIT_GRACE_SECONDS)
+            except subprocess.TimeoutExpired:
+                pass
+    except OSError:
+        polling_failed = True
+    finally:
+        if proc.poll() is None:
+            try:
+                os.killpg(proc.pid, signal.SIGKILL)
+            except ProcessLookupError:
+                pass
+        returncode = proc.wait()
+    return polling_failed, returncode
+
+
 def packet_completion_pass(
     job: dict,
     blob: dict,
@@ -933,30 +978,7 @@ def packet_completion_pass(
             cwd=job["isolated"],
             start_new_session=True,
         )
-        deadline = time.monotonic() + PACKET_COMPLETION_STALL_SECONDS
-        polling_failed = False
-        try:
-            while time.monotonic() < deadline and proc.poll() is None:
-                cancel_event = _command_cancel_event()
-                if cancel_event is not None:
-                    if cancel_event.wait(PACKET_COMPLETION_POLL_SECONDS):
-                        break
-                else:
-                    time.sleep(PACKET_COMPLETION_POLL_SECONDS)
-            if proc.poll() is None:
-                try:
-                    proc.wait(timeout=PACKET_COMPLETION_EXIT_GRACE_SECONDS)
-                except subprocess.TimeoutExpired:
-                    pass
-        except OSError:
-            polling_failed = True
-        finally:
-            if proc.poll() is None:
-                try:
-                    os.killpg(proc.pid, signal.SIGKILL)
-                except ProcessLookupError:
-                    pass
-            returncode = proc.wait()
+        polling_failed, returncode = _wait_for_packet_completion(proc)
 
     if polling_failed or returncode != 0:
         return None
@@ -1271,6 +1293,20 @@ def apply_claim_serialized(
     if len(claim_ids) != 1 or not ordered:
         raise ValueError("one non-empty claim delivery group is required")
     cid = next(iter(claim_ids))
+
+    def fail_after_local_commit(result: str, detail: str | None = None):
+        reset, reset_detail = reset_to_origin_main()
+        if not reset:
+            return False, [{
+                "cid": cid,
+                "result": "race_reset_failed",
+                "detail": reset_detail,
+            }]
+        failure = {"cid": cid, "result": result}
+        if detail is not None:
+            failure["detail"] = detail
+        return False, [failure]
+
     for attempt in range(1, retries + 1):
         synced, detail = sync_origin_main()
         if not synced:
@@ -1318,15 +1354,18 @@ def apply_claim_serialized(
             ]
 
         if _command_cancelled():
-            reset_to_origin_main()
-            return False, [{"cid": cid, "result": "commit_cancelled"}]
+            return fail_after_local_commit("commit_cancelled")
 
         fetch = sh(["git", "fetch", "origin", "main", "-q"])
         if fetch.returncode != 0:
-            if _command_cancelled():
-                reset_to_origin_main()
-            return False, [{"cid": cid, "result": "push_failed", "detail": "push and follow-up fetch failed"}]
+            result = "commit_cancelled" if _command_cancelled() else "push_failed"
+            detail = None if result == "commit_cancelled" else "push and follow-up fetch failed"
+            return fail_after_local_commit(result, detail)
+        if _command_cancelled():
+            return fail_after_local_commit("commit_cancelled")
         landed = sh(["git", "merge-base", "--is-ancestor", local_commit, "origin/main"])
+        if _command_cancelled():
+            return fail_after_local_commit("commit_cancelled")
         if landed.returncode == 0:
             return True, [
                 {
@@ -1338,7 +1377,7 @@ def apply_claim_serialized(
                 for job, envelope in ordered
             ]
         if attempt == retries:
-            return False, [{"cid": cid, "result": "push_race_exhausted"}]
+            return fail_after_local_commit("push_race_exhausted")
         reset, reset_detail = reset_to_origin_main()
         if not reset:
             return False, [{"cid": cid, "result": "race_reset_failed", "detail": reset_detail}]

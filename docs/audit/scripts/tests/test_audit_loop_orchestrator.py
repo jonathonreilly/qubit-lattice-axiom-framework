@@ -5,6 +5,7 @@ import argparse
 import hashlib
 import json
 import os
+import signal
 import subprocess
 import sys
 import tempfile
@@ -948,6 +949,41 @@ class ClaimTransactionTest(unittest.TestCase):
         self.assertEqual(result.stdout, "stdout")
         self.assertEqual(result.stderr, "stderr")
 
+    def test_committer_shell_terminates_gracefully_before_forced_kill(self):
+        cancel = threading.Event()
+        proc = mock.Mock(pid=7654, returncode=-15)
+        calls = 0
+
+        def communicate(timeout=None):
+            nonlocal calls
+            calls += 1
+            if calls == 1:
+                cancel.set()
+                raise subprocess.TimeoutExpired(["pipeline"], timeout)
+            return "stdout", "terminated"
+
+        proc.communicate.side_effect = communicate
+        batch._COMMAND_CONTEXT.cancel_event = cancel
+        try:
+            with mock.patch.object(
+                batch.subprocess, "Popen", return_value=proc
+            ), mock.patch.object(batch.os, "killpg") as killpg:
+                result = batch.sh(["pipeline"], timeout=30)
+        finally:
+            del batch._COMMAND_CONTEXT.cancel_event
+
+        self.assertEqual(result.returncode, 125)
+        self.assertEqual(result.stdout, "stdout")
+        self.assertEqual(result.stderr, "terminated")
+        killpg.assert_called_once_with(7654, signal.SIGTERM)
+        self.assertEqual(
+            proc.communicate.call_args_list,
+            [
+                mock.call(timeout=1.0),
+                mock.call(timeout=batch.COMMAND_TERMINATION_GRACE_SECONDS),
+            ],
+        )
+
     def test_committer_shell_preserves_normal_short_command_result(self):
         cancel = threading.Event()
         proc = mock.Mock(returncode=7)
@@ -977,6 +1013,97 @@ class ClaimTransactionTest(unittest.TestCase):
         self.assertTrue(
             all(call.kwargs.get("honor_cancel") is False for call in sh.call_args_list)
         )
+
+    def test_packet_completion_cancel_skips_exit_grace(self):
+        cancel = threading.Event()
+        cancel.set()
+        proc = mock.Mock(pid=4321)
+        proc.poll.return_value = None
+        proc.wait.return_value = -9
+        batch._COMMAND_CONTEXT.cancel_event = cancel
+        started = time.monotonic()
+        try:
+            with mock.patch.object(batch.os, "killpg") as killpg:
+                polling_failed, returncode = batch._wait_for_packet_completion(proc)
+        finally:
+            del batch._COMMAND_CONTEXT.cancel_event
+
+        self.assertFalse(polling_failed)
+        self.assertEqual(returncode, -9)
+        self.assertEqual(proc.wait.call_args_list, [mock.call()])
+        killpg.assert_called_once_with(4321, signal.SIGKILL)
+        self.assertLess(time.monotonic() - started, 1)
+
+    def test_checkpoint_abort_cannot_delete_concurrent_build(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            checkpoint = Path(tmp) / "static_pipeline_checkpoint.json"
+            checkpoint.write_text(
+                json.dumps({
+                    "schema": batch.static_checkpoint.BUILDING_SCHEMA,
+                    "build_nonce": "a" * 32,
+                }),
+                encoding="utf-8",
+            )
+            cleanup_entered = threading.Event()
+            release_cleanup = threading.Event()
+            begin_started = threading.Event()
+            begin_entered_checkpoint = threading.Event()
+            results = {}
+
+            def delayed_cleanup(_nonce):
+                cleanup_entered.set()
+                self.assertTrue(release_cleanup.wait(timeout=2))
+                return True, "cleaned"
+
+            def fingerprint(*, include_ledger_static=True):
+                if threading.current_thread().name == "checkpoint-begin":
+                    begin_entered_checkpoint.set()
+                return "f" * 64, "fingerprinted"
+
+            with mock.patch.object(
+                batch.static_checkpoint, "CHECKPOINT", checkpoint
+            ), mock.patch.object(
+                batch.static_checkpoint,
+                "static_input_fingerprint",
+                side_effect=fingerprint,
+            ), mock.patch.object(
+                batch.static_checkpoint,
+                "_cleanup_receipts",
+                side_effect=delayed_cleanup,
+            ), mock.patch.dict(
+                os.environ,
+                {batch.static_checkpoint.BUILD_NONCE_ENV: "a" * 32},
+            ):
+                abort_thread = threading.Thread(
+                    target=lambda: results.update(
+                        abort=batch.static_checkpoint.abort_checkpoint()
+                    )
+                )
+                abort_thread.start()
+                self.assertTrue(cleanup_entered.wait(timeout=2))
+                os.environ[batch.static_checkpoint.BUILD_NONCE_ENV] = "b" * 32
+
+                def begin_build():
+                    begin_started.set()
+                    results["begin"] = batch.static_checkpoint.begin_checkpoint()
+
+                begin_thread = threading.Thread(
+                    name="checkpoint-begin",
+                    target=begin_build,
+                )
+                begin_thread.start()
+                self.assertTrue(begin_started.wait(timeout=2))
+                self.assertFalse(begin_entered_checkpoint.wait(timeout=0.2))
+                release_cleanup.set()
+                abort_thread.join(timeout=2)
+                begin_thread.join(timeout=2)
+
+            self.assertFalse(abort_thread.is_alive())
+            self.assertFalse(begin_thread.is_alive())
+            self.assertTrue(results["abort"][0], results["abort"][1])
+            self.assertTrue(results["begin"][0], results["begin"][1])
+            payload = json.loads(checkpoint.read_text(encoding="utf-8"))
+            self.assertEqual(payload["build_nonce"], "b" * 32)
 
     def test_verdict_only_path_allowlist_is_narrower_than_commit_allowlist(self):
         self.assertTrue(
@@ -1078,6 +1205,7 @@ class ClaimTransactionTest(unittest.TestCase):
                 "docs/audit/data/citation_graph.json\n"
                 "docs/audit/data/runner_classification.json\n"
                 "docs/audit/data/static_pipeline_checkpoint.json\n"
+                "docs/audit/data/static_pipeline_checkpoint.lock\n"
                 "docs/audit/data/static_pipeline_receipt_*.json\n"
                 "docs/audit/data/ledger/hidden/\n"
                 "docs/ignored_local_note.md\n"
@@ -1367,6 +1495,73 @@ class ClaimTransactionTest(unittest.TestCase):
         self.assertEqual(commit.call_count, 2)
         reset.assert_called_once_with()
         self.assertEqual({item["commit"] for item in results}, {"commit-2"})
+
+    def test_push_race_cancellation_rolls_back_local_commit(self):
+        cancel = threading.Event()
+        row = {"claim_id": "row", "criticality": "high"}
+        deliveries = [(
+            {"cid": "row", "pass": 1, "row": row},
+            {"audit": {"verdict": "audited_clean"}, "evidence_manifest": {}},
+        )]
+
+        def command(cmd, *args, **kwargs):
+            if cmd[:2] == ["git", "push"]:
+                return subprocess.CompletedProcess(cmd, 1, "", "push race")
+            if cmd[:2] == ["git", "fetch"]:
+                return subprocess.CompletedProcess(cmd, 0, "", "")
+            if cmd[:2] == ["git", "merge-base"]:
+                cancel.set()
+                return subprocess.CompletedProcess(cmd, 125, "", "cancelled")
+            raise AssertionError(cmd)
+
+        batch._COMMAND_CONTEXT.cancel_event = cancel
+        try:
+            with mock.patch.object(
+                batch, "sync_origin_main", return_value=(True, "base")
+            ), mock.patch.object(
+                batch.audit_runner, "apply_one", return_value=(True, "applied")
+            ), mock.patch.object(
+                batch, "run_generated_gates", return_value=(True, "gated")
+            ), mock.patch.object(
+                batch, "stage_and_commit", return_value=(True, "local-commit")
+            ), mock.patch.object(
+                batch, "reset_to_origin_main", return_value=(True, "reset")
+            ) as reset, mock.patch.object(batch, "sh", side_effect=command):
+                ok, results = batch.apply_claim_serialized(deliveries, retries=1)
+        finally:
+            del batch._COMMAND_CONTEXT.cancel_event
+
+        self.assertFalse(ok)
+        self.assertEqual(results[0]["result"], "commit_cancelled")
+        reset.assert_called_once_with()
+
+    def test_terminal_push_race_rolls_back_local_commit(self):
+        row = {"claim_id": "row", "criticality": "high"}
+        deliveries = [(
+            {"cid": "row", "pass": 1, "row": row},
+            {"audit": {"verdict": "audited_clean"}, "evidence_manifest": {}},
+        )]
+        commands = [
+            subprocess.CompletedProcess(["git", "push"], 1, "", "push race"),
+            subprocess.CompletedProcess(["git", "fetch"], 0, "", ""),
+            subprocess.CompletedProcess(["git", "merge-base"], 1, "", "not landed"),
+        ]
+        with mock.patch.object(
+            batch, "sync_origin_main", return_value=(True, "base")
+        ), mock.patch.object(
+            batch.audit_runner, "apply_one", return_value=(True, "applied")
+        ), mock.patch.object(
+            batch, "run_generated_gates", return_value=(True, "gated")
+        ), mock.patch.object(
+            batch, "stage_and_commit", return_value=(True, "local-commit")
+        ), mock.patch.object(
+            batch, "reset_to_origin_main", return_value=(True, "reset")
+        ) as reset, mock.patch.object(batch, "sh", side_effect=commands):
+            ok, results = batch.apply_claim_serialized(deliveries, retries=1)
+
+        self.assertFalse(ok)
+        self.assertEqual(results[0]["result"], "push_race_exhausted")
+        reset.assert_called_once_with()
 
 
 class AutomaticPanelResumeTest(unittest.TestCase):

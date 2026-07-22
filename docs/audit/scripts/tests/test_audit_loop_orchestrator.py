@@ -911,6 +911,23 @@ class ClaimTransactionTest(unittest.TestCase):
         self.assertTrue(all(job["log_handle"].closed for job in (ready, slow)))
         killpg.assert_called_once()
 
+    def test_committer_shell_command_is_cancellable(self):
+        cancel = threading.Event()
+        cancel.set()
+        batch._COMMAND_CONTEXT.cancel_event = cancel
+        started = time.monotonic()
+        try:
+            result = batch.sh(
+                [sys.executable, "-c", "import time; time.sleep(30)"],
+                timeout=30,
+            )
+        finally:
+            del batch._COMMAND_CONTEXT.cancel_event
+
+        self.assertEqual(result.returncode, 125)
+        self.assertIn("cancelled", result.stderr)
+        self.assertLess(time.monotonic() - started, 3)
+
     def test_verdict_only_path_allowlist_is_narrower_than_commit_allowlist(self):
         self.assertTrue(
             batch.verdict_only_generated_path(
@@ -1011,8 +1028,10 @@ class ClaimTransactionTest(unittest.TestCase):
                 "docs/audit/data/citation_graph.json\n"
                 "docs/audit/data/runner_classification.json\n"
                 "docs/audit/data/static_pipeline_checkpoint.json\n"
+                "docs/audit/data/static_pipeline_receipt_*.json\n"
+                "docs/audit/data/ledger/hidden/\n"
                 "docs/ignored_local_note.md\n"
-                "scripts/ignored_runner.py\n",
+                "scripts/ignored_*.py\n",
                 encoding="utf-8",
             )
             data = root / "docs" / "audit" / "data"
@@ -1024,13 +1043,24 @@ class ClaimTransactionTest(unittest.TestCase):
             ignored_runner = root / "scripts" / "ignored_runner.py"
             ignored_runner.parent.mkdir(parents=True)
             ignored_runner.write_text("assert True\n", encoding="utf-8")
+            ignored_helper = root / "scripts" / "ignored_helper.py"
+            ignored_helper.write_text("VALUE = 1\n", encoding="utf-8")
             before = {
                 "claim_id": "row",
                 "deps": ["dep"],
                 "runner_path": "scripts/ignored_runner.py",
+                "helper_runner_paths": ["scripts/ignored_helper.py"],
                 "audit_status": "unaudited",
             }
             shard.write_text(json.dumps(before), encoding="utf-8")
+            ignored_ledger = data / "ledger" / "hidden" / "row.json"
+            ignored_ledger.parent.mkdir(parents=True)
+            ignored_ledger.write_text(
+                json.dumps({"claim_id": "hidden", "deps": ["a"]}),
+                encoding="utf-8",
+            )
+            ignored_ledger_sidecar = ignored_ledger.with_suffix(".sidecar")
+            ignored_ledger_sidecar.write_text("one\n", encoding="utf-8")
             git("add", ".gitignore", str(shard.relative_to(root)))
             git("commit", "-qm", "baseline")
 
@@ -1039,25 +1069,38 @@ class ClaimTransactionTest(unittest.TestCase):
                 (data / name).write_bytes(content)
             checkpoint = data / "static_pipeline_checkpoint.json"
 
+            nonce = "a" * 32
             with mock.patch.object(
                 batch.static_checkpoint, "REPO_ROOT", root
             ), mock.patch.object(
                 batch.static_checkpoint, "DATA", data
             ), mock.patch.object(
                 batch.static_checkpoint, "CHECKPOINT", checkpoint
+            ), mock.patch.dict(
+                os.environ,
+                {batch.static_checkpoint.BUILD_NONCE_ENV: nonce},
             ):
                 began, begin_detail = batch.static_checkpoint.begin_checkpoint()
                 stale_prepare_ok, stale_prepare_detail = (
                     batch.static_checkpoint.prepare_checkpoint()
                 )
-                (data / "citation_graph.json").write_bytes(
-                    (data / "citation_graph.json").read_bytes()
+                graph_receipt_ok, graph_receipt_detail = (
+                    batch.static_checkpoint.record_producer_receipt(
+                        "citation_graph"
+                    )
+                )
+                seed_receipt_ok, seed_receipt_detail = (
+                    batch.static_checkpoint.record_producer_receipt(
+                        "seed_ledger"
+                    )
                 )
                 prepared, prepare_detail = (
                     batch.static_checkpoint.prepare_checkpoint()
                 )
-                (data / "runner_classification.json").write_bytes(
-                    (data / "runner_classification.json").read_bytes()
+                classifier_receipt_ok, classifier_receipt_detail = (
+                    batch.static_checkpoint.record_producer_receipt(
+                        "runner_classification"
+                    )
                 )
                 captured, capture_detail = (
                     batch.static_checkpoint.capture_checkpoint()
@@ -1070,6 +1113,13 @@ class ClaimTransactionTest(unittest.TestCase):
                     encoding="utf-8",
                 )
                 audit_ok, _ = batch.static_checkpoint.verify_checkpoint()
+                with mock.patch.dict(
+                    os.environ,
+                    {batch.static_checkpoint.EXPECTED_NONCE_ENV: "b" * 32},
+                ):
+                    wrong_identity_ok, wrong_identity_detail = (
+                        batch.static_checkpoint.verify_checkpoint()
+                    )
                 ignored_note.write_text(
                     "# Changed local graph input\n", encoding="utf-8"
                 )
@@ -1084,6 +1134,27 @@ class ClaimTransactionTest(unittest.TestCase):
                     batch.static_checkpoint.verify_checkpoint()
                 )
                 ignored_runner.write_text("assert True\n", encoding="utf-8")
+                ignored_helper.write_text("VALUE = 2\n", encoding="utf-8")
+                ignored_helper_ok, ignored_helper_detail = (
+                    batch.static_checkpoint.verify_checkpoint()
+                )
+                ignored_helper.write_text("VALUE = 1\n", encoding="utf-8")
+                ignored_ledger.write_text(
+                    json.dumps({"claim_id": "hidden", "deps": ["b"]}),
+                    encoding="utf-8",
+                )
+                ignored_ledger_ok, ignored_ledger_detail = (
+                    batch.static_checkpoint.verify_checkpoint()
+                )
+                ignored_ledger.write_text(
+                    json.dumps({"claim_id": "hidden", "deps": ["a"]}),
+                    encoding="utf-8",
+                )
+                ignored_ledger_sidecar.write_text("two\n", encoding="utf-8")
+                ignored_sidecar_ok, ignored_sidecar_detail = (
+                    batch.static_checkpoint.verify_checkpoint()
+                )
+                ignored_ledger_sidecar.write_text("one\n", encoding="utf-8")
                 shard.write_text(
                     json.dumps(dict(before, novel_topology={"edge": "new"})),
                     encoding="utf-8",
@@ -1108,15 +1179,26 @@ class ClaimTransactionTest(unittest.TestCase):
 
         self.assertTrue(began, begin_detail)
         self.assertFalse(stale_prepare_ok)
-        self.assertIn("not rebuilt", stale_prepare_detail)
+        self.assertIn("producer receipt", stale_prepare_detail)
+        self.assertTrue(graph_receipt_ok, graph_receipt_detail)
+        self.assertTrue(seed_receipt_ok, seed_receipt_detail)
         self.assertTrue(prepared, prepare_detail)
+        self.assertTrue(classifier_receipt_ok, classifier_receipt_detail)
         self.assertTrue(captured, capture_detail)
         self.assertTrue(finalized, finalize_detail)
         self.assertTrue(audit_ok)
+        self.assertFalse(wrong_identity_ok)
+        self.assertIn("changed during fast use", wrong_identity_detail)
         self.assertFalse(ignored_note_ok)
         self.assertIn("static repository inputs changed", ignored_note_detail)
         self.assertFalse(ignored_runner_ok)
         self.assertIn("static repository inputs changed", ignored_runner_detail)
+        self.assertFalse(ignored_helper_ok)
+        self.assertIn("static repository inputs changed", ignored_helper_detail)
+        self.assertFalse(ignored_ledger_ok)
+        self.assertIn("static repository inputs changed", ignored_ledger_detail)
+        self.assertFalse(ignored_sidecar_ok)
+        self.assertIn("static repository inputs changed", ignored_sidecar_detail)
         self.assertFalse(unknown_field_ok)
         self.assertIn("static repository inputs changed", unknown_field_detail)
         self.assertFalse(ledger_sidecar_ok)

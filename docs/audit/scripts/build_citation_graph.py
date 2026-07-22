@@ -27,6 +27,8 @@ import re
 import urllib.parse
 from pathlib import Path
 
+import static_pipeline_checkpoint as static_checkpoint
+
 REPO_ROOT = Path(__file__).resolve().parents[3]
 DOCS_DIR = REPO_ROOT / "docs"
 AUDIT_DATA_DIR = REPO_ROOT / "docs" / "audit" / "data"
@@ -726,6 +728,12 @@ def main() -> int:
     AUDIT_DATA_DIR.mkdir(parents=True, exist_ok=True)
     graph = build_graph()
     OUTPUT_PATH.write_text(json.dumps(graph, indent=2, sort_keys=True) + "\n")
+    receipt_ok, receipt_detail = static_checkpoint.record_producer_receipt(
+        "citation_graph"
+    )
+    if not receipt_ok:
+        print(f"checkpoint receipt failed: {receipt_detail}")
+        return 1
     s = graph["stats"]
     print(f"Wrote {OUTPUT_PATH.relative_to(REPO_ROOT)}")
     print(f"  nodes: {s['node_count']}  edges: {s['edge_count']}")

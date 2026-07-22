@@ -10084,6 +10084,7 @@ class AuditDataFilesCoverPipelineSurfacesTest(unittest.TestCase):
             PROJECT_ROOT / "docs" / "audit" / "scripts" / "run_pipeline.sh"
         ).read_text(encoding="utf-8")
         verify = "python3 docs/audit/scripts/static_pipeline_checkpoint.py verify"
+        identity = "python3 docs/audit/scripts/static_pipeline_checkpoint.py identity"
         begin = "python3 docs/audit/scripts/static_pipeline_checkpoint.py begin"
         prepare = "python3 docs/audit/scripts/static_pipeline_checkpoint.py prepare"
         capture = "python3 docs/audit/scripts/static_pipeline_checkpoint.py capture"
@@ -10092,17 +10093,31 @@ class AuditDataFilesCoverPipelineSurfacesTest(unittest.TestCase):
         classifier = "python3 docs/audit/scripts/classify_runner_passes.py"
         invariant = "python3 docs/audit/scripts/repo_invariants_check.py"
 
-        self.assertEqual(script.count(verify), 2)
+        self.assertEqual(script.count(verify), 1)
+        self.assertEqual(script.count(identity), 1)
         self.assertEqual(script.count(begin), 1)
         self.assertEqual(script.count(prepare), 1)
         self.assertEqual(script.count(capture), 1)
         self.assertEqual(script.count(finalize), 1)
         self.assertNotIn("static_pipeline_checkpoint.py write", script)
-        self.assertLess(script.index(verify), script.index(first_skipped_stage))
+        self.assertIn("AUDIT_STATIC_BUILD_NONCE", script)
+        self.assertIn("AUDIT_STATIC_EXPECTED_NONCE", script)
+        self.assertLess(script.index(identity), script.index(first_skipped_stage))
         self.assertLess(script.index(prepare), script.index(classifier))
         self.assertGreater(script.index(capture), script.index(classifier))
         self.assertGreater(script.index(finalize), script.rindex(invariant))
         self.assertGreater(script.rindex(verify), script.rindex(invariant))
+
+        producer_receipts = {
+            "build_citation_graph.py": 'record_producer_receipt(\n        "citation_graph"',
+            "seed_audit_ledger.py": 'record_producer_receipt(\n        "seed_ledger"',
+            "classify_runner_passes.py": 'record_producer_receipt(\n        "runner_classification"',
+        }
+        for filename, marker in producer_receipts.items():
+            producer = (
+                PROJECT_ROOT / "docs" / "audit" / "scripts" / filename
+            ).read_text(encoding="utf-8")
+            self.assertIn(marker, producer)
 
 
 class BatchOrchestratorRoundSemanticsTest(unittest.TestCase):

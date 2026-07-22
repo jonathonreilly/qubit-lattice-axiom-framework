@@ -56,6 +56,7 @@ SUCCESS_RESULTS = {
     "audited_decoration", "audited_numerical_match", "audited_failed",
     "compute_required",
 }
+_COMMAND_CONTEXT = threading.local()
 RESUMABLE_HANDOFF_RESULTS = {"judicial_panel_required"}
 SCHEMA_INVALID_RESULTS = {"malformed_json", "validation_failed"}
 SCHEMA_QUARANTINE_RESULT = "schema_invalid_quarantined"
@@ -142,7 +143,7 @@ def acquire_exclusive_drain_lock(label: str):
     return handle
 
 
-def sh(cmd: list[str], timeout: int | None = None) -> subprocess.CompletedProcess:
+def sh(cmd: list[str], timeout: int | None = 120) -> subprocess.CompletedProcess:
     proc = subprocess.Popen(
         cmd,
         cwd=REPO_ROOT,
@@ -151,17 +152,27 @@ def sh(cmd: list[str], timeout: int | None = None) -> subprocess.CompletedProces
         text=True,
         start_new_session=True,
     )
-    try:
-        stdout, stderr = proc.communicate(timeout=timeout)
-        return subprocess.CompletedProcess(cmd, proc.returncode, stdout, stderr)
-    except subprocess.TimeoutExpired:
+    deadline = time.monotonic() + timeout if timeout is not None else None
+    cancel_event = getattr(_COMMAND_CONTEXT, "cancel_event", None)
+    while True:
+        remaining = None if deadline is None else max(0.0, deadline - time.monotonic())
+        poll_window = 1.0 if remaining is None else min(1.0, remaining)
+        try:
+            stdout, stderr = proc.communicate(timeout=poll_window)
+            return subprocess.CompletedProcess(cmd, proc.returncode, stdout, stderr)
+        except subprocess.TimeoutExpired:
+            cancelled = cancel_event is not None and cancel_event.is_set()
+            timed_out = deadline is not None and time.monotonic() >= deadline
+            if not cancelled and not timed_out:
+                continue
         try:
             os.killpg(proc.pid, signal.SIGKILL)
         except ProcessLookupError:
             pass
         stdout, stderr = proc.communicate()
+        reason = "cancelled" if cancelled else f"timed out after {timeout}s"
         return subprocess.CompletedProcess(
-            cmd, 124, stdout or "", stderr or f"timed out after {timeout}s"
+            cmd, 125 if cancelled else 124, stdout or "", stderr or reason
         )
 
 
@@ -636,26 +647,31 @@ def wait_workers(
     commit_queue: queue.Queue[list[dict] | object] = queue.Queue()
     commit_stop = object()
     commit_failed = threading.Event()
+    commit_cancel = threading.Event()
     commit_errors: list[BaseException] = []
     committer: threading.Thread | None = None
 
     if on_claim_ready is not None:
         def _commit_loop() -> None:
-            while True:
-                item = commit_queue.get()
-                try:
-                    if item is commit_stop:
-                        return
-                    if commit_failed.is_set():
-                        continue
-                    assert isinstance(item, list)
-                    if not on_claim_ready(item):
+            _COMMAND_CONTEXT.cancel_event = commit_cancel
+            try:
+                while True:
+                    item = commit_queue.get()
+                    try:
+                        if item is commit_stop:
+                            return
+                        if commit_failed.is_set():
+                            continue
+                        assert isinstance(item, list)
+                        if not on_claim_ready(item):
+                            commit_failed.set()
+                    except BaseException as exc:
+                        commit_errors.append(exc)
                         commit_failed.set()
-                except BaseException as exc:
-                    commit_errors.append(exc)
-                    commit_failed.set()
-                finally:
-                    commit_queue.task_done()
+                    finally:
+                        commit_queue.task_done()
+            finally:
+                del _COMMAND_CONTEXT.cancel_event
 
         committer = threading.Thread(
             target=_commit_loop,
@@ -744,6 +760,7 @@ def wait_workers(
         terminate_workers([jobs[index] for index in pending])
         if committer is not None and committer.is_alive():
             commit_failed.set()
+            commit_cancel.set()
             commit_queue.put(commit_stop)
             committer.join()
         raise

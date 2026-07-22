@@ -34,6 +34,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 import ledger_io
+import static_pipeline_checkpoint as static_checkpoint
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
 DATA_DIR = REPO_ROOT / "docs" / "audit" / "data"
@@ -271,6 +272,12 @@ def main() -> int:
     }
 
     OUTPUT_PATH.write_text(json.dumps(out, indent=2, sort_keys=True) + "\n")
+    receipt_ok, receipt_detail = static_checkpoint.record_producer_receipt(
+        "runner_classification"
+    )
+    if not receipt_ok:
+        print(f"checkpoint receipt failed: {receipt_detail}")
+        return 1
     print(f"Wrote {OUTPUT_PATH.relative_to(REPO_ROOT)}")
     print(f"  runners classified: {n_runners}")
     print(f"  runners with (C) first-principles compute hits: {n_with_c}")

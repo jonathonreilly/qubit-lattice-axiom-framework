@@ -60,8 +60,16 @@ fi
 # cache use. This binds even direct invocations to the full-build checkpoint
 # and closes the orchestrator-check/shell-use gap.
 if [[ "${PIPELINE_MODE}" == "verdict-only" ]]; then
-  python3 docs/audit/scripts/static_pipeline_checkpoint.py verify
+  AUDIT_STATIC_EXPECTED_NONCE="$(
+    python3 docs/audit/scripts/static_pipeline_checkpoint.py identity
+  )"
+  export AUDIT_STATIC_EXPECTED_NONCE
+  echo "full checkpoint identity ${AUDIT_STATIC_EXPECTED_NONCE} verified for fast use"
 else
+  AUDIT_STATIC_BUILD_NONCE="$(
+    python3 -c 'import secrets; print(secrets.token_hex(16))'
+  )"
+  export AUDIT_STATIC_BUILD_NONCE
   python3 docs/audit/scripts/static_pipeline_checkpoint.py begin
 fi
 

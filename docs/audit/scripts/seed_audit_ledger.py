@@ -23,6 +23,7 @@ from fnmatch import fnmatchcase
 from pathlib import Path
 
 import ledger_io
+import static_pipeline_checkpoint as static_checkpoint
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
 DATA_DIR = REPO_ROOT / "docs" / "audit" / "data"
@@ -668,6 +669,12 @@ def main() -> int:
     ledger_io.ensure_cache()
     ledger = seed()
     ledger_io.save_ledger(ledger)
+    receipt_ok, receipt_detail = static_checkpoint.record_producer_receipt(
+        "seed_ledger"
+    )
+    if not receipt_ok:
+        print(f"checkpoint receipt failed: {receipt_detail}")
+        return 1
     s = ledger["stats"]
     print(f"Wrote {LEDGER_PATH.relative_to(REPO_ROOT)}")
     print(f"  rows: {s['row_count']}")

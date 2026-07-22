@@ -52,6 +52,7 @@ from urllib.parse import unquote, urlsplit
 import premise_nodes
 import ledger_io
 import no_go_discipline_gate
+import audit_contract
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
 DATA_DIR = REPO_ROOT / "docs" / "audit" / "data"
@@ -113,6 +114,12 @@ def audit_summary_tuples_match(first: dict, second: dict) -> bool:
         == second.get("load_bearing_step_class")
         and normalized_negative_assertion_classes(first)
         == normalized_negative_assertion_classes(second)
+        and audit_contract.decoration_parent_tuple_key(
+            first.get("verdict"), first.get("decoration_parent_claim_id")
+        )
+        == audit_contract.decoration_parent_tuple_key(
+            second.get("verdict"), second.get("decoration_parent_claim_id")
+        )
     )
 
 
@@ -124,6 +131,7 @@ def live_row_audit_tuple(row: dict) -> dict:
         "claim_scope": row.get("claim_scope"),
         "load_bearing_step_class": row.get("load_bearing_step_class"),
         "negative_assertion_classes": row.get("negative_assertion_classes"),
+        "decoration_parent_claim_id": row.get("decoration_parent_claim_id"),
     }
 
 
@@ -152,6 +160,13 @@ def audit_summary_tuple_schema_error(summary: object) -> str | None:
         or claim_type not in ALLOWED_CLAIM_TYPES
     ):
         return f"audit summary has invalid claim_type {claim_type!r}"
+    tuple_error = audit_contract.verdict_claim_type_error(
+        verdict,
+        claim_type,
+        summary.get("decoration_parent_claim_id"),
+    )
+    if tuple_error:
+        return f"audit summary has incompatible verdict/claim_type: {tuple_error}"
     scope = summary.get("claim_scope")
     if not isinstance(scope, str) or not scope.strip():
         return "audit summary claim_scope must be a non-empty string"
@@ -1042,13 +1057,15 @@ def main() -> int:
                 errors.append(
                     f"{cid}: confirmed cross-confirmation full audit tuple mismatch "
                     "(verdict, claim_type, normalized claim_scope, "
-                    "load_bearing_step_class, negative_assertion_classes)"
+                    "load_bearing_step_class, decoration_parent_claim_id, "
+                    "negative_assertion_classes)"
                 )
             elif not agreement_schema_present and tuples_match is False:
                 message = (
                     f"{cid}: confirmed cross-confirmation full audit tuple mismatch "
                     "(verdict, claim_type, normalized claim_scope, "
-                    "load_bearing_step_class, negative_assertion_classes)"
+                    "load_bearing_step_class, decoration_parent_claim_id, "
+                    "negative_assertion_classes)"
                 )
                 add_notice(
                     "legacy_cross_confirmation_tuple_mismatch",

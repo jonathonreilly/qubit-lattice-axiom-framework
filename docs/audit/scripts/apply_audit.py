@@ -520,6 +520,12 @@ def audit_tuples_match(first: dict, second: dict) -> bool:
         and normalized_claim_scope(first) == normalized_claim_scope(second)
         and normalized_negative_assertion_classes(first)
         == normalized_negative_assertion_classes(second)
+        and audit_contract.decoration_parent_tuple_key(
+            first.get("verdict"), first.get("decoration_parent_claim_id")
+        )
+        == audit_contract.decoration_parent_tuple_key(
+            second.get("verdict"), second.get("decoration_parent_claim_id")
+        )
     )
 
 
@@ -1179,6 +1185,19 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
                 f"{chosen_label}_audit scope; use sided_with='hybrid' to "
                 "ratify a different scope"
             )
+        ratified_parent = (
+            judgment.get("ratified_decoration_parent_claim_id")
+            or judgment.get("decoration_parent_claim_id")
+        )
+        if audit_contract.decoration_parent_tuple_key(
+            ratified_verdict, ratified_parent
+        ) != audit_contract.decoration_parent_tuple_key(
+            chosen.get("verdict"), chosen.get("decoration_parent_claim_id")
+        ):
+            return False, (
+                "ratified_decoration_parent_claim_id does not match the "
+                f"ratified {chosen_label}_audit parent"
+            )
     ratified_decoration_parent = (
         judgment.get("ratified_decoration_parent_claim_id")
         or judgment.get("decoration_parent_claim_id")
@@ -1375,6 +1394,9 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
     missing = REQUIRED_FIELDS - set(audit)
     if missing:
         return False, f"missing required fields: {sorted(missing)}"
+    compute_error = audit_contract.terminal_compute_required_error(audit)
+    if compute_error:
+        return False, compute_error
 
     cid = audit["claim_id"]
     rows = ledger.get("rows", {})

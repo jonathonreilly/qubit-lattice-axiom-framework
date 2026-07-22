@@ -181,6 +181,107 @@ class SchemaRecoveryTest(unittest.TestCase):
         )
         self.assertIn("optional", result["detail"])
 
+    def test_invalid_optional_packet_is_not_dropped_from_clean(self):
+        invocation = "b" * 32
+        blob = {
+            "claim_id": "row",
+            "audit_invocation_id": invocation,
+            "load_bearing_step": "The exact identity follows.",
+            "load_bearing_step_class": "B",
+            "claim_type": "bounded_theorem",
+            "claim_scope": "The exact identity.",
+            "chain_closes": True,
+            "chain_closure_explanation": "The calculation closes.",
+            "verdict": "audited_clean",
+            "verdict_rationale": "The bounded calculation is complete.",
+            "negative_assertion_classes": [],
+            "notes_for_re_audit_if_any": None,
+            "no_go_discipline": {"required": True, "status": "PASS"},
+        }
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            raw = root / "raw.json"
+            raw.write_text(json.dumps(blob), encoding="utf-8")
+            job = {
+                "cid": "row",
+                "pass": 1,
+                "stalled": False,
+                "returncode": 0,
+                "raw_output": raw,
+                "row": {
+                    "claim_id": "row",
+                    "note_path": "",
+                    "claim_type": "bounded_theorem",
+                },
+                "evidence_manifest": {},
+                "invocation_id": invocation,
+                "transport_bound": None,
+                "auditor": "test-auditor",
+                "independence": "cross_family",
+                "delivery": root / "delivery.json",
+                "workdir": root,
+                "isolated": root,
+            }
+            with mock.patch.object(
+                batch, "packet_completion_pass", return_value=None
+            ) as completion:
+                envelope, result = batch.finalize_worker(job)
+
+        completion.assert_called_once()
+        self.assertIsNone(envelope)
+        self.assertEqual(result["result"], "validation_failed")
+        self.assertIn("N1_alternative_routes", result["detail"])
+
+    def test_terminal_verdict_cannot_mix_compute_required(self):
+        invocation = "c" * 32
+        blob = {
+            "claim_id": "row",
+            "audit_invocation_id": invocation,
+            "load_bearing_step": "The exact identity follows.",
+            "load_bearing_step_class": "B",
+            "claim_type": "bounded_theorem",
+            "claim_scope": "The exact identity.",
+            "chain_closes": True,
+            "chain_closure_explanation": "The calculation closes.",
+            "verdict": "audited_clean",
+            "verdict_rationale": "The bounded calculation is complete.",
+            "negative_assertion_classes": [],
+            "notes_for_re_audit_if_any": None,
+            "no_go_discipline": None,
+            "compute_required": "run the cached certificate",
+        }
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            raw = root / "raw.json"
+            raw.write_text(json.dumps(blob), encoding="utf-8")
+            job = {
+                "cid": "row",
+                "pass": 1,
+                "stalled": False,
+                "returncode": 0,
+                "raw_output": raw,
+                "row": {
+                    "claim_id": "row",
+                    "note_path": "",
+                    "claim_type": "bounded_theorem",
+                },
+                "evidence_manifest": {},
+                "invocation_id": invocation,
+                "transport_bound": None,
+                "auditor": "test-auditor",
+                "independence": "cross_family",
+                "delivery": root / "delivery.json",
+                "workdir": root,
+                "isolated": root,
+            }
+            with mock.patch.object(batch, "packet_completion_pass") as completion:
+                envelope, result = batch.finalize_worker(job)
+
+        completion.assert_not_called()
+        self.assertIsNone(envelope)
+        self.assertEqual(result["result"], "validation_failed")
+        self.assertIn("compute_required cannot accompany", result["detail"])
+
     def test_dep_ready_post_verdict_reset_is_persisted_across_batches(self):
         selected = [{"claim_id": "row"}]
         current = {

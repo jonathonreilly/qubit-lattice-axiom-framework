@@ -104,6 +104,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 import no_go_discipline_gate
+import audit_contract
 
 import ledger_io
 
@@ -293,6 +294,12 @@ def archived_audit_is_lint_compatible(archived: dict) -> bool:
         return False
     if archived.get("claim_type") not in ALLOWED_CLAIM_TYPES:
         return False
+    if audit_contract.verdict_claim_type_error(
+        audit_status,
+        archived.get("claim_type"),
+        archived.get("decoration_parent_claim_id"),
+    ):
+        return False
     if not archived.get("claim_scope"):
         return False
     if archived.get("independence") not in ALLOWED_INDEPENDENCE:
@@ -321,9 +328,24 @@ def archived_audit_is_lint_compatible(archived: dict) -> bool:
     if isinstance(cross, dict):
         for seat_name in ("first_audit", "second_audit", "third_audit"):
             seat = cross.get(seat_name)
-            if not isinstance(seat, dict) or seat.get("verdict") != "audited_clean":
+            if not isinstance(seat, dict):
                 continue
-            if not clean_audit_provenance_is_compatible(seat, top_level=False):
+            seat_verdict = seat.get("verdict")
+            if (
+                seat_verdict in TERMINAL_VERDICTS
+                and audit_contract.verdict_claim_type_error(
+                    seat_verdict,
+                    seat.get("claim_type"),
+                    seat.get("decoration_parent_claim_id"),
+                )
+            ):
+                return False
+            if (
+                seat_verdict == "audited_clean"
+                and not clean_audit_provenance_is_compatible(
+                    seat, top_level=False
+                )
+            ):
                 return False
 
     return True

@@ -357,11 +357,15 @@ ever rescheduling the row for re-audit.
 For high-stakes claims (`criticality = critical` by transitive-descendant
 count; the audit lane does not use author-declared flagship status), a second independent
 agent runs the same audit; the two must agree before `audited_clean` lands.
-If the two audits disagree, the next step is a judicial third-auditor
-review: a fresh auditor reads the restricted source packet and both audit
-arguments, then explicitly ratifies the first audit, the second audit, or
-neither. The ledger records that decision in `cross_confirmation.status`
-and the row's current verdict must match the ratified side.
+If two validator-clean, applyable audits disagree, the next step is a governed
+five-judge panel. Five fresh judges read the restricted source packet and both
+audit arguments, vote on the complete scientific tuple, and explain the error
+in any position they reject. At least three matching votes are required. No
+majority, a majority for neither, or an unapplyable majority launches another
+fresh five-judge panel with all prior outcomes in context. Contract-invalid
+seats are reseated before a panel; they are not scientific disagreements. The
+ledger keeps legacy `third_audit` storage fields for the representative panel
+judgment, but a single third auditor has no authority to resolve disagreement.
 
 ### Pruning phase (per decoration cluster)
 

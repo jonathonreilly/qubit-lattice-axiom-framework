@@ -890,6 +890,24 @@ class ApplyAuditTest(unittest.TestCase):
         self.fx.write_ledger(ledger)
         return path, note_hash
 
+    def test_apply_rejects_terminal_verdict_mixed_with_compute_required(self):
+        m = _import("apply_audit")
+        audit = {field: "fixture" for field in m.REQUIRED_FIELDS}
+        audit.update({
+            "claim_id": "row",
+            "verdict": "audited_clean",
+            "claim_type": "bounded_theorem",
+            "compute_required": "run the cached certificate",
+        })
+        ledger = {"schema_version": 1, "rows": {}}
+        before = copy.deepcopy(ledger)
+
+        ok, detail = m.apply_one(ledger, audit)
+
+        self.assertFalse(ok)
+        self.assertIn("compute_required cannot accompany", detail)
+        self.assertEqual(ledger, before)
+
     def test_apply_clean_verdict_writes_snapshot_with_runner_hash(self):
         m = _import("apply_audit")
         _patch_repo_root(m, self.tmp_root)
@@ -3957,6 +3975,50 @@ class AuditLintTest(unittest.TestCase):
         self.assertFalse(m.audit_summary_tuples_match(
             first, {**equivalent, "negative_assertion_classes": []}
         ))
+
+        first_decoration = {
+            **first,
+            "verdict": "audited_decoration",
+            "claim_type": "decoration",
+            "decoration_parent_claim_id": "parent-a",
+        }
+        second_decoration = {
+            **first_decoration,
+            "decoration_parent_claim_id": "parent-b",
+        }
+        self.assertFalse(
+            m.audit_summary_tuples_match(first_decoration, second_decoration)
+        )
+
+    def test_tuple_contract_rejects_incompatible_semantics(self):
+        m = _import("audit_lint")
+        base = {
+            "verdict": "audited_clean",
+            "claim_type": "bounded_theorem",
+            "claim_scope": "bounded scope",
+            "load_bearing_step_class": "A",
+            "negative_assertion_classes": [],
+        }
+        self.assertIn(
+            "audited_clean cannot ratify claim_type='meta'",
+            m.audit_summary_tuple_schema_error({**base, "claim_type": "meta"}),
+        )
+        self.assertIn(
+            "audited_decoration requires claim_type='decoration'",
+            m.audit_summary_tuple_schema_error({
+                **base,
+                "verdict": "audited_decoration",
+                "decoration_parent_claim_id": "parent",
+            }),
+        )
+        self.assertIn(
+            "requires decoration_parent_claim_id",
+            m.audit_summary_tuple_schema_error({
+                **base,
+                "verdict": "audited_decoration",
+                "claim_type": "decoration",
+            }),
+        )
 
     def test_lint_rejects_confirmed_scope_mismatch(self):
         m = _import("audit_lint")
@@ -10564,7 +10626,7 @@ class CodexAuditRunnerReauditCandidatesTest(unittest.TestCase):
         )
 
         self.assertEqual(role, "skip")
-        self.assertIn("judicial review needed", reason)
+        self.assertIn("governed five-judge panel required", reason)
 
     def test_load_reaudit_candidates_normalizes_sorts_and_filters_streams(self):
         m = _import_codex_audit_runner()
@@ -11626,6 +11688,37 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
             ),
             {"claim_id": "row", "verdict": "audited_failed"},
         )
+        self.assertIn(
+            "compute_required cannot accompany",
+            m.validate_verdict(
+                {
+                    "compute_required": "run the cached certificate",
+                    "claim_id": "row",
+                    "verdict": "audited_clean",
+                },
+                "row",
+            ),
+        )
+
+    def test_prompt_compute_escape_uses_the_closed_json_schema(self):
+        template = (
+            PROJECT_ROOT / "docs" / "audit" / "AUDIT_AGENT_PROMPT_TEMPLATE.md"
+        ).read_text(encoding="utf-8")
+        section = template.split("only non-null value", 1)[1]
+        compute_blob = json.loads(
+            section.split("```json", 1)[1].split("```", 1)[0]
+        )
+        m = _import_codex_audit_runner()
+        schema = m.audit_verdict_output_schema()
+
+        self.assertEqual(set(compute_blob), set(schema["properties"]))
+        self.assertEqual(
+            [key for key, value in compute_blob.items() if value is not None],
+            ["compute_required"],
+        )
+        self.assertNotIn("COMPUTE_REQUIRED:", template)
+        self.assertNotIn("otherwise omit", template)
+        self.assertNotIn("For `PASS`, omit", template)
 
 
 class RelabelUnverifiedCodexAuditsTest(unittest.TestCase):
@@ -11910,6 +12003,41 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
         missing_human_family = dict(human)
         missing_human_family["auditor_family"] = None
         self.assertFalse(m.archived_audit_is_lint_compatible(missing_human_family))
+
+    def test_restore_rejects_incompatible_terminal_tuples(self):
+        m = self._import_and_patch()
+        decoration_as_theorem = self._archived_audit(
+            audit_status="audited_decoration",
+            claim_type="bounded_theorem",
+        )
+        decoration_as_theorem["decoration_parent_claim_id"] = "parent"
+        self.assertFalse(
+            m.archived_audit_is_lint_compatible(decoration_as_theorem)
+        )
+
+        missing_parent = self._archived_audit(
+            audit_status="audited_decoration",
+            claim_type="decoration",
+        )
+        self.assertFalse(m.archived_audit_is_lint_compatible(missing_parent))
+
+        valid_decoration = dict(missing_parent)
+        valid_decoration["decoration_parent_claim_id"] = "parent"
+        self.assertTrue(m.archived_audit_is_lint_compatible(valid_decoration))
+
+        clean_meta = self._archived_audit(claim_type="meta")
+        self.assertFalse(m.archived_audit_is_lint_compatible(clean_meta))
+
+        nested = self._archived_audit(audit_status="audited_conditional")
+        nested["notes_for_re_audit_if_any"] = "other: named repair"
+        nested["cross_confirmation"] = {
+            "first_audit": {
+                "verdict": "audited_decoration",
+                "claim_type": "bounded_theorem",
+                "decoration_parent_claim_id": "parent",
+            }
+        }
+        self.assertFalse(m.archived_audit_is_lint_compatible(nested))
 
     def test_restore_round_trips_and_validates_no_go_packet(self):
         m = self._import_and_patch()
@@ -13698,6 +13826,20 @@ class JudicialPanelOrchestratorTest(unittest.TestCase):
             m.vote_tuple(base),
             m.vote_tuple(self._vote(ratified_verdict="audited_conditional")),
         )
+        decoration_a = self._vote(
+            sided_with="hybrid",
+            ratified_verdict="audited_decoration",
+            ratified_claim_type="decoration",
+            ratified_decoration_parent_claim_id="parent-a",
+            hybrid_resolution_note="retain this as decoration",
+        )
+        decoration_b = {
+            **decoration_a,
+            "ratified_decoration_parent_claim_id": "parent-b",
+        }
+        self.assertNotEqual(
+            m.vote_tuple(decoration_a), m.vote_tuple(decoration_b)
+        )
 
     def test_sided_blob_reuses_seat_scope_and_applies(self):
         m = _import("orchestrate_judicial_panel")
@@ -13867,6 +14009,69 @@ class JudicialPanelOrchestratorTest(unittest.TestCase):
             m.sided_vote_context_error(row, whitespace_equivalent)
         )
 
+        decoration_row = self._row("decoration-row")
+        decoration_row["cross_confirmation"]["first_audit"].update({
+            "verdict": "audited_decoration",
+            "claim_type": "decoration",
+            "decoration_parent_claim_id": "parent-a",
+        })
+        parent_mismatch = self._vote(
+            ratified_verdict="audited_decoration",
+            ratified_claim_type="decoration",
+            ratified_decoration_parent_claim_id="parent-b",
+        )
+        self.assertIn(
+            "decoration_parent_claim_id",
+            m.sided_vote_context_error(decoration_row, parent_mismatch),
+        )
+
+    def test_judicial_apply_cannot_change_selected_decoration_parent(self):
+        panel = _import("orchestrate_judicial_panel")
+        apply_mod = _import("apply_audit")
+        row = self._row("decoration-apply-row")
+        row["cross_confirmation"]["first_audit"].update({
+            "verdict": "audited_decoration",
+            "claim_type": "decoration",
+            "decoration_parent_claim_id": "parent-a",
+        })
+        vote = self._vote(
+            ratified_verdict="audited_decoration",
+            ratified_claim_type="decoration",
+            ratified_decoration_parent_claim_id="parent-a",
+        )
+        blob = panel.judicial_blob(
+            row, vote, [vote] * 5, 5, invocation_id="8" * 32
+        )
+        blob["ratified_decoration_parent_claim_id"] = "parent-b"
+        ledger = {"schema_version": 1, "rows": {row["claim_id"]: row}}
+        before = copy.deepcopy(ledger)
+
+        ok, detail = apply_mod.apply_judicial_review(ledger, blob)
+
+        self.assertFalse(ok)
+        self.assertIn("does not match the ratified first_audit parent", detail)
+        self.assertEqual(ledger, before)
+
+    def test_invalid_stored_seat_is_reseated_before_panel_launch(self):
+        m = _import("orchestrate_judicial_panel")
+        row = self._row("invalid-seat")
+        row["cross_confirmation"]["first_audit"].update({
+            "verdict": "audited_decoration",
+            "claim_type": "bounded_theorem",
+            "decoration_parent_claim_id": "parent",
+        })
+
+        targets, reseat = m.collect_panel_targets(
+            ["invalid-seat"], {"invalid-seat": row}
+        )
+
+        self.assertEqual(targets, [])
+        self.assertEqual(reseat, ["invalid-seat"])
+        self.assertIn(
+            "audited_decoration requires claim_type='decoration'",
+            m.seat_context_error(row),
+        )
+
     def test_rationale_is_invocation_bound_and_preserved_in_new_summaries(self):
         m = _import("orchestrate_judicial_panel")
         row = self._row()
@@ -14013,6 +14218,98 @@ class JudicialPanelOrchestratorTest(unittest.TestCase):
             next(self.tmp.glob("panel-*-round1.json")).read_text(encoding="utf-8")
         )
         self.assertEqual(len(record["votes"]), 4)
+
+    def test_contract_invalid_vote_runs_fresh_full_panel(self):
+        m = _import("orchestrate_judicial_panel")
+        row = self._row()
+        launches = []
+
+        def fake_launch(
+            _packet, _row, judge_no, panel_no, _workdir, prior,
+            _invocation_id, _manifest,
+        ):
+            launches.append((panel_no, judge_no, len(prior)))
+            return {
+                "judge": judge_no,
+                "panel": panel_no,
+                "auditor": f"round-{panel_no}-judge-{judge_no}",
+            }
+
+        def fake_collect(job):
+            if job["panel"] == 1 and job["judge"] == 5:
+                return None, (
+                    f"{m.VOTE_CONTRACT_ERROR_PREFIX}"
+                    "audited_decoration requires claim_type='decoration'"
+                )
+            return self._vote(), "ok"
+
+        with mock.patch.object(
+            m, "render_panel_packet", return_value=("packet", {}, "2" * 32)
+        ), mock.patch.object(
+            m, "launch_judge", side_effect=fake_launch
+        ), mock.patch.object(
+            m.batch, "wait_workers", return_value=None
+        ), mock.patch.object(
+            m, "collect_vote", side_effect=fake_collect
+        ), mock.patch.object(
+            m, "judicial_applyability_error", return_value=None
+        ), mock.patch.object(
+            m,
+            "apply_judgment",
+            return_value=(
+                True,
+                {"cid": "row", "result": "audited_clean", "commit": "abc"},
+            ),
+        ):
+            result = m.run_panel(row, {"row": row}, self.tmp, 1, 1, 1, [])
+
+        self.assertEqual(result["result"], "audited_clean")
+        self.assertEqual(len(launches), 10)
+        self.assertTrue(
+            all(prior == 1 for panel, _judge, prior in launches if panel == 2)
+        )
+        first_record = json.loads(
+            next(self.tmp.glob("panel-*-round1.json")).read_text(encoding="utf-8")
+        )
+        self.assertEqual(first_record["result"], "contract_invalid_retry")
+        self.assertEqual(len(first_record["votes"]), 4)
+        self.assertIn(m.VOTE_CONTRACT_ERROR_PREFIX, first_record["failures"][0])
+
+    def test_contract_invalid_vote_retries_are_bounded(self):
+        m = _import("orchestrate_judicial_panel")
+        row = self._row()
+        launches = []
+
+        def fake_launch(
+            _packet, _row, judge_no, panel_no, _workdir, _prior,
+            _invocation_id, _manifest,
+        ):
+            launches.append((panel_no, judge_no))
+            return {
+                "judge": judge_no,
+                "panel": panel_no,
+                "auditor": f"round-{panel_no}-judge-{judge_no}",
+            }
+
+        def fake_collect(job):
+            if job["judge"] == 5:
+                return None, f"{m.VOTE_CONTRACT_ERROR_PREFIX}invalid tuple"
+            return self._vote(), "ok"
+
+        with mock.patch.object(
+            m, "render_panel_packet", return_value=("packet", {}, "3" * 32)
+        ), mock.patch.object(
+            m, "launch_judge", side_effect=fake_launch
+        ), mock.patch.object(
+            m.batch, "wait_workers", return_value=None
+        ), mock.patch.object(
+            m, "collect_vote", side_effect=fake_collect
+        ), mock.patch.object(m, "apply_judgment") as apply_mock:
+            result = m.run_panel(row, {"row": row}, self.tmp, 1, 1, 1, [])
+
+        self.assertEqual(result["result"], "panel_contract_retries_exhausted")
+        self.assertEqual(len(launches), 15)
+        apply_mock.assert_not_called()
 
     def test_neither_majority_runs_fresh_panel_without_building_blob(self):
         m = _import("orchestrate_judicial_panel")

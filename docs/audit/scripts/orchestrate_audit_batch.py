@@ -896,7 +896,18 @@ def finalize_worker(job: dict) -> tuple[dict | None, dict]:
         ))
 
     optional_packet_dropped = False
-    if error and _packet_error(error) and isinstance(blob.get("no_go_discipline"), dict):
+    forensic_tier = bool(
+        source_requires_no_go
+        or blob.get("claim_type") == "no_go"
+        or audit_runner.no_go_discipline_gate.forensic_mode()
+    )
+    if (
+        error
+        and _packet_error(error)
+        and isinstance(blob.get("no_go_discipline"), dict)
+        and blob.get("verdict") != "audited_clean"
+        and not forensic_tier
+    ):
         # In the development tier a non-clean verdict on a non-no-go source
         # carries its negative judgment in the declaration/rationale; the
         # heavyweight packet is optional.  A volunteered but schema-invalid

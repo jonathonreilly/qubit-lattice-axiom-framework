@@ -112,3 +112,52 @@ word (the echo analog of shell decoupling), and does the slow-free content —
 which is g-INsensitive by construction — exit through the plus-port exhaust at
 first order?  If that also fails, the attempted-family count reaches five and
 a bounded negative claim becomes N1-admissible for the first time.
+
+## Appendix — independent worker cross-check ADJUDICATES AND CORRECTS the
+## mechanism diagnosis (added after the worker's masked-operator computation)
+
+The independent Opus worker computation (own position-rep build of G from the
+c219/c210 modules only; symmetry-block Arnoldi, ARPACK-confirmed, residuals
+<= 9e-15) supersedes two mechanism claims in the body of this note:
+
+1. **The contact-off retention was a frozen-geometry artifact, not
+   near-origin free content.**  The literal frozen operator
+   (1 - Pi_{|r|inf==3}) G has dominant eigenvalue |lambda| = 1.0000000 with
+   its eigenvector living ENTIRELY at Chebyshev radius 4: the surface-only
+   shell at radius 3 does not enclose the periodic minimal-image radius-4
+   ring, which is a near-lossless invariant subspace.  The body's sentence
+   attributing the retention to "stationary (d,d) direction pairs remixed by
+   the coin" is **withdrawn** as the mechanism of the observed retention.
+   (The jump-over risk was flagged in the supervisor's design analysis and
+   the surface geometry was frozen anyway — recorded as a contract-design
+   error.)
+2. **The purification plateau is caused by a second long-lived interior A2
+   resonance, not by generic slow dust.**  For the corrected absorbing-ball
+   operators (removing radius >= 3, and the clean R4 ball), the dominant
+   eigenpair is an antisymmetric proper-cubic A2 interior quasi-bound mode
+   at (|lambda|, arg lambda) = (0.99910937, +0.30655) [ball r<=2] and
+   (0.99981521, +0.31182) [ball r<=3], radius profile concentrated at
+   r <= 2 with ZERO weight at r >= 3, survival^256 = 0.796 / 0.954.  Its
+   phase coincides numerically with the dust-lock winding rate of Cycles
+   610-622 (+0.3136 rad = +0.0499 rev): the "dust lock" is evidently a
+   coherent second A2 line, not featureless dust, and it outlives the
+   Birman-Schwinger bound state under spatial absorption — which is the
+   correct explanation of the D-1 purity plateau at ~0.45.
+3. Consequences, stated with N-discipline: the D-1 falsification stands AS
+   RUN (the frozen rows failed), but its mechanism attribution is corrected,
+   and "geometric filtering is excluded" is **narrowed** to "surface-shell
+   filtering is excluded and ball filtering is compromised by the second A2
+   resonance."  Whether the +0.31 mode is contact-dependent (a second
+   contact-bound internal A2 state — the object whose held absence was the
+   Cycle-578/583/599 open item, which would make a two-line vernier clock
+   physical) or a contact-independent lattice/cavity resonance is NOT
+   determined here: the worker ran only g = 0.37.  That single discriminator
+   (g = 0 versus g = 0.37 ball-absorber spectra, then a two-line beat word)
+   is the decisive question of the next campaign, replacing the note body's
+   earlier next-campaign paragraph.
+
+Worker artifacts (session scratchpad), SHA-256:
+masked_eigen.json  55b39c2f2c39262750a367e13f4dd825  (full hash in work log)
+masked_eigen.py    (full hash in work log)
+This appendix changes only the human-readable note; the runner, receipt, and
+cold transcript remain byte-frozen as run.

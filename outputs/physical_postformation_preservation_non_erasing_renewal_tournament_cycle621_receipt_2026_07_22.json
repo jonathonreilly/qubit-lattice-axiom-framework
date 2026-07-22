@@ -1,0 +1,1443 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "axiom_pressure": false,
+  "constitutional_effect": "none",
+  "domain_controls": {
+    "Cycle614_matter_unchanged_at_formation": true,
+    "finite_preservation_called_all_future_permanence": false,
+    "held_interfaces": {
+      "finite_medium": [
+        "H3",
+        "held_out_H4",
+        "held_H6"
+      ],
+      "matter_detector": [
+        "L3",
+        "held_out_L4",
+        "held_L6"
+      ],
+      "paired_carrier": [
+        "L3",
+        "held_out_L4",
+        "held_L6"
+      ]
+    },
+    "incoming_time_PR": {
+      "consumed": false,
+      "dependency": false,
+      "possible_future_interface": "a locally integrated branch label may be tested as matter/clock payload only",
+      "would_supply_Record_law_or_permanence": false
+    },
+    "malformed_rejections": 8,
+    "malformed_total": 8,
+    "one_particle_mass_fixture_residual": 1.1102230246251565e-16,
+    "packet_called_Record_or_actuality": false,
+    "paired_carrier_called_tail_sector": false,
+    "pass": true,
+    "saturated_terminal_called_renewal": false,
+    "supplied_algebra_called_derived_Record_law": false
+  },
+  "elapsed_seconds": 1.0955999169964343,
+  "frozen_law_sha256": "b0d5cbb504f395f9ee4802a11afe03553cb268d02acae3355a17a97ada34f37d",
+  "highest_honest_terminal": "supplied finite preserving algebra plus finite paired carrier and saturated terminal; not a derived physical Record law, actuality, all-future permanence, non-erasing renewal, or time",
+  "maturity": {
+    "Born_probability_repo_strict": [
+      4.21,
+      3.69
+    ],
+    "causal_time_repo_strict": [
+      4.1,
+      3.91
+    ],
+    "gravity_source_repo_strict": [
+      4.14,
+      3.89
+    ],
+    "inertia_matter_repo_strict": [
+      4.85,
+      4.9
+    ],
+    "operational_quantum_records_repo_strict": [
+      4.9,
+      4.78
+    ]
+  },
+  "maximum_RSS_bytes": 31178752,
+  "no_go_discipline": {
+    "N1_attempted_qualifying_families": 3,
+    "N1_broad_negative_gate": "FAIL_DO_NOT_SHIP",
+    "N1_normalized_route_families": [
+      {
+        "family": "lock-controlled constrained local algebra",
+        "mechanism": "negative-LOCK packet gates and generator-wise projector fixation",
+        "object": "Cycle614 packet plus local LOCK/provenance/readout/matter block",
+        "status": "ATTEMPTED_POSITIVE_CONDITIONAL",
+        "terminal": "derive that this supplied generator algebra is exactly the framework's physical future-operation class"
+      },
+      {
+        "family": "finite paired neutral carrier",
+        "mechanism": "local paired formation and conserved Q_d=plus-minus",
+        "object": "mobile plus label and anchored minus exhaust on L3/L4/L6",
+        "status": "ATTEMPTED_POSITIVE_NEUTRAL",
+        "terminal": "nonzero sector entry or an independently preserving superselection law"
+      },
+      {
+        "family": "finite explicit medium and saturated terminal",
+        "mechanism": "finite append followed by a packet-fixing matter/clock terminal permutation",
+        "object": "frontier/blank/exhaust/occupancy/archive ledger",
+        "status": "ATTEMPTED_POSITIVE_TERMINAL",
+        "terminal": "non-erasing renewal beyond finite saturation"
+      },
+      {
+        "family": "dissipative metastable error-correcting medium",
+        "mechanism": "energy barrier, autonomous correction, and entropy/exhaust export",
+        "object": "open local bath plus protected code",
+        "status": "OPEN_NOT_COUNTED",
+        "terminal": "derive bath state, local detailed balance, formation, and renewal"
+      },
+      {
+        "family": "infinite quasilocal charge representation",
+        "mechanism": "finite-time local preparation approaching a protected thermodynamic label",
+        "object": "tail algebra or inequivalent representation sector",
+        "status": "OPEN_NOT_COUNTED",
+        "terminal": "construct lawful finite-time entry, readable content, and local accessibility bounds"
+      },
+      {
+        "family": "translation-invariant expanding or fractal archive",
+        "mechanism": "local reversible growth with conserved exhaust and nonoverwriting copies",
+        "object": "self-similar fresh-medium front in an unbounded lattice",
+        "status": "OPEN_NOT_COUNTED",
+        "terminal": "derive genesis, density/capacity law, covariance, and noise tolerance"
+      }
+    ],
+    "N1_required_for_broad_negative": 5,
+    "N2_all_ordered_pairs_independent_on_exhibited_interfaces": true,
+    "N2_collapsed_walls": {
+      "W_activation": "derive local activation of preservation at formation while retaining pre-formation coherence and dynamics",
+      "W_actuality": "identify the admitted basis packet with an actual framework Record and its content owner",
+      "W_algebra": "derive which post-formation local operations are physical rather than supply a preserving generator restriction",
+      "W_capacity": "derive non-erasing fresh-medium renewal or justify finite saturation as the complete physical terminal",
+      "W_permanence": "lift finite declared-algebra fixation to arbitrary/infinite/noisy future physical preservation"
+    },
+    "N2_directional_pair_count": 20,
+    "N2_directional_wall_pairs": [
+      {
+        "closure_implied": false,
+        "from": "W_algebra",
+        "reason": "closing W_algebra neither constructs nor logically selects W_activation",
+        "to": "W_activation"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_algebra",
+        "reason": "closing W_algebra neither constructs nor logically selects W_permanence",
+        "to": "W_permanence"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_algebra",
+        "reason": "closing W_algebra neither constructs nor logically selects W_capacity",
+        "to": "W_capacity"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_algebra",
+        "reason": "closing W_algebra neither constructs nor logically selects W_actuality",
+        "to": "W_actuality"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_activation",
+        "reason": "closing W_activation neither constructs nor logically selects W_algebra",
+        "to": "W_algebra"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_activation",
+        "reason": "closing W_activation neither constructs nor logically selects W_permanence",
+        "to": "W_permanence"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_activation",
+        "reason": "closing W_activation neither constructs nor logically selects W_capacity",
+        "to": "W_capacity"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_activation",
+        "reason": "closing W_activation neither constructs nor logically selects W_actuality",
+        "to": "W_actuality"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_permanence",
+        "reason": "closing W_permanence neither constructs nor logically selects W_algebra",
+        "to": "W_algebra"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_permanence",
+        "reason": "closing W_permanence neither constructs nor logically selects W_activation",
+        "to": "W_activation"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_permanence",
+        "reason": "closing W_permanence neither constructs nor logically selects W_capacity",
+        "to": "W_capacity"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_permanence",
+        "reason": "closing W_permanence neither constructs nor logically selects W_actuality",
+        "to": "W_actuality"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_capacity",
+        "reason": "closing W_capacity neither constructs nor logically selects W_algebra",
+        "to": "W_algebra"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_capacity",
+        "reason": "closing W_capacity neither constructs nor logically selects W_activation",
+        "to": "W_activation"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_capacity",
+        "reason": "closing W_capacity neither constructs nor logically selects W_permanence",
+        "to": "W_permanence"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_capacity",
+        "reason": "closing W_capacity neither constructs nor logically selects W_actuality",
+        "to": "W_actuality"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_actuality",
+        "reason": "closing W_actuality neither constructs nor logically selects W_algebra",
+        "to": "W_algebra"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_actuality",
+        "reason": "closing W_actuality neither constructs nor logically selects W_activation",
+        "to": "W_activation"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_actuality",
+        "reason": "closing W_actuality neither constructs nor logically selects W_permanence",
+        "to": "W_permanence"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_actuality",
+        "reason": "closing W_actuality neither constructs nor logically selects W_capacity",
+        "to": "W_capacity"
+      }
+    ],
+    "N3_hidden_wall_scan": "Cycle614 candidate law/circuit and blank packet; supplied future-generator list; LOCK/provenance genesis; generator schedule boundary and negative-control X-open/close microsteps; finite noiseless gates and joint-line chart; L3/L4/L6 carrier topology; paired exhaust; H3/H4/H6 empty medium/frontier; saturated-terminal rule; matter/clock internal rails; site-tagged packet identity; and held cuts are explicit",
+    "N4_exact_residual_matching": [
+      {
+        "current_residual": "post-formation algebra fixation and capacity after finite saturation",
+        "match": true,
+        "witness": "Cycle614",
+        "witness_residual": "finite archive protection and candidate admission below Record/permanence"
+      },
+      {
+        "current_residual": "explicit H3/H4/H6 medium relabel/inverse/saturation",
+        "match": true,
+        "witness": "Cycle571",
+        "witness_residual": "finite append inverse and fresh-medium renewal below Record"
+      },
+      {
+        "current_residual": "finite inverse and packet-status boundary",
+        "match": true,
+        "witness": "Cycle587",
+        "witness_residual": "redundancy inverse erases packet and does not select Record"
+      },
+      {
+        "current_residual": "Route-A preserving generator algebra is supplied implementation content",
+        "match": true,
+        "witness": "Admissibility continuation refinement",
+        "witness_residual": "block-preserving algebra only after restriction is supplied"
+      },
+      {
+        "current_residual": "finite locked packet and saturated archive remain conditional",
+        "match": true,
+        "witness": "fresh-site permanence theorem",
+        "witness_residual": "finite site-tagged retention is conditional representation, not physical formation dynamics"
+      }
+    ],
+    "N5_rhetoric_audit": [
+      {
+        "phrase": "supplied preserving algebra is not a derived Record law",
+        "tested": "one 123-M2 block, 91 generators, all six packet contents, all ordered generator pairs",
+        "untested": "general lattices, arbitrary channels, noise, infinite future",
+        "wording": "finite supplied-algebra scoped"
+      },
+      {
+        "phrase": "neutral paired carrier is not superselection protection",
+        "tested": "L3/L4/L6 local pair formation/motion with every Q_d=0",
+        "untested": "nonzero/infinite tail sectors and dissipative charges",
+        "wording": "finite neutral-carrier scoped"
+      },
+      {
+        "phrase": "spent/ready relabeling does not renew blank capacity",
+        "tested": "every occupied slot at H3/H4/H6 under the explicit ledger",
+        "untested": "expanding/infinite/dissipative media",
+        "wording": "specific finite-ledger scoped"
+      }
+    ],
+    "N6_partial_closure_paths": [
+      "derive the physical future-operation algebra and compare it generator-by-generator with Route A",
+      "derive formation-triggered local constraints from the extensional Admissibility successor law",
+      "derive a thermodynamic or topological limit with finite-time local entry and readable labels",
+      "derive a translation-invariant expanding archive or accept a separately justified saturated terminal",
+      "identify actual Record formation before applying any permanence clause to the candidate packet"
+    ],
+    "N7_hostile_steelman": "A dissipative topological or fracton-like QCA could locally nucleate a neutral defect pair, bind one defect to the admitted packet, drive the partner/exhaust outward, and make every low-energy future channel fix the bound label while a translation-invariant growth front continually recruits fresh cells.  The concrete terminal is a local Hamiltonian/channel family, a prepared bath state, finite-time entry estimate, autonomous correction bound, and conserved source ledger.  Routes A-C do not test that mechanism, so a broad no-go is premature.",
+    "N8_cross_cycle_echo": "Cycles571/587 exposed reversible finite append and archive erasure; Cycle614 retired runtime admission bits and then materialized the local predicate circuit.  The Admissibility continuation note exhibited supplied block restriction. Because earlier host-wiring gaps closed by explicit compilers, operation-algebra derivation, dissipative protection, infinite sectors, and expanding archives remain live constructive routes.",
+    "axiom_pressure": false,
+    "minimum_content_claim_shipped": false,
+    "negative_claim_shipped": false,
+    "pass": true,
+    "shared_substrate_obstruction": false
+  },
+  "note_contract": {
+    "missing": [],
+    "pass": true,
+    "required_fragments": [
+      "authority: none",
+      "audit: unset",
+      "supplied finite local operation algebra",
+      "implementation, not a derivation",
+      "finite preservation is not all-future permanence",
+      "packet remains neither actuality nor a framework record",
+      "no non-erasing renewal",
+      "not a reimplementation or reevaluation of cycle-614 science",
+      "every generator fixes every packet-content projector",
+      "induction gives fixation",
+      "declared 91-generator operation monoid",
+      "formation does not freeze",
+      "not called a tail sector",
+      "neutral paired occupancy",
+      "positive finite saturated terminal",
+      "incoming time pr is not consumed",
+      "all 24 proper-cubic",
+      "held_out",
+      "n1",
+      "n8",
+      "broad no-go: fail / do not ship",
+      "no axiom pressure"
+    ]
+  },
+  "note_sha256": "a52395a57fb34b6d827a677a43528033e913cde2f98ce708a276507f6e1e353e",
+  "optimal_next_campaign": "derive or falsify the physical post-formation operation class from the extensional Admissibility successor law; in parallel attack dissipative/topological protection and translation-invariant expanding fresh-medium fronts",
+  "pass": true,
+  "route_A_constrained_operation_algebra": {
+    "Cycle614_block_M2": 92,
+    "LOCK_M2": 1,
+    "LOCK_disturbance_failures": 0,
+    "LOCK_intermediate_X_open_close_not_a_persistent_output": true,
+    "algebraic_all_finite_composition_preservation_proof": {
+      "composition_theorem": "each generator fixes every packet coordinate and LOCK on LOCK=1; therefore every finite composition in the declared 91-generator operation monoid fixes each packet-content projector by induction",
+      "matter_clock_generators": "support is disjoint from all packet and LOCK coordinates",
+      "negative_LOCK_packet_generator": "q -> q XOR ((1-LOCK)*TRANSIENT), LOCK -> LOCK",
+      "packet_read_generator": "(q,r) -> (q,r XOR q); q is fixed",
+      "pair_enumeration_role": "finite control only, not the proof of arbitrary-word preservation"
+    },
+    "all24_generator_closure_tests": 2184,
+    "all24_generator_family_closure_failures": 0,
+    "allowed_generator_count": 91,
+    "clock_M2": 1,
+    "disposition": "positive supplied lock-controlled finite local operation algebra",
+    "dynamic_generator_count": 37,
+    "finite_algebra_called_all_future_permanence": false,
+    "formation_deletion_visible": true,
+    "formation_failures": 0,
+    "formation_inverse_failures": 0,
+    "formation_rows": [
+      {
+        "ADMIT_provenance": 1,
+        "LOCK": 1,
+        "direction": 0,
+        "retained_ADMIT": 1
+      },
+      {
+        "ADMIT_provenance": 1,
+        "LOCK": 1,
+        "direction": 1,
+        "retained_ADMIT": 1
+      },
+      {
+        "ADMIT_provenance": 1,
+        "LOCK": 1,
+        "direction": 2,
+        "retained_ADMIT": 1
+      },
+      {
+        "ADMIT_provenance": 1,
+        "LOCK": 1,
+        "direction": 3,
+        "retained_ADMIT": 1
+      },
+      {
+        "ADMIT_provenance": 1,
+        "LOCK": 1,
+        "direction": 4,
+        "retained_ADMIT": 1
+      },
+      {
+        "ADMIT_provenance": 1,
+        "LOCK": 1,
+        "direction": 5,
+        "retained_ADMIT": 1
+      }
+    ],
+    "future_operation_restriction_derived_as_framework_law": false,
+    "generator_family_counts": {
+      "clock": 1,
+      "matter": 30,
+      "matter_clock": 6,
+      "negative_lock_packet": 27,
+      "packet_read": 27
+    },
+    "generator_projector_failures": 0,
+    "generator_schedule_boundary_supplied": true,
+    "generator_tests": 1092,
+    "locality": {
+      "forward_reverse_adjacent_SWAPS": 18870,
+      "literal_NN_calls": 57135,
+      "literal_gate_count": 525,
+      "literal_gate_kinds": {
+        "CNOT": 209,
+        "H": 54,
+        "T": 108,
+        "Tdg": 81,
+        "X": 73
+      },
+      "logical_gate_count": 147,
+      "logical_gate_kinds": {
+        "CNOT": 47,
+        "TOFFOLI": 27,
+        "X": 73
+      },
+      "maximum_literal_support_M2": 2,
+      "maximum_unrouted_pair_distance_M2": 94,
+      "operand_or_restoration_failures": 0,
+      "pass": true,
+      "route_failures": 0,
+      "schedule_and_route_SHA256": "f4ef1aac8e51828338296a38c28d3a610939ef5df753c1cb0ee28443c04ee42b",
+      "toffoli_identity_pass": true
+    },
+    "matter_clock_nontrivial_at_LOCK1_generators": 37,
+    "negative_LOCK_preformation_nontrivial_generators": 27,
+    "new_M2": 31,
+    "ordered_generator_pair_controls": 49686,
+    "ordered_pair_control_failures": 0,
+    "packet_called_framework_Record": false,
+    "pass": true,
+    "preformation_coherent_Gram_off_diagonal_count": 0,
+    "preformation_coherent_sectors_retained": 2,
+    "preformation_schedule_is_reversible_permutation": true,
+    "readout_M2": 27,
+    "retained_ADMIT_provenance_M2": 1,
+    "total_M2": 123,
+    "transient_M2": 1
+  },
+  "route_B_finite_paired_carrier": {
+    "Q_definition": "Q_d = sum_x plus[x,d] - sum_x minus[x,d]",
+    "all24_label_covariance_failures": 0,
+    "all24_label_covariance_tests": 864,
+    "all_Q_d_remain_zero_under_correct_formation_and_motion": true,
+    "called_permanent_Record": false,
+    "called_tail_or_superselection_sector": false,
+    "deletion_failures": 0,
+    "disposition": "positive finite paired neutral carrier with mobile label and anchored formation exhaust",
+    "failures": 0,
+    "finite_local_formation_enters_neutral_paired_occupancy": true,
+    "finite_local_formation_enters_nonzero_conserved_Q_sector": false,
+    "formation_inverse_erases_pair": true,
+    "pass": true,
+    "proper_cubic_frames": 24,
+    "rows": [
+      {
+        "direction_rows": [
+          {
+            "charges_after_formation": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "direction": 0,
+            "motion_positions": [
+              1,
+              2,
+              0
+            ]
+          },
+          {
+            "charges_after_formation": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "direction": 1,
+            "motion_positions": [
+              1,
+              2,
+              0
+            ]
+          },
+          {
+            "charges_after_formation": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "direction": 2,
+            "motion_positions": [
+              1,
+              2,
+              0
+            ]
+          },
+          {
+            "charges_after_formation": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "direction": 3,
+            "motion_positions": [
+              1,
+              2,
+              0
+            ]
+          },
+          {
+            "charges_after_formation": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "direction": 4,
+            "motion_positions": [
+              1,
+              2,
+              0
+            ]
+          },
+          {
+            "charges_after_formation": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "direction": 5,
+            "motion_positions": [
+              1,
+              2,
+              0
+            ]
+          }
+        ],
+        "finite_rotation_recurrence_failures": 0,
+        "formation_logical_CNOT": 12,
+        "inverse_failures": 0,
+        "length": 3,
+        "locality": {
+          "forward_reverse_adjacent_SWAPS": 1200,
+          "literal_NN_calls": 3648,
+          "literal_gate_count": 48,
+          "literal_gate_kinds": {
+            "CNOT": 48
+          },
+          "logical_gate_count": 48,
+          "logical_gate_kinds": {
+            "CNOT": 48
+          },
+          "maximum_literal_support_M2": 2,
+          "maximum_unrouted_pair_distance_M2": 45,
+          "operand_or_restoration_failures": 0,
+          "pass": true,
+          "route_failures": 0,
+          "schedule_and_route_SHA256": "354ec7b78a55a1d118fcf4caf5533b0d17f734cc83aa0223af42b202c248b614",
+          "toffoli_identity_pass": true
+        },
+        "new_carrier_M2_beyond_packet_and_LOCK": 36,
+        "one_rotation_logical_CNOT": 36,
+        "packet_change_failures": 0,
+        "sector_leakage_failures": 0,
+        "split": "train",
+        "total_M2": 64
+      },
+      {
+        "direction_rows": [
+          {
+            "charges_after_formation": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "direction": 0,
+            "motion_positions": [
+              1,
+              2,
+              3,
+              0
+            ]
+          },
+          {
+            "charges_after_formation": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "direction": 1,
+            "motion_positions": [
+              1,
+              2,
+              3,
+              0
+            ]
+          },
+          {
+            "charges_after_formation": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "direction": 2,
+            "motion_positions": [
+              1,
+              2,
+              3,
+              0
+            ]
+          },
+          {
+            "charges_after_formation": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "direction": 3,
+            "motion_positions": [
+              1,
+              2,
+              3,
+              0
+            ]
+          },
+          {
+            "charges_after_formation": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "direction": 4,
+            "motion_positions": [
+              1,
+              2,
+              3,
+              0
+            ]
+          },
+          {
+            "charges_after_formation": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "direction": 5,
+            "motion_positions": [
+              1,
+              2,
+              3,
+              0
+            ]
+          }
+        ],
+        "finite_rotation_recurrence_failures": 0,
+        "formation_logical_CNOT": 12,
+        "inverse_failures": 0,
+        "length": 4,
+        "locality": {
+          "forward_reverse_adjacent_SWAPS": 1452,
+          "literal_NN_calls": 4422,
+          "literal_gate_count": 66,
+          "literal_gate_kinds": {
+            "CNOT": 66
+          },
+          "logical_gate_count": 66,
+          "logical_gate_kinds": {
+            "CNOT": 66
+          },
+          "maximum_literal_support_M2": 2,
+          "maximum_unrouted_pair_distance_M2": 51,
+          "operand_or_restoration_failures": 0,
+          "pass": true,
+          "route_failures": 0,
+          "schedule_and_route_SHA256": "93bb3ed49d25af8a543f59323e1f2d0f9e2bb6ffe46bc90caab4a24db8cc519c",
+          "toffoli_identity_pass": true
+        },
+        "new_carrier_M2_beyond_packet_and_LOCK": 48,
+        "one_rotation_logical_CNOT": 54,
+        "packet_change_failures": 0,
+        "sector_leakage_failures": 0,
+        "split": "held_out",
+        "total_M2": 76
+      },
+      {
+        "direction_rows": [
+          {
+            "charges_after_formation": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "direction": 0,
+            "motion_positions": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              0
+            ]
+          },
+          {
+            "charges_after_formation": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "direction": 1,
+            "motion_positions": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              0
+            ]
+          },
+          {
+            "charges_after_formation": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "direction": 2,
+            "motion_positions": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              0
+            ]
+          },
+          {
+            "charges_after_formation": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "direction": 3,
+            "motion_positions": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              0
+            ]
+          },
+          {
+            "charges_after_formation": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "direction": 4,
+            "motion_positions": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              0
+            ]
+          },
+          {
+            "charges_after_formation": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "direction": 5,
+            "motion_positions": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              0
+            ]
+          }
+        ],
+        "finite_rotation_recurrence_failures": 0,
+        "formation_logical_CNOT": 12,
+        "inverse_failures": 0,
+        "length": 6,
+        "locality": {
+          "forward_reverse_adjacent_SWAPS": 1956,
+          "literal_NN_calls": 5970,
+          "literal_gate_count": 102,
+          "literal_gate_kinds": {
+            "CNOT": 102
+          },
+          "logical_gate_count": 102,
+          "logical_gate_kinds": {
+            "CNOT": 102
+          },
+          "maximum_literal_support_M2": 2,
+          "maximum_unrouted_pair_distance_M2": 63,
+          "operand_or_restoration_failures": 0,
+          "pass": true,
+          "route_failures": 0,
+          "schedule_and_route_SHA256": "65f8d5f4e0d96dcc2699cfc1e709a607bb3b60b45aab19ba671719f0e2f40616",
+          "toffoli_identity_pass": true
+        },
+        "new_carrier_M2_beyond_packet_and_LOCK": 72,
+        "one_rotation_logical_CNOT": 90,
+        "packet_change_failures": 0,
+        "sector_leakage_failures": 0,
+        "split": "held",
+        "total_M2": 100
+      }
+    ]
+  },
+  "route_C_finite_medium_saturation": {
+    "all_blank_exhaust_occupancy_frontier_packet_bits_accounted": true,
+    "deletion_failures": 0,
+    "disposition": "positive finite saturated terminal; non-erasing renewal not achieved by spent/ready relabeling",
+    "external_blank_stream_imported": false,
+    "failures": 0,
+    "finite_saturated_terminal_achieved": true,
+    "finite_terminal_called_permanence": false,
+    "inverse_recovery_preserves_archive": false,
+    "non_erasing_renewal_achieved": false,
+    "pass": true,
+    "recurrence_label_called_time": false,
+    "renewal_control_failures": 0,
+    "rows": [
+      {
+        "capacity": 3,
+        "complete_inverse_returns_genesis_only_by_erasing_archive": true,
+        "deletions": [
+          {
+            "blank": 2,
+            "blank_plus_exhaust": 3,
+            "deletion": "frontier-advance",
+            "exhaust": 1,
+            "frontier": 0,
+            "occupancy": 1,
+            "packets": 1,
+            "visible": true
+          },
+          {
+            "blank": 3,
+            "blank_plus_exhaust": 4,
+            "deletion": "blank-debit",
+            "exhaust": 1,
+            "frontier": 1,
+            "occupancy": 1,
+            "packets": 1,
+            "visible": true
+          },
+          {
+            "blank": 2,
+            "blank_plus_exhaust": 2,
+            "deletion": "exhaust-credit",
+            "exhaust": 0,
+            "frontier": 1,
+            "occupancy": 1,
+            "packets": 1,
+            "visible": true
+          },
+          {
+            "blank": 2,
+            "blank_plus_exhaust": 3,
+            "deletion": "occupancy-write",
+            "exhaust": 1,
+            "frontier": 1,
+            "occupancy": 0,
+            "packets": 1,
+            "visible": true
+          },
+          {
+            "blank": 2,
+            "blank_plus_exhaust": 3,
+            "deletion": "packet-write",
+            "exhaust": 1,
+            "frontier": 1,
+            "occupancy": 1,
+            "packets": 0,
+            "visible": true
+          }
+        ],
+        "explicit_M2": 102,
+        "ledger_layout": {
+          "blank": 3,
+          "clock": 1,
+          "exhaust": 3,
+          "frontier_onehot": 4,
+          "matter_endpoint": 6,
+          "matter_internal": 1,
+          "occupancy": 3,
+          "packet": 81
+        },
+        "saturation_refuses_further_formation": true,
+        "snapshots": [
+          {
+            "blank": 2,
+            "blank_plus_exhaust": 3,
+            "exhaust": 1,
+            "forward_application_label_not_time": 1,
+            "frontier": 1,
+            "occupancy": 1,
+            "packets": 1
+          },
+          {
+            "blank": 1,
+            "blank_plus_exhaust": 3,
+            "exhaust": 2,
+            "forward_application_label_not_time": 2,
+            "frontier": 2,
+            "occupancy": 2,
+            "packets": 2
+          },
+          {
+            "blank": 0,
+            "blank_plus_exhaust": 3,
+            "exhaust": 3,
+            "forward_application_label_not_time": 3,
+            "frontier": 3,
+            "occupancy": 3,
+            "packets": 3
+          }
+        ],
+        "spent_ready_relabel_controls": [
+          {
+            "fresh": false,
+            "lawful_archive_word": false,
+            "occupied": 1,
+            "ready_label_after_relabel": 1,
+            "slot": 0
+          },
+          {
+            "fresh": false,
+            "lawful_archive_word": false,
+            "occupied": 1,
+            "ready_label_after_relabel": 1,
+            "slot": 1
+          },
+          {
+            "fresh": false,
+            "lawful_archive_word": false,
+            "occupied": 1,
+            "ready_label_after_relabel": 1,
+            "slot": 2
+          }
+        ],
+        "split": "train",
+        "terminal_matter_clock_step_nontrivial": true,
+        "terminal_preserves_all_packets": true,
+        "terminal_two_step_recurrence_not_time": true
+      },
+      {
+        "capacity": 4,
+        "complete_inverse_returns_genesis_only_by_erasing_archive": true,
+        "deletions": [
+          {
+            "blank": 3,
+            "blank_plus_exhaust": 4,
+            "deletion": "frontier-advance",
+            "exhaust": 1,
+            "frontier": 0,
+            "occupancy": 1,
+            "packets": 1,
+            "visible": true
+          },
+          {
+            "blank": 4,
+            "blank_plus_exhaust": 5,
+            "deletion": "blank-debit",
+            "exhaust": 1,
+            "frontier": 1,
+            "occupancy": 1,
+            "packets": 1,
+            "visible": true
+          },
+          {
+            "blank": 3,
+            "blank_plus_exhaust": 3,
+            "deletion": "exhaust-credit",
+            "exhaust": 0,
+            "frontier": 1,
+            "occupancy": 1,
+            "packets": 1,
+            "visible": true
+          },
+          {
+            "blank": 3,
+            "blank_plus_exhaust": 4,
+            "deletion": "occupancy-write",
+            "exhaust": 1,
+            "frontier": 1,
+            "occupancy": 0,
+            "packets": 1,
+            "visible": true
+          },
+          {
+            "blank": 3,
+            "blank_plus_exhaust": 4,
+            "deletion": "packet-write",
+            "exhaust": 1,
+            "frontier": 1,
+            "occupancy": 1,
+            "packets": 0,
+            "visible": true
+          }
+        ],
+        "explicit_M2": 133,
+        "ledger_layout": {
+          "blank": 4,
+          "clock": 1,
+          "exhaust": 4,
+          "frontier_onehot": 5,
+          "matter_endpoint": 6,
+          "matter_internal": 1,
+          "occupancy": 4,
+          "packet": 108
+        },
+        "saturation_refuses_further_formation": true,
+        "snapshots": [
+          {
+            "blank": 3,
+            "blank_plus_exhaust": 4,
+            "exhaust": 1,
+            "forward_application_label_not_time": 1,
+            "frontier": 1,
+            "occupancy": 1,
+            "packets": 1
+          },
+          {
+            "blank": 2,
+            "blank_plus_exhaust": 4,
+            "exhaust": 2,
+            "forward_application_label_not_time": 2,
+            "frontier": 2,
+            "occupancy": 2,
+            "packets": 2
+          },
+          {
+            "blank": 1,
+            "blank_plus_exhaust": 4,
+            "exhaust": 3,
+            "forward_application_label_not_time": 3,
+            "frontier": 3,
+            "occupancy": 3,
+            "packets": 3
+          },
+          {
+            "blank": 0,
+            "blank_plus_exhaust": 4,
+            "exhaust": 4,
+            "forward_application_label_not_time": 4,
+            "frontier": 4,
+            "occupancy": 4,
+            "packets": 4
+          }
+        ],
+        "spent_ready_relabel_controls": [
+          {
+            "fresh": false,
+            "lawful_archive_word": false,
+            "occupied": 1,
+            "ready_label_after_relabel": 1,
+            "slot": 0
+          },
+          {
+            "fresh": false,
+            "lawful_archive_word": false,
+            "occupied": 1,
+            "ready_label_after_relabel": 1,
+            "slot": 1
+          },
+          {
+            "fresh": false,
+            "lawful_archive_word": false,
+            "occupied": 1,
+            "ready_label_after_relabel": 1,
+            "slot": 2
+          },
+          {
+            "fresh": false,
+            "lawful_archive_word": false,
+            "occupied": 1,
+            "ready_label_after_relabel": 1,
+            "slot": 3
+          }
+        ],
+        "split": "held_out",
+        "terminal_matter_clock_step_nontrivial": true,
+        "terminal_preserves_all_packets": true,
+        "terminal_two_step_recurrence_not_time": true
+      },
+      {
+        "capacity": 6,
+        "complete_inverse_returns_genesis_only_by_erasing_archive": true,
+        "deletions": [
+          {
+            "blank": 5,
+            "blank_plus_exhaust": 6,
+            "deletion": "frontier-advance",
+            "exhaust": 1,
+            "frontier": 0,
+            "occupancy": 1,
+            "packets": 1,
+            "visible": true
+          },
+          {
+            "blank": 6,
+            "blank_plus_exhaust": 7,
+            "deletion": "blank-debit",
+            "exhaust": 1,
+            "frontier": 1,
+            "occupancy": 1,
+            "packets": 1,
+            "visible": true
+          },
+          {
+            "blank": 5,
+            "blank_plus_exhaust": 5,
+            "deletion": "exhaust-credit",
+            "exhaust": 0,
+            "frontier": 1,
+            "occupancy": 1,
+            "packets": 1,
+            "visible": true
+          },
+          {
+            "blank": 5,
+            "blank_plus_exhaust": 6,
+            "deletion": "occupancy-write",
+            "exhaust": 1,
+            "frontier": 1,
+            "occupancy": 0,
+            "packets": 1,
+            "visible": true
+          },
+          {
+            "blank": 5,
+            "blank_plus_exhaust": 6,
+            "deletion": "packet-write",
+            "exhaust": 1,
+            "frontier": 1,
+            "occupancy": 1,
+            "packets": 0,
+            "visible": true
+          }
+        ],
+        "explicit_M2": 195,
+        "ledger_layout": {
+          "blank": 6,
+          "clock": 1,
+          "exhaust": 6,
+          "frontier_onehot": 7,
+          "matter_endpoint": 6,
+          "matter_internal": 1,
+          "occupancy": 6,
+          "packet": 162
+        },
+        "saturation_refuses_further_formation": true,
+        "snapshots": [
+          {
+            "blank": 5,
+            "blank_plus_exhaust": 6,
+            "exhaust": 1,
+            "forward_application_label_not_time": 1,
+            "frontier": 1,
+            "occupancy": 1,
+            "packets": 1
+          },
+          {
+            "blank": 4,
+            "blank_plus_exhaust": 6,
+            "exhaust": 2,
+            "forward_application_label_not_time": 2,
+            "frontier": 2,
+            "occupancy": 2,
+            "packets": 2
+          },
+          {
+            "blank": 3,
+            "blank_plus_exhaust": 6,
+            "exhaust": 3,
+            "forward_application_label_not_time": 3,
+            "frontier": 3,
+            "occupancy": 3,
+            "packets": 3
+          },
+          {
+            "blank": 2,
+            "blank_plus_exhaust": 6,
+            "exhaust": 4,
+            "forward_application_label_not_time": 4,
+            "frontier": 4,
+            "occupancy": 4,
+            "packets": 4
+          },
+          {
+            "blank": 1,
+            "blank_plus_exhaust": 6,
+            "exhaust": 5,
+            "forward_application_label_not_time": 5,
+            "frontier": 5,
+            "occupancy": 5,
+            "packets": 5
+          },
+          {
+            "blank": 0,
+            "blank_plus_exhaust": 6,
+            "exhaust": 6,
+            "forward_application_label_not_time": 6,
+            "frontier": 6,
+            "occupancy": 6,
+            "packets": 6
+          }
+        ],
+        "spent_ready_relabel_controls": [
+          {
+            "fresh": false,
+            "lawful_archive_word": false,
+            "occupied": 1,
+            "ready_label_after_relabel": 1,
+            "slot": 0
+          },
+          {
+            "fresh": false,
+            "lawful_archive_word": false,
+            "occupied": 1,
+            "ready_label_after_relabel": 1,
+            "slot": 1
+          },
+          {
+            "fresh": false,
+            "lawful_archive_word": false,
+            "occupied": 1,
+            "ready_label_after_relabel": 1,
+            "slot": 2
+          },
+          {
+            "fresh": false,
+            "lawful_archive_word": false,
+            "occupied": 1,
+            "ready_label_after_relabel": 1,
+            "slot": 3
+          },
+          {
+            "fresh": false,
+            "lawful_archive_word": false,
+            "occupied": 1,
+            "ready_label_after_relabel": 1,
+            "slot": 4
+          },
+          {
+            "fresh": false,
+            "lawful_archive_word": false,
+            "occupied": 1,
+            "ready_label_after_relabel": 1,
+            "slot": 5
+          }
+        ],
+        "split": "held",
+        "terminal_matter_clock_step_nontrivial": true,
+        "terminal_preserves_all_packets": true,
+        "terminal_two_step_recurrence_not_time": true
+      }
+    ],
+    "terminal_matter_clock_dynamics_continues": true
+  },
+  "runner_sha256": "faa1a251d7586ed9d2e496cc73b42f45108347fe5f627523fcef3caa4e652a73",
+  "shared_substrate_obstruction": false,
+  "shore": {
+    "Cycle614_expected_normalized_receipt_sha256": "b1b605be2b7e8db7203a7f2957fa745f799ddf35652f0abed4bc36a42ae3f089",
+    "Cycle614_lightweight_interface_equivalence": {
+      "double_copy_failures": 0,
+      "double_copy_rows": 18,
+      "execution_mode": "lightweight exact quotient of byte-pinned Cycle614 finite interface",
+      "frame_label_failures": 0,
+      "group_failures": 0,
+      "not_a_reimplementation_or_reevaluation_of_Cycle614_science": true,
+      "ordered_frame_products": 576,
+      "pass": true,
+      "pinned_Cycle614_gate_deletion_visible": true,
+      "pinned_receipt_truth_fault_covariance_contract": true,
+      "pinned_resource_and_schedule_contract": true,
+      "proper_cubic_frames": 24,
+      "quotient_inverse_failures": 0,
+      "quotient_truth_SHA256": "b312272bf2b968b7a9cad3497405ce0e9b71be8957b939906b16ae85aa5b03bd",
+      "quotient_truth_failures": 0,
+      "quotient_truth_rows": 64,
+      "single_copy_failures": 0,
+      "single_copy_rows": 18,
+      "spurious_copy_failures": 0,
+      "spurious_copy_rows": 90
+    },
+    "Cycle614_normalized_receipt_sha256": "b1b605be2b7e8db7203a7f2957fa745f799ddf35652f0abed4bc36a42ae3f089",
+    "Cycle614_note_pin": "d9164a42bc3cba10fb6d142b9ae5152543274c5d18ced5a070e5533c488a7ca2",
+    "Cycle614_pass": true,
+    "Cycle614_runner_pin": "ca84ee27a2d8fa67e17336717613e7a2cd05c46421e6d0cc5f4ee6a860938240",
+    "Record_and_continuation_surfaces_read_only": true,
+    "expected_sha256": {
+      "docs/ADMISSIBILITY_RECORD_CONTINUATION_REFINEMENT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-13.md": "d22a7ec84c3ffc8a57f46d9d2353d47837aad19d3ea6a041836f9e5334d314d9",
+      "docs/MINIMAL_AXIOMS_2026-06-29.md": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+      "docs/RECORD_PERMANENCE_FORCES_FRESH_SITE_DOUBLE_REGISTRATION_AND_AGREEMENT_SURVIVAL_BOUNDED_THEOREM_NOTE_2026-07-11.md": "5ed49dd0e0db1183cb464c3daa3748be593387ca177f7bf4ad8d40c215e85e9e",
+      "docs/audit/data/axiom_premise_nodes.json": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+      "docs/work_history/repo/review_feedback/PHYSICAL_AUTONOMOUS_ADMISSION_RECORD_PERMANENCE_TOURNAMENT_CYCLE614_NOTE_2026-07-22.md": "d9164a42bc3cba10fb6d142b9ae5152543274c5d18ced5a070e5533c488a7ca2",
+      "docs/work_history/repo/review_feedback/PHYSICAL_AUTONOMOUS_OCCURRENCE_BORN_HISTORY_BRIDGE_TOURNAMENT_CYCLE587_NOTE_2026-07-22.md": "6938f48fa4e55dc7037a461802ec2f655893a9d9f68ffe65139950e6a07fd8db",
+      "docs/work_history/repo/review_feedback/PHYSICAL_RENEWABLE_FIRST_HIT_RECORD_ADMISSION_TOURNAMENT_CYCLE571_NOTE_2026-07-22.md": "b254476f392597c03f27581fbc4f559266ed42984ac86a516888ee81d2aff8e2",
+      "outputs/physical_autonomous_admission_record_permanence_tournament_cycle614_receipt_2026_07_22.json": "f9d22aa295855901712ca5b383cf621a0323baf306178dbe1f2bc8673f79bf2e",
+      "scripts/physical_autonomous_admission_record_permanence_tournament_cycle614_2026_07_22.py": "ca84ee27a2d8fa67e17336717613e7a2cd05c46421e6d0cc5f4ee6a860938240",
+      "scripts/physical_autonomous_occurrence_born_history_bridge_tournament_cycle587_2026_07_22.py": "2879d5a2641b334553769f15cf3a6f152f9f16f8f80b23db723448533c28c494"
+    },
+    "incoming_time_PR_consumed": false,
+    "observed_sha256": {
+      "docs/ADMISSIBILITY_RECORD_CONTINUATION_REFINEMENT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-13.md": "d22a7ec84c3ffc8a57f46d9d2353d47837aad19d3ea6a041836f9e5334d314d9",
+      "docs/MINIMAL_AXIOMS_2026-06-29.md": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+      "docs/RECORD_PERMANENCE_FORCES_FRESH_SITE_DOUBLE_REGISTRATION_AND_AGREEMENT_SURVIVAL_BOUNDED_THEOREM_NOTE_2026-07-11.md": "5ed49dd0e0db1183cb464c3daa3748be593387ca177f7bf4ad8d40c215e85e9e",
+      "docs/audit/data/axiom_premise_nodes.json": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+      "docs/work_history/repo/review_feedback/PHYSICAL_AUTONOMOUS_ADMISSION_RECORD_PERMANENCE_TOURNAMENT_CYCLE614_NOTE_2026-07-22.md": "d9164a42bc3cba10fb6d142b9ae5152543274c5d18ced5a070e5533c488a7ca2",
+      "docs/work_history/repo/review_feedback/PHYSICAL_AUTONOMOUS_OCCURRENCE_BORN_HISTORY_BRIDGE_TOURNAMENT_CYCLE587_NOTE_2026-07-22.md": "6938f48fa4e55dc7037a461802ec2f655893a9d9f68ffe65139950e6a07fd8db",
+      "docs/work_history/repo/review_feedback/PHYSICAL_RENEWABLE_FIRST_HIT_RECORD_ADMISSION_TOURNAMENT_CYCLE571_NOTE_2026-07-22.md": "b254476f392597c03f27581fbc4f559266ed42984ac86a516888ee81d2aff8e2",
+      "outputs/physical_autonomous_admission_record_permanence_tournament_cycle614_receipt_2026_07_22.json": "f9d22aa295855901712ca5b383cf621a0323baf306178dbe1f2bc8673f79bf2e",
+      "scripts/physical_autonomous_admission_record_permanence_tournament_cycle614_2026_07_22.py": "ca84ee27a2d8fa67e17336717613e7a2cd05c46421e6d0cc5f4ee6a860938240",
+      "scripts/physical_autonomous_occurrence_born_history_bridge_tournament_cycle587_2026_07_22.py": "2879d5a2641b334553769f15cf3a6f152f9f16f8f80b23db723448533c28c494"
+    },
+    "pass": true
+  },
+  "six_wall_ledger": {
+    "C_int": "matter endpoint, admission packet, LOCK, paired exhaust, archive, and continuing matter/clock rails compose on finite code spaces; framework Record activation remains open",
+    "C_local": "123-M2 Route A has explicit support-two lowering/joint routing; paired L3/L4/L6 and medium H3/H4/H6 pass faults, inverse, held and all24 label controls",
+    "C_num": "generator/projector, charge, capacity, deletion, recurrence, and held residuals are exact; no count is promoted to probability or time",
+    "C_ref": "Cycle614 admitted packet now has a local reversible LOCK/provenance activation and an exact preserving candidate algebra; physical-law identification and actuality remain open",
+    "C_source": "every blank/exhaust/occupancy/frontier bit is counted and finite saturation is exact; no blank stream, energy/stress meaning, or renewable source is derived",
+    "C_wrap": "every finite composition in the declared 91-generator monoid preserves packet projectors and a finite saturated terminal closes; arbitrary/noisy/infinite permanence and non-erasing renewal remain open"
+  },
+  "status": "positive supplied finite preserving algebra and finite saturated terminal; no derived Record law, all-future permanence, or non-erasing renewal",
+  "strongest_constructive_result": "one explicit 123-M2 reversible candidate operation algebra whose declared 91-generator monoid fixes Cycle614 packet projectors after local LOCK activation while matter/clock operations remain nontrivial",
+  "supplied_derived_open_inventory": {
+    "derived": [
+      "reversible local formation activation with retained ADMIT provenance and no uncleared transient",
+      "generator-wise packet-projector fixation on LOCK=1 and the induction theorem for every finite generated word",
+      "nontrivial preformation packet/matter operations and continuing LOCK=1 matter/clock dynamics",
+      "123-M2 bounded Route-A lowering to one/two-M2 literals with exact routing/restoration",
+      "finite paired-carrier neutral charge, motion, recurrence, deletion, inverse, L3/L4/L6 and all24 label covariance",
+      "explicit H3/H4/H6 blank/exhaust/occupancy/frontier/archive saturation and terminal packet preservation",
+      "spent/ready relabeling fails freshness on every occupied slot in the declared finite ledger"
+    ],
+    "forbidden_relabels": {
+      "finite_preservation_called_permanence": false,
+      "neutral_pair_called_tail_superselection": false,
+      "packet_called_Record_or_actuality": false,
+      "recurrence_called_time": false,
+      "saturated_terminal_called_renewal": false,
+      "supplied_restriction_called_derived_Record_law": false
+    },
+    "open": [
+      "identification of the supplied generator algebra with the framework's physical post-formation operation law",
+      "actuality/framework Record identification and physical activation from Admissibility/formation",
+      "all-future, noisy, infinite-volume permanence and autonomous error correction",
+      "non-erasing fresh-medium renewal beyond finite saturation or a physical completeness theorem for saturation",
+      "nonzero conserved-sector entry, quasilocal tail representations, dissipative protection, and expanding archives",
+      "physical time/rate/energy/stress/source/gravity meaning and integration of any later time-side interface"
+    ],
+    "supplied": [
+      "approved Record/Admissibility surfaces and site-tagged finite packet representation",
+      "Cycle614 92-M2 admission circuit, candidate unique-quorum law, packet grammar, matter endpoint genesis, and blank target",
+      "Route-A physical future-generator alphabet and local LOCK/provenance/readout layout",
+      "finite noiseless X/CNOT/Toffoli identity and bounded joint-line routing chart",
+      "Route-B L3/L4/L6 ring topology, blank paired carrier, and anchored minus-exhaust convention",
+      "Route-C H3/H4/H6 empty medium/frontier and saturated-terminal matter/clock rule"
+    ]
+  },
+  "tests_failed": 0,
+  "tests_passed": 8
+}

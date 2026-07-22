@@ -1393,7 +1393,7 @@
         },
         {
           "claim_id": "koide_q_readout_factorization_theorem_2026-04-22",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04",
@@ -2767,6 +2767,6 @@
       "uncertified_count": 634
     }
   ],
-  "repo_head": "6931a62da9eba68c55b4d04fe9689b6f8c5f3925",
+  "repo_head": "b6ccfe441d46a9ce387520d1dd8f2e1b82808a06",
   "schema": "lane_certification_v2"
 }

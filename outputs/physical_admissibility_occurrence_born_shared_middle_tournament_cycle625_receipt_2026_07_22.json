@@ -1,0 +1,2512 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "axiom_pressure": false,
+  "elapsed_seconds": 1.7888091249624267,
+  "highest_honest_terminal": "bounded candidate local formation/admission interface downstream of supplied bare occurrence plus bounded candidate grade/corpus; not extensional law identification, actuality, Record, realized history, or Born probability",
+  "inventory": {
+    "derived": [
+      "five explicit nonconstant total proper-cubic local relation tables and exact extensional separators",
+      "one 129-M2 reversible unique-quorum packet/resource/member/receipt/occurrence map with retained candidates and losers",
+      "exact inverse, deletion, malformed, L3/L4/L6, all24/all576, leakage, coherent-sector, and mass-preservation controls",
+      "one 531-M2 ROM-free state-to-unary-to-denominator64 grade/corpus block over all 64 endpoint words",
+      "exact complete-block grade/frequency equality, calibration deletion, address-permutation, and held off-family controls"
+    ],
+    "open": [
+      "extensional identification of nature's fixed Admissibility rule and a covariant local formation/admission functional from state (bare occurrence is already supplied)",
+      "objective actuality for a coherent input, identification of this packet as a framework Record, and physical realization of axiom-supplied permanence/readability",
+      "derivation of the state/parameter calibration and extension beyond the even-count bounded family",
+      "a mathematical possibility menu/projector frame beyond finite scalar Record additivity",
+      "objective corpus, probability meaning, Born calibration, independence, convergence, and held noncomplete sizes without supplied order",
+      "translation-invariant renewal/noise/infinite volume and integration with physical time, energy/stress/source/gravity"
+    ],
+    "supplied": [
+      "read-only Admissibility, Record, realized-state, scale, kinetic-isotropy, and premise surfaces",
+      "Cycle614 92-M2 unique-quorum candidate circuit, packet grammar, triplicated matter endpoint genesis, and blank packet",
+      "the identification of unique quorum as the Route-B candidate rule and scalar Cycle531 binding/member lane zero",
+      "one ready resource, blank archive/loser/member/receipt/snapshot rails, and finite line/frame chart",
+      "Route-C calibration p_axis=(n_plus+n_minus)/2, 4x4x4 address chart, denominator-64 history convention, and blank mask",
+      "finite noiseless gates and the byte-pinned Cycle523 one-/two-M2 lowering used by Cycles597/614"
+    ]
+  },
+  "maximum_RSS_bytes": 29442048,
+  "no_go_discipline": {
+    "N1_broad_negative_gate": "FAIL_DO_NOT_SHIP",
+    "N1_normalized_families": [
+      {
+        "family": "extensional symmetric local relations",
+        "mechanism": "proper-cubic invariant Hamming-shell rule",
+        "object": "six-neighbor basis words and fixed shell predicate",
+        "status": "ATTEMPTED_MODEL_SEPARATION",
+        "terminal": "identify the framework's one covariant local formation/admission functional from state rather than supply a candidate table"
+      },
+      {
+        "family": "reversible resource-debit local competition",
+        "mechanism": "unique quorum plus reversible copy/debit and Cycle531 typed ports",
+        "object": "Cycle614 packet, retained candidates/losers, and ready/spent token",
+        "status": "ATTEMPTED_POSITIVE_CONDITIONAL",
+        "terminal": "derive objective actuality, identify the packet as a framework Record, and physically realize its preservation"
+      },
+      {
+        "family": "ROM-free state-to-grade complete block",
+        "mechanism": "fixed unary calibration plus exhaustive 4x4x4 address block",
+        "object": "opposite-axis endpoint occupancies and denominator-64 mask",
+        "status": "ATTEMPTED_POSITIVE_CONDITIONAL",
+        "terminal": "derive calibration, objective corpus, and Born probability"
+      },
+      {
+        "family": "objective stochastic local successor",
+        "mechanism": "covariant stochastic dilation and physical resource ledger",
+        "object": "local innovation field with retained exhaust",
+        "status": "OPEN_NOT_COUNTED",
+        "terminal": "derive kernel, actuality, renewal, and held Record frequencies"
+      },
+      {
+        "family": "unique-extension realized history",
+        "mechanism": "one covariant successor for every lawful local context",
+        "object": "law-admissible global continuation",
+        "status": "OPEN_NOT_COUNTED",
+        "terminal": "construct local compiler, permanence, and state-dependent grade relation"
+      },
+      {
+        "family": "dissipative record-forming bath",
+        "mechanism": "nonreentering formation channel with renewal and mixing",
+        "object": "metastable local medium and outgoing correlations",
+        "status": "OPEN_NOT_COUNTED",
+        "terminal": "prove permanence, objective outcomes, and blinded calibration"
+      }
+    ],
+    "N1_qualifying_attempts": 3,
+    "N1_required_for_broad_negative": 5,
+    "N2_all_pair_implications_false_on_exhibited_interfaces": true,
+    "N2_collapsed_walls": {
+      "W_Record": "identify the packet as an actual framework Record and physically realize axiom-supplied permanence/readability",
+      "W_actuality": "own one objective member on coherent inputs",
+      "W_calibration": "derive the state-to-grade calibration rather than supply it",
+      "W_formation": "identify the covariant local formation/admission functional from physical state",
+      "W_frame_menu": "derive the mathematical possibility menu/frame beyond finite scalar Record additivity",
+      "W_probability": "derive objective corpus probability and Born/frequency law",
+      "W_rule_content": "select the extensional fixed Admissibility relation"
+    },
+    "N2_directed_pair_count": 42,
+    "N2_directed_pairs": [
+      {
+        "closure_implied": false,
+        "from": "W_rule_content",
+        "reason": "closing W_rule_content neither constructs nor logically selects W_formation",
+        "to": "W_formation"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_rule_content",
+        "reason": "closing W_rule_content neither constructs nor logically selects W_actuality",
+        "to": "W_actuality"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_rule_content",
+        "reason": "closing W_rule_content neither constructs nor logically selects W_Record",
+        "to": "W_Record"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_rule_content",
+        "reason": "closing W_rule_content neither constructs nor logically selects W_calibration",
+        "to": "W_calibration"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_rule_content",
+        "reason": "closing W_rule_content neither constructs nor logically selects W_frame_menu",
+        "to": "W_frame_menu"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_rule_content",
+        "reason": "closing W_rule_content neither constructs nor logically selects W_probability",
+        "to": "W_probability"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_formation",
+        "reason": "closing W_formation neither constructs nor logically selects W_rule_content",
+        "to": "W_rule_content"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_formation",
+        "reason": "closing W_formation neither constructs nor logically selects W_actuality",
+        "to": "W_actuality"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_formation",
+        "reason": "closing W_formation neither constructs nor logically selects W_Record",
+        "to": "W_Record"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_formation",
+        "reason": "closing W_formation neither constructs nor logically selects W_calibration",
+        "to": "W_calibration"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_formation",
+        "reason": "closing W_formation neither constructs nor logically selects W_frame_menu",
+        "to": "W_frame_menu"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_formation",
+        "reason": "closing W_formation neither constructs nor logically selects W_probability",
+        "to": "W_probability"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_actuality",
+        "reason": "closing W_actuality neither constructs nor logically selects W_rule_content",
+        "to": "W_rule_content"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_actuality",
+        "reason": "closing W_actuality neither constructs nor logically selects W_formation",
+        "to": "W_formation"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_actuality",
+        "reason": "closing W_actuality neither constructs nor logically selects W_Record",
+        "to": "W_Record"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_actuality",
+        "reason": "closing W_actuality neither constructs nor logically selects W_calibration",
+        "to": "W_calibration"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_actuality",
+        "reason": "closing W_actuality neither constructs nor logically selects W_frame_menu",
+        "to": "W_frame_menu"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_actuality",
+        "reason": "closing W_actuality neither constructs nor logically selects W_probability",
+        "to": "W_probability"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_Record",
+        "reason": "closing W_Record neither constructs nor logically selects W_rule_content",
+        "to": "W_rule_content"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_Record",
+        "reason": "closing W_Record neither constructs nor logically selects W_formation",
+        "to": "W_formation"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_Record",
+        "reason": "closing W_Record neither constructs nor logically selects W_actuality",
+        "to": "W_actuality"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_Record",
+        "reason": "closing W_Record neither constructs nor logically selects W_calibration",
+        "to": "W_calibration"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_Record",
+        "reason": "closing W_Record neither constructs nor logically selects W_frame_menu",
+        "to": "W_frame_menu"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_Record",
+        "reason": "closing W_Record neither constructs nor logically selects W_probability",
+        "to": "W_probability"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_calibration",
+        "reason": "closing W_calibration neither constructs nor logically selects W_rule_content",
+        "to": "W_rule_content"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_calibration",
+        "reason": "closing W_calibration neither constructs nor logically selects W_formation",
+        "to": "W_formation"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_calibration",
+        "reason": "closing W_calibration neither constructs nor logically selects W_actuality",
+        "to": "W_actuality"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_calibration",
+        "reason": "closing W_calibration neither constructs nor logically selects W_Record",
+        "to": "W_Record"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_calibration",
+        "reason": "closing W_calibration neither constructs nor logically selects W_frame_menu",
+        "to": "W_frame_menu"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_calibration",
+        "reason": "closing W_calibration neither constructs nor logically selects W_probability",
+        "to": "W_probability"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_frame_menu",
+        "reason": "closing W_frame_menu neither constructs nor logically selects W_rule_content",
+        "to": "W_rule_content"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_frame_menu",
+        "reason": "closing W_frame_menu neither constructs nor logically selects W_formation",
+        "to": "W_formation"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_frame_menu",
+        "reason": "closing W_frame_menu neither constructs nor logically selects W_actuality",
+        "to": "W_actuality"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_frame_menu",
+        "reason": "closing W_frame_menu neither constructs nor logically selects W_Record",
+        "to": "W_Record"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_frame_menu",
+        "reason": "closing W_frame_menu neither constructs nor logically selects W_calibration",
+        "to": "W_calibration"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_frame_menu",
+        "reason": "closing W_frame_menu neither constructs nor logically selects W_probability",
+        "to": "W_probability"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_probability",
+        "reason": "closing W_probability neither constructs nor logically selects W_rule_content",
+        "to": "W_rule_content"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_probability",
+        "reason": "closing W_probability neither constructs nor logically selects W_formation",
+        "to": "W_formation"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_probability",
+        "reason": "closing W_probability neither constructs nor logically selects W_actuality",
+        "to": "W_actuality"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_probability",
+        "reason": "closing W_probability neither constructs nor logically selects W_Record",
+        "to": "W_Record"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_probability",
+        "reason": "closing W_probability neither constructs nor logically selects W_calibration",
+        "to": "W_calibration"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_probability",
+        "reason": "closing W_probability neither constructs nor logically selects W_frame_menu",
+        "to": "W_frame_menu"
+      }
+    ],
+    "N3_hidden_wall_scan": [
+      "fixed shell predicate content and Cycle614 candidate-law identification",
+      "six triplicated matter endpoints, blank packet, fixed lane-zero Cycle531 adapter and binding",
+      "ready/spent token, blank archive/loser/member/receipt/snapshot rails",
+      "fixed state-to-unary calibration, 4x4x4 address chart, blank mask, complete-block corpus convention",
+      "finite noiseless gate alphabet, Cycle523 lowering, bounded line chart, and frame action",
+      "bare occurrence is supplied by 'Records form'; the formation functional, basis actuality interpretation, Record permanence, probability meaning, and held off-family extension are not hidden"
+    ],
+    "N4_residual_matching": [
+      {
+        "residual": "names one fixed covariant rule but not its extensional truth table or formation/update functional",
+        "use": "Route-A model separation only",
+        "witness": "retained Admissibility surface"
+      },
+      {
+        "residual": "supplies bare occurrence through 'Records form' but no formation site/content/weight/rate rule",
+        "use": "occurrence premise, not a rederivation target",
+        "witness": "Record axiom"
+      },
+      {
+        "residual": "member/receipt supply remains independent of conditional occurrence",
+        "use": "Route-B exact port equations",
+        "witness": "Cycle531"
+      },
+      {
+        "residual": "unique-quorum is a physical candidate, not identified actuality/formation law",
+        "use": "Route-B supplied physical core",
+        "witness": "Cycle614"
+      },
+      {
+        "residual": "parameter calibration and corpus semantics remain supplied",
+        "use": "Route-C exact denominator-64 interface",
+        "witness": "Cycle597"
+      },
+      {
+        "residual": "supplies pointwise slot, never state selection",
+        "use": "endpoint word is registered state data; grade variation is conditional law output",
+        "witness": "realized-state primitive"
+      },
+      {
+        "residual": "finite scalar readout additivity does not furnish all mathematical menus/projector frames",
+        "use": "frame/menu remains separate from probability",
+        "witness": "Record finite additivity"
+      },
+      {
+        "residual": "odd counts and noncomplete blocks refused",
+        "use": "scope boundary, not impossibility",
+        "witness": "Route-C off-family controls"
+      }
+    ],
+    "N5_rhetoric_audit": {
+      "forbidden_and_not_claimed": [
+        "rederived bare occurrence",
+        "derived fixed formation rule",
+        "objective actuality",
+        "Record from packet copying",
+        "Born from grade/frequency",
+        "finite additivity as a complete frame",
+        "shared obstruction",
+        "axiom pressure"
+      ],
+      "permitted": [
+        "candidate relation",
+        "conditional occurrence",
+        "basis winner",
+        "grade mask",
+        "candidate corpus"
+      ]
+    },
+    "N6_partial_closure": "retain the 129-M2 unique-quorum shared middle and 531-M2 state-derived grade block; replace the supplied predicate/calibration independently when a physical rule is proposed",
+    "N7_hostile_steelman": "A translation-invariant dissipative QCA could expose the extensional Admissibility table through its local transition algebra, select one coherent sector with retained exhaust, form a nonreentering readable Record, and generate a renewable blinded corpus.  Freeze that update before held contexts; require the exact Cycle614/531 port map, all24/all576, post-formation projector preservation, resource renewal, and changed-state frequency predictions.  This concrete route is open.",
+    "N8_cross_cycle_echo": "Cycles531/552/571 repeatedly separated conditional occurrence from member genesis, actuality, and Record; Cycles587/592/597 separated physical candidate laws and finite frequencies from Born; Cycle614 removed runtime admission bits for one supplied rule; Cycle621 preserved its packet under one supplied operation algebra.  Those prior compiler closures argue for more constructive tests, not axiom pressure.",
+    "axiom_pressure": false,
+    "minimum_content_claim": false,
+    "pass": true,
+    "shared_route_independent_obstruction": false
+  },
+  "note_contract": {
+    "missing": [],
+    "pass": true,
+    "required_fragments": [
+      "authority: none",
+      "audit: unset",
+      "admissibility is not dynamics",
+      "retained surfaces do not identify",
+      "129-m2",
+      "531-m2",
+      "basis winner is not objective actuality",
+      "not a framework record",
+      "grade/frequency is not born probability",
+      "all 24 proper-cubic frames",
+      "all 576 frame products",
+      "held-out l4",
+      "held l6",
+      "n1\u2013n8",
+      "bare occurrence is not the target",
+      "registered state data",
+      "finite-additivity-to-frame bridge",
+      "all 42 directed pairs",
+      "broad no-go and minimum-content gates are fail / do not ship",
+      "shared obstruction: not established",
+      "axiom pressure: none"
+    ]
+  },
+  "note_sha256": "9cfe494cbcb2370e0bd39d3895b64ce6d33fb11318fad74d6ede868e697d1a00",
+  "optimal_next_campaign": "extensional-law exposure tournament across constrained-QCA, stochastic-dilation, and dissipative-formation updates, composed into the unchanged shared-middle interface before blinded Record-corpus tests",
+  "pass": true,
+  "route_A_structural_relation": {
+    "Cycle614_unique_quorum_available_as_supplied_candidate": true,
+    "actual_framework_rule_instantiated": false,
+    "all_candidate_tables_extensionally_distinct": true,
+    "candidate_fixed_relations": {
+      "even_nonzero": {
+        "accepted_shells": [
+          2,
+          4,
+          6
+        ],
+        "accepted_truth_rows": 31,
+        "held_accepts": 16,
+        "nonconstant_and_neighborhood_dependent": true,
+        "one_boolean_answer_per_neighborhood": true,
+        "runtime_ROM_ports": 0,
+        "train_accepts": 15
+      },
+      "low_density": {
+        "accepted_shells": [
+          1,
+          2
+        ],
+        "accepted_truth_rows": 21,
+        "held_accepts": 0,
+        "nonconstant_and_neighborhood_dependent": true,
+        "one_boolean_answer_per_neighborhood": true,
+        "runtime_ROM_ports": 0,
+        "train_accepts": 21
+      },
+      "nonempty": {
+        "accepted_shells": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "accepted_truth_rows": 63,
+        "held_accepts": 22,
+        "nonconstant_and_neighborhood_dependent": true,
+        "one_boolean_answer_per_neighborhood": true,
+        "runtime_ROM_ports": 0,
+        "train_accepts": 41
+      },
+      "odd_shells": {
+        "accepted_shells": [
+          1,
+          3,
+          5
+        ],
+        "accepted_truth_rows": 32,
+        "held_accepts": 6,
+        "nonconstant_and_neighborhood_dependent": true,
+        "one_boolean_answer_per_neighborhood": true,
+        "runtime_ROM_ports": 0,
+        "train_accepts": 26
+      },
+      "unique_quorum": {
+        "accepted_shells": [
+          1
+        ],
+        "accepted_truth_rows": 6,
+        "held_accepts": 0,
+        "nonconstant_and_neighborhood_dependent": true,
+        "one_boolean_answer_per_neighborhood": true,
+        "runtime_ROM_ports": 0,
+        "train_accepts": 6
+      }
+    },
+    "candidate_relation_digest": "c724243216bffdd804d69106872486ee92efd71adfb23b0d1f5821778ed14b34",
+    "covariance_failures": 0,
+    "covariance_tests": 7680,
+    "disposition": "positive executable structural relation family and exact extensional model separation; the retained surfaces do not identify one table",
+    "held_words_weight_4_through_6": 22,
+    "neighborhood_words": 64,
+    "pairwise_model_separators": [
+      {
+        "held_truth_separators": 6,
+        "left": "unique_quorum",
+        "right": "odd_shells",
+        "total_truth_separators": 26,
+        "train_truth_separators": 20
+      },
+      {
+        "held_truth_separators": 22,
+        "left": "unique_quorum",
+        "right": "nonempty",
+        "total_truth_separators": 57,
+        "train_truth_separators": 35
+      },
+      {
+        "held_truth_separators": 0,
+        "left": "unique_quorum",
+        "right": "low_density",
+        "total_truth_separators": 15,
+        "train_truth_separators": 15
+      },
+      {
+        "held_truth_separators": 16,
+        "left": "unique_quorum",
+        "right": "even_nonzero",
+        "total_truth_separators": 37,
+        "train_truth_separators": 21
+      },
+      {
+        "held_truth_separators": 16,
+        "left": "odd_shells",
+        "right": "nonempty",
+        "total_truth_separators": 31,
+        "train_truth_separators": 15
+      },
+      {
+        "held_truth_separators": 6,
+        "left": "odd_shells",
+        "right": "low_density",
+        "total_truth_separators": 41,
+        "train_truth_separators": 35
+      },
+      {
+        "held_truth_separators": 22,
+        "left": "odd_shells",
+        "right": "even_nonzero",
+        "total_truth_separators": 63,
+        "train_truth_separators": 41
+      },
+      {
+        "held_truth_separators": 22,
+        "left": "nonempty",
+        "right": "low_density",
+        "total_truth_separators": 42,
+        "train_truth_separators": 20
+      },
+      {
+        "held_truth_separators": 6,
+        "left": "nonempty",
+        "right": "even_nonzero",
+        "total_truth_separators": 32,
+        "train_truth_separators": 26
+      },
+      {
+        "held_truth_separators": 16,
+        "left": "low_density",
+        "right": "even_nonzero",
+        "total_truth_separators": 22,
+        "train_truth_separators": 6
+      }
+    ],
+    "pass": true,
+    "proper_cubic_frames": 24,
+    "retained_surface_selects_candidate_table": false,
+    "totality_failures": 0,
+    "train_words_weight_0_through_3": 42
+  },
+  "route_B_physical_shared_middle": {
+    "Cycle531_interface_failures": 0,
+    "Cycle614_imported_M2": 92,
+    "Cycle614_literal_support_M2": 2,
+    "Cycle614_mass_fixture_preserved": true,
+    "all_collision_losers_retained": true,
+    "all_endpoint_candidates_retained": true,
+    "basis_winner_called_objective_actuality": false,
+    "bounded_M2": 129,
+    "coherent_onehot_sectors_retained": 6,
+    "coherent_six_sector_Gram_residual": 0.0,
+    "constant_overhead_per_cell": true,
+    "covariance_failures": 0,
+    "covariance_tests": 1536,
+    "deletion_rows": [
+      {
+        "basis_residual": 1.4142135623730951,
+        "gate": "ready-debit",
+        "visible": true
+      },
+      {
+        "basis_residual": 1.4142135623730951,
+        "gate": "spent-credit",
+        "visible": true
+      },
+      {
+        "basis_residual": 1.4142135623730951,
+        "gate": "member",
+        "visible": true
+      },
+      {
+        "basis_residual": 1.4142135623730951,
+        "gate": "receipt",
+        "visible": true
+      },
+      {
+        "basis_residual": 1.4142135623730951,
+        "gate": "occurrence",
+        "visible": true
+      },
+      {
+        "basis_residual": 1.4142135623730951,
+        "gate": "loser-source:1",
+        "visible": true
+      }
+    ],
+    "disposition": "positive supplied unique-quorum physical shared middle with retained candidates/losers, finite debit, and exact Cycle531 port equations",
+    "exact_rows_L3_L4_L6": 192,
+    "failures": 0,
+    "fixed_member_lane_zero_is_supplied_adapter_structure": true,
+    "global_parity_or_order_service": false,
+    "group_direction_tests": 3456,
+    "group_failures": 0,
+    "host_winner": false,
+    "inverse_failures": 0,
+    "malformed_rows": [
+      {
+        "case": "nonbinary_endpoint",
+        "rejected": true
+      },
+      {
+        "case": "dirty_packet",
+        "rejected": true
+      },
+      {
+        "case": "dirty_admit",
+        "rejected": true
+      },
+      {
+        "case": "missing_ready",
+        "rejected": true
+      },
+      {
+        "case": "dirty_spent",
+        "rejected": true
+      },
+      {
+        "case": "dirty_output",
+        "rejected": true
+      }
+    ],
+    "new_M2": 37,
+    "new_logical_CNOT": 26,
+    "new_maximum_support_M2": 2,
+    "new_nearest_neighbor_CNOT_calls": 12362,
+    "new_route_and_return_adjacent_SWAPS": 4112,
+    "ordered_frame_products": 576,
+    "packet_called_framework_Record": false,
+    "pass": true,
+    "proper_cubic_frames": 24,
+    "ready_plus_spent_conserved": true,
+    "runtime_actuality_token": false,
+    "runtime_candidate_law_ROM": false,
+    "terminal_imported_work_leakage_failures": 0,
+    "truth_rows": [
+      {
+        "admit": 0,
+        "classification": "no_hit",
+        "retained_loser_count": 0,
+        "word": "000000"
+      },
+      {
+        "admit": 1,
+        "classification": "unique",
+        "retained_loser_count": 0,
+        "word": "000001"
+      },
+      {
+        "admit": 1,
+        "classification": "unique",
+        "retained_loser_count": 0,
+        "word": "000010"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 2,
+        "word": "000011"
+      },
+      {
+        "admit": 1,
+        "classification": "unique",
+        "retained_loser_count": 0,
+        "word": "000100"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 2,
+        "word": "000101"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 2,
+        "word": "000110"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 3,
+        "word": "000111"
+      },
+      {
+        "admit": 1,
+        "classification": "unique",
+        "retained_loser_count": 0,
+        "word": "001000"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 2,
+        "word": "001001"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 2,
+        "word": "001010"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 3,
+        "word": "001011"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 2,
+        "word": "001100"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 3,
+        "word": "001101"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 3,
+        "word": "001110"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 4,
+        "word": "001111"
+      },
+      {
+        "admit": 1,
+        "classification": "unique",
+        "retained_loser_count": 0,
+        "word": "010000"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 2,
+        "word": "010001"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 2,
+        "word": "010010"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 3,
+        "word": "010011"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 2,
+        "word": "010100"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 3,
+        "word": "010101"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 3,
+        "word": "010110"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 4,
+        "word": "010111"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 2,
+        "word": "011000"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 3,
+        "word": "011001"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 3,
+        "word": "011010"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 4,
+        "word": "011011"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 3,
+        "word": "011100"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 4,
+        "word": "011101"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 4,
+        "word": "011110"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 5,
+        "word": "011111"
+      },
+      {
+        "admit": 1,
+        "classification": "unique",
+        "retained_loser_count": 0,
+        "word": "100000"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 2,
+        "word": "100001"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 2,
+        "word": "100010"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 3,
+        "word": "100011"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 2,
+        "word": "100100"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 3,
+        "word": "100101"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 3,
+        "word": "100110"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 4,
+        "word": "100111"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 2,
+        "word": "101000"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 3,
+        "word": "101001"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 3,
+        "word": "101010"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 4,
+        "word": "101011"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 3,
+        "word": "101100"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 4,
+        "word": "101101"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 4,
+        "word": "101110"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 5,
+        "word": "101111"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 2,
+        "word": "110000"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 3,
+        "word": "110001"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 3,
+        "word": "110010"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 4,
+        "word": "110011"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 3,
+        "word": "110100"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 4,
+        "word": "110101"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 4,
+        "word": "110110"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 5,
+        "word": "110111"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 3,
+        "word": "111000"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 4,
+        "word": "111001"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 4,
+        "word": "111010"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 5,
+        "word": "111011"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 4,
+        "word": "111100"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 5,
+        "word": "111101"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 5,
+        "word": "111110"
+      },
+      {
+        "admit": 0,
+        "classification": "collision",
+        "retained_loser_count": 6,
+        "word": "111111"
+      }
+    ]
+  },
+  "route_C_ROM_free_grade_corpus": {
+    "Cycle597_synthesizer_M2": 525,
+    "EG_failures": 0,
+    "accepted_parameter_count_grid": [
+      0,
+      2,
+      4
+    ],
+    "accepted_state_family_words": 64,
+    "address_permutation_count_L1": 0.0,
+    "address_permutation_order_separator": 64,
+    "alternative_calibration_grade_L1": 0.6875,
+    "bounded_M2": 531,
+    "calibration_is_supplied_candidate_law": true,
+    "composed_logical_gates": 3096,
+    "composed_maximum_literal_support_M2": 2,
+    "counterfactual_state_audit": {
+      "counterfactual_state_change_grade_L1": 1.0,
+      "counterfactual_variation_used_as_state_dependence_not_state_selection": true,
+      "endpoint_word_is_registered_state_data_not_supplied_by_realized_state_primitive": true,
+      "fixed_calibration_and_mask_are_candidate_law_outputs_conditional_on_that_data": true
+    },
+    "covariance_failures": 0,
+    "covariance_tests": 99840,
+    "disposition": "positive ROM-free state-local calibration into the retained Cycle597 denominator-64 grade/corpus interface; calibration and corpus interpretation remain supplied",
+    "endpoint_deletion_grade_L1": 1.0,
+    "family_rows": [
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          0,
+          0,
+          0
+        ],
+        "denominator64_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          64
+        ],
+        "word": "000000"
+      },
+      {
+        "admitted_by_unique_quorum": true,
+        "counts": [
+          0,
+          0,
+          2
+        ],
+        "denominator64_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          32,
+          32
+        ],
+        "word": "000001"
+      },
+      {
+        "admitted_by_unique_quorum": true,
+        "counts": [
+          0,
+          0,
+          2
+        ],
+        "denominator64_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          32,
+          32
+        ],
+        "word": "000010"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          0,
+          0,
+          4
+        ],
+        "denominator64_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          64,
+          0
+        ],
+        "word": "000011"
+      },
+      {
+        "admitted_by_unique_quorum": true,
+        "counts": [
+          0,
+          2,
+          0
+        ],
+        "denominator64_counts": [
+          0,
+          0,
+          0,
+          32,
+          0,
+          0,
+          0,
+          32
+        ],
+        "word": "000100"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          0,
+          2,
+          2
+        ],
+        "denominator64_counts": [
+          0,
+          0,
+          16,
+          16,
+          0,
+          0,
+          16,
+          16
+        ],
+        "word": "000101"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          0,
+          2,
+          2
+        ],
+        "denominator64_counts": [
+          0,
+          0,
+          16,
+          16,
+          0,
+          0,
+          16,
+          16
+        ],
+        "word": "000110"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          0,
+          2,
+          4
+        ],
+        "denominator64_counts": [
+          0,
+          0,
+          32,
+          0,
+          0,
+          0,
+          32,
+          0
+        ],
+        "word": "000111"
+      },
+      {
+        "admitted_by_unique_quorum": true,
+        "counts": [
+          0,
+          2,
+          0
+        ],
+        "denominator64_counts": [
+          0,
+          0,
+          0,
+          32,
+          0,
+          0,
+          0,
+          32
+        ],
+        "word": "001000"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          0,
+          2,
+          2
+        ],
+        "denominator64_counts": [
+          0,
+          0,
+          16,
+          16,
+          0,
+          0,
+          16,
+          16
+        ],
+        "word": "001001"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          0,
+          2,
+          2
+        ],
+        "denominator64_counts": [
+          0,
+          0,
+          16,
+          16,
+          0,
+          0,
+          16,
+          16
+        ],
+        "word": "001010"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          0,
+          2,
+          4
+        ],
+        "denominator64_counts": [
+          0,
+          0,
+          32,
+          0,
+          0,
+          0,
+          32,
+          0
+        ],
+        "word": "001011"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          0,
+          4,
+          0
+        ],
+        "denominator64_counts": [
+          0,
+          0,
+          0,
+          64,
+          0,
+          0,
+          0,
+          0
+        ],
+        "word": "001100"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          0,
+          4,
+          2
+        ],
+        "denominator64_counts": [
+          0,
+          0,
+          32,
+          32,
+          0,
+          0,
+          0,
+          0
+        ],
+        "word": "001101"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          0,
+          4,
+          2
+        ],
+        "denominator64_counts": [
+          0,
+          0,
+          32,
+          32,
+          0,
+          0,
+          0,
+          0
+        ],
+        "word": "001110"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          0,
+          4,
+          4
+        ],
+        "denominator64_counts": [
+          0,
+          0,
+          64,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "word": "001111"
+      },
+      {
+        "admitted_by_unique_quorum": true,
+        "counts": [
+          2,
+          0,
+          0
+        ],
+        "denominator64_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          32,
+          0,
+          32
+        ],
+        "word": "010000"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          2,
+          0,
+          2
+        ],
+        "denominator64_counts": [
+          0,
+          0,
+          0,
+          0,
+          16,
+          16,
+          16,
+          16
+        ],
+        "word": "010001"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          2,
+          0,
+          2
+        ],
+        "denominator64_counts": [
+          0,
+          0,
+          0,
+          0,
+          16,
+          16,
+          16,
+          16
+        ],
+        "word": "010010"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          2,
+          0,
+          4
+        ],
+        "denominator64_counts": [
+          0,
+          0,
+          0,
+          0,
+          32,
+          0,
+          32,
+          0
+        ],
+        "word": "010011"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          2,
+          2,
+          0
+        ],
+        "denominator64_counts": [
+          0,
+          16,
+          0,
+          16,
+          0,
+          16,
+          0,
+          16
+        ],
+        "word": "010100"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          2,
+          2,
+          2
+        ],
+        "denominator64_counts": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "word": "010101"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          2,
+          2,
+          2
+        ],
+        "denominator64_counts": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "word": "010110"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          2,
+          2,
+          4
+        ],
+        "denominator64_counts": [
+          16,
+          0,
+          16,
+          0,
+          16,
+          0,
+          16,
+          0
+        ],
+        "word": "010111"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          2,
+          2,
+          0
+        ],
+        "denominator64_counts": [
+          0,
+          16,
+          0,
+          16,
+          0,
+          16,
+          0,
+          16
+        ],
+        "word": "011000"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          2,
+          2,
+          2
+        ],
+        "denominator64_counts": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "word": "011001"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          2,
+          2,
+          2
+        ],
+        "denominator64_counts": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "word": "011010"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          2,
+          2,
+          4
+        ],
+        "denominator64_counts": [
+          16,
+          0,
+          16,
+          0,
+          16,
+          0,
+          16,
+          0
+        ],
+        "word": "011011"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          2,
+          4,
+          0
+        ],
+        "denominator64_counts": [
+          0,
+          32,
+          0,
+          32,
+          0,
+          0,
+          0,
+          0
+        ],
+        "word": "011100"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          2,
+          4,
+          2
+        ],
+        "denominator64_counts": [
+          16,
+          16,
+          16,
+          16,
+          0,
+          0,
+          0,
+          0
+        ],
+        "word": "011101"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          2,
+          4,
+          2
+        ],
+        "denominator64_counts": [
+          16,
+          16,
+          16,
+          16,
+          0,
+          0,
+          0,
+          0
+        ],
+        "word": "011110"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          2,
+          4,
+          4
+        ],
+        "denominator64_counts": [
+          32,
+          0,
+          32,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "word": "011111"
+      },
+      {
+        "admitted_by_unique_quorum": true,
+        "counts": [
+          2,
+          0,
+          0
+        ],
+        "denominator64_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          32,
+          0,
+          32
+        ],
+        "word": "100000"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          2,
+          0,
+          2
+        ],
+        "denominator64_counts": [
+          0,
+          0,
+          0,
+          0,
+          16,
+          16,
+          16,
+          16
+        ],
+        "word": "100001"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          2,
+          0,
+          2
+        ],
+        "denominator64_counts": [
+          0,
+          0,
+          0,
+          0,
+          16,
+          16,
+          16,
+          16
+        ],
+        "word": "100010"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          2,
+          0,
+          4
+        ],
+        "denominator64_counts": [
+          0,
+          0,
+          0,
+          0,
+          32,
+          0,
+          32,
+          0
+        ],
+        "word": "100011"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          2,
+          2,
+          0
+        ],
+        "denominator64_counts": [
+          0,
+          16,
+          0,
+          16,
+          0,
+          16,
+          0,
+          16
+        ],
+        "word": "100100"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          2,
+          2,
+          2
+        ],
+        "denominator64_counts": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "word": "100101"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          2,
+          2,
+          2
+        ],
+        "denominator64_counts": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "word": "100110"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          2,
+          2,
+          4
+        ],
+        "denominator64_counts": [
+          16,
+          0,
+          16,
+          0,
+          16,
+          0,
+          16,
+          0
+        ],
+        "word": "100111"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          2,
+          2,
+          0
+        ],
+        "denominator64_counts": [
+          0,
+          16,
+          0,
+          16,
+          0,
+          16,
+          0,
+          16
+        ],
+        "word": "101000"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          2,
+          2,
+          2
+        ],
+        "denominator64_counts": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "word": "101001"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          2,
+          2,
+          2
+        ],
+        "denominator64_counts": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "word": "101010"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          2,
+          2,
+          4
+        ],
+        "denominator64_counts": [
+          16,
+          0,
+          16,
+          0,
+          16,
+          0,
+          16,
+          0
+        ],
+        "word": "101011"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          2,
+          4,
+          0
+        ],
+        "denominator64_counts": [
+          0,
+          32,
+          0,
+          32,
+          0,
+          0,
+          0,
+          0
+        ],
+        "word": "101100"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          2,
+          4,
+          2
+        ],
+        "denominator64_counts": [
+          16,
+          16,
+          16,
+          16,
+          0,
+          0,
+          0,
+          0
+        ],
+        "word": "101101"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          2,
+          4,
+          2
+        ],
+        "denominator64_counts": [
+          16,
+          16,
+          16,
+          16,
+          0,
+          0,
+          0,
+          0
+        ],
+        "word": "101110"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          2,
+          4,
+          4
+        ],
+        "denominator64_counts": [
+          32,
+          0,
+          32,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "word": "101111"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          4,
+          0,
+          0
+        ],
+        "denominator64_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          64,
+          0,
+          0
+        ],
+        "word": "110000"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          4,
+          0,
+          2
+        ],
+        "denominator64_counts": [
+          0,
+          0,
+          0,
+          0,
+          32,
+          32,
+          0,
+          0
+        ],
+        "word": "110001"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          4,
+          0,
+          2
+        ],
+        "denominator64_counts": [
+          0,
+          0,
+          0,
+          0,
+          32,
+          32,
+          0,
+          0
+        ],
+        "word": "110010"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          4,
+          0,
+          4
+        ],
+        "denominator64_counts": [
+          0,
+          0,
+          0,
+          0,
+          64,
+          0,
+          0,
+          0
+        ],
+        "word": "110011"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          4,
+          2,
+          0
+        ],
+        "denominator64_counts": [
+          0,
+          32,
+          0,
+          0,
+          0,
+          32,
+          0,
+          0
+        ],
+        "word": "110100"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          4,
+          2,
+          2
+        ],
+        "denominator64_counts": [
+          16,
+          16,
+          0,
+          0,
+          16,
+          16,
+          0,
+          0
+        ],
+        "word": "110101"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          4,
+          2,
+          2
+        ],
+        "denominator64_counts": [
+          16,
+          16,
+          0,
+          0,
+          16,
+          16,
+          0,
+          0
+        ],
+        "word": "110110"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          4,
+          2,
+          4
+        ],
+        "denominator64_counts": [
+          32,
+          0,
+          0,
+          0,
+          32,
+          0,
+          0,
+          0
+        ],
+        "word": "110111"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          4,
+          2,
+          0
+        ],
+        "denominator64_counts": [
+          0,
+          32,
+          0,
+          0,
+          0,
+          32,
+          0,
+          0
+        ],
+        "word": "111000"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          4,
+          2,
+          2
+        ],
+        "denominator64_counts": [
+          16,
+          16,
+          0,
+          0,
+          16,
+          16,
+          0,
+          0
+        ],
+        "word": "111001"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          4,
+          2,
+          2
+        ],
+        "denominator64_counts": [
+          16,
+          16,
+          0,
+          0,
+          16,
+          16,
+          0,
+          0
+        ],
+        "word": "111010"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          4,
+          2,
+          4
+        ],
+        "denominator64_counts": [
+          32,
+          0,
+          0,
+          0,
+          32,
+          0,
+          0,
+          0
+        ],
+        "word": "111011"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          4,
+          4,
+          0
+        ],
+        "denominator64_counts": [
+          0,
+          64,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "word": "111100"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          4,
+          4,
+          2
+        ],
+        "denominator64_counts": [
+          32,
+          32,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "word": "111101"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          4,
+          4,
+          2
+        ],
+        "denominator64_counts": [
+          32,
+          32,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "word": "111110"
+      },
+      {
+        "admitted_by_unique_quorum": false,
+        "counts": [
+          4,
+          4,
+          4
+        ],
+        "denominator64_counts": [
+          64,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "word": "111111"
+      }
+    ],
+    "finite_additivity_to_frame": {
+      "Record_finite_scalar_additivity_is_read_only_axiom_content": true,
+      "mathematical_menu_or_projector_frame_derived": false,
+      "probability_frame_derived": false
+    },
+    "finite_archive_called_Record": false,
+    "grade_or_frequency_called_Born": false,
+    "group_failures": 0,
+    "group_tests": 2304,
+    "held_off_family": [
+      {
+        "Cycle597_quantized_counts": [
+          3,
+          2,
+          2
+        ],
+        "name": "held_137",
+        "nearest_state_grade_L1": 0.30516705516705517,
+        "nearest_state_local_counts": [
+          2,
+          2,
+          2
+        ],
+        "noncomplete_block_size_refused_without_order_or_genesis": true,
+        "odd_external_calibration_word_refused": true,
+        "parameters": [
+          "7/11",
+          "4/9",
+          "5/13"
+        ]
+      },
+      {
+        "Cycle597_quantized_counts": [
+          3,
+          3,
+          3
+        ],
+        "name": "held_211",
+        "nearest_state_grade_L1": 0.5635011441647597,
+        "nearest_state_local_counts": [
+          2,
+          2,
+          2
+        ],
+        "noncomplete_block_size_refused_without_order_or_genesis": true,
+        "odd_external_calibration_word_refused": true,
+        "parameters": [
+          "11/17",
+          "13/19",
+          "17/23"
+        ]
+      }
+    ],
+    "inverse_failures": 0,
+    "malformed_rows": [
+      {
+        "case": "endpoint_arity",
+        "rejected": true
+      },
+      {
+        "case": "nonbinary_endpoint",
+        "rejected": true
+      },
+      {
+        "case": "odd_external_unary_word",
+        "rejected": true
+      },
+      {
+        "case": "held_size_137",
+        "rejected": true
+      },
+      {
+        "case": "held_size_211",
+        "rejected": true
+      }
+    ],
+    "mask_or_complete_block_failures": 0,
+    "new_endpoint_M2": 6,
+    "new_literal_one_two_M2_gates": 192,
+    "new_logical_CNOT": 12,
+    "new_logical_Toffoli": 12,
+    "ordered_frame_products": 576,
+    "pass": true,
+    "physical_calibration": "p_axis=(endpoint_plus+endpoint_minus)/2, encoded as unary count 2*n_axis",
+    "proper_cubic_frames": 24,
+    "runtime_state_specific_ROM": false,
+    "unordered_complete_block_called_realized_corpus": false
+  },
+  "runner_sha256": "a70356530d8aea5f3366796b2eb3a5d653d89163973c5de4809a3fa9875f1a5f",
+  "shared_substrate_obstruction": false,
+  "shore": {
+    "Cycle614_621_receipt_contract": true,
+    "Cycle614_mass_fixture_residual": 1.1102230246251565e-16,
+    "expected_normalized_receipt_sha256": {
+      "outputs/physical_autonomous_admission_record_permanence_tournament_cycle614_receipt_2026_07_22.json": "b1b605be2b7e8db7203a7f2957fa745f799ddf35652f0abed4bc36a42ae3f089",
+      "outputs/physical_postformation_preservation_non_erasing_renewal_tournament_cycle621_receipt_2026_07_22.json": "9010a5f79cf926febd9ee978def1f2164fcb598c5df024b36e7f170e7d034c3e"
+    },
+    "expected_sha256": {
+      "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "docs/MINIMAL_AXIOMS_2026-06-29.md": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+      "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "docs/audit/data/axiom_premise_nodes.json": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+      "docs/work_history/repo/review_feedback/PHYSICAL_AUTONOMOUS_ADMISSION_RECORD_PERMANENCE_TOURNAMENT_CYCLE614_NOTE_2026-07-22.md": "d9164a42bc3cba10fb6d142b9ae5152543274c5d18ced5a070e5533c488a7ca2",
+      "docs/work_history/repo/review_feedback/PHYSICAL_AUTONOMOUS_LOCAL_MEMBER_LAW_CELL_CYCLE552_NOTE_2026-07-21.md": "919f95dd43d8bdd5ba65fba071f58a6d054a89b3d7d4b7cc04686c8c28cdbf42",
+      "docs/work_history/repo/review_feedback/PHYSICAL_AUTONOMOUS_OCCURRENCE_BORN_HISTORY_BRIDGE_TOURNAMENT_CYCLE587_NOTE_2026-07-22.md": "6938f48fa4e55dc7037a461802ec2f655893a9d9f68ffe65139950e6a07fd8db",
+      "docs/work_history/repo/review_feedback/PHYSICAL_POSTFORMATION_PRESERVATION_NON_ERASING_RENEWAL_TOURNAMENT_CYCLE621_NOTE_2026-07-22.md": "a52395a57fb34b6d827a677a43528033e913cde2f98ce708a276507f6e1e353e",
+      "docs/work_history/repo/review_feedback/PHYSICAL_PREREGISTERED_INNOVATION_RECORD_FREQUENCY_BRIDGE_TOURNAMENT_CYCLE592_NOTE_2026-07-22.md": "dccf62d6126287b20cbf96ff410534adfa1746d9cf3aba94fbfb2893855be212",
+      "docs/work_history/repo/review_feedback/PHYSICAL_RENEWABLE_FIRST_HIT_RECORD_ADMISSION_TOURNAMENT_CYCLE571_NOTE_2026-07-22.md": "b254476f392597c03f27581fbc4f559266ed42984ac86a516888ee81d2aff8e2",
+      "docs/work_history/repo/review_feedback/PHYSICAL_SELECTED_SEAM_CONDITIONAL_RECORD_BINDER_CYCLE531_NOTE_2026-07-21.md": "ed40564d4e57090cf03e706b54964e5a24cb735f9ca14df8f008fecffc388042",
+      "docs/work_history/repo/review_feedback/PHYSICAL_STATE_FAMILY_GRADE_TRANSITION_SYNTHESIS_TOURNAMENT_CYCLE597_NOTE_2026-07-22.md": "fdbfc68540be31de9d5199e25b1b71a440b9126447f383146caa07b70599c4b2",
+      "outputs/physical_autonomous_occurrence_born_history_bridge_tournament_cycle587_cold_2026_07_22.txt": "47060b72e3304e13ed0e5f0d689e6ac323bb6b72fa450ea64e94605311909a84",
+      "outputs/physical_preregistered_innovation_record_frequency_bridge_tournament_cycle592_cold_2026_07_22.txt": "135ec5a5b75c180d23a1246deb89b920b771dbc714a2e1ee2087cc6a2af5683d",
+      "outputs/physical_state_family_grade_transition_synthesis_tournament_cycle597_cold_2026_07_22.txt": "6df65289d17c4c4e7c01789ed4899c7f23045f3f9d5b1a367cdc0dbe0aa6b9b1",
+      "scripts/physical_autonomous_admission_record_permanence_tournament_cycle614_2026_07_22.py": "ca84ee27a2d8fa67e17336717613e7a2cd05c46421e6d0cc5f4ee6a860938240",
+      "scripts/physical_autonomous_local_member_law_cell_cycle552_2026_07_21.py": "405cacd821b5453045f8a8920b1ab0fc2dca5ac90fb150e9b4a95f6f218ac8a4",
+      "scripts/physical_autonomous_occurrence_born_history_bridge_tournament_cycle587_2026_07_22.py": "2879d5a2641b334553769f15cf3a6f152f9f16f8f80b23db723448533c28c494",
+      "scripts/physical_postformation_preservation_non_erasing_renewal_tournament_cycle621_2026_07_22.py": "faa1a251d7586ed9d2e496cc73b42f45108347fe5f627523fcef3caa4e652a73",
+      "scripts/physical_preregistered_innovation_record_frequency_bridge_tournament_cycle592_2026_07_22.py": "ab565af6aa59e66cea7b1ce625c08f8a88235ae9f7415e5e7d89d63af34ce9ce",
+      "scripts/physical_renewable_first_hit_record_admission_tournament_cycle571_2026_07_22.py": "7221d59558e4d731f98a2a4523c280aa98b889f23ea3f7be1acc8919395dfee8",
+      "scripts/physical_selected_seam_conditional_record_binder_cycle531_2026_07_21.py": "8885593dcc644e601179891265c226158c8835a8a143ed7205c0cc7e291e9057",
+      "scripts/physical_state_family_grade_transition_synthesis_tournament_cycle597_2026_07_22.py": "7dec66d44101d26f563bea079fa62b56daeb1d2d5a21a7a98c6f66fc22392d77"
+    },
+    "observed_normalized_receipt_sha256": {
+      "outputs/physical_autonomous_admission_record_permanence_tournament_cycle614_receipt_2026_07_22.json": "b1b605be2b7e8db7203a7f2957fa745f799ddf35652f0abed4bc36a42ae3f089",
+      "outputs/physical_postformation_preservation_non_erasing_renewal_tournament_cycle621_receipt_2026_07_22.json": "9010a5f79cf926febd9ee978def1f2164fcb598c5df024b36e7f170e7d034c3e"
+    },
+    "observed_sha256": {
+      "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "docs/MINIMAL_AXIOMS_2026-06-29.md": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+      "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "docs/audit/data/axiom_premise_nodes.json": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+      "docs/work_history/repo/review_feedback/PHYSICAL_AUTONOMOUS_ADMISSION_RECORD_PERMANENCE_TOURNAMENT_CYCLE614_NOTE_2026-07-22.md": "d9164a42bc3cba10fb6d142b9ae5152543274c5d18ced5a070e5533c488a7ca2",
+      "docs/work_history/repo/review_feedback/PHYSICAL_AUTONOMOUS_LOCAL_MEMBER_LAW_CELL_CYCLE552_NOTE_2026-07-21.md": "919f95dd43d8bdd5ba65fba071f58a6d054a89b3d7d4b7cc04686c8c28cdbf42",
+      "docs/work_history/repo/review_feedback/PHYSICAL_AUTONOMOUS_OCCURRENCE_BORN_HISTORY_BRIDGE_TOURNAMENT_CYCLE587_NOTE_2026-07-22.md": "6938f48fa4e55dc7037a461802ec2f655893a9d9f68ffe65139950e6a07fd8db",
+      "docs/work_history/repo/review_feedback/PHYSICAL_POSTFORMATION_PRESERVATION_NON_ERASING_RENEWAL_TOURNAMENT_CYCLE621_NOTE_2026-07-22.md": "a52395a57fb34b6d827a677a43528033e913cde2f98ce708a276507f6e1e353e",
+      "docs/work_history/repo/review_feedback/PHYSICAL_PREREGISTERED_INNOVATION_RECORD_FREQUENCY_BRIDGE_TOURNAMENT_CYCLE592_NOTE_2026-07-22.md": "dccf62d6126287b20cbf96ff410534adfa1746d9cf3aba94fbfb2893855be212",
+      "docs/work_history/repo/review_feedback/PHYSICAL_RENEWABLE_FIRST_HIT_RECORD_ADMISSION_TOURNAMENT_CYCLE571_NOTE_2026-07-22.md": "b254476f392597c03f27581fbc4f559266ed42984ac86a516888ee81d2aff8e2",
+      "docs/work_history/repo/review_feedback/PHYSICAL_SELECTED_SEAM_CONDITIONAL_RECORD_BINDER_CYCLE531_NOTE_2026-07-21.md": "ed40564d4e57090cf03e706b54964e5a24cb735f9ca14df8f008fecffc388042",
+      "docs/work_history/repo/review_feedback/PHYSICAL_STATE_FAMILY_GRADE_TRANSITION_SYNTHESIS_TOURNAMENT_CYCLE597_NOTE_2026-07-22.md": "fdbfc68540be31de9d5199e25b1b71a440b9126447f383146caa07b70599c4b2",
+      "outputs/physical_autonomous_occurrence_born_history_bridge_tournament_cycle587_cold_2026_07_22.txt": "47060b72e3304e13ed0e5f0d689e6ac323bb6b72fa450ea64e94605311909a84",
+      "outputs/physical_preregistered_innovation_record_frequency_bridge_tournament_cycle592_cold_2026_07_22.txt": "135ec5a5b75c180d23a1246deb89b920b771dbc714a2e1ee2087cc6a2af5683d",
+      "outputs/physical_state_family_grade_transition_synthesis_tournament_cycle597_cold_2026_07_22.txt": "6df65289d17c4c4e7c01789ed4899c7f23045f3f9d5b1a367cdc0dbe0aa6b9b1",
+      "scripts/physical_autonomous_admission_record_permanence_tournament_cycle614_2026_07_22.py": "ca84ee27a2d8fa67e17336717613e7a2cd05c46421e6d0cc5f4ee6a860938240",
+      "scripts/physical_autonomous_local_member_law_cell_cycle552_2026_07_21.py": "405cacd821b5453045f8a8920b1ab0fc2dca5ac90fb150e9b4a95f6f218ac8a4",
+      "scripts/physical_autonomous_occurrence_born_history_bridge_tournament_cycle587_2026_07_22.py": "2879d5a2641b334553769f15cf3a6f152f9f16f8f80b23db723448533c28c494",
+      "scripts/physical_postformation_preservation_non_erasing_renewal_tournament_cycle621_2026_07_22.py": "faa1a251d7586ed9d2e496cc73b42f45108347fe5f627523fcef3caa4e652a73",
+      "scripts/physical_preregistered_innovation_record_frequency_bridge_tournament_cycle592_2026_07_22.py": "ab565af6aa59e66cea7b1ce625c08f8a88235ae9f7415e5e7d89d63af34ce9ce",
+      "scripts/physical_renewable_first_hit_record_admission_tournament_cycle571_2026_07_22.py": "7221d59558e4d731f98a2a4523c280aa98b889f23ea3f7be1acc8919395dfee8",
+      "scripts/physical_selected_seam_conditional_record_binder_cycle531_2026_07_21.py": "8885593dcc644e601179891265c226158c8835a8a143ed7205c0cc7e291e9057",
+      "scripts/physical_state_family_grade_transition_synthesis_tournament_cycle597_2026_07_22.py": "7dec66d44101d26f563bea079fa62b56daeb1d2d5a21a7a98c6f66fc22392d77"
+    },
+    "pass": true,
+    "read_only_dependency_sweep_complete": true,
+    "semantic_surface_checks": {
+      "admissibility_not_dynamics": true,
+      "bare_Record_occurrence_is_supplied": true,
+      "fixed_nearest_neighbor_rule_named": true,
+      "formation_rule_remains_outside": true,
+      "no_transition_weights": true,
+      "premise_says_no_update_law": true,
+      "realized_slot_has_no_selection": true,
+      "record_formation_named": true,
+      "rule_covariance_named": true
+    }
+  },
+  "six_wall_ledger": {
+    "C_int": "matter/packet/resource/occurrence/grade interfaces coexist without new interaction claim",
+    "C_local": "bounded support-two/inverse/deletion/domain/held/all24/all576; volume/noise/scaling open",
+    "C_num": "exact finite relation and denominator64 block arithmetic; finite Record additivity supplies no complete frame/menu or probability/convergence theorem",
+    "C_ref": "structural/extensional formation-rule distinction and candidate/loser provenance explicit; law/calibration/actuality supplied",
+    "C_source": "ready/spent and blank corpus capacity explicit; no energy/stress/source/gravity meaning",
+    "C_wrap": "conditional occurrence reached without runtime actuality token; no packet-to-Record identification, physical realization of axiom-supplied permanence, or history"
+  },
+  "status": "positive supplied physical shared middle and ROM-free bounded grade block; no derived extensional formation/admission, actuality, Record, frame/menu, or Born law",
+  "strongest_constructive_result": "one supplied-candidate 129-M2 reversible local formation/admission functional from the Cycle614 six-endpoint state into the Cycle531 shared middle, retaining all candidates/losers, plus a separate 531-M2 ROM-free state-derived grade block",
+  "tests_failed": 0,
+  "tests_passed": 6
+}

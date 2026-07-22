@@ -1024,10 +1024,6 @@
           "effective_status": "unaudited"
         },
         {
-          "claim_id": "gauge_vacuum_plaquette_framework_point_underdetermination_note",
-          "effective_status": "audit_in_progress"
-        },
-        {
           "claim_id": "gauge_vacuum_plaquette_local_environment_factorization_theorem_note",
           "effective_status": "unaudited"
         },
@@ -2804,9 +2800,9 @@
       "roots": [
         "strong_cp_theta_zero_note"
       ],
-      "uncertified_count": 644
+      "uncertified_count": 643
     }
   ],
-  "repo_head": "3c36a300c68e88f43e585182f28c1480f5507815",
+  "repo_head": "0aef060850311728246a3ca33f87cdf155c29165",
   "schema": "lane_certification_v2"
 }

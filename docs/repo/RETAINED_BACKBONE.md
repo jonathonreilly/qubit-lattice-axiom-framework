@@ -16,12 +16,12 @@ file per claim), summarized in
 
 | Metric | Value |
 |---|---:|
-| Retained positive rows | 87 |
+| Retained positive rows | 88 |
 | Retained bounded rows | 310 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 16 |
 
-## Retained positive rows (87)
+## Retained positive rows (88)
 
 Sorted by load-bearing graph score (descending).
 
@@ -56,6 +56,7 @@ Sorted by load-bearing graph score (descending).
 - [`i3_zero_exact_theorem_note`](../../docs/I3_ZERO_EXACT_THEOREM_NOTE.md) — score 12.160; audited 2026-05-03T12:43:10.800116+00:00
 - [`beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10`](../../docs/BETA_GBARE_RESCALING_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10.md) — score 12.020; audited 2026-06-06T16:26:01.015460+00:00
 - [`sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06`](../../docs/SHARP_RECORD_FISHER_TANGENT_SPACE_NARROW_THEOREM_NOTE_2026-06-06.md) — score 11.998; audited 2026-06-13T22:42:56.743023+00:00
+- [`gauge_vacuum_plaquette_framework_point_underdetermination_note`](../../docs/GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md) — score 11.700; audited 2026-07-22T18:13:23.636281+00:00
 - [`universal_gr_supermetric_normal_form_note`](../../docs/UNIVERSAL_GR_SUPERMETRIC_NORMAL_FORM_NOTE.md) — score 11.562; audited 2026-05-07T01:31:04.953494+00:00
 - [`three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10`](../../docs/THREE_GENERATION_OBSERVABLE_M3C_BURNSIDE_NARROW_THEOREM_NOTE_2026-05-10.md) — score 11.524; audited 2026-07-12T19:21:35.332691+00:00
 - [`staggered_graph_portability_note`](../../docs/STAGGERED_GRAPH_PORTABILITY_NOTE.md) — score 11.170; audited 2026-05-05T06:31:24.580329+00:00

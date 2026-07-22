@@ -1,29 +1,54 @@
 {
-  "audit_date": null,
+  "audit_date": "2026-07-22T18:13:23.636281+00:00",
   "audit_invocation_history": [
     "2e2f258a88244dc9bcde7c218a1ac90d",
-    "638dc760309a47f7abe50444f88b4b5c"
+    "638dc760309a47f7abe50444f88b4b5c",
+    "c49353b3a90d4d5f8543e5a8b02d13f9"
   ],
-  "audit_invocation_id": "638dc760309a47f7abe50444f88b4b5c",
-  "audit_state_snapshot": null,
-  "audit_status": "audit_in_progress",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
-  "blocker": "cross_confirmation_disagreement",
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "audit_invocation_id": "c49353b3a90d4d5f8543e5a8b02d13f9",
+  "audit_state_snapshot": {
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "gauge_vacuum_plaquette_reduction_existence_theorem_note": "For every integer L >= 2 on the finite periodic SU(3) Wilson L^4 product-Haar space and beta >= 0, P_1plaq and P_L are real-analytic strictly increasing bijections onto [0,1), so beta_eff,L = P_1plaq^(-1) composed with P_L exists uniquely, is real analytic and strictly increasing, and satisfies beta_eff,L(0) = 0 and beta_eff,L'(0) = 1; no physical reduction law or interpretation of beta is included."
+    },
+    "dep_claim_type": {
+      "gauge_vacuum_plaquette_reduction_existence_theorem_note": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "gauge_vacuum_plaquette_reduction_existence_theorem_note": "retained_bounded"
+    },
+    "deps": [
+      "gauge_vacuum_plaquette_reduction_existence_theorem_note"
+    ],
+    "helper_runner_hashes": {
+      "scripts/canonical_plaquette_surface.py": "fd681ecbecda7ab5590b72199ee5bbb4393826f0f8e40ca66f8e2e6531646693",
+      "scripts/frontier_gauge_vacuum_plaquette_bridge_support.py": "96cfa9c6348eeeae32929f3c1fa5109d1c4aa48987120cbfa64656e390ff3d45",
+      "scripts/frontier_scalar_3plus1_temporal_ratio.py": "dba67f913ce7daa6ddfd894860d9429fd6fa26e6a6abac9bc6312c30cbaf04e2"
+    },
+    "load_bearing_score": 11.7,
+    "runner_hash": "edef48f4547f57fcde2a8e871ef43ed4dbaf75d0750ebde33f87579c21360d19",
+    "transitive_descendants": 831
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-judicial-1-20260722-98f8d806",
+  "auditor_confidence": "judicial",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The first position exactly preserves the authenticated pre-audit scope and is proved by the restricted packet. The identity f_+ - f_- = c beta^6 establishes the common degree-five jet and endpoint separation c6^6 = 729/156250; nonnegative derivative terms give both lower bounds on [0,6]. The retained authority proves P_1plaq'(x)=Var_x(X)>0, preserving the strict endpoint order under composition, while the numerical Bessel/Weyl evaluations remain support-only.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260722-98f8d806\", \"judge\": 1, \"rationale\": \"The first position exactly preserves the authenticated pre-audit scope and is proved by the restricted packet. The identity f_+ - f_- = c beta^6 establishes the common degree-five jet and endpoint separation c6^6 = 729/156250; nonnegative derivative terms give both lower bounds on [0,6]. The retained authority proves P_1plaq'(x)=Var_x(X)>0, preserving the strict endpoint order under composition, while the numerical Bessel/Weyl evaluations remain support-only.\", \"tuple\": [\"first\", \"audited_clean\", \"positive_theorem\", \"For every rational a >= 0 with c = 1/10^7, the displayed polynomial pair shares its Taylor jet through degree five, has derivatives at least 1 on [0,6], separates at beta = 6 by 729/156250, and remains strictly ordered after local one-plaquette composition.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-2-20260722-ced7bfee\", \"judge\": 2, \"rationale\": \"The first scope exactly matches the authenticated pre-audit scope. Exact coefficient algebra gives f_+ - f_- = c beta^6, proving the common degree-five jet and endpoint separation 729/156250; nonnegative derivative terms give both lower bounds on [0,6]. The retained variance identity P_1plaq'(x)=Var_x(X)>0 preserves the strict endpoint order under composition, while the Bessel/Weyl evaluations remain support-only.\", \"tuple\": [\"first\", \"audited_clean\", \"positive_theorem\", \"For every rational a >= 0 with c = 1/10^7, the displayed polynomial pair shares its Taylor jet through degree five, has derivatives at least 1 on [0,6], separates at beta = 6 by 729/156250, and remains strictly ordered after local one-plaquette composition.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-3-20260722-cd4db779\", \"judge\": 3, \"rationale\": \"The first scope exactly matches the authenticated pre-audit scope and is proved by the restricted packet. The identity f_+ - f_- = c beta^6 establishes the common degree-five jet and endpoint separation c6^6 = 729/156250; nonnegative derivative terms give both lower bounds on [0,6]. The retained authority proves P_1plaq'(x) = Var_x(X) > 0, preserving the strict endpoint order under composition, while the Bessel/Weyl values remain support-only.\", \"tuple\": [\"first\", \"audited_clean\", \"positive_theorem\", \"For every rational a >= 0 with c = 1/10^7, the displayed polynomial pair shares its Taylor jet through degree five, has derivatives at least 1 on [0,6], separates at beta = 6 by 729/156250, and remains strictly ordered after local one-plaquette composition.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-4-20260722-a8fa09ee\", \"judge\": 4, \"rationale\": \"The exact identity f_+ - f_- = c beta^6 proves the common degree-five jet and gives the endpoint separation c6^6 = 729/156250. For every rational a >= 0, coefficient nonnegativity gives both derivative lower bounds on [0,6], and the retained authority proves P_1plaq'(x)=Var_x(X)>0, preserving the strict order of the endpoint arguments under composition. The numerical Bessel/Weyl evaluations are support-only.\", \"tuple\": [\"first\", \"audited_clean\", \"positive_theorem\", \"For every rational a >= 0 with c = 1/10^7, the displayed polynomial pair shares its Taylor jet through degree five, has derivatives at least 1 on [0,6], separates at beta = 6 by 729/156250, and remains strictly ordered after local one-plaquette composition.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-5-20260722-da0eee24\", \"judge\": 5, \"rationale\": \"The first scope exactly matches the authenticated pre-audit scope and is proved by the restricted packet. The identity f_+ - f_- = c beta^6 establishes the common degree-five jet and endpoint separation c6^6 = 729/156250. Nonnegative derivative terms give both lower bounds on [0,6], while the retained identity P_1plaq'(x) = Var_x(X) > 0 preserves the strict endpoint order under composition. The numerical Bessel/Weyl evaluations are support-only.\", \"tuple\": [\"first\", \"audited_clean\", \"positive_theorem\", \"For every rational a >= 0 with c = 1/10^7, the displayed polynomial pair shares its Taylor jet through degree five, has derivatives at least 1 on [0,6], separates at beta = 6 by 729/156250, and remains strictly ordered after local one-plaquette composition.\", \"A\", null, []]}]",
   "claim_id": "gauge_vacuum_plaquette_framework_point_underdetermination_note",
   "claim_scope": "For every rational a >= 0 with c = 1/10^7, the displayed polynomial pair shares its Taylor jet through degree five, has derivatives at least 1 on [0,6], separates at beta = 6 by 729/156250, and remains strictly ordered after local one-plaquette composition.",
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": "2026-07-22T17:57:48.904948+00:00",
-  "claim_type_provenance": "audited_pending_cross_confirmation",
+  "claim_type_last_reviewed": "2026-07-22T18:13:23.636281+00:00",
+  "claim_type_provenance": "judicial_review",
   "criticality": "critical",
   "cross_confirmation": {
+    "agreement_schema": "audit_tuple_v2",
     "first_audit": {
       "audit_date": "2026-07-22T17:57:48.904948+00:00",
       "audit_invocation_id": "2e2f258a88244dc9bcde7c218a1ac90d",
@@ -52,6 +77,130 @@
       "verdict": "audited_clean",
       "verdict_rationale": "Direct rational calculation confirms f_+(6)-f_-(6)=c6^6=729/156250, f_-(6)=18993/3125, f_+(6)=950379/156250, and the two stated endpoint derivatives. The cited retained authority proves P_1plaq'(x)=Var_x(X)>0, closing the composition step on the displayed positive arguments. The primary runner computes the load-bearing polynomial algebra, while the helper's canonical constant and scalar-bridge functions are outside that call path; the Bessel/Weyl values are non-load-bearing support."
     },
+    "judicial_panel_record_v1": {
+      "cid": "gauge_vacuum_plaquette_framework_point_underdetermination_note",
+      "disagreement_fingerprint": {
+        "claim_id": "gauge_vacuum_plaquette_framework_point_underdetermination_note",
+        "first_audit_invocation_id": "2e2f258a88244dc9bcde7c218a1ac90d",
+        "note_hash": "983d0e6c4773f9cf5139a3e02e5f8bd89289a298aca501617c0540542fe05242",
+        "schema": "judicial_disagreement_fingerprint_v1",
+        "seat_summaries_sha256": "2167a9257c30eb29dc4a8329ea04d8cbed3ba941174643bea2391a9eed01b3b0",
+        "second_audit_invocation_id": "638dc760309a47f7abe50444f88b4b5c"
+      },
+      "failures": [],
+      "invocation_id": "c49353b3a90d4d5f8543e5a8b02d13f9",
+      "majority_count": 5,
+      "panel": 2,
+      "result": "majority_candidate",
+      "schema": "judicial_panel_record_v1",
+      "tally": [
+        {
+          "count": 5,
+          "tuple": [
+            "first",
+            "audited_clean",
+            "positive_theorem",
+            "For every rational a >= 0 with c = 1/10^7, the displayed polynomial pair shares its Taylor jet through degree five, has derivatives at least 1 on [0,6], separates at beta = 6 by 729/156250, and remains strictly ordered after local one-plaquette composition.",
+            "A",
+            null,
+            []
+          ]
+        }
+      ],
+      "votes": [
+        {
+          "auditor": "codex-judicial-1-20260722-98f8d806",
+          "first_auditor_error": "none",
+          "hybrid_resolution_note": null,
+          "judge": 1,
+          "judgment_rationale": "The first position exactly preserves the authenticated pre-audit scope and is proved by the restricted packet. The identity f_+ - f_- = c beta^6 establishes the common degree-five jet and endpoint separation c6^6 = 729/156250; nonnegative derivative terms give both lower bounds on [0,6]. The retained authority proves P_1plaq'(x)=Var_x(X)>0, preserving the strict endpoint order under composition, while the numerical Bessel/Weyl evaluations remain support-only.",
+          "negative_assertion_classes": [],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "Recheck only the non-load-bearing Bessel/Weyl approximations if their displayed digits become publication-critical.",
+          "ratified_claim_scope": "For every rational a >= 0 with c = 1/10^7, the displayed polynomial pair shares its Taylor jet through degree five, has derivatives at least 1 on [0,6], separates at beta = 6 by 729/156250, and remains strictly ordered after local one-plaquette composition.",
+          "ratified_claim_type": "positive_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": null,
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_clean",
+          "second_auditor_error": "The second position replaces the authenticated pre-audit scope with a substantively equivalent paraphrase, weakening exact scope provenance without correcting any scientific defect.",
+          "sided_with": "first"
+        },
+        {
+          "auditor": "codex-judicial-2-20260722-ced7bfee",
+          "first_auditor_error": "none",
+          "hybrid_resolution_note": null,
+          "judge": 2,
+          "judgment_rationale": "The first scope exactly matches the authenticated pre-audit scope. Exact coefficient algebra gives f_+ - f_- = c beta^6, proving the common degree-five jet and endpoint separation 729/156250; nonnegative derivative terms give both lower bounds on [0,6]. The retained variance identity P_1plaq'(x)=Var_x(X)>0 preserves the strict endpoint order under composition, while the Bessel/Weyl evaluations remain support-only.",
+          "negative_assertion_classes": [],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "Recheck only the non-load-bearing Bessel/Weyl approximations if their displayed digits become publication-critical.",
+          "ratified_claim_scope": "For every rational a >= 0 with c = 1/10^7, the displayed polynomial pair shares its Taylor jet through degree five, has derivatives at least 1 on [0,6], separates at beta = 6 by 729/156250, and remains strictly ordered after local one-plaquette composition.",
+          "ratified_claim_type": "positive_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": null,
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_clean",
+          "second_auditor_error": "The scientific conclusion is correct, but it replaces the authenticated pre-audit scope with a paraphrase, unnecessarily weakening exact scope provenance.",
+          "sided_with": "first"
+        },
+        {
+          "auditor": "codex-judicial-3-20260722-cd4db779",
+          "first_auditor_error": "none",
+          "hybrid_resolution_note": null,
+          "judge": 3,
+          "judgment_rationale": "The first scope exactly matches the authenticated pre-audit scope and is proved by the restricted packet. The identity f_+ - f_- = c beta^6 establishes the common degree-five jet and endpoint separation c6^6 = 729/156250; nonnegative derivative terms give both lower bounds on [0,6]. The retained authority proves P_1plaq'(x) = Var_x(X) > 0, preserving the strict endpoint order under composition, while the Bessel/Weyl values remain support-only.",
+          "negative_assertion_classes": [],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": null,
+          "ratified_claim_scope": "For every rational a >= 0 with c = 1/10^7, the displayed polynomial pair shares its Taylor jet through degree five, has derivatives at least 1 on [0,6], separates at beta = 6 by 729/156250, and remains strictly ordered after local one-plaquette composition.",
+          "ratified_claim_type": "positive_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": null,
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_clean",
+          "second_auditor_error": "The second position paraphrases the authenticated pre-audit scope instead of copying it exactly, creating a tuple disagreement despite reaching the same substantive mathematical conclusion.",
+          "sided_with": "first"
+        },
+        {
+          "auditor": "codex-judicial-4-20260722-a8fa09ee",
+          "first_auditor_error": "none",
+          "hybrid_resolution_note": null,
+          "judge": 4,
+          "judgment_rationale": "The exact identity f_+ - f_- = c beta^6 proves the common degree-five jet and gives the endpoint separation c6^6 = 729/156250. For every rational a >= 0, coefficient nonnegativity gives both derivative lower bounds on [0,6], and the retained authority proves P_1plaq'(x)=Var_x(X)>0, preserving the strict order of the endpoint arguments under composition. The numerical Bessel/Weyl evaluations are support-only.",
+          "negative_assertion_classes": [],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "Recheck only the non-load-bearing Bessel/Weyl approximations if their displayed digits become publication-critical.",
+          "ratified_claim_scope": "For every rational a >= 0 with c = 1/10^7, the displayed polynomial pair shares its Taylor jet through degree five, has derivatives at least 1 on [0,6], separates at beta = 6 by 729/156250, and remains strictly ordered after local one-plaquette composition.",
+          "ratified_claim_type": "positive_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "Because f_+(beta) - f_-(beta) = c beta^6 and both derivative expansions contain only nonnegative nonconstant terms on [0,6], the witnesses share their degree-five jet, remain strictly increasing, and separate at beta = 6 by 729/156250.",
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_clean",
+          "second_auditor_error": "The second position replaces the authenticated scope sentence and phrases the witnesses as being \u201con beta in [0,6],\u201d making its final strict-order clause more readily read as interval-wide; that reading fails at beta = 0, whereas the source proves strict composed ordering for the endpoint arguments.",
+          "sided_with": "first"
+        },
+        {
+          "auditor": "codex-judicial-5-20260722-da0eee24",
+          "first_auditor_error": "none",
+          "hybrid_resolution_note": null,
+          "judge": 5,
+          "judgment_rationale": "The first scope exactly matches the authenticated pre-audit scope and is proved by the restricted packet. The identity f_+ - f_- = c beta^6 establishes the common degree-five jet and endpoint separation c6^6 = 729/156250. Nonnegative derivative terms give both lower bounds on [0,6], while the retained identity P_1plaq'(x) = Var_x(X) > 0 preserves the strict endpoint order under composition. The numerical Bessel/Weyl evaluations are support-only.",
+          "negative_assertion_classes": [],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "Recheck only the non-load-bearing Bessel/Weyl approximations if their displayed digits become publication-critical.",
+          "ratified_claim_scope": "For every rational a >= 0 with c = 1/10^7, the displayed polynomial pair shares its Taylor jet through degree five, has derivatives at least 1 on [0,6], separates at beta = 6 by 729/156250, and remains strictly ordered after local one-plaquette composition.",
+          "ratified_claim_type": "positive_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "Because f_+(beta) - f_-(beta) = c beta^6 and both derivative expansions contain only nonnegative nonconstant terms on [0,6], the witnesses share their degree-five jet, remain strictly increasing, and separate at beta = 6 by 729/156250.",
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_clean",
+          "second_auditor_error": "The second position is scientifically equivalent but replaces the authenticated pre-audit scope with a paraphrase, weakening exact scope provenance.",
+          "sided_with": "first"
+        }
+      ]
+    },
+    "mode": "judicial_panel_majority",
     "second_audit": {
       "audit_date": "2026-07-22T17:57:48.915088+00:00",
       "audit_invocation_id": "638dc760309a47f7abe50444f88b4b5c",
@@ -80,30 +229,49 @@
       "verdict": "audited_clean",
       "verdict_rationale": "Independent rational arithmetic confirms both endpoint values, the exact separation 729/156250, and the stated derivative endpoint checks; coefficient nonnegativity proves the interval bounds for every allowed a. The authority proves strict monotonicity using P_1plaq'(x) = Var_x(X) > 0 under the same observable normalization, while the two numerical local-block evaluations are support rather than imported physical inputs. The theorem therefore closes on its explicitly limited finite-jet and local-composition surface without asserting a full-Wilson realization or physical P(6) value."
     },
-    "status": "disagreement"
+    "status": "third_confirmed_first",
+    "third_audit": {
+      "audit_date": "2026-07-22T18:13:23.636281+00:00",
+      "audit_invocation_id": "c49353b3a90d4d5f8543e5a8b02d13f9",
+      "auditor": "codex-judicial-1-20260722-98f8d806",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "claim_scope": "For every rational a >= 0 with c = 1/10^7, the displayed polynomial pair shares its Taylor jet through degree five, has derivatives at least 1 on [0,6], separates at beta = 6 by 729/156250, and remains strictly ordered after local one-plaquette composition.",
+      "claim_type": "positive_theorem",
+      "first_auditor_error": "none",
+      "independence": "judicial_review",
+      "judgment_rationale": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The first position exactly preserves the authenticated pre-audit scope and is proved by the restricted packet. The identity f_+ - f_- = c beta^6 establishes the common degree-five jet and endpoint separation c6^6 = 729/156250; nonnegative derivative terms give both lower bounds on [0,6]. The retained authority proves P_1plaq'(x)=Var_x(X)>0, preserving the strict endpoint order under composition, while the numerical Bessel/Weyl evaluations remain support-only.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260722-98f8d806\", \"judge\": 1, \"rationale\": \"The first position exactly preserves the authenticated pre-audit scope and is proved by the restricted packet. The identity f_+ - f_- = c beta^6 establishes the common degree-five jet and endpoint separation c6^6 = 729/156250; nonnegative derivative terms give both lower bounds on [0,6]. The retained authority proves P_1plaq'(x)=Var_x(X)>0, preserving the strict endpoint order under composition, while the numerical Bessel/Weyl evaluations remain support-only.\", \"tuple\": [\"first\", \"audited_clean\", \"positive_theorem\", \"For every rational a >= 0 with c = 1/10^7, the displayed polynomial pair shares its Taylor jet through degree five, has derivatives at least 1 on [0,6], separates at beta = 6 by 729/156250, and remains strictly ordered after local one-plaquette composition.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-2-20260722-ced7bfee\", \"judge\": 2, \"rationale\": \"The first scope exactly matches the authenticated pre-audit scope. Exact coefficient algebra gives f_+ - f_- = c beta^6, proving the common degree-five jet and endpoint separation 729/156250; nonnegative derivative terms give both lower bounds on [0,6]. The retained variance identity P_1plaq'(x)=Var_x(X)>0 preserves the strict endpoint order under composition, while the Bessel/Weyl evaluations remain support-only.\", \"tuple\": [\"first\", \"audited_clean\", \"positive_theorem\", \"For every rational a >= 0 with c = 1/10^7, the displayed polynomial pair shares its Taylor jet through degree five, has derivatives at least 1 on [0,6], separates at beta = 6 by 729/156250, and remains strictly ordered after local one-plaquette composition.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-3-20260722-cd4db779\", \"judge\": 3, \"rationale\": \"The first scope exactly matches the authenticated pre-audit scope and is proved by the restricted packet. The identity f_+ - f_- = c beta^6 establishes the common degree-five jet and endpoint separation c6^6 = 729/156250; nonnegative derivative terms give both lower bounds on [0,6]. The retained authority proves P_1plaq'(x) = Var_x(X) > 0, preserving the strict endpoint order under composition, while the Bessel/Weyl values remain support-only.\", \"tuple\": [\"first\", \"audited_clean\", \"positive_theorem\", \"For every rational a >= 0 with c = 1/10^7, the displayed polynomial pair shares its Taylor jet through degree five, has derivatives at least 1 on [0,6], separates at beta = 6 by 729/156250, and remains strictly ordered after local one-plaquette composition.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-4-20260722-a8fa09ee\", \"judge\": 4, \"rationale\": \"The exact identity f_+ - f_- = c beta^6 proves the common degree-five jet and gives the endpoint separation c6^6 = 729/156250. For every rational a >= 0, coefficient nonnegativity gives both derivative lower bounds on [0,6], and the retained authority proves P_1plaq'(x)=Var_x(X)>0, preserving the strict order of the endpoint arguments under composition. The numerical Bessel/Weyl evaluations are support-only.\", \"tuple\": [\"first\", \"audited_clean\", \"positive_theorem\", \"For every rational a >= 0 with c = 1/10^7, the displayed polynomial pair shares its Taylor jet through degree five, has derivatives at least 1 on [0,6], separates at beta = 6 by 729/156250, and remains strictly ordered after local one-plaquette composition.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-5-20260722-da0eee24\", \"judge\": 5, \"rationale\": \"The first scope exactly matches the authenticated pre-audit scope and is proved by the restricted packet. The identity f_+ - f_- = c beta^6 establishes the common degree-five jet and endpoint separation c6^6 = 729/156250. Nonnegative derivative terms give both lower bounds on [0,6], while the retained identity P_1plaq'(x) = Var_x(X) > 0 preserves the strict endpoint order under composition. The numerical Bessel/Weyl evaluations are support-only.\", \"tuple\": [\"first\", \"audited_clean\", \"positive_theorem\", \"For every rational a >= 0 with c = 1/10^7, the displayed polynomial pair shares its Taylor jet through degree five, has derivatives at least 1 on [0,6], separates at beta = 6 by 729/156250, and remains strictly ordered after local one-plaquette composition.\", \"A\", null, []]}]",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "second_auditor_error": "The second position replaces the authenticated pre-audit scope with a substantively equivalent paraphrase, weakening exact scope provenance without correcting any scientific defect.",
+      "sided_with": "first",
+      "verdict": "audited_clean"
+    }
   },
   "decoration_parent_claim_id": null,
   "deps": [
     "gauge_vacuum_plaquette_reduction_existence_theorem_note"
   ],
   "direct_in_degree": 4,
-  "effective_status": "audit_in_progress",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "retained",
+  "effective_status_reason": "self",
   "helper_runner_paths": [
     "scripts/canonical_plaquette_surface.py",
     "scripts/frontier_gauge_vacuum_plaquette_bridge_support.py",
     "scripts/frontier_scalar_3plus1_temporal_ratio.py"
   ],
-  "independence": null,
-  "intrinsic_status": "audit_in_progress",
+  "independence": "judicial_review",
+  "intrinsic_status": "retained",
   "load_bearing_score": 11.7,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Because f_+(beta) - f_-(beta) = c beta^6 and both derivative expansions contain only nonnegative nonconstant terms on [0,6], the witnesses share their degree-five jet, remain strictly increasing, and separate at beta = 6 by 729/156250.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "983d0e6c4773f9cf5139a3e02e5f8bd89289a298aca501617c0540542fe05242",
   "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Recheck only the non-load-bearing Bessel/Weyl approximations if their displayed digits become publication-critical.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -1558,5 +1726,5 @@
   "runner_path": "scripts/frontier_gauge_vacuum_plaquette_framework_point_underdetermination.py",
   "title": "Gauge-Vacuum Plaquette Finite-Jet Witness Separation",
   "transitive_descendants": 831,
-  "verdict_rationale": null
+  "verdict_rationale": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The first position exactly preserves the authenticated pre-audit scope and is proved by the restricted packet. The identity f_+ - f_- = c beta^6 establishes the common degree-five jet and endpoint separation c6^6 = 729/156250; nonnegative derivative terms give both lower bounds on [0,6]. The retained authority proves P_1plaq'(x)=Var_x(X)>0, preserving the strict endpoint order under composition, while the numerical Bessel/Weyl evaluations remain support-only.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260722-98f8d806\", \"judge\": 1, \"rationale\": \"The first position exactly preserves the authenticated pre-audit scope and is proved by the restricted packet. The identity f_+ - f_- = c beta^6 establishes the common degree-five jet and endpoint separation c6^6 = 729/156250; nonnegative derivative terms give both lower bounds on [0,6]. The retained authority proves P_1plaq'(x)=Var_x(X)>0, preserving the strict endpoint order under composition, while the numerical Bessel/Weyl evaluations remain support-only.\", \"tuple\": [\"first\", \"audited_clean\", \"positive_theorem\", \"For every rational a >= 0 with c = 1/10^7, the displayed polynomial pair shares its Taylor jet through degree five, has derivatives at least 1 on [0,6], separates at beta = 6 by 729/156250, and remains strictly ordered after local one-plaquette composition.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-2-20260722-ced7bfee\", \"judge\": 2, \"rationale\": \"The first scope exactly matches the authenticated pre-audit scope. Exact coefficient algebra gives f_+ - f_- = c beta^6, proving the common degree-five jet and endpoint separation 729/156250; nonnegative derivative terms give both lower bounds on [0,6]. The retained variance identity P_1plaq'(x)=Var_x(X)>0 preserves the strict endpoint order under composition, while the Bessel/Weyl evaluations remain support-only.\", \"tuple\": [\"first\", \"audited_clean\", \"positive_theorem\", \"For every rational a >= 0 with c = 1/10^7, the displayed polynomial pair shares its Taylor jet through degree five, has derivatives at least 1 on [0,6], separates at beta = 6 by 729/156250, and remains strictly ordered after local one-plaquette composition.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-3-20260722-cd4db779\", \"judge\": 3, \"rationale\": \"The first scope exactly matches the authenticated pre-audit scope and is proved by the restricted packet. The identity f_+ - f_- = c beta^6 establishes the common degree-five jet and endpoint separation c6^6 = 729/156250; nonnegative derivative terms give both lower bounds on [0,6]. The retained authority proves P_1plaq'(x) = Var_x(X) > 0, preserving the strict endpoint order under composition, while the Bessel/Weyl values remain support-only.\", \"tuple\": [\"first\", \"audited_clean\", \"positive_theorem\", \"For every rational a >= 0 with c = 1/10^7, the displayed polynomial pair shares its Taylor jet through degree five, has derivatives at least 1 on [0,6], separates at beta = 6 by 729/156250, and remains strictly ordered after local one-plaquette composition.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-4-20260722-a8fa09ee\", \"judge\": 4, \"rationale\": \"The exact identity f_+ - f_- = c beta^6 proves the common degree-five jet and gives the endpoint separation c6^6 = 729/156250. For every rational a >= 0, coefficient nonnegativity gives both derivative lower bounds on [0,6], and the retained authority proves P_1plaq'(x)=Var_x(X)>0, preserving the strict order of the endpoint arguments under composition. The numerical Bessel/Weyl evaluations are support-only.\", \"tuple\": [\"first\", \"audited_clean\", \"positive_theorem\", \"For every rational a >= 0 with c = 1/10^7, the displayed polynomial pair shares its Taylor jet through degree five, has derivatives at least 1 on [0,6], separates at beta = 6 by 729/156250, and remains strictly ordered after local one-plaquette composition.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-5-20260722-da0eee24\", \"judge\": 5, \"rationale\": \"The first scope exactly matches the authenticated pre-audit scope and is proved by the restricted packet. The identity f_+ - f_- = c beta^6 establishes the common degree-five jet and endpoint separation c6^6 = 729/156250. Nonnegative derivative terms give both lower bounds on [0,6], while the retained identity P_1plaq'(x) = Var_x(X) > 0 preserves the strict endpoint order under composition. The numerical Bessel/Weyl evaluations are support-only.\", \"tuple\": [\"first\", \"audited_clean\", \"positive_theorem\", \"For every rational a >= 0 with c = 1/10^7, the displayed polynomial pair shares its Taylor jet through degree five, has derivatives at least 1 on [0,6], separates at beta = 6 by 729/156250, and remains strictly ordered after local one-plaquette composition.\", \"A\", null, []]}]"
 }

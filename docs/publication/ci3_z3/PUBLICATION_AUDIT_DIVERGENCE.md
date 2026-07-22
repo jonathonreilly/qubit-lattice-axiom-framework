@@ -17,10 +17,10 @@ publication tables phrase it.
 
 | criticality | effective_status | count |
 |---|---|---:|
-| critical | `unaudited` | 235 |
+| critical | `unaudited` | 234 |
 | high | `unaudited` | 171 |
 | medium | `unaudited` | 129 |
-| critical | `audited_conditional` | 12 |
+| critical | `audited_conditional` | 13 |
 | ? | `unresolved` | 4 |
 | critical | `audited_renaming` | 2 |
 | high | `audited_conditional` | 2 |
@@ -72,7 +72,7 @@ publication tables phrase it.
 | critical | `dm_neutrino_exact_h_source_surface_preimage_bundle_theorem_note_2026-04-16` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | critical | `dm_neutrino_exact_h_source_surface_theorem_note_2026-04-16` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | critical | `dm_neutrino_k00_bosonic_normalization_theorem_note_2026-04-15` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
-| critical | `dm_neutrino_odd_circulant_z2_slot_theorem_note_2026-04-15` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
+| critical | `dm_neutrino_odd_circulant_z2_slot_theorem_note_2026-04-15` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md |
 | critical | `dm_neutrino_positive_polar_h_cp_theorem_note_2026-04-15` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | critical | `dm_neutrino_source_amplitude_theorem_note_2026-04-15` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | critical | `dm_neutrino_source_bank_z3_doublet_block_selection_obstruction_theorem_note_2026-04-16` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |

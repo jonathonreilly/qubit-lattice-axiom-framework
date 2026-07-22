@@ -1,0 +1,522 @@
+{
+  "HEAD": "76aff0950c81cf7acffbc6f99ebe7884627740c8",
+  "audit": "unset",
+  "authority": "none",
+  "elapsed_seconds": 7.298766582971439,
+  "highest_honest_terminal": "intrinsic finite CAR-band relational and spectral clock candidates plus an exact supplied-controller first-return comparator; not an independent self-timing physical-M2 clock or proper time",
+  "maximum_RSS_bytes": 275988480,
+  "no_go_discipline": {
+    "N1_alternatives": [
+      [
+        "two intrinsic packets",
+        "band motion/overlap",
+        "local autonomous encounter",
+        "positive diagnostic only"
+      ],
+      [
+        "first-return collision",
+        "carried shifts/latch",
+        "repeatable endpoint word",
+        "positive with controller import"
+      ],
+      [
+        "spectral instrument",
+        "Hadamard pointer",
+        "operational spectral comparison",
+        "positive with controlled-U import"
+      ],
+      [
+        "second dimer irrep",
+        "A2-T2 local cross term",
+        "held co-moving beat",
+        "open"
+      ],
+      [
+        "three-CAR internal mode",
+        "contact cluster",
+        "held internal oscillator",
+        "open"
+      ],
+      [
+        "causal-front echo",
+        "corridor/reflection",
+        "independent endpoint standard",
+        "prior positive supplied apparatus"
+      ],
+      [
+        "source-conditioned dual clock",
+        "distinct source response",
+        "redshift/lapse comparison",
+        "open"
+      ]
+    ],
+    "N1_pass": false,
+    "N1_qualifying_attempted_families": 3,
+    "N1_required": 5,
+    "N2_directional_pairs": [
+      [
+        "independent genesis",
+        "intrinsic event law",
+        "independent genesis needs separately generated standards, not local encounter/transition dynamics",
+        "intrinsic event law needs local encounter/transition dynamics, not separately generated standards",
+        false
+      ],
+      [
+        "independent genesis",
+        "physical-M2 dimer compiler",
+        "independent genesis needs separately generated standards, not bounded site embedding and constraints",
+        "physical-M2 dimer compiler needs bounded site embedding and constraints, not separately generated standards",
+        false
+      ],
+      [
+        "independent genesis",
+        "renewable latch resources",
+        "independent genesis needs separately generated standards, not reset/archive stabilization",
+        "renewable latch resources needs reset/archive stabilization, not separately generated standards",
+        false
+      ],
+      [
+        "independent genesis",
+        "empirical calibration",
+        "independent genesis needs separately generated standards, not measured unit map",
+        "empirical calibration needs measured unit map, not separately generated standards",
+        false
+      ],
+      [
+        "independent genesis",
+        "continuum proper time",
+        "independent genesis needs separately generated standards, not Lorentz/scaling theorem",
+        "continuum proper time needs Lorentz/scaling theorem, not separately generated standards",
+        false
+      ],
+      [
+        "intrinsic event law",
+        "physical-M2 dimer compiler",
+        "intrinsic event law needs local encounter/transition dynamics, not bounded site embedding and constraints",
+        "physical-M2 dimer compiler needs bounded site embedding and constraints, not local encounter/transition dynamics",
+        false
+      ],
+      [
+        "intrinsic event law",
+        "renewable latch resources",
+        "intrinsic event law needs local encounter/transition dynamics, not reset/archive stabilization",
+        "renewable latch resources needs reset/archive stabilization, not local encounter/transition dynamics",
+        false
+      ],
+      [
+        "intrinsic event law",
+        "empirical calibration",
+        "intrinsic event law needs local encounter/transition dynamics, not measured unit map",
+        "empirical calibration needs measured unit map, not local encounter/transition dynamics",
+        false
+      ],
+      [
+        "intrinsic event law",
+        "continuum proper time",
+        "intrinsic event law needs local encounter/transition dynamics, not Lorentz/scaling theorem",
+        "continuum proper time needs Lorentz/scaling theorem, not local encounter/transition dynamics",
+        false
+      ],
+      [
+        "physical-M2 dimer compiler",
+        "renewable latch resources",
+        "physical-M2 dimer compiler needs bounded site embedding and constraints, not reset/archive stabilization",
+        "renewable latch resources needs reset/archive stabilization, not bounded site embedding and constraints",
+        false
+      ],
+      [
+        "physical-M2 dimer compiler",
+        "empirical calibration",
+        "physical-M2 dimer compiler needs bounded site embedding and constraints, not measured unit map",
+        "empirical calibration needs measured unit map, not bounded site embedding and constraints",
+        false
+      ],
+      [
+        "physical-M2 dimer compiler",
+        "continuum proper time",
+        "physical-M2 dimer compiler needs bounded site embedding and constraints, not Lorentz/scaling theorem",
+        "continuum proper time needs Lorentz/scaling theorem, not bounded site embedding and constraints",
+        false
+      ],
+      [
+        "renewable latch resources",
+        "empirical calibration",
+        "renewable latch resources needs reset/archive stabilization, not measured unit map",
+        "empirical calibration needs measured unit map, not reset/archive stabilization",
+        false
+      ],
+      [
+        "renewable latch resources",
+        "continuum proper time",
+        "renewable latch resources needs reset/archive stabilization, not Lorentz/scaling theorem",
+        "continuum proper time needs Lorentz/scaling theorem, not reset/archive stabilization",
+        false
+      ],
+      [
+        "empirical calibration",
+        "continuum proper time",
+        "empirical calibration needs measured unit map, not Lorentz/scaling theorem",
+        "continuum proper time needs Lorentz/scaling theorem, not measured unit map",
+        false
+      ]
+    ],
+    "N3_hidden_supplies": [
+      "two packet preparations, K labels, separation, width",
+      "shift program/ring/latch",
+      "controlled-U, pointer, dephasing environment",
+      "beta,g,finite boxes,noiseless gates"
+    ],
+    "N4_residual_matching": [
+      "Cycle573 trap wall matches autonomous localization/transport only",
+      "Cycle583 physical-M2 compiler and second-mode residuals match exactly",
+      "Cycle498/570 endpoint bridges do not supply intrinsic dimer events"
+    ],
+    "N5_resolution": "finite packet, finite rings L7/L11, and phases L11/L19/L31 only",
+    "N6_reopen": [
+      "branch-aware A2-T2 volume embedding",
+      "three-CAR finite-rank resolvent",
+      "physical-M2 dimer compiler",
+      "locally generated collision latch",
+      "independently generated source-sensitive standard"
+    ],
+    "N7_steelman": "A hostile reviewer can combine the nonzero finite A2-T2 component-local cross term with a branch-aware held embedding, then compile that local observable through the Cycle577 gauge instrument; this is a concrete unclosed route to an intrinsic beat and defeats any broad negative.",
+    "N8_echo": "Cycle498 retired depth readout using endpoints; Cycle570 retired finite count menus using distributed tokens; Cycle573 constructed a transition with a trap; Cycle578/583 supplied intrinsic dimer motion/contact structure. The same constructive progression may retire today's controller imports.",
+    "axiom_pressure": false,
+    "ledger": {
+      "C_int": "actual A2 contact band is consumed in A/C; Route B still uses supplied controller",
+      "C_local": "bounded detector/instrument candidates exist, but physical-M2 dimer embedding and controlled-U remain open",
+      "C_num": "finite overlap, return, and pointer diagnostics only; no empirical duration",
+      "C_ref": "intrinsic moving dimer supplies a relational packet reference, but no independent genesis or held second internal mode",
+      "C_source": "beta/g common-mode only; no source response, redshift, or gravity",
+      "C_wrap": "one-shot latch/ring returns are finite; renewal/archive open"
+    },
+    "negative_claim_shipped": false,
+    "shared_obstruction": false
+  },
+  "note_sha256": "18a68bfa257ffee1e416534b5fadd1c6973baca8a738dfd8e7475252c0d58e66",
+  "pass": true,
+  "pins": {
+    "outputs/physical_contact_dimer_infinite_internal_content_tournament_cycle583_receipt_2026_07_22.json": "c143568db4f7c91c136efe02454cf7608c3e4ca680c631a960b3428b561ba96c",
+    "outputs/physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_receipt_2026_07_22.json": "c7af39acc2fe365e317297c7fe0cead00fad125145dec72c61d8d2da151b435c",
+    "outputs/physical_joint_clock_accumulator_contraction_bridge_cycle570_receipt_2026_07_22.json": "f104399af621ded1b50e180e6fcce5f254008715b72191c6199fe4d583a8a806",
+    "outputs/physical_l41_projector_instrument_compiler_tournament_cycle577_receipt_2026_07_22.json": "806d7a7c1f8a7ed5b9de235de0bde5bec63d3fbaae7eb68cd55c862a35d9daa3",
+    "outputs/physical_matter_transition_clock_equivalence_tournament_cycle573_receipt_2026_07_22.json": "4863e0e32c8298c1539b0d10e274cd14661ed3d8aa895bbe6af697dc9b9d5553",
+    "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py": "ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a",
+    "scripts/physical_contact_dimer_infinite_internal_content_tournament_cycle583_2026_07_22.py": "3f1672ef0d2c0063d5760a6b0885d75cb75b63c64b44951399fd0762d5499f7f",
+    "scripts/physical_enlarged_link_contact_work_tournament_cycle569_2026_07_22.py": "c0f06a9cc9ffc4dcfe1d80b94da10bbef81ca1c74fddddac48712b0a7c332ced",
+    "scripts/physical_held_sparse_order_retirement_cycle563_2026_07_21.py": "444a5c0fb3cb1758236ddefaeb472d0002cadb256d3c4df723fd562129c7325b",
+    "scripts/physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_2026_07_22.py": "25806853483a822b86dd55c50ebedb7957395151ef262317110b348c6931b9ab",
+    "scripts/physical_joint_clock_accumulator_contraction_bridge_cycle570_2026_07_22.py": "853abe5470efd15b154d6cb348d49795a6fa84e77a62f0b21a79105892b1d415",
+    "scripts/physical_l41_projector_instrument_compiler_tournament_cycle577_2026_07_22.py": "93bf1fa2859289b13037bfe7882cce86732e9377ed8b60e56c3bd55ebc0ce74f",
+    "scripts/physical_matter_transition_clock_equivalence_tournament_cycle573_2026_07_22.py": "a85daf8fa9b8f3f1b7ef9aed6bfb84fe908ecbe33b2524f8ffebd66471dec20d",
+    "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py": "b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae"
+  },
+  "retained_M2_fixtures": {
+    "Cycle230_contact_factorization_residual": 2.149937642474629e-15,
+    "Cycle230_seam_braid_residual": 0.0,
+    "RouteB_CAR_fiber_is_a_new_physical_M2_bound_state_embedding": false,
+    "one_particle_mass_residual": 8.7159799596118e-16
+  },
+  "route_A": {
+    "all24_inherited_band_covariance_residual": 5.334877211845807e-16,
+    "independence_audit": {
+      "A2_internal_dimension": 1,
+      "distinct_law_parameters": false,
+      "distinct_reference_genesis": false,
+      "full_four_CAR_antisymmetrization_or_scattering_included": false,
+      "separate_initial_packets": true,
+      "shared_beta": -0.3,
+      "shared_g": 0.37
+    },
+    "independent_standard_certified": false,
+    "interpretation": "actual finite CAR-fiber band packets on an explicitly decoupled tensor product; no four-CAR scattering, event latch, self-timing, or physical-M2 dimer embedding",
+    "local_encounter_observable": "sum_x P_center,A(x) tensor P_center,B(x)",
+    "physical_M2_dimer_compiler_available": false,
+    "rows": [
+      {
+        "K_labels_A": [
+          0.0,
+          0.04908738521234052,
+          0.09817477042468103,
+          0.14726215563702155,
+          0.19634954084936207
+        ],
+        "K_labels_B": [
+          -0.0,
+          -0.04908738521234052,
+          -0.09817477042468103,
+          -0.14726215563702155,
+          -0.19634954084936207
+        ],
+        "center_circumference": 128,
+        "deletion_signal": 7.907490837715664e-06,
+        "encounter_projector_after_one_actual_update": 0.018549746983927206,
+        "encounter_projector_before": 0.01856554427280732,
+        "encounter_signal": 1.5797288880115695e-05,
+        "flat_one_side_control": 0.018557654474764602,
+        "maximum_actual_fiber_eigen_residual": 5.570863270260108e-16,
+        "one_dimer_update_deleted": 0.01855765447476492,
+        "packet_norm_residual": 8.881784197001252e-15,
+        "relative_L": 5,
+        "split": "train",
+        "supplied_initial_center_separation": 8,
+        "tensor_product_decoupling_import": true
+      },
+      {
+        "K_labels_A": [
+          0.0,
+          0.04908738521234052,
+          0.09817477042468103,
+          0.14726215563702155,
+          0.19634954084936207
+        ],
+        "K_labels_B": [
+          -0.0,
+          -0.04908738521234052,
+          -0.09817477042468103,
+          -0.14726215563702155,
+          -0.19634954084936207
+        ],
+        "center_circumference": 128,
+        "deletion_signal": 7.206102036354245e-06,
+        "encounter_projector_after_one_actual_update": 0.017508449328729726,
+        "encounter_projector_before": 0.01752285215853938,
+        "encounter_signal": 1.4402829809655182e-05,
+        "flat_one_side_control": 0.017515655430766455,
+        "maximum_actual_fiber_eigen_residual": 8.317370886825205e-16,
+        "one_dimer_update_deleted": 0.01751565543076608,
+        "packet_norm_residual": 2.0872192862952943e-14,
+        "relative_L": 7,
+        "split": "held",
+        "supplied_initial_center_separation": 10,
+        "tensor_product_decoupling_import": true
+      }
+    ]
+  },
+  "route_B": {
+    "all24_opposite_stream_covariance_residual": 0.0,
+    "controller_program_supplied": true,
+    "intrinsic_dimer_law_used": false,
+    "lawful_domain": "odd one-hot rings, distinct carrier identities, blank latch",
+    "local_support": 3,
+    "malformed_even_ring_rejected": true,
+    "proper_cubic_frames": 24,
+    "resource_debit": "two one-hot position words plus latch/program; repeated tick archive/reset and renewal open",
+    "rows": [
+      {
+        "L": 7,
+        "M2_upper_bound": 16,
+        "detector_deletion_signal": 7,
+        "first_collision_opportunity": 1,
+        "initial_separation": 2,
+        "return_period_opportunities": 7,
+        "split": "train",
+        "stream_deletion_signal": 1,
+        "trace": [
+          [
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            2,
+            2,
+            0,
+            0,
+            1
+          ],
+          [
+            3,
+            3,
+            6,
+            0,
+            1
+          ],
+          [
+            4,
+            4,
+            5,
+            0,
+            1
+          ],
+          [
+            5,
+            5,
+            4,
+            0,
+            1
+          ],
+          [
+            6,
+            6,
+            3,
+            0,
+            1
+          ],
+          [
+            7,
+            0,
+            2,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "L": 11,
+        "M2_upper_bound": 24,
+        "detector_deletion_signal": 10,
+        "first_collision_opportunity": 2,
+        "initial_separation": 4,
+        "return_period_opportunities": 11,
+        "split": "held",
+        "stream_deletion_signal": 1,
+        "trace": [
+          [
+            0,
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            3,
+            0,
+            0
+          ],
+          [
+            2,
+            2,
+            2,
+            1,
+            1
+          ],
+          [
+            3,
+            3,
+            1,
+            0,
+            1
+          ],
+          [
+            4,
+            4,
+            0,
+            0,
+            1
+          ],
+          [
+            5,
+            5,
+            10,
+            0,
+            1
+          ],
+          [
+            6,
+            6,
+            9,
+            0,
+            1
+          ],
+          [
+            7,
+            7,
+            8,
+            0,
+            1
+          ],
+          [
+            8,
+            8,
+            7,
+            0,
+            1
+          ],
+          [
+            9,
+            9,
+            6,
+            0,
+            1
+          ],
+          [
+            10,
+            10,
+            5,
+            0,
+            1
+          ],
+          [
+            11,
+            0,
+            4,
+            0,
+            1
+          ]
+        ]
+      }
+    ],
+    "self_timing_certified": false
+  },
+  "route_C": {
+    "all24_A2_source_residual": 5.382005793715205e-16,
+    "controlled_Cycle230_update_compiler_supplied": true,
+    "fresh_low_entropy_M2_per_instrument": 12,
+    "held_pointer_spread": 2.6253700824430126e-08,
+    "independent_standard_certified": false,
+    "instrument_upper_bound": "Cycle577 18-M2 three-site gauge/Naimark block",
+    "phase_is_time_or_rate": false,
+    "pointer_dephasing_and_member_law_supplied": true,
+    "renewal_open": true,
+    "rows": [
+      {
+        "L": 11,
+        "controlled_update_deletion_signal": 0.99312540193531,
+        "hadamard_pointer_zero_weight": 0.006874598064689985,
+        "scalar_BS_residual": 1.8683538841690045e-14,
+        "two_pi_lift_residual": 5.551115123125783e-17,
+        "wrapped_phase": -2.975575673176911
+      },
+      {
+        "L": 19,
+        "controlled_update_deletion_signal": 0.9931254280352051,
+        "hadamard_pointer_zero_weight": 0.006874571964794907,
+        "scalar_BS_residual": 1.4715921120548298e-14,
+        "two_pi_lift_residual": 0.0,
+        "wrapped_phase": -2.9755759890506126
+      },
+      {
+        "L": 31,
+        "controlled_update_deletion_signal": 0.9931254281890108,
+        "hadamard_pointer_zero_weight": 0.006874571810989161,
+        "scalar_BS_residual": 1.5300168363957343e-14,
+        "two_pi_lift_residual": 0.0,
+        "wrapped_phase": -2.9755759909120467
+      }
+    ]
+  },
+  "runner_sha256": "927be865f3ce16e2109dca602ecad365a9b5f1f2ebda7f78c3a3395f9e867755",
+  "six_wall_ledger": {
+    "C_int": "actual A2 contact band is consumed in A/C; Route B still uses supplied controller",
+    "C_local": "bounded detector/instrument candidates exist, but physical-M2 dimer embedding and controlled-U remain open",
+    "C_num": "finite overlap, return, and pointer diagnostics only; no empirical duration",
+    "C_ref": "intrinsic moving dimer supplies a relational packet reference, but no independent genesis or held second internal mode",
+    "C_source": "beta/g common-mode only; no source response, redshift, or gravity",
+    "C_wrap": "one-shot latch/ring returns are finite; renewal/archive open"
+  },
+  "status": "cycle586-intrinsic-dimer-causal-clock-bridge",
+  "tests_failed": 0,
+  "tests_passed": 7
+}

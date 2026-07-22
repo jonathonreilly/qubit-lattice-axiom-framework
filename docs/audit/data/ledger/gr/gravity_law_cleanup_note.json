@@ -1,9 +1,10 @@
 {
   "audit_date": null,
   "audit_invocation_history": [
-    "0db634b160c84d82a9381632e582a3e9"
+    "0db634b160c84d82a9381632e582a3e9",
+    "8dea8d574f7c4927948eb21ed01ae335"
   ],
-  "audit_invocation_id": "0db634b160c84d82a9381632e582a3e9",
+  "audit_invocation_id": "8dea8d574f7c4927948eb21ed01ae335",
   "audit_state_snapshot": null,
   "audit_status": "audit_in_progress",
   "auditor": null,
@@ -11,7 +12,7 @@
   "auditor_family": null,
   "auditor_model": null,
   "auditor_reasoning_effort": null,
-  "blocker": "awaiting_cross_confirmation",
+  "blocker": "cross_confirmation_disagreement",
   "chain_closes": null,
   "chain_closure_explanation": null,
   "claim_id": "gravity_law_cleanup_note",
@@ -51,8 +52,38 @@
       "verdict": "audited_clean",
       "verdict_rationale": "The primary and helper sources genuinely compute the six rows from generated DAGs rather than printing or importing the contested values. The computed positive peak occurs at the largest sampled b-value, leaving no post-peak points and directly producing the reported absence of a review-safe falling-tail fit. The audited scope is expressly descriptive and does not promote significance, a physical gravity law, or mass scaling, so the runner's stipulated model parameters are not being laundered into those broader conclusions."
     },
-    "second_audit": null,
-    "status": "awaiting_second"
+    "second_audit": {
+      "audit_date": "2026-07-22T18:23:13.486447+00:00",
+      "audit_invocation_id": "8dea8d574f7c4927948eb21ed01ae335",
+      "auditor": "codex-audit-batch-B-20260722-752b1f1f",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "chain_closes": false,
+      "chain_closure_explanation": "The stdout and implementation close the software-output reproduction, but the restricted packet does not derive the stipulated field, propagation, geometry, or centroid readout from the framework axioms. The missing framework-to-runner bridge prevents retained scientific closure.",
+      "claim_scope": "On the stipulated generated-DAG runner and cached b-window, the six t-values are descriptive and the code reports no review-safe falling-tail fit; no significance or physical force-law claim is audited.",
+      "claim_type": "bounded_theorem",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The binding content is the raw per-b t-values on the cached sweep and the runner's report that there are not enough falling-tail points for a review-safe power-law fit.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "stretch_attempt_negative"
+      ],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply retained derivations of the field, propagation/action, geometry, and detector-centroid prescriptions from the framework baseline, or narrow the artifact explicitly to a stipulated software-output certificate with no gravity interpretation and add a dated downstream-hygiene line to this note's boundary.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict": "audited_conditional",
+      "verdict_rationale": "The supplied stdout reproduces all six rows, and the source computes them rather than printing expected constants; its peak/tail branch emits the no-fit message because the positive maximum is at the endpoint. Nevertheless, class-C clean closure from the framework baseline is absent: the continuous random DAG, BETA/K band, 0.1/r field, action formula, barrier/slit choices, and centroid readout are stipulated in code and are not derived from any supplied axiom or retained authority. Accordingly, the result is usable only as conditional software/model output, not as a framework-derived gravity statement. For N1\u2013N8, dynamics, normalization, observable, and lattice-scale alternatives remain untested; the independent wall is the missing framework-to-runner bridge; the note's boundary and registration language is disclosure; no prior residual witness or indexed partial-closure or cross-cycle candidate closes the gap; and no independent steelman or five-resolution rhetoric test is supplied."
+    },
+    "status": "disagreement"
   },
   "decoration_parent_claim_id": null,
   "deps": [],

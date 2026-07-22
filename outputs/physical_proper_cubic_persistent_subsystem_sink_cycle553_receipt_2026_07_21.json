@@ -1,0 +1,93 @@
+{
+  "status": "cycle553-six-bit-persistent-relational-CSS-sink-verified-three-bit-interface-open",
+  "authority": "none",
+  "audit": "unset",
+  "runner_sha256": "9f0523583c5ce2bfaa916ec91010e43ed51ea10643a644214d0949556dc3d7a3",
+  "note_sha256": "69babc539705a93f83985658b81a50559c3fb74cffb50676ec5a9bd30414b0b4",
+  "parent_certificate_sha256": "5e00eb5eafdc930c9a6bd50ac79f75048d5dec1e50735ec68f14e8e70438e7e9",
+  "tests_passed": 10,
+  "tests_total": 10,
+  "pass": true,
+  "elapsed_seconds_internal": 215.75279491592664,
+  "timed_wall_seconds": 217.09,
+  "maximum_RSS_bytes": 134217728,
+  "process_swap_count": 0,
+  "sink_codes": {
+    "three_bit_L5": {
+      "sink_M2": 750,
+      "constraint_rows": 2625,
+      "constraint_rank": 747,
+      "code_exponent": 3,
+      "commutant_dimension_and_rank": [6, 6]
+    },
+    "three_bit_L6": {
+      "sink_M2": 1296,
+      "constraint_rows": 4536,
+      "constraint_rank": 1293,
+      "code_exponent": 3,
+      "commutant_dimension_and_rank": [6, 6]
+    },
+    "six_bit_L5": {
+      "sink_M2": 1500,
+      "constraint_rows": 5250,
+      "constraint_rank": 1494,
+      "code_exponent": 6,
+      "commutant_dimension_and_rank": [12, 12]
+    },
+    "six_bit_L6": {
+      "sink_M2": 2592,
+      "constraint_rows": 9072,
+      "constraint_rank": 2586,
+      "code_exponent": 6,
+      "commutant_dimension_and_rank": [12, 12]
+    },
+    "maximum_constraint_support_M2": 2,
+    "maximum_constraint_physical_L1_diameter": 16,
+    "phase_inconsistencies_or_unaccounted_logicals": 0,
+    "all24_coordinate_relation_symplectic_failures": 0,
+    "all24_phase_aware_logical_action_failures": 0,
+    "all576_site_or_phase_group_failures": 0,
+    "delete_one_site_constraint_rank_drop": 1
+  },
+  "reversible_transfer": {
+    "three_bit_endpoint_pairs_L5_L6": [750, 1296],
+    "six_bit_endpoint_pairs_L5_L6": [1500, 2592],
+    "three_bit_forward_NN_SWAP_calls_L5_L6": [6750, 11664],
+    "six_bit_forward_NN_SWAP_calls_L5_L6": [9000, 15552],
+    "three_bit_declared_branch_cases_L5_L6": [8, 8],
+    "six_bit_declared_branch_cases_L5_L6": [64, 64],
+    "state_transfer_terminal_constraint_or_inverse_failures": 0,
+    "route_endpoint_layer_or_covariance_failures": 0,
+    "source_to_sink_check_group_one_to_one_conjugation_claimed": false,
+    "changing_check_law_or_code_deformation_constructed": false,
+    "three_bit_untransferred_frame_source_M2_L5_L6": [750, 1296],
+    "all_six_source_families_blank_only_for_six_bit_route": true,
+    "deleted_remote_SWAP_permutation_residual_per_family": 2
+  },
+  "target_and_commutant": {
+    "Cycle532_and_Cycle537_base_size_sink_cases": 8,
+    "explicit_base_gauge_plus_sink_exhausts_commutant": true,
+    "matter_sink_or_base_gauge_sink_cross_commutator_failures": 0,
+    "both_matter_parities_nonempty": true,
+    "commutant_radical_dimension": 1,
+    "matter_gauge_parity_center_unchanged": true,
+    "GammaP_mass_contact_seam_inverse_leakage_deletion_replay": true,
+    "six_bit_controlled_membrane_factors_L5_L6": [150, 216],
+    "maximum_controlled_factor_support_M2": 3,
+    "maximum_controlled_factor_physical_L1_diameter": 7
+  },
+  "minimum_and_open_boundary": {
+    "three_bits_necessary_for_Cycle550_arbitrary_Wilson_sector_contract": true,
+    "three_bits_sufficient_for_sector_information_and_dimension": true,
+    "three_bits_sufficient_for_full_target_transparent_interface": false,
+    "six_bits_sufficient_for_existing_Cycle547_relational_interface": true,
+    "six_bits_proved_minimum": false,
+    "certified_retained_bit_interval": "3 <= retained bits <= 6",
+    "chi_dependent_generators_L5_L6": [300, 432],
+    "rough_product_encoder_constructed": false,
+    "full_physical_update_intertwiner_constructed": false,
+    "shared_substrate_obstruction": false,
+    "axiom_pressure": false,
+    "broad_negative_gate": "FAIL / DO NOT SHIP"
+  }
+}

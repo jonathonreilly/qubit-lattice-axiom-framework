@@ -1,24 +1,84 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-22T20:52:57.894401+00:00",
+  "audit_invocation_history": [
+    "e485e3dabec44b91b90c51926e32c90a",
+    "a3a3359e55724e7dbe106ea69c04eac0"
+  ],
+  "audit_invocation_id": "a3a3359e55724e7dbe106ea69c04eac0",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 13,
+        "B": 4,
+        "C": 2,
+        "D": 7
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true,
+      "runner_path": "scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py"
+    },
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {
+      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    },
+    "dep_claim_scope": {
+      "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "For the nearest-neighbor graph Laplacian (-Delta_lat) on Z^3 with unit lattice spacing, the infinite-volume Green kernel has leading asymptotic normalization G(x) ~ 1/(4 pi |x|).",
+      "minimal_axioms": null
+    },
+    "dep_claim_type": {
+      "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "bounded_theorem",
+      "minimal_axioms": "meta"
+    },
+    "dep_effective_status": {
+      "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "retained_bounded",
+      "minimal_axioms": "meta"
+    },
+    "deps": [
+      "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+      "minimal_axioms"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 10.07,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "3889c5bbc03974c0677b8a0bb1f79cc70d0fa0434c9a07d3e203d15b4d639aa0",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "3889c5bbc03974c0677b8a0bb1f79cc70d0fa0434c9a07d3e203d15b4d639aa0",
+    "runner_path": "scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 759
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-B-20260722-381a1aae",
+  "auditor_confidence": "medium",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The cited retained-bounded parent states the required asymptotic, and the supplied code implements the advertised normalization checks, but the authenticated runner stdout is explicitly clipped. The complete execution certificate therefore cannot be verified from this restricted packet.",
   "claim_id": "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
-  "claim_scope": null,
+  "claim_scope": "Single-parent dependency reroute for the retained-bounded nearest-neighbor Z3 Green-kernel asymptotic, with symbol-normalization, continuum-flux, and axis-residual checks.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-22T20:52:57.894401+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -27,19 +87,20 @@
     "minimal_axioms"
   ],
   "direct_in_degree": 1,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "fresh_context",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 10.07,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "(B4) The leading Green-kernel coefficient is c = 1/(4 pi) for the framework operator, using the parent framework-local theorem plus (B1)-(B3).",
+  "load_bearing_step_class": "B",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "b7be614b9c66f5faef726fea56f7f4377fe3948c235a2747446c3f33166d200f",
   "note_path": "docs/LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "runner_artifact_issue: provide the complete, unclipped authenticated stdout for the 76-check primary runner so every reported pass can be verified.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1660,14 +1721,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
-    "C": 0,
+    "A": 22,
+    "B": 46,
+    "C": 8,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 76
   },
   "runner_path": "scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py",
   "title": "Cubic-Lattice Green's Function Asymptotic Native Reroute",
   "transitive_descendants": 759,
-  "verdict_rationale": null
+  "verdict_rationale": "The mathematical route is consistent with the retained-bounded parent: B1 and B2 are standard identities, B3 is a finite residual computation, and B4 imports the parent\u2019s asymptotic conclusion. However, the packet preflight identifies the runner stdout as clipped load-bearing evidence, so the complete certificate is an unresolved evidentiary obligation and audited_clean is forbidden. This is a runner-artifact defect rather than a demonstrated scientific contradiction."
 }

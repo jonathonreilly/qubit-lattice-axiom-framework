@@ -1429,7 +1429,7 @@
         },
         {
           "claim_id": "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "lattice_nn_light_cone_note",
@@ -2763,6 +2763,6 @@
       "uncertified_count": 633
     }
   ],
-  "repo_head": "e5aa278fb1b26a01e3bbd939a6560631a79082eb",
+  "repo_head": "71d4d9af3c6f7c20627bafd38782103e8d5e3a76",
   "schema": "lane_certification_v2"
 }

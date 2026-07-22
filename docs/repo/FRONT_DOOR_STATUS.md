@@ -32,11 +32,11 @@ Owner-approval history for axioms and primitives:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3852 |
-| Applied audit verdicts | 504 |
-| Retained-grade rows, including boxed decorations | 414 |
+| Applied audit verdicts | 505 |
+| Retained-grade rows, including boxed decorations | 415 |
 | Retained positive theorems | 88 |
 | Retained no-go rows | 0 |
-| Retained bounded rows | 310 |
+| Retained bounded rows | 311 |
 | Boxed decorations under retained parents | 16 |
 | Open gates | 2 |
 | Unaudited rows | 2978 |
@@ -54,10 +54,10 @@ Full audit-ratified row list: [`docs/repo/RETAINED_BACKBONE.md`](RETAINED_BACKBO
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 3053 |
-| Ready rows | 638 |
+| Total pending rows | 3052 |
+| Ready rows | 639 |
 | Cycle-break targets | 59 |
-| Critical pending | 653 |
+| Critical pending | 652 |
 | High pending | 372 |
 | Medium pending | 839 |
 | Leaf pending | 1189 |
@@ -194,13 +194,12 @@ Lane rows advanced by the simulated interleave (positions gained; complete list)
 - `koide_q_bridge_single_primitive_note_2026-04-22`: +4
 - `yt_ew_color_projection_theorem`: +3
 - `yt_ew_m_residual_note_2026-05-02`: +3
-- `gauge_vacuum_plaquette_susceptibility_flow_theorem_note`: +3
 - `sigma_hier_uniqueness_theorem_note_2026-04-19`: +3
 - `planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25`: +3
 - `cpt_particle_antiparticle_lifetime_equality_theorem_note_2026-05-02`: +3
 - `s3_mass_matrix_conditional_degeneracy_note_2026-07-11`: +2
 - `unit_singlet_overlap_narrow_theorem_note_2026-05-02`: +2
-- `gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note`: +2
+- `gauge_vacuum_plaquette_susceptibility_flow_theorem_note`: +2
 - `gauge_vacuum_plaquette_constant_lift_obstruction_note`: +2
 - `action_normalization_note`: +2
 - `koide_dimensionless_note_2026-04-24`: +2
@@ -208,6 +207,7 @@ Lane rows advanced by the simulated interleave (positions gained; complete list)
 - `gravitomagnetic_note`: +2
 - `cpt_particle_antiparticle_mass_equality_theorem_note_2026-05-02`: +2
 - `hierarchy_matsubara_decomposition_note`: +1
+- `gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note`: +1
 - `gauge_vacuum_plaquette_perron_jacobi_underdetermination_note`: +1
 - `gauge_vacuum_plaquette_mixed_cumulant_audit_note`: +1
 - `area_law_multipocket_selector_no_go_note_2026-04-25`: +1
@@ -295,7 +295,6 @@ Non-lane rows deferred by the simulated interleave (positions lost; complete lis
 - `gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17`: -4
 - `abj_epsilon_index_square_block_no_go_note_2026-05-30`: -3
 - `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10`: -3
-- `gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09`: -3
 - `rp_p2_gauge_extension_and_realization_residual_note_2026-05-28`: -3
 - `observable_principle_record_scalar_map_no_go_note_2026-06-05`: -3
 - `quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02`: -3
@@ -325,6 +324,7 @@ Non-lane rows deferred by the simulated interleave (positions lost; complete lis
 - `koide_q_dred_normalization_freedom_no_go_note_2026-06-15`: -2
 - `cl3_complexification_split_narrow_theorem_note_2026-05-10`: -1
 - `yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26`: -1
+- `gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10`: -1
 - `dm_neutrino_cascade_geometry_note_2026-04-14`: -1
 - `axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05`: -1
 - `quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28`: -1

@@ -1044,10 +1044,6 @@
           "effective_status": "unaudited"
         },
         {
-          "claim_id": "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09",
-          "effective_status": "audit_in_progress"
-        },
-        {
           "claim_id": "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
           "effective_status": "audit_in_progress"
         },
@@ -2800,9 +2796,9 @@
       "roots": [
         "strong_cp_theta_zero_note"
       ],
-      "uncertified_count": 643
+      "uncertified_count": 642
     }
   ],
-  "repo_head": "0aef060850311728246a3ca33f87cdf155c29165",
+  "repo_head": "9031d5e22dab83ba172b8dbbc73adf479fcc7de8",
   "schema": "lane_certification_v2"
 }

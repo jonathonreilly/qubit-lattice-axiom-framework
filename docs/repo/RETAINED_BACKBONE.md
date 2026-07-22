@@ -17,7 +17,7 @@ file per claim), summarized in
 | Metric | Value |
 |---|---:|
 | Retained positive rows | 88 |
-| Retained bounded rows | 310 |
+| Retained bounded rows | 311 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 16 |
 
@@ -114,20 +114,21 @@ Sorted by load-bearing graph score (descending).
 - [`replay_environment_note`](../../docs/REPLAY_ENVIRONMENT_NOTE.md) — score 0.000; audited 2026-05-01T23:28:33.389906+00:00
 - [`staggered_graph_portability_stress_note`](../../docs/STAGGERED_GRAPH_PORTABILITY_STRESS_NOTE.md) — score 0.000; audited 2026-05-05T11:44:13.477263+00:00
 
-## Retained bounded rows (310)
+## Retained bounded rows (311)
 
 Sorted by load-bearing graph score (descending).
 
 - [`plaquette_self_consistency_note`](../../docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md) — score 49.287; audited 2026-07-18T01:04:58.329581+00:00
 - [`s3_cap_uniqueness_note`](../../docs/S3_CAP_UNIQUENESS_NOTE.md) — score 21.761; audited 2026-05-28T01:33:46.485182+00:00
 - [`lattice_greens_function_maradudin_textbook_import_note_2026-05-18`](../../docs/LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md) — score 19.649; audited 2026-06-10T02:32:15.539017+00:00
+- [`gauge_vacuum_plaquette_reduction_existence_theorem_note`](../../docs/GAUGE_VACUUM_PLAQUETTE_REDUCTION_EXISTENCE_THEOREM_NOTE.md) — score 18.919; audited 2026-07-22T17:50:03.273685+00:00
 - [`dm_leptogenesis_pmns_projector_interface_note_2026-04-16`](../../docs/DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md) — score 18.572; audited 2026-07-21T18:21:47.783638+00:00
 - [`spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10`](../../docs/SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md) — score 15.782; audited 2026-07-18T01:07:50.223817+00:00
 - [`gate_b_grown_distance_law_note`](../../docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md) — score 15.619; audited 2026-05-05T00:56:01.672707+00:00
 - [`pl_topology_infrastructure_textbook_import_note_2026-05-17`](../../docs/PL_TOPOLOGY_INFRASTRUCTURE_TEXTBOOK_IMPORT_NOTE_2026-05-17.md) — score 15.262; audited 2026-05-26T19:25:11.724360+00:00
 - [`plaquette_v1_picard_fuchs_ode_note_2026-05-05`](../../docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md) — score 15.135; audited 2026-06-08T18:55:20.964216+00:00
-- [`gauge_vacuum_plaquette_reduction_existence_theorem_note`](../../docs/GAUGE_VACUUM_PLAQUETTE_REDUCTION_EXISTENCE_THEOREM_NOTE.md) — score 14.919; audited 2026-07-22T17:50:03.273685+00:00
 - [`claude_complex_action_grown_companion_note`](../../docs/CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md) — score 14.858; audited 2026-05-11T22:49:29.676859+00:00
+- [`gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09`](../../docs/GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md) — score 13.762; audited 2026-07-22T18:17:30.257788+00:00
 - [`hierarchy_spatial_bc_and_u0_scaling_note`](../../docs/HIERARCHY_SPATIAL_BC_AND_U0_SCALING_NOTE.md) — score 13.731; audited 2026-05-05T09:59:06.642371+00:00
 - [`valley_linear_action_note`](../../docs/VALLEY_LINEAR_ACTION_NOTE.md) — score 13.190; audited 2026-05-11T22:50:45.104109+00:00
 - [`alt_connectivity_family_sign_note`](../../docs/ALT_CONNECTIVITY_FAMILY_SIGN_NOTE.md) — score 12.687; audited 2026-05-04T23:31:29.820978+00:00

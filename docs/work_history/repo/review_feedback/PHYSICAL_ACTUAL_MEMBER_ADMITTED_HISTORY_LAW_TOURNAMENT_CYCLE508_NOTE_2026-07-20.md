@@ -1,8 +1,8 @@
 # Cycle 508 — physical actual-member / admitted-history law tournament
 
-Date: 2026-07-20  
-Authority: none  
-Audit: unset  
+Date: 2026-07-20
+Authority: none
+Audit: unset
 Status: frozen-before-held contract; train only; this evaluator has no held execution path
 
 train evaluator SHA-256: b223ff44b159a598ef52ea21b3e758a1303e126d7f53474f799ed14c0a829dc6

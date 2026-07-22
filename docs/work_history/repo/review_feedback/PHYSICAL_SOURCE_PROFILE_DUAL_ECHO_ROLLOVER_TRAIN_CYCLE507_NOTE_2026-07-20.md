@@ -1,7 +1,7 @@
 # Physical source/profile dual-echo rollover — Cycle 507 TRAIN note (2026-07-20)
 
-Authority: none  
-Audit: unset  
+Authority: none
+Audit: unset
 Disposition: **TRAIN POSITIVE FOR THE FINITE N=8 DELAY APPARATUS ONLY; HELD ADVANCE REMAINS UNRUN**
 
 ## Frozen inputs
@@ -156,8 +156,8 @@ A fixed short/neutral/long supergraph remains a serious alternative. One immutab
 
 Cycle 451 closed a denominator-registration problem by adding a co-registered dual clock. Cycle 504 closed finite no-wrap endpoints by adding retained rollover and renewal carriers. Cycle 507's train result composes those carriers for supplied D. Those earlier closures came from new physical carriers, so failure of held A or a future size-uniform compiler would still not support a route-independent no-go while the supergraph, transducer, operator, handshake, and mediator routes remain live.
 
-Broad no-go gate: **FAIL / DO NOT SHIP**.  
-Shared substrate obstruction: **not established**.  
+Broad no-go gate: **FAIL / DO NOT SHIP**.
+Shared substrate obstruction: **not established**.
 Axiom pressure: **none**.
 
 ## Exact disposition and next decision

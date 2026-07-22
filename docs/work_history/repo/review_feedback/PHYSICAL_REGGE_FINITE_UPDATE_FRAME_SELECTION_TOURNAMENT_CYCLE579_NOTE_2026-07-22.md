@@ -1,6 +1,6 @@
 # Physical Regge finite-update/frame-selection tournament — Cycle 579
 
-Authority: none  
+Authority: none
 Audit: unset
 
 ## Exact target and boundary

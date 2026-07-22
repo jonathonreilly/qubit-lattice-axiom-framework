@@ -1,8 +1,8 @@
 # Cycle 508 — physical actual-member / admitted-history law tournament preflight
 
-Date: 2026-07-20  
-Authority: none  
-Audit: unset  
+Date: 2026-07-20
+Authority: none
+Audit: unset
 Status: reconnaissance and preflight only; no Cycle-508 train or held execution is authorized by this note
 
 preflight runner SHA-256: 08a59d0230b216bf8e2021c2cae4d90f39f230d96a9e984935b1879853cac0bf

@@ -1,9 +1,9 @@
 # Physical Regge Static-Scalar / Prediction Bridge Tournament — Cycle 585
 
-**Date:** 2026-07-22  
-**Authority:** none  
-**Audit:** unset  
-**Status:** positive partial construction with explicit residuals  
+**Date:** 2026-07-22
+**Authority:** none
+**Audit:** unset
+**Status:** positive partial construction with explicit residuals
 **Runner:** `scripts/physical_regge_static_scalar_prediction_bridge_tournament_cycle585_2026_07_22.py`
 
 Machine-readable scope contract: authority: none; audit: unset. The metric-image

@@ -1,8 +1,8 @@
 # Physical covariant protected-link shadow — Cycle 528
 
-Date: 2026-07-21  
-Authority: none  
-Audit: unset  
+Date: 2026-07-21
+Authority: none
+Audit: unset
 Constitutional effect: none
 
 Companion runner:

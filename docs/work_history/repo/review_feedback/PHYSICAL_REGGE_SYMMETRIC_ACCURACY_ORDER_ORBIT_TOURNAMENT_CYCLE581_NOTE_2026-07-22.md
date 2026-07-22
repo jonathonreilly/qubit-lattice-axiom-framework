@@ -1,6 +1,6 @@
 # Physical Regge symmetric-accuracy/order-orbit tournament — Cycle 581
 
-Authority: none  
+Authority: none
 Audit: unset
 
 ## Exact target and claim boundary
@@ -453,11 +453,11 @@ the raw local action. Cycle 579 converted the first-order circuit wall into an
 exact product compiler plus convergence theorem. Cycle 581 follows the same
 partial-closure pattern and keeps layout/genesis visible.
 
-N1 status: **FAIL**.  
-Artifact status: **POSITIVE PARTIAL CONSTRUCTION WITH EXPLICIT RESIDUALS**.  
-Broad negative gate: FAIL / DO NOT SHIP.  
-Minimum-content claim: FAIL / DO NOT SHIP.  
-Shared-obstruction claim: DO NOT SHIP.  
+N1 status: **FAIL**.
+Artifact status: **POSITIVE PARTIAL CONSTRUCTION WITH EXPLICIT RESIDUALS**.
+Broad negative gate: FAIL / DO NOT SHIP.
+Minimum-content claim: FAIL / DO NOT SHIP.
+Shared-obstruction claim: DO NOT SHIP.
 Axiom-pressure claim: DO NOT SHIP.
 
 No negative claim is shipped. There is no established shared obstruction and

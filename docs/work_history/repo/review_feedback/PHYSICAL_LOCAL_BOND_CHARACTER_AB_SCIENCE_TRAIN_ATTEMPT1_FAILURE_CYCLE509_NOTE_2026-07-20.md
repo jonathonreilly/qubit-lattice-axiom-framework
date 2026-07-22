@@ -1,8 +1,8 @@
 # Cycle 509 A/B science-train attempt-1 failure receipt
 
-Date: 2026-07-20  
-Authority: **none**  
-Audit: **unset**  
+Date: 2026-07-20
+Authority: **none**
+Audit: **unset**
 Disposition: **implementation-invalid; no scientific verdict**
 
 ## Scope

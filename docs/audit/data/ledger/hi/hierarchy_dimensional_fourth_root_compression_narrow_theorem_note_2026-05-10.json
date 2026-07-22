@@ -1,9 +1,10 @@
 {
   "audit_date": null,
   "audit_invocation_history": [
-    "4073f4645ac94a9491c7e51bc0f333ef"
+    "4073f4645ac94a9491c7e51bc0f333ef",
+    "fa114b602d644e45924bb0541a6f565a"
   ],
-  "audit_invocation_id": "4073f4645ac94a9491c7e51bc0f333ef",
+  "audit_invocation_id": "fa114b602d644e45924bb0541a6f565a",
   "audit_state_snapshot": null,
   "audit_status": "audit_in_progress",
   "auditor": null,
@@ -11,7 +12,7 @@
   "auditor_family": null,
   "auditor_model": null,
   "auditor_reasoning_effort": null,
-  "blocker": "awaiting_cross_confirmation",
+  "blocker": "cross_confirmation_disagreement",
   "chain_closes": null,
   "chain_closure_explanation": null,
   "claim_id": "hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10",
@@ -51,8 +52,35 @@
       "verdict": "audited_clean",
       "verdict_rationale": "The load-bearing equation d alpha = 1 is an exact algebraic consequence of the stipulated mass dimensions, and its unique solution is alpha = 1/d because d is positive. The runner genuinely performs the symbolic solve and exact rational checks; its finite checks supplement rather than replace the general proof. The result remains only a conditional dimensional-algebra theorem and supplies none of the downstream hierarchy physics explicitly excluded by the note."
     },
-    "second_audit": null,
-    "status": "awaiting_second"
+    "second_audit": {
+      "audit_date": "2026-07-22T19:01:07.466882+00:00",
+      "audit_invocation_id": "fa114b602d644e45924bb0541a6f565a",
+      "auditor": "codex-audit-batch-B-20260722-ccf8db91",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "chain_closes": false,
+      "chain_closure_explanation": "The dimensional algebra closes on its stated hypotheses, but the restricted packet cannot satisfy the mandatory clean-verdict N1-N8 gate: its live runner does not evidence five distinct alternative-route classes or the required N5/N7 resolution lines.",
+      "claim_scope": "For a positive quantity of mass dimension d and a dimensionless prefactor, a simple-power extraction has mass dimension one iff its exponent is 1/d; among positive integers, exponent 1/4 uniquely corresponds to d = 4.",
+      "claim_type": "positive_theorem",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "[f] = d and [C_M] = 0 imply [C_M f^alpha] = d alpha, so imposing mass dimension one gives d alpha = 1 and alpha = 1/d.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "notes_for_re_audit_if_any": "runner_artifact_issue: add live, route-specific N1 evidence spanning at least five distinct mechanism classes and the required five-resolution N5 and independent N7 lines, then re-audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict": "audited_conditional",
+      "verdict_rationale": "All eight runner checks are genuine exact class-A algebra checks, and the source proof correctly derives alpha = 1/d and the d = 4 specialization. The note's explicit non-claims are scope boundaries, not asserted no-go results or named walls. Nevertheless, the packet's mandatory clean-verdict no-go-discipline standard cannot be completed from the supplied live evidence, so clean ratification is withheld pending runner-artifact repair."
+    },
+    "status": "disagreement"
   },
   "decoration_parent_claim_id": null,
   "deps": [],

@@ -366,6 +366,9 @@ fresh five-judge panel with all prior outcomes in context. Contract-invalid
 seats are reseated before a panel; they are not scientific disagreements. The
 ledger keeps legacy `third_audit` storage fields for the representative panel
 judgment, but a single third auditor has no authority to resolve disagreement.
+The apply gate requires an invocation-bound `judicial_panel_record_v1` carrying
+five distinct valid votes, the current source/seat fingerprint, and a matching
+3-of-5 complete-tuple majority before it writes that legacy projection.
 
 ### Pruning phase (per decoration cluster)
 

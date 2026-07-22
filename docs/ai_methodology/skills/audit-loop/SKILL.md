@@ -842,9 +842,13 @@ fresh-panel contract recoveries, a third contract-invalid panel is a hard
 tooling blocker rather than a scientific disagreement or human-review stop.
 
 After a panel majority, go with the majority only if the majority tuple is
-applyable by the audit tooling and the normal gates pass. Apply a representative
-judicial JSON for the majority side, rerun the pipeline, strict lint, and
-`git diff --check`, then land it as the audit result.
+applyable by the audit tooling and the normal gates pass. The apply gate accepts
+the representative judicial JSON only through an invocation-bound
+`judicial_panel_record_v1` that preserves five distinct validator-clean votes,
+the current source/seat fingerprint, and the matching 3-of-5 full-tuple
+majority. The legacy `third_audit` fields are only the stored projection of
+that verified panel record. Once verified, rerun the pipeline, strict lint,
+and `git diff --check`, then land it as the audit result.
 
 No cross-confirmation disagreement should stop at "human review" merely because
 a five-judge panel has no 3-of-5 majority, because the panel majority sides with

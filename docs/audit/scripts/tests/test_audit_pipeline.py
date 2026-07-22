@@ -890,6 +890,75 @@ class ApplyAuditTest(unittest.TestCase):
         self.fx.write_ledger(ledger)
         return path, note_hash
 
+    def _attest_judgment(self, module, ledger: dict, judgment: dict) -> dict:
+        """Attach a deterministic five-vote panel record for apply tests."""
+        cid = judgment["claim_id"]
+        invocation_id = judgment.setdefault(
+            "audit_invocation_id",
+            hashlib.sha256(cid.encode("utf-8")).hexdigest()[:32],
+        )
+        judgment.setdefault("negative_assertion_classes", [])
+        vote = {
+            "sided_with": judgment["sided_with"],
+            "ratified_verdict": judgment["ratified_verdict"],
+            "ratified_claim_type": judgment["ratified_claim_type"],
+            "ratified_claim_scope": judgment["ratified_claim_scope"],
+            "ratified_load_bearing_step": judgment.get(
+                "ratified_load_bearing_step"
+            ),
+            "ratified_load_bearing_step_class": judgment[
+                "ratified_load_bearing_step_class"
+            ],
+            "negative_assertion_classes": judgment[
+                "negative_assertion_classes"
+            ],
+            "judgment_rationale": judgment["judgment_rationale"],
+            "first_auditor_error": judgment["first_auditor_error"],
+            "second_auditor_error": judgment["second_auditor_error"],
+            "hybrid_resolution_note": judgment.get("hybrid_resolution_note"),
+            "ratified_decoration_parent_claim_id": judgment.get(
+                "ratified_decoration_parent_claim_id"
+            ),
+            "notes_for_re_audit_if_any": judgment.get(
+                "notes_for_re_audit_if_any"
+            ),
+            "no_go_discipline": judgment.get("no_go_discipline"),
+        }
+        votes = []
+        for judge in range(1, 6):
+            votes.append({
+                **copy.deepcopy(vote),
+                "judge": judge,
+                "auditor": (
+                    judgment["third_auditor"]
+                    if judge == 1
+                    else f"{judgment['third_auditor']}-seat-{judge}"
+                ),
+            })
+        judgment["judicial_panel_record_v1"] = {
+            "schema": "judicial_panel_record_v1",
+            "cid": cid,
+            "panel": 1,
+            "invocation_id": invocation_id,
+            "result": "majority_candidate",
+            "disagreement_fingerprint": (
+                module.audit_contract.judicial_disagreement_fingerprint(
+                    ledger["rows"][cid]
+                )
+            ),
+            "majority_count": 5,
+            "votes": votes,
+            "failures": [],
+            "tally": [{
+                "tuple": [
+                    *module.audit_contract.judicial_vote_tuple(votes[0])[:6],
+                    list(module.audit_contract.judicial_vote_tuple(votes[0])[6]),
+                ],
+                "count": 5,
+            }],
+        }
+        return judgment
+
     def test_apply_rejects_terminal_verdict_mixed_with_compute_required(self):
         m = _import("apply_audit")
         audit = {field: "fixture" for field in m.REQUIRED_FIELDS}
@@ -1711,6 +1780,7 @@ class ApplyAuditTest(unittest.TestCase):
             "hybrid_resolution_note": "ratify the bounded tuple",
             "no_go_discipline": {"status": "PASS"},
         }
+        self._attest_judgment(m, led, judgment)
         forensic_led = json.loads(json.dumps(led))
         packetless_led = json.loads(json.dumps(led))
         with mock.patch.object(
@@ -2251,11 +2321,16 @@ class ApplyAuditTest(unittest.TestCase):
             "ratified_load_bearing_step_class": "C",
             "ratified_claim_scope": "bounded clean scope",
             "ratified_load_bearing_step": "bounded clean step",
-            "judgment_rationale": "human-authorized panel selected a third applyable tuple",
+            "judgment_rationale": "governed panel selected a third applyable tuple",
             "first_auditor_error": "overstated claim type",
             "second_auditor_error": "understated load-bearing class",
-            "hybrid_resolution_note": "human-authorized second-stage panel",
+            "hybrid_resolution_note": "governed second-stage panel",
         }
+        unpanelled = json.loads(json.dumps(led))
+        ok, msg = m.apply_one(unpanelled, dict(audit))
+        self.assertFalse(ok)
+        self.assertIn("judicial_panel_record_v1 is required", msg)
+        self._attest_judgment(m, led, audit)
         legacy_led = json.loads(json.dumps(led))
         legacy_led["rows"]["test_hybrid"]["cross_confirmation"][
             "first_audit"
@@ -2380,6 +2455,7 @@ class ApplyAuditTest(unittest.TestCase):
             "first_auditor_error": "none on the scoped result",
             "second_auditor_error": "treated a supplied authority as absent",
         }
+        self._attest_judgment(m, led, judgment)
 
         before_rejected = json.dumps(led, sort_keys=True)
         ok, msg = m.apply_one(led, dict(judgment))
@@ -2412,6 +2488,7 @@ class ApplyAuditTest(unittest.TestCase):
         led["rows"]["test_judicial_no_go"]["cross_confirmation"]["first_audit"][
             "no_go_discipline"
         ] = prior_packet
+        self._attest_judgment(m, led, judgment)
         with mock.patch.object(m, "trusted_evidence_manifest", return_value=manifest):
             ok, msg = m.apply_one(led, judgment)
         self.assertTrue(ok, msg)
@@ -13870,6 +13947,57 @@ class JudicialPanelOrchestratorTest(unittest.TestCase):
         )
         self.assertTrue(ok, detail)
 
+    def test_panel_attestation_rejects_quorum_identity_and_seat_tampering(self):
+        m = _import("orchestrate_judicial_panel")
+        apply_mod = _import("apply_audit")
+        row = self._row("attested-row")
+        votes = [
+            self._vote(
+                _panel_judge=index,
+                _panel_auditor=f"judge-{index}",
+            )
+            for index in range(1, 6)
+        ]
+        blob = m.judicial_blob(
+            row, votes[0], votes, 5, invocation_id="d" * 32
+        )
+
+        single_vote = copy.deepcopy(blob)
+        single_vote["judicial_panel_record_v1"]["votes"] = single_vote[
+            "judicial_panel_record_v1"
+        ]["votes"][:1]
+        ledger = {"schema_version": 1, "rows": {row["claim_id"]: row}}
+        ok, detail = apply_mod.apply_judicial_review(ledger, single_vote)
+        self.assertFalse(ok)
+        self.assertIn("exactly five votes", detail)
+
+        duplicate_identity = copy.deepcopy(blob)
+        panel_votes = duplicate_identity["judicial_panel_record_v1"]["votes"]
+        panel_votes[4]["auditor"] = panel_votes[0]["auditor"]
+        ledger = {"schema_version": 1, "rows": {row["claim_id"]: row}}
+        ok, detail = apply_mod.apply_judicial_review(ledger, duplicate_identity)
+        self.assertFalse(ok)
+        self.assertIn("five distinct identities", detail)
+
+        boolean_seat = copy.deepcopy(blob)
+        boolean_seat["judicial_panel_record_v1"]["votes"][0]["judge"] = True
+        ledger = {"schema_version": 1, "rows": {row["claim_id"]: row}}
+        ok, detail = apply_mod.apply_judicial_review(ledger, boolean_seat)
+        self.assertFalse(ok)
+        self.assertIn("invalid judge seat", detail)
+
+        stale_seat = copy.deepcopy(row)
+        stale_seat["cross_confirmation"]["second_audit"][
+            "verdict_rationale"
+        ] = "changed after the panel rendered"
+        ledger = {
+            "schema_version": 1,
+            "rows": {stale_seat["claim_id"]: stale_seat},
+        }
+        ok, detail = apply_mod.apply_judicial_review(ledger, copy.deepcopy(blob))
+        self.assertFalse(ok)
+        self.assertIn("current source and cross-confirmation seats", detail)
+
     def test_hybrid_blob_with_novel_scope_applies(self):
         m = _import("orchestrate_judicial_panel")
         apply_mod = _import("apply_audit")
@@ -14051,6 +14179,25 @@ class JudicialPanelOrchestratorTest(unittest.TestCase):
         self.assertFalse(ok)
         self.assertIn("does not match the ratified first_audit parent", detail)
         self.assertEqual(ledger, before)
+
+    def test_judicial_apply_rejects_compute_required_discriminator(self):
+        panel = _import("orchestrate_judicial_panel")
+        apply_mod = _import("apply_audit")
+        row = self._row("judicial-compute-row")
+        vote = self._vote()
+        blob = panel.judicial_blob(
+            row, vote, [vote] * 5, 5, invocation_id="9" * 32
+        )
+        blob["compute_required"] = "run the missing independent certificate"
+
+        for entrypoint in (apply_mod.apply_one, apply_mod.apply_judicial_review):
+            ledger = {"schema_version": 1, "rows": {row["claim_id"]: row}}
+            before = copy.deepcopy(ledger)
+            with self.subTest(entrypoint=entrypoint.__name__):
+                ok, detail = entrypoint(ledger, blob)
+                self.assertFalse(ok)
+                self.assertIn("compute_required cannot accompany", detail)
+                self.assertEqual(ledger, before)
 
     def test_invalid_stored_seat_is_reseated_before_panel_launch(self):
         m = _import("orchestrate_judicial_panel")
@@ -14474,6 +14621,122 @@ class JudicialPanelOrchestratorTest(unittest.TestCase):
         self.assertIn("duplicates claim-a panel 1", error)
         self.assertIsNotNone(m.workdir_guard_error(m.REPO_ROOT / ".git" / "panel"))
         self.assertIsNone(m.workdir_guard_error(self.tmp / "panel"))
+
+    def test_contract_retry_history_requires_all_five_judge_outcomes(self):
+        m = _import("orchestrate_judicial_panel")
+        row = self._row("contract-history")
+        votes = [
+            {"judge": judge, "auditor": f"judge-{judge}", **self._vote()}
+            for judge in range(1, 5)
+        ]
+
+        def record(panel=1):
+            return {
+                "schema": "judicial_panel_record_v1",
+                "cid": "contract-history",
+                "panel": panel,
+                "invocation_id": f"{panel}" * 32,
+                "result": "contract_invalid_retry",
+                "disagreement_fingerprint": m.disagreement_fingerprint(row),
+                "votes": copy.deepcopy(votes),
+                "failures": [
+                    "judge5:vote_contract_error:invalid verdict/type tuple"
+                ],
+            }
+
+        valid_path = self.tmp / "valid-contract-retry.json"
+        valid_path.write_text(json.dumps(record()), encoding="utf-8")
+        grouped, error = m.load_prior_panels(
+            [str(valid_path)], {"contract-history": row}
+        )
+        self.assertIsNone(error)
+        self.assertEqual(grouped["contract-history"][0]["panel"], 1)
+
+        invalid_records = {
+            "truncated": {
+                **record(),
+                "votes": [],
+            },
+            "missing-seat": {
+                **record(),
+                "votes": copy.deepcopy(votes[:3]),
+            },
+            "overlap": {
+                **record(),
+                "failures": [
+                    "judge4:vote_contract_error:duplicate judge outcome"
+                ],
+            },
+            "malformed": {
+                **record(),
+                "failures": ["judgeX:vote_contract_error:invalid judge"],
+            },
+        }
+        for label, invalid in invalid_records.items():
+            with self.subTest(label=label):
+                path = self.tmp / f"invalid-{label}.json"
+                path.write_text(json.dumps(invalid), encoding="utf-8")
+                _grouped, error = m.load_prior_panels(
+                    [str(path)], {"contract-history": row}
+                )
+                self.assertIn("invalid contract-retry record", error)
+
+    def test_resumed_contract_retry_budget_counts_only_complete_history(self):
+        m = _import("orchestrate_judicial_panel")
+        row = self._row()
+        prior = []
+        for panel_no in (1, 2):
+            prior.append({
+                "schema": "judicial_panel_record_v1",
+                "cid": "row",
+                "panel": panel_no,
+                "invocation_id": f"{panel_no}" * 32,
+                "result": "contract_invalid_retry",
+                "disagreement_fingerprint": m.disagreement_fingerprint(row),
+                "votes": [
+                    {
+                        "judge": judge,
+                        "auditor": f"round-{panel_no}-judge-{judge}",
+                        **self._vote(),
+                    }
+                    for judge in range(1, 5)
+                ],
+                "failures": [
+                    "judge5:vote_contract_error:invalid verdict/type tuple"
+                ],
+            })
+        launches = []
+
+        def fake_launch(
+            _packet, _row, judge_no, panel_no, _workdir, _prior,
+            _invocation_id, _manifest,
+        ):
+            launches.append((panel_no, judge_no))
+            return {
+                "judge": judge_no,
+                "panel": panel_no,
+                "auditor": f"round-{panel_no}-judge-{judge_no}",
+            }
+
+        def fake_collect(job):
+            if job["judge"] == 5:
+                return None, f"{m.VOTE_CONTRACT_ERROR_PREFIX}invalid tuple"
+            return self._vote(), "ok"
+
+        with mock.patch.object(
+            m, "render_panel_packet", return_value=("packet", {}, "4" * 32)
+        ), mock.patch.object(
+            m, "launch_judge", side_effect=fake_launch
+        ), mock.patch.object(
+            m.batch, "wait_workers", return_value=None
+        ), mock.patch.object(
+            m, "collect_vote", side_effect=fake_collect
+        ), mock.patch.object(m, "apply_judgment") as apply_mock:
+            result = m.run_panel(row, {"row": row}, self.tmp, 1, 1, 1, prior)
+
+        self.assertEqual(result["result"], "panel_contract_retries_exhausted")
+        self.assertEqual(launches, [(3, judge) for judge in range(1, 6)])
+        apply_mock.assert_not_called()
 
     def test_ordinary_auditor_cannot_resolve_a_disagreement(self):
         apply_mod = _import("apply_audit")

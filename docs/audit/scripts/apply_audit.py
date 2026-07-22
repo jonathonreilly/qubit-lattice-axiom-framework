@@ -34,6 +34,7 @@ import json
 import os
 import re
 import sys
+from collections import Counter
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -1068,7 +1069,135 @@ def validate_auditor_provenance(audit: dict) -> str | None:
     return None
 
 
+def judicial_judgment_vote(judgment: dict) -> dict:
+    """Project the representative apply payload onto the panel vote tuple."""
+    return {
+        "sided_with": judgment.get("sided_with"),
+        "ratified_verdict": judgment.get("ratified_verdict"),
+        "ratified_claim_type": judgment.get("ratified_claim_type"),
+        "ratified_claim_scope": judgment.get("ratified_claim_scope"),
+        "ratified_load_bearing_step_class": judgment.get(
+            "ratified_load_bearing_step_class"
+        ),
+        "ratified_decoration_parent_claim_id": (
+            judgment.get("ratified_decoration_parent_claim_id")
+            or judgment.get("decoration_parent_claim_id")
+        ),
+        "negative_assertion_classes": judgment.get(
+            "negative_assertion_classes"
+        ),
+    }
+
+
+def judicial_panel_record_error(
+    row: dict,
+    judgment: dict,
+    invocation_id: str,
+) -> str | None:
+    """Require an invocation/source-bound 3-of-5 panel attestation."""
+    record = judgment.get("judicial_panel_record_v1")
+    if not isinstance(record, dict):
+        return "judicial_panel_record_v1 is required for panel-majority apply"
+    if record.get("schema") != "judicial_panel_record_v1":
+        return "judicial_panel_record_v1 has an invalid schema"
+    if record.get("cid") != judgment.get("claim_id"):
+        return "judicial_panel_record_v1 claim_id mismatch"
+    if record.get("invocation_id") != invocation_id:
+        return "judicial_panel_record_v1 audit_invocation_id mismatch"
+    panel_no = record.get("panel")
+    if (
+        not isinstance(panel_no, int)
+        or isinstance(panel_no, bool)
+        or panel_no < 1
+    ):
+        return "judicial_panel_record_v1 has an invalid panel number"
+    if record.get("result") != "majority_candidate":
+        return "judicial_panel_record_v1 is not an applyable majority candidate"
+    if record.get("disagreement_fingerprint") != (
+        audit_contract.judicial_disagreement_fingerprint(row)
+    ):
+        return (
+            "judicial_panel_record_v1 does not match the current source and "
+            "cross-confirmation seats"
+        )
+    votes = record.get("votes")
+    if not isinstance(votes, list) or len(votes) != 5:
+        return "judicial_panel_record_v1 must contain exactly five votes"
+
+    prior_auditors = {
+        ((row.get("cross_confirmation") or {}).get("first_audit") or {}).get(
+            "auditor"
+        ),
+        ((row.get("cross_confirmation") or {}).get("second_audit") or {}).get(
+            "auditor"
+        ),
+    }
+    prior_auditors.discard(None)
+    auditors: list[str] = []
+    judges: list[int] = []
+    for index, vote in enumerate(votes, 1):
+        vote_error = audit_contract.judicial_vote_schema_error(vote)
+        if vote_error:
+            return f"judicial_panel_record_v1 vote {index} is invalid: {vote_error}"
+        context_error = audit_contract.sided_judicial_vote_context_error(row, vote)
+        if context_error:
+            return (
+                f"judicial_panel_record_v1 vote {index} is invalid: "
+                f"{context_error}"
+            )
+        judge = vote.get("judge")
+        auditor = vote.get("auditor")
+        if (
+            not isinstance(judge, int)
+            or isinstance(judge, bool)
+            or judge not in range(1, 6)
+        ):
+            return (
+                f"judicial_panel_record_v1 vote {index} has invalid judge seat"
+            )
+        if not isinstance(auditor, str) or not auditor.strip():
+            return (
+                f"judicial_panel_record_v1 vote {index} has no auditor identity"
+            )
+        judges.append(judge)
+        auditors.append(auditor)
+    if set(judges) != set(range(1, 6)):
+        return "judicial_panel_record_v1 does not preserve five distinct judge seats"
+    if len(set(auditors)) != 5:
+        return "judicial_panel_record_v1 does not preserve five distinct identities"
+    if set(auditors) & prior_auditors:
+        return "judicial_panel_record_v1 reuses a prior audit-seat identity"
+
+    tally = Counter(audit_contract.judicial_vote_tuple(vote) for vote in votes)
+    majority_tuple, majority_count = tally.most_common(1)[0]
+    if majority_count < 3:
+        return "judicial_panel_record_v1 has no 3-of-5 complete-tuple majority"
+    if record.get("majority_count") != majority_count:
+        return "judicial_panel_record_v1 majority_count does not match its votes"
+    expected_tally = [
+        {"tuple": [*key[:6], list(key[6])], "count": count}
+        for key, count in tally.most_common()
+    ]
+    if record.get("tally") != expected_tally or record.get("failures") != []:
+        return "judicial_panel_record_v1 tally/failures do not match its votes"
+    if audit_contract.judicial_vote_tuple(
+        judicial_judgment_vote(judgment)
+    ) != majority_tuple:
+        return "judicial panel representative does not match the 3-of-5 majority"
+    majority_auditors = {
+        vote.get("auditor")
+        for vote in votes
+        if audit_contract.judicial_vote_tuple(vote) == majority_tuple
+    }
+    if judgment.get("third_auditor") not in majority_auditors:
+        return "judicial panel representative identity is not a majority voter"
+    return None
+
+
 def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
+    compute_error = audit_contract.terminal_compute_required_error(judgment)
+    if compute_error:
+        return False, compute_error
     missing = JUDICIAL_REQUIRED_FIELDS - set(judgment)
     if missing:
         return False, f"missing required judicial fields: {sorted(missing)}"
@@ -1088,7 +1217,10 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
     if audit_invocation_seen(row, invocation_id):
         return False, "audit_invocation_id has already been consumed for this claim"
     if judgment.get("independence") != "judicial_review":
-        return False, "judicial third-auditor review requires independence='judicial_review'"
+        return False, (
+            "judicial panel-majority apply requires independence="
+            "'judicial_review'"
+        )
     provenance_error = validate_auditor_provenance(judgment)
     if provenance_error:
         return False, provenance_error
@@ -1134,7 +1266,9 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
 
     prior_auditors = {first.get("auditor"), second.get("auditor")}
     if judgment.get("third_auditor") in prior_auditors:
-        return False, "judicial third auditor must differ from both prior auditors"
+        return False, (
+            "judicial panel representative must differ from both prior auditors"
+        )
 
     chosen_claim_type = None
     chosen: dict = {}
@@ -1211,6 +1345,9 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
     )
     if tuple_error:
         return False, f"judicial verdict/claim_type incompatibility: {tuple_error}"
+    panel_error = judicial_panel_record_error(row, judgment, invocation_id)
+    if panel_error:
+        return False, panel_error
     note_path = row.get("note_path") or ""
     note_body = ""
     if note_path:
@@ -1329,7 +1466,10 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
     if tuple_error:
         return False, tuple_error
     row["cross_confirmation"]["third_audit"] = third
-    row["cross_confirmation"]["mode"] = "judicial_third_pass"
+    row["cross_confirmation"]["judicial_panel_record_v1"] = copy.deepcopy(
+        judgment["judicial_panel_record_v1"]
+    )
+    row["cross_confirmation"]["mode"] = "judicial_panel_majority"
 
     row["cross_confirmation"]["status"] = {
         "first": "third_confirmed_first",
@@ -1381,11 +1521,14 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
     consume_audit_invocation(row, invocation_id)
     rows[cid] = row
     ledger["rows"] = rows
-    return True, f"judicial third auditor confirmed {side} verdict"
+    return True, f"judicial panel majority confirmed {side} verdict"
 
 
 def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
     audit = dict(audit)
+    compute_error = audit_contract.terminal_compute_required_error(audit)
+    if compute_error:
+        return False, compute_error
     if "_no_go_evidence_manifest" in audit:
         return False, "_no_go_evidence_manifest is reserved for the orchestrator transport"
     if "sided_with" in audit or "third_auditor" in audit:
@@ -1394,10 +1537,6 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
     missing = REQUIRED_FIELDS - set(audit)
     if missing:
         return False, f"missing required fields: {sorted(missing)}"
-    compute_error = audit_contract.terminal_compute_required_error(audit)
-    if compute_error:
-        return False, compute_error
-
     cid = audit["claim_id"]
     rows = ledger.get("rows", {})
     if cid not in rows:

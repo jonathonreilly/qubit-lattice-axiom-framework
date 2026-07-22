@@ -180,9 +180,12 @@ For critical claims:
   another fresh five-judge panel carrying every prior vote and rationale.
   Legacy ledger statuses `third_confirmed_first`, `third_confirmed_second`,
   and `third_confirmed_hybrid` store the representative majority judgment;
-  they do not authorize resolution by one third auditor. Stop only when a hard
-  tooling or policy blocker prevents another required panel or applying an
-  otherwise applyable majority, never merely for human review.
+  they do not authorize resolution by one third auditor. The apply gate must
+  verify the invocation-bound `judicial_panel_record_v1`: five distinct valid
+  votes, the current source/seat fingerprint, and a matching 3-of-5 full-tuple
+  majority. Stop only when a hard tooling or policy blocker prevents another
+  required panel or applying an otherwise applyable majority, never merely for
+  human review.
 
 Claims at `criticality = high` (`transitive_descendants >= 30`)
 require `independence != weak` but do not require cross-confirmation by

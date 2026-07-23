@@ -267,13 +267,17 @@ least every 15 minutes — never silence for a long run.
   supervisor phase continues to emit the 15-minute progress summary. Do not
   leave a drain silently waiting past those bounds.
 - One full pipeline invocation must reach a generated-state fixed point.
-  `compute_load_bearing.py` runs once before invalidation to supply topology
-  criticality and again after the effective-status/invalidation/restore fixed
-  point to refresh status-dependent ancestor metrics. Pipeline-produced ledger
-  metrics are derived outputs in the static checkpoint; their underlying
-  notes, dependency edges, runners, and classifier inputs remain
-  fingerprinted. Never accept a design that requires a second operator-run
-  pipeline merely to stabilize the first.
+  In a full run, `compute_load_bearing.py` first refreshes topology
+  `criticality` from the newly built graph before the ledger seeder consumes
+  it, runs again before invalidation, and finally refreshes status-dependent
+  ancestor metrics after the effective-status/invalidation/restore fixed
+  point. Pipeline-produced ledger status-dependent metrics are derived outputs
+  in the static checkpoint; topology `criticality` remains fingerprinted
+  because the skipped ledger seeder consumes its prior value when deciding
+  whether legacy terminal rows require claim-type re-audit. Their underlying
+  notes, dependency edges, runners, and classifier inputs remain fingerprinted.
+  Never accept a design that requires a second operator-run pipeline merely to
+  stabilize the first.
 - Tracked generated audit surfaces must be commit-invariant. Never embed the
   current `HEAD` commit in a tracked pipeline output: committing that output
   changes `HEAD` and guarantees fresh dirt at the next regeneration.

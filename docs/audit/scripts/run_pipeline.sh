@@ -14,6 +14,8 @@
 #
 # Run order:
 #   1. build_citation_graph.py       -> data/citation_graph.json
+#  1c. compute_load_bearing.py       -> refreshes topology criticality before
+#                                       the ledger seeder consumes it
 #   2. seed_audit_ledger.py          -> data/audit_ledger.json (preserves
 #                                       prior audits if note hash unchanged)
 #   3. sanitize_legacy_audit_artifacts.py
@@ -92,6 +94,13 @@ if [[ "${PIPELINE_MODE}" == "full" ]]; then
 
   echo "==> 1b/18 write_citation_graph_manifest.py (tracked graph-topology acknowledgment)"
   python3 docs/audit/scripts/write_citation_graph_manifest.py
+
+  echo "==> 1c/18 compute_load_bearing.py pre-seed topology refresh"
+  # seed_audit_ledger.py consumes prior criticality when deciding whether a
+  # legacy terminal row needs claim-type re-audit. Refresh it from the newly
+  # built graph before seeding so one full run reaches that semantic fixed
+  # point and the static checkpoint can keep criticality fail-closed.
+  python3 docs/audit/scripts/compute_load_bearing.py
 
   echo "==> 2/18 seed_audit_ledger.py"
   python3 docs/audit/scripts/seed_audit_ledger.py

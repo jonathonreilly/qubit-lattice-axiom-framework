@@ -90,24 +90,19 @@ def remaining_blocker_count() -> int | None:
     )
 
 
-def campaign_exclusion_count(reason: str) -> int:
+def campaign_exclusion_counts() -> Counter:
     path = PROGRESS.get("quarantine_file")
-    if not isinstance(path, Path) or not path.exists():
-        return 0
-    claim_ids: set[str] = set()
-    try:
-        lines = path.read_text(encoding="utf-8").splitlines()
-    except OSError:
-        return 0
-    for line in lines:
-        try:
-            row = json.loads(line)
-        except json.JSONDecodeError:
-            continue
-        cid = row.get("claim_id") if isinstance(row, dict) else None
-        if isinstance(cid, str) and cid and row.get("reason") == reason:
-            claim_ids.add(cid)
-    return len(claim_ids)
+    if not isinstance(path, Path):
+        return Counter()
+    pairs = {
+        (record["claim_id"], record["reason"])
+        for record in batch.load_campaign_exclusion_records(path)
+    }
+    return Counter(reason for _cid, reason in pairs)
+
+
+def campaign_exclusion_count(reason: str) -> int:
+    return campaign_exclusion_counts()[reason]
 
 
 def schema_quarantine_count() -> int:
@@ -164,6 +159,20 @@ def summary_line(final: bool = False) -> str:
     ) or "none"
     ready = ready_row_count()
     blockers = remaining_blocker_count()
+    try:
+        exclusions = campaign_exclusion_counts()
+        schema_count: int | str = exclusions[batch.SCHEMA_QUARANTINE_RESULT]
+        compute_count: int | str = exclusions[batch.COMPUTE_QUARANTINE_RESULT]
+        transaction_count: int | str = exclusions[
+            batch.CLAIM_TRANSACTION_QUARANTINE_RESULT
+        ]
+        blocked_count: int | str = exclusions[
+            batch.BLOCKED_ROW_QUARANTINE_RESULT
+        ]
+    except (OSError, ValueError):
+        # The main control path treats malformed campaign state as a hard stop.
+        # Heartbeat/final summaries remain printable without hiding that state.
+        schema_count = compute_count = transaction_count = blocked_count = "invalid"
     return (
         f"== audit-loop {'final ' if final else ''}summary "
         f"elapsed={elapsed // 3600}h{(elapsed % 3600) // 60:02d}m "
@@ -174,10 +183,10 @@ def summary_line(final: bool = False) -> str:
         f"canary={PROGRESS['canary_state']} "
         f"ready_rows={ready if ready is not None else 'unknown'} "
         f"remaining_lane_blockers={blockers if blockers is not None else 'unknown'} "
-        f"schema_quarantined={schema_quarantine_count()} "
-        f"compute_quarantined={compute_quarantine_count()} "
-        f"transaction_quarantined={claim_transaction_quarantine_count()} "
-        f"blocked_row_reentries={blocked_row_reentry_count()}"
+        f"schema_quarantined={schema_count} "
+        f"compute_quarantined={compute_count} "
+        f"transaction_quarantined={transaction_count} "
+        f"blocked_row_reentries={blocked_count}"
     )
 
 
@@ -474,6 +483,7 @@ def main(argv: list[str] | None = None) -> int:
     emit(f"campaign artifacts: {campaign_dir}")
     try:
         validate_requested_lanes(args.lane)
+        batch.load_campaign_exclusion_records(args.campaign_quarantine_file)
     except (OSError, ValueError, json.JSONDecodeError) as exc:
         emit(str(exc))
         return 2
@@ -534,25 +544,30 @@ def main(argv: list[str] | None = None) -> int:
             after = git_head()
             emit(f"development pass {pass_number}: before={before} after={after}")
             if after == before:
+                try:
+                    exclusions = campaign_exclusion_counts()
+                except (OSError, ValueError) as exc:
+                    emit(f"invalid campaign state; refusing fixed point: {exc}")
+                    return 2
                 emit("development fixed point reached: full pass landed nothing new")
-                if schema_quarantine_count():
+                if exclusions[batch.SCHEMA_QUARANTINE_RESULT]:
                     emit(
                         "fixed point excludes campaign-scoped schema-invalid "
                         f"quarantines: {args.campaign_quarantine_file}"
                     )
-                if blocked_row_reentry_count():
+                if exclusions[batch.BLOCKED_ROW_QUARANTINE_RESULT]:
                     emit(
                         "fixed point excludes post-verdict rows that immediately "
                         "re-entered dep-ready selection; all other eligible rows "
                         f"were drained: {args.campaign_quarantine_file}"
                     )
-                if compute_quarantine_count():
+                if exclusions[batch.COMPUTE_QUARANTINE_RESULT]:
                     emit(
                         "fixed point excludes compute-required rows until their "
                         "runner cache, sliced certificate, or independent "
                         f"derivation is repaired: {args.campaign_quarantine_file}"
                     )
-                if claim_transaction_quarantine_count():
+                if exclusions[batch.CLAIM_TRANSACTION_QUARANTINE_RESULT]:
                     emit(
                         "fixed point excludes claim-local apply/gate failures "
                         "whose rollback to origin/main was verified; repair the "

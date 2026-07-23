@@ -825,7 +825,61 @@ class SchemaRecoveryTest(unittest.TestCase):
             "pipeline failed",
         )
 
-    def test_apply_gate_failure_continues_after_verified_clean_rollback(self):
+    def test_mixed_seat_causes_persist_both_typed_reasons(self):
+        report = [
+            {
+                "cid": "mixed",
+                "pass": 1,
+                "result": "compute_required",
+                "detail": "cache missing",
+            },
+            {
+                "cid": "mixed",
+                "pass": 2,
+                "result": "validation_failed",
+                "detail": "bad schema",
+            },
+        ]
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "quarantine.jsonl"
+            batch.persist_campaign_quarantine(path, {"mixed"}, report)
+            batch.persist_compute_required_skips(path, {"mixed"}, report)
+            batch.persist_campaign_quarantine(path, {"mixed"}, report)
+            records = batch.load_campaign_exclusion_records(path)
+
+        self.assertEqual(
+            {(row["claim_id"], row["reason"]) for row in records},
+            {
+                ("mixed", batch.SCHEMA_QUARANTINE_RESULT),
+                ("mixed", batch.COMPUTE_QUARANTINE_RESULT),
+            },
+        )
+        self.assertEqual(len(records), 2)
+
+    def test_campaign_state_loader_rejects_truncated_record(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "quarantine.jsonl"
+            path.write_text(
+                '{"claim_id":"kept","reason":"schema_invalid_quarantined"}\n'
+                '{"claim_id":"torn"',
+                encoding="utf-8",
+            )
+            with self.assertRaisesRegex(
+                ValueError,
+                "invalid campaign exclusion JSON",
+            ):
+                batch.load_campaign_quarantine(path)
+            with mock.patch.dict(
+                audit_loop.PROGRESS,
+                {"quarantine_file": path},
+            ):
+                with self.assertRaisesRegex(
+                    ValueError,
+                    "invalid campaign exclusion JSON",
+                ):
+                    audit_loop.campaign_exclusion_counts()
+
+    def test_apply_gate_failure_continues_after_explicit_verified_rollback(self):
         job = {
             "cid": "row",
             "pass": 1,
@@ -848,10 +902,9 @@ class SchemaRecoveryTest(unittest.TestCase):
                     "cid": "row",
                     "result": "apply_or_gate_failed",
                     "detail": "pipeline failed",
+                    "rollback_verified": True,
                 }],
             ),
-        ), mock.patch.object(
-            batch, "clean_main_error", return_value=None
         ):
             ok, compute, schema, handoffs = batch.apply_serialized(
                 [job], report
@@ -866,7 +919,7 @@ class SchemaRecoveryTest(unittest.TestCase):
             {item["result"] for item in report},
         )
 
-    def test_apply_gate_failure_stops_when_rollback_is_not_clean(self):
+    def test_apply_gate_failure_stops_without_explicit_rollback_proof(self):
         job = {
             "cid": "row",
             "pass": 1,
@@ -891,8 +944,6 @@ class SchemaRecoveryTest(unittest.TestCase):
                 False,
                 [{"cid": "row", "result": "apply_or_gate_failed"}],
             ),
-        ), mock.patch.object(
-            batch, "clean_main_error", return_value="working tree is not clean"
         ):
             ok, _, _, _ = batch.apply_serialized([job], report)
 
@@ -1768,19 +1819,69 @@ class ClaimTransactionTest(unittest.TestCase):
         self.assertEqual(result.stderr, "stderr")
 
     def test_rollback_commands_bypass_committer_cancellation(self):
+        oid = "a" * 40
+        target = mock.Mock(returncode=0, stdout=f"{oid}\n", stderr="")
         reset = mock.Mock(returncode=0, stdout="", stderr="")
         branch = mock.Mock(returncode=0, stdout="main\n", stderr="")
         status = mock.Mock(returncode=0, stdout="", stderr="")
+        head = mock.Mock(returncode=0, stdout=f"{oid}\n", stderr="")
+        remote = mock.Mock(returncode=0, stdout=f"{oid}\n", stderr="")
         with mock.patch.object(
-            batch, "sh", side_effect=[reset, branch, status]
+            batch,
+            "sh",
+            side_effect=[target, reset, branch, status, head, remote],
         ) as sh:
             ok, detail = batch.reset_to_origin_main()
 
         self.assertTrue(ok, detail)
-        self.assertEqual(sh.call_count, 3)
+        self.assertEqual(sh.call_count, 6)
         self.assertTrue(
             all(call.kwargs.get("honor_cancel") is False for call in sh.call_args_list)
         )
+
+    def test_reset_to_origin_main_rejects_clean_ref_mismatch(self):
+        target_oid = "a" * 40
+        moved_oid = "b" * 40
+        commands = [
+            mock.Mock(returncode=0, stdout=f"{target_oid}\n", stderr=""),
+            mock.Mock(returncode=0, stdout="", stderr=""),
+            mock.Mock(returncode=0, stdout="main\n", stderr=""),
+            mock.Mock(returncode=0, stdout="", stderr=""),
+            mock.Mock(returncode=0, stdout=f"{target_oid}\n", stderr=""),
+            mock.Mock(returncode=0, stdout=f"{moved_oid}\n", stderr=""),
+        ]
+        with mock.patch.object(batch, "sh", side_effect=commands):
+            ok, detail = batch.reset_to_origin_main()
+
+        self.assertFalse(ok)
+        self.assertIn("HEAD synchronized with origin/main", detail)
+
+    def test_apply_rejection_is_global_when_reset_cannot_be_verified(self):
+        delivery = [(
+            {
+                "cid": "row",
+                "pass": 1,
+                "row": {"claim_id": "row", "criticality": "medium"},
+            },
+            {
+                "audit": {"verdict": "audited_clean"},
+                "evidence_manifest": {},
+            },
+        )]
+        with mock.patch.object(
+            batch, "sync_origin_main", return_value=(True, "base")
+        ), mock.patch.object(
+            batch.audit_runner, "apply_one", return_value=(False, "rejected")
+        ), mock.patch.object(
+            batch,
+            "reset_to_origin_main",
+            return_value=(False, "ref mismatch"),
+        ):
+            ok, results = batch.apply_claim_serialized(delivery, retries=1)
+
+        self.assertFalse(ok)
+        self.assertEqual(results[0]["result"], "race_reset_failed")
+        self.assertIn("ref mismatch", results[0]["detail"])
 
     def test_packet_completion_cancel_skips_exit_grace(self):
         cancel = threading.Event()
@@ -2072,7 +2173,6 @@ class ClaimTransactionTest(unittest.TestCase):
                     json.dumps(dict(
                         before,
                         audit_status="audited_clean",
-                        criticality="high",
                         direct_in_degree=7,
                         transitive_descendants=123,
                         max_descendant_status="retained",
@@ -2082,6 +2182,22 @@ class ClaimTransactionTest(unittest.TestCase):
                     encoding="utf-8",
                 )
                 derived_metrics_ok, derived_metrics_detail = (
+                    batch.static_checkpoint.verify_checkpoint()
+                )
+                shard.write_text(
+                    json.dumps(dict(
+                        before,
+                        audit_status="audited_clean",
+                        criticality="high",
+                        direct_in_degree=7,
+                        transitive_descendants=123,
+                        max_descendant_status="retained",
+                        max_descendant_status_rank=9,
+                        load_bearing_score=42.5,
+                    )),
+                    encoding="utf-8",
+                )
+                criticality_ok, criticality_detail = (
                     batch.static_checkpoint.verify_checkpoint()
                 )
                 shard.write_text(
@@ -2165,6 +2281,8 @@ class ClaimTransactionTest(unittest.TestCase):
         self.assertTrue(receipts_cleaned)
         self.assertTrue(audit_ok)
         self.assertTrue(derived_metrics_ok, derived_metrics_detail)
+        self.assertFalse(criticality_ok)
+        self.assertIn("static repository inputs changed", criticality_detail)
         self.assertFalse(wrong_identity_ok)
         self.assertIn("changed during fast use", wrong_identity_detail)
         self.assertFalse(ignored_note_ok)
@@ -2186,6 +2304,10 @@ class ClaimTransactionTest(unittest.TestCase):
 
     def test_pipeline_recomputes_status_dependent_load_bearing_after_fixed_point(self):
         script = (batch.SCRIPTS / "run_pipeline.sh").read_text(encoding="utf-8")
+        pre_seed = script.index(
+            'echo "==> 1c/18 compute_load_bearing.py pre-seed topology refresh"'
+        )
+        seed = script.index('echo "==> 2/18 seed_audit_ledger.py"')
         first = script.index(
             'echo "==> 5/18 compute_load_bearing.py"'
         )
@@ -2199,6 +2321,8 @@ class ClaimTransactionTest(unittest.TestCase):
             'echo "==> 7b/18 compute_lane_certification.py'
         )
 
+        self.assertLess(pre_seed, seed)
+        self.assertLess(seed, first)
         self.assertLess(first, status)
         self.assertLess(status, final)
         self.assertLess(final, certification)
@@ -2206,7 +2330,7 @@ class ClaimTransactionTest(unittest.TestCase):
             script.count(
                 "python3 docs/audit/scripts/compute_load_bearing.py"
             ),
-            2,
+            3,
         )
 
     def test_run_generated_gates_selects_verdict_only_pipeline(self):

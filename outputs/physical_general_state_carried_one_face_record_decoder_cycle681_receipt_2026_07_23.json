@@ -941,8 +941,8 @@
     }
   ],
   "resources": {
-    "elapsed_seconds": 79.40970383305103,
-    "maximum_RSS_bytes": 460439552
+    "elapsed_seconds": 79.29059570899699,
+    "maximum_RSS_bytes": 316145664
   },
   "runner_sha256": "97ff345e0006f36ec2e2fc4234a035d109154eaa52a70e5f4bdb9995fb05146f",
   "semantic_firewall": {

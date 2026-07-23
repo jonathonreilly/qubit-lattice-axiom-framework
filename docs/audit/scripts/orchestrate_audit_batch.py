@@ -1160,110 +1160,12 @@ def _file_snapshot_signature(file_stat: os.stat_result) -> tuple:
     )
 
 
-def _file_entry_signature(file_stat: os.stat_result) -> tuple:
-    """Entry metadata an in-place content rewrite must preserve exactly."""
-    return (
-        file_stat.st_dev,
-        file_stat.st_ino,
-        file_stat.st_nlink,
-        file_stat.st_uid,
-        file_stat.st_gid,
-        stat.S_IMODE(file_stat.st_mode),
-        getattr(file_stat, "st_flags", None),
-    )
-
-
-def _read_open_file(fd: int) -> bytes:
-    os.lseek(fd, 0, os.SEEK_SET)
-    chunks: list[bytes] = []
-    while True:
-        chunk = os.read(fd, 1024 * 1024)
-        if not chunk:
-            return b"".join(chunks)
-        chunks.append(chunk)
-
-
-def _write_all_at(fd: int, content: bytes, offset: int) -> None:
-    written = 0
-    while written < len(content):
-        count = os.pwrite(fd, content[written:], offset + written)
-        if count <= 0:
-            raise OSError("short write while recovering certification provenance")
-        written += count
-
-
-def _rewrite_verified_bytes_in_place(
-    path: Path,
-    *,
-    expected: bytes,
-    replacement: bytes,
-    expected_signature: tuple,
-) -> bool:
-    """Rewrite verified bytes without replacing the file or touching a sibling.
-
-    Keeping the same open inode preserves hardlinks, xattrs, ACLs, ownership,
-    exact permission bits, and every neighboring path. The advisory lock
-    coordinates cooperating writers; the signature and byte checks close the
-    observable check/mutation windows for non-cooperating writers.
-    """
-    flags = os.O_RDWR
-    if hasattr(os, "O_NOFOLLOW"):
-        flags |= os.O_NOFOLLOW
-    try:
-        fd = os.open(path, flags)
-    except OSError:
-        return False
-    try:
-        try:
-            fcntl.flock(fd, fcntl.LOCK_EX | fcntl.LOCK_NB)
-        except OSError:
-            return False
-        before = os.fstat(fd)
-        if not stat.S_ISREG(before.st_mode):
-            return False
-        if _file_snapshot_signature(before) != expected_signature:
-            return False
-        if _read_open_file(fd) != expected:
-            return False
-
-        prefix = 0
-        shared_limit = min(len(expected), len(replacement))
-        while prefix < shared_limit and expected[prefix] == replacement[prefix]:
-            prefix += 1
-        suffix = 0
-        while (
-            suffix < shared_limit - prefix
-            and expected[len(expected) - suffix - 1]
-            == replacement[len(replacement) - suffix - 1]
-        ):
-            suffix += 1
-
-        if len(expected) == len(replacement):
-            end = len(replacement) - suffix if suffix else len(replacement)
-            _write_all_at(fd, replacement[prefix:end], prefix)
-        else:
-            _write_all_at(fd, replacement, 0)
-            os.ftruncate(fd, len(replacement))
-        os.fsync(fd)
-
-        after = os.fstat(fd)
-        if not stat.S_ISREG(after.st_mode):
-            return False
-        if _file_entry_signature(after) != _file_entry_signature(before):
-            return False
-        return _read_open_file(fd) == replacement
-    except OSError:
-        return False
-    finally:
-        os.close(fd)
-
-
 def recover_lane_certification_provenance_drift(
     status_output: str,
     *,
     honor_cancel: bool = True,
 ) -> bool:
-    """Subtract exact legacy ``repo_head``-only drift at a sync boundary.
+    """Recognize exact legacy ``repo_head``-only drift at a sync boundary.
 
     ``lane_certification.json`` used to embed the current commit. A pipeline
     refresh therefore dirtied the file as soon as a later commit changed
@@ -1272,10 +1174,9 @@ def recover_lane_certification_provenance_drift(
     be exactly either the committed payload with the obsolete field removed or
     with that field refreshed to the current commit, and refuses every staged,
     untracked, deleted, malformed, metadata, or content-bearing change. The
-    verified content-only Git patch is subtracted through the already-open file
-    descriptor instead of through Git's conversion layer, an external patcher,
-    or a whole-file restore. This preserves the inode and all entry metadata;
-    exact bytes and metadata are rechecked at the mutation boundary.
+    verified content-only state is carried through the sync boundary without
+    mutating it. The next normal pipeline/commit removes the obsolete field.
+    This classifier never writes the file, its metadata, or a neighboring path.
     """
     if status_output.splitlines() != [f" M {LANE_CERTIFICATION_PATH}"]:
         return False
@@ -1314,14 +1215,26 @@ def recover_lane_certification_provenance_drift(
     current_head = head.stdout.strip()
     if re.fullmatch(r"[0-9a-f]{40}", current_head) is None:
         return False
-    current_head_bytes = current_head.encode("ascii")
-    with_current_head = (
-        committed.stdout[: provenance.start(2)]
-        + current_head_bytes
-        + committed.stdout[provenance.end(2) :]
-    )
-    if working_bytes not in {without_provenance, with_current_head}:
-        return False
+    if working_bytes != without_provenance:
+        working_matches = list(provenance_pattern.finditer(working_bytes))
+        if len(working_matches) != 1:
+            return False
+        working_provenance = working_matches[0]
+        working_head_bytes = working_provenance.group(2)
+        with_working_head = (
+            committed.stdout[: provenance.start(2)]
+            + working_head_bytes
+            + committed.stdout[provenance.end(2) :]
+        )
+        if working_bytes != with_working_head:
+            return False
+        working_head = working_head_bytes.decode("ascii")
+        ancestor = sh(
+            ["git", "merge-base", "--is-ancestor", working_head, current_head],
+            honor_cancel=honor_cancel,
+        )
+        if ancestor.returncode != 0:
+            return False
 
     metadata = sh(
         [
@@ -1390,15 +1303,8 @@ def recover_lane_certification_provenance_drift(
     if _file_snapshot_signature(current_stat) != working_signature:
         return False
 
-    if not _rewrite_verified_bytes_in_place(
-        path,
-        expected=working_bytes,
-        replacement=committed.stdout,
-        expected_signature=working_signature,
-    ):
-        return False
     print(
-        "recovered generated certification provenance drift: "
+        "recognized generated certification provenance drift: "
         f"{LANE_CERTIFICATION_PATH}",
         flush=True,
     )
@@ -1418,17 +1324,22 @@ def clean_main_error(*, honor_cancel: bool = True) -> str | None:
     if status.returncode != 0:
         return "cannot determine worktree status"
     if status.stdout.strip():
-        recovered = recover_lane_certification_provenance_drift(
+        recognized = recover_lane_certification_provenance_drift(
             status.stdout,
             honor_cancel=honor_cancel,
         )
-        if not recovered:
+        if not recognized:
             return "working tree is not clean"
-        status = sh(["git", "status", "--porcelain"], honor_cancel=honor_cancel)
-        if status.returncode != 0:
-            return "cannot determine worktree status after provenance recovery"
-        if status.stdout.strip():
-            return "working tree is not clean after provenance recovery"
+        status_after = sh(
+            ["git", "status", "--porcelain"],
+            honor_cancel=honor_cancel,
+        )
+        if status_after.returncode != 0:
+            return "cannot determine worktree status after provenance recognition"
+        if status_after.stdout.splitlines() != [
+            f" M {LANE_CERTIFICATION_PATH}"
+        ]:
+            return "working tree is not clean after provenance recognition"
     return None
 
 

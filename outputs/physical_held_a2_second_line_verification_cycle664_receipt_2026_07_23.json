@@ -1,0 +1,498 @@
+{
+ "cycle": 664,
+ "authority": "none",
+ "audit": "unset",
+ "breakthrough": false,
+ "classification": "positive held finite-volume second-A2-line confirmation; continuum, preparation, and clock laws open",
+ "target_contract": {
+  "status": "post-discovery held confirmation, not preregistered discovery",
+  "target": "test the Cycle629 positive-phase A2 Birman-Schwinger zero and its contact-dressed masked-cavity counterpart on the pre-existing L13 and beta=-0.35 held fixtures",
+  "periodic_acceptance": "on L9/L13 crossed with beta=-0.30/-0.35, a root in (0.10,0.50) has |b_A2|<1e-7, A2 overlap>0.999, reconstructed update residual <1e-8, and |b_A2(theta+-1e-4)|>1e-3",
+  "cavity_acceptance": "with the unchanged radius-2 mask, the dominant contact-on interior line is positive with modulus>0.995 and Ritz/antisymmetry residuals <1e-8, while the contact-off dominant line is phase-separated by more than 2.5 radians",
+  "controls": "dependency byte pins; train/held-size/held-beta/held-both crossing; two-sided local-isolation probes; contact deletion; explicit boundary and coupling sensitivity; N1-N8 and rhetoric firewalls",
+  "not_closure": "no universal phase, linewidth, infinite-volume pole, energy, clock, vernier unwrapping, autonomous preparation, proper time, or gravity"
+ },
+ "target_controls": {
+  "target_line": 17,
+  "first_evidence_load_line": 129,
+  "target_before_evidence": true,
+  "target_contract_sha256": "0a642665e049e23ae481db3fba95330a03aa2a724fd0494246ce3249c8d515ac",
+  "digest_matches": true,
+  "post_discovery_disclosed": true
+ },
+ "dependency_sha256": {
+  "Cycle610": "61d624d3f47e371a3b99f55a3c60db68c1fe77f5d93a21651f9172b2d49f1458",
+  "Cycle611": "9f1d4a2aabca8af1f61ef42071c8d2bce05018eace7a6f0886d769871689a13d",
+  "Cycle622": "a4e3521829555eeff89fa22797f6ddfcdc70e3012a412555211db328430f39d7",
+  "Cycle629": "8dd469ba17965b8985066200ecc0b8ce8e2bc3dead1625fc016c29119bb057b2"
+ },
+ "periodic_rows": [
+  {
+   "label": "train",
+   "L": 9,
+   "beta": -0.3,
+   "theta": 0.2999807926704712,
+   "branch_abs_value": 1.486380915539482e-10,
+   "null_A2_overlap": 0.9999999999999999,
+   "eigen_update_residual": 8.037145548577513e-12,
+   "state_norm": 0.9999999999999973,
+   "local_profile": {
+    "minus_1e-4": 0.012193362611619815,
+    "root": 1.486380915539482e-10,
+    "plus_1e-4": 0.013009481352114528
+   }
+  },
+  {
+   "label": "held_size",
+   "L": 13,
+   "beta": -0.3,
+   "theta": 0.29199854795719715,
+   "branch_abs_value": 6.476588094907856e-10,
+   "null_A2_overlap": 1.0,
+   "eigen_update_residual": 1.2089897600200166e-11,
+   "state_norm": 1.0000000000000009,
+   "local_profile": {
+    "minus_1e-4": 0.10509469012282785,
+    "root": 6.476588094907856e-10,
+    "plus_1e-4": 0.10698983606553183
+   }
+  },
+  {
+   "label": "held_beta",
+   "L": 9,
+   "beta": -0.35,
+   "theta": 0.359010403193849,
+   "branch_abs_value": 2.4587952275993994e-11,
+   "null_A2_overlap": 0.9999999999999999,
+   "eigen_update_residual": 2.696046236093973e-12,
+   "state_norm": 1.000000000000008,
+   "local_profile": {
+    "minus_1e-4": 0.003096182812336828,
+    "root": 2.4587952275993994e-11,
+    "plus_1e-4": 0.0030252953736871605
+   }
+  },
+  {
+   "label": "held_both",
+   "L": 13,
+   "beta": -0.35,
+   "theta": 0.27800714562884554,
+   "branch_abs_value": 1.101058171161395e-10,
+   "null_A2_overlap": 1.0000000000000002,
+   "eigen_update_residual": 3.9453304725379195e-12,
+   "state_norm": 1.0000000000000047,
+   "local_profile": {
+    "minus_1e-4": 0.02902046890126717,
+    "root": 1.101058171161395e-10,
+    "plus_1e-4": 0.02830983617682016
+   }
+  }
+ ],
+ "cavity_rows": [
+  {
+   "label": "train",
+   "L": 9,
+   "beta": -0.3,
+   "contact_on_top": {
+    "abs": 0.999109373594012,
+    "arg": 0.30654753336866636,
+    "residual": 2.3497402073550424e-13,
+    "interior_weight": 0.9999999999999991,
+    "antisym": 2.919594317009366e-14
+   },
+   "contact_off_top": {
+    "abs": 0.9980901117622297,
+    "arg": -3.066253761813115,
+    "residual": 7.06140853840399e-13,
+    "interior_weight": 1.0000000000000004,
+    "antisym": 1.0961075818365254e-13
+   },
+   "dominant_phase_separation": 2.910384011997805,
+   "contact_on_all_top4": [
+    {
+     "abs": 0.999109373594012,
+     "arg": 0.30654753336866636,
+     "residual": 2.3497402073550424e-13,
+     "interior_weight": 0.9999999999999991,
+     "antisym": 2.919594317009366e-14
+    },
+    {
+     "abs": 0.9981314957360276,
+     "arg": -2.978415328275743,
+     "residual": 1.4778195133841142e-13,
+     "interior_weight": 1.0000000000000016,
+     "antisym": 2.4290693273979112e-14
+    },
+    {
+     "abs": 0.9925923398664325,
+     "arg": 3.0604274345780094,
+     "residual": 2.237438353708134e-11,
+     "interior_weight": 1.0000000000000004,
+     "antisym": 3.8052202193586875e-12
+    },
+    {
+     "abs": 0.9921412961634393,
+     "arg": 0.15092174561639024,
+     "residual": 8.9858237092754e-11,
+     "interior_weight": 1.0000000000000004,
+     "antisym": 9.445979887630473e-12
+    }
+   ],
+   "contact_off_all_top4": [
+    {
+     "abs": 0.9980901117622297,
+     "arg": -3.066253761813115,
+     "residual": 7.06140853840399e-13,
+     "interior_weight": 1.0000000000000004,
+     "antisym": 1.0961075818365254e-13
+    },
+    {
+     "abs": 0.9968677984468197,
+     "arg": 0.24477383639721728,
+     "residual": 2.153618375956165e-12,
+     "interior_weight": 1.0000000000000004,
+     "antisym": 2.626484373986956e-13
+    },
+    {
+     "abs": 0.993024225951582,
+     "arg": 0.10434558200955148,
+     "residual": 6.994547024504188e-11,
+     "interior_weight": 1.0000000000000002,
+     "antisym": 7.809149313842196e-12
+    },
+    {
+     "abs": 0.9925757667689757,
+     "arg": 3.0552940679318796,
+     "residual": 2.300018540092302e-11,
+     "interior_weight": 1.0,
+     "antisym": 3.5884492512237964e-12
+    }
+   ]
+  },
+  {
+   "label": "held_size",
+   "L": 13,
+   "beta": -0.3,
+   "contact_on_top": {
+    "abs": 0.999109373594017,
+    "arg": 0.3065475333686654,
+    "residual": 2.3594254600048244e-13,
+    "interior_weight": 0.9999999999999992,
+    "antisym": 2.644746557618727e-14
+   },
+   "contact_off_top": {
+    "abs": 0.998090111762233,
+    "arg": -3.066253761813114,
+    "residual": 7.061134855913977e-13,
+    "interior_weight": 1.0000000000000004,
+    "antisym": 1.0802229856031361e-13
+   },
+   "dominant_phase_separation": 2.910384011997807,
+   "contact_on_all_top4": [
+    {
+     "abs": 0.999109373594017,
+     "arg": 0.3065475333686654,
+     "residual": 2.3594254600048244e-13,
+     "interior_weight": 0.9999999999999992,
+     "antisym": 2.644746557618727e-14
+    },
+    {
+     "abs": 0.9981314957360399,
+     "arg": -2.978415328275744,
+     "residual": 1.4894057441927857e-13,
+     "interior_weight": 1.000000000000001,
+     "antisym": 2.276408411242106e-14
+    },
+    {
+     "abs": 0.99259233986643,
+     "arg": 3.0604274345780085,
+     "residual": 2.2368178366390845e-11,
+     "interior_weight": 1.0000000000000002,
+     "antisym": 3.6016530286361553e-12
+    },
+    {
+     "abs": 0.9921412961634439,
+     "arg": 0.1509217456163902,
+     "residual": 8.972822278549754e-11,
+     "interior_weight": 1.0000000000000004,
+     "antisym": 8.462614637522192e-12
+    }
+   ],
+   "contact_off_all_top4": [
+    {
+     "abs": 0.998090111762233,
+     "arg": -3.066253761813114,
+     "residual": 7.061134855913977e-13,
+     "interior_weight": 1.0000000000000004,
+     "antisym": 1.0802229856031361e-13
+    },
+    {
+     "abs": 0.9968677984468199,
+     "arg": 0.24477383639721534,
+     "residual": 2.156308744382052e-12,
+     "interior_weight": 1.0000000000000002,
+     "antisym": 2.6973330885588307e-13
+    },
+    {
+     "abs": 0.9930242259515824,
+     "arg": 0.10434558200955178,
+     "residual": 7.001349652190515e-11,
+     "interior_weight": 0.9999999999999999,
+     "antisym": 8.068939452858148e-12
+    },
+    {
+     "abs": 0.9925757667689755,
+     "arg": 3.0552940679318805,
+     "residual": 2.300027414154405e-11,
+     "interior_weight": 1.0,
+     "antisym": 3.5615244120842303e-12
+    }
+   ]
+  },
+  {
+   "label": "held_beta",
+   "L": 9,
+   "beta": -0.35,
+   "contact_on_top": {
+    "abs": 0.9984734063099735,
+    "arg": 0.3446572128341594,
+    "residual": 3.496269897990244e-14,
+    "interior_weight": 0.9999999999999991,
+    "antisym": 1.687046321603175e-14
+   },
+   "contact_off_top": {
+    "abs": 0.9974435238729052,
+    "arg": -3.0525199073902436,
+    "residual": 7.256552042110327e-14,
+    "interior_weight": 0.9999999999999998,
+    "antisym": 2.3230103939862725e-14
+   },
+   "dominant_phase_separation": 2.8860081869551832,
+   "contact_on_all_top4": [
+    {
+     "abs": 0.9984734063099735,
+     "arg": 0.3446572128341594,
+     "residual": 3.496269897990244e-14,
+     "interior_weight": 0.9999999999999991,
+     "antisym": 1.687046321603175e-14
+    },
+    {
+     "abs": 0.9978361790568283,
+     "arg": -2.965714181611818,
+     "residual": 2.3351938058600615e-14,
+     "interior_weight": 1.000000000000002,
+     "antisym": 9.011100692876998e-15
+    },
+    {
+     "abs": 0.9899283561562332,
+     "arg": 3.0474776891500057,
+     "residual": 8.397784754102921e-12,
+     "interior_weight": 1.0000000000000004,
+     "antisym": 4.923318734852946e-12
+    },
+    {
+     "abs": 0.9894821364278534,
+     "arg": 0.17156960667082197,
+     "residual": 3.585267035263446e-11,
+     "interior_weight": 1.0000000000000007,
+     "antisym": 1.7370902533489937e-11
+    }
+   ],
+   "contact_off_all_top4": [
+    {
+     "abs": 0.9974435238729052,
+     "arg": -3.0525199073902436,
+     "residual": 7.256552042110327e-14,
+     "interior_weight": 0.9999999999999998,
+     "antisym": 2.3230103939862725e-14
+    },
+    {
+     "abs": 0.9957254602814705,
+     "arg": 0.286452634850751,
+     "residual": 2.826707656817729e-13,
+     "interior_weight": 1.0,
+     "antisym": 1.1367010055079636e-13
+    },
+    {
+     "abs": 0.9905083218428528,
+     "arg": 0.122782142444438,
+     "residual": 2.0748104791513515e-11,
+     "interior_weight": 0.9999999999999993,
+     "antisym": 7.492537702585202e-12
+    },
+    {
+     "abs": 0.9899073677865213,
+     "arg": 3.041977435027959,
+     "residual": 7.632022843273264e-12,
+     "interior_weight": 1.0000000000000007,
+     "antisym": 2.419837722268705e-12
+    }
+   ]
+  },
+  {
+   "label": "held_both",
+   "L": 13,
+   "beta": -0.35,
+   "contact_on_top": {
+    "abs": 0.9984734063099796,
+    "arg": 0.3446572128341517,
+    "residual": 3.685466334870553e-14,
+    "interior_weight": 0.9999999999999989,
+    "antisym": 1.5505875141363855e-14
+   },
+   "contact_off_top": {
+    "abs": 0.9974435238729067,
+    "arg": -3.0525199073902436,
+    "residual": 7.233974860005012e-14,
+    "interior_weight": 0.9999999999999998,
+    "antisym": 1.9142520398645893e-14
+   },
+   "dominant_phase_separation": 2.8860081869551912,
+   "contact_on_all_top4": [
+    {
+     "abs": 0.9984734063099796,
+     "arg": 0.3446572128341517,
+     "residual": 3.685466334870553e-14,
+     "interior_weight": 0.9999999999999989,
+     "antisym": 1.5505875141363855e-14
+    },
+    {
+     "abs": 0.9978361790568406,
+     "arg": -2.9657141816118204,
+     "residual": 2.721498739909353e-14,
+     "interior_weight": 1.0000000000000036,
+     "antisym": 8.914551468431137e-15
+    },
+    {
+     "abs": 0.9899283561562364,
+     "arg": 3.047477689150006,
+     "residual": 8.397056510399974e-12,
+     "interior_weight": 1.0000000000000004,
+     "antisym": 4.038688479640152e-12
+    },
+    {
+     "abs": 0.9894821364278539,
+     "arg": 0.17156960667082044,
+     "residual": 3.455199926162622e-11,
+     "interior_weight": 1.0000000000000004,
+     "antisym": 1.4655054610189333e-11
+    }
+   ],
+   "contact_off_all_top4": [
+    {
+     "abs": 0.9974435238729067,
+     "arg": -3.0525199073902436,
+     "residual": 7.233974860005012e-14,
+     "interior_weight": 0.9999999999999998,
+     "antisym": 1.9142520398645893e-14
+    },
+    {
+     "abs": 0.9957254602814715,
+     "arg": 0.2864526348507464,
+     "residual": 2.7572736150594667e-13,
+     "interior_weight": 1.0000000000000004,
+     "antisym": 1.0755590489540663e-13
+    },
+    {
+     "abs": 0.9905083218428541,
+     "arg": 0.12278214244443891,
+     "residual": 2.0333233565515275e-11,
+     "interior_weight": 0.9999999999999996,
+     "antisym": 7.114344563346567e-12
+    },
+    {
+     "abs": 0.9899073677865211,
+     "arg": 3.041977435027959,
+     "residual": 7.625718595892403e-12,
+     "interior_weight": 1.0000000000000009,
+     "antisym": 2.0265238195989984e-12
+    }
+   ]
+  }
+ ],
+ "phase_sensitivity": {
+  "periodic_min": 0.27800714562884554,
+  "periodic_max": 0.359010403193849,
+  "periodic_span": 0.08100325756500348,
+  "cavity_L9_L13_identity_is_not_outer_boundary_evidence": true,
+  "cavity_L9_L13_max_difference": 7.716050021144838e-15
+ },
+ "supplied_structure": [
+  "Cycle610 six-mode/contact update and A2 Birman-Schwinger branch",
+  "Cycle611 position-space engine and beta fixtures",
+  "Cycle622 radius-2 absorbing mask",
+  "Cycle629 positive-phase search window and interior-line algorithm",
+  "post-discovery acceptance thresholds in this runner"
+ ],
+ "derived": [
+  "four finite-volume positive A2 roots and exact eigen-update residuals",
+  "two-sided local root isolation at phase displacement 1e-4",
+  "contact-on/contact-off dominant cavity-line separation on all four fixtures",
+  "explicit finite-size and beta phase sensitivity"
+ ],
+ "open": [
+  "infinite-volume pole or resonance-width theorem",
+  "autonomous population transfer or bound-branch preparation",
+  "unequal line response, winding channel, or count-edit mechanism",
+  "two-line clock lawful domain and any proper-time interpretation"
+ ],
+ "n1_n8": {
+  "N1": {
+   "pass": true,
+   "routes": [
+    "periodic Birman-Schwinger root plus reconstructed eigenstate",
+    "contact-on/contact-off absorbing-cavity spectrum",
+    "held size, held coupling, and crossed held fixture"
+   ],
+   "scope": "confirmation campaign; no impossibility claim"
+  },
+  "N2": {
+   "pass": true,
+   "wall_independence": "finite-volume/infinite-volume, preparation, and clock-law gaps are not collapsed into one wall"
+  },
+  "N3": {
+   "pass": true,
+   "hidden_wall_scan": [
+    "the radius-2 cavity does not probe the L9/L13 outer boundary",
+    "root phase changes with L and beta",
+    "the positive root does not provide an autonomous population-transfer drive"
+   ]
+  },
+  "N4": {
+   "pass": true,
+   "residual_match": {
+    "maximum_root_abs": 6.476588094907856e-10,
+    "maximum_eigen_update": 1.2089897600200166e-11,
+    "minimum_local_side_value": 0.0030252953736871605,
+    "minimum_cavity_phase_separation": 2.8860081869551832
+   }
+  },
+  "N5": {
+   "pass": true,
+   "rhetoric": "held finite-volume eigenline only; no energy, linewidth, infinite-volume pole, clock, or vernier claim"
+  },
+  "N6": {
+   "pass": true,
+   "partial_closure": "Cycle629 held-size and held-species existence checks close; line width, continuum persistence, preparation, and unequal response remain"
+  },
+  "N7": {
+   "pass": true,
+   "steelman": "an adversary may identify the finite roots with pole-dressed box states; the exact eigen residual supports the box statement but does not answer that objection"
+  },
+  "N8": {
+   "pass": true,
+   "cross_cycle_echo": "the held line extends Cycle629 and retains Cycle583's explicit full-spectrum-touch/infinite-volume caveat"
+  },
+  "negative_gate": false,
+  "minimum_content_gate": false,
+  "axiom_pressure_gate": false,
+  "shared_obstruction": false
+ },
+ "strict_clock_bridge": false,
+ "universal_phase": false,
+ "finite_volume_eigenline": true,
+ "tests_passed": 9,
+ "tests_failed": 0,
+ "elapsed_seconds": 176.9063482284546,
+ "max_rss_bytes": 250052608
+}

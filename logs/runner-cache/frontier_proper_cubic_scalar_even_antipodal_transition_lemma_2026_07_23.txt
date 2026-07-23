@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/frontier_proper_cubic_scalar_even_antipodal_transition_lemma_2026_07_23.py
+runner_sha256: ed8211dba9c1a30edd4dfb40ae2a5e5564a89bf33d3c354ba978a2785d5d47fe
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.20
+status: ok
+----- stdout -----
+proper-cubic scalar-even antipodal transition lemma runner
+train_betas=(-0.4, -0.3, -0.2, 0.0, 0.7)
+held_betas=(-2.4, -0.35, 1.8)
+PASS: reversal projectors form an orthogonal Hermitian resolution :: {'hermitian': 0.0, 'idempotent': 3.3306690738754696e-16, 'orthogonal': 3.1990901413148286e-16, 'resolution': 0.0}
+PASS: chosen scalar and even vectors obey the exact subspace hypotheses :: {'scalar_norm': 2.220446049250313e-16, 'even_norm': 0.0, 'overlap': 0.0, 'P_scalar': 4.079219866531555e-16, 'P_even': 0.0, 'P_vector_scalar': 0.0, 'P_vector_even': 0.0}
+PASS: independent two-dimensional reduction is the swap matrix :: [[-2.23711432e-17+0.j  1.00000000e+00+0.j]
+ [ 1.00000000e+00+0.j -2.23711432e-17+0.j]]
+PASS: train and held values match the existing supplied coin implementation :: [{'beta': -0.4, 'implementation': 6.798699777552591e-17, 'plus_to_minus': 4.1508855398546356e-16, 'minus_to_plus': 4.0960050327170387e-16, 'inverse_plus': 4.1445008977564065e-16, 'inverse_minus': 4.089534711256607e-16, 'square_plus': 1.0165420363472293e-15, 'square_minus': 9.280235572879398e-16, 'compressed': 8.187347264889583e-16, 'unitarity': 1.3622897151075552e-15}, {'beta': -0.3, 'implementation': 8.326672684688674e-17, 'plus_to_minus': 4.80540321234368e-16, 'minus_to_plus': 4.812411825816293e-16, 'inverse_plus': 4.541663759503481e-16, 'inverse_minus': 4.549078725680712e-16, 'square_plus': 1.0756684430629142e-15, 'square_minus': 9.350594010892291e-16, 'compressed': 8.967997734718074e-16, 'unitarity': 1.2315713236940642e-15}, {'beta': -0.2, 'implementation': 3.3993498887762956e-17, 'plus_to_minus': 4.783498019090551e-16, 'minus_to_plus': 4.379962078080098e-16, 'inverse_plus': 5.000473944787578e-16, 'inverse_minus': 4.1963280002941205e-16, 'square_plus': 8.967379474283283e-16, 'square_minus': 9.601862895844017e-16, 'compressed': 8.595403176392969e-16, 'unitarity': 1.162560798285862e-15}, {'beta': 0.0, 'implementation': 0.0, 'plus_to_minus': 4.4255479601330834e-16, 'minus_to_plus': 4.4255479601330834e-16, 'inverse_plus': 4.4255479601330834e-16, 'inverse_minus': 4.4255479601330834e-16, 'square_plus': 1.0649557891154166e-15, 'square_minus': 1.0586982176966993e-15, 'compressed': 9.46920238423797e-16, 'unitarity': 1.419097581823643e-15}, {'beta': 0.7, 'implementation': 0.0, 'plus_to_minus': 4.697995015182298e-16, 'minus_to_plus': 4.573357540805812e-16, 'inverse_plus': 4.394024088746219e-16, 'inverse_minus': 4.2650214917087394e-16, 'square_plus': 7.421048898892461e-16, 'square_minus': 7.658602774417359e-16, 'compressed': 8.452262592281254e-16, 'unitarity': 1.0596608820731316e-15}, {'beta': -2.4, 'implementation': 0.0, 'plus_to_minus': 4.503336797797561e-16, 'minus_to_plus': 4.592268817375594e-16, 'inverse_plus': 4.503336797797561e-16, 'inverse_minus': 4.592268817375594e-16, 'square_plus': 7.75605710480108e-16, 'square_minus': 8.302423526647771e-16, 'compressed': 8.66149850728098e-16, 'unitarity': 1.0577214989346992e-15}, {'beta': -0.35, 'implementation': 0.0, 'plus_to_minus': 2.6050903327014443e-16, 'minus_to_plus': 2.9663264205780157e-16, 'inverse_plus': 2.8856956868395376e-16, 'inverse_minus': 3.2155615977506903e-16, 'square_plus': 7.701625229033229e-16, 'square_minus': 7.167998311774754e-16, 'compressed': 7.561368568953807e-16, 'unitarity': 1.09821239994011e-15}, {'beta': 1.8, 'implementation': 6.231111271582837e-16, 'plus_to_minus': 5.0601619154557e-16, 'minus_to_plus': 5.0601619154557e-16, 'inverse_plus': 5.039185084589145e-16, 'inverse_minus': 5.039185084589145e-16, 'square_plus': 1.0759090078040745e-15, 'square_minus': 9.581956755997205e-16, 'compressed': 9.934550117644326e-16, 'unitarity': 1.3050056393026082e-15}]
+PASS: swap, inverse, square, compression, and unitarity identities hold :: {'maximum_residual': 1.419097581823643e-15}
+PASS: all 24 proper-cubic frames preserve the transported transition identity :: {'checks': 576, 'maximum_residual': 5.743687592511735e-16}
+PASS: moving the even-sector phase away from minus one breaks the exact swap :: {'minimum_mutation_residual': 0.03535165632659573, 'maximum_mutation_residual': 0.0353516563265958}
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

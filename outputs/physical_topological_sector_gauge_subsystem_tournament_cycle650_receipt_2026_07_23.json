@@ -1,0 +1,990 @@
+{
+  "Cycle642_label_covariance": {
+    "encoder_transport_rule": "E_R = F_R E C_R^dagger; each supplied circuit is relabeled/conjugated as one compile-time family, not queried at runtime",
+    "frame_products": 576,
+    "pass": true,
+    "proper_cubic_frames": 24,
+    "rows": [
+      {
+        "all576_extended_permutation_group_failures": 0,
+        "extended_M2": 642,
+        "frame_label_failures": 0,
+        "length": 3
+      },
+      {
+        "all576_extended_permutation_group_failures": 0,
+        "extended_M2": 4848,
+        "frame_label_failures": 0,
+        "length": 6
+      },
+      {
+        "all576_extended_permutation_group_failures": 0,
+        "extended_M2": 7642,
+        "frame_label_failures": 0,
+        "length": 7
+      }
+    ],
+    "runtime_frame_selector": false,
+    "single_invariant_factor_order_claimed": false
+  },
+  "Status": "PASS",
+  "audit": "unset",
+  "author_accepted": false,
+  "author_artifact_status_accepted": false,
+  "authority": "none",
+  "axiom_pressure": false,
+  "axiom_pressure_claim": false,
+  "axiom_pressure_gate": "FAIL / DO NOT SHIP",
+  "axiom_pressure_shipped": false,
+  "breakthrough": false,
+  "broad_negative_gate": "FAIL / DO NOT SHIP",
+  "broad_negative_shipped": false,
+  "broad_no_go_claim": false,
+  "canonical_claim_gate_contract": {
+    "N1": true,
+    "N2": true,
+    "N4": true,
+    "N5": true,
+    "N6": true,
+    "N8": true,
+    "Status_PASS": true,
+    "flags": true,
+    "gates": true,
+    "pass": true
+  },
+  "classification": "three-route topological-sector-as-gauge subsystem tournament",
+  "constitutional_effect": "none",
+  "cycle": 650,
+  "date": "2026-07-23",
+  "elapsed_seconds": 216.17203404195607,
+  "highest_honest_terminal": "exact +3 direct-sum center and finite arbitrary-topological-input E after a supplied Wilson-character chart, plus a local gauge-covariant link/seam comparator; not a raw spectator M8 factor or strict local compiler",
+  "immutable_shore": {
+    "observed": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_ORBIT_TREE_STRUCTURED_FULL_ISOMETRY_TOURNAMENT_CYCLE647_NOTE_2026-07-23.md": "1acf92423fcf59456b192d9a58fa8cf538157354d62763d4285d98872741b406",
+      "outputs/physical_orbit_tree_structured_full_isometry_tournament_cycle647_cold_2026_07_23.txt": "df26b4fd0f2a092499d6bfef8e142c79a868ef783bee1710698b751710cbf518",
+      "outputs/physical_orbit_tree_structured_full_isometry_tournament_cycle647_receipt_2026_07_23.json": "41752b7c5f6a6deefab2cfdd562052c507896a2015a414297a0f0140b2bbbdbf",
+      "scripts/physical_orbit_tree_structured_full_isometry_tournament_cycle647_2026_07_23.py": "23d5316fb00ed4796bc74e193970f045fa7fa32a020e49fd0534ee0deec3fb18"
+    },
+    "pins": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_ORBIT_TREE_STRUCTURED_FULL_ISOMETRY_TOURNAMENT_CYCLE647_NOTE_2026-07-23.md": "1acf92423fcf59456b192d9a58fa8cf538157354d62763d4285d98872741b406",
+      "outputs/physical_orbit_tree_structured_full_isometry_tournament_cycle647_cold_2026_07_23.txt": "df26b4fd0f2a092499d6bfef8e142c79a868ef783bee1710698b751710cbf518",
+      "outputs/physical_orbit_tree_structured_full_isometry_tournament_cycle647_receipt_2026_07_23.json": "41752b7c5f6a6deefab2cfdd562052c507896a2015a414297a0f0140b2bbbdbf",
+      "scripts/physical_orbit_tree_structured_full_isometry_tournament_cycle647_2026_07_23.py": "23d5316fb00ed4796bc74e193970f045fa7fa32a020e49fd0534ee0deec3fb18"
+    },
+    "ref": "08d8fad170e8c24068b8f818c500a5309ebf96ce",
+    "working_tree_bytes_used_as_premise": false
+  },
+  "maximum_RSS_bytes": 347635712,
+  "minimum_content_claim": false,
+  "minimum_content_gate": "FAIL / DO NOT SHIP",
+  "minimum_content_shipped": false,
+  "no_go_discipline": {
+    "N1_broad_negative_gate": "FAIL / DO NOT SHIP",
+    "N1_normalized_families": [
+      {
+        "family": "remove root/Wilson checks",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "exact quotient and commutant ranks",
+        "object_formulation": "Cycle642 tree code with three root faces omitted",
+        "status": "+3 exponent passes; raw M8 spectator factor does not",
+        "strength_vs_target": "direct",
+        "terminal_obligation": "target tensor ordinary gauge tensor topological M8"
+      },
+      {
+        "family": "local flat Z2 link field",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "three toric holonomies and link-dressed charged hopping",
+        "object_formulation": "3N cubic links with star/plaquette constraints",
+        "status": "local covariance passes; coupled E open",
+        "strength_vs_target": "partial constructive",
+        "terminal_obligation": "local seam covariance and full coupled E"
+      },
+      {
+        "family": "direct-sum supplied-chart E",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "signed tableau plus Wilson-character correction",
+        "object_formulation": "three explicit topological input qubits",
+        "status": "finite E passes; global character chart supplied",
+        "strength_vs_target": "algebraically target-equivalent, locality weaker",
+        "terminal_obligation": "arbitrary-sector exact isometry and update"
+      },
+      {
+        "family": "fixed plus-plus-plus sector",
+        "honesty_marker": "RULED OUT BY PRIOR",
+        "mechanism_invariant": "three Wilson signs fixed as blank references",
+        "object_formulation": "Cycle647 full root-face stabilizer code",
+        "status": "Cycle647 exact E intentionally fixes the three signs",
+        "strength_vs_target": "strict subset",
+        "terminal_obligation": "arbitrary topological input"
+      }
+    ],
+    "N1_open_routes_not_counted": [
+      {
+        "family": "distributed local toric/tree coupled encoder",
+        "status": "OPEN / NOT COUNTED",
+        "terminal": "bounded-range E with returned work"
+      },
+      {
+        "family": "odd-CAR spin-structure covariant extension",
+        "status": "OPEN / NOT COUNTED",
+        "terminal": "odd generators and seam channels without supplied character chart"
+      },
+      {
+        "family": "dynamical Z2 flux law",
+        "status": "OPEN / NOT COUNTED",
+        "terminal": "autonomous topological-sector update/genesis"
+      }
+    ],
+    "N1_qualifying_attempts": 4,
+    "N1_required_for_negative": 5,
+    "N2_directed_ordered_pairs": [
+      {
+        "from": "W_raw_tensor",
+        "implied": false,
+        "reason": "closing W_raw_tensor does not construct W_coupled_E",
+        "to": "W_coupled_E"
+      },
+      {
+        "from": "W_raw_tensor",
+        "implied": false,
+        "reason": "closing W_raw_tensor does not construct W_interface",
+        "to": "W_interface"
+      },
+      {
+        "from": "W_coupled_E",
+        "implied": false,
+        "reason": "closing W_coupled_E does not construct W_raw_tensor",
+        "to": "W_raw_tensor"
+      },
+      {
+        "from": "W_coupled_E",
+        "implied": false,
+        "reason": "closing W_coupled_E does not construct W_interface",
+        "to": "W_interface"
+      },
+      {
+        "from": "W_interface",
+        "implied": false,
+        "reason": "closing W_interface does not construct W_raw_tensor",
+        "to": "W_raw_tensor"
+      },
+      {
+        "from": "W_interface",
+        "implied": false,
+        "reason": "closing W_interface does not construct W_coupled_E",
+        "to": "W_coupled_E"
+      }
+    ],
+    "N2_walls": {
+      "W_coupled_E": "construct a bounded-range tree/link encoder with returned work",
+      "W_interface": "show every sector is the unchanged coarse update rather than a spin-conditioned extension",
+      "W_raw_tensor": "make the raw Cycle642 matter algebra identity on topological gauge"
+    },
+    "N3_hidden_wall_scan": [
+      {
+        "classification": "explicit choice",
+        "condition": "three omitted root faces"
+      },
+      {
+        "classification": "supplied global chart, not derived local law",
+        "condition": "Wilson-character correction table"
+      },
+      {
+        "classification": "supplied gauge-code structure and state, not autonomous genesis",
+        "condition": "flat-link stabilizers and blank inputs"
+      }
+    ],
+    "N4_exact_residual_matches": [
+      {
+        "current_line": 113,
+        "current_path": "scripts/physical_topological_sector_gauge_subsystem_tournament_cycle650_2026_07_23.py",
+        "current_residual": "omitting three root/Wilson constraints restores exactly three code qubits as central sector labels",
+        "exact_match": true,
+        "prior_line": 78,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_LOCAL_WILSON_FILL_DISK_CYCLE537_NOTE_2026-07-21.md",
+        "prior_ref": "08d8fad170e8c24068b8f818c500a5309ebf96ce",
+        "prior_residual": "each Wilson fill removes one topological code qubit",
+        "same_scope": true,
+        "use_as_closure": true
+      }
+    ],
+    "N4_nonmatches_not_used_as_closure": [
+      {
+        "current_line": 113,
+        "current_path": "scripts/physical_topological_sector_gauge_subsystem_tournament_cycle650_2026_07_23.py",
+        "current_residual": "Cycle650 raw algebra has three additional centers",
+        "exact_match": false,
+        "prior_line": 3,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_ORBIT_TREE_STRUCTURED_FULL_ISOMETRY_TOURNAMENT_CYCLE647_NOTE_2026-07-23.md",
+        "prior_ref": "08d8fad170e8c24068b8f818c500a5309ebf96ce",
+        "prior_residual": "Cycle647 factor lists are nonlocal",
+        "same_scope": false,
+        "use_as_closure": false
+      }
+    ],
+    "N5_rhetoric": [
+      {
+        "claim": "the three restored code qubits are not a raw spectator M8 factor",
+        "lattice_wide": "no all-L impossibility is inferred",
+        "per_block": "L3/L6/L7 ranks and held charts are exact",
+        "per_element": "all displayed raw generators are charted",
+        "per_mode": "all six-mode even generators are included",
+        "per_site": "local link proxy is separately tested"
+      }
+    ],
+    "N6_partial_closure_paths": [
+      {
+        "file": "UNMATERIALIZED/distributed_tree_toric_coupled_E_cycle_next.py",
+        "status": "OPEN / PRIORITY",
+        "what_closes": "W_coupled_E"
+      },
+      {
+        "file": "UNMATERIALIZED/odd_CAR_spin_character_extension_cycle_next.py",
+        "status": "OPEN",
+        "what_closes": "W_interface for odd and seam generators"
+      },
+      {
+        "file": "UNMATERIALIZED/autonomous_Z2_flux_genesis_cycle_next.py",
+        "status": "OPEN",
+        "what_closes": "autonomous sector preparation/update, not the algebraic rank result"
+      }
+    ],
+    "N7_steelman": {
+      "actionable_steps": [
+        "construct local tree-root/link plaquette coupling checks",
+        "synthesize a returned-work local gauge-fixing circuit",
+        "conjugate the complete corrected generator set and odd seam channels"
+      ],
+      "mechanism": "use the positive local flat-link construction to distribute each Wilson character and synthesize the tree/link coupling by gauge-fixing only local spanning-tree edges while leaving three holonomies arbitrary",
+      "supporting_citations": [
+        {
+          "line": 78,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_LOCAL_WILSON_FILL_DISK_CYCLE537_NOTE_2026-07-21.md",
+          "ref": "08d8fad170e8c24068b8f818c500a5309ebf96ce",
+          "text": "removes exactly one topological code qubit.  Three disks remove the three"
+        },
+        {
+          "line": 3,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_ORBIT_TREE_STRUCTURED_FULL_ISOMETRY_TOURNAMENT_CYCLE647_NOTE_2026-07-23.md",
+          "ref": "08d8fad170e8c24068b8f818c500a5309ebf96ce",
+          "text": "Classification: **exact finite supplied-chart orbit-tree E with nonlocal factors; strict physical local/linear terminal remains open**"
+        }
+      ],
+      "terminal_test": "bounded physical range, arbitrary three-qubit holonomy input, inverse/leakage, all24/all576, and unchanged coarse interface without a supplied global character table"
+    },
+    "N8_cross_cycle_echo": [
+      {
+        "applicability": "Cycle650 reverses this choice and exposes their exact central algebra",
+        "citation_line": 78,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_LOCAL_WILSON_FILL_DISK_CYCLE537_NOTE_2026-07-21.md",
+        "citation_ref": "08d8fad170e8c24068b8f818c500a5309ebf96ce",
+        "citation_text": "removes exactly one topological code qubit.  Three disks remove the three",
+        "cycle": 537,
+        "mechanism": "three fill disks fix them",
+        "retired": "three spin characters in the fixed target factor"
+      },
+      {
+        "applicability": "reusable for Route C but not a local coupled link encoder",
+        "citation_line": 3,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_ORBIT_TREE_STRUCTURED_FULL_ISOMETRY_TOURNAMENT_CYCLE647_NOTE_2026-07-23.md",
+        "citation_ref": "08d8fad170e8c24068b8f818c500a5309ebf96ce",
+        "citation_text": "Classification: **exact finite supplied-chart orbit-tree E with nonlocal factors; strict physical local/linear terminal remains open**",
+        "cycle": 647,
+        "mechanism": "finite supplied-chart tableau",
+        "retired": "absence of a finite tree-code E"
+      }
+    ],
+    "Status": "PASS",
+    "axiom_pressure": false,
+    "axiom_pressure_claim": false,
+    "axiom_pressure_gate": "FAIL / DO NOT SHIP",
+    "axiom_pressure_shipped": false,
+    "broad_negative_gate": "FAIL / DO NOT SHIP",
+    "broad_negative_shipped": false,
+    "broad_no_go_claim": false,
+    "minimum_content_claim": false,
+    "minimum_content_gate": "FAIL / DO NOT SHIP",
+    "minimum_content_shipped": false,
+    "shared_obstruction_claim": false,
+    "shared_obstruction_gate": "FAIL / DO NOT SHIP",
+    "shared_obstruction_shipped": false,
+    "shared_route_independent_obstruction": false
+  },
+  "note_sha256": "84d8ee582059a40eda5106debb439a1f0a9f4b181d806b07a6e7fe29fe4712cb",
+  "optimal_next_campaign": "distributed local tree/toric coupling and returned-work gauge-fixing E with complete corrected and odd seam generators",
+  "pass": true,
+  "prior_art_novelty_boundary": {
+    "broader_novelty_claimed": false,
+    "narrow_new_result": "exact Cycle642 rank/center and sector-character/seam comparisons plus finite supplied-chart composition on L3/L6/held-out L7",
+    "standard_prior_art": [
+      "Z2 lattice gauge and toric holonomies",
+      "spin-structure sectors",
+      "Clifford stabilizer encoders"
+    ]
+  },
+  "route_A_algebra": [
+    {
+      "M2_labels": 642,
+      "coarse_cells": 27,
+      "code_exponent": 191,
+      "commutator_failures": {
+        "gauge_stabilizer": 0,
+        "matter_gauge": 0,
+        "matter_stabilizer": 0,
+        "stabilizer": 0
+      },
+      "exact_residual": "the raw matter and gauge spans each acquire the same three Wilson centers; symplectic rank does not gain six, so the +3 code exponent is a direct-sum sector center, not a raw spectator M8 factor",
+      "expected_code_exponent": 191,
+      "expected_commutant": [
+        56,
+        52
+      ],
+      "expected_raw_gauge": [
+        56,
+        52
+      ],
+      "expected_raw_matter": [
+        326,
+        322
+      ],
+      "full_Cycle642_rank": 454,
+      "full_commutant_method": "explicit nullspace quotient, cross-checking the symplectic-complement theorem",
+      "full_matter_commutant_dimension_rank": [
+        56,
+        52
+      ],
+      "gauge_quotient_dimension_rank": [
+        56,
+        52
+      ],
+      "length": 3,
+      "matter_quotient_dimension_rank": [
+        326,
+        322
+      ],
+      "pass": true,
+      "phase_inconsistencies": 0,
+      "rank_drop": 3,
+      "raw_gauge_center_dimension": 4,
+      "raw_matter_center_dimension": 4,
+      "requested_partition": {
+        "ordinary_gauge": 26,
+        "sum": 191,
+        "target": 162,
+        "topological_gauge": 3
+      },
+      "retained_stabilizer_rank": 451,
+      "root_face_rank_increments": [
+        1,
+        1,
+        1
+      ],
+      "root_faces_in_raw_gauge_span_mod_stabilizers": [
+        true,
+        true,
+        true
+      ],
+      "root_faces_in_raw_matter_span_mod_stabilizers": [
+        true,
+        true,
+        true
+      ],
+      "route": "A_remove_three_root_faces",
+      "split": "construction",
+      "three_extra_qubits_form_raw_M8_spectator_commutant": false
+    },
+    {
+      "M2_labels": 4848,
+      "coarse_cells": 216,
+      "code_exponent": 1514,
+      "commutator_failures": {
+        "gauge_stabilizer": 0,
+        "matter_gauge": 0,
+        "matter_stabilizer": 0,
+        "stabilizer": 0
+      },
+      "exact_residual": "the raw matter and gauge spans each acquire the same three Wilson centers; symplectic rank does not gain six, so the +3 code exponent is a direct-sum sector center, not a raw spectator M8 factor",
+      "expected_code_exponent": 1514,
+      "expected_commutant": [
+        434,
+        430
+      ],
+      "expected_raw_gauge": [
+        434,
+        430
+      ],
+      "expected_raw_matter": [
+        2594,
+        2590
+      ],
+      "full_Cycle642_rank": 3337,
+      "full_commutant_method": "symplectic-complement theorem from the exact measured matter dimension/rank in the nondegenerate logical code space",
+      "full_matter_commutant_dimension_rank": [
+        434,
+        430
+      ],
+      "gauge_quotient_dimension_rank": [
+        434,
+        430
+      ],
+      "length": 6,
+      "matter_quotient_dimension_rank": [
+        2594,
+        2590
+      ],
+      "pass": true,
+      "phase_inconsistencies": 0,
+      "rank_drop": 3,
+      "raw_gauge_center_dimension": 4,
+      "raw_matter_center_dimension": 4,
+      "requested_partition": {
+        "ordinary_gauge": 215,
+        "sum": 1514,
+        "target": 1296,
+        "topological_gauge": 3
+      },
+      "retained_stabilizer_rank": 3334,
+      "root_face_rank_increments": [
+        1,
+        1,
+        1
+      ],
+      "root_faces_in_raw_gauge_span_mod_stabilizers": [
+        true,
+        true,
+        true
+      ],
+      "root_faces_in_raw_matter_span_mod_stabilizers": [
+        true,
+        true,
+        true
+      ],
+      "route": "A_remove_three_root_faces",
+      "split": "train",
+      "three_extra_qubits_form_raw_M8_spectator_commutant": false
+    },
+    {
+      "M2_labels": 7642,
+      "coarse_cells": 343,
+      "code_exponent": 2403,
+      "commutator_failures": {
+        "gauge_stabilizer": 0,
+        "matter_gauge": 0,
+        "matter_stabilizer": 0,
+        "stabilizer": 0
+      },
+      "exact_residual": "the raw matter and gauge spans each acquire the same three Wilson centers; symplectic rank does not gain six, so the +3 code exponent is a direct-sum sector center, not a raw spectator M8 factor",
+      "expected_code_exponent": 2403,
+      "expected_commutant": [
+        688,
+        684
+      ],
+      "expected_raw_gauge": [
+        688,
+        684
+      ],
+      "expected_raw_matter": [
+        4118,
+        4114
+      ],
+      "full_Cycle642_rank": 5242,
+      "full_commutant_method": "symplectic-complement theorem from the exact measured matter dimension/rank in the nondegenerate logical code space",
+      "full_matter_commutant_dimension_rank": [
+        688,
+        684
+      ],
+      "gauge_quotient_dimension_rank": [
+        688,
+        684
+      ],
+      "length": 7,
+      "matter_quotient_dimension_rank": [
+        4118,
+        4114
+      ],
+      "pass": true,
+      "phase_inconsistencies": 0,
+      "rank_drop": 3,
+      "raw_gauge_center_dimension": 4,
+      "raw_matter_center_dimension": 4,
+      "requested_partition": {
+        "ordinary_gauge": 342,
+        "sum": 2403,
+        "target": 2058,
+        "topological_gauge": 3
+      },
+      "retained_stabilizer_rank": 5239,
+      "root_face_rank_increments": [
+        1,
+        1,
+        1
+      ],
+      "root_faces_in_raw_gauge_span_mod_stabilizers": [
+        true,
+        true,
+        true
+      ],
+      "root_faces_in_raw_matter_span_mod_stabilizers": [
+        true,
+        true,
+        true
+      ],
+      "route": "A_remove_three_root_faces",
+      "split": "held-out-no-refit",
+      "three_extra_qubits_form_raw_M8_spectator_commutant": false
+    }
+  ],
+  "route_B_local_link": [
+    {
+      "charged_XX_YY_link_dressed_hopping_terms": 972,
+      "coarse_cells": 27,
+      "code_exponent": 3,
+      "covariance": {
+        "all576_group_failures": 0,
+        "constraint_image_failures": 0,
+        "frame_bijection_failures": 0,
+        "frame_products": 576,
+        "logical_homology_image_failures": 0,
+        "pass": true,
+        "proper_cubic_frames": 24
+      },
+      "delete_one_independent_constraint_rank": 77,
+      "expected_rank": 78,
+      "flipped_redundant_star_phase_inconsistencies": 1,
+      "gauge_covariance_commutator_failures": 0,
+      "global_parity_service_used": false,
+      "hopping_and_onsite_objects_are_covariance_proxies_not_exact_original_CAR_compiler": true,
+      "length": 3,
+      "link_M2": 81,
+      "link_M2_per_cell": 3,
+      "local_link_code_state_preparation_E_constructed": false,
+      "logical_pairing_failures": 0,
+      "logical_stabilizer_failures": 0,
+      "maximum_plaquette_weight": 4,
+      "maximum_star_weight": 6,
+      "onsite_contact_Gauss_commutator_failures": 0,
+      "onsite_mass_and_contact_proxy_terms": 567,
+      "pass": true,
+      "phase_inconsistencies": 0,
+      "plaquette_rows": 81,
+      "route": "B_local_flat_Z2_link_field",
+      "seam_hopping_terms": 324,
+      "split": "construction",
+      "stabilizer_commutator_failures": 0,
+      "stabilizer_rank": 78,
+      "star_rows": 27,
+      "topological_qubits": 3,
+      "tree_root_to_link_holonomy_local_coupling_constructed": false
+    },
+    {
+      "charged_XX_YY_link_dressed_hopping_terms": 7776,
+      "coarse_cells": 216,
+      "code_exponent": 3,
+      "covariance": {
+        "all576_group_failures": 0,
+        "constraint_image_failures": 0,
+        "frame_bijection_failures": 0,
+        "frame_products": 576,
+        "logical_homology_image_failures": 0,
+        "pass": true,
+        "proper_cubic_frames": 24
+      },
+      "delete_one_independent_constraint_rank": 644,
+      "expected_rank": 645,
+      "flipped_redundant_star_phase_inconsistencies": 1,
+      "gauge_covariance_commutator_failures": 0,
+      "global_parity_service_used": false,
+      "hopping_and_onsite_objects_are_covariance_proxies_not_exact_original_CAR_compiler": true,
+      "length": 6,
+      "link_M2": 648,
+      "link_M2_per_cell": 3,
+      "local_link_code_state_preparation_E_constructed": false,
+      "logical_pairing_failures": 0,
+      "logical_stabilizer_failures": 0,
+      "maximum_plaquette_weight": 4,
+      "maximum_star_weight": 6,
+      "onsite_contact_Gauss_commutator_failures": 0,
+      "onsite_mass_and_contact_proxy_terms": 4536,
+      "pass": true,
+      "phase_inconsistencies": 0,
+      "plaquette_rows": 648,
+      "route": "B_local_flat_Z2_link_field",
+      "seam_hopping_terms": 1296,
+      "split": "train",
+      "stabilizer_commutator_failures": 0,
+      "stabilizer_rank": 645,
+      "star_rows": 216,
+      "topological_qubits": 3,
+      "tree_root_to_link_holonomy_local_coupling_constructed": false
+    },
+    {
+      "charged_XX_YY_link_dressed_hopping_terms": 12348,
+      "coarse_cells": 343,
+      "code_exponent": 3,
+      "covariance": {
+        "all576_group_failures": 0,
+        "constraint_image_failures": 0,
+        "frame_bijection_failures": 0,
+        "frame_products": 576,
+        "logical_homology_image_failures": 0,
+        "pass": true,
+        "proper_cubic_frames": 24
+      },
+      "delete_one_independent_constraint_rank": 1025,
+      "expected_rank": 1026,
+      "flipped_redundant_star_phase_inconsistencies": 1,
+      "gauge_covariance_commutator_failures": 0,
+      "global_parity_service_used": false,
+      "hopping_and_onsite_objects_are_covariance_proxies_not_exact_original_CAR_compiler": true,
+      "length": 7,
+      "link_M2": 1029,
+      "link_M2_per_cell": 3,
+      "local_link_code_state_preparation_E_constructed": false,
+      "logical_pairing_failures": 0,
+      "logical_stabilizer_failures": 0,
+      "maximum_plaquette_weight": 4,
+      "maximum_star_weight": 6,
+      "onsite_contact_Gauss_commutator_failures": 0,
+      "onsite_mass_and_contact_proxy_terms": 7203,
+      "pass": true,
+      "phase_inconsistencies": 0,
+      "plaquette_rows": 1029,
+      "route": "B_local_flat_Z2_link_field",
+      "seam_hopping_terms": 1764,
+      "split": "held-out-no-refit",
+      "stabilizer_commutator_failures": 0,
+      "stabilizer_rank": 1026,
+      "star_rows": 343,
+      "topological_qubits": 3,
+      "tree_root_to_link_holonomy_local_coupling_constructed": false
+    }
+  ],
+  "route_C_controls": {
+    "factor_deletions": [
+      {
+        "detected": true,
+        "factor_index": 0,
+        "failures": 9,
+        "kind": "H"
+      },
+      {
+        "detected": true,
+        "factor_index": 4,
+        "failures": 5,
+        "kind": "S"
+      },
+      {
+        "detected": true,
+        "factor_index": 1,
+        "failures": 9,
+        "kind": "CNOT"
+      }
+    ],
+    "factorwise_inverse": {
+      "CNOT": "CNOT",
+      "H": "H",
+      "S": "S S S"
+    },
+    "inverse": [
+      {
+        "failures": 0,
+        "length": 3,
+        "probes": 22
+      },
+      {
+        "failures": 0,
+        "length": 6,
+        "probes": 22
+      },
+      {
+        "failures": 0,
+        "length": 7,
+        "probes": 22
+      }
+    ],
+    "optional_topological_plus_fixture": [
+      {
+        "base_rank": 451,
+        "delete_one_rank": 453,
+        "minus_consistent_but_refused_by_plus_fixture": true,
+        "minus_phase_inconsistencies": 0,
+        "minus_rank": 454,
+        "optional_plus_topological_fixture": true,
+        "pass": true,
+        "plus_rank": 454,
+        "references": 3
+      }
+    ],
+    "pass": true
+  },
+  "route_C_direct_sum_E": [
+    {
+      "M2_labels": 642,
+      "Wilson_character_correction_is_supplied_global_chart": true,
+      "all_eight_topological_Z_basis_sectors_in_domain": true,
+      "arbitrary_coherent_topological_input": true,
+      "blank_inputs": 451,
+      "coarse_cells": 27,
+      "corrected_gauge_partition_failures": 0,
+      "corrected_matter_partition_failures": 0,
+      "corrected_target_algebra_is_topological_spectator": true,
+      "elapsed_seconds": 0.19124195794574916,
+      "encoder_factor_count": 20243,
+      "encoder_factor_counts": {
+        "CNOT": 9572,
+        "H": 4602,
+        "S": 6069
+      },
+      "encoder_factor_sha256": "11622ed055cc4cad1e725691038359606259f55775d8d6528f88d8451c6c98c5",
+      "encoder_factors_per_cell": 749.7407407407408,
+      "exact_partition": true,
+      "gauge_pair_count": 26,
+      "length": 3,
+      "matter_and_gauge_radicals": [
+        "shared parity",
+        "Wilson X",
+        "Wilson Y",
+        "Wilson Z"
+      ],
+      "matter_pair_count": 161,
+      "ordinary_gauge_inputs": 26,
+      "pass": true,
+      "raw_G_tree_code_is_sector_diagonal_not_topological_identity": true,
+      "raw_gauge_generators_with_topological_Z": 27,
+      "raw_matter_generators_with_topological_Z": 27,
+      "raw_matter_topological_character_categories": {
+        "A_outer_square_seam": 27
+      },
+      "raw_topological_X_failures": 0,
+      "root_to_topological_Z_failures": 0,
+      "route": "C_direct_sum_full_E",
+      "split": "construction",
+      "stabilizer_reference_failures": 0,
+      "target_inputs": 162,
+      "topological_canonical_pairing_failures": 0,
+      "topological_gauge_inputs": 3,
+      "topological_plus_state_required_by_isometry": false,
+      "work_M2": 0
+    },
+    {
+      "M2_labels": 4848,
+      "Wilson_character_correction_is_supplied_global_chart": true,
+      "all_eight_topological_Z_basis_sectors_in_domain": true,
+      "arbitrary_coherent_topological_input": true,
+      "blank_inputs": 3334,
+      "coarse_cells": 216,
+      "corrected_gauge_partition_failures": 0,
+      "corrected_matter_partition_failures": 0,
+      "corrected_target_algebra_is_topological_spectator": true,
+      "elapsed_seconds": 14.781826416961849,
+      "encoder_factor_count": 222642,
+      "encoder_factor_counts": {
+        "CNOT": 133058,
+        "H": 44881,
+        "S": 44703
+      },
+      "encoder_factor_sha256": "565dba02e4ffd0b70e91ebbacf693c33aef1736f9f77a8a0fa6107d111eabad6",
+      "encoder_factors_per_cell": 1030.75,
+      "exact_partition": true,
+      "gauge_pair_count": 215,
+      "length": 6,
+      "matter_and_gauge_radicals": [
+        "shared parity",
+        "Wilson X",
+        "Wilson Y",
+        "Wilson Z"
+      ],
+      "matter_pair_count": 1295,
+      "ordinary_gauge_inputs": 215,
+      "pass": true,
+      "raw_G_tree_code_is_sector_diagonal_not_topological_identity": true,
+      "raw_gauge_generators_with_topological_Z": 108,
+      "raw_matter_generators_with_topological_Z": 108,
+      "raw_matter_topological_character_categories": {
+        "A_outer_square_seam": 108
+      },
+      "raw_topological_X_failures": 0,
+      "root_to_topological_Z_failures": 0,
+      "route": "C_direct_sum_full_E",
+      "split": "train",
+      "stabilizer_reference_failures": 0,
+      "target_inputs": 1296,
+      "topological_canonical_pairing_failures": 0,
+      "topological_gauge_inputs": 3,
+      "topological_plus_state_required_by_isometry": false,
+      "work_M2": 0
+    },
+    {
+      "M2_labels": 7642,
+      "Wilson_character_correction_is_supplied_global_chart": true,
+      "all_eight_topological_Z_basis_sectors_in_domain": true,
+      "arbitrary_coherent_topological_input": true,
+      "blank_inputs": 5239,
+      "coarse_cells": 343,
+      "corrected_gauge_partition_failures": 0,
+      "corrected_matter_partition_failures": 0,
+      "corrected_target_algebra_is_topological_spectator": true,
+      "elapsed_seconds": 45.616212915978394,
+      "encoder_factor_count": 398882,
+      "encoder_factor_counts": {
+        "CNOT": 251667,
+        "H": 77393,
+        "S": 69822
+      },
+      "encoder_factor_sha256": "ed612400436efc4417b27097e4751493ea7567b8ab36ac04b549c09cef174b48",
+      "encoder_factors_per_cell": 1162.9212827988338,
+      "exact_partition": true,
+      "gauge_pair_count": 342,
+      "length": 7,
+      "matter_and_gauge_radicals": [
+        "shared parity",
+        "Wilson X",
+        "Wilson Y",
+        "Wilson Z"
+      ],
+      "matter_pair_count": 2057,
+      "ordinary_gauge_inputs": 342,
+      "pass": true,
+      "raw_G_tree_code_is_sector_diagonal_not_topological_identity": true,
+      "raw_gauge_generators_with_topological_Z": 147,
+      "raw_matter_generators_with_topological_Z": 147,
+      "raw_matter_topological_character_categories": {
+        "A_outer_square_seam": 147
+      },
+      "raw_topological_X_failures": 0,
+      "root_to_topological_Z_failures": 0,
+      "route": "C_direct_sum_full_E",
+      "split": "held-out-no-refit",
+      "stabilizer_reference_failures": 0,
+      "target_inputs": 2058,
+      "topological_canonical_pairing_failures": 0,
+      "topological_gauge_inputs": 3,
+      "topological_plus_state_required_by_isometry": false,
+      "work_M2": 0
+    }
+  ],
+  "route_C_physical_distance_audit": [
+    {
+      "all_factors_bounded_by_finite_torus_diameter": true,
+      "distance_greater_than_one": 9569,
+      "distance_one": 3,
+      "fine_grid_period": 387,
+      "length": 3,
+      "maximum_periodic_fine_L1": 459,
+      "p50_p90_p99": [
+        149,
+        383,
+        451
+      ],
+      "route": "C_direct_sum_full_E",
+      "two_qubit_factors": 9572
+    },
+    {
+      "all_factors_bounded_by_finite_torus_diameter": true,
+      "distance_greater_than_one": 133052,
+      "distance_one": 6,
+      "fine_grid_period": 774,
+      "length": 6,
+      "maximum_periodic_fine_L1": 1161,
+      "p50_p90_p99": [
+        375,
+        649,
+        963
+      ],
+      "route": "C_direct_sum_full_E",
+      "two_qubit_factors": 133058
+    },
+    {
+      "all_factors_bounded_by_finite_torus_diameter": true,
+      "distance_greater_than_one": 251654,
+      "distance_one": 13,
+      "fine_grid_period": 903,
+      "length": 7,
+      "maximum_periodic_fine_L1": 1231,
+      "p50_p90_p99": [
+        391,
+        778,
+        1036
+      ],
+      "route": "C_direct_sum_full_E",
+      "two_qubit_factors": 251667
+    }
+  ],
+  "route_disposition": {
+    "A": "PASS_PLUS3_DIRECT_SUM_CENTER__RAW_SPECTATOR_M8_NARROWLY_FALSIFIED",
+    "B": "PASS_LOCAL_LINK_GAUGE_COVARIANCE__COUPLED_LOCAL_E_OPEN",
+    "C": "PASS_FINITE_ARBITRARY_SECTOR_E__GLOBAL_CHARACTER_CHART_SUPPLIED"
+  },
+  "runner_sha256": "7c428845a95f3b79dd525be70fd8f9c3e41076130e173a372b0c22c825684dde",
+  "shared_obstruction_claim": false,
+  "shared_obstruction_gate": "FAIL / DO NOT SHIP",
+  "shared_obstruction_shipped": false,
+  "shared_route_independent_obstruction": false,
+  "six_wall_ledger": {
+    "C_int": "corrected update composes; raw update sector-conditioned outside +++",
+    "C_local": "local link constraints/all24/all576; local tree-link E open and Route C nonlocal",
+    "C_num": "exact ranks/centers/factors/seam; no empirical/Born normalization",
+    "C_ref": "three arbitrary topological inputs; chart/blanks/schedule supplied",
+    "C_source": "resources explicit; no source/stress/energy/gravity",
+    "C_wrap": "explicit sectors/local holonomies; autonomous flux genesis/coupled E open"
+  },
+  "status": "positive direct-sum topological-input algebra with narrow raw-spectator falsifier; strict local coupled compiler open",
+  "strict_physical_local_M2_compiler_claimed": false,
+  "strict_success_criterion_met": false,
+  "strongest_constructive_result": "finite exact arbitrary-three-qubit-topological-input supplied-chart E with corrected six-mode even-CAR algebra and inherited mass/contact/seam/update fixtures, plus a separately local gauge-covariant Z2 link comparator",
+  "supplied_structure_inventory": {
+    "Cycle642_Cycle647_committed_algebra": true,
+    "Wilson_character_correction_table": true,
+    "autonomous_topological_genesis": false,
+    "blank_pivot_root_order_schedule": true,
+    "finite_L3_L6_L7": true,
+    "fixed_plus_plus_plus_required_for_uncorrected_original_interface": true,
+    "fixed_topological_plus_state_required_for_E": false,
+    "global_Jordan_Wigner_order": false,
+    "local_flat_Z2_link_code": true,
+    "nonlocal_parity_service": false,
+    "three_omitted_root_faces": true,
+    "topological_input_chart": true
+  },
+  "tests_failed": 0,
+  "tests_passed": 16,
+  "top_level_claim_gate_contract": {
+    "Status": true,
+    "flags": true,
+    "gates": true,
+    "pass": true,
+    "strict_physical_claim_false": true,
+    "strict_success_false": true,
+    "strongest_constructive_result_nonempty": true
+  },
+  "topological_input_covariance": {
+    "Z2_orientation_sign_requires_no_extra_label": true,
+    "all576_group_failures": 0,
+    "axis_bijection_failures": 0,
+    "compile_time_encoder_transport": "E_R = F_R E C_R^dagger with the three topological input wires permuted by the axis action",
+    "frame_products": 576,
+    "pass": true,
+    "proper_cubic_frames": 24,
+    "runtime_frame_selector": false
+  },
+  "update_interface": {
+    "B_coefficient_failures": 0,
+    "Cycle219_mass_residual": 2.220446049250313e-16,
+    "Cycle230_plus_minus_seam_singular_residual": 1.4174378709434725e-15,
+    "Cycle230_seam_subchecks": {
+      "fail": 0,
+      "pass": 6
+    },
+    "E_Gcoarse_equals_Gcorrected_E_on_all_topological_inputs": true,
+    "FSWAP_matrix_residual": 0.0,
+    "G_corrected_is_supplied_Wilson_character_chart_not_derived_autonomous_law": true,
+    "contact_active_states": 15,
+    "contact_deletion_residual": 0.36789306705608243,
+    "corrected_generator_polynomial_rule": "Wilson-character-corrected complete matter generators are target-only, so multiplication and linearity compose the inherited coarse polynomial on every topological input",
+    "onsite_residual": 5.272182555577386e-15,
+    "pass": true,
+    "permission_to_redefine_G_coarse_claimed": false,
+    "raw_G_tree_code_equals_original_coarse_interface_only_in_supplied_plus_plus_plus_sector": true,
+    "raw_other_sectors_are_spin_character_conditioned_channels_not_silently_the_same_coarse_theory": true
+  }
+}

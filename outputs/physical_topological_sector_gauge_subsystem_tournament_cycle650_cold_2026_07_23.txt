@@ -1,0 +1,25 @@
+PASS immutable Cycle647 shore is byte exact :: {'files': 4, 'mismatches': []}
+PASS L3 orbit-split tree roles are injective in K129 and covariant all24/all576 with translated L3/L6/L7 ownership :: {'logical_aux_edges': 9, 'physical_aux_M2': 48, 'abstract_role_orbits': 2, 'role_copy_multiplicity_histogram': {8: 3, 4: 6}, 'all24_fiber_covariance_failures': 0, 'all576_label_group_failures': 0}
+PASS L3 Route A exact topological-center algebra :: {'rank': 451, 'k': 191, 'matter': (326, 322)}
+PASS L3 Route B local flat-link gauge covariance :: {'rank': 78, 'hops': 972}
+PASS L3 Route C arbitrary-sector full E :: {'factors': 20243, 'raw_matter_topo': 27}
+PASS L6 orbit-split tree roles are injective in K129 and covariant all24/all576 with translated L3/L6/L7 ownership :: {'logical_aux_edges': 18, 'physical_aux_M2': 96, 'abstract_role_orbits': 4, 'role_copy_multiplicity_histogram': {8: 6, 4: 12}, 'all24_fiber_covariance_failures': 0, 'all576_label_group_failures': 0}
+PASS L6 Route A exact topological-center algebra :: {'rank': 3334, 'k': 1514, 'matter': (2594, 2590)}
+PASS L6 Route B local flat-link gauge covariance :: {'rank': 645, 'hops': 7776}
+PASS L6 Route C arbitrary-sector full E :: {'factors': 222642, 'raw_matter_topo': 108}
+PASS L7 orbit-split tree roles are injective in K129 and covariant all24/all576 with translated L3/L6/L7 ownership :: {'logical_aux_edges': 21, 'physical_aux_M2': 96, 'abstract_role_orbits': 4, 'role_copy_multiplicity_histogram': {8: 3, 4: 18}, 'all24_fiber_covariance_failures': 0, 'all576_label_group_failures': 0}
+PASS L7 Route A exact topological-center algebra :: {'rank': 5239, 'k': 2403, 'matter': (4118, 4114)}
+PASS L7 Route B local flat-link gauge covariance :: {'rank': 1026, 'hops': 12348}
+PASS L7 Route C arbitrary-sector full E :: {'factors': 398882, 'raw_matter_topo': 147}
+PASS Cycle642 labels and topological-axis inputs close all24/all576 :: {'labels': [{'length': 3, 'extended_M2': 642, 'frame_label_failures': 0, 'all576_extended_permutation_group_failures': 0}, {'length': 6, 'extended_M2': 4848, 'frame_label_failures': 0, 'all576_extended_permutation_group_failures': 0}, {'length': 7, 'extended_M2': 7642, 'frame_label_failures': 0, 'all576_extended_permutation_group_failures': 0}], 'topological': {'proper_cubic_frames': 24, 'frame_products': 576, 'axis_bijection_failures': 0, 'all576_group_failures': 0, 'Z2_orientation_sign_requires_no_extra_label': True, 'compile_time_encoder_transport': 'E_R = F_R E C_R^dagger with the three topological input wires permuted by the axis action', 'runtime_frame_selector': False, 'pass': True}}
+PASS Route C inverse, deletion, and optional +++ controls :: {'inverse': 3, 'deletions': 3}
+PASS corrected update fixtures and plus/minus seam comparator :: {'seam': 1.4174378709434725e-15}
+PASS canonical N1-N8 and negative gates :: {'Status_PASS': True, 'gates': True, 'flags': True, 'N1': True, 'N2': True, 'N4': True, 'N5': True, 'N6': True, 'N8': True, 'pass': True}
+PASS top-level gates, strict fields, and shipped flags :: {'Status': True, 'gates': True, 'flags': True, 'strongest_constructive_result_nonempty': True, 'strict_success_false': True, 'strict_physical_claim_false': True, 'pass': True}
+PASS note contract :: []
+{
+  "pass": true,
+  "tests": "16/16",
+  "elapsed": 216.17203404195607,
+  "receipt": "/private/tmp/toe-science.BB0KQV/outputs/physical_topological_sector_gauge_subsystem_tournament_cycle650_receipt_2026_07_23.json"
+}

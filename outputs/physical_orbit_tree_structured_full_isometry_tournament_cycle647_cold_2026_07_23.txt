@@ -1,0 +1,27 @@
+PASS immutable reviewed Cycle642/643 quartet shores are byte exact :: {'files': 6, 'mismatches': []}
+PASS L3 orbit-split tree roles are injective in K129 and covariant all24/all576 with translated L3/L6/L7 ownership :: {'logical_aux_edges': 9, 'physical_aux_M2': 48, 'abstract_role_orbits': 2, 'role_copy_multiplicity_histogram': {8: 3, 4: 6}, 'all24_fiber_covariance_failures': 0, 'all576_label_group_failures': 0}
+PASS L3 A_local_peel exact full orbit-tree isometry :: {'factors': 14150, 'per_cell': 524.074074074074, 'seconds': 0.2708561670733616}
+PASS L3 B_generic_all exact full orbit-tree isometry :: {'factors': 19437, 'per_cell': 719.8888888888889, 'seconds': 0.17834824998863041}
+PASS L3 C_hybrid exact full orbit-tree isometry :: {'factors': 17325, 'per_cell': 641.6666666666666, 'seconds': 0.17268366692587733}
+PASS L6 orbit-split tree roles are injective in K129 and covariant all24/all576 with translated L3/L6/L7 ownership :: {'logical_aux_edges': 18, 'physical_aux_M2': 96, 'abstract_role_orbits': 4, 'role_copy_multiplicity_histogram': {8: 6, 4: 12}, 'all24_fiber_covariance_failures': 0, 'all576_label_group_failures': 0}
+PASS L6 A_local_peel exact full orbit-tree isometry :: {'factors': 154012, 'per_cell': 713.0185185185185, 'seconds': 18.56611129094381}
+PASS L6 B_generic_all exact full orbit-tree isometry :: {'factors': 219457, 'per_cell': 1016.0046296296297, 'seconds': 14.106950459070504}
+PASS L6 C_hybrid exact full orbit-tree isometry :: {'factors': 240389, 'per_cell': 1112.912037037037, 'seconds': 13.873503334005363}
+PASS L7 orbit-split tree roles are injective in K129 and covariant all24/all576 with translated L3/L6/L7 ownership :: {'logical_aux_edges': 21, 'physical_aux_M2': 96, 'abstract_role_orbits': 4, 'role_copy_multiplicity_histogram': {8: 3, 4: 18}, 'all24_fiber_covariance_failures': 0, 'all576_label_group_failures': 0}
+PASS L7 A_local_peel exact full orbit-tree isometry :: {'factors': 254721, 'per_cell': 742.6268221574344, 'seconds': 55.875525624956936}
+PASS L7 B_generic_all exact full orbit-tree isometry :: {'factors': 394922, 'per_cell': 1151.3760932944606, 'seconds': 44.55807879206259}
+PASS L7 C_hybrid exact full orbit-tree isometry :: {'factors': 506184, 'per_cell': 1475.7551020408164, 'seconds': 43.84339729195926}
+PASS extended orbit-tree labels close under all24/all576 :: [{'length': 3, 'extended_M2': 642, 'frame_label_failures': 0, 'all576_extended_permutation_group_failures': 0}, {'length': 6, 'extended_M2': 4848, 'frame_label_failures': 0, 'all576_extended_permutation_group_failures': 0}, {'length': 7, 'extended_M2': 7642, 'frame_label_failures': 0, 'all576_extended_permutation_group_failures': 0}]
+PASS all routes compose the inherited full-Fock update on code :: [{'route': 'A_local_peel', 'generator_failures': 0, 'E_Gcoarse_equals_Gtree_code_E_on_declared_code': True}, {'route': 'B_generic_all', 'generator_failures': 0, 'E_Gcoarse_equals_Gtree_code_E_on_declared_code': True}, {'route': 'C_hybrid', 'generator_failures': 0, 'E_Gcoarse_equals_Gtree_code_E_on_declared_code': True}]
+PASS inverse and representative factor deletions are exact/detected :: {'inverse': 9, 'deletions': 9}
+PASS face deletion, orbit-copy disconnection, and malformed incidence expose independent residuals :: {'full_rank': 454, 'delete_one_face_rank': 453, 'deleted_face_rank_loss': 1, 'deleted_face_old_Wilson_rank_increment': 1, 'disconnect_one_repetition_copy_rank': 453, 'disconnected_copy_rank_loss': 1, 'malformed_one-copy_face_equality_syndromes': 7, 'pass': True}
+PASS Cycle642 tree face/fiber deletion and malformed incidence remain detected :: {'full_rank': 454, 'delete_one_face_rank': 453, 'deleted_face_rank_loss': 1, 'deleted_face_old_Wilson_rank_increment': 1, 'disconnect_one_repetition_copy_rank': 453, 'disconnected_copy_rank_loss': 1, 'malformed_one-copy_face_equality_syndromes': 7, 'pass': True}
+PASS canonical N1-N8 and negative-promotion gates are machine enforced :: {'Status_PASS': True, 'promotion_gates_fail': True, 'claim_flags_false': True, 'N1_count_below_negative_threshold': True, 'N1_markers_exact': True, 'N2_directed_pairs': True, 'N4_fields': True, 'N5_fields': True, 'N6_fields': True, 'N8_fields': True, 'pass': True}
+PASS top-level Status, negative gates, shipped flags, and strict-local firewall are machine enforced :: {'Status_PASS': True, 'promotion_gates_fail': True, 'claim_flags_false': True, 'strict_physical_local_compiler_not_claimed': True, 'pass': True}
+PASS note contract preserves scope and semantic firewalls :: []
+{
+  "pass": true,
+  "tests": "17/17",
+  "elapsed": 335.48367283307016,
+  "receipt": "/private/tmp/toe-science.BB0KQV/outputs/physical_orbit_tree_structured_full_isometry_tournament_cycle647_receipt_2026_07_23.json"
+}

@@ -1,0 +1,1391 @@
+{
+  "Status": "PASS",
+  "audit": "unset",
+  "author_accepted": false,
+  "author_artifact_status_accepted": false,
+  "authority": "none",
+  "axiom_pressure": false,
+  "axiom_pressure_claim": false,
+  "axiom_pressure_gate": "FAIL / DO NOT SHIP",
+  "axiom_pressure_shipped": false,
+  "breakthrough": false,
+  "broad_negative_gate": "FAIL / DO NOT SHIP",
+  "broad_negative_shipped": false,
+  "broad_no_go_claim": false,
+  "canonical_claim_gate_contract": {
+    "N1_count_below_negative_threshold": true,
+    "N1_markers_exact": true,
+    "N2_directed_pairs": true,
+    "N4_fields": true,
+    "N5_fields": true,
+    "N6_fields": true,
+    "N8_fields": true,
+    "Status_PASS": true,
+    "claim_flags_false": true,
+    "pass": true,
+    "promotion_gates_fail": true
+  },
+  "classification": "three-route constructive finite isometry tournament",
+  "constitutional_effect": "none",
+  "cycle": 647,
+  "date": "2026-07-23",
+  "elapsed_seconds": 335.48367283307016,
+  "factor_program_scaling_firewall": {
+    "A_local_peel": {
+      "L_independent_physical_range_theorem": false,
+      "all_L_O_N_theorem": false,
+      "bounded_depth_theorem": false,
+      "constant_factors_per_cell_theorem": false,
+      "factor_counts": [
+        14150,
+        154012,
+        254721
+      ],
+      "factors_per_cell": [
+        524.074074074074,
+        713.0185185185185,
+        742.6268221574344
+      ],
+      "maximum_fine_L1": [
+        407,
+        1161,
+        1181
+      ]
+    },
+    "B_generic_all": {
+      "L_independent_physical_range_theorem": false,
+      "all_L_O_N_theorem": false,
+      "bounded_depth_theorem": false,
+      "constant_factors_per_cell_theorem": false,
+      "factor_counts": [
+        19437,
+        219457,
+        394922
+      ],
+      "factors_per_cell": [
+        719.8888888888889,
+        1016.0046296296297,
+        1151.3760932944606
+      ],
+      "maximum_fine_L1": [
+        459,
+        1161,
+        1231
+      ]
+    },
+    "C_hybrid": {
+      "L_independent_physical_range_theorem": false,
+      "all_L_O_N_theorem": false,
+      "bounded_depth_theorem": false,
+      "constant_factors_per_cell_theorem": false,
+      "factor_counts": [
+        17325,
+        240389,
+        506184
+      ],
+      "factors_per_cell": [
+        641.6666666666666,
+        1112.912037037037,
+        1475.7551020408164
+      ],
+      "maximum_fine_L1": [
+        419,
+        1161,
+        1165
+      ]
+    }
+  },
+  "fixed_K129_placements": {
+    "3": {
+      "Cycle532_rescaled_old_role_collisions": 0,
+      "Cycle629_638_dynamic_geometry_collisions": 0,
+      "Cycle629_638_marker_role_collisions": 0,
+      "Cycle638_inner_program_role_collisions": 0,
+      "abstract_role_orbits": 2,
+      "all24_fiber_covariance_failures": 0,
+      "all576_label_group_failures": 0,
+      "injective_role_collisions": 0,
+      "length": 3,
+      "logical_aux_edges": 9,
+      "orbit_rows": [
+        {
+          "abstract_orbit_size": 3,
+          "physical_orbit_size": 24,
+          "physical_seed": [
+            64,
+            1,
+            2
+          ],
+          "representative": [
+            0,
+            "root",
+            0
+          ],
+          "role_stabilizer_size": 8
+        },
+        {
+          "abstract_orbit_size": 6,
+          "physical_orbit_size": 24,
+          "physical_seed": [
+            64,
+            1,
+            3
+          ],
+          "representative": [
+            0,
+            "root",
+            1
+          ],
+          "role_stabilizer_size": 4
+        }
+      ],
+      "pass": true,
+      "physical_aux_M2": 48,
+      "placement_bound": "all cap roles lie on max|coordinate|=64 shell of one supplied K129 block",
+      "role_copy_multiplicity_histogram": {
+        "4": 6,
+        "8": 3
+      },
+      "translated_L3_L6_L7": {
+        "3": {
+          "collisions": 0,
+          "motif_copies": 27,
+          "placed_roles": 1296
+        },
+        "6": {
+          "collisions": 0,
+          "motif_copies": 216,
+          "placed_roles": 10368
+        },
+        "7": {
+          "collisions": 0,
+          "motif_copies": 343,
+          "placed_roles": 16464
+        }
+      }
+    },
+    "6": {
+      "Cycle532_rescaled_old_role_collisions": 0,
+      "Cycle629_638_dynamic_geometry_collisions": 0,
+      "Cycle629_638_marker_role_collisions": 0,
+      "Cycle638_inner_program_role_collisions": 0,
+      "abstract_role_orbits": 4,
+      "all24_fiber_covariance_failures": 0,
+      "all576_label_group_failures": 0,
+      "injective_role_collisions": 0,
+      "length": 6,
+      "logical_aux_edges": 18,
+      "orbit_rows": [
+        {
+          "abstract_orbit_size": 3,
+          "physical_orbit_size": 24,
+          "physical_seed": [
+            64,
+            1,
+            2
+          ],
+          "representative": [
+            0,
+            "root",
+            0
+          ],
+          "role_stabilizer_size": 8
+        },
+        {
+          "abstract_orbit_size": 6,
+          "physical_orbit_size": 24,
+          "physical_seed": [
+            64,
+            1,
+            3
+          ],
+          "representative": [
+            0,
+            "root",
+            1
+          ],
+          "role_stabilizer_size": 4
+        },
+        {
+          "abstract_orbit_size": 3,
+          "physical_orbit_size": 24,
+          "physical_seed": [
+            64,
+            1,
+            4
+          ],
+          "representative": [
+            0,
+            "root",
+            3
+          ],
+          "role_stabilizer_size": 8
+        },
+        {
+          "abstract_orbit_size": 6,
+          "physical_orbit_size": 24,
+          "physical_seed": [
+            64,
+            1,
+            5
+          ],
+          "representative": [
+            0,
+            1,
+            2
+          ],
+          "role_stabilizer_size": 4
+        }
+      ],
+      "pass": true,
+      "physical_aux_M2": 96,
+      "placement_bound": "all cap roles lie on max|coordinate|=64 shell of one supplied K129 block",
+      "role_copy_multiplicity_histogram": {
+        "4": 12,
+        "8": 6
+      },
+      "translated_L3_L6_L7": {
+        "3": {
+          "collisions": 0,
+          "motif_copies": 27,
+          "placed_roles": 2592
+        },
+        "6": {
+          "collisions": 0,
+          "motif_copies": 216,
+          "placed_roles": 20736
+        },
+        "7": {
+          "collisions": 0,
+          "motif_copies": 343,
+          "placed_roles": 32928
+        }
+      }
+    },
+    "7": {
+      "Cycle532_rescaled_old_role_collisions": 0,
+      "Cycle629_638_dynamic_geometry_collisions": 0,
+      "Cycle629_638_marker_role_collisions": 0,
+      "Cycle638_inner_program_role_collisions": 0,
+      "abstract_role_orbits": 4,
+      "all24_fiber_covariance_failures": 0,
+      "all576_label_group_failures": 0,
+      "injective_role_collisions": 0,
+      "length": 7,
+      "logical_aux_edges": 21,
+      "orbit_rows": [
+        {
+          "abstract_orbit_size": 3,
+          "physical_orbit_size": 24,
+          "physical_seed": [
+            64,
+            1,
+            2
+          ],
+          "representative": [
+            0,
+            "root",
+            0
+          ],
+          "role_stabilizer_size": 8
+        },
+        {
+          "abstract_orbit_size": 6,
+          "physical_orbit_size": 24,
+          "physical_seed": [
+            64,
+            1,
+            3
+          ],
+          "representative": [
+            0,
+            "root",
+            1
+          ],
+          "role_stabilizer_size": 4
+        },
+        {
+          "abstract_orbit_size": 6,
+          "physical_orbit_size": 24,
+          "physical_seed": [
+            64,
+            1,
+            4
+          ],
+          "representative": [
+            0,
+            1,
+            2
+          ],
+          "role_stabilizer_size": 4
+        },
+        {
+          "abstract_orbit_size": 6,
+          "physical_orbit_size": 24,
+          "physical_seed": [
+            64,
+            1,
+            5
+          ],
+          "representative": [
+            0,
+            2,
+            3
+          ],
+          "role_stabilizer_size": 4
+        }
+      ],
+      "pass": true,
+      "physical_aux_M2": 96,
+      "placement_bound": "all cap roles lie on max|coordinate|=64 shell of one supplied K129 block",
+      "role_copy_multiplicity_histogram": {
+        "4": 18,
+        "8": 3
+      },
+      "translated_L3_L6_L7": {
+        "3": {
+          "collisions": 0,
+          "motif_copies": 27,
+          "placed_roles": 2592
+        },
+        "6": {
+          "collisions": 0,
+          "motif_copies": 216,
+          "placed_roles": 20736
+        },
+        "7": {
+          "collisions": 0,
+          "motif_copies": 343,
+          "placed_roles": 32928
+        }
+      }
+    }
+  },
+  "highest_honest_terminal": "complete literal finite L3/L6/L7 supplied-chart H/S/CNOT E for Cycle642 orbit-tree code on all three routes, with physically placed labels but nonlocal compile factors; not a strict physical local M2 compiler",
+  "immutable_shore": {
+    "observed": {
+      "docs/work_history/repo/review_feedback/ABSTRACT_FILL_DISK_FULL_TABLEAU_ISOMETRY_CYCLE643_NOTE_2026-07-23.md": "e28a55a8312ae9cf4b9048f8b07557602e5a223cc6da487eeddd8b730a982d8f",
+      "docs/work_history/repo/review_feedback/PHYSICAL_FIXED_CUBIC_WILSON_FILL_INCIDENCE_CYCLE642_NOTE_2026-07-23.md": "13f8074746f3b5e978f971567bbebecd1006ccd13b7d5fe91a0e38a946d30d3e",
+      "outputs/abstract_fill_disk_full_tableau_isometry_cycle643_receipt_2026_07_23.json": "d87bf3c90cd0016073cd5f3259f5d8c45c81dbc0796174361057ef5edd07cbec",
+      "outputs/physical_fixed_cubic_wilson_fill_incidence_cycle642_receipt_2026_07_23.json": "9251ac323d4f26b672783fa8ed01dc8da6f3059c308d37325b3d7984969c3b37",
+      "scripts/abstract_fill_disk_full_tableau_isometry_cycle643_2026_07_23.py": "e64afbb2e7b97b02c90adc3245b92008f8a18b026efe3d5e1ff65cd363295c94",
+      "scripts/physical_fixed_cubic_wilson_fill_incidence_cycle642_2026_07_23.py": "fb0d8366494066e4191d66b9a2d83180cd99bf6f622b9de355bf28494e050bf7"
+    },
+    "pins": {
+      "docs/work_history/repo/review_feedback/ABSTRACT_FILL_DISK_FULL_TABLEAU_ISOMETRY_CYCLE643_NOTE_2026-07-23.md": "e28a55a8312ae9cf4b9048f8b07557602e5a223cc6da487eeddd8b730a982d8f",
+      "docs/work_history/repo/review_feedback/PHYSICAL_FIXED_CUBIC_WILSON_FILL_INCIDENCE_CYCLE642_NOTE_2026-07-23.md": "13f8074746f3b5e978f971567bbebecd1006ccd13b7d5fe91a0e38a946d30d3e",
+      "outputs/abstract_fill_disk_full_tableau_isometry_cycle643_receipt_2026_07_23.json": "d87bf3c90cd0016073cd5f3259f5d8c45c81dbc0796174361057ef5edd07cbec",
+      "outputs/physical_fixed_cubic_wilson_fill_incidence_cycle642_receipt_2026_07_23.json": "9251ac323d4f26b672783fa8ed01dc8da6f3059c308d37325b3d7984969c3b37",
+      "scripts/abstract_fill_disk_full_tableau_isometry_cycle643_2026_07_23.py": "e64afbb2e7b97b02c90adc3245b92008f8a18b026efe3d5e1ff65cd363295c94",
+      "scripts/physical_fixed_cubic_wilson_fill_incidence_cycle642_2026_07_23.py": "fb0d8366494066e4191d66b9a2d83180cd99bf6f622b9de355bf28494e050bf7"
+    },
+    "ref": "99b98a6fd2c823734e98487bf67daa8fef79dd92",
+    "working_tree_bytes_used_as_premise": false
+  },
+  "inherited_full_Fock_update": {
+    "B_coefficient_failures": 0,
+    "Cycle219_mass_residual": 2.220446049250313e-16,
+    "Cycle230_seam_subchecks": {
+      "fail": 0,
+      "pass": 6
+    },
+    "FSWAP_matrix_residual": 0.0,
+    "coin_onsite_residual": 5.272182555577386e-15,
+    "composition_level": "complete generator and polynomial algebra on the declared Cycle642 code space",
+    "contact_active_two_particle_states": 15,
+    "contact_deletion_residual": 0.36789306705608243,
+    "pass": true,
+    "routes": [
+      {
+        "E_Gcoarse_equals_Gtree_code_E_on_declared_code": true,
+        "generator_failures": 0,
+        "route": "A_local_peel"
+      },
+      {
+        "E_Gcoarse_equals_Gtree_code_E_on_declared_code": true,
+        "generator_failures": 0,
+        "route": "B_generic_all"
+      },
+      {
+        "E_Gcoarse_equals_Gtree_code_E_on_declared_code": true,
+        "generator_failures": 0,
+        "route": "C_hybrid"
+      }
+    ],
+    "strict_local_physical_M2_update_claimed": false
+  },
+  "inverse_deletion_malformed_controls": {
+    "circuit": {
+      "factorwise_inverse_rules": {
+        "CNOT": "CNOT",
+        "H": "H",
+        "S": "S S S"
+      },
+      "inverse_rows": [
+        {
+          "failures": 0,
+          "length": 3,
+          "probes": 30,
+          "route": "A_local_peel"
+        },
+        {
+          "failures": 0,
+          "length": 3,
+          "probes": 28,
+          "route": "B_generic_all"
+        },
+        {
+          "failures": 0,
+          "length": 3,
+          "probes": 28,
+          "route": "C_hybrid"
+        },
+        {
+          "failures": 0,
+          "length": 6,
+          "probes": 28,
+          "route": "A_local_peel"
+        },
+        {
+          "failures": 0,
+          "length": 6,
+          "probes": 26,
+          "route": "B_generic_all"
+        },
+        {
+          "failures": 0,
+          "length": 6,
+          "probes": 28,
+          "route": "C_hybrid"
+        },
+        {
+          "failures": 0,
+          "length": 7,
+          "probes": 30,
+          "route": "A_local_peel"
+        },
+        {
+          "failures": 0,
+          "length": 7,
+          "probes": 26,
+          "route": "B_generic_all"
+        },
+        {
+          "failures": 0,
+          "length": 7,
+          "probes": 28,
+          "route": "C_hybrid"
+        }
+      ],
+      "optional_plus_gauge_vacuum_controls": [
+        {
+          "base_stabilizer_rank": 454,
+          "delete_one_gauge_reference_rank": 479,
+          "gauge_references": 26,
+          "gauge_vacuum_matter_commutator_failures": 0,
+          "length": 3,
+          "minus_gauge_reference_consistent_but_refused_by_plus_fixture": true,
+          "minus_gauge_reference_rank": 480,
+          "pass": true,
+          "phase_inconsistencies": {
+            "base": 0,
+            "deleted": 0,
+            "flipped_stabilizer": 15,
+            "minus_gauge": 0,
+            "vacuum": 0
+          },
+          "route": "A_local_peel",
+          "stabilizer_plus_gauge_vacuum_rank": 480
+        },
+        {
+          "base_stabilizer_rank": 454,
+          "delete_one_gauge_reference_rank": 479,
+          "gauge_references": 26,
+          "gauge_vacuum_matter_commutator_failures": 0,
+          "length": 3,
+          "minus_gauge_reference_consistent_but_refused_by_plus_fixture": true,
+          "minus_gauge_reference_rank": 480,
+          "pass": true,
+          "phase_inconsistencies": {
+            "base": 0,
+            "deleted": 0,
+            "flipped_stabilizer": 15,
+            "minus_gauge": 0,
+            "vacuum": 0
+          },
+          "route": "B_generic_all",
+          "stabilizer_plus_gauge_vacuum_rank": 480
+        },
+        {
+          "base_stabilizer_rank": 454,
+          "delete_one_gauge_reference_rank": 479,
+          "gauge_references": 26,
+          "gauge_vacuum_matter_commutator_failures": 0,
+          "length": 3,
+          "minus_gauge_reference_consistent_but_refused_by_plus_fixture": true,
+          "minus_gauge_reference_rank": 480,
+          "pass": true,
+          "phase_inconsistencies": {
+            "base": 0,
+            "deleted": 0,
+            "flipped_stabilizer": 15,
+            "minus_gauge": 0,
+            "vacuum": 0
+          },
+          "route": "C_hybrid",
+          "stabilizer_plus_gauge_vacuum_rank": 480
+        }
+      ],
+      "pass": true,
+      "representative_factor_deletions": [
+        {
+          "detected": true,
+          "factor_index": 0,
+          "kind": "H",
+          "route": "A_local_peel",
+          "stabilizer_failures": 33129438171832885106364402359377907783978654692304906342386644914649833600812430700815222069778474238930691603437411363203344354533833140763252162501394353329192105716172744722260021
+        },
+        {
+          "detected": true,
+          "factor_index": 105,
+          "kind": "S",
+          "route": "A_local_peel",
+          "stabilizer_failures": 5
+        },
+        {
+          "detected": true,
+          "factor_index": 8,
+          "kind": "CNOT",
+          "route": "A_local_peel",
+          "stabilizer_failures": 713197988401420664744320101571918322830264196166668842186753603540580951961593587662449649037783464643284011761317323140724166591086398881043056612113337508713640622459634449383424
+        },
+        {
+          "detected": true,
+          "factor_index": 0,
+          "kind": "H",
+          "route": "B_generic_all",
+          "stabilizer_failures": 9
+        },
+        {
+          "detected": true,
+          "factor_index": 4,
+          "kind": "S",
+          "route": "B_generic_all",
+          "stabilizer_failures": 5
+        },
+        {
+          "detected": true,
+          "factor_index": 1,
+          "kind": "CNOT",
+          "route": "B_generic_all",
+          "stabilizer_failures": 826319960987810748689894135040963799785505853705351524105810994093007239045389182281486513049644106059489015031279197880434
+        },
+        {
+          "detected": true,
+          "factor_index": 0,
+          "kind": "H",
+          "route": "C_hybrid",
+          "stabilizer_failures": 33164026010563623420009361115769087898371775382899816675734787064639573934215514576364370741469371483741118790540529720066639362655718307050766431928557947833189762265709930071752725
+        },
+        {
+          "detected": true,
+          "factor_index": 105,
+          "kind": "S",
+          "route": "C_hybrid",
+          "stabilizer_failures": 5
+        },
+        {
+          "detected": true,
+          "factor_index": 8,
+          "kind": "CNOT",
+          "route": "C_hybrid",
+          "stabilizer_failures": 713197988401420664744320101571918322830264196166668842186753603540580951961593587662449649037783464643284011761317323140724166591086398881043056612113337508713640622459634449383424
+        }
+      ]
+    },
+    "tree_incidence": {
+      "delete_one_face_rank": 453,
+      "deleted_face_old_Wilson_rank_increment": 1,
+      "deleted_face_rank_loss": 1,
+      "disconnect_one_repetition_copy_rank": 453,
+      "disconnected_copy_rank_loss": 1,
+      "full_rank": 454,
+      "malformed_one-copy_face_equality_syndromes": 7,
+      "pass": true
+    }
+  },
+  "isometries": [
+    {
+      "M2_labels_per_cell": 23.77777777777778,
+      "all_displayed_stabilizer_reference_failures": 0,
+      "ancilla_X_leakage_failures": 0,
+      "blank_stabilizer_M2": 454,
+      "both_matter_parities_in_domain": true,
+      "coarse_cells": 27,
+      "code_exponent": 188,
+      "elapsed_seconds": 0.2708561670733616,
+      "encoder_factor_count": 14150,
+      "encoder_factor_counts": {
+        "CNOT": 5872,
+        "H": 3022,
+        "S": 5256
+      },
+      "encoder_factor_sha256": "d5fc8de47cf01241aeb12b6e15feb80d5965d6752e502db3c9467921e2c99d09",
+      "encoder_factors_per_cell": 524.074074074074,
+      "exact_partition": true,
+      "gauge_input_qubits": 26,
+      "gauge_partition_failures": 0,
+      "length": 3,
+      "logical_chart_factors": 4777,
+      "matter_partition_failures": 0,
+      "pass": true,
+      "physical_M2": 642,
+      "route": "A_local_peel",
+      "shared_parity_logical_match": true,
+      "split": "construction",
+      "stabilizer_decoder_factors": 5869,
+      "structured_cap_factors": 284,
+      "structured_rough_factors": 5585,
+      "target_Fock_input_qubits": 162,
+      "work_M2": 0
+    },
+    {
+      "M2_labels_per_cell": 23.77777777777778,
+      "all_displayed_stabilizer_reference_failures": 0,
+      "ancilla_X_leakage_failures": 0,
+      "blank_stabilizer_M2": 454,
+      "both_matter_parities_in_domain": true,
+      "coarse_cells": 27,
+      "code_exponent": 188,
+      "elapsed_seconds": 0.17834824998863041,
+      "encoder_factor_count": 19437,
+      "encoder_factor_counts": {
+        "CNOT": 9208,
+        "H": 4433,
+        "S": 5796
+      },
+      "encoder_factor_sha256": "ce21f66ecddeda7ab3916f161df688976f4d20107b5df917092031fdc10ca1d6",
+      "encoder_factors_per_cell": 719.8888888888889,
+      "exact_partition": true,
+      "gauge_input_qubits": 26,
+      "gauge_partition_failures": 0,
+      "length": 3,
+      "logical_chart_factors": 7324,
+      "matter_partition_failures": 0,
+      "pass": true,
+      "physical_M2": 642,
+      "route": "B_generic_all",
+      "shared_parity_logical_match": true,
+      "split": "construction",
+      "stabilizer_decoder_factors": 8249,
+      "structured_cap_factors": null,
+      "structured_rough_factors": null,
+      "target_Fock_input_qubits": 162,
+      "work_M2": 0
+    },
+    {
+      "M2_labels_per_cell": 23.77777777777778,
+      "all_displayed_stabilizer_reference_failures": 0,
+      "ancilla_X_leakage_failures": 0,
+      "blank_stabilizer_M2": 454,
+      "both_matter_parities_in_domain": true,
+      "coarse_cells": 27,
+      "code_exponent": 188,
+      "elapsed_seconds": 0.17268366692587733,
+      "encoder_factor_count": 17325,
+      "encoder_factor_counts": {
+        "CNOT": 8150,
+        "H": 3628,
+        "S": 5547
+      },
+      "encoder_factor_sha256": "dbec3cc6a7bcf16d52b20baf8d1e9e67eefeba692b64e5dea11a6a47f1f81425",
+      "encoder_factors_per_cell": 641.6666666666666,
+      "exact_partition": true,
+      "gauge_input_qubits": 26,
+      "gauge_partition_failures": 0,
+      "length": 3,
+      "logical_chart_factors": 5878,
+      "matter_partition_failures": 0,
+      "pass": true,
+      "physical_M2": 642,
+      "route": "C_hybrid",
+      "shared_parity_logical_match": true,
+      "split": "construction",
+      "stabilizer_decoder_factors": 7749,
+      "structured_cap_factors": 284,
+      "structured_rough_factors": 7465,
+      "target_Fock_input_qubits": 162,
+      "work_M2": 0
+    },
+    {
+      "M2_labels_per_cell": 22.444444444444443,
+      "all_displayed_stabilizer_reference_failures": 0,
+      "ancilla_X_leakage_failures": 0,
+      "blank_stabilizer_M2": 3337,
+      "both_matter_parities_in_domain": true,
+      "coarse_cells": 216,
+      "code_exponent": 1511,
+      "elapsed_seconds": 18.56611129094381,
+      "encoder_factor_count": 154012,
+      "encoder_factor_counts": {
+        "CNOT": 80074,
+        "H": 30735,
+        "S": 43203
+      },
+      "encoder_factor_sha256": "c7bf6ff6e862e27faa7f77a9a3482ab68c65ff6e0d48eb41eefe0ff3a862515a",
+      "encoder_factors_per_cell": 713.0185185185185,
+      "exact_partition": true,
+      "gauge_input_qubits": 215,
+      "gauge_partition_failures": 0,
+      "length": 6,
+      "logical_chart_factors": 66055,
+      "matter_partition_failures": 0,
+      "pass": true,
+      "physical_M2": 4848,
+      "route": "A_local_peel",
+      "shared_parity_logical_match": true,
+      "split": "train",
+      "stabilizer_decoder_factors": 59155,
+      "structured_cap_factors": 600,
+      "structured_rough_factors": 58555,
+      "target_Fock_input_qubits": 1296,
+      "work_M2": 0
+    },
+    {
+      "M2_labels_per_cell": 22.444444444444443,
+      "all_displayed_stabilizer_reference_failures": 0,
+      "ancilla_X_leakage_failures": 0,
+      "blank_stabilizer_M2": 3337,
+      "both_matter_parities_in_domain": true,
+      "coarse_cells": 216,
+      "code_exponent": 1511,
+      "elapsed_seconds": 14.106950459070504,
+      "encoder_factor_count": 219457,
+      "encoder_factor_counts": {
+        "CNOT": 131014,
+        "H": 44160,
+        "S": 44283
+      },
+      "encoder_factor_sha256": "80e8868d2bb57fa7f16b44759268df5baca8e1efad77ed4ed6392f337010d45b",
+      "encoder_factors_per_cell": 1016.0046296296297,
+      "exact_partition": true,
+      "gauge_input_qubits": 215,
+      "gauge_partition_failures": 0,
+      "length": 6,
+      "logical_chart_factors": 102494,
+      "matter_partition_failures": 0,
+      "pass": true,
+      "physical_M2": 4848,
+      "route": "B_generic_all",
+      "shared_parity_logical_match": true,
+      "split": "train",
+      "stabilizer_decoder_factors": 87441,
+      "structured_cap_factors": null,
+      "structured_rough_factors": null,
+      "target_Fock_input_qubits": 1296,
+      "work_M2": 0
+    },
+    {
+      "M2_labels_per_cell": 22.444444444444443,
+      "all_displayed_stabilizer_reference_failures": 0,
+      "ancilla_X_leakage_failures": 0,
+      "blank_stabilizer_M2": 3337,
+      "both_matter_parities_in_domain": true,
+      "coarse_cells": 216,
+      "code_exponent": 1511,
+      "elapsed_seconds": 13.873503334005363,
+      "encoder_factor_count": 240389,
+      "encoder_factor_counts": {
+        "CNOT": 142243,
+        "H": 54451,
+        "S": 43695
+      },
+      "encoder_factor_sha256": "31062c8894809d5077fd8f4a44dd7d52b0160d7c5e942be1f9fe3ea6d3b26c6b",
+      "encoder_factors_per_cell": 1112.912037037037,
+      "exact_partition": true,
+      "gauge_input_qubits": 215,
+      "gauge_partition_failures": 0,
+      "length": 6,
+      "logical_chart_factors": 126922,
+      "matter_partition_failures": 0,
+      "pass": true,
+      "physical_M2": 4848,
+      "route": "C_hybrid",
+      "shared_parity_logical_match": true,
+      "split": "train",
+      "stabilizer_decoder_factors": 84337,
+      "structured_cap_factors": 600,
+      "structured_rough_factors": 83737,
+      "target_Fock_input_qubits": 1296,
+      "work_M2": 0
+    },
+    {
+      "M2_labels_per_cell": 22.279883381924197,
+      "all_displayed_stabilizer_reference_failures": 0,
+      "ancilla_X_leakage_failures": 0,
+      "blank_stabilizer_M2": 5242,
+      "both_matter_parities_in_domain": true,
+      "coarse_cells": 343,
+      "code_exponent": 2400,
+      "elapsed_seconds": 55.875525624956936,
+      "encoder_factor_count": 254721,
+      "encoder_factor_counts": {
+        "CNOT": 134123,
+        "H": 51754,
+        "S": 68844
+      },
+      "encoder_factor_sha256": "ee2f2c78655270cf528c746f9aa5108b2a30a4c50b518e566c59b96ee1109bfe",
+      "encoder_factors_per_cell": 742.6268221574344,
+      "exact_partition": true,
+      "gauge_input_qubits": 342,
+      "gauge_partition_failures": 0,
+      "length": 7,
+      "logical_chart_factors": 108780,
+      "matter_partition_failures": 0,
+      "pass": true,
+      "physical_M2": 7642,
+      "route": "A_local_peel",
+      "shared_parity_logical_match": true,
+      "split": "held-out-no-refit",
+      "stabilizer_decoder_factors": 100045,
+      "structured_cap_factors": 704,
+      "structured_rough_factors": 99341,
+      "target_Fock_input_qubits": 2058,
+      "work_M2": 0
+    },
+    {
+      "M2_labels_per_cell": 22.279883381924197,
+      "all_displayed_stabilizer_reference_failures": 0,
+      "ancilla_X_leakage_failures": 0,
+      "blank_stabilizer_M2": 5242,
+      "both_matter_parities_in_domain": true,
+      "coarse_cells": 343,
+      "code_exponent": 2400,
+      "elapsed_seconds": 44.55807879206259,
+      "encoder_factor_count": 394922,
+      "encoder_factor_counts": {
+        "CNOT": 249203,
+        "H": 76638,
+        "S": 69081
+      },
+      "encoder_factor_sha256": "2c0103986b25228c9036f0693e2656469f7f4669da3f2d605b9d0172e6c33145",
+      "encoder_factors_per_cell": 1151.3760932944606,
+      "exact_partition": true,
+      "gauge_input_qubits": 342,
+      "gauge_partition_failures": 0,
+      "length": 7,
+      "logical_chart_factors": 195602,
+      "matter_partition_failures": 0,
+      "pass": true,
+      "physical_M2": 7642,
+      "route": "B_generic_all",
+      "shared_parity_logical_match": true,
+      "split": "held-out-no-refit",
+      "stabilizer_decoder_factors": 153266,
+      "structured_cap_factors": null,
+      "structured_rough_factors": null,
+      "target_Fock_input_qubits": 2058,
+      "work_M2": 0
+    },
+    {
+      "M2_labels_per_cell": 22.279883381924197,
+      "all_displayed_stabilizer_reference_failures": 0,
+      "ancilla_X_leakage_failures": 0,
+      "blank_stabilizer_M2": 5242,
+      "both_matter_parities_in_domain": true,
+      "coarse_cells": 343,
+      "code_exponent": 2400,
+      "elapsed_seconds": 43.84339729195926,
+      "encoder_factor_count": 506184,
+      "encoder_factor_counts": {
+        "CNOT": 317338,
+        "H": 119876,
+        "S": 68970
+      },
+      "encoder_factor_sha256": "19648179c74bc082d78338d6bcae827ed8ac5995af6cc1f03061b097fc438653",
+      "encoder_factors_per_cell": 1475.7551020408164,
+      "exact_partition": true,
+      "gauge_input_qubits": 342,
+      "gauge_partition_failures": 0,
+      "length": 7,
+      "logical_chart_factors": 309711,
+      "matter_partition_failures": 0,
+      "pass": true,
+      "physical_M2": 7642,
+      "route": "C_hybrid",
+      "shared_parity_logical_match": true,
+      "split": "held-out-no-refit",
+      "stabilizer_decoder_factors": 150493,
+      "structured_cap_factors": 704,
+      "structured_rough_factors": 149789,
+      "target_Fock_input_qubits": 2058,
+      "work_M2": 0
+    }
+  ],
+  "maximum_RSS_bytes": 376979456,
+  "minimum_content_claim": false,
+  "minimum_content_gate": "FAIL / DO NOT SHIP",
+  "minimum_content_shipped": false,
+  "no_go_discipline": {
+    "N1_broad_negative_gate": "FAIL / DO NOT SHIP",
+    "N1_normalized_families": [
+      {
+        "family": "structured cap plus distance-greedy rough peel",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "exact leaf/fiber elimination followed by current-support physical-radius pivot choice",
+        "object_formulation": "Cycle642 fiber/tree stabilizers plus rough code",
+        "status": "finite L3/L6/L7 measured; all-L terminal not established",
+        "strength_vs_target": "direct attempt",
+        "terminal_obligation": "full E with linear factors and bounded range"
+      },
+      {
+        "family": "generic signed tableau comparator",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "Cycle643 H/S/CNOT Gaussian reduction",
+        "object_formulation": "complete Cycle642 stabilizer tableau",
+        "status": "exact comparator",
+        "strength_vs_target": "weaker locality target",
+        "terminal_obligation": "abstract full E"
+      },
+      {
+        "family": "hybrid structured cap plus generic rough chart",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "cap leaf elimination then generic rough stabilizer/logical chart",
+        "object_formulation": "locally decoded cap fibers/tree and abstract rough quotient",
+        "status": "exact comparator",
+        "strength_vs_target": "hybrid comparator",
+        "terminal_obligation": "separate cap and rough growth"
+      },
+      {
+        "family": "square-cap result back-credit as a tree compiler",
+        "honesty_marker": "RULED OUT BY PRIOR",
+        "mechanism_invariant": "generic signed tableau on a different stabilizer object",
+        "object_formulation": "reuse Cycle643's different Cycle537 square-cap result without a fresh tree-code run",
+        "status": "Cycle643 explicitly did not consume Cycle642; no result is back-credited",
+        "strength_vs_target": "scope-mismatched shortcut",
+        "terminal_obligation": "exact Cycle642 tree-code E"
+      }
+    ],
+    "N1_open_routes_not_counted": [
+      {
+        "family": "distributed orbit-tree placement",
+        "status": "OPEN / NOT COUNTED",
+        "terminal": "bounded all-L physical range"
+      },
+      {
+        "family": "constant-depth local rough encoder with added work",
+        "status": "OPEN / NOT COUNTED",
+        "terminal": "returned-work exact full E"
+      },
+      {
+        "family": "autonomous state-carried initialization",
+        "status": "OPEN / NOT COUNTED",
+        "terminal": "derive blank/chart/schedule without host control"
+      }
+    ],
+    "N1_qualifying_attempts": 4,
+    "N1_required_for_negative": 5,
+    "N2_directed_ordered_pairs": [
+      {
+        "from": "W_factor_growth",
+        "implied": false,
+        "reason": "closing W_factor_growth does not construct W_range",
+        "to": "W_range"
+      },
+      {
+        "from": "W_factor_growth",
+        "implied": false,
+        "reason": "closing W_factor_growth does not construct W_genesis",
+        "to": "W_genesis"
+      },
+      {
+        "from": "W_range",
+        "implied": false,
+        "reason": "closing W_range does not construct W_factor_growth",
+        "to": "W_factor_growth"
+      },
+      {
+        "from": "W_range",
+        "implied": false,
+        "reason": "closing W_range does not construct W_genesis",
+        "to": "W_genesis"
+      },
+      {
+        "from": "W_genesis",
+        "implied": false,
+        "reason": "closing W_genesis does not construct W_factor_growth",
+        "to": "W_factor_growth"
+      },
+      {
+        "from": "W_genesis",
+        "implied": false,
+        "reason": "closing W_genesis does not construct W_range",
+        "to": "W_range"
+      }
+    ],
+    "N2_walls": {
+      "W_factor_growth": "prove all-L O(N) complete encoder size",
+      "W_genesis": "replace supplied blank/chart/order/schedule by an autonomous law",
+      "W_range": "bound every physical factor range independently of L"
+    },
+    "N3_hidden_wall_scan": [
+      {
+        "classification": "supplied finite placement, not all-L locality",
+        "condition": "centralized K129 outer-shell tree roles"
+      },
+      {
+        "classification": "supplied compile structure, not autonomous genesis",
+        "condition": "pivot/root/parity chart/blank/schedule"
+      }
+    ],
+    "N4_exact_residual_matches": [],
+    "N4_nonmatches_not_used_as_closure": [
+      {
+        "current_line": 2,
+        "current_path": "scripts/physical_orbit_tree_structured_full_isometry_tournament_cycle647_2026_07_23.py",
+        "current_residual": "Cycle647 constructs exact finite-size E on the same tree code",
+        "exact_match": false,
+        "prior_line": 94,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_FIXED_CUBIC_WILSON_FILL_INCIDENCE_CYCLE642_NOTE_2026-07-23.md",
+        "prior_ref": "99b98a6fd2c823734e98487bf67daa8fef79dd92",
+        "prior_residual": "Cycle642 had no state-preparation E",
+        "same_scope": true,
+        "use_as_closure": false
+      },
+      {
+        "current_line": 2,
+        "current_path": "scripts/physical_orbit_tree_structured_full_isometry_tournament_cycle647_2026_07_23.py",
+        "current_residual": "tree-code routes receive a fresh scaling audit and no square-cap credit",
+        "exact_match": false,
+        "prior_line": 44,
+        "prior_path": "docs/work_history/repo/review_feedback/ABSTRACT_FILL_DISK_FULL_TABLEAU_ISOMETRY_CYCLE643_NOTE_2026-07-23.md",
+        "prior_ref": "99b98a6fd2c823734e98487bf67daa8fef79dd92",
+        "prior_residual": "square-cap generic tableau had no all-L linear theorem",
+        "same_scope": false,
+        "use_as_closure": false
+      }
+    ],
+    "N5_rhetoric": [
+      {
+        "claim": "no all-L local/linear tree encoder is established by these three finite rows",
+        "lattice_wide": "three sizes do not prove impossibility or asymptotic growth",
+        "per_block": "L3 construction, L6 train, L7 held are exact",
+        "per_element": "every emitted H/S/CNOT factor is iterated",
+        "per_mode": "all matter and gauge generators are conjugated",
+        "per_site": "every CNOT endpoint receives a declared K129 fine-grid distance"
+      }
+    ],
+    "N6_partial_closure_paths": [
+      {
+        "file": "UNMATERIALIZED/distributed_tree_encoder_cycle_next.py",
+        "status": "OPEN / PRIORITY",
+        "what_closes": "W_range by placing each tree edge near its incident chunks"
+      },
+      {
+        "file": "UNMATERIALIZED/local_rough_chart_with_returned_work_cycle_next.py",
+        "status": "OPEN",
+        "what_closes": "W_factor_growth with an analytic recurrence"
+      },
+      {
+        "file": "UNMATERIALIZED/autonomous_tree_code_genesis_cycle_next.py",
+        "status": "OPEN",
+        "what_closes": "W_genesis"
+      }
+    ],
+    "N7_steelman": {
+      "actionable_steps": [
+        "replace the centralized outer-shell role placement by one covariant orbit fiber per incident chunk neighborhood",
+        "prove a local fusion recurrence and return every work M2",
+        "compose with a cellwise target/gauge chart and rerun all24/all576"
+      ],
+      "mechanism": "distribute each reflected tree branch along its Wilson and use local cat-state fusion plus a cellular rough-code peeling recurrence",
+      "supporting_citations": [
+        {
+          "line": 94,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_FIXED_CUBIC_WILSON_FILL_INCIDENCE_CYCLE642_NOTE_2026-07-23.md",
+          "ref": "99b98a6fd2c823734e98487bf67daa8fef79dd92",
+          "text": "The result is not a physical encoder.  No state-preparation map, local"
+        },
+        {
+          "line": 44,
+          "path": "docs/work_history/repo/review_feedback/ABSTRACT_FILL_DISK_FULL_TABLEAU_ISOMETRY_CYCLE643_NOTE_2026-07-23.md",
+          "ref": "99b98a6fd2c823734e98487bf67daa8fef79dd92",
+          "text": "sizes.  Generic Gaussian elimination supplies no all-L linear-size,"
+        }
+      ],
+      "terminal_test": "constant overhead, O(N) factors, L-independent maximum physical range, inverse/deletion/leakage, and full update intertwining at held sizes"
+    },
+    "N8_cross_cycle_echo": [
+      {
+        "applicability": "finite L3/L6/L7 supplied-chart E only; locality/genesis remain open",
+        "citation_line": 94,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_FIXED_CUBIC_WILSON_FILL_INCIDENCE_CYCLE642_NOTE_2026-07-23.md",
+        "citation_ref": "99b98a6fd2c823734e98487bf67daa8fef79dd92",
+        "citation_text": "The result is not a physical encoder.  No state-preparation map, local",
+        "cycle": 642,
+        "mechanism": "Cycle647 exact three-route Clifford synthesis",
+        "retired": "absence of any E on the orbit-tree code"
+      },
+      {
+        "applicability": "algorithmic reuse only; square-cap results not credited",
+        "citation_line": 44,
+        "citation_path": "docs/work_history/repo/review_feedback/ABSTRACT_FILL_DISK_FULL_TABLEAU_ISOMETRY_CYCLE643_NOTE_2026-07-23.md",
+        "citation_ref": "99b98a6fd2c823734e98487bf67daa8fef79dd92",
+        "citation_text": "sizes.  Generic Gaussian elimination supplies no all-L linear-size,",
+        "cycle": 643,
+        "mechanism": "immutable generic comparator reuse",
+        "retired": "need to reimplement signed tableau machinery"
+      }
+    ],
+    "Status": "PASS",
+    "axiom_pressure": false,
+    "axiom_pressure_claim": false,
+    "axiom_pressure_gate": "FAIL / DO NOT SHIP",
+    "axiom_pressure_shipped": false,
+    "broad_negative_gate": "FAIL / DO NOT SHIP",
+    "broad_negative_shipped": false,
+    "broad_no_go_claim": false,
+    "minimum_content_claim": false,
+    "minimum_content_gate": "FAIL / DO NOT SHIP",
+    "minimum_content_shipped": false,
+    "shared_obstruction_claim": false,
+    "shared_obstruction_gate": "FAIL / DO NOT SHIP",
+    "shared_obstruction_shipped": false,
+    "shared_route_independent_obstruction": false
+  },
+  "note_sha256": "1acf92423fcf59456b192d9a58fa8cf538157354d62763d4285d98872741b406",
+  "optimal_next_campaign": "distribute tree fibers along Wilson chunks and prove a local cat-fusion plus rough-chart recurrence with O(N) factors, L-independent range, returned work, and full covariance",
+  "pass": true,
+  "physical_distance_audit": [
+    {
+      "all_factors_bounded_by_finite_torus_diameter": true,
+      "distance_greater_than_one": 5872,
+      "distance_one": 0,
+      "fine_grid_period": 387,
+      "length": 3,
+      "maximum_periodic_fine_L1": 407,
+      "p50_p90_p99": [
+        133,
+        274,
+        395
+      ],
+      "route": "A_local_peel",
+      "two_qubit_factors": 5872
+    },
+    {
+      "all_factors_bounded_by_finite_torus_diameter": true,
+      "distance_greater_than_one": 9205,
+      "distance_one": 3,
+      "fine_grid_period": 387,
+      "length": 3,
+      "maximum_periodic_fine_L1": 459,
+      "p50_p90_p99": [
+        145,
+        383,
+        449
+      ],
+      "route": "B_generic_all",
+      "two_qubit_factors": 9208
+    },
+    {
+      "all_factors_bounded_by_finite_torus_diameter": true,
+      "distance_greater_than_one": 8150,
+      "distance_one": 0,
+      "fine_grid_period": 387,
+      "length": 3,
+      "maximum_periodic_fine_L1": 419,
+      "p50_p90_p99": [
+        137,
+        383,
+        399
+      ],
+      "route": "C_hybrid",
+      "two_qubit_factors": 8150
+    },
+    {
+      "all_factors_bounded_by_finite_torus_diameter": true,
+      "distance_greater_than_one": 80074,
+      "distance_one": 0,
+      "fine_grid_period": 774,
+      "length": 6,
+      "maximum_periodic_fine_L1": 1161,
+      "p50_p90_p99": [
+        270,
+        645,
+        895
+      ],
+      "route": "A_local_peel",
+      "two_qubit_factors": 80074
+    },
+    {
+      "all_factors_bounded_by_finite_torus_diameter": true,
+      "distance_greater_than_one": 131003,
+      "distance_one": 11,
+      "fine_grid_period": 774,
+      "length": 6,
+      "maximum_periodic_fine_L1": 1161,
+      "p50_p90_p99": [
+        371,
+        649,
+        919
+      ],
+      "route": "B_generic_all",
+      "two_qubit_factors": 131014
+    },
+    {
+      "all_factors_bounded_by_finite_torus_diameter": true,
+      "distance_greater_than_one": 142243,
+      "distance_one": 0,
+      "fine_grid_period": 774,
+      "length": 6,
+      "maximum_periodic_fine_L1": 1161,
+      "p50_p90_p99": [
+        383,
+        649,
+        907
+      ],
+      "route": "C_hybrid",
+      "two_qubit_factors": 142243
+    },
+    {
+      "all_factors_bounded_by_finite_torus_diameter": true,
+      "distance_greater_than_one": 134123,
+      "distance_one": 0,
+      "fine_grid_period": 903,
+      "length": 7,
+      "maximum_periodic_fine_L1": 1181,
+      "p50_p90_p99": [
+        278,
+        649,
+        907
+      ],
+      "route": "A_local_peel",
+      "two_qubit_factors": 134123
+    },
+    {
+      "all_factors_bounded_by_finite_torus_diameter": true,
+      "distance_greater_than_one": 249187,
+      "distance_one": 16,
+      "fine_grid_period": 903,
+      "length": 7,
+      "maximum_periodic_fine_L1": 1231,
+      "p50_p90_p99": [
+        391,
+        778,
+        1036
+      ],
+      "route": "B_generic_all",
+      "two_qubit_factors": 249203
+    },
+    {
+      "all_factors_bounded_by_finite_torus_diameter": true,
+      "distance_greater_than_one": 317338,
+      "distance_one": 0,
+      "fine_grid_period": 903,
+      "length": 7,
+      "maximum_periodic_fine_L1": 1165,
+      "p50_p90_p99": [
+        407,
+        782,
+        1036
+      ],
+      "route": "C_hybrid",
+      "two_qubit_factors": 317338
+    }
+  ],
+  "proper_cubic_covariance": {
+    "encoder_transport_rule": "E_R = F_R E C_R^dagger; each supplied circuit is relabeled/conjugated as one compile-time family, not queried at runtime",
+    "frame_products": 576,
+    "pass": true,
+    "proper_cubic_frames": 24,
+    "rows": [
+      {
+        "all576_extended_permutation_group_failures": 0,
+        "extended_M2": 642,
+        "frame_label_failures": 0,
+        "length": 3
+      },
+      {
+        "all576_extended_permutation_group_failures": 0,
+        "extended_M2": 4848,
+        "frame_label_failures": 0,
+        "length": 6
+      },
+      {
+        "all576_extended_permutation_group_failures": 0,
+        "extended_M2": 7642,
+        "frame_label_failures": 0,
+        "length": 7
+      }
+    ],
+    "runtime_frame_selector": false,
+    "single_invariant_factor_order_claimed": false
+  },
+  "route_A_vs_B_comparator": [
+    {
+      "Route_A_factors": 14150,
+      "Route_B_factors": 19437,
+      "factor_reduction": 5287,
+      "factor_reduction_percent": 27.200699696455214,
+      "length": 3
+    },
+    {
+      "Route_A_factors": 154012,
+      "Route_B_factors": 219457,
+      "factor_reduction": 65445,
+      "factor_reduction_percent": 29.821331741525675,
+      "length": 6
+    },
+    {
+      "Route_A_factors": 254721,
+      "Route_B_factors": 394922,
+      "factor_reduction": 140201,
+      "factor_reduction_percent": 35.50093436172206,
+      "length": 7
+    }
+  ],
+  "route_disposition": {
+    "A_local_peel": "PASS_EXACT_FINITE_SUPPLIED_CHART_E__STRICT_LOCAL_LINEAR_RANGE_OPEN_NOT_CLOSED",
+    "B_generic_all": "PASS_EXACT_FINITE_ABSTRACT_COMPARATOR__GENERIC_GROWTH_AND_RANGE",
+    "C_hybrid": "PASS_EXACT_FINITE_HYBRID__ROUGH_CHART_GENERIC"
+  },
+  "runner_sha256": "23d5316fb00ed4796bc74e193970f045fa7fa32a020e49fd0534ee0deec3fb18",
+  "shared_obstruction_claim": false,
+  "shared_obstruction_gate": "FAIL / DO NOT SHIP",
+  "shared_obstruction_shipped": false,
+  "shared_route_independent_obstruction": false,
+  "six_wall_ledger": {
+    "C_int": "coin/FSWAP/contact/B mass/seam compose through G_tree_code; no strict local physical update or new interaction law",
+    "C_local": "structured cap decode and all24/all576 label covariance; factors nonlocal and all-L bounded range/local rough chart open",
+    "C_num": "exact factors/ranks/residuals; no empirical or Born normalization",
+    "C_ref": "finite supplied-chart tree-code E/both parities/inverse; blank/chart/root/order/schedule supplied",
+    "C_source": "resources explicit; no energy/stress/source/gravity identification",
+    "C_wrap": "tree stabilizers inverse-visible; autonomous genesis/history open"
+  },
+  "status": "exact finite supplied-chart Cycle642 orbit-tree E with nonlocal factors; strict physical local-linear terminal open",
+  "strict_physical_local_M2_compiler_claimed": false,
+  "supplied_structure_inventory": {
+    "Cycle642_tree_code_and_K129_finite_placement": true,
+    "Cycle643_generic_tableau_implementation_only": true,
+    "Cycle643_square_cap_result_back_credited": false,
+    "autonomous_genesis": false,
+    "blank_stabilizer_inputs": true,
+    "finite_L3_L6_L7_domains": true,
+    "finite_supplied_chart_E_only": true,
+    "global_Jordan_Wigner_order": false,
+    "nonlocal_parity_service": false,
+    "optional_gauge_vacuum_fixture": true,
+    "pivot_root_row_parity_chart_and_schedule": true,
+    "runtime_frame_selector": false,
+    "work_M2": 0
+  },
+  "tests_failed": 0,
+  "tests_passed": 17,
+  "top_level_claim_gate_contract": {
+    "Status_PASS": true,
+    "claim_flags_false": true,
+    "pass": true,
+    "promotion_gates_fail": true,
+    "strict_physical_local_compiler_not_claimed": true
+  }
+}

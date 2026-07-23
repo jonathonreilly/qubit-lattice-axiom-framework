@@ -1,0 +1,927 @@
+{
+  "audit": "unset",
+  "author_accepted": false,
+  "author_artifact_status_accepted": false,
+  "authority": "none",
+  "axiom_pressure": false,
+  "breakthrough": false,
+  "breakthrough_bar_met": false,
+  "broad_no_go": false,
+  "classification": "narrow static-embedding exclusion with constructive added-cap comparator; broader physical compiler routes open",
+  "cycle": 637,
+  "date": "2026-07-23",
+  "derived_structure": [
+    "exact boundary ranks and H1 dimension",
+    "dual-cocycle/Wilson pairing matrix",
+    "formal-cap rank increments",
+    "all24/all576 homology-class covariance",
+    "damaged-Wilson deletion refusal"
+  ],
+  "elapsed_seconds": 0.015600916929543018,
+  "excluded_scope": [
+    "arbitrary local quantum circuits",
+    "defect-mediated preparation",
+    "code deformation or punctures",
+    "added physical topology or non-cubic incidence",
+    "time-multiplexed ancilla worldvolumes",
+    "finite-light-cone operational encodings"
+  ],
+  "git_head_at_run": "fe296dbaba7518333b42087a13e27c93161ed62c",
+  "maximum_RSS_bytes": 24461312,
+  "no_go_discipline": {
+    "N1_broad_negative_gate": "FAIL_DO_NOT_SHIP",
+    "N1_normalized_families": [
+      {
+        "family": "unchanged-torus static plaquette fill",
+        "mechanism": "sum bounded plaquette boundaries",
+        "object": "two-chain in the existing periodic cubic cell complex",
+        "result": "ruled out for this mechanism by exact dual-cocycle pairing",
+        "status": "ATTEMPTED",
+        "terminal_obligation": "bound one axial Wilson"
+      },
+      {
+        "family": "added square fill-disk topology",
+        "mechanism": "Euler-surplus bounded face/star checks",
+        "object": "Cycle537 auxiliary disk complex",
+        "result": "algebraically positive; physical embedding/preparation open",
+        "status": "ATTEMPTED",
+        "terminal_obligation": "one fixed physical 3D embedding plus preparation"
+      },
+      {
+        "family": "Wilson measurement plus membrane reset",
+        "mechanism": "measure sign and apply conjugate membrane",
+        "object": "Cycle535 channel",
+        "result": "exact seam twist; route-specific failure",
+        "status": "ATTEMPTED",
+        "terminal_obligation": "preserve full target matter"
+      },
+      {
+        "family": "defect-mediated autonomous pumping",
+        "mechanism": "leave code, wind, annihilate",
+        "object": "mobile local syndromes",
+        "result": "not ruled out",
+        "status": "OPEN",
+        "terminal_obligation": "converge and intertwine matter"
+      },
+      {
+        "family": "cut-sheet code deformation",
+        "mechanism": "open, grow, and reglue periodic code",
+        "object": "temporary rough boundaries",
+        "result": "not ruled out",
+        "status": "OPEN",
+        "terminal_obligation": "restore periodic target covariantly"
+      },
+      {
+        "family": "from-scratch coherent encoder",
+        "mechanism": "local code-growth isometry",
+        "object": "target plus product ancillas",
+        "result": "not ruled out",
+        "status": "OPEN",
+        "terminal_obligation": "prepare fixed representation without correcting unknown sector"
+      },
+      {
+        "family": "time-multiplexed auxiliary worldvolume",
+        "mechanism": "simulate cap incidence across program phase",
+        "object": "state-carried local program and reusable ancillas",
+        "result": "not ruled out",
+        "status": "OPEN",
+        "terminal_obligation": "bounded-space exact E/G without calling phase time"
+      }
+    ],
+    "N1_qualifying_attempts": 3,
+    "N1_required_for_broad_negative": 5,
+    "N2_all_pair_implications_false": true,
+    "N2_collapsed_walls": {
+      "W_embed": "realize added cap/deformation incidence in one fixed proper-cubic physical M2 substrate",
+      "W_prepare": "construct a lawful local state isometry or autonomous convergence map preserving the complete target factor"
+    },
+    "N2_directed_pairs": [
+      {
+        "from": "W_embed",
+        "implied": false,
+        "reason": "a geometric incidence does not prepare its code state",
+        "to": "W_prepare"
+      },
+      {
+        "from": "W_prepare",
+        "implied": false,
+        "reason": "an abstract preparation does not establish physical 3D locality",
+        "to": "W_embed"
+      }
+    ],
+    "N3_hidden_wall_scan": [
+      "periodic cubic cellulation is a declared comparator, not the entire physical M2 possibility class",
+      "static plaquette two-chain is the tested mechanism; arbitrary bounded gates and program phases are outside it",
+      "proper-cubic covariance of homology classes is not a fixed geometric cap embedding",
+      "added topology, reset/product-state genesis, schedule, target input map, and retained exhaust remain explicit supplies"
+    ],
+    "N4_residual_matching": [
+      {
+        "current_residual": "unchanged-torus static two-chain fill is impossible; broader encoders open",
+        "exact_match": true,
+        "fragment": "bounded circuit preparing that fixed-spin face-code state is supplied.",
+        "line": 48,
+        "line_text": "bounded circuit preparing that fixed-spin face-code state is supplied.  This",
+        "path": "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md",
+        "prior_residual": "fixed-Wilson state preparation absent",
+        "same_scope": true,
+        "use_as_closure": false
+      },
+      {
+        "current_residual": "not tested by a static chain-complex calculation",
+        "exact_match": true,
+        "fragment": "A defect-mediated process that leaves the code transiently",
+        "line": 66,
+        "line_text": "A defect-mediated process that leaves the code transiently, a from-scratch",
+        "path": "docs/work_history/repo/review_feedback/PHYSICAL_WILSON_MEASUREMENT_RESET_STABILIZATION_CYCLE535_NOTE_2026-07-21.md",
+        "prior_residual": "defect-mediated transient-code route open",
+        "same_scope": true,
+        "use_as_closure": false
+      },
+      {
+        "current_residual": "homology pairing proves no unchanged-cellulation static plaquette filling",
+        "exact_match": true,
+        "fragment": "It does not embed those cap",
+        "line": 36,
+        "line_text": "compile-time proper-cubic presentation orbit.  It does not embed those cap",
+        "path": "docs/work_history/repo/review_feedback/PHYSICAL_LOCAL_WILSON_FILL_DISK_CYCLE537_NOTE_2026-07-21.md",
+        "prior_residual": "cap sheets not embedded in old periodic placement",
+        "same_scope": true,
+        "use_as_closure": true
+      },
+      {
+        "current_residual": "three independent H1 classes and three formal cap rank increments",
+        "exact_match": true,
+        "fragment": "the three-dimensional Wilson center modulo local checks.",
+        "line": 338,
+        "line_text": "- the three-dimensional Wilson center modulo local checks.",
+        "path": "docs/work_history/repo/review_feedback/WILSON_SUBSYSTEM_SECTOR_FREE_COMPILER_CYCLE269_NOTE_2026-07-17.md",
+        "prior_residual": "three independent central Wilson characters",
+        "same_scope": true,
+        "use_as_closure": true
+      }
+    ],
+    "N5_rhetoric_resolution_ledger": [
+      {
+        "claim": "each plaquette boundary pairs trivially with every dual axial cocycle",
+        "resolution": "per_element",
+        "scope_ok": true
+      },
+      {
+        "claim": "unchanged periodic vertex/edge/plaquette incidence is enumerated",
+        "resolution": "per_site",
+        "scope_ok": true
+      },
+      {
+        "claim": "not applicable; no fermionic mode action is inferred from homology",
+        "resolution": "per_mode",
+        "scope_ok": true
+      },
+      {
+        "claim": "one formal axial cap raises boundary rank by one",
+        "resolution": "per_block",
+        "scope_ok": true
+      },
+      {
+        "claim": "three caps span the three-dimensional H1 quotient at L3/L5/L6/L7",
+        "resolution": "lattice_wide",
+        "scope_ok": true
+      }
+    ],
+    "N6_partial_closure_paths": [
+      {
+        "file": "scripts/physical_fixed_cubic_cap_embedding_cycle_next.py",
+        "status": "OPEN",
+        "what_closes": "W_embed via a genuinely enlarged, fixed, proper-cubic local incidence graph"
+      },
+      {
+        "file": "scripts/physical_defect_code_growth_isometry_cycle_next.py",
+        "status": "OPEN",
+        "what_closes": "W_prepare via local transient defects and an exact full-matter intertwiner"
+      },
+      {
+        "file": "scripts/physical_time_multiplexed_cap_interpreter_cycle_next.py",
+        "status": "OPEN",
+        "what_closes": "tests whether reusable state-carried ancillas replace static added topology without host control"
+      }
+    ],
+    "N7_steelman": {
+      "citations": [
+        {
+          "fragment": "A defect-mediated process that leaves the code transiently",
+          "line": 66,
+          "line_text": "A defect-mediated process that leaves the code transiently, a from-scratch",
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_WILSON_MEASUREMENT_RESET_STABILIZATION_CYCLE535_NOTE_2026-07-21.md"
+        },
+        {
+          "fragment": "It does not embed those cap",
+          "line": 36,
+          "line_text": "compile-time proper-cubic presentation orbit.  It does not embed those cap",
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_LOCAL_WILSON_FILL_DISK_CYCLE537_NOTE_2026-07-21.md"
+        }
+      ],
+      "mechanism": "start from target matter and product ancillas, create local defects, grow a temporary rough boundary around each periodic direction, encode the target while the code is open, and reglue only after the fixed spin representation has formed",
+      "openness": "the present static two-chain calculation does not model this route, so it blocks any broad no-go or axiom-pressure claim",
+      "terminal_test": "an exact local E and G with full-Fock matter intertwining, restored local checks, all24/all576 covariance, retained work/exhaust, and no postselection or host Wilson query"
+    },
+    "N8_cross_cycle_echo": [
+      {
+        "applicability": "identifies the same three topological classes; does not prove preparation",
+        "citation": {
+          "fragment": "the three-dimensional Wilson center modulo local checks.",
+          "line": 338,
+          "line_text": "- the three-dimensional Wilson center modulo local checks.",
+          "path": "docs/work_history/repo/review_feedback/WILSON_SUBSYSTEM_SECTOR_FREE_COMPILER_CYCLE269_NOTE_2026-07-17.md"
+        },
+        "cycle": 269,
+        "mechanism": "exact center/membrane algebra",
+        "retired": "spectator-M8 interpretation of the three Wilson characters"
+      },
+      {
+        "applicability": "supplies the conditional code whose static initializer is tested",
+        "citation": {
+          "fragment": "bounded circuit preparing that fixed-spin face-code state is supplied.",
+          "line": 48,
+          "line_text": "bounded circuit preparing that fixed-spin face-code state is supplied.  This",
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md"
+        },
+        "cycle": 532,
+        "mechanism": "exact target full-Fock times local gauge subsystem",
+        "retired": "untyped rough-code multiplicity"
+      },
+      {
+        "applicability": "its target seam failure is route-specific; defect motion stays open",
+        "citation": {
+          "fragment": "A defect-mediated process that leaves the code transiently",
+          "line": 66,
+          "line_text": "A defect-mediated process that leaves the code transiently, a from-scratch",
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_WILSON_MEASUREMENT_RESET_STABILIZATION_CYCLE535_NOTE_2026-07-21.md"
+        },
+        "cycle": 535,
+        "mechanism": "local measurement plus membrane feedback",
+        "retired": "host parity arithmetic for Wilson measurement"
+      },
+      {
+        "applicability": "this cycle explains why that cap cannot be a static two-chain in the unchanged torus",
+        "citation": {
+          "fragment": "It does not embed those cap",
+          "line": 36,
+          "line_text": "compile-time proper-cubic presentation orbit.  It does not embed those cap",
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_LOCAL_WILSON_FILL_DISK_CYCLE537_NOTE_2026-07-21.md"
+        },
+        "cycle": 537,
+        "mechanism": "bounded square fill-disk face/star complex",
+        "retired": "abstract need for growing Wilson check after adding cap topology"
+      },
+      {
+        "applicability": "narrow mechanism only; dynamic and enlarged-topology routes open",
+        "citation": null,
+        "cycle": 637,
+        "mechanism": "exact H1 and dual-cocycle certificate",
+        "retired": "unchanged-torus static plaquette realization of the Cycle537 cap"
+      }
+    ],
+    "Status": "PASS_NARROW_NEGATIVE_ONLY",
+    "axiom_pressure": false,
+    "broad_no_go_claim": false,
+    "minimum_content_claim": false,
+    "shared_route_independent_obstruction": false
+  },
+  "optimal_next_campaign": "construct a fixed proper-cubic enlarged incidence graph or a defect/code-growth isometry and require exact full-Fock E/G plus restored local checks",
+  "pass": true,
+  "proper_cubic": {
+    "fixed_cap_embedding_claim": false,
+    "frames": 24,
+    "group_failures": 0,
+    "homology_axis_permutations": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        2,
+        1
+      ],
+      [
+        0,
+        2,
+        1
+      ],
+      [
+        0,
+        2,
+        1
+      ],
+      [
+        0,
+        2,
+        1
+      ],
+      [
+        1,
+        0,
+        2
+      ],
+      [
+        1,
+        0,
+        2
+      ],
+      [
+        1,
+        0,
+        2
+      ],
+      [
+        1,
+        0,
+        2
+      ],
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        2,
+        1,
+        0
+      ]
+    ],
+    "ordered_products": 576,
+    "triple_orbit_failures": 0
+  },
+  "route_disposition": {
+    "Cycle537_added_cap_topology": "ALGEBRAICALLY_POSITIVE_PHYSICAL_EMBEDDING_AND_PREPARATION_OPEN",
+    "defect_or_code_deformation": "OPEN",
+    "from_scratch_local_encoder": "OPEN",
+    "time_multiplexed_auxiliary": "OPEN",
+    "unchanged_torus_static_plaquette_cap": "RULED_OUT_BY_EXACT_HOMOLOGY"
+  },
+  "semantic_firewall": {
+    "axiom_pressure_claim": false,
+    "compiler_impossibility_claim": false,
+    "phase_called_energy": false,
+    "pointer_called_Record": false,
+    "schedule_called_time": false,
+    "unchanged_torus_static_fill_exclusion_only": true
+  },
+  "shared_route_independent_obstruction": false,
+  "six_wall_ledger": {
+    "C_int": "unchanged; Cycle532 mass/contact/seam remain conditional comparators",
+    "C_local": "narrowed: Cycle537 W_embed requires changed incidence/topology or a dynamical encoder, not a static two-chain in the old cellulation",
+    "C_num": "unchanged; no full-Fock numeric or Born statement is added",
+    "C_ref": "unchanged; origin/cut choose representatives but homology result is representative-independent",
+    "C_source": "unchanged",
+    "C_wrap": "narrowed: a static local plaquette cap cannot erase noncontractible Wilson classes inside the unchanged torus"
+  },
+  "sizes": [
+    {
+      "Cycle537_Euler_surplus_per_axis": 1,
+      "Cycle537_added_M2_per_coarse_cell": 1.3333333333333333,
+      "Cycle537_disk_interior_edges_per_axis": 12,
+      "Cycle537_disk_local_checks_per_axis": 13,
+      "Cycle537_total_added_M2": 36,
+      "H1_dimension": 3,
+      "L": 3,
+      "cells": 27,
+      "cycle_space_dimension": 55,
+      "cycle_space_exhausted_after_three_caps": true,
+      "damaged_wilson_boundary_weights": [
+        2,
+        2,
+        2
+      ],
+      "edges": 81,
+      "expected_rank_boundary_1": 26,
+      "expected_rank_boundary_2": 52,
+      "face_dual_pairing_failures": 0,
+      "individual_wilson_rank_increments": [
+        1,
+        1,
+        1
+      ],
+      "plaquettes": 81,
+      "rank_after_three_formal_caps": 55,
+      "rank_boundary_1": 26,
+      "rank_boundary_2": 52,
+      "triple_wilson_rank_increment": 3,
+      "vertices": 27,
+      "wilson_boundary_weights": [
+        0,
+        0,
+        0
+      ],
+      "wilson_dual_pairing": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "Cycle537_Euler_surplus_per_axis": 1,
+      "Cycle537_added_M2_per_coarse_cell": 0.96,
+      "Cycle537_disk_interior_edges_per_axis": 40,
+      "Cycle537_disk_local_checks_per_axis": 41,
+      "Cycle537_total_added_M2": 120,
+      "H1_dimension": 3,
+      "L": 5,
+      "cells": 125,
+      "cycle_space_dimension": 251,
+      "cycle_space_exhausted_after_three_caps": true,
+      "damaged_wilson_boundary_weights": [
+        2,
+        2,
+        2
+      ],
+      "edges": 375,
+      "expected_rank_boundary_1": 124,
+      "expected_rank_boundary_2": 248,
+      "face_dual_pairing_failures": 0,
+      "individual_wilson_rank_increments": [
+        1,
+        1,
+        1
+      ],
+      "plaquettes": 375,
+      "rank_after_three_formal_caps": 251,
+      "rank_boundary_1": 124,
+      "rank_boundary_2": 248,
+      "triple_wilson_rank_increment": 3,
+      "vertices": 125,
+      "wilson_boundary_weights": [
+        0,
+        0,
+        0
+      ],
+      "wilson_dual_pairing": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "Cycle537_Euler_surplus_per_axis": 1,
+      "Cycle537_added_M2_per_coarse_cell": 0.8333333333333334,
+      "Cycle537_disk_interior_edges_per_axis": 60,
+      "Cycle537_disk_local_checks_per_axis": 61,
+      "Cycle537_total_added_M2": 180,
+      "H1_dimension": 3,
+      "L": 6,
+      "cells": 216,
+      "cycle_space_dimension": 433,
+      "cycle_space_exhausted_after_three_caps": true,
+      "damaged_wilson_boundary_weights": [
+        2,
+        2,
+        2
+      ],
+      "edges": 648,
+      "expected_rank_boundary_1": 215,
+      "expected_rank_boundary_2": 430,
+      "face_dual_pairing_failures": 0,
+      "individual_wilson_rank_increments": [
+        1,
+        1,
+        1
+      ],
+      "plaquettes": 648,
+      "rank_after_three_formal_caps": 433,
+      "rank_boundary_1": 215,
+      "rank_boundary_2": 430,
+      "triple_wilson_rank_increment": 3,
+      "vertices": 216,
+      "wilson_boundary_weights": [
+        0,
+        0,
+        0
+      ],
+      "wilson_dual_pairing": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "Cycle537_Euler_surplus_per_axis": 1,
+      "Cycle537_added_M2_per_coarse_cell": 0.7346938775510204,
+      "Cycle537_disk_interior_edges_per_axis": 84,
+      "Cycle537_disk_local_checks_per_axis": 85,
+      "Cycle537_total_added_M2": 252,
+      "H1_dimension": 3,
+      "L": 7,
+      "cells": 343,
+      "cycle_space_dimension": 687,
+      "cycle_space_exhausted_after_three_caps": true,
+      "damaged_wilson_boundary_weights": [
+        2,
+        2,
+        2
+      ],
+      "edges": 1029,
+      "expected_rank_boundary_1": 342,
+      "expected_rank_boundary_2": 684,
+      "face_dual_pairing_failures": 0,
+      "individual_wilson_rank_increments": [
+        1,
+        1,
+        1
+      ],
+      "plaquettes": 1029,
+      "rank_after_three_formal_caps": 687,
+      "rank_boundary_1": 342,
+      "rank_boundary_2": 684,
+      "triple_wilson_rank_increment": 3,
+      "vertices": 343,
+      "wilson_boundary_weights": [
+        0,
+        0,
+        0
+      ],
+      "wilson_dual_pairing": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ]
+    }
+  ],
+  "strongest_result": "each axial Wilson has unit pairing with one dual cocycle while every unchanged-torus plaquette boundary pairs trivially; three formal caps raise boundary rank by exactly three and reproduce Cycle537's one-character-per-disk Euler mechanism",
+  "supplied_structure": [
+    "finite periodic cubic L3/L5/L6/L7 cellulations",
+    "one coordinate origin for representative Wilsons and dual cuts",
+    "F2 chain-complex interpretation",
+    "Cycle532 Wilson identification and Cycle537 square-disk resource formulas"
+  ],
+  "tested_scope": "static F2 two-chain fillings made from plaquettes of the unchanged periodic cubic cellulation",
+  "tests": [
+    {
+      "detail": {
+        "Cycle269": "d5a39e45949cf079f6c37fa5646d00a9319d7d2776d84323d9adf1c086e06beb",
+        "Cycle532": "5f668f6cc04a5eece23f913d5869f57553df583c23d6dbb5cdac6756be41bfc3",
+        "Cycle535": "169990a0af77c49a24b7e8f27999359e524c7c4f90bfba983cc970ec27d8ecc2",
+        "Cycle537": "e413a8c079fa2d5ff14d1b46d19df60cd07d853d118b51d8494632cc03a427f8",
+        "no_go_skill": "9814b094837d11dcf223863851e4f53193d1c307835d80178af195f535f52e71"
+      },
+      "name": "committed Cycle269/532/535/537 and current no-go shores are readable",
+      "pass": true
+    },
+    {
+      "detail": {
+        "3": [
+          26,
+          52,
+          3
+        ],
+        "5": [
+          124,
+          248,
+          3
+        ],
+        "6": [
+          215,
+          430,
+          3
+        ],
+        "7": [
+          342,
+          684,
+          3
+        ]
+      },
+      "name": "periodic cubic chain ranks and H1 are exact on train and held sizes",
+      "pass": true
+    },
+    {
+      "detail": {
+        "3": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "5": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "6": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "7": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ]
+      },
+      "name": "three axial Wilsons are cycles with identity dual-cocycle pairing",
+      "pass": true
+    },
+    {
+      "detail": {
+        "3": [
+          1,
+          1,
+          1
+        ],
+        "5": [
+          1,
+          1,
+          1
+        ],
+        "6": [
+          1,
+          1,
+          1
+        ],
+        "7": [
+          1,
+          1,
+          1
+        ]
+      },
+      "name": "no axial Wilson is a static plaquette two-chain boundary in the unchanged torus",
+      "pass": true
+    },
+    {
+      "detail": {
+        "3": [
+          3,
+          55
+        ],
+        "5": [
+          3,
+          251
+        ],
+        "6": [
+          3,
+          433
+        ],
+        "7": [
+          3,
+          687
+        ]
+      },
+      "name": "three formal cap attachments kill exactly the three H1 characters",
+      "pass": true
+    },
+    {
+      "detail": {
+        "3": [
+          12,
+          13,
+          1.3333333333333333
+        ],
+        "5": [
+          40,
+          41,
+          0.96
+        ],
+        "6": [
+          60,
+          61,
+          0.8333333333333334
+        ],
+        "7": [
+          84,
+          85,
+          0.7346938775510204
+        ]
+      },
+      "name": "Cycle537 square-disk Euler surplus matches one killed character per axis",
+      "pass": true
+    },
+    {
+      "detail": {
+        "frames": 24,
+        "group_failures": 0,
+        "orbit_failures": 0,
+        "products": 576
+      },
+      "name": "proper-cubic all24/all576 transports the three homology classes as one set",
+      "pass": true
+    },
+    {
+      "detail": {
+        "3": [
+          2,
+          2,
+          2
+        ],
+        "5": [
+          2,
+          2,
+          2
+        ],
+        "6": [
+          2,
+          2,
+          2
+        ],
+        "7": [
+          2,
+          2,
+          2
+        ]
+      },
+      "name": "deletion control refuses a broken Wilson as a cap boundary",
+      "pass": true
+    },
+    {
+      "detail": {
+        "N2_pairs": 2,
+        "N4": 4,
+        "N8": 5,
+        "attempted": 3,
+        "required": 5
+      },
+      "name": "full N1-N8 permits only the narrow unchanged-torus static-fill exclusion",
+      "pass": true
+    },
+    {
+      "detail": [
+        "Authority: **none**",
+        "Audit: **unset**",
+        "not a general physical-M2",
+        "Added topology",
+        "Defect-mediated",
+        "Axiom pressure: **none**",
+        "Breakthrough bar: **not met**"
+      ],
+      "name": "Cycle637 note preserves the narrow scope and open-route firewall",
+      "pass": true
+    }
+  ],
+  "tests_failed": 0,
+  "tests_passed": 10,
+  "upstream_hashes": {
+    "Cycle269": "d5a39e45949cf079f6c37fa5646d00a9319d7d2776d84323d9adf1c086e06beb",
+    "Cycle532": "5f668f6cc04a5eece23f913d5869f57553df583c23d6dbb5cdac6756be41bfc3",
+    "Cycle535": "169990a0af77c49a24b7e8f27999359e524c7c4f90bfba983cc970ec27d8ecc2",
+    "Cycle537": "e413a8c079fa2d5ff14d1b46d19df60cd07d853d118b51d8494632cc03a427f8",
+    "no_go_skill": "9814b094837d11dcf223863851e4f53193d1c307835d80178af195f535f52e71"
+  }
+}

@@ -1,0 +1,855 @@
+{
+  "Cycle532_baseline_improved": false,
+  "audit": "unset",
+  "author_accepted": false,
+  "author_artifact_status_accepted": false,
+  "authority": "none",
+  "axiom_pressure": false,
+  "breakthrough": false,
+  "breakthrough_bar_met": false,
+  "breakthrough_default": "no",
+  "broad_negative_gate": "FAIL / DO NOT SHIP",
+  "classification": "bounded paired-neutral discriminator; conditional fixed-sector positive and route-specific stream/topology negatives",
+  "constitutional_effect": "none",
+  "constraint_and_deletion_controls": {
+    "Wilson_deletion_signals": true,
+    "accepted_equal_words": 2,
+    "independent_basis_deletion_signals": true,
+    "local_pair_words": 4,
+    "pass": true,
+    "redundant_row_deletion_is_not_a_signal": true,
+    "rejected_unequal_words": 2
+  },
+  "decisive_negative_at_route_scope": "the exact intermediate-occupation phase repairs the three-mode intertwiner to zero but maps to supports 112/340/448 on L3/L6/L7; bounded local-only constraints leave exactly three extra characters, so paired neutrality neither supplies a bounded full stream nor removes Cycle532's topological initialization",
+  "elapsed_seconds": 0.8370715000201017,
+  "exact_corrected_stream_surface": {
+    "bounded_support_uniform_in_L": false,
+    "corrected_word_residual": 0.0,
+    "endpoint_shortcut_used_as_result": false,
+    "exact_intermediate_sign_word": "endpoint paired swap times the product of logical parities over the selected fixed-order interval",
+    "pass_as_growth_discriminator": true,
+    "rows": [
+      {
+        "endpoint_only_local_support_M2": 20,
+        "length": 3,
+        "maximum_exact_corrected_stream_support_M2": 112,
+        "maximum_gauge_prefix_surface_M2": 96,
+        "maximum_intermediate_logical_modes": 54,
+        "outer_stream_edges": 81,
+        "split": "train"
+      },
+      {
+        "endpoint_only_local_support_M2": 20,
+        "length": 6,
+        "maximum_exact_corrected_stream_support_M2": 340,
+        "maximum_gauge_prefix_surface_M2": 324,
+        "maximum_intermediate_logical_modes": 216,
+        "outer_stream_edges": 648,
+        "split": "held"
+      },
+      {
+        "endpoint_only_local_support_M2": 20,
+        "length": 7,
+        "maximum_exact_corrected_stream_support_M2": 448,
+        "maximum_gauge_prefix_surface_M2": 432,
+        "maximum_intermediate_logical_modes": 294,
+        "outer_stream_edges": 1029,
+        "split": "held-out-size"
+      }
+    ]
+  },
+  "exact_target": "one paired-neutral same code on L3/L6/L7, exact equality dependency rank, explicit E or nonlocal surface witness, bounded mapped stream plus onsite word, odd/rank73 availability, all24/all576 and local constraint/deletion/leakage controls",
+  "interpretation_firewall": {
+    "endpoint_swap_is_actual_CAR_stream": false,
+    "factor_schedule_is_time": false,
+    "generator_element_is_rate": false,
+    "onsite_even_algebra_word_is_full_compiler": false,
+    "relative_rung_E_is_unconditional_state_preparation": false,
+    "spectator_copy_is_Record": false,
+    "supplied_spin_vacuum_is_bounded_E": false,
+    "wrapped_phase_is_energy": false
+  },
+  "mapped_onsite_word_and_fixtures": {
+    "analytic_mass": 0.4534056541748852,
+    "coin_dimension": 64,
+    "coin_factor_deletion_signal": 1.9999999999999996,
+    "coin_reconstruction_residual": 5.5475755987250936e-15,
+    "coin_two_level_or_phase_factors": 832,
+    "complete_bounded_stream_on_same_code": false,
+    "contact_diagonal_factors": 57,
+    "contact_factor_deletion_signal": 0.36789306705608243,
+    "contact_pair_code_EG_residual": 0.0,
+    "literal_support_one_two_M2_lowering_executed": false,
+    "mapped_word_scope": "each paired two-level factor is an even operator on the twelve doubled modes and hence has a bounded Cycle235/BKSF image on the 42 incident doubled-graph edge M2s",
+    "maximum_mapped_onsite_face_edge_support_M2": 42,
+    "one_particle_available_as_local_pair_flux": true,
+    "original_L3_principal_sea_rank": 73,
+    "pair_code_E_shape": [
+      4096,
+      64
+    ],
+    "paired_coin_EG_residual": 5.5475755987250936e-15,
+    "paired_coin_code_leakage": 0.0,
+    "paired_even_CAR_word_sha256": "d547403b4f49237b39b96c73b9ebf941acdc92d58a0cf098351f35305cd493ac",
+    "paired_sea_occupation_count": 146,
+    "pass": true,
+    "rank73_seam_state_available": true,
+    "rest_mass": 0.4534056541748851
+  },
+  "maximum_RSS_bytes": 174096384,
+  "no_go_discipline": {
+    "N1_live_routes": [
+      "Cycle532 spin preparation",
+      "auxiliary Majorana/link code",
+      "tensor pull-through code",
+      "resource-accounted dissipative preparation",
+      "periodic topology repair"
+    ],
+    "N1_normalized_families": [
+      {
+        "family": "fixed-Wilson paired ladder",
+        "marker": "ATTEMPTED",
+        "mechanism": "two Cycle235 layers, rungs, equality rank 6N-1",
+        "object": "36N edge/rung M2 code",
+        "result": "rank/E pass conditional on supplied spin vacuum",
+        "terminal": "exact 6N rank and local relative E"
+      },
+      {
+        "family": "intermediate-sign paired stream",
+        "marker": "ATTEMPTED",
+        "mechanism": "endpoint word plus exact middle-parity correction",
+        "object": "actual nonadjacent CAR exchange",
+        "result": "EG passes; support grows 112/340/448",
+        "terminal": "same-code EG and bounded support"
+      },
+      {
+        "family": "paired onsite even-algebra word",
+        "marker": "ATTEMPTED",
+        "mechanism": "explicit two-level paired basis word then Cycle235 map",
+        "object": "six-mode coin/contact on twelve doubled modes",
+        "result": "bounded cell word passes; primitive M2 lowering remains",
+        "terminal": "coin/contact EG, leakage and deletion"
+      },
+      {
+        "family": "local-only ladder subsystem",
+        "marker": "ATTEMPTED",
+        "mechanism": "bounded loops, squares and paired equalities",
+        "object": "unfixed three cycle characters",
+        "result": "code exponent is 6N+3",
+        "terminal": "one exact 6N common code without loop selection"
+      },
+      {
+        "family": "Cycle532 rough subsystem baseline",
+        "marker": "RULED OUT BY PRIOR",
+        "mechanism": "target times N-1 gauge factor",
+        "object": "22N rough face code",
+        "result": "conditional algebra passes; three spin initializers and E remain open",
+        "terminal": "bounded full-Fock algebra with local state E"
+      },
+      {
+        "family": "open/rough cut comparator",
+        "marker": "ATTEMPTED",
+        "mechanism": "remove seams or add a local initialization protocol",
+        "object": "periodic H1 generators",
+        "result": "a fixed cut changes the periodic domain; local initialization remains live",
+        "terminal": "kill twists while preserving periodic seam and covariance"
+      }
+    ],
+    "N2_directional_independence": [
+      {
+        "independence": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_stream",
+        "left_to_right": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_spin_E",
+        "right_to_left": {
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_stream",
+        "left_to_right": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_primitive",
+        "right_to_left": {
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_stream",
+        "left_to_right": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_placement",
+        "right_to_left": {
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_stream",
+        "left_to_right": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_periodic_rough",
+        "right_to_left": {
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_spin_E",
+        "left_to_right": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_primitive",
+        "right_to_left": {
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_spin_E",
+        "left_to_right": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_placement",
+        "right_to_left": {
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_spin_E",
+        "left_to_right": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_periodic_rough",
+        "right_to_left": {
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_primitive",
+        "left_to_right": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_placement",
+        "right_to_left": {
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_primitive",
+        "left_to_right": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_periodic_rough",
+        "right_to_left": {
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_placement",
+        "left_to_right": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_periodic_rough",
+        "right_to_left": {
+          "status": "NOT_ESTABLISHED"
+        }
+      }
+    ],
+    "N2_independence_complete": false,
+    "N2_walls": {
+      "W_periodic_rough": "rough repair preserving the periodic seam and translations",
+      "W_placement": "physical role genesis and fine-site placement",
+      "W_primitive": "literal one/two-M2 lowering of the bounded onsite macro",
+      "W_spin_E": "bounded preparation of the three-character spin vacuum",
+      "W_stream": "bounded exact intermediate-sign stream on the paired code"
+    },
+    "N3_explicit_supplied_structure": [
+      "doubled graph",
+      "data/spectator role split",
+      "paired equality signs",
+      "CSS/framing presentation",
+      "three all-plus Wilson characters",
+      "spin vacuum",
+      "Fock order and middle sign",
+      "coin/contact/order/precision",
+      "periodic domains",
+      "macro placement and primitive synthesis"
+    ],
+    "N3_hidden_wall_phrases": [
+      "we assume",
+      "by construction",
+      "as is standard",
+      "the framework provides",
+      "bridge context",
+      "background",
+      "naturally",
+      "obviously",
+      "standard qft",
+      "registered",
+      "canonical"
+    ],
+    "N3_note_phrase_hits": [],
+    "N4_cited_lines_exist": true,
+    "N4_exact_residual_matching": [
+      {
+        "current_line": 246,
+        "current_path": "scripts/physical_paired_neutral_gauge_compiler_discriminator_cycle635_2026_07_23.py",
+        "current_residual": "same intermediate sign is preserved exactly and its gauge surface is measured",
+        "exact_match": true,
+        "prior_line": 37,
+        "prior_path": "docs/work_history/repo/review_feedback/PARITY_DOUBLING_SPECTATOR_COMPILER_CYCLE248_NOTE_2026-07-17.md",
+        "prior_residual": "local paired state map does not make the actual CAR image local",
+        "same_scope": true,
+        "use_as_closure": false
+      },
+      {
+        "current_line": 201,
+        "current_path": "scripts/physical_paired_neutral_gauge_compiler_discriminator_cycle635_2026_07_23.py",
+        "current_residual": "doubling plus equality rank 6N-1 restores exact exponent 6N after spin fixation",
+        "exact_match": true,
+        "prior_line": 68,
+        "prior_path": "docs/work_history/repo/review_feedback/EXACT_3D_HIGHER_FORM_BOSONIZATION_CYCLE235_NOTE_2026-07-17.md",
+        "prior_residual": "closed face code exponent is 6N-1",
+        "same_scope": true,
+        "use_as_closure": true
+      },
+      {
+        "current_line": 446,
+        "current_path": "scripts/physical_paired_neutral_gauge_compiler_discriminator_cycle635_2026_07_23.py",
+        "current_residual": "paired equalities leave exactly the same three-rank deficit",
+        "exact_match": true,
+        "prior_line": 45,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md",
+        "prior_residual": "three spin/Wilson twists remain under bounded checks",
+        "same_scope": true,
+        "use_as_closure": false
+      },
+      {
+        "current_line": 530,
+        "current_path": "scripts/physical_paired_neutral_gauge_compiler_discriminator_cycle635_2026_07_23.py",
+        "current_residual": "local-only paired code has exponent 6N+3",
+        "exact_match": true,
+        "prior_line": 101,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_SAME_CODE_HIGHER_FORM_FERMION_ENCODING_TOURNAMENT_CYCLE622_NOTE_2026-07-22.md",
+        "prior_residual": "three H1 flux sectors are not locally selected",
+        "same_scope": true,
+        "use_as_closure": false
+      },
+      {
+        "current_line": 377,
+        "current_path": "scripts/physical_paired_neutral_gauge_compiler_discriminator_cycle635_2026_07_23.py",
+        "current_residual": "exact sign is restored only by the measured growing surface in this route",
+        "exact_match": false,
+        "prior_line": 100,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_NON_DIAGONAL_LINK_QUDIT_SAME_CODE_FERMION_COMPILER_TOURNAMENT_CYCLE628_NOTE_2026-07-22.md",
+        "prior_residual": "local graded face block misses the full stream sign",
+        "same_scope": false,
+        "use_as_closure": false
+      }
+    ],
+    "N5_five_resolution_rhetoric_audit": [
+      {
+        "claim": "paired neutrality repairs rank but not the bounded stream",
+        "lattice_wide": "three Wilson characters remain",
+        "per_block": "onsite word is bounded while exact stream support grows",
+        "per_element": "each equality has weight ten",
+        "per_mode": "six pairs per cell",
+        "per_site": "one data/spectator rung per logical mode"
+      },
+      {
+        "claim": "the relative E is local only with supplied spin vacuum",
+        "lattice_wide": "Omega_spin preparation is not built",
+        "per_block": "coin/contact act on the same paired code",
+        "per_element": "one rung toggler per occupied mode",
+        "per_mode": "all occupation words are injective",
+        "per_site": "paired B eigenvalues change together"
+      },
+      {
+        "claim": "the endpoint shortcut is rejected, not reused",
+        "lattice_wide": "support grows across L3/L6/L7",
+        "per_block": "gauge prefix surface is enumerated",
+        "per_element": "middle phase is executed",
+        "per_mode": "three-mode corrected residual is zero",
+        "per_site": "failed words 011 and 110 are detected"
+      },
+      {
+        "claim": "the rough/subsystem route does not select one code",
+        "lattice_wide": "one E still needs a character state",
+        "per_block": "unspecified characters give eight sectors",
+        "per_element": "bounded loop rows are local",
+        "per_mode": "logical exponent gains three",
+        "per_site": "equality rows do not span Wilson X cycles"
+      },
+      {
+        "claim": "Cycle532 remains stronger conditionally",
+        "lattice_wide": "its three initialization signs remain its one typed wall",
+        "per_block": "onsite/contact are bounded",
+        "per_element": "its B support is thirteen",
+        "per_mode": "both parities are present",
+        "per_site": "twenty-two M2 per cell"
+      }
+    ],
+    "N6_partial_closure_paths": [
+      {
+        "file": "docs/work_history/repo/review_feedback/EXACT_3D_HIGHER_FORM_BOSONIZATION_CYCLE235_NOTE_2026-07-17.md",
+        "status": "PINNED_EVEN_ALGEBRA_PARENT",
+        "what_closes": "one-layer graph, loop ranks and proper-cubic framing"
+      },
+      {
+        "file": "docs/work_history/repo/review_feedback/PARITY_DOUBLING_SPECTATOR_COMPILER_CYCLE248_NOTE_2026-07-17.md",
+        "status": "PINNED_PAIR_CODE_PARENT",
+        "what_closes": "local equality isometry and intermediate-sign witness"
+      },
+      {
+        "file": "outputs/physical_rough_gauge_subsystem_quotient_cycle532_receipt_2026_07_21.json",
+        "status": "PINNED_STRONGEST_BASELINE",
+        "what_closes": "conditional bounded full-Fock algebra, not spin preparation"
+      },
+      {
+        "file": "outputs/physical_same_code_higher_form_fermion_encoding_tournament_cycle622_receipt_2026_07_22.json",
+        "status": "PINNED_HOMOLOGY_PARENT",
+        "what_closes": "L3/L6/L7 H1/H2 and same-code route boundaries"
+      },
+      {
+        "file": "outputs/physical_non_diagonal_link_qudit_same_code_fermion_compiler_tournament_cycle628_receipt_2026_07_22.json",
+        "status": "PINNED_NONDIAGONAL_PARENT",
+        "what_closes": "one face-qudit and prefix/twist route scope"
+      }
+    ],
+    "N7_cited_actionable_steelman": {
+      "action": "attack Cycle532's three-character preparation directly before adding more occupation spectators",
+      "citations": [
+        {
+          "line": 451,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md",
+          "supports": "measurement, dissipative and topology repairs remain live"
+        },
+        {
+          "line": 317,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_NON_DIAGONAL_LINK_QUDIT_SAME_CODE_FERMION_COMPILER_TOURNAMENT_CYCLE628_NOTE_2026-07-22.md",
+          "supports": "tensor-network and higher-group routes remain live"
+        }
+      ],
+      "mechanism": "use bounded syndrome extraction and a resource-accounted convergence law, or retain local gauge degrees that supply the incident-edge Clifford signs without a fixed ordering surface",
+      "steelman": "A local measurement/reset or dissipative preparation of the three spin characters, or a different auxiliary Majorana/subsystem presentation, could combine a bounded E with Cycle532's already bounded full-Fock algebra.",
+      "terminal_obligation": "one same code with bounded E, bounded stream/coin/contact, literal M2 lowering, L3/L6/L7, all24/all576, and no supplied Wilson character"
+    },
+    "N7_cited_lines_exist": true,
+    "N8_cited_lines_exist": true,
+    "N8_rowwise_cross_cycle_echo": [
+      {
+        "applicability": "RETIRES_DIMENSION_SLICE_ONLY",
+        "citation_line": 68,
+        "citation_path": "docs/work_history/repo/review_feedback/EXACT_3D_HIGHER_FORM_BOSONIZATION_CYCLE235_NOTE_2026-07-17.md",
+        "could_apply_here": true,
+        "cycle": "Cycle235",
+        "echo": "closed face code loses one parity bit",
+        "effect": "full rank restored; locality/topology remain",
+        "mechanism": "paired-neutral doubled graph",
+        "prior_line": 68,
+        "prior_path": "docs/work_history/repo/review_feedback/EXACT_3D_HIGHER_FORM_BOSONIZATION_CYCLE235_NOTE_2026-07-17.md",
+        "retired": true,
+        "retirement_mechanism": "doubled modes plus 6N-1 equality rank"
+      },
+      {
+        "applicability": "ACTIONABLE_STREAM_ROUTE",
+        "citation_line": 37,
+        "citation_path": "docs/work_history/repo/review_feedback/PARITY_DOUBLING_SPECTATOR_COMPILER_CYCLE248_NOTE_2026-07-17.md",
+        "could_apply_here": true,
+        "cycle": "Cycle248",
+        "echo": "paired state code retains a CAR sign surface",
+        "effect": "blocks bounded stream credit",
+        "mechanism": "local sign-carrying gauge auxiliary",
+        "prior_line": 37,
+        "prior_path": "docs/work_history/repo/review_feedback/PARITY_DOUBLING_SPECTATOR_COMPILER_CYCLE248_NOTE_2026-07-17.md",
+        "retired": false,
+        "retirement_mechanism": null
+      },
+      {
+        "applicability": "ACTIONABLE_TOPLOGICAL_E_ROUTE",
+        "citation_line": 45,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md",
+        "could_apply_here": true,
+        "cycle": "Cycle532",
+        "echo": "three spin characters remain",
+        "effect": "prevents unconditional E",
+        "mechanism": "local initialization protocol",
+        "prior_line": 45,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md",
+        "retired": false,
+        "retirement_mechanism": null
+      },
+      {
+        "applicability": "ACTIONABLE_HOMOLOGY_ROUTE",
+        "citation_line": 101,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_SAME_CODE_HIGHER_FORM_FERMION_ENCODING_TOURNAMENT_CYCLE622_NOTE_2026-07-22.md",
+        "could_apply_here": true,
+        "cycle": "Cycle622",
+        "echo": "H1 sectors remain under local constraints",
+        "effect": "matches three-rank deficit",
+        "mechanism": "bounded spin preparation or topology repair",
+        "prior_line": 101,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_SAME_CODE_HIGHER_FORM_FERMION_ENCODING_TOURNAMENT_CYCLE622_NOTE_2026-07-22.md",
+        "retired": false,
+        "retirement_mechanism": null
+      }
+    ],
+    "axiom_pressure": false,
+    "axiom_pressure_gate": "FAIL / DO NOT SHIP",
+    "broad_negative_gate": "FAIL / DO NOT SHIP",
+    "minimum_content_gate": "FAIL / DO NOT SHIP",
+    "narrow_positive_gate": "PASS / SHIP WITH FIREWALL",
+    "negative_claim_shipped": false,
+    "shared_obstruction_gate": "FAIL / DO NOT SHIP",
+    "shared_route_independent_obstruction": false,
+    "skill_freshness": {
+      "current_origin_main_followed": true,
+      "origin_main_checked": true,
+      "origin_main_skill_sha256": "7d1aea8243ddd972331b935e2e836657e72115da3efe259f828fe862469d68b7",
+      "proof_search_governance_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    }
+  },
+  "note_contract": {
+    "missing": [],
+    "pass": true,
+    "required": [
+      "cycle 635",
+      "authority none",
+      "audit unset",
+      "one relation",
+      "36 m2",
+      "l3/l6/l7",
+      "all24",
+      "all576",
+      "intermediate occupation",
+      "112",
+      "340",
+      "448",
+      "rank 73",
+      "cycle 532",
+      "22 m2",
+      "three topological",
+      "supplied gauge vacuum",
+      "not full compiler",
+      "n1",
+      "n8",
+      "same_scope",
+      "exact_match",
+      "use_as_closure",
+      "per_element",
+      "per_site",
+      "per_mode",
+      "per_block",
+      "lattice_wide",
+      "what_closes",
+      "actionable",
+      "no axiom pressure"
+    ]
+  },
+  "note_sha256": "93ceb2bb82205754dc121f4e83563c66ccd13eb683404b81538cdeee390e5815",
+  "optimal_next_campaign": "attack Cycle532's three fixed spin characters directly with bounded measurement/reset, dissipative convergence, or a periodic topology repair; require an explicit state E and literal M2 primitive word before adding more occupation spectators",
+  "paired_ladder_rank_and_constraints": {
+    "doubled_graph": "data and spectator copies of all 15N Cycle235 dual edges plus 6N local rungs",
+    "equality": "C_v=B_data,v B_spectator,v=+1",
+    "one_dependency": "product_v C_v=product_all_doubled_B=I",
+    "pass": true,
+    "rank_law": "36N-(24N+1)-(6N-1)=6N after three Wilson rows",
+    "rows": [
+      {
+        "M2_per_cell": 36,
+        "Wilson_weights": [
+          9,
+          9,
+          9
+        ],
+        "cells": 27,
+        "delete_one_Wilson_rank": 648,
+        "delete_one_independent_equality_rank": 160,
+        "delete_one_independent_local_rank": 645,
+        "delete_one_redundant_equality_rank": 161,
+        "equality_rank": 161,
+        "equality_relation_zero": true,
+        "fixed_code_exponent": 162,
+        "fixed_combined_rank": 810,
+        "fixed_loop_rank": 649,
+        "length": 3,
+        "local_code_exponent": 165,
+        "local_combined_rank": 807,
+        "local_loop_rank": 646,
+        "local_only_extra_characters": 3,
+        "maximum_equality_weight": 10,
+        "maximum_ladder_square_weight": 4,
+        "maximum_local_cycle_weight": 8,
+        "one_relation_expected_after_execution": 1,
+        "original_edges": 405,
+        "pass": true,
+        "physical_M2": 972,
+        "split": "train",
+        "target_full_Fock_exponent": 162,
+        "vertices": 162
+      },
+      {
+        "M2_per_cell": 36,
+        "Wilson_weights": [
+          18,
+          18,
+          18
+        ],
+        "cells": 216,
+        "delete_one_Wilson_rank": 5184,
+        "delete_one_independent_equality_rank": 1294,
+        "delete_one_independent_local_rank": 5181,
+        "delete_one_redundant_equality_rank": 1295,
+        "equality_rank": 1295,
+        "equality_relation_zero": true,
+        "fixed_code_exponent": 1296,
+        "fixed_combined_rank": 6480,
+        "fixed_loop_rank": 5185,
+        "length": 6,
+        "local_code_exponent": 1299,
+        "local_combined_rank": 6477,
+        "local_loop_rank": 5182,
+        "local_only_extra_characters": 3,
+        "maximum_equality_weight": 10,
+        "maximum_ladder_square_weight": 4,
+        "maximum_local_cycle_weight": 8,
+        "one_relation_expected_after_execution": 1,
+        "original_edges": 3240,
+        "pass": true,
+        "physical_M2": 7776,
+        "split": "held",
+        "target_full_Fock_exponent": 1296,
+        "vertices": 1296
+      },
+      {
+        "M2_per_cell": 36,
+        "Wilson_weights": [
+          21,
+          21,
+          21
+        ],
+        "cells": 343,
+        "delete_one_Wilson_rank": 8232,
+        "delete_one_independent_equality_rank": 2056,
+        "delete_one_independent_local_rank": 8229,
+        "delete_one_redundant_equality_rank": 2057,
+        "equality_rank": 2057,
+        "equality_relation_zero": true,
+        "fixed_code_exponent": 2058,
+        "fixed_combined_rank": 10290,
+        "fixed_loop_rank": 8233,
+        "length": 7,
+        "local_code_exponent": 2061,
+        "local_combined_rank": 10287,
+        "local_loop_rank": 8230,
+        "local_only_extra_characters": 3,
+        "maximum_equality_weight": 10,
+        "maximum_ladder_square_weight": 4,
+        "maximum_local_cycle_weight": 8,
+        "one_relation_expected_after_execution": 1,
+        "original_edges": 5145,
+        "pass": true,
+        "physical_M2": 12348,
+        "split": "held-out-size",
+        "target_full_Fock_exponent": 2058,
+        "vertices": 2058
+      }
+    ]
+  },
+  "paired_state_isometry_and_intermediate_sign": {
+    "E2_shape": [
+      16,
+      4
+    ],
+    "E3_dagger_E3_residual": 0.0,
+    "E3_shape": [
+      64,
+      8
+    ],
+    "corrected_coherent_state_residual": 0.0,
+    "corrected_full_code_leakage": 0.0,
+    "deleted_intermediate_sign_residual": 2.8284271247461903,
+    "failed_endpoint_basis_states": [
+      3,
+      6
+    ],
+    "intermediate_occupation_corrected_residual": 0.0,
+    "intermediate_phase": "(-1)^[n_middle (n_left xor n_right)]",
+    "isolated_two_mode_intertwiner_residual": 0.0,
+    "local_pair_charge_even_failures": 0,
+    "local_rung_flux_isometry": "E|n>=product_v T_rung,v^n_v |Omega_spin>; T_rung toggles the paired B eigenvalues and commutes with loop/equality checks in the CSS-equivalent presentation",
+    "nonadjacent_endpoint_only_residual": 2.8284271247461903,
+    "pass": true,
+    "supplied_gauge_vacuum_required": true
+  },
+  "pass": true,
+  "pins": {
+    "docs/work_history/repo/review_feedback/EXACT_3D_HIGHER_FORM_BOSONIZATION_CYCLE235_NOTE_2026-07-17.md": "295edee5608d3141fc3e3212bc51753265d953dadd68a8b44a66ed1e0e16e0d2",
+    "docs/work_history/repo/review_feedback/PARITY_DOUBLING_SPECTATOR_COMPILER_CYCLE248_NOTE_2026-07-17.md": "c1b0ee1e93901a07544cfce14ebf0e6280348fc008a0229ce05c4810caa4d7ce",
+    "docs/work_history/repo/review_feedback/PHYSICAL_NON_DIAGONAL_LINK_QUDIT_SAME_CODE_FERMION_COMPILER_TOURNAMENT_CYCLE628_NOTE_2026-07-22.md": "328a4269a4dcd2855723b448ac662faca1ec8ba35c08882c65830990092c28ef",
+    "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md": "5f668f6cc04a5eece23f913d5869f57553df583c23d6dbb5cdac6756be41bfc3",
+    "docs/work_history/repo/review_feedback/PHYSICAL_SAME_CODE_HIGHER_FORM_FERMION_ENCODING_TOURNAMENT_CYCLE622_NOTE_2026-07-22.md": "9e14328100329ce07dcf3df942a72443783aca9ddc79e78322731d8614b9ab19",
+    "outputs/physical_non_diagonal_link_qudit_same_code_fermion_compiler_tournament_cycle628_cold_2026_07_22.txt": "f2a41a0c85c851f7400d4f9178bcce49ae09d30e049ddd171404edfbc00fcce8",
+    "outputs/physical_non_diagonal_link_qudit_same_code_fermion_compiler_tournament_cycle628_receipt_2026_07_22.json": "f923d5afb19246a180d0d5fcc7f43e2c072c4d1b7a36decb387ed7019194c4b6",
+    "outputs/physical_rough_gauge_subsystem_quotient_cycle532_receipt_2026_07_21.json": "01f4716903ee1d0a2338d42a83001add9a0aaf5e0707e010380d99d21b7847b6",
+    "outputs/physical_same_code_higher_form_fermion_encoding_tournament_cycle622_cold_2026_07_22.txt": "f83055a3ffe330d87ff23021eb5675587dab57bd5bb2f7471edb40cdc229950f",
+    "outputs/physical_same_code_higher_form_fermion_encoding_tournament_cycle622_receipt_2026_07_22.json": "cee3fb81f46ada638e2af6425aa9bffe7abf8ad2fd000362af86df13c19044f7",
+    "scripts/exact_3d_higher_form_bosonization_cycle235_2026_07_17.py": "dd955ce629cde5e225b625be89f5f71045d688083a032b7bf104efa9b3f1bb34",
+    "scripts/parity_doubling_spectator_compiler_cycle248_2026_07_17.py": "bee5d2f602e44c3f0d810c359a42e5d8bda9ce89baa527500abf6aea52bfa252",
+    "scripts/physical_non_diagonal_link_qudit_same_code_fermion_compiler_tournament_cycle628_2026_07_22.py": "0bd2dc1b53bed2e76c867f0e3b7ff6b962f817258d3c32246cedf73dd061278b",
+    "scripts/physical_rough_gauge_subsystem_quotient_cycle532_2026_07_21.py": "a768d4250e55399c03e6084614a772953e6bcdf1570b9e7c50ac8d18544cfe6a",
+    "scripts/physical_same_code_higher_form_fermion_encoding_tournament_cycle622_2026_07_22.py": "93a273524be455c2b766f5096f38fedb30af4723b9a7a3f33976362261f6d3c5"
+  },
+  "proper_cubic_covariance": {
+    "all24_constraint_images": 20736,
+    "all576_M2_role_composition_checks": 559872,
+    "failures": {
+      "all576": 0,
+      "bijection": 0,
+      "equalities": 0,
+      "fixed_span": 0,
+      "local_cycles": 0,
+      "squares": 0
+    },
+    "fixed_order_prefix_is_not_translation_free": true,
+    "pass": true,
+    "proper_cubic_frames": 24,
+    "supplied_spin_vacuum_all_plus_is_frame_invariant": true
+  },
+  "route_disposition": {
+    "Cycle532_baseline_improved": false,
+    "Route_A": {
+      "bounded_full_stream": false,
+      "bounded_onsite_coin_contact": true,
+      "disposition": "PARTIAL POSITIVE / SAME CODE BUT NOT BOUNDED FULL UPDATE",
+      "exact_fixed_code_rank": true,
+      "local_relative_E": true,
+      "name": "paired face/edge flux on supplied spin vacuum",
+      "reason": "the exact intermediate-occupation phase is a growing parity surface in this displayed paired occupation map",
+      "supplied_gauge_vacuum": true
+    },
+    "Route_B": {
+      "Cycle532_comparator": {
+        "M2_per_cell": 22,
+        "bounded_full_Fock_algebra_already_closed": true,
+        "bounded_initializer_or_E": false,
+        "three_topological_characters": 3
+      },
+      "disposition": "DOES NOT REMOVE TOPOLOGICAL INITIALIZATION",
+      "exact_reason": "bounded rows have rank 30N-3; equality rows are Z-type with one relation and do not span the three missing X-cycle rows",
+      "local_only_code_excess_qubits": [
+        3,
+        3,
+        3
+      ],
+      "name": "local-only subsystem/rough route without Wilson selection",
+      "three_characters_removed_by_pair_equalities": false,
+      "treating_characters_as_unspecified_gauge_gives_one_E": false
+    },
+    "pass": true,
+    "shared_obstruction_or_axiom_pressure": false,
+    "strongest_same_code_positive": "fixed-Wilson 36-M2/cell paired ladder with exact exponent 6N, local relative rung-flux E, bounded mapped onsite coin/contact, both logical parities, one-particle and rank-73 states",
+    "why_not": "Cycle532 already has 22 M2/cell and bounded full-Fock B/onsite/contact; Cycle635 adds a local relative E only after supplying a spin vacuum, but its exact stream surface grows and it leaves the same three initialization characters"
+  },
+  "runner_sha256": "b3405f58d7700587ee53fd586dd3fc1641e84a82dbf9b1c7b7cca3ec61c9d19c",
+  "shared_obstruction_or_axiom_pressure": false,
+  "shared_route_independent_obstruction": false,
+  "shore": {
+    "Cycle532_baseline": {
+      "Wilson_initializers": 3,
+      "both_parities": true,
+      "bounded_B_support": 13,
+      "bounded_E_or_initializer": false,
+      "contact_support": 12,
+      "full_Fock_target_factor": "6N",
+      "local_only_extra_characters": 3,
+      "onsite_support": 7,
+      "physical_M2_per_cell": 22
+    },
+    "Cycle532_pass": true,
+    "Cycle622_pass": true,
+    "Cycle628_pass": true,
+    "audits": [
+      "unset",
+      "unset",
+      "unset"
+    ],
+    "authorities": [
+      "none",
+      "none",
+      "none"
+    ],
+    "hashes_match": true,
+    "observed": {
+      "docs/work_history/repo/review_feedback/EXACT_3D_HIGHER_FORM_BOSONIZATION_CYCLE235_NOTE_2026-07-17.md": "295edee5608d3141fc3e3212bc51753265d953dadd68a8b44a66ed1e0e16e0d2",
+      "docs/work_history/repo/review_feedback/PARITY_DOUBLING_SPECTATOR_COMPILER_CYCLE248_NOTE_2026-07-17.md": "c1b0ee1e93901a07544cfce14ebf0e6280348fc008a0229ce05c4810caa4d7ce",
+      "docs/work_history/repo/review_feedback/PHYSICAL_NON_DIAGONAL_LINK_QUDIT_SAME_CODE_FERMION_COMPILER_TOURNAMENT_CYCLE628_NOTE_2026-07-22.md": "328a4269a4dcd2855723b448ac662faca1ec8ba35c08882c65830990092c28ef",
+      "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md": "5f668f6cc04a5eece23f913d5869f57553df583c23d6dbb5cdac6756be41bfc3",
+      "docs/work_history/repo/review_feedback/PHYSICAL_SAME_CODE_HIGHER_FORM_FERMION_ENCODING_TOURNAMENT_CYCLE622_NOTE_2026-07-22.md": "9e14328100329ce07dcf3df942a72443783aca9ddc79e78322731d8614b9ab19",
+      "outputs/physical_non_diagonal_link_qudit_same_code_fermion_compiler_tournament_cycle628_cold_2026_07_22.txt": "f2a41a0c85c851f7400d4f9178bcce49ae09d30e049ddd171404edfbc00fcce8",
+      "outputs/physical_non_diagonal_link_qudit_same_code_fermion_compiler_tournament_cycle628_receipt_2026_07_22.json": "f923d5afb19246a180d0d5fcc7f43e2c072c4d1b7a36decb387ed7019194c4b6",
+      "outputs/physical_rough_gauge_subsystem_quotient_cycle532_receipt_2026_07_21.json": "01f4716903ee1d0a2338d42a83001add9a0aaf5e0707e010380d99d21b7847b6",
+      "outputs/physical_same_code_higher_form_fermion_encoding_tournament_cycle622_cold_2026_07_22.txt": "f83055a3ffe330d87ff23021eb5675587dab57bd5bb2f7471edb40cdc229950f",
+      "outputs/physical_same_code_higher_form_fermion_encoding_tournament_cycle622_receipt_2026_07_22.json": "cee3fb81f46ada638e2af6425aa9bffe7abf8ad2fd000362af86df13c19044f7",
+      "scripts/exact_3d_higher_form_bosonization_cycle235_2026_07_17.py": "dd955ce629cde5e225b625be89f5f71045d688083a032b7bf104efa9b3f1bb34",
+      "scripts/parity_doubling_spectator_compiler_cycle248_2026_07_17.py": "bee5d2f602e44c3f0d810c359a42e5d8bda9ce89baa527500abf6aea52bfa252",
+      "scripts/physical_non_diagonal_link_qudit_same_code_fermion_compiler_tournament_cycle628_2026_07_22.py": "0bd2dc1b53bed2e76c867f0e3b7ff6b962f817258d3c32246cedf73dd061278b",
+      "scripts/physical_rough_gauge_subsystem_quotient_cycle532_2026_07_21.py": "a768d4250e55399c03e6084614a772953e6bcdf1570b9e7c50ac8d18544cfe6a",
+      "scripts/physical_same_code_higher_form_fermion_encoding_tournament_cycle622_2026_07_22.py": "93a273524be455c2b766f5096f38fedb30af4723b9a7a3f33976362261f6d3c5"
+    }
+  },
+  "six_wall_ledger": {
+    "C_int": "bounded paired onsite coin/contact macros and mass fixture survive; complete stream and literal primitive lowering remain open",
+    "C_local": "36 M2/cell fixed-sector code is exact, but it is less efficient than Cycle532 and has no bounded complete stream or spin-vacuum preparation",
+    "C_num": "exact 6N fixed-sector rank and paired-basis actions; no unconditional full-M64 physical code",
+    "C_ref": "paired roles, CSS framing, fixed tensor order, three Wilson signs, and Omega_spin remain supplied",
+    "C_source": "unchanged; spectator neutrality is not an energy/stress/source law",
+    "C_wrap": "three topological characters and the growing fixed-order sign surface remain; no schedule is time"
+  },
+  "status": "cycle635-paired-neutral-gauge-compiler-discriminator",
+  "strongest_constructive_result": "after fixing three Wilson characters, the 36-M2/cell doubled Cycle235 ladder plus 6N paired equalities of rank 6N-1 has exact exponent 6N; a supplied spin vacuum admits a local rung-flux basis E, the mapped paired onsite coin/contact word is bounded, and odd one-particle/rank73 states exist",
+  "supplied_structure": [
+    "two copies of the Cycle235 dual graph plus six rungs per cell",
+    "data/spectator labels and equality signs",
+    "CSS-equivalent framing and local Clifford repair",
+    "three all-plus Wilson characters and the spin vacuum",
+    "Fock tensor order and exact intermediate parity word",
+    "coin beta/contact coupling/factor order/precision",
+    "periodic L3/L6/L7 domains",
+    "36-role macro placement and future literal primitive synthesis"
+  ],
+  "tests_failed": 0,
+  "tests_passed": 11
+}

@@ -1,0 +1,18 @@
+PASS committed Cycle269/532/535/537 and current no-go shores are readable :: {'Cycle269': 'd5a39e45949cf079f6c37fa5646d00a9319d7d2776d84323d9adf1c086e06beb', 'Cycle532': '5f668f6cc04a5eece23f913d5869f57553df583c23d6dbb5cdac6756be41bfc3', 'Cycle535': '169990a0af77c49a24b7e8f27999359e524c7c4f90bfba983cc970ec27d8ecc2', 'Cycle537': 'e413a8c079fa2d5ff14d1b46d19df60cd07d853d118b51d8494632cc03a427f8', 'no_go_skill': '9814b094837d11dcf223863851e4f53193d1c307835d80178af195f535f52e71'}
+PASS periodic cubic chain ranks and H1 are exact on train and held sizes :: {3: [26, 52, 3], 5: [124, 248, 3], 6: [215, 430, 3], 7: [342, 684, 3]}
+PASS three axial Wilsons are cycles with identity dual-cocycle pairing :: {3: [[1, 0, 0], [0, 1, 0], [0, 0, 1]], 5: [[1, 0, 0], [0, 1, 0], [0, 0, 1]], 6: [[1, 0, 0], [0, 1, 0], [0, 0, 1]], 7: [[1, 0, 0], [0, 1, 0], [0, 0, 1]]}
+PASS no axial Wilson is a static plaquette two-chain boundary in the unchanged torus :: {3: [1, 1, 1], 5: [1, 1, 1], 6: [1, 1, 1], 7: [1, 1, 1]}
+PASS three formal cap attachments kill exactly the three H1 characters :: {3: [3, 55], 5: [3, 251], 6: [3, 433], 7: [3, 687]}
+PASS Cycle537 square-disk Euler surplus matches one killed character per axis :: {3: [12, 13, 1.3333333333333333], 5: [40, 41, 0.96], 6: [60, 61, 0.8333333333333334], 7: [84, 85, 0.7346938775510204]}
+PASS proper-cubic all24/all576 transports the three homology classes as one set :: {'frames': 24, 'products': 576, 'group_failures': 0, 'orbit_failures': 0}
+PASS deletion control refuses a broken Wilson as a cap boundary :: {3: [2, 2, 2], 5: [2, 2, 2], 6: [2, 2, 2], 7: [2, 2, 2]}
+PASS full N1-N8 permits only the narrow unchanged-torus static-fill exclusion :: {'attempted': 3, 'required': 5, 'N2_pairs': 2, 'N4': 4, 'N8': 5}
+PASS Cycle637 note preserves the narrow scope and open-route firewall :: ['Authority: **none**', 'Audit: **unset**', 'not a general physical-M2', 'Added topology', 'Defect-mediated', 'Axiom pressure: **none**', 'Breakthrough bar: **not met**']
+{
+  "pass": true,
+  "tests_passed": 10,
+  "tests_failed": 0,
+  "elapsed_seconds": 0.015600916929543018,
+  "maximum_RSS_bytes": 24461312,
+  "receipt": "/private/tmp/toe-science.BB0KQV/outputs/physical_unchanged_torus_cap_homology_discriminator_cycle637_receipt_2026_07_23.json"
+}

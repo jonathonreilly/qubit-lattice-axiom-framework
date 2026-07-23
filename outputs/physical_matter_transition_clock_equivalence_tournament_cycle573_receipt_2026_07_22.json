@@ -1,0 +1,157 @@
+{
+  "accepted_Cycle570_ancestor_commit": "5d609e37eacb9790ca741c4914ad2bbc3f2d86c7",
+  "audit": "unset",
+  "authority": "none",
+  "branch_head_equality_is_scientific_dependency": false,
+  "cold_internal_elapsed_seconds": 0.15873850003117695,
+  "cold_maximum_RSS_bytes": 75563008,
+  "controls": {
+    "E_G_and_inverse_tested": true,
+    "constant_bounded_overhead_on_declared_code": true,
+    "deletion_and_work_leakage_visible": true,
+    "generator_entry_called_rate": false,
+    "malformed_words_rejected": true,
+    "no_clock_dimension": true,
+    "phase_called_energy": false,
+    "projector_weight_called_probability": false,
+    "schedule_called_time": false,
+    "transition_receipt_called_Record_or_actuality": false,
+    "undefined_coerced_to_zero": false
+  },
+  "definitive_run_descendant_HEAD": "5d609e37eacb9790ca741c4914ad2bbc3f2d86c7",
+  "exact_pinned_dependencies": {
+    "Cycle219_runner_sha256": "ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a",
+    "Cycle230_runner_sha256": "b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae",
+    "Cycle563_receipt_sha256": "350e2c1922379bb42091e1cb5685c9e1f698ed23b81acf7c14803ba5043fcfc1",
+    "Cycle563_runner_sha256": "444a5c0fb3cb1758236ddefaeb472d0002cadb256d3c4df723fd562129c7325b",
+    "Cycle569_receipt_sha256": "c80aae229d3721b273d12188960e2a4b16402d10a982856bec76c465dad52baa",
+    "Cycle569_runner_sha256": "c0f06a9cc9ffc4dcfe1d80b94da10bbef81ca1c74fddddac48712b0a7c332ced",
+    "Cycle570_receipt_sha256": "f104399af621ded1b50e180e6fcce5f254008715b72191c6199fe4d583a8a806",
+    "Cycle570_runner_sha256": "853abe5470efd15b154d6cb348d49795a6fa84e77a62f0b21a79105892b1d415"
+  },
+  "frozen_split": {
+    "contact_phase": 0.37,
+    "held_refit_parameters": 0,
+    "route_A_held": {
+      "beta": -0.35,
+      "length": 4
+    },
+    "route_A_train": [
+      {
+        "beta": -0.2,
+        "length": 3
+      },
+      {
+        "beta": -0.3,
+        "length": 3
+      }
+    ],
+    "route_B_held_path_edges": [
+      3,
+      5
+    ],
+    "route_B_train_path_edges": [
+      1,
+      2
+    ],
+    "route_C_held_calibration_cycles": [
+      9,
+      17,
+      25
+    ],
+    "route_C_train_calibration_cycles": [
+      1,
+      3,
+      5
+    ]
+  },
+  "no_go_discipline": {
+    "N1_through_N8_executed": true,
+    "axiom_pressure": false,
+    "minimum_content_claim": false,
+    "route_specific_failure_promoted_to_shared_obstruction": false,
+    "shared_substrate_obstruction": false
+  },
+  "note_sha256": "7c27ee648c4865985c7286ebb8c332f6c91846cebb608aafab79222b4e2ef1b5",
+  "optimal_next_campaign": "derive or falsify autonomous localized/refocused transport of the scalar-even transition under the accepted free-plus-contact stream, then compare it against a dynamically independent face-carrier or field standard under source variation while keeping the recyclable work rail blank",
+  "pass": true,
+  "retained_physical_fixtures": {
+    "axis_seam_braid_residual": 0.0,
+    "contact_factorization_residual": 2.149937642474629e-15,
+    "one_particle_mass_residual": 8.7159799596118e-16
+  },
+  "route_A_bound_pair_transition": {
+    "EG_projective_and_inverse_pass": true,
+    "disposition": "positive exact projective period-two recurrence on the declared periodic k0 equal-direction bound-pair code",
+    "localization_preparation_and_beta_derived": false,
+    "maximum_residual": 1.1102230246251565e-15,
+    "maximum_terminal_support_M2": 3,
+    "physical_transition_word": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "supplied_endpoint_count_word": false,
+    "transition_basis_adjacent_Givens_upper_bound": 15
+  },
+  "route_B_transported_comparison": {
+    "disposition": "positive trapped local-SWAP comparison; freely streaming localized control remains partial",
+    "held_localized_free_stream_carrier_variation_signal": 0.028434180567826095,
+    "localized_free_stream_maximum_inverse_residual": 4.455691617270653e-15,
+    "maximum_covariance_residual": 1.7077998007762563e-16,
+    "maximum_physical_comparison_inverse_residual": 1.1120291758370948e-15,
+    "maximum_physical_comparison_norm_residual": 1.1102230246251565e-15,
+    "paired_frame_failures": 0,
+    "paired_frame_tests": 576,
+    "proper_cubic_frames": 24,
+    "transport_path_and_trap_supplied": true,
+    "universal_moving_clock_equivalence_claimed": false
+  },
+  "route_C_recyclable_echo": {
+    "EG_inverse_composition_and_rollover_exact": true,
+    "actual_matter_internal_M2": 12,
+    "disposition": "positive finite-capacity reusable calibration echo",
+    "fresh_host_supplied_work_M2_per_prefix": 0,
+    "ledger_capacity_before_alias": 256,
+    "logical_gates_per_opportunity": 40,
+    "maximum_matter_cycle_residual": 8.589666825289268e-16,
+    "maximum_terminal_support_M2": 3,
+    "recyclable_event_comparison_carry_M2": 4,
+    "refinement_ratio": 2,
+    "refinement_residual": 0,
+    "total_active_M2": 48,
+    "two_word_retained_ledger_M2": 32
+  },
+  "runner_sha256": "e959fa0ef29787b6eaca0fa0552ad3e921541432e11cdefffda7e9255472ff77",
+  "scope_boundary": {
+    "Born_probability_closed": false,
+    "FORMATION_Record_actuality_closed": false,
+    "axiom_pressure": false,
+    "broad_time_no_go_gate": "FAIL / DO NOT SHIP",
+    "continuum_Lorentz_proper_time_closed": false,
+    "empirical_dimensionful_scale_derived": false,
+    "highest_honest_terminal": "restricted k0/trapped dimensionless matter-transition equivalence plus finite recyclable calibration, not proper time",
+    "independent_clock_universality_closed": false,
+    "localized_autonomous_recurrence_closed": false,
+    "shared_substrate_obstruction": false,
+    "source_gravity_closed": false,
+    "trap_and_transport_law_derived": false,
+    "unbounded_noisy_recycling_closed": false
+  },
+  "six_wall_ledger": {
+    "C_int": "actual mass/contact recurrence consumed; common phase is not energy and no generator element is called a rate",
+    "C_local": "onsite projector/latch, adjacent transport, 48-M2 echo, support-three terminals, all24/all576; autonomous localization/trap derivation open",
+    "C_num": "exact projective, integer, composition and refinement residuals plus explicit localized leakage; no empirical scale",
+    "C_ref": "matter transition and finite recycling constructed; beta, preparation, trap, projector, comparison, and ledger reference supplied",
+    "C_source": "contact/source phase tested as common-mode variation only; no physical stress, gravity, or backreaction law",
+    "C_wrap": "fixed four-M2 work reservoir reused and two-word ledger crosses rollover to capacity 256; unbounded/noisy renewal open"
+  },
+  "status": "cycle573-physical-matter-transition-clock-equivalence-tournament",
+  "tests_passed": 7,
+  "tests_total": 7
+}

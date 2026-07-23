@@ -14457,6 +14457,126 @@ class JudicialPanelOrchestratorTest(unittest.TestCase):
         )
         self.assertEqual(len(record["votes"]), 4)
 
+    def test_panel_honors_campaign_worker_ceiling_in_waves(self):
+        m = _import("orchestrate_judicial_panel")
+        row = self._row()
+        wave_sizes = []
+
+        def fake_launch(
+            _packet, _row, judge_no, panel_no, _workdir, _prior,
+            _invocation_id, _manifest,
+        ):
+            return {
+                "judge": judge_no,
+                "panel": panel_no,
+                "auditor": f"judge-{judge_no}",
+            }
+
+        def fake_wait(jobs, _stall, **_kwargs):
+            wave_sizes.append(len(jobs))
+
+        with mock.patch.object(
+            m, "render_panel_packet", return_value=("packet", {}, "1" * 32)
+        ), mock.patch.object(
+            m, "launch_judge", side_effect=fake_launch
+        ), mock.patch.object(
+            m.batch, "wait_workers", side_effect=fake_wait
+        ), mock.patch.object(
+            m, "collect_vote", return_value=(self._vote(), "ok")
+        ), mock.patch.object(
+            m, "judicial_applyability_error", return_value=None
+        ), mock.patch.object(
+            m,
+            "apply_judgment",
+            return_value=(
+                True,
+                {"cid": "row", "result": "audited_clean", "commit": "abc"},
+            ),
+        ):
+            result = m.run_panel(
+                row,
+                {"row": row},
+                self.tmp,
+                1,
+                1,
+                1,
+                [],
+                max_workers=4,
+            )
+
+        self.assertEqual(result["result"], "audited_clean")
+        self.assertEqual(wave_sizes, [4, 1])
+
+    def test_valid_preserved_majority_replays_without_new_judges(self):
+        m = _import("orchestrate_judicial_panel")
+        row = self._row()
+        votes = [
+            self._vote(
+                _panel_judge=index,
+                _panel_auditor=f"resume-judge-{index}",
+            )
+            for index in range(1, 6)
+        ]
+        blob = m.judicial_blob(
+            row, votes[0], votes, 5, invocation_id="a" * 32
+        )
+        resume_dir = self.tmp / "resume"
+        resume_dir.mkdir()
+        judgment = resume_dir / (
+            f"judgment-{m.batch.artifact_key(row['claim_id'])}.json"
+        )
+        judgment.write_text(json.dumps(blob), encoding="utf-8")
+        current = self.tmp / "current"
+        current.mkdir()
+
+        with mock.patch.object(
+            m, "render_panel_packet", return_value=("packet", {}, "b" * 32)
+        ), mock.patch.object(
+            m, "judicial_applyability_error", return_value=None
+        ) as applyability, mock.patch.object(
+            m,
+            "apply_judgment",
+            return_value=(
+                True,
+                {"cid": "row", "result": "audited_clean", "commit": "abc"},
+            ),
+        ) as apply_judgment, mock.patch.object(
+            m, "launch_judge"
+        ) as launch:
+            result = m.run_panel(
+                row,
+                {"row": row},
+                current,
+                1,
+                1,
+                1,
+                [],
+                resume_workdirs=[resume_dir],
+            )
+
+        self.assertEqual(result["result"], "audited_clean")
+        applyability.assert_called_once()
+        apply_judgment.assert_called_once()
+        launch.assert_not_called()
+
+    def test_judicial_apply_uses_shared_generated_transaction(self):
+        m = _import("orchestrate_judicial_panel")
+        blob = {
+            "claim_id": "row",
+            "ratified_verdict": "audited_clean",
+            "sided_with": "first",
+        }
+        with mock.patch.object(
+            m.batch,
+            "commit_generated_transaction",
+            return_value={"ok": True, "result": "landed", "commit": "abc"},
+        ) as transaction:
+            ok, result = m.apply_judgment(blob, {}, self.tmp, 3)
+
+        self.assertTrue(ok)
+        self.assertEqual(result["commit"], "abc")
+        transaction.assert_called_once()
+
     def test_contract_invalid_vote_runs_fresh_full_panel(self):
         m = _import("orchestrate_judicial_panel")
         row = self._row()
@@ -14644,12 +14764,26 @@ class JudicialPanelOrchestratorTest(unittest.TestCase):
     def test_numeric_runtime_arguments_must_be_positive(self):
         m = _import("orchestrate_judicial_panel")
         valid = argparse.Namespace(
-            stall_minutes=1, runner_timeout_sec=1, push_retries=1
+            max_workers=1,
+            stall_minutes=1,
+            seat_timeout_sec=1,
+            runner_timeout_sec=1,
+            push_retries=1,
         )
         self.assertIsNone(m.runtime_arg_error(valid))
-        for field in ("stall_minutes", "runner_timeout_sec", "push_retries"):
+        for field in (
+            "max_workers",
+            "stall_minutes",
+            "seat_timeout_sec",
+            "runner_timeout_sec",
+            "push_retries",
+        ):
             invalid = argparse.Namespace(
-                stall_minutes=1, runner_timeout_sec=1, push_retries=1
+                max_workers=1,
+                stall_minutes=1,
+                seat_timeout_sec=1,
+                runner_timeout_sec=1,
+                push_retries=1,
             )
             setattr(invalid, field, 0)
             self.assertIn("must be positive", m.runtime_arg_error(invalid))

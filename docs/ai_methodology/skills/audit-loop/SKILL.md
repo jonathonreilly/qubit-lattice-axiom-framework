@@ -215,8 +215,14 @@ default session is:
    This command owns the complete control loop: finish pending judicial work,
    drain configured development lanes in order, immediately panel every fresh
    cross-seat disagreement, resume the same lane after the panel lands, repeat
-   until a full pass lands nothing new, then run one forensic canary. Raise
-   toward 6 workers only in a quiet pool per the budget below. The supervisor
+   until a full pass lands nothing new, then run one forensic canary.
+   `--max-workers` is the campaign-wide concurrent Codex-seat ceiling, not
+   merely a development-batch knob: a five-judge panel runs in bounded waves
+   (4+1 at the default) while still collecting one complete five-vote panel.
+   Four is the conservative default, not a universal optimum. It sits inside
+   the measured 4-6 quiet-pool sweet spot while reserving headroom in the
+   shared 8-10-process pool for review-loop and control work; raise toward 6
+   only when that shared pool is quiet. The supervisor
    holds the clone-wide audit lock for the complete campaign and hands that
    lock to its batch/panel children. It runs the panel sweep after every batch
    termination before propagating any unrelated hard batch failure, so a mixed
@@ -260,9 +266,26 @@ least every 15 minutes — never silence for a long run.
 
 ## Drain Liveness And Generated-State Recovery
 
-- A quiet worker is bounded by the configured stall timer, and every
-  supervisor phase continues to emit the 15-minute progress summary. Do not
-  leave a drain silently waiting past those bounds.
+- Bound every Codex seat by both inactivity and absolute wall time. Log churn
+  is not scientific progress and must never extend the wall deadline. The
+  default top-level command passes its `--codex-timeout-sec` to development
+  and judicial seats as `--seat-timeout-sec`.
+- Bound every batch/panel/canary child phase by `--phase-timeout-sec`.
+  Supervisor TERM/HUP/timeout handling must terminate the complete child
+  process group, and child handlers must cooperatively cancel pipeline
+  commands and detached seats. A 15-minute heartbeat is observability, not a
+  substitute for a deadline.
+- Persist phase start/end events and child artifact directories under the
+  top-level `--campaign-workdir`. A campaign that fails after producing a
+  validator-clean judicial majority must replay that preserved judgment only
+  after current source/seat fingerprint and applyability validation; it must
+  not spend five fresh judges merely because pipeline, lint, commit, push, or
+  the supervisor failed afterward.
+- To resume a known external panel artifact directory, pass
+  `--resume-panel-workdir <path>` to the top-level drainer. Reusing the same
+  `--campaign-workdir` automatically discovers prior panel phase directories.
+  Resume artifacts are selection hints only; the current apply validator and
+  generated gates remain the authority.
 - Tracked generated audit surfaces must be commit-invariant. Never embed the
   current `HEAD` commit in a tracked pipeline output: committing that output
   changes `HEAD` and guarantees fresh dirt at the next regeneration.
@@ -316,12 +339,17 @@ python3 docs/audit/scripts/orchestrate_audit_batch.py \
   for that claim -> one pipeline -> one lint -> one commit -> one push inside
   the drainer). A simultaneous critical pair is one claim transaction, not two
   generated-surface transactions; push-race retry replays the whole pair from
-  refreshed `origin/main`. Never add a second committer against the same
-  checkout; parallelism lives in the auditor seats only.
+  refreshed `origin/main`. Batch verdicts, judicial judgments, and reseats
+  must call the same checkpoint-aware generated transaction engine so their
+  rollback, cancellation, push-race, and lost-response behavior cannot drift.
+  Never add a second committer against the same checkout; parallelism lives in
+  the auditor seats only.
 - **Concurrency budget (shared codex pool).** Auditor seats, review-loop
   reviewers, and judicial panels all draw on one pool. Keep the TOTAL
   concurrent codex processes across every lane at or under ~8-10, and
-  coordinate before raising `--max-workers` while review campaigns run.
+  coordinate before raising `--max-workers` while review campaigns run. The
+  top-level ceiling applies to judicial judges as well as development seats;
+  do not bypass it by invoking an unbounded panel child.
   Measured 2026-07-17: ~18 concurrent processes collapsed lane throughput
   from 6-11 landed verdicts/hour to ~1 every 3 hours; a 4-6 seat drain in a
   quiet pool is the sweet spot.

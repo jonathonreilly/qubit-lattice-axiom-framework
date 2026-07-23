@@ -58,15 +58,38 @@ SUCCESS_RESULTS = {
     "compute_required",
 }
 _COMMAND_CONTEXT = threading.local()
+_PROCESS_STOP_EVENT = threading.Event()
 
 
 def _command_cancel_event() -> threading.Event | None:
-    return getattr(_COMMAND_CONTEXT, "cancel_event", None)
+    return getattr(_COMMAND_CONTEXT, "cancel_event", None) or _PROCESS_STOP_EVENT
 
 
 def _command_cancelled() -> bool:
     event = _command_cancel_event()
     return event is not None and event.is_set()
+
+
+def install_shutdown_handlers() -> dict[int, object]:
+    """Turn TERM/HUP into cooperative cancellation for workers and commands."""
+    _PROCESS_STOP_EVENT.clear()
+    previous: dict[int, object] = {}
+
+    def request_stop(_signum, _frame) -> None:
+        _PROCESS_STOP_EVENT.set()
+
+    for signum in (signal.SIGTERM, signal.SIGHUP):
+        previous[signum] = signal.getsignal(signum)
+        signal.signal(signum, request_stop)
+    return previous
+
+
+def restore_shutdown_handlers(previous: dict[int, object]) -> None:
+    for signum, handler in previous.items():
+        signal.signal(signum, handler)
+    _PROCESS_STOP_EVENT.clear()
+
+
 RESUMABLE_HANDOFF_RESULTS = {"judicial_panel_required"}
 SCHEMA_INVALID_RESULTS = {"malformed_json", "validation_failed"}
 SCHEMA_QUARANTINE_RESULT = "schema_invalid_quarantined"
@@ -602,11 +625,13 @@ def launch_worker(
         "auditor": f"codex-audit-batch-{ident}",
         "independence": seat_independence(row, pass_no),
         "workdir": workdir,
+        "started": now,
         "last_size": 0,
         "last_activity": (0, 0.0),
         "last_progress": now,
         "last_progress_wall": now_wall,
         "stalled": False,
+        "deadline_exceeded": False,
     }
 
 
@@ -677,6 +702,7 @@ def wait_workers(
     jobs: list[dict],
     stall_minutes: int = 45,
     on_claim_ready: Callable[[list[dict]], bool] | None = None,
+    wall_timeout_seconds: int | None = None,
 ) -> bool | None:
     """Monitor seats and optionally drain each complete claim immediately.
 
@@ -730,6 +756,10 @@ def wait_workers(
     PROGRESS["jobs"] = jobs
     try:
         while pending:
+            if _PROCESS_STOP_EVENT.is_set():
+                terminate_workers([jobs[index] for index in pending])
+                pending.clear()
+                raise RuntimeError("audit worker wait cancelled by shutdown signal")
             if commit_failed.is_set():
                 terminate_workers([jobs[index] for index in pending])
                 pending.clear()
@@ -769,6 +799,20 @@ def wait_workers(
                     continue
                 if now_wall - job["last_progress_wall"] >= stall_seconds:
                     job["stalled"] = True
+                    try:
+                        os.killpg(job["proc"].pid, signal.SIGKILL)
+                    except ProcessLookupError:
+                        pass
+                    job["returncode"] = job["proc"].wait()
+                    if not job["log_handle"].closed:
+                        job["log_handle"].close()
+                    pending.remove(index)
+                    continue
+                if (
+                    wall_timeout_seconds is not None
+                    and now - job["started"] >= wall_timeout_seconds
+                ):
+                    job["deadline_exceeded"] = True
                     try:
                         os.killpg(job["proc"].pid, signal.SIGKILL)
                     except ProcessLookupError:
@@ -1028,6 +1072,8 @@ def packet_completion_pass(
 def finalize_worker(job: dict) -> tuple[dict | None, dict]:
     cid = job["cid"]
     base = {"cid": cid, "pass": job["pass"]}
+    if job.get("deadline_exceeded"):
+        return None, {**base, "result": "wall_timeout_killed"}
     if job["stalled"]:
         return None, {**base, "result": "stall_killed"}
     raw_output = job["raw_output"]
@@ -1500,6 +1546,88 @@ def reset_to_origin_main() -> tuple[bool, str]:
     return (error is None, error or "reset to origin/main")
 
 
+def commit_generated_transaction(
+    cid: str,
+    retries: int,
+    mutate: Callable[[], tuple[bool, str]],
+    commit_message: str,
+) -> dict:
+    """Run one generated audit mutation through the canonical commit ladder.
+
+    ``mutate`` is replayed from a freshly synchronized ``origin/main`` parent
+    after every push race. Every failure after mutation begins restores the
+    checkout before returning, including cancellation and fetch failure.
+    """
+
+    def fail(result: str, detail: str | None = None) -> dict:
+        reset, reset_detail = reset_to_origin_main()
+        if not reset:
+            return {
+                "ok": False,
+                "result": "race_reset_failed",
+                "detail": reset_detail,
+            }
+        outcome = {"ok": False, "result": result}
+        if detail is not None:
+            outcome["detail"] = detail
+        return outcome
+
+    for attempt in range(1, retries + 1):
+        synced, detail = sync_origin_main()
+        if not synced:
+            return {"ok": False, "result": "sync_blocked", "detail": detail}
+
+        mutated, detail = mutate()
+        if not mutated:
+            return fail("mutation_rejected", detail)
+
+        gated, detail = run_generated_gates()
+        if not gated:
+            return fail("gate_failed", detail)
+
+        committed, detail = stage_and_commit(commit_message)
+        if not committed:
+            return fail("commit_failed", detail)
+        local_commit = detail
+
+        push = sh(["git", "push", "-q", "origin", "HEAD:main"])
+        if push.returncode == 0:
+            return {"ok": True, "result": "landed", "commit": local_commit}
+        if _command_cancelled():
+            return fail("commit_cancelled")
+
+        fetch = sh(["git", "fetch", "origin", "main", "-q"])
+        if fetch.returncode != 0:
+            result = "commit_cancelled" if _command_cancelled() else "push_failed"
+            detail = (
+                None
+                if result == "commit_cancelled"
+                else "push and follow-up fetch failed"
+            )
+            return fail(result, detail)
+        if _command_cancelled():
+            return fail("commit_cancelled")
+
+        landed = sh(
+            ["git", "merge-base", "--is-ancestor", local_commit, "origin/main"]
+        )
+        if _command_cancelled():
+            return fail("commit_cancelled")
+        if landed.returncode == 0:
+            return {"ok": True, "result": "landed", "commit": local_commit}
+        if attempt == retries:
+            return fail("push_race_exhausted")
+
+        reset, reset_detail = reset_to_origin_main()
+        if not reset:
+            return {
+                "ok": False,
+                "result": "race_reset_failed",
+                "detail": reset_detail,
+            }
+    return {"ok": False, "result": "unreachable"}
+
+
 def apply_claim_serialized(
     deliveries: list[tuple[dict, dict]],
     retries: int,
@@ -1516,25 +1644,11 @@ def apply_claim_serialized(
     if len(claim_ids) != 1 or not ordered:
         raise ValueError("one non-empty claim delivery group is required")
     cid = next(iter(claim_ids))
+    mutation_failure: dict | None = None
 
-    def fail_after_local_commit(result: str, detail: str | None = None):
-        reset, reset_detail = reset_to_origin_main()
-        if not reset:
-            return False, [{
-                "cid": cid,
-                "result": "race_reset_failed",
-                "detail": reset_detail,
-            }]
-        failure = {"cid": cid, "result": result}
-        if detail is not None:
-            failure["detail"] = detail
-        return False, [failure]
-
-    for attempt in range(1, retries + 1):
-        synced, detail = sync_origin_main()
-        if not synced:
-            return False, [{"cid": cid, "result": "sync_blocked", "detail": detail}]
-
+    def mutate() -> tuple[bool, str]:
+        nonlocal mutation_failure
+        mutation_failure = None
         for job, envelope in ordered:
             applied, apply_detail = audit_runner.apply_one(
                 envelope["audit"],
@@ -1542,69 +1656,47 @@ def apply_claim_serialized(
                 evidence_manifest=envelope["evidence_manifest"],
             )
             if not applied:
-                reset_to_origin_main()
-                return False, [{
+                mutation_failure = {
                     "cid": cid,
                     "pass": job["pass"],
                     "result": "apply_or_gate_failed",
                     "detail": f"apply rejected: {apply_detail[:400]}",
-                }]
+                }
+                return False, mutation_failure["detail"]
+        return True, "all claim seats applied"
 
-        gated, detail = run_generated_gates()
-        if not gated:
-            reset_to_origin_main()
-            return False, [{"cid": cid, "result": "apply_or_gate_failed", "detail": detail}]
-        verdicts = [str(envelope["audit"].get("verdict")) for _, envelope in ordered]
-        seats = ["first" if job["pass"] == 1 else "second" for job, _ in ordered]
-        committed, detail = stage_and_commit(
+    verdicts = [str(envelope["audit"].get("verdict")) for _, envelope in ordered]
+    seats = ["first" if job["pass"] == 1 else "second" for job, _ in ordered]
+    outcome = commit_generated_transaction(
+        cid,
+        retries,
+        mutate,
+        (
             f"audit: {cid} {'+'.join(verdicts)} "
             f"(codex-cli, {MODEL}, {REASONING}, {'+'.join(seats)}/batch)"
-        )
-        if not committed:
-            reset_to_origin_main()
-            return False, [{"cid": cid, "result": "commit_failed", "detail": detail}]
-        local_commit = detail
-        push = sh(["git", "push", "-q", "origin", "HEAD:main"])
-        if push.returncode == 0:
-            return True, [
-                {
-                    "cid": cid,
-                    "pass": job["pass"],
-                    "result": envelope["audit"].get("verdict"),
-                    "commit": local_commit,
-                }
-                for job, envelope in ordered
-            ]
-
-        if _command_cancelled():
-            return fail_after_local_commit("commit_cancelled")
-
-        fetch = sh(["git", "fetch", "origin", "main", "-q"])
-        if fetch.returncode != 0:
-            result = "commit_cancelled" if _command_cancelled() else "push_failed"
-            detail = None if result == "commit_cancelled" else "push and follow-up fetch failed"
-            return fail_after_local_commit(result, detail)
-        if _command_cancelled():
-            return fail_after_local_commit("commit_cancelled")
-        landed = sh(["git", "merge-base", "--is-ancestor", local_commit, "origin/main"])
-        if _command_cancelled():
-            return fail_after_local_commit("commit_cancelled")
-        if landed.returncode == 0:
-            return True, [
-                {
-                    "cid": cid,
-                    "pass": job["pass"],
-                    "result": envelope["audit"].get("verdict"),
-                    "commit": local_commit,
-                }
-                for job, envelope in ordered
-            ]
-        if attempt == retries:
-            return fail_after_local_commit("push_race_exhausted")
-        reset, reset_detail = reset_to_origin_main()
-        if not reset:
-            return False, [{"cid": cid, "result": "race_reset_failed", "detail": reset_detail}]
-    return False, [{"cid": cid, "result": "unreachable"}]
+        ),
+    )
+    if outcome["ok"]:
+        return True, [
+            {
+                "cid": cid,
+                "pass": job["pass"],
+                "result": envelope["audit"].get("verdict"),
+                "commit": outcome["commit"],
+            }
+            for job, envelope in ordered
+        ]
+    if outcome["result"] == "mutation_rejected" and mutation_failure is not None:
+        return False, [mutation_failure]
+    result = (
+        "apply_or_gate_failed"
+        if outcome["result"] == "gate_failed"
+        else outcome["result"]
+    )
+    failure = {"cid": cid, "result": result}
+    if outcome.get("detail") is not None:
+        failure["detail"] = outcome["detail"]
+    return False, [failure]
 
 
 def apply_one_serialized(
@@ -2038,12 +2130,16 @@ def scope_for_args(args: argparse.Namespace, rows: dict[str, dict]) -> set[str]:
 
 def main() -> int:
     drain_lock = None
+    shutdown_handlers: dict[int, object] = {}
 
     def finish(code: int) -> int:
-        nonlocal drain_lock
+        nonlocal drain_lock, shutdown_handlers
         if drain_lock is not None:
             drain_lock.close()
             drain_lock = None
+        if shutdown_handlers:
+            restore_shutdown_handlers(shutdown_handlers)
+            shutdown_handlers = {}
         return code
 
     parser = argparse.ArgumentParser(description="Parallel development-tier audit drainer")
@@ -2064,6 +2160,7 @@ def main() -> int:
     parser.add_argument("--max-workers", type=int, default=6)
     parser.add_argument("--rounds", type=int, default=6)
     parser.add_argument("--stall-minutes", type=int, default=45)
+    parser.add_argument("--seat-timeout-sec", type=int, default=2700)
     parser.add_argument("--runner-timeout-sec", type=int, default=120)
     parser.add_argument("--push-retries", type=int, default=3)
     parser.add_argument(
@@ -2095,12 +2192,17 @@ def main() -> int:
         args.max_workers < 1
         or args.rounds < 1
         or args.stall_minutes < 1
+        or args.seat_timeout_sec < 1
         or args.runner_timeout_sec < 1
         or args.push_retries < 1
     ):
-        parser.error("worker, round, stall, runner-timeout, and retry limits must be positive")
+        parser.error(
+            "worker, round, stall, seat-timeout, runner-timeout, and retry "
+            "limits must be positive"
+        )
     if args.retarget_conditionals and not args.claims:
         parser.error("--retarget-conditionals requires an explicit --claims list")
+    shutdown_handlers = install_shutdown_handlers()
     retarget = frozenset(
         cid.strip() for cid in (args.claims or "").split(",") if cid.strip()
     ) if args.retarget_conditionals else frozenset()
@@ -2235,6 +2337,7 @@ def main() -> int:
             jobs,
             args.stall_minutes,
             on_claim_ready=apply_ready_claim,
+            wall_timeout_seconds=args.seat_timeout_sec,
         )
         if streamed is True:
             applied_ok = True

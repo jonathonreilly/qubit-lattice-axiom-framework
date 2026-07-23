@@ -17,6 +17,8 @@ import argparse
 import itertools
 import json
 import os
+import re
+import signal
 import subprocess
 import sys
 import tempfile
@@ -55,6 +57,7 @@ PROGRESS = {
     "quarantine_file": None,
 }
 _STOP_HEARTBEAT = threading.Event()
+_STOP_REQUESTED = threading.Event()
 _DRAIN_LOCK_HANDLE: TextIO | None = None
 
 
@@ -176,6 +179,71 @@ def heartbeat() -> None:
         emit(summary_line())
 
 
+def append_campaign_event(event: dict) -> None:
+    campaign_dir = PROGRESS.get("campaign_dir")
+    if not isinstance(campaign_dir, Path):
+        return
+    path = campaign_dir / "campaign-events.jsonl"
+    payload = {
+        "schema": "audit_loop_campaign_event_v1",
+        "at": datetime.now(timezone.utc).isoformat(),
+        **event,
+    }
+    with path.open("a", encoding="utf-8") as handle:
+        handle.write(json.dumps(payload, sort_keys=True) + "\n")
+        handle.flush()
+        os.fsync(handle.fileno())
+
+
+def phase_workdir(kind: str, label: str) -> Path | None:
+    campaign_dir = PROGRESS.get("campaign_dir")
+    if not isinstance(campaign_dir, Path):
+        return None
+    parent = campaign_dir / kind
+    parent.mkdir(parents=True, exist_ok=True)
+    stem = re.sub(r"[^A-Za-z0-9_.-]+", "-", label).strip("-") or "phase"
+    candidate = parent / stem
+    suffix = 1
+    while candidate.exists():
+        candidate = parent / f"{stem}-attempt-{suffix}"
+        suffix += 1
+    return candidate
+
+
+def prior_panel_workdirs(args: argparse.Namespace) -> list[Path]:
+    paths = list(getattr(args, "resume_panel_workdir", []) or [])
+    campaign_dir = PROGRESS.get("campaign_dir")
+    if isinstance(campaign_dir, Path):
+        panel_root = campaign_dir / "panels"
+        if panel_root.is_dir():
+            paths.extend(path for path in panel_root.iterdir() if path.is_dir())
+    unique: list[Path] = []
+    seen: set[Path] = set()
+    for path in paths:
+        resolved = path.expanduser().resolve(strict=False)
+        if resolved not in seen:
+            unique.append(resolved)
+            seen.add(resolved)
+    return unique
+
+
+def terminate_phase_process(proc: subprocess.Popen) -> None:
+    if proc.poll() is not None:
+        return
+    try:
+        os.killpg(proc.pid, signal.SIGTERM)
+    except ProcessLookupError:
+        return
+    try:
+        proc.wait(timeout=10)
+    except subprocess.TimeoutExpired:
+        try:
+            os.killpg(proc.pid, signal.SIGKILL)
+        except ProcessLookupError:
+            pass
+        proc.wait()
+
+
 def git_head() -> str:
     proc = subprocess.run(
         ["git", "rev-parse", "HEAD"],
@@ -201,22 +269,69 @@ def run_command(label: str, command: list[str], env: dict[str, str] | None = Non
         lock_fd = _DRAIN_LOCK_HANDLE.fileno()
         child_env[batch.INHERITED_DRAIN_LOCK_FD_ENV] = str(lock_fd)
         pass_fds = (lock_fd,)
-    proc = subprocess.run(
+    proc = subprocess.Popen(
         command,
         cwd=REPO_ROOT,
         env=child_env,
         pass_fds=pass_fds,
+        start_new_session=True,
     )
+    artifact_workdir = child_env.get("AUDIT_BATCH_WORKDIR")
+    if "--workdir" in command:
+        index = command.index("--workdir")
+        if index + 1 < len(command):
+            artifact_workdir = command[index + 1]
+    append_campaign_event(
+        {
+            "event": "phase_start",
+            "label": label,
+            "pid": proc.pid,
+            "command": command,
+            "artifact_workdir": artifact_workdir,
+        }
+    )
+    timeout = PROGRESS.get("phase_timeout_sec")
+    deadline = (
+        time.monotonic() + timeout
+        if isinstance(timeout, int) and timeout > 0
+        else None
+    )
+    timed_out = False
+    try:
+        while proc.poll() is None:
+            if _STOP_REQUESTED.wait(1):
+                terminate_phase_process(proc)
+                break
+            if deadline is not None and time.monotonic() >= deadline:
+                timed_out = True
+                emit(f"TIMEOUT {label}: exceeded {timeout}s; terminating phase")
+                terminate_phase_process(proc)
+                break
+    except BaseException:
+        terminate_phase_process(proc)
+        raise
+    returncode = 124 if timed_out else (proc.returncode if proc.returncode is not None else 130)
     if label.startswith("panel-"):
-        state = "complete" if proc.returncode == 0 else f"failed_exit_{proc.returncode}"
+        state = "complete" if returncode == 0 else f"failed_exit_{returncode}"
         PROGRESS["panel_state"] = f"{state}:{label}"
     if label.startswith("forensic-canary-"):
-        state = "complete" if proc.returncode == 0 else f"failed_exit_{proc.returncode}"
+        state = "complete" if returncode == 0 else f"failed_exit_{returncode}"
         PROGRESS["canary_state"] = f"{state}:{label}"
-    if proc.returncode != 0:
-        PROGRESS["failures"].append(f"{label}:exit={proc.returncode}")
-    emit(f"END {label}: exit={proc.returncode} head={git_head()}")
-    return proc.returncode
+    if returncode != 0:
+        PROGRESS["failures"].append(f"{label}:exit={returncode}")
+    head = git_head()
+    append_campaign_event(
+        {
+            "event": "phase_end",
+            "label": label,
+            "pid": proc.pid,
+            "exit": returncode,
+            "head": head,
+            "timed_out": timed_out,
+        }
+    )
+    emit(f"END {label}: exit={returncode} head={head}")
+    return returncode
 
 
 def _lane_names(payload: object) -> list[str]:
@@ -278,17 +393,30 @@ def blocking_lanes(requested: list[str] | None = None) -> list[tuple[str, int]]:
     return result
 
 
-def panel_command(args: argparse.Namespace) -> list[str]:
+def panel_command(
+    args: argparse.Namespace,
+    *,
+    workdir: Path | None = None,
+    resume_workdirs: list[Path] | None = None,
+) -> list[str]:
     command = [
         sys.executable,
         str(PANEL),
+        "--max-workers",
+        str(args.max_workers),
         "--stall-minutes",
         str(args.stall_minutes),
+        "--seat-timeout-sec",
+        str(args.codex_timeout_sec),
         "--runner-timeout-sec",
         str(args.runner_timeout_sec),
         "--push-retries",
         str(args.push_retries),
     ]
+    if workdir is not None:
+        command.extend(["--workdir", str(workdir)])
+    for resume_workdir in resume_workdirs or []:
+        command.extend(["--resume-workdir", str(resume_workdir)])
     if args.dry_run:
         command.append("--dry-run")
     return command
@@ -306,6 +434,8 @@ def batch_command(lane: str, args: argparse.Namespace) -> list[str]:
         str(args.batch_rounds),
         "--stall-minutes",
         str(args.stall_minutes),
+        "--seat-timeout-sec",
+        str(args.codex_timeout_sec),
         "--runner-timeout-sec",
         str(args.runner_timeout_sec),
         "--push-retries",
@@ -322,7 +452,15 @@ def batch_command(lane: str, args: argparse.Namespace) -> list[str]:
 
 
 def run_panel(args: argparse.Namespace, label: str) -> int:
-    return run_command(label, panel_command(args))
+    workdir = phase_workdir("panels", label)
+    return run_command(
+        label,
+        panel_command(
+            args,
+            workdir=workdir,
+            resume_workdirs=prior_panel_workdirs(args),
+        ),
+    )
 
 
 def drain_lane(lane: str, args: argparse.Namespace) -> tuple[int, bool]:
@@ -333,9 +471,14 @@ def drain_lane(lane: str, args: argparse.Namespace) -> tuple[int, bool]:
             emit(f"STOP lane cycle safety bound reached: lane={lane}")
             return 4, made_progress
         before = git_head()
+        batch_workdir = phase_workdir("batches", f"batch-{lane}-cycle-{cycle}")
+        batch_env = dict(os.environ)
+        if batch_workdir is not None:
+            batch_env["AUDIT_BATCH_WORKDIR"] = str(batch_workdir)
         batch_rc = run_command(
             f"batch-{lane}-cycle-{cycle}",
             batch_command(lane, args),
+            env=batch_env,
         )
         # This is intentionally unconditional, including after a hard batch
         # result: another row in the same batch may already have recorded a
@@ -403,7 +546,15 @@ def build_parser() -> argparse.ArgumentParser:
         description="Panel-aware end-to-end audit backlog drainer"
     )
     parser.add_argument("--lane", action="append", help="limit to a configured lane")
-    parser.add_argument("--max-workers", type=int, default=4)
+    parser.add_argument(
+        "--max-workers",
+        type=int,
+        default=4,
+        help=(
+            "campaign-wide concurrent Codex seat ceiling; panels run five "
+            "judges in bounded waves when the ceiling is below five"
+        ),
+    )
     parser.add_argument(
         "--max-passes",
         type=int,
@@ -420,12 +571,23 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--stall-minutes", type=int, default=45)
     parser.add_argument("--runner-timeout-sec", type=int, default=120)
     parser.add_argument("--codex-timeout-sec", type=int, default=2700)
+    parser.add_argument("--phase-timeout-sec", type=int, default=21600)
     parser.add_argument("--push-retries", type=int, default=3)
     parser.add_argument(
         "--campaign-workdir",
         type=Path,
         default=None,
         help="preserve campaign-scoped quarantine/report artifacts in this directory",
+    )
+    parser.add_argument(
+        "--resume-panel-workdir",
+        type=Path,
+        action="append",
+        default=[],
+        help=(
+            "prior judicial workdir containing a preserved majority judgment; "
+            "the panel revalidates it before replay"
+        ),
     )
     parser.add_argument(
         "--dispatch-science-fixes",
@@ -449,6 +611,7 @@ def main(argv: list[str] | None = None) -> int:
         args.stall_minutes,
         args.runner_timeout_sec,
         args.codex_timeout_sec,
+        args.phase_timeout_sec,
         args.push_retries,
     )
     if any(value < 1 for value in positive):
@@ -461,7 +624,18 @@ def main(argv: list[str] | None = None) -> int:
     campaign_dir.mkdir(parents=True, exist_ok=True)
     args.campaign_quarantine_file = campaign_dir / "campaign-row-exclusions.jsonl"
     PROGRESS["quarantine_file"] = args.campaign_quarantine_file
+    PROGRESS["campaign_dir"] = campaign_dir
+    PROGRESS["phase_timeout_sec"] = args.phase_timeout_sec
     emit(f"campaign artifacts: {campaign_dir}")
+    append_campaign_event(
+        {
+            "event": "campaign_start",
+            "head": git_head(),
+            "max_workers": args.max_workers,
+            "seat_timeout_sec": args.codex_timeout_sec,
+            "phase_timeout_sec": args.phase_timeout_sec,
+        }
+    )
     try:
         validate_requested_lanes(args.lane)
     except (OSError, ValueError, json.JSONDecodeError) as exc:
@@ -493,6 +667,15 @@ def main(argv: list[str] | None = None) -> int:
     PROGRESS["panel_state"] = "not_started"
     PROGRESS["canary_state"] = "not_started"
     _STOP_HEARTBEAT.clear()
+    _STOP_REQUESTED.clear()
+    previous_signal_handlers: dict[int, object] = {}
+
+    def request_stop(_signum, _frame) -> None:
+        _STOP_REQUESTED.set()
+
+    for signum in (signal.SIGTERM, signal.SIGHUP):
+        previous_signal_handlers[signum] = signal.getsignal(signum)
+        signal.signal(signum, request_stop)
     thread = threading.Thread(target=heartbeat, daemon=True)
     thread.start()
     try:
@@ -543,7 +726,19 @@ def main(argv: list[str] | None = None) -> int:
         return 0
     finally:
         _STOP_HEARTBEAT.set()
-        emit(summary_line(final=True))
+        final_summary = summary_line(final=True)
+        emit(final_summary)
+        append_campaign_event(
+            {
+                "event": "campaign_end",
+                "head": git_head(),
+                "summary": final_summary,
+                "stop_requested": _STOP_REQUESTED.is_set(),
+            }
+        )
+        for signum, handler in previous_signal_handlers.items():
+            signal.signal(signum, handler)
+        _STOP_REQUESTED.clear()
         if _DRAIN_LOCK_HANDLE is not None:
             _DRAIN_LOCK_HANDLE.close()
             _DRAIN_LOCK_HANDLE = None

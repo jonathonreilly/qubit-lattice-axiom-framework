@@ -673,7 +673,9 @@ def _args() -> argparse.Namespace:
         stall_minutes=45,
         runner_timeout_sec=120,
         codex_timeout_sec=2700,
+        phase_timeout_sec=21600,
         push_retries=3,
+        resume_panel_workdir=[],
         dispatch_science_fixes=False,
         skip_forensic_canary=True,
         dry_run=False,
@@ -2343,6 +2345,87 @@ class CampaignContractTest(unittest.TestCase):
             "--dispatch-science-fixes",
             audit_loop.batch_command("lane_a", args),
         )
+
+
+class HardDeadlineTest(unittest.TestCase):
+    def test_worker_absolute_deadline_beats_continuous_log_activity(self):
+        class FakeProc:
+            pid = 4242
+            returncode = None
+
+            def poll(self):
+                return self.returncode
+
+            def wait(self):
+                self.returncode = -9
+                return self.returncode
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            log_path = root / "worker.log"
+            log_path.write_text("continuous activity", encoding="utf-8")
+            job = {
+                "cid": "noisy",
+                "row": {"claim_id": "noisy"},
+                "pass": 1,
+                "proc": FakeProc(),
+                "raw_output": root / "worker.out",
+                "log_path": log_path,
+                "log_handle": log_path.open("a", encoding="utf-8"),
+                "started": 0.0,
+                "last_size": 0,
+                "last_activity": (0, 0.0),
+                "last_progress": 0.0,
+                "last_progress_wall": time.time(),
+                "stalled": False,
+                "deadline_exceeded": False,
+            }
+            with mock.patch.object(
+                batch.time, "monotonic", return_value=120.0
+            ), mock.patch.object(batch.os, "killpg") as killpg:
+                result = batch.wait_workers(
+                    [job],
+                    stall_minutes=45,
+                    wall_timeout_seconds=60,
+                )
+
+        self.assertIsNone(result)
+        self.assertTrue(job["deadline_exceeded"])
+        self.assertFalse(job["stalled"])
+        killpg.assert_called_once_with(4242, signal.SIGKILL)
+
+    def test_supervisor_phase_timeout_terminates_process_group(self):
+        class FakeProc:
+            pid = 5252
+            returncode = None
+
+            def poll(self):
+                return self.returncode
+
+            def wait(self, timeout=None):
+                self.returncode = -15
+                return self.returncode
+
+        proc = FakeProc()
+        audit_loop._STOP_REQUESTED.clear()
+        with mock.patch.object(
+            audit_loop.subprocess, "Popen", return_value=proc
+        ), mock.patch.object(
+            audit_loop._STOP_REQUESTED, "wait", return_value=False
+        ), mock.patch.object(
+            audit_loop.time, "monotonic", side_effect=[0.0, 2.0]
+        ), mock.patch.object(
+            audit_loop.os, "killpg"
+        ) as killpg, mock.patch.object(
+            audit_loop, "git_head", return_value="head"
+        ), mock.patch.dict(
+            audit_loop.PROGRESS,
+            {"phase_timeout_sec": 1, "campaign_dir": None},
+        ):
+            result = audit_loop.run_command("bounded-phase", ["fake"])
+
+        self.assertEqual(result, 124)
+        killpg.assert_called_once_with(5252, signal.SIGTERM)
 
 
 if __name__ == "__main__":

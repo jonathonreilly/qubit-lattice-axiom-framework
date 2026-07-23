@@ -261,84 +261,64 @@ def collect_panel_targets(
 RESEAT_OK_RESULTS = {"reseated", "resolved", "recovered"}
 
 
-def _reseat_failure(cid: str, result: str, detail: str) -> dict:
-    """Restore preapply state and return the outcome DICT (failed_after_apply
-    returns an (ok, dict) tuple shaped for apply callers)."""
-    _ok, failure = failed_after_apply(cid, result, detail)
-    return failure
-
-
 def reseat_blocked_row(cid: str, retries: int) -> dict:
     """Persist a reseat through the same per-claim gate ladder as verdicts:
     sync, mutate, pipeline, strict lint, diff check, serialized commit,
     race-retried push."""
-    for attempt in range(1, retries + 1):
-        synced, detail = batch.sync_origin_main()
-        if not synced:
-            return {"cid": cid, "result": "sync_blocked", "detail": detail}
+    mutation_result: str | None = None
+
+    def mutate() -> tuple[bool, str]:
+        nonlocal mutation_result
+        mutation_result = None
         rows = batch.load_rows()
         row = rows.get(cid)
         if row is None:
-            return {"cid": cid, "result": "missing_ledger_row"}
+            mutation_result = "missing_ledger_row"
+            return False, mutation_result
         disposition = reseat_disposition(row)
         if disposition != "blocked":
-            return {"cid": cid, "result": disposition}
+            mutation_result = disposition
+            return False, disposition
         ledger = ledger_io.load_ledger()
         ledger["rows"][cid] = reseat_mutation(ledger["rows"][cid])
         ledger_io.save_ledger(ledger)
-        pipeline = batch.sh(["bash", str(SCRIPTS / "run_pipeline.sh")], timeout=1800)
-        if pipeline.returncode != 0:
-            return _reseat_failure(
-                cid, "reseat_pipeline_failed", (pipeline.stderr or pipeline.stdout)[-400:]
-            )
-        lint = batch.sh(
-            [sys.executable, str(SCRIPTS / "audit_lint.py"), "--strict"], timeout=600
-        )
-        if lint.returncode != 0:
-            return _reseat_failure(
-                cid, "reseat_strict_lint_failed", (lint.stderr or lint.stdout)[-400:]
-            )
-        diff_check = batch.sh(["git", "diff", "--check"])
-        if diff_check.returncode != 0:
-            return _reseat_failure(
-                cid, "reseat_diff_check_failed", diff_check.stdout[-400:]
-            )
-        unexpected = [
-            path
-            for path in batch.changed_paths()
-            if not batch.allowed_generated_path(path)
-        ]
-        if unexpected:
-            return _reseat_failure(
-                cid, "reseat_unexpected_generated_paths", str(unexpected[:8])
-            )
-        committed, detail = batch.stage_and_commit(
+        return True, "row reseated"
+
+    outcome = batch.commit_generated_transaction(
+        cid,
+        retries,
+        mutate,
+        (
             f"audit-infra: reseat cross-confirmation seats for {cid} "
             "(unrecoverable legacy rationales archived; fresh seating opened)"
-        )
-        if not committed:
-            return _reseat_failure(cid, "reseat_commit_failed", detail)
-        local_commit = detail
-        push = batch.sh(["git", "push", "-q", "origin", "HEAD:main"])
-        if push.returncode == 0:
-            return {"cid": cid, "result": "reseated", "commit": local_commit}
-        fetch = batch.sh(["git", "fetch", "origin", "main", "-q"])
-        if fetch.returncode != 0:
-            return {"cid": cid, "result": "reseat_push_failed"}
-        landed = batch.sh(
-            ["git", "merge-base", "--is-ancestor", local_commit, "origin/main"]
-        )
-        if landed.returncode == 0:
-            return {"cid": cid, "result": "reseated", "commit": local_commit}
-        if attempt == retries:
-            return {"cid": cid, "result": "reseat_push_race_exhausted"}
-        error = batch.clean_main_error()
-        if error:
-            return {"cid": cid, "result": "reseat_race_retry_dirty", "detail": error}
-        reset = batch.sh(["git", "reset", "--hard", "origin/main"])
-        if reset.returncode != 0:
-            return {"cid": cid, "result": "reseat_race_reset_failed"}
-    return {"cid": cid, "result": "unreachable"}
+        ),
+    )
+    if outcome["ok"]:
+        return {"cid": cid, "result": "reseated", "commit": outcome["commit"]}
+    if outcome["result"] == "mutation_rejected" and mutation_result is not None:
+        return {"cid": cid, "result": mutation_result}
+
+    gate_result = "reseat_pipeline_failed"
+    detail_text = str(outcome.get("detail") or "")
+    if detail_text.startswith("strict lint failed:"):
+        gate_result = "reseat_strict_lint_failed"
+    elif detail_text.startswith("git diff --check failed:"):
+        gate_result = "reseat_diff_check_failed"
+    elif detail_text.startswith("unexpected generated paths:"):
+        gate_result = "reseat_unexpected_generated_paths"
+    result_map = {
+        "gate_failed": gate_result,
+        "commit_failed": "reseat_commit_failed",
+        "push_failed": "reseat_push_failed",
+        "push_race_exhausted": "reseat_push_race_exhausted",
+        "race_reset_failed": "reseat_race_reset_failed",
+        "commit_cancelled": "reseat_commit_cancelled",
+    }
+    result = result_map.get(outcome["result"], outcome["result"])
+    failure = {"cid": cid, "result": result}
+    if outcome.get("detail"):
+        failure["detail"] = str(outcome["detail"])[-400:]
+    return failure
 
 
 def seat_block(label: str, summary: dict, row: dict) -> str:
@@ -532,14 +512,18 @@ def launch_judge(
         "panel": panel_no,
         "invocation_id": invocation_id,
         "evidence_manifest": evidence_manifest,
+        "started": now,
         "last_size": 0,
         "last_progress": now,
         "stalled": False,
+        "deadline_exceeded": False,
         "returncode": None,
     }
 
 
 def collect_vote(job: dict) -> tuple[dict | None, str]:
+    if job.get("deadline_exceeded"):
+        return None, "wall_timeout_killed"
     if job["stalled"]:
         return None, "stall_killed"
     raw = job["raw_output"]
@@ -770,25 +754,6 @@ def hard_apply_blocker(detail: str) -> bool:
     return str(detail).startswith(HARD_APPLY_BLOCKER_PREFIXES)
 
 
-def restore_preapply_state() -> str | None:
-    reset = batch.sh(["git", "reset", "--hard", "HEAD"])
-    if reset.returncode != 0:
-        return f"reset failed: {(reset.stderr or reset.stdout).strip()[-240:]}"
-    clean = batch.sh(
-        ["git", "clean", "-fd", "--", *audit_runner.AUDIT_DATA_FILES]
-    )
-    if clean.returncode != 0:
-        return f"clean failed: {(clean.stderr or clean.stdout).strip()[-240:]}"
-    return None
-
-
-def failed_after_apply(cid: str, result: str, detail: str) -> tuple[bool, dict]:
-    restore_error = restore_preapply_state()
-    if restore_error:
-        detail = f"{detail}; restore failed: {restore_error}"
-    return False, {"cid": cid, "result": result, "detail": detail}
-
-
 def apply_judgment(
     blob: dict,
     evidence_manifest: dict[str, dict],
@@ -800,80 +765,47 @@ def apply_judgment(
     judgment_path.write_text(
         json.dumps(blob, indent=1, sort_keys=True), encoding="utf-8"
     )
-    for attempt in range(1, retries + 1):
-        synced, detail = batch.sync_origin_main()
-        if not synced:
-            return False, {"cid": cid, "result": "sync_blocked", "detail": detail}
+
+    def mutate() -> tuple[bool, str]:
         applied, apply_detail = audit_runner.apply_one(
             blob, propagate=False, evidence_manifest=evidence_manifest
         )
-        if not applied:
-            return failed_after_apply(
-                cid, "judicial_apply_rejected", apply_detail[-400:]
-            )
-        pipeline = batch.sh(["bash", str(SCRIPTS / "run_pipeline.sh")], timeout=1800)
-        if pipeline.returncode != 0:
-            return failed_after_apply(
-                cid, "pipeline_failed", (pipeline.stderr or pipeline.stdout)[-400:]
-            )
-        lint = batch.sh(
-            [sys.executable, str(SCRIPTS / "audit_lint.py"), "--strict"], timeout=600
-        )
-        if lint.returncode != 0:
-            return failed_after_apply(
-                cid, "strict_lint_failed", (lint.stderr or lint.stdout)[-400:]
-            )
-        diff_check = batch.sh(["git", "diff", "--check"])
-        if diff_check.returncode != 0:
-            return failed_after_apply(
-                cid, "diff_check_failed", diff_check.stdout[-400:]
-            )
-        unexpected = [
-            path
-            for path in batch.changed_paths()
-            if not batch.allowed_generated_path(path)
-        ]
-        if unexpected:
-            return failed_after_apply(
-                cid, "unexpected_generated_paths", str(unexpected[:8])
-            )
-        committed, detail = batch.stage_and_commit(
+        return applied, apply_detail[-400:]
+
+    outcome = batch.commit_generated_transaction(
+        cid,
+        retries,
+        mutate,
+        (
             f"audit: {cid} judicial panel {blob['ratified_verdict']} "
             f"(codex-cli, {batch.MODEL}, {batch.REASONING}, panel/batch)"
-        )
-        if not committed:
-            return failed_after_apply(cid, "commit_failed", detail)
-        local_commit = detail
-        push = batch.sh(["git", "push", "-q", "origin", "HEAD:main"])
-        if push.returncode == 0:
-            return True, {
-                "cid": cid,
-                "result": blob["ratified_verdict"],
-                "sided_with": blob["sided_with"],
-                "commit": local_commit,
-            }
-        fetch = batch.sh(["git", "fetch", "origin", "main", "-q"])
-        if fetch.returncode != 0:
-            return False, {"cid": cid, "result": "push_failed"}
-        landed = batch.sh(
-            ["git", "merge-base", "--is-ancestor", local_commit, "origin/main"]
-        )
-        if landed.returncode == 0:
-            return True, {
-                "cid": cid,
-                "result": blob["ratified_verdict"],
-                "sided_with": blob["sided_with"],
-                "commit": local_commit,
-            }
-        if attempt == retries:
-            return False, {"cid": cid, "result": "push_race_exhausted"}
-        error = batch.clean_main_error()
-        if error:
-            return False, {"cid": cid, "result": "race_retry_dirty", "detail": error}
-        reset = batch.sh(["git", "reset", "--hard", "origin/main"])
-        if reset.returncode != 0:
-            return False, {"cid": cid, "result": "race_reset_failed"}
-    return False, {"cid": cid, "result": "unreachable"}
+        ),
+    )
+    if outcome["ok"]:
+        return True, {
+            "cid": cid,
+            "result": blob["ratified_verdict"],
+            "sided_with": blob["sided_with"],
+            "commit": outcome["commit"],
+        }
+
+    result = outcome["result"]
+    detail = str(outcome.get("detail") or "")
+    if result == "mutation_rejected":
+        result = "judicial_apply_rejected"
+    elif result == "gate_failed":
+        if detail.startswith("strict lint failed:"):
+            result = "strict_lint_failed"
+        elif detail.startswith("git diff --check failed:"):
+            result = "diff_check_failed"
+        elif detail.startswith("unexpected generated paths:"):
+            result = "unexpected_generated_paths"
+        else:
+            result = "pipeline_failed"
+    failure = {"cid": cid, "result": result}
+    if detail:
+        failure["detail"] = detail[-400:]
+    return False, failure
 
 
 def write_panel_record(workdir: Path, cid: str, panel_no: int, record: dict) -> None:
@@ -885,6 +817,55 @@ def write_panel_record(workdir: Path, cid: str, panel_no: int, record: dict) -> 
     (workdir / f"panel-{key}.json").write_text(payload, encoding="utf-8")
 
 
+def load_resumable_judgment(
+    row: dict,
+    rows: dict[str, dict],
+    workdir: Path,
+    resume_workdirs: list[Path],
+    evidence_manifest: dict[str, dict],
+) -> dict | None:
+    """Load an applyable majority without granting stale artifacts authority."""
+    cid = row["claim_id"]
+    filename = f"judgment-{batch.artifact_key(cid)}.json"
+    expected_fingerprint = disagreement_fingerprint(row)
+    for resume_dir in resume_workdirs:
+        path = resume_dir / filename
+        if not path.is_file():
+            continue
+        try:
+            blob = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError) as exc:
+            print(f"   {cid}: cannot resume malformed judgment {path}: {exc}")
+            continue
+        if not isinstance(blob, dict):
+            print(f"   {cid}: cannot resume non-object judgment {path}")
+            continue
+        panel_record = blob.get("judicial_panel_record_v1")
+        if (
+            blob.get("claim_id") != cid
+            or not isinstance(panel_record, dict)
+            or panel_record.get("disagreement_fingerprint")
+            != expected_fingerprint
+        ):
+            print(
+                f"   {cid}: ignoring stale judgment {path}; "
+                "source/seat fingerprint changed"
+            )
+            continue
+        error = judicial_applyability_error(
+            blob, rows, evidence_manifest, workdir
+        )
+        if error is not None:
+            print(
+                f"   {cid}: preserved judgment {path} is no longer applyable: "
+                f"{error[-240:]}"
+            )
+            continue
+        print(f"   {cid}: resuming validated five-judge majority from {path}")
+        return blob
+    return None
+
+
 def run_panel(
     row: dict,
     rows: dict[str, dict],
@@ -893,6 +874,9 @@ def run_panel(
     runner_timeout: int,
     retries: int,
     prior_panels: list[dict],
+    max_workers: int = PANEL_SIZE,
+    seat_timeout_seconds: int = 2700,
+    resume_workdirs: list[Path] | None = None,
 ) -> dict:
     cid = row["claim_id"]
     context_error = seat_context_error(row)
@@ -905,6 +889,19 @@ def run_panel(
     except Exception as exc:
         return {"cid": cid, "result": "packet_render_blocked", "detail": str(exc)}
 
+    resumable = load_resumable_judgment(
+        row,
+        rows,
+        workdir,
+        resume_workdirs or [],
+        evidence_manifest,
+    )
+    if resumable is not None:
+        _ok, result = apply_judgment(
+            resumable, evidence_manifest, workdir, retries
+        )
+        return result
+
     panel_history = copy.deepcopy(prior_panels)
     panel_no = len(panel_history) + 1
     consecutive_contract_retries = 0
@@ -914,10 +911,15 @@ def run_panel(
         consecutive_contract_retries += 1
     while True:
         jobs = []
+        worker_phase = "launch"
         try:
-            for judge_no in range(1, PANEL_SIZE + 1):
-                jobs.append(
-                    launch_judge(
+            for wave_start in range(1, PANEL_SIZE + 1, max_workers):
+                wave = []
+                for judge_no in range(
+                    wave_start,
+                    min(PANEL_SIZE + 1, wave_start + max_workers),
+                ):
+                    job = launch_judge(
                         packet,
                         row,
                         judge_no,
@@ -927,12 +929,29 @@ def run_panel(
                         invocation_id,
                         evidence_manifest,
                     )
+                    jobs.append(job)
+                    wave.append(job)
+                print(
+                    f"   {cid}: launched judges "
+                    f"{wave_start}-{wave_start + len(wave) - 1} "
+                    f"for panel {panel_no}; waiting"
                 )
+                worker_phase = "wait"
+                batch.wait_workers(
+                    wave,
+                    stall_minutes,
+                    wall_timeout_seconds=seat_timeout_seconds,
+                )
+                worker_phase = "launch"
         except Exception as exc:
             batch.terminate_workers(jobs)
             return {
                 "cid": cid,
-                "result": "panel_launch_blocked",
+                "result": (
+                    "panel_wait_blocked"
+                    if worker_phase == "wait"
+                    else "panel_launch_blocked"
+                ),
                 "detail": str(exc),
             }
         except BaseException:
@@ -945,17 +964,6 @@ def run_panel(
                 "cid": cid,
                 "result": "judge_identity_collision",
                 "detail": "panel judges did not receive five distinct identities",
-            }
-        print(
-            f"   {cid}: launched {len(jobs)} judges for panel {panel_no}; waiting"
-        )
-        try:
-            batch.wait_workers(jobs, stall_minutes)
-        except Exception as exc:
-            return {
-                "cid": cid,
-                "result": "panel_wait_blocked",
-                "detail": str(exc),
             }
         votes: list[dict] = []
         failures: list[str] = []
@@ -1336,8 +1344,15 @@ def load_prior_panels(
 
 
 def runtime_arg_error(args: argparse.Namespace) -> str | None:
-    for name in ("stall_minutes", "runner_timeout_sec", "push_retries"):
-        if getattr(args, name) <= 0:
+    defaults = {"max_workers": PANEL_SIZE, "seat_timeout_sec": 2700}
+    for name in (
+        "max_workers",
+        "stall_minutes",
+        "seat_timeout_sec",
+        "runner_timeout_sec",
+        "push_retries",
+    ):
+        if getattr(args, name, defaults.get(name)) <= 0:
             return f"--{name.replace('_', '-')} must be positive"
     return None
 
@@ -1356,9 +1371,27 @@ def main() -> int:
         default=[],
         help="path to a prior panel-<key>.json record to give the judges",
     )
+    parser.add_argument("--max-workers", type=int, default=PANEL_SIZE)
     parser.add_argument("--stall-minutes", type=int, default=45)
+    parser.add_argument("--seat-timeout-sec", type=int, default=2700)
     parser.add_argument("--runner-timeout-sec", type=int, default=120)
     parser.add_argument("--push-retries", type=int, default=3)
+    parser.add_argument(
+        "--workdir",
+        type=Path,
+        default=None,
+        help="fresh directory for this panel phase",
+    )
+    parser.add_argument(
+        "--resume-workdir",
+        type=Path,
+        action="append",
+        default=[],
+        help=(
+            "read-only prior panel workdir whose validated majority judgment "
+            "may be replayed after current fingerprint/applyability checks"
+        ),
+    )
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument(
         "--no-reseat",
@@ -1375,6 +1408,7 @@ def main() -> int:
     if arg_error:
         print(f"refusing to run: {arg_error}")
         return 2
+    batch.install_shutdown_handlers()
 
     if not args.dry_run:
         error = batch.clean_main_error()
@@ -1382,9 +1416,13 @@ def main() -> int:
             print(f"refusing to run: {error}. Use a dedicated clean main checkout.")
             return 2
 
-    workdir = Path(
+    workdir = args.workdir or Path(
         os.environ.get("AUDIT_PANEL_WORKDIR")
-        or f"/tmp/audit_panel_{datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S')}_{uuid.uuid4().hex[:8]}"
+        or (
+            f"/tmp/audit_panel_"
+            f"{datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S')}_"
+            f"{uuid.uuid4().hex[:8]}"
+        )
     )
     if not args.dry_run:
         guard_error = workdir_guard_error(workdir)
@@ -1400,6 +1438,17 @@ def main() -> int:
                 "AUDIT_PANEL_WORKDIR at a new path."
             )
             return 2
+        for resume_dir in args.resume_workdir:
+            resume_guard = workdir_guard_error(resume_dir)
+            if resume_guard:
+                print(f"refusing to run: {resume_guard}")
+                return 2
+            if not resume_dir.is_dir():
+                print(
+                    f"refusing to run: resume workdir {resume_dir} "
+                    "does not exist or is not a directory"
+                )
+                return 2
 
     if not args.dry_run:
         drain_lock = batch.acquire_exclusive_drain_lock("orchestrate_judicial_panel")
@@ -1467,6 +1516,9 @@ def main() -> int:
             args.runner_timeout_sec,
             args.push_retries,
             prior_by_claim.get(row["claim_id"], []),
+            max_workers=args.max_workers,
+            seat_timeout_seconds=args.seat_timeout_sec,
+            resume_workdirs=args.resume_workdir,
         )
         report.append(result)
         print(f"   {result['cid']}: {result['result']}")

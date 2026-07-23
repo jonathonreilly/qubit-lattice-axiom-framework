@@ -111,8 +111,16 @@ class ReseatOutcomeShapeTest(unittest.TestCase):
 
         import orchestrate_judicial_panel as panel
 
-        with mock.patch.object(panel, "restore_preapply_state", lambda: None):
-            outcome = panel._reseat_failure("row_x", "reseat_pipeline_failed", "boom")
+        with mock.patch.object(
+            panel.batch,
+            "commit_generated_transaction",
+            return_value={
+                "ok": False,
+                "result": "gate_failed",
+                "detail": "pipeline failed: boom",
+            },
+        ):
+            outcome = panel.reseat_blocked_row("row_x", 3)
         self.assertIsInstance(outcome, dict)
         self.assertEqual(outcome["cid"], "row_x")
         self.assertEqual(outcome["result"], "reseat_pipeline_failed")

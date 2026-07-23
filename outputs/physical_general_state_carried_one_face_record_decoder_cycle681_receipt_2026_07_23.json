@@ -1,0 +1,1148 @@
+{
+  "Status": "PASS",
+  "all_face_compiled": false,
+  "arbitrary_lawful_record_sequences": {
+    "fixtures": [
+      {
+        "bits": 220,
+        "controller_blank_return": true,
+        "decoded_sha256": "f60029001c858e666f6c6276cb5904b9452c3c0944d120ab7b854f2341d326ed",
+        "exact": true,
+        "fixture": "opcode_cover",
+        "gates": 5,
+        "head_mod_524_forward_then_cleanup_returns_zero": true,
+        "held_out": false,
+        "length": 3,
+        "literal_basis_transition_sha256": "54513ad7191cf3fa4d31d99602eb9b10b76da5abf89d06a01ba93abf6cb785e4",
+        "records": 5
+      },
+      {
+        "bits": 157,
+        "controller_blank_return": true,
+        "decoded_sha256": "1b244a5a1f30c37c3dc4300b4040c5523b8260143f2de17e579fdb2730f09ef8",
+        "exact": true,
+        "fixture": "routed_all_six_directions",
+        "gates": 13,
+        "head_mod_524_forward_then_cleanup_returns_zero": true,
+        "held_out": false,
+        "length": 3,
+        "literal_basis_transition_sha256": "1b4de2e767c0e60d136829279dffb1379770c6bc646c73659240b8bdcb1acf9f",
+        "records": 1
+      },
+      {
+        "bits": 524,
+        "controller_blank_return": true,
+        "decoded_sha256": "9acc71f55343d2c436b0bab87f598c7da104ad8143f3828ec6c2b3fbf3f11198",
+        "exact": true,
+        "fixture": "max_24_run_and_5_central_fields",
+        "gates": 63,
+        "head_mod_524_forward_then_cleanup_returns_zero": true,
+        "held_out": false,
+        "length": 3,
+        "literal_basis_transition_sha256": "fed8c0fad76bab7836680f13d0a137bd60df975adb7b7b67f7b6ca312c1f5cd8",
+        "records": 1
+      },
+      {
+        "bits": 1300,
+        "controller_blank_return": true,
+        "decoded_sha256": "54ec996316595ad2674d6c6b9808f4990d1949b3d9a703e7c333d9a5db1b60c9",
+        "exact": true,
+        "fixture": "max_32_mixed_records",
+        "gates": 32,
+        "head_mod_524_forward_then_cleanup_returns_zero": true,
+        "held_out": false,
+        "length": 3,
+        "literal_basis_transition_sha256": "99e3f2369f5d1090e0b5e930a14ae1a254a25ab302f53d8dab0fab5aa16d4e6e",
+        "records": 32
+      },
+      {
+        "bits": 865,
+        "controller_blank_return": true,
+        "decoded_sha256": "4a1efaebac68e60b3241edcac3f8c1c0ea56e9b86de815d3a29e01be84b3258b",
+        "exact": true,
+        "fixture": "mixed_routed_nonrouted",
+        "gates": 81,
+        "head_mod_524_forward_then_cleanup_returns_zero": true,
+        "held_out": false,
+        "length": 3,
+        "literal_basis_transition_sha256": "828e70700b8391cb08e17c47ea161329c736a938be9a0a23c36406a8b4bc3060",
+        "records": 7
+      },
+      {
+        "bits": 238,
+        "controller_blank_return": true,
+        "decoded_sha256": "f60029001c858e666f6c6276cb5904b9452c3c0944d120ab7b854f2341d326ed",
+        "exact": true,
+        "fixture": "opcode_cover",
+        "gates": 5,
+        "head_mod_524_forward_then_cleanup_returns_zero": true,
+        "held_out": false,
+        "length": 6,
+        "literal_basis_transition_sha256": "15ac7b79ac677d54895804f3ad35d9590afa588a5c53c67ae3b8e441fb2132d9",
+        "records": 5
+      },
+      {
+        "bits": 169,
+        "controller_blank_return": true,
+        "decoded_sha256": "1b244a5a1f30c37c3dc4300b4040c5523b8260143f2de17e579fdb2730f09ef8",
+        "exact": true,
+        "fixture": "routed_all_six_directions",
+        "gates": 13,
+        "head_mod_524_forward_then_cleanup_returns_zero": true,
+        "held_out": false,
+        "length": 6,
+        "literal_basis_transition_sha256": "21b6121160d39dbbbcc2f3489f79b4a01244f2eaecce79905483575cb2e782a6",
+        "records": 1
+      },
+      {
+        "bits": 569,
+        "controller_blank_return": true,
+        "decoded_sha256": "9acc71f55343d2c436b0bab87f598c7da104ad8143f3828ec6c2b3fbf3f11198",
+        "exact": true,
+        "fixture": "max_24_run_and_5_central_fields",
+        "gates": 63,
+        "head_mod_524_forward_then_cleanup_returns_zero": true,
+        "held_out": false,
+        "length": 6,
+        "literal_basis_transition_sha256": "4b01487ddf583d92204c40b1fea5f59b52a4507cb7df2525512188c7c94b627a",
+        "records": 1
+      },
+      {
+        "bits": 1414,
+        "controller_blank_return": true,
+        "decoded_sha256": "54ec996316595ad2674d6c6b9808f4990d1949b3d9a703e7c333d9a5db1b60c9",
+        "exact": true,
+        "fixture": "max_32_mixed_records",
+        "gates": 32,
+        "head_mod_524_forward_then_cleanup_returns_zero": true,
+        "held_out": false,
+        "length": 6,
+        "literal_basis_transition_sha256": "863c9dc1c47ba1b1c47c6db34468b00e24bbebb20d7725d3e8abd95a17095680",
+        "records": 32
+      },
+      {
+        "bits": 940,
+        "controller_blank_return": true,
+        "decoded_sha256": "4a1efaebac68e60b3241edcac3f8c1c0ea56e9b86de815d3a29e01be84b3258b",
+        "exact": true,
+        "fixture": "mixed_routed_nonrouted",
+        "gates": 81,
+        "head_mod_524_forward_then_cleanup_returns_zero": true,
+        "held_out": false,
+        "length": 6,
+        "literal_basis_transition_sha256": "7569f455c62e719397d4388ab7e2b7b5a78d213a0f6907f64577a44f51084eef",
+        "records": 7
+      },
+      {
+        "bits": 238,
+        "controller_blank_return": true,
+        "decoded_sha256": "f60029001c858e666f6c6276cb5904b9452c3c0944d120ab7b854f2341d326ed",
+        "exact": true,
+        "fixture": "opcode_cover",
+        "gates": 5,
+        "head_mod_524_forward_then_cleanup_returns_zero": true,
+        "held_out": true,
+        "length": 7,
+        "literal_basis_transition_sha256": "15ac7b79ac677d54895804f3ad35d9590afa588a5c53c67ae3b8e441fb2132d9",
+        "records": 5
+      },
+      {
+        "bits": 169,
+        "controller_blank_return": true,
+        "decoded_sha256": "1b244a5a1f30c37c3dc4300b4040c5523b8260143f2de17e579fdb2730f09ef8",
+        "exact": true,
+        "fixture": "routed_all_six_directions",
+        "gates": 13,
+        "head_mod_524_forward_then_cleanup_returns_zero": true,
+        "held_out": true,
+        "length": 7,
+        "literal_basis_transition_sha256": "21b6121160d39dbbbcc2f3489f79b4a01244f2eaecce79905483575cb2e782a6",
+        "records": 1
+      },
+      {
+        "bits": 569,
+        "controller_blank_return": true,
+        "decoded_sha256": "9acc71f55343d2c436b0bab87f598c7da104ad8143f3828ec6c2b3fbf3f11198",
+        "exact": true,
+        "fixture": "max_24_run_and_5_central_fields",
+        "gates": 63,
+        "head_mod_524_forward_then_cleanup_returns_zero": true,
+        "held_out": true,
+        "length": 7,
+        "literal_basis_transition_sha256": "4b01487ddf583d92204c40b1fea5f59b52a4507cb7df2525512188c7c94b627a",
+        "records": 1
+      },
+      {
+        "bits": 1414,
+        "controller_blank_return": true,
+        "decoded_sha256": "54ec996316595ad2674d6c6b9808f4990d1949b3d9a703e7c333d9a5db1b60c9",
+        "exact": true,
+        "fixture": "max_32_mixed_records",
+        "gates": 32,
+        "head_mod_524_forward_then_cleanup_returns_zero": true,
+        "held_out": true,
+        "length": 7,
+        "literal_basis_transition_sha256": "863c9dc1c47ba1b1c47c6db34468b00e24bbebb20d7725d3e8abd95a17095680",
+        "records": 32
+      },
+      {
+        "bits": 940,
+        "controller_blank_return": true,
+        "decoded_sha256": "4a1efaebac68e60b3241edcac3f8c1c0ea56e9b86de815d3a29e01be84b3258b",
+        "exact": true,
+        "fixture": "mixed_routed_nonrouted",
+        "gates": 81,
+        "head_mod_524_forward_then_cleanup_returns_zero": true,
+        "held_out": true,
+        "length": 7,
+        "literal_basis_transition_sha256": "7569f455c62e719397d4388ab7e2b7b5a78d213a0f6907f64577a44f51084eef",
+        "records": 7
+      }
+    ],
+    "pass": true,
+    "record_sequence_structural_induction": {
+      "base_case": "one lawful record consumes exactly its field-determined bit interval, emits exactly forward+central+reverse and leaves only the advanced typed cursor",
+      "inductive_step": "concatenating a lawful record begins at the unique prior bit_end; field registers and action head are returned before the next record, so semantic gate lists concatenate without cross-record garbage",
+      "pass": true,
+      "proof_scope": "all finite lawful sequences with record_count 1..32 under the declared grammar",
+      "terminal": "record_count ends the forward pass; the fixed grammar cleanup traverses the same state edges in reverse without data calls, returning program cursor, 524-head, field rail, phase and access subphase"
+    }
+  },
+  "audit": "unset",
+  "author_accepted": false,
+  "author_artifact_status_accepted": false,
+  "authority": "none",
+  "autonomous_program_genesis_or_blank_renewal_compiled": false,
+  "axiom_pressure": false,
+  "breakthrough": false,
+  "classification": "executed reversible one-face basis-FSM plus physical action/corridor compiler; FSM-transition-to-M2 word remains supplied/inherited rather than fully enumerated",
+  "complete_declared_one_face_grammar": {
+    "complete_actual_one_face_class_coverage": true,
+    "excludes": [
+      "opcodes 5..7",
+      "zero central/run/record counts",
+      "direction codes 6..7",
+      "zero or >=129L run lengths",
+      "out-of-torus or semantically wrong-arity operands",
+      "non-NN binary data actions",
+      "untyped trailing bits",
+      "all-face arbitration",
+      "program genesis/renewal",
+      "full M64 E"
+    ],
+    "includes": [
+      "routed forward/local/reverse excursions",
+      "nonrouted central records",
+      "H",
+      "SDG",
+      "S",
+      "X",
+      "CNOT",
+      "1..5 central gates",
+      "1..24 direction runs",
+      "1..32 record sequences"
+    ],
+    "observed_opcode_union": {
+      "CNOT": 72,
+      "H": 18,
+      "S": 6,
+      "SDG": 6,
+      "X": 1
+    },
+    "observed_record_class_union": {
+      "nonrouted": 1,
+      "routed": 72
+    },
+    "pass": true,
+    "sizes": [
+      {
+        "action_phase_count": 285226,
+        "all24_decoded_gate_sha256": "868e1cb7db97dae14c872152f9863c158e3c6c9218e3f9e0e8fa0a1d41ef289e",
+        "all24_source_gate_sha256": "868e1cb7db97dae14c872152f9863c158e3c6c9218e3f9e0e8fa0a1d41ef289e",
+        "central_opcode_histogram": {
+          "CNOT": 24,
+          "H": 6,
+          "S": 2,
+          "SDG": 2
+        },
+        "controller_forward_cleanup_steps_equal": true,
+        "coordinate_width_bits": 9,
+        "decoded_gate_count": 16790,
+        "decoded_gate_list_sha256": "5670e44503d7de5a8cb4c538d918a17dd837eebd6ea00af2db1633b51da34505",
+        "decoder_head_subphase_and_scratch_return_blank": true,
+        "exact_Cycle660_byte_grammar": true,
+        "exact_Cycle660_semantic_decode": true,
+        "held_out": false,
+        "length": 3,
+        "literal_basis_FSM_action_trace_exact": true,
+        "literal_basis_controller_residual": 0,
+        "literal_basis_controller_return": true,
+        "literal_basis_transition_count": 61682,
+        "literal_basis_transition_sha256": "a1f3c34853ad8f34ce904309298f4290d7b75e987a4e7bac628758ab4ffa399c",
+        "pass": true,
+        "per_record_expected_word_or_action_table": false,
+        "program_payload_bits": 4588,
+        "record_bits_select_every_action": true,
+        "record_classes": {
+          "routed": 24
+        },
+        "record_count": 24,
+        "source_gate_count": 16790,
+        "source_gate_list_sha256": "5670e44503d7de5a8cb4c538d918a17dd837eebd6ea00af2db1633b51da34505",
+        "typed_terminal_exact": true
+      },
+      {
+        "action_phase_count": 293999,
+        "all24_decoded_gate_sha256": "f6572c74f2ecb7d9489bb6f7f5833383239dbab3e11b0b1f6481ed34f731de29",
+        "all24_source_gate_sha256": "f6572c74f2ecb7d9489bb6f7f5833383239dbab3e11b0b1f6481ed34f731de29",
+        "central_opcode_histogram": {
+          "CNOT": 24,
+          "H": 6,
+          "S": 2,
+          "SDG": 2,
+          "X": 1
+        },
+        "controller_forward_cleanup_steps_equal": true,
+        "coordinate_width_bits": 10,
+        "decoded_gate_count": 17307,
+        "decoded_gate_list_sha256": "126fe8d8c1ebb7c1f58b5a3316cf93856d62b5538051a3314160e2508f20d19b",
+        "decoder_head_subphase_and_scratch_return_blank": true,
+        "exact_Cycle660_byte_grammar": true,
+        "exact_Cycle660_semantic_decode": true,
+        "held_out": false,
+        "length": 6,
+        "literal_basis_FSM_action_trace_exact": true,
+        "literal_basis_controller_residual": 0,
+        "literal_basis_controller_return": true,
+        "literal_basis_transition_count": 65423,
+        "literal_basis_transition_sha256": "65ea7b884056d58bb7108d6ec222cab1f1f78d38afa0b577f719d01344fe339d",
+        "pass": true,
+        "per_record_expected_word_or_action_table": false,
+        "program_payload_bits": 5065,
+        "record_bits_select_every_action": true,
+        "record_classes": {
+          "nonrouted": 1,
+          "routed": 24
+        },
+        "record_count": 25,
+        "source_gate_count": 17307,
+        "source_gate_list_sha256": "126fe8d8c1ebb7c1f58b5a3316cf93856d62b5538051a3314160e2508f20d19b",
+        "typed_terminal_exact": true
+      },
+      {
+        "action_phase_count": 293998,
+        "all24_decoded_gate_sha256": "a644513e23fffa17ec15e50a39e7561339fd6634607124b9746ddeb7331f5e41",
+        "all24_source_gate_sha256": "a644513e23fffa17ec15e50a39e7561339fd6634607124b9746ddeb7331f5e41",
+        "central_opcode_histogram": {
+          "CNOT": 24,
+          "H": 6,
+          "S": 2,
+          "SDG": 2
+        },
+        "controller_forward_cleanup_steps_equal": true,
+        "coordinate_width_bits": 10,
+        "decoded_gate_count": 17306,
+        "decoded_gate_list_sha256": "f68688f1c0717288c5c2cdb415d8a5fd8aa8abac6fd8458d5c3733d5b47a5e03",
+        "decoder_head_subphase_and_scratch_return_blank": true,
+        "exact_Cycle660_byte_grammar": true,
+        "exact_Cycle660_semantic_decode": true,
+        "held_out": true,
+        "length": 7,
+        "literal_basis_FSM_action_trace_exact": true,
+        "literal_basis_controller_residual": 0,
+        "literal_basis_controller_return": true,
+        "literal_basis_transition_count": 65256,
+        "literal_basis_transition_sha256": "8bf0d97a9c8d9c8a350c4e30727efdafbe8bd1acea05b4877657834eb596e205",
+        "pass": true,
+        "per_record_expected_word_or_action_table": false,
+        "program_payload_bits": 5027,
+        "record_bits_select_every_action": true,
+        "record_classes": {
+          "routed": 24
+        },
+        "record_count": 24,
+        "source_gate_count": 17306,
+        "source_gate_list_sha256": "f68688f1c0717288c5c2cdb415d8a5fd8aa8abac6fd8458d5c3733d5b47a5e03",
+        "typed_terminal_exact": true
+      }
+    ],
+    "syntax": {
+      "central_gate": "opcode:3 in H/SDG/S/X/CNOT, support:1, then support*3w operand bits",
+      "header": "magic:8, coordinate_width:4, record_count:6 in [1,32]",
+      "record": "routed:1, central_count:3 in [1,5]",
+      "routed_fields": "start:3w, run_count:5 in [1,24], each run direction:3 in [0,5] plus length:w in [1,129L-1]",
+      "semantic_lawfulness": "unary arity one; CNOT arity two on distinct fine-NN one-face data roles; every coordinate is in the 129L torus; exact typed terminal"
+    }
+  },
+  "compositional_supplied_transition_one_face_intertwiner": true,
+  "constitutional_effect": "none",
+  "covariance_collision_translation_capacity": {
+    "all24_rotated_NN_and_endpoint_failures": 0,
+    "all576_coordinate_composition_failures": 0,
+    "carried_frame_rule": "the canonical axis priority and every unit direction are rotated with the Cycle654 proper-cubic frame; the frame is controller state, never a global selector",
+    "one_hot_program_head_microphase_access_state_serializes_aliases": true,
+    "ordinary_coarse_K129_translation_bijection": true,
+    "pass": true,
+    "proper_cubic_aliases_are_shared_serial_carriers": true,
+    "sampled_compact_access_words": 1536,
+    "six_unit_fine_translation_endpoint_failures": 0,
+    "sizes": [
+      {
+        "Cycle667_plus_Cycle670_physical_controller_capacity_margin_M2": 1628169,
+        "dynamic_access_borrowed_carriers_returned": true,
+        "dynamic_access_roles_reserved": 0,
+        "forbidden_unreturned_collisions": 0,
+        "former_expected_roles_retyped_not_added": 4320,
+        "held_out": false,
+        "held_size_no_role_or_format_refit": false,
+        "inherited_surface_collisions": {
+          "aux": 0,
+          "new_sidecars": 0,
+          "old": 0,
+          "prior": 0,
+          "route_support": 0
+        },
+        "length": 3,
+        "new_general_decoder_physical_roles": 0
+      },
+      {
+        "Cycle667_plus_Cycle670_physical_controller_capacity_margin_M2": 1628169,
+        "dynamic_access_borrowed_carriers_returned": true,
+        "dynamic_access_roles_reserved": 0,
+        "forbidden_unreturned_collisions": 0,
+        "former_expected_roles_retyped_not_added": 4320,
+        "held_out": false,
+        "held_size_no_role_or_format_refit": false,
+        "inherited_surface_collisions": {
+          "aux": 0,
+          "new_sidecars": 0,
+          "old": 0,
+          "prior": 0,
+          "route_support": 0
+        },
+        "length": 6,
+        "new_general_decoder_physical_roles": 0
+      },
+      {
+        "Cycle667_plus_Cycle670_physical_controller_capacity_margin_M2": 1628169,
+        "dynamic_access_borrowed_carriers_returned": true,
+        "dynamic_access_roles_reserved": 0,
+        "forbidden_unreturned_collisions": 0,
+        "former_expected_roles_retyped_not_added": 4320,
+        "held_out": true,
+        "held_size_no_role_or_format_refit": true,
+        "inherited_surface_collisions": {
+          "aux": 0,
+          "new_sidecars": 0,
+          "old": 0,
+          "prior": 0,
+          "route_support": 0
+        },
+        "length": 7,
+        "new_general_decoder_physical_roles": 0
+      }
+    ]
+  },
+  "cycle": 681,
+  "date": "2026-07-23",
+  "efficient_or_minimum_overhead_claim": false,
+  "exact_opcode_and_SWAP_macros": {
+    "CNOT_CCX": {
+      "ancilla_free_CCX_primitive_count": 15,
+      "ancilla_free_Fredkin_primitive_count": 17,
+      "delete_each_primitive": {
+        "CCX": {
+          "count": 15,
+          "maximum_residual": 4.0,
+          "minimum_residual": 1.5307337294603587
+        },
+        "FREDKIN": {
+          "count": 17,
+          "maximum_residual": 4.0,
+          "minimum_residual": 1.5307337294603587
+        }
+      },
+      "exact_residuals": {
+        "CCX": 7.346882794269506e-16,
+        "FREDKIN": 7.346882794269506e-16
+      },
+      "inactive_head_sector_is_identity": true,
+      "maximum_elementary_support_M2": 2,
+      "pass": true,
+      "token_gate_rule": "one-site data U -> controlled-U support2; data-data CNOT -> exact CCX 15-call word; token-touching primitive unchanged",
+      "token_gated_support1_2_call_counts": {
+        "CCX": 43,
+        "FREDKIN": 73
+      }
+    },
+    "pass": true,
+    "phase_lengths_selected_from_opcode_field": {
+      "CNOT": 15,
+      "H": 1,
+      "S": 2,
+      "SDG": 2,
+      "SWAP": 17,
+      "X": 1
+    },
+    "unary": {
+      "H": {
+        "exact_residual": 0.0,
+        "minimum_phase_deletion_residual": 2.0,
+        "phase_length": 1
+      },
+      "S": {
+        "exact_residual": 0.0,
+        "minimum_phase_deletion_residual": 0.7653668647301795,
+        "phase_length": 2
+      },
+      "SDG": {
+        "exact_residual": 0.0,
+        "minimum_phase_deletion_residual": 0.7653668647301795,
+        "phase_length": 2
+      },
+      "X": {
+        "exact_residual": 0.0,
+        "minimum_phase_deletion_residual": 2.0,
+        "phase_length": 1
+      }
+    }
+  },
+  "executed_decoder_and_call_word_deletion_controls": {
+    "decoder_factor_count": 24,
+    "decoder_factor_deletion_residuals": {
+      "action_head_cleanup_reverse": {
+        "outcome": "executed basis trace",
+        "residual": 1
+      },
+      "arity_validator": {
+        "outcome": "executed basis trace",
+        "residual": 1
+      },
+      "central_count_loop": {
+        "outcome": "lawful witness rejected/desynchronized: ValueError",
+        "residual": 1
+      },
+      "central_marker_cleanup": {
+        "outcome": "executed basis trace",
+        "residual": 1
+      },
+      "direction_dispatch": {
+        "outcome": "executed basis trace",
+        "residual": 1
+      },
+      "fine_NN_binary_validator": {
+        "outcome": "malformed witness accepted only after validator deletion",
+        "residual": 1
+      },
+      "grant_to_action_head_coupling": {
+        "outcome": "executed basis trace",
+        "residual": 8
+      },
+      "header_cursor_cleanup": {
+        "outcome": "executed basis trace",
+        "residual": 1
+      },
+      "magic_discriminator": {
+        "outcome": "lawful witness rejected/desynchronized: ValueError",
+        "residual": 1
+      },
+      "opcode_dispatch": {
+        "outcome": "executed basis trace",
+        "residual": 1
+      },
+      "opcode_to_phase_length_selector": {
+        "outcome": "zeroing the live phase selector changes the executed action-control word",
+        "residual": 1
+      },
+      "operand_coordinate_latch": {
+        "outcome": "executed basis trace",
+        "residual": 1
+      },
+      "operand_range_validator": {
+        "outcome": "malformed witness accepted only after validator deletion",
+        "residual": 1
+      },
+      "operand_to_access_word_subtractor": {
+        "outcome": "deleting one emitted access transposition leaves the executed carrier permutation nonidentity",
+        "residual": 2
+      },
+      "record_count_loop": {
+        "outcome": "executed basis trace",
+        "residual": 1
+      },
+      "record_length_advance": {
+        "outcome": "lawful witness rejected/desynchronized: ValueError",
+        "residual": 1
+      },
+      "routed_branch_latch": {
+        "outcome": "lawful witness rejected/desynchronized: ValueError",
+        "residual": 1
+      },
+      "run_count_validator": {
+        "outcome": "executed basis trace",
+        "residual": 1
+      },
+      "run_field_to_action_dispatch": {
+        "outcome": "executed basis trace",
+        "residual": 11
+      },
+      "run_length_decrementer": {
+        "outcome": "executed basis trace",
+        "residual": 1
+      },
+      "start_coordinate_latch": {
+        "outcome": "executed basis trace",
+        "residual": 1
+      },
+      "typed_cursor_successor": {
+        "outcome": "lawful witness rejected/desynchronized: ValueError",
+        "residual": 1
+      },
+      "typed_program_terminal": {
+        "outcome": "malformed witness accepted only after validator deletion",
+        "residual": 1
+      },
+      "width_discriminator": {
+        "outcome": "lawful witness rejected/desynchronized: ValueError",
+        "residual": 1
+      }
+    },
+    "delete_each_actual_access_SWAP_population": 462698718,
+    "interpretation": "each listed factor is deleted from an executed basis/control trace or from its emitted access permutation; validators use a malformed witness accepted only after deletion",
+    "minimum_action_primitive_deletion_residual": 0.7653668647301795,
+    "minimum_decoder_factor_residual": 1,
+    "minimum_deleted_access_SWAP_permutation_residual": 2,
+    "pass": true
+  },
+  "executed_general_one_face_RLE_basis_FSM_compiled": true,
+  "executed_reversible_decoder_controller": {
+    "Bennett_compute_action_cleanup": "field loads and bounded counters compute controls, data action fires once, the fixed inverse field trace returns every decoder role blank without undoing data",
+    "Cycle660_typed_program_path_capacity_bits": 5680,
+    "Cycle667_expected_record_comparator_removed": true,
+    "FSM_transition_to_M2_lowering_status": "SUPPLIED/INHERITED RECIPE: exact support<=2 atoms and routed CCX tile, but Python loop/address successor transitions are not emitted as one literal controller word",
+    "access_runtime_successor": "decoded operand minus active phase-token neighbor loads signed axis/step counters; no coordinate path table",
+    "action_head_runtime_successor": "Cycle670 closed 524-cell one-hot head ring; one forward step per emitted gate and one cleanup reverse step",
+    "actual_field_machine_counts": [
+      {
+        "length": 3,
+        "logical_bounded_field_CCX_upper_bound": 55056,
+        "logical_cursor_forward_reverse_SWAPS": 9176,
+        "logical_load_unload_CNOT_calls": 9176,
+        "physical_lowering": "each CNOT/X is support<=2; each CCX uses the pinned Cycle655/Cycle667 exact 27-primitive routed tile and returns its route",
+        "program_bits": 4588
+      },
+      {
+        "length": 6,
+        "logical_bounded_field_CCX_upper_bound": 60780,
+        "logical_cursor_forward_reverse_SWAPS": 10130,
+        "logical_load_unload_CNOT_calls": 10130,
+        "physical_lowering": "each CNOT/X is support<=2; each CCX uses the pinned Cycle655/Cycle667 exact 27-primitive routed tile and returns its route",
+        "program_bits": 5065
+      },
+      {
+        "length": 7,
+        "logical_bounded_field_CCX_upper_bound": 60324,
+        "logical_cursor_forward_reverse_SWAPS": 10054,
+        "logical_load_unload_CNOT_calls": 10054,
+        "physical_lowering": "each CNOT/X is support<=2; each CCX uses the pinned Cycle655/Cycle667 exact 27-primitive routed tile and returns its route",
+        "program_bits": 5027
+      }
+    ],
+    "complete_physical_grammar_requires_total_payload_at_most_5680_bits": true,
+    "field_rail_blank_margin_bits": 2,
+    "field_register_bits": 178,
+    "field_register_widths": {
+      "access_subphase": 16,
+      "axis_pointer": 2,
+      "central_count": 3,
+      "central_index": 3,
+      "direction": 3,
+      "flags_and_support_stack": 8,
+      "microphase": 5,
+      "mode_binary": 4,
+      "operand_A": 30,
+      "operand_B": 30,
+      "record_count": 5,
+      "record_index": 5,
+      "record_length": 13,
+      "route_position": 30,
+      "run_count": 5,
+      "run_index": 5,
+      "run_step": 10,
+      "sign": 1
+    },
+    "former_expected_rail_retyped_as_blank_returning_field_registers": true,
+    "fully_enumerated_M2_controller_transition_word": false,
+    "kind": "universal reversible Cycle660 grammar FSM on the placed Cycle667 parser roles",
+    "literal_basis_controller_residual_by_size": {
+      "3": 0,
+      "6": 0,
+      "7": 0
+    },
+    "literal_basis_transition_count_by_size": {
+      "3": 61682,
+      "6": 65423,
+      "7": 65256
+    },
+    "literal_basis_transition_sha256_by_size": {
+      "3": "a1f3c34853ad8f34ce904309298f4290d7b75e987a4e7bac628758ab4ffa399c",
+      "6": "65ea7b884056d58bb7108d6ec222cab1f1f78d38afa0b577f719d01344fe339d",
+      "7": "8bf0d97a9c8d9c8a350c4e30727efdafbe8bd1acea05b4877657834eb596e205"
+    },
+    "literal_reversible_basis_permutation_executed": true,
+    "maximum_actual_program_payload_bits": 5065,
+    "microphase_runtime_successor": "opcode bits load one of the fixed exact phase lengths; inactive rails are identity",
+    "new_physical_roles_beyond_Cycle667_Cycle670_Cycle677": 0,
+    "pass": true,
+    "per_record_expected_microcode_or_typed_action_table": false,
+    "pinned_parser_elementary_support_max": 2,
+    "pinned_parser_tile_maximum_CCX_route_edges": 11,
+    "program_cursor_head_field_phase_access_and_parser_scratch_return_blank": true,
+    "program_cursor_runtime_successor": "one-hot cursor plus Cycle660 typed NN successor bonds",
+    "reused_Cycle670_head_cells": 524,
+    "reused_Cycle670_phase_rails_per_head": 17,
+    "reused_field_rail_capacity_bits": 180
+  },
+  "frozen_target": {
+    "domain": [
+      "L3",
+      "L6",
+      "held-out L7",
+      "all lawful one-face record sequences",
+      "24 proper-cubic carried frames",
+      "576 ordered frame products",
+      "all coarse K129 translations"
+    ],
+    "forbidden": [
+      "host record/gate/site/path index",
+      "per-record static expected or typed action table",
+      "global parity or ordering service",
+      "all-face claim",
+      "autonomous program genesis or blank renewal",
+      "full M64 E",
+      "efficient or minimum-overhead claim"
+    ],
+    "required": [
+      "exact header and record field decoder",
+      "routed and nonrouted records",
+      "all five declared opcodes",
+      "field-selected operands/run length/microphase/access word",
+      "support-one/two fine-NN lowering",
+      "decoder/head/subphase/carrier return",
+      "malformed and deletion controls",
+      "exact E G_record = G_physical E on each declared record code"
+    ],
+    "target": "compile the complete declared Cycle654/Cycle660 one-face record grammar into the pinned Cycle667/670/677 physical controller so record fields, not a host or per-record expected/action table, select every action"
+  },
+  "full_M64_E_compiled": false,
+  "fully_literal_controller_M2_word_compiled": false,
+  "inherited_fixtures": {
+    "Cycle219_mass_residual": 2.220446049250313e-16,
+    "Cycle230_contact_deletion_residual": 0.36789306705608243,
+    "Cycle230_seam_failures": 0,
+    "pass": true
+  },
+  "malformed_and_lawful_domain_controls": {
+    "local_lawful_sector": {
+      "autonomous_repair_or_penalty_dynamics_compiled": false,
+      "nonblank_parser_scratch_rejected": true,
+      "saturated_or_dirty_field_microphase_access_register_rejected": true,
+      "zero_or_duplicate_524_head_rejected": true,
+      "zero_or_duplicate_program_cursor_rejected": true
+    },
+    "malformed_bit_words": {
+      "bad_direction_code": true,
+      "bad_magic": true,
+      "bad_opcode": true,
+      "binary_operands_identical": true,
+      "binary_operands_non_NN": true,
+      "opcode_arity_mismatch": true,
+      "operand_outside_torus": true,
+      "record_count_exceeds_payload": true,
+      "route_start_outside_torus": true,
+      "run_length_reaches_modulus": true,
+      "truncated_terminal": true,
+      "untyped_trailing_bit": true,
+      "wrong_coordinate_width": true,
+      "zero_central_count": true,
+      "zero_record_count": true,
+      "zero_run_count": true,
+      "zero_run_length": true
+    },
+    "pass": true
+  },
+  "maturity_0_to_5": {
+    "Born_and_probability": 1.0,
+    "causal_time": 2.2,
+    "gravity_and_source": 1.0,
+    "inertia_and_matter": 1.5,
+    "operational_quantum_and_records": 3.4
+  },
+  "no_go_discipline": {
+    "N1_normalized_families": [
+      {
+        "family": "per-record equality comparator bank",
+        "honesty_marker": "ATTEMPTED by Cycle667 selected scope",
+        "mechanism": "static expected bits",
+        "object": "one recognizer per lawful record",
+        "result": "rejected here because it is a forbidden per-record table, not evidence of impossibility",
+        "terminal": "complete grammar"
+      },
+      {
+        "family": "universal streaming grammar FSM",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism": "reversible field loads/range checks/counters",
+        "object": "record bit path plus bounded field registers",
+        "result": "candidate-complete positive",
+        "terminal": "all declared records"
+      },
+      {
+        "family": "mobile decoder carrying the whole record",
+        "honesty_marker": "RULED OUT AS UNNECESSARY, not impossible",
+        "mechanism": "transport then parse",
+        "object": "buffered record token",
+        "result": "larger alternative remains",
+        "terminal": "maximum 671-bit record"
+      },
+      {
+        "family": "direct uncompressed gate row decoder",
+        "honesty_marker": "RULED OUT AS FORBIDDEN for this target",
+        "mechanism": "one row per action",
+        "object": "literal Cycle654 gate rows",
+        "result": "would evade rather than compile the RLE fields",
+        "terminal": "semantic equality"
+      },
+      {
+        "family": "residual-vector access cursor",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism": "signed axis/run counters",
+        "object": "decoded operand displacement",
+        "result": "candidate-complete positive inside the streaming FSM",
+        "terminal": "every token-data atom"
+      }
+    ],
+    "N1_qualifying_families": 5,
+    "N2_wall_independence": {},
+    "N3_hidden_condition_scan": [
+      {
+        "classification": "explicit code-space supply, not genesis",
+        "condition": "supplied computational-basis program word and one-hot cursors"
+      },
+      {
+        "classification": "explicit theorem domain; all-face excluded",
+        "condition": "one-face semantic operand domain"
+      },
+      {
+        "classification": "explicit physical Cycle660 path capacity, not hidden efficiency claim",
+        "condition": "total payload <=5680"
+      }
+    ],
+    "N4_residual_matching": [
+      {
+        "closure": true,
+        "current": "universal field decoder true",
+        "exact_match": true,
+        "prior": "Cycle667 general_RLE_decoder=false"
+      },
+      {
+        "closure": true,
+        "current": "separate new general-record construction",
+        "exact_match": "scope boundary respected",
+        "prior": "Cycle677 explicitly forbids generalization"
+      }
+    ],
+    "N5_rhetoric_audit": {
+      "tested": [
+        "per-field",
+        "per-record",
+        "arbitrary sequence",
+        "one-face block",
+        "proper-frame orbit"
+      ],
+      "untested_and_unclaimed": [
+        "all-face",
+        "full M64 E",
+        "autonomous genesis/renewal",
+        "efficiency/minimality"
+      ]
+    },
+    "N6_partial_closure_paths": [
+      {
+        "artifact": "Cycle681",
+        "closes": "complete declared one-face grammar",
+        "does_not_close": [
+          "all-face arbitration",
+          "program genesis/renewal",
+          "full M64 E"
+        ]
+      }
+    ],
+    "N7_steelman": "A hostile reviewer should try a lawful mixed record whose field-dependent cursor length desynchronizes cleanup or whose proper-frame access word hits the active controller. Exact terminal consumption, sequence induction, actual whole-word replay, max-count fixtures, active-role scans and rotated endpoint checks are the concrete answers; independent replay remains required.",
+    "N8_cross_cycle_echo": [
+      {
+        "cycle": 660,
+        "echo": "RLE fields and typed successor path are consumed unchanged"
+      },
+      {
+        "cycle": 667,
+        "echo": "the selected expected-bit comparator is retired rather than multiplied"
+      },
+      {
+        "cycle": 670,
+        "echo": "one-hot head/microphase blank return is reused for arbitrary action counts plus reverse cleanup"
+      },
+      {
+        "cycle": 677,
+        "echo": "arbitrary-carrier conjugation is generalized from static selected paths to decoded displacement words"
+      }
+    ],
+    "axiom_pressure": false,
+    "axiom_pressure_gate": "FAIL / DO NOT SHIP",
+    "broad_negative_gate": "FAIL / DO NOT SHIP",
+    "broad_negative_shipped": false,
+    "minimum_content_gate": "FAIL / DO NOT SHIP",
+    "pass": true,
+    "shared_obstruction_gate": "FAIL / DO NOT SHIP",
+    "shared_route_independent_obstruction": false,
+    "skill_freshness": {
+      "newer_origin_main_followed": true,
+      "origin_main_no_go_sha256": "7d1aea8243ddd972331b935e2e836657e72115da3efe259f828fe862469d68b7",
+      "proof_search_governance_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    }
+  },
+  "note_sha256": "00f9198300e266541ccece3fa9da1c3e97df10cae05f6963890782e65cd64c64",
+  "optimal_next_campaign": "materialize the executed grammar-FSM loop/address/counter transitions as one complete support<=2 M2 controller word and delete-test that literal word; only after retention should all-face arbitration be attempted",
+  "pass": true,
+  "physical_action_and_corridor_compiler_complete": true,
+  "record_intertwiners": [
+    {
+      "E_G_record_equals_G_physical_E": true,
+      "basis_controller_residual": 0,
+      "domain": "complete lawful basis-record word on the declared one-face code; arbitrary data and borrowed-carrier amplitudes; supplied inherited support<=2 realization of the executed grammar-FSM cursor/counter/address transitions",
+      "exact_symbolic_residual": 0,
+      "held_out": false,
+      "length": 3
+    },
+    {
+      "E_G_record_equals_G_physical_E": true,
+      "basis_controller_residual": 0,
+      "domain": "complete lawful basis-record word on the declared one-face code; arbitrary data and borrowed-carrier amplitudes; supplied inherited support<=2 realization of the executed grammar-FSM cursor/counter/address transitions",
+      "exact_symbolic_residual": 0,
+      "held_out": false,
+      "length": 6
+    },
+    {
+      "E_G_record_equals_G_physical_E": true,
+      "basis_controller_residual": 0,
+      "domain": "complete lawful basis-record word on the declared one-face code; arbitrary data and borrowed-carrier amplitudes; supplied inherited support<=2 realization of the executed grammar-FSM cursor/counter/address transitions",
+      "exact_symbolic_residual": 0,
+      "held_out": true,
+      "length": 7
+    }
+  ],
+  "resources": {
+    "elapsed_seconds": 79.40970383305103,
+    "maximum_RSS_bytes": 460439552
+  },
+  "runner_sha256": "97ff345e0006f36ec2e2fc4234a035d109154eaa52a70e5f4bdb9995fb05146f",
+  "semantic_firewall": {
+    "coarse_CAR_cell_is_physical_site_compiler": false,
+    "cursor_or_head_is_Record": false,
+    "microphase_or_decoder_step_is_physical_time": false,
+    "phase_is_energy": false,
+    "record_decoder_is_all_face_or_full_E": false,
+    "subphase_count_is_rate": false
+  },
+  "shared_route_independent_obstruction": false,
+  "shore": {
+    "Cycle677_pins": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_SELECTED_RECORD_JOINT_OPERAND_CORRIDORS_CYCLE677_NOTE_2026-07-23.md": "7b21cf36482832ab247d5087d2f8d62f21069e8844b384c4c9449b4737de4b05",
+      "outputs/physical_selected_record_joint_operand_corridors_cycle677_cold_2026_07_23.txt": "78c7ee555a4e5da55b7db755012af7e417496cbf34b4e59631ae898afe5e198d",
+      "outputs/physical_selected_record_joint_operand_corridors_cycle677_receipt_2026_07_23.json": "c30e14a67e4a6c040c9bcd9a4ae9fd6b0466208769760958c982050539ca4200",
+      "scripts/physical_selected_record_joint_operand_corridors_cycle677_2026_07_23.py": "5c00b63ec6a3207c29af605ff8108a5b68b3f28756983f2b8822645dd9212399"
+    },
+    "commit": "fb0ab5636e",
+    "no_go_skill_origin_main_sha256": "7d1aea8243ddd972331b935e2e836657e72115da3efe259f828fe862469d68b7",
+    "proof_search_governance_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+  },
+  "six_wall_ledger": {
+    "C_int": "unchanged actions preserve the pinned Cycle219 mass and Cycle230 contact/seam fixtures; no new matter/inertia law",
+    "C_local": "advances through record-field-selected support<=2 NN decoder/action/access words; the complete physical one-face grammar no longer requires a host/per-record table",
+    "C_num": "exact basis-permutation, operator, gate-list, deletion and carrier-permutation residuals only; no Born/probability promotion",
+    "C_ref": "advances from one selected record to the complete declared one-face grammar with carried-frame access and exact all576 composition; all-face arbitration remains separate",
+    "C_source": "unchanged; decoder control and corridor geometry have no gravity/source interpretation",
+    "C_wrap": "advances through literal decoder field unload, typed program-cursor return, arbitrary action-head reverse cleanup and every catalytic carrier return for arbitrary lawful record sequences"
+  },
+  "status": "cycle681-complete-one-face-record-grammar-state-carried-physical-decoder",
+  "strict_unconditional_complete_one_face_physical_intertwiner_compiled": false,
+  "strongest_constructive_result": "the complete declared Cycle654/Cycle660 one-face grammar is executed by a reversible basis FSM whose live record fields dispatch all 16,790/17,307/17,306 unchanged L3/L6/L7 actions into explicit support<=2 physical macro/corridor words; every modeled decoder state, physical head/subphase and arbitrary carrier returns, so the compositional supplied-transition code satisfies E G_record = G_physical E exactly without a host or per-record expected/action/path table; the FSM cursor/counter/address transitions are not yet one fully enumerated M2 controller word",
+  "supplied_structure_inventory": [
+    "computational-basis lawful Cycle660 program word on the pinned typed 5680-role path",
+    "one supplied oriented program cursor and one-hot action head",
+    "pinned Cycle667 parser tile/head/bus roles, with its selected expected-value rail retyped blank",
+    "178 field/counter bits on the 180-role rail plus at most five returned program-position marker tokens",
+    "pinned Cycle670 524-cell head ring and 17 phase rails per head",
+    "the fixed grammar-level opcode/validator FSM and exact CCX/Fredkin/unary macro dictionary",
+    "the support-one/two M2 realization recipe for FSM loop bounds, record-length/runs-start address arithmetic and cursor/counter successors; its complete controller call word is supplied/inherited here, not enumerated",
+    "a carried proper-cubic frame and decoded signed displacement/access counters",
+    "arbitrary occupied borrowed carrier states returned by S^-1 U S",
+    "the one-face semantic data-role domain and total payload bound <=5680 bits"
+  ],
+  "support1_2_NN_physical_lowering": {
+    "pass": true,
+    "sizes": [
+      {
+        "access_subphase_saturation_margin": 61949,
+        "active_controller_or_other_operand_hits": 0,
+        "arbitrary_borrowed_carrier_return": "every compact route expands to S^-1 U S; operator-level identity for arbitrary/entangled carriers",
+        "axis_order_histogram": {
+          "(0, 1, 2)": 374064,
+          "(0, 2, 1)": 68,
+          "(1, 0, 2)": 95527,
+          "(2, 0, 1)": 3
+        },
+        "compact_exact_call_word_sha256": "3f66793f63bf16f325ce467bb8de7775d40bad09f8c25362cb14ae71f64b016a",
+        "compact_word_expands_uniquely_to_literal_NN_calls": true,
+        "decoded_action_count": 16790,
+        "delete_each_open_or_close_SWAP_population": 150992686,
+        "direct_data_data_fine_NN_failures": 0,
+        "final_borrowed_role_leakage_count": 0,
+        "head_cleanup_reverse_count": 16790,
+        "head_forward_action_count": 16790,
+        "head_returns_ring_origin": true,
+        "held_out": false,
+        "length": 3,
+        "literal_physical_call_count": 152216920,
+        "maximum_access_path_edges": 447,
+        "maximum_elementary_support_M2": 2,
+        "maximum_one_phase_physical_calls": 3587,
+        "minimum_access_path_edges": 3,
+        "minimum_deleted_SWAP_permutation_residual": 2,
+        "operand_access_SWAP_calls": 150992686,
+        "operand_access_open_edges": 75496343,
+        "operand_access_round_trips": 469662,
+        "pass": true,
+        "path_construction_failures": 0,
+        "record_field_selected_active_phase_count": 285226,
+        "runtime_dispatch_source": "record fields + one-hot program/action head + microphase/access counters; no host or per-record action/path table",
+        "sixteen_bit_access_subphase_capacity": 65536,
+        "support_failures": 0,
+        "support_histogram": {
+          "CNOT/support2": 469552,
+          "H/support1": 134144,
+          "SWAP_close/support2": 75496343,
+          "SWAP_open/support2": 75496343,
+          "T/support1": 285068,
+          "Tdg/support1": 201216,
+          "controlled_H/support2": 33566,
+          "controlled_T/support2": 50344,
+          "controlled_Tdg/support2": 50344
+        },
+        "token_gated_action_atom_count": 1224234
+      },
+      {
+        "access_subphase_saturation_margin": 61821,
+        "active_controller_or_other_operand_hits": 0,
+        "arbitrary_borrowed_carrier_return": "every compact route expands to S^-1 U S; operator-level identity for arbitrary/entangled carriers",
+        "axis_order_histogram": {
+          "(0, 1, 2)": 388532,
+          "(0, 2, 1)": 71,
+          "(1, 0, 2)": 95504,
+          "(2, 0, 1)": 3,
+          "(2, 1, 0)": 1
+        },
+        "compact_exact_call_word_sha256": "f46fa7da8abe7abdcfe2810e56628e21bd0a6ae97cffd060723beabfd9fc5307",
+        "compact_word_expands_uniquely_to_literal_NN_calls": true,
+        "decoded_action_count": 17307,
+        "delete_each_open_or_close_SWAP_population": 155860432,
+        "direct_data_data_fine_NN_failures": 0,
+        "final_borrowed_role_leakage_count": 0,
+        "head_cleanup_reverse_count": 17307,
+        "head_forward_action_count": 17307,
+        "head_returns_ring_origin": true,
+        "held_out": false,
+        "length": 6,
+        "literal_physical_call_count": 157122335,
+        "maximum_access_path_edges": 463,
+        "maximum_elementary_support_M2": 2,
+        "maximum_one_phase_physical_calls": 3715,
+        "minimum_access_path_edges": 3,
+        "minimum_deleted_SWAP_permutation_residual": 2,
+        "operand_access_SWAP_calls": 155860432,
+        "operand_access_open_edges": 77930216,
+        "operand_access_round_trips": 484111,
+        "pass": true,
+        "path_construction_failures": 0,
+        "record_field_selected_active_phase_count": 293999,
+        "runtime_dispatch_source": "record fields + one-hot program/action head + microphase/access counters; no host or per-record action/path table",
+        "sixteen_bit_access_subphase_capacity": 65536,
+        "support_failures": 0,
+        "support_histogram": {
+          "CNOT/support2": 484001,
+          "H/support1": 138272,
+          "SWAP_close/support2": 77930216,
+          "SWAP_open/support2": 77930216,
+          "T/support1": 293840,
+          "Tdg/support1": 207408,
+          "controlled_H/support2": 34598,
+          "controlled_T/support2": 51892,
+          "controlled_Tdg/support2": 51892
+        },
+        "token_gated_action_atom_count": 1261903
+      },
+      {
+        "access_subphase_saturation_margin": 61821,
+        "active_controller_or_other_operand_hits": 0,
+        "arbitrary_borrowed_carrier_return": "every compact route expands to S^-1 U S; operator-level identity for arbitrary/entangled carriers",
+        "axis_order_histogram": {
+          "(0, 1, 2)": 388530,
+          "(0, 2, 1)": 71,
+          "(1, 0, 2)": 95502,
+          "(2, 0, 1)": 6,
+          "(2, 1, 0)": 1
+        },
+        "compact_exact_call_word_sha256": "d3b1ac3b63b902e7f88855ac1e64888b0aa4d98931620fec128466c0b5bfd03b",
+        "compact_word_expands_uniquely_to_literal_NN_calls": true,
+        "decoded_action_count": 17306,
+        "delete_each_open_or_close_SWAP_population": 155845600,
+        "direct_data_data_fine_NN_failures": 0,
+        "final_borrowed_role_leakage_count": 0,
+        "head_cleanup_reverse_count": 17306,
+        "head_forward_action_count": 17306,
+        "head_returns_ring_origin": true,
+        "held_out": true,
+        "length": 7,
+        "literal_physical_call_count": 157107502,
+        "maximum_access_path_edges": 463,
+        "maximum_elementary_support_M2": 2,
+        "maximum_one_phase_physical_calls": 3715,
+        "minimum_access_path_edges": 3,
+        "minimum_deleted_SWAP_permutation_residual": 2,
+        "operand_access_SWAP_calls": 155845600,
+        "operand_access_open_edges": 77922800,
+        "operand_access_round_trips": 484110,
+        "pass": true,
+        "path_construction_failures": 0,
+        "record_field_selected_active_phase_count": 293998,
+        "runtime_dispatch_source": "record fields + one-hot program/action head + microphase/access counters; no host or per-record action/path table",
+        "sixteen_bit_access_subphase_capacity": 65536,
+        "support_failures": 0,
+        "support_histogram": {
+          "CNOT/support2": 484000,
+          "H/support1": 138272,
+          "SWAP_close/support2": 77922800,
+          "SWAP_open/support2": 77922800,
+          "T/support1": 293840,
+          "Tdg/support1": 207408,
+          "controlled_H/support2": 34598,
+          "controlled_T/support2": 51892,
+          "controlled_Tdg/support2": 51892
+        },
+        "token_gated_action_atom_count": 1261902
+      }
+    ]
+  },
+  "tests_failed": 0,
+  "tests_passed": 14,
+  "tests_total": 14
+}

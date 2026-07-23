@@ -1,0 +1,650 @@
+{
+  "accepted_Cycle578_ancestor_commit": "d73ae344764a5f3a31cadbcfa6467a8fe06b386c",
+  "audit": "unset",
+  "authority": "none",
+  "cold_caps": {
+    "maximum_RSS_bytes": 3221225472,
+    "peak_memory_footprint_is_a_separately_reported_external_metric": true,
+    "seconds": 360.0
+  },
+  "cold_internal_elapsed_seconds": 61.32320195896318,
+  "cold_maximum_RSS_bytes": 2319958016,
+  "definitive_run_HEAD": "d73ae344764a5f3a31cadbcfa6467a8fe06b386c",
+  "exact_pinned_dependencies": {
+    "Cycle578_note": "2f04343e82925524accea75ce54af2c30b934da2343fa0d03f3c5da7fd9778d8",
+    "Cycle578_receipt": "8546eb8d8097260d975358ec59ebb4e84681779bd1c1f98b9bc6b996bbccdd53",
+    "common_matter_field_coin_family_cycle219_2026_07_16.py": "ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a",
+    "physical_enlarged_link_contact_work_tournament_cycle569_2026_07_22.py": "c0f06a9cc9ffc4dcfe1d80b94da10bbef81ca1c74fddddac48712b0a7c332ced",
+    "physical_held_sparse_order_retirement_cycle563_2026_07_21.py": "444a5c0fb3cb1758236ddefaeb472d0002cadb256d3c4df723fd562129c7325b",
+    "physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_2026_07_22.py": "73ab0364fc5b8ddd9c708a3bd8910b660d36cb0d53aad388f42e2b09b970a7ac",
+    "spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py": "b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae"
+  },
+  "interpretation_firewall": {
+    "clean": true,
+    "missing": []
+  },
+  "no_go_discipline": {
+    "N1_normalized_alternatives": [
+      [
+        "two-CAR finite-rank resolvent",
+        "A2 onsite contact source",
+        "finite pole sums",
+        "positive exact reduction"
+      ],
+      [
+        "two-CAR continuous torus",
+        "contact-cyclic cancellation",
+        "isolated pole plus exponential tail",
+        "open lemma"
+      ],
+      [
+        "two-CAR T2 window",
+        "second cubic irrep",
+        "co-moving internal transition",
+        "held certification failed"
+      ],
+      [
+        "three-CAR A1/A2",
+        "triple contact sectors",
+        "second internal mode",
+        "bounded scout inconclusive"
+      ],
+      [
+        "three-CAR T1/T2",
+        "nine-dimensional cubic sectors",
+        "second internal mode",
+        "resource-capped open"
+      ],
+      [
+        "four-plus CAR",
+        "larger contact clusters",
+        "internal multiplicity",
+        "open"
+      ],
+      [
+        "different even contact law",
+        "additional local invariant",
+        "split localized branches",
+        "open supplied-law route"
+      ],
+      [
+        "physical-M2 gauge compiler",
+        "bounded auxiliary constraints",
+        "literal site realization",
+        "separate compiler wall"
+      ]
+    ],
+    "N1_pass": false,
+    "N1_qualifying_negative_families": [
+      [
+        "two-CAR T2 window",
+        "second cubic irrep",
+        "co-moving internal transition",
+        "held certification failed"
+      ],
+      [
+        "three-CAR A1/A2",
+        "triple contact sectors",
+        "second internal mode",
+        "bounded scout inconclusive"
+      ]
+    ],
+    "N1_required": 5,
+    "N2_directional_pairwise_wall_audit": [
+      [
+        "C_ref second internal reference",
+        "C_num empirical calibration",
+        "C_ref second internal reference needs a second held localized irrep and nonzero local transition observable, which does not entail an independent measured scale and calibration map",
+        "C_num empirical calibration needs an independent measured scale and calibration map, which does not entail a second held localized irrep and nonzero local transition observable",
+        false
+      ],
+      [
+        "C_ref second internal reference",
+        "C_wrap unbounded renewal",
+        "C_ref second internal reference needs a second held localized irrep and nonzero local transition observable, which does not entail renewal resources and stability under arbitrarily many updates",
+        "C_wrap unbounded renewal needs renewal resources and stability under arbitrarily many updates, which does not entail a second held localized irrep and nonzero local transition observable",
+        false
+      ],
+      [
+        "C_ref second internal reference",
+        "C_int infinite contact pole theorem",
+        "C_ref second internal reference needs a second held localized irrep and nonzero local transition observable, which does not entail a continuous-torus contact-cyclic gap/cancellation stable under exponential weighting",
+        "C_int infinite contact pole theorem needs a continuous-torus contact-cyclic gap/cancellation stable under exponential weighting, which does not entail a second held localized irrep and nonzero local transition observable",
+        false
+      ],
+      [
+        "C_ref second internal reference",
+        "C_local physical-M2 compiler",
+        "C_ref second internal reference needs a second held localized irrep and nonzero local transition observable, which does not entail a bounded M2 encoding with local gauge constraints and exact intertwining",
+        "C_local physical-M2 compiler needs a bounded M2 encoding with local gauge constraints and exact intertwining, which does not entail a second held localized irrep and nonzero local transition observable",
+        false
+      ],
+      [
+        "C_ref second internal reference",
+        "C_source gravity and backreaction",
+        "C_ref second internal reference needs a second held localized irrep and nonzero local transition observable, which does not entail a dynamical stress/source carrier and backreaction law",
+        "C_source gravity and backreaction needs a dynamical stress/source carrier and backreaction law, which does not entail a second held localized irrep and nonzero local transition observable",
+        false
+      ],
+      [
+        "C_num empirical calibration",
+        "C_wrap unbounded renewal",
+        "C_num empirical calibration needs an independent measured scale and calibration map, which does not entail renewal resources and stability under arbitrarily many updates",
+        "C_wrap unbounded renewal needs renewal resources and stability under arbitrarily many updates, which does not entail an independent measured scale and calibration map",
+        false
+      ],
+      [
+        "C_num empirical calibration",
+        "C_int infinite contact pole theorem",
+        "C_num empirical calibration needs an independent measured scale and calibration map, which does not entail a continuous-torus contact-cyclic gap/cancellation stable under exponential weighting",
+        "C_int infinite contact pole theorem needs a continuous-torus contact-cyclic gap/cancellation stable under exponential weighting, which does not entail an independent measured scale and calibration map",
+        false
+      ],
+      [
+        "C_num empirical calibration",
+        "C_local physical-M2 compiler",
+        "C_num empirical calibration needs an independent measured scale and calibration map, which does not entail a bounded M2 encoding with local gauge constraints and exact intertwining",
+        "C_local physical-M2 compiler needs a bounded M2 encoding with local gauge constraints and exact intertwining, which does not entail an independent measured scale and calibration map",
+        false
+      ],
+      [
+        "C_num empirical calibration",
+        "C_source gravity and backreaction",
+        "C_num empirical calibration needs an independent measured scale and calibration map, which does not entail a dynamical stress/source carrier and backreaction law",
+        "C_source gravity and backreaction needs a dynamical stress/source carrier and backreaction law, which does not entail an independent measured scale and calibration map",
+        false
+      ],
+      [
+        "C_wrap unbounded renewal",
+        "C_int infinite contact pole theorem",
+        "C_wrap unbounded renewal needs renewal resources and stability under arbitrarily many updates, which does not entail a continuous-torus contact-cyclic gap/cancellation stable under exponential weighting",
+        "C_int infinite contact pole theorem needs a continuous-torus contact-cyclic gap/cancellation stable under exponential weighting, which does not entail renewal resources and stability under arbitrarily many updates",
+        false
+      ],
+      [
+        "C_wrap unbounded renewal",
+        "C_local physical-M2 compiler",
+        "C_wrap unbounded renewal needs renewal resources and stability under arbitrarily many updates, which does not entail a bounded M2 encoding with local gauge constraints and exact intertwining",
+        "C_local physical-M2 compiler needs a bounded M2 encoding with local gauge constraints and exact intertwining, which does not entail renewal resources and stability under arbitrarily many updates",
+        false
+      ],
+      [
+        "C_wrap unbounded renewal",
+        "C_source gravity and backreaction",
+        "C_wrap unbounded renewal needs renewal resources and stability under arbitrarily many updates, which does not entail a dynamical stress/source carrier and backreaction law",
+        "C_source gravity and backreaction needs a dynamical stress/source carrier and backreaction law, which does not entail renewal resources and stability under arbitrarily many updates",
+        false
+      ],
+      [
+        "C_int infinite contact pole theorem",
+        "C_local physical-M2 compiler",
+        "C_int infinite contact pole theorem needs a continuous-torus contact-cyclic gap/cancellation stable under exponential weighting, which does not entail a bounded M2 encoding with local gauge constraints and exact intertwining",
+        "C_local physical-M2 compiler needs a bounded M2 encoding with local gauge constraints and exact intertwining, which does not entail a continuous-torus contact-cyclic gap/cancellation stable under exponential weighting",
+        false
+      ],
+      [
+        "C_int infinite contact pole theorem",
+        "C_source gravity and backreaction",
+        "C_int infinite contact pole theorem needs a continuous-torus contact-cyclic gap/cancellation stable under exponential weighting, which does not entail a dynamical stress/source carrier and backreaction law",
+        "C_source gravity and backreaction needs a dynamical stress/source carrier and backreaction law, which does not entail a continuous-torus contact-cyclic gap/cancellation stable under exponential weighting",
+        false
+      ],
+      [
+        "C_local physical-M2 compiler",
+        "C_source gravity and backreaction",
+        "C_local physical-M2 compiler needs a bounded M2 encoding with local gauge constraints and exact intertwining, which does not entail a dynamical stress/source carrier and backreaction law",
+        "C_source gravity and backreaction needs a dynamical stress/source carrier and backreaction law, which does not entail a bounded M2 encoding with local gauge constraints and exact intertwining",
+        false
+      ]
+    ],
+    "N3_hidden_wall_scan": [
+      "Cycle219 beta=-0.3 coin and common wrapped phase convention",
+      "Cycle230 six CAR directions and onsite coupling g=0.37",
+      "odd periodic relative boxes and frozen shift-invert/Krylov windows",
+      "A2 finite-root phases imported from reconnaissance then independently residual-tested",
+      "contact-cyclic overlap threshold 1e-8 and sampled grids",
+      "noiseless arithmetic and exact local CAR quotient constraints"
+    ],
+    "N4_residual_matching": [
+      [
+        "Cycle219",
+        "mass fixture",
+        8.7159799596118e-16,
+        true
+      ],
+      [
+        "Cycle230",
+        "contact factorization",
+        2.149937642474629e-15,
+        true
+      ],
+      [
+        "Cycle230",
+        "seam braid",
+        0.0,
+        true
+      ],
+      [
+        "Cycle578",
+        "finite contact-bound branch",
+        "literal runner and receipt pinned",
+        true
+      ]
+    ],
+    "N5_resolution_audit": [
+      [
+        "Route A finite BS",
+        "L11/15/19/23/27/31",
+        "exact finite sums; continuous theorem open"
+      ],
+      [
+        "Route A cyclic diagnostic",
+        "L9/13/17/21 grids",
+        "diagnostic only; no uniform theorem"
+      ],
+      [
+        "Route B",
+        "L7 train and L9/L11 held",
+        "fixed spectral window; no absence theorem"
+      ],
+      [
+        "Route C",
+        "L3 train/L5 held A1/A2",
+        "T1/T2 and deeper Krylov open"
+      ],
+      [
+        "physical-M2",
+        "none constructed here",
+        "CAR-fiber/physical-site distinction preserved"
+      ]
+    ],
+    "N6_partial_closure_paths": [
+      "prove the continuous-T3 contact-cyclic reducing/cancellation lemma",
+      "establish exponential weighting without coupling the dark continuum back to the source",
+      "continue the T2 candidate with a branch-aware volume embedding rather than a fixed window",
+      "run T1/T2 three-CAR block Krylov or finite-rank contact resolvents",
+      "search four-plus CAR contact clusters under a separately frozen cap",
+      "compose any retained CAR object with an independently verified bounded physical-M2 compiler"
+    ],
+    "N7_hostile_steelman": "Mechanism: the onsite A2 contact source yields an exact 15-dimensional Birman\u2013Schwinger equation and rapidly convergent finite-volume pole phase. Terminal obligation: because the full free spectrum touches that phase, a hostile reviewer must reject an ordinary spectral-gap or Combes\u2013Thomas proof until a continuous contact-cyclic cancellation stable under exponential weighting is proved. The finite T2 cross term and exact three-CAR quotient keep constructive second-mode routes open, while held localization/Krylov thresholds presently do not certify them.",
+    "N8_cross_cycle_echo": [
+      "Cycle219 supplied the massive proper-cubic one-particle walk",
+      "Cycle230 supplied intrinsic CAR and local even contact but no physical-site compiler",
+      "Cycles563/569 retained the physical-M2 mass/contact/seam fixtures",
+      "Cycle578 found a finite contact-bound dispersive A2 dimer branch",
+      "Cycle583 exposes its exact finite-rank contact resolvent and the precise full-spectrum-touch boundary, while scouting rather than excluding internal multiplicity"
+    ],
+    "axiom_pressure": false,
+    "derived": [
+      "exact finite 15 by 15 Birman-Schwinger reduction and small residuals through L31",
+      "A2 rank-one onsite source and proper-cubic covariance",
+      "explicit on-shell full-spectrum touch with source-dark eigenvector",
+      "finite T2 component-local cross term and failed held localization certification",
+      "exact three-CAR antisymmetric quotient and reversible contact update on L3/L5"
+    ],
+    "negative_claim_shipped": false,
+    "open": [
+      "infinite-volume isolated pole and exponential-tail theorem",
+      "second co-moving localized internal mode",
+      "T1/T2 three-CAR and larger contact sectors",
+      "bounded physical-M2 compiler for the CAR object",
+      "unbounded renewal, calibration, gravity/source response, Record actuality, and Born law"
+    ],
+    "shared_substrate_obstruction": false,
+    "six_wall_ledger": {
+      "C_int": "stronger finite/integral contact mechanism and proper-cubic irrep content; continuous pole/localization lemma remains open",
+      "C_local": "exact two-/three-CAR quotient updates only; no bounded physical-M2 object compiler is constructed",
+      "C_num": "finite BS pole residuals and dimensionless phase convergence sharpen numerics; no empirical scale or physical duration",
+      "C_ref": "one finite-volume A2 contact reference gains an exact finite-rank equation; a second held internal reference remains open",
+      "C_source": "g=0.37 remains supplied dimensionless contact strength; no gravity, redshift, stress, or backreaction",
+      "C_wrap": "unchanged: no new renewal or unbounded noisy recurrence result"
+    },
+    "supplied": [
+      "Cycle219/230/563/569/578 byte-pinned shore",
+      "beta=-0.3, g=0.37, odd periodic boxes, frozen pole phases and spectral windows",
+      "proper-cubic frame action, numerical overlap threshold, Krylov depths and caps"
+    ]
+  },
+  "note_sha256": "55b0e30c1ac2b77691c5460ea48fc866b7afdf442c45efde786e6c34f65ee9f2",
+  "optimal_next_campaign": "prove the continuous-T3 contact-cyclic cancellation/reducing lemma with exponential weighting; in parallel formulate a branch-aware T2 or three-CAR finite-rank contact resolvent",
+  "pass": true,
+  "retained_physical_M2_fixtures": {
+    "contact_residual": 2.149937642474629e-15,
+    "mass_residual": 8.7159799596118e-16,
+    "seam_residual": 0.0
+  },
+  "route_A_finite_rank_contact_resolvent": {
+    "A2_all24_residual": 5.382005793715205e-16,
+    "L11_matrix_minimum_singular_value": 1.3947620673648257e-14,
+    "exact_unfinished_lemma": "Prove a uniform continuous-T3 gap/cancellation for the contact-cyclic source and prove that the relevant reducing or cancellation structure survives exponential spatial weighting; ordinary full-spectrum Combes-Thomas cannot be invoked because the full free spectrum touches z.",
+    "finite_L31_tail_diagnostic": {
+      "chebyshev_shell_probabilities": {
+        "0": 0.2626708246287757,
+        "1": 0.6307351578046717,
+        "10": 3.9580062839464635e-07,
+        "11": 1.6684650806062792e-07,
+        "12": 7.842672057528697e-08,
+        "13": 3.9161941414092075e-08,
+        "14": 2.1610518842872668e-08,
+        "15": 1.4760471959514953e-08,
+        "2": 0.09130379464677903,
+        "3": 0.012367442417718038,
+        "4": 0.0024717950925690593,
+        "5": 0.00035627781760135446,
+        "6": 7.559340941442243e-05,
+        "7": 1.3713312208051525e-05,
+        "8": 3.64612296806886e-06,
+        "9": 1.0381406538681298e-06
+      },
+      "contact_weight": 0.2626708246287757,
+      "relative_radius_squared": 1.9809366057075166,
+      "seam_boundary_weight": 1.4760471959514953e-08,
+      "tail_probability_radius_ge_9": 1.7547474431151708e-06
+    },
+    "finite_rank_identity": "B_L(z)=I_15-z(exp(-ig)-1) L^-3 sum_p J2^dagger(F(p)-zI)^-1 J2",
+    "full_spectrum_on_shell": {
+      "A2_source_overlap": 7.339500020063423e-16,
+      "distance": 1.8529835144581194e-15,
+      "momentum": [
+        0.1587840759295163,
+        2.0565324125417215,
+        -2.1028635833236886
+      ]
+    },
+    "infinite_volume_isolated_pole_and_exponential_tail_theorem": false,
+    "onsite_wedge2_irrep_ranks": {
+      "A1": 0,
+      "A2": 1,
+      "E": 2,
+      "T1": 9,
+      "T2": 3
+    },
+    "ordinary_full_spectrum_gap_available": false,
+    "roots": [
+      {
+        "L": 11,
+        "scalar_BS_residual": 1.868184971462991e-14,
+        "wrapped_phase": -2.975575673176911
+      },
+      {
+        "L": 15,
+        "scalar_BS_residual": 1.9555493987582955e-14,
+        "wrapped_phase": -2.9755759681238305
+      },
+      {
+        "L": 19,
+        "scalar_BS_residual": 1.4700735360751078e-14,
+        "wrapped_phase": -2.9755759890506126
+      },
+      {
+        "L": 23,
+        "scalar_BS_residual": 7.044992578384319e-15,
+        "wrapped_phase": -2.9755759907782897
+      },
+      {
+        "L": 27,
+        "scalar_BS_residual": 1.2034877442368964e-14,
+        "wrapped_phase": -2.9755759909092183
+      },
+      {
+        "L": 31,
+        "scalar_BS_residual": 1.531466132864523e-14,
+        "wrapped_phase": -2.9755759909120467
+      }
+    ],
+    "sampled_contact_cyclic_gaps": [
+      {
+        "L": 9,
+        "sampled_contact_cyclic_phase_gap": 0.06745955034558636
+      },
+      {
+        "L": 13,
+        "sampled_contact_cyclic_phase_gap": 0.0654830692524488
+      },
+      {
+        "L": 17,
+        "sampled_contact_cyclic_phase_gap": 0.06470562974933751
+      },
+      {
+        "L": 21,
+        "sampled_contact_cyclic_phase_gap": 0.06432258869614504
+      }
+    ],
+    "successive_phase_differences": [
+      2.9494691933251715e-07,
+      2.0926782084984552e-08,
+      1.7276771124841162e-09,
+      1.309286012940447e-10,
+      2.828404177535049e-12
+    ]
+  },
+  "route_B_internal_irrep_search": {
+    "all24_component_observable_orbit_residual": 0.0,
+    "all24_eigen_residual": 7.026093585450542e-16,
+    "held_localization_threshold_rows": [
+      false,
+      false
+    ],
+    "localization_threshold_rows": [
+      true,
+      false,
+      false
+    ],
+    "nonzero_component_local_cross_term_exists_in_finite_boxes": true,
+    "proper_cubic_invariant_contact_cross_term_is_zero_between_irreps": true,
+    "rows": [
+      {
+        "L": 7,
+        "component_index": 3,
+        "maximum_component_local_cross_term": 0.012914638948101216,
+        "moving": {
+          "contact_weight": 0.2122358256997661,
+          "eigen_residual": 6.757547194537029e-16,
+          "parallel_transport_gauge_residual": 2.0816681711721685e-17,
+          "prior_overlap": 0.7322686583660698,
+          "relative_radius_squared": 3.29393074234728,
+          "seam_boundary_weight": 0.10362086319640886,
+          "unit_circle_residual": 0.0
+        },
+        "moving_K_label": 0.049473900056532176,
+        "moving_phase_response": 5.081662603780078e-05,
+        "moving_wrapped_phase": -3.0050101194932903,
+        "primary_wrapped_phase": -2.9755723246482932,
+        "proper_cubic_invariant_contact_cross_term": 1.6547683706113026e-16,
+        "second": {
+          "contact_weight": 0.21235618083273966,
+          "eigen_residual": 7.313018828308227e-16,
+          "irrep_weights": {
+            "A1": 2.102396479476206e-48,
+            "A2": 2.257772791279411e-31,
+            "E": 1.2777259060914677e-32,
+            "T1": 3.974072033002649e-17,
+            "T2": 0.9999999999999998
+          },
+          "relative_radius_squared": 3.2987475197107248,
+          "seam_boundary_weight": 0.10411407864813765
+        },
+        "second_wrapped_phase": -3.005060936119328,
+        "split": "train"
+      },
+      {
+        "L": 9,
+        "component_index": 2,
+        "maximum_component_local_cross_term": 0.0026865470909303813,
+        "moving": {
+          "contact_weight": 0.006952204952847263,
+          "eigen_residual": 1.3568845642844286e-15,
+          "parallel_transport_gauge_residual": 2.168404344971009e-19,
+          "prior_overlap": 0.699847898032975,
+          "relative_radius_squared": 19.345532394362678,
+          "seam_boundary_weight": 0.5216007946884412,
+          "unit_circle_residual": 4.440892098500626e-16
+        },
+        "moving_K_label": 0.049473900056532176,
+        "moving_phase_response": -6.772357712942916e-05,
+        "moving_wrapped_phase": -3.0007619611356477,
+        "primary_wrapped_phase": -2.9755747084477875,
+        "proper_cubic_invariant_contact_cross_term": 1.9096373340415295e-16,
+        "second": {
+          "contact_weight": 0.006798783722470811,
+          "eigen_residual": 1.1738327070804559e-15,
+          "irrep_weights": {
+            "A1": 4.7397401966079374e-45,
+            "A2": 3.8519065810642274e-30,
+            "E": 2.7943772386397246e-32,
+            "T1": -6.308551892551984e-18,
+            "T2": 0.9999999999999997
+          },
+          "relative_radius_squared": 19.351749982458582,
+          "seam_boundary_weight": 0.5217806889937537
+        },
+        "second_wrapped_phase": -3.0006942375585184,
+        "split": "held"
+      },
+      {
+        "L": 11,
+        "component_index": 17,
+        "maximum_component_local_cross_term": 0.013003572383969793,
+        "moving": {
+          "contact_weight": 0.12834834586147242,
+          "eigen_residual": 8.892816099951584e-16,
+          "parallel_transport_gauge_residual": 1.3877787807814457e-16,
+          "prior_overlap": 0.9479873613774294,
+          "relative_radius_squared": 13.446078600847112,
+          "seam_boundary_weight": 0.1810719849258029,
+          "unit_circle_residual": 2.220446049250313e-16
+        },
+        "moving_K_label": 0.049473900056532176,
+        "moving_phase_response": 1.0537240937730173e-05,
+        "moving_wrapped_phase": -3.0047506443368204,
+        "primary_wrapped_phase": -2.97557567317691,
+        "proper_cubic_invariant_contact_cross_term": 1.0927879154658008e-16,
+        "second": {
+          "contact_weight": 0.12747303525734827,
+          "eigen_residual": 9.91352402742688e-16,
+          "irrep_weights": {
+            "A1": 4.314026883022184e-48,
+            "A2": 1.9970801094751816e-32,
+            "E": 9.173074882013665e-33,
+            "T1": -1.4713410780752422e-17,
+            "T2": 0.9999999999999998
+          },
+          "relative_radius_squared": 13.548270023219914,
+          "seam_boundary_weight": 0.18265942566004956
+        },
+        "second_wrapped_phase": -3.0047611815777584,
+        "split": "held"
+      }
+    ],
+    "search": "fixed sigma phase -3.0, k=16, ncv=33, maximum-contact pure-T2 candidate; no held refit",
+    "second_co_moving_localized_branch_certified": false,
+    "second_mode_absence_theorem": false
+  },
+  "route_C_three_CAR_scout": {
+    "T1_T2_three_CAR_scout": "open under declared resource cap",
+    "all24_rotated_code_leakage": 1.9229626863835638e-16,
+    "all24_seed_update_covariance_residual": 2.394975213636198e-16,
+    "held_internal_mode_certified": false,
+    "onsite_wedge3_irrep_ranks": {
+      "A1": 1,
+      "A2": 1,
+      "E": 0,
+      "T1": 9,
+      "T2": 9
+    },
+    "resource_contract": "L3 train m80; L5 held m45; A1/A2 only; 360 seconds and 3 GiB maximum-RSS caps",
+    "rows": [
+      {
+        "L": 3,
+        "antisymmetric_projection_leakage": 3.414551910885068e-16,
+        "arnoldi_iterations": 80,
+        "forward_norm_residual": 1.1102230246251565e-16,
+        "inverse_residual": 2.081723019880241e-16,
+        "irrep": "A1",
+        "isometry_residual_Frobenius": 3.567393804092558e-14,
+        "quotient_dimension": 25812,
+        "quotient_nonzeros": 154560,
+        "ritz_modulus": 0.9997467262330255,
+        "ritz_residual": 0.02250518576550098,
+        "single_ordered_component_deletion_signal": 0.1317615691736826,
+        "split": "train",
+        "terminal_krylov_norm": 0.9998668307491594,
+        "wrapped_phase": 2.5854757413409257
+      },
+      {
+        "L": 3,
+        "antisymmetric_projection_leakage": 2.85707614374136e-16,
+        "arnoldi_iterations": 80,
+        "forward_norm_residual": 6.661338147750939e-16,
+        "inverse_residual": 1.1725177323379934e-15,
+        "irrep": "A2",
+        "isometry_residual_Frobenius": 3.567393804092558e-14,
+        "quotient_dimension": 25812,
+        "quotient_nonzeros": 154560,
+        "ritz_modulus": 0.999887525296793,
+        "ritz_residual": 0.014997891713774789,
+        "single_ordered_component_deletion_signal": 0.1317615691736826,
+        "split": "train",
+        "terminal_krylov_norm": 0.9768748367671972,
+        "wrapped_phase": 2.4028247547064403
+      },
+      {
+        "L": 5,
+        "antisymmetric_projection_leakage": 3.414551910885068e-16,
+        "arnoldi_iterations": 45,
+        "forward_norm_residual": 1.1102230246251565e-16,
+        "inverse_residual": 2.081723019880241e-16,
+        "irrep": "A1",
+        "isometry_residual_Frobenius": 1.6620034970478446e-13,
+        "quotient_dimension": 560252,
+        "quotient_nonzeros": 3361512,
+        "ritz_modulus": 0.9757592139575342,
+        "ritz_residual": 0.21884687883764214,
+        "single_ordered_component_deletion_signal": 0.1317615691736826,
+        "split": "held",
+        "terminal_krylov_norm": 0.9993159099333465,
+        "wrapped_phase": 0.22863447868796066
+      },
+      {
+        "L": 5,
+        "antisymmetric_projection_leakage": 2.85707614374136e-16,
+        "arnoldi_iterations": 45,
+        "forward_norm_residual": 6.661338147750939e-16,
+        "inverse_residual": 1.1725177323379934e-15,
+        "irrep": "A2",
+        "isometry_residual_Frobenius": 1.6620034970478446e-13,
+        "quotient_dimension": 560252,
+        "quotient_nonzeros": 3361512,
+        "ritz_modulus": 0.9864122512518215,
+        "ritz_residual": 0.16428898496344677,
+        "single_ordered_component_deletion_signal": 0.1317615691736826,
+        "split": "held",
+        "terminal_krylov_norm": 0.9959210255652656,
+        "wrapped_phase": 2.450130439189802
+      }
+    ],
+    "three_CAR_mode_absence_theorem": false
+  },
+  "runner_sha256": "687adfc11d823329a40445bc9f02aada93fd64f4617bf25857c5bdf0fd68cfe7",
+  "scope_boundary": {
+    "CAR_fiber_result_is_physical_M2_compiler": false,
+    "audit": "unset",
+    "authority": "none",
+    "group_displacement_is_rate": false,
+    "infinite_volume_exponential_localization_theorem": false,
+    "schedule_is_time": false,
+    "second_internal_mode_certified": false,
+    "wrapped_phase_is_energy": false
+  },
+  "six_wall_ledger": {
+    "C_int": "stronger finite/integral contact mechanism and proper-cubic irrep content; continuous pole/localization lemma remains open",
+    "C_local": "exact two-/three-CAR quotient updates only; no bounded physical-M2 object compiler is constructed",
+    "C_num": "finite BS pole residuals and dimensionless phase convergence sharpen numerics; no empirical scale or physical duration",
+    "C_ref": "one finite-volume A2 contact reference gains an exact finite-rank equation; a second held internal reference remains open",
+    "C_source": "g=0.37 remains supplied dimensionless contact strength; no gravity, redshift, stress, or backreaction",
+    "C_wrap": "unchanged: no new renewal or unbounded noisy recurrence result"
+  },
+  "status": "cycle583-physical-contact-dimer-infinite-internal-content-tournament",
+  "tests_failed": 0,
+  "tests_passed": 15
+}

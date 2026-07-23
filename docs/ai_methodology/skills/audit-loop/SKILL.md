@@ -544,6 +544,13 @@ python3 docs/audit/scripts/audit_campaign_repair.py \
   --campaign-workdir /tmp/audit_loop_campaign_<id>
 ```
 
+The campaign workdir carries two fail-closed append-only surfaces:
+`campaign-row-exclusions.jsonl` suppresses typed claim-local failures only for
+that campaign, while `campaign-selector-skips.jsonl` records every canonical
+selector disposition without suppressing it. The repair helper joins both to
+the current ledger. A missing route is an operational defect; do not leave a
+skip only in transient stdout.
+
 Repair and re-entry are reason-specific:
 
 | Operational result | Required repair | Re-entry |

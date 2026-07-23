@@ -87,6 +87,84 @@ class CampaignRepairTest(unittest.TestCase):
         self.assertEqual(item["route"], "already_moved_out_of_reentry")
         self.assertTrue(item["ready_for_new_campaign"])
 
+    def test_routes_selector_skips_to_their_governed_owners(self):
+        rows = {
+            "conditional": {
+                "audit_status": "audited_conditional",
+                "effective_status": "audited_conditional",
+            },
+            "dependency": {
+                "audit_status": "unaudited",
+                "effective_status": "retained_pending_chain",
+                "dependencies": ["upstream"],
+            },
+            "forensic": {
+                "audit_status": "unaudited",
+                "effective_status": "unaudited",
+            },
+            "hash": {
+                "audit_status": "unaudited",
+                "effective_status": "unaudited",
+            },
+        }
+        records = [
+            {
+                "claim_id": "conditional",
+                "reason": "awaiting_science_repair",
+                "detail": (
+                    "awaiting repair (sources and deps unchanged since "
+                    "audited_conditional)"
+                ),
+            },
+            {
+                "claim_id": "dependency",
+                "reason": "dependencies_not_retained",
+                "detail": "dependencies are not retained-grade",
+            },
+            {
+                "claim_id": "forensic",
+                "reason": "forensic_source_shape",
+                "detail": "source shape requires forensic tier",
+            },
+            {
+                "claim_id": "hash",
+                "reason": "note_hash_drift",
+                "detail": (
+                    "ledger note_hash lags the note file; run "
+                    "seed_audit_ledger.py + pipeline and commit before auditing"
+                ),
+            },
+        ]
+
+        plan = repair.build_plan(records, rows)
+        by_claim = {item["claim_id"]: item for item in plan}
+
+        self.assertEqual(
+            by_claim["conditional"]["route"], "validated_science_handoff"
+        )
+        self.assertEqual(
+            by_claim["dependency"]["route"],
+            "repair_or_audit_upstream_dependencies",
+        )
+        self.assertEqual(
+            by_claim["dependency"]["blocking_dependencies"], ["upstream"]
+        )
+        self.assertEqual(by_claim["forensic"]["route"], "forensic_audit")
+        self.assertEqual(by_claim["hash"]["route"], "refresh_note_hash_pipeline")
+
+    def test_campaign_loader_includes_selector_skip_inventory(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            workdir = Path(tmp)
+            repair.batch.persist_campaign_selection_skips(
+                workdir / "campaign-selector-skips.jsonl",
+                ["row: dependencies are not retained-grade"],
+            )
+
+            records = repair.load_campaign_records(workdir)
+
+        self.assertEqual(len(records), 1)
+        self.assertEqual(records[0]["reason"], "dependencies_not_retained")
+
 
 if __name__ == "__main__":
     unittest.main()

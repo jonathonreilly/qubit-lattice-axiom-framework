@@ -90,6 +90,17 @@ CAMPAIGN_EXCLUSION_REASONS = {
     SCHEMA_QUARANTINE_RESULT,
     *CAMPAIGN_EXCLUSION_RESULTS,
 }
+SELECTION_SKIP_REASONS = {
+    "missing_ledger_row",
+    "audit_status_not_unaudited",
+    "forensic_no_go",
+    "non_batch_claim_type",
+    "forensic_source_shape",
+    "dependencies_not_retained",
+    "note_hash_drift",
+    "awaiting_science_repair",
+    "unclassified_selector_skip",
+}
 SCIENCE_FIX_RESULTS = {"science_fix_dispatched", "science_fix_dispatch_failed"}
 MIN_DELIVERY_BYTES = 200
 PACKET_COMPLETION_STALL_SECONDS = 20 * 60
@@ -2036,6 +2047,172 @@ def load_campaign_exclusion_records(path: Path | None) -> list[dict]:
     return records
 
 
+def selection_skip_reason(detail: str) -> str:
+    """Map the canonical selector diagnostic to a stable repair route."""
+    if detail == "missing ledger row":
+        return "missing_ledger_row"
+    if detail.startswith("audit_status="):
+        return "audit_status_not_unaudited"
+    if detail == "no_go row - forensic tier, run individually":
+        return "forensic_no_go"
+    if detail.startswith("claim_type=") and detail.endswith(
+        " - not batch-auditable"
+    ):
+        return "non_batch_claim_type"
+    if detail == "source shape requires forensic tier":
+        return "forensic_source_shape"
+    if detail == "dependencies are not retained-grade":
+        return "dependencies_not_retained"
+    if detail.startswith("ledger note_hash lags the note file;"):
+        return "note_hash_drift"
+    if detail.startswith("awaiting repair (sources and deps unchanged"):
+        return "awaiting_science_repair"
+    return "unclassified_selector_skip"
+
+
+def selector_skip_record(line: str) -> dict:
+    claim_id, separator, detail = line.partition(": ")
+    if not separator or not claim_id or not detail:
+        raise ValueError(f"invalid selector skip diagnostic: {line!r}")
+    try:
+        ledger_io.shard_path(claim_id)
+    except ValueError as exc:
+        raise ValueError(
+            f"selector skip claim_id is not shard-safe: {claim_id!r}"
+        ) from exc
+    return {
+        "claim_id": claim_id,
+        "reason": selection_skip_reason(detail),
+        "detail": detail,
+        "recorded_at": datetime.now(timezone.utc).isoformat(),
+    }
+
+
+def load_campaign_selection_skip_records(path: Path | None) -> list[dict]:
+    """Strictly load durable selector dispositions without excluding rows."""
+    if path is None or not path.exists():
+        return []
+    records: list[dict] = []
+    for line_number, line in enumerate(
+        path.read_text(encoding="utf-8").splitlines(),
+        start=1,
+    ):
+        if not line.strip():
+            raise ValueError(
+                f"{path}:{line_number}: blank campaign selection-skip record"
+            )
+        try:
+            record = json.loads(
+                line,
+                object_pairs_hook=_campaign_json_object,
+                parse_constant=_reject_campaign_json_constant,
+            )
+        except json.JSONDecodeError as exc:
+            raise ValueError(
+                f"{path}:{line_number}: invalid campaign selection-skip JSON: "
+                f"{exc.msg}"
+            ) from exc
+        except ValueError as exc:
+            raise ValueError(
+                f"{path}:{line_number}: invalid campaign selection-skip JSON: "
+                f"{exc}"
+            ) from exc
+        if _contains_non_finite_json_number(record):
+            raise ValueError(
+                f"{path}:{line_number}: campaign selection-skip contains a "
+                "non-finite JSON number"
+            )
+        if not isinstance(record, dict):
+            raise ValueError(
+                f"{path}:{line_number}: campaign selection-skip is not an object"
+            )
+        expected_fields = {"claim_id", "reason", "detail", "recorded_at"}
+        if set(record) != expected_fields:
+            missing = sorted(expected_fields - set(record))
+            unexpected = sorted(set(record) - expected_fields)
+            raise ValueError(
+                f"{path}:{line_number}: invalid campaign selection-skip fields "
+                f"(missing={missing}, unexpected={unexpected})"
+            )
+        claim_id = record["claim_id"]
+        reason = record["reason"]
+        detail = record["detail"]
+        if not isinstance(claim_id, str) or not claim_id:
+            raise ValueError(
+                f"{path}:{line_number}: campaign selection-skip has no claim_id"
+            )
+        try:
+            ledger_io.shard_path(claim_id)
+        except ValueError as exc:
+            raise ValueError(
+                f"{path}:{line_number}: campaign selection-skip claim_id is "
+                f"not shard-safe: {claim_id!r}"
+            ) from exc
+        if reason not in SELECTION_SKIP_REASONS:
+            raise ValueError(
+                f"{path}:{line_number}: unrecognized campaign selection-skip "
+                f"reason {reason!r}"
+            )
+        if not isinstance(detail, str) or not detail:
+            raise ValueError(
+                f"{path}:{line_number}: campaign selection-skip has no detail"
+            )
+        if selection_skip_reason(detail) != reason:
+            raise ValueError(
+                f"{path}:{line_number}: campaign selection-skip reason does "
+                "not match its canonical detail"
+            )
+        recorded_at = record["recorded_at"]
+        if not isinstance(recorded_at, str) or not re.fullmatch(
+            r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}"
+            r"(?:\.\d{6})?\+00:00",
+            recorded_at,
+        ):
+            raise ValueError(
+                f"{path}:{line_number}: campaign selection-skip recorded_at "
+                "is not canonical UTC ISO-8601"
+            )
+        try:
+            timestamp = datetime.fromisoformat(recorded_at)
+        except ValueError as exc:
+            raise ValueError(
+                f"{path}:{line_number}: campaign selection-skip recorded_at "
+                "is not ISO-8601"
+            ) from exc
+        if (
+            timestamp.tzinfo is None
+            or timestamp.utcoffset() != timezone.utc.utcoffset(timestamp)
+        ):
+            raise ValueError(
+                f"{path}:{line_number}: campaign selection-skip recorded_at "
+                "is not UTC"
+            )
+        records.append(record)
+    return records
+
+
+def persist_campaign_selection_skips(
+    path: Path | None,
+    skipped: list[str],
+) -> None:
+    """Append each distinct selector disposition without suppressing it."""
+    if path is None or not skipped:
+        return
+    existing = {
+        (record["claim_id"], record["reason"], record["detail"])
+        for record in load_campaign_selection_skip_records(path)
+    }
+    pending = [selector_skip_record(line) for line in skipped]
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("a", encoding="utf-8") as handle:
+        for record in pending:
+            key = (record["claim_id"], record["reason"], record["detail"])
+            if key in existing:
+                continue
+            handle.write(json.dumps(record, sort_keys=True) + "\n")
+            existing.add(key)
+
+
 def load_campaign_quarantine(path: Path | None) -> set[str]:
     return {
         record["claim_id"]
@@ -2462,6 +2639,15 @@ def main() -> int:
         ),
     )
     parser.add_argument(
+        "--campaign-selection-skip-file",
+        type=Path,
+        default=None,
+        help=(
+            "append-only JSONL inventory of selector skips for repair routing; "
+            "unlike quarantine state, these records never suppress selection"
+        ),
+    )
+    parser.add_argument(
         "--dispatch-science-fixes",
         action="store_true",
         help=(
@@ -2505,6 +2691,9 @@ def main() -> int:
     try:
         session_skipped = load_campaign_quarantine(
             args.campaign_quarantine_file
+        )
+        load_campaign_selection_skip_records(
+            args.campaign_selection_skip_file
         )
     except (OSError, ValueError) as exc:
         print(f"refusing to run with invalid campaign state: {exc}")
@@ -2554,6 +2743,18 @@ def main() -> int:
             start_progress_ticker()
         for line in skipped:
             print(f"   skip: {line}")
+        if not args.dry_run:
+            try:
+                persist_campaign_selection_skips(
+                    args.campaign_selection_skip_file,
+                    skipped,
+                )
+            except (OSError, ValueError) as exc:
+                print(
+                    "refusing to continue with invalid campaign selection "
+                    f"state: {exc}"
+                )
+                return finish(2)
         missing = [line for line in skipped if line.endswith("missing ledger row")]
         if args.claims and missing:
             return finish(2)

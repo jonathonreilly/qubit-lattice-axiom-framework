@@ -1,6 +1,6 @@
 {
- "edge_count": 14982,
- "node_count": 4472,
+ "edge_count": 14984,
+ "node_count": 4473,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -379,8 +379,8 @@
    "out_degree": 2
   },
   "ai_methodology.llm_skill_pack_2026-04-25": {
-   "deps_hash": "60f23c29f29e",
-   "out_degree": 11
+   "deps_hash": "5f9ac28949c1",
+   "out_degree": 12
   },
   "ai_methodology.methodology_case_studies_2026-04-25": {
    "deps_hash": "e3b0c44298fc",
@@ -651,8 +651,8 @@
    "out_degree": 0
   },
   "ai_methodology.readme": {
-   "deps_hash": "3d8eefee3be6",
-   "out_degree": 24
+   "deps_hash": "f46fee0b3fd7",
+   "out_degree": 25
   },
   "ai_methodology.repo_trajectory_and_governance_evidence_2026-04-25": {
    "deps_hash": "e3b0c44298fc",
@@ -731,6 +731,10 @@
    "out_degree": 4
   },
   "ai_methodology.skills.reviewer-backpressure-integrator.skill": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "ai_methodology.skills.science-fix-loop.skill": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

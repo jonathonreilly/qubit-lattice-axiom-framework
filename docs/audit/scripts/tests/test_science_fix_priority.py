@@ -367,6 +367,59 @@ class CampaignRepairIntakeTest(unittest.TestCase):
         self.assertEqual(first, second)
         self.assertNotEqual(first, changed)
 
+    def test_real_selector_skip_inventory_routes_only_operational_work(self):
+        campaign = self._campaign([])
+        (campaign / "campaign-selector-skips.jsonl").write_text(
+            json.dumps(
+                {
+                    "claim_id": "hash_row",
+                    "reason": "note_hash_drift",
+                    "detail": (
+                        "ledger note_hash lags the note file; run "
+                        "seed_audit_ledger.py + pipeline and commit before auditing"
+                    ),
+                    "recorded_at": "2026-07-23T12:00:00+00:00",
+                }
+            )
+            + "\n"
+            + json.dumps(
+                {
+                    "claim_id": "conditional_row",
+                    "reason": "awaiting_science_repair",
+                    "detail": (
+                        "awaiting repair (sources and deps unchanged since "
+                        "audited_conditional)"
+                    ),
+                    "recorded_at": "2026-07-23T12:00:00+00:00",
+                }
+            )
+            + "\n",
+            encoding="utf-8",
+        )
+        rows = {
+            "hash_row": {
+                "claim_id": "hash_row",
+                "audit_status": "unaudited",
+                "note_path": "docs/HASH_ROW.md",
+            },
+            "conditional_row": {
+                "claim_id": "conditional_row",
+                "audit_status": "audited_conditional",
+                "note_path": "docs/CONDITIONAL_ROW.md",
+            },
+        }
+
+        candidates = sfl.parse_campaign_workdir(
+            campaign, ledger_loader=lambda cid: rows[cid]
+        )
+
+        self.assertEqual([row["claim_id"] for row in candidates], ["hash_row"])
+        self.assertEqual(
+            candidates[0]["category"], "campaign_blocked_reentry"
+        )
+        self.assertEqual(candidates[0]["worker_mode"], "operational")
+        self.assertIn("note_hash_drift", candidates[0]["prompt_body"])
+
 
 class CandidateReservationTest(unittest.TestCase):
     def test_campaign_incident_does_not_collide_with_claim_attempt(self):

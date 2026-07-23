@@ -558,6 +558,7 @@ def campaign_record_fingerprint(record: dict, canonical: dict | None) -> str:
         "claim_id": record.get("claim_id"),
         "reason": record.get("reason"),
         "failures": record.get("failures") or [],
+        "detail": record.get("detail"),
         "invalidation_reason": record.get("invalidation_reason"),
         "note_path": canonical.get("note_path") if canonical else None,
         "runner_path": canonical.get("runner_path") if canonical else None,
@@ -631,11 +632,11 @@ def parse_campaign_workdir(
         ) from exc
 
     exclusions_path = campaign_workdir / "campaign-row-exclusions.jsonl"
-    if not exclusions_path.is_file():
-        raise ValueError(
-            f"campaign exclusion file does not exist: {exclusions_path}"
-        )
-    records = campaign_repair.load_exclusions(exclusions_path)
+    records = (
+        campaign_repair.load_campaign_records(campaign_workdir)
+        if hasattr(campaign_repair, "load_campaign_records")
+        else campaign_repair.load_exclusions(exclusions_path)
+    )
     if ledger_loader is None:
         refresh_origin_main_for_handoff()
         ledger_loader = load_origin_main_audit_row
@@ -654,20 +655,32 @@ def parse_campaign_workdir(
 
     plan = campaign_repair.build_plan(records, canonical_rows)
     candidates: list[dict] = []
+    non_worker_routes = {
+        "already_moved_out_of_reentry",
+        "ledger_registration_resolved",
+        "resume_audit_seat",
+        "validated_science_handoff",
+        "already_settled_or_governed",
+        "forensic_audit",
+        "governed_non_batch_type",
+        "repair_or_audit_upstream_dependencies",
+    }
+    seen_state_keys: set[str] = set()
     for record, item in zip(records, plan, strict=True):
         claim_id = record["claim_id"]
         canonical = canonical_rows.get(claim_id)
         route = item.get("route")
-        if route == "already_moved_out_of_reentry":
+        if route in non_worker_routes:
             continue
         category = CAMPAIGN_REASON_CATEGORY.get(record["reason"])
         if route == "repair_ledger_registration":
             category = "campaign_ledger_registration"
+        if route == "refresh_note_hash_pipeline":
+            category = "campaign_blocked_reentry"
         if category is None:
             category = "campaign_operational_triage"
         fingerprint = campaign_record_fingerprint(record, canonical)
-        candidates.append(
-            {
+        candidate = {
                 "category": category,
                 "claim_id": claim_id,
                 "note_path": (
@@ -683,12 +696,12 @@ def parse_campaign_workdir(
                     record,
                     canonical,
                     item,
-                    exclusions_path,
+                    campaign_workdir,
                     fingerprint,
                 ),
                 "prompt_source": (
-                    f"campaign exclusion `{record['reason']}` in "
-                    f"`{exclusions_path}` (fingerprint `{fingerprint}`)"
+                    f"campaign incident `{record['reason']}` in "
+                    f"`{campaign_workdir}` (fingerprint `{fingerprint}`)"
                 ),
                 "worker_mode": (
                     "science"
@@ -699,7 +712,10 @@ def parse_campaign_workdir(
                     f"campaign:{claim_id}:{record['reason']}:{fingerprint}"
                 ),
             }
-        )
+        if candidate["state_key"] in seen_state_keys:
+            continue
+        seen_state_keys.add(candidate["state_key"])
+        candidates.append(candidate)
     return candidates
 
 

@@ -1,0 +1,1001 @@
+{
+  "Status": "PASS",
+  "audit": "unset",
+  "author_accepted": false,
+  "author_artifact_status_accepted": false,
+  "authority": "none",
+  "axiom_pressure": false,
+  "axiom_pressure_claim": false,
+  "axiom_pressure_gate": "FAIL / DO NOT SHIP",
+  "axiom_pressure_shipped": false,
+  "breakthrough": false,
+  "broad_negative_gate": "FAIL / DO NOT SHIP",
+  "broad_negative_shipped": false,
+  "broad_no_go_claim": false,
+  "canonical_claim_gate_contract": {
+    "N1": true,
+    "N2": true,
+    "N4": true,
+    "N5": true,
+    "N6": true,
+    "N7": true,
+    "N8": true,
+    "Status_PASS": true,
+    "flags": true,
+    "gates": true,
+    "pass": true
+  },
+  "classification": "three-route distributed local tree/toric returned-work compiler",
+  "constitutional_effect": "none",
+  "controls": {
+    "flat_encoder_factor_deletions": [
+      {
+        "detected": true,
+        "factor": "CNOT",
+        "factor_index": 0,
+        "failures": 24,
+        "position": "first"
+      },
+      {
+        "detected": true,
+        "factor": "CNOT",
+        "factor_index": 236,
+        "failures": 7,
+        "position": "middle"
+      },
+      {
+        "detected": true,
+        "factor": "CNOT",
+        "factor_index": 472,
+        "failures": 2,
+        "position": "last"
+      }
+    ],
+    "held_size_no_refit": true,
+    "inverse": [
+      {
+        "failures": 0,
+        "length": 3,
+        "probes": 18
+      },
+      {
+        "failures": 0,
+        "length": 6,
+        "probes": 18
+      },
+      {
+        "failures": 0,
+        "length": 7,
+        "probes": 18
+      }
+    ],
+    "lawful_domain": {
+      "lengths": [
+        3,
+        6,
+        7
+      ],
+      "minimum_length": 3,
+      "periodic_cubic": true,
+      "six_modes_per_cell": true
+    },
+    "leakage": {
+      "logical_frame_failures": 0,
+      "routing_work_exit_failures": 0,
+      "stabilizer_reference_failures": 0
+    },
+    "pass": true,
+    "remote_CNOT_macro": {
+      "all_emitted_two_qubit_primitive_range": 1,
+      "deleted_primitive_failures": 4,
+      "pass": true,
+      "rows": [
+        {
+          "distance": 1,
+          "primitive_CNOTs": 1,
+          "probe_failures": 0
+        },
+        {
+          "distance": 2,
+          "primitive_CNOTs": 7,
+          "probe_failures": 0
+        },
+        {
+          "distance": 3,
+          "primitive_CNOTs": 13,
+          "probe_failures": 0
+        },
+        {
+          "distance": 2580,
+          "primitive_CNOTs": 15475,
+          "probe_failures": 0
+        }
+      ]
+    }
+  },
+  "covariance": {
+    "Cycle650_label_covariance": {
+      "encoder_transport_rule": "E_R = F_R E C_R^dagger; each supplied circuit is relabeled/conjugated as one compile-time family, not queried at runtime",
+      "frame_products": 576,
+      "pass": true,
+      "proper_cubic_frames": 24,
+      "rows": [
+        {
+          "all576_extended_permutation_group_failures": 0,
+          "extended_M2": 642,
+          "frame_label_failures": 0,
+          "length": 3
+        },
+        {
+          "all576_extended_permutation_group_failures": 0,
+          "extended_M2": 4848,
+          "frame_label_failures": 0,
+          "length": 6
+        },
+        {
+          "all576_extended_permutation_group_failures": 0,
+          "extended_M2": 7642,
+          "frame_label_failures": 0,
+          "length": 7
+        }
+      ],
+      "runtime_frame_selector": false,
+      "single_invariant_factor_order_claimed": false
+    },
+    "compile_schedule_family_transported_not_runtime_selected": true,
+    "full_routing_mesh_is_rotation_invariant": true,
+    "pass": true,
+    "physical_midpoint_and_mode_rows": [
+      {
+        "length": 3,
+        "link_constraint_and_all576": {
+          "all576_group_failures": 0,
+          "constraint_image_failures": 0,
+          "frame_bijection_failures": 0,
+          "frame_products": 576,
+          "logical_homology_image_failures": 0,
+          "pass": true,
+          "proper_cubic_frames": 24
+        },
+        "midpoint_frame_image_failures": 0,
+        "signed_mode_port_frame_image_failures": 0
+      },
+      {
+        "length": 6,
+        "link_constraint_and_all576": {
+          "all576_group_failures": 0,
+          "constraint_image_failures": 0,
+          "frame_bijection_failures": 0,
+          "frame_products": 576,
+          "logical_homology_image_failures": 0,
+          "pass": true,
+          "proper_cubic_frames": 24
+        },
+        "midpoint_frame_image_failures": 0,
+        "signed_mode_port_frame_image_failures": 0
+      },
+      {
+        "length": 7,
+        "link_constraint_and_all576": {
+          "all576_group_failures": 0,
+          "constraint_image_failures": 0,
+          "frame_bijection_failures": 0,
+          "frame_products": 576,
+          "logical_homology_image_failures": 0,
+          "pass": true,
+          "proper_cubic_frames": 24
+        },
+        "midpoint_frame_image_failures": 0,
+        "signed_mode_port_frame_image_failures": 0
+      }
+    ],
+    "signed_six_mode_all576_group_failures": 0,
+    "signed_six_mode_maps": 24,
+    "topological_axis_covariance": {
+      "Z2_orientation_sign_requires_no_extra_label": true,
+      "all576_group_failures": 0,
+      "axis_bijection_failures": 0,
+      "compile_time_encoder_transport": "E_R = F_R E C_R^dagger with the three topological input wires permuted by the axis action",
+      "frame_products": 576,
+      "pass": true,
+      "proper_cubic_frames": 24,
+      "runtime_frame_selector": false
+    }
+  },
+  "cycle": 653,
+  "date": "2026-07-23",
+  "elapsed_seconds": 361.328382082982,
+  "geometric_character_match": [
+    {
+      "Cycle650_chart_used_only_as_immutable_offline_crosscheck": true,
+      "all_eight_topological_sector_sign_failures": 0,
+      "exact_gauge_row_mismatches_against_Cycle650_correction": 0,
+      "exact_matter_row_mismatches_against_Cycle650_correction": 0,
+      "expected_each": 27,
+      "gauge_rows": 108,
+      "gauge_seam_character_rows": 27,
+      "geometric_rule": "dress each outer_square periodic seam edge by its local flat-link Z; leave onsite and nonseam rows untouched",
+      "length": 3,
+      "matter_rows": 567,
+      "matter_seam_character_rows": 27,
+      "pass": true,
+      "runtime_global_character_table_used": false,
+      "split": "construction",
+      "symbolic_gradient_or_holonomy_failures": 0
+    },
+    {
+      "Cycle650_chart_used_only_as_immutable_offline_crosscheck": true,
+      "all_eight_topological_sector_sign_failures": 0,
+      "exact_gauge_row_mismatches_against_Cycle650_correction": 0,
+      "exact_matter_row_mismatches_against_Cycle650_correction": 0,
+      "expected_each": 108,
+      "gauge_rows": 864,
+      "gauge_seam_character_rows": 108,
+      "geometric_rule": "dress each outer_square periodic seam edge by its local flat-link Z; leave onsite and nonseam rows untouched",
+      "length": 6,
+      "matter_rows": 4536,
+      "matter_seam_character_rows": 108,
+      "pass": true,
+      "runtime_global_character_table_used": false,
+      "split": "train",
+      "symbolic_gradient_or_holonomy_failures": 0
+    },
+    {
+      "Cycle650_chart_used_only_as_immutable_offline_crosscheck": true,
+      "all_eight_topological_sector_sign_failures": 0,
+      "exact_gauge_row_mismatches_against_Cycle650_correction": 0,
+      "exact_matter_row_mismatches_against_Cycle650_correction": 0,
+      "expected_each": 147,
+      "gauge_rows": 1372,
+      "gauge_seam_character_rows": 147,
+      "geometric_rule": "dress each outer_square periodic seam edge by its local flat-link Z; leave onsite and nonseam rows untouched",
+      "length": 7,
+      "matter_rows": 7203,
+      "matter_seam_character_rows": 147,
+      "pass": true,
+      "runtime_global_character_table_used": false,
+      "split": "held-out-no-refit",
+      "symbolic_gradient_or_holonomy_failures": 0
+    }
+  ],
+  "highest_honest_terminal": "finite exact N-1+3 flat-link encoder, local geometric cancellation of all Cycle650 seam characters, and NN returned-work change of encoding; not an autonomous bounded-period physical law or a term-complete intrinsic CAR compiler",
+  "immutable_shore": {
+    "observed": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_TOPOLOGICAL_SECTOR_GAUGE_SUBSYSTEM_TOURNAMENT_CYCLE650_NOTE_2026-07-23.md": "84d8ee582059a40eda5106debb439a1f0a9f4b181d806b07a6e7fe29fe4712cb",
+      "outputs/physical_topological_sector_gauge_subsystem_tournament_cycle650_cold_2026_07_23.txt": "50614cd0fac0e24b5afad188fdf4ffe720ff67d38f7bae6bdddb9d74b4eb16fe",
+      "outputs/physical_topological_sector_gauge_subsystem_tournament_cycle650_receipt_2026_07_23.json": "383efa37e45447d7340efd9d7118ba909d6c269995f0ba51ff3a4d4fd48111ed",
+      "scripts/physical_topological_sector_gauge_subsystem_tournament_cycle650_2026_07_23.py": "7c428845a95f3b79dd525be70fd8f9c3e41076130e173a372b0c22c825684dde"
+    },
+    "pins": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_TOPOLOGICAL_SECTOR_GAUGE_SUBSYSTEM_TOURNAMENT_CYCLE650_NOTE_2026-07-23.md": "84d8ee582059a40eda5106debb439a1f0a9f4b181d806b07a6e7fe29fe4712cb",
+      "outputs/physical_topological_sector_gauge_subsystem_tournament_cycle650_cold_2026_07_23.txt": "50614cd0fac0e24b5afad188fdf4ffe720ff67d38f7bae6bdddb9d74b4eb16fe",
+      "outputs/physical_topological_sector_gauge_subsystem_tournament_cycle650_receipt_2026_07_23.json": "383efa37e45447d7340efd9d7118ba909d6c269995f0ba51ff3a4d4fd48111ed",
+      "scripts/physical_topological_sector_gauge_subsystem_tournament_cycle650_2026_07_23.py": "7c428845a95f3b79dd525be70fd8f9c3e41076130e173a372b0c22c825684dde"
+    },
+    "ref": "cb7199196fe41b6738dc76f5b3236d2c46f6c9f4",
+    "working_tree_bytes_used_as_premise": false
+  },
+  "maximum_RSS_bytes": 346079232,
+  "minimum_content_claim": false,
+  "minimum_content_gate": "FAIL / DO NOT SHIP",
+  "minimum_content_shipped": false,
+  "no_go_discipline": {
+    "N1_broad_negative_gate": "FAIL / DO NOT SHIP",
+    "N1_normalized_families": [
+      {
+        "family": "tree-root reversible courier",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "compute/use/uncompute remote-CNOT message passing",
+        "object_formulation": "three Cycle650 root Pauli characters and link seeds",
+        "status": "finite NN macro construction passes; static commuting local relation open",
+        "strength_vs_target": "weaker",
+        "terminal_obligation": "NN root/link relation with returned work"
+      },
+      {
+        "family": "flat-link gauge-coordinate encoder",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "z=delta g plus three cut holonomies",
+        "object_formulation": "plaquette-only cubic Z2 link code",
+        "status": "exact at L3/L6/L7",
+        "strength_vs_target": "target-equivalent at character layer",
+        "terminal_obligation": "N-1 gauge plus three coherent topo inputs and local dressing"
+      },
+      {
+        "family": "staggered change-of-encoding",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "remote SWAP/CNOT macros return every intermediate",
+        "object_formulation": "E_flat P E_tree^dagger on doubled K129 mesh",
+        "status": "finite E and interface pass; autonomous bounded-period G open",
+        "strength_vs_target": "weaker because G schedule remains supplied",
+        "terminal_obligation": "complete NN E and unchanged G interface"
+      },
+      {
+        "citation": {
+          "line": 80,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_TOPOLOGICAL_SECTOR_GAUGE_SUBSYSTEM_TOURNAMENT_CYCLE650_NOTE_2026-07-23.md",
+          "ref": "cb7199196fe41b6738dc76f5b3236d2c46f6c9f4",
+          "text": "service.  However, a bounded-range preparation E and local coupling between"
+        },
+        "family": "global Wilson-character chart",
+        "honesty_marker": "RULED OUT BY PRIOR",
+        "mechanism_invariant": "explicit generator-to-root lookup",
+        "object_formulation": "Cycle650 corrected signed tableau",
+        "status": "Cycle650 passes algebra but explicitly leaves global chart supplied",
+        "strength_vs_target": "locality weaker",
+        "terminal_obligation": "all sectors exact algebra"
+      },
+      {
+        "citation": {
+          "line": 35,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_TOPOLOGICAL_SECTOR_GAUGE_SUBSYSTEM_TOURNAMENT_CYCLE650_NOTE_2026-07-23.md",
+          "ref": "cb7199196fe41b6738dc76f5b3236d2c46f6c9f4",
+          "text": "three arbitrary coherent topological input qubits.  It needs no fixed plus"
+        },
+        "family": "fixed plus-plus-plus sector",
+        "honesty_marker": "RULED OUT BY PRIOR",
+        "mechanism_invariant": "three root initializers",
+        "object_formulation": "single spin-character sector",
+        "status": "Cycle650 refuses this weakening",
+        "strength_vs_target": "strict subset",
+        "terminal_obligation": "arbitrary coherent topo input"
+      }
+    ],
+    "N1_open_routes_not_counted": [
+      {
+        "family": "autonomous local clock/QCA scheduler",
+        "status": "OPEN / NOT COUNTED",
+        "terminal": "bounded-period physical law executing the link-dressed update"
+      },
+      {
+        "family": "static commuting tree/link coupling code",
+        "status": "OPEN / NOT COUNTED",
+        "terminal": "local constraint center enforces root-holonomy equality without compute order"
+      },
+      {
+        "family": "term-complete intrinsic even-CAR link presentation",
+        "status": "OPEN / NOT COUNTED",
+        "terminal": "every generator, not only exact seam/interface characters, has a bounded local representative"
+      }
+    ],
+    "N1_qualifying_attempts": 5,
+    "N1_required_for_negative": 5,
+    "N2_directed_ordered_pairs": [
+      {
+        "from": "W_full_algebra",
+        "implied": false,
+        "reason": "local representatives do not supply their autonomous scheduler",
+        "to": "W_autonomous_schedule"
+      },
+      {
+        "from": "W_autonomous_schedule",
+        "implied": false,
+        "reason": "a scheduler does not prove the represented algebra is the full even CAR target",
+        "to": "W_full_algebra"
+      }
+    ],
+    "N2_walls": {
+      "W_autonomous_schedule": "replace the extensive supplied compiler schedule and routing mesh blanks by an autonomous bounded-period local update law",
+      "W_full_algebra": "construct bounded local representatives for the complete even-CAR generator algebra, beyond the exact contaminated seam/interface layer"
+    },
+    "N3_hidden_wall_scan": [
+      {
+        "classification": "explicit supplied implementation structure",
+        "condition": "doubled full K129 mesh and its blank/work state"
+      },
+      {
+        "classification": "explicit host-side schedule; W_autonomous_schedule",
+        "condition": "sequential gate order and compile-time frame transport"
+      },
+      {
+        "classification": "immutable retained finite witness, not a new law",
+        "condition": "Cycle650 complete signed tableau"
+      }
+    ],
+    "N4_exact_residual_matches": [
+      {
+        "current_line": 283,
+        "current_path": "scripts/physical_distributed_tree_toric_returned_work_compiler_cycle653_2026_07_23.py",
+        "current_residual": "finite NN-macro E and state-carried root/link character coupling are constructed",
+        "exact_match": true,
+        "prior_line": 80,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_TOPOLOGICAL_SECTOR_GAUGE_SUBSYSTEM_TOURNAMENT_CYCLE650_NOTE_2026-07-23.md",
+        "prior_ref": "cb7199196fe41b6738dc76f5b3236d2c46f6c9f4",
+        "prior_residual": "bounded-range preparation E and tree-root/link holonomy coupling were not constructed",
+        "same_scope": true,
+        "use_as_closure": true
+      }
+    ],
+    "N4_nonmatches_not_used_as_closure": [
+      {
+        "current_line": 283,
+        "current_path": "scripts/physical_distributed_tree_toric_returned_work_compiler_cycle653_2026_07_23.py",
+        "current_residual": "Cycle653 lacks an autonomous bounded-period update law",
+        "exact_match": false,
+        "prior_line": 50,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_TOPOLOGICAL_SECTOR_GAUGE_SUBSYSTEM_TOURNAMENT_CYCLE650_NOTE_2026-07-23.md",
+        "prior_ref": "cb7199196fe41b6738dc76f5b3236d2c46f6c9f4",
+        "prior_residual": "Cycle650 tableau factors were nonlocal in its supplied sparse placement",
+        "same_scope": false,
+        "use_as_closure": false
+      }
+    ],
+    "N5_rhetoric": [
+      {
+        "claim": "Cycle653 does not close the strict autonomous physical compiler",
+        "lattice_wide": "not tested for arbitrary L and no all-L impossibility is claimed",
+        "per_block": "L3/L6/held L7 are exact",
+        "per_element": "all Cycle650 contaminated matter/gauge rows are matched exactly",
+        "per_mode": "mass/contact and the six-mode seam fixtures are inherited unchanged",
+        "per_site": "every emitted routing primitive is NN on the declared mesh"
+      }
+    ],
+    "N6_partial_closure_paths": [
+      {
+        "file": "UNMATERIALIZED/autonomous_flat_link_QCA_cycle_next.py",
+        "status": "OPEN / PRIORITY",
+        "what_closes": "W_autonomous_schedule"
+      },
+      {
+        "file": "UNMATERIALIZED/term_complete_intrinsic_CAR_link_algebra_cycle_next.py",
+        "status": "OPEN",
+        "what_closes": "W_full_algebra"
+      },
+      {
+        "file": "UNMATERIALIZED/static_commuting_tree_link_constraint_center_cycle_next.py",
+        "status": "OPEN",
+        "what_closes": "an alternative to scheduled root/link computation, not automatically either wall"
+      }
+    ],
+    "N7_steelman": {
+      "actionable_steps": [
+        "synthesize every corrected even-CAR generator in the flat-link frame",
+        "color overlapping local supports with a size-independent palette",
+        "add an autonomous local clock band and prove its period and work return"
+      ],
+      "mechanism": "promote the exact flat-connection formula to a translation-covariant local QCA: store g at cells and z on links, use a finite coloring to update all gauge-invariant even-CAR terms, and prove one period implements the complete target algebra while returning a local clock/work band",
+      "supporting_citations": [
+        {
+          "line": 80,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_TOPOLOGICAL_SECTOR_GAUGE_SUBSYSTEM_TOURNAMENT_CYCLE650_NOTE_2026-07-23.md",
+          "ref": "cb7199196fe41b6738dc76f5b3236d2c46f6c9f4",
+          "text": "service.  However, a bounded-range preparation E and local coupling between"
+        },
+        {
+          "line": 50,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_TOPOLOGICAL_SECTOR_GAUGE_SUBSYSTEM_TOURNAMENT_CYCLE650_NOTE_2026-07-23.md",
+          "ref": "cb7199196fe41b6738dc76f5b3236d2c46f6c9f4",
+          "text": "finite isometry is therefore abstract/nonlocal in the supplied placement."
+        }
+      ],
+      "terminal_test": "size-independent period/support/overhead, exact full-algebra intertwiner, all24/all576, and unchanged Cycle230 update without a host schedule"
+    },
+    "N8_cross_cycle_echo": [
+      {
+        "applicability": "retired on finite L3/L6/L7; does not retire the autonomous update-law residual",
+        "citation_line": 80,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_TOPOLOGICAL_SECTOR_GAUGE_SUBSYSTEM_TOURNAMENT_CYCLE650_NOTE_2026-07-23.md",
+        "citation_ref": "cb7199196fe41b6738dc76f5b3236d2c46f6c9f4",
+        "citation_text": "service.  However, a bounded-range preparation E and local coupling between",
+        "cycle": 650,
+        "mechanism": "flat-link formula plus NN remote macros and exact change of encoding",
+        "retired": "absence of a local tree/link preparation and coupling witness"
+      },
+      {
+        "applicability": "converts factors to NN primitives at enormous supplied blank density and extensive depth",
+        "citation_line": 50,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_TOPOLOGICAL_SECTOR_GAUGE_SUBSYSTEM_TOURNAMENT_CYCLE650_NOTE_2026-07-23.md",
+        "citation_ref": "cb7199196fe41b6738dc76f5b3236d2c46f6c9f4",
+        "citation_text": "finite isometry is therefore abstract/nonlocal in the supplied placement.",
+        "cycle": 650,
+        "mechanism": "doubled full K129 routing mesh with returned remote-gate macros",
+        "retired": "nonlocal sparse-placement CNOT factors"
+      }
+    ],
+    "Status": "PASS",
+    "axiom_pressure": false,
+    "axiom_pressure_claim": false,
+    "axiom_pressure_gate": "FAIL / DO NOT SHIP",
+    "axiom_pressure_shipped": false,
+    "broad_negative_gate": "FAIL / DO NOT SHIP",
+    "broad_negative_shipped": false,
+    "broad_no_go_claim": false,
+    "minimum_content_claim": false,
+    "minimum_content_gate": "FAIL / DO NOT SHIP",
+    "minimum_content_shipped": false,
+    "shared_obstruction_claim": false,
+    "shared_obstruction_gate": "FAIL / DO NOT SHIP",
+    "shared_obstruction_shipped": false,
+    "shared_route_independent_obstruction": false
+  },
+  "note_sha256": "18f0d3b6ad3c5923cf5ed6bce44b403a6a8c12562b5bee0b21c9762d8a2c624b",
+  "optimal_next_campaign": "term-complete flat-link even-CAR generator presentation followed by finite-color autonomous local QCA and returned clock/work band",
+  "pass": true,
+  "prior_art_novelty_boundary": {
+    "broader_novelty_claimed": false,
+    "narrow_new_result": "exact finite composition with the Cycle650 rank/center and Cycle230 seam-character fixture, including held-size and returned-work receipts",
+    "standard_prior_art": [
+      "flat Z2 lattice connections",
+      "spanning-tree gauge fixing",
+      "toric holonomies",
+      "Clifford stabilizer encoders",
+      "nearest-neighbour SWAP routing"
+    ]
+  },
+  "route_A_tree_root_message": [
+    {
+      "NN_primitive_CNOTs": 38928,
+      "all_emitted_two_qubit_primitive_range": 1,
+      "exact_residual": "the root/seed relation is established by reversible NN message passing, not yet by a simultaneously commuting static local constraint set",
+      "global_Wilson_lookup_table_used": false,
+      "global_parity_service_used": false,
+      "host_compiled_message_order_supplied": true,
+      "length": 3,
+      "maximum_message_distance": 265,
+      "pass": true,
+      "persistent_state_carried_link_seeds": 3,
+      "relations": [
+        {
+          "NN_primitive_CNOTs": 12976,
+          "axis": 0,
+          "computed_seed_relation_failures": 0,
+          "maximum_message_distance": 265,
+          "root_is_positive_Z_only": true,
+          "root_weight": 16,
+          "seed_link": "((2, 0, 0), 0)"
+        },
+        {
+          "NN_primitive_CNOTs": 12976,
+          "axis": 1,
+          "computed_seed_relation_failures": 0,
+          "maximum_message_distance": 265,
+          "root_is_positive_Z_only": true,
+          "root_weight": 16,
+          "seed_link": "((0, 2, 0), 1)"
+        },
+        {
+          "NN_primitive_CNOTs": 12976,
+          "axis": 2,
+          "computed_seed_relation_failures": 0,
+          "maximum_message_distance": 265,
+          "root_is_positive_Z_only": true,
+          "root_weight": 16,
+          "seed_link": "((0, 0, 2), 2)"
+        }
+      ],
+      "remote_CNOT_macros_restore_every_intermediate_M2": true,
+      "reversible_compute_use_uncompute": true,
+      "route": "A_tree_root_link_reversible_message",
+      "split": "construction",
+      "static_commuting_local_tree_link_constraint_set_constructed": false
+    },
+    {
+      "NN_primitive_CNOTs": 58824,
+      "all_emitted_two_qubit_primitive_range": 1,
+      "exact_residual": "the root/seed relation is established by reversible NN message passing, not yet by a simultaneously commuting static local constraint set",
+      "global_Wilson_lookup_table_used": false,
+      "global_parity_service_used": false,
+      "host_compiled_message_order_supplied": true,
+      "length": 6,
+      "maximum_message_distance": 267,
+      "pass": true,
+      "persistent_state_carried_link_seeds": 3,
+      "relations": [
+        {
+          "NN_primitive_CNOTs": 19608,
+          "axis": 0,
+          "computed_seed_relation_failures": 0,
+          "maximum_message_distance": 267,
+          "root_is_positive_Z_only": true,
+          "root_weight": 24,
+          "seed_link": "((5, 0, 0), 0)"
+        },
+        {
+          "NN_primitive_CNOTs": 19608,
+          "axis": 1,
+          "computed_seed_relation_failures": 0,
+          "maximum_message_distance": 267,
+          "root_is_positive_Z_only": true,
+          "root_weight": 24,
+          "seed_link": "((0, 5, 0), 1)"
+        },
+        {
+          "NN_primitive_CNOTs": 19608,
+          "axis": 2,
+          "computed_seed_relation_failures": 0,
+          "maximum_message_distance": 267,
+          "root_is_positive_Z_only": true,
+          "root_weight": 24,
+          "seed_link": "((0, 0, 5), 2)"
+        }
+      ],
+      "remote_CNOT_macros_restore_every_intermediate_M2": true,
+      "reversible_compute_use_uncompute": true,
+      "route": "A_tree_root_link_reversible_message",
+      "split": "train",
+      "static_commuting_local_tree_link_constraint_set_constructed": false
+    },
+    {
+      "NN_primitive_CNOTs": 38928,
+      "all_emitted_two_qubit_primitive_range": 1,
+      "exact_residual": "the root/seed relation is established by reversible NN message passing, not yet by a simultaneously commuting static local constraint set",
+      "global_Wilson_lookup_table_used": false,
+      "global_parity_service_used": false,
+      "host_compiled_message_order_supplied": true,
+      "length": 7,
+      "maximum_message_distance": 265,
+      "pass": true,
+      "persistent_state_carried_link_seeds": 3,
+      "relations": [
+        {
+          "NN_primitive_CNOTs": 12976,
+          "axis": 0,
+          "computed_seed_relation_failures": 0,
+          "maximum_message_distance": 265,
+          "root_is_positive_Z_only": true,
+          "root_weight": 16,
+          "seed_link": "((6, 0, 0), 0)"
+        },
+        {
+          "NN_primitive_CNOTs": 12976,
+          "axis": 1,
+          "computed_seed_relation_failures": 0,
+          "maximum_message_distance": 265,
+          "root_is_positive_Z_only": true,
+          "root_weight": 16,
+          "seed_link": "((0, 6, 0), 1)"
+        },
+        {
+          "NN_primitive_CNOTs": 12976,
+          "axis": 2,
+          "computed_seed_relation_failures": 0,
+          "maximum_message_distance": 265,
+          "root_is_positive_Z_only": true,
+          "root_weight": 16,
+          "seed_link": "((0, 0, 6), 2)"
+        }
+      ],
+      "remote_CNOT_macros_restore_every_intermediate_M2": true,
+      "reversible_compute_use_uncompute": true,
+      "route": "A_tree_root_link_reversible_message",
+      "split": "held-out-no-refit",
+      "static_commuting_local_tree_link_constraint_set_constructed": false
+    }
+  ],
+  "route_B_flat_link_gauge_fixing": [
+    {
+      "NN_routed_encoder_primitive_factors": 1338203,
+      "all_eight_topological_basis_sectors_in_domain": true,
+      "all_routed_two_qubit_primitives_fine_L1": 1,
+      "arbitrary_coherent_topological_inputs": 3,
+      "coarse_cells": 27,
+      "code_exponent": 29,
+      "delete_one_independent_plaquette_rank": 51,
+      "doubled_fine_grid_period": 774,
+      "encoder_factor_counts": {
+        "CNOT": 473
+      },
+      "encoder_factors": 473,
+      "encoder_sha256": "a12236ca9cbb7346dfff4fd7884931848df8fe763643a25ce00c5b1db01cc266",
+      "expected_partition": {
+        "ordinary_gauge": 26,
+        "sum": 29,
+        "topological": 3
+      },
+      "expected_plaquette_rank": 52,
+      "fixed_plus_plus_plus_required": false,
+      "flipped_redundant_plaquette_phase_inconsistencies": 9,
+      "formula": "z(v,a)=g(v) xor g(v+e_a) xor t_a*[wrap]",
+      "formula_expression_rank": 29,
+      "formula_flatness_failures": 0,
+      "formula_inverse_recovery_failures": 0,
+      "full_routing_mesh_M2": 463684824,
+      "gauge_pairing_failures": 0,
+      "gauge_topological_cross_failures": 0,
+      "length": 3,
+      "link_M2": 81,
+      "local_gradient_cancellation_failures": 0,
+      "logical_frame_failures": 0,
+      "logical_plaquette_commutator_failures": 0,
+      "maximum_abstract_encoder_CNOT_fine_L1": 1032,
+      "maximum_plaquette_support_fine_L1_diameter": 258,
+      "ordinary_gauge_pairs": 26,
+      "pass": true,
+      "phase_inconsistencies": 0,
+      "physical_link_placement": "positive cubic-link midpoints 2K*cell+K*e_axis",
+      "plaquette_rank": 52,
+      "plaquette_rows": 81,
+      "route": "B_flat_link_gauge_fixing",
+      "routing_mesh_M2_per_coarse_cell": 17173512,
+      "routing_mesh_work_returned_per_macro": true,
+      "runtime_Wilson_character_lookup_table_used": false,
+      "split": "construction",
+      "stabilizer_reference_failures": 0,
+      "topological_pairing_failures": 0,
+      "topological_pairs": 3
+    },
+    {
+      "NN_routed_encoder_primitive_factors": 31512719,
+      "all_eight_topological_basis_sectors_in_domain": true,
+      "all_routed_two_qubit_primitives_fine_L1": 1,
+      "arbitrary_coherent_topological_inputs": 3,
+      "coarse_cells": 216,
+      "code_exponent": 218,
+      "delete_one_independent_plaquette_rank": 429,
+      "doubled_fine_grid_period": 1548,
+      "encoder_factor_counts": {
+        "CNOT": 6485
+      },
+      "encoder_factors": 6485,
+      "encoder_sha256": "bfa9bb37fe818036689cff745c72bce77e6b9892381c04d6a9e771d90889fcac",
+      "expected_partition": {
+        "ordinary_gauge": 215,
+        "sum": 218,
+        "topological": 3
+      },
+      "expected_plaquette_rank": 430,
+      "fixed_plus_plus_plus_required": false,
+      "flipped_redundant_plaquette_phase_inconsistencies": 21,
+      "formula": "z(v,a)=g(v) xor g(v+e_a) xor t_a*[wrap]",
+      "formula_expression_rank": 218,
+      "formula_flatness_failures": 0,
+      "formula_inverse_recovery_failures": 0,
+      "full_routing_mesh_M2": 3709478592,
+      "gauge_pairing_failures": 0,
+      "gauge_topological_cross_failures": 0,
+      "length": 6,
+      "link_M2": 648,
+      "local_gradient_cancellation_failures": 0,
+      "logical_frame_failures": 0,
+      "logical_plaquette_commutator_failures": 0,
+      "maximum_abstract_encoder_CNOT_fine_L1": 2322,
+      "maximum_plaquette_support_fine_L1_diameter": 258,
+      "ordinary_gauge_pairs": 215,
+      "pass": true,
+      "phase_inconsistencies": 0,
+      "physical_link_placement": "positive cubic-link midpoints 2K*cell+K*e_axis",
+      "plaquette_rank": 430,
+      "plaquette_rows": 648,
+      "route": "B_flat_link_gauge_fixing",
+      "routing_mesh_M2_per_coarse_cell": 17173512,
+      "routing_mesh_work_returned_per_macro": true,
+      "runtime_Wilson_character_lookup_table_used": false,
+      "split": "train",
+      "stabilizer_reference_failures": 0,
+      "topological_pairing_failures": 0,
+      "topological_pairs": 3
+    },
+    {
+      "NN_routed_encoder_primitive_factors": 65527239,
+      "all_eight_topological_basis_sectors_in_domain": true,
+      "all_routed_two_qubit_primitives_fine_L1": 1,
+      "arbitrary_coherent_topological_inputs": 3,
+      "coarse_cells": 343,
+      "code_exponent": 345,
+      "delete_one_independent_plaquette_rank": 683,
+      "doubled_fine_grid_period": 1806,
+      "encoder_factor_counts": {
+        "CNOT": 11685
+      },
+      "encoder_factors": 11685,
+      "encoder_sha256": "d1cefaa0906ed9799f682f6595cf2129f795b4323658fe66c10a52a2a09f1860",
+      "expected_partition": {
+        "ordinary_gauge": 342,
+        "sum": 345,
+        "topological": 3
+      },
+      "expected_plaquette_rank": 684,
+      "fixed_plus_plus_plus_required": false,
+      "flipped_redundant_plaquette_phase_inconsistencies": 25,
+      "formula": "z(v,a)=g(v) xor g(v+e_a) xor t_a*[wrap]",
+      "formula_expression_rank": 345,
+      "formula_flatness_failures": 0,
+      "formula_inverse_recovery_failures": 0,
+      "full_routing_mesh_M2": 5890514616,
+      "gauge_pairing_failures": 0,
+      "gauge_topological_cross_failures": 0,
+      "length": 7,
+      "link_M2": 1029,
+      "local_gradient_cancellation_failures": 0,
+      "logical_frame_failures": 0,
+      "logical_plaquette_commutator_failures": 0,
+      "maximum_abstract_encoder_CNOT_fine_L1": 2580,
+      "maximum_plaquette_support_fine_L1_diameter": 258,
+      "ordinary_gauge_pairs": 342,
+      "pass": true,
+      "phase_inconsistencies": 0,
+      "physical_link_placement": "positive cubic-link midpoints 2K*cell+K*e_axis",
+      "plaquette_rank": 684,
+      "plaquette_rows": 1029,
+      "route": "B_flat_link_gauge_fixing",
+      "routing_mesh_M2_per_coarse_cell": 17173512,
+      "routing_mesh_work_returned_per_macro": true,
+      "runtime_Wilson_character_lookup_table_used": false,
+      "split": "held-out-no-refit",
+      "stabilizer_reference_failures": 0,
+      "topological_pairing_failures": 0,
+      "topological_pairs": 3
+    }
+  ],
+  "route_C_staggered_schedule": [
+    {
+      "all_emitted_two_qubit_primitive_range": 1,
+      "all_three_topological_inputs_coherent": true,
+      "autonomous_bounded_period_physical_update_constructed": false,
+      "compile_schedule_and_mesh_blank_state_supplied": true,
+      "complete_elementary_factorization_of_G_coarse_constructed": false,
+      "exact_character_level_intertwiner": true,
+      "flat_encoder_NN_primitives": 1338203,
+      "formal_isometry": "E_flat P E_tree^dagger, with P transferring 6N target, N-1 gauge, and three topological wires",
+      "full_mesh_M2": 463684824,
+      "full_mesh_M2_per_coarse_cell": 17173512,
+      "length": 3,
+      "logical_wires_transferred": 191,
+      "maximum_transfer_distance": 1035,
+      "maximum_tree_factor_route_distance": 918,
+      "old_tree_sites_returned_to_declared_blank_references": true,
+      "pass": true,
+      "route": "C_staggered_time_multiplexed_change_of_encoding",
+      "routing_mesh_work_returned": true,
+      "runtime_global_Wilson_chart_used": false,
+      "schedule_depth_scales_with_held_size": true,
+      "sequential_depth_upper_bound": 22691117,
+      "split": "construction",
+      "stages": [
+        "NN-routed Cycle650 tree decoder",
+        "NN-routed logical-wire transfer",
+        "NN-routed flat-link encoder",
+        "local gradient gauge transform and link-dressed coarse seam update",
+        "reverse temporary gradient/message work"
+      ],
+      "strict_physical_local_M2_compiler_claimed": false,
+      "topological_plus_state_required": false,
+      "transfer_NN_primitives": 136593,
+      "tree_decoder_NN_primitives": 21216321
+    },
+    {
+      "all_emitted_two_qubit_primitive_range": 1,
+      "all_three_topological_inputs_coherent": true,
+      "autonomous_bounded_period_physical_update_constructed": false,
+      "compile_schedule_and_mesh_blank_state_supplied": true,
+      "complete_elementary_factorization_of_G_coarse_constructed": false,
+      "exact_character_level_intertwiner": true,
+      "flat_encoder_NN_primitives": 31512719,
+      "formal_isometry": "E_flat P E_tree^dagger, with P transferring 6N target, N-1 gauge, and three topological wires",
+      "full_mesh_M2": 3709478592,
+      "full_mesh_M2_per_coarse_cell": 17173512,
+      "length": 6,
+      "logical_wires_transferred": 1514,
+      "maximum_transfer_distance": 1677,
+      "maximum_tree_factor_route_distance": 2322,
+      "old_tree_sites_returned_to_declared_blank_references": true,
+      "pass": true,
+      "route": "C_staggered_time_multiplexed_change_of_encoding",
+      "routing_mesh_work_returned": true,
+      "runtime_global_Wilson_chart_used": false,
+      "schedule_depth_scales_with_held_size": true,
+      "sequential_depth_upper_bound": 603199325,
+      "split": "train",
+      "stages": [
+        "NN-routed Cycle650 tree decoder",
+        "NN-routed logical-wire transfer",
+        "NN-routed flat-link encoder",
+        "local gradient gauge transform and link-dressed coarse seam update",
+        "reverse temporary gradient/message work"
+      ],
+      "strict_physical_local_M2_compiler_claimed": false,
+      "topological_plus_state_required": false,
+      "transfer_NN_primitives": 684078,
+      "tree_decoder_NN_primitives": 571002528
+    },
+    {
+      "all_emitted_two_qubit_primitive_range": 1,
+      "all_three_topological_inputs_coherent": true,
+      "autonomous_bounded_period_physical_update_constructed": false,
+      "compile_schedule_and_mesh_blank_state_supplied": true,
+      "complete_elementary_factorization_of_G_coarse_constructed": false,
+      "exact_character_level_intertwiner": true,
+      "flat_encoder_NN_primitives": 65527239,
+      "formal_isometry": "E_flat P E_tree^dagger, with P transferring 6N target, N-1 gauge, and three topological wires",
+      "full_mesh_M2": 5890514616,
+      "full_mesh_M2_per_coarse_cell": 17173512,
+      "length": 7,
+      "logical_wires_transferred": 2403,
+      "maximum_transfer_distance": 2193,
+      "maximum_tree_factor_route_distance": 2462,
+      "old_tree_sites_returned_to_declared_blank_references": true,
+      "pass": true,
+      "route": "C_staggered_time_multiplexed_change_of_encoding",
+      "routing_mesh_work_returned": true,
+      "runtime_global_Wilson_chart_used": false,
+      "schedule_depth_scales_with_held_size": true,
+      "sequential_depth_upper_bound": 1302483056,
+      "split": "held-out-no-refit",
+      "stages": [
+        "NN-routed Cycle650 tree decoder",
+        "NN-routed logical-wire transfer",
+        "NN-routed flat-link encoder",
+        "local gradient gauge transform and link-dressed coarse seam update",
+        "reverse temporary gradient/message work"
+      ],
+      "strict_physical_local_M2_compiler_claimed": false,
+      "topological_plus_state_required": false,
+      "transfer_NN_primitives": 970677,
+      "tree_decoder_NN_primitives": 1235985140
+    }
+  ],
+  "route_disposition": {
+    "A": "PASS_FINITE_NN_REVERSIBLE_ROOT_LINK_MESSAGE__STATIC_COMMUTING_CONSTRAINT_OPEN",
+    "B": "PASS_EXACT_FLAT_LINK_N_MINUS_1_PLUS_3_ENCODER_AND_LOCAL_CHARACTER_CANCELLATION",
+    "C": "PASS_FINITE_NN_RETURNED_WORK_CHANGE_OF_ENCODING__AUTONOMOUS_BOUNDED_PERIOD_G_OPEN"
+  },
+  "runner_sha256": "1ead5e8f60b7593771abc68b89ccb9674eec75b39a857aefa2cf4b5391d3e974",
+  "shared_obstruction_claim": false,
+  "shared_obstruction_gate": "FAIL / DO NOT SHIP",
+  "shared_obstruction_shipped": false,
+  "shared_route_independent_obstruction": false,
+  "six_wall_ledger": {
+    "C_int": "original mass/contact/seam character composes; complete elementary G factorization open",
+    "C_local": "all emitted compiler primitives NN; extensive depth and enormous full mesh",
+    "C_num": "exact ranks/inverse/rows/sectors/fixtures; no Born or empirical normalization",
+    "C_ref": "arbitrary state-carried holonomies; mesh blanks/gauge section/schedule supplied",
+    "C_source": "link/work resources counted; no source/stress/energy/gravity",
+    "C_wrap": "local link field replaces runtime Wilson table; autonomous topological genesis not claimed"
+  },
+  "status": "positive finite local-gate tree/flat-link coupling; strict autonomous physical compiler open",
+  "strict_physical_local_M2_compiler_claimed": false,
+  "strict_success_criterion_met": false,
+  "strongest_constructive_result": "exact plaquette-only flat-link N-1+3 encoder and geometric local seam dressing, composed with an NN returned-work finite tree-to-flat isometry at L3/L6/held-out L7",
+  "supplied_structure_inventory": {
+    "Cycle650_Cycle642_Cycle647_tableau_and_fixtures": true,
+    "autonomous_clock_or_update_law": false,
+    "compile_time_frame_transport": true,
+    "doubled_full_K129_routing_mesh": true,
+    "finite_L3_L6_L7_domains": true,
+    "fixed_plus_plus_plus": false,
+    "global_Jordan_Wigner_order": false,
+    "nonlocal_parity_service": false,
+    "root_and_logical_wire_order": true,
+    "routing_mesh_M2_per_coarse_cell": 17173512,
+    "routing_mesh_blank_work_references": true,
+    "runtime_frame_selector": false,
+    "runtime_global_Wilson_character_table": false,
+    "sequential_compile_schedule": true,
+    "spanning_tree_gauge_section": true
+  },
+  "tests_failed": 0,
+  "tests_passed": 19,
+  "top_level_claim_gate_contract": {
+    "Status": true,
+    "breakthrough_false": true,
+    "flags": true,
+    "gates": true,
+    "pass": true,
+    "strict_physical_claim_false": true,
+    "strict_success_false": true,
+    "strongest_nonempty": true
+  },
+  "update_interface": {
+    "B_coefficient_failures": 0,
+    "Cycle219_mass_residual": 2.220446049250313e-16,
+    "Cycle230_plus_minus_seam_singular_residual": 1.4174378709434725e-15,
+    "Cycle230_seam_subchecks": {
+      "fail": 0,
+      "pass": 6
+    },
+    "E_Gcoarse_equals_Glocal_link_dressed_E": true,
+    "FSWAP_matrix_residual": 0.0,
+    "G_coarse_redefined": false,
+    "G_local_link_dressed_uses_geometric_edge_rule_not_global_Wilson_chart": true,
+    "all_three_coherent_topological_inputs_preserved": true,
+    "contact_active_states": 15,
+    "contact_deletion_residual": 0.36789306705608243,
+    "exact_residual": "the finite character/interface intertwiner is exact, but the complete coarse update remains a supplied extensive gate schedule rather than a derived autonomous bounded-period local law",
+    "fixed_plus_plus_plus_used": false,
+    "intertwiner": "E_local G_coarse = G_local_link_dressed E_local on the declared finite code space at character/interface resolution",
+    "onsite_residual": 5.272182555577386e-15,
+    "pass": true,
+    "permission_to_redefine_G_coarse_claimed": false,
+    "strict_autonomous_update_terminal_met": false,
+    "symbolic_local_link_character_failures": 0
+  }
+}

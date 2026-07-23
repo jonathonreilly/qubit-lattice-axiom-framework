@@ -1,0 +1,28 @@
+PASS immutable Cycle650 shore is byte exact :: {'files': 4, 'mismatches': []}
+PASS L3 orbit-split tree roles are injective in K129 and covariant all24/all576 with translated L3/L6/L7 ownership :: {'logical_aux_edges': 9, 'physical_aux_M2': 48, 'abstract_role_orbits': 2, 'role_copy_multiplicity_histogram': {8: 3, 4: 6}, 'all24_fiber_covariance_failures': 0, 'all576_label_group_failures': 0}
+PASS L3 Route B exact flat-link gauge/topological encoder :: {'rank': 52, 'k': 29, 'factors': 473}
+PASS L3 Route A reversible tree-root/link message :: {'primitives': 38928, 'distance': 265}
+PASS L3 local geometric dressing equals every Cycle650 correction :: {'matter': 27, 'gauge': 27, 'mismatch': 0}
+PASS L3 Route C NN returned-work change-of-encoding schedule :: {'wires': 191, 'depth_upper': 22691117}
+PASS L6 orbit-split tree roles are injective in K129 and covariant all24/all576 with translated L3/L6/L7 ownership :: {'logical_aux_edges': 18, 'physical_aux_M2': 96, 'abstract_role_orbits': 4, 'role_copy_multiplicity_histogram': {8: 6, 4: 12}, 'all24_fiber_covariance_failures': 0, 'all576_label_group_failures': 0}
+PASS L6 Route B exact flat-link gauge/topological encoder :: {'rank': 430, 'k': 218, 'factors': 6485}
+PASS L6 Route A reversible tree-root/link message :: {'primitives': 58824, 'distance': 267}
+PASS L6 local geometric dressing equals every Cycle650 correction :: {'matter': 108, 'gauge': 108, 'mismatch': 0}
+PASS L6 Route C NN returned-work change-of-encoding schedule :: {'wires': 1514, 'depth_upper': 603199325}
+PASS L7 orbit-split tree roles are injective in K129 and covariant all24/all576 with translated L3/L6/L7 ownership :: {'logical_aux_edges': 21, 'physical_aux_M2': 96, 'abstract_role_orbits': 4, 'role_copy_multiplicity_histogram': {8: 3, 4: 18}, 'all24_fiber_covariance_failures': 0, 'all576_label_group_failures': 0}
+PASS L7 Route B exact flat-link gauge/topological encoder :: {'rank': 684, 'k': 345, 'factors': 11685}
+PASS L7 Route A reversible tree-root/link message :: {'primitives': 38928, 'distance': 265}
+PASS L7 local geometric dressing equals every Cycle650 correction :: {'matter': 147, 'gauge': 147, 'mismatch': 0}
+PASS L7 Route C NN returned-work change-of-encoding schedule :: {'wires': 2403, 'depth_upper': 1302483056}
+PASS all24/all576 tree, topology, flat-link, mode-port, midpoint, and schedule-family covariance :: {'rows': 3}
+PASS inverse, leakage, deletion, routing-macro, held-size, and lawful-domain controls :: {'inverse': 3, 'deletions': 3}
+PASS unchanged mass/contact/Cycle230 seam character interface :: {'seam': {'pass': 6, 'fail': 0}, 'symbolic': 0}
+PASS canonical N1-N8 schema and negative gates :: {'Status_PASS': True, 'gates': True, 'flags': True, 'N1': True, 'N2': True, 'N4': True, 'N5': True, 'N6': True, 'N7': True, 'N8': True, 'pass': True}
+PASS top-level strict fields, gates, and shipped flags :: {'Status': True, 'gates': True, 'flags': True, 'strict_success_false': True, 'strict_physical_claim_false': True, 'breakthrough_false': True, 'strongest_nonempty': True, 'pass': True}
+PASS note contract :: []
+{
+  "pass": true,
+  "tests": "19/19",
+  "elapsed": 361.328382082982,
+  "receipt": "/private/tmp/toe-science.BB0KQV/outputs/physical_distributed_tree_toric_returned_work_compiler_cycle653_receipt_2026_07_23.json"
+}

@@ -11,7 +11,7 @@
       "overturned_by_third": 0,
       "ratified_by_third": 0,
       "total_audits": 0,
-      "verdict_changed_after_re_audit": 6,
+      "verdict_changed_after_re_audit": 7,
       "verdict_counts": {}
     },
     "codex-current": {
@@ -110,7 +110,7 @@
       "third_pass_overturn_rate": 0.52,
       "third_pass_overturn_rate_caveat": "Selection-biased: third auditor only runs on disputed cases. Expected value for a competent auditor is ~0.5. See script docstring.",
       "total_audits": 287,
-      "verdict_changed_after_re_audit": 419,
+      "verdict_changed_after_re_audit": 420,
       "verdict_counts": {
         "audited_clean": 256,
         "audited_conditional": 4,
@@ -121,7 +121,7 @@
     },
     "codex-gpt-5.6": {
       "audits_with_runner_class": {
-        "A": 111,
+        "A": 112,
         "B": 2,
         "C": 25,
         "D": 1,
@@ -135,7 +135,7 @@
         "same_severity": 6
       },
       "criticality_counts": {
-        "critical": 109,
+        "critical": 110,
         "high": 16,
         "leaf": 18,
         "medium": 6
@@ -156,11 +156,11 @@
       "third_pass_decisions_n": 32,
       "third_pass_overturn_rate": 0.5,
       "third_pass_overturn_rate_caveat": "Selection-biased: third auditor only runs on disputed cases. Expected value for a competent auditor is ~0.5. See script docstring.",
-      "total_audits": 149,
-      "verdict_changed_after_re_audit": 107,
+      "total_audits": 150,
+      "verdict_changed_after_re_audit": 108,
       "verdict_counts": {
         "audited_clean": 61,
-        "audited_conditional": 59,
+        "audited_conditional": 60,
         "audited_decoration": 11,
         "audited_failed": 10,
         "audited_numerical_match": 2,
@@ -195,7 +195,7 @@
   "totals": {
     "auditor_families_observed": 5,
     "overall_agreement_rate": 0.759,
-    "total_audits_recorded": 529,
+    "total_audits_recorded": 530,
     "total_cross_confirmation_family_participations": 148,
     "total_cross_confirmation_pairs": 133,
     "total_third_pass_decisions": 60

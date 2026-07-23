@@ -1817,7 +1817,7 @@
         },
         {
           "claim_id": "pmns_graph_axis_to_active_lane_bridge_note",
-          "effective_status": "unaudited"
+          "effective_status": "audit_in_progress"
         },
         {
           "claim_id": "pmns_graph_first_axis_alignment_note",

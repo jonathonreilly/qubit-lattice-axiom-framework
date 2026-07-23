@@ -1,26 +1,147 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
-  "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "audit_date": "2026-07-23T19:31:54.639195+00:00",
+  "audit_invocation_history": [
+    "efb9dc31863b4f64a5af0f5c911c6eca",
+    "282e0f3d4639480f9757c74358f955a7"
+  ],
+  "audit_invocation_id": "282e0f3d4639480f9757c74358f955a7",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/frontier_pmns_graph_axis_to_active_lane_bridge.py"
+    },
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "graph_first_selector_derivation_note": "Audited the algebraic derivation of the graph-native weak-axis selector from the canonical one-step shifts on the 8-vertex taste cube, including its normalized axis-minimum and residual Z2 structure.",
+      "site_phase_cube_shift_intertwiner_note": "Exact intertwining of cube-shift operators on C^8 with lattice site-phase operators restricted to the eight BZ-corner subspace, including the induced Hadamard joint eigensystem.",
+      "z2_hw1_mass_matrix_parametrization_note": "Exact residual-Z_2 Hermitian normal form, spectrum, open-dense simple-spectrum locus, and exact full-S_3 sublocus for the supplied three-axis permutation representation."
+    },
+    "dep_claim_type": {
+      "graph_first_selector_derivation_note": "positive_theorem",
+      "site_phase_cube_shift_intertwiner_note": "positive_theorem",
+      "z2_hw1_mass_matrix_parametrization_note": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "graph_first_selector_derivation_note": "retained",
+      "site_phase_cube_shift_intertwiner_note": "retained",
+      "z2_hw1_mass_matrix_parametrization_note": "retained"
+    },
+    "deps": [
+      "graph_first_selector_derivation_note",
+      "site_phase_cube_shift_intertwiner_note",
+      "z2_hw1_mass_matrix_parametrization_note"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 11.092,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_pmns_graph_axis_to_active_lane_bridge.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "e622447a0bdef7842d3206a98962b7ae76d68457c51816f69c044ceed6ad2f04",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "e622447a0bdef7842d3206a98962b7ae76d68457c51816f69c044ceed6ad2f04",
+    "runner_path": "scripts/frontier_pmns_graph_axis_to_active_lane_bridge.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 771
+  },
+  "audit_status": "audit_in_progress",
+  "auditor": "codex-audit-batch-A-20260723-c244c6c5",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": "cross_confirmation_disagreement",
+  "chain_closes": false,
+  "chain_closure_explanation": "The restriction T_tau|V_1=P_tau is established, but the packet never derives that the relevant active Hermitian operator must be invariant under that residual action. The clipped runner evidence also omits the complete load-bearing certificate.",
   "claim_id": "pmns_graph_axis_to_active_lane_bridge_note",
-  "claim_scope": null,
+  "claim_scope": "Finite-dimensional restriction T_sigma|V_1=P_sigma and equivalence between invariance of an already-specified Hermitian H under tau=(2 3) and P_23 H P_23=H; mandatory active-operator invariance, active-sector assignment, and PMNS values are excluded.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-23T19:31:54.639195+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "critical",
-  "cross_confirmation": null,
+  "cross_confirmation": {
+    "first_audit": {
+      "audit_date": "2026-07-23T19:31:54.639195+00:00",
+      "audit_invocation_id": "efb9dc31863b4f64a5af0f5c911c6eca",
+      "auditor": "codex-audit-batch-A-20260723-c244c6c5",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "chain_closes": false,
+      "chain_closure_explanation": "The restriction T_tau|V_1=P_tau is established, but the packet never derives that the relevant active Hermitian operator must be invariant under that residual action. The clipped runner evidence also omits the complete load-bearing certificate.",
+      "claim_scope": "Finite-dimensional restriction T_sigma|V_1=P_sigma and equivalence between invariance of an already-specified Hermitian H under tau=(2 3) and P_23 H P_23=H; mandatory active-operator invariance, active-sector assignment, and PMNS values are excluded.",
+      "claim_type": "bounded_theorem",
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Pushing the selected axis onto the active Hermitian triplet lane forces the aligned law P_23 H P_23 = H.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "notes_for_re_audit_if_any": "Re-audit after a retained equivariance or pointwise-invariance theorem shows that the selected-axis residual stabilizer must leave the relevant active Hermitian law invariant, and after supplying complete SHA-pinned runner stdout.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 87,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 87
+      },
+      "verdict": "audited_failed",
+      "verdict_rationale": "Issue: the exact calculation T_sigma|V_1=P_sigma is valid, but the claimed mandatory aligned law is replaced by the conditional statement that an already-invariant H satisfies P_tau H P_tau=H. Why this blocks: the runner symmetrizes arbitrary matrices into H_inv=(H+P_23 H P_23)/2 and checks the constructed result, so it assumes or constructs invariance rather than proving the original active operator is invariant. Repair target: supply a retained theorem connecting the graph selector and residual action to pointwise invariance of the relevant active Hermitian law, then provide complete unclipped runner evidence testing that implication. Claim boundary until fixed: only the permutation restriction and the equivalence for an already-imposed invariant H are supported; the active-sector and PMNS-value exclusions are scope boundaries, not no-go assertions."
+    },
+    "mode": "terminal_second_pass",
+    "second_audit": {
+      "audit_date": "2026-07-23T19:31:54.647298+00:00",
+      "audit_invocation_id": "282e0f3d4639480f9757c74358f955a7",
+      "auditor": "codex-audit-batch-B-20260723-1f59d8c3",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite-dimensional representation identity closes, but mandatory invariance of the relevant active Hermitian operator does not. The runner constructs or projects invariant operators rather than deriving the required active-carrier identification and pointwise residual invariance.",
+      "claim_scope": "Conditional finite-dimensional representation lemma: on the supplied V_1 carrier, T_tau restricts to P_tau and invariance of a supplied H is equivalent to P_tau H P_tau = H, specifically P_23 after relabeling; active-carrier assignment and mandatory invariance are not derived.",
+      "claim_type": "bounded_theorem",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "A Hermitian operator H on V_1 is invariant under the residual Z_2 stabilizer if and only if P_tau_k H P_tau_k = H.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive and retain the active-carrier equivariance and pointwise-invariance theorem, then rerender complete unclipped stdout for the load-bearing checks.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 87,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 87
+      },
+      "verdict": "audited_conditional",
+      "verdict_rationale": "Issue: the exact restriction T_tau_k|V_1 = P_tau_k does not derive that the relevant active Hermitian operator is identified with this carrier and invariant under the residual action. Why this blocks: the runner verifies representation identities and projects arbitrary H into the invariant subalgebra, while the retained Z_2 authority expressly requires separate physical-carrier identification and pointwise operator invariance. Repair target: supply a retained equivariant-carrier theorem proving that residual Z_2 invariance applies to the active operator, and provide unclipped load-bearing runner evidence. Claim boundary until fixed: conditional on that carrier and invariance premise, residual invariance is exactly P_tau_k H P_tau_k = H, with P_23 after relabeling."
+    },
+    "status": "disagreement"
+  },
   "decoration_parent_claim_id": null,
   "deps": [
     "z2_hw1_mass_matrix_parametrization_note",
@@ -28,19 +149,20 @@
     "graph_first_selector_derivation_note"
   ],
   "direct_in_degree": 3,
-  "effective_status": "unaudited",
+  "effective_status": "audit_in_progress",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audit_in_progress",
   "load_bearing_score": 11.092,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Pushing the selected axis onto the active Hermitian triplet lane forces the aligned law P_23 H P_23 = H.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "8553fe0b6ba602ecda8a067e1aea727a3cf622a8d67374fd6dedc7ec7f4dce75",
   "note_path": "docs/PMNS_GRAPH_AXIS_TO_ACTIVE_LANE_BRIDGE_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Re-audit after a retained equivariance or pointwise-invariance theorem shows that the selected-axis residual stabilizer must leave the relevant active Hermitian law invariant, and after supplying complete SHA-pinned runner stdout.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -4678,14 +4800,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 87,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 87
   },
   "runner_path": "scripts/frontier_pmns_graph_axis_to_active_lane_bridge.py",
   "title": "PMNS Graph-Axis -> Active Hermitian Lane Bridge",
   "transitive_descendants": 771,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: the exact calculation T_sigma|V_1=P_sigma is valid, but the claimed mandatory aligned law is replaced by the conditional statement that an already-invariant H satisfies P_tau H P_tau=H. Why this blocks: the runner symmetrizes arbitrary matrices into H_inv=(H+P_23 H P_23)/2 and checks the constructed result, so it assumes or constructs invariance rather than proving the original active operator is invariant. Repair target: supply a retained theorem connecting the graph selector and residual action to pointwise invariance of the relevant active Hermitian law, then provide complete unclipped runner evidence testing that implication. Claim boundary until fixed: only the permutation restriction and the equivalence for an already-imposed invariant H are supported; the active-sector and PMNS-value exclusions are scope boundaries, not no-go assertions."
 }

@@ -1,0 +1,753 @@
+{
+  "audit": "unset",
+  "author_accepted": false,
+  "authority": "none",
+  "axiom_pressure": false,
+  "breakthrough": false,
+  "classification": "partial-attempt-with-named-untested-routes",
+  "covariance_controls": {
+    "Cycle666_inherited_full_schedule_all24_failures": 0,
+    "Cycle666_inherited_full_schedule_all24_tests": 72,
+    "Cycle669_inherited_append_all24_failures": 0,
+    "Cycle669_inherited_append_all24_tests": 1872,
+    "pass": true,
+    "preferred_direction_order_load_bearing": false,
+    "proper_cubic_frames": 24,
+    "route_A_all24_failures": 0,
+    "route_A_all24_tests": 1536,
+    "route_A_all576_failures": 0,
+    "route_A_all576_word_tests": 36864,
+    "route_B_all24_failures": 0,
+    "route_B_all24_tests": 72,
+    "route_B_all576_direction_tests": 3456,
+    "route_B_all576_failures": 0,
+    "route_B_full_sector_isometry_all24_failures": 0,
+    "route_B_full_sector_isometry_all24_tests": 4608,
+    "route_C_all24_failures": 0,
+    "route_C_all24_tests": 1536,
+    "route_C_all576_failures": 0,
+    "route_C_all576_word_tests": 36864,
+    "runtime_frame_selector": false
+  },
+  "cross_route_controls": {
+    "complete_exhaust": {
+      "A_wave_and_selector": true,
+      "B_wave_and_innovation": true,
+      "C_sector_and_chain": true
+    },
+    "inverse_or_isometry_checks_pass": true,
+    "pass": true,
+    "route_A_deletions_detected": 204,
+    "route_A_malformed_rejected": 4,
+    "route_B_collision_deletions_detected": 78,
+    "route_B_isometry_deletions_detected": 78,
+    "route_B_malformed_rejected": 4,
+    "route_C_malformed_rejected": 12,
+    "route_C_sector_exhaust_deletions_detected": 192,
+    "train_held_capacities_observed": {
+      "A": [
+        3,
+        4,
+        6
+      ],
+      "B": [
+        3,
+        4,
+        6
+      ],
+      "C": [
+        3,
+        4,
+        6
+      ]
+    },
+    "train_held_capacities_required": [
+      3,
+      4,
+      6
+    ]
+  },
+  "cycle": 671,
+  "date": "2026-07-23",
+  "elapsed_seconds": 1.3187190829776227,
+  "exact_A_661_disposition": "NOT_MET_NOT_FALSIFIED",
+  "exact_A_661_terminal_met": false,
+  "frozen_contract": {
+    "expected_preregistration_sha256": "ec5570a6507f09d97e5cc8d53c2d9e6a0724fbd6512d9cc2804fb8537b501533",
+    "expected_target_sha256": "0e13898cf9776af6b8a6a0eba0b6286e237362491161fa14a4f0cde34144fdad",
+    "first_evidence_line": 150,
+    "frozen_before_evidence": true,
+    "imported_contracts": {
+      "Cycle661_pass": true,
+      "Cycle666_pass": true,
+      "Cycle669_pass": true
+    },
+    "observed": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_ACTUAL_MEMBER_ADMITTED_HISTORY_LAW_TOURNAMENT_CYCLE508_NOTE_2026-07-20.md": "923f384e959c638d6940cd6ed2cf837a00fe34046249380782ddc21bdc307095",
+      "docs/work_history/repo/review_feedback/PHYSICAL_COHERENT_SEED_MEMBER_DILATION_CYCLE536_NOTE_2026-07-21.md": "e15944633127890fe27cb52193960a28d9860212d5d7aafd70f15eef2e987457",
+      "docs/work_history/repo/review_feedback/PHYSICAL_DETERMINISTIC_CONSTRAINED_QCA_FORMATION_LAW_TOURNAMENT_CYCLE661_NOTE_2026-07-23.md": "14262310b768983ebbdc8a89f914f237ab2a2523c8a096eece63b33a7e5e9ad4",
+      "docs/work_history/repo/review_feedback/PHYSICAL_DISSIPATIVE_METASTABLE_FORMATION_CHANNEL_CYCLE663_NOTE_2026-07-23.md": "96f59a3f79ce7c29f3c9ccdf93cae9503ea4cd0084821c11ba6e0545046bec87",
+      "docs/work_history/repo/review_feedback/PHYSICAL_OBJECTIVE_STOCHASTIC_OPEN_DILATION_CYCLE662_NOTE_2026-07-23.md": "bdc8dda304985a62c73fc6e7a03f11d61041dd8053a9321fb7171c9b22947a05",
+      "docs/work_history/repo/review_feedback/PHYSICAL_REGENERATIVE_BATH_TRAJECTORY_SEMIGROUP_EQUIVALENCE_TOURNAMENT_CYCLE666_NOTE_2026-07-23.md": "b71a9a2badf2cfc61bffaef9aa17a63fbc95b3ff89b68a237a644baac6a9aaa9",
+      "docs/work_history/repo/review_feedback/PHYSICAL_STATE_CARRIED_EVENT_CHAIN_SEQUENCE_PROTOCOL_CYCLE669_NOTE_2026-07-23.md": "4ba9fe3a26606a944f362e81d6262543936018c6adf497069d8800e616f0c2c5",
+      "outputs/physical_deterministic_constrained_qca_formation_law_tournament_cycle661_receipt_2026_07_23.json": "c0ac1effe618bbdcbfc4bd6a3360f3beb557aa2469d47be476deef862e1340c5",
+      "outputs/physical_regenerative_bath_trajectory_semigroup_equivalence_tournament_cycle666_receipt_2026_07_23.json": "37deeea3678391d185a7c3592650025732421b06a8f68677b77dc1b07a9a4b37",
+      "outputs/physical_state_carried_event_chain_sequence_protocol_cycle669_receipt_2026_07_23.json": "0765c66f3d3625892d133976aca217a5676fef0820557b12b32c988cb6180760",
+      "scripts/physical_deterministic_constrained_qca_formation_law_tournament_cycle661_2026_07_23.py": "83383268139e92bcd040fa176686f2e6c3d5eef806ba58ed5da9953a59af7590",
+      "scripts/physical_regenerative_bath_trajectory_semigroup_equivalence_tournament_cycle666_2026_07_23.py": "54c81da2ec078e7a386753ae404117ad9da0833460cb039c009db67104aecfb9",
+      "scripts/physical_state_carried_event_chain_sequence_protocol_cycle669_2026_07_23.py": "ac1237e211bf06a8eb394db0dd8001c88a5aaf81726b38a3e43bd066285a9c84"
+    },
+    "pass": true,
+    "pins": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_ACTUAL_MEMBER_ADMITTED_HISTORY_LAW_TOURNAMENT_CYCLE508_NOTE_2026-07-20.md": "923f384e959c638d6940cd6ed2cf837a00fe34046249380782ddc21bdc307095",
+      "docs/work_history/repo/review_feedback/PHYSICAL_COHERENT_SEED_MEMBER_DILATION_CYCLE536_NOTE_2026-07-21.md": "e15944633127890fe27cb52193960a28d9860212d5d7aafd70f15eef2e987457",
+      "docs/work_history/repo/review_feedback/PHYSICAL_DETERMINISTIC_CONSTRAINED_QCA_FORMATION_LAW_TOURNAMENT_CYCLE661_NOTE_2026-07-23.md": "14262310b768983ebbdc8a89f914f237ab2a2523c8a096eece63b33a7e5e9ad4",
+      "docs/work_history/repo/review_feedback/PHYSICAL_DISSIPATIVE_METASTABLE_FORMATION_CHANNEL_CYCLE663_NOTE_2026-07-23.md": "96f59a3f79ce7c29f3c9ccdf93cae9503ea4cd0084821c11ba6e0545046bec87",
+      "docs/work_history/repo/review_feedback/PHYSICAL_OBJECTIVE_STOCHASTIC_OPEN_DILATION_CYCLE662_NOTE_2026-07-23.md": "bdc8dda304985a62c73fc6e7a03f11d61041dd8053a9321fb7171c9b22947a05",
+      "docs/work_history/repo/review_feedback/PHYSICAL_REGENERATIVE_BATH_TRAJECTORY_SEMIGROUP_EQUIVALENCE_TOURNAMENT_CYCLE666_NOTE_2026-07-23.md": "b71a9a2badf2cfc61bffaef9aa17a63fbc95b3ff89b68a237a644baac6a9aaa9",
+      "docs/work_history/repo/review_feedback/PHYSICAL_STATE_CARRIED_EVENT_CHAIN_SEQUENCE_PROTOCOL_CYCLE669_NOTE_2026-07-23.md": "4ba9fe3a26606a944f362e81d6262543936018c6adf497069d8800e616f0c2c5",
+      "outputs/physical_deterministic_constrained_qca_formation_law_tournament_cycle661_receipt_2026_07_23.json": "c0ac1effe618bbdcbfc4bd6a3360f3beb557aa2469d47be476deef862e1340c5",
+      "outputs/physical_regenerative_bath_trajectory_semigroup_equivalence_tournament_cycle666_receipt_2026_07_23.json": "37deeea3678391d185a7c3592650025732421b06a8f68677b77dc1b07a9a4b37",
+      "outputs/physical_state_carried_event_chain_sequence_protocol_cycle669_receipt_2026_07_23.json": "0765c66f3d3625892d133976aca217a5676fef0820557b12b32c988cb6180760",
+      "scripts/physical_deterministic_constrained_qca_formation_law_tournament_cycle661_2026_07_23.py": "83383268139e92bcd040fa176686f2e6c3d5eef806ba58ed5da9953a59af7590",
+      "scripts/physical_regenerative_bath_trajectory_semigroup_equivalence_tournament_cycle666_2026_07_23.py": "54c81da2ec078e7a386753ae404117ad9da0833460cb039c009db67104aecfb9",
+      "scripts/physical_state_carried_event_chain_sequence_protocol_cycle669_2026_07_23.py": "ac1237e211bf06a8eb394db0dd8001c88a5aaf81726b38a3e43bd066285a9c84"
+    },
+    "preregistration": {
+      "controls": "inverse, deletion, malformed, lawful domain, held-size, exact shores, full exhaust",
+      "covariance": "all24 proper-cubic frames and all576 ordered products; selector/history words transform by six-bit permutation",
+      "fixtures": {
+        "biased_phase_product": {
+          "capacity": 4,
+          "split": "held_blinded"
+        },
+        "product_z0": {
+          "capacity": 3,
+          "split": "train"
+        },
+        "six_site_GHZ": {
+          "capacity": 6,
+          "split": "held_blinded_nonproduct"
+        }
+      },
+      "held_policy": "law and route layouts frozen before all three Cycle661 fixture distributions are evaluated",
+      "route_A": {
+        "law": "selected word of Hamming weight one emits its direction; every other selected word emits none",
+        "selector": "64-M2 one-hot actual-sector carrier",
+        "terminal_gate": "fails exact native-domain target if selector actuality or initial selector is supplied"
+      },
+      "route_B": {
+        "event_algebra": "none plus six directions after summing retained layer labels",
+        "survival": "r=1/2 over H=3/4/6 collision layers",
+        "terminal_gate": "a coherent isometry/reduced diagonal is not one ObjectiveEventToken without a branch-read law"
+      },
+      "route_C": {
+        "history": "retain the Cycle661 sector and attach its exact Cycle669 empty-or-one-node predecessor chain",
+        "terminal_gate": "sector-relative tokens do not become one global ObjectiveEventToken"
+      },
+      "route_order": [
+        "A_hidden_selector",
+        "B_reversible_collision",
+        "C_relational_history"
+      ]
+    },
+    "preregistration_line": 40,
+    "preregistration_sha256": "ec5570a6507f09d97e5cc8d53c2d9e6a0724fbd6512d9cc2804fb8537b501533",
+    "shore": "3aff134191d0ab6c4ba61609ef5e63197f9b0add",
+    "target": {
+      "claim_ceiling": "route-specific bounded dispositions and strongest partial construction only; no no-go or axiom pressure",
+      "completion_witness": [
+        "native domain and exact ObjectiveEventToken codomain",
+        "all 64 sectors and every accepted/rejected exhaust retained",
+        "no host selection, sampler, supplied draw, or hidden frame/schedule service",
+        "bounded M2, local support/depth, all24 and all576 covariance",
+        "exact Cycle661/Cycle666/Cycle669 interface comparisons",
+        "train, biased-held and nonproduct-held sizes 3/4/6"
+      ],
+      "cycle": 671,
+      "nonclosure": [
+        "an exact token on a domain extended by an ontic selector",
+        "a reduced diagonal or propensity table without one objective label",
+        "a coherent direct sum of branch-relative tokens",
+        "pointer copying, partial trace, or declaring a diagonal register classical"
+      ],
+      "routes": {
+        "A": "deterministic state-carried one-hot hidden selector already resident in the bounded local physical state",
+        "B": "explicit bounded reversible regenerative collision/dilation with full wave and innovation exhaust",
+        "C": "unitary relational-history isometry with sector-relative event tokens and Cycle669 predecessor chains"
+      },
+      "success": "one bounded local proper-cubic map defined on the native Cycle661 coherent domain alone, producing exactly one objective token without an input actuality selector, supplied random draw, host sampler, or branch-read law",
+      "target_map": "A_661_coherent_sector_to_objective_event: Cycle661 RetainedCoherentDirectSum[64 pointer sectors] -> ObjectiveEventToken[none | six directions] with retained coherent accepted/rejected exhaust"
+    },
+    "target_line": 6,
+    "target_sha256": "0e13898cf9776af6b8a6a0eba0b6286e237362491161fa14a4f0cde34144fdad",
+    "working_tree_bytes_used_as_evidence": false
+  },
+  "maximum_RSS_bytes": 93880320,
+  "no_go_discipline": {
+    "N1_qualifying_normalized_families": 5,
+    "N1_routes": [
+      {
+        "authority": {
+          "line": 269,
+          "path": "scripts/physical_coherent_sector_objective_event_actualizer_tournament_cycle671_2026_07_23.py",
+          "ref": "Cycle671 current"
+        },
+        "disposition": "conditional token succeeds; selector ontology and initial value are supplied",
+        "family": "ontic one-hot hidden selector",
+        "honesty": "ATTEMPTED",
+        "mechanism": "deterministic selector-controlled token",
+        "object": "extended classical-quantum state",
+        "terminal": "native-domain objective token"
+      },
+      {
+        "authority": {
+          "line": 373,
+          "path": "scripts/physical_coherent_sector_objective_event_actualizer_tournament_cycle671_2026_07_23.py",
+          "ref": "Cycle671 current"
+        },
+        "disposition": "reduced diagonal succeeds; one label is not generated",
+        "family": "reversible regenerative dilation",
+        "honesty": "ATTEMPTED",
+        "mechanism": "partial-swap environment labeling",
+        "object": "Stinespring history isometry",
+        "terminal": "one objective environment label"
+      },
+      {
+        "authority": {
+          "line": 461,
+          "path": "scripts/physical_coherent_sector_objective_event_actualizer_tournament_cycle671_2026_07_23.py",
+          "ref": "Cycle671 current"
+        },
+        "disposition": "relative histories succeed; global token type differs",
+        "family": "unitary relational event history",
+        "honesty": "ATTEMPTED",
+        "mechanism": "sector-relative token consistency",
+        "object": "coherent direct sum of predecessor chains",
+        "terminal": "one global objective token"
+      },
+      {
+        "authority": {
+          "line": 24,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_OBJECTIVE_STOCHASTIC_OPEN_DILATION_CYCLE662_NOTE_2026-07-23.md",
+          "ref": "3aff134191d0ab6c4ba61609ef5e63197f9b0add"
+        },
+        "disposition": "Cycle662 supplies rather than derives the stochastic ontology",
+        "family": "hybrid objective stochastic field",
+        "honesty": "RULED OUT BY PRIOR",
+        "mechanism": "law-owned sigma update",
+        "object": "quantum-classical Markov instrument",
+        "terminal": "derive sigma ontology from Cycle661 domain"
+      },
+      {
+        "authority": {
+          "line": 23,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_DISSIPATIVE_METASTABLE_FORMATION_CHANNEL_CYCLE663_NOTE_2026-07-23.md",
+          "ref": "3aff134191d0ab6c4ba61609ef5e63197f9b0add"
+        },
+        "disposition": "Cycle663 retains and does not select emission sectors",
+        "family": "metastable reduced semigroup",
+        "honesty": "RULED OUT BY PRIOR",
+        "mechanism": "environment-induced contraction",
+        "object": "contractive CP channel with dark latch",
+        "terminal": "select one retained emission sector"
+      },
+      {
+        "authority": {
+          "line": 142,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_DETERMINISTIC_CONSTRAINED_QCA_FORMATION_LAW_TOURNAMENT_CYCLE661_NOTE_2026-07-23.md",
+          "ref": "3aff134191d0ab6c4ba61609ef5e63197f9b0add"
+        },
+        "disposition": "not constructed in this finite tournament",
+        "family": "local spontaneous symmetry-breaking actualizer",
+        "honesty": "OPEN_NOT_COUNTED",
+        "mechanism": "stable sector ownership after a covariant instability",
+        "object": "enlarged local order-parameter field",
+        "terminal": "unique local ontic token with exhaust"
+      }
+    ],
+    "N2_collapsed_walls": [
+      "domain_only_objective_actuality"
+    ],
+    "N2_directed_pairs": [],
+    "N2_downstream_nonterminal_open_conditions": [
+      "nature_law_selection",
+      "finite_non_erasing_renewal"
+    ],
+    "N2_route_specific_type_gaps_are_alternatives_not_inflated_conjunctive_walls": true,
+    "N3_route_function_hidden_phrase_hits": [],
+    "N4_residual_matches": [
+      {
+        "current_residual": "same exact map tested",
+        "match": true,
+        "prior_residual": "exact native-domain objective-event map absent",
+        "witness": {
+          "line": 106,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_STATE_CARRIED_EVENT_CHAIN_SEQUENCE_PROTOCOL_CYCLE669_NOTE_2026-07-23.md",
+          "ref": "3aff134191d0ab6c4ba61609ef5e63197f9b0add"
+        }
+      },
+      {
+        "current_residual": "route A selector ontology supplied",
+        "match": true,
+        "prior_residual": "hidden carrier actuality is explicit added ontology",
+        "witness": {
+          "line": 89,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_ACTUAL_MEMBER_ADMITTED_HISTORY_LAW_TOURNAMENT_CYCLE508_NOTE_2026-07-20.md",
+          "ref": "3aff134191d0ab6c4ba61609ef5e63197f9b0add"
+        }
+      },
+      {
+        "current_residual": "route B diagonal lacks one objective token",
+        "match": true,
+        "prior_residual": "reduced diagonal lacks one realized member",
+        "witness": {
+          "line": 96,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_COHERENT_SEED_MEMBER_DILATION_CYCLE536_NOTE_2026-07-21.md",
+          "ref": "3aff134191d0ab6c4ba61609ef5e63197f9b0add"
+        }
+      },
+      {
+        "current_residual": "route B refuses silent sigma promotion",
+        "match": true,
+        "prior_residual": "hybrid ontology supplied",
+        "witness": {
+          "line": 97,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_REGENERATIVE_BATH_TRAJECTORY_SEMIGROUP_EQUIVALENCE_TOURNAMENT_CYCLE666_NOTE_2026-07-23.md",
+          "ref": "3aff134191d0ab6c4ba61609ef5e63197f9b0add"
+        }
+      },
+      {
+        "current_residual": "route C sectors remain relative",
+        "match": true,
+        "prior_residual": "retained emission sectors are not selected",
+        "witness": {
+          "line": 23,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_DISSIPATIVE_METASTABLE_FORMATION_CHANNEL_CYCLE663_NOTE_2026-07-23.md",
+          "ref": "3aff134191d0ab6c4ba61609ef5e63197f9b0add"
+        }
+      }
+    ],
+    "N5_rhetoric": [
+      {
+        "claim": "route A misses the native domain",
+        "lattice_wide": "not tested; no broad claim",
+        "per_block": "three fixtures",
+        "per_element": "192 selector rows tested",
+        "per_mode": "64 selector rails",
+        "per_site": "155-M2 block tested"
+      },
+      {
+        "claim": "route B reduced diagonal is not one token",
+        "lattice_wide": "not tested; no broad claim",
+        "per_block": "C3/C4/C6",
+        "per_element": "all 81 history labels by sizes",
+        "per_mode": "none plus six collapsed labels",
+        "per_site": "bounded retained dilation"
+      },
+      {
+        "claim": "route C relational event is not a global objective token",
+        "lattice_wide": "not tested; no broad claim",
+        "per_block": "three fixture capacities",
+        "per_element": "192 basis histories",
+        "per_mode": "64 sectors",
+        "per_site": "one finite predecessor cell"
+      }
+    ],
+    "N6_partial_closure_paths": [
+      {
+        "closes": "objective token conditional on explicit selector ontology",
+        "path": "Cycle508 hidden carrier",
+        "status": "EXECUTED_PRIOR"
+      },
+      {
+        "closes": "objective sigma conditional on supplied stochastic law",
+        "path": "Cycle662 hybrid law",
+        "status": "EXECUTED_PRIOR"
+      },
+      {
+        "closes": "reversible local dilation and exact reduced event algebra",
+        "path": "Cycle671 route B",
+        "status": "EXECUTED_PARTIAL"
+      },
+      {
+        "closes": "sector-relative predecessor histories",
+        "path": "Cycle671 route C",
+        "status": "EXECUTED_PARTIAL"
+      },
+      {
+        "closes": "candidate domain-only objective ownership if constructed",
+        "path": "spontaneous local actualizer",
+        "status": "OPEN"
+      }
+    ],
+    "N6_primitive_registry_claim_made": false,
+    "N7_steelman": "A hostile reviewer should enlarge the local cell by a covariant metastable order-parameter field, prove that a finite-energy instability creates exactly one stable central event value while the outgoing unitary channels retain every Cycle661 sector, and then feed that value into Cycle669. The terminal obligation is an explicit local update whose invariant code space has one ontic central label without an input selector or stochastic postulate. This mechanism is mathematically actionable and was not constructed here, so any broad impossibility claim would be premature.",
+    "N7_supporting_authority": {
+      "line": 142,
+      "path": "docs/work_history/repo/review_feedback/PHYSICAL_DETERMINISTIC_CONSTRAINED_QCA_FORMATION_LAW_TOURNAMENT_CYCLE661_NOTE_2026-07-23.md",
+      "ref": "3aff134191d0ab6c4ba61609ef5e63197f9b0add"
+    },
+    "N8_cross_cycle_echo": [
+      {
+        "cycle": 508,
+        "mechanism": "explicit hidden actuality carrier",
+        "remaining": "ontology supplied",
+        "retired": "conditional member production"
+      },
+      {
+        "cycle": 536,
+        "mechanism": "coherent seed dilation",
+        "remaining": "one realized member",
+        "retired": "reduced diagonal"
+      },
+      {
+        "cycle": 662,
+        "mechanism": "hybrid stochastic sigma",
+        "remaining": "law ontology supplied",
+        "retired": "objective-within-law token"
+      },
+      {
+        "cycle": 663,
+        "mechanism": "dissipative collision",
+        "remaining": "emission-sector selection",
+        "retired": "reduced contraction"
+      },
+      {
+        "cycle": 669,
+        "mechanism": "state-carried predecessor chain",
+        "remaining": "A_661 exact map",
+        "retired": "sequence-label ambiguity"
+      }
+    ],
+    "axiom_pressure": false,
+    "broad_no_go_claim": false,
+    "checklist_complete": true,
+    "demotion": "partial-attempt-with-named-untested-routes",
+    "discipline_compliance_pass": true,
+    "minimum_content_claim": false,
+    "negative_claim_gate_status": "FAIL_DO_NOT_SHIP_NEGATIVE",
+    "negative_gate_failure_reason": "N7 supplies a concrete unclosed local spontaneous-actualizer mechanism",
+    "shared_route_independent_obstruction": false,
+    "skill_freshness": {
+      "origin_main_checked": true,
+      "remote_skill_followed": true,
+      "remote_skill_newer_than_installed": true,
+      "worktree_moved": false
+    }
+  },
+  "note_contract": {
+    "missing": [],
+    "pass": true,
+    "required": [
+      "authority: **none**",
+      "audit: **unset**",
+      "fresh no-go-discipline gate before disposition",
+      "not a no-go",
+      "shared route-independent obstruction: **not established**",
+      "axiom pressure: **none**",
+      "not met, not falsified",
+      "not called physical time or rates",
+      "not called framework records",
+      "not called born probabilities or empirical frequencies"
+    ]
+  },
+  "note_sha256": "0d1e1f3be89f089d72e679881d5f4620f219411342d805183977be7f2b16d56e",
+  "optimal_next_campaign": "construct a covariant metastable order-parameter actualizer proving one central ontic label plus retained outgoing exhaust",
+  "pass": true,
+  "route_disposition": {
+    "A": "positive conditional actualizer on an extended domain; exact native-domain map remains open",
+    "B": "positive reversible dilation and exact reduced law; objective single-label promotion absent",
+    "C": "positive relational-history isometry; codomain remains a coherent direct sum rather than one objective token"
+  },
+  "routes": {
+    "A": {
+      "Cycle661_exact_basis_interface_failures": 0,
+      "Cycle669_interface_failures": 0,
+      "all_wave_sectors_retained": true,
+      "depth_upper_bound": 12,
+      "disposition": "positive conditional actualizer on an extended domain; exact native-domain map remains open",
+      "exact_A_661_terminal_met": false,
+      "extended_domain_event_token_match": true,
+      "gate_deletions_visible": 12,
+      "host_sampler_calls": 0,
+      "host_sampling_source_hits": [],
+      "initial_selector_configuration_supplied": true,
+      "input_actuality_selector_M2": 64,
+      "inverse_failures": 0,
+      "local_M2": {
+        "Cycle661_block": 84,
+        "event_output": 7,
+        "selector": 64,
+        "total": 155
+      },
+      "logical_gate_counts": {
+        "CNOT": 12
+      },
+      "malformed_rejected": 4,
+      "maximum_support_M2": 2,
+      "mechanism": "twelve fixed CNOTs from six admitted selector rails into actual/direction output rails",
+      "native_Cycle661_domain_match": false,
+      "one_objective_token_within_supplied_selector_ontology": true,
+      "pass": true,
+      "primary_object": "CoherentDirectSum x OnticSelector64",
+      "route": "A_hidden_selector",
+      "rows": {
+        "biased_phase_product": {
+          "all_selector_values_in_fixture_support": true,
+          "capacity": 4,
+          "minimum_sector_weight": 8.297895617877119e-05,
+          "physical_reference_failures": 0,
+          "selector_rows": 64,
+          "split": "held_blinded"
+        },
+        "product_z0": {
+          "all_selector_values_in_fixture_support": true,
+          "capacity": 3,
+          "minimum_sector_weight": 0.00024414062500000065,
+          "physical_reference_failures": 0,
+          "selector_rows": 64,
+          "split": "train"
+        },
+        "six_site_GHZ": {
+          "all_selector_values_in_fixture_support": true,
+          "capacity": 6,
+          "minimum_sector_weight": 0.006364177894139153,
+          "physical_reference_failures": 0,
+          "selector_rows": 64,
+          "split": "held_blinded_nonproduct"
+        }
+      },
+      "selector_rail_deletions_detected": 192,
+      "supplied_random_draw": false,
+      "terminal_obligation": "A_661_coherent_sector_to_objective_event: Cycle661 RetainedCoherentDirectSum[64 pointer sectors] -> ObjectiveEventToken[none | six directions] with retained coherent accepted/rejected exhaust"
+    },
+    "B": {
+      "Cycle669_formal_branch_interface_failures": 0,
+      "branch_read_law_supplied": false,
+      "collision_deletion_failures": 0,
+      "disposition": "positive reversible dilation and exact reduced law; objective single-label promotion absent",
+      "exact_A_661_terminal_met": false,
+      "full_wave_and_innovation_exhaust_retained": true,
+      "host_sampler_calls": 0,
+      "host_sampling_source_hits": [],
+      "isometry_deletion_failures": 0,
+      "malformed_distributions_rejected": 4,
+      "maximum_Cycle661_full_sector_isometry_residual": 2.220446049250313e-16,
+      "maximum_unitarity_residual": 6.718292782623543e-16,
+      "mechanism": "Cycle666 r=1/2 regenerative partial swaps with every wave/layer/direction exhaust retained",
+      "native_Cycle661_domain_match": true,
+      "one_objective_token_generated_by_reversible_dilation": false,
+      "output_type": "ReducedDiagonalEventLaw[none|six] plus CoherentInnovationDirectSum[layer,direction]",
+      "pass": true,
+      "primary_object": "StinespringHistoryIsometry and ReducedDiagonalEventAlgebra",
+      "route": "B_reversible_collision",
+      "rows": {
+        "biased_phase_product": {
+          "Cycle661_full_sector_history_isometry_residual": 0.0,
+          "Cycle666_finite_event_weight": 0.0018737455061144962,
+          "Cycle669_formal_branch_interface_failures": 0,
+          "collapsed_none_plus_six_weights": [
+            0.9981262544938855,
+            0.00036647403085496527,
+            0.0004268075692019808,
+            0.00042122441084024273,
+            0.000318601200967887,
+            0.00020674241926314394,
+            0.0001338958749862767
+          ],
+          "deleted_collision_pairs_visible": 24,
+          "deleted_isometry_pairs_detected": 24,
+          "finite_event_weight": 0.0018737455061144965,
+          "finite_weight_residual": 2.168404344971009e-19,
+          "history_labels": 25,
+          "history_unitarity_residual": 6.030677221278531e-16,
+          "horizon": 4,
+          "inherited_ordered_depth_upper_bound": 33,
+          "local_M2_upper_bound": 556,
+          "maximum_support_M2": 2,
+          "normalization_residual": 0.0,
+          "reduced_event_algebra_rank": 7,
+          "single_objective_basis_token_rank_required": 1,
+          "split": "held_blinded"
+        },
+        "product_z0": {
+          "Cycle661_full_sector_history_isometry_residual": 2.220446049250313e-16,
+          "Cycle666_finite_event_weight": 0.003845214843750008,
+          "Cycle669_formal_branch_interface_failures": 0,
+          "collapsed_none_plus_six_weights": [
+            0.99615478515625,
+            0.0006408691406250013,
+            0.0006408691406250013,
+            0.0006408691406250013,
+            0.0006408691406250013,
+            0.0006408691406250013,
+            0.0006408691406250013
+          ],
+          "deleted_collision_pairs_visible": 18,
+          "deleted_isometry_pairs_detected": 18,
+          "finite_event_weight": 0.003845214843750008,
+          "finite_weight_residual": 0.0,
+          "history_labels": 19,
+          "history_unitarity_residual": 4.827926850712054e-16,
+          "horizon": 3,
+          "inherited_ordered_depth_upper_bound": 27,
+          "local_M2_upper_bound": 402,
+          "maximum_support_M2": 2,
+          "normalization_residual": 0.0,
+          "reduced_event_algebra_rank": 7,
+          "single_objective_basis_token_rank_required": 1,
+          "split": "train"
+        },
+        "six_site_GHZ": {
+          "Cycle661_full_sector_history_isometry_residual": 0.0,
+          "Cycle666_finite_event_weight": 0.17601616006225923,
+          "Cycle669_formal_branch_interface_failures": 0,
+          "collapsed_none_plus_six_weights": [
+            0.8239838399377408,
+            0.0293360266770432,
+            0.0293360266770432,
+            0.029336026677043204,
+            0.029336026677043204,
+            0.029336026677043204,
+            0.029336026677043204
+          ],
+          "deleted_collision_pairs_visible": 36,
+          "deleted_isometry_pairs_detected": 36,
+          "finite_event_weight": 0.17601616006225923,
+          "finite_weight_residual": 0.0,
+          "history_labels": 37,
+          "history_unitarity_residual": 6.718292782623543e-16,
+          "horizon": 6,
+          "inherited_ordered_depth_upper_bound": 45,
+          "local_M2_upper_bound": 936,
+          "maximum_support_M2": 2,
+          "normalization_residual": 0.0,
+          "reduced_event_algebra_rank": 7,
+          "single_objective_basis_token_rank_required": 1,
+          "split": "held_blinded_nonproduct"
+        }
+      },
+      "structural_none_plus_six_event_algebra_match": true,
+      "supplied_random_draw": false,
+      "terminal_obligation": "A_661_coherent_sector_to_objective_event: Cycle661 RetainedCoherentDirectSum[64 pointer sectors] -> ObjectiveEventToken[none | six directions] with retained coherent accepted/rejected exhaust"
+    },
+    "C": {
+      "all_64_coherent_sectors_retained": true,
+      "branch_relative_event_tokens_exact": true,
+      "disposition": "positive relational-history isometry; codomain remains a coherent direct sum rather than one objective token",
+      "exact_A_661_terminal_met": false,
+      "host_sampler_calls": 0,
+      "host_sampling_source_hits": [],
+      "inverse_failures": 0,
+      "malformed_event_rejections": 12,
+      "mechanism": "branchwise Cycle661 basis event attaches the exact Cycle669 predecessor node while its sector label remains",
+      "native_Cycle661_domain_match": true,
+      "one_global_objective_token": false,
+      "output_type": "CoherentDirectSum[RelativeEventToken x ChainState]",
+      "pass": true,
+      "primary_object": "pure sector-retaining event-chain history isometry",
+      "route": "C_relational_history",
+      "rows": {
+        "biased_phase_product": {
+          "Cycle669_common_overlay_M2": 105,
+          "Cycle669_disjoint_M2_upper_bound": 3357,
+          "accepted_relative_events": 6,
+          "basis_history_rows": 64,
+          "capacity": 4,
+          "reduced_none_plus_six_weights": [
+            0.9980013381268109,
+            0.00039090563291196295,
+            0.0004552614071487795,
+            0.00044930603822959225,
+            0.0003398412810324128,
+            0.0002205252472140202,
+            0.00014282226665202847
+          ],
+          "rejected_empty_histories": 58,
+          "relational_history_type": "CoherentDirectSum[Sector64 x RelativeEventToken x Cycle669ChainState]",
+          "retained_sector_history_Gram_residual": 0.0,
+          "split": "held_blinded"
+        },
+        "product_z0": {
+          "Cycle669_common_overlay_M2": 74,
+          "Cycle669_disjoint_M2_upper_bound": 2513,
+          "accepted_relative_events": 6,
+          "basis_history_rows": 64,
+          "capacity": 3,
+          "reduced_none_plus_six_weights": [
+            0.99560546875,
+            0.0007324218750000015,
+            0.0007324218750000015,
+            0.0007324218750000015,
+            0.0007324218750000015,
+            0.0007324218750000015,
+            0.0007324218750000015
+          ],
+          "rejected_empty_histories": 58,
+          "relational_history_type": "CoherentDirectSum[Sector64 x RelativeEventToken x Cycle669ChainState]",
+          "retained_sector_history_Gram_residual": 0.0,
+          "split": "train"
+        },
+        "six_site_GHZ": {
+          "Cycle669_common_overlay_M2": 179,
+          "Cycle669_disjoint_M2_upper_bound": 5057,
+          "accepted_relative_events": 6,
+          "basis_history_rows": 64,
+          "capacity": 6,
+          "reduced_none_plus_six_weights": [
+            0.8211899326351648,
+            0.029801677894139122,
+            0.029801677894139122,
+            0.02980167789413913,
+            0.02980167789413913,
+            0.02980167789413913,
+            0.02980167789413913
+          ],
+          "rejected_empty_histories": 58,
+          "relational_history_type": "CoherentDirectSum[Sector64 x RelativeEventToken x Cycle669ChainState]",
+          "retained_sector_history_Gram_residual": 0.0,
+          "split": "held_blinded_nonproduct"
+        }
+      },
+      "sector_exhaust_deletions_detected": 192,
+      "supplied_random_draw": false,
+      "terminal_obligation": "A_661_coherent_sector_to_objective_event: Cycle661 RetainedCoherentDirectSum[64 pointer sectors] -> ObjectiveEventToken[none | six directions] with retained coherent accepted/rejected exhaust"
+    }
+  },
+  "runner_sha256": "6bb5935e6ec3c6d4c0b8d34272c855ac9ca1a675f3c5951e09144d3d28c32f25",
+  "shared_route_independent_obstruction": false,
+  "status": "three constructive actualizer routes; conditional selector and coherent partials; exact native-domain map open",
+  "strict_full_framework_terminal_met": false,
+  "strongest_constructive_result": "exact 12-CNOT local ObjectiveEventToken compiler on Cycle661 x supplied OnticSelector64, retaining all wave sectors and attaching to Cycle669",
+  "supplied_structure_inventory": {
+    "derived": [
+      "Route A 12-CNOT conditional token compiler",
+      "Route B exact reversible history isometry and reduced none-plus-six law",
+      "Route C sector-relative Cycle669 histories",
+      "all24/all576 covariance",
+      "inverse/deletion/malformed/held-size controls"
+    ],
+    "open": [
+      "native-domain one-objective-token law",
+      "derivation or empirical selection of an actuality law",
+      "autonomous selector/order-parameter genesis",
+      "non-erasing indefinite renewal",
+      "framework Record",
+      "Born or empirical-frequency law",
+      "physical time or rate",
+      "source/gravity"
+    ],
+    "supplied": [
+      "Cycle661 coherent pointer direct sum and 84-M2 basis QCA",
+      "Cycle666 collision angle and blank finite exhaust",
+      "Cycle669 root/next/head chain seeds and preprovisioned Cycle665 payloads",
+      "proper-cubic chart",
+      "Route A ontic selector ontology and initial value",
+      "finite train/held preparations"
+    ]
+  },
+  "target_contract_candidate_terminal_met": false,
+  "tests_failed": 0,
+  "tests_passed": 8
+}

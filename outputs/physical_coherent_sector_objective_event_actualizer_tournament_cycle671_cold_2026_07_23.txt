@@ -1,0 +1,35 @@
+PASS Cycle671 target, three routes, held controls and exact shores were frozen before evidence :: {'target': '0e13898cf9776af6b8a6a0eba0b6286e237362491161fa14a4f0cde34144fdad', 'prereg': 'ec5570a6507f09d97e5cc8d53c2d9e6a0724fbd6512d9cc2804fb8537b501533', 'pins': 13}
+PASS fresh N1-N8 is complete and correctly blocks a broad negative claim :: {'families': 5, 'negative_gate': 'FAIL_DO_NOT_SHIP_NEGATIVE'}
+PASS route A compiles an exact token only on the explicit ontic-selector extension :: {'rows': 192, 'deletions': 204, 'terminal': False}
+PASS route B derives the exact finite reduced event law but no single objective label :: {'max_unitarity': 6.718292782623543e-16, 'interface_failures': 0, 'terminal': False}
+PASS route C gives exact sector-relative Cycle669 histories while retaining all coherent sectors :: {'basis_rows': 192, 'deletions': 192, 'terminal': False}
+PASS all three actualizer routes pass all24 and all576 covariance controls :: {'all24': [1536, 72, 4608, 1536], 'all576': [36864, 3456, 36864]}
+PASS inverse/deletion/malformed/lawful-domain/held-size/full-exhaust controls pass :: {'capacities': {'A': [3, 4, 6], 'B': [3, 4, 6], 'C': [3, 4, 6]}, 'deletions': [204, 78, 78, 192]}
+PASS Cycle671 note preserves actuality/Record/Born/time/no-go boundaries :: ()
+{
+  "pass": true,
+  "tests_passed": 8,
+  "tests_failed": 0,
+  "elapsed_seconds": 1.349911291967146,
+  "maximum_RSS_bytes": 93765632,
+  "note": "/private/tmp/toe-science.BB0KQV/docs/work_history/repo/review_feedback/PHYSICAL_COHERENT_SECTOR_OBJECTIVE_EVENT_ACTUALIZER_TOURNAMENT_CYCLE671_NOTE_2026-07-23.md",
+  "receipt": "/private/tmp/toe-science.BB0KQV/outputs/physical_coherent_sector_objective_event_actualizer_tournament_cycle671_receipt_2026_07_23.json"
+}
+        1.99 real         1.69 user         0.20 sys
+            94060544  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               75445  page reclaims
+                 762  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 670  voluntary context switches
+                 563  involuntary context switches
+         25838307600  instructions retired
+          6036823777  cycles elapsed
+            75465208  peak memory footprint

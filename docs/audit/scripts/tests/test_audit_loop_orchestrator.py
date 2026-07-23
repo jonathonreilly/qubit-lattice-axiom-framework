@@ -274,6 +274,43 @@ class GeneratedProvenanceRecoveryTest(unittest.TestCase):
         self.assertEqual(self.path.read_bytes(), before)
         self.assertEqual(outside.read_bytes(), before)
 
+    @unittest.skipUnless(sys.platform == "darwin", "macOS ACL semantics")
+    def test_clean_main_refuses_acl_denied_write_without_mutation(self):
+        self._refresh()
+        before = self.path.read_bytes()
+        subprocess.run(
+            ["chmod", "+a", "everyone deny write", str(self.path)],
+            check=True,
+        )
+        try:
+            error = self._clean_main_error()
+        finally:
+            subprocess.run(
+                ["chmod", "-a#", "0", str(self.path)],
+                check=True,
+            )
+
+        self.assertEqual(error, "working tree is not clean")
+        self.assertEqual(self.path.read_bytes(), before)
+        self.assertEqual(stat.S_IMODE(self.path.stat().st_mode), 0o644)
+
+    @unittest.skipUnless(
+        hasattr(os, "chflags") and hasattr(stat, "UF_IMMUTABLE"),
+        "immutable file flags unavailable",
+    )
+    def test_clean_main_refuses_immutable_flag_without_mutation(self):
+        self._refresh()
+        before = self.path.read_bytes()
+        os.chflags(self.path, stat.UF_IMMUTABLE)
+        try:
+            error = self._clean_main_error()
+        finally:
+            os.chflags(self.path, 0)
+
+        self.assertEqual(error, "working tree is not clean")
+        self.assertEqual(self.path.read_bytes(), before)
+        self.assertEqual(stat.S_IMODE(self.path.stat().st_mode), 0o644)
+
     def test_clean_main_refuses_payload_drift(self):
         refreshed = dict(
             self.payload,

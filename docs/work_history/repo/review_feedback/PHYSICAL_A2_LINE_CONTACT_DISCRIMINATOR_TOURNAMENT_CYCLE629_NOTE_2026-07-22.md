@@ -72,22 +72,24 @@ Birman-Schwinger equation itself.
   confirmatory physics: the frozen prediction used the wrong dressing frame,
   and the discrepancy measures the cavity shift.
 
-## Vernier-clock scoping (scoping only; the build is a separate owner decision)
+## Two-line clock scoping (no clock upgrade is claimed)
+
+The 2026-07-23 PR-5523 roll-up corrected only the inference below.  The
+frozen runner, receipt, discriminator verdict, two expected-red rows, and
+spectral numbers are unchanged.
 
 With two contact-generated A2 lines in one local word:
 
-- **Alias ceiling:** a single line identifies a rate only modulo the
-  principal window (the Cycle-610 pi ceiling, |R| <= pi/|theta_b| = 1.0556,
-  which made the 5:4 advance word rate-unreachable).  A uniform modulation
-  alpha shifts BOTH lines equally, while their wrapped positions fold at
-  different alpha values; the pair (wrap(theta_b + alpha),
-  wrap(theta_2 + alpha)) is injective in alpha over the full 2*pi window
-  provided wrap(theta_b - theta_2) is irrational-incommensurate with pi on
-  the resolution used — so a two-line readout reconstructs the true alpha
-  beyond either line's fold, and the advance sector (|R| = 1.25) becomes
-  reachable in the reconstructed rate.  The beat phase
-  wrap(theta_2 - theta_b) = -3.0076 is alpha-invariant: an internal ruler
-  and a species fingerprint.
+- **Alias ceiling remains open:** under the uniform modulation tested here,
+  both lines shift by the same alpha.  Their wrapped pair is therefore
+  algebraically redundant:
+  `phi_2 = wrap(phi_b + wrap(theta_2-theta_b))`.  The second line alone does
+  **not** lift Cycle 610's single-line pi ceiling and does not make the `5:4`
+  ADVANCE sector rate-reachable.  The invariant beat
+  `wrap(theta_2-theta_b) = -3.0076` is still an internal ruler and possible
+  species fingerprint.  A genuine vernier construction would additionally
+  require unequal derived response coefficients, a continuity/winding
+  channel, or an independently realized count-edit channel.
 - **Preparation:** a two-level internal structure admits Raman-like
   candidates (drive the primary-secondary transition with the modulated
   contact instead of filtering) — a route class entirely distinct from the
@@ -95,8 +97,9 @@ With two contact-generated A2 lines in one local word:
   contract if the owner opens the build.
 - **Prerequisites before any build:** held-size and held-species existence
   of theta_2; its width/isolation; a two-line lock certificate (the
-  Cycle-610 certificates assume a single dominant line and must be extended
-  to a two-line lawful domain before a vernier word can be certified).
+  Cycle-610 certificates assume a single dominant line); and a derived
+  unequal-sensitivity, winding, or count-edit mechanism.  Without the last
+  item this remains two-line spectroscopy, not a vernier clock.
 
 ## Supplied / derived / open
 
@@ -106,8 +109,9 @@ Derived: the R1 verdict under frozen criteria; the second A2-channel BS root
 at +0.29998; the dust-lock identification; the g = 0 cavity spectrum point
 (-3.0663); the dressing spread; both FAIL diagnoses.  Open: held-size and
 held-species existence of theta_2; width/isolation and the infinite-volume
-lemma; the two-line lawful-domain extension of the certificates; the vernier
-build (owner decision); everything inherited.
+lemma; the two-line lawful-domain extension of the certificates; any
+unequal-sensitivity, winding, or count-edit mechanism needed for a clock
+upgrade; everything inherited.
 
 ## N1-N8 (abbreviated) and firewall
 
@@ -134,5 +138,6 @@ W5 pins:   masked_eigen.json eda675d3d4e9...  masked_eigen.py cc1563ce6ef2...
 
 Held verification of theta_2 (L13 and beta = -0.35 BS scans plus ball
 spectra), a width/isolation bound, and the two-line lawful-domain extension
-of the Cycle-610 certificates — the three prerequisites the vernier build
-decision needs.
+of the Cycle-610 certificates.  Only after those pass should a separate
+campaign test whether an unequal response coefficient, winding channel, or
+count-edit mechanism supplies genuinely independent alias information.

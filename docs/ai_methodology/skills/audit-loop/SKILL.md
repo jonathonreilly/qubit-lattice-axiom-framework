@@ -268,11 +268,13 @@ least every 15 minutes — never silence for a long run.
   changes `HEAD` and guarantees fresh dirt at the next regeneration.
 - Treat mechanically verified provenance-only drift on an explicitly
   allowlisted generated surface as recoverable coordination state, not as a
-  terminal campaign failure. Normalize it at the clean sync boundary and
-  continue the same supervisor.
-- Subtract only the exact verified provenance patch; never restore the whole
-  generated file. If overlapping or non-provenance content appears before the
-  patch applies, preserve it, fail the clean check, and stop that transaction.
+  terminal campaign failure. Carry that exact state through the clean sync
+  boundary unchanged and continue the same supervisor; the next normal
+  pipeline/commit removes the obsolete provenance field.
+- The clean guard must only classify this state; it must not patch, restore,
+  rewrite, chmod, replace, or otherwise mutate the generated file. If
+  overlapping or non-provenance content appears, preserve it, fail the clean
+  check, and stop that transaction.
 - Keep that recovery fail-closed. It must reject staged changes, source or
   ledger content, verdict-bearing changes, untracked files, deletions, and
   any payload delta beyond the exact allowlisted provenance field. Preserve

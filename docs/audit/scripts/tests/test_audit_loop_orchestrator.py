@@ -93,34 +93,110 @@ class GeneratedProvenanceRecoveryTest(unittest.TestCase):
 
     def test_clean_main_recovers_current_head_only_refresh(self):
         self._refresh()
+        before = self.path.read_bytes()
         error = self._clean_main_error()
 
         self.assertIsNone(error)
-        self.assertEqual(json.loads(self.path.read_text()), self.payload)
-        self.assertEqual(self._git("status", "--porcelain"), "")
+        self.assertEqual(self.path.read_bytes(), before)
+        self.assertEqual(
+            self._git("status", "--porcelain"),
+            f"M {batch.LANE_CERTIFICATION_PATH}",
+        )
+
+    def test_clean_main_recognizes_refresh_from_ancestor_head(self):
+        self._refresh()
+        before = self.path.read_bytes()
+        self.source.write_text("later source commit\n", encoding="utf-8")
+        self._git("add", str(self.source.relative_to(self.root)))
+        self._git("commit", "-q", "-m", "move head")
+
+        error = self._clean_main_error()
+
+        self.assertIsNone(error)
+        self.assertEqual(self.path.read_bytes(), before)
+        self.assertEqual(
+            self._git("status", "--porcelain"),
+            f"M {batch.LANE_CERTIFICATION_PATH}",
+        )
+
+    def test_sync_origin_main_fast_forwards_with_recognized_drift(self):
+        with tempfile.TemporaryDirectory() as transport:
+            transport_root = Path(transport)
+            remote = transport_root / "remote.git"
+            other = transport_root / "other"
+            subprocess.run(
+                ["git", "init", "-q", "--bare", "-b", "main", str(remote)],
+                check=True,
+            )
+            self._git("remote", "add", "origin", str(remote))
+            self._git("push", "-q", "-u", "origin", "main")
+            self._refresh()
+            before = self.path.read_bytes()
+            subprocess.run(
+                ["git", "clone", "-q", str(remote), str(other)],
+                check=True,
+            )
+            subprocess.run(
+                ["git", "config", "user.email", "peer@example.invalid"],
+                cwd=other,
+                check=True,
+            )
+            subprocess.run(
+                ["git", "config", "user.name", "Peer"],
+                cwd=other,
+                check=True,
+            )
+            peer_source = other / "docs" / "SOURCE.md"
+            peer_source.write_text("remote advance\n", encoding="utf-8")
+            subprocess.run(
+                ["git", "add", "docs/SOURCE.md"],
+                cwd=other,
+                check=True,
+            )
+            subprocess.run(
+                ["git", "commit", "-q", "-m", "advance remote"],
+                cwd=other,
+                check=True,
+            )
+            subprocess.run(
+                ["git", "push", "-q", "origin", "main"],
+                cwd=other,
+                check=True,
+            )
+
+            with mock.patch.object(batch, "REPO_ROOT", self.root):
+                synced, detail = batch.sync_origin_main()
+                clean_error = batch.clean_main_error()
+
+            self.assertTrue(synced, detail)
+            self.assertIsNone(clean_error)
+            self.assertEqual(self.path.read_bytes(), before)
+            self.assertEqual(self._git("rev-parse", "HEAD"), detail)
 
     def test_clean_main_recovers_obsolete_field_removal(self):
         refreshed = dict(self.payload)
         refreshed.pop("repo_head")
         self._write(refreshed)
+        before = self.path.read_bytes()
         error = self._clean_main_error()
 
         self.assertIsNone(error)
-        self.assertEqual(json.loads(self.path.read_text()), self.payload)
-        self.assertEqual(self._git("status", "--porcelain"), "")
+        self.assertEqual(self.path.read_bytes(), before)
+        self.assertEqual(
+            self._git("status", "--porcelain"),
+            f"M {batch.LANE_CERTIFICATION_PATH}",
+        )
 
     def test_clean_main_recovers_without_autocrlf_conversion(self):
         self._git("config", "core.autocrlf", "true")
         self._refresh()
+        before = self.path.read_bytes()
         before_mode = stat.S_IMODE(self.path.stat().st_mode)
 
         error = self._clean_main_error()
 
         self.assertIsNone(error)
-        self.assertEqual(
-            self.path.read_bytes(),
-            self._git_bytes("show", f"HEAD:{batch.LANE_CERTIFICATION_PATH}"),
-        )
+        self.assertEqual(self.path.read_bytes(), before)
         self.assertEqual(stat.S_IMODE(self.path.stat().st_mode), before_mode)
 
     def test_clean_main_recovers_without_attribute_eol_conversion(self):
@@ -129,31 +205,27 @@ class GeneratedProvenanceRecoveryTest(unittest.TestCase):
         self._git("add", ".gitattributes")
         self._git("commit", "-q", "--amend", "--no-edit")
         self._refresh()
+        before = self.path.read_bytes()
         before_mode = stat.S_IMODE(self.path.stat().st_mode)
 
         error = self._clean_main_error()
 
         self.assertIsNone(error)
-        self.assertEqual(
-            self.path.read_bytes(),
-            self._git_bytes("show", f"HEAD:{batch.LANE_CERTIFICATION_PATH}"),
-        )
+        self.assertEqual(self.path.read_bytes(), before)
         self.assertEqual(stat.S_IMODE(self.path.stat().st_mode), before_mode)
 
     def test_clean_main_recovers_without_normalizing_untracked_mode_bits(self):
-        for mode in (0o600, 0o664):
+        for mode in (0o444, 0o600, 0o664, 0o2644, 0o4644):
             with self.subTest(mode=oct(mode)):
+                self.path.chmod(0o644)
                 self._refresh()
                 self.path.chmod(mode)
-                committed = self._git_bytes(
-                    "show",
-                    f"HEAD:{batch.LANE_CERTIFICATION_PATH}",
-                )
+                before = self.path.read_bytes()
 
                 error = self._clean_main_error()
 
                 self.assertIsNone(error)
-                self.assertEqual(self.path.read_bytes(), committed)
+                self.assertEqual(self.path.read_bytes(), before)
                 self.assertEqual(stat.S_IMODE(self.path.stat().st_mode), mode)
 
     def test_clean_main_recovers_in_place_with_hardlink_and_xattr(self):
@@ -163,6 +235,7 @@ class GeneratedProvenanceRecoveryTest(unittest.TestCase):
         os.link(self.path, outside)
         self.addCleanup(outside.unlink, missing_ok=True)
         before_inode = self.path.stat().st_ino
+        before_bytes = self.path.read_bytes()
         xattr_name = "user.audit-recovery-test"
         xattr_value = b"preserve-me"
         xattr_command: list[str] | None = None
@@ -174,15 +247,11 @@ class GeneratedProvenanceRecoveryTest(unittest.TestCase):
 
         error = self._clean_main_error()
 
-        committed = self._git_bytes(
-            "show",
-            f"HEAD:{batch.LANE_CERTIFICATION_PATH}",
-        )
         self.assertIsNone(error)
         self.assertEqual(self.path.stat().st_ino, before_inode)
         self.assertEqual(outside.stat().st_ino, before_inode)
-        self.assertEqual(self.path.read_bytes(), committed)
-        self.assertEqual(outside.read_bytes(), committed)
+        self.assertEqual(self.path.read_bytes(), before_bytes)
+        self.assertEqual(outside.read_bytes(), before_bytes)
         if hasattr(os, "getxattr"):
             self.assertEqual(os.getxattr(self.path, xattr_name), xattr_value)
         elif xattr_command is not None:
@@ -339,30 +408,33 @@ class GeneratedProvenanceRecoveryTest(unittest.TestCase):
         self.assertEqual(error, "working tree is not clean")
         self.assertFalse(self.path.exists())
 
-    def test_concurrent_same_file_edit_survives_reverse_patch(self):
+    def test_concurrent_same_file_edit_survives_recognition(self):
         refreshed = self._refresh()
         raced = json.loads(json.dumps(refreshed))
         raced["lanes"][0]["blocking"] = ["concurrent-user-work"]
         raced_text = json.dumps(raced, indent=2, sort_keys=True) + "\n"
-        original_rewrite = batch._rewrite_verified_bytes_in_place
+        original_sh = batch.sh
         injected = False
+        summary_calls = 0
 
-        def racing_rewrite(path, *, expected, replacement, expected_signature):
-            nonlocal injected
-            if not injected:
+        def racing_sh(cmd, timeout=120, *, honor_cancel=True, text=True):
+            nonlocal injected, summary_calls
+            if cmd[:2] == ["git", "diff"] and "--summary" in cmd:
+                summary_calls += 1
+            if summary_calls == 2 and not injected:
                 injected = True
                 self.path.write_text(raced_text, encoding="utf-8")
-            return original_rewrite(
-                path,
-                expected=expected,
-                replacement=replacement,
-                expected_signature=expected_signature,
+            return original_sh(
+                cmd,
+                timeout=timeout,
+                honor_cancel=honor_cancel,
+                text=text,
             )
 
         with mock.patch.object(batch, "REPO_ROOT", self.root), mock.patch.object(
             batch,
-            "_rewrite_verified_bytes_in_place",
-            side_effect=racing_rewrite,
+            "sh",
+            side_effect=racing_sh,
         ):
             error = batch.clean_main_error()
 
@@ -417,31 +489,28 @@ class GeneratedProvenanceRecoveryTest(unittest.TestCase):
             self._git("rev-parse", "HEAD"),
         )
 
-    def test_late_concurrent_mode_change_survives_in_place_rewrite(self):
+    def test_late_concurrent_mode_change_survives_recognition(self):
         for concurrent_mode in (0o600, 0o744):
             with self.subTest(concurrent_mode=oct(concurrent_mode)):
                 self.path.chmod(0o644)
                 self._refresh()
                 before_bytes = self.path.read_bytes()
-                original_rewrite = batch._rewrite_verified_bytes_in_place
+                original_sh = batch.sh
                 injected = False
+                summary_calls = 0
 
-                def racing_rewrite(
-                    path,
-                    *,
-                    expected,
-                    replacement,
-                    expected_signature,
-                ):
-                    nonlocal injected
-                    if not injected:
+                def racing_sh(cmd, timeout=120, *, honor_cancel=True, text=True):
+                    nonlocal injected, summary_calls
+                    if cmd[:2] == ["git", "diff"] and "--summary" in cmd:
+                        summary_calls += 1
+                    if summary_calls == 2 and not injected:
                         injected = True
                         self.path.chmod(concurrent_mode)
-                    return original_rewrite(
-                        path,
-                        expected=expected,
-                        replacement=replacement,
-                        expected_signature=expected_signature,
+                    return original_sh(
+                        cmd,
+                        timeout=timeout,
+                        honor_cancel=honor_cancel,
+                        text=text,
                     )
 
                 with mock.patch.object(
@@ -450,8 +519,8 @@ class GeneratedProvenanceRecoveryTest(unittest.TestCase):
                     self.root,
                 ), mock.patch.object(
                     batch,
-                    "_rewrite_verified_bytes_in_place",
-                    side_effect=racing_rewrite,
+                    "sh",
+                    side_effect=racing_sh,
                 ):
                     error = batch.clean_main_error()
 
@@ -467,38 +536,77 @@ class GeneratedProvenanceRecoveryTest(unittest.TestCase):
         self._refresh()
         neighbor = self.path.with_suffix(self.path.suffix + ".orig")
         user_bytes = b"concurrent user backup\n"
-        original_rewrite = batch._rewrite_verified_bytes_in_place
+        original_sh = batch.sh
         injected = False
+        summary_calls = 0
 
-        def racing_rewrite(path, *, expected, replacement, expected_signature):
-            nonlocal injected
-            if not injected:
+        def racing_sh(cmd, timeout=120, *, honor_cancel=True, text=True):
+            nonlocal injected, summary_calls
+            if cmd[:2] == ["git", "diff"] and "--summary" in cmd:
+                summary_calls += 1
+            if summary_calls == 2 and not injected:
                 injected = True
                 neighbor.write_bytes(user_bytes)
-            return original_rewrite(
-                path,
-                expected=expected,
-                replacement=replacement,
-                expected_signature=expected_signature,
+            return original_sh(
+                cmd,
+                timeout=timeout,
+                honor_cancel=honor_cancel,
+                text=text,
             )
 
         with mock.patch.object(batch, "REPO_ROOT", self.root), mock.patch.object(
             batch,
-            "_rewrite_verified_bytes_in_place",
-            side_effect=racing_rewrite,
+            "sh",
+            side_effect=racing_sh,
         ):
             error = batch.clean_main_error()
 
         self.assertTrue(injected)
         self.assertEqual(
             error,
-            "working tree is not clean after provenance recovery",
+            "working tree is not clean after provenance recognition",
         )
         self.assertEqual(neighbor.read_bytes(), user_bytes)
         self.assertEqual(
-            self.path.read_bytes(),
-            self._git_bytes("show", f"HEAD:{batch.LANE_CERTIFICATION_PATH}"),
+            json.loads(self.path.read_text(encoding="utf-8"))["repo_head"],
+            self._git("rev-parse", "HEAD"),
         )
+
+    def test_late_path_replacement_preserves_both_files(self):
+        self._refresh()
+        before = self.path.read_bytes()
+        moved = self.path.with_suffix(self.path.suffix + ".moved")
+        user_bytes = b"concurrent replacement\n"
+        original_sh = batch.sh
+        injected = False
+        summary_calls = 0
+
+        def racing_sh(cmd, timeout=120, *, honor_cancel=True, text=True):
+            nonlocal injected, summary_calls
+            if cmd[:2] == ["git", "diff"] and "--summary" in cmd:
+                summary_calls += 1
+            if summary_calls == 2 and not injected:
+                injected = True
+                self.path.replace(moved)
+                self.path.write_bytes(user_bytes)
+            return original_sh(
+                cmd,
+                timeout=timeout,
+                honor_cancel=honor_cancel,
+                text=text,
+            )
+
+        with mock.patch.object(batch, "REPO_ROOT", self.root), mock.patch.object(
+            batch,
+            "sh",
+            side_effect=racing_sh,
+        ):
+            error = batch.clean_main_error()
+
+        self.assertTrue(injected)
+        self.assertEqual(error, "working tree is not clean")
+        self.assertEqual(moved.read_bytes(), before)
+        self.assertEqual(self.path.read_bytes(), user_bytes)
 
 
 def _args() -> argparse.Namespace:

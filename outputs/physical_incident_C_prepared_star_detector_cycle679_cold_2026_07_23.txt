@@ -1,0 +1,11 @@
+PASS target frozen before evidence :: {'target_line': 6, 'first_evidence_load_line': 65, 'frozen_before_evidence': True, 'target_contract_sha256': '7c07cb09382d371c1e139b432ceba253d9944f62fdc522a46fed4ace3fdb05a6', 'proof_search_governance_exact_fields': ['allowed_premises', 'completion_witness', 'forbidden_weakenings', 'outcomes_not_closure', 'quantifiers_domain', 'required_edge_cases', 'target_statement'], 'pass': True}
+PASS Cycle675/672/608 committed shores pinned :: 05890c4c22c06e609f09277cb2a1e080b5753a3a
+PASS L3 physical prepared incident-C selected-cell family :: {'cells': 9, 'max_physical': 1.3322676295501878e-15, 'max_full_C': 0.0, 'max_incident_C': 288, 'min_C_delete': 2.0}
+PASS L4 physical prepared incident-C selected-cell family :: {'cells': 7, 'max_physical': 1.3322676295501878e-15, 'max_full_C': 0.0, 'max_incident_C': 240, 'min_C_delete': 2.0}
+PASS L6 physical prepared incident-C selected-cell family :: {'cells': 7, 'max_physical': 1.3322676295501878e-15, 'max_full_C': 0.0, 'max_incident_C': 240, 'min_C_delete': 2.0}
+PASS all24 state and all576 group covariance with raw signed failure retained :: {'comparisons': 72, 'raw_failures': 48, 'repaired_failures': 0, 'all576_group_failures': 0}
+PASS every inserted incident C has a deletion witness :: {'inserted_rows': 3312, 'minimum_signal': 2.0}
+PASS full-C reference, leakage and lawful-domain controls :: {'physical': 1.3322676295501878e-15, 'full_C': 0.0, 'leakage': 0.0}
+PASS full N1-N8; no negative or axiom-pressure claim :: {'W_same_device_generic_chart': 'the incident-star compiler remains selected-cell and compile-time charted; one autonomous all-cell tile is not constructed', 'W_framework_matter_identification': 'the radius-four occupancy rails are independent M2 inputs, while their genesis as the framework matter law remains supplied', 'W_primitive_router_substrate': 'logical PHASE_EQ factors have explicit deterministic bounded NN route-return paths, but the inherited router/work substrate is not rederived in this cycle'}
+RECEIPT outputs/physical_incident_C_prepared_star_detector_cycle679_receipt_2026_07_23.json
+RESULT PASS tests 9 failed 0 elapsed 572.7022260000231

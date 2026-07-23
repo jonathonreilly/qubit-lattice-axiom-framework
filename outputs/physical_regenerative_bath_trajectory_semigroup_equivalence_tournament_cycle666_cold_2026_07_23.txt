@@ -1,0 +1,37 @@
+PASS Cycle666 target, temporal discriminator and exact shores were frozen before evidence :: {'target': '6aa7ef289c8b6b17e87e4e4e73d1bf3fc148b8ef3a7d22a84aee99332bb90dcd', 'prereg': '1cc76f2bc311d65bbd1a903ad032479a21f890d9b7c116f58db25df27da9f887', 'pins': 18}
+PASS fresh N1-N8 blocks broad negative, shared obstruction and axiom pressure :: {'attempted': 4, 'required': 5, 'pairs': 20}
+PASS one regenerative collision law exactly reproduces the Cycle663 reduced semigroup :: {'semigroup': 1.1365118650804643e-16, 'bath_reset': 0.0, 'rows': 3}
+PASS the same law realizes the Cycle662 objective-within-law quadratic trajectory kernel :: {'formula': 0.0, 'pointer_marginal': 2.220446049250313e-16, 'joint_labels': 4046, 'actuality_inputs': 0}
+PASS held temporal test separates the preregistered extension but does not overclaim Cycle661 :: {'scores': {'product_z0': 3.911107753001443e-06, 'biased_phase_product': 8.339073313495095e-07, 'six_site_GHZ': 0.006736394182625954}, 'native_temporal_contract': False, 'requirement_iv': False}
+PASS finite ready/spent regeneration ledgers retain all exhaust classes and saturate explicitly :: [(3, 318), (4, 472), (6, 852)]
+PASS support-two schedules, translation, all24/all576, deletion and malformed controls pass :: {'all24': 168, 'all576': 3456, 'H6': {'standalone_law_M2': 95, 'operation_counts': {'PARTIAL_SWAP': 36, 'CNOT': 288, 'HYBRID_WRITE': 36}, 'literal_operations': 360, 'ordered_wire_depth': 45, 'maximum_support_M2': 2}}
+PASS regenerated emission labels feed unchanged occurrence and preservation interfaces :: {'directions': 6, 'generators': 546}
+PASS inverse, collision deletion, malformed, and dark/postformation controls pass :: {'dark': 0.0, 'deletion': 0.7653668647301797}
+PASS Cycle666 note preserves trajectory/Record/Born/time/no-go firewalls :: ()
+{
+  "pass": true,
+  "tests_passed": 10,
+  "tests_failed": 0,
+  "elapsed_seconds": 0.4104353340808302,
+  "maximum_RSS_bytes": 78479360,
+  "note": "/private/tmp/toe-science.BB0KQV/docs/work_history/repo/review_feedback/PHYSICAL_REGENERATIVE_BATH_TRAJECTORY_SEMIGROUP_EQUIVALENCE_TOURNAMENT_CYCLE666_NOTE_2026-07-23.md",
+  "receipt": "/private/tmp/toe-science.BB0KQV/outputs/physical_regenerative_bath_trajectory_semigroup_equivalence_tournament_cycle666_receipt_2026_07_23.json"
+}
+        0.91 real         0.58 user         0.17 sys
+            78774272  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               57610  page reclaims
+                1196  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 808  voluntary context switches
+                 970  involuntary context switches
+          6945510160  instructions retired
+          2064976952  cycles elapsed
+            60195344  peak memory footprint

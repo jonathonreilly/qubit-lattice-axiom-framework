@@ -1,0 +1,2018 @@
+{
+  "audit": "unset",
+  "author_accepted": false,
+  "authority": "none",
+  "axiom_pressure": false,
+  "breakthrough": false,
+  "classification": "bounded constructive partial candidate with finite outbound-exhaust saturation and one route-specific temporal wall",
+  "covariance_locality": {
+    "Kraus_all24_comparisons": 168,
+    "Kraus_covariance_failures": 0,
+    "all576_direction_failures": 0,
+    "all576_direction_tests": 3456,
+    "all_literal_operations_support_at_most_two_M2": true,
+    "collision_layer_called_physical_time": false,
+    "deletion_rows": [
+      {
+        "basis_witness_residual": 1.0,
+        "operation": "swap2:0:0",
+        "visible": true
+      },
+      {
+        "basis_witness_residual": 1.4142135623730951,
+        "operation": "innovation:0:0",
+        "visible": true
+      },
+      {
+        "basis_witness_residual": 1.4142135623730951,
+        "operation": "port:0:0:0",
+        "visible": true
+      }
+    ],
+    "full_schedule_all24_comparisons": 72,
+    "full_schedule_covariance_failures": 0,
+    "generator_element_called_rate": false,
+    "global_parity_service": false,
+    "history_label_all24_comparisons": 72,
+    "history_label_covariance_failures": 0,
+    "malformed_rows": [
+      {
+        "case": "multi_hot_pending",
+        "refused": true
+      },
+      {
+        "case": "dirty_reusable_bath",
+        "refused": true
+      },
+      {
+        "case": "dirty_outbound_wave",
+        "refused": true
+      },
+      {
+        "case": "dirty_innovation",
+        "refused": true
+      },
+      {
+        "case": "dirty_target",
+        "refused": true
+      },
+      {
+        "case": "invalid_horizon",
+        "refused": true
+      }
+    ],
+    "maximum_Kraus_covariance_residual": 0.0,
+    "partitioned_supercell_translation_invariant": true,
+    "pass": true,
+    "preferred_global_ordering": false,
+    "proper_cubic_frames": 24,
+    "runtime_frame_selector": false,
+    "schedule_rows": {
+      "3": {
+        "literal_operations": 180,
+        "maximum_support_M2": 2,
+        "operation_counts": {
+          "CNOT": 144,
+          "HYBRID_WRITE": 18,
+          "PARTIAL_SWAP": 18
+        },
+        "ordered_wire_depth": 27,
+        "standalone_law_M2": 59
+      },
+      "4": {
+        "literal_operations": 240,
+        "maximum_support_M2": 2,
+        "operation_counts": {
+          "CNOT": 192,
+          "HYBRID_WRITE": 24,
+          "PARTIAL_SWAP": 24
+        },
+        "ordered_wire_depth": 33,
+        "standalone_law_M2": 71
+      },
+      "6": {
+        "literal_operations": 360,
+        "maximum_support_M2": 2,
+        "operation_counts": {
+          "CNOT": 288,
+          "HYBRID_WRITE": 36,
+          "PARTIAL_SWAP": 36
+        },
+        "ordered_wire_depth": 45,
+        "standalone_law_M2": 95
+      }
+    },
+    "translated_schedule_digests": [
+      "9f00e3552028f260e6c6010667f01627e14b1a906a228cb000fb231646941009",
+      "9f00e3552028f260e6c6010667f01627e14b1a906a228cb000fb231646941009",
+      "9f00e3552028f260e6c6010667f01627e14b1a906a228cb000fb231646941009"
+    ]
+  },
+  "cycle": 666,
+  "dark_inverse_deletion_domain": {
+    "collision_deletion_rows": [
+      {
+        "first_collision_deletion_residual": 0.7653668647301797,
+        "horizon": 3
+      },
+      {
+        "first_collision_deletion_residual": 0.7653668647301797,
+        "horizon": 4
+      },
+      {
+        "first_collision_deletion_residual": 0.7653668647301797,
+        "horizon": 6
+      }
+    ],
+    "complete_exhaust_required_for_inverse": true,
+    "expected_malformed_density_rejections": 3,
+    "global_history_inverse_rows": [
+      {
+        "horizon": 3,
+        "residual": 2.813830806969804e-16
+      },
+      {
+        "horizon": 4,
+        "residual": 4.674393938201414e-16
+      },
+      {
+        "horizon": 6,
+        "residual": 4.785465686274761e-16
+      }
+    ],
+    "invalid_horizon_rows": [
+      {
+        "horizon": 0,
+        "refused": true
+      },
+      {
+        "horizon": -1,
+        "refused": true
+      },
+      {
+        "horizon": 1.5,
+        "refused": true
+      }
+    ],
+    "malformed_density_rejections": 3,
+    "pass": true,
+    "postformation_no_emission_is_certain": true,
+    "vacuum_dark_residual": 0.0,
+    "vacuum_objective_propensities": [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "date": "2026-07-23",
+  "elapsed_seconds": 0.5025024579372257,
+  "frozen_contract": {
+    "expected_preregistration_sha256": "1cc76f2bc311d65bbd1a903ad032479a21f890d9b7c116f58db25df27da9f887",
+    "expected_target_sha256": "6aa7ef289c8b6b17e87e4e4e73d1bf3fc148b8ef3a7d22a84aee99332bb90dcd",
+    "first_evidence_line": 174,
+    "frozen_before_evidence": true,
+    "imported_contracts": {
+      "Cycle621_A_pass": true,
+      "Cycle625_B_pass": true,
+      "Cycle634_pass": true,
+      "Cycle661_pass": true,
+      "Cycle662_pass": true,
+      "Cycle663_pass": true
+    },
+    "observed": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_ADMISSIBILITY_OCCURRENCE_BORN_SHARED_MIDDLE_TOURNAMENT_CYCLE625_NOTE_2026-07-22.md": "190ed6dfc5502a0d8d68c665501fe4f009d21fb2aad4bc0b71e9f96a9856552d",
+      "docs/work_history/repo/review_feedback/PHYSICAL_DETERMINISTIC_CONSTRAINED_QCA_FORMATION_LAW_TOURNAMENT_CYCLE661_NOTE_2026-07-23.md": "14262310b768983ebbdc8a89f914f237ab2a2523c8a096eece63b33a7e5e9ad4",
+      "docs/work_history/repo/review_feedback/PHYSICAL_DISSIPATIVE_METASTABLE_FORMATION_CHANNEL_CYCLE663_NOTE_2026-07-23.md": "96f59a3f79ce7c29f3c9ccdf93cae9503ea4cd0084821c11ba6e0545046bec87",
+      "docs/work_history/repo/review_feedback/PHYSICAL_FORCING_MENU_INSTRUMENT_BRIDGE_TOURNAMENT_CYCLE634_NOTE_2026-07-23.md": "d0b8b3b0cb496a3864320c38f2fd8948a42a03252bf18e1b2389618f76f3cd5c",
+      "docs/work_history/repo/review_feedback/PHYSICAL_OBJECTIVE_STOCHASTIC_OPEN_DILATION_CYCLE662_NOTE_2026-07-23.md": "bdc8dda304985a62c73fc6e7a03f11d61041dd8053a9321fb7171c9b22947a05",
+      "docs/work_history/repo/review_feedback/PHYSICAL_POSTFORMATION_PRESERVATION_NON_ERASING_RENEWAL_TOURNAMENT_CYCLE621_NOTE_2026-07-22.md": "a52395a57fb34b6d827a677a43528033e913cde2f98ce708a276507f6e1e353e",
+      "outputs/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_receipt_2026_07_22.json": "a867cbeed66052da8cb85e8867a55802d27bfca586c9db805aa1649a6f0c7560",
+      "outputs/physical_deterministic_constrained_qca_formation_law_tournament_cycle661_receipt_2026_07_23.json": "c0ac1effe618bbdcbfc4bd6a3360f3beb557aa2469d47be476deef862e1340c5",
+      "outputs/physical_dissipative_metastable_formation_channel_cycle663_receipt_2026_07_23.json": "ab246cd35e6b6f30840621ca3e1eb9258a936de1c675fb2f0f429e9c131aa9b5",
+      "outputs/physical_forcing_menu_instrument_bridge_tournament_cycle634_receipt_2026_07_23.json": "3fd6a476feac3bae38f0da2b6c0d2826432e4b6a605d02d1e99b0d946e6efc87",
+      "outputs/physical_objective_stochastic_open_dilation_cycle662_receipt_2026_07_23.json": "27b258f1e4d96fb26f65937875bea32d74ecdfa62712c353e3327d0357a2c806",
+      "outputs/physical_postformation_preservation_non_erasing_renewal_tournament_cycle621_receipt_2026_07_22.json": "d28ee4034b15ecd7eebac2a0481c9475d828bbbe444baa8d9b903f231ca47156",
+      "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py": "a618b5803cc1313a3dd644e3e066bb987bf366d8215a50a43d4260c69847b9e9",
+      "scripts/physical_deterministic_constrained_qca_formation_law_tournament_cycle661_2026_07_23.py": "83383268139e92bcd040fa176686f2e6c3d5eef806ba58ed5da9953a59af7590",
+      "scripts/physical_dissipative_metastable_formation_channel_cycle663_2026_07_23.py": "03446972470065a781c78b8e220169ca9d65239d1054535992e3e16b3ece09e4",
+      "scripts/physical_forcing_menu_instrument_bridge_tournament_cycle634_2026_07_23.py": "ca187b7dda5c2b1b56a63ba960695734fc9915177c2769ef957913a096a74d52",
+      "scripts/physical_objective_stochastic_open_dilation_cycle662_2026_07_23.py": "219b6d3d93884a0ab8d9b0cc6c79850d008193fd5571b0281c76b6f8707d6b84",
+      "scripts/physical_postformation_preservation_non_erasing_renewal_tournament_cycle621_2026_07_22.py": "faa1a251d7586ed9d2e496cc73b42f45108347fe5f627523fcef3caa4e652a73"
+    },
+    "pass": true,
+    "pins": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_ADMISSIBILITY_OCCURRENCE_BORN_SHARED_MIDDLE_TOURNAMENT_CYCLE625_NOTE_2026-07-22.md": "190ed6dfc5502a0d8d68c665501fe4f009d21fb2aad4bc0b71e9f96a9856552d",
+      "docs/work_history/repo/review_feedback/PHYSICAL_DETERMINISTIC_CONSTRAINED_QCA_FORMATION_LAW_TOURNAMENT_CYCLE661_NOTE_2026-07-23.md": "14262310b768983ebbdc8a89f914f237ab2a2523c8a096eece63b33a7e5e9ad4",
+      "docs/work_history/repo/review_feedback/PHYSICAL_DISSIPATIVE_METASTABLE_FORMATION_CHANNEL_CYCLE663_NOTE_2026-07-23.md": "96f59a3f79ce7c29f3c9ccdf93cae9503ea4cd0084821c11ba6e0545046bec87",
+      "docs/work_history/repo/review_feedback/PHYSICAL_FORCING_MENU_INSTRUMENT_BRIDGE_TOURNAMENT_CYCLE634_NOTE_2026-07-23.md": "d0b8b3b0cb496a3864320c38f2fd8948a42a03252bf18e1b2389618f76f3cd5c",
+      "docs/work_history/repo/review_feedback/PHYSICAL_OBJECTIVE_STOCHASTIC_OPEN_DILATION_CYCLE662_NOTE_2026-07-23.md": "bdc8dda304985a62c73fc6e7a03f11d61041dd8053a9321fb7171c9b22947a05",
+      "docs/work_history/repo/review_feedback/PHYSICAL_POSTFORMATION_PRESERVATION_NON_ERASING_RENEWAL_TOURNAMENT_CYCLE621_NOTE_2026-07-22.md": "a52395a57fb34b6d827a677a43528033e913cde2f98ce708a276507f6e1e353e",
+      "outputs/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_receipt_2026_07_22.json": "a867cbeed66052da8cb85e8867a55802d27bfca586c9db805aa1649a6f0c7560",
+      "outputs/physical_deterministic_constrained_qca_formation_law_tournament_cycle661_receipt_2026_07_23.json": "c0ac1effe618bbdcbfc4bd6a3360f3beb557aa2469d47be476deef862e1340c5",
+      "outputs/physical_dissipative_metastable_formation_channel_cycle663_receipt_2026_07_23.json": "ab246cd35e6b6f30840621ca3e1eb9258a936de1c675fb2f0f429e9c131aa9b5",
+      "outputs/physical_forcing_menu_instrument_bridge_tournament_cycle634_receipt_2026_07_23.json": "3fd6a476feac3bae38f0da2b6c0d2826432e4b6a605d02d1e99b0d946e6efc87",
+      "outputs/physical_objective_stochastic_open_dilation_cycle662_receipt_2026_07_23.json": "27b258f1e4d96fb26f65937875bea32d74ecdfa62712c353e3327d0357a2c806",
+      "outputs/physical_postformation_preservation_non_erasing_renewal_tournament_cycle621_receipt_2026_07_22.json": "d28ee4034b15ecd7eebac2a0481c9475d828bbbe444baa8d9b903f231ca47156",
+      "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py": "a618b5803cc1313a3dd644e3e066bb987bf366d8215a50a43d4260c69847b9e9",
+      "scripts/physical_deterministic_constrained_qca_formation_law_tournament_cycle661_2026_07_23.py": "83383268139e92bcd040fa176686f2e6c3d5eef806ba58ed5da9953a59af7590",
+      "scripts/physical_dissipative_metastable_formation_channel_cycle663_2026_07_23.py": "03446972470065a781c78b8e220169ca9d65239d1054535992e3e16b3ece09e4",
+      "scripts/physical_forcing_menu_instrument_bridge_tournament_cycle634_2026_07_23.py": "ca187b7dda5c2b1b56a63ba960695734fc9915177c2769ef957913a096a74d52",
+      "scripts/physical_objective_stochastic_open_dilation_cycle662_2026_07_23.py": "219b6d3d93884a0ab8d9b0cc6c79850d008193fd5571b0281c76b6f8707d6b84",
+      "scripts/physical_postformation_preservation_non_erasing_renewal_tournament_cycle621_2026_07_22.py": "faa1a251d7586ed9d2e496cc73b42f45108347fe5f627523fcef3caa4e652a73"
+    },
+    "preregistration": {
+      "collision_survival": "r=1/2",
+      "episode_capacities": [
+        3,
+        4,
+        6
+      ],
+      "frame_set": "all 24 proper-cubic frames and all 576 ordered products",
+      "kernel_inputs": {
+        "held_biased_coherent": {
+          "horizon": 4,
+          "split": "held_blinded",
+          "unnormalized_re_im": [
+            [
+              0.73,
+              0.0
+            ],
+            [
+              0.41,
+              0.11
+            ],
+            [
+              -0.19,
+              0.37
+            ],
+            [
+              0.29,
+              -0.23
+            ],
+            [
+              -0.31,
+              -0.17
+            ],
+            [
+              0.13,
+              0.43
+            ],
+            [
+              -0.27,
+              0.09
+            ]
+          ]
+        },
+        "held_nonproduct_reference": {
+          "direction_phases": [
+            0.0,
+            0.17,
+            -0.29,
+            0.43,
+            -0.61,
+            0.79
+          ],
+          "horizon": 6,
+          "split": "held_blinded_nonproduct",
+          "state": "cos(theta)|vacuum,0>+sin(theta)/sqrt(6) sum_d exp(i phase_d)|d,1>",
+          "theta": 0.61
+        },
+        "train_direction0": {
+          "horizon": 3,
+          "split": "train",
+          "state": "|direction0>"
+        }
+      },
+      "pointer_temporal_inputs": {
+        "biased_phase_product": {
+          "horizon": 4,
+          "phase": [
+            0.0,
+            0.2,
+            -0.3,
+            0.5,
+            -0.7,
+            0.9
+          ],
+          "split": "held_blinded",
+          "theta": [
+            0.19,
+            0.31,
+            0.43,
+            0.57,
+            0.71,
+            0.83
+          ]
+        },
+        "product_z0": {
+          "horizon": 3,
+          "split": "train",
+          "state": "|000000>"
+        },
+        "six_site_GHZ": {
+          "horizon": 6,
+          "split": "held_blinded_nonproduct",
+          "state": "(|000000>+exp(0.37i)|111111>)/sqrt(2)"
+        }
+      },
+      "system_code": "vacuum plus six proper-cubic direction precursor rails",
+      "temporal_discriminator": {
+        "Cycle661_reference": "immediate deterministic first-formation event J_1=A and J_h>1=0",
+        "diagonal_and_one_step_marginals_masked": true,
+        "held_rows_only_for_disposition": true,
+        "observable": "first-emission indicator J_h",
+        "score": "Frobenius norm of the off-diagonal covariance difference"
+      },
+      "trajectory_outcomes_per_layer": "no-emission plus six direction emissions"
+    },
+    "preregistration_line": 49,
+    "preregistration_sha256": "1cc76f2bc311d65bbd1a903ad032479a21f890d9b7c116f58db25df27da9f887",
+    "shore": "467565dd850e8835c86134f5fb55ca7d89d838d4",
+    "target": {
+      "cycle": 666,
+      "decisive_question": "can one bounded translation/proper-cubic covariant local collision-bath law reproduce the Cycle663 reduced amplitude-damping semigroup and the Cycle662 objective-within-law branch kernel without an input actuality token or host sampler, retain complete exhaust, and distinguish Cycle661 by held temporal correlations rather than one-step marginals",
+      "forbidden": [
+        "input actuality token",
+        "host sampler",
+        "global parity service",
+        "global ordering",
+        "discarded wave exhaust",
+        "one-step-marginal discriminator",
+        "reduced state as one trajectory",
+        "pointer or latch as framework Record",
+        "weights as Born probability",
+        "collision layer as physical time",
+        "generator element as rate",
+        "bath content as energy"
+      ],
+      "required": [
+        "literal two-M2 collision followed by reversible bath-to-mobile-exhaust regeneration",
+        "exact coherent history isometry and reduced semigroup equality",
+        "objective-within-supplied-law innovation sequence with Cycle662 quadratic branch kernel",
+        "all wave, innovation, rejection, no-emission and emission-time exhaust retained",
+        "preregistered train and blinded held biased/nonproduct inputs at H3/H4/H6",
+        "off-diagonal temporal-covariance discriminator whose disposition ignores one-step marginals",
+        "finite ready/spent/bath-carrier ledger with inverse, deletion, malformed, dark and saturation controls",
+        "support/M2/depth inventory and all24/all576 covariance",
+        "fresh N1-N8 before any bounded negative or residual statement"
+      ],
+      "route": "regenerative-bath trajectory/semigroup equivalence tournament",
+      "success_ceiling": "positive finite candidate hybrid regenerative collision law with bounded outbound exhaust; nature-law selection, framework Record, Born/empirical interpretation, physical time, and indefinite non-erasing renewal remain open"
+    },
+    "target_line": 14,
+    "target_sha256": "6aa7ef289c8b6b17e87e4e4e73d1bf3fc148b8ef3a7d22a84aee99332bb90dcd",
+    "working_tree_bytes_used_as_evidence": false
+  },
+  "highest_honest_terminal": "partial positive finite candidate; native Cycle661 temporal comparison is undefined without an added sequence law",
+  "maximum_RSS_bytes": 76939264,
+  "no_go_discipline": {
+    "N1_broad_negative_gate": "FAIL_DO_NOT_SHIP",
+    "N1_families": [
+      {
+        "family": "Cycle661 deterministic conserved-count QCA",
+        "invariant": "basis-code immediate formation",
+        "status": "ATTEMPTED_POSITIVE_CANDIDATE"
+      },
+      {
+        "family": "Cycle662 hybrid menu jump law",
+        "invariant": "supplied quadratic objective sigma",
+        "status": "ATTEMPTED_POSITIVE_CANDIDATE"
+      },
+      {
+        "family": "Cycle663 retained dissipative collision",
+        "invariant": "reduced semigroup without trajectory promotion",
+        "status": "ATTEMPTED_POSITIVE_CANDIDATE"
+      },
+      {
+        "family": "Cycle666 regenerative hybrid collision",
+        "invariant": "reused bath plus outbound wave/innovation exhaust; native Cycle661 temporal comparison unavailable",
+        "status": "ATTEMPTED_PARTIAL_POSITIVE"
+      },
+      {
+        "family": "autonomous closed finite bath cycle",
+        "invariant": "stationary non-erasing renewal without blank influx",
+        "status": "OPEN_NOT_COUNTED"
+      },
+      {
+        "family": "unitary-only many-world history",
+        "invariant": "no extra ontic sigma",
+        "status": "OPEN_NOT_COUNTED"
+      }
+    ],
+    "N1_qualifying_attempts": 4,
+    "N1_required_for_negative": 5,
+    "N2_directed_pairs": [
+      {
+        "independent": true,
+        "left": "nature_law_selection",
+        "left_closes_right": false,
+        "right": "objective_hybrid_ontology_import",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "nature_law_selection",
+        "left_closes_right": false,
+        "right": "indefinite_non_erasing_exhaust_renewal",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "nature_law_selection",
+        "left_closes_right": false,
+        "right": "framework_Record_permanence",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "nature_law_selection",
+        "left_closes_right": false,
+        "right": "empirical_probability_and_physical_time",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "objective_hybrid_ontology_import",
+        "left_closes_right": false,
+        "right": "nature_law_selection",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "objective_hybrid_ontology_import",
+        "left_closes_right": false,
+        "right": "indefinite_non_erasing_exhaust_renewal",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "objective_hybrid_ontology_import",
+        "left_closes_right": false,
+        "right": "framework_Record_permanence",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "objective_hybrid_ontology_import",
+        "left_closes_right": false,
+        "right": "empirical_probability_and_physical_time",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "indefinite_non_erasing_exhaust_renewal",
+        "left_closes_right": false,
+        "right": "nature_law_selection",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "indefinite_non_erasing_exhaust_renewal",
+        "left_closes_right": false,
+        "right": "objective_hybrid_ontology_import",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "indefinite_non_erasing_exhaust_renewal",
+        "left_closes_right": false,
+        "right": "framework_Record_permanence",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "indefinite_non_erasing_exhaust_renewal",
+        "left_closes_right": false,
+        "right": "empirical_probability_and_physical_time",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "framework_Record_permanence",
+        "left_closes_right": false,
+        "right": "nature_law_selection",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "framework_Record_permanence",
+        "left_closes_right": false,
+        "right": "objective_hybrid_ontology_import",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "framework_Record_permanence",
+        "left_closes_right": false,
+        "right": "indefinite_non_erasing_exhaust_renewal",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "framework_Record_permanence",
+        "left_closes_right": false,
+        "right": "empirical_probability_and_physical_time",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "empirical_probability_and_physical_time",
+        "left_closes_right": false,
+        "right": "nature_law_selection",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "empirical_probability_and_physical_time",
+        "left_closes_right": false,
+        "right": "objective_hybrid_ontology_import",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "empirical_probability_and_physical_time",
+        "left_closes_right": false,
+        "right": "indefinite_non_erasing_exhaust_renewal",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "empirical_probability_and_physical_time",
+        "left_closes_right": false,
+        "right": "framework_Record_permanence",
+        "right_closes_left": false
+      }
+    ],
+    "N2_walls": [
+      "nature_law_selection",
+      "objective_hybrid_ontology_import",
+      "indefinite_non_erasing_exhaust_renewal",
+      "framework_Record_permanence",
+      "empirical_probability_and_physical_time"
+    ],
+    "N3_hidden_conditions": [
+      "r=1/2",
+      "one-excitation six-rail code",
+      "blank outbound carriers",
+      "supplied hybrid stochastic ontology",
+      "finite capacities",
+      "Cycle634 menu",
+      "frame chart",
+      "Cycle625/Cycle621 ports"
+    ],
+    "N4_exact_residual_matches": [
+      {
+        "current": {
+          "line": 357,
+          "path": "scripts/physical_regenerative_bath_trajectory_semigroup_equivalence_tournament_cycle666_2026_07_23.py",
+          "ref": "Cycle666 current"
+        },
+        "current_residual": "supplied hybrid sigma gives a finite objective path while wave exhaust remains",
+        "exact_scope_match": true,
+        "prior": {
+          "line": 35,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_DISSIPATIVE_METASTABLE_FORMATION_CHANNEL_CYCLE663_NOTE_2026-07-23.md",
+          "ref": "467565dd850e8835c86134f5fb55ca7d89d838d4"
+        },
+        "prior_residual": "reduced collision semigroup has no objective path",
+        "used_as_closure": true
+      },
+      {
+        "current": {
+          "line": 357,
+          "path": "scripts/physical_regenerative_bath_trajectory_semigroup_equivalence_tournament_cycle666_2026_07_23.py",
+          "ref": "Cycle666 current"
+        },
+        "current_residual": "same kernel form survives regeneration; nature-law selection remains open",
+        "exact_scope_match": true,
+        "prior": {
+          "line": 139,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_OBJECTIVE_STOCHASTIC_OPEN_DILATION_CYCLE662_NOTE_2026-07-23.md",
+          "ref": "467565dd850e8835c86134f5fb55ca7d89d838d4"
+        },
+        "prior_residual": "quadratic jump form is supplied, not selected as nature law",
+        "used_as_closure": false
+      },
+      {
+        "current": {
+          "line": 467,
+          "path": "scripts/physical_regenerative_bath_trajectory_semigroup_equivalence_tournament_cycle666_2026_07_23.py",
+          "ref": "Cycle666 current"
+        },
+        "current_residual": "held covariance separates only a preregistered immediate-event extension; native Cycle661 temporal disposition is indeterminate",
+        "exact_scope_match": true,
+        "prior": {
+          "line": 3,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_DETERMINISTIC_CONSTRAINED_QCA_FORMATION_LAW_TOURNAMENT_CYCLE661_NOTE_2026-07-23.md",
+          "ref": "467565dd850e8835c86134f5fb55ca7d89d838d4"
+        },
+        "prior_residual": "deterministic basis-code candidate explicitly lacking physical-time interpretation",
+        "used_as_closure": false
+      }
+    ],
+    "N5_rhetoric": [
+      {
+        "claim": "finite regenerative bath does not imply indefinite non-erasing renewal",
+        "lattice_wide": "outbound blank-carrier supply open",
+        "per_block": "H3/H4/H6 saturate",
+        "per_element": "each bath bit is swapped out",
+        "per_mode": "all wave and innovation modes retained",
+        "per_site": "six bath M2 reused"
+      },
+      {
+        "claim": "objective within a supplied hybrid law is not derivation of nature's law",
+        "lattice_wide": "law selection untested",
+        "per_block": "three frozen inputs",
+        "per_element": "every sigma branch enumerated",
+        "per_mode": "no-emission plus six directions",
+        "per_site": "bounded stochastic kernel"
+      },
+      {
+        "claim": "temporal covariance is not Born frequency or physical time",
+        "lattice_wide": "no empirical process tested",
+        "per_block": "held H4/H6",
+        "per_element": "first-hit indicators",
+        "per_mode": "six directions",
+        "per_site": "one coarse formation cell"
+      }
+    ],
+    "N6_partial_closure_paths": [
+      {
+        "closes": "finite bath reset and semigroup/trajectory equivalence; only extension-level temporal discriminator",
+        "file": "Cycle666",
+        "status": "EXECUTED_PARTIAL_POSITIVE"
+      },
+      {
+        "closes": "objective-within-supplied-law kernel only",
+        "file": "Cycle662",
+        "status": "EXECUTED_PRIOR"
+      },
+      {
+        "closes": "indefinite non-erasing carrier renewal",
+        "file": "future closed bath cycle",
+        "status": "OPEN"
+      },
+      {
+        "closes": "why this hybrid kernel is physical",
+        "file": "future law-selection tournament",
+        "status": "OPEN"
+      }
+    ],
+    "N7_steelman": "Construct a closed translation-invariant carrier QCA whose outbound exhaust is transported without deletion, whose local low-entropy bath slots recur without importing blank states, and whose objective innovation ontology is derived rather than stipulated; then test multi-cell temporal correlations and noise-stable packet permanence. That route could retire renewal, law selection and Record walls, so the present finite positive candidate supports no no-go.",
+    "N8_cross_cycle_echo": [
+      {
+        "cycle": 661,
+        "remaining": "native route supplies no temporal joint law and remains viable",
+        "retired": "nothing in its native temporal scope; the immediate-event extension is separated"
+      },
+      {
+        "cycle": 662,
+        "remaining": "hybrid ontology and nature-law choice supplied",
+        "retired": "lack of a collision realization for its generic kernel"
+      },
+      {
+        "cycle": 663,
+        "remaining": "reduction alone still is not actuality",
+        "retired": "lack of a finite objective-within-law trajectory attached to its semigroup"
+      },
+      {
+        "cycle": 621,
+        "remaining": "finite preserving monoid only",
+        "retired": "none of indefinite non-erasing renewal"
+      }
+    ],
+    "axiom_pressure": false,
+    "broad_negative_claim": false,
+    "minimum_content_claim": false,
+    "pass": true,
+    "route_specific_finite_renewal_residual_only": true,
+    "route_specific_temporal_comparison_indeterminate": true,
+    "shared_route_independent_obstruction": false
+  },
+  "note_contract": {
+    "missing": [],
+    "pass": true,
+    "required": [
+      "authority: **none**",
+      "audit: **unset**",
+      "strict full-framework terminal: **false**",
+      "one-step marginals are reported for accounting but are not used for disposition",
+      "reduced state is not promoted to one actual path",
+      "not called a framework record",
+      "not empirical frequencies or born probability",
+      "not physical time or a rate",
+      "shared route-independent obstruction: **not established**",
+      "axiom pressure: **none**"
+    ]
+  },
+  "note_sha256": "b71a9a2badf2cfc61bffaef9aa17a63fbc95b3ff89b68a237a644baac6a9aaa9",
+  "objective_kernel_equivalence": {
+    "Cycle662_joint_pointer_temporal_labels": 4046,
+    "Cycle662_law": "fixed hybrid quantum-classical Markov instrument: q_p=Tr[(K_p tensor I) rho (K_p^dagger tensor I)], sigma'=p",
+    "Cycle662_objective_candidate_terminal": true,
+    "Cycle662_pointer_marginal_failures": 0,
+    "Cycle662_pointer_marginal_rows": [
+      {
+        "horizon": 3,
+        "maximum_pointer_marginal_residual": 5.551115123125783e-17,
+        "menu": "ternary_trine",
+        "pointer_patterns": 4,
+        "split": "train",
+        "state": "train_zero"
+      },
+      {
+        "horizon": 3,
+        "maximum_pointer_marginal_residual": 1.1102230246251565e-16,
+        "menu": "ternary_trine",
+        "pointer_patterns": 4,
+        "split": "train",
+        "state": "train_plus_y"
+      },
+      {
+        "horizon": 3,
+        "maximum_pointer_marginal_residual": 5.551115123125783e-17,
+        "menu": "ternary_trine",
+        "pointer_patterns": 4,
+        "split": "train",
+        "state": "train_mixed"
+      },
+      {
+        "horizon": 4,
+        "maximum_pointer_marginal_residual": 5.551115123125783e-17,
+        "menu": "ternary_trine",
+        "pointer_patterns": 4,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_biased"
+      },
+      {
+        "horizon": 6,
+        "maximum_pointer_marginal_residual": 5.551115123125783e-17,
+        "menu": "ternary_trine",
+        "pointer_patterns": 4,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_nonproduct"
+      },
+      {
+        "horizon": 3,
+        "maximum_pointer_marginal_residual": 5.551115123125783e-17,
+        "menu": "scaled_axis_cancellation",
+        "pointer_patterns": 8,
+        "split": "train",
+        "state": "train_zero"
+      },
+      {
+        "horizon": 3,
+        "maximum_pointer_marginal_residual": 5.551115123125783e-17,
+        "menu": "scaled_axis_cancellation",
+        "pointer_patterns": 8,
+        "split": "train",
+        "state": "train_plus_y"
+      },
+      {
+        "horizon": 3,
+        "maximum_pointer_marginal_residual": 2.7755575615628914e-17,
+        "menu": "scaled_axis_cancellation",
+        "pointer_patterns": 8,
+        "split": "train",
+        "state": "train_mixed"
+      },
+      {
+        "horizon": 4,
+        "maximum_pointer_marginal_residual": 5.551115123125783e-17,
+        "menu": "scaled_axis_cancellation",
+        "pointer_patterns": 8,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_biased"
+      },
+      {
+        "horizon": 6,
+        "maximum_pointer_marginal_residual": 5.551115123125783e-17,
+        "menu": "scaled_axis_cancellation",
+        "pointer_patterns": 8,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_nonproduct"
+      },
+      {
+        "horizon": 3,
+        "maximum_pointer_marginal_residual": 1.1102230246251565e-16,
+        "menu": "mixed_projective_merge",
+        "pointer_patterns": 2,
+        "split": "train",
+        "state": "train_zero"
+      },
+      {
+        "horizon": 3,
+        "maximum_pointer_marginal_residual": 1.1102230246251565e-16,
+        "menu": "mixed_projective_merge",
+        "pointer_patterns": 2,
+        "split": "train",
+        "state": "train_plus_y"
+      },
+      {
+        "horizon": 3,
+        "maximum_pointer_marginal_residual": 1.1102230246251565e-16,
+        "menu": "mixed_projective_merge",
+        "pointer_patterns": 2,
+        "split": "train",
+        "state": "train_mixed"
+      },
+      {
+        "horizon": 4,
+        "maximum_pointer_marginal_residual": 2.220446049250313e-16,
+        "menu": "mixed_projective_merge",
+        "pointer_patterns": 2,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_biased"
+      },
+      {
+        "horizon": 6,
+        "maximum_pointer_marginal_residual": 1.1102230246251565e-16,
+        "menu": "mixed_projective_merge",
+        "pointer_patterns": 2,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_nonproduct"
+      },
+      {
+        "horizon": 3,
+        "maximum_pointer_marginal_residual": 5.551115123125783e-17,
+        "menu": "held_size5_split_trine",
+        "pointer_patterns": 16,
+        "split": "train",
+        "state": "train_zero"
+      },
+      {
+        "horizon": 3,
+        "maximum_pointer_marginal_residual": 1.3877787807814457e-17,
+        "menu": "held_size5_split_trine",
+        "pointer_patterns": 16,
+        "split": "train",
+        "state": "train_plus_y"
+      },
+      {
+        "horizon": 3,
+        "maximum_pointer_marginal_residual": 5.551115123125783e-17,
+        "menu": "held_size5_split_trine",
+        "pointer_patterns": 16,
+        "split": "train",
+        "state": "train_mixed"
+      },
+      {
+        "horizon": 4,
+        "maximum_pointer_marginal_residual": 1.1102230246251565e-16,
+        "menu": "held_size5_split_trine",
+        "pointer_patterns": 16,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_biased"
+      },
+      {
+        "horizon": 6,
+        "maximum_pointer_marginal_residual": 5.551115123125783e-17,
+        "menu": "held_size5_split_trine",
+        "pointer_patterns": 16,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_nonproduct"
+      },
+      {
+        "horizon": 3,
+        "maximum_pointer_marginal_residual": 0.0,
+        "menu": "singular_rank_loss_control",
+        "pointer_patterns": 4,
+        "split": "train",
+        "state": "train_zero"
+      },
+      {
+        "horizon": 3,
+        "maximum_pointer_marginal_residual": 1.1102230246251565e-16,
+        "menu": "singular_rank_loss_control",
+        "pointer_patterns": 4,
+        "split": "train",
+        "state": "train_plus_y"
+      },
+      {
+        "horizon": 3,
+        "maximum_pointer_marginal_residual": 5.551115123125783e-17,
+        "menu": "singular_rank_loss_control",
+        "pointer_patterns": 4,
+        "split": "train",
+        "state": "train_mixed"
+      },
+      {
+        "horizon": 4,
+        "maximum_pointer_marginal_residual": 1.6653345369377348e-16,
+        "menu": "singular_rank_loss_control",
+        "pointer_patterns": 4,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_biased"
+      },
+      {
+        "horizon": 6,
+        "maximum_pointer_marginal_residual": 1.1102230246251565e-16,
+        "menu": "singular_rank_loss_control",
+        "pointer_patterns": 4,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_nonproduct"
+      }
+    ],
+    "actuality_input_parameter": false,
+    "candidate_pointer_or_latch_called_framework_Record": false,
+    "host_sampler_calls": 0,
+    "host_sampling_source_hits": [],
+    "innovation_law_supplied_not_derived_as_nature_law": true,
+    "input_actuality_token_M2": 0,
+    "law": "q_sigma(rho)=Tr[(J_sigma tensor I) rho (J_sigma^dagger tensor I)], sigma'=sigma",
+    "maximum_Cycle662_pointer_marginal_residual": 2.220446049250313e-16,
+    "maximum_coherent_inverse_residual": 4.440892098500626e-16,
+    "maximum_formula_residual": 0.0,
+    "maximum_sector_residual": 4.440892098500626e-16,
+    "pass": true,
+    "propensity_called_Born_probability": false,
+    "rows": {
+      "held_biased_coherent": {
+        "all_zero_propensity_labels_retained": true,
+        "branches": [
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.41164651617862885,
+            "sigma": "none",
+            "stored_innovation": "none",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.06296736319798729,
+            "sigma": "emit:1:0",
+            "stored_innovation": "emit:1:0",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.060451464113495015,
+            "sigma": "emit:1:1",
+            "stored_innovation": "emit:1:1",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.04787196869103364,
+            "sigma": "emit:1:2",
+            "stored_innovation": "emit:1:2",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.04367880355021316,
+            "sigma": "emit:1:3",
+            "stored_innovation": "emit:1:3",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.07051506045146413,
+            "sigma": "emit:1:4",
+            "stored_innovation": "emit:1:4",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.02830386470053814,
+            "sigma": "emit:1:5",
+            "stored_innovation": "emit:1:5",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.03148368159899366,
+            "sigma": "emit:2:0",
+            "stored_innovation": "emit:2:0",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.030225732056747518,
+            "sigma": "emit:2:1",
+            "stored_innovation": "emit:2:1",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.023935984345516827,
+            "sigma": "emit:2:2",
+            "stored_innovation": "emit:2:2",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.021839401775106584,
+            "sigma": "emit:2:3",
+            "stored_innovation": "emit:2:3",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.035257530225732074,
+            "sigma": "emit:2:4",
+            "stored_innovation": "emit:2:4",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.014151932350269073,
+            "sigma": "emit:2:5",
+            "stored_innovation": "emit:2:5",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.01574184079949683,
+            "sigma": "emit:3:0",
+            "stored_innovation": "emit:3:0",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.015112866028373759,
+            "sigma": "emit:3:1",
+            "stored_innovation": "emit:3:1",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.011967992172758412,
+            "sigma": "emit:3:2",
+            "stored_innovation": "emit:3:2",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.010919700887553294,
+            "sigma": "emit:3:3",
+            "stored_innovation": "emit:3:3",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.017628765112866037,
+            "sigma": "emit:3:4",
+            "stored_innovation": "emit:3:4",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.007075966175134536,
+            "sigma": "emit:3:5",
+            "stored_innovation": "emit:3:5",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.007870920399748415,
+            "sigma": "emit:4:0",
+            "stored_innovation": "emit:4:0",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.0075564330141868795,
+            "sigma": "emit:4:1",
+            "stored_innovation": "emit:4:1",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.005983996086379207,
+            "sigma": "emit:4:2",
+            "stored_innovation": "emit:4:2",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.005459850443776646,
+            "sigma": "emit:4:3",
+            "stored_innovation": "emit:4:3",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.008814382556433019,
+            "sigma": "emit:4:4",
+            "stored_innovation": "emit:4:4",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.0035379830875672683,
+            "sigma": "emit:4:5",
+            "stored_innovation": "emit:4:5",
+            "wave_history_sector_retained": true
+          }
+        ],
+        "coherent_history_inverse_residual": 4.440892098500626e-16,
+        "horizon": 4,
+        "host_sampler_calls": 0,
+        "kernel_normalization_residual": 2.220446049250313e-16,
+        "law_updates_sigma_without_input_actuality": true,
+        "objective_path_labels": 25,
+        "runner_samples_branch": false,
+        "split": "held_blinded"
+      },
+      "held_nonproduct_reference": {
+        "all_zero_propensity_labels_retained": true,
+        "branches": [
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.6769506407649295,
+            "sigma": "none",
+            "stored_innovation": "none",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.027348093903498055,
+            "sigma": "emit:1:0",
+            "stored_innovation": "emit:1:0",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.027348093903498058,
+            "sigma": "emit:1:1",
+            "stored_innovation": "emit:1:1",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.02734809390349805,
+            "sigma": "emit:1:2",
+            "stored_innovation": "emit:1:2",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.02734809390349805,
+            "sigma": "emit:1:3",
+            "stored_innovation": "emit:1:3",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.027348093903498058,
+            "sigma": "emit:1:4",
+            "stored_innovation": "emit:1:4",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.02734809390349805,
+            "sigma": "emit:1:5",
+            "stored_innovation": "emit:1:5",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.013674046951749032,
+            "sigma": "emit:2:0",
+            "stored_innovation": "emit:2:0",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.013674046951749034,
+            "sigma": "emit:2:1",
+            "stored_innovation": "emit:2:1",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.01367404695174903,
+            "sigma": "emit:2:2",
+            "stored_innovation": "emit:2:2",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.01367404695174903,
+            "sigma": "emit:2:3",
+            "stored_innovation": "emit:2:3",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.013674046951749036,
+            "sigma": "emit:2:4",
+            "stored_innovation": "emit:2:4",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.013674046951749029,
+            "sigma": "emit:2:5",
+            "stored_innovation": "emit:2:5",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.006837023475874516,
+            "sigma": "emit:3:0",
+            "stored_innovation": "emit:3:0",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.006837023475874517,
+            "sigma": "emit:3:1",
+            "stored_innovation": "emit:3:1",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.0068370234758745145,
+            "sigma": "emit:3:2",
+            "stored_innovation": "emit:3:2",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.0068370234758745145,
+            "sigma": "emit:3:3",
+            "stored_innovation": "emit:3:3",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.006837023475874517,
+            "sigma": "emit:3:4",
+            "stored_innovation": "emit:3:4",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.0068370234758745145,
+            "sigma": "emit:3:5",
+            "stored_innovation": "emit:3:5",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.003418511737937258,
+            "sigma": "emit:4:0",
+            "stored_innovation": "emit:4:0",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.0034185117379372586,
+            "sigma": "emit:4:1",
+            "stored_innovation": "emit:4:1",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.0034185117379372577,
+            "sigma": "emit:4:2",
+            "stored_innovation": "emit:4:2",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.0034185117379372577,
+            "sigma": "emit:4:3",
+            "stored_innovation": "emit:4:3",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.003418511737937259,
+            "sigma": "emit:4:4",
+            "stored_innovation": "emit:4:4",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.0034185117379372573,
+            "sigma": "emit:4:5",
+            "stored_innovation": "emit:4:5",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.0017092558689686301,
+            "sigma": "emit:5:0",
+            "stored_innovation": "emit:5:0",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.0017092558689686301,
+            "sigma": "emit:5:1",
+            "stored_innovation": "emit:5:1",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.00170925586896863,
+            "sigma": "emit:5:2",
+            "stored_innovation": "emit:5:2",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.00170925586896863,
+            "sigma": "emit:5:3",
+            "stored_innovation": "emit:5:3",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.0017092558689686304,
+            "sigma": "emit:5:4",
+            "stored_innovation": "emit:5:4",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.0017092558689686295,
+            "sigma": "emit:5:5",
+            "stored_innovation": "emit:5:5",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.0008546279344843152,
+            "sigma": "emit:6:0",
+            "stored_innovation": "emit:6:0",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.0008546279344843153,
+            "sigma": "emit:6:1",
+            "stored_innovation": "emit:6:1",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.0008546279344843151,
+            "sigma": "emit:6:2",
+            "stored_innovation": "emit:6:2",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.0008546279344843151,
+            "sigma": "emit:6:3",
+            "stored_innovation": "emit:6:3",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.0008546279344843154,
+            "sigma": "emit:6:4",
+            "stored_innovation": "emit:6:4",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.000854627934484315,
+            "sigma": "emit:6:5",
+            "stored_innovation": "emit:6:5",
+            "wave_history_sector_retained": true
+          }
+        ],
+        "coherent_history_inverse_residual": 4.440892098500626e-16,
+        "horizon": 6,
+        "host_sampler_calls": 0,
+        "kernel_normalization_residual": 2.220446049250313e-16,
+        "law_updates_sigma_without_input_actuality": true,
+        "objective_path_labels": 37,
+        "runner_samples_branch": false,
+        "split": "held_blinded_nonproduct"
+      },
+      "train_direction0": {
+        "all_zero_propensity_labels_retained": true,
+        "branches": [
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.12500000000000006,
+            "sigma": "none",
+            "stored_innovation": "none",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.5000000000000001,
+            "sigma": "emit:1:0",
+            "stored_innovation": "emit:1:0",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": false,
+            "propensity": 0.0,
+            "sigma": "emit:1:1",
+            "stored_innovation": "emit:1:1",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": false,
+            "propensity": 0.0,
+            "sigma": "emit:1:2",
+            "stored_innovation": "emit:1:2",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": false,
+            "propensity": 0.0,
+            "sigma": "emit:1:3",
+            "stored_innovation": "emit:1:3",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": false,
+            "propensity": 0.0,
+            "sigma": "emit:1:4",
+            "stored_innovation": "emit:1:4",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": false,
+            "propensity": 0.0,
+            "sigma": "emit:1:5",
+            "stored_innovation": "emit:1:5",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.2500000000000001,
+            "sigma": "emit:2:0",
+            "stored_innovation": "emit:2:0",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": false,
+            "propensity": 0.0,
+            "sigma": "emit:2:1",
+            "stored_innovation": "emit:2:1",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": false,
+            "propensity": 0.0,
+            "sigma": "emit:2:2",
+            "stored_innovation": "emit:2:2",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": false,
+            "propensity": 0.0,
+            "sigma": "emit:2:3",
+            "stored_innovation": "emit:2:3",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": false,
+            "propensity": 0.0,
+            "sigma": "emit:2:4",
+            "stored_innovation": "emit:2:4",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": false,
+            "propensity": 0.0,
+            "sigma": "emit:2:5",
+            "stored_innovation": "emit:2:5",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": true,
+            "propensity": 0.12500000000000006,
+            "sigma": "emit:3:0",
+            "stored_innovation": "emit:3:0",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": false,
+            "propensity": 0.0,
+            "sigma": "emit:3:1",
+            "stored_innovation": "emit:3:1",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": false,
+            "propensity": 0.0,
+            "sigma": "emit:3:2",
+            "stored_innovation": "emit:3:2",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": false,
+            "propensity": 0.0,
+            "sigma": "emit:3:3",
+            "stored_innovation": "emit:3:3",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": false,
+            "propensity": 0.0,
+            "sigma": "emit:3:4",
+            "stored_innovation": "emit:3:4",
+            "wave_history_sector_retained": true
+          },
+          {
+            "objective_within_supplied_candidate_law": false,
+            "propensity": 0.0,
+            "sigma": "emit:3:5",
+            "stored_innovation": "emit:3:5",
+            "wave_history_sector_retained": true
+          }
+        ],
+        "coherent_history_inverse_residual": 2.220446049250313e-16,
+        "horizon": 3,
+        "host_sampler_calls": 0,
+        "kernel_normalization_residual": 4.440892098500626e-16,
+        "law_updates_sigma_without_input_actuality": true,
+        "objective_path_labels": 19,
+        "runner_samples_branch": false,
+        "split": "train"
+      }
+    },
+    "same_quadratic_branch_kernel_form": true,
+    "wave_exhaust_and_objective_sigma_both_retained": true
+  },
+  "optimal_next_campaign": "freeze a shared operational sequence protocol for Cycle661/Cycle666, then test it inside a closed moving-carrier QCA and hybrid-sigma elimination/derivation",
+  "pass": true,
+  "resource_ledger": {
+    "all_objective_innovation_exhaust_retained": true,
+    "all_outbound_wave_exhaust_retained": true,
+    "all_pointer_blockade_accepted_and_rejected_exhaust_retained": true,
+    "bath_content_called_energy_entropy_temperature_or_source": false,
+    "bath_regeneration": "SWAP bath state into blank outbound carrier after every collision",
+    "external_interface_test_M2": {
+      "Cycle621_A": 123,
+      "Cycle625_B": 129
+    },
+    "finite_outbound_carrier_saturation_is_named": true,
+    "finite_rows": [
+      {
+        "capacity": 3,
+        "dirty_ready_refused": true,
+        "explicit_retained_M2": 318,
+        "full_M2_per_episode": 106,
+        "horizon": 3,
+        "innovation_exhaust_M2_per_episode": 18,
+        "inverse_renews_only_by_erasing_all_three_exhaust_classes": true,
+        "inverse_roundtrip_failures": 0,
+        "non_erasing_indefinite_renewal_claimed": false,
+        "pass": true,
+        "ready_spent_head_M2_per_episode": 3,
+        "reusable_bath_M2": 6,
+        "route_core_M2_per_episode": 103,
+        "saturation_refuses_next_episode": true,
+        "spent_at_saturation": 3,
+        "split": "train",
+        "wave_exhaust_M2_per_episode": 18
+      },
+      {
+        "capacity": 4,
+        "dirty_ready_refused": true,
+        "explicit_retained_M2": 472,
+        "full_M2_per_episode": 118,
+        "horizon": 4,
+        "innovation_exhaust_M2_per_episode": 24,
+        "inverse_renews_only_by_erasing_all_three_exhaust_classes": true,
+        "inverse_roundtrip_failures": 0,
+        "non_erasing_indefinite_renewal_claimed": false,
+        "pass": true,
+        "ready_spent_head_M2_per_episode": 3,
+        "reusable_bath_M2": 6,
+        "route_core_M2_per_episode": 115,
+        "saturation_refuses_next_episode": true,
+        "spent_at_saturation": 4,
+        "split": "held_blinded",
+        "wave_exhaust_M2_per_episode": 24
+      },
+      {
+        "capacity": 6,
+        "dirty_ready_refused": true,
+        "explicit_retained_M2": 852,
+        "full_M2_per_episode": 142,
+        "horizon": 6,
+        "innovation_exhaust_M2_per_episode": 36,
+        "inverse_renews_only_by_erasing_all_three_exhaust_classes": true,
+        "inverse_roundtrip_failures": 0,
+        "non_erasing_indefinite_renewal_claimed": false,
+        "pass": true,
+        "ready_spent_head_M2_per_episode": 3,
+        "reusable_bath_M2": 6,
+        "route_core_M2_per_episode": 139,
+        "saturation_refuses_next_episode": true,
+        "spent_at_saturation": 6,
+        "split": "held_blinded_nonproduct",
+        "wave_exhaust_M2_per_episode": 36
+      }
+    ],
+    "pass": true,
+    "same_bath_M2_reused_across_layers": true
+  },
+  "route_disposition": {
+    "Cycle661": "bounded indeterminate: frozen immediate-event extension separates, but native route has no temporal joint law",
+    "Cycle662": "quadratic objective-within-law kernel reproduced",
+    "Cycle663": "reduced amplitude-damping semigroup reproduced",
+    "Cycle666": "finite bath reuse by outbound state transfer; dual exhaust saturates"
+  },
+  "runner_sha256": "54c81da2ec078e7a386753ae404117ad9da0833460cb039c009db67104aecfb9",
+  "semigroup_equivalence": {
+    "Cycle663_population_survival_exact_match": true,
+    "Cycle663_single_rail_spectrum": [
+      1.0,
+      0.7071067811865476,
+      0.7071067811865476,
+      0.5
+    ],
+    "Cycle663_spectrum_exact_match": true,
+    "Kraus_completeness_residual": 2.220446049250313e-16,
+    "Kraus_outcomes": 7,
+    "bath_one_population_after_swap_to_blank_exhaust": 0.0,
+    "bath_reused_only_after_state_moved_to_outbound_exhaust": true,
+    "coherent_wave_exhaust_retained": true,
+    "current_single_rail_spectrum": [
+      1.0,
+      0.7071067811865476,
+      0.7071067811865476,
+      0.5
+    ],
+    "literal_three_M2_collision_swap_inverse_residual": 1.142453904487038e-16,
+    "literal_three_M2_collision_swap_unitarity_residual": 2.6470882081092774e-16,
+    "maximum_history_inverse_residual": 6.718292782623543e-16,
+    "maximum_semigroup_residual": 1.1365118650804643e-16,
+    "multirail_dimension": 7,
+    "pass": true,
+    "reduced_state_called_one_objective_trajectory": false,
+    "rows": {
+      "held_biased_coherent": {
+        "emission_propensity": 0.5883534838213714,
+        "global_history_inverse_residual": 6.030677221278531e-16,
+        "history_isometry_residual": 4.440892098500626e-16,
+        "horizon": 4,
+        "minimum_propensity": 0.0035379830875672683,
+        "no_emission_propensity": 0.41164651617862885,
+        "propensity_sum_residual": 2.220446049250313e-16,
+        "spectator_no_signalling_residual": 4.440892098500626e-16,
+        "split": "held_blinded",
+        "trajectory_branches": 25,
+        "trajectory_sum_to_reduced_semigroup_residual": 1.1365118650804643e-16
+      },
+      "held_nonproduct_reference": {
+        "emission_propensity": 0.32304935923507083,
+        "global_history_inverse_residual": 6.718292782623543e-16,
+        "history_isometry_residual": 2.220446049250313e-16,
+        "horizon": 6,
+        "minimum_propensity": 0.000854627934484315,
+        "no_emission_propensity": 0.6769506407649295,
+        "propensity_sum_residual": 2.220446049250313e-16,
+        "spectator_no_signalling_residual": 3.3306690738754696e-16,
+        "split": "held_blinded_nonproduct",
+        "trajectory_branches": 37,
+        "trajectory_sum_to_reduced_semigroup_residual": 1.8751110090472673e-17
+      },
+      "train_direction0": {
+        "emission_propensity": 0.8750000000000002,
+        "global_history_inverse_residual": 4.827926850712054e-16,
+        "history_isometry_residual": 4.440892098500626e-16,
+        "horizon": 3,
+        "minimum_propensity": 0.0,
+        "no_emission_propensity": 0.12500000000000006,
+        "propensity_sum_residual": 4.440892098500626e-16,
+        "spectator_no_signalling_residual": 2.220446049250313e-16,
+        "split": "train",
+        "trajectory_branches": 19,
+        "trajectory_sum_to_reduced_semigroup_residual": 2.7755575615628914e-17
+      }
+    }
+  },
+  "shared_route_independent_obstruction": false,
+  "status": "partial positive finite regenerative hybrid collision law; native Cycle661 temporal comparison indeterminate",
+  "strict_full_framework_terminal_met": false,
+  "strongest_constructive_result": "one finite regenerative collision law has Cycle663 reduced dynamics, exact Cycle662 objective pointer marginals and trajectories, and complete pointer/blockade plus wave/innovation exhaust",
+  "supplied_structure_inventory": {
+    "derived": [
+      "literal bath reset by state transfer",
+      "coherent history isometry and reduced semigroup equality",
+      "objective trajectory kernel equality",
+      "complete dual exhaust ledger",
+      "held off-diagonal temporal separation from one preregistered Cycle661 extension",
+      "support-two lowering",
+      "all24/all576",
+      "dark/inverse/deletion/domain controls"
+    ],
+    "open": [
+      "Cycle661-native temporal comparison law",
+      "nature-law selection",
+      "derivation of objective hybrid ontology",
+      "indefinite non-erasing exhaust renewal",
+      "framework Record and permanence",
+      "Born/empirical interpretation",
+      "physical time",
+      "energy/source/gravity"
+    ],
+    "supplied": [
+      "Cycle634 mixed-projective menu and blank ports",
+      "Cycle662 hybrid quadratic sigma ontology",
+      "Cycle663 r=1/2 collision",
+      "one-excitation direction code",
+      "blank outbound carriers",
+      "finite ready/spent capacities",
+      "proper-cubic chart",
+      "Cycle625/Cycle621 external ports"
+    ]
+  },
+  "target_contract_candidate_terminal_met": false,
+  "target_requirement_disposition": {
+    "i_Cycle663_semigroup": "PASS",
+    "ii_Cycle662_objective_kernel": "PASS",
+    "iii_complete_exhaust": "PASS",
+    "iv_native_Cycle661_temporal_discriminator": "BOUNDED_INDETERMINATE"
+  },
+  "temporal_discriminator": {
+    "Cycle661_native_temporal_contract_present": false,
+    "Cycle661_route_distinguished_without_temporal_extension": false,
+    "Cycle661_schedule_time_firewall": {
+      "line": 56,
+      "path": "docs/work_history/repo/review_feedback/PHYSICAL_DETERMINISTIC_CONSTRAINED_QCA_FORMATION_LAW_TOURNAMENT_CYCLE661_NOTE_2026-07-23.md",
+      "ref": "467565dd850e8835c86134f5fb55ca7d89d838d4"
+    },
+    "collision_layers_called_physical_time": false,
+    "discriminator": "off-diagonal covariance Frobenius norm; diagonal/one-step entries masked",
+    "disposition": "BOUNDED_INDETERMINATE_FOR_CYCLE661_NATIVE_ROUTE; POSITIVE_AGAINST_PREREGISTERED_IMMEDIATE_EVENT_EXTENSION",
+    "held_rows_distinguished": 2,
+    "held_rows_required": 2,
+    "immediate_event_extension_is_additional_import": true,
+    "minimum_held_temporal_score": 8.339073313495095e-07,
+    "observable": "first-emission indicator J_h",
+    "one_step_marginals_used_for_disposition": false,
+    "pass": true,
+    "preregistered_immediate_Cycle661_extension_distinguished": true,
+    "rows": {
+      "biased_phase_product": {
+        "Cycle661_unique_candidate_weight": 0.001998661873188796,
+        "Cycle663_attractor_weight": 0.001998661873188796,
+        "finite_emission_weight": 0.0018737455061144962,
+        "first_emission_event_propensities": [
+          0.000999330936594398,
+          0.000499665468297199,
+          0.0002498327341485995,
+          0.00012491636707429976
+        ],
+        "held_row_used_for_disposition": true,
+        "horizon": 4,
+        "offdiagonal_Cycle661_covariance": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "offdiagonal_collision_covariance": [
+          [
+            0.0,
+            -4.993311604173184e-07,
+            -2.496655802086592e-07,
+            -1.248327901043296e-07
+          ],
+          [
+            -4.993311604173184e-07,
+            0.0,
+            -1.248327901043296e-07,
+            -6.24163950521648e-08
+          ],
+          [
+            -2.496655802086592e-07,
+            -1.248327901043296e-07,
+            0.0,
+            -3.12081975260824e-08
+          ],
+          [
+            -1.248327901043296e-07,
+            -6.24163950521648e-08,
+            -3.12081975260824e-08,
+            0.0
+          ]
+        ],
+        "offdiagonal_temporal_covariance_discriminator": 8.339073313495095e-07,
+        "one_step_marginal_used_for_disposition": false,
+        "split": "held_blinded",
+        "survival_weight": 0.00012491636707429976,
+        "unique_candidate_weight": 0.001998661873188796
+      },
+      "product_z0": {
+        "Cycle661_unique_candidate_weight": 0.004394531250000009,
+        "Cycle663_attractor_weight": 0.004394531250000009,
+        "finite_emission_weight": 0.003845214843750008,
+        "first_emission_event_propensities": [
+          0.0021972656250000043,
+          0.0010986328125000022,
+          0.0005493164062500011
+        ],
+        "held_row_used_for_disposition": false,
+        "horizon": 3,
+        "offdiagonal_Cycle661_covariance": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "offdiagonal_collision_covariance": [
+          [
+            0.0,
+            -2.41398811340333e-06,
+            -1.206994056701665e-06
+          ],
+          [
+            -2.41398811340333e-06,
+            0.0,
+            -6.034970283508325e-07
+          ],
+          [
+            -1.206994056701665e-06,
+            -6.034970283508325e-07,
+            0.0
+          ]
+        ],
+        "offdiagonal_temporal_covariance_discriminator": 3.911107753001443e-06,
+        "one_step_marginal_used_for_disposition": false,
+        "split": "train",
+        "survival_weight": 0.0005493164062500011,
+        "unique_candidate_weight": 0.004394531250000009
+      },
+      "six_site_GHZ": {
+        "Cycle661_unique_candidate_weight": 0.17881006736483476,
+        "Cycle663_attractor_weight": 0.17881006736483476,
+        "finite_emission_weight": 0.17601616006225923,
+        "first_emission_event_propensities": [
+          0.08940503368241738,
+          0.04470251684120869,
+          0.022351258420604345,
+          0.011175629210302173,
+          0.005587814605151086,
+          0.002793907302575543
+        ],
+        "held_row_used_for_disposition": true,
+        "horizon": 6,
+        "offdiagonal_Cycle661_covariance": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "offdiagonal_collision_covariance": [
+          [
+            0.0,
+            -0.003996630023877093,
+            -0.0019983150119385466,
+            -0.0009991575059692733,
+            -0.0004995787529846366,
+            -0.0002497893764923183
+          ],
+          [
+            -0.003996630023877093,
+            0.0,
+            -0.0009991575059692733,
+            -0.0004995787529846366,
+            -0.0002497893764923183,
+            -0.00012489468824615916
+          ],
+          [
+            -0.0019983150119385466,
+            -0.0009991575059692733,
+            0.0,
+            -0.0002497893764923183,
+            -0.00012489468824615916,
+            -6.244734412307958e-05
+          ],
+          [
+            -0.0009991575059692733,
+            -0.0004995787529846366,
+            -0.0002497893764923183,
+            0.0,
+            -6.244734412307958e-05,
+            -3.122367206153979e-05
+          ],
+          [
+            -0.0004995787529846366,
+            -0.0002497893764923183,
+            -0.00012489468824615916,
+            -6.244734412307958e-05,
+            0.0,
+            -1.5611836030769895e-05
+          ],
+          [
+            -0.0002497893764923183,
+            -0.00012489468824615916,
+            -6.244734412307958e-05,
+            -3.122367206153979e-05,
+            -1.5611836030769895e-05,
+            0.0
+          ]
+        ],
+        "offdiagonal_temporal_covariance_discriminator": 0.006736394182625954,
+        "one_step_marginal_used_for_disposition": false,
+        "split": "held_blinded_nonproduct",
+        "survival_weight": 0.002793907302575543,
+        "unique_candidate_weight": 0.17881006736483476
+      }
+    },
+    "target_requirement_iv_met": false,
+    "unweighted_pointer_census_called_empirical_data": false,
+    "weights_called_Born_probability": false
+  },
+  "tests_failed": 0,
+  "tests_passed": 10,
+  "unchanged_interfaces": {
+    "Cycle531_equation_failures": 0,
+    "Cycle621_generator_failures": 0,
+    "Cycle621_generator_tests": 546,
+    "Cycle625_failures": 0,
+    "Cycle625_inverse_failures": 0,
+    "emission_writer_failures": 0,
+    "finite_preserving_monoid_called_physical_all_future_law": false,
+    "formed_directions": 6,
+    "packet_called_framework_Record": false,
+    "pass": true
+  }
+}

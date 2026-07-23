@@ -1,18 +1,1052 @@
 Cycle599 intrinsic Ramsey-clock / strict-M2 time bridge none unset
-PASS accepted time/matter/compiler shores and the pre-held law are byte exact :: {'observed': {'scripts/coherent_multibeta_physical_mass_controller_tournament_cycle441_2026_07_19.py': 'c274f75ff2b2fe427f04598b84a01247765c562f7ab014ffee2d63af2f27b5d4', 'docs/work_history/repo/review_feedback/COHERENT_MULTIBETA_PHYSICAL_MASS_CONTROLLER_TOURNAMENT_CYCLE441_NOTE_2026-07-19.md': '072e760c11f0f69345aa3cd118835842bc5a0be6c7786426ace30a0dd4b8aa22', 'scripts/physical_source_conditioned_relational_dual_clock_cycle451_2026_07_19.py': 'c89e3d47b42b05c0d723afb5e68548bbb15ee79401eaa72f3c8c715e897071a1', 'docs/work_history/repo/review_feedback/PHYSICAL_SOURCE_CONDITIONED_RELATIONAL_DUAL_CLOCK_CYCLE451_NOTE_2026-07-19.md': '81f28e682b6b45d1572164a7a72b00d252bc81c542a4de5d83ed602b311320ca', 'scripts/physical_joint_clock_accumulator_contraction_bridge_cycle570_2026_07_22.py': '853abe5470efd15b154d6cb348d49795a6fa84e77a62f0b21a79105892b1d415', 'docs/work_history/repo/review_feedback/PHYSICAL_JOINT_CLOCK_ACCUMULATOR_CONTRACTION_BRIDGE_CYCLE570_NOTE_2026-07-22.md': 'f78441d4ee0a391768f9a4e9e7e6807a925b453b283fe5a1056a35bb934cc40c', 'scripts/physical_contact_dimer_infinite_internal_content_tournament_cycle583_2026_07_22.py': '3f1672ef0d2c0063d5760a6b0885d75cb75b63c64b44951399fd0762d5499f7f', 'docs/work_history/repo/review_feedback/PHYSICAL_CONTACT_DIMER_INFINITE_INTERNAL_CONTENT_TOURNAMENT_CYCLE583_NOTE_2026-07-22.md': '73531224b0af8a1f0fb23e161fc4da0b543a4e645b1b71a756b5147417f55663', 'scripts/physical_full_torus_dimer_M2_compiler_tournament_cycle590_2026_07_22.py': '5fbf3bcecc54df9912f9b79d2e5c45d51f145279c1ed83f507bc24e9e1980029', 'docs/work_history/repo/review_feedback/PHYSICAL_FULL_TORUS_DIMER_M2_COMPILER_TOURNAMENT_CYCLE590_NOTE_2026-07-22.md': '3ee6ba9bd5a01a5cab88832788156597a1491d7c2d47f9378caca624a35a1936', 'scripts/physical_state_family_grade_transition_synthesis_tournament_cycle597_2026_07_22.py': '7dec66d44101d26f563bea079fa62b56daeb1d2d5a21a7a98c6f66fc22392d77', 'docs/work_history/repo/review_feedback/PHYSICAL_STATE_FAMILY_GRADE_TRANSITION_SYNTHESIS_TOURNAMENT_CYCLE597_NOTE_2026-07-22.md': 'fdbfc68540be31de9d5199e25b1b71a440b9126447f383146caa07b70599c4b2', 'scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py': 'b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae'}, 'Cycle597_accepted_shore_pinned': True, 'Cycle597_law_imported_or_consumed': False, 'functional_route_forbidden_hits': (), 'frozen_law_sha256': '31cc3593368f237614282f18ccb154ea557a7984f4b82dc2191997e7b52c2a42'}
+PASS exact shore surfaces, consumed receipts, and complete local runtime closure are byte exact :: {'observed': {'scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py': 'b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae', 'docs/work_history/repo/review_feedback/SPATIAL_CAR_CONTACT_SEAM_FORM_FACTOR_CYCLE230_NOTE_2026-07-17.md': 'a7a3a0a021dbd691c6c2ddb9163679b445c5110b8150f63395271037963c7132', 'scripts/coherent_multibeta_physical_mass_controller_tournament_cycle441_2026_07_19.py': 'c274f75ff2b2fe427f04598b84a01247765c562f7ab014ffee2d63af2f27b5d4', 'docs/work_history/repo/review_feedback/COHERENT_MULTIBETA_PHYSICAL_MASS_CONTROLLER_TOURNAMENT_CYCLE441_NOTE_2026-07-19.md': '072e760c11f0f69345aa3cd118835842bc5a0be6c7786426ace30a0dd4b8aa22', 'scripts/physical_source_conditioned_relational_dual_clock_cycle451_2026_07_19.py': 'c89e3d47b42b05c0d723afb5e68548bbb15ee79401eaa72f3c8c715e897071a1', 'docs/work_history/repo/review_feedback/PHYSICAL_SOURCE_CONDITIONED_RELATIONAL_DUAL_CLOCK_CYCLE451_NOTE_2026-07-19.md': '81f28e682b6b45d1572164a7a72b00d252bc81c542a4de5d83ed602b311320ca', 'scripts/physical_joint_clock_accumulator_contraction_bridge_cycle570_2026_07_22.py': '37e9d0f336d773bd4a1957a6531f80dc35b9673a4ef0f99137e7fb33558bf849', 'docs/work_history/repo/review_feedback/PHYSICAL_JOINT_CLOCK_ACCUMULATOR_CONTRACTION_BRIDGE_CYCLE570_NOTE_2026-07-22.md': 'e88ee3daee2e07f215142d29cee7e6e5d3564bf5f92764aca49e89fe8f065438', 'outputs/physical_joint_clock_accumulator_contraction_bridge_cycle570_receipt_2026_07_22.json': 'f9295faa4230427623ac350625a42fb17949fd86f523b6cf81aa247c14dd796c', 'scripts/physical_contact_dimer_infinite_internal_content_tournament_cycle583_2026_07_22.py': '21957cc883550ee81fc48d5b55ad4a0384cbac8697557691c805d84c7c8dbaaf', 'docs/work_history/repo/review_feedback/PHYSICAL_CONTACT_DIMER_INFINITE_INTERNAL_CONTENT_TOURNAMENT_CYCLE583_NOTE_2026-07-22.md': '6942341fa2fc8978a25acdd758677b04a5a1d0c9e13b8e5627bc9bf504814cf3', 'outputs/physical_contact_dimer_infinite_internal_content_tournament_cycle583_receipt_2026_07_22.json': '0f4e2df9e25cdc7137c42fb91666c5eaae10efc652d5af84f421e38c5ad97aab', 'outputs/physical_contact_dimer_infinite_internal_content_tournament_cycle583_cold_2026_07_22.txt': '22af96509364601a99c3ed2d6b148643ede02369f70e5be92629d1f0e5d3ddce', 'scripts/physical_full_torus_dimer_M2_compiler_tournament_cycle590_2026_07_22.py': '43e5b749702fba9551fab43a242f832b824fdbff54817b5206097f02ad146e55', 'docs/work_history/repo/review_feedback/PHYSICAL_FULL_TORUS_DIMER_M2_COMPILER_TOURNAMENT_CYCLE590_NOTE_2026-07-22.md': 'f0f3ed6d41132625b8907cbcda8f105b7ec975e4b952562b45fe5b7d8e1b3a0e', 'outputs/physical_full_torus_dimer_M2_compiler_tournament_cycle590_receipt_2026_07_22.json': '3ae94267d43a668a178ef02ee37ab12608f302419a25b0a37deffd27e51be647', 'outputs/physical_full_torus_dimer_M2_compiler_tournament_cycle590_cold_2026_07_22.txt': 'cef70862eff7d6f10d562a67e2e8fcab503b998de5e0dea63300f0883efe398f', 'scripts/physical_state_family_grade_transition_synthesis_tournament_cycle597_2026_07_22.py': '994f050fb33d7b9909896d195dca6be0062f56445ba49cac8731f196a3cfe79e', 'docs/work_history/repo/review_feedback/PHYSICAL_STATE_FAMILY_GRADE_TRANSITION_SYNTHESIS_TOURNAMENT_CYCLE597_NOTE_2026-07-22.md': '9a786fc7c559437483fb357893ad23146ddbdebd71a992ed8c709053e9b1d413', 'outputs/physical_state_family_grade_transition_synthesis_tournament_cycle597_receipt_2026_07_22.json': '99aa374f13725a6fefc70189050a4aa557fde8d3694d77e53b51869c170cec23', 'outputs/physical_state_family_grade_transition_synthesis_tournament_cycle597_cold_2026_07_22.txt': '022a8f946a9953a91a97ba9db3c05c3b3fc73bd08fcfe576e80b95373f51acea'}, 'exact_pinned_surfaces': 21, 'runtime_dependency_count': 232, 'runtime_dependency_hash_mismatches': (), 'runtime_dependency_manifest_sha256': '7016de60a1e3c451ee0aa0a235bdf8754615ab6d18b449c5bdc62809da9a0603', 'expected_runtime_dependency_manifest_sha256': '7016de60a1e3c451ee0aa0a235bdf8754615ab6d18b449c5bdc62809da9a0603', 'receipt_checks': {'Cycle570': {'runner_bound': True, 'note_bound': True, 'tests_pass': True, 'authority_audit': True}, 'Cycle583': {'runner_bound': True, 'note_bound': True, 'tests_pass': True, 'authority_audit': True}, 'Cycle590': {'runner_bound': True, 'note_bound': True, 'tests_pass': True, 'authority_audit': True}, 'Cycle597': {'runner_bound': True, 'note_bound': True, 'tests_pass': True, 'authority_audit': True, 'cold_bound': True, 'no_go_gate_fails': True}}, 'Cycle597_byte_pinned_without_epistemic_standing': True, 'Cycle597_law_imported_or_consumed': False, 'functional_route_forbidden_hits': (), 'frozen_law_sha256': '39928f22dadfba7b9c1a9be7c84bdb430afaa06b7a6f7914ffa49a10e60e7282'}
 
 ROUTE A — Q1 FUNCTIONAL MASS-REGISTER RAMSEY PRODUCT
-PASS Route A ports the no-lookup Q1 functional Ramsey control as an exact code-space bounded-support product over the accepted L6 compiler, with primitive synthesis open :: {'rows': {'cayley-functional': {'held_beta': -2.792526803190927, 'held_coordinate': 17.013845458853122, 'bright_coherent_weight': 0.23613141036251756, 'dark_coherent_weight': 0.7638685896374818, 'residuals': {'unitarity': 2.111439411654862e-15, 'inverse': 3.83904121479328e-16, 'held_fringe_formula': 1.1102230246251565e-16}}, 'principal-functional': {'held_beta': -2.792526803190927, 'held_coordinate': -1.8357104626856369, 'bright_coherent_weight': 0.9868942473978697, 'dark_coherent_weight': 0.013105752602129945, 'residuals': {'unitarity': 1.6188892809882257e-15, 'inverse': 4.071675710570306e-16, 'held_fringe_formula': 1.1796119636642288e-16}}}, 'complete_Q1_times_arm_dimension': 18, 'Q1_physical_register_M2': 9, 'Ramsey_arm_M2': 1, 'held_L6_Cycle590_compiler_M2': 11448, 'held_product_live_M2': 11458, 'held_product_M2_per_coarse_cell_plus_device': '53 per cell + bounded 10-M2 register/arm device', 'Q1_ring_nearest_neighbor_SWAP_count': 8, 'Q1_ring_schedule_residual': 0.0, 'functional_dense_control_support_M2': 10, 'functional_dense_control_primitive_synthesis': 'supplied/open', 'product_EG_residual': 0.0, 'coherent_inverse_residual': 3.6417626336070564e-16, 'functional_deletion_signal': 2.6756394597204696, 'held_alias_dark_weight_separation': 0.7507628370353518, 'one_particle_mass_fixture_residual': 1.1102230246251565e-16, 'proper_cubic_frames': 24, 'paired_frame_products': 576, 'frame_group_failures': 0, 'register_frame_action': 'I9 scalar internal block', 'lawful_domain_rejections': 2, 'beta_lookup_used': False, 'sector_menu_use': 'post-construction analysis/calibration and held scoring only; never a physical runtime selector', 'matter_beta_changed_by_register': False, 'interpretation': 'independent operational register clock tensored with, not a beta controller for, the fixed-beta Cycle590 dimer', 'pass': True}
+PASS Route A exactly reproduces the frozen no-lookup dense algebraic Ramsey candidate without claiming an M2 composition :: {'rows': {'cayley-functional': {'held_beta': -2.792526803190927, 'held_coordinate': 17.013845458853122, 'bright_coherent_weight': 0.23613141036251756, 'dark_coherent_weight': 0.7638685896374818, 'residuals': {'unitarity': 2.111439411654862e-15, 'inverse': 3.83904121479328e-16, 'held_fringe_formula': 1.1102230246251565e-16}}, 'principal-functional': {'held_beta': -2.792526803190927, 'held_coordinate': -1.8357104626856369, 'bright_coherent_weight': 0.9868942473978697, 'dark_coherent_weight': 0.013105752602129945, 'residuals': {'unitarity': 1.6188892809882257e-15, 'inverse': 4.071675710570306e-16, 'held_fringe_formula': 1.1796119636642288e-16}}}, 'executed_layer': '18-dimensional dense algebraic Q1-register times Ramsey-arm product', 'algebraic_Q1_register_dimension': 9, 'algebraic_Ramsey_arm_dimension': 2, 'algebraic_product_dimension': 18, 'Cycle599_composed_physical_M2': None, 'physical_EG': None, 'physical_leakage': None, 'physical_layout': None, 'primitive_composition_verified': False, 'upstream_Cycle590_compiler_composed_or_reexecuted': False, 'Q1_ring_nearest_neighbor_SWAP_count': 8, 'Q1_ring_schedule_residual': 0.0, 'functional_dense_control_primitive_synthesis': 'open', 'coherent_inverse_residual': 3.6417626336070564e-16, 'functional_deletion_signal': 2.6756394597204696, 'held_alias_dark_weight_separation': 0.7507628370353518, 'one_particle_mass_fixture_residual': 1.1102230246251565e-16, 'proper_cubic_frame_group_members_checked': 24, 'frame_group_products_checked': 576, 'frame_group_failures': 0, 'algebraic_register_frame_action': 'I9 scalar internal block', 'physical_device_covariance_layout': None, 'lawful_domain_rejections': 2, 'beta_lookup_used': False, 'sector_menu_use': 'post-construction analysis/calibration and held scoring only; never a physical runtime selector', 'matter_beta_changed_by_register': False, 'interpretation': 'algebraic functional Ramsey candidate, not a physical M2 clock and not a beta controller', 'route_disposition': 'interesting algebraic candidate only', 'pass': True}
 
 ROUTE B — PRIORITY LOCAL EVEN VACUUM/A2-DIMER RAMSEY CLOCK
-FAIL Route B preregistered local even vacuum/A2 clock checkpoints all furnish defined return-phase words :: {'rows': [{'length': 3, 'split': 'train', 'Ramsey_words': [{'law_applications': 1, 'X_pair': 0.0, 'Y_pair': 0.0, 'visibility_amplitude': 0.0, 'phase_word_defined': False, 'principal_phase_difference': None, 'contact_deletion_signal': 1.5977831777738262e-17}, {'law_applications': 2, 'X_pair': 0.378433107835146, 'Y_pair': 0.2185356780671071, 'visibility_amplitude': 0.4370005259653786, 'phase_word_defined': True, 'principal_phase_difference': 0.5236923565425526, 'contact_deletion_signal': 0.16588474983998308}], 'inverse_residual': 8.692323121966852e-16, 'antisymmetry_residual': 2.754498869333378e-16, 'norm_residual': 3.3306690738754696e-16, 'translation_covariance_residual': 0.0, 'A2_branch_wrapped_phase_not_energy': -2.9789445604663647, 'A2_branch': {'relative_eigen_residual': 6.029689190904235e-16, 'relative_contact_weight': 0.2640138035257292, 'onsite_A2_source_weight': 0.264013803525729, 'onsite_A2_source_fraction': 0.9999999999999993, 'continuation_points_including_K0': 1, 'minimum_adjacent_branch_overlap': 1.0, 'intermediate_noncompatible_K_used_only_for_branch_selection': False, 'quotient_columns': 483, 'contact_weight': 0.264013803525729, 'relative_radius_squared': 1.4942521552228294, 'seam_boundary_weight': 0.0}}, {'length': 6, 'split': 'held', 'Ramsey_words': [{'law_applications': 1, 'X_pair': 0.0, 'Y_pair': 0.0, 'visibility_amplitude': 0.0, 'phase_word_defined': False, 'principal_phase_difference': None, 'contact_deletion_signal': 1.5977831777738262e-17}, {'law_applications': 2, 'X_pair': 0.378433107835146, 'Y_pair': 0.21853567806710708, 'visibility_amplitude': 0.4370005259653786, 'phase_word_defined': True, 'principal_phase_difference': 0.5236923565425525, 'contact_deletion_signal': 0.16588474983998308}, {'law_applications': 3, 'X_pair': 0.0, 'Y_pair': 0.0, 'visibility_amplitude': 0.0, 'phase_word_defined': False, 'principal_phase_difference': None, 'contact_deletion_signal': 0.17392192402952786}], 'inverse_residual': 1.21105627705897e-15, 'antisymmetry_residual': 3.1791681797518814e-16, 'norm_residual': 4.6629367034256575e-15, 'translation_covariance_residual': 0.0, 'A2_branch_wrapped_phase_not_energy': -2.9771814800643273, 'A2_branch': {'relative_eigen_residual': 6.282359432018985e-16, 'relative_contact_weight': 0.2684608052069249, 'onsite_A2_source_weight': 0.26846080520692467, 'onsite_A2_source_fraction': 0.9999999999999992, 'continuation_points_including_K0': 1, 'minimum_adjacent_branch_overlap': 1.0, 'intermediate_noncompatible_K_used_only_for_branch_selection': False, 'quotient_columns': 3864, 'contact_weight': 0.2684608052069249, 'relative_radius_squared': 1.8246792754792485, 'seam_boundary_weight': 0.0032513852507496275}}], 'physical': {'declared_matter_code': 'Cycle590 complete N=0 direct-sum N=2 sector within supplied global N<=3 domain', 'held_compiler_live_M2': 11448, 'held_compiler_M2_per_cell': 53, 'binder_M2': 1, 'binder_state': 'occupied before and after every pulse/update/read', 'local_even_pair_observable_coarse_support': 'six direction modes at one coarse cell', 'local_even_pair_observable_physical_support_upper_bound': 'one 53-M2 compiler block', 'pair_pulse_and_readout_dense_bounded_completion': 'supplied/open primitive synthesis', 'free_plus_contact_physical_schedule': 'inherited exact Cycle590 W563 compiler', 'accepted_free_plus_contact_code_space_EG_residual': 0.0, 'Ramsey_interface_code_space_completion_residual': 0.0, 'Ramsey_interface_primitive_gate_and_layout_closure': False, 'global_N_le_3_cutoff_locally_enforced': False, 'global_N_le_3_cutoff_supplied': True, 'runtime_global_parity_or_order_service': False, 'proper_cubic_frames': 24, 'paired_frames_with_event_device': 576, 'A2_observable_orbit_covariance_residual': 5.382005793715205e-16}, 'pulse_inverse_residual': 3.1560822113208575e-16, 'maximum_dynamic_residual': 4.6629367034256575e-15, 'minimum_contact_deletion_signal': 1.5977831777738262e-17, 'held_event_quadratures': {'X_pair': 0.378433107835146, 'Y_pair': 0.21853567806710708, 'visibility_amplitude': 0.4370005259653786, 'phase_word_defined': True, 'principal_phase_difference': 0.5236923565425525}, 'frozen_return_boundary': {'q_even_2': 'nonzero local return visibility on train L3 and held L6', 'q_odd_1_and_3': 'zero local return visibility on every frozen applicable row', 'scope': 'the frozen q=1,2,3 checkpoints only; not an all-q theorem'}, 'phase_origin': 'prepared vacuum/local-A2 relative phase at the first typed event', 'single_word_branch_rule': 'principal phase only when the observed word is strictly inside (-pi,pi)', 'multi_event_unwrapping_rule': 'supplied/open; not invoked', 'law_application_count_called_time': False, 'principal_or_wrapped_phase_called_energy': False, 'squared_norm_called_probability_or_occurrence': False, 'every_frozen_clock_word_defined': False, 'observed_frozen_parity_boundary_exact': True, 'pass': False}
-PASS Ramsey quadratures attach only to typed matched 3:4/4:4/5:4 events and the exact additive rollover shore :: {'Cycle451_comparator': {'3:4': {'Cycle451_ratio': '3/4', 'Cycle570_totals': (4, 3), 'Ramsey_word_attached': True}, '4:4': {'Cycle451_ratio': '1', 'Cycle570_totals': (4, 4), 'Ramsey_word_attached': True}, '5:4': {'Cycle451_ratio': '5/4', 'Cycle570_totals': (4, 5), 'Ramsey_word_attached': True}}, 'Cycle570_additive_prefix_and_rollover': {1: {'split': 'train', 'EG_exact': True, 'inverse_exact': True, 'totals': (4, 3)}, 2: {'split': 'train', 'EG_exact': True, 'inverse_exact': True, 'totals': (8, 7)}, 4: {'split': 'train', 'EG_exact': True, 'inverse_exact': True, 'totals': (16, 15)}, 5: {'split': 'train', 'EG_exact': True, 'inverse_exact': True, 'totals': (20, 19)}, 8: {'split': 'held', 'EG_exact': True, 'inverse_exact': True, 'totals': (32, 31)}, 13: {'split': 'held', 'EG_exact': True, 'inverse_exact': True, 'totals': (52, 51)}, 21: {'split': 'held', 'EG_exact': True, 'inverse_exact': True, 'totals': (84, 84)}}, 'typed_event_deletion_controls': 9, 'Ramsey_to_response_law_derived': False, 'event_actuality_or_Record_derived': False, 'proper_time_or_lapse_derived': False, 'universal_clock_equivalence_derived': False, 'pass': True}
+PASS Route B exactly reproduces the frozen q=2-positive and odd-checkpoint-zero algebraic recurrence boundary :: {'rows': [{'length': 3, 'split': 'train', 'Ramsey_words': [{'law_applications': 1, 'X_pair': 0.0, 'Y_pair': 0.0, 'visibility_amplitude': 0.0, 'phase_word_defined': False, 'principal_phase_difference': None, 'contact_deletion_signal': 1.5977831777738262e-17}, {'law_applications': 2, 'X_pair': 0.378433107835146, 'Y_pair': 0.2185356780671071, 'visibility_amplitude': 0.4370005259653786, 'phase_word_defined': True, 'principal_phase_difference': 0.5236923565425526, 'contact_deletion_signal': 0.16588474983998308}], 'inverse_residual': 8.692323121966852e-16, 'antisymmetry_residual': 2.754498869333378e-16, 'norm_residual': 3.3306690738754696e-16, 'translation_covariance_residual': 0.0, 'A2_branch_wrapped_phase_not_energy': -2.9789445604663647, 'A2_branch': {'relative_eigen_residual': 6.029689190904235e-16, 'relative_contact_weight': 0.2640138035257292, 'onsite_A2_source_weight': 0.264013803525729, 'onsite_A2_source_fraction': 0.9999999999999993, 'continuation_points_including_K0': 1, 'minimum_adjacent_branch_overlap': 1.0, 'intermediate_noncompatible_K_used_only_for_branch_selection': False, 'quotient_columns': 483, 'contact_weight': 0.264013803525729, 'relative_radius_squared': 1.4942521552228294, 'seam_boundary_weight': 0.0}}, {'length': 6, 'split': 'held', 'Ramsey_words': [{'law_applications': 1, 'X_pair': 0.0, 'Y_pair': 0.0, 'visibility_amplitude': 0.0, 'phase_word_defined': False, 'principal_phase_difference': None, 'contact_deletion_signal': 1.5977831777738262e-17}, {'law_applications': 2, 'X_pair': 0.378433107835146, 'Y_pair': 0.21853567806710708, 'visibility_amplitude': 0.4370005259653786, 'phase_word_defined': True, 'principal_phase_difference': 0.5236923565425525, 'contact_deletion_signal': 0.16588474983998308}, {'law_applications': 3, 'X_pair': 0.0, 'Y_pair': 0.0, 'visibility_amplitude': 0.0, 'phase_word_defined': False, 'principal_phase_difference': None, 'contact_deletion_signal': 0.17392192402952786}], 'inverse_residual': 1.21105627705897e-15, 'antisymmetry_residual': 3.1791681797518814e-16, 'norm_residual': 4.6629367034256575e-15, 'translation_covariance_residual': 0.0, 'A2_branch_wrapped_phase_not_energy': -2.9771814800643273, 'A2_branch': {'relative_eigen_residual': 6.282359432018985e-16, 'relative_contact_weight': 0.2684608052069249, 'onsite_A2_source_weight': 0.26846080520692467, 'onsite_A2_source_fraction': 0.9999999999999992, 'continuation_points_including_K0': 1, 'minimum_adjacent_branch_overlap': 1.0, 'intermediate_noncompatible_K_used_only_for_branch_selection': False, 'quotient_columns': 3864, 'contact_weight': 0.2684608052069249, 'relative_radius_squared': 1.8246792754792485, 'seam_boundary_weight': 0.0032513852507496275}}], 'physical': {'executed_layer': 'coarse algebraic N=2 free-plus-contact update plus algebraic vacuum/A2 readout', 'upstream_Cycle590_compiler_consumed_as_runtime_dependency': True, 'Cycle599_composed_physical_M2': None, 'Ramsey_interface_physical_EG': None, 'Ramsey_interface_physical_leakage': None, 'Ramsey_interface_physical_layout': None, 'primitive_composition_verified': False, 'binder_role_bit_only': True, 'binder_physical_M2': None, 'local_even_pair_observable_coarse_support': 'six direction modes at one coarse cell', 'pair_pulse_and_readout_primitive_synthesis': 'open', 'Cycle590_physical_schedule_reexecuted_or_composed_here': False, 'global_N_le_3_cutoff_locally_enforced': False, 'global_N_le_3_cutoff_supplied': True, 'runtime_global_parity_or_order_service': False, 'algebraic_proper_cubic_frames': 24, 'algebraic_A2_observable_orbit_covariance_residual': 5.382005793715205e-16, 'physical_covariance_layout': None}, 'pulse_inverse_residual': 3.1560822113208575e-16, 'maximum_dynamic_residual': 4.6629367034256575e-15, 'minimum_q2_contact_deletion_signal': 0.16588474983998308, 'maximum_odd_checkpoint_visibility': 0.0, 'held_event_quadratures': {'X_pair': 0.378433107835146, 'Y_pair': 0.21853567806710708, 'visibility_amplitude': 0.4370005259653786, 'phase_word_defined': True, 'principal_phase_difference': 0.5236923565425525}, 'frozen_return_boundary': {'q_even_2': 'nonzero local return visibility on train L3 and held L6', 'q_odd_1_and_3': 'zero local return visibility on every frozen applicable row', 'scope': 'the frozen q=1,2,3 checkpoints only; not an all-q theorem'}, 'phase_origin': 'prepared vacuum/local-A2 relative phase at the first typed event', 'single_word_branch_rule': 'principal phase only when the observed word is strictly inside (-pi,pi)', 'multi_event_unwrapping_rule': 'supplied/open; not invoked', 'law_application_count_called_time': False, 'principal_or_wrapped_phase_called_energy': False, 'squared_norm_called_probability_or_occurrence': False, 'route_disposition': 'positive exact frozen algebraic recurrence boundary; interesting candidate only', 'every_frozen_clock_word_defined': False, 'observed_frozen_parity_boundary_exact': True, 'pass': True}
+PASS algebraic Ramsey quadratures attach only to the frozen typed 3:4/4:4/5:4 comparator candidates :: {'executed_interface': 'host-side algebraic typed-candidate attachment', 'Ramsey_payload_physical_M2': None, 'payload_physical_EG': None, 'payload_physical_leakage': None, 'payload_physical_layout': None, 'future_Cycle610_612_back_credit': False, 'Cycle451_comparator': {'3:4': {'Cycle451_ratio': '3/4', 'Cycle570_totals': (4, 3), 'Ramsey_word_attached': True}, '4:4': {'Cycle451_ratio': '1', 'Cycle570_totals': (4, 4), 'Ramsey_word_attached': True}, '5:4': {'Cycle451_ratio': '5/4', 'Cycle570_totals': (4, 5), 'Ramsey_word_attached': True}}, 'Cycle570_additive_prefix_and_rollover': {1: {'split': 'train', 'EG_exact': True, 'inverse_exact': True, 'totals': (4, 3)}, 2: {'split': 'train', 'EG_exact': True, 'inverse_exact': True, 'totals': (8, 7)}, 4: {'split': 'train', 'EG_exact': True, 'inverse_exact': True, 'totals': (16, 15)}, 5: {'split': 'train', 'EG_exact': True, 'inverse_exact': True, 'totals': (20, 19)}, 8: {'split': 'held', 'EG_exact': True, 'inverse_exact': True, 'totals': (32, 31)}, 13: {'split': 'held', 'EG_exact': True, 'inverse_exact': True, 'totals': (52, 51)}, 21: {'split': 'held', 'EG_exact': True, 'inverse_exact': True, 'totals': (84, 84)}}, 'typed_event_deletion_controls': 9, 'Ramsey_to_response_law_derived': False, 'event_actuality_or_Record_derived': False, 'proper_time_or_lapse_derived': False, 'universal_clock_equivalence_derived': False, 'pass': True}
 
 ROUTE C — FROZEN E/T1/T2 SECOND-MODE FINITE SEARCH
-PASS Route C reruns the frozen E/T1/T2 search and scopes its held-localization failure while retaining the finite A2/T2 word :: {'searches': {7: {'E': {'candidate_found': False}, 'T1': {'candidate_found': True, 'candidate_count': 12, 'wrapped_phase_not_energy': -3.024282589443377, 'irrep_weight': 0.9999999999999999, 'contact_weight': 0.17175847702252833, 'relative_radius_squared': 6.3000551099698665, 'seam_boundary_weight': 0.2624385044712205, 'eigen_residual': 9.252516939060458e-16}, 'T2': {'candidate_found': True, 'candidate_count': 6, 'wrapped_phase_not_energy': -3.005060936119328, 'irrep_weight': 0.9999999999999998, 'contact_weight': 0.2123561808327399, 'relative_radius_squared': 3.2987475197107283, 'seam_boundary_weight': 0.10411407864813774, 'eigen_residual': 6.762394308310377e-16}}, 11: {'E': {'candidate_found': False}, 'T1': {'candidate_found': True, 'candidate_count': 13, 'wrapped_phase_not_energy': -2.9905921163649714, 'irrep_weight': 0.9999999999999998, 'contact_weight': 0.006663423592624215, 'relative_radius_squared': 28.634475544133252, 'seam_boundary_weight': 0.3315695321892437, 'eigen_residual': 1.275743168296189e-15}, 'T2': {'candidate_found': True, 'candidate_count': 5, 'wrapped_phase_not_energy': -3.004761181577758, 'irrep_weight': 0.9999999999999998, 'contact_weight': 0.12747303525734843, 'relative_radius_squared': 13.54827002321993, 'seam_boundary_weight': 0.18265942566004978, 'eigen_residual': 9.40833685900419e-16}}}, 'A2_T2_cross_rows': [{'length': 7, 'split': 'train', 'A2_wrapped_phase_not_energy': -2.9755723246482932, 'T2_wrapped_phase_not_energy': -3.005060936119328, 'nonwrapping_phase_difference_word': -0.029488611471035066, 'maximum_direction_component_local_cross_term': 0.015677827231577766, 'proper_cubic_invariant_cross_term': 2.814147102425851e-16, 'direction_component_orbit_size': 24, 'maximum_all24_local_observable_orbit_residual': 0.0}, {'length': 11, 'split': 'held', 'A2_wrapped_phase_not_energy': -2.97557567317691, 'T2_wrapped_phase_not_energy': -3.004761181577758, 'nonwrapping_phase_difference_word': -0.029185508400848343, 'maximum_direction_component_local_cross_term': 0.010027981211304705, 'proper_cubic_invariant_cross_term': 1.3509019845059034e-16, 'direction_component_orbit_size': 24, 'maximum_all24_local_observable_orbit_residual': 0.0}], 'frozen_held_localization_gate': {'contact_min': 0.18, 'radius2_max': 6.0, 'seam_max': 0.12}, 'finite_box_second_mode_phase_word_positive': True, 'held_T1_local_clock_gate': False, 'held_T2_local_clock_gate': False, 'route_disposition': 'positive finite-box direction-resolved A2/T2 phase-difference word; not retained as a held local matter clock because the independently frozen L11 localization gate fails', 'failure_scope': 'this E/T1/T2 search window and localization criterion only', 'shared_substrate_obstruction': False, 'maximum_eigen_residual': 1.275743168296189e-15, 'pass': True}
+PASS Route C reruns the frozen E/T1/T2 search and scopes its held-localization failure while retaining the finite A2/T2 word :: {'searches': {7: {'E': {'candidate_found': False}, 'T1': {'candidate_found': True, 'candidate_count': 12, 'wrapped_phase_not_energy': -3.024282589443377, 'irrep_weight': 0.9999999999999999, 'contact_weight': 0.17175847702252833, 'relative_radius_squared': 6.3000551099698665, 'seam_boundary_weight': 0.2624385044712205, 'eigen_residual': 9.252516939060458e-16}, 'T2': {'candidate_found': True, 'candidate_count': 6, 'wrapped_phase_not_energy': -3.005060936119328, 'irrep_weight': 0.9999999999999998, 'contact_weight': 0.2123561808327399, 'relative_radius_squared': 3.2987475197107283, 'seam_boundary_weight': 0.10411407864813774, 'eigen_residual': 6.762394308310377e-16}}, 11: {'E': {'candidate_found': False}, 'T1': {'candidate_found': True, 'candidate_count': 13, 'wrapped_phase_not_energy': -2.9905921163649714, 'irrep_weight': 0.9999999999999998, 'contact_weight': 0.006663423592624215, 'relative_radius_squared': 28.634475544133252, 'seam_boundary_weight': 0.3315695321892437, 'eigen_residual': 1.275743168296189e-15}, 'T2': {'candidate_found': True, 'candidate_count': 5, 'wrapped_phase_not_energy': -3.004761181577758, 'irrep_weight': 0.9999999999999998, 'contact_weight': 0.12747303525734843, 'relative_radius_squared': 13.54827002321993, 'seam_boundary_weight': 0.18265942566004978, 'eigen_residual': 9.40833685900419e-16}}}, 'A2_T2_cross_rows': [{'length': 7, 'split': 'train', 'A2_wrapped_phase_not_energy': -2.9755723246482932, 'T2_wrapped_phase_not_energy': -3.005060936119328, 'nonwrapping_phase_difference_word': -0.029488611471035066, 'maximum_direction_component_local_cross_term': 0.015677827231577766, 'proper_cubic_invariant_cross_term': 2.814147102425851e-16, 'direction_component_orbit_size': 24, 'maximum_all24_local_observable_orbit_residual': 0.0}, {'length': 11, 'split': 'held', 'A2_wrapped_phase_not_energy': -2.97557567317691, 'T2_wrapped_phase_not_energy': -3.004761181577758, 'nonwrapping_phase_difference_word': -0.029185508400848343, 'maximum_direction_component_local_cross_term': 0.010027981211304705, 'proper_cubic_invariant_cross_term': 1.3509019845059034e-16, 'direction_component_orbit_size': 24, 'maximum_all24_local_observable_orbit_residual': 0.0}], 'frozen_held_localization_gate': {'contact_min': 0.18, 'radius2_max': 6.0, 'seam_max': 0.12}, 'finite_box_second_mode_phase_word_positive': True, 'held_T1_local_clock_gate': False, 'held_T2_local_clock_gate': False, 'route_disposition': 'interesting finite-box algebraic A2/T2 phase-difference candidate only; not qualified as a held local matter clock because the frozen L11 localization gate fails, and no physical M2 compiler is composed', 'Cycle599_composed_physical_M2': None, 'physical_EG': None, 'physical_leakage': None, 'physical_layout': None, 'failure_scope': 'this E/T1/T2 search window and localization criterion only', 'shared_substrate_obstruction': False, 'maximum_eigen_residual': 1.275743168296189e-15, 'pass': True}
 PASS malformed, off-domain, and deleted supplies are rejected rather than assigned clock values :: {'lawful_domain_rejections': 6, 'expected_rejections': 6, 'off_grid_beta_query': 'absent because Route A constructs an operator before sectors and Route B has fixed beta=-0.3', 'binder_deletion': 'Ramsey event word undefined', 'phase_origin_deletion': 'Ramsey event word undefined', 'event_matcher_deletion': 'Ramsey event word undefined', 'pair_readout_deletion': 'no quadrature word', 'contact_deletion': 'q=2 and q=3 full-state residuals are nonzero; q=1 residual is zero and is part of the frozen failed boundary', 'pass': True}
-PASS fresh N1-N8 scopes the Route-C failure and permits no broad negative, minimum-content claim, or axiom pressure :: {'N1_normalized_route_families': ({'object_formulation': 'Q1 functional register tensor physical dimer compiler', 'mechanism_invariant': 'operator functional calculus and Ramsey arm', 'terminal_obligation': 'independent operational reference clock', 'attempted': True, 'disposition': 'positive'}, {'object_formulation': 'vacuum direct-sum local A2 pair on N0/N2 code', 'mechanism_invariant': 'even grade-changing pair quadratures under free+contact', 'terminal_obligation': 'intrinsic local matter clock at matched events', 'attempted': True, 'disposition': 'failed preregistered route: q=2 recurrence positive, q=1/q=3 local return zero'}, {'object_formulation': 'A2 versus E/T1/T2 finite spectral branches', 'mechanism_invariant': 'number-conserving local direction-component cross term', 'terminal_obligation': 'independent second-mode local clock', 'attempted': True, 'disposition': 'finite word positive; held localization gate fails'}, {'object_formulation': 'two physical dimer copies', 'mechanism_invariant': 'autonomous encounter and return event', 'terminal_obligation': 'relational encounter clock', 'attempted': False, 'disposition': 'open'}, {'object_formulation': 'locally charged binder plus gauge rotor', 'mechanism_invariant': 'Gauss-preserving phase accumulation', 'terminal_obligation': 'local cutoff and clock in one substrate', 'attempted': False, 'disposition': 'open'}, {'object_formulation': 'two-dimer scattering packet', 'mechanism_invariant': 'matched free/contact delay against reference channel', 'terminal_obligation': 'interaction-conditioned clock comparison', 'attempted': False, 'disposition': 'open pending N4 compiler'}), 'N1_attempted_qualifying_families': 3, 'N1_required_for_broad_negative': 5, 'N1_broad_negative_gate': 'FAIL — only three normalized families were attempted', 'N2_directional_wall_independence': [{'pair': ('dense register control synthesis', 'local pair pulse synthesis'), 'left_to_right': 'bounded primitive synthesis of matrix functions does not supply explicit gates for the compiler-completed A2 pair rotation', 'right_to_left': 'explicit gates for the compiler-completed A2 pair rotation does not supply bounded primitive synthesis of matrix functions', 'collapsed': False}, {'pair': ('dense register control synthesis', 'phase origin and multi-event unwrapping'), 'left_to_right': 'bounded primitive synthesis of matrix functions does not supply physical branch-origin and rollover certificate', 'right_to_left': 'physical branch-origin and rollover certificate does not supply bounded primitive synthesis of matrix functions', 'collapsed': False}, {'pair': ('dense register control synthesis', 'event actuality'), 'left_to_right': 'bounded primitive synthesis of matrix functions does not supply Record formation and realized-event selection', 'right_to_left': 'Record formation and realized-event selection does not supply bounded primitive synthesis of matrix functions', 'collapsed': False}, {'pair': ('dense register control synthesis', 'second-mode held localization'), 'left_to_right': 'bounded primitive synthesis of matrix functions does not supply held co-moving localized branch or encounter device', 'right_to_left': 'held co-moving localized branch or encounter device does not supply bounded primitive synthesis of matrix functions', 'collapsed': False}, {'pair': ('dense register control synthesis', 'global N<=3 locality'), 'left_to_right': 'bounded primitive synthesis of matrix functions does not supply bounded local Gauss/check enforcement', 'right_to_left': 'bounded local Gauss/check enforcement does not supply bounded primitive synthesis of matrix functions', 'collapsed': False}, {'pair': ('dense register control synthesis', 'universal calibration'), 'left_to_right': 'bounded primitive synthesis of matrix functions does not supply cross-device empirical equivalence and continuum unit map', 'right_to_left': 'cross-device empirical equivalence and continuum unit map does not supply bounded primitive synthesis of matrix functions', 'collapsed': False}, {'pair': ('local pair pulse synthesis', 'phase origin and multi-event unwrapping'), 'left_to_right': 'explicit gates for the compiler-completed A2 pair rotation does not supply physical branch-origin and rollover certificate', 'right_to_left': 'physical branch-origin and rollover certificate does not supply explicit gates for the compiler-completed A2 pair rotation', 'collapsed': False}, {'pair': ('local pair pulse synthesis', 'event actuality'), 'left_to_right': 'explicit gates for the compiler-completed A2 pair rotation does not supply Record formation and realized-event selection', 'right_to_left': 'Record formation and realized-event selection does not supply explicit gates for the compiler-completed A2 pair rotation', 'collapsed': False}, {'pair': ('local pair pulse synthesis', 'second-mode held localization'), 'left_to_right': 'explicit gates for the compiler-completed A2 pair rotation does not supply held co-moving localized branch or encounter device', 'right_to_left': 'held co-moving localized branch or encounter device does not supply explicit gates for the compiler-completed A2 pair rotation', 'collapsed': False}, {'pair': ('local pair pulse synthesis', 'global N<=3 locality'), 'left_to_right': 'explicit gates for the compiler-completed A2 pair rotation does not supply bounded local Gauss/check enforcement', 'right_to_left': 'bounded local Gauss/check enforcement does not supply explicit gates for the compiler-completed A2 pair rotation', 'collapsed': False}, {'pair': ('local pair pulse synthesis', 'universal calibration'), 'left_to_right': 'explicit gates for the compiler-completed A2 pair rotation does not supply cross-device empirical equivalence and continuum unit map', 'right_to_left': 'cross-device empirical equivalence and continuum unit map does not supply explicit gates for the compiler-completed A2 pair rotation', 'collapsed': False}, {'pair': ('phase origin and multi-event unwrapping', 'event actuality'), 'left_to_right': 'physical branch-origin and rollover certificate does not supply Record formation and realized-event selection', 'right_to_left': 'Record formation and realized-event selection does not supply physical branch-origin and rollover certificate', 'collapsed': False}, {'pair': ('phase origin and multi-event unwrapping', 'second-mode held localization'), 'left_to_right': 'physical branch-origin and rollover certificate does not supply held co-moving localized branch or encounter device', 'right_to_left': 'held co-moving localized branch or encounter device does not supply physical branch-origin and rollover certificate', 'collapsed': False}, {'pair': ('phase origin and multi-event unwrapping', 'global N<=3 locality'), 'left_to_right': 'physical branch-origin and rollover certificate does not supply bounded local Gauss/check enforcement', 'right_to_left': 'bounded local Gauss/check enforcement does not supply physical branch-origin and rollover certificate', 'collapsed': False}, {'pair': ('phase origin and multi-event unwrapping', 'universal calibration'), 'left_to_right': 'physical branch-origin and rollover certificate does not supply cross-device empirical equivalence and continuum unit map', 'right_to_left': 'cross-device empirical equivalence and continuum unit map does not supply physical branch-origin and rollover certificate', 'collapsed': False}, {'pair': ('event actuality', 'second-mode held localization'), 'left_to_right': 'Record formation and realized-event selection does not supply held co-moving localized branch or encounter device', 'right_to_left': 'held co-moving localized branch or encounter device does not supply Record formation and realized-event selection', 'collapsed': False}, {'pair': ('event actuality', 'global N<=3 locality'), 'left_to_right': 'Record formation and realized-event selection does not supply bounded local Gauss/check enforcement', 'right_to_left': 'bounded local Gauss/check enforcement does not supply Record formation and realized-event selection', 'collapsed': False}, {'pair': ('event actuality', 'universal calibration'), 'left_to_right': 'Record formation and realized-event selection does not supply cross-device empirical equivalence and continuum unit map', 'right_to_left': 'cross-device empirical equivalence and continuum unit map does not supply Record formation and realized-event selection', 'collapsed': False}, {'pair': ('second-mode held localization', 'global N<=3 locality'), 'left_to_right': 'held co-moving localized branch or encounter device does not supply bounded local Gauss/check enforcement', 'right_to_left': 'bounded local Gauss/check enforcement does not supply held co-moving localized branch or encounter device', 'collapsed': False}, {'pair': ('second-mode held localization', 'universal calibration'), 'left_to_right': 'held co-moving localized branch or encounter device does not supply cross-device empirical equivalence and continuum unit map', 'right_to_left': 'cross-device empirical equivalence and continuum unit map does not supply held co-moving localized branch or encounter device', 'collapsed': False}, {'pair': ('global N<=3 locality', 'universal calibration'), 'left_to_right': 'bounded local Gauss/check enforcement does not supply cross-device empirical equivalence and continuum unit map', 'right_to_left': 'cross-device empirical equivalence and continuum unit map does not supply bounded local Gauss/check enforcement', 'collapsed': False}], 'N3_hidden_supplies': ('beta=-0.3, contact=0.37, finite tori and boundary conditions', 'Q1 population, ring orientation, Cayley/principal formulas, CLOCK_SCALE=8 and dense control invocation', 'vacuum/local-A2 pulse, occupied binder, phase origin, readout quadratures and matched-event triggers', 'global N<=3 domain, compile-time colors/layers, blank auxiliaries and noiseless gates', 'Cycle451 identity/profile/predecessor matcher and Cycle570 root/profile/four-edge standard'), 'N4_exact_residual_matching': {'Route_A': {'surface': 'physical_intrinsic_ramsey_clock_strict_M2_time_bridge_tournament_cycle599_2026_07_22.py:170', 'residual': 3.6417626336070564e-16}, 'Route_B': {'surface': 'physical_intrinsic_ramsey_clock_strict_M2_time_bridge_tournament_cycle599_2026_07_22.py:439', 'residual': 4.6629367034256575e-15}, 'Route_C': {'surface': 'physical_intrinsic_ramsey_clock_strict_M2_time_bridge_tournament_cycle599_2026_07_22.py:613', 'residual': 1.275743168296189e-15}, 'Route_C_wall': 'held L11 localization gate, not compiler or event-matcher failure'}, 'N5_resolution_rhetoric': {'exact': 'finite declared code spaces and pinned local/compiler/event laws', 'numerical': 'finite eigensolver residuals and coherent quadratures', 'interpretive': 'one bounded-support q=2 recurrence phase-difference interface over strict physical dynamics; preregistered clock route failed and primitive pulse/readout closure is open', 'not_claimed': 'proper time, lapse, energy, universal clock equivalence, Record actuality'}, 'N6_partial_closure_paths': ('synthesize the 10-M2 functional control from the retained primitive grammar', 'synthesize the local A2 pulse/readout in one 53-M2 block', 'replace supplied global N<=3 cutoff by a local Gauss/check law', 'try the independent two-copy encounter route before any shared negative', 'derive a physical phase-origin/rollover certificate and empirical cross-clock calibration'), 'N6_new_axiom_gate_invoked': False, 'N7_hostile_steelman': 'A hostile constructive reviewer can keep the positive q=2 local A2 recurrence, add a bounded charged binder/rotor that enforces the number domain locally, and compare two such devices only at the already-physical Cycle570 event conveyor; this route is concrete enough to defeat a present shared-obstruction claim.', 'N8_cross_cycle_echo': 'Cycle441 already separated principal/Cayley operational words, Cycle451 supplied strict matching, Cycle570 made additive rollover physical, Cycle583 supplied A2/T2 internal content, and Cycle590 placed the N2 law on strict M2.  Cycle599 composes those shores without erasing their supplies.', 'negative_claim_shipped': False, 'minimum_content_claim_shipped': False, 'shared_obstruction': False, 'axiom_pressure': False, 'pass': True}
-PASS the Cycle599 note freezes the operational boundary, supplies, and fresh N1-N8 :: {'required_fragments': 30, 'missing': ()}
-PASS cold resource caps :: {'elapsed_seconds': 12.987893749959767, 'maximum_RSS_bytes': 1180549120}
+PASS current N1-N8 schema fails the no-go gate while preserving only the narrowed algebraic positive :: {'Status': 'FAIL', 'artifact_status': 'PASS_NARROWED_ALGEBRAIC_POSITIVE_ONLY', 'N1_routes': ({'object_formulation': 'Q1 functional register tensor physical dimer compiler', 'mechanism_invariant': 'operator functional calculus and Ramsey arm', 'terminal_obligation': 'independent operational reference clock', 'honesty_marker': 'ATTEMPTED', 'search_status': 'COUNTED', 'disposition': 'positive dense algebraic candidate; no Cycle599 physical-M2 composition'}, {'object_formulation': 'vacuum direct-sum local A2 pair on N0/N2 code', 'mechanism_invariant': 'even grade-changing pair quadratures under free+contact', 'terminal_obligation': 'intrinsic local matter clock at matched events', 'honesty_marker': 'ATTEMPTED', 'search_status': 'COUNTED', 'disposition': 'exact algebraic q=2-positive/odd-zero boundary; no complete clock or physical interface'}, {'object_formulation': 'A2 versus E/T1/T2 finite spectral branches', 'mechanism_invariant': 'number-conserving local direction-component cross term', 'terminal_obligation': 'independent second-mode local clock', 'honesty_marker': 'ATTEMPTED', 'search_status': 'COUNTED', 'disposition': 'finite word positive; held localization gate fails'}, {'object_formulation': 'two physical dimer copies', 'mechanism_invariant': 'autonomous encounter and return event', 'terminal_obligation': 'relational encounter clock', 'honesty_marker': None, 'search_status': 'OPEN_UNTESTED_NOT_COUNTED', 'disposition': 'open'}, {'object_formulation': 'locally charged binder plus gauge rotor', 'mechanism_invariant': 'Gauss-preserving phase accumulation', 'terminal_obligation': 'local cutoff and clock in one substrate', 'honesty_marker': None, 'search_status': 'OPEN_UNTESTED_NOT_COUNTED', 'disposition': 'open'}, {'object_formulation': 'two-dimer scattering packet', 'mechanism_invariant': 'matched free/contact delay against reference channel', 'terminal_obligation': 'interaction-conditioned clock comparison', 'honesty_marker': None, 'search_status': 'OPEN_UNTESTED_NOT_COUNTED', 'disposition': 'open pending N4 compiler'}), 'N1_qualifying': 3, 'N1_required': 5, 'N1_gate': 'FAIL', 'N2_collapsed_walls': ('dense register control synthesis', 'local pair pulse/readout synthesis', 'phase origin and multi-event unwrapping', 'event actuality', 'second-mode held localization', 'global N<=3 locality', 'universal calibration'), 'N2_directional_wall_independence': ({'pair': ('dense register control synthesis', 'local pair pulse/readout synthesis'), 'left_closes_right': False, 'left_to_right_reason': 'a primitive-M2 E-G/leakage/layout certificate for the dense functional register control does not construct a primitive-M2 E-G/leakage/layout certificate for vacuum/A2 preparation and X/Y readout', 'right_closes_left': False, 'right_to_left_reason': 'a primitive-M2 E-G/leakage/layout certificate for vacuum/A2 preparation and X/Y readout does not construct a primitive-M2 E-G/leakage/layout certificate for the dense functional register control', 'independent': True}, {'pair': ('dense register control synthesis', 'phase origin and multi-event unwrapping'), 'left_closes_right': False, 'left_to_right_reason': 'a primitive-M2 E-G/leakage/layout certificate for the dense functional register control does not construct an autonomous origin plus rollover/branch certificate', 'right_closes_left': False, 'right_to_left_reason': 'an autonomous origin plus rollover/branch certificate does not construct a primitive-M2 E-G/leakage/layout certificate for the dense functional register control', 'independent': True}, {'pair': ('dense register control synthesis', 'event actuality'), 'left_closes_right': False, 'left_to_right_reason': 'a primitive-M2 E-G/leakage/layout certificate for the dense functional register control does not construct a framework-owned event-selection and Record-formation law', 'right_closes_left': False, 'right_to_left_reason': 'a framework-owned event-selection and Record-formation law does not construct a primitive-M2 E-G/leakage/layout certificate for the dense functional register control', 'independent': True}, {'pair': ('dense register control synthesis', 'second-mode held localization'), 'left_closes_right': False, 'left_to_right_reason': 'a primitive-M2 E-G/leakage/layout certificate for the dense functional register control does not construct a held co-moving localized branch or encounter device', 'right_closes_left': False, 'right_to_left_reason': 'a held co-moving localized branch or encounter device does not construct a primitive-M2 E-G/leakage/layout certificate for the dense functional register control', 'independent': True}, {'pair': ('dense register control synthesis', 'global N<=3 locality'), 'left_closes_right': False, 'left_to_right_reason': 'a primitive-M2 E-G/leakage/layout certificate for the dense functional register control does not construct bounded local Gauss/check enforcement of the number domain', 'right_closes_left': False, 'right_to_left_reason': 'bounded local Gauss/check enforcement of the number domain does not construct a primitive-M2 E-G/leakage/layout certificate for the dense functional register control', 'independent': True}, {'pair': ('dense register control synthesis', 'universal calibration'), 'left_closes_right': False, 'left_to_right_reason': 'a primitive-M2 E-G/leakage/layout certificate for the dense functional register control does not construct an empirical cross-device equivalence and continuum unit map', 'right_closes_left': False, 'right_to_left_reason': 'an empirical cross-device equivalence and continuum unit map does not construct a primitive-M2 E-G/leakage/layout certificate for the dense functional register control', 'independent': True}, {'pair': ('local pair pulse/readout synthesis', 'phase origin and multi-event unwrapping'), 'left_closes_right': False, 'left_to_right_reason': 'a primitive-M2 E-G/leakage/layout certificate for vacuum/A2 preparation and X/Y readout does not construct an autonomous origin plus rollover/branch certificate', 'right_closes_left': False, 'right_to_left_reason': 'an autonomous origin plus rollover/branch certificate does not construct a primitive-M2 E-G/leakage/layout certificate for vacuum/A2 preparation and X/Y readout', 'independent': True}, {'pair': ('local pair pulse/readout synthesis', 'event actuality'), 'left_closes_right': False, 'left_to_right_reason': 'a primitive-M2 E-G/leakage/layout certificate for vacuum/A2 preparation and X/Y readout does not construct a framework-owned event-selection and Record-formation law', 'right_closes_left': False, 'right_to_left_reason': 'a framework-owned event-selection and Record-formation law does not construct a primitive-M2 E-G/leakage/layout certificate for vacuum/A2 preparation and X/Y readout', 'independent': True}, {'pair': ('local pair pulse/readout synthesis', 'second-mode held localization'), 'left_closes_right': False, 'left_to_right_reason': 'a primitive-M2 E-G/leakage/layout certificate for vacuum/A2 preparation and X/Y readout does not construct a held co-moving localized branch or encounter device', 'right_closes_left': False, 'right_to_left_reason': 'a held co-moving localized branch or encounter device does not construct a primitive-M2 E-G/leakage/layout certificate for vacuum/A2 preparation and X/Y readout', 'independent': True}, {'pair': ('local pair pulse/readout synthesis', 'global N<=3 locality'), 'left_closes_right': False, 'left_to_right_reason': 'a primitive-M2 E-G/leakage/layout certificate for vacuum/A2 preparation and X/Y readout does not construct bounded local Gauss/check enforcement of the number domain', 'right_closes_left': False, 'right_to_left_reason': 'bounded local Gauss/check enforcement of the number domain does not construct a primitive-M2 E-G/leakage/layout certificate for vacuum/A2 preparation and X/Y readout', 'independent': True}, {'pair': ('local pair pulse/readout synthesis', 'universal calibration'), 'left_closes_right': False, 'left_to_right_reason': 'a primitive-M2 E-G/leakage/layout certificate for vacuum/A2 preparation and X/Y readout does not construct an empirical cross-device equivalence and continuum unit map', 'right_closes_left': False, 'right_to_left_reason': 'an empirical cross-device equivalence and continuum unit map does not construct a primitive-M2 E-G/leakage/layout certificate for vacuum/A2 preparation and X/Y readout', 'independent': True}, {'pair': ('phase origin and multi-event unwrapping', 'event actuality'), 'left_closes_right': False, 'left_to_right_reason': 'an autonomous origin plus rollover/branch certificate does not construct a framework-owned event-selection and Record-formation law', 'right_closes_left': False, 'right_to_left_reason': 'a framework-owned event-selection and Record-formation law does not construct an autonomous origin plus rollover/branch certificate', 'independent': True}, {'pair': ('phase origin and multi-event unwrapping', 'second-mode held localization'), 'left_closes_right': False, 'left_to_right_reason': 'an autonomous origin plus rollover/branch certificate does not construct a held co-moving localized branch or encounter device', 'right_closes_left': False, 'right_to_left_reason': 'a held co-moving localized branch or encounter device does not construct an autonomous origin plus rollover/branch certificate', 'independent': True}, {'pair': ('phase origin and multi-event unwrapping', 'global N<=3 locality'), 'left_closes_right': False, 'left_to_right_reason': 'an autonomous origin plus rollover/branch certificate does not construct bounded local Gauss/check enforcement of the number domain', 'right_closes_left': False, 'right_to_left_reason': 'bounded local Gauss/check enforcement of the number domain does not construct an autonomous origin plus rollover/branch certificate', 'independent': True}, {'pair': ('phase origin and multi-event unwrapping', 'universal calibration'), 'left_closes_right': False, 'left_to_right_reason': 'an autonomous origin plus rollover/branch certificate does not construct an empirical cross-device equivalence and continuum unit map', 'right_closes_left': False, 'right_to_left_reason': 'an empirical cross-device equivalence and continuum unit map does not construct an autonomous origin plus rollover/branch certificate', 'independent': True}, {'pair': ('event actuality', 'second-mode held localization'), 'left_closes_right': False, 'left_to_right_reason': 'a framework-owned event-selection and Record-formation law does not construct a held co-moving localized branch or encounter device', 'right_closes_left': False, 'right_to_left_reason': 'a held co-moving localized branch or encounter device does not construct a framework-owned event-selection and Record-formation law', 'independent': True}, {'pair': ('event actuality', 'global N<=3 locality'), 'left_closes_right': False, 'left_to_right_reason': 'a framework-owned event-selection and Record-formation law does not construct bounded local Gauss/check enforcement of the number domain', 'right_closes_left': False, 'right_to_left_reason': 'bounded local Gauss/check enforcement of the number domain does not construct a framework-owned event-selection and Record-formation law', 'independent': True}, {'pair': ('event actuality', 'universal calibration'), 'left_closes_right': False, 'left_to_right_reason': 'a framework-owned event-selection and Record-formation law does not construct an empirical cross-device equivalence and continuum unit map', 'right_closes_left': False, 'right_to_left_reason': 'an empirical cross-device equivalence and continuum unit map does not construct a framework-owned event-selection and Record-formation law', 'independent': True}, {'pair': ('second-mode held localization', 'global N<=3 locality'), 'left_closes_right': False, 'left_to_right_reason': 'a held co-moving localized branch or encounter device does not construct bounded local Gauss/check enforcement of the number domain', 'right_closes_left': False, 'right_to_left_reason': 'bounded local Gauss/check enforcement of the number domain does not construct a held co-moving localized branch or encounter device', 'independent': True}, {'pair': ('second-mode held localization', 'universal calibration'), 'left_closes_right': False, 'left_to_right_reason': 'a held co-moving localized branch or encounter device does not construct an empirical cross-device equivalence and continuum unit map', 'right_closes_left': False, 'right_to_left_reason': 'an empirical cross-device equivalence and continuum unit map does not construct a held co-moving localized branch or encounter device', 'independent': True}, {'pair': ('global N<=3 locality', 'universal calibration'), 'left_closes_right': False, 'left_to_right_reason': 'bounded local Gauss/check enforcement of the number domain does not construct an empirical cross-device equivalence and continuum unit map', 'right_closes_left': False, 'right_to_left_reason': 'an empirical cross-device equivalence and continuum unit map does not construct bounded local Gauss/check enforcement of the number domain', 'independent': True}), 'N3_explicit_supplies': ('beta=-0.3, contact=0.37, finite tori and boundary conditions', 'Q1 population, ring orientation, Cayley/principal formulas, CLOCK_SCALE=8 and dense control invocation', 'vacuum/local-A2 pulse, binder role, phase origin, readout quadratures and matched-event triggers', 'global N<=3 domain, compile-time colors/layers, blank auxiliaries and noiseless gates', 'Cycle451 identity/profile/predecessor matcher and Cycle570 root/profile/four-edge standard'), 'N3_phrase_hit_classifications': ({'hit': 'preregistered/frozen route', 'surface': 'Cycle599 route labels', 'classification': 'NON_LOAD_BEARING_CONTEXT', 'reason': 'the actual law/application split is hashed before evaluation'}, {'hit': 'registered', 'surface': 'one recursively pinned immutable module filename', 'classification': 'NON_LOAD_BEARING_CONTEXT', 'reason': 'filename text carries no physics premise'}, {'hit': 'quoted N3 scan vocabulary', 'surface': 'Cycle599 note checklist', 'classification': 'NON_LOAD_BEARING_META_SCAN', 'reason': 'the words are audit targets, not proof steps'}), 'N3_hidden_conditions_promoted': 0, 'N4_exact_residual_matches': ({'witness': 'docs/work_history/repo/review_feedback/COHERENT_MULTIBETA_PHYSICAL_MASS_CONTROLLER_TOURNAMENT_CYCLE441_NOTE_2026-07-19.md:69-105', 'prior_residual': 'functional Cayley/principal register operators are defined before spectral analysis, with dense completion supplied', 'current_residual': 'Cycle599 reproduces only the dense algebraic Ramsey unitary/inverse and held alias separation', 'exact_match': True, 'current_witness': 'physical_intrinsic_ramsey_clock_strict_M2_time_bridge_tournament_cycle599_2026_07_22.py:459', 'current_numeric_residual': 3.6417626336070564e-16}, {'witness': 'docs/work_history/repo/review_feedback/PHYSICAL_FULL_TORUS_DIMER_M2_COMPILER_TOURNAMENT_CYCLE590_NOTE_2026-07-22.md:127-150', 'prior_residual': 'coarse N2 free-plus-contact update is domain-matched while physical circuit composition at the new interface remains open', 'current_residual': 'Cycle599 executes the same coarse algebraic update and does not claim the uncomposed Ramsey physical interface', 'exact_match': True, 'current_witness': 'physical_intrinsic_ramsey_clock_strict_M2_time_bridge_tournament_cycle599_2026_07_22.py:737', 'current_numeric_residual': 4.6629367034256575e-15}, {'witness': 'docs/work_history/repo/review_feedback/PHYSICAL_CONTACT_DIMER_INFINITE_INTERNAL_CONTENT_TOURNAMENT_CYCLE583_NOTE_2026-07-22.md:256-269', 'prior_residual': 'finite T2 cross term is positive while the held localization ingredient fails', 'current_residual': 'Cycle599 reproduces that finite-box algebraic word and the held localization failure only', 'exact_match': True, 'current_witness': 'physical_intrinsic_ramsey_clock_strict_M2_time_bridge_tournament_cycle599_2026_07_22.py:918', 'current_numeric_residual': 1.275743168296189e-15}), 'N4_dropped_nonmatches': ({'witness': 'Cycle451/Cycle570 physical event and accumulator constructions', 'prior_residual': 'physical event-side schedules and interval candidates', 'current_residual': 'Cycle599 performs only a host-side algebraic Ramsey payload attachment', 'exact_match': False, 'disposition': 'dropped as physical-composition evidence'},), 'N5_rhetoric_resolution_ledger': ({'phrase': 'the executed q-indexed algebraic recurrence is not promoted to time', 'per_element': 'UNTESTED_NO_NEGATIVE_CLAIM', 'per_site': 'UNTESTED_NO_NEGATIVE_CLAIM', 'per_mode': 'UNTESTED_NO_NEGATIVE_CLAIM', 'per_block': 'TESTED: q labels repeated finite algebraic update composition only', 'lattice_wide': 'UNTESTED_NO_NEGATIVE_CLAIM'}, {'phrase': 'the reported wrapped/eigen phases are not promoted to energy', 'per_element': 'UNTESTED_NO_NEGATIVE_CLAIM', 'per_site': 'UNTESTED_NO_NEGATIVE_CLAIM', 'per_mode': 'UNTESTED_NO_NEGATIVE_CLAIM', 'per_block': 'TESTED: finite algebraic phase words have no generator-to-energy map', 'lattice_wide': 'UNTESTED_NO_NEGATIVE_CLAIM'}, {'phrase': 'the binder role bit is not promoted to a physical M2', 'per_element': 'UNTESTED_NO_NEGATIVE_CLAIM', 'per_site': 'UNTESTED_NO_NEGATIVE_CLAIM', 'per_mode': 'UNTESTED_NO_NEGATIVE_CLAIM', 'per_block': 'TESTED: no primitive composition, E-G, leakage, or layout exists for the role', 'lattice_wide': 'UNTESTED_NO_NEGATIVE_CLAIM'}, {'phrase': 'the binder/latch is not promoted to a framework Record', 'per_element': 'UNTESTED_NO_NEGATIVE_CLAIM', 'per_site': 'UNTESTED_NO_NEGATIVE_CLAIM', 'per_mode': 'UNTESTED_NO_NEGATIVE_CLAIM', 'per_block': 'TESTED: the algebraic role has no actuality, permanence, readability, or admission law', 'lattice_wide': 'UNTESTED_NO_NEGATIVE_CLAIM'}, {'phrase': 'the coherent squared norm is not promoted to probability or occurrence', 'per_element': 'UNTESTED_NO_NEGATIVE_CLAIM', 'per_site': 'UNTESTED_NO_NEGATIVE_CLAIM', 'per_mode': 'UNTESTED_NO_NEGATIVE_CLAIM', 'per_block': 'TESTED: finite coherent weights are diagnostics without selection or calibration', 'lattice_wide': 'UNTESTED_NO_NEGATIVE_CLAIM'}), 'N6_partial_closure_paths': ({'candidate_path': 'scripts/physical_intrinsic_ramsey_clock_strict_M2_time_bridge_tournament_cycle599_2026_07_22.py', 'status': 'EXECUTED_NARROW_ALGEBRAIC_POSITIVE', 'what_it_closes': 'the frozen q=2-positive/odd-zero recurrence and finite A2/T2 candidate diagnostics'}, {'candidate_path': 'scripts/coherent_multibeta_physical_mass_controller_tournament_cycle441_2026_07_19.py', 'status': 'EXACT_PINNED_PARENT_COMPONENT', 'what_it_closes': "the Q1 functional register construction, not Cycle599's dense-control M2 composition"}, {'candidate_path': 'scripts/physical_full_torus_dimer_M2_compiler_tournament_cycle590_2026_07_22.py', 'status': 'EXACT_PINNED_PARENT_COMPONENT', 'what_it_closes': 'the parent N2 compiler boundary, not the new vacuum/A2 pulse/readout interface'}, {'candidate_path': 'scripts/physical_local_even_A2_pulse_readout_M2_compiler_cycle_next.py', 'status': 'NOT_CREATED_OPEN_CANDIDATE', 'what_it_closes': 'primitive preparation/readout E-G, leakage, layout, deletion, all24 covariance, and local number checks'}, {'candidate_path': 'scripts/physical_intrinsic_tick_relational_duration_ramsey_composition_cycle_next.py', 'status': 'NOT_CREATED_OPEN_CANDIDATE', 'what_it_closes': 'autonomous non-postselected preparation plus physical endpoint/predecessor interval attachment if constructed without back-credit'}), 'N6_convention_only_closure_found': False, 'N6_new_axiom_required': False, 'N6_control_plane_edit': False, 'N7_steelman': {'mechanism': 'compose the exact-pinned Cycle590 parent compiler with a new primitive-M2 vacuum/A2 pulse and X/Y readout block, autonomously prepare a non-postselected bound branch, and compare its intrinsic tick at physically supplied endpoint/predecessor intervals', 'supporting_authority': ('docs/work_history/repo/review_feedback/PHYSICAL_FULL_TORUS_DIMER_M2_COMPILER_TOURNAMENT_CYCLE590_NOTE_2026-07-22.md:127-150', 'docs/work_history/repo/review_feedback/PHYSICAL_CONTACT_DIMER_INFINITE_INTERNAL_CONTENT_TOURNAMENT_CYCLE583_NOTE_2026-07-22.md:256-269', 'physical_intrinsic_ramsey_clock_strict_M2_time_bridge_tournament_cycle599_2026_07_22.py:737'), 'actionable_terminal': 'construct held L3/L6 physical E-G/inverse/leakage/layout and all24 certificates for preparation, update, readout, and deletion; then attach the output to an autonomous intrinsic-tick/relational-duration interface with no postselection, host q schedule, or unphysical binder role', 'openness': 'this concrete construction is unattempted and defeats any broad no-go or minimum-content claim'}, 'N8_cross_cycle_echo': ({'prior_wall': 'Cycle441 dense functional-control completion remains supplied', 'citation': 'docs/work_history/repo/review_feedback/COHERENT_MULTIBETA_PHYSICAL_MASS_CONTROLLER_TOURNAMENT_CYCLE441_NOTE_2026-07-19.md:214-230', 'retired_status': 'OPEN_IN_CYCLE599', 'retirement_mechanism': 'none here', 'applicability_here': 'compile the dense register control before calling Route A physical'}, {'prior_wall': 'Cycle451 relational candidate matcher lacks universal clock law', 'citation': 'docs/work_history/repo/review_feedback/PHYSICAL_SOURCE_CONDITIONED_RELATIONAL_DUAL_CLOCK_CYCLE451_NOTE_2026-07-19.md', 'retired_status': 'OPEN', 'retirement_mechanism': 'none here', 'applicability_here': 'host-side attachment supplies no physical Ramsey payload'}, {'prior_wall': 'Cycle570 accumulator/event schedule versus clock semantics', 'citation': 'docs/work_history/repo/review_feedback/PHYSICAL_JOINT_CLOCK_ACCUMULATOR_CONTRACTION_BRIDGE_CYCLE570_NOTE_2026-07-22.md', 'retired_status': 'OPEN_AT_RAMSEY_INTERFACE', 'retirement_mechanism': 'exact parent event schedule only', 'applicability_here': 'requires physical payload composition, not aliasing'}, {'prior_wall': 'Cycle583 finite T2 localization', 'citation': 'docs/work_history/repo/review_feedback/PHYSICAL_CONTACT_DIMER_INFINITE_INTERNAL_CONTENT_TOURNAMENT_CYCLE583_NOTE_2026-07-22.md:256-269', 'retired_status': 'NOT_RETIRED', 'retirement_mechanism': 'none; finite cross term survives but held localization fails', 'applicability_here': 'try encounter/two-copy routes rather than declare obstruction'}, {'prior_wall': 'Cycle590 new-interface physical circuit composition', 'citation': 'docs/work_history/repo/review_feedback/PHYSICAL_FULL_TORUS_DIMER_M2_COMPILER_TOURNAMENT_CYCLE590_NOTE_2026-07-22.md:127-150', 'retired_status': 'NOT_RETIRED', 'retirement_mechanism': 'parent compiler is pinned but not composed', 'applicability_here': 'primitive vacuum/A2 pulse/readout compiler is the next direct path'}, {'prior_wall': 'Cycle597 no-go schema distinguishes positive artifact from failed negative gate', 'citation': 'docs/work_history/repo/review_feedback/PHYSICAL_STATE_FAMILY_GRADE_TRANSITION_SYNTHESIS_TOURNAMENT_CYCLE597_NOTE_2026-07-22.md', 'retired_status': 'PROCESS_PATTERN_APPLIED', 'retirement_mechanism': 'narrow positive survives while no-go gate fails', 'applicability_here': 'C599 uses the same separation without importing Cycle597 science'}, {'prior_wall': 'Cycles610-612 time-side acceptance interface', 'citation': 'future acceptance contract only; not runtime-pinned or executed by Cycle599', 'retired_status': 'NO_BACK_CREDIT', 'retirement_mechanism': 'repo-side intrinsic tick/relational duration exists, autonomous non-postselected preparation remains open', 'applicability_here': '3:4 delay is rate-modulation association; 5:4 advance needs event/count edit; endpoint predicate plus reversible deletion-sensitive predecessor/clock interval are future physical supplies'}), 'broad_no_go_claim': False, 'minimum_content_claim': False, 'shared_obstruction_claim': False, 'axiom_pressure_claim': False, 'pass': True}
+PASS the Cycle599 note freezes the operational boundary, supplies, and fresh N1-N8 :: {'required_fragments': 40, 'missing': ()}
+PASS cold resource caps :: {'elapsed_seconds': 10.878679084009491, 'maximum_RSS_bytes': 947372032}
+{
+  "audit": "unset",
+  "author_accepted": false,
+  "authority": "none",
+  "axiom_pressure": false,
+  "constitutional_effect": "none",
+  "domain_and_deletions": {
+    "binder_deletion": "Ramsey event word undefined",
+    "contact_deletion": "q=2 and q=3 full-state residuals are nonzero; q=1 residual is zero and is part of the frozen failed boundary",
+    "event_matcher_deletion": "Ramsey event word undefined",
+    "expected_rejections": 6,
+    "lawful_domain_rejections": 6,
+    "off_grid_beta_query": "absent because Route A constructs an operator before sectors and Route B has fixed beta=-0.3",
+    "pair_readout_deletion": "no quadrature word",
+    "pass": true,
+    "phase_origin_deletion": "Ramsey event word undefined"
+  },
+  "elapsed_seconds": 10.878679084009491,
+  "frozen_law_sha256": "39928f22dadfba7b9c1a9be7c84bdb430afaa06b7a6f7914ffa49a10e60e7282",
+  "future_Cycle610_612_acceptance_contracts": {
+    "Cycle612_5_to_4_advance": "requires event/count edit; not the same mechanism",
+    "Cycle612_prefrozen_3_to_4_delay": "rate-modulation association only",
+    "autonomous_non_postselected_bound_branch_preparation": "open",
+    "back_credit_to_Cycle599": false,
+    "executed_or_runtime_pinned_by_Cycle599": false,
+    "physical_side_supplies": "endpoint matter predicate plus reversible deletion-sensitive predecessor/clock interval",
+    "repo_side_intrinsic_tick_and_relational_duration_exist": true
+  },
+  "highest_honest_terminal": "interesting exact algebraic q=2 A2 recurrence on train L3 and held L6 with zero frozen odd-checkpoint visibility; no Cycle599 route composes a physical-M2 Ramsey device, so a complete clock, primitive pulse/readout layout, proper time, lapse, energy, Record actuality, and universal clock equivalence remain open",
+  "maturity_rebase": null,
+  "maximum_RSS_bytes": 947372032,
+  "no_go_discipline": {
+    "N1_gate": "FAIL",
+    "N1_qualifying": 3,
+    "N1_required": 5,
+    "N1_routes": [
+      {
+        "disposition": "positive dense algebraic candidate; no Cycle599 physical-M2 composition",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "operator functional calculus and Ramsey arm",
+        "object_formulation": "Q1 functional register tensor physical dimer compiler",
+        "search_status": "COUNTED",
+        "terminal_obligation": "independent operational reference clock"
+      },
+      {
+        "disposition": "exact algebraic q=2-positive/odd-zero boundary; no complete clock or physical interface",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "even grade-changing pair quadratures under free+contact",
+        "object_formulation": "vacuum direct-sum local A2 pair on N0/N2 code",
+        "search_status": "COUNTED",
+        "terminal_obligation": "intrinsic local matter clock at matched events"
+      },
+      {
+        "disposition": "finite word positive; held localization gate fails",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "number-conserving local direction-component cross term",
+        "object_formulation": "A2 versus E/T1/T2 finite spectral branches",
+        "search_status": "COUNTED",
+        "terminal_obligation": "independent second-mode local clock"
+      },
+      {
+        "disposition": "open",
+        "honesty_marker": null,
+        "mechanism_invariant": "autonomous encounter and return event",
+        "object_formulation": "two physical dimer copies",
+        "search_status": "OPEN_UNTESTED_NOT_COUNTED",
+        "terminal_obligation": "relational encounter clock"
+      },
+      {
+        "disposition": "open",
+        "honesty_marker": null,
+        "mechanism_invariant": "Gauss-preserving phase accumulation",
+        "object_formulation": "locally charged binder plus gauge rotor",
+        "search_status": "OPEN_UNTESTED_NOT_COUNTED",
+        "terminal_obligation": "local cutoff and clock in one substrate"
+      },
+      {
+        "disposition": "open pending N4 compiler",
+        "honesty_marker": null,
+        "mechanism_invariant": "matched free/contact delay against reference channel",
+        "object_formulation": "two-dimer scattering packet",
+        "search_status": "OPEN_UNTESTED_NOT_COUNTED",
+        "terminal_obligation": "interaction-conditioned clock comparison"
+      }
+    ],
+    "N2_collapsed_walls": [
+      "dense register control synthesis",
+      "local pair pulse/readout synthesis",
+      "phase origin and multi-event unwrapping",
+      "event actuality",
+      "second-mode held localization",
+      "global N<=3 locality",
+      "universal calibration"
+    ],
+    "N2_directional_wall_independence": [
+      {
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "a primitive-M2 E-G/leakage/layout certificate for the dense functional register control does not construct a primitive-M2 E-G/leakage/layout certificate for vacuum/A2 preparation and X/Y readout",
+        "pair": [
+          "dense register control synthesis",
+          "local pair pulse/readout synthesis"
+        ],
+        "right_closes_left": false,
+        "right_to_left_reason": "a primitive-M2 E-G/leakage/layout certificate for vacuum/A2 preparation and X/Y readout does not construct a primitive-M2 E-G/leakage/layout certificate for the dense functional register control"
+      },
+      {
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "a primitive-M2 E-G/leakage/layout certificate for the dense functional register control does not construct an autonomous origin plus rollover/branch certificate",
+        "pair": [
+          "dense register control synthesis",
+          "phase origin and multi-event unwrapping"
+        ],
+        "right_closes_left": false,
+        "right_to_left_reason": "an autonomous origin plus rollover/branch certificate does not construct a primitive-M2 E-G/leakage/layout certificate for the dense functional register control"
+      },
+      {
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "a primitive-M2 E-G/leakage/layout certificate for the dense functional register control does not construct a framework-owned event-selection and Record-formation law",
+        "pair": [
+          "dense register control synthesis",
+          "event actuality"
+        ],
+        "right_closes_left": false,
+        "right_to_left_reason": "a framework-owned event-selection and Record-formation law does not construct a primitive-M2 E-G/leakage/layout certificate for the dense functional register control"
+      },
+      {
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "a primitive-M2 E-G/leakage/layout certificate for the dense functional register control does not construct a held co-moving localized branch or encounter device",
+        "pair": [
+          "dense register control synthesis",
+          "second-mode held localization"
+        ],
+        "right_closes_left": false,
+        "right_to_left_reason": "a held co-moving localized branch or encounter device does not construct a primitive-M2 E-G/leakage/layout certificate for the dense functional register control"
+      },
+      {
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "a primitive-M2 E-G/leakage/layout certificate for the dense functional register control does not construct bounded local Gauss/check enforcement of the number domain",
+        "pair": [
+          "dense register control synthesis",
+          "global N<=3 locality"
+        ],
+        "right_closes_left": false,
+        "right_to_left_reason": "bounded local Gauss/check enforcement of the number domain does not construct a primitive-M2 E-G/leakage/layout certificate for the dense functional register control"
+      },
+      {
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "a primitive-M2 E-G/leakage/layout certificate for the dense functional register control does not construct an empirical cross-device equivalence and continuum unit map",
+        "pair": [
+          "dense register control synthesis",
+          "universal calibration"
+        ],
+        "right_closes_left": false,
+        "right_to_left_reason": "an empirical cross-device equivalence and continuum unit map does not construct a primitive-M2 E-G/leakage/layout certificate for the dense functional register control"
+      },
+      {
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "a primitive-M2 E-G/leakage/layout certificate for vacuum/A2 preparation and X/Y readout does not construct an autonomous origin plus rollover/branch certificate",
+        "pair": [
+          "local pair pulse/readout synthesis",
+          "phase origin and multi-event unwrapping"
+        ],
+        "right_closes_left": false,
+        "right_to_left_reason": "an autonomous origin plus rollover/branch certificate does not construct a primitive-M2 E-G/leakage/layout certificate for vacuum/A2 preparation and X/Y readout"
+      },
+      {
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "a primitive-M2 E-G/leakage/layout certificate for vacuum/A2 preparation and X/Y readout does not construct a framework-owned event-selection and Record-formation law",
+        "pair": [
+          "local pair pulse/readout synthesis",
+          "event actuality"
+        ],
+        "right_closes_left": false,
+        "right_to_left_reason": "a framework-owned event-selection and Record-formation law does not construct a primitive-M2 E-G/leakage/layout certificate for vacuum/A2 preparation and X/Y readout"
+      },
+      {
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "a primitive-M2 E-G/leakage/layout certificate for vacuum/A2 preparation and X/Y readout does not construct a held co-moving localized branch or encounter device",
+        "pair": [
+          "local pair pulse/readout synthesis",
+          "second-mode held localization"
+        ],
+        "right_closes_left": false,
+        "right_to_left_reason": "a held co-moving localized branch or encounter device does not construct a primitive-M2 E-G/leakage/layout certificate for vacuum/A2 preparation and X/Y readout"
+      },
+      {
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "a primitive-M2 E-G/leakage/layout certificate for vacuum/A2 preparation and X/Y readout does not construct bounded local Gauss/check enforcement of the number domain",
+        "pair": [
+          "local pair pulse/readout synthesis",
+          "global N<=3 locality"
+        ],
+        "right_closes_left": false,
+        "right_to_left_reason": "bounded local Gauss/check enforcement of the number domain does not construct a primitive-M2 E-G/leakage/layout certificate for vacuum/A2 preparation and X/Y readout"
+      },
+      {
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "a primitive-M2 E-G/leakage/layout certificate for vacuum/A2 preparation and X/Y readout does not construct an empirical cross-device equivalence and continuum unit map",
+        "pair": [
+          "local pair pulse/readout synthesis",
+          "universal calibration"
+        ],
+        "right_closes_left": false,
+        "right_to_left_reason": "an empirical cross-device equivalence and continuum unit map does not construct a primitive-M2 E-G/leakage/layout certificate for vacuum/A2 preparation and X/Y readout"
+      },
+      {
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "an autonomous origin plus rollover/branch certificate does not construct a framework-owned event-selection and Record-formation law",
+        "pair": [
+          "phase origin and multi-event unwrapping",
+          "event actuality"
+        ],
+        "right_closes_left": false,
+        "right_to_left_reason": "a framework-owned event-selection and Record-formation law does not construct an autonomous origin plus rollover/branch certificate"
+      },
+      {
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "an autonomous origin plus rollover/branch certificate does not construct a held co-moving localized branch or encounter device",
+        "pair": [
+          "phase origin and multi-event unwrapping",
+          "second-mode held localization"
+        ],
+        "right_closes_left": false,
+        "right_to_left_reason": "a held co-moving localized branch or encounter device does not construct an autonomous origin plus rollover/branch certificate"
+      },
+      {
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "an autonomous origin plus rollover/branch certificate does not construct bounded local Gauss/check enforcement of the number domain",
+        "pair": [
+          "phase origin and multi-event unwrapping",
+          "global N<=3 locality"
+        ],
+        "right_closes_left": false,
+        "right_to_left_reason": "bounded local Gauss/check enforcement of the number domain does not construct an autonomous origin plus rollover/branch certificate"
+      },
+      {
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "an autonomous origin plus rollover/branch certificate does not construct an empirical cross-device equivalence and continuum unit map",
+        "pair": [
+          "phase origin and multi-event unwrapping",
+          "universal calibration"
+        ],
+        "right_closes_left": false,
+        "right_to_left_reason": "an empirical cross-device equivalence and continuum unit map does not construct an autonomous origin plus rollover/branch certificate"
+      },
+      {
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "a framework-owned event-selection and Record-formation law does not construct a held co-moving localized branch or encounter device",
+        "pair": [
+          "event actuality",
+          "second-mode held localization"
+        ],
+        "right_closes_left": false,
+        "right_to_left_reason": "a held co-moving localized branch or encounter device does not construct a framework-owned event-selection and Record-formation law"
+      },
+      {
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "a framework-owned event-selection and Record-formation law does not construct bounded local Gauss/check enforcement of the number domain",
+        "pair": [
+          "event actuality",
+          "global N<=3 locality"
+        ],
+        "right_closes_left": false,
+        "right_to_left_reason": "bounded local Gauss/check enforcement of the number domain does not construct a framework-owned event-selection and Record-formation law"
+      },
+      {
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "a framework-owned event-selection and Record-formation law does not construct an empirical cross-device equivalence and continuum unit map",
+        "pair": [
+          "event actuality",
+          "universal calibration"
+        ],
+        "right_closes_left": false,
+        "right_to_left_reason": "an empirical cross-device equivalence and continuum unit map does not construct a framework-owned event-selection and Record-formation law"
+      },
+      {
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "a held co-moving localized branch or encounter device does not construct bounded local Gauss/check enforcement of the number domain",
+        "pair": [
+          "second-mode held localization",
+          "global N<=3 locality"
+        ],
+        "right_closes_left": false,
+        "right_to_left_reason": "bounded local Gauss/check enforcement of the number domain does not construct a held co-moving localized branch or encounter device"
+      },
+      {
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "a held co-moving localized branch or encounter device does not construct an empirical cross-device equivalence and continuum unit map",
+        "pair": [
+          "second-mode held localization",
+          "universal calibration"
+        ],
+        "right_closes_left": false,
+        "right_to_left_reason": "an empirical cross-device equivalence and continuum unit map does not construct a held co-moving localized branch or encounter device"
+      },
+      {
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "bounded local Gauss/check enforcement of the number domain does not construct an empirical cross-device equivalence and continuum unit map",
+        "pair": [
+          "global N<=3 locality",
+          "universal calibration"
+        ],
+        "right_closes_left": false,
+        "right_to_left_reason": "an empirical cross-device equivalence and continuum unit map does not construct bounded local Gauss/check enforcement of the number domain"
+      }
+    ],
+    "N3_explicit_supplies": [
+      "beta=-0.3, contact=0.37, finite tori and boundary conditions",
+      "Q1 population, ring orientation, Cayley/principal formulas, CLOCK_SCALE=8 and dense control invocation",
+      "vacuum/local-A2 pulse, binder role, phase origin, readout quadratures and matched-event triggers",
+      "global N<=3 domain, compile-time colors/layers, blank auxiliaries and noiseless gates",
+      "Cycle451 identity/profile/predecessor matcher and Cycle570 root/profile/four-edge standard"
+    ],
+    "N3_hidden_conditions_promoted": 0,
+    "N3_phrase_hit_classifications": [
+      {
+        "classification": "NON_LOAD_BEARING_CONTEXT",
+        "hit": "preregistered/frozen route",
+        "reason": "the actual law/application split is hashed before evaluation",
+        "surface": "Cycle599 route labels"
+      },
+      {
+        "classification": "NON_LOAD_BEARING_CONTEXT",
+        "hit": "registered",
+        "reason": "filename text carries no physics premise",
+        "surface": "one recursively pinned immutable module filename"
+      },
+      {
+        "classification": "NON_LOAD_BEARING_META_SCAN",
+        "hit": "quoted N3 scan vocabulary",
+        "reason": "the words are audit targets, not proof steps",
+        "surface": "Cycle599 note checklist"
+      }
+    ],
+    "N4_dropped_nonmatches": [
+      {
+        "current_residual": "Cycle599 performs only a host-side algebraic Ramsey payload attachment",
+        "disposition": "dropped as physical-composition evidence",
+        "exact_match": false,
+        "prior_residual": "physical event-side schedules and interval candidates",
+        "witness": "Cycle451/Cycle570 physical event and accumulator constructions"
+      }
+    ],
+    "N4_exact_residual_matches": [
+      {
+        "current_numeric_residual": 3.6417626336070564e-16,
+        "current_residual": "Cycle599 reproduces only the dense algebraic Ramsey unitary/inverse and held alias separation",
+        "current_witness": "physical_intrinsic_ramsey_clock_strict_M2_time_bridge_tournament_cycle599_2026_07_22.py:459",
+        "exact_match": true,
+        "prior_residual": "functional Cayley/principal register operators are defined before spectral analysis, with dense completion supplied",
+        "witness": "docs/work_history/repo/review_feedback/COHERENT_MULTIBETA_PHYSICAL_MASS_CONTROLLER_TOURNAMENT_CYCLE441_NOTE_2026-07-19.md:69-105"
+      },
+      {
+        "current_numeric_residual": 4.6629367034256575e-15,
+        "current_residual": "Cycle599 executes the same coarse algebraic update and does not claim the uncomposed Ramsey physical interface",
+        "current_witness": "physical_intrinsic_ramsey_clock_strict_M2_time_bridge_tournament_cycle599_2026_07_22.py:737",
+        "exact_match": true,
+        "prior_residual": "coarse N2 free-plus-contact update is domain-matched while physical circuit composition at the new interface remains open",
+        "witness": "docs/work_history/repo/review_feedback/PHYSICAL_FULL_TORUS_DIMER_M2_COMPILER_TOURNAMENT_CYCLE590_NOTE_2026-07-22.md:127-150"
+      },
+      {
+        "current_numeric_residual": 1.275743168296189e-15,
+        "current_residual": "Cycle599 reproduces that finite-box algebraic word and the held localization failure only",
+        "current_witness": "physical_intrinsic_ramsey_clock_strict_M2_time_bridge_tournament_cycle599_2026_07_22.py:918",
+        "exact_match": true,
+        "prior_residual": "finite T2 cross term is positive while the held localization ingredient fails",
+        "witness": "docs/work_history/repo/review_feedback/PHYSICAL_CONTACT_DIMER_INFINITE_INTERNAL_CONTENT_TOURNAMENT_CYCLE583_NOTE_2026-07-22.md:256-269"
+      }
+    ],
+    "N5_rhetoric_resolution_ledger": [
+      {
+        "lattice_wide": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_block": "TESTED: q labels repeated finite algebraic update composition only",
+        "per_element": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_mode": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_site": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "phrase": "the executed q-indexed algebraic recurrence is not promoted to time"
+      },
+      {
+        "lattice_wide": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_block": "TESTED: finite algebraic phase words have no generator-to-energy map",
+        "per_element": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_mode": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_site": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "phrase": "the reported wrapped/eigen phases are not promoted to energy"
+      },
+      {
+        "lattice_wide": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_block": "TESTED: no primitive composition, E-G, leakage, or layout exists for the role",
+        "per_element": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_mode": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_site": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "phrase": "the binder role bit is not promoted to a physical M2"
+      },
+      {
+        "lattice_wide": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_block": "TESTED: the algebraic role has no actuality, permanence, readability, or admission law",
+        "per_element": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_mode": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_site": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "phrase": "the binder/latch is not promoted to a framework Record"
+      },
+      {
+        "lattice_wide": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_block": "TESTED: finite coherent weights are diagnostics without selection or calibration",
+        "per_element": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_mode": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_site": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "phrase": "the coherent squared norm is not promoted to probability or occurrence"
+      }
+    ],
+    "N6_control_plane_edit": false,
+    "N6_convention_only_closure_found": false,
+    "N6_new_axiom_required": false,
+    "N6_partial_closure_paths": [
+      {
+        "candidate_path": "scripts/physical_intrinsic_ramsey_clock_strict_M2_time_bridge_tournament_cycle599_2026_07_22.py",
+        "status": "EXECUTED_NARROW_ALGEBRAIC_POSITIVE",
+        "what_it_closes": "the frozen q=2-positive/odd-zero recurrence and finite A2/T2 candidate diagnostics"
+      },
+      {
+        "candidate_path": "scripts/coherent_multibeta_physical_mass_controller_tournament_cycle441_2026_07_19.py",
+        "status": "EXACT_PINNED_PARENT_COMPONENT",
+        "what_it_closes": "the Q1 functional register construction, not Cycle599's dense-control M2 composition"
+      },
+      {
+        "candidate_path": "scripts/physical_full_torus_dimer_M2_compiler_tournament_cycle590_2026_07_22.py",
+        "status": "EXACT_PINNED_PARENT_COMPONENT",
+        "what_it_closes": "the parent N2 compiler boundary, not the new vacuum/A2 pulse/readout interface"
+      },
+      {
+        "candidate_path": "scripts/physical_local_even_A2_pulse_readout_M2_compiler_cycle_next.py",
+        "status": "NOT_CREATED_OPEN_CANDIDATE",
+        "what_it_closes": "primitive preparation/readout E-G, leakage, layout, deletion, all24 covariance, and local number checks"
+      },
+      {
+        "candidate_path": "scripts/physical_intrinsic_tick_relational_duration_ramsey_composition_cycle_next.py",
+        "status": "NOT_CREATED_OPEN_CANDIDATE",
+        "what_it_closes": "autonomous non-postselected preparation plus physical endpoint/predecessor interval attachment if constructed without back-credit"
+      }
+    ],
+    "N7_steelman": {
+      "actionable_terminal": "construct held L3/L6 physical E-G/inverse/leakage/layout and all24 certificates for preparation, update, readout, and deletion; then attach the output to an autonomous intrinsic-tick/relational-duration interface with no postselection, host q schedule, or unphysical binder role",
+      "mechanism": "compose the exact-pinned Cycle590 parent compiler with a new primitive-M2 vacuum/A2 pulse and X/Y readout block, autonomously prepare a non-postselected bound branch, and compare its intrinsic tick at physically supplied endpoint/predecessor intervals",
+      "openness": "this concrete construction is unattempted and defeats any broad no-go or minimum-content claim",
+      "supporting_authority": [
+        "docs/work_history/repo/review_feedback/PHYSICAL_FULL_TORUS_DIMER_M2_COMPILER_TOURNAMENT_CYCLE590_NOTE_2026-07-22.md:127-150",
+        "docs/work_history/repo/review_feedback/PHYSICAL_CONTACT_DIMER_INFINITE_INTERNAL_CONTENT_TOURNAMENT_CYCLE583_NOTE_2026-07-22.md:256-269",
+        "physical_intrinsic_ramsey_clock_strict_M2_time_bridge_tournament_cycle599_2026_07_22.py:737"
+      ]
+    },
+    "N8_cross_cycle_echo": [
+      {
+        "applicability_here": "compile the dense register control before calling Route A physical",
+        "citation": "docs/work_history/repo/review_feedback/COHERENT_MULTIBETA_PHYSICAL_MASS_CONTROLLER_TOURNAMENT_CYCLE441_NOTE_2026-07-19.md:214-230",
+        "prior_wall": "Cycle441 dense functional-control completion remains supplied",
+        "retired_status": "OPEN_IN_CYCLE599",
+        "retirement_mechanism": "none here"
+      },
+      {
+        "applicability_here": "host-side attachment supplies no physical Ramsey payload",
+        "citation": "docs/work_history/repo/review_feedback/PHYSICAL_SOURCE_CONDITIONED_RELATIONAL_DUAL_CLOCK_CYCLE451_NOTE_2026-07-19.md",
+        "prior_wall": "Cycle451 relational candidate matcher lacks universal clock law",
+        "retired_status": "OPEN",
+        "retirement_mechanism": "none here"
+      },
+      {
+        "applicability_here": "requires physical payload composition, not aliasing",
+        "citation": "docs/work_history/repo/review_feedback/PHYSICAL_JOINT_CLOCK_ACCUMULATOR_CONTRACTION_BRIDGE_CYCLE570_NOTE_2026-07-22.md",
+        "prior_wall": "Cycle570 accumulator/event schedule versus clock semantics",
+        "retired_status": "OPEN_AT_RAMSEY_INTERFACE",
+        "retirement_mechanism": "exact parent event schedule only"
+      },
+      {
+        "applicability_here": "try encounter/two-copy routes rather than declare obstruction",
+        "citation": "docs/work_history/repo/review_feedback/PHYSICAL_CONTACT_DIMER_INFINITE_INTERNAL_CONTENT_TOURNAMENT_CYCLE583_NOTE_2026-07-22.md:256-269",
+        "prior_wall": "Cycle583 finite T2 localization",
+        "retired_status": "NOT_RETIRED",
+        "retirement_mechanism": "none; finite cross term survives but held localization fails"
+      },
+      {
+        "applicability_here": "primitive vacuum/A2 pulse/readout compiler is the next direct path",
+        "citation": "docs/work_history/repo/review_feedback/PHYSICAL_FULL_TORUS_DIMER_M2_COMPILER_TOURNAMENT_CYCLE590_NOTE_2026-07-22.md:127-150",
+        "prior_wall": "Cycle590 new-interface physical circuit composition",
+        "retired_status": "NOT_RETIRED",
+        "retirement_mechanism": "parent compiler is pinned but not composed"
+      },
+      {
+        "applicability_here": "C599 uses the same separation without importing Cycle597 science",
+        "citation": "docs/work_history/repo/review_feedback/PHYSICAL_STATE_FAMILY_GRADE_TRANSITION_SYNTHESIS_TOURNAMENT_CYCLE597_NOTE_2026-07-22.md",
+        "prior_wall": "Cycle597 no-go schema distinguishes positive artifact from failed negative gate",
+        "retired_status": "PROCESS_PATTERN_APPLIED",
+        "retirement_mechanism": "narrow positive survives while no-go gate fails"
+      },
+      {
+        "applicability_here": "3:4 delay is rate-modulation association; 5:4 advance needs event/count edit; endpoint predicate plus reversible deletion-sensitive predecessor/clock interval are future physical supplies",
+        "citation": "future acceptance contract only; not runtime-pinned or executed by Cycle599",
+        "prior_wall": "Cycles610-612 time-side acceptance interface",
+        "retired_status": "NO_BACK_CREDIT",
+        "retirement_mechanism": "repo-side intrinsic tick/relational duration exists, autonomous non-postselected preparation remains open"
+      }
+    ],
+    "Status": "FAIL",
+    "artifact_status": "PASS_NARROWED_ALGEBRAIC_POSITIVE_ONLY",
+    "axiom_pressure_claim": false,
+    "broad_no_go_claim": false,
+    "minimum_content_claim": false,
+    "pass": true,
+    "shared_obstruction_claim": false
+  },
+  "note_contract": {
+    "missing": [],
+    "required_fragments": 40
+  },
+  "note_sha256": "50246f4254afbd2769427f136e4770abcad055f472598ceba70471bca1abd829",
+  "pass": true,
+  "route_A_Q1_functional_clock": {
+    "Cycle599_composed_physical_M2": null,
+    "Q1_ring_nearest_neighbor_SWAP_count": 8,
+    "Q1_ring_schedule_residual": 0.0,
+    "algebraic_Q1_register_dimension": 9,
+    "algebraic_Ramsey_arm_dimension": 2,
+    "algebraic_product_dimension": 18,
+    "algebraic_register_frame_action": "I9 scalar internal block",
+    "beta_lookup_used": false,
+    "coherent_inverse_residual": 3.6417626336070564e-16,
+    "executed_layer": "18-dimensional dense algebraic Q1-register times Ramsey-arm product",
+    "frame_group_failures": 0,
+    "frame_group_products_checked": 576,
+    "functional_deletion_signal": 2.6756394597204696,
+    "functional_dense_control_primitive_synthesis": "open",
+    "held_alias_dark_weight_separation": 0.7507628370353518,
+    "interpretation": "algebraic functional Ramsey candidate, not a physical M2 clock and not a beta controller",
+    "lawful_domain_rejections": 2,
+    "matter_beta_changed_by_register": false,
+    "one_particle_mass_fixture_residual": 1.1102230246251565e-16,
+    "pass": true,
+    "physical_EG": null,
+    "physical_device_covariance_layout": null,
+    "physical_layout": null,
+    "physical_leakage": null,
+    "primitive_composition_verified": false,
+    "proper_cubic_frame_group_members_checked": 24,
+    "route_disposition": "interesting algebraic candidate only",
+    "rows": {
+      "cayley-functional": {
+        "bright_coherent_weight": 0.23613141036251756,
+        "dark_coherent_weight": 0.7638685896374818,
+        "held_beta": -2.792526803190927,
+        "held_coordinate": 17.013845458853122,
+        "residuals": {
+          "held_fringe_formula": 1.1102230246251565e-16,
+          "inverse": 3.83904121479328e-16,
+          "unitarity": 2.111439411654862e-15
+        }
+      },
+      "principal-functional": {
+        "bright_coherent_weight": 0.9868942473978697,
+        "dark_coherent_weight": 0.013105752602129945,
+        "held_beta": -2.792526803190927,
+        "held_coordinate": -1.8357104626856369,
+        "residuals": {
+          "held_fringe_formula": 1.1796119636642288e-16,
+          "inverse": 4.071675710570306e-16,
+          "unitarity": 1.6188892809882257e-15
+        }
+      }
+    },
+    "sector_menu_use": "post-construction analysis/calibration and held scoring only; never a physical runtime selector",
+    "upstream_Cycle590_compiler_composed_or_reexecuted": false
+  },
+  "route_B_local_even_A2_clock": {
+    "every_frozen_clock_word_defined": false,
+    "frozen_return_boundary": {
+      "q_even_2": "nonzero local return visibility on train L3 and held L6",
+      "q_odd_1_and_3": "zero local return visibility on every frozen applicable row",
+      "scope": "the frozen q=1,2,3 checkpoints only; not an all-q theorem"
+    },
+    "held_event_quadratures": {
+      "X_pair": 0.378433107835146,
+      "Y_pair": 0.21853567806710708,
+      "phase_word_defined": true,
+      "principal_phase_difference": 0.5236923565425525,
+      "visibility_amplitude": 0.4370005259653786
+    },
+    "law_application_count_called_time": false,
+    "maximum_dynamic_residual": 4.6629367034256575e-15,
+    "maximum_odd_checkpoint_visibility": 0.0,
+    "minimum_q2_contact_deletion_signal": 0.16588474983998308,
+    "multi_event_unwrapping_rule": "supplied/open; not invoked",
+    "observed_frozen_parity_boundary_exact": true,
+    "pass": true,
+    "phase_origin": "prepared vacuum/local-A2 relative phase at the first typed event",
+    "physical": {
+      "Cycle590_physical_schedule_reexecuted_or_composed_here": false,
+      "Cycle599_composed_physical_M2": null,
+      "Ramsey_interface_physical_EG": null,
+      "Ramsey_interface_physical_layout": null,
+      "Ramsey_interface_physical_leakage": null,
+      "algebraic_A2_observable_orbit_covariance_residual": 5.382005793715205e-16,
+      "algebraic_proper_cubic_frames": 24,
+      "binder_physical_M2": null,
+      "binder_role_bit_only": true,
+      "executed_layer": "coarse algebraic N=2 free-plus-contact update plus algebraic vacuum/A2 readout",
+      "global_N_le_3_cutoff_locally_enforced": false,
+      "global_N_le_3_cutoff_supplied": true,
+      "local_even_pair_observable_coarse_support": "six direction modes at one coarse cell",
+      "pair_pulse_and_readout_primitive_synthesis": "open",
+      "physical_covariance_layout": null,
+      "primitive_composition_verified": false,
+      "runtime_global_parity_or_order_service": false,
+      "upstream_Cycle590_compiler_consumed_as_runtime_dependency": true
+    },
+    "principal_or_wrapped_phase_called_energy": false,
+    "pulse_inverse_residual": 3.1560822113208575e-16,
+    "route_disposition": "positive exact frozen algebraic recurrence boundary; interesting candidate only",
+    "rows": [
+      {
+        "A2_branch": {
+          "contact_weight": 0.264013803525729,
+          "continuation_points_including_K0": 1,
+          "intermediate_noncompatible_K_used_only_for_branch_selection": false,
+          "minimum_adjacent_branch_overlap": 1.0,
+          "onsite_A2_source_fraction": 0.9999999999999993,
+          "onsite_A2_source_weight": 0.264013803525729,
+          "quotient_columns": 483,
+          "relative_contact_weight": 0.2640138035257292,
+          "relative_eigen_residual": 6.029689190904235e-16,
+          "relative_radius_squared": 1.4942521552228294,
+          "seam_boundary_weight": 0.0
+        },
+        "A2_branch_wrapped_phase_not_energy": -2.9789445604663647,
+        "Ramsey_words": [
+          {
+            "X_pair": 0.0,
+            "Y_pair": 0.0,
+            "contact_deletion_signal": 1.5977831777738262e-17,
+            "law_applications": 1,
+            "phase_word_defined": false,
+            "principal_phase_difference": null,
+            "visibility_amplitude": 0.0
+          },
+          {
+            "X_pair": 0.378433107835146,
+            "Y_pair": 0.2185356780671071,
+            "contact_deletion_signal": 0.16588474983998308,
+            "law_applications": 2,
+            "phase_word_defined": true,
+            "principal_phase_difference": 0.5236923565425526,
+            "visibility_amplitude": 0.4370005259653786
+          }
+        ],
+        "antisymmetry_residual": 2.754498869333378e-16,
+        "inverse_residual": 8.692323121966852e-16,
+        "length": 3,
+        "norm_residual": 3.3306690738754696e-16,
+        "split": "train",
+        "translation_covariance_residual": 0.0
+      },
+      {
+        "A2_branch": {
+          "contact_weight": 0.2684608052069249,
+          "continuation_points_including_K0": 1,
+          "intermediate_noncompatible_K_used_only_for_branch_selection": false,
+          "minimum_adjacent_branch_overlap": 1.0,
+          "onsite_A2_source_fraction": 0.9999999999999992,
+          "onsite_A2_source_weight": 0.26846080520692467,
+          "quotient_columns": 3864,
+          "relative_contact_weight": 0.2684608052069249,
+          "relative_eigen_residual": 6.282359432018985e-16,
+          "relative_radius_squared": 1.8246792754792485,
+          "seam_boundary_weight": 0.0032513852507496275
+        },
+        "A2_branch_wrapped_phase_not_energy": -2.9771814800643273,
+        "Ramsey_words": [
+          {
+            "X_pair": 0.0,
+            "Y_pair": 0.0,
+            "contact_deletion_signal": 1.5977831777738262e-17,
+            "law_applications": 1,
+            "phase_word_defined": false,
+            "principal_phase_difference": null,
+            "visibility_amplitude": 0.0
+          },
+          {
+            "X_pair": 0.378433107835146,
+            "Y_pair": 0.21853567806710708,
+            "contact_deletion_signal": 0.16588474983998308,
+            "law_applications": 2,
+            "phase_word_defined": true,
+            "principal_phase_difference": 0.5236923565425525,
+            "visibility_amplitude": 0.4370005259653786
+          },
+          {
+            "X_pair": 0.0,
+            "Y_pair": 0.0,
+            "contact_deletion_signal": 0.17392192402952786,
+            "law_applications": 3,
+            "phase_word_defined": false,
+            "principal_phase_difference": null,
+            "visibility_amplitude": 0.0
+          }
+        ],
+        "antisymmetry_residual": 3.1791681797518814e-16,
+        "inverse_residual": 1.21105627705897e-15,
+        "length": 6,
+        "norm_residual": 4.6629367034256575e-15,
+        "split": "held",
+        "translation_covariance_residual": 0.0
+      }
+    ],
+    "single_word_branch_rule": "principal phase only when the observed word is strictly inside (-pi,pi)",
+    "squared_norm_called_probability_or_occurrence": false
+  },
+  "route_C_second_mode": {
+    "A2_T2_cross_rows": [
+      {
+        "A2_wrapped_phase_not_energy": -2.9755723246482932,
+        "T2_wrapped_phase_not_energy": -3.005060936119328,
+        "direction_component_orbit_size": 24,
+        "length": 7,
+        "maximum_all24_local_observable_orbit_residual": 0.0,
+        "maximum_direction_component_local_cross_term": 0.015677827231577766,
+        "nonwrapping_phase_difference_word": -0.029488611471035066,
+        "proper_cubic_invariant_cross_term": 2.814147102425851e-16,
+        "split": "train"
+      },
+      {
+        "A2_wrapped_phase_not_energy": -2.97557567317691,
+        "T2_wrapped_phase_not_energy": -3.004761181577758,
+        "direction_component_orbit_size": 24,
+        "length": 11,
+        "maximum_all24_local_observable_orbit_residual": 0.0,
+        "maximum_direction_component_local_cross_term": 0.010027981211304705,
+        "nonwrapping_phase_difference_word": -0.029185508400848343,
+        "proper_cubic_invariant_cross_term": 1.3509019845059034e-16,
+        "split": "held"
+      }
+    ],
+    "Cycle599_composed_physical_M2": null,
+    "failure_scope": "this E/T1/T2 search window and localization criterion only",
+    "finite_box_second_mode_phase_word_positive": true,
+    "frozen_held_localization_gate": {
+      "contact_min": 0.18,
+      "radius2_max": 6.0,
+      "seam_max": 0.12
+    },
+    "held_T1_local_clock_gate": false,
+    "held_T2_local_clock_gate": false,
+    "maximum_eigen_residual": 1.275743168296189e-15,
+    "pass": true,
+    "physical_EG": null,
+    "physical_layout": null,
+    "physical_leakage": null,
+    "route_disposition": "interesting finite-box algebraic A2/T2 phase-difference candidate only; not qualified as a held local matter clock because the frozen L11 localization gate fails, and no physical M2 compiler is composed",
+    "searches": {
+      "7": {
+        "E": {
+          "candidate_found": false
+        },
+        "T1": {
+          "candidate_count": 12,
+          "candidate_found": true,
+          "contact_weight": 0.17175847702252833,
+          "eigen_residual": 9.252516939060458e-16,
+          "irrep_weight": 0.9999999999999999,
+          "relative_radius_squared": 6.3000551099698665,
+          "seam_boundary_weight": 0.2624385044712205,
+          "wrapped_phase_not_energy": -3.024282589443377
+        },
+        "T2": {
+          "candidate_count": 6,
+          "candidate_found": true,
+          "contact_weight": 0.2123561808327399,
+          "eigen_residual": 6.762394308310377e-16,
+          "irrep_weight": 0.9999999999999998,
+          "relative_radius_squared": 3.2987475197107283,
+          "seam_boundary_weight": 0.10411407864813774,
+          "wrapped_phase_not_energy": -3.005060936119328
+        }
+      },
+      "11": {
+        "E": {
+          "candidate_found": false
+        },
+        "T1": {
+          "candidate_count": 13,
+          "candidate_found": true,
+          "contact_weight": 0.006663423592624215,
+          "eigen_residual": 1.275743168296189e-15,
+          "irrep_weight": 0.9999999999999998,
+          "relative_radius_squared": 28.634475544133252,
+          "seam_boundary_weight": 0.3315695321892437,
+          "wrapped_phase_not_energy": -2.9905921163649714
+        },
+        "T2": {
+          "candidate_count": 5,
+          "candidate_found": true,
+          "contact_weight": 0.12747303525734843,
+          "eigen_residual": 9.40833685900419e-16,
+          "irrep_weight": 0.9999999999999998,
+          "relative_radius_squared": 13.54827002321993,
+          "seam_boundary_weight": 0.18265942566004978,
+          "wrapped_phase_not_energy": -3.004761181577758
+        }
+      }
+    },
+    "shared_substrate_obstruction": false
+  },
+  "route_dispositions": {
+    "A": "interesting dense algebraic candidate only; physical M2 composition open",
+    "B": "strongest result: exact frozen q=2-positive/odd-zero coarse algebraic recurrence; physical Ramsey interface open",
+    "C": "interesting finite-box algebraic A2/T2 candidate; held localization and physical compiler open"
+  },
+  "runner_sha256": "7077c58b7c41f59606c8a5ccc0135017d937a0dd24184c083fa2df5b4b435840",
+  "shared_obstruction": false,
+  "shores": {
+    "Cycle597_byte_pinned_without_epistemic_standing": true,
+    "Cycle597_law_imported_or_consumed": false,
+    "exact_pinned_surfaces": 21,
+    "expected_runtime_dependency_manifest_sha256": "7016de60a1e3c451ee0aa0a235bdf8754615ab6d18b449c5bdc62809da9a0603",
+    "frozen_law_sha256": "39928f22dadfba7b9c1a9be7c84bdb430afaa06b7a6f7914ffa49a10e60e7282",
+    "functional_route_forbidden_hits": [],
+    "observed": {
+      "docs/work_history/repo/review_feedback/COHERENT_MULTIBETA_PHYSICAL_MASS_CONTROLLER_TOURNAMENT_CYCLE441_NOTE_2026-07-19.md": "072e760c11f0f69345aa3cd118835842bc5a0be6c7786426ace30a0dd4b8aa22",
+      "docs/work_history/repo/review_feedback/PHYSICAL_CONTACT_DIMER_INFINITE_INTERNAL_CONTENT_TOURNAMENT_CYCLE583_NOTE_2026-07-22.md": "6942341fa2fc8978a25acdd758677b04a5a1d0c9e13b8e5627bc9bf504814cf3",
+      "docs/work_history/repo/review_feedback/PHYSICAL_FULL_TORUS_DIMER_M2_COMPILER_TOURNAMENT_CYCLE590_NOTE_2026-07-22.md": "f0f3ed6d41132625b8907cbcda8f105b7ec975e4b952562b45fe5b7d8e1b3a0e",
+      "docs/work_history/repo/review_feedback/PHYSICAL_JOINT_CLOCK_ACCUMULATOR_CONTRACTION_BRIDGE_CYCLE570_NOTE_2026-07-22.md": "e88ee3daee2e07f215142d29cee7e6e5d3564bf5f92764aca49e89fe8f065438",
+      "docs/work_history/repo/review_feedback/PHYSICAL_SOURCE_CONDITIONED_RELATIONAL_DUAL_CLOCK_CYCLE451_NOTE_2026-07-19.md": "81f28e682b6b45d1572164a7a72b00d252bc81c542a4de5d83ed602b311320ca",
+      "docs/work_history/repo/review_feedback/PHYSICAL_STATE_FAMILY_GRADE_TRANSITION_SYNTHESIS_TOURNAMENT_CYCLE597_NOTE_2026-07-22.md": "9a786fc7c559437483fb357893ad23146ddbdebd71a992ed8c709053e9b1d413",
+      "docs/work_history/repo/review_feedback/SPATIAL_CAR_CONTACT_SEAM_FORM_FACTOR_CYCLE230_NOTE_2026-07-17.md": "a7a3a0a021dbd691c6c2ddb9163679b445c5110b8150f63395271037963c7132",
+      "outputs/physical_contact_dimer_infinite_internal_content_tournament_cycle583_cold_2026_07_22.txt": "22af96509364601a99c3ed2d6b148643ede02369f70e5be92629d1f0e5d3ddce",
+      "outputs/physical_contact_dimer_infinite_internal_content_tournament_cycle583_receipt_2026_07_22.json": "0f4e2df9e25cdc7137c42fb91666c5eaae10efc652d5af84f421e38c5ad97aab",
+      "outputs/physical_full_torus_dimer_M2_compiler_tournament_cycle590_cold_2026_07_22.txt": "cef70862eff7d6f10d562a67e2e8fcab503b998de5e0dea63300f0883efe398f",
+      "outputs/physical_full_torus_dimer_M2_compiler_tournament_cycle590_receipt_2026_07_22.json": "3ae94267d43a668a178ef02ee37ab12608f302419a25b0a37deffd27e51be647",
+      "outputs/physical_joint_clock_accumulator_contraction_bridge_cycle570_receipt_2026_07_22.json": "f9295faa4230427623ac350625a42fb17949fd86f523b6cf81aa247c14dd796c",
+      "outputs/physical_state_family_grade_transition_synthesis_tournament_cycle597_cold_2026_07_22.txt": "022a8f946a9953a91a97ba9db3c05c3b3fc73bd08fcfe576e80b95373f51acea",
+      "outputs/physical_state_family_grade_transition_synthesis_tournament_cycle597_receipt_2026_07_22.json": "99aa374f13725a6fefc70189050a4aa557fde8d3694d77e53b51869c170cec23",
+      "scripts/coherent_multibeta_physical_mass_controller_tournament_cycle441_2026_07_19.py": "c274f75ff2b2fe427f04598b84a01247765c562f7ab014ffee2d63af2f27b5d4",
+      "scripts/physical_contact_dimer_infinite_internal_content_tournament_cycle583_2026_07_22.py": "21957cc883550ee81fc48d5b55ad4a0384cbac8697557691c805d84c7c8dbaaf",
+      "scripts/physical_full_torus_dimer_M2_compiler_tournament_cycle590_2026_07_22.py": "43e5b749702fba9551fab43a242f832b824fdbff54817b5206097f02ad146e55",
+      "scripts/physical_joint_clock_accumulator_contraction_bridge_cycle570_2026_07_22.py": "37e9d0f336d773bd4a1957a6531f80dc35b9673a4ef0f99137e7fb33558bf849",
+      "scripts/physical_source_conditioned_relational_dual_clock_cycle451_2026_07_19.py": "c89e3d47b42b05c0d723afb5e68548bbb15ee79401eaa72f3c8c715e897071a1",
+      "scripts/physical_state_family_grade_transition_synthesis_tournament_cycle597_2026_07_22.py": "994f050fb33d7b9909896d195dca6be0062f56445ba49cac8731f196a3cfe79e",
+      "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py": "b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae"
+    },
+    "receipt_checks": {
+      "Cycle570": {
+        "authority_audit": true,
+        "note_bound": true,
+        "runner_bound": true,
+        "tests_pass": true
+      },
+      "Cycle583": {
+        "authority_audit": true,
+        "note_bound": true,
+        "runner_bound": true,
+        "tests_pass": true
+      },
+      "Cycle590": {
+        "authority_audit": true,
+        "note_bound": true,
+        "runner_bound": true,
+        "tests_pass": true
+      },
+      "Cycle597": {
+        "authority_audit": true,
+        "cold_bound": true,
+        "no_go_gate_fails": true,
+        "note_bound": true,
+        "runner_bound": true,
+        "tests_pass": true
+      }
+    },
+    "runtime_dependency_count": 232,
+    "runtime_dependency_hash_mismatches": [],
+    "runtime_dependency_manifest_sha256": "7016de60a1e3c451ee0aa0a235bdf8754615ab6d18b449c5bdc62809da9a0603"
+  },
+  "six_wall_ledger": {
+    "C_int": "the coarse algebraic free-plus-contact update drives the A2 recurrence; Cycle599 does not compose its pulse/readout with the pinned M2 compiler or derive lapse/energy",
+    "C_local": "Cycle599 composed physical M2 is null for every Ramsey route; primitive E-G/leakage/layout, local N<=3 enforcement, and physical covariance remain open",
+    "C_num": "q=2 gives an exact dimensionless X/Y recurrence while frozen odd checkpoints have zero visibility; no complete clock law, empirical unit, or probability law",
+    "C_ref": "algebraic Q1 and binder roles condition candidate words; no autonomous physical device identity, preparation, or Record is constructed",
+    "C_source": "Cycle451/Cycle570 ratios are host-side co-registered candidate words only; no source-to-Ramsey response, gravity, lapse, or response sign is derived",
+    "C_wrap": "a supplied single-pair phase origin is nonwrapping; autonomous origin and multi-event rollover remain open"
+  },
+  "tests_failed": 0,
+  "tests_passed": 9,
+  "tests_total": 9,
+  "typed_event_composition": {
+    "Cycle451_comparator": {
+      "3:4": {
+        "Cycle451_ratio": "3/4",
+        "Cycle570_totals": [
+          4,
+          3
+        ],
+        "Ramsey_word_attached": true
+      },
+      "4:4": {
+        "Cycle451_ratio": "1",
+        "Cycle570_totals": [
+          4,
+          4
+        ],
+        "Ramsey_word_attached": true
+      },
+      "5:4": {
+        "Cycle451_ratio": "5/4",
+        "Cycle570_totals": [
+          4,
+          5
+        ],
+        "Ramsey_word_attached": true
+      }
+    },
+    "Cycle570_additive_prefix_and_rollover": {
+      "1": {
+        "EG_exact": true,
+        "inverse_exact": true,
+        "split": "train",
+        "totals": [
+          4,
+          3
+        ]
+      },
+      "2": {
+        "EG_exact": true,
+        "inverse_exact": true,
+        "split": "train",
+        "totals": [
+          8,
+          7
+        ]
+      },
+      "4": {
+        "EG_exact": true,
+        "inverse_exact": true,
+        "split": "train",
+        "totals": [
+          16,
+          15
+        ]
+      },
+      "5": {
+        "EG_exact": true,
+        "inverse_exact": true,
+        "split": "train",
+        "totals": [
+          20,
+          19
+        ]
+      },
+      "8": {
+        "EG_exact": true,
+        "inverse_exact": true,
+        "split": "held",
+        "totals": [
+          32,
+          31
+        ]
+      },
+      "13": {
+        "EG_exact": true,
+        "inverse_exact": true,
+        "split": "held",
+        "totals": [
+          52,
+          51
+        ]
+      },
+      "21": {
+        "EG_exact": true,
+        "inverse_exact": true,
+        "split": "held",
+        "totals": [
+          84,
+          84
+        ]
+      }
+    },
+    "Ramsey_payload_physical_M2": null,
+    "Ramsey_to_response_law_derived": false,
+    "event_actuality_or_Record_derived": false,
+    "executed_interface": "host-side algebraic typed-candidate attachment",
+    "future_Cycle610_612_back_credit": false,
+    "pass": true,
+    "payload_physical_EG": null,
+    "payload_physical_layout": null,
+    "payload_physical_leakage": null,
+    "proper_time_or_lapse_derived": false,
+    "typed_event_deletion_controls": 9,
+    "universal_clock_equivalence_derived": false
+  }
+}
 
-SUMMARY {'pass': 8, 'fail': 1, 'elapsed_seconds': 12.987893749959767, 'maximum_RSS_bytes': 1180549120}
+SUMMARY {'pass': 9, 'fail': 0, 'elapsed_seconds': 10.878679084009491, 'maximum_RSS_bytes': 947372032}
+       77.74 real        76.50 user         0.79 sys
+          1014972416  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              320039  page reclaims
+                 314  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1698  voluntary context switches
+               14054  involuntary context switches
+       1317400693340  instructions retired
+        280689181554  cycles elapsed
+          1479411440  peak memory footprint

@@ -2,11 +2,14 @@
 """Cycle606: global carrier stream/QCA and finite-precision tournament.
 
 The priority route constructs a compact reversible double-buffer shift for the
-Cycle600 three-species 4-M2 word.  Direction-expanded partition lanes and a
+Cycle600 three-species four-role-bit word.  Direction-expanded partition lanes and a
 state-carried buffer phase are independent comparators.  A bounded H/T/Tdg
 word search measures, but does not erase, the Cycle603 analog-angle import.
-Schedules are not physical time; carrier resources are not energy or source.
-Authority none; audit unset.
+Every construction in this receipt is a logical/register circuit unless a
+literal M2 layout, primitive product, encoder/intertwiner/leakage calculation,
+and one-site translation-covariant physical law are executed; none is.  A
+schedule is not physical time; register counts are not energy or source.
+Authority none; audit unset; author artifact status accepted false.
 """
 from __future__ import annotations
 
@@ -18,7 +21,6 @@ import json
 import math
 from pathlib import Path
 import resource
-import subprocess
 import sys
 import time
 
@@ -68,13 +70,13 @@ class Tee:
 
 PINS = {
     "scripts/physical_carrier_preparation_elementary_synthesis_tournament_cycle603_2026_07_22.py":
-        "2935a840aab56d1b7525365537d2aa450028552418d3f290b22b761f709c29b7",
+        "e64032e369e08e03ad2a742a2bde6914d8adc6ed1fd64f15f4e301c1c8dea739",
     "docs/work_history/repo/review_feedback/PHYSICAL_CARRIER_PREPARATION_ELEMENTARY_SYNTHESIS_TOURNAMENT_CYCLE603_NOTE_2026-07-22.md":
-        "1a79520c68cb2ade0770424fdc54ce09eaf4bf5a6d5fe44b13f05a2a2e96567b",
+        "ddc06d6d4abf945794b1c0b7566c9183fa744839d1ba5630c1d9ad8b4559c417",
     "outputs/physical_carrier_preparation_elementary_synthesis_tournament_cycle603_receipt_2026_07_22.json":
-        "fe7ce320f172ac5637503cda5c94c5dbe82d2564811554877746576fa7a0f1de",
+        "751487fa50a738d5473f7ddcb77474785c84463dda1264a34de2643f19102871",
     "outputs/physical_carrier_preparation_elementary_synthesis_tournament_cycle603_cold_2026_07_22.txt":
-        "749c0126587c46b86e03ba329724757e651a0f35abc502e92e8391d40b94b5fa",
+        "35385a09b5d075e553de1de9302e0317dd415acbe1f5ccf9425905eedae94174",
 }
 
 
@@ -106,26 +108,50 @@ def shore() -> dict:
         "tournament_cycle603_receipt_2026_07_22.json"
     )).read_text())
     route_a = receipt["route_A_structured_elementary_compiler"]
+    expected_graph = dict(receipt["shore"]["import_audit"]["expected_transitive_sha256"])
+    expected_graph.update(receipt["pins"])
+    expected_graph.update(PINS)
+    observed_graph = {name: sha(ROOT / name) for name in expected_graph}
+    actual_modules = c600.imported_science_modules(c600, c603, c603.c219, c603.c230)
+    uncovered = sorted(set(actual_modules.values()) - set(expected_graph))
     inherited = {
         "Cycle603_pass": receipt["pass"],
         "tests_passed": receipt["tests_passed"],
-        "support_two_event_compiler": route_a["exact_support_two_parametric_event_compiler"],
-        "finite_alphabet_closure": route_a["exact_accepted_finite_alphabet_elementary_closure"],
+        "author_artifact_status_accepted": receipt["author_artifact_status_accepted"],
+        "support_two_role_event_circuit": route_a["exact_support_two_parametric_role_event_circuit"],
+        "finite_alphabet_closure": route_a["exact_declared_finite_alphabet_elementary_closure"],
         "global_stream_schedule": route_a["scratch_and_schedule"]["global_conflict_free_stream_schedule_compiled"],
-        "persistent_M2_per_cell": route_a["scratch_and_schedule"]["persistent_Cycle600_carrier_M2_per_cell"],
+        "persistent_role_bits_per_cell": route_a["scratch_and_schedule"]["persistent_Cycle600_carrier_role_bits_per_cell"],
+        "physical_M2_scope": receipt["physical_M2_scope"],
+        "broad_negative_gate": receipt["broad_negative_gate"],
+        "import_audit": {
+            "expected_transitive_sha256": expected_graph,
+            "observed_transitive_sha256": observed_graph,
+            "actual_imported_modules": actual_modules,
+            "uncovered_imported_modules": uncovered,
+            "expected_file_count": len(expected_graph),
+            "runtime_module_count": len(actual_modules),
+        },
     }
     condition = (
         observed == PINS and inherited["Cycle603_pass"]
         and inherited["tests_passed"] == 7
-        and inherited["support_two_event_compiler"]
+        and not inherited["author_artifact_status_accepted"]
+        and inherited["support_two_role_event_circuit"]
         and not inherited["finite_alphabet_closure"]
         and not inherited["global_stream_schedule"]
-        and inherited["persistent_M2_per_cell"] == 12
+        and inherited["persistent_role_bits_per_cell"] == 12
+        and not inherited["physical_M2_scope"]["literal_layout_compiled"]
+        and not inherited["physical_M2_scope"]["primitive_composition"]
+        and inherited["physical_M2_scope"]["intertwiner_residual"] is None
+        and not inherited["physical_M2_scope"]["leakage_evaluated"]
+        and inherited["broad_negative_gate"] == "FAIL / DO NOT SHIP"
+        and observed_graph == expected_graph and not uncovered
     )
     check("accepted Cycle603 shore is byte exact", condition, {
         "observed": observed, "inherited": inherited,
     })
-    return receipt
+    return {"Cycle603_receipt": receipt, "verified_inheritance": inherited}
 
 
 # ---------------------------------------------------------------------------
@@ -324,7 +350,7 @@ def double_buffer_gate_template() -> dict:
             "gate_counts": c603.gate_counts(gates),
             "base_gate_count": len(gates),
             "schedule_sha256": c603.gate_hash(gates),
-            "routing": c603.routing_audit(gates, 11),
+            "logical_role_line_routing": c603.routing_audit(gates, 11),
         })
     local_swaps = [
         c603.two(f"buffer_swap_bit{bit}", bit, 7 + bit, c603.SWAP, "SWAP")
@@ -339,7 +365,10 @@ def double_buffer_gate_template() -> dict:
     # depth but all instances count toward volume resources.
     per_cell_counts = {family: 6 * count for family, count in one_phase_counts.items()}
     per_cell_counts["SWAP"] = per_cell_counts.get("SWAP", 0) + 12
-    phase_depth = sum(row["routing"]["serial_nearest_neighbor_depth"] for row in blocks)
+    phase_depth = sum(
+        row["logical_role_line_routing"]["serial_nearest_neighbor_depth"]
+        for row in blocks
+    )
     depth = 2 * phase_depth + swap_routing["serial_nearest_neighbor_depth"]
     return {
         "word_blocks": blocks,
@@ -347,11 +376,11 @@ def double_buffer_gate_template() -> dict:
         "complete_update_per_cell_gate_counts": per_cell_counts,
         "complete_update_per_cell_base_gate_count": sum(per_cell_counts.values()),
         "complete_update_constant_serial_NN_depth_species_parallel": depth,
-        "local_buffer_SWAP_routing": swap_routing,
-        "persistent_active_plus_buffer_M2_per_cell": 24,
-        "clean_flag_and_work_M2_per_species": 3,
-        "maximum_live_M2_per_cell_species_parallel": 33,
-        "maximum_gate_support_M2": 2,
+        "local_buffer_SWAP_logical_role_line_routing": swap_routing,
+        "persistent_active_plus_buffer_role_bits_per_cell": 24,
+        "clean_flag_and_work_role_bits_per_species": 3,
+        "maximum_live_role_bits_per_cell_species_parallel": 33,
+        "maximum_logical_gate_support_role_bits": 2,
         "gate_alphabet": ("X", "H", "T", "Tdg", "CNOT", "SWAP"),
         "parameterized_angle_gates": 0,
         "scratch_returns_clean": True,
@@ -439,13 +468,16 @@ def compact_covariance(length: int) -> dict:
                         != c603.frame_word(c603.frame_word(word, second), first)
                     )
     return {
-        "translations_tested": length**3,
-        "translation_commutator_failures": translation_failures,
+        "translation_displacements_tested_on_one_frozen_lawful_seed": length**3,
+        "translation_register_update_commutator_failures_on_seed": translation_failures,
         "proper_cubic_frames": len(frames),
-        "all24_code_commutator_failures": frame_failures,
+        "all24_register_update_commutator_failures_on_one_frozen_lawful_seed": frame_failures,
+        "all24_register_update_covariance_executed": True,
         "frame_products": len(frames)**2,
         "sites_and_words_per_frame_product": len(probe_sites) * 16,
-        "all576_site_and_word_group_failures": group_failures,
+        "all576_site_and_word_action_group_failures": group_failures,
+        "all576_register_update_covariance_executed": False,
+        "all576_executed_scope": "site permutation and 16-word frame action group law only",
     }
 
 
@@ -633,8 +665,8 @@ def route_a() -> dict:
             "dirty_buffer_inverse_recovery": arrays_equal(
                 (dirty_recovered[0], dirty_input), (dirty_recovered[1], dirty_buffer)
             ),
-            "persistent_M2": 24 * volume,
-            "maximum_live_M2_species_parallel": 33 * volume,
+            "persistent_register_role_bits": 24 * volume,
+            "maximum_live_register_role_bits_species_parallel": 33 * volume,
             "complete_update_gate_instances": gate_template["complete_update_per_cell_base_gate_count"] * volume,
             "constant_NN_depth": gate_template["complete_update_constant_serial_NN_depth_species_parallel"],
             **eg,
@@ -655,31 +687,35 @@ def route_a() -> dict:
             and not dirty_domain["pass"] and row["dirty_buffer_inverse_recovery"]
             and eg["maximum_double_buffer_EG_residual"] < TOL
             and eg["maximum_inverse_EG_residual"] < TOL
-            and covariance["translation_commutator_failures"] == 0
-            and covariance["all24_code_commutator_failures"] == 0
-            and covariance["all576_site_and_word_group_failures"] == 0
+            and covariance["translation_register_update_commutator_failures_on_seed"] == 0
+            and covariance["all24_register_update_commutator_failures_on_one_frozen_lawful_seed"] == 0
+            and covariance["all576_site_and_word_action_group_failures"] == 0
+            and not covariance["all576_register_update_covariance_executed"]
             and order_audit["frame_order_failures_scatter_plus_clear"] == 0
             and order_audit["pairwise_commutator_failures_scatter_plus_clear"] == 0
         )
     template_condition = (
         gate_template["complete_update_per_cell_base_gate_count"] > 0
-        and gate_template["maximum_gate_support_M2"] == 2
+        and gate_template["maximum_logical_gate_support_role_bits"] == 2
         and gate_template["parameterized_angle_gates"] == 0
         and gate_template["scratch_returns_clean"]
         and not gate_template["template_depends_on_volume_parity_origin_or_size"]
-        and all(row["routing"]["all_two_M2_instances_after_move_apply_restore_are_NN"]
+        and all(row["logical_role_line_routing"][
+                    "all_two_role_bit_instances_after_move_apply_restore_are_declared_line_NN"
+                ]
                 for row in gate_template["word_blocks"])
     )
     result = {
-        "status": "exact constant-overhead compact-register double-buffer permutation on the supplied one-carrier/species code; event-local elementary NN lowering is explicit, but one translation-invariant simultaneous supercell packing remains open",
-        "physical_update": (
+        "status": "exact constant-overhead logical compact-register double-buffer permutation on the supplied one-carrier/species code; a declared role-line gate circuit is explicit, but no literal physical M2 placement or primitive product is compiled",
+        "register_update": (
             "scatter B_(x+v(w)) XOR= w controlled by A_x=w; clear A_x XOR=w controlled by B_(x+v(w))=w; local SWAP(A_x,B_x)"
         ),
         "gate_template": gate_template,
         "rows": rows,
         "full_space_unitary_reason": "each equality-controlled XOR and local SWAP is a full-space involution; inverse reverses the three fixed substeps",
         "declared_code_space": "B=0, one valid nonzero word per species globally; bound labels shift and neutral labels remain",
-        "locally_enforced_auxiliary_constraints": "B=0 and word validity are on-cell checks; no gauge service or ordering is used",
+        "locally_checkable_but_not_dynamically_enforced_auxiliary_constraints": "B=0 and word validity are on-cell checks; no gauge service or ordering is used",
+        "auxiliary_constraints_locally_enforced": False,
         "nonlocal_sector_boundary": "exactly one carrier/species is inherited from Cycle600 and is not locally generated or enforced; it prevents same-species incoming collisions",
         "broader_exact_domain": "the same identity holds on any B=0 valid-word configuration whose translated carriers do not collide, but that domain is not claimed invariant under repeated updates",
         "invalid_extension": "single invalid labels 10..15 have zero displacement and return identically; arbitrary malformed/dirty states remain reversible but need not decode",
@@ -688,12 +724,18 @@ def route_a() -> dict:
         "exactly_one_sector_locally_generated": False,
         "fixed_sublayer_sequence_is_physical_time": False,
         "host_parity_color_origin_or_size_query": False,
-        "event_local_elementary_NN_template_executed": True,
-        "translation_invariant_global_supercell_embedding_executed": False,
+        "logical_role_line_gate_template_executed": True,
+        "literal_physical_M2_layout_compiled": False,
+        "physical_M2_primitive_product_composed": False,
+        "physical_encoder_composed": False,
+        "physical_intertwiner_residual": None,
+        "physical_code_leakage_evaluated": False,
+        "one_site_translation_covariant_physical_law_executed": False,
+        "translation_invariant_global_register_supercell_embedding_executed": False,
         "global_route_vertex_disjointness_or_bounded_conflict_schedule_proved": False,
         "sharp_geometric_import": "one translation-invariant cubic supercell embedding, including scratch coordinates, whose simultaneous routed event instances are vertex-disjoint or have an explicit bounded conflict schedule",
         "pass_exact_declared_code_global_stream": bool(condition and template_condition),
-        "pass_elementary_translation_invariant_global_packing": False,
+        "pass_literal_physical_M2_compiler": False,
         "pass_full_malformed_code_preservation": False,
     }
     check(
@@ -823,14 +865,16 @@ def route_b() -> dict:
             "inverse_failures": inverse_failures,
             "partition_pairs": 18 * volume,
             "partition_pair_conflicts": 0,
-            "all24_code_and_lane_covariance_failures": frame_failures,
+            "all24_register_update_and_lane_covariance_failures_on_one_frozen_lawful_seed": frame_failures,
+            "all24_register_update_covariance_executed": True,
+            "all576_register_update_covariance_executed": False,
             "malformed_multiple_incoming_lanes_retained": malformed_lanes,
             "malformed_inverse_recovery": arrays_equal(
                 (malformed_recovered[0], malformed),
                 (malformed_recovered[1], zero_lanes),
                 (malformed_recovered[2], zero_lanes),
             ),
-            "persistent_M2": 156 * volume,
+            "persistent_register_role_bits": 156 * volume,
             "intercell_word_SWAPS": 72 * volume,
         }
         rows.append(row)
@@ -838,26 +882,32 @@ def route_b() -> dict:
             failures == inverse_failures == frame_failures == 0
             and malformed_lanes >= 2 and row["malformed_inverse_recovery"]
         )
-    # The exact local block is six disjoint 28-M2 basis transpositions.  A
+    # The exact local register block is six disjoint 28-role-bit basis
+    # transpositions.  A
     # generic Gray lowering is bounded but deliberately not counted as closed:
     # it would use 38 C27X calls and supplied clean work/routing.
     result = {
-        "status": "exact translation/proper-cubic partitioned word-register stream with explicit direction lanes; local 28-M2 compact/lane exchange and its physical supercell placement remain sharply scoped imports",
+        "status": "exact logical translation/proper-cubic partitioned word-register stream with explicit direction lanes; the 28-role-bit exchange remains an abstract register permutation and no physical M2 lowering or placement is compiled",
         "local_exchange": "six disjoint transpositions between A=4+d/all lanes zero and A=0/lane_d=4+d",
-        "local_exchange_support_M2": 28,
+        "local_exchange_support_role_bits": 28,
         "local_exchange_basis_transpositions": 6,
         "Gray_C27X_calls_per_exchange_block": 38,
         "C27X_Toffoli_calls_with_25_clean_work_each": 51,
         "elementary_NN_lowering_executed": False,
-        "sharp_gate_import": "one cubic-covariant 28-M2 local exchange permutation, full-space identity on every other local row",
-        "sharp_geometric_import": "one translation-invariant cubic placement of all lane and exchange registers on physical M2 sites",
+        "sharp_logical_gate_import": "one cubic-covariant 28-role-bit local exchange permutation, full-space identity on every other local register row",
+        "sharp_physical_import": "literal translation-invariant cubic M2 placement, primitive lowering, encoder/intertwiner/leakage, and a directly executed one-site physical law",
         "partition_layer": "SWAP Out_d(x) with In_d(x+v_d); distinct Out/In roles make a perfect matching without parity coloring",
-        "persistent_M2_per_cell": 156,
+        "persistent_register_role_bits_per_cell": 156,
         "host_parity_color_origin_or_size_query": False,
         "rows": rows,
         "pass_exact_global_stream_with_named_block_import": bool(condition),
-        "pass_physical_supercell_and_elementary_gate_target": False,
-        "pass_elementary_gate_target": False,
+        "literal_physical_M2_layout_compiled": False,
+        "physical_M2_primitive_product_composed": False,
+        "physical_encoder_composed": False,
+        "physical_intertwiner_residual": None,
+        "physical_code_leakage_evaluated": False,
+        "one_site_translation_covariant_physical_law_executed": False,
+        "pass_literal_physical_M2_compiler": False,
     }
     check(
         "Route B gives an exact direction-expanded partitioned QCA and isolates one local symmetric block import",
@@ -999,8 +1049,8 @@ def route_c() -> dict:
                 (malformed_back[1], dirty_b),
                 (malformed_back[2], nonuniform),
             ),
-            "persistent_active_buffer_clock_M2": 25 * volume,
-            "maximum_live_with_five_work_M2_per_species": 40 * volume,
+            "persistent_active_buffer_phase_role_bits": 25 * volume,
+            "maximum_live_with_five_work_role_bits_per_species": 40 * volume,
         }
         rows.append(row)
         condition &= (
@@ -1012,21 +1062,30 @@ def route_c() -> dict:
         )
     result = {
         "status": "exact two-buffer stream with a locally checkable uniform phase bit selecting the active buffer; the phase replaces host tick parity but its uniform genesis is supplied",
-        "intertwiner": "G_register E_p = E_(1-p) G_coarse for p=0,1; decoder reads A for p=0 and B for p=1",
+        "register_algebraic_intertwiner": "G_register E_p = E_(1-p) G_coarse for p=0,1; decoder reads A for p=0 and B for p=1",
         "phase_constraint": "p_x=p_y on every NN edge; connectedness makes the lawful phase globally uniform",
         "phase_advance": "parallel local X on every p_x; self-inverse and preserves every NN equality/inequality syndrome",
         "phase_constraint_locally_checkable": True,
         "phase_constraint_dynamically_repaired_or_generated": False,
         "branch_gate_control": "word equality plus phase(source)=phase(target)=p",
-        "C6X_clean_work_M2": 5,
+        "abstract_C6X_clean_work_role_bits": 5,
         "explicit_elementary_gate_count_executed": False,
         "sharp_import": "phase-controlled equality-XOR block; Cycle603 CkX/Toffoli lowering applies with k=6",
-        "translation_invariant_global_supercell_embedding_executed": False,
+        "translation_invariant_global_register_supercell_embedding_executed": False,
+        "all24_register_update_covariance_executed": False,
+        "all576_register_update_covariance_executed": False,
+        "literal_physical_M2_layout_compiled": False,
+        "physical_M2_primitive_product_composed": False,
+        "physical_encoder_composed": False,
+        "physical_intertwiner_residual": None,
+        "physical_code_leakage_evaluated": False,
+        "one_site_translation_covariant_physical_law_executed": False,
         "host_tick_parity_color_origin_or_size_query": False,
         "phase_bit_is_physical_time": False,
         "rows": rows,
         "pass_exact_phase_carried_global_stream": bool(condition),
         "pass_phase_genesis": False,
+        "pass_literal_physical_M2_compiler": False,
     }
     check(
         "Route C carries buffer parity in a local clock field and executes consecutive global shifts without host parity",
@@ -1036,7 +1095,7 @@ def route_c() -> dict:
 
 
 # ---------------------------------------------------------------------------
-# Clifford+T bounded word search for Cycle603 one-M2 analog gates.
+# Clifford+T bounded word search for Cycle603 one-role-bit analog gates.
 
 
 def matrix_key(matrix: np.ndarray) -> tuple[tuple[float, float], ...]:
@@ -1208,11 +1267,13 @@ def route_precision() -> dict:
         "search": search,
         "parameterized_instances_replaced_in_one_species_coin": replacements,
         "one_species_compiled_coin_ray_Frobenius_residual": local_coin_ray_residual,
-        "one_species_approximate_scratch_leakage": approximate_scratch_leakage,
+        "one_species_logical_scratch_leakage": approximate_scratch_leakage,
         "volume_and_q_update_scaling": scaling_rows,
         "stream_additional_analog_error": 0,
         "exact_Clifford_T_closure_claimed": False,
         "fault_tolerant_synthesis_optimality_claimed": False,
+        "physical_M2_leakage_evaluated": False,
+        "literal_physical_M2_gate_product_executed": False,
         "pass_as_precision_bounded_attempt": bool(condition),
         "pass_exact_or_global_precision_target": False,
     }
@@ -1227,74 +1288,104 @@ def no_go_discipline(route_a_result: dict, route_b_result: dict,
                       route_c_result: dict, precision_result: dict) -> dict:
     walls = (
         "clean buffer/scratch initialization and renewal",
-        "translation-invariant physical supercell packing of parallel routed events",
+        "literal translation-invariant physical M2 placement and primitive product",
         "malformed multi-carrier collision repair or enforcement",
-        "elementary lowering of the 28-M2 lane exchange",
+        "elementary lowering of the 28-role-bit lane exchange",
         "uniform phase-field genesis for phase-carried scheduling",
         "precision scaling beyond finite H/T/Tdg depth",
     )
-    pairs = []
+    pairs: list[dict] = []
     for first, second in combinations(walls, 2):
         pairs.append({
-            "first": first, "second": second,
-            "first_closes_second": False, "second_closes_first": False,
-            "independent_as_current_imports_not_shared_obstructions": True,
+            "wall_A": first,
+            "wall_B": second,
+            "A_implies_B": False,
+            "B_implies_A": False,
+            "independent": True,
+            "shared_witness_identified": False,
+            "evidence": "the runner exposes separate state/resource predicates and no derivation connecting the pair",
         })
     families = (
         {
             "family": "compact reversible double buffer",
-            "object": "two 4-M2 words per species/cell",
+            "attempt_statement": "attempt an exact parity-free simultaneous stream by scattering into a second compact register, clearing the source, and swapping buffers",
+            "failure_statement_with_citation": "the logical target closes, but the physical M2 compiler fails because no literal placement/primitive product is executed (this Cycle606 runner, route_a physical-scope fields)",
+            "authority": "none; attempted artifact",
+            "object": "two four-role-bit words per species/cell",
             "mechanism": "equality-controlled scatter, copy-clear, and local buffer SWAP",
-            "terminal_obligation": "exact simultaneous compact global shift with elementary bounded gates",
-            "strength": "target-equivalent at compact-register level on supplied code",
+            "terminal_obligation": "exact simultaneous logical compact-register shift on the declared code",
+            "comparison_strength": "target-equivalent at register level, weaker than a physical M2 compiler",
             "marker": "ATTEMPTED",
-            "disposition": "closes exact compact-register global permutation on code; simultaneous elementary supercell packing and malformed collision closure remain open",
+            "disposition": "closes the register permutation, inverse, deletion sensitivity, and code-space EG tests; physical placement and malformed collision closure remain open",
         },
         {
             "family": "direction-expanded partitioned QCA",
+            "attempt_statement": "attempt a partitioned stream with explicit incoming/outgoing direction lanes so every intercell call is a matching",
+            "failure_statement_with_citation": "the register target closes, but the 28-role-bit local exchange and physical placement remain imports (this Cycle606 runner, route_b result)",
+            "authority": "none; attempted artifact",
             "object": "compact word plus Out/In direction lanes",
             "mechanism": "cubic-symmetric local exchange and bipartite-role intercell SWAP matching",
-            "terminal_obligation": "collision-separated global shift without parity coloring",
-            "strength": "target-equivalent with a local block import",
+            "terminal_obligation": "register-level collision-separated shift without parity coloring",
+            "comparison_strength": "target-equivalent at register level with an unlowered local exchange",
             "marker": "ATTEMPTED",
-            "disposition": "exact global stream; 28-M2 exchange not elementarily lowered",
+            "disposition": "exact register stream; the 28-role-bit exchange is not physically lowered",
         },
         {
             "family": "state-carried buffer phase",
+            "attempt_statement": "attempt recurrent streaming by carrying the active-buffer phase in a local state field instead of querying a host tick",
+            "failure_statement_with_citation": "the uniform-sector register target closes, but phase genesis and physical lowering remain open (this Cycle606 runner, route_c result)",
+            "authority": "none; attempted artifact",
             "object": "two compact buffers plus local phase field",
             "mechanism": "phase-conditioned direction matching and local phase toggle",
-            "terminal_obligation": "recurrent shift without host tick parity",
-            "strength": "target-equivalent on uniform-phase sector",
+            "terminal_obligation": "recurrent register shift without host tick parity",
+            "comparison_strength": "target-equivalent on a supplied uniform-phase sector",
             "marker": "ATTEMPTED",
             "disposition": "two consecutive shifts exact; uniform phase genesis supplied",
         },
         {
             "family": "finite Clifford+T word approximation",
-            "object": "depth-bounded H/T/Tdg words for Cycle603 one-M2 angles",
+            "attempt_statement": "attempt to retire parameterized gates by exhaustive finite H/T/Tdg word search modulo global phase",
+            "failure_statement_with_citation": "depth-ten residuals remain nonzero and the volume/update telescoping bound saturates (this Cycle606 runner, route_precision exact residual fields)",
+            "authority": "none; attempted artifact",
+            "object": "depth-bounded H/T/Tdg words for Cycle603 one-role-bit angles",
             "mechanism": "exhaustive word search modulo global phase and telescoping bounds",
             "terminal_obligation": "precision-bounded replacement of calibrated rotations",
-            "strength": "weaker",
+            "comparison_strength": "strictly weaker than exact finite-alphabet closure",
             "marker": "ATTEMPTED",
             "disposition": "finite errors explicit; global-volume bounds saturate",
         },
         {
             "family": "independent crossed-link endpoint gates",
+            "attempt_statement": "attempt to obtain the torus stream by composing the six exact crossed-link endpoint transpositions",
+            "failure_statement_with_citation": "Cycle603 explicitly compiled separate link tables without a simultaneous torus update (Cycle603 note:153-172)",
+            "authority": "independently accepted Cycle603 artifact; formal authority remains none",
             "object": "Cycle603 eight-bit link transpositions",
             "mechanism": "Gray C7X event circuits without a global matching composition",
             "terminal_obligation": "one simultaneous torus stream",
-            "strength": "weaker",
-            "marker": "RULED OUT BY PRIOR CYCLE603 WHEN USED ALONE",
-            "disposition": "local events exact but did not supply a global schedule",
+            "comparison_strength": "strictly weaker than a simultaneous stream",
+            "marker": "RULED OUT BY PRIOR",
+            "prior_citation": "docs/work_history/repo/review_feedback/PHYSICAL_CARRIER_PREPARATION_ELEMENTARY_SYNTHESIS_TOURNAMENT_CYCLE603_NOTE_2026-07-22.md:153-172",
+            "disposition": "the cited artifact executes six separate tables and explicitly does not compose a torus update",
         },
-        {
-            "family": "autonomous collision-repair gauge reservoir",
-            "object": "reversible syndrome/debris fields coupled to compact buffers",
-            "mechanism": "retain collision history and repair/reject without erasure",
-            "terminal_obligation": "full malformed-sector covariance and return to code",
-            "strength": "unknown/comparable",
-            "marker": "LIVE_UNTESTED",
-            "disposition": "concrete counterroute preventing a collision/enforcement no-go",
-        },
+    )
+    open_counterroute = {
+        "family": "autonomous collision-repair gauge reservoir",
+        "object": "reversible syndrome/debris fields coupled to compact buffers",
+        "mechanism": "retain collision history and repair or reject without erasure",
+        "terminal_obligation": "full malformed-sector covariance and return to code",
+        "comparison_strength": "unknown and potentially target-equivalent",
+        "status": "OPEN / NOT COUNTED AS ATTEMPTED OR RULED OUT",
+        "authority": "none",
+        "citation": "scripts/physical_global_carrier_stream_qca_approximation_tournament_cycle606_2026_07_22.py:route_a collision controls",
+    }
+    rhetoric = (
+        {"phrase": "the stream is not a physical M2 fact", "resolutions": ("per register event", "per declared role line", "per coarse cell", "lattice-wide register product", "literal physical M2 lattice"), "tested": ("per register event", "per declared role line", "lattice-wide register product"), "untested_negative_status": "no universal physical negative is inferred", "narrowed_phrase": "the executed Cycle606 stream is a logical/register product; physical M2 compilation is unevaluated"},
+        {"phrase": "nearest-neighbor routing is not physical placement", "resolutions": ("per logical gate", "per role line", "per simultaneous cell", "whole torus"), "tested": ("per logical gate", "per role line"), "untested_negative_status": "simultaneous physical placement remains open", "narrowed_phrase": "nearest-neighbor is verified only on the declared logical role line"},
+        {"phrase": "register EG is not a physical intertwiner", "resolutions": ("per carrier", "factorized exterior sample", "lattice-size fixture", "physical code space"), "tested": ("per carrier", "factorized exterior sample", "L3/L6/L7 register fixtures"), "untested_negative_status": "physical encoder/intertwiner/leakage is unevaluated", "narrowed_phrase": "maximum register EG residual is reported; physical_intertwiner_residual is null"},
+        {"phrase": "all24/all576 group checks are not physical covariance", "resolutions": ("word action", "site action", "one-seed register update", "all-state register update", "physical one-site law"), "tested": ("word action", "site action", "one-seed all24 register update"), "untested_negative_status": "all-state and physical-law covariance remain open", "narrowed_phrase": "all576 covers site/word group composition only; all24 update covariance uses one frozen lawful seed"},
+        {"phrase": "a schedule is not time", "resolutions": ("gate-product order", "buffer phase register", "recurrent register step", "causal physical time"), "tested": ("gate-product order", "buffer phase register", "two recurrent register steps"), "untested_negative_status": "no causal-time mechanism is tested", "narrowed_phrase": "Cycle606 supplies a register schedule/phase, not a physical time law"},
+        {"phrase": "register counts are not source or energy", "resolutions": ("role bit", "cell register", "torus total", "physical source/energy observable"), "tested": ("role-bit and register counts",), "untested_negative_status": "no physical source/energy map is evaluated", "narrowed_phrase": "reported counts are logical storage resources only"},
+        {"phrase": "finite depth is not exact Clifford+T closure", "resolutions": ("one target gate", "compiled coin", "one cell", "volume/update accumulation", "asymptotic synthesis"), "tested": ("one target gate", "compiled coin", "finite volume/update upper bounds"), "untested_negative_status": "no global impossibility or optimality follows", "narrowed_phrase": "depth-ten search leaves explicit nonzero residuals"},
     )
     result = {
         "skill_freshness": {
@@ -1305,55 +1396,104 @@ def no_go_discipline(route_a_result: dict, route_b_result: dict,
             "proof_search_governance_followed": True,
         },
         "N1_normalized_families": families,
-        "N1_attempted_or_prior_scoped_families": 5,
-        "N2_directional_pairs": pairs,
+        "N1_qualifying_family_count": len(families),
+        "N1_all_markers_exact": all(
+            row["marker"] in {"ATTEMPTED", "RULED OUT BY PRIOR"} for row in families
+        ),
+        "N1_open_counterroute_not_counted": open_counterroute,
+        "N2_directional_wall_independence": pairs,
         "N2_pair_count": len(pairs),
         "N3_hidden_condition_scan": {
-            "zero secondary buffers and scratch": "explicit supplied local resource",
-            "exactly one word per species": "explicit Cycle600 global code sector",
-            "three fixed compute/copy/swap substeps": "explicit gate-product definition; not time",
-            "global elementary geometry": "event-local 11-M2 NN route is explicit; translation-invariant simultaneous supercell packing is not",
-            "lane exchange": "explicit 28-M2 block import in Route B",
-            "uniform clock phase": "locally checkable but supplied sector in Route C",
-            "Clifford+T search depth": "explicit maximum depth ten; no optimality claim",
-            "periodic boundary": "explicit test fixture; local template has no size query",
+            "required_phrase_scan": {
+                "we assume": "absent",
+                "by construction": "absent",
+                "as is standard": "absent",
+                "the framework provides": "absent",
+                "bridge context": "absent",
+                "background": "absent",
+                "naturally": "absent",
+                "obviously": "absent",
+                "standard QFT": "absent",
+                "registered": "absent",
+                "canonical": "code-variable name for the enumerated tuple 1..15; non-load-bearing because reversed, all24-rotated, and all 105 pair orders are compared",
+            },
+            "zero secondary buffers and scratch": "supplied register initialization; locally checkable, not dynamically generated",
+            "exactly one word per species": "supplied Cycle600 global sector, not locally enforced",
+            "scatter_clear_swap_sequence": "fixed register product; a schedule is not time",
+            "logical_role_line": "declared routing graph, not literal physical M2 placement",
+            "lane exchange": "unlowered 28-role-bit abstract permutation",
+            "uniform phase": "locally checkable but supplied sector",
+            "Clifford_T_depth": "explicit maximum ten; no exactness or optimality claim",
+            "periodic_tori": "L3/L6/L7 test fixtures; no host size query in the update",
+            "one_frozen_covariance_seed": "explicitly narrower than exhaustive state covariance",
             "uncited_standard_or_obvious_hits": 0,
         },
         "N4_residual_matching": (
             {
-                "witness": "Cycle603 Route A",
-                "witness_residual": "no simultaneous conflict-free global stream schedule",
-                "current_residual": "Route A supplies an exact role-separated compact-register product, but not yet a physical supercell embedding for all routed gates",
+                "witness_citation": "docs/work_history/repo/review_feedback/PHYSICAL_CARRIER_PREPARATION_ELEMENTARY_SYNTHESIS_TOURNAMENT_CYCLE603_NOTE_2026-07-22.md:167-180",
+                "witness_residual": "declared role-line covariance is not physical M2 and six link tables are not one torus update",
+                "current_exact_residual": "register torus update is now composed, but literal_physical_M2_layout_compiled=false, physical_M2_primitive_product_composed=false, physical_intertwiner_residual=null, physical_code_leakage_evaluated=false",
                 "match": False,
+                "reason": "Cycle606 retires the logical global-product residual but leaves the physical M2 compiler residual",
             },
             {
-                "witness": "Cycle603 precision route",
+                "witness_citation": "docs/work_history/repo/review_feedback/PHYSICAL_CARRIER_PREPARATION_ELEMENTARY_SYNTHESIS_TOURNAMENT_CYCLE603_NOTE_2026-07-22.md:120-130",
                 "witness_residual": "parameterized RY/RZ/P angle import",
-                "current_residual": "finite H/T/Tdg approximation errors and scaling measured; exact import not retired",
+                "current_exact_residual": {
+                    "maximum_depth": 10,
+                    "candidates_tested": precision_result["search"]["candidates_tested"],
+                    "worst_single_gate_ray_operator_residual": precision_result["search"]["checkpoints"][-1]["worst_single_gate_ray_operator_residual"],
+                    "compiled_coin_ray_Frobenius_residual": precision_result["one_species_compiled_coin_ray_Frobenius_residual"],
+                },
                 "match": True,
             },
             {
-                "witness": "Cycle600/603 malformed controls",
-                "witness_residual": "remote duplicate/collision sectors locally admissible",
-                "current_residual": "compact collision leaves code; lane route retains multiple syndromic lanes",
+                "witness_citation": "docs/work_history/repo/review_feedback/PHYSICAL_CARRIER_PREPARATION_ELEMENTARY_SYNTHESIS_TOURNAMENT_CYCLE603_NOTE_2026-07-22.md:174-190",
+                "witness_residual": "physical code-space leakage and full malformed-sector preservation untested",
+                "current_exact_residual": {
+                    "Route_A_collision_pairs_leave_declared_code": tuple(
+                        row["remote_collision_pairs_leaving_declared_code"]
+                        for row in route_a_result["rows"]
+                    ),
+                    "Route_A_collision_inverse_failures": tuple(
+                        row["remote_collision_inverse_failures"]
+                        for row in route_a_result["rows"]
+                    ),
+                    "physical_code_leakage_evaluated": False,
+                },
                 "match": True,
             },
         ),
-        "N5_rhetoric_resolution": (
-            "global-stream closure is on the supplied exactly-one/species Cycle600 code, not every malformed word configuration",
-            "Route A is exact and tested lattice-wide at compact-register resolution; its elementary lowering is only event-local until a simultaneous cubic supercell packing is materialized; Route B retains one 28-M2 block import",
-            "no-host claim excludes runtime parity/color/origin/size queries but does not turn the fixed circuit product into causal time",
-            "Clifford+T precision is only exhaustive through word depth ten and is not exact or asymptotically optimal",
-        ),
+        "N5_rhetoric_resolution": rhetoric,
+        "N5_five_resolutions_present": len(rhetoric) >= 5,
         "N6_partial_closure_paths": (
-            "materialize a proper-cubic supercell with directed-edge ports and verify every simultaneous route collision on L3/L6/L7 and all frames",
-            "add reversible collision syndrome/debris registers and prove a cubic-covariant repair/decoupling theorem",
-            "lower the six disjoint Route-B block transpositions with counted C27X scratch/routing",
-            "prepare the uniform Route-C phase field as a local ground/dark sector or avoid it using Route A",
-            "replace brute-force depth-ten search by a certified single-qubit synthesis algorithm at a declared epsilon",
+            {"file": "scripts/physical_global_carrier_stream_qca_approximation_tournament_cycle606_2026_07_22.py", "status": "PARTIAL", "what_closes": "Route A exact logical register stream, inverse, deletion, L3/L6/L7 EG and seeded covariance"},
+            {"file": "scripts/physical_L41_elementary_gate_layout_compiler_cycle580_2026_07_22.py", "status": "PARTIAL / PRIOR", "what_closes": "a literal finite M2 primitive layout for a different bounded gate fixture; it does not place this stream"},
+            {"file": "scripts/physical_full_torus_dimer_M2_compiler_tournament_cycle590_2026_07_22.py", "status": "PARTIAL / PRIOR", "what_closes": "a conditional logical torus macro and held M2 blueprint; physical primitive composition remains open"},
+            {"file": "scripts/physical_carrier_preparation_elementary_synthesis_tournament_cycle603_2026_07_22.py", "status": "PARTIAL / PRIOR", "what_closes": "bounded logical role-event circuits and inherited coin/contact/seam fixtures; no global stream or physical M2 compiler"},
+            {"file": "UNMATERIALIZED", "status": "OPEN", "what_closes": "literal Cycle606 M2 placement, primitive product, encoder, physical intertwiner/leakage, and one-site translation-covariant law"},
+            {"file": "UNMATERIALIZED", "status": "OPEN", "what_closes": "reversible collision syndrome/debris repair or local lawful-sector enforcement"},
+            {"file": "UNMATERIALIZED", "status": "OPEN", "what_closes": "certified epsilon-target Clifford+T synthesis with declared global error budget"},
         ),
-        "N7_hostile_steelman": "A hostile reviewer should reject any locality, collision, or precision no-go. Route A already gives the missing parity-free compact global shift on the declared code, Route B shows that direction lanes can make every intercell call a literal partition matching, and Route C carries tick parity in state. A reversible collision-syndrome reservoir can retain malformed history, while certified Clifford+T synthesis can drive one-gate error arbitrarily below this depth-ten search. Those live constructions prevent shared-obstruction language.",
-        "N8_cross_cycle_echo": "Cycles560/563 retired decoder/order services with bounded tables, Cycle580 retired a gate-layout import, Cycle600 retired the full N<=3 carrier lift, and Cycle603 reduced local word events to bounded gates. Cycle606 now composes those events into an exact lattice-wide compact-register shift on code while isolating its physical packing boundary; the repeated constructive pattern again rejects constitutional escalation.",
+        "N7_hostile_steelman": {
+            "mechanism": "materialize the compact active/buffer/flag/work roles as a proper-cubic repeated M2 supercell with directed edge ports; use bounded sublayers for routed equality-XOR calls; add reversible collision syndrome/debris roles; use certified single-qubit synthesis at declared epsilon",
+            "why_not_defeated": "Cycle606 supplies the exact register target and finds no contradiction preventing that construction; the collision-reservoir and physical-placement routes are open",
+            "terminal_obligation": "execute literal placement and primitive product, E_physical G_coarse = G_physical E_physical, leakage, deletion, held sizes, and one-site translation covariance",
+            "authority_status": "OPEN / no retained authority",
+            "citations": (
+                "scripts/physical_global_carrier_stream_qca_approximation_tournament_cycle606_2026_07_22.py:531-745",
+                "docs/work_history/repo/review_feedback/PHYSICAL_CARRIER_PREPARATION_ELEMENTARY_SYNTHESIS_TOURNAMENT_CYCLE603_NOTE_2026-07-22.md:167-180",
+                "docs/work_history/repo/review_feedback/PHYSICAL_FULL_TORUS_DIMER_M2_COMPILER_TOURNAMENT_CYCLE590_NOTE_2026-07-22.md:126-141",
+            ),
+        },
+        "N8_cross_cycle_echo": (
+            {"cycle": "Cycle560", "retired": "bounded local encoder tables", "mechanism": "finite one-hot branch encoders", "applicability": "logical code construction only; no automatic physical stream"},
+            {"cycle": "Cycle563", "retired": "runtime selected-factor order service", "mechanism": "bounded transported color layers", "applicability": "logical factor order only"},
+            {"cycle": "Cycle580", "retired": "one bounded L41 gate-layout import", "mechanism": "literal 18-M2 primitive circuit", "applicability": "different finite fixture; demonstrates placement can be constructive"},
+            {"cycle": "Cycle590", "retired": "held conditional logical macro/order/layout bookkeeping", "mechanism": "bounded roles and selected-factor product", "applicability": "explicitly not physical primitive composition"},
+            {"cycle": "Cycle603", "retired": "bounded logical local word-event lowering", "mechanism": "Gray paths, reversible conjunction scratch, role-line routing", "applicability": "separate events, not one torus update or physical M2 compiler"},
+            {"cycle": "Cycle606", "retired": "logical/register global carrier product", "mechanism": "compact double buffer", "applicability": "declared code and register algebra only"},
+        ),
         "route_evidence": {
             "A": route_a_result["pass_exact_declared_code_global_stream"],
             "B": route_b_result["pass_exact_global_stream_with_named_block_import"],
@@ -1364,16 +1504,29 @@ def no_go_discipline(route_a_result: dict, route_b_result: dict,
         "minimum_content_claim_shipped": False,
         "shared_obstruction": False,
         "axiom_pressure": False,
-        "pass_for_scoped_dispositions_and_withholding_broad_negative": True,
+        "status": "FAIL",
+        "failed_checklist_items": ("N7: actionable physical-supercell and collision-reservoir steelman remains live",),
+        "broad_negative_gate": "FAIL / DO NOT SHIP",
+        "minimum_content_gate": "FAIL / DO NOT SHIP",
+        "shared_obstruction_gate": "FAIL / DO NOT SHIP",
+        "axiom_pressure_gate": "FAIL / DO NOT SHIP",
+        "gate_reason": "the N7 steelman remains live and no route-independent contradiction survived the constructive attempts",
+        "demoted_artifact_status": "positive scoped construction plus unresolved physical-M2 and precision walls",
+        "narrowed_positive_artifact_gate": "PASS",
     }
     condition = (
-        len(families) >= 5 and len(pairs) == math.comb(len(walls), 2)
+        len(families) >= 5 and result["N1_all_markers_exact"]
+        and len(pairs) == math.comb(len(walls), 2)
+        and result["N5_five_resolutions_present"]
         and all(result["route_evidence"].values())
         and not result["negative_claim_shipped"]
         and not result["minimum_content_claim_shipped"]
         and not result["shared_obstruction"] and not result["axiom_pressure"]
+        and result["broad_negative_gate"] == "FAIL / DO NOT SHIP"
+        and result["narrowed_positive_artifact_gate"] == "PASS"
+        and result["N7_hostile_steelman"]["authority_status"] == "OPEN / no retained authority"
     )
-    check("fresh N1-N8 withholds broad locality/collision/precision negatives and axiom pressure",
+    check("fresh exact-schema N1-N8 fails the broad-negative gate and retains only the narrowed positive construction",
           condition, result)
     return result
 
@@ -1385,12 +1538,15 @@ def note_contract() -> dict:
         "double buffer", "partitioned", "state-carried", "global stream", "L3", "L6", "L7",
         "all 24", "all 576", "translation", "nearest-neighbor", "inverse", "deletion",
         "malformed", "off-code", "collision", "Clifford+T", "depth ten", "N1", "N8",
-        "schedule is not time", "carrier bookkeeping", "no axiom pressure",
+        "schedule is not time", "register counts are not source or energy",
+        "logical/register only", "physical M2", "FAIL / DO NOT SHIP",
+        "Author artifact status accepted: false", "no axiom pressure",
     )
     missing = tuple(phrase for phrase in required if phrase not in text)
     forbidden = (
-        "all malformed sectors are repaired", "exact Clifford+T closure",
+        "all malformed sectors are repaired", "claims exact Clifford+T closure",
         "schedule is physical time", "carrier count is energy", "shared obstruction proved",
+        "physical M2 compiler is complete", "all 576 update-covariance tests passed",
     )
     forbidden_hits = tuple(phrase for phrase in forbidden if phrase in text)
     result = {"required": required, "missing": missing, "forbidden_hits": forbidden_hits}
@@ -1400,9 +1556,12 @@ def note_contract() -> dict:
 
 
 def main() -> int:
+    global PASS, FAIL
+    PASS = FAIL = 0
     started = time.perf_counter()
     print("Cycle606 global carrier stream/QCA approximation tournament", AUTHORITY, AUDIT)
-    cycle603_receipt = shore()
+    shore_result = shore()
+    cycle603_receipt = shore_result["Cycle603_receipt"]
     route_a_result = route_a()
     route_b_result = route_b()
     route_c_result = route_c()
@@ -1419,7 +1578,7 @@ def main() -> int:
         "status": "cycle606-global-carrier-stream-qca-approximation-tournament",
         "authority": AUTHORITY,
         "audit": AUDIT,
-        "HEAD": subprocess.check_output(("git", "rev-parse", "HEAD"), cwd=ROOT, text=True).strip(),
+        "author_artifact_status_accepted": False,
         "pins": PINS,
         "runner_sha256": sha(Path(__file__)),
         "note_sha256": sha(NOTE),
@@ -1430,6 +1589,7 @@ def main() -> int:
             "Cycle603_global_stream_was_open": not cycle603_receipt[
                 "route_A_structured_elementary_compiler"
             ]["scratch_and_schedule"]["global_conflict_free_stream_schedule_compiled"],
+            "import_audit": shore_result["verified_inheritance"]["import_audit"],
         },
         "route_A_compact_double_buffer": route_a_result,
         "route_B_direction_partitioned_QCA": route_b_result,
@@ -1437,14 +1597,42 @@ def main() -> int:
         "precision_bounded_Clifford_T": precision_result,
         "no_go_discipline": discipline,
         "note_contract": note,
-        "strongest_constructive_result": "an exact constant-overhead translation/proper-cubic compact-register double-buffer permutation implements the simultaneous Cycle600 three-species torus stream on the declared one-carrier/species code for L3/L6/L7 with no parity/color/origin/size query; each event has a bounded support-two Clifford+T/CNOT/SWAP NN template, while simultaneous physical supercell packing remains explicit and open",
+        "strongest_constructive_result": "an exact constant-overhead logical compact-register double-buffer permutation implements the simultaneous Cycle600 three-species torus stream on the declared one-carrier/species code for L3/L6/L7 with no runtime parity/color/origin/size query; exact register EG/inverse/deletion/collision controls and seeded translation/all24 covariance pass, while the all576 execution is only the site/word group action and no physical M2 compiler is claimed",
         "route_disposition": {
-            "A": "exact compact-register global stream on supplied code with event-local elementary lowering; physical supercell packing, zero buffer/scratch, and global one-carrier enforcement remain supplied",
-            "B": "exact direction-expanded partitioned register stream with one sharp 28-M2 local exchange and physical-placement import",
-            "C": "exact phase-carried recurrent register stream on locally checkable uniform-phase sector; phase genesis, elementary count, and physical packing remain supplied",
+            "A": "exact logical compact-register global stream on supplied code with declared role-line lowering; literal M2 placement/product, physical encoder/intertwiner/leakage, zero buffer/scratch genesis, and global one-carrier enforcement remain supplied or unevaluated",
+            "B": "exact direction-expanded partitioned register stream with one unlowered 28-role-bit local exchange; no physical M2 compiler",
+            "C": "exact phase-carried recurrent register stream on locally checkable uniform-phase sector; phase genesis, elementary count, all24/all576 update covariance, and physical M2 compilation remain open",
             "precision": "explicit depth<=10 H/T/Tdg approximants and accumulation bounds; no exact or scalable precision closure",
         },
-        "optimal_next_campaign": "materialize and exhaustively collision-check one translation-invariant proper-cubic M2 supercell for Route A, including scratch and directed-edge routes; then compose the physical stream with Cycle603 coin/contact and pursue collision syndrome plus certified epsilon-target Clifford+T synthesis",
+        "physical_M2_scope": {
+            "literal_layout_compiled": False,
+            "primitive_composition": False,
+            "encoder_composed": False,
+            "intertwiner_residual": None,
+            "leakage_evaluated": False,
+            "one_site_translation_covariant_law_executed": False,
+        },
+        "covariance_execution_scope": {
+            "Route_A_all24_register_update": "executed on one frozen lawful seed per L",
+            "Route_A_all576": "executed site/word action group law only; not update covariance",
+            "Route_B_all24_register_update": "executed on one frozen lawful seed per L",
+            "Route_B_all576_register_update": "not executed",
+            "Route_C_all24_register_update": "not executed",
+            "Route_C_all576_register_update": "not executed",
+            "physical_one_site_translation_covariance": "not executed",
+        },
+        "interpretation_firewall": {
+            "schedule_is_physical_time": False,
+            "role_or_register_is_physical_M2": False,
+            "register_count_is_source_or_energy": False,
+            "register_EG_is_physical_intertwiner": False,
+            "logical_scratch_leakage_is_physical_code_leakage": False,
+        },
+        "breakthrough_bar_met": False,
+        "breakthrough_default": "no",
+        "broad_negative_gate": discipline["broad_negative_gate"],
+        "demoted_artifact_status": discipline["demoted_artifact_status"],
+        "optimal_next_campaign": "materialize and collision-check a literal translation-invariant proper-cubic M2 supercell for Route A, with a composed physical encoder, primitive product, one-site translation-covariant law, intertwiner/leakage/deletion tests, and local lawful-domain gadget; then compose coin/contact and pursue reversible collision syndrome plus certified epsilon-target synthesis",
         "shared_obstruction_or_axiom_pressure": False,
         "constitutional_effect": "none",
         "tests_passed": PASS,

@@ -1,20 +1,22 @@
 {
-  "HEAD": "1baa7161c7576c328c612ebc30f9c4033d1f82d8",
   "audit": "unset",
+  "audit_verdict_inferred_from_dependencies": false,
+  "author_artifact_status_accepted": false,
   "authority": "none",
   "cycle": 604,
-  "elapsed_seconds": 3.1543468750314787,
+  "elapsed_seconds": 2.787038709037006,
   "inventory": {
     "derived_or_executed": [
       "rational contraction and Julia dilation",
       "FIR spectral complement and exact paraunitary factorization",
-      "co-designed metric product exact expanded-image preservation",
-      "modular reciprocal ledger and continuity",
-      "Cesaro/common-Laplacian static bridge and inherited cubic coefficient comparison"
+      "declared metric product exact expanded-code preservation",
+      "host-evaluated modular reciprocal ledger and continuity",
+      "Cesaro/graph-Laplacian no-refit comparison and inherited conditional cubic coefficient comparison"
     ],
     "not_derived": [
+      "physical M2 primitive composition, E/G, leakage, NN routing, layout, or local constraint enforcement",
       "exact finite-depth rational steady transfer",
-      "accepted finite gate-alphabet lowering",
+      "fixed physical gate-alphabet lowering",
       "exact sinc",
       "odd-torus color-free product",
       "exact Regge target exponential",
@@ -23,398 +25,764 @@
       "time",
       "gravity",
       "finite-horizon static equality",
+      "exact cross-cycle physical interface or prediction law",
+      "repair of Cycle585 raw-Regge 4/3 mismatch",
       "event calibration",
       "Born probability",
-      "Record actuality",
+      "Record or actuality",
       "joint Cycle590 recurrent-pair compiler"
     ],
     "supplied": [
       "Pad\u00e9 order one and H=8 DC termination",
       "minimum-phase complement and vacuum garbage input",
-      "even-torus bipartite color and all gate schedules",
+      "declared ten-role metric restriction, even-torus bipartite color and all factor schedules",
       "Cycle576 kernel and Cycle579 angle",
       "31-bit modular alphabet, source word, coupling sign, and kick/drift order",
       "alpha=1/12, zero-mean source, finite Cesaro horizons, float precision",
-      "response-sign/event calibration and Cycle451/570 matched identities"
+      "response-sign/candidate-label calibration and Cycle451/570 matched identities"
     ]
   },
   "maturity_0_to_5": {
-    "Born_probability": 2.0,
-    "gravity_source": 3.25,
-    "inertia_matter": 4.0,
-    "operational_quantum_records": 4.0,
-    "time": 3.0
+    "Born_probability": 3.65,
+    "gravity_source": 4.15,
+    "inertia_matter": 4.87,
+    "operational_quantum_records": 4.65,
+    "time": 3.8
   },
-  "maximum_RSS_bytes": 405815296,
+  "maximum_RSS_bytes": 399327232,
   "no_go_discipline": {
     "N1_alternative_route_enumeration": [
-      [
-        "one-state rational transfer",
-        "Pad\u00e9 recurrence plus Julia dilation",
-        "exact R(w)",
-        "ATTEMPTED_MATHEMATICALLY; FINITE_PREPARATION_OPEN"
-      ],
-      [
-        "two-channel FIR lattice filter",
-        "Fejer-Riesz paraunitary plus eight delay sections",
-        "bounded fixed-parameter approximate line encoder",
-        "ATTEMPTED_POSITIVE_C604"
-      ],
-      [
-        "midpoint path dilation",
-        "Cycle601 q=4 coherent recombination",
-        "bounded approximate line encoder",
-        "PRIOR_ATTEMPTED"
-      ],
-      [
-        "finite DFT code",
-        "Cycle596 exact torus quadrature",
-        "exact finite line map",
-        "PRIOR_RULED_OUT_ONLY_FOR_CONSTANT_OVERHEAD"
-      ],
-      [
-        "metric-rail product",
-        "project kernel before factorization",
-        "exact expanded-image preservation",
-        "ATTEMPTED_POSITIVE_C604"
-      ],
-      [
-        "raw edge product",
-        "Cycle579 matching factors",
-        "actual Regge product",
-        "PRIOR_RULED_OUT_ONLY_FOR_IMAGE_PRESERVATION"
-      ],
-      [
-        "paired modular fields",
-        "reciprocal kick-drift",
-        "conserved local response ledger",
-        "ATTEMPTED_POSITIVE_C604"
-      ],
-      [
-        "unilateral modular wave",
-        "Cycle601 sourced leapfrog",
-        "local retarded/advanced response",
-        "PRIOR_ATTEMPTED"
-      ],
-      [
-        "stable reversible wave",
-        "alpha=1/12 Cesaro",
-        "finite-to-static prediction bridge",
-        "ATTEMPTED_POSITIVE_C604"
-      ],
-      [
-        "static constrained inverse",
-        "Cycles585/588 Kjoin=L",
-        "1/r plus cubic coefficient",
-        "PRIOR_ATTEMPTED"
-      ]
+      {
+        "family": "one-state rational transfer",
+        "marker": "ATTEMPTED",
+        "mechanism": "Pad\u00e9 recurrence plus Julia dilation",
+        "object": "state-space colligation",
+        "result": "algebraic transfer closes; finite autonomous fixed-state preparation is open",
+        "terminal": "exact R(w)"
+      },
+      {
+        "family": "two-channel FIR lattice filter",
+        "marker": "ATTEMPTED",
+        "mechanism": "Fejer-Riesz complement plus delay factorization",
+        "object": "degree-eight paraunitary polynomial",
+        "result": "algebraic factorization closes; physical M2 lowering and exact sinc remain open",
+        "terminal": "bounded approximate line map"
+      },
+      {
+        "family": "fixed-q midpoint quadrature",
+        "marker": "RULED OUT BY PRIOR",
+        "mechanism": "coherent redistribution/recombination",
+        "object": "four-sample one-excitation dilation",
+        "result": "Cycle601 rules out exactness only for frozen q=4; variable-q and other finite-state maps remain live",
+        "terminal": "exact fixed-q line map"
+      },
+      {
+        "family": "finite DFT line code",
+        "marker": "RULED OUT BY PRIOR",
+        "mechanism": "exact torus quadrature",
+        "object": "size-indexed Fourier role family",
+        "result": "Cycle601's exact-pinned Cycle596 boundary rules out constant overhead only for that DFT family",
+        "terminal": "constant-overhead exact line map"
+      },
+      {
+        "family": "metric-rail conjugated product",
+        "marker": "ATTEMPTED",
+        "mechanism": "restrict then factor, conjugated by the FIR code",
+        "object": "ten-role metric kernel",
+        "result": "declared code intertwining closes; physical primitive composition and exact exponential remain open",
+        "terminal": "declared expanded-image invariance"
+      },
+      {
+        "family": "paired modular fields",
+        "marker": "ATTEMPTED",
+        "mechanism": "reciprocal kick-drift exchange",
+        "object": "four modular coordinate/momentum words",
+        "result": "integer conservation closes; physical source identity, local enforcement, sign, and order remain open",
+        "terminal": "conserved local ledger"
+      },
+      {
+        "family": "stable reversible Cesaro wave",
+        "marker": "ATTEMPTED",
+        "mechanism": "finite Cesaro mean",
+        "object": "second-order graph recurrence",
+        "result": "no-refit graph comparison closes numerically; finite equality and physical interface remain open",
+        "terminal": "finite/static comparison"
+      },
+      {
+        "family": "conditional static graph inverse",
+        "marker": "ATTEMPTED",
+        "mechanism": "zero-mean inverse and asymptotic Green evaluation",
+        "object": "Cycle588 restricted-rail graph Laplacian",
+        "result": "surface comparison closes without refit; it is not the Cycle585 raw-Regge surface and lacks a physical interface",
+        "terminal": "5/(32pi) graph surface"
+      },
+      {
+        "family": "matched event-label interface",
+        "marker": "ATTEMPTED",
+        "mechanism": "exact 3:4 and 5:4 label preservation",
+        "object": "Cycle451/570 rational candidate labels",
+        "result": "labels are retained; sign mapping, detector calibration, Record status, and actuality remain supplied",
+        "terminal": "selected calibrated occurrence"
+      }
     ],
-    "N2_pairwise_wall_independence": [
-      [
-        "W_exact_sinc",
-        "W_rational_preparation",
-        "independent under the tested constructions"
-      ],
-      [
-        "W_exact_sinc",
-        "W_gate_alphabet",
-        "independent under the tested constructions"
-      ],
-      [
-        "W_exact_sinc",
-        "W_even_color",
-        "independent under the tested constructions"
-      ],
-      [
-        "W_exact_sinc",
-        "W_target_exponential",
-        "independent under the tested constructions"
-      ],
-      [
-        "W_exact_sinc",
-        "W_source_identity",
-        "independent under the tested constructions"
-      ],
-      [
-        "W_exact_sinc",
-        "W_order_sign",
-        "independent under the tested constructions"
-      ],
-      [
-        "W_exact_sinc",
-        "W_static_limit",
-        "independent under the tested constructions"
-      ],
-      [
-        "W_exact_sinc",
-        "W_event_calibration",
-        "independent under the tested constructions"
-      ],
-      [
-        "W_exact_sinc",
-        "W_joint_compiler",
-        "independent under the tested constructions"
-      ],
-      [
-        "W_rational_preparation",
-        "W_gate_alphabet",
-        "independent under the tested constructions"
-      ],
-      [
-        "W_rational_preparation",
-        "W_even_color",
-        "independent under the tested constructions"
-      ],
-      [
-        "W_rational_preparation",
-        "W_target_exponential",
-        "independent under the tested constructions"
-      ],
-      [
-        "W_rational_preparation",
-        "W_source_identity",
-        "independent under the tested constructions"
-      ],
-      [
-        "W_rational_preparation",
-        "W_order_sign",
-        "independent under the tested constructions"
-      ],
-      [
-        "W_rational_preparation",
-        "W_static_limit",
-        "independent under the tested constructions"
-      ],
-      [
-        "W_rational_preparation",
-        "W_event_calibration",
-        "independent under the tested constructions"
-      ],
-      [
-        "W_rational_preparation",
-        "W_joint_compiler",
-        "independent under the tested constructions"
-      ],
-      [
-        "W_gate_alphabet",
-        "W_even_color",
-        "independent under the tested constructions"
-      ],
-      [
-        "W_gate_alphabet",
-        "W_target_exponential",
-        "independent under the tested constructions"
-      ],
-      [
-        "W_gate_alphabet",
-        "W_source_identity",
-        "independent under the tested constructions"
-      ],
-      [
-        "W_gate_alphabet",
-        "W_order_sign",
-        "independent under the tested constructions"
-      ],
-      [
-        "W_gate_alphabet",
-        "W_static_limit",
-        "independent under the tested constructions"
-      ],
-      [
-        "W_gate_alphabet",
-        "W_event_calibration",
-        "independent under the tested constructions"
-      ],
-      [
-        "W_gate_alphabet",
-        "W_joint_compiler",
-        "independent under the tested constructions"
-      ],
-      [
-        "W_even_color",
-        "W_target_exponential",
-        "independent under the tested constructions"
-      ],
-      [
-        "W_even_color",
-        "W_source_identity",
-        "independent under the tested constructions"
-      ],
-      [
-        "W_even_color",
-        "W_order_sign",
-        "independent under the tested constructions"
-      ],
-      [
-        "W_even_color",
-        "W_static_limit",
-        "independent under the tested constructions"
-      ],
-      [
-        "W_even_color",
-        "W_event_calibration",
-        "independent under the tested constructions"
-      ],
-      [
-        "W_even_color",
-        "W_joint_compiler",
-        "independent under the tested constructions"
-      ],
-      [
-        "W_target_exponential",
-        "W_source_identity",
-        "independent under the tested constructions"
-      ],
-      [
-        "W_target_exponential",
-        "W_order_sign",
-        "independent under the tested constructions"
-      ],
-      [
-        "W_target_exponential",
-        "W_static_limit",
-        "independent under the tested constructions"
-      ],
-      [
-        "W_target_exponential",
-        "W_event_calibration",
-        "independent under the tested constructions"
-      ],
-      [
-        "W_target_exponential",
-        "W_joint_compiler",
-        "independent under the tested constructions"
-      ],
-      [
-        "W_source_identity",
-        "W_order_sign",
-        "independent under the tested constructions"
-      ],
-      [
-        "W_source_identity",
-        "W_static_limit",
-        "independent under the tested constructions"
-      ],
-      [
-        "W_source_identity",
-        "W_event_calibration",
-        "independent under the tested constructions"
-      ],
-      [
-        "W_source_identity",
-        "W_joint_compiler",
-        "independent under the tested constructions"
-      ],
-      [
-        "W_order_sign",
-        "W_static_limit",
-        "independent under the tested constructions"
-      ],
-      [
-        "W_order_sign",
-        "W_event_calibration",
-        "independent under the tested constructions"
-      ],
-      [
-        "W_order_sign",
-        "W_joint_compiler",
-        "independent under the tested constructions"
-      ],
-      [
-        "W_static_limit",
-        "W_event_calibration",
-        "independent under the tested constructions"
-      ],
-      [
-        "W_static_limit",
-        "W_joint_compiler",
-        "independent under the tested constructions"
-      ],
-      [
-        "W_event_calibration",
-        "W_joint_compiler",
-        "independent under the tested constructions"
-      ]
-    ],
-    "N3_hidden_wall_scan": [
-      "Pad\u00e9 order one",
-      "FIR termination H=8",
-      "minimum-phase spectral-factor choice",
-      "vacuum garbage input",
-      "even-torus color",
-      "factor schedule",
-      "31-bit words",
-      "coupling sign",
-      "kick/drift order",
-      "alpha=1/12",
-      "finite Cesaro horizons",
-      "zero-mean source",
-      "event-sign calibration"
-    ],
-    "N4_residual_matching": {
-      "W_even_color": "same-role metric hopping uses a supplied bipartite matching law restricted to even tori",
-      "W_event_calibration": "the response-sign to 3:4/5:4 event association is supplied",
+    "N1_markers_valid": true,
+    "N1_normalized_family_count": 9,
+    "N2_collapsed_walls": {
+      "W_even_domain": "same-role metric hopping uses a supplied bipartite matching law restricted to even tori",
+      "W_event_calibration": "the response-sign to 3:4/5:4 candidate-label association is supplied",
       "W_exact_sinc": "P8 and Pad\u00e9 R only approximate the exact line factor",
-      "W_gate_alphabet": "frozen parameterized two-M2 matrices were not lowered to an accepted finite gate alphabet",
       "W_joint_compiler": "Cycle601's recurrent pair remains unjoined to Cycle590",
       "W_order_sign": "both reciprocal factor orders and both coupling signs survive",
+      "W_physical_interface": "the graph-surface comparison has no exact source/response-to-observable physical interface and does not repair Cycle585's raw-Regge mismatch",
+      "W_physical_lowering": "algebraic blocks, declared roles, arithmetic, routing, leakage and enforcement were not composed from physical M2 primitives",
       "W_rational_preparation": "the exact rational steady recurrence lacks finite-depth autonomous preparation",
       "W_source_identity": "modular source/recoil words are not identified with physical matter",
       "W_static_limit": "finite Cesaro update counts do not equal the infinite static limit",
       "W_target_exponential": "the ordered metric product is not the exact target exponential"
     },
-    "N5_rhetoric_audit": "exact applies only to Julia/FIR unitarity, code preservation, inverse, modular ledger, and operator identity; all sinc, exponential, physical-source, static-limit, and event claims are scoped",
-    "N6_partial_closure_paths": [
-      "FIR closes finite local fixed-parameter dilation and image preservation without exact sinc or accepted-alphabet lowering",
-      "reciprocal kick-drift closes a conserved local ledger without physical source identification or order selection",
-      "Cesaro closes a common-operator prediction bridge without making update count time or calibrating events"
+    "N2_pairwise_wall_independence": [
+      {
+        "independent": true,
+        "left": "W_exact_sinc",
+        "left_implies_right": false,
+        "right": "W_rational_preparation",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_exact_sinc",
+        "left_implies_right": false,
+        "right": "W_physical_lowering",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_exact_sinc",
+        "left_implies_right": false,
+        "right": "W_even_domain",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_exact_sinc",
+        "left_implies_right": false,
+        "right": "W_target_exponential",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_exact_sinc",
+        "left_implies_right": false,
+        "right": "W_source_identity",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_exact_sinc",
+        "left_implies_right": false,
+        "right": "W_order_sign",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_exact_sinc",
+        "left_implies_right": false,
+        "right": "W_static_limit",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_exact_sinc",
+        "left_implies_right": false,
+        "right": "W_physical_interface",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_exact_sinc",
+        "left_implies_right": false,
+        "right": "W_event_calibration",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_exact_sinc",
+        "left_implies_right": false,
+        "right": "W_joint_compiler",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_rational_preparation",
+        "left_implies_right": false,
+        "right": "W_physical_lowering",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_rational_preparation",
+        "left_implies_right": false,
+        "right": "W_even_domain",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_rational_preparation",
+        "left_implies_right": false,
+        "right": "W_target_exponential",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_rational_preparation",
+        "left_implies_right": false,
+        "right": "W_source_identity",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_rational_preparation",
+        "left_implies_right": false,
+        "right": "W_order_sign",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_rational_preparation",
+        "left_implies_right": false,
+        "right": "W_static_limit",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_rational_preparation",
+        "left_implies_right": false,
+        "right": "W_physical_interface",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_rational_preparation",
+        "left_implies_right": false,
+        "right": "W_event_calibration",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_rational_preparation",
+        "left_implies_right": false,
+        "right": "W_joint_compiler",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_physical_lowering",
+        "left_implies_right": false,
+        "right": "W_even_domain",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_physical_lowering",
+        "left_implies_right": false,
+        "right": "W_target_exponential",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_physical_lowering",
+        "left_implies_right": false,
+        "right": "W_source_identity",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_physical_lowering",
+        "left_implies_right": false,
+        "right": "W_order_sign",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_physical_lowering",
+        "left_implies_right": false,
+        "right": "W_static_limit",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_physical_lowering",
+        "left_implies_right": false,
+        "right": "W_physical_interface",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_physical_lowering",
+        "left_implies_right": false,
+        "right": "W_event_calibration",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_physical_lowering",
+        "left_implies_right": false,
+        "right": "W_joint_compiler",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_even_domain",
+        "left_implies_right": false,
+        "right": "W_target_exponential",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_even_domain",
+        "left_implies_right": false,
+        "right": "W_source_identity",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_even_domain",
+        "left_implies_right": false,
+        "right": "W_order_sign",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_even_domain",
+        "left_implies_right": false,
+        "right": "W_static_limit",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_even_domain",
+        "left_implies_right": false,
+        "right": "W_physical_interface",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_even_domain",
+        "left_implies_right": false,
+        "right": "W_event_calibration",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_even_domain",
+        "left_implies_right": false,
+        "right": "W_joint_compiler",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_target_exponential",
+        "left_implies_right": false,
+        "right": "W_source_identity",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_target_exponential",
+        "left_implies_right": false,
+        "right": "W_order_sign",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_target_exponential",
+        "left_implies_right": false,
+        "right": "W_static_limit",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_target_exponential",
+        "left_implies_right": false,
+        "right": "W_physical_interface",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_target_exponential",
+        "left_implies_right": false,
+        "right": "W_event_calibration",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_target_exponential",
+        "left_implies_right": false,
+        "right": "W_joint_compiler",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_source_identity",
+        "left_implies_right": false,
+        "right": "W_order_sign",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_source_identity",
+        "left_implies_right": false,
+        "right": "W_static_limit",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_source_identity",
+        "left_implies_right": false,
+        "right": "W_physical_interface",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_source_identity",
+        "left_implies_right": false,
+        "right": "W_event_calibration",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_source_identity",
+        "left_implies_right": false,
+        "right": "W_joint_compiler",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_order_sign",
+        "left_implies_right": false,
+        "right": "W_static_limit",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_order_sign",
+        "left_implies_right": false,
+        "right": "W_physical_interface",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_order_sign",
+        "left_implies_right": false,
+        "right": "W_event_calibration",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_order_sign",
+        "left_implies_right": false,
+        "right": "W_joint_compiler",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_static_limit",
+        "left_implies_right": false,
+        "right": "W_physical_interface",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_static_limit",
+        "left_implies_right": false,
+        "right": "W_event_calibration",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_static_limit",
+        "left_implies_right": false,
+        "right": "W_joint_compiler",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_physical_interface",
+        "left_implies_right": false,
+        "right": "W_event_calibration",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_physical_interface",
+        "left_implies_right": false,
+        "right": "W_joint_compiler",
+        "right_implies_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_event_calibration",
+        "left_implies_right": false,
+        "right": "W_joint_compiler",
+        "right_implies_left": false
+      }
     ],
-    "N7_concrete_steelman": "A higher-order Schur rational colligation with an autonomously prepared invariant state could improve full-zone error; a translation-covariant QCA factorization could remove the even-torus color; a matter-coupled symplectic law plus matched detector could select response sign/order.",
+    "N3_hidden_wall_scan": {
+      "hidden_conditions_promoted": [
+        "Pad\u00e9 order one",
+        "FIR horizon eight",
+        "minimum-phase complement branch",
+        "vacuum garbage input",
+        "declared ten-role restriction",
+        "even-torus color",
+        "factor schedule",
+        "31-bit word alphabet",
+        "initial source word",
+        "coupling sign",
+        "kick/drift order",
+        "alpha=1/12",
+        "finite Cesaro horizons",
+        "zero-mean source",
+        "candidate-label sign association"
+      ],
+      "phrase_classification": {
+        "by construction": "the ten-role product is a declared design restriction, not evidence of physical enforcement",
+        "framework provides": "no occurrence retained as a premise",
+        "registered_or_canonical": "no occurrence used as authority",
+        "standard_QFT_or_obvious": "no occurrence used as a proof step"
+      }
+    },
+    "N4_residual_matching": [
+      {
+        "current_residual": "fixed-q exactness and C604 physical lowering",
+        "match": true,
+        "witness": "Cycle601 cold",
+        "witness_residual": "declared q=4 factorization, physical lowering/source control open"
+      },
+      {
+        "current_residual": "ordered metric product and physical lowering",
+        "match": true,
+        "witness": "Cycle579 receipt",
+        "witness_residual": "raw ordered logical factor list, target exponential and physical layout open"
+      },
+      {
+        "current_residual": "C604 graph comparator is not a raw-Regge prediction law",
+        "match": true,
+        "witness": "Cycle585 cold",
+        "witness_residual": "actual raw-Regge scalar differs from graph surface by about 4/3"
+      },
+      {
+        "current_residual": "no-refit graph comparison and missing exact physical interface",
+        "match": true,
+        "witness": "Cycle588 cold",
+        "witness_residual": "conditional restricted-rail graph join with no-refit surface; geometry/genesis open"
+      },
+      {
+        "current_residual": "candidate-label preservation without occurrence/Record selection",
+        "match": true,
+        "witness": "Cycle570 receipt",
+        "witness_residual": "candidate form is not Record/actuality and proper time is open"
+      },
+      {
+        "current_residual": "physical sign-to-event calibration",
+        "match": false,
+        "witness": "Cycle451 note",
+        "witness_residual": "source-conditioned relational candidate clock labels"
+      }
+    ],
+    "N5_rhetoric_audit": [
+      {
+        "scope": "declared algebraic code only",
+        "statement": "FIR image intertwining is exact",
+        "tested": "finite declared code blocks on L4/L6/L8/L10",
+        "untested": "physical sites, physical primitive gates, lattice-wide constrained preparation"
+      },
+      {
+        "scope": "host-evaluated modular words only",
+        "statement": "modular ledger is conserved",
+        "tested": "integer per-cell recurrence and global modular sum on L3/L5/L7",
+        "untested": "physical matter/recoil or stress-energy identity"
+      },
+      {
+        "scope": "mathematical graph comparator only",
+        "statement": "graph surface agrees without refit",
+        "tested": "three asymptotic graph Green fixtures and finite Cesaro comparisons",
+        "untested": "exact cross-cycle physical interface, empirical observable, raw-Regge surface"
+      },
+      {
+        "scope": "labels only",
+        "statement": "candidate labels are retained",
+        "tested": "exact rational strings 3:4 and 5:4",
+        "untested": "Record formation, actuality, detector calibration"
+      }
+    ],
+    "N6_partial_closure_paths": [
+      "lower the declared FIR and metric blocks to actual physical M2 primitives with local constraint enforcement, then measure physical E/G/leakage",
+      "replace the supplied even-torus color with a translation-covariant QCA construction",
+      "derive an exact source-response-observable interface before promoting the no-refit graph comparison to a prediction law",
+      "compose an autonomous detector that selects sign/order and forms a Record under the framework's actual Record criteria",
+      "these are constructive import-retirement paths; no new-axiom claim is made"
+    ],
+    "N7_concrete_steelman": "A hostile reviewer can point to a concrete live route: synthesize the frozen paraunitary and metric blocks from the actual M2 primitive set with a local gauge penalty, replace parity coloring by a translation-covariant QCA, then couple the reciprocal word to the Cycle590 matter/contact law and an autonomous detector.  The terminal test is physical E G intertwining with leakage, held-size covariance, no refit, and an exact source-response-observable interface that selects one 3:4/5:4 outcome.  None of those obligations is contradicted by C604, so a shared no-go is premature.",
     "N8_cross_cycle_echo": {
-      "Cycle451_570": "matched event words survive but calibration remains supplied",
-      "Cycle585_588": "same exact L operator supplies the static coefficient surface",
-      "Cycle596_601": "size-growing exact DFT versus bounded midpoint approximation and raw-image leakage",
-      "Cycle604_new": "finite paraunitary family and projected metric product close dilation/image walls but not exact sinc"
+      "Cycle451_to_570": "candidate timing labels and finite semigroup carriage survive, while proper time, Record status, and calibration remain open",
+      "Cycle579_to_601": "logical factor programs exposed physical-lowering and exact-image gaps; C604 changes the algebraic image but still does not lower it",
+      "Cycle585_to_588": "a restricted conditional graph join produces 5/(32pi), but the actual raw-Regge 4/3 mismatch remains",
+      "retirement_mechanisms_considered": "co-design, conditional range restriction, explicit arithmetic, QCA replacement, and exact-interface composition remain live"
     },
     "axiom_pressure": false,
     "broad_negative_gate": "FAIL / DO NOT SHIP",
+    "gate_status": "FAIL",
+    "minimum_content_claim": "FAIL / DO NOT SHIP",
     "shared_route_independent_obstruction": false
   },
-  "optimal_next_campaign": "replace the even-torus color with a translation-covariant QCA metric product and couple the reciprocal source word to accepted matter plus an autonomous matched detector capable of selecting sign/order",
+  "optimal_next_campaign": "lower the FIR/metric and modular constructions into actual physical M2 primitives with local enforcement; replace even coloring by a translation-covariant QCA; then compose matter, source response, observable interface, and an autonomous Record-forming detector without refit",
   "pass": true,
   "pins": {
-    "Cycle570_receipt_pass": true,
     "expected": {
-      "docs/work_history/repo/review_feedback/PHYSICAL_CONSTRAINED_MATTER_SOURCE_STATIC_JOIN_TOURNAMENT_CYCLE588_NOTE_2026-07-22.md": "4818ebbdbbd862859fe9963f3eaa2ecc42534d8a0186c456ff1b1f73194cda59",
-      "docs/work_history/repo/review_feedback/PHYSICAL_RECURRENT_SOURCE_BOUNDED_REGGE_RETARDED_RESPONSE_TOURNAMENT_CYCLE601_NOTE_2026-07-22.md": "138880bea4b6de50cd97b8b6b76b767bfe5210d3d15fb11ffb596677bb4f2bed",
+      "docs/work_history/repo/review_feedback/PHYSICAL_CONSTRAINED_MATTER_SOURCE_STATIC_JOIN_TOURNAMENT_CYCLE588_NOTE_2026-07-22.md": "2aefccc9ab4e8f11f316c9b0839cf6ca1756ab6cd3f8e9ffd3ea24c0ae424c08",
+      "docs/work_history/repo/review_feedback/PHYSICAL_DYNAMICAL_METRIC_SOURCE_LAW_BRIDGE_TOURNAMENT_CYCLE576_NOTE_2026-07-22.md": "6fe73ca79366ad75fd9499b820b4e3a49833ba6919a8c8cd3ef4d44e403da0e3",
+      "docs/work_history/repo/review_feedback/PHYSICAL_JOINT_CLOCK_ACCUMULATOR_CONTRACTION_BRIDGE_CYCLE570_NOTE_2026-07-22.md": "e88ee3daee2e07f215142d29cee7e6e5d3564bf5f92764aca49e89fe8f065438",
+      "docs/work_history/repo/review_feedback/PHYSICAL_RECURRENT_SOURCE_BOUNDED_REGGE_RETARDED_RESPONSE_TOURNAMENT_CYCLE601_NOTE_2026-07-22.md": "22a8c430d303971266c76c0f3a3f2be7389c5bd0bd48dbbfaa2fb333952aa18c",
+      "docs/work_history/repo/review_feedback/PHYSICAL_REGGE_FINITE_UPDATE_FRAME_SELECTION_TOURNAMENT_CYCLE579_NOTE_2026-07-22.md": "d3c7ff5984d6ba079396f8ff0e38566b9b0e37ef636d19f8ec4d1073791305f0",
+      "docs/work_history/repo/review_feedback/PHYSICAL_REGGE_STATIC_SCALAR_PREDICTION_BRIDGE_TOURNAMENT_CYCLE585_NOTE_2026-07-22.md": "dc39bb0a8e2aa7a3b23948afed2f5c81478b896e19cd8f9bc30553d727e08872",
       "docs/work_history/repo/review_feedback/PHYSICAL_SOURCE_CONDITIONED_RELATIONAL_DUAL_CLOCK_CYCLE451_NOTE_2026-07-19.md": "81f28e682b6b45d1572164a7a72b00d252bc81c542a4de5d83ed602b311320ca",
-      "outputs/physical_constrained_matter_source_static_join_tournament_cycle588_cold_2026_07_22.txt": "c10ca982c9755af00c70c14b1e825834bdf3f9024737f12a024ef5fbd1324993",
-      "outputs/physical_joint_clock_accumulator_contraction_bridge_cycle570_receipt_2026_07_22.json": "f104399af621ded1b50e180e6fcce5f254008715b72191c6199fe4d583a8a806",
-      "outputs/physical_recurrent_source_bounded_regge_retarded_response_tournament_cycle601_cold_2026_07_22.txt": "b58555baef2869fb782b393472dd0f1dda2c5efdee2ef4fadd7a3f6a8c9ac237",
-      "outputs/physical_regge_static_scalar_prediction_bridge_tournament_cycle585_cold_2026_07_22.txt": "ebebc5bf0eaa26fe957c9295d997da613071f1e5c98fbeb5b66311baa125d703",
-      "scripts/physical_constrained_matter_source_static_join_tournament_cycle588_2026_07_22.py": "d3658aacb76988ae7daf100f8ed3503e69927afa90a88d2062a0f23919f8ac4c",
-      "scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py": "53d60249420994818e7517645ad4157e1e11c7dc184fbf89b2838e94b53977d0",
-      "scripts/physical_joint_clock_accumulator_contraction_bridge_cycle570_2026_07_22.py": "853abe5470efd15b154d6cb348d49795a6fa84e77a62f0b21a79105892b1d415",
-      "scripts/physical_recurrent_source_bounded_regge_retarded_response_tournament_cycle601_2026_07_22.py": "bcd09e478743552938eebcb484c610bd8cb2e39c61ae076b0f96c0a0f8c71fbd",
-      "scripts/physical_regge_finite_update_frame_selection_tournament_cycle579_2026_07_22.py": "e607e8a0d46fbb70e7be35d1897acebebdb8ad900a4ab69159e572f3fbc5c7ab",
-      "scripts/physical_regge_static_scalar_prediction_bridge_tournament_cycle585_2026_07_22.py": "70d98e5493df503f5fe353f31caf50f967b7e35c7471f01ba529de3a6a4a7c99",
+      "outputs/physical_constrained_matter_source_static_join_tournament_cycle588_cold_2026_07_22.txt": "41b495ea2f20a641aac119eb165b78ca54ab09b63df76b6309058176f6822eb4",
+      "outputs/physical_dynamical_metric_source_law_bridge_tournament_cycle576_cold_2026_07_22.txt": "80f69b699f955663609461e12f978500eb44f582092f6db0739b449161edbd0d",
+      "outputs/physical_dynamical_metric_source_law_bridge_tournament_cycle576_receipt_2026_07_22.json": "5ba12c643c4f02355069e07dc4f8e7319bbb9374fd02a77505b9f635ef16135e",
+      "outputs/physical_joint_clock_accumulator_contraction_bridge_cycle570_receipt_2026_07_22.json": "f9295faa4230427623ac350625a42fb17949fd86f523b6cf81aa247c14dd796c",
+      "outputs/physical_recurrent_source_bounded_regge_retarded_response_tournament_cycle601_cold_2026_07_22.txt": "04755446aa03054f6a6e75d158ef1cf5c5886bfba73d5754a428c1d76aa474fe",
+      "outputs/physical_regge_finite_update_frame_selection_tournament_cycle579_cold_2026_07_22.txt": "035bd83bc3d322d66eb3cf20cf20a7753e913734dad7243e2824f9ec1f48884b",
+      "outputs/physical_regge_finite_update_frame_selection_tournament_cycle579_receipt_2026_07_22.json": "6cdc99d5f68d3244e5dc9ea802f3874a29a603d0fafd0eed6f21b32ed334cba8",
+      "outputs/physical_regge_static_scalar_prediction_bridge_tournament_cycle585_cold_2026_07_22.txt": "711dc7656be5f9ca70b27929334df098429801234ff4c7d33150d7ab55d733cc",
+      "scripts/frontier_cubic_coxeter_regge_second_variation_3plus1_2026_06_09.py": "537371554e1a5244875645ca600f5f01e0ccfae64530572630d934e8ea0a85ce",
+      "scripts/physical_constrained_matter_source_static_join_tournament_cycle588_2026_07_22.py": "a04546c78846ae9347fce2ef7af04cd84d6fb27f8349f42d269fca6080092c82",
+      "scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py": "7aab3d6bc8d9d8b44263bca7a5cc308534269abb88094b2dfe0a820b12df2400",
+      "scripts/physical_joint_clock_accumulator_contraction_bridge_cycle570_2026_07_22.py": "37e9d0f336d773bd4a1957a6531f80dc35b9673a4ef0f99137e7fb33558bf849",
+      "scripts/physical_recurrent_source_bounded_regge_retarded_response_tournament_cycle601_2026_07_22.py": "8fcb189dc996e30d9d6d72157ad0ee2565a6a7d7ec69a6a4dc063433a0d930ca",
+      "scripts/physical_regge_finite_update_frame_selection_tournament_cycle579_2026_07_22.py": "435096b012faf4425ff27761e6690178caa9e14ffdcde5659cb5072771a036ea",
+      "scripts/physical_regge_static_scalar_prediction_bridge_tournament_cycle585_2026_07_22.py": "d44819d5f2184afff1d86a9e4056a61d81472add5ba72863ecd09e67fbdbda49",
       "scripts/physical_source_conditioned_relational_dual_clock_cycle451_2026_07_19.py": "c89e3d47b42b05c0d723afb5e68548bbb15ee79401eaa72f3c8c715e897071a1"
     },
+    "inherited_boundary_controls": {
+      "Cycle570_authority_audit_tests": [
+        "none",
+        "unset",
+        9,
+        9
+      ],
+      "Cycle570_candidate_FORM_called_Record_or_actuality": false,
+      "Cycle570_continuum_Lorentz_proper_time_closed": false,
+      "Cycle570_generator_seed_exponential_selected": false,
+      "Cycle576_authority_audit_tests": [
+        "none",
+        "unset",
+        13,
+        13
+      ],
+      "Cycle576_physical_M2_closed": false,
+      "Cycle576_resource_is_stress_or_energy": false,
+      "Cycle579_authority_audit_tests": [
+        "none",
+        "unset",
+        13,
+        13
+      ],
+      "Cycle579_physical_M2_closed": false,
+      "Cycle579_physical_layout": false,
+      "Cycle579_target_exponential_exact": false,
+      "Cycle585_authority_audit_tests": [
+        "none",
+        "unset",
+        16,
+        16
+      ],
+      "Cycle585_parameters_fitted_to_Green_or_held": 0,
+      "Cycle585_physical_code_leakage_evaluated": false,
+      "Cycle585_raw_Regge_cubic_ratio_to_graph": 1.3333334427210133,
+      "Cycle585_raw_Regge_reference_surface_match": false,
+      "Cycle585_result_called_gravity": false,
+      "Cycle588_authority_audit_tests": [
+        "none",
+        "unset",
+        18,
+        18
+      ],
+      "Cycle588_held_Green_parameters_refit": 0,
+      "Cycle588_inherited_reference_surface_exact": false,
+      "Cycle588_physical_geometry_embedding_derived": false,
+      "Cycle588_select_prepare_genesis_derived": false,
+      "Cycle601_audit_verdict_inferred": false,
+      "Cycle601_author_artifact_status_accepted": false,
+      "Cycle601_authority_audit_tests": [
+        "none",
+        "unset",
+        15,
+        15
+      ],
+      "Cycle601_route_A_physical_EG": false,
+      "Cycle601_route_A_physical_M2": false,
+      "Cycle601_route_A_physical_leakage": false,
+      "Cycle601_route_B_physical_M2": false,
+      "Cycle601_route_B_physical_routing": false,
+      "Cycle601_route_C_physical_M2": false,
+      "Cycle601_route_C_response_is_gravity": false,
+      "Cycle601_route_C_source_schedule_supplied": true,
+      "audit_verdict_inferred_from_dependencies": false,
+      "author_artifact_status_accepted": false,
+      "pass": true
+    },
     "observed": {
-      "docs/work_history/repo/review_feedback/PHYSICAL_CONSTRAINED_MATTER_SOURCE_STATIC_JOIN_TOURNAMENT_CYCLE588_NOTE_2026-07-22.md": "4818ebbdbbd862859fe9963f3eaa2ecc42534d8a0186c456ff1b1f73194cda59",
-      "docs/work_history/repo/review_feedback/PHYSICAL_RECURRENT_SOURCE_BOUNDED_REGGE_RETARDED_RESPONSE_TOURNAMENT_CYCLE601_NOTE_2026-07-22.md": "138880bea4b6de50cd97b8b6b76b767bfe5210d3d15fb11ffb596677bb4f2bed",
+      "docs/work_history/repo/review_feedback/PHYSICAL_CONSTRAINED_MATTER_SOURCE_STATIC_JOIN_TOURNAMENT_CYCLE588_NOTE_2026-07-22.md": "2aefccc9ab4e8f11f316c9b0839cf6ca1756ab6cd3f8e9ffd3ea24c0ae424c08",
+      "docs/work_history/repo/review_feedback/PHYSICAL_DYNAMICAL_METRIC_SOURCE_LAW_BRIDGE_TOURNAMENT_CYCLE576_NOTE_2026-07-22.md": "6fe73ca79366ad75fd9499b820b4e3a49833ba6919a8c8cd3ef4d44e403da0e3",
+      "docs/work_history/repo/review_feedback/PHYSICAL_JOINT_CLOCK_ACCUMULATOR_CONTRACTION_BRIDGE_CYCLE570_NOTE_2026-07-22.md": "e88ee3daee2e07f215142d29cee7e6e5d3564bf5f92764aca49e89fe8f065438",
+      "docs/work_history/repo/review_feedback/PHYSICAL_RECURRENT_SOURCE_BOUNDED_REGGE_RETARDED_RESPONSE_TOURNAMENT_CYCLE601_NOTE_2026-07-22.md": "22a8c430d303971266c76c0f3a3f2be7389c5bd0bd48dbbfaa2fb333952aa18c",
+      "docs/work_history/repo/review_feedback/PHYSICAL_REGGE_FINITE_UPDATE_FRAME_SELECTION_TOURNAMENT_CYCLE579_NOTE_2026-07-22.md": "d3c7ff5984d6ba079396f8ff0e38566b9b0e37ef636d19f8ec4d1073791305f0",
+      "docs/work_history/repo/review_feedback/PHYSICAL_REGGE_STATIC_SCALAR_PREDICTION_BRIDGE_TOURNAMENT_CYCLE585_NOTE_2026-07-22.md": "dc39bb0a8e2aa7a3b23948afed2f5c81478b896e19cd8f9bc30553d727e08872",
       "docs/work_history/repo/review_feedback/PHYSICAL_SOURCE_CONDITIONED_RELATIONAL_DUAL_CLOCK_CYCLE451_NOTE_2026-07-19.md": "81f28e682b6b45d1572164a7a72b00d252bc81c542a4de5d83ed602b311320ca",
-      "outputs/physical_constrained_matter_source_static_join_tournament_cycle588_cold_2026_07_22.txt": "c10ca982c9755af00c70c14b1e825834bdf3f9024737f12a024ef5fbd1324993",
-      "outputs/physical_joint_clock_accumulator_contraction_bridge_cycle570_receipt_2026_07_22.json": "f104399af621ded1b50e180e6fcce5f254008715b72191c6199fe4d583a8a806",
-      "outputs/physical_recurrent_source_bounded_regge_retarded_response_tournament_cycle601_cold_2026_07_22.txt": "b58555baef2869fb782b393472dd0f1dda2c5efdee2ef4fadd7a3f6a8c9ac237",
-      "outputs/physical_regge_static_scalar_prediction_bridge_tournament_cycle585_cold_2026_07_22.txt": "ebebc5bf0eaa26fe957c9295d997da613071f1e5c98fbeb5b66311baa125d703",
-      "scripts/physical_constrained_matter_source_static_join_tournament_cycle588_2026_07_22.py": "d3658aacb76988ae7daf100f8ed3503e69927afa90a88d2062a0f23919f8ac4c",
-      "scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py": "53d60249420994818e7517645ad4157e1e11c7dc184fbf89b2838e94b53977d0",
-      "scripts/physical_joint_clock_accumulator_contraction_bridge_cycle570_2026_07_22.py": "853abe5470efd15b154d6cb348d49795a6fa84e77a62f0b21a79105892b1d415",
-      "scripts/physical_recurrent_source_bounded_regge_retarded_response_tournament_cycle601_2026_07_22.py": "bcd09e478743552938eebcb484c610bd8cb2e39c61ae076b0f96c0a0f8c71fbd",
-      "scripts/physical_regge_finite_update_frame_selection_tournament_cycle579_2026_07_22.py": "e607e8a0d46fbb70e7be35d1897acebebdb8ad900a4ab69159e572f3fbc5c7ab",
-      "scripts/physical_regge_static_scalar_prediction_bridge_tournament_cycle585_2026_07_22.py": "70d98e5493df503f5fe353f31caf50f967b7e35c7471f01ba529de3a6a4a7c99",
+      "outputs/physical_constrained_matter_source_static_join_tournament_cycle588_cold_2026_07_22.txt": "41b495ea2f20a641aac119eb165b78ca54ab09b63df76b6309058176f6822eb4",
+      "outputs/physical_dynamical_metric_source_law_bridge_tournament_cycle576_cold_2026_07_22.txt": "80f69b699f955663609461e12f978500eb44f582092f6db0739b449161edbd0d",
+      "outputs/physical_dynamical_metric_source_law_bridge_tournament_cycle576_receipt_2026_07_22.json": "5ba12c643c4f02355069e07dc4f8e7319bbb9374fd02a77505b9f635ef16135e",
+      "outputs/physical_joint_clock_accumulator_contraction_bridge_cycle570_receipt_2026_07_22.json": "f9295faa4230427623ac350625a42fb17949fd86f523b6cf81aa247c14dd796c",
+      "outputs/physical_recurrent_source_bounded_regge_retarded_response_tournament_cycle601_cold_2026_07_22.txt": "04755446aa03054f6a6e75d158ef1cf5c5886bfba73d5754a428c1d76aa474fe",
+      "outputs/physical_regge_finite_update_frame_selection_tournament_cycle579_cold_2026_07_22.txt": "035bd83bc3d322d66eb3cf20cf20a7753e913734dad7243e2824f9ec1f48884b",
+      "outputs/physical_regge_finite_update_frame_selection_tournament_cycle579_receipt_2026_07_22.json": "6cdc99d5f68d3244e5dc9ea802f3874a29a603d0fafd0eed6f21b32ed334cba8",
+      "outputs/physical_regge_static_scalar_prediction_bridge_tournament_cycle585_cold_2026_07_22.txt": "711dc7656be5f9ca70b27929334df098429801234ff4c7d33150d7ab55d733cc",
+      "scripts/frontier_cubic_coxeter_regge_second_variation_3plus1_2026_06_09.py": "537371554e1a5244875645ca600f5f01e0ccfae64530572630d934e8ea0a85ce",
+      "scripts/physical_constrained_matter_source_static_join_tournament_cycle588_2026_07_22.py": "a04546c78846ae9347fce2ef7af04cd84d6fb27f8349f42d269fca6080092c82",
+      "scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py": "7aab3d6bc8d9d8b44263bca7a5cc308534269abb88094b2dfe0a820b12df2400",
+      "scripts/physical_joint_clock_accumulator_contraction_bridge_cycle570_2026_07_22.py": "37e9d0f336d773bd4a1957a6531f80dc35b9673a4ef0f99137e7fb33558bf849",
+      "scripts/physical_recurrent_source_bounded_regge_retarded_response_tournament_cycle601_2026_07_22.py": "8fcb189dc996e30d9d6d72157ad0ee2565a6a7d7ec69a6a4dc063433a0d930ca",
+      "scripts/physical_regge_finite_update_frame_selection_tournament_cycle579_2026_07_22.py": "435096b012faf4425ff27761e6690178caa9e14ffdcde5659cb5072771a036ea",
+      "scripts/physical_regge_static_scalar_prediction_bridge_tournament_cycle585_2026_07_22.py": "d44819d5f2184afff1d86a9e4056a61d81472add5ba72863ecd09e67fbdbda49",
       "scripts/physical_source_conditioned_relational_dual_clock_cycle451_2026_07_19.py": "c89e3d47b42b05c0d723afb5e68548bbb15ee79401eaa72f3c8c715e897071a1"
+    },
+    "runtime_import_controls": {
+      "closure_manifest_sha256": "72895abf1bc8d9e677562aa8d884166a7d6c4a8fc71c193a7972bd43d333fbbd",
+      "complete_runtime_import_closure": [
+        "scripts/frontier_cubic_coxeter_regge_second_variation_3plus1_2026_06_09.py",
+        "scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py",
+        "scripts/physical_regge_finite_update_frame_selection_tournament_cycle579_2026_07_22.py"
+      ],
+      "direct_runtime_imports": [
+        "scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py",
+        "scripts/physical_regge_finite_update_frame_selection_tournament_cycle579_2026_07_22.py"
+      ],
+      "expected_closure_manifest_sha256": "72895abf1bc8d9e677562aa8d884166a7d6c4a8fc71c193a7972bd43d333fbbd",
+      "expected_sha256": {
+        "scripts/frontier_cubic_coxeter_regge_second_variation_3plus1_2026_06_09.py": "537371554e1a5244875645ca600f5f01e0ccfae64530572630d934e8ea0a85ce",
+        "scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py": "7aab3d6bc8d9d8b44263bca7a5cc308534269abb88094b2dfe0a820b12df2400",
+        "scripts/physical_regge_finite_update_frame_selection_tournament_cycle579_2026_07_22.py": "435096b012faf4425ff27761e6690178caa9e14ffdcde5659cb5072771a036ea"
+      },
+      "hidden_runtime_imports": [
+        "scripts/frontier_cubic_coxeter_regge_second_variation_3plus1_2026_06_09.py"
+      ],
+      "observed_sha256": {
+        "scripts/frontier_cubic_coxeter_regge_second_variation_3plus1_2026_06_09.py": "537371554e1a5244875645ca600f5f01e0ccfae64530572630d934e8ea0a85ce",
+        "scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py": "7aab3d6bc8d9d8b44263bca7a5cc308534269abb88094b2dfe0a820b12df2400",
+        "scripts/physical_regge_finite_update_frame_selection_tournament_cycle579_2026_07_22.py": "435096b012faf4425ff27761e6690178caa9e14ffdcde5659cb5072771a036ea"
+      },
+      "pass": true
     }
   },
   "route_A_rational_Regge": {
@@ -553,40 +921,44 @@
     ],
     "FIR_paraunitarity_residual": 5.25409454148561e-15,
     "Fejer_Riesz_full_circle_coefficient_identity_residual": 6.661338147750939e-16,
-    "M2_block_shape": [
-      9,
-      9,
-      9
-    ],
-    "M2_data_rails_per_cell_all24": 720,
-    "M2_maximum_within_block_L1_distance": 23,
-    "M2_rail_coordinate_rule": "rail=30*frame+2*edge+channel; coordinate=(rail mod 9, floor(rail/9) mod 9, floor(rail/81))",
-    "M2_unique_rail_coordinates": 720,
-    "NN_routing_replayed_by_numerical_runner": false,
     "Pad\u00e9_Julia_unitarity_residual": 3.7784951132084376e-16,
     "Pad\u00e9_state_contraction_singular_values": [
       1.0000000000000002,
       0.8
     ],
     "Pad\u00e9_state_transfer_residual": 6.206335383118183e-16,
-    "accepted_finite_gate_alphabet_lowering_executed": false,
+    "algebraic_exact_theorem": "the degree-8 DC-corrected FIR P8 is exactly the first entry of the evaluated 2x2 paraunitary; all complement outputs are retained",
     "all24_frame_sectors": 24,
     "all576_missing_products": 0,
     "all576_products": 576,
+    "declared_coordinate_block_shape": [
+      9,
+      9,
+      9
+    ],
+    "declared_delay_section_schedule": "onsite parameterized two-level basis block; one selected-role proper-cubic translation; inverse onsite block",
+    "declared_filter_bounded_radius": 13.856406460551018,
+    "declared_filter_translation_factor_count": 41,
+    "declared_maximum_within_block_L1_distance": 23,
+    "declared_metric_product_factor_count": 706,
+    "declared_metric_product_serial_routing_count": 4936,
+    "declared_prepare_product_unprepare_serial_count": 5226,
+    "declared_role_coordinate_rule": "role=30*frame+2*edge+channel; coordinate=(role mod 9, floor(role/9) mod 9, floor(role/81))",
+    "declared_two_level_block_support": 2,
+    "declared_two_level_data_roles_per_cell_all24": 720,
+    "declared_unique_role_coordinates": 720,
     "delay_factor_deletion_signal": 1.9999999999999991,
-    "disposition": "CONSTRUCTIVE_EXACT_FIR_IMAGE_COMPILER; PADE_AND_SINC_ONLY_APPROXIMATE",
+    "disposition": "CONSTRUCTIVE_ALGEBRAIC_FIR_IMAGE_INTERTWINER; PHYSICAL_M2_AND_EXACT_LINE_TERMINALS_OPEN",
+    "evaluated_operator_vs_declared_factorization": "apply_filter/declared_product evaluate the block-circulant polynomial operator; the reconstructed eight delay sections are an algebraic factorization, not a physical primitive replay",
     "exact_sinc_compiler": false,
-    "executed_operator_vs_gate_certificate": "apply_filter/physical_product execute the block-circulant polynomial operator; the reconstructed eight delay sections certify its local realization but are not replayed gate-by-gate by the numerical runner",
-    "explicit_delay_section_schedule": "onsite parameterized two-M2 basis rotation; one selected-rail proper-cubic stream permutation (at most three axial permutation sublayers); inverse onsite rotation",
-    "filter_axial_QCA_layer_depth": 41,
-    "filter_bounded_radius": 13.856406460551018,
+    "fixed_physical_gate_alphabet_lowering_executed": false,
     "frame_sector_displacement_residual": 0,
     "full_circle_nonnegative_defect_theorem": "1-|P8(w)|^2=|Q8(w)|^2 coefficient-by-coefficient for every |w|=1; this is not inferred from the sampling grid",
-    "full_prepare_product_unprepare_serial_routing_upper_bound_certificate": 5226,
     "host_fixed_point_service_used": false,
     "lawful_sizes": "even periodic tori; the supplied bipartite matching color is not extended to odd tori",
     "literal_closed_torus_NN_swap_depth_certified": false,
-    "local_gate_support_M2": 2,
+    "literal_physical_M2_layout_compiled": false,
+    "local_auxiliary_or_code_constraints_enforced": false,
     "maximum_FIR_to_Pad\u00e9_full_zone_error": 3.840000000088217e-06,
     "maximum_FIR_to_exact_line_full_zone_error": 1.176784749592835,
     "maximum_exact_inverse_residual": 5.626398463373706e-15,
@@ -613,28 +985,29 @@
       "source_action": "S_source=-lambda sum_x q_x sum_local_hinges delta_hinge",
       "source_coupling_is_fixed_k_independent": true
     },
-    "metric_product_bounded_depth": 706,
-    "metric_product_serial_NN_routing_upper_bound_certificate": 4936,
     "minimum_metric_factor_deletion_signal": 1.0738623025330138e-05,
     "minimum_sampled_unit_circle_defect": -4.440892098500626e-16,
-    "object": "Cycle576 Regge kernel in ten metric rails, conjugated by a lossless finite rational-transfer termination",
+    "object": "Cycle576 Regge kernel in ten declared metric roles, conjugated by a lossless finite rational-transfer termination",
     "observed_low_mode_error_slopes": [
       3.0581804547722258,
       3.0346464292323856,
       3.021229189391783
     ],
-    "parameterized_gate_matrices_frozen": true,
-    "physical_exact_theorem": "the degree-8 DC-corrected FIR P8 is exactly the first entry of the executed 2x2 paraunitary; all complement outputs are retained",
+    "parameterized_algebraic_block_matrices_frozen": true,
+    "physical_E_and_G_composition_evaluated": false,
+    "physical_M2_primitive_composition_evaluated": false,
+    "physical_code_leakage_evaluated": false,
+    "physical_nearest_neighbor_routing_compiled": false,
     "rational_exact_theorem": "R(w)=2(1+2w)/(5+w) is exactly the transfer of the one-state contraction; its four-channel Julia dilation is unitary",
-    "rational_physical_scope": "the stationary rational response needs an unbounded recurrence/fixed-point preparation and is not claimed as a finite-depth compiler",
+    "rational_finite_scope": "the stationary rational response needs an unbounded recurrence/fixed-point preparation and is not a finite-depth compiler",
     "retained_garbage": true,
     "rows": [
       {
         "FIR_to_rational_error": 2.130048753461438e-06,
+        "algebraic_exact_inverse_residual": 5.558231100064135e-15,
+        "declared_expanded_code_intertwining_residual": 2.701043656461948e-15,
+        "declared_expanded_code_leakage": 2.683159138123496e-15,
         "delete_one_metric_factor_signal": 1.1827489203019027e-05,
-        "exact_inverse_residual": 5.558231100064135e-15,
-        "expanded_code_intertwining_residual": 2.701043656461948e-15,
-        "expanded_code_leakage": 2.683159138123496e-15,
         "fixture": "TRAIN_L4",
         "held": false,
         "length": 4,
@@ -644,10 +1017,10 @@
       },
       {
         "FIR_to_rational_error": 1.379368719640155e-06,
+        "algebraic_exact_inverse_residual": 5.626398463373706e-15,
+        "declared_expanded_code_intertwining_residual": 2.793359906207423e-15,
+        "declared_expanded_code_leakage": 2.7799003194654083e-15,
         "delete_one_metric_factor_signal": 1.0738623025330138e-05,
-        "exact_inverse_residual": 5.626398463373706e-15,
-        "expanded_code_intertwining_residual": 2.793359906207423e-15,
-        "expanded_code_leakage": 2.7799003194654083e-15,
         "fixture": "HELD_L6",
         "held": true,
         "length": 6,
@@ -657,10 +1030,10 @@
       },
       {
         "FIR_to_rational_error": 1.0221314877744339e-06,
+        "algebraic_exact_inverse_residual": 5.4972575600464104e-15,
+        "declared_expanded_code_intertwining_residual": 2.6493627862438175e-15,
+        "declared_expanded_code_leakage": 2.6402344249515406e-15,
         "delete_one_metric_factor_signal": 1.1008578465418753e-05,
-        "exact_inverse_residual": 5.4972575600464104e-15,
-        "expanded_code_intertwining_residual": 2.6493627862438175e-15,
-        "expanded_code_leakage": 2.6402344249515406e-15,
         "fixture": "HELD_L8",
         "held": true,
         "length": 8,
@@ -670,10 +1043,10 @@
       },
       {
         "FIR_to_rational_error": 8.129409424371728e-07,
+        "algebraic_exact_inverse_residual": 5.539955521490078e-15,
+        "declared_expanded_code_intertwining_residual": 2.672713412466315e-15,
+        "declared_expanded_code_leakage": 2.6673895478110126e-15,
         "delete_one_metric_factor_signal": 1.0744302688719628e-05,
-        "exact_inverse_residual": 5.539955521490078e-15,
-        "expanded_code_intertwining_residual": 2.672713412466315e-15,
-        "expanded_code_leakage": 2.6673895478110126e-15,
         "fixture": "OUT_FAMILY_L10",
         "held": true,
         "length": 10,
@@ -683,24 +1056,28 @@
       }
     ],
     "same_role_hopping_sublayers": 120,
-    "stream_layer_kind": "local QCA permutation layer, not claimed to be a finite circuit of closed-torus NN swaps",
+    "stream_layer_kind": "declared translation permutation, not a finite circuit of closed-torus physical NN swaps",
     "target_approximation_theorem": "P8-R is uniformly bounded on the tested unit circle, while R-f is O(z^3) only at low momentum; neither equality to the sinc factor nor uniform full-BZ accuracy is claimed",
     "target_exponential_exact": false
   },
   "route_B_reciprocal_response": {
-    "NN_stencil_radius": 1,
     "all576_missing_products": 0,
     "all576_products": 576,
+    "analytic_ripple_factor_count_upper_bound_per_update": 1984,
     "conserved_ledger": "sum_x(p_source+p_field) modulo 2^31",
     "conserved_word_is_stress_energy": false,
-    "disposition": "CONSTRUCTIVE_EXACT_RECIPROCAL_LEDGER; PHYSICAL_IDENTIFICATION_AND_ORDER_OPEN",
+    "declared_field_and_source_bit_roles_per_cell": 124,
+    "declared_local_arithmetic_role_support": 3,
+    "declared_scratch_bit_roles_upper_bound_per_cell": 124,
+    "declared_stencil_radius": 1,
+    "disposition": "CONSTRUCTIVE_INTEGER_RECIPROCAL_LEDGER; PHYSICAL_M2_SOURCE_IDENTIFICATION_AND_ORDER_OPEN",
     "drift_first_selected": false,
     "explicit_wrap_detected": true,
-    "field_and_source_M2_per_cell": 124,
     "global_sum_is_computed_by_host_during_update": false,
     "host_future_source_service_used": false,
+    "initial_source_word_supplied": true,
     "kick_first_selected": false,
-    "local_gate_support_M2": 3,
+    "local_modular_word_sector_enforcement_compiled": false,
     "maximum_all24_covariance_integer_residual": 0,
     "maximum_conserved_ledger_residual": 0,
     "maximum_exact_inverse_integer_residual": 0,
@@ -710,9 +1087,11 @@
     "minimum_sign_alternative_signal": 23176,
     "minimum_source_input_deletion_signal": 119,
     "no_wrap_fixture_maximum_absolute_signed_word": 138677128,
-    "object": "reciprocal source/field modular kick-drift candidate with paired momenta",
+    "object": "host-evaluated reciprocal source/field modular kick-drift candidate with paired words",
+    "physical_E_and_G_composition_evaluated": false,
+    "physical_M2_reversible_arithmetic_compiled": false,
+    "physical_code_leakage_evaluated": false,
     "response_is_gravity": false,
-    "ripple_depth_upper_bound_per_update": 1984,
     "rows": [
       {
         "delete_field_response_ledger_failure": 17,
@@ -769,7 +1148,6 @@
         "updates": 8
       }
     ],
-    "scratch_M2_upper_bound_per_cell": 124,
     "source_word_is_physical_matter_recoil": false,
     "update": "kick: p_s<-p_s-Lq-s(q-phi), p_f<-p_f-Lphi+s(q-phi); drift: q<-q+p_s, phi<-phi+p_f modulo 2^31",
     "wrap_inverse_residual": 0
@@ -781,6 +1159,9 @@
       0.003728477636657561
     ],
     "Cycle451_570_select_response_order_or_sign": false,
+    "Cycle585_actual_raw_Regge_cubic_correction_ratio_to_graph": 1.3333334427210133,
+    "Cycle585_actual_raw_Regge_surface_matches_graph_comparator": false,
+    "Cycle585_raw_Regge_mismatch_repaired": false,
     "Cycle588_585_Green_rows": [
       {
         "fixture": "HELD_AXIS",
@@ -820,8 +1201,9 @@
       }
     ],
     "comparison_is_gravity": false,
-    "disposition": "CONSTRUCTIVE_PREDICTION_BRIDGE; FINITE_HORIZON_AND_EVENT_CALIBRATION_REMAIN_SUPPLIED",
+    "disposition": "CONSTRUCTIVE_NO_REFIT_COMPARISON; EXACT_PHYSICAL_INTERFACE_PREDICTION_LAW_AND_EVENT_CALIBRATION_OPEN",
     "endpoint_norm_is_probability_or_occurrence": false,
+    "exact_cross_cycle_physical_interface_composed": false,
     "finite_horizon_directly_measures_cubic_coefficient": false,
     "frozen_before_outputs": {
       "alpha": 0.08333333333333333,
@@ -855,12 +1237,14 @@
         4
       ],
       "advance_fraction": "5/4",
+      "candidate_FORM_called_Record_or_actuality": false,
       "delay_candidate": [
         3,
         4
       ],
       "delay_fraction": "3/4",
       "mapping_from_response_sign_to_delay_or_advance_is_supplied": true,
+      "pointer_or_latch_called_Record_or_actuality": false,
       "receiver_zero": [
         4,
         4
@@ -873,9 +1257,12 @@
     },
     "maximum_5_over_32pi_relative_residual": 0.001748688020904332,
     "maximum_float64_vs_longdouble_residual": 0.0,
-    "object": "stable reversible alpha=1/12 wave Cesaro bridge to the common cubic Laplacian Green surface",
+    "object": "stable reversible alpha=1/12 wave Cesaro comparison to a cubic graph-Laplacian Green surface",
     "parameters_refit": 0,
+    "physical_E_and_G_composition_evaluated": false,
     "physical_M2_compiler_for_alpha_1_over_12": false,
+    "physical_code_leakage_evaluated": false,
+    "prediction_surface_comparison_is_law": false,
     "rows": [
       {
         "endpoint_norm_not_used_as_time": 0.3387010833957632,
@@ -923,19 +1310,33 @@
         "static_equation_relative_residual": 0.0019789983449380257
       }
     ],
-    "same_exact_operator_bridge": "the alpha-scaled reversible recurrence has Cesaro fixed equation L phi=rho; Cycle588's static surface is the infinite-volume inverse of the same L",
+    "same_graph_operator_comparison": "the alpha-scaled recurrence has Cesaro fixed equation L phi=rho; Cycle588's conditional restricted-rail comparator uses the same graph L, but no exact physical cross-cycle interface is composed",
     "update_count_is_time": false
   },
+  "runtime_environment": {
+    "numpy": "2.4.4",
+    "python": "3.13.5",
+    "scipy": "1.17.1"
+  },
   "six_wall_ledger": {
-    "C_int": "ADVANCED MATHEMATICALLY: reciprocal source-field exchange and exact continuity exist; physical matter/recoil, stress-energy, and joint Cycle590 coupling remain open",
-    "C_local": "ADVANCED: exact fixed-parameter paraunitary and exact expanded-image product are bounded on even tori; accepted finite-alphabet lowering, exact sinc, odd-torus color, and target exponential remain open",
-    "C_num": "PARTIAL ADVANCE: fixed rational/FIR coefficients and exact modular ledger are explicit; word scale and physical number reference remain supplied",
-    "C_ref": "UNCHANGED: all24/all576 sector covariance passes; frame preparation, response sign/order, and event calibration remain supplied",
-    "C_source": "PARTIAL ADVANCE: source-field recoil ledger and static prediction bridge are explicit; source identity, response selection, backreaction calibration, and gravity remain open",
+    "C_int": "PARTIAL: reciprocal integer exchange and continuity exist; physical matter/recoil, stress-energy, and joint Cycle590 coupling remain open",
+    "C_local": "PARTIAL: exact algebraic paraunitary and declared expanded-code product are size-independent on even-torus fixtures; physical M2 lowering/routing/leakage/enforcement, exact sinc, odd domains, and target exponential remain open",
+    "C_num": "PARTIAL: fixed rational/FIR coefficients and exact modular ledger are explicit host mathematics; word scale, physical encoding and lawful-domain enforcement remain supplied",
+    "C_ref": "UNCHANGED: all24/all576 declared-sector covariance passes; frame preparation, response sign/order, and candidate-label calibration remain supplied",
+    "C_source": "PARTIAL: source-field ledger and no-refit graph comparison are explicit; source identity, exact physical interface, prediction law, response selection, raw-Regge mismatch, calibration, and gravity remain open",
     "C_wrap": "UNCHANGED: no wrapped phase or update count is interpreted as energy, rate, or time"
   },
-  "status": "three constructive partials; no shared no-go and no axiom pressure",
-  "strongest_constructive_result": "an exact degree-8 two-channel fixed-parameter paraunitary M2 line encoder with retained garbage, conjugated around a metric-rail Regge product so the expanded approximate image is preserved exactly",
+  "status": "three algebraic/integer/comparison partials; physical compiler and prediction law open; no shared no-go or axiom pressure",
+  "strongest_constructive_result": "an exact degree-8 two-channel algebraic paraunitary with retained garbage, conjugated around a declared metric-role product so the expanded approximate code image is preserved exactly on even-torus train/held/out fixtures",
+  "terminology_guards": {
+    "factor_schedule_or_update_count_called_time": false,
+    "generator_called_physical_energy": false,
+    "generator_called_rate": false,
+    "pointer_or_latch_called_Record": false,
+    "pointer_or_latch_called_actuality": false,
+    "source_response_called_gravity": false
+  },
   "tests_failed": 0,
-  "tests_passed": 13
+  "tests_passed": 16,
+  "tests_total": 16
 }

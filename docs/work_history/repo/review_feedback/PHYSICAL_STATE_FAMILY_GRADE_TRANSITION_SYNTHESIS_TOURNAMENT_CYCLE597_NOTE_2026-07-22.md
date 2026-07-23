@@ -7,13 +7,13 @@ Authority: none
 Audit: unset
 
 No axiom, foundation, Qualification, primitive, registry, policy, queue,
-audit status, or other control surface is edited.
+audit result, or other control surface is edited.
 
 Runner:
 
 `scripts/physical_state_family_grade_transition_synthesis_tournament_cycle597_2026_07_22.py`
 
-Runner SHA-256: 7dec66d44101d26f563bea079fa62b56daeb1d2d5a21a7a98c6f66fc22392d77
+Runner SHA-256: 994f050fb33d7b9909896d195dca6be0062f56445ba49cac8731f196a3cfe79e
 
 ## Result and claim ceiling
 
@@ -63,19 +63,24 @@ parameter word, and `f_M` is the deterministic rotor history frequency. This is
 an approximation theorem for a declared family and precision, not a Born law.
 
 Route A independently queries the exact Cycle-577 projector grade using the
-encoded H/CNOT pointer-extraction block of Cycle 580. The complete accepted
+encoded H/CNOT pointer-extraction block of Cycle 580. The complete exact-pinned
 Cycle-580 instrument and inverse are first reconstructed to residuals
 `4.45e-16` and `8.91e-16`. The state-preserving query uses nine elementary
 gates; three further CNOTs copy its orthogonal history label. Four supplied
 identically prepared inputs give a coherent 4-tuple register with the exact
-expected grade and all 4,096 sectors retained for full-support states. It does
+expected grade and all 4,096 sectors preserved for full-support states. It does
 not produce a reusable objective numerical grade without the supplied copies,
 aggregation, or sector selection.
 
-A coherent grade register is not objective probability. A rotor frequency is
-not Born. Schedule is not time. Spent resource is not energy. Packet is not
-Record. No actuality, framework Record, probability interpretation, physical
-time, energy, source, stress, or gravity law is promoted.
+The tested four-copy coherent grade register has no objective-probability
+derivation. The tested finite rotor frequencies have no Born calibration. The
+executed finite gate schedules have no time interpretation. The counted finite
+blank-resource debits have no energy derivation. The tested eight-M2 archive
+packet has no framework-Record qualification. These are block-scoped
+non-promotions: no per-element, per-site, per-mode, or lattice-wide negative
+theorem is claimed. No actuality, framework Record, probability
+interpretation, physical time, energy, source, stress, or gravity law is
+promoted.
 
 No shared obstruction and no axiom pressure are established. N1 has only
 three qualifying attempted approach families and therefore fails.
@@ -104,18 +109,52 @@ The off-grid held fixtures are:
 | held 1 | `(7/11,4/9,5/13)` | `(3/4,1/2,1/2)` | 137 |
 | held 2 | `(11/17,13/19,17/23)` | `(3/4,3/4,3/4)` | 211 |
 
-Exact accepted shores reconstructed by the runner are:
+The runner checks 16 exact-pinned shore surfaces:
 
 | surface | SHA-256 |
 |---|---|
-| Cycle-595 runner | `cdfcddb00974205faa8bc60c617ff0dd42bf9f8947b0a55a4b172157b2d28de2` |
-| Cycle-595 note | `b1b1fc0960f69abcf9050b7eee2f3387188d45ea7704ca2db87381cd5fd3b730` |
-| Cycle-592 runner | `ab565af6aa59e66cea7b1ce625c08f8a88235ae9f7415e5e7d89d63af34ce9ce` |
-| Cycle-592 note | `dccf62d6126287b20cbf96ff410534adfa1746d9cf3aba94fbfb2893855be212` |
-| Cycle-580 runner | `c46917d4a932cd3ad9a78e0547625055f5adf9d5cf7393700d7e6715dd515cd3` |
-| Cycle-580 note | `e8ca5acdaec0c7ec5f0ba9772d7736352bcf132e961483d93f19c679439df276` |
-| Cycle-577 runner | `93bf1fa2859289b13037bfe7882cce86732e9377ed8b60e56c3bd55ebc0ce74f` |
-| Cycle-577 note | `23ef5601b73c121d5e82c9031ec0ff4acffdc5471c43aa4dec63a78085aa7c0f` |
+| Cycle-595 runner | `107fdaef7f2f834617bd695119569f0fc867768e64d695105e69107ef80d87d8` |
+| Cycle-595 note | `a6d852fdde7a90cb7bf2b11729d67828b03974e1248cbac7466353f13835f462` |
+| Cycle-595 receipt | `09eeeb4b2a2575a10a5030d75e29f6dd0346a7bbf248409531fb9825b1b005e6` |
+| Cycle-595 cold | `ecd3fb24ab1deee7395b914d708749bd924c6f1f3d5d177cd55228f4759f7216` |
+| Cycle-592 runner | `14d01e640eb1818c29aeb9f05313b2211e28e445d4798f3f6718d0b0fca0d62a` |
+| Cycle-592 note | `092f0bfc06f7a42d82ed10ade5f551bdb08ebe7040c8c2b8ba0b1b3ea1c971c7` |
+| Cycle-592 receipt | `edf069adbf58b66b30b6b9a66a85dd577b6c6c3170f833807dc57d59c8f14457` |
+| Cycle-592 cold | `cb2640da38cf7cb0a69e6351871d9a9ba93c712f6865d5055b0bd79f18acdc5c` |
+| Cycle-580 runner | `1f1acb34dc8976f5617319353e9591f64eae5cfe923a1dea736adfa792c4e718` |
+| Cycle-580 note | `47a6418c27965219ddc5d3c2a8bc39fd34aa6173d3d1c16e473a136113b9c787` |
+| Cycle-580 receipt | `9cf656c917ff738bc6d0d0e52dc8c251630aaedd86dd5a6b90dd4f7857cdbc1d` |
+| Cycle-580 cold | `890c68f44bf6cc563916304b51481def8aa3ad7009a6ecfe0b0a4cffc85cd7e6` |
+| Cycle-577 runner | `0876bc8888193606446b5fe07f1fdd8e3ddef3b313551739b81be3792c820aa7` |
+| Cycle-577 note | `7617ee877ca22986e0eacc09d08e14f6246cbc75b6443961c8626a1b5435f18c` |
+| Cycle-577 receipt | `f7e6bbc40a4d56ee115ba43ddbab7bee4aff05227b988a057adc4420f51941ed` |
+| Cycle-577 cold | `1c77d2ca4bf860482d3e55596c85e0983f32e755e7ceaac33ff0576a928c8a36` |
+
+All four receipts bind their runner, note, and cold surfaces, report every
+declared check passing, and preserve authority `none` with audit `unset`.
+The runner also checks 104 recursively pinned runtime-dependency runners. The
+canonical sorted hash-map manifest is
+`e407b4b1d71af6cbb9feed475bb204f2457ef129506b395a1393a0b970136fde`;
+the full module-by-module map is executable data in the runner rather than an
+epistemic inheritance claim.
+
+Cycle 595 supplies deterministic 8-address orbit enumeration and
+equidistribution, not stochastic mixing, an objective address, a framework
+Record, or Born probability. Its Route-B reduced I/8 is a reversible dilation
+with fresh source/sink supply, and its LFSR route is a narrow falsifier. Cycle
+597 inherits none of those open semantics.
+
+## Role/qubit block physical M2 boundary
+
+Route A is called physical M2 only through the exact-pinned Cycle-577
+dual-rail composition and Cycle-580 elementary layout, with direct inverse,
+dual-rail leakage, deletion, and all-24 edge checks. Routes B and C are called
+physical M2 only through the exact-pinned Cycle-587 basis-state compiler and
+its recursively pinned Cycle-523 Toffoli primitive dependency, with literal
+one-/two-M2 counts, route/return restoration, basis-code checks, deletion,
+E-G, and all-24 layout checks. No role-only or unnamed qubit block is promoted
+to physical M2. Any such future block must be demoted and expose null
+E-G/leakage/layout until primitive composition is inherited and verified.
 
 ## Route A — coherent projector/query register
 
@@ -127,7 +166,7 @@ and the exact Cycle-580 encoded pointer-extraction sub-block:
 1. decode/open the encoded middle logical H;
 2. copy the middle X label and the two outer Z labels to three pointer M2;
 3. close/re-encode the middle logical H;
-4. optionally copy the pointer to three retained label M2.
+4. optionally copy the pointer to three preserved label M2.
 
 For all three train points and both held points, the pointer and copied-label
 diagonals equal the independently computed projector grade with maximum
@@ -138,7 +177,7 @@ all 24 proper-cubic frames.
 
 Four identical input copies are supplied. Their coherent history tuple has
 expected normalized counts equal to the projector grade; the sector-mass and
-expectation residual is `1.80e-14`. Full-support states retain all `8^4=4,096`
+expectation residual is `1.80e-14`. Full-support states preserve all `8^4=4,096`
 tuple sectors. This is a query/copy ledger, not amplitude-estimation closure:
 no physical numeric count aggregation, unique output sector, repeatability
 source, or no-cloning route is derived.
@@ -213,7 +252,7 @@ selection and carrier-edge deletions each give residual `sqrt(2)`. A deleted
 or absent grade word is refused. The literal nearest-neighbor certificate has
 1,168 M2 and 7,619,576 routed two-M2 calls; all 28,008 line-edge/frame tests
 pass. Eight fresh blank archive M2 are debited per occurrence. Their renewal,
-retention medium, readability, and Record status remain open.
+preservation medium, readability, and Record qualification remain open.
 
 ## Global controls and route dispositions
 
@@ -224,7 +263,7 @@ Cycle-592 answer table or calls a random sampler.
 
 | route | disposition | exact ceiling |
 |---|---|---|
-| A | exact coherent projector-query/copy diagnostic | four identical copies supplied; all sectors retained; no reusable numeric grade or objective outcome |
+| A | exact coherent projector-query/copy diagnostic | four identical copies supplied; all sectors preserved; no reusable numeric grade or objective outcome |
 | B | positive row-free fixed-precision product-family synthesizer | calibrated unary word supplied; two-bit parameter precision; large static NN overhead |
 | C | positive deterministic grade-driven rotor with exhaustive finite discrepancy bound | frequency is conditional on supplied grade word; archive renewal and Born semantics open |
 
@@ -264,105 +303,152 @@ Cycle-592 answer table or calls a random sampler.
 ## No-Go Discipline N1–N8
 
 The no-go-discipline skill freshness check fetched `origin/main`; this cycle
-uses that newer route-normalization language. Its proof-search family tuple is
-`(object/formulation, mechanism/invariant, terminal obligation)`.
+uses its current route normalization and full gate schema. The checklist stays
+visible here. The campaign forbids edits to `NO_GO_LEDGER.md`, the primitive
+registry, axioms, policies, queues, and audit-status surfaces, so none is made.
+
+No-go gate Status: **FAIL**. The artifact itself may pass only as the narrowed
+positive fixed-precision construction above. Broad no-go, minimum-content,
+shared-obstruction, and axiom-pressure claims are all false and do not ship.
 
 ### N1 — alternative route enumeration
 
-| family | object and mechanism | terminal obligation | status |
+Families use `(object/formulation, mechanism/invariant, terminal obligation)`.
+Only counted routes receive an allowed honesty marker. Open routes are not
+fabricated as `RULED OUT BY PRIOR`.
+
+| family | object / mechanism | terminal obligation | marker / status |
 |---|---|---|---|
-| coherent projector-query | Cycle-577 projectors plus Cycle-580 extraction; four-copy sector weights | reusable numeric grade without supplied copies/selection | ATTEMPTED |
-| reversible fixed-point synthesis | unary parameters plus Cartesian microaddress mask; reversible literal products | derive parameter/state calibration and scale family/precision | ATTEMPTED |
-| deterministic lattice rotor | one-carrier cycle plus derived mask; exhaustive discrepancy | derive Born calibration, actuality, and renewal | ATTEMPTED |
-| full amplitude estimation | controlled reflections plus phase/kickback grade register | compile reflections, phase arithmetic, copy ledger, local error theorem | UNTESTED OPEN, NOT COUNTED |
-| renewable stochastic reservoir | stationary local kernel plus invariant measure | derive kernel, mixing, renewal, and actuality owner | UNTESTED OPEN, NOT COUNTED |
-| adaptive physical tomography | renewable calibration corpus plus estimator | derive independent trials, estimator dynamics, stopping, and Records | UNTESTED OPEN, NOT COUNTED |
+| coherent projector-query tuple | Cycle-577 projectors and Cycle-580 extraction; four-copy sector weights | reusable numeric grade without supplied copies or sector selection | `ATTEMPTED`, counted |
+| reversible fixed-point synthesis | unary parameters and `4x4x4` microaddress mask; reversible literal products | derive state/parameter calibration and scale family/precision | `ATTEMPTED`, counted |
+| deterministic lattice rotor | one-carrier 64-cycle and derived mask; exhaustive `+25` discrepancy | derive Born calibration, actuality, and renewal | `ATTEMPTED`, counted |
+| full amplitude estimation | controlled reflections and phase/kickback grade register | compile reflections, phase arithmetic, source ledger, and local error theorem | open, untested, not counted |
+| renewable stochastic reservoir | stationary local kernel and invariant measure | derive kernel, mixing, renewal, and actuality owner | open, untested, not counted |
+| adaptive physical tomography | renewable corpus and confidence-controlled estimator | derive independent trials, stopping, and Records | open, untested, not counted |
 
-N1 qualifying: 3. Required: 5.
-
-N1 status: **FAIL**.
-
-No broad no-go, minimum-content theorem, shared obstruction, or axiom-pressure
-claim ships.
+N1 qualifying: 3. Required: 5. N1 gate: **FAIL**.
 
 ### N2 — wall-independence audit
 
-The collapsed open-condition set is state-to-parameter calibration,
-state-family/precision coverage, objective actuality, Record permanence,
-frequency-to-Born calibration, and resource renewal. The runner emits all 15
-pairs with both implication directions false. Their witnesses are typed
-differently: a parameter register does not expand family coverage; either
-compiler fact selects no actuality; actuality makes no durable Record; a
-Record theorem supplies no Born calibration; and none of these renews archive
-or copy resources. No wall is counted merely because another remains open.
+The collapsed set has six walls: calibration (`Cal`), family/precision
+coverage (`Cov`), actuality (`Act`), Record permanence (`Rec`), Born
+calibration (`Born`), and resource renewal (`Ren`). All 15 pairs are checked in
+both typed directions:
+
+| pair | first does not close second | second does not close first |
+|---|---|---|
+| Cal/Cov | one-family encoding proves no wider precision/nonproduct coverage | wider coverage does not identify the physical owner of a parameter word |
+| Cal/Act | calibrated coherent data selects no objective outcome | an actuality owner does not derive the state-to-word map |
+| Cal/Rec | calibration forms no permanent readable Record | a Record medium does not calibrate the input state |
+| Cal/Born | a parameter map supplies no frequency/probability identity | Born calibration does not construct the state encoder |
+| Cal/Ren | a word does not regenerate copies/archive blanks | renewal does not determine the word's state calibration |
+| Cov/Act | scalable conditional families still select no actuality | one actual event proves no family/precision theorem |
+| Cov/Rec | scalable arithmetic supplies no permanence/readability | durable Records do not widen arithmetic coverage |
+| Cov/Born | wider grades still lack probability calibration | probability calibration does not synthesize wider grades |
+| Cov/Ren | scalable circuits may still spend finite stock | renewed stock proves no family/precision theorem |
+| Act/Rec | selection need not be durable/readable/protected | preserved conditional data need not be actual |
+| Act/Born | actuality does not calibrate long-run weights | Born calibration does not identify the actuality owner |
+| Act/Ren | an actuality mechanism may consume finite stock | renewal selects no objective outcome |
+| Rec/Born | permanence does not derive a probability measure | probability calibration constructs no protected Record |
+| Rec/Ren | a finite durable Record does not renew blank media | renewed media establish no admission/permanence |
+| Born/Ren | calibrated frequency can coexist with finite stock | renewal supplies no Born identification |
+
+Every direction is false on a different typed witness, so all six walls remain
+independent; none is inflated by a downstream duplicate.
 
 ### N3 — hidden-wall scan
 
-The load-bearing imports are explicit: four identical copies, unary
-parameter/state calibration, blank work and archive M2, finite chart/genesis,
-the fixed occurrence adapter, and finite held preparations/sizes. The note uses
-none of “we assume,” “as is standard,” “the framework provides,” “bridge
-context,” “naturally,” “obviously,” or “standard QFT” as a proof step.
-“Accepted” and “exact-pinned” refer only to reconstructed file hashes and have
-no physics weight.
+Load-bearing imports remain explicit: four identical copies, unary
+parameter/state calibration, blank work/archive M2, finite chart/genesis,
+fixed occurrence adapter, and finite held preparations/sizes. Actual phrase
+hits are classified:
+
+| hit | classification | why non-load-bearing |
+|---|---|---|
+| `canonical sorted hash-map manifest` at note line 136 before this repair | context | “canonical” describes sorted JSON bytes, not physics |
+| `preregistered` in immutable Cycle-592 filenames/title | context | historical artifact name; the current pre-held hash is executable |
+| `registered` in one immutable runtime module name | context | filename text carries no premise weight |
+| the quoted scan vocabulary in this N3 checklist | meta-scan | phrases are audit targets, not proof steps |
+
+No hit is a hidden condition, so N2 needs no new wall.
 
 ### N4 — residual matching
 
-| cited witness | witness residual | Cycle-597 residual | match/disposition |
-|---|---|---|---|
-| [Cycle595 note](PHYSICAL_TI_INNOVATION_BATH_OFFGRID_HISTORY_TOURNAMENT_CYCLE595_NOTE_2026-07-22.md#L70) | finite answer-ROM refusal on off-grid states | remove state-specific rows for declared product family | yes; closed only at fixed precision |
-| [Cycle580 note](PHYSICAL_L41_ELEMENTARY_GATE_LAYOUT_COMPILER_CYCLE580_NOTE_2026-07-22.md#L180) | literal local unitary and inverse | projector-query locality/inverse | yes; no probability semantics inherited |
-| [Cycle577 note](PHYSICAL_L41_PROJECTOR_INSTRUMENT_COMPILER_TOURNAMENT_CYCLE577_NOTE_2026-07-22.md#L26) | exact projector instrument | exact `Z-X-Z` grade formula | yes |
-| [Cycle592 note](PHYSICAL_PREREGISTERED_INNOVATION_RECORD_FREQUENCY_BRIDGE_TOURNAMENT_CYCLE592_NOTE_2026-07-22.md#L88) | supplied ROM plus conditional occurrence/frequency | remove rows and propagate bounded finite frequencies | yes only for interface/frequency; not Born |
+One citation exactly supports the narrowed closure:
 
-No cited residual is used outside its matching scope.
+| witness path:line | prior residual | current residual | exact match |
+|---|---|---|---|
+| `docs/work_history/repo/review_feedback/PHYSICAL_PREREGISTERED_INNOVATION_RECORD_FREQUENCY_BRIDGE_TOURNAMENT_CYCLE592_NOTE_2026-07-22.md:190-193` | three author-supplied state-specific ROM rows; held family/denominator generalization open | state-specific rows removed only for the two-bit quantized product family; calibration and wider coverage remain open | yes, only for state-specific-row dependence at declared precision |
+
+Three earlier citations do not match and are dropped as closure witnesses:
+
+| witness path:line | prior residual | Cycle-597 residual | exact match / disposition |
+|---|---|---|---|
+| `docs/work_history/repo/review_feedback/PHYSICAL_TI_INNOVATION_BATH_OFFGRID_HISTORY_TOURNAMENT_CYCLE595_NOTE_2026-07-22.md:70-74` | fixed denominator-eight ROM refuses off-grid labels and cannot exactly represent two grades | lawful quantized approximation, not exact continuous off-grid synthesis | no; N8 partial echo only |
+| `docs/work_history/repo/review_feedback/PHYSICAL_L41_ELEMENTARY_GATE_LAYOUT_COMPILER_CYCLE580_NOTE_2026-07-22.md:21-29` | Cycle-577 elementary gate/layout/full-unitary extension | already retired in Cycle 580; Cycle 597 merely reuses the pinned sub-block | no; construction authority only |
+| `docs/work_history/repo/review_feedback/PHYSICAL_L41_PROJECTOR_INSTRUMENT_COMPILER_TOURNAMENT_CYCLE577_NOTE_2026-07-22.md:53-60` | candidate weights are not derived Born probabilities and select no branch | same Born/actuality wall remains | no; semantic boundary only |
 
 ### N5 — rhetoric audit
 
-| firewall | tested resolution | untested resolution and wording action |
-|---|---|---|
-| coherent grade register is not objective probability | one 18-M2 query and one four-copy 72-M2 batch | lattice-wide actuality untested; claim stays block-scoped |
-| rotor frequency is not Born | five declared finite corpora and all fixed-grid prefixes | arbitrary precision/asymptotic calibration untested; no universal negative ships |
-| schedule is not time | constructed finite gate schedules | no causal-clock integration tested; no time promotion |
-| spent resource is not energy | blank-copy/archive debit ledger | no work/heat/stress theorem tested; no energy promotion |
-| packet is not Record | fresh eight-M2 archive packet | permanence/readability/independent admission untested; capitalization is withheld |
+Each semantic firewall is now stated only at the tested block resolution:
+
+| narrowed phrase | per-element | per-site | per-mode | per-block | lattice-wide |
+|---|---|---|---|---|---|
+| tested four-copy coherent grade register has no objective-probability derivation | untested/no negative | untested/no negative | untested/no negative | tested on one 18-M2 query and supplied 72-M2 four-copy batch | untested/no negative |
+| tested finite rotor frequencies have no Born calibration | untested/no negative | untested/no negative | untested/no negative | tested on five corpora and all 125 fixed-grid words x 64 prefixes | untested/no negative |
+| executed finite gate schedules have no time interpretation | untested/no negative | untested/no negative | untested/no negative | tested schedules contain no clock/duration map | untested/no negative |
+| counted finite blank-resource debits have no energy derivation | untested/no negative | untested/no negative | untested/no negative | tested ledger contains no work/heat/stress/generator map | untested/no negative |
+| tested eight-M2 archive packet has no framework-Record qualification | untested/no negative | untested/no negative | untested/no negative | tested packet lacks permanence/readability/protected admission/actuality | untested/no negative |
+
+The terminal print uses exactly these narrowed statements; none is generalized
+to an untested resolution.
 
 ### N6 — partial-closure paths
 
-Retained partial closures are the exact coherent query, the finite-precision
-row-free compiler, precision scaling with an explicit error theorem, a future
-physical state/parameter calibration, and renewable archive formation plus a
-separate actuality/Record law. Those are constructive import-retirement paths,
-not evidence that a new axiom is required. This cycle makes no “no retained
-primitive supplies this” statement, so it does not trigger a primitive-
-registry edit or verdict.
+| candidate file/path | status | what it closes if its stated checks pass |
+|---|---|---|
+| `scripts/physical_state_family_grade_transition_synthesis_tournament_cycle597_2026_07_22.py` | executed narrow positive | state-specific rows for one two-bit product family |
+| `scripts/physical_l41_projector_instrument_compiler_tournament_cycle577_2026_07_22.py` | exact-pinned component | projector/instrument representation, not controlled reflection/grade aggregation |
+| `scripts/physical_l41_elementary_gate_layout_compiler_cycle580_2026_07_22.py` | exact-pinned component | elementary layout of the existing query/instrument block, not phase estimation |
+| `scripts/physical_controlled_projector_phase_estimation_grade_compiler_cycle_next.py` | not created; open candidate | supplied four-copy inspection and parameter word, conditional on controlled reflections, `b`-bit error, E-G/leakage/layout, and source ledger |
+| `scripts/physical_renewable_archive_actuality_record_separation_cycle_next.py` | not created; open candidate | archive renewal and separately typed actuality/Record obligations, conditional on a physical law |
+
+No convention-only closure was found or claimed. No new axiom is required or
+proposed, and no “no retained primitive” statement is made. These are physics
+import-retirement candidates, not labeling repairs. The campaign prohibition
+on control-plane edits explains why the failed no-go gate is recorded here but
+not appended to `NO_GO_LEDGER.md`.
 
 ### N7 — hostile steelman
 
-A hostile reviewer can break any broad negative immediately: compile
-controlled reflections of the exact Cycle-577 projectors using Cycle-580
-gates, run coherent amplitude estimation into a phase register, and feed that
-register to scalable reversible comparison arithmetic. Combine it with a
-renewable formation medium and a separately typed actuality/Record owner. The
-terminal obligations are controlled-reflection locality, copy/source ledger,
-phase-error theorem, scalable NN arithmetic, objective selection, and blinded
-renewable Records. This route is concrete and open, so a broad no-go is
-premature.
+A hostile reviewer should compile controlled reflections of each exact
+Cycle-577 history projector using Cycle-580's support-two elementary grammar,
+run `b=3,4` coherent amplitude estimation into a reusable grade register, and
+feed it to scalable reversible threshold arithmetic plus a separately
+renewable archive/actuality apparatus. The strongest supporting authorities
+are the Cycle-577 Naimark construction at
+`PHYSICAL_L41_PROJECTOR_INSTRUMENT_COMPILER_TOURNAMENT_CYCLE577_NOTE_2026-07-22.md:33-42`,
+the Cycle-580 gate/layout compiler at
+`PHYSICAL_L41_ELEMENTARY_GATE_LAYOUT_COMPILER_CYCLE580_NOTE_2026-07-22.md:21-29`,
+and Cycle-597 Route B at runner line 535. The actionable terminal is held
+`b=3,4` circuits with E-G, inverse, leakage, all-24 layout, copy/source ledger,
+quantitative phase error, no state-specific parameter word, and an independently
+typed renewable actuality/Record owner. Those components are unbuilt, so this
+route defeats every broad no-go now.
 
 ### N8 — cross-cycle echo
 
-The prescribed repository phrase search and physics-loop `NO_GO_LEDGER.md`
-walk were rerun. The relevant echo is constructive: Cycle 577 turned projector
-identities into an instrument without actuality; Cycle 580 retired a host-gate
-compiler import; Cycle 592 exposed the answer-ROM and calibration imports; and
-Cycle 595 retired the balanced innovation word with a physical carrier while
-keeping the state-family wall open. Cycle 597 uses the same import-retirement
-mechanism, but only for one fixed-precision product family. Similar past
-partial closures therefore argue against, not for, a broad impossibility.
+| prior wall / citation | retired status | mechanism | applicability here |
+|---|---|---|---|
+| Cycle-577 gate/layout/full-unitary wall; `...CYCLE577_NOTE_2026-07-22.md:405` | retired by Cycle 580 | support-two elementary decomposition plus cubic NN layout | apply the same compile-and-verify pattern to controlled reflections; none built yet |
+| Cycle-580 autonomous schedule/recurrence; `...CYCLE580_NOTE_2026-07-22.md:21-29` | open | compile-time order remains supplied | future phase estimation must expose in-state control and renewal |
+| Cycle-592 state-specific ROM rows; `...CYCLE592_NOTE_2026-07-22.md:190-193` | retired only for Cycle-597 two-bit product family | uniform reversible literal-product rule over all 125 words | scale with an explicit error/resource theorem; do not generalize now |
+| Cycle-595 off-grid denominator-eight refusal; `...CYCLE595_NOTE_2026-07-22.md:70-74` | partial only | declared quantization plus approximation bound replaces refusal, not exact continuous synthesis | increase `b`; continuous exact closure remains open |
+| Cycle-592 actuality/Record/renewal; `...CYCLE592_NOTE_2026-07-22.md:367-375` | open | none; Cycle 597 only exposes finite reversible debit | requires a separately typed physical renewal/admission law, not arithmetic relabeling |
 
-Shared obstruction: **not established**.
-
-There is no axiom pressure.
+Similar walls have previously been retired by explicit bounded compilation or
+honest reframing to an approximation theorem. Those mechanisms remain live.
+Shared obstruction is not established. There is no axiom pressure.
 
 ## Six-wall ledger and Cycle-597-local maturity
 
@@ -396,26 +482,6 @@ resource/error scaling law, and compare it against a renewable physical
 parameter-preparation route. Only after that should a separate actuality and
 Record campaign attempt Born calibration.
 
-## Independent parent reproduction
-
-The worker-frozen bundle had SHA-256 values
-`7dec66d44101d26f563bea079fa62b56daeb1d2d5a21a7a98c6f66fc22392d77`
-(runner),
-`18f718053a95716be8bd1d4bbb74ac2b39b5e6434917de288b3f6445bf565f74`
-(note before this appendix), and
-`6df65289d17c4c4e7c01789ed4899c7f23045f3f9d5b1a367cdc0dbe0aa6b9b1`
-(cold transcript). The worker passed 6/6 checks in 85.79 external seconds,
-with 1,196,998,656 bytes maximum RSS, 1,280,509,272 bytes peak footprint,
-and zero swaps.
-
-The parent independently reran the frozen runner without overwriting the
-worker transcript. It again passed 6/6 checks in 83.82 external seconds, with
-1,115,176,960 bytes maximum RSS, 1,280,689,520 bytes peak footprint, and zero
-swaps. After removing only the run-dependent resource object, the complete
-worker and parent science JSON objects are equal. The independent parent
-transcript SHA-256 is
-`b6c2b433fdfe4ece7e7508c686183ba82070a60cd0d5f63b0eef84d929705d24`.
-
 ## Cold verification
 
 The final cold run completed with `RESULT pass=6 fail=0` under authority none
@@ -423,23 +489,23 @@ and audit unset.
 
 ```text
 runner SHA-256:
-7dec66d44101d26f563bea079fa62b56daeb1d2d5a21a7a98c6f66fc22392d77
+994f050fb33d7b9909896d195dca6be0062f56445ba49cac8731f196a3cfe79e
 
 cold transcript:
 outputs/physical_state_family_grade_transition_synthesis_tournament_cycle597_cold_2026_07_22.txt
 
 cold transcript SHA-256:
-6df65289d17c4c4e7c01789ed4899c7f23045f3f9d5b1a367cdc0dbe0aa6b9b1
+022a8f946a9953a91a97ba9db3c05c3b3fc73bd08fcfe576e80b95373f51acea
 
 /usr/bin/time -l:
-85.79 real seconds
-1196998656 maximum resident set size bytes
-1280509272 peak memory footprint bytes
+74.79 real seconds
+872038400 maximum resident set size bytes
+1281525128 peak memory footprint bytes
 
 internal resource control after imports:
-2.763732707942836 elapsed seconds
-1196998656 maximum RSS bytes
+2.6291013340232894 elapsed seconds
+701480960 maximum RSS bytes
 ```
 
-Both measured memory figures remain below the declared 3 GiB cap, and wall
+All reported memory figures remain below the declared 3 GiB cap, and wall
 time remains below the declared 360-second cap.

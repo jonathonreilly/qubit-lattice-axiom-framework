@@ -1,323 +1,295 @@
-# Physical global carrier stream/QCA and approximation tournament — Cycle 606
+# Cycle 606 — logical global carrier stream/QCA approximation tournament
 
 Date: 2026-07-22
 Authority: none
 Audit: unset
-Branch: `codex/toe-cross-lane-campaign-20260718`
+Author artifact status accepted: false
+Broad-negative gate: FAIL / DO NOT SHIP
+Constitutional effect: none
 
-## Question and disposition
+## Verdict
 
-Cycle 606 asks whether the Cycle 600 three-species, four-M2 word stream can be
-executed simultaneously on the whole cubic torus without a checkerboard,
-global parity string, preferred origin, size query, or host tick.  It also asks
-whether the remaining Cycle 603 calibrated beta/contact-g rotations can be
-replaced by finite Clifford+T words with an explicit q-update error budget.
+Cycle 606 constructs an exact constant-overhead **logical/register only**
+carrier stream. Its strongest route is a compact reversible double buffer for
+the Cycle-600 three-species four-role-bit words. On the declared
+one-carrier-per-species code it obeys the register-algebra identity
 
-The strongest constructive result is an **exact compact-register global
-stream**, not yet a physical-site compiler.  Route A uses a second four-M2 word
-per species and realizes the abstract stream exactly on the inherited Cycle 600
-one-carrier-per-species sector.  Its scatter and clear label sublayers commute,
-so the printed label order is not a hidden spatial order.  Every individual
-event has a counted support-one/two nearest-neighbor lowering.  What is still
-missing is one translation-invariant proper-cubic physical-M2 supercell,
-including scratch coordinates, in which all simultaneously routed event
-instances are vertex-disjoint or obey an explicit bounded conflict schedule.
-A per-event eleven-site line is not that global packing proof.
+```text
+E_register G_coarse = G_register E_register
+```
 
-Therefore the decisive physical compiler question remains open, but it is
-sharply reduced.  There is no impossibility result and no axiom pressure.
+for the stream component, with exact inverse, deletion sensitivity, collision
+controls, L3 train, L6 held, and L7 held-out-size tests. It uses no runtime
+global parity string, parity/color/origin/size query, or preferred traversal.
 
-The fixed scatter/clear/swap schedule is not time.  The buffer, phase, and
-carrier bookkeeping below are not energy, source, Record, or causal-time
-constructions.
+This is not a physical M2 compiler. No route executes all of the required
+literal M2 placement, primitive product, physical encoder, physical
+intertwiner, physical-code leakage, and one-fine-site translation-covariant
+law. Those fields are respectively `false` or `null`. The logical role line
+used for gate routing is not promoted to physical M2.
 
-## Accepted shore
+The broad locality, collision, precision, minimum-content, shared-obstruction,
+and axiom-pressure negatives all fail the no-go gate because a concrete
+physical-supercell/collision-reservoir steelman remains open. The narrowed
+positive register artifact passes. There is no shared obstruction and no
+axiom pressure.
 
-The runner pins the accepted Cycle 603 runner, note, receipt, and cold transcript
-byte-for-byte.  Inherited facts are restricted to these:
+## Byte-pinned shore
 
-- the Cycle 603 support-two parametric event compiler passed;
-- exact finite-alphabet angle closure remained false;
-- the crossed-link event schedule had not been composed into a global stream;
-- the inherited persistent carrier cost was twelve M2 per coarse cell.
+The runner byte-pins the final independently reviewed Cycle-603 quartet:
 
-No axiom, foundation, Qualification, primitive, registry, policy, queue, or
-audit-status file is changed here.
+| Artifact | SHA-256 |
+|---|---|
+| Cycle-603 runner | `e64032e369e08e03ad2a742a2bde6914d8adc6ed1fd64f15f4e301c1c8dea739` |
+| Cycle-603 note | `ddc06d6d4abf945794b1c0b7566c9183fa744839d1ba5630c1d9ad8b4559c417` |
+| Cycle-603 receipt | `751487fa50a738d5473f7ddcb77474785c84463dda1264a34de2643f19102871` |
+| Cycle-603 cold | `35385a09b5d075e553de1de9302e0317dd415acbe1f5ccf9425905eedae94174` |
 
-## Route A — compact double buffer
+It also verifies the final Cycle-600 quartet and the complete inherited
+Cycle-603 transitive science closure. Git status, ancestry, and author status
+are not scientific evidence.
 
-For each cell `x` and species `s`, let `A[x,s]` and `B[x,s]` be four-bit words.
-Words 1–3 are neutral and words 4–9 carry the six cubic directions.  Invalid
-words 10–15 are retained only to define and test a reversible off-code
-extension.  The encoding is
+## Route A — compact reversible double buffer
 
-`E(a) = (A=a, B=0, clean local work)`.
+For active word register `A` and blank buffer `B`, one macro is
 
-One fixed compact-register update has three factors:
+```text
+scatter: B_(x+v(w)) XOR= w  controlled by A_x=w
+clear:   A_x XOR= w          controlled by B_(x+v(w))=w
+swap:    SWAP(A_x,B_x)
+```
 
-1. scatter: for every word `w`, XOR `w` into `B[x+v(w),s]` when `A[x,s]=w`;
-2. clear: XOR `w` out of `A[x,s]` when `B[x+v(w),s]=w`;
-3. swap: exchange the local A and B words.
+Every equality-XOR and SWAP is a full-register-space involution. Reversing the
+three sublayers gives the exact inverse. On blank-buffer configurations with
+no same-species incoming collision, the output is the Cycle-600 word stream.
+The declared code has exactly one carrier per species globally, so it lies in
+that domain. Blank buffer, word validity, and clean work are locally checkable
+register predicates but are not dynamically generated or locally enforced.
 
-Each equality-controlled XOR is an involution.  The inverse reverses the three
-factors.  Source controls and destination targets have distinct A/B roles.  For
-one fixed label, `x -> x+v(w)` is a bijection, so no checkerboard or color is
-needed at compact-register resolution.
+The register gate template contains 14,040 one-/two-role-bit gate instances per
+coarse cell at serialized declared-role-line depth 11,656, with 24 persistent
+active-plus-buffer role bits and at most 33 live role bits per cell when three
+species use clean flags/work in parallel. These are role/register counts, not
+physical M2 counts and not source or energy.
 
-On the declared code,
+The exact rows are:
 
-`E G_coarse = G_register E`
+| L | split | lawful rows | invalid rows | inverse trials/failures | register EG / inverse EG | collision pairs leaving code / inverse failures |
+|---:|---|---:|---:|---:|---:|---:|
+| 3 | train | 729 | 486 | 10 / 0 | 0 / 0 | 15 / 0 |
+| 6 | held | 5,832 | 3,888 | 10 / 0 | 0 / 0 | 15 / 0 |
+| 7 | held-out-size | 9,261 | 6,174 | 10 / 0 | 0 / 0 | 15 / 0 |
 
-exactly.  The same relation holds for any initially blank, valid-word
-configuration that does not create an incoming collision.  That broader domain
-is not claimed invariant under repeated updates.
+Deleting scatter, clear, or swap changes respectively 2, 1, and 2 register
+words at every size. A dirty-buffer full-space input is rejected by the
+declared-domain predicate but still recovered by the inverse. Every one of 15
+remote two-source collision probes leaves the exactly-one code and is exactly
+recoverable. Thus malformed/off-code behavior is visible and reversible; it is not
+repaired and is not claimed lawful.
 
-### Exact tests
+### Route-A covariance scope
 
-| control | L3 | L6 | L7 |
-|---|---:|---:|---:|
-| lawful site/species/label rows | 729 | 5,832 | 9,261 |
-| stream failures | 0 | 0 | 0 |
-| complete-macro dirty-buffer failures | 0 | 0 | 0 |
-| invalid-word identity rows | 486 | 3,888 | 6,174 |
-| invalid-word identity failures | 0 | 0 | 0 |
-| arbitrary full-space inverse trials/failures | 10/0 | 10/0 | 10/0 |
-| translation commutator failures | 0/27 | 0/216 | 0/343 |
-| all 24 frame commutator failures | 0 | 0 | 0 |
-| all 576 frame-product site/word failures | 0 | 0 | 0 |
-| exterior-CAR EG / inverse residual | 0 / 0 | 0 / 0 | 0 / 0 |
+- Translation commutators are executed on one frozen lawful register seed for
+  all 27, 216, and 343 coarse-cell displacements at L3/L6/L7; failures are zero.
+- Register-update commutators are executed on one frozen lawful seed under all
+  24 proper-cubic frames at each size; failures are zero.
+- All 576 ordered frame products are executed on every site and every one of
+  the 16 word labels. This tests the site/word action group law only. It is not
+  an all 576 register-update covariance test and not physical covariance.
+- All 105 unordered label pairs commute within each scatter and clear
+  sublayer; reverse and all24-rotated label enumerations reproduce the same
+  sublayer. The fixed scatter-then-clear-then-swap macro remains an explicit
+  supplied product, and a schedule is not time.
 
-The all-576 group test covers every site and all sixteen words at each size.
-The exterior tests used 31 factorized occupation samples per size through
-occupation three and observed both reordering signs, `-1` and `+1`.
+Route A therefore closes a parity-free logical global stream. It does not
+compile simultaneous physical nearest-neighbor placement, a physical encoder,
+primitive product, physical intertwiner, physical-code leakage, or a one-site
+translation-covariant physical law.
 
-For each size, every one of the 105 label pairs was applied in both orders in
-both the scatter and clear sublayers.  There were zero commutator failures.
-The reverse order and the orders induced by all 24 proper-cubic frames also
-gave zero failures.  Scatter followed by clear followed by swap remains a
-supplied update factorization; commutation within a sublayer does not turn that
-factorization into causal time.
+## Route B — direction-expanded partitioned register QCA
 
-The deletion control for scatter, clear, or swap separately changed the lawful result by
-two, one, and two word slots, respectively.  Thus no macro factor is inert.
+Route B allocates outgoing and incoming lanes for all six directions. Local
+compact/lane exchange, a role-partition intercell SWAP matching, and a second
+local exchange give the exact register stream without parity coloring.
 
-### Malformed, collision, and lawful-domain controls
+The L3/L6/L7 lawful row counts are 729, 5,832, and 9,261; stream and inverse
+failures are zero. A malformed two-source fixture retains two nonzero lanes and
+is exactly inverted. All 24 register-update/lane commutators are executed on
+one frozen lawful seed per size with zero failures. No all 576 Route-B update
+covariance test is executed.
 
-All fifteen pairs of distinct bound directions that can send two remote
-same-species carriers into one target B word were tested at every size.  Every
-pair left the declared code; every malformed output was exactly inverted.
-The construction retains reversibility but neither rejects nor repairs the
-collision.  A random dirty B register also failed the code check and was exactly
-recovered by the inverse.
+The local exchange is only specified as six disjoint basis transpositions in
+a 28-role-bit register block. Its elementary lowering and physical placement
+are not executed. The 156 persistent role bits per coarse cell are not M2.
 
-The local auxiliary conditions `B=0`, valid word, and clean work are on-cell
-checks.  The condition "exactly one carrier per species" is inherited from
-Cycle 600, is global, and is not locally generated or enforced here.  It is the
-reason same-species incoming collisions are absent on the tested lawful sector.
-This nonlocal sector boundary must remain visible in any claim about Route A.
+## Route C — state-carried buffer phase
 
-### Elementary event template and open physical packing
+Route C uses two compact buffers and a local phase bit. The phase chooses which
+buffer is active, every site toggles its phase, and the decoder alternates
+buffers. On the supplied uniform-phase sector,
 
-The equality predicate is a C4X compiled through three Toffoli calls and two
-clean work bits; the flag controls the four target bits and is uncomputed.  The
-accepted Cycle 603 exact Toffoli sequence lowers it to
-`X/H/T/Tdg/CNOT/SWAP`.  The event-local audit reports:
+```text
+G_register E_p = E_(1-p) G_coarse,  p in {0,1}.
+```
 
-- maximum elementary gate support: two M2;
-- persistent A+B carrier storage: 24 M2 per coarse cell;
-- maximum live storage with species-parallel flag/work: 33 M2 per coarse cell;
-- complete macro template: 14,040 base gates per coarse cell;
-- event-local serial routed depth: 11,656;
-- zero nearest-neighbor or all-24 rotated-line failures;
-- no template dependence on volume parity, origin, or size.
+Both phase-zero and phase-one rows pass: 1,458 at L3, 11,664 at L6, and 18,522
+at L7. Inverse and two-consecutive-shift failures are zero. A single phase
+defect has six disagreeing nearest-neighbor edges. The equality syndrome is
+preserved even for a nonuniform phase input, and the malformed full-space
+state is inverted.
 
-These counts are useful upper bounds on a local block.  They do **not** prove
-that the routed lines for all translated cell instances can coexist on one M2
-lattice.  The current open obligation is a concrete proper-cubic supercell with
-coordinates for A, B, flag, work, ports, and paths, followed by collision checks
-for all simultaneous instances on L3, L6, L7, every translation, and all 24
-frames.  Until that exists, `G_register` must not be renamed `G_physical`.
+The uniform phase is supplied, not generated or repaired. Route C executes no
+all 24 or all 576 update covariance test, no elementary count, and no physical
+M2 compilation. The state-carried phase is a scheduling register; it is not
+physical time.
 
-## Route B — direction-expanded partitioned QCA
+## Finite-precision route
 
-Route B uses a compact A word plus six outgoing and six incoming four-bit lanes
-per species: 156 persistent M2 per coarse cell.  A local involution exchanges a
-bound compact word with its matching direction lane.  The intercell layer swaps
-`Out_d(x)` with `In_d(x+v_d)`.  Distinct Out/In roles make these pairs a perfect
-matching without parity coloring.
+An exhaustive global-phase-quotiented H/T/Tdg search tests 88,572 words through
+depth ten for 41 inherited parameterized one-role-bit targets. At depth ten:
 
-The word-register construction passed all 729/5,832/9,261 lawful rows, inverse
-tests, and all 24 code-and-lane covariance checks with zero failures.  A
-malformed pair of incoming carriers remained in two lanes and inverted exactly.
+```text
+worst one-gate ray operator residual = 0.15818455508731935
+one-species compiled-coin ray Frobenius residual = 3.940416210503757
+logical scratch leakage = 3.831620355454435e-15
+weighted per-cell telescoping bound = 44.91804193608823
+capped bound = 2
+```
 
-This route has a narrower but larger import: one cubic-covariant 28-M2 local
-exchange containing six disjoint basis transpositions.  A generic Gray outline
-would use 38 C27X calls, each reducible to 51 Toffoli calls with 25 clean work
-bits, but that lowering was not executed.  A translation-invariant physical
-placement of all lane registers is also not materialized.  Route B is therefore
-an exact partitioned register QCA with named block and geometry imports, not a
-finished physical-M2 compiler.
+The search gives explicit approximants and error bounds. It does not provide
+exact Clifford+T closure, asymptotic optimality, a useful global-volume bound,
+or physical-code leakage. Wrapped phase is not physical energy.
 
-## Route C — state-carried phase
+## Supplied structure and residual ledger
 
-Route C retains A and B and adds one local phase bit `p_x`.  The phase bit is
-part of the state.  No host layer, tick parity, color, origin, or size is queried.
-For a uniform phase sector,
+| Item | Status |
+|---|---|
+| Cycle-600 four-role-bit carrier words and exactly-one/species sector | supplied, byte-pinned |
+| Cycle-603 coin/contact/seam fixtures and logical role-event circuits | supplied, byte-pinned |
+| Periodic L3/L6/L7 coarse-cell tori | supplied test fixtures |
+| Blank secondary buffer and clean logical work | supplied; locally checkable, not generated |
+| Route-A register stream, inverse, deletion, collision exit, register EG | directly executed |
+| Route-A all24 update commutator | directly executed on one frozen lawful seed per size |
+| Route-A all576 site/word group action | directly executed; update covariance not executed |
+| Route-B all24 update/lane commutator | directly executed on one frozen lawful seed per size |
+| Route-C uniform phase | supplied; not physical time |
+| Literal physical M2 placement and primitive product | open |
+| Physical encoder/intertwiner/leakage | open; `false`/`null` |
+| One-fine-site translation-covariant physical law | open |
+| Local enforcement or reversible repair of malformed collisions | open |
+| Exact/scalable finite-alphabet synthesis | open |
 
-`G_register E_p = E_(1-p) G_coarse`.
+## No-Go Discipline Gate — N1 through N8
 
-The phase advances by a parallel local X on every `p_x`.  That advance is
-self-inverse.  The local constraint `p_x=p_y` on every nearest-neighbor edge is
-preserved exactly: random nonuniform syndrome counts were 42 to 42, 318 to 318,
-and 476 to 476 for L3, L6, and L7.  A single flipped phase bit had syndrome six.
+### N1 — five normalized alternative families
 
-For phase zero and phase one together, Route C passed 1,458/11,664/18,522
-lawful rows with zero stream or inverse failures.  Two consecutive global shifts
-passed at every size.  Random nonuniform malformed states inverted exactly.
+Each counted family has a distinct object/mechanism/terminal obligation.
 
-Uniform phase genesis is supplied, not derived or repaired.  The
-phase-controlled C6X equality block and its global physical packing are also
-not executed.  The phase field is a scheduler state; it is not physical time.
+1. `ATTEMPTED`: compact active/buffer registers; equality-controlled
+   scatter-clear-swap; exact register stream closes, while physical M2
+   composition remains unevaluated.
+2. `ATTEMPTED`: direction-expanded Out/In lanes; partition matching; register
+   stream closes, while the 28-role-bit exchange is not physically lowered.
+3. `ATTEMPTED`: state-carried buffer phase; phase-controlled stream; recurrent
+   uniform-sector register shifts close, while phase genesis remains supplied.
+4. `ATTEMPTED`: finite H/T/Tdg words; depth-bounded synthesis; explicit nonzero
+   residuals remain at depth ten.
+5. `RULED OUT BY PRIOR`: independent crossed-link endpoint tables alone;
+   Cycle-603 note lines 153-172 explicitly say the six tables are not one
+   simultaneous torus update.
 
-## Precision-bounded Clifford+T attempt
-
-The precision route extracts all 41 distinct parameterized one-M2 matrices from
-the Cycle 603 compiled three-species coin and contact circuit.  The inherited
-calibrations are beta `-0.3` and contact `g=0.37`.  It exhaustively enumerates
-all 88,572 words over H, T, and Tdg through depth ten, quotients global phase,
-and retains the best observed word for each matrix.  This is exhaustive only
-for that finite word set; it is not a synthesis-optimality statement.
-
-The worst one-gate ray-operator residual decreased at depths 2/4/6/8/10 as
-
-`0.765367, 0.409938, 0.292893, 0.158185, 0.158185`.
-
-Replacing 864 parameterized instances in the one-species compiled coin gave a
-ray-Frobenius residual `3.9404162105` and scratch leakage
-`3.8316203555e-15`.  The depth-ten weighted telescoping bound was already
-`44.9180419361` per cell and therefore capped at the trivial operator bound two.
-After multiplication by volume and q-update count, every tested L3/L6/L7,
-q-update `1/10/100` bound was also trivial.  This attempt quantifies failure at
-the chosen depth; it does not prove exact finite-alphabet synthesis impossible and it
-does not supply a useful global precision budget.
-
-## Supplied structure inventory
-
-1. The Cycle 600 three-species, exactly-one-carrier-per-species global sector.
-2. Blank B words and clean equality work at encoding.
-3. The fixed scatter/clear/swap macro factorization.
-4. The event-local eleven-site routing layout inherited from Cycle 603.
-5. A physical cubic supercell packing for simultaneous Route A events: absent.
-6. Route B's 28-M2 symmetric exchange and physical lane placement: imported.
-7. Route C's uniform phase genesis, C6X count, and physical packing: imported.
-8. Periodic L3/L6/L7 tori as fixtures; the local register rules do not query L.
-9. Calibrated beta and contact g, plus a maximum Clifford+T search depth of ten.
-10. The abstract update factorization; no causal duration or energy assignment.
-
-## Six-wall ledger delta
-
-- `C_ref`: unchanged.  No reference-frame or external-order service was added.
-- `C_num`: not retired.  A finite beta/g approximation and q-update scaling
-  audit now exists, but depth ten gives only trivial global bounds.
-- `C_wrap`: unchanged.  No wrapped phase is called physical energy.
-- `C_int`: advanced at compact-register resolution.  The simultaneous stream
-  now has an exact reversible double-buffer product and exact exterior EG tests.
-- `C_local`: advanced but open.  Event-local support-two lowering is counted;
-  translation-invariant simultaneous physical-M2 supercell packing is absent.
-- `C_source`: unchanged.  Carrier/buffer resources are bookkeeping, not a
-  gravity/source or energy derivation.
-
-No wall is retired beyond its stated scope.
-
-## N1–N8 no-go discipline
-
-### N1 — normalized route families
-
-Six families are separated: compact double buffer; direction-expanded
-partitioned lanes; state-carried phase; finite Clifford+T approximation;
-Cycle 603 independent crossed-link gates; and a live untested reversible
-collision-syndrome/debris reservoir.  The first four are attempted here, the
-fifth is a scoped prior failure when used alone, and the sixth remains live.
+An autonomous reversible collision-syndrome/debris reservoir is `OPEN / NOT
+COUNTED AS ATTEMPTED OR RULED OUT`. It is the principal counterroute.
 
 ### N2 — wall independence
 
-The runner audits every pair among clean initialization, physical supercell
-packing, malformed collision repair, Route B elementary lowering, uniform
-phase genesis, and finite-precision scaling.  None is treated as closing
-another.  These are current imports, not route-independent obstructions.
+The collapsed walls are: clean register genesis, literal physical M2
+placement/product, malformed collision repair/enforcement, elementary
+lowering of Route B's exchange, uniform phase genesis, and scalable precision.
+All 15 unordered pairs are recorded directionally in the receipt. No closure
+implication or shared witness was found, so none is collapsed. This is an
+inventory of separate current imports, not a route-independent obstruction.
 
 ### N3 — hidden-wall scan
 
-Blank auxiliary state, the global exactly-one sector, macro factorization,
-per-event versus global geometry, Route B's exchange, Route C's uniform phase,
-finite search depth, and periodic test boundaries are explicit.  The scan does
-not silently identify an abstract register with a physical site compiler.
+The required phrases `we assume`, `by construction`, `as is standard`, `the
+framework provides`, `bridge context`, `background`, `naturally`, `obviously`,
+`standard QFT`, and `registered` are absent from the runner proof prose.
+`canonical` occurs only as a code-variable name for labels 1 through 15; it is
+non-load-bearing because reverse, all24-rotated, and all 105 pair orders are
+tested. Blank buffers, clean work, exactly-one sector, uniform phase, frozen
+covariance seed, periodic tori, and depth ten are explicit conditions.
 
 ### N4 — residual matching
 
-The Cycle 603 global-schedule residual is only partly matched.  Route A supplies
-an exact role-separated compact-register product, but not a simultaneous
-physical routing/packing theorem.  The analog-angle residual is measured rather
-than retired.  Malformed duplicate-carrier controls still leave the Route A
-code and remain visible in Route B lanes.
+Cycle-603 note lines 167-180 has two residuals: no composed global stream and
+no physical M2 intertwiner. Cycle 606 retires only the first at register level;
+it does not match or retire the physical residual. Cycle-603 note lines 120-130
+matches the parameterized-angle residual; the depth-ten residual remains
+nonzero. Cycle-603 note lines 174-190 matches the malformed/physical-leakage
+boundary; Cycle 606's collision pairs leave code and physical leakage remains
+unevaluated. Nonmatching evidence is not used to support a broad negative.
 
-### N5 — rhetoric audit
+### N5 — rhetoric at multiple resolutions
 
-No physical compiler, causal time, energy, source, Record, exact precision
-closure, or all-malformed-sector repair is claimed.  Exactness is always tied
-to the named encoding and global one-carrier/species sector.
+The receipt audits per-role, per-event, per-role-line, per-cell, lattice-wide
+register, and physical-lattice resolutions. The narrow outcomes are:
 
-### N6 — partial closure paths
+- the executed global stream is logical/register only;
+- nearest-neighbor means the declared logical role line only;
+- register EG is not promoted to a physical intertwiner;
+- logical scratch leakage is not physical-code leakage;
+- all24 uses one frozen lawful seed and all576 is only the site/word action;
+- schedule is not time;
+- register counts are not source or energy;
+- depth-ten nonzero error is not an impossibility or optimality theorem.
 
-The nearest constructive steps are: build a directed-edge proper-cubic
-supercell and collision-check every routed event; add a reversible local
-collision syndrome/debris reservoir; lower Route B's local exchange; derive or
-avoid the Route C phase genesis; and use certified epsilon-target single-qubit
-synthesis with a declared volume/horizon budget.
+Untested resolutions remain open; no broader negative inherits from them.
+
+### N6 — partial-closure paths
+
+The receipt gives file/status/what-closes rows for Cycles 580, 590, 603, and
+606. Cycle 580 shows one literal bounded M2 primitive layout can be constructed
+for a different fixture. Cycle 590 gives conditional logical torus placement
+but explicitly leaves physical primitive composition open. Cycle 603 gives
+bounded local role-event circuits. The next partial-closure path is to
+materialize Cycle 606's repeated M2 supercell, physical encoder/product,
+one-site covariance, intertwiner/leakage, and lawful-domain gadget. This is a
+constructive import-retirement program, not a request for a new axiom.
 
 ### N7 — hostile steelman
 
-A hostile reviewer should reject a locality, scheduling, collision, or precision
-no-go.  Route A already removes host parity at register resolution, Route B
-turns intercell movement into literal role-separated matchings, and Route C
-carries phase in state.  Constant-size supercells, reversible syndrome fields,
-and certified single-qubit synthesis are concrete live counterroutes.
+A hostile reviewer can take the exact compact active/buffer register target,
+place its roles in a repeated proper-cubic M2 supercell with directed edge
+ports, schedule bounded routed equality-XOR sublayers, retain malformed
+collision history in reversible syndrome/debris roles, and replace the depth
+ten search with certified epsilon-target synthesis. Cycle 606 finds no
+contradiction preventing this route. Its terminal obligation is literal
+placement, primitive composition, physical EG/leakage/deletion, held sizes,
+and one-site translation covariance. Status is `OPEN / no retained authority`.
+This live steelman forces the broad-negative gate to FAIL / DO NOT SHIP.
 
 ### N8 — cross-cycle echo
 
-Earlier cycles repeatedly retired apparent services by bounded constructive
-objects.  Cycle 606 continues that pattern: it closes the register-level global
-permutation while isolating a physical packing obligation.  That is evidence
-for another construction campaign, not constitutional escalation.
+Cycle 560 retired bounded local encoder tables; Cycle 563 retired a runtime
+selected-factor ordering service; Cycle 580 retired one bounded gate-layout
+import with a literal primitive circuit; Cycle 590 closed a conditional logical
+torus macro while preserving the physical-composition boundary; Cycle 603
+retired local role-event lowering; Cycle 606 retires the logical global-stream
+product. The repeated mechanism is constructive materialization and explicit
+import retirement, so constitutional escalation is not justified.
 
-No negative, minimum-content, or shared-obstruction claim is shipped.  There is
-no axiom pressure.
+## Final disposition
 
-## Optimal next campaign
+The strongest result is Route A's exact logical/register global stream. Route B
+is an exact register comparator with an unlowered local exchange. Route C is an
+exact uniform-phase register comparator with supplied genesis. Precision is
+bounded and nonexact. No physical M2 compiler, no broad negative, no minimum
+content theorem, no shared obstruction, no breakthrough, and no axiom pressure
+is claimed.
 
-Materialize a single translation-invariant proper-cubic M2 supercell for Route
-A.  Give coordinates for every A/B/scratch/port site, compile each macro layer,
-and exhaustively check simultaneous route vertex/edge conflicts on L3, L6, L7,
-all translations, all 24 frames, and all 576 frame products.  The schedule may
-use a fixed bounded number of local conflict colors only if those colors are
-part of the translation-covariant cell structure and do not query origin,
-parity, or size.  If this closes, compose the resulting physical stream with the
-Cycle 603 onsite coin/contact block and then address collision syndromes and
-certified beta/g precision budgeting.
-
-## Parent-agent verification
-
-The parent agent independently imported the frozen runner without invoking its
-receipt-writing main path and replayed the pinned shore, Routes A–C, the finite
-Clifford+T search, and the full N1–N8 gate.  All six science checks passed and
-none failed.  In particular the replay reproduced exact compact-register
-stream `EG` and inverse residuals, zero all24/all576 failures on L3/L6/L7, the
-positive register-QCA Route B and phase-carried Route C results, the failed
-exact/global precision target, and the explicit false value of Route A's
-simultaneous physical-supercell-packing contract.
-
-The parent transcript is outside the repository at
-`/tmp/cycle606_parent_verify.txt`, SHA-256
-`50e918141d34af7b860d7854776cb362ccf8d28dab3888d6cd583b3d9fe26add`.
-The frozen receipt and cold transcript pin the runner and pre-appendix note;
-this appendix changes only the human-readable note.
+The optimal next campaign is a literal repeated M2 supercell with directly
+executed one-fine-site translation covariance, physical encoder and primitive
+product, physical intertwiner/leakage/deletion, and a local lawful-domain or
+reversible collision-syndrome gadget. Only after that should the stream be
+composed with Cycle-603 coin/contact and certified epsilon synthesis.

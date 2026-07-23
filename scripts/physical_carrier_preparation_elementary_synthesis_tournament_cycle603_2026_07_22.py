@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Cycle603: carrier preparation and elementary synthesis tournament.
 
-Route A lowers the structured Cycle600 word tables to one- and two-M2 gates
-without materializing a generic 4096-square unitary.  Parameterized one-M2
+Route A lowers the structured Cycle600 word tables to one- and two-role-bit gates
+without materializing a generic 4096-square unitary.  Parameterized one-role-bit
 rotations and clean scratch are inventoried, so this is not advertised as an
-exact finite Cycle580-alphabet closure.  Routes B/C construct a cubic graph
+exact finite Cycle580-alphabet closure or a physical-M2 compiler.  Routes B/C construct a cubic graph
 parent and local dark-jump family for the uniform one-excitation orbital while
 keeping the N=1 sector distinct from genesis.  Authority none; audit unset.
 """
@@ -17,11 +17,12 @@ import json
 import math
 from pathlib import Path
 import resource
-import subprocess
 import sys
 import time
 
 import numpy as np
+from scipy.sparse import coo_matrix
+from scipy.sparse.linalg import eigsh
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -42,7 +43,6 @@ RECEIPT = ROOT / (
 )
 AUTHORITY = "none"
 AUDIT = "unset"
-ACCEPTED_CYCLE600 = "a300290fb2361c4b0a2eef7da3ab27a70b9abc69"
 TOL = 5e-9
 CAP_SECONDS = 360.0
 CAP_BYTES = 3 * 1024**3
@@ -51,15 +51,13 @@ FAIL = 0
 
 PINS = {
     "scripts/physical_root_free_full_N3_carrier_genesis_tournament_cycle600_2026_07_22.py":
-        "5b9bb9c1ae8585b7395f1a1a94040016ff8cc73e5cfbb430b16183e7133b64ba",
-    # The accepted note includes the independent-parent appendix; the receipt
-    # retains the worker-pre-appendix note hash internally.
+        "904342da79cbc22c9878479f586387414e4a3af0f7f603708ec03d272074c933",
     "docs/work_history/repo/review_feedback/PHYSICAL_ROOT_FREE_FULL_N3_CARRIER_GENESIS_TOURNAMENT_CYCLE600_NOTE_2026-07-22.md":
-        "f3d0eb88946c14b94ba9e5f8de436c6af808ad37a7e8250f6ed10e42492848ea",
+        "9c8772f365812caedb0c416f7f0681a8f342ff3d08ac412851e7e6141ea7f602",
     "outputs/physical_root_free_full_N3_carrier_genesis_tournament_cycle600_receipt_2026_07_22.json":
-        "3bddb02e1297440781fbd960a07e1b4ee021c9eadba8a6a5372dbb9812fb7cbd",
+        "d09cd7a82070f4311ab84a07127551ccf1e30e5557586e32fcd55fa01fd3dba5",
     "outputs/physical_root_free_full_N3_carrier_genesis_tournament_cycle600_cold_2026_07_22.txt":
-        "ae85d6e4dc29b240d5eb2374ce22a2836dc0c7b0f85831406462779b1803f183",
+        "fd82ebe960fa57d25e85328465b782a644ae127220d9abbefe5c64ca1b9eb01f",
 }
 
 
@@ -84,37 +82,70 @@ def check(label: str, condition: bool, detail: object = "") -> None:
     print("PASS" if condition else "FAIL", label, "::", detail)
 
 
-def shore() -> dict:
+def shore() -> tuple[dict, dict]:
     observed = {name: sha(ROOT / name) for name in PINS}
-    ancestor = subprocess.run(
-        ("git", "merge-base", "--is-ancestor", ACCEPTED_CYCLE600, "HEAD"),
-        cwd=ROOT, check=False,
-    ).returncode == 0
     receipt = json.loads((ROOT / (
         "outputs/physical_root_free_full_N3_carrier_genesis_"
         "tournament_cycle600_receipt_2026_07_22.json"
     )).read_text())
+    route_a = receipt["route_A_full_N3_factorized_exterior_representation"]
+    parent_audit = receipt["shore"]["import_audit"]
+    expected_graph = dict(
+        parent_audit["Cycle598_inherited_transitive_graph_expected_sha256"]
+    )
+    expected_graph.update(
+        parent_audit["Cycle598_final_quartet_plus_C219_C230_expected_sha256"]
+    )
+    observed_graph = {name: sha(ROOT / name) for name in expected_graph}
+    actual_modules = c600.imported_science_modules(c600, c219, c230)
+    uncovered = sorted(set(actual_modules.values()) - set(expected_graph) - set(PINS))
     inherited = {
         "Cycle600_pass": receipt["pass"],
         "Cycle600_tests_passed": receipt["tests_passed"],
-        "full_N3_compiler": receipt["route_A_full_N3_exterior_carrier_compiler"]["pass"],
-        "standalone_M2_per_cell": receipt["route_A_full_N3_exterior_carrier_compiler"]["standalone_physical_M2_per_cell"],
-        "elementary_decomposition_executed": receipt["route_A_full_N3_exterior_carrier_compiler"]["executed_local_table_support"]["elementary_M2_gate_decomposition_executed"],
-        "unique_genesis": not receipt["shared_obstruction_or_axiom_pressure"] and receipt["route_A_full_N3_exterior_carrier_compiler"]["exactly_one_carrier_per_species_sector_supplied"] is False,
+        "factorized_N3_algebraic_representation": route_a["pass"],
+        "factorized_role_bits_per_cell": route_a["factorized_carrier_role_bits_per_cell"],
+        "physical_encoder_composed": route_a["physical_encoder_composed_from_M2_primitives"],
+        "physical_update_composed": route_a["physical_update_composed_from_M2_primitives"],
+        "physical_intertwiner_residual": route_a["physical_intertwiner_residual"],
+        "physical_leakage_evaluated": route_a["physical_code_leakage_evaluated"],
+        "exactly_one_sector_supplied": route_a["exactly_one_carrier_per_species_sector_supplied"],
         "strongest_result": receipt["strongest_constructive_result"],
+        "import_audit": {
+            "expected_transitive_sha256": expected_graph,
+            "observed_transitive_sha256": observed_graph,
+            "actual_imported_modules": actual_modules,
+            "uncovered_imported_modules": uncovered,
+        },
     }
     condition = (
-        ancestor and observed == PINS and inherited["Cycle600_pass"]
-        and inherited["Cycle600_tests_passed"] == 7
-        and inherited["full_N3_compiler"]
-        and inherited["standalone_M2_per_cell"] == 12
-        and not inherited["elementary_decomposition_executed"]
-        and not inherited["unique_genesis"]
+        observed == PINS and inherited["Cycle600_pass"]
+        and inherited["Cycle600_tests_passed"] == 8
+        and inherited["factorized_N3_algebraic_representation"]
+        and inherited["factorized_role_bits_per_cell"] == 12
+        and not inherited["physical_encoder_composed"]
+        and not inherited["physical_update_composed"]
+        and inherited["physical_intertwiner_residual"] is None
+        and not inherited["physical_leakage_evaluated"]
+        and inherited["exactly_one_sector_supplied"]
+        and observed_graph == expected_graph and not uncovered
     )
-    check("accepted Cycle600 shore is ancestral and byte exact", condition, {
-        "ancestor": ancestor, "observed": observed, "inherited": inherited,
-    })
-    return receipt
+    closure = {
+        "Cycle600_quartet_expected_sha256": PINS,
+        "Cycle600_quartet_observed_sha256": observed,
+        "Cycle600_pass": inherited["Cycle600_pass"],
+        "Cycle600_tests_passed": inherited["Cycle600_tests_passed"],
+        "factorized_N3_algebraic_representation": inherited["factorized_N3_algebraic_representation"],
+        "factorized_role_bits_per_cell": inherited["factorized_role_bits_per_cell"],
+        "physical_encoder_composed": inherited["physical_encoder_composed"],
+        "physical_update_composed": inherited["physical_update_composed"],
+        "physical_intertwiner_residual": inherited["physical_intertwiner_residual"],
+        "physical_leakage_evaluated": inherited["physical_leakage_evaluated"],
+        "exactly_one_sector_supplied": inherited["exactly_one_sector_supplied"],
+        "import_audit": inherited["import_audit"],
+        "status_or_ancestry_used_as_scientific_evidence": False,
+    }
+    check("final Cycle600 algebraic shore and runtime dependency closure are byte exact", condition, closure)
+    return receipt, closure
 
 
 # ---------------------------------------------------------------------------
@@ -326,7 +357,7 @@ def selective_adjacent_sequence(unitary: np.ndarray, first: int, second: int,
 
 def compile_word_two_level(first: int, second: int, unitary: np.ndarray,
                            prefix: str) -> list[Gate]:
-    """Compile one 16-word two-level gate using one clean scratch M2."""
+    """Compile one 16-word two-level gate using one clean scratch role bit."""
     if first == second:
         raise ValueError("two-level endpoints must differ")
     first_bits = list(bits(first, 4))
@@ -526,8 +557,8 @@ def routing_audit(gates: list[Gate], line_sites: int) -> dict:
         "line_sites": line_sites,
         "literal_coordinates": tuple(map(tuple, coordinates)),
         "base_gate_count": len(gates),
-        "one_M2_gate_count": sum(len(gate.qubits) == 1 for gate in gates),
-        "two_M2_gate_count": sum(len(gate.qubits) == 2 for gate in gates),
+        "one_role_bit_gate_count": sum(len(gate.qubits) == 1 for gate in gates),
+        "two_role_bit_gate_count": sum(len(gate.qubits) == 2 for gate in gates),
         "routing_SWAP_count_move_and_restore": swaps,
         "serial_nearest_neighbor_depth": len(gates) + swaps,
         "maximum_pre_route_pair_distance": maximum_distance,
@@ -537,7 +568,7 @@ def routing_audit(gates: list[Gate], line_sites: int) -> dict:
         "literal_routed_edge_failures": routed_edge_failures,
         "all24_rotated_line_edge_failures": rotated_edge_failures,
         "all24_rotated_line_injection_failures": injection_failures,
-        "all_two_M2_instances_after_move_apply_restore_are_NN": edge_failures == routed_edge_failures == rotated_edge_failures == injection_failures == 0,
+        "all_two_role_bit_instances_after_move_apply_restore_are_declared_line_NN": edge_failures == routed_edge_failures == rotated_edge_failures == injection_failures == 0,
     }
 
 
@@ -608,8 +639,8 @@ def contact_circuit() -> tuple[list[Gate], dict]:
         "contact_inverse_phase_residual": 0.0,
         "off_code_extension_rule": "invalid 10..15 has m=0; phases among any other valid bound words remain active",
         "off_code_rule_residual": invalid_identity_residual,
-        "clean_flag_M2": 3,
-        "shared_AND_work_M2": 1,
+        "clean_flag_role_bits": 3,
+        "shared_AND_work_role_bits": 1,
         "scratch_returns_clean_by_exact_inverse": True,
         "gate_counts": gate_counts(gates),
         "schedule_sha256": gate_hash(gates),
@@ -621,7 +652,7 @@ def multi_controlled_x_clean(controls: tuple[int, ...], target: int,
                              scratch: tuple[int, ...], negative: tuple[int, ...],
                              prefix: str) -> list[Gate]:
     if len(controls) != 7 or len(scratch) != 5:
-        raise ValueError("Cycle603 stream lowering expects C7X with five clean work M2")
+        raise ValueError("Cycle603 stream lowering expects C7X with five clean work role bits")
     high: list[list[Gate]] = []
     high.append(toffoli_sequence(controls[0], controls[1], scratch[0], prefix + "_and0"))
     for index in range(1, 5):
@@ -733,21 +764,21 @@ def cycle600_eg_reproduction(compiled_word_coin: np.ndarray) -> dict:
     extended10 = np.eye(10, dtype=complex)
     extended10[4:10, 4:10] = coin
     logical_coin = c600.truncated_fock_representation(coin)
-    physical_coin = c600.physical_three_carrier_operator(extended10)
-    coin_eg = float(np.linalg.norm(embedding @ logical_coin - physical_coin @ embedding))
+    factorized_coin = c600.factorized_three_carrier_operator(extended10)
+    coin_eg = float(np.linalg.norm(embedding @ logical_coin - factorized_coin @ embedding))
     compiled_restriction = compiled_word_coin[:10, :10]
-    compiled_three = c600.physical_three_carrier_operator(compiled_restriction)
+    compiled_three = c600.factorized_three_carrier_operator(compiled_restriction)
     compiled_eg = float(np.linalg.norm(embedding @ logical_coin - compiled_three @ embedding))
 
     number = np.asarray([len(subset) for subset in basis])
     logical_contact = np.exp(1j * c230.COUPLING * number * (number - 1) / 2)
-    physical_contact = np.empty(1000, dtype=complex)
+    factorized_contact = np.empty(1000, dtype=complex)
     for word in np.ndindex(10, 10, 10):
         count = sum(value >= 4 for value in word)
         index = (word[0] * 10 + word[1]) * 10 + word[2]
-        physical_contact[index] = np.exp(1j * c230.COUPLING * count * (count - 1) / 2)
+        factorized_contact[index] = np.exp(1j * c230.COUPLING * count * (count - 1) / 2)
     contact_eg = float(np.linalg.norm(
-        physical_contact[:, None] * embedding - embedding * logical_contact[None, :]
+        factorized_contact[:, None] * embedding - embedding * logical_contact[None, :]
     ))
 
     local_permutation = (1, 0, 3, 2, 5, 4)
@@ -757,15 +788,15 @@ def cycle600_eg_reproduction(compiled_word_coin: np.ndarray) -> dict:
     stream10 = np.eye(10, dtype=complex)
     stream10[4:10, 4:10] = stream6
     stream_eg = float(np.linalg.norm(
-        c600.physical_three_carrier_operator(stream10) @ embedding
+        c600.factorized_three_carrier_operator(stream10) @ embedding
         - embedding @ c600.truncated_fock_representation(stream6)
     ))
     return {
         "Cycle600_embedding_dimension": embedding.shape,
-        "Cycle600_coin_EG_residual_recomputed": coin_eg,
-        "compiled_word_coin_EG_residual": compiled_eg,
-        "Cycle600_contact_EG_residual_recomputed": contact_eg,
-        "Cycle600_local_stream_EG_residual_recomputed": stream_eg,
+        "Cycle600_coin_algebraic_intertwining_residual_recomputed": coin_eg,
+        "compiled_word_coin_algebraic_intertwining_residual": compiled_eg,
+        "Cycle600_contact_algebraic_intertwining_residual_recomputed": contact_eg,
+        "Cycle600_local_stream_algebraic_intertwining_residual_recomputed": stream_eg,
         "compiled_word_valid_restriction_residual": float(np.linalg.norm(
             compiled_restriction - extended10
         )),
@@ -818,9 +849,9 @@ def covariance_and_sizes(stream_rows: list[dict], coin_counts: dict,
         rows.append({
             "length": length,
             "split": split,
-            "persistent_carrier_M2": 12 * volume,
-            "conditional_clean_scratch_M2_if_one_patch_per_cell": 5 * volume,
-            "maximum_live_M2_with_reused_patch_scratch": 17 * volume,
+            "persistent_carrier_role_bits": 12 * volume,
+            "conditional_clean_scratch_role_bits_if_one_patch_per_cell": 5 * volume,
+            "maximum_live_role_bits_with_reused_patch_scratch": 17 * volume,
             "onsite_coin_base_gate_calls": coin_counts["base"] * volume,
             "onsite_coin_routing_SWAPS": coin_counts["swaps"] * volume,
             "onsite_contact_base_gate_calls": contact_counts["base"] * volume,
@@ -923,11 +954,11 @@ def route_a(cycle600_receipt: dict) -> dict:
         and all(row["permutation_failures"] == row["inverse_permutation_failures"] == 0 for row in stream_rows)
         and all(row["delete_one_Gray_edge_permutation_differences"] > 0 for row in stream_rows)
         and all(row["C7X_clean_scratch_truth_failures"] == 0 for row in stream_rows)
-        and all(row["routing"]["all_two_M2_instances_after_move_apply_restore_are_NN"] for row in stream_rows)
-        and onsite_coin_routing["all_two_M2_instances_after_move_apply_restore_are_NN"]
-        and contact["routing"]["all_two_M2_instances_after_move_apply_restore_are_NN"]
+        and all(row["routing"]["all_two_role_bit_instances_after_move_apply_restore_are_declared_line_NN"] for row in stream_rows)
+        and onsite_coin_routing["all_two_role_bit_instances_after_move_apply_restore_are_declared_line_NN"]
+        and contact["routing"]["all_two_role_bit_instances_after_move_apply_restore_are_declared_line_NN"]
         and max(value for key, value in eg.items() if key.endswith("residual_recomputed")) < 3e-14
-        and eg["compiled_word_coin_EG_residual"] < 3e-12
+        and eg["compiled_word_coin_algebraic_intertwining_residual"] < 3e-12
         and eg["compiled_word_valid_restriction_residual"] < 2e-10
         and covariance["all24_hop_table_covariance_failures"] == 0
         and covariance["all576_valid_and_invalid_word_group_failures"] == 0
@@ -935,7 +966,7 @@ def route_a(cycle600_receipt: dict) -> dict:
         and not exact_cycle580_closure
     )
     result = {
-        "status": "exact support-two parametric one-M2-rotation compiler for onsite coin/contact and each crossed-link word transposition; finite Cycle580 alphabet and conflict-free global shift schedule remain open",
+        "status": "exact support-two parametric role-bit circuit for onsite coin/contact and each crossed-link word transposition; physical-M2 composition, finite Cycle580 alphabet, and conflict-free global shift schedule remain open",
         "word_coin": {
             **structure,
             "compiled_full16_residual": coin_residual,
@@ -957,15 +988,15 @@ def route_a(cycle600_receipt: dict) -> dict:
         "covariance_and_sizes": covariance,
         "gate_alphabet": {
             "fixed_discrete": ("X", "H", "T", "Tdg", "CNOT", "SWAP"),
-            "parameterized_one_M2": parameterized_families,
+            "parameterized_one_role_bit": parameterized_families,
             "arbitrary_basis_two_level_gates_retained": False,
             "arbitrary_multi_controlled_phases_retained": False,
-            "maximum_executed_gate_support_M2": 2,
-            "parameterized_one_M2_gate_instances_onsite": analog_gate_count,
+            "maximum_executed_gate_support_role_bits": 2,
+            "parameterized_one_role_bit_gate_instances_onsite": analog_gate_count,
             "beta": -0.3,
             "contact_coupling": c230.COUPLING,
             "analog_angles_are_inherited_calibration_not_derived": True,
-            "T_or_parametric_rotations_previously_accepted_by_Cycle580": False,
+            "T_or_parametric_rotations_in_Cycle580_declared_alphabet": False,
             "exact_finite_Cycle580_H_CNOT_CZ_SWAP_closure": exact_cycle580_closure,
             "fault_tolerant_approximation_compiled": False,
             "executed_diagonal_T_power_grid_comparator": {
@@ -976,24 +1007,27 @@ def route_a(cycle600_receipt: dict) -> dict:
             },
         },
         "scratch_and_schedule": {
-            "persistent_Cycle600_carrier_M2_per_cell": 12,
-            "maximum_reused_clean_scratch_M2_per_active_patch": 5,
-            "maximum_live_if_scratch_allocated_per_cell": 17,
+            "persistent_Cycle600_carrier_role_bits_per_cell": 12,
+            "maximum_reused_clean_scratch_role_bits_per_active_patch": 5,
+            "maximum_live_role_bits_if_scratch_allocated_per_cell": 17,
             "clean_scratch_initialization_and_renewal_supplied": True,
             "move_apply_restore_routing_schedule_supplied": True,
             "global_conflict_free_stream_schedule_compiled": False,
             "schedule_is_physical_time": False,
         },
-        "inherited_Cycle600_full_N3_compiler": cycle600_receipt[
-            "route_A_full_N3_exterior_carrier_compiler"
+        "inherited_Cycle600_factorized_N3_algebraic_representation": cycle600_receipt[
+            "route_A_full_N3_factorized_exterior_representation"
         ]["pass"],
-        "exact_support_two_parametric_event_compiler": True,
-        "exact_accepted_finite_alphabet_elementary_closure": False,
+        "exact_support_two_parametric_role_event_circuit": True,
+        "physical_M2_primitive_composition": False,
+        "physical_M2_intertwiner_residual": None,
+        "physical_M2_leakage_evaluated": False,
+        "exact_declared_finite_alphabet_elementary_closure": False,
         "pass_as_scoped_route": bool(route_condition),
         "pass_full_requested_elementary_and_global_layout_target": False,
     }
     check(
-        "Route A exactly lowers structured word events to support-two parametric gates and literal NN patches while withholding finite-alphabet/global-shift closure",
+        "Route A exactly lowers structured word events to support-two parametric role gates and declared line patches while withholding physical-M2, finite-alphabet, and global-shift closure",
         route_condition, result,
     )
     return result
@@ -1030,6 +1064,61 @@ def cubic_laplacian(length: int) -> np.ndarray:
         difference[left], difference[right] = 1, -1
         result += np.outer(difference, difference)
     return result
+
+
+def cubic_neighbors(length: int) -> tuple[tuple[int, ...], ...]:
+    rows = []
+    for site in range(length**3):
+        coordinate = site_tuple(site, length)
+        neighbors = []
+        for axis in range(3):
+            for displacement in (-1, 1):
+                target = list(coordinate)
+                target[axis] = (target[axis] + displacement) % length
+                neighbors.append(site_flat(tuple(target), length))
+        rows.append(tuple(neighbors))
+    return tuple(rows)
+
+
+def n2_sector_parent(length: int):
+    """Construct the full two-excitation I-SWAP parent as a sparse matrix."""
+    volume = length**3
+    states = tuple(combinations(range(volume), 2))
+    state_index = {state: index for index, state in enumerate(states)}
+    neighbors = cubic_neighbors(length)
+    row_indices = []
+    column_indices = []
+    entries = []
+    for row, (first, second) in enumerate(states):
+        boundary_edges = 0
+        for occupied, other in ((first, second), (second, first)):
+            for target in neighbors[occupied]:
+                if target == other:
+                    continue
+                moved = tuple(sorted((other, target)))
+                row_indices.append(row)
+                column_indices.append(state_index[moved])
+                entries.append(-1.0)
+                boundary_edges += 1
+        row_indices.append(row)
+        column_indices.append(row)
+        entries.append(float(boundary_edges))
+    matrix = coo_matrix(
+        (entries, (row_indices, column_indices)),
+        shape=(len(states), len(states)), dtype=float,
+    ).tocsr()
+    return matrix
+
+
+def sparse_low_spectrum(matrix, count: int = 4) -> np.ndarray:
+    dimension = matrix.shape[0]
+    v0 = np.linspace(1.0, 2.0, dimension, dtype=float)
+    v0 /= np.linalg.norm(v0)
+    values = eigsh(
+        matrix, k=min(count, dimension - 1), which="SA", tol=1e-11,
+        maxiter=200000, v0=v0, return_eigenvectors=False,
+    )
+    return np.sort(np.asarray(values, dtype=float))
 
 
 def graph_covariance(length: int) -> dict:
@@ -1074,6 +1163,92 @@ def graph_covariance(length: int) -> dict:
     }
 
 
+def jump_ray_covariance(length: int, jump: np.ndarray) -> dict:
+    """Execute translations, all24 ray maps, and all576 compositions on every edge."""
+    frames = c600.c598.c593.c210.proper_cubic_frames()
+    edges = cubic_edges(length)
+    edge_lookup = {}
+    for index, (left, right) in enumerate(edges):
+        edge_lookup[(left, right)] = (index, 1)
+        edge_lookup[(right, left)] = (index, -1)
+    swap = SWAP
+    reversal_residual = float(np.linalg.norm(swap @ jump @ swap + jump))
+
+    def mapped_site(frame: np.ndarray, site: int) -> int:
+        coordinate = np.asarray(site_tuple(site, length), dtype=int)
+        mapped = frame @ coordinate
+        return site_flat(tuple(int(value % length) for value in mapped), length)
+
+    translation_failures = 0
+    translation_tests = 0
+    for displacement_site in range(length**3):
+        displacement = site_tuple(displacement_site, length)
+        for left, right in edges:
+            mapped = []
+            for site in (left, right):
+                coordinate = site_tuple(site, length)
+                mapped.append(site_flat(tuple(
+                    (coordinate[axis] + displacement[axis]) % length
+                    for axis in range(3)
+                ), length))
+            translation_tests += 1
+            translation_failures += tuple(mapped) not in edge_lookup
+
+    frame_edge_maps = []
+    frame_failures = 0
+    frame_tests = 0
+    maximum_ray_residual = 0.0
+    for frame in frames:
+        edge_map = []
+        for left, right in edges:
+            directed = (mapped_site(frame, left), mapped_site(frame, right))
+            frame_tests += 1
+            if directed not in edge_lookup:
+                frame_failures += 1
+                edge_map.append((-1, 0))
+                continue
+            target_index, orientation = edge_lookup[directed]
+            represented = jump if orientation == 1 else swap @ jump @ swap
+            ray_residual = float(np.linalg.norm(represented - orientation * jump))
+            maximum_ray_residual = max(maximum_ray_residual, ray_residual)
+            frame_failures += ray_residual > 2e-13
+            edge_map.append((target_index, orientation))
+        frame_edge_maps.append(tuple(edge_map))
+
+    frame_index = {
+        tuple(int(value) for value in frame.reshape(-1)): index
+        for index, frame in enumerate(frames)
+    }
+    group_failures = 0
+    group_tests = 0
+    for first_index, first in enumerate(frames):
+        for second_index, second in enumerate(frames):
+            product_index = frame_index[
+                tuple(int(value) for value in (first @ second).reshape(-1))
+            ]
+            for edge_index in range(len(edges)):
+                direct_target, direct_orientation = frame_edge_maps[product_index][edge_index]
+                middle_target, second_orientation = frame_edge_maps[second_index][edge_index]
+                composed_target, first_orientation = frame_edge_maps[first_index][middle_target]
+                group_tests += 1
+                group_failures += (
+                    direct_target != composed_target
+                    or direct_orientation != second_orientation * first_orientation
+                )
+    return {
+        "translation_jump_ray_tests": translation_tests,
+        "translation_jump_ray_failures": translation_failures,
+        "proper_cubic_frames": len(frames),
+        "all24_jump_ray_tests_every_edge": frame_tests,
+        "all24_jump_ray_covariance_failures": frame_failures,
+        "frame_products": len(frames)**2,
+        "all576_jump_ray_group_tests_every_edge": group_tests,
+        "all576_jump_ray_group_failures": group_failures,
+        "edge_reversal_J_to_minus_J_residual": reversal_residual,
+        "maximum_executed_jump_ray_residual": maximum_ray_residual,
+    }
+
+
 def route_b() -> dict:
     print("\nROUTE B — TRANSLATION-INVARIANT ONE-EXCITATION PARENT")
     rows = []
@@ -1081,11 +1256,19 @@ def route_b() -> dict:
     for length, split in ((3, "train"), (6, "held"), (7, "held-out-size")):
         laplacian = cubic_laplacian(length)
         volume = length**3
+        vacuum_parent = np.zeros((1, 1), dtype=float)
+        vacuum_values = np.linalg.eigvalsh(vacuum_parent)
         w = np.ones(volume) / math.sqrt(volume)
         values = np.linalg.eigvalsh(laplacian)
         positive = values[values > 1e-9]
         gap = float(positive[0])
         expected_gap = 4 * math.sin(math.pi / length)**2
+        n2_parent = n2_sector_parent(length)
+        n2_values = sparse_low_spectrum(n2_parent)
+        n2_positive = n2_values[n2_values > 1e-9]
+        n2_gap = float(n2_positive[0])
+        n2_dicke = np.ones(n2_parent.shape[0], dtype=float) / math.sqrt(n2_parent.shape[0])
+        n2_action = n2_parent @ n2_dicke
         deleted = laplacian.copy()
         left, right = cubic_edges(length)[0]
         difference = np.zeros(volume)
@@ -1107,29 +1290,47 @@ def route_b() -> dict:
             "split": split,
             "volume": volume,
             "local_edge_terms": 3 * volume,
+            "N0_sector_dimension_direct": int(vacuum_parent.shape[0]),
+            "N0_zero_eigenvalue_multiplicity_direct": int(np.count_nonzero(np.abs(vacuum_values) < 1e-9)),
+            "N0_ground_energy_direct": float(vacuum_values[0]),
+            "N1_sector_dimension_direct": int(laplacian.shape[0]),
             "uniform_W_norm_residual": abs(float(w @ w) - 1),
             "uniform_W_parent_residual": float(np.linalg.norm(laplacian @ w)),
-            "N1_zero_eigenvalue_multiplicity": int(np.count_nonzero(np.abs(values) < 1e-9)),
-            "N1_gap": gap,
+            "N1_zero_eigenvalue_multiplicity_direct": int(np.count_nonzero(np.abs(values) < 1e-9)),
+            "N1_gap_direct": gap,
             "analytic_gap_4sin2_pi_over_L": expected_gap,
-            "gap_formula_residual": abs(gap - expected_gap),
-            "gap_times_L_squared": gap * length**2,
+            "N1_gap_formula_residual": abs(gap - expected_gap),
+            "N1_gap_times_L_squared": gap * length**2,
+            "N2_sector_dimension_direct": int(n2_parent.shape[0]),
+            "N2_sparse_parent_nonzero_entries": int(n2_parent.nnz),
+            "uniform_N2_Dicke_parent_residual_direct": float(np.linalg.norm(n2_action)),
+            "uniform_N2_Dicke_parent_energy_direct": float(np.real(n2_dicke @ n2_action)),
+            "N2_lowest_four_eigenvalues_direct": n2_values,
+            "N2_zero_eigenvalue_multiplicity_direct": int(np.count_nonzero(np.abs(n2_values) < 1e-9)),
+            "N2_gap_direct": n2_gap,
+            "N2_gap_formula_residual": abs(n2_gap - expected_gap),
             "delete_one_edge_operator_Frobenius_residual": float(np.linalg.norm(edge_term)),
             "delete_one_edge_W_residual": float(np.linalg.norm(deleted @ w)),
             "delete_one_edge_N1_gap": deleted_gap,
-            "vacuum_energy": 0,
-            "fixed_number_ground_dimensions_N0_N1_N2_NV": (1, 1, 1, 1),
-            "full_Hilbert_common_swap_ground_dimension": volume + 1,
-            "uniform_N2_Dicke_edge_antisymmetric_residual": 0,
-            "uniform_N2_Dicke_parent_energy": 0,
+            "analytic_full_Hilbert_symmetric_ground_dimension": volume + 1,
+            "analytic_all_number_sector_statement": "one fully symmetric Dicke zero vector in each N follows from SWAP invariance; only N0/N1/N2 are directly diagonalized here",
             "remote_localized_two_excitation_basis_energy": remote_pair_boundary_energy,
             **covariance,
         }
         rows.append(row)
         condition &= (
             row["uniform_W_parent_residual"] < 2e-13
-            and row["N1_zero_eigenvalue_multiplicity"] == 1
-            and row["gap_formula_residual"] < 2e-12
+            and row["N0_sector_dimension_direct"] == 1
+            and row["N0_zero_eigenvalue_multiplicity_direct"] == 1
+            and abs(row["N0_ground_energy_direct"]) < 2e-13
+            and row["N1_sector_dimension_direct"] == volume
+            and row["N1_zero_eigenvalue_multiplicity_direct"] == 1
+            and row["N1_gap_formula_residual"] < 2e-12
+            and row["N2_sector_dimension_direct"] == math.comb(volume, 2)
+            and row["uniform_N2_Dicke_parent_residual_direct"] < 2e-12
+            and abs(row["uniform_N2_Dicke_parent_energy_direct"]) < 2e-12
+            and row["N2_zero_eigenvalue_multiplicity_direct"] == 1
+            and row["N2_gap_formula_residual"] < 2e-10
             and row["delete_one_edge_operator_Frobenius_residual"] > 1
             and row["delete_one_edge_W_residual"] < 2e-13
             and row["delete_one_edge_N1_gap"] > 0
@@ -1138,9 +1339,10 @@ def route_b() -> dict:
             and row["all576_group_failures_on_42_sites"] == 0
         )
     result = {
-        "status": "exact cubic ferromagnetic-swap parent: W is unique and gapped only within supplied N=1; vacuum and every symmetric Dicke sector are also zero-energy",
+        "status": "exact cubic ferromagnetic-swap parent: W is unique and gapped only within supplied N=1; vacuum and the full N2 Dicke sector control are directly computed, while all-number Dicke competitors are an explicit SWAP-invariance theorem",
         "local_term": "h_xy=I-SWAP_xy; in N=1 this is (|x>-|y>)(<x|-<y|)",
-        "local_support_M2": 2,
+        "local_support_role_bits": 2,
+        "physical_M2_primitive_composition": False,
         "translation_invariant": True,
         "proper_cubic_covariant": True,
         "rows": rows,
@@ -1182,6 +1384,15 @@ def route_c(route_b_result: dict) -> dict:
         values = np.linalg.eigvalsh(parent_dark)
         positive = values[values > 1e-9]
         dark_gap = float(positive[0])
+        vacuum_dark = np.zeros((1, 1), dtype=float)
+        vacuum_values = np.linalg.eigvalsh(vacuum_dark)
+        n2_dark = 0.5 * n2_sector_parent(length)
+        n2_values = sparse_low_spectrum(n2_dark)
+        n2_positive = n2_values[n2_values > 1e-9]
+        n2_gap = float(n2_positive[0])
+        n2_dicke = np.ones(n2_dark.shape[0], dtype=float) / math.sqrt(n2_dark.shape[0])
+        n2_action = n2_dark @ n2_dicke
+        covariance = jump_ray_covariance(length, jump)
         isolated = parent_dark.copy()
         for left, right in cubic_edges(length):
             if left == 0 or right == 0:
@@ -1193,34 +1404,48 @@ def route_c(route_b_result: dict) -> dict:
             "length": length,
             "split": parent_row["split"],
             "jump_instances": 3 * volume,
-            "common_dark_N1_dimension": int(np.count_nonzero(np.abs(values) < 1e-9)),
+            "common_dark_N0_dimension_direct": int(np.count_nonzero(np.abs(vacuum_values) < 1e-9)),
+            "common_dark_N1_dimension_direct": int(np.count_nonzero(np.abs(values) < 1e-9)),
             "uniform_W_jump_residual": float(np.linalg.norm(parent_dark @ w)),
-            "dark_parent_gap": dark_gap,
+            "dark_parent_N1_gap_direct": dark_gap,
             "analytic_dark_gap_2sin2_pi_over_L": 2 * math.sin(math.pi / length)**2,
-            "dark_gap_formula_residual": abs(dark_gap - 2 * math.sin(math.pi / length)**2),
+            "dark_N1_gap_formula_residual": abs(dark_gap - 2 * math.sin(math.pi / length)**2),
+            "common_dark_N2_sector_dimension_direct": int(n2_dark.shape[0]),
+            "common_dark_N2_lowest_four_eigenvalues_direct": n2_values,
+            "common_dark_N2_dimension_direct": int(np.count_nonzero(np.abs(n2_values) < 1e-9)),
+            "uniform_N2_Dicke_jump_parent_residual_direct": float(np.linalg.norm(n2_action)),
+            "uniform_N2_Dicke_jump_parent_energy_direct": float(np.real(n2_dicke @ n2_action)),
+            "dark_parent_N2_gap_direct": n2_gap,
+            "dark_N2_gap_formula_residual": abs(n2_gap - 2 * math.sin(math.pi / length)**2),
             "delete_six_incident_jumps_common_dark_dimension": int(np.count_nonzero(np.abs(isolated_values) < 1e-9)),
-            "vacuum_common_dark": True,
-            "common_dark_dimensions_N0_N1_N2_NV": (1, 1, 1, 1),
-            "common_dark_dimension_across_all_number_sectors": volume + 1,
-            "uniform_N2_Dicke_common_dark": True,
-            "translation_failures": parent_row["translation_edge_failures"],
-            "all24_jump_ray_covariance_failures": parent_row["all24_edge_failures"],
-            "all576_group_failures": parent_row["all576_group_failures_on_42_sites"],
+            "analytic_all_number_common_dark_dimension": volume + 1,
+            "analytic_all_number_statement": "one fully symmetric Dicke dark vector in each N follows from the local J kernel; only N0/N1/N2 are directly evaluated here",
+            **covariance,
         }
         rows.append(row)
         condition &= (
-            row["common_dark_N1_dimension"] == 1
+            row["common_dark_N0_dimension_direct"] == 1
+            and row["common_dark_N1_dimension_direct"] == 1
             and row["uniform_W_jump_residual"] < 2e-13
-            and row["dark_gap_formula_residual"] < 2e-12
+            and row["dark_N1_gap_formula_residual"] < 2e-12
+            and row["common_dark_N2_sector_dimension_direct"] == math.comb(volume, 2)
+            and row["common_dark_N2_dimension_direct"] == 1
+            and row["uniform_N2_Dicke_jump_parent_residual_direct"] < 2e-12
+            and abs(row["uniform_N2_Dicke_jump_parent_energy_direct"]) < 2e-12
+            and row["dark_N2_gap_formula_residual"] < 2e-10
             and row["delete_six_incident_jumps_common_dark_dimension"] == 2
-            and row["translation_failures"] == row["all24_jump_ray_covariance_failures"] == 0
-            and row["all576_group_failures"] == 0
+            and row["translation_jump_ray_failures"] == 0
+            and row["all24_jump_ray_covariance_failures"] == 0
+            and row["all576_jump_ray_group_failures"] == 0
+            and row["edge_reversal_J_to_minus_J_residual"] < 2e-13
+            and row["maximum_executed_jump_ray_residual"] < 2e-13
         )
     local_identity = float(np.linalg.norm(jump.conj().T @ jump - projector_minus))
     result = {
-        "status": "local excitation-conserving jump family has W as the unique common dark vector within N=1; semigroup convergence and sector genesis are not certified",
+        "status": "local excitation-conserving jump family has W as the unique common dark vector within directly evaluated N=1 and has a directly evaluated N2 Dicke competitor; every-edge all24/all576 jump-ray covariance is executed, while semigroup convergence and sector genesis are not certified",
         "jump": "J_xy=|psi+><psi-| on each unoriented cubic edge; orientation reversal changes only its global sign",
-        "jump_support_M2": 2,
+        "jump_support_role_bits": 2,
+        "physical_M2_primitive_composition": False,
         "JdaggerJ_minus_projector_residual": local_identity,
         "rows": rows,
         "declared_input_sector": "exactly one excitation shared by bound/neutral carrier modes",
@@ -1236,7 +1461,7 @@ def route_c(route_b_result: dict) -> dict:
         "pass_unique_genesis_or_preparation": False,
     }
     check(
-        "Route C constructs a local covariant W dark-jump kernel with deletion control but keeps convergence, rate, and sector genesis explicit",
+        "Route C directly executes N2 dark-kernel and every-edge all24/all576 jump-ray controls while keeping convergence, rate, and sector genesis explicit",
         result["pass_as_dark_sector_candidate"], result,
     )
     return result
@@ -1245,7 +1470,7 @@ def route_c(route_b_result: dict) -> dict:
 def no_go_discipline(route_a_result: dict, route_b_result: dict,
                       route_c_result: dict) -> dict:
     walls = (
-        "finite accepted alphabet or calibrated analog one-M2 rotations",
+        "finite declared alphabet or calibrated analog one-role-bit rotations",
         "one simultaneous conflict-free global stream schedule",
         "exact N=1 species-sector genesis",
         "dark semigroup convergence and autonomous rate",
@@ -1254,78 +1479,291 @@ def no_go_discipline(route_a_result: dict, route_b_result: dict,
     pairs = []
     for first, second in combinations(walls, 2):
         pairs.append({
-            "first": first, "second": second,
-            "first_closes_second": False, "second_closes_first": False,
-            "independent_as_current_imports_not_no_go_walls": True,
+            "first": first,
+            "second": second,
+            "close_first_implies_second": False,
+            "evidence_first_to_second": f"closing {first} supplies no mechanism for {second}",
+            "close_second_implies_first": False,
+            "evidence_second_to_first": f"closing {second} supplies no mechanism for {first}",
+            "independent": True,
         })
     families = (
         {
             "family": "structured word-table circuit",
-            "object": "three 4-M2 carrier words and clean Boolean scratch",
-            "mechanism": "pair-H/qutrit spectral factorization, reversible predicates, and Gray transpositions",
+            "object_formulation": "three four-role-bit carrier words and clean Boolean scratch",
+            "mechanism_invariant": "pair-H/qutrit spectral factorization, reversible predicates, and Gray transpositions",
             "terminal_obligation": "support-two exact coin/contact/link event circuits",
             "strength": "weaker than full finite-alphabet/global-shift target",
             "marker": "ATTEMPTED",
-            "disposition": "exact over parameterized one-M2 rotations; global shift schedule not compiled",
+            "authority_citation": "scripts/physical_carrier_preparation_elementary_synthesis_tournament_cycle603_2026_07_22.py::route_a (current authority-none execution)",
+            "why_not_terminal": "exact over parameterized one-role-bit rotations on the algebraic role code; physical-M2 composition and global shift schedule are not compiled",
         },
         {
             "family": "fixed diagonal T-phase-grid compiler",
-            "object": "Cycle580 H/CNOT/CZ/SWAP alphabet and Clifford-phase extensions",
-            "mechanism": "replace inherited analog rotations by finite exact phase words",
+            "object_formulation": "Cycle580 H/CNOT/CZ/SWAP alphabet and Clifford-phase extensions",
+            "mechanism_invariant": "replace inherited analog rotations by finite exact phase words",
             "terminal_obligation": "exact beta=-0.3 and g=0.37 amplitudes",
             "strength": "target-equivalent only for the alphabet residual",
             "marker": "ATTEMPTED",
-            "disposition": "nearest P(k*pi/4) words were executed and miss every inherited eigen/contact phase; this does not test general Clifford+T words",
+            "authority_citation": "scripts/physical_carrier_preparation_elementary_synthesis_tournament_cycle603_2026_07_22.py::route_a (current authority-none execution)",
+            "why_not_terminal": "nearest P(k*pi/4) words were executed and miss every inherited eigen/contact phase; this does not test general Clifford+T words",
         },
         {
             "family": "cubic swap parent Hamiltonian",
-            "object": "one-excitation graph Laplacian",
-            "mechanism": "connected-edge equality and spectral gap",
+            "object_formulation": "one-excitation graph Laplacian plus direct sparse N2 parent",
+            "mechanism_invariant": "connected-edge equality, SWAP invariance, and spectral gap",
             "terminal_obligation": "unique uniform W inside N=1 with held-size scaling",
             "strength": "target-equivalent for sector parent only",
             "marker": "ATTEMPTED",
-            "disposition": "closed exactly in N=1; vacuum and N2 Dicke remain global ground competitors",
+            "authority_citation": "scripts/physical_carrier_preparation_elementary_synthesis_tournament_cycle603_2026_07_22.py::route_b (current authority-none execution)",
+            "why_not_terminal": "closed exactly in supplied N=1; directly computed vacuum and N2 Dicke states remain ground competitors, so genesis is not supplied",
         },
         {
             "family": "local dark-jump cooling",
-            "object": "edge jumps |psi+><psi-|",
-            "mechanism": "drain edge-antisymmetric amplitude into the symmetric ray",
+            "object_formulation": "edge jumps |psi+><psi-| and their positive dark parent",
+            "mechanism_invariant": "drain edge-antisymmetric amplitude into the symmetric ray",
             "terminal_obligation": "unique W common dark vector and autonomous preparation",
             "strength": "weaker",
             "marker": "ATTEMPTED",
-            "disposition": "common N1 dark ray/gap closed; convergence/rate and sector genesis unproved",
+            "authority_citation": "scripts/physical_carrier_preparation_elementary_synthesis_tournament_cycle603_2026_07_22.py::route_c (current authority-none execution)",
+            "why_not_terminal": "common N1 dark ray/gap and direct N2 competitor are closed; convergence, rate, and sector genesis are unproved",
         },
         {
             "family": "topological winding/mark preparation",
-            "object": "marked noncontractible Z2 loops",
-            "mechanism": "Gauss conservation and Wilson-line schedule",
+            "object_formulation": "marked noncontractible Z2 loops",
+            "mechanism_invariant": "Gauss conservation and Wilson-line schedule",
             "terminal_obligation": "one point carrier without supplied winding or mark sector",
             "strength": "weaker",
-            "marker": "RULED OUT BY PRIOR CYCLE600 FOR THAT FAMILY",
-            "disposition": "covariant loop orbit exists but winding/one-mark sectors are supplied",
-        },
-        {
-            "family": "fault-tolerant approximation and autonomous number-selecting reservoir",
-            "object": "approximate finite words plus local open-system number control",
-            "mechanism": "precision-bounded synthesis and reservoir spectral selection",
-            "terminal_obligation": "replace exact analog angles and select N=1 globally",
-            "strength": "unknown/comparable",
-            "marker": "LIVE_UNTESTED",
-            "disposition": "concrete steelman; prevents broad synthesis/genesis no-go",
+            "marker": "RULED OUT BY PRIOR",
+            "authority_citation": "docs/work_history/repo/review_feedback/PHYSICAL_ROOT_FREE_FULL_N3_CARRIER_GENESIS_TOURNAMENT_CYCLE600_NOTE_2026-07-22.md:172-184 (exact-pinned authority-none prior; family-specific evidence only)",
+            "why_not_terminal": "the covariant loop orbit exists, but winding and one-mark sectors are supplied and a second remote mark passes the same local check",
         },
     )
-    result = {
-        "skill_freshness": {
-            "origin_main_checked": True,
-            "origin_main_skill_sha256": "7d1aea8243ddd972331b935e2e836657e72115da3efe259f828fe862469d68b7",
-            "local_skill_sha256": "aeac7b2b7df30c350961f4b36b980a91e9c2ebeca3f35b6c1adcd731071bdab5",
-            "newer_origin_main_version_followed": True,
-            "proof_search_governance_followed": True,
+
+    def rhetoric_row(statement: str, narrow_scope: str,
+                      evidence: tuple[tuple[bool, str], ...]) -> dict:
+        resolution_names = ("per_element", "per_site", "per_mode", "per_block", "lattice_wide")
+        return {
+            "statement": statement,
+            "narrow_scoped_phrase": narrow_scope,
+            "resolutions": {
+                name: {
+                    "tested_in_cycle": tested,
+                    "evidence_or_nonclaim": detail,
+                    "untested_resolution_negative_asserted": False,
+                }
+                for name, (tested, detail) in zip(resolution_names, evidence)
+            },
+            "universal_impossibility_claimed": False,
+        }
+
+    rhetoric = (
+        rhetoric_row(
+            "the finite Cycle580 alphabet is not closed by this construction",
+            "only the executed nearest P(k*pi/4) comparator fails for the inherited phases; general finite synthesis is open",
+            ((True, "individual inherited phases are compared to the T grid"), (True, "onsite coin/contact phase requirements are enumerated"),
+             (True, "coin eigenphases are compared"), (True, "the role-circuit uses parameterized rotations beyond Cycle580"),
+             (False, "no general lattice-wide Clifford+T synthesis/no-go is tested or asserted")),
+        ),
+        rhetoric_row(
+            "separate crossed-link tables are not one simultaneous torus update",
+            "the six exact link-table circuits are not promoted to a collision-free global stream in this artifact",
+            ((True, "each selected basis transposition is executed"), (True, "each local word pair is exhausted"),
+             (True, "all six direction labels are tested"), (True, "bounded line routing is executed"),
+             (False, "no simultaneous global composition is executed and no impossibility is asserted")),
+        ),
+        rhetoric_row(
+            "a schedule is not time",
+            "the declared compiler schedules are not promoted to physical time in this artifact",
+            ((True, "individual gate order is inventoried"), (True, "onsite schedules have no clock map"),
+             (False, "no per-mode time claim is made"), (True, "patch routing order is compile-time data"),
+             (True, "the missing global stream schedule is not a clock law")),
+        ),
+        rhetoric_row(
+            "a generator element is not a rate or physical energy",
+            "the declared jump/parent coefficients have no rate, energy, or causal-time calibration here",
+            ((True, "each edge jump coefficient is dimensionless supplied data"), (True, "site adjacency supplies no calibration"),
+             (True, "N1/N2 eigenvalues are algebraic parent spectra"), (True, "finite blocks use supplied coupling one"),
+             (True, "L3/L6/L7 spectra are not calibrated rates or energies")),
+        ),
+        rhetoric_row(
+            "a role bit is not a physical M2 site",
+            "Cycle600 role bits are not promoted to physical M2 sites in this artifact",
+            ((True, "every support-one/two gate is labeled a role gate"), (True, "12 role bits per coarse cell are algebraic inventory"),
+             (True, "word/mode labels have no M2 encoder"), (True, "line patches are declared role layouts"),
+             (True, "L3/L6/L7 counts remain role counts")),
+        ),
+        rhetoric_row(
+            "algebraic E-G and scratch leakage are not physical compiler residuals",
+            "reported E-G and scratch-return residuals are algebraic-only in this artifact",
+            ((True, "gate and scratch identities are evaluated"), (True, "onsite coin/contact restrictions are evaluated"),
+             (True, "N<=3 exterior fixtures are evaluated"), (True, "crossed-link word restrictions are evaluated"),
+             (False, "no physical lattice-wide E or G is composed; no physical residual is asserted")),
+        ),
+        rhetoric_row(
+            "a parent Hamiltonian, ground state, or dark ray is not preparation, branch, occurrence, Record, or actuality",
+            "the computed parent/ground/dark objects are not promoted to preparation/branch/occurrence/Record/actuality here",
+            ((True, "edge kernels are algebraic"), (True, "site graph supplies no record interface"),
+             (True, "N0/N1/N2 sectors are directly separated"), (True, "finite torus kernels are evaluated"),
+             (True, "no occurrence or Record law is composed at L3/L6/L7")),
+        ),
+        rhetoric_row(
+            "carrier bookkeeping is not empirical charge, energy, stress, source, or gravity",
+            "role counts and carrier labels are not promoted to empirical source quantities here",
+            ((True, "gate labels have no empirical units"), (True, "per-cell counts are resource inventory"),
+             (True, "mode labels carry no source calibration"), (True, "patch counts carry no stress tensor"),
+             (True, "no gravity/source response law is evaluated")),
+        ),
+        rhetoric_row(
+            "conservation is not preparation or genesis",
+            "excitation-number conservation does not prepare or select N=1 in this artifact",
+            ((True, "each jump conserves excitation number"), (True, "local terms cannot create from vacuum"),
+             (True, "N0/N1/N2 sectors are invariant and directly compared"), (True, "finite blocks retain sector"),
+             (True, "vacuum and N2 controls defeat a genesis claim")),
+        ),
+        rhetoric_row(
+            "proper-cubic covariance is not Lorentz covariance",
+            "executed proper-cubic frame identities are not promoted to Lorentz covariance here",
+            ((True, "local role/jump actions are checked under cubic frames"), (True, "site maps use 24 cubic rotations"),
+             (True, "direction modes are permuted only by the cubic group"), (True, "declared blocks check 576 products"),
+             (True, "no boosts or continuum Lorentz limit are evaluated")),
+        ),
+        rhetoric_row(
+            "exact N<=3 algebra is not complete N4 interactions",
+            "the exact N<=3 restriction is not promoted to an N4/four-carrier theorem here",
+            ((True, "single role-gate identities are full-space logical identities"), (True, "onsite tables cover declared labels"),
+             (True, "only N0/N1/N2/N3 inherited exterior fixtures are reproduced"), (True, "link blocks are two-word tables"),
+             (False, "N4/four-carrier lattice dynamics is not tested and no negative is asserted")),
+        ),
+    )
+
+    residual_matching = (
+        {
+            "witness_path": "docs/work_history/repo/review_feedback/PHYSICAL_ROOT_FREE_FULL_N3_CARRIER_GENESIS_TOURNAMENT_CYCLE600_NOTE_2026-07-22.md",
+            "witness_lines": "156-158",
+            "witness_residual": "no elementary physical-M2 gate/off-code unitary/support radius/gate count",
+            "current_residual_same_scope": "physical-M2 composition/intertwiner/leakage remain absent",
+            "current_claimed_closure": "parameterized support-two role-bit circuit only",
+            "match": True,
+            "used_as_closure_witness": False,
         },
+        {
+            "witness_path": "docs/work_history/repo/review_feedback/PHYSICAL_ROOT_FREE_FULL_N3_CARRIER_GENESIS_TOURNAMENT_CYCLE600_NOTE_2026-07-22.md",
+            "witness_lines": "162-166,315-317",
+            "witness_residual": "no one-excitation parent/gap or W preparation law",
+            "current_residual_same_scope": "static N1 W parent and finite-size gap",
+            "current_claimed_closure": "static sector parent/gap only; preparation remains open",
+            "match": True,
+            "used_as_closure_witness": True,
+        },
+        {
+            "witness_path": "docs/work_history/repo/review_feedback/PHYSICAL_ROOT_FREE_FULL_N3_CARRIER_GENESIS_TOURNAMENT_CYCLE600_NOTE_2026-07-22.md",
+            "witness_lines": "315-317,321-323",
+            "witness_residual": "local one-excitation dark-state route unattempted",
+            "current_residual_same_scope": "common N1 dark kernel and parent gap",
+            "current_claimed_closure": "common dark kernel only; semigroup convergence/rate/genesis remain open",
+            "match": True,
+            "used_as_closure_witness": True,
+        },
+        {
+            "witness_path": "docs/work_history/repo/review_feedback/PHYSICAL_ROOT_FREE_FULL_N3_CARRIER_GENESIS_TOURNAMENT_CYCLE600_NOTE_2026-07-22.md",
+            "witness_lines": "172-184",
+            "witness_residual": "winding and exactly-one mark are supplied in the topological comparator",
+            "current_residual_same_scope": "topological one-point preparation without supplied winding/mark",
+            "current_claimed_closure": "none; prior evidence is used only to retire that bounded family",
+            "match": True,
+            "used_as_closure_witness": False,
+        },
+    )
+
+    partial_paths = (
+        {
+            "path": "scripts/physical_l41_elementary_gate_layout_compiler_cycle580_2026_07_22.py",
+            "status": "existing inherited support-two physical-M2 gate/layout construction for a different L41 instrument",
+            "what_it_would_close": "a reusable template for mapping one bounded gate table into physical M2",
+            "what_remains": "no map from the Cycle603 12-role alphabet or its parameterized angles is supplied",
+        },
+        {
+            "path": "scripts/physical_full_torus_dimer_M2_compiler_tournament_cycle590_2026_07_22.py",
+            "status": "existing conditional 53-M2-role blueprint; physical primitive composition remains false",
+            "what_it_would_close": "a candidate bounded layout and local number/gauge vocabulary",
+            "what_remains": "compose the current role gates and directly evaluate physical E-G/leakage",
+        },
+        {
+            "path": "scripts/physical_root_free_full_N3_carrier_genesis_tournament_cycle600_2026_07_22.py",
+            "status": "exact-pinned algebraic N<=3 exterior representation with supplied sector/W data",
+            "what_it_would_close": "the exact logical target that a physical compiler must intertwine",
+            "what_remains": "physical role placement, primitive update, sector genesis, and W preparation",
+        },
+        {
+            "path": "scripts/physical_carrier_preparation_elementary_synthesis_tournament_cycle603_2026_07_22.py",
+            "status": "current authority-none partial construction",
+            "what_it_would_close": "parametric role-circuit decomposition and static N1 parent/dark-kernel subproblems",
+            "what_remains": "finite calibrated alphabet, global stream, physical-M2 map, reservoir convergence, and renewal",
+        },
+    )
+
+    cross_cycle = (
+        {
+            "prior_wall": "three-cell decoder depended on prior branch/order service",
+            "citation": "docs/work_history/repo/review_feedback/PHYSICAL_GLOBAL_N3_RETURNED_SLOT_COMPILER_CYCLE560_NOTE_2026-07-21.md:94-109",
+            "retired": True,
+            "mechanism": "persistent q plus the current bounded physical pattern replaced retained prior branch state",
+            "applicability": "supports trying an in-state bounded carrier program, but does not itself compile the Cycle603 stream",
+        },
+        {
+            "prior_wall": "runtime lexicographic selected-factor traversal",
+            "citation": "docs/work_history/repo/review_feedback/PHYSICAL_HELD_SPARSE_ORDER_RETIREMENT_CYCLE563_NOTE_2026-07-21.md:100-114",
+            "retired": True,
+            "mechanism": "bounded transported color products and local anticommutation identities",
+            "applicability": "motivates a partitioned/double-buffer carrier shift; its conflict-free construction remains unattempted here",
+        },
+        {
+            "prior_wall": "bounded elementary physical gate/layout and full-unitary extension",
+            "citation": "docs/work_history/repo/review_feedback/PHYSICAL_L41_ELEMENTARY_GATE_LAYOUT_COMPILER_CYCLE580_NOTE_2026-07-22.md:21-28",
+            "retired": True,
+            "mechanism": "explicit support-two physical-M2 gates and nearest-neighbor layout",
+            "applicability": "could be adapted after a lawful Cycle603 role-to-M2 map and angle alphabet are chosen",
+        },
+        {
+            "prior_wall": "full-torus logical CAR packet lacked physical primitive composition/intertwiner/leakage",
+            "citation": "docs/work_history/repo/review_feedback/PHYSICAL_FULL_TORUS_DIMER_M2_COMPILER_TOURNAMENT_CYCLE590_NOTE_2026-07-22.md:129-141",
+            "retired": False,
+            "mechanism": "conditional 53-M2-role blueprint narrows layout but does not compose primitives",
+            "applicability": "same physical-lowering residual persists and prevents shared-obstruction language",
+        },
+        {
+            "prior_wall": "uniform neutral-W preparation and physical 12-role composition",
+            "citation": "docs/work_history/repo/review_feedback/PHYSICAL_ROOT_FREE_FULL_N3_CARRIER_GENESIS_TOURNAMENT_CYCLE600_NOTE_2026-07-22.md:156-166",
+            "retired": "partial",
+            "mechanism": "Cycle603 supplies a role circuit plus static W parent/dark kernel",
+            "applicability": "preparation, N1 selection, and physical-M2 composition remain open actionable routes",
+        },
+    )
+
+    result = {
+        "skill_source": "origin/main:docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+        "no_go_discipline_protocol_applied": True,
         "N1_normalized_families": families,
-        "N1_attempted_or_prior_scoped_families": 5,
+        "N1_normalized_family_count": len(families),
+        "N1_qualifying_ATTEMPTED_or_RULED_OUT_count": len(families),
+        "N1_required_count": 5,
+        "N1_markers_valid": all(row["marker"] in {"ATTEMPTED", "RULED OUT BY PRIOR"} for row in families),
+        "N1_prior_rows_have_authority_citations": all(
+            row["authority_citation"] for row in families if row["marker"] == "RULED OUT BY PRIOR"
+        ),
+        "N1_pass": True,
+        "N1_open_unattempted_steelman_family": {
+            "family": "fault-tolerant approximation and autonomous number-selecting reservoir",
+            "object_formulation": "precision-bounded finite words plus local open-system number control",
+            "mechanism_invariant": "Clifford+T approximation and reservoir spectral selection",
+            "terminal_obligation": "replace exact analog angles and select N=1 globally",
+            "status": "OPEN / NOT COUNTED",
+        },
         "N2_directional_pairs": pairs,
         "N2_pair_count": len(pairs),
+        "N2_collapsed_wall_count": len(walls),
+        "N2_any_implication_found": False,
         "N3_hidden_condition_scan": {
             "analog angles": "explicit inherited beta/contact calibration",
             "clean scratch": "explicit supplied zero-state resource",
@@ -1333,42 +1771,25 @@ def no_go_discipline(route_a_result: dict, route_b_result: dict,
             "N1 sector": "explicit supplied global count",
             "parent/dissipator coupling and clock": "explicit supplied candidate parameters",
             "full space extension": "invalid words use m=0 and word coin identity; scratch unitary is explicit",
-            "uncited_standard_or_obvious_hits": 0,
+            "standard-methods phrase": "non-load-bearing prior-art characterization only; it supplies no premise or closure",
+            "hidden_conditions_promoted_to_walls": (),
         },
-        "N4_residual_matching": (
-            {
-                "witness": "Cycle600 Route A",
-                "witness_residual": "elementary 12-role synthesis unexecuted",
-                "current_residual": "support-two parametric event compiler executed; finite accepted alphabet/global shift remain",
-                "match": True,
-            },
-            {
-                "witness": "Cycle600 N6/N7",
-                "witness_residual": "one-excitation parent Hamiltonian untested",
-                "current_residual": "unique gapped W parent in N=1 constructed",
-                "match": True,
-            },
-            {
-                "witness": "Cycle600 N6/N7",
-                "witness_residual": "dissipative W dark state untested",
-                "current_residual": "local common-dark jump family constructed; convergence/genesis remain",
-                "match": True,
-            },
+        "N4_residual_matching": residual_matching,
+        "N4_all_closure_witnesses_same_scope": all(
+            row["match"] for row in residual_matching if row["used_as_closure_witness"]
         ),
-        "N5_rhetoric_resolution": (
-            "finite-alphabet nonclosure is only for the executed Cycle580 H/CNOT/CZ/SWAP comparison, not all elementary alphabets",
-            "the stream residual is only the missing simultaneous global conflict-free schedule, not the exact crossed-link tables or Cycle600 abstract map",
-            "W uniqueness is only inside N=1; vacuum and N2 Dicke competitors are explicitly tested",
-            "dark uniqueness means common pure dark vector, not a proved unique Lindblad stationary state or preparation law",
-        ),
-        "N6_partial_closure_paths": (
-            "choose and ratify a parameterized one-M2 rotation alphabet with calibration tests, or compile a precision-bounded Clifford+T approximation",
-            "add a bounded second word buffer or a reversible partitioned-QCA shift and count its scratch/layout cost",
-            "construct a local reservoir/penalty whose global ground or stationary sector is exactly N=1 without size-host data",
-            "prove the dark-jump Lindbladian primitive and gap/convergence theorem, then compile it into a physical recurrence",
-        ),
-        "N7_hostile_steelman": "A hostile reviewer should reject both an elementary-synthesis no-go and a genesis no-go. The exact parametric support-two compiler already removes arbitrary multi-controlled tables, so a calibrated RY/RZ/P elementary alphabet or ordinary precision-bounded Clifford+T synthesis could retire the remaining angle import. Likewise the gapped W parent and local dark jumps expose a concrete route in which a number-selecting reservoir or gauge charge fixes N=1. Neither the fault-tolerant approximation nor that reservoir was attempted, and a double-buffer partitioned QCA could compile the global shift at constant overhead.",
-        "N8_cross_cycle_echo": "Cycles560/563 retired decoder/order services by explicit bounded tables, Cycle580 retired an isometry-only gate gap with H/CNOT/CZ/SWAP, and Cycle600 retired the full N<=3 carrier-law gap. Cycle603 again narrows two imports constructively; the history supports another compiler/preparer cycle, not constitutional language.",
+        "N5_rhetoric_audit": rhetoric,
+        "N6_partial_closure_paths": partial_paths,
+        "N6_primitive_registry_status": "not invoked: no 'no retained primitive' or 'new axiom required' claim is made",
+        "N7_hostile_steelman": {
+            "mechanism": "Map each role bit into a lawful physical register, synthesize the explicit support-two schedule with calibrated RY/RZ/P or precision-bounded Clifford+T, use a double-buffer partitioned QCA for the shift, and couple a local number-selecting reservoir or gauge charge to the W parent.",
+            "terminal_obligation": "Construct the physical E and G, prove physical E-G/leakage/covariance with constant overhead, select N=1 from lawful inputs, and prove dark-semigroup convergence with a calibrated rate.",
+            "authority_status": "OPEN / NO RETAINED AUTHORITY; supported only by Cycle603 authority-none constructions and the exact-pinned Cycle600 open-path statement at lines 315-323",
+            "actionable": True,
+            "consequence": "broad elementary-synthesis, genesis, shared-obstruction, minimum-content, and axiom-pressure negatives are premature",
+        },
+        "N7_pass_for_broad_negative": False,
+        "N8_cross_cycle_echo": cross_cycle,
         "route_evidence": {
             "A": route_a_result["pass_as_scoped_route"],
             "B": route_b_result["pass_as_sector_parent"],
@@ -1378,32 +1799,59 @@ def no_go_discipline(route_a_result: dict, route_b_result: dict,
         "minimum_content_claim_shipped": False,
         "shared_obstruction": False,
         "axiom_pressure": False,
-        "pass_for_scoped_dispositions_and_withholding_broad_negative": True,
+        "gate_status": "FAIL",
+        "broad_negative_gate": "FAIL / DO NOT SHIP",
+        "minimum_content_gate": "FAIL / DO NOT SHIP",
+        "shared_obstruction_gate": "FAIL / DO NOT SHIP",
+        "axiom_pressure_gate": "FAIL / DO NOT SHIP",
+        "failure_conditions_hit": (
+            "N7 gives an actionable live physical compiler/reservoir/partitioned-QCA steelman",
+            "the current authority-none construction does not close physical M2, global stream, sector genesis, or convergence",
+        ),
+        "demoted_artifact_status": "partial-attempt-with-named-untested-routes",
+        "scoped_constructive_artifact_validity": "PASS if independent numeric, dependency, note, and resource checks pass; this is not the no-go gate status",
     }
+    resolution_names = {"per_element", "per_site", "per_mode", "per_block", "lattice_wide"}
     condition = (
-        len(families) >= 5 and len(pairs) == math.comb(len(walls), 2)
+        len(families) >= 5
+        and result["N1_markers_valid"]
+        and result["N1_prior_rows_have_authority_citations"]
+        and len(pairs) == math.comb(len(walls), 2)
+        and all(row["match"] in {True, False} and row["witness_path"] and row["witness_lines"] for row in residual_matching)
+        and all(set(row["resolutions"]) == resolution_names for row in rhetoric)
+        and all({"path", "status", "what_it_would_close", "what_remains"} <= set(row) for row in partial_paths)
+        and result["N7_hostile_steelman"]["actionable"]
+        and all({"prior_wall", "citation", "retired", "mechanism", "applicability"} <= set(row) for row in cross_cycle)
         and all(result["route_evidence"].values())
         and not result["negative_claim_shipped"]
         and not result["minimum_content_claim_shipped"]
         and not result["shared_obstruction"] and not result["axiom_pressure"]
+        and result["gate_status"] == "FAIL"
+        and result["broad_negative_gate"] == "FAIL / DO NOT SHIP"
     )
-    check("fresh N1-N8 withholds broad synthesis/genesis negatives and axiom pressure", condition, result)
+    check("N1-N8 schema is complete and records broad-negative gate FAIL without invalidating scoped constructive evidence", condition, result)
     return result
 
 
 def note_contract() -> dict:
     text = NOTE.read_text()
     required = (
-        "Authority: none", "Audit: unset", "Cycle 603", "Route A", "Route B", "Route C",
-        "12-M2", "parameterized", "finite", "H/CNOT/CZ/SWAP", "off-code",
+        "Authority: none", "Audit: unset", "Author artifact status accepted: false",
+        "Cycle 603", "Route A", "Route B", "Route C",
+        "12 role bits", "parameterized", "finite", "H/CNOT/CZ/SWAP", "off-code",
         "nearest-neighbor", "SWAP", "L3", "L6", "L7", "all 24", "all 576",
         "N=1", "vacuum", "two-excitation", "W", "gap", "dark", "genesis",
-        "schedule is not time", "carrier bookkeeping", "N1", "N8", "no axiom pressure",
+        "schedule is not time", "A generator element is not a rate",
+        "Physical-M2 primitive composition remains open", "Carrier bookkeeping",
+        "direct N2", "every-edge jump-ray", "N1", "N8", "no axiom pressure",
+        "Gate status: FAIL", "Broad-negative gate: FAIL / DO NOT SHIP",
+        "partial-attempt-with-named-untested-routes",
     )
     missing = tuple(phrase for phrase in required if phrase not in text)
     forbidden = (
         "unique global genesis is achieved", "finite accepted alphabet is closed",
         "schedule is physical time", "carrier count is energy", "shared obstruction proved",
+        "physical-M2 compiler is closed",
     )
     forbidden_hits = tuple(phrase for phrase in forbidden if phrase in text)
     result = {"required_phrases": required, "missing": missing, "forbidden_hits": forbidden_hits}
@@ -1414,9 +1862,11 @@ def note_contract() -> dict:
 
 def main() -> int:
     global PASS, FAIL
+    PASS = 0
+    FAIL = 0
     started = time.perf_counter()
     print("Cycle603 carrier preparation / elementary synthesis tournament", AUTHORITY, AUDIT)
-    cycle600_receipt = shore()
+    cycle600_receipt, shore_closure = shore()
     route_a_result = route_a(cycle600_receipt)
     route_b_result = route_b()
     route_c_result = route_c(route_b_result)
@@ -1434,29 +1884,40 @@ def main() -> int:
         "status": "cycle603-carrier-preparation-elementary-synthesis-tournament",
         "authority": AUTHORITY,
         "audit": AUDIT,
-        "HEAD": subprocess.check_output(("git", "rev-parse", "HEAD"), cwd=ROOT, text=True).strip(),
+        "author_artifact_status_accepted": False,
         "pins": PINS,
         "runner_sha256": runner_hash,
         "note_sha256": note_hash,
         "elapsed_seconds": elapsed,
         "maximum_RSS_bytes": maximum_rss,
-        "shore": {
-            "accepted_cycle600": ACCEPTED_CYCLE600,
-            "accepted_full_N3_compiler": cycle600_receipt["route_A_full_N3_exterior_carrier_compiler"]["pass"],
-        },
+        "shore": shore_closure,
         "route_A_structured_elementary_compiler": route_a_result,
         "route_B_W_parent_Hamiltonian": route_b_result,
         "route_C_dark_jump_sector_selector": route_c_result,
         "no_go_discipline": discipline,
         "note_contract": note,
-        "strongest_constructive_result": "an exact full-space support-two circuit over explicit fixed gates plus parameterized one-M2 RY/RZ/P rotations compiles the structured Cycle600 onsite coin/contact and every crossed-link valid-word transposition on literal bounded NN event patches; separately, a local cubic parent makes W unique and gapped within N=1",
+        "strongest_constructive_result": "an exact full-space support-two role-bit circuit over explicit fixed gates plus parameterized one-role-bit RY/RZ/P rotations compiles the structured Cycle600 onsite coin/contact and every crossed-link valid-word transposition on bounded declared line patches; separately, directly constructed N0/N1/N2 parent and dark-kernel matrices certify W uniqueness only within N=1, N2 Dicke competitors, finite-size gaps, and independent every-edge jump-ray all24/all576 covariance; no physical-M2 primitive composition is supplied",
         "route_disposition": {
-            "A": "scoped pass: exact parametric event compiler; finite Cycle580 alphabet, scratch renewal, and one simultaneous global stream schedule remain open",
-            "B": "pass as sector parent: W unique/gapped within N=1; vacuum and N2 Dicke prevent global genesis",
-            "C": "pass as dark-kernel candidate: local W common-dark ray; convergence/rate and sector genesis unproved",
+            "A": "scoped pass: exact parametric role-event circuit; physical-M2 composition, finite Cycle580 alphabet, scratch renewal, and one simultaneous global stream schedule remain open",
+            "B": "pass as sector parent: direct N0/N1/N2 spectra show W unique/gapped only within N=1 and vacuum/N2 Dicke prevent global genesis",
+            "C": "pass as dark-kernel candidate: direct N0/N1/N2 kernel plus every-edge jump-ray all24/all576 execution; convergence/rate and sector genesis unproved",
         },
-        "optimal_next_campaign": "compile a constant-overhead double-buffer or partitioned-QCA global carrier shift and choose either a calibrated parametric M2 rotation contract or a precision-bounded Clifford+T target; in parallel add and test a local number-selecting reservoir for the W parent/dark family",
+        "optimal_next_campaign": "map the 12 role bits and their gates into declared physical-M2 primitives with an exact E/G and leakage audit, then compile a constant-overhead double-buffer or partitioned-QCA global carrier shift; in parallel test a local number-selecting reservoir for the W parent/dark family",
+        "physical_M2_scope": {
+            "primitive_composition": False,
+            "intertwiner_residual": None,
+            "leakage_evaluated": False,
+            "literal_layout_compiled": False,
+        },
+        "interpretation_firewall": {
+            "schedule_is_time": False,
+            "generator_element_is_rate_or_energy": False,
+            "role_bits_are_physical_M2": False,
+            "ground_or_dark_ray_is_Record_or_actuality": False,
+        },
         "shared_obstruction_or_axiom_pressure": False,
+        "broad_negative_gate": "FAIL / DO NOT SHIP",
+        "demoted_artifact_status": "partial-attempt-with-named-untested-routes",
         "constitutional_effect": "none",
         "tests_passed": PASS,
         "tests_failed": FAIL,
@@ -1467,9 +1928,13 @@ def main() -> int:
     summary = {
         "pass": FAIL == 0, "tests_passed": PASS, "tests_failed": FAIL,
         "elapsed_seconds": elapsed, "maximum_RSS_bytes": maximum_rss,
-        "support_two_parametric_compiler": route_a_result["exact_support_two_parametric_event_compiler"],
-        "finite_cycle580_alphabet_closure": route_a_result["exact_accepted_finite_alphabet_elementary_closure"],
+        "support_two_parametric_role_circuit": route_a_result["exact_support_two_parametric_role_event_circuit"],
+        "physical_M2_primitive_composition": False,
+        "finite_cycle580_alphabet_closure": route_a_result["exact_declared_finite_alphabet_elementary_closure"],
         "W_unique_in_N1": route_b_result["pass_as_sector_parent"],
+        "direct_N2_controls": True,
+        "direct_every_edge_jump_covariance": True,
+        "broad_negative_gate": "FAIL / DO NOT SHIP",
         "unique_genesis": False, "axiom_pressure": False,
     }
     print("SUMMARY_JSON", json.dumps(summary, sort_keys=True))

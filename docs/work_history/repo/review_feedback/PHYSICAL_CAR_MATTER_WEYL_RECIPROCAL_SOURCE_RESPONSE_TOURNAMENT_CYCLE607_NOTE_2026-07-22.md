@@ -1,323 +1,308 @@
-# Physical CAR-matter / Weyl reciprocal source-response tournament — Cycle 607 (2026-07-22)
+# Algebraic CAR-number / W16 / finite graph-response audit — Cycle 607
 
-- authority: none
-- audit: unset
-- constitutional effect: none
-- status: constructive exact typed interaction plus scoped ordering and prediction bridges; no shared no-go and no axiom pressure
+Date: 2026-07-22
 
-## Target and frozen dependencies
+Authority: none
 
-Cycle 607 attacks Cycle604's physical-identification wall without renaming a
-placeholder source.  The matter control is the actual local CAR occupation
-that descends exactly through Cycle600's accepted exterior-carrier isometry.
-Cycle600 in turn preserves the Cycle219 one-particle mass fixture and the
-Cycle230 free/contact/seam law on the prepared complete N=0,1,2,3 sector.
-Cycle590 remains an independently accepted 53-M2 matter presentation and a
-live alternative; it is not silently tensored with Cycle600's replacement
-presentation.
+Audit: unset
 
-The runner byte-pins Cycles590, 600, 604, 588, and 570.  It does not edit any
-axiom, foundation, Qualification, primitive, registry, policy, queue, or audit
-surface.
+Author artifact status accepted: false. No reviewer or audit verdict is
+inferred from a hash, executable pass, parent artifact, or commit ancestry.
 
-## Route A — actual CAR occupation coupled to a finite Weyl field
+Constitutional effect: none. No axiom, foundation, Qualification, primitive,
+registry, policy, queue, audit-status, or PR-control surface changes.
 
-### Exact typed interface
+## Result up front
 
-Let `E600` be the Cycle600 exterior-carrier isometry and let `N_CAR` be total
-onsite occupation on its logical N<=3 CAR space.  On the three four-M2 carrier
-words, `N_phys` counts labels 4 through 9 and ignores absent/neutral labels.
-Cycle600's number descent is rerun as
+Cycle 607 retains three bounded results:
 
-`N_phys E600 = E600 N_CAR`.
+1. Route A constructs an exact algebraic number-controlled finite Weyl phase
+   on Cycle600's declared exterior-role code. Fourier conjugation gives the
+   corresponding W16 label shift. Ambient-code projection, inverse, deletion,
+   separate matter-law regressions, and sampled proper-cubic controls pass.
+2. Route B shows that a supplied conjugation criterion and supplied
+   `tau=0.37` select the palindromic schedule among three candidates. It does
+   not select sign, matter-stream ordering, or framework time reversal.
+3. Route C separately compares a host point-minus-uniform scalar array under a
+   finite `alpha=1/12` Cesaro recurrence with a finite graph inverse, and
+   repeats the inherited no-refit `5/(32pi)` Green-surface comparison.
 
-This is the exact type boundary: the control is neither a copied pointer nor a
-new source word.  It is the accepted S3-invariant CAR number observable.  The
-prepared one-carrier-per-species and neutral-W sector remains supplied, as in
-Cycle600.
+There is no executed physical matter/source/response join and no prediction
+law. The no-go-discipline gate has Status: **FAIL / DO NOT SHIP NEGATIVE**
+because multiple live constructive routes are untested here. The narrowed
+positive artifact status is **PASS**. There is no shared obstruction,
+minimum-content claim, or axiom pressure.
 
-Each cell receives one 16-level finite Weyl field, exactly four additional M2.
-Its coordinate and momentum are conjugate bases of the same register.  With
-supplied coupling sign `s`, the local interaction is
+## Frozen dependency and authority boundary
+
+The runner pins the current Cycle590, Cycle600, Cycle604, Cycle588, and
+Cycle570 evidence and the current Cycle610, Cycle611, and Cycle612 notes. It
+also discovers the complete recursive runtime import closure: 57 scripts,
+including 53 hidden behind the four direct imports, are jointly byte-pinned by
+an exact manifest. Byte identity is reproducibility evidence, not scientific
+acceptance.
+
+Cycle600's current result is an algebraic factorized exterior representation.
+It supplies no physical M2 register, encoder, update, constraint circuit,
+physical leakage, placement, routing, or physical
+`E G_coarse = G_physical E`. Its 12 role bits per cell are algebraic inventory,
+and its one-carrier/species and neutral-W inputs remain supplied and nonlocal.
+
+Cycle604's current result explicitly keeps its exact cross-cycle physical
+interface, physical E/G, physical leakage, physical propagation, and
+prediction-law booleans false. Cycle607 preserves that boundary.
+
+## Frozen fixtures and interpretation firewalls
+
+Route-A train/held/out-family sizes are L3/L6/L7. Route C uses L3/H384,
+L6/H768, and L7/H1536. Those size-dependent horizons are frozen fixtures, not
+a same-size convergence study.
+
+A generator is not a rate. A phase is not energy. A factor schedule and update
+count are not time. A modular label shift or host number ledger is not current,
+stress-energy, recoil, source charge, or gravity. A response array is not
+gravity. An endpoint norm is not occurrence and not a Born probability.
+Pointer copying is not a Record, and matched labels are not actuality. Role
+coordinates and 16 declared binary roles are not physical M2 placement or
+cost. Ambient-code projection leakage is not physical leakage. A no-refit
+surface comparison without a physical observable interface is not a
+prediction law. Update count is not time. The tested modular label is not
+stress-energy. No axiom pressure is inferred.
+
+## Route A — algebraic CAR-number / finite Weyl interface
+
+Let `E600` be Cycle600's algebraic exterior-role isometry and `N_CAR` total
+occupation on its declared `N<=3` logical space. Three base-16 ambient carrier
+words give a 4,096-dimensional role basis; labels 4 through 9 count occupied
+roles. The runner re-evaluates
+
+`N_ambient E600 = E600 N_CAR`.
+
+A separate 16-level field role uses coordinate label `Q`. With supplied sign
+`s`, the algebraic block is
 
 `U_int = exp(2 pi i s N_CAR Q / 16)`.
 
-Equivalently the discrete bilinear generating action is `S_int=s N*Q`.  One
-discrete derivative shifts field momentum by `s N_CAR mod 16`; the reciprocal
-derivative shifts the number-conjugate matter phase by `s Q mod 16`.  Thus the
-momentum kick and matter phase are two views of the same unitary, not two
-host-coordinated updates.  Both coupling signs are executed and remain valid.
+Thus
 
-The exact theorem is
+`E_joint U_logical = U_ambient_role E_joint`
 
-`E_joint U_logical = U_physical E_joint`
+on the declared algebraic code. Fourier conjugation shifts the field momentum
+label by `s N_CAR mod 16`; the same supplied `N Q` phase convention gives the
+reciprocal matter phase. This is a finite-dimensional algebra identity, not a
+varied physical current or action principle.
 
-on the declared Cycle600 code.  The runner exhausts all local N=0..3 sectors,
-all 16 field coordinates and momenta, and both signs.  It measures joint EG,
-inverse, leakage, the Weyl momentum translation, action mixed-derivative
-reciprocity, source deletion, and field deletion.
+The 65,536-dimensional carrier/field role-basis extension is unitary. The
+runner separately checks local coin/contact composition and sampled global
+stream/contact/seam terms. It does not execute one physical end-to-end
+free-plus-contact-plus-field circuit.
 
-### Inherited matter law and global controls
+Exact retained controls are:
 
-Because the interaction depends only on total local CAR number, it commutes
-with the number-preserving Cycle219 massive coin and the Cycle230 onsite even
-contact.  The runner composes the interaction with the actual exterior stream,
-contact, and seam representation rather than only checking an isolated source
-bit.  It tests train L3, held L6, and out-family L7 samples containing vacuum,
-one-particle, onsite contact, periodic seam, and N=3 seam/contact words.  The
-full joint inverse and exact termwise EG are checked after the composite.
+- number descent and local/global sampled intertwining: `0`;
+- ambient-code projection leakage: `1.9657532501355684e-15`;
+- local inverse: `8.739566085665258e-16`;
+- W16 Fourier-shift residual: `3.9933319345536895e-15`;
+- full role-basis phase unitarity: `2.220446049250313e-16`;
+- local coin/contact composite residual: `1.371649320383847e-15`;
+- sampled global inverse: `5.99588961666477e-17`;
+- inherited mass/contact/seam fixtures:
+  `8.7159799596118e-16 / 2.149937642474629e-15 / 0`.
 
-The inherited one-particle mass, Cycle230 contact factorization, and seam braid
-residuals remain explicit.  The interaction is identity on the matter vacuum;
-deleting nonzero matter control or deleting the field coordinate produces a
-nonzero signal.  Field momentum impulse obeys the exact local modular ledger
-`Delta p_field=s N_CAR`, while matter number itself is preserved.  This ledger
-is not stress-energy and the response is not gravity.
+Deletion is reported row by row. The largest nonvacuum interaction-deletion
+signal is `2`, but the held L6 two-particle seam row has a null deletion signal
+`2.4492935982947064e-16`. Therefore Route A does not claim that every
+nonvacuum fixture detects deletion.
 
-For every sampled stream word, the runner also constructs the literal link
-current and checks `n_after-n_before+div j=0` cell by cell.  Summed field
-impulse minus summed post-stream CAR occupation is zero modulo 16.  These are
-number/impulse bookkeeping identities, not an empirical energy continuity
-equation.
+The runner executes 72 scalar all-24 comparisons, 72,576 sampled-mode all-576
+comparisons, 72 role-coordinate frame audits, and 1,728 role-coordinate group
+audits. Residual/failure counts are zero. These are sampled algebraic scalar,
+mode, and coordinate actions—not physical layout, routing, schedule covariance,
+or Lorentz covariance.
 
-Occupation and field coordinate are proper-cubic scalars.  The runner rotates
-both the actual matter modes and field sites, checks all 24 proper-cubic frames,
-and checks all 576 frame products.  Proper-cubic covariance is not Lorentz
-covariance.
+The coordinate blueprint carries 12 carrier-role bits plus four field-role
+bits per cell. Its analytic distance proxy is not routing depth. No physical
+M2 register, elementary gate lowering, physical E/G, physical leakage,
+nearest-neighbor path, collision audit, schedule, or local enforcement is
+executed.
 
-### M2 layout and honest compiler boundary
+Disposition: **constructive exact algebraic CAR-number/W16 interface; physical
+lowering and source-response composition open**.
 
-The literal layout reuses Cycle600's 12 carrier-M2 coordinates and appends four
-field M2 near each coarse-cell center.  Total persistent cost is 16 M2/cell on
-L3, L6, and L7.  Role-coordinate injection, all24/all576 coordinate action,
-maximum field-role radius, 16-M2 lookup support, and a serial nearest-neighbor
-routing-depth upper bound are printed.
+## Route B — conditional palindromic schedule comparator
 
-The numerical proof executes the exact phase as one 16-M2 block matrix: all 12
-carrier bits and all four field bits are in its declared support at once.  The
-phase is extended unitarily over the complete 65,536-dimensional physical
-carrier-field basis; rejected carrier labels 10..15 are fixed by the matter
-coin and counted unoccupied by the diagonal interaction.  The runner does not
-factor or replay this matrix gate by gate, and does not lower it to the
-accepted elementary M2 alphabet.  Bounded layout and exact typed unitary are
-established; elementary local-factor synthesis and the spatial field-
-propagation QCA remain distinct open obligations.
+Route B freezes `tau=0.37`, complex conjugation in the real number/coordinate
+basis, and three schedules: kick/drift, drift/kick, and half-drift/kick/
+half-drift. Under the supplied criterion `Theta U Theta^-1=U^-1`, the
+palindromic schedule has residual `1.7168460557006926e-14`; the minimum
+asymmetric residual is `5.58899744715365`. The inverse residual is
+`2.2247390990679617e-14`, order signal `5.58899744715365`, half-drift deletion
+signal `5.128677565641797`, and sign signal `5.656854249492381`.
 
-Disposition: **constructive exact typed CAR/Weyl interaction; elementary
-lowering and the spatial-response compiler remain open**.
+The supplied criterion selects the palindromic member of this three-schedule
+tournament. It does not select sign, the matter-stream/interaction order, a
+causal duration, physical time reversal, a rate, or energy.
 
-## Route B — reversal audit of factor ordering
+Disposition: **constructive conditional schedule comparison; physical
+interpretation and autonomous selection open**.
 
-Route B freezes a finite-Weyl field drift with `tau=0.37` and declares the
-reversal involution `Theta` to be complex conjugation in the real CAR-number
-and field-coordinate basis.  It compares:
+## Route C — separate finite graph-response comparison
 
-1. kick then drift;
-2. drift then kick;
-3. half drift, kick, half drift.
+Route C does not consume Route A's carrier state or W16 field. It manually
+constructs a floating-point point-minus-uniform array twice; their zero
+residual is a host construction identity, not a source-interface residual. It
+then evolves a separate NumPy field under Cycle604's recurrence.
 
-The declared criterion is `Theta U Theta^-1=U^-1`.  Both asymmetric orders
-fail it by a nonzero commutator residual, while the palindromic split passes
-for every N=0..3 block and both signs.  Deleting either half drift produces a
-signal.  Every schedule retains an exact algebraic inverse.
+Finite-Cesaro/static relative residuals are:
 
-Therefore this supplied reversal criterion selects the symmetric ordering
-within this three-schedule tournament.  It does not select sign.  It also does
-not select the order of the inherited matter stream relative to interaction,
-and `Theta`, `tau`, and the square-root drift are supplied rather than derived
-as framework causal time.
+```text
+L3/H384    0.0033361272825549507
+L6/H768    0.0018510636864354823
+L7/H1536   0.0008344844938036573
+```
 
-Disposition: **constructive conditional order selection; sign and framework
-time-reversal status remain supplied/open**.
+Static-equation relative residuals are
+`0.0033515973522708037`, `0.0020832759798205367`, and
+`0.001040842151125216`. Source-off response is zero. Field-deletion signals
+are `0.20220232843124844`, `0.27111908910696636`, and
+`0.2903858682679528`. The unnormalized propagation-deletion signals grow with
+horizon and are reported without interpreting their magnitude.
 
-## Route C — actual joint source to static and matched-event shores
+Seventy-two all-24 response reruns give maximum covariance residual
+`1.0718740936143079e-16`. Route C does not execute an all-576 response audit.
 
-The propagation source is built directly from the accepted one-CAR subset:
-one occupation at site zero minus its uniform zero mode.  There is no fitted
-source amplitude and no separate placeholder source identity.  The frozen
-Cycle604 reversible response law uses `alpha=1/12` on:
+The inherited infinite-Green axis/face/body comparator uses zero fitted
+parameters and has relative residuals `0.0007031142985813865`,
+`0.001748688020904332`, and `0.00016180278156041616` against `5/(32pi)`.
+Those values are not outputs of the Cesaro field, do not derive the coefficient
+in Cycle607, and do not repair Cycle585's raw-Regge mismatch.
 
-- train L3, 384 updates;
-- held L6, 768 updates;
-- out-family L7, 1536 updates.
+The inherited source-off/receiver-zero `4:4`, delay `3:4`, and advance `5:4`
+labels are retained. The response does not select delay versus advance, an
+event, occurrence, Record, actuality, or proper time.
 
-The finite Cesaro response is compared with the exact finite solution of
-`L phi=rho`.  Absolute, relative, equation, source-interface, source-off,
-field-deletion, spatial-propagation-deletion, endpoint, and all24 covariance
-controls are printed.  The frozen relative residuals decrease across L3/L6/L7.
-Update count is not time and endpoint norm is not probability or occurrence.
-
-This is an actual-source prediction bridge but not yet one physical joint
-compiler: the local CAR/Weyl interaction is physically typed, whereas the
-`alpha=1/12` lattice propagation has no accepted M2 lowering in this cycle.
-That unfinished implementation is not promoted to a substrate obstruction.
-
-Cycle607 independently repeats the Cycle585/588 infinite-lattice axis, face,
-and body coefficient comparison to `5/(32pi)` without refit.  It also carries
-the Cycle451/570 exact matched candidates: source-off and receiver-zero `4:4`,
-delay `3:4`, and advance `5:4`.  The response does not select delay versus
-advance.  Their association remains supplied empirical/event calibration;
-no pointer copy is called a Record.
-
-Disposition: **constructive actual-CAR-source prediction bridge; physical
-propagation, finite/static equality, and event calibration remain open**.
+Disposition: **constructive finite graph-response comparison; matter-source
+interface, physical propagation, static limit, and prediction law open**.
 
 ## Supplied-structure inventory
 
-Supplied: the prepared Cycle600 exterior-carrier sector and neutral-W orbitals;
-Weyl dimension 16; field basis/vacuum convention; bilinear phase convention;
-coupling sign, magnitude, and units; field drift `tau`; reversal involution and
-half-drift choice; `alpha=1/12`; finite horizons; point-minus-uniform
-normalization; and response-sign/event association.
+Supplied: Cycle600's prepared algebraic sector; W16; the coordinate/Fourier
+basis convention; the bilinear phase; sign, magnitude, and units; `tau`, the
+reversal involution and half drift; `alpha=1/12`; size-dependent horizons; the
+host point-minus-uniform normalization; Green-surface coefficient and sample
+points; and response-sign/event association.
 
-Derived or executed: exact CAR-number descent; exact finite-Weyl momentum kick
-and reciprocal matter phase from one unitary; joint coin/contact/seam EG,
-leakage and inverse; deletion controls; conditional symmetric-order selection;
-and actual-CAR-source finite/static prediction comparison.
+Derived or executed: algebraic number descent; algebraic W16 phase/Fourier
+shift; ambient projection and inverse; separate matter-law regressions;
+row-wise deletions; sampled all-24/all-576 algebra; the conditional
+palindromic comparison; and separate finite graph/Green comparisons.
 
-Not derived: accepted elementary gate lowering; physical M2 compilation of the
-alpha response; coupling sign or physical units; framework time reversal;
-finite-horizon/static equality; stress-energy; gravity; Lorentz covariance;
-event calibration; Born weights; Record actuality; or autonomous preparation
-of the Cycle600 carrier sector.
+Not derived: physical M2 register/encoder/update/E-G/leakage/layout/routing/
+enforcement; carrier-to-source or W16-to-float-response map; coherent source
+control; current; stress-energy; gravity; coupling normalization; prediction
+law; time; event selection; Record actuality; or Born probability.
 
-## Full no-go discipline
+## No-Go Discipline Gate
 
 ### N1 — normalized alternative families
 
-1. Finite-Weyl/exterior-CAR, using the bilinear `N*Q` invariant to close the
-   exact accepted-matter interaction — attempted positive in Cycle607.
-2. Cycle590's 53-M2 occupation presentation with reversible word arithmetic —
-   prior partial; a distinct joint-law lowering remains live.
-3. Cycle604's paired modular fields with opposite exchange impulses — prior
-   attempted with a placeholder source; source identity is advanced here.
-4. Link gauge fields with Gauss-law electric flux — materially distinct local
-   constraint mechanism and still live/unattempted.
-5. A truncated oscillator field with a number-coordinate Hamiltonian —
-   distinct cutoff-stability obligation and still live/unattempted.
-6. Cycle588's static constrained inverse — prior static-only route, now reached
-   by the actual source but not a dynamical compiler.
-7. Cycle451/570 matched detector/action routes — prior exact event candidates;
-   autonomous calibration remains live.
+Two families are `ATTEMPTED` here: the algebraic W16 route and finite graph
+comparator. Physical Cycle610 composition, Cycle611 variation-derived current,
+a four-qubit W16 lowering, local link-gauge enforcement, and Cycle612 detector/
+interval composition remain `UNTESTED_LIVE`. That marker is intentionally not
+one of the two shipping markers (`ATTEMPTED`, `RULED OUT BY PRIOR`), so N1 hits
+its failure condition and the negative gate fails.
 
-These differ in primary object, load-bearing invariant, or terminal proof
-obligation; they are not seven phrasings of the finite-Weyl route.
+### N2 — wall-independence audit
 
-### N2 — pairwise wall independence
-
-The receipt evaluates every pair among eight collapsed walls: accepted
-elementary lowering; physical response propagation; coupling sign/units;
-supplied reversal criterion; finite/static limit; event calibration;
-stress-energy/gravity identification; and prepared-sector genesis.  Closing
-any one does not automatically close either direction of another pair.  All 28
-pairs are printed explicitly.
+The runner prints all 28 pairs among eight corrected walls and records both
+closure directions as `unknown`: Cycle607 establishes neither implication.
+Pair-specific reasons name the two distinct obligations. This is an audit
+ledger, not an independence theorem; independence-theorem eligibility is
+false.
 
 ### N3 — hidden-wall scan
 
-The scan exposes W=16, the bilinear phase convention, prepared carrier sector,
-field basis/vacuum, sign/units, `tau`, reversal involution, alpha, horizons,
-source normalization, event association, and parameterized lookup/Fourier
-matrices.  None is hidden under “standard,” “natural,” “canonical,” or “by
-construction.”
+The note and runner inventory W16, phase/basis conventions, prepared sector,
+sign/units, reversal choice, alpha, horizons, host source normalization,
+Fourier/block matrices, and event association. The runner scans the note for
+the skill's exact risk phrases and classifies every occurrence. Any positive
+use would fail the narrowed artifact.
 
 ### N4 — residual matching
 
-Cycle600's composition boundary concerns its replacement of the Cycle590
-presentation; it does not prohibit the new typed field product.  Cycle604's
-placeholder-source residual exactly matches and is advanced by the Cycle600
-number descent.  Cycle604's finite/static and event-calibration residuals match
-and remain open.  Cycle590's 53-M2 representation is a distinct presentation,
-so it is retained as an alternative rather than cited as contrary evidence.
+The receipt gives path, line, witness residual, current residual, and exact
+match status. Cycle600 matches the absent physical compiler residual; Cycle604
+matches the absent physical source/prediction interface. Cycle610 and Cycle611
+are stronger but different positive residuals and are kept as counterexamples,
+not misused as matching witnesses. Cycle612 matches only the unselected
+event/Record/time boundary.
 
 ### N5 — rhetoric audit
 
-“Not stress-energy or gravity” is restricted to the tested per-site modular
-impulse and lattice response; no empirical block or lattice-wide stress tensor
-was tested.  “Not time” is restricted to the finite update schedule; no clock
-rate was tested.  “Not an elementary compiler” distinguishes the tested
-bounded block matrix/layout from the untested accepted-alphabet gate sequence.
-No broader negative is shipped.
+Each negative phrase is resolved at local role block, sampled mode/term,
+sampled lattice fixture, and general lattice-law levels. Only algebraic local
+and sampled fixture resolutions were tested. Untested resolutions are marked
+unknown, so every statement above uses the narrowest supported wording.
 
 ### N6 — partial-closure paths
 
-Cycle600's number descent retires the placeholder-source identity at the typed
-interface.  Cycle590 provides another physical occupation presentation for a
-future arithmetic lowering.  Cycle604 and Cycle588 already provide a common
-operator route from finite response to static prediction.  These are explicit
-import-retirement paths, not reasons to demand a new axiom.
+Cycle610's physical matter word, Cycle611's unit Peierls current, four-qubit
+W16 arithmetic, and Cycle612's detector/packet are live import-retirement
+paths. The receipt records their file paths, current status, what each could
+close, and that none is consumed here. No statement that a retained primitive
+is absent is made, and no new axiom is requested.
 
 ### N7 — steelman
 
-A hostile reviewer should reject any obstruction claim: Cycle607's exact
-`N*Q` unitary already closes the reciprocal accepted-matter interface.  A
-prime-dimensional Weyl QCA or reversible fixed-point arithmetic compiler could
-lower the spatial response, while an action-derived detector boundary could
-select sign/order/event.  Those mechanisms have concrete terminal obligations
-and have not been exhausted.
+A hostile reviewer should reject a source/matter no-go. Compose the physical
+support-one/two matter word in the Cycle610 note, lines 10–39, with a four-qubit
+W16 phase-polynomial and reversible propagation circuit; feed it the unit
+number/link current derived in the Cycle611 note, lines 50–115; then demand one
+literal physical E/G, leakage, routing, constraint, deletion, and all-frame
+audit. Separately test the Cycle612 matter predicate and packet, lines 32–36
+and 101–113, for autonomous event/Record admission. These are actionable,
+unexhausted terminals.
 
 ### N8 — cross-cycle echo
 
-Cycles590 and 600 retired earlier global-compiler and particle-label walls by
-explicit bounded presentations.  Cycle607 similarly replaces Cycle604's
-placeholder source with exact CAR occupation while leaving propagation and
-interpretation separate.  Cycles451/570 compiled matched event words without
-calibrating them.  This repeated import-retirement pattern argues for another
-constructive cycle, not constitutional pressure.
+The receipt records row-wise echoes. Cycle600 shows algebraic closure without
+physical lowering. Cycle604 shows improving finite graph comparisons without a
+source interface or law. Cycle610 shows that an earlier physical-packing wall
+can be retired by an enormous constructive supercell. Cycle611 shows a host
+number ledger can be replaced by variation-derived current. Cycle612 shows a
+copied candidate can be strengthened to a protected packet while Record and
+time remain open. The last three mechanisms directly undermine any shared
+negative claim.
 
-**Broad negative gate: FAIL / DO NOT SHIP.**  At least five normalized routes
-remain live or partially constructive.  There is no shared route-independent
-obstruction, minimum-content result, or axiom pressure.
+**Gate Status: FAIL / DO NOT SHIP NEGATIVE.** N1 has live untested routes, N2
+does not establish an independence theorem, and N7 gives an actionable
+steelman. **Narrowed positive artifact Status: PASS.** No negative claim is
+shipped.
 
 ## Dependency ledger and next campaign
 
-- `C_ref`: advanced because the source is exactly typed; sign, units, reversal,
-  and event calibration remain supplied.
-- `C_num`: partial advance from the fixed finite-Weyl register and modular
-  impulse; physical scale and elementary lowering remain open.
-- `C_wrap`: unchanged; Weyl wrap is algebraic and is not energy, rate, or time.
-- `C_int`: advanced by one action-derived field kick and reciprocal matter
-  phase that preserves mass/contact/seam.
-- `C_local`: advanced to a literal 16-M2/cell typed layout; elementary and
-  response-propagation compilation remain open.
-- `C_source`: mathematically advanced because actual accepted CAR occupation
-  reaches the static shore; stress-energy, gravity, and calibration remain
-  open.
+- `C_ref`: partial algebraic typing only; no physical source/observable
+  interface, sign, units, or calibration.
+- `C_num`: partial finite-Weyl algebra only; no physical register, scale,
+  lawful-domain enforcement, or lowering.
+- `C_wrap`: unchanged; exact modular arithmetic is not energy, rate, or time.
+- `C_int`: partial algebraic phase/Fourier-shift identity with separate
+  matter-law regressions; no physical joint update.
+- `C_local`: unchanged physically; 16 declared binary roles and coordinates
+  do not supply M2 placement, routing, E/G, leakage, or enforcement.
+- `C_source`: unchanged physically; the host scalar array is not joined to
+  Route A and is not current, stress-energy, gravity, or a prediction law.
 
-Maturity 0–5: operational quantum/records 4.0; time 3.0; inertia/matter 4.2;
-gravity/source 3.5; Born/probability 2.0.
+Cycle607 makes no upward maturity revision because it closes no physical
+compiler, source law, time, Record, or Born terminal.
 
-The strongest result is an exact bounded 16-M2/cell typed product of
-Cycle600's accepted exterior-CAR carrier and a four-M2 finite-Weyl field, where
-one `N*Q` unitary gives both the field momentum kick and reciprocal matter
-phase while preserving the inherited mass/contact/seam code.
+The strongest result is the exact algebraic `N_CAR Q` W16 phase/Fourier-shift
+identity on Cycle600's declared exterior-role code, with ambient projection,
+inverse, deletion, separate matter-law regression, and sampled proper-cubic
+controls.
 
-The optimal next campaign is accepted elementary lowering of the field
-propagation and `N*Q` lookup in a translation-covariant QCA or reversible
-arithmetic schedule, followed by an action-derived detector test that could
-select sign/order/event without supplied calibration.
-
-## Parent-agent verification
-
-After the worker froze the runner's scientific logic, the parent agent
-independently imported the runner without invoking its receipt-writing main
-path and reran the pinned dependency shore plus Routes A, B, and C.  All eight
-science checks passed and none failed.  The reproduced summary was:
-
-- number descent and local/global `EG`: `0`;
-- full-basis unitarity: `2.220446049250313e-16`;
-- local leakage: `1.9657532501355684e-15`;
-- global inverse: `5.99588961666477e-17`;
-- Weyl-kick residual: `3.9933319345536895e-15`;
-- matter continuity and field-impulse ledger residuals: `0`;
-- all24 residual/all576 failures: `0/0`;
-- symmetric/asymmetric reversal residuals: `1.7168460557006926e-14` and
-  `5.58899744715365`;
-- finite/static relative residuals: `0.0033361272825549507`,
-  `0.0018510636864354823`, and `0.0008344844938036573`;
-- held cubic-coefficient residual: `0.001748688020904332`.
-
-The parent transcript is outside the repository at
-`/tmp/cycle607_parent_verify.txt`, SHA-256
-`1073943e63c180aaaeff4631b35b19ea64f42d84b3b9e4652c3b83d5a4e8e0ea`.
-The frozen receipt and cold transcript pin the runner and the pre-appendix note;
-this appendix changes only the human-readable note.
+The optimal next campaign is to compose Cycle610's physical matter word, a
+four-qubit W16 field/update, and Cycle611's variation-derived unit current under
+one physical E/G/leakage/routing audit. Cycle612 event/Record/time selection
+should remain a separate terminal.

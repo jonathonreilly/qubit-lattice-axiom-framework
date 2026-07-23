@@ -13,7 +13,7 @@ Runner:
 
 `scripts/physical_ti_innovation_bath_offgrid_history_tournament_cycle595_2026_07_22.py`
 
-Runner SHA-256: cdfcddb00974205faa8bc60c617ff0dd42bf9f8947b0a55a4b172157b2d28de2
+Runner SHA-256: 107fdaef7f2f834617bd695119569f0fc867768e64d695105e69107ef80d87d8
 
 ## Result and claim ceiling
 
@@ -90,19 +90,59 @@ eight-address arity, and unchanged Cycle-592 ROM. The held declaration has
 separate SHA-256
 `5ca581dadcbe5dc88f24345562f7cc1691cf0d97facacd3aef6cf3aeb4883337`.
 
-Exact current science hashes:
+The runner byte-pins 35 exact-pinned surfaces:
 
 | surface | SHA-256 |
 |---|---|
-| Cycle-592 runner | `ab565af6aa59e66cea7b1ce625c08f8a88235ae9f7415e5e7d89d63af34ce9ce` |
-| Cycle-592 note | `dccf62d6126287b20cbf96ff410534adfa1746d9cf3aba94fbfb2893855be212` |
-| Cycle-587 runner | `2879d5a2641b334553769f15cf3a6f152f9f16f8f80b23db723448533c28c494` |
-| Cycle-584 runner | `556e3e4759033706c795c9b65f55f12afaaaf84b8858dc4bb06b1c0a93400ab3` |
-| Cycle-582 runner | `47c5138720add60ed6fa8b6506dcb8a9cbee9af5a1ab3defbc7aea4c3cfa290a` |
-| Cycle-580 runner | `c46917d4a932cd3ad9a78e0547625055f5adf9d5cf7393700d7e6715dd515cd3` |
-| Cycle-577 runner | `93bf1fa2859289b13037bfe7882cce86732e9377ed8b60e56c3bd55ebc0ce74f` |
-| Cycle-571 runner | `7221d59558e4d731f98a2a4523c280aa98b889f23ea3f7be1acc8919395dfee8` |
-| Cycle-565 runner | `b4b6e2c4491c5a6b30389764e8ac597ce07e1dac3f31c7cb8fff9297ac04437a` |
+| Cycle-552 runner | `123c9fe8a7a3802af2627e21dd1cee5a8dadfbe0b82b7862e64c7024be6adc7f` |
+| Cycle-552 note | `cc5cee11501bcf541faf54e0ca69a5d931037a126d1bac9e02c41c131e752400` |
+| Cycle-552 receipt | `cf70de5c6034567637e96fab75bc5e8383630c82bf0b2e0e009049bf1a63415f` |
+| Cycle-565 runner | `f31d207540efbf1541343c53552c947c77f2c984e705818786ac3c5f6d06eba2` |
+| Cycle-565 note | `f29702462974b922e23624df57fb0b6107f5051e95c43d7b51a10953db829bbb` |
+| Cycle-565 receipt | `a1b30e2fe268b270720f01ab426af5736cdc23189f94c641a428dc0369ccca9a` |
+| Cycle-571 runner | `af0a0b4837781b2a03fc471c819ce4c6b95e4e4cc000c403fabe4ddb10f6b14c` |
+| Cycle-571 note | `9781ac6d6d920c17b275c41b13d20ccb9e65ea68a97b48dc8ed8487718708efc` |
+| Cycle-571 receipt | `6d75e5d7075c3e65f4a7d8a9406d3bd685cc58aa0be165dd0db5ffe34dc66e31` |
+| Cycle-571 cold | `5e4acfe172dc31dbc2f01db314a7414115fc17e4b7ce4164beea0f1f111b46cb` |
+| Cycle-577 runner | `0876bc8888193606446b5fe07f1fdd8e3ddef3b313551739b81be3792c820aa7` |
+| Cycle-577 note | `7617ee877ca22986e0eacc09d08e14f6246cbc75b6443961c8626a1b5435f18c` |
+| Cycle-577 receipt | `f7e6bbc40a4d56ee115ba43ddbab7bee4aff05227b988a057adc4420f51941ed` |
+| Cycle-577 cold | `1c77d2ca4bf860482d3e55596c85e0983f32e755e7ceaac33ff0576a928c8a36` |
+| Cycle-580 runner | `1f1acb34dc8976f5617319353e9591f64eae5cfe923a1dea736adfa792c4e718` |
+| Cycle-580 note | `47a6418c27965219ddc5d3c2a8bc39fd34aa6173d3d1c16e473a136113b9c787` |
+| Cycle-580 receipt | `9cf656c917ff738bc6d0d0e52dc8c251630aaedd86dd5a6b90dd4f7857cdbc1d` |
+| Cycle-580 cold | `890c68f44bf6cc563916304b51481def8aa3ad7009a6ecfe0b0a4cffc85cd7e6` |
+| Cycle-582 runner | `6b2e15a051c91542dcbebc6fe9dc4de24d6908dfbc36a2b44696809339a6b07c` |
+| Cycle-582 note | `0f77f19c52f6aa66e895baba2782f8f802601f74d21c45c7eced78ccfdc2f0c5` |
+| Cycle-582 receipt | `3ccacbe0eaf2b4e476956d0728e71d0d871a1aedb69f12d85c4368e4070ca4b0` |
+| Cycle-582 cold | `bd18e16e6019b65c5331764cf3cf101ef816c275a3a8e4f6d0026b334e936d11` |
+| Cycle-584 runner | `b7f2d262e4224bc298dd22b137e89e5e4118dc455e0454250908e503bb19be82` |
+| Cycle-584 note | `da6576714664f225025442b08a696e4a2b90acbd0a7f60439ab462be9a4f0059` |
+| Cycle-584 receipt | `a5a3c553a91a624edc5e4b104dd1e19d0f923df831b889aaa972cb40e7394872` |
+| Cycle-584 cold | `3bb01b04ccfe8418de93404395d2e0cb42ea06579b79d80aecb1b14163037729` |
+| Cycle-587 runner | `881e2c5a33217352a97df363f5c3dcd67980c2e672b59e072c6ecbc1cb0f27d1` |
+| Cycle-587 note | `4b1a4e6916da24c74086d83f154cdb474dc87a4954b6be9ea600f685fb9b8e4b` |
+| Cycle-587 receipt | `ed4ca30a1c174ec96eaeb3b10dc30f261efb274697acf061e23dd24dbb71a173` |
+| Cycle-587 cold | `ce59771c3263e0f8a77dbeccffeb8e61628fb3bc70b5542924e2e743d5d59fe8` |
+| Cycle-592 runner | `14d01e640eb1818c29aeb9f05313b2211e28e445d4798f3f6718d0b0fca0d62a` |
+| Cycle-592 note | `092f0bfc06f7a42d82ed10ade5f551bdb08ebe7040c8c2b8ba0b1b3ea1c971c7` |
+| Cycle-592 receipt | `edf069adbf58b66b30b6b9a66a85dd577b6c6c3170f833807dc57d59c8f14457` |
+| Cycle-592 cold | `cb2640da38cf7cb0a69e6351871d9a9ba93c712f6865d5055b0bd79f18acdc5c` |
+| Cycle-41 runner | `d8207fc0090ca926d060f536fedc2b2c031ccd50184e035c292e6b8eccb56814` |
+
+All nine receipts bind their runner/note surfaces, report every declared test
+passing, and retain authority `none` with audit `unset`. The
+Cycle-571/577/580/582/584/587/592 receipts also bind their directly pinned
+cold evidence.
+
+The physical-M2 composition and leakage boundary is inherited from those
+exact-pinned Cycle-577/580/582/584/587/592 surfaces. Cycle 595 adds finite bath
+mechanisms and off-grid residuals, but no arbitrary-volume leakage or noise
+theorem. The candidate instrument remains conditional, and the Cycle-592
+conditional ROM remains supplied. Global irreversibility is not derived:
+Routes A and C are reversible, while Route B has an exact global inverse.
+Neither coherent sector nor finite packet is promoted to a framework Record,
+and neither orbit-index frequency nor reduced marginal is promoted to Born.
 
 Cycle 592 is the immediate shore: it supplied a balanced address word and
 three-program rational ROM, compiled all lawful rows into Cycle 552/531, and
@@ -338,7 +378,7 @@ grades, or probabilities.
 
 Margolus partitioning, reversible shifts, Stinespring dilation, dephasing, and
 LFSRs are standard. The repo-specific contribution is their exact coupling to
-the accepted physical ROM/occurrence shore with invariant-versus-mixing,
+the exact-pinned physical ROM/occurrence shore with invariant-versus-mixing,
 renewal, actuality, Record, and new off-grid table walls kept separate.
 
 The next campaign should target a state-family compiler rather than another
@@ -354,39 +394,23 @@ and audit unset.
 
 ```text
 runner SHA-256:
-cdfcddb00974205faa8bc60c617ff0dd42bf9f8947b0a55a4b172157b2d28de2
+107fdaef7f2f834617bd695119569f0fc867768e64d695105e69107ef80d87d8
 
 cold transcript:
 outputs/physical_ti_innovation_bath_offgrid_history_tournament_cycle595_cold_2026_07_22.txt
 
 cold transcript SHA-256:
-e02e94251b8baf82735194a466031cc073606e6a6df8906737365633865ab70e
+ecd3fb24ab1deee7395b914d708749bd924c6f1f3d5d177cd55228f4759f7216
 
 /usr/bin/time -l:
-87.18 real seconds
-910458880 maximum resident set size bytes
-1033405640 peak memory footprint bytes
+70.88 real seconds
+846086144 maximum resident set size bytes
+1042384096 peak memory footprint bytes
+
+runner-internal resource sample:
+0.15524508291855454 elapsed seconds
+754073600 maximum RSS bytes
 ```
 
-Both measured memory figures remain below the declared 3 GiB cap, and wall
+All reported memory figures remain below the declared 3 GiB cap, and wall
 time remains below the declared 360-second cap.
-
-## Independent parent reproduction
-
-After reviewing the deterministic-versus-stochastic boundary, off-grid held
-declaration, denominator residuals, resource ledger, and full N1–N8 gate, the
-parent independently executed the frozen runner with `/usr/bin/time -lp`. It
-reproduced `pass=6 fail=0` in `80.32 s` real time with maximum resident set
-size `949,927,936` bytes, peak memory footprint `1,030,784,176` bytes, and zero
-swaps. The independent transcript SHA-256 is
-`156eb20bf33e4ff0a669dfc6b0ceda2968256210abe9972f61363e12a5ba9622`.
-
-Frozen worker hashes before this parent receipt were runner
-`cdfcddb00974205faa8bc60c617ff0dd42bf9f8947b0a55a4b172157b2d28de2`,
-note `5f5fc7812ff1fcb13cc1cf53110880114bba0c8934ae4ded06541589a75fee0a`,
-and cold transcript
-`e02e94251b8baf82735194a466031cc073606e6a6df8906737365633865ab70e`.
-The reproduction changes no disposition: an orbit-index histogram and a
-coherent reduced marginal are not stochastic mixing, objective actuality, a
-framework Record, or derived Born probability, and the two off-grid failures
-remain finite-ROM/denominator evidence rather than a shared obstruction.

@@ -6,6 +6,8 @@ Authority: none
 
 Audit: unset
 
+Author_artifact_status_accepted: false
+
 Constitutional effect: none. No axiom, foundation, Qualification, primitive,
 registry, policy, queue, audit-status, or PR-control surface changes.
 
@@ -19,11 +21,11 @@ three-part partial, not a no-go.
 1. **Route A — two intrinsic packets.** The runner now reconstructs two
    packets from ten actual Cycle-230/Cycle-578 `A2` relative-fiber eigenpairs
    per box: five positive and five negative total-momentum labels. It Fourier
-   reconstructs their center densities, applies each actual eigenvalue for one
-   accepted-law update, and evaluates the genuine local encounter projector
+   reconstructs their center densities, applies each exact-pinned fiber
+   eigenvalue for one declared update, and evaluates the local encounter projector
    `sum_x P_A(x) tensor P_B(x)`. Train L5 and held L7 give nonzero encounter
    and deletion signals with fiber eigen residual below `9e-16`. This is
-   genuine use of the accepted intrinsic band. But the two-dimer tensor-product
+   direct use of the frozen intrinsic band. But the two-dimer tensor-product
    decoupling is supplied: full four-CAR antisymmetrization and dimer-dimer
    scattering are not included. Both packets also share `beta`, `g`, the same update,
    and the one-dimensional `A2` internal content. Their initial separation,
@@ -43,9 +45,10 @@ three-part partial, not a no-go.
    frozen L11/L19/L31 `A2` wrapped phases into stable frame-invariant pointer
    weights. Controlled-update deletion changes the output, and a `2 pi` lift
    does not. Cycle 577 supplies a bounded gauge/Naimark instrument upper bound,
-   but a controlled physical-M2 Cycle-230/dimer update, pointer member law,
+   but a controlled logical Cycle-230/dimer update, pointer member law,
    dephasing carriers, and twelve fresh low-entropy M2 per three-site
-   invocation remain supplied. Spectral observability is not a self-timing
+   invocation remain supplied as role-level resources. The physical primitive
+   composition, intertwiner, and leakage tests remain open. Spectral observability is not a self-timing
    clock.
 
 Strongest terminal: **intrinsic finite CAR-band relational and spectral clock
@@ -96,7 +99,7 @@ supplied six-mode block trap, SWAP path, projector, comparison law, preparation,
 and ledger remain explicit.
 
 Cycles 219/230 provide the massive coin and local even CAR contact. Cycles
-563/569 preserve their physical-M2 mass/contact/seam fixtures. Cycle 578 finds
+563/569 preserve conditional code-space mass/contact/seam fixtures. Cycle 578 finds
 the finite intrinsic contact-bound moving `A2` band but no second stable mode
 or physical-M2 bound-state compiler. Cycle 583 gives the exact finite 15 by 15
 contact resolvent and exposes the full-spectrum-touch/contact-cyclic boundary;
@@ -110,7 +113,7 @@ Mass residual `8.7159799596118e-16`, contact factorization residual
 
 ## Route A scope
 
-For every retained K label the runner solves the literal antisymmetric
+For every declared K label the runner solves the literal antisymmetric
 Cycle-230 relative walk, overlap-tracks the isolated A2 eigenvector, and gates
 its eigen residual. It Fourier reconstructs a center-coordinate/internal-CAR
 packet before and after multiplying by the actual eigenvalue. Two such packets
@@ -127,7 +130,7 @@ genesis prescription are shared.
 
 ## Route B scope
 
-The one-hot ring automaton is an exact reversible finite QCA comparator. A
+The one-hot ring automaton is an exact reversible finite logical automaton comparator. A
 collision latch reads carrier equality locally; deleting the detector or one
 stream changes the declared word. Rotating the installed axis and carrier
 directions through every proper-cubic frame preserves equality and support.
@@ -156,9 +159,9 @@ or a rate. Pointer weight is not Born actuality or an observed frequency.
 
 | route | lawful code | deletion/leakage | resource/renewal | independence |
 |---|---|---|---|---|
-| A | two normalized five-fiber A2 packets with distinct IDs and opposite K labels | deleting one accepted-law dimer update changes held encounter expectation | packet preparation/detector/archive open | decoupled tensor product, same beta/g/update; fails independent genesis |
-| B | odd one-hot rings, distinct IDs, blank latch | stream/detector deletions change trace | `2L+2` M2 upper bound; repeated latch reset/archive open | controller-selected, not intrinsic |
-| C | A2 eigenphase plus blank pointer/instrument code | controlled-update deletion changes pointer | Cycle577 finite upper bound; twelve fresh low-entropy M2/invocation | controlled law and member/readout supplied |
+| A | two normalized five-fiber A2 packets with distinct IDs and opposite K labels | deleting one declared dimer fiber update changes held encounter expectation | packet preparation/detector/archive open | decoupled tensor product, same beta/g/update; fails independent genesis |
+| B | odd one-hot rings, distinct IDs, blank latch | stream/detector deletions change trace | `2L+2` binary roles; physical-M2 composition and repeated latch reset/archive open | controller-selected, not intrinsic |
+| C | A2 eigenphase plus blank pointer/instrument code | controlled-update deletion changes pointer | Cycle577 declared finite role bound; twelve fresh low-entropy roles/invocation; physical lowering open | controlled law and member/readout supplied |
 
 All24 covariance is exact or inherited at the stated finite resolution.
 Proper-cubic covariance is not Lorentz covariance.
@@ -170,7 +173,7 @@ ring sizes, seams, initial carrier positions, opposite-shift program and latch;
 controlled update, pointer basis, Naimark/dephasing carriers, member law and
 blank resources; finite exact arithmetic and probe split.
 
-Derived: retained mass/contact/seam hashes; twenty executed A2 eigenpairs,
+Derived: exact-pinned mass/contact/seam fixture residuals; twenty executed A2 eigenpairs,
 finite local encounter-projector and deletion signals; exact train/held first-return automaton and resource bound;
 stable L11/L19/L31 pointer observable, deletion response and `2 pi`
 invariance; finite all24 audits and full import ledger.
@@ -179,6 +182,10 @@ Open: a physical-M2 dimer compiler; intrinsic dimer-dimer collision/event law;
 a held second internal mode; independent standard genesis; renewable detector,
 archive and dephasing resources; candidate FORMATION/Record actuality;
 empirical scale; continuum/Lorentz proper time; source/gravity and Born law.
+
+Physical primitive composition remains open. No conditional role count,
+fiber-space matrix, controller program, or pointer block is promoted to a
+physical-site compiler.
 
 ## Six-wall ledger and maturity
 
@@ -191,11 +198,9 @@ empirical scale; continuum/Lorentz proper time; source/gravity and Born law.
 | `C_local` | bounded detector/instrument candidates and support audits | physical-M2 dimer and controlled-U compilers open |
 | `C_source` | beta/g remain visible common-mode inputs | no source response, lapse, redshift or gravity |
 
-Carried evidence-planning coordinates remain unchanged: operational quantum /
-Records `4.80/5` repo and `4.65/5` strict; causal time `3.95/5` and `3.80/5`;
-inertia/matter `4.70/5` and `4.85/5`; gravity/source `4.10/5` and `3.85/5`;
-Born/probability `4.20/5` and `3.65/5`. These are not probabilities, audit
-grades, or constitutional status.
+The cycle-local planning coordinates printed in the original exploratory
+packet are not recomputed here. Current campaign coordinates live in the PR
+summary and are not probabilities, audit grades, or constitutional status.
 
 ## Fresh N1–N8 no-go discipline
 
@@ -266,23 +271,9 @@ claims: **DO NOT SHIP**. There is no axiom pressure.
 
 No Thirring engine is used or compared.
 
-## Definitive cold verification
+## Cold verification boundary
 
-The frozen run passed `7/7` checks with authority none and audit unset.
-
-```text
-internal elapsed seconds:       7.456156332977116
-external wall seconds:          7.96
-internal maximum RSS bytes:     279,986,176
-external maximum RSS bytes:     280,002,560
-external peak footprint bytes:  262,931,200
-swaps:                          0
-runner SHA-256:                 927be865f3ce16e2109dca602ecad365a9b5f1f2ebda7f78c3a3395f9e867755
-cold transcript SHA-256:        f7edb9b0eaf82fdfef039de4a77842c3dc1b2ab5464fcaadb46a977673fd6816
-```
-
-Independent parent verification reran the frozen command and returned
-`RESULT 7 0` in `7.81 s` external wall time, with `276,021,248` bytes maximum
-resident set, `258,933,480` bytes peak memory footprint, and `0` swaps. The
-independent transcript SHA-256 is
-`8c713a2222be35f211c48ca79ef315267e8c0de1eab676582ded2d826413cce4`.
+Fresh cold verification is recorded in the self-consistent receipt and cold
+transcript. No post-run verification appendix is appended here because changing
+this note after the receipt is written would invalidate the note hash carried by
+that receipt.

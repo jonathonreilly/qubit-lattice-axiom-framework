@@ -1,138 +1,176 @@
 {
-  "HEAD": "1baa7161c7576c328c612ebc30f9c4033d1f82d8",
   "audit": "unset",
+  "author_artifact_status_accepted": false,
   "authority": "none",
+  "broad_negative_gate": "FAIL / DO NOT SHIP",
   "constitutional_effect": "none",
-  "elapsed_seconds": 3.1620211249683052,
-  "maximum_RSS_bytes": 181288960,
+  "demoted_artifact_status": "partial-attempt-with-named-untested-routes",
+  "elapsed_seconds": 4.501283833058551,
+  "interpretation_firewall": {
+    "generator_element_is_rate_or_energy": false,
+    "ground_or_dark_ray_is_Record_or_actuality": false,
+    "role_bits_are_physical_M2": false,
+    "schedule_is_time": false
+  },
+  "maximum_RSS_bytes": 247365632,
   "no_go_discipline": {
-    "N1_attempted_or_prior_scoped_families": 5,
+    "N1_markers_valid": true,
     "N1_normalized_families": [
       {
-        "disposition": "exact over parameterized one-M2 rotations; global shift schedule not compiled",
+        "authority_citation": "scripts/physical_carrier_preparation_elementary_synthesis_tournament_cycle603_2026_07_22.py::route_a (current authority-none execution)",
         "family": "structured word-table circuit",
         "marker": "ATTEMPTED",
-        "mechanism": "pair-H/qutrit spectral factorization, reversible predicates, and Gray transpositions",
-        "object": "three 4-M2 carrier words and clean Boolean scratch",
+        "mechanism_invariant": "pair-H/qutrit spectral factorization, reversible predicates, and Gray transpositions",
+        "object_formulation": "three four-role-bit carrier words and clean Boolean scratch",
         "strength": "weaker than full finite-alphabet/global-shift target",
-        "terminal_obligation": "support-two exact coin/contact/link event circuits"
+        "terminal_obligation": "support-two exact coin/contact/link event circuits",
+        "why_not_terminal": "exact over parameterized one-role-bit rotations on the algebraic role code; physical-M2 composition and global shift schedule are not compiled"
       },
       {
-        "disposition": "nearest P(k*pi/4) words were executed and miss every inherited eigen/contact phase; this does not test general Clifford+T words",
+        "authority_citation": "scripts/physical_carrier_preparation_elementary_synthesis_tournament_cycle603_2026_07_22.py::route_a (current authority-none execution)",
         "family": "fixed diagonal T-phase-grid compiler",
         "marker": "ATTEMPTED",
-        "mechanism": "replace inherited analog rotations by finite exact phase words",
-        "object": "Cycle580 H/CNOT/CZ/SWAP alphabet and Clifford-phase extensions",
+        "mechanism_invariant": "replace inherited analog rotations by finite exact phase words",
+        "object_formulation": "Cycle580 H/CNOT/CZ/SWAP alphabet and Clifford-phase extensions",
         "strength": "target-equivalent only for the alphabet residual",
-        "terminal_obligation": "exact beta=-0.3 and g=0.37 amplitudes"
+        "terminal_obligation": "exact beta=-0.3 and g=0.37 amplitudes",
+        "why_not_terminal": "nearest P(k*pi/4) words were executed and miss every inherited eigen/contact phase; this does not test general Clifford+T words"
       },
       {
-        "disposition": "closed exactly in N=1; vacuum and N2 Dicke remain global ground competitors",
+        "authority_citation": "scripts/physical_carrier_preparation_elementary_synthesis_tournament_cycle603_2026_07_22.py::route_b (current authority-none execution)",
         "family": "cubic swap parent Hamiltonian",
         "marker": "ATTEMPTED",
-        "mechanism": "connected-edge equality and spectral gap",
-        "object": "one-excitation graph Laplacian",
+        "mechanism_invariant": "connected-edge equality, SWAP invariance, and spectral gap",
+        "object_formulation": "one-excitation graph Laplacian plus direct sparse N2 parent",
         "strength": "target-equivalent for sector parent only",
-        "terminal_obligation": "unique uniform W inside N=1 with held-size scaling"
+        "terminal_obligation": "unique uniform W inside N=1 with held-size scaling",
+        "why_not_terminal": "closed exactly in supplied N=1; directly computed vacuum and N2 Dicke states remain ground competitors, so genesis is not supplied"
       },
       {
-        "disposition": "common N1 dark ray/gap closed; convergence/rate and sector genesis unproved",
+        "authority_citation": "scripts/physical_carrier_preparation_elementary_synthesis_tournament_cycle603_2026_07_22.py::route_c (current authority-none execution)",
         "family": "local dark-jump cooling",
         "marker": "ATTEMPTED",
-        "mechanism": "drain edge-antisymmetric amplitude into the symmetric ray",
-        "object": "edge jumps |psi+><psi-|",
+        "mechanism_invariant": "drain edge-antisymmetric amplitude into the symmetric ray",
+        "object_formulation": "edge jumps |psi+><psi-| and their positive dark parent",
         "strength": "weaker",
-        "terminal_obligation": "unique W common dark vector and autonomous preparation"
+        "terminal_obligation": "unique W common dark vector and autonomous preparation",
+        "why_not_terminal": "common N1 dark ray/gap and direct N2 competitor are closed; convergence, rate, and sector genesis are unproved"
       },
       {
-        "disposition": "covariant loop orbit exists but winding/one-mark sectors are supplied",
+        "authority_citation": "docs/work_history/repo/review_feedback/PHYSICAL_ROOT_FREE_FULL_N3_CARRIER_GENESIS_TOURNAMENT_CYCLE600_NOTE_2026-07-22.md:172-184 (exact-pinned authority-none prior; family-specific evidence only)",
         "family": "topological winding/mark preparation",
-        "marker": "RULED OUT BY PRIOR CYCLE600 FOR THAT FAMILY",
-        "mechanism": "Gauss conservation and Wilson-line schedule",
-        "object": "marked noncontractible Z2 loops",
+        "marker": "RULED OUT BY PRIOR",
+        "mechanism_invariant": "Gauss conservation and Wilson-line schedule",
+        "object_formulation": "marked noncontractible Z2 loops",
         "strength": "weaker",
-        "terminal_obligation": "one point carrier without supplied winding or mark sector"
-      },
-      {
-        "disposition": "concrete steelman; prevents broad synthesis/genesis no-go",
-        "family": "fault-tolerant approximation and autonomous number-selecting reservoir",
-        "marker": "LIVE_UNTESTED",
-        "mechanism": "precision-bounded synthesis and reservoir spectral selection",
-        "object": "approximate finite words plus local open-system number control",
-        "strength": "unknown/comparable",
-        "terminal_obligation": "replace exact analog angles and select N=1 globally"
+        "terminal_obligation": "one point carrier without supplied winding or mark sector",
+        "why_not_terminal": "the covariant loop orbit exists, but winding and one-mark sectors are supplied and a second remote mark passes the same local check"
       }
     ],
+    "N1_normalized_family_count": 5,
+    "N1_open_unattempted_steelman_family": {
+      "family": "fault-tolerant approximation and autonomous number-selecting reservoir",
+      "mechanism_invariant": "Clifford+T approximation and reservoir spectral selection",
+      "object_formulation": "precision-bounded finite words plus local open-system number control",
+      "status": "OPEN / NOT COUNTED",
+      "terminal_obligation": "replace exact analog angles and select N=1 globally"
+    },
+    "N1_pass": true,
+    "N1_prior_rows_have_authority_citations": true,
+    "N1_qualifying_ATTEMPTED_or_RULED_OUT_count": 5,
+    "N1_required_count": 5,
+    "N2_any_implication_found": false,
+    "N2_collapsed_wall_count": 5,
     "N2_directional_pairs": [
       {
-        "first": "finite accepted alphabet or calibrated analog one-M2 rotations",
-        "first_closes_second": false,
-        "independent_as_current_imports_not_no_go_walls": true,
-        "second": "one simultaneous conflict-free global stream schedule",
-        "second_closes_first": false
+        "close_first_implies_second": false,
+        "close_second_implies_first": false,
+        "evidence_first_to_second": "closing finite declared alphabet or calibrated analog one-role-bit rotations supplies no mechanism for one simultaneous conflict-free global stream schedule",
+        "evidence_second_to_first": "closing one simultaneous conflict-free global stream schedule supplies no mechanism for finite declared alphabet or calibrated analog one-role-bit rotations",
+        "first": "finite declared alphabet or calibrated analog one-role-bit rotations",
+        "independent": true,
+        "second": "one simultaneous conflict-free global stream schedule"
       },
       {
-        "first": "finite accepted alphabet or calibrated analog one-M2 rotations",
-        "first_closes_second": false,
-        "independent_as_current_imports_not_no_go_walls": true,
-        "second": "exact N=1 species-sector genesis",
-        "second_closes_first": false
+        "close_first_implies_second": false,
+        "close_second_implies_first": false,
+        "evidence_first_to_second": "closing finite declared alphabet or calibrated analog one-role-bit rotations supplies no mechanism for exact N=1 species-sector genesis",
+        "evidence_second_to_first": "closing exact N=1 species-sector genesis supplies no mechanism for finite declared alphabet or calibrated analog one-role-bit rotations",
+        "first": "finite declared alphabet or calibrated analog one-role-bit rotations",
+        "independent": true,
+        "second": "exact N=1 species-sector genesis"
       },
       {
-        "first": "finite accepted alphabet or calibrated analog one-M2 rotations",
-        "first_closes_second": false,
-        "independent_as_current_imports_not_no_go_walls": true,
-        "second": "dark semigroup convergence and autonomous rate",
-        "second_closes_first": false
+        "close_first_implies_second": false,
+        "close_second_implies_first": false,
+        "evidence_first_to_second": "closing finite declared alphabet or calibrated analog one-role-bit rotations supplies no mechanism for dark semigroup convergence and autonomous rate",
+        "evidence_second_to_first": "closing dark semigroup convergence and autonomous rate supplies no mechanism for finite declared alphabet or calibrated analog one-role-bit rotations",
+        "first": "finite declared alphabet or calibrated analog one-role-bit rotations",
+        "independent": true,
+        "second": "dark semigroup convergence and autonomous rate"
       },
       {
-        "first": "finite accepted alphabet or calibrated analog one-M2 rotations",
-        "first_closes_second": false,
-        "independent_as_current_imports_not_no_go_walls": true,
-        "second": "clean scratch initialization and renewal",
-        "second_closes_first": false
+        "close_first_implies_second": false,
+        "close_second_implies_first": false,
+        "evidence_first_to_second": "closing finite declared alphabet or calibrated analog one-role-bit rotations supplies no mechanism for clean scratch initialization and renewal",
+        "evidence_second_to_first": "closing clean scratch initialization and renewal supplies no mechanism for finite declared alphabet or calibrated analog one-role-bit rotations",
+        "first": "finite declared alphabet or calibrated analog one-role-bit rotations",
+        "independent": true,
+        "second": "clean scratch initialization and renewal"
       },
       {
+        "close_first_implies_second": false,
+        "close_second_implies_first": false,
+        "evidence_first_to_second": "closing one simultaneous conflict-free global stream schedule supplies no mechanism for exact N=1 species-sector genesis",
+        "evidence_second_to_first": "closing exact N=1 species-sector genesis supplies no mechanism for one simultaneous conflict-free global stream schedule",
         "first": "one simultaneous conflict-free global stream schedule",
-        "first_closes_second": false,
-        "independent_as_current_imports_not_no_go_walls": true,
-        "second": "exact N=1 species-sector genesis",
-        "second_closes_first": false
+        "independent": true,
+        "second": "exact N=1 species-sector genesis"
       },
       {
+        "close_first_implies_second": false,
+        "close_second_implies_first": false,
+        "evidence_first_to_second": "closing one simultaneous conflict-free global stream schedule supplies no mechanism for dark semigroup convergence and autonomous rate",
+        "evidence_second_to_first": "closing dark semigroup convergence and autonomous rate supplies no mechanism for one simultaneous conflict-free global stream schedule",
         "first": "one simultaneous conflict-free global stream schedule",
-        "first_closes_second": false,
-        "independent_as_current_imports_not_no_go_walls": true,
-        "second": "dark semigroup convergence and autonomous rate",
-        "second_closes_first": false
+        "independent": true,
+        "second": "dark semigroup convergence and autonomous rate"
       },
       {
+        "close_first_implies_second": false,
+        "close_second_implies_first": false,
+        "evidence_first_to_second": "closing one simultaneous conflict-free global stream schedule supplies no mechanism for clean scratch initialization and renewal",
+        "evidence_second_to_first": "closing clean scratch initialization and renewal supplies no mechanism for one simultaneous conflict-free global stream schedule",
         "first": "one simultaneous conflict-free global stream schedule",
-        "first_closes_second": false,
-        "independent_as_current_imports_not_no_go_walls": true,
-        "second": "clean scratch initialization and renewal",
-        "second_closes_first": false
+        "independent": true,
+        "second": "clean scratch initialization and renewal"
       },
       {
+        "close_first_implies_second": false,
+        "close_second_implies_first": false,
+        "evidence_first_to_second": "closing exact N=1 species-sector genesis supplies no mechanism for dark semigroup convergence and autonomous rate",
+        "evidence_second_to_first": "closing dark semigroup convergence and autonomous rate supplies no mechanism for exact N=1 species-sector genesis",
         "first": "exact N=1 species-sector genesis",
-        "first_closes_second": false,
-        "independent_as_current_imports_not_no_go_walls": true,
-        "second": "dark semigroup convergence and autonomous rate",
-        "second_closes_first": false
+        "independent": true,
+        "second": "dark semigroup convergence and autonomous rate"
       },
       {
+        "close_first_implies_second": false,
+        "close_second_implies_first": false,
+        "evidence_first_to_second": "closing exact N=1 species-sector genesis supplies no mechanism for clean scratch initialization and renewal",
+        "evidence_second_to_first": "closing clean scratch initialization and renewal supplies no mechanism for exact N=1 species-sector genesis",
         "first": "exact N=1 species-sector genesis",
-        "first_closes_second": false,
-        "independent_as_current_imports_not_no_go_walls": true,
-        "second": "clean scratch initialization and renewal",
-        "second_closes_first": false
+        "independent": true,
+        "second": "clean scratch initialization and renewal"
       },
       {
+        "close_first_implies_second": false,
+        "close_second_implies_first": false,
+        "evidence_first_to_second": "closing dark semigroup convergence and autonomous rate supplies no mechanism for clean scratch initialization and renewal",
+        "evidence_second_to_first": "closing clean scratch initialization and renewal supplies no mechanism for dark semigroup convergence and autonomous rate",
         "first": "dark semigroup convergence and autonomous rate",
-        "first_closes_second": false,
-        "independent_as_current_imports_not_no_go_walls": true,
-        "second": "clean scratch initialization and renewal",
-        "second_closes_first": false
+        "independent": true,
+        "second": "clean scratch initialization and renewal"
       }
     ],
     "N2_pair_count": 10,
@@ -141,61 +179,498 @@
       "analog angles": "explicit inherited beta/contact calibration",
       "clean scratch": "explicit supplied zero-state resource",
       "full space extension": "invalid words use m=0 and word coin identity; scratch unitary is explicit",
+      "hidden_conditions_promoted_to_walls": [],
       "parent/dissipator coupling and clock": "explicit supplied candidate parameters",
       "routing and global stream order": "explicit compile schedule; not time",
-      "uncited_standard_or_obvious_hits": 0
+      "standard-methods phrase": "non-load-bearing prior-art characterization only; it supplies no premise or closure"
     },
+    "N4_all_closure_witnesses_same_scope": true,
     "N4_residual_matching": [
       {
-        "current_residual": "support-two parametric event compiler executed; finite accepted alphabet/global shift remain",
+        "current_claimed_closure": "parameterized support-two role-bit circuit only",
+        "current_residual_same_scope": "physical-M2 composition/intertwiner/leakage remain absent",
         "match": true,
-        "witness": "Cycle600 Route A",
-        "witness_residual": "elementary 12-role synthesis unexecuted"
+        "used_as_closure_witness": false,
+        "witness_lines": "156-158",
+        "witness_path": "docs/work_history/repo/review_feedback/PHYSICAL_ROOT_FREE_FULL_N3_CARRIER_GENESIS_TOURNAMENT_CYCLE600_NOTE_2026-07-22.md",
+        "witness_residual": "no elementary physical-M2 gate/off-code unitary/support radius/gate count"
       },
       {
-        "current_residual": "unique gapped W parent in N=1 constructed",
+        "current_claimed_closure": "static sector parent/gap only; preparation remains open",
+        "current_residual_same_scope": "static N1 W parent and finite-size gap",
         "match": true,
-        "witness": "Cycle600 N6/N7",
-        "witness_residual": "one-excitation parent Hamiltonian untested"
+        "used_as_closure_witness": true,
+        "witness_lines": "162-166,315-317",
+        "witness_path": "docs/work_history/repo/review_feedback/PHYSICAL_ROOT_FREE_FULL_N3_CARRIER_GENESIS_TOURNAMENT_CYCLE600_NOTE_2026-07-22.md",
+        "witness_residual": "no one-excitation parent/gap or W preparation law"
       },
       {
-        "current_residual": "local common-dark jump family constructed; convergence/genesis remain",
+        "current_claimed_closure": "common dark kernel only; semigroup convergence/rate/genesis remain open",
+        "current_residual_same_scope": "common N1 dark kernel and parent gap",
         "match": true,
-        "witness": "Cycle600 N6/N7",
-        "witness_residual": "dissipative W dark state untested"
+        "used_as_closure_witness": true,
+        "witness_lines": "315-317,321-323",
+        "witness_path": "docs/work_history/repo/review_feedback/PHYSICAL_ROOT_FREE_FULL_N3_CARRIER_GENESIS_TOURNAMENT_CYCLE600_NOTE_2026-07-22.md",
+        "witness_residual": "local one-excitation dark-state route unattempted"
+      },
+      {
+        "current_claimed_closure": "none; prior evidence is used only to retire that bounded family",
+        "current_residual_same_scope": "topological one-point preparation without supplied winding/mark",
+        "match": true,
+        "used_as_closure_witness": false,
+        "witness_lines": "172-184",
+        "witness_path": "docs/work_history/repo/review_feedback/PHYSICAL_ROOT_FREE_FULL_N3_CARRIER_GENESIS_TOURNAMENT_CYCLE600_NOTE_2026-07-22.md",
+        "witness_residual": "winding and exactly-one mark are supplied in the topological comparator"
       }
     ],
-    "N5_rhetoric_resolution": [
-      "finite-alphabet nonclosure is only for the executed Cycle580 H/CNOT/CZ/SWAP comparison, not all elementary alphabets",
-      "the stream residual is only the missing simultaneous global conflict-free schedule, not the exact crossed-link tables or Cycle600 abstract map",
-      "W uniqueness is only inside N=1; vacuum and N2 Dicke competitors are explicitly tested",
-      "dark uniqueness means common pure dark vector, not a proved unique Lindblad stationary state or preparation law"
+    "N5_rhetoric_audit": [
+      {
+        "narrow_scoped_phrase": "only the executed nearest P(k*pi/4) comparator fails for the inherited phases; general finite synthesis is open",
+        "resolutions": {
+          "lattice_wide": {
+            "evidence_or_nonclaim": "no general lattice-wide Clifford+T synthesis/no-go is tested or asserted",
+            "tested_in_cycle": false,
+            "untested_resolution_negative_asserted": false
+          },
+          "per_block": {
+            "evidence_or_nonclaim": "the role-circuit uses parameterized rotations beyond Cycle580",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          },
+          "per_element": {
+            "evidence_or_nonclaim": "individual inherited phases are compared to the T grid",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          },
+          "per_mode": {
+            "evidence_or_nonclaim": "coin eigenphases are compared",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          },
+          "per_site": {
+            "evidence_or_nonclaim": "onsite coin/contact phase requirements are enumerated",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          }
+        },
+        "statement": "the finite Cycle580 alphabet is not closed by this construction",
+        "universal_impossibility_claimed": false
+      },
+      {
+        "narrow_scoped_phrase": "the six exact link-table circuits are not promoted to a collision-free global stream in this artifact",
+        "resolutions": {
+          "lattice_wide": {
+            "evidence_or_nonclaim": "no simultaneous global composition is executed and no impossibility is asserted",
+            "tested_in_cycle": false,
+            "untested_resolution_negative_asserted": false
+          },
+          "per_block": {
+            "evidence_or_nonclaim": "bounded line routing is executed",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          },
+          "per_element": {
+            "evidence_or_nonclaim": "each selected basis transposition is executed",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          },
+          "per_mode": {
+            "evidence_or_nonclaim": "all six direction labels are tested",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          },
+          "per_site": {
+            "evidence_or_nonclaim": "each local word pair is exhausted",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          }
+        },
+        "statement": "separate crossed-link tables are not one simultaneous torus update",
+        "universal_impossibility_claimed": false
+      },
+      {
+        "narrow_scoped_phrase": "the declared compiler schedules are not promoted to physical time in this artifact",
+        "resolutions": {
+          "lattice_wide": {
+            "evidence_or_nonclaim": "the missing global stream schedule is not a clock law",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          },
+          "per_block": {
+            "evidence_or_nonclaim": "patch routing order is compile-time data",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          },
+          "per_element": {
+            "evidence_or_nonclaim": "individual gate order is inventoried",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          },
+          "per_mode": {
+            "evidence_or_nonclaim": "no per-mode time claim is made",
+            "tested_in_cycle": false,
+            "untested_resolution_negative_asserted": false
+          },
+          "per_site": {
+            "evidence_or_nonclaim": "onsite schedules have no clock map",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          }
+        },
+        "statement": "a schedule is not time",
+        "universal_impossibility_claimed": false
+      },
+      {
+        "narrow_scoped_phrase": "the declared jump/parent coefficients have no rate, energy, or causal-time calibration here",
+        "resolutions": {
+          "lattice_wide": {
+            "evidence_or_nonclaim": "L3/L6/L7 spectra are not calibrated rates or energies",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          },
+          "per_block": {
+            "evidence_or_nonclaim": "finite blocks use supplied coupling one",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          },
+          "per_element": {
+            "evidence_or_nonclaim": "each edge jump coefficient is dimensionless supplied data",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          },
+          "per_mode": {
+            "evidence_or_nonclaim": "N1/N2 eigenvalues are algebraic parent spectra",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          },
+          "per_site": {
+            "evidence_or_nonclaim": "site adjacency supplies no calibration",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          }
+        },
+        "statement": "a generator element is not a rate or physical energy",
+        "universal_impossibility_claimed": false
+      },
+      {
+        "narrow_scoped_phrase": "Cycle600 role bits are not promoted to physical M2 sites in this artifact",
+        "resolutions": {
+          "lattice_wide": {
+            "evidence_or_nonclaim": "L3/L6/L7 counts remain role counts",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          },
+          "per_block": {
+            "evidence_or_nonclaim": "line patches are declared role layouts",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          },
+          "per_element": {
+            "evidence_or_nonclaim": "every support-one/two gate is labeled a role gate",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          },
+          "per_mode": {
+            "evidence_or_nonclaim": "word/mode labels have no M2 encoder",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          },
+          "per_site": {
+            "evidence_or_nonclaim": "12 role bits per coarse cell are algebraic inventory",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          }
+        },
+        "statement": "a role bit is not a physical M2 site",
+        "universal_impossibility_claimed": false
+      },
+      {
+        "narrow_scoped_phrase": "reported E-G and scratch-return residuals are algebraic-only in this artifact",
+        "resolutions": {
+          "lattice_wide": {
+            "evidence_or_nonclaim": "no physical lattice-wide E or G is composed; no physical residual is asserted",
+            "tested_in_cycle": false,
+            "untested_resolution_negative_asserted": false
+          },
+          "per_block": {
+            "evidence_or_nonclaim": "crossed-link word restrictions are evaluated",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          },
+          "per_element": {
+            "evidence_or_nonclaim": "gate and scratch identities are evaluated",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          },
+          "per_mode": {
+            "evidence_or_nonclaim": "N<=3 exterior fixtures are evaluated",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          },
+          "per_site": {
+            "evidence_or_nonclaim": "onsite coin/contact restrictions are evaluated",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          }
+        },
+        "statement": "algebraic E-G and scratch leakage are not physical compiler residuals",
+        "universal_impossibility_claimed": false
+      },
+      {
+        "narrow_scoped_phrase": "the computed parent/ground/dark objects are not promoted to preparation/branch/occurrence/Record/actuality here",
+        "resolutions": {
+          "lattice_wide": {
+            "evidence_or_nonclaim": "no occurrence or Record law is composed at L3/L6/L7",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          },
+          "per_block": {
+            "evidence_or_nonclaim": "finite torus kernels are evaluated",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          },
+          "per_element": {
+            "evidence_or_nonclaim": "edge kernels are algebraic",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          },
+          "per_mode": {
+            "evidence_or_nonclaim": "N0/N1/N2 sectors are directly separated",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          },
+          "per_site": {
+            "evidence_or_nonclaim": "site graph supplies no record interface",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          }
+        },
+        "statement": "a parent Hamiltonian, ground state, or dark ray is not preparation, branch, occurrence, Record, or actuality",
+        "universal_impossibility_claimed": false
+      },
+      {
+        "narrow_scoped_phrase": "role counts and carrier labels are not promoted to empirical source quantities here",
+        "resolutions": {
+          "lattice_wide": {
+            "evidence_or_nonclaim": "no gravity/source response law is evaluated",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          },
+          "per_block": {
+            "evidence_or_nonclaim": "patch counts carry no stress tensor",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          },
+          "per_element": {
+            "evidence_or_nonclaim": "gate labels have no empirical units",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          },
+          "per_mode": {
+            "evidence_or_nonclaim": "mode labels carry no source calibration",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          },
+          "per_site": {
+            "evidence_or_nonclaim": "per-cell counts are resource inventory",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          }
+        },
+        "statement": "carrier bookkeeping is not empirical charge, energy, stress, source, or gravity",
+        "universal_impossibility_claimed": false
+      },
+      {
+        "narrow_scoped_phrase": "excitation-number conservation does not prepare or select N=1 in this artifact",
+        "resolutions": {
+          "lattice_wide": {
+            "evidence_or_nonclaim": "vacuum and N2 controls defeat a genesis claim",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          },
+          "per_block": {
+            "evidence_or_nonclaim": "finite blocks retain sector",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          },
+          "per_element": {
+            "evidence_or_nonclaim": "each jump conserves excitation number",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          },
+          "per_mode": {
+            "evidence_or_nonclaim": "N0/N1/N2 sectors are invariant and directly compared",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          },
+          "per_site": {
+            "evidence_or_nonclaim": "local terms cannot create from vacuum",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          }
+        },
+        "statement": "conservation is not preparation or genesis",
+        "universal_impossibility_claimed": false
+      },
+      {
+        "narrow_scoped_phrase": "executed proper-cubic frame identities are not promoted to Lorentz covariance here",
+        "resolutions": {
+          "lattice_wide": {
+            "evidence_or_nonclaim": "no boosts or continuum Lorentz limit are evaluated",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          },
+          "per_block": {
+            "evidence_or_nonclaim": "declared blocks check 576 products",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          },
+          "per_element": {
+            "evidence_or_nonclaim": "local role/jump actions are checked under cubic frames",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          },
+          "per_mode": {
+            "evidence_or_nonclaim": "direction modes are permuted only by the cubic group",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          },
+          "per_site": {
+            "evidence_or_nonclaim": "site maps use 24 cubic rotations",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          }
+        },
+        "statement": "proper-cubic covariance is not Lorentz covariance",
+        "universal_impossibility_claimed": false
+      },
+      {
+        "narrow_scoped_phrase": "the exact N<=3 restriction is not promoted to an N4/four-carrier theorem here",
+        "resolutions": {
+          "lattice_wide": {
+            "evidence_or_nonclaim": "N4/four-carrier lattice dynamics is not tested and no negative is asserted",
+            "tested_in_cycle": false,
+            "untested_resolution_negative_asserted": false
+          },
+          "per_block": {
+            "evidence_or_nonclaim": "link blocks are two-word tables",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          },
+          "per_element": {
+            "evidence_or_nonclaim": "single role-gate identities are full-space logical identities",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          },
+          "per_mode": {
+            "evidence_or_nonclaim": "only N0/N1/N2/N3 inherited exterior fixtures are reproduced",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          },
+          "per_site": {
+            "evidence_or_nonclaim": "onsite tables cover declared labels",
+            "tested_in_cycle": true,
+            "untested_resolution_negative_asserted": false
+          }
+        },
+        "statement": "exact N<=3 algebra is not complete N4 interactions",
+        "universal_impossibility_claimed": false
+      }
     ],
     "N6_partial_closure_paths": [
-      "choose and ratify a parameterized one-M2 rotation alphabet with calibration tests, or compile a precision-bounded Clifford+T approximation",
-      "add a bounded second word buffer or a reversible partitioned-QCA shift and count its scratch/layout cost",
-      "construct a local reservoir/penalty whose global ground or stationary sector is exactly N=1 without size-host data",
-      "prove the dark-jump Lindbladian primitive and gap/convergence theorem, then compile it into a physical recurrence"
+      {
+        "path": "scripts/physical_l41_elementary_gate_layout_compiler_cycle580_2026_07_22.py",
+        "status": "existing inherited support-two physical-M2 gate/layout construction for a different L41 instrument",
+        "what_it_would_close": "a reusable template for mapping one bounded gate table into physical M2",
+        "what_remains": "no map from the Cycle603 12-role alphabet or its parameterized angles is supplied"
+      },
+      {
+        "path": "scripts/physical_full_torus_dimer_M2_compiler_tournament_cycle590_2026_07_22.py",
+        "status": "existing conditional 53-M2-role blueprint; physical primitive composition remains false",
+        "what_it_would_close": "a candidate bounded layout and local number/gauge vocabulary",
+        "what_remains": "compose the current role gates and directly evaluate physical E-G/leakage"
+      },
+      {
+        "path": "scripts/physical_root_free_full_N3_carrier_genesis_tournament_cycle600_2026_07_22.py",
+        "status": "exact-pinned algebraic N<=3 exterior representation with supplied sector/W data",
+        "what_it_would_close": "the exact logical target that a physical compiler must intertwine",
+        "what_remains": "physical role placement, primitive update, sector genesis, and W preparation"
+      },
+      {
+        "path": "scripts/physical_carrier_preparation_elementary_synthesis_tournament_cycle603_2026_07_22.py",
+        "status": "current authority-none partial construction",
+        "what_it_would_close": "parametric role-circuit decomposition and static N1 parent/dark-kernel subproblems",
+        "what_remains": "finite calibrated alphabet, global stream, physical-M2 map, reservoir convergence, and renewal"
+      }
     ],
-    "N7_hostile_steelman": "A hostile reviewer should reject both an elementary-synthesis no-go and a genesis no-go. The exact parametric support-two compiler already removes arbitrary multi-controlled tables, so a calibrated RY/RZ/P elementary alphabet or ordinary precision-bounded Clifford+T synthesis could retire the remaining angle import. Likewise the gapped W parent and local dark jumps expose a concrete route in which a number-selecting reservoir or gauge charge fixes N=1. Neither the fault-tolerant approximation nor that reservoir was attempted, and a double-buffer partitioned QCA could compile the global shift at constant overhead.",
-    "N8_cross_cycle_echo": "Cycles560/563 retired decoder/order services by explicit bounded tables, Cycle580 retired an isometry-only gate gap with H/CNOT/CZ/SWAP, and Cycle600 retired the full N<=3 carrier-law gap. Cycle603 again narrows two imports constructively; the history supports another compiler/preparer cycle, not constitutional language.",
+    "N6_primitive_registry_status": "not invoked: no 'no retained primitive' or 'new axiom required' claim is made",
+    "N7_hostile_steelman": {
+      "actionable": true,
+      "authority_status": "OPEN / NO RETAINED AUTHORITY; supported only by Cycle603 authority-none constructions and the exact-pinned Cycle600 open-path statement at lines 315-323",
+      "consequence": "broad elementary-synthesis, genesis, shared-obstruction, minimum-content, and axiom-pressure negatives are premature",
+      "mechanism": "Map each role bit into a lawful physical register, synthesize the explicit support-two schedule with calibrated RY/RZ/P or precision-bounded Clifford+T, use a double-buffer partitioned QCA for the shift, and couple a local number-selecting reservoir or gauge charge to the W parent.",
+      "terminal_obligation": "Construct the physical E and G, prove physical E-G/leakage/covariance with constant overhead, select N=1 from lawful inputs, and prove dark-semigroup convergence with a calibrated rate."
+    },
+    "N7_pass_for_broad_negative": false,
+    "N8_cross_cycle_echo": [
+      {
+        "applicability": "supports trying an in-state bounded carrier program, but does not itself compile the Cycle603 stream",
+        "citation": "docs/work_history/repo/review_feedback/PHYSICAL_GLOBAL_N3_RETURNED_SLOT_COMPILER_CYCLE560_NOTE_2026-07-21.md:94-109",
+        "mechanism": "persistent q plus the current bounded physical pattern replaced retained prior branch state",
+        "prior_wall": "three-cell decoder depended on prior branch/order service",
+        "retired": true
+      },
+      {
+        "applicability": "motivates a partitioned/double-buffer carrier shift; its conflict-free construction remains unattempted here",
+        "citation": "docs/work_history/repo/review_feedback/PHYSICAL_HELD_SPARSE_ORDER_RETIREMENT_CYCLE563_NOTE_2026-07-21.md:100-114",
+        "mechanism": "bounded transported color products and local anticommutation identities",
+        "prior_wall": "runtime lexicographic selected-factor traversal",
+        "retired": true
+      },
+      {
+        "applicability": "could be adapted after a lawful Cycle603 role-to-M2 map and angle alphabet are chosen",
+        "citation": "docs/work_history/repo/review_feedback/PHYSICAL_L41_ELEMENTARY_GATE_LAYOUT_COMPILER_CYCLE580_NOTE_2026-07-22.md:21-28",
+        "mechanism": "explicit support-two physical-M2 gates and nearest-neighbor layout",
+        "prior_wall": "bounded elementary physical gate/layout and full-unitary extension",
+        "retired": true
+      },
+      {
+        "applicability": "same physical-lowering residual persists and prevents shared-obstruction language",
+        "citation": "docs/work_history/repo/review_feedback/PHYSICAL_FULL_TORUS_DIMER_M2_COMPILER_TOURNAMENT_CYCLE590_NOTE_2026-07-22.md:129-141",
+        "mechanism": "conditional 53-M2-role blueprint narrows layout but does not compose primitives",
+        "prior_wall": "full-torus logical CAR packet lacked physical primitive composition/intertwiner/leakage",
+        "retired": false
+      },
+      {
+        "applicability": "preparation, N1 selection, and physical-M2 composition remain open actionable routes",
+        "citation": "docs/work_history/repo/review_feedback/PHYSICAL_ROOT_FREE_FULL_N3_CARRIER_GENESIS_TOURNAMENT_CYCLE600_NOTE_2026-07-22.md:156-166",
+        "mechanism": "Cycle603 supplies a role circuit plus static W parent/dark kernel",
+        "prior_wall": "uniform neutral-W preparation and physical 12-role composition",
+        "retired": "partial"
+      }
+    ],
     "axiom_pressure": false,
+    "axiom_pressure_gate": "FAIL / DO NOT SHIP",
+    "broad_negative_gate": "FAIL / DO NOT SHIP",
+    "demoted_artifact_status": "partial-attempt-with-named-untested-routes",
+    "failure_conditions_hit": [
+      "N7 gives an actionable live physical compiler/reservoir/partitioned-QCA steelman",
+      "the current authority-none construction does not close physical M2, global stream, sector genesis, or convergence"
+    ],
+    "gate_status": "FAIL",
     "minimum_content_claim_shipped": false,
+    "minimum_content_gate": "FAIL / DO NOT SHIP",
     "negative_claim_shipped": false,
-    "pass_for_scoped_dispositions_and_withholding_broad_negative": true,
+    "no_go_discipline_protocol_applied": true,
     "route_evidence": {
       "A": true,
       "B": true,
       "C": true
     },
+    "scoped_constructive_artifact_validity": "PASS if independent numeric, dependency, note, and resource checks pass; this is not the no-go gate status",
     "shared_obstruction": false,
-    "skill_freshness": {
-      "local_skill_sha256": "aeac7b2b7df30c350961f4b36b980a91e9c2ebeca3f35b6c1adcd731071bdab5",
-      "newer_origin_main_version_followed": true,
-      "origin_main_checked": true,
-      "origin_main_skill_sha256": "7d1aea8243ddd972331b935e2e836657e72115da3efe259f828fe862469d68b7",
-      "proof_search_governance_followed": true
-    }
+    "shared_obstruction_gate": "FAIL / DO NOT SHIP",
+    "skill_source": "origin/main:docs/ai_methodology/skills/no-go-discipline/SKILL.md"
   },
   "note_contract": {
     "forbidden_hits": [],
@@ -203,11 +678,12 @@
     "required_phrases": [
       "Authority: none",
       "Audit: unset",
+      "Author artifact status accepted: false",
       "Cycle 603",
       "Route A",
       "Route B",
       "Route C",
-      "12-M2",
+      "12 role bits",
       "parameterized",
       "finite",
       "H/CNOT/CZ/SWAP",
@@ -227,35 +703,48 @@
       "dark",
       "genesis",
       "schedule is not time",
-      "carrier bookkeeping",
+      "A generator element is not a rate",
+      "Physical-M2 primitive composition remains open",
+      "Carrier bookkeeping",
+      "direct N2",
+      "every-edge jump-ray",
       "N1",
       "N8",
-      "no axiom pressure"
+      "no axiom pressure",
+      "Gate status: FAIL",
+      "Broad-negative gate: FAIL / DO NOT SHIP",
+      "partial-attempt-with-named-untested-routes"
     ]
   },
-  "note_sha256": "5151ebfc5f87ee0305070aa9bd2956e82f054b33e64007b51f8fc6cc3a3ea1f7",
-  "optimal_next_campaign": "compile a constant-overhead double-buffer or partitioned-QCA global carrier shift and choose either a calibrated parametric M2 rotation contract or a precision-bounded Clifford+T target; in parallel add and test a local number-selecting reservoir for the W parent/dark family",
+  "note_sha256": "ddc06d6d4abf945794b1c0b7566c9183fa744839d1ba5630c1d9ad8b4559c417",
+  "optimal_next_campaign": "map the 12 role bits and their gates into declared physical-M2 primitives with an exact E/G and leakage audit, then compile a constant-overhead double-buffer or partitioned-QCA global carrier shift; in parallel test a local number-selecting reservoir for the W parent/dark family",
   "pass": true,
+  "physical_M2_scope": {
+    "intertwiner_residual": null,
+    "leakage_evaluated": false,
+    "literal_layout_compiled": false,
+    "primitive_composition": false
+  },
   "pins": {
-    "docs/work_history/repo/review_feedback/PHYSICAL_ROOT_FREE_FULL_N3_CARRIER_GENESIS_TOURNAMENT_CYCLE600_NOTE_2026-07-22.md": "f3d0eb88946c14b94ba9e5f8de436c6af808ad37a7e8250f6ed10e42492848ea",
-    "outputs/physical_root_free_full_N3_carrier_genesis_tournament_cycle600_cold_2026_07_22.txt": "ae85d6e4dc29b240d5eb2374ce22a2836dc0c7b0f85831406462779b1803f183",
-    "outputs/physical_root_free_full_N3_carrier_genesis_tournament_cycle600_receipt_2026_07_22.json": "3bddb02e1297440781fbd960a07e1b4ee021c9eadba8a6a5372dbb9812fb7cbd",
-    "scripts/physical_root_free_full_N3_carrier_genesis_tournament_cycle600_2026_07_22.py": "5b9bb9c1ae8585b7395f1a1a94040016ff8cc73e5cfbb430b16183e7133b64ba"
+    "docs/work_history/repo/review_feedback/PHYSICAL_ROOT_FREE_FULL_N3_CARRIER_GENESIS_TOURNAMENT_CYCLE600_NOTE_2026-07-22.md": "9c8772f365812caedb0c416f7f0681a8f342ff3d08ac412851e7e6141ea7f602",
+    "outputs/physical_root_free_full_N3_carrier_genesis_tournament_cycle600_cold_2026_07_22.txt": "fd82ebe960fa57d25e85328465b782a644ae127220d9abbefe5c64ca1b9eb01f",
+    "outputs/physical_root_free_full_N3_carrier_genesis_tournament_cycle600_receipt_2026_07_22.json": "d09cd7a82070f4311ab84a07127551ccf1e30e5557586e32fcd55fa01fd3dba5",
+    "scripts/physical_root_free_full_N3_carrier_genesis_tournament_cycle600_2026_07_22.py": "904342da79cbc22c9878479f586387414e4a3af0f7f603708ec03d272074c933"
   },
   "route_A_structured_elementary_compiler": {
     "Cycle600_EG_reproduction": {
-      "Cycle600_coin_EG_residual_recomputed": 1.154543706932542e-15,
-      "Cycle600_contact_EG_residual_recomputed": 0.0,
+      "Cycle600_coin_algebraic_intertwining_residual_recomputed": 1.154543706932542e-15,
+      "Cycle600_contact_algebraic_intertwining_residual_recomputed": 0.0,
       "Cycle600_embedding_dimension": [
         1000,
         42
       ],
-      "Cycle600_local_stream_EG_residual_recomputed": 0.0,
-      "compiled_word_coin_EG_residual": 4.0336968129257627e-13,
+      "Cycle600_local_stream_algebraic_intertwining_residual_recomputed": 0.0,
+      "compiled_word_coin_algebraic_intertwining_residual": 4.0336968129257627e-13,
       "compiled_word_valid_restriction_residual": 6.691653345493114e-14
     },
     "contact": {
-      "clean_flag_M2": 3,
+      "clean_flag_role_bits": 3,
       "contact_inverse_phase_residual": 0.0,
       "contact_phase_residual": 0.0,
       "delete_one_pair_phase_max_row_residual": 0.36789306705608243,
@@ -277,7 +766,7 @@
       "routing": {
         "all24_rotated_line_edge_failures": 0,
         "all24_rotated_line_injection_failures": 0,
-        "all_two_M2_instances_after_move_apply_restore_are_NN": true,
+        "all_two_role_bit_instances_after_move_apply_restore_are_declared_line_NN": true,
         "base_gate_count": 477,
         "base_pair_or_range_failures": 0,
         "line_sites": 16,
@@ -366,15 +855,15 @@
         "literal_routed_edge_checks": 1942,
         "literal_routed_edge_failures": 0,
         "maximum_pre_route_pair_distance": 15,
-        "one_M2_gate_count": 315,
+        "one_role_bit_gate_count": 315,
         "routed_two_site_instances_including_SWAPS": 1942,
         "routing_SWAP_count_move_and_restore": 1780,
         "serial_nearest_neighbor_depth": 2257,
-        "two_M2_gate_count": 162
+        "two_role_bit_gate_count": 162
       },
       "schedule_sha256": "508a119d4e9b1f82b853ca2a25c516a0081d807398841e88ef877518594cd3d9",
       "scratch_returns_clean_by_exact_inverse": true,
-      "shared_AND_work_M2": 1,
+      "shared_AND_work_role_bits": 1,
       "valid_10_cubed_rows": 1000
     },
     "covariance_and_sizes": {
@@ -385,58 +874,58 @@
       "size_rows": [
         {
           "Cycle600_abstract_global_stream_map_retained": true,
-          "conditional_clean_scratch_M2_if_one_patch_per_cell": 135,
+          "conditional_clean_scratch_role_bits_if_one_patch_per_cell": 135,
           "crossed_link_base_gate_calls_if_serialized": 547884,
           "crossed_link_direction_table_calls": 486,
           "crossed_link_routing_SWAPS_if_serialized": 1458000,
           "full_global_conflict_free_shift_schedule_compiled": false,
           "length": 3,
-          "maximum_live_M2_with_reused_patch_scratch": 459,
+          "maximum_live_role_bits_with_reused_patch_scratch": 459,
           "onsite_coin_base_gate_calls": 226800,
           "onsite_coin_routing_SWAPS": 659016,
           "onsite_contact_base_gate_calls": 12879,
           "onsite_contact_routing_SWAPS": 48060,
-          "persistent_carrier_M2": 324,
+          "persistent_carrier_role_bits": 324,
           "split": "train"
         },
         {
           "Cycle600_abstract_global_stream_map_retained": true,
-          "conditional_clean_scratch_M2_if_one_patch_per_cell": 1080,
+          "conditional_clean_scratch_role_bits_if_one_patch_per_cell": 1080,
           "crossed_link_base_gate_calls_if_serialized": 4383072,
           "crossed_link_direction_table_calls": 3888,
           "crossed_link_routing_SWAPS_if_serialized": 11664000,
           "full_global_conflict_free_shift_schedule_compiled": false,
           "length": 6,
-          "maximum_live_M2_with_reused_patch_scratch": 3672,
+          "maximum_live_role_bits_with_reused_patch_scratch": 3672,
           "onsite_coin_base_gate_calls": 1814400,
           "onsite_coin_routing_SWAPS": 5272128,
           "onsite_contact_base_gate_calls": 103032,
           "onsite_contact_routing_SWAPS": 384480,
-          "persistent_carrier_M2": 2592,
+          "persistent_carrier_role_bits": 2592,
           "split": "held"
         },
         {
           "Cycle600_abstract_global_stream_map_retained": true,
-          "conditional_clean_scratch_M2_if_one_patch_per_cell": 1715,
+          "conditional_clean_scratch_role_bits_if_one_patch_per_cell": 1715,
           "crossed_link_base_gate_calls_if_serialized": 6960156,
           "crossed_link_direction_table_calls": 6174,
           "crossed_link_routing_SWAPS_if_serialized": 18522000,
           "full_global_conflict_free_shift_schedule_compiled": false,
           "length": 7,
-          "maximum_live_M2_with_reused_patch_scratch": 5831,
+          "maximum_live_role_bits_with_reused_patch_scratch": 5831,
           "onsite_coin_base_gate_calls": 2881200,
           "onsite_coin_routing_SWAPS": 8371944,
           "onsite_contact_base_gate_calls": 163611,
           "onsite_contact_routing_SWAPS": 610540,
-          "persistent_carrier_M2": 4116,
+          "persistent_carrier_role_bits": 4116,
           "split": "held-out-size"
         }
       ]
     },
-    "exact_accepted_finite_alphabet_elementary_closure": false,
-    "exact_support_two_parametric_event_compiler": true,
+    "exact_declared_finite_alphabet_elementary_closure": false,
+    "exact_support_two_parametric_role_event_circuit": true,
     "gate_alphabet": {
-      "T_or_parametric_rotations_previously_accepted_by_Cycle580": false,
+      "T_or_parametric_rotations_in_Cycle580_declared_alphabet": false,
       "analog_angles_are_inherited_calibration_not_derived": true,
       "arbitrary_basis_two_level_gates_retained": false,
       "arbitrary_multi_controlled_phases_retained": false,
@@ -501,31 +990,34 @@
         "CNOT",
         "SWAP"
       ],
-      "maximum_executed_gate_support_M2": 2,
-      "parameterized_one_M2": [
+      "maximum_executed_gate_support_role_bits": 2,
+      "parameterized_one_role_bit": [
         "RY(theta)",
         "RZ(theta)",
         "P(theta)"
       ],
-      "parameterized_one_M2_gate_instances_onsite": 2709
+      "parameterized_one_role_bit_gate_instances_onsite": 2709
     },
-    "inherited_Cycle600_full_N3_compiler": true,
+    "inherited_Cycle600_factorized_N3_algebraic_representation": true,
     "local_gate_identities": {
       "Toffoli_Clifford_T_residual": 7.346882794269506e-16,
       "controlled_contact_phase_residual": 0.0
     },
     "pass_as_scoped_route": true,
     "pass_full_requested_elementary_and_global_layout_target": false,
+    "physical_M2_intertwiner_residual": null,
+    "physical_M2_leakage_evaluated": false,
+    "physical_M2_primitive_composition": false,
     "scratch_and_schedule": {
       "clean_scratch_initialization_and_renewal_supplied": true,
       "global_conflict_free_stream_schedule_compiled": false,
-      "maximum_live_if_scratch_allocated_per_cell": 17,
-      "maximum_reused_clean_scratch_M2_per_active_patch": 5,
+      "maximum_live_role_bits_if_scratch_allocated_per_cell": 17,
+      "maximum_reused_clean_scratch_role_bits_per_active_patch": 5,
       "move_apply_restore_routing_schedule_supplied": true,
-      "persistent_Cycle600_carrier_M2_per_cell": 12,
+      "persistent_Cycle600_carrier_role_bits_per_cell": 12,
       "schedule_is_physical_time": false
     },
-    "status": "exact support-two parametric one-M2-rotation compiler for onsite coin/contact and each crossed-link word transposition; finite Cycle580 alphabet and conflict-free global shift schedule remain open",
+    "status": "exact support-two parametric role-bit circuit for onsite coin/contact and each crossed-link word transposition; physical-M2 composition, finite Cycle580 alphabet, and conflict-free global shift schedule remain open",
     "stream_direction_tables": [
       {
         "C7X_basis_edge_transpositions": 3,
@@ -546,7 +1038,7 @@
         "routing": {
           "all24_rotated_line_edge_failures": 0,
           "all24_rotated_line_injection_failures": 0,
-          "all_two_M2_instances_after_move_apply_restore_are_NN": true,
+          "all_two_role_bit_instances_after_move_apply_restore_are_declared_line_NN": true,
           "base_gate_count": 537,
           "base_pair_or_range_failures": 0,
           "line_sites": 13,
@@ -620,11 +1112,11 @@
           "literal_routed_edge_checks": 1618,
           "literal_routed_edge_failures": 0,
           "maximum_pre_route_pair_distance": 11,
-          "one_M2_gate_count": 339,
+          "one_role_bit_gate_count": 339,
           "routed_two_site_instances_including_SWAPS": 1618,
           "routing_SWAP_count_move_and_restore": 1420,
           "serial_nearest_neighbor_depth": 1957,
-          "two_M2_gate_count": 198
+          "two_role_bit_gate_count": 198
         },
         "schedule_sha256": "8b1afced5ebcffedb601d04362638ab149e4b9149f48d1cea31c58ab661c8398",
         "word_label": 4
@@ -648,7 +1140,7 @@
         "routing": {
           "all24_rotated_line_edge_failures": 0,
           "all24_rotated_line_injection_failures": 0,
-          "all_two_M2_instances_after_move_apply_restore_are_NN": true,
+          "all_two_role_bit_instances_after_move_apply_restore_are_declared_line_NN": true,
           "base_gate_count": 1247,
           "base_pair_or_range_failures": 0,
           "line_sites": 13,
@@ -722,11 +1214,11 @@
           "literal_routed_edge_checks": 3794,
           "literal_routed_edge_failures": 0,
           "maximum_pre_route_pair_distance": 11,
-          "one_M2_gate_count": 785,
+          "one_role_bit_gate_count": 785,
           "routed_two_site_instances_including_SWAPS": 3794,
           "routing_SWAP_count_move_and_restore": 3332,
           "serial_nearest_neighbor_depth": 4579,
-          "two_M2_gate_count": 462
+          "two_role_bit_gate_count": 462
         },
         "schedule_sha256": "e30b0fbf0c28d7772b92fa42e750434c1f152efdd41aa7c1703a850911e0d7b6",
         "word_label": 5
@@ -750,7 +1242,7 @@
         "routing": {
           "all24_rotated_line_edge_failures": 0,
           "all24_rotated_line_injection_failures": 0,
-          "all_two_M2_instances_after_move_apply_restore_are_NN": true,
+          "all_two_role_bit_instances_after_move_apply_restore_are_declared_line_NN": true,
           "base_gate_count": 1247,
           "base_pair_or_range_failures": 0,
           "line_sites": 13,
@@ -824,11 +1316,11 @@
           "literal_routed_edge_checks": 3778,
           "literal_routed_edge_failures": 0,
           "maximum_pre_route_pair_distance": 11,
-          "one_M2_gate_count": 785,
+          "one_role_bit_gate_count": 785,
           "routed_two_site_instances_including_SWAPS": 3778,
           "routing_SWAP_count_move_and_restore": 3316,
           "serial_nearest_neighbor_depth": 4563,
-          "two_M2_gate_count": 462
+          "two_role_bit_gate_count": 462
         },
         "schedule_sha256": "0338dc48f9df7452ff591635609ab73cd021bad8b731d9015351cfb6cd916b7e",
         "word_label": 6
@@ -852,7 +1344,7 @@
         "routing": {
           "all24_rotated_line_edge_failures": 0,
           "all24_rotated_line_injection_failures": 0,
-          "all_two_M2_instances_after_move_apply_restore_are_NN": true,
+          "all_two_role_bit_instances_after_move_apply_restore_are_declared_line_NN": true,
           "base_gate_count": 1949,
           "base_pair_or_range_failures": 0,
           "line_sites": 13,
@@ -926,11 +1418,11 @@
           "literal_routed_edge_checks": 5962,
           "literal_routed_edge_failures": 0,
           "maximum_pre_route_pair_distance": 11,
-          "one_M2_gate_count": 1223,
+          "one_role_bit_gate_count": 1223,
           "routed_two_site_instances_including_SWAPS": 5962,
           "routing_SWAP_count_move_and_restore": 5236,
           "serial_nearest_neighbor_depth": 7185,
-          "two_M2_gate_count": 726
+          "two_role_bit_gate_count": 726
         },
         "schedule_sha256": "17efd7a15548ba10955ee5524d185c22989c840c8bf03b6f4801d4c6a5122dba",
         "word_label": 7
@@ -954,7 +1446,7 @@
         "routing": {
           "all24_rotated_line_edge_failures": 0,
           "all24_rotated_line_injection_failures": 0,
-          "all_two_M2_instances_after_move_apply_restore_are_NN": true,
+          "all_two_role_bit_instances_after_move_apply_restore_are_declared_line_NN": true,
           "base_gate_count": 537,
           "base_pair_or_range_failures": 0,
           "line_sites": 13,
@@ -1028,11 +1520,11 @@
           "literal_routed_edge_checks": 1594,
           "literal_routed_edge_failures": 0,
           "maximum_pre_route_pair_distance": 12,
-          "one_M2_gate_count": 339,
+          "one_role_bit_gate_count": 339,
           "routed_two_site_instances_including_SWAPS": 1594,
           "routing_SWAP_count_move_and_restore": 1396,
           "serial_nearest_neighbor_depth": 1933,
-          "two_M2_gate_count": 198
+          "two_role_bit_gate_count": 198
         },
         "schedule_sha256": "0ac1c1dc65c8ee1d2359d8c5059b6cf42faf701847def3cc8a79437d9e9b7a89",
         "word_label": 8
@@ -1056,7 +1548,7 @@
         "routing": {
           "all24_rotated_line_edge_failures": 0,
           "all24_rotated_line_injection_failures": 0,
-          "all_two_M2_instances_after_move_apply_restore_are_NN": true,
+          "all_two_role_bit_instances_after_move_apply_restore_are_declared_line_NN": true,
           "base_gate_count": 1247,
           "base_pair_or_range_failures": 0,
           "line_sites": 13,
@@ -1130,11 +1622,11 @@
           "literal_routed_edge_checks": 3762,
           "literal_routed_edge_failures": 0,
           "maximum_pre_route_pair_distance": 12,
-          "one_M2_gate_count": 785,
+          "one_role_bit_gate_count": 785,
           "routed_two_site_instances_including_SWAPS": 3762,
           "routing_SWAP_count_move_and_restore": 3300,
           "serial_nearest_neighbor_depth": 4547,
-          "two_M2_gate_count": 462
+          "two_role_bit_gate_count": 462
         },
         "schedule_sha256": "91093113e9306ebd506c110b1afb2315b0326dded0792652dfdb566dfabe82c3",
         "word_label": 9
@@ -1160,7 +1652,7 @@
       "literal_onsite_line_layout": {
         "all24_rotated_line_edge_failures": 0,
         "all24_rotated_line_injection_failures": 0,
-        "all_two_M2_instances_after_move_apply_restore_are_NN": true,
+        "all_two_role_bit_instances_after_move_apply_restore_are_declared_line_NN": true,
         "base_gate_count": 8400,
         "base_pair_or_range_failures": 0,
         "line_sites": 16,
@@ -1249,11 +1741,11 @@
         "literal_routed_edge_checks": 27288,
         "literal_routed_edge_failures": 0,
         "maximum_pre_route_pair_distance": 12,
-        "one_M2_gate_count": 5520,
+        "one_role_bit_gate_count": 5520,
         "routed_two_site_instances_including_SWAPS": 27288,
         "routing_SWAP_count_move_and_restore": 24408,
         "serial_nearest_neighbor_depth": 32808,
-        "two_M2_gate_count": 2880
+        "two_role_bit_gate_count": 2880
       },
       "odd_sector_scalar_residual": 4.8074067159589095e-17,
       "one_species_gate_count": 2800,
@@ -1291,32 +1783,43 @@
     "N2_Dicke_is_global_ground_competitor": true,
     "chemical_potential_or_number_penalty_constructed": false,
     "gap_scaling": "Delta_L=4 sin^2(pi/L), hence Delta_L~4 pi^2/L^2",
-    "local_support_M2": 2,
+    "local_support_role_bits": 2,
     "local_term": "h_xy=I-SWAP_xy; in N=1 this is (|x>-|y>)(<x|-<y|)",
     "pass_as_sector_parent": true,
     "pass_global_genesis": false,
+    "physical_M2_primitive_composition": false,
     "preparation_dynamics_constructed": false,
     "proper_cubic_covariant": true,
     "rows": [
       {
-        "N1_gap": 2.999999999999997,
-        "N1_zero_eigenvalue_multiplicity": 1,
+        "N0_ground_energy_direct": 0.0,
+        "N0_sector_dimension_direct": 1,
+        "N0_zero_eigenvalue_multiplicity_direct": 1,
+        "N1_gap_direct": 2.999999999999997,
+        "N1_gap_formula_residual": 2.6645352591003757e-15,
+        "N1_gap_times_L_squared": 26.99999999999997,
+        "N1_sector_dimension_direct": 27,
+        "N1_zero_eigenvalue_multiplicity_direct": 1,
+        "N2_gap_direct": 2.9999999999999964,
+        "N2_gap_formula_residual": 3.1086244689504383e-15,
+        "N2_lowest_four_eigenvalues_direct": [
+          4.3888232412708505e-16,
+          2.9999999999999964,
+          2.9999999999999996,
+          3.0000000000000138
+        ],
+        "N2_sector_dimension_direct": 351,
+        "N2_sparse_parent_nonzero_entries": 4401,
+        "N2_zero_eigenvalue_multiplicity_direct": 1,
         "all24_edge_failures": 0,
         "all576_group_failures_on_42_sites": 0,
+        "analytic_all_number_sector_statement": "one fully symmetric Dicke zero vector in each N follows from SWAP invariance; only N0/N1/N2 are directly diagonalized here",
+        "analytic_full_Hilbert_symmetric_ground_dimension": 28,
         "analytic_gap_4sin2_pi_over_L": 2.9999999999999996,
         "delete_one_edge_N1_gap": 2.6277186767309852,
         "delete_one_edge_W_residual": 5.4672143489065705e-16,
         "delete_one_edge_operator_Frobenius_residual": 2.0,
-        "fixed_number_ground_dimensions_N0_N1_N2_NV": [
-          1,
-          1,
-          1,
-          1
-        ],
         "frame_products": 576,
-        "full_Hilbert_common_swap_ground_dimension": 28,
-        "gap_formula_residual": 2.6645352591003757e-15,
-        "gap_times_L_squared": 26.99999999999997,
         "length": 3,
         "local_edge_terms": 81,
         "proper_cubic_frames": 24,
@@ -1324,32 +1827,41 @@
         "split": "train",
         "translation_edge_failures": 0,
         "translations_tested": 27,
-        "uniform_N2_Dicke_edge_antisymmetric_residual": 0,
-        "uniform_N2_Dicke_parent_energy": 0,
+        "uniform_N2_Dicke_parent_energy_direct": 1.175556781958397e-15,
+        "uniform_N2_Dicke_parent_residual_direct": 1.216900790631408e-15,
         "uniform_W_norm_residual": 0.0,
         "uniform_W_parent_residual": 6.280369834735101e-16,
-        "vacuum_energy": 0,
         "volume": 27
       },
       {
-        "N1_gap": 0.9999999999999943,
-        "N1_zero_eigenvalue_multiplicity": 1,
+        "N0_ground_energy_direct": 0.0,
+        "N0_sector_dimension_direct": 1,
+        "N0_zero_eigenvalue_multiplicity_direct": 1,
+        "N1_gap_direct": 0.9999999999999943,
+        "N1_gap_formula_residual": 5.440092820663267e-15,
+        "N1_gap_times_L_squared": 35.999999999999794,
+        "N1_sector_dimension_direct": 216,
+        "N1_zero_eigenvalue_multiplicity_direct": 1,
+        "N2_gap_direct": 0.9999999999999968,
+        "N2_gap_formula_residual": 2.9976021664879227e-15,
+        "N2_lowest_four_eigenvalues_direct": [
+          -2.1788126858268705e-15,
+          0.9999999999999968,
+          0.9999999999999978,
+          1.0000000000000004
+        ],
+        "N2_sector_dimension_direct": 23220,
+        "N2_sparse_parent_nonzero_entries": 300564,
+        "N2_zero_eigenvalue_multiplicity_direct": 1,
         "all24_edge_failures": 0,
         "all576_group_failures_on_42_sites": 0,
+        "analytic_all_number_sector_statement": "one fully symmetric Dicke zero vector in each N follows from SWAP invariance; only N0/N1/N2 are directly diagonalized here",
+        "analytic_full_Hilbert_symmetric_ground_dimension": 217,
         "analytic_gap_4sin2_pi_over_L": 0.9999999999999998,
         "delete_one_edge_N1_gap": 0.9844071983830566,
         "delete_one_edge_W_residual": 0.0,
         "delete_one_edge_operator_Frobenius_residual": 2.0,
-        "fixed_number_ground_dimensions_N0_N1_N2_NV": [
-          1,
-          1,
-          1,
-          1
-        ],
         "frame_products": 576,
-        "full_Hilbert_common_swap_ground_dimension": 217,
-        "gap_formula_residual": 5.440092820663267e-15,
-        "gap_times_L_squared": 35.999999999999794,
         "length": 6,
         "local_edge_terms": 648,
         "proper_cubic_frames": 24,
@@ -1357,32 +1869,41 @@
         "split": "held",
         "translation_edge_failures": 0,
         "translations_tested": 216,
-        "uniform_N2_Dicke_edge_antisymmetric_residual": 0,
-        "uniform_N2_Dicke_parent_energy": 0,
+        "uniform_N2_Dicke_parent_energy_direct": -8.7299060523956e-17,
+        "uniform_N2_Dicke_parent_residual_direct": 6.066505582541061e-16,
         "uniform_W_norm_residual": 6.661338147750939e-16,
         "uniform_W_parent_residual": 0.0,
-        "vacuum_energy": 0,
         "volume": 216
       },
       {
-        "N1_gap": 0.7530203962825273,
-        "N1_zero_eigenvalue_multiplicity": 1,
+        "N0_ground_energy_direct": 0.0,
+        "N0_sector_dimension_direct": 1,
+        "N0_zero_eigenvalue_multiplicity_direct": 1,
+        "N1_gap_direct": 0.7530203962825273,
+        "N1_gap_formula_residual": 5.662137425588298e-15,
+        "N1_gap_times_L_squared": 36.897999417843835,
+        "N1_sector_dimension_direct": 343,
+        "N1_zero_eigenvalue_multiplicity_direct": 1,
+        "N2_gap_direct": 0.7530203962825321,
+        "N2_gap_formula_residual": 7.771561172376096e-16,
+        "N2_lowest_four_eigenvalues_direct": [
+          -7.77156117237978e-16,
+          0.7530203962825321,
+          0.7530203962825366,
+          0.753020396282539
+        ],
+        "N2_sector_dimension_direct": 58653,
+        "N2_sparse_parent_nonzero_entries": 760431,
+        "N2_zero_eigenvalue_multiplicity_direct": 1,
         "all24_edge_failures": 0,
         "all576_group_failures_on_42_sites": 0,
+        "analytic_all_number_sector_statement": "one fully symmetric Dicke zero vector in each N follows from SWAP invariance; only N0/N1/N2 are directly diagonalized here",
+        "analytic_full_Hilbert_symmetric_ground_dimension": 344,
         "analytic_gap_4sin2_pi_over_L": 0.7530203962825329,
         "delete_one_edge_N1_gap": 0.7458212216071513,
         "delete_one_edge_W_residual": 1.442222014787673e-16,
         "delete_one_edge_operator_Frobenius_residual": 2.0,
-        "fixed_number_ground_dimensions_N0_N1_N2_NV": [
-          1,
-          1,
-          1,
-          1
-        ],
         "frame_products": 576,
-        "full_Hilbert_common_swap_ground_dimension": 344,
-        "gap_formula_residual": 5.662137425588298e-15,
-        "gap_times_L_squared": 36.897999417843835,
         "length": 7,
         "local_edge_terms": 1029,
         "proper_cubic_frames": 24,
@@ -1390,15 +1911,14 @@
         "split": "held-out-size",
         "translation_edge_failures": 0,
         "translations_tested": 343,
-        "uniform_N2_Dicke_edge_antisymmetric_residual": 0,
-        "uniform_N2_Dicke_parent_energy": 0,
+        "uniform_N2_Dicke_parent_energy_direct": -1.1235234032371346e-15,
+        "uniform_N2_Dicke_parent_residual_direct": 1.1868928708921387e-15,
         "uniform_W_norm_residual": 0.0,
         "uniform_W_parent_residual": 1.415262216750919e-16,
-        "vacuum_energy": 0,
         "volume": 343
       }
     ],
-    "status": "exact cubic ferromagnetic-swap parent: W is unique and gapped only within supplied N=1; vacuum and every symmetric Dicke sector are also zero-energy",
+    "status": "exact cubic ferromagnetic-swap parent: W is unique and gapped only within supplied N=1; vacuum and the full N2 Dicke sector control are directly computed, while all-number Dicke competitors are an explicit SWAP-invariance theorem",
     "translation_invariant": true,
     "unique_global_genesis": false,
     "vacuum_is_global_ground_competitor": true
@@ -1411,99 +1931,437 @@
     "excitation_number_conserved": true,
     "finite_scheduled_Kraus_compiler_executed": false,
     "jump": "J_xy=|psi+><psi-| on each unoriented cubic edge; orientation reversal changes only its global sign",
-    "jump_support_M2": 2,
+    "jump_support_role_bits": 2,
     "pass_as_dark_sector_candidate": true,
     "pass_unique_genesis_or_preparation": false,
+    "physical_M2_primitive_composition": false,
     "prepares_or_enforces_N1_from_vacuum": false,
     "remote_N2_competitor_excluded": false,
     "rows": [
       {
         "all24_jump_ray_covariance_failures": 0,
-        "all576_group_failures": 0,
+        "all24_jump_ray_tests_every_edge": 1944,
+        "all576_jump_ray_group_failures": 0,
+        "all576_jump_ray_group_tests_every_edge": 46656,
+        "analytic_all_number_common_dark_dimension": 28,
+        "analytic_all_number_statement": "one fully symmetric Dicke dark vector in each N follows from the local J kernel; only N0/N1/N2 are directly evaluated here",
         "analytic_dark_gap_2sin2_pi_over_L": 1.4999999999999998,
-        "common_dark_N1_dimension": 1,
-        "common_dark_dimension_across_all_number_sectors": 28,
-        "common_dark_dimensions_N0_N1_N2_NV": [
-          1,
-          1,
-          1,
-          1
+        "common_dark_N0_dimension_direct": 1,
+        "common_dark_N1_dimension_direct": 1,
+        "common_dark_N2_dimension_direct": 1,
+        "common_dark_N2_lowest_four_eigenvalues_direct": [
+          2.1944116206354252e-16,
+          1.4999999999999982,
+          1.4999999999999998,
+          1.5000000000000069
         ],
-        "dark_gap_formula_residual": 1.3322676295501878e-15,
-        "dark_parent_gap": 1.4999999999999984,
+        "common_dark_N2_sector_dimension_direct": 351,
+        "dark_N1_gap_formula_residual": 1.3322676295501878e-15,
+        "dark_N2_gap_formula_residual": 1.5543122344752192e-15,
+        "dark_parent_N1_gap_direct": 1.4999999999999984,
+        "dark_parent_N2_gap_direct": 1.4999999999999982,
         "delete_six_incident_jumps_common_dark_dimension": 2,
+        "edge_reversal_J_to_minus_J_residual": 0.0,
+        "frame_products": 576,
         "jump_instances": 81,
         "length": 3,
+        "maximum_executed_jump_ray_residual": 0.0,
+        "proper_cubic_frames": 24,
         "split": "train",
-        "translation_failures": 0,
-        "uniform_N2_Dicke_common_dark": true,
-        "uniform_W_jump_residual": 3.1401849173675503e-16,
-        "vacuum_common_dark": true
+        "translation_jump_ray_failures": 0,
+        "translation_jump_ray_tests": 2187,
+        "uniform_N2_Dicke_jump_parent_energy_direct": 5.877783909791985e-16,
+        "uniform_N2_Dicke_jump_parent_residual_direct": 6.08450395315704e-16,
+        "uniform_W_jump_residual": 3.1401849173675503e-16
       },
       {
         "all24_jump_ray_covariance_failures": 0,
-        "all576_group_failures": 0,
+        "all24_jump_ray_tests_every_edge": 15552,
+        "all576_jump_ray_group_failures": 0,
+        "all576_jump_ray_group_tests_every_edge": 373248,
+        "analytic_all_number_common_dark_dimension": 217,
+        "analytic_all_number_statement": "one fully symmetric Dicke dark vector in each N follows from the local J kernel; only N0/N1/N2 are directly evaluated here",
         "analytic_dark_gap_2sin2_pi_over_L": 0.4999999999999999,
-        "common_dark_N1_dimension": 1,
-        "common_dark_dimension_across_all_number_sectors": 217,
-        "common_dark_dimensions_N0_N1_N2_NV": [
-          1,
-          1,
-          1,
-          1
+        "common_dark_N0_dimension_direct": 1,
+        "common_dark_N1_dimension_direct": 1,
+        "common_dark_N2_dimension_direct": 1,
+        "common_dark_N2_lowest_four_eigenvalues_direct": [
+          -1.0894063429134352e-15,
+          0.4999999999999984,
+          0.4999999999999989,
+          0.5000000000000002
         ],
-        "dark_gap_formula_residual": 2.7200464103316335e-15,
-        "dark_parent_gap": 0.49999999999999717,
+        "common_dark_N2_sector_dimension_direct": 23220,
+        "dark_N1_gap_formula_residual": 2.7200464103316335e-15,
+        "dark_N2_gap_formula_residual": 1.4988010832439613e-15,
+        "dark_parent_N1_gap_direct": 0.49999999999999717,
+        "dark_parent_N2_gap_direct": 0.4999999999999984,
         "delete_six_incident_jumps_common_dark_dimension": 2,
+        "edge_reversal_J_to_minus_J_residual": 0.0,
+        "frame_products": 576,
         "jump_instances": 648,
         "length": 6,
+        "maximum_executed_jump_ray_residual": 0.0,
+        "proper_cubic_frames": 24,
         "split": "held",
-        "translation_failures": 0,
-        "uniform_N2_Dicke_common_dark": true,
-        "uniform_W_jump_residual": 0.0,
-        "vacuum_common_dark": true
+        "translation_jump_ray_failures": 0,
+        "translation_jump_ray_tests": 139968,
+        "uniform_N2_Dicke_jump_parent_energy_direct": -4.3649530261978e-17,
+        "uniform_N2_Dicke_jump_parent_residual_direct": 3.0332527912705303e-16,
+        "uniform_W_jump_residual": 0.0
       },
       {
         "all24_jump_ray_covariance_failures": 0,
-        "all576_group_failures": 0,
+        "all24_jump_ray_tests_every_edge": 24696,
+        "all576_jump_ray_group_failures": 0,
+        "all576_jump_ray_group_tests_every_edge": 592704,
+        "analytic_all_number_common_dark_dimension": 344,
+        "analytic_all_number_statement": "one fully symmetric Dicke dark vector in each N follows from the local J kernel; only N0/N1/N2 are directly evaluated here",
         "analytic_dark_gap_2sin2_pi_over_L": 0.37651019814126646,
-        "common_dark_N1_dimension": 1,
-        "common_dark_dimension_across_all_number_sectors": 344,
-        "common_dark_dimensions_N0_N1_N2_NV": [
-          1,
-          1,
-          1,
-          1
+        "common_dark_N0_dimension_direct": 1,
+        "common_dark_N1_dimension_direct": 1,
+        "common_dark_N2_dimension_direct": 1,
+        "common_dark_N2_lowest_four_eigenvalues_direct": [
+          -3.88578058618989e-16,
+          0.3765101981412661,
+          0.3765101981412683,
+          0.3765101981412695
         ],
-        "dark_gap_formula_residual": 2.831068712794149e-15,
-        "dark_parent_gap": 0.37651019814126363,
+        "common_dark_N2_sector_dimension_direct": 58653,
+        "dark_N1_gap_formula_residual": 2.831068712794149e-15,
+        "dark_N2_gap_formula_residual": 3.885780586188048e-16,
+        "dark_parent_N1_gap_direct": 0.37651019814126363,
+        "dark_parent_N2_gap_direct": 0.3765101981412661,
         "delete_six_incident_jumps_common_dark_dimension": 2,
+        "edge_reversal_J_to_minus_J_residual": 0.0,
+        "frame_products": 576,
         "jump_instances": 1029,
         "length": 7,
+        "maximum_executed_jump_ray_residual": 0.0,
+        "proper_cubic_frames": 24,
         "split": "held-out-size",
-        "translation_failures": 0,
-        "uniform_N2_Dicke_common_dark": true,
-        "uniform_W_jump_residual": 7.076311083754595e-17,
-        "vacuum_common_dark": true
+        "translation_jump_ray_failures": 0,
+        "translation_jump_ray_tests": 352947,
+        "uniform_N2_Dicke_jump_parent_energy_direct": -5.617617016185673e-16,
+        "uniform_N2_Dicke_jump_parent_residual_direct": 5.934464354460693e-16,
+        "uniform_W_jump_residual": 7.076311083754595e-17
       }
     ],
     "static_parent_common_kernel_certified": true,
-    "status": "local excitation-conserving jump family has W as the unique common dark vector within N=1; semigroup convergence and sector genesis are not certified",
+    "status": "local excitation-conserving jump family has W as the unique common dark vector within directly evaluated N=1 and has a directly evaluated N2 Dicke competitor; every-edge all24/all576 jump-ray covariance is executed, while semigroup convergence and sector genesis are not certified",
     "vacuum_genesis": false
   },
   "route_disposition": {
-    "A": "scoped pass: exact parametric event compiler; finite Cycle580 alphabet, scratch renewal, and one simultaneous global stream schedule remain open",
-    "B": "pass as sector parent: W unique/gapped within N=1; vacuum and N2 Dicke prevent global genesis",
-    "C": "pass as dark-kernel candidate: local W common-dark ray; convergence/rate and sector genesis unproved"
+    "A": "scoped pass: exact parametric role-event circuit; physical-M2 composition, finite Cycle580 alphabet, scratch renewal, and one simultaneous global stream schedule remain open",
+    "B": "pass as sector parent: direct N0/N1/N2 spectra show W unique/gapped only within N=1 and vacuum/N2 Dicke prevent global genesis",
+    "C": "pass as dark-kernel candidate: direct N0/N1/N2 kernel plus every-edge jump-ray all24/all576 execution; convergence/rate and sector genesis unproved"
   },
-  "runner_sha256": "2935a840aab56d1b7525365537d2aa450028552418d3f290b22b761f709c29b7",
+  "runner_sha256": "e64032e369e08e03ad2a742a2bde6914d8adc6ed1fd64f15f4e301c1c8dea739",
   "shared_obstruction_or_axiom_pressure": false,
   "shore": {
-    "accepted_cycle600": "a300290fb2361c4b0a2eef7da3ab27a70b9abc69",
-    "accepted_full_N3_compiler": true
+    "Cycle600_pass": true,
+    "Cycle600_quartet_expected_sha256": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_ROOT_FREE_FULL_N3_CARRIER_GENESIS_TOURNAMENT_CYCLE600_NOTE_2026-07-22.md": "9c8772f365812caedb0c416f7f0681a8f342ff3d08ac412851e7e6141ea7f602",
+      "outputs/physical_root_free_full_N3_carrier_genesis_tournament_cycle600_cold_2026_07_22.txt": "fd82ebe960fa57d25e85328465b782a644ae127220d9abbefe5c64ca1b9eb01f",
+      "outputs/physical_root_free_full_N3_carrier_genesis_tournament_cycle600_receipt_2026_07_22.json": "d09cd7a82070f4311ab84a07127551ccf1e30e5557586e32fcd55fa01fd3dba5",
+      "scripts/physical_root_free_full_N3_carrier_genesis_tournament_cycle600_2026_07_22.py": "904342da79cbc22c9878479f586387414e4a3af0f7f603708ec03d272074c933"
+    },
+    "Cycle600_quartet_observed_sha256": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_ROOT_FREE_FULL_N3_CARRIER_GENESIS_TOURNAMENT_CYCLE600_NOTE_2026-07-22.md": "9c8772f365812caedb0c416f7f0681a8f342ff3d08ac412851e7e6141ea7f602",
+      "outputs/physical_root_free_full_N3_carrier_genesis_tournament_cycle600_cold_2026_07_22.txt": "fd82ebe960fa57d25e85328465b782a644ae127220d9abbefe5c64ca1b9eb01f",
+      "outputs/physical_root_free_full_N3_carrier_genesis_tournament_cycle600_receipt_2026_07_22.json": "d09cd7a82070f4311ab84a07127551ccf1e30e5557586e32fcd55fa01fd3dba5",
+      "scripts/physical_root_free_full_N3_carrier_genesis_tournament_cycle600_2026_07_22.py": "904342da79cbc22c9878479f586387414e4a3af0f7f603708ec03d272074c933"
+    },
+    "Cycle600_tests_passed": 8,
+    "exactly_one_sector_supplied": true,
+    "factorized_N3_algebraic_representation": true,
+    "factorized_role_bits_per_cell": 12,
+    "import_audit": {
+      "actual_imported_modules": {
+        "ROUTE1_DIRECT_CAR_COMPILER_CYCLE231_2026_07_17": "scripts/ROUTE1_DIRECT_CAR_COMPILER_CYCLE231_2026_07_17.py",
+        "active_cubic_source_response_cycle211_2026_07_16": "scripts/active_cubic_source_response_cycle211_2026_07_16.py",
+        "archive_carrier_source_ledger_cycle227_2026_07_17": "scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py",
+        "autonomous_cubic_field_emission_cycle214_2026_07_16": "scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py",
+        "common_matter_field_coin_family_cycle219_2026_07_16": "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py",
+        "exact_3d_higher_form_bosonization_cycle235_2026_07_17": "scripts/exact_3d_higher_form_bosonization_cycle235_2026_07_17.py",
+        "finite_coin_scalar_wave_dilation_cycle215_2026_07_16": "scripts/finite_coin_scalar_wave_dilation_cycle215_2026_07_16.py",
+        "fock_modular_boundary_current_cycle229_2026_07_17": "scripts/fock_modular_boundary_current_cycle229_2026_07_17.py",
+        "local_conservative_commit_resource_gravity_cycle9_2026_07_14": "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py",
+        "local_generator_source_tournament_cycle228_2026_07_17": "scripts/local_generator_source_tournament_cycle228_2026_07_17.py",
+        "local_rough_puncture_odd_sector_cycle247_2026_07_17": "scripts/local_rough_puncture_odd_sector_cycle247_2026_07_17.py",
+        "physical_adjacent_star_recurrence_tournament_cycle548_2026_07_21": "scripts/physical_adjacent_star_recurrence_tournament_cycle548_2026_07_21.py",
+        "physical_adjacent_two_star_compressed_gram_cycle518_2026_07_21": "scripts/physical_adjacent_two_star_compressed_gram_cycle518_2026_07_21.py",
+        "physical_adjacent_two_star_order_character_preflight_cycle517_2026_07_21": "scripts/physical_adjacent_two_star_order_character_preflight_cycle517_2026_07_21.py",
+        "physical_adjacent_two_star_seam_tag_preservation_cycle519_2026_07_21": "scripts/physical_adjacent_two_star_seam_tag_preservation_cycle519_2026_07_21.py",
+        "physical_boundary_aware_multistar_recurrence_tournament_cycle551_2026_07_21": "scripts/physical_boundary_aware_multistar_recurrence_tournament_cycle551_2026_07_21.py",
+        "physical_correlated_double_shadow_stream_cycle529_2026_07_21": "scripts/physical_correlated_double_shadow_stream_cycle529_2026_07_21.py",
+        "physical_cycle269_collision_safe_auxiliary_ports_2026_07_17": "scripts/physical_cycle269_collision_safe_auxiliary_ports_2026_07_17.py",
+        "physical_cycle269_common_m64_fixed_seam_cycle311_2026_07_18": "scripts/physical_cycle269_common_m64_fixed_seam_cycle311_2026_07_18.py",
+        "physical_cycle269_five_cell_adjacent_star_cycle327_2026_07_18": "scripts/physical_cycle269_five_cell_adjacent_star_cycle327_2026_07_18.py",
+        "physical_cycle269_four_cell_star_cycle324_2026_07_18": "scripts/physical_cycle269_four_cell_star_cycle324_2026_07_18.py",
+        "physical_cycle269_full_two_particle_sector_interface_cycle305_2026_07_17": "scripts/physical_cycle269_full_two_particle_sector_interface_cycle305_2026_07_17.py",
+        "physical_cycle269_higher_number_fixed_seam_cycle308_2026_07_17": "scripts/physical_cycle269_higher_number_fixed_seam_cycle308_2026_07_17.py",
+        "physical_cycle269_overlap_aware_two_cell_cycle315_2026_07_18": "scripts/physical_cycle269_overlap_aware_two_cell_cycle315_2026_07_18.py",
+        "physical_cycle269_reference_relative_localized_pair_lift_2026_07_17": "scripts/physical_cycle269_reference_relative_localized_pair_lift_2026_07_17.py",
+        "physical_cycle269_seven_cell_maximal_star_cycle330_2026_07_18": "scripts/physical_cycle269_seven_cell_maximal_star_cycle330_2026_07_18.py",
+        "physical_cycle269_staggered_reservoir_catchup_2026_07_17": "scripts/physical_cycle269_staggered_reservoir_catchup_2026_07_17.py",
+        "physical_cycle269_three_cell_multiedge_cycle319_2026_07_18": "scripts/physical_cycle269_three_cell_multiedge_cycle319_2026_07_18.py",
+        "physical_cycle330_all_order_isometry_bridge_cycle515_2026_07_20": "scripts/physical_cycle330_all_order_isometry_bridge_cycle515_2026_07_20.py",
+        "physical_cycle515_koszul_frame_bridge_cycle516_2026_07_20": "scripts/physical_cycle515_koszul_frame_bridge_cycle516_2026_07_20.py",
+        "physical_global_N3_returned_slot_compiler_cycle560_2026_07_21": "scripts/physical_global_N3_returned_slot_compiler_cycle560_2026_07_21.py",
+        "physical_global_selected_network_encoder_cycle555_2026_07_21": "scripts/physical_global_selected_network_encoder_cycle555_2026_07_21.py",
+        "physical_local_N3_six_ray_decoder_tournament_cycle557_2026_07_21": "scripts/physical_local_N3_six_ray_decoder_tournament_cycle557_2026_07_21.py",
+        "physical_local_cutoff_gauge_enforcement_tournament_cycle593_2026_07_22": "scripts/physical_local_cutoff_gauge_enforcement_tournament_cycle593_2026_07_22.py",
+        "physical_native_shadow_nearest_neighbor_router_cycle527_2026_07_21": "scripts/physical_native_shadow_nearest_neighbor_router_cycle527_2026_07_21.py",
+        "physical_opposite_carrier_reearned_compiler_cycle522_2026_07_21": "scripts/physical_opposite_carrier_reearned_compiler_cycle522_2026_07_21.py",
+        "physical_opposite_carrier_shared_cell_recurrence_cycle525_2026_07_21": "scripts/physical_opposite_carrier_shared_cell_recurrence_cycle525_2026_07_21.py",
+        "physical_protected_shadow_coin_gate_compiler_cycle523_2026_07_21": "scripts/physical_protected_shadow_coin_gate_compiler_cycle523_2026_07_21.py",
+        "physical_recurrent_shared_volume_compiler_cycle545_2026_07_21": "scripts/physical_recurrent_shared_volume_compiler_cycle545_2026_07_21.py",
+        "physical_root_free_cutoff_gauge_preparation_tournament_cycle598_2026_07_22": "scripts/physical_root_free_cutoff_gauge_preparation_tournament_cycle598_2026_07_22.py",
+        "physical_root_free_full_N3_carrier_genesis_tournament_cycle600_2026_07_22": "scripts/physical_root_free_full_N3_carrier_genesis_tournament_cycle600_2026_07_22.py",
+        "physical_rough_fswap_pauli_rotation_gate_compiler_cycle540_2026_07_21": "scripts/physical_rough_fswap_pauli_rotation_gate_compiler_cycle540_2026_07_21.py",
+        "physical_rough_gauge_subsystem_quotient_cycle532_2026_07_21": "scripts/physical_rough_gauge_subsystem_quotient_cycle532_2026_07_21.py",
+        "physical_selected_seam_code_space_isometry_compiler_cycle533_2026_07_21": "scripts/physical_selected_seam_code_space_isometry_compiler_cycle533_2026_07_21.py",
+        "physical_selected_seam_event_current_adapter_cycle526_2026_07_21": "scripts/physical_selected_seam_event_current_adapter_cycle526_2026_07_21.py",
+        "physical_shadow_normal_form_sync_cycle530_2026_07_21": "scripts/physical_shadow_normal_form_sync_cycle530_2026_07_21.py",
+        "physical_shared_seam_code_space_isometry_compiler_cycle539_2026_07_21": "scripts/physical_shared_seam_code_space_isometry_compiler_cycle539_2026_07_21.py",
+        "physical_three_star_shared_parity_overlap_cycle520_2026_07_21": "scripts/physical_three_star_shared_parity_overlap_cycle520_2026_07_21.py",
+        "proper_cubic_bound_object_equivalence_cycle210_2026_07_16": "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
+        "retarded_cubic_mass_field_cycle213_2026_07_16": "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py",
+        "spatial_car_contact_seam_form_factor_cycle230_2026_07_17": "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py",
+        "virtual_exchange_green_kernel_cycle216_2026_07_16": "scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py",
+        "wilson_subsystem_sector_free_compiler_cycle269_2026_07_17": "scripts/wilson_subsystem_sector_free_compiler_cycle269_2026_07_17.py"
+      },
+      "expected_transitive_sha256": {
+        "docs/work_history/repo/review_feedback/EXACT_3D_HIGHER_FORM_BOSONIZATION_CYCLE235_NOTE_2026-07-17.md": "295edee5608d3141fc3e3212bc51753265d953dadd68a8b44a66ed1e0e16e0d2",
+        "docs/work_history/repo/review_feedback/LOCAL_ROUGH_PUNCTURE_ODD_SECTOR_CYCLE247_NOTE_2026-07-17.md": "8cc36f383c1d175a80ad26f17f98287fc8e94ef2f69b36851c4c420bcec8dad9",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ADJACENT_STAR_RECURRENCE_TOURNAMENT_CYCLE548_NOTE_2026-07-21.md": "db16fe47dae51428447f42b88418fd0181a8908fee16a95f73b4bbf60fa23c04",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ADJACENT_TWO_STAR_COMPRESSED_GRAM_CYCLE518_NOTE_2026-07-21.md": "7278244447e4074e66966e418710e2ad401befc4b8cbfb9d0a30088c0f837107",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ADJACENT_TWO_STAR_ORDER_CHARACTER_PREFLIGHT_CYCLE517_NOTE_2026-07-21.md": "51c3b92448f7779fe838c51265b279d82f48e3b19f6c0464b95f18112bf07a74",
+        "docs/work_history/repo/review_feedback/PHYSICAL_BOUNDARY_AWARE_MULTISTAR_RECURRENCE_TOURNAMENT_CYCLE551_NOTE_2026-07-21.md": "15441dc81ff96527e67e5346493fc3d5ebbc0734d3d1982a77b900b53c290b40",
+        "docs/work_history/repo/review_feedback/PHYSICAL_CONTACT_DIMER_INFINITE_INTERNAL_CONTENT_TOURNAMENT_CYCLE583_NOTE_2026-07-22.md": "6942341fa2fc8978a25acdd758677b04a5a1d0c9e13b8e5627bc9bf504814cf3",
+        "docs/work_history/repo/review_feedback/PHYSICAL_CORRELATED_DOUBLE_SHADOW_STREAM_CYCLE529_NOTE_2026-07-21.md": "8aa3eed5801349767f254651a7ba0b0d9d823448875c27f28259f4dd1a0474e2",
+        "docs/work_history/repo/review_feedback/PHYSICAL_COVARIANT_PROTECTED_LINK_SHADOW_CYCLE528_NOTE_2026-07-21.md": "f27f78a05910934ffd97bca780d9384b93a1aff12481d7e08611951f03acc432",
+        "docs/work_history/repo/review_feedback/PHYSICAL_CYCLE269_SEVEN_CELL_MAXIMAL_STAR_CYCLE330_NOTE_2026-07-18.md": "4edb939ca520bc5b148814e8c274e93e16c87e8f639d925db130fdfe16fd3b64",
+        "docs/work_history/repo/review_feedback/PHYSICAL_CYCLE330_ALL_ORDER_ISOMETRY_BRIDGE_CYCLE515_NOTE_2026-07-20.md": "99696f55a6e1f8f29958d878bdbd5bb0f889c59be8707e93206d1648ba94850a",
+        "docs/work_history/repo/review_feedback/PHYSICAL_CYCLE515_KOSZUL_FRAME_BRIDGE_CYCLE516_NOTE_2026-07-21.md": "5f32e766fad91a960031bf68dac4ba3b2498b02b5fc4fce9ac1c795e67c23597",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ENLARGED_LINK_CONTACT_WORK_TOURNAMENT_CYCLE569_NOTE_2026-07-22.md": "ca90108c802f1c39d5a3db95f78397ecc0da43a9c54d180f32d3108f7cb1eb19",
+        "docs/work_history/repo/review_feedback/PHYSICAL_GLOBAL_N3_RETURNED_SLOT_COMPILER_CYCLE560_NOTE_2026-07-21.md": "b6c5ee42cd26918f99ecc96d78440deef2a29ae6c05f576813b3f269997c50de",
+        "docs/work_history/repo/review_feedback/PHYSICAL_GLOBAL_SELECTED_NETWORK_ENCODER_CYCLE555_NOTE_2026-07-21.md": "34461d051b1bddd0319b439aecfe433f7309f8e4065375e52b2e91dac8c2867b",
+        "docs/work_history/repo/review_feedback/PHYSICAL_HELD_SPARSE_ORDER_RETIREMENT_CYCLE563_NOTE_2026-07-21.md": "3d636226e3fff5bfb68c2c38566537fe419ce03de5d60415742ffcd2307b34dd",
+        "docs/work_history/repo/review_feedback/PHYSICAL_INTRINSIC_CONTACT_BOUND_MOVING_TRANSITION_TOURNAMENT_CYCLE578_NOTE_2026-07-22.md": "41d3ded32f36a0f9ab0b407de14524db7d621e285fa5aeff6f76d480dd8e18d5",
+        "docs/work_history/repo/review_feedback/PHYSICAL_LOCAL_CUTOFF_GAUGE_ENFORCEMENT_TOURNAMENT_CYCLE593_NOTE_2026-07-22.md": "3040c484d8d3c4f30a1e8f4b1eb5bc75568246ad04424aaff4bd94ba63b55c44",
+        "docs/work_history/repo/review_feedback/PHYSICAL_LOCAL_N3_SIX_RAY_DECODER_TOURNAMENT_CYCLE557_NOTE_2026-07-21.md": "e46acc27ee4bddc8c89f0d322173cd76f20fee100d7f54134e53421f16155bda",
+        "docs/work_history/repo/review_feedback/PHYSICAL_OPPOSITE_CARRIER_SHARED_CELL_RECURRENCE_CYCLE525_NOTE_2026-07-21.md": "43a39dd4a33d06eaf11369eb84d436761832974a4f759aec44e9ab6b919e44a8",
+        "docs/work_history/repo/review_feedback/PHYSICAL_RECURRENT_SHARED_VOLUME_COMPILER_CYCLE545_NOTE_2026-07-21.md": "e1fd77a21cd1f2aac8b7c0a5afb66a43275fb1c202f576f958c126d235f5a4bb",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ROOT_FREE_CUTOFF_GAUGE_PREPARATION_TOURNAMENT_CYCLE598_NOTE_2026-07-22.md": "065192627b0c56b59d75a0ea837f26179b76579aa3e0783bc020092f173963ac",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md": "5f668f6cc04a5eece23f913d5869f57553df583c23d6dbb5cdac6756be41bfc3",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ROUTE_C_Q6_SYMBOLIC_AXIS_DIAGNOSTIC_CYCLE514_NOTE_2026-07-20.md": "e4365d2a9d7028941d882b13c1f00ba1b7dfcf52e45109e9a293f702a13eb278",
+        "docs/work_history/repo/review_feedback/PHYSICAL_SELECTED_SEAM_CODE_SPACE_ISOMETRY_COMPILER_CYCLE533_NOTE_2026-07-21.md": "e15712305bd770cff61133f184d02da1714c50453bb5f3c492f1cc3051e119c2",
+        "docs/work_history/repo/review_feedback/PHYSICAL_SHARED_SEAM_CODE_SPACE_ISOMETRY_COMPILER_CYCLE539_NOTE_2026-07-21.md": "7d95064985bd9b2d6312ec49fa738f86fd7bba289316539a06f71931a958fcc1",
+        "docs/work_history/repo/review_feedback/PHYSICAL_THREE_STAR_SHARED_PARITY_OVERLAP_CYCLE520_NOTE_2026-07-21.md": "8a1aa2c66cbc38320c829679e7b982936834510a58b38f89621f22278fd67cd8",
+        "outputs/physical_contact_dimer_infinite_internal_content_tournament_cycle583_cold_2026_07_22.txt": "22af96509364601a99c3ed2d6b148643ede02369f70e5be92629d1f0e5d3ddce",
+        "outputs/physical_contact_dimer_infinite_internal_content_tournament_cycle583_receipt_2026_07_22.json": "0f4e2df9e25cdc7137c42fb91666c5eaae10efc652d5af84f421e38c5ad97aab",
+        "outputs/physical_cycle330_all_order_isometry_bridge_cycle515_attempt2_2026_07_20.log": "636d067ddd9284e59f24999666c5110fce425e60a7baa48d714b2a023abab1b1",
+        "outputs/physical_cycle330_all_order_isometry_bridge_cycle515_dry_2026_07_20.log": "7ef8b552f8dd08770691c1281b354970641bb75191c5a15e26b1e54078204b56",
+        "outputs/physical_cycle515_koszul_frame_bridge_cycle516_attempt4_2026_07_21.log": "710673f10229675789ab84abe24d15238f0b9b1674608b0254a77c02860ebcce",
+        "outputs/physical_cycle515_koszul_frame_bridge_cycle516_attempt4_receipt_2026_07_21.json": "bfcf92c44e8b651f3866fa017a77ab7462988427d80178da6cbbddbe5d703cbb",
+        "outputs/physical_enlarged_link_contact_work_tournament_cycle569_cold_2026_07_22.txt": "834155bbb74e1ce42b8c0d90b746787bba4373d4f0ea092d4afc74391881beb6",
+        "outputs/physical_enlarged_link_contact_work_tournament_cycle569_receipt_2026_07_22.json": "ddba1d3cfb3167416b12a4a327dd136c4b61878f07ef1448629f2a440208b195",
+        "outputs/physical_global_N3_returned_slot_compiler_cycle560_receipt_2026_07_21.json": "e27c9eba803413455fc6b5bf3aca7a38def9d4bb68694af37a44725343509598",
+        "outputs/physical_held_sparse_order_retirement_cycle563_2026_07_21.json": "e9a2b0c8013d1a75dad9ae5ff76c7219b30a2b8e2c29556d269aa2c8373a6c8f",
+        "outputs/physical_held_sparse_order_retirement_cycle563_receipt_2026_07_21.json": "ac9fcc1da45f33152679cfd2992abf1d037fae8647f1ab4d2d0526e6ac7000ae",
+        "outputs/physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_cold_2026_07_22.txt": "6068efb7f80a5dc4b15253b6816ebfabcd13fcb929c9e4b1d56195eb0d1b922d",
+        "outputs/physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_receipt_2026_07_22.json": "b84f1cfaa03661a0a2498fd409e077aeeb4f6ad423909807d20be7c846c571f7",
+        "outputs/physical_local_cutoff_gauge_enforcement_tournament_cycle593_cold_2026_07_22.txt": "5a2509151706307ffe158d37b78f467692ac8976636f6437a3069bfd158e2908",
+        "outputs/physical_local_cutoff_gauge_enforcement_tournament_cycle593_receipt_2026_07_22.json": "0b6d82faba587b50146bd1001dc72ba09ca9248fd74d5b02ddc6e5c33b486475",
+        "outputs/physical_root_free_cutoff_gauge_preparation_tournament_cycle598_cold_2026_07_22.txt": "3a8d6990d8dfaabefe0f5cec08af83d14613507ca0712b993f39c49025bb8797",
+        "outputs/physical_root_free_cutoff_gauge_preparation_tournament_cycle598_receipt_2026_07_22.json": "c8a27819fb1907d20aa9c73a7d66a2b8c0cc37b532da4686ef32a80996d909c1",
+        "outputs/physical_route_c_q6_symbolic_axis_diagnostic_cycle514_attempt1_2026_07_20.log": "48c37e6ec11eb9cb7278e94f825ac5ab1f5569dc6f3c9b1fd247b1fe6c698847",
+        "outputs/physical_route_c_q6_symbolic_axis_diagnostic_cycle514_attempt1_receipt_2026_07_20.json": "5def6d3fb1e796341bb76cb51f6eb61a90274ef950a11a8007b7a3585f55c97d",
+        "outputs/physical_route_c_q6_symbolic_axis_diagnostic_cycle514_dry_2026_07_20.log": "e09d664911f681a3a85f6cf180b744c4c63fb84362fe8232af6b64400903a83f",
+        "scripts/ROUTE1_DIRECT_CAR_COMPILER_CYCLE231_2026_07_17.py": "5adb6dc52f6352a5367a2b56da94854e511f9dd174688029f1841e5004a91c32",
+        "scripts/active_cubic_source_response_cycle211_2026_07_16.py": "d5392152d322ea8f3850d0345d6caa426db22ae7f7694775b4bd6388704c18a6",
+        "scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py": "a5e78e40cad0c43ee62ae887df7d84a0b895ab217ba4f3d521353e5d0b6bf95a",
+        "scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py": "464e5928b7c1e46c23e4010363b6bd8ff3d0e2379c6e5ecb46891010ef47a5a4",
+        "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py": "ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a",
+        "scripts/exact_3d_higher_form_bosonization_cycle235_2026_07_17.py": "dd955ce629cde5e225b625be89f5f71045d688083a032b7bf104efa9b3f1bb34",
+        "scripts/finite_coin_scalar_wave_dilation_cycle215_2026_07_16.py": "3a977106389428d2281ea7e0e32b65fe57f6ce33d783742b80f264f78f4f2c17",
+        "scripts/fock_modular_boundary_current_cycle229_2026_07_17.py": "fbf434a94c8dae57ffb6e68776642e4342a91f0d39f071ee1388fcb89ff846d7",
+        "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py": "4ab857755b606d7ba7432179ed66de723ac31d3f66507cafa1168ab60d4965d6",
+        "scripts/local_generator_source_tournament_cycle228_2026_07_17.py": "97fdf54189d7da93099aeab4a9b1dd8501c7262d55493b9fa95bf1c2f5c97a9d",
+        "scripts/local_rough_puncture_odd_sector_cycle247_2026_07_17.py": "10f5cf027c76f5a0a3b1d3dbaa6cb0e6d418932c84553f0cca303d3f21742519",
+        "scripts/physical_adjacent_star_recurrence_tournament_cycle548_2026_07_21.py": "5830dacebf79720301192b0dcb39121e1ecf03137f94d6e97c7da4034d9c9ca0",
+        "scripts/physical_adjacent_two_star_compressed_gram_cycle518_2026_07_21.py": "8f505d2de6476bdbc20f87a901e8be9fe46deda5b568c98d750977069a352e53",
+        "scripts/physical_adjacent_two_star_order_character_preflight_cycle517_2026_07_21.py": "ad8b0c71840cbfa56aae3ae9da44eceec1cad7d84be06bab32604eb5f6fbb4a3",
+        "scripts/physical_adjacent_two_star_seam_tag_preservation_cycle519_2026_07_21.py": "d2e0648558fb3031a200600b0643de28a5c8e695c35165a6905a6a99ff45255d",
+        "scripts/physical_autonomous_localized_refocused_matter_transition_tournament_cycle575_2026_07_22.py": "0c845ecd02b86ce4d99aa8406a206e9b01628f02f1592cf37c41a084eb1e0a4b",
+        "scripts/physical_boundary_aware_multistar_recurrence_tournament_cycle551_2026_07_21.py": "3d68e536565c491b1b54547d82ed6faab73437c600229ff9060f471ffad84997",
+        "scripts/physical_contact_dimer_infinite_internal_content_tournament_cycle583_2026_07_22.py": "21957cc883550ee81fc48d5b55ad4a0384cbac8697557691c805d84c7c8dbaaf",
+        "scripts/physical_correlated_double_shadow_stream_cycle529_2026_07_21.py": "df118a01c2a95fcccd7986dc01afb5625d0faa8bb95beb2ecb344a9f5fbacda7",
+        "scripts/physical_covariant_protected_link_shadow_cycle528_2026_07_21.py": "5eb5160688465283126b990873398c2b8914e39a49f10919128b0b5d77496da5",
+        "scripts/physical_cycle269_collision_safe_auxiliary_ports_2026_07_17.py": "03786effa03eae50930ca0bfa14c881276df8bd6bdba83b6d7a893cffe1fe747",
+        "scripts/physical_cycle269_common_m64_fixed_seam_cycle311_2026_07_18.py": "4495bf39e1e2661866501e377b8ec1aefff656e261e428fa5b6738f73b49699c",
+        "scripts/physical_cycle269_five_cell_adjacent_star_cycle327_2026_07_18.py": "0688e7db8b8490e525c0e1f1108474903e2ff40d278e185b6add54f8086f8110",
+        "scripts/physical_cycle269_four_cell_star_cycle324_2026_07_18.py": "f2e07bf91e7a5b06c8037314798cb84cd6d747bc92fa6292c1759915fb91354d",
+        "scripts/physical_cycle269_full_two_particle_sector_interface_cycle305_2026_07_17.py": "3e970b2c84ebe891d36c132cd99d716ceb20b596cea89729f06ed8950c7a847c",
+        "scripts/physical_cycle269_higher_number_fixed_seam_cycle308_2026_07_17.py": "cb6de428c5054ea9415a59bab75d36c693c65d8070df30a6a0bbc2a926f3f4e4",
+        "scripts/physical_cycle269_overlap_aware_two_cell_cycle315_2026_07_18.py": "52c18f96a1f8db9b79e4d0fba5ff76905170e6a8dc8c3e818fdf69984a1778c3",
+        "scripts/physical_cycle269_reference_relative_localized_pair_lift_2026_07_17.py": "95820817eaf883040aae96531f1afd4fe7a90569a43215d226cf44dce9a1cc09",
+        "scripts/physical_cycle269_seven_cell_maximal_star_cycle330_2026_07_18.py": "4428d1f73ff315987edabd7f838a1c58414d0a982f0cd28656ddef3bd230d19f",
+        "scripts/physical_cycle269_staggered_reservoir_catchup_2026_07_17.py": "5310ee8e19a55694f7a11ccf013c696b16cdb37961c5ade41ed316b27238bab1",
+        "scripts/physical_cycle269_three_cell_multiedge_cycle319_2026_07_18.py": "faa05d97542efca7684f4acc6f9b7dfb8e32a02f3f9d16adeae16449f5b702fb",
+        "scripts/physical_cycle330_all_order_isometry_bridge_cycle515_2026_07_20.py": "93afe1600cb3fb8b7844729521b005ce62f957a128a6ffb9493a03a1d9932e96",
+        "scripts/physical_cycle515_koszul_frame_bridge_cycle516_2026_07_20.py": "3c4318a84c661893932c8d41a90db36445f80cefd092a6a3fffb56cbf8abfa9c",
+        "scripts/physical_enlarged_link_contact_work_tournament_cycle569_2026_07_22.py": "877dc75a840ff348f15022784dc60190fa884fad216db3e1904fc089c9d3c091",
+        "scripts/physical_global_N3_returned_slot_compiler_cycle560_2026_07_21.py": "f6d641e4735b26f9463ea623ee8ed6e28acc995fdfc88300709dcfac100c13ab",
+        "scripts/physical_global_selected_network_encoder_cycle555_2026_07_21.py": "af51110e8c4cb5245efd2bd99ef7f2b12fb02586c5e5225082ce4a13fba27e92",
+        "scripts/physical_held_sparse_order_retirement_cycle563_2026_07_21.py": "55e51cafffa70284a6e8e1f0510ca0d2f890989ccbcf5bce64435df4c8e812a6",
+        "scripts/physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_2026_07_22.py": "2a3c77c26003bb0f8b55fe2da0fd36b0ac98a14a21a083303fe175e5f802e99f",
+        "scripts/physical_joint_clock_accumulator_contraction_bridge_cycle570_2026_07_22.py": "37e9d0f336d773bd4a1957a6531f80dc35b9673a4ef0f99137e7fb33558bf849",
+        "scripts/physical_local_N3_six_ray_decoder_tournament_cycle557_2026_07_21.py": "8b153c0ec633d489a839221788115ae85c6bf80c4d4952339795aa7bd80150d8",
+        "scripts/physical_local_cutoff_gauge_enforcement_tournament_cycle593_2026_07_22.py": "9207101f5784bac0ff2097926a36e773f2a860102e57aee173581961771a4ae5",
+        "scripts/physical_matter_transition_clock_equivalence_tournament_cycle573_2026_07_22.py": "52c743889146189c2b574fa8012e7281340722303cb5b61fc53579e5fe23ebf4",
+        "scripts/physical_native_shadow_nearest_neighbor_router_cycle527_2026_07_21.py": "2ca2021fa76b889128b587a6a0d67986e236319ea8fb7ccd1dfaf31982c55fa0",
+        "scripts/physical_opposite_carrier_reearned_compiler_cycle522_2026_07_21.py": "d6a7700d7575dfba02d4b4d2438e54d37a02c6ca7f71673c8a871b474f6e088b",
+        "scripts/physical_opposite_carrier_shared_cell_recurrence_cycle525_2026_07_21.py": "379c67315de8d235f8d5287b281b6291d0a10731d030338d8bde0676a4c0b785",
+        "scripts/physical_protected_shadow_coin_gate_compiler_cycle523_2026_07_21.py": "d9dd02bbb4dfacebf0f75f6b8c56881ff56653843cb7ed75baa381d5aa605b9d",
+        "scripts/physical_recurrent_shared_volume_compiler_cycle545_2026_07_21.py": "b117c595f8c06f79931be98d573168e53d9f0fb9d5024e4ee623ba76d7488067",
+        "scripts/physical_root_free_cutoff_gauge_preparation_tournament_cycle598_2026_07_22.py": "5702ac74768c83bd97d0860ad827a5a66809c8bfbfafb2dd010982bcb917be51",
+        "scripts/physical_rough_fswap_pauli_rotation_gate_compiler_cycle540_2026_07_21.py": "53b003bbda96eee1d85e48aa5cd0e8c530bea35c7b6eefef5a637127f66af13a",
+        "scripts/physical_rough_gauge_subsystem_quotient_cycle532_2026_07_21.py": "a768d4250e55399c03e6084614a772953e6bcdf1570b9e7c50ac8d18544cfe6a",
+        "scripts/physical_route_c_q6_symbolic_axis_diagnostic_cycle514_2026_07_20.py": "74d9231d0c78ad6c85c028cea69cc7ac29c7b1b0c04259513d7223c5e8ae19fe",
+        "scripts/physical_selected_seam_code_space_isometry_compiler_cycle533_2026_07_21.py": "72fe24e03b38812ef9f6dc610bc445b5ea6046a30683c2b734e9c0396e84facd",
+        "scripts/physical_selected_seam_event_current_adapter_cycle526_2026_07_21.py": "7c3d4a35664eaf5c7737c86464ca069e15ce29c40f61778081af8139970c37cd",
+        "scripts/physical_shadow_normal_form_sync_cycle530_2026_07_21.py": "f5f90a331803a43d293fa8e8e3640e29886bed81935827763773d84f61ce9c99",
+        "scripts/physical_shared_seam_code_space_isometry_compiler_cycle539_2026_07_21.py": "aa126a6363f9fc8c08d28a47b840c1b6e0a7c0b47bbe296087340b804a0087d1",
+        "scripts/physical_three_star_shared_parity_overlap_cycle520_2026_07_21.py": "22b00fd39fd07a04afb8776f4b97c31486ce4d2034617bd16aa170c263108b2b",
+        "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py": "c410b754d4e984f6ee5ccbc7c5a52e776c50c91c4daa12d798044f104cc7435b",
+        "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py": "472e28c78901368629c8d9d6f614bb8fb3ea003639ac61d480d06941cdf6cb86",
+        "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py": "b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae",
+        "scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py": "9ef0fff433bbf1c96c9b13c5ce79530e01fe705f08c6caf6b60316e20359e011",
+        "scripts/wilson_subsystem_sector_free_compiler_cycle269_2026_07_17.py": "c7b8673eb1a0dced08131820caa1fb2400fc8d1f73cfe2cddf5f8a28f9045d35"
+      },
+      "observed_transitive_sha256": {
+        "docs/work_history/repo/review_feedback/EXACT_3D_HIGHER_FORM_BOSONIZATION_CYCLE235_NOTE_2026-07-17.md": "295edee5608d3141fc3e3212bc51753265d953dadd68a8b44a66ed1e0e16e0d2",
+        "docs/work_history/repo/review_feedback/LOCAL_ROUGH_PUNCTURE_ODD_SECTOR_CYCLE247_NOTE_2026-07-17.md": "8cc36f383c1d175a80ad26f17f98287fc8e94ef2f69b36851c4c420bcec8dad9",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ADJACENT_STAR_RECURRENCE_TOURNAMENT_CYCLE548_NOTE_2026-07-21.md": "db16fe47dae51428447f42b88418fd0181a8908fee16a95f73b4bbf60fa23c04",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ADJACENT_TWO_STAR_COMPRESSED_GRAM_CYCLE518_NOTE_2026-07-21.md": "7278244447e4074e66966e418710e2ad401befc4b8cbfb9d0a30088c0f837107",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ADJACENT_TWO_STAR_ORDER_CHARACTER_PREFLIGHT_CYCLE517_NOTE_2026-07-21.md": "51c3b92448f7779fe838c51265b279d82f48e3b19f6c0464b95f18112bf07a74",
+        "docs/work_history/repo/review_feedback/PHYSICAL_BOUNDARY_AWARE_MULTISTAR_RECURRENCE_TOURNAMENT_CYCLE551_NOTE_2026-07-21.md": "15441dc81ff96527e67e5346493fc3d5ebbc0734d3d1982a77b900b53c290b40",
+        "docs/work_history/repo/review_feedback/PHYSICAL_CONTACT_DIMER_INFINITE_INTERNAL_CONTENT_TOURNAMENT_CYCLE583_NOTE_2026-07-22.md": "6942341fa2fc8978a25acdd758677b04a5a1d0c9e13b8e5627bc9bf504814cf3",
+        "docs/work_history/repo/review_feedback/PHYSICAL_CORRELATED_DOUBLE_SHADOW_STREAM_CYCLE529_NOTE_2026-07-21.md": "8aa3eed5801349767f254651a7ba0b0d9d823448875c27f28259f4dd1a0474e2",
+        "docs/work_history/repo/review_feedback/PHYSICAL_COVARIANT_PROTECTED_LINK_SHADOW_CYCLE528_NOTE_2026-07-21.md": "f27f78a05910934ffd97bca780d9384b93a1aff12481d7e08611951f03acc432",
+        "docs/work_history/repo/review_feedback/PHYSICAL_CYCLE269_SEVEN_CELL_MAXIMAL_STAR_CYCLE330_NOTE_2026-07-18.md": "4edb939ca520bc5b148814e8c274e93e16c87e8f639d925db130fdfe16fd3b64",
+        "docs/work_history/repo/review_feedback/PHYSICAL_CYCLE330_ALL_ORDER_ISOMETRY_BRIDGE_CYCLE515_NOTE_2026-07-20.md": "99696f55a6e1f8f29958d878bdbd5bb0f889c59be8707e93206d1648ba94850a",
+        "docs/work_history/repo/review_feedback/PHYSICAL_CYCLE515_KOSZUL_FRAME_BRIDGE_CYCLE516_NOTE_2026-07-21.md": "5f32e766fad91a960031bf68dac4ba3b2498b02b5fc4fce9ac1c795e67c23597",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ENLARGED_LINK_CONTACT_WORK_TOURNAMENT_CYCLE569_NOTE_2026-07-22.md": "ca90108c802f1c39d5a3db95f78397ecc0da43a9c54d180f32d3108f7cb1eb19",
+        "docs/work_history/repo/review_feedback/PHYSICAL_GLOBAL_N3_RETURNED_SLOT_COMPILER_CYCLE560_NOTE_2026-07-21.md": "b6c5ee42cd26918f99ecc96d78440deef2a29ae6c05f576813b3f269997c50de",
+        "docs/work_history/repo/review_feedback/PHYSICAL_GLOBAL_SELECTED_NETWORK_ENCODER_CYCLE555_NOTE_2026-07-21.md": "34461d051b1bddd0319b439aecfe433f7309f8e4065375e52b2e91dac8c2867b",
+        "docs/work_history/repo/review_feedback/PHYSICAL_HELD_SPARSE_ORDER_RETIREMENT_CYCLE563_NOTE_2026-07-21.md": "3d636226e3fff5bfb68c2c38566537fe419ce03de5d60415742ffcd2307b34dd",
+        "docs/work_history/repo/review_feedback/PHYSICAL_INTRINSIC_CONTACT_BOUND_MOVING_TRANSITION_TOURNAMENT_CYCLE578_NOTE_2026-07-22.md": "41d3ded32f36a0f9ab0b407de14524db7d621e285fa5aeff6f76d480dd8e18d5",
+        "docs/work_history/repo/review_feedback/PHYSICAL_LOCAL_CUTOFF_GAUGE_ENFORCEMENT_TOURNAMENT_CYCLE593_NOTE_2026-07-22.md": "3040c484d8d3c4f30a1e8f4b1eb5bc75568246ad04424aaff4bd94ba63b55c44",
+        "docs/work_history/repo/review_feedback/PHYSICAL_LOCAL_N3_SIX_RAY_DECODER_TOURNAMENT_CYCLE557_NOTE_2026-07-21.md": "e46acc27ee4bddc8c89f0d322173cd76f20fee100d7f54134e53421f16155bda",
+        "docs/work_history/repo/review_feedback/PHYSICAL_OPPOSITE_CARRIER_SHARED_CELL_RECURRENCE_CYCLE525_NOTE_2026-07-21.md": "43a39dd4a33d06eaf11369eb84d436761832974a4f759aec44e9ab6b919e44a8",
+        "docs/work_history/repo/review_feedback/PHYSICAL_RECURRENT_SHARED_VOLUME_COMPILER_CYCLE545_NOTE_2026-07-21.md": "e1fd77a21cd1f2aac8b7c0a5afb66a43275fb1c202f576f958c126d235f5a4bb",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ROOT_FREE_CUTOFF_GAUGE_PREPARATION_TOURNAMENT_CYCLE598_NOTE_2026-07-22.md": "065192627b0c56b59d75a0ea837f26179b76579aa3e0783bc020092f173963ac",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md": "5f668f6cc04a5eece23f913d5869f57553df583c23d6dbb5cdac6756be41bfc3",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ROUTE_C_Q6_SYMBOLIC_AXIS_DIAGNOSTIC_CYCLE514_NOTE_2026-07-20.md": "e4365d2a9d7028941d882b13c1f00ba1b7dfcf52e45109e9a293f702a13eb278",
+        "docs/work_history/repo/review_feedback/PHYSICAL_SELECTED_SEAM_CODE_SPACE_ISOMETRY_COMPILER_CYCLE533_NOTE_2026-07-21.md": "e15712305bd770cff61133f184d02da1714c50453bb5f3c492f1cc3051e119c2",
+        "docs/work_history/repo/review_feedback/PHYSICAL_SHARED_SEAM_CODE_SPACE_ISOMETRY_COMPILER_CYCLE539_NOTE_2026-07-21.md": "7d95064985bd9b2d6312ec49fa738f86fd7bba289316539a06f71931a958fcc1",
+        "docs/work_history/repo/review_feedback/PHYSICAL_THREE_STAR_SHARED_PARITY_OVERLAP_CYCLE520_NOTE_2026-07-21.md": "8a1aa2c66cbc38320c829679e7b982936834510a58b38f89621f22278fd67cd8",
+        "outputs/physical_contact_dimer_infinite_internal_content_tournament_cycle583_cold_2026_07_22.txt": "22af96509364601a99c3ed2d6b148643ede02369f70e5be92629d1f0e5d3ddce",
+        "outputs/physical_contact_dimer_infinite_internal_content_tournament_cycle583_receipt_2026_07_22.json": "0f4e2df9e25cdc7137c42fb91666c5eaae10efc652d5af84f421e38c5ad97aab",
+        "outputs/physical_cycle330_all_order_isometry_bridge_cycle515_attempt2_2026_07_20.log": "636d067ddd9284e59f24999666c5110fce425e60a7baa48d714b2a023abab1b1",
+        "outputs/physical_cycle330_all_order_isometry_bridge_cycle515_dry_2026_07_20.log": "7ef8b552f8dd08770691c1281b354970641bb75191c5a15e26b1e54078204b56",
+        "outputs/physical_cycle515_koszul_frame_bridge_cycle516_attempt4_2026_07_21.log": "710673f10229675789ab84abe24d15238f0b9b1674608b0254a77c02860ebcce",
+        "outputs/physical_cycle515_koszul_frame_bridge_cycle516_attempt4_receipt_2026_07_21.json": "bfcf92c44e8b651f3866fa017a77ab7462988427d80178da6cbbddbe5d703cbb",
+        "outputs/physical_enlarged_link_contact_work_tournament_cycle569_cold_2026_07_22.txt": "834155bbb74e1ce42b8c0d90b746787bba4373d4f0ea092d4afc74391881beb6",
+        "outputs/physical_enlarged_link_contact_work_tournament_cycle569_receipt_2026_07_22.json": "ddba1d3cfb3167416b12a4a327dd136c4b61878f07ef1448629f2a440208b195",
+        "outputs/physical_global_N3_returned_slot_compiler_cycle560_receipt_2026_07_21.json": "e27c9eba803413455fc6b5bf3aca7a38def9d4bb68694af37a44725343509598",
+        "outputs/physical_held_sparse_order_retirement_cycle563_2026_07_21.json": "e9a2b0c8013d1a75dad9ae5ff76c7219b30a2b8e2c29556d269aa2c8373a6c8f",
+        "outputs/physical_held_sparse_order_retirement_cycle563_receipt_2026_07_21.json": "ac9fcc1da45f33152679cfd2992abf1d037fae8647f1ab4d2d0526e6ac7000ae",
+        "outputs/physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_cold_2026_07_22.txt": "6068efb7f80a5dc4b15253b6816ebfabcd13fcb929c9e4b1d56195eb0d1b922d",
+        "outputs/physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_receipt_2026_07_22.json": "b84f1cfaa03661a0a2498fd409e077aeeb4f6ad423909807d20be7c846c571f7",
+        "outputs/physical_local_cutoff_gauge_enforcement_tournament_cycle593_cold_2026_07_22.txt": "5a2509151706307ffe158d37b78f467692ac8976636f6437a3069bfd158e2908",
+        "outputs/physical_local_cutoff_gauge_enforcement_tournament_cycle593_receipt_2026_07_22.json": "0b6d82faba587b50146bd1001dc72ba09ca9248fd74d5b02ddc6e5c33b486475",
+        "outputs/physical_root_free_cutoff_gauge_preparation_tournament_cycle598_cold_2026_07_22.txt": "3a8d6990d8dfaabefe0f5cec08af83d14613507ca0712b993f39c49025bb8797",
+        "outputs/physical_root_free_cutoff_gauge_preparation_tournament_cycle598_receipt_2026_07_22.json": "c8a27819fb1907d20aa9c73a7d66a2b8c0cc37b532da4686ef32a80996d909c1",
+        "outputs/physical_route_c_q6_symbolic_axis_diagnostic_cycle514_attempt1_2026_07_20.log": "48c37e6ec11eb9cb7278e94f825ac5ab1f5569dc6f3c9b1fd247b1fe6c698847",
+        "outputs/physical_route_c_q6_symbolic_axis_diagnostic_cycle514_attempt1_receipt_2026_07_20.json": "5def6d3fb1e796341bb76cb51f6eb61a90274ef950a11a8007b7a3585f55c97d",
+        "outputs/physical_route_c_q6_symbolic_axis_diagnostic_cycle514_dry_2026_07_20.log": "e09d664911f681a3a85f6cf180b744c4c63fb84362fe8232af6b64400903a83f",
+        "scripts/ROUTE1_DIRECT_CAR_COMPILER_CYCLE231_2026_07_17.py": "5adb6dc52f6352a5367a2b56da94854e511f9dd174688029f1841e5004a91c32",
+        "scripts/active_cubic_source_response_cycle211_2026_07_16.py": "d5392152d322ea8f3850d0345d6caa426db22ae7f7694775b4bd6388704c18a6",
+        "scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py": "a5e78e40cad0c43ee62ae887df7d84a0b895ab217ba4f3d521353e5d0b6bf95a",
+        "scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py": "464e5928b7c1e46c23e4010363b6bd8ff3d0e2379c6e5ecb46891010ef47a5a4",
+        "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py": "ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a",
+        "scripts/exact_3d_higher_form_bosonization_cycle235_2026_07_17.py": "dd955ce629cde5e225b625be89f5f71045d688083a032b7bf104efa9b3f1bb34",
+        "scripts/finite_coin_scalar_wave_dilation_cycle215_2026_07_16.py": "3a977106389428d2281ea7e0e32b65fe57f6ce33d783742b80f264f78f4f2c17",
+        "scripts/fock_modular_boundary_current_cycle229_2026_07_17.py": "fbf434a94c8dae57ffb6e68776642e4342a91f0d39f071ee1388fcb89ff846d7",
+        "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py": "4ab857755b606d7ba7432179ed66de723ac31d3f66507cafa1168ab60d4965d6",
+        "scripts/local_generator_source_tournament_cycle228_2026_07_17.py": "97fdf54189d7da93099aeab4a9b1dd8501c7262d55493b9fa95bf1c2f5c97a9d",
+        "scripts/local_rough_puncture_odd_sector_cycle247_2026_07_17.py": "10f5cf027c76f5a0a3b1d3dbaa6cb0e6d418932c84553f0cca303d3f21742519",
+        "scripts/physical_adjacent_star_recurrence_tournament_cycle548_2026_07_21.py": "5830dacebf79720301192b0dcb39121e1ecf03137f94d6e97c7da4034d9c9ca0",
+        "scripts/physical_adjacent_two_star_compressed_gram_cycle518_2026_07_21.py": "8f505d2de6476bdbc20f87a901e8be9fe46deda5b568c98d750977069a352e53",
+        "scripts/physical_adjacent_two_star_order_character_preflight_cycle517_2026_07_21.py": "ad8b0c71840cbfa56aae3ae9da44eceec1cad7d84be06bab32604eb5f6fbb4a3",
+        "scripts/physical_adjacent_two_star_seam_tag_preservation_cycle519_2026_07_21.py": "d2e0648558fb3031a200600b0643de28a5c8e695c35165a6905a6a99ff45255d",
+        "scripts/physical_autonomous_localized_refocused_matter_transition_tournament_cycle575_2026_07_22.py": "0c845ecd02b86ce4d99aa8406a206e9b01628f02f1592cf37c41a084eb1e0a4b",
+        "scripts/physical_boundary_aware_multistar_recurrence_tournament_cycle551_2026_07_21.py": "3d68e536565c491b1b54547d82ed6faab73437c600229ff9060f471ffad84997",
+        "scripts/physical_contact_dimer_infinite_internal_content_tournament_cycle583_2026_07_22.py": "21957cc883550ee81fc48d5b55ad4a0384cbac8697557691c805d84c7c8dbaaf",
+        "scripts/physical_correlated_double_shadow_stream_cycle529_2026_07_21.py": "df118a01c2a95fcccd7986dc01afb5625d0faa8bb95beb2ecb344a9f5fbacda7",
+        "scripts/physical_covariant_protected_link_shadow_cycle528_2026_07_21.py": "5eb5160688465283126b990873398c2b8914e39a49f10919128b0b5d77496da5",
+        "scripts/physical_cycle269_collision_safe_auxiliary_ports_2026_07_17.py": "03786effa03eae50930ca0bfa14c881276df8bd6bdba83b6d7a893cffe1fe747",
+        "scripts/physical_cycle269_common_m64_fixed_seam_cycle311_2026_07_18.py": "4495bf39e1e2661866501e377b8ec1aefff656e261e428fa5b6738f73b49699c",
+        "scripts/physical_cycle269_five_cell_adjacent_star_cycle327_2026_07_18.py": "0688e7db8b8490e525c0e1f1108474903e2ff40d278e185b6add54f8086f8110",
+        "scripts/physical_cycle269_four_cell_star_cycle324_2026_07_18.py": "f2e07bf91e7a5b06c8037314798cb84cd6d747bc92fa6292c1759915fb91354d",
+        "scripts/physical_cycle269_full_two_particle_sector_interface_cycle305_2026_07_17.py": "3e970b2c84ebe891d36c132cd99d716ceb20b596cea89729f06ed8950c7a847c",
+        "scripts/physical_cycle269_higher_number_fixed_seam_cycle308_2026_07_17.py": "cb6de428c5054ea9415a59bab75d36c693c65d8070df30a6a0bbc2a926f3f4e4",
+        "scripts/physical_cycle269_overlap_aware_two_cell_cycle315_2026_07_18.py": "52c18f96a1f8db9b79e4d0fba5ff76905170e6a8dc8c3e818fdf69984a1778c3",
+        "scripts/physical_cycle269_reference_relative_localized_pair_lift_2026_07_17.py": "95820817eaf883040aae96531f1afd4fe7a90569a43215d226cf44dce9a1cc09",
+        "scripts/physical_cycle269_seven_cell_maximal_star_cycle330_2026_07_18.py": "4428d1f73ff315987edabd7f838a1c58414d0a982f0cd28656ddef3bd230d19f",
+        "scripts/physical_cycle269_staggered_reservoir_catchup_2026_07_17.py": "5310ee8e19a55694f7a11ccf013c696b16cdb37961c5ade41ed316b27238bab1",
+        "scripts/physical_cycle269_three_cell_multiedge_cycle319_2026_07_18.py": "faa05d97542efca7684f4acc6f9b7dfb8e32a02f3f9d16adeae16449f5b702fb",
+        "scripts/physical_cycle330_all_order_isometry_bridge_cycle515_2026_07_20.py": "93afe1600cb3fb8b7844729521b005ce62f957a128a6ffb9493a03a1d9932e96",
+        "scripts/physical_cycle515_koszul_frame_bridge_cycle516_2026_07_20.py": "3c4318a84c661893932c8d41a90db36445f80cefd092a6a3fffb56cbf8abfa9c",
+        "scripts/physical_enlarged_link_contact_work_tournament_cycle569_2026_07_22.py": "877dc75a840ff348f15022784dc60190fa884fad216db3e1904fc089c9d3c091",
+        "scripts/physical_global_N3_returned_slot_compiler_cycle560_2026_07_21.py": "f6d641e4735b26f9463ea623ee8ed6e28acc995fdfc88300709dcfac100c13ab",
+        "scripts/physical_global_selected_network_encoder_cycle555_2026_07_21.py": "af51110e8c4cb5245efd2bd99ef7f2b12fb02586c5e5225082ce4a13fba27e92",
+        "scripts/physical_held_sparse_order_retirement_cycle563_2026_07_21.py": "55e51cafffa70284a6e8e1f0510ca0d2f890989ccbcf5bce64435df4c8e812a6",
+        "scripts/physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_2026_07_22.py": "2a3c77c26003bb0f8b55fe2da0fd36b0ac98a14a21a083303fe175e5f802e99f",
+        "scripts/physical_joint_clock_accumulator_contraction_bridge_cycle570_2026_07_22.py": "37e9d0f336d773bd4a1957a6531f80dc35b9673a4ef0f99137e7fb33558bf849",
+        "scripts/physical_local_N3_six_ray_decoder_tournament_cycle557_2026_07_21.py": "8b153c0ec633d489a839221788115ae85c6bf80c4d4952339795aa7bd80150d8",
+        "scripts/physical_local_cutoff_gauge_enforcement_tournament_cycle593_2026_07_22.py": "9207101f5784bac0ff2097926a36e773f2a860102e57aee173581961771a4ae5",
+        "scripts/physical_matter_transition_clock_equivalence_tournament_cycle573_2026_07_22.py": "52c743889146189c2b574fa8012e7281340722303cb5b61fc53579e5fe23ebf4",
+        "scripts/physical_native_shadow_nearest_neighbor_router_cycle527_2026_07_21.py": "2ca2021fa76b889128b587a6a0d67986e236319ea8fb7ccd1dfaf31982c55fa0",
+        "scripts/physical_opposite_carrier_reearned_compiler_cycle522_2026_07_21.py": "d6a7700d7575dfba02d4b4d2438e54d37a02c6ca7f71673c8a871b474f6e088b",
+        "scripts/physical_opposite_carrier_shared_cell_recurrence_cycle525_2026_07_21.py": "379c67315de8d235f8d5287b281b6291d0a10731d030338d8bde0676a4c0b785",
+        "scripts/physical_protected_shadow_coin_gate_compiler_cycle523_2026_07_21.py": "d9dd02bbb4dfacebf0f75f6b8c56881ff56653843cb7ed75baa381d5aa605b9d",
+        "scripts/physical_recurrent_shared_volume_compiler_cycle545_2026_07_21.py": "b117c595f8c06f79931be98d573168e53d9f0fb9d5024e4ee623ba76d7488067",
+        "scripts/physical_root_free_cutoff_gauge_preparation_tournament_cycle598_2026_07_22.py": "5702ac74768c83bd97d0860ad827a5a66809c8bfbfafb2dd010982bcb917be51",
+        "scripts/physical_rough_fswap_pauli_rotation_gate_compiler_cycle540_2026_07_21.py": "53b003bbda96eee1d85e48aa5cd0e8c530bea35c7b6eefef5a637127f66af13a",
+        "scripts/physical_rough_gauge_subsystem_quotient_cycle532_2026_07_21.py": "a768d4250e55399c03e6084614a772953e6bcdf1570b9e7c50ac8d18544cfe6a",
+        "scripts/physical_route_c_q6_symbolic_axis_diagnostic_cycle514_2026_07_20.py": "74d9231d0c78ad6c85c028cea69cc7ac29c7b1b0c04259513d7223c5e8ae19fe",
+        "scripts/physical_selected_seam_code_space_isometry_compiler_cycle533_2026_07_21.py": "72fe24e03b38812ef9f6dc610bc445b5ea6046a30683c2b734e9c0396e84facd",
+        "scripts/physical_selected_seam_event_current_adapter_cycle526_2026_07_21.py": "7c3d4a35664eaf5c7737c86464ca069e15ce29c40f61778081af8139970c37cd",
+        "scripts/physical_shadow_normal_form_sync_cycle530_2026_07_21.py": "f5f90a331803a43d293fa8e8e3640e29886bed81935827763773d84f61ce9c99",
+        "scripts/physical_shared_seam_code_space_isometry_compiler_cycle539_2026_07_21.py": "aa126a6363f9fc8c08d28a47b840c1b6e0a7c0b47bbe296087340b804a0087d1",
+        "scripts/physical_three_star_shared_parity_overlap_cycle520_2026_07_21.py": "22b00fd39fd07a04afb8776f4b97c31486ce4d2034617bd16aa170c263108b2b",
+        "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py": "c410b754d4e984f6ee5ccbc7c5a52e776c50c91c4daa12d798044f104cc7435b",
+        "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py": "472e28c78901368629c8d9d6f614bb8fb3ea003639ac61d480d06941cdf6cb86",
+        "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py": "b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae",
+        "scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py": "9ef0fff433bbf1c96c9b13c5ce79530e01fe705f08c6caf6b60316e20359e011",
+        "scripts/wilson_subsystem_sector_free_compiler_cycle269_2026_07_17.py": "c7b8673eb1a0dced08131820caa1fb2400fc8d1f73cfe2cddf5f8a28f9045d35"
+      },
+      "uncovered_imported_modules": []
+    },
+    "physical_encoder_composed": false,
+    "physical_intertwiner_residual": null,
+    "physical_leakage_evaluated": false,
+    "physical_update_composed": false,
+    "status_or_ancestry_used_as_scientific_evidence": false
   },
   "status": "cycle603-carrier-preparation-elementary-synthesis-tournament",
-  "strongest_constructive_result": "an exact full-space support-two circuit over explicit fixed gates plus parameterized one-M2 RY/RZ/P rotations compiles the structured Cycle600 onsite coin/contact and every crossed-link valid-word transposition on literal bounded NN event patches; separately, a local cubic parent makes W unique and gapped within N=1",
+  "strongest_constructive_result": "an exact full-space support-two role-bit circuit over explicit fixed gates plus parameterized one-role-bit RY/RZ/P rotations compiles the structured Cycle600 onsite coin/contact and every crossed-link valid-word transposition on bounded declared line patches; separately, directly constructed N0/N1/N2 parent and dark-kernel matrices certify W uniqueness only within N=1, N2 Dicke competitors, finite-size gaps, and independent every-edge jump-ray all24/all576 covariance; no physical-M2 primitive composition is supplied",
   "tests_failed": 0,
   "tests_passed": 7
 }

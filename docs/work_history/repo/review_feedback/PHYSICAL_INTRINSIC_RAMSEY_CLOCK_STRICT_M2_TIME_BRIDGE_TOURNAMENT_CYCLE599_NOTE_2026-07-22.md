@@ -1,4 +1,4 @@
-# Physical intrinsic Ramsey-clock / strict-M2 time-bridge tournament — Cycle 599
+# Physical intrinsic Ramsey candidate / strict-M2 boundary tournament — Cycle 599
 
 Date: 2026-07-22
 
@@ -6,386 +6,428 @@ Authority: none
 
 Audit: unset
 
+Author accepted: false
+
 Constitutional effect: none. This cycle edits no axiom, foundation,
-Qualification, primitive, registry, policy, queue, or audit-status surface.
+Qualification, primitive, registry, policy, queue, audit result, or other
+control-plane surface.
 
 Runner:
 
-`scripts/physical_intrinsic_ramsey_clock_strict_M2_time_bridge_tournament_cycle599_2026_07_22.py`
+scripts/physical_intrinsic_ramsey_clock_strict_M2_time_bridge_tournament_cycle599_2026_07_22.py
 
-## Result up front — preregistered attempt fails 8/1
+Runner SHA-256: 7077c58b7c41f59606c8a5ccc0135017d937a0dd24184c083fa2df5b4b435840
 
-Cycle 599 is a **bounded partial / failed preregistered matter-clock
-attempt**, not a completed clock bridge. The frozen Route-B checkpoints were
-`q=1,2` on train L3 and `q=1,2,3` on held L6. The local even A2 return
-visibility is zero at every tested odd checkpoint and nonzero at q=2 on both
-sizes. Thus the q=2 local recurrence supplies one finite coherent
-phase-difference word, but the preregistered route as a clock law fails.
+## Result and claim ceiling
 
-The exact observed frozen boundary is:
+Cycle 599 passes as a narrowed algebraic candidate artifact, not as a physical
+M2 Ramsey clock. Its strongest result is the exact frozen recurrence boundary
+for the coarse local vacuum/A2 construction:
 
-| size | q=1 | q=2 | q=3 |
+| finite torus | q=1 | q=2 | q=3 |
 |---|---:|---:|---:|
-| L3 train visibility | `0` | `0.4370005259653786` | not frozen |
-| L6 held visibility | `0` | `0.4370005259653786` | `0` |
+| L3 train visibility | 0 | 0.4370005259653786 | not frozen |
+| L6 held visibility | 0 | 0.4370005259653786 | 0 |
 
-At q=2 the quadratures are approximately
-`X_pair=0.378433107835146`, `Y_pair=0.218535678067107`, with principal
-phase-difference `0.523692356542553`. This q=2 witness may be attached to the
-same typed matched candidate events that carry Cycle-451 `3:4`, `4:4`, or
-`5:4` comparator words and Cycle-570 additive prefix/rollover receipts. It is
-not promoted into a complete clock law, and the frozen q schedule is not
-refit after observing the odd-return zeros.
+At q=2 the train and held quadratures are approximately
+X_pair=0.378433107835146 and Y_pair=0.218535678067107, with principal
+phase-difference 0.523692356542553. The q=2 contact-deletion signal is
+nonzero. The q=1 contact-deletion signal is zero; q=3 changes the full state
+but still has zero local source return. These are executed finite algebraic
+facts, not a complete clock law.
 
-This is not proper time or lapse. Update count is not time. Wrapped phase is
-not energy. A generator element is not called a rate. The occupied binder,
-reversible latch, coherent squared norm, and candidate event are not called a
-Record, occurrence, probability, or realized history.
+The runner also reproduces two secondary candidates:
 
-The surviving partial construction is finite and operational at the
-code-space interface; primitive gate/layout closure for its pulse and readout
-remains open:
+- Route A is an exact 18-dimensional dense algebraic Q1-register/Ramsey-arm
+  unitary with held Cayley/principal separation.
+- Route C is an exact finite-box direction-resolved A2/T2 phase-difference
+  candidate whose frozen held L11 localization gate fails.
 
-```text
-local even vacuum/A2 preparation
-        |
-        v
-actual free-plus-contact G on accepted strict-physical-M2 N=0⊕N=2 code
-        |
-        v
-local even X_pair/Y_pair coherent word when return visibility is nonzero
-        |
-        +-- only if binder remains occupied
-        +-- only if phase origin and nonwrap certificate are present
-        +-- only if Cycle451 identity/profile/predecessor matching succeeds
-        |
-        v
-typed candidate-event Ramsey phase-difference word.
-```
+None qualifies above an interesting candidate. No Route-A register/arm role,
+Route-B binder role, local pair observable, event payload, or Route-C spectral
+block is called physical M2 in Cycle 599.
 
-The attempt does not derive why the clock profile is Nature's clock, how two
-different devices acquire a universal scale, how multiple phase words are
-unwrapped, why a candidate event becomes actual, or how source response
-becomes lapse or gravity. No axiom pressure follows.
+Q index is not promoted to time. Wrapped phase is not promoted to energy. A
+generator element is not called a rate. The binder/latch is not promoted to a
+framework Record. A coherent squared norm is not promoted to probability or
+occurrence. This cycle derives no proper time or lapse, energy, universal
+clock equivalence, Record actuality, Born law, gravity, or realized history.
+The candidate is not proper time or lapse.
 
-## Frozen shore and non-use boundary
+## Role/qubit block physical M2 boundary
 
-The runner byte-pins the accepted Cycle-441, Cycle-451, Cycle-570,
-Cycle-583, Cycle-590, and Cycle-230 runners/notes it consumes. It also pins
-the accepted Cycle597 runner/note now present on the branch, while explicitly
-not importing or consuming the Cycle597 state-family transition law. Cycle597
-is an independent accepted shore, not a hidden dependency of the Ramsey
-construction.
+Cycle599 composed physical M2: null.
 
-The route law is hashed before any train or held output is inspected:
+Every new Cycle599 role/block has:
 
-- Route A: nine-M2 Q1 cyclic register, Cayley/principal operator functional
-  calculus, and a one-M2 Ramsey arm;
-- Route B: local A2 pair source, occupied binder, train L3 and held L6, with
-  law-application words fixed as `1,2` and `1,2,3` respectively;
-- Route C: one frozen `E/T1/T2` eigensolver window on L7 train and L11 held,
-  plus an independently frozen localization gate; and
-- event composition: Cycle-451 `3:4`, `4:4`, `5:4` and every Cycle-570 train
-  and held prefix through 21.
+| surface | value |
+|---|---|
+| primitive composition | false / unbuilt |
+| E-G intertwiner | null |
+| leakage certificate | null |
+| physical layout | null |
+| physical covariance layout | null |
 
-No held phase, overlap, localization number, comparator output, or prefix
-result changes a parameter after freeze.
+Upstream parent artifacts may contain verified M2 compositions, but byte
+pinning or calling their algebraic helper does not automatically compose those
+primitives at a new Ramsey interface. In particular:
 
-## Route A — independent Q1 functional register clock
+- Cycle 599 does not tensor Route A with the Cycle-590 physical compiler.
+- Cycle 599 calls Cycle-590 coarse algebraic free-plus-contact helpers but does
+  not compose the vacuum/A2 pulse or X/Y readout with its physical schedule.
+- The binder role bit is only an algebraic/host-side validity condition; binder
+  physical M2 is null.
+- Cycle-451/Cycle-570 event attachment is host-side typed algebra; Ramsey
+  payload physical M2 is null.
+- Route C has no Cycle599 physical compiler.
 
-The Cycle-441 nine-state register remains the complete one-excitation sector
-of nine hard-core M2. The cyclic shift has the accepted eight sequential
-nearest-neighbour SWAP realization. The Cayley and principal clock operators
-are constructed by matrix functions of that represented shift before any
-spectral sector is inspected. The later `sector_menu` call is analysis and
-calibration only: it identifies train/held rays and scores their outputs; it
-is never a physical runtime beta lookup or selector.
+This demotion is the central repair. It preserves executed algebra and removes
+unearned physical credit.
 
-For either functional coordinate, the physical Ramsey word is
+## Exact pins and dependency closure
 
-```text
-(I9 tensor H_arm)
-controlled-U_coordinate
-(I9 tensor H_arm).
-```
+The runner checks 21 exact-pinned shore surfaces:
 
-The Q1 register occupies nine M2 and the arm one M2. The dense bounded
-register-arm functional completion therefore has support ten M2. Its
-primitive synthesis remains supplied/open; the runner does not relabel a
-dense matrix as a literal elementary schedule. Tensoring this device with the
-held Cycle-590 L6 compiler gives `11,448 + 10 = 11,458 M2`, or the inherited
-53 M2 per coarse cell plus one bounded ten-M2 device.
+| cycle | pinned surfaces |
+|---|---|
+| 230 | runner, note |
+| 441 | runner, note |
+| 451 | runner, note |
+| 570 | runner, note, receipt |
+| 583 | runner, note, receipt, cold |
+| 590 | runner, note, receipt, cold |
+| 597 | runner, note, receipt, cold |
 
-On the complete 18-dimensional Q1-times-arm code, E/G, inverse, unitarity,
-coherent held superposition, and deletion are tested. The held
-`beta=-8 pi/9` Cayley/principal alias remains sharply separated without a
-beta lookup. The independent register clock is tensored with the fixed
-`beta=-0.3` dimer compiler; it does not silently change or select that
-matter beta. The register and arm are proper-cubic scalars, so covariance is
-inherited for all 24 matter frames and all 576 paired device/matter frames.
+Consumed receipts must bind their runner/note, report every declared test
+passing, and preserve authority none with audit unset. The Cycle-597 receipt
+must additionally report no-go Status FAIL and bind its cold transcript.
+Cycle597 is byte-pinned without epistemic standing and is not imported or
+consumed scientifically.
 
-## Route B — priority local even vacuum/A2 clock
+The runner also checks 232 recursively pinned runtime-dependency runners. This
+is the conservative transitive closure of all repo-local imports reachable
+from Cycle 599. Its sorted manifest is executable data in the runner. The
+closure prevents silent runtime drift; it is not an inheritance of scientific,
+review, author, or audit standing.
 
-At one coarse cell, let `|a>` be the normalized onsite A2 pair source over
-the six direction modes and `|0>` the CAR vacuum. The supplied local Ramsey
-pulse is a Hadamard on `span{|0>,|a>}` and identity on its orthogonal
-complement. Its generator is even: it changes CAR grade by two, never one.
-The local readouts are
+The route/application law is hashed before output inspection. It fixes:
 
-```text
-X_pair = |0><a| + |a><0|,
-Y_pair = -i |0><a| + i |a><0|.
-```
+- Route A: nine-state Q1 cyclic algebra, Cayley/principal functionals, and a
+  two-state algebraic Ramsey arm;
+- Route B: local vacuum/A2 algebra, fixed beta=-0.3 and contact g=0.37, L3
+  q=1,2 and held L6 q=1,2,3, plus one occupied binder role bit;
+- Route C: fixed E/T1/T2 eigensolver window on L7 and held L11 with a frozen
+  localization gate; and
+- algebraic event comparison: 3:4, 4:4, 5:4 and Cycle-570 prefixes
+  1,2,4,5,8,13,21.
 
-For the coherent state formed from vacuum and the evolved pair, their exact
-expectations are the real and imaginary parts of
-`<a|G_free+contact^q|a>`. These are coherent amplitudes, not Born
-probabilities or occurrences. The integer `q` only specifies how many copies
-of the tested update word were composed; it is not time.
+No held result changes the law.
 
-The accepted Cycle-590 compiler contains both N=0 and N=2 inside its declared
-complete global `N<=3` code. Its code-space encoder gives the local six-mode
-even pair observable a bounded-completion support upper bound of one 53-M2
-physical compiler block; Cycle 599 does not synthesize the primitive gates or
-layout for that completion. The accepted free-plus-contact compiler E/G, inverse,
-free-plus-contact word, local auxiliary constraints, no-runtime-parity
-property, 53-M2-per-cell overhead, all 24 frames, and all 576 paired frames
-are inherited and rechecked at the new interface. The global N<=3 cutoff is
-still supplied and not locally enforced. The dense bounded pair pulse and
-pair readout have a one-block support upper bound, but their primitive gate
-synthesis is still supplied/open.
+## Route A — dense functional-register algebra
 
-One additional spectator binder M2 is occupied before preparation and remains
-occupied after update and readout. It keeps the apparatus present when the
-CAR clock branch is vacuum. Deleting the binder makes the event word
-undefined. The binder is a supplied reference role, not a Record and not a
-claim that matter is created from nothing.
+Route A calls the Cycle-441 functional constructor before spectral analysis.
+It then forms H-controlled-U-H as a dense matrix on a nine-dimensional
+register times a two-state arm. The executed checks cover:
 
-The runner executes train L3 and held L6, tests exact norm,
-antisymmetry/leakage, coherent inverse, translation covariance, local A2
-branch overlap/localization diagnostics, the even-L seam, and visible contact
-deletion where the frozen return is contact-sensitive. At q=1 the contact
-deletion signal is also zero because no local return has yet occurred; q=3
-changes the full state but still has zero local source return. The
-one-particle mass fixture remains unchanged. Proper-cubic
-covariance transports the one-dimensional A2 source and its readout together
-through the full observable orbit; no preferred global frame is selected.
-The occupied binder certifies device presence only and carries no spatial
-orientation.
+- unitarity and inverse for Cayley and principal functionals;
+- a held coherent superposition inverse;
+- exact reproduction of the supplied eight-SWAP ring permutation;
+- visible functional-deletion signal and held alias separation;
+- rejection of Q=0 and Q=2 register masks;
+- unchanged one-particle mass fixture; and
+- the 24-member proper-cubic frame group and all 576 frame products as
+  algebraic group checks.
 
-The phase origin is the prepared vacuum/local-A2 relative phase at the first
-typed event. A phase word is exported only when visibility is nonzero and its
-principal value lies strictly inside `(-pi,pi)`. Hence q=1/q=3 export no
-phase word. Multi-event unwrapping remains supplied/open and is not invoked.
+The frame action is the supplied scalar I9. No physical device placement or
+covariance layout is constructed. The dense functional control has no
+Cycle599 primitive synthesis. The nine-state register and two-state arm are
+dimensions here, not physical-M2 counts. Route A disposition: interesting
+dense algebraic candidate only.
 
-## Matched-event and additive composition
+## Route B — priority local vacuum/A2 algebra
 
-Cycle 599 does not equate a Ramsey word with an invocation ordinal. It uses
-only the existing event semantics:
+At one coarse cell, a is the normalized onsite A2 pair over the six direction
+modes. The algebraic pulse is a Hadamard on span{vacuum,a}; the readouts are
+the local even X_pair/Y_pair matrices. For the evolved pair their coherent
+components are Re<a|G^q|a> and Im<a|G^q|a>.
 
-- Cycle 451 supplies complete latches, distinct event identities, stable
-  device identities, epoch, common profile, predecessor, typing, permanence,
-  and the nonwrapping relational matcher;
-- Cycle 570 physically propagates the common profile and four-edge standard,
-  forms predecessor-linked candidate endpoints, and retains exact rollover
-  receipts and an additive unary population.
+The runner directly calls the coarse algebraic Cycle-590 one-particle walk,
+full_update, and inverse_full_update on antisymmetric N=2 amplitude matrices.
+It checks train L3 and held L6, norm, antisymmetry, inverse, translation,
+contact deletion, the A2 branch diagnostics, even-L seam diagnostics, and the
+all-24 algebraic A2 orbit. Maximum dynamic residual and pulse inverse residual
+remain below tolerance.
 
-For one local Cycle-570 cell with three, four, or five probe tokens, the
-physical totals are exactly `(4,3)`, `(4,4)`, or `(4,5)`. These match the
-Cycle-451 `3:4`, `4:4`, and `5:4` candidate comparators. The same Ramsey word
-may be carried as an additional typed payload only at the frozen positive
-q=2 checkpoint and only when the matcher, binder, phase origin, nonzero
-visibility, and nonwrap certificate all survive. Deleting any one returns
-undefined rather than zero.
+The exact frozen boundary, rather than the false requirement that every
+checkpoint define a word, is the pass criterion:
 
-The runner also executes every frozen Cycle-570 train/held prefix
-`1,2,4,5,8,13,21`, including rollover and inverse. It derives no relation
-between a source-conditioned `3:4/5:4` response and the Ramsey phase. In
-particular it derives no response sign, lapse, proper-time map, gravity law,
-or universal clock equivalence.
+- q=2 has nonzero visibility on L3 and held L6;
+- frozen odd q=1 and q=3 have zero visibility; and
+- a phase word exists only for nonzero visibility strictly inside (-pi,pi).
 
-## Route C — independent second-mode search
+The global N<=3 cutoff remains supplied and not locally enforced. The
+vacuum/A2 preparation, X/Y readout, binder role, and their composition with
+the parent compiler all lack primitive E-G/leakage/layout certificates. Route
+B disposition: strongest Cycle-599 result, but only an exact coarse algebraic
+recurrence candidate.
 
-Route C reruns one frozen branch-aware finite search over `E`, `T1`, and `T2`
-near wrapped phase `-3` on L7 train and L11 held. It then compares the A2
-branch against the strongest T2 candidate using a direction-component local
-observable orbit.
+## Algebraic candidate-event attachment
 
-The finite-box A2/T2 construction is positive: both sizes have an exact
-nonwrapping phase-difference word, a nonzero direction-local cross term, a
-vanishing proper-cubic invariant cross term as required by irrep orthogonality,
-and an all-24 covariant observable orbit. It is not retained as a second
-local matter clock. Under the independently frozen held gate, the L11 T1 and
-T2 candidates lose localization: contact weight falls, radius squared grows,
-and seam weight is too large. No E candidate occurs in the same frozen
-eigensolver window.
+For probe counts 3, 4, and 5, the runner executes Cycle-451 interval helpers
+and Cycle-570 schedule helpers, obtains ratios 3:4, 4:4, and 5:4, and attaches
+the positive q=2 quadratures to a host-side RamseyEventWord only when the
+matcher, binder role, phase origin, visibility, and nonwrap flag survive.
 
-This is a route-specific finite-search/localization failure. It is not an
-accepted free-plus-contact physical-M2 compiler obstruction, not an event-matcher obstruction, and not a
-constitutional result. A two-copy dimer encounter clock and a locally charged
-binder/rotor remain unattempted constructive families.
+Deletion of binder role, phase origin, or event interval returns undefined.
+All frozen Cycle-570 prefixes reproduce their algebraic endpoints and inverse.
+This does not compose a physical Ramsey payload with either parent. It does
+not derive a time-response law or promote the ratio label into proper time.
 
-## Exact controls and supplies
+## Route C — finite second-mode algebra
 
-The cold runner requires:
+Route C reruns the fixed E/T1/T2 finite eigensolver search at L7 and held L11.
+It obtains a nonzero direction-component A2/T2 cross term, a nonwrapping
+phase-difference word, and an all-24 covariant algebraic observable orbit on
+both boxes. The proper-cubic invariant cross term vanishes as irrep
+orthogonality requires.
 
-1. byte-exact accepted shores and a pre-held law digest;
-2. Route-A complete-code unitarity, E/G, inverse, eight-SWAP shift,
-   no-lookup construction, held alias separation, deletion, Q0/Q2 rejection,
-   mass preservation, all 24 frames, and all 576 pairs;
-3. Route-B actual free-plus-contact evolution, vacuum/A2 pulse inverse,
-   local X/Y quadratures, held larger size, contact deletion, norm,
-   antisymmetry, inverse, translation, A2 overlap/localization/seam, binder,
-   phase-origin, and readout deletion;
-4. Cycle-451 3:4/4:4/5:4 matching and Cycle-570 exact train/held additive
-   prefix/rollover E/G and inverse;
-5. Route-C frozen E/T1/T2 search, exact eigen residuals, local cross-term
-   orbit covariance, and independently frozen held localization gate;
-6. malformed/off-grid/lawful-domain rejection; and
-7. full N1–N8 negative-claim discipline and cold wall/RSS caps.
+The frozen held localization criteria fail for T1 and T2, and no E candidate
+appears in the fixed window. That is only a route-specific finite-search and
+localization disposition. Route C is an interesting finite-box algebraic
+candidate, not a held clock, physical compiler obstruction, or shared
+substrate obstruction.
+
+## Exact executed residuals
+
+| check | result |
+|---|---:|
+| Route-A maximum dense unitarity residual | 2.111439411654862e-15 |
+| Route-A coherent inverse residual | 3.6417626336070564e-16 |
+| Route-A ring permutation residual | 0 |
+| Route-A functional deletion signal | 2.6756394597204696 |
+| Route-A held alias dark-weight separation | 0.7507628370353518 |
+| one-particle mass fixture residual | 1.1102230246251565e-16 |
+| Route-B pulse inverse residual | 3.1560822113208575e-16 |
+| Route-B maximum dynamic residual | 4.6629367034256575e-15 |
+| Route-B minimum q=2 contact-deletion signal | 0.16588474983998308 |
+| Route-B maximum frozen odd visibility | 0 |
+| Route-B algebraic A2 all-24 residual | 5.382005793715205e-16 |
+| event/binder/origin deletion refusals | 9 of 9 |
+| Route-C maximum eigen residual | 1.275743168296189e-15 |
+| Route-C maximum all-24 local-orbit residual | 0 |
+| held L11 T2 contact / radius2 / seam | 0.12747303525734843 / 13.54827002321993 / 0.18265942566004978 |
+
+## Future acceptance contracts — no back-credit
+
+Cycles 610–612 are future acceptance contracts only. They are not imported,
+runtime-pinned, or executed by Cycle 599, and they provide no back-credit.
+
+Repository-side intrinsic tick and relational duration exist. Autonomous
+non-postselected bound-branch preparation remains open.
+
+For the Cycle-612 interface:
+
+- the pre-frozen 3:4 delay is a rate-modulation association only;
+- the 5:4 advance requires event/count edit and is not the same mechanism; and
+- the endpoint predicate plus reversible deletion-sensitive predecessor/clock
+  interval are physical-side supplies.
+
+A future Ramsey compiler must compose with those supplies explicitly and
+retain their deletion controls. Cycle 599 does not do so.
+
+## Controls, supplies, derived facts, and open work
 
 Supplied:
 
-- finite tori, boundary conditions, `beta=-0.3`, contact `g=0.37`, factor
-  order, compiler colors, local constraints, and the global N<=3 code domain;
-- the Q1 population, nine-cycle orientation, Cayley/principal formulas,
-  `CLOCK_SCALE=8`, functional-control invocation, and Ramsey arm;
-- vacuum/A2 pulse invocation, binder preparation and role, phase origin,
-  local readout invocation, event triggers, and blank work sites;
-- Cycle-451 identity/profile/epoch/predecessor matcher and Cycle-570 root,
-  profile, four-edge standard, finite blank cell bank, and local opportunity;
-- finite eigensolver window, branch target, localization gate, numerical
-  tolerance, and any later empirical calibration.
+- finite tori, boundary conditions, beta=-0.3, contact g=0.37, factor order,
+  global N<=3 domain, and exact noiseless algebra;
+- Q1 population, ring orientation, functionals, CLOCK_SCALE=8, dense-control
+  invocation, and spectral analysis menu;
+- vacuum/A2 pulse, binder role bit, phase origin, readout choice, q checkpoints,
+  and event triggers;
+- Cycle-451 identity/profile/predecessor matcher and Cycle-570 root/profile/
+  four-edge standard;
+- eigensolver window, branch target, localization gate, tolerances, and all
+  future empirical calibration.
 
-Derived on the declared finite code:
+Derived in Cycle 599:
 
-- exact Q1 functional clock words and held principal/Cayley separation without
-  runtime beta lookup;
-- one local even vacuum/A2 coherent X/Y recurrence word at q=2, driven by the
-  actual free-plus-contact law on L3 and held L6, together with the exact
-  q=1/q=3 zero-return boundary that defeats the preregistered clock route;
-- bounded M2-support at the code/compiler interface, accepted strict-physical
-  free-plus-contact inverse, covariance,
-  translation, deletion, mass/contact/seam preservation, and lawful domain;
-- conditional attachment to exact matched/additive candidate events; and
-- a finite A2/T2 second-mode word plus a scoped failure of the retained held
-  localization gate.
+- exact dense Route-A algebraic unitarity/inverse, deletion, held alias
+  separation, frame-group audit, and unchanged mass fixture;
+- exact Route-B q=2-positive/odd-zero recurrence boundary on train L3 and held
+  L6 with deletion, inverse, translation, antisymmetry, norm, seam, and
+  algebraic A2 covariance controls under all 24 frames;
+- conditional host-side attachment to exact candidate ratios and prefixes; and
+- exact Route-C finite-box A2/T2 word plus scoped held-localization failure.
 
 Open:
 
-- primitive synthesis for the dense ten-M2 functional control and the local
-  A2 pulse/readout completion;
-- autonomous local preparation of the Q1 population, binder, vacuum/A2
-  coherence, phase origin, event trigger, and blank resources;
-- local enforcement of the global N<=3 cutoff;
-- multi-event phase unwrapping/rollover, clock stability, noise, renewal, and
-  cross-device empirical calibration;
+- primitive M2 synthesis and composition for every new Route-A/Route-B/
+  event-payload/Route-C block;
+- local N<=3 enforcement, autonomous binder and branch preparation, phase
+  origin, renewal, and multi-event unwrapping;
+- physical endpoint/predecessor interval composition and blinded held tests;
 - universal clock equivalence, continuum/Lorentz control, proper time, lapse,
-  source response, response sign, gravity, Record admission, Born law, and
-  realized history.
+  energy, source response, gravity, actuality, Record, Born law, and realized
+  history.
 
-## Fresh no-go discipline N1–N8
+## No-Go Discipline N1–N8
 
-N1 — Normalized route families are keyed by
-`(object/formulation, mechanism/invariant, terminal obligation)`. Three are
-attempted: Q1 functional product, local grade-changing vacuum/A2 coherence,
-and number-conserving A2/E/T1/T2 coherence. Two-copy encounter, charged
-binder/rotor, and two-dimer scattering families remain open. Therefore the
-five-family gate for a broad negative fails; no broad negative may ship.
+No-go gate Status: FAIL. The artifact passes only as a narrowed algebraic
+positive. Broad no-go, minimum-content, shared-obstruction, and axiom-pressure
+claims are false.
 
-N2 — Dense-control synthesis, local-pair-pulse synthesis, phase
-origin/unwrapping, event actuality, second-mode held localization, local
-N<=3 enforcement, and universal calibration are tested as directional walls.
-None is collapsed into another.
+### N1 — route enumeration
 
-N3 — Hidden supplies are exposed explicitly: finite tori, beta/contact,
-register population/orientation, functional formulas/scales, pulse, binder,
-phase origin, readout, event matcher/triggers, global cutoff, compiler order,
-profile, standard, blank auxiliaries, and exact noiseless gates.
+Families use (object/formulation, mechanism/invariant, terminal obligation).
 
-N4 — Exact residuals attach to executable Route-A, Route-B, and Route-C
-surfaces. The Route-C residual is the held L11 localization gate only; it is
-not relabeled a compiler or matching residual.
+| family | status |
+|---|---|
+| Q1 functional register / dense Ramsey arm | ATTEMPTED; algebraic candidate |
+| vacuum/A2 grade-changing quadrature | ATTEMPTED; exact frozen boundary |
+| A2 versus E/T1/T2 finite spectrum | ATTEMPTED; finite candidate, held localization fails |
+| two physical dimer copies / encounter-return | open, untested, not counted |
+| charged binder plus gauge rotor / Gauss phase | open, untested, not counted |
+| two-dimer scattering packet / channel delay | open, untested, not counted |
 
-N5 — Claims remain at finite declared-code resolution. Numerical eigensolver
-and coherent-amplitude results are distinguished from exact code/intertwiner
-results. The interpretive terminal is a bounded-support operational
-q=2 recurrence phase-difference interface over accepted strict physical
-dynamics; the preregistered full clock route failed and its primitive
-pulse/readout layout is open. It is not proper time, lapse, energy, Record
-actuality, or universal equivalence.
+N1 qualifying is 3; 5 are required. No open route is fabricated as ruled out
+by prior work. N1 gate: FAIL.
 
-N6 — Partial closures remain live: synthesize the two dense controls, add a
-local Gauss/check law, attempt two-copy encounters, and derive physical
-phase-origin/rollover and empirical calibration certificates. No statement
-that a new primitive or axiom is required is made.
+### N2 — directional wall independence
 
-N7 — Hostile steelman: retain the positive q=2 local A2 recurrence, add a bounded
-charged binder/rotor that enforces the number domain locally, and compare two
-devices only at the Cycle-570 conveyor's physical events. This concrete route
-blocks a present shared-obstruction claim.
+Walls are dense control D, pair pulse/readout P, origin/unwrapping U, actuality
+A, held localization L, local number enforcement N, and calibration C. The
+runner records all 21 pairs and both directions. Compactly:
 
-N8 — Cross-cycle echo: Cycle 441 separated principal/Cayley words; Cycle 451
-provided strict matching; Cycle 570 physicalized additive rollover; Cycle 583
-provided internal A2/T2 content; Cycle 590 compiled N2 dynamics to strict M2.
-Cycle 599 composes those results without erasing their supplies.
+| pair | first does not close second | second does not close first |
+|---|---|---|
+| D/P | register synthesis supplies no pair pulse | pair pulse supplies no dense register control |
+| D/U | dense gates supply no autonomous origin | origin supplies no dense gate compiler |
+| D/A | a unitary selects no actual event | actuality supplies no unitary synthesis |
+| D/L | register gates localize no second mode | localization supplies no register compiler |
+| D/N | dense control enforces no N<=3 checks | local checks supply no dense control |
+| D/C | a finite compiler gives no universal scale | calibration supplies no gate layout |
+| P/U | pair gates supply no origin/rollover | origin supplies no pair-gate compiler |
+| P/A | readout gives no actuality owner | actuality supplies no pulse/readout |
+| P/L | pair readout localizes no held second mode | localization supplies no readout compiler |
+| P/N | a pulse does not enforce the global cutoff | number checks supply no pulse/readout |
+| P/C | local quadratures give no universal scale | calibration supplies no primitive pulse |
+| U/A | branch bookkeeping selects no event | actuality supplies no branch/rollover law |
+| U/L | unwrapping localizes no branch | localization supplies no phase origin |
+| U/N | origin/rollover enforces no number domain | number checks supply no origin |
+| U/C | a branch certificate gives no unit map | calibration supplies no branch certificate |
+| A/L | event selection does not localize a mode | localization does not select actuality |
+| A/N | actuality enforces no number checks | number checks select no actual event |
+| A/C | one event gives no universal clock scale | calibration supplies no actuality owner |
+| L/N | localization enforces no N<=3 domain | number checks do not create localization |
+| L/C | one held mode gives no universal equivalence | calibration does not localize the mode |
+| N/C | local number checks give no clock calibration | calibration does not construct checks |
 
-No impossibility, minimum-content, shared-obstruction, or new-axiom claim is
-made. No axiom pressure survives this tournament.
+No pair collapses.
 
-## Six-wall and maturity disposition
+### N3 — hidden-wall scan
 
-- `C_ref`: a persistent occupied binder and independent Q1 interface attach
-  the positive q=2 A2 recurrence to strict matched events; a complete A2
-  clock, preparation, and identity remain supplied/open.
-- `C_num`: q=2 gives one exact dimensionless X/Y recurrence and nonwrapping
-  phase word; preregistered q=1/q=3 visibility is zero, so no complete clock
-  law, empirical unit, or probability law is obtained.
-- `C_wrap`: a single-pair origin is explicit; multi-event unwrapping remains
-  supplied/open.
-- `C_int`: the actual free-plus-contact law drives the local word; conversion
-  to physical lapse or energy remains open.
-- `C_local`: a code-space support upper bound of one 53-M2 compiler block plus
-  one binder; physical primitive gate/layout closure for pulse/readout and
-  local N<=3 enforcement remain open.
-- `C_source`: response ratios are only co-registered; no source-to-Ramsey law,
-  lapse, gravity, or response sign is derived.
+Load-bearing supplies are listed above. Actual flagged phrase hits are:
+preregistered/frozen route language, one registered token inside an immutable
+runtime filename, and the quoted scan vocabulary in this checklist. They are
+non-load-bearing context or meta-scan text. The executable pre-held law hash,
+not the adjective, carries the freeze. No hidden condition is promoted.
 
-Provisional 0–5 maturity, written as overall/repo-strict:
+### N4 — exact residual matching
 
-| lane | score |
-|---|---:|
-| operational quantum / records | `4.82 / 4.65` |
-| causal time | `4.00 / 3.78` |
-| inertia / matter | `4.83 / 4.90` |
-| gravity / source | `4.10 / 3.85` |
-| Born / probability | `4.20 / 3.65` |
+| witness path:line | prior residual | current residual | match |
+|---|---|---|---|
+| COHERENT_MULTIBETA_PHYSICAL_MASS_CONTROLLER_TOURNAMENT_CYCLE441_NOTE_2026-07-19.md:69-105 | functionals defined before spectrum; dense completion supplied | dense algebraic Ramsey inverse/alias only | exact at algebraic scope |
+| PHYSICAL_FULL_TORUS_DIMER_M2_COMPILER_TOURNAMENT_CYCLE590_NOTE_2026-07-22.md:127-150 | coarse N2 law domain-matched; new physical composition open | same coarse algebra executed; Ramsey physical interface unclaimed | exact |
+| PHYSICAL_CONTACT_DIMER_INFINITE_INTERNAL_CONTENT_TOURNAMENT_CYCLE583_NOTE_2026-07-22.md:256-269 | finite T2 word positive; held localization fails | same finite candidate/failure scope | exact |
 
-The optimal next campaign is a local charged-binder/rotor or two-copy dimer
-encounter tournament that simultaneously attacks local cutoff enforcement,
-autonomous phase origin, and independent clock comparison before any
-continuum or universal-time claim.
+Cycle-451/Cycle-570 physical schedules are dropped as physical-composition
+evidence because Cycle 599 attaches its payload only in host-side algebra.
 
-## Independent parent verification
+### N5 — rhetoric resolution audit
 
-The parent independently inspected the failed preregistered contract and
-reran the frozen runner without changing its `q=1,2` train or `q=1,2,3` held
-schedule. The expected process exit is `1`, because the route is deliberately
-packaged as `8 PASS / 1 FAIL`; treating that exit as a successful clock result
-would be a scope error.
+| narrowed phrase | per-element | per-site | per-mode | per-block | lattice-wide |
+|---|---|---|---|---|---|
+| q-indexed recurrence is not promoted to time | untested/no negative | untested/no negative | untested/no negative | tested finite algebraic block only | untested/no negative |
+| wrapped/eigen phase is not promoted to energy | untested/no negative | untested/no negative | untested/no negative | tested finite phase words only | untested/no negative |
+| binder role bit is not promoted to physical M2 | untested/no negative | untested/no negative | untested/no negative | tested absence of primitive/E-G/leakage/layout | untested/no negative |
+| binder/latch is not promoted to Record | untested/no negative | untested/no negative | untested/no negative | tested absence of actuality/permanence/readability | untested/no negative |
+| coherent squared norm is not promoted to probability/occurrence | untested/no negative | untested/no negative | untested/no negative | tested diagnostics without selection/calibration | untested/no negative |
 
-- worker runner SHA-256: `11c7c12fab90a8ad3ac79cf9352b9d6c248f1f3359b67d260c3714a04ad74540`;
-- worker note SHA-256 before this appendix: `d8b35405fe51b2f3ffe880888675f8450a6545c9a0227364be9e68d3ffe76613`;
-- worker receipt SHA-256: `8763651e933026cd206bc77ee6bbf1e5bb55d7a9efd28be73b75be47f59be415`;
-- worker cold transcript SHA-256: `509a5b9d26a91593f0453172cdc20febd2b31a58ffa616ccd2983a2fc4f46d2a`;
-- parent rerun: `8 PASS / 1 FAIL`, `13.351668875082396 s`, maximum RSS
-  `1,031,602,176` bytes;
-- parent receipt SHA-256: `5cff047e3b6fc28408ce56a1ec14eae3784ae182aa414ceeb76df7609de1fef4`;
-- parent transcript SHA-256: `e3bdd68cef6e705fda180f8740e586c4e700562e916b4985a4b5b920399e56a5`.
+### N6 — partial-closure paths
 
-After deleting only the resource fields `elapsed_seconds` and
-`maximum_RSS_bytes`, the worker and parent receipts are byte-identical under
-sorted JSON normalization. The parent therefore reproduces the exact q-even
-positive/q-odd-zero boundary, the finite Route-C localization failure, and
-the absence of any broad no-go or axiom pressure. No completed strict-M2
-clock, proper-time law, or primitive pulse/readout layout is inferred.
+| candidate file/path | status | what it closes if constructed |
+|---|---|---|
+| current Cycle-599 runner | executed narrow algebraic positive | frozen recurrence and finite spectral diagnostics only |
+| Cycle-441 runner | exact-pinned parent component | Q1 functional construction, not Cycle599 dense-control composition |
+| Cycle-590 runner | exact-pinned parent component | parent N2 compiler, not vacuum/A2 pulse/readout |
+| scripts/physical_local_even_A2_pulse_readout_M2_compiler_cycle_next.py | not created; open | primitive E-G/leakage/layout/deletion/all24 and local number checks |
+| scripts/physical_intrinsic_tick_relational_duration_ramsey_composition_cycle_next.py | not created; open | autonomous preparation and physical time-side attachment |
+
+No convention-only closure is found or claimed. No new axiom is required or
+proposed. No primitive/control-plane verdict is made.
+
+### N7 — hostile steelman
+
+A hostile constructive reviewer should compose the exact-pinned Cycle-590
+parent compiler with a new primitive-M2 vacuum/A2 pulse and X/Y readout,
+autonomously prepare a non-postselected bound branch, and compare its intrinsic
+tick only at physical endpoint/predecessor intervals. Supporting authorities
+are Cycle-590 note lines 127-150, Cycle-583 note lines 256-269, and the current
+Route-B executable surface. The actionable terminal is held L3/L6 E-G,
+inverse, leakage, layout, deletion, and all-24 certificates for preparation,
+update, readout, and event attachment with no host q schedule or unphysical
+binder role. This route is open and defeats every present broad negative.
+
+### N8 — cross-cycle echo
+
+| prior surface | status/mechanism | applicability |
+|---|---|---|
+| Cycle 441 dense functional completion | open in Cycle 599 | compile before calling Route A physical |
+| Cycle 451 matcher | open at Ramsey payload | host attachment is not composition |
+| Cycle 570 event/accumulator schedule | exact parent only | compose physical payload explicitly |
+| Cycle 583 second-mode localization | not retired | try encounter/two-copy routes |
+| Cycle 590 new-interface physical circuit | not retired | compile vacuum/A2 pulse/readout |
+| Cycle597 | narrowed positive with no-go Status FAIL | same claim/gate separation; no science import |
+| Cycles 610–612 | future acceptance only; no back-credit | preserve mechanism distinctions and physical-side supplies |
+
+Similar prior walls have been retired only through explicit compilation or
+honest narrowing. A route-independent obstruction is not established. There
+is no axiom pressure.
+
+## Six-wall ledger and maturity
+
+| wall | Cycle-599 movement | residual |
+|---|---|---|
+| C_ref | algebraic Q1 and binder roles condition candidate words | no autonomous physical device identity, preparation, or Record |
+| C_num | exact q=2-positive/odd-zero recurrence | no complete clock, unit, or probability law |
+| C_wrap | supplied single-pair origin and nonwrap rule | autonomous origin and multi-event rollover open |
+| C_int | coarse free-plus-contact law drives recurrence | no composed Ramsey M2 interface, lapse, or energy |
+| C_local | role/M2 inflation removed explicitly | every new Cycle599 primitive E-G/leakage/layout remains null |
+| C_source | candidate ratios are co-registered algebraically | no source-to-clock response, gravity, or sign law |
+
+Maturity rebase: none. Cycle 599 does not change the repo-wide 0–5 planning
+scores because it constructs no new physical clock interface.
+
+## Optimal next campaign
+
+Build the primitive local-even vacuum/A2 pulse/readout compiler first. Require
+literal M2 composition, local number checks, E-G, inverse, leakage, deletion,
+held L3/L6, and all-24 layout. Then compose it with autonomous non-postselected
+bound-branch preparation and the future intrinsic-tick/relational-duration
+endpoint interface. Do not revisit continuum, universal-time, or axiom
+language before that bounded composition passes.
+
+## Cold verification
+
+Final runner SHA-256: 7077c58b7c41f59606c8a5ccc0135017d937a0dd24184c083fa2df5b4b435840
+
+Final cold transcript SHA-256: c25c292c1ac5ba81f0139d6795990872312f371b997b076135345c7235e44803
+
+Final receipt SHA-256 is reported externally because a receipt cannot
+self-hash.
+
+Cold result: 9 PASS / 0 FAIL; internal 10.878679084009491 seconds and
+947372032 maximum RSS bytes; external 77.74 real seconds, 1014972416 maximum
+resident-set bytes, and 1479411440 peak memory-footprint bytes. All remain
+below the 300-second / 3-GiB caps.

@@ -1,325 +1,134 @@
-# Two-M2 CAR phase / link-field QCA tournament — Cycle 609 (2026-07-22)
+# Cycle 609 — algebraic parity lowering, F17 aggregate maps, and common-action comparison
 
-- authority: none
-- audit: unset
-- constitutional effect: none
-- status: exact support-two algebraic lowerings with an explicit NN-packing wall; no shared no-go and no axiom pressure
+Date: 2026-07-22
+Authority: none
+Audit: unset
+Author artifact status accepted: false
+Constitutional effect: none
 
-## Exact target contract
+## Result
 
-Cycle609 attacks two precise Cycle607 residuals.  Route A must replace the
-single 16-M2 `N*Q` lookup by explicit gates of support<=2 M2 over the complete
-on/off-code Hilbert basis.  Route B must replace the uncompiled spatial
-response by a bounded reversible translation/proper-cubic QCA driven by the
-actual Cycle600 carrier sector.  Route C must compare that law with Cycle607's
-static and matched-word shore without treating modular labels as real
-amplitudes.
+Cycle 609 retains three executed results and retracts the prior physical language around them.
 
-Completion does not mean an accepted finite angle alphabet, empirical charge,
-energy/stress/gravity, causal time, Born probability, Records, or event
-selection.  The runner byte-pins Cycle607 and inherits its mass/contact/seam
-shore without editing any control-plane surface.
-
-## Route A — exact support<=2 M2 lowering
-
-Cycle607 used the full-space diagonal unitary
-
-`U = exp(2 pi i N_CAR Q/16)`
-
-on twelve carrier bits and four W16 field bits.  For each carrier species and
-field bit, Cycle609 exhaustively Walsh-transforms the five-bit Boolean function
-`occupied(label)*q_bit`, where occupied is exactly one on labels 4..9 and zero
-on absent, neutral, and off-code labels 10..15.  Combining all three species
-and four field bits gives 110 nonzero Pauli coefficients including one global
-phase.
-
-Each nonempty `exp(i pi a_S Z_S)` factor is executed by:
-
-1. CNOTs from every other support bit into a pivot;
-2. `Rz(-2 pi a_S)` on the pivot;
-3. the inverse CNOT sequence.
-
-Thus every algebraic elementary gate has support one or two M2.  There are exactly 109
-Rz rotations and 318 logical parity CNOTs per cell.  Every angle is printed as
-an exact rational multiple of pi; the global phase is printed separately.
-The full 65,536-state phase table, including all invalid labels, is exhausted.
-The inverse negates every coefficient, and deleting one nonzero rotation gives
-a nonzero signal.  No scratch or discarded garbage is used.
-
-This is an exact parameterized-angle compiler.  It does not claim that the
-printed rational rotations already belong to a separately accepted finite
-angle alphabet.
-
-The literal Cycle607 layout is rebuilt on train L3, held L6, and out-family
-L7.  The runner prints maximum physical pair distance and a conservative
-serial NN depth bound obtained from the inherited Cycle527 route-cost formula.
-Cycle609 does **not** materialize the nearest-neighbor path lists, check simultaneous fine-site
-or edge conflicts, prove cell-to-cell path disjointness/supercell isolation, or
-execute route-work restoration.  Therefore this is a bounded-distance
-support-two compiler, not yet an executable NN packing certificate.
-The phase law itself has zero residual on all 65,536 states under every one of
-the 24 proper-cubic label actions, and the carrier-label representation closes
-under all 576 products.  Coordinate injection and coordinate composition are
-checked separately on every size.  Route order is a compiler schedule, not
-time.
-
-Disposition: **constructive exact support-two, bounded-distance lowering of the
-complete Cycle607 CAR/W16 interaction; simultaneous NN packing remains open**.
-
-## Route B — exact F17 link-field phase-space QCA
-
-### Accepted carrier source and one modular action
-
-Route B uses a distinct F17 propagation field because both 2 and 12 are
-invertible modulo 17.  Each site has a five-M2 `Q` word and five-M2 `P` word.
-The doubled computational presentation is explicit; it is not called one
-single-register conjugate-basis Weyl realization.
-
-The actual Cycle600 carrier labels carry the frozen trial charge:
-
-- matter label 4..9: +2;
-- neutral label 1..3: -1;
-- absent or invalid label: 0.
-
-On the N=1 Cycle600 sector, one matter carrier and two neutral-W carriers have
-exact total charge zero.  Their expected density is `2(point-uniform)`, so
-division by the declared carrier charge 2 returns Cycle607's point-minus-
-uniform source without a host future-source query.  The +2/-1 convention is
-supplied and is not empirical charge.
-
-With `alpha=12^-1=10 mod 17`, where 10 is only the F17 arithmetic
-representative of the supplied rational coefficient `1/12`, the local modular
-action is
-
-`A = alpha [s sum_x J_x Q_x - 1/2 sum_<xy> (Q_x-Q_y)^2]`
-
-plus kinetic drift.  The kick and drift are
-
-`P <- P + alpha (s J - L Q) mod 17`,
-
-`Q <- Q + P mod 17`.
-
-The same source term supplies the field kick and reciprocal matter phase.  The
-link term supplies spatial propagation.  The map is a reversible finite-field
-symplectic shear, and its inverse is executed algebraically.
-
-### QCA schedule, constraints, and gate lowering
-
-All positive-axis links are colored into commuting shear sublayers.  Even
-cycles use two colors per axis; odd cycles use a third seam color.  L3, L6,
-and held L7 have zero same-color vertex conflicts.  Since the link shears
-commute, axis/color order is a supplied compiler schedule rather than a law or
-preferred frame.  The aggregate local link map is translation covariant; the
-exposed coordinate/L/parity/seam coloring is **not** claimed to be a strictly
-translation-invariant or proper-cubic-covariant gate schedule.
-
-F17 words use five M2 with lawful values 0..16.  Values 17..31 are fixed by
-every block, so the valid-code projector commutes exactly.  Reused clean
-scratch is returned to zero.  ADD17 and multiplication by alpha are exhausted
-as full-space permutations and receive an explicit bounded support-two
-synthesis:
-
-`cycle decomposition -> Gray-adjacent transpositions -> clean-scratch
-multi-controlled X -> exact H/T/CNOT Toffoli lowering`.
-
-The receipt prints transposition, multi-control, Toffoli, CNOT, and logical scratch
-bounds.  It also exhausts the 512-state carrier-charge lookup and the 512-state
-carrier/Q reciprocal phase, printing the latter's exact rational-angle
-inventory and support-two parity lowering.  Total persistent content is 12
-carrier plus five Q plus five P M2 per cell; up to eight clean scratch M2 are
-reused, for 30 live M2 per cell.  The literal carrier/Q/P/scratch coordinates
-and pair-distance bounds are explicit.  The serial NN depth is only a bound
-using the inherited Cycle527 route-cost formula: Cycle609 does not materialize
-paths, check simultaneous path/edge conflicts (including wrap seams and
-scratch occupancy), or establish packing covariance.  Those are retained
-compiler walls.
-Cycle600's global carrier and neutral-W preparation is still supplied rather
-than locally enforced.
-
-### Tests
-
-The runner exhausts all 4,096 physical three-carrier label words in the local
-charge descent, then executes per-encoded-word joint stream/contact/source EG,
-field update, reciprocal phase, full inverse, matter continuity, the local
-field equation, and the summed impulse ledger on L3/L6/L7.  Source deletion and
-link deletion are nonzero.  Both coupling signs and kick-first, drift-first,
-and symmetric half-drift orders are run.  Under the supplied reversal
-`R(Q,P)=(Q,-P)`, only the symmetric schedule passes; this does not select sign
-and is not framework time.
-
-Random wrap fixtures and exact inverses operate in F17.  All 24 scalar/frame
-actions and all 576 products pass.  Odd and even sizes both use lawful bounded
-colorings.  Modular impulse is not energy, not stress, and not gravity.
-
-Disposition: **constructive exact translation-covariant aggregate F17 link QCA
-and exact support-two arithmetic synthesis in a doubled Q/P presentation;
-simultaneous NN packing and the colored finite-volume gate schedule are open or
-supplied, and empirical interpretation and single-register metaplectic
-realization remain open**.
-
-## Route C — response, wrap, alias, and matched-word shore
-
-The real companion of the same polynomial action uses `alpha=1/12` and the
-neutral-W expected source `2(point-uniform)`.  Dividing the response by the
-frozen carrier charge 2 reproduces Cycle607's no-refit train L3, held L6, and
-out L7 Cesaro fixtures.  The response residuals, absolute errors, horizons,
-and endpoint norms are printed.
-
-F17 is the exact finite-field reduction of the rational recurrence whenever
-the denominators are invertible.  A six-update exact-Fraction control on every
-size reduces to the modular QCA with zero residual.  Nevertheless, the
-canonical signed representative of an F17 fraction is not its real rational
-amplitude; the runner requires a nonzero alias signal.  The real companion is
-therefore a common-action comparison, not a claim that modular word values are
-measured real fields.
-
-The Cycle585/588 `5/(32pi)` rows and Cycle451/570 `3:4` and `5:4` matched words
-are carried unchanged.  Those matched words are not events, select no
-occurrence, and have no derived calibration.  Update count is not time.
-
-Disposition: **constructive exact reduction/common-action response bridge;
-canonical real-lift and empirical event interpretation remain open**.
-
-## Supplied inventory
-
-Supplied: Cycle600's prepared carrier/neutral-W sector; W16 bit convention;
-the exact rational Rz angles; F17; doubled Q/P representation; +2/-1 carrier
-charge; alpha; sign; factor schedule and reversal; finite horizons; and
-matched-word association.
-
-Derived/executed: full-space Walsh identity; 109-Rz/318-CNOT support-two
-schedule; phase-law and coordinate all24/all576 checks; NN route-cost bounds
-only; exhaustive carrier-charge descent; full-space modular arithmetic,
-charge-lookup, and reciprocal-phase compilers; exact source/link/drift QCA and
-inverse; local constraints, continuity, odd/even coloring; rational-to-F17
-reduction; and neutral-W no-refit response.
-
-Not derived: materialized simultaneous NN route packing or packing covariance;
-a separately accepted finite angle alphabet; single-register
-metaplectic field; canonical real amplitude for modular labels; carrier-sector
-preparation; empirical charge, energy, stress, gravity, time, event selection,
-Born probability, or Record actuality.
-
-## Full no-go discipline
-
-### N1 — normalized alternatives
-
-1. Walsh/parity phase polynomial — attempted positive; exact W16 support-two
-   lowering.
-2. F17 phase-space link QCA — attempted positive; modular symplectic invariant.
-3. Single-register metaplectic F17 Clifford — live/unattempted; would remove
-   the doubled Q/P presentation.
-4. Six-ray unitary lattice gas — live/unattempted; stream/scatter invariant and
-   a different stable-response obligation.
-5. Cycle590 reversible word arithmetic — prior partial; distinct 53-M2 matter
-   presentation.
-6. Link gauge/Gauss-law field — live/unattempted; local constraint rather than
-   phase-space shear.
-7. Cycle607 real alpha response — prior positive but not an M2 propagation
-   compiler.
-
-These families differ in object, invariant, or terminal obligation.
-
-### N2 — wall independence
-
-The receipt prints all 28 pairs among eight collapsed walls: simultaneous NN
-packing/schedule covariance; finite angle alphabet; doubled Q/P presentation;
-modular/real alias; carrier-sector preparation; charge/modulus choice;
-empirical energy/stress/gravity identification; and matched-word selection.
-Closing either member does not automatically close the other.
-
-### N3 — hidden-wall scan
-
-The scan exposes W16, Walsh convention, support-two versus materialized NN
-packing, the inherited serial route-cost formula, rational angles, F17,
-doubled words, charge convention, neutral-W preparation, alpha, reversal,
-factor order, horizons, signed-lift comparison, and matched-word association.
-
-### N4 — residual matching
-
-Cycle607's 16-M2 undecomposed lookup exactly matches and is closed at the
-support-two algebraic level by Route A; simultaneous NN packing is distinct.
-Cycle607's absent physical propagation matches the aggregate modular QCA of
-Route B; NN packing and real-lift interpretation are distinct residuals.
-Cycle600's prepared-sector wall does not match local arithmetic constraints and
-is not cited as closed.
-
-### N5 — rhetoric audit
-
-“Not energy/stress/gravity” is restricted to modular element, site, block, and
-lattice ledgers; no empirical identification was tested.  “Not time” is
-restricted to schedules/reversal maps; no clock rate was tested.  “Not events”
-is restricted to exact matched words; occurrence, Record, and calibration were
-not tested.
-
-### N6 — partial closure
-
-Walsh identities retire the lookup residual at the algebraic support-two level
-without new physics.  Exact F17 reduction retires aggregate bounded
-propagation/inverse while leaving NN packing and representation semantics
-explicit.  The prepared neutral-W orbitals provide local zero-mode
-compensation on N=1 without a host future-source service.
-
-### N7 — steelman
-
-A hostile reviewer should reject any obstruction claim.  Explicit path
-coloring or supercell isolation could close the NN packing wall.  A
-single-register metaplectic F17 Clifford or six-ray unitary lattice gas could
-remove the doubled-register and signed-lift walls, while the printed rational
-rotations could be compiled into whatever finite angle alphabet is ultimately
-accepted.  Those are concrete live mechanisms with untested terminal
-obligations.
-
-### N8 — cross-cycle echo
-
-Cycles560–600 repeatedly retired host ordering and particle-label walls with
-bounded encodings.  Cycle609 likewise replaces Cycle607's block lookup and
-non-M2 propagation with explicit support-two and exact modular constructions.
-Cycles451/570 retained matched words while keeping calibration separate.
-
-**Broad negative gate: FAIL / DO NOT SHIP.**  There is no route-independent
-obstruction, minimum-content result, or axiom pressure.
-
-## Ledger and next campaign
-
-- `C_ref`: actual carrier/neutral-W charge drives the field; charge convention,
-  modulus, reversal, sign, and matched-word association remain supplied.
-- `C_num`: exact W16 lowering and F17 arithmetic advance number realization;
-  physical scale and real signed lift remain open.
-- `C_wrap`: exact rational reduction and alias are now explicit; modular wrap
-  is not energy, rate, or time.
-- `C_int`: one modular action supplies source kick, reciprocal phase, link
-  shear, and drift in the declared doubled representation.
-- `C_local`: W16 interaction and aggregate F17 propagation now have exact
-  support-two identities, bounded-distance layouts, and local code/scratch
-  constraints; simultaneous NN route packing and schedule covariance remain
-  open.
-- `C_source`: actual N=1 matter plus neutral-W carriers give a zero-total source
-  and no-refit static bridge; empirical stress/gravity/event meaning is open.
-
-Maturity 0–5: operational quantum/records 4.0; time 3.0; inertia/matter 4.3;
-gravity/source 3.65; Born/probability 2.0.
-
-The next campaign should first materialize conflict-free NN paths for the Walsh
-and F17 gates, including seam and scratch conflicts plus schedule covariance.
-It should then replace doubled F17 Q/P words with a single-register metaplectic
-or six-ray unitary propagation and test empirical charge/sign with an
-autonomous detector.
-
-## Parent-agent verification
-
-The parent agent independently imported the frozen runner without invoking its
-receipt-writing main path and replayed the pinned shore, Routes A–C, and full
-N1–N8 gate.  All eight science checks passed and none failed.  The replay
-reproduced the exact 109-Rz/318-CNOT phase lowering, zero CAR-charge/joint/field
-`EG` and continuity residuals, full-joint inverse residual
-`6.144522109950655e-17`, zero all24/all576 failures, exact rational-to-F17
-reduction, the three no-refit response residuals, and the signed-lift alias
-signal `7.594907407407407`.  It also reproduced the deliberately false
-simultaneous-NN-packing and strict colored-schedule-translation contracts.
-
-The parent transcript is outside the repository at
-`/tmp/cycle609_parent_verify.txt`, SHA-256
-`53bcf5f2c455c9f11ab59aa807dab75b985375db6c70f8e4d4425543f713dbf4`.
-The frozen receipt and cold transcript pin the runner and pre-appendix note;
-this appendix changes only the human-readable note.
+1. Route A exactly factorizes the Cycle607 `exp(2 pi i NQ/16)` ambient-role phase into a Walsh/parity expression with 109 algebraic role-Rz factors and 318 algebraic role-CNOT factors. This is not a physical M2 compiler.
+2. Route B executes reversible F17 Q/P array shears and exact algebraic charge/phase identities from host-prepared role arrays. It is not a physical source, current, stress, gravity, or colored physical law.
+3. Route C compares a separate real alpha=`1/12` host recurrence with the same action polynomial and checks exact rational reduction to F17 for six updates. It is not a Route-B-to-response interface or a prediction law.
+
+No candidate rises to a confirmed breakthrough. The strongest result is the exact Route A algebraic phase factorization. It preserves the inherited mass, contact, and Cycle230 seam fixtures only as byte-pinned parent regressions; it does not compose the missing physical encoder `E`, physical update `G`, placement, routed word, leakage test, or local constraints.
+
+## Frozen dependencies and scope
+
+The runner pins the current Cycle600 quartet, the reviewed Cycle607 quartet, and this branch's three later note files. The complete recursive Python import closure is hashed as a manifest. The local branch's files numbered Cycle610–612 are:
+
+- `PHYSICAL_PROPER_CUBIC_SUPERCELL_STREAM_COMPOSITION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md`;
+- `PHYSICAL_MATTER_VARIATION_CURRENT_STRESS_COMPENSATOR_SOURCE_TOURNAMENT_CYCLE611_NOTE_2026-07-22.md`;
+- `PHYSICAL_MATTER_CAUSED_CAUSAL_INTERVAL_PROPER_TIME_BRIDGE_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md`.
+
+They are not the number-colliding causal-time Cycle610–612 artifacts on PR #5557. None of those local later notes is imported, executed, or back-credited here.
+
+The causal-time comparison is pinned separately to commit `a1e2f1ea60b1cf9b9cb0ae100c61cfd1f3a07318`, blob `e433350a20c79531e471fa131cd40189181e58c9`, and content SHA256 `028133c490e771dd3012061c79910fcfb88cd6132df072ec15e725fe9bc35496`. It reports that the 3:4 delay candidate can be rate-associated, while the 5:4 advance candidate remains reachable only through an event/count edit. That note is comparison evidence only: its runner was not executed by Cycle609, and event association remains underived.
+
+## Route A — exact role-phase factorization
+
+The five-bit local occupation-times-coordinate Walsh transform has 16 nonzero terms. Combining three four-bit carrier-role words and one four-bit W16 coordinate-role word yields 110 nonzero Pauli coefficients including the global term. The exhaustive ambient basis has 65,536 states, including carrier labels 10–15 under the declared zero-occupation extension.
+
+Executed results:
+
+- exact phase residual: `0`;
+- exact exponent residual over pi: `0`;
+- inverse coefficient residual: `0`;
+- nonzero-factor deletion signal: `0.7197900730699762`;
+- support histogram before parity lowering: `{0:1, 1:13, 2:45, 3:39, 4:12, 5:0}`;
+- global phase over pi: `135/128`;
+- 109 non-global role-Rz factors and 318 role-CNOT factors;
+- all-24 phase covariance: 1,572,864 state comparisons, residual `0`;
+- all-576 carrier-label group law: 9,216 label comparisons, zero failures;
+- role-coordinate audits: 72 all-24 arrays and 1,728 all-576 compositions, zero failures on L3, held L6, and out-family L7.
+
+The exact parameterized role-Rz angle inventory is
+`{-1/16,-1/32,-1/64,-1/8,-15/64,-3/16,-3/32,-3/64,-3/8,1/16,1/32,1/64,1/8,15/64,45/64,9/16,9/32,9/64,9/8} pi`.
+No accepted finite angle alphabet beyond these printed parameters is supplied.
+
+The maximum coordinate-distance proxy is 7, and the old serial figure 8,839 is retained only as an analytic distance cost proxy. It is not nearest-neighbor depth. Cycle600's carrier and field bits are algebraic role bits, and its coordinate allocations are role-coordinate blueprints. Constant support two in those roles, a coordinate allocation, and a distance proxy do not establish a physical M2 register, physical placement, path packing, route/unroute restoration, a leakage bound, or covariance of a physical schedule.
+
+Route A disposition: `CONSTRUCTIVE_EXACT_ALGEBRAIC_ROLE_GATE_FACTORIZATION; PHYSICAL_M2_COMPILER_OPEN`.
+
+## Route B — exact F17 aggregate array maps
+
+The executed update uses modulus 17, `alpha=10 mod 17` as the reduction of `1/12`, and `half=9 mod 17`. Q, P, carrier, sign, modulus, neutral-site choices, and the charge assignment are declared role data. Matter labels receive `+2`, neutral labels receive `-1`, and invalid/absent labels receive zero. These values are supplied, not derived as physical charge.
+
+The full 4,096-label algebraic carrier-role descent gives `charge=3N-3` with residual `0`. Across L3, held L6, and out-family L7, the aggregate array tests give:
+
+- sampled stream/contact/role-charge EG residual: `0`;
+- per-word aggregate field-update EG residual: `0`;
+- exact aggregate inverse residual: `0`;
+- full carrier-term/array inverse residual: `6.144522109950655e-17`;
+- constructed role-count transport identity residual: `0`;
+- defining Q/P update identity residual: `0`;
+- global modular sum identity residual: `0`;
+- minimum source deletion signal: `10`;
+- minimum link deletion signal: `14`;
+- minimum factor-order signal: `15`;
+- minimum sign signal: `7`.
+
+Aggregate covariance is exact under all lattice translations tested: 27 + 216 + 343 = 586 comparisons, residual `0`. The aggregate scalar-array map also has 72 all-24 frame comparisons with residual `0`. Separately, the inherited Cycle600 sampled mode-frame action has 72,576 all-576 comparisons with zero failures. These are different tests. Neither one executes covariance of a colored physical schedule.
+
+The host edge-color inventory has 9 colors for odd L3/L7 and 6 colors for even L6, with zero within-color vertex conflicts. The runner applies the aggregate Laplacian directly; it never applies those colored sublayers. Commutativity of the aggregate link terms does not turn the inventory into an executed schedule or a proper-cubic physical law.
+
+The reversible lookup/arithmetic inventories are exact as permutations, but their gate counts are analytic synthesis bounds rather than materialized circuit words:
+
+- ADD17: 1,024 basis states, 256 two-level transpositions, 800 Gray-adjacent steps, Toffoli bound 12,000, role-CNOT bound 72,000;
+- multiply by alpha: 32 basis states, 15 transpositions, 51 Gray steps, Toffoli bound 255, role-CNOT bound 1,530;
+- carrier-role charge lookup: 512 basis states, 144 transpositions, 450 Gray steps, Toffoli bound 5,850, role-CNOT bound 35,100;
+- reciprocal role phase: 512 states, 496 Walsh terms including global, maximum pre-factor support 9, 495 role-Rz and 3,522 role-CNOT factors per carrier species, exponent residual `0`.
+
+The declared inventory of 22 persistent binary roles and up to 8 scratch roles is not a physical M2 allocation. The maximum link coordinate-distance proxy is 23 and the old 9,576,000 figure is an analytic distance cost proxy, not routed depth. Standalone permutations fix invalid F17 labels 17–31; no composed local enforcement, scratch-return circuit, carrier-sector constraint, physical placement, routed arithmetic, or leakage control is present.
+
+The supplied reversal `R(q,p)=(q,-p)` selects the symmetric factor order for both signs with residual `0`; asymmetric orders have residual `14`. It does not select the sign, and the factor order is not framework time.
+
+Route B disposition: `CONSTRUCTIVE_EXACT_F17_AGGREGATE_ARRAY_MAP; PHYSICAL_M2_SOURCE_AND_SCHEDULE_COMPILERS_OPEN`.
+
+## Route C — no-refit comparison only
+
+Route C manually constructs `2(point-uniform)`, runs the Cycle607 real recurrence, divides the averaged response by 2, and compares it with the frozen finite-graph static solution. It does not consume Route B's prepared charge array, and it does not derive a uniform neutral-W expectation from a carrier register.
+
+The frozen relative residuals are:
+
+- L3/H384: `0.0033361272825549507`;
+- held L6/H768: `0.0018510636864354823`;
+- out-family L7/H1536: `0.0008344844938036573`.
+
+There are zero fitted parameters. Exact rational-to-F17 reduction has residual `0` for the first six updates. The minimum signed-representative alias signal is `7.594907407407407`, so signed F17 representatives are not real amplitudes. Endpoint norms are diagnostics, not probability, occurrence, rate, or time. The inherited `5/(32pi)` maximum comparison residual remains `0.001748688020904332`; that label is not derived by Cycle609 and the comparison is not a law. The matched 3:4 and 5:4 labels are not Events, Records, Born outcomes, or realized history.
+
+Route C disposition: `CONSTRUCTIVE_COMMON_ACTION_NO_REFIT_COMPARISON; SOURCE_INTERFACE_AND_PHYSICAL_INTERPRETATION_OPEN`.
+
+## N1–N8 no-go discipline
+
+N1 — Five attempted families are normalized with only the permitted `ATTEMPTED` or `RULED OUT BY PRIOR` markers. Live physical-M2, metaplectic, six-ray, local-gauge, and executed colored-schedule routes are listed separately. Because live routes remain, the negative gate is `FAIL / DO NOT SHIP NEGATIVE`.
+
+N2 — Every wall pair records both closure directions and independence as unknown where they were not tested. Pairwise independence is not established, so no shared obstruction can ship.
+
+N3 — The note is scanned for the forbidden hidden-import phrases. The supplied inventory includes the W16/Walsh convention, role-factor alphabet, Cycle600 role coordinates, F17, doubled Q/P roles, `+2/-1`, neutral-site placement, alpha, sign, reversal, factor order, edge coloring, horizons, manual source, signed-representative comparison, and matched-label association.
+
+N4 — Exact residual matching cites Cycle607 line 549 for the undecomposed NQ phase, Cycle607 line 785 for the uncomposed source/response interface, and Cycle600 line 918 for the uncomposed physical encoder. Route A matches only the first residual algebraically; the two physical-interface residuals persist. Nonmatches are not credited.
+
+N5 — The rhetoric audit is performed at five resolutions: symbol, role word, cell, finite array, and observation. It blocks promotion of algebraic gates to M2s, modular sums to current, action polynomials to energy, arrays to gravity, updates to time, and labels to Events or Records.
+
+N6 — The three local Cycle610–612 note files and the pinned causal-time comparison are listed with file, status, and the specific interface each could test. They are not imported or credited as Cycle609 closure.
+
+N7 — The actionable steelman is to compose one explicit physical M2 `E` and `G` around the exact role-phase factors, with placement, routed words, leakage, local constraints, and all-24 schedule covariance; then independently execute metaplectic, six-ray, and local-gauge alternatives before any shared-obstruction claim. The residual is cited at Cycle607 lines 549–558.
+
+N8 — Row-wise echoes cover Cycle600, Cycle607, the three local Cycle610–612 notes, and the PR causal-time Cycle612 note. Each row states whether it is executed, pinned-only, or comparison-only and prevents cross-cycle back-credit.
+
+No impossibility, minimum-content, shared-obstruction, or axiom-pressure claim is made. `negative_claim_shipped=false` and the narrowed positive artifact status is `PASS`.
+
+## Dependency ledger and next campaign
+
+- `C_ref`: unchanged physically. Exact algebraic role-charge descent and phase factors exist; sign, units, charge meaning, physical encoder, and source interface remain supplied or open.
+- `C_num`: advanced algebraically by the exact 65,536-state role-phase factorization and exact F17 permutations; physical register, scale, lawful enforcement, and accepted gate alphabet remain open.
+- `C_wrap`: diagnostic only. Rational reduction and alias are explicit; wrap is not energy, rate, time, or a real-amplitude rule.
+- `C_int`: advanced algebraically. The NQ phase factorization is exact, and a separate F17 polynomial map is exact; there is no composed physical join.
+- `C_local`: unchanged physically. Support-two role factors and bounded coordinate proxies do not supply physical placement, nearest-neighbor packing, routed update, leakage, constraints, or schedule covariance.
+- `C_source`: unchanged physically. Host-prepared charge/source arrays and a separate no-refit response comparison do not establish physical source, current, stress, gravity, or event selection.
+
+Maturity effect: no upward revision for operational quantum/Records, time, inertia/matter, gravity/source, or Born/probability. The optimal next campaign is a literal physical-M2 composition: specify the physical code space and `E`, place all carrier/field/auxiliary registers, materialize every routed gate word and colored update, enforce local constraints, and test `E G_coarse = G_physical E`, leakage, deletion, L6/L7 generalization, and all-24 schedule covariance. The metaplectic, six-ray, and local-gauge routes remain live comparators. There is no axiom pressure.

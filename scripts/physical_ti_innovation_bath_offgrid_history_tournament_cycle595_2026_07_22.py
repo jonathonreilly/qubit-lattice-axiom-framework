@@ -38,26 +38,78 @@ FAIL = 0
 Word = tuple[int, ...]
 
 FROZEN_PATHS = {
+    "Cycle552 runner": ROOT / "scripts/physical_autonomous_local_member_law_cell_cycle552_2026_07_21.py",
+    "Cycle552 note": ROOT / "docs/work_history/repo/review_feedback/PHYSICAL_AUTONOMOUS_LOCAL_MEMBER_LAW_CELL_CYCLE552_NOTE_2026-07-21.md",
+    "Cycle552 receipt": ROOT / "outputs/physical_autonomous_local_member_law_cell_cycle552_receipt_2026_07_21.json",
+    "Cycle565 runner": ROOT / "scripts/physical_born_menu_compiler_occurrence_interface_cycle565_2026_07_21.py",
+    "Cycle565 note": ROOT / "docs/work_history/repo/review_feedback/PHYSICAL_BORN_MENU_COMPILER_OCCURRENCE_INTERFACE_CYCLE565_NOTE_2026-07-21.md",
+    "Cycle565 receipt": ROOT / "outputs/physical_born_menu_compiler_occurrence_interface_cycle565_receipt_2026_07_21.json",
+    "Cycle571 runner": ROOT / "scripts/physical_renewable_first_hit_record_admission_tournament_cycle571_2026_07_22.py",
+    "Cycle571 note": ROOT / "docs/work_history/repo/review_feedback/PHYSICAL_RENEWABLE_FIRST_HIT_RECORD_ADMISSION_TOURNAMENT_CYCLE571_NOTE_2026-07-22.md",
+    "Cycle571 receipt": ROOT / "outputs/physical_renewable_first_hit_record_admission_tournament_cycle571_receipt_2026_07_22.json",
+    "Cycle571 cold": ROOT / "outputs/physical_renewable_first_hit_record_admission_tournament_cycle571_2026_07_22.txt",
+    "Cycle577 runner": ROOT / "scripts/physical_l41_projector_instrument_compiler_tournament_cycle577_2026_07_22.py",
+    "Cycle577 note": ROOT / "docs/work_history/repo/review_feedback/PHYSICAL_L41_PROJECTOR_INSTRUMENT_COMPILER_TOURNAMENT_CYCLE577_NOTE_2026-07-22.md",
+    "Cycle577 receipt": ROOT / "outputs/physical_l41_projector_instrument_compiler_tournament_cycle577_receipt_2026_07_22.json",
+    "Cycle577 cold": ROOT / "outputs/physical_l41_projector_instrument_compiler_tournament_cycle577_2026_07_22.txt",
+    "Cycle580 runner": ROOT / "scripts/physical_l41_elementary_gate_layout_compiler_cycle580_2026_07_22.py",
+    "Cycle580 note": ROOT / "docs/work_history/repo/review_feedback/PHYSICAL_L41_ELEMENTARY_GATE_LAYOUT_COMPILER_CYCLE580_NOTE_2026-07-22.md",
+    "Cycle580 receipt": ROOT / "outputs/physical_l41_elementary_gate_layout_compiler_cycle580_receipt_2026_07_22.json",
+    "Cycle580 cold": ROOT / "outputs/physical_l41_elementary_gate_layout_compiler_cycle580_2026_07_22.txt",
+    "Cycle582 runner": ROOT / "scripts/physical_l41_autonomous_recurrence_resource_tournament_cycle582_2026_07_22.py",
+    "Cycle582 note": ROOT / "docs/work_history/repo/review_feedback/PHYSICAL_L41_AUTONOMOUS_RECURRENCE_RESOURCE_TOURNAMENT_CYCLE582_NOTE_2026-07-22.md",
+    "Cycle582 receipt": ROOT / "outputs/physical_l41_autonomous_recurrence_resource_tournament_cycle582_receipt_2026_07_22.json",
+    "Cycle582 cold": ROOT / "outputs/physical_l41_autonomous_recurrence_resource_tournament_cycle582_2026_07_22.txt",
+    "Cycle584 runner": ROOT / "scripts/physical_l41_local_streaming_reuse_tournament_cycle584_2026_07_22.py",
+    "Cycle584 note": ROOT / "docs/work_history/repo/review_feedback/PHYSICAL_L41_LOCAL_STREAMING_REUSE_TOURNAMENT_CYCLE584_NOTE_2026-07-22.md",
+    "Cycle584 receipt": ROOT / "outputs/physical_l41_local_streaming_reuse_tournament_cycle584_receipt_2026_07_22.json",
+    "Cycle584 cold": ROOT / "outputs/physical_l41_local_streaming_reuse_tournament_cycle584_2026_07_22.txt",
+    "Cycle587 runner": ROOT / "scripts/physical_autonomous_occurrence_born_history_bridge_tournament_cycle587_2026_07_22.py",
+    "Cycle587 note": ROOT / "docs/work_history/repo/review_feedback/PHYSICAL_AUTONOMOUS_OCCURRENCE_BORN_HISTORY_BRIDGE_TOURNAMENT_CYCLE587_NOTE_2026-07-22.md",
+    "Cycle587 receipt": ROOT / "outputs/physical_autonomous_occurrence_born_history_bridge_tournament_cycle587_receipt_2026_07_22.json",
+    "Cycle587 cold": ROOT / "outputs/physical_autonomous_occurrence_born_history_bridge_tournament_cycle587_cold_2026_07_22.txt",
     "Cycle592 runner": ROOT / "scripts/physical_preregistered_innovation_record_frequency_bridge_tournament_cycle592_2026_07_22.py",
     "Cycle592 note": ROOT / "docs/work_history/repo/review_feedback/PHYSICAL_PREREGISTERED_INNOVATION_RECORD_FREQUENCY_BRIDGE_TOURNAMENT_CYCLE592_NOTE_2026-07-22.md",
-    "Cycle587 runner": ROOT / "scripts/physical_autonomous_occurrence_born_history_bridge_tournament_cycle587_2026_07_22.py",
-    "Cycle584 runner": ROOT / "scripts/physical_l41_local_streaming_reuse_tournament_cycle584_2026_07_22.py",
-    "Cycle582 runner": ROOT / "scripts/physical_l41_autonomous_recurrence_resource_tournament_cycle582_2026_07_22.py",
-    "Cycle580 runner": ROOT / "scripts/physical_l41_elementary_gate_layout_compiler_cycle580_2026_07_22.py",
-    "Cycle577 runner": ROOT / "scripts/physical_l41_projector_instrument_compiler_tournament_cycle577_2026_07_22.py",
-    "Cycle571 runner": ROOT / "scripts/physical_renewable_first_hit_record_admission_tournament_cycle571_2026_07_22.py",
-    "Cycle565 runner": ROOT / "scripts/physical_born_menu_compiler_occurrence_interface_cycle565_2026_07_21.py",
+    "Cycle592 receipt": ROOT / "outputs/physical_preregistered_innovation_record_frequency_bridge_tournament_cycle592_receipt_2026_07_22.json",
+    "Cycle592 cold": ROOT / "outputs/physical_preregistered_innovation_record_frequency_bridge_tournament_cycle592_cold_2026_07_22.txt",
+    "Cycle41 runner": ROOT / "scripts/complete_candidate_lstar_assembly_cycle41_2026_07_14.py",
 }
 FROZEN = {
-    "Cycle592 runner": "ab565af6aa59e66cea7b1ce625c08f8a88235ae9f7415e5e7d89d63af34ce9ce",
-    "Cycle592 note": "dccf62d6126287b20cbf96ff410534adfa1746d9cf3aba94fbfb2893855be212",
-    "Cycle587 runner": "2879d5a2641b334553769f15cf3a6f152f9f16f8f80b23db723448533c28c494",
-    "Cycle584 runner": "556e3e4759033706c795c9b65f55f12afaaaf84b8858dc4bb06b1c0a93400ab3",
-    "Cycle582 runner": "47c5138720add60ed6fa8b6506dcb8a9cbee9af5a1ab3defbc7aea4c3cfa290a",
-    "Cycle580 runner": "c46917d4a932cd3ad9a78e0547625055f5adf9d5cf7393700d7e6715dd515cd3",
-    "Cycle577 runner": "93bf1fa2859289b13037bfe7882cce86732e9377ed8b60e56c3bd55ebc0ce74f",
-    "Cycle571 runner": "7221d59558e4d731f98a2a4523c280aa98b889f23ea3f7be1acc8919395dfee8",
-    "Cycle565 runner": "b4b6e2c4491c5a6b30389764e8ac597ce07e1dac3f31c7cb8fff9297ac04437a",
+    "Cycle552 runner": "123c9fe8a7a3802af2627e21dd1cee5a8dadfbe0b82b7862e64c7024be6adc7f",
+    "Cycle552 note": "cc5cee11501bcf541faf54e0ca69a5d931037a126d1bac9e02c41c131e752400",
+    "Cycle552 receipt": "cf70de5c6034567637e96fab75bc5e8383630c82bf0b2e0e009049bf1a63415f",
+    "Cycle565 runner": "f31d207540efbf1541343c53552c947c77f2c984e705818786ac3c5f6d06eba2",
+    "Cycle565 note": "f29702462974b922e23624df57fb0b6107f5051e95c43d7b51a10953db829bbb",
+    "Cycle565 receipt": "a1b30e2fe268b270720f01ab426af5736cdc23189f94c641a428dc0369ccca9a",
+    "Cycle571 runner": "af0a0b4837781b2a03fc471c819ce4c6b95e4e4cc000c403fabe4ddb10f6b14c",
+    "Cycle571 note": "9781ac6d6d920c17b275c41b13d20ccb9e65ea68a97b48dc8ed8487718708efc",
+    "Cycle571 receipt": "6d75e5d7075c3e65f4a7d8a9406d3bd685cc58aa0be165dd0db5ffe34dc66e31",
+    "Cycle571 cold": "5e4acfe172dc31dbc2f01db314a7414115fc17e4b7ce4164beea0f1f111b46cb",
+    "Cycle577 runner": "0876bc8888193606446b5fe07f1fdd8e3ddef3b313551739b81be3792c820aa7",
+    "Cycle577 note": "7617ee877ca22986e0eacc09d08e14f6246cbc75b6443961c8626a1b5435f18c",
+    "Cycle577 receipt": "f7e6bbc40a4d56ee115ba43ddbab7bee4aff05227b988a057adc4420f51941ed",
+    "Cycle577 cold": "1c77d2ca4bf860482d3e55596c85e0983f32e755e7ceaac33ff0576a928c8a36",
+    "Cycle580 runner": "1f1acb34dc8976f5617319353e9591f64eae5cfe923a1dea736adfa792c4e718",
+    "Cycle580 note": "47a6418c27965219ddc5d3c2a8bc39fd34aa6173d3d1c16e473a136113b9c787",
+    "Cycle580 receipt": "9cf656c917ff738bc6d0d0e52dc8c251630aaedd86dd5a6b90dd4f7857cdbc1d",
+    "Cycle580 cold": "890c68f44bf6cc563916304b51481def8aa3ad7009a6ecfe0b0a4cffc85cd7e6",
+    "Cycle582 runner": "6b2e15a051c91542dcbebc6fe9dc4de24d6908dfbc36a2b44696809339a6b07c",
+    "Cycle582 note": "0f77f19c52f6aa66e895baba2782f8f802601f74d21c45c7eced78ccfdc2f0c5",
+    "Cycle582 receipt": "3ccacbe0eaf2b4e476956d0728e71d0d871a1aedb69f12d85c4368e4070ca4b0",
+    "Cycle582 cold": "bd18e16e6019b65c5331764cf3cf101ef816c275a3a8e4f6d0026b334e936d11",
+    "Cycle584 runner": "b7f2d262e4224bc298dd22b137e89e5e4118dc455e0454250908e503bb19be82",
+    "Cycle584 note": "da6576714664f225025442b08a696e4a2b90acbd0a7f60439ab462be9a4f0059",
+    "Cycle584 receipt": "a5a3c553a91a624edc5e4b104dd1e19d0f923df831b889aaa972cb40e7394872",
+    "Cycle584 cold": "3bb01b04ccfe8418de93404395d2e0cb42ea06579b79d80aecb1b14163037729",
+    "Cycle587 runner": "881e2c5a33217352a97df363f5c3dcd67980c2e672b59e072c6ecbc1cb0f27d1",
+    "Cycle587 note": "4b1a4e6916da24c74086d83f154cdb474dc87a4954b6be9ea600f685fb9b8e4b",
+    "Cycle587 receipt": "ed4ca30a1c174ec96eaeb3b10dc30f261efb274697acf061e23dd24dbb71a173",
+    "Cycle587 cold": "ce59771c3263e0f8a77dbeccffeb8e61628fb3bc70b5542924e2e743d5d59fe8",
+    "Cycle592 runner": "14d01e640eb1818c29aeb9f05313b2211e28e445d4798f3f6718d0b0fca0d62a",
+    "Cycle592 note": "092f0bfc06f7a42d82ed10ade5f551bdb08ebe7040c8c2b8ba0b1b3ea1c971c7",
+    "Cycle592 receipt": "edf069adbf58b66b30b6b9a66a85dd577b6c6c3170f833807dc57d59c8f14457",
+    "Cycle592 cold": "cb2640da38cf7cb0a69e6351871d9a9ba93c712f6865d5055b0bd79f18acdc5c",
+    "Cycle41 runner": "d8207fc0090ca926d060f536fedc2b2c031ccd50184e035c292e6b8eccb56814",
 }
 
 
@@ -487,7 +539,9 @@ def dependency_discipline_controls() -> dict[str, object]:
     observed = {name: file_sha(path) for name, path in FROZEN_PATHS.items()}
     note = NOTE.read_text(encoding="utf-8") if NOTE.exists() else ""
     body = " ".join(note.lower().replace("`", "").replace("*", "").split())
-    required = ("authority: none", "audit: unset", "route a", "route b", "route c", "off-grid", "bath law",
+    required = ("authority: none", "audit: unset", "route a", "route b", "route c", "35 exact-pinned surfaces",
+                "conditional rom", "candidate instrument", "global irreversibility is not derived",
+                "physical-m2 composition and leakage boundary", "off-grid", "bath law",
                 "stationary", "mixing", "nearest-neighbor", "coherent sectors", "packet is not record", "frequency is not probability",
                 "spent token is not energy", "schedule is not time", "all 24", "all 576", "supplied / derived / open",
                 "n1", "n2", "n3", "n4", "n5", "n6", "n7", "n8", "n1 status: fail", "no axiom pressure")
@@ -520,6 +574,20 @@ def dependency_discipline_controls() -> dict[str, object]:
             "Cycle595 derives deterministic orbit equidistribution but not mixing", "open dilation gives uniform marginal while retaining coherent sectors",
             "new off-grid states isolate the unchanged-ROM domain wall")
     qualifying = tuple(x for x in routes if x["status"] == "ATTEMPTED")
+    receipt_cycles = ("552", "565", "571", "577", "580", "582", "584", "587", "592")
+    receipt_checks = {}
+    for cycle in receipt_cycles:
+        receipt = json.loads(FROZEN_PATHS[f"Cycle{cycle} receipt"].read_text(encoding="utf-8"))
+        cycle_checks = {
+            "runner": receipt.get("runner_sha256") == FROZEN[f"Cycle{cycle} runner"],
+            "note": receipt.get("note_sha256") == FROZEN[f"Cycle{cycle} note"],
+            "verified": receipt.get("pass") is True
+            and receipt.get("tests_passed") == receipt.get("tests_total"),
+            "authority_audit": receipt.get("authority") == "none" and receipt.get("audit") == "unset",
+        }
+        if f"Cycle{cycle} cold" in FROZEN:
+            cycle_checks["cold"] = receipt.get("cold_transcript_sha256") == FROZEN[f"Cycle{cycle} cold"]
+        receipt_checks[f"Cycle{cycle}"] = cycle_checks
     discipline = {"N1_routes": routes, "N1_qualifying": len(qualifying), "N1_required": 5, "N1_status": "FAIL",
                   "N2_walls": walls, "N2_pairs": pairs, "N3_supplies": hidden, "N4_residuals": residuals,
                   "N5": "bounded route results only; no probability/Record/energy/time promotion", "N6": partial, "N7": steelman, "N8": echo,
@@ -527,12 +595,15 @@ def dependency_discipline_controls() -> dict[str, object]:
     result = {"expected": FROZEN, "observed": observed, "bath_law_sha256": BATH_LAW_SHA256,
               "expected_bath_law_sha256": EXPECTED_BATH_LAW_SHA256, "held_sha256": HELD_SHA256,
               "note_missing": missing, "declared_runner_sha256": declared.group(1) if declared else None, "runner_sha256": file_sha(Path(__file__)),
+              "receipt_checks": receipt_checks,
               "discipline": discipline,
               "inventory": {"supplied": hidden,
                             "derived": ("TI catalytic address orbit and uniform eight-step orbit-index average", "open coherent uniform reduced marginal", "LFSR orbit falsifier", "off-grid fixed-ROM/denominator residuals and all controls"),
                             "open": ("objective actuality and Record", "stochastic mixing/invariant physical ensemble", "continuous off-grid ROM", "archive/source renewal and thermodynamics", "Born calibration/time/source/gravity")},
               "pass": observed == FROZEN and BATH_LAW_SHA256 == EXPECTED_BATH_LAW_SHA256 and not missing and declared is not None
-              and declared.group(1) == file_sha(Path(__file__)) and len(qualifying) == 3 and len(pairs) == 15 and len(partial) == len(echo) == 5}
+              and declared.group(1) == file_sha(Path(__file__))
+              and all(all(checks.values()) for checks in receipt_checks.values())
+              and len(qualifying) == 3 and len(pairs) == 15 and len(partial) == len(echo) == 5}
     check("exact shores, bath-before-held freeze, inventory, and N1-N8 block overclaim and axiom pressure", result["pass"], result)
     return result
 

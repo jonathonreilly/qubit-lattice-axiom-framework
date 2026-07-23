@@ -1,9 +1,9 @@
-PASS Route A exactly queries and copies the Cycle577 grade distribution while retaining every coherent sector and supplied-copy import :: {'route': 'A coherent Cycle577-projector/Cycle580-pointer query', 'complete_Cycle580_instrument_residual': 4.440926982597988e-16, 'complete_Cycle580_inverse_residual': 8.906865629316332e-16, 'query_elementary_gates': 9, 'copy_CNOTs': 3, 'physical_M2_per_query_copy': 18, 'supplied_identically_prepared_query_copies': 4, 'physical_M2_per_four_query_batch': 72, 'maximum_projector_formula_residual': 2.220446049250313e-16, 'maximum_query_distribution_residual': 4.440892098500626e-16, 'maximum_copied_label_distribution_residual': 4.440892098500626e-16, 'maximum_exact_inverse_residual': 4.446523297499064e-16, 'maximum_boundary_dual_rail_leakage': 0.0, 'four_query_sector_ledger_residual': 1.7985612998927536e-14, 'active_query_gate_deletion_fixture_L1': 1.4999999999999996, 'active_copy_gate_deletion_fixture_L1': 1.4999999999999998, 'all_retained_sectors': True, 'coherent_grade_register_is_objective_probability': False, 'state_copy_preparation_or_no_cloning_derived': False, 'proper_cubic_frames': 24, 'all24_query_copy_edge_tests': 240, 'all24_query_copy_edge_failures': 0, 'rows': [{'name': 'train_uniform', 'split': 'train', 'exact_grade': (0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125), 'nonzero_single_query_sectors': 8, 'retained_four_query_tuple_sectors': 4096, 'maximum_single_component_empirical_variance': 0.02734375, 'numeric_grade_word_or_objective_sector_derived': False}, {'name': 'train_basis_corner', 'split': 'train', 'exact_grade': (1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0), 'nonzero_single_query_sectors': 1, 'retained_four_query_tuple_sectors': 1, 'maximum_single_component_empirical_variance': 0.0, 'numeric_grade_word_or_objective_sector_derived': False}, {'name': 'train_asymmetric', 'split': 'train', 'exact_grade': (0.09375, 0.09375, 0.03125, 0.03125, 0.28125, 0.28125, 0.09375, 0.09375), 'nonzero_single_query_sectors': 8, 'retained_four_query_tuple_sectors': 4096, 'maximum_single_component_empirical_variance': 0.050537109375, 'numeric_grade_word_or_objective_sector_derived': False}, {'name': 'held_offgrid_7over11_4over9_5over13', 'split': 'held', 'exact_grade': (0.10878010878010878, 0.17404817404817405, 0.06216006216006216, 0.09945609945609946, 0.13597513597513597, 0.21756021756021757, 0.0777000777000777, 0.12432012432012432), 'nonzero_single_query_sectors': 8, 'retained_four_query_tuple_sectors': 4096, 'maximum_single_component_empirical_variance': 0.04255694232384209, 'numeric_grade_word_or_objective_sector_derived': False}, {'name': 'held_offgrid_11over17_13over19_17over23', 'split': 'held', 'exact_grade': (0.32723112128146453, 0.11549333692286984, 0.17848970251716248, 0.06299636559429264, 0.15102974828375287, 0.05330461704132454, 0.08237986270022883, 0.029075245658904295), 'nonzero_single_query_sectors': 8, 'retained_four_query_tuple_sectors': 4096, 'maximum_single_component_empirical_variance': 0.055037728636585, 'numeric_grade_word_or_objective_sector_derived': False}], 'pass': True}
-PASS Route B uses one reversible fixed-point product rule over all 125 parameter words with no program selector or answer ROM :: {'route': 'B reversible unary fixed-point product-family synthesizer', 'parameter_fraction_bits': 2, 'transition_bits': 6, 'physical_M2': 525, 'logical_gate_count': 3072, 'exhaustive_parameter_words': 125, 'exhaustive_mask_failures': 0, 'inverse_failures': 0, 'binary_code_failures': 0, 'maximum_projector_formula_residual': 2.220446049250313e-16, 'maximum_exact_quantized_product_synthesis_residual': 0.0, 'maximum_approximation_bound_violation': 0.0, 'parameter_bit_deletion_L1': 0.5, 'absent_parameter_word_refusals': 1, 'Cycle592_answer_table_reads': 0, 'program_selector_M2': 0, 'state_specific_answer_rows': 0, 'static_nearest_neighbor_compiler': {'line_M2': 525, 'logical_Toffoli': 1536, 'literal_one_M2_primitives': 15360, 'literal_two_M2_core_primitives': 9216, 'adjacent_route_and_return_SWAPS': 1128448, 'nearest_neighbor_two_M2_calls': 1137664, 'maximum_unrouted_operand_distance': 513, 'route_adjacency_failures': 0, 'ordered_operand_failures': 0, 'terminal_wire_restoration_failures': 0, 'route_manifest_sha256': 'cee60ebbb81be5bb48945d3e84d301d08237e11af9e57ee438e1d997cd20436d', 'proper_cubic_frames': 24, 'all24_line_edge_tests': 12576, 'all24_line_edge_failures': 0, 'runtime_data_selects_route': False, 'pass': True}, 'rows': [{'name': 'train_uniform', 'split': 'train', 'parameters': ('1/2', '1/2', '1/2'), 'quantized_parameters': ('1/2', '1/2', '1/2'), 'denominator64_counts': (8, 8, 8, 8, 8, 8, 8, 8), 'target_to_synthesized_L1': 0.0, 'product_parameter_L1_bound': 0.0}, {'name': 'train_basis_corner', 'split': 'train', 'parameters': ('1', '1', '1'), 'quantized_parameters': ('1', '1', '1'), 'denominator64_counts': (64, 0, 0, 0, 0, 0, 0, 0), 'target_to_synthesized_L1': 0.0, 'product_parameter_L1_bound': 0.0}, {'name': 'train_asymmetric', 'split': 'train', 'parameters': ('3/4', '1/4', '1/2'), 'quantized_parameters': ('3/4', '1/4', '1/2'), 'denominator64_counts': (6, 6, 2, 2, 18, 18, 6, 6), 'target_to_synthesized_L1': 0.0, 'product_parameter_L1_bound': 0.0}, {'name': 'held_offgrid_7over11_4over9_5over13', 'split': 'held', 'parameters': ('7/11', '4/9', '5/13'), 'quantized_parameters': ('3/4', '1/2', '1/2'), 'denominator64_counts': (12, 12, 4, 4, 12, 12, 4, 4), 'target_to_synthesized_L1': 0.2880730380730381, 'product_parameter_L1_bound': 0.5691530691530692}, {'name': 'held_offgrid_11over17_13over19_17over23', 'split': 'held', 'parameters': ('11/17', '13/19', '17/23'), 'quantized_parameters': ('3/4', '3/4', '3/4'), 'denominator64_counts': (27, 9, 9, 3, 9, 3, 3, 1), 'target_to_synthesized_L1': 0.2395510835913313, 'product_parameter_L1_bound': 0.35920043074438013}], 'pass': True}
-PASS Route C deterministically consumes the derived grade mask with an exhaustive discrepancy certificate and explicit approximation/resource budget :: {'route': 'C deterministic +25 low-discrepancy physical rotor', 'physical_M2_per_occurrence_fixture': 1168, 'rotor_increment': 25, 'rotor_genesis': 9, 'rotor_period': 64, 'exhaustive_grade_words': 125, 'exhaustive_prefixes_per_word': 64, 'rotor_maximum_per_history_count_discrepancy': '67/32', 'natural_order_comparator_discrepancy': '16', 'EG_failures': 0, 'inverse_failures': 0, 'grade_mask_ledger_failures': 0, 'unchanged_Cycle552_interface_failures': 0, 'maximum_error_budget_violation': 0.0, 'active_select_deletion_residual': 1.4142135623730951, 'active_rotor_edge_deletion_residual': 1.4142135623730951, 'deleted_grade_word_refusals': 1, 'absent_grade_word_refusals': 1, 'host_sampler_or_answer_table_tokens': 0, 'carrier_and_grade_mask_catalytically_retained': True, 'fresh_blank_archive_M2_per_occurrence': 8, 'archive_packet_renewal_derived': False, 'rotor_frequency_promoted_to_Born': False, 'static_nearest_neighbor_compiler': {'line_M2': 1168, 'logical_Toffoli': 1024, 'literal_one_M2_primitives': 9216, 'literal_two_M2_core_primitives': 7304, 'adjacent_route_and_return_SWAPS': 7612272, 'nearest_neighbor_two_M2_calls': 7619576, 'maximum_unrouted_operand_distance': 1088, 'route_adjacency_failures': 0, 'ordered_operand_failures': 0, 'terminal_wire_restoration_failures': 0, 'route_manifest_sha256': '7d1935645a672d54518e407bf79a1a1237b61950ca25239e14fa7570af1fcf32', 'proper_cubic_frames': 24, 'all24_line_edge_tests': 28008, 'all24_line_edge_failures': 0, 'runtime_data_selects_route': False, 'pass': True}, 'rows': [{'name': 'train_uniform', 'split': 'train', 'corpus_size': 128, 'denominator64_grade': (0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125), 'finite_rotor_frequency': (0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125), 'rotor_to_grade_L1': 0.0, 'grade_approximation_L1': 0.0, 'frequency_to_target_L1': 0.0, 'parameter_approximation_bound': 0.0, 'rotor_discrepancy_bound': 0.130859375, 'combined_L1_bound': 0.130859375}, {'name': 'train_basis_corner', 'split': 'train', 'corpus_size': 96, 'denominator64_grade': (1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0), 'finite_rotor_frequency': (1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0), 'rotor_to_grade_L1': 0.0, 'grade_approximation_L1': 0.0, 'frequency_to_target_L1': 0.0, 'parameter_approximation_bound': 0.0, 'rotor_discrepancy_bound': 0.17447916666666666, 'combined_L1_bound': 0.17447916666666666}, {'name': 'train_asymmetric', 'split': 'train', 'corpus_size': 160, 'denominator64_grade': (0.09375, 0.09375, 0.03125, 0.03125, 0.28125, 0.28125, 0.09375, 0.09375), 'finite_rotor_frequency': (0.1, 0.09375, 0.025, 0.03125, 0.28125, 0.28125, 0.09375, 0.09375), 'rotor_to_grade_L1': 0.012500000000000004, 'grade_approximation_L1': 0.0, 'frequency_to_target_L1': 0.012500000000000004, 'parameter_approximation_bound': 0.0, 'rotor_discrepancy_bound': 0.1046875, 'combined_L1_bound': 0.1046875}, {'name': 'held_offgrid_7over11_4over9_5over13', 'split': 'held', 'corpus_size': 137, 'denominator64_grade': (0.1875, 0.1875, 0.0625, 0.0625, 0.1875, 0.1875, 0.0625, 0.0625), 'finite_rotor_frequency': (0.1897810218978102, 0.1897810218978102, 0.058394160583941604, 0.058394160583941604, 0.1897810218978102, 0.18248175182481752, 0.06569343065693431, 0.06569343065693431), 'rotor_to_grade_L1': 0.02645985401459852, 'grade_approximation_L1': 0.2880730380730381, 'frequency_to_target_L1': 0.3010792937800237, 'parameter_approximation_bound': 0.5691530691530692, 'rotor_discrepancy_bound': 0.12226277372262774, 'combined_L1_bound': 0.6914158428756969}, {'name': 'held_offgrid_11over17_13over19_17over23', 'split': 'held', 'corpus_size': 211, 'denominator64_grade': (0.421875, 0.140625, 0.140625, 0.046875, 0.140625, 0.046875, 0.046875, 0.015625), 'finite_rotor_frequency': (0.4218009478672986, 0.14218009478672985, 0.14218009478672985, 0.04739336492890995, 0.14218009478672985, 0.04739336492890995, 0.04265402843601896, 0.014218009478672985), 'rotor_to_grade_L1': 0.011404028436018914, 'grade_approximation_L1': 0.2395510835913313, 'frequency_to_target_L1': 0.2425131688993882, 'parameter_approximation_bound': 0.35920043074438013, 'rotor_discrepancy_bound': 0.07938388625592417, 'combined_L1_bound': 0.4385843170003043}], 'pass': True}
+PASS Route A exactly queries and copies the Cycle577 grade distribution while preserving every coherent sector and supplied-copy import :: {'route': 'A coherent Cycle577-projector/Cycle580-pointer query', 'complete_Cycle580_instrument_residual': 4.440926982597988e-16, 'complete_Cycle580_inverse_residual': 8.906865629316332e-16, 'query_elementary_gates': 9, 'copy_CNOTs': 3, 'physical_M2_per_query_copy': 18, 'supplied_identically_prepared_query_copies': 4, 'physical_M2_per_four_query_batch': 72, 'physical_M2_claim_basis': 'exact-pinned Cycle577 dual-rail composition plus exact-pinned Cycle580 elementary layout', 'primitive_composition_inherited_and_verified': True, 'unverified_role_block_EG': None, 'unverified_role_block_leakage': None, 'unverified_role_block_layout': None, 'maximum_projector_formula_residual': 2.220446049250313e-16, 'maximum_query_distribution_residual': 4.440892098500626e-16, 'maximum_copied_label_distribution_residual': 4.440892098500626e-16, 'maximum_exact_inverse_residual': 4.446523297499064e-16, 'maximum_boundary_dual_rail_leakage': 0.0, 'four_query_sector_ledger_residual': 1.7985612998927536e-14, 'active_query_gate_deletion_fixture_L1': 1.4999999999999996, 'active_copy_gate_deletion_fixture_L1': 1.4999999999999998, 'all_coherent_sectors_preserved': True, 'coherent_grade_register_is_objective_probability': False, 'state_copy_preparation_or_no_cloning_derived': False, 'proper_cubic_frames': 24, 'all24_query_copy_edge_tests': 240, 'all24_query_copy_edge_failures': 0, 'rows': [{'name': 'train_uniform', 'split': 'train', 'exact_grade': (0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125), 'nonzero_single_query_sectors': 8, 'supported_four_query_tuple_sectors': 4096, 'maximum_single_component_empirical_variance': 0.02734375, 'numeric_grade_word_or_objective_sector_derived': False}, {'name': 'train_basis_corner', 'split': 'train', 'exact_grade': (1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0), 'nonzero_single_query_sectors': 1, 'supported_four_query_tuple_sectors': 1, 'maximum_single_component_empirical_variance': 0.0, 'numeric_grade_word_or_objective_sector_derived': False}, {'name': 'train_asymmetric', 'split': 'train', 'exact_grade': (0.09375, 0.09375, 0.03125, 0.03125, 0.28125, 0.28125, 0.09375, 0.09375), 'nonzero_single_query_sectors': 8, 'supported_four_query_tuple_sectors': 4096, 'maximum_single_component_empirical_variance': 0.050537109375, 'numeric_grade_word_or_objective_sector_derived': False}, {'name': 'held_offgrid_7over11_4over9_5over13', 'split': 'held', 'exact_grade': (0.10878010878010878, 0.17404817404817405, 0.06216006216006216, 0.09945609945609946, 0.13597513597513597, 0.21756021756021757, 0.0777000777000777, 0.12432012432012432), 'nonzero_single_query_sectors': 8, 'supported_four_query_tuple_sectors': 4096, 'maximum_single_component_empirical_variance': 0.04255694232384209, 'numeric_grade_word_or_objective_sector_derived': False}, {'name': 'held_offgrid_11over17_13over19_17over23', 'split': 'held', 'exact_grade': (0.32723112128146453, 0.11549333692286984, 0.17848970251716248, 0.06299636559429264, 0.15102974828375287, 0.05330461704132454, 0.08237986270022883, 0.029075245658904295), 'nonzero_single_query_sectors': 8, 'supported_four_query_tuple_sectors': 4096, 'maximum_single_component_empirical_variance': 0.055037728636585, 'numeric_grade_word_or_objective_sector_derived': False}], 'pass': True}
+PASS Route B uses one reversible fixed-point product rule over all 125 parameter words with no program selector or answer ROM :: {'route': 'B reversible unary fixed-point product-family synthesizer', 'parameter_fraction_bits': 2, 'transition_bits': 6, 'physical_M2': 525, 'physical_M2_claim_basis': 'exact-pinned Cycle587 basis-state primitive compiler with recursively pinned Cycle523 Toffoli dependency', 'primitive_composition_inherited_and_verified': True, 'unverified_role_block_EG': None, 'unverified_role_block_leakage': None, 'unverified_role_block_layout': None, 'logical_gate_count': 3072, 'exhaustive_parameter_words': 125, 'exhaustive_mask_failures': 0, 'inverse_failures': 0, 'binary_code_failures': 0, 'maximum_projector_formula_residual': 2.220446049250313e-16, 'maximum_exact_quantized_product_synthesis_residual': 0.0, 'maximum_approximation_bound_violation': 0.0, 'parameter_bit_deletion_L1': 0.5, 'absent_parameter_word_refusals': 1, 'Cycle592_answer_table_reads': 0, 'program_selector_M2': 0, 'state_specific_answer_rows': 0, 'static_nearest_neighbor_compiler': {'line_M2': 525, 'logical_Toffoli': 1536, 'literal_one_M2_primitives': 15360, 'literal_two_M2_core_primitives': 9216, 'adjacent_route_and_return_SWAPS': 1128448, 'nearest_neighbor_two_M2_calls': 1137664, 'maximum_unrouted_operand_distance': 513, 'route_adjacency_failures': 0, 'ordered_operand_failures': 0, 'terminal_wire_restoration_failures': 0, 'route_manifest_sha256': 'cee60ebbb81be5bb48945d3e84d301d08237e11af9e57ee438e1d997cd20436d', 'proper_cubic_frames': 24, 'all24_line_edge_tests': 12576, 'all24_line_edge_failures': 0, 'runtime_data_selects_route': False, 'pass': True}, 'rows': [{'name': 'train_uniform', 'split': 'train', 'parameters': ('1/2', '1/2', '1/2'), 'quantized_parameters': ('1/2', '1/2', '1/2'), 'denominator64_counts': (8, 8, 8, 8, 8, 8, 8, 8), 'target_to_synthesized_L1': 0.0, 'product_parameter_L1_bound': 0.0}, {'name': 'train_basis_corner', 'split': 'train', 'parameters': ('1', '1', '1'), 'quantized_parameters': ('1', '1', '1'), 'denominator64_counts': (64, 0, 0, 0, 0, 0, 0, 0), 'target_to_synthesized_L1': 0.0, 'product_parameter_L1_bound': 0.0}, {'name': 'train_asymmetric', 'split': 'train', 'parameters': ('3/4', '1/4', '1/2'), 'quantized_parameters': ('3/4', '1/4', '1/2'), 'denominator64_counts': (6, 6, 2, 2, 18, 18, 6, 6), 'target_to_synthesized_L1': 0.0, 'product_parameter_L1_bound': 0.0}, {'name': 'held_offgrid_7over11_4over9_5over13', 'split': 'held', 'parameters': ('7/11', '4/9', '5/13'), 'quantized_parameters': ('3/4', '1/2', '1/2'), 'denominator64_counts': (12, 12, 4, 4, 12, 12, 4, 4), 'target_to_synthesized_L1': 0.2880730380730381, 'product_parameter_L1_bound': 0.5691530691530692}, {'name': 'held_offgrid_11over17_13over19_17over23', 'split': 'held', 'parameters': ('11/17', '13/19', '17/23'), 'quantized_parameters': ('3/4', '3/4', '3/4'), 'denominator64_counts': (27, 9, 9, 3, 9, 3, 3, 1), 'target_to_synthesized_L1': 0.2395510835913313, 'product_parameter_L1_bound': 0.35920043074438013}], 'pass': True}
+PASS Route C deterministically consumes the derived grade mask with an exhaustive discrepancy certificate and explicit approximation/resource budget :: {'route': 'C deterministic +25 low-discrepancy physical rotor', 'physical_M2_per_occurrence_fixture': 1168, 'physical_M2_claim_basis': 'exact-pinned Cycle587 basis-state primitive compiler with recursively pinned Cycle523 Toffoli dependency', 'primitive_composition_inherited_and_verified': True, 'unverified_role_block_EG': None, 'unverified_role_block_leakage': None, 'unverified_role_block_layout': None, 'rotor_increment': 25, 'rotor_genesis': 9, 'rotor_period': 64, 'exhaustive_grade_words': 125, 'exhaustive_prefixes_per_word': 64, 'rotor_maximum_per_history_count_discrepancy': '67/32', 'natural_order_comparator_discrepancy': '16', 'EG_failures': 0, 'inverse_failures': 0, 'grade_mask_ledger_failures': 0, 'unchanged_Cycle552_interface_failures': 0, 'maximum_error_budget_violation': 0.0, 'active_select_deletion_residual': 1.4142135623730951, 'active_rotor_edge_deletion_residual': 1.4142135623730951, 'deleted_grade_word_refusals': 1, 'absent_grade_word_refusals': 1, 'host_sampler_or_answer_table_tokens': 0, 'carrier_and_grade_mask_catalytically_preserved': True, 'fresh_blank_archive_M2_per_occurrence': 8, 'archive_packet_renewal_derived': False, 'rotor_frequency_promoted_to_Born': False, 'static_nearest_neighbor_compiler': {'line_M2': 1168, 'logical_Toffoli': 1024, 'literal_one_M2_primitives': 9216, 'literal_two_M2_core_primitives': 7304, 'adjacent_route_and_return_SWAPS': 7612272, 'nearest_neighbor_two_M2_calls': 7619576, 'maximum_unrouted_operand_distance': 1088, 'route_adjacency_failures': 0, 'ordered_operand_failures': 0, 'terminal_wire_restoration_failures': 0, 'route_manifest_sha256': '7d1935645a672d54518e407bf79a1a1237b61950ca25239e14fa7570af1fcf32', 'proper_cubic_frames': 24, 'all24_line_edge_tests': 28008, 'all24_line_edge_failures': 0, 'runtime_data_selects_route': False, 'pass': True}, 'rows': [{'name': 'train_uniform', 'split': 'train', 'corpus_size': 128, 'denominator64_grade': (0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125), 'finite_rotor_frequency': (0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125), 'rotor_to_grade_L1': 0.0, 'grade_approximation_L1': 0.0, 'frequency_to_target_L1': 0.0, 'parameter_approximation_bound': 0.0, 'rotor_discrepancy_bound': 0.130859375, 'combined_L1_bound': 0.130859375}, {'name': 'train_basis_corner', 'split': 'train', 'corpus_size': 96, 'denominator64_grade': (1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0), 'finite_rotor_frequency': (1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0), 'rotor_to_grade_L1': 0.0, 'grade_approximation_L1': 0.0, 'frequency_to_target_L1': 0.0, 'parameter_approximation_bound': 0.0, 'rotor_discrepancy_bound': 0.17447916666666666, 'combined_L1_bound': 0.17447916666666666}, {'name': 'train_asymmetric', 'split': 'train', 'corpus_size': 160, 'denominator64_grade': (0.09375, 0.09375, 0.03125, 0.03125, 0.28125, 0.28125, 0.09375, 0.09375), 'finite_rotor_frequency': (0.1, 0.09375, 0.025, 0.03125, 0.28125, 0.28125, 0.09375, 0.09375), 'rotor_to_grade_L1': 0.012500000000000004, 'grade_approximation_L1': 0.0, 'frequency_to_target_L1': 0.012500000000000004, 'parameter_approximation_bound': 0.0, 'rotor_discrepancy_bound': 0.1046875, 'combined_L1_bound': 0.1046875}, {'name': 'held_offgrid_7over11_4over9_5over13', 'split': 'held', 'corpus_size': 137, 'denominator64_grade': (0.1875, 0.1875, 0.0625, 0.0625, 0.1875, 0.1875, 0.0625, 0.0625), 'finite_rotor_frequency': (0.1897810218978102, 0.1897810218978102, 0.058394160583941604, 0.058394160583941604, 0.1897810218978102, 0.18248175182481752, 0.06569343065693431, 0.06569343065693431), 'rotor_to_grade_L1': 0.02645985401459852, 'grade_approximation_L1': 0.2880730380730381, 'frequency_to_target_L1': 0.3010792937800237, 'parameter_approximation_bound': 0.5691530691530692, 'rotor_discrepancy_bound': 0.12226277372262774, 'combined_L1_bound': 0.6914158428756969}, {'name': 'held_offgrid_11over17_13over19_17over23', 'split': 'held', 'corpus_size': 211, 'denominator64_grade': (0.421875, 0.140625, 0.140625, 0.046875, 0.140625, 0.046875, 0.046875, 0.015625), 'finite_rotor_frequency': (0.4218009478672986, 0.14218009478672985, 0.14218009478672985, 0.04739336492890995, 0.14218009478672985, 0.04739336492890995, 0.04265402843601896, 0.014218009478672985), 'rotor_to_grade_L1': 0.011404028436018914, 'grade_approximation_L1': 0.2395510835913313, 'frequency_to_target_L1': 0.2425131688993882, 'parameter_approximation_bound': 0.35920043074438013, 'rotor_discrepancy_bound': 0.07938388625592417, 'combined_L1_bound': 0.4385843170003043}], 'pass': True}
 PASS all24/all576 conditional-occurrence covariance and malformed-domain controls remain exact :: {'proper_cubic_frames': 24, 'all24_member_tests': 96, 'all24_member_failures': 0, 'all576_axis_tests': 1728, 'all576_axis_failures': 0, 'malformed_domain_refusals': 6, 'malformed_domain_total': 6, 'pass': True}
-PASS exact shores, rule-before-held freeze, inventory, and full N1-N8 prevent state-family and Born overclaim :: {'expected': {'Cycle595 runner': 'cdfcddb00974205faa8bc60c617ff0dd42bf9f8947b0a55a4b172157b2d28de2', 'Cycle595 note': 'b1b1fc0960f69abcf9050b7eee2f3387188d45ea7704ca2db87381cd5fd3b730', 'Cycle592 runner': 'ab565af6aa59e66cea7b1ce625c08f8a88235ae9f7415e5e7d89d63af34ce9ce', 'Cycle592 note': 'dccf62d6126287b20cbf96ff410534adfa1746d9cf3aba94fbfb2893855be212', 'Cycle580 runner': 'c46917d4a932cd3ad9a78e0547625055f5adf9d5cf7393700d7e6715dd515cd3', 'Cycle580 note': 'e8ca5acdaec0c7ec5f0ba9772d7736352bcf132e961483d93f19c679439df276', 'Cycle577 runner': '93bf1fa2859289b13037bfe7882cce86732e9377ed8b60e56c3bd55ebc0ce74f', 'Cycle577 note': '23ef5601b73c121d5e82c9031ec0ff4acffdc5471c43aa4dec63a78085aa7c0f'}, 'observed': {'Cycle595 runner': 'cdfcddb00974205faa8bc60c617ff0dd42bf9f8947b0a55a4b172157b2d28de2', 'Cycle595 note': 'b1b1fc0960f69abcf9050b7eee2f3387188d45ea7704ca2db87381cd5fd3b730', 'Cycle592 runner': 'ab565af6aa59e66cea7b1ce625c08f8a88235ae9f7415e5e7d89d63af34ce9ce', 'Cycle592 note': 'dccf62d6126287b20cbf96ff410534adfa1746d9cf3aba94fbfb2893855be212', 'Cycle580 runner': 'c46917d4a932cd3ad9a78e0547625055f5adf9d5cf7393700d7e6715dd515cd3', 'Cycle580 note': 'e8ca5acdaec0c7ec5f0ba9772d7736352bcf132e961483d93f19c679439df276', 'Cycle577 runner': '93bf1fa2859289b13037bfe7882cce86732e9377ed8b60e56c3bd55ebc0ce74f', 'Cycle577 note': '23ef5601b73c121d5e82c9031ec0ff4acffdc5471c43aa4dec63a78085aa7c0f'}, 'synthesis_law_sha256': '9a2a6121730ad67c6049a42150a056687cc33fc6771897425fccb3d9e5b877b6', 'expected_synthesis_law_sha256': '9a2a6121730ad67c6049a42150a056687cc33fc6771897425fccb3d9e5b877b6', 'held_declaration_sha256': 'c6b3077028e2b78180183a209e3c8bfbb49f32b3398dbe3f40ac6ea265fdc9af', 'note_missing': (), 'declared_runner_sha256': '7dec66d44101d26f563bea079fa62b56daeb1d2d5a21a7a98c6f66fc22392d77', 'runner_sha256': '7dec66d44101d26f563bea079fa62b56daeb1d2d5a21a7a98c6f66fc22392d77', 'discipline': {'N1_routes': ({'family': 'coherent projector-query tuple register', 'object': 'Cycle577 projectors and Cycle580 extraction unitary', 'mechanism': 'four-copy coherent query sector weights', 'status': 'ATTEMPTED', 'terminal': 'derive a reusable numeric grade without supplied identical copies or sector selection'}, {'family': 'reversible fixed-point product synthesizer', 'object': 'unary parameter registers and 4x4x4 microaddress mask', 'mechanism': 'reversible literal products', 'status': 'ATTEMPTED', 'terminal': 'derive the parameter-register/state calibration and expand family/precision'}, {'family': 'deterministic lattice rotor', 'object': 'one-carrier 64-cycle and derived grade mask', 'mechanism': 'exhaustively bounded +25 discrepancy', 'status': 'ATTEMPTED', 'terminal': 'derive Born calibration, actuality, and archive renewal'}, {'family': 'full quantum amplitude estimation', 'object': 'phase/kickback grade register', 'mechanism': 'controlled projector reflections', 'status': 'UNTESTED_OPEN_NOT_COUNTED', 'terminal': 'compile controlled reflections, phase arithmetic, copy supply, and error bound locally'}, {'family': 'renewable stochastic reservoir', 'object': 'stationary local bath transition kernel', 'mechanism': 'mixing invariant measure', 'status': 'UNTESTED_OPEN_NOT_COUNTED', 'terminal': 'derive kernel, invariant law, resource renewal, and actuality owner'}, {'family': 'adaptive physical tomography', 'object': 'renewable calibration corpus and estimator', 'mechanism': 'confidence-controlled state-family learning', 'status': 'UNTESTED_OPEN_NOT_COUNTED', 'terminal': 'derive independent trials, estimator dynamics, stopping rule, and Record semantics'}), 'N1_qualifying': 3, 'N1_required': 5, 'N1_status': 'FAIL', 'N2_collapsed_walls': ('state-to-parameter calibration', 'state-family and precision coverage', 'objective actuality', 'Record permanence', 'frequency-to-Born calibration', 'resource renewal'), 'N2_pairwise': ({'pair': ('state-to-parameter calibration', 'state-family and precision coverage'), 'left_closes_right': False, 'right_closes_left': False, 'independent': True, 'reason': 'the two conditions have distinct typed witnesses and neither construction supplies the other'}, {'pair': ('state-to-parameter calibration', 'objective actuality'), 'left_closes_right': False, 'right_closes_left': False, 'independent': True, 'reason': 'the two conditions have distinct typed witnesses and neither construction supplies the other'}, {'pair': ('state-to-parameter calibration', 'Record permanence'), 'left_closes_right': False, 'right_closes_left': False, 'independent': True, 'reason': 'the two conditions have distinct typed witnesses and neither construction supplies the other'}, {'pair': ('state-to-parameter calibration', 'frequency-to-Born calibration'), 'left_closes_right': False, 'right_closes_left': False, 'independent': True, 'reason': 'the two conditions have distinct typed witnesses and neither construction supplies the other'}, {'pair': ('state-to-parameter calibration', 'resource renewal'), 'left_closes_right': False, 'right_closes_left': False, 'independent': True, 'reason': 'the two conditions have distinct typed witnesses and neither construction supplies the other'}, {'pair': ('state-family and precision coverage', 'objective actuality'), 'left_closes_right': False, 'right_closes_left': False, 'independent': True, 'reason': 'the two conditions have distinct typed witnesses and neither construction supplies the other'}, {'pair': ('state-family and precision coverage', 'Record permanence'), 'left_closes_right': False, 'right_closes_left': False, 'independent': True, 'reason': 'the two conditions have distinct typed witnesses and neither construction supplies the other'}, {'pair': ('state-family and precision coverage', 'frequency-to-Born calibration'), 'left_closes_right': False, 'right_closes_left': False, 'independent': True, 'reason': 'the two conditions have distinct typed witnesses and neither construction supplies the other'}, {'pair': ('state-family and precision coverage', 'resource renewal'), 'left_closes_right': False, 'right_closes_left': False, 'independent': True, 'reason': 'the two conditions have distinct typed witnesses and neither construction supplies the other'}, {'pair': ('objective actuality', 'Record permanence'), 'left_closes_right': False, 'right_closes_left': False, 'independent': True, 'reason': 'the two conditions have distinct typed witnesses and neither construction supplies the other'}, {'pair': ('objective actuality', 'frequency-to-Born calibration'), 'left_closes_right': False, 'right_closes_left': False, 'independent': True, 'reason': 'the two conditions have distinct typed witnesses and neither construction supplies the other'}, {'pair': ('objective actuality', 'resource renewal'), 'left_closes_right': False, 'right_closes_left': False, 'independent': True, 'reason': 'the two conditions have distinct typed witnesses and neither construction supplies the other'}, {'pair': ('Record permanence', 'frequency-to-Born calibration'), 'left_closes_right': False, 'right_closes_left': False, 'independent': True, 'reason': 'the two conditions have distinct typed witnesses and neither construction supplies the other'}, {'pair': ('Record permanence', 'resource renewal'), 'left_closes_right': False, 'right_closes_left': False, 'independent': True, 'reason': 'the two conditions have distinct typed witnesses and neither construction supplies the other'}, {'pair': ('frequency-to-Born calibration', 'resource renewal'), 'left_closes_right': False, 'right_closes_left': False, 'independent': True, 'reason': 'the two conditions have distinct typed witnesses and neither construction supplies the other'}), 'N3_explicit_supplies': ('four identically prepared input copies', 'two-bit unary parameter/state calibration', 'blank pointer/copy/work/mask/archive M2', 'finite 64-address chart and rotor genesis', 'Cycle552 conditional member/history interface', 'finite corpus sizes and held preparations'), 'N3_hidden_phrase_scan': 'all load-bearing construction choices promoted to supplied inventory', 'N4_residual_matches': ({'witness': 'Cycle595 finite answer ROM/off-grid refusal', 'current_residual': 'replace state-specific rows on declared product family', 'match': True, 'disposition': 'closed only at two-bit parameter precision'}, {'witness': 'Cycle580 local unitary/inverse compiler', 'current_residual': 'physical projector-query locality and inverse', 'match': True, 'disposition': 'exact shore, no probability semantics'}, {'witness': 'Cycle577 projector instrument', 'current_residual': 'Z-X-Z grade formula', 'match': True, 'disposition': 'exact projector identity'}, {'witness': 'Cycle592 occurrence/frequency bridge', 'current_residual': 'conditional occurrence and finite frequency propagation', 'match': True, 'disposition': 'frequency retained without Born promotion'}), 'N5_rhetoric': ('coherent grade register statement is scoped to the tested four-copy block, not lattice-wide', 'rotor-frequency statement is scoped to finite declared corpora, not every asymptotic process', 'schedule/time, resource/energy, and packet/Record are typed non-promotions at the constructed block'), 'N6_partial_closure_paths': ('retain Route A as a coherent projector-query diagnostic', 'retain Route B/C as a finite-precision product-family compiler', 'increase unary precision and prove scalable local arithmetic bounds', 'derive parameter-register/state calibration without answer rows', 'derive renewable archive formation and separate actuality/Record law'), 'N6_new_axiom_required': False, 'N7_steelman': {'mechanism': 'a locally compiled controlled-reflection amplitude-estimation network could transform the exact Cycle577 query into a reusable b-bit grade register, while a scalable reversible comparator and renewable record medium remove the supplied parameter word and archive debit', 'terminal': 'construct controlled reflections, copy/source ledger, phase-error theorem, scalable NN arithmetic, actuality owner, and blinded renewable Records', 'status': 'open and therefore defeats any broad no-go'}, 'N8_cross_cycle_echo': ('Cycle577 turned projector identities into an exact local instrument without actuality', 'Cycle580 retired the host-gate compiler import but not query-copy or Born semantics', 'Cycle592 exposed the finite answer-ROM and frequency-calibration imports', 'Cycle595 retired the balanced innovation word with an orbit-index carrier but retained the state-family wall', 'Cycle597 retires per-state rows only for one fixed-precision product family'), 'broad_no_go': 'FAIL_DO_NOT_SHIP', 'minimum_content': 'FAIL_DO_NOT_SHIP', 'shared_obstruction': 'NOT_ESTABLISHED', 'axiom_pressure': 'NONE'}, 'inventory': {'supplied': ('four identically prepared input copies', 'two-bit unary parameter/state calibration', 'blank pointer/copy/work/mask/archive M2', 'finite 64-address chart and rotor genesis', 'Cycle552 conditional member/history interface', 'finite corpus sizes and held preparations'), 'derived': ('exact coherent projector-query distribution and inverse', 'one row-free reversible denominator-64 product-family grade mask', 'deterministic physical rotor with exhaustive finite discrepancy certificate', 'explicit approximation plus rotor-frequency error budgets through conditional occurrence'), 'open': ('objective actuality and framework Record', 'Born/probability calibration', 'state-to-parameter ownership and family/precision scaling', 'copy/archive renewal', 'time, energy, source, stress, gravity, noise, and infinite-volume integration')}, 'pass': True}
-PASS cold resource caps :: {'elapsed_seconds': 2.763732707942836, 'maximum_RSS_bytes': 1196998656, 'wall_cap_seconds': 360.0, 'RSS_cap_bytes': 3221225472}
+PASS exact shores, rule-before-held freeze, inventory, and full N1-N8 prevent state-family and Born overclaim :: {'expected': {'Cycle595 runner': '107fdaef7f2f834617bd695119569f0fc867768e64d695105e69107ef80d87d8', 'Cycle595 note': 'a6d852fdde7a90cb7bf2b11729d67828b03974e1248cbac7466353f13835f462', 'Cycle595 receipt': '09eeeb4b2a2575a10a5030d75e29f6dd0346a7bbf248409531fb9825b1b005e6', 'Cycle595 cold': 'ecd3fb24ab1deee7395b914d708749bd924c6f1f3d5d177cd55228f4759f7216', 'Cycle592 runner': '14d01e640eb1818c29aeb9f05313b2211e28e445d4798f3f6718d0b0fca0d62a', 'Cycle592 note': '092f0bfc06f7a42d82ed10ade5f551bdb08ebe7040c8c2b8ba0b1b3ea1c971c7', 'Cycle592 receipt': 'edf069adbf58b66b30b6b9a66a85dd577b6c6c3170f833807dc57d59c8f14457', 'Cycle592 cold': 'cb2640da38cf7cb0a69e6351871d9a9ba93c712f6865d5055b0bd79f18acdc5c', 'Cycle580 runner': '1f1acb34dc8976f5617319353e9591f64eae5cfe923a1dea736adfa792c4e718', 'Cycle580 note': '47a6418c27965219ddc5d3c2a8bc39fd34aa6173d3d1c16e473a136113b9c787', 'Cycle580 receipt': '9cf656c917ff738bc6d0d0e52dc8c251630aaedd86dd5a6b90dd4f7857cdbc1d', 'Cycle580 cold': '890c68f44bf6cc563916304b51481def8aa3ad7009a6ecfe0b0a4cffc85cd7e6', 'Cycle577 runner': '0876bc8888193606446b5fe07f1fdd8e3ddef3b313551739b81be3792c820aa7', 'Cycle577 note': '7617ee877ca22986e0eacc09d08e14f6246cbc75b6443961c8626a1b5435f18c', 'Cycle577 receipt': 'f7e6bbc40a4d56ee115ba43ddbab7bee4aff05227b988a057adc4420f51941ed', 'Cycle577 cold': '1c77d2ca4bf860482d3e55596c85e0983f32e755e7ceaac33ff0576a928c8a36'}, 'observed': {'Cycle595 runner': '107fdaef7f2f834617bd695119569f0fc867768e64d695105e69107ef80d87d8', 'Cycle595 note': 'a6d852fdde7a90cb7bf2b11729d67828b03974e1248cbac7466353f13835f462', 'Cycle595 receipt': '09eeeb4b2a2575a10a5030d75e29f6dd0346a7bbf248409531fb9825b1b005e6', 'Cycle595 cold': 'ecd3fb24ab1deee7395b914d708749bd924c6f1f3d5d177cd55228f4759f7216', 'Cycle592 runner': '14d01e640eb1818c29aeb9f05313b2211e28e445d4798f3f6718d0b0fca0d62a', 'Cycle592 note': '092f0bfc06f7a42d82ed10ade5f551bdb08ebe7040c8c2b8ba0b1b3ea1c971c7', 'Cycle592 receipt': 'edf069adbf58b66b30b6b9a66a85dd577b6c6c3170f833807dc57d59c8f14457', 'Cycle592 cold': 'cb2640da38cf7cb0a69e6351871d9a9ba93c712f6865d5055b0bd79f18acdc5c', 'Cycle580 runner': '1f1acb34dc8976f5617319353e9591f64eae5cfe923a1dea736adfa792c4e718', 'Cycle580 note': '47a6418c27965219ddc5d3c2a8bc39fd34aa6173d3d1c16e473a136113b9c787', 'Cycle580 receipt': '9cf656c917ff738bc6d0d0e52dc8c251630aaedd86dd5a6b90dd4f7857cdbc1d', 'Cycle580 cold': '890c68f44bf6cc563916304b51481def8aa3ad7009a6ecfe0b0a4cffc85cd7e6', 'Cycle577 runner': '0876bc8888193606446b5fe07f1fdd8e3ddef3b313551739b81be3792c820aa7', 'Cycle577 note': '7617ee877ca22986e0eacc09d08e14f6246cbc75b6443961c8626a1b5435f18c', 'Cycle577 receipt': 'f7e6bbc40a4d56ee115ba43ddbab7bee4aff05227b988a057adc4420f51941ed', 'Cycle577 cold': '1c77d2ca4bf860482d3e55596c85e0983f32e755e7ceaac33ff0576a928c8a36'}, 'runtime_parent_count': 104, 'runtime_parent_hash_mismatches': (), 'runtime_parent_manifest_sha256': 'e407b4b1d71af6cbb9feed475bb204f2457ef129506b395a1393a0b970136fde', 'expected_runtime_parent_manifest_sha256': 'e407b4b1d71af6cbb9feed475bb204f2457ef129506b395a1393a0b970136fde', 'receipt_checks': {'Cycle595': {'runner': True, 'note': True, 'cold': True, 'verified': True, 'authority_audit': True}, 'Cycle592': {'runner': True, 'note': True, 'cold': True, 'verified': True, 'authority_audit': True}, 'Cycle580': {'runner': True, 'note': True, 'cold': True, 'verified': True, 'authority_audit': True}, 'Cycle577': {'runner': True, 'note': True, 'cold': True, 'verified': True, 'authority_audit': True}}, 'direct_parent_checks': {'Cycle595_Cycle592_alias': True, 'Cycle595_Cycle587_alias': True, 'Cycle595_Cycle577_alias': True, 'Cycle595_Cycle552_alias': True, 'Cycle580_Cycle577_alias': True, 'Cycle577_Cycle41_parent_present': True, 'Cycle523_primitive_parent_pinned': True}, 'synthesis_law_sha256': '9a2a6121730ad67c6049a42150a056687cc33fc6771897425fccb3d9e5b877b6', 'expected_synthesis_law_sha256': '9a2a6121730ad67c6049a42150a056687cc33fc6771897425fccb3d9e5b877b6', 'held_declaration_sha256': 'c6b3077028e2b78180183a209e3c8bfbb49f32b3398dbe3f40ac6ea265fdc9af', 'note_missing': (), 'declared_runner_sha256': '994f050fb33d7b9909896d195dca6be0062f56445ba49cac8731f196a3cfe79e', 'runner_sha256': '994f050fb33d7b9909896d195dca6be0062f56445ba49cac8731f196a3cfe79e', 'discipline': {'Status': 'FAIL', 'artifact_status': 'PASS_NARROWED_POSITIVE_ONLY', 'N1_routes': ({'family': 'coherent projector-query tuple register', 'object': 'Cycle577 projectors and Cycle580 extraction unitary', 'mechanism': 'four-copy coherent query sector weights', 'honesty_marker': 'ATTEMPTED', 'search_status': 'COUNTED', 'terminal': 'derive a reusable numeric grade without supplied identical copies or sector selection'}, {'family': 'reversible fixed-point product synthesizer', 'object': 'unary parameter registers and 4x4x4 microaddress mask', 'mechanism': 'reversible literal products', 'honesty_marker': 'ATTEMPTED', 'search_status': 'COUNTED', 'terminal': 'derive the parameter-register/state calibration and expand family/precision'}, {'family': 'deterministic lattice rotor', 'object': 'one-carrier 64-cycle and derived grade mask', 'mechanism': 'exhaustively bounded +25 discrepancy', 'honesty_marker': 'ATTEMPTED', 'search_status': 'COUNTED', 'terminal': 'derive Born calibration, actuality, and archive renewal'}, {'family': 'full quantum amplitude estimation', 'object': 'phase/kickback grade register', 'mechanism': 'controlled projector reflections', 'honesty_marker': None, 'search_status': 'OPEN_UNTESTED_NOT_COUNTED', 'terminal': 'compile controlled reflections, phase arithmetic, copy supply, and error bound locally'}, {'family': 'renewable stochastic reservoir', 'object': 'stationary local bath transition kernel', 'mechanism': 'mixing invariant measure', 'honesty_marker': None, 'search_status': 'OPEN_UNTESTED_NOT_COUNTED', 'terminal': 'derive kernel, invariant law, resource renewal, and actuality owner'}, {'family': 'adaptive physical tomography', 'object': 'renewable calibration corpus and estimator', 'mechanism': 'confidence-controlled state-family learning', 'honesty_marker': None, 'search_status': 'OPEN_UNTESTED_NOT_COUNTED', 'terminal': 'derive independent trials, estimator dynamics, stopping rule, and Record semantics'}), 'N1_qualifying': 3, 'N1_required': 5, 'N1_gate': 'FAIL', 'N2_collapsed_walls': ('state-to-parameter calibration', 'state-family and precision coverage', 'objective actuality', 'Record permanence', 'frequency-to-Born calibration', 'resource renewal'), 'N2_pairwise': ({'pair': ('state-to-parameter calibration', 'state-family and precision coverage'), 'left_closes_right': False, 'left_to_right_reason': 'a state-to-unary calibration for one declared family does not prove coverage at wider precision or for nonproduct states', 'right_closes_left': False, 'right_to_left_reason': 'a wider-family synthesis theorem does not identify which physical preparation owns a particular parameter word', 'independent': True}, {'pair': ('state-to-parameter calibration', 'objective actuality'), 'left_closes_right': False, 'left_to_right_reason': 'a calibrated parameter word remains coherent data and does not select an objective outcome', 'right_closes_left': False, 'right_to_left_reason': 'an actuality owner does not derive the state-to-parameter calibration used by the synthesizer', 'independent': True}, {'pair': ('state-to-parameter calibration', 'Record permanence'), 'left_closes_right': False, 'left_to_right_reason': 'a preparation/parameter calibration does not form a permanent readable Record', 'right_closes_left': False, 'right_to_left_reason': "a Record medium does not calibrate the input state's unary parameter word", 'independent': True}, {'pair': ('state-to-parameter calibration', 'frequency-to-Born calibration'), 'left_closes_right': False, 'left_to_right_reason': 'a state-to-parameter map does not identify finite rotor counts with Born probability', 'right_closes_left': False, 'right_to_left_reason': 'a Born calibration would not by itself construct the physical state-to-word encoder', 'independent': True}, {'pair': ('state-to-parameter calibration', 'resource renewal'), 'left_closes_right': False, 'left_to_right_reason': 'a calibrated parameter word does not regenerate spent query copies or archive packets', 'right_closes_left': False, 'right_to_left_reason': "resource renewal does not determine the input state's parameter calibration", 'independent': True}, {'pair': ('state-family and precision coverage', 'objective actuality'), 'left_closes_right': False, 'left_to_right_reason': 'family/precision scaling preserves a conditional coherent family and does not select actuality', 'right_closes_left': False, 'right_to_left_reason': 'objective selection at one output does not extend the arithmetic theorem to wider families or precision', 'independent': True}, {'pair': ('state-family and precision coverage', 'Record permanence'), 'left_closes_right': False, 'left_to_right_reason': 'a scalable grade compiler does not supply permanence, readability, or protected admission', 'right_closes_left': False, 'right_to_left_reason': "a durable Record law does not extend the grade compiler's family or precision", 'independent': True}, {'pair': ('state-family and precision coverage', 'frequency-to-Born calibration'), 'left_closes_right': False, 'left_to_right_reason': 'exact or approximate wider-family grades still lack a frequency-to-probability calibration', 'right_closes_left': False, 'right_to_left_reason': 'a probability calibration does not synthesize grades for nonproduct states or higher precision', 'independent': True}, {'pair': ('state-family and precision coverage', 'resource renewal'), 'left_closes_right': False, 'left_to_right_reason': 'a scalable arithmetic family can still consume unrenewed copies and archive blanks', 'right_closes_left': False, 'right_to_left_reason': 'renewed resources do not prove state-family or precision coverage', 'independent': True}, {'pair': ('objective actuality', 'Record permanence'), 'left_closes_right': False, 'left_to_right_reason': 'an objective selected event need not be durably retained, readable, or protected', 'right_closes_left': False, 'right_to_left_reason': 'a permanent packet can preserve conditional data without selecting which candidate is actual', 'independent': True}, {'pair': ('objective actuality', 'frequency-to-Born calibration'), 'left_closes_right': False, 'left_to_right_reason': 'actuality of one member does not calibrate its long-run frequencies to Born weights', 'right_closes_left': False, 'right_to_left_reason': 'a Born-frequency theorem does not identify the framework owner that makes a candidate actual', 'independent': True}, {'pair': ('objective actuality', 'resource renewal'), 'left_closes_right': False, 'left_to_right_reason': 'an actuality owner can still consume a finite nonrenewable stock', 'right_closes_left': False, 'right_to_left_reason': 'a renewable bath or archive source does not select an objective outcome', 'independent': True}, {'pair': ('Record permanence', 'frequency-to-Born calibration'), 'left_closes_right': False, 'left_to_right_reason': 'Record permanence/readability does not derive the probability measure governing Record frequencies', 'right_closes_left': False, 'right_to_left_reason': 'a Born calibration does not construct protected, non-reentering, readable Records', 'independent': True}, {'pair': ('Record permanence', 'resource renewal'), 'left_closes_right': False, 'left_to_right_reason': 'a durable finite Record does not regenerate the blank medium needed for unbounded use', 'right_closes_left': False, 'right_to_left_reason': 'renewing blank medium does not establish Record admission, protection, or readability', 'independent': True}, {'pair': ('frequency-to-Born calibration', 'resource renewal'), 'left_closes_right': False, 'left_to_right_reason': 'a frequency-to-Born calibration can hold conditionally while source/archive resources remain finite', 'right_closes_left': False, 'right_to_left_reason': 'resource renewal does not identify deterministic rotor frequencies with Born probabilities', 'independent': True}), 'N3_explicit_supplies': ('four identically prepared input copies', 'two-bit unary parameter/state calibration', 'blank pointer/copy/work/mask/archive M2', 'finite 64-address chart and rotor genesis', 'Cycle552 conditional member/history interface', 'finite corpus sizes and held preparations'), 'N3_phrase_hit_classifications': ({'hit': 'canonical sorted hash-map manifest', 'surface': 'Cycle597 note:131', 'classification': 'NON_LOAD_BEARING_CONTEXT', 'reason': 'canonical modifies JSON key sorting for a byte manifest and supplies no physics premise'}, {'hit': 'preregistered', 'surface': 'Cycle592 immutable runner/note filenames and historical title', 'classification': 'NON_LOAD_BEARING_CONTEXT', 'reason': "the token occurs in pinned filenames/title; the current law's actual pre-held hash is separately executable"}, {'hit': 'registered', 'surface': 'one immutable runtime dependency filename', 'classification': 'NON_LOAD_BEARING_CONTEXT', 'reason': 'module-name text carries no premise or claim weight'}, {'hit': 'quoted scan vocabulary', 'surface': 'Cycle597 note N3 checklist', 'classification': 'NON_LOAD_BEARING_META_SCAN', 'reason': 'the phrases are enumerated as audit targets rather than invoked as proof steps'}), 'N3_hidden_conditions_promoted': 0, 'N4_residual_matches': ({'witness': 'docs/work_history/repo/review_feedback/PHYSICAL_PREREGISTERED_INNOVATION_RECORD_FREQUENCY_BRIDGE_TOURNAMENT_CYCLE592_NOTE_2026-07-22.md:190-193', 'prior_residual': 'three state-specific ROM rows were author-supplied from three known grades, with held family and denominator generalization open', 'current_residual': 'state-specific answer rows are removed only on the declared two-bit quantized product-state family; the state-to-parameter calibration and wider family/precision remain open', 'exact_match': True, 'disposition': 'closed only for the shared state-specific-row residual at declared fixed precision'},), 'N4_dropped_nonmatches': ({'witness': 'docs/work_history/repo/review_feedback/PHYSICAL_TI_INNOVATION_BATH_OFFGRID_HISTORY_TOURNAMENT_CYCLE595_NOTE_2026-07-22.md:70-74', 'prior_residual': 'the fixed denominator-eight ROM refuses new labels and cannot exactly represent two off-grid grades', 'current_residual': 'Cycle597 supplies lawful quantized approximations for one product family but does not exactly synthesize continuous off-grid grades', 'exact_match': False, 'disposition': 'dropped as an exact-closure witness; retained only as a partial-scope N8 echo'}, {'witness': 'docs/work_history/repo/review_feedback/PHYSICAL_L41_ELEMENTARY_GATE_LAYOUT_COMPILER_CYCLE580_NOTE_2026-07-22.md:21-29', 'prior_residual': "Cycle577's bounded elementary gate/layout and full-unitary-extension obligation", 'current_residual': 'Cycle597 reuses the already-retired Cycle580 query sub-block and does not close a new gate/layout residual', 'exact_match': False, 'disposition': 'dropped as a Cycle597 closure witness; retained as pinned construction authority'}, {'witness': 'docs/work_history/repo/review_feedback/PHYSICAL_L41_PROJECTOR_INSTRUMENT_COMPILER_TOURNAMENT_CYCLE577_NOTE_2026-07-22.md:53-60', 'prior_residual': 'pinned candidate weights are not derived Born probabilities and select no actual branch', 'current_residual': 'Cycle597 retains the same Born/actuality wall and closes neither residual', 'exact_match': False, 'disposition': 'dropped as a closure witness; retained as a semantic boundary'}), 'N5_rhetoric_resolution_ledger': ({'phrase': 'the tested four-copy coherent grade register has no objective-probability derivation', 'per_element': 'UNTESTED_NO_NEGATIVE_CLAIM', 'per_site': 'UNTESTED_NO_NEGATIVE_CLAIM', 'per_mode': 'UNTESTED_NO_NEGATIVE_CLAIM', 'per_block': 'TESTED: one 18-M2 query and one supplied four-copy 72-M2 batch preserve all coherent sectors and supply no objective numeric selector', 'lattice_wide': 'UNTESTED_NO_NEGATIVE_CLAIM'}, {'phrase': 'the tested finite rotor frequencies have no Born calibration', 'per_element': 'UNTESTED_NO_NEGATIVE_CLAIM', 'per_site': 'UNTESTED_NO_NEGATIVE_CLAIM', 'per_mode': 'UNTESTED_NO_NEGATIVE_CLAIM', 'per_block': 'TESTED: five finite train/held corpora plus all 125 fixed-grid grade words and 64 prefixes have only a conditional frequency/error theorem', 'lattice_wide': 'UNTESTED_NO_NEGATIVE_CLAIM'}, {'phrase': 'the executed finite gate schedules have no time interpretation', 'per_element': 'UNTESTED_NO_NEGATIVE_CLAIM', 'per_site': 'UNTESTED_NO_NEGATIVE_CLAIM', 'per_mode': 'UNTESTED_NO_NEGATIVE_CLAIM', 'per_block': 'TESTED: finite query, synthesis, routing, and rotor schedules carry no clock variable or duration map', 'lattice_wide': 'UNTESTED_NO_NEGATIVE_CLAIM'}, {'phrase': 'the counted finite blank-resource debits have no energy derivation', 'per_element': 'UNTESTED_NO_NEGATIVE_CLAIM', 'per_site': 'UNTESTED_NO_NEGATIVE_CLAIM', 'per_mode': 'UNTESTED_NO_NEGATIVE_CLAIM', 'per_block': 'TESTED: copy/work/mask/archive M2 counts are resource ledgers with no work, heat, stress, or generator map', 'lattice_wide': 'UNTESTED_NO_NEGATIVE_CLAIM'}, {'phrase': 'the tested eight-M2 archive packet has no framework-Record qualification', 'per_element': 'UNTESTED_NO_NEGATIVE_CLAIM', 'per_site': 'UNTESTED_NO_NEGATIVE_CLAIM', 'per_mode': 'UNTESTED_NO_NEGATIVE_CLAIM', 'per_block': 'TESTED: one finite archive packet is written reversibly without permanence, readability, protected admission, or independent actuality', 'lattice_wide': 'UNTESTED_NO_NEGATIVE_CLAIM'}), 'N6_partial_closure_paths': ({'candidate_path': 'scripts/physical_state_family_grade_transition_synthesis_tournament_cycle597_2026_07_22.py', 'status': 'EXECUTED_NARROW_POSITIVE', 'what_it_closes': 'state-specific answer rows for one two-bit quantized product-state family'}, {'candidate_path': 'scripts/physical_l41_projector_instrument_compiler_tournament_cycle577_2026_07_22.py', 'status': 'EXACT_PINNED_PARENT_COMPONENT', 'what_it_closes': 'the projector/instrument representation needed by a future controlled-reflection construction, not the reflection or grade register itself'}, {'candidate_path': 'scripts/physical_l41_elementary_gate_layout_compiler_cycle580_2026_07_22.py', 'status': 'EXACT_PINNED_PARENT_COMPONENT', 'what_it_closes': 'bounded elementary layout for the existing instrument/query block, not autonomous phase estimation'}, {'candidate_path': 'scripts/physical_controlled_projector_phase_estimation_grade_compiler_cycle_next.py', 'status': 'NOT_CREATED_OPEN_CANDIDATE', 'what_it_closes': 'supplied four-copy sector inspection and the separate calibrated parameter word if controlled reflections, b-bit error, E-G, leakage, layout, and copy ledger are constructed'}, {'candidate_path': 'scripts/physical_renewable_archive_actuality_record_separation_cycle_next.py', 'status': 'NOT_CREATED_OPEN_CANDIDATE', 'what_it_closes': 'finite archive renewal and separately typed actuality/Record obligations if a physical renewal and admission law is constructed'}), 'N6_convention_only_closure_found': False, 'N6_new_axiom_required': False, 'N6_primitive_or_control_plane_claim': False, 'N6_campaign_control_surface_rule': 'NO_GO_LEDGER, primitive registry, axioms, policies, queues, and audit status are read-only by campaign instruction; the full checklist remains visible in the Cycle597 note', 'N7_steelman': {'mechanism': 'compile local controlled reflections of each exact Cycle577 history projector from the Cycle580 elementary grammar, run b-bit coherent amplitude estimation into a reusable grade register, and feed that register to scalable reversible threshold arithmetic and a separately renewable archive/actuality apparatus', 'supporting_authority': ('docs/work_history/repo/review_feedback/PHYSICAL_L41_PROJECTOR_INSTRUMENT_COMPILER_TOURNAMENT_CYCLE577_NOTE_2026-07-22.md:33-42', 'docs/work_history/repo/review_feedback/PHYSICAL_L41_ELEMENTARY_GATE_LAYOUT_COMPILER_CYCLE580_NOTE_2026-07-22.md:21-29', 'scripts/physical_state_family_grade_transition_synthesis_tournament_cycle597_2026_07_22.py:535'), 'actionable_terminal': 'construct and held-test b=3 and b=4 controlled-reflection circuits with exact E-G/inverse/leakage/all24 layout, a copy/source ledger, a quantitative phase-error theorem, no supplied state-specific parameter word, and an independently typed renewable actuality/Record owner', 'openness': 'the controlled-reflection and renewable-owner components are unbuilt, so this concrete route defeats every present broad no-go'}, 'N8_cross_cycle_echo': ({'prior_wall': 'Cycle577 Route-B elementary gate/layout and full-unitary extension', 'citation': 'docs/work_history/repo/review_feedback/PHYSICAL_L41_PROJECTOR_INSTRUMENT_COMPILER_TOURNAMENT_CYCLE577_NOTE_2026-07-22.md:405', 'retired_status': 'RETIRED_BY_CYCLE580', 'retirement_mechanism': 'literal support-two elementary decomposition and cubic nearest-neighbor layout', 'applicability_here': 'the same compile-and-verify mechanism is applicable to future controlled projector reflections, but no such reflection is yet built'}, {'prior_wall': 'Cycle580 autonomous in-state schedule/recurrence', 'citation': 'docs/work_history/repo/review_feedback/PHYSICAL_L41_ELEMENTARY_GATE_LAYOUT_COMPILER_CYCLE580_NOTE_2026-07-22.md:21-29', 'retired_status': 'OPEN', 'retirement_mechanism': 'none; compile-time order remains supplied', 'applicability_here': 'a phase-estimation candidate must expose its in-state control and renewal rather than inherit host order'}, {'prior_wall': 'Cycle592 author-supplied state-specific ROM rows', 'citation': 'docs/work_history/repo/review_feedback/PHYSICAL_PREREGISTERED_INNOVATION_RECORD_FREQUENCY_BRIDGE_TOURNAMENT_CYCLE592_NOTE_2026-07-22.md:190-193', 'retired_status': 'RETIRED_ONLY_FOR_CYCLE597_TWO_BIT_PRODUCT_FAMILY', 'retirement_mechanism': 'one row-free reversible literal-product rule over all 125 quantized parameter words', 'applicability_here': 'scale the same import-retirement shape with an explicit error theorem; do not generalize beyond the tested family'}, {'prior_wall': 'Cycle595 fixed denominator-eight off-grid refusal', 'citation': 'docs/work_history/repo/review_feedback/PHYSICAL_TI_INNOVATION_BATH_OFFGRID_HISTORY_TOURNAMENT_CYCLE595_NOTE_2026-07-22.md:70-74', 'retired_status': 'PARTIAL_ONLY', 'retirement_mechanism': 'Cycle597 replaces refusal by a declared quantization plus approximation bound, not exact continuous synthesis', 'applicability_here': 'increase b and prove scalable local resource/error bounds; exact continuous closure remains unclaimed'}, {'prior_wall': 'Cycle592 actuality, Record, and fresh-resource renewal', 'citation': 'docs/work_history/repo/review_feedback/PHYSICAL_PREREGISTERED_INNOVATION_RECORD_FREQUENCY_BRIDGE_TOURNAMENT_CYCLE592_NOTE_2026-07-22.md:367-375', 'retired_status': 'OPEN', 'retirement_mechanism': 'none in Cycle597; finite reversible archive debit is only exposed', 'applicability_here': 'requires a separately typed renewable admission/Record construction and cannot be retired by arithmetic relabeling'}), 'broad_no_go_claim': False, 'minimum_content_claim': False, 'shared_obstruction_claim': False, 'axiom_pressure_claim': False}, 'inventory': {'supplied': ('four identically prepared input copies', 'two-bit unary parameter/state calibration', 'blank pointer/copy/work/mask/archive M2', 'finite 64-address chart and rotor genesis', 'Cycle552 conditional member/history interface', 'finite corpus sizes and held preparations'), 'derived': ('exact coherent projector-query distribution and inverse', 'one row-free reversible denominator-64 product-family grade mask', 'deterministic physical rotor with exhaustive finite discrepancy certificate', 'explicit approximation plus rotor-frequency error budgets through conditional occurrence'), 'open': ('objective actuality and framework Record', 'Born/probability calibration', 'state-to-parameter ownership and family/precision scaling', 'copy/archive renewal', 'time, energy, source, stress, gravity, noise, and infinite-volume integration'), 'physical_M2_boundary': {'Route_A': 'only exact-pinned Cycle577 dual-rail plus Cycle580 elementary-layout composition', 'Route_B_C': 'only exact-pinned Cycle587 basis-state compiler plus recursively pinned Cycle523 primitive dependency', 'unverified_role_blocks_promoted_to_physical_M2': 0, 'unverified_role_block_EG_leakage_layout': None}}, 'pass': True}
+PASS cold resource caps :: {'elapsed_seconds': 2.6291013340232894, 'maximum_RSS_bytes': 701480960, 'wall_cap_seconds': 360.0, 'RSS_cap_bytes': 3221225472}
 {
   "covariance_domain": {
     "all24_member_failures": 0,
@@ -16,55 +16,70 @@ PASS cold resource caps :: {'elapsed_seconds': 2.763732707942836, 'maximum_RSS_b
     "proper_cubic_frames": 24
   },
   "dependency_discipline_inventory": {
-    "declared_runner_sha256": "7dec66d44101d26f563bea079fa62b56daeb1d2d5a21a7a98c6f66fc22392d77",
+    "declared_runner_sha256": "994f050fb33d7b9909896d195dca6be0062f56445ba49cac8731f196a3cfe79e",
+    "direct_parent_checks": {
+      "Cycle523_primitive_parent_pinned": true,
+      "Cycle577_Cycle41_parent_present": true,
+      "Cycle580_Cycle577_alias": true,
+      "Cycle595_Cycle552_alias": true,
+      "Cycle595_Cycle577_alias": true,
+      "Cycle595_Cycle587_alias": true,
+      "Cycle595_Cycle592_alias": true
+    },
     "discipline": {
+      "N1_gate": "FAIL",
       "N1_qualifying": 3,
       "N1_required": 5,
       "N1_routes": [
         {
           "family": "coherent projector-query tuple register",
+          "honesty_marker": "ATTEMPTED",
           "mechanism": "four-copy coherent query sector weights",
           "object": "Cycle577 projectors and Cycle580 extraction unitary",
-          "status": "ATTEMPTED",
+          "search_status": "COUNTED",
           "terminal": "derive a reusable numeric grade without supplied identical copies or sector selection"
         },
         {
           "family": "reversible fixed-point product synthesizer",
+          "honesty_marker": "ATTEMPTED",
           "mechanism": "reversible literal products",
           "object": "unary parameter registers and 4x4x4 microaddress mask",
-          "status": "ATTEMPTED",
+          "search_status": "COUNTED",
           "terminal": "derive the parameter-register/state calibration and expand family/precision"
         },
         {
           "family": "deterministic lattice rotor",
+          "honesty_marker": "ATTEMPTED",
           "mechanism": "exhaustively bounded +25 discrepancy",
           "object": "one-carrier 64-cycle and derived grade mask",
-          "status": "ATTEMPTED",
+          "search_status": "COUNTED",
           "terminal": "derive Born calibration, actuality, and archive renewal"
         },
         {
           "family": "full quantum amplitude estimation",
+          "honesty_marker": null,
           "mechanism": "controlled projector reflections",
           "object": "phase/kickback grade register",
-          "status": "UNTESTED_OPEN_NOT_COUNTED",
+          "search_status": "OPEN_UNTESTED_NOT_COUNTED",
           "terminal": "compile controlled reflections, phase arithmetic, copy supply, and error bound locally"
         },
         {
           "family": "renewable stochastic reservoir",
+          "honesty_marker": null,
           "mechanism": "mixing invariant measure",
           "object": "stationary local bath transition kernel",
-          "status": "UNTESTED_OPEN_NOT_COUNTED",
+          "search_status": "OPEN_UNTESTED_NOT_COUNTED",
           "terminal": "derive kernel, invariant law, resource renewal, and actuality owner"
         },
         {
           "family": "adaptive physical tomography",
+          "honesty_marker": null,
           "mechanism": "confidence-controlled state-family learning",
           "object": "renewable calibration corpus and estimator",
-          "status": "UNTESTED_OPEN_NOT_COUNTED",
+          "search_status": "OPEN_UNTESTED_NOT_COUNTED",
           "terminal": "derive independent trials, estimator dynamics, stopping rule, and Record semantics"
         }
       ],
-      "N1_status": "FAIL",
       "N2_collapsed_walls": [
         "state-to-parameter calibration",
         "state-family and precision coverage",
@@ -77,152 +92,167 @@ PASS cold resource caps :: {'elapsed_seconds': 2.763732707942836, 'maximum_RSS_b
         {
           "independent": true,
           "left_closes_right": false,
+          "left_to_right_reason": "a state-to-unary calibration for one declared family does not prove coverage at wider precision or for nonproduct states",
           "pair": [
             "state-to-parameter calibration",
             "state-family and precision coverage"
           ],
-          "reason": "the two conditions have distinct typed witnesses and neither construction supplies the other",
-          "right_closes_left": false
+          "right_closes_left": false,
+          "right_to_left_reason": "a wider-family synthesis theorem does not identify which physical preparation owns a particular parameter word"
         },
         {
           "independent": true,
           "left_closes_right": false,
+          "left_to_right_reason": "a calibrated parameter word remains coherent data and does not select an objective outcome",
           "pair": [
             "state-to-parameter calibration",
             "objective actuality"
           ],
-          "reason": "the two conditions have distinct typed witnesses and neither construction supplies the other",
-          "right_closes_left": false
+          "right_closes_left": false,
+          "right_to_left_reason": "an actuality owner does not derive the state-to-parameter calibration used by the synthesizer"
         },
         {
           "independent": true,
           "left_closes_right": false,
+          "left_to_right_reason": "a preparation/parameter calibration does not form a permanent readable Record",
           "pair": [
             "state-to-parameter calibration",
             "Record permanence"
           ],
-          "reason": "the two conditions have distinct typed witnesses and neither construction supplies the other",
-          "right_closes_left": false
+          "right_closes_left": false,
+          "right_to_left_reason": "a Record medium does not calibrate the input state's unary parameter word"
         },
         {
           "independent": true,
           "left_closes_right": false,
+          "left_to_right_reason": "a state-to-parameter map does not identify finite rotor counts with Born probability",
           "pair": [
             "state-to-parameter calibration",
             "frequency-to-Born calibration"
           ],
-          "reason": "the two conditions have distinct typed witnesses and neither construction supplies the other",
-          "right_closes_left": false
+          "right_closes_left": false,
+          "right_to_left_reason": "a Born calibration would not by itself construct the physical state-to-word encoder"
         },
         {
           "independent": true,
           "left_closes_right": false,
+          "left_to_right_reason": "a calibrated parameter word does not regenerate spent query copies or archive packets",
           "pair": [
             "state-to-parameter calibration",
             "resource renewal"
           ],
-          "reason": "the two conditions have distinct typed witnesses and neither construction supplies the other",
-          "right_closes_left": false
+          "right_closes_left": false,
+          "right_to_left_reason": "resource renewal does not determine the input state's parameter calibration"
         },
         {
           "independent": true,
           "left_closes_right": false,
+          "left_to_right_reason": "family/precision scaling preserves a conditional coherent family and does not select actuality",
           "pair": [
             "state-family and precision coverage",
             "objective actuality"
           ],
-          "reason": "the two conditions have distinct typed witnesses and neither construction supplies the other",
-          "right_closes_left": false
+          "right_closes_left": false,
+          "right_to_left_reason": "objective selection at one output does not extend the arithmetic theorem to wider families or precision"
         },
         {
           "independent": true,
           "left_closes_right": false,
+          "left_to_right_reason": "a scalable grade compiler does not supply permanence, readability, or protected admission",
           "pair": [
             "state-family and precision coverage",
             "Record permanence"
           ],
-          "reason": "the two conditions have distinct typed witnesses and neither construction supplies the other",
-          "right_closes_left": false
+          "right_closes_left": false,
+          "right_to_left_reason": "a durable Record law does not extend the grade compiler's family or precision"
         },
         {
           "independent": true,
           "left_closes_right": false,
+          "left_to_right_reason": "exact or approximate wider-family grades still lack a frequency-to-probability calibration",
           "pair": [
             "state-family and precision coverage",
             "frequency-to-Born calibration"
           ],
-          "reason": "the two conditions have distinct typed witnesses and neither construction supplies the other",
-          "right_closes_left": false
+          "right_closes_left": false,
+          "right_to_left_reason": "a probability calibration does not synthesize grades for nonproduct states or higher precision"
         },
         {
           "independent": true,
           "left_closes_right": false,
+          "left_to_right_reason": "a scalable arithmetic family can still consume unrenewed copies and archive blanks",
           "pair": [
             "state-family and precision coverage",
             "resource renewal"
           ],
-          "reason": "the two conditions have distinct typed witnesses and neither construction supplies the other",
-          "right_closes_left": false
+          "right_closes_left": false,
+          "right_to_left_reason": "renewed resources do not prove state-family or precision coverage"
         },
         {
           "independent": true,
           "left_closes_right": false,
+          "left_to_right_reason": "an objective selected event need not be durably retained, readable, or protected",
           "pair": [
             "objective actuality",
             "Record permanence"
           ],
-          "reason": "the two conditions have distinct typed witnesses and neither construction supplies the other",
-          "right_closes_left": false
+          "right_closes_left": false,
+          "right_to_left_reason": "a permanent packet can preserve conditional data without selecting which candidate is actual"
         },
         {
           "independent": true,
           "left_closes_right": false,
+          "left_to_right_reason": "actuality of one member does not calibrate its long-run frequencies to Born weights",
           "pair": [
             "objective actuality",
             "frequency-to-Born calibration"
           ],
-          "reason": "the two conditions have distinct typed witnesses and neither construction supplies the other",
-          "right_closes_left": false
+          "right_closes_left": false,
+          "right_to_left_reason": "a Born-frequency theorem does not identify the framework owner that makes a candidate actual"
         },
         {
           "independent": true,
           "left_closes_right": false,
+          "left_to_right_reason": "an actuality owner can still consume a finite nonrenewable stock",
           "pair": [
             "objective actuality",
             "resource renewal"
           ],
-          "reason": "the two conditions have distinct typed witnesses and neither construction supplies the other",
-          "right_closes_left": false
+          "right_closes_left": false,
+          "right_to_left_reason": "a renewable bath or archive source does not select an objective outcome"
         },
         {
           "independent": true,
           "left_closes_right": false,
+          "left_to_right_reason": "Record permanence/readability does not derive the probability measure governing Record frequencies",
           "pair": [
             "Record permanence",
             "frequency-to-Born calibration"
           ],
-          "reason": "the two conditions have distinct typed witnesses and neither construction supplies the other",
-          "right_closes_left": false
+          "right_closes_left": false,
+          "right_to_left_reason": "a Born calibration does not construct protected, non-reentering, readable Records"
         },
         {
           "independent": true,
           "left_closes_right": false,
+          "left_to_right_reason": "a durable finite Record does not regenerate the blank medium needed for unbounded use",
           "pair": [
             "Record permanence",
             "resource renewal"
           ],
-          "reason": "the two conditions have distinct typed witnesses and neither construction supplies the other",
-          "right_closes_left": false
+          "right_closes_left": false,
+          "right_to_left_reason": "renewing blank medium does not establish Record admission, protection, or readability"
         },
         {
           "independent": true,
           "left_closes_right": false,
+          "left_to_right_reason": "a frequency-to-Born calibration can hold conditionally while source/archive resources remain finite",
           "pair": [
             "frequency-to-Born calibration",
             "resource renewal"
           ],
-          "reason": "the two conditions have distinct typed witnesses and neither construction supplies the other",
-          "right_closes_left": false
+          "right_closes_left": false,
+          "right_to_left_reason": "resource renewal does not identify deterministic rotor frequencies with Born probabilities"
         }
       ],
       "N3_explicit_supplies": [
@@ -233,73 +263,211 @@ PASS cold resource caps :: {'elapsed_seconds': 2.763732707942836, 'maximum_RSS_b
         "Cycle552 conditional member/history interface",
         "finite corpus sizes and held preparations"
       ],
-      "N3_hidden_phrase_scan": "all load-bearing construction choices promoted to supplied inventory",
-      "N4_residual_matches": [
+      "N3_hidden_conditions_promoted": 0,
+      "N3_phrase_hit_classifications": [
         {
-          "current_residual": "replace state-specific rows on declared product family",
-          "disposition": "closed only at two-bit parameter precision",
-          "match": true,
-          "witness": "Cycle595 finite answer ROM/off-grid refusal"
+          "classification": "NON_LOAD_BEARING_CONTEXT",
+          "hit": "canonical sorted hash-map manifest",
+          "reason": "canonical modifies JSON key sorting for a byte manifest and supplies no physics premise",
+          "surface": "Cycle597 note:131"
         },
         {
-          "current_residual": "physical projector-query locality and inverse",
-          "disposition": "exact shore, no probability semantics",
-          "match": true,
-          "witness": "Cycle580 local unitary/inverse compiler"
+          "classification": "NON_LOAD_BEARING_CONTEXT",
+          "hit": "preregistered",
+          "reason": "the token occurs in pinned filenames/title; the current law's actual pre-held hash is separately executable",
+          "surface": "Cycle592 immutable runner/note filenames and historical title"
         },
         {
-          "current_residual": "Z-X-Z grade formula",
-          "disposition": "exact projector identity",
-          "match": true,
-          "witness": "Cycle577 projector instrument"
+          "classification": "NON_LOAD_BEARING_CONTEXT",
+          "hit": "registered",
+          "reason": "module-name text carries no premise or claim weight",
+          "surface": "one immutable runtime dependency filename"
         },
         {
-          "current_residual": "conditional occurrence and finite frequency propagation",
-          "disposition": "frequency retained without Born promotion",
-          "match": true,
-          "witness": "Cycle592 occurrence/frequency bridge"
+          "classification": "NON_LOAD_BEARING_META_SCAN",
+          "hit": "quoted scan vocabulary",
+          "reason": "the phrases are enumerated as audit targets rather than invoked as proof steps",
+          "surface": "Cycle597 note N3 checklist"
         }
       ],
-      "N5_rhetoric": [
-        "coherent grade register statement is scoped to the tested four-copy block, not lattice-wide",
-        "rotor-frequency statement is scoped to finite declared corpora, not every asymptotic process",
-        "schedule/time, resource/energy, and packet/Record are typed non-promotions at the constructed block"
+      "N4_dropped_nonmatches": [
+        {
+          "current_residual": "Cycle597 supplies lawful quantized approximations for one product family but does not exactly synthesize continuous off-grid grades",
+          "disposition": "dropped as an exact-closure witness; retained only as a partial-scope N8 echo",
+          "exact_match": false,
+          "prior_residual": "the fixed denominator-eight ROM refuses new labels and cannot exactly represent two off-grid grades",
+          "witness": "docs/work_history/repo/review_feedback/PHYSICAL_TI_INNOVATION_BATH_OFFGRID_HISTORY_TOURNAMENT_CYCLE595_NOTE_2026-07-22.md:70-74"
+        },
+        {
+          "current_residual": "Cycle597 reuses the already-retired Cycle580 query sub-block and does not close a new gate/layout residual",
+          "disposition": "dropped as a Cycle597 closure witness; retained as pinned construction authority",
+          "exact_match": false,
+          "prior_residual": "Cycle577's bounded elementary gate/layout and full-unitary-extension obligation",
+          "witness": "docs/work_history/repo/review_feedback/PHYSICAL_L41_ELEMENTARY_GATE_LAYOUT_COMPILER_CYCLE580_NOTE_2026-07-22.md:21-29"
+        },
+        {
+          "current_residual": "Cycle597 retains the same Born/actuality wall and closes neither residual",
+          "disposition": "dropped as a closure witness; retained as a semantic boundary",
+          "exact_match": false,
+          "prior_residual": "pinned candidate weights are not derived Born probabilities and select no actual branch",
+          "witness": "docs/work_history/repo/review_feedback/PHYSICAL_L41_PROJECTOR_INSTRUMENT_COMPILER_TOURNAMENT_CYCLE577_NOTE_2026-07-22.md:53-60"
+        }
       ],
+      "N4_residual_matches": [
+        {
+          "current_residual": "state-specific answer rows are removed only on the declared two-bit quantized product-state family; the state-to-parameter calibration and wider family/precision remain open",
+          "disposition": "closed only for the shared state-specific-row residual at declared fixed precision",
+          "exact_match": true,
+          "prior_residual": "three state-specific ROM rows were author-supplied from three known grades, with held family and denominator generalization open",
+          "witness": "docs/work_history/repo/review_feedback/PHYSICAL_PREREGISTERED_INNOVATION_RECORD_FREQUENCY_BRIDGE_TOURNAMENT_CYCLE592_NOTE_2026-07-22.md:190-193"
+        }
+      ],
+      "N5_rhetoric_resolution_ledger": [
+        {
+          "lattice_wide": "UNTESTED_NO_NEGATIVE_CLAIM",
+          "per_block": "TESTED: one 18-M2 query and one supplied four-copy 72-M2 batch preserve all coherent sectors and supply no objective numeric selector",
+          "per_element": "UNTESTED_NO_NEGATIVE_CLAIM",
+          "per_mode": "UNTESTED_NO_NEGATIVE_CLAIM",
+          "per_site": "UNTESTED_NO_NEGATIVE_CLAIM",
+          "phrase": "the tested four-copy coherent grade register has no objective-probability derivation"
+        },
+        {
+          "lattice_wide": "UNTESTED_NO_NEGATIVE_CLAIM",
+          "per_block": "TESTED: five finite train/held corpora plus all 125 fixed-grid grade words and 64 prefixes have only a conditional frequency/error theorem",
+          "per_element": "UNTESTED_NO_NEGATIVE_CLAIM",
+          "per_mode": "UNTESTED_NO_NEGATIVE_CLAIM",
+          "per_site": "UNTESTED_NO_NEGATIVE_CLAIM",
+          "phrase": "the tested finite rotor frequencies have no Born calibration"
+        },
+        {
+          "lattice_wide": "UNTESTED_NO_NEGATIVE_CLAIM",
+          "per_block": "TESTED: finite query, synthesis, routing, and rotor schedules carry no clock variable or duration map",
+          "per_element": "UNTESTED_NO_NEGATIVE_CLAIM",
+          "per_mode": "UNTESTED_NO_NEGATIVE_CLAIM",
+          "per_site": "UNTESTED_NO_NEGATIVE_CLAIM",
+          "phrase": "the executed finite gate schedules have no time interpretation"
+        },
+        {
+          "lattice_wide": "UNTESTED_NO_NEGATIVE_CLAIM",
+          "per_block": "TESTED: copy/work/mask/archive M2 counts are resource ledgers with no work, heat, stress, or generator map",
+          "per_element": "UNTESTED_NO_NEGATIVE_CLAIM",
+          "per_mode": "UNTESTED_NO_NEGATIVE_CLAIM",
+          "per_site": "UNTESTED_NO_NEGATIVE_CLAIM",
+          "phrase": "the counted finite blank-resource debits have no energy derivation"
+        },
+        {
+          "lattice_wide": "UNTESTED_NO_NEGATIVE_CLAIM",
+          "per_block": "TESTED: one finite archive packet is written reversibly without permanence, readability, protected admission, or independent actuality",
+          "per_element": "UNTESTED_NO_NEGATIVE_CLAIM",
+          "per_mode": "UNTESTED_NO_NEGATIVE_CLAIM",
+          "per_site": "UNTESTED_NO_NEGATIVE_CLAIM",
+          "phrase": "the tested eight-M2 archive packet has no framework-Record qualification"
+        }
+      ],
+      "N6_campaign_control_surface_rule": "NO_GO_LEDGER, primitive registry, axioms, policies, queues, and audit status are read-only by campaign instruction; the full checklist remains visible in the Cycle597 note",
+      "N6_convention_only_closure_found": false,
       "N6_new_axiom_required": false,
       "N6_partial_closure_paths": [
-        "retain Route A as a coherent projector-query diagnostic",
-        "retain Route B/C as a finite-precision product-family compiler",
-        "increase unary precision and prove scalable local arithmetic bounds",
-        "derive parameter-register/state calibration without answer rows",
-        "derive renewable archive formation and separate actuality/Record law"
+        {
+          "candidate_path": "scripts/physical_state_family_grade_transition_synthesis_tournament_cycle597_2026_07_22.py",
+          "status": "EXECUTED_NARROW_POSITIVE",
+          "what_it_closes": "state-specific answer rows for one two-bit quantized product-state family"
+        },
+        {
+          "candidate_path": "scripts/physical_l41_projector_instrument_compiler_tournament_cycle577_2026_07_22.py",
+          "status": "EXACT_PINNED_PARENT_COMPONENT",
+          "what_it_closes": "the projector/instrument representation needed by a future controlled-reflection construction, not the reflection or grade register itself"
+        },
+        {
+          "candidate_path": "scripts/physical_l41_elementary_gate_layout_compiler_cycle580_2026_07_22.py",
+          "status": "EXACT_PINNED_PARENT_COMPONENT",
+          "what_it_closes": "bounded elementary layout for the existing instrument/query block, not autonomous phase estimation"
+        },
+        {
+          "candidate_path": "scripts/physical_controlled_projector_phase_estimation_grade_compiler_cycle_next.py",
+          "status": "NOT_CREATED_OPEN_CANDIDATE",
+          "what_it_closes": "supplied four-copy sector inspection and the separate calibrated parameter word if controlled reflections, b-bit error, E-G, leakage, layout, and copy ledger are constructed"
+        },
+        {
+          "candidate_path": "scripts/physical_renewable_archive_actuality_record_separation_cycle_next.py",
+          "status": "NOT_CREATED_OPEN_CANDIDATE",
+          "what_it_closes": "finite archive renewal and separately typed actuality/Record obligations if a physical renewal and admission law is constructed"
+        }
       ],
+      "N6_primitive_or_control_plane_claim": false,
       "N7_steelman": {
-        "mechanism": "a locally compiled controlled-reflection amplitude-estimation network could transform the exact Cycle577 query into a reusable b-bit grade register, while a scalable reversible comparator and renewable record medium remove the supplied parameter word and archive debit",
-        "status": "open and therefore defeats any broad no-go",
-        "terminal": "construct controlled reflections, copy/source ledger, phase-error theorem, scalable NN arithmetic, actuality owner, and blinded renewable Records"
+        "actionable_terminal": "construct and held-test b=3 and b=4 controlled-reflection circuits with exact E-G/inverse/leakage/all24 layout, a copy/source ledger, a quantitative phase-error theorem, no supplied state-specific parameter word, and an independently typed renewable actuality/Record owner",
+        "mechanism": "compile local controlled reflections of each exact Cycle577 history projector from the Cycle580 elementary grammar, run b-bit coherent amplitude estimation into a reusable grade register, and feed that register to scalable reversible threshold arithmetic and a separately renewable archive/actuality apparatus",
+        "openness": "the controlled-reflection and renewable-owner components are unbuilt, so this concrete route defeats every present broad no-go",
+        "supporting_authority": [
+          "docs/work_history/repo/review_feedback/PHYSICAL_L41_PROJECTOR_INSTRUMENT_COMPILER_TOURNAMENT_CYCLE577_NOTE_2026-07-22.md:33-42",
+          "docs/work_history/repo/review_feedback/PHYSICAL_L41_ELEMENTARY_GATE_LAYOUT_COMPILER_CYCLE580_NOTE_2026-07-22.md:21-29",
+          "scripts/physical_state_family_grade_transition_synthesis_tournament_cycle597_2026_07_22.py:535"
+        ]
       },
       "N8_cross_cycle_echo": [
-        "Cycle577 turned projector identities into an exact local instrument without actuality",
-        "Cycle580 retired the host-gate compiler import but not query-copy or Born semantics",
-        "Cycle592 exposed the finite answer-ROM and frequency-calibration imports",
-        "Cycle595 retired the balanced innovation word with an orbit-index carrier but retained the state-family wall",
-        "Cycle597 retires per-state rows only for one fixed-precision product family"
+        {
+          "applicability_here": "the same compile-and-verify mechanism is applicable to future controlled projector reflections, but no such reflection is yet built",
+          "citation": "docs/work_history/repo/review_feedback/PHYSICAL_L41_PROJECTOR_INSTRUMENT_COMPILER_TOURNAMENT_CYCLE577_NOTE_2026-07-22.md:405",
+          "prior_wall": "Cycle577 Route-B elementary gate/layout and full-unitary extension",
+          "retired_status": "RETIRED_BY_CYCLE580",
+          "retirement_mechanism": "literal support-two elementary decomposition and cubic nearest-neighbor layout"
+        },
+        {
+          "applicability_here": "a phase-estimation candidate must expose its in-state control and renewal rather than inherit host order",
+          "citation": "docs/work_history/repo/review_feedback/PHYSICAL_L41_ELEMENTARY_GATE_LAYOUT_COMPILER_CYCLE580_NOTE_2026-07-22.md:21-29",
+          "prior_wall": "Cycle580 autonomous in-state schedule/recurrence",
+          "retired_status": "OPEN",
+          "retirement_mechanism": "none; compile-time order remains supplied"
+        },
+        {
+          "applicability_here": "scale the same import-retirement shape with an explicit error theorem; do not generalize beyond the tested family",
+          "citation": "docs/work_history/repo/review_feedback/PHYSICAL_PREREGISTERED_INNOVATION_RECORD_FREQUENCY_BRIDGE_TOURNAMENT_CYCLE592_NOTE_2026-07-22.md:190-193",
+          "prior_wall": "Cycle592 author-supplied state-specific ROM rows",
+          "retired_status": "RETIRED_ONLY_FOR_CYCLE597_TWO_BIT_PRODUCT_FAMILY",
+          "retirement_mechanism": "one row-free reversible literal-product rule over all 125 quantized parameter words"
+        },
+        {
+          "applicability_here": "increase b and prove scalable local resource/error bounds; exact continuous closure remains unclaimed",
+          "citation": "docs/work_history/repo/review_feedback/PHYSICAL_TI_INNOVATION_BATH_OFFGRID_HISTORY_TOURNAMENT_CYCLE595_NOTE_2026-07-22.md:70-74",
+          "prior_wall": "Cycle595 fixed denominator-eight off-grid refusal",
+          "retired_status": "PARTIAL_ONLY",
+          "retirement_mechanism": "Cycle597 replaces refusal by a declared quantization plus approximation bound, not exact continuous synthesis"
+        },
+        {
+          "applicability_here": "requires a separately typed renewable admission/Record construction and cannot be retired by arithmetic relabeling",
+          "citation": "docs/work_history/repo/review_feedback/PHYSICAL_PREREGISTERED_INNOVATION_RECORD_FREQUENCY_BRIDGE_TOURNAMENT_CYCLE592_NOTE_2026-07-22.md:367-375",
+          "prior_wall": "Cycle592 actuality, Record, and fresh-resource renewal",
+          "retired_status": "OPEN",
+          "retirement_mechanism": "none in Cycle597; finite reversible archive debit is only exposed"
+        }
       ],
-      "axiom_pressure": "NONE",
-      "broad_no_go": "FAIL_DO_NOT_SHIP",
-      "minimum_content": "FAIL_DO_NOT_SHIP",
-      "shared_obstruction": "NOT_ESTABLISHED"
+      "Status": "FAIL",
+      "artifact_status": "PASS_NARROWED_POSITIVE_ONLY",
+      "axiom_pressure_claim": false,
+      "broad_no_go_claim": false,
+      "minimum_content_claim": false,
+      "shared_obstruction_claim": false
     },
     "expected": {
-      "Cycle577 note": "23ef5601b73c121d5e82c9031ec0ff4acffdc5471c43aa4dec63a78085aa7c0f",
-      "Cycle577 runner": "93bf1fa2859289b13037bfe7882cce86732e9377ed8b60e56c3bd55ebc0ce74f",
-      "Cycle580 note": "e8ca5acdaec0c7ec5f0ba9772d7736352bcf132e961483d93f19c679439df276",
-      "Cycle580 runner": "c46917d4a932cd3ad9a78e0547625055f5adf9d5cf7393700d7e6715dd515cd3",
-      "Cycle592 note": "dccf62d6126287b20cbf96ff410534adfa1746d9cf3aba94fbfb2893855be212",
-      "Cycle592 runner": "ab565af6aa59e66cea7b1ce625c08f8a88235ae9f7415e5e7d89d63af34ce9ce",
-      "Cycle595 note": "b1b1fc0960f69abcf9050b7eee2f3387188d45ea7704ca2db87381cd5fd3b730",
-      "Cycle595 runner": "cdfcddb00974205faa8bc60c617ff0dd42bf9f8947b0a55a4b172157b2d28de2"
+      "Cycle577 cold": "1c77d2ca4bf860482d3e55596c85e0983f32e755e7ceaac33ff0576a928c8a36",
+      "Cycle577 note": "7617ee877ca22986e0eacc09d08e14f6246cbc75b6443961c8626a1b5435f18c",
+      "Cycle577 receipt": "f7e6bbc40a4d56ee115ba43ddbab7bee4aff05227b988a057adc4420f51941ed",
+      "Cycle577 runner": "0876bc8888193606446b5fe07f1fdd8e3ddef3b313551739b81be3792c820aa7",
+      "Cycle580 cold": "890c68f44bf6cc563916304b51481def8aa3ad7009a6ecfe0b0a4cffc85cd7e6",
+      "Cycle580 note": "47a6418c27965219ddc5d3c2a8bc39fd34aa6173d3d1c16e473a136113b9c787",
+      "Cycle580 receipt": "9cf656c917ff738bc6d0d0e52dc8c251630aaedd86dd5a6b90dd4f7857cdbc1d",
+      "Cycle580 runner": "1f1acb34dc8976f5617319353e9591f64eae5cfe923a1dea736adfa792c4e718",
+      "Cycle592 cold": "cb2640da38cf7cb0a69e6351871d9a9ba93c712f6865d5055b0bd79f18acdc5c",
+      "Cycle592 note": "092f0bfc06f7a42d82ed10ade5f551bdb08ebe7040c8c2b8ba0b1b3ea1c971c7",
+      "Cycle592 receipt": "edf069adbf58b66b30b6b9a66a85dd577b6c6c3170f833807dc57d59c8f14457",
+      "Cycle592 runner": "14d01e640eb1818c29aeb9f05313b2211e28e445d4798f3f6718d0b0fca0d62a",
+      "Cycle595 cold": "ecd3fb24ab1deee7395b914d708749bd924c6f1f3d5d177cd55228f4759f7216",
+      "Cycle595 note": "a6d852fdde7a90cb7bf2b11729d67828b03974e1248cbac7466353f13835f462",
+      "Cycle595 receipt": "09eeeb4b2a2575a10a5030d75e29f6dd0346a7bbf248409531fb9825b1b005e6",
+      "Cycle595 runner": "107fdaef7f2f834617bd695119569f0fc867768e64d695105e69107ef80d87d8"
     },
+    "expected_runtime_parent_manifest_sha256": "e407b4b1d71af6cbb9feed475bb204f2457ef129506b395a1393a0b970136fde",
     "expected_synthesis_law_sha256": "9a2a6121730ad67c6049a42150a056687cc33fc6771897425fccb3d9e5b877b6",
     "held_declaration_sha256": "c6b3077028e2b78180183a209e3c8bfbb49f32b3398dbe3f40ac6ea265fdc9af",
     "inventory": {
@@ -316,6 +484,12 @@ PASS cold resource caps :: {'elapsed_seconds': 2.763732707942836, 'maximum_RSS_b
         "copy/archive renewal",
         "time, energy, source, stress, gravity, noise, and infinite-volume integration"
       ],
+      "physical_M2_boundary": {
+        "Route_A": "only exact-pinned Cycle577 dual-rail plus Cycle580 elementary-layout composition",
+        "Route_B_C": "only exact-pinned Cycle587 basis-state compiler plus recursively pinned Cycle523 primitive dependency",
+        "unverified_role_block_EG_leakage_layout": null,
+        "unverified_role_blocks_promoted_to_physical_M2": 0
+      },
       "supplied": [
         "four identically prepared input copies",
         "two-bit unary parameter/state calibration",
@@ -327,25 +501,66 @@ PASS cold resource caps :: {'elapsed_seconds': 2.763732707942836, 'maximum_RSS_b
     },
     "note_missing": [],
     "observed": {
-      "Cycle577 note": "23ef5601b73c121d5e82c9031ec0ff4acffdc5471c43aa4dec63a78085aa7c0f",
-      "Cycle577 runner": "93bf1fa2859289b13037bfe7882cce86732e9377ed8b60e56c3bd55ebc0ce74f",
-      "Cycle580 note": "e8ca5acdaec0c7ec5f0ba9772d7736352bcf132e961483d93f19c679439df276",
-      "Cycle580 runner": "c46917d4a932cd3ad9a78e0547625055f5adf9d5cf7393700d7e6715dd515cd3",
-      "Cycle592 note": "dccf62d6126287b20cbf96ff410534adfa1746d9cf3aba94fbfb2893855be212",
-      "Cycle592 runner": "ab565af6aa59e66cea7b1ce625c08f8a88235ae9f7415e5e7d89d63af34ce9ce",
-      "Cycle595 note": "b1b1fc0960f69abcf9050b7eee2f3387188d45ea7704ca2db87381cd5fd3b730",
-      "Cycle595 runner": "cdfcddb00974205faa8bc60c617ff0dd42bf9f8947b0a55a4b172157b2d28de2"
+      "Cycle577 cold": "1c77d2ca4bf860482d3e55596c85e0983f32e755e7ceaac33ff0576a928c8a36",
+      "Cycle577 note": "7617ee877ca22986e0eacc09d08e14f6246cbc75b6443961c8626a1b5435f18c",
+      "Cycle577 receipt": "f7e6bbc40a4d56ee115ba43ddbab7bee4aff05227b988a057adc4420f51941ed",
+      "Cycle577 runner": "0876bc8888193606446b5fe07f1fdd8e3ddef3b313551739b81be3792c820aa7",
+      "Cycle580 cold": "890c68f44bf6cc563916304b51481def8aa3ad7009a6ecfe0b0a4cffc85cd7e6",
+      "Cycle580 note": "47a6418c27965219ddc5d3c2a8bc39fd34aa6173d3d1c16e473a136113b9c787",
+      "Cycle580 receipt": "9cf656c917ff738bc6d0d0e52dc8c251630aaedd86dd5a6b90dd4f7857cdbc1d",
+      "Cycle580 runner": "1f1acb34dc8976f5617319353e9591f64eae5cfe923a1dea736adfa792c4e718",
+      "Cycle592 cold": "cb2640da38cf7cb0a69e6351871d9a9ba93c712f6865d5055b0bd79f18acdc5c",
+      "Cycle592 note": "092f0bfc06f7a42d82ed10ade5f551bdb08ebe7040c8c2b8ba0b1b3ea1c971c7",
+      "Cycle592 receipt": "edf069adbf58b66b30b6b9a66a85dd577b6c6c3170f833807dc57d59c8f14457",
+      "Cycle592 runner": "14d01e640eb1818c29aeb9f05313b2211e28e445d4798f3f6718d0b0fca0d62a",
+      "Cycle595 cold": "ecd3fb24ab1deee7395b914d708749bd924c6f1f3d5d177cd55228f4759f7216",
+      "Cycle595 note": "a6d852fdde7a90cb7bf2b11729d67828b03974e1248cbac7466353f13835f462",
+      "Cycle595 receipt": "09eeeb4b2a2575a10a5030d75e29f6dd0346a7bbf248409531fb9825b1b005e6",
+      "Cycle595 runner": "107fdaef7f2f834617bd695119569f0fc867768e64d695105e69107ef80d87d8"
     },
     "pass": true,
-    "runner_sha256": "7dec66d44101d26f563bea079fa62b56daeb1d2d5a21a7a98c6f66fc22392d77",
+    "receipt_checks": {
+      "Cycle577": {
+        "authority_audit": true,
+        "cold": true,
+        "note": true,
+        "runner": true,
+        "verified": true
+      },
+      "Cycle580": {
+        "authority_audit": true,
+        "cold": true,
+        "note": true,
+        "runner": true,
+        "verified": true
+      },
+      "Cycle592": {
+        "authority_audit": true,
+        "cold": true,
+        "note": true,
+        "runner": true,
+        "verified": true
+      },
+      "Cycle595": {
+        "authority_audit": true,
+        "cold": true,
+        "note": true,
+        "runner": true,
+        "verified": true
+      }
+    },
+    "runner_sha256": "994f050fb33d7b9909896d195dca6be0062f56445ba49cac8731f196a3cfe79e",
+    "runtime_parent_count": 104,
+    "runtime_parent_hash_mismatches": [],
+    "runtime_parent_manifest_sha256": "e407b4b1d71af6cbb9feed475bb204f2457ef129506b395a1393a0b970136fde",
     "synthesis_law_sha256": "9a2a6121730ad67c6049a42150a056687cc33fc6771897425fccb3d9e5b877b6"
   },
   "fail": 0,
   "pass": 6,
   "resources": {
     "RSS_cap_bytes": 3221225472,
-    "elapsed_seconds": 2.763732707942836,
-    "maximum_RSS_bytes": 1196998656,
+    "elapsed_seconds": 2.6291013340232894,
+    "maximum_RSS_bytes": 701480960,
     "wall_cap_seconds": 360.0
   },
   "route_A": {
@@ -353,7 +568,7 @@ PASS cold resource caps :: {'elapsed_seconds': 2.763732707942836, 'maximum_RSS_b
     "active_query_gate_deletion_fixture_L1": 1.4999999999999996,
     "all24_query_copy_edge_failures": 0,
     "all24_query_copy_edge_tests": 240,
-    "all_retained_sectors": true,
+    "all_coherent_sectors_preserved": true,
     "coherent_grade_register_is_objective_probability": false,
     "complete_Cycle580_instrument_residual": 4.440926982597988e-16,
     "complete_Cycle580_inverse_residual": 8.906865629316332e-16,
@@ -365,8 +580,10 @@ PASS cold resource caps :: {'elapsed_seconds': 2.763732707942836, 'maximum_RSS_b
     "maximum_projector_formula_residual": 2.220446049250313e-16,
     "maximum_query_distribution_residual": 4.440892098500626e-16,
     "pass": true,
+    "physical_M2_claim_basis": "exact-pinned Cycle577 dual-rail composition plus exact-pinned Cycle580 elementary layout",
     "physical_M2_per_four_query_batch": 72,
     "physical_M2_per_query_copy": 18,
+    "primitive_composition_inherited_and_verified": true,
     "proper_cubic_frames": 24,
     "query_elementary_gates": 9,
     "route": "A coherent Cycle577-projector/Cycle580-pointer query",
@@ -386,8 +603,8 @@ PASS cold resource caps :: {'elapsed_seconds': 2.763732707942836, 'maximum_RSS_b
         "name": "train_uniform",
         "nonzero_single_query_sectors": 8,
         "numeric_grade_word_or_objective_sector_derived": false,
-        "retained_four_query_tuple_sectors": 4096,
-        "split": "train"
+        "split": "train",
+        "supported_four_query_tuple_sectors": 4096
       },
       {
         "exact_grade": [
@@ -404,8 +621,8 @@ PASS cold resource caps :: {'elapsed_seconds': 2.763732707942836, 'maximum_RSS_b
         "name": "train_basis_corner",
         "nonzero_single_query_sectors": 1,
         "numeric_grade_word_or_objective_sector_derived": false,
-        "retained_four_query_tuple_sectors": 1,
-        "split": "train"
+        "split": "train",
+        "supported_four_query_tuple_sectors": 1
       },
       {
         "exact_grade": [
@@ -422,8 +639,8 @@ PASS cold resource caps :: {'elapsed_seconds': 2.763732707942836, 'maximum_RSS_b
         "name": "train_asymmetric",
         "nonzero_single_query_sectors": 8,
         "numeric_grade_word_or_objective_sector_derived": false,
-        "retained_four_query_tuple_sectors": 4096,
-        "split": "train"
+        "split": "train",
+        "supported_four_query_tuple_sectors": 4096
       },
       {
         "exact_grade": [
@@ -440,8 +657,8 @@ PASS cold resource caps :: {'elapsed_seconds': 2.763732707942836, 'maximum_RSS_b
         "name": "held_offgrid_7over11_4over9_5over13",
         "nonzero_single_query_sectors": 8,
         "numeric_grade_word_or_objective_sector_derived": false,
-        "retained_four_query_tuple_sectors": 4096,
-        "split": "held"
+        "split": "held",
+        "supported_four_query_tuple_sectors": 4096
       },
       {
         "exact_grade": [
@@ -458,12 +675,15 @@ PASS cold resource caps :: {'elapsed_seconds': 2.763732707942836, 'maximum_RSS_b
         "name": "held_offgrid_11over17_13over19_17over23",
         "nonzero_single_query_sectors": 8,
         "numeric_grade_word_or_objective_sector_derived": false,
-        "retained_four_query_tuple_sectors": 4096,
-        "split": "held"
+        "split": "held",
+        "supported_four_query_tuple_sectors": 4096
       }
     ],
     "state_copy_preparation_or_no_cloning_derived": false,
-    "supplied_identically_prepared_query_copies": 4
+    "supplied_identically_prepared_query_copies": 4,
+    "unverified_role_block_EG": null,
+    "unverified_role_block_layout": null,
+    "unverified_role_block_leakage": null
   },
   "route_B": {
     "Cycle592_answer_table_reads": 0,
@@ -480,6 +700,8 @@ PASS cold resource caps :: {'elapsed_seconds': 2.763732707942836, 'maximum_RSS_b
     "parameter_fraction_bits": 2,
     "pass": true,
     "physical_M2": 525,
+    "physical_M2_claim_basis": "exact-pinned Cycle587 basis-state primitive compiler with recursively pinned Cycle523 Toffoli dependency",
+    "primitive_composition_inherited_and_verified": true,
     "program_selector_M2": 0,
     "route": "B reversible unary fixed-point product-family synthesizer",
     "rows": [
@@ -633,7 +855,10 @@ PASS cold resource caps :: {'elapsed_seconds': 2.763732707942836, 'maximum_RSS_b
       "runtime_data_selects_route": false,
       "terminal_wire_restoration_failures": 0
     },
-    "transition_bits": 6
+    "transition_bits": 6,
+    "unverified_role_block_EG": null,
+    "unverified_role_block_layout": null,
+    "unverified_role_block_leakage": null
   },
   "route_C": {
     "EG_failures": 0,
@@ -641,7 +866,7 @@ PASS cold resource caps :: {'elapsed_seconds': 2.763732707942836, 'maximum_RSS_b
     "active_rotor_edge_deletion_residual": 1.4142135623730951,
     "active_select_deletion_residual": 1.4142135623730951,
     "archive_packet_renewal_derived": false,
-    "carrier_and_grade_mask_catalytically_retained": true,
+    "carrier_and_grade_mask_catalytically_preserved": true,
     "deleted_grade_word_refusals": 1,
     "exhaustive_grade_words": 125,
     "exhaustive_prefixes_per_word": 64,
@@ -652,7 +877,9 @@ PASS cold resource caps :: {'elapsed_seconds': 2.763732707942836, 'maximum_RSS_b
     "maximum_error_budget_violation": 0.0,
     "natural_order_comparator_discrepancy": "16",
     "pass": true,
+    "physical_M2_claim_basis": "exact-pinned Cycle587 basis-state primitive compiler with recursively pinned Cycle523 Toffoli dependency",
     "physical_M2_per_occurrence_fixture": 1168,
+    "primitive_composition_inherited_and_verified": true,
     "rotor_frequency_promoted_to_Born": false,
     "rotor_genesis": 9,
     "rotor_increment": 25,
@@ -834,7 +1061,10 @@ PASS cold resource caps :: {'elapsed_seconds': 2.763732707942836, 'maximum_RSS_b
       "runtime_data_selects_route": false,
       "terminal_wire_restoration_failures": 0
     },
-    "unchanged_Cycle552_interface_failures": 0
+    "unchanged_Cycle552_interface_failures": 0,
+    "unverified_role_block_EG": null,
+    "unverified_role_block_layout": null,
+    "unverified_role_block_leakage": null
   },
   "summary": {
     "audit": "unset",
@@ -849,22 +1079,22 @@ PASS cold resource caps :: {'elapsed_seconds': 2.763732707942836, 'maximum_RSS_b
   }
 }
 RESULT pass=6 fail=0
-authority=none; audit=unset; coherent grade register is not objective probability; rotor frequency is not Born; schedule is not time; spent resource is not energy; packet is not Record
-       85.79 real        84.10 user         0.67 sys
-          1196998656  maximum resident set size
+authority=none; audit=unset; tested four-copy coherent grade register has no objective-probability derivation; tested finite rotor frequencies have no Born calibration; executed finite gate schedules have no time interpretation; counted finite blank-resource debits have no energy derivation; tested eight-M2 archive packet has no framework-Record qualification
+       74.79 real        73.34 user         0.84 sys
+           872038400  maximum resident set size
                    0  average shared memory size
                    0  average unshared data size
                    0  average unshared stack size
-              148694  page reclaims
-                  78  page faults
+              270199  page reclaims
+                1480  page faults
                    0  swaps
                    0  block input operations
                    0  block output operations
                    0  messages sent
                    0  messages received
                    0  signals received
-                1338  voluntary context switches
-               77254  involuntary context switches
-       1293414105612  instructions retired
-        295002995996  cycles elapsed
-          1280509272  peak memory footprint
+                1805  voluntary context switches
+               33475  involuntary context switches
+       1291870675829  instructions retired
+        273780704536  cycles elapsed
+          1281525128  peak memory footprint

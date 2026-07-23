@@ -1,370 +1,354 @@
-# Physical rational-Regge / reciprocal-response / prediction bridge — Cycle 604 (2026-07-22)
+# Rational-Regge / reciprocal-response / comparison tournament — Cycle 604
 
-- authority: none
-- audit: unset
-- constitutional effect: none
-- status: three constructive partials; no shared no-go and no axiom pressure
+Date: 2026-07-22
 
-## Frozen tournament
+Authority: none
 
-Cycle 604 continues accepted Cycle601 with three independent routes:
+Audit: unset
 
-1. Route A, priority: a fixed-state Padé / continued-fraction line transfer,
-   a finite lossless termination with retained garbage, and a co-designed
-   Regge product that preserves its declared expanded image.
-2. Route B: a reciprocal modular source/field kick-drift candidate with an
-   exact conserved word and local continuity.
-3. Route C: a frozen finite-horizon Cesaro bridge to the Cycle585/588 static
-   Green prediction and the Cycle451/570 matched-event surface.
+Constitutional effect: none. No axiom, foundation, Qualification, primitive,
+registry, policy, queue, audit-status, or PR-control surface changes.
 
-The runner byte-pins Cycles 601, 576, 579, 585, 588, 451, and 570.  Nothing in
-this cycle edits their laws or status.
+Author artifact status accepted: false. No reviewer or audit verdict is
+inferred from a hash, executable pass, earlier author paragraph, or parent
+artifact.
 
-## Route A — rational transfer and image-preserving Regge product
+## Result up front
 
-### Exact rational object
+Cycle 604 produces three useful but sharply bounded results:
 
-Writing `w=exp(i z)`, the fixed `[1/1]` Padé candidate is
+1. Route A constructs an exact algebraic degree-eight FIR paraunitary with
+   retained garbage and conjugates a declared ten-role Regge product through
+   that code. The declared code intertwiner, inverse, and code-space leakage
+   residuals are small on train, held, and out-family even tori. This is not a
+   physical M2 compiler: no M2 primitive composition, physical E/G, physical
+   leakage, nearest-neighbor routing, physical layout/depth, or local sector
+   enforcement is evaluated.
+2. Route B constructs an exactly reversible host-evaluated modular kick-drift
+   exchange with a conserved word and cellwise continuity. The bit-role and
+   ripple counts are analytic declarations, not physical M2 costs or a gate
+   circuit. The supplied source word is not physical matter, recoil,
+   stress-energy, energy, or gravity.
+3. Route C gives a frozen no-refit numerical comparison between a finite
+   Cesaro response and a graph-Laplacian static surface. It is not a prediction
+   law because no exact cross-cycle physical interface is composed. It does
+   not repair Cycle 585's actual raw-Regge cubic-coefficient mismatch of about
+   4/3 relative to the conditional graph comparator. Candidate 3:4 and 5:4
+   labels are not a selected occurrence, Record, or actuality.
 
-`R(w) = 2(1+2w)/(5+w)`.
+The full N1–N8 gate rejects a broad no-go, minimum-content claim, shared
+obstruction, and axiom pressure.
 
-It is the exact transfer function of the one-state realization
+## Exact inherited boundaries
 
-`T = [[-1/5, 3 sqrt(2)/5], [3 sqrt(2)/5, 2/5]]`.
+The runner byte-pins the final Cycle 601 runner/note/cold triple and the
+current final Cycle 576, 579, 585, 588, 451, and 570 evidence used here.
+Cycle 601 is an author artifact with status accepted false; it is source
+evidence only. Its Routes A/B/C leave physical M2 primitive composition,
+physical E/G, physical leakage, physical routing, local enforcement, and
+coherent source-control composition false/open. Its Route-C source schedule is
+supplied and its response is not gravity.
 
-Its singular values are `1` and `4/5`, so it is contractive.  The runner forms
-the four-channel Julia dilation from the two defect operators and tests its
-unitarity and the state-transfer identity directly.
+Cycles 576 and 579 likewise leave physical primitive composition, physical
+layout/leakage, and the exact target exponential false/open. Cycle 585 finds
+that its actual raw-Regge scalar surface does not equal the graph-Laplacian
+reference surface. Cycle 588 obtains the graph `5/(32pi)` coefficient only on
+a conditional restricted-rail/tick join; no parameters are refit, but physical
+geometry, select/prepare genesis, and the exact physical interface remain
+underived. Cycle 570 explicitly does not call its candidate form a Record or
+actuality and does not close proper time.
 
-This does not make `R` a finite-depth compiler.  Exact stationary use of the
-denominator `1+w/5` needs an unbounded recurrence or a prepared fixed-point
-state.  Cycle604 supplies neither and therefore scopes the exact rational
-object as a mathematical local recurrence, not as the delivered physical
-compiler.
+The recursive runtime import closure contains the two direct Cycle 576/579
+modules plus their hidden Regge module. Every member is exact-pinned and the
+closure manifest is
+`72895abf1bc8d9e677562aa8d884166a7d6c4a8fc71c193a7972bd43d333fbbd`.
 
-### Exact finite FIR unitary dilation
+## Frozen split and terminology
 
-The executed physical object is the frozen degree-eight DC-corrected
-termination
+The split precedes outputs:
 
-`P8(w) = sum_(n=0)^8 c_n w^n`,
+| route | train | held/out-family |
+|---|---|---|
+| A FIR/Regge | L4 | held L6, held L8, out-family L10 |
+| B reciprocal words | L3, four updates | held L5/six, out-family L7/eight |
+| C Cesaro comparison | L5/H192 | held L7/H384, out-family L9/H768 |
 
-with `c0=2/5`, geometric Padé coefficients through order seven, and the final
-coefficient chosen before fixtures so `P8(1)=1`.  A minimum-phase
-Fejer-Riesz factor `Q8` is constructed.  The runner verifies the Laurent
-coefficient identity
+A generator is not a rate or physical energy. A factor schedule and update
+count are not time. A conserved modular word is not stress-energy. A pointer
+or latch is not a Record or actuality. A response array is not gravity. A
+prediction-surface comparison is not a law unless parameters are not refit
+and the physical interface is exact; C604 has no refit but lacks that exact
+interface.
 
-`1-|P8(w)|^2 = |Q8(w)|^2`
+## Route A — algebraic rational/FIR and declared metric-role product
 
-coefficient by coefficient.  This proves nonnegative defect over the full
-unit circle; it is not an inference from the momentum sampling grid.
+### Rational and FIR objects
 
-The two-by-two polynomial
+With `w=exp(i z)`, the fixed rational candidate is
 
-`[[P8, -reverse(Q8)], [Q8, reverse(P8)]]`
+```text
+R(w) = 2(1+2w)/(5+w).
+```
 
-is paraunitary.  Its second output is retained garbage, never erased or
-measured.  Recursive leading-coefficient reduction extracts eight rank-one
-delay sections plus a constant two-by-two base unitary.  Reconstruction of the
-complete polynomial, section walls, base unitarity, full-circle maximum
-defect, and deletion of one delay section are tested.
+The one-state contraction has singular values one and four-fifths. Its Julia
+dilation is algebraically unitary, with unitarity residual
+`3.7784951132084376e-16` and transfer residual
+`6.206335383118183e-16`. Exact stationary use still requires an unbounded
+continued-fraction recurrence or prepared fixed state; neither is supplied as
+a physical compiler.
 
-Each abstract delay section has an explicit bounded M2 schedule:
+The degree-eight DC-corrected FIR polynomial `P8` is paired with a
+Fejer-Riesz complement `Q8`. The coefficient identity
 
-1. an onsite frozen parameterized two-M2 basis rotation;
-2. one selected-rail proper-cubic stream permutation, with at most three axial
-   permutation sublayers for a body-diagonal direction;
-3. the inverse onsite rotation.
+```text
+1-|P8(w)|^2 = |Q8(w)|^2
+```
 
-The all-frame encoder has 720 data M2 rails per coarse cell.  The receipt
-places them injectively in a frozen `9x9x9` block by
-`rail=30*frame+2*edge+channel` and
-`(x,y,z)=(rail mod 9, floor(rail/9) mod 9, floor(rail/81))`; it also prints
-the eight projector vectors and constant base matrix.  This is a concrete
-bounded block layout, not an accepted-gate-alphabet synthesis.
+holds around the full unit circle to `6.661338147750939e-16`. The resulting
+two-channel polynomial is paraunitary to `5.25409454148561e-15`, retains the
+garbage channel, and has an exact algebraic eight-delay-section
+factorization. Deleting one delay section produces signal approximately `2`.
 
-The stream is a local QCA permutation layer.  It is not claimed to be a finite
-circuit of nearest-neighbor swaps on a closed torus.  Likewise, the arbitrary
-base/projector/Givens matrices are frozen parameterized one-/two-M2 gates; no
-lowering to an accepted finite gate alphabet is executed.  Thus “fixed-state
-and fixed-width” is established, while “constant accepted alphabet” remains
+This does not make the sections physical gates. The onsite blocks,
+translations, 720 declared two-level roles, `9x9x9` coordinate blueprint, and
+factor counts are supplied algebraic data. The numerical runner evaluates the
+block-circulant operator; it does not replay physical M2 primitives or a
+closed-torus nearest-neighbor swap circuit.
+
+### Declared metric-role intertwiner
+
+The Cycle-576 kernel is restricted to ten declared metric roles, factorized,
+then conjugated by the FIR code. On the declared code the numerical identity
+is
+
+```text
+G_declared E_FIR = E_FIR G_metric.
+```
+
+This restriction is a co-designed algebraic choice, not a locally enforced
+physical gauge constraint. Same-role hopping uses a supplied bipartite color,
+so the lawful domain is even periodic tori only. All 24 proper-cubic sectors
+and all 576 ordered frame products close at the declared role level; this is
+not Lorentz covariance.
+
+Controls:
+
+- maximum declared expanded-code intertwining residual:
+  `2.793359906207423e-15`;
+- maximum declared code-space leakage: `2.7799003194654083e-15`;
+- maximum algebraic inverse residual: `5.626398463373706e-15`;
+- minimum metric-factor deletion signal: `1.0738623025330138e-05`;
+- 103 completion Givens blocks and 706 metric factors;
+- maximum FIR-to-Padé full-zone error: `3.840000000088217e-06`;
+- maximum FIR-to-exact-line full-zone error: `1.176784749592835`;
+- maximum ordered-product/target-exponential error:
+  `5.835309984417709e-06`.
+
+Thus the FIR factorization and declared image intertwiner are positive, while
+exact sinc, exact target exponential, odd-torus/color-free construction, and
+every physical M2 compiler terminal remain open.
+
+## Route B — reciprocal modular comparator
+
+Each cell has four supplied 31-bit modular words `(q,p_s,phi,p_f)`. The host
+evaluates
+
+```text
+p_s <- p_s-Lq-s(q-phi)
+p_f <- p_f-Lphi+s(q-phi)
+q   <- q+p_s
+phi <- phi+p_f              mod 2^31.
+```
+
+Both signs and both kick/drift orders are reversible and remain admissible.
+The conserved word `sum_x(p_s+p_f) mod 2^31` and the local continuity identity
+have zero integer residual. No future-source read is used, but the initial
+source word, coupling sign, and order are supplied.
+
+Controls across train/held/out-family sizes include:
+
+- inverse, conserved-ledger, continuity, wrap-inverse, and all-24 covariance
+  residuals exactly zero;
+- all 576 frame products present;
+- minimum order-alternative signal `34782`;
+- minimum sign-alternative signal `23176`;
+- minimum recoil-deletion ledger failure `17`;
+- minimum source-input deletion signal `119`;
+- source-off output exactly zero.
+
+The declared bit roles, three-role arithmetic support, radius-one stencil, and
+ripple-factor upper bound do not constitute a reversible physical gate
+circuit. Physical M2 arithmetic, physical E/G/leakage, modular-sector
+enforcement, matter/recoil identity, sign selection, and order selection are
 open.
 
-The numerical functions `apply_filter` and `physical_product` execute the
-resulting block-circulant operator directly.  They do not replay every delay
-gate.  The independently reconstructed delay-section factorization is the
-local realization certificate.  This distinction is explicit in the receipt.
+## Route C — no-refit graph-surface comparison
 
-### Co-designed Regge product
+The frozen recurrence uses `alpha=1/12`, a unit point minus uniform zero-mode
+source, and finite Cesaro horizons. Relative finite/static graph residuals are
 
-Cycle601 applied the raw edge product and measured code-image leakage.  Here
-the Cycle576 Regge kernel is first conjugated into ten metric rails by the
-zero-momentum polar isometry.  Its finite spatial kernel is then factored into
-diagonal and translated two-rail layers entirely inside those ten rails.
-The five complementary rails are idle.  Conjugating this metric-rail product
-by the onsite 15-rail completion and the paraunitary line encoder gives
+```text
+L5/H192  0.006794530460511728
+L7/H384  0.005751565018220709
+L9/H768  0.003728477636657561
+```
 
-`G_physical E_FIR = E_FIR G_metric`
+They decrease and the float64/long-double control is zero at reported
+precision. These horizons do not equal the static limit and their update count
+is not physical time.
 
-exactly on the expanded code.  This is co-design, not post-update projection.
-The runner evaluates the intertwining residual, exact inverse, leakage, and
-factor deletion on train L4, held L6/L8, and out-family L10.
+The same mathematical graph Laplacian appears in Cycle 588's conditional
+restricted-rail comparator. With zero parameter refits, C604 reevaluates the
+axis/face/body asymptotic fixtures and finds maximum relative residual
+`0.001748688020904332` against `5/(32pi)`. This is a comparator result, not a
+law: no exact source-response-observable physical interface is composed.
 
-Same-role translated hopping is split by a bipartite matching color.  This is
-tested only on even periodic tori.  Odd-torus coloring and a translation-
-covariant QCA replacement remain open.  Every frame sector uses its local
-color and local directions; all 24 proper-cubic sectors and all 576 frame
-products are checked.  Proper-cubic covariance is not Lorentz covariance.
-This is the declared even torus scope.
+It is also not a Cycle-585 raw-Regge prediction. Cycle 585 reports a raw-Regge
+cubic correction ratio `1.3333334427210133` relative to the graph surface;
+C604 retains rather than repairs that mismatch.
 
-The metric product is an ordered product at the supplied Cycle579 angle.  Its
-error against the target exponential is measured and retained.  A generator
-is not a rate, a factor schedule is not time, and no phase is physical energy.
+The Cycle-451/570 strings source-off `4:4`, receiver-zero `4:4`, delay
+candidate `3:4`, and advance candidate `5:4` are retained exactly. The mapping
+from response sign to those labels is supplied. No sign/order, calibrated
+event, occurrence, Record, actuality, probability, or gravity follows.
 
-Exact theorem: the degree-eight paraunitary, retained-garbage dilation,
-expanded-image intertwining, inverse, and even-torus factor product are exact
-up to reported numerical residuals.
+## Supplied-structure inventory
 
-Approximate theorem: `P8` approximates `R` uniformly at the measured small
-termination error; `R` approximates the exact Cycle576 line factor only to
-low-momentum order `O(z^3)`.  Full-BZ error is explicitly large.  Neither the
-Padé transfer nor `P8` is the exact sinc line factor, and the ordered product
-is not the exact target exponential.
+Supplied: Padé order; FIR horizon; complement branch; vacuum garbage input;
+ten-role restriction; even-torus color; factor schedules and matrices;
+Cycle-576 kernel; Cycle-579 angle; word width and initial source; sign and
+kick/drift order; `alpha`; zero-mean source; finite horizons; precision;
+conditional graph surface; candidate labels; sign-to-label mapping.
 
-Disposition: **constructive exact fixed-parameter FIR image compiler;
-Padé, sinc, accepted-alphabet, odd-torus, and exponential terminals remain
-scoped**.
+Derived/evaluated: contraction and Julia identities; FIR spectral complement
+and paraunitary factorization; declared-code Regge intertwining/inverse;
+integer reciprocal ledger and continuity; finite/static graph comparison; and
+the no-refit conditional coefficient comparison.
 
-## Route B — reciprocal modular response
-
-Every cell carries four signed 31-bit modular words:
-
-- source coordinate `q` and source momentum `p_s`;
-- field coordinate `phi` and field momentum `p_f`.
-
-For coupling sign `s=+1` or `-1`, the reciprocal kick is
-
-`p_s <- p_s - L q - s(q-phi)`
-
-`p_f <- p_f - L phi + s(q-phi)`,
-
-and drift is `q<-q+p_s`, `phi<-phi+p_f`, all modulo `2^31`.  Both kick-then-
-drift and drift-then-kick are executed.  Each has an algebraic inverse and
-uses only current local words; neither needs a host future-source service.
-
-The declared ledger is
-
-`sum_x (p_s+p_f) mod 2^31`.
-
-The exchange cancels locally and the two Laplacians are divergences, so the
-runner tests both the global word and cellwise continuity.  The ledger is only
-a conserved modular word.  It is not stress-energy, not physical energy, and
-not gravity.  The source word has not been joined to accepted
-matter and is not called physical recoil.
-
-Controls include exact inverse, source-off, source deletion, field deletion,
-recoil deletion, no-wrap fixtures, an explicit wrap-and-inverse fixture,
-positive/negative coupling, both factor orders, all 24 frames, and all 576
-products.  Both undeleted orders and signs remain valid and distinguishable.
-No response order or sign is selected.
-
-The arithmetic has radius one, three-M2 ripple gates, fixed word width, and a
-stated depth upper bound.  The test harness reads the conserved global sum but
-the update does not compute or consume it.
-
-Disposition: **constructive exact reciprocal ledger and continuity;
-physical source/recoil, sign, order, calibration, and backreaction remain
-open**.
-
-## Route C — finite response to static and matched-event predictions
-
-The freeze precedes every output:
-
-- response law: reversible wave recurrence with `alpha=1/12`;
-- source normalization: one point minus uniform `1/L^3`, with no fitted
-  amplitude;
-- train: L5 and 192 updates;
-- held: L7 and 384 updates;
-- out-family: L9 and 768 updates;
-- precision: float64 with a long-double repetition.
-
-The Cesaro mean is compared with the exact finite-torus solution of
-`L phi=rho`.  Absolute response residual, relative response residual, absolute
-equation residual, relative equation residual, precision residual, and a
-non-applied projection-scale diagnostic are reported.  The frozen residuals
-must decrease across the three fixtures.  Update count is not time, endpoint
-norm is not probability or occurrence, and this stable comparison law does
-not yet have a physical-M2 arithmetic compiler.
-
-The bridge to Cycle585/588 is exact at the operator level: the Cesaro fixed
-equation and the accepted static surface use the same cubic Laplacian `L`.
-Cycle604 independently reevaluates the frozen axis/face/body infinite-lattice
-fixtures and the coefficient `5/(32pi)` with no parameter refit.  A finite
-Cesaro horizon does not directly measure that cubic coefficient; it approaches
-the finite inverse whose infinite-volume surface has the coefficient.
-
-Cycle451 and Cycle570 contribute exact matched candidate-event words:
-source-off and receiver-zero `4:4`, delay `3:4`, and advance `5:4`.  Cycle604
-keeps those rational words exact.  The association from response sign to delay
-or advance is explicitly supplied.  Neither those cycles nor the Cesaro
-surface selects sign, order, event actuality, a Record, or empirical
-calibration.
-
-Disposition: **constructive common-operator prediction bridge; finite-limit,
-physical compiler, and matched-event calibration remain supplied/open**.
-
-## Supplied and open inventory
-
-Supplied: Padé order one; H=8 termination; minimum-phase choice; vacuum garbage
-input; even-torus matching color; all factor schedules and parameterized gate
-matrices; Cycle576 kernel and Cycle579 angle; 31-bit word width; initial source
-word; coupling sign and kick/drift order; alpha; zero-mean source; finite
-Cesaro horizons; arithmetic precision; Cycle451/570 identities; and the
-response-sign/event association.
-
-Derived or executed: contraction and Julia dilation; Fejer-Riesz coefficient
-identity; exact paraunitary and eight-section factorization; exact expanded-
-image Regge intertwining and inverse; reciprocal modular ledger and local
-continuity; finite Cesaro/static comparison; and the inherited no-refit cubic
-coefficient comparison.
-
-Not derived: finite-depth exact rational fixed-point preparation; an accepted
-finite gate-alphabet lowering; exact sinc; color-free odd-torus product; exact
-target exponential; physical matter/recoil or stress-energy identification;
-response sign/order; time; gravity; finite/static equality; event calibration;
-Born probabilities; Records; or a joint Cycle590/recurrent-pair compiler.
+Not derived/evaluated: physical M2 primitives, physical E/G, physical
+leakage, physical routing/layout/depth, local enforcement, exact sinc, exact
+target exponential, physical matter/recoil/stress, selected response order,
+physical time, exact static limit, exact cross-cycle physical interface,
+prediction law, repair of the raw-Regge mismatch, calibration, gravity, Born
+probability, Record/actuality, or the joint Cycle590/recurrent-pair compiler.
 
 ## Full no-go discipline
 
-### N1 — alternative route enumeration
+### N1 — normalized alternative routes
 
-1. one-state rational transfer / Padé recurrence plus Julia dilation / exact
-   `R(w)` — attempted mathematically, finite preparation open;
-2. two-channel FIR filter / Fejer-Riesz plus eight delay sections / bounded
-   fixed-parameter encoder — attempted positive;
-3. midpoint path dilation / Cycle601 coherent `q=4` recombination / bounded
-   line approximation — prior attempted;
-4. finite DFT code / Cycle596 quadrature / exact finite line map — prior ruled
-   out only for constant overhead;
-5. metric-rail product / project kernel before factorization / exact expanded-
-   image preservation — attempted positive;
-6. raw edge product / Cycle579 factors / actual Regge update — prior ruled out
-   only for image preservation;
-7. paired modular fields / reciprocal kick-drift / conserved response ledger —
-   attempted positive;
-8. unilateral modular wave / Cycle601 leapfrog / local response — prior
-   attempted;
-9. stable reversible wave / alpha-Cesaro / finite-to-static bridge — attempted
-   positive;
-10. static constrained inverse / Cycles585/588 / `1/r` plus cubic surface —
-    prior attempted.
+Nine normalized families are recorded with exact honesty markers:
 
-Finite-state rational and finite FIR families remain distinct.
+1. `ATTEMPTED`: state-space rational colligation / Padé recurrence / exact
+   `R(w)`; algebraic transfer closes, finite autonomous preparation does not.
+2. `ATTEMPTED`: paraunitary polynomial / Fejer-Riesz plus delays / bounded
+   approximate line map; algebra closes, physical lowering and sinc do not.
+3. `RULED OUT BY PRIOR`: fixed-q midpoint dilation / redistribution / exact
+   fixed-q line map; Cycle601 rules out exactness only for frozen `q=4`.
+4. `RULED OUT BY PRIOR`: finite DFT family / exact torus quadrature /
+   constant overhead; Cycle601's pinned Cycle596 boundary is family-specific.
+5. `ATTEMPTED`: ten-role metric kernel / restrict-factor-conjugate / declared
+   image invariance; code-level identity closes, physical lowering does not.
+6. `ATTEMPTED`: paired modular fields / reciprocal exchange / conserved
+   ledger; integer conservation closes, source identity and selection do not.
+7. `ATTEMPTED`: reversible graph wave / Cesaro mean / finite-static
+   comparison; comparison closes numerically, equality and interface do not.
+8. `ATTEMPTED`: conditional graph inverse / zero-mean Green asymptotics /
+   `5/(32pi)` surface; no-refit comparison closes, raw-Regge identity does not.
+9. `ATTEMPTED`: candidate-label interface / exact rational label retention /
+   selected occurrence; labels survive, calibration and Record formation do
+   not.
 
-### N2 — wall independence
+Higher-order rational, translation-covariant QCA, actual M2 lowering, and
+autonomous detector routes remain live.
 
-The receipt audits every pair among: exact sinc; rational-state preparation;
-accepted gate alphabet; even-torus color; target exponential; physical source
-identity; sign/order selection; finite/static limit; event calibration; and
-the joint Cycle590 compiler.  Closing any one does not logically close another.
+### N2 — collapsed wall independence
+
+The collapsed walls are exact sinc, rational fixed-state preparation,
+physical M2 lowering, even-torus domain, target exponential, source identity,
+sign/order selection, finite/static limit, exact physical interface,
+candidate-label calibration, and the joint Cycle590 compiler. The receipt
+contains all 55 pairwise records. For the tested constructions, neither member
+of any pair logically closes the other; no gate-alphabet or routing subwall is
+double-counted outside physical lowering.
 
 ### N3 — hidden-wall scan
 
-The audit exposes Padé order, termination horizon, spectral-factor branch,
-garbage vacuum, even color, schedules, parameterized matrices, word width,
-sign, factor order, alpha, source normalization, finite horizons, precision,
-and event calibration.
+The scan promotes Padé order, FIR horizon, complement branch, garbage vacuum,
+ten-role restriction, even color, schedules, word alphabet, initial source,
+sign, order, `alpha`, horizons, zero-mode handling, and label association to
+explicit supplied conditions. “By construction” refers only to the declared
+ten-role design and is not physical enforcement. No “framework provides,”
+“canonical,” “registered,” “standard QFT,” or “obvious” phrase supplies a
+proof step.
 
 ### N4 — residual matching
 
-Each measured residual is assigned to its route: line error to exact sinc;
-fixed-point preparation to exact rational use; arbitrary matrices to alphabet
-lowering; parity color to odd tori; product error to the target exponential;
-modular words to physical source identity; alternative outputs to sign/order;
-Cesaro residual to the finite/static limit; and `3:4`/`5:4` association to event
-calibration.  None is promoted to a shared substrate obstruction.
+Cycle601 matches fixed-q/physical-lowering and supplied-source residuals.
+Cycle579 matches ordered-product/physical-layout residuals. Cycle585 matches
+the raw-Regge versus graph-surface mismatch. Cycle588 matches the conditional
+no-refit graph comparator and missing geometry/interface. Cycle570 matches the
+candidate-form-not-Record and proper-time boundary. Cycle451 does not by
+itself match physical sign-to-event calibration and is not used to close it.
 
 ### N5 — rhetoric audit
 
-“Exact” is limited to the Julia/FIR identities, factor reconstruction,
-expanded-image preservation, inverse, modular ledger/continuity, and the
-common operator.  Sinc, exponential, physical-source, static-limit, time,
-gravity, event, and alphabet claims remain explicitly scoped.
+“Exact FIR intertwining” was tested only on finite declared code blocks, not
+physical sites or lattice-wide enforced preparation. “Conserved ledger” was
+tested for host integer words, not matter or stress. “No-refit graph agreement”
+was tested on graph fixtures, not a physical observable or raw-Regge law.
+“Retained candidate labels” means strings only, not Records or actuality.
 
-### N6 — partial closure
+### N6 — partial-closure paths
 
-The FIR closes finite local dilation and image preservation without exact sinc
-or alphabet lowering.  Kick-drift closes a reciprocal ledger without physical
-source identity or order selection.  Cesaro closes a prediction bridge without
-making update count time or calibrating events.
+Live routes are: physical M2 lowering with local gauge enforcement; a
+translation-covariant QCA replacing even coloring; an exact
+source-response-observable interface before law promotion; and an autonomous
+detector that selects sign/order and meets actual Record criteria. These are
+constructive import-retirement paths. No new-axiom claim is made.
 
-### N7 — concrete steelman
+### N7 — hostile steelman
 
-A higher-order Schur colligation with autonomously prepared invariant state
-could improve full-zone accuracy; a translation-covariant QCA metric product
-could remove the even-torus color; and an accepted-matter symplectic coupling
-plus autonomous matched detector could select sign/order.
+A physical compiler could synthesize the frozen FIR and metric blocks from
+actual M2 primitives with a local penalty, replace parity coloring by a
+translation-covariant QCA, compose the reciprocal word with Cycle590
+matter/contact, and drive an autonomous detector. Physical E G intertwining,
+leakage, held-size covariance, no refit, and an exact observable interface
+would then test a selected 3:4/5:4 outcome. C604 does not contradict this
+actionable route, so any shared no-go is premature.
 
 ### N8 — cross-cycle echo
 
-Cycles596/601 separated exact size-growing DFT from bounded midpoint
-approximation and exposed raw-image leakage.  Cycle604 adds a different finite
-paraunitary family and moves the Regge product into metric rails, closing the
-finite dilation/image walls but not exact sinc.  Cycles585/588 supply the same
-static operator and cubic surface.  Cycles451/570 preserve matched event words
-but not their calibration.
+Cycles579–601 show that logical factor programs can leave physical lowering
+open. Cycles585–588 show that a conditional graph join can reproduce
+`5/(32pi)` without repairing the actual raw-Regge 4/3 mismatch. Cycles451–570
+retain candidate labels and finite carriage without proper time, Record
+status, or calibration. Co-design, range restriction, explicit arithmetic,
+QCA replacement, and exact-interface composition remain applicable.
 
-**Broad negative gate: FAIL / DO NOT SHIP.**  Multiple constructive routes
-advance different walls, stronger rational/QCA and matter/detector steelmen
-remain live, and there is no shared route-independent obstruction.  Therefore
-there is no axiom pressure.
+Broad negative gate: FAIL / DO NOT SHIP. Minimum-content claim: FAIL / DO NOT
+SHIP. Shared route-independent obstruction: false. Axiom pressure: false.
 
-## Dependency ledger and next campaign
+## Ledger and next campaign
 
-- `C_ref`: unchanged; frame, sign/order, and event calibration remain supplied.
-- `C_num`: partial advance from explicit fixed coefficients and modular ledger;
-  physical scale remains supplied.
-- `C_wrap`: unchanged; wrapped words/phases and update counts are not energy,
-  rates, or time.
-- `C_int`: mathematical advance from reciprocal exchange and continuity;
-  accepted matter, physical recoil/stress, and joint compilation remain open.
-- `C_local`: advance from the exact fixed-parameter FIR and exact expanded
-  image on even tori; alphabet lowering, exact sinc, odd tori, and target
-  exponential remain open.
-- `C_source`: partial advance from the reciprocal ledger and prediction bridge;
-  source identity, response selection, calibration, and gravity remain open.
+- `C_ref`: unchanged; frame, order/sign, and label calibration remain
+  supplied.
+- `C_num`: partial; exact host coefficients and modular identities do not
+  supply a physical number encoding or lawful-domain enforcement.
+- `C_wrap`: unchanged; no wrapped word/phase or update schedule is energy,
+  rate, or time.
+- `C_int`: partial; integer reciprocal continuity is not physical matter,
+  recoil, stress, or joint Cycle590 coupling.
+- `C_local`: partial; an algebraic paraunitary and declared even-domain image
+  intertwiner do not close physical M2 primitives, routing, leakage, or
+  constraints.
+- `C_source`: partial; the graph comparison is not a source-response law,
+  does not repair raw Regge, and is not gravity.
 
-Maturity 0–5: operational quantum/records 4.0; time 3.0; inertia/matter 4.0;
-gravity/source 3.25; Born/probability 2.0.
+Maturity 0–5 remains: operational quantum/records `4.65`; time `3.80`;
+inertia/matter `4.87`; gravity/source `4.15`; Born/probability `3.65`.
 
-The strongest result is the exact degree-eight two-channel fixed-parameter
-paraunitary with retained garbage, conjugated around a metric-rail Regge
-product so the expanded approximate image is preserved exactly.
-
-The optimal next campaign is a translation-covariant QCA replacement for the
-even-torus metric coloring, followed by a reciprocal coupling to accepted
-matter and an autonomous matched detector capable of selecting sign/order.
-
-## Independent parent verification
-
-The parent inspected the explicit FIR matrices, full-circle coefficient
-identity, delay-section factorization, metric-product construction, modular
-kick signs, continuity equation, and finite/static interpretation before
-re-executing every scientific route without invoking the receipt-writing
-`main` function.  All twelve route/shore/N1--N8 checks passed again.  Route A
-reproduced maximum intertwining, leakage, and inverse residuals
-`2.793359906207423e-15`, `2.7799003194654083e-15`, and
-`5.626398463373706e-15`.  Route B reproduced exact-zero inverse, conserved
-ledger, local-continuity, and all-24 covariance residuals.  Route C reproduced
-the frozen relative Cesaro residuals
-`0.006794530460511728`, `0.005751565018220709`, and
-`0.003728477636657561`.
-
-The parent accepts the fixed-parameter FIR dilation, expanded approximate-code
-intertwiner, reciprocal modular ledger, and common-Laplacian prediction bridge.
-It does not accept an exact sinc compiler, an accepted finite gate alphabet,
-a closed-torus nearest-neighbour QCA realization, physical stress-energy or
-matter/recoil identification, selection of sign or factor order, a finite
-static-limit equality, calibrated event response, gravity, shared obstruction,
-or axiom pressure.  The frozen worker receipt and cold transcript were not
-overwritten by this spot reproduction.
+The strongest result is the exact degree-eight algebraic paraunitary with
+retained garbage plus an exact declared expanded-code intertwiner on the
+frozen even-torus fixtures. The optimal next campaign is actual physical M2
+lowering and local enforcement, followed by a color-free QCA and an exact
+matter/source/observable/Record interface with no refit.

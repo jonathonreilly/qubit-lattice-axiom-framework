@@ -2,8 +2,8 @@ PASS Route A derives a uniform orbit-index address marginal from a TI reversible
 PASS Route B derives a uniform reduced marginal from a local coherent dilation but retains all sectors and consumes unrenewed fresh source/sink M2 :: {'route': 'B open coherent H3/address-environment bath', 'physical_M2_per_episode': 6, 'one_M2_H': 3, 'nearest_neighbor_address_environment_CNOT': 3, 'uniform_reduced_address_residual': 1.5700924586837752e-16, 'uniform_reduced_environment_residual': 1.5700924586837752e-16, 'full_unitary_inverse_residual': 4.448190982337658e-16, 'delete_H_reduced_residual': 0.3535533905932736, 'delete_environment_copy_reduced_residual': 0.3535533905932736, 'global_pure_entropy_bits': 3.2034265038149176e-16, 'reduced_address_entropy_bits': 2.9999999999999996, 'entropy_called_thermodynamic_or_work': False, 'fresh_zero_M2_source_per_episode': 6, 'retained_environment_sink_M2_per_episode': 3, 'finite_two_episode_fresh_M2_debit': 12, 'source_sink_renewal_derived': False, 'all_eight_coherent_sectors_retained': True, 'objective_address_or_Record_derived': False, 'proper_cubic_frames': 24, 'all24_copy_edge_tests': 72, 'all24_copy_edge_failures': 0, 'pass': True}
 PASS Route C gives an exact table-independent seven-cycle typicality comparator whose orbit visibly fails the required uniform-eight marginal :: {'route': 'C table-independent reversible seven-cycle LFSR typicality comparator', 'bath_law_sha256': 'ea1150b018833b032fd5bb0b9fa1466d54140f33e5897623efa0318d7864c175', 'orbit_from_one': (3, 7, 6, 5, 2, 4, 1), 'zero_fixed_orbit': (0, 0, 0, 0, 0, 0, 0), 'permutation_orbit_failures': 0, 'inverse_failures': 0, 'seven_orbit_address_to_uniform8_L1_residual': 0.24999999999999994, 'unchanged_ROM_frequency_rows': [{'program': 0, 'seven_orbit_history_frequency': (0.14285714285714285, 0.0, 0.0, 0.2857142857142857, 0.0, 0.2857142857142857, 0.2857142857142857, 0.0), 'target_table_grade': (0.25, 0.0, 0.0, 0.25, 0.0, 0.25, 0.25, 0.0), 'L1_residual': 0.21428571428571425}, {'program': 1, 'seven_orbit_history_frequency': (0.42857142857142855, 0.0, 0.0, 0.0, 0.5714285714285714, 0.0, 0.0, 0.0), 'target_table_grade': (0.5, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0), 'L1_residual': 0.14285714285714285}, {'program': 2, 'seven_orbit_history_frequency': (0.2857142857142857, 0.0, 0.14285714285714285, 0.0, 0.42857142857142855, 0.0, 0.14285714285714285, 0.0), 'target_table_grade': (0.375, 0.0, 0.125, 0.0, 0.375, 0.0, 0.125, 0.0), 'L1_residual': 0.17857142857142855}], 'feedback_deletion_residual': 1.4142135623730951, 'static_nearest_neighbor_line_compiler': {'line_M2': 3, 'logical_Toffoli': 0, 'literal_one_M2_primitives': 0, 'literal_two_M2_core_primitives': 3, 'adjacent_route_and_return_SWAPS': 4, 'nearest_neighbor_two_M2_calls': 7, 'maximum_unrouted_operand_distance': 2, 'route_adjacency_failures': 0, 'ordered_operand_failures': 0, 'terminal_wire_restoration_failures': 0, 'route_manifest_sha256': '804c490c2e6e6d7c6376a2597c2874c546a734f74f982e0c7b0a9c07d168c8f0', 'proper_cubic_frames': 24, 'all24_line_edge_tests': 48, 'all24_line_edge_failures': 0, 'runtime_data_selects_route': False, 'pass': True}, 'law_contains_ROM_table_or_grade': False, 'typicality_measure_or_objective_genesis_derived': False, 'pass': True}
 PASS all24/all576 and lawful-domain controls remain exact :: {'proper_cubic_frames': 24, 'all24_member_tests': 96, 'all24_member_failures': 0, 'all576_axis_tests': 1728, 'all576_axis_failures': 0, 'malformed_domain_refusals': 5, 'malformed_domain_total': 5, 'pass': True}
-PASS exact shores, bath-before-held freeze, inventory, and N1-N8 block overclaim and axiom pressure :: {'expected': {'Cycle592 runner': 'ab565af6aa59e66cea7b1ce625c08f8a88235ae9f7415e5e7d89d63af34ce9ce', 'Cycle592 note': 'dccf62d6126287b20cbf96ff410534adfa1746d9cf3aba94fbfb2893855be212', 'Cycle587 runner': '2879d5a2641b334553769f15cf3a6f152f9f16f8f80b23db723448533c28c494', 'Cycle584 runner': '556e3e4759033706c795c9b65f55f12afaaaf84b8858dc4bb06b1c0a93400ab3', 'Cycle582 runner': '47c5138720add60ed6fa8b6506dcb8a9cbee9af5a1ab3defbc7aea4c3cfa290a', 'Cycle580 runner': 'c46917d4a932cd3ad9a78e0547625055f5adf9d5cf7393700d7e6715dd515cd3', 'Cycle577 runner': '93bf1fa2859289b13037bfe7882cce86732e9377ed8b60e56c3bd55ebc0ce74f', 'Cycle571 runner': '7221d59558e4d731f98a2a4523c280aa98b889f23ea3f7be1acc8919395dfee8', 'Cycle565 runner': 'b4b6e2c4491c5a6b30389764e8ac597ce07e1dac3f31c7cb8fff9297ac04437a'}, 'observed': {'Cycle592 runner': 'ab565af6aa59e66cea7b1ce625c08f8a88235ae9f7415e5e7d89d63af34ce9ce', 'Cycle592 note': 'dccf62d6126287b20cbf96ff410534adfa1746d9cf3aba94fbfb2893855be212', 'Cycle587 runner': '2879d5a2641b334553769f15cf3a6f152f9f16f8f80b23db723448533c28c494', 'Cycle584 runner': '556e3e4759033706c795c9b65f55f12afaaaf84b8858dc4bb06b1c0a93400ab3', 'Cycle582 runner': '47c5138720add60ed6fa8b6506dcb8a9cbee9af5a1ab3defbc7aea4c3cfa290a', 'Cycle580 runner': 'c46917d4a932cd3ad9a78e0547625055f5adf9d5cf7393700d7e6715dd515cd3', 'Cycle577 runner': '93bf1fa2859289b13037bfe7882cce86732e9377ed8b60e56c3bd55ebc0ce74f', 'Cycle571 runner': '7221d59558e4d731f98a2a4523c280aa98b889f23ea3f7be1acc8919395dfee8', 'Cycle565 runner': 'b4b6e2c4491c5a6b30389764e8ac597ce07e1dac3f31c7cb8fff9297ac04437a'}, 'bath_law_sha256': 'ea1150b018833b032fd5bb0b9fa1466d54140f33e5897623efa0318d7864c175', 'expected_bath_law_sha256': 'ea1150b018833b032fd5bb0b9fa1466d54140f33e5897623efa0318d7864c175', 'held_sha256': '5ca581dadcbe5dc88f24345562f7cc1691cf0d97facacd3aef6cf3aeb4883337', 'note_missing': (), 'declared_runner_sha256': 'cdfcddb00974205faa8bc60c617ff0dd42bf9f8947b0a55a4b172157b2d28de2', 'runner_sha256': 'cdfcddb00974205faa8bc60c617ff0dd42bf9f8947b0a55a4b172157b2d28de2', 'discipline': {'N1_routes': ({'family': 'TI reversible Margolus carrier bath', 'status': 'ATTEMPTED', 'terminal': 'derive objective sampling/Record law and renew ROM archives'}, {'family': 'open coherent uniform-address dilation', 'status': 'ATTEMPTED', 'terminal': 'derive fresh source/sink renewal and one objective address'}, {'family': 'table-independent LFSR typicality', 'status': 'ATTEMPTED', 'terminal': 'derive correct eight-address invariant orbit and actuality measure'}, {'family': 'chaotic reversible lattice gas', 'status': 'UNTESTED_OPEN_NOT_COUNTED', 'terminal': 'prove ergodic marginal/mixing on a physical invariant shell'}, {'family': 'dissipative stationary reservoir', 'status': 'UNTESTED_OPEN_NOT_COUNTED', 'terminal': 'construct source/sink balance and thermodynamic semantics'}, {'family': 'continuous grade compiler', 'status': 'UNTESTED_OPEN_NOT_COUNTED', 'terminal': 'synthesize off-grid transition law without finite answer-table import'}), 'N1_qualifying': 3, 'N1_required': 5, 'N1_status': 'FAIL', 'N2_walls': ('bath stationary marginal', 'objective actuality', 'ROM/state-family law', 'Record permanence', 'frequency/probability calibration', 'resource renewal'), 'N2_pairs': ({'pair': ('bath stationary marginal', 'objective actuality'), 'independent': True, 'reason': "neither tested closure has the other's typed witness"}, {'pair': ('bath stationary marginal', 'ROM/state-family law'), 'independent': True, 'reason': "neither tested closure has the other's typed witness"}, {'pair': ('bath stationary marginal', 'Record permanence'), 'independent': True, 'reason': "neither tested closure has the other's typed witness"}, {'pair': ('bath stationary marginal', 'frequency/probability calibration'), 'independent': True, 'reason': "neither tested closure has the other's typed witness"}, {'pair': ('bath stationary marginal', 'resource renewal'), 'independent': True, 'reason': "neither tested closure has the other's typed witness"}, {'pair': ('objective actuality', 'ROM/state-family law'), 'independent': True, 'reason': "neither tested closure has the other's typed witness"}, {'pair': ('objective actuality', 'Record permanence'), 'independent': True, 'reason': "neither tested closure has the other's typed witness"}, {'pair': ('objective actuality', 'frequency/probability calibration'), 'independent': True, 'reason': "neither tested closure has the other's typed witness"}, {'pair': ('objective actuality', 'resource renewal'), 'independent': True, 'reason': "neither tested closure has the other's typed witness"}, {'pair': ('ROM/state-family law', 'Record permanence'), 'independent': True, 'reason': "neither tested closure has the other's typed witness"}, {'pair': ('ROM/state-family law', 'frequency/probability calibration'), 'independent': True, 'reason': "neither tested closure has the other's typed witness"}, {'pair': ('ROM/state-family law', 'resource renewal'), 'independent': True, 'reason': "neither tested closure has the other's typed witness"}, {'pair': ('Record permanence', 'frequency/probability calibration'), 'independent': True, 'reason': "neither tested closure has the other's typed witness"}, {'pair': ('Record permanence', 'resource renewal'), 'independent': True, 'reason': "neither tested closure has the other's typed witness"}, {'pair': ('frequency/probability calibration', 'resource renewal'), 'independent': True, 'reason': "neither tested closure has the other's typed witness"}), 'N3_supplies': ('one-carrier genesis', 'finite periodic ring and chart', 'H and zero-state source', 'environment trace/access', 'unchanged Cycle592 ROM/program domain', 'Cycle552 interface inputs', 'fresh ROM/archive capacity', 'held states and finite sizes'), 'N4_residuals': ({'route': 'A', 'witness': 'uniform orbit-index average but TV=7/8 and spectral gap zero', 'meaning': 'equidistribution, not stochastic mixing/probability'}, {'route': 'A held', 'witness': 'unchanged ROM refusal and positive denominator-eight residual', 'meaning': 'declared finite ROM wall, not universal impossibility'}, {'route': 'B', 'witness': 'uniform reduced diagonal and exact global inverse', 'meaning': 'open-channel marginal, not objective address/irreversibility'}, {'route': 'C', 'witness': 'seven-cycle marginal differs from uniform eight', 'meaning': 'this table-independent typicality law fails target'}), 'N5': 'bounded route results only; no probability/Record/energy/time promotion', 'N6': ('retain Route A as a catalytic deterministic address enumerator', 'retain Route B as a uniform coherent source diagnostic', 'retain Route C as an orbit-support falsifier', 'build held-state-independent continuous/rational approximation compiler with error budget', 'derive stationary resource bath and separate framework Record law before probability calibration'), 'N7': {'mechanism': 'a chaotic reversible lattice gas on a derived microcanonical shell could have an eight-address factor with provable mixing, while a continuous grade compiler and renewable formation medium handle off-grid states and Records', 'terminal': 'construct the local law, invariant shell, mixing bound, grade compiler, resource balance, actuality owner, and blinded Records', 'status': 'open'}, 'N8': ('Cycle584 derived local transport but not stationary boundary supply', 'Cycle592 supplied balanced address words and finite ROM', 'Cycle595 derives deterministic orbit equidistribution but not mixing', 'open dilation gives uniform marginal while retaining coherent sectors', 'new off-grid states isolate the unchanged-ROM domain wall'), 'broad_no_go': 'FAIL_DO_NOT_SHIP', 'minimum_content': 'FAIL_DO_NOT_SHIP', 'shared_obstruction': 'NOT_ESTABLISHED', 'axiom_pressure': 'NONE'}, 'inventory': {'supplied': ('one-carrier genesis', 'finite periodic ring and chart', 'H and zero-state source', 'environment trace/access', 'unchanged Cycle592 ROM/program domain', 'Cycle552 interface inputs', 'fresh ROM/archive capacity', 'held states and finite sizes'), 'derived': ('TI catalytic address orbit and uniform eight-step orbit-index average', 'open coherent uniform reduced marginal', 'LFSR orbit falsifier', 'off-grid fixed-ROM/denominator residuals and all controls'), 'open': ('objective actuality and Record', 'stochastic mixing/invariant physical ensemble', 'continuous off-grid ROM', 'archive/source renewal and thermodynamics', 'Born calibration/time/source/gravity')}, 'pass': True}
-PASS cold resource caps :: {'elapsed_seconds': 0.17494270799215883, 'maximum_RSS_bytes': 811024384, 'wall_cap_seconds': 360.0, 'RSS_cap_bytes': 3221225472}
+PASS exact shores, bath-before-held freeze, inventory, and N1-N8 block overclaim and axiom pressure :: {'expected': {'Cycle552 runner': '123c9fe8a7a3802af2627e21dd1cee5a8dadfbe0b82b7862e64c7024be6adc7f', 'Cycle552 note': 'cc5cee11501bcf541faf54e0ca69a5d931037a126d1bac9e02c41c131e752400', 'Cycle552 receipt': 'cf70de5c6034567637e96fab75bc5e8383630c82bf0b2e0e009049bf1a63415f', 'Cycle565 runner': 'f31d207540efbf1541343c53552c947c77f2c984e705818786ac3c5f6d06eba2', 'Cycle565 note': 'f29702462974b922e23624df57fb0b6107f5051e95c43d7b51a10953db829bbb', 'Cycle565 receipt': 'a1b30e2fe268b270720f01ab426af5736cdc23189f94c641a428dc0369ccca9a', 'Cycle571 runner': 'af0a0b4837781b2a03fc471c819ce4c6b95e4e4cc000c403fabe4ddb10f6b14c', 'Cycle571 note': '9781ac6d6d920c17b275c41b13d20ccb9e65ea68a97b48dc8ed8487718708efc', 'Cycle571 receipt': '6d75e5d7075c3e65f4a7d8a9406d3bd685cc58aa0be165dd0db5ffe34dc66e31', 'Cycle571 cold': '5e4acfe172dc31dbc2f01db314a7414115fc17e4b7ce4164beea0f1f111b46cb', 'Cycle577 runner': '0876bc8888193606446b5fe07f1fdd8e3ddef3b313551739b81be3792c820aa7', 'Cycle577 note': '7617ee877ca22986e0eacc09d08e14f6246cbc75b6443961c8626a1b5435f18c', 'Cycle577 receipt': 'f7e6bbc40a4d56ee115ba43ddbab7bee4aff05227b988a057adc4420f51941ed', 'Cycle577 cold': '1c77d2ca4bf860482d3e55596c85e0983f32e755e7ceaac33ff0576a928c8a36', 'Cycle580 runner': '1f1acb34dc8976f5617319353e9591f64eae5cfe923a1dea736adfa792c4e718', 'Cycle580 note': '47a6418c27965219ddc5d3c2a8bc39fd34aa6173d3d1c16e473a136113b9c787', 'Cycle580 receipt': '9cf656c917ff738bc6d0d0e52dc8c251630aaedd86dd5a6b90dd4f7857cdbc1d', 'Cycle580 cold': '890c68f44bf6cc563916304b51481def8aa3ad7009a6ecfe0b0a4cffc85cd7e6', 'Cycle582 runner': '6b2e15a051c91542dcbebc6fe9dc4de24d6908dfbc36a2b44696809339a6b07c', 'Cycle582 note': '0f77f19c52f6aa66e895baba2782f8f802601f74d21c45c7eced78ccfdc2f0c5', 'Cycle582 receipt': '3ccacbe0eaf2b4e476956d0728e71d0d871a1aedb69f12d85c4368e4070ca4b0', 'Cycle582 cold': 'bd18e16e6019b65c5331764cf3cf101ef816c275a3a8e4f6d0026b334e936d11', 'Cycle584 runner': 'b7f2d262e4224bc298dd22b137e89e5e4118dc455e0454250908e503bb19be82', 'Cycle584 note': 'da6576714664f225025442b08a696e4a2b90acbd0a7f60439ab462be9a4f0059', 'Cycle584 receipt': 'a5a3c553a91a624edc5e4b104dd1e19d0f923df831b889aaa972cb40e7394872', 'Cycle584 cold': '3bb01b04ccfe8418de93404395d2e0cb42ea06579b79d80aecb1b14163037729', 'Cycle587 runner': '881e2c5a33217352a97df363f5c3dcd67980c2e672b59e072c6ecbc1cb0f27d1', 'Cycle587 note': '4b1a4e6916da24c74086d83f154cdb474dc87a4954b6be9ea600f685fb9b8e4b', 'Cycle587 receipt': 'ed4ca30a1c174ec96eaeb3b10dc30f261efb274697acf061e23dd24dbb71a173', 'Cycle587 cold': 'ce59771c3263e0f8a77dbeccffeb8e61628fb3bc70b5542924e2e743d5d59fe8', 'Cycle592 runner': '14d01e640eb1818c29aeb9f05313b2211e28e445d4798f3f6718d0b0fca0d62a', 'Cycle592 note': '092f0bfc06f7a42d82ed10ade5f551bdb08ebe7040c8c2b8ba0b1b3ea1c971c7', 'Cycle592 receipt': 'edf069adbf58b66b30b6b9a66a85dd577b6c6c3170f833807dc57d59c8f14457', 'Cycle592 cold': 'cb2640da38cf7cb0a69e6351871d9a9ba93c712f6865d5055b0bd79f18acdc5c', 'Cycle41 runner': 'd8207fc0090ca926d060f536fedc2b2c031ccd50184e035c292e6b8eccb56814'}, 'observed': {'Cycle552 runner': '123c9fe8a7a3802af2627e21dd1cee5a8dadfbe0b82b7862e64c7024be6adc7f', 'Cycle552 note': 'cc5cee11501bcf541faf54e0ca69a5d931037a126d1bac9e02c41c131e752400', 'Cycle552 receipt': 'cf70de5c6034567637e96fab75bc5e8383630c82bf0b2e0e009049bf1a63415f', 'Cycle565 runner': 'f31d207540efbf1541343c53552c947c77f2c984e705818786ac3c5f6d06eba2', 'Cycle565 note': 'f29702462974b922e23624df57fb0b6107f5051e95c43d7b51a10953db829bbb', 'Cycle565 receipt': 'a1b30e2fe268b270720f01ab426af5736cdc23189f94c641a428dc0369ccca9a', 'Cycle571 runner': 'af0a0b4837781b2a03fc471c819ce4c6b95e4e4cc000c403fabe4ddb10f6b14c', 'Cycle571 note': '9781ac6d6d920c17b275c41b13d20ccb9e65ea68a97b48dc8ed8487718708efc', 'Cycle571 receipt': '6d75e5d7075c3e65f4a7d8a9406d3bd685cc58aa0be165dd0db5ffe34dc66e31', 'Cycle571 cold': '5e4acfe172dc31dbc2f01db314a7414115fc17e4b7ce4164beea0f1f111b46cb', 'Cycle577 runner': '0876bc8888193606446b5fe07f1fdd8e3ddef3b313551739b81be3792c820aa7', 'Cycle577 note': '7617ee877ca22986e0eacc09d08e14f6246cbc75b6443961c8626a1b5435f18c', 'Cycle577 receipt': 'f7e6bbc40a4d56ee115ba43ddbab7bee4aff05227b988a057adc4420f51941ed', 'Cycle577 cold': '1c77d2ca4bf860482d3e55596c85e0983f32e755e7ceaac33ff0576a928c8a36', 'Cycle580 runner': '1f1acb34dc8976f5617319353e9591f64eae5cfe923a1dea736adfa792c4e718', 'Cycle580 note': '47a6418c27965219ddc5d3c2a8bc39fd34aa6173d3d1c16e473a136113b9c787', 'Cycle580 receipt': '9cf656c917ff738bc6d0d0e52dc8c251630aaedd86dd5a6b90dd4f7857cdbc1d', 'Cycle580 cold': '890c68f44bf6cc563916304b51481def8aa3ad7009a6ecfe0b0a4cffc85cd7e6', 'Cycle582 runner': '6b2e15a051c91542dcbebc6fe9dc4de24d6908dfbc36a2b44696809339a6b07c', 'Cycle582 note': '0f77f19c52f6aa66e895baba2782f8f802601f74d21c45c7eced78ccfdc2f0c5', 'Cycle582 receipt': '3ccacbe0eaf2b4e476956d0728e71d0d871a1aedb69f12d85c4368e4070ca4b0', 'Cycle582 cold': 'bd18e16e6019b65c5331764cf3cf101ef816c275a3a8e4f6d0026b334e936d11', 'Cycle584 runner': 'b7f2d262e4224bc298dd22b137e89e5e4118dc455e0454250908e503bb19be82', 'Cycle584 note': 'da6576714664f225025442b08a696e4a2b90acbd0a7f60439ab462be9a4f0059', 'Cycle584 receipt': 'a5a3c553a91a624edc5e4b104dd1e19d0f923df831b889aaa972cb40e7394872', 'Cycle584 cold': '3bb01b04ccfe8418de93404395d2e0cb42ea06579b79d80aecb1b14163037729', 'Cycle587 runner': '881e2c5a33217352a97df363f5c3dcd67980c2e672b59e072c6ecbc1cb0f27d1', 'Cycle587 note': '4b1a4e6916da24c74086d83f154cdb474dc87a4954b6be9ea600f685fb9b8e4b', 'Cycle587 receipt': 'ed4ca30a1c174ec96eaeb3b10dc30f261efb274697acf061e23dd24dbb71a173', 'Cycle587 cold': 'ce59771c3263e0f8a77dbeccffeb8e61628fb3bc70b5542924e2e743d5d59fe8', 'Cycle592 runner': '14d01e640eb1818c29aeb9f05313b2211e28e445d4798f3f6718d0b0fca0d62a', 'Cycle592 note': '092f0bfc06f7a42d82ed10ade5f551bdb08ebe7040c8c2b8ba0b1b3ea1c971c7', 'Cycle592 receipt': 'edf069adbf58b66b30b6b9a66a85dd577b6c6c3170f833807dc57d59c8f14457', 'Cycle592 cold': 'cb2640da38cf7cb0a69e6351871d9a9ba93c712f6865d5055b0bd79f18acdc5c', 'Cycle41 runner': 'd8207fc0090ca926d060f536fedc2b2c031ccd50184e035c292e6b8eccb56814'}, 'bath_law_sha256': 'ea1150b018833b032fd5bb0b9fa1466d54140f33e5897623efa0318d7864c175', 'expected_bath_law_sha256': 'ea1150b018833b032fd5bb0b9fa1466d54140f33e5897623efa0318d7864c175', 'held_sha256': '5ca581dadcbe5dc88f24345562f7cc1691cf0d97facacd3aef6cf3aeb4883337', 'note_missing': (), 'declared_runner_sha256': '107fdaef7f2f834617bd695119569f0fc867768e64d695105e69107ef80d87d8', 'runner_sha256': '107fdaef7f2f834617bd695119569f0fc867768e64d695105e69107ef80d87d8', 'receipt_checks': {'Cycle552': {'runner': True, 'note': True, 'verified': True, 'authority_audit': True}, 'Cycle565': {'runner': True, 'note': True, 'verified': True, 'authority_audit': True}, 'Cycle571': {'runner': True, 'note': True, 'verified': True, 'authority_audit': True, 'cold': True}, 'Cycle577': {'runner': True, 'note': True, 'verified': True, 'authority_audit': True, 'cold': True}, 'Cycle580': {'runner': True, 'note': True, 'verified': True, 'authority_audit': True, 'cold': True}, 'Cycle582': {'runner': True, 'note': True, 'verified': True, 'authority_audit': True, 'cold': True}, 'Cycle584': {'runner': True, 'note': True, 'verified': True, 'authority_audit': True, 'cold': True}, 'Cycle587': {'runner': True, 'note': True, 'verified': True, 'authority_audit': True, 'cold': True}, 'Cycle592': {'runner': True, 'note': True, 'verified': True, 'authority_audit': True, 'cold': True}}, 'discipline': {'N1_routes': ({'family': 'TI reversible Margolus carrier bath', 'status': 'ATTEMPTED', 'terminal': 'derive objective sampling/Record law and renew ROM archives'}, {'family': 'open coherent uniform-address dilation', 'status': 'ATTEMPTED', 'terminal': 'derive fresh source/sink renewal and one objective address'}, {'family': 'table-independent LFSR typicality', 'status': 'ATTEMPTED', 'terminal': 'derive correct eight-address invariant orbit and actuality measure'}, {'family': 'chaotic reversible lattice gas', 'status': 'UNTESTED_OPEN_NOT_COUNTED', 'terminal': 'prove ergodic marginal/mixing on a physical invariant shell'}, {'family': 'dissipative stationary reservoir', 'status': 'UNTESTED_OPEN_NOT_COUNTED', 'terminal': 'construct source/sink balance and thermodynamic semantics'}, {'family': 'continuous grade compiler', 'status': 'UNTESTED_OPEN_NOT_COUNTED', 'terminal': 'synthesize off-grid transition law without finite answer-table import'}), 'N1_qualifying': 3, 'N1_required': 5, 'N1_status': 'FAIL', 'N2_walls': ('bath stationary marginal', 'objective actuality', 'ROM/state-family law', 'Record permanence', 'frequency/probability calibration', 'resource renewal'), 'N2_pairs': ({'pair': ('bath stationary marginal', 'objective actuality'), 'independent': True, 'reason': "neither tested closure has the other's typed witness"}, {'pair': ('bath stationary marginal', 'ROM/state-family law'), 'independent': True, 'reason': "neither tested closure has the other's typed witness"}, {'pair': ('bath stationary marginal', 'Record permanence'), 'independent': True, 'reason': "neither tested closure has the other's typed witness"}, {'pair': ('bath stationary marginal', 'frequency/probability calibration'), 'independent': True, 'reason': "neither tested closure has the other's typed witness"}, {'pair': ('bath stationary marginal', 'resource renewal'), 'independent': True, 'reason': "neither tested closure has the other's typed witness"}, {'pair': ('objective actuality', 'ROM/state-family law'), 'independent': True, 'reason': "neither tested closure has the other's typed witness"}, {'pair': ('objective actuality', 'Record permanence'), 'independent': True, 'reason': "neither tested closure has the other's typed witness"}, {'pair': ('objective actuality', 'frequency/probability calibration'), 'independent': True, 'reason': "neither tested closure has the other's typed witness"}, {'pair': ('objective actuality', 'resource renewal'), 'independent': True, 'reason': "neither tested closure has the other's typed witness"}, {'pair': ('ROM/state-family law', 'Record permanence'), 'independent': True, 'reason': "neither tested closure has the other's typed witness"}, {'pair': ('ROM/state-family law', 'frequency/probability calibration'), 'independent': True, 'reason': "neither tested closure has the other's typed witness"}, {'pair': ('ROM/state-family law', 'resource renewal'), 'independent': True, 'reason': "neither tested closure has the other's typed witness"}, {'pair': ('Record permanence', 'frequency/probability calibration'), 'independent': True, 'reason': "neither tested closure has the other's typed witness"}, {'pair': ('Record permanence', 'resource renewal'), 'independent': True, 'reason': "neither tested closure has the other's typed witness"}, {'pair': ('frequency/probability calibration', 'resource renewal'), 'independent': True, 'reason': "neither tested closure has the other's typed witness"}), 'N3_supplies': ('one-carrier genesis', 'finite periodic ring and chart', 'H and zero-state source', 'environment trace/access', 'unchanged Cycle592 ROM/program domain', 'Cycle552 interface inputs', 'fresh ROM/archive capacity', 'held states and finite sizes'), 'N4_residuals': ({'route': 'A', 'witness': 'uniform orbit-index average but TV=7/8 and spectral gap zero', 'meaning': 'equidistribution, not stochastic mixing/probability'}, {'route': 'A held', 'witness': 'unchanged ROM refusal and positive denominator-eight residual', 'meaning': 'declared finite ROM wall, not universal impossibility'}, {'route': 'B', 'witness': 'uniform reduced diagonal and exact global inverse', 'meaning': 'open-channel marginal, not objective address/irreversibility'}, {'route': 'C', 'witness': 'seven-cycle marginal differs from uniform eight', 'meaning': 'this table-independent typicality law fails target'}), 'N5': 'bounded route results only; no probability/Record/energy/time promotion', 'N6': ('retain Route A as a catalytic deterministic address enumerator', 'retain Route B as a uniform coherent source diagnostic', 'retain Route C as an orbit-support falsifier', 'build held-state-independent continuous/rational approximation compiler with error budget', 'derive stationary resource bath and separate framework Record law before probability calibration'), 'N7': {'mechanism': 'a chaotic reversible lattice gas on a derived microcanonical shell could have an eight-address factor with provable mixing, while a continuous grade compiler and renewable formation medium handle off-grid states and Records', 'terminal': 'construct the local law, invariant shell, mixing bound, grade compiler, resource balance, actuality owner, and blinded Records', 'status': 'open'}, 'N8': ('Cycle584 derived local transport but not stationary boundary supply', 'Cycle592 supplied balanced address words and finite ROM', 'Cycle595 derives deterministic orbit equidistribution but not mixing', 'open dilation gives uniform marginal while retaining coherent sectors', 'new off-grid states isolate the unchanged-ROM domain wall'), 'broad_no_go': 'FAIL_DO_NOT_SHIP', 'minimum_content': 'FAIL_DO_NOT_SHIP', 'shared_obstruction': 'NOT_ESTABLISHED', 'axiom_pressure': 'NONE'}, 'inventory': {'supplied': ('one-carrier genesis', 'finite periodic ring and chart', 'H and zero-state source', 'environment trace/access', 'unchanged Cycle592 ROM/program domain', 'Cycle552 interface inputs', 'fresh ROM/archive capacity', 'held states and finite sizes'), 'derived': ('TI catalytic address orbit and uniform eight-step orbit-index average', 'open coherent uniform reduced marginal', 'LFSR orbit falsifier', 'off-grid fixed-ROM/denominator residuals and all controls'), 'open': ('objective actuality and Record', 'stochastic mixing/invariant physical ensemble', 'continuous off-grid ROM', 'archive/source renewal and thermodynamics', 'Born calibration/time/source/gravity')}, 'pass': True}
+PASS cold resource caps :: {'elapsed_seconds': 0.15524508291855454, 'maximum_RSS_bytes': 754073600, 'wall_cap_seconds': 360.0, 'RSS_cap_bytes': 3221225472}
 {
   "covariance_domain": {
     "all24_member_failures": 0,
@@ -17,7 +17,7 @@ PASS cold resource caps :: {'elapsed_seconds': 0.17494270799215883, 'maximum_RSS
   },
   "dependency_discipline_inventory": {
     "bath_law_sha256": "ea1150b018833b032fd5bb0b9fa1466d54140f33e5897623efa0318d7864c175",
-    "declared_runner_sha256": "cdfcddb00974205faa8bc60c617ff0dd42bf9f8947b0a55a4b172157b2d28de2",
+    "declared_runner_sha256": "107fdaef7f2f834617bd695119569f0fc867768e64d695105e69107ef80d87d8",
     "discipline": {
       "N1_qualifying": 3,
       "N1_required": 5,
@@ -242,15 +242,41 @@ PASS cold resource caps :: {'elapsed_seconds': 0.17494270799215883, 'maximum_RSS
       "shared_obstruction": "NOT_ESTABLISHED"
     },
     "expected": {
-      "Cycle565 runner": "b4b6e2c4491c5a6b30389764e8ac597ce07e1dac3f31c7cb8fff9297ac04437a",
-      "Cycle571 runner": "7221d59558e4d731f98a2a4523c280aa98b889f23ea3f7be1acc8919395dfee8",
-      "Cycle577 runner": "93bf1fa2859289b13037bfe7882cce86732e9377ed8b60e56c3bd55ebc0ce74f",
-      "Cycle580 runner": "c46917d4a932cd3ad9a78e0547625055f5adf9d5cf7393700d7e6715dd515cd3",
-      "Cycle582 runner": "47c5138720add60ed6fa8b6506dcb8a9cbee9af5a1ab3defbc7aea4c3cfa290a",
-      "Cycle584 runner": "556e3e4759033706c795c9b65f55f12afaaaf84b8858dc4bb06b1c0a93400ab3",
-      "Cycle587 runner": "2879d5a2641b334553769f15cf3a6f152f9f16f8f80b23db723448533c28c494",
-      "Cycle592 note": "dccf62d6126287b20cbf96ff410534adfa1746d9cf3aba94fbfb2893855be212",
-      "Cycle592 runner": "ab565af6aa59e66cea7b1ce625c08f8a88235ae9f7415e5e7d89d63af34ce9ce"
+      "Cycle41 runner": "d8207fc0090ca926d060f536fedc2b2c031ccd50184e035c292e6b8eccb56814",
+      "Cycle552 note": "cc5cee11501bcf541faf54e0ca69a5d931037a126d1bac9e02c41c131e752400",
+      "Cycle552 receipt": "cf70de5c6034567637e96fab75bc5e8383630c82bf0b2e0e009049bf1a63415f",
+      "Cycle552 runner": "123c9fe8a7a3802af2627e21dd1cee5a8dadfbe0b82b7862e64c7024be6adc7f",
+      "Cycle565 note": "f29702462974b922e23624df57fb0b6107f5051e95c43d7b51a10953db829bbb",
+      "Cycle565 receipt": "a1b30e2fe268b270720f01ab426af5736cdc23189f94c641a428dc0369ccca9a",
+      "Cycle565 runner": "f31d207540efbf1541343c53552c947c77f2c984e705818786ac3c5f6d06eba2",
+      "Cycle571 cold": "5e4acfe172dc31dbc2f01db314a7414115fc17e4b7ce4164beea0f1f111b46cb",
+      "Cycle571 note": "9781ac6d6d920c17b275c41b13d20ccb9e65ea68a97b48dc8ed8487718708efc",
+      "Cycle571 receipt": "6d75e5d7075c3e65f4a7d8a9406d3bd685cc58aa0be165dd0db5ffe34dc66e31",
+      "Cycle571 runner": "af0a0b4837781b2a03fc471c819ce4c6b95e4e4cc000c403fabe4ddb10f6b14c",
+      "Cycle577 cold": "1c77d2ca4bf860482d3e55596c85e0983f32e755e7ceaac33ff0576a928c8a36",
+      "Cycle577 note": "7617ee877ca22986e0eacc09d08e14f6246cbc75b6443961c8626a1b5435f18c",
+      "Cycle577 receipt": "f7e6bbc40a4d56ee115ba43ddbab7bee4aff05227b988a057adc4420f51941ed",
+      "Cycle577 runner": "0876bc8888193606446b5fe07f1fdd8e3ddef3b313551739b81be3792c820aa7",
+      "Cycle580 cold": "890c68f44bf6cc563916304b51481def8aa3ad7009a6ecfe0b0a4cffc85cd7e6",
+      "Cycle580 note": "47a6418c27965219ddc5d3c2a8bc39fd34aa6173d3d1c16e473a136113b9c787",
+      "Cycle580 receipt": "9cf656c917ff738bc6d0d0e52dc8c251630aaedd86dd5a6b90dd4f7857cdbc1d",
+      "Cycle580 runner": "1f1acb34dc8976f5617319353e9591f64eae5cfe923a1dea736adfa792c4e718",
+      "Cycle582 cold": "bd18e16e6019b65c5331764cf3cf101ef816c275a3a8e4f6d0026b334e936d11",
+      "Cycle582 note": "0f77f19c52f6aa66e895baba2782f8f802601f74d21c45c7eced78ccfdc2f0c5",
+      "Cycle582 receipt": "3ccacbe0eaf2b4e476956d0728e71d0d871a1aedb69f12d85c4368e4070ca4b0",
+      "Cycle582 runner": "6b2e15a051c91542dcbebc6fe9dc4de24d6908dfbc36a2b44696809339a6b07c",
+      "Cycle584 cold": "3bb01b04ccfe8418de93404395d2e0cb42ea06579b79d80aecb1b14163037729",
+      "Cycle584 note": "da6576714664f225025442b08a696e4a2b90acbd0a7f60439ab462be9a4f0059",
+      "Cycle584 receipt": "a5a3c553a91a624edc5e4b104dd1e19d0f923df831b889aaa972cb40e7394872",
+      "Cycle584 runner": "b7f2d262e4224bc298dd22b137e89e5e4118dc455e0454250908e503bb19be82",
+      "Cycle587 cold": "ce59771c3263e0f8a77dbeccffeb8e61628fb3bc70b5542924e2e743d5d59fe8",
+      "Cycle587 note": "4b1a4e6916da24c74086d83f154cdb474dc87a4954b6be9ea600f685fb9b8e4b",
+      "Cycle587 receipt": "ed4ca30a1c174ec96eaeb3b10dc30f261efb274697acf061e23dd24dbb71a173",
+      "Cycle587 runner": "881e2c5a33217352a97df363f5c3dcd67980c2e672b59e072c6ecbc1cb0f27d1",
+      "Cycle592 cold": "cb2640da38cf7cb0a69e6351871d9a9ba93c712f6865d5055b0bd79f18acdc5c",
+      "Cycle592 note": "092f0bfc06f7a42d82ed10ade5f551bdb08ebe7040c8c2b8ba0b1b3ea1c971c7",
+      "Cycle592 receipt": "edf069adbf58b66b30b6b9a66a85dd577b6c6c3170f833807dc57d59c8f14457",
+      "Cycle592 runner": "14d01e640eb1818c29aeb9f05313b2211e28e445d4798f3f6718d0b0fca0d62a"
     },
     "expected_bath_law_sha256": "ea1150b018833b032fd5bb0b9fa1466d54140f33e5897623efa0318d7864c175",
     "held_sha256": "5ca581dadcbe5dc88f24345562f7cc1691cf0d97facacd3aef6cf3aeb4883337",
@@ -281,25 +307,114 @@ PASS cold resource caps :: {'elapsed_seconds': 0.17494270799215883, 'maximum_RSS
     },
     "note_missing": [],
     "observed": {
-      "Cycle565 runner": "b4b6e2c4491c5a6b30389764e8ac597ce07e1dac3f31c7cb8fff9297ac04437a",
-      "Cycle571 runner": "7221d59558e4d731f98a2a4523c280aa98b889f23ea3f7be1acc8919395dfee8",
-      "Cycle577 runner": "93bf1fa2859289b13037bfe7882cce86732e9377ed8b60e56c3bd55ebc0ce74f",
-      "Cycle580 runner": "c46917d4a932cd3ad9a78e0547625055f5adf9d5cf7393700d7e6715dd515cd3",
-      "Cycle582 runner": "47c5138720add60ed6fa8b6506dcb8a9cbee9af5a1ab3defbc7aea4c3cfa290a",
-      "Cycle584 runner": "556e3e4759033706c795c9b65f55f12afaaaf84b8858dc4bb06b1c0a93400ab3",
-      "Cycle587 runner": "2879d5a2641b334553769f15cf3a6f152f9f16f8f80b23db723448533c28c494",
-      "Cycle592 note": "dccf62d6126287b20cbf96ff410534adfa1746d9cf3aba94fbfb2893855be212",
-      "Cycle592 runner": "ab565af6aa59e66cea7b1ce625c08f8a88235ae9f7415e5e7d89d63af34ce9ce"
+      "Cycle41 runner": "d8207fc0090ca926d060f536fedc2b2c031ccd50184e035c292e6b8eccb56814",
+      "Cycle552 note": "cc5cee11501bcf541faf54e0ca69a5d931037a126d1bac9e02c41c131e752400",
+      "Cycle552 receipt": "cf70de5c6034567637e96fab75bc5e8383630c82bf0b2e0e009049bf1a63415f",
+      "Cycle552 runner": "123c9fe8a7a3802af2627e21dd1cee5a8dadfbe0b82b7862e64c7024be6adc7f",
+      "Cycle565 note": "f29702462974b922e23624df57fb0b6107f5051e95c43d7b51a10953db829bbb",
+      "Cycle565 receipt": "a1b30e2fe268b270720f01ab426af5736cdc23189f94c641a428dc0369ccca9a",
+      "Cycle565 runner": "f31d207540efbf1541343c53552c947c77f2c984e705818786ac3c5f6d06eba2",
+      "Cycle571 cold": "5e4acfe172dc31dbc2f01db314a7414115fc17e4b7ce4164beea0f1f111b46cb",
+      "Cycle571 note": "9781ac6d6d920c17b275c41b13d20ccb9e65ea68a97b48dc8ed8487718708efc",
+      "Cycle571 receipt": "6d75e5d7075c3e65f4a7d8a9406d3bd685cc58aa0be165dd0db5ffe34dc66e31",
+      "Cycle571 runner": "af0a0b4837781b2a03fc471c819ce4c6b95e4e4cc000c403fabe4ddb10f6b14c",
+      "Cycle577 cold": "1c77d2ca4bf860482d3e55596c85e0983f32e755e7ceaac33ff0576a928c8a36",
+      "Cycle577 note": "7617ee877ca22986e0eacc09d08e14f6246cbc75b6443961c8626a1b5435f18c",
+      "Cycle577 receipt": "f7e6bbc40a4d56ee115ba43ddbab7bee4aff05227b988a057adc4420f51941ed",
+      "Cycle577 runner": "0876bc8888193606446b5fe07f1fdd8e3ddef3b313551739b81be3792c820aa7",
+      "Cycle580 cold": "890c68f44bf6cc563916304b51481def8aa3ad7009a6ecfe0b0a4cffc85cd7e6",
+      "Cycle580 note": "47a6418c27965219ddc5d3c2a8bc39fd34aa6173d3d1c16e473a136113b9c787",
+      "Cycle580 receipt": "9cf656c917ff738bc6d0d0e52dc8c251630aaedd86dd5a6b90dd4f7857cdbc1d",
+      "Cycle580 runner": "1f1acb34dc8976f5617319353e9591f64eae5cfe923a1dea736adfa792c4e718",
+      "Cycle582 cold": "bd18e16e6019b65c5331764cf3cf101ef816c275a3a8e4f6d0026b334e936d11",
+      "Cycle582 note": "0f77f19c52f6aa66e895baba2782f8f802601f74d21c45c7eced78ccfdc2f0c5",
+      "Cycle582 receipt": "3ccacbe0eaf2b4e476956d0728e71d0d871a1aedb69f12d85c4368e4070ca4b0",
+      "Cycle582 runner": "6b2e15a051c91542dcbebc6fe9dc4de24d6908dfbc36a2b44696809339a6b07c",
+      "Cycle584 cold": "3bb01b04ccfe8418de93404395d2e0cb42ea06579b79d80aecb1b14163037729",
+      "Cycle584 note": "da6576714664f225025442b08a696e4a2b90acbd0a7f60439ab462be9a4f0059",
+      "Cycle584 receipt": "a5a3c553a91a624edc5e4b104dd1e19d0f923df831b889aaa972cb40e7394872",
+      "Cycle584 runner": "b7f2d262e4224bc298dd22b137e89e5e4118dc455e0454250908e503bb19be82",
+      "Cycle587 cold": "ce59771c3263e0f8a77dbeccffeb8e61628fb3bc70b5542924e2e743d5d59fe8",
+      "Cycle587 note": "4b1a4e6916da24c74086d83f154cdb474dc87a4954b6be9ea600f685fb9b8e4b",
+      "Cycle587 receipt": "ed4ca30a1c174ec96eaeb3b10dc30f261efb274697acf061e23dd24dbb71a173",
+      "Cycle587 runner": "881e2c5a33217352a97df363f5c3dcd67980c2e672b59e072c6ecbc1cb0f27d1",
+      "Cycle592 cold": "cb2640da38cf7cb0a69e6351871d9a9ba93c712f6865d5055b0bd79f18acdc5c",
+      "Cycle592 note": "092f0bfc06f7a42d82ed10ade5f551bdb08ebe7040c8c2b8ba0b1b3ea1c971c7",
+      "Cycle592 receipt": "edf069adbf58b66b30b6b9a66a85dd577b6c6c3170f833807dc57d59c8f14457",
+      "Cycle592 runner": "14d01e640eb1818c29aeb9f05313b2211e28e445d4798f3f6718d0b0fca0d62a"
     },
     "pass": true,
-    "runner_sha256": "cdfcddb00974205faa8bc60c617ff0dd42bf9f8947b0a55a4b172157b2d28de2"
+    "receipt_checks": {
+      "Cycle552": {
+        "authority_audit": true,
+        "note": true,
+        "runner": true,
+        "verified": true
+      },
+      "Cycle565": {
+        "authority_audit": true,
+        "note": true,
+        "runner": true,
+        "verified": true
+      },
+      "Cycle571": {
+        "authority_audit": true,
+        "cold": true,
+        "note": true,
+        "runner": true,
+        "verified": true
+      },
+      "Cycle577": {
+        "authority_audit": true,
+        "cold": true,
+        "note": true,
+        "runner": true,
+        "verified": true
+      },
+      "Cycle580": {
+        "authority_audit": true,
+        "cold": true,
+        "note": true,
+        "runner": true,
+        "verified": true
+      },
+      "Cycle582": {
+        "authority_audit": true,
+        "cold": true,
+        "note": true,
+        "runner": true,
+        "verified": true
+      },
+      "Cycle584": {
+        "authority_audit": true,
+        "cold": true,
+        "note": true,
+        "runner": true,
+        "verified": true
+      },
+      "Cycle587": {
+        "authority_audit": true,
+        "cold": true,
+        "note": true,
+        "runner": true,
+        "verified": true
+      },
+      "Cycle592": {
+        "authority_audit": true,
+        "cold": true,
+        "note": true,
+        "runner": true,
+        "verified": true
+      }
+    },
+    "runner_sha256": "107fdaef7f2f834617bd695119569f0fc867768e64d695105e69107ef80d87d8"
   },
   "fail": 0,
   "pass": 6,
   "resources": {
     "RSS_cap_bytes": 3221225472,
-    "elapsed_seconds": 0.17494270799215883,
-    "maximum_RSS_bytes": 811024384,
+    "elapsed_seconds": 0.15524508291855454,
+    "maximum_RSS_bytes": 754073600,
     "wall_cap_seconds": 360.0
   },
   "route_A": {
@@ -727,21 +842,21 @@ PASS cold resource caps :: {'elapsed_seconds': 0.17494270799215883, 'maximum_RSS
 }
 RESULT pass=6 fail=0
 authority=none; audit=unset; coherent sectors are not objective actuality; packet is not Record; frequency is not probability; spent token is not energy; schedule is not time
-       87.18 real        84.75 user         0.82 sys
-           910458880  maximum resident set size
+       70.88 real        69.77 user         0.66 sys
+           846086144  maximum resident set size
                    0  average shared memory size
                    0  average unshared data size
                    0  average unshared stack size
-              226850  page reclaims
-                 521  page faults
+              263775  page reclaims
+                1383  page faults
                    0  swaps
                    0  block input operations
                    0  block output operations
                    0  messages sent
                    0  messages received
                    0  signals received
-                1177  voluntary context switches
-               94030  involuntary context switches
-       1262952394565  instructions retired
-        293577998998  cycles elapsed
-          1033405640  peak memory footprint
+                1887  voluntary context switches
+                5198  involuntary context switches
+       1258353648430  instructions retired
+        265745691816  cycles elapsed
+          1042384096  peak memory footprint

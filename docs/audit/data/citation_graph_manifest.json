@@ -1,6 +1,6 @@
 {
  "edge_count": 14981,
- "node_count": 4467,
+ "node_count": 4468,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -12959,6 +12959,10 @@
    "out_degree": 7
   },
   "site_phase_cube_shift_intertwiner_note": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "six_mode_paired_direction_coin_b_eigenvalue_determinant_factorization_theorem_note_2026-07-23": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

@@ -1953,7 +1953,7 @@
         },
         {
           "claim_id": "qcd_low_energy_running_bridge_note_2026-05-01",
-          "effective_status": "audit_in_progress"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02",

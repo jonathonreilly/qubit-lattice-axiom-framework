@@ -1,0 +1,2394 @@
+{
+  "Cycle669_controls": {
+    "basis_interface_failures": 0,
+    "basis_token_interface": "exact",
+    "coherent_interface_type": "CoherentDirectSum[Cycle669 empty|one-node branch histories]",
+    "cut_rows": {
+      "C3": {
+        "basis_rows": 64,
+        "capacity": 3,
+        "failures": 0
+      },
+      "C4": {
+        "basis_rows": 64,
+        "capacity": 4,
+        "failures": 0
+      },
+      "C6": {
+        "basis_rows": 64,
+        "capacity": 6,
+        "failures": 0
+      },
+      "C9": {
+        "basis_rows": 64,
+        "capacity": 9,
+        "failures": 0
+      }
+    },
+    "inverse_failures": 0,
+    "malformed_exhaust_expected": 4,
+    "malformed_exhaust_rejected": 4,
+    "native_coherent_ObjectiveEventToken_available": false,
+    "pass": true
+  },
+  "audit": "unset",
+  "author_accepted": false,
+  "authority": "none",
+  "axiom_pressure": false,
+  "breakthrough": false,
+  "classification": "positive-conditional-theorem-with-honest-terminal-residual",
+  "coherence_type_controls": {
+    "all_64_dual_words_distinct": true,
+    "arbitrary_amplitude_isometry_theorem": "the 64 basis images have distinct six-ray dual words, so their Gram matrix is identity and linear extension preserves every complex amplitude and relative phase",
+    "failures": 0,
+    "fixture_rows": {
+      "held_sparse_complex": {
+        "amplitude_phase_inverse_residual": 0.0,
+        "central_offdiagonal_Frobenius": 0.0,
+        "central_reduced_rank": 2,
+        "central_weights_none_plus_six": [
+          0.9714285714285714,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.028571428571428567
+        ],
+        "finite_global_state_type": "PureCoherentDirectSum[center x six dual carriers x phase fronts]",
+        "local_center_type": "DiagonalReducedDensity[none|six]",
+        "normalization_residual": 0.0,
+        "outgoing_basis_states": 7,
+        "support_sectors": 7
+      },
+      "phase_ramp64": {
+        "amplitude_phase_inverse_residual": 0.0,
+        "central_offdiagonal_Frobenius": 0.0,
+        "central_reduced_rank": 7,
+        "central_weights_none_plus_six": [
+          0.90625,
+          0.015625,
+          0.015624999999999997,
+          0.015625,
+          0.015625,
+          0.015625,
+          0.015625
+        ],
+        "finite_global_state_type": "PureCoherentDirectSum[center x six dual carriers x phase fronts]",
+        "local_center_type": "DiagonalReducedDensity[none|six]",
+        "normalization_residual": 1.1102230246251565e-16,
+        "outgoing_basis_states": 64,
+        "support_sectors": 64
+      },
+      "uniform64": {
+        "amplitude_phase_inverse_residual": 0.0,
+        "central_offdiagonal_Frobenius": 0.0,
+        "central_reduced_rank": 7,
+        "central_weights_none_plus_six": [
+          0.90625,
+          0.015625,
+          0.015625,
+          0.015625,
+          0.015625,
+          0.015625,
+          0.015625
+        ],
+        "finite_global_state_type": "PureCoherentDirectSum[center x six dual carriers x phase fronts]",
+        "local_center_type": "DiagonalReducedDensity[none|six]",
+        "normalization_residual": 0.0,
+        "outgoing_basis_states": 64,
+        "support_sectors": 64
+      }
+    },
+    "malformed_dual_words_expected": 4,
+    "malformed_dual_words_rejected": 4,
+    "one_objective_realized_token": false,
+    "partial_trace_statement": "orthogonal outgoing words make the center reduced matrix diagonal; this is tracing-out, not one realized value",
+    "pass": true
+  },
+  "covariance_controls": {
+    "all24_failures": 0,
+    "all24_tests": 24576,
+    "all576_failures": 0,
+    "all576_tests": 147456,
+    "pass": true,
+    "physical_state_and_position_rotated_together": true,
+    "preferred_direction_or_ray": false,
+    "proper_cubic_frames": 24,
+    "runtime_frame_selector": false
+  },
+  "cycle": 676,
+  "date": "2026-07-23",
+  "elapsed_seconds": 85.28687433293089,
+  "exact_terminal_disposition": "NOT_MET_NOT_FALSIFIED",
+  "exact_terminal_met": false,
+  "frozen_contract": {
+    "expected_preregistration_sha256": "0a8688d2f23b19888ef90fa3f79401156a28f8c0a73424240d67dbc196935750",
+    "expected_target_sha256": "4e312e45972b2ed4ab94fc1592a4ea5ffc3cb510fb08f0ec7d27bff10b252b45",
+    "first_evidence_line": 149,
+    "frozen_before_evidence": true,
+    "imported_contracts": {
+      "Cycle661_pass": true,
+      "Cycle669_pass": true,
+      "Cycle674_pass": true
+    },
+    "observed": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_COHERENT_SEED_MEMBER_DILATION_CYCLE536_NOTE_2026-07-21.md": "e15944633127890fe27cb52193960a28d9860212d5d7aafd70f15eef2e987457",
+      "docs/work_history/repo/review_feedback/PHYSICAL_DETERMINISTIC_CONSTRAINED_QCA_FORMATION_LAW_TOURNAMENT_CYCLE661_NOTE_2026-07-23.md": "14262310b768983ebbdc8a89f914f237ab2a2523c8a096eece63b33a7e5e9ad4",
+      "docs/work_history/repo/review_feedback/PHYSICAL_DISSIPATIVE_METASTABLE_FORMATION_CHANNEL_CYCLE663_NOTE_2026-07-23.md": "96f59a3f79ce7c29f3c9ccdf93cae9503ea4cd0084821c11ba6e0545046bec87",
+      "docs/work_history/repo/review_feedback/PHYSICAL_OBJECTIVE_STOCHASTIC_OPEN_DILATION_CYCLE662_NOTE_2026-07-23.md": "bdc8dda304985a62c73fc6e7a03f11d61041dd8053a9321fb7171c9b22947a05",
+      "docs/work_history/repo/review_feedback/PHYSICAL_STATE_CARRIED_EVENT_CHAIN_SEQUENCE_PROTOCOL_CYCLE669_NOTE_2026-07-23.md": "4ba9fe3a26606a944f362e81d6262543936018c6adf497069d8800e616f0c2c5",
+      "docs/work_history/repo/review_feedback/PHYSICAL_SYMMETRY_NEUTRAL_ORDER_PARAMETER_ACTUALIZER_TOURNAMENT_CYCLE674_NOTE_2026-07-23.md": "7efc246b7b2fbf00d18e4d52a949c225d97c4b32fc7731f84d652eddc8d98200",
+      "outputs/physical_deterministic_constrained_qca_formation_law_tournament_cycle661_receipt_2026_07_23.json": "c0ac1effe618bbdcbfc4bd6a3360f3beb557aa2469d47be476deef862e1340c5",
+      "outputs/physical_state_carried_event_chain_sequence_protocol_cycle669_receipt_2026_07_23.json": "0765c66f3d3625892d133976aca217a5676fef0820557b12b32c988cb6180760",
+      "outputs/physical_symmetry_neutral_order_parameter_actualizer_tournament_cycle674_receipt_2026_07_23.json": "e66f8b59ab81b6ff531cc5714dab51cd37188c38d398347d331d879da4963641",
+      "scripts/physical_deterministic_constrained_qca_formation_law_tournament_cycle661_2026_07_23.py": "83383268139e92bcd040fa176686f2e6c3d5eef806ba58ed5da9953a59af7590",
+      "scripts/physical_state_carried_event_chain_sequence_protocol_cycle669_2026_07_23.py": "ac1237e211bf06a8eb394db0dd8001c88a5aaf81726b38a3e43bd066285a9c84",
+      "scripts/physical_symmetry_neutral_order_parameter_actualizer_tournament_cycle674_2026_07_23.py": "91ae562030f6906b8762828dd92795aaa8771ce6c60da6371f50bc8f701dd823"
+    },
+    "pass": true,
+    "pins": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_COHERENT_SEED_MEMBER_DILATION_CYCLE536_NOTE_2026-07-21.md": "e15944633127890fe27cb52193960a28d9860212d5d7aafd70f15eef2e987457",
+      "docs/work_history/repo/review_feedback/PHYSICAL_DETERMINISTIC_CONSTRAINED_QCA_FORMATION_LAW_TOURNAMENT_CYCLE661_NOTE_2026-07-23.md": "14262310b768983ebbdc8a89f914f237ab2a2523c8a096eece63b33a7e5e9ad4",
+      "docs/work_history/repo/review_feedback/PHYSICAL_DISSIPATIVE_METASTABLE_FORMATION_CHANNEL_CYCLE663_NOTE_2026-07-23.md": "96f59a3f79ce7c29f3c9ccdf93cae9503ea4cd0084821c11ba6e0545046bec87",
+      "docs/work_history/repo/review_feedback/PHYSICAL_OBJECTIVE_STOCHASTIC_OPEN_DILATION_CYCLE662_NOTE_2026-07-23.md": "bdc8dda304985a62c73fc6e7a03f11d61041dd8053a9321fb7171c9b22947a05",
+      "docs/work_history/repo/review_feedback/PHYSICAL_STATE_CARRIED_EVENT_CHAIN_SEQUENCE_PROTOCOL_CYCLE669_NOTE_2026-07-23.md": "4ba9fe3a26606a944f362e81d6262543936018c6adf497069d8800e616f0c2c5",
+      "docs/work_history/repo/review_feedback/PHYSICAL_SYMMETRY_NEUTRAL_ORDER_PARAMETER_ACTUALIZER_TOURNAMENT_CYCLE674_NOTE_2026-07-23.md": "7efc246b7b2fbf00d18e4d52a949c225d97c4b32fc7731f84d652eddc8d98200",
+      "outputs/physical_deterministic_constrained_qca_formation_law_tournament_cycle661_receipt_2026_07_23.json": "c0ac1effe618bbdcbfc4bd6a3360f3beb557aa2469d47be476deef862e1340c5",
+      "outputs/physical_state_carried_event_chain_sequence_protocol_cycle669_receipt_2026_07_23.json": "0765c66f3d3625892d133976aca217a5676fef0820557b12b32c988cb6180760",
+      "outputs/physical_symmetry_neutral_order_parameter_actualizer_tournament_cycle674_receipt_2026_07_23.json": "e66f8b59ab81b6ff531cc5714dab51cd37188c38d398347d331d879da4963641",
+      "scripts/physical_deterministic_constrained_qca_formation_law_tournament_cycle661_2026_07_23.py": "83383268139e92bcd040fa176686f2e6c3d5eef806ba58ed5da9953a59af7590",
+      "scripts/physical_state_carried_event_chain_sequence_protocol_cycle669_2026_07_23.py": "ac1237e211bf06a8eb394db0dd8001c88a5aaf81726b38a3e43bd066285a9c84",
+      "scripts/physical_symmetry_neutral_order_parameter_actualizer_tournament_cycle674_2026_07_23.py": "91ae562030f6906b8762828dd92795aaa8771ce6c60da6371f50bc8f701dd823"
+    },
+    "preregistration": {
+      "coherent_fixtures": [
+        "uniform64",
+        "phase_ramp64",
+        "held_sparse_complex"
+      ],
+      "cuts": {
+        "C3": {
+          "radius": 3,
+          "split": "train"
+        },
+        "C4": {
+          "radius": 4,
+          "split": "held_blinded"
+        },
+        "C6": {
+          "radius": 6,
+          "split": "held_blinded_nonproduct"
+        },
+        "C9": {
+          "radius": 9,
+          "split": "held_larger_cut"
+        }
+      },
+      "finite_restriction": "on cube [-R,R]^3 the first crossing occurs at update R+1; an explicit six-port boundary exhaust is a restriction ledger, not bulk dynamics or a boundary phase",
+      "information_encoding": "Cycle661 candidate bit d is reversibly moved into dual rail (zero_d,one_d) and transported only on ray d; the six rays collectively retain the exact 64-sector word",
+      "local_cell": "84 Cycle661 source M2 + 7 central one-hot M2 + 6x7 phase-head M2 + 6x7 phase-wake M2 + 6x2 dual-rail information-head M2 = 187 active M2",
+      "no_go_gate": "fresh remote-main N1-N8 before disposition",
+      "phase_encoding": "the none|six event one-hot is copied to all six moving phase heads; each head writes its wake then advances",
+      "thermodynamic_gate": "prove finite-state coherence, local center diagonality, and conditional disjoint GNS phase sectors separately; none alone is objective realization",
+      "update": "state-triggered local injection on the exact Cycle661 code, onsite phase-wake CNOTs, and six uniform direction-bank shifts; the same rule is applied at every coarse cell"
+    },
+    "preregistration_line": 35,
+    "preregistration_sha256": "0a8688d2f23b19888ef90fa3f79401156a28f8c0a73424240d67dbc196935750",
+    "shore": "884bcc67fa7baa38b750a1ddbcf094a16b666bce",
+    "target": {
+      "allowed_premises": [
+        "exact committed Cycle661 local basis QCA",
+        "blank local carrier/phase registers",
+        "translation-invariant directed carrier shift",
+        "exact committed Cycle669 basis-token interface"
+      ],
+      "completion_witness": "one central objective value plus complete outward coherent exhaust, not only a finite branch isometry, local reduced state, central decomposition, or conditional thermodynamic representation theorem",
+      "cycle": 676,
+      "forbidden_weakenings": [
+        "locally diagonal reduced center called objective",
+        "global coherent cat called one realized phase",
+        "disjoint infinite-volume sectors called a selected sector",
+        "tracing-out or nonreturn called actuality",
+        "supplied boundary phase",
+        "supplied seed/selector/random draw/sampler",
+        "host-selected frame or branch"
+      ],
+      "outcomes_not_closure": [
+        "finite pure entangled state",
+        "rank-seven diagonal center",
+        "infinite algebraic mixture of disjoint sectors",
+        "first-crossing boundary exhaust",
+        "stable branch-relative latch"
+      ],
+      "quantifiers": "all 64 Cycle661 basis sectors, arbitrary coherent amplitudes, cuts C3/C4/C6/C9, all24/all576",
+      "target": "a translation-invariant proper-cubic local M2 update which starts with no phase seed, exports the complete Cycle661 sector on outward carriers, leaves an increasing stable central-order-parameter wake, and produces one objective ObjectiveEventToken[none|six] on the native coherent input"
+    },
+    "target_line": 6,
+    "target_sha256": "4e312e45972b2ed4ab94fc1592a4ea5ffc3cb510fb08f0ec7d27bff10b252b45",
+    "working_tree_bytes_used_as_evidence": false
+  },
+  "injection_controls": {
+    "all24_injection_failures": 0,
+    "all24_injection_tests": 1536,
+    "ambient_ledger": "the state-triggered ambient map is partial; on the declared genesis-to-propagating code the complete source reset, central value and outgoing dual rails give the displayed exact inverse",
+    "basis_failures": 0,
+    "basis_rows": 64,
+    "blank_nonorigin_fixed": true,
+    "exact_injection_schedule": [
+      {
+        "kind": "CNOT",
+        "label": "center:none-clear",
+        "sites": [
+          56,
+          84
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "center:direction:0",
+        "sites": [
+          58,
+          85
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "center:direction:1",
+        "sites": [
+          59,
+          86
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "center:direction:2",
+        "sites": [
+          60,
+          87
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "center:direction:3",
+        "sites": [
+          61,
+          88
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "center:direction:4",
+        "sites": [
+          62,
+          89
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "center:direction:5",
+        "sites": [
+          63,
+          90
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "phase-copy:0:0",
+        "sites": [
+          84,
+          91
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "phase-copy:0:1",
+        "sites": [
+          85,
+          92
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "phase-copy:0:2",
+        "sites": [
+          86,
+          93
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "phase-copy:0:3",
+        "sites": [
+          87,
+          94
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "phase-copy:0:4",
+        "sites": [
+          88,
+          95
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "phase-copy:0:5",
+        "sites": [
+          89,
+          96
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "phase-copy:0:6",
+        "sites": [
+          90,
+          97
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "phase-copy:1:0",
+        "sites": [
+          84,
+          98
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "phase-copy:1:1",
+        "sites": [
+          85,
+          99
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "phase-copy:1:2",
+        "sites": [
+          86,
+          100
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "phase-copy:1:3",
+        "sites": [
+          87,
+          101
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "phase-copy:1:4",
+        "sites": [
+          88,
+          102
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "phase-copy:1:5",
+        "sites": [
+          89,
+          103
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "phase-copy:1:6",
+        "sites": [
+          90,
+          104
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "phase-copy:2:0",
+        "sites": [
+          84,
+          105
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "phase-copy:2:1",
+        "sites": [
+          85,
+          106
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "phase-copy:2:2",
+        "sites": [
+          86,
+          107
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "phase-copy:2:3",
+        "sites": [
+          87,
+          108
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "phase-copy:2:4",
+        "sites": [
+          88,
+          109
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "phase-copy:2:5",
+        "sites": [
+          89,
+          110
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "phase-copy:2:6",
+        "sites": [
+          90,
+          111
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "phase-copy:3:0",
+        "sites": [
+          84,
+          112
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "phase-copy:3:1",
+        "sites": [
+          85,
+          113
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "phase-copy:3:2",
+        "sites": [
+          86,
+          114
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "phase-copy:3:3",
+        "sites": [
+          87,
+          115
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "phase-copy:3:4",
+        "sites": [
+          88,
+          116
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "phase-copy:3:5",
+        "sites": [
+          89,
+          117
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "phase-copy:3:6",
+        "sites": [
+          90,
+          118
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "phase-copy:4:0",
+        "sites": [
+          84,
+          119
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "phase-copy:4:1",
+        "sites": [
+          85,
+          120
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "phase-copy:4:2",
+        "sites": [
+          86,
+          121
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "phase-copy:4:3",
+        "sites": [
+          87,
+          122
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "phase-copy:4:4",
+        "sites": [
+          88,
+          123
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "phase-copy:4:5",
+        "sites": [
+          89,
+          124
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "phase-copy:4:6",
+        "sites": [
+          90,
+          125
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "phase-copy:5:0",
+        "sites": [
+          84,
+          126
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "phase-copy:5:1",
+        "sites": [
+          85,
+          127
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "phase-copy:5:2",
+        "sites": [
+          86,
+          128
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "phase-copy:5:3",
+        "sites": [
+          87,
+          129
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "phase-copy:5:4",
+        "sites": [
+          88,
+          130
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "phase-copy:5:5",
+        "sites": [
+          89,
+          131
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "phase-copy:5:6",
+        "sites": [
+          90,
+          132
+        ]
+      },
+      {
+        "kind": "QCA_INVERSE",
+        "label": "Cycle661:qca-inverse",
+        "sites": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83
+        ]
+      },
+      {
+        "kind": "X",
+        "label": "dual-zero-init:0",
+        "sites": [
+          175
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "dual-zero-toggle:0",
+        "sites": [
+          0,
+          175
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "dual-one:0",
+        "sites": [
+          0,
+          176
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "source-clear:0",
+        "sites": [
+          176,
+          0
+        ]
+      },
+      {
+        "kind": "X",
+        "label": "dual-zero-init:1",
+        "sites": [
+          177
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "dual-zero-toggle:1",
+        "sites": [
+          1,
+          177
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "dual-one:1",
+        "sites": [
+          1,
+          178
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "source-clear:1",
+        "sites": [
+          178,
+          1
+        ]
+      },
+      {
+        "kind": "X",
+        "label": "dual-zero-init:2",
+        "sites": [
+          179
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "dual-zero-toggle:2",
+        "sites": [
+          2,
+          179
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "dual-one:2",
+        "sites": [
+          2,
+          180
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "source-clear:2",
+        "sites": [
+          180,
+          2
+        ]
+      },
+      {
+        "kind": "X",
+        "label": "dual-zero-init:3",
+        "sites": [
+          181
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "dual-zero-toggle:3",
+        "sites": [
+          3,
+          181
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "dual-one:3",
+        "sites": [
+          3,
+          182
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "source-clear:3",
+        "sites": [
+          182,
+          3
+        ]
+      },
+      {
+        "kind": "X",
+        "label": "dual-zero-init:4",
+        "sites": [
+          183
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "dual-zero-toggle:4",
+        "sites": [
+          4,
+          183
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "dual-one:4",
+        "sites": [
+          4,
+          184
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "source-clear:4",
+        "sites": [
+          184,
+          4
+        ]
+      },
+      {
+        "kind": "X",
+        "label": "dual-zero-init:5",
+        "sites": [
+          185
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "dual-zero-toggle:5",
+        "sites": [
+          5,
+          185
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "dual-one:5",
+        "sites": [
+          5,
+          186
+        ]
+      },
+      {
+        "kind": "CNOT",
+        "label": "source-clear:5",
+        "sites": [
+          186,
+          5
+        ]
+      }
+    ],
+    "exact_injection_schedule_sha256": "ca2dd8179b8738ac18288313f881554b72573a2620703598cea6ed05c395da44",
+    "host_sampler_calls": 0,
+    "inherited_Cycle661_inverse_gate_counts": {
+      "CNOT": 31,
+      "FREDKIN": 41,
+      "TOFFOLI": 42,
+      "X": 1
+    },
+    "inherited_Cycle661_inverse_schedule_sha256": "8e81bf3379ec4800e8a2656aa406a39a740b61d4f29e71d8d79917a9bac9df56",
+    "input_actuality_M2": 0,
+    "input_phase_seed_M2": 0,
+    "input_selector_M2": 0,
+    "inverse_failures": 0,
+    "malformed_expected": 6,
+    "malformed_rejected": 6,
+    "new_schedule_deletions_detected": 74,
+    "new_schedule_operations": 74,
+    "pass": true,
+    "postimage_relaunch_failures": 0,
+    "source_after_injection": "fixed Cycle661 source_word(000000)",
+    "source_reset_leakage_failures": 0,
+    "state_trigger": "exact Cycle661 output code; reset source and blank nonorigin cells do not trigger",
+    "supplied_random_draw": false,
+    "support_before_lowering_M2": 3
+  },
+  "maximum_RSS_bytes": 91226112,
+  "moving_carrier_controls": {
+    "boundary_type": "six first-crossing phase+dual-information exhaust ports supplied only by the finite restriction; they are not an infinite boundary phase and are not used by the infinite bulk law",
+    "bulk_rule": "onsite phase-head-to-wake CNOT followed by direction-bank shift x->x+d",
+    "carrier_return_failures": 0,
+    "central_stability_failures": 0,
+    "cut_rows": {
+      "C3": {
+        "basis_time_rows": 640,
+        "exact_all_future_interior_statement": "after first crossing, the directed dependency coordinate increases strictly and no carrier or wake feeds the center; the captured finite interior therefore remains exact for all later updates",
+        "resources": {
+          "active_M2": 64141,
+          "affected_ray_cell_fraction": 0.05539358600583091,
+          "affected_ray_cells": 19,
+          "boundary_exhaust_M2": 54,
+          "coarse_cells": 343,
+          "constant_overhead_M2_per_coarse_cell": 187,
+          "first_crossing_update": 4,
+          "infinite_bulk_return_update": null,
+          "radius": 3,
+          "reserved_M2": 117649
+        },
+        "split": "train",
+        "tested_updates_through": 9
+      },
+      "C4": {
+        "basis_time_rows": 768,
+        "exact_all_future_interior_statement": "after first crossing, the directed dependency coordinate increases strictly and no carrier or wake feeds the center; the captured finite interior therefore remains exact for all later updates",
+        "resources": {
+          "active_M2": 136323,
+          "affected_ray_cell_fraction": 0.03429355281207133,
+          "affected_ray_cells": 25,
+          "boundary_exhaust_M2": 54,
+          "coarse_cells": 729,
+          "constant_overhead_M2_per_coarse_cell": 187,
+          "first_crossing_update": 5,
+          "infinite_bulk_return_update": null,
+          "radius": 4,
+          "reserved_M2": 250047
+        },
+        "split": "held_blinded",
+        "tested_updates_through": 11
+      },
+      "C6": {
+        "basis_time_rows": 1024,
+        "exact_all_future_interior_statement": "after first crossing, the directed dependency coordinate increases strictly and no carrier or wake feeds the center; the captured finite interior therefore remains exact for all later updates",
+        "resources": {
+          "active_M2": 410839,
+          "affected_ray_cell_fraction": 0.016841147018661812,
+          "affected_ray_cells": 37,
+          "boundary_exhaust_M2": 54,
+          "coarse_cells": 2197,
+          "constant_overhead_M2_per_coarse_cell": 187,
+          "first_crossing_update": 7,
+          "infinite_bulk_return_update": null,
+          "radius": 6,
+          "reserved_M2": 753571
+        },
+        "split": "held_blinded_nonproduct",
+        "tested_updates_through": 15
+      },
+      "C9": {
+        "basis_time_rows": 1408,
+        "exact_all_future_interior_statement": "after first crossing, the directed dependency coordinate increases strictly and no carrier or wake feeds the center; the captured finite interior therefore remains exact for all later updates",
+        "resources": {
+          "active_M2": 1282633,
+          "affected_ray_cell_fraction": 0.008018661612479954,
+          "affected_ray_cells": 55,
+          "boundary_exhaust_M2": 54,
+          "coarse_cells": 6859,
+          "constant_overhead_M2_per_coarse_cell": 187,
+          "first_crossing_update": 10,
+          "infinite_bulk_return_update": null,
+          "radius": 9,
+          "reserved_M2": 2352637
+        },
+        "split": "held_larger_cut",
+        "tested_updates_through": 21
+      }
+    },
+    "finite_restriction_failures": 0,
+    "finite_restriction_theorem": "C_R equals the infinite bulk on its entire interior through update R and, after exact first-crossing capture at R+1, forever because the directed causal graph has no incoming edge",
+    "formula_failures": 0,
+    "full_density_three_dimensional_phase_claimed": false,
+    "lightcone_failures": 0,
+    "lightcone_theorem": "after n propagation updates every head is exactly at n*d and every wake site is k*d, 0<=k<n",
+    "local_M2_geometry": {
+      "active_M2_per_coarse_cell": 187,
+      "all24_active_frame_placements_inside_cube": true,
+      "all24_reserved_cube_invariant": true,
+      "bulk_dependency_neighborhood": "one coarse cell onsite plus x-d predecessor for direction bank d",
+      "frame_placement_sha256": [
+        "c9f42050d5e4bc7db1658e69b0edad219712fc7ba8a11bce4c65d9d711dd9ea6",
+        "b28167b7d6aa50c08f3bf1f6d8ec3d1e5eacac86a32d2efbbf673ca39dacc85c",
+        "8d24bf34e35e31974d2f27f0fe5cb991a7b30cee3e4b0ef057384d1f9133b3e5",
+        "12ba400d37bd0642bed999b7245476c4e62423a9367ed0c8638227619e67e7f2",
+        "3f7d7028c373cea99ae49d83c59afb398a0f359e76a06b2861f39bd03c904def",
+        "f342b361598ae0af56e097a872540259179b5be52cdaa67f863368b0979b304e",
+        "7ace808f19308bf23f284001481997270869bce148498c1020eee4dcc0055aeb",
+        "f6fbcecdfe51a1be99a6271c67689994e095afc8c59bb342e4085ad69a2856bc",
+        "a671bd2b048e22a8c02ea7cef81782bea69c58fa148327bac42c5831d3e5ab12",
+        "8d42f6bb397d90f5ef150092213575f2393f685acb0a1a065c7e3a5198bb3228",
+        "2a4a9d94adf05522182b61a124b4849cd564e4c3593bce75111f9ef3f56c824e",
+        "d6a4a2323314d2a87d1507d83bebe6e3b352c7dc31fe2356a4e1eb16678a6eb5",
+        "5b6759c85b5f64fabae5d9ba4d923251afa5afbc675a0dd6a0f3431111bec480",
+        "e194ff4ae55ffb2adcaaa6b8b5458a898d42bf1d8f93e06a461a68e19f46b82a",
+        "2e292a4dd1d09a6699a5f1a8a6fe9dae5263bd670638b3af1079b705294a7832",
+        "b69c8e2af439d546abd38b715518838b9ed953bb3c92c6f798c1951fc53ac481",
+        "59ab941e0ad118a925d9d26f9efbca47bd19a84ee4c4c5b9024f845aae58c33c",
+        "adc8dffe9925ff56fd4bd2c53c0910f8fcd0ff5cddaa6a6216d5098b357d7396",
+        "9ac57bb07b38ab9f6c473aa977ff76c30fb54bf598a34da0c9d7352721b0fe61",
+        "d64da1283f0a454e2300d23f2f008dd72c5d34d157056fdb52fae97ba00f17ed",
+        "bb14052e378392563a8625eb33cb52ebccfe0f5d35fd797476c314bf707394c7",
+        "11f3cba5a9a8de165624bdca1736617bd76fe6b9d329758392c6cdeb51027de2",
+        "ca3ec55c7655302d57dcfe54e3e5c32c496d364b280c3ee1a6bfdf6dd345e5c7",
+        "611b17a0be8fd3c7472ebb1c631825488f4ad478337146cf773a3d18d463e055"
+      ],
+      "global_coordinate_rule": "coarse cell x and local p map to physical M2 coordinate 7*x+p",
+      "inactive_routing_M2_per_coarse_cell": 156,
+      "local_cube": "[-3,3]^3",
+      "logical_index_to_coordinate": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          -2,
+          0,
+          0
+        ],
+        [
+          -1,
+          -1,
+          0
+        ],
+        [
+          -1,
+          0,
+          -1
+        ],
+        [
+          -1,
+          0,
+          1
+        ],
+        [
+          -1,
+          1,
+          0
+        ],
+        [
+          0,
+          -2,
+          0
+        ],
+        [
+          0,
+          -1,
+          -1
+        ],
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          0,
+          0,
+          -2
+        ],
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          -1
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          1,
+          -1,
+          0
+        ],
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          -3,
+          0,
+          0
+        ],
+        [
+          -2,
+          -1,
+          0
+        ],
+        [
+          -2,
+          0,
+          -1
+        ],
+        [
+          -2,
+          0,
+          1
+        ],
+        [
+          -2,
+          1,
+          0
+        ],
+        [
+          -1,
+          -2,
+          0
+        ],
+        [
+          -1,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          1
+        ],
+        [
+          -1,
+          0,
+          -2
+        ],
+        [
+          -1,
+          0,
+          2
+        ],
+        [
+          -1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          1,
+          1
+        ],
+        [
+          -1,
+          2,
+          0
+        ],
+        [
+          0,
+          -3,
+          0
+        ],
+        [
+          0,
+          -2,
+          -1
+        ],
+        [
+          0,
+          -2,
+          1
+        ],
+        [
+          0,
+          -1,
+          -2
+        ],
+        [
+          0,
+          -1,
+          2
+        ],
+        [
+          0,
+          0,
+          -3
+        ],
+        [
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          1,
+          -2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          -1
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          1,
+          -2,
+          0
+        ],
+        [
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1
+        ],
+        [
+          1,
+          0,
+          -2
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          1,
+          -1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          2,
+          -1,
+          0
+        ],
+        [
+          2,
+          0,
+          -1
+        ],
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          2,
+          1,
+          0
+        ],
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          -3,
+          -1,
+          0
+        ],
+        [
+          -3,
+          0,
+          -1
+        ],
+        [
+          -3,
+          0,
+          1
+        ],
+        [
+          -3,
+          1,
+          0
+        ],
+        [
+          -2,
+          -2,
+          0
+        ],
+        [
+          -2,
+          -1,
+          -1
+        ],
+        [
+          -2,
+          -1,
+          1
+        ],
+        [
+          -2,
+          0,
+          -2
+        ],
+        [
+          -2,
+          0,
+          2
+        ],
+        [
+          -2,
+          1,
+          -1
+        ],
+        [
+          -2,
+          1,
+          1
+        ],
+        [
+          -2,
+          2,
+          0
+        ],
+        [
+          -1,
+          -3,
+          0
+        ],
+        [
+          -1,
+          -2,
+          -1
+        ],
+        [
+          -1,
+          -2,
+          1
+        ],
+        [
+          -1,
+          -1,
+          -2
+        ],
+        [
+          -1,
+          -1,
+          2
+        ],
+        [
+          -1,
+          0,
+          -3
+        ],
+        [
+          -1,
+          0,
+          3
+        ],
+        [
+          -1,
+          1,
+          -2
+        ],
+        [
+          -1,
+          1,
+          2
+        ],
+        [
+          -1,
+          2,
+          -1
+        ],
+        [
+          -1,
+          2,
+          1
+        ],
+        [
+          -1,
+          3,
+          0
+        ],
+        [
+          0,
+          -3,
+          -1
+        ],
+        [
+          0,
+          -3,
+          1
+        ],
+        [
+          0,
+          -2,
+          -2
+        ],
+        [
+          0,
+          -2,
+          2
+        ],
+        [
+          0,
+          -1,
+          -3
+        ],
+        [
+          0,
+          -1,
+          3
+        ],
+        [
+          0,
+          1,
+          -3
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          2,
+          -2
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          0,
+          3,
+          -1
+        ],
+        [
+          0,
+          3,
+          1
+        ],
+        [
+          1,
+          -3,
+          0
+        ],
+        [
+          1,
+          -2,
+          -1
+        ],
+        [
+          1,
+          -2,
+          1
+        ],
+        [
+          1,
+          -1,
+          -2
+        ],
+        [
+          1,
+          -1,
+          2
+        ],
+        [
+          1,
+          0,
+          -3
+        ],
+        [
+          1,
+          0,
+          3
+        ],
+        [
+          1,
+          1,
+          -2
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          -1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          3,
+          0
+        ],
+        [
+          2,
+          -2,
+          0
+        ],
+        [
+          2,
+          -1,
+          -1
+        ],
+        [
+          2,
+          -1,
+          1
+        ],
+        [
+          2,
+          0,
+          -2
+        ],
+        [
+          2,
+          0,
+          2
+        ],
+        [
+          2,
+          1,
+          -1
+        ],
+        [
+          2,
+          1,
+          1
+        ],
+        [
+          2,
+          2,
+          0
+        ],
+        [
+          3,
+          -1,
+          0
+        ],
+        [
+          3,
+          0,
+          -1
+        ],
+        [
+          3,
+          0,
+          1
+        ],
+        [
+          3,
+          1,
+          0
+        ],
+        [
+          -3,
+          -2,
+          0
+        ],
+        [
+          -3,
+          -1,
+          -1
+        ],
+        [
+          -3,
+          -1,
+          1
+        ],
+        [
+          -3,
+          0,
+          -2
+        ],
+        [
+          -3,
+          0,
+          2
+        ],
+        [
+          -3,
+          1,
+          -1
+        ],
+        [
+          -3,
+          1,
+          1
+        ],
+        [
+          -3,
+          2,
+          0
+        ],
+        [
+          -2,
+          -3,
+          0
+        ],
+        [
+          -2,
+          -2,
+          -1
+        ],
+        [
+          -2,
+          -2,
+          1
+        ],
+        [
+          -2,
+          -1,
+          -2
+        ],
+        [
+          -2,
+          -1,
+          2
+        ],
+        [
+          -2,
+          0,
+          -3
+        ],
+        [
+          -2,
+          0,
+          3
+        ],
+        [
+          -2,
+          1,
+          -2
+        ],
+        [
+          -2,
+          1,
+          2
+        ],
+        [
+          -2,
+          2,
+          -1
+        ],
+        [
+          -2,
+          2,
+          1
+        ],
+        [
+          -2,
+          3,
+          0
+        ],
+        [
+          -1,
+          -3,
+          -1
+        ],
+        [
+          -1,
+          -3,
+          1
+        ],
+        [
+          -1,
+          -2,
+          -2
+        ],
+        [
+          -1,
+          -2,
+          2
+        ],
+        [
+          -1,
+          -1,
+          -3
+        ],
+        [
+          -1,
+          -1,
+          3
+        ],
+        [
+          -1,
+          1,
+          -3
+        ],
+        [
+          -1,
+          1,
+          3
+        ],
+        [
+          -1,
+          2,
+          -2
+        ],
+        [
+          -1,
+          2,
+          2
+        ],
+        [
+          -1,
+          3,
+          -1
+        ],
+        [
+          -1,
+          3,
+          1
+        ],
+        [
+          0,
+          -3,
+          -2
+        ],
+        [
+          0,
+          -3,
+          2
+        ],
+        [
+          0,
+          -2,
+          -3
+        ],
+        [
+          0,
+          -2,
+          3
+        ],
+        [
+          0,
+          2,
+          -3
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          0,
+          3,
+          -2
+        ],
+        [
+          0,
+          3,
+          2
+        ],
+        [
+          1,
+          -3,
+          -1
+        ],
+        [
+          1,
+          -3,
+          1
+        ],
+        [
+          1,
+          -2,
+          -2
+        ],
+        [
+          1,
+          -2,
+          2
+        ],
+        [
+          1,
+          -1,
+          -3
+        ],
+        [
+          1,
+          -1,
+          3
+        ],
+        [
+          1,
+          1,
+          -3
+        ],
+        [
+          1,
+          1,
+          3
+        ],
+        [
+          1,
+          2,
+          -2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          3,
+          -1
+        ],
+        [
+          1,
+          3,
+          1
+        ],
+        [
+          2,
+          -3,
+          0
+        ],
+        [
+          2,
+          -2,
+          -1
+        ],
+        [
+          2,
+          -2,
+          1
+        ],
+        [
+          2,
+          -1,
+          -2
+        ],
+        [
+          2,
+          -1,
+          2
+        ],
+        [
+          2,
+          0,
+          -3
+        ],
+        [
+          2,
+          0,
+          3
+        ],
+        [
+          2,
+          1,
+          -2
+        ],
+        [
+          2,
+          1,
+          2
+        ],
+        [
+          2,
+          2,
+          -1
+        ],
+        [
+          2,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          0
+        ]
+      ],
+      "maximum_active_L1_diameter": 10,
+      "placement_rule": "logical M2 i is the i-th point ordered by (L1 norm,x,y,z)",
+      "placement_sha256": "12ba400d37bd0642bed999b7245476c4e62423a9367ed0c8638227619e67e7f2",
+      "reserved_M2_per_coarse_cell": 343,
+      "same-bank_adjacent_coarse_shift_L1_support": 7
+    },
+    "no_boundary_phase": true,
+    "no_phase_seed": true,
+    "no_reflection_or_return_service": true,
+    "nonreturn_theorem": "bank d has strictly increasing d-coordinate; its infinite-bulk return update is infinity",
+    "ordered_support_dimension": 1,
+    "pass": true,
+    "propagation_deletions_detected": 96,
+    "propagation_operations": 96,
+    "scope_boundary": "the exact wake occupies six rays and has zero density in growing cubic cuts",
+    "strict_directed_coordinate_induction": true,
+    "translation_failures": 0,
+    "translation_invariant": true,
+    "translation_tests": 192
+  },
+  "no_go_discipline": {
+    "N1_qualifying_normalized_families": 6,
+    "N1_routes": [
+      {
+        "authority": {
+          "line": 523,
+          "path": "scripts/physical_moving_carrier_phase_field_finite_restriction_cycle676_2026_07_23.py",
+          "ref": "Cycle676 current"
+        },
+        "disposition": "finite restriction and conditional disjointness close; objective selection does not",
+        "family": "moving-carrier increasing phase field",
+        "honesty": "ATTEMPTED",
+        "mechanism": "directed front, persistent wake and central sequence",
+        "object": "quasi-local ray phase algebra",
+        "terminal": "one selected central summand"
+      },
+      {
+        "authority": {
+          "line": 85,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_SYMMETRY_NEUTRAL_ORDER_PARAMETER_ACTUALIZER_TOURNAMENT_CYCLE674_NOTE_2026-07-23.md",
+          "ref": "884bcc67fa7baa38b750a1ddbcf094a16b666bce"
+        },
+        "disposition": "coherent output remains a direct sum",
+        "family": "finite deterministic neutral instability",
+        "honesty": "RULED OUT BY PRIOR",
+        "mechanism": "basis latch",
+        "object": "partial ready/spent cellular map",
+        "terminal": "one coherent-input value"
+      },
+      {
+        "authority": {
+          "line": 91,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_SYMMETRY_NEUTRAL_ORDER_PARAMETER_ACTUALIZER_TOURNAMENT_CYCLE674_NOTE_2026-07-23.md",
+          "ref": "884bcc67fa7baa38b750a1ddbcf094a16b666bce"
+        },
+        "disposition": "finite stability does not promote actuality",
+        "family": "finite reversible metastable code",
+        "honesty": "RULED OUT BY PRIOR",
+        "mechanism": "one-error majority invariant",
+        "object": "triple-repetition isometry",
+        "terminal": "robustness plus actuality"
+      },
+      {
+        "authority": {
+          "line": 97,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_SYMMETRY_NEUTRAL_ORDER_PARAMETER_ACTUALIZER_TOURNAMENT_CYCLE674_NOTE_2026-07-23.md",
+          "ref": "884bcc67fa7baa38b750a1ddbcf094a16b666bce"
+        },
+        "disposition": "wall alternatives remain coherent",
+        "family": "relational domain wall",
+        "honesty": "RULED OUT BY PRIOR",
+        "mechanism": "relative wall propagation",
+        "object": "six-ray finite wall history",
+        "terminal": "one nonrelative center"
+      },
+      {
+        "authority": {
+          "line": 24,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_OBJECTIVE_STOCHASTIC_OPEN_DILATION_CYCLE662_NOTE_2026-07-23.md",
+          "ref": "884bcc67fa7baa38b750a1ddbcf094a16b666bce"
+        },
+        "disposition": "objective value belongs to supplied stochastic law",
+        "family": "hybrid objective stochastic field",
+        "honesty": "RULED OUT BY PRIOR",
+        "mechanism": "law-owned sigma update",
+        "object": "quantum-classical instrument",
+        "terminal": "derive selection law"
+      },
+      {
+        "authority": {
+          "line": 125,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_SYMMETRY_NEUTRAL_ORDER_PARAMETER_ACTUALIZER_TOURNAMENT_CYCLE674_NOTE_2026-07-23.md",
+          "ref": "884bcc67fa7baa38b750a1ddbcf094a16b666bce"
+        },
+        "disposition": "selector is an added actuality input",
+        "family": "ontic selector extension",
+        "honesty": "RULED OUT BY PRIOR",
+        "mechanism": "selector-controlled token",
+        "object": "enlarged classical-quantum domain",
+        "terminal": "native-domain token"
+      },
+      {
+        "authority": {
+          "line": 24,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_OBJECTIVE_STOCHASTIC_OPEN_DILATION_CYCLE662_NOTE_2026-07-23.md",
+          "ref": "884bcc67fa7baa38b750a1ddbcf094a16b666bce"
+        },
+        "disposition": "a concrete covariant law and exact exhaust theorem have not been constructed",
+        "family": "autonomous nonlinear extremal-sector law",
+        "honesty": "OPEN_NOT_COUNTED",
+        "mechanism": "intrinsic extremalization with coherent exhaust",
+        "object": "nonlinear state flow on central decomposition",
+        "terminal": "one objective summand without seed/sampler"
+      }
+    ],
+    "N2_collapsed_walls": [
+      "objective_selection_of_one_central_summand"
+    ],
+    "N2_directed_pairs": [],
+    "N2_downstream_nonterminal_open_conditions": [
+      "framework_Record",
+      "Born_empirical_law",
+      "physical_time_rate"
+    ],
+    "N3_hidden_phrase_hits": [],
+    "N4_residual_matches": [
+      {
+        "current": "one selected thermodynamic summand",
+        "match": true,
+        "prior": "native coherent token not met",
+        "witness": {
+          "line": 125,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_SYMMETRY_NEUTRAL_ORDER_PARAMETER_ACTUALIZER_TOURNAMENT_CYCLE674_NOTE_2026-07-23.md",
+          "ref": "884bcc67fa7baa38b750a1ddbcf094a16b666bce"
+        }
+      },
+      {
+        "current": "local diagonal is not promoted",
+        "match": true,
+        "prior": "diagonal is not one realized member",
+        "witness": {
+          "line": 96,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_COHERENT_SEED_MEMBER_DILATION_CYCLE536_NOTE_2026-07-21.md",
+          "ref": "884bcc67fa7baa38b750a1ddbcf094a16b666bce"
+        }
+      },
+      {
+        "current": "nonreturn is not promoted",
+        "match": true,
+        "prior": "finite metastability is not irreversible formation",
+        "witness": {
+          "line": 23,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_DISSIPATIVE_METASTABLE_FORMATION_CHANNEL_CYCLE663_NOTE_2026-07-23.md",
+          "ref": "884bcc67fa7baa38b750a1ddbcf094a16b666bce"
+        }
+      },
+      {
+        "current": "no law-owned selection imported",
+        "match": true,
+        "prior": "objective sigma is supplied by stochastic law",
+        "witness": {
+          "line": 24,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_OBJECTIVE_STOCHASTIC_OPEN_DILATION_CYCLE662_NOTE_2026-07-23.md",
+          "ref": "884bcc67fa7baa38b750a1ddbcf094a16b666bce"
+        }
+      }
+    ],
+    "N5_rhetoric": [
+      {
+        "claim": "local diagonality is not objective actuality",
+        "lattice_wide": "finite pure state and infinite central decomposition distinguished",
+        "per_block": "C3/C4/C6/C9",
+        "per_element": "64 sector images",
+        "per_mode": "three coherent fixtures",
+        "per_site": "seven central rails"
+      },
+      {
+        "claim": "carrier nonreturn is not objective actuality",
+        "lattice_wide": "symbolic all-future induction, not selection",
+        "per_block": "four exact cuts",
+        "per_element": "six direction banks",
+        "per_mode": "phase and dual information",
+        "per_site": "strict directed-coordinate edge"
+      },
+      {
+        "claim": "sector disjointness is not one selected sector",
+        "lattice_wide": "conditional GNS central decomposition",
+        "per_block": "C3/C4/C6/C9 tail averages",
+        "per_element": "21 phase pairs",
+        "per_mode": "seven tail projectors",
+        "per_site": "orthogonal one-hot wake"
+      }
+    ],
+    "N6_partial_closure_paths": [
+      {
+        "closes": "translation-invariant export, exact finite restrictions, conditional disjoint phase sectors",
+        "path": "Cycle676 moving front",
+        "status": "EXECUTED_PARTIAL"
+      },
+      {
+        "closes": "finite stable basis center",
+        "path": "Cycle674 deterministic latch",
+        "status": "EXECUTED_PRIOR"
+      },
+      {
+        "closes": "finite one-error stability",
+        "path": "Cycle674 repetition",
+        "status": "EXECUTED_PRIOR"
+      },
+      {
+        "closes": "objective event conditional on supplied law",
+        "path": "Cycle662 stochastic law",
+        "status": "EXECUTED_PRIOR"
+      },
+      {
+        "closes": "candidate objective selection if explicitly constructed",
+        "path": "nonlinear extremal-sector law",
+        "status": "OPEN"
+      }
+    ],
+    "N6_primitive_registry_claim_made": false,
+    "N7_steelman": "A hostile reviewer should construct a proper-cubic, translation-invariant nonlinear or genuinely open local law whose central-decomposition weights evolve toward one extremal phase in each physical state while a reversible outgoing channel retains every Cycle661 amplitude and phase. The law must define objective central projections without a boundary phase, seed, sampler or hidden selector and must still attach to Cycle669. Cycle662 shows that objective selection is mathematically coherent once such a stochastic law is supplied, so the absence of a derived law here makes a broad impossibility claim premature.",
+    "N7_supporting_authority": {
+      "line": 24,
+      "path": "docs/work_history/repo/review_feedback/PHYSICAL_OBJECTIVE_STOCHASTIC_OPEN_DILATION_CYCLE662_NOTE_2026-07-23.md",
+      "ref": "884bcc67fa7baa38b750a1ddbcf094a16b666bce"
+    },
+    "N8_cross_cycle_echo": [
+      {
+        "cycle": 536,
+        "remaining": "one realized value",
+        "retired": "coherent seed diagonal"
+      },
+      {
+        "cycle": 662,
+        "remaining": "derive the law",
+        "retired": "objective token under supplied sigma law"
+      },
+      {
+        "cycle": 663,
+        "remaining": "objective sector ownership",
+        "retired": "finite reduced metastability"
+      },
+      {
+        "cycle": 671,
+        "remaining": "native-domain selection",
+        "retired": "conditional selector interface"
+      },
+      {
+        "cycle": 674,
+        "remaining": "thermodynamic selection",
+        "retired": "finite neutral latches/walls"
+      },
+      {
+        "cycle": 676,
+        "remaining": "one selected summand",
+        "retired": "conditional disjoint thermodynamic sectors"
+      }
+    ],
+    "axiom_pressure": false,
+    "broad_no_go_claim": false,
+    "checklist_complete": true,
+    "demotion": "partial-attempt-with-named-untested-route",
+    "discipline_compliance_pass": true,
+    "minimum_content_claim": false,
+    "negative_claim_gate_status": "FAIL_DO_NOT_SHIP_NEGATIVE",
+    "negative_gate_failure_reason": "N7 autonomous nonlinear/open extremal-sector law remains untested",
+    "shared_route_independent_obstruction": false,
+    "skill_freshness": {
+      "dirty_worktree_moved": false,
+      "origin_main_advanced": true,
+      "origin_main_checked": true,
+      "remote_skill_followed": true
+    }
+  },
+  "note_contract": {
+    "missing": [],
+    "pass": true,
+    "required": [
+      "authority: **none**",
+      "audit: **unset**",
+      "fresh no-go-discipline gate before disposition",
+      "not a no-go",
+      "not met, not falsified",
+      "shared route-independent obstruction: **not established**",
+      "axiom pressure: **none**",
+      "tracing carriers gives a diagonal center. that trace is not one realized member",
+      "superselection removes local interference between sectors; it does not select one sector",
+      "nonreturn is a causal fact about this conveyor, not a branch-selection rule",
+      "not physical time or rates",
+      "no generator element is called a rate"
+    ]
+  },
+  "note_sha256": "f961424146b348aa765d655da41261fb5c12670077c9baed05c217879c1102da",
+  "optimal_next_campaign": "autonomous nonlinear/open extremal-sector selection law with exact coherent exhaust",
+  "pass": true,
+  "runner_sha256": "4a0757146b65a1d027c30827a684b55d239e199f282267eaa10f25e15899b2f3",
+  "shared_route_independent_obstruction": false,
+  "state_type_disposition": {
+    "finite_global": "globally coherent pure/direct-sum state",
+    "finite_local_center": "rank-up-to-seven diagonal reduced state, not objective",
+    "infinite_conditional": "non-extremal central decomposition over disjoint sectors, not selected",
+    "objective_realized": "not derived"
+  },
+  "status": "moving-carrier phase field and conditional disjoint sectors; objective token not met",
+  "strict_full_framework_terminal_met": false,
+  "strongest_constructive_result": "a 187-M2-per-cell translation-invariant directed phase conveyor with exact source reset, complete six-ray dual coherent exhaust, all-future finite-restriction theorem and conditional seven-sector GNS disjointness",
+  "supplied_structure_inventory": {
+    "derived": [
+      "seed-free event-dependent phase launch",
+      "exact reset of the 84-M2 local source",
+      "six-ray dual encoding of all 64 sectors",
+      "persistent increasing phase wake",
+      "exact C3/C4/C6/C9 finite restrictions",
+      "strict lightcone/nonreturn induction",
+      "conditional seven-sector disjointness theorem",
+      "branchwise Cycle669 interface"
+    ],
+    "open": [
+      "one objective realized central summand",
+      "collision-resolved full-density 3D phase front",
+      "autonomous nonlinear/open selection law",
+      "framework Record",
+      "Born/empirical-frequency law",
+      "physical time/rate",
+      "physical energy/generator",
+      "source/gravity"
+    ],
+    "supplied": [
+      "Cycle661 coherent source/QCA",
+      "initially blank phase/head registers at every modeled cell",
+      "translation-invariant direction-bank shift law",
+      "finite cut geometry",
+      "finite first-crossing boundary exhaust only for restriction models",
+      "Cycle669 root/next seeds",
+      "compile-time proper-cubic frame chart",
+      "for the conditional limit: infinite blank tensor product and GNS representation"
+    ]
+  },
+  "target_contract_candidate_terminal_met": false,
+  "tests_failed": 0,
+  "tests_passed": 9,
+  "thermodynamic_sector_controls": {
+    "central_sequence_bound_strictly_decreases": true,
+    "conditional_theorem": "given the infinite blank phase-register tensor product and the t->infinity local weak limit, the ray-average projectors form a central sequence with scalar limit delta[e,f]; hence the seven infinite product phase states have pairwise disjoint quasi-local/GNS sectors",
+    "cut_rows": {
+      "C3": {
+        "central_sequence_commutator_bound_for_K1": 0.1111111111111111,
+        "distinct_phase_pair_tests": 21,
+        "maximum_distinct_product_overlap": 0.0,
+        "ordered_tail_registers": 18,
+        "phase_projector_expectation": "omega_e(M_f^L)=delta[e,f], variance=0",
+        "split": "train",
+        "tail_length_per_ray": 3
+      },
+      "C4": {
+        "central_sequence_commutator_bound_for_K1": 0.08333333333333333,
+        "distinct_phase_pair_tests": 21,
+        "maximum_distinct_product_overlap": 0.0,
+        "ordered_tail_registers": 24,
+        "phase_projector_expectation": "omega_e(M_f^L)=delta[e,f], variance=0",
+        "split": "held_blinded",
+        "tail_length_per_ray": 4
+      },
+      "C6": {
+        "central_sequence_commutator_bound_for_K1": 0.05555555555555555,
+        "distinct_phase_pair_tests": 21,
+        "maximum_distinct_product_overlap": 0.0,
+        "ordered_tail_registers": 36,
+        "phase_projector_expectation": "omega_e(M_f^L)=delta[e,f], variance=0",
+        "split": "held_blinded_nonproduct",
+        "tail_length_per_ray": 6
+      },
+      "C9": {
+        "central_sequence_commutator_bound_for_K1": 0.037037037037037035,
+        "distinct_phase_pair_tests": 21,
+        "maximum_distinct_product_overlap": 0.0,
+        "ordered_tail_registers": 54,
+        "phase_projector_expectation": "omega_e(M_f^L)=delta[e,f], variance=0",
+        "split": "held_larger_cut",
+        "tail_length_per_ray": 9
+      }
+    },
+    "exact_added_supply": [
+      "an infinite tensor product of initially blank phase/head registers",
+      "the quasi-local observable algebra and its local-weak t->infinity limit",
+      "the GNS/central-sequence criterion used to name disjoint representations"
+    ],
+    "finite_overlap_failures": 0,
+    "finite_time_state": "one globally coherent pure/direct-sum state",
+    "infinite_limit_state": "a non-extremal algebraic mixture/central decomposition over disjoint phase sectors",
+    "not_supplied": [
+      "boundary phase",
+      "phase seed",
+      "selector",
+      "sampler",
+      "random draw",
+      "actuality token"
+    ],
+    "objective_realization": "not derived; disjointness does not select one central summand",
+    "pass": true,
+    "tail_expectation_failures": 0,
+    "tracing_or_nonreturn_called_actuality": false
+  }
+}

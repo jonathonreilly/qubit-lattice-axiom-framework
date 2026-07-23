@@ -1,0 +1,36 @@
+PASS Cycle676 target, C3/C4/C6/C9 cuts and exact shores were frozen before evidence :: {'target': '4e312e45972b2ed4ab94fc1592a4ea5ffc3cb510fb08f0ec7d27bff10b252b45', 'prereg': '0a8688d2f23b19888ef90fa3f79401156a28f8c0a73424240d67dbc196935750', 'pins': 12}
+PASS fresh N1-N8 blocks a broad objective-selection impossibility claim :: {'families': 6, 'negative_gate': 'FAIL_DO_NOT_SHIP_NEGATIVE'}
+PASS seed-free local injection resets the source and exports every Cycle661 basis sector reversibly :: {'deletions': 74, 'all24': 1536, 'selector': 0}
+PASS C3/C4/C6 and held C9 satisfy exact moving-front, finite-restriction and nonreturn theorems :: {'cuts': ['C3', 'C4', 'C6', 'C9'], 'deletions': 96, 'return': 'infinity'}
+PASS moving heads, wakes, dual exhaust and central labels pass all24/all576 :: {'all24': 24576, 'all576': 147456}
+PASS arbitrary Cycle661 amplitudes/phases are retained globally while the local center is only diagonal :: {'fixtures': ['uniform64', 'phase_ramp64', 'held_sparse_complex'], 'objective': False}
+PASS the infinite-volume theorem gives conditional disjoint sectors but not a selected sector :: {'phase_labels': 7, 'held_larger': 'C9', 'objective': False}
+PASS every finite-cut basis center and dual exhaust attaches to Cycle669 exactly :: {'rows': 256, 'coherent_token': False}
+PASS Cycle676 note preserves finite/diagonal/superselection/objective and semantic type gates :: ()
+{
+  "pass": true,
+  "tests_passed": 9,
+  "tests_failed": 0,
+  "elapsed_seconds": 85.28687433293089,
+  "maximum_RSS_bytes": 91226112,
+  "note": "/private/tmp/toe-science.BB0KQV/docs/work_history/repo/review_feedback/PHYSICAL_MOVING_CARRIER_PHASE_FIELD_FINITE_RESTRICTION_CYCLE676_NOTE_2026-07-23.md",
+  "receipt": "/private/tmp/toe-science.BB0KQV/outputs/physical_moving_carrier_phase_field_finite_restriction_cycle676_receipt_2026_07_23.json"
+}
+       86.54 real        85.77 user         0.51 sys
+            91226112  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              125816  page reclaims
+                1109  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 892  voluntary context switches
+               25505  involuntary context switches
+       1522852559532  instructions retired
+        314173405283  cycles elapsed
+            72155664  peak memory footprint

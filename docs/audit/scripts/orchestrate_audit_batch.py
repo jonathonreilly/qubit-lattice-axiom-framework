@@ -92,6 +92,7 @@ CAMPAIGN_EXCLUSION_REASONS = {
 }
 SELECTION_SKIP_REASONS = {
     "missing_ledger_row",
+    "effective_status_not_actionable",
     "audit_status_not_unaudited",
     "forensic_no_go",
     "non_batch_claim_type",
@@ -440,6 +441,10 @@ def compute_targets(
             continue
         status = row.get("effective_status")
         if status in RETAINED or str(status or "").startswith("decoration_under_"):
+            skipped.append(
+                f"{cid}: effective_status={status} - already retained-grade "
+                "or governed"
+            )
             continue
         audit_status = row.get("audit_status") or "unaudited"
         cross_status = (row.get("cross_confirmation") or {}).get("status")
@@ -2051,21 +2056,39 @@ def selection_skip_reason(detail: str) -> str:
     """Map the canonical selector diagnostic to a stable repair route."""
     if detail == "missing ledger row":
         return "missing_ledger_row"
-    if detail.startswith("audit_status="):
+    if re.fullmatch(
+        r"effective_status=(?:retained|retained_bounded|retained_no_go|meta|"
+        r"decoration_under_[A-Za-z0-9][A-Za-z0-9_.-]*) - "
+        r"already retained-grade or governed",
+        detail,
+    ):
+        return "effective_status_not_actionable"
+    if re.fullmatch(
+        r"audit_status=(?:audit_in_progress|audited_clean|audited_renaming|"
+        r"audited_conditional|audited_decoration|audited_failed|"
+        r"audited_numerical_match)",
+        detail,
+    ):
         return "audit_status_not_unaudited"
     if detail == "no_go row - forensic tier, run individually":
         return "forensic_no_go"
-    if detail.startswith("claim_type=") and detail.endswith(
-        " - not batch-auditable"
+    if re.fullmatch(
+        r"claim_type=(?:decoration|meta|None) - not batch-auditable",
+        detail,
     ):
         return "non_batch_claim_type"
     if detail == "source shape requires forensic tier":
         return "forensic_source_shape"
     if detail == "dependencies are not retained-grade":
         return "dependencies_not_retained"
-    if detail.startswith("ledger note_hash lags the note file;"):
+    if detail == (
+        "ledger note_hash lags the note file; run seed_audit_ledger.py + "
+        "pipeline and commit before auditing"
+    ):
         return "note_hash_drift"
-    if detail.startswith("awaiting repair (sources and deps unchanged"):
+    if detail == (
+        "awaiting repair (sources and deps unchanged since audited_conditional)"
+    ):
         return "awaiting_science_repair"
     return "unclassified_selector_skip"
 

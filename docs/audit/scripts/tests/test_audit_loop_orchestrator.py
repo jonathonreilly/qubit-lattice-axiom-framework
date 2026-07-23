@@ -865,6 +865,8 @@ class SchemaRecoveryTest(unittest.TestCase):
     def test_selector_skips_persist_typed_routes_without_quarantining(self):
         skipped = [
             "missing: missing ledger row",
+            "retained: effective_status=retained - already retained-grade or "
+            "governed",
             "conditional: awaiting repair (sources and deps unchanged since "
             "audited_conditional)",
             "blocked: dependencies are not retained-grade",
@@ -876,17 +878,78 @@ class SchemaRecoveryTest(unittest.TestCase):
             batch.persist_campaign_selection_skips(path, skipped)
             records = batch.load_campaign_selection_skip_records(path)
 
-        self.assertEqual(len(records), 4)
+        self.assertEqual(len(records), 5)
         self.assertEqual(
             {record["reason"] for record in records},
             {
                 "missing_ledger_row",
+                "effective_status_not_actionable",
                 "awaiting_science_repair",
                 "dependencies_not_retained",
                 "forensic_source_shape",
             },
         )
         self.assertTrue(all(record.get("detail") for record in records))
+
+    def test_every_compute_target_skip_branch_has_a_typed_record(self):
+        common = {
+            "audit_status": "unaudited",
+            "effective_status": "unaudited",
+            "claim_type": "bounded_theorem",
+            "deps": [],
+        }
+        rows = {
+            "retained": {
+                **common,
+                "claim_id": "retained",
+                "effective_status": "retained",
+            },
+            "status": {
+                **common,
+                "claim_id": "status",
+                "audit_status": "audited_clean",
+            },
+            "nogo": {**common, "claim_id": "nogo", "claim_type": "no_go"},
+            "nonbatch": {
+                **common,
+                "claim_id": "nonbatch",
+                "claim_type": "decoration",
+            },
+            "forensic": {**common, "claim_id": "forensic"},
+            "deps": {**common, "claim_id": "deps"},
+            "drift": {**common, "claim_id": "drift"},
+            "awaiting": {**common, "claim_id": "awaiting"},
+            "target": {**common, "claim_id": "target"},
+        }
+        scope = {"missing", *rows}
+
+        with mock.patch.object(
+            batch,
+            "source_requires_forensic",
+            side_effect=lambda row: row["claim_id"] == "forensic",
+        ), mock.patch.object(
+            batch,
+            "dep_ready",
+            side_effect=lambda row, _effective: row["claim_id"] != "deps",
+        ), mock.patch.object(
+            batch,
+            "note_hash_drifted",
+            side_effect=lambda row: row["claim_id"] == "drift",
+        ), mock.patch.object(
+            batch,
+            "awaiting_repair_since_conditional",
+            side_effect=lambda row, _effective, _rows: (
+                row["claim_id"] == "awaiting"
+            ),
+        ):
+            targets, skipped = batch.compute_targets(scope, rows)
+
+        records = [batch.selector_skip_record(line) for line in skipped]
+        self.assertEqual([row["claim_id"] for row in targets], ["target"])
+        self.assertEqual(
+            {record["reason"] for record in records},
+            batch.SELECTION_SKIP_REASONS - {"unclassified_selector_skip"},
+        )
 
     def test_selector_skip_loader_rejects_reason_detail_mismatch(self):
         with tempfile.TemporaryDirectory() as tmp:

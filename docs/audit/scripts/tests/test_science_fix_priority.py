@@ -4,8 +4,10 @@ from __future__ import annotations
 import json
 import sys
 import tempfile
+import types
 import unittest
 from pathlib import Path
+from unittest import mock
 
 REPO_ROOT = Path(__file__).resolve().parents[4]
 sys.path.insert(0, str(REPO_ROOT / "scripts"))
@@ -206,6 +208,207 @@ class AuditHandoffTest(unittest.TestCase):
                         self._write(payload),
                         ledger_loader=lambda claim_id: self._ledger_row(),
                     )
+
+
+class CampaignRepairIntakeTest(unittest.TestCase):
+    def _campaign(self, records):
+        directory = tempfile.TemporaryDirectory()
+        self.addCleanup(directory.cleanup)
+        path = Path(directory.name)
+        (path / "campaign-row-exclusions.jsonl").write_text(
+            "".join(json.dumps(row) + "\n" for row in records),
+            encoding="utf-8",
+        )
+        return path
+
+    @staticmethod
+    def _repair_module():
+        module = types.SimpleNamespace()
+
+        def load_exclusions(path):
+            return [
+                json.loads(line)
+                for line in path.read_text(encoding="utf-8").splitlines()
+                if line.strip()
+            ]
+
+        def build_plan(records, rows):
+            plans = []
+            for record in records:
+                cid = record["claim_id"]
+                if cid not in rows:
+                    route = "repair_ledger_registration"
+                elif record["reason"] == "blocked_row_reentry_quarantined":
+                    route = (
+                        "already_moved_out_of_reentry"
+                        if rows[cid].get("audit_status") != "unaudited"
+                        else "repair_invalidation_cause"
+                    )
+                else:
+                    route = {
+                        "schema_invalid_quarantined": "fresh_schema_valid_seat",
+                        "compute_required_quarantined": "supply_compute_artifact",
+                        "claim_transaction_quarantined": "repair_claim_transaction",
+                    }.get(record["reason"], "manual_operational_triage")
+                plans.append(
+                    {
+                        "claim_id": cid,
+                        "route": route,
+                        "action": f"repair through {route}",
+                    }
+                )
+            return plans
+
+        module.load_exclusions = load_exclusions
+        module.build_plan = build_plan
+        return module
+
+    def test_campaign_intake_routes_without_scientific_authority(self):
+        campaign = self._campaign(
+            [
+                {
+                    "claim_id": "schema",
+                    "reason": "schema_invalid_quarantined",
+                    "failures": [{"result": "validation_failed"}],
+                    "recorded_at": "ignored",
+                },
+                {
+                    "claim_id": "compute",
+                    "reason": "compute_required_quarantined",
+                    "failures": [{"result": "compute_required"}],
+                },
+                {
+                    "claim_id": "transaction",
+                    "reason": "claim_transaction_quarantined",
+                },
+                {
+                    "claim_id": "settled",
+                    "reason": "blocked_row_reentry_quarantined",
+                },
+            ]
+        )
+        rows = {
+            "schema": {"claim_id": "schema", "audit_status": "unaudited"},
+            "compute": {
+                "claim_id": "compute",
+                "audit_status": "unaudited",
+                "runner_path": "scripts/runner.py",
+            },
+            "transaction": {
+                "claim_id": "transaction",
+                "audit_status": "unaudited",
+            },
+            "settled": {
+                "claim_id": "settled",
+                "audit_status": "audited_clean",
+            },
+        }
+
+        with mock.patch.dict(
+            sys.modules,
+            {"audit_campaign_repair": self._repair_module()},
+        ):
+            candidates = sfl.parse_campaign_workdir(
+                campaign, ledger_loader=lambda cid: rows[cid]
+            )
+
+        by_claim = {row["claim_id"]: row for row in candidates}
+        self.assertEqual(
+            by_claim["schema"]["category"], "campaign_schema_transport"
+        )
+        self.assertEqual(
+            by_claim["compute"]["category"], "campaign_compute_artifact"
+        )
+        self.assertEqual(by_claim["compute"]["worker_mode"], "science")
+        self.assertEqual(by_claim["transaction"]["worker_mode"], "operational")
+        self.assertNotIn("settled", by_claim)
+        self.assertIn("carries no scientific", by_claim["schema"]["prompt_body"])
+        self.assertTrue(by_claim["schema"]["state_key"].startswith("campaign:"))
+
+    def test_missing_ledger_row_gets_registration_route(self):
+        campaign = self._campaign(
+            [{"claim_id": "missing", "reason": "unknown_quarantine"}]
+        )
+
+        def absent(_claim_id):
+            raise ValueError(
+                "audit claim 'missing' is absent from the origin/main ledger"
+            )
+
+        with mock.patch.dict(
+            sys.modules,
+            {"audit_campaign_repair": self._repair_module()},
+        ):
+            candidates = sfl.parse_campaign_workdir(
+                campaign, ledger_loader=absent
+            )
+
+        self.assertEqual(
+            candidates[0]["category"], "campaign_ledger_registration"
+        )
+        self.assertEqual(candidates[0]["worker_mode"], "operational")
+
+    def test_fingerprint_ignores_timestamp_but_tracks_failure(self):
+        base = {
+            "claim_id": "row",
+            "reason": "schema_invalid_quarantined",
+            "failures": [{"detail": "bad schema"}],
+        }
+        first = sfl.campaign_record_fingerprint(
+            {**base, "recorded_at": "one"}, {"note_path": "docs/X.md"}
+        )
+        second = sfl.campaign_record_fingerprint(
+            {**base, "recorded_at": "two"}, {"note_path": "docs/X.md"}
+        )
+        changed = sfl.campaign_record_fingerprint(
+            {**base, "failures": [{"detail": "different"}]},
+            {"note_path": "docs/X.md"},
+        )
+        self.assertEqual(first, second)
+        self.assertNotEqual(first, changed)
+
+
+class CandidateReservationTest(unittest.TestCase):
+    def test_campaign_incident_does_not_collide_with_claim_attempt(self):
+        directory = tempfile.TemporaryDirectory()
+        self.addCleanup(directory.cleanup)
+        state_path = Path(directory.name) / "state.json"
+        science = _row("claim_x", "failed")
+        campaign = {
+            **_row("claim_x", "campaign_claim_transaction"),
+            "state_key": "campaign:claim_x:transaction:fingerprint",
+        }
+        with mock.patch.object(sfl, "STATE_FILE", state_path):
+            first = sfl.claim_targets([science], 1, False, "science-worker")
+            second = sfl.claim_targets([campaign], 1, False, "ops-worker")
+
+        self.assertEqual(len(first), 1)
+        self.assertEqual(len(second), 1)
+        state = json.loads(state_path.read_text(encoding="utf-8"))
+        self.assertIn("claim_x", state["attempts"])
+        self.assertIn(campaign["state_key"], state["attempts"])
+
+
+class OperationalAuthorityBoundaryTest(unittest.TestCase):
+    def test_operational_incident_cannot_edit_claim_notes(self):
+        changed = {
+            "docs/CLAIM_NOTE.md",
+            "docs/audit/scripts/orchestrate_audit_batch.py",
+            "docs/ai_methodology/skills/science-fix-loop/SKILL.md",
+        }
+        self.assertEqual(
+            sfl.forbidden_operational_science_paths(
+                changed, "docs/CLAIM_NOTE.md"
+            ),
+            ["docs/CLAIM_NOTE.md"],
+        )
+
+    def test_exact_target_is_blocked_even_under_infrastructure_prefix(self):
+        target = "docs/audit/SPECIAL_ROW_NOTE.md"
+        self.assertEqual(
+            sfl.forbidden_operational_science_paths({target}, target),
+            [target],
+        )
 
 
 

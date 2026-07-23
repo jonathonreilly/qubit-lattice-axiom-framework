@@ -1,0 +1,25 @@
+PASS 01 port_grammar_anchor :: generalized emitter == c625_b_expected on 64/64 words, edge==admit
+PASS 02 family_census_c625_crosscheck/truth_rows :: accepted truth rows {'unique_quorum': 6, 'odd_shells': 32, 'nonempty': 63, 'low_density': 21, 'even_nonzero': 31}
+PASS 02 family_census_c625_crosscheck/train_accepts :: train accepts {'unique_quorum': 6, 'odd_shells': 26, 'nonempty': 41, 'low_density': 21, 'even_nonzero': 15}
+PASS 02 family_census_c625_crosscheck/held_accepts :: held accepts {'unique_quorum': 0, 'odd_shells': 6, 'nonempty': 22, 'low_density': 0, 'even_nonzero': 16}
+PASS 02 family_census_c625_crosscheck/covariance :: 7680 comparisons, 0 covariance failures
+PASS 02 family_census_c625_crosscheck/nonconstant :: both outputs occur per law
+PASS 02 family_census_c625_crosscheck/digest :: candidate_relation_digest c724243216bffdd804d69106872486ee92efd71adfb23b0d1f5821778ed14b34
+PASS 03 separator_catalog/pairwise :: 10 pairwise separator rows match pins
+PASS 03 separator_catalog/orbits :: 10 orbits, sizes sum to 64
+PASS 03 separator_catalog/min_separating_sets :: min size 3, 6 sets, restricted profiles distinct
+PASS 04 worker_grid_agreement :: worker grid agrees on all fields
+PASS 05 blinded_full_identification :: 5/5 in-family FULL streams identified blind with complete witnesses
+PASS 06 train_prefix_held_no_refit/train :: 5/5 train streams identified
+PASS 06 train_prefix_held_no_refit/held_no_refit :: 5/5 extensions identical to train verdict (zero retractions)
+PASS 07 coverage_starved_refusal/starved_uq :: starved_uq -> ambiguous, consistent=['low_density', 'nonempty', 'odd_shells', 'unique_quorum'], completing=[[2, 3], [2, 5]]
+PASS 07 coverage_starved_refusal/starved_even :: starved_even -> identified:even_nonzero
+PASS 08 off_family_covariant_imposter :: antipodal -> off_family (covariance scan passed); same-shell witness pair [(0, 0, 0, 0, 1, 1), (0, 0, 0, 1, 0, 1)]
+PASS 09 non_covariant_imposter :: axis -> refuse_covariance, witness=[(0, 0, 0, 0, 0, 1), (1, 0, 0, 0, 0, 0)] (same orbit, occ differs)
+PASS 10 non_deterministic_imposter :: noisy -> refuse_contradiction, repeated word=(0, 0, 0, 0, 0, 1)
+PASS 11 held_corpus_retraction/train :: mimic train -> identified:odd_shells (train-consistent)
+PASS 11 held_corpus_retraction/full_retract :: mimic full -> off_family, held witness (0, 1, 1, 1, 1, 1) (weight 5)
+PASS 12 malformed_port_refusals :: 8/8 malformed streams refused with the expected reason
+PASS 13 verdict_frame_invariance :: 2/2 streams frame-invariant across all 24 frames
+PASS 14 decoder_blindness_discipline :: signature=['stream', 'tables', 'frames'], forbidden-tokens-present=[]
+RESULT 24 0 OK /private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes/32362ff7-5014-4081-b545-c0309d006d52/scratchpad/wt-c677/outputs/physical_record_born_admission_law_discriminator_tournament_receipt_2026_07_23.json

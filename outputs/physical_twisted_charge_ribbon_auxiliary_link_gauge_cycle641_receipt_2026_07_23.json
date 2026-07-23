@@ -103,10 +103,10 @@
     ]
   },
   "constitutional_effect": "none",
-  "elapsed_seconds": 11.644498834037222,
+  "elapsed_seconds": 11.674851999967359,
   "full_periodic_physical_compiler_closed": false,
   "global_prefix_or_runtime_parity_service": false,
-  "maximum_RSS_bytes": 227311616,
+  "maximum_RSS_bytes": 223576064,
   "no_go_discipline": {
     "N1_broad_negative_gate": "WITHHELD_BECAUSE_FEWER_THAN_FIVE_QUALIFYING_ATTEMPTS_AND_OPEN_ROUTES_REMAIN",
     "N1_normalized_families": [
@@ -326,7 +326,7 @@
         "lattice_wide": "withheld",
         "per_block": "contractible only",
         "per_element": "exact",
-        "per_mode": "four-mode even code",
+        "per_mode": "four-mode even-parity sector",
         "per_site": "four M2"
       },
       {
@@ -490,7 +490,7 @@
       "## Scope firewall"
     ]
   },
-  "note_sha256": "506dc7947aeb9ebd1c3c03ecad2f845931be35b9147ec1c1e08eb4883e70a705",
+  "note_sha256": "098c7a9f76f383b54c5c9b2c328c2017bac38f2e75900ed9d9f4b406473340a6",
   "optimal_next_campaign": "bounded spin-sector genesis tournament: punctured/boundary inflow versus dissipative or measurement-reset Wilson preparation versus a non-JW auxiliary-Clifford link code; require one fixed periodic E/G and then factor the support-13 matter polynomials into elementary one/two-M2 gates",
   "overlapping_pull_through_tensor_route": {
     "bounded_tensor_contraction_or_dissipative_sector_genesis_supplied": false,
@@ -726,7 +726,7 @@
     "charge_bound_flux_ribbon": "EXACT_ON_ONE_CONTRACTIBLE_PLAQUETTE__CONDITIONAL_PERIODIC_EXTENSION",
     "overlapping_pull_through_tensor": "ATTEMPTED_LOCAL_PULL_THROUGH__PERIODIC_PREPARATION_OPEN"
   },
-  "runner_sha256": "17b8c95c8cc6e2b04723c97c394722a2aeb4a1f5fe45259dc28181ec7927292b",
+  "runner_sha256": "62548bf328c459f44232633ba24902e33b8fd768dc9871961814df5e4c4735f6",
   "same_code_one_plaquette_E_G_closed": true,
   "scope_firewall": {
     "charge_ribbon_and_overlap_tensor_are_independent_failures": false,
@@ -762,7 +762,7 @@
   "six_wall_ledger": {
     "C_int": "one edge, exchange square, onsite Givens/contact, Cycle219 mass and Cycle230 logical seam comparators pass on their declared code surfaces; no full rough-code seam matrix is enumerated here",
     "C_local": "advanced: the Cycle639 square residual is removed locally with constant overhead and no prefix; unconditional periodic E/preparation is not closed",
-    "C_num": "four-mode even CAR has a literal 16x8 four-M2 code; the Cycle583 onsite A2 payload remains preserved conditionally through Cycle532",
+    "C_num": "the four-mode even-parity sector has a literal 16x8 four-M2 code; the Cycle583 onsite A2 payload remains preserved conditionally through Cycle532",
     "C_ref": "local square orientation, Q=+1 flux and gauge vacuum are explicit supplies; periodic Wilson-sector genesis remains open",
     "C_source": "unchanged; no physical energy/source/stress/gravity or autonomous resource genesis is derived",
     "C_wrap": "contractible alternate paths close exactly; periodic L3/L6/L7 retains three growing Wilson initializers and no tick/Record claim"

@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Cycle641: twisted charge-ribbon / auxiliary-link-gauge discriminator.
 
-The primary constructive object is one four-edge square carrying the even CAR
-algebra of four matter modes.  A local loop constraint binds the fermionic
+The primary constructive object is one four-edge square carrying the
+even-parity sector of four matter modes.  A local loop constraint binds the fermionic
 exchange sign to a contractible flux.  The same fixed encoding is tested for a
 one-edge FSWAP and for both two-layer paths exchanging opposite carriers.
 
@@ -675,7 +675,7 @@ def no_go_discipline(primary: dict, periodic: dict, auxiliary: dict, tensor: dic
     ]
     rhetoric_rows = [
         {"claim": "one edge and square are exact", "per_element": "exact", "per_site": "four M2",
-         "per_mode": "four-mode even code", "per_block": "contractible only", "lattice_wide": "withheld"},
+         "per_mode": "four-mode even-parity sector", "per_block": "contractible only", "lattice_wide": "withheld"},
         {"claim": "alternate paths close locally", "per_element": "one FSWAP", "per_site": "one square",
          "per_mode": "complete eight-ray even code", "per_block": "two schedules", "lattice_wide": "withheld"},
         {"claim": "periodic extension is conditional", "per_element": "bounded generators", "per_site": "22 M2/cell",
@@ -893,7 +893,7 @@ def main() -> int:
         },
         "six_wall_ledger": {
             "C_ref": "local square orientation, Q=+1 flux and gauge vacuum are explicit supplies; periodic Wilson-sector genesis remains open",
-            "C_num": "four-mode even CAR has a literal 16x8 four-M2 code; the Cycle583 onsite A2 payload remains preserved conditionally through Cycle532",
+            "C_num": "the four-mode even-parity sector has a literal 16x8 four-M2 code; the Cycle583 onsite A2 payload remains preserved conditionally through Cycle532",
             "C_wrap": "contractible alternate paths close exactly; periodic L3/L6/L7 retains three growing Wilson initializers and no tick/Record claim",
             "C_int": "one edge, exchange square, onsite Givens/contact, Cycle219 mass and Cycle230 logical seam comparators pass on their declared code surfaces; no full rough-code seam matrix is enumerated here",
             "C_local": "advanced: the Cycle639 square residual is removed locally with constant overhead and no prefix; unconditional periodic E/preparation is not closed",

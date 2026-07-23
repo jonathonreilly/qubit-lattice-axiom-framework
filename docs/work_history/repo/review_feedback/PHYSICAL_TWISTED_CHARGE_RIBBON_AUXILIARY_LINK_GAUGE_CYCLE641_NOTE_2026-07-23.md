@@ -241,7 +241,7 @@ local loop character.  No zero periodic-preparation residual is claimed.
 
 - Element: one edge and one exchange square are exact.
 - Site: the four-edge block has constant overhead.
-- Mode: the complete even four-mode algebra is represented.
+- Mode: the complete four-mode even-parity sector is exercised.
 - Block: two contractible exchange paths agree.
 - Lattice: the periodic extension is conditional on growing initializers.
 
@@ -326,7 +326,7 @@ Majorana mappings is made.  Thirring is not used by this result.
 | Wall | Cycle-641 disposition |
 |---|---|
 | `C_ref` | Square orientation, `Q=+1`, gauge vacuum, and three periodic Wilson signs are explicit supplies; autonomous periodic reference genesis remains open. |
-| `C_num` | Four-mode even CAR has a literal four-M2 code.  The Cycle-583 A2 payload is preserved through the conditional Cycle-532 matter factor. |
+| `C_num` | The four-mode even-parity sector has a literal four-M2 code.  The Cycle-583 A2 payload is preserved through the conditional Cycle-532 matter factor. |
 | `C_wrap` | Contractible alternate paths close.  Periodic L3/L6/L7 retains three growing Wilson initializers; no tick or Record follows. |
 | `C_int` | Edge/exchange, onsite Givens/contact, Cycle-219 mass, and Cycle-230 logical seam comparators pass on their declared surfaces; no literal full rough-code seam matrix is enumerated. |
 | `C_local` | Advanced: the Cycle-639 square residual is removed with constant overhead and no prefix.  Unconditional periodic `E`/preparation remains open. |

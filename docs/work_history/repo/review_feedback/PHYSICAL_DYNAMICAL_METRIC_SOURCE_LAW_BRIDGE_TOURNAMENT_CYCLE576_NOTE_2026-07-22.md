@@ -5,7 +5,7 @@ Audit: unset
 
 ## Question and boundary
 
-Cycle 576 asks whether the accepted Cycle-572 conserved physical-M2
+Cycle 576 asks whether the exact-pinned Cycle-572 conserved physical-M2
 resource/current and reciprocal curvature response can source a locally
 updated edge, plaquette, or scattering carrier whose linearization matches the
 exact-pinned R3 target algebra, without supplying that target equation as the
@@ -41,12 +41,17 @@ and audit remains unset.
 
 ## Frozen inputs
 
-The runner exact-pins the accepted Cycle-572 receipt, runner, and note; the R3
+The runner exact-pins the committed Cycle-572 receipt, runner, and note; the R3
 target runner and note; the actual 3+1 Regge second-variation runner and note;
 the signed tensor transport runner and note; the bounded weak-field scalar
 response runner and note; the downstream leading cubic-lattice correction
 runner and note; and the Cycle-294 physical-M2 gravity/source synthesis runner
 and note. Every frozen dependency is committed before use.
+
+On this parent branch, the Cycle-572 campaign-only Cycle-563/566/569
+dependencies are absent. Cycle 576 therefore checks the Cycle-572 artifact
+hashes and receipt fields as provenance; it does not freshly re-execute the
+Cycle-572 compiler or elevate those receipt values to audited authority.
 
 The constitutional surfaces were read only. Their relevant negative boundary
 is decisive: the axioms do not supply an action, metric, source law, physical
@@ -58,10 +63,12 @@ pointwise and supplies neither the update nor a probability law.
 
 ## Common physical-M2 interface
 
-The new carriers are appended to the accepted Cycle-572 matter interface. On
+The new carriers are appended to the exact-pinned Cycle-572 matter interface. On
 the declared code spaces the embeddings identify abstract one-excitation
-labels with intrinsic hard-core M2 rails. The new local laws act on those rails
-and therefore satisfy the declared intertwining equations:
+labels with intrinsic hard-core M2 rails. This identification makes the
+following intertwining equations definitional on those one-excitation rails;
+Cycle 576 does not independently materialize or recompute the full Cycle-572
+physical compiler:
 
 ```text
 E Gcoarse = Gphysical E
@@ -73,7 +80,7 @@ or, at the Route-A generator level,
 E Hcoarse = Hphysical E.
 ```
 
-The Cycle-572 physical receipt is retained without change:
+The exact-pinned Cycle-572 receipt values are carried without change:
 
 - `EG = Gphysical E` residual: `0`;
 - one-particle mass residual: `8.716e-16`;
@@ -84,7 +91,7 @@ The Cycle-572 physical receipt is retained without change:
 
 The actual Cycle-230 contact and seam blocks are receipts, not reimplemented
 surrogates. The inherited reservoir/branch sink and inverse controls remain
-part of that accepted interface. No global parity string, Jordan–Wigner order,
+part of that supplied interface. No global parity string, Jordan–Wigner order,
 global frame service, or host-side step controller is introduced.
 
 The added constant overhead per spatial coarse cell is:
@@ -123,13 +130,13 @@ one-excitation block has dimension
 1 + 24 * 15 = 361.
 ```
 
-The supplied local source term implemented by the physical generator is
+The supplied local source-edge term implemented by the Hermitian generator is
 
 ```text
-S_source = -lambda sum_x q_x sum_local_hinges delta_hinge.
+H_source = +lambda sum_x q_x sum_local_hinges delta_hinge.
 ```
 
-Here `q_x` is the accepted Cycle-572 local resource amplitude and the fixed,
+Here `q_x` is the exact-pinned Cycle-572 local resource amplitude and the fixed,
 momentum-independent `lambda` is `0.17`. This equation is an explicit supplied
 coupling rule. It is not a derivation that `q_x` is a stress component, and its
 sign and coupling normalization are not selected.
@@ -234,7 +241,7 @@ the sign wall; they do not select the sign.
 
 Constructive positive at the bounded-generator and finite-dimensional state-law
 levels. It is the strongest bridge in the tournament because it joins the
-accepted local resource interface to an actual action-derived edge Hessian,
+exact-pinned local resource interface to an actual action-derived edge Hessian,
 passes the Ward/covariance controls, and matches the frozen R3 target algebra.
 
 It does not close the exact bounded-depth finite-time compiler, action/edge-law
@@ -310,7 +317,7 @@ other plaquette or conjugate-response laws.
 
 Route C uses twelve face-diagonal hard-core rails per cell. Each of two steps
 applies a supplied scalar source phase, the twelve-state Grover coin, and the
-two-axial-hop face stream inherited from the accepted geometry. The source
+two-axial-hop face stream inherited from the supplied geometry. The source
 amplitude is `0.071`. The tangent is derived analytically and compared with a
 centered finite difference at `epsilon=8e-7`.
 
@@ -375,7 +382,7 @@ evidence that such a compiler is impossible.
 
 Supplied:
 
-1. The accepted Cycle-572 resource/current, reciprocal response, compiler
+1. The exact-pinned Cycle-572 resource/current, reciprocal response, compiler
    counts, source-amplitude interface, and inherited matter fixtures.
 2. The actual cubic-Coxeter 3+1 path complex, 15 edge variables, Regge action,
    orientation, flat background, second-variation machinery, and line-averaged
@@ -433,7 +440,7 @@ The existing cubic-lattice prediction
 K4(n) = sum_i n_i^4 - 3/5,
 ```
 
-is retained only as a downstream compatibility target. It was not used to
+is kept only as a downstream compatibility target. It was not used to
 select or fit any Cycle-576 law. Route A now supplies a local metric operator,
 but a static scalar Poisson projection and inverse have not been derived, so
 the `5/(32pi)` coefficient is not evaluated here. No Newtonian identification
@@ -470,7 +477,7 @@ is imported. Cycle 453's quadrupole target is not used.
 
 Conservative campaign-local maturity estimates (0–5) are operational
 quantum/records `3.7`, time `1.8`, inertia/matter `4.5`, gravity/source `2.9`,
-and Born/probability `2.0`. Only gravity/source changes from the accepted
+and Born/probability `2.0`. Only gravity/source changes from the exact-pinned
 Cycle-572 baseline, by `+0.2`, for the action-derived edge carrier, local Ward
 source, target match, and physical-M2 interface. These are planning estimates,
 not probabilities, audit grades, or constitutional status.

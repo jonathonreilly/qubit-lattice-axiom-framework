@@ -137,7 +137,7 @@ def cycle572_receipt() -> dict:
         ]
     )
     if not good:
-        raise RuntimeError("accepted Cycle572 receipt does not match exact-pinned runner/note")
+        raise RuntimeError("exact-pinned Cycle572 receipt does not match runner/note")
     return receipt
 
 
@@ -388,11 +388,11 @@ def route_a_regge(receipt: dict) -> dict:
             products += 1
 
     physical_hamiltonian = frame_sector_hamiltonian(generic)
-    declared_raw_source = SOURCE_COUPLING * np.concatenate([
+    declared_raw_source_generator = SOURCE_COUPLING * np.concatenate([
         base_deficit_source(frame @ generic) for frame in LIFTED_FRAMES
     ])
-    raw_source_action_residual = float(np.linalg.norm(
-        physical_hamiltonian[0, 1:] - declared_raw_source
+    raw_source_generator_residual = float(np.linalg.norm(
+        physical_hamiltonian[0, 1:] - declared_raw_source_generator
     ))
     hermiticity = float(np.linalg.norm(physical_hamiltonian - physical_hamiltonian.conj().T))
     initial = np.zeros(len(physical_hamiltonian), dtype=complex)
@@ -457,10 +457,10 @@ def route_a_regge(receipt: dict) -> dict:
             "compile-time target comparison and first-order uniform-sector projection only; not a stochastic mixture "
             "and not a separately enacted update"
         ),
-        "source_action": "S_source=-lambda sum_x q_x sum_local_hinges delta_hinge",
+        "source_generator": "H_source=+lambda sum_x q_x sum_local_hinges delta_hinge",
         "source_fourier_normalization": "raw finite-range deficit symbol; no momentum-dependent normalization",
         "momentum_dependent_source_normalization_used": False,
-        "raw_local_source_action_residual": raw_source_action_residual,
+        "raw_local_source_generator_residual": raw_source_generator_residual,
         "source_called_physical_stress_energy_or_gravity": False,
         "R3_EH_target_algebra_comparisons": comparisons,
         "mean_best_fit_coefficient": float(np.mean([row["best_fit_coefficient"] for row in comparisons])),
@@ -944,6 +944,12 @@ def physical_compiler_controls(receipt: dict) -> dict:
         "one_excitation_hard_core_interfaces_intrinsic_M2": True,
         "generator_level_route_A_intertwiner_residual": 0.0,
         "finite_update_route_B_C_intertwiner_residual": 0.0,
+        "intertwiner_values_are_definitional_rail_identifications": True,
+        "intertwiner_residuals_recomputed_on_parent_branch": False,
+        "interface_evidence_scope": (
+            "exact-pinned Cycle572 receipt plus definitional one-excitation rail embedding; "
+            "no fresh parent-branch dense compiler recomputation or audit elevation"
+        ),
         "Route_A_exact_bounded_depth_finite_time_circuit": False,
         "global_matter_N_le_3_cutoff_locally_enforced": base["global_matter_N_le_3_cutoff_locally_enforced"],
         "runtime_global_parity_order_or_frame_service": False,
@@ -968,7 +974,7 @@ def prediction_interface() -> dict:
 def inventory() -> dict:
     return {
         "supplied": (
-            "Cycle572 accepted resource/current, reciprocal curvature response, physical M2 counts and source amplitude interface",
+            "Cycle572 exact-pinned resource/current, reciprocal curvature response, physical M2 counts and source amplitude interface",
             "actual 3+1 cubic-Coxeter Regge edge variables, path complex, Regge action choice and flat Hessian machinery",
             "24 physically co-present frame sectors, uniform coherent frame-sector preparation/readout and its normalization",
             "Regge action orientation and update scale; source coupling magnitude and sign",
@@ -985,7 +991,7 @@ def inventory() -> dict:
             "exact local plaquette/conjugate reciprocal resource gate with all24/all576 covariance",
             "exact face scattering tangent/inverse plus least-squares tensor-projection and blinded held diagnostics",
             "route-specific R3 mismatch diagnostics for B and C",
-            "physical-M2 one-excitation compiler interfaces and retained mass/contact/seam controls",
+            "physical-M2 one-excitation compiler interfaces and exact-pinned mass/contact/seam controls",
         ),
         "open": (
             "derivation/selection of edge variables, Regge action, orientation, source sign and normalization",
@@ -1107,7 +1113,7 @@ def main() -> int:
         route_a["metric_Bianchi_residual"] < TOL
         and route_a["edge_Regge_Bianchi_residual"] < TOL
         and route_a["local_deficit_source_Ward_residual"] < TOL
-        and route_a["raw_local_source_action_residual"] < TOL
+        and route_a["raw_local_source_generator_residual"] < TOL
         and not route_a["momentum_dependent_source_normalization_used"]
         and route_a["frame_averaged_source_Ward_residual"] < TOL
         and route_a["maximum_all24_metric_generator_covariance_residual"] < TOL
@@ -1190,7 +1196,7 @@ def main() -> int:
         },
     )
     check(
-        "physical-M2 interface retains Cycle572 mass/contact/seam and exposes generator-versus-circuit wall",
+        "physical-M2 interface carries exact-pinned Cycle572 values and exposes evidence/circuit walls",
         compiler["Cycle572_EG_equals_GphysicalE_residual"] == 0
         and compiler["one_particle_mass_residual"] < TOL
         and compiler["actual_Cycle230_contact_factorization_residual"] < TOL
@@ -1200,6 +1206,8 @@ def main() -> int:
         and compiler["bounded_constant_overhead_per_spatial_cell"]
         and compiler["generator_level_route_A_intertwiner_residual"] == 0
         and compiler["finite_update_route_B_C_intertwiner_residual"] == 0
+        and compiler["intertwiner_values_are_definitional_rail_identifications"]
+        and not compiler["intertwiner_residuals_recomputed_on_parent_branch"]
         and not compiler["Route_A_exact_bounded_depth_finite_time_circuit"]
         and not compiler["global_matter_N_le_3_cutoff_locally_enforced"]
         and not compiler["frame_sector_uniform_preparation_selected_by_substrate"],

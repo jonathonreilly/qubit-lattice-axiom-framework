@@ -1,0 +1,1124 @@
+{
+  "C649_interface": "UNCONSUMED_NOT_ON_IMMUTABLE_SHORE",
+  "Status": "PASS",
+  "all24_all576_abstract_controller_covariance": true,
+  "approach_registry": [
+    {
+      "concrete_evidence": "EXACT_REVERSIBLE_SUPPLIED_SYNDROME_COMPILER__PHYSICAL_EXTRACTION_SELECTOR_AND_NN_PLACEMENT_OPEN",
+      "family": "reversible retained-syndrome message circuit",
+      "mechanism_invariant": "parallel leaf CNOT handoff",
+      "object_formulation": "input/work/history tree rails",
+      "reopen_condition": "place controller rails and one routed projector",
+      "status": "provisional",
+      "strength_vs_target": "weaker",
+      "terminal_obligation": "autonomous extraction and physical NN lowering"
+    },
+    {
+      "concrete_evidence": "EXACT_VIRTUAL_TRANSLATION_ORBIT_AND_UNIFORM_COPY_SELECTOR__PHYSICAL_FIELD_PLACEMENT_AND_ODD_ABSORBER_OPEN",
+      "family": "translation/frame-orbit virtual defect field",
+      "mechanism_invariant": "group orbit plus equality-stabilizer equivalence",
+      "object_formulation": "translated trees and uniform fiber selectors",
+      "reopen_condition": "physical sidecar orbit and state-carried orbit-label preparation",
+      "status": "provisional",
+      "strength_vs_target": "weaker",
+      "terminal_obligation": "prepare/place orbit field and odd boundary"
+    },
+    {
+      "concrete_evidence": "EXACT_STINESPRING_SYNDROME_RESET_COMPARATOR__ENVIRONMENT_RETAINED_AND_PHYSICAL_PROJECTORS_UNPLACED",
+      "family": "syndrome-labelled Stinespring reset",
+      "mechanism_invariant": "orthogonal syndrome-sector isometry",
+      "object_formulation": "Kraus projectors and environment",
+      "reopen_condition": "placed local projector gadget and explicit environment boundary",
+      "status": "provisional",
+      "strength_vs_target": "weaker",
+      "terminal_obligation": "local projectors and returned/admitted environment"
+    }
+  ],
+  "audit": "unset",
+  "author_accepted": false,
+  "author_artifact_status_accepted": false,
+  "authority": "none",
+  "autonomous_physical_face_pump_compiled": false,
+  "axiom_pressure": false,
+  "axiom_pressure_claim": false,
+  "axiom_pressure_gate": "FAIL / DO NOT SHIP",
+  "axiom_pressure_shipped": false,
+  "bounded_neighborhood_physical_controller_compiled": false,
+  "breakthrough": false,
+  "broad_negative_gate": "FAIL / DO NOT SHIP",
+  "broad_negative_shipped": false,
+  "broad_no_go_claim": false,
+  "campaign_lane_coordinate_rebase": "Cycle651 does not independently rebase campaign lane coordinates.",
+  "canonical_claim_gate_contract": {
+    "Status": "PASS",
+    "axiom_pressure_claim": false,
+    "axiom_pressure_gate": "FAIL / DO NOT SHIP",
+    "axiom_pressure_shipped": false,
+    "broad_negative_gate": "FAIL / DO NOT SHIP",
+    "broad_negative_shipped": false,
+    "broad_no_go_claim": false,
+    "minimum_content_claim": false,
+    "minimum_content_gate": "FAIL / DO NOT SHIP",
+    "minimum_content_shipped": false,
+    "pass": true,
+    "shared_obstruction_claim": false,
+    "shared_obstruction_gate": "FAIL / DO NOT SHIP",
+    "shared_obstruction_shipped": false
+  },
+  "classification": "PARTIAL_CONSTRUCTIVE_ADVANCE_WITH_EXACT_NONPLACEMENT_RESIDUAL",
+  "constant_overhead_per_coarse_cell_accounted": true,
+  "constitutional_effect": "none",
+  "elapsed_seconds": 67.75788470800035,
+  "exact_target_contract": {
+    "allowed_premises": "only immutable shore 4f2b07fd39 and explicitly inventoried new controller roles",
+    "completion_witness": "literal autonomous data-to-syndrome controller with collision-safe fine-NN gates and returned unitary work or admitted dissipative environment",
+    "domain": "periodic L3 construction, L6 train, held L7; exhaustive even and odd face syndromes; all24/all576",
+    "forbidden_weakenings": "no named-root query, coordinate-zero sheet, host path service, global parity query, preferred frame, hidden environment, or C649 premise",
+    "not_closure": "retained syndrome input, abstract orbit field, fixed-code covariance, path family, unplaced selector, or Stinespring formula alone",
+    "required_edges": "placed roles/routes or exact nonplacement, two-M2 NN lowering, inverse/deletion/leakage, lawful domain, mass/contact/seam",
+    "target_statement": "compile the Cycle648 root-label-blind face pump into a bounded-neighborhood physical-M2 controller"
+  },
+  "fixed_code_all24_all576": true,
+  "fixed_code_covariance_is_preparation_covariance": false,
+  "immutable_shore_ref": "4f2b07fd39cc83a3f6c21bd9559f948b615bd05c",
+  "logical_fixtures": {
+    "Cycle219_mass_residual": 2.220446049250313e-16,
+    "Cycle230_contact_deletion_residual": 0.36789306705608243,
+    "Cycle230_seam_subchecks": {
+      "fail": 0,
+      "pass": 6
+    },
+    "Cycle642_factor_rows_pass": true,
+    "fixture_pass": true
+  },
+  "maximum_RSS_bytes": 302333952,
+  "minimum_content_claim": false,
+  "minimum_content_gate": "FAIL / DO NOT SHIP",
+  "minimum_content_shipped": false,
+  "negative_claim_shipped": false,
+  "no_go_discipline": {
+    "N1_normalized_families": [
+      {
+        "family": "reversible retained-syndrome message circuit",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism": "parallel leaf CNOT handoff and compute-correct-uncompute",
+        "object": "input/work/history M2 rails on a bounded-degree tree",
+        "result": "EXACT_REVERSIBLE_SUPPLIED_SYNDROME_COMPILER__PHYSICAL_EXTRACTION_SELECTOR_AND_NN_PLACEMENT_OPEN",
+        "target_equivalent": false,
+        "terminal": "autonomous physical syndrome extraction and collision-safe NN lowering"
+      },
+      {
+        "family": "translation/frame-orbit virtual defect field",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism": "group-orbit covariance and equality-stabilizer branch equivalence",
+        "object": "translated tree family plus orbit-uniform fiber selector",
+        "result": "EXACT_VIRTUAL_TRANSLATION_ORBIT_AND_UNIFORM_COPY_SELECTOR__PHYSICAL_FIELD_PLACEMENT_AND_ODD_ABSORBER_OPEN",
+        "target_equivalent": false,
+        "terminal": "physical selector/tree-orbit placement and odd-defect boundary"
+      },
+      {
+        "family": "syndrome-labelled Stinespring reset",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism": "K_s = X(j(s)) P_s",
+        "object": "orthogonal face projectors and an explicit environment",
+        "result": "EXACT_STINESPRING_SYNDROME_RESET_COMPARATOR__ENVIRONMENT_RETAINED_AND_PHYSICAL_PROJECTORS_UNPLACED",
+        "target_equivalent": false,
+        "terminal": "local projector extraction plus returned or admitted environment"
+      }
+    ],
+    "N1_open_routes_not_counted": [
+      {
+        "family": "reserved sidecar controller placement",
+        "mechanism": "disjoint placed endpoint slots",
+        "object": "outer-shell controller orbits",
+        "search_status": "C649_WORKING_TREE_INTERFACE_UNCONSUMED_NOT_COUNTED",
+        "terminal": "literal local controller sites"
+      },
+      {
+        "family": "static subsystem wire",
+        "mechanism": "commuting local constraints",
+        "object": "crossing-safe gauge wires",
+        "search_status": "OPEN_UNTESTED_NOT_COUNTED",
+        "terminal": "all face projectors and corrections"
+      },
+      {
+        "family": "asynchronous quantum walk router",
+        "mechanism": "local collision arbitration",
+        "object": "mobile route-head automaton",
+        "search_status": "OPEN_UNTESTED_NOT_COUNTED",
+        "terminal": "returned route history"
+      },
+      {
+        "family": "virtual-bond tree PEPS",
+        "mechanism": "absorb origin and selector into bond gauge",
+        "object": "translation-invariant tensor network",
+        "search_status": "OPEN_UNTESTED_NOT_COUNTED",
+        "terminal": "physical fixed-sector preparation"
+      },
+      {
+        "family": "mobile odd-defect pair",
+        "mechanism": "sector-preserving defect transport and annihilation",
+        "object": "locally created absorber pair",
+        "search_status": "OPEN_UNTESTED_NOT_COUNTED",
+        "terminal": "lawful odd-boundary treatment without a parity service"
+      }
+    ],
+    "N1_qualifying_attempts": 0,
+    "N1_required_for_broad_negative": 5,
+    "N1_required_for_negative": 5,
+    "N2_collapsed_walls": [
+      "W_extract",
+      "W_route",
+      "W_origin",
+      "W_odd",
+      "W_exhaust"
+    ],
+    "N2_directed_pair_count": 20,
+    "N2_directed_pairs": [
+      {
+        "closure_implied": false,
+        "from": "W_extract",
+        "independence_evidence": {
+          "from_interface": "coherent/local face-syndrome acquisition from data",
+          "reason": "closing W_extract on coherent/local face-syndrome acquisition from data does not execute or certify W_route on collision-safe fine-NN controller transport",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "collision-safe fine-NN controller transport"
+        },
+        "to": "W_route"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_extract",
+        "independence_evidence": {
+          "from_interface": "coherent/local face-syndrome acquisition from data",
+          "reason": "closing W_extract on coherent/local face-syndrome acquisition from data does not execute or certify W_origin on ordinary-translation orbit placement without T0 selection",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "ordinary-translation orbit placement without T0 selection"
+        },
+        "to": "W_origin"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_extract",
+        "independence_evidence": {
+          "from_interface": "coherent/local face-syndrome acquisition from data",
+          "reason": "closing W_extract on coherent/local face-syndrome acquisition from data does not execute or certify W_odd on odd-defect lawful-domain boundary or absorber",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "odd-defect lawful-domain boundary or absorber"
+        },
+        "to": "W_odd"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_extract",
+        "independence_evidence": {
+          "from_interface": "coherent/local face-syndrome acquisition from data",
+          "reason": "closing W_extract on coherent/local face-syndrome acquisition from data does not execute or certify W_exhaust on retained Stinespring syndrome environment",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "retained Stinespring syndrome environment"
+        },
+        "to": "W_exhaust"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_route",
+        "independence_evidence": {
+          "from_interface": "collision-safe fine-NN controller transport",
+          "reason": "closing W_route on collision-safe fine-NN controller transport does not execute or certify W_extract on coherent/local face-syndrome acquisition from data",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "coherent/local face-syndrome acquisition from data"
+        },
+        "to": "W_extract"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_route",
+        "independence_evidence": {
+          "from_interface": "collision-safe fine-NN controller transport",
+          "reason": "closing W_route on collision-safe fine-NN controller transport does not execute or certify W_origin on ordinary-translation orbit placement without T0 selection",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "ordinary-translation orbit placement without T0 selection"
+        },
+        "to": "W_origin"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_route",
+        "independence_evidence": {
+          "from_interface": "collision-safe fine-NN controller transport",
+          "reason": "closing W_route on collision-safe fine-NN controller transport does not execute or certify W_odd on odd-defect lawful-domain boundary or absorber",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "odd-defect lawful-domain boundary or absorber"
+        },
+        "to": "W_odd"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_route",
+        "independence_evidence": {
+          "from_interface": "collision-safe fine-NN controller transport",
+          "reason": "closing W_route on collision-safe fine-NN controller transport does not execute or certify W_exhaust on retained Stinespring syndrome environment",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "retained Stinespring syndrome environment"
+        },
+        "to": "W_exhaust"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_origin",
+        "independence_evidence": {
+          "from_interface": "ordinary-translation orbit placement without T0 selection",
+          "reason": "closing W_origin on ordinary-translation orbit placement without T0 selection does not execute or certify W_extract on coherent/local face-syndrome acquisition from data",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "coherent/local face-syndrome acquisition from data"
+        },
+        "to": "W_extract"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_origin",
+        "independence_evidence": {
+          "from_interface": "ordinary-translation orbit placement without T0 selection",
+          "reason": "closing W_origin on ordinary-translation orbit placement without T0 selection does not execute or certify W_route on collision-safe fine-NN controller transport",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "collision-safe fine-NN controller transport"
+        },
+        "to": "W_route"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_origin",
+        "independence_evidence": {
+          "from_interface": "ordinary-translation orbit placement without T0 selection",
+          "reason": "closing W_origin on ordinary-translation orbit placement without T0 selection does not execute or certify W_odd on odd-defect lawful-domain boundary or absorber",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "odd-defect lawful-domain boundary or absorber"
+        },
+        "to": "W_odd"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_origin",
+        "independence_evidence": {
+          "from_interface": "ordinary-translation orbit placement without T0 selection",
+          "reason": "closing W_origin on ordinary-translation orbit placement without T0 selection does not execute or certify W_exhaust on retained Stinespring syndrome environment",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "retained Stinespring syndrome environment"
+        },
+        "to": "W_exhaust"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_odd",
+        "independence_evidence": {
+          "from_interface": "odd-defect lawful-domain boundary or absorber",
+          "reason": "closing W_odd on odd-defect lawful-domain boundary or absorber does not execute or certify W_extract on coherent/local face-syndrome acquisition from data",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "coherent/local face-syndrome acquisition from data"
+        },
+        "to": "W_extract"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_odd",
+        "independence_evidence": {
+          "from_interface": "odd-defect lawful-domain boundary or absorber",
+          "reason": "closing W_odd on odd-defect lawful-domain boundary or absorber does not execute or certify W_route on collision-safe fine-NN controller transport",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "collision-safe fine-NN controller transport"
+        },
+        "to": "W_route"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_odd",
+        "independence_evidence": {
+          "from_interface": "odd-defect lawful-domain boundary or absorber",
+          "reason": "closing W_odd on odd-defect lawful-domain boundary or absorber does not execute or certify W_origin on ordinary-translation orbit placement without T0 selection",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "ordinary-translation orbit placement without T0 selection"
+        },
+        "to": "W_origin"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_odd",
+        "independence_evidence": {
+          "from_interface": "odd-defect lawful-domain boundary or absorber",
+          "reason": "closing W_odd on odd-defect lawful-domain boundary or absorber does not execute or certify W_exhaust on retained Stinespring syndrome environment",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "retained Stinespring syndrome environment"
+        },
+        "to": "W_exhaust"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_exhaust",
+        "independence_evidence": {
+          "from_interface": "retained Stinespring syndrome environment",
+          "reason": "closing W_exhaust on retained Stinespring syndrome environment does not execute or certify W_extract on coherent/local face-syndrome acquisition from data",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "coherent/local face-syndrome acquisition from data"
+        },
+        "to": "W_extract"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_exhaust",
+        "independence_evidence": {
+          "from_interface": "retained Stinespring syndrome environment",
+          "reason": "closing W_exhaust on retained Stinespring syndrome environment does not execute or certify W_route on collision-safe fine-NN controller transport",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "collision-safe fine-NN controller transport"
+        },
+        "to": "W_route"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_exhaust",
+        "independence_evidence": {
+          "from_interface": "retained Stinespring syndrome environment",
+          "reason": "closing W_exhaust on retained Stinespring syndrome environment does not execute or certify W_origin on ordinary-translation orbit placement without T0 selection",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "ordinary-translation orbit placement without T0 selection"
+        },
+        "to": "W_origin"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_exhaust",
+        "independence_evidence": {
+          "from_interface": "retained Stinespring syndrome environment",
+          "reason": "closing W_exhaust on retained Stinespring syndrome environment does not execute or certify W_odd on odd-defect lawful-domain boundary or absorber",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "odd-defect lawful-domain boundary or absorber"
+        },
+        "to": "W_odd"
+      }
+    ],
+    "N2_independence_complete": false,
+    "N2_machine_check_count": 20,
+    "N3_explicit_supplied_structure": [
+      "immutable Cycle642/Cycle648 shore",
+      "finite L3/L6/L7",
+      "compile-time tree topology",
+      "retained syndrome input rail",
+      "blank work/history rails",
+      "Cycle642 orbit fibers and equality code",
+      "one unplaced uniform selector per logical edge",
+      "full translated tree family",
+      "even lawful domain",
+      "syndrome-labelled Stinespring environment",
+      "Cycle642 fine-NN path families without arbitration"
+    ],
+    "N3_hidden_wall_phrases": [
+      "we assume",
+      "by construction",
+      "as is standard",
+      "the framework provides",
+      "bridge context",
+      "background",
+      "naturally",
+      "obviously",
+      "standard qft",
+      "registered",
+      "canonical"
+    ],
+    "N3_note_phrase_hits": [],
+    "N4_cited_lines_exist": true,
+    "N4_dropped_nonmatches": [
+      {
+        "current_line": 557,
+        "current_path": "scripts/physical_root_label_blind_face_pump_compiler_cycle651_2026_07_23.py",
+        "current_ref": "working-tree Cycle651 candidate",
+        "current_residual": "Cycle651 tests local tree syndrome reset with retained environment",
+        "exact_match": false,
+        "prior_line": 177,
+        "prior_path": "docs/work_history/repo/review_feedback/ABSTRACT_FILL_DISK_FULL_TABLEAU_ISOMETRY_CYCLE643_NOTE_2026-07-23.md",
+        "prior_ref": "4f2b07fd39cc83a3f6c21bd9559f948b615bd05c",
+        "prior_residual": "Cycle643 uses supplied global tableau pivot/root/order",
+        "same_scope": false,
+        "use_as_closure": false
+      }
+    ],
+    "N4_exact_residual_matches": [
+      {
+        "current_line": 345,
+        "current_path": "scripts/physical_root_label_blind_face_pump_compiler_cycle651_2026_07_23.py",
+        "current_ref": "working-tree Cycle651 candidate",
+        "current_residual": "Cycle651 closes only the supplied-syndrome reversible CNOT logic; controller placement and collision-safe NN extraction remain absent",
+        "exact_match": true,
+        "prior_line": 145,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_ROOT_FREE_ORBIT_TREE_PREPARATION_TOURNAMENT_CYCLE648_NOTE_2026-07-23.md",
+        "prior_ref": "4f2b07fd39cc83a3f6c21bd9559f948b615bd05c",
+        "prior_residual": "Cycle648 has no physical face-measurement crossing schedule",
+        "same_scope": true,
+        "use_as_closure": true
+      },
+      {
+        "current_line": 454,
+        "current_path": "scripts/physical_root_label_blind_face_pump_compiler_cycle651_2026_07_23.py",
+        "current_ref": "working-tree Cycle651 candidate",
+        "current_residual": "Cycle651 supplies covariant virtual selectors and tree-orbit labels but no placed crossing controller",
+        "exact_match": true,
+        "prior_line": 110,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_FIXED_CUBIC_WILSON_FILL_INCIDENCE_CYCLE642_NOTE_2026-07-23.md",
+        "prior_ref": "4f2b07fd39cc83a3f6c21bd9559f948b615bd05c",
+        "prior_residual": "Cycle642 leaves intersecting route enforcement without a static wire or state-carried schedule",
+        "same_scope": true,
+        "use_as_closure": true
+      },
+      {
+        "current_line": 454,
+        "current_path": "scripts/physical_root_label_blind_face_pump_compiler_cycle651_2026_07_23.py",
+        "current_ref": "working-tree Cycle651 candidate",
+        "current_residual": "every odd syndrome still leaves one structural-center defect and no absorber is added",
+        "exact_match": true,
+        "prior_line": 141,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_ROOT_FREE_ORBIT_TREE_PREPARATION_TOURNAMENT_CYCLE648_NOTE_2026-07-23.md",
+        "prior_ref": "4f2b07fd39cc83a3f6c21bd9559f948b615bd05c",
+        "prior_residual": "odd face syndrome leaves one abstract defect without an absorber",
+        "same_scope": true,
+        "use_as_closure": false
+      }
+    ],
+    "N4_exact_residual_matching": [
+      {
+        "current_line": 345,
+        "current_path": "scripts/physical_root_label_blind_face_pump_compiler_cycle651_2026_07_23.py",
+        "current_ref": "working-tree Cycle651 candidate",
+        "current_residual": "Cycle651 closes only the supplied-syndrome reversible CNOT logic; controller placement and collision-safe NN extraction remain absent",
+        "exact_match": true,
+        "prior_line": 145,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_ROOT_FREE_ORBIT_TREE_PREPARATION_TOURNAMENT_CYCLE648_NOTE_2026-07-23.md",
+        "prior_ref": "4f2b07fd39cc83a3f6c21bd9559f948b615bd05c",
+        "prior_residual": "Cycle648 has no physical face-measurement crossing schedule",
+        "same_scope": true,
+        "use_as_closure": true
+      },
+      {
+        "current_line": 454,
+        "current_path": "scripts/physical_root_label_blind_face_pump_compiler_cycle651_2026_07_23.py",
+        "current_ref": "working-tree Cycle651 candidate",
+        "current_residual": "Cycle651 supplies covariant virtual selectors and tree-orbit labels but no placed crossing controller",
+        "exact_match": true,
+        "prior_line": 110,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_FIXED_CUBIC_WILSON_FILL_INCIDENCE_CYCLE642_NOTE_2026-07-23.md",
+        "prior_ref": "4f2b07fd39cc83a3f6c21bd9559f948b615bd05c",
+        "prior_residual": "Cycle642 leaves intersecting route enforcement without a static wire or state-carried schedule",
+        "same_scope": true,
+        "use_as_closure": true
+      },
+      {
+        "current_line": 454,
+        "current_path": "scripts/physical_root_label_blind_face_pump_compiler_cycle651_2026_07_23.py",
+        "current_ref": "working-tree Cycle651 candidate",
+        "current_residual": "every odd syndrome still leaves one structural-center defect and no absorber is added",
+        "exact_match": true,
+        "prior_line": 141,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_ROOT_FREE_ORBIT_TREE_PREPARATION_TOURNAMENT_CYCLE648_NOTE_2026-07-23.md",
+        "prior_ref": "4f2b07fd39cc83a3f6c21bd9559f948b615bd05c",
+        "prior_residual": "odd face syndrome leaves one abstract defect without an absorber",
+        "same_scope": true,
+        "use_as_closure": false
+      },
+      {
+        "current_line": 557,
+        "current_path": "scripts/physical_root_label_blind_face_pump_compiler_cycle651_2026_07_23.py",
+        "current_ref": "working-tree Cycle651 candidate",
+        "current_residual": "Cycle651 tests local tree syndrome reset with retained environment",
+        "exact_match": false,
+        "prior_line": 177,
+        "prior_path": "docs/work_history/repo/review_feedback/ABSTRACT_FILL_DISK_FULL_TABLEAU_ISOMETRY_CYCLE643_NOTE_2026-07-23.md",
+        "prior_ref": "4f2b07fd39cc83a3f6c21bd9559f948b615bd05c",
+        "prior_residual": "Cycle643 uses supplied global tableau pivot/root/order",
+        "same_scope": false,
+        "use_as_closure": false
+      }
+    ],
+    "N5_five_resolution_rhetoric_audit": [
+      {
+        "claim": "a retained syndrome rail is not autonomous syndrome extraction",
+        "lattice_wide": "no data-to-rail measurement controller is placed",
+        "per_block": "three axes have exact gate counts",
+        "per_element": "each CNOT is explicit",
+        "per_mode": "every syndrome word is tested",
+        "per_site": "input and work roles are declared but unplaced"
+      },
+      {
+        "claim": "a shortest-path family is not a crossing-safe controller",
+        "lattice_wide": "no autonomous arbitration law is executed",
+        "per_block": "maximum lengths 136/344/345 are inherited",
+        "per_element": "every path step is fine-NN",
+        "per_mode": "each check support pair has routes",
+        "per_site": "shared ownership was counted by Cycle642"
+      },
+      {
+        "claim": "a translation-orbit family is not its physical preparation",
+        "lattice_wide": "no orbit-label state is prepared",
+        "per_block": "all24/all576 labels close",
+        "per_element": "tree edges transform exactly",
+        "per_mode": "all translations of every syndrome commute",
+        "per_site": "additional orbit edges are counted but unplaced"
+      },
+      {
+        "claim": "a Stinespring comparator is not returned exhaust",
+        "lattice_wide": "the environment remains outside the returned physical state",
+        "per_block": "deleting one environment coordinate causes exact collisions",
+        "per_element": "Kraus sectors are explicit",
+        "per_mode": "even and odd sectors are exhaustive",
+        "per_site": "environment bits are counted"
+      },
+      {
+        "claim": "an even-domain pump is not odd-sector genesis",
+        "lattice_wide": "no mobile absorber or sector-changing resource is supplied",
+        "per_block": "the center follows tree topology",
+        "per_element": "one edge correction toggles two faces",
+        "per_mode": "every odd word leaves one defect",
+        "per_site": "local handoffs conserve parity"
+      }
+    ],
+    "N6_partial_closure_paths": [
+      {
+        "file": "docs/work_history/repo/review_feedback/PHYSICAL_FIXED_CUBIC_WILSON_FILL_INCIDENCE_CYCLE642_NOTE_2026-07-23.md",
+        "status": "PINNED_PHYSICAL_ROUTE_PARENT",
+        "what_closes": "all shortest path geometry, not crossing enforcement"
+      },
+      {
+        "file": "docs/work_history/repo/review_feedback/PHYSICAL_ROOT_FREE_ORBIT_TREE_PREPARATION_TOURNAMENT_CYCLE648_NOTE_2026-07-23.md",
+        "status": "PINNED_ABSTRACT_DECODER_PARENT",
+        "what_closes": "all even/odd syndrome enumeration and frame covariance, not physical extraction"
+      },
+      {
+        "file": "docs/work_history/repo/review_feedback/PHYSICAL_TRANSLATION_ORBIT_MARKER_CRYSTAL_REPAIR_CYCLE629_NOTE_2026-07-22.md",
+        "status": "PINNED_STATE_CARRIED_ORBIT_COMPARATOR",
+        "what_closes": "a marker origin by a carried orbit phase on a different substrate"
+      },
+      {
+        "file": "scripts/physical_reserved_outer_shell_sidecar_placement_cycle649_2026_07_23.py",
+        "status": "UNCONSUMED_WORKING_TREE_INTERFACE",
+        "what_closes": "potential controller placement only after immutable adoption and independent verification"
+      },
+      {
+        "file": "UNMATERIALIZED/cycle652_crossing_safe_face_router.py",
+        "status": "OPEN",
+        "what_closes": "data-to-syndrome extraction, orbit selector preparation, collision arbitration, and returned route history"
+      }
+    ],
+    "N7_cited_actionable_steelman": {
+      "action": "place the declared input/work/history and selector roles, then compile one crossing-safe routed projector and inverse before scaling",
+      "actionable": true,
+      "argument": "The negative physical disposition is premature because Cycle642 already supplies every endpoint and full fine-NN path family, while Cycle651 supplies a two-M2 reversible decoder and proves that an orbit-uniform copy selector acts as one logical X modulo the equality checks. A disjoint outer-shell sidecar orbit plus a state-carried collision token could therefore connect the exact pieces without a preferred frame or host path table.",
+      "citations": [
+        {
+          "line": 100,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_FIXED_CUBIC_WILSON_FILL_INCIDENCE_CYCLE642_NOTE_2026-07-23.md",
+          "ref": "4f2b07fd39cc83a3f6c21bd9559f948b615bd05c",
+          "supports": "all signed shortest path families already exist"
+        },
+        {
+          "line": 129,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_ROOT_FREE_ORBIT_TREE_PREPARATION_TOURNAMENT_CYCLE648_NOTE_2026-07-23.md",
+          "ref": "4f2b07fd39cc83a3f6c21bd9559f948b615bd05c",
+          "supports": "the abstract decoder is exhaustive"
+        }
+      ],
+      "mechanism": "placed sidecar orbit, uniform selector, and state-carried collision arbitration",
+      "terminal_obligation": "literal L3/L6/L7 data-to-syndrome circuit with all controller sites, adjacent gates, all24/all576 and ordinary translations, returned route/work registers, even lawful-domain reset, odd boundary, deletion and leakage"
+    },
+    "N7_cited_lines_exist": true,
+    "N8_cited_lines_exist": true,
+    "N8_rowwise_cross_cycle_echo": [
+      {
+        "applicability": "ACTIONABLE_FOR_TREE_ORBIT_LABEL_PREPARATION",
+        "citation_line": 267,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_TRANSLATION_ORBIT_MARKER_CRYSTAL_REPAIR_CYCLE629_NOTE_2026-07-22.md",
+        "citation_ref": "4f2b07fd39cc83a3f6c21bd9559f948b615bd05c",
+        "cycle": "Cycle629",
+        "mechanism": "state-carried translation phase",
+        "retired": "an external origin on the marker orbit"
+      },
+      {
+        "applicability": "EXACT_PHYSICAL_ROUTING_RESIDUAL",
+        "citation_line": 111,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_FIXED_CUBIC_WILSON_FILL_INCIDENCE_CYCLE642_NOTE_2026-07-23.md",
+        "citation_ref": "4f2b07fd39cc83a3f6c21bd9559f948b615bd05c",
+        "cycle": "Cycle642",
+        "mechanism": "static subsystem wire or state-carried schedule",
+        "retired": false
+      },
+      {
+        "applicability": "DOES_NOT_CLOSE_PHYSICAL_LOCAL_EXTRACTION",
+        "citation_line": 177,
+        "citation_path": "docs/work_history/repo/review_feedback/ABSTRACT_FILL_DISK_FULL_TABLEAU_ISOMETRY_CYCLE643_NOTE_2026-07-23.md",
+        "citation_ref": "4f2b07fd39cc83a3f6c21bd9559f948b615bd05c",
+        "cycle": "Cycle643",
+        "mechanism": "global Clifford tableau synthesis",
+        "retired": "abstract state-preparation omission only"
+      },
+      {
+        "applicability": "ADVANCED_HERE_TO_REVERSIBLE_SUPPLIED_SYNDROME_LOGIC",
+        "citation_line": 116,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_ROOT_FREE_ORBIT_TREE_PREPARATION_TOURNAMENT_CYCLE648_NOTE_2026-07-23.md",
+        "citation_ref": "4f2b07fd39cc83a3f6c21bd9559f948b615bd05c",
+        "cycle": "Cycle648",
+        "mechanism": "parallel leaf peeling",
+        "retired": "abstract even-syndrome decoder omission"
+      }
+    ],
+    "Status": "PASS",
+    "artifact_status": "PARTIAL_CONSTRUCTIVE_ADVANCE_WITH_EXACT_NONPLACEMENT_RESIDUAL",
+    "axiom_pressure": false,
+    "axiom_pressure_claim": false,
+    "axiom_pressure_gate": "FAIL / DO NOT SHIP",
+    "axiom_pressure_shipped": false,
+    "broad_negative_gate": "FAIL / DO NOT SHIP",
+    "broad_negative_shipped": false,
+    "broad_no_go_claim": false,
+    "minimum_content_claim": false,
+    "minimum_content_gate": "FAIL / DO NOT SHIP",
+    "minimum_content_shipped": false,
+    "negative_claim_shipped": false,
+    "pass": true,
+    "shared_obstruction_claim": false,
+    "shared_obstruction_gate": "FAIL / DO NOT SHIP",
+    "shared_obstruction_shipped": false,
+    "shared_route_independent_obstruction": false,
+    "skill_freshness": {
+      "newer_origin_main_followed": true,
+      "origin_main_fetched": true,
+      "origin_main_skill_sha256": "7d1aea8243ddd972331b935e2e836657e72115da3efe259f828fe862469d68b7",
+      "proof_search_governance_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    }
+  },
+  "note_contract": {
+    "accepted_false": true,
+    "audit_unset": true,
+    "authority_none": true,
+    "missing_sections": [],
+    "pass": true
+  },
+  "note_sha256": "2f6340efdc224a0e1adc25e114824e122af2e39c06ef95c2c23d7eb3942623e8",
+  "optimal_next_campaign": "adopt no uncommitted placement premise; independently place one all24 orbit of syndrome/work/history and uniform-selector sidecars, compile one Cycle642 face projector and edge correction through a collision-safe state-carried fine-NN router, then scale only after inverse, deletion, leakage, ordinary translations and environment accounting pass",
+  "ordinary_translation_frame_orbit_physically_prepared": false,
+  "ordinary_translation_frame_orbit_virtual_family": true,
+  "pass": true,
+  "pins": {
+    "docs/work_history/repo/review_feedback/PHYSICAL_FIXED_CUBIC_WILSON_FILL_INCIDENCE_CYCLE642_NOTE_2026-07-23.md": "13f8074746f3b5e978f971567bbebecd1006ccd13b7d5fe91a0e38a946d30d3e",
+    "docs/work_history/repo/review_feedback/PHYSICAL_ROOT_FREE_ORBIT_TREE_PREPARATION_TOURNAMENT_CYCLE648_NOTE_2026-07-23.md": "b42d5364c0f30fb0d4d8c6336e8e7894a54873e0859bf922d79b556403353a80",
+    "outputs/physical_fixed_cubic_wilson_fill_incidence_cycle642_cold_2026_07_23.txt": "2af7cb45f80e1e5719da6750cd9f2efbbf2bee1bc14abe95e234eba91d6920cb",
+    "outputs/physical_fixed_cubic_wilson_fill_incidence_cycle642_receipt_2026_07_23.json": "9251ac323d4f26b672783fa8ed01dc8da6f3059c308d37325b3d7984969c3b37",
+    "outputs/physical_root_free_orbit_tree_preparation_tournament_cycle648_cold_2026_07_23.txt": "d6eb98c556812319b8989ec15867263097f5b1c2000bd30bd64e087724556e81",
+    "outputs/physical_root_free_orbit_tree_preparation_tournament_cycle648_receipt_2026_07_23.json": "b75c13e434e82eebd5af9813749261ac93c3197bffd9b0de04ff6619f4252336",
+    "scripts/physical_fixed_cubic_wilson_fill_incidence_cycle642_2026_07_23.py": "fb0d8366494066e4191d66b9a2d83180cd99bf6f622b9de355bf28494e050bf7",
+    "scripts/physical_root_free_orbit_tree_preparation_tournament_cycle648_2026_07_23.py": "2198ab44b0598bb20967fae3343df7e63e915b67e2f74832cb7c528e7a1dfd66"
+  },
+  "preparation_all24_all576_established": false,
+  "route_A_reversible_local_message_passing": {
+    "all_new_controller_roles_physically_placed": false,
+    "constructive_result": "a directionless parallel leaf circuit computes every edge correction from a retained local syndrome rail using only two-M2 CNOTs, applies it, and uncomputes all work/history",
+    "global_parity_queried": false,
+    "host_path_table_used": false,
+    "input_syndrome_rail_is_extracted_from_data": false,
+    "pass": true,
+    "root_vertex_label_queried": false,
+    "route_status": "EXACT_REVERSIBLE_SUPPLIED_SYNDROME_COMPILER__PHYSICAL_EXTRACTION_SELECTOR_AND_NN_PLACEMENT_OPEN",
+    "sizes": [
+      {
+        "all24_failures": 0,
+        "all576_failures": 0,
+        "all_syndromes_per_axis": 16,
+        "autonomous_syndrome_extraction": false,
+        "collision_safe_autonomous_NN_lowering": false,
+        "declared_controller_roles_per_coarse_cell": 1.2222222222222223,
+        "declared_input_work_history_controller_roles": 33,
+        "delete_one_selected_correction_cases": 7,
+        "delete_one_selected_correction_not_two_residual_failures": 0,
+        "double_application_inverse_failures": 0,
+        "even_syndrome_failures": 0,
+        "explicit_unplaced_controller_role_residual": 33,
+        "inherited_literal_fine_NN_paths_exist": true,
+        "layer_orbit_failures": 0,
+        "length": 3,
+        "maximum_elementary_logical_gate_support_M2": 2,
+        "maximum_inherited_face_pair_route_edges": 136,
+        "odd_single_residual_failures": 0,
+        "parallel_leaf_layers": 1,
+        "physical_copy_selector": {
+          "declared_virtual_uniform_selector_M2": 21,
+          "fiber_size_histogram": {
+            "4": 6,
+            "8": 3
+          },
+          "fixed_selector_narrow_falsifier": true,
+          "fixed_sorted_copy_actions_tested": 216,
+          "fixed_sorted_copy_all24_failures": 171,
+          "logical_edge_roles": 9,
+          "odd_X_subsets_tested": 432,
+          "roles_with_stabilizer_invariant_odd_X_subset": 0,
+          "selector_M2_physically_placed": 0,
+          "single_copy_branches_not_equivalent_mod_pair_XX": 0,
+          "stabilizer_invariant_odd_X_subsets": 0,
+          "uniform_selector_algebraic_repair": true,
+          "uniform_selector_all24_orbit_failures": 0
+        },
+        "physically_placed_new_controller_roles_on_immutable_shore": 0,
+        "placed_Cycle642_logical_correction_edges": 9,
+        "placed_Cycle642_physical_aux_M2": 48,
+        "retained_input_syndrome_rail": true,
+        "single_face_flip_leakage_cases": 32,
+        "single_face_flip_not_odd_residual_failures": 0,
+        "two_M2_logical_gates_three_axes": 69,
+        "work_history_or_input_return_failures": 0
+      },
+      {
+        "all24_failures": 0,
+        "all576_failures": 0,
+        "all_syndromes_per_axis": 128,
+        "autonomous_syndrome_extraction": false,
+        "collision_safe_autonomous_NN_lowering": false,
+        "declared_controller_roles_per_coarse_cell": 0.2777777777777778,
+        "declared_input_work_history_controller_roles": 60,
+        "delete_one_selected_correction_cases": 63,
+        "delete_one_selected_correction_not_two_residual_failures": 0,
+        "double_application_inverse_failures": 0,
+        "even_syndrome_failures": 0,
+        "explicit_unplaced_controller_role_residual": 60,
+        "inherited_literal_fine_NN_paths_exist": true,
+        "layer_orbit_failures": 0,
+        "length": 6,
+        "maximum_elementary_logical_gate_support_M2": 2,
+        "maximum_inherited_face_pair_route_edges": 344,
+        "odd_single_residual_failures": 0,
+        "parallel_leaf_layers": 2,
+        "physical_copy_selector": {
+          "declared_virtual_uniform_selector_M2": 42,
+          "fiber_size_histogram": {
+            "4": 12,
+            "8": 6
+          },
+          "fixed_selector_narrow_falsifier": true,
+          "fixed_sorted_copy_actions_tested": 432,
+          "fixed_sorted_copy_all24_failures": 342,
+          "logical_edge_roles": 18,
+          "odd_X_subsets_tested": 864,
+          "roles_with_stabilizer_invariant_odd_X_subset": 0,
+          "selector_M2_physically_placed": 0,
+          "single_copy_branches_not_equivalent_mod_pair_XX": 0,
+          "stabilizer_invariant_odd_X_subsets": 0,
+          "uniform_selector_algebraic_repair": true,
+          "uniform_selector_all24_orbit_failures": 0
+        },
+        "physically_placed_new_controller_roles_on_immutable_shore": 0,
+        "placed_Cycle642_logical_correction_edges": 18,
+        "placed_Cycle642_physical_aux_M2": 96,
+        "retained_input_syndrome_rail": true,
+        "single_face_flip_leakage_cases": 448,
+        "single_face_flip_not_odd_residual_failures": 0,
+        "two_M2_logical_gates_three_axes": 132,
+        "work_history_or_input_return_failures": 0
+      },
+      {
+        "all24_failures": 0,
+        "all576_failures": 0,
+        "all_syndromes_per_axis": 256,
+        "autonomous_syndrome_extraction": false,
+        "collision_safe_autonomous_NN_lowering": false,
+        "declared_controller_roles_per_coarse_cell": 0.20116618075801748,
+        "declared_input_work_history_controller_roles": 69,
+        "delete_one_selected_correction_cases": 127,
+        "delete_one_selected_correction_not_two_residual_failures": 0,
+        "double_application_inverse_failures": 0,
+        "even_syndrome_failures": 0,
+        "explicit_unplaced_controller_role_residual": 69,
+        "inherited_literal_fine_NN_paths_exist": true,
+        "layer_orbit_failures": 0,
+        "length": 7,
+        "maximum_elementary_logical_gate_support_M2": 2,
+        "maximum_inherited_face_pair_route_edges": 345,
+        "odd_single_residual_failures": 0,
+        "parallel_leaf_layers": 3,
+        "physical_copy_selector": {
+          "declared_virtual_uniform_selector_M2": 45,
+          "fiber_size_histogram": {
+            "4": 18,
+            "8": 3
+          },
+          "fixed_selector_narrow_falsifier": true,
+          "fixed_sorted_copy_actions_tested": 504,
+          "fixed_sorted_copy_all24_failures": 387,
+          "logical_edge_roles": 21,
+          "odd_X_subsets_tested": 528,
+          "roles_with_stabilizer_invariant_odd_X_subset": 0,
+          "selector_M2_physically_placed": 0,
+          "single_copy_branches_not_equivalent_mod_pair_XX": 0,
+          "stabilizer_invariant_odd_X_subsets": 0,
+          "uniform_selector_algebraic_repair": true,
+          "uniform_selector_all24_orbit_failures": 0
+        },
+        "physically_placed_new_controller_roles_on_immutable_shore": 0,
+        "placed_Cycle642_logical_correction_edges": 21,
+        "placed_Cycle642_physical_aux_M2": 96,
+        "retained_input_syndrome_rail": true,
+        "single_face_flip_leakage_cases": 1024,
+        "single_face_flip_not_odd_residual_failures": 0,
+        "two_M2_logical_gates_three_axes": 153,
+        "work_history_or_input_return_failures": 0
+      }
+    ],
+    "strict_fine_NN_compiler": false
+  },
+  "route_B_translation_frame_orbit_virtual_defect_field": {
+    "constructive_result": "the complete translation orbit of the fill tree is exactly translation/frame covariant, while a uniform orbit selector implements the logical edge X modulo Cycle642 equality checks",
+    "fixed_T0_tree_ordinary_translation_covariant_all_sizes": false,
+    "global_parity_query_used": false,
+    "odd_defect_lawful_domain_boundary": "odd syndrome is transported locally to one structural center defect and is not absorbed",
+    "pass": true,
+    "route_status": "EXACT_VIRTUAL_TRANSLATION_ORBIT_AND_UNIFORM_COPY_SELECTOR__PHYSICAL_FIELD_PLACEMENT_AND_ODD_ABSORBER_OPEN",
+    "selector_or_tree_orbit_physical_placement_complete": false,
+    "sizes": [
+      {
+        "additional_logical_tree_edges_for_full_translation_orbit": 0,
+        "additional_translation_orbit_edges_per_coarse_cell": 0.0,
+        "all24_translation_frame_family_failures": 0,
+        "all576_translation_frame_label_failures": 0,
+        "base_tree_translation_edge_symmetric_differences": [
+          0,
+          0,
+          0
+        ],
+        "declared_uniform_selector_M2": 21,
+        "distinct_translation_orbit_trees": 1,
+        "lawful_even_syndromes": 8,
+        "length": 3,
+        "maximum_local_handoff_gate_support_M2": 2,
+        "maximum_local_tree_degree": 3,
+        "odd_defect_absorber_present": false,
+        "odd_input_terminal_residuals": 8,
+        "physically_placed_additional_translation_orbit_edges": 0,
+        "physically_placed_uniform_selector_M2": 0,
+        "translation_orbit_decoder_covariance_failures": 0,
+        "translation_orbit_family_closure_failures": 0,
+        "uniform_physical_copy_selector_all24_failures": 0,
+        "uniform_selector_branch_equivalence_failures": 0
+      },
+      {
+        "additional_logical_tree_edges_for_full_translation_orbit": 90,
+        "additional_translation_orbit_edges_per_coarse_cell": 0.4166666666666667,
+        "all24_translation_frame_family_failures": 0,
+        "all576_translation_frame_label_failures": 0,
+        "base_tree_translation_edge_symmetric_differences": [
+          0,
+          8,
+          6,
+          4,
+          6,
+          8
+        ],
+        "declared_uniform_selector_M2": 42,
+        "distinct_translation_orbit_trees": 6,
+        "lawful_even_syndromes": 64,
+        "length": 6,
+        "maximum_local_handoff_gate_support_M2": 2,
+        "maximum_local_tree_degree": 4,
+        "odd_defect_absorber_present": false,
+        "odd_input_terminal_residuals": 64,
+        "physically_placed_additional_translation_orbit_edges": 0,
+        "physically_placed_uniform_selector_M2": 0,
+        "translation_orbit_decoder_covariance_failures": 0,
+        "translation_orbit_family_closure_failures": 0,
+        "uniform_physical_copy_selector_all24_failures": 0,
+        "uniform_selector_branch_equivalence_failures": 0
+      },
+      {
+        "additional_logical_tree_edges_for_full_translation_orbit": 126,
+        "additional_translation_orbit_edges_per_coarse_cell": 0.3673469387755102,
+        "all24_translation_frame_family_failures": 0,
+        "all576_translation_frame_label_failures": 0,
+        "base_tree_translation_edge_symmetric_differences": [
+          0,
+          6,
+          10,
+          8,
+          8,
+          10,
+          6
+        ],
+        "declared_uniform_selector_M2": 45,
+        "distinct_translation_orbit_trees": 7,
+        "lawful_even_syndromes": 128,
+        "length": 7,
+        "maximum_local_handoff_gate_support_M2": 2,
+        "maximum_local_tree_degree": 3,
+        "odd_defect_absorber_present": false,
+        "odd_input_terminal_residuals": 128,
+        "physically_placed_additional_translation_orbit_edges": 0,
+        "physically_placed_uniform_selector_M2": 0,
+        "translation_orbit_decoder_covariance_failures": 0,
+        "translation_orbit_family_closure_failures": 0,
+        "uniform_physical_copy_selector_all24_failures": 0,
+        "uniform_selector_branch_equivalence_failures": 0
+      }
+    ],
+    "translation_orbit_virtual_field_covariant": true,
+    "uniform_selector_returns_on_equality_code": true
+  },
+  "route_C_dissipative_Stinespring_comparator": {
+    "Kraus_form": "K_s = X(j(s)) P_s on each even face-syndrome sector; the Stinespring environment retains the independent numeric-vertex syndrome bits",
+    "environment_has_Record_or_occurrence_semantics": false,
+    "environment_returned_or_absorbed": false,
+    "lawful_domain": "even face syndrome per axis, equivalent to the already-fixed Wilson-plus dependency",
+    "pass": true,
+    "physical_projector_extraction_compiled": false,
+    "route_status": "EXACT_STINESPRING_SYNDROME_RESET_COMPARATOR__ENVIRONMENT_RETAINED_AND_PHYSICAL_PROJECTORS_UNPLACED",
+    "sizes": [
+      {
+        "composed_all24_Stinespring_covariance_failures": 0,
+        "composed_all576_Stinespring_covariance_failures": 0,
+        "delete_one_environment_coordinate_collision_pairs": 4,
+        "environment_returned_blank": false,
+        "even_Kraus_sectors_per_axis": 8,
+        "even_reset_failures": 0,
+        "expected_deleted_coordinate_collision_pairs": 4,
+        "expected_even_Kraus_sectors_per_axis": 8,
+        "full_even_plus_odd_Stinespring_label_collisions": 0,
+        "length": 3,
+        "maximum_face_projector_support_M2": 17,
+        "maximum_inherited_face_pair_route_edges": 136,
+        "odd_terminal_residual_failures": 0,
+        "physical_face_projector_controller_placed": false,
+        "single_face_leakage_cases": 32,
+        "single_face_leakage_failures": 0,
+        "syndrome_environment_M2_per_axis": 3,
+        "syndrome_environment_M2_three_axes_per_coarse_cell": 0.3333333333333333,
+        "uniform_selector_branch_failures": 0
+      },
+      {
+        "composed_all24_Stinespring_covariance_failures": 0,
+        "composed_all576_Stinespring_covariance_failures": 0,
+        "delete_one_environment_coordinate_collision_pairs": 32,
+        "environment_returned_blank": false,
+        "even_Kraus_sectors_per_axis": 64,
+        "even_reset_failures": 0,
+        "expected_deleted_coordinate_collision_pairs": 32,
+        "expected_even_Kraus_sectors_per_axis": 64,
+        "full_even_plus_odd_Stinespring_label_collisions": 0,
+        "length": 6,
+        "maximum_face_projector_support_M2": 24,
+        "maximum_inherited_face_pair_route_edges": 344,
+        "odd_terminal_residual_failures": 0,
+        "physical_face_projector_controller_placed": false,
+        "single_face_leakage_cases": 448,
+        "single_face_leakage_failures": 0,
+        "syndrome_environment_M2_per_axis": 6,
+        "syndrome_environment_M2_three_axes_per_coarse_cell": 0.08333333333333333,
+        "uniform_selector_branch_failures": 0
+      },
+      {
+        "composed_all24_Stinespring_covariance_failures": 0,
+        "composed_all576_Stinespring_covariance_failures": 0,
+        "delete_one_environment_coordinate_collision_pairs": 64,
+        "environment_returned_blank": false,
+        "even_Kraus_sectors_per_axis": 128,
+        "even_reset_failures": 0,
+        "expected_deleted_coordinate_collision_pairs": 64,
+        "expected_even_Kraus_sectors_per_axis": 128,
+        "full_even_plus_odd_Stinespring_label_collisions": 0,
+        "length": 7,
+        "maximum_face_projector_support_M2": 17,
+        "maximum_inherited_face_pair_route_edges": 345,
+        "odd_terminal_residual_failures": 0,
+        "physical_face_projector_controller_placed": false,
+        "single_face_leakage_cases": 1024,
+        "single_face_leakage_failures": 0,
+        "syndrome_environment_M2_per_axis": 7,
+        "syndrome_environment_M2_three_axes_per_coarse_cell": 0.061224489795918366,
+        "uniform_selector_branch_failures": 0
+      }
+    ],
+    "trace_preserving_on_declared_even_domain": true,
+    "uniform_copy_selector_uncomputes_on_equality_code": true
+  },
+  "route_by_route_disposition": {
+    "A": "EXACT_REVERSIBLE_SUPPLIED_SYNDROME_COMPILER__PHYSICAL_EXTRACTION_SELECTOR_AND_NN_PLACEMENT_OPEN",
+    "B": "EXACT_VIRTUAL_TRANSLATION_ORBIT_AND_UNIFORM_COPY_SELECTOR__PHYSICAL_FIELD_PLACEMENT_AND_ODD_ABSORBER_OPEN",
+    "C": "EXACT_STINESPRING_SYNDROME_RESET_COMPARATOR__ENVIRONMENT_RETAINED_AND_PHYSICAL_PROJECTORS_UNPLACED"
+  },
+  "runner_sha256": "3b8f5c034203f3f158ecd1fd887f78944b6ef071379c00b9486c976d49dafd9b",
+  "scope_firewall": {
+    "Stinespring_environment_is_returned": false,
+    "compiler_layer_is_physical_time": false,
+    "environment_is_Record_or_occurrence": false,
+    "generator_is_rate": false,
+    "odd_residual_is_odd_sector_genesis": false,
+    "phase_is_energy": false,
+    "retained_syndrome_rail_is_autonomous_extraction": false,
+    "source_gravity_or_Born_claimed": false,
+    "translation_orbit_family_is_orbit_state_preparation": false,
+    "two_M2_logical_gate_is_fine_NN_without_placement": false,
+    "uniform_virtual_selector_is_prepared_physical_selector": false
+  },
+  "shared_obstruction_claim": false,
+  "shared_obstruction_gate": "FAIL / DO NOT SHIP",
+  "shared_obstruction_shipped": false,
+  "shared_route_independent_obstruction": false,
+  "shore": {
+    "C649_consumed_as_premise": false,
+    "Cycle642_pass": true,
+    "Cycle648_audit": "unset",
+    "Cycle648_authority": "none",
+    "Cycle648_axiom_pressure": false,
+    "Cycle648_pass": true,
+    "Cycle648_shared_obstruction": false,
+    "hashes_match": true,
+    "immutable_shore_ref": "4f2b07fd39cc83a3f6c21bd9559f948b615bd05c",
+    "local_import_mirrors": {
+      "scripts/physical_fixed_cubic_wilson_fill_incidence_cycle642_2026_07_23.py": "fb0d8366494066e4191d66b9a2d83180cd99bf6f622b9de355bf28494e050bf7",
+      "scripts/physical_root_free_orbit_tree_preparation_tournament_cycle648_2026_07_23.py": "2198ab44b0598bb20967fae3343df7e63e915b67e2f74832cb7c528e7a1dfd66"
+    },
+    "local_import_mirrors_byte_equal_to_shore": true,
+    "observed": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_FIXED_CUBIC_WILSON_FILL_INCIDENCE_CYCLE642_NOTE_2026-07-23.md": "13f8074746f3b5e978f971567bbebecd1006ccd13b7d5fe91a0e38a946d30d3e",
+      "docs/work_history/repo/review_feedback/PHYSICAL_ROOT_FREE_ORBIT_TREE_PREPARATION_TOURNAMENT_CYCLE648_NOTE_2026-07-23.md": "b42d5364c0f30fb0d4d8c6336e8e7894a54873e0859bf922d79b556403353a80",
+      "outputs/physical_fixed_cubic_wilson_fill_incidence_cycle642_cold_2026_07_23.txt": "2af7cb45f80e1e5719da6750cd9f2efbbf2bee1bc14abe95e234eba91d6920cb",
+      "outputs/physical_fixed_cubic_wilson_fill_incidence_cycle642_receipt_2026_07_23.json": "9251ac323d4f26b672783fa8ed01dc8da6f3059c308d37325b3d7984969c3b37",
+      "outputs/physical_root_free_orbit_tree_preparation_tournament_cycle648_cold_2026_07_23.txt": "d6eb98c556812319b8989ec15867263097f5b1c2000bd30bd64e087724556e81",
+      "outputs/physical_root_free_orbit_tree_preparation_tournament_cycle648_receipt_2026_07_23.json": "b75c13e434e82eebd5af9813749261ac93c3197bffd9b0de04ff6619f4252336",
+      "scripts/physical_fixed_cubic_wilson_fill_incidence_cycle642_2026_07_23.py": "fb0d8366494066e4191d66b9a2d83180cd99bf6f622b9de355bf28494e050bf7",
+      "scripts/physical_root_free_orbit_tree_preparation_tournament_cycle648_2026_07_23.py": "2198ab44b0598bb20967fae3343df7e63e915b67e2f74832cb7c528e7a1dfd66"
+    },
+    "working_tree_C649_paths_observed_but_not_read_or_imported": [
+      "scripts/physical_reserved_outer_shell_sidecar_placement_cycle649_2026_07_23.py",
+      "outputs/physical_reserved_outer_shell_sidecar_placement_cycle649_receipt_2026_07_23.json",
+      "docs/work_history/repo/review_feedback/PHYSICAL_RESERVED_OUTER_SHELL_SIDECAR_PLACEMENT_CYCLE649_NOTE_2026-07-23.md"
+    ]
+  },
+  "six_wall_ledger": {
+    "C_int": "pinned Cycle642 quotient and Cycle219/Cycle230 fixtures only; no new E G intertwiner",
+    "C_local": "advanced abstractly: every controller gate has support at most two and all work returns from a retained syndrome rail; controller placement, syndrome extraction, and collision-safe NN lowering remain",
+    "C_num": "advanced locally: exhaustive syndrome-labelled environment counts and exact deletion collisions; no empirical or Born normalization",
+    "C_ref": "advanced algebraically: fixed-copy frame selection is replaced by an orbit-uniform selector and full translated-tree family; physical orbit-label/selector genesis remains",
+    "C_source": "unchanged: no energy, rate, source, stress, gravity, Record, occurrence, or autonomous environment renewal",
+    "C_wrap": "advanced: reversible even/odd message compilation and exact odd terminal residual; no odd absorber or full physical reset"
+  },
+  "status": "cycle651-physical-root-label-blind-face-pump-compiler",
+  "strongest_constructive_result": "every L3/L6/L7 face syndrome has an exact two-M2 reversible leaf-message circuit from a retained syndrome rail; a proper-cubic uniform copy selector returns exactly modulo Cycle642 equality checks; the complete translated-tree family is translation/frame covariant; all new controller, selector, and orbit-field placements remain explicit zeros",
+  "strongest_narrow_falsifier": "on the immutable Cycle642 fibers, a fixed sorted single-copy X has 171/342/387 all24 failures and exhaustive odd-subset enumeration finds no stabilizer-invariant odd-X subset; this excludes only fixed Pauli copy selection on that encoding",
+  "supplied_structure": [
+    "immutable Cycle642/Cycle648 shore",
+    "finite L3/L6/L7",
+    "compile-time tree topology",
+    "retained syndrome input rail",
+    "blank work/history rails",
+    "Cycle642 orbit fibers and equality code",
+    "one unplaced uniform selector per logical edge",
+    "full translated tree family",
+    "even lawful domain",
+    "syndrome-labelled Stinespring environment",
+    "Cycle642 fine-NN path families without arbitration"
+  ],
+  "support_at_most_two_fine_NN_physical_lowering": false,
+  "support_at_most_two_logical_compiler": true,
+  "tests_failed": 0,
+  "tests_passed": 10
+}

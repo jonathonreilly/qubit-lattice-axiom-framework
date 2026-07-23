@@ -788,15 +788,23 @@ class SchemaRecoveryTest(unittest.TestCase):
 
     def test_compute_and_transaction_exclusions_persist_typed_causes(self):
         report = [
-            {"cid": "compute", "result": "compute_required", "detail": "cache missing"},
+            {
+                "cid": "compute",
+                "pass": 1,
+                "result": "compute_required",
+                "detail": "cache missing",
+            },
             {
                 "cid": "transaction",
                 "result": "apply_or_gate_failed",
                 "detail": "pipeline failed",
+                "rollback_verified": True,
+                "rollback_detail": "reset to origin/main",
             },
             {
                 "cid": "transaction",
                 "result": batch.CLAIM_TRANSACTION_QUARANTINE_RESULT,
+                "detail": "claim excluded after verified rollback",
             },
         ]
         with tempfile.TemporaryDirectory() as tmp:
@@ -805,9 +813,7 @@ class SchemaRecoveryTest(unittest.TestCase):
             batch.persist_claim_transaction_quarantines(
                 path, {"transaction"}, report
             )
-            records = [
-                json.loads(line) for line in path.read_text().splitlines()
-            ]
+            records = batch.load_campaign_exclusion_records(path)
 
         self.assertEqual(
             {row["reason"] for row in records},
@@ -864,7 +870,12 @@ class SchemaRecoveryTest(unittest.TestCase):
                     {
                         "claim_id": "kept",
                         "reason": batch.SCHEMA_QUARANTINE_RESULT,
-                        "failures": [{"result": "validation_failed"}],
+                        "failures": [{
+                            "cid": "kept",
+                            "pass": 1,
+                            "result": "validation_failed",
+                            "detail": "bad schema",
+                        }],
                         "recorded_at": "2026-07-23T12:00:00+00:00",
                     }
                 )
@@ -914,6 +925,69 @@ class SchemaRecoveryTest(unittest.TestCase):
                 '"failures":[],"recorded_at":"2026-07-23T12:00:00+00:00"}\n',
                 "failures must be a non-empty list",
             ),
+            "empty failure object": (
+                '{"claim_id":"row","reason":"schema_invalid_quarantined",'
+                '"failures":[{}],'
+                '"recorded_at":"2026-07-23T12:00:00+00:00"}\n',
+                "failure has no string result",
+            ),
+            "unexpected failure field": (
+                '{"claim_id":"row","reason":"schema_invalid_quarantined",'
+                '"failures":[{"cid":"row","pass":1,'
+                '"result":"malformed_json","typo":true}],'
+                '"recorded_at":"2026-07-23T12:00:00+00:00"}\n',
+                "invalid campaign exclusion failure fields",
+            ),
+            "wrong reason evidence": (
+                '{"claim_id":"row","reason":"compute_required_quarantined",'
+                '"failures":[{"cid":"row","pass":1,'
+                '"result":"validation_failed","detail":"bad schema"}],'
+                '"recorded_at":"2026-07-23T12:00:00+00:00"}\n',
+                "failure result is incompatible",
+            ),
+            "transaction without rollback proof": (
+                '{"claim_id":"row","reason":"claim_transaction_quarantined",'
+                '"failures":[{"cid":"row",'
+                '"result":"claim_transaction_quarantined",'
+                '"detail":"quarantined"}],'
+                '"recorded_at":"2026-07-23T12:00:00+00:00"}\n',
+                "no verified apply/gate rollback failure",
+            ),
+            "failure cid mismatch": (
+                '{"claim_id":"row","reason":"compute_required_quarantined",'
+                '"failures":[{"cid":"other","pass":1,'
+                '"result":"compute_required","detail":"cache missing"}],'
+                '"recorded_at":"2026-07-23T12:00:00+00:00"}\n',
+                "failure cid does not match",
+            ),
+            "shard unsafe claim id": (
+                '{"claim_id":"bad/id","reason":"compute_required_quarantined",'
+                '"failures":[{"cid":"bad/id","pass":1,'
+                '"result":"compute_required","detail":"cache missing"}],'
+                '"recorded_at":"2026-07-23T12:00:00+00:00"}\n',
+                "claim_id is not shard-safe",
+            ),
+            "dot-only claim id": (
+                '{"claim_id":".","reason":"compute_required_quarantined",'
+                '"failures":[{"cid":".","pass":1,'
+                '"result":"compute_required","detail":"cache missing"}],'
+                '"recorded_at":"2026-07-23T12:00:00+00:00"}\n',
+                "claim_id is not shard-safe",
+            ),
+            "overflow float": (
+                '{"claim_id":"row","reason":"compute_required_quarantined",'
+                '"failures":[{"cid":"row","pass":1,'
+                '"result":"compute_required","detail":1e999}],'
+                '"recorded_at":"2026-07-23T12:00:00+00:00"}\n',
+                "non-finite JSON number",
+            ),
+            "noncanonical timestamp separator": (
+                '{"claim_id":"row","reason":"compute_required_quarantined",'
+                '"failures":[{"cid":"row","pass":1,'
+                '"result":"compute_required","detail":"cache missing"}],'
+                '"recorded_at":"2026-07-23x12:00:00+00:00"}\n',
+                "not canonical UTC ISO-8601",
+            ),
         }
         for label, (payload, expected) in cases.items():
             with self.subTest(label=label), tempfile.TemporaryDirectory() as tmp:
@@ -921,6 +995,25 @@ class SchemaRecoveryTest(unittest.TestCase):
                 path.write_text(payload, encoding="utf-8")
                 with self.assertRaisesRegex(ValueError, expected):
                     batch.load_campaign_quarantine(path)
+
+    def test_campaign_state_loader_accepts_canonical_dotted_claim_id(self):
+        record = {
+            "claim_id": "ai_methodology.raw.canonical_framing_paragraph",
+            "reason": batch.COMPUTE_QUARANTINE_RESULT,
+            "failures": [{
+                "cid": "ai_methodology.raw.canonical_framing_paragraph",
+                "pass": 1,
+                "result": "compute_required",
+                "detail": "cache missing",
+            }],
+            "recorded_at": "2026-07-23T12:00:00+00:00",
+        }
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "quarantine.jsonl"
+            path.write_text(json.dumps(record) + "\n", encoding="utf-8")
+            loaded = batch.load_campaign_exclusion_records(path)
+
+        self.assertEqual(loaded, [record])
 
     def test_apply_gate_failure_continues_after_explicit_verified_rollback(self):
         job = {

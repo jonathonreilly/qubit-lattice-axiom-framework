@@ -52,10 +52,56 @@ held sizes are refused rather than silently ordered.
 
 No shared route-independent obstruction and no axiom pressure are established.
 
+## Six-layer executable acceptance contract
+
+The campaign separates six obligations that cannot be substituted for one
+another:
+
+| layer | current status | strongest exact witness | remaining import |
+|---|---|---|---|
+| conditional_form_forcing_theorem | CONDITIONAL_THEOREMS_AVAILABLE_COMPARISON_ONLY | closed non-retained PR5472/5476/5479 heads | menu eligibility and effect-functionality; closed heads are not retained premises |
+| physically_supplied_menu_eligibility | OPEN_ON_INSPECTED_RETAINED_SURFACES | none | menu family, outcome splitting/merging, and eligibility law |
+| effect_functionality_noncontextual_grade_w | CANDIDATE_GRADE_WITH_SUPPLIED_CALIBRATION_NOT_EFFECT_FUNCTIONAL_W | Route C state-derived denominator-64 mask | effect identification, embedding independence, and physical calibration |
+| occurrence_selector_sigma | BASIS_CONDITIONAL_ONLY_COHERENT_SECTORS_RETAINED | Route B unique-quorum basis-code packet into Cycle531 conditional occurrence | objective actuality/selector sigma on coherent inputs |
+| Record_admission_and_permanence | AXIOM_CONTENT_AND_FINITE_CANDIDATE_PRESERVATION_NOT_PHYSICAL_IDENTIFICATION | Cycle621 supplied finite preserving algebra downstream of Cycle614 packet | packet-to-Record identification and physical all-future operation law |
+| frequencies_and_realized_history_meaning | FINITE_CANDIDATE_CORPUS_NOT_OBJECTIVE_OR_BORN | Route C exact complete-block grade/frequency equality | objective corpus, renewal, independence/convergence, and probability meaning |
+
+The executable retained-surface probe covers Cycles 531/571/587/592/597/614/621
+and both Cycle-625 positive routes.  It finds no retained physical M2
+instrument that jointly emits a ternary, scaled-projector, or mixed-projective
+menu and an effect-functional noncontextual grade without host choice.  This is
+a bounded dependency result on the declared surfaces, not a universal
+impossibility claim.  Route B is an acceptance-ready conditional occurrence
+port; Route C is an acceptance-ready candidate grade block.  Neither closes a
+missing layer by relabeling.
+
+## Exact comparison-only heads
+
+| source | immutable head | declared status | use here | back-credit |
+|---|---|---|---|---:|
+| PR5472 | `2c648ccb408a8c36a700f53ec5401369e3bbd490` | CLOSED_NONRETAINED | conditional effect-menu forcing/product-menu boundary comparison only | false |
+| PR5476 | `a994617819f57e599dd101c654be366123392236` | CLOSED_NONRETAINED | conditional scaled-projector forcing/paired-menu boundary comparison only | false |
+| PR5479 | `84053108a424cef26dc23e484549df331ad2050f` | CLOSED_NONRETAINED | binary/ternary threshold, mixed-projective forcing, and incomparability comparison only | false |
+| PR5557 | `a1e2f1ea60b1cf9b9cb0ae100c61cfd1f3a07318` | OPEN_EXTERNAL_CANDIDATE_COMPARISON | Cycle610-612 shared occurrence/admission dependency comparison; never back-credit | false |
+
+The three Born heads are closed and non-retained.  They establish conditional
+mathematical surfaces only: effect-menu forcing plus the product-menu boundary;
+scaled-projector forcing plus the paired-menu boundary; and the exact
+binary-versus-ternary threshold with mixed-projective forcing and witnessed
+family incomparability.  Their own notes explicitly leave physical menu
+selection underived.  PR5557's Cycle610-612 head independently types the same
+occurrence selector `sigma` and admission split for the time lane.  It is an
+external candidate comparison, not back-credit into Cycle 625.
+
 ## Read-only dependency sweep
 
 The runner byte-pins the actual axiom/premise and primitive surfaces and the
-Cycle531/552/571/587/592/597/614/621 runners/notes.  Cycle614 and Cycle621
+Cycle531/552/571/587/592/597/614/621 runners/notes, plus the immutable git
+objects in the comparison table.  Every retained local shore is read from
+immutable committed head `b31c92adb5bbf79b50b874078688d0bf62651eef` with `git show`; no dirty
+working-tree variant is a premise or receives back-credit.  Dirty variants are
+reported only as non-retained comparisons, so a clean checkout containing the
+committed object reproduces the tournament.  Cycle614 and Cycle621
 receipts are normalized only by deleting run-dependent elapsed/RSS fields and
 then hash-pinned.  The sweep confirms:
 
@@ -169,7 +215,8 @@ history theorem.
 
 ### Supplied
 
-- read-only Admissibility, Record, realized-state, scale, kinetic-isotropy, and premise surfaces;
+- read-only Admissibility, Record, realized-state, scale, kinetic-isotropy, and premise surfaces from committed head b31c92adb5bbf79b50b874078688d0bf62651eef;
+- closed non-retained PR5472/5476/5479 heads and external PR5557 Cycle610-612 head as exact comparison-only git objects with no back-credit;
 - Cycle614 92-M2 unique-quorum candidate circuit, packet grammar, triplicated matter endpoint genesis, and blank packet;
 - the identification of unique quorum as the Route-B candidate rule and scalar Cycle531 binding/member lane zero;
 - one ready resource, blank archive/loser/member/receipt/snapshot rails, and finite line/frame chart;
@@ -178,6 +225,7 @@ history theorem.
 
 ### Derived on the declared code
 
+- one executable six-layer acceptance contract separating theorem, menu, grade, sigma, Record, and frequency/history obligations;
 - five explicit nonconstant total proper-cubic local relation tables and exact extensional separators;
 - one 129-M2 reversible unique-quorum packet/resource/member/receipt/occurrence map with retained candidates and losers;
 - exact inverse, deletion, malformed, L3/L4/L6, all24/all576, leakage, coherent-sector, and mass-preservation controls;
@@ -186,6 +234,7 @@ history theorem.
 
 ### Open
 
+- one retained bounded M2 instrument that physically emits a ternary, scaled-projector, or mixed-projective menu and effect-functional grade without host choice;
 - extensional identification of nature's fixed Admissibility rule and a covariant local formation/admission functional from state (bare occurrence is already supplied);
 - objective actuality for a coherent input, identification of this packet as a framework Record, and physical realization of axiom-supplied permanence/readability;
 - derivation of the state/parameter calibration and extension beyond the even-count bounded family;
@@ -204,16 +253,22 @@ are **FAIL / DO NOT SHIP**.
 
 N2 collapses the residuals to seven walls—extensional rule content, the local
 formation functional, actuality, Record, calibration, mathematical frame/menu,
-and probability—and audits all 42 directed pairs.  None implies another on the exhibited interfaces.  N3 lists
-the candidate rule, adapter, resource, calibration, address chart, blank
-capacity, and semantic interpretations explicitly.  N4 uses each cited cycle
-only at its exact residual.  N5 forbids promotion of packet to Record, basis
-winner to actuality, or grade/frequency to Born.  N6 retains both positive
-compilers as replaceable test benches.  N7's concrete hostile steelman is a
-translation-invariant dissipative QCA with an exposed extensional table,
-retained exhaust, post-formation preservation, renewal, and blinded
-changed-state frequency tests.  N8 observes that prior wiring and ROM imports
-did close constructively, so repeated boundaries do not create axiom pressure.
+and probability—and audits all 42 directed pairs.  None implies another on the
+exhibited interfaces.  N3 lists the candidate rule, adapter, resource,
+calibration, address chart, blank capacity, closed-head status, and semantic
+interpretations explicitly.
+
+N4 contains ten exact rows.  Every row exposes `prior_ref`, exact repository
+`prior_path` and `prior_line`, exact current path and line, `same_scope`,
+`exact_match`, and `use_as_closure`.  Three further rows drop the conditional
+form-forcing theorems as physical-menu evidence because their scope does not
+match; they remain comparison-only.  N5 contains six five-resolution rhetoric
+rows, one for each acceptance layer.  N6 contains six structured
+`file` / `status` / `what_closes` paths.  N7 gives an actionable dissipative-QCA
+steelman with three exact authorities and a held-test terminal.  N8 gives nine
+row-wise echoes with canonical `cycle` / `retired` / `mechanism` /
+`applicability` fields and exact citations.  Repeated boundaries do not create
+axiom pressure because the target-equivalent constructive routes remain open.
 
 Shared obstruction: **not established**.
 

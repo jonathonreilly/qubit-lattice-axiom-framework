@@ -1,11 +1,179 @@
 {
   "audit": "unset",
+  "author_accepted": false,
   "authority": "none",
   "axiom_pressure": false,
-  "elapsed_seconds": 1.667964500025846,
+  "breakthrough": false,
+  "cold_transcript_sha256": "8085c6b979c64bc968270f3f88382f22e7e61e8ce474bc28c1f68fcbfc1fd1f4",
+  "elapsed_seconds": 1.6964040830498561,
+  "external_maximum_RSS_bytes": 32456704,
+  "external_peak_memory_footprint_bytes": 21938632,
+  "external_timed_wall_seconds": 1.75,
+  "external_comparison_heads": {
+    "back_credit": false,
+    "closed_nonretained_heads": [
+      "PR5472",
+      "PR5476",
+      "PR5479"
+    ],
+    "comparison_only": true,
+    "external_candidate_head": "PR5557",
+    "heads": {
+      "PR5472": {
+        "back_credit": false,
+        "declared_state": "CLOSED_NONRETAINED",
+        "head_oid": "2c648ccb408a8c36a700f53ec5401369e3bbd490",
+        "pass": true,
+        "retained_as_premise": false,
+        "surfaces": [
+          {
+            "citation_fragment": "Neither horn is selected. The axioms supply no menus at all",
+            "citation_line": 60,
+            "citation_line_text": "Neither horn is selected. The axioms supply no menus at all; which resolutions",
+            "expected_sha256": "f7ddc109ebb97d5514c7b41a78c523fe6adcf5419c08cff1ec75e54b2c99d435",
+            "observed_sha256": "f7ddc109ebb97d5514c7b41a78c523fe6adcf5419c08cff1ec75e54b2c99d435",
+            "pass": true,
+            "path": "docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md"
+          },
+          {
+            "citation_fragment": null,
+            "citation_line": null,
+            "citation_line_text": null,
+            "expected_sha256": "2bb29c0d1e27dc155af449c2cf76177d49a20933739eb6429aba06577ff1ef24",
+            "observed_sha256": "2bb29c0d1e27dc155af449c2cf76177d49a20933739eb6429aba06577ff1ef24",
+            "pass": true,
+            "path": "scripts/born_form_effect_menu_sitewise_forcing_2026_07_17.py"
+          }
+        ],
+        "use": "conditional effect-menu forcing/product-menu boundary comparison only"
+      },
+      "PR5476": {
+        "back_credit": false,
+        "declared_state": "CLOSED_NONRETAINED",
+        "head_oid": "a994617819f57e599dd101c654be366123392236",
+        "pass": true,
+        "retained_as_premise": false,
+        "surfaces": [
+          {
+            "citation_fragment": "the menu family the physical registration supplies is underived",
+            "citation_line": 17,
+            "citation_line_text": "adopted; the menu family the physical registration supplies is underived.",
+            "expected_sha256": "042a5e69a50dba337fc3e8bfd5faa3a6cef34b42c3e0ab6344ae5d05f5e6cdc7",
+            "observed_sha256": "042a5e69a50dba337fc3e8bfd5faa3a6cef34b42c3e0ab6344ae5d05f5e6cdc7",
+            "pass": true,
+            "path": "docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md"
+          },
+          {
+            "citation_fragment": null,
+            "citation_line": null,
+            "citation_line_text": null,
+            "expected_sha256": "05fd738e28d4c6c8969758b6bc89bad22d94215dc1387427b7cc5f500c511136",
+            "observed_sha256": "05fd738e28d4c6c8969758b6bc89bad22d94215dc1387427b7cc5f500c511136",
+            "pass": true,
+            "path": "scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py"
+          }
+        ],
+        "use": "conditional scaled-projector forcing/paired-menu boundary comparison only"
+      },
+      "PR5479": {
+        "back_credit": false,
+        "declared_state": "CLOSED_NONRETAINED",
+        "head_oid": "84053108a424cef26dc23e484549df331ad2050f",
+        "pass": true,
+        "retained_as_premise": false,
+        "surfaces": [
+          {
+            "citation_fragment": "No family is selected; nothing here derives which menus record formation",
+            "citation_line": 62,
+            "citation_line_text": "No family is selected; nothing here derives which menus record formation",
+            "expected_sha256": "feb8b3ca2ed1a8ffb3d272ce81814cfc2c6598148e9fecf2a48df88b53c45a35",
+            "observed_sha256": "feb8b3ca2ed1a8ffb3d272ce81814cfc2c6598148e9fecf2a48df88b53c45a35",
+            "pass": true,
+            "path": "docs/BORN_FORM_MENU_OUTCOME_THRESHOLD_AND_MIXED_PROJECTIVE_FORCING_BOUNDED_THEOREM_NOTE_2026-07-17.md"
+          },
+          {
+            "citation_fragment": null,
+            "citation_line": null,
+            "citation_line_text": null,
+            "expected_sha256": "6f6e75bb73a13a18bcfadf22a35bb16d0c29e464162dd140aee4549f8b7b87e7",
+            "observed_sha256": "6f6e75bb73a13a18bcfadf22a35bb16d0c29e464162dd140aee4549f8b7b87e7",
+            "pass": true,
+            "path": "scripts/born_form_menu_outcome_threshold_and_mixed_projective_forcing_2026_07_17.py"
+          }
+        ],
+        "use": "binary/ternary threshold, mixed-projective forcing, and incomparability comparison only"
+      },
+      "PR5557": {
+        "back_credit": false,
+        "declared_state": "OPEN_EXTERNAL_CANDIDATE_COMPARISON",
+        "head_oid": "a1e2f1ea60b1cf9b9cb0ae100c61cfd1f3a07318",
+        "pass": true,
+        "retained_as_premise": false,
+        "surfaces": [
+          {
+            "citation_fragment": "shared supplied middle, not a",
+            "citation_line": 364,
+            "citation_line_text": "actuality dependency with the Born lane is a shared supplied middle, not a",
+            "expected_sha256": "63854c353f477f7beb8371d3a4489c02d8787c54679ab8963c7cc828972a4ea4",
+            "observed_sha256": "63854c353f477f7beb8371d3a4489c02d8787c54679ab8963c7cc828972a4ea4",
+            "pass": true,
+            "path": "docs/work_history/repo/review_feedback/PHYSICAL_INTRINSIC_TICK_EVENT_RELATIONAL_DURATION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md"
+          },
+          {
+            "citation_fragment": null,
+            "citation_line": null,
+            "citation_line_text": null,
+            "expected_sha256": "61d624d3f47e371a3b99f55a3c60db68c1fe77f5d93a21651f9172b2d49f1458",
+            "observed_sha256": "61d624d3f47e371a3b99f55a3c60db68c1fe77f5d93a21651f9172b2d49f1458",
+            "pass": true,
+            "path": "scripts/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22.py"
+          },
+          {
+            "citation_fragment": "Occurrence selector sigma",
+            "citation_line": 97,
+            "citation_line_text": "1. **Occurrence selector sigma**: candidate opportunity -> actual occurrence.",
+            "expected_sha256": "91e0e0bb6c931f7da7a468a7094deffb775523f22b75334322417639edf57056",
+            "observed_sha256": "91e0e0bb6c931f7da7a468a7094deffb775523f22b75334322417639edf57056",
+            "pass": true,
+            "path": "docs/work_history/repo/review_feedback/PHYSICAL_AUTONOMOUS_BOUND_BRANCH_PREPARATION_TOURNAMENT_CYCLE611_NOTE_2026-07-22.md"
+          },
+          {
+            "citation_fragment": null,
+            "citation_line": null,
+            "citation_line_text": null,
+            "expected_sha256": "9f1d4a2aabca8af1f61ef42071c8d2bce05018eace7a6f0886d769871689a13d",
+            "observed_sha256": "9f1d4a2aabca8af1f61ef42071c8d2bce05018eace7a6f0886d769871689a13d",
+            "pass": true,
+            "path": "scripts/physical_autonomous_bound_branch_preparation_tournament_cycle611_2026_07_22.py"
+          },
+          {
+            "citation_fragment": "conditional candidate Record.  No proper time",
+            "citation_line": 167,
+            "citation_line_text": "cell is a conditional candidate Record.  No proper time, lapse, redshift,",
+            "expected_sha256": "028133c490e771dd3012061c79910fcfb88cd6132df072ec15e725fe9bc35496",
+            "observed_sha256": "028133c490e771dd3012061c79910fcfb88cd6132df072ec15e725fe9bc35496",
+            "pass": true,
+            "path": "docs/work_history/repo/review_feedback/PHYSICAL_TICK_ECHO_ASSOCIATION_CAUSAL_ORDER_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md"
+          },
+          {
+            "citation_fragment": null,
+            "citation_line": null,
+            "citation_line_text": null,
+            "expected_sha256": "4494ce889809f6a179fc9bb712aa851fa6e73dac32a7b1bfbdb71903be5fadde",
+            "observed_sha256": "4494ce889809f6a179fc9bb712aa851fa6e73dac32a7b1bfbdb71903be5fadde",
+            "pass": true,
+            "path": "scripts/physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22.py"
+          }
+        ],
+        "use": "Cycle610-612 shared occurrence/admission dependency comparison; never back-credit"
+      }
+    },
+    "pass": true
+  },
   "highest_honest_terminal": "bounded candidate local formation/admission interface downstream of supplied bare occurrence plus bounded candidate grade/corpus; not extensional law identification, actuality, Record, realized history, or Born probability",
   "inventory": {
     "derived": [
+      "one executable six-layer acceptance contract separating theorem, menu, grade, sigma, Record, and frequency/history obligations",
       "five explicit nonconstant total proper-cubic local relation tables and exact extensional separators",
       "one 129-M2 reversible unique-quorum packet/resource/member/receipt/occurrence map with retained candidates and losers",
       "exact inverse, deletion, malformed, L3/L4/L6, all24/all576, leakage, coherent-sector, and mass-preservation controls",
@@ -13,6 +181,7 @@
       "exact complete-block grade/frequency equality, calibration deletion, address-permutation, and held off-family controls"
     ],
     "open": [
+      "one retained bounded M2 instrument that physically emits a ternary, scaled-projector, or mixed-projective menu and effect-functional grade without host choice",
       "extensional identification of nature's fixed Admissibility rule and a covariant local formation/admission functional from state (bare occurrence is already supplied)",
       "objective actuality for a coherent input, identification of this packet as a framework Record, and physical realization of axiom-supplied permanence/readability",
       "derivation of the state/parameter calibration and extension beyond the even-count bounded family",
@@ -21,7 +190,8 @@
       "translation-invariant renewal/noise/infinite volume and integration with physical time, energy/stress/source/gravity"
     ],
     "supplied": [
-      "read-only Admissibility, Record, realized-state, scale, kinetic-isotropy, and premise surfaces",
+      "read-only Admissibility, Record, realized-state, scale, kinetic-isotropy, and premise surfaces from committed head b31c92adb5bbf79b50b874078688d0bf62651eef",
+      "closed non-retained PR5472/5476/5479 heads and external PR5557 Cycle610-612 head as exact comparison-only git objects with no back-credit",
       "Cycle614 92-M2 unique-quorum candidate circuit, packet grammar, triplicated matter endpoint genesis, and blank packet",
       "the identification of unique quorum as the Route-B candidate rule and scalar Cycle531 binding/member lane zero",
       "one ready resource, blank archive/loser/member/receipt/snapshot rails, and finite line/frame chart",
@@ -29,51 +199,88 @@
       "finite noiseless gates and the byte-pinned Cycle523 one-/two-M2 lowering used by Cycles597/614"
     ]
   },
-  "maximum_RSS_bytes": 29278208,
+  "maturity_rebase": null,
+  "maximum_RSS_bytes": 32440320,
   "no_go_discipline": {
     "N1_broad_negative_gate": "FAIL_DO_NOT_SHIP",
     "N1_normalized_families": [
       {
         "family": "extensional symmetric local relations",
+        "honesty_marker": "ATTEMPTED",
         "mechanism": "proper-cubic invariant Hamming-shell rule",
+        "mechanism_invariant": "proper-cubic invariant Hamming-shell rule",
         "object": "six-neighbor basis words and fixed shell predicate",
+        "object_formulation": "six-neighbor basis words and fixed shell predicate",
+        "search_status": "ATTEMPTED",
         "status": "ATTEMPTED_MODEL_SEPARATION",
-        "terminal": "identify the framework's one covariant local formation/admission functional from state rather than supply a candidate table"
+        "strength_vs_target": "weaker",
+        "terminal": "identify the framework's one covariant local formation/admission functional from state rather than supply a candidate table",
+        "terminal_obligation": "identify the framework's one covariant local formation/admission functional from state rather than supply a candidate table"
       },
       {
         "family": "reversible resource-debit local competition",
+        "honesty_marker": "ATTEMPTED",
         "mechanism": "unique quorum plus reversible copy/debit and Cycle531 typed ports",
+        "mechanism_invariant": "unique quorum plus reversible copy/debit and Cycle531 typed ports",
         "object": "Cycle614 packet, retained candidates/losers, and ready/spent token",
+        "object_formulation": "Cycle614 packet, retained candidates/losers, and ready/spent token",
+        "search_status": "ATTEMPTED",
         "status": "ATTEMPTED_POSITIVE_CONDITIONAL",
-        "terminal": "derive objective actuality, identify the packet as a framework Record, and physically realize its preservation"
+        "strength_vs_target": "weaker",
+        "terminal": "derive objective actuality, identify the packet as a framework Record, and physically realize its preservation",
+        "terminal_obligation": "derive objective actuality, identify the packet as a framework Record, and physically realize its preservation"
       },
       {
         "family": "ROM-free state-to-grade complete block",
+        "honesty_marker": "ATTEMPTED",
         "mechanism": "fixed unary calibration plus exhaustive 4x4x4 address block",
+        "mechanism_invariant": "fixed unary calibration plus exhaustive 4x4x4 address block",
         "object": "opposite-axis endpoint occupancies and denominator-64 mask",
+        "object_formulation": "opposite-axis endpoint occupancies and denominator-64 mask",
+        "search_status": "ATTEMPTED",
         "status": "ATTEMPTED_POSITIVE_CONDITIONAL",
-        "terminal": "derive calibration, objective corpus, and Born probability"
+        "strength_vs_target": "weaker",
+        "terminal": "derive calibration, objective corpus, and Born probability",
+        "terminal_obligation": "derive calibration, objective corpus, and Born probability"
       },
       {
         "family": "objective stochastic local successor",
+        "honesty_marker": null,
         "mechanism": "covariant stochastic dilation and physical resource ledger",
+        "mechanism_invariant": "covariant stochastic dilation and physical resource ledger",
         "object": "local innovation field with retained exhaust",
+        "object_formulation": "local innovation field with retained exhaust",
+        "search_status": "OPEN_UNTESTED_NOT_COUNTED",
         "status": "OPEN_NOT_COUNTED",
-        "terminal": "derive kernel, actuality, renewal, and held Record frequencies"
+        "strength_vs_target": "unknown/comparable",
+        "terminal": "derive kernel, actuality, renewal, and held Record frequencies",
+        "terminal_obligation": "derive kernel, actuality, renewal, and held Record frequencies"
       },
       {
         "family": "unique-extension realized history",
+        "honesty_marker": null,
         "mechanism": "one covariant successor for every lawful local context",
+        "mechanism_invariant": "one covariant successor for every lawful local context",
         "object": "law-admissible global continuation",
+        "object_formulation": "law-admissible global continuation",
+        "search_status": "OPEN_UNTESTED_NOT_COUNTED",
         "status": "OPEN_NOT_COUNTED",
-        "terminal": "construct local compiler, permanence, and state-dependent grade relation"
+        "strength_vs_target": "unknown/comparable",
+        "terminal": "construct local compiler, permanence, and state-dependent grade relation",
+        "terminal_obligation": "construct local compiler, permanence, and state-dependent grade relation"
       },
       {
         "family": "dissipative record-forming bath",
+        "honesty_marker": null,
         "mechanism": "nonreentering formation channel with renewal and mixing",
+        "mechanism_invariant": "nonreentering formation channel with renewal and mixing",
         "object": "metastable local medium and outgoing correlations",
+        "object_formulation": "metastable local medium and outgoing correlations",
+        "search_status": "OPEN_UNTESTED_NOT_COUNTED",
         "status": "OPEN_NOT_COUNTED",
-        "terminal": "prove permanence, objective outcomes, and blinded calibration"
+        "strength_vs_target": "unknown/comparable",
+        "terminal": "prove permanence, objective outcomes, and blinded calibration",
+        "terminal_obligation": "prove permanence, objective outcomes, and blinded calibration"
       }
     ],
     "N1_qualifying_attempts": 3,
@@ -351,73 +558,639 @@
       "finite noiseless gate alphabet, Cycle523 lowering, bounded line chart, and frame action",
       "bare occurrence is supplied by 'Records form'; the formation functional, basis actuality interpretation, Record permanence, probability meaning, and held off-family extension are not hidden"
     ],
-    "N4_residual_matching": [
+    "N4_dropped_nonmatches": [
       {
-        "residual": "names one fixed covariant rule but not its extensional truth table or formation/update functional",
-        "use": "Route-A model separation only",
-        "witness": "retained Admissibility surface"
+        "current_line": 1108,
+        "current_path": "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py",
+        "current_residual": "conditional mathematical forcing is not a physical M2 menu/grade/occurrence compiler",
+        "disposition": "dropped as physical menu or Born evidence; retained as exact comparison only",
+        "exact_match": false,
+        "prior_line": 127,
+        "prior_path": "docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+        "prior_ref": "2c648ccb408a8c36a700f53ec5401369e3bbd490",
+        "prior_residual": "effect-menu conditional form-forcing theorem",
+        "same_scope": false,
+        "scope_match": false,
+        "use_as_closure": false
       },
       {
-        "residual": "supplies bare occurrence through 'Records form' but no formation site/content/weight/rate rule",
-        "use": "occurrence premise, not a rederivation target",
-        "witness": "Record axiom"
+        "current_line": 1108,
+        "current_path": "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py",
+        "current_residual": "conditional mathematical forcing is not a physical M2 menu/grade/occurrence compiler",
+        "disposition": "dropped as physical menu or Born evidence; retained as exact comparison only",
+        "exact_match": false,
+        "prior_line": 137,
+        "prior_path": "docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+        "prior_ref": "a994617819f57e599dd101c654be366123392236",
+        "prior_residual": "scaled-projector conditional form-forcing theorem",
+        "same_scope": false,
+        "scope_match": false,
+        "use_as_closure": false
       },
       {
-        "residual": "member/receipt supply remains independent of conditional occurrence",
-        "use": "Route-B exact port equations",
-        "witness": "Cycle531"
-      },
-      {
-        "residual": "unique-quorum is a physical candidate, not identified actuality/formation law",
-        "use": "Route-B supplied physical core",
-        "witness": "Cycle614"
-      },
-      {
-        "residual": "parameter calibration and corpus semantics remain supplied",
-        "use": "Route-C exact denominator-64 interface",
-        "witness": "Cycle597"
-      },
-      {
-        "residual": "supplies pointwise slot, never state selection",
-        "use": "endpoint word is registered state data; grade variation is conditional law output",
-        "witness": "realized-state primitive"
-      },
-      {
-        "residual": "finite scalar readout additivity does not furnish all mathematical menus/projector frames",
-        "use": "frame/menu remains separate from probability",
-        "witness": "Record finite additivity"
-      },
-      {
-        "residual": "odd counts and noncomplete blocks refused",
-        "use": "scope boundary, not impossibility",
-        "witness": "Route-C off-family controls"
+        "current_line": 1108,
+        "current_path": "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py",
+        "current_residual": "conditional mathematical forcing is not a physical M2 menu/grade/occurrence compiler",
+        "disposition": "dropped as physical menu or Born evidence; retained as exact comparison only",
+        "exact_match": false,
+        "prior_line": 167,
+        "prior_path": "docs/BORN_FORM_MENU_OUTCOME_THRESHOLD_AND_MIXED_PROJECTIVE_FORCING_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+        "prior_ref": "84053108a424cef26dc23e484549df331ad2050f",
+        "prior_residual": "mixed-projective conditional form-forcing theorem",
+        "same_scope": false,
+        "scope_match": false,
+        "use_as_closure": false
       }
     ],
-    "N5_rhetoric_audit": {
-      "forbidden_and_not_claimed": [
-        "rederived bare occurrence",
-        "derived fixed formation rule",
-        "objective actuality",
-        "Record from packet copying",
-        "Born from grade/frequency",
-        "finite additivity as a complete frame",
-        "shared obstruction",
-        "axiom pressure"
+    "N4_exact_residual_matches": [
+      {
+        "current_line": 443,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py",
+        "current_residual": "five extensional candidate tables are separated; nature's table is not selected",
+        "exact_match": true,
+        "prior_line": 57,
+        "prior_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "prior_ref": "b31c92adb5bbf79b50b874078688d0bf62651eef",
+        "prior_residual": "one fixed proper-cubic nearest-neighbor Admissibility rule is named structurally",
+        "same_scope": true,
+        "scope_match": true,
+        "use_as_closure": true
+      },
+      {
+        "current_line": 1108,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py",
+        "current_residual": "bare occurrence is not rederived and selector sigma remains open",
+        "exact_match": true,
+        "prior_line": 65,
+        "prior_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "prior_ref": "b31c92adb5bbf79b50b874078688d0bf62651eef",
+        "prior_residual": "Records form is supplied existential content",
+        "same_scope": true,
+        "scope_match": true,
+        "use_as_closure": false
+      },
+      {
+        "current_line": 688,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py",
+        "current_residual": "exact Cycle531 port equation is instantiated with a supplied lane-zero adapter",
+        "exact_match": true,
+        "prior_line": 65,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_SELECTED_SEAM_CONDITIONAL_RECORD_BINDER_CYCLE531_NOTE_2026-07-21.md",
+        "prior_ref": "b31c92adb5bbf79b50b874078688d0bf62651eef",
+        "prior_residual": "conditional occurrence equation requires MEMBER and provenance",
+        "same_scope": true,
+        "scope_match": true,
+        "use_as_closure": true
+      },
+      {
+        "current_line": 688,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py",
+        "current_residual": "129-M2 shared middle retains candidates, losers, and coherent sectors",
+        "exact_match": true,
+        "prior_line": 39,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_AUTONOMOUS_ADMISSION_RECORD_PERMANENCE_TOURNAMENT_CYCLE614_NOTE_2026-07-22.md",
+        "prior_ref": "b31c92adb5bbf79b50b874078688d0bf62651eef",
+        "prior_residual": "unique-quorum is a basis-code candidate law, not actuality",
+        "same_scope": true,
+        "scope_match": true,
+        "use_as_closure": true
+      },
+      {
+        "current_line": 943,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py",
+        "current_residual": "ROM-free denominator-64 mask remains conditional on supplied calibration",
+        "exact_match": true,
+        "prior_line": 60,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_STATE_FAMILY_GRADE_TRANSITION_SYNTHESIS_TOURNAMENT_CYCLE597_NOTE_2026-07-22.md",
+        "prior_ref": "b31c92adb5bbf79b50b874078688d0bf62651eef",
+        "prior_residual": "q is an operational projector grade on the declared state",
+        "same_scope": true,
+        "scope_match": true,
+        "use_as_closure": true
+      },
+      {
+        "current_line": 1108,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py",
+        "current_residual": "endpoint bits are registered state data and supply no objective selector",
+        "exact_match": true,
+        "prior_line": 37,
+        "prior_path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+        "prior_ref": "b31c92adb5bbf79b50b874078688d0bf62651eef",
+        "prior_residual": "pointwise realized-state evaluation is not state selection",
+        "same_scope": true,
+        "scope_match": true,
+        "use_as_closure": false
+      },
+      {
+        "current_line": 1108,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py",
+        "current_residual": "effect-menu theorem is closed non-retained comparison only",
+        "exact_match": true,
+        "prior_line": 60,
+        "prior_path": "docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+        "prior_ref": "2c648ccb408a8c36a700f53ec5401369e3bbd490",
+        "prior_residual": "conditional horns select no menu and the axioms supply no menus",
+        "same_scope": true,
+        "scope_match": true,
+        "use_as_closure": false
+      },
+      {
+        "current_line": 1108,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py",
+        "current_residual": "no retained physical scaled-projector eligibility port is found",
+        "exact_match": true,
+        "prior_line": 17,
+        "prior_path": "docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+        "prior_ref": "a994617819f57e599dd101c654be366123392236",
+        "prior_residual": "physical scaled-projector menu family remains underived",
+        "same_scope": true,
+        "scope_match": true,
+        "use_as_closure": false
+      },
+      {
+        "current_line": 1108,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py",
+        "current_residual": "no retained ternary or mixed-projective M2 menu-plus-grade instrument is found",
+        "exact_match": true,
+        "prior_line": 62,
+        "prior_path": "docs/BORN_FORM_MENU_OUTCOME_THRESHOLD_AND_MIXED_PROJECTIVE_FORCING_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+        "prior_ref": "84053108a424cef26dc23e484549df331ad2050f",
+        "prior_residual": "no family is selected and record formation supplies no menus",
+        "same_scope": true,
+        "scope_match": true,
+        "use_as_closure": false
+      },
+      {
+        "current_line": 1108,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py",
+        "current_residual": "sigma is a shared dependency comparison, never back-credit",
+        "exact_match": true,
+        "prior_line": 97,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_AUTONOMOUS_BOUND_BRANCH_PREPARATION_TOURNAMENT_CYCLE611_NOTE_2026-07-22.md",
+        "prior_ref": "a1e2f1ea60b1cf9b9cb0ae100c61cfd1f3a07318",
+        "prior_residual": "external time candidate names occurrence selector sigma explicitly",
+        "same_scope": true,
+        "scope_match": true,
+        "use_as_closure": false
+      }
+    ],
+    "N4_residual_matching": [
+      {
+        "current_line": 443,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py",
+        "current_residual": "five extensional candidate tables are separated; nature's table is not selected",
+        "exact_match": true,
+        "prior_line": 57,
+        "prior_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "prior_ref": "b31c92adb5bbf79b50b874078688d0bf62651eef",
+        "prior_residual": "one fixed proper-cubic nearest-neighbor Admissibility rule is named structurally",
+        "same_scope": true,
+        "scope_match": true,
+        "use_as_closure": true
+      },
+      {
+        "current_line": 1108,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py",
+        "current_residual": "bare occurrence is not rederived and selector sigma remains open",
+        "exact_match": true,
+        "prior_line": 65,
+        "prior_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "prior_ref": "b31c92adb5bbf79b50b874078688d0bf62651eef",
+        "prior_residual": "Records form is supplied existential content",
+        "same_scope": true,
+        "scope_match": true,
+        "use_as_closure": false
+      },
+      {
+        "current_line": 688,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py",
+        "current_residual": "exact Cycle531 port equation is instantiated with a supplied lane-zero adapter",
+        "exact_match": true,
+        "prior_line": 65,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_SELECTED_SEAM_CONDITIONAL_RECORD_BINDER_CYCLE531_NOTE_2026-07-21.md",
+        "prior_ref": "b31c92adb5bbf79b50b874078688d0bf62651eef",
+        "prior_residual": "conditional occurrence equation requires MEMBER and provenance",
+        "same_scope": true,
+        "scope_match": true,
+        "use_as_closure": true
+      },
+      {
+        "current_line": 688,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py",
+        "current_residual": "129-M2 shared middle retains candidates, losers, and coherent sectors",
+        "exact_match": true,
+        "prior_line": 39,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_AUTONOMOUS_ADMISSION_RECORD_PERMANENCE_TOURNAMENT_CYCLE614_NOTE_2026-07-22.md",
+        "prior_ref": "b31c92adb5bbf79b50b874078688d0bf62651eef",
+        "prior_residual": "unique-quorum is a basis-code candidate law, not actuality",
+        "same_scope": true,
+        "scope_match": true,
+        "use_as_closure": true
+      },
+      {
+        "current_line": 943,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py",
+        "current_residual": "ROM-free denominator-64 mask remains conditional on supplied calibration",
+        "exact_match": true,
+        "prior_line": 60,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_STATE_FAMILY_GRADE_TRANSITION_SYNTHESIS_TOURNAMENT_CYCLE597_NOTE_2026-07-22.md",
+        "prior_ref": "b31c92adb5bbf79b50b874078688d0bf62651eef",
+        "prior_residual": "q is an operational projector grade on the declared state",
+        "same_scope": true,
+        "scope_match": true,
+        "use_as_closure": true
+      },
+      {
+        "current_line": 1108,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py",
+        "current_residual": "endpoint bits are registered state data and supply no objective selector",
+        "exact_match": true,
+        "prior_line": 37,
+        "prior_path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+        "prior_ref": "b31c92adb5bbf79b50b874078688d0bf62651eef",
+        "prior_residual": "pointwise realized-state evaluation is not state selection",
+        "same_scope": true,
+        "scope_match": true,
+        "use_as_closure": false
+      },
+      {
+        "current_line": 1108,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py",
+        "current_residual": "effect-menu theorem is closed non-retained comparison only",
+        "exact_match": true,
+        "prior_line": 60,
+        "prior_path": "docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+        "prior_ref": "2c648ccb408a8c36a700f53ec5401369e3bbd490",
+        "prior_residual": "conditional horns select no menu and the axioms supply no menus",
+        "same_scope": true,
+        "scope_match": true,
+        "use_as_closure": false
+      },
+      {
+        "current_line": 1108,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py",
+        "current_residual": "no retained physical scaled-projector eligibility port is found",
+        "exact_match": true,
+        "prior_line": 17,
+        "prior_path": "docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+        "prior_ref": "a994617819f57e599dd101c654be366123392236",
+        "prior_residual": "physical scaled-projector menu family remains underived",
+        "same_scope": true,
+        "scope_match": true,
+        "use_as_closure": false
+      },
+      {
+        "current_line": 1108,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py",
+        "current_residual": "no retained ternary or mixed-projective M2 menu-plus-grade instrument is found",
+        "exact_match": true,
+        "prior_line": 62,
+        "prior_path": "docs/BORN_FORM_MENU_OUTCOME_THRESHOLD_AND_MIXED_PROJECTIVE_FORCING_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+        "prior_ref": "84053108a424cef26dc23e484549df331ad2050f",
+        "prior_residual": "no family is selected and record formation supplies no menus",
+        "same_scope": true,
+        "scope_match": true,
+        "use_as_closure": false
+      },
+      {
+        "current_line": 1108,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py",
+        "current_residual": "sigma is a shared dependency comparison, never back-credit",
+        "exact_match": true,
+        "prior_line": 97,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_AUTONOMOUS_BOUND_BRANCH_PREPARATION_TOURNAMENT_CYCLE611_NOTE_2026-07-22.md",
+        "prior_ref": "a1e2f1ea60b1cf9b9cb0ae100c61cfd1f3a07318",
+        "prior_residual": "external time candidate names occurrence selector sigma explicitly",
+        "same_scope": true,
+        "scope_match": true,
+        "use_as_closure": false
+      }
+    ],
+    "N5_rhetoric_audit": [
+      {
+        "lattice_wide": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_block": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_element": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_mode": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_site": "three exact closed-head theorems compared",
+        "phrase": "conditional form-forcing is not physical menu eligibility"
+      },
+      {
+        "lattice_wide": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_block": "64-address block",
+        "per_element": "generated grade values",
+        "per_mode": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_site": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "phrase": "candidate grade mask is not effect-functional w"
+      },
+      {
+        "lattice_wide": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_block": "six coherent sectors retained",
+        "per_element": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_mode": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_site": "six candidate directions",
+        "phrase": "basis winner is not objective actuality"
+      },
+      {
+        "lattice_wide": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_block": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_element": "packet coordinates",
+        "per_mode": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_site": "Cycle531 port tuple",
+        "phrase": "conditional packet is not a framework Record"
+      },
+      {
+        "lattice_wide": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_block": "exact denominator-64 counts",
+        "per_element": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_mode": "eight history labels",
+        "per_site": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "phrase": "complete-block frequency is not Born probability"
+      },
+      {
+        "lattice_wide": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_block": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_element": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_mode": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_site": "external Cycle611 type comparison",
+        "phrase": "shared sigma dependency is not a shared obstruction"
+      }
+    ],
+    "N5_rhetoric_resolution_ledger": [
+      {
+        "lattice_wide": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_block": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_element": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_mode": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_site": "three exact closed-head theorems compared",
+        "phrase": "conditional form-forcing is not physical menu eligibility"
+      },
+      {
+        "lattice_wide": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_block": "64-address block",
+        "per_element": "generated grade values",
+        "per_mode": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_site": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "phrase": "candidate grade mask is not effect-functional w"
+      },
+      {
+        "lattice_wide": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_block": "six coherent sectors retained",
+        "per_element": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_mode": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_site": "six candidate directions",
+        "phrase": "basis winner is not objective actuality"
+      },
+      {
+        "lattice_wide": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_block": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_element": "packet coordinates",
+        "per_mode": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_site": "Cycle531 port tuple",
+        "phrase": "conditional packet is not a framework Record"
+      },
+      {
+        "lattice_wide": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_block": "exact denominator-64 counts",
+        "per_element": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_mode": "eight history labels",
+        "per_site": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "phrase": "complete-block frequency is not Born probability"
+      },
+      {
+        "lattice_wide": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_block": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_element": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_mode": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_site": "external Cycle611 type comparison",
+        "phrase": "shared sigma dependency is not a shared obstruction"
+      }
+    ],
+    "N6_partial_closure": [
+      {
+        "file": "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py",
+        "status": "EXECUTED_129_M2_CONDITIONAL_SHARED_MIDDLE",
+        "what_closes": "candidate packet/resource/member/receipt port only"
+      },
+      {
+        "file": "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py",
+        "status": "EXECUTED_531_M2_ROM_FREE_GRADE_BLOCK",
+        "what_closes": "bounded state-to-grade-to-complete-block arithmetic only"
+      },
+      {
+        "file": "git:84053108a424cef26dc23e484549df331ad2050f:docs/BORN_FORM_MENU_OUTCOME_THRESHOLD_AND_MIXED_PROJECTIVE_FORCING_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+        "status": "CLOSED_NONRETAINED_COMPARISON",
+        "what_closes": "conditional ternary/mixed-projective form-forcing only"
+      },
+      {
+        "file": "scripts/physical_M2_menu_eligibility_effect_functionality_cycle_next.py",
+        "status": "NOT_CREATED_OPEN_CANDIDATE",
+        "what_closes": "physical ternary/scaled/mixed menu and noncontextual w"
+      },
+      {
+        "file": "scripts/physical_occurrence_selector_sigma_cycle_next.py",
+        "status": "NOT_CREATED_OPEN_CANDIDATE",
+        "what_closes": "objective coherent-input occurrence with exhaust"
+      },
+      {
+        "file": "scripts/physical_Record_corpus_Born_calibration_cycle_next.py",
+        "status": "NOT_CREATED_OPEN_CANDIDATE",
+        "what_closes": "Record admission/permanence and blinded realized frequencies"
+      }
+    ],
+    "N6_partial_closure_paths": [
+      {
+        "file": "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py",
+        "status": "EXECUTED_129_M2_CONDITIONAL_SHARED_MIDDLE",
+        "what_closes": "candidate packet/resource/member/receipt port only"
+      },
+      {
+        "file": "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py",
+        "status": "EXECUTED_531_M2_ROM_FREE_GRADE_BLOCK",
+        "what_closes": "bounded state-to-grade-to-complete-block arithmetic only"
+      },
+      {
+        "file": "git:84053108a424cef26dc23e484549df331ad2050f:docs/BORN_FORM_MENU_OUTCOME_THRESHOLD_AND_MIXED_PROJECTIVE_FORCING_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+        "status": "CLOSED_NONRETAINED_COMPARISON",
+        "what_closes": "conditional ternary/mixed-projective form-forcing only"
+      },
+      {
+        "file": "scripts/physical_M2_menu_eligibility_effect_functionality_cycle_next.py",
+        "status": "NOT_CREATED_OPEN_CANDIDATE",
+        "what_closes": "physical ternary/scaled/mixed menu and noncontextual w"
+      },
+      {
+        "file": "scripts/physical_occurrence_selector_sigma_cycle_next.py",
+        "status": "NOT_CREATED_OPEN_CANDIDATE",
+        "what_closes": "objective coherent-input occurrence with exhaust"
+      },
+      {
+        "file": "scripts/physical_Record_corpus_Born_calibration_cycle_next.py",
+        "status": "NOT_CREATED_OPEN_CANDIDATE",
+        "what_closes": "Record admission/permanence and blinded realized frequencies"
+      }
+    ],
+    "N7_hostile_steelman": {
+      "mechanism": "a bounded translation-invariant dissipative QCA emits its own ternary/scaled/mixed menu, assigns one effect-functional grade, owns one coherent sector with retained exhaust, and forms a preserved Record corpus",
+      "openness": "concrete target-equivalent route remains open, defeating broad negative and axiom-pressure claims",
+      "supporting_authorities": [
+        {
+          "line": 62,
+          "path": "docs/BORN_FORM_MENU_OUTCOME_THRESHOLD_AND_MIXED_PROJECTIVE_FORCING_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+          "ref": "84053108a424cef26dc23e484549df331ad2050f",
+          "relevance": "conditional menu family remains physically unselected"
+        },
+        {
+          "line": 97,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_AUTONOMOUS_BOUND_BRANCH_PREPARATION_TOURNAMENT_CYCLE611_NOTE_2026-07-22.md",
+          "ref": "a1e2f1ea60b1cf9b9cb0ae100c61cfd1f3a07318",
+          "relevance": "types the shared occurrence selector sigma"
+        },
+        {
+          "line": 1108,
+          "path": "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py",
+          "ref": "WORKTREE",
+          "relevance": "executable six-layer acceptance contract"
+        }
       ],
-      "permitted": [
-        "candidate relation",
-        "conditional occurrence",
-        "basis winner",
-        "grade mask",
-        "candidate corpus"
-      ]
+      "terminal_obligation": "freeze the physical update before held contexts; pass literal M2 support, all24/all576, inverse/deletion, coherent exhaust, post-formation preservation, renewal, and blinded changed-state Record-frequency tests"
     },
-    "N6_partial_closure": "retain the 129-M2 unique-quorum shared middle and 531-M2 state-derived grade block; replace the supplied predicate/calibration independently when a physical rule is proposed",
-    "N7_hostile_steelman": "A translation-invariant dissipative QCA could expose the extensional Admissibility table through its local transition algebra, select one coherent sector with retained exhaust, form a nonreentering readable Record, and generate a renewable blinded corpus.  Freeze that update before held contexts; require the exact Cycle614/531 port map, all24/all576, post-formation projector preservation, resource renewal, and changed-state frequency predictions.  This concrete route is open.",
-    "N8_cross_cycle_echo": "Cycles531/552/571 repeatedly separated conditional occurrence from member genesis, actuality, and Record; Cycles587/592/597 separated physical candidate laws and finite frequencies from Born; Cycle614 removed runtime admission bits for one supplied rule; Cycle621 preserved its packet under one supplied operation algebra.  Those prior compiler closures argue for more constructive tests, not axiom pressure.",
+    "N7_steelman": {
+      "mechanism": "a bounded translation-invariant dissipative QCA emits its own ternary/scaled/mixed menu, assigns one effect-functional grade, owns one coherent sector with retained exhaust, and forms a preserved Record corpus",
+      "openness": "concrete target-equivalent route remains open, defeating broad negative and axiom-pressure claims",
+      "supporting_authorities": [
+        {
+          "line": 62,
+          "path": "docs/BORN_FORM_MENU_OUTCOME_THRESHOLD_AND_MIXED_PROJECTIVE_FORCING_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+          "ref": "84053108a424cef26dc23e484549df331ad2050f",
+          "relevance": "conditional menu family remains physically unselected"
+        },
+        {
+          "line": 97,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_AUTONOMOUS_BOUND_BRANCH_PREPARATION_TOURNAMENT_CYCLE611_NOTE_2026-07-22.md",
+          "ref": "a1e2f1ea60b1cf9b9cb0ae100c61cfd1f3a07318",
+          "relevance": "types the shared occurrence selector sigma"
+        },
+        {
+          "line": 1108,
+          "path": "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py",
+          "ref": "WORKTREE",
+          "relevance": "executable six-layer acceptance contract"
+        }
+      ],
+      "terminal_obligation": "freeze the physical update before held contexts; pass literal M2 support, all24/all576, inverse/deletion, coherent exhaust, post-formation preservation, renewal, and blinded changed-state Record-frequency tests"
+    },
+    "N8_cross_cycle_echo": [
+      {
+        "applicability": "Route B reaches conditional occurrence only",
+        "citation_line": 65,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_SELECTED_SEAM_CONDITIONAL_RECORD_BINDER_CYCLE531_NOTE_2026-07-21.md",
+        "citation_ref": "b31c92adb5bbf79b50b874078688d0bf62651eef",
+        "cycle": "Cycle531",
+        "mechanism": "typed conditional binder",
+        "retired": "NOT_RETIRED"
+      },
+      {
+        "applicability": "selector and admission remain independent",
+        "citation_line": 41,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_RENEWABLE_FIRST_HIT_RECORD_ADMISSION_TOURNAMENT_CYCLE571_NOTE_2026-07-22.md",
+        "citation_ref": "b31c92adb5bbf79b50b874078688d0bf62651eef",
+        "cycle": "Cycle571",
+        "mechanism": "supplied actuality/admission inputs",
+        "retired": "NOT_RETIRED"
+      },
+      {
+        "applicability": "calibration/corpus/Born meaning remain open",
+        "citation_line": 60,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_STATE_FAMILY_GRADE_TRANSITION_SYNTHESIS_TOURNAMENT_CYCLE597_NOTE_2026-07-22.md",
+        "citation_ref": "b31c92adb5bbf79b50b874078688d0bf62651eef",
+        "cycle": "Cycle597",
+        "mechanism": "row-free bounded grade synthesis",
+        "retired": "PARTIAL_ROM_DEPENDENCE_RETIRED"
+      },
+      {
+        "applicability": "candidate law is not actuality or Record",
+        "citation_line": 39,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_AUTONOMOUS_ADMISSION_RECORD_PERMANENCE_TOURNAMENT_CYCLE614_NOTE_2026-07-22.md",
+        "citation_ref": "b31c92adb5bbf79b50b874078688d0bf62651eef",
+        "cycle": "Cycle614",
+        "mechanism": "unique-quorum packet",
+        "retired": "RUNTIME_ADMISSION_ROM_RETIRED_FOR_ONE_CANDIDATE"
+      },
+      {
+        "applicability": "does not identify physical all-future permanence",
+        "citation_line": 18,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_POSTFORMATION_PRESERVATION_NON_ERASING_RENEWAL_TOURNAMENT_CYCLE621_NOTE_2026-07-22.md",
+        "citation_ref": "b31c92adb5bbf79b50b874078688d0bf62651eef",
+        "cycle": "Cycle621",
+        "mechanism": "supplied future-operation algebra",
+        "retired": "FINITE_PRESERVATION_PARTIAL"
+      },
+      {
+        "applicability": "no physical-menu back-credit",
+        "citation_line": 60,
+        "citation_path": "docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+        "citation_ref": "2c648ccb408a8c36a700f53ec5401369e3bbd490",
+        "cycle": "PR5472",
+        "mechanism": "effect-menu forcing/product boundary",
+        "retired": "CLOSED_NONRETAINED_COMPARISON_ONLY"
+      },
+      {
+        "applicability": "no physical-menu back-credit",
+        "citation_line": 17,
+        "citation_path": "docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+        "citation_ref": "a994617819f57e599dd101c654be366123392236",
+        "cycle": "PR5476",
+        "mechanism": "scaled-projector forcing/paired boundary",
+        "retired": "CLOSED_NONRETAINED_COMPARISON_ONLY"
+      },
+      {
+        "applicability": "conditional theorem sharpens acceptance test only",
+        "citation_line": 62,
+        "citation_path": "docs/BORN_FORM_MENU_OUTCOME_THRESHOLD_AND_MIXED_PROJECTIVE_FORCING_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+        "citation_ref": "84053108a424cef26dc23e484549df331ad2050f",
+        "cycle": "PR5479",
+        "mechanism": "binary/ternary and mixed-projective map",
+        "retired": "CLOSED_NONRETAINED_COMPARISON_ONLY"
+      },
+      {
+        "applicability": "same dependency shape, not retained closure",
+        "citation_line": 97,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_AUTONOMOUS_BOUND_BRANCH_PREPARATION_TOURNAMENT_CYCLE611_NOTE_2026-07-22.md",
+        "citation_ref": "a1e2f1ea60b1cf9b9cb0ae100c61cfd1f3a07318",
+        "cycle": "PR5557 Cycle611",
+        "mechanism": "typed selector sigma/admission split",
+        "retired": "OPEN_EXTERNAL_COMPARISON_NO_BACK_CREDIT"
+      }
+    ],
+    "Status": "FAIL",
+    "artifact_status": "PASS_NARROWED_SHARED_MIDDLE_AND_GRADE_BLOCK_ONLY",
     "axiom_pressure": false,
+    "axiom_pressure_claim": false,
+    "broad_no_go_claim": false,
     "minimum_content_claim": false,
     "pass": true,
+    "shared_obstruction_claim": false,
     "shared_route_independent_obstruction": false
   },
   "note_contract": {
@@ -443,11 +1216,24 @@
       "finite-additivity-to-frame bridge",
       "all 42 directed pairs",
       "broad no-go and minimum-content gates are fail / do not ship",
+      "six-layer executable acceptance contract",
+      "conditional form-forcing",
+      "ternary, scaled-projector, or mixed-projective",
+      "effect-functional",
+      "occurrence selector sigma",
+      "closed and non-retained",
+      "not back-credit",
+      "n4 contains ten exact rows",
+      "file / status / what_closes",
+      "cycle / retired / mechanism",
+      "no retained physical m2",
+      "immutable committed head",
+      "no dirty working-tree variant is a premise",
       "shared obstruction: not established",
       "axiom pressure: none"
     ]
   },
-  "note_sha256": "66a940163d027f7b891004356cb9060671409ce194f7fd6e8fd28f21b0710de1",
+  "note_sha256": "190ed6dfc5502a0d8d68c665501fe4f009d21fb2aad4bc0b71e9f96a9856552d",
   "optimal_next_campaign": "extensional-law exposure tournament across constrained-QCA, stochastic-dilation, and dissipative-formation updates, composed into the unchanged shared-middle interface before blinded Record-corpus tests",
   "pass": true,
   "route_A_structural_relation": {
@@ -2418,11 +3204,23 @@
     "runtime_state_specific_ROM": false,
     "unordered_complete_block_called_realized_corpus": false
   },
-  "runner_sha256": "f77ffd6c3c12eb8ac1818026c5c3712fd4a8f57903909a5ee54a49278ef9e50e",
+  "receipt_scope": "Cycle625 immutable-shore dependency tournament plus supplied-candidate 129-M2 conditional shared middle and 531-M2 ROM-free grade block; no physical menu eligibility, effect-functional w, objective sigma, framework Record, physical permanence law, Born probability, realized history, shared obstruction, axiom pressure, or back-credit from non-retained/external heads",
+  "runner_sha256": "a618b5803cc1313a3dd644e3e066bb987bf366d8215a50a43d4260c69847b9e9",
+  "semantic_promotion_boundary": {
+    "Born_probability": null,
+    "effect_functionality_w": null,
+    "framework_Record_identification": null,
+    "objective_occurrence_selector_sigma": null,
+    "physical_menu_eligibility": null,
+    "physical_permanence_law": null,
+    "realized_history": null
+  },
   "shared_substrate_obstruction": false,
   "shore": {
     "Cycle614_621_receipt_contract": true,
     "Cycle614_mass_fixture_residual": 1.1102230246251565e-16,
+    "committed_git_objects_are_only_retained_local_premises": true,
+    "committed_shore_head": "b31c92adb5bbf79b50b874078688d0bf62651eef",
     "expected_normalized_receipt_sha256": {
       "outputs/physical_autonomous_admission_record_permanence_tournament_cycle614_receipt_2026_07_22.json": "b1b605be2b7e8db7203a7f2957fa745f799ddf35652f0abed4bc36a42ae3f089",
       "outputs/physical_postformation_preservation_non_erasing_renewal_tournament_cycle621_receipt_2026_07_22.json": "9010a5f79cf926febd9ee978def1f2164fcb598c5df024b36e7f170e7d034c3e"
@@ -2440,10 +3238,10 @@
       "docs/work_history/repo/review_feedback/PHYSICAL_PREREGISTERED_INNOVATION_RECORD_FREQUENCY_BRIDGE_TOURNAMENT_CYCLE592_NOTE_2026-07-22.md": "dccf62d6126287b20cbf96ff410534adfa1746d9cf3aba94fbfb2893855be212",
       "docs/work_history/repo/review_feedback/PHYSICAL_RENEWABLE_FIRST_HIT_RECORD_ADMISSION_TOURNAMENT_CYCLE571_NOTE_2026-07-22.md": "b254476f392597c03f27581fbc4f559266ed42984ac86a516888ee81d2aff8e2",
       "docs/work_history/repo/review_feedback/PHYSICAL_SELECTED_SEAM_CONDITIONAL_RECORD_BINDER_CYCLE531_NOTE_2026-07-21.md": "ed40564d4e57090cf03e706b54964e5a24cb735f9ca14df8f008fecffc388042",
-      "docs/work_history/repo/review_feedback/PHYSICAL_STATE_FAMILY_GRADE_TRANSITION_SYNTHESIS_TOURNAMENT_CYCLE597_NOTE_2026-07-22.md": "fdbfc68540be31de9d5199e25b1b71a440b9126447f383146caa07b70599c4b2",
+      "docs/work_history/repo/review_feedback/PHYSICAL_STATE_FAMILY_GRADE_TRANSITION_SYNTHESIS_TOURNAMENT_CYCLE597_NOTE_2026-07-22.md": "9a786fc7c559437483fb357893ad23146ddbdebd71a992ed8c709053e9b1d413",
       "outputs/physical_autonomous_occurrence_born_history_bridge_tournament_cycle587_cold_2026_07_22.txt": "47060b72e3304e13ed0e5f0d689e6ac323bb6b72fa450ea64e94605311909a84",
       "outputs/physical_preregistered_innovation_record_frequency_bridge_tournament_cycle592_cold_2026_07_22.txt": "135ec5a5b75c180d23a1246deb89b920b771dbc714a2e1ee2087cc6a2af5683d",
-      "outputs/physical_state_family_grade_transition_synthesis_tournament_cycle597_cold_2026_07_22.txt": "6df65289d17c4c4e7c01789ed4899c7f23045f3f9d5b1a367cdc0dbe0aa6b9b1",
+      "outputs/physical_state_family_grade_transition_synthesis_tournament_cycle597_cold_2026_07_22.txt": "022a8f946a9953a91a97ba9db3c05c3b3fc73bd08fcfe576e80b95373f51acea",
       "scripts/physical_autonomous_admission_record_permanence_tournament_cycle614_2026_07_22.py": "ca84ee27a2d8fa67e17336717613e7a2cd05c46421e6d0cc5f4ee6a860938240",
       "scripts/physical_autonomous_local_member_law_cell_cycle552_2026_07_21.py": "405cacd821b5453045f8a8920b1ab0fc2dca5ac90fb150e9b4a95f6f218ac8a4",
       "scripts/physical_autonomous_occurrence_born_history_bridge_tournament_cycle587_2026_07_22.py": "2879d5a2641b334553769f15cf3a6f152f9f16f8f80b23db723448533c28c494",
@@ -2451,7 +3249,7 @@
       "scripts/physical_preregistered_innovation_record_frequency_bridge_tournament_cycle592_2026_07_22.py": "ab565af6aa59e66cea7b1ce625c08f8a88235ae9f7415e5e7d89d63af34ce9ce",
       "scripts/physical_renewable_first_hit_record_admission_tournament_cycle571_2026_07_22.py": "7221d59558e4d731f98a2a4523c280aa98b889f23ea3f7be1acc8919395dfee8",
       "scripts/physical_selected_seam_conditional_record_binder_cycle531_2026_07_21.py": "8885593dcc644e601179891265c226158c8835a8a143ed7205c0cc7e291e9057",
-      "scripts/physical_state_family_grade_transition_synthesis_tournament_cycle597_2026_07_22.py": "7dec66d44101d26f563bea079fa62b56daeb1d2d5a21a7a98c6f66fc22392d77"
+      "scripts/physical_state_family_grade_transition_synthesis_tournament_cycle597_2026_07_22.py": "994f050fb33d7b9909896d195dca6be0062f56445ba49cac8731f196a3cfe79e"
     },
     "observed_normalized_receipt_sha256": {
       "outputs/physical_autonomous_admission_record_permanence_tournament_cycle614_receipt_2026_07_22.json": "b1b605be2b7e8db7203a7f2957fa745f799ddf35652f0abed4bc36a42ae3f089",
@@ -2470,10 +3268,10 @@
       "docs/work_history/repo/review_feedback/PHYSICAL_PREREGISTERED_INNOVATION_RECORD_FREQUENCY_BRIDGE_TOURNAMENT_CYCLE592_NOTE_2026-07-22.md": "dccf62d6126287b20cbf96ff410534adfa1746d9cf3aba94fbfb2893855be212",
       "docs/work_history/repo/review_feedback/PHYSICAL_RENEWABLE_FIRST_HIT_RECORD_ADMISSION_TOURNAMENT_CYCLE571_NOTE_2026-07-22.md": "b254476f392597c03f27581fbc4f559266ed42984ac86a516888ee81d2aff8e2",
       "docs/work_history/repo/review_feedback/PHYSICAL_SELECTED_SEAM_CONDITIONAL_RECORD_BINDER_CYCLE531_NOTE_2026-07-21.md": "ed40564d4e57090cf03e706b54964e5a24cb735f9ca14df8f008fecffc388042",
-      "docs/work_history/repo/review_feedback/PHYSICAL_STATE_FAMILY_GRADE_TRANSITION_SYNTHESIS_TOURNAMENT_CYCLE597_NOTE_2026-07-22.md": "fdbfc68540be31de9d5199e25b1b71a440b9126447f383146caa07b70599c4b2",
+      "docs/work_history/repo/review_feedback/PHYSICAL_STATE_FAMILY_GRADE_TRANSITION_SYNTHESIS_TOURNAMENT_CYCLE597_NOTE_2026-07-22.md": "9a786fc7c559437483fb357893ad23146ddbdebd71a992ed8c709053e9b1d413",
       "outputs/physical_autonomous_occurrence_born_history_bridge_tournament_cycle587_cold_2026_07_22.txt": "47060b72e3304e13ed0e5f0d689e6ac323bb6b72fa450ea64e94605311909a84",
       "outputs/physical_preregistered_innovation_record_frequency_bridge_tournament_cycle592_cold_2026_07_22.txt": "135ec5a5b75c180d23a1246deb89b920b771dbc714a2e1ee2087cc6a2af5683d",
-      "outputs/physical_state_family_grade_transition_synthesis_tournament_cycle597_cold_2026_07_22.txt": "6df65289d17c4c4e7c01789ed4899c7f23045f3f9d5b1a367cdc0dbe0aa6b9b1",
+      "outputs/physical_state_family_grade_transition_synthesis_tournament_cycle597_cold_2026_07_22.txt": "022a8f946a9953a91a97ba9db3c05c3b3fc73bd08fcfe576e80b95373f51acea",
       "scripts/physical_autonomous_admission_record_permanence_tournament_cycle614_2026_07_22.py": "ca84ee27a2d8fa67e17336717613e7a2cd05c46421e6d0cc5f4ee6a860938240",
       "scripts/physical_autonomous_local_member_law_cell_cycle552_2026_07_21.py": "405cacd821b5453045f8a8920b1ab0fc2dca5ac90fb150e9b4a95f6f218ac8a4",
       "scripts/physical_autonomous_occurrence_born_history_bridge_tournament_cycle587_2026_07_22.py": "2879d5a2641b334553769f15cf3a6f152f9f16f8f80b23db723448533c28c494",
@@ -2481,7 +3279,7 @@
       "scripts/physical_preregistered_innovation_record_frequency_bridge_tournament_cycle592_2026_07_22.py": "ab565af6aa59e66cea7b1ce625c08f8a88235ae9f7415e5e7d89d63af34ce9ce",
       "scripts/physical_renewable_first_hit_record_admission_tournament_cycle571_2026_07_22.py": "7221d59558e4d731f98a2a4523c280aa98b889f23ea3f7be1acc8919395dfee8",
       "scripts/physical_selected_seam_conditional_record_binder_cycle531_2026_07_21.py": "8885593dcc644e601179891265c226158c8835a8a143ed7205c0cc7e291e9057",
-      "scripts/physical_state_family_grade_transition_synthesis_tournament_cycle597_2026_07_22.py": "7dec66d44101d26f563bea079fa62b56daeb1d2d5a21a7a98c6f66fc22392d77"
+      "scripts/physical_state_family_grade_transition_synthesis_tournament_cycle597_2026_07_22.py": "994f050fb33d7b9909896d195dca6be0062f56445ba49cac8731f196a3cfe79e"
     },
     "pass": true,
     "read_only_dependency_sweep_complete": true,
@@ -2495,7 +3293,176 @@
       "realized_slot_has_no_selection": true,
       "record_formation_named": true,
       "rule_covariance_named": true
-    }
+    },
+    "working_tree_comparison_sha256": {
+      "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "docs/MINIMAL_AXIOMS_2026-06-29.md": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+      "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "docs/audit/data/axiom_premise_nodes.json": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+      "docs/work_history/repo/review_feedback/PHYSICAL_AUTONOMOUS_ADMISSION_RECORD_PERMANENCE_TOURNAMENT_CYCLE614_NOTE_2026-07-22.md": "d9164a42bc3cba10fb6d142b9ae5152543274c5d18ced5a070e5533c488a7ca2",
+      "docs/work_history/repo/review_feedback/PHYSICAL_AUTONOMOUS_LOCAL_MEMBER_LAW_CELL_CYCLE552_NOTE_2026-07-21.md": "cc5cee11501bcf541faf54e0ca69a5d931037a126d1bac9e02c41c131e752400",
+      "docs/work_history/repo/review_feedback/PHYSICAL_AUTONOMOUS_OCCURRENCE_BORN_HISTORY_BRIDGE_TOURNAMENT_CYCLE587_NOTE_2026-07-22.md": "4b1a4e6916da24c74086d83f154cdb474dc87a4954b6be9ea600f685fb9b8e4b",
+      "docs/work_history/repo/review_feedback/PHYSICAL_POSTFORMATION_PRESERVATION_NON_ERASING_RENEWAL_TOURNAMENT_CYCLE621_NOTE_2026-07-22.md": "a52395a57fb34b6d827a677a43528033e913cde2f98ce708a276507f6e1e353e",
+      "docs/work_history/repo/review_feedback/PHYSICAL_PREREGISTERED_INNOVATION_RECORD_FREQUENCY_BRIDGE_TOURNAMENT_CYCLE592_NOTE_2026-07-22.md": "092f0bfc06f7a42d82ed10ade5f551bdb08ebe7040c8c2b8ba0b1b3ea1c971c7",
+      "docs/work_history/repo/review_feedback/PHYSICAL_RENEWABLE_FIRST_HIT_RECORD_ADMISSION_TOURNAMENT_CYCLE571_NOTE_2026-07-22.md": "9781ac6d6d920c17b275c41b13d20ccb9e65ea68a97b48dc8ed8487718708efc",
+      "docs/work_history/repo/review_feedback/PHYSICAL_SELECTED_SEAM_CONDITIONAL_RECORD_BINDER_CYCLE531_NOTE_2026-07-21.md": "5738a05b7fbf855af001682c4e52f41f81366e4a3346df5b8ef2180b611cf0a5",
+      "docs/work_history/repo/review_feedback/PHYSICAL_STATE_FAMILY_GRADE_TRANSITION_SYNTHESIS_TOURNAMENT_CYCLE597_NOTE_2026-07-22.md": "9a786fc7c559437483fb357893ad23146ddbdebd71a992ed8c709053e9b1d413",
+      "outputs/physical_autonomous_occurrence_born_history_bridge_tournament_cycle587_cold_2026_07_22.txt": "ce59771c3263e0f8a77dbeccffeb8e61628fb3bc70b5542924e2e743d5d59fe8",
+      "outputs/physical_preregistered_innovation_record_frequency_bridge_tournament_cycle592_cold_2026_07_22.txt": "cb2640da38cf7cb0a69e6351871d9a9ba93c712f6865d5055b0bd79f18acdc5c",
+      "outputs/physical_state_family_grade_transition_synthesis_tournament_cycle597_cold_2026_07_22.txt": "022a8f946a9953a91a97ba9db3c05c3b3fc73bd08fcfe576e80b95373f51acea",
+      "scripts/physical_autonomous_admission_record_permanence_tournament_cycle614_2026_07_22.py": "ca84ee27a2d8fa67e17336717613e7a2cd05c46421e6d0cc5f4ee6a860938240",
+      "scripts/physical_autonomous_local_member_law_cell_cycle552_2026_07_21.py": "123c9fe8a7a3802af2627e21dd1cee5a8dadfbe0b82b7862e64c7024be6adc7f",
+      "scripts/physical_autonomous_occurrence_born_history_bridge_tournament_cycle587_2026_07_22.py": "881e2c5a33217352a97df363f5c3dcd67980c2e672b59e072c6ecbc1cb0f27d1",
+      "scripts/physical_postformation_preservation_non_erasing_renewal_tournament_cycle621_2026_07_22.py": "faa1a251d7586ed9d2e496cc73b42f45108347fe5f627523fcef3caa4e652a73",
+      "scripts/physical_preregistered_innovation_record_frequency_bridge_tournament_cycle592_2026_07_22.py": "14d01e640eb1818c29aeb9f05313b2211e28e445d4798f3f6718d0b0fca0d62a",
+      "scripts/physical_renewable_first_hit_record_admission_tournament_cycle571_2026_07_22.py": "af0a0b4837781b2a03fc471c819ce4c6b95e4e4cc000c403fabe4ddb10f6b14c",
+      "scripts/physical_selected_seam_conditional_record_binder_cycle531_2026_07_21.py": "53ce534e112862b8a8b9427a1655c4803766e016ea289c410784d1c67d59f370",
+      "scripts/physical_state_family_grade_transition_synthesis_tournament_cycle597_2026_07_22.py": "994f050fb33d7b9909896d195dca6be0062f56445ba49cac8731f196a3cfe79e"
+    },
+    "working_tree_differs_from_committed": [
+      "scripts/physical_selected_seam_conditional_record_binder_cycle531_2026_07_21.py",
+      "docs/work_history/repo/review_feedback/PHYSICAL_SELECTED_SEAM_CONDITIONAL_RECORD_BINDER_CYCLE531_NOTE_2026-07-21.md",
+      "scripts/physical_autonomous_local_member_law_cell_cycle552_2026_07_21.py",
+      "docs/work_history/repo/review_feedback/PHYSICAL_AUTONOMOUS_LOCAL_MEMBER_LAW_CELL_CYCLE552_NOTE_2026-07-21.md",
+      "scripts/physical_renewable_first_hit_record_admission_tournament_cycle571_2026_07_22.py",
+      "docs/work_history/repo/review_feedback/PHYSICAL_RENEWABLE_FIRST_HIT_RECORD_ADMISSION_TOURNAMENT_CYCLE571_NOTE_2026-07-22.md",
+      "scripts/physical_autonomous_occurrence_born_history_bridge_tournament_cycle587_2026_07_22.py",
+      "docs/work_history/repo/review_feedback/PHYSICAL_AUTONOMOUS_OCCURRENCE_BORN_HISTORY_BRIDGE_TOURNAMENT_CYCLE587_NOTE_2026-07-22.md",
+      "outputs/physical_autonomous_occurrence_born_history_bridge_tournament_cycle587_cold_2026_07_22.txt",
+      "scripts/physical_preregistered_innovation_record_frequency_bridge_tournament_cycle592_2026_07_22.py",
+      "docs/work_history/repo/review_feedback/PHYSICAL_PREREGISTERED_INNOVATION_RECORD_FREQUENCY_BRIDGE_TOURNAMENT_CYCLE592_NOTE_2026-07-22.md",
+      "outputs/physical_preregistered_innovation_record_frequency_bridge_tournament_cycle592_cold_2026_07_22.txt"
+    ],
+    "working_tree_receipt_raw_comparison_sha256": {
+      "outputs/physical_autonomous_admission_record_permanence_tournament_cycle614_receipt_2026_07_22.json": "f9d22aa295855901712ca5b383cf621a0323baf306178dbe1f2bc8673f79bf2e",
+      "outputs/physical_postformation_preservation_non_erasing_renewal_tournament_cycle621_receipt_2026_07_22.json": "d28ee4034b15ecd7eebac2a0481c9475d828bbbe444baa8d9b903f231ca47156"
+    },
+    "working_tree_variants_back_credit": false,
+    "working_tree_variants_retained_as_premise": false
+  },
+  "six_layer_acceptance_contract": {
+    "Route_B_acceptance_ready_interface": true,
+    "Route_C_candidate_grade_ready_interface": true,
+    "accepted_physical_M2_instrument_with_ternary_scaled_or_mixed_menu_and_noncontextual_grade": null,
+    "all_six_layers_jointly_closed": false,
+    "bounded_probe_disposition": "none of the inspected retained M2 surfaces jointly supplies physical menu eligibility and effect-functional w; this is an executable dependency result on the declared surfaces, not a universal impossibility claim",
+    "inspected_retained_M2_instrument_probe": [
+      {
+        "conditional_occurrence": true,
+        "effect_functional_grade_w": false,
+        "objective_sigma": false,
+        "physical_menu": false,
+        "surface": "Cycle531"
+      },
+      {
+        "conditional_occurrence": true,
+        "effect_functional_grade_w": false,
+        "objective_sigma": false,
+        "physical_menu": false,
+        "surface": "Cycle571"
+      },
+      {
+        "conditional_occurrence": false,
+        "effect_functional_grade_w": false,
+        "objective_sigma": false,
+        "physical_menu": false,
+        "surface": "Cycle587"
+      },
+      {
+        "conditional_occurrence": true,
+        "effect_functional_grade_w": false,
+        "objective_sigma": false,
+        "physical_menu": false,
+        "surface": "Cycle592"
+      },
+      {
+        "conditional_occurrence": true,
+        "effect_functional_grade_w": false,
+        "objective_sigma": false,
+        "physical_menu": false,
+        "surface": "Cycle597"
+      },
+      {
+        "conditional_occurrence": true,
+        "effect_functional_grade_w": false,
+        "objective_sigma": false,
+        "physical_menu": false,
+        "surface": "Cycle614"
+      },
+      {
+        "conditional_occurrence": false,
+        "effect_functional_grade_w": false,
+        "objective_sigma": false,
+        "physical_menu": false,
+        "surface": "Cycle621"
+      },
+      {
+        "conditional_occurrence": true,
+        "effect_functional_grade_w": false,
+        "objective_sigma": false,
+        "physical_menu": false,
+        "surface": "Cycle625 Route B"
+      },
+      {
+        "conditional_occurrence": false,
+        "effect_functional_grade_w": false,
+        "objective_sigma": false,
+        "physical_menu": false,
+        "surface": "Cycle625 Route C"
+      }
+    ],
+    "layers": [
+      {
+        "acceptance_test": "given an eligible menu family and an effect-functional grade w, force trace form at the declared scope",
+        "best_witness": "closed non-retained PR5472/5476/5479 heads",
+        "layer": "conditional_form_forcing_theorem",
+        "remaining_import": "menu eligibility and effect-functionality; closed heads are not retained premises",
+        "retained_physical_closure": false,
+        "status": "CONDITIONAL_THEOREMS_AVAILABLE_COMPARISON_ONLY"
+      },
+      {
+        "acceptance_test": "one bounded M2 instrument physically emits a ternary, scaled-projector, or mixed-projective menu without host selection",
+        "best_witness": null,
+        "layer": "physically_supplied_menu_eligibility",
+        "remaining_import": "menu family, outcome splitting/merging, and eligibility law",
+        "retained_physical_closure": false,
+        "status": "OPEN_ON_INSPECTED_RETAINED_SURFACES"
+      },
+      {
+        "acceptance_test": "the same physical effect receives one grade independent of its eligible-menu embedding",
+        "best_witness": "Route C state-derived denominator-64 mask",
+        "layer": "effect_functionality_noncontextual_grade_w",
+        "remaining_import": "effect identification, embedding independence, and physical calibration",
+        "retained_physical_closure": false,
+        "status": "CANDIDATE_GRADE_WITH_SUPPLIED_CALIBRATION_NOT_EFFECT_FUNCTIONAL_W"
+      },
+      {
+        "acceptance_test": "candidate opportunity maps to one objective occurrence with local exhaust ownership",
+        "best_witness": "Route B unique-quorum basis-code packet into Cycle531 conditional occurrence",
+        "layer": "occurrence_selector_sigma",
+        "remaining_import": "objective actuality/selector sigma on coherent inputs",
+        "retained_physical_closure": false,
+        "status": "BASIS_CONDITIONAL_ONLY_COHERENT_SECTORS_RETAINED"
+      },
+      {
+        "acceptance_test": "the occurred possibility is identified as a framework Record and physically preserved under the selected future-operation law",
+        "best_witness": "Cycle621 supplied finite preserving algebra downstream of Cycle614 packet",
+        "layer": "Record_admission_and_permanence",
+        "remaining_import": "packet-to-Record identification and physical all-future operation law",
+        "retained_physical_closure": false,
+        "status": "AXIOM_CONTENT_AND_FINITE_CANDIDATE_PRESERVATION_NOT_PHYSICAL_IDENTIFICATION"
+      },
+      {
+        "acceptance_test": "an objective renewed Record corpus has calibrated frequencies with Born and realized-history semantics",
+        "best_witness": "Route C exact complete-block grade/frequency equality",
+        "layer": "frequencies_and_realized_history_meaning",
+        "remaining_import": "objective corpus, renewal, independence/convergence, and probability meaning",
+        "retained_physical_closure": false,
+        "status": "FINITE_CANDIDATE_CORPUS_NOT_OBJECTIVE_OR_BORN"
+      }
+    ],
+    "pass": true
   },
   "six_wall_ledger": {
     "C_int": "matter/packet/resource/occurrence/grade interfaces coexist without new interaction claim",
@@ -2508,5 +3475,5 @@
   "status": "positive supplied physical shared middle and ROM-free bounded grade block; no derived extensional formation/admission, actuality, Record, frame/menu, or Born law",
   "strongest_constructive_result": "one supplied-candidate 129-M2 reversible local formation/admission functional from the Cycle614 six-endpoint state into the Cycle531 shared middle, retaining all candidates/losers, plus a separate 531-M2 ROM-free state-derived grade block",
   "tests_failed": 0,
-  "tests_passed": 6
+  "tests_passed": 8
 }

@@ -26,10 +26,12 @@ import math
 from pathlib import Path
 import resource
 import signal
+import subprocess
 import time
 
 
 ROOT = Path(__file__).resolve().parents[1]
+COMMITTED_SHORE_HEAD = "b31c92adb5bbf79b50b874078688d0bf62651eef"
 NOTE = ROOT / (
     "docs/work_history/repo/review_feedback/"
     "PHYSICAL_ADMISSIBILITY_OCCURRENCE_BORN_SHARED_MIDDLE_TOURNAMENT_"
@@ -83,11 +85,11 @@ FROZEN_SHORES = {
     "outputs/physical_preregistered_innovation_record_frequency_bridge_tournament_cycle592_cold_2026_07_22.txt":
         "135ec5a5b75c180d23a1246deb89b920b771dbc714a2e1ee2087cc6a2af5683d",
     "scripts/physical_state_family_grade_transition_synthesis_tournament_cycle597_2026_07_22.py":
-        "7dec66d44101d26f563bea079fa62b56daeb1d2d5a21a7a98c6f66fc22392d77",
+        "994f050fb33d7b9909896d195dca6be0062f56445ba49cac8731f196a3cfe79e",
     "docs/work_history/repo/review_feedback/PHYSICAL_STATE_FAMILY_GRADE_TRANSITION_SYNTHESIS_TOURNAMENT_CYCLE597_NOTE_2026-07-22.md":
-        "fdbfc68540be31de9d5199e25b1b71a440b9126447f383146caa07b70599c4b2",
+        "9a786fc7c559437483fb357893ad23146ddbdebd71a992ed8c709053e9b1d413",
     "outputs/physical_state_family_grade_transition_synthesis_tournament_cycle597_cold_2026_07_22.txt":
-        "6df65289d17c4c4e7c01789ed4899c7f23045f3f9d5b1a367cdc0dbe0aa6b9b1",
+        "022a8f946a9953a91a97ba9db3c05c3b3fc73bd08fcfe576e80b95373f51acea",
     "scripts/physical_autonomous_admission_record_permanence_tournament_cycle614_2026_07_22.py":
         "ca84ee27a2d8fa67e17336717613e7a2cd05c46421e6d0cc5f4ee6a860938240",
     "docs/work_history/repo/review_feedback/PHYSICAL_AUTONOMOUS_ADMISSION_RECORD_PERMANENCE_TOURNAMENT_CYCLE614_NOTE_2026-07-22.md":
@@ -103,6 +105,102 @@ NORMALIZED_RECEIPTS = {
         "b1b605be2b7e8db7203a7f2957fa745f799ddf35652f0abed4bc36a42ae3f089",
     "outputs/physical_postformation_preservation_non_erasing_renewal_tournament_cycle621_receipt_2026_07_22.json":
         "9010a5f79cf926febd9ee978def1f2164fcb598c5df024b36e7f170e7d034c3e",
+}
+
+
+# Exact read-only comparator heads.  PRs 5472/5476/5479 were closed without
+# merge and are not retained premises.  PR5557 is an external open candidate
+# lane, pinned at one immutable head and consumed only as a dependency-shape
+# comparison.  `git show <head>:<path>` makes every comparison byte-exact.
+EXTERNAL_COMPARISON_HEADS = {
+    "PR5472": {
+        "head_oid": "2c648ccb408a8c36a700f53ec5401369e3bbd490",
+        "declared_state": "CLOSED_NONRETAINED",
+        "use": "conditional effect-menu forcing/product-menu boundary comparison only",
+        "surfaces": (
+            {
+                "path": "docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+                "sha256": "f7ddc109ebb97d5514c7b41a78c523fe6adcf5419c08cff1ec75e54b2c99d435",
+                "line": 60,
+                "line_fragment": "Neither horn is selected. The axioms supply no menus at all",
+            },
+            {
+                "path": "scripts/born_form_effect_menu_sitewise_forcing_2026_07_17.py",
+                "sha256": "2bb29c0d1e27dc155af449c2cf76177d49a20933739eb6429aba06577ff1ef24",
+            },
+        ),
+    },
+    "PR5476": {
+        "head_oid": "a994617819f57e599dd101c654be366123392236",
+        "declared_state": "CLOSED_NONRETAINED",
+        "use": "conditional scaled-projector forcing/paired-menu boundary comparison only",
+        "surfaces": (
+            {
+                "path": "docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+                "sha256": "042a5e69a50dba337fc3e8bfd5faa3a6cef34b42c3e0ab6344ae5d05f5e6cdc7",
+                "line": 17,
+                "line_fragment": "the menu family the physical registration supplies is underived",
+            },
+            {
+                "path": "scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py",
+                "sha256": "05fd738e28d4c6c8969758b6bc89bad22d94215dc1387427b7cc5f500c511136",
+            },
+        ),
+    },
+    "PR5479": {
+        "head_oid": "84053108a424cef26dc23e484549df331ad2050f",
+        "declared_state": "CLOSED_NONRETAINED",
+        "use": "binary/ternary threshold, mixed-projective forcing, and incomparability comparison only",
+        "surfaces": (
+            {
+                "path": "docs/BORN_FORM_MENU_OUTCOME_THRESHOLD_AND_MIXED_PROJECTIVE_FORCING_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+                "sha256": "feb8b3ca2ed1a8ffb3d272ce81814cfc2c6598148e9fecf2a48df88b53c45a35",
+                "line": 62,
+                "line_fragment": "No family is selected; nothing here derives which menus record formation",
+            },
+            {
+                "path": "scripts/born_form_menu_outcome_threshold_and_mixed_projective_forcing_2026_07_17.py",
+                "sha256": "6f6e75bb73a13a18bcfadf22a35bb16d0c29e464162dd140aee4549f8b7b87e7",
+            },
+        ),
+    },
+    "PR5557": {
+        "head_oid": "a1e2f1ea60b1cf9b9cb0ae100c61cfd1f3a07318",
+        "declared_state": "OPEN_EXTERNAL_CANDIDATE_COMPARISON",
+        "use": "Cycle610-612 shared occurrence/admission dependency comparison; never back-credit",
+        "surfaces": (
+            {
+                "path": "docs/work_history/repo/review_feedback/PHYSICAL_INTRINSIC_TICK_EVENT_RELATIONAL_DURATION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md",
+                "sha256": "63854c353f477f7beb8371d3a4489c02d8787c54679ab8963c7cc828972a4ea4",
+                "line": 364,
+                "line_fragment": "shared supplied middle, not a",
+            },
+            {
+                "path": "scripts/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22.py",
+                "sha256": "61d624d3f47e371a3b99f55a3c60db68c1fe77f5d93a21651f9172b2d49f1458",
+            },
+            {
+                "path": "docs/work_history/repo/review_feedback/PHYSICAL_AUTONOMOUS_BOUND_BRANCH_PREPARATION_TOURNAMENT_CYCLE611_NOTE_2026-07-22.md",
+                "sha256": "91e0e0bb6c931f7da7a468a7094deffb775523f22b75334322417639edf57056",
+                "line": 97,
+                "line_fragment": "Occurrence selector sigma",
+            },
+            {
+                "path": "scripts/physical_autonomous_bound_branch_preparation_tournament_cycle611_2026_07_22.py",
+                "sha256": "9f1d4a2aabca8af1f61ef42071c8d2bce05018eace7a6f0886d769871689a13d",
+            },
+            {
+                "path": "docs/work_history/repo/review_feedback/PHYSICAL_TICK_ECHO_ASSOCIATION_CAUSAL_ORDER_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md",
+                "sha256": "028133c490e771dd3012061c79910fcfb88cd6132df072ec15e725fe9bc35496",
+                "line": 167,
+                "line_fragment": "conditional candidate Record.  No proper time",
+            },
+            {
+                "path": "scripts/physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22.py",
+                "sha256": "4494ce889809f6a179fc9bb712aa851fa6e73dac32a7b1bfbdb71903be5fadde",
+            },
+        ),
+    },
 }
 
 
@@ -124,15 +222,96 @@ def normalized_receipt_sha(path: Path) -> str:
     return sha256(json.dumps(body, sort_keys=True, separators=(",", ":")).encode()).hexdigest()
 
 
+def normalized_receipt_bytes(body_bytes: bytes) -> tuple[str, dict[str, object]]:
+    body = json.loads(body_bytes)
+    body.pop("elapsed_seconds", None)
+    body.pop("maximum_RSS_bytes", None)
+    digest = sha256(json.dumps(body, sort_keys=True, separators=(",", ":")).encode()).hexdigest()
+    return digest, body
+
+
+def repo_line(path: str, fragment: str) -> int:
+    """Return the unique exact working-tree line containing `fragment`."""
+    rows = (ROOT / path).read_text().splitlines()
+    matches = [index for index, row in enumerate(rows, 1)
+               if (row.strip().startswith(fragment) if fragment.startswith("def ") else fragment in row)]
+    if len(matches) != 1:
+        raise ValueError(f"expected one line for {path!r} / {fragment!r}, got {matches}")
+    return matches[0]
+
+
+def git_surface_bytes(head_oid: str, path: str) -> bytes:
+    return subprocess.run(
+        ("git", "show", f"{head_oid}:{path}"), cwd=ROOT,
+        check=True, capture_output=True,
+    ).stdout
+
+
+def external_comparison_controls() -> dict[str, object]:
+    observed: dict[str, object] = {}
+    failures = 0
+    for name, spec in EXTERNAL_COMPARISON_HEADS.items():
+        surface_rows = []
+        for surface in spec["surfaces"]:
+            body = git_surface_bytes(spec["head_oid"], surface["path"])
+            observed_sha = sha256(body).hexdigest()
+            line = surface.get("line")
+            line_text = None
+            line_match = True
+            if line is not None:
+                decoded = body.decode().splitlines()
+                line_text = decoded[line - 1] if 0 < line <= len(decoded) else None
+                line_match = line_text is not None and surface["line_fragment"] in line_text
+            row_pass = observed_sha == surface["sha256"] and line_match
+            failures += int(not row_pass)
+            surface_rows.append({
+                "path": surface["path"],
+                "expected_sha256": surface["sha256"],
+                "observed_sha256": observed_sha,
+                "citation_line": line,
+                "citation_line_text": line_text,
+                "citation_fragment": surface.get("line_fragment"),
+                "pass": row_pass,
+            })
+        observed[name] = {
+            "head_oid": spec["head_oid"],
+            "declared_state": spec["declared_state"],
+            "retained_as_premise": False,
+            "use": spec["use"],
+            "back_credit": False,
+            "surfaces": surface_rows,
+            "pass": all(row["pass"] for row in surface_rows),
+        }
+    passed = failures == 0 and all(not row["retained_as_premise"] for row in observed.values())
+    result = {
+        "heads": observed,
+        "closed_nonretained_heads": ("PR5472", "PR5476", "PR5479"),
+        "external_candidate_head": "PR5557",
+        "comparison_only": True,
+        "back_credit": False,
+        "pass": passed,
+    }
+    check("closed Born heads and external Cycle610-612 head are exact comparison-only git objects",
+          passed, {"heads": len(observed), "surfaces": sum(len(row["surfaces"]) for row in observed.values())})
+    return result
+
+
 def shore_controls() -> dict[str, object]:
-    observed = {name: file_sha(ROOT / name) for name in FROZEN_SHORES}
-    normalized = {name: normalized_receipt_sha(ROOT / name) for name in NORMALIZED_RECEIPTS}
-    c614 = json.loads((ROOT / next(name for name in NORMALIZED_RECEIPTS if "cycle614" in name)).read_text())
-    c621 = json.loads((ROOT / next(name for name in NORMALIZED_RECEIPTS if "cycle621" in name)).read_text())
-    premise = json.loads((ROOT / "docs/audit/data/axiom_premise_nodes.json").read_text())
+    committed_bytes = {name: git_surface_bytes(COMMITTED_SHORE_HEAD, name) for name in FROZEN_SHORES}
+    observed = {name: sha256(body).hexdigest() for name, body in committed_bytes.items()}
+    working_tree_observed = {name: file_sha(ROOT / name) for name in FROZEN_SHORES}
+    normalized_payloads = {
+        name: normalized_receipt_bytes(git_surface_bytes(COMMITTED_SHORE_HEAD, name))
+        for name in NORMALIZED_RECEIPTS
+    }
+    normalized = {name: row[0] for name, row in normalized_payloads.items()}
+    working_tree_receipt_sha = {name: file_sha(ROOT / name) for name in NORMALIZED_RECEIPTS}
+    c614 = next(row[1] for name, row in normalized_payloads.items() if "cycle614" in name)
+    c621 = next(row[1] for name, row in normalized_payloads.items() if "cycle621" in name)
+    premise = json.loads(committed_bytes["docs/audit/data/axiom_premise_nodes.json"])
     premise_text = json.dumps(premise).lower()
-    minimal = (ROOT / "docs/MINIMAL_AXIOMS_2026-06-29.md").read_text().lower()
-    realized = (ROOT / "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md").read_text().lower()
+    minimal = committed_bytes["docs/MINIMAL_AXIOMS_2026-06-29.md"].decode().lower()
+    realized = committed_bytes["docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md"].decode().lower()
     semantics = {
         "fixed_nearest_neighbor_rule_named": "one fixed nearest-neighbor admissibility rule" in minimal,
         "rule_covariance_named": ("covariant under lattice" in minimal and "proper cubic rotations" in minimal),
@@ -159,17 +338,26 @@ def shore_controls() -> dict[str, object]:
     passed = (observed == FROZEN_SHORES and normalized == NORMALIZED_RECEIPTS
               and all(semantics.values()) and receipt_contract)
     result = {
+        "committed_shore_head": COMMITTED_SHORE_HEAD,
+        "committed_git_objects_are_only_retained_local_premises": True,
         "expected_sha256": FROZEN_SHORES,
         "observed_sha256": observed,
+        "working_tree_comparison_sha256": working_tree_observed,
+        "working_tree_differs_from_committed": tuple(
+            name for name in FROZEN_SHORES if working_tree_observed[name] != observed[name]
+        ),
+        "working_tree_variants_retained_as_premise": False,
+        "working_tree_variants_back_credit": False,
         "expected_normalized_receipt_sha256": NORMALIZED_RECEIPTS,
         "observed_normalized_receipt_sha256": normalized,
+        "working_tree_receipt_raw_comparison_sha256": working_tree_receipt_sha,
         "semantic_surface_checks": semantics,
         "Cycle614_621_receipt_contract": receipt_contract,
         "Cycle614_mass_fixture_residual": c614["malformed_deletion_renewal_controls"]["one_particle_mass_fixture_residual"],
         "read_only_dependency_sweep_complete": True,
         "pass": passed,
     }
-    check("axiom/primitive and Cycles531/552/571/587/592/597/614/621 shores are pinned read-only",
+    check("axiom/primitive and Cycles531/552/571/587/592/597/614/621 shores are pinned to one immutable committed head",
           passed, {"files": len(observed), "normalized_receipts": len(normalized)})
     return result
 
@@ -917,8 +1105,110 @@ def route_c_rom_free_grade_corpus() -> dict[str, object]:
     return result
 
 
+def six_layer_acceptance_contract(route_b: dict[str, object], route_c: dict[str, object],
+                                  external: dict[str, object]) -> dict[str, object]:
+    """Keep the six logically distinct Born/occurrence obligations separate."""
+    layers = (
+        {
+            "layer": "conditional_form_forcing_theorem",
+            "acceptance_test": "given an eligible menu family and an effect-functional grade w, force trace form at the declared scope",
+            "best_witness": "closed non-retained PR5472/5476/5479 heads",
+            "status": "CONDITIONAL_THEOREMS_AVAILABLE_COMPARISON_ONLY",
+            "retained_physical_closure": False,
+            "remaining_import": "menu eligibility and effect-functionality; closed heads are not retained premises",
+        },
+        {
+            "layer": "physically_supplied_menu_eligibility",
+            "acceptance_test": "one bounded M2 instrument physically emits a ternary, scaled-projector, or mixed-projective menu without host selection",
+            "best_witness": None,
+            "status": "OPEN_ON_INSPECTED_RETAINED_SURFACES",
+            "retained_physical_closure": False,
+            "remaining_import": "menu family, outcome splitting/merging, and eligibility law",
+        },
+        {
+            "layer": "effect_functionality_noncontextual_grade_w",
+            "acceptance_test": "the same physical effect receives one grade independent of its eligible-menu embedding",
+            "best_witness": "Route C state-derived denominator-64 mask",
+            "status": "CANDIDATE_GRADE_WITH_SUPPLIED_CALIBRATION_NOT_EFFECT_FUNCTIONAL_W",
+            "retained_physical_closure": False,
+            "remaining_import": "effect identification, embedding independence, and physical calibration",
+        },
+        {
+            "layer": "occurrence_selector_sigma",
+            "acceptance_test": "candidate opportunity maps to one objective occurrence with local exhaust ownership",
+            "best_witness": "Route B unique-quorum basis-code packet into Cycle531 conditional occurrence",
+            "status": "BASIS_CONDITIONAL_ONLY_COHERENT_SECTORS_RETAINED",
+            "retained_physical_closure": False,
+            "remaining_import": "objective actuality/selector sigma on coherent inputs",
+        },
+        {
+            "layer": "Record_admission_and_permanence",
+            "acceptance_test": "the occurred possibility is identified as a framework Record and physically preserved under the selected future-operation law",
+            "best_witness": "Cycle621 supplied finite preserving algebra downstream of Cycle614 packet",
+            "status": "AXIOM_CONTENT_AND_FINITE_CANDIDATE_PRESERVATION_NOT_PHYSICAL_IDENTIFICATION",
+            "retained_physical_closure": False,
+            "remaining_import": "packet-to-Record identification and physical all-future operation law",
+        },
+        {
+            "layer": "frequencies_and_realized_history_meaning",
+            "acceptance_test": "an objective renewed Record corpus has calibrated frequencies with Born and realized-history semantics",
+            "best_witness": "Route C exact complete-block grade/frequency equality",
+            "status": "FINITE_CANDIDATE_CORPUS_NOT_OBJECTIVE_OR_BORN",
+            "retained_physical_closure": False,
+            "remaining_import": "objective corpus, renewal, independence/convergence, and probability meaning",
+        },
+    )
+    instrument_probe = (
+        {"surface": "Cycle531", "conditional_occurrence": True, "physical_menu": False,
+         "effect_functional_grade_w": False, "objective_sigma": False},
+        {"surface": "Cycle571", "conditional_occurrence": True, "physical_menu": False,
+         "effect_functional_grade_w": False, "objective_sigma": False},
+        {"surface": "Cycle587", "conditional_occurrence": False, "physical_menu": False,
+         "effect_functional_grade_w": False, "objective_sigma": False},
+        {"surface": "Cycle592", "conditional_occurrence": True, "physical_menu": False,
+         "effect_functional_grade_w": False, "objective_sigma": False},
+        {"surface": "Cycle597", "conditional_occurrence": True, "physical_menu": False,
+         "effect_functional_grade_w": False, "objective_sigma": False},
+        {"surface": "Cycle614", "conditional_occurrence": True, "physical_menu": False,
+         "effect_functional_grade_w": False, "objective_sigma": False},
+        {"surface": "Cycle621", "conditional_occurrence": False, "physical_menu": False,
+         "effect_functional_grade_w": False, "objective_sigma": False},
+        {"surface": "Cycle625 Route B", "conditional_occurrence": True, "physical_menu": False,
+         "effect_functional_grade_w": False, "objective_sigma": False},
+        {"surface": "Cycle625 Route C", "conditional_occurrence": False, "physical_menu": False,
+         "effect_functional_grade_w": False, "objective_sigma": False},
+    )
+    qualifying = tuple(row for row in instrument_probe
+                       if row["physical_menu"] and row["effect_functional_grade_w"])
+    passed = (
+        external["pass"] and len(layers) == 6
+        and all(not row["retained_physical_closure"] for row in layers)
+        and not qualifying
+        and route_b["pass"] and route_b["runtime_actuality_token"] is False
+        and route_b["coherent_onehot_sectors_retained"] == 6
+        and route_c["pass"] and route_c["calibration_is_supplied_candidate_law"] is True
+        and route_c["grade_or_frequency_called_Born"] is False
+    )
+    result = {
+        "layers": layers,
+        "inspected_retained_M2_instrument_probe": instrument_probe,
+        "accepted_physical_M2_instrument_with_ternary_scaled_or_mixed_menu_and_noncontextual_grade": None,
+        "bounded_probe_disposition": (
+            "none of the inspected retained M2 surfaces jointly supplies physical menu eligibility and effect-functional w; "
+            "this is an executable dependency result on the declared surfaces, not a universal impossibility claim"
+        ),
+        "Route_B_acceptance_ready_interface": route_b["pass"],
+        "Route_C_candidate_grade_ready_interface": route_c["pass"],
+        "all_six_layers_jointly_closed": False,
+        "pass": passed,
+    }
+    check("six-layer acceptance contract separates conditional Born forcing from physical occurrence and history",
+          passed, {"layers": len(layers), "joint_menu_grade_witnesses": len(qualifying)})
+    return result
+
+
 def no_go_discipline(route_a: dict[str, object], route_b: dict[str, object],
-                      route_c: dict[str, object]) -> dict[str, object]:
+                      route_c: dict[str, object], acceptance: dict[str, object]) -> dict[str, object]:
     families = [
         {"family": "extensional symmetric local relations",
          "object": "six-neighbor basis words and fixed shell predicate",
@@ -951,6 +1241,16 @@ def no_go_discipline(route_a: dict[str, object], route_b: dict[str, object],
          "terminal": "prove permanence, objective outcomes, and blinded calibration",
          "status": "OPEN_NOT_COUNTED"},
     ]
+    for row in families:
+        attempted = row["status"].startswith("ATTEMPTED")
+        row.update({
+            "object_formulation": row["object"],
+            "mechanism_invariant": row["mechanism"],
+            "terminal_obligation": row["terminal"],
+            "honesty_marker": "ATTEMPTED" if attempted else None,
+            "search_status": "ATTEMPTED" if attempted else "OPEN_UNTESTED_NOT_COUNTED",
+            "strength_vs_target": "weaker" if attempted else "unknown/comparable",
+        })
     walls = {
         "W_rule_content": "select the extensional fixed Admissibility relation",
         "W_formation": "identify the covariant local formation/admission functional from physical state",
@@ -965,6 +1265,167 @@ def no_go_discipline(route_a: dict[str, object], route_b: dict[str, object],
          "reason": f"closing {left} neither constructs nor logically selects {right}"}
         for left in walls for right in walls if left != right
     ]
+    current_path = "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py"
+    route_a_line = repo_line(current_path, "def route_a_structural_relation_tournament()")
+    route_b_line = repo_line(current_path, "def route_b_physical_shared_middle()")
+    route_c_line = repo_line(current_path, "def route_c_rom_free_grade_corpus()")
+    acceptance_line = repo_line(current_path, "def six_layer_acceptance_contract(")
+
+    def exact_row(prior_path: str, prior_line: int, prior_residual: str,
+                  current_line: int, current_residual: str, use_as_closure: bool,
+                  *, prior_ref: str = COMMITTED_SHORE_HEAD) -> dict[str, object]:
+        return {
+            "prior_ref": prior_ref,
+            "prior_path": prior_path,
+            "prior_line": prior_line,
+            "prior_residual": prior_residual,
+            "current_path": current_path,
+            "current_line": current_line,
+            "current_residual": current_residual,
+            "current_numeric_residual": 0.0,
+            "same_scope": True,
+            "scope_match": True,
+            "exact_match": True,
+            "use_as_closure": use_as_closure,
+        }
+
+    exact_residuals = (
+        exact_row("docs/MINIMAL_AXIOMS_2026-06-29.md", 57,
+                  "one fixed proper-cubic nearest-neighbor Admissibility rule is named structurally",
+                  route_a_line, "five extensional candidate tables are separated; nature's table is not selected", True),
+        exact_row("docs/MINIMAL_AXIOMS_2026-06-29.md", 65,
+                  "Records form is supplied existential content",
+                  acceptance_line, "bare occurrence is not rederived and selector sigma remains open", False),
+        exact_row("docs/work_history/repo/review_feedback/PHYSICAL_SELECTED_SEAM_CONDITIONAL_RECORD_BINDER_CYCLE531_NOTE_2026-07-21.md", 65,
+                  "conditional occurrence equation requires MEMBER and provenance",
+                  route_b_line, "exact Cycle531 port equation is instantiated with a supplied lane-zero adapter", True),
+        exact_row("docs/work_history/repo/review_feedback/PHYSICAL_AUTONOMOUS_ADMISSION_RECORD_PERMANENCE_TOURNAMENT_CYCLE614_NOTE_2026-07-22.md", 39,
+                  "unique-quorum is a basis-code candidate law, not actuality",
+                  route_b_line, "129-M2 shared middle retains candidates, losers, and coherent sectors", True),
+        exact_row("docs/work_history/repo/review_feedback/PHYSICAL_STATE_FAMILY_GRADE_TRANSITION_SYNTHESIS_TOURNAMENT_CYCLE597_NOTE_2026-07-22.md", 60,
+                  "q is an operational projector grade on the declared state",
+                  route_c_line, "ROM-free denominator-64 mask remains conditional on supplied calibration", True),
+        exact_row("docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md", 37,
+                  "pointwise realized-state evaluation is not state selection",
+                  acceptance_line, "endpoint bits are registered state data and supply no objective selector", False),
+        exact_row("docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md", 60,
+                  "conditional horns select no menu and the axioms supply no menus",
+                  acceptance_line, "effect-menu theorem is closed non-retained comparison only", False,
+                  prior_ref=EXTERNAL_COMPARISON_HEADS["PR5472"]["head_oid"]),
+        exact_row("docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md", 17,
+                  "physical scaled-projector menu family remains underived",
+                  acceptance_line, "no retained physical scaled-projector eligibility port is found", False,
+                  prior_ref=EXTERNAL_COMPARISON_HEADS["PR5476"]["head_oid"]),
+        exact_row("docs/BORN_FORM_MENU_OUTCOME_THRESHOLD_AND_MIXED_PROJECTIVE_FORCING_BOUNDED_THEOREM_NOTE_2026-07-17.md", 62,
+                  "no family is selected and record formation supplies no menus",
+                  acceptance_line, "no retained ternary or mixed-projective M2 menu-plus-grade instrument is found", False,
+                  prior_ref=EXTERNAL_COMPARISON_HEADS["PR5479"]["head_oid"]),
+        exact_row("docs/work_history/repo/review_feedback/PHYSICAL_AUTONOMOUS_BOUND_BRANCH_PREPARATION_TOURNAMENT_CYCLE611_NOTE_2026-07-22.md", 97,
+                  "external time candidate names occurrence selector sigma explicitly",
+                  acceptance_line, "sigma is a shared dependency comparison, never back-credit", False,
+                  prior_ref=EXTERNAL_COMPARISON_HEADS["PR5557"]["head_oid"]),
+    )
+    dropped = tuple({
+        "prior_ref": ref,
+        "prior_path": path,
+        "prior_line": line,
+        "prior_residual": theorem,
+        "current_path": current_path,
+        "current_line": acceptance_line,
+        "current_residual": "conditional mathematical forcing is not a physical M2 menu/grade/occurrence compiler",
+        "same_scope": False,
+        "scope_match": False,
+        "exact_match": False,
+        "use_as_closure": False,
+        "disposition": "dropped as physical menu or Born evidence; retained as exact comparison only",
+    } for ref, path, line, theorem in (
+        (EXTERNAL_COMPARISON_HEADS["PR5472"]["head_oid"],
+         "docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+         127, "effect-menu conditional form-forcing theorem"),
+        (EXTERNAL_COMPARISON_HEADS["PR5476"]["head_oid"],
+         "docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+         137, "scaled-projector conditional form-forcing theorem"),
+        (EXTERNAL_COMPARISON_HEADS["PR5479"]["head_oid"],
+         "docs/BORN_FORM_MENU_OUTCOME_THRESHOLD_AND_MIXED_PROJECTIVE_FORCING_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+         167, "mixed-projective conditional form-forcing theorem"),
+    ))
+
+    def rhetoric(phrase: str, **tested: str) -> dict[str, str]:
+        return {
+            "phrase": phrase,
+            "per_element": tested.get("per_element", "UNTESTED_NO_NEGATIVE_CLAIM"),
+            "per_mode": tested.get("per_mode", "UNTESTED_NO_NEGATIVE_CLAIM"),
+            "per_site": tested.get("per_site", "UNTESTED_NO_NEGATIVE_CLAIM"),
+            "per_block": tested.get("per_block", "UNTESTED_NO_NEGATIVE_CLAIM"),
+            "lattice_wide": tested.get("lattice_wide", "UNTESTED_NO_NEGATIVE_CLAIM"),
+        }
+
+    rhetoric_rows = (
+        rhetoric("conditional form-forcing is not physical menu eligibility", per_site="three exact closed-head theorems compared"),
+        rhetoric("candidate grade mask is not effect-functional w", per_element="generated grade values", per_block="64-address block"),
+        rhetoric("basis winner is not objective actuality", per_site="six candidate directions", per_block="six coherent sectors retained"),
+        rhetoric("conditional packet is not a framework Record", per_element="packet coordinates", per_site="Cycle531 port tuple"),
+        rhetoric("complete-block frequency is not Born probability", per_mode="eight history labels", per_block="exact denominator-64 counts"),
+        rhetoric("shared sigma dependency is not a shared obstruction", per_site="external Cycle611 type comparison"),
+    )
+    partial = (
+        {"file": current_path, "status": "EXECUTED_129_M2_CONDITIONAL_SHARED_MIDDLE", "what_closes": "candidate packet/resource/member/receipt port only"},
+        {"file": current_path, "status": "EXECUTED_531_M2_ROM_FREE_GRADE_BLOCK", "what_closes": "bounded state-to-grade-to-complete-block arithmetic only"},
+        {"file": f"git:{EXTERNAL_COMPARISON_HEADS['PR5479']['head_oid']}:docs/BORN_FORM_MENU_OUTCOME_THRESHOLD_AND_MIXED_PROJECTIVE_FORCING_BOUNDED_THEOREM_NOTE_2026-07-17.md", "status": "CLOSED_NONRETAINED_COMPARISON", "what_closes": "conditional ternary/mixed-projective form-forcing only"},
+        {"file": "scripts/physical_M2_menu_eligibility_effect_functionality_cycle_next.py", "status": "NOT_CREATED_OPEN_CANDIDATE", "what_closes": "physical ternary/scaled/mixed menu and noncontextual w"},
+        {"file": "scripts/physical_occurrence_selector_sigma_cycle_next.py", "status": "NOT_CREATED_OPEN_CANDIDATE", "what_closes": "objective coherent-input occurrence with exhaust"},
+        {"file": "scripts/physical_Record_corpus_Born_calibration_cycle_next.py", "status": "NOT_CREATED_OPEN_CANDIDATE", "what_closes": "Record admission/permanence and blinded realized frequencies"},
+    )
+    steelman = {
+        "mechanism": (
+            "a bounded translation-invariant dissipative QCA emits its own ternary/scaled/mixed menu, assigns one "
+            "effect-functional grade, owns one coherent sector with retained exhaust, and forms a preserved Record corpus"
+        ),
+        "supporting_authorities": (
+            {"ref": EXTERNAL_COMPARISON_HEADS["PR5479"]["head_oid"],
+             "path": "docs/BORN_FORM_MENU_OUTCOME_THRESHOLD_AND_MIXED_PROJECTIVE_FORCING_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+             "line": 62, "relevance": "conditional menu family remains physically unselected"},
+            {"ref": EXTERNAL_COMPARISON_HEADS["PR5557"]["head_oid"],
+             "path": "docs/work_history/repo/review_feedback/PHYSICAL_AUTONOMOUS_BOUND_BRANCH_PREPARATION_TOURNAMENT_CYCLE611_NOTE_2026-07-22.md",
+             "line": 97, "relevance": "types the shared occurrence selector sigma"},
+            {"ref": "WORKTREE", "path": current_path, "line": acceptance_line,
+             "relevance": "executable six-layer acceptance contract"},
+        ),
+        "terminal_obligation": (
+            "freeze the physical update before held contexts; pass literal M2 support, all24/all576, inverse/deletion, "
+            "coherent exhaust, post-formation preservation, renewal, and blinded changed-state Record-frequency tests"
+        ),
+        "openness": "concrete target-equivalent route remains open, defeating broad negative and axiom-pressure claims",
+    }
+    echoes = (
+        {"cycle": "Cycle531", "retired": "NOT_RETIRED", "mechanism": "typed conditional binder",
+         "applicability": "Route B reaches conditional occurrence only", "citation_ref": COMMITTED_SHORE_HEAD,
+         "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_SELECTED_SEAM_CONDITIONAL_RECORD_BINDER_CYCLE531_NOTE_2026-07-21.md", "citation_line": 65},
+        {"cycle": "Cycle571", "retired": "NOT_RETIRED", "mechanism": "supplied actuality/admission inputs",
+         "applicability": "selector and admission remain independent", "citation_ref": COMMITTED_SHORE_HEAD,
+         "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_RENEWABLE_FIRST_HIT_RECORD_ADMISSION_TOURNAMENT_CYCLE571_NOTE_2026-07-22.md", "citation_line": 41},
+        {"cycle": "Cycle597", "retired": "PARTIAL_ROM_DEPENDENCE_RETIRED", "mechanism": "row-free bounded grade synthesis",
+         "applicability": "calibration/corpus/Born meaning remain open", "citation_ref": COMMITTED_SHORE_HEAD,
+         "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_STATE_FAMILY_GRADE_TRANSITION_SYNTHESIS_TOURNAMENT_CYCLE597_NOTE_2026-07-22.md", "citation_line": 60},
+        {"cycle": "Cycle614", "retired": "RUNTIME_ADMISSION_ROM_RETIRED_FOR_ONE_CANDIDATE", "mechanism": "unique-quorum packet",
+         "applicability": "candidate law is not actuality or Record", "citation_ref": COMMITTED_SHORE_HEAD,
+         "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_AUTONOMOUS_ADMISSION_RECORD_PERMANENCE_TOURNAMENT_CYCLE614_NOTE_2026-07-22.md", "citation_line": 39},
+        {"cycle": "Cycle621", "retired": "FINITE_PRESERVATION_PARTIAL", "mechanism": "supplied future-operation algebra",
+         "applicability": "does not identify physical all-future permanence", "citation_ref": COMMITTED_SHORE_HEAD,
+         "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_POSTFORMATION_PRESERVATION_NON_ERASING_RENEWAL_TOURNAMENT_CYCLE621_NOTE_2026-07-22.md", "citation_line": 18},
+        {"cycle": "PR5472", "retired": "CLOSED_NONRETAINED_COMPARISON_ONLY", "mechanism": "effect-menu forcing/product boundary",
+         "applicability": "no physical-menu back-credit", "citation_ref": EXTERNAL_COMPARISON_HEADS["PR5472"]["head_oid"],
+         "citation_path": "docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md", "citation_line": 60},
+        {"cycle": "PR5476", "retired": "CLOSED_NONRETAINED_COMPARISON_ONLY", "mechanism": "scaled-projector forcing/paired boundary",
+         "applicability": "no physical-menu back-credit", "citation_ref": EXTERNAL_COMPARISON_HEADS["PR5476"]["head_oid"],
+         "citation_path": "docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md", "citation_line": 17},
+        {"cycle": "PR5479", "retired": "CLOSED_NONRETAINED_COMPARISON_ONLY", "mechanism": "binary/ternary and mixed-projective map",
+         "applicability": "conditional theorem sharpens acceptance test only", "citation_ref": EXTERNAL_COMPARISON_HEADS["PR5479"]["head_oid"],
+         "citation_path": "docs/BORN_FORM_MENU_OUTCOME_THRESHOLD_AND_MIXED_PROJECTIVE_FORCING_BOUNDED_THEOREM_NOTE_2026-07-17.md", "citation_line": 62},
+        {"cycle": "PR5557 Cycle611", "retired": "OPEN_EXTERNAL_COMPARISON_NO_BACK_CREDIT", "mechanism": "typed selector sigma/admission split",
+         "applicability": "same dependency shape, not retained closure", "citation_ref": EXTERNAL_COMPARISON_HEADS["PR5557"]["head_oid"],
+         "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_AUTONOMOUS_BOUND_BRANCH_PREPARATION_TOURNAMENT_CYCLE611_NOTE_2026-07-22.md", "citation_line": 97},
+    )
     result = {
         "N1_normalized_families": families,
         "N1_qualifying_attempts": 3,
@@ -982,42 +1443,42 @@ def no_go_discipline(route_a: dict[str, object], route_b: dict[str, object],
             "finite noiseless gate alphabet, Cycle523 lowering, bounded line chart, and frame action",
             "bare occurrence is supplied by 'Records form'; the formation functional, basis actuality interpretation, Record permanence, probability meaning, and held off-family extension are not hidden",
         ],
-        "N4_residual_matching": [
-            {"witness": "retained Admissibility surface", "residual": "names one fixed covariant rule but not its extensional truth table or formation/update functional", "use": "Route-A model separation only"},
-            {"witness": "Record axiom", "residual": "supplies bare occurrence through 'Records form' but no formation site/content/weight/rate rule", "use": "occurrence premise, not a rederivation target"},
-            {"witness": "Cycle531", "residual": "member/receipt supply remains independent of conditional occurrence", "use": "Route-B exact port equations"},
-            {"witness": "Cycle614", "residual": "unique-quorum is a physical candidate, not identified actuality/formation law", "use": "Route-B supplied physical core"},
-            {"witness": "Cycle597", "residual": "parameter calibration and corpus semantics remain supplied", "use": "Route-C exact denominator-64 interface"},
-            {"witness": "realized-state primitive", "residual": "supplies pointwise slot, never state selection", "use": "endpoint word is registered state data; grade variation is conditional law output"},
-            {"witness": "Record finite additivity", "residual": "finite scalar readout additivity does not furnish all mathematical menus/projector frames", "use": "frame/menu remains separate from probability"},
-            {"witness": "Route-C off-family controls", "residual": "odd counts and noncomplete blocks refused", "use": "scope boundary, not impossibility"},
-        ],
-        "N5_rhetoric_audit": {
-            "permitted": ["candidate relation", "conditional occurrence", "basis winner", "grade mask", "candidate corpus"],
-            "forbidden_and_not_claimed": ["rederived bare occurrence", "derived fixed formation rule", "objective actuality", "Record from packet copying", "Born from grade/frequency", "finite additivity as a complete frame", "shared obstruction", "axiom pressure"],
-        },
-        "N6_partial_closure": (
-            "retain the 129-M2 unique-quorum shared middle and 531-M2 state-derived grade block; "
-            "replace the supplied predicate/calibration independently when a physical rule is proposed"
-        ),
-        "N7_hostile_steelman": (
-            "A translation-invariant dissipative QCA could expose the extensional Admissibility table through its local "
-            "transition algebra, select one coherent sector with retained exhaust, form a nonreentering readable Record, "
-            "and generate a renewable blinded corpus.  Freeze that update before held contexts; require the exact "
-            "Cycle614/531 port map, all24/all576, post-formation projector preservation, resource renewal, and changed-state "
-            "frequency predictions.  This concrete route is open."
-        ),
-        "N8_cross_cycle_echo": (
-            "Cycles531/552/571 repeatedly separated conditional occurrence from member genesis, actuality, and Record; "
-            "Cycles587/592/597 separated physical candidate laws and finite frequencies from Born; Cycle614 removed runtime "
-            "admission bits for one supplied rule; Cycle621 preserved its packet under one supplied operation algebra.  "
-            "Those prior compiler closures argue for more constructive tests, not axiom pressure."
-        ),
-        "shared_route_independent_obstruction": False,
+        "N4_residual_matching": exact_residuals,
+        "N4_exact_residual_matches": exact_residuals,
+        "N4_dropped_nonmatches": dropped,
+        "N5_rhetoric_audit": rhetoric_rows,
+        "N5_rhetoric_resolution_ledger": rhetoric_rows,
+        "N6_partial_closure": partial,
+        "N6_partial_closure_paths": partial,
+        "N7_hostile_steelman": steelman,
+        "N7_steelman": steelman,
+        "N8_cross_cycle_echo": echoes,
+        "Status": "FAIL",
+        "artifact_status": "PASS_NARROWED_SHARED_MIDDLE_AND_GRADE_BLOCK_ONLY",
+        "broad_no_go_claim": False,
         "minimum_content_claim": False,
+        "shared_route_independent_obstruction": False,
+        "shared_obstruction_claim": False,
         "axiom_pressure": False,
-        "pass": (route_a["pass"] and route_b["pass"] and route_c["pass"]
-                 and len(pairs) == 42 and len(families) == 6),
+        "axiom_pressure_claim": False,
+        "pass": (
+            route_a["pass"] and route_b["pass"] and route_c["pass"] and acceptance["pass"]
+            and len(pairs) == 42 and len(families) == 6
+            and sum(row["honesty_marker"] == "ATTEMPTED" for row in families) == 3
+            and len(exact_residuals) == 10 and len(dropped) == 3
+            and all(row["same_scope"] and row["exact_match"]
+                    and all(key in row for key in ("prior_path", "prior_line", "current_path", "current_line", "use_as_closure"))
+                    for row in exact_residuals)
+            and all(not row["same_scope"] and not row["exact_match"] and not row["use_as_closure"]
+                    for row in dropped)
+            and len(rhetoric_rows) == 6
+            and all(all(key in row for key in ("per_element", "per_mode", "per_site", "per_block", "lattice_wide"))
+                    for row in rhetoric_rows)
+            and len(partial) == 6 and all(all(key in row for key in ("file", "status", "what_closes")) for row in partial)
+            and all(all(key in row for key in ("cycle", "retired", "mechanism", "applicability", "citation_path", "citation_line"))
+                    for row in echoes)
+            and all(all(key in row for key in ("ref", "path", "line")) for row in steelman["supporting_authorities"])
+        ),
     }
     check("full N1-N8 forbids broad negative, minimum-content, shared-obstruction, and axiom-pressure claims",
           result["pass"], {"attempted": 3, "required": 5, "pairs": len(pairs)})
@@ -1027,7 +1488,8 @@ def no_go_discipline(route_a: dict[str, object], route_b: dict[str, object],
 def inventory() -> dict[str, object]:
     return {
         "supplied": [
-            "read-only Admissibility, Record, realized-state, scale, kinetic-isotropy, and premise surfaces",
+            f"read-only Admissibility, Record, realized-state, scale, kinetic-isotropy, and premise surfaces from committed head {COMMITTED_SHORE_HEAD}",
+            "closed non-retained PR5472/5476/5479 heads and external PR5557 Cycle610-612 head as exact comparison-only git objects with no back-credit",
             "Cycle614 92-M2 unique-quorum candidate circuit, packet grammar, triplicated matter endpoint genesis, and blank packet",
             "the identification of unique quorum as the Route-B candidate rule and scalar Cycle531 binding/member lane zero",
             "one ready resource, blank archive/loser/member/receipt/snapshot rails, and finite line/frame chart",
@@ -1035,6 +1497,7 @@ def inventory() -> dict[str, object]:
             "finite noiseless gates and the byte-pinned Cycle523 one-/two-M2 lowering used by Cycles597/614",
         ],
         "derived": [
+            "one executable six-layer acceptance contract separating theorem, menu, grade, sigma, Record, and frequency/history obligations",
             "five explicit nonconstant total proper-cubic local relation tables and exact extensional separators",
             "one 129-M2 reversible unique-quorum packet/resource/member/receipt/occurrence map with retained candidates and losers",
             "exact inverse, deletion, malformed, L3/L4/L6, all24/all576, leakage, coherent-sector, and mass-preservation controls",
@@ -1042,6 +1505,7 @@ def inventory() -> dict[str, object]:
             "exact complete-block grade/frequency equality, calibration deletion, address-permutation, and held off-family controls",
         ],
         "open": [
+            "one retained bounded M2 instrument that physically emits a ternary, scaled-projector, or mixed-projective menu and effect-functional grade without host choice",
             "extensional identification of nature's fixed Admissibility rule and a covariant local formation/admission functional from state (bare occurrence is already supplied)",
             "objective actuality for a coherent input, identification of this packet as a framework Record, and physical realization of axiom-supplied permanence/readability",
             "derivation of the state/parameter calibration and extension beyond the even-count bounded family",
@@ -1056,6 +1520,8 @@ def note_text(receipt: dict[str, object]) -> str:
     a = receipt["route_A_structural_relation"]
     b = receipt["route_B_physical_shared_middle"]
     c = receipt["route_C_ROM_free_grade_corpus"]
+    acceptance = receipt["six_layer_acceptance_contract"]
+    external = receipt["external_comparison_heads"]
     held_lines = "\n".join(
         f"| {row['name']} | `{row['Cycle597_quantized_counts']}` | `{row['nearest_state_local_counts']}` | "
         f"{row['nearest_state_grade_L1']:.10f} | yes | yes |"
@@ -1065,6 +1531,14 @@ def note_text(receipt: dict[str, object]) -> str:
         f"| {name} | `{tuple(row['accepted_shells'])}` | {row['accepted_truth_rows']} | "
         f"{row['train_accepts']} | {row['held_accepts']} |"
         for name, row in a["candidate_fixed_relations"].items()
+    )
+    layer_lines = "\n".join(
+        f"| {row['layer']} | {row['status']} | {row['best_witness'] or 'none'} | {row['remaining_import']} |"
+        for row in acceptance["layers"]
+    )
+    head_lines = "\n".join(
+        f"| {name} | `{row['head_oid']}` | {row['declared_state']} | {row['use']} | false |"
+        for name, row in external["heads"].items()
     )
     return f"""# Physical Admissibility / occurrence / Born shared-middle tournament — Cycle 625
 
@@ -1120,10 +1594,48 @@ held sizes are refused rather than silently ordered.
 
 No shared route-independent obstruction and no axiom pressure are established.
 
+## Six-layer executable acceptance contract
+
+The campaign separates six obligations that cannot be substituted for one
+another:
+
+| layer | current status | strongest exact witness | remaining import |
+|---|---|---|---|
+{layer_lines}
+
+The executable retained-surface probe covers Cycles 531/571/587/592/597/614/621
+and both Cycle-625 positive routes.  It finds no retained physical M2
+instrument that jointly emits a ternary, scaled-projector, or mixed-projective
+menu and an effect-functional noncontextual grade without host choice.  This is
+a bounded dependency result on the declared surfaces, not a universal
+impossibility claim.  Route B is an acceptance-ready conditional occurrence
+port; Route C is an acceptance-ready candidate grade block.  Neither closes a
+missing layer by relabeling.
+
+## Exact comparison-only heads
+
+| source | immutable head | declared status | use here | back-credit |
+|---|---|---|---|---:|
+{head_lines}
+
+The three Born heads are closed and non-retained.  They establish conditional
+mathematical surfaces only: effect-menu forcing plus the product-menu boundary;
+scaled-projector forcing plus the paired-menu boundary; and the exact
+binary-versus-ternary threshold with mixed-projective forcing and witnessed
+family incomparability.  Their own notes explicitly leave physical menu
+selection underived.  PR5557's Cycle610-612 head independently types the same
+occurrence selector `sigma` and admission split for the time lane.  It is an
+external candidate comparison, not back-credit into Cycle 625.
+
 ## Read-only dependency sweep
 
 The runner byte-pins the actual axiom/premise and primitive surfaces and the
-Cycle531/552/571/587/592/597/614/621 runners/notes.  Cycle614 and Cycle621
+Cycle531/552/571/587/592/597/614/621 runners/notes, plus the immutable git
+objects in the comparison table.  Every retained local shore is read from
+immutable committed head `{COMMITTED_SHORE_HEAD}` with `git show`; no dirty
+working-tree variant is a premise or receives back-credit.  Dirty variants are
+reported only as non-retained comparisons, so a clean checkout containing the
+committed object reproduces the tournament.  Cycle614 and Cycle621
 receipts are normalized only by deleting run-dependent elapsed/RSS fields and
 then hash-pinned.  The sweep confirms:
 
@@ -1253,16 +1765,22 @@ are **FAIL / DO NOT SHIP**.
 
 N2 collapses the residuals to seven walls—extensional rule content, the local
 formation functional, actuality, Record, calibration, mathematical frame/menu,
-and probability—and audits all 42 directed pairs.  None implies another on the exhibited interfaces.  N3 lists
-the candidate rule, adapter, resource, calibration, address chart, blank
-capacity, and semantic interpretations explicitly.  N4 uses each cited cycle
-only at its exact residual.  N5 forbids promotion of packet to Record, basis
-winner to actuality, or grade/frequency to Born.  N6 retains both positive
-compilers as replaceable test benches.  N7's concrete hostile steelman is a
-translation-invariant dissipative QCA with an exposed extensional table,
-retained exhaust, post-formation preservation, renewal, and blinded
-changed-state frequency tests.  N8 observes that prior wiring and ROM imports
-did close constructively, so repeated boundaries do not create axiom pressure.
+and probability—and audits all 42 directed pairs.  None implies another on the
+exhibited interfaces.  N3 lists the candidate rule, adapter, resource,
+calibration, address chart, blank capacity, closed-head status, and semantic
+interpretations explicitly.
+
+N4 contains ten exact rows.  Every row exposes `prior_ref`, exact repository
+`prior_path` and `prior_line`, exact current path and line, `same_scope`,
+`exact_match`, and `use_as_closure`.  Three further rows drop the conditional
+form-forcing theorems as physical-menu evidence because their scope does not
+match; they remain comparison-only.  N5 contains six five-resolution rhetoric
+rows, one for each acceptance layer.  N6 contains six structured
+`file` / `status` / `what_closes` paths.  N7 gives an actionable dissipative-QCA
+steelman with three exact authorities and a held-test terminal.  N8 gives nine
+row-wise echoes with canonical `cycle` / `retired` / `mechanism` /
+`applicability` fields and exact citations.  Repeated boundaries do not create
+axiom pressure because the target-equivalent constructive routes remain open.
 
 Shared obstruction: **not established**.
 
@@ -1316,6 +1834,12 @@ def note_contract() -> dict[str, object]:
         "bare occurrence is not the target", "registered state data",
         "finite-additivity-to-frame bridge", "all 42 directed pairs",
         "broad no-go and minimum-content gates are fail / do not ship",
+        "six-layer executable acceptance contract", "conditional form-forcing",
+        "ternary, scaled-projector, or mixed-projective", "effect-functional",
+        "occurrence selector sigma", "closed and non-retained", "not back-credit",
+        "n4 contains ten exact rows", "file / status / what_closes",
+        "cycle / retired / mechanism", "no retained physical m2",
+        "immutable committed head", "no dirty working-tree variant is a premise",
         "shared obstruction: not established", "axiom pressure: none",
     )
     body = normalized_note(NOTE)
@@ -1327,10 +1851,12 @@ def main() -> None:
     signal.alarm(math.ceil(WALL_CAP_SECONDS))
     started = time.perf_counter()
     shore = shore_controls()
+    external = external_comparison_controls()
     route_a = route_a_structural_relation_tournament()
     route_b = route_b_physical_shared_middle()
     route_c = route_c_rom_free_grade_corpus()
-    no_go = no_go_discipline(route_a, route_b, route_c)
+    acceptance = six_layer_acceptance_contract(route_b, route_c, external)
+    no_go = no_go_discipline(route_a, route_b, route_c, acceptance)
     receipt = {
         "status": (
             "positive supplied physical shared middle and ROM-free bounded grade block; "
@@ -1339,9 +1865,11 @@ def main() -> None:
         "authority": AUTHORITY,
         "audit": AUDIT,
         "shore": shore,
+        "external_comparison_heads": external,
         "route_A_structural_relation": route_a,
         "route_B_physical_shared_middle": route_b,
         "route_C_ROM_free_grade_corpus": route_c,
+        "six_layer_acceptance_contract": acceptance,
         "no_go_discipline": no_go,
         "inventory": inventory(),
         "strongest_constructive_result": (
@@ -1363,6 +1891,18 @@ def main() -> None:
         },
         "shared_substrate_obstruction": False,
         "axiom_pressure": False,
+        "author_accepted": False,
+        "breakthrough": False,
+        "maturity_rebase": None,
+        "semantic_promotion_boundary": {
+            "physical_menu_eligibility": None,
+            "effect_functionality_w": None,
+            "objective_occurrence_selector_sigma": None,
+            "framework_Record_identification": None,
+            "physical_permanence_law": None,
+            "Born_probability": None,
+            "realized_history": None,
+        },
         "optimal_next_campaign": (
             "extensional-law exposure tournament across constrained-QCA, stochastic-dilation, and dissipative-formation "
             "updates, composed into the unchanged shared-middle interface before blinded Record-corpus tests"
@@ -1385,8 +1925,8 @@ def main() -> None:
         "tests_failed": FAIL,
     })
     receipt["pass"] = (
-        FAIL == 0 and shore["pass"] and route_a["pass"] and route_b["pass"]
-        and route_c["pass"] and no_go["pass"] and contract["pass"]
+        FAIL == 0 and shore["pass"] and external["pass"] and route_a["pass"] and route_b["pass"]
+        and route_c["pass"] and acceptance["pass"] and no_go["pass"] and contract["pass"]
         and elapsed < WALL_CAP_SECONDS and rss < RSS_CAP_BYTES
         and AUTHORITY == "none" and AUDIT == "unset"
     )

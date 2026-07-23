@@ -1,0 +1,36 @@
+PASS Cycle663 target/fixtures precede evidence and all retained/comparison surfaces are exact :: {'target': 'c0217df0f6c40686704a61edf8d1e8e2760a5aec0267a52fb62ba1de4ce686a1', 'prereg': 'de0e6b7a494b63f16d17b0ea4c39726c13d1d392f40663b6f724419a21a1b7b3', 'shores': 9}
+PASS hard-core blockade generates the Cycle661 extensional table without its count mechanism :: {'rows': 192, 'relation': '7996f5c21fd295e32ae1ebcfa37207ac0d40cf5cd0b1f5ae0d08cd38040b0383'}
+PASS literal collision dilation yields the exact reduced contraction, dark state and global inverse :: {'unitarity': 2.6470882081092774e-16, 'H6_pending': np.float64(0.015625000000000007)}
+PASS every emission direction feeds unchanged occurrence and preservation interfaces :: {'directions': 6, 'generators': 546}
+PASS identical Cycle661 fixtures give the derived finite contraction and exact attractor comparison :: {'product_z0': 0.003845214843750008, 'biased_phase_product': 0.0018737455061144962, 'six_site_GHZ': 0.17601616006225923}
+PASS finite fresh-bath blocks renew through explicit ready/spent heads and saturate exactly :: [(3, 54), (4, 96), (6, 216)]
+PASS support-two, deletion, domain, translation, all24 and all576 controls pass :: {'literal': 1408, 'covariance': 1536}
+PASS fresh N1-N8 blocks broad negative/shared obstruction/axiom pressure after three routes :: {'attempted': 3, 'required': 5, 'pairs': 20}
+PASS Cycle663 note preserves trajectory/Record/Born/no-go boundaries :: ()
+{
+  "pass": true,
+  "tests_passed": 9,
+  "tests_failed": 0,
+  "elapsed_seconds": 1.0892629580339417,
+  "maximum_RSS_bytes": 68632576,
+  "note": "/private/tmp/toe-science.BB0KQV/docs/work_history/repo/review_feedback/PHYSICAL_DISSIPATIVE_METASTABLE_FORMATION_CHANNEL_CYCLE663_NOTE_2026-07-23.md",
+  "receipt": "/private/tmp/toe-science.BB0KQV/outputs/physical_dissipative_metastable_formation_channel_cycle663_receipt_2026_07_23.json"
+}
+        1.66 real         1.29 user         0.18 sys
+            72810496  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               38479  page reclaims
+                1372  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 621  voluntary context switches
+                3663  involuntary context switches
+         18172418486  instructions retired
+          4370717092  cycles elapsed
+            58212856  peak memory footprint

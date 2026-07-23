@@ -1,0 +1,1613 @@
+{
+  "audit": "unset",
+  "author_accepted": false,
+  "authority": "none",
+  "axiom_pressure": false,
+  "bath_ledger": {
+    "all_bath_exhaust_retained": true,
+    "all_pointer_blockade_adapter_exhaust_retained": true,
+    "bath_called_energy_entropy_or_temperature": false,
+    "finite_rows": [
+      {
+        "allocation_disjoint": true,
+        "allocation_ranges": [
+          [
+            0,
+            82
+          ],
+          [
+            82,
+            164
+          ],
+          [
+            164,
+            246
+          ]
+        ],
+        "capacity": 3,
+        "explicit_M2": 246,
+        "fresh_bath_M2": 54,
+        "full_fresh_episode_M2": 82,
+        "head_after_each": [
+          1,
+          2,
+          0
+        ],
+        "horizon": 3,
+        "inverse_failures": 0,
+        "inverse_renews_only_by_erasing_that_attempt_exhaust": true,
+        "ledger_failures": 0,
+        "next_attempt_refused": true,
+        "non_erasing_or_indefinite_renewal": false,
+        "pass": true,
+        "ready_after_each": [
+          2,
+          1,
+          0
+        ],
+        "resource_M2": 9,
+        "retained_nonbath_M2": 183,
+        "spent_after_each": [
+          1,
+          2,
+          3
+        ],
+        "split": "train"
+      },
+      {
+        "allocation_disjoint": true,
+        "allocation_ranges": [
+          [
+            0,
+            88
+          ],
+          [
+            88,
+            176
+          ],
+          [
+            176,
+            264
+          ],
+          [
+            264,
+            352
+          ]
+        ],
+        "capacity": 4,
+        "explicit_M2": 352,
+        "fresh_bath_M2": 96,
+        "full_fresh_episode_M2": 88,
+        "head_after_each": [
+          1,
+          2,
+          3,
+          0
+        ],
+        "horizon": 4,
+        "inverse_failures": 0,
+        "inverse_renews_only_by_erasing_that_attempt_exhaust": true,
+        "ledger_failures": 0,
+        "next_attempt_refused": true,
+        "non_erasing_or_indefinite_renewal": false,
+        "pass": true,
+        "ready_after_each": [
+          3,
+          2,
+          1,
+          0
+        ],
+        "resource_M2": 12,
+        "retained_nonbath_M2": 244,
+        "spent_after_each": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "split": "held_out"
+      },
+      {
+        "allocation_disjoint": true,
+        "allocation_ranges": [
+          [
+            0,
+            100
+          ],
+          [
+            100,
+            200
+          ],
+          [
+            200,
+            300
+          ],
+          [
+            300,
+            400
+          ],
+          [
+            400,
+            500
+          ],
+          [
+            500,
+            600
+          ]
+        ],
+        "capacity": 6,
+        "explicit_M2": 600,
+        "fresh_bath_M2": 216,
+        "full_fresh_episode_M2": 100,
+        "head_after_each": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          0
+        ],
+        "horizon": 6,
+        "inverse_failures": 0,
+        "inverse_renews_only_by_erasing_that_attempt_exhaust": true,
+        "ledger_failures": 0,
+        "next_attempt_refused": true,
+        "non_erasing_or_indefinite_renewal": false,
+        "pass": true,
+        "ready_after_each": [
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "resource_M2": 18,
+        "retained_nonbath_M2": 366,
+        "spent_after_each": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "split": "held"
+      }
+    ],
+    "fresh_bath_zero_state_supplied": true,
+    "pass": true,
+    "ready_plus_spent_conserved": true,
+    "unchanged_external_test_block_M2": {
+      "Cycle621_A": 123,
+      "Cycle625_B": 129
+    }
+  },
+  "blockade_extensional_table": {
+    "Cycle661_relation_sha256": "7996f5c21fd295e32ae1ebcfa37207ac0d40cf5cd0b1f5ae0d08cd38040b0383",
+    "bounded_preblock_M2": 38,
+    "count_carrier_M2": 0,
+    "derived_relation_sha256": "7996f5c21fd295e32ae1ebcfa37207ac0d40cf5cd0b1f5ae0d08cd38040b0383",
+    "disposition": "positive hard-core blockade precursor compiler independent of Cycle661 count carrier",
+    "exact_rows": 192,
+    "extensional_table_matches_Cycle661": true,
+    "failures": 0,
+    "host_winner": false,
+    "input_relation_ROM": false,
+    "inverse_failures": 0,
+    "mechanism_shared_with_Cycle661": false,
+    "metastable_precursor_rails": 6,
+    "pair_collision_exhaust_rails": 15,
+    "pass": true,
+    "runtime_actuality_token": false,
+    "truth_rows": [
+      {
+        "collision_exhaust": 0,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 0,
+        "word": "000000"
+      },
+      {
+        "collision_exhaust": 0,
+        "eventual_admit": 1,
+        "reject": 0,
+        "weight": 1,
+        "word": "000001"
+      },
+      {
+        "collision_exhaust": 0,
+        "eventual_admit": 1,
+        "reject": 0,
+        "weight": 1,
+        "word": "000010"
+      },
+      {
+        "collision_exhaust": 1,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 2,
+        "word": "000011"
+      },
+      {
+        "collision_exhaust": 0,
+        "eventual_admit": 1,
+        "reject": 0,
+        "weight": 1,
+        "word": "000100"
+      },
+      {
+        "collision_exhaust": 1,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 2,
+        "word": "000101"
+      },
+      {
+        "collision_exhaust": 1,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 2,
+        "word": "000110"
+      },
+      {
+        "collision_exhaust": 3,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 3,
+        "word": "000111"
+      },
+      {
+        "collision_exhaust": 0,
+        "eventual_admit": 1,
+        "reject": 0,
+        "weight": 1,
+        "word": "001000"
+      },
+      {
+        "collision_exhaust": 1,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 2,
+        "word": "001001"
+      },
+      {
+        "collision_exhaust": 1,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 2,
+        "word": "001010"
+      },
+      {
+        "collision_exhaust": 3,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 3,
+        "word": "001011"
+      },
+      {
+        "collision_exhaust": 1,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 2,
+        "word": "001100"
+      },
+      {
+        "collision_exhaust": 3,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 3,
+        "word": "001101"
+      },
+      {
+        "collision_exhaust": 3,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 3,
+        "word": "001110"
+      },
+      {
+        "collision_exhaust": 6,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 4,
+        "word": "001111"
+      },
+      {
+        "collision_exhaust": 0,
+        "eventual_admit": 1,
+        "reject": 0,
+        "weight": 1,
+        "word": "010000"
+      },
+      {
+        "collision_exhaust": 1,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 2,
+        "word": "010001"
+      },
+      {
+        "collision_exhaust": 1,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 2,
+        "word": "010010"
+      },
+      {
+        "collision_exhaust": 3,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 3,
+        "word": "010011"
+      },
+      {
+        "collision_exhaust": 1,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 2,
+        "word": "010100"
+      },
+      {
+        "collision_exhaust": 3,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 3,
+        "word": "010101"
+      },
+      {
+        "collision_exhaust": 3,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 3,
+        "word": "010110"
+      },
+      {
+        "collision_exhaust": 6,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 4,
+        "word": "010111"
+      },
+      {
+        "collision_exhaust": 1,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 2,
+        "word": "011000"
+      },
+      {
+        "collision_exhaust": 3,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 3,
+        "word": "011001"
+      },
+      {
+        "collision_exhaust": 3,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 3,
+        "word": "011010"
+      },
+      {
+        "collision_exhaust": 6,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 4,
+        "word": "011011"
+      },
+      {
+        "collision_exhaust": 3,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 3,
+        "word": "011100"
+      },
+      {
+        "collision_exhaust": 6,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 4,
+        "word": "011101"
+      },
+      {
+        "collision_exhaust": 6,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 4,
+        "word": "011110"
+      },
+      {
+        "collision_exhaust": 10,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 5,
+        "word": "011111"
+      },
+      {
+        "collision_exhaust": 0,
+        "eventual_admit": 1,
+        "reject": 0,
+        "weight": 1,
+        "word": "100000"
+      },
+      {
+        "collision_exhaust": 1,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 2,
+        "word": "100001"
+      },
+      {
+        "collision_exhaust": 1,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 2,
+        "word": "100010"
+      },
+      {
+        "collision_exhaust": 3,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 3,
+        "word": "100011"
+      },
+      {
+        "collision_exhaust": 1,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 2,
+        "word": "100100"
+      },
+      {
+        "collision_exhaust": 3,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 3,
+        "word": "100101"
+      },
+      {
+        "collision_exhaust": 3,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 3,
+        "word": "100110"
+      },
+      {
+        "collision_exhaust": 6,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 4,
+        "word": "100111"
+      },
+      {
+        "collision_exhaust": 1,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 2,
+        "word": "101000"
+      },
+      {
+        "collision_exhaust": 3,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 3,
+        "word": "101001"
+      },
+      {
+        "collision_exhaust": 3,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 3,
+        "word": "101010"
+      },
+      {
+        "collision_exhaust": 6,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 4,
+        "word": "101011"
+      },
+      {
+        "collision_exhaust": 3,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 3,
+        "word": "101100"
+      },
+      {
+        "collision_exhaust": 6,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 4,
+        "word": "101101"
+      },
+      {
+        "collision_exhaust": 6,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 4,
+        "word": "101110"
+      },
+      {
+        "collision_exhaust": 10,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 5,
+        "word": "101111"
+      },
+      {
+        "collision_exhaust": 1,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 2,
+        "word": "110000"
+      },
+      {
+        "collision_exhaust": 3,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 3,
+        "word": "110001"
+      },
+      {
+        "collision_exhaust": 3,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 3,
+        "word": "110010"
+      },
+      {
+        "collision_exhaust": 6,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 4,
+        "word": "110011"
+      },
+      {
+        "collision_exhaust": 3,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 3,
+        "word": "110100"
+      },
+      {
+        "collision_exhaust": 6,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 4,
+        "word": "110101"
+      },
+      {
+        "collision_exhaust": 6,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 4,
+        "word": "110110"
+      },
+      {
+        "collision_exhaust": 10,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 5,
+        "word": "110111"
+      },
+      {
+        "collision_exhaust": 3,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 3,
+        "word": "111000"
+      },
+      {
+        "collision_exhaust": 6,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 4,
+        "word": "111001"
+      },
+      {
+        "collision_exhaust": 6,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 4,
+        "word": "111010"
+      },
+      {
+        "collision_exhaust": 10,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 5,
+        "word": "111011"
+      },
+      {
+        "collision_exhaust": 6,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 4,
+        "word": "111100"
+      },
+      {
+        "collision_exhaust": 10,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 5,
+        "word": "111101"
+      },
+      {
+        "collision_exhaust": 10,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 5,
+        "word": "111110"
+      },
+      {
+        "collision_exhaust": 15,
+        "eventual_admit": 0,
+        "reject": 1,
+        "weight": 6,
+        "word": "111111"
+      }
+    ],
+    "update_interface_audit": true,
+    "work_failures": 0
+  },
+  "breakthrough": false,
+  "corpus_response": {
+    "Cycle634_family": "mixed_projective_merge",
+    "Cycle661_fixture_digest": "de0e6b7a494b63f16d17b0ea4c39726c13d1d392f40663b6f724419a21a1b7b3",
+    "all_64_pointer_sectors_retained": true,
+    "candidate_response_called_empirical_frequency": false,
+    "candidate_weight_called_Born_probability": false,
+    "effect_residual": 1.2412670766236366e-16,
+    "emission_time_sectors_H3_H4_H6": [
+      3,
+      4,
+      6
+    ],
+    "pass": true,
+    "pointer_or_packet_called_Record": false,
+    "reduced_ensemble_called_objective_trajectory": false,
+    "rows": {
+      "biased_phase_product": {
+        "Cycle661_deterministic_formed_weight": 0.001998661873188796,
+        "attractor_unique_sector_weight": 0.001998661873188796,
+        "attractor_unweighted_census_response": 0.09375,
+        "collision_horizon": 4,
+        "finite_dissipative_formed_weight": 0.0018737455061144962,
+        "finite_to_attractor_residual": 0.00012491636707429987,
+        "finite_unweighted_census_response": 0.087890625,
+        "metastable_no_emission_weight": 0.00012491636707429976,
+        "sector_normalization_residual": 0.0,
+        "split": "held_blinded",
+        "structural_reject_weight": 0.9980013381268112
+      },
+      "product_z0": {
+        "Cycle661_deterministic_formed_weight": 0.004394531250000009,
+        "attractor_unique_sector_weight": 0.004394531250000009,
+        "attractor_unweighted_census_response": 0.09375,
+        "collision_horizon": 3,
+        "finite_dissipative_formed_weight": 0.003845214843750008,
+        "finite_to_attractor_residual": 0.0005493164062500009,
+        "finite_unweighted_census_response": 0.08203125,
+        "metastable_no_emission_weight": 0.0005493164062500011,
+        "sector_normalization_residual": 0.0,
+        "split": "train",
+        "structural_reject_weight": 0.99560546875
+      },
+      "six_site_GHZ": {
+        "Cycle661_deterministic_formed_weight": 0.17881006736483476,
+        "attractor_unique_sector_weight": 0.17881006736483476,
+        "attractor_unweighted_census_response": 0.09375,
+        "collision_horizon": 6,
+        "finite_dissipative_formed_weight": 0.17601616006225923,
+        "finite_to_attractor_residual": 0.0027939073025755323,
+        "finite_unweighted_census_response": 0.09228515625,
+        "metastable_no_emission_weight": 0.002793907302575543,
+        "sector_normalization_residual": 0.0,
+        "split": "held_blinded_nonproduct",
+        "structural_reject_weight": 0.8211899326351653
+      }
+    },
+    "six_instrument_M2": 12
+  },
+  "cycle": 663,
+  "elapsed_seconds": 1.0585385829908773,
+  "frozen_contract": {
+    "Cycle661_relation_sha256": "7996f5c21fd295e32ae1ebcfa37207ac0d40cf5cd0b1f5ae0d08cd38040b0383",
+    "Cycle661_shared_fixture_fields": {
+      "candidate_pointer_value": 1,
+      "held_biased": {
+        "name": "biased_phase_product",
+        "phase": [
+          0.0,
+          0.2,
+          -0.3,
+          0.5,
+          -0.7,
+          0.9
+        ],
+        "split": "held_blinded",
+        "theta": [
+          0.19,
+          0.31,
+          0.43,
+          0.57,
+          0.71,
+          0.83
+        ]
+      },
+      "held_nonproduct": {
+        "name": "six_site_GHZ",
+        "split": "held_blinded_nonproduct",
+        "state": "(|000000>+exp(0.37i)|111111>)/sqrt(2)"
+      },
+      "menu": "Cycle634 mixed_projective_merge binary POVM at each of six incident ports",
+      "train": {
+        "name": "product_z0",
+        "split": "train",
+        "state": "|000000>"
+      }
+    },
+    "Cycle661_shared_fixture_fields_sha256": "ac44e7f010a2e2075981ecbb480ab4f7f1ea74417df2e633b75b4fb8c62ed919",
+    "Cycle661_shared_fixtures_exact": true,
+    "Cycle662_highest_terminal": "objective occurrence candidate inside a supplied finite stochastic ontology; not framework law identification, Record, Born meaning, or non-erasing renewal",
+    "expected_preregistration_sha256": "de0e6b7a494b63f16d17b0ea4c39726c13d1d392f40663b6f724419a21a1b7b3",
+    "expected_target_contract_sha256": "c0217df0f6c40686704a61edf8d1e8e2760a5aec0267a52fb62ba1de4ce686a1",
+    "first_evidence_line": 176,
+    "frozen_before_evidence": true,
+    "immutable_shore": "60f450e0090d13343686554453380990fd1fdf27",
+    "local_comparison_observed": {
+      "outputs/physical_deterministic_constrained_qca_formation_law_tournament_cycle661_receipt_2026_07_23.json": "c0ac1effe618bbdcbfc4bd6a3360f3beb557aa2469d47be476deef862e1340c5",
+      "outputs/physical_objective_stochastic_open_dilation_cycle662_receipt_2026_07_23.json": "27b258f1e4d96fb26f65937875bea32d74ecdfa62712c353e3327d0357a2c806",
+      "scripts/physical_deterministic_constrained_qca_formation_law_tournament_cycle661_2026_07_23.py": "83383268139e92bcd040fa176686f2e6c3d5eef806ba58ed5da9953a59af7590",
+      "scripts/physical_objective_stochastic_open_dilation_cycle662_2026_07_23.py": "219b6d3d93884a0ab8d9b0cc6c79850d008193fd5571b0281c76b6f8707d6b84"
+    },
+    "local_comparison_pins": {
+      "outputs/physical_deterministic_constrained_qca_formation_law_tournament_cycle661_receipt_2026_07_23.json": "c0ac1effe618bbdcbfc4bd6a3360f3beb557aa2469d47be476deef862e1340c5",
+      "outputs/physical_objective_stochastic_open_dilation_cycle662_receipt_2026_07_23.json": "27b258f1e4d96fb26f65937875bea32d74ecdfa62712c353e3327d0357a2c806",
+      "scripts/physical_deterministic_constrained_qca_formation_law_tournament_cycle661_2026_07_23.py": "83383268139e92bcd040fa176686f2e6c3d5eef806ba58ed5da9953a59af7590",
+      "scripts/physical_objective_stochastic_open_dilation_cycle662_2026_07_23.py": "219b6d3d93884a0ab8d9b0cc6c79850d008193fd5571b0281c76b6f8707d6b84"
+    },
+    "observed": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_ADMISSIBILITY_OCCURRENCE_BORN_SHARED_MIDDLE_TOURNAMENT_CYCLE625_NOTE_2026-07-22.md": "190ed6dfc5502a0d8d68c665501fe4f009d21fb2aad4bc0b71e9f96a9856552d",
+      "docs/work_history/repo/review_feedback/PHYSICAL_FORCING_MENU_INSTRUMENT_BRIDGE_TOURNAMENT_CYCLE634_NOTE_2026-07-23.md": "d0b8b3b0cb496a3864320c38f2fd8948a42a03252bf18e1b2389618f76f3cd5c",
+      "docs/work_history/repo/review_feedback/PHYSICAL_POSTFORMATION_PRESERVATION_NON_ERASING_RENEWAL_TOURNAMENT_CYCLE621_NOTE_2026-07-22.md": "a52395a57fb34b6d827a677a43528033e913cde2f98ce708a276507f6e1e353e",
+      "outputs/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_receipt_2026_07_22.json": "a867cbeed66052da8cb85e8867a55802d27bfca586c9db805aa1649a6f0c7560",
+      "outputs/physical_forcing_menu_instrument_bridge_tournament_cycle634_receipt_2026_07_23.json": "3fd6a476feac3bae38f0da2b6c0d2826432e4b6a605d02d1e99b0d946e6efc87",
+      "outputs/physical_postformation_preservation_non_erasing_renewal_tournament_cycle621_receipt_2026_07_22.json": "d28ee4034b15ecd7eebac2a0481c9475d828bbbe444baa8d9b903f231ca47156",
+      "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py": "a618b5803cc1313a3dd644e3e066bb987bf366d8215a50a43d4260c69847b9e9",
+      "scripts/physical_forcing_menu_instrument_bridge_tournament_cycle634_2026_07_23.py": "ca187b7dda5c2b1b56a63ba960695734fc9915177c2769ef957913a096a74d52",
+      "scripts/physical_postformation_preservation_non_erasing_renewal_tournament_cycle621_2026_07_22.py": "faa1a251d7586ed9d2e496cc73b42f45108347fe5f627523fcef3caa4e652a73"
+    },
+    "pass": true,
+    "pins": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_ADMISSIBILITY_OCCURRENCE_BORN_SHARED_MIDDLE_TOURNAMENT_CYCLE625_NOTE_2026-07-22.md": "190ed6dfc5502a0d8d68c665501fe4f009d21fb2aad4bc0b71e9f96a9856552d",
+      "docs/work_history/repo/review_feedback/PHYSICAL_FORCING_MENU_INSTRUMENT_BRIDGE_TOURNAMENT_CYCLE634_NOTE_2026-07-23.md": "d0b8b3b0cb496a3864320c38f2fd8948a42a03252bf18e1b2389618f76f3cd5c",
+      "docs/work_history/repo/review_feedback/PHYSICAL_POSTFORMATION_PRESERVATION_NON_ERASING_RENEWAL_TOURNAMENT_CYCLE621_NOTE_2026-07-22.md": "a52395a57fb34b6d827a677a43528033e913cde2f98ce708a276507f6e1e353e",
+      "outputs/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_receipt_2026_07_22.json": "a867cbeed66052da8cb85e8867a55802d27bfca586c9db805aa1649a6f0c7560",
+      "outputs/physical_forcing_menu_instrument_bridge_tournament_cycle634_receipt_2026_07_23.json": "3fd6a476feac3bae38f0da2b6c0d2826432e4b6a605d02d1e99b0d946e6efc87",
+      "outputs/physical_postformation_preservation_non_erasing_renewal_tournament_cycle621_receipt_2026_07_22.json": "d28ee4034b15ecd7eebac2a0481c9475d828bbbe444baa8d9b903f231ca47156",
+      "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py": "a618b5803cc1313a3dd644e3e066bb987bf366d8215a50a43d4260c69847b9e9",
+      "scripts/physical_forcing_menu_instrument_bridge_tournament_cycle634_2026_07_23.py": "ca187b7dda5c2b1b56a63ba960695734fc9915177c2769ef957913a096a74d52",
+      "scripts/physical_postformation_preservation_non_erasing_renewal_tournament_cycle621_2026_07_22.py": "faa1a251d7586ed9d2e496cc73b42f45108347fe5f627523fcef3caa4e652a73"
+    },
+    "preregistration": {
+      "candidate_pattern_census": "each of 64 pointer words once; deterministic code census only",
+      "candidate_pointer_value": 1,
+      "collision_survival": "r=1/2 per fresh bath layer",
+      "held_biased": {
+        "horizon": 4,
+        "name": "biased_phase_product",
+        "phase": [
+          0.0,
+          0.2,
+          -0.3,
+          0.5,
+          -0.7,
+          0.9
+        ],
+        "split": "held_blinded",
+        "theta": [
+          0.19,
+          0.31,
+          0.43,
+          0.57,
+          0.71,
+          0.83
+        ]
+      },
+      "held_nonproduct": {
+        "horizon": 6,
+        "name": "six_site_GHZ",
+        "split": "held_blinded_nonproduct",
+        "state": "(|000000>+exp(0.37i)|111111>)/sqrt(2)"
+      },
+      "menu": "Cycle634 mixed_projective_merge binary POVM at each of six incident ports",
+      "train": {
+        "horizon": 3,
+        "name": "product_z0",
+        "split": "train",
+        "state": "|000000>"
+      }
+    },
+    "preregistration_sha256": "de0e6b7a494b63f16d17b0ea4c39726c13d1d392f40663b6f724419a21a1b7b3",
+    "target_contract": {
+      "claim_ceiling": "candidate dissipative reduced channel with reversible retained dilation; no objective trajectory, framework Record, nature-law selection, Born probability, or axiom pressure",
+      "cycle": 663,
+      "forbidden": [
+        "count carrier",
+        "shell relation ROM",
+        "actuality token",
+        "host winner",
+        "host sampler",
+        "discarded bath",
+        "reduced-decoherence-to-trajectory promotion",
+        "packet-to-Record promotion",
+        "candidate-weight-to-Born promotion"
+      ],
+      "primary_mechanism": "hard-core open-control blockade prepares a metastable precursor; identical two-M2 partial-swap collisions transfer it into retained fresh-bath exhaust and a formation latch",
+      "required": [
+        "all coherent accepted, rejected, no-emission and emission-time sectors retained",
+        "finite fresh-bath allocation, renewal and exhaustion ledger",
+        "exact global inverse, deletion, malformed and lawful-domain controls",
+        "identical Cycle661 biased/nonproduct preregistered fixtures and Cycle662 comparison",
+        "support-two lowering, all24 and all576",
+        "exact Record, Born, trajectory, time and source firewalls",
+        "extensional-table and candidate-corpus comparison against Cycle661 without its count carrier"
+      ],
+      "route": "dissipative/metastable local formation channel",
+      "target": "attach immutable Cycle634 binary pointer sectors to unchanged Cycle625-B/Cycle531 occurrence and Cycle621 preservation interfaces through a bounded Stinespring collision law whose reduced precursor channel has a derived attractor and contraction"
+    },
+    "target_contract_sha256": "c0217df0f6c40686704a61edf8d1e8e2760a5aec0267a52fb62ba1de4ce686a1",
+    "target_line": 13,
+    "working_tree_retained_shore_used": false
+  },
+  "highest_honest_terminal": "candidate reduced dissipative/metastable channel with all global exhaust retained; not one objective trajectory, framework Record, Born law, or nature-law selection",
+  "interfaces": {
+    "Cycle531_equation_failures": 0,
+    "Cycle621_formation_failures": 0,
+    "Cycle621_generator_failures": 0,
+    "Cycle621_generator_tests": 546,
+    "Cycle621_monoid_called_physical_all_future_law": false,
+    "Cycle625_failures": 0,
+    "Cycle625_inverse_failures": 0,
+    "Cycle625_member_deletion_basis_residual": 1.4142135623730951,
+    "candidate_packet_called_framework_Record": false,
+    "formed_directions": 6,
+    "formed_latch_and_packet_dark_under_further_collision": true,
+    "literal_emission_adapter": {
+      "adapter_deletion_basis_residual": 1.4142135623730951,
+      "bath_emission_exhaust_retained": true,
+      "coherent_basis_images_checked": 81,
+      "coherent_isometry_Gram_residual": 0.0,
+      "emission_basis_rows": 78,
+      "horizons": {
+        "3": {
+          "coherent_basis_images": 19,
+          "emission_basis_rows": 18,
+          "event_M2": 29,
+          "support_two_CNOT_calls": 90
+        },
+        "4": {
+          "coherent_basis_images": 25,
+          "emission_basis_rows": 24,
+          "event_M2": 35,
+          "support_two_CNOT_calls": 120
+        },
+        "6": {
+          "coherent_basis_images": 37,
+          "emission_basis_rows": 36,
+          "event_M2": 47,
+          "support_two_CNOT_calls": 180
+        }
+      },
+      "inverse_failures": 0,
+      "malformed_rows": [
+        {
+          "case": "multiple_emissions",
+          "refused": true
+        },
+        {
+          "case": "dirty_target",
+          "refused": true
+        }
+      ],
+      "packet_or_latch_called_framework_Record": false,
+      "pass": true,
+      "postformation_fresh_collision_dark_residual": 0.0,
+      "target_failures": 0
+    },
+    "pass": true
+  },
+  "inventory": {
+    "derived": [
+      "hard-core extensional table without count carrier",
+      "literal Stinespring inverse and reduced contraction/attractor",
+      "dark precursor/postformation behavior",
+      "emission/rejection/metastable exhaust accounting",
+      "finite bath ledgers",
+      "unchanged occurrence/preservation compatibility",
+      "held corpus response and Cycle661 comparison",
+      "support-two/deletion/domain/all24/all576"
+    ],
+    "open": [
+      "nature-law selection",
+      "objective trajectory owner",
+      "framework Record identification and physical permanence law",
+      "non-erasing bath renewal",
+      "Born/probability/corpus law",
+      "noise/infinite volume/time/source/gravity"
+    ],
+    "supplied": [
+      "immutable Cycle634 binary menu and blank apparatus",
+      "blockade geometry and collision r=1/2",
+      "fresh zero bath blocks and finite resource heads",
+      "Cycle625 lane-zero adapter and Cycle621 generator monoid",
+      "state preparations and frame chart"
+    ]
+  },
+  "locality_deletion_domain": {
+    "H3_H4_H6_route_core_M2": {
+      "3": 79,
+      "4": 85,
+      "6": 97
+    },
+    "H6_literal_collision_calls": 36,
+    "H6_literal_emission_adapter_CNOT": 180,
+    "NN_calls_for_blockade_and_adapter_pairs": 48834,
+    "basis_gate_counts": {
+      "CNOT": 6,
+      "TOFFOLI": 75,
+      "X": 61
+    },
+    "collision_block_covariance_residual": 0.0,
+    "covariance_failures": 0,
+    "covariance_tests": 1536,
+    "deletion_rows": [
+      {
+        "basis_residual": 1.4142135623730951,
+        "gate": "collision:0:1",
+        "visible": true
+      },
+      {
+        "basis_residual": 1.4142135623730951,
+        "gate": "blockade:0:precursor",
+        "visible": true
+      },
+      {
+        "basis_residual": 1.4142135623730951,
+        "gate": "reject:precursor:0",
+        "visible": true
+      },
+      {
+        "basis_residual": 1.4142135623730951,
+        "gate": "reject:provenance:0",
+        "visible": true
+      }
+    ],
+    "dirty_nonblank_bath_refused": true,
+    "emission_adapter_covariance_failures": 0,
+    "emission_adapter_covariance_tests": 1944,
+    "external_test_block_M2": {
+      "Cycle621_A": 123,
+      "Cycle625_B": 129
+    },
+    "global_parity_or_order_service": false,
+    "group_failures": 0,
+    "group_tests": 3456,
+    "invalid_horizon_refused": true,
+    "literal_one_two_M2_calls_before_routing": 1408,
+    "malformed_rows": [
+      {
+        "case": "nonbinary",
+        "rejected": true
+      },
+      {
+        "case": "dirty_collision",
+        "rejected": true
+      },
+      {
+        "case": "dirty_pending",
+        "rejected": true
+      },
+      {
+        "case": "dirty_work",
+        "rejected": true
+      },
+      {
+        "case": "dirty_reject",
+        "rejected": true
+      }
+    ],
+    "maximum_literal_support_M2": 2,
+    "ordered_frame_products": 576,
+    "partitioned_supercell_translation_invariant": true,
+    "pass": true,
+    "proper_cubic_frames": 24,
+    "route_and_return_SWAPS_for_blockade_and_adapter_pairs": 21106,
+    "translated_schedule_digests": [
+      "f00d22cf7a6c0009aa109a66ca7ff6eda1f5ea80777c6eaa71992f51eb3d8fde",
+      "f00d22cf7a6c0009aa109a66ca7ff6eda1f5ea80777c6eaa71992f51eb3d8fde",
+      "f00d22cf7a6c0009aa109a66ca7ff6eda1f5ea80777c6eaa71992f51eb3d8fde"
+    ]
+  },
+  "maximum_RSS_bytes": 76349440,
+  "no_go_discipline": {
+    "N1_attempted": 3,
+    "N1_broad_negative_gate": "FAIL_DO_NOT_SHIP",
+    "N1_families": [
+      {
+        "family": "Cycle661 deterministic conserved-count QCA",
+        "mechanism": "reversible unary count carrier",
+        "status": "ATTEMPTED_POSITIVE_CANDIDATE"
+      },
+      {
+        "family": "Cycle662 objective stochastic open dilation",
+        "mechanism": "supplied hybrid jump ontology",
+        "status": "ATTEMPTED_POSITIVE_CANDIDATE"
+      },
+      {
+        "family": "Cycle663 dissipative/metastable collision",
+        "mechanism": "hard-core precursor plus reduced amplitude damping",
+        "status": "ATTEMPTED_POSITIVE_CANDIDATE"
+      },
+      {
+        "family": "unique-extension history QCA",
+        "mechanism": "one covariant successor without probability",
+        "status": "OPEN_NOT_COUNTED"
+      },
+      {
+        "family": "topological/dissipative archive phase",
+        "mechanism": "phase-protected formation and correction",
+        "status": "OPEN_NOT_COUNTED"
+      },
+      {
+        "family": "autonomous regenerative objective bath",
+        "mechanism": "stationary innovations, trajectory and renewal",
+        "status": "OPEN_NOT_COUNTED"
+      }
+    ],
+    "N1_required": 5,
+    "N2_directed_pairs": [
+      {
+        "independent": true,
+        "left": "nature_law_selection",
+        "left_closes_right": false,
+        "right": "objective_trajectory",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "nature_law_selection",
+        "left_closes_right": false,
+        "right": "framework_Record_and_physical_permanence",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "nature_law_selection",
+        "left_closes_right": false,
+        "right": "non_erasing_renewal",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "nature_law_selection",
+        "left_closes_right": false,
+        "right": "grade_probability_corpus",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "objective_trajectory",
+        "left_closes_right": false,
+        "right": "nature_law_selection",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "objective_trajectory",
+        "left_closes_right": false,
+        "right": "framework_Record_and_physical_permanence",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "objective_trajectory",
+        "left_closes_right": false,
+        "right": "non_erasing_renewal",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "objective_trajectory",
+        "left_closes_right": false,
+        "right": "grade_probability_corpus",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "framework_Record_and_physical_permanence",
+        "left_closes_right": false,
+        "right": "nature_law_selection",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "framework_Record_and_physical_permanence",
+        "left_closes_right": false,
+        "right": "objective_trajectory",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "framework_Record_and_physical_permanence",
+        "left_closes_right": false,
+        "right": "non_erasing_renewal",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "framework_Record_and_physical_permanence",
+        "left_closes_right": false,
+        "right": "grade_probability_corpus",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "non_erasing_renewal",
+        "left_closes_right": false,
+        "right": "nature_law_selection",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "non_erasing_renewal",
+        "left_closes_right": false,
+        "right": "objective_trajectory",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "non_erasing_renewal",
+        "left_closes_right": false,
+        "right": "framework_Record_and_physical_permanence",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "non_erasing_renewal",
+        "left_closes_right": false,
+        "right": "grade_probability_corpus",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "grade_probability_corpus",
+        "left_closes_right": false,
+        "right": "nature_law_selection",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "grade_probability_corpus",
+        "left_closes_right": false,
+        "right": "objective_trajectory",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "grade_probability_corpus",
+        "left_closes_right": false,
+        "right": "framework_Record_and_physical_permanence",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "grade_probability_corpus",
+        "left_closes_right": false,
+        "right": "non_erasing_renewal",
+        "right_closes_left": false
+      }
+    ],
+    "N2_walls": [
+      "nature_law_selection",
+      "objective_trajectory",
+      "framework_Record_and_physical_permanence",
+      "non_erasing_renewal",
+      "grade_probability_corpus"
+    ],
+    "N3_hidden_conditions": [
+      "fixed menu/blank ports",
+      "blockade geometry",
+      "collision angle r=1/2",
+      "fresh bath zeros",
+      "finite head/stock",
+      "lane-zero adapter",
+      "Cycle621 monoid",
+      "held preparations"
+    ],
+    "N4_residual_matches": [
+      {
+        "current": {
+          "line": 408,
+          "path": "scripts/physical_dissipative_metastable_formation_channel_cycle663_2026_07_23.py",
+          "ref": "Cycle663 current"
+        },
+        "current_residual": "retained dilation plus reduced contraction, still no objective path",
+        "match": true,
+        "prior": {
+          "line": 275,
+          "path": "scripts/physical_forcing_menu_instrument_bridge_tournament_cycle634_2026_07_23.py",
+          "ref": "60f450e0090d13343686554453380990fd1fdf27"
+        },
+        "prior_residual": "fixed physical pointer sectors, no objective selector"
+      },
+      {
+        "current": {
+          "line": 602,
+          "path": "scripts/physical_dissipative_metastable_formation_channel_cycle663_2026_07_23.py",
+          "ref": "Cycle663 current"
+        },
+        "current_residual": "emission branches feed the same candidate port",
+        "match": true,
+        "prior": {
+          "line": 688,
+          "path": "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py",
+          "ref": "60f450e0090d13343686554453380990fd1fdf27"
+        },
+        "prior_residual": "candidate packet/occurrence below actuality and Record"
+      },
+      {
+        "current": {
+          "line": 602,
+          "path": "scripts/physical_dissipative_metastable_formation_channel_cycle663_2026_07_23.py",
+          "ref": "Cycle663 current"
+        },
+        "current_residual": "formed packet compatible with unchanged supplied monoid",
+        "match": true,
+        "prior": {
+          "line": 673,
+          "path": "scripts/physical_postformation_preservation_non_erasing_renewal_tournament_cycle621_2026_07_22.py",
+          "ref": "60f450e0090d13343686554453380990fd1fdf27"
+        },
+        "prior_residual": "finite supplied preservation algebra"
+      },
+      {
+        "current": {
+          "line": 345,
+          "path": "scripts/physical_dissipative_metastable_formation_channel_cycle663_2026_07_23.py",
+          "ref": "Cycle663 current"
+        },
+        "current_residual": "same table from independent hard-core blockade",
+        "match": true,
+        "prior": {
+          "line": 1,
+          "path": "Cycle661 exact local comparison"
+        },
+        "prior_residual": "deterministic count-carrier table"
+      },
+      {
+        "current": {
+          "line": 408,
+          "path": "scripts/physical_dissipative_metastable_formation_channel_cycle663_2026_07_23.py",
+          "ref": "Cycle663 current"
+        },
+        "current_residual": "no objective trajectory inferred from reduced channel",
+        "match": true,
+        "prior": {
+          "line": 1,
+          "path": "Cycle662 exact local comparison"
+        },
+        "prior_residual": "objective-within-supplied-jump-law sigma"
+      }
+    ],
+    "N5_rhetoric": [
+      {
+        "lattice_wide": "untested",
+        "per_block": "H3/H4/H6",
+        "per_element": "every emission amplitude",
+        "per_mode": "all bath modes",
+        "per_site": "one bounded cell",
+        "phrase": "reduced decoherence is not one objective trajectory"
+      },
+      {
+        "lattice_wide": "untested",
+        "per_block": "supplied monoid",
+        "per_element": "packet bits",
+        "per_mode": "six directions",
+        "per_site": "one site",
+        "phrase": "candidate packet is not framework Record"
+      },
+      {
+        "lattice_wide": "untested",
+        "per_block": "capacities3/4/6",
+        "per_element": "each block",
+        "per_mode": "all fresh modes",
+        "per_site": "one head",
+        "phrase": "finite bath renewal is not non-erasing renewal"
+      },
+      {
+        "lattice_wide": "untested",
+        "per_block": "three fixtures",
+        "per_element": "64 code sectors",
+        "per_mode": "six pointers",
+        "per_site": "one cell",
+        "phrase": "candidate response is not Born frequency"
+      }
+    ],
+    "N6_new_axiom_or_no_retained_primitive_language_used": false,
+    "N6_partial_closures": [
+      {
+        "file": "Cycle663",
+        "status": "EXECUTED",
+        "what_closes": "one reduced attractor/contraction and dark-state candidate"
+      },
+      {
+        "file": "Cycle662",
+        "status": "EXECUTED_DIFFERENT_ROUTE",
+        "what_closes": "objective-within-law sigma after supplied jump ontology"
+      },
+      {
+        "file": "future autonomous regenerative bath",
+        "status": "OPEN",
+        "what_closes": "fresh-bath and trajectory ownership"
+      },
+      {
+        "file": "future topological phase",
+        "status": "OPEN",
+        "what_closes": "physical permanence/noise"
+      }
+    ],
+    "N7_steelman": "A hostile reviewer should embed this exact collision unitary in a translation-invariant regenerative bath with a derived stationary low-entropy sector, prove a trajectory-equivalence theorem that selects one emission history without discarding the wave exhaust, and make the resulting packet enter a physically selected error-correcting phase. That actionable route could close trajectory, renewal and permanence without an axiom edit, so three positive candidate routes cannot support a no-go.",
+    "N8_echoes": [
+      {
+        "cycle": 661,
+        "mechanism": "count QCA",
+        "retired": "supplied shell table on deterministic basis code"
+      },
+      {
+        "cycle": 662,
+        "mechanism": "hybrid jump sigma",
+        "retired": "input actuality token within supplied ontology"
+      },
+      {
+        "cycle": 663,
+        "mechanism": "collision contraction",
+        "retired": "reduced attractor/dark-state implementation"
+      },
+      {
+        "cycle": 621,
+        "mechanism": "preserving monoid",
+        "retired": "finite compatibility only"
+      },
+      {
+        "cycle": 634,
+        "mechanism": "physical menu",
+        "retired": "fixed pointer dilation"
+      }
+    ],
+    "axiom_pressure": false,
+    "pass": true,
+    "shared_route_independent_obstruction": false
+  },
+  "note_contract": {
+    "missing": [],
+    "pass": true,
+    "required": [
+      "authority: **none**",
+      "audit: **unset**",
+      "zero count-carrier m2",
+      "reduced ensemble is not one objective trajectory",
+      "not a framework record",
+      "not born probability",
+      "not physical time or a rate",
+      "three qualifying independent routes are below the required five",
+      "shared route-independent obstruction: **not established**",
+      "axiom pressure: **none**"
+    ]
+  },
+  "note_sha256": "96f59a3f79ce7c29f3c9ccdf93cae9503ea4cd0084821c11ba6e0545046bec87",
+  "optimal_next_experiment": "regenerative-bath trajectory/semigroup equivalence and held temporal-correlation discriminator",
+  "pass": true,
+  "route_comparison": {
+    "Cycle661": "same extensional attractor table, deterministic count mechanism absent",
+    "Cycle662": "objective-within-supplied-jump-law route; Cycle663 does not infer objective path from reduction",
+    "Cycle663": "reduced collision semigroup with reversible retained dilation"
+  },
+  "runner_sha256": "03446972470065a781c78b8e220169ca9d65239d1054535992e3e16b3ece09e4",
+  "shared_route_independent_obstruction": false,
+  "status": "positive bounded dissipative/metastable retained-dilation candidate; objective trajectory, Record, Born and nature-law selection open",
+  "stinespring_collision": {
+    "all_exhaust_modes_retained": true,
+    "attractor_fixed_residual": 0.0,
+    "coherence_contraction_per_layer": 0.7071067811865476,
+    "collision_unitarity_residual": 2.6470882081092774e-16,
+    "dark_pending0_blankbath_residual": 0.0,
+    "deleted_collision_angle_H6_formation_residual": 0.984375,
+    "global_inverse_accessible": true,
+    "horizons": {
+      "3": {
+        "emission_time_amplitudes_re_im": [
+          [
+            0.7071067811865476,
+            0.0
+          ],
+          [
+            0.5000000000000001,
+            0.0
+          ],
+          [
+            0.35355339059327384,
+            0.0
+          ]
+        ],
+        "expected_pending_population": 0.125,
+        "formed_emission_population": 0.8750000000000002,
+        "fresh_bath_M2_per_six_port_cell": 18,
+        "global_inverse_residual": 2.813830806969804e-16,
+        "global_norm_residual": 4.440892098500626e-16,
+        "pending_population": 0.12500000000000006,
+        "population_contraction_residual": 5.551115123125783e-17
+      },
+      "4": {
+        "emission_time_amplitudes_re_im": [
+          [
+            0.7071067811865476,
+            0.0
+          ],
+          [
+            0.5000000000000001,
+            0.0
+          ],
+          [
+            0.35355339059327384,
+            0.0
+          ],
+          [
+            0.25000000000000006,
+            0.0
+          ]
+        ],
+        "expected_pending_population": 0.0625,
+        "formed_emission_population": 0.9375000000000002,
+        "fresh_bath_M2_per_six_port_cell": 24,
+        "global_inverse_residual": 4.674393938201414e-16,
+        "global_norm_residual": 4.440892098500626e-16,
+        "pending_population": 0.06250000000000003,
+        "population_contraction_residual": 2.7755575615628914e-17
+      },
+      "6": {
+        "emission_time_amplitudes_re_im": [
+          [
+            0.7071067811865476,
+            0.0
+          ],
+          [
+            0.5000000000000001,
+            0.0
+          ],
+          [
+            0.35355339059327384,
+            0.0
+          ],
+          [
+            0.25000000000000006,
+            0.0
+          ],
+          [
+            0.17677669529663692,
+            0.0
+          ],
+          [
+            0.12500000000000003,
+            0.0
+          ]
+        ],
+        "expected_pending_population": 0.015625,
+        "formed_emission_population": 0.9843750000000002,
+        "fresh_bath_M2_per_six_port_cell": 36,
+        "global_inverse_residual": 4.785465686274761e-16,
+        "global_norm_residual": 4.440892098500626e-16,
+        "pending_population": 0.015625000000000007,
+        "population_contraction_residual": 6.938893903907228e-18
+      }
+    },
+    "literal_dilation_to_Kraus_residual": 0.0,
+    "literal_two_M2_collision_unitary_re_im": [
+      [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.7071067811865476,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ]
+    ],
+    "pass": true,
+    "population_contraction_per_layer": 0.5,
+    "postformation_collision_leaves_latch_packet_and_exhaust_untouched": true,
+    "reduced_channel": "amplitude damping of precursor into retained fresh bath",
+    "reduced_channel_called_objective_trajectory": false,
+    "reduced_superoperator_eigenvalues": [
+      1.0,
+      0.7071067811865476,
+      0.7071067811865476,
+      0.5
+    ],
+    "superoperator_eigenvalue_residual": 1.1102230246251565e-16,
+    "unique_reduced_attractor": "pending |0><0|",
+    "unit_eigenvalue_multiplicity": 1
+  },
+  "strict_full_framework_terminal_met": false,
+  "strongest_constructive_result": "hard-core blockade plus literal retained collision dilation derives the Cycle661 table as a reduced geometric attractor with dark postformation sectors",
+  "target_contract_candidate_terminal_met": true,
+  "tests_failed": 0,
+  "tests_passed": 9
+}

@@ -1,0 +1,35 @@
+PASS Cycle674 target, routes, neutral genesis and exact shores were frozen before evidence :: {'target': '86649d00c8c4e50710f56e80452be06ab5c2b950b5a16990c999a8ee9065e098', 'prereg': 'd51eda83af5bbae89e3f23e0e5d520bb5f2c69cfd328001d55aee0f3dd703889', 'pins': 12}
+PASS fresh N1-N8 is complete and blocks a broad negative/order-parameter impossibility claim :: {'families': 5, 'negative_gate': 'FAIL_DO_NOT_SHIP_NEGATIVE'}
+PASS route A gives an autonomous neutral-to-fixed basis latch but not one coherent objective value :: {'deletions': 16, 'symmetric': ['product_z0', 'six_site_GHZ'], 'terminal': False}
+PASS route B constructs a finite one-error-stable latch with full exhaust but no objective promotion :: {'correction_tests': 1344, 'deletions': 51, 'terminal': False}
+PASS route C constructs finite covariant relative domain walls but no global objective center :: {'lengths': [3, 4, 6], 'deletions': 126, 'terminal': False}
+PASS all three neutral order-parameter routes pass physical-state all24/all576 covariance :: {'all24': {'A': 1536, 'B': 1536, 'C': 4608}, 'all576': {'A': 36864, 'B': 36864, 'C': 110592}}
+PASS exact Cycle661/Cycle669/Cycle671 interfaces and supplied genesis/boundaries remain explicit :: {'selector_removed': 64, 'native_token': False}
+PASS Cycle674 note preserves actuality/Record/Born/time/no-go boundaries :: ()
+{
+  "pass": true,
+  "tests_passed": 8,
+  "tests_failed": 0,
+  "elapsed_seconds": 41.35138533299323,
+  "maximum_RSS_bytes": 76103680,
+  "note": "/private/tmp/toe-science.BB0KQV/docs/work_history/repo/review_feedback/PHYSICAL_SYMMETRY_NEUTRAL_ORDER_PARAMETER_ACTUALIZER_TOURNAMENT_CYCLE674_NOTE_2026-07-23.md",
+  "receipt": "/private/tmp/toe-science.BB0KQV/outputs/physical_symmetry_neutral_order_parameter_actualizer_tournament_cycle674_receipt_2026_07_23.json"
+}
+       42.45 real        41.64 user         0.46 sys
+            76103680  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               97176  page reclaims
+                 868  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1306  voluntary context switches
+               28975  involuntary context switches
+        695984242096  instructions retired
+        152150852411  cycles elapsed
+            68370936  peak memory footprint

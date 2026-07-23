@@ -1,0 +1,5605 @@
+{
+  "audit": "unset",
+  "author_accepted": false,
+  "authority": "none",
+  "axiom_pressure": false,
+  "breakthrough": false,
+  "classification": "partial-attempt-with-named-untested-routes",
+  "covariance_controls": {
+    "all24_failures": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "all24_tests": {
+      "A": 1536,
+      "B": 1536,
+      "C": 4608
+    },
+    "all576_failures": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "all576_tests": {
+      "A": 36864,
+      "B": 36864,
+      "C": 110592
+    },
+    "all_frame_placements_inside_reserved_cube": true,
+    "pass": true,
+    "preferred_direction_order_load_bearing": false,
+    "proper_cubic_frames": 24,
+    "reserved_cube_all24_invariant": true,
+    "runtime_frame_selector": false,
+    "translation_invariant": true
+  },
+  "cycle": 674,
+  "date": "2026-07-23",
+  "elapsed_seconds": 41.21902987500653,
+  "exact_terminal_disposition": "NOT_MET_NOT_FALSIFIED",
+  "exact_terminal_met": false,
+  "frozen_contract": {
+    "expected_preregistration_sha256": "d51eda83af5bbae89e3f23e0e5d520bb5f2c69cfd328001d55aee0f3dd703889",
+    "expected_target_sha256": "86649d00c8c4e50710f56e80452be06ab5c2b950b5a16990c999a8ee9065e098",
+    "first_evidence_line": 128,
+    "frozen_before_evidence": true,
+    "imported_contracts": {
+      "Cycle661_pass": true,
+      "Cycle669_pass": true,
+      "Cycle671_pass": true
+    },
+    "observed": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_COHERENT_SECTOR_OBJECTIVE_EVENT_ACTUALIZER_TOURNAMENT_CYCLE671_NOTE_2026-07-23.md": "0d1e1f3be89f089d72e679881d5f4620f219411342d805183977be7f2b16d56e",
+      "docs/work_history/repo/review_feedback/PHYSICAL_COHERENT_SEED_MEMBER_DILATION_CYCLE536_NOTE_2026-07-21.md": "e15944633127890fe27cb52193960a28d9860212d5d7aafd70f15eef2e987457",
+      "docs/work_history/repo/review_feedback/PHYSICAL_DETERMINISTIC_CONSTRAINED_QCA_FORMATION_LAW_TOURNAMENT_CYCLE661_NOTE_2026-07-23.md": "14262310b768983ebbdc8a89f914f237ab2a2523c8a096eece63b33a7e5e9ad4",
+      "docs/work_history/repo/review_feedback/PHYSICAL_DISSIPATIVE_METASTABLE_FORMATION_CHANNEL_CYCLE663_NOTE_2026-07-23.md": "96f59a3f79ce7c29f3c9ccdf93cae9503ea4cd0084821c11ba6e0545046bec87",
+      "docs/work_history/repo/review_feedback/PHYSICAL_OBJECTIVE_STOCHASTIC_OPEN_DILATION_CYCLE662_NOTE_2026-07-23.md": "bdc8dda304985a62c73fc6e7a03f11d61041dd8053a9321fb7171c9b22947a05",
+      "docs/work_history/repo/review_feedback/PHYSICAL_STATE_CARRIED_EVENT_CHAIN_SEQUENCE_PROTOCOL_CYCLE669_NOTE_2026-07-23.md": "4ba9fe3a26606a944f362e81d6262543936018c6adf497069d8800e616f0c2c5",
+      "outputs/physical_coherent_sector_objective_event_actualizer_tournament_cycle671_receipt_2026_07_23.json": "8ce154f98b0d2c27e8a23f7f552f3bcbeb6d428f78e7e312c08603ad190cadf6",
+      "outputs/physical_deterministic_constrained_qca_formation_law_tournament_cycle661_receipt_2026_07_23.json": "c0ac1effe618bbdcbfc4bd6a3360f3beb557aa2469d47be476deef862e1340c5",
+      "outputs/physical_state_carried_event_chain_sequence_protocol_cycle669_receipt_2026_07_23.json": "0765c66f3d3625892d133976aca217a5676fef0820557b12b32c988cb6180760",
+      "scripts/physical_coherent_sector_objective_event_actualizer_tournament_cycle671_2026_07_23.py": "6bb5935e6ec3c6d4c0b8d34272c855ac9ca1a675f3c5951e09144d3d28c32f25",
+      "scripts/physical_deterministic_constrained_qca_formation_law_tournament_cycle661_2026_07_23.py": "83383268139e92bcd040fa176686f2e6c3d5eef806ba58ed5da9953a59af7590",
+      "scripts/physical_state_carried_event_chain_sequence_protocol_cycle669_2026_07_23.py": "ac1237e211bf06a8eb394db0dd8001c88a5aaf81726b38a3e43bd066285a9c84"
+    },
+    "pass": true,
+    "pins": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_COHERENT_SECTOR_OBJECTIVE_EVENT_ACTUALIZER_TOURNAMENT_CYCLE671_NOTE_2026-07-23.md": "0d1e1f3be89f089d72e679881d5f4620f219411342d805183977be7f2b16d56e",
+      "docs/work_history/repo/review_feedback/PHYSICAL_COHERENT_SEED_MEMBER_DILATION_CYCLE536_NOTE_2026-07-21.md": "e15944633127890fe27cb52193960a28d9860212d5d7aafd70f15eef2e987457",
+      "docs/work_history/repo/review_feedback/PHYSICAL_DETERMINISTIC_CONSTRAINED_QCA_FORMATION_LAW_TOURNAMENT_CYCLE661_NOTE_2026-07-23.md": "14262310b768983ebbdc8a89f914f237ab2a2523c8a096eece63b33a7e5e9ad4",
+      "docs/work_history/repo/review_feedback/PHYSICAL_DISSIPATIVE_METASTABLE_FORMATION_CHANNEL_CYCLE663_NOTE_2026-07-23.md": "96f59a3f79ce7c29f3c9ccdf93cae9503ea4cd0084821c11ba6e0545046bec87",
+      "docs/work_history/repo/review_feedback/PHYSICAL_OBJECTIVE_STOCHASTIC_OPEN_DILATION_CYCLE662_NOTE_2026-07-23.md": "bdc8dda304985a62c73fc6e7a03f11d61041dd8053a9321fb7171c9b22947a05",
+      "docs/work_history/repo/review_feedback/PHYSICAL_STATE_CARRIED_EVENT_CHAIN_SEQUENCE_PROTOCOL_CYCLE669_NOTE_2026-07-23.md": "4ba9fe3a26606a944f362e81d6262543936018c6adf497069d8800e616f0c2c5",
+      "outputs/physical_coherent_sector_objective_event_actualizer_tournament_cycle671_receipt_2026_07_23.json": "8ce154f98b0d2c27e8a23f7f552f3bcbeb6d428f78e7e312c08603ad190cadf6",
+      "outputs/physical_deterministic_constrained_qca_formation_law_tournament_cycle661_receipt_2026_07_23.json": "c0ac1effe618bbdcbfc4bd6a3360f3beb557aa2469d47be476deef862e1340c5",
+      "outputs/physical_state_carried_event_chain_sequence_protocol_cycle669_receipt_2026_07_23.json": "0765c66f3d3625892d133976aca217a5676fef0820557b12b32c988cb6180760",
+      "scripts/physical_coherent_sector_objective_event_actualizer_tournament_cycle671_2026_07_23.py": "6bb5935e6ec3c6d4c0b8d34272c855ac9ca1a675f3c5951e09144d3d28c32f25",
+      "scripts/physical_deterministic_constrained_qca_formation_law_tournament_cycle661_2026_07_23.py": "83383268139e92bcd040fa176686f2e6c3d5eef806ba58ed5da9953a59af7590",
+      "scripts/physical_state_carried_event_chain_sequence_protocol_cycle669_2026_07_23.py": "ac1237e211bf06a8eb394db0dd8001c88a5aaf81726b38a3e43bd066285a9c84"
+    },
+    "preregistration": {
+      "fixtures": {
+        "biased_phase_product": {
+          "capacity": 4,
+          "split": "held_blinded"
+        },
+        "product_z0": {
+          "capacity": 3,
+          "split": "train"
+        },
+        "six_site_GHZ": {
+          "capacity": 6,
+          "split": "held_blinded_nonproduct"
+        }
+      },
+      "neutral_genesis": "central none rail=1, direction rails=0, outgoing exhaust blank, ready=1, spent=0; local product preparation",
+      "no_go_gate": "fresh remote-main N1-N8 before bounded disposition",
+      "physical_chart": "reserved radius-3 proper-cubic 343-M2 supercell; active rails explicitly placed; frame selected only at compile time",
+      "route_A": "one-shot deterministic basis latch followed by spent-code identity",
+      "route_B": "three one-hot replicas and reversible bitwise majority output; all replicas/syndromes retained",
+      "route_C": "six equal rays of lengths 3/4/6; branch direction seeds one outer ray and fixed local CNOTs carry its wall inward",
+      "routing_bound": "Manhattan diameter <=18; route-and-return pair operation <=35 nearest-neighbor calls",
+      "type_gate": "basis-defined central rails are ObjectiveEventToken only if the coherent input yields one global central basis value"
+    },
+    "preregistration_line": 35,
+    "preregistration_sha256": "d51eda83af5bbae89e3f23e0e5d520bb5f2c69cfd328001d55aee0f3dd703889",
+    "shore": "0fda7fcf626fad3df00ac4237551b17a1b97cce2",
+    "target": {
+      "claim_ceiling": "route-specific bounded constructions and NOT_MET_NOT_FALSIFIED only; no shared obstruction or axiom pressure",
+      "cycle": 674,
+      "forbidden_closure": [
+        "constant-none response",
+        "coherent superposition of central values",
+        "reduced diagonal as one actual value",
+        "finite error correction as objective actuality",
+        "branch-relative domain wall as one global event"
+      ],
+      "required": [
+        "nontrivial basis agreement: each admitted Cycle661 basis sector gives its direction and rejects give none",
+        "all 64 coherent sectors exported into explicit outgoing exhaust with amplitudes and phases retained globally",
+        "one objective central value rather than a symmetric superposition, reduced diagonal, or durable branch-relative latch",
+        "exact branchwise Cycle669 interface plus native coherent type gate",
+        "train/held capacities 3/4/6, all24/all576, local M2 placement/support/depth",
+        "inverse or explicit nonunitary ready/spent ledger, deletion/malformed/leakage/saturation"
+      ],
+      "routes": {
+        "A": "deterministic symmetry-neutral one-shot instability with local ready/spent ledger",
+        "B": "finite reversible triple-repetition dilation with one-error-stable central register",
+        "C": "proper-cubic six-ray relational/domain-wall propagation into a central register"
+      },
+      "target": "a bounded proper-cubic local update starting from a locally preparable symmetry-neutral order-parameter state, producing exactly one stable central ObjectiveEventToken[none|six] from the native Cycle661 coherent surface without an input selector, actuality token, host sampler, supplied random draw, or hidden frame/schedule service"
+    },
+    "target_line": 6,
+    "target_sha256": "86649d00c8c4e50710f56e80452be06ab5c2b950b5a16990c999a8ee9065e098",
+    "working_tree_bytes_used_as_evidence": false
+  },
+  "interface_and_boundary_controls": {
+    "Cycle671_B_and_current_B_both_retain_coherent_output": true,
+    "Cycle671_C_and_current_C_both_relational": true,
+    "Cycle671_exact_target_was_not_met": true,
+    "Cycle671_route_A_selector_M2_removed": 64,
+    "all_branchwise_Cycle669_interfaces_pass": true,
+    "current_all_routes_input_actuality_M2": [
+      0,
+      0,
+      0
+    ],
+    "current_all_routes_input_selector_M2": [
+      0,
+      0,
+      0
+    ],
+    "native_coherent_Cycle669_ObjectiveEventToken_available": false,
+    "not_supplied": [
+      "selector",
+      "actuality token",
+      "random draw",
+      "host sampler",
+      "runtime frame",
+      "objective branch-read law"
+    ],
+    "pass": true,
+    "supplied_boundary": [
+      "finite cell edge",
+      "finite C3/C4/C6 rays",
+      "compile-time frame chart",
+      "finite spent capacity"
+    ],
+    "supplied_genesis": [
+      "Cycle661 coherent fixture",
+      "neutral center product state",
+      "blank exhaust/auxiliaries",
+      "one ready and zero spent bit",
+      "finite 343-M2 chart",
+      "Cycle669 root/next seeds"
+    ]
+  },
+  "maximum_RSS_bytes": 76644352,
+  "no_go_discipline": {
+    "N1_qualifying_normalized_families": 5,
+    "N1_routes": [
+      {
+        "authority": {
+          "line": 389,
+          "path": "scripts/physical_symmetry_neutral_order_parameter_actualizer_tournament_cycle674_2026_07_23.py",
+          "ref": "Cycle674 current"
+        },
+        "disposition": "basis latch closes; coherent output remains sector-correlated",
+        "family": "finite deterministic neutral instability",
+        "honesty": "ATTEMPTED",
+        "mechanism": "basis-driven central fixed latch",
+        "object": "partial ready/spent cellular map",
+        "terminal": "one global coherent-input value"
+      },
+      {
+        "authority": {
+          "line": 438,
+          "path": "scripts/physical_symmetry_neutral_order_parameter_actualizer_tournament_cycle674_2026_07_23.py",
+          "ref": "Cycle674 current"
+        },
+        "disposition": "one-error stability closes; actuality type does not",
+        "family": "finite reversible metastable code",
+        "honesty": "ATTEMPTED",
+        "mechanism": "majority invariant with retained syndrome",
+        "object": "triple-repetition isometry",
+        "terminal": "stability plus objective value"
+      },
+      {
+        "authority": {
+          "line": 488,
+          "path": "scripts/physical_symmetry_neutral_order_parameter_actualizer_tournament_cycle674_2026_07_23.py",
+          "ref": "Cycle674 current"
+        },
+        "disposition": "wall compiler closes; walls remain in coherent direct sum",
+        "family": "relational domain-wall propagation",
+        "honesty": "ATTEMPTED",
+        "mechanism": "local wall transport and relative center",
+        "object": "six-ray wall history",
+        "terminal": "one nonrelative central value"
+      },
+      {
+        "authority": {
+          "line": 148,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_COHERENT_SECTOR_OBJECTIVE_EVENT_ACTUALIZER_TOURNAMENT_CYCLE671_NOTE_2026-07-23.md",
+          "ref": "0fda7fcf626fad3df00ac4237551b17a1b97cce2"
+        },
+        "disposition": "Cycle671 succeeds only on an enlarged selector domain",
+        "family": "ontic hidden selector",
+        "honesty": "RULED OUT BY PRIOR",
+        "mechanism": "selector-controlled event",
+        "object": "extended classical-quantum state",
+        "terminal": "native-domain actualizer"
+      },
+      {
+        "authority": {
+          "line": 24,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_OBJECTIVE_STOCHASTIC_OPEN_DILATION_CYCLE662_NOTE_2026-07-23.md",
+          "ref": "0fda7fcf626fad3df00ac4237551b17a1b97cce2"
+        },
+        "disposition": "Cycle662 supplies the stochastic ontology",
+        "family": "hybrid objective stochastic field",
+        "honesty": "RULED OUT BY PRIOR",
+        "mechanism": "law-owned sigma update",
+        "object": "quantum-classical instrument",
+        "terminal": "derive objective law from neutral local dynamics"
+      },
+      {
+        "authority": {
+          "line": 23,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_DISSIPATIVE_METASTABLE_FORMATION_CHANNEL_CYCLE663_NOTE_2026-07-23.md",
+          "ref": "0fda7fcf626fad3df00ac4237551b17a1b97cce2"
+        },
+        "disposition": "not tested by the finite C3/C4/C6 construction",
+        "family": "infinite-volume symmetry-breaking field",
+        "honesty": "OPEN_NOT_COUNTED",
+        "mechanism": "disjoint stable phases and outgoing radiation",
+        "object": "thermodynamic central algebra",
+        "terminal": "bounded local genesis of one phase"
+      }
+    ],
+    "N2_collapsed_walls": [
+      "one_global_objective_value_from_neutral_coherent_input"
+    ],
+    "N2_directed_pairs": [],
+    "N2_downstream_nonterminal_open_conditions": [
+      "nature_law_selection",
+      "finite_non_erasing_renewal"
+    ],
+    "N3_hidden_phrase_hits": [],
+    "N4_residual_matches": [
+      {
+        "current": "same exact type gate",
+        "match": true,
+        "prior": "native-domain objective actualizer not met",
+        "witness": {
+          "line": 148,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_COHERENT_SECTOR_OBJECTIVE_EVENT_ACTUALIZER_TOURNAMENT_CYCLE671_NOTE_2026-07-23.md",
+          "ref": "0fda7fcf626fad3df00ac4237551b17a1b97cce2"
+        }
+      },
+      {
+        "current": "central reduced diagonal is not promoted",
+        "match": true,
+        "prior": "diagonal is not one realized member",
+        "witness": {
+          "line": 96,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_COHERENT_SEED_MEMBER_DILATION_CYCLE536_NOTE_2026-07-21.md",
+          "ref": "0fda7fcf626fad3df00ac4237551b17a1b97cce2"
+        }
+      },
+      {
+        "current": "finite robust latch does not establish objective actuality",
+        "match": true,
+        "prior": "metastable retained dilation does not establish irreversible formation",
+        "witness": {
+          "line": 23,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_DISSIPATIVE_METASTABLE_FORMATION_CHANNEL_CYCLE663_NOTE_2026-07-23.md",
+          "ref": "0fda7fcf626fad3df00ac4237551b17a1b97cce2"
+        }
+      },
+      {
+        "current": "no stochastic ontology silently imported",
+        "match": true,
+        "prior": "objective sigma belongs to supplied law",
+        "witness": {
+          "line": 24,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_OBJECTIVE_STOCHASTIC_OPEN_DILATION_CYCLE662_NOTE_2026-07-23.md",
+          "ref": "0fda7fcf626fad3df00ac4237551b17a1b97cce2"
+        }
+      }
+    ],
+    "N5_rhetoric": [
+      {
+        "claim": "symmetric deterministic direction choice is unavailable",
+        "lattice_wide": "untested; no broad statement",
+        "per_block": "two symmetric fixture rows",
+        "per_element": "64 basis rows pass",
+        "per_mode": "proper-cubic invariant fixture only",
+        "per_site": "one bounded central block"
+      },
+      {
+        "claim": "finite robust latch is not one objective value",
+        "lattice_wide": "untested; no broad statement",
+        "per_block": "C3/C4/C6 diagnostics",
+        "per_element": "1344 error cases",
+        "per_mode": "seven central rails",
+        "per_site": "one 121-active-M2 block"
+      },
+      {
+        "claim": "relative wall center is not a global token",
+        "lattice_wide": "untested; no broad statement",
+        "per_block": "lengths 3/4/6",
+        "per_element": "192 basis/size rows",
+        "per_mode": "six rays",
+        "per_site": "one 343-M2 reserved cell"
+      }
+    ],
+    "N6_partial_closure_paths": [
+      {
+        "closes": "neutral product genesis, basis latch, fixed spent code",
+        "path": "Cycle674 A",
+        "status": "EXECUTED_PARTIAL"
+      },
+      {
+        "closes": "finite one-error central robustness",
+        "path": "Cycle674 B",
+        "status": "EXECUTED_PARTIAL"
+      },
+      {
+        "closes": "local covariant domain-wall transport",
+        "path": "Cycle674 C",
+        "status": "EXECUTED_PARTIAL"
+      },
+      {
+        "closes": "objective token conditional on supplied hybrid law",
+        "path": "Cycle662",
+        "status": "EXECUTED_PRIOR"
+      },
+      {
+        "closes": "candidate central superselection value if locally generated",
+        "path": "infinite-volume phase field",
+        "status": "OPEN"
+      }
+    ],
+    "N6_primitive_registry_claim_made": false,
+    "N7_steelman": "A hostile reviewer should construct an infinite moving-carrier order-parameter medium with several disjoint stable phases, prove that a finite local seed-free instability selects one central phase in each physical realization, and transport all Cycle661 coherence into outgoing radiation whose local return is dynamically excluded. The terminal obligation is a finite-cell restriction theorem yielding one central event variable without importing a phase label or stochastic ontology. Finite repetition and walls do not test that thermodynamic mechanism, so a broad negative claim is premature.",
+    "N7_supporting_authority": {
+      "line": 23,
+      "path": "docs/work_history/repo/review_feedback/PHYSICAL_DISSIPATIVE_METASTABLE_FORMATION_CHANNEL_CYCLE663_NOTE_2026-07-23.md",
+      "ref": "0fda7fcf626fad3df00ac4237551b17a1b97cce2"
+    },
+    "N8_cross_cycle_echo": [
+      {
+        "cycle": 536,
+        "remaining": "one realized value",
+        "retired": "coherent seed diagonal"
+      },
+      {
+        "cycle": 662,
+        "remaining": "derive/select law",
+        "retired": "objective within a supplied stochastic law"
+      },
+      {
+        "cycle": 663,
+        "remaining": "objective sector ownership",
+        "retired": "finite reduced metastability"
+      },
+      {
+        "cycle": 669,
+        "remaining": "coherent actualizer",
+        "retired": "state-carried sequence protocol"
+      },
+      {
+        "cycle": 671,
+        "remaining": "native-domain token",
+        "retired": "conditional selector and relational/dilation interfaces"
+      }
+    ],
+    "axiom_pressure": false,
+    "broad_no_go_claim": false,
+    "checklist_complete": true,
+    "demotion": "partial-attempt-with-named-untested-routes",
+    "discipline_compliance_pass": true,
+    "minimum_content_claim": false,
+    "negative_claim_gate_status": "FAIL_DO_NOT_SHIP_NEGATIVE",
+    "negative_gate_failure_reason": "N7 thermodynamic phase-field route remains untested",
+    "shared_route_independent_obstruction": false,
+    "skill_freshness": {
+      "dirty_worktree_moved": false,
+      "origin_main_advanced": true,
+      "origin_main_checked": true,
+      "remote_skill_followed": true
+    }
+  },
+  "note_contract": {
+    "missing": [],
+    "pass": true,
+    "required": [
+      "authority: **none**",
+      "audit: **unset**",
+      "fresh no-go-discipline gate before disposition",
+      "not a no-go",
+      "not met, not falsified",
+      "shared route-independent obstruction: **not established**",
+      "axiom pressure: **none**",
+      "not promoted to one objective value",
+      "no packet or latch is called a framework record",
+      "not called born probabilities or empirical frequencies",
+      "not physical time or rates"
+    ]
+  },
+  "note_sha256": "7efc246b7b2fbf00d18e4d52a949c225d97c4b32fc7731f84d652eddc8d98200",
+  "optimal_next_campaign": "moving-carrier/infinite-volume phase-field restriction theorem with one central ontic value and outgoing exhaust",
+  "pass": true,
+  "route_disposition": {
+    "A": "positive finite deterministic basis instability and fixed latch; coherent output remains a direct sum",
+    "B": "positive finite error-stable reversible latch; stability does not promote the coherent center to actuality",
+    "C": "positive proper-cubic branch-relative wall compiler; coherent wall alternatives remain jointly retained"
+  },
+  "routes": {
+    "A": {
+      "Cycle661_prefix_leakage_failures": 0,
+      "Cycle669_branchwise_interface_failures": 0,
+      "all_64_sector_labels_distinct_in_exhaust": true,
+      "basis_failures": 0,
+      "basis_rows": 64,
+      "coherent_output_type": "CoherentDirectSum[Cycle661Sector x CentralBasisValue x OutgoingExhaust]",
+      "constant_none_response_counts_as_terminal": false,
+      "deletions_detected": 16,
+      "deletions_expected": 16,
+      "disposition": "positive finite deterministic basis instability and fixed latch; coherent output remains a direct sum",
+      "equivariant_deterministic_fixed_point_lemma": "a deterministic proper-cubic equivariant single-valued map sends an invariant input to an invariant label; none is the only invariant member of none|six",
+      "event_rows": {
+        "biased_phase_product": {
+          "capacity": 4,
+          "central_reduced_purity": 0.9960074173706647,
+          "central_reduced_rank": 7,
+          "direction_weight_spread": 0.00031243914049675103,
+          "none_plus_six_weights": [
+            0.9980013381268109,
+            0.00039090563291196295,
+            0.0004552614071487795,
+            0.00044930603822959225,
+            0.0003398412810324128,
+            0.0002205252472140202,
+            0.00014282226665202847
+          ],
+          "normalization_residual": 3.3306690738754696e-16,
+          "proper_cubic_direction_symmetric": false,
+          "split": "held_blinded"
+        },
+        "product_z0": {
+          "capacity": 3,
+          "central_reduced_purity": 0.9912334680557251,
+          "central_reduced_rank": 7,
+          "direction_weight_spread": 0.0,
+          "none_plus_six_weights": [
+            0.99560546875,
+            0.0007324218750000015,
+            0.0007324218750000015,
+            0.0007324218750000015,
+            0.0007324218750000015,
+            0.0007324218750000015,
+            0.0007324218750000015
+          ],
+          "normalization_residual": 0.0,
+          "proper_cubic_direction_symmetric": true,
+          "split": "train"
+        },
+        "six_site_GHZ": {
+          "capacity": 6,
+          "central_reduced_purity": 0.6796817454931826,
+          "central_reduced_rank": 7,
+          "direction_weight_spread": 6.938893903907228e-18,
+          "none_plus_six_weights": [
+            0.8211899326351648,
+            0.029801677894139122,
+            0.029801677894139122,
+            0.02980167789413913,
+            0.02980167789413913,
+            0.02980167789413913,
+            0.02980167789413913
+          ],
+          "normalization_residual": 4.440892098500626e-16,
+          "proper_cubic_direction_symmetric": true,
+          "split": "held_blinded_nonproduct"
+        }
+      },
+      "exact_terminal_met": false,
+      "global_wave_amplitudes_and_phases_retained": true,
+      "host_sampler_calls": 0,
+      "host_sampling_source_hits": [],
+      "input_actuality_token_M2": 0,
+      "input_selector_M2": 0,
+      "inverse_on_image_failures": 0,
+      "malformed_expected": 5,
+      "malformed_rejected": 5,
+      "mechanism": "neutral one-hot center is basis-driven once; spent image is an exact fixed code",
+      "neutral_preparation_X_gates": 2,
+      "neutral_product_state_locally_preparable": true,
+      "nonunitary_ledger": "ambient update is partial; ready/spent and full source/exhaust give exact inverse on its image",
+      "one_global_objective_token": false,
+      "outgoing_exhaust_M2": 7,
+      "pass": true,
+      "primary_object": "partial local ready-to-spent instability map",
+      "resources": {
+        "conservative_depth_upper_bound": 458,
+        "exact_logical_schedule": [
+          {
+            "kind": "X",
+            "label": "exhaust-valid",
+            "sites": [
+              91
+            ]
+          },
+          {
+            "kind": "CNOT",
+            "label": "exhaust-word:0",
+            "sites": [
+              0,
+              92
+            ]
+          },
+          {
+            "kind": "CNOT",
+            "label": "exhaust-word:1",
+            "sites": [
+              1,
+              93
+            ]
+          },
+          {
+            "kind": "CNOT",
+            "label": "exhaust-word:2",
+            "sites": [
+              2,
+              94
+            ]
+          },
+          {
+            "kind": "CNOT",
+            "label": "exhaust-word:3",
+            "sites": [
+              3,
+              95
+            ]
+          },
+          {
+            "kind": "CNOT",
+            "label": "exhaust-word:4",
+            "sites": [
+              4,
+              96
+            ]
+          },
+          {
+            "kind": "CNOT",
+            "label": "exhaust-word:5",
+            "sites": [
+              5,
+              97
+            ]
+          },
+          {
+            "kind": "X",
+            "label": "ready-debit",
+            "sites": [
+              98
+            ]
+          },
+          {
+            "kind": "X",
+            "label": "spent-credit",
+            "sites": [
+              99
+            ]
+          },
+          {
+            "kind": "CNOT",
+            "label": "neutral-clear",
+            "sites": [
+              56,
+              84
+            ]
+          },
+          {
+            "kind": "CNOT",
+            "label": "central-direction:0",
+            "sites": [
+              58,
+              85
+            ]
+          },
+          {
+            "kind": "CNOT",
+            "label": "central-direction:1",
+            "sites": [
+              59,
+              86
+            ]
+          },
+          {
+            "kind": "CNOT",
+            "label": "central-direction:2",
+            "sites": [
+              60,
+              87
+            ]
+          },
+          {
+            "kind": "CNOT",
+            "label": "central-direction:3",
+            "sites": [
+              61,
+              88
+            ]
+          },
+          {
+            "kind": "CNOT",
+            "label": "central-direction:4",
+            "sites": [
+              62,
+              89
+            ]
+          },
+          {
+            "kind": "CNOT",
+            "label": "central-direction:5",
+            "sites": [
+              63,
+              90
+            ]
+          }
+        ],
+        "exact_logical_schedule_sha256": "7a8c19b4692ed00ae2fd1ee95d05965d90fd119975734b7ba3bcb0bfb516228e",
+        "layout": {
+          "active_M2": 100,
+          "active_placement_sha256": "58fa1f88d1f82db0c39e12c828f0381980a9a0455546da38ff81efe777e33a01",
+          "all_frame_placements_inside_reserved_cube": true,
+          "frame_placement_sha256": [
+            "5ce86d80c53933ac2dd575bd52a7c5d46b36680ac77f7461a7d17ae4ec08e899",
+            "3da1cadfbad3e03bc439d6f5318199b32f1e711d7618b1fa5dba910b9522876c",
+            "2eb49ba1f87261bf8406b0327bce1f44ee93166c70a1398e6dd2c432d60c06c6",
+            "58fa1f88d1f82db0c39e12c828f0381980a9a0455546da38ff81efe777e33a01",
+            "0eb5efe83f3f0cae097780085a067de595f52851dd9b99048c17a0fd1c38c072",
+            "153a83065c5ff955336c41c9c3ab3f8916d54a131185a360478f8646045399d0",
+            "53faccd24dba104ae91075bc35fa866160b4899b792672c2ccef76e924a18455",
+            "118f1971d2f15cc8665abe10ff81d3473c4b3300b9b5fbcb2ac88d8c4025e532",
+            "07f3cfaba844ec783c344fd4dd131073897ce7747c85bc171f41d49e0575c015",
+            "13350e52b619086f9f7af5a0b1157408e8dfadfa2de5c4da2f3f3234f35f3538",
+            "49199d4046979a06c2125f12f76313863ba792b67c9462a64cc3b4d2f7ebecfd",
+            "080b2158a0745fec93b356fc017c52b6792972970da01abd44e5c25dc8c62b1f",
+            "6bc1b91f5c6a31abc32bbcce66e8c0d80e700ff28a078f71d5091ad621de143c",
+            "a02304a5ca58701f62e4c70c49119189f49a001394a83c07e00ae4e05376fec2",
+            "d38042a78fa86bf79916e9d3ffbbfbf93ac1a8922294bade905fffc1a628c8af",
+            "882a8ad7715344cbbd1f2801b39e0af0a862c654e2082122e51e8923eabe621d",
+            "72548d0861e74adb28745ceae0636f4e163eb60e159408c46ed40004d328473f",
+            "fdc6efd66aceeb81558bc6e2770f814f6525f788d59cdbdc40109806444ad4e9",
+            "6ce29607d1b897e2579f867f76e4d5ed5473bff08d713e1c11df1614303f5d40",
+            "5c580d6892f6e7077219e4352eeb6cb60114f301994fcb36c8555be6e449ed04",
+            "4c9b3715d0f737f98863047b98fe5d6cf34d9c1b985ce1cf7a827430b6b692c4",
+            "6492fbc506d5ac92d6771f6f545e1f62ad47414f732f37350a2321b62af75776",
+            "4d735752024cd1a7564d94fad3a1ec1d2687597c82e7102b9cda53afadb457cd",
+            "3b5e877df9e49593cfd77d3e71e1df36cecff5484b4668c64e43a0524b38c4b4"
+          ],
+          "logical_index_to_coordinate": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              -1,
+              0,
+              0
+            ],
+            [
+              0,
+              -1,
+              0
+            ],
+            [
+              0,
+              0,
+              -1
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              -2,
+              0,
+              0
+            ],
+            [
+              -1,
+              -1,
+              0
+            ],
+            [
+              -1,
+              0,
+              -1
+            ],
+            [
+              -1,
+              0,
+              1
+            ],
+            [
+              -1,
+              1,
+              0
+            ],
+            [
+              0,
+              -2,
+              0
+            ],
+            [
+              0,
+              -1,
+              -1
+            ],
+            [
+              0,
+              -1,
+              1
+            ],
+            [
+              0,
+              0,
+              -2
+            ],
+            [
+              0,
+              0,
+              2
+            ],
+            [
+              0,
+              1,
+              -1
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              2,
+              0
+            ],
+            [
+              1,
+              -1,
+              0
+            ],
+            [
+              1,
+              0,
+              -1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              -3,
+              0,
+              0
+            ],
+            [
+              -2,
+              -1,
+              0
+            ],
+            [
+              -2,
+              0,
+              -1
+            ],
+            [
+              -2,
+              0,
+              1
+            ],
+            [
+              -2,
+              1,
+              0
+            ],
+            [
+              -1,
+              -2,
+              0
+            ],
+            [
+              -1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              1
+            ],
+            [
+              -1,
+              0,
+              -2
+            ],
+            [
+              -1,
+              0,
+              2
+            ],
+            [
+              -1,
+              1,
+              -1
+            ],
+            [
+              -1,
+              1,
+              1
+            ],
+            [
+              -1,
+              2,
+              0
+            ],
+            [
+              0,
+              -3,
+              0
+            ],
+            [
+              0,
+              -2,
+              -1
+            ],
+            [
+              0,
+              -2,
+              1
+            ],
+            [
+              0,
+              -1,
+              -2
+            ],
+            [
+              0,
+              -1,
+              2
+            ],
+            [
+              0,
+              0,
+              -3
+            ],
+            [
+              0,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              -2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              -1
+            ],
+            [
+              0,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              0
+            ],
+            [
+              1,
+              -2,
+              0
+            ],
+            [
+              1,
+              -1,
+              -1
+            ],
+            [
+              1,
+              -1,
+              1
+            ],
+            [
+              1,
+              0,
+              -2
+            ],
+            [
+              1,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              -1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              2,
+              -1,
+              0
+            ],
+            [
+              2,
+              0,
+              -1
+            ],
+            [
+              2,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              0
+            ],
+            [
+              3,
+              0,
+              0
+            ],
+            [
+              -3,
+              -1,
+              0
+            ],
+            [
+              -3,
+              0,
+              -1
+            ],
+            [
+              -3,
+              0,
+              1
+            ],
+            [
+              -3,
+              1,
+              0
+            ],
+            [
+              -2,
+              -2,
+              0
+            ],
+            [
+              -2,
+              -1,
+              -1
+            ],
+            [
+              -2,
+              -1,
+              1
+            ],
+            [
+              -2,
+              0,
+              -2
+            ],
+            [
+              -2,
+              0,
+              2
+            ],
+            [
+              -2,
+              1,
+              -1
+            ],
+            [
+              -2,
+              1,
+              1
+            ],
+            [
+              -2,
+              2,
+              0
+            ],
+            [
+              -1,
+              -3,
+              0
+            ],
+            [
+              -1,
+              -2,
+              -1
+            ],
+            [
+              -1,
+              -2,
+              1
+            ],
+            [
+              -1,
+              -1,
+              -2
+            ],
+            [
+              -1,
+              -1,
+              2
+            ],
+            [
+              -1,
+              0,
+              -3
+            ],
+            [
+              -1,
+              0,
+              3
+            ],
+            [
+              -1,
+              1,
+              -2
+            ],
+            [
+              -1,
+              1,
+              2
+            ],
+            [
+              -1,
+              2,
+              -1
+            ],
+            [
+              -1,
+              2,
+              1
+            ],
+            [
+              -1,
+              3,
+              0
+            ],
+            [
+              0,
+              -3,
+              -1
+            ],
+            [
+              0,
+              -3,
+              1
+            ],
+            [
+              0,
+              -2,
+              -2
+            ],
+            [
+              0,
+              -2,
+              2
+            ],
+            [
+              0,
+              -1,
+              -3
+            ],
+            [
+              0,
+              -1,
+              3
+            ],
+            [
+              0,
+              1,
+              -3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              2,
+              -2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              0,
+              3,
+              -1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              1,
+              -3,
+              0
+            ]
+          ],
+          "maximum_active_L1_diameter": 8,
+          "placement_rule": "logical M2 index i maps to the i-th [-3,3]^3 point ordered by (L1 norm, x, y, z)",
+          "radius": 3,
+          "reserved_cube_all24_invariant": true,
+          "reserved_supercell_M2": 343,
+          "translated_normalized_layout_digests": [
+            "58fa1f88d1f82db0c39e12c828f0381980a9a0455546da38ff81efe777e33a01",
+            "58fa1f88d1f82db0c39e12c828f0381980a9a0455546da38ff81efe777e33a01",
+            "58fa1f88d1f82db0c39e12c828f0381980a9a0455546da38ff81efe777e33a01"
+          ],
+          "translation_invariant": true
+        },
+        "literal_one_two_M2_calls_before_routing": 16,
+        "logical_gate_counts": {
+          "CNOT": 13,
+          "TOFFOLI": 0,
+          "X": 3
+        },
+        "logical_max_support_M2": 2,
+        "lowered_max_support_M2": 2,
+        "maximum_logical_operation_L1_diameter": 7,
+        "nearest_neighbor_calls_upper_bound": 458
+      },
+      "route": "A_deterministic_instability",
+      "saturation_policy": "spent-code reapplication is identity; no second formation consumes the cell",
+      "spent_fixed_code_failures": 0,
+      "symmetric_fixture_rows": [
+        "product_z0",
+        "six_site_GHZ"
+      ]
+    },
+    "B": {
+      "Cycle661_prefix_leakage_failures": 0,
+      "Cycle669_branchwise_interface_failures": 0,
+      "all_wave_replica_and_syndrome_exhaust_retained": true,
+      "basis_failures": 0,
+      "basis_rows": 64,
+      "coherent_output_type": "CoherentDirectSum[Sector x TripleLatch x CorrectedRelativeValue x Exhaust]",
+      "deletions_detected": 51,
+      "deletions_expected": 51,
+      "disposition": "positive finite error-stable reversible latch; stability does not promote the coherent center to actuality",
+      "event_rows": {
+        "biased_phase_product": {
+          "capacity": 4,
+          "central_reduced_purity": 0.9960074173706647,
+          "central_reduced_rank": 7,
+          "direction_weight_spread": 0.00031243914049675103,
+          "none_plus_six_weights": [
+            0.9980013381268109,
+            0.00039090563291196295,
+            0.0004552614071487795,
+            0.00044930603822959225,
+            0.0003398412810324128,
+            0.0002205252472140202,
+            0.00014282226665202847
+          ],
+          "normalization_residual": 3.3306690738754696e-16,
+          "proper_cubic_direction_symmetric": false,
+          "split": "held_blinded"
+        },
+        "product_z0": {
+          "capacity": 3,
+          "central_reduced_purity": 0.9912334680557251,
+          "central_reduced_rank": 7,
+          "direction_weight_spread": 0.0,
+          "none_plus_six_weights": [
+            0.99560546875,
+            0.0007324218750000015,
+            0.0007324218750000015,
+            0.0007324218750000015,
+            0.0007324218750000015,
+            0.0007324218750000015,
+            0.0007324218750000015
+          ],
+          "normalization_residual": 0.0,
+          "proper_cubic_direction_symmetric": true,
+          "split": "train"
+        },
+        "six_site_GHZ": {
+          "capacity": 6,
+          "central_reduced_purity": 0.6796817454931826,
+          "central_reduced_rank": 7,
+          "direction_weight_spread": 6.938893903907228e-18,
+          "none_plus_six_weights": [
+            0.8211899326351648,
+            0.029801677894139122,
+            0.029801677894139122,
+            0.02980167789413913,
+            0.02980167789413913,
+            0.02980167789413913,
+            0.02980167789413913
+          ],
+          "normalization_residual": 4.440892098500626e-16,
+          "proper_cubic_direction_symmetric": true,
+          "split": "held_blinded_nonproduct"
+        }
+      },
+      "exact_terminal_met": false,
+      "finite_one_error_stability_only": true,
+      "host_sampler_calls": 0,
+      "host_sampling_source_hits": [],
+      "input_actuality_token_M2": 0,
+      "input_selector_M2": 0,
+      "inverse_on_blank_code_failures": 0,
+      "malformed_expected": 5,
+      "malformed_rejected": 5,
+      "mechanism": "three retained one-hot copies and reversible bitwise majority into a blank corrected register",
+      "neutral_product_state_locally_preparable": true,
+      "one_global_objective_token": false,
+      "outgoing_exhaust_M2": 7,
+      "pass": true,
+      "physical_metastability_or_all_future_permanence_claimed": false,
+      "primary_object": "triple-repetition central-value isometry",
+      "resources": {
+        "conservative_depth_upper_bound": 11973,
+        "exact_logical_schedule": [
+          {
+            "kind": "X",
+            "label": "exhaust-valid",
+            "sites": [
+              112
+            ]
+          },
+          {
+            "kind": "CNOT",
+            "label": "exhaust-word:0",
+            "sites": [
+              0,
+              113
+            ]
+          },
+          {
+            "kind": "CNOT",
+            "label": "exhaust-word:1",
+            "sites": [
+              1,
+              114
+            ]
+          },
+          {
+            "kind": "CNOT",
+            "label": "exhaust-word:2",
+            "sites": [
+              2,
+              115
+            ]
+          },
+          {
+            "kind": "CNOT",
+            "label": "exhaust-word:3",
+            "sites": [
+              3,
+              116
+            ]
+          },
+          {
+            "kind": "CNOT",
+            "label": "exhaust-word:4",
+            "sites": [
+              4,
+              117
+            ]
+          },
+          {
+            "kind": "CNOT",
+            "label": "exhaust-word:5",
+            "sites": [
+              5,
+              118
+            ]
+          },
+          {
+            "kind": "X",
+            "label": "ready-debit",
+            "sites": [
+              119
+            ]
+          },
+          {
+            "kind": "X",
+            "label": "spent-credit",
+            "sites": [
+              120
+            ]
+          },
+          {
+            "kind": "CNOT",
+            "label": "neutral-clear",
+            "sites": [
+              56,
+              84
+            ]
+          },
+          {
+            "kind": "CNOT",
+            "label": "central-direction:0",
+            "sites": [
+              58,
+              85
+            ]
+          },
+          {
+            "kind": "CNOT",
+            "label": "central-direction:1",
+            "sites": [
+              59,
+              86
+            ]
+          },
+          {
+            "kind": "CNOT",
+            "label": "central-direction:2",
+            "sites": [
+              60,
+              87
+            ]
+          },
+          {
+            "kind": "CNOT",
+            "label": "central-direction:3",
+            "sites": [
+              61,
+              88
+            ]
+          },
+          {
+            "kind": "CNOT",
+            "label": "central-direction:4",
+            "sites": [
+              62,
+              89
+            ]
+          },
+          {
+            "kind": "CNOT",
+            "label": "central-direction:5",
+            "sites": [
+              63,
+              90
+            ]
+          },
+          {
+            "kind": "CNOT",
+            "label": "copy:mirror1:0",
+            "sites": [
+              84,
+              91
+            ]
+          },
+          {
+            "kind": "CNOT",
+            "label": "copy:mirror1:1",
+            "sites": [
+              85,
+              92
+            ]
+          },
+          {
+            "kind": "CNOT",
+            "label": "copy:mirror1:2",
+            "sites": [
+              86,
+              93
+            ]
+          },
+          {
+            "kind": "CNOT",
+            "label": "copy:mirror1:3",
+            "sites": [
+              87,
+              94
+            ]
+          },
+          {
+            "kind": "CNOT",
+            "label": "copy:mirror1:4",
+            "sites": [
+              88,
+              95
+            ]
+          },
+          {
+            "kind": "CNOT",
+            "label": "copy:mirror1:5",
+            "sites": [
+              89,
+              96
+            ]
+          },
+          {
+            "kind": "CNOT",
+            "label": "copy:mirror1:6",
+            "sites": [
+              90,
+              97
+            ]
+          },
+          {
+            "kind": "CNOT",
+            "label": "copy:mirror2:0",
+            "sites": [
+              84,
+              98
+            ]
+          },
+          {
+            "kind": "CNOT",
+            "label": "copy:mirror2:1",
+            "sites": [
+              85,
+              99
+            ]
+          },
+          {
+            "kind": "CNOT",
+            "label": "copy:mirror2:2",
+            "sites": [
+              86,
+              100
+            ]
+          },
+          {
+            "kind": "CNOT",
+            "label": "copy:mirror2:3",
+            "sites": [
+              87,
+              101
+            ]
+          },
+          {
+            "kind": "CNOT",
+            "label": "copy:mirror2:4",
+            "sites": [
+              88,
+              102
+            ]
+          },
+          {
+            "kind": "CNOT",
+            "label": "copy:mirror2:5",
+            "sites": [
+              89,
+              103
+            ]
+          },
+          {
+            "kind": "CNOT",
+            "label": "copy:mirror2:6",
+            "sites": [
+              90,
+              104
+            ]
+          },
+          {
+            "kind": "TOFFOLI",
+            "label": "majority:ab:0",
+            "sites": [
+              84,
+              91,
+              105
+            ]
+          },
+          {
+            "kind": "TOFFOLI",
+            "label": "majority:ac:0",
+            "sites": [
+              84,
+              98,
+              105
+            ]
+          },
+          {
+            "kind": "TOFFOLI",
+            "label": "majority:bc:0",
+            "sites": [
+              91,
+              98,
+              105
+            ]
+          },
+          {
+            "kind": "TOFFOLI",
+            "label": "majority:ab:1",
+            "sites": [
+              85,
+              92,
+              106
+            ]
+          },
+          {
+            "kind": "TOFFOLI",
+            "label": "majority:ac:1",
+            "sites": [
+              85,
+              99,
+              106
+            ]
+          },
+          {
+            "kind": "TOFFOLI",
+            "label": "majority:bc:1",
+            "sites": [
+              92,
+              99,
+              106
+            ]
+          },
+          {
+            "kind": "TOFFOLI",
+            "label": "majority:ab:2",
+            "sites": [
+              86,
+              93,
+              107
+            ]
+          },
+          {
+            "kind": "TOFFOLI",
+            "label": "majority:ac:2",
+            "sites": [
+              86,
+              100,
+              107
+            ]
+          },
+          {
+            "kind": "TOFFOLI",
+            "label": "majority:bc:2",
+            "sites": [
+              93,
+              100,
+              107
+            ]
+          },
+          {
+            "kind": "TOFFOLI",
+            "label": "majority:ab:3",
+            "sites": [
+              87,
+              94,
+              108
+            ]
+          },
+          {
+            "kind": "TOFFOLI",
+            "label": "majority:ac:3",
+            "sites": [
+              87,
+              101,
+              108
+            ]
+          },
+          {
+            "kind": "TOFFOLI",
+            "label": "majority:bc:3",
+            "sites": [
+              94,
+              101,
+              108
+            ]
+          },
+          {
+            "kind": "TOFFOLI",
+            "label": "majority:ab:4",
+            "sites": [
+              88,
+              95,
+              109
+            ]
+          },
+          {
+            "kind": "TOFFOLI",
+            "label": "majority:ac:4",
+            "sites": [
+              88,
+              102,
+              109
+            ]
+          },
+          {
+            "kind": "TOFFOLI",
+            "label": "majority:bc:4",
+            "sites": [
+              95,
+              102,
+              109
+            ]
+          },
+          {
+            "kind": "TOFFOLI",
+            "label": "majority:ab:5",
+            "sites": [
+              89,
+              96,
+              110
+            ]
+          },
+          {
+            "kind": "TOFFOLI",
+            "label": "majority:ac:5",
+            "sites": [
+              89,
+              103,
+              110
+            ]
+          },
+          {
+            "kind": "TOFFOLI",
+            "label": "majority:bc:5",
+            "sites": [
+              96,
+              103,
+              110
+            ]
+          },
+          {
+            "kind": "TOFFOLI",
+            "label": "majority:ab:6",
+            "sites": [
+              90,
+              97,
+              111
+            ]
+          },
+          {
+            "kind": "TOFFOLI",
+            "label": "majority:ac:6",
+            "sites": [
+              90,
+              104,
+              111
+            ]
+          },
+          {
+            "kind": "TOFFOLI",
+            "label": "majority:bc:6",
+            "sites": [
+              97,
+              104,
+              111
+            ]
+          }
+        ],
+        "exact_logical_schedule_sha256": "d407fe3dffd4a1137bfa23987fd2aaec4cda8c00b782e484c8ffa6fa7f155346",
+        "layout": {
+          "active_M2": 121,
+          "active_placement_sha256": "dca3d81fb6c0b37fb90a803a06e35ec0f4a72908e2b2a682bcc6a835d4ee6212",
+          "all_frame_placements_inside_reserved_cube": true,
+          "frame_placement_sha256": [
+            "b0f337151bff56abd70eee7b6365117eb477ae6854800d35818c1a05738d8b26",
+            "68db84af423d6bc030075bc7ba9db8369aedabacfa60eaaed1efc7fffc49ffdc",
+            "41937406aa73947df5c115e5ef420ba7887799add5e891df1cc05cba15a2f2d2",
+            "dca3d81fb6c0b37fb90a803a06e35ec0f4a72908e2b2a682bcc6a835d4ee6212",
+            "7f78a5d76771527a3c1778e98409c66c5bc508c8b8bd299bf291cf6a7d0f17a5",
+            "bf1e52e2b4b175d3413994f3a9acddd515f4834aa5184991f703f847fc480c51",
+            "151d8efa17f2036dd23ad3b6705b0a450ff8882706c27a91c42136a17dd59d4f",
+            "eb4b6b5e95247fe23e93a5cd5a1018e82ed4ed6a5bc48588e855fe70e1566774",
+            "b628f8ccae2a402cda230fbdf903d8697d0cee2c10b7bdb05f6456de3f028414",
+            "815b437e170b55495dad8c3013ec830e2825cde173134fda27528f31ce519e9d",
+            "c6d696e9bb0e8162e8e532b4f7d26373cfe01d61fc270638cdc66c8e76066eb3",
+            "1e456d33604bc1ea29693f863e5ebf8c2586b394ed7cedd664430c2f0c027be5",
+            "4914346078e8246aa1bd3d45b6ccdb074c28fddfcc6dfbb34b36801913ff3423",
+            "7c8340f49d2f31337c04a323214968ed8108cbf8645e0e8dbfc6c4d7f7ef0c73",
+            "90d2cef156fff61c202f6f1f139d193b59abe9894fa3353fd25d5c8b1b37f81e",
+            "2921121e13108121682393b676a9c477e06f02691c1a116f191512b0af631314",
+            "77f19793d3cbabc99f5ca537aae920cd7f55f6679e1f0e6e658799e0cb9f138a",
+            "90f54a8e314f16a1113b6a52fe4a433e43e404241aa05033032135a201be2b62",
+            "6f4ae2e0b13e266451de7349b04f2d83768f2c48dd9aeaffee517e344f17e3d1",
+            "05a5ef288f16a2185dbe6df0a6b9e2f5858152545475dcf5fcc44ce14604a5e2",
+            "8af6bc1e415948191ec593b73443c0468ecb37c3bdb27b02d4fd10c086db54f3",
+            "7c7e068c1ab4aa0639caa9d99ba9ea4d07ce49c98160f69571a74bf2eaf8c20b",
+            "163d16ec0fdacd761ba06f432bb197187889de07c6da49b601f9b018a8a22e64",
+            "6c2df8ce5233239834e780295751b089cc81d16fef3dd576e41139ab52475c0e"
+          ],
+          "logical_index_to_coordinate": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              -1,
+              0,
+              0
+            ],
+            [
+              0,
+              -1,
+              0
+            ],
+            [
+              0,
+              0,
+              -1
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              -2,
+              0,
+              0
+            ],
+            [
+              -1,
+              -1,
+              0
+            ],
+            [
+              -1,
+              0,
+              -1
+            ],
+            [
+              -1,
+              0,
+              1
+            ],
+            [
+              -1,
+              1,
+              0
+            ],
+            [
+              0,
+              -2,
+              0
+            ],
+            [
+              0,
+              -1,
+              -1
+            ],
+            [
+              0,
+              -1,
+              1
+            ],
+            [
+              0,
+              0,
+              -2
+            ],
+            [
+              0,
+              0,
+              2
+            ],
+            [
+              0,
+              1,
+              -1
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              2,
+              0
+            ],
+            [
+              1,
+              -1,
+              0
+            ],
+            [
+              1,
+              0,
+              -1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              -3,
+              0,
+              0
+            ],
+            [
+              -2,
+              -1,
+              0
+            ],
+            [
+              -2,
+              0,
+              -1
+            ],
+            [
+              -2,
+              0,
+              1
+            ],
+            [
+              -2,
+              1,
+              0
+            ],
+            [
+              -1,
+              -2,
+              0
+            ],
+            [
+              -1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              1
+            ],
+            [
+              -1,
+              0,
+              -2
+            ],
+            [
+              -1,
+              0,
+              2
+            ],
+            [
+              -1,
+              1,
+              -1
+            ],
+            [
+              -1,
+              1,
+              1
+            ],
+            [
+              -1,
+              2,
+              0
+            ],
+            [
+              0,
+              -3,
+              0
+            ],
+            [
+              0,
+              -2,
+              -1
+            ],
+            [
+              0,
+              -2,
+              1
+            ],
+            [
+              0,
+              -1,
+              -2
+            ],
+            [
+              0,
+              -1,
+              2
+            ],
+            [
+              0,
+              0,
+              -3
+            ],
+            [
+              0,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              -2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              -1
+            ],
+            [
+              0,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              0
+            ],
+            [
+              1,
+              -2,
+              0
+            ],
+            [
+              1,
+              -1,
+              -1
+            ],
+            [
+              1,
+              -1,
+              1
+            ],
+            [
+              1,
+              0,
+              -2
+            ],
+            [
+              1,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              -1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              2,
+              -1,
+              0
+            ],
+            [
+              2,
+              0,
+              -1
+            ],
+            [
+              2,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              0
+            ],
+            [
+              3,
+              0,
+              0
+            ],
+            [
+              -3,
+              -1,
+              0
+            ],
+            [
+              -3,
+              0,
+              -1
+            ],
+            [
+              -3,
+              0,
+              1
+            ],
+            [
+              -3,
+              1,
+              0
+            ],
+            [
+              -2,
+              -2,
+              0
+            ],
+            [
+              -2,
+              -1,
+              -1
+            ],
+            [
+              -2,
+              -1,
+              1
+            ],
+            [
+              -2,
+              0,
+              -2
+            ],
+            [
+              -2,
+              0,
+              2
+            ],
+            [
+              -2,
+              1,
+              -1
+            ],
+            [
+              -2,
+              1,
+              1
+            ],
+            [
+              -2,
+              2,
+              0
+            ],
+            [
+              -1,
+              -3,
+              0
+            ],
+            [
+              -1,
+              -2,
+              -1
+            ],
+            [
+              -1,
+              -2,
+              1
+            ],
+            [
+              -1,
+              -1,
+              -2
+            ],
+            [
+              -1,
+              -1,
+              2
+            ],
+            [
+              -1,
+              0,
+              -3
+            ],
+            [
+              -1,
+              0,
+              3
+            ],
+            [
+              -1,
+              1,
+              -2
+            ],
+            [
+              -1,
+              1,
+              2
+            ],
+            [
+              -1,
+              2,
+              -1
+            ],
+            [
+              -1,
+              2,
+              1
+            ],
+            [
+              -1,
+              3,
+              0
+            ],
+            [
+              0,
+              -3,
+              -1
+            ],
+            [
+              0,
+              -3,
+              1
+            ],
+            [
+              0,
+              -2,
+              -2
+            ],
+            [
+              0,
+              -2,
+              2
+            ],
+            [
+              0,
+              -1,
+              -3
+            ],
+            [
+              0,
+              -1,
+              3
+            ],
+            [
+              0,
+              1,
+              -3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              2,
+              -2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              0,
+              3,
+              -1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              1,
+              -3,
+              0
+            ],
+            [
+              1,
+              -2,
+              -1
+            ],
+            [
+              1,
+              -2,
+              1
+            ],
+            [
+              1,
+              -1,
+              -2
+            ],
+            [
+              1,
+              -1,
+              2
+            ],
+            [
+              1,
+              0,
+              -3
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              1,
+              1,
+              -2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              1,
+              2,
+              -1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              2,
+              -2,
+              0
+            ],
+            [
+              2,
+              -1,
+              -1
+            ],
+            [
+              2,
+              -1,
+              1
+            ],
+            [
+              2,
+              0,
+              -2
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              2,
+              1,
+              -1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              3,
+              -1,
+              0
+            ],
+            [
+              3,
+              0,
+              -1
+            ]
+          ],
+          "maximum_active_L1_diameter": 8,
+          "placement_rule": "logical M2 index i maps to the i-th [-3,3]^3 point ordered by (L1 norm, x, y, z)",
+          "radius": 3,
+          "reserved_cube_all24_invariant": true,
+          "reserved_supercell_M2": 343,
+          "translated_normalized_layout_digests": [
+            "dca3d81fb6c0b37fb90a803a06e35ec0f4a72908e2b2a682bcc6a835d4ee6212",
+            "dca3d81fb6c0b37fb90a803a06e35ec0f4a72908e2b2a682bcc6a835d4ee6212",
+            "dca3d81fb6c0b37fb90a803a06e35ec0f4a72908e2b2a682bcc6a835d4ee6212"
+          ],
+          "translation_invariant": true
+        },
+        "literal_one_two_M2_calls_before_routing": 345,
+        "logical_gate_counts": {
+          "CNOT": 27,
+          "TOFFOLI": 21,
+          "X": 3
+        },
+        "logical_max_support_M2": 3,
+        "lowered_max_support_M2": 2,
+        "maximum_logical_operation_L1_diameter": 8,
+        "nearest_neighbor_calls_upper_bound": 11973
+      },
+      "route": "B_metastable_reversible_dilation",
+      "saturation_policy": "finite spent latch is stable; no fresh corrected register or renewal is inferred",
+      "single_bit_error_failures": 0,
+      "single_bit_error_tests": 1344,
+      "spent_fixed_code_failures": 0
+    },
+    "C": {
+      "Cycle661_prefix_leakage_failures": 0,
+      "Cycle669_branchwise_interface_failures": 0,
+      "all_wall_and_wave_exhaust_retained": true,
+      "basis_failures": 0,
+      "coherent_output_type": "CoherentDirectSum[Sector x RelativeDomainWall x CentralRelativeValue x Exhaust]",
+      "deletions_detected": 126,
+      "deletions_expected": 126,
+      "disposition": "positive proper-cubic branch-relative wall compiler; coherent wall alternatives remain jointly retained",
+      "exact_terminal_met": false,
+      "host_sampler_calls": 0,
+      "host_sampling_source_hits": [],
+      "input_actuality_token_M2": 0,
+      "input_selector_M2": 0,
+      "inverse_on_blank_code_failures": 0,
+      "malformed_expected": 15,
+      "malformed_rejected": 15,
+      "mechanism": "a retained direction wall propagates from the outer ray to the center by fixed local CNOTs",
+      "neutral_product_state_locally_preparable": true,
+      "one_global_objective_token": false,
+      "pass": true,
+      "primary_object": "six equal finite rays plus central one-hot value",
+      "resources": {
+        "biased_phase_product": {
+          "conservative_depth_upper_bound": 1298,
+          "exact_logical_schedule": [
+            {
+              "kind": "X",
+              "label": "exhaust-valid",
+              "sites": [
+                115
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "exhaust-word:0",
+              "sites": [
+                0,
+                116
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "exhaust-word:1",
+              "sites": [
+                1,
+                117
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "exhaust-word:2",
+              "sites": [
+                2,
+                118
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "exhaust-word:3",
+              "sites": [
+                3,
+                119
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "exhaust-word:4",
+              "sites": [
+                4,
+                120
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "exhaust-word:5",
+              "sites": [
+                5,
+                121
+              ]
+            },
+            {
+              "kind": "X",
+              "label": "ready-debit",
+              "sites": [
+                122
+              ]
+            },
+            {
+              "kind": "X",
+              "label": "spent-credit",
+              "sites": [
+                123
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "neutral-clear",
+              "sites": [
+                56,
+                84
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-seed:0",
+              "sites": [
+                58,
+                94
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:0:3",
+              "sites": [
+                94,
+                93
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:0:2",
+              "sites": [
+                93,
+                92
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:0:1",
+              "sites": [
+                92,
+                91
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-center:0",
+              "sites": [
+                91,
+                85
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-seed:1",
+              "sites": [
+                59,
+                98
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:1:3",
+              "sites": [
+                98,
+                97
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:1:2",
+              "sites": [
+                97,
+                96
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:1:1",
+              "sites": [
+                96,
+                95
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-center:1",
+              "sites": [
+                95,
+                86
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-seed:2",
+              "sites": [
+                60,
+                102
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:2:3",
+              "sites": [
+                102,
+                101
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:2:2",
+              "sites": [
+                101,
+                100
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:2:1",
+              "sites": [
+                100,
+                99
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-center:2",
+              "sites": [
+                99,
+                87
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-seed:3",
+              "sites": [
+                61,
+                106
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:3:3",
+              "sites": [
+                106,
+                105
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:3:2",
+              "sites": [
+                105,
+                104
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:3:1",
+              "sites": [
+                104,
+                103
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-center:3",
+              "sites": [
+                103,
+                88
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-seed:4",
+              "sites": [
+                62,
+                110
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:4:3",
+              "sites": [
+                110,
+                109
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:4:2",
+              "sites": [
+                109,
+                108
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:4:1",
+              "sites": [
+                108,
+                107
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-center:4",
+              "sites": [
+                107,
+                89
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-seed:5",
+              "sites": [
+                63,
+                114
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:5:3",
+              "sites": [
+                114,
+                113
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:5:2",
+              "sites": [
+                113,
+                112
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:5:1",
+              "sites": [
+                112,
+                111
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-center:5",
+              "sites": [
+                111,
+                90
+              ]
+            }
+          ],
+          "exact_logical_schedule_sha256": "d5c5001396690abcf8028e3f3366419d20cce0fec2ef3699bd93c578c1525823",
+          "layout": {
+            "active_M2": 124,
+            "active_placement_sha256": "51d54abb803d837b4344e019bd85289e77d7ed349794118d04f19bc64dc05b0a",
+            "all_frame_placements_inside_reserved_cube": true,
+            "frame_placement_sha256": [
+              "fedf33eecab4fbe69880ba65557017a717f3d5f44e232ff8a5c7cd22571c65be",
+              "a67807bc687a68654949cbf8b18954ca7abf9ba7ade3e3607e9694f445706b99",
+              "127266f1d0f5a3b3d493d54e36aba3d685f04623f031cadde2e6e6da83b2bbc4",
+              "51d54abb803d837b4344e019bd85289e77d7ed349794118d04f19bc64dc05b0a",
+              "4661ceff250d2346f74cd2d809b3038af390c653b5dea64eb1d1036c33b267dd",
+              "4f9111be61e05cf5d350d51d8f02960b0f5985885fd26f5b49fef10f6f2355b6",
+              "1923007042f132824a524fc490a63c793f80a52f443cb563322c61ad20dc1403",
+              "2ba5e36ddd0e6fc9d2f7a8946563cc586c9e273d157e85b0e275258c214507c8",
+              "6f35b4bd77d4fdf5b49cbb94d0a173d044d357a059f8a3b6265ef020dee826d1",
+              "79233eeb8562c2d1f8ac76dce688ff8585d846befc979fef1c5ec706f42b0de7",
+              "da9afa0533c17bac4122fbfcd4fb31167a484a89d22fb1ad47b264d2fcb83257",
+              "38cad476c94dc8fc136e34ba241d194002e68aa5eaee5cb26c89f4c5d1b1d2a2",
+              "4e64d0771c43759c92ced4aa0c0f17358ae54325b3c8237daf046fcd88ed9e69",
+              "6ee9afc97ecc90a0c3758b875655c7018e2cda43f0af8f2507ef9cfee75c4218",
+              "c88673e45f6d98ed94b3c3760746652c8a23af759d754aaa4d0c72818fbffb47",
+              "d19f15d8788e046e579ffad498d0c27c8c8990ba546b262ed200fe8fe074b2f7",
+              "e7e534f3c26e124013a6b353ddd7014a822ca27d95ac16ab581d881a1870e23e",
+              "07ea92b9326754966b0e00e922986af8388e8dba229824bd82c23b2e9bfb587c",
+              "50867edcb0a451086abeba46e9dc25246c6f871deb05ac4e93d65fe6a555339f",
+              "649d487d406176b7fa30cb8b78f5b6d6e7dbc28256eb66913c9050d3d99cc376",
+              "24fe92078d0aa980911336cc8534323804d917d4c83d52d0fe544ddc835f336a",
+              "6c9910578207806dc80c52a9ed83fb6dfd247bc6868ed62862fc761cdd606ed0",
+              "36190ae3d1689177fd6436f28bc1b787f7edee916c34aa0723d05616cc53fb53",
+              "1d3263a5658b17620103869c3822afc19d6312b8f9450d9743050507bfb5a1a3"
+            ],
+            "logical_index_to_coordinate": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                -1,
+                0,
+                0
+              ],
+              [
+                0,
+                -1,
+                0
+              ],
+              [
+                0,
+                0,
+                -1
+              ],
+              [
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0
+              ],
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                -2,
+                0,
+                0
+              ],
+              [
+                -1,
+                -1,
+                0
+              ],
+              [
+                -1,
+                0,
+                -1
+              ],
+              [
+                -1,
+                0,
+                1
+              ],
+              [
+                -1,
+                1,
+                0
+              ],
+              [
+                0,
+                -2,
+                0
+              ],
+              [
+                0,
+                -1,
+                -1
+              ],
+              [
+                0,
+                -1,
+                1
+              ],
+              [
+                0,
+                0,
+                -2
+              ],
+              [
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                1,
+                -1
+              ],
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                2,
+                0
+              ],
+              [
+                1,
+                -1,
+                0
+              ],
+              [
+                1,
+                0,
+                -1
+              ],
+              [
+                1,
+                0,
+                1
+              ],
+              [
+                1,
+                1,
+                0
+              ],
+              [
+                2,
+                0,
+                0
+              ],
+              [
+                -3,
+                0,
+                0
+              ],
+              [
+                -2,
+                -1,
+                0
+              ],
+              [
+                -2,
+                0,
+                -1
+              ],
+              [
+                -2,
+                0,
+                1
+              ],
+              [
+                -2,
+                1,
+                0
+              ],
+              [
+                -1,
+                -2,
+                0
+              ],
+              [
+                -1,
+                -1,
+                -1
+              ],
+              [
+                -1,
+                -1,
+                1
+              ],
+              [
+                -1,
+                0,
+                -2
+              ],
+              [
+                -1,
+                0,
+                2
+              ],
+              [
+                -1,
+                1,
+                -1
+              ],
+              [
+                -1,
+                1,
+                1
+              ],
+              [
+                -1,
+                2,
+                0
+              ],
+              [
+                0,
+                -3,
+                0
+              ],
+              [
+                0,
+                -2,
+                -1
+              ],
+              [
+                0,
+                -2,
+                1
+              ],
+              [
+                0,
+                -1,
+                -2
+              ],
+              [
+                0,
+                -1,
+                2
+              ],
+              [
+                0,
+                0,
+                -3
+              ],
+              [
+                0,
+                0,
+                3
+              ],
+              [
+                0,
+                1,
+                -2
+              ],
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                0,
+                2,
+                -1
+              ],
+              [
+                0,
+                2,
+                1
+              ],
+              [
+                0,
+                3,
+                0
+              ],
+              [
+                1,
+                -2,
+                0
+              ],
+              [
+                1,
+                -1,
+                -1
+              ],
+              [
+                1,
+                -1,
+                1
+              ],
+              [
+                1,
+                0,
+                -2
+              ],
+              [
+                1,
+                0,
+                2
+              ],
+              [
+                1,
+                1,
+                -1
+              ],
+              [
+                1,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                0
+              ],
+              [
+                2,
+                -1,
+                0
+              ],
+              [
+                2,
+                0,
+                -1
+              ],
+              [
+                2,
+                0,
+                1
+              ],
+              [
+                2,
+                1,
+                0
+              ],
+              [
+                3,
+                0,
+                0
+              ],
+              [
+                -3,
+                -1,
+                0
+              ],
+              [
+                -3,
+                0,
+                -1
+              ],
+              [
+                -3,
+                0,
+                1
+              ],
+              [
+                -3,
+                1,
+                0
+              ],
+              [
+                -2,
+                -2,
+                0
+              ],
+              [
+                -2,
+                -1,
+                -1
+              ],
+              [
+                -2,
+                -1,
+                1
+              ],
+              [
+                -2,
+                0,
+                -2
+              ],
+              [
+                -2,
+                0,
+                2
+              ],
+              [
+                -2,
+                1,
+                -1
+              ],
+              [
+                -2,
+                1,
+                1
+              ],
+              [
+                -2,
+                2,
+                0
+              ],
+              [
+                -1,
+                -3,
+                0
+              ],
+              [
+                -1,
+                -2,
+                -1
+              ],
+              [
+                -1,
+                -2,
+                1
+              ],
+              [
+                -1,
+                -1,
+                -2
+              ],
+              [
+                -1,
+                -1,
+                2
+              ],
+              [
+                -1,
+                0,
+                -3
+              ],
+              [
+                -1,
+                0,
+                3
+              ],
+              [
+                -1,
+                1,
+                -2
+              ],
+              [
+                -1,
+                1,
+                2
+              ],
+              [
+                -1,
+                2,
+                -1
+              ],
+              [
+                -1,
+                2,
+                1
+              ],
+              [
+                -1,
+                3,
+                0
+              ],
+              [
+                0,
+                -3,
+                -1
+              ],
+              [
+                0,
+                -3,
+                1
+              ],
+              [
+                0,
+                -2,
+                -2
+              ],
+              [
+                0,
+                -2,
+                2
+              ],
+              [
+                0,
+                -1,
+                -3
+              ],
+              [
+                0,
+                -1,
+                3
+              ],
+              [
+                0,
+                1,
+                -3
+              ],
+              [
+                0,
+                1,
+                3
+              ],
+              [
+                0,
+                2,
+                -2
+              ],
+              [
+                0,
+                2,
+                2
+              ],
+              [
+                0,
+                3,
+                -1
+              ],
+              [
+                0,
+                3,
+                1
+              ],
+              [
+                1,
+                -3,
+                0
+              ],
+              [
+                1,
+                -2,
+                -1
+              ],
+              [
+                1,
+                -2,
+                1
+              ],
+              [
+                1,
+                -1,
+                -2
+              ],
+              [
+                1,
+                -1,
+                2
+              ],
+              [
+                1,
+                0,
+                -3
+              ],
+              [
+                1,
+                0,
+                3
+              ],
+              [
+                1,
+                1,
+                -2
+              ],
+              [
+                1,
+                1,
+                2
+              ],
+              [
+                1,
+                2,
+                -1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                0
+              ],
+              [
+                2,
+                -2,
+                0
+              ],
+              [
+                2,
+                -1,
+                -1
+              ],
+              [
+                2,
+                -1,
+                1
+              ],
+              [
+                2,
+                0,
+                -2
+              ],
+              [
+                2,
+                0,
+                2
+              ],
+              [
+                2,
+                1,
+                -1
+              ],
+              [
+                2,
+                1,
+                1
+              ],
+              [
+                2,
+                2,
+                0
+              ],
+              [
+                3,
+                -1,
+                0
+              ],
+              [
+                3,
+                0,
+                -1
+              ],
+              [
+                3,
+                0,
+                1
+              ],
+              [
+                3,
+                1,
+                0
+              ],
+              [
+                -3,
+                -2,
+                0
+              ]
+            ],
+            "maximum_active_L1_diameter": 9,
+            "placement_rule": "logical M2 index i maps to the i-th [-3,3]^3 point ordered by (L1 norm, x, y, z)",
+            "radius": 3,
+            "reserved_cube_all24_invariant": true,
+            "reserved_supercell_M2": 343,
+            "translated_normalized_layout_digests": [
+              "51d54abb803d837b4344e019bd85289e77d7ed349794118d04f19bc64dc05b0a",
+              "51d54abb803d837b4344e019bd85289e77d7ed349794118d04f19bc64dc05b0a",
+              "51d54abb803d837b4344e019bd85289e77d7ed349794118d04f19bc64dc05b0a"
+            ],
+            "translation_invariant": true
+          },
+          "literal_one_two_M2_calls_before_routing": 40,
+          "logical_gate_counts": {
+            "CNOT": 37,
+            "TOFFOLI": 0,
+            "X": 3
+          },
+          "logical_max_support_M2": 2,
+          "lowered_max_support_M2": 2,
+          "maximum_logical_operation_L1_diameter": 8,
+          "nearest_neighbor_calls_upper_bound": 1298
+        },
+        "product_z0": {
+          "conservative_depth_upper_bound": 1088,
+          "exact_logical_schedule": [
+            {
+              "kind": "X",
+              "label": "exhaust-valid",
+              "sites": [
+                109
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "exhaust-word:0",
+              "sites": [
+                0,
+                110
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "exhaust-word:1",
+              "sites": [
+                1,
+                111
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "exhaust-word:2",
+              "sites": [
+                2,
+                112
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "exhaust-word:3",
+              "sites": [
+                3,
+                113
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "exhaust-word:4",
+              "sites": [
+                4,
+                114
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "exhaust-word:5",
+              "sites": [
+                5,
+                115
+              ]
+            },
+            {
+              "kind": "X",
+              "label": "ready-debit",
+              "sites": [
+                116
+              ]
+            },
+            {
+              "kind": "X",
+              "label": "spent-credit",
+              "sites": [
+                117
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "neutral-clear",
+              "sites": [
+                56,
+                84
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-seed:0",
+              "sites": [
+                58,
+                93
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:0:2",
+              "sites": [
+                93,
+                92
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:0:1",
+              "sites": [
+                92,
+                91
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-center:0",
+              "sites": [
+                91,
+                85
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-seed:1",
+              "sites": [
+                59,
+                96
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:1:2",
+              "sites": [
+                96,
+                95
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:1:1",
+              "sites": [
+                95,
+                94
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-center:1",
+              "sites": [
+                94,
+                86
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-seed:2",
+              "sites": [
+                60,
+                99
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:2:2",
+              "sites": [
+                99,
+                98
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:2:1",
+              "sites": [
+                98,
+                97
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-center:2",
+              "sites": [
+                97,
+                87
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-seed:3",
+              "sites": [
+                61,
+                102
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:3:2",
+              "sites": [
+                102,
+                101
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:3:1",
+              "sites": [
+                101,
+                100
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-center:3",
+              "sites": [
+                100,
+                88
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-seed:4",
+              "sites": [
+                62,
+                105
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:4:2",
+              "sites": [
+                105,
+                104
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:4:1",
+              "sites": [
+                104,
+                103
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-center:4",
+              "sites": [
+                103,
+                89
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-seed:5",
+              "sites": [
+                63,
+                108
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:5:2",
+              "sites": [
+                108,
+                107
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:5:1",
+              "sites": [
+                107,
+                106
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-center:5",
+              "sites": [
+                106,
+                90
+              ]
+            }
+          ],
+          "exact_logical_schedule_sha256": "c96791b8bda90c6dd66f6414d97cb516990d1f576d333e28f1c1a714759129b0",
+          "layout": {
+            "active_M2": 118,
+            "active_placement_sha256": "1da1dc9f66d6939ec5f6f4968623d7f9967096242035d17d3c143cd7b0cad7c0",
+            "all_frame_placements_inside_reserved_cube": true,
+            "frame_placement_sha256": [
+              "c872bc7198f8934f8ce78adedb53c436539fc63c4e21a36ac99416ed1a7f0b1a",
+              "7591126d9c92399b00ea048cbed22c32aab905a6717a2ab31c73ad5c5d63af0e",
+              "7cb703677ae44f763f9ab518a2da63ff023fcf4a2d96485a51a6934f922c76eb",
+              "1da1dc9f66d6939ec5f6f4968623d7f9967096242035d17d3c143cd7b0cad7c0",
+              "0f63ab4c8a091c711619a69e1fe2176b22ce5b18778d640942a1968bfcb1bb9a",
+              "dfb6455fd52f0b94765e47930df74864ea52c9f804f4f9a5bf2f628a4a098990",
+              "f9ff0c53539691f17bfde5e19dede3c53f9afd18c0db972bb51df85205856ed3",
+              "f8578d9a8de88f2df80253a0cae568abc16f26f6c6c8e07ece74e25910b571a3",
+              "1e662e6ffd7f502a9e436e452f5a72bbc4c3a0571b109bd8f8f3c7d381872dab",
+              "2e54e4d8ba4f45517c6e6738fcbcda26563c2adc5a4026261dd9a1b4f06d2c85",
+              "70f425868842e1e53c71209d30f0ec6f255f91884b5ff47a026a18065e66b4a3",
+              "285d995eeeccb3700cc0e147935605da706468035910224a861d8cee24083bf1",
+              "d4342656d09cf4f6941b51061418281b5300732dd0748860e8ef518f14a02eb3",
+              "ce9e4fa4932ca0246b968d6ae1da9677d6127010a3cd237291d600c0d5bb90be",
+              "9f00fcc50ca29f62e34b624b60f61e1fe1fb6adc2f912819e4afc6614a4aea01",
+              "6ae33d154d93924ac6a778a7b0d8d99a5c29e4b9e70964fadd0e9d93c2e63a34",
+              "36bae02b28a89d0df349745ac42c482c38599bcd570ca4f8cf3bc8d8955ccacf",
+              "8649a23d52de670ebf0f9bfbc4a29ac2325adfd7add2993faaffa1fb22176514",
+              "abe70487bee693d5a25a345cbdf0b9e9b91b4795b335a99513e4e287148751f2",
+              "3c04499d4377a22783046d03ae789b806f637ef68625e779f1bb3b97a63c4b70",
+              "9cfe2a63f1097d7024eec2fbc315bd149ba3d1befcb20c0a4d7701055c10d7bf",
+              "b31de22f8665e19dc4b578a1374a31b76c984024dcd70c4bbc7f4881abe483a0",
+              "6b3525763ec71c93af089d8eccbbfafddfd8907a19d6784419e1e14751435731",
+              "2ac9a79a054657e07763122e5055cde23951d7099bffbd6a440a9ff1d4129776"
+            ],
+            "logical_index_to_coordinate": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                -1,
+                0,
+                0
+              ],
+              [
+                0,
+                -1,
+                0
+              ],
+              [
+                0,
+                0,
+                -1
+              ],
+              [
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0
+              ],
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                -2,
+                0,
+                0
+              ],
+              [
+                -1,
+                -1,
+                0
+              ],
+              [
+                -1,
+                0,
+                -1
+              ],
+              [
+                -1,
+                0,
+                1
+              ],
+              [
+                -1,
+                1,
+                0
+              ],
+              [
+                0,
+                -2,
+                0
+              ],
+              [
+                0,
+                -1,
+                -1
+              ],
+              [
+                0,
+                -1,
+                1
+              ],
+              [
+                0,
+                0,
+                -2
+              ],
+              [
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                1,
+                -1
+              ],
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                2,
+                0
+              ],
+              [
+                1,
+                -1,
+                0
+              ],
+              [
+                1,
+                0,
+                -1
+              ],
+              [
+                1,
+                0,
+                1
+              ],
+              [
+                1,
+                1,
+                0
+              ],
+              [
+                2,
+                0,
+                0
+              ],
+              [
+                -3,
+                0,
+                0
+              ],
+              [
+                -2,
+                -1,
+                0
+              ],
+              [
+                -2,
+                0,
+                -1
+              ],
+              [
+                -2,
+                0,
+                1
+              ],
+              [
+                -2,
+                1,
+                0
+              ],
+              [
+                -1,
+                -2,
+                0
+              ],
+              [
+                -1,
+                -1,
+                -1
+              ],
+              [
+                -1,
+                -1,
+                1
+              ],
+              [
+                -1,
+                0,
+                -2
+              ],
+              [
+                -1,
+                0,
+                2
+              ],
+              [
+                -1,
+                1,
+                -1
+              ],
+              [
+                -1,
+                1,
+                1
+              ],
+              [
+                -1,
+                2,
+                0
+              ],
+              [
+                0,
+                -3,
+                0
+              ],
+              [
+                0,
+                -2,
+                -1
+              ],
+              [
+                0,
+                -2,
+                1
+              ],
+              [
+                0,
+                -1,
+                -2
+              ],
+              [
+                0,
+                -1,
+                2
+              ],
+              [
+                0,
+                0,
+                -3
+              ],
+              [
+                0,
+                0,
+                3
+              ],
+              [
+                0,
+                1,
+                -2
+              ],
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                0,
+                2,
+                -1
+              ],
+              [
+                0,
+                2,
+                1
+              ],
+              [
+                0,
+                3,
+                0
+              ],
+              [
+                1,
+                -2,
+                0
+              ],
+              [
+                1,
+                -1,
+                -1
+              ],
+              [
+                1,
+                -1,
+                1
+              ],
+              [
+                1,
+                0,
+                -2
+              ],
+              [
+                1,
+                0,
+                2
+              ],
+              [
+                1,
+                1,
+                -1
+              ],
+              [
+                1,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                0
+              ],
+              [
+                2,
+                -1,
+                0
+              ],
+              [
+                2,
+                0,
+                -1
+              ],
+              [
+                2,
+                0,
+                1
+              ],
+              [
+                2,
+                1,
+                0
+              ],
+              [
+                3,
+                0,
+                0
+              ],
+              [
+                -3,
+                -1,
+                0
+              ],
+              [
+                -3,
+                0,
+                -1
+              ],
+              [
+                -3,
+                0,
+                1
+              ],
+              [
+                -3,
+                1,
+                0
+              ],
+              [
+                -2,
+                -2,
+                0
+              ],
+              [
+                -2,
+                -1,
+                -1
+              ],
+              [
+                -2,
+                -1,
+                1
+              ],
+              [
+                -2,
+                0,
+                -2
+              ],
+              [
+                -2,
+                0,
+                2
+              ],
+              [
+                -2,
+                1,
+                -1
+              ],
+              [
+                -2,
+                1,
+                1
+              ],
+              [
+                -2,
+                2,
+                0
+              ],
+              [
+                -1,
+                -3,
+                0
+              ],
+              [
+                -1,
+                -2,
+                -1
+              ],
+              [
+                -1,
+                -2,
+                1
+              ],
+              [
+                -1,
+                -1,
+                -2
+              ],
+              [
+                -1,
+                -1,
+                2
+              ],
+              [
+                -1,
+                0,
+                -3
+              ],
+              [
+                -1,
+                0,
+                3
+              ],
+              [
+                -1,
+                1,
+                -2
+              ],
+              [
+                -1,
+                1,
+                2
+              ],
+              [
+                -1,
+                2,
+                -1
+              ],
+              [
+                -1,
+                2,
+                1
+              ],
+              [
+                -1,
+                3,
+                0
+              ],
+              [
+                0,
+                -3,
+                -1
+              ],
+              [
+                0,
+                -3,
+                1
+              ],
+              [
+                0,
+                -2,
+                -2
+              ],
+              [
+                0,
+                -2,
+                2
+              ],
+              [
+                0,
+                -1,
+                -3
+              ],
+              [
+                0,
+                -1,
+                3
+              ],
+              [
+                0,
+                1,
+                -3
+              ],
+              [
+                0,
+                1,
+                3
+              ],
+              [
+                0,
+                2,
+                -2
+              ],
+              [
+                0,
+                2,
+                2
+              ],
+              [
+                0,
+                3,
+                -1
+              ],
+              [
+                0,
+                3,
+                1
+              ],
+              [
+                1,
+                -3,
+                0
+              ],
+              [
+                1,
+                -2,
+                -1
+              ],
+              [
+                1,
+                -2,
+                1
+              ],
+              [
+                1,
+                -1,
+                -2
+              ],
+              [
+                1,
+                -1,
+                2
+              ],
+              [
+                1,
+                0,
+                -3
+              ],
+              [
+                1,
+                0,
+                3
+              ],
+              [
+                1,
+                1,
+                -2
+              ],
+              [
+                1,
+                1,
+                2
+              ],
+              [
+                1,
+                2,
+                -1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                0
+              ],
+              [
+                2,
+                -2,
+                0
+              ],
+              [
+                2,
+                -1,
+                -1
+              ],
+              [
+                2,
+                -1,
+                1
+              ],
+              [
+                2,
+                0,
+                -2
+              ],
+              [
+                2,
+                0,
+                2
+              ],
+              [
+                2,
+                1,
+                -1
+              ],
+              [
+                2,
+                1,
+                1
+              ]
+            ],
+            "maximum_active_L1_diameter": 8,
+            "placement_rule": "logical M2 index i maps to the i-th [-3,3]^3 point ordered by (L1 norm, x, y, z)",
+            "radius": 3,
+            "reserved_cube_all24_invariant": true,
+            "reserved_supercell_M2": 343,
+            "translated_normalized_layout_digests": [
+              "1da1dc9f66d6939ec5f6f4968623d7f9967096242035d17d3c143cd7b0cad7c0",
+              "1da1dc9f66d6939ec5f6f4968623d7f9967096242035d17d3c143cd7b0cad7c0",
+              "1da1dc9f66d6939ec5f6f4968623d7f9967096242035d17d3c143cd7b0cad7c0"
+            ],
+            "translation_invariant": true
+          },
+          "literal_one_two_M2_calls_before_routing": 34,
+          "logical_gate_counts": {
+            "CNOT": 31,
+            "TOFFOLI": 0,
+            "X": 3
+          },
+          "logical_max_support_M2": 2,
+          "lowered_max_support_M2": 2,
+          "maximum_logical_operation_L1_diameter": 8,
+          "nearest_neighbor_calls_upper_bound": 1088
+        },
+        "six_site_GHZ": {
+          "conservative_depth_upper_bound": 1718,
+          "exact_logical_schedule": [
+            {
+              "kind": "X",
+              "label": "exhaust-valid",
+              "sites": [
+                127
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "exhaust-word:0",
+              "sites": [
+                0,
+                128
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "exhaust-word:1",
+              "sites": [
+                1,
+                129
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "exhaust-word:2",
+              "sites": [
+                2,
+                130
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "exhaust-word:3",
+              "sites": [
+                3,
+                131
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "exhaust-word:4",
+              "sites": [
+                4,
+                132
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "exhaust-word:5",
+              "sites": [
+                5,
+                133
+              ]
+            },
+            {
+              "kind": "X",
+              "label": "ready-debit",
+              "sites": [
+                134
+              ]
+            },
+            {
+              "kind": "X",
+              "label": "spent-credit",
+              "sites": [
+                135
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "neutral-clear",
+              "sites": [
+                56,
+                84
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-seed:0",
+              "sites": [
+                58,
+                96
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:0:5",
+              "sites": [
+                96,
+                95
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:0:4",
+              "sites": [
+                95,
+                94
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:0:3",
+              "sites": [
+                94,
+                93
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:0:2",
+              "sites": [
+                93,
+                92
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:0:1",
+              "sites": [
+                92,
+                91
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-center:0",
+              "sites": [
+                91,
+                85
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-seed:1",
+              "sites": [
+                59,
+                102
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:1:5",
+              "sites": [
+                102,
+                101
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:1:4",
+              "sites": [
+                101,
+                100
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:1:3",
+              "sites": [
+                100,
+                99
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:1:2",
+              "sites": [
+                99,
+                98
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:1:1",
+              "sites": [
+                98,
+                97
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-center:1",
+              "sites": [
+                97,
+                86
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-seed:2",
+              "sites": [
+                60,
+                108
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:2:5",
+              "sites": [
+                108,
+                107
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:2:4",
+              "sites": [
+                107,
+                106
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:2:3",
+              "sites": [
+                106,
+                105
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:2:2",
+              "sites": [
+                105,
+                104
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:2:1",
+              "sites": [
+                104,
+                103
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-center:2",
+              "sites": [
+                103,
+                87
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-seed:3",
+              "sites": [
+                61,
+                114
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:3:5",
+              "sites": [
+                114,
+                113
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:3:4",
+              "sites": [
+                113,
+                112
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:3:3",
+              "sites": [
+                112,
+                111
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:3:2",
+              "sites": [
+                111,
+                110
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:3:1",
+              "sites": [
+                110,
+                109
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-center:3",
+              "sites": [
+                109,
+                88
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-seed:4",
+              "sites": [
+                62,
+                120
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:4:5",
+              "sites": [
+                120,
+                119
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:4:4",
+              "sites": [
+                119,
+                118
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:4:3",
+              "sites": [
+                118,
+                117
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:4:2",
+              "sites": [
+                117,
+                116
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:4:1",
+              "sites": [
+                116,
+                115
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-center:4",
+              "sites": [
+                115,
+                89
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-seed:5",
+              "sites": [
+                63,
+                126
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:5:5",
+              "sites": [
+                126,
+                125
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:5:4",
+              "sites": [
+                125,
+                124
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:5:3",
+              "sites": [
+                124,
+                123
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:5:2",
+              "sites": [
+                123,
+                122
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-propagate:5:1",
+              "sites": [
+                122,
+                121
+              ]
+            },
+            {
+              "kind": "CNOT",
+              "label": "wall-center:5",
+              "sites": [
+                121,
+                90
+              ]
+            }
+          ],
+          "exact_logical_schedule_sha256": "ffb448e9f76b54fe97a9cf90e6d2f8cb70fb43a13d299d51b444fada8b4f45fa",
+          "layout": {
+            "active_M2": 136,
+            "active_placement_sha256": "4d3e3d54abfca81c54ca003a30fe9fab1064119131d41872d61868745e122b4b",
+            "all_frame_placements_inside_reserved_cube": true,
+            "frame_placement_sha256": [
+              "897363e0d4cff989ca76b2f12518dade248306cb0495c98c621309c305ac3f24",
+              "3e89c4c8ebc04f1e262f65085d552afbece8eb98c2dcce99df2a0e8005f3c3cd",
+              "2bc064d6189f82192ab2ff55f858a3817e0a57eae22c60e34ff600fcdc1b516d",
+              "4d3e3d54abfca81c54ca003a30fe9fab1064119131d41872d61868745e122b4b",
+              "ab8e88ea6bb427b95d4e858c1e2e71ab0b72da7202768e0aa5c1650e90a05d50",
+              "f1c87214797f4bd3e2f05bf97cb9d364bdeaa2cbfe397db68be9afc770e330d4",
+              "a50f4bdd0e15e25841d015a83dd699060f6e61b0b033184c4bf0a0fbfd96b19c",
+              "449fcccfa83b0367a58202bcf859486965e6157347ee2a9bdb9da541486ce774",
+              "021000677d65c26aa771842dbab86d9778c49ab4185753f7aeea4b1a26b311a6",
+              "3b622ca77dbc17fd55725564f305a2110c8e733ab5809cb8af1a44011cf1fb70",
+              "3405002ec06db05bc84c07ec60c794109d67343abbb6516e813915369e5cabac",
+              "f768dc1476c0e4251a980069f82b14f7b5fda30ebc81700f637e5819dd8982aa",
+              "d96365c9fbd603705790050da9eea8e8d39787686a097f2df1907c758452ff51",
+              "08b7bc913ebaf6a8df04e22fd2aa52ec076fc2fc681933b4c879cc8b319d340b",
+              "289596a18559cbc5c843e907e1c74ca9781a2001a075ef2c122d4f59c52178f0",
+              "00b7a3b39c51145b3bd0e97eb142bc0bec6ef58dd46159ed0fc36e46ee873881",
+              "46a919e19cd9d661e76a221ff695a902ac31f85327ad2620adddbf54bc55e6ba",
+              "5c56c3aa8b4a8fa6f222841562815ce23794ca0f1cbc96399aee47c69ad5adc6",
+              "580b4fe7dd67b7357780b98f97cd77c5b8a987dc69d2d73c80dba3299f7e5b99",
+              "3be27eb8b05f0e8e6ff68f3061d3a0a54ea96593c9f51eb8541493f2e6714c4b",
+              "97fec7f16336262fecd314d40924075c6d4530d7809a54bafb00fdb798a66ea8",
+              "4393d3ae08fbbf0444c207e40a05408c6dd02c7f118024ea47cd4fd8cd4cc261",
+              "fad557589da060f37faf914354062149fe70b76ab3ab2095015ebc6dd864c3ab",
+              "23db9418299826ca685d7e9cdbe656cc053b4848be38980113b310f74e74aa70"
+            ],
+            "logical_index_to_coordinate": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                -1,
+                0,
+                0
+              ],
+              [
+                0,
+                -1,
+                0
+              ],
+              [
+                0,
+                0,
+                -1
+              ],
+              [
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0
+              ],
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                -2,
+                0,
+                0
+              ],
+              [
+                -1,
+                -1,
+                0
+              ],
+              [
+                -1,
+                0,
+                -1
+              ],
+              [
+                -1,
+                0,
+                1
+              ],
+              [
+                -1,
+                1,
+                0
+              ],
+              [
+                0,
+                -2,
+                0
+              ],
+              [
+                0,
+                -1,
+                -1
+              ],
+              [
+                0,
+                -1,
+                1
+              ],
+              [
+                0,
+                0,
+                -2
+              ],
+              [
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                1,
+                -1
+              ],
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                2,
+                0
+              ],
+              [
+                1,
+                -1,
+                0
+              ],
+              [
+                1,
+                0,
+                -1
+              ],
+              [
+                1,
+                0,
+                1
+              ],
+              [
+                1,
+                1,
+                0
+              ],
+              [
+                2,
+                0,
+                0
+              ],
+              [
+                -3,
+                0,
+                0
+              ],
+              [
+                -2,
+                -1,
+                0
+              ],
+              [
+                -2,
+                0,
+                -1
+              ],
+              [
+                -2,
+                0,
+                1
+              ],
+              [
+                -2,
+                1,
+                0
+              ],
+              [
+                -1,
+                -2,
+                0
+              ],
+              [
+                -1,
+                -1,
+                -1
+              ],
+              [
+                -1,
+                -1,
+                1
+              ],
+              [
+                -1,
+                0,
+                -2
+              ],
+              [
+                -1,
+                0,
+                2
+              ],
+              [
+                -1,
+                1,
+                -1
+              ],
+              [
+                -1,
+                1,
+                1
+              ],
+              [
+                -1,
+                2,
+                0
+              ],
+              [
+                0,
+                -3,
+                0
+              ],
+              [
+                0,
+                -2,
+                -1
+              ],
+              [
+                0,
+                -2,
+                1
+              ],
+              [
+                0,
+                -1,
+                -2
+              ],
+              [
+                0,
+                -1,
+                2
+              ],
+              [
+                0,
+                0,
+                -3
+              ],
+              [
+                0,
+                0,
+                3
+              ],
+              [
+                0,
+                1,
+                -2
+              ],
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                0,
+                2,
+                -1
+              ],
+              [
+                0,
+                2,
+                1
+              ],
+              [
+                0,
+                3,
+                0
+              ],
+              [
+                1,
+                -2,
+                0
+              ],
+              [
+                1,
+                -1,
+                -1
+              ],
+              [
+                1,
+                -1,
+                1
+              ],
+              [
+                1,
+                0,
+                -2
+              ],
+              [
+                1,
+                0,
+                2
+              ],
+              [
+                1,
+                1,
+                -1
+              ],
+              [
+                1,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                0
+              ],
+              [
+                2,
+                -1,
+                0
+              ],
+              [
+                2,
+                0,
+                -1
+              ],
+              [
+                2,
+                0,
+                1
+              ],
+              [
+                2,
+                1,
+                0
+              ],
+              [
+                3,
+                0,
+                0
+              ],
+              [
+                -3,
+                -1,
+                0
+              ],
+              [
+                -3,
+                0,
+                -1
+              ],
+              [
+                -3,
+                0,
+                1
+              ],
+              [
+                -3,
+                1,
+                0
+              ],
+              [
+                -2,
+                -2,
+                0
+              ],
+              [
+                -2,
+                -1,
+                -1
+              ],
+              [
+                -2,
+                -1,
+                1
+              ],
+              [
+                -2,
+                0,
+                -2
+              ],
+              [
+                -2,
+                0,
+                2
+              ],
+              [
+                -2,
+                1,
+                -1
+              ],
+              [
+                -2,
+                1,
+                1
+              ],
+              [
+                -2,
+                2,
+                0
+              ],
+              [
+                -1,
+                -3,
+                0
+              ],
+              [
+                -1,
+                -2,
+                -1
+              ],
+              [
+                -1,
+                -2,
+                1
+              ],
+              [
+                -1,
+                -1,
+                -2
+              ],
+              [
+                -1,
+                -1,
+                2
+              ],
+              [
+                -1,
+                0,
+                -3
+              ],
+              [
+                -1,
+                0,
+                3
+              ],
+              [
+                -1,
+                1,
+                -2
+              ],
+              [
+                -1,
+                1,
+                2
+              ],
+              [
+                -1,
+                2,
+                -1
+              ],
+              [
+                -1,
+                2,
+                1
+              ],
+              [
+                -1,
+                3,
+                0
+              ],
+              [
+                0,
+                -3,
+                -1
+              ],
+              [
+                0,
+                -3,
+                1
+              ],
+              [
+                0,
+                -2,
+                -2
+              ],
+              [
+                0,
+                -2,
+                2
+              ],
+              [
+                0,
+                -1,
+                -3
+              ],
+              [
+                0,
+                -1,
+                3
+              ],
+              [
+                0,
+                1,
+                -3
+              ],
+              [
+                0,
+                1,
+                3
+              ],
+              [
+                0,
+                2,
+                -2
+              ],
+              [
+                0,
+                2,
+                2
+              ],
+              [
+                0,
+                3,
+                -1
+              ],
+              [
+                0,
+                3,
+                1
+              ],
+              [
+                1,
+                -3,
+                0
+              ],
+              [
+                1,
+                -2,
+                -1
+              ],
+              [
+                1,
+                -2,
+                1
+              ],
+              [
+                1,
+                -1,
+                -2
+              ],
+              [
+                1,
+                -1,
+                2
+              ],
+              [
+                1,
+                0,
+                -3
+              ],
+              [
+                1,
+                0,
+                3
+              ],
+              [
+                1,
+                1,
+                -2
+              ],
+              [
+                1,
+                1,
+                2
+              ],
+              [
+                1,
+                2,
+                -1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                0
+              ],
+              [
+                2,
+                -2,
+                0
+              ],
+              [
+                2,
+                -1,
+                -1
+              ],
+              [
+                2,
+                -1,
+                1
+              ],
+              [
+                2,
+                0,
+                -2
+              ],
+              [
+                2,
+                0,
+                2
+              ],
+              [
+                2,
+                1,
+                -1
+              ],
+              [
+                2,
+                1,
+                1
+              ],
+              [
+                2,
+                2,
+                0
+              ],
+              [
+                3,
+                -1,
+                0
+              ],
+              [
+                3,
+                0,
+                -1
+              ],
+              [
+                3,
+                0,
+                1
+              ],
+              [
+                3,
+                1,
+                0
+              ],
+              [
+                -3,
+                -2,
+                0
+              ],
+              [
+                -3,
+                -1,
+                -1
+              ],
+              [
+                -3,
+                -1,
+                1
+              ],
+              [
+                -3,
+                0,
+                -2
+              ],
+              [
+                -3,
+                0,
+                2
+              ],
+              [
+                -3,
+                1,
+                -1
+              ],
+              [
+                -3,
+                1,
+                1
+              ],
+              [
+                -3,
+                2,
+                0
+              ],
+              [
+                -2,
+                -3,
+                0
+              ],
+              [
+                -2,
+                -2,
+                -1
+              ],
+              [
+                -2,
+                -2,
+                1
+              ],
+              [
+                -2,
+                -1,
+                -2
+              ],
+              [
+                -2,
+                -1,
+                2
+              ]
+            ],
+            "maximum_active_L1_diameter": 9,
+            "placement_rule": "logical M2 index i maps to the i-th [-3,3]^3 point ordered by (L1 norm, x, y, z)",
+            "radius": 3,
+            "reserved_cube_all24_invariant": true,
+            "reserved_supercell_M2": 343,
+            "translated_normalized_layout_digests": [
+              "4d3e3d54abfca81c54ca003a30fe9fab1064119131d41872d61868745e122b4b",
+              "4d3e3d54abfca81c54ca003a30fe9fab1064119131d41872d61868745e122b4b",
+              "4d3e3d54abfca81c54ca003a30fe9fab1064119131d41872d61868745e122b4b"
+            ],
+            "translation_invariant": true
+          },
+          "literal_one_two_M2_calls_before_routing": 52,
+          "logical_gate_counts": {
+            "CNOT": 49,
+            "TOFFOLI": 0,
+            "X": 3
+          },
+          "logical_max_support_M2": 2,
+          "lowered_max_support_M2": 2,
+          "maximum_logical_operation_L1_diameter": 9,
+          "nearest_neighbor_calls_upper_bound": 1718
+        }
+      },
+      "route": "C_relational_domain_wall",
+      "rows": {
+        "biased_phase_product": {
+          "basis_failures": 0,
+          "capacity": 4,
+          "central_reduced_purity": 0.9960074173706647,
+          "central_reduced_rank": 7,
+          "deletions_detected": 40,
+          "deletions_expected": 40,
+          "direction_weight_spread": 0.00031243914049675103,
+          "domain_wall_M2": 24,
+          "none_plus_six_weights": [
+            0.9980013381268109,
+            0.00039090563291196295,
+            0.0004552614071487795,
+            0.00044930603822959225,
+            0.0003398412810324128,
+            0.0002205252472140202,
+            0.00014282226665202847
+          ],
+          "normalization_residual": 3.3306690738754696e-16,
+          "proper_cubic_direction_symmetric": false,
+          "ray_length": 4,
+          "split": "held_blinded"
+        },
+        "product_z0": {
+          "basis_failures": 0,
+          "capacity": 3,
+          "central_reduced_purity": 0.9912334680557251,
+          "central_reduced_rank": 7,
+          "deletions_detected": 34,
+          "deletions_expected": 34,
+          "direction_weight_spread": 0.0,
+          "domain_wall_M2": 18,
+          "none_plus_six_weights": [
+            0.99560546875,
+            0.0007324218750000015,
+            0.0007324218750000015,
+            0.0007324218750000015,
+            0.0007324218750000015,
+            0.0007324218750000015,
+            0.0007324218750000015
+          ],
+          "normalization_residual": 0.0,
+          "proper_cubic_direction_symmetric": true,
+          "ray_length": 3,
+          "split": "train"
+        },
+        "six_site_GHZ": {
+          "basis_failures": 0,
+          "capacity": 6,
+          "central_reduced_purity": 0.6796817454931826,
+          "central_reduced_rank": 7,
+          "deletions_detected": 52,
+          "deletions_expected": 52,
+          "direction_weight_spread": 6.938893903907228e-18,
+          "domain_wall_M2": 36,
+          "none_plus_six_weights": [
+            0.8211899326351648,
+            0.029801677894139122,
+            0.029801677894139122,
+            0.02980167789413913,
+            0.02980167789413913,
+            0.02980167789413913,
+            0.02980167789413913
+          ],
+          "normalization_residual": 4.440892098500626e-16,
+          "proper_cubic_direction_symmetric": true,
+          "ray_length": 6,
+          "split": "held_blinded_nonproduct"
+        }
+      },
+      "saturation_policy": "spent wall/center is fixed; finite rays are not autonomously renewed",
+      "spent_fixed_code_failures": 0
+    }
+  },
+  "runner_sha256": "91ae562030f6906b8762828dd92795aaa8771ce6c60da6371f50bc8f701dd823",
+  "shared_route_independent_obstruction": false,
+  "status": "three symmetry-neutral order-parameter constructions; exact coherent objective token not met",
+  "strict_full_framework_terminal_met": false,
+  "strongest_constructive_result": "a 121-active-M2 finite reversible triple-repetition order-parameter latch correcting every single-bit error while exporting all Cycle661 sectors",
+  "supplied_structure_inventory": {
+    "derived": [
+      "basis-responsive deterministic latch",
+      "triple-repetition one-error correction",
+      "six-ray wall transport",
+      "7-bit outgoing sector exhaust",
+      "branchwise Cycle669 adapters",
+      "all24/all576",
+      "inverse/deletion/domain/saturation"
+    ],
+    "open": [
+      "one global objective value on coherent input",
+      "thermodynamic order-parameter restriction theorem",
+      "autonomous non-erasing renewal",
+      "nature-law selection",
+      "framework Record",
+      "Born/empirical law",
+      "physical time/rate",
+      "source/gravity"
+    ],
+    "supplied": [
+      "Cycle661 coherent fixture/QCA",
+      "neutral center and blank auxiliary product states",
+      "one ready bit",
+      "finite radius-3 chart",
+      "finite ray lengths",
+      "Cycle669 root/next seeds",
+      "compile-time frame chart"
+    ]
+  },
+  "target_contract_candidate_terminal_met": false,
+  "tests_failed": 0,
+  "tests_passed": 8
+}

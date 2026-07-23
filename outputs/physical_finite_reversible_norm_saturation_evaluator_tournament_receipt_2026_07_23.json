@@ -1,13 +1,13 @@
 {
  "actuation_max_dP": {
-  "0.0:256": 0.0005692344765629159,
-  "0.0:64": 0.0022347858052241404,
-  "0.5:256": 0.0003714455767152777,
-  "0.5:64": 0.0018424604997264032,
-  "1.0:256": 0.000404173155264061,
-  "1.0:64": 0.001578371415237756,
-  "2.0:256": 0.00016546197047558574,
-  "2.0:64": 0.0009859933139380814
+  "0.0:256": 0.0003128154987144735,
+  "0.0:64": 0.0018093833616316737,
+  "0.5:256": 0.0003840081369065624,
+  "0.5:64": 0.0012722306909146233,
+  "1.0:256": 0.00019586084192175016,
+  "1.0:64": 0.0012722306909146233,
+  "2.0:256": 5.297418983119017e-05,
+  "2.0:64": 0.0007797085674785993
  },
  "audit": "unset",
  "authority": "none",
@@ -32,12 +32,13 @@
     "1",
     "2"
    ],
-   "den_bound": 820,
+   "analytic_raw_denominator_bound": 1080,
    "kappa": [
     "1/2",
     "1",
     "2"
    ],
+   "observed_max_denominator": 410,
    "r0": "3/10",
    "rho": "-1/5",
    "sigma": [
@@ -66,12 +67,17 @@
    ],
    "lambda_placement": "input-side, faithful to the c626 member loop (lambda scales the orbit before normalization; magnitude cancels only at eps=0)",
    "n_orbits_thinned": 3,
+   "selected_orbits": [
+    "L3:TRAIN_XY:(2, 1, 0)",
+    "L6:TRAIN_XY:(2, 1, 0)",
+    "L7:TRAIN_XY:(2, 1, 0)"
+   ],
    "sigma": [
     -1,
     1
    ],
    "t": 0.7,
-   "thinning_declared": "orbit set thinned to one representative per length; full sigma/kappa/eps/lambda axes preserved"
+   "thinning_declared": "first valid orbit in frozen enumeration order for each declared length; full sigma/kappa/eps/lambda axes preserved"
   },
   "bounds": {
    "B": {
@@ -138,8 +144,17 @@
   },
   "reduced_instance": {
    "Q": 16,
-   "bijectivity": "structural (per-gate exhaustive + composition); reduced enumerated in full; full instance NOT exhaustive",
-   "n_inputs": 27
+   "enumeration_scope": "reduced input fixture enumerated in full; micro oracle permutation materialized in full; full 24-register instance NOT exhaustive",
+   "n_inputs": 27,
+   "reversible_scope": "exact oracle embedding; represented square/accumulator work registers restore exactly; certified-round control logic is not gate-compiled"
+  },
+  "support_two_scope": {
+   "covered": "output-register modular rotations",
+   "not_covered": "reciprocal-sqrt control logic, work-register arithmetic, Route-B gate compilation, or a full controlled-evaluator resource bound",
+   "output_rotation_budget": {
+    "64": 198144,
+    "256": 3151872
+   }
   },
   "tol": {
    "bound_slack": 1e-12,
@@ -151,9 +166,10 @@
  },
  "cycle_claim": 680,
  "date": "2026-07-23",
- "elapsed_seconds": 0.16081375000067055,
+ "elapsed_seconds": 0.2330026249983348,
  "firewalls": [
-  "Constructive closure of the Cycle-626 finite-evaluator wall ON THE DECLARED LATTICES ONLY; arbitrary-precision and continuum claims NOT made.",
+  "Constructive finite-arithmetic and reversible-oracle support ON THE DECLARED LATTICES ONLY; the full gate-level finite-evaluator compiler, arbitrary-precision evaluator, and continuum evaluator remain open.",
+  "Support-two lowering and its SWAP budget cover output-register rotations only; reciprocal-sqrt control logic, work-register arithmetic, and Route-B gate compilation are not supplied.",
   "No sign, scale, regulator, saturation-scale, lambda, or c is selected; the full grid survives; branch selection remains open.",
   "No shared-code 3/4 DELAY association is derived; the PR5557 acceptance harness is untouched; the 5/4 ADVANCE count-edit interface is not driven.",
   "No energy, stress, source, gravity, causal-rate, event, Record, or Born claim. A contact-sensitive response is not energy, stress, source, or gravity.",
@@ -161,15 +177,17 @@
  ],
  "inventory": {
   "derived": [
-   "certified integer reciprocal-sqrt-multiply and garbage-free reversible normalizer",
+   "certified integer reciprocal-sqrt-multiply and exact reversible-oracle embedding with represented work registers restored",
    "exact all-24 covariance and 576 label-perm products of the finite evaluator",
    "derived quantization bound B(eps,Q) with validity/tightness/scaling",
-   "exact-rational saturation with denominator census and controls",
+   "exact-rational saturation with denominator census, analytic raw-denominator bound, and controls",
    "materialised integer permutation matrix: bijection/unitarity/linearity/unentanglement",
-   "support-two rail-SWAP recomposition and full-instance budget",
+   "support-two output-rail SWAP recomposition and output-rotation budget",
    "actuation endpoint match within a derived propagated bound"
   ],
   "open": [
+   "gate-level reversible compilation of reciprocal-sqrt control logic, work-register arithmetic, and the Route-B rational map",
+   "support-two lowering and resource budget for the full controlled evaluator",
    "arbitrary-precision / continuum evaluator and non-lattice inputs",
    "selection of sign/scale/regulator/saturation-scale/lambda/c (full grid survives)",
    "endogenous source profiles and locally-enforced value-basis domain",
@@ -195,9 +213,9 @@
  "pass": true,
  "pins": {
   "c576_files": {
-   "docs/work_history/repo/review_feedback/PHYSICAL_DYNAMICAL_METRIC_SOURCE_LAW_BRIDGE_TOURNAMENT_CYCLE576_NOTE_2026-07-22.md": "2d5650c57d5518e274803f5c511886981c8572b553dda926739cc98199939c20",
-   "outputs/physical_dynamical_metric_source_law_bridge_tournament_cycle576_receipt_2026_07_22.json": "06456c1443f5464949f40d81e9f1c6316b3e4e8405415b5b0035e39d4b88c3bd",
-   "scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py": "53d60249420994818e7517645ad4157e1e11c7dc184fbf89b2838e94b53977d0"
+   "docs/work_history/repo/review_feedback/PHYSICAL_DYNAMICAL_METRIC_SOURCE_LAW_BRIDGE_TOURNAMENT_CYCLE576_NOTE_2026-07-22.md": "5822c14b74de606d302beb637e03dd0a30968e6a7bf120723eb3da16e09e6768",
+   "outputs/physical_dynamical_metric_source_law_bridge_tournament_cycle576_receipt_2026_07_22.json": "bc719ca8d88662e082fd63db8f524d9af94749012208b5a76f2ea6200f305c3a",
+   "scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py": "7980bff1293202656afeefb46c7c7dcf8145e748004b541d3619f19896c79ea7"
   },
   "campaign_anchors": {
    "c626_note": "1346e9c5aec6206642e64059eeff0b49d59df33f8fe0584c7c8537d3e2760893",
@@ -216,7 +234,7 @@
  },
  "rows": [
   {
-   "detail": "{'module_sha': '53d60249420994818e7517645ad4157e1e11c7dc184fbf89b2838e94b53977d0', 'observed': {'scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py': '53d60249420994818e7517645ad4157e1e11c7dc184fbf89b2838e94b53977d0', 'docs/work_history/repo/review_feedback/PHYSICAL_DYNAMICAL_METRIC_SOURCE_LAW_BRIDGE_TOURNAMENT_CYCLE576_NOTE_2026-07-22.md': '2d5650c57d5518e274803",
+   "detail": "{'module_sha': '7980bff1293202656afeefb46c7c7dcf8145e748004b541d3619f19896c79ea7', 'observed': {'scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py': '7980bff1293202656afeefb46c7c7dcf8145e748004b541d3619f19896c79ea7', 'docs/work_history/repo/review_feedback/PHYSICAL_DYNAMICAL_METRIC_SOURCE_LAW_BRIDGE_TOURNAMENT_CYCLE576_NOTE_2026-07-22.md': '5822c14b74de606d302be",
    "label": "01 pins/c576_script_and_note_and_receipt_sha256",
    "pass": true
   },
@@ -237,7 +255,7 @@
   },
   {
    "detail": "{'n_orbits': 24, 'min_norm': 0.209199, 'max_norm': 1.154701, 'FLOOR': 0.1}",
-   "label": "05 population_built_and_floor_below_min_orbit_norm",
+   "label": "05 exact_24_orbit_population_built_and_floor_below_min_norm",
    "pass": true
   },
   {
@@ -266,8 +284,8 @@
    "pass": true
   },
   {
-   "detail": "{'kinds': ['acc_add', 'acc_add_const', 'acc_add_const_inv', 'acc_add_inv', 'add_mod', 'squarer', 'squarer_inv'], 'gates': 122}",
-   "label": "09 structural_every_gate_is_a_verified_primitive_kind",
+   "detail": "{'kinds': ['acc_add', 'acc_add_const', 'acc_add_const_inv', 'acc_add_inv', 'add_mod', 'squarer', 'squarer_inv'], 'operations': 122, 'scope': 'represented square/accumulator/output operations only; certified-round control logic is not gate-compiled'}",
+   "label": "09 every_explicit_trace_operation_is_a_verified_primitive_kind",
    "pass": true
   },
   {
@@ -297,12 +315,12 @@
   },
   {
    "detail": "{'rotations': 9, 'max_word_len': 20, 'word_len_bound': 36}",
-   "label": "15a support_two_all_micro_rotations_recompose_exactly",
+   "label": "15a support_two_all_micro_output_rotations_recompose_exactly",
    "pass": true
   },
   {
-   "detail": "{'budget': {64: 198144, 256: 3151872}, 'cap': 10000000}",
-   "label": "15b support_two_full_instance_budget_from_trace_within_cap",
+   "detail": "{'output_rotation_budget': {64: 198144, 256: 3151872}, 'cap': 10000000, 'excluded': 'reciprocal-sqrt control logic, work-register arithmetic, and Route-B compilation'}",
+   "label": "15b support_two_output_rotation_budget_from_trace_within_cap",
    "pass": true
   },
   {
@@ -311,8 +329,8 @@
    "pass": true
   },
   {
-   "detail": "{'observed_max_den': 410, 'declared_bound': 820}",
-   "label": "17 E2_denominator_census_within_declared_bound",
+   "detail": "{'observed_max_den': 410, 'analytic_raw_den_bound': 1080}",
+   "label": "17 E2_denominator_census_within_analytic_raw_bound",
    "pass": true
   },
   {
@@ -336,8 +354,8 @@
    "pass": true
   },
   {
-   "detail": "{'comparisons': 1152}",
-   "label": "22 covariance_evaluator_commutes_all24_frames_integer_exact",
+   "detail": "{'comparisons': 4608}",
+   "label": "22 covariance_all24_population_orbits_all24_frames_integer_exact",
    "pass": true
   },
   {
@@ -361,7 +379,7 @@
    "pass": true
   },
   {
-   "detail": "{'max_dP': {'0.0:64': 0.00223479, '0.5:64': 0.00184246, '1.0:64': 0.00157837, '2.0:64': 0.00098599, '0.0:256': 0.00056923, '0.5:256': 0.00037145, '1.0:256': 0.00040417, '2.0:256': 0.00016546}, 'lambda_scaled_inputs_stayed_above_floor': True}",
+   "detail": "{'max_dP': {'0.0:64': 0.00180938, '0.5:64': 0.00127223, '1.0:64': 0.00127223, '2.0:64': 0.00077971, '0.0:256': 0.00031282, '0.5:256': 0.00038401, '1.0:256': 0.00019586, '2.0:256': 5.297e-05}, 'lambda_scaled_inputs_stayed_above_floor': True, 'selected_orbits': ['L3:TRAIN_XY:(2, 1, 0)', 'L6:TRAIN_XY:(2, 1, 0)', 'L7:TRAIN_XY:(2, 1, 0)']}",
    "label": "27 actuation_endpoint_finite_matches_reference_within_propagated_bound",
    "pass": true
   },

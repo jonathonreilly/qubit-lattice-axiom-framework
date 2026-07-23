@@ -1,28 +1,32 @@
 #!/usr/bin/env python3
-"""Finite-valued reversible local norm/saturation evaluator tournament.
+"""Finite-valued norm/saturation arithmetic and reversible-oracle tournament.
 
 Descriptive filename target (NO cycle number in filenames; owner directive):
     scripts/physical_finite_reversible_norm_saturation_evaluator_tournament_2026_07_23.py
 
-Frozen question (SPEC A). Can the continuous arithmetic of the campaign
-Cycle-626 Route-A normalizer and Route-B saturation be replaced by an EXECUTED
-finite-valued, reversible, local evaluator on a declared value lattice --
-superposition-safe on the value-basis code space, garbage-free, all-24-frame
-covariant, lowered to a support-two rail-permutation word -- with a CERTIFIED
+Frozen question (SPEC A). How much of the continuous arithmetic of the campaign
+Cycle-626 Route-A normalizer and Route-B saturation can be replaced by executed
+finite-valued arithmetic on a declared value lattice, with an exact reversible
+oracle embedding on the value-basis code space, all-24-frame covariance,
+support-two lowering of the output-register rotations, and a certified
 quantization bound against the continuous reference evaluated on the actual
-landed Cycle-576 deficits, without changing the audited actuation interface and
-without selecting any sign, scale, regulator, or receiver association?
+landed Cycle-576 deficits, without changing the exact-pinned, audit-unset
+actuation interface and without selecting any sign, scale, regulator, or
+receiver association?
 
 This is a repo-side CONSTRUCTIVE evaluator tournament. It imports the landed
 Cycle-576 module read-only (pinned sha256), builds the 24-frame deficit orbit
 from c576 `source_profiles` under the c576 real-space frame idiom, and runs a
-finite integer normalizer + an exact-rational saturation, with reversibility,
-superposition-safety, covariance, a derived quantization bound, and the c626
-actuation endpoint comparison. Every check row is a COMPUTED condition.
+finite integer normalizer + an exact-rational saturation, with an explicitly
+materialized reversible oracle permutation, covariance, a derived quantization
+bound, and the c626 actuation endpoint comparison. It does not compile the
+reciprocal-square-root control logic or Route-B arithmetic into a gate-level
+reversible circuit. Every check row is a COMPUTED condition.
 
 Firewalls (interpretation guards; also written to the receipt):
-- Constructive closure of the Cycle-626 finite-evaluator wall ON THE DECLARED
-  LATTICES ONLY; arbitrary-precision and continuum claims are NOT made.
+- Constructive finite-arithmetic and reversible-oracle support ON THE DECLARED
+  LATTICES ONLY; the full gate-level finite-evaluator compiler, arbitrary-
+  precision evaluator, and continuum evaluator remain open.
 - No sign, scale, regulator, saturation-scale, lambda, or c is selected; the
   full grid survives; branch selection remains open.
 - No shared-code 3/4 DELAY association is derived; the PR5557 acceptance harness
@@ -44,8 +48,9 @@ Acceptance duties (for the supervisor, who owns all verdicts):
 
 Preregistered falsifiers (each maps to a named FAIL row):
 - F1 garbage-retention: an uncompute-skipping variant MUST fail ancilla
-  cleanliness with a nonzero ancilla-correlation witness on a superposition
-  (row PASSES when the probe FAILS).
+  cleanliness with a nonzero garbage witness on a superposition (row PASSES
+  when the probe FAILS). This probe does not claim entanglement when both
+  selected inputs carry the same retained accumulator value.
 - F2 irreversibility: a truncating variant without disambiguating ancilla MUST
   produce an explicit collision-pair witness in the bijection check.
 - F3 zero-branch: the all-zero orbit through the FULL circuit yields exactly
@@ -108,11 +113,11 @@ NOTE = ROOT / "docs" / "work_history" / "repo" / "review_feedback" / (
 PINS = {
     "c576_files": {
         "scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py":
-            "53d60249420994818e7517645ad4157e1e11c7dc184fbf89b2838e94b53977d0",
+            "7980bff1293202656afeefb46c7c7dcf8145e748004b541d3619f19896c79ea7",
         "docs/work_history/repo/review_feedback/PHYSICAL_DYNAMICAL_METRIC_SOURCE_LAW_BRIDGE_TOURNAMENT_CYCLE576_NOTE_2026-07-22.md":
-            "2d5650c57d5518e274803f5c511886981c8572b553dda926739cc98199939c20",
+            "5822c14b74de606d302beb637e03dd0a30968e6a7bf120723eb3da16e09e6768",
         "outputs/physical_dynamical_metric_source_law_bridge_tournament_cycle576_receipt_2026_07_22.json":
-            "06456c1443f5464949f40d81e9f1c6316b3e4e8405415b5b0035e39d4b88c3bd",
+            "bc719ca8d88662e082fd63db8f524d9af94749012208b5a76f2ea6200f305c3a",
     },
     # Read-only campaign evidence anchors: transcribed, NEVER read from disk,
     # never imported. Context anchors for the note and coarse consistency only;
@@ -155,8 +160,19 @@ E2_R0 = Fraction(3, 10)            # declared fixture value (see uncertainty U3)
 E2_RHO = Fraction(-1, 5)           # declared fixture value (see uncertainty U3)
 E2_D0 = 10                         # common denominator of r-grid, r0, rho
 E2_RGRID = tuple(Fraction(t, 10) for t in range(-20, 21))
-E2_MAX_P = 41                      # max numerator of (1+alpha|u|) over the grid (derived)
-E2_DEN_BOUND = 2 * E2_D0 * E2_MAX_P  # = 820, declared denominator bound (memo section 2)
+# Write r=t/10, rho=-2/10, n=t+2, alpha=A/2, kappa=K/2 with
+# A,K in {1,2,4}.  The nonlinear term has raw denominator
+# 2(20+A|n|), so after adding r0=3/10 the reduced denominator divides
+# lcm(10, 2(20+A|n|)).  This is an analytic upper bound independent of
+# the saturation implementation under test; its maximum on the frozen grid is
+# 1080.  (The exact output census below observes the sharper reduced maximum.)
+E2_U_NUMS = tuple(t + 2 for t in range(-20, 21))
+E2_ALPHA_TWICE = (1, 2, 4)
+E2_DEN_BOUND = max(
+    math.lcm(E2_D0, 2 * (2 * E2_D0 + A * abs(n)))
+    for A in E2_ALPHA_TWICE
+    for n in E2_U_NUMS
+)
 
 # ----- actuation grid (unchanged c626 Route-A interface) -----
 ACT_B = 0.17                       # reuse c576 SOURCE_COUPLING magnitude
@@ -249,10 +265,13 @@ def certified_round(B: int, M: int) -> tuple[int, bool]:
 
 
 # ---------------------------------------------------------------------------
-# The executable garbage-free reversible normalizer (Bennett compute/uncompute).
-# Input numerators k retained; ancilla (sq, M) restored to 0; output written by
-# modular add into result registers (m = 2Q+1). Returns the output numerators,
-# the post-uncompute ancilla residual (0 == clean), a gate-kind trace, and info.
+# Executed finite normalizer with an exact reversible-oracle embedding.
+# Input numerators k are retained; the explicitly represented (sq, M) work
+# registers are restored to 0; output is written by modular add into result
+# registers (m = 2Q+1). The reciprocal-square-root selection is evaluated by
+# certified_round but is not itself compiled into reversible primitive gates.
+# Returns the output numerators, the represented post-uncompute ancilla
+# residual (0 == clean), an explicit-operation trace, and info.
 # ---------------------------------------------------------------------------
 def reversible_normalize(k: list[int], Q: int, eQ: int, keep_garbage: bool = False):
     n = len(k)
@@ -539,7 +558,8 @@ def main() -> int:
     required_note = (
         "authority: none", "audit: unset", "finite", "reversible", "lattice",
         "quantization bound", "all 24", "576", "support-two", "garbage-free",
-        "not gravity", "not physical stress", "no axiom", "supplied", "open",
+        "oracle embedding", "output-register rotations", "not gravity",
+        "not physical stress", "no axiom", "supplied", "open",
     )
     note_present = NOTE.exists()
     note_body = " ".join(NOTE.read_text(encoding="utf-8").lower().split()) if note_present else ""
@@ -573,8 +593,8 @@ def main() -> int:
     population = build_population()
     min_norm = min(o["norm"] for o in population)
     max_norm = max(o["norm"] for o in population)
-    check("05 population_built_and_floor_below_min_orbit_norm",
-          len(population) >= 6 and FLOOR < min_norm and FLOOR > 1.0 / max(Q_SIZES),
+    check("05 exact_24_orbit_population_built_and_floor_below_min_norm",
+          len(population) == 24 and FLOOR < min_norm and FLOOR > 1.0 / max(Q_SIZES),
           {"n_orbits": len(population), "min_norm": round(min_norm, 6),
            "max_norm": round(max_norm, 6), "FLOOR": FLOOR})
 
@@ -661,14 +681,16 @@ def main() -> int:
     check("08c primitive_accumulator_add_bijective",
           acc_ok and acc_states <= (1 << 20), {"states": acc_states})
 
-    # ---- 9. structural composition row ------------------------------------
+    # ---- 9. explicit-operation composition row ----------------------------
     known_kinds = {"squarer", "acc_add", "acc_add_const", "add_mod",
                    "acc_add_const_inv", "acc_add_inv", "squarer_inv"}
     _, _, trace_sample, _ = reversible_normalize([1, 0, 2] + [0] * 21, 64, 32)
     struct_ok = all(kind in known_kinds for kind in trace_sample)
-    check("09 structural_every_gate_is_a_verified_primitive_kind",
+    check("09 every_explicit_trace_operation_is_a_verified_primitive_kind",
           struct_ok and len(trace_sample) > 0,
-          {"kinds": sorted(set(trace_sample)), "gates": len(trace_sample)})
+          {"kinds": sorted(set(trace_sample)), "operations": len(trace_sample),
+           "scope": "represented square/accumulator/output operations only; "
+                    "certified-round control logic is not gate-compiled"})
 
     # ---- 10. reduced fixture (3 regs, Q=16): enumerate + ancilla restored --
     reduced_inputs = list(product(REDUCED_ALPHABET, repeat=3))
@@ -768,7 +790,7 @@ def main() -> int:
           reten_wnz > TOL["float_match"] and clean_wnz == 0.0,
           {"retention_weight_M_nonzero": reten_wnz, "clean_weight_M_nonzero": clean_wnz})
 
-    # ---- 15. support-two lowering -----------------------------------------
+    # ---- 15. support-two lowering of output-register rotations ------------
     # 15a: EVERY modular rotation add-by-j on the micro register decomposes into
     # a word of adjacent rail transpositions with exact recomposition and word
     # length <= m-1 (exhaustive over all j in [0, m)).
@@ -782,13 +804,13 @@ def main() -> int:
         if apply_word(word, m_micro) != rot:
             rot_ok = False
     per_gate_bound_holds = rot_max_word <= m_micro * (m_micro - 1) // 2
-    check("15a support_two_all_micro_rotations_recompose_exactly",
+    check("15a support_two_all_micro_output_rotations_recompose_exactly",
           rot_ok and per_gate_bound_holds,
           {"rotations": m_micro, "max_word_len": rot_max_word,
            "word_len_bound": m_micro * (m_micro - 1) // 2})
 
-    # 15b: full-instance budget DERIVED from the actual circuit trace: count the
-    # add_mod gates in a genuine full-instance trace and multiply by the
+    # 15b: output-rotation budget derived from the explicit-operation trace:
+    # count add_mod operations in a full-instance trace and multiply by the
     # adjacent-transposition bound m(m-1)/2 for a rail permutation on m rails
     # (the bubble decomposition bound verified exhaustively at micro scale in
     # 15a); compare against the declared cap.
@@ -803,8 +825,10 @@ def main() -> int:
         budget[Q] = n_addmod * per_add
         if not (n_addmod == 24 and budget[Q] <= SWAP_BUDGET_CAP):
             budget_ok = False
-    check("15b support_two_full_instance_budget_from_trace_within_cap",
-          budget_ok, {"budget": budget, "cap": SWAP_BUDGET_CAP})
+    check("15b support_two_output_rotation_budget_from_trace_within_cap",
+          budget_ok, {"output_rotation_budget": budget, "cap": SWAP_BUDGET_CAP,
+                      "excluded": "reciprocal-sqrt control logic, work-register "
+                                  "arithmetic, and Route-B compilation"})
 
     # ---- 16-18. E2 saturation, exact rational -----------------------------
     e2_inject_ok = True
@@ -820,9 +844,10 @@ def main() -> int:
     check("16 E2_saturation_injective_over_grid_bijection_witness",
           e2_inject_ok, {"grid": len(E2_SIGMA) * len(E2_KAPPA) * len(E2_ALPHA),
                          "rvals": len(E2_RGRID)})
-    check("17 E2_denominator_census_within_declared_bound",
-          e2_max_den <= E2_DEN_BOUND, {"observed_max_den": e2_max_den,
-                                       "declared_bound": E2_DEN_BOUND})
+    check("17 E2_denominator_census_within_analytic_raw_bound",
+          E2_DEN_BOUND == 1080 and e2_max_den <= E2_DEN_BOUND,
+          {"observed_max_den": e2_max_den,
+           "analytic_raw_den_bound": E2_DEN_BOUND})
     zero_in_ok = all(saturate(E2_RHO, s, k, a) == E2_R0
                      for s in E2_SIGMA for k in E2_KAPPA for a in E2_ALPHA)
     recv_zero_ok = all(saturate(r, s, Fraction(0), a) == E2_R0
@@ -876,7 +901,7 @@ def main() -> int:
     # ---- 22. covariance: finite evaluator commutes with all 24 frame perms -
     cov_ok = True
     cov_checked = 0
-    for orbit in population[:ACT_N_ORBITS + 3]:
+    for orbit in population:
         for Q in Q_SIZES:
             K_max = K_MAX_FACTOR * Q
             k = quantize(orbit["d"], Q, K_max)
@@ -890,7 +915,7 @@ def main() -> int:
                     cov_checked += 1
                     if jp != expected:
                         cov_ok = False
-    check("22 covariance_evaluator_commutes_all24_frames_integer_exact",
+    check("22 covariance_all24_population_orbits_all24_frames_integer_exact",
           cov_ok and cov_checked > 0, {"comparisons": cov_checked})
 
     # ---- 23. F3 zero-branch, F4 below-floor refusal -----------------------
@@ -968,7 +993,22 @@ def main() -> int:
     # the finite evaluator and the continuous reference is lam_sign*lam_mag*d;
     # the actuation coupling carries only b*sigma*kappa. For eps=0 the lambda
     # magnitude cancels in the normalizer; for eps>0 it does not (physical axis).
-    act_orbits = population[:ACT_N_ORBITS]
+    # Frozen thinning rule: the first valid orbit in the declared enumeration
+    # order for each lattice length.  Do not use population[:3], which would
+    # select three L=3 orbits rather than one representative per length.
+    act_orbits = []
+    for L in POP_LENGTHS:
+        selected = next(
+            (orbit for orbit in population if orbit["label"].startswith(f"L{L}:")),
+            None,
+        )
+        if selected is not None:
+            act_orbits.append(selected)
+    act_selection_ok = (
+        len(act_orbits) == ACT_N_ORBITS == len(POP_LENGTHS)
+        and {orbit["label"].split(":", 1)[0] for orbit in act_orbits}
+        == {f"L{L}" for L in POP_LENGTHS}
+    )
     max_dP = {}         # (eps,Q) -> max |P_finite - P_exact|
     coupling_signs = set()
     driven_endpoint_max = 0.0
@@ -1012,9 +1052,10 @@ def main() -> int:
                     continuous_reference(orbit["d"], epsf), 0.0, ACT_T)
                 deleted_endpoint_max = max(deleted_endpoint_max, deleted)
     check("27 actuation_endpoint_finite_matches_reference_within_propagated_bound",
-          act_within_bound and lam_floor_ok and len(max_dP) > 0,
+          act_selection_ok and act_within_bound and lam_floor_ok and len(max_dP) > 0,
           {"max_dP": {f"{e}:{Q}": round(v, 8) for (e, Q), v in max_dP.items()},
-           "lambda_scaled_inputs_stayed_above_floor": lam_floor_ok})
+           "lambda_scaled_inputs_stayed_above_floor": lam_floor_ok,
+           "selected_orbits": [orbit["label"] for orbit in act_orbits]})
     check("28 actuation_both_quadrature_signs_occur",
           coupling_signs == {-1, 1}, {"coupling_signs": sorted(coupling_signs)})
     check("29 actuation_deletion_sensitivity_signal",
@@ -1024,8 +1065,12 @@ def main() -> int:
 
     # ---- 30. firewalls / inventory completeness ---------------------------
     firewalls = [
-        "Constructive closure of the Cycle-626 finite-evaluator wall ON THE "
-        "DECLARED LATTICES ONLY; arbitrary-precision and continuum claims NOT made.",
+        "Constructive finite-arithmetic and reversible-oracle support ON THE "
+        "DECLARED LATTICES ONLY; the full gate-level finite-evaluator compiler, "
+        "arbitrary-precision evaluator, and continuum evaluator remain open.",
+        "Support-two lowering and its SWAP budget cover output-register rotations "
+        "only; reciprocal-sqrt control logic, work-register arithmetic, and Route-B "
+        "gate compilation are not supplied.",
         "No sign, scale, regulator, saturation-scale, lambda, or c is selected; "
         "the full grid survives; branch selection remains open.",
         "No shared-code 3/4 DELAY association is derived; the PR5557 acceptance "
@@ -1043,15 +1088,20 @@ def main() -> int:
             "actuation grid b, t, sigma, kappa, lambda, c; one-excitation block layout",
         ],
         "derived": [
-            "certified integer reciprocal-sqrt-multiply and garbage-free reversible normalizer",
+            "certified integer reciprocal-sqrt-multiply and exact reversible-oracle "
+            "embedding with represented work registers restored",
             "exact all-24 covariance and 576 label-perm products of the finite evaluator",
             "derived quantization bound B(eps,Q) with validity/tightness/scaling",
-            "exact-rational saturation with denominator census and controls",
+            "exact-rational saturation with denominator census, analytic raw-denominator "
+            "bound, and controls",
             "materialised integer permutation matrix: bijection/unitarity/linearity/unentanglement",
-            "support-two rail-SWAP recomposition and full-instance budget",
+            "support-two output-rail SWAP recomposition and output-rotation budget",
             "actuation endpoint match within a derived propagated bound",
         ],
         "open": [
+            "gate-level reversible compilation of reciprocal-sqrt control logic, "
+            "work-register arithmetic, and the Route-B rational map",
+            "support-two lowering and resource budget for the full controlled evaluator",
             "arbitrary-precision / continuum evaluator and non-lattice inputs",
             "selection of sign/scale/regulator/saturation-scale/lambda/c (full grid survives)",
             "endogenous source profiles and locally-enforced value-basis domain",
@@ -1075,7 +1125,8 @@ def main() -> int:
                        "min_orbit_norm": min_norm, "max_orbit_norm": max_norm},
         "E2": {"sigma": list(E2_SIGMA), "kappa": [str(k) for k in E2_KAPPA],
                "alpha": [str(a) for a in E2_ALPHA], "r0": str(E2_R0), "rho": str(E2_RHO),
-               "den_bound": E2_DEN_BOUND},
+               "observed_max_denominator": e2_max_den,
+               "analytic_raw_denominator_bound": E2_DEN_BOUND},
         "actuation": {"b": ACT_B, "t": ACT_T, "kappa": [str(k) for k in ACT_KAPPA],
                       "sigma": list(ACT_SIGMA), "lam_sign": list(ACT_LAM_SIGN),
                       "lam_mag": [str(x) for x in ACT_LAM_MAG], "c": list(ACT_C),
@@ -1086,15 +1137,34 @@ def main() -> int:
                                             "c620.spatial_trace_vector()@q from the unlanded "
                                             "Cycle-620 module; the c grid is not executable "
                                             "off main and no substitute semantics are invented",
-                      "n_orbits_thinned": ACT_N_ORBITS,
-                      "thinning_declared": "orbit set thinned to one representative per length; "
-                                           "full sigma/kappa/eps/lambda axes preserved"},
+                      "n_orbits_thinned": len(act_orbits),
+                      "selected_orbits": [orbit["label"] for orbit in act_orbits],
+                      "thinning_declared": "first valid orbit in frozen enumeration order "
+                                           "for each declared length; full "
+                                           "sigma/kappa/eps/lambda axes preserved"},
         "bounds": {"B": {f"{float(e)}:{Q}": bound_B(float(e), Q)
                          for e in EPS_GRID for Q in Q_SIZES}},
         "micro_instance": {"Q": MICRO_Q, "D": micro["D"]},
-        "reduced_instance": {"Q": REDUCED_Q, "n_inputs": len(reduced_inputs),
-                             "bijectivity": "structural (per-gate exhaustive + composition); "
-                                            "reduced enumerated in full; full instance NOT exhaustive"},
+        "reduced_instance": {
+            "Q": REDUCED_Q,
+            "n_inputs": len(reduced_inputs),
+            "reversible_scope": (
+                "exact oracle embedding; represented square/accumulator work registers "
+                "restore exactly; certified-round control logic is not gate-compiled"
+            ),
+            "enumeration_scope": (
+                "reduced input fixture enumerated in full; micro oracle permutation "
+                "materialized in full; full 24-register instance NOT exhaustive"
+            ),
+        },
+        "support_two_scope": {
+            "covered": "output-register modular rotations",
+            "output_rotation_budget": budget,
+            "not_covered": (
+                "reciprocal-sqrt control logic, work-register arithmetic, Route-B "
+                "gate compilation, or a full controlled-evaluator resource bound"
+            ),
+        },
         "tol": TOL,
     }
     receipt = {
@@ -1123,7 +1193,7 @@ def main() -> int:
                "passes": PASS, "failures": FAIL, "elapsed_seconds": round(elapsed, 3)}
     print("SUMMARY_JSON", json.dumps(summary, sort_keys=True))
     if FAIL == 0:
-        print("RESULT FINITE_REVERSIBLE_NORM_SATURATION_EVALUATOR_CONSTRUCTIVE_POSITIVE")
+        print("RESULT FINITE_NORM_SATURATION_ARITHMETIC_REVERSIBLE_ORACLE_BOUNDED_SUPPORT")
         return 0
     print("RESULT FINITE_REVERSIBLE_NORM_SATURATION_EVALUATOR_TOURNAMENT_FAILED")
     return 1

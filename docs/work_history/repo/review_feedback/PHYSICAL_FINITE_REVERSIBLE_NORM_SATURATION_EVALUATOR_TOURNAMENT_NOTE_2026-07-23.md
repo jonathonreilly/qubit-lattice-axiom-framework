@@ -1,4 +1,4 @@
-# Finite-valued reversible local norm/saturation evaluator tournament
+# Finite-valued norm/saturation arithmetic and reversible-oracle tournament
 
 Date: 2026-07-23
 
@@ -13,22 +13,26 @@ directive; the cycle number appears only in runner, receipt, and note content.
 
 ## Frozen question and conjunctive success gate
 
-Can the supplied continuous arithmetic of the campaign Cycle-626 Route-A
-normalizer and Route-B saturation be replaced by an EXECUTED finite-valued,
-reversible, local evaluator on a declared value lattice — superposition-safe
-on the value-basis code space, garbage-free, all-24-frame covariant, lowered
-to a support-two rail-permutation word — with a certified quantization bound
-against the continuous reference evaluated on the actual landed Cycle-576
-deficit orbits, without changing the audited actuation interface and without
-selecting any sign, scale, regulator, or receiver association?
+How much of the supplied continuous arithmetic of the campaign Cycle-626
+Route-A normalizer and Route-B saturation can be replaced by EXECUTED
+finite-valued arithmetic on a declared value lattice, with an exact reversible
+oracle embedding on the value-basis code space, all-24-frame covariance,
+support-two lowering of the output-register rotations, and a certified
+quantization bound against the continuous reference evaluated on the actual
+landed Cycle-576 deficit orbits, without changing the exact-pinned,
+audit-unset actuation interface and without selecting any sign, scale,
+regulator, or receiver association?
 
-Success was frozen before running and requires all of: exact reversibility
-with ancillae restored exactly; superposition safety as an exact integer
-permutation matrix (unitary, linear, ancilla exactly unentangled); a derived
-(not fitted) quantization bound that is valid on every evaluated input and
-demonstrably informative; an exact zero branch at regulator zero; exact all-24
-covariance with all 576 label-permutation products; and an actuation endpoint
-match within the propagated bound with no refit.
+Success was frozen before running and requires all of: an exact reversible
+oracle embedding with the represented square/accumulator ancillae restored
+exactly; a fully materialized micro integer permutation matrix (unitary,
+linear, ancilla exactly unentangled); a derived (not fitted) quantization bound
+that is valid on every evaluated input and demonstrably informative; an exact
+zero branch at regulator zero; exact all-24 covariance with all 576
+label-permutation products; and an actuation endpoint match within the
+propagated bound with no refit. A gate-level reversible compiler for the
+reciprocal-square-root control logic and Route-B rational arithmetic was not
+part of the executed construction and remains open.
 
 ## Construction
 
@@ -48,47 +52,58 @@ covector, because that choice would smuggle a receiver association.
 E1 (Route-A normalizer, finite): integer squares, accumulator, and a certified
 integer reciprocal-sqrt-multiply — a = round(Q|k|/sqrt(M)) certified by the
 exact integer inequalities 4B^2 < (2a+1)^2 M and (a=0 or (2a-1)^2 M <= 4B^2),
-no float in the certificate — assembled as a garbage-free reversible Bennett
-circuit (compute, modular-add the result into output rails, uncompute; ancilla
-residual exactly 0). The eps=0 zero branch is decided by an exact integer zero
-test and produces the exact zero output with no division on that path. A
-nonzero input below FLOOR is refused with a witness, never silently evaluated.
+no float in the certificate. The executed map is embedded as the exact oracle
+permutation (k,r) -> (k,r+f(k)) on modular output rails. The explicitly
+represented square/accumulator work registers are garbage-free after
+uncomputation, with residual exactly 0. The control logic that selects the
+certified integer a is evaluated by the runner but is not compiled into
+reversible primitive gates. The eps=0 zero branch is decided by an exact
+integer zero test and produces the exact zero output with no division on that
+path. A nonzero input
+below FLOOR is refused with a witness, never silently evaluated.
 
 E2 (Route-B saturation, exact rational): r' = r0 + sigma kappa alpha
 (r-rho)/(1+alpha|r-rho|) evaluated in exact rational arithmetic over the frozen
 sigma/kappa/alpha grid on a 41-point rational r-grid; r0 = 3/10 and rho = -1/5
 are declared fixture constants (the c626 fixture derives its receiver values
 through unlanded campaign modules, so no landed byte source exists for them).
-Observed maximum denominator 410 against the declared derived bound 820;
-zero-input and receiver-zero controls are exact; injectivity over the grid is
-witnessed.
+Observed maximum reduced denominator is 410. Independently of the saturation
+implementation, writing r=t/10, rho=-2/10, alpha=A/2, and kappa=K/2 gives a
+raw nonlinear denominator 2(20+A|t+2|); after adding r0=3/10 the reduced
+denominator divides lcm(10,2(20+A|t+2|)). Its maximum on the frozen grid is
+1080. Zero-input and receiver-zero controls are exact; injectivity over the
+grid is witnessed. This is exact finite rational arithmetic, not a compiled
+reversible Route-B circuit.
 
-Reversibility and superposition safety are established in tiers, stated
-plainly: primitive gates are exhaustively verified bijective on bounded
-domains (modular adders for both m = 2Q+1; the squarer as the pair map
+The reversible-oracle embedding and its explicitly represented work-register
+operations are established in tiers, stated plainly: modular adders are
+exhaustively verified bijective for both m = 2Q+1; the squarer as the pair map
 (k, c) -> (k, c + k^2) exhaustively bijective and exactly inverted; the
 accumulator add); the composition row verifies every gate in the actual
 circuit trace is one of the verified primitive kinds; the reduced fixture
 (3 registers, Q = 16) is enumerated in full with ancillae restored on every
 input and the integer certificate cross-checked against an independent float
-reference; and the micro instance (Q = 4, three registers, full state space
+reference; and the oracle micro instance (Q = 4, three registers, full state space
 D = 78732 with ancilla) is fully materialised as an integer permutation
 matrix — bijection, exact unitarity (P^T P - I has zero nonzeros), linearity
 and norm preservation on seeded complex superpositions, and EXACT ancilla
 unentanglement (amplitude weight on nonzero-ancilla basis states exactly 0.0
 on a superposition of two distinct actual quantized orbits). The full
-24-register instance is verified by compute-then-uncompute identity on every
-population orbit plus adversarial boundary inputs; full-instance bijectivity
-is structural (per-gate exhaustive + composition), NOT exhaustive, and the
-receipt says so.
+24-register instance is evaluated with the represented work registers restored
+on every population orbit plus adversarial boundary inputs. Full oracle
+bijectivity follows from retaining k and modularly adding f(k) to the output
+register; the full state space is NOT exhaustively materialized. This does not
+prove a gate-level compiler for the certified-round selection logic.
 
-Support-two lowering: every modular rotation add-by-j on the micro register
+Support-two output-rotation lowering: every modular rotation add-by-j on the micro register
 decomposes into adjacent rail transpositions with exact recomposition
 (exhaustive over all j; max word length within the m(m-1)/2 bound), matching
 the campaign unary idiom in which a modular increment is a SWAP word. The
-full-instance SWAP budget is DERIVED from the actual circuit trace (24
-modular adds per evaluation) times the verified per-rotation bound: 198,144
-(Q=64) and 3,151,872 (Q=256), within the declared 10^7 cap.
+output-rotation SWAP budget is derived from the explicit-operation trace (24
+modular output adds per evaluation) times the verified per-rotation bound:
+198,144 (Q=64) and 3,151,872 (Q=256), within the declared 10^7 cap. This
+budget excludes the reciprocal-square-root control logic, square/accumulator
+work, and Route-B compilation; it is not a full-evaluator gate budget.
 
 Quantization bound: B(eps, Q) = (sqrt(24)/(2Q)) (L + 1) with L = 1/FLOOR at
 eps=0 (domain-floored) and L = 1/eps otherwise, derived from the Lipschitz
@@ -102,11 +117,14 @@ Actuation interface (unchanged from c626 Route A): H_A = b sigma kappa
 (|0><n| + |n><0|) on the one-excitation block, driven by the finite
 evaluator's output. Lambda enters INPUT-SIDE, faithful to the c626 member
 loop (it scales the orbit before normalization; the magnitude cancels only
-at eps=0). The improvement axis c is DECLARED-ABSENT: c626's improvement
+at eps=0). For this endpoint lane only, the population is thinned to the first
+valid orbit in frozen enumeration order for each declared length L=3,6,7; the
+covariance and quantization-bound lanes use the full 24-orbit population. The
+improvement axis c is DECLARED-ABSENT: c626's improvement
 vector is the spatial trace vector of the unlanded Cycle-620 module
 contracted with the momentum, so the c grid is not executable off main and
 no substitute semantics were invented. Endpoint deltas |P_finite - P_exact|
-reach at most 2.2e-3 (Q=64) and 5.7e-4 (Q=256), inside the propagated bound
+reach at most 1.81e-3 (Q=64) and 3.85e-4 (Q=256), inside the propagated bound
 2 t max|b sigma kappa| B(eps,Q) for every grid member; both quadrature signs
 occur; the zero-coupling deletion control is quiet.
 
@@ -134,17 +152,21 @@ frame-sector permutation machinery; the value lattice, FLOOR, register
 widths; the regulator/saturation/actuation grids; r0 and rho as declared
 fixture constants.
 
-Derived or executed: the certified integer reciprocal-sqrt-multiply; the
-garbage-free reversible normalizer; exact covariance under all 24 frames
-(1152 integer comparisons) and all 576 label-permutation products; the derived quantization
-bound with validity, tightness, and 1/Q scaling; the exact-rational
-saturation with denominator census and exact controls; the materialised
-integer permutation matrix with exact unitarity, linearity, and ancilla
-unentanglement; the support-two rail-SWAP recomposition with a trace-derived
-full-instance budget; the actuation endpoint match within the propagated
-bound.
+Derived or executed: the certified integer reciprocal-sqrt-multiply; the exact
+reversible-oracle embedding with represented square/accumulator work registers
+restored; exact covariance across all 24 population orbits and all 24 frames
+(4608 integer comparisons) and all 576 label-permutation products; the derived
+quantization bound with validity, tightness, and 1/Q scaling; the exact-rational
+saturation with denominator census, analytic raw-denominator bound, and exact
+controls; the materialised oracle permutation matrix with exact unitarity,
+linearity, and ancilla unentanglement; the support-two output-rail SWAP
+recomposition with a trace-derived output-rotation budget; the actuation
+endpoint match within the propagated bound.
 
 Open: arbitrary-precision and continuum evaluators and non-lattice inputs;
+gate-level reversible compilation of the reciprocal-square-root selection
+logic, work-register arithmetic, and Route-B rational map; support-two
+lowering and a resource bound for the full controlled evaluator;
 selection of every sign, scale, regulator, saturation scale, and lambda (the
 full grid survives); the declared-absent improvement axis pending a landed
 Cycle-620; endogenous source profiles; any physical identification (this
@@ -152,29 +174,35 @@ tournament is arithmetic-wall closure, not gravity — see firewalls).
 
 ## Firewalls
 
-Constructive closure of the Cycle-626 finite-evaluator wall on the declared
-lattices only; arbitrary-precision and continuum claims are not made. No
-sign, scale, regulator, saturation-scale, or lambda is selected; branch
-selection remains open. No shared-code 3/4 DELAY association is derived; the
-PR5557 acceptance harness is untouched; the 5/4 ADVANCE count-edit interface
-is not driven. This is not gravity, not physical stress, not energy, not a
-source law, not a causal rate, not an event, Record, or Born claim; a
-contact-sensitive response is not energy, stress, source, or gravity. The
-value lattice, FLOOR, register widths, and grids are declared supplied
-structure; no axiom, primitive, or premise class is added.
+Constructive finite-arithmetic and reversible-oracle support on the declared
+lattices only; the full gate-level finite-evaluator compiler, arbitrary-
+precision evaluator, and continuum evaluator remain open. Support-two lowering
+and its SWAP budget cover the output-register rotations only; reciprocal-
+square-root control logic, work-register arithmetic, and Route-B gate
+compilation are not supplied. No sign, scale, regulator, saturation-scale, or
+lambda is selected; branch selection remains open. No shared-code 3/4 DELAY
+association is derived; the PR5557 acceptance harness is untouched; the 5/4
+ADVANCE count-edit interface is not driven. This is not gravity, not physical
+stress, not energy, not a source law, not a causal rate, not an event, Record,
+or Born claim; a contact-sensitive response is not energy, stress, source, or
+gravity. The value lattice, FLOOR, register widths, and grids are declared
+supplied structure; no axiom, primitive, or premise class is added.
 
 ## No-go discipline
 
-No negative claim is frozen by this tournament: the result is a bounded
-constructive positive on declared lattices. The prior walls it leaves intact
-(sign/scale selection, the open/periodic domain join, the DELAY association,
-the ADVANCE count-edit) remain exactly as scoped by the campaign Cycle-626
-note, which this work pins as a read-only evidence anchor.
+No negative claim is frozen by this tournament: the result is bounded exact
+support on declared lattices. The missing gate-level compiler is recorded as
+an open proof obligation, not an impossibility claim. The prior walls it leaves
+intact (sign/scale selection, the open/periodic domain join, the DELAY
+association, the ADVANCE count-edit) remain read-only campaign context and are
+not re-proved here.
 
 ## Evidence anchors and pins
 
-Landed hard import (verified on disk at run time): the Cycle-576 runner
-(53d60249...), note (2d5650c5...), and receipt (06456c14...). Read-only
+Landed hard import (verified on disk at run time after the parent review
+repair): the Cycle-576 runner (7980bff1...), note (5822c14b...), and receipt
+(bc719ca8...). These exact-pinned bytes remain Authority none / Audit unset.
+Read-only
 campaign evidence anchors at campaign head fb0ab5636e (recorded, transcribed,
 never imported or executed): the Cycle-626 note (1346e9c5...), runner
 (a775cb75...), and receipt (ab8489e9...), whose Route-A/B reference residuals
@@ -184,6 +212,7 @@ and deletion floors are transcribed in the runner's pin block for context.
 
 The canonical runner
 `scripts/physical_finite_reversible_norm_saturation_evaluator_tournament_2026_07_23.py`
-closes 32/32 rows with zero failures (exit 0) on a clean main-based tree with
-the substrate PR applied; the paired receipt and cold transcript are frozen
-alongside this note.
+closes 32/32 rows with zero failures (exit 0) on current main after the
+Cycle-576 review repair; the paired receipt and cold transcript are frozen
+alongside this note. The terminal label reports bounded arithmetic/oracle
+support, not closure of the gate-level local-evaluator compiler.

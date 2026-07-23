@@ -1,0 +1,36 @@
+PASS Cycles532/535/537/539/598 are exact immutable shores :: {'files': 15, 'semantic_rows': 11}
+PASS oriented state-carried loop schedules close under all24/all576 at L3/L6/L7 :: {'frames': 24, 'failures': 0}
+PASS Route A coherently resets after syndrome capture but exactly retains the matter twist :: {'reset': np.float64(0.0), 'target': np.float64(2.0), 'twisted': np.float64(0.0)}
+PASS fill-check pumping exactly corrects even cap syndromes but cannot change an unknown boundary Wilson sign :: {'sizes': 3, 'failures': 0}
+PASS Route B prepares three plus reference rails by an invertible scheduled state-carried O(L) wavefront :: {'sizes': 3, 'failures': 0}
+PASS root-free pair-defect pumping preserves rather than selects the Wilson character :: {'sizes': 3, 'failures': 0}
+PASS Route C audits boundary preparation and doubled relative characters but leaves a supplied sign :: {'relative_rank': 3, 'diagonal': 3}
+PASS reference preparation is separated from the missing full Cycle532/Cycle537 code isometry :: {'sizes': 3, 'full_E': False}
+PASS full current N1-N8 permits only scoped route dispositions and withholds broad/shared/axiom claims :: {'attempted': 6, 'walls': 2, 'pairs': 2}
+PASS Cycle636 note preserves preparation/embedding/full-E and semantic firewalls :: ()
+{
+  "pass": true,
+  "tests_passed": 10,
+  "tests_failed": 0,
+  "elapsed_seconds": 0.5517476670211181,
+  "maximum_RSS_bytes": 38338560,
+  "receipt": "/private/tmp/toe-science.BB0KQV/outputs/physical_fixed_wilson_initializer_preparation_tournament_cycle636_receipt_2026_07_23.json"
+}
+        0.67 real         0.49 user         0.09 sys
+            38354944  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               26763  page reclaims
+                 950  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 190  voluntary context switches
+                 740  involuntary context switches
+          7464975226  instructions retired
+          1801091274  cycles elapsed
+            25690568  peak memory footprint

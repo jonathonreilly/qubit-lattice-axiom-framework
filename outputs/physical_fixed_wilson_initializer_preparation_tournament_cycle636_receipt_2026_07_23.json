@@ -1,0 +1,1765 @@
+{
+  "audit": "unset",
+  "author_accepted": false,
+  "author_artifact_status_accepted": false,
+  "authority": "none",
+  "axiom_pressure": false,
+  "breakthrough": false,
+  "breakthrough_bar_met": false,
+  "elapsed_seconds": 0.5517476670211181,
+  "frame_schedule_controls": {
+    "frame_products": 576,
+    "pass": true,
+    "proper_cubic_frames": 24,
+    "rows": [
+      {
+        "frame_failures": 0,
+        "group_failures": 0,
+        "length": 3,
+        "oriented_loop_labels": 18
+      },
+      {
+        "frame_failures": 0,
+        "group_failures": 0,
+        "length": 6,
+        "oriented_loop_labels": 36
+      },
+      {
+        "frame_failures": 0,
+        "group_failures": 0,
+        "length": 7,
+        "oriented_loop_labels": 42
+      }
+    ],
+    "runtime_frame_selector": false
+  },
+  "full_isometry_audit": {
+    "Cycle532_or_Cycle537_G_is_rederived_here": false,
+    "O_L_local_reference_preparation_is_bounded_local_encoding_E": false,
+    "auxiliary_reference_rails_are_correlated_with_physical_code": false,
+    "conditional_G_shore_is_exact": true,
+    "dependency_layers": [
+      {
+        "best": "rooted state-carried GHZ wavefront",
+        "full_E": false,
+        "layer": "three_fixed_Wilson_reference_values",
+        "status": "POSITIVE_AFTER_SUPPLIED_SEEDS"
+      },
+      {
+        "best": "Cycle537 exact algebra plus even-syndrome cap correction span",
+        "full_E": false,
+        "layer": "bounded_rough_or_fill_constraints",
+        "status": "ALGEBRA_AND_CONDITIONAL_PUMP_ONLY"
+      },
+      {
+        "best": null,
+        "full_E": false,
+        "layer": "N_minus_1_gauge_reference",
+        "status": "SUPPLIED_OR_ARBITRARY_FACTOR_NOT_PREPARED_BY_CYCLE636"
+      },
+      {
+        "best": "Cycle532/Cycle537 algebraic factorization",
+        "full_E": false,
+        "layer": "complete_target_logical_map",
+        "status": "NO_LITERAL_VOLUME_ISOMETRY"
+      },
+      {
+        "best": "Cycle532/Cycle537 conditional full-Fock matter action",
+        "full_E": false,
+        "layer": "physical_G_update",
+        "status": "POSITIVE_ONLY_AFTER_CODE_SPACE_IS_SUPPLIED"
+      }
+    ],
+    "full_M64_EG_intertwiner_closed": false,
+    "full_M64_E_constructed": false,
+    "pass": true,
+    "reason": "none of the routes maps all 6N target plus a fixed N-1 gauge input into every local stabilizer while returning work/exhaust and preserving the complete target algebra",
+    "rows": [
+      {
+        "Cycle532_bounded_local_constraint_rank": 403,
+        "Cycle532_code_exponent": 188,
+        "Cycle532_fixed_spin_rank": 406,
+        "Cycle532_rough_M2": 594,
+        "Cycle537_added_fill_M2": 36,
+        "Cycle537_code_exponent": 188,
+        "Cycle537_stabilizer_rank": 442,
+        "Cycle537_total_M2": 630,
+        "coarse_cells": 27,
+        "constraints_remaining_after_ideal_unbuilt_three_sign_transfer": 465,
+        "fixed_gauge_logical_correlations_additionally_required": 26,
+        "fixed_gauge_vacuum_prepared_without_supply": false,
+        "full_M64_E_constructed": false,
+        "full_tableau_isometry_gates_constructed": false,
+        "gauge_qubits": 26,
+        "ideal_unbuilt_three_sign_transfer_upper_bound": 3,
+        "length": 3,
+        "physical_code_stabilizer_correlations_required": 442,
+        "reference_wavefront_M2": 27,
+        "reference_wavefront_depth": 7,
+        "target_full_Fock_qubits": 162,
+        "target_plus_gauge_equals_code_exponent": true,
+        "total_constraints_for_fixed_gauge_target_isometry": 468,
+        "uncoupled_auxiliary_GHZ_rails_physical_constraints_established": 0
+      },
+      {
+        "Cycle532_bounded_local_constraint_rank": 3238,
+        "Cycle532_code_exponent": 1511,
+        "Cycle532_fixed_spin_rank": 3241,
+        "Cycle532_rough_M2": 4752,
+        "Cycle537_added_fill_M2": 180,
+        "Cycle537_code_exponent": 1511,
+        "Cycle537_stabilizer_rank": 3421,
+        "Cycle537_total_M2": 4932,
+        "coarse_cells": 216,
+        "constraints_remaining_after_ideal_unbuilt_three_sign_transfer": 3633,
+        "fixed_gauge_logical_correlations_additionally_required": 215,
+        "fixed_gauge_vacuum_prepared_without_supply": false,
+        "full_M64_E_constructed": false,
+        "full_tableau_isometry_gates_constructed": false,
+        "gauge_qubits": 215,
+        "ideal_unbuilt_three_sign_transfer_upper_bound": 3,
+        "length": 6,
+        "physical_code_stabilizer_correlations_required": 3421,
+        "reference_wavefront_M2": 54,
+        "reference_wavefront_depth": 16,
+        "target_full_Fock_qubits": 1296,
+        "target_plus_gauge_equals_code_exponent": true,
+        "total_constraints_for_fixed_gauge_target_isometry": 3636,
+        "uncoupled_auxiliary_GHZ_rails_physical_constraints_established": 0
+      },
+      {
+        "Cycle532_bounded_local_constraint_rank": 5143,
+        "Cycle532_code_exponent": 2400,
+        "Cycle532_fixed_spin_rank": 5146,
+        "Cycle532_rough_M2": 7546,
+        "Cycle537_added_fill_M2": 252,
+        "Cycle537_code_exponent": 2400,
+        "Cycle537_stabilizer_rank": 5398,
+        "Cycle537_total_M2": 7798,
+        "coarse_cells": 343,
+        "constraints_remaining_after_ideal_unbuilt_three_sign_transfer": 5737,
+        "fixed_gauge_logical_correlations_additionally_required": 342,
+        "fixed_gauge_vacuum_prepared_without_supply": false,
+        "full_M64_E_constructed": false,
+        "full_tableau_isometry_gates_constructed": false,
+        "gauge_qubits": 342,
+        "ideal_unbuilt_three_sign_transfer_upper_bound": 3,
+        "length": 7,
+        "physical_code_stabilizer_correlations_required": 5398,
+        "reference_wavefront_M2": 63,
+        "reference_wavefront_depth": 19,
+        "target_full_Fock_qubits": 2058,
+        "target_plus_gauge_equals_code_exponent": true,
+        "total_constraints_for_fixed_gauge_target_isometry": 5740,
+        "uncoupled_auxiliary_GHZ_rails_physical_constraints_established": 0
+      }
+    ],
+    "uncoupled_reference_to_physical_mutual_information_bits": 0
+  },
+  "highest_honest_terminal": "scheduled physical local preparation of auxiliary topological reference rails after supplied seed genesis; not autonomous and not the Cycle532/Cycle537 code-space isometry",
+  "inventory": {
+    "derived": [
+      "exact retained-exhaust unitary reset with target residual two and retained sector provenance",
+      "complete L3/L6/L7 cap-incidence even/odd syndrome span",
+      "bounded-support-three invertible O(L) scheduled state-carried preparation of three plus auxiliary GHZ reference rails",
+      "exhaustive L3/L6/L7 root-free pair-pump character conservation",
+      "puncture seed dependence and doubled-relative rank-three/residual-three character census",
+      "exact L3/L6/L7 full-isometry resource/dimension ledger and separation from conditional G"
+    ],
+    "open": [
+      "one fixed proper-cubic physical cap embedding (independent Cycle637 target)",
+      "full routed stabilizer-tableau isometry from 6N target plus a fixed N-1 gauge reference",
+      "autonomous seed and gauge-vacuum genesis without host/root/sign supply",
+      "returned work/exhaust, full logical conjugation, and literal full-M64 E G = Gphysical E",
+      "noise, renewal, infinite volume, and time/energy/source/gravity/Born/Record interpretations"
+    ],
+    "supplied": [
+      "immutable Cycle532/535/537/539/598 shores at 1d3d7a005bc74256ac23b9ace7b2669a45a9fc79; dirty variants are comparison-only",
+      "Cycle532 rough code, fixed-sector target-times-gauge algebra, conditional full-Fock G, and finite L3/L6/L7 geometry",
+      "Cycle537 fill-disk incidence and its abstract target-times-gauge factorization",
+      "Route-A syndrome input, correction membrane, retained exhaust, and broadcast schedule",
+      "Route-B onehot seed positions, orientations, plus states, blank data/head/visited rails, and global ticks",
+      "fill-pump pairing convention, puncture boundary seed, and doubled-copy relative constraints"
+    ]
+  },
+  "lawful_domain_controls": {
+    "L3": "construction",
+    "L6": "training",
+    "L7": "held-out with no refit",
+    "infinite_volume_claim": false,
+    "route_B_declared_input": "one oriented onehot plus seed per axis with blank data/visited",
+    "runtime_frame_selector": false
+  },
+  "leakage_controls": {
+    "full_E_returned_work_proved": false,
+    "route_A_worst_case_exhaust_from_blank": 1.0,
+    "route_B_GHZ_code": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "route_B_terminal_work_from_blank": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "maturity_rebase": null,
+  "maximum_RSS_bytes": 38338560,
+  "no_go_discipline": {
+    "N1_broad_negative_gate": "WITHHELD_DESPITE_ROUTE_COUNT",
+    "N1_normalized_families": [
+      {
+        "family": "retained-exhaust coherent reset",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "coherent syndrome copy plus controlled membrane correction",
+        "object_formulation": "rough Wilson character, matter seam, and syndrome exhaust",
+        "search_status": "ATTEMPTED_EXACT_MATTER_TWIST",
+        "strength_vs_target": "weaker",
+        "terminal_obligation": "set plus while preserving complete target algebra"
+      },
+      {
+        "family": "fill-disk local syndrome pump",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "pairwise face-defect motion preserves total syndrome parity",
+        "object_formulation": "Cycle537 face syndrome and interior-edge correction incidence",
+        "search_status": "ATTEMPTED_POSITIVE_EVEN_SECTOR_ONLY",
+        "strength_vs_target": "weaker",
+        "terminal_obligation": "repair arbitrary boundary Wilson sector"
+      },
+      {
+        "family": "state-carried rooted GHZ growth",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "local H/CNOT wavefront with reversible head motion",
+        "object_formulation": "three loop rails with onehot heads and retained visited words",
+        "search_status": "ATTEMPTED_POSITIVE_REFERENCE_ONLY",
+        "strength_vs_target": "weaker",
+        "terminal_obligation": "prepare plus references and extend to full code isometry"
+      },
+      {
+        "family": "root-free defect-pair pump",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "translation-covariant pair updates conserve loop character",
+        "object_formulation": "periodic reference words and nearest-neighbor pair flips",
+        "search_status": "ATTEMPTED_CHARACTER_CONSERVATION",
+        "strength_vs_target": "weaker",
+        "terminal_obligation": "unique plus genesis without a root"
+      },
+      {
+        "family": "punctured-boundary growth",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "local growth from a boundary eigenstate",
+        "object_formulation": "open Wilson chain plus boundary seed",
+        "search_status": "ATTEMPTED_POSITIVE_WITH_SUPPLIED_SIGN",
+        "strength_vs_target": "weaker",
+        "terminal_obligation": "remove puncture/seed while retaining a pure plus periodic code"
+      },
+      {
+        "family": "doubled-neutral pairing",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "six-bit inter-copy relative-sign constraint algebra",
+        "object_formulation": "two rough-code character triples and three relative constraints",
+        "search_status": "ATTEMPTED_POSITIVE_RELATIVE_ONLY",
+        "strength_vs_target": "weaker",
+        "terminal_obligation": "derive six absolute plus signs without an anchor"
+      }
+    ],
+    "N1_open_routes_not_counted": [
+      {
+        "family": "full stabilizer-tableau Clifford encoder",
+        "mechanism_invariant": "local routed symplectic Gaussian elimination",
+        "object_formulation": "6N target, N-1 gauge inputs, and all physical stabilizer ancillas",
+        "search_status": "OPEN_UNTESTED_NOT_COUNTED",
+        "strength_vs_target": "target-equivalent",
+        "terminal_obligation": "literal volume E with work return and all target logical maps"
+      }
+    ],
+    "N1_qualifying_attempts": 6,
+    "N1_required_for_broad_negative": 5,
+    "N2_collapsed_walls": {
+      "W_embed": "one fixed proper-cubic physical embedding of Cycle537 cap incidence (assigned to independent Cycle637, not tested here)",
+      "W_prepare": "literal lawful product/reset-to-code isometry for target plus fixed gauge reference with returned work/exhaust"
+    },
+    "N2_directed_pair_count": 2,
+    "N2_directed_pairs": [
+      {
+        "closure_implied": false,
+        "from": "W_embed",
+        "reason": "physical incidence alone supplies no state or isometry",
+        "to": "W_prepare"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_prepare",
+        "reason": "a circuit on an abstract cap complex supplies no embedding in the existing substrate",
+        "to": "W_embed"
+      }
+    ],
+    "N2_directional_pairs": [
+      {
+        "closure_implied": false,
+        "from": "W_embed",
+        "reason": "physical incidence alone supplies no state or isometry",
+        "to": "W_prepare"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_prepare",
+        "reason": "a circuit on an abstract cap complex supplies no embedding in the existing substrate",
+        "to": "W_embed"
+      }
+    ],
+    "N3_hidden_wall_scan": [
+      "Cycle532/Cycle537 algebra, finite domains, and exact target/gauge dimensions are committed shores",
+      "syndrome input, correction membrane, retained exhaust, fixed cut, and broadcast schedule are explicit",
+      "GHZ data/head/visited rails, seed origin/orientation/plus state, and global tick schedule are supplied",
+      "fill-disk even-sector premise, defect-pair law, puncture boundary sign, and doubled relative constraints are explicit",
+      "N-1 gauge reference, full stabilizer tableau encoder, blank work, routing, and volume logical map remain open",
+      "W_embed is not silently discharged or duplicated; it is assigned to independent Cycle637"
+    ],
+    "N4_dropped_nonmatches": [
+      {
+        "current_line": 639,
+        "current_path": "scripts/physical_fixed_wilson_initializer_preparation_tournament_cycle636_2026_07_23.py",
+        "current_residual": "full-volume full-Fock rough/fill-code preparation",
+        "disposition": "dropped as volume preparation evidence",
+        "exact_match": false,
+        "prior_line": 263,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_SHARED_SEAM_CODE_SPACE_ISOMETRY_COMPILER_CYCLE539_NOTE_2026-07-21.md",
+        "prior_ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+        "prior_residual": "bounded low-sector patch branch preparation residual",
+        "same_scope": false,
+        "scope_match": false,
+        "use_as_closure": false
+      },
+      {
+        "current_line": 639,
+        "current_path": "scripts/physical_fixed_wilson_initializer_preparation_tournament_cycle636_2026_07_23.py",
+        "current_residual": "Cycle532 Pauli stabilizer/matter/gauge isometry",
+        "disposition": "mechanism comparator only; residual differs",
+        "exact_match": false,
+        "prior_line": 28,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_ROOT_FREE_CUTOFF_GAUGE_PREPARATION_TOURNAMENT_CYCLE598_NOTE_2026-07-22.md",
+        "prior_ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+        "prior_residual": "uniform modular gauge-fiber affine tree preparation",
+        "same_scope": false,
+        "scope_match": false,
+        "use_as_closure": false
+      }
+    ],
+    "N4_exact_residual_matches": [
+      {
+        "current_line": 639,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_fixed_wilson_initializer_preparation_tournament_cycle636_2026_07_23.py",
+        "current_residual": [
+          594,
+          4752,
+          7546
+        ],
+        "current_values": [
+          594,
+          4752,
+          7546
+        ],
+        "exact_match": true,
+        "prior_line": 20,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md",
+        "prior_ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+        "prior_residual": [
+          594,
+          4752,
+          7546
+        ],
+        "prior_values": [
+          594,
+          4752,
+          7546
+        ],
+        "quantity": "rough physical M2 = 22N",
+        "same_scope": true,
+        "scope_match": true,
+        "sizes": [
+          3,
+          6,
+          7
+        ],
+        "use_as_closure": true
+      },
+      {
+        "current_line": 639,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_fixed_wilson_initializer_preparation_tournament_cycle636_2026_07_23.py",
+        "current_residual": [
+          406,
+          3241,
+          5146
+        ],
+        "current_values": [
+          406,
+          3241,
+          5146
+        ],
+        "exact_match": true,
+        "prior_line": 22,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md",
+        "prior_ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+        "prior_residual": [
+          406,
+          3241,
+          5146
+        ],
+        "prior_values": [
+          406,
+          3241,
+          5146
+        ],
+        "quantity": "fixed-spin rank = 15N+1",
+        "same_scope": true,
+        "scope_match": true,
+        "sizes": [
+          3,
+          6,
+          7
+        ],
+        "use_as_closure": true
+      },
+      {
+        "current_line": 639,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_fixed_wilson_initializer_preparation_tournament_cycle636_2026_07_23.py",
+        "current_residual": [
+          188,
+          1511,
+          2400
+        ],
+        "current_values": [
+          188,
+          1511,
+          2400
+        ],
+        "exact_match": true,
+        "prior_line": 26,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md",
+        "prior_ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+        "prior_residual": [
+          188,
+          1511,
+          2400
+        ],
+        "prior_values": [
+          188,
+          1511,
+          2400
+        ],
+        "quantity": "fixed-spin code exponent = 7N-1",
+        "same_scope": true,
+        "scope_match": true,
+        "sizes": [
+          3,
+          6,
+          7
+        ],
+        "use_as_closure": true
+      },
+      {
+        "current_line": 639,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_fixed_wilson_initializer_preparation_tournament_cycle636_2026_07_23.py",
+        "current_residual": [
+          162,
+          1296,
+          2058
+        ],
+        "current_values": [
+          162,
+          1296,
+          2058
+        ],
+        "exact_match": true,
+        "prior_line": 26,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md",
+        "prior_ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+        "prior_residual": [
+          162,
+          1296,
+          2058
+        ],
+        "prior_values": [
+          162,
+          1296,
+          2058
+        ],
+        "quantity": "target exponent = 6N",
+        "same_scope": true,
+        "scope_match": true,
+        "sizes": [
+          3,
+          6,
+          7
+        ],
+        "use_as_closure": true
+      },
+      {
+        "current_line": 639,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_fixed_wilson_initializer_preparation_tournament_cycle636_2026_07_23.py",
+        "current_residual": [
+          26,
+          215,
+          342
+        ],
+        "current_values": [
+          26,
+          215,
+          342
+        ],
+        "exact_match": true,
+        "prior_line": 26,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md",
+        "prior_ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+        "prior_residual": [
+          26,
+          215,
+          342
+        ],
+        "prior_values": [
+          26,
+          215,
+          342
+        ],
+        "quantity": "gauge exponent = N-1",
+        "same_scope": true,
+        "scope_match": true,
+        "sizes": [
+          3,
+          6,
+          7
+        ],
+        "use_as_closure": true
+      },
+      {
+        "current_line": 235,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_fixed_wilson_initializer_preparation_tournament_cycle636_2026_07_23.py",
+        "current_residual": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "current_values": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "exact_match": true,
+        "prior_line": 47,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_WILSON_MEASUREMENT_RESET_STABILIZATION_CYCLE535_NOTE_2026-07-21.md",
+        "prior_ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+        "prior_residual": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "prior_values": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "quantity": "fixed-cut crossed-seam residual",
+        "same_scope": true,
+        "scope_match": true,
+        "sizes": [
+          3,
+          6,
+          7
+        ],
+        "use_as_closure": true
+      },
+      {
+        "current_line": 235,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_fixed_wilson_initializer_preparation_tournament_cycle636_2026_07_23.py",
+        "current_residual": [
+          0.6666666666666666,
+          0.3333333333333333,
+          0.2857142857142857
+        ],
+        "current_values": [
+          0.6666666666666666,
+          0.3333333333333333,
+          0.2857142857142857
+        ],
+        "exact_match": true,
+        "prior_line": 55,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_WILSON_MEASUREMENT_RESET_STABILIZATION_CYCLE535_NOTE_2026-07-21.md",
+        "prior_ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+        "prior_residual": [
+          0.6666666666666666,
+          0.3333333333333333,
+          0.2857142857142857
+        ],
+        "prior_values": [
+          0.6666666666666666,
+          0.3333333333333333,
+          0.2857142857142857
+        ],
+        "quantity": "uniform-cut orbit residual = 2/L",
+        "same_scope": true,
+        "scope_match": true,
+        "sizes": [
+          3,
+          6,
+          7
+        ],
+        "use_as_closure": true
+      },
+      {
+        "current_line": 639,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_fixed_wilson_initializer_preparation_tournament_cycle636_2026_07_23.py",
+        "current_residual": [
+          442,
+          3421,
+          5398
+        ],
+        "current_values": [
+          442,
+          3421,
+          5398
+        ],
+        "exact_match": true,
+        "prior_line": 139,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_LOCAL_WILSON_FILL_DISK_CYCLE537_NOTE_2026-07-21.md",
+        "prior_ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+        "prior_residual": [
+          442,
+          3421,
+          5398
+        ],
+        "prior_values": [
+          442,
+          3421,
+          5398
+        ],
+        "quantity": "filled stabilizer rank",
+        "same_scope": true,
+        "scope_match": true,
+        "sizes": [
+          3,
+          6,
+          7
+        ],
+        "use_as_closure": true
+      }
+    ],
+    "N4_residual_matching": [
+      {
+        "current_line": 639,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_fixed_wilson_initializer_preparation_tournament_cycle636_2026_07_23.py",
+        "current_residual": [
+          594,
+          4752,
+          7546
+        ],
+        "current_values": [
+          594,
+          4752,
+          7546
+        ],
+        "exact_match": true,
+        "prior_line": 20,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md",
+        "prior_ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+        "prior_residual": [
+          594,
+          4752,
+          7546
+        ],
+        "prior_values": [
+          594,
+          4752,
+          7546
+        ],
+        "quantity": "rough physical M2 = 22N",
+        "same_scope": true,
+        "scope_match": true,
+        "sizes": [
+          3,
+          6,
+          7
+        ],
+        "use_as_closure": true
+      },
+      {
+        "current_line": 639,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_fixed_wilson_initializer_preparation_tournament_cycle636_2026_07_23.py",
+        "current_residual": [
+          406,
+          3241,
+          5146
+        ],
+        "current_values": [
+          406,
+          3241,
+          5146
+        ],
+        "exact_match": true,
+        "prior_line": 22,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md",
+        "prior_ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+        "prior_residual": [
+          406,
+          3241,
+          5146
+        ],
+        "prior_values": [
+          406,
+          3241,
+          5146
+        ],
+        "quantity": "fixed-spin rank = 15N+1",
+        "same_scope": true,
+        "scope_match": true,
+        "sizes": [
+          3,
+          6,
+          7
+        ],
+        "use_as_closure": true
+      },
+      {
+        "current_line": 639,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_fixed_wilson_initializer_preparation_tournament_cycle636_2026_07_23.py",
+        "current_residual": [
+          188,
+          1511,
+          2400
+        ],
+        "current_values": [
+          188,
+          1511,
+          2400
+        ],
+        "exact_match": true,
+        "prior_line": 26,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md",
+        "prior_ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+        "prior_residual": [
+          188,
+          1511,
+          2400
+        ],
+        "prior_values": [
+          188,
+          1511,
+          2400
+        ],
+        "quantity": "fixed-spin code exponent = 7N-1",
+        "same_scope": true,
+        "scope_match": true,
+        "sizes": [
+          3,
+          6,
+          7
+        ],
+        "use_as_closure": true
+      },
+      {
+        "current_line": 639,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_fixed_wilson_initializer_preparation_tournament_cycle636_2026_07_23.py",
+        "current_residual": [
+          162,
+          1296,
+          2058
+        ],
+        "current_values": [
+          162,
+          1296,
+          2058
+        ],
+        "exact_match": true,
+        "prior_line": 26,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md",
+        "prior_ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+        "prior_residual": [
+          162,
+          1296,
+          2058
+        ],
+        "prior_values": [
+          162,
+          1296,
+          2058
+        ],
+        "quantity": "target exponent = 6N",
+        "same_scope": true,
+        "scope_match": true,
+        "sizes": [
+          3,
+          6,
+          7
+        ],
+        "use_as_closure": true
+      },
+      {
+        "current_line": 639,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_fixed_wilson_initializer_preparation_tournament_cycle636_2026_07_23.py",
+        "current_residual": [
+          26,
+          215,
+          342
+        ],
+        "current_values": [
+          26,
+          215,
+          342
+        ],
+        "exact_match": true,
+        "prior_line": 26,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md",
+        "prior_ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+        "prior_residual": [
+          26,
+          215,
+          342
+        ],
+        "prior_values": [
+          26,
+          215,
+          342
+        ],
+        "quantity": "gauge exponent = N-1",
+        "same_scope": true,
+        "scope_match": true,
+        "sizes": [
+          3,
+          6,
+          7
+        ],
+        "use_as_closure": true
+      },
+      {
+        "current_line": 235,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_fixed_wilson_initializer_preparation_tournament_cycle636_2026_07_23.py",
+        "current_residual": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "current_values": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "exact_match": true,
+        "prior_line": 47,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_WILSON_MEASUREMENT_RESET_STABILIZATION_CYCLE535_NOTE_2026-07-21.md",
+        "prior_ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+        "prior_residual": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "prior_values": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "quantity": "fixed-cut crossed-seam residual",
+        "same_scope": true,
+        "scope_match": true,
+        "sizes": [
+          3,
+          6,
+          7
+        ],
+        "use_as_closure": true
+      },
+      {
+        "current_line": 235,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_fixed_wilson_initializer_preparation_tournament_cycle636_2026_07_23.py",
+        "current_residual": [
+          0.6666666666666666,
+          0.3333333333333333,
+          0.2857142857142857
+        ],
+        "current_values": [
+          0.6666666666666666,
+          0.3333333333333333,
+          0.2857142857142857
+        ],
+        "exact_match": true,
+        "prior_line": 55,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_WILSON_MEASUREMENT_RESET_STABILIZATION_CYCLE535_NOTE_2026-07-21.md",
+        "prior_ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+        "prior_residual": [
+          0.6666666666666666,
+          0.3333333333333333,
+          0.2857142857142857
+        ],
+        "prior_values": [
+          0.6666666666666666,
+          0.3333333333333333,
+          0.2857142857142857
+        ],
+        "quantity": "uniform-cut orbit residual = 2/L",
+        "same_scope": true,
+        "scope_match": true,
+        "sizes": [
+          3,
+          6,
+          7
+        ],
+        "use_as_closure": true
+      },
+      {
+        "current_line": 639,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_fixed_wilson_initializer_preparation_tournament_cycle636_2026_07_23.py",
+        "current_residual": [
+          442,
+          3421,
+          5398
+        ],
+        "current_values": [
+          442,
+          3421,
+          5398
+        ],
+        "exact_match": true,
+        "prior_line": 139,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_LOCAL_WILSON_FILL_DISK_CYCLE537_NOTE_2026-07-21.md",
+        "prior_ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+        "prior_residual": [
+          442,
+          3421,
+          5398
+        ],
+        "prior_values": [
+          442,
+          3421,
+          5398
+        ],
+        "quantity": "filled stabilizer rank",
+        "same_scope": true,
+        "scope_match": true,
+        "sizes": [
+          3,
+          6,
+          7
+        ],
+        "use_as_closure": true
+      }
+    ],
+    "N5_rhetoric_audit": [
+      {
+        "lattice_wide": "UNTESTED_NO_BROADER_NEGATIVE",
+        "per_block": "three-character dilation",
+        "per_element": "UNTESTED_NO_BROADER_NEGATIVE",
+        "per_mode": "logical crossed seam",
+        "per_site": "UNTESTED_NO_BROADER_NEGATIVE",
+        "phrase": "retained exhaust is not complete target preservation"
+      },
+      {
+        "lattice_wide": "UNTESTED_NO_BROADER_NEGATIVE",
+        "per_block": "LxL disk incidence",
+        "per_element": "interior edges",
+        "per_mode": "UNTESTED_NO_BROADER_NEGATIVE",
+        "per_site": "UNTESTED_NO_BROADER_NEGATIVE",
+        "phrase": "cap syndrome correction is not arbitrary Wilson initialization"
+      },
+      {
+        "lattice_wide": "L3/L6/L7 resource law",
+        "per_block": "UNTESTED_NO_BROADER_NEGATIVE",
+        "per_element": "UNTESTED_NO_BROADER_NEGATIVE",
+        "per_mode": "three Wilson rails",
+        "per_site": "UNTESTED_NO_BROADER_NEGATIVE",
+        "phrase": "O(L) reference preparation is not bounded local encoding E"
+      },
+      {
+        "lattice_wide": "UNTESTED_NO_BROADER_NEGATIVE",
+        "per_block": "all ring basis words through L7",
+        "per_element": "every pair flip",
+        "per_mode": "UNTESTED_NO_BROADER_NEGATIVE",
+        "per_site": "UNTESTED_NO_BROADER_NEGATIVE",
+        "phrase": "root-free pair pumping is not plus-sign genesis"
+      },
+      {
+        "lattice_wide": "UNTESTED_NO_BROADER_NEGATIVE",
+        "per_block": "rank-three relative constraints",
+        "per_element": "UNTESTED_NO_BROADER_NEGATIVE",
+        "per_mode": "six character bits",
+        "per_site": "UNTESTED_NO_BROADER_NEGATIVE",
+        "phrase": "relative doubled neutrality is not six absolute plus signs"
+      },
+      {
+        "lattice_wide": "L3/L6/L7",
+        "per_block": "exact dimension ledger",
+        "per_element": "UNTESTED_NO_BROADER_NEGATIVE",
+        "per_mode": "UNTESTED_NO_BROADER_NEGATIVE",
+        "per_site": "UNTESTED_NO_BROADER_NEGATIVE",
+        "phrase": "algebraic target-times-gauge factor is not a prepared full-M64 compiler"
+      }
+    ],
+    "N5_rhetoric_resolution_ledger": [
+      {
+        "lattice_wide": "UNTESTED_NO_BROADER_NEGATIVE",
+        "per_block": "three-character dilation",
+        "per_element": "UNTESTED_NO_BROADER_NEGATIVE",
+        "per_mode": "logical crossed seam",
+        "per_site": "UNTESTED_NO_BROADER_NEGATIVE",
+        "phrase": "retained exhaust is not complete target preservation"
+      },
+      {
+        "lattice_wide": "UNTESTED_NO_BROADER_NEGATIVE",
+        "per_block": "LxL disk incidence",
+        "per_element": "interior edges",
+        "per_mode": "UNTESTED_NO_BROADER_NEGATIVE",
+        "per_site": "UNTESTED_NO_BROADER_NEGATIVE",
+        "phrase": "cap syndrome correction is not arbitrary Wilson initialization"
+      },
+      {
+        "lattice_wide": "L3/L6/L7 resource law",
+        "per_block": "UNTESTED_NO_BROADER_NEGATIVE",
+        "per_element": "UNTESTED_NO_BROADER_NEGATIVE",
+        "per_mode": "three Wilson rails",
+        "per_site": "UNTESTED_NO_BROADER_NEGATIVE",
+        "phrase": "O(L) reference preparation is not bounded local encoding E"
+      },
+      {
+        "lattice_wide": "UNTESTED_NO_BROADER_NEGATIVE",
+        "per_block": "all ring basis words through L7",
+        "per_element": "every pair flip",
+        "per_mode": "UNTESTED_NO_BROADER_NEGATIVE",
+        "per_site": "UNTESTED_NO_BROADER_NEGATIVE",
+        "phrase": "root-free pair pumping is not plus-sign genesis"
+      },
+      {
+        "lattice_wide": "UNTESTED_NO_BROADER_NEGATIVE",
+        "per_block": "rank-three relative constraints",
+        "per_element": "UNTESTED_NO_BROADER_NEGATIVE",
+        "per_mode": "six character bits",
+        "per_site": "UNTESTED_NO_BROADER_NEGATIVE",
+        "phrase": "relative doubled neutrality is not six absolute plus signs"
+      },
+      {
+        "lattice_wide": "L3/L6/L7",
+        "per_block": "exact dimension ledger",
+        "per_element": "UNTESTED_NO_BROADER_NEGATIVE",
+        "per_mode": "UNTESTED_NO_BROADER_NEGATIVE",
+        "per_site": "UNTESTED_NO_BROADER_NEGATIVE",
+        "phrase": "algebraic target-times-gauge factor is not a prepared full-M64 compiler"
+      }
+    ],
+    "N6_partial_closure": [
+      {
+        "file": "scripts/physical_fixed_wilson_initializer_preparation_tournament_cycle636_2026_07_23.py",
+        "status": "EXECUTED_RETAINED_EXHAUST_RESET",
+        "what_closes": "unitary syndrome/exhaust accounting only"
+      },
+      {
+        "file": "scripts/physical_fixed_wilson_initializer_preparation_tournament_cycle636_2026_07_23.py",
+        "status": "EXECUTED_FILL_SYNDROME_SPAN",
+        "what_closes": "cap correction for supplied even/boundary-plus sector"
+      },
+      {
+        "file": "scripts/physical_fixed_wilson_initializer_preparation_tournament_cycle636_2026_07_23.py",
+        "status": "EXECUTED_ROOTED_GHZ_WAVEFRONT",
+        "what_closes": "three plus auxiliary reference rails after supplied seeds"
+      },
+      {
+        "file": "scripts/physical_fixed_wilson_initializer_preparation_tournament_cycle636_2026_07_23.py",
+        "status": "EXECUTED_DEFECT_PAIR_PUMP",
+        "what_closes": "root-free local motion, not sector genesis"
+      },
+      {
+        "file": "scripts/physical_fixed_wilson_initializer_preparation_tournament_cycle636_2026_07_23.py",
+        "status": "EXECUTED_BOUNDARY_AND_DOUBLED",
+        "what_closes": "boundary-seeded preparation and doubled character-rank audit only"
+      },
+      {
+        "file": "scripts/physical_full_rough_tableau_encoder_cycle_next.py",
+        "status": "NOT_CREATED_OPEN_TARGET_EQUIVALENT",
+        "what_closes": "full target+gauge-to-code E and returned work"
+      }
+    ],
+    "N6_partial_closure_paths": [
+      {
+        "file": "scripts/physical_fixed_wilson_initializer_preparation_tournament_cycle636_2026_07_23.py",
+        "status": "EXECUTED_RETAINED_EXHAUST_RESET",
+        "what_closes": "unitary syndrome/exhaust accounting only"
+      },
+      {
+        "file": "scripts/physical_fixed_wilson_initializer_preparation_tournament_cycle636_2026_07_23.py",
+        "status": "EXECUTED_FILL_SYNDROME_SPAN",
+        "what_closes": "cap correction for supplied even/boundary-plus sector"
+      },
+      {
+        "file": "scripts/physical_fixed_wilson_initializer_preparation_tournament_cycle636_2026_07_23.py",
+        "status": "EXECUTED_ROOTED_GHZ_WAVEFRONT",
+        "what_closes": "three plus auxiliary reference rails after supplied seeds"
+      },
+      {
+        "file": "scripts/physical_fixed_wilson_initializer_preparation_tournament_cycle636_2026_07_23.py",
+        "status": "EXECUTED_DEFECT_PAIR_PUMP",
+        "what_closes": "root-free local motion, not sector genesis"
+      },
+      {
+        "file": "scripts/physical_fixed_wilson_initializer_preparation_tournament_cycle636_2026_07_23.py",
+        "status": "EXECUTED_BOUNDARY_AND_DOUBLED",
+        "what_closes": "boundary-seeded preparation and doubled character-rank audit only"
+      },
+      {
+        "file": "scripts/physical_full_rough_tableau_encoder_cycle_next.py",
+        "status": "NOT_CREATED_OPEN_TARGET_EQUIVALENT",
+        "what_closes": "full target+gauge-to-code E and returned work"
+      }
+    ],
+    "N7_hostile_steelman": {
+      "actionable_test": "materialize the complete Cycle537 stabilizer/matter/gauge tableau at L3/L6/L7, synthesize and route a Clifford E, require exact logical conjugation, blank-work return, deletion, all24/all576, and then compose the committed full-Fock G",
+      "mechanism": "construct a routed symplectic-tableau Clifford encoder that accepts 6N target qubits and N-1 locally blank gauge qubits, grows all Cycle537 stabilizers from product ancillas, returns head/work rails, and uses a state-carried covariant wavefront rather than correcting an unknown Wilson sector",
+      "openness": "this target-equivalent route is untested, so no broad negative, shared obstruction, minimum content, or axiom pressure can ship",
+      "supporting_authorities": [
+        {
+          "line": 25,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_LOCAL_WILSON_FILL_DISK_CYCLE537_NOTE_2026-07-21.md",
+          "ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+          "relevance": "exact target-times-gauge algebra already exists"
+        },
+        {
+          "line": 135,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_SHARED_SEAM_CODE_SPACE_ISOMETRY_COMPILER_CYCLE539_NOTE_2026-07-21.md",
+          "ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+          "relevance": "compute/select/uncompute gives an explicit bounded-patch isometry pattern"
+        },
+        {
+          "line": 226,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_ROOT_FREE_CUTOFF_GAUGE_PREPARATION_TOURNAMENT_CYCLE598_NOTE_2026-07-22.md",
+          "ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+          "relevance": "scheduled local tree preparation is a positive mechanism despite supplied root/order"
+        }
+      ]
+    },
+    "N7_steelman": {
+      "actionable_test": "materialize the complete Cycle537 stabilizer/matter/gauge tableau at L3/L6/L7, synthesize and route a Clifford E, require exact logical conjugation, blank-work return, deletion, all24/all576, and then compose the committed full-Fock G",
+      "mechanism": "construct a routed symplectic-tableau Clifford encoder that accepts 6N target qubits and N-1 locally blank gauge qubits, grows all Cycle537 stabilizers from product ancillas, returns head/work rails, and uses a state-carried covariant wavefront rather than correcting an unknown Wilson sector",
+      "openness": "this target-equivalent route is untested, so no broad negative, shared obstruction, minimum content, or axiom pressure can ship",
+      "supporting_authorities": [
+        {
+          "line": 25,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_LOCAL_WILSON_FILL_DISK_CYCLE537_NOTE_2026-07-21.md",
+          "ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+          "relevance": "exact target-times-gauge algebra already exists"
+        },
+        {
+          "line": 135,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_SHARED_SEAM_CODE_SPACE_ISOMETRY_COMPILER_CYCLE539_NOTE_2026-07-21.md",
+          "ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+          "relevance": "compute/select/uncompute gives an explicit bounded-patch isometry pattern"
+        },
+        {
+          "line": 226,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_ROOT_FREE_CUTOFF_GAUGE_PREPARATION_TOURNAMENT_CYCLE598_NOTE_2026-07-22.md",
+          "ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+          "relevance": "scheduled local tree preparation is a positive mechanism despite supplied root/order"
+        }
+      ]
+    },
+    "N8_cross_cycle_echo": [
+      {
+        "applicability": "preparation remains exact target",
+        "citation_line": 140,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md",
+        "citation_ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+        "cycle": "Cycle532",
+        "mechanism": "rough target-times-gauge subsystem",
+        "retired": "ALGEBRA_AND_G_CLOSED_CONDITIONALLY"
+      },
+      {
+        "applicability": "Cycle636 retains exhaust but matter twist survives",
+        "citation_line": 49,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_WILSON_MEASUREMENT_RESET_STABILIZATION_CYCLE535_NOTE_2026-07-21.md",
+        "citation_ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+        "cycle": "Cycle535",
+        "mechanism": "measurement plus membrane reset",
+        "retired": "RESET_WITHOUT_EXHAUST_REFINED"
+      },
+      {
+        "applicability": "W_prepare stays open and W_embed is delegated to Cycle637",
+        "citation_line": 363,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_LOCAL_WILSON_FILL_DISK_CYCLE537_NOTE_2026-07-21.md",
+        "citation_ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+        "cycle": "Cycle537",
+        "mechanism": "bounded fill face/star complex",
+        "retired": "RAW_WILSON_ROWS_RETIRED_ALGEBRAICALLY"
+      },
+      {
+        "applicability": "possible method, not full-volume back-credit",
+        "citation_line": 38,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_SHARED_SEAM_CODE_SPACE_ISOMETRY_COMPILER_CYCLE539_NOTE_2026-07-21.md",
+        "citation_ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+        "cycle": "Cycle539",
+        "mechanism": "compute/select/uncompute patch encoder",
+        "retired": "PATCH_DENSE_ISOMETRY_RETIRED_ONLY"
+      },
+      {
+        "applicability": "supports scheduled-tree steelman, not Cycle532 closure",
+        "citation_line": 226,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_ROOT_FREE_CUTOFF_GAUGE_PREPARATION_TOURNAMENT_CYCLE598_NOTE_2026-07-22.md",
+        "citation_ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+        "cycle": "Cycle598",
+        "mechanism": "affine tree preparation",
+        "retired": "SCHEDULED_GAUGE_FIBER_PREP_POSITIVE_DIFFERENT_CODE"
+      }
+    ],
+    "Status": "PASS",
+    "artifact_status": "PASS_SCOPED_PREPARATION_PARTIALS_AND_EXACT_RESIDUALS_ONLY",
+    "axiom_pressure": false,
+    "axiom_pressure_claim": false,
+    "broad_no_go_claim": false,
+    "minimum_content_claim": false,
+    "pass": true,
+    "shared_obstruction_claim": false,
+    "shared_route_independent_obstruction": false
+  },
+  "note_contract": {
+    "missing": [],
+    "pass": true,
+    "required_fragments": [
+      "authority: **none**",
+      "audit: **unset**",
+      "author artifact status accepted: **false**",
+      "breakthrough bar met: **false**",
+      "o(l) local preparation",
+      "not a bounded local encoding `e`",
+      "does not establish a full-m64",
+      "no general novelty or priority is claimed",
+      "six actually attempted families",
+      "open route that is not counted",
+      "two independent walls",
+      "eight exact same-scope residual rows",
+      "shared route-independent obstruction: **not established**",
+      "axiom pressure: **none**"
+    ]
+  },
+  "note_sha256": "8427006703508c1648271b787b83cc70c8dbedb1aa068fb0edee4449a2fd587c",
+  "optimal_next_campaign": "after Cycle637 resolves embedding, materialize and locally route the complete Cycle537 symplectic-tableau Clifford E from 6N target plus N-1 fixed gauge inputs, return all work, and compose committed full-Fock G",
+  "pass": true,
+  "prior_art_and_novelty_boundary": {
+    "external_theorem_used_as_runner_evidence": false,
+    "general_novelty_or_priority_claim": false,
+    "repo_specific_contribution": "exact Cycle532/Cycle537 preparation separation with L3/L6/L7 resources, deletions, covariance, and full-isometry/gauge-vacuum firewall",
+    "standard_mechanism_classes": [
+      "GHZ/CNOT wavefront",
+      "stabilizer syndrome reset",
+      "defect-pair pumping",
+      "punctured boundary growth",
+      "doubled relative-sign constraints"
+    ]
+  },
+  "route_A2_fill_disk_pump": {
+    "host_free_pairing_or_convergence_law_supplied": false,
+    "pass_as_exact_route_disposition": true,
+    "pass_full_target": false,
+    "positive_conditional": "every even face-syndrome word is in the cap-interior correction span",
+    "reason": "the product of all face syndromes is the boundary Wilson; every cap-only edge flips two faces",
+    "route": "A2 local Cycle537 fill-check syndrome pumping",
+    "rows": [
+      {
+        "all_even_syndrome_basis_pairs_correctable": true,
+        "all_single_odd_syndromes_refused": true,
+        "cap_only_corrections_preserve_syndrome_parity": true,
+        "correction_incidence_rank": 8,
+        "delete_one_correction_edge_syndrome_faces": 2,
+        "face_syndrome_bits_per_axis": 9,
+        "face_syndrome_parity_equals_boundary_Wilson_sign": true,
+        "interior_edge_corrections_per_axis": 12,
+        "length": 3,
+        "local_pairing_depth_upper_bound": 6,
+        "pass": true
+      },
+      {
+        "all_even_syndrome_basis_pairs_correctable": true,
+        "all_single_odd_syndromes_refused": true,
+        "cap_only_corrections_preserve_syndrome_parity": true,
+        "correction_incidence_rank": 35,
+        "delete_one_correction_edge_syndrome_faces": 2,
+        "face_syndrome_bits_per_axis": 36,
+        "face_syndrome_parity_equals_boundary_Wilson_sign": true,
+        "interior_edge_corrections_per_axis": 60,
+        "length": 6,
+        "local_pairing_depth_upper_bound": 12,
+        "pass": true
+      },
+      {
+        "all_even_syndrome_basis_pairs_correctable": true,
+        "all_single_odd_syndromes_refused": true,
+        "cap_only_corrections_preserve_syndrome_parity": true,
+        "correction_incidence_rank": 48,
+        "delete_one_correction_edge_syndrome_faces": 2,
+        "face_syndrome_bits_per_axis": 49,
+        "face_syndrome_parity_equals_boundary_Wilson_sign": true,
+        "interior_edge_corrections_per_axis": 84,
+        "length": 7,
+        "local_pairing_depth_upper_bound": 14,
+        "pass": true
+      }
+    ],
+    "starting_boundary_W_plus_supplied": true,
+    "unknown_negative_Wilson_sector_repaired": false
+  },
+  "route_A_retained_exhaust_reset": {
+    "Cycle230_seam_preserved": false,
+    "Cycle535_twisted_target_identity_residual": 0.0,
+    "Wilson_positive_output_residual": 0.0,
+    "complete_target_seam_intertwiner_residual": 2.0,
+    "deletion": {
+      "delete_W_reset_W_residual": 2.0,
+      "delete_syndrome_copy_W_reset_residual": 2.0,
+      "delete_target_twist_target_residual": 0.0
+    },
+    "discarding_exhaust_would_be_noninvertible": true,
+    "exhaust_erased_or_called_Record": false,
+    "full_Fock_Gamma_P_preserved": false,
+    "full_unitary_inverse_residual": 0.0,
+    "host_outcome_selection": false,
+    "literal_unitary_dilation": "copy W syndrome to exhaust; controlled physical membrane action; reset W from exhaust",
+    "no_postselection": true,
+    "pass_as_exact_route_disposition": true,
+    "pass_full_target": false,
+    "retained_exhaust_equals_input_W_residual": 0.0,
+    "route": "A retained-exhaust coherent syndrome/reset",
+    "size_rows": [
+      {
+        "bounded_local_gate_support": true,
+        "controlled_Wilson_chunk_blocks": 27,
+        "fixed_cut_FSWAP_residual": 2.0,
+        "length": 3,
+        "maximum_controlled_chunk_support_M2": 9,
+        "maximum_three_axis_feedback_faces": 27,
+        "retained_syndrome_exhaust_bits": 3,
+        "signal_depth": "O(L), at least 3 propagation layers",
+        "uniform_cut_orbit_FSWAP_residual": 0.6666666666666666
+      },
+      {
+        "bounded_local_gate_support": true,
+        "controlled_Wilson_chunk_blocks": 54,
+        "fixed_cut_FSWAP_residual": 2.0,
+        "length": 6,
+        "maximum_controlled_chunk_support_M2": 9,
+        "maximum_three_axis_feedback_faces": 108,
+        "retained_syndrome_exhaust_bits": 3,
+        "signal_depth": "O(L), at least 6 propagation layers",
+        "uniform_cut_orbit_FSWAP_residual": 0.3333333333333333
+      },
+      {
+        "bounded_local_gate_support": true,
+        "controlled_Wilson_chunk_blocks": 63,
+        "fixed_cut_FSWAP_residual": 2.0,
+        "length": 7,
+        "maximum_controlled_chunk_support_M2": 9,
+        "maximum_three_axis_feedback_faces": 147,
+        "retained_syndrome_exhaust_bits": 3,
+        "signal_depth": "O(L), at least 7 propagation layers",
+        "uniform_cut_orbit_FSWAP_residual": 0.2857142857142857
+      }
+    ],
+    "worst_case_terminal_exhaust_leakage_from_blank_subspace": 1.0
+  },
+  "route_B2_root_free_defect_pump": {
+    "Wilson_plus_genesis": false,
+    "defect_process_leaving_the_reference_rail_algebra_exhausted": false,
+    "mechanism": "nearest-neighbor pair flips move/annihilate defects without a root",
+    "pass_as_exact_route_disposition": true,
+    "pass_full_target": false,
+    "positive": "support-two updates are translation/proper-cubic covariant and can rearrange defects",
+    "reason": "every root-free pair flip preserves the loop character",
+    "route": "B2 root-free local defect-pair pump",
+    "rows": [
+      {
+        "basis_words_exhausted": 8,
+        "both_character_sectors_nonempty": true,
+        "global_Wilson_character_preserved": true,
+        "length": 3,
+        "local_pair_flip_transitions": 24,
+        "pass": true,
+        "unique_plus_absorbing_sector": false
+      },
+      {
+        "basis_words_exhausted": 64,
+        "both_character_sectors_nonempty": true,
+        "global_Wilson_character_preserved": true,
+        "length": 6,
+        "local_pair_flip_transitions": 384,
+        "pass": true,
+        "unique_plus_absorbing_sector": false
+      },
+      {
+        "basis_words_exhausted": 128,
+        "both_character_sectors_nonempty": true,
+        "global_Wilson_character_preserved": true,
+        "length": 7,
+        "local_pair_flip_transitions": 896,
+        "pass": true,
+        "unique_plus_absorbing_sector": false
+      }
+    ]
+  },
+  "route_B_state_carried_seed_wavefront": {
+    "autonomous_after_seed_genesis": false,
+    "bounded_local_encoding_E_per_cell": false,
+    "coupling_reference_to_unknown_rough_sector_without_twist": false,
+    "global_tick_schedule_supplied_not_physical_time": true,
+    "pass_as_exact_route_disposition": true,
+    "pass_full_target": false,
+    "prepares_auxiliary_reference_rails_not_Cycle532_physical_code": true,
+    "proper_cubic_schedule_orbit": {
+      "frame_products": 576,
+      "pass": true,
+      "proper_cubic_frames": 24,
+      "rows": [
+        {
+          "frame_failures": 0,
+          "group_failures": 0,
+          "length": 3,
+          "oriented_loop_labels": 18
+        },
+        {
+          "frame_failures": 0,
+          "group_failures": 0,
+          "length": 6,
+          "oriented_loop_labels": 36
+        },
+        {
+          "frame_failures": 0,
+          "group_failures": 0,
+          "length": 7,
+          "oriented_loop_labels": 42
+        }
+      ],
+      "runtime_frame_selector": false
+    },
+    "reason_not_fully_autonomous": "the head carries branch state but a global tick/edge schedule is still supplied",
+    "route": "B state-carried rooted GHZ wavefront",
+    "rows": [
+      {
+        "CNOT_deletion_rows": [
+          {
+            "full_X_Wilson_in_output_stabilizer_span": false,
+            "omitted_CNOT": 0
+          },
+          {
+            "full_X_Wilson_in_output_stabilizer_span": false,
+            "omitted_CNOT": 1
+          }
+        ],
+        "GHZ_reference_code_leakage_residual": 0.0,
+        "GHZ_stabilizer_rank_per_axis": 3,
+        "accepted_origin_word_per_oriented_schedule": 1,
+        "average_initializer_M2_per_coarse_cell": 1.0,
+        "delete_seed_H_full_X_Wilson_in_span": false,
+        "exact_GHZ_stabilizer_span": true,
+        "inverse_exact": true,
+        "length": 3,
+        "maximum_head_controlled_data_gate_support_M2": 3,
+        "maximum_uncontrolled_Clifford_or_head_gate_support_M2": 2,
+        "one_M2_H_calls": 3,
+        "onehot_head_code_words": 3,
+        "parallel_three_axis_depth": 7,
+        "pass": true,
+        "terminal_blank_work_overlap": 0.0,
+        "terminal_head_position": 2,
+        "terminal_visited_count": 2,
+        "terminal_work_leakage_from_blank_subspace": 1.0,
+        "three_Wilson_data_rails_M2": 9,
+        "three_onehot_head_rails_M2": 9,
+        "three_retained_visited_rails_M2": 9,
+        "total_reference_initializer_M2": 27,
+        "two_M2_CNOT_calls": 6,
+        "two_M2_head_SWAP_calls": 6,
+        "two_M2_visited_copy_calls": 6,
+        "zero_or_multihead_words_outside_declared_code": 5
+      },
+      {
+        "CNOT_deletion_rows": [
+          {
+            "full_X_Wilson_in_output_stabilizer_span": false,
+            "omitted_CNOT": 0
+          },
+          {
+            "full_X_Wilson_in_output_stabilizer_span": false,
+            "omitted_CNOT": 1
+          },
+          {
+            "full_X_Wilson_in_output_stabilizer_span": false,
+            "omitted_CNOT": 2
+          },
+          {
+            "full_X_Wilson_in_output_stabilizer_span": false,
+            "omitted_CNOT": 3
+          },
+          {
+            "full_X_Wilson_in_output_stabilizer_span": false,
+            "omitted_CNOT": 4
+          }
+        ],
+        "GHZ_reference_code_leakage_residual": 0.0,
+        "GHZ_stabilizer_rank_per_axis": 6,
+        "accepted_origin_word_per_oriented_schedule": 1,
+        "average_initializer_M2_per_coarse_cell": 0.25,
+        "delete_seed_H_full_X_Wilson_in_span": false,
+        "exact_GHZ_stabilizer_span": true,
+        "inverse_exact": true,
+        "length": 6,
+        "maximum_head_controlled_data_gate_support_M2": 3,
+        "maximum_uncontrolled_Clifford_or_head_gate_support_M2": 2,
+        "one_M2_H_calls": 3,
+        "onehot_head_code_words": 6,
+        "parallel_three_axis_depth": 16,
+        "pass": true,
+        "terminal_blank_work_overlap": 0.0,
+        "terminal_head_position": 5,
+        "terminal_visited_count": 5,
+        "terminal_work_leakage_from_blank_subspace": 1.0,
+        "three_Wilson_data_rails_M2": 18,
+        "three_onehot_head_rails_M2": 18,
+        "three_retained_visited_rails_M2": 18,
+        "total_reference_initializer_M2": 54,
+        "two_M2_CNOT_calls": 15,
+        "two_M2_head_SWAP_calls": 15,
+        "two_M2_visited_copy_calls": 15,
+        "zero_or_multihead_words_outside_declared_code": 58
+      },
+      {
+        "CNOT_deletion_rows": [
+          {
+            "full_X_Wilson_in_output_stabilizer_span": false,
+            "omitted_CNOT": 0
+          },
+          {
+            "full_X_Wilson_in_output_stabilizer_span": false,
+            "omitted_CNOT": 1
+          },
+          {
+            "full_X_Wilson_in_output_stabilizer_span": false,
+            "omitted_CNOT": 2
+          },
+          {
+            "full_X_Wilson_in_output_stabilizer_span": false,
+            "omitted_CNOT": 3
+          },
+          {
+            "full_X_Wilson_in_output_stabilizer_span": false,
+            "omitted_CNOT": 4
+          },
+          {
+            "full_X_Wilson_in_output_stabilizer_span": false,
+            "omitted_CNOT": 5
+          }
+        ],
+        "GHZ_reference_code_leakage_residual": 0.0,
+        "GHZ_stabilizer_rank_per_axis": 7,
+        "accepted_origin_word_per_oriented_schedule": 1,
+        "average_initializer_M2_per_coarse_cell": 0.1836734693877551,
+        "delete_seed_H_full_X_Wilson_in_span": false,
+        "exact_GHZ_stabilizer_span": true,
+        "inverse_exact": true,
+        "length": 7,
+        "maximum_head_controlled_data_gate_support_M2": 3,
+        "maximum_uncontrolled_Clifford_or_head_gate_support_M2": 2,
+        "one_M2_H_calls": 3,
+        "onehot_head_code_words": 7,
+        "parallel_three_axis_depth": 19,
+        "pass": true,
+        "terminal_blank_work_overlap": 0.0,
+        "terminal_head_position": 6,
+        "terminal_visited_count": 6,
+        "terminal_work_leakage_from_blank_subspace": 1.0,
+        "three_Wilson_data_rails_M2": 21,
+        "three_onehot_head_rails_M2": 21,
+        "three_retained_visited_rails_M2": 21,
+        "total_reference_initializer_M2": 63,
+        "two_M2_CNOT_calls": 18,
+        "two_M2_head_SWAP_calls": 18,
+        "two_M2_visited_copy_calls": 18,
+        "zero_or_multihead_words_outside_declared_code": 121
+      }
+    ],
+    "seed_position_orientation_and_plus_state_supplied": true,
+    "state_carried_control_on_declared_onehead_schedule": true,
+    "strongest_positive": "after one supplied oriented seed per axis, a scheduled state-carried head wavefront prepares three + GHZ Wilson reference rails with bounded support three and O(L) depth"
+  },
+  "route_C_boundary_and_doubled": {
+    "doubled_neutral": {
+      "absolute_plus_signs_derived": false,
+      "deleting_one_relative_constraint_rank": 2,
+      "individual_plus_constraints_needed_for_both_copies": 6,
+      "minimum_persistent_rough_M2_per_cell_before_bridge_roles": 44,
+      "paired_local_growth_prepares_relative_signs": false,
+      "physical_local_initializer_constructed": false,
+      "relative_Wilson_constraints": 3,
+      "relative_constraint_rank": 3,
+      "residual_diagonal_characters": 3,
+      "scope": "six-bit topological-character algebra only",
+      "two_copy_character_dimension": 6
+    },
+    "pass_as_exact_route_disposition": true,
+    "pass_full_target": false,
+    "proper_cubic_axis_permutation_failures": 0,
+    "punctured_boundary_growth": {
+      "periodic_Cycle532_code_isometry": false,
+      "positive": "a supplied boundary plus seed grows a pure plus rail with local support and O(L) depth",
+      "residual": "removing or not fixing the boundary seed yields an equal plus/minus mixture, not a plus initializer",
+      "rows": [
+        {
+          "closing_puncture_without_seed_sign_derives_plus": false,
+          "delete_one_growth_CNOT_detected": true,
+          "length": 3,
+          "opposite_seed_Wilson_expectation": -0.9999999999999998,
+          "pass": true,
+          "plus_minus_reference_overlap": 0.0,
+          "punctured_open_chain_local_growth_depth": 3,
+          "supplied_plus_seed_Wilson_expectation": 0.9999999999999998,
+          "unfixed_or_discarded_seed_Wilson_expectation": 0.0
+        },
+        {
+          "closing_puncture_without_seed_sign_derives_plus": false,
+          "delete_one_growth_CNOT_detected": true,
+          "length": 6,
+          "opposite_seed_Wilson_expectation": -0.9999999999999998,
+          "pass": true,
+          "plus_minus_reference_overlap": 0.0,
+          "punctured_open_chain_local_growth_depth": 6,
+          "supplied_plus_seed_Wilson_expectation": 0.9999999999999998,
+          "unfixed_or_discarded_seed_Wilson_expectation": 0.0
+        },
+        {
+          "closing_puncture_without_seed_sign_derives_plus": false,
+          "delete_one_growth_CNOT_detected": true,
+          "length": 7,
+          "opposite_seed_Wilson_expectation": -0.9999999999999998,
+          "pass": true,
+          "plus_minus_reference_overlap": 0.0,
+          "punctured_open_chain_local_growth_depth": 7,
+          "supplied_plus_seed_Wilson_expectation": 0.9999999999999998,
+          "unfixed_or_discarded_seed_Wilson_expectation": 0.0
+        }
+      ]
+    },
+    "route": "C punctured-boundary and doubled-neutral preparation"
+  },
+  "route_by_route_disposition": {
+    "A2_fill_check_pump": "EXACT_EVEN_SYNDROME_CORRECTION_CONDITIONAL_ON_BOUNDARY_PLUS",
+    "A_retained_exhaust_reset": "EXACT_PLUS_RESET_BUT_TARGET_SEAM_RESIDUAL_TWO",
+    "B2_root_free_defect_pump": "EXACT_CHARACTER_CONSERVATION_NOT_GENESIS",
+    "B_state_carried_wavefront": "PASS_SCHEDULED_AUXILIARY_PLUS_REFERENCE_O_L_NOT_AUTONOMOUS",
+    "C_doubled_neutral": "PASS_CHARACTER_RANK_AUDIT_ONLY_THREE_DIAGONAL_CHARACTERS_LEFT",
+    "C_punctured_boundary": "PASS_ONLY_WITH_SUPPLIED_BOUNDARY_SIGN",
+    "full_Cycle532_Cycle537_E": "OPEN_NOT_CONSTRUCTED"
+  },
+  "runner_sha256": "d4a3321943078dbe5dfc1fb598705fbe361c0edb80c2f790643bd3d5f2352b39",
+  "semantic_promotion_boundary": {
+    "Record_or_actuality": null,
+    "author_artifact_status_accepted": false,
+    "autonomous_seed_genesis": null,
+    "auxiliary_plus_reference_preparation": "POSITIVE_AFTER_SUPPLIED_SEEDS",
+    "bounded_local_encoding_E": null,
+    "breakthrough_bar_met": false,
+    "fixed_cap_embedding_W_embed": null,
+    "full_M64_EG": null,
+    "full_code_preparation_W_prepare": null,
+    "gauge_vacuum_genesis": null,
+    "time_energy_source_gravity_Born": null
+  },
+  "shared_route_independent_obstruction": false,
+  "shared_substrate_obstruction": false,
+  "shore": {
+    "committed_shore_head": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+    "expected_sha256": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_LOCAL_WILSON_FILL_DISK_CYCLE537_NOTE_2026-07-21.md": "e413a8c079fa2d5ff14d1b46d19df60cd07d853d118b51d8494632cc03a427f8",
+      "docs/work_history/repo/review_feedback/PHYSICAL_ROOT_FREE_CUTOFF_GAUGE_PREPARATION_TOURNAMENT_CYCLE598_NOTE_2026-07-22.md": "6f5f9e52ef41e8b6cd4863eec6c40fff3d8047612c6596e926123617016ab1e0",
+      "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md": "5f668f6cc04a5eece23f913d5869f57553df583c23d6dbb5cdac6756be41bfc3",
+      "docs/work_history/repo/review_feedback/PHYSICAL_SHARED_SEAM_CODE_SPACE_ISOMETRY_COMPILER_CYCLE539_NOTE_2026-07-21.md": "7d95064985bd9b2d6312ec49fa738f86fd7bba289316539a06f71931a958fcc1",
+      "docs/work_history/repo/review_feedback/PHYSICAL_WILSON_MEASUREMENT_RESET_STABILIZATION_CYCLE535_NOTE_2026-07-21.md": "169990a0af77c49a24b7e8f27999359e524c7c4f90bfba983cc970ec27d8ecc2",
+      "outputs/physical_local_wilson_fill_disk_cycle537_receipt_2026_07_21.json": "ebe7222afedba7907dcff9e233b2bc30284af8d35d5d7cae1941668ed81c5856",
+      "outputs/physical_root_free_cutoff_gauge_preparation_tournament_cycle598_receipt_2026_07_22.json": "d5a47bf415883fdf95e2faf0c74f4e8b0e2caa7b75c8fc504f89e984834f19b6",
+      "outputs/physical_rough_gauge_subsystem_quotient_cycle532_receipt_2026_07_21.json": "ee9687bb73f7a2e67c90b78fececad3d3db5af4f80ef2140bb81937d09a04391",
+      "outputs/physical_shared_seam_code_space_isometry_compiler_cycle539_receipt_2026_07_21.json": "a7ddfe66a47b8cca5374e13b67add2f1ed87dffc68b8b510df502a627c2c39d0",
+      "outputs/physical_wilson_measurement_reset_stabilization_cycle535_receipt_2026_07_21.json": "0b669c37071ff859531531280fcd10a2a084e4f026a1ec3609a51ea74e6f38f7",
+      "scripts/physical_local_wilson_fill_disk_cycle537_2026_07_21.py": "cd00034db5e106accfd95e33de5c9b3b2a26b2c35719611454c3486481ad47ac",
+      "scripts/physical_root_free_cutoff_gauge_preparation_tournament_cycle598_2026_07_22.py": "89c733e3be55ec287e338c4d9ed6062ec8cb222345ff72596662c43b3f1ae6a5",
+      "scripts/physical_rough_gauge_subsystem_quotient_cycle532_2026_07_21.py": "8bf1c836661b4c902d09cf2f7d147b07c3083404569ce9bc0a2b3dd4820233da",
+      "scripts/physical_shared_seam_code_space_isometry_compiler_cycle539_2026_07_21.py": "aa126a6363f9fc8c08d28a47b840c1b6e0a7c0b47bbe296087340b804a0087d1",
+      "scripts/physical_wilson_measurement_reset_stabilization_cycle535_2026_07_21.py": "f5d245e5e10b3a999b0d177f0ee2c3ac353b5636a1e0c026a0d6201be2bf2c1f"
+    },
+    "observed_sha256": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_LOCAL_WILSON_FILL_DISK_CYCLE537_NOTE_2026-07-21.md": "e413a8c079fa2d5ff14d1b46d19df60cd07d853d118b51d8494632cc03a427f8",
+      "docs/work_history/repo/review_feedback/PHYSICAL_ROOT_FREE_CUTOFF_GAUGE_PREPARATION_TOURNAMENT_CYCLE598_NOTE_2026-07-22.md": "6f5f9e52ef41e8b6cd4863eec6c40fff3d8047612c6596e926123617016ab1e0",
+      "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md": "5f668f6cc04a5eece23f913d5869f57553df583c23d6dbb5cdac6756be41bfc3",
+      "docs/work_history/repo/review_feedback/PHYSICAL_SHARED_SEAM_CODE_SPACE_ISOMETRY_COMPILER_CYCLE539_NOTE_2026-07-21.md": "7d95064985bd9b2d6312ec49fa738f86fd7bba289316539a06f71931a958fcc1",
+      "docs/work_history/repo/review_feedback/PHYSICAL_WILSON_MEASUREMENT_RESET_STABILIZATION_CYCLE535_NOTE_2026-07-21.md": "169990a0af77c49a24b7e8f27999359e524c7c4f90bfba983cc970ec27d8ecc2",
+      "outputs/physical_local_wilson_fill_disk_cycle537_receipt_2026_07_21.json": "ebe7222afedba7907dcff9e233b2bc30284af8d35d5d7cae1941668ed81c5856",
+      "outputs/physical_root_free_cutoff_gauge_preparation_tournament_cycle598_receipt_2026_07_22.json": "d5a47bf415883fdf95e2faf0c74f4e8b0e2caa7b75c8fc504f89e984834f19b6",
+      "outputs/physical_rough_gauge_subsystem_quotient_cycle532_receipt_2026_07_21.json": "ee9687bb73f7a2e67c90b78fececad3d3db5af4f80ef2140bb81937d09a04391",
+      "outputs/physical_shared_seam_code_space_isometry_compiler_cycle539_receipt_2026_07_21.json": "a7ddfe66a47b8cca5374e13b67add2f1ed87dffc68b8b510df502a627c2c39d0",
+      "outputs/physical_wilson_measurement_reset_stabilization_cycle535_receipt_2026_07_21.json": "0b669c37071ff859531531280fcd10a2a084e4f026a1ec3609a51ea74e6f38f7",
+      "scripts/physical_local_wilson_fill_disk_cycle537_2026_07_21.py": "cd00034db5e106accfd95e33de5c9b3b2a26b2c35719611454c3486481ad47ac",
+      "scripts/physical_root_free_cutoff_gauge_preparation_tournament_cycle598_2026_07_22.py": "89c733e3be55ec287e338c4d9ed6062ec8cb222345ff72596662c43b3f1ae6a5",
+      "scripts/physical_rough_gauge_subsystem_quotient_cycle532_2026_07_21.py": "8bf1c836661b4c902d09cf2f7d147b07c3083404569ce9bc0a2b3dd4820233da",
+      "scripts/physical_shared_seam_code_space_isometry_compiler_cycle539_2026_07_21.py": "aa126a6363f9fc8c08d28a47b840c1b6e0a7c0b47bbe296087340b804a0087d1",
+      "scripts/physical_wilson_measurement_reset_stabilization_cycle535_2026_07_21.py": "f5d245e5e10b3a999b0d177f0ee2c3ac353b5636a1e0c026a0d6201be2bf2c1f"
+    },
+    "pass": true,
+    "receipt_semantics": {
+      "Cycle532_gauge_factor": true,
+      "Cycle532_initializer_open": true,
+      "Cycle532_target_factor": true,
+      "Cycle535_full_Fock_fails": true,
+      "Cycle535_reset_seam_fails": true,
+      "Cycle537_embedding_open": true,
+      "Cycle537_preparation_open": true,
+      "Cycle537_target_times_gauge": true,
+      "Cycle537_three_Wilsons_local_span": true,
+      "Cycle539_reference_open": true,
+      "Cycle598_tree_not_autonomous": true
+    },
+    "working_tree_bytes_used_as_premise": false,
+    "working_tree_comparison_sha256": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_LOCAL_WILSON_FILL_DISK_CYCLE537_NOTE_2026-07-21.md": "e413a8c079fa2d5ff14d1b46d19df60cd07d853d118b51d8494632cc03a427f8",
+      "docs/work_history/repo/review_feedback/PHYSICAL_ROOT_FREE_CUTOFF_GAUGE_PREPARATION_TOURNAMENT_CYCLE598_NOTE_2026-07-22.md": "065192627b0c56b59d75a0ea837f26179b76579aa3e0783bc020092f173963ac",
+      "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md": "5f668f6cc04a5eece23f913d5869f57553df583c23d6dbb5cdac6756be41bfc3",
+      "docs/work_history/repo/review_feedback/PHYSICAL_SHARED_SEAM_CODE_SPACE_ISOMETRY_COMPILER_CYCLE539_NOTE_2026-07-21.md": "7d95064985bd9b2d6312ec49fa738f86fd7bba289316539a06f71931a958fcc1",
+      "docs/work_history/repo/review_feedback/PHYSICAL_WILSON_MEASUREMENT_RESET_STABILIZATION_CYCLE535_NOTE_2026-07-21.md": "169990a0af77c49a24b7e8f27999359e524c7c4f90bfba983cc970ec27d8ecc2",
+      "outputs/physical_local_wilson_fill_disk_cycle537_receipt_2026_07_21.json": "c0a8e15dca6f4e5d237bbb21d53a78a826f7c29c5287b5adc806655a80af7c00",
+      "outputs/physical_root_free_cutoff_gauge_preparation_tournament_cycle598_receipt_2026_07_22.json": "c8a27819fb1907d20aa9c73a7d66a2b8c0cc37b532da4686ef32a80996d909c1",
+      "outputs/physical_rough_gauge_subsystem_quotient_cycle532_receipt_2026_07_21.json": "01f4716903ee1d0a2338d42a83001add9a0aaf5e0707e010380d99d21b7847b6",
+      "outputs/physical_shared_seam_code_space_isometry_compiler_cycle539_receipt_2026_07_21.json": "a7ddfe66a47b8cca5374e13b67add2f1ed87dffc68b8b510df502a627c2c39d0",
+      "outputs/physical_wilson_measurement_reset_stabilization_cycle535_receipt_2026_07_21.json": "1d8515d7e6904d8008ee0ee6e66d4e51501c985b7de40c44525ded3c7077a4f4",
+      "scripts/physical_local_wilson_fill_disk_cycle537_2026_07_21.py": "225e37e9d69931a702bda220f5d4859e319a937d9b156bc6d62b672a2934d8fc",
+      "scripts/physical_root_free_cutoff_gauge_preparation_tournament_cycle598_2026_07_22.py": "5702ac74768c83bd97d0860ad827a5a66809c8bfbfafb2dd010982bcb917be51",
+      "scripts/physical_rough_gauge_subsystem_quotient_cycle532_2026_07_21.py": "a768d4250e55399c03e6084614a772953e6bcdf1570b9e7c50ac8d18544cfe6a",
+      "scripts/physical_shared_seam_code_space_isometry_compiler_cycle539_2026_07_21.py": "aa126a6363f9fc8c08d28a47b840c1b6e0a7c0b47bbe296087340b804a0087d1",
+      "scripts/physical_wilson_measurement_reset_stabilization_cycle535_2026_07_21.py": "41a9b6b1c9982e709ab5fe17ae9bfd202a4821745e686680667c0f6af04c00a5"
+    }
+  },
+  "six_wall_ledger": {
+    "C_int": "exact reset seam twist; conditional G unchanged and no new interaction",
+    "C_local": "local wavefront/syndrome/all24/all576/inverse/deletion controls; O(L) prep not bounded E and W_embed separate",
+    "C_num": "exact L3/L6/L7 ranks/resources/sectors/deletions; dimension equality is not an isometry",
+    "C_ref": "bounded-support O(L) plus-reference rails after supplied seeds/ticks; gauge reference and full E open",
+    "C_source": "seed/blank/exhaust/doubled resources explicit; no energy/stress/source/gravity or autonomous genesis",
+    "C_wrap": "head/visited/exhaust provenance retained; not Record/time/actuality/history"
+  },
+  "status": "positive O(L) state-carried auxiliary plus-reference preparation; no bounded local Cycle532/Cycle537 E or full-M64 E/G",
+  "strongest_constructive_result": "after three supplied oriented plus seeds, a scheduled state-carried bounded-support invertible wavefront prepares the three auxiliary Wilson plus-reference rails in O(L) depth with retained head/visited provenance and all24/all576 covariance",
+  "tests_failed": 0,
+  "tests_passed": 10
+}

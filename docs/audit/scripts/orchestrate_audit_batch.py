@@ -1196,6 +1196,10 @@ def recover_lane_certification_provenance_drift(
         return False
     if not stat.S_ISREG(working_stat.st_mode):
         return False
+    if stat.S_IMODE(working_stat.st_mode) != 0o644:
+        return False
+    if working_stat.st_nlink != 1:
+        return False
     working_signature = _file_snapshot_signature(working_stat)
 
     provenance_pattern = re.compile(
@@ -1324,6 +1328,14 @@ def clean_main_error(*, honor_cancel: bool = True) -> str | None:
     if status.returncode != 0:
         return "cannot determine worktree status"
     if status.stdout.strip():
+        path = REPO_ROOT / LANE_CERTIFICATION_PATH
+        try:
+            recognition_snapshot = (
+                path.read_bytes(),
+                _file_snapshot_signature(path.lstat()),
+            )
+        except OSError:
+            return "working tree is not clean"
         recognized = recover_lane_certification_provenance_drift(
             status.stdout,
             honor_cancel=honor_cancel,
@@ -1339,6 +1351,15 @@ def clean_main_error(*, honor_cancel: bool = True) -> str | None:
         if status_after.stdout.splitlines() != [
             f" M {LANE_CERTIFICATION_PATH}"
         ]:
+            return "working tree is not clean after provenance recognition"
+        try:
+            stable_snapshot = (
+                path.read_bytes(),
+                _file_snapshot_signature(path.lstat()),
+            )
+        except OSError:
+            return "working tree is not clean after provenance recognition"
+        if stable_snapshot != recognition_snapshot:
             return "working tree is not clean after provenance recognition"
     return None
 

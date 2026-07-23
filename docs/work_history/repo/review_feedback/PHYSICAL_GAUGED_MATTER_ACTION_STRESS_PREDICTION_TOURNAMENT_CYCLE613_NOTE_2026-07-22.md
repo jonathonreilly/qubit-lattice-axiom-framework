@@ -1,76 +1,98 @@
-# Cycle 613 — physical gauged-matter/action/stress/prediction tournament
+# Cycle 613 — conditional F17 link gauging, coframe comparison, and source test
 
 Date: 2026-07-22
 Authority: none
 Audit: unset
+Author artifact status accepted: false
+Audit verdict inferred from dependencies: false
 Constitutional effect: none
 
-## Decisive question and preregistration
+## Question and scope
 
-Can one local physical law select source normalization, local stress, the zero mode, and reciprocal response while retaining the accepted six-mode coin–stream–contact matter law, without a supplied compensator or charged neutral compiler words?
+Cycle 613 asks what follows if a supplied compact F17 link action and a supplied unit representation are coupled to the Cycle219/230 coin–stream–contact algebra. It tests three routes on L3, held L6, and out-of-sample held L7, with all 24 proper-cubic frames, all 576 ordered frame products, inverse, deletion, zero-mode, and finite-horizon controls.
 
-Cycle 613 tests three routes independently. Route A gauges the entire accepted matter update with compact dynamical link variables. Route B varies one explicit action/coframe object and then attacks the uniqueness of the resulting canonical tensor. Route C carries the automatically generated continuity source to the existing no-refit prediction shore. A failure of one route is only a route compatibility falsification. It is not gravity, a gravity no-go, a minimum-content theorem, or axiom pressure.
+The result is conditional algebra. It does not fully gauge a physical matter law. F17 modulus, unit representation, coupling and sign, link-field identity, action normalization, physical M2 placement/packing/leakage, metric identity, stress selection, trace choice, and source identity remain supplied or open. No wrapped label is physical energy, stress, rate, or time.
 
-The tested domains are L3, held-out L6, and out-of-sample held-out L7. The control surface includes all 24 proper-cubic frames, all 576 ordered frame products, joint inverse, F17 leakage, current/source deletion, zero mode, and finite-horizon residuals. The update count and Cesàro horizon are not called physical time. F17 labels are not called stress or energy.
+## Evidence shore
 
-## Read-only foundation and science shore
+The complete Cycle611 and Cycle604 quartets are byte-pinned. Cycle611 supplies the exact unit-current normalization identity and the stream coframe Ward class with two conserved improvements, while explicitly leaving physical charge, stress, source, physical M2 lowering, and time open. Cycle604 supplies the frozen no-refit 5/(32pi) graph-monopole comparator, not a gravity law or physical interface.
 
-The current foundation supplies Lattice, Qubit, Admissibility, and Record. The approved primitives supply a scale reference, kinetic-form isotropy, and a realized-state slot. They do not supply a dynamics, compact gauge group, representation charge, physical coupling, action normalization, stress tensor, source law, metric, or operational gravitational response.
+Only the Cycle576 receipt is directly pinned for Cycle576 evidence. The used scope is its distinct actual-Regge metric/edge Bianchi and local deficit-source Ward evidence. That receipt leaves source sign, normalization, frame preparation, physical stress or Einstein identification, and physical M2 composition open. Cycle613 does not identify its link arrays with the Cycle576 Regge variables.
 
-The science shore is byte-pinned to Cycle 611 and its Cycle 219/230 mass/contact/seam fixtures, Cycle 604's reciprocal 5/(32pi) prediction surface, and Cycle 576's distinct Regge-deficit/Bianchi construction. Cycle 576 is retained as an alternative metric/source route; its result is not silently identified with the gauge-link law below.
+The runner freezes the full transitive runtime-import closure, including every script reached through Cycle611. No dependency is used to infer audit acceptance or author acceptance.
 
-## Route A — compact gauge-link action
+## Route A — conditional compact-link algebra
 
-The explicit action candidate is
+The supplied candidate expression is
 
-`A = sum_links [E DeltaQ - E^2/2] + sum_hops psi* U[Q] psi - sum_plaquettes B^2/2 - g sum_x binom(N_x,2)`.
+`A_alg = sum_links [E DeltaQ - inv2 E^2] + sum_hops psi* U[Q] psi - inv2 sum_plaquettes B^2 - g sum_x binom(N_x,2)`,
 
-Here `Q_a(x), E_a(x)` are compact F17 positive-link words; `B_ab = D+_a Q_b - D+_b Q_a`; and the gauge transformation is `psi_x -> omega^theta_x psi_x`, `Q_a(x) -> Q_a(x) + theta(x+e_a)-theta(x)`. The full accepted coin is onsite and commutes with that local phase. The contact is a function of onsite occupation and is invariant. The stream acquires the Peierls link phase.
+with `inv2=9 mod 17` in the link-word sector. Its gauge transformation is `psi_x -> omega^theta_x psi_x`, `Q_a(x) -> Q_a(x)+theta(x+e_a)-theta(x)`. The onsite coin commutes with the site phase and the contact depends only on onsite occupation.
 
-The candidate joint update uses the matter branch current `J`, the magnetic curl gradient, and the reciprocal kick `E <- E-J-grad(B^2/2)`, `Q <- Q+E`. It tests local continuity, magnetic Bianchi cancellation, exact joint inverse, full coin/contact gauge covariance, and preservation of the local Gauss word `G_x = div E_x-rho_x`. All 64 local occupation words are exhausted, and one coherent 64-amplitude coin/contact input is carried by the controlled basis map without host-side branch selection. This is a sparse basiswise realization of the linear controlled map, not a measurement. Current deletion must produce a nonzero signal.
+The tested conditional update debits the oriented branch current from `E`, adds the magnetic plaquette gradient, and then updates `Q`. It reexecutes gauge covariance, local continuity, invariant Gauss word, reciprocal current kick, magnetic Bianchi cancellation, exact inverse, and proper-cubic controls. All 64 local occupation words and one 64-amplitude input are propagated through the basiswise controlled map without host branch selection.
 
-The unit representation charge is derived only relative to the supplied compact representation. It is not a derived absolute physical coupling. Overall action normalization is also supplied. On a periodic torus an isolated unit charge is not in the Gauss code space: total divergence is zero. Cycle 613 does not repair that by charging neutral compiler words and does not use a supplied compensator. Open boundary flux and a derived opposite-charge sector remain live alternatives.
+This basiswise linear map is not counted as a coherent physical update. The Gauss word is preserved but no physical local constraint circuit is compiled. The F17 arrays are not physical link registers; their local placement, packing, routing, code space, leakage, and physical nearest-neighbor schedule are unevaluated. An isolated unit occupation is outside the tested periodic Gauss surface because total periodic divergence vanishes. Open flux and opposite charge remain live.
 
-## Route B — action-sector variation and stress ambiguity
+## Route B — Cycle611 coframe/stress comparison
 
-The explicit varied object is the Peierls matter-hop plus onsite-contact sector, `A_matter = sum_hops psi* exp(iQ) psi - g sum_x binom(N_x,2)`, with a chosen positive-link coframe variation. The contact term has zero U(1)/hop-coframe variation because it depends only on onsite occupation. Symmetric endpoint incidence averaging yields a proper-cubic covariant canonical tensor for that localization. The electric and magnetic link-sector coframe derivative is not silently included. This is a canonical tensor of the chosen action sector, not a unique tensor of the full joined action and not a unique physical stress or stress-energy tensor.
+Route B reexecutes the Cycle611 unit-probe matter-stream coframe derivative, retains the explicit coin force in the Ward identity, and tests the same two improvements: a symmetric double-difference tensor and a curl/superpotential tensor. Both redistribute local values while preserving discrete divergence and integrated tensor, and their flattened family rank is two.
 
-Two nonzero local improvement families are tested: a symmetric double-derivative improvement and a curl/superpotential improvement. Both have vanishing discrete divergence and vanishing integrated tensor on the periodic domain, while redistributing local values. In addition, action rescaling by two leaves stationary equations and gauge symmetry unchanged but doubles the candidate source tensor. Therefore the tested law does not select either the improvement coefficient or absolute source normalization.
+The F17 link sector is not included in this coframe variation. The endpoint-averaged matter tensor is one comparator in a conserved class, not a selected physical stress tensor. Neither improvement coefficient, trace/component choice, metric identity, action normalization, nor source identity follows from these tests.
 
-## Route C — automatic continuity source versus prediction
+## Route C — divJ versus monopole comparator
 
-For a unit localized matter occupation streamed equally into the six directions, the automatic source is
+For one localized occupation split equally among six directions,
 
 `sigma = rho_before-rho_after = div J = L delta_0/6`.
 
-It belongs to the zero-total dipolar/divergence family but, more precisely, is a Laplacian source: a sum of six branch dipoles whose cubic first moment also vanishes. Its own exact static response is `delta_0/6 - 1/(6 L^3)`. The finite-horizon response is tested against that result on L3/L6/L7. Deleting one current branch breaks the zero mode and must be detected.
+This is a zero-total Laplacian source with exact periodic static response `delta_0/6-1/(6L^3)`. Route C tests that identity, its finite-horizon response, deletion, covariance, and inverse-independent zero-mode controls on L3/L6/L7.
 
-This source has zero far-field cubic coefficient and is preregistered as incompatible with the existing monopole coefficient 5/(32pi), with no parameter refit. That is a compatibility falsification of `div J` as the source for that monopole prediction. It does not falsify open-boundary flux, opposite-charge sectors, Regge/coframe sources, metric response, or gravity generally. Matched words are not promoted to events or Records.
+The divJ response differs without refit from the frozen 5/(32pi) graph-monopole comparator. This is a route-specific compatibility falsifier, not a shared source obstruction. Open boundary flux, opposite charge, Regge/coframe response, quasienergy variation, and a physical joint compiler remain live.
 
-## Supplied and derived structure
+The causal-time statement is comparison-only. Rate modulation can correspond to delay in the pinned comparison. A 5:4 advance needs an Event/count edit, and Cycle613 implements no such path, imports no time runner, and derives no event association.
 
-Supplied: compact U(1) and its unit representation; F17 arithmetic and symplectic update order; the Cycle 219 coin and Cycle 230 contact; periodic boundary; overall action normalization; coframe localization; the two improvement definitions; finite horizons; the 5/(32pi) comparator; the matched-word mapping; and aggregate rather than physical nearest-neighbor execution.
+## Structure inventory
 
-Derived or executed: full coin/stream/contact gauge covariance; Peierls current and reciprocal electric kick; local Gauss preservation; magnetic Bianchi identity; exact joint inverse; proper-cubic covariance; a canonical tensor for the selected localization; the rescaling discriminator; two conserved improvements; the `div J=L delta/6` identity; its exact local static response; and the no-refit monopole compatibility test.
+Supplied: compact F17 modulus and Q/E link-array identities; unit representation; coupling and sign; candidate action coefficients, order, and normalization; Cycle219 coin; Cycle230 stream/contact; periodic boundary; equal-six-direction fixture; coframe probe; endpoint averaging; both improvement formulas; trace choice; finite horizons; and the 5/(32pi) comparator.
 
-Not derived: absolute physical coupling; absolute action normalization; unique physical stress; metric or operational gravitational response; isolated-charge genesis on the compact torus; a monopole source; a physical M2 nearest-neighbor schedule; causal time; event selection; Born probability; or Record actuality.
+Executed: conditional coin/stream/contact gauge covariance; reciprocal current kick; continuity and Gauss-word preservation; magnetic Bianchi identity; exact modular inverse; proper-cubic controls; explicit-coin-force Ward identity; two rank-two conserved improvements; `divJ=Ldelta/6`; exact local static response; and the no-refit compatibility discriminator.
 
-## Full no-go discipline
+Open: physical charge/coupling normalization; physical link-field identity; physical M2 placement, packing, routing, constraints, and leakage; full joined action variation; metric identity; physical stress and source selection; open-flux or opposite-charge genesis; Regge/coframe or quasienergy source selection; physical rate/time; the 5:4 Event/count-edit mechanism; Record; Born probability; and realized history.
 
-N1 — Normalized alternatives include compact link gauging, joined-action coframe variation, continuity-source response, the retained Regge-deficit action, open-boundary flux, a particle/antiparticle charged sector, and quasienergy/log-unitary metric variation.
+## No-go discipline gate
 
-N2 — The seven named walls—normalization, stress improvement, periodic zero mode, metric identification, prediction compatibility, physical packing, and event realization—are audited pairwise. Closing one does not automatically close another.
+N1 — Five normalized families are marked exactly `ATTEMPTED`: compact-link gauge covariance; reciprocal current/Gauss-word map; magnetic plaquette curl; matter-stream coframe Ward class; and equal-six-direction divJ static comparison. The live list is open-boundary flux, opposite charge, Cycle576 Regge/coframe joining, quasienergy/full joined variation, and a literal physical M2 compiler. No live route is presented as ruled out.
 
-N3 — Hidden walls include the supplied U(1) group, unit representation, F17 modulus, symplectic order, action scale, periodic boundary, coframe localization, improvement definitions, finite horizons, prediction coefficient, matched-word mapping, and aggregate scheduler.
+N2 — Seven walls are tracked: coefficients, link identity, physical compiler, stress/source selection, zero mode, route scope, and causal-time realization. All 21 pairs have typed `left_to_right`, `right_to_left`, and `independence` fields. Each direction and each independence judgment is `NOT_ESTABLISHED`, because no closure intervention and cross-retest was executed. The artifact therefore does not assert wall independence.
 
-N4 — Residual matching is explicit: Cycle 611 supplies the exact unit current and improvement ambiguity; Cycle 576 is a different Regge metric route; Cycle 604 supplies the exact monopole comparator tested by Route C.
+N3 — The exact required hidden-condition phrase scan has no note hits. The explicit supplied list includes F17 modulus, unit representation, coupling/sign, link identity, action scale, periodic boundary, coframe probe, improvement formulas, trace choice, horizons, comparator, and physical packing.
 
-N5 — Rhetoric audit: the gauge-link law is not called gravity; the canonical tensor is not called physical stress-energy; response, update counts, and matched words are not called physical time, events, Records, or probabilities.
+N4 — Exact residual matching is recorded with path, line, match, same-scope, and use-as-closure flags:
 
-N6 — Partial-closure paths remain live: open boundary flux, an opposite-charge matter sector, joined Regge/coframe variation, quasienergy variation, and physical path-coloring/packing.
+| Witness | Line | Match | Same scope | Use as closure | Cycle613 use |
+|---|---:|---|---|---|---|
+| `scripts/physical_matter_variation_current_stress_compensator_source_tournament_cycle611_2026_07_22.py` | 411 | true | true | true | unit Peierls current used in reciprocal kick |
+| same Cycle611 runner | 599 | true | true | true | same Ward/improvement formulas reexecuted |
+| `scripts/physical_rational_regge_reciprocal_response_prediction_bridge_cycle604_2026_07_22.py` | 1105 | true | true | true | same frozen numerical comparator only |
+| `scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py` | 477 | false | false | false | distinct Regge Bianchi residual, retained live |
+| Cycle611 runner | 614 | true | true | false | physical M2 lowering remains unevaluated |
+| Cycle611 runner | 742 | true | true | false | causal comparison boundary persists |
 
-N7 — Steelman: a hostile reviewer should reject a broad negative because any of those live routes could make the zero mode lawful, supply a monopole-compatible source, or select a stress representative. Route C only rules out the automatic periodic `div J` source for the named shore.
+N5 — The receipt contains five-resolution rows for: charge/coupling normalization, link-array versus physical compiler, coframe tensor versus physical stress/source, divJ versus all source routes, and phase/response arrays versus time/Event. Each row has `per_element`, `per_site`, `per_mode`, `per_block`, and `lattice_wide` fields.
 
-N8 — Cross-cycle echo: Cycles 564/576 retained action/current and Regge constructions with normalization open; Cycles 604/611 incrementally closed reciprocal-response and current imports; Cycle 613 sharpens, but does not constitutionally close, the source/stress residual.
+N6 — Partial-closure rows have `file`, `status`, and `closure`: the pinned executed Cycle611 parent, the pinned executed Cycle604 comparator, the pinned distinct-live Cycle576 receipt, and this narrowed Cycle613 note. Open flux, opposite charge, joined Regge/coframe or quasienergy variation, and physical M2 lowering remain implementation paths rather than new-axiom claims.
 
-Broad negative gate: FAIL / DO NOT SHIP. There is no shared obstruction, no minimum-content claim, and no axiom pressure.
+N7 — Actionable hostile steelman: construct explicit open-boundary flux and an opposite-charge sector; then run full joined Regge/coframe or quasienergy variation and a literal physical M2 link/matter compiler. The cited surfaces are Cycle576 runner lines 472–478, Cycle604 runner lines 1118–1121, and Cycle611 runner lines 599–614. Any one could alter the source or stress conclusion.
+
+N8 — Row-wise echoes cover Cycle576 Regge evidence, Cycle604 comparator scope, Cycle609 aggregate-array lowering limits, Cycle611 current/improvements, the Cycle611 causal comparison, and Cycle613's periodic divJ result. Each row states the earlier result and its effect on current scope.
+
+Negative gate: FAIL / DO NOT SHIP NEGATIVE.
+Narrowed positive: PASS.
+Negative claim shipped: false.
+Shared obstruction: false.
+Minimum-content claim: false.
+No axiom pressure.
+
+## Disposition
+
+The strongest result is conditional: supplied F17 and unit-representation data yield exact gauge covariance, reciprocal current kick, continuity/Gauss-word preservation, magnetic Bianchi cancellation, inverse, and proper-cubic controls. The real falsification is limited to the equal-six-direction periodic divJ source against the frozen monopole comparator. There is no confirmed breakthrough and no physical maturity promotion.

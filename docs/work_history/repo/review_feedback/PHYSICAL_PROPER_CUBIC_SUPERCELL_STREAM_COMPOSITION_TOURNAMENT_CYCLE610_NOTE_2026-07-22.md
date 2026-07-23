@@ -1,230 +1,328 @@
-# Cycle 610 — physical proper-cubic supercell stream/composition tournament
+# Cycle 610 — conditional proper-cubic coarse-grid stream placement
 
-**Authority: none**
+Date: 2026-07-22
+Authority: none
+Audit: unset
+Author artifact status accepted: false
+Breakthrough: false
+Broad-negative gate: FAIL / DO NOT SHIP
+Constitutional effect: none
 
-**Audit: unset**
-**Date: 2026-07-22**
+## Corrected verdict
 
-## Result
+Cycle 610 preserves a large exact **conditional coarse-grid construction**.
+Given a supplied `K=129` periodic partition/origin, structural role coloring,
+and role orientation,
+each `129^3 = 2,146,689`-site cell has explicit A/B storage, work, face-channel,
+and bus coordinates. The coordinate word is bounded, support-one/two, and
+nearest-neighbor relative to that supplied partition. The accepted factor order
+is
 
-Route A closes the scoped physical-packing residual left by Cycle 606.  A
-translation-invariant `129^3 = 2,146,689`-M2 cubic supercell now contains the
-A/B words, equality flag/work, face ports and channels, onsite work, 24
-physical one-hot role-orientation M2s, and 24 reusable predicate flag/work M2s.
-On the declared code it supplies a literal support-two nearest-neighbor word
+```text
+Cycle-230 coin -> Cycle-606 register stream -> Cycle-230 contact.
+```
 
-`E G_coarse = G_physical E`.
+The previous promotion to a one-site translation-covariant physical M2 law is
+false. The runner now directly reproduces the decisive code-space falsifier:
 
-The word is not selected by a Python frame parameter.  The same autonomous
-rule is the product of 24 mutually exclusive branches: the same autonomous rule
-acts in every lawful orientation sector.  Branch `h` performs an
-exact C24X compute of
+| L | split | tagged sites | overlap with +x unit translate | symmetric difference |
+|---:|---|---:|---:|---:|
+| 3 | train | 2,457 | 972 | 2,970 |
+| 6 | held | 19,656 | 7,776 | 23,760 |
+| 7 | held-out-size | 31,213 | 12,348 | 37,730 |
 
-`P_h = o_h AND (AND_{g != h} NOT o_g)`,
+The declared persistent tagged motif contains 91 sites per supplied coarse
+cell: 42 A/B word/equality roles, 24 orientation roles, 24 predicate-work
+roles, and one onsite-work role. Only 36 roles per cell overlap the motif
+translated by one fine site in x. The nonzero symmetric differences show that
+the declared tagged code support is not invariant under a standard physical
+unit translation. The earlier “translation” loops covered only 27, 216, and
+343 coarse-cell displacements—physical displacements by multiples of 129 fine
+sites.
 
-then the accepted Cycle 230 factor order: `P_h`-controlled onsite coin,
-controlled Cycle 606 stream (completing `U=S C`), and controlled onsite
-contact, followed by exact inverse C24X uncompute.  Each
-C24X uses 45 exact Toffoli calls, 46 one-M2 X gates, 22 clean conjunction work
-M2s, and one flag M2: 721 already-lowered support-one/two gates for compute and
-721 for uncompute.  The orientation M2s are unchanged.  Exactly-one-hot and
-nearest-neighbor equality are bounded local constraints; their uniform genesis
-is still supplied.
+Therefore this artifact is not a completed physical M2 compiler, not a physical
+intertwiner, and not a one-fine-site translation-covariant law. It is a bounded
+conditional placement with useful exact register and coordinate evidence.
 
-The physical compiler is intentionally enormous, not optimized.  One branch
-contains 770,876 lowered primitive gates before bus moves and
-102,693,692,972 returned bus SWAPs.  The full 24-branch autonomous product has
-18,501,024 lowered primitives and 2,464,648,631,328 returned bus SWAPs per
-coarse cell.  This is constant overhead and bounded depth independent of L,
-but it is a feasibility construction rather than a plausible economical law.
+## Promotion test contract
 
-## Literal routing, rather than a distance count
+The runner byte-checks `docs/MINIMAL_AXIOMS_2026-06-29.md` against current
+`origin/main`. Lines 37-41 state the test contract: physical sites form the
+cubic `Z^3` lattice with nearest-neighbor adjacency, standard translations,
+proper rotations about each site, and no privileged site. Those lines are used
+only as a promotion contract. No axiom or foundation text is edited, and no new
+dynamics is inferred from the contract.
 
-Every support-two primitive is represented by its ordered endpoint M2s, its
-two indices on a Hamiltonian nearest-neighbor bus through all 2,146,689 sites,
-the exact opening SWAP interval, the adjacent application edge, and the reverse
-interval.  All 2,146,688 bus edges were checked for nearest-neighbor adjacency,
-and the coordinate/index inverse had zero failures.  The largest realized bus
-distance was 1,168,111.  Move/apply/restore is a conjugation, so intermediate
-data are restored even when the bus is not blank.
+The present 129-period motif fails the standard-translation/no-privileged-site
+promotion test. This is route-specific narrowing, not a shared obstruction, so
+no axiom pressure is established.
 
-The one identity-frame word is frozen by a literal route hash.  Each of the
-other 23 words is its explicit integer proper-cubic spatial image.  Their
-rotation-normalized words agree.  The runner checks all 576 frame products on
-1,492 route-generator coordinates, for 859,392 composition checks with zero
-failure, as well as 35,808 rotated-bus endpoint/index checks.  Thus all 24
-one-hot sectors are accepted by the same covariant rule; no frame is supplied
-by host-side control.
+## Frozen dependency shore
 
-The 72 cross-face port SWAPs per branch require both adjacent predicates.  A
-source predicate is copied to the clean M2 one step inside its face and the
-target predicate is copied to the corresponding target M2.  A literal
-five-site line then applies CNOT, exact triple-controlled X, CNOT, after which
-both copies are uncomputed.  Its 110 direct nearest-neighbor microsteps have
-clean-scratch controlled-SWAP residual `7.80e-16`, scratch leakage `2.16e-16`,
-and full-unitarity residual `6.06e-15`.
+The runner directly byte-pins the final accepted Cycle-606 quartet and the
+final Cycle-603 quartet, plus the Cycle-230 seam runner/note. It reconstructs
+and verifies the complete inherited transitive science graph and enumerates
+the actual runtime science modules. Git status, ancestry, PR numbering, and
+author status are not scientific evidence.
 
-The physical hash is order-sensitive.  A direct Cycle 230 factor audit gives
-`||U-SC||=0` and a `0.5202793649` difference between the accepted
-coin -> stream -> contact step and the reversed contact-before-free schedule.
-On the seeded random antisymmetric probe, deleting coin, stream, or contact
-changes the output by `1.90208`, `1.99689`, and `0.088280`, respectively.  The
-contact/free-generator noncommutation witness is `2.39348`.  Thus factor order
-is tested content of the compiled word, not prose inferred from separate
-fixture preservation.  The fixed microstep order is supplied law content; it
-is not physical time.
+This local supercell Cycle 610 is distinct from the causal-time Cycle 610 in
+PR #5557. The repeated cycle number is only a naming collision; no causal-time
+claim or evidence is imported here.
 
-## Geometry and global controls
+## What remains exact
 
-The cubic cell has side `K=129` and local coordinates `[-64,64]^3`.  Three
-species centers are separated, and source and target routes use disjoint role
-families.  Each physical cell is simultaneously the source of one directed
-bond and the target of another without sharing port roles.  The exact schedule
-serializes operations within a cell; identical cell-bus microsteps run in
-parallel because the translated supercell boxes tile the fine torus
-bijectively.  Cross-bond five-site supports were checked exhaustively.
+### Conditional fine-coordinate schedule
 
-For L3, L6, and L7, respectively, the controlled global audit checked 11,664,
-93,312, and 148,176 five-line supports over all 24 frames, six directions,
-three species, and every cell.  Every vertex conflict, edge conflict,
-nearest-neighbor failures, and wrap seam failures were all zero.  Every
-coarse translation—27, 216, and 343—was checked.  The earlier explicit flag
-shuttle audit also retained zero conflicts across
-3,125,952/25,007,616/39,711,168 routed edge instances and
-11,664/93,312/148,176 cross edges on L3/L6/L7; each size executed 50,112
-frame/direction path-template microsteps.
+Within the supplied cell partition, the base stream schedule has 44,544
+coordinate gate instances per coarse cell, support at most two, and zero
+nearest-neighbor adjacency failures. One orientation-controlled branch has
+770,876 lowered primitive descriptors and 102,693,692,972 returned bus SWAPs.
+The full 24-branch product counts 18,501,024 primitives and
+2,464,648,631,328 returned SWAPs per coarse cell. These are enormous constant
+resource upper bounds, not energy or gravity source terms.
 
-The schedule is an update factorization: the schedule is not time.  Its depth
-is not a causal duration, and its site or gate count is not energy or a gravity
-source.
+The Hamiltonian bus covers all 2,146,689 sites. All 2,146,688 consecutive bus
+edges and the coordinate/index inverse pass. The maximum route distance is
+1,168,111. Each move/apply/restore descriptor identifies the exact opening
+SWAP interval, adjacent application edge, and returned interval.
 
-## Semantics and adversarial controls
+The dual-neighbor cross-face comparator compiles 72 controlled SWAP rows per branch on
+literal five-site lines with 110 microsteps each. Its controlled-SWAP residual
+is `7.795215032290469e-16`, scratch-return leakage is
+`2.157913621781963e-16`, and full-unitarity residual is
+`6.055588362377014e-15`.
 
-The declared code is: valid A words; B, path, equality and predicate work
-blank; exactly one of the 24 physical orientation M2s hot in every cell with
-the same neighbor value; and the inherited exactly-one-carrier-per-species
-global sector.  On that code, exactly one controlled branch acts.  Bus routing
-and predicate compute/uncompute are exact conjugations, so the already tested
-Cycle 606 register permutation is the logical action.
+These are conditional coordinate and local-circuit facts. The runner does not
+compose a literal physical encoder, does not evaluate a physical intertwiner
+residual, and does not evaluate full physical-code leakage; those fields are
+`false`/`null`.
 
-The train/held/held-out-size semantics suite uses L3/L6/L7.  It covers every
-site, all three species, and labels 1 through 9; blank-buffer return; exact
-inverse; ten random full-space inverse trials per L; deletion of scatter,
-clear, and swap macro factors; duplicate-carrier collisions; label order; and
-the Cycle 600 exterior/seam fixtures.  All lawful and inverse failures remain
-zero.  Duplicate-carrier malformed states remain reversible but leave the
-declared code; they are not repaired.
+### Register EG, inverse, deletion, and malformed controls
 
-For clean predicate work, zero-hot and multi-hot orientation words activate no
-branch, so the selected-action extension is identity and the compute/uncompute
-work returns.  Arbitrary dirty predicate work is outside the code; the full
-gate product remains unitary, but no identity-extension claim is made there.
+The Cycle-606 double-buffer semantics are reexecuted at L3/L6/L7:
 
-The composed one-particle mass fixture is preserved.  The inherited compiled
-full-16 coin residual is `8.62e-14`, its cubic symmetry residual is `1.73e-16`,
-and clean scratch leakage is `2.89e-15`.  The local contact and inverse-contact
-phase residuals are zero.  Cycle 600 coin/contact/local-stream seam E/G
-residuals are `1.15e-15`, zero, and zero; the compiled word-coin E/G residual
-is `4.03e-13`.  These are exact move/apply/restore composition checks, not a
-claim that the inherited beta and contact-g analog angles have been derived.
+| L | lawful rows | register EG / inverse EG | random inverses | deletion scatter/clear/swap | collisions leaving code / inverse failures |
+|---:|---:|---:|---:|---:|---:|
+| 3 | 729 | 0 / 0 | 10 / 0 | 2 / 1 / 2 | 15 / 0 |
+| 6 | 5,832 | 0 / 0 | 10 / 0 | 2 / 1 / 2 | 15 / 0 |
+| 7 | 9,261 | 0 / 0 | 10 / 0 | 2 / 1 / 2 | 15 / 0 |
+
+All 105 word-label pairs commute within scatter and clear; the tested label order
+is explicit, and reverse plus
+all24-rotated enumerations reproduce each sublayer. Duplicate-carrier states
+remain reversible but leave the declared code; they are not repaired.
+
+The exact identity established here is only
+
+```text
+E_register G_coarse = G_conditional-register E_register
+```
+
+on the declared register sector. It is not
+`E_physical G_coarse = G_physical E_physical`.
+
+### Mass, contact, seam, and factor order
+
+The inherited one-particle mass fixture remains preserved at the conditional
+routing scope. Exact residuals are:
+
+```text
+full-16 compiled mass coin                 8.619648052454238e-14
+cubic coin symmetry                        1.731958809481102e-16
+coin scratch return                        2.890151575626252e-15
+contact / inverse-contact phase            0 / 0
+Cycle-600 coin EG                          1.154543706932542e-15
+Cycle-600 contact EG                       0
+Cycle-600 local stream/seam EG             0
+compiled word-coin EG                      4.0336968129257627e-13
+```
+
+The Cycle-230 free factorization residual is zero. Reversing the accepted
+schedule changes the result by `0.5202793649337463`. Deleting coin, stream, or
+contact changes the seeded probe by `1.9020837629144585`,
+`1.9968896435700219`, and `0.08827995040981686`. The contact/free-generator
+noncommutation witness is `2.3934793937974876`.
+Factor order is supplied law content; the schedule is not time.
+
+## Exact covariance scope
+
+- Coarse-grid translations: all 27/216/343 cell displacements pass. Each step
+  is 129 fine sites. These are not one-fine-site translations.
+- Unit translations: the one-fine-site x code-support test is directly
+  executed and fails invariance by 2,970/23,760/37,730 sites. All six unit
+  direction differences are recorded in the receipt.
+- All 24: rotated role/path/bus branch coordinate realizations are executed
+  about supplied coarse-cell origins.
+- All 576: 859,392 route-generator coordinate composition checks pass, as do
+  35,808 rotated-bus realization checks. This is a conditional coordinate
+  group action, not 576 physical update-covariance tests.
+- Proper rotations about every fine physical site are not executed.
+- L3/L6/L7 wrap-seam adjacency, conditional bus conflicts, and five-line
+  support conflicts remain zero at their declared coarse-grid scope.
+
+## Constraint audit
+
+Cycle 610 executes the 24 lawful exactly-one truth rows and the zero-hot,
+two-hot, and all-hot identity-extension tables. It also counts a six-edge
+coarse-cell syndrome for one changed orientation word at each L. The C24X
+predicate computation/uncomputation is a literal conditional gate word.
+
+None of those is a locally enforced nearest-neighbor admissibility gadget; the
+supplied code conditions are not locally enforced.
+There is no literal fine-NN exactly-one enforcement law, no literal fine-NN
+uniform-equality enforcement law, and no preparation, rejection, repair,
+cooling, or penalty dynamics. The exactly-one and equality sectors remain
+supplied code conditions. A truth table or syndrome counter is not enforcement.
 
 ## Supplied structure
 
-The construction still supplies, explicitly:
+The construction explicitly supplies:
 
-1. the `129^3` supercell placement and bounded structural role/color motif;
-2. the uniform physical one-hot role orientation and its crystalline phase;
-3. blank B/path/equality/predicate work at encoding;
-4. the inherited global exactly-one-carrier-per-species sector;
-5. the Cycle 230 coin -> stream -> contact order and the scatter/clear/swap
-   macro factorization;
-6. calibrated beta/contact-g parameterized rotations;
-7. periodic L3/L6/L7 fixtures, although the local rule never queries L.
+1. the K-periodic coarse partition/origin and structural role coloring;
+2. the identity-frame canonical motif and its 24 coarse-origin rotations;
+3. the uniform one-hot orientation table and genesis;
+4. blank B/path/flag/predicate work;
+5. the global exactly-one-carrier-per-species sector;
+6. coin -> stream -> contact and scatter -> clear -> swap factor order;
+7. beta/contact-g parameterized rotations;
+8. periodic L3/L6/L7 fixtures.
 
-There is no global Jordan-Wigner parity string, parity service, preferred
-carrier ordering, host frame selector, origin query, or size query.  The
-bounded role motif and uniform one-hot genesis are imports, not derived
-features, and must not be hidden by the phrase translation invariant.
+There is no runtime Jordan-Wigner parity string, nonlocal parity service,
+carrier ordering, frame query, or size query. That does not remove the supplied
+static coarse origin/coloring.
 
 ## Route disposition
 
-- **Route A — compact double buffer:** constructive success on the declared
-  code.  Physical one-hot selection, literal NN selector/control routing,
-  dual-neighbor cross control, onsite mass/contact composition, global
-  conflicts, all 24 frames, all 576
-  frame products, L3/L6/L7, every translation, and wrap seam checks pass.
-- **Route B — direction-expanded lanes:** not triggered in Cycle 610.  The
-  Cycle 606 register result remains a valid fallback, but its 28-M2 local
-  exchange and its own physical packing were not silently credited here.
-- **Route C — state-carried phase/time multiplexing:** not triggered.  Its
-  uniform phase genesis and physical packing remain imports; no schedule is
-  called physical time.
+- Route A retains an exact conditional K-grid coordinate construction and
+  exact register semantics, but fails physical promotion under a one-fine-site
+  translation.
+- Route B’s Cycle-606 lane result remains a register comparator. It is not
+  silently credited as a physical repair of the translation-phase problem.
+- Route C’s state-carried scheduling phase suggests the strongest repair
+  pattern, but its current phase is not a translation-origin phase and is not
+  physical time.
+- A naive unlabelled union of all `K^3` translated motif supports fills the
+  fine cell and is translation-invariant as a set, but aliases distinct role
+  labels. It is not an injective encoder.
 
-## Six-wall dependency ledger
+The strongest live repair is a state-carried translation phase
+`phi in Z_129^3`, or an injective co-present union of translated role copies.
+A unit translation must map `phi -> phi+e_i`, while mutually exclusive
+`P_(phi,h)` branches select the translated and rotated coordinate word. The
+repair must construct literal fine-NN phase recognition/admissibility and test
+one-fine-site code-domain plus update covariance.
 
-- `C_ref`: advanced within the compiler lane.  A host-selected frame has been
-  replaced by counted one-hot M2 state and a proper-cubic covariant autonomous
-  branch product.  Uniform orientation/role genesis is still supplied, so the
-  broad reference wall is not retired.
-- `C_num`: unchanged.  Beta/contact-g analog angles and finite-precision
-  scaling remain open.
-- `C_wrap`: unchanged.  Wrapped phase is not called energy.
-- `C_int`: advanced.  The exact Cycle 603 mass/contact block and Cycle 606
-  stream now compose inside one physical NN word on the declared code; the
-  calibrated coupling and malformed collision sector remain.
-- `C_local`: the specific Cycle 606 simultaneous physical-supercell packing
-  residual is closed constructively.  Economical overhead, autonomous role
-  genesis, local particle-sector generation, and collision repair remain.
-- `C_source`: unchanged.  Auxiliary, carrier, and gate counts are bookkeeping,
-  not a source or gravity derivation.
+## Six-wall ledger
 
-## N1–N8 no-go discipline
+- `C_ref`: not retired. Proper-cubic coordinate orbits pass conditionally, but
+  the K-periodic origin/coloring privileges a translation phase.
+- `C_num`: unchanged. Beta/contact-g precision remains imported.
+- `C_wrap`: unchanged. Wrapped phase is not called energy.
+- `C_int`: advanced only conditionally. Register stream and mass/contact/seam
+  fixtures compose inside a supplied coordinate word; physical EG/leakage and
+  collision repair remain open.
+- `C_local`: narrowed. Bounded conditional placement passes, while one-site
+  translation covariance and locally enforced admissibility fail promotion.
+- `C_source`: unchanged. Site, role, and gate counts are bookkeeping, not
+  source or energy.
 
-**N1.** Six normalized families remain separated: physical one-hot compact
-Route A; direction-expanded Route B; state-carried Route C; co-present 24-copy
-orbit coding; cell Hamiltonian-bus composition; and bounded role-color
-scheduling.  Route A and the bus composition are the positive result; the
-others remain live alternatives or fallbacks.
+## No-Go Discipline Gate — N1 through N8
 
-**N2.** Uniform orientation genesis, the global one-carrier sector, blank work,
-analog calibration, and macro factorization are pairwise independent supplied
-structures.  Closing physical routing does not close any of them.
+### N1 — normalized alternatives
 
-**N3.** The hidden-wall scan exposes the one-hot orientation M2s, clean work,
-structural motif, empty spacer sites, full bus, exactly-one sector, periodic
-fixtures, and calibrated angles.  No Python selector survives in the update.
+Six qualifying families use only exact markers:
 
-**N4.** The Cycle 606 physical-packing residual is matched and closed by the
-literal controlled word.  The Cycle 603 analog-angle residual and the Cycle
-606 malformed duplicate-carrier residual are matched but not closed.
+1. `ATTEMPTED`: fixed-origin K-periodic conditional supercell; conditional
+   routing passes, unit-translation promotion fails.
+2. `ATTEMPTED`: compact double-buffer register stream; register EG/inverse and
+   deletion pass, physical encoder/covariance remains open.
+3. `ATTEMPTED`: 24 proper-cubic orientation-controlled branches; coarse-origin
+   coordinate action passes, translation phase remains supplied.
+4. `ATTEMPTED`: Hamiltonian-bus/five-line primitive descriptors; conditional
+   routing residuals pass, full physical intertwiner/leakage is absent.
+5. `ATTEMPTED`: unlabelled union of all translated motif supports; set support
+   becomes invariant but role-label injectivity fails.
+6. `RULED OUT BY PRIOR`: independent crossed-link tables alone; Cycle-603 note
+   lines 153-172 explicitly says they are not one torus update.
 
-**N5.** “Physical compiler” is restricted to the declared code and supplied
-role sector.  “All 24” means mutually exclusive physical predicates, not a host
-choice.  A schedule is not time, site count is not energy, and auxiliary state
-is not a source.
+The state-carried translation phase and injective translated-copy union are
+`OPEN / NOT COUNTED AS ATTEMPTED OR RULED OUT`.
 
-**N6.** Live partial-closure paths are autonomous preparation of the role
-phase, a reversible local collision/syndrome reservoir, certified epsilon
-synthesis for beta/g, and a much smaller packing searched under the same
-collision certificate.
+### N2 — wall independence
 
-**N7.** A hostile reviewer should reject any claim that orientation genesis,
-particle-number control, analog angles, or the huge overhead are unavoidable.
-Ordered phases, orbit/lane codes, syndrome reservoirs, and synthesis are live
-constructive counterroutes.
+The collapsed walls are: supplied K-periodic origin/coloring; fine-NN
+admissibility enforcement; physical encoder/intertwiner/leakage; global
+one-carrier sector; blank-work genesis; analog calibration; and macro factor
+order. All 21 unordered pairs are recorded in both directions. No automatic
+implication or shared witness is constructed. This is a dependency inventory,
+not a shared obstruction.
 
-**N8.** Cycles 580, 600, 603, and 606 repeatedly turned apparent services into
-bounded objects.  Cycle 610 does the same for physical simultaneous packing.
-That cross-cycle echo weighs against an impossibility or minimum-content claim.
+### N3 — hidden-wall scan
 
-No negative claim is shipped.  No shared obstruction is established, and
-there is no axiom pressure.
+The required phrases are classified in the receipt. `canonical` is
+load-bearing here: it names the supplied identity-frame motif/path convention,
+so it is promoted to the K-periodic origin/coloring wall. Blank work,
+one-carrier sector, periodic sizes, one-hot/equality tables, spacer sites, and
+the frozen origin are explicit. No “standard QFT” or “obvious” step carries
+weight.
 
-## Next campaign
+### N4 — residual matching
 
-The highest-value next step is to replace the supplied uniform role-orientation
-phase and inherited global one-carrier sector by autonomous local
-preparation/syndrome dynamics.  In parallel, search for a smaller covariant
-cell using this exact conflict certificate and add a declared volume/horizon
-precision budget for beta/contact g.  The current result should be retained as
-a constructive upper bound, not mistaken for a minimal architecture.
+Cycle-606 note lines 25-29 and 104-107 names the missing physical
+encoder/product/intertwiner/leakage and one-site covariance. That residual
+matches and remains open: physical residual is null and the exact translation
+symmetric differences are nonzero. Cycle-603 note lines 120-130 matches the
+analog-angle import; it remains open. Cycle-606 note lines 80-88 and 167-180
+matches the collision/sector residual; all 15 collision pairs leave code and
+are reversible, not repaired. No mismatched witness is used.
+
+### N5 — rhetoric at multiple resolutions
+
+The receipt separately audits coarse-cell versus one-fine-site translation;
+literal coordinates versus encoder/intertwiner; truth tables versus NN
+enforcement; role/path group action versus physical update covariance; register
+EG versus physical EG; factor schedule versus causal time; and counts versus
+source/energy. Untested resolutions remain open.
+
+### N6 — partial-closure paths
+
+The file/status/what-closes table retains Cycles 580, 603, 606, and this local
+Cycle 610 at their exact scopes. The priority open path is a state-carried
+`Z_129^3` phase with literal fine-NN recognition and unit-translation tests.
+Other live paths are an injective union of translates, explicit admissibility
+gadgets, physical encoder/intertwiner/leakage, reversible collision syndrome,
+and certified epsilon synthesis. These are constructive import-retirement
+routes, not requests for new axioms.
+
+### N7 — hostile steelman
+
+A hostile reviewer can replace the privileged origin by a state-carried
+translation phase, make unit translations permute that phase, and compile all
+translated/rotated conditional words under one local rule. Alternatively, an
+injective co-present translated-copy code could let translations permute copy
+labels. Cycle 610 tests only one supplied phase and finds no contradiction to
+either route; the naive union fails merely by role aliasing. The terminal
+obligation is literal NN admissibility, one-site domain/update covariance,
+every-site rotations, physical encoder/intertwiner/leakage, deletion, and held
+sizes. Status is `OPEN / no retained authority`.
+
+This actionable steelman makes the broad-negative gate FAIL / DO NOT SHIP.
+
+### N8 — cross-cycle echo
+
+Cycles 560/563 retired decoder and ordering services using explicit encoders
+and transported colors. Cycle 580 materialized one bounded physical layout.
+Cycle 603 materialized local role-event gates. Cycle 606 materialized the
+global register stream. Local Cycle 610 materializes only a conditional
+coordinate placement. The same constructive pattern points to a transported
+translation phase and explicit local gadgets, so no impossibility,
+minimum-content, shared-obstruction, or axiom-pressure claim is justified.
+
+## Final disposition
+
+The narrowed conditional positive artifact passes. Physical-M2-law promotion,
+the broad negative, minimum-content claim, shared obstruction, axiom pressure,
+and breakthrough all fail or remain false. The next campaign is the
+state-carried translation-phase/injective-union repair with literal local
+admissibility and one-fine-site covariance tests, followed by physical
+encoder/intertwiner/leakage and collision controls.

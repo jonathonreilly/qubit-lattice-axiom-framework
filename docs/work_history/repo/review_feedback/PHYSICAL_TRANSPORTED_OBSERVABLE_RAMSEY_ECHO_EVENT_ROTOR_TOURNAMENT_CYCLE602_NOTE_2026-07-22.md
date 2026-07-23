@@ -1,367 +1,410 @@
-# Physical transported-observable Ramsey / echo / event-rotor tournament — Cycle 602
+# Physical transported-observable / Ramsey echo / one-hot rotor tournament — Cycle 602
 
 Date: 2026-07-22
+
+Status: narrowed coarse-algebraic positive only
 
 Authority: none
 
 Audit: unset
 
-Constitutional effect: none. No axiom, foundation, Qualification, primitive,
-registry, policy, queue, audit-status, or PR-control surface is edited.
+Author accepted: false
+
+Breakthrough: false
+
+Constitutional effect: none. Cycle 602 edits no axiom, foundation,
+Qualification, primitive, registry, policy, queue, or audit-status surface.
 
 Runner:
 
 `scripts/physical_transported_observable_ramsey_echo_event_rotor_tournament_cycle602_2026_07_22.py`
 
-## Result boundary
+Runner SHA-256:
 
-Cycle 602 is a separately frozen constructive follow-on to Cycle599. It does
-not modify Cycle599, remove its preregistered failure, or refit its q schedule.
-Cycle599 established that an onsite A2 return readout is exactly dark at the
-frozen odd checkpoints q=1 and q=3 while q=2 is bright. Cycle 602 changes the
-detector family before looking at any new output.
+`4b751525cd5918abbcc2ca47b71dba4bd3b2e9d2fbfd74deed0f932a8d75a137`
 
-Route A uses a fixed pair of even detector channels at every cell:
+## Result up front
 
-```text
-|b0> = |a>,
-|b1> = G_free+contact |a>,
-|b+> = (|b0> + |b1>)/sqrt(2).
-```
+Cycle 602 preserves three finite executable constructions:
 
-Here `|a>` is the local onsite A2 source and `G_free+contact` is the actual
-accepted Cycle-590 law. All channels are emitted simultaneously under one
-homogeneous rule. There is no q-dependent selector, parity service, or host
-choice of channel. The fixed aggregate gives nonzero visibility and a defined
-principal phase-difference word for every preregistered train checkpoint L3
-q=1..4 and held checkpoint L6 q=1..6.
+1. Route A uses one fixed coarse logical observable on antisymmetric N=2
+   arrays: the normalized sum of an onsite A2 covector and its one-update
+   transported covector. It is evaluated on train L3 at q=1..4 and held L6 at
+   q=1..6. Every frozen aggregate is nonzero, without a q-dependent selector.
+2. Route B compares the same coarse A2 state under contact g=0.37 and a
+   declared contact-off g=0 reference. The fixed L3/L6 overlap is nonzero and
+   contact-sensitive.
+3. Route C executes a reversible Boolean one-hot rotor with binder,
+   predecessor, validity, carry, and opportunity role bits. Prefixes
+   1,2,4,5,8,13,21 reproduce the prefix count and reverse exactly.
 
-This closes the finite detector blind spot, not the physical clock problem.
-The Cycle-590 free-plus-contact law and inverse are strict physical-M2
-dynamics. The new grade-changing A2 preparation and simultaneous two-channel
-readout have only a bounded-support code-space completion. Their primitive
-gate/layout synthesis remains open and is never inferred from their support
-count.
+These are coarse or algebraic results. No Cycle602 route executes a literal
+physical-M2 encoding E, physical update G, device placement, leakage
+calculation, or primitive product. The detector, pulse, readout, echo branch
+control, binder, and rotor are not physical devices here.
 
-Route B constructs a contact-relative path echo between the actual law and a
-declared `g=0` reference. It stays in one N=2 matter sector with a direct-sum
-path label; it does not introduce two dimers or silently expand to N4. Every
-frozen echo is nonzero. The reference channel, selector-field genesis, and
-controlled-contact physical layout remain supplied/open, so this is a finite
-interaction discriminator rather than an independent physical clock.
+Physical EG: null. Physical placement: null. Physical leakage: null. Physical
+primitive product: null, for Routes A, B, and C.
 
-Route C gives a literal bounded event-side phase-origin sidecar. A local
-occupied binder plus a Q1 four-M2 rotor propagates through the same physical
-event opportunities used by Cycle570, preserving the local Gauss word and
-writing exact rollover receipts. The terminal alphabet is CNOT, TOFFOLI, and
-FREDKIN with support at most three M2 under the retained Cycle570 routing
-grammar. The rotor event count is not time, and no matter-q-to-event map is
-derived.
+Cycle590's 53 roles per coarse cell remain a conditional 53-role blueprint.
+Cycle590's own current note says its macro map is an ordered logical table map,
+not a physical M2 update. Cycle602 does not turn 53 logical roles into a strict
+physical count and does not report the obsolete 11,448/11,450 totals.
 
-The highest honest terminal is therefore a finite all-checkpoint
-transported-observable phase interface and contact-relative echo over accepted
-strict physical-M2 dynamics, plus a literal bounded event-origin rotor. It is
-not a completed Ramsey apparatus, self-timing matter clock, Record clock,
-proper time, lapse, energy, or universal clock equivalence. There is no axiom
-pressure.
+The strongest honest terminal is therefore a finite fixed-coarse L3/L6
+transported-A2 observable family, a finite contact-relative echo, and a
+reversible finite-prefix algebraic rotor. This is not a physical Ramsey
+compiler, complete clock, event, Record, proper-time law, source-response law,
+or gravity law.
 
-## Frozen-before-held law
+## Exact shores and complete runtime closure
 
-Before any train or held output, the runner freezes and hashes:
+The runner checks 13 direct surfaces:
 
-- Route A channels `onsite_A2` and `one_update_transported_A2`, fixed equal
-  aggregate coefficients, L3 q=1..4 train, L6 q=1..6 held, and held contact
-  deletion at q=6;
-- Route B actual `beta=-0.3,g=0.37`, reference `g=0`, one scalar selector M2
-  per coarse cell, and the same train/held checkpoints;
-- Route C modulus four, root rotor position zero, occupied root binder, and
-  prefixes `1,2,4,5,8,13,21`.
+| cycle | exact-pinned surfaces |
+|---|---|
+| 599 | runner, note, receipt, cold transcript |
+| 590 | runner, note, receipt, cold transcript |
+| 451 | runner, note |
+| 570 | runner, note, receipt |
 
-No observed phase, visibility, deletion residual, size, q, channel weight,
-rotor modulus, or prefix changes the frozen law.
+The Cycle599 quartet is pinned at its final narrowed scope:
 
-The runner byte-pins Cycle599, Cycle590, Cycle451, Cycle570, Cycle586,
-Cycle243, Cycle170, Cycle204, Cycle498, and Cycle504 surfaces. The time shore
-is consumed as a firewall:
+- runner:
+  `7077c58b7c41f59606c8a5ccc0135017d937a0dd24184c083fa2df5b4b435840`;
+- note:
+  `d4c783fd5ab2134f8ece136af8c91ce6827000f9c63a3c0c057af16040f1fc6d`;
+- receipt:
+  `95fe87ff5bb56151a2cc5c979fa0720a7aa4ecb33ab6da75c2e8b3f83ac495f0`;
+- cold:
+  `c25c292c1ac5ba81f0139d6795990872312f371b997b076135345c7235e44803`.
 
-- Cycle243 forbids a direct gate/update-to-time map and keeps event, close,
-  commit, Record, count, matcher, calibration, lapse, and rate typed apart;
-- Cycle170 defines causal depth only from Records that actually form;
-- Cycle204 makes the clock map prediction-load-bearing without deriving it;
-- Cycles498/504/570 provide physical candidate endpoints and rollover, not
-  proper time; and
-- Cycle586 already showed that an intrinsic finite dimer candidate is not an
-  independently generated self-timing clock.
+Consumed receipts must bind their runner and note, pass their tests, and retain
+authority none with audit unset. Cycle599 must additionally bind its cold
+transcript, preserve author accepted false, and report no-go Status FAIL.
 
-## Route A — fixed transported-observable family
+The runner embeds the complete conservative repo-local import closure reachable
+from its four imports. The closure contains 233 exact-pinned runner modules.
+Its sorted manifest is:
 
-The accepted local source `|a>` and its one-update image are orthogonal on
-both frozen tori. Their union occupies the source cell and its six periodic
-nearest neighbours: seven coarse cells, periodic radius one, pair-support
-diameter two. The fixed detector therefore has a code-space physical-support
-upper bound of seven Cycle-590 compiler blocks plus two readout arms:
+`b5c68885d243018aec66fa7e0a9bc367f18941c3965dca35959f465992681227`
 
-```text
-7 * 53 + 2 = 373 M2 support,
-11,448 + 2 = 11,450 M2 held live-site upper bound.
-```
+The closure prevents runtime drift. It confers no scientific, review, author,
+or audit standing.
 
-These are constructive upper bounds, not minimum-content claims. Counting
-sites does not produce a primitive layout.
+## Frozen finite law
 
-For every q the runner emits the full word
+The route/application split is fixed before train or held evaluation.
 
-```text
-(<b0|G^q a>, <b1|G^q a>, <b+|G^q a>),
-```
+- Route A channels: onsite A2 and one-update transported A2.
+- Route A aggregate coefficients: (1,1), normalized.
+- Route A train: L3, q=1..4.
+- Route A held: L6, q=1..6.
+- Route B path: beta=-0.3 and contact g=0.37.
+- Route B reference: the same free law with contact g=0.
+- Route C rotor modulus: 4.
+- Route C supplied root: position 0, binder role bit 1.
+- Route C prefixes: 1,2,4,5,8,13,21.
+- Tolerance: 8e-9.
+- Wall/RSS caps: 300 seconds / 3 GiB.
 
-and exports a phase only when the aggregate visibility is nonzero and the
-principal difference relative to the supplied q=0 origin is nonwrapping.
-Because both channels are present in every word, the former q-odd darkness is
-removed without selecting a detector by q parity.
+No held result changes this law. All channels simultaneously means the fixed
+aggregate contains both covectors in every frozen row; it does not mean a
+physical apparatus emits or reads both channels simultaneously.
 
-The runner tests exact inverse, norm, antisymmetry, translation across the L6
-periodic axis seam, Cycle230 contact factorization, held contact deletion,
-the Cycle219 one-particle mass fixture, all 24 proper-cubic frames, and all 576
-paired matter/device frames. Proper-cubic covariance is not Lorentz
-covariance.
+## Route A — fixed-coarse transported A2 observable
 
-### Physical synthesis attempt and boundary
+Let a be the normalized onsite A2 pair covector at the origin, U the coarse
+one-step free-plus-contact array update, and b=Ua. The executed covector is
 
-The transported bra has an exact constructive factorization: apply the
-accepted strict physical inverse update, then use the onsite A2 read
-interface. This reduces the new channel to an accepted physical dynamic plus
-one local read interface. It does not yet give simultaneous nondemolition
-export of both channels. That would require a controlled inverse or bounded
-Naimark fanout, and the onsite grade-changing A2 pulse/read itself still lacks
-an explicit physical primitive gate/layout compiler. Both remain open.
+[
+d=(a+b)/\sqrt{2}.
+]
 
-Thus Route A derives bounded support, exact code-space words, and a physical
-dynamic core. It does not call the whole Ramsey interface strict physical M2.
+The runner verifies that a and b are orthogonal on both L3 and L6. Starting
+from a, it reports the fixed coherent word `<d|U^q|a>` for every frozen q.
+No route branch, q-dependent selector, or held refit changes d.
+There is no q-dependent selector.
 
-## Route B — actual-contact versus declared-reference echo
+The train L3 visibilities at q=1..4 are approximately
 
-Route B propagates two path-labeled components from the same A2 source:
+[
+0.7071067812,quad 0.3090060353,quad 0.3143130458,quad
+0.5154839430.
+]
 
-```text
-actual:     G_(g=0.37)^q |a>,
-reference:  G_(g=0)^q |a>,
-echo:       <reference|actual>.
-```
+The held L6 visibilities at q=1..6 are approximately
 
-The path label is a direct-sum control, not a second particle copy. The matter
-sector remains N=2, so no N4 or four-CAR compiler is claimed. Every train L3
-q=1..4 and held L6 q=1..6 echo has nonzero visibility and a defined principal
-relative phase. Held contact deletion collapses the echo to one and is
-visible relative to the retained output.
+[
+0.7071067812,quad 0.3090060353,quad 0.3090060353,quad
+0.5136054850,quad 0.5136054850,quad 0.3654944731.
+]
 
-A possible bounded-overhead encoding uses one scalar selector M2 per coarse
-cell with nearest-neighbour equality checks. Each local contact factor reads
-the co-located selector: selector one applies contact; selector zero applies
-identity. The equality checks are locally testable, but their coherent genesis
-and enforcement are not constructed here. The controlled-contact primitive
-gate/layout is also not synthesized. Consequently Route B remains a
-bounded-overhead code-space echo interface over the accepted dynamics.
+Thus the minimum frozen visibility is `0.3090060352922069`. This closes the
+Cycle599 odd-checkpoint visibility blind spot only for this fixed finite
+coarse observable family. It does not construct a physical detector.
 
-The reference is deliberately modest: contact-off free propagation is a
-declared comparison channel, not an independently generated material standard
-and not Nature's selected clock.
+The fixed support covers seven coarse cells at periodic radius one. The
+executed controls include:
 
-## Route C — charged binder / event rotor
-
-The root word contains a Q1 four-M2 rotor at K0, one occupied binder M2, and a
-valid bit. Every event cell contains nine M2:
-
-```text
-event opportunity       1
-Q1 rotor                4
-wrap receipt            1
-occupied binder         1
-valid/predecessor       2
-                        -
-                        9 M2.
-```
-
-The local Gauss word is
-
-```text
-binder occupation = 1, rotor occupation = 1.
-```
-
-“Gauss word” here means this explicit locally checkable charge-sector word.
-Cycle 602 does not derive a gauge group, gauge field, Gauss-law generator, or
-global charge-conservation theorem. The reversible schedule preserves and
-propagates the declared local code relation.
-
-The update copies the predecessor rotor/binder/valid word, increments the
-rotor only under the same local physical event opportunity, and writes a wrap
-receipt on `K3 -> K0`. Reversing the CNOT/TOFFOLI/FREDKIN schedule restores all
-successor words blank. Deleting a binder copy violates the local word;
-deleting a wrap receipt changes the extensive event count. Dirty origin,
-missing binder, and missing opportunity are rejected.
-
-The runner executes every Cycle570 train and held prefix through 21 and joins
-the sidecar to the retained endpoints. It also retains the exact Cycle451
-`3:4`, `4:4`, and `5:4` comparator semantics. The rotor is a phase-origin and
-rollover certificate for candidate events only. Its root state, binder, event
-opportunities, and blank cells are supplied. Event count is not time; a
-candidate event or rotor receipt is not a Record.
-
-No law associates one matter interrogation q with one rotor increment. That
-arrow remains explicit and open.
-
-## Route dispositions
-
-| route | finite result | physical boundary |
-|---|---|---|
-| A transported detector | nonzero defined word at every frozen q, inverse/contact/seam/mass/all24/all576 | accepted dynamics strict physical; simultaneous A2 pulse/read primitive gate/layout open |
-| B contact/reference echo | nonzero echo at every frozen q, held deletion, no N4 expansion | reference/selector genesis and controlled-contact layout open |
-| C charged event rotor | exact local Gauss word, rollover, inverse, deletion, prefixes, 3:4/4:4/5:4 join | root/binder genesis and matter-event association open |
-
-## Supplies, derivations, and open arrows
-
-Supplied:
-
-- beta, contact strength, finite tori, boundary condition, A2 source, q words,
-  equal detector coefficients, pulse/read invocation, blank arms, and phase
-  origin;
-- the free reference channel, selector field/code, coherent branch
-  preparation, and exact noiseless gates;
-- root rotor K0, occupied binder, event opportunities, blank cells,
-  Cycle451 identities/profile/predecessor matcher, and Cycle570 standard;
-- global N<=3 code domain, compiler colors/order, and any later empirical
-  calibration.
-
-Derived on the declared finite codes:
-
-- a fixed two-channel detector with nonzero phase word at every frozen q;
-- exact dynamic inverse, norm, antisymmetry, contact deletion,
-  contact factorization, seam translation, mass, all24, and all576 controls;
-- a finite contact-relative echo without N4 or a second dimer;
-- a literal bounded charged-binder/event-rotor word with inverse, local Gauss
-  preservation, rollover, deletion, lawful domain, and matched-event join.
-
-Open:
-
-- primitive gate/layout synthesis for simultaneous A2/transported readout and
-  controlled contact;
-- autonomous preparation/renewal of A2 coherence, readout arms, selector
-  field, rotor origin, binder, event opportunities, and blank resources;
-- local enforcement of the global N<=3 domain and selector equality sector;
-- an actual N4 two-dimer encounter compiler and independent standard genesis;
-- matter-interrogation to matched-event association, Record formation,
-  empirical calibration, noise/stability, continuum/Lorentz proper time,
-  lapse, source response, gravity, Born law, and realized history.
-
-## Fresh no-go discipline N1–N8
-
-N1 — Six normalized families are inventoried by
-`(object/formulation, mechanism/invariant, terminal obligation)`: transported
-A2 detector, contact-relative path echo, charged event rotor, two physical
-dimers, localized A2/T2 beat, and Record-admitted echo corpus. Three are
-attempted. Because `3 < 5`, the broad-negative gate fails and no broad
-negative may ship.
-
-N2 — A2 pulse/read layout, echo selector genesis, matter-event association,
-origin genesis, Record actuality, universal calibration, and global N<=3
-locality are tested in both directions for all 21 pairs. None is collapsed.
-
-N3 — Hidden supplies are explicit: beta/g, boxes, q words, A2 source,
-detector weights, pulse/read arms, free reference, selector repetition field,
-root rotor/binder, event opportunities, matcher/profile/standard, blank
-resources, exact gates, and compiler domain/order.
-
-N4 — Route-A residuals match the finite detector wall exposed by Cycle599.
-Route-B residuals match a contact-relative echo and do not claim Cycle586's
-open N4/two-dimer independence. Route-C residuals match event origin/rollover,
-not Record actuality or matter-event association.
-
-N5 — Claims are limited to L3 q=1..4, L6 q=1..6, and event prefixes through
-21. Nothing extends to arbitrary q, infinite volume, noise, continuum,
-proper time, lapse, or universal clock equivalence.
-
-N6 — Live partial closures include a controlled-inverse/Naimark readout,
-selector-field genesis, complete N4/two-dimer compilation, physical
-matter-event association, Record admission, and autonomous origin/renewal. No
-new primitive or axiom requirement is claimed.
-
-N7 — Hostile steelman: use the exact transported-bra factorization through
-the accepted physical inverse, compile both simultaneous outputs with a
-bounded local Naimark dilation, and couple that device to the positive event
-rotor. This is a concrete constructive route and blocks a present clock
-no-go.
-
-N8 — Cycle599 exposed the onsite q-odd return zero; Cycle602 closes that
-finite detector wall without selecting q. Cycles451/498/504/570 retain
-physical endpoint/rollover semantics, while Cycles170/243 continue to forbid
-schedule-to-time promotion. The remaining walls are typed rather than merged.
-
-No impossibility, minimum-content, shared-obstruction, or axiom-pressure claim
-is made. No axiom pressure survives.
-
-## Six-wall and maturity disposition
-
-- `C_ref`: fixed transported A2 and contact-off echo references remove finite
-  onsite blind spots; independent genesis remains open.
-- `C_num`: nonzero finite phase words at every frozen q and exact event-rotor
-  rollover; no empirical unit or arbitrary-q theorem.
-- `C_wrap`: local Q1 rotor carries a supplied origin and exact receipts;
-  matter/event association and autonomous origin remain open.
-- `C_int`: actual free-plus-contact dynamics drive Route A and are
-  discriminated against g=0 in Route B.
-- `C_local`: Route A has bounded radius-one support and Route C literal
-  support-three terminals; two readout/control layouts remain open.
-- `C_source`: no source-conditioned phase response, response sign, lapse,
-  redshift, or gravity is derived.
-
-Provisional overall/repo-strict maturity:
-
-| lane | score |
+| check | residual or signal |
 |---|---:|
-| operational quantum / records | `4.83 / 4.67` |
-| causal time | `4.02 / 3.84` |
-| inertia / matter | `4.83 / 4.90` |
-| gravity / source | `4.10 / 3.85` |
-| Born / probability | `4.20 / 3.65` |
+| channel orthogonality | 0 |
+| maximum inverse residual | 2.269842029081622e-15 |
+| maximum norm residual | 1.3322676295501878e-14 |
+| maximum antisymmetry residual | 5.082053304865187e-16 |
+| held contact-deletion state signal | 0.51021631599724 |
+| held contact-deletion word signal | 0.2966695642198343 |
+| Cycle230 contact-factorization residual | 0 |
+| held axis-seam translation residual | 0 |
+| one-particle mass residual | 1.1102230246251565e-16 |
+| maximum all-24 coarse update covariance residual | 2.397692742256886e-16 |
+| maximum all-24 word covariance residual | 5.551115123125783e-17 |
 
-The highest-value next campaign is the physical primitive/layout synthesis
-of the simultaneous transported readout, followed by a derived association
-between that device and the charged Cycle570 event sidecar. If that fails, an
-explicit complete N4 two-dimer encounter compiler is the independent route.
+The transported contraction factors algebraically through the coarse inverse
+update and the onsite covector. Cycle602 does not synthesize the corresponding
+nondemolition control, Naimark dilation, pulse, or readout circuit. Route A
+physical E/G, placement, leakage, and primitive product remain null.
 
-## Interpretation firewall
+## Route B — coarse contact/reference echo
 
-- All channels simultaneously means the fixed two-channel word is always
-  emitted; there is no q-dependent selector.
-- Update count is not time.
-- Event count is not time.
-- Phase is not energy, time, or a rate.
-- A generator element is not a rate.
-- A candidate endpoint, latch, binder, selector, or rotor receipt is not a
-  Record or actuality.
-- A visibility or squared norm is not a Born probability or occurrence.
+Route B evolves the same single N=2 A2 state along two declared algebraic
+branches: contact g=0.37 and contact g=0. It reports their overlap. It does not
+create two simultaneous dimers and does not invoke an N=4 four-CAR domain.
 
-## Independent parent verification
+Every frozen L3 q=1..4 and L6 q=1..6 overlap is nonzero. The minimum visibility
+is `0.9371920339843274`. The maximum inverse residual is
+`2.5029914798455842e-15`. At held q=6, deleting contact changes the echo by
+`0.3723568149953336`.
 
-The parent independently checked that Cycle599's frozen failure remains
-unchanged, that both Route-A channels are emitted for every `q`, and that the
-new interface is not promoted from bounded code-space support to an
-unexecuted primitive layout. The parent then reran the frozen Cycle602 runner.
+The selector is a logical role in the supplied direct-sum description.
+Cycle602 does not autonomously generate it, locally enforce equality checks,
+or compile a controlled-contact primitive. Route B is a finite
+coarse-algebraic Loschmidt-style diagnostic, not a physical echo apparatus or
+clock. Its physical E/G, placement, leakage, and primitive product are null.
 
-- worker runner SHA-256: `a56a4521acaba5263549f0a83d79dce39ddcd71a37d5a4f2c83e260f49def6c5`;
-- worker note SHA-256 before this appendix: `748854d2369e0fc2257dfb96f9f4fbb139a6ad2a6fb46d5302d9c2a250ef8fba`;
-- worker receipt SHA-256: `87380b0e36182a80863b2c19549aaa59d3658748e1b2a049d4ce69adc558eac3`;
-- worker cold transcript SHA-256: `33d523ed59f152e7fd4518b6b111ec5e84d1c4f01c3dae57869e3fa73f01761e`;
-- parent rerun: `8 PASS / 0 FAIL`, `2.4163489170605317 s`, maximum
-  RSS `1,080,229,888` bytes;
-- parent receipt SHA-256: `dfab872f4f6aff8c27fa71d70a2b85975e769c8eac8850b1d0aac85f6b9ab5d4`;
-- parent transcript SHA-256: `1dc531d112044cedaf18581aeb0538d23d9e4d89934534fdb544eb8aba3d3a0c`.
+## Route C — reversible one-hot Boolean rotor
 
-After deleting only `elapsed_seconds` and `maximum_RSS_bytes`, the worker and
-parent receipts are byte-identical under sorted JSON normalization. The
-parent accepts the finite all-checkpoint detector word, the bounded
-contact-relative echo, and the literal event rotor. It does not accept a
-simultaneous readout or controlled-contact primitive layout, independent
-clock/device genesis, a matter-interrogation-to-event law, Record actuality,
-proper time, lapse, energy, universal equivalence, shared obstruction, or
-axiom pressure.
+Route C uses a four-bit one-hot rotor, one binder role bit, one validity role
+bit, and nine role bits per additional prefix cell. These are algebraic bits,
+not physical M2 sites. The schedule uses the Boolean permutations CNOT,
+TOFFOLI, and FREDKIN through the Cycle570 bit interpreter.
+
+For prefixes 1,2,4,5,8,13,21:
+
+- the decoded extensive rotor count equals the prefix;
+- the supplied binder and one-hot code checks pass;
+- the complete schedule reverses exactly; and
+- the separate Cycle570 endpoint totals are reproduced as algebraic
+  comparison data.
+
+The maximum gate arity is three bits. Deleting the cell-3 binder copy or
+cell-4 carry changes/rejects the word, giving two visible deletion controls.
+Malformed origin, binder, and opportunity words give three rejections.
+
+The Cycle451 helper returns 3:4, 4:4, and 5:4 comparison labels. It does not
+make the rotor count an event or time. The root rotor and binder are supplied,
+not autonomously generated. No gauge group, Gauss generator, global charge
+law, matter-q/event-count law, physical placement, or physical primitive
+product is derived.
+
+## Cycles610-612 comparison interface — no back-credit
+
+PR #5557 Cycles610-612 are comparison surfaces only. They are not imported,
+runtime-pinned, or executed by Cycle602 and confer no back-credit.
+
+- Cycle610 is later proper-cubic compiler work. It cannot retroactively
+  physicalize Cycle590's conditional 53-role blueprint or Cycle602's
+  detector/echo/rotor.
+- Cycle611 is later matter/source response work. Cycle602 still has no
+  source-to-echo response, response sign, lapse, or gravity law.
+- Cycle612's 3:4 delay can be rate-compatible as an association.
+  Cycle602 does not implement that association.
+- Cycle612's 5:4 advance requires a count/event edit and is a different
+  mechanism. Cycle602 does not implement it.
+
+Neither response is a Cycle602 result. No proper time, lapse, redshift, or
+universal clock equivalence is inherited.
+
+## Semantic firewall
+
+Update count is not time. Event count is not time. Phase is not energy.
+A generator element is not called a rate. A copied binder or rotor bit is not
+a Record. Echo visibility is not probability or occurrence. A coarse CAR
+array is not a physical-site compiler.
+
+## Lawful-domain, deletion, and held controls
+
+The runner rejects four malformed/off-domain cases: undersized A2 lattice,
+out-of-range A2 origin, unknown rotor malformation, and invalid Cycle570
+count word. It separately checks contact deletion, rotor gate deletion,
+malformed rotor words, exact reversibility, L3 train/L6 held behavior,
+proper-cubic coarse covariance, seam translation, and the one-particle mass
+fixture.
+
+The global N<=3 domain remains supplied and is not locally enforced.
+
+## Supplied structure inventory
+
+- beta=-0.3 and contact g=0.37;
+- finite L3/L6 periodic boxes and boundary conventions;
+- the local A2 source and fixed q lists;
+- the one-update transported covector and equal aggregate coefficients;
+- the contact-off reference branch and logical selector roles;
+- noiseless coherent contractions;
+- the root one-hot rotor, binder, predecessor, validity, carry, opportunity,
+  and blank role bits;
+- the Cycle570 Boolean gate interpreter;
+- Cycle451 matcher positions and ratio labels; and
+- the Cycle590 conditional 53-role blueprint and global N<=3 domain.
+
+None of these imports is silently promoted beyond its stated scope.
+
+## No-Go Discipline Gate
+
+Status: FAIL.
+
+The artifact itself passes as a narrowed coarse-algebraic positive. The failed
+no-go gate forbids a broad impossibility, minimum-content, shared-obstruction,
+or axiom-pressure claim.
+
+### N1 — normalized route families
+
+| object/formulation | mechanism/invariant | terminal obligation | marker | disposition |
+|---|---|---|---|---|
+| fixed-coarse onsite plus transported A2 covector | one-update fixed observable orbit | nonzero finite L3/L6 word | ATTEMPTED | positive coarse algebra |
+| contact-on/contact-off single N2 branch | matched Loschmidt overlap | finite interaction discriminator | ATTEMPTED | positive coarse algebra |
+| reversible one-hot rotor | fixed Boolean permutation | finite rollover/inverse/deletion | ATTEMPTED | positive algebraic rotor |
+| physical-M2 detector block | primitive E/G, placement, leakage | physical Ramsey device | OPEN_UNTESTED_NOT_COUNTED | open |
+| autonomous echo reference | locally stabilized branch genesis | physical interaction comparison | OPEN_UNTESTED_NOT_COUNTED | open |
+| causal interval plus Record admission | occurrence and calibrated association | realized proper-time comparison | OPEN_UNTESTED_NOT_COUNTED | open |
+
+Only three routes qualify; five are required for a broad negative. N1 fails.
+
+### N2 — typed directional wall audit
+
+The collapsed wall set has seven rows:
+
+| wall | type |
+|---|---|
+| transported detector primitive composition | PHYSICAL_COMPILATION |
+| echo control primitive composition | PHYSICAL_COMPILATION |
+| autonomous state and origin genesis | GENESIS |
+| matter-to-causal-interval association | ASSOCIATION |
+| Record actuality | ACTUALITY |
+| local number-domain enforcement | DOMAIN_LOCALITY |
+| universal proper-time calibration | CALIBRATION |
+
+The executable receipt contains all 21 unordered pairs with both directional
+questions. Every row records left-closes-right false, right-closes-left false,
+a typed reason, independent true, and collapsed false. No wall follows
+automatically from another at the stated obligations.
+
+### N3 — hidden-supply and phrase-hit scan
+
+Five supply groups are explicit in the inventory above. The scan finds one
+source-text target hit: the word "registered" occurs inside the exact-pinned
+runtime filename
+`physical_registered_cylinder_future_equivalence_route_cycle342_2026_07_18`.
+It is classified as a non-load-bearing filename. It supplies no proof premise.
+The N3 classification row and this explanation necessarily repeat the same
+word; those occurrences are separately classified as a non-load-bearing
+meta-scan. No hidden condition is promoted.
+
+### N4 — exact residual matching
+
+| witness | prior residual | current residual | exact/scope match |
+|---|---|---|---|
+| Cycle599 note lines 147-172 | odd-checkpoint onsite A2 visibility and absent primitive interface | fixed transported covector gives finite nonzero words; physical interface remains null | true/true |
+| Cycle590 note lines 126-141 | conditional logical macro is not physical M2 | Cycle602 calls coarse arrays and keeps physical fields null | true/true |
+| Cycle570 runner lines 357-375 | reversible Boolean interpreter | new rotor schedule executes exact inverse/deletions in that interpreter | true/true |
+
+Cycle570 note lines 23-60 are dropped as physical/event/clock support because
+Cycle602 reuses only the Boolean helper. Its physical scope does not match.
+
+### N5 — five-resolution rhetoric audit
+
+For each negative boundary, the receipt records per-element, per-site,
+per-mode, per-block, and lattice-wide fields. Only the finite executed block is
+marked TESTED; untested resolutions say UNTESTED_NO_NEGATIVE_CLAIM.
+
+The five audited phrases concern update/time, phase/energy, 53-role/physical
+M2, rotor/Record, and echo/probability. No block-level boundary is promoted to
+a lattice-wide theorem.
+
+### N6 — partial-closure paths
+
+1. Compile a physical transported-A2 Naimark/readout block with E/G,
+   placement, leakage, deletion, and all-24 layout checks.
+2. Compile autonomous constrained echo-reference genesis and a
+   controlled-contact primitive product.
+3. Compose matter interrogation with a reversible deletion-sensitive causal
+   endpoint/predecessor interval and Record admission.
+4. Preserve Cycle590 only as the exact conditional parent it is.
+5. Preserve Cycle602 as the executed narrowed coarse-algebraic positive.
+
+No convention-only closure is found. No new axiom is required or proposed.
+No control-plane edit is made.
+
+### N7 — actionable hostile steelman
+
+A hostile constructive reviewer can compile the fixed seven-cell transported
+A2 covector as a bounded physical-M2 Naimark/readout block, compose it with a
+literal primitive realization of Cycle590's conditional macro, autonomously
+prepare the contact/reference branch, and attach the resulting word to a
+deletion-sensitive endpoint/predecessor interval. The supporting surfaces are
+Cycle599 note lines 147-172, Cycle590 note lines 126-141, and the executed
+Route-A factorization in this runner. The terminal is explicit held-L6
+physical E/G/inverse/leakage/placement and primitive-product certificates,
+followed by autonomous interval association. This unattempted construction
+defeats a no-go.
+
+### N8 — row-wise cross-cycle echo
+
+| prior wall | status here | mechanism/applicability |
+|---|---|---|
+| Cycle590 physical primitive composition | not retired | compile literal detector/echo E/G |
+| Cycle599 odd-checkpoint onsite visibility | retired only at finite coarse observable scope | transported covector; no physical credit |
+| Cycle451 matcher is not a universal clock | open | ratios remain host-side comparisons |
+| Cycle570 prefix schedule is not proper time | open at Cycle602 interface | Boolean inverse only |
+| Cycle610 later compiler | comparison only, no back-credit | cannot retroactively physicalize Cycle602 |
+| Cycle611 later matter/source response | comparison only, no back-credit | no Cycle602 source response |
+| Cycle612 conditional causal interval | comparison only, no back-credit | 3:4 delay rate-compatible; 5:4 advance needs count/event edit |
+
+Broad no-go: false. Minimum-content claim: false. Shared obstruction: false.
+Axiom pressure: false.
+There is no axiom pressure.
+
+## Six-wall dependency ledger
+
+- `C_ref`: advanced at finite coarse scope by a fixed transported covector
+  and declared contact-off reference; physical reference genesis remains open.
+- `C_num`: finite nonzero words and exact rotor rollover are obtained; no
+  empirical unit, arbitrary-q theorem, probability law, or time law.
+- `C_wrap`: the algebraic rotor carries a supplied origin; physical origin
+  genesis and matter-interval association remain open.
+- `C_int`: the coarse contact effect is visible; no physical interaction
+  primitive product is composed.
+- `C_local`: coarse radius-one support and Boolean arity three are bounded;
+  every Cycle602 physical E/G, placement, leakage, and primitive-product field
+  is null.
+- `C_source`: unchanged; no source-conditioned response, response sign,
+  lapse, redshift, or gravity law is derived.
+
+Maturity rebase: null. The reinterpretation removes unearned physical credit
+but does not independently rescore the repository-wide lanes.
+
+## Optimal next campaign
+
+Compile the fixed seven-cell transported A2 covector and contact/reference
+control as one literal physical-M2 device. Require explicit E/G, placement,
+primitive-gate product, leakage, inverse, deletion, L3/L6 held behavior,
+proper-cubic covariance, locally enforced auxiliary constraints, autonomous
+reference genesis, and no runtime parity/order service. Only after that
+physical certificate exists should it be attached to a Cycle612-style
+endpoint/predecessor interval, with no back-credit and separate 3:4-delay
+versus 5:4-advance mechanisms.
+
+The final receipt and cold-transcript hashes are reported externally because
+a receipt cannot contain its own hash and the cold transcript contains the
+runner-emitted receipt payload.

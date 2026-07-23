@@ -1,135 +1,77 @@
-# Matter-variation current / stress / compensator source tournament — Cycle 611 (2026-07-22)
+# Cycle 611 — matter variation, Ward identities, and compensator audit
 
-- authority: none
-- audit: unset
-- constitutional effect: none
-- frozen parent: `c19de77e41a395cc9be36a44b32b7eb0930fc5cc`
-- status: constructive law-level number current, nonunique cubic Ward tensor, and conditional paid-compensator zero-mode route; no stress-energy, gravity, no-go, or no axiom pressure
+Date: 2026-07-22
+Authority: none
+Audit: unset
+Author artifact status accepted: false
+Constitutional effect: none
 
-## Frozen question and separation of claims
+## Result
 
-Cycle611 asks whether the source used by the Cycle609 aggregate F17 field law
-can be obtained by varying the accepted Cycle219/230/Cycle600 matter update,
-rather than assigning trial charge `+2` to matter and `-1` to neutral compiler
-words.
+Cycle611 retains three bounded constructive results.
 
-Three statements remain rigorously separate:
+1. Peierls variation of the Cycle219/230 directional stream yields the unit-normalized U(1) occupation current, with explicit coin/contact symmetry and exact continuity. It is the Cycle591 link-current function after dividing out the supplied `q_beta` normalization.
+2. A local cubic coframe variation yields an exact momentum-flux Ward identity with the coin force retained. Two algebraically distinct, identically conserved improvement families show that conservation does not select a unique tensor representative.
+3. A distinct paid mobile compensator role gives an exact conditional matter-minus-compensator zero-mode ledger, branch-array inverses, and a uniform-versus-localized no-refit discriminator. The compensator sector, charge assignment, pair genesis, W preparation, and physical compilation remain supplied or open.
 
-1. what density/current follows from variation of the accepted matter update;
-2. what coefficient, sign, modulus, and reciprocal field action couple to it;
-3. whether any resulting current or tensor is physical stress-energy or a
-   gravity source.
+The strongest result is the contact-inclusive unit U(1) current plus the exact Ward identity and improvement-class audit. No candidate is a confirmed breakthrough. Number current is not uniquely normalized physical charge; the Ward tensor class is not unique stress-energy; C609 is an algebraic-role/aggregate-array parent rather than a physical M2 field compiler; and the response labels are not time, Events, Records, Born outcomes, or realized history.
 
-The first can advance while the second remains supplied and the third remains
-untested.  A conserved number current is not automatically stress-energy.  A
-modular source kick is not energy, stress, curvature, gravity, or retarded
-response.  Update count is not time, and the matched words are not events.
+## Frozen parents and dependency backedge
 
-The Cycle609 physical nearest-neighbor packing wall is inherited unchanged:
-Cycle611 tests exact aggregate support-two laws, bounded roles, and covariance,
-not materialized simultaneous NN path packing or schedule covariance.
+The Cycle609 quartet is byte-pinned at:
 
-## Common shore and controls
+- runner `6e9d04c8d0ba189a93e434025c569b8a9dc2c63d5cd7a6a888a3d829f4ed8003`;
+- note `93d991d79e594a60494cb13112e21aba0356c84c23e79a334892aaa98797710c`;
+- receipt `a5bd17754c3d0e80ad2cff72e7ab63d5b3a5046805c92be583d95ede8b0463ff`;
+- cold transcript `b53ddeac0dba5a2477ba3288c254accbd3ea7c8f082b1dd0bcda97df0ac3ad2b`.
 
-The runner byte-pins Cycle591 and all four Cycle609 artifacts.  It replays the
-Cycle609 mass, Cycle230 contact, seam, and joint-EG residuals before testing a
-new route.  Train L3, held L6, and out-of-family held L7 are frozen.  Every
-field coupling is tested for aggregate inverse, source and link deletion,
-coupling sign, factor order, reciprocal phase inverse, all 24 proper-cubic
-frames, and all 576 frame products.
+The actual Cycle591 shore is pinned as runner `d031740fadfbfa42dccba37fc4c5c211a0bec7daa9ef60a17fb9a4c65cc06291`, note `bef7ef925e23dda48eb6f84644b22656f39a411b45dba79b311e0b15d69d9a18`, and 19/19 cold report `59831c9fe3f034c4c66144ac857e9c931ca48c7e7ea543f2787980d076b4c6da`. Cycle591 itself reports authority none, audit unset, author status false, no physical E/G evaluation, a maximum local-current continuity residual `8.389689946003147e-18`, contact-charge commutator `0`, and one-particle mass-fixture residual `2.220446049250313e-16`.
 
-The F17 action remains
+There is one explicit packaging backedge. Frozen Cycle609 pinned the old Cycle611 note hash `102b57283c55a190ba02289d2689ac8a6e6f97aff58e13036df1dd8a66e97308` as non-executed N6 evidence. Rebuilding this note necessarily makes that downstream-note pin stale. Cycle609's runtime closure does not import the Cycle611 runner, and its science did not execute or back-credit the old note. Cycle611 therefore records a packaging backedge but no science-runtime dependency cycle. The C609 quartet is used as the historical executed parent freeze.
 
-`A_src = alpha sum_x J_x Q_x`,
+The Cycle611 runner hashes its complete recursive Python closure, not only its two direct imports.
 
-together with Cycle609's link and kinetic terms.  Variation with respect to
-`Q` gives the source kick, while conditioning on the matter/source branch gives
-the reciprocal matter phase.  `alpha`, its sign, modulus 17, factor order, and
-physical interpretation are not derived by matter variation.
+## Route A — Peierls unit-number current
 
-## Route A — local U(1) Peierls variation
+For the directional stream,
 
-### Exact derivative and unit normalization
+`S[A] |x,d> = exp(i A_d(x)) |x+D_d,d>`
 
-Gauge the accepted directional stream by
-
-`S[A] |x,d> = exp(i A_d(x)) |x+D_d,d>`.
-
-Then, at unit charge (unit U(1)) normalization,
+gives
 
 `-i S[0]^dag partial_(A_d(x)) S[A]|_(A=0) = n_(x,d)`.
 
-The runner checks the derivative numerically on random complex L3/L6/L7 rays
-against the analytic directional occupation.  The unit coefficient is the
-representation normalization of this probe.  It is not selected as the
-unique physical charge, inertial charge, or gravitational charge.
+The unit coefficient is the normalization of this U(1) probe. The calculation does not select it as unique physical charge, inertial charge, or gravitational charge. Cycle591 used `j_d^591=q_beta n_d`; Cycle611 compares the same `pair_directional_links` function after division by the nonzero supplied `q_beta`. The L3 comparison residual is `1.734723475976807e-18`. This is an algebraic normalization identity, not a derivation of `q_beta`.
 
-Cycle591 used
+The actual Cycle230 contact is included through the complete 64-state Fock checks:
 
-`j_d^591(x) = q_beta <n_(x,d)>`, with `q_beta=-tan(beta/2)`.
+- coin/number commutator: `0`;
+- contact/number commutator: `0`;
+- gauged-contact invariance residual: `7.195067539997724e-16`;
+- contact Peierls-current contribution: `0`.
 
-Cycle611 proves the exact relation
+The zero contribution follows from U(1) invariance; contact was not omitted. On train L3, held L6, and out-family held L7:
 
-`j_d^591 = q_beta j_d^unit`.
+- maximum Peierls derivative residual: `1.3868897690231966e-12`;
+- maximum direct-arrival or continuity residual: `0`;
+- maximum all-24 density/current covariance residual: `2.7755575615628914e-17` across 72 frame comparisons;
+- all-576 direction-group failures: `0` across 3,456 direction-label comparisons.
 
-Thus it derives the same link-current object already used by Cycle591 after
-dividing out `q_beta`; it does not derive `q_beta`.  An inertial-mass
-normalization or another U(1) representation weight would also conserve
-number, so normalization selection remains open.
+A raw positive occupation array has nonzero torus total and does not close the zero mode. Each fixture is separately inserted into the C609 F17 aggregate array map. Those checks are role-array identities only: C609 supplies modulus 17, `alpha=10`, sign, Q/P roles, and factor order. No physical field register is composed.
 
-### Coin, contact, and continuity
+Route A disposition: `CONSTRUCTIVE_EXACT_UNIT_U1_NUMBER_CURRENT; UNIQUE_PHYSICAL_NORMALIZATION_AND_SOURCE_LAW_OPEN`.
 
-The onsite coin is included and its complete 64-state Fock lift commutes with
-total number.  The actual Cycle230 contact is also included.  Its Peierls
-current contribution is exactly zero because
+## Route B — coframe Ward identity and two improvement families
 
-`W_contact = exp(i g N_x(N_x-1)/2)`
+For post-coin directional occupation `n_d(x)` and cubic velocity `v_d`, define
 
-is U(1)-invariant and commutes with local number—not because contact was
-omitted.
+`p_i(x)=sum_d v_(d,i)n_d(x)`
 
-After the coin define the oriented unit current
+and positive-axis link flux
 
-`j_d(x)=<n_(x,d)>`, from `x` toward `x+D_d`.
+`T_ia(x)=delta_ia[n_(+a)(x)+n_(-a)(x+e_a)]`.
 
-The accepted stream gives
-
-`rho_after(x)-rho_before_stream(x)`
-
-`= sum_d [j_d(x-D_d)-j_d(x)]`.
-
-The runner evaluates direct arrival and the sitewise continuity identity on
-L3/L6/L7.  It separately checks the proper-cubic density/current action and
-the 576-element direction representation law.
-
-### Reciprocal field coupling and boundary
-
-The derived unit density is coupled to the Cycle609 aggregate F17 action on
-each size.  Kick, reciprocal phase, inverse, deletion, sign, order, and frame
-tests are executed.  A positive one-particle density has nonzero total charge
-on the torus.  Route A uses no host zero-mode projection and therefore does
-not by itself supply Cycle609's periodic static source.
-
-Disposition: **constructive exact unit number/link current derived from the
-accepted update; physical normalization, coupling, zero-mode completion, and
-gravity interpretation remain open**.
-
-## Route B — local translation/coframe variation
-
-### Momentum Ward identity
-
-For post-coin directional occupation `n_d(x)` and cubic ray velocity `v_d`,
-define momentum density
-
-`p_i(x)=sum_d v_(d,i) n_d(x)`.
-
-The positive-axis link flux is
-
-`T_ia(x)=delta_ia [n_(+a)(x)+n_(-a)(x+e_a)]`.
-
-This is exactly the derivative of the gauged stream under a local cubic
-coframe phase `h_ia v_i v_a`.  The accepted coin need not conserve directional
-momentum onsite, so the runner retains the explicit coin force
+The local coframe derivative matches this flux. The accepted coin changes directional momentum, so the identity retains
 
 `F_i=p_i(after coin)-p_i(before coin)`
 
@@ -137,235 +79,96 @@ and tests
 
 `p_i(after stream)-p_i(before coin)+D^-_a T_ia-F_i=0`.
 
-The contact contributes no momentum change because it is diagonal in every
-local occupation.  This is a discrete cubic momentum-flux Ward identity, not
-a unique stress-energy tensor.
+Executed maxima across L3/L6/L7 are:
 
-### Two algebraically independent improvements
+- Ward residual including coin force: `6.938893903907228e-18`;
+- coframe derivative residual: `6.615312332248881e-13`;
+- all-24 tensor covariance residual: `0`;
+- contact momentum change: zero because contact is occupation-diagonal.
 
-For local improvement comparisons, the positive-link Ward flux is first
-symmetrically incidence-averaged onto its two endpoint sites.  Route B then
-exposes two independent identically conserved site-centered improvements
-generated from a scalar seed `chi` and the central difference `D^c`.
+After symmetric incidence averaging to sites, two conserved families are tested:
 
-The first is the symmetric transverse family
+`I^(s)_ia = delta_ia sum_b D^c_b D^c_b chi - D^c_a D^c_i chi`
 
-`I^(s)_ia = delta_ia sum_b D^c_b D^c_b chi - D^c_a D^c_i chi`.
+and
 
-The second comes from an antisymmetric superpotential
+`I^(c)_ia = D^c_b(epsilon_abi chi)`.
 
-`K_iab=epsilon_abi chi`,
+Their flattened family rank is 2 on every fixture. Both have divergence and integrated-tensor residual `0`; their minimum nonzero local change is `0.5`. All improvement covariance residuals and all 3,456 tensor-composition failures are zero. The symmetric family changes the local trace-coupled F17 role-array response with signals `4`, `13`, and `13`; the curl family is trace-free and has trace-response residual `0`.
 
-`I^(c)_ia=D^c_b K_iab`.
+The scalar/curl coefficient, trace-versus-other-component choice, F17 coupling, and physical interpretation are supplied. Conservation does not select a unique stress-energy tensor, positivity condition, energy condition, equivalence-principle coupling, or gravity source.
 
-Both have zero discrete divergence and zero integrated tensor on the periodic
-lattice.  They are algebraically distinct: `I^(s)` changes the trace/local
-scalar source, while `I^(c)` is trace-free.  The runner tests coefficients
-0, 1, and 2 for the first family plus coefficient 1 for the curl family.  Both
-produce nonzero local tensor redistribution on every fixture.  The integrated
-tensor/charge is unchanged.  The scalar improvement changes the local F17
-response; the curl improvement leaves the trace-coupled response unchanged.
+Route B disposition: `CONSTRUCTIVE_CUBIC_WARD_IDENTITY_AND_TWO_CONSERVED_IMPROVEMENT_FAMILIES; UNIQUE_STRESS_ENERGY_OPEN`.
 
-The base tensor and both improvement families are rotation-tested under all 24
-proper-cubic frames.  Their tensor action is composition-tested under all 576
-frame products.  Proper rotations preserve the epsilon tensor; reflections
-are outside the declared group.
+## Route C — paid mobile compensator role
 
-The improvement coefficient and even the decision to couple the trace rather
-than another cubic component are supplied.  Conservation cannot select them.
+Route C declares one matter-role weight `+1`, one compensator-role weight `-1`, and zero for Cycle600 neutral roles. These are supplied role weights, not a derived physical charge law. The compensator uses the Cycle219 coin and Cycle230 stream at the coarse six-mode amplitude level.
 
-Disposition: **constructive cubic coframe Ward identity and a conserved tensor
-class; no uniqueness, positivity, energy condition, equivalence principle,
-stress-energy identification, or gravity identification**.
+The declared debit is three candidate four-bit compensator species per coarse cell, or 12 binary roles per cell. For L3/L6/L7 this is 324, 2,592, and 4,116 roles. These figures are not physical M2 counts or placement. A separate inventory of `9V` two-site parent terms is also declared but not executed as genesis.
 
-## Route C — distinct compensator/binder carrier
+The supplied pair rule says matter and compensator would be created or removed together. No pair-genesis gate, trigger, initial resource, lawful-sector enforcement, or autonomous renewal is composed. The global coarse-role Householder W word has prepare/inverse/renewal checks, but it is nonlocal and has no physical compiler.
 
-### No charge assigned to compiler auxiliaries
+Executed controls:
 
-Route C assigns unit matter charge `+1`, keeps every Cycle600 absent, neutral,
-and invalid compiler label at physical charge zero, and adds a distinct mobile
-compensator carrier of charge `-1`.  Matter and compensator use separate local
-number-preserving carrier words and the accepted Cycle219 coin/Cycle230 stream.
+- maximum uniform compensator density-stationarity residual: `2.5238885258784277e-16`;
+- minimum localized-compensator mobility signal: `1.080123449734644`;
+- maximum matter-minus-compensator continuity or zero-mode residual: `4.440892098500626e-16`;
+- maximum position-array and W-word inverse residual: `2.687729991622803e-14`;
+- all 27 + 216 + 343 = 586 binder-position role arrays exhausted with aggregate inverse residual at most `3.182548627781456e-17` before the separate W-word debit.
 
-This is new paid physical content.  For the retained `N<=3` sector it debits
-three new four-M2 binder word species per coarse cell: 12 persistent M2 per
-cell before routing.  Three binder species also debit `9V` local two-site
-swap-parent terms on a volume `V` lattice.
+For each size the manually reduced F17 uniform role array is `delta_0-V^-1 mod 17`; all three volumes are invertible modulo 17. This array is not produced by a composed coherent carrier/field circuit. Its aggregate C609 inverse is exact, with nonzero role-array/link/sign/order deletions and zero all-24 aggregate-array covariance residual.
 
-### Pair rule, preparation, inverse, renewal, and mobility
+The separate real no-refit comparator manually uses `point-uniform`. Its relative residuals are:
 
-The candidate rule says a local pair-genesis gate may create or remove one
-matter carrier and one compensator together.  Such a local rule would seed
-global equality of the two conserved numbers.  Cycle611 does **not**
-materialize that pair-genesis gate, its trigger, or its initial resource; they
-remain supplied candidate-law imports.
+- L3/H384: `0.0033361272825549507`;
+- held L6/H768: `0.0018510636864354823`;
+- out-family L7/H1536: `0.0008344844938036573`.
 
-The uniform compensator is an actual physical W ray over the new carrier—not a
-host-side uniform numeric background and not a charged neutral compiler word.
-The runner constructs an exact Householder W-preparation word and tests its
-prepare, inverse, renewal, and omission signal on L3/L6/L7.  That word is
-global/nonlocal and has no physical NN compiler here.  The local swap parent
-stabilizes W only inside a supplied one-binder sector; it does not autonomously
-generate that sector.  Therefore neither the Householder word nor the parent
-derives autonomous genesis.
+The identity with the frozen C609 comparison is exact, with zero fitted parameters. Localized compensator comparators give relative residuals `1.001425693913527`, `1.000491889418256`, and `1.0001203898022113`, so the uniform/local discriminator fires on every fixture. The real comparator does not consume a C609 F17 state.
 
-Mobility is executed.  A localized binder scalar ray changes density under the
-accepted coin/stream with a nonzero signal.  The spatially uniform scalar W ray
-is stationary in density up to its coin phase.  Consequently
+Route C disposition: `CONSTRUCTIVE_CONDITIONAL_MOBILE_COMPENSATOR_ROLE_AND_ZERO_MODE_LEDGER; PHYSICAL_SECTOR_GENESIS_AND_W_COMPILER_OPEN`.
 
-`rho_source=rho_matter-rho_binder`
+## Causal-time boundary
 
-and the corresponding current difference obey exact continuity and has zero
-integrated charge, conditional on the paid paired sector.
+The C609 parent pins the causal-time Cycle612 note at commit `a1e2f1ea60b1cf9b9cb0ae100c61cfd1f3a07318` and content SHA256 `028133c490e771dd3012061c79910fcfb88cd6132df072ec15e725fe9bc35496`. Cycle611 imports no causal-time runner and executes none of its tests.
 
-### Coherent branch law and no-refit shore
+The present design exposes a phase-modulation input compatible with the pinned note's rate-associated 3:4 delay comparison. Cycle611 does not derive a physical rate or time. The pinned note says the 5:4 advance candidate is only edit-reachable; Cycle611 contains no Event/count-edit path for it. Event association remains underived, and no causal-time result is back-credited.
 
-For every possible binder position on L3/L6/L7, the runner executes the exact
-F17 branch source `delta_m-delta_b`, reciprocal phase, aggregate update, and
-inverse.  A coherent uniform binder therefore produces a joint superposition
-of matter/binder/field branches.  Its expectation source reduces exactly to
+## Supplied structure
 
-`delta_0 - 1/V`,
+Supplied: unit U(1) normalization, Peierls sign, Cycle219 coin, Cycle230 stream/contact order, cubic coframe probe, coin-force definition, two improvement formulas, improvement coefficient and trace/component choice, F17 modulus/alpha/sign/Q/P roles, compensator role and charge, pair rule, one-binder sector, global W word, finite horizons, manual uniform role array, and matched-label association.
 
-including exact F17 reduction because each frozen volume is invertible modulo
-17.  That expectation is not claimed to be one classical physical field word.
+Derived or executed: Peierls occupation current, explicit continuity, complete local coin/contact symmetry, q-beta normalization identity, cubic Ward identity, two rank-2 conserved improvement families, coarse compensator mobility/stationarity, conditional zero-mode ledger, all binder-position role-array inverses, aggregate array controls, and the uniform/local no-refit discriminator.
 
-The uniform-binder expectation reproduces Cycle609's no-refit L3/L6/L7 static
-residuals.  A localized binder gives a distinct point-counterpoint response
-and is required to fail that uniform shore.  The inherited 3:4 and 5:4 matched
-words are carried as comparisons only: they are not events and do not select
-occurrence, time, or a Record.
+Not derived: unique physical charge, unique stress-energy, F17 coupling law, physical source/current/stress/gravity, physical M2 encoder/update/placement/routing/leakage/constraints, compensator genesis, local W compiler, physical branch-field interface, time, Event, Record, Born probability, or realized history.
 
-Disposition: **constructive conditional zero-mode completion with new paid
-mobile content; the sector, local pair genesis, W preparation, physical NN
-execution, and gravity interpretation remain supplied or open**.
+## N1–N8 no-go discipline
 
-## Supplied structure inventory
+N1 — Six attempted families use only the permitted `ATTEMPTED` marker: Peierls variation, coframe variation, symmetric improvement, curl improvement, mobile compensator, and uniform/local comparator. Live normalization, metric, Gauss-law, physical-M2, local-genesis, and 5:4 count-edit routes are listed separately. The negative gate therefore fails.
 
-Supplied: Cycle219 coin and unit U(1) representation convention; Cycle230
-stream/contact order; F17 modulus, alpha, sign, and factor order; coframe
-coupling convention; improvement candidates; the new compensator degrees;
-local pair-genesis rule, trigger, and initial resource; global Householder W
-preparation; one-binder sector for the local swap parent; finite response
-horizons; matched-word association; and Cycle609 aggregate compiler/routing
-wall.
+N2 — All 21 wall pairs contain typed directional closure reasons. Neither direction nor independence is declared established without an intervention and retest.
 
-Derived/executed: Peierls density and link current; exact relation to the
-Cycle591 current; complete local Fock coin/contact U(1) identities; sitewise
-continuity; coframe momentum flux, coin force, and Ward identity; two
-algebraically independent conserved improvements; local versus integrated
-improvement effects; binder mobility and conditional source continuity;
-prepare/inverse/renewal word algebra; per-binder-position field branches;
-all24/all576 aggregate covariance; and the no-refit binder discriminator.
+N3 — The note is scanned for the prohibited hidden-import phrases. Every load-bearing convention is in the supplied inventory.
 
-Not derived: unique physical charge normalization; F17 modulus/coupling/sign;
-unique stress tensor; positivity; physical energy/stress/gravity; autonomous
-compensator genesis; a local W-preparation compiler; a single classical field
-word for a coherent expectation; physical NN packing; causal time;
-retardedness; event selection; Born probability; or Record actuality.
+N4 — Exact matching cites Cycle591 line 324 for the directional occupation current, Cycle591 line 466 for unselected normalization, Cycle609 line 1117 for the absent physical M2 compiler, and Cycle609 line 937 for the external delay/advance association. Each row includes same-scope and use-as-closure flags. Only the current residual is used as closure.
 
-## Full no-go discipline
+N5 — Five rhetoric rows expose per-element, per-site, per-mode, per-block, and lattice-wide evidence for normalization, tensor uniqueness, F17 interpretation, compensator compilation, and causal-label boundaries.
 
-### N1 — normalized alternatives
+N6 — The pinned Cycle591 note, pinned C609 note, causal-time comparison object, and local number-colliding Cycle612 note each carry file, status, and possible closure. The latter two are not imported, executed, or back-credited.
 
-1. Peierls U(1) stream variation — attempted positive; invariant is the unit
-   occupation current.
-2. Local coframe/translation variation — attempted positive with ambiguity;
-   invariant is momentum balance including the coin force.
-3. Distinct compensator carrier — attempted conditional positive with paid new
-   content; invariant is paired total charge.
-4. Cycle591 rest-phase density — prior positive with normalization unselected;
-   invariant is `q_beta N`.
-5. Quasienergy or full metric variation — live/unattempted; could produce a
-   band tensor including coin response.
-6. Link gauge/Gauss-law field — live/unattempted; local flux constraint rather
-   than an added compensator carrier.
-7. Local reservoir debit — prior positive for resource continuity, with a
-   different physical interpretation obligation.
+N7 — The actionable steelman is to execute a full metric/quasienergy variation and local Gauss-law alternative, then independently compose a physical M2 E/G and local pair-genesis/W circuit. This is cited to Cycle591 lines 458–483 and Cycle609 lines 1117–1125.
 
-These routes differ in varied object, invariant, or terminal obligation.
+N8 — Row-wise echoes cover Cycle230, Cycle591, Cycle600, Cycle609, causal-time Cycle612, and the distinct local-branch Cycle612 note. Each row states its effect and prevents cross-cycle promotion.
 
-### N2 — wall independence
-
-The receipt prints all 21 pairs among seven collapsed walls: physical coupling
-normalization; stress/gravity identification; improvement selection;
-compensator content/genesis; coherent branch versus classical expectation;
-physical NN packing; and event/Record selection.  Closing one does not
-automatically close another.
-
-### N3 — hidden-wall scan
-
-The scan exposes unit normalization, Peierls sign, alpha/sign/modulus,
-coframe convention, coin force, both improvement definitions, improvement
-coefficient, new compensator sites, pair genesis, W preparation, supplied
-one-binder sector, expectation-versus-branch field, finite horizons,
-matched-word association, and inherited NN packing.
-
-### N4 — residual matching
-
-Cycle591 is cited only for the exact oriented occupation current, and Cycle611
-directly checks equality after dividing by `q_beta`.  Cycle609's `+2/-1`
-source is a different object and is not cited as a derivation of the new
-compensator.  Cycle230 supplies the actual contact/seam; contact U(1)
-invariance is executed rather than inferred from omission.
-
-### N5 — rhetoric audit
-
-“Not stress-energy” is bounded to a derived site/link/lattice Ward tensor with
-no empirical stress measurement.  “Not gravity” is bounded to exact modular
-kick/response and static comparison with no metric/source identification.
-“Not event” is bounded to word equality and response: occurrence, Record, and
-calibration were not tested.  No broader impossibility is asserted.
-
-### N6 — partial closure
-
-Peierls variation retires the current-derivation import without selecting its
-physical normalization.  Coframe variation derives a conserved tensor class
-while leaving improvements explicit.  Conditional on paid new content, a
-compensator retires the torus zero mode without charging neutral compiler
-words.  Path coloring can separately retire the inherited packing wall.
-
-### N7 — steelman
-
-A hostile reviewer should reject any negative or axiom-pressure claim.  A
-metric variation of the fully gauged coin/contact, a link Gauss-law field, or a
-materialized locally pair-created compensator wavepacket could select a better
-tensor or zero-mode law.  Empirical response fixtures could then discriminate
-the improvement and coupling normalization.  Cycle611 leaves all these routes
-live.
-
-### N8 — cross-cycle echo
-
-Cycles566–591 obtained positive resource/number continuity while keeping
-physical interpretation separate.  Cycles600–609 repeatedly retired host
-services through bounded carrier and aggregate field compilers.  Cycle230's
-local contact symmetry is now varied explicitly rather than omitted.  These
-echoes argue for more constructive work, not a constitutional obstruction.
-
-**Broad negative gate: FAIL / DO NOT SHIP.**  No shared obstruction,
-minimum-content theorem, or axiom pressure is claimed.
+Status: `FAIL / DO NOT SHIP NEGATIVE`. Narrowed positive artifact status: `PASS`. `negative_claim_shipped=false`. No impossibility, minimum-content, shared-obstruction, or axiom-pressure claim is made.
 
 ## Ledger and next campaign
 
-- `C_ref`: advanced because the unit matter current is now derived by Peierls
-  variation; normalization, F17 coupling/sign, tensor interpretation, and new
-  compensator content remain supplied.
-- `C_num`: advanced because the source density is accepted CAR occupation and
-  neutral compiler words carry zero physical charge.
-- `C_wrap`: unchanged; F17 arithmetic/alias controls remain exact, and modular
-  labels are not real energy/stress amplitudes.
-- `C_int`: advanced because one reciprocal source action supplies field kick
-  and matter/binder branch phase.
-- `C_local`: advanced at the law level through continuity/Ward identities;
-  pair-genesis implementation and Cycle609 physical NN packing remain open.
-- `C_source`: advanced conditionally; unit current is derived, while torus
-  zero-mode completion requires the new supplied compensator sector/genesis
-  and neither route selects stress-energy or gravity.
+- `C_ref`: advanced algebraically by the unit-current derivation; physical normalization, F17 coefficients, tensor interpretation, and compensator weights remain supplied.
+- `C_num`: advanced algebraically by explicit occupation-current and improvement identities; no unique physical charge or M2 realization follows.
+- `C_wrap`: unchanged physically; exact F17 arithmetic is not a real-amplitude, energy, rate, or time rule.
+- `C_int`: advanced algebraically by contact-inclusive variation and separate aggregate-array insertions; no physical matter/field join is composed.
+- `C_local`: advanced at coarse law level through continuity and Ward identities; pair genesis, local W preparation, constraints, physical placement, routing, and leakage remain open.
+- `C_source`: conditional algebraic progress only; the paid compensator closes the declared role-array zero mode if its sector exists, but no physical source, stress, or gravity law is selected.
 
-Maturity 0–5: operational quantum/records 4.0; time 3.0; inertia/matter 4.4;
-gravity/source 3.8; Born/probability 2.0.
-
-The next campaign should gauge the full coin/contact with dynamical link
-variables, materialize a coherent joint compensator-field update and local
-pair-genesis circuit, then use operational response fixtures to discriminate
-improvement coefficient and coupling normalization.
+Maturity effect: no upward physical maturity revision for operational quantum/Records, time, inertia/matter, gravity/source, or Born/probability. The optimal next campaign is to compare full metric/quasienergy and local Gauss-law variations, then compose one literal physical M2 E/G with local pair genesis, W preparation, lawful-sector enforcement, routed schedule, leakage, and held-size covariance. There is no axiom pressure.

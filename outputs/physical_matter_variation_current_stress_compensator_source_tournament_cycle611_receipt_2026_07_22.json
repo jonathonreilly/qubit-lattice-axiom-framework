@@ -1,328 +1,687 @@
 {
-  "HEAD": "c19de77e41a395cc9be36a44b32b7eb0930fc5cc",
+  "HEAD": "e8b8d75d007a932532258d480620ae64203330b3",
   "audit": "unset",
+  "audit_verdict_inferred_from_dependencies": false,
+  "author_artifact_status_accepted": false,
   "authority": "none",
+  "confirmed_breakthrough": false,
   "constitutional_effect": "none",
   "cycle": 611,
-  "elapsed_seconds": 9.19994320801925,
+  "dependency_cycle_boundary": {
+    "C609_embedded_C611_note_expected_sha256": "102b57283c55a190ba02289d2689ac8a6e6f97aff58e13036df1dd8a66e97308",
+    "C609_runtime_imports_C611": false,
+    "current_rebuilt_C611_note_sha256": "797ae62adb91d34f9e96b038ffc8aec4ca206db22691292417404c5b51fba258",
+    "embedded_pin_matches_current_note": false,
+    "packaging_backedge_detected": true,
+    "science_runtime_dependency_cycle": false,
+    "scope": "C609 used the old C611 note as pinned N6 evidence only; no C611 runner/result was imported, executed, or back-credited"
+  },
+  "elapsed_seconds": 7.859736916027032,
   "inventory": {
     "derived_or_executed": [
-      "Peierls density/link current and continuity",
-      "zero contact current from explicit U(1) invariance",
-      "Cycle591 current equality",
-      "coframe momentum flux, coin force, Ward identity, and conserved improvements",
-      "distinct binder source continuity and zero mode",
-      "per-branch reciprocal action/inverse",
-      "all24/all576 aggregate covariance",
-      "no-refit uniform/local binder discriminator"
+      "Peierls occupation current and explicit continuity",
+      "64-state coin/contact U1 identities",
+      "Cycle591 q_beta normalization identity",
+      "coframe momentum flux, explicit coin force, and Ward identity",
+      "two rank-2 conserved improvement families",
+      "coarse compensator mobility/stationarity and conditional zero-mode ledger",
+      "586 position-array inverses and aggregate array controls",
+      "uniform/local no-refit discriminator",
+      "causal-time comparison boundary without import or back-credit"
     ],
     "not_derived": [
-      "physical charge normalization",
-      "modulus/coupling/sign",
-      "unique stress tensor",
-      "stress-energy or gravity interpretation",
-      "compensator genesis law",
-      "single classical field for coherent expectation",
-      "physical NN packing",
-      "time",
-      "event selection",
-      "Born probability",
-      "Record actuality"
+      "unique physical charge normalization",
+      "unique stress-energy tensor or trace choice",
+      "F17 coupling law or physical source/current/stress/gravity",
+      "physical M2 E/G, placement, routing, leakage, or constraints",
+      "compensator genesis, lawful sector, or local W compiler",
+      "coherent physical branch-field interface",
+      "physical rate/time or 5:4 event/count-edit path",
+      "Event, Record, Born probability, or realized history"
     ],
     "supplied": [
-      "Cycle219 coin and unit U(1) representation",
-      "Cycle230 stream/contact order",
-      "F17 modulus, alpha, coupling sign, factor order",
-      "coframe convention",
-      "improvement coefficient candidates",
-      "new compensator degree and pair-genesis preparation",
-      "uniform compensator W ray",
-      "finite horizons and matched-word association",
-      "Cycle609 aggregate support2 compiler and NN-packing wall"
+      "unit U1 normalization and Peierls sign",
+      "Cycle219 coin and Cycle230 stream/contact order",
+      "cubic coframe probe and coin-force definition",
+      "two improvement formulas, coefficient, and trace/component choice",
+      "F17 modulus, alpha, sign, factor order, and Q/P roles",
+      "compensator role/charge, pair rule, one-binder sector, and global W word",
+      "finite horizons, manual uniform role array, and matched-label association"
     ]
   },
-  "maturity_0_to_5": {
-    "Born_probability": 2.0,
-    "gravity_source": 3.8,
-    "inertia_matter": 4.4,
-    "operational_quantum_records": 4.0,
-    "time": 3.0
-  },
-  "maximum_RSS_bytes": 160038912,
+  "maturity_effect": "no upward physical maturity revision for operational quantum/Records, time, inertia/matter, gravity/source, or Born/probability",
+  "maximum_RSS_bytes": 209616896,
   "no_go_discipline": {
-    "N1_normalized_families": [
-      [
-        "Peierls U(1) stream variation",
-        "unit occupation current",
-        "ATTEMPTED_POSITIVE_C611"
-      ],
-      [
-        "local coframe/translation variation",
-        "momentum flux plus coin force",
-        "ATTEMPTED_POSITIVE_C611_WITH_AMBIGUITY"
-      ],
-      [
-        "distinct compensator carrier",
-        "paired zero-mode source",
-        "ATTEMPTED_POSITIVE_C611_WITH_NEW_CONTENT"
-      ],
-      [
-        "Cycle591 rest-phase density",
-        "q_beta N current",
-        "PRIOR_POSITIVE_NORMALIZATION_UNSELECTED"
-      ],
-      [
-        "quasienergy/metric variation",
-        "band stress tensor",
-        "LIVE_UNTESTED"
-      ],
-      [
-        "link gauge/Gauss field",
-        "flux-constrained source",
-        "LIVE_UNTESTED"
-      ],
-      [
-        "local reservoir debit",
-        "resource current",
-        "PRIOR_POSITIVE_DIFFERENT_INTERPRETATION"
-      ]
+    "N1_allowed_markers": [
+      "ATTEMPTED",
+      "RULED OUT BY PRIOR"
     ],
-    "N2_pairwise_wall_independence": [
+    "N1_live_routes": [
+      "q_beta/inertial/empirical charge-normalization calibration",
+      "full quasienergy or metric variation including coin response",
+      "local link-gauge/Gauss-law source rather than a compensator",
+      "physical M2 E/G/placement/routing/leakage compilation",
+      "local pair-genesis and W-preparation circuit with lawful sector enforcement",
+      "event/count-edit mechanism for the 5:4 advance candidate"
+    ],
+    "N1_marker_schema_pass": true,
+    "N1_normalized_families": [
       {
-        "independent": true,
-        "left": "W_coupling",
-        "left_closes_right": false,
-        "right": "W_stress",
-        "right_closes_left": false
+        "attempt": "differentiate each directional stream phase to obtain occupation current",
+        "citation": "scripts/physical_operational_metric_conserved_source_local_range_tournament_cycle591_2026_07_22.py:466",
+        "marker": "ATTEMPTED",
+        "mechanism": "directional occupation derivative",
+        "result": "terminal passes, but Cycle591 line 466 leaves physical normalization unselected",
+        "route": "Peierls U(1) stream variation",
+        "terminal_obligation": "unit-normalized current and contact-inclusive continuity"
       },
       {
-        "independent": true,
-        "left": "W_coupling",
-        "left_closes_right": false,
-        "right": "W_improvement",
-        "right_closes_left": false
+        "attempt": "differentiate the cubic stream phase and retain the onsite coin force",
+        "citation": "scripts/physical_matter_variation_current_stress_compensator_source_tournament_cycle611_2026_07_22.py:513",
+        "marker": "ATTEMPTED",
+        "mechanism": "momentum flux with explicit coin force",
+        "result": "Ward terminal passes, but conservation does not select a unique stress tensor",
+        "route": "local cubic coframe variation",
+        "terminal_obligation": "exact Ward identity"
       },
       {
-        "independent": true,
-        "left": "W_coupling",
-        "left_closes_right": false,
-        "right": "W_compensator",
-        "right_closes_left": false
+        "attempt": "add a scalar double-central-difference tensor to the site Ward representative",
+        "citation": "scripts/physical_matter_variation_current_stress_compensator_source_tournament_cycle611_2026_07_22.py:479",
+        "marker": "ATTEMPTED",
+        "mechanism": "scalar double-central-difference tensor",
+        "result": "conservation passes while local trace components change",
+        "route": "symmetric transverse improvement",
+        "terminal_obligation": "identically conserved local redistribution"
       },
       {
-        "independent": true,
-        "left": "W_coupling",
-        "left_closes_right": false,
-        "right": "W_coherence",
-        "right_closes_left": false
+        "attempt": "take a central curl of an epsilon-weighted scalar superpotential",
+        "citation": "scripts/physical_matter_variation_current_stress_compensator_source_tournament_cycle611_2026_07_22.py:488",
+        "marker": "ATTEMPTED",
+        "mechanism": "curl tensor from epsilon contraction",
+        "result": "conservation and rank-two independence pass while trace coupling remains a supplied choice",
+        "route": "antisymmetric-superpotential improvement",
+        "terminal_obligation": "independent trace-free conserved redistribution"
       },
       {
-        "independent": true,
-        "left": "W_coupling",
-        "left_closes_right": false,
-        "right": "W_packing",
-        "right_closes_left": false
+        "attempt": "subtract a mobile candidate compensator density from matter density",
+        "citation": "scripts/physical_matter_variation_current_stress_compensator_source_tournament_cycle611_2026_07_22.py:654",
+        "marker": "ATTEMPTED",
+        "mechanism": "matter-minus-binder continuity and role-array zero mode",
+        "result": "ledger passes conditional on uncomposed sector genesis and W preparation",
+        "route": "distinct mobile compensator role",
+        "terminal_obligation": "conditional paid zero-mode ledger"
       },
       {
-        "independent": true,
-        "left": "W_coupling",
-        "left_closes_right": false,
-        "right": "W_event",
-        "right_closes_left": false
-      },
-      {
-        "independent": true,
-        "left": "W_stress",
-        "left_closes_right": false,
-        "right": "W_improvement",
-        "right_closes_left": false
-      },
-      {
-        "independent": true,
-        "left": "W_stress",
-        "left_closes_right": false,
-        "right": "W_compensator",
-        "right_closes_left": false
-      },
-      {
-        "independent": true,
-        "left": "W_stress",
-        "left_closes_right": false,
-        "right": "W_coherence",
-        "right_closes_left": false
-      },
-      {
-        "independent": true,
-        "left": "W_stress",
-        "left_closes_right": false,
-        "right": "W_packing",
-        "right_closes_left": false
-      },
-      {
-        "independent": true,
-        "left": "W_stress",
-        "left_closes_right": false,
-        "right": "W_event",
-        "right_closes_left": false
-      },
-      {
-        "independent": true,
-        "left": "W_improvement",
-        "left_closes_right": false,
-        "right": "W_compensator",
-        "right_closes_left": false
-      },
-      {
-        "independent": true,
-        "left": "W_improvement",
-        "left_closes_right": false,
-        "right": "W_coherence",
-        "right_closes_left": false
-      },
-      {
-        "independent": true,
-        "left": "W_improvement",
-        "left_closes_right": false,
-        "right": "W_packing",
-        "right_closes_left": false
-      },
-      {
-        "independent": true,
-        "left": "W_improvement",
-        "left_closes_right": false,
-        "right": "W_event",
-        "right_closes_left": false
-      },
-      {
-        "independent": true,
-        "left": "W_compensator",
-        "left_closes_right": false,
-        "right": "W_coherence",
-        "right_closes_left": false
-      },
-      {
-        "independent": true,
-        "left": "W_compensator",
-        "left_closes_right": false,
-        "right": "W_packing",
-        "right_closes_left": false
-      },
-      {
-        "independent": true,
-        "left": "W_compensator",
-        "left_closes_right": false,
-        "right": "W_event",
-        "right_closes_left": false
-      },
-      {
-        "independent": true,
-        "left": "W_coherence",
-        "left_closes_right": false,
-        "right": "W_packing",
-        "right_closes_left": false
-      },
-      {
-        "independent": true,
-        "left": "W_coherence",
-        "left_closes_right": false,
-        "right": "W_event",
-        "right_closes_left": false
-      },
-      {
-        "independent": true,
-        "left": "W_packing",
-        "left_closes_right": false,
-        "right": "W_event",
-        "right_closes_left": false
+        "attempt": "compare manual uniform and localized counter-sources under the frozen real recurrence",
+        "citation": "scripts/physical_two_M2_CAR_phase_link_field_QCA_tournament_cycle609_2026_07_22.py:937",
+        "marker": "ATTEMPTED",
+        "mechanism": "separate real no-refit host recurrence",
+        "result": "discriminator passes but no F17-state-to-real-response interface is composed",
+        "route": "uniform-versus-localized compensator comparator",
+        "terminal_obligation": "held L6/L7 discriminator"
       }
     ],
-    "N3_hidden_wall_scan": [
-      "unit charge normalization",
-      "Peierls sign convention",
-      "alpha/sign/mod17",
-      "coframe convention",
+    "N2_independence_complete": false,
+    "N2_pairwise_wall_closure_and_independence": [
+      {
+        "independence": {
+          "reason": "neither directional closure experiment was executed",
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_norm",
+        "left_to_right": {
+          "reason": "no executed intervention closes W_norm and retests W_tensor",
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_tensor",
+        "right_to_left": {
+          "reason": "no executed intervention closes W_tensor and retests W_norm",
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "reason": "neither directional closure experiment was executed",
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_norm",
+        "left_to_right": {
+          "reason": "no executed intervention closes W_norm and retests W_coupling",
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_coupling",
+        "right_to_left": {
+          "reason": "no executed intervention closes W_coupling and retests W_norm",
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "reason": "neither directional closure experiment was executed",
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_norm",
+        "left_to_right": {
+          "reason": "no executed intervention closes W_norm and retests W_compensator",
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_compensator",
+        "right_to_left": {
+          "reason": "no executed intervention closes W_compensator and retests W_norm",
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "reason": "neither directional closure experiment was executed",
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_norm",
+        "left_to_right": {
+          "reason": "no executed intervention closes W_norm and retests W_physical",
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_physical",
+        "right_to_left": {
+          "reason": "no executed intervention closes W_physical and retests W_norm",
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "reason": "neither directional closure experiment was executed",
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_norm",
+        "left_to_right": {
+          "reason": "no executed intervention closes W_norm and retests W_join",
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_join",
+        "right_to_left": {
+          "reason": "no executed intervention closes W_join and retests W_norm",
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "reason": "neither directional closure experiment was executed",
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_norm",
+        "left_to_right": {
+          "reason": "no executed intervention closes W_norm and retests W_time",
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_time",
+        "right_to_left": {
+          "reason": "no executed intervention closes W_time and retests W_norm",
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "reason": "neither directional closure experiment was executed",
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_tensor",
+        "left_to_right": {
+          "reason": "no executed intervention closes W_tensor and retests W_coupling",
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_coupling",
+        "right_to_left": {
+          "reason": "no executed intervention closes W_coupling and retests W_tensor",
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "reason": "neither directional closure experiment was executed",
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_tensor",
+        "left_to_right": {
+          "reason": "no executed intervention closes W_tensor and retests W_compensator",
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_compensator",
+        "right_to_left": {
+          "reason": "no executed intervention closes W_compensator and retests W_tensor",
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "reason": "neither directional closure experiment was executed",
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_tensor",
+        "left_to_right": {
+          "reason": "no executed intervention closes W_tensor and retests W_physical",
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_physical",
+        "right_to_left": {
+          "reason": "no executed intervention closes W_physical and retests W_tensor",
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "reason": "neither directional closure experiment was executed",
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_tensor",
+        "left_to_right": {
+          "reason": "no executed intervention closes W_tensor and retests W_join",
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_join",
+        "right_to_left": {
+          "reason": "no executed intervention closes W_join and retests W_tensor",
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "reason": "neither directional closure experiment was executed",
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_tensor",
+        "left_to_right": {
+          "reason": "no executed intervention closes W_tensor and retests W_time",
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_time",
+        "right_to_left": {
+          "reason": "no executed intervention closes W_time and retests W_tensor",
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "reason": "neither directional closure experiment was executed",
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_coupling",
+        "left_to_right": {
+          "reason": "no executed intervention closes W_coupling and retests W_compensator",
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_compensator",
+        "right_to_left": {
+          "reason": "no executed intervention closes W_compensator and retests W_coupling",
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "reason": "neither directional closure experiment was executed",
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_coupling",
+        "left_to_right": {
+          "reason": "no executed intervention closes W_coupling and retests W_physical",
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_physical",
+        "right_to_left": {
+          "reason": "no executed intervention closes W_physical and retests W_coupling",
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "reason": "neither directional closure experiment was executed",
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_coupling",
+        "left_to_right": {
+          "reason": "no executed intervention closes W_coupling and retests W_join",
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_join",
+        "right_to_left": {
+          "reason": "no executed intervention closes W_join and retests W_coupling",
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "reason": "neither directional closure experiment was executed",
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_coupling",
+        "left_to_right": {
+          "reason": "no executed intervention closes W_coupling and retests W_time",
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_time",
+        "right_to_left": {
+          "reason": "no executed intervention closes W_time and retests W_coupling",
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "reason": "neither directional closure experiment was executed",
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_compensator",
+        "left_to_right": {
+          "reason": "no executed intervention closes W_compensator and retests W_physical",
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_physical",
+        "right_to_left": {
+          "reason": "no executed intervention closes W_physical and retests W_compensator",
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "reason": "neither directional closure experiment was executed",
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_compensator",
+        "left_to_right": {
+          "reason": "no executed intervention closes W_compensator and retests W_join",
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_join",
+        "right_to_left": {
+          "reason": "no executed intervention closes W_join and retests W_compensator",
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "reason": "neither directional closure experiment was executed",
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_compensator",
+        "left_to_right": {
+          "reason": "no executed intervention closes W_compensator and retests W_time",
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_time",
+        "right_to_left": {
+          "reason": "no executed intervention closes W_time and retests W_compensator",
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "reason": "neither directional closure experiment was executed",
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_physical",
+        "left_to_right": {
+          "reason": "no executed intervention closes W_physical and retests W_join",
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_join",
+        "right_to_left": {
+          "reason": "no executed intervention closes W_join and retests W_physical",
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "reason": "neither directional closure experiment was executed",
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_physical",
+        "left_to_right": {
+          "reason": "no executed intervention closes W_physical and retests W_time",
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_time",
+        "right_to_left": {
+          "reason": "no executed intervention closes W_time and retests W_physical",
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "reason": "neither directional closure experiment was executed",
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_join",
+        "left_to_right": {
+          "reason": "no executed intervention closes W_join and retests W_time",
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_time",
+        "right_to_left": {
+          "reason": "no executed intervention closes W_time and retests W_join",
+          "status": "NOT_ESTABLISHED"
+        }
+      }
+    ],
+    "N3_canonical_hidden_wall_phrases": [
+      "we assume",
+      "by construction",
+      "as is standard",
+      "the framework provides",
+      "bridge context",
+      "background",
+      "naturally",
+      "obviously",
+      "standard qft",
+      "registered",
+      "canonical"
+    ],
+    "N3_explicit_supplied_structure": [
+      "unit U1 normalization",
+      "Peierls sign",
+      "F17 modulus/alpha/sign",
+      "cubic coframe probe",
       "coin force",
+      "two improvement definitions",
       "improvement coefficient",
-      "new compensator word",
-      "local pair genesis",
-      "uniform W preparation",
-      "expectation versus branch field",
+      "trace/component choice",
+      "compensator role/charge",
+      "pair genesis",
+      "one-binder sector",
+      "global W word",
       "finite horizons",
-      "matched-word association",
-      "Cycle609 NN packing"
+      "manual uniform role array",
+      "matched-label association"
     ],
-    "N4_residual_matching": [
-      [
-        "Cycle591",
-        "oriented conserved number current",
-        "Route A Peierls current",
-        "exact same occupation link current after q_beta normalization"
-      ],
-      [
-        "Cycle609",
-        "supplied +2/-1 neutral-word source",
-        "Route C distinct compensator",
-        "different source object; not cited as derivation"
-      ],
-      [
-        "Cycle230",
-        "onsite contact and seam",
-        "all routes",
-        "contact U(1) invariance and inherited seam only"
-      ]
+    "N3_note_phrase_hits": [],
+    "N4_exact_residual_matching": [
+      {
+        "current_residual": "unit Peierls directional occupation current after q_beta normalization",
+        "match": true,
+        "prior_line": 324,
+        "prior_path": "scripts/physical_operational_metric_conserved_source_local_range_tournament_cycle591_2026_07_22.py",
+        "prior_residual": "oriented directional occupation current",
+        "same_scope": true,
+        "use_as_closure": true,
+        "witness_residual": 1.734723475976807e-18
+      },
+      {
+        "current_residual": "unit U1 normalization not selected as unique physical charge",
+        "match": true,
+        "prior_line": 466,
+        "prior_path": "scripts/physical_operational_metric_conserved_source_local_range_tournament_cycle591_2026_07_22.py",
+        "prior_residual": "coefficient not selected by conservation",
+        "same_scope": true,
+        "use_as_closure": false,
+        "witness_residual": "PERSISTS"
+      },
+      {
+        "current_residual": "Cycle611 uses C609 aggregate arrays without physical M2 composition",
+        "match": true,
+        "prior_line": 1117,
+        "prior_path": "scripts/physical_two_M2_CAR_phase_link_field_QCA_tournament_cycle609_2026_07_22.py",
+        "prior_residual": "physical M2 compiler false",
+        "same_scope": true,
+        "use_as_closure": false,
+        "witness_residual": "PERSISTS"
+      },
+      {
+        "current_residual": "C611 supplies no 5:4 event/count-edit path",
+        "match": true,
+        "prior_line": 937,
+        "prior_path": "scripts/physical_two_M2_CAR_phase_link_field_QCA_tournament_cycle609_2026_07_22.py",
+        "prior_residual": "external delay/advance comparison has no derived event association",
+        "same_scope": true,
+        "use_as_closure": false,
+        "witness_residual": "PERSISTS"
+      }
     ],
-    "N5_rhetoric_audit": {
-      "not_event": "tested word equality/static response only; no occurrence, Record, or calibration",
-      "not_gravity": "tested exact modular kick/response and static shore; no physical metric/source identification",
-      "not_stress_energy": "tested number current and cubic Ward tensor at site/link/lattice resolutions; no empirical stress measurement at any resolution"
-    },
+    "N5_five_resolution_rhetoric_audit": [
+      {
+        "claim": "unit number current is not uniquely normalized physical charge",
+        "lattice_wide": "global conservation cannot choose q_beta, inertial mass, or another normalization",
+        "per_block": "the 64-state contact commutator proves symmetry, not empirical charge units",
+        "per_element": "the Peierls derivative fixes occupation at unit probe weight only",
+        "per_mode": "all six directions carry the same supplied U1 representation weight",
+        "per_site": "site continuity survives arbitrary overall normalization"
+      },
+      {
+        "claim": "the Ward tensor class is not unique stress-energy",
+        "lattice_wide": "integrated tensor invariance cannot select the local representative",
+        "per_block": "trace versus another cubic component is supplied",
+        "per_element": "individual tensor components change under conserved improvements",
+        "per_mode": "the coframe probe covers cubic directional momentum and retains coin force",
+        "per_site": "both improvement families redistribute local tensor values"
+      },
+      {
+        "claim": "the F17 array map is not a physical source or gravity law",
+        "lattice_wide": "all24 array covariance is not covariance of a routed physical schedule",
+        "per_block": "no M2 field register, constraint, or leakage test is executed",
+        "per_element": "modulus, alpha, sign, and role labels are supplied",
+        "per_mode": "no physical charge observable is composed",
+        "per_site": "the kick identity is an aggregate-array equality"
+      },
+      {
+        "claim": "the compensator role construction is not a physical M2 compiler",
+        "lattice_wide": "declared role and parent-term inventories are not placement or NN execution",
+        "per_block": "pair genesis, sector enforcement, and W preparation are uncomposed",
+        "per_element": "the new role charge is supplied",
+        "per_mode": "localized six-mode mobility is a coarse-amplitude test",
+        "per_site": "the Householder word is global in coarse role space"
+      },
+      {
+        "claim": "the matched labels are not time, Events, Records, or realized history",
+        "lattice_wide": "finite response arrays and update counts do not select occurrence or history",
+        "per_block": "the 5:4 advance requires a mechanism absent from Cycle611",
+        "per_element": "phase modulation is not itself a rate",
+        "per_mode": "the external 3:4 delay association is comparison-only",
+        "per_site": "no local event/count edit is implemented"
+      }
+    ],
     "N6_partial_closure_paths": [
-      "Peierls variation retires the source-current derivation import without selecting coupling",
-      "coframe variation derives a conserved tensor class while improvement remains explicit",
-      "a paid compensator retires the periodic zero mode without charging compiler neutral words",
-      "path coloring could separately retire the inherited packing wall"
+      {
+        "closure": "supplies the q_beta-normalized current comparator while leaving coefficient selection open",
+        "file": "docs/work_history/repo/review_feedback/PHYSICAL_OPERATIONAL_METRIC_CONSERVED_SOURCE_LOCAL_RANGE_TOURNAMENT_CYCLE591_NOTE_2026-07-22.md",
+        "status": "PINNED_EXECUTED_PARENT_SHORE"
+      },
+      {
+        "closure": "supplies the aggregate F17 array map but not physical M2/source/stress/gravity compilation",
+        "file": "docs/work_history/repo/review_feedback/PHYSICAL_TWO_M2_CAR_PHASE_LINK_FIELD_QCA_TOURNAMENT_CYCLE609_NOTE_2026-07-22.md",
+        "status": "PINNED_EXECUTED_PARENT_WITH_ALGEBRAIC_ARRAY_SCOPE"
+      },
+      {
+        "closure": "distinguishes rate-associated delay from count-edit advance while leaving event association open",
+        "file": "a1e2f1ea60b1cf9b9cb0ae100c61cfd1f3a07318:docs/work_history/repo/review_feedback/PHYSICAL_TICK_ECHO_ASSOCIATION_CAUSAL_ORDER_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md",
+        "status": "TRANSITIVELY_PINNED_COMPARISON_NOT_IMPORTED_EXECUTED_OR_BACKCREDITED"
+      },
+      {
+        "closure": "could test a matter-to-causal-interval interface separately from the number-colliding causal-time PR",
+        "file": "docs/work_history/repo/review_feedback/PHYSICAL_MATTER_CAUSED_CAUSAL_INTERVAL_PROPER_TIME_BRIDGE_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md",
+        "status": "TRANSITIVELY_PINNED_LOCAL_BRANCH_NOTE_NOT_IMPORTED_OR_EXECUTED"
+      }
     ],
-    "N7_steelman": "A hostile reviewer should reject any negative or axiom-pressure claim: a metric variation of the fully gauged coin/contact, a link Gauss-law field, or a locally pair-created compensator wavepacket could select a better tensor or zero-mode law; empirical calibration could then select among conserved improvements. Cycle611 leaves each route live.",
-    "N8_cross_cycle_echo": {
-      "Cycle230": "local contact symmetry can be varied rather than omitted",
-      "Cycle566_591": "resource and qN continuity were positive while interpretation stayed separate",
-      "Cycle600_609": "bounded carrier and aggregate field compilers repeatedly retired host services"
+    "N7_cited_actionable_steelman": {
+      "action": "execute a full metric/quasienergy variation and a local Gauss-law alternative; independently compose physical M2 E/G and a local pair-genesis/W circuit before judging normalization, tensor selection, or source closure",
+      "citation": "scripts/physical_operational_metric_conserved_source_local_range_tournament_cycle591_2026_07_22.py:458-483; scripts/physical_two_M2_CAR_phase_link_field_QCA_tournament_cycle609_2026_07_22.py:1117-1125"
     },
+    "N8_rowwise_cross_cycle_echo": [
+      {
+        "cycle": "Cycle230",
+        "echo": "contact is U1 invariant and diagonal in occupation",
+        "effect": "contact is included rather than omitted"
+      },
+      {
+        "cycle": "Cycle591",
+        "echo": "q_beta N current is conserved but its coefficient is not selected",
+        "effect": "Cycle611 closes only the unit-current residual"
+      },
+      {
+        "cycle": "Cycle600",
+        "echo": "carrier bits are algebraic roles, not a physical M2 compiler",
+        "effect": "blocks compensator role-count back-credit"
+      },
+      {
+        "cycle": "Cycle609",
+        "echo": "F17 Q/P is an aggregate array map and physical compilation remains open",
+        "effect": "blocks field/source/gravity back-credit"
+      },
+      {
+        "cycle": "PR causal-time Cycle612",
+        "echo": "delay is rate-associated and advance is count-edit only",
+        "effect": "comparison boundary; no Event or time closure"
+      },
+      {
+        "cycle": "local branch Cycle612",
+        "echo": "matter-caused causal interval work is a distinct number-colliding note",
+        "effect": "not imported or executed here"
+      }
+    ],
+    "Status": "FAIL / DO NOT SHIP NEGATIVE",
     "axiom_pressure": false,
-    "broad_negative_gate": "FAIL / DO NOT SHIP",
     "minimum_content_claim": false,
+    "narrowed_positive_artifact_status": "PASS",
+    "negative_claim_shipped": false,
+    "negative_gate_reasons": [
+      "live constructive routes remain",
+      "pairwise wall independence is not established"
+    ],
     "shared_obstruction": false,
     "walls": {
-      "W_coherence": "a coherent binder-source field is a joint quantum branch state, not one classical expectation field word",
-      "W_compensator": "the distinct compensator degree, pair-genesis debit, and uniform W preparation are supplied new physical content",
-      "W_coupling": "unit current is derived, but alpha/sign/mod17 and its normalization as a field charge are supplied",
-      "W_event": "static response does not select occurrence, Record, time calibration, or the matched 3:4/5:4 word",
-      "W_improvement": "local tensor/source components vary with an unselected conserved improvement coefficient",
-      "W_packing": "Cycle609 exact aggregate support2 laws still lack simultaneous physical NN route packing and schedule covariance",
-      "W_stress": "the cubic Ward tensor is not empirically identified as stress-energy or gravity source"
+      "W_compensator": "compensator role, sector, pair genesis, and W preparation are supplied candidate content",
+      "W_coupling": "F17 modulus, alpha, sign, and role-charge map are supplied array conventions",
+      "W_join": "branch role arrays and the separate real static comparator have no physical interface",
+      "W_norm": "unit U1 probe normalization is not selected as unique physical charge",
+      "W_physical": "no physical M2 E/G, placement, routing, leakage, or local enforcement is composed",
+      "W_tensor": "the Ward tensor, improvement coefficient, and trace/component choice are not uniquely selected",
+      "W_time": "the delay comparison is external and no event/count-edit path realizes the 5:4 advance label"
     }
   },
-  "optimal_next_campaign": "gauge the full coin/contact with dynamical links and materialize a coherent joint compensator-field update, then use empirical or operational response fixtures to discriminate improvement coefficient and coupling normalization",
+  "note_sha256": "797ae62adb91d34f9e96b038ffc8aec4ca206db22691292417404c5b51fba258",
+  "optimal_next_campaign": "execute full metric/quasienergy and local Gauss-law alternatives, then compose a literal physical M2 E/G with local pair genesis, W preparation, sector enforcement, routed schedule, leakage, and held-size covariance",
   "pass": true,
   "pins": {
-    "docs/work_history/repo/review_feedback/PHYSICAL_OPERATIONAL_METRIC_CONSERVED_SOURCE_LOCAL_RANGE_TOURNAMENT_CYCLE591_NOTE_2026-07-22.md": "86746b0cf9a80145b9c7cb4415c4402d6a697bb99e1fa83bae547bf091ac37e5",
-    "docs/work_history/repo/review_feedback/PHYSICAL_TWO_M2_CAR_PHASE_LINK_FIELD_QCA_TOURNAMENT_CYCLE609_NOTE_2026-07-22.md": "80d765e40daf18f846de7be2dff054cdb24383eb186bc20fe2f8570895438611",
-    "outputs/physical_two_M2_CAR_phase_link_field_QCA_tournament_cycle609_cold_2026_07_22.txt": "5ce217a142e0f8a3b7ea5bfb1a65e3955c8e31c2b7ee0eadc594e72ebe89ef3b",
-    "outputs/physical_two_M2_CAR_phase_link_field_QCA_tournament_cycle609_receipt_2026_07_22.json": "1c1c8e0141378ed6a53d85815591a76ab3c8e65ec1f952eca39fe3a95789d6dd",
-    "scripts/physical_operational_metric_conserved_source_local_range_tournament_cycle591_2026_07_22.py": "b927333e3287fa46c03f7ed9b53259cd126f47cca30eaca35c8220971b822a08",
-    "scripts/physical_two_M2_CAR_phase_link_field_QCA_tournament_cycle609_2026_07_22.py": "d5dc935f39063ff4bd105a2066686d35677e0e7265fdf0696b7b2e9c25829447"
+    "docs/work_history/repo/review_feedback/PHYSICAL_OPERATIONAL_METRIC_CONSERVED_SOURCE_LOCAL_RANGE_TOURNAMENT_CYCLE591_NOTE_2026-07-22.md": "bef7ef925e23dda48eb6f84644b22656f39a411b45dba79b311e0b15d69d9a18",
+    "docs/work_history/repo/review_feedback/PHYSICAL_TWO_M2_CAR_PHASE_LINK_FIELD_QCA_TOURNAMENT_CYCLE609_NOTE_2026-07-22.md": "93d991d79e594a60494cb13112e21aba0356c84c23e79a334892aaa98797710c",
+    "outputs/physical_operational_metric_conserved_source_local_range_tournament_cycle591_cold_2026_07_22.txt": "59831c9fe3f034c4c66144ac857e9c931ca48c7e7ea543f2787980d076b4c6da",
+    "outputs/physical_two_M2_CAR_phase_link_field_QCA_tournament_cycle609_cold_2026_07_22.txt": "b53ddeac0dba5a2477ba3288c254accbd3ea7c8f082b1dd0bcda97df0ac3ad2b",
+    "outputs/physical_two_M2_CAR_phase_link_field_QCA_tournament_cycle609_receipt_2026_07_22.json": "a5bd17754c3d0e80ad2cff72e7ab63d5b3a5046805c92be583d95ede8b0463ff",
+    "scripts/physical_operational_metric_conserved_source_local_range_tournament_cycle591_2026_07_22.py": "d031740fadfbfa42dccba37fc4c5c211a0bec7daa9ef60a17fb9a4c65cc06291",
+    "scripts/physical_two_M2_CAR_phase_link_field_QCA_tournament_cycle609_2026_07_22.py": "6e9d04c8d0ba189a93e434025c569b8a9dc2c63d5cd7a6a888a3d829f4ed8003"
   },
-  "route_A_Peierls_number_current": {
-    "Cycle591_relation": "j_Cycle591=q_beta*j_unit; Cycle611 derives the same link occupation current but does not derive q_beta",
+  "route_A_Peierls_unit_number_current": {
+    "Cycle591_comparison_fixture_count": 1,
+    "Cycle591_relation": "j_Cycle591=q_beta*j_unit; the same occupation-current function is compared after q_beta normalization, while q_beta remains supplied",
+    "Cycle591_relation_is_algebraic_normalization_identity": true,
     "Peierls_convention": "S[A]|x,d>=exp(i A_d(x))|x+D_d,d>; -i S^dag partial_A S=n_(x,d)",
+    "all24_density_current_comparisons_executed": 72,
     "all576_direction_group_failures": 0,
-    "disposition": "CONSTRUCTIVE_EXACT_NUMBER_CURRENT; NORMALIZATION_AND_GRAVITY_ID_OPEN",
+    "all576_direction_label_comparisons_executed": 3456,
+    "contact_included_by_full_64_state_U1_commutator": true,
+    "disposition": "CONSTRUCTIVE_EXACT_UNIT_U1_NUMBER_CURRENT; UNIQUE_PHYSICAL_NORMALIZATION_AND_SOURCE_LAW_OPEN",
     "maximum_Cycle591_current_residual": 1.734723475976807e-18,
     "maximum_Peierls_residual": 1.3868897690231966e-12,
     "maximum_all24_covariance_residual": 2.7755575615628914e-17,
     "maximum_continuity_residual": 0,
-    "number_current_is_stress_energy_or_gravity": false,
-    "object": "unit U(1) density and oriented link current from Peierls variation of accepted matter stream",
+    "number_current_is_unique_stress_energy_or_gravity_source": false,
+    "number_current_is_uniquely_normalized_physical_charge": false,
+    "object": "unit-normalized U(1) density and oriented occupation current from Peierls variation of the Cycle219/230 stream/contact update",
     "onsite_symmetry": {
       "coin_total_number_commutator": 0.0,
       "contact_Peierls_current_contribution": 0.0,
@@ -331,6 +690,7 @@
       "gauged_contact_invariance_residual": 7.195067539997724e-16,
       "local_Fock_states_exhausted": 64
     },
+    "physical_M2_encoder_update_or_leakage_evaluated": false,
     "raw_positive_density_closes_periodic_zero_mode": false,
     "rows": [
       {
@@ -340,27 +700,29 @@
         "direct_arrival_residual": 0.0,
         "discrete_continuity_residual": 0.0,
         "field_action": {
-          "aggregate_action": "A_src=alpha sum_x J_x Q_x plus Cycle609 link and kinetic terms",
-          "all24_covariance_residual": 0,
+          "aggregate_array_polynomial": "A_role=alpha sum_x J_x Q_x plus C609 array-link and Q/P terms",
+          "all24_aggregate_array_comparisons_executed": 24,
+          "all24_aggregate_array_covariance_residual": 0,
           "alpha_mod17": 10,
-          "coupling_and_modulus_derived_from_matter_variation": false,
+          "coupling_modulus_sign_and_role_normalization_derived_from_matter_variation": false,
+          "host_role_array_total_mod17": 1,
           "inverse_residual": 0,
-          "joint_phase_inverse_residual": 1.5972985219791386e-17,
-          "link_deletion_signal": 16,
+          "link_term_deletion_signal": 16,
           "modulus": 17,
           "order_signal": 15,
+          "physical_M2_register_or_field_composed": false,
           "physical_NN_execution_closed": false,
-          "reciprocal_matter_phase_deletion_signal": 1.9236512863456383,
-          "sign_signal": 10,
-          "source_deletion_signal": 7,
-          "source_total_mod17": 1
+          "role_array_deletion_signal": 7,
+          "role_phase_inverse_residual": 1.5972985219791386e-17,
+          "role_phase_polynomial_deletion_signal": 1.9236512863456383,
+          "sign_signal": 10
         },
         "fixture": "TRAIN_L3",
         "held": false,
         "host_zero_mode_projection_used": false,
         "length": 3,
-        "raw_periodic_source_total": 1,
-        "unit_charge_normalization": 1
+        "raw_periodic_role_array_total": 1,
+        "unit_U1_probe_normalization": 1
       },
       {
         "Cycle591_link_current_after_dividing_qbeta_residual": 0.0,
@@ -369,27 +731,29 @@
         "direct_arrival_residual": 0.0,
         "discrete_continuity_residual": 0.0,
         "field_action": {
-          "aggregate_action": "A_src=alpha sum_x J_x Q_x plus Cycle609 link and kinetic terms",
-          "all24_covariance_residual": 0,
+          "aggregate_array_polynomial": "A_role=alpha sum_x J_x Q_x plus C609 array-link and Q/P terms",
+          "all24_aggregate_array_comparisons_executed": 24,
+          "all24_aggregate_array_covariance_residual": 0,
           "alpha_mod17": 10,
-          "coupling_and_modulus_derived_from_matter_variation": false,
+          "coupling_modulus_sign_and_role_normalization_derived_from_matter_variation": false,
+          "host_role_array_total_mod17": 1,
           "inverse_residual": 0,
-          "joint_phase_inverse_residual": 1.1909725749104706e-17,
-          "link_deletion_signal": 16,
+          "link_term_deletion_signal": 16,
           "modulus": 17,
           "order_signal": 16,
+          "physical_M2_register_or_field_composed": false,
           "physical_NN_execution_closed": false,
-          "reciprocal_matter_phase_deletion_signal": 1.9236512863456379,
-          "sign_signal": 7,
-          "source_deletion_signal": 10,
-          "source_total_mod17": 1
+          "role_array_deletion_signal": 10,
+          "role_phase_inverse_residual": 1.1909725749104706e-17,
+          "role_phase_polynomial_deletion_signal": 1.9236512863456379,
+          "sign_signal": 7
         },
         "fixture": "HELD_L6",
         "held": true,
         "host_zero_mode_projection_used": false,
         "length": 6,
-        "raw_periodic_source_total": 1,
-        "unit_charge_normalization": 1
+        "raw_periodic_role_array_total": 1,
+        "unit_U1_probe_normalization": 1
       },
       {
         "Cycle591_link_current_after_dividing_qbeta_residual": 0.0,
@@ -398,46 +762,56 @@
         "direct_arrival_residual": 0.0,
         "discrete_continuity_residual": 0.0,
         "field_action": {
-          "aggregate_action": "A_src=alpha sum_x J_x Q_x plus Cycle609 link and kinetic terms",
-          "all24_covariance_residual": 0,
+          "aggregate_array_polynomial": "A_role=alpha sum_x J_x Q_x plus C609 array-link and Q/P terms",
+          "all24_aggregate_array_comparisons_executed": 24,
+          "all24_aggregate_array_covariance_residual": 0,
           "alpha_mod17": 10,
-          "coupling_and_modulus_derived_from_matter_variation": false,
+          "coupling_modulus_sign_and_role_normalization_derived_from_matter_variation": false,
+          "host_role_array_total_mod17": 1,
           "inverse_residual": 0,
-          "joint_phase_inverse_residual": 1.0929624341325435e-17,
-          "link_deletion_signal": 16,
+          "link_term_deletion_signal": 16,
           "modulus": 17,
           "order_signal": 16,
+          "physical_M2_register_or_field_composed": false,
           "physical_NN_execution_closed": false,
-          "reciprocal_matter_phase_deletion_signal": 1.7903265827101247,
-          "sign_signal": 14,
-          "source_deletion_signal": 7,
-          "source_total_mod17": 1
+          "role_array_deletion_signal": 7,
+          "role_phase_inverse_residual": 1.0929624341325435e-17,
+          "role_phase_polynomial_deletion_signal": 1.7903265827101247,
+          "sign_signal": 14
         },
         "fixture": "OUT_HELD_L7",
         "held": true,
         "host_zero_mode_projection_used": false,
         "length": 7,
-        "raw_periodic_source_total": 1,
-        "unit_charge_normalization": 1
+        "raw_periodic_role_array_total": 1,
+        "unit_U1_probe_normalization": 1
       }
     ],
-    "unit_charge_normalization": 1,
-    "unit_charge_selected_as_physical_gravitational_charge": false
+    "unit_U1_probe_normalization": 1,
+    "unit_normalization_selected_as_unique_physical_charge": false
   },
-  "route_B_coframe_stress_candidate": {
+  "route_B_coframe_Ward_and_improvement_class": {
+    "Ward_tensor_is_gravity_source": false,
+    "Ward_tensor_is_unique_stress_energy": false,
+    "all24_base_and_improvement_tensor_comparisons_executed": 216,
     "all576_direction_group_failures": 0,
+    "all576_direction_label_comparisons_executed": 3456,
+    "all576_improvement_tensor_comparisons_executed": 3456,
     "all576_improvement_tensor_group_failures": 0,
     "coin_force": "F_i=p_i(after coin)-p_i(before coin) is retained in the exact Ward identity",
-    "disposition": "CONSTRUCTIVE_CUBIC_WARD_IDENTITY; IMPROVEMENT_AND_PHYSICAL_ID_OPEN",
+    "disposition": "CONSTRUCTIVE_CUBIC_WARD_IDENTITY_AND_TWO_CONSERVED_IMPROVEMENT_FAMILIES; UNIQUE_STRESS_ENERGY_OPEN",
     "improvement_coefficients_selected": false,
-    "integrated_charges_improvement_invariant": true,
+    "improvement_families_algebraically_distinct": true,
+    "integrated_Ward_tensor_improvement_invariant": true,
     "local_tensor_components_improvement_invariant": false,
     "maximum_Ward_residual": 6.938893903907228e-18,
     "maximum_all24_tensor_covariance_residual": 0,
     "maximum_coframe_variation_residual": 6.615312332248881e-13,
     "maximum_improvement_conservation_residual": 0,
+    "minimum_improvement_family_flattened_rank": 2,
     "minimum_local_improvement_signal": 0.5,
-    "object": "cubic momentum-flux tensor from local coframe variation of accepted stream",
+    "object": "cubic momentum-flux Ward tensor class from local coframe variation of the accepted stream",
+    "physical_M2_encoder_update_or_leakage_evaluated": false,
     "rows": [
       {
         "all24_tensor_covariance_residual": 0,
@@ -448,24 +822,27 @@
         "curl_superpotential_divergence_residual": 0.0,
         "curl_superpotential_integrated_tensor_residual": 0.0,
         "field_action": {
-          "aggregate_action": "A_src=alpha sum_x J_x Q_x plus Cycle609 link and kinetic terms",
-          "all24_covariance_residual": 0,
+          "aggregate_array_polynomial": "A_role=alpha sum_x J_x Q_x plus C609 array-link and Q/P terms",
+          "all24_aggregate_array_comparisons_executed": 24,
+          "all24_aggregate_array_covariance_residual": 0,
           "alpha_mod17": 10,
-          "coupling_and_modulus_derived_from_matter_variation": false,
+          "coupling_modulus_sign_and_role_normalization_derived_from_matter_variation": false,
+          "host_role_array_total_mod17": 1,
           "inverse_residual": 0,
-          "joint_phase_inverse_residual": 1.70582178430227e-17,
-          "link_deletion_signal": 16,
+          "link_term_deletion_signal": 16,
           "modulus": 17,
           "order_signal": 15,
+          "physical_M2_register_or_field_composed": false,
           "physical_NN_execution_closed": false,
-          "reciprocal_matter_phase_deletion_signal": 0.7224833323743053,
-          "sign_signal": 7,
-          "source_deletion_signal": 7,
-          "source_total_mod17": 1
+          "role_array_deletion_signal": 7,
+          "role_phase_inverse_residual": 1.70582178430227e-17,
+          "role_phase_polynomial_deletion_signal": 0.7224833323743053,
+          "sign_signal": 7
         },
         "fixture": "TRAIN_L3",
         "held": false,
         "improvement_divergence_residual": 0.0,
+        "improvement_family_flattened_rank": 2,
         "improvement_integrated_tensor_residual": 0.0,
         "improvement_rows": [
           {
@@ -507,24 +884,27 @@
         "curl_superpotential_divergence_residual": 0.0,
         "curl_superpotential_integrated_tensor_residual": 0.0,
         "field_action": {
-          "aggregate_action": "A_src=alpha sum_x J_x Q_x plus Cycle609 link and kinetic terms",
-          "all24_covariance_residual": 0,
+          "aggregate_array_polynomial": "A_role=alpha sum_x J_x Q_x plus C609 array-link and Q/P terms",
+          "all24_aggregate_array_comparisons_executed": 24,
+          "all24_aggregate_array_covariance_residual": 0,
           "alpha_mod17": 10,
-          "coupling_and_modulus_derived_from_matter_variation": false,
+          "coupling_modulus_sign_and_role_normalization_derived_from_matter_variation": false,
+          "host_role_array_total_mod17": 1,
           "inverse_residual": 0,
-          "joint_phase_inverse_residual": 1.370438334024207e-17,
-          "link_deletion_signal": 16,
+          "link_term_deletion_signal": 16,
           "modulus": 17,
           "order_signal": 16,
+          "physical_M2_register_or_field_composed": false,
           "physical_NN_execution_closed": false,
-          "reciprocal_matter_phase_deletion_signal": 0.7224833323743031,
-          "sign_signal": 14,
-          "source_deletion_signal": 7,
-          "source_total_mod17": 1
+          "role_array_deletion_signal": 7,
+          "role_phase_inverse_residual": 1.370438334024207e-17,
+          "role_phase_polynomial_deletion_signal": 0.7224833323743031,
+          "sign_signal": 14
         },
         "fixture": "HELD_L6",
         "held": true,
         "improvement_divergence_residual": 0.0,
+        "improvement_family_flattened_rank": 2,
         "improvement_integrated_tensor_residual": 0.0,
         "improvement_rows": [
           {
@@ -566,24 +946,27 @@
         "curl_superpotential_divergence_residual": 0.0,
         "curl_superpotential_integrated_tensor_residual": 0.0,
         "field_action": {
-          "aggregate_action": "A_src=alpha sum_x J_x Q_x plus Cycle609 link and kinetic terms",
-          "all24_covariance_residual": 0,
+          "aggregate_array_polynomial": "A_role=alpha sum_x J_x Q_x plus C609 array-link and Q/P terms",
+          "all24_aggregate_array_comparisons_executed": 24,
+          "all24_aggregate_array_covariance_residual": 0,
           "alpha_mod17": 10,
-          "coupling_and_modulus_derived_from_matter_variation": false,
+          "coupling_modulus_sign_and_role_normalization_derived_from_matter_variation": false,
+          "host_role_array_total_mod17": 1,
           "inverse_residual": 0,
-          "joint_phase_inverse_residual": 1.1909725749104706e-17,
-          "link_deletion_signal": 16,
+          "link_term_deletion_signal": 16,
           "modulus": 17,
           "order_signal": 16,
+          "physical_M2_register_or_field_composed": false,
           "physical_NN_execution_closed": false,
-          "reciprocal_matter_phase_deletion_signal": 1.9236512863456379,
-          "sign_signal": 7,
-          "source_deletion_signal": 10,
-          "source_total_mod17": 1
+          "role_array_deletion_signal": 10,
+          "role_phase_inverse_residual": 1.1909725749104706e-17,
+          "role_phase_polynomial_deletion_signal": 1.9236512863456379,
+          "sign_signal": 7
         },
         "fixture": "OUT_HELD_L7",
         "held": true,
         "improvement_divergence_residual": 0.0,
+        "improvement_family_flattened_rank": 2,
         "improvement_integrated_tensor_residual": 0.0,
         "improvement_rows": [
           {
@@ -617,24 +1000,38 @@
         "scalar_improvement_local_response_signal": 13
       }
     ],
-    "tensor": "the exact Ward flux T_ia lives on +a links; a symmetric incidence average defines the site-centered cubic tensor on which improvements act",
-    "tensor_is_gravity_source": false,
-    "tensor_is_stress_energy": false
+    "tensor_scope": "the exact Ward flux T_ia lives on +a links; a symmetric incidence average gives a site-centered comparator on which two improvement families act",
+    "trace_or_other_cubic_component_selected": false
   },
-  "route_C_distinct_compensator": {
-    "Cycle609_relative_residuals": [
+  "route_C_paid_mobile_compensator_role": {
+    "Cycle609_separate_common_action_relative_residuals": [
       0.0033361272825549507,
       0.0018510636864354823,
       0.0008344844938036573
     ],
-    "compensator_is_stress_energy_or_gravity": false,
-    "disposition": "CONSTRUCTIVE_CONDITIONAL_ZERO_MODE_COMPENSATOR; NEW_SECTOR_GENESIS_AND_PREPARATION_SUPPLIED",
-    "expectation_field_is_single_classical_word": false,
-    "global_pair_number_equality_locally_seeded_but_not_an_onsite_projector": true,
+    "all24_aggregate_array_comparisons_executed": 72,
+    "binder_position_role_arrays_exhausted_total": 586,
+    "causal_time_boundary": {
+      "C611_derives_physical_rate_or_time": false,
+      "C611_event_or_count_edit_path_for_5_over_4_advance_composed": false,
+      "advance_requires_event_count_edit_in_pinned_note": true,
+      "backcredited_to_Cycle611": false,
+      "commit": "a1e2f1ea60b1cf9b9cb0ae100c61cfd1f3a07318",
+      "comparison_only": true,
+      "content_sha256": "028133c490e771dd3012061c79910fcfb88cd6132df072ec15e725fe9bc35496",
+      "delay_is_rate_associated_in_pinned_note": true,
+      "event_association_derived": false,
+      "path": "docs/work_history/repo/review_feedback/PHYSICAL_TICK_ECHO_ASSOCIATION_CAUSAL_ORDER_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md",
+      "phase_modulation_design_is_compatible_with_external_delay_comparison": true,
+      "time_runner_imported_or_executed": false
+    },
+    "compensator_role_is_unique_stress_energy_or_gravity_source": false,
+    "declared_parent_inventory": "three binder species would use 9V local two-site swap-parent terms inside supplied one-binder sectors; that inventory is not executed genesis",
+    "declared_role_debit": "one candidate compensator role per matter role; three four-bit species per coarse cell gives 12 declared binary roles per cell, not physical M2s",
+    "disposition": "CONSTRUCTIVE_CONDITIONAL_MOBILE_COMPENSATOR_ROLE_AND_ZERO_MODE_LEDGER; PHYSICAL_SECTOR_GENESIS_AND_W_COMPILER_OPEN",
     "local_pair_genesis_gate_or_trigger_materialized": false,
     "local_pair_rule": "if a local pair-genesis gate creates/removes matter and compensator together, separate number-preserving local updates conserve total charge",
-    "matched_words": {
-      "actual_joint_response_selects_delay_or_advance": false,
+    "matched_labels": {
       "advance_candidate": [
         5,
         4
@@ -645,6 +1042,7 @@
         4
       ],
       "delay_fraction": "3/4",
+      "host_response_sign_selects_delay_or_advance": false,
       "mapping_from_response_sign_to_event_is_supplied": true,
       "receiver_zero": [
         4,
@@ -655,26 +1053,52 @@
         4
       ]
     },
-    "matched_words_are_events": false,
-    "maximum_coherent_branch_inverse_residual": 2.687729991622803e-14,
+    "matched_labels_are_events": false,
+    "maximum_position_array_and_W_word_inverse_residual": 2.687729991622803e-14,
     "maximum_source_continuity_or_zero_mode_residual": 4.440892098500626e-16,
     "maximum_uniform_binder_stationarity_residual": 2.5238885258784277e-16,
     "minimum_localized_binder_mobility_signal": 1.080123449734644,
-    "mobility": "the compensator uses the accepted Cycle219 coin and Cycle230 stream; localized density moves while the uniform scalar W ray is stationary up to phase",
-    "neutral_compiler_auxiliaries_assigned_physical_charge": false,
-    "object": "distinct mobile negative compensator carrier paired one-for-one with matter",
+    "mobility_scope": "a localized six-mode coarse amplitude changes density under the Cycle219 coin/230 stream while the uniform scalar amplitude is stationary in density; no physical carrier compiler is composed",
+    "neutral_Cycle600_role_charge_assignment_selected_as_physical_law": false,
+    "no_refit_parameters": 0,
+    "object": "distinct paid mobile compensator role paired one-for-one with the matter-role comparator",
     "pair_rule_status": "supplied candidate law; Householder W preparation does not derive or implement the local pair-genesis gate",
-    "preparation_debit": "one new compensator carrier per matter carrier; for N<=3 use three new four-M2 word species per cell = 12 persistent M2/cell before routing",
-    "preparation_status": "uniform compensator W ray is a supplied physical state preparation, not a host uniform array; the exact Householder preparation word has inverse/renewal tests but no local gate compiler or autonomous trigger",
+    "paired_number_equality_would_follow_if_pair_genesis_were_composed": true,
+    "paired_sector_locally_seeded_in_executed_update": false,
+    "physical_M2_encoder_update_leakage_or_NN_execution_evaluated": false,
+    "preparation_status": "the global coarse-role Householder word has prepare/inverse/renewal tests but no local physical compiler, autonomous trigger, or sector genesis",
     "relative_no_refit_static_residuals": [
       0.0033361272825549507,
       0.0018510636864354823,
       0.0008344844938036573
     ],
-    "renewal_parent_debit": "three binder species use 9V local two-site swap-parent terms; these stabilize W only inside the supplied one-binder sectors and do not generate the sector",
     "rows": [
       {
-        "W_preparation_word": {
+        "aggregate_array_action": {
+          "aggregate_array_polynomial": "A_role=alpha sum_x J_x Q_x plus C609 array-link and Q/P terms",
+          "all24_aggregate_array_comparisons_executed": 24,
+          "all24_aggregate_array_covariance_residual": 0,
+          "alpha_mod17": 10,
+          "coupling_modulus_sign_and_role_normalization_derived_from_matter_variation": false,
+          "host_role_array_total_mod17": 0,
+          "inverse_residual": 0,
+          "link_term_deletion_signal": 16,
+          "modulus": 17,
+          "order_signal": 15,
+          "physical_M2_register_or_field_composed": false,
+          "physical_NN_execution_closed": false,
+          "role_array_deletion_signal": 16,
+          "role_phase_inverse_residual": 1.70582178430227e-17,
+          "role_phase_polynomial_deletion_signal": 0.7224833323743053,
+          "sign_signal": 16
+        },
+        "binder_position_role_arrays_exhausted": 27,
+        "declared_candidate_binary_role_debit_total": 324,
+        "declared_new_compensator_roles": 1,
+        "declared_swap_parent_two_site_term_inventory_for_three_binders": 243,
+        "endpoint_norm_not_time": 0.10182503892224666,
+        "fixture": "TRAIN_L3",
+        "global_role_space_W_preparation": {
           "autonomous_trigger_or_initial_resource_derived": false,
           "inverse_residual": 2.4236514457283395e-15,
           "omit_preparation_signal": 1.3575216977036957,
@@ -682,45 +1106,48 @@
           "renewal_residual": 1.231062254005993e-15,
           "unitary_is_local_gate_compiled": false
         },
-        "coherent_binder_position_branches_exhausted": 27,
-        "compensator_charge": -1,
-        "endpoint_norm_not_time": 0.10182503892224666,
-        "expectation_source_F17_reduction": "delta_0-volume^-1 mod17; volume is invertible on L3/L6/L7",
-        "field_action": {
-          "aggregate_action": "A_src=alpha sum_x J_x Q_x plus Cycle609 link and kinetic terms",
-          "all24_covariance_residual": 0,
-          "alpha_mod17": 10,
-          "coupling_and_modulus_derived_from_matter_variation": false,
-          "inverse_residual": 0,
-          "joint_phase_inverse_residual": 1.70582178430227e-17,
-          "link_deletion_signal": 16,
-          "modulus": 17,
-          "order_signal": 15,
-          "physical_NN_execution_closed": false,
-          "reciprocal_matter_phase_deletion_signal": 0.7224833323743053,
-          "sign_signal": 16,
-          "source_deletion_signal": 16,
-          "source_total_mod17": 0
-        },
-        "fixture": "TRAIN_L3",
         "held": false,
+        "host_uniform_role_array_F17_reduction": "delta_0-volume^-1 mod17; volume is invertible on L3/L6/L7",
         "length": 3,
-        "local_swap_parent_two_site_terms_for_three_binders": 243,
         "localized_binder_mobility_signal": 1.080123449734644,
         "localized_binder_vs_uniform_shore_relative_residual": 1.001425693913527,
-        "matter_charge": 1,
         "matter_minus_binder_continuity_residual": 5.551115123125783e-17,
         "matter_minus_binder_zero_mode_residual": 1.1102230246251565e-16,
-        "maximum_branch_joint_inverse_residual": 3.182548627781456e-17,
-        "neutral_Cycle600_compiler_word_charge": 0,
-        "new_compensator_carriers": 1,
-        "new_persistent_binder_M2": 324,
-        "supplied_W_preparation_unitary_calls": 3,
+        "maximum_position_array_inverse_residual": 3.182548627781456e-17,
+        "role_charge_assignment_is_unique_physical_charge_law": false,
+        "supplied_compensator_role_charge": -1,
+        "supplied_global_W_preparation_calls": 3,
+        "supplied_matter_role_charge": 1,
+        "supplied_neutral_Cycle600_role_charge": 0,
         "uniform_binder_density_stationarity_residual": 2.5238885258784277e-16,
         "uniform_binder_no_refit_static_relative_residual": 0.0033361272825549507
       },
       {
-        "W_preparation_word": {
+        "aggregate_array_action": {
+          "aggregate_array_polynomial": "A_role=alpha sum_x J_x Q_x plus C609 array-link and Q/P terms",
+          "all24_aggregate_array_comparisons_executed": 24,
+          "all24_aggregate_array_covariance_residual": 0,
+          "alpha_mod17": 10,
+          "coupling_modulus_sign_and_role_normalization_derived_from_matter_variation": false,
+          "host_role_array_total_mod17": 0,
+          "inverse_residual": 0,
+          "link_term_deletion_signal": 16,
+          "modulus": 17,
+          "order_signal": 16,
+          "physical_M2_register_or_field_composed": false,
+          "physical_NN_execution_closed": false,
+          "role_array_deletion_signal": 16,
+          "role_phase_inverse_residual": 1.370438334024207e-17,
+          "role_phase_polynomial_deletion_signal": 0.7224833323743031,
+          "sign_signal": 15
+        },
+        "binder_position_role_arrays_exhausted": 216,
+        "declared_candidate_binary_role_debit_total": 2592,
+        "declared_new_compensator_roles": 1,
+        "declared_swap_parent_two_site_term_inventory_for_three_binders": 1944,
+        "endpoint_norm_not_time": 0.4300625337823037,
+        "fixture": "HELD_L6",
+        "global_role_space_W_preparation": {
           "autonomous_trigger_or_initial_resource_derived": false,
           "inverse_residual": 2.687729991622803e-14,
           "omit_preparation_signal": 1.3944333775567876,
@@ -728,45 +1155,48 @@
           "renewal_residual": 9.639741447980598e-15,
           "unitary_is_local_gate_compiled": false
         },
-        "coherent_binder_position_branches_exhausted": 216,
-        "compensator_charge": -1,
-        "endpoint_norm_not_time": 0.4300625337823037,
-        "expectation_source_F17_reduction": "delta_0-volume^-1 mod17; volume is invertible on L3/L6/L7",
-        "field_action": {
-          "aggregate_action": "A_src=alpha sum_x J_x Q_x plus Cycle609 link and kinetic terms",
-          "all24_covariance_residual": 0,
-          "alpha_mod17": 10,
-          "coupling_and_modulus_derived_from_matter_variation": false,
-          "inverse_residual": 0,
-          "joint_phase_inverse_residual": 1.370438334024207e-17,
-          "link_deletion_signal": 16,
-          "modulus": 17,
-          "order_signal": 16,
-          "physical_NN_execution_closed": false,
-          "reciprocal_matter_phase_deletion_signal": 0.7224833323743031,
-          "sign_signal": 15,
-          "source_deletion_signal": 16,
-          "source_total_mod17": 0
-        },
-        "fixture": "HELD_L6",
         "held": true,
+        "host_uniform_role_array_F17_reduction": "delta_0-volume^-1 mod17; volume is invertible on L3/L6/L7",
         "length": 6,
-        "local_swap_parent_two_site_terms_for_three_binders": 1944,
         "localized_binder_mobility_signal": 1.080123449734644,
         "localized_binder_vs_uniform_shore_relative_residual": 1.000491889418256,
-        "matter_charge": 1,
         "matter_minus_binder_continuity_residual": 0.0,
         "matter_minus_binder_zero_mode_residual": 4.440892098500626e-16,
-        "maximum_branch_joint_inverse_residual": 3.182548627781456e-17,
-        "neutral_Cycle600_compiler_word_charge": 0,
-        "new_compensator_carriers": 1,
-        "new_persistent_binder_M2": 2592,
-        "supplied_W_preparation_unitary_calls": 3,
+        "maximum_position_array_inverse_residual": 3.182548627781456e-17,
+        "role_charge_assignment_is_unique_physical_charge_law": false,
+        "supplied_compensator_role_charge": -1,
+        "supplied_global_W_preparation_calls": 3,
+        "supplied_matter_role_charge": 1,
+        "supplied_neutral_Cycle600_role_charge": 0,
         "uniform_binder_density_stationarity_residual": 1.1472805874619998e-16,
         "uniform_binder_no_refit_static_relative_residual": 0.0018510636864354823
       },
       {
-        "W_preparation_word": {
+        "aggregate_array_action": {
+          "aggregate_array_polynomial": "A_role=alpha sum_x J_x Q_x plus C609 array-link and Q/P terms",
+          "all24_aggregate_array_comparisons_executed": 24,
+          "all24_aggregate_array_covariance_residual": 0,
+          "alpha_mod17": 10,
+          "coupling_modulus_sign_and_role_normalization_derived_from_matter_variation": false,
+          "host_role_array_total_mod17": 0,
+          "inverse_residual": 0,
+          "link_term_deletion_signal": 16,
+          "modulus": 17,
+          "order_signal": 16,
+          "physical_M2_register_or_field_composed": false,
+          "physical_NN_execution_closed": false,
+          "role_array_deletion_signal": 13,
+          "role_phase_inverse_residual": 6.7335431099212654e-18,
+          "role_phase_polynomial_deletion_signal": 1.5960344545604788,
+          "sign_signal": 16
+        },
+        "binder_position_role_arrays_exhausted": 343,
+        "declared_candidate_binary_role_debit_total": 4116,
+        "declared_new_compensator_roles": 1,
+        "declared_swap_parent_two_site_term_inventory_for_three_binders": 3087,
+        "endpoint_norm_not_time": 0.4145721638495331,
+        "fixture": "OUT_HELD_L7",
+        "global_role_space_W_preparation": {
           "autonomous_trigger_or_initial_resource_derived": false,
           "inverse_residual": 1.3002695232951856e-14,
           "omit_preparation_signal": 1.3985397129085253,
@@ -774,65 +1204,398 @@
           "renewal_residual": 6.625553709967289e-16,
           "unitary_is_local_gate_compiled": false
         },
-        "coherent_binder_position_branches_exhausted": 343,
-        "compensator_charge": -1,
-        "endpoint_norm_not_time": 0.4145721638495331,
-        "expectation_source_F17_reduction": "delta_0-volume^-1 mod17; volume is invertible on L3/L6/L7",
-        "field_action": {
-          "aggregate_action": "A_src=alpha sum_x J_x Q_x plus Cycle609 link and kinetic terms",
-          "all24_covariance_residual": 0,
-          "alpha_mod17": 10,
-          "coupling_and_modulus_derived_from_matter_variation": false,
-          "inverse_residual": 0,
-          "joint_phase_inverse_residual": 6.7335431099212654e-18,
-          "link_deletion_signal": 16,
-          "modulus": 17,
-          "order_signal": 16,
-          "physical_NN_execution_closed": false,
-          "reciprocal_matter_phase_deletion_signal": 1.5960344545604788,
-          "sign_signal": 16,
-          "source_deletion_signal": 13,
-          "source_total_mod17": 0
-        },
-        "fixture": "OUT_HELD_L7",
         "held": true,
+        "host_uniform_role_array_F17_reduction": "delta_0-volume^-1 mod17; volume is invertible on L3/L6/L7",
         "length": 7,
-        "local_swap_parent_two_site_terms_for_three_binders": 3087,
         "localized_binder_mobility_signal": 1.080123449734644,
         "localized_binder_vs_uniform_shore_relative_residual": 1.0001203898022113,
-        "matter_charge": 1,
         "matter_minus_binder_continuity_residual": 8.326672684688674e-17,
         "matter_minus_binder_zero_mode_residual": 3.3306690738754696e-16,
-        "maximum_branch_joint_inverse_residual": 3.182548627781456e-17,
-        "neutral_Cycle600_compiler_word_charge": 0,
-        "new_compensator_carriers": 1,
-        "new_persistent_binder_M2": 4116,
-        "supplied_W_preparation_unitary_calls": 3,
+        "maximum_position_array_inverse_residual": 3.182548627781456e-17,
+        "role_charge_assignment_is_unique_physical_charge_law": false,
+        "supplied_compensator_role_charge": -1,
+        "supplied_global_W_preparation_calls": 3,
+        "supplied_matter_role_charge": 1,
+        "supplied_neutral_Cycle600_role_charge": 0,
         "uniform_binder_density_stationarity_residual": 7.228693884667754e-17,
         "uniform_binder_no_refit_static_relative_residual": 0.0008344844938036573
       }
     ],
-    "static_shore_identity_residual": 0.0
+    "static_shore_identity_residual": 0.0,
+    "uniform_role_array_is_single_classical_physical_field": false,
+    "uniform_static_comparison_consumes_C609_F17_state": false
+  },
+  "runner_sha256": "b16abc9ecd38e3c05d0d259d410d1f601cfbb76efd55a3f9cf0876d3b86e5682",
+  "runtime_environment": {
+    "numpy": "2.4.4",
+    "python": "3.13.5"
+  },
+  "runtime_import_controls": {
+    "closure_manifest_sha256": "47a6593eae01ad558a508330c481ca54dba96e45335b180f5b8d3c064f6c67e0",
+    "complete_runtime_import_closure": [
+      "scripts/ROUTE1_DIRECT_CAR_COMPILER_CYCLE231_2026_07_17.py",
+      "scripts/active_cubic_source_response_cycle211_2026_07_16.py",
+      "scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py",
+      "scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py",
+      "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py",
+      "scripts/exact_3d_higher_form_bosonization_cycle235_2026_07_17.py",
+      "scripts/finite_coin_scalar_wave_dilation_cycle215_2026_07_16.py",
+      "scripts/fock_modular_boundary_current_cycle229_2026_07_17.py",
+      "scripts/frontier_cubic_coxeter_regge_second_variation_3plus1_2026_06_09.py",
+      "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py",
+      "scripts/local_generator_source_tournament_cycle228_2026_07_17.py",
+      "scripts/local_rough_puncture_odd_sector_cycle247_2026_07_17.py",
+      "scripts/physical_adjacent_star_recurrence_tournament_cycle548_2026_07_21.py",
+      "scripts/physical_adjacent_two_star_compressed_gram_cycle518_2026_07_21.py",
+      "scripts/physical_adjacent_two_star_order_character_preflight_cycle517_2026_07_21.py",
+      "scripts/physical_adjacent_two_star_seam_tag_preservation_cycle519_2026_07_21.py",
+      "scripts/physical_boundary_aware_multistar_recurrence_tournament_cycle551_2026_07_21.py",
+      "scripts/physical_car_matter_weyl_reciprocal_source_response_tournament_cycle607_2026_07_22.py",
+      "scripts/physical_constrained_matter_source_static_join_tournament_cycle588_2026_07_22.py",
+      "scripts/physical_correlated_double_shadow_stream_cycle529_2026_07_21.py",
+      "scripts/physical_cycle269_collision_safe_auxiliary_ports_2026_07_17.py",
+      "scripts/physical_cycle269_common_m64_fixed_seam_cycle311_2026_07_18.py",
+      "scripts/physical_cycle269_five_cell_adjacent_star_cycle327_2026_07_18.py",
+      "scripts/physical_cycle269_four_cell_star_cycle324_2026_07_18.py",
+      "scripts/physical_cycle269_full_two_particle_sector_interface_cycle305_2026_07_17.py",
+      "scripts/physical_cycle269_higher_number_fixed_seam_cycle308_2026_07_17.py",
+      "scripts/physical_cycle269_overlap_aware_two_cell_cycle315_2026_07_18.py",
+      "scripts/physical_cycle269_reference_relative_localized_pair_lift_2026_07_17.py",
+      "scripts/physical_cycle269_seven_cell_maximal_star_cycle330_2026_07_18.py",
+      "scripts/physical_cycle269_staggered_reservoir_catchup_2026_07_17.py",
+      "scripts/physical_cycle269_three_cell_multiedge_cycle319_2026_07_18.py",
+      "scripts/physical_cycle330_all_order_isometry_bridge_cycle515_2026_07_20.py",
+      "scripts/physical_cycle515_koszul_frame_bridge_cycle516_2026_07_20.py",
+      "scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py",
+      "scripts/physical_global_N3_returned_slot_compiler_cycle560_2026_07_21.py",
+      "scripts/physical_global_selected_network_encoder_cycle555_2026_07_21.py",
+      "scripts/physical_local_N3_six_ray_decoder_tournament_cycle557_2026_07_21.py",
+      "scripts/physical_local_cutoff_gauge_enforcement_tournament_cycle593_2026_07_22.py",
+      "scripts/physical_native_shadow_nearest_neighbor_router_cycle527_2026_07_21.py",
+      "scripts/physical_operational_metric_conserved_source_local_range_tournament_cycle591_2026_07_22.py",
+      "scripts/physical_opposite_carrier_reearned_compiler_cycle522_2026_07_21.py",
+      "scripts/physical_opposite_carrier_shared_cell_recurrence_cycle525_2026_07_21.py",
+      "scripts/physical_protected_shadow_coin_gate_compiler_cycle523_2026_07_21.py",
+      "scripts/physical_rational_regge_reciprocal_response_prediction_bridge_cycle604_2026_07_22.py",
+      "scripts/physical_recurrent_shared_volume_compiler_cycle545_2026_07_21.py",
+      "scripts/physical_regge_finite_update_frame_selection_tournament_cycle579_2026_07_22.py",
+      "scripts/physical_regge_symmetric_accuracy_order_orbit_tournament_cycle581_2026_07_22.py",
+      "scripts/physical_root_free_cutoff_gauge_preparation_tournament_cycle598_2026_07_22.py",
+      "scripts/physical_root_free_full_N3_carrier_genesis_tournament_cycle600_2026_07_22.py",
+      "scripts/physical_rough_fswap_pauli_rotation_gate_compiler_cycle540_2026_07_21.py",
+      "scripts/physical_rough_gauge_subsystem_quotient_cycle532_2026_07_21.py",
+      "scripts/physical_selected_seam_code_space_isometry_compiler_cycle533_2026_07_21.py",
+      "scripts/physical_selected_seam_event_current_adapter_cycle526_2026_07_21.py",
+      "scripts/physical_shadow_normal_form_sync_cycle530_2026_07_21.py",
+      "scripts/physical_shared_seam_code_space_isometry_compiler_cycle539_2026_07_21.py",
+      "scripts/physical_three_star_shared_parity_overlap_cycle520_2026_07_21.py",
+      "scripts/physical_two_M2_CAR_phase_link_field_QCA_tournament_cycle609_2026_07_22.py",
+      "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
+      "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py",
+      "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py",
+      "scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py",
+      "scripts/wilson_subsystem_sector_free_compiler_cycle269_2026_07_17.py"
+    ],
+    "direct_runtime_imports": [
+      "scripts/physical_two_M2_CAR_phase_link_field_QCA_tournament_cycle609_2026_07_22.py",
+      "scripts/physical_operational_metric_conserved_source_local_range_tournament_cycle591_2026_07_22.py"
+    ],
+    "expected_closure_manifest_sha256": "47a6593eae01ad558a508330c481ca54dba96e45335b180f5b8d3c064f6c67e0",
+    "hidden_runtime_import_count": 60,
+    "observed_sha256": {
+      "scripts/ROUTE1_DIRECT_CAR_COMPILER_CYCLE231_2026_07_17.py": "5adb6dc52f6352a5367a2b56da94854e511f9dd174688029f1841e5004a91c32",
+      "scripts/active_cubic_source_response_cycle211_2026_07_16.py": "d5392152d322ea8f3850d0345d6caa426db22ae7f7694775b4bd6388704c18a6",
+      "scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py": "a5e78e40cad0c43ee62ae887df7d84a0b895ab217ba4f3d521353e5d0b6bf95a",
+      "scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py": "464e5928b7c1e46c23e4010363b6bd8ff3d0e2379c6e5ecb46891010ef47a5a4",
+      "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py": "ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a",
+      "scripts/exact_3d_higher_form_bosonization_cycle235_2026_07_17.py": "dd955ce629cde5e225b625be89f5f71045d688083a032b7bf104efa9b3f1bb34",
+      "scripts/finite_coin_scalar_wave_dilation_cycle215_2026_07_16.py": "3a977106389428d2281ea7e0e32b65fe57f6ce33d783742b80f264f78f4f2c17",
+      "scripts/fock_modular_boundary_current_cycle229_2026_07_17.py": "fbf434a94c8dae57ffb6e68776642e4342a91f0d39f071ee1388fcb89ff846d7",
+      "scripts/frontier_cubic_coxeter_regge_second_variation_3plus1_2026_06_09.py": "537371554e1a5244875645ca600f5f01e0ccfae64530572630d934e8ea0a85ce",
+      "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py": "4ab857755b606d7ba7432179ed66de723ac31d3f66507cafa1168ab60d4965d6",
+      "scripts/local_generator_source_tournament_cycle228_2026_07_17.py": "97fdf54189d7da93099aeab4a9b1dd8501c7262d55493b9fa95bf1c2f5c97a9d",
+      "scripts/local_rough_puncture_odd_sector_cycle247_2026_07_17.py": "10f5cf027c76f5a0a3b1d3dbaa6cb0e6d418932c84553f0cca303d3f21742519",
+      "scripts/physical_adjacent_star_recurrence_tournament_cycle548_2026_07_21.py": "5830dacebf79720301192b0dcb39121e1ecf03137f94d6e97c7da4034d9c9ca0",
+      "scripts/physical_adjacent_two_star_compressed_gram_cycle518_2026_07_21.py": "8f505d2de6476bdbc20f87a901e8be9fe46deda5b568c98d750977069a352e53",
+      "scripts/physical_adjacent_two_star_order_character_preflight_cycle517_2026_07_21.py": "ad8b0c71840cbfa56aae3ae9da44eceec1cad7d84be06bab32604eb5f6fbb4a3",
+      "scripts/physical_adjacent_two_star_seam_tag_preservation_cycle519_2026_07_21.py": "d2e0648558fb3031a200600b0643de28a5c8e695c35165a6905a6a99ff45255d",
+      "scripts/physical_boundary_aware_multistar_recurrence_tournament_cycle551_2026_07_21.py": "3d68e536565c491b1b54547d82ed6faab73437c600229ff9060f471ffad84997",
+      "scripts/physical_car_matter_weyl_reciprocal_source_response_tournament_cycle607_2026_07_22.py": "216591171e695af1e7c9ab19826afda0d4c620eda220e90490abc890a9e44757",
+      "scripts/physical_constrained_matter_source_static_join_tournament_cycle588_2026_07_22.py": "a04546c78846ae9347fce2ef7af04cd84d6fb27f8349f42d269fca6080092c82",
+      "scripts/physical_correlated_double_shadow_stream_cycle529_2026_07_21.py": "df118a01c2a95fcccd7986dc01afb5625d0faa8bb95beb2ecb344a9f5fbacda7",
+      "scripts/physical_cycle269_collision_safe_auxiliary_ports_2026_07_17.py": "03786effa03eae50930ca0bfa14c881276df8bd6bdba83b6d7a893cffe1fe747",
+      "scripts/physical_cycle269_common_m64_fixed_seam_cycle311_2026_07_18.py": "4495bf39e1e2661866501e377b8ec1aefff656e261e428fa5b6738f73b49699c",
+      "scripts/physical_cycle269_five_cell_adjacent_star_cycle327_2026_07_18.py": "0688e7db8b8490e525c0e1f1108474903e2ff40d278e185b6add54f8086f8110",
+      "scripts/physical_cycle269_four_cell_star_cycle324_2026_07_18.py": "f2e07bf91e7a5b06c8037314798cb84cd6d747bc92fa6292c1759915fb91354d",
+      "scripts/physical_cycle269_full_two_particle_sector_interface_cycle305_2026_07_17.py": "3e970b2c84ebe891d36c132cd99d716ceb20b596cea89729f06ed8950c7a847c",
+      "scripts/physical_cycle269_higher_number_fixed_seam_cycle308_2026_07_17.py": "cb6de428c5054ea9415a59bab75d36c693c65d8070df30a6a0bbc2a926f3f4e4",
+      "scripts/physical_cycle269_overlap_aware_two_cell_cycle315_2026_07_18.py": "52c18f96a1f8db9b79e4d0fba5ff76905170e6a8dc8c3e818fdf69984a1778c3",
+      "scripts/physical_cycle269_reference_relative_localized_pair_lift_2026_07_17.py": "95820817eaf883040aae96531f1afd4fe7a90569a43215d226cf44dce9a1cc09",
+      "scripts/physical_cycle269_seven_cell_maximal_star_cycle330_2026_07_18.py": "4428d1f73ff315987edabd7f838a1c58414d0a982f0cd28656ddef3bd230d19f",
+      "scripts/physical_cycle269_staggered_reservoir_catchup_2026_07_17.py": "5310ee8e19a55694f7a11ccf013c696b16cdb37961c5ade41ed316b27238bab1",
+      "scripts/physical_cycle269_three_cell_multiedge_cycle319_2026_07_18.py": "faa05d97542efca7684f4acc6f9b7dfb8e32a02f3f9d16adeae16449f5b702fb",
+      "scripts/physical_cycle330_all_order_isometry_bridge_cycle515_2026_07_20.py": "93afe1600cb3fb8b7844729521b005ce62f957a128a6ffb9493a03a1d9932e96",
+      "scripts/physical_cycle515_koszul_frame_bridge_cycle516_2026_07_20.py": "3c4318a84c661893932c8d41a90db36445f80cefd092a6a3fffb56cbf8abfa9c",
+      "scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py": "7aab3d6bc8d9d8b44263bca7a5cc308534269abb88094b2dfe0a820b12df2400",
+      "scripts/physical_global_N3_returned_slot_compiler_cycle560_2026_07_21.py": "f6d641e4735b26f9463ea623ee8ed6e28acc995fdfc88300709dcfac100c13ab",
+      "scripts/physical_global_selected_network_encoder_cycle555_2026_07_21.py": "af51110e8c4cb5245efd2bd99ef7f2b12fb02586c5e5225082ce4a13fba27e92",
+      "scripts/physical_local_N3_six_ray_decoder_tournament_cycle557_2026_07_21.py": "8b153c0ec633d489a839221788115ae85c6bf80c4d4952339795aa7bd80150d8",
+      "scripts/physical_local_cutoff_gauge_enforcement_tournament_cycle593_2026_07_22.py": "9207101f5784bac0ff2097926a36e773f2a860102e57aee173581961771a4ae5",
+      "scripts/physical_native_shadow_nearest_neighbor_router_cycle527_2026_07_21.py": "2ca2021fa76b889128b587a6a0d67986e236319ea8fb7ccd1dfaf31982c55fa0",
+      "scripts/physical_operational_metric_conserved_source_local_range_tournament_cycle591_2026_07_22.py": "d031740fadfbfa42dccba37fc4c5c211a0bec7daa9ef60a17fb9a4c65cc06291",
+      "scripts/physical_opposite_carrier_reearned_compiler_cycle522_2026_07_21.py": "d6a7700d7575dfba02d4b4d2438e54d37a02c6ca7f71673c8a871b474f6e088b",
+      "scripts/physical_opposite_carrier_shared_cell_recurrence_cycle525_2026_07_21.py": "379c67315de8d235f8d5287b281b6291d0a10731d030338d8bde0676a4c0b785",
+      "scripts/physical_protected_shadow_coin_gate_compiler_cycle523_2026_07_21.py": "d9dd02bbb4dfacebf0f75f6b8c56881ff56653843cb7ed75baa381d5aa605b9d",
+      "scripts/physical_rational_regge_reciprocal_response_prediction_bridge_cycle604_2026_07_22.py": "aaa9e6b17bd5aa73172f7a2f19e3f4cf7c72d9542dce848947f7aa298e7af04b",
+      "scripts/physical_recurrent_shared_volume_compiler_cycle545_2026_07_21.py": "b117c595f8c06f79931be98d573168e53d9f0fb9d5024e4ee623ba76d7488067",
+      "scripts/physical_regge_finite_update_frame_selection_tournament_cycle579_2026_07_22.py": "435096b012faf4425ff27761e6690178caa9e14ffdcde5659cb5072771a036ea",
+      "scripts/physical_regge_symmetric_accuracy_order_orbit_tournament_cycle581_2026_07_22.py": "845d1c00a946aaf4ff5dbf0e3a90a27c26ca2aabd4d57027f3652ef41f4c4097",
+      "scripts/physical_root_free_cutoff_gauge_preparation_tournament_cycle598_2026_07_22.py": "5702ac74768c83bd97d0860ad827a5a66809c8bfbfafb2dd010982bcb917be51",
+      "scripts/physical_root_free_full_N3_carrier_genesis_tournament_cycle600_2026_07_22.py": "904342da79cbc22c9878479f586387414e4a3af0f7f603708ec03d272074c933",
+      "scripts/physical_rough_fswap_pauli_rotation_gate_compiler_cycle540_2026_07_21.py": "53b003bbda96eee1d85e48aa5cd0e8c530bea35c7b6eefef5a637127f66af13a",
+      "scripts/physical_rough_gauge_subsystem_quotient_cycle532_2026_07_21.py": "a768d4250e55399c03e6084614a772953e6bcdf1570b9e7c50ac8d18544cfe6a",
+      "scripts/physical_selected_seam_code_space_isometry_compiler_cycle533_2026_07_21.py": "72fe24e03b38812ef9f6dc610bc445b5ea6046a30683c2b734e9c0396e84facd",
+      "scripts/physical_selected_seam_event_current_adapter_cycle526_2026_07_21.py": "7c3d4a35664eaf5c7737c86464ca069e15ce29c40f61778081af8139970c37cd",
+      "scripts/physical_shadow_normal_form_sync_cycle530_2026_07_21.py": "f5f90a331803a43d293fa8e8e3640e29886bed81935827763773d84f61ce9c99",
+      "scripts/physical_shared_seam_code_space_isometry_compiler_cycle539_2026_07_21.py": "aa126a6363f9fc8c08d28a47b840c1b6e0a7c0b47bbe296087340b804a0087d1",
+      "scripts/physical_three_star_shared_parity_overlap_cycle520_2026_07_21.py": "22b00fd39fd07a04afb8776f4b97c31486ce4d2034617bd16aa170c263108b2b",
+      "scripts/physical_two_M2_CAR_phase_link_field_QCA_tournament_cycle609_2026_07_22.py": "6e9d04c8d0ba189a93e434025c569b8a9dc2c63d5cd7a6a888a3d829f4ed8003",
+      "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py": "c410b754d4e984f6ee5ccbc7c5a52e776c50c91c4daa12d798044f104cc7435b",
+      "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py": "472e28c78901368629c8d9d6f614bb8fb3ea003639ac61d480d06941cdf6cb86",
+      "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py": "b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae",
+      "scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py": "9ef0fff433bbf1c96c9b13c5ce79530e01fe705f08c6caf6b60316e20359e011",
+      "scripts/wilson_subsystem_sector_free_compiler_cycle269_2026_07_17.py": "c7b8673eb1a0dced08131820caa1fb2400fc8d1f73cfe2cddf5f8a28f9045d35"
+    },
+    "pass": true,
+    "runtime_import_count": 62
+  },
+  "scope_boundaries": {
+    "C609_F17_state_to_real_comparator_interface_composed": false,
+    "Event_Record_Born_or_history_derived": false,
+    "compensator_sector_pair_genesis_or_local_W_compiler_composed": false,
+    "event_count_edit_path_for_advance_composed": false,
+    "physical_EG_evaluated": false,
+    "physical_M2_encoder_update_composed": false,
+    "physical_placement_routing_leakage_or_constraints_evaluated": false,
+    "physical_rate_or_time_derived": false,
+    "physical_source_current_stress_gravity_law": false,
+    "unique_physical_charge_normalization_selected": false,
+    "unique_stress_energy_tensor_selected": false
   },
   "shared_obstruction_or_axiom_pressure": false,
   "shore": {
+    "C609_to_C611_note_packaging_backedge": {
+      "C609_embedded_C611_note_expected_sha256": "102b57283c55a190ba02289d2689ac8a6e6f97aff58e13036df1dd8a66e97308",
+      "C609_runtime_imports_C611": false,
+      "current_rebuilt_C611_note_sha256": "797ae62adb91d34f9e96b038ffc8aec4ca206db22691292417404c5b51fba258",
+      "embedded_pin_matches_current_note": false,
+      "packaging_backedge_detected": true,
+      "science_runtime_dependency_cycle": false,
+      "scope": "C609 used the old C611 note as pinned N6 evidence only; no C611 runner/result was imported, executed, or back-credited"
+    },
+    "Cycle591_audit": "unset",
+    "Cycle591_audit_verdict_inferred_from_dependency": false,
+    "Cycle591_author_artifact_status_accepted": false,
+    "Cycle591_authority": "none",
+    "Cycle591_coefficient_selected_by_conservation": false,
+    "Cycle591_contact_charge_commutator": 0.0,
+    "Cycle591_current_continuity_residual": 8.389689946003147e-18,
+    "Cycle591_mass_fixture_relative_residual": 2.220446049250313e-16,
+    "Cycle591_pass": true,
+    "Cycle591_physical_EG_evaluated": false,
+    "Cycle591_tests": 19,
+    "Cycle609_audit_verdict_inferred_from_dependencies": false,
+    "Cycle609_author_artifact_status_accepted": false,
+    "Cycle609_confirmed_breakthrough": false,
     "Cycle609_pass": true,
+    "Cycle609_physical_EG_evaluated": false,
+    "Cycle609_physical_M2_compiler": false,
+    "Cycle609_tests": 9,
+    "causal_time_boundary": {
+      "advance_requires_event_count_edit_in_pinned_note": true,
+      "backcredited_to_Cycle609": false,
+      "commit": "a1e2f1ea60b1cf9b9cb0ae100c61cfd1f3a07318",
+      "comparison_only": true,
+      "content_sha256": "028133c490e771dd3012061c79910fcfb88cd6132df072ec15e725fe9bc35496",
+      "delay_rate_associated_in_pinned_note": true,
+      "event_association_remains_underived_in_pinned_note": true,
+      "git_blob": "e433350a20c79531e471fa131cd40189181e58c9",
+      "imported": false,
+      "observed_content_sha256": "028133c490e771dd3012061c79910fcfb88cd6132df072ec15e725fe9bc35496",
+      "observed_git_blob": "e433350a20c79531e471fa131cd40189181e58c9",
+      "path": "docs/work_history/repo/review_feedback/PHYSICAL_TICK_ECHO_ASSOCIATION_CAUSAL_ORDER_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md",
+      "pinned_object_matches": true,
+      "remote_ref": "origin/causal-time/cycle610-relational-duration-20260722",
+      "runner_executed": false
+    },
     "contact": 2.149937642474629e-15,
-    "hashes_match": true,
+    "direct_evidence_hashes_match": true,
     "joint_EG": 0.0,
     "mass": 8.7159799596118e-16,
-    "seam": 0
+    "note_matches_frozen_hash": true,
+    "note_sha256": "797ae62adb91d34f9e96b038ffc8aec4ca206db22691292417404c5b51fba258",
+    "runtime_import_closure": {
+      "closure_manifest_sha256": "47a6593eae01ad558a508330c481ca54dba96e45335b180f5b8d3c064f6c67e0",
+      "complete_runtime_import_closure": [
+        "scripts/ROUTE1_DIRECT_CAR_COMPILER_CYCLE231_2026_07_17.py",
+        "scripts/active_cubic_source_response_cycle211_2026_07_16.py",
+        "scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py",
+        "scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py",
+        "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py",
+        "scripts/exact_3d_higher_form_bosonization_cycle235_2026_07_17.py",
+        "scripts/finite_coin_scalar_wave_dilation_cycle215_2026_07_16.py",
+        "scripts/fock_modular_boundary_current_cycle229_2026_07_17.py",
+        "scripts/frontier_cubic_coxeter_regge_second_variation_3plus1_2026_06_09.py",
+        "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py",
+        "scripts/local_generator_source_tournament_cycle228_2026_07_17.py",
+        "scripts/local_rough_puncture_odd_sector_cycle247_2026_07_17.py",
+        "scripts/physical_adjacent_star_recurrence_tournament_cycle548_2026_07_21.py",
+        "scripts/physical_adjacent_two_star_compressed_gram_cycle518_2026_07_21.py",
+        "scripts/physical_adjacent_two_star_order_character_preflight_cycle517_2026_07_21.py",
+        "scripts/physical_adjacent_two_star_seam_tag_preservation_cycle519_2026_07_21.py",
+        "scripts/physical_boundary_aware_multistar_recurrence_tournament_cycle551_2026_07_21.py",
+        "scripts/physical_car_matter_weyl_reciprocal_source_response_tournament_cycle607_2026_07_22.py",
+        "scripts/physical_constrained_matter_source_static_join_tournament_cycle588_2026_07_22.py",
+        "scripts/physical_correlated_double_shadow_stream_cycle529_2026_07_21.py",
+        "scripts/physical_cycle269_collision_safe_auxiliary_ports_2026_07_17.py",
+        "scripts/physical_cycle269_common_m64_fixed_seam_cycle311_2026_07_18.py",
+        "scripts/physical_cycle269_five_cell_adjacent_star_cycle327_2026_07_18.py",
+        "scripts/physical_cycle269_four_cell_star_cycle324_2026_07_18.py",
+        "scripts/physical_cycle269_full_two_particle_sector_interface_cycle305_2026_07_17.py",
+        "scripts/physical_cycle269_higher_number_fixed_seam_cycle308_2026_07_17.py",
+        "scripts/physical_cycle269_overlap_aware_two_cell_cycle315_2026_07_18.py",
+        "scripts/physical_cycle269_reference_relative_localized_pair_lift_2026_07_17.py",
+        "scripts/physical_cycle269_seven_cell_maximal_star_cycle330_2026_07_18.py",
+        "scripts/physical_cycle269_staggered_reservoir_catchup_2026_07_17.py",
+        "scripts/physical_cycle269_three_cell_multiedge_cycle319_2026_07_18.py",
+        "scripts/physical_cycle330_all_order_isometry_bridge_cycle515_2026_07_20.py",
+        "scripts/physical_cycle515_koszul_frame_bridge_cycle516_2026_07_20.py",
+        "scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py",
+        "scripts/physical_global_N3_returned_slot_compiler_cycle560_2026_07_21.py",
+        "scripts/physical_global_selected_network_encoder_cycle555_2026_07_21.py",
+        "scripts/physical_local_N3_six_ray_decoder_tournament_cycle557_2026_07_21.py",
+        "scripts/physical_local_cutoff_gauge_enforcement_tournament_cycle593_2026_07_22.py",
+        "scripts/physical_native_shadow_nearest_neighbor_router_cycle527_2026_07_21.py",
+        "scripts/physical_operational_metric_conserved_source_local_range_tournament_cycle591_2026_07_22.py",
+        "scripts/physical_opposite_carrier_reearned_compiler_cycle522_2026_07_21.py",
+        "scripts/physical_opposite_carrier_shared_cell_recurrence_cycle525_2026_07_21.py",
+        "scripts/physical_protected_shadow_coin_gate_compiler_cycle523_2026_07_21.py",
+        "scripts/physical_rational_regge_reciprocal_response_prediction_bridge_cycle604_2026_07_22.py",
+        "scripts/physical_recurrent_shared_volume_compiler_cycle545_2026_07_21.py",
+        "scripts/physical_regge_finite_update_frame_selection_tournament_cycle579_2026_07_22.py",
+        "scripts/physical_regge_symmetric_accuracy_order_orbit_tournament_cycle581_2026_07_22.py",
+        "scripts/physical_root_free_cutoff_gauge_preparation_tournament_cycle598_2026_07_22.py",
+        "scripts/physical_root_free_full_N3_carrier_genesis_tournament_cycle600_2026_07_22.py",
+        "scripts/physical_rough_fswap_pauli_rotation_gate_compiler_cycle540_2026_07_21.py",
+        "scripts/physical_rough_gauge_subsystem_quotient_cycle532_2026_07_21.py",
+        "scripts/physical_selected_seam_code_space_isometry_compiler_cycle533_2026_07_21.py",
+        "scripts/physical_selected_seam_event_current_adapter_cycle526_2026_07_21.py",
+        "scripts/physical_shadow_normal_form_sync_cycle530_2026_07_21.py",
+        "scripts/physical_shared_seam_code_space_isometry_compiler_cycle539_2026_07_21.py",
+        "scripts/physical_three_star_shared_parity_overlap_cycle520_2026_07_21.py",
+        "scripts/physical_two_M2_CAR_phase_link_field_QCA_tournament_cycle609_2026_07_22.py",
+        "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
+        "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py",
+        "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py",
+        "scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py",
+        "scripts/wilson_subsystem_sector_free_compiler_cycle269_2026_07_17.py"
+      ],
+      "direct_runtime_imports": [
+        "scripts/physical_two_M2_CAR_phase_link_field_QCA_tournament_cycle609_2026_07_22.py",
+        "scripts/physical_operational_metric_conserved_source_local_range_tournament_cycle591_2026_07_22.py"
+      ],
+      "expected_closure_manifest_sha256": "47a6593eae01ad558a508330c481ca54dba96e45335b180f5b8d3c064f6c67e0",
+      "hidden_runtime_import_count": 60,
+      "observed_sha256": {
+        "scripts/ROUTE1_DIRECT_CAR_COMPILER_CYCLE231_2026_07_17.py": "5adb6dc52f6352a5367a2b56da94854e511f9dd174688029f1841e5004a91c32",
+        "scripts/active_cubic_source_response_cycle211_2026_07_16.py": "d5392152d322ea8f3850d0345d6caa426db22ae7f7694775b4bd6388704c18a6",
+        "scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py": "a5e78e40cad0c43ee62ae887df7d84a0b895ab217ba4f3d521353e5d0b6bf95a",
+        "scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py": "464e5928b7c1e46c23e4010363b6bd8ff3d0e2379c6e5ecb46891010ef47a5a4",
+        "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py": "ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a",
+        "scripts/exact_3d_higher_form_bosonization_cycle235_2026_07_17.py": "dd955ce629cde5e225b625be89f5f71045d688083a032b7bf104efa9b3f1bb34",
+        "scripts/finite_coin_scalar_wave_dilation_cycle215_2026_07_16.py": "3a977106389428d2281ea7e0e32b65fe57f6ce33d783742b80f264f78f4f2c17",
+        "scripts/fock_modular_boundary_current_cycle229_2026_07_17.py": "fbf434a94c8dae57ffb6e68776642e4342a91f0d39f071ee1388fcb89ff846d7",
+        "scripts/frontier_cubic_coxeter_regge_second_variation_3plus1_2026_06_09.py": "537371554e1a5244875645ca600f5f01e0ccfae64530572630d934e8ea0a85ce",
+        "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py": "4ab857755b606d7ba7432179ed66de723ac31d3f66507cafa1168ab60d4965d6",
+        "scripts/local_generator_source_tournament_cycle228_2026_07_17.py": "97fdf54189d7da93099aeab4a9b1dd8501c7262d55493b9fa95bf1c2f5c97a9d",
+        "scripts/local_rough_puncture_odd_sector_cycle247_2026_07_17.py": "10f5cf027c76f5a0a3b1d3dbaa6cb0e6d418932c84553f0cca303d3f21742519",
+        "scripts/physical_adjacent_star_recurrence_tournament_cycle548_2026_07_21.py": "5830dacebf79720301192b0dcb39121e1ecf03137f94d6e97c7da4034d9c9ca0",
+        "scripts/physical_adjacent_two_star_compressed_gram_cycle518_2026_07_21.py": "8f505d2de6476bdbc20f87a901e8be9fe46deda5b568c98d750977069a352e53",
+        "scripts/physical_adjacent_two_star_order_character_preflight_cycle517_2026_07_21.py": "ad8b0c71840cbfa56aae3ae9da44eceec1cad7d84be06bab32604eb5f6fbb4a3",
+        "scripts/physical_adjacent_two_star_seam_tag_preservation_cycle519_2026_07_21.py": "d2e0648558fb3031a200600b0643de28a5c8e695c35165a6905a6a99ff45255d",
+        "scripts/physical_boundary_aware_multistar_recurrence_tournament_cycle551_2026_07_21.py": "3d68e536565c491b1b54547d82ed6faab73437c600229ff9060f471ffad84997",
+        "scripts/physical_car_matter_weyl_reciprocal_source_response_tournament_cycle607_2026_07_22.py": "216591171e695af1e7c9ab19826afda0d4c620eda220e90490abc890a9e44757",
+        "scripts/physical_constrained_matter_source_static_join_tournament_cycle588_2026_07_22.py": "a04546c78846ae9347fce2ef7af04cd84d6fb27f8349f42d269fca6080092c82",
+        "scripts/physical_correlated_double_shadow_stream_cycle529_2026_07_21.py": "df118a01c2a95fcccd7986dc01afb5625d0faa8bb95beb2ecb344a9f5fbacda7",
+        "scripts/physical_cycle269_collision_safe_auxiliary_ports_2026_07_17.py": "03786effa03eae50930ca0bfa14c881276df8bd6bdba83b6d7a893cffe1fe747",
+        "scripts/physical_cycle269_common_m64_fixed_seam_cycle311_2026_07_18.py": "4495bf39e1e2661866501e377b8ec1aefff656e261e428fa5b6738f73b49699c",
+        "scripts/physical_cycle269_five_cell_adjacent_star_cycle327_2026_07_18.py": "0688e7db8b8490e525c0e1f1108474903e2ff40d278e185b6add54f8086f8110",
+        "scripts/physical_cycle269_four_cell_star_cycle324_2026_07_18.py": "f2e07bf91e7a5b06c8037314798cb84cd6d747bc92fa6292c1759915fb91354d",
+        "scripts/physical_cycle269_full_two_particle_sector_interface_cycle305_2026_07_17.py": "3e970b2c84ebe891d36c132cd99d716ceb20b596cea89729f06ed8950c7a847c",
+        "scripts/physical_cycle269_higher_number_fixed_seam_cycle308_2026_07_17.py": "cb6de428c5054ea9415a59bab75d36c693c65d8070df30a6a0bbc2a926f3f4e4",
+        "scripts/physical_cycle269_overlap_aware_two_cell_cycle315_2026_07_18.py": "52c18f96a1f8db9b79e4d0fba5ff76905170e6a8dc8c3e818fdf69984a1778c3",
+        "scripts/physical_cycle269_reference_relative_localized_pair_lift_2026_07_17.py": "95820817eaf883040aae96531f1afd4fe7a90569a43215d226cf44dce9a1cc09",
+        "scripts/physical_cycle269_seven_cell_maximal_star_cycle330_2026_07_18.py": "4428d1f73ff315987edabd7f838a1c58414d0a982f0cd28656ddef3bd230d19f",
+        "scripts/physical_cycle269_staggered_reservoir_catchup_2026_07_17.py": "5310ee8e19a55694f7a11ccf013c696b16cdb37961c5ade41ed316b27238bab1",
+        "scripts/physical_cycle269_three_cell_multiedge_cycle319_2026_07_18.py": "faa05d97542efca7684f4acc6f9b7dfb8e32a02f3f9d16adeae16449f5b702fb",
+        "scripts/physical_cycle330_all_order_isometry_bridge_cycle515_2026_07_20.py": "93afe1600cb3fb8b7844729521b005ce62f957a128a6ffb9493a03a1d9932e96",
+        "scripts/physical_cycle515_koszul_frame_bridge_cycle516_2026_07_20.py": "3c4318a84c661893932c8d41a90db36445f80cefd092a6a3fffb56cbf8abfa9c",
+        "scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py": "7aab3d6bc8d9d8b44263bca7a5cc308534269abb88094b2dfe0a820b12df2400",
+        "scripts/physical_global_N3_returned_slot_compiler_cycle560_2026_07_21.py": "f6d641e4735b26f9463ea623ee8ed6e28acc995fdfc88300709dcfac100c13ab",
+        "scripts/physical_global_selected_network_encoder_cycle555_2026_07_21.py": "af51110e8c4cb5245efd2bd99ef7f2b12fb02586c5e5225082ce4a13fba27e92",
+        "scripts/physical_local_N3_six_ray_decoder_tournament_cycle557_2026_07_21.py": "8b153c0ec633d489a839221788115ae85c6bf80c4d4952339795aa7bd80150d8",
+        "scripts/physical_local_cutoff_gauge_enforcement_tournament_cycle593_2026_07_22.py": "9207101f5784bac0ff2097926a36e773f2a860102e57aee173581961771a4ae5",
+        "scripts/physical_native_shadow_nearest_neighbor_router_cycle527_2026_07_21.py": "2ca2021fa76b889128b587a6a0d67986e236319ea8fb7ccd1dfaf31982c55fa0",
+        "scripts/physical_operational_metric_conserved_source_local_range_tournament_cycle591_2026_07_22.py": "d031740fadfbfa42dccba37fc4c5c211a0bec7daa9ef60a17fb9a4c65cc06291",
+        "scripts/physical_opposite_carrier_reearned_compiler_cycle522_2026_07_21.py": "d6a7700d7575dfba02d4b4d2438e54d37a02c6ca7f71673c8a871b474f6e088b",
+        "scripts/physical_opposite_carrier_shared_cell_recurrence_cycle525_2026_07_21.py": "379c67315de8d235f8d5287b281b6291d0a10731d030338d8bde0676a4c0b785",
+        "scripts/physical_protected_shadow_coin_gate_compiler_cycle523_2026_07_21.py": "d9dd02bbb4dfacebf0f75f6b8c56881ff56653843cb7ed75baa381d5aa605b9d",
+        "scripts/physical_rational_regge_reciprocal_response_prediction_bridge_cycle604_2026_07_22.py": "aaa9e6b17bd5aa73172f7a2f19e3f4cf7c72d9542dce848947f7aa298e7af04b",
+        "scripts/physical_recurrent_shared_volume_compiler_cycle545_2026_07_21.py": "b117c595f8c06f79931be98d573168e53d9f0fb9d5024e4ee623ba76d7488067",
+        "scripts/physical_regge_finite_update_frame_selection_tournament_cycle579_2026_07_22.py": "435096b012faf4425ff27761e6690178caa9e14ffdcde5659cb5072771a036ea",
+        "scripts/physical_regge_symmetric_accuracy_order_orbit_tournament_cycle581_2026_07_22.py": "845d1c00a946aaf4ff5dbf0e3a90a27c26ca2aabd4d57027f3652ef41f4c4097",
+        "scripts/physical_root_free_cutoff_gauge_preparation_tournament_cycle598_2026_07_22.py": "5702ac74768c83bd97d0860ad827a5a66809c8bfbfafb2dd010982bcb917be51",
+        "scripts/physical_root_free_full_N3_carrier_genesis_tournament_cycle600_2026_07_22.py": "904342da79cbc22c9878479f586387414e4a3af0f7f603708ec03d272074c933",
+        "scripts/physical_rough_fswap_pauli_rotation_gate_compiler_cycle540_2026_07_21.py": "53b003bbda96eee1d85e48aa5cd0e8c530bea35c7b6eefef5a637127f66af13a",
+        "scripts/physical_rough_gauge_subsystem_quotient_cycle532_2026_07_21.py": "a768d4250e55399c03e6084614a772953e6bcdf1570b9e7c50ac8d18544cfe6a",
+        "scripts/physical_selected_seam_code_space_isometry_compiler_cycle533_2026_07_21.py": "72fe24e03b38812ef9f6dc610bc445b5ea6046a30683c2b734e9c0396e84facd",
+        "scripts/physical_selected_seam_event_current_adapter_cycle526_2026_07_21.py": "7c3d4a35664eaf5c7737c86464ca069e15ce29c40f61778081af8139970c37cd",
+        "scripts/physical_shadow_normal_form_sync_cycle530_2026_07_21.py": "f5f90a331803a43d293fa8e8e3640e29886bed81935827763773d84f61ce9c99",
+        "scripts/physical_shared_seam_code_space_isometry_compiler_cycle539_2026_07_21.py": "aa126a6363f9fc8c08d28a47b840c1b6e0a7c0b47bbe296087340b804a0087d1",
+        "scripts/physical_three_star_shared_parity_overlap_cycle520_2026_07_21.py": "22b00fd39fd07a04afb8776f4b97c31486ce4d2034617bd16aa170c263108b2b",
+        "scripts/physical_two_M2_CAR_phase_link_field_QCA_tournament_cycle609_2026_07_22.py": "6e9d04c8d0ba189a93e434025c569b8a9dc2c63d5cd7a6a888a3d829f4ed8003",
+        "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py": "c410b754d4e984f6ee5ccbc7c5a52e776c50c91c4daa12d798044f104cc7435b",
+        "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py": "472e28c78901368629c8d9d6f614bb8fb3ea003639ac61d480d06941cdf6cb86",
+        "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py": "b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae",
+        "scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py": "9ef0fff433bbf1c96c9b13c5ce79530e01fe705f08c6caf6b60316e20359e011",
+        "scripts/wilson_subsystem_sector_free_compiler_cycle269_2026_07_17.py": "c7b8673eb1a0dced08131820caa1fb2400fc8d1f73cfe2cddf5f8a28f9045d35"
+      },
+      "pass": true,
+      "runtime_import_count": 62
+    },
+    "seam": 0.0
   },
   "six_wall_ledger": {
-    "C_int": "ADVANCED: one reciprocal source action gives matter phase and field kick for number, tensor-trace candidates, and compensator branches",
-    "C_local": "ADVANCED LAW-LEVEL: exact continuity/Ward identities are explicit; the pair-genesis gate and Cycle609 simultaneous NN packing remain unmaterialized",
-    "C_num": "ADVANCED: density is the accepted CAR occupation number and neutral compiler words carry zero physical charge",
-    "C_ref": "ADVANCED: matter unit current now comes from Peierls variation; its physical normalization, F17 coefficient/sign, stress interpretation, and compensator content remain supplied",
-    "C_source": "ADVANCED CONDITIONALLY: the unit number current is derived; a new paid compensator closes the torus zero mode only conditional on supplied sector genesis/W preparation; stress-energy/gravity selection remains open",
-    "C_wrap": "UNCHANGED: exact F17 arithmetic and alias controls remain; modular words are not real stress/energy amplitudes"
+    "C_int": "ADVANCED ALGEBRAICALLY: contact-inclusive variation and separate aggregate-array insertions are executed; no physical matter/field join is composed",
+    "C_local": "ADVANCED AT COARSE LAW LEVEL: continuity and Ward identities pass; pair genesis, local W, constraints, physical placement, routing, and leakage remain open",
+    "C_num": "ADVANCED ALGEBRAICALLY: occupation-current and rank-2 improvement identities are explicit; no unique physical charge or M2 realization follows",
+    "C_ref": "ADVANCED ALGEBRAICALLY: the unit occupation current follows from Peierls variation; physical normalization, F17 coefficients, tensor interpretation, and compensator weights remain supplied",
+    "C_source": "CONDITIONAL ALGEBRAIC PROGRESS: the paid compensator closes the declared role-array zero mode if its sector exists; no physical source, stress, or gravity law is selected",
+    "C_wrap": "UNCHANGED PHYSICALLY: exact F17 arithmetic is not a real-amplitude, energy, rate, or time rule"
   },
-  "source_identity_disposition": "unit U(1) number/current is derived from accepted matter variation; stress/gravity normalization is not; conditional on a new paid compensator sector plus supplied pair genesis/W preparation, the periodic zero mode closes without charging neutral compiler auxiliaries",
-  "strongest_constructive_result": "Peierls variation of the accepted Cycle219/230 matter update derives the same oriented occupation current as Cycle591 with exact contact-inclusive continuity; conditional on a new mobile compensator sector and supplied genesis/W preparation, an exact zero-total source reproduces the Cycle609 no-refit shore without assigning charge to neutral compiler words",
+  "source_identity_disposition": "the unit-normalized U1 occupation current follows from Peierls variation; a conditional paid compensator role closes a declared role-array zero mode if its supplied sector/genesis/W inputs exist; neither result selects physical charge, stress, gravity, or a physical C609 field",
+  "status": "three bounded algebraic/coarse/numerical results; no unique physical charge, stress-energy, physical M2 source compiler, causal time, Event, Record, Born rule, or confirmed breakthrough",
+  "strongest_constructive_result": "Peierls variation of the Cycle219/230 stream/contact update gives the unit U1 occupation current with exact continuity and the Cycle591 q_beta normalization identity; local coframe variation gives an exact Ward identity plus two algebraically distinct conserved improvement families",
+  "terminology_guards": {
+    "F17_array_is_physical_gravity_field": false,
+    "Ward_tensor_is_unique_stress_energy": false,
+    "declared_compensator_roles_are_physical_M2_count": false,
+    "matched_label_is_Event": false,
+    "number_current_is_uniquely_normalized_physical_charge": false,
+    "phase_modulation_is_physical_rate_or_time": false,
+    "pointer_copy_is_Record": false
+  },
   "tests_failed": 0,
-  "tests_passed": 9
+  "tests_passed": 9,
+  "tests_total": 9
 }

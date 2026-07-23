@@ -18,24 +18,1319 @@
     ],
     "pass": true
   },
-  "HEAD": "de5d6d7574da3fa1bb2428cf809d626d0538ebd9",
-  "Route_B_fallback": {
-    "Route_B_lane_supercell_needed": false,
-    "Route_B_lane_supercell_triggered": false,
-    "reason": "Route A physical packing passes every declared geometry and semantics gate"
-  },
-  "all576_covariance": {
+  "all576_conditional_coordinate_group_action": {
     "coordinate_checks": 1434240,
     "direction_group_failures": 0,
+    "executed_scope": "all576 composition of role, direction, and path coordinate actions about the supplied coarse-cell origin",
     "frame_products": 576,
     "pass": true,
     "path_group_failures": 0,
+    "physical_update_covariance_under_all576_executed": false,
+    "proper_rotations_about_every_fine_site_executed": false,
     "role_group_failures": 0
   },
   "audit": "unset",
+  "author_artifact_status_accepted": false,
   "authority": "none",
+  "breakthrough_bar_met": false,
+  "breakthrough_default": "no",
+  "broad_negative_gate": "FAIL / DO NOT SHIP",
+  "conditional_one_hot_orientation_control": {
+    "branch_order": "P_h projectors are mutually orthogonal on the supplied table sector, so controlled branches commute; this does not derive the coarse partition/origin",
+    "coarse_neighbor_equality_table": "adjacent supplied coarse cells carry the same one-hot word",
+    "conditional_encoding": "24 tagged one-hot site roles per supplied coarse cell; orientation h selects layout R_h",
+    "constraint_preparation_repair_or_rejection_dynamics_constructed": false,
+    "exactly_one_truth_table_executed": true,
+    "failures": {
+      "all576_orientation_action": 0,
+      "all576_predicate_role_action": 0,
+      "invalid_zero_or_multi_hot_not_identity_extension": 0,
+      "one_hot_truth": 0,
+      "orientation_orbit_injection": 0,
+      "orientation_work_overlap": 0,
+      "predicate_work_orbit_injection": 0,
+      "role_storage_overlap": 0
+    },
+    "invalid_extension": "zero-hot or multi-hot activates no P_h branch and is identity; arbitrary dirty predicate work is outside the declared code but the gate product remains unitary",
+    "lawful_table_predicate": "exactly one of 24 tagged bits is one inside a supplied supercell partition",
+    "lawful_update": "orientation bits are unchanged; compute mutually exclusive P_h flags, apply controlled G_h, uncompute",
+    "literal_NN_coarse_neighbor_equality_enforcement_gadget_constructed": false,
+    "literal_NN_exactly_one_constraint_enforcement_gadget_constructed": false,
+    "pass": true,
+    "predicate_compute_counts": {
+      "C24X_Toffoli_calls": 45,
+      "clean_work_M2": 22,
+      "exact_support_two_gates_after_Cycle603_Toffoli_lowering": 721,
+      "flag_M2": 1,
+      "negative_control_X": 46,
+      "spare_M2": 1
+    },
+    "truth_rows": [
+      {
+        "active_branch_count": 1,
+        "orientation_coordinate": [
+          -1,
+          -2,
+          3
+        ],
+        "orientation_index": 0
+      },
+      {
+        "active_branch_count": 1,
+        "orientation_coordinate": [
+          -1,
+          -3,
+          -2
+        ],
+        "orientation_index": 1
+      },
+      {
+        "active_branch_count": 1,
+        "orientation_coordinate": [
+          -1,
+          3,
+          2
+        ],
+        "orientation_index": 2
+      },
+      {
+        "active_branch_count": 1,
+        "orientation_coordinate": [
+          -1,
+          2,
+          -3
+        ],
+        "orientation_index": 3
+      },
+      {
+        "active_branch_count": 1,
+        "orientation_coordinate": [
+          -2,
+          -1,
+          -3
+        ],
+        "orientation_index": 4
+      },
+      {
+        "active_branch_count": 1,
+        "orientation_coordinate": [
+          -2,
+          -3,
+          1
+        ],
+        "orientation_index": 5
+      },
+      {
+        "active_branch_count": 1,
+        "orientation_coordinate": [
+          -2,
+          3,
+          -1
+        ],
+        "orientation_index": 6
+      },
+      {
+        "active_branch_count": 1,
+        "orientation_coordinate": [
+          -2,
+          1,
+          3
+        ],
+        "orientation_index": 7
+      },
+      {
+        "active_branch_count": 1,
+        "orientation_coordinate": [
+          -3,
+          -1,
+          2
+        ],
+        "orientation_index": 8
+      },
+      {
+        "active_branch_count": 1,
+        "orientation_coordinate": [
+          -3,
+          -2,
+          -1
+        ],
+        "orientation_index": 9
+      },
+      {
+        "active_branch_count": 1,
+        "orientation_coordinate": [
+          -3,
+          2,
+          1
+        ],
+        "orientation_index": 10
+      },
+      {
+        "active_branch_count": 1,
+        "orientation_coordinate": [
+          -3,
+          1,
+          -2
+        ],
+        "orientation_index": 11
+      },
+      {
+        "active_branch_count": 1,
+        "orientation_coordinate": [
+          3,
+          -1,
+          -2
+        ],
+        "orientation_index": 12
+      },
+      {
+        "active_branch_count": 1,
+        "orientation_coordinate": [
+          3,
+          -2,
+          1
+        ],
+        "orientation_index": 13
+      },
+      {
+        "active_branch_count": 1,
+        "orientation_coordinate": [
+          3,
+          2,
+          -1
+        ],
+        "orientation_index": 14
+      },
+      {
+        "active_branch_count": 1,
+        "orientation_coordinate": [
+          3,
+          1,
+          2
+        ],
+        "orientation_index": 15
+      },
+      {
+        "active_branch_count": 1,
+        "orientation_coordinate": [
+          2,
+          -1,
+          3
+        ],
+        "orientation_index": 16
+      },
+      {
+        "active_branch_count": 1,
+        "orientation_coordinate": [
+          2,
+          -3,
+          -1
+        ],
+        "orientation_index": 17
+      },
+      {
+        "active_branch_count": 1,
+        "orientation_coordinate": [
+          2,
+          3,
+          1
+        ],
+        "orientation_index": 18
+      },
+      {
+        "active_branch_count": 1,
+        "orientation_coordinate": [
+          2,
+          1,
+          -3
+        ],
+        "orientation_index": 19
+      },
+      {
+        "active_branch_count": 1,
+        "orientation_coordinate": [
+          1,
+          -2,
+          -3
+        ],
+        "orientation_index": 20
+      },
+      {
+        "active_branch_count": 1,
+        "orientation_coordinate": [
+          1,
+          -3,
+          2
+        ],
+        "orientation_index": 21
+      },
+      {
+        "active_branch_count": 1,
+        "orientation_coordinate": [
+          1,
+          3,
+          -2
+        ],
+        "orientation_index": 22
+      },
+      {
+        "active_branch_count": 1,
+        "orientation_coordinate": [
+          1,
+          2,
+          3
+        ],
+        "orientation_index": 23
+      }
+    ]
+  },
+  "conditional_onsite_mass_contact_seam_composition": {
+    "all24_bus_paths_are_conditional_spatial_rotations_about_supplied_coarse_origins": true,
+    "all_supplied_coarse_cells_execute_onsite_bus_in_parallel_without_cross_cell_edges": true,
+    "bus_NN_edges_checked": 2146688,
+    "bus_adjacency_failures": 0,
+    "bus_index_inverse_failures": 0,
+    "bus_sites": 2146689,
+    "conditional_coordinate_routing_preserves_fixture_by_exact_move_apply_restore_conjugation": true,
+    "fixture_residuals": {
+      "Cycle600_coin_EG_residual": 1.154543706932542e-15,
+      "Cycle600_contact_EG_residual": 0.0,
+      "Cycle600_local_stream_seam_EG_residual": 0.0,
+      "coin_clean_scratch_leakage": 2.890151575626252e-15,
+      "compiled_word_coin_EG_residual": 4.0336968129257627e-13,
+      "contact_inverse_phase_residual": 0.0,
+      "contact_phase_residual": 0.0,
+      "one_particle_mass_coin_compiled_full16_residual": 8.619648052454238e-14,
+      "one_particle_mass_coin_symmetry_residual": 1.731958809481102e-16
+    },
+    "full_physical_code_leakage_evaluated": false,
+    "inherited_parameterized_angle_import_retained": true,
+    "logical_coordinate_injection_failure": 0,
+    "one_fine_site_translation_covariant_physical_law_executed": false,
+    "onsite_work_coordinate": [
+      0,
+      0,
+      0
+    ],
+    "pass": true,
+    "routed_blocks": [
+      {
+        "base_gate_instances": 8400,
+        "block": "coin",
+        "constant_serial_routed_depth": 15528,
+        "maximum_bus_distance": 4,
+        "move_apply_restore_SWAP_instances": 7128,
+        "one_M2_gate_instances": 5520,
+        "routed_support_at_most_two": true,
+        "two_M2_gate_instances": 2880
+      },
+      {
+        "base_gate_instances": 477,
+        "block": "contact",
+        "constant_serial_routed_depth": 37563305,
+        "maximum_bus_distance": 668240,
+        "move_apply_restore_SWAP_instances": 37562828,
+        "one_M2_gate_instances": 315,
+        "routed_support_at_most_two": true,
+        "two_M2_gate_instances": 162
+      }
+    ],
+    "serpentine_bus_formula": "z-major; y reverses with z; x reverses with y+z; local coordinates subtract H"
+  },
+  "conditional_orientation_controlled_compute_act_uncompute": {
+    "all24_branch_count": 24,
+    "all24_conditional_coarse_origin_spatial_branch_realizations": [
+      {
+        "frame": [
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "literal_spatial_realization_sha256": "cc07b7277dd2e3058bb14c79e8d787732ee532b4220396784d730ff09cae34c9",
+        "move_apply_restore_SWAP_instances": 102693692972,
+        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
+        "orientation_index": 0,
+        "positive_orientation_site": [
+          -1,
+          -2,
+          3
+        ],
+        "primitive_gate_instances": 770876
+      },
+      {
+        "frame": [
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            -1
+          ],
+          [
+            0,
+            -1,
+            0
+          ]
+        ],
+        "literal_spatial_realization_sha256": "629d01d1709019cfa723779ff28534d0b8f09c2d1ad9a5607ec97490afbc1c67",
+        "move_apply_restore_SWAP_instances": 102693692972,
+        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
+        "orientation_index": 1,
+        "positive_orientation_site": [
+          -1,
+          -3,
+          -2
+        ],
+        "primitive_gate_instances": 770876
+      },
+      {
+        "frame": [
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "literal_spatial_realization_sha256": "785f24fe37af3182d9111499f3f226a15d79bd62d690d6faeb4ab6ecb64cfd5b",
+        "move_apply_restore_SWAP_instances": 102693692972,
+        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
+        "orientation_index": 2,
+        "positive_orientation_site": [
+          -1,
+          3,
+          2
+        ],
+        "primitive_gate_instances": 770876
+      },
+      {
+        "frame": [
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            -1
+          ]
+        ],
+        "literal_spatial_realization_sha256": "ac28b6874a3a019a8107e0a196d122f543e8f585f067ef6c2c98bcfc115b43e4",
+        "move_apply_restore_SWAP_instances": 102693692972,
+        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
+        "orientation_index": 3,
+        "positive_orientation_site": [
+          -1,
+          2,
+          -3
+        ],
+        "primitive_gate_instances": 770876
+      },
+      {
+        "frame": [
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            -1
+          ]
+        ],
+        "literal_spatial_realization_sha256": "37c8859b460b320adc84e3b998e269e4c46207695f7e76a30e89712c685a8103",
+        "move_apply_restore_SWAP_instances": 102693692972,
+        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
+        "orientation_index": 4,
+        "positive_orientation_site": [
+          -2,
+          -1,
+          -3
+        ],
+        "primitive_gate_instances": 770876
+      },
+      {
+        "frame": [
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            -1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "literal_spatial_realization_sha256": "50c62ddb801bab49fcab389d0e109bc2be2c41ddc336877c94a9976ee2ade585",
+        "move_apply_restore_SWAP_instances": 102693692972,
+        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
+        "orientation_index": 5,
+        "positive_orientation_site": [
+          -2,
+          -3,
+          1
+        ],
+        "primitive_gate_instances": 770876
+      },
+      {
+        "frame": [
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            -1,
+            0,
+            0
+          ]
+        ],
+        "literal_spatial_realization_sha256": "bf19ffbc610933fe26caaec27c72965a5783071d08d015bc30e485c098c98a00",
+        "move_apply_restore_SWAP_instances": 102693692972,
+        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
+        "orientation_index": 6,
+        "positive_orientation_site": [
+          -2,
+          3,
+          -1
+        ],
+        "primitive_gate_instances": 770876
+      },
+      {
+        "frame": [
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "literal_spatial_realization_sha256": "a14e4b919dfaa0d35268f3dd98456705f349df60532a47eb76af294ef10af765",
+        "move_apply_restore_SWAP_instances": 102693692972,
+        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
+        "orientation_index": 7,
+        "positive_orientation_site": [
+          -2,
+          1,
+          3
+        ],
+        "primitive_gate_instances": 770876
+      },
+      {
+        "frame": [
+          [
+            0,
+            0,
+            -1
+          ],
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "literal_spatial_realization_sha256": "8974cb854ad6327983df34cebc2483768b3ea37cba63e536bb1b8c58eb56136b",
+        "move_apply_restore_SWAP_instances": 102693692972,
+        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
+        "orientation_index": 8,
+        "positive_orientation_site": [
+          -3,
+          -1,
+          2
+        ],
+        "primitive_gate_instances": 770876
+      },
+      {
+        "frame": [
+          [
+            0,
+            0,
+            -1
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            -1,
+            0,
+            0
+          ]
+        ],
+        "literal_spatial_realization_sha256": "5c07009dde2abb2e62ef07c4002568d1edd4de558bc84e79186b07aa56953118",
+        "move_apply_restore_SWAP_instances": 102693692972,
+        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
+        "orientation_index": 9,
+        "positive_orientation_site": [
+          -3,
+          -2,
+          -1
+        ],
+        "primitive_gate_instances": 770876
+      },
+      {
+        "frame": [
+          [
+            0,
+            0,
+            -1
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "literal_spatial_realization_sha256": "3440850911fcb2e9cf05a9a46632fa1a5b9f7fea162f900cafd3110a885a2111",
+        "move_apply_restore_SWAP_instances": 102693692972,
+        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
+        "orientation_index": 10,
+        "positive_orientation_site": [
+          -3,
+          2,
+          1
+        ],
+        "primitive_gate_instances": 770876
+      },
+      {
+        "frame": [
+          [
+            0,
+            0,
+            -1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0
+          ]
+        ],
+        "literal_spatial_realization_sha256": "aceb0468fcc54205d8ddedeb8fb2ef39479a8fe3fa8ad8dd52f7f6411cbb05fe",
+        "move_apply_restore_SWAP_instances": 102693692972,
+        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
+        "orientation_index": 11,
+        "positive_orientation_site": [
+          -3,
+          1,
+          -2
+        ],
+        "primitive_gate_instances": 770876
+      },
+      {
+        "frame": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0
+          ]
+        ],
+        "literal_spatial_realization_sha256": "fd6c28dd7e07047779df4ddea7874873a4599ad31f62a314d580e0c420c781de",
+        "move_apply_restore_SWAP_instances": 102693692972,
+        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
+        "orientation_index": 12,
+        "positive_orientation_site": [
+          3,
+          -1,
+          -2
+        ],
+        "primitive_gate_instances": 770876
+      },
+      {
+        "frame": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "literal_spatial_realization_sha256": "72981068203e5ac90574feef874859f3883ba667a4085557e4bc9cc8b41e0a55",
+        "move_apply_restore_SWAP_instances": 102693692972,
+        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
+        "orientation_index": 13,
+        "positive_orientation_site": [
+          3,
+          -2,
+          1
+        ],
+        "primitive_gate_instances": 770876
+      },
+      {
+        "frame": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            -1,
+            0,
+            0
+          ]
+        ],
+        "literal_spatial_realization_sha256": "bf2ce047388afb05cc4ed2f9566f749b67a540e46e223cfe1af28593a071c79a",
+        "move_apply_restore_SWAP_instances": 102693692972,
+        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
+        "orientation_index": 14,
+        "positive_orientation_site": [
+          3,
+          2,
+          -1
+        ],
+        "primitive_gate_instances": 770876
+      },
+      {
+        "frame": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "literal_spatial_realization_sha256": "a5d08c4d1807b24ce6408af64292bd8e1c5355eb2ad9a85fe2909a89f1302a81",
+        "move_apply_restore_SWAP_instances": 102693692972,
+        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
+        "orientation_index": 15,
+        "positive_orientation_site": [
+          3,
+          1,
+          2
+        ],
+        "primitive_gate_instances": 770876
+      },
+      {
+        "frame": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "literal_spatial_realization_sha256": "5d0c1d25b0035c2caea98d9d557dfd1ad5c50a6df4b068277a009d37162cbb1e",
+        "move_apply_restore_SWAP_instances": 102693692972,
+        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
+        "orientation_index": 16,
+        "positive_orientation_site": [
+          2,
+          -1,
+          3
+        ],
+        "primitive_gate_instances": 770876
+      },
+      {
+        "frame": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            -1
+          ],
+          [
+            -1,
+            0,
+            0
+          ]
+        ],
+        "literal_spatial_realization_sha256": "cf8b47294c4606a2aafa25f6609f9fd7b2c3e2aa503bcfc727c6a0178bca8af7",
+        "move_apply_restore_SWAP_instances": 102693692972,
+        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
+        "orientation_index": 17,
+        "positive_orientation_site": [
+          2,
+          -3,
+          -1
+        ],
+        "primitive_gate_instances": 770876
+      },
+      {
+        "frame": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "literal_spatial_realization_sha256": "1803e93ee1007ef3e93afd1ba32552b1b3625c1db22473fb0223d8ff5fe010f1",
+        "move_apply_restore_SWAP_instances": 102693692972,
+        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
+        "orientation_index": 18,
+        "positive_orientation_site": [
+          2,
+          3,
+          1
+        ],
+        "primitive_gate_instances": 770876
+      },
+      {
+        "frame": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            -1
+          ]
+        ],
+        "literal_spatial_realization_sha256": "eefbad7db1e5f330f526e39ded0499d4e1ae15d7e2865672965e0296a276d906",
+        "move_apply_restore_SWAP_instances": 102693692972,
+        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
+        "orientation_index": 19,
+        "positive_orientation_site": [
+          2,
+          1,
+          -3
+        ],
+        "primitive_gate_instances": 770876
+      },
+      {
+        "frame": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            -1
+          ]
+        ],
+        "literal_spatial_realization_sha256": "4bf2174e168ee95bc9ccbf25bc42b725923d82549bdd7e3dabb037282211fcd8",
+        "move_apply_restore_SWAP_instances": 102693692972,
+        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
+        "orientation_index": 20,
+        "positive_orientation_site": [
+          1,
+          -2,
+          -3
+        ],
+        "primitive_gate_instances": 770876
+      },
+      {
+        "frame": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            -1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "literal_spatial_realization_sha256": "334a7f9aeed064b027205bbf83b3154ed1d98e4b245b6eb885a4efcc974dedb2",
+        "move_apply_restore_SWAP_instances": 102693692972,
+        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
+        "orientation_index": 21,
+        "positive_orientation_site": [
+          1,
+          -3,
+          2
+        ],
+        "primitive_gate_instances": 770876
+      },
+      {
+        "frame": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            -1,
+            0
+          ]
+        ],
+        "literal_spatial_realization_sha256": "9ea0343ca7f7c8de662fc483969c4b943aead5029b8b43192cd13caed9b20426",
+        "move_apply_restore_SWAP_instances": 102693692972,
+        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
+        "orientation_index": 22,
+        "positive_orientation_site": [
+          1,
+          3,
+          -2
+        ],
+        "primitive_gate_instances": 770876
+      },
+      {
+        "frame": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "literal_spatial_realization_sha256": "274a748d87b29acbab36fd530196cf8d1b820b83962a301fa90be97bbcc7b7f6",
+        "move_apply_restore_SWAP_instances": 102693692972,
+        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
+        "orientation_index": 23,
+        "positive_orientation_site": [
+          1,
+          2,
+          3
+        ],
+        "primitive_gate_instances": 770876
+      }
+    ],
+    "all24_rotated_bus_realization_checks": 35808,
+    "all24_rotated_bus_realization_failures": 0,
+    "all576_coarse_origin_route_generator_coordinate_checks": 859392,
+    "all576_coarse_origin_route_generator_failures": 0,
+    "base_identity_frame_literal_word": {
+      "bus_edge_instances_including_moves": 102694023026,
+      "coordinate_or_bus_inverse_failures": 0,
+      "direct_NN_failures": 0,
+      "direct_one_M2_gate_instances": 440822,
+      "literal_route_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
+      "maximum_bus_distance": 1168111,
+      "move_apply_restore_SWAP_instances": 102693692972,
+      "pass": true,
+      "primitive_gate_instances": 770876,
+      "rotation_normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
+      "routed_two_M2_gate_instances": 330054,
+      "samples": [
+        [
+          "selector_compute_g0",
+          "X",
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            [
+              -1,
+              -2,
+              3
+            ]
+          ],
+          [
+            1123526
+          ],
+          "direct-one-site"
+        ],
+        [
+          "selector_compute_g1",
+          "X",
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            [
+              -1,
+              -3,
+              -2
+            ]
+          ],
+          [
+            1039676
+          ],
+          "direct-one-site"
+        ],
+        [
+          "selector_compute_g2",
+          "X",
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            [
+              -1,
+              3,
+              2
+            ]
+          ],
+          [
+            1107014
+          ],
+          "direct-one-site"
+        ],
+        [
+          "selector_compute_g3",
+          "X",
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            [
+              -1,
+              2,
+              -3
+            ]
+          ],
+          [
+            1023164
+          ],
+          "direct-one-site"
+        ],
+        [
+          "selector_compute_g4",
+          "X",
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            [
+              -2,
+              -1,
+              -3
+            ]
+          ],
+          [
+            1023548
+          ],
+          "direct-one-site"
+        ],
+        [
+          "selector_compute_g5",
+          "X",
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            [
+              -2,
+              -3,
+              1
+            ]
+          ],
+          [
+            1090370
+          ],
+          "direct-one-site"
+        ],
+        [
+          "selector_compute_g6",
+          "X",
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            [
+              -2,
+              3,
+              -1
+            ]
+          ],
+          [
+            1056314
+          ],
+          "direct-one-site"
+        ],
+        [
+          "selector_compute_g7",
+          "X",
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            [
+              -2,
+              1,
+              3
+            ]
+          ],
+          [
+            1123136
+          ],
+          "direct-one-site"
+        ]
+      ],
+      "support_failures": 0
+    },
+    "clean_predicate_work_return": true,
+    "conditional_orientation_register": "24 tagged one-hot site roles in each supplied K-periodic supercell",
+    "cross_control_copy_uncompute_CNOTs_per_branch": 288,
+    "cross_controlled_SWAP_rows_per_branch": 72,
+    "cross_dual_predicate_controlled_SWAP_clean_scratch_residual": 7.795215032290469e-16,
+    "cross_dual_predicate_full_unitary_residual": 6.055588362377014e-15,
+    "cross_dual_predicate_scratch_return_leakage": 2.157913621781963e-16,
+    "cross_five_line_literal_microsteps_per_swap": 110,
+    "full_autonomous_rule_move_restore_SWAPS_per_cell": 2464648631328,
+    "full_autonomous_rule_primitive_gate_instances_per_cell": 18501024,
+    "invalid_zero_or_multihot_clean_work_extension": "identity because all branch predicates are zero; dirty work lies outside the declared code but the total gate word remains unitary",
+    "literal_conditional_route_representation": "given the supplied K-periodic origin/role coloring, each support-two primitive stores ordered endpoints, oriented Hamiltonian-bus indices, exact opening interval, adjacent application edge, and reverse interval; all 23 other frames are exact integer spatial images",
+    "no_host_frame_control_within_supplied_coarse_partition": true,
+    "one_fine_site_translation_covariant_rule": false,
+    "orientation_bits_unchanged": true,
+    "pass": true,
+    "physical_factor_application_order": [
+      "factor_0 controlled onsite coin",
+      "factor_1 controlled stream S, completing free U=S C",
+      "factor_2 controlled onsite contact"
+    ],
+    "predicate_compute_and_uncompute_support_two_gates": 1442,
+    "predicate_compute_support_two_gates": 721,
+    "proper_rotations_about_every_fine_site_executed": false,
+    "selector_invalid_clean_work_identity_failures": 0,
+    "selector_lawful_truth_failures": 0,
+    "selector_word": "exact C24X compute with 22 clean work M2; controlled coin/contact/stream; exact inverse-C24X uncompute",
+    "supplied_preferred_coarse_origin_or_role_coloring": true
+  },
+  "conditional_orientation_controlled_global_conflicts": {
+    "all24_frames_and_all576_coarse_origin_group_action_inherited_from_compiler": true,
+    "bus_partition_proof": "given the supplied origin, quotient/remainder of p+H modulo K gives a unique coarse cell and local coordinate; this is a conditional tiling proof, not a derivation from a one-site translation-invariant state",
+    "one_fine_site_translation_covariant_law_proved": false,
+    "pass": true,
+    "rows": [
+      {
+        "actual_bus_microstep_edge_conflicts": 0,
+        "actual_bus_microstep_vertex_conflicts": 0,
+        "actual_compute_act_uncompute_microsteps_per_cell_all24": 2464667132352,
+        "bus_site_partition_covered_by_exact_quotient_remainder": 57960603,
+        "coarse_cell_translations_tested": 27,
+        "coarse_cells": 27,
+        "coarse_grid_translation_failures": 0,
+        "control_copy_routes_are_cell_bus_words": true,
+        "cross_five_line_NN_adjacency_failures": 0,
+        "cross_five_line_support_conflicts": 0,
+        "cross_five_line_supports_tested_all24": 11664,
+        "cross_five_line_wrap_seam_failures": 0,
+        "cross_literal_substeps_per_support": 110,
+        "every_local_primitive_serialized_within_cell": true,
+        "length": 3,
+        "one_fine_site_translation_covariance_executed_here": false,
+        "pass": true,
+        "physical_displacement_per_tested_coarse_step": 129,
+        "split": "train",
+        "supercell_corner_partition_collisions": 0
+      },
+      {
+        "actual_bus_microstep_edge_conflicts": 0,
+        "actual_bus_microstep_vertex_conflicts": 0,
+        "actual_compute_act_uncompute_microsteps_per_cell_all24": 2464667132352,
+        "bus_site_partition_covered_by_exact_quotient_remainder": 463684824,
+        "coarse_cell_translations_tested": 216,
+        "coarse_cells": 216,
+        "coarse_grid_translation_failures": 0,
+        "control_copy_routes_are_cell_bus_words": true,
+        "cross_five_line_NN_adjacency_failures": 0,
+        "cross_five_line_support_conflicts": 0,
+        "cross_five_line_supports_tested_all24": 93312,
+        "cross_five_line_wrap_seam_failures": 0,
+        "cross_literal_substeps_per_support": 110,
+        "every_local_primitive_serialized_within_cell": true,
+        "length": 6,
+        "one_fine_site_translation_covariance_executed_here": false,
+        "pass": true,
+        "physical_displacement_per_tested_coarse_step": 129,
+        "split": "held",
+        "supercell_corner_partition_collisions": 0
+      },
+      {
+        "actual_bus_microstep_edge_conflicts": 0,
+        "actual_bus_microstep_vertex_conflicts": 0,
+        "actual_compute_act_uncompute_microsteps_per_cell_all24": 2464667132352,
+        "bus_site_partition_covered_by_exact_quotient_remainder": 736314327,
+        "coarse_cell_translations_tested": 343,
+        "coarse_cells": 343,
+        "coarse_grid_translation_failures": 0,
+        "control_copy_routes_are_cell_bus_words": true,
+        "cross_five_line_NN_adjacency_failures": 0,
+        "cross_five_line_support_conflicts": 0,
+        "cross_five_line_supports_tested_all24": 148176,
+        "cross_five_line_wrap_seam_failures": 0,
+        "cross_literal_substeps_per_support": 110,
+        "every_local_primitive_serialized_within_cell": true,
+        "length": 7,
+        "one_fine_site_translation_covariance_executed_here": false,
+        "pass": true,
+        "physical_displacement_per_tested_coarse_step": 129,
+        "split": "held-out-size",
+        "supercell_corner_partition_collisions": 0
+      }
+    ],
+    "schedule_scope": "conditional on the supplied K-periodic partition: selector compute; Cycle230 controlled coin then stream then contact; dual-neighbor-controlled cross SWAP; selector uncompute"
+  },
   "constitutional_effect": "none",
-  "elapsed_seconds": 266.7488828749629,
+  "covariance_execution_scope": {
+    "all24": "conditional rotated branch/path/bus coordinate realizations about supplied coarse origins",
+    "all576": "conditional coordinate group composition, not physical update covariance",
+    "coarse_translations": "all 27/216/343 supplied coarse-cell displacements, each equal to K=129 fine sites",
+    "one_fine_site_translation": "code-support falsifier executed; symmetric differences 2970/23760/37730",
+    "proper_rotations_about_every_physical_site": "not executed"
+  },
+  "demoted_artifact_status": "bounded conditional coarse-grid placement with supplied partition/origin/role coloring",
+  "elapsed_seconds": 229.91897933394648,
   "elementary_stream_template": {
     "NN_adjacency_failures": 0,
     "all24_schedule_is_role_rotation_of_same_rule": true,
@@ -56,13 +1351,19 @@
     "pass": true,
     "support_failures": 0
   },
-  "exact_physical_stream_semantics": {
-    "declared_code": "valid A word, B/path/flag/work blank, uniform intrinsic role orientation, exactly one carrier per species globally",
+  "exact_conditional_stream_semantics": {
+    "conditional_coarse_grid_gate_word_compiled": true,
+    "conditional_coarse_grid_update_descriptor": "given the supplied K-periodic origin/roles: equality compute; reversible flag shuttle; remote word XOR; shuttle return/uncompute; clear analog; four remote local word SWAPs",
+    "declared_conditional_code": "valid A word, B/path/flag/work blank, supplied uniform role orientation on the supplied coarse grid, exactly one carrier per species globally",
     "global_exactly_one_sector_locally_generated": false,
-    "intertwiner": "E G_coarse = G_physical E on the declared Cycle600 one-carrier/species code",
+    "literal_physical_encoder_composed": false,
     "malformed_collision_repaired": false,
+    "one_fine_site_translation_covariant_physical_law_executed": false,
     "pass": true,
-    "physical_update": "role-matched equality compute; reversible flag shuttle; remote word XOR; shuttle return/uncompute; clear analog; four remote local word SWAPs",
+    "pass_exact_conditional_register_semantics": true,
+    "physical_code_leakage_evaluated": false,
+    "physical_intertwiner_residual": null,
+    "register_algebraic_EG_identity": "E_register G_coarse = G_conditional-register E_register on the declared Cycle600 one-carrier/species code",
     "rows": [
       {
         "blank_buffer_return_failures": 0,
@@ -159,14 +1460,102 @@
       }
     ]
   },
-  "exact_scope": "valid word code, blank buffer/path/work and clean selector work, uniform locally checkable physical one-hot role orientation, and inherited global exactly-one-carrier/species sector",
+  "exact_scope": "bounded conditional coarse-grid placement: valid register words, blank buffer/path/work, supplied one-hot orientation/equality tables on a supplied K-periodic partition, and inherited global exactly-one-carrier/species sector",
+  "fine_site_translation_falsifier": {
+    "coarse_K_grid_translation_covariance_only": true,
+    "declared_tagged_role_definition": "42 A/B word/equality roles plus 24 orientation roles plus 24 predicate-work roles plus one onsite-work role in each supplied identity-frame coarse cell",
+    "naive_union_of_all_K3_translated_supports_fills_fine_cell": true,
+    "naive_union_preserves_injective_role_labels": false,
+    "one_fine_site_translation_covariant_code_space": false,
+    "one_fine_site_translation_covariant_update_law": false,
+    "pass_as_reproduced_falsifier": true,
+    "rows": [
+      {
+        "all_six_unit_translation_symmetric_differences": {
+          "(-1, 0, 0)": 2970,
+          "(0, -1, 0)": 4914,
+          "(0, 0, -1)": 4914,
+          "(0, 0, 1)": 4914,
+          "(0, 1, 0)": 4914,
+          "(1, 0, 0)": 2970
+        },
+        "coarse_K_translation_preserves_partition": true,
+        "expected_root_falsifier": 2970,
+        "fine_torus_period": 387,
+        "length": 3,
+        "one_fine_site_x_translation_preserves_tagged_code_support": false,
+        "one_fine_site_x_translation_symmetric_difference": 2970,
+        "overlap_with_one_fine_site_x_translate": 972,
+        "split": "train",
+        "tagged_roles_per_supplied_coarse_cell": 91,
+        "tagged_sites": 2457
+      },
+      {
+        "all_six_unit_translation_symmetric_differences": {
+          "(-1, 0, 0)": 23760,
+          "(0, -1, 0)": 39312,
+          "(0, 0, -1)": 39312,
+          "(0, 0, 1)": 39312,
+          "(0, 1, 0)": 39312,
+          "(1, 0, 0)": 23760
+        },
+        "coarse_K_translation_preserves_partition": true,
+        "expected_root_falsifier": 23760,
+        "fine_torus_period": 774,
+        "length": 6,
+        "one_fine_site_x_translation_preserves_tagged_code_support": false,
+        "one_fine_site_x_translation_symmetric_difference": 23760,
+        "overlap_with_one_fine_site_x_translate": 7776,
+        "split": "held",
+        "tagged_roles_per_supplied_coarse_cell": 91,
+        "tagged_sites": 19656
+      },
+      {
+        "all_six_unit_translation_symmetric_differences": {
+          "(-1, 0, 0)": 37730,
+          "(0, -1, 0)": 62426,
+          "(0, 0, -1)": 62426,
+          "(0, 0, 1)": 62426,
+          "(0, 1, 0)": 62426,
+          "(1, 0, 0)": 37730
+        },
+        "coarse_K_translation_preserves_partition": true,
+        "expected_root_falsifier": 37730,
+        "fine_torus_period": 903,
+        "length": 7,
+        "one_fine_site_x_translation_preserves_tagged_code_support": false,
+        "one_fine_site_x_translation_symmetric_difference": 37730,
+        "overlap_with_one_fine_site_x_translate": 12348,
+        "split": "held-out-size",
+        "tagged_roles_per_supplied_coarse_cell": 91,
+        "tagged_sites": 31213
+      }
+    ],
+    "strongest_live_repair": {
+      "mechanism": "add a locally recognized phase phi in Z_K^3 so a unit translation sends phi to phi+e_i and mutually exclusive P_(phi,h) branches select the translated/rotated coordinate word",
+      "naive_unlabelled_union_warning": "the support union of all K^3 translates fills the cell but aliases distinct role labels; injective roles or a state-carried phase are still required",
+      "route": "state-carried translation phase or an injective union of all K^3 translated motifs",
+      "status": "OPEN / not implemented",
+      "terminal_obligation": "construct literal NN phase/admissibility gadgets and execute code-domain plus update commutators for one-fine-site translations, all site-centered proper rotations, L3/L6/L7, leakage, and deletion"
+    },
+    "supplied_partition_origin_or_role_coloring": true,
+    "tagged_roles_per_coarse_cell": 91,
+    "test_contract": {
+      "contract": "physical Z^3 nearest-neighbor sites, standard translations, proper rotations about each site, and no privileged site",
+      "origin_main_lines": "37-41",
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+      "used_as_dynamics_or_new_authority": false
+    }
+  },
   "global_microstep_geometry": {
     "pass": true,
     "rows": [
       {
         "NN_adjacency_failures": 0,
-        "all_translations_tested": 27,
+        "coarse_cell_translations_tested": 27,
         "coarse_cells": 27,
+        "coarse_grid_translation_failures": 0,
         "cross_edge_duplicates": 0,
         "cross_edges_tested_including_wrap": 11664,
         "cross_endpoint_conflicts": 0,
@@ -175,17 +1564,19 @@
         "length": 3,
         "microstep_edge_conflicts": 0,
         "microstep_vertex_conflicts": 0,
+        "one_fine_site_translation_covariance_executed_here": false,
         "pass": true,
+        "physical_displacement_per_tested_coarse_step": 129,
         "role_frames": 24,
         "routed_NN_edge_instances_tested": 3125952,
         "split": "train",
-        "translation_failures": 0,
         "wrap_seam_adjacency_failures": 0
       },
       {
         "NN_adjacency_failures": 0,
-        "all_translations_tested": 216,
+        "coarse_cell_translations_tested": 216,
         "coarse_cells": 216,
+        "coarse_grid_translation_failures": 0,
         "cross_edge_duplicates": 0,
         "cross_edges_tested_including_wrap": 93312,
         "cross_endpoint_conflicts": 0,
@@ -194,17 +1585,19 @@
         "length": 6,
         "microstep_edge_conflicts": 0,
         "microstep_vertex_conflicts": 0,
+        "one_fine_site_translation_covariance_executed_here": false,
         "pass": true,
+        "physical_displacement_per_tested_coarse_step": 129,
         "role_frames": 24,
         "routed_NN_edge_instances_tested": 25007616,
         "split": "held",
-        "translation_failures": 0,
         "wrap_seam_adjacency_failures": 0
       },
       {
         "NN_adjacency_failures": 0,
-        "all_translations_tested": 343,
+        "coarse_cell_translations_tested": 343,
         "coarse_cells": 343,
+        "coarse_grid_translation_failures": 0,
         "cross_edge_duplicates": 0,
         "cross_edges_tested_including_wrap": 148176,
         "cross_endpoint_conflicts": 0,
@@ -213,17 +1606,27 @@
         "length": 7,
         "microstep_edge_conflicts": 0,
         "microstep_vertex_conflicts": 0,
+        "one_fine_site_translation_covariance_executed_here": false,
         "pass": true,
+        "physical_displacement_per_tested_coarse_step": 129,
         "role_frames": 24,
         "routed_NN_edge_instances_tested": 39711168,
         "split": "held-out-size",
-        "translation_failures": 0,
         "wrap_seam_adjacency_failures": 0
       }
     ]
   },
+  "interpretation_firewall": {
+    "coarse_grid_translation_is_one_fine_site_translation": false,
+    "coordinate_group_action_is_physical_update_covariance": false,
+    "register_EG_is_physical_intertwiner": false,
+    "schedule_is_physical_time": false,
+    "site_or_gate_count_is_source_or_energy": false,
+    "truth_table_is_locally_enforced_constraint": false
+  },
   "layout_manifest": {
     "allocated_stream_role_sites_union": 1492,
+    "coarse_partition_or_origin_derived_from_translation_invariant_state": false,
     "direction_rows": [
       {
         "direction": [
@@ -13698,6 +15101,7 @@
         64
       ]
     ],
+    "supplied_coarse_partition_origin_period": 129,
     "word_swap_paths": [
       [
         [
@@ -14151,912 +15555,24 @@
       ]
     ]
   },
-  "literal_orientation_controlled_compute_act_uncompute": {
-    "all24_branch_count": 24,
-    "all24_rotated_bus_realization_checks": 35808,
-    "all24_rotated_bus_realization_failures": 0,
-    "all24_spatial_branch_realizations": [
-      {
-        "frame": [
-          [
-            -1,
-            0,
-            0
-          ],
-          [
-            0,
-            -1,
-            0
-          ],
-          [
-            0,
-            0,
-            1
-          ]
-        ],
-        "literal_spatial_realization_sha256": "cc07b7277dd2e3058bb14c79e8d787732ee532b4220396784d730ff09cae34c9",
-        "move_apply_restore_SWAP_instances": 102693692972,
-        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
-        "orientation_index": 0,
-        "positive_orientation_site": [
-          -1,
-          -2,
-          3
-        ],
-        "primitive_gate_instances": 770876
-      },
-      {
-        "frame": [
-          [
-            -1,
-            0,
-            0
-          ],
-          [
-            0,
-            0,
-            -1
-          ],
-          [
-            0,
-            -1,
-            0
-          ]
-        ],
-        "literal_spatial_realization_sha256": "629d01d1709019cfa723779ff28534d0b8f09c2d1ad9a5607ec97490afbc1c67",
-        "move_apply_restore_SWAP_instances": 102693692972,
-        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
-        "orientation_index": 1,
-        "positive_orientation_site": [
-          -1,
-          -3,
-          -2
-        ],
-        "primitive_gate_instances": 770876
-      },
-      {
-        "frame": [
-          [
-            -1,
-            0,
-            0
-          ],
-          [
-            0,
-            0,
-            1
-          ],
-          [
-            0,
-            1,
-            0
-          ]
-        ],
-        "literal_spatial_realization_sha256": "785f24fe37af3182d9111499f3f226a15d79bd62d690d6faeb4ab6ecb64cfd5b",
-        "move_apply_restore_SWAP_instances": 102693692972,
-        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
-        "orientation_index": 2,
-        "positive_orientation_site": [
-          -1,
-          3,
-          2
-        ],
-        "primitive_gate_instances": 770876
-      },
-      {
-        "frame": [
-          [
-            -1,
-            0,
-            0
-          ],
-          [
-            0,
-            1,
-            0
-          ],
-          [
-            0,
-            0,
-            -1
-          ]
-        ],
-        "literal_spatial_realization_sha256": "ac28b6874a3a019a8107e0a196d122f543e8f585f067ef6c2c98bcfc115b43e4",
-        "move_apply_restore_SWAP_instances": 102693692972,
-        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
-        "orientation_index": 3,
-        "positive_orientation_site": [
-          -1,
-          2,
-          -3
-        ],
-        "primitive_gate_instances": 770876
-      },
-      {
-        "frame": [
-          [
-            0,
-            -1,
-            0
-          ],
-          [
-            -1,
-            0,
-            0
-          ],
-          [
-            0,
-            0,
-            -1
-          ]
-        ],
-        "literal_spatial_realization_sha256": "37c8859b460b320adc84e3b998e269e4c46207695f7e76a30e89712c685a8103",
-        "move_apply_restore_SWAP_instances": 102693692972,
-        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
-        "orientation_index": 4,
-        "positive_orientation_site": [
-          -2,
-          -1,
-          -3
-        ],
-        "primitive_gate_instances": 770876
-      },
-      {
-        "frame": [
-          [
-            0,
-            -1,
-            0
-          ],
-          [
-            0,
-            0,
-            -1
-          ],
-          [
-            1,
-            0,
-            0
-          ]
-        ],
-        "literal_spatial_realization_sha256": "50c62ddb801bab49fcab389d0e109bc2be2c41ddc336877c94a9976ee2ade585",
-        "move_apply_restore_SWAP_instances": 102693692972,
-        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
-        "orientation_index": 5,
-        "positive_orientation_site": [
-          -2,
-          -3,
-          1
-        ],
-        "primitive_gate_instances": 770876
-      },
-      {
-        "frame": [
-          [
-            0,
-            -1,
-            0
-          ],
-          [
-            0,
-            0,
-            1
-          ],
-          [
-            -1,
-            0,
-            0
-          ]
-        ],
-        "literal_spatial_realization_sha256": "bf19ffbc610933fe26caaec27c72965a5783071d08d015bc30e485c098c98a00",
-        "move_apply_restore_SWAP_instances": 102693692972,
-        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
-        "orientation_index": 6,
-        "positive_orientation_site": [
-          -2,
-          3,
-          -1
-        ],
-        "primitive_gate_instances": 770876
-      },
-      {
-        "frame": [
-          [
-            0,
-            -1,
-            0
-          ],
-          [
-            1,
-            0,
-            0
-          ],
-          [
-            0,
-            0,
-            1
-          ]
-        ],
-        "literal_spatial_realization_sha256": "a14e4b919dfaa0d35268f3dd98456705f349df60532a47eb76af294ef10af765",
-        "move_apply_restore_SWAP_instances": 102693692972,
-        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
-        "orientation_index": 7,
-        "positive_orientation_site": [
-          -2,
-          1,
-          3
-        ],
-        "primitive_gate_instances": 770876
-      },
-      {
-        "frame": [
-          [
-            0,
-            0,
-            -1
-          ],
-          [
-            -1,
-            0,
-            0
-          ],
-          [
-            0,
-            1,
-            0
-          ]
-        ],
-        "literal_spatial_realization_sha256": "8974cb854ad6327983df34cebc2483768b3ea37cba63e536bb1b8c58eb56136b",
-        "move_apply_restore_SWAP_instances": 102693692972,
-        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
-        "orientation_index": 8,
-        "positive_orientation_site": [
-          -3,
-          -1,
-          2
-        ],
-        "primitive_gate_instances": 770876
-      },
-      {
-        "frame": [
-          [
-            0,
-            0,
-            -1
-          ],
-          [
-            0,
-            -1,
-            0
-          ],
-          [
-            -1,
-            0,
-            0
-          ]
-        ],
-        "literal_spatial_realization_sha256": "5c07009dde2abb2e62ef07c4002568d1edd4de558bc84e79186b07aa56953118",
-        "move_apply_restore_SWAP_instances": 102693692972,
-        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
-        "orientation_index": 9,
-        "positive_orientation_site": [
-          -3,
-          -2,
-          -1
-        ],
-        "primitive_gate_instances": 770876
-      },
-      {
-        "frame": [
-          [
-            0,
-            0,
-            -1
-          ],
-          [
-            0,
-            1,
-            0
-          ],
-          [
-            1,
-            0,
-            0
-          ]
-        ],
-        "literal_spatial_realization_sha256": "3440850911fcb2e9cf05a9a46632fa1a5b9f7fea162f900cafd3110a885a2111",
-        "move_apply_restore_SWAP_instances": 102693692972,
-        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
-        "orientation_index": 10,
-        "positive_orientation_site": [
-          -3,
-          2,
-          1
-        ],
-        "primitive_gate_instances": 770876
-      },
-      {
-        "frame": [
-          [
-            0,
-            0,
-            -1
-          ],
-          [
-            1,
-            0,
-            0
-          ],
-          [
-            0,
-            -1,
-            0
-          ]
-        ],
-        "literal_spatial_realization_sha256": "aceb0468fcc54205d8ddedeb8fb2ef39479a8fe3fa8ad8dd52f7f6411cbb05fe",
-        "move_apply_restore_SWAP_instances": 102693692972,
-        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
-        "orientation_index": 11,
-        "positive_orientation_site": [
-          -3,
-          1,
-          -2
-        ],
-        "primitive_gate_instances": 770876
-      },
-      {
-        "frame": [
-          [
-            0,
-            0,
-            1
-          ],
-          [
-            -1,
-            0,
-            0
-          ],
-          [
-            0,
-            -1,
-            0
-          ]
-        ],
-        "literal_spatial_realization_sha256": "fd6c28dd7e07047779df4ddea7874873a4599ad31f62a314d580e0c420c781de",
-        "move_apply_restore_SWAP_instances": 102693692972,
-        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
-        "orientation_index": 12,
-        "positive_orientation_site": [
-          3,
-          -1,
-          -2
-        ],
-        "primitive_gate_instances": 770876
-      },
-      {
-        "frame": [
-          [
-            0,
-            0,
-            1
-          ],
-          [
-            0,
-            -1,
-            0
-          ],
-          [
-            1,
-            0,
-            0
-          ]
-        ],
-        "literal_spatial_realization_sha256": "72981068203e5ac90574feef874859f3883ba667a4085557e4bc9cc8b41e0a55",
-        "move_apply_restore_SWAP_instances": 102693692972,
-        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
-        "orientation_index": 13,
-        "positive_orientation_site": [
-          3,
-          -2,
-          1
-        ],
-        "primitive_gate_instances": 770876
-      },
-      {
-        "frame": [
-          [
-            0,
-            0,
-            1
-          ],
-          [
-            0,
-            1,
-            0
-          ],
-          [
-            -1,
-            0,
-            0
-          ]
-        ],
-        "literal_spatial_realization_sha256": "bf2ce047388afb05cc4ed2f9566f749b67a540e46e223cfe1af28593a071c79a",
-        "move_apply_restore_SWAP_instances": 102693692972,
-        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
-        "orientation_index": 14,
-        "positive_orientation_site": [
-          3,
-          2,
-          -1
-        ],
-        "primitive_gate_instances": 770876
-      },
-      {
-        "frame": [
-          [
-            0,
-            0,
-            1
-          ],
-          [
-            1,
-            0,
-            0
-          ],
-          [
-            0,
-            1,
-            0
-          ]
-        ],
-        "literal_spatial_realization_sha256": "a5d08c4d1807b24ce6408af64292bd8e1c5355eb2ad9a85fe2909a89f1302a81",
-        "move_apply_restore_SWAP_instances": 102693692972,
-        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
-        "orientation_index": 15,
-        "positive_orientation_site": [
-          3,
-          1,
-          2
-        ],
-        "primitive_gate_instances": 770876
-      },
-      {
-        "frame": [
-          [
-            0,
-            1,
-            0
-          ],
-          [
-            -1,
-            0,
-            0
-          ],
-          [
-            0,
-            0,
-            1
-          ]
-        ],
-        "literal_spatial_realization_sha256": "5d0c1d25b0035c2caea98d9d557dfd1ad5c50a6df4b068277a009d37162cbb1e",
-        "move_apply_restore_SWAP_instances": 102693692972,
-        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
-        "orientation_index": 16,
-        "positive_orientation_site": [
-          2,
-          -1,
-          3
-        ],
-        "primitive_gate_instances": 770876
-      },
-      {
-        "frame": [
-          [
-            0,
-            1,
-            0
-          ],
-          [
-            0,
-            0,
-            -1
-          ],
-          [
-            -1,
-            0,
-            0
-          ]
-        ],
-        "literal_spatial_realization_sha256": "cf8b47294c4606a2aafa25f6609f9fd7b2c3e2aa503bcfc727c6a0178bca8af7",
-        "move_apply_restore_SWAP_instances": 102693692972,
-        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
-        "orientation_index": 17,
-        "positive_orientation_site": [
-          2,
-          -3,
-          -1
-        ],
-        "primitive_gate_instances": 770876
-      },
-      {
-        "frame": [
-          [
-            0,
-            1,
-            0
-          ],
-          [
-            0,
-            0,
-            1
-          ],
-          [
-            1,
-            0,
-            0
-          ]
-        ],
-        "literal_spatial_realization_sha256": "1803e93ee1007ef3e93afd1ba32552b1b3625c1db22473fb0223d8ff5fe010f1",
-        "move_apply_restore_SWAP_instances": 102693692972,
-        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
-        "orientation_index": 18,
-        "positive_orientation_site": [
-          2,
-          3,
-          1
-        ],
-        "primitive_gate_instances": 770876
-      },
-      {
-        "frame": [
-          [
-            0,
-            1,
-            0
-          ],
-          [
-            1,
-            0,
-            0
-          ],
-          [
-            0,
-            0,
-            -1
-          ]
-        ],
-        "literal_spatial_realization_sha256": "eefbad7db1e5f330f526e39ded0499d4e1ae15d7e2865672965e0296a276d906",
-        "move_apply_restore_SWAP_instances": 102693692972,
-        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
-        "orientation_index": 19,
-        "positive_orientation_site": [
-          2,
-          1,
-          -3
-        ],
-        "primitive_gate_instances": 770876
-      },
-      {
-        "frame": [
-          [
-            1,
-            0,
-            0
-          ],
-          [
-            0,
-            -1,
-            0
-          ],
-          [
-            0,
-            0,
-            -1
-          ]
-        ],
-        "literal_spatial_realization_sha256": "4bf2174e168ee95bc9ccbf25bc42b725923d82549bdd7e3dabb037282211fcd8",
-        "move_apply_restore_SWAP_instances": 102693692972,
-        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
-        "orientation_index": 20,
-        "positive_orientation_site": [
-          1,
-          -2,
-          -3
-        ],
-        "primitive_gate_instances": 770876
-      },
-      {
-        "frame": [
-          [
-            1,
-            0,
-            0
-          ],
-          [
-            0,
-            0,
-            -1
-          ],
-          [
-            0,
-            1,
-            0
-          ]
-        ],
-        "literal_spatial_realization_sha256": "334a7f9aeed064b027205bbf83b3154ed1d98e4b245b6eb885a4efcc974dedb2",
-        "move_apply_restore_SWAP_instances": 102693692972,
-        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
-        "orientation_index": 21,
-        "positive_orientation_site": [
-          1,
-          -3,
-          2
-        ],
-        "primitive_gate_instances": 770876
-      },
-      {
-        "frame": [
-          [
-            1,
-            0,
-            0
-          ],
-          [
-            0,
-            0,
-            1
-          ],
-          [
-            0,
-            -1,
-            0
-          ]
-        ],
-        "literal_spatial_realization_sha256": "9ea0343ca7f7c8de662fc483969c4b943aead5029b8b43192cd13caed9b20426",
-        "move_apply_restore_SWAP_instances": 102693692972,
-        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
-        "orientation_index": 22,
-        "positive_orientation_site": [
-          1,
-          3,
-          -2
-        ],
-        "primitive_gate_instances": 770876
-      },
-      {
-        "frame": [
-          [
-            1,
-            0,
-            0
-          ],
-          [
-            0,
-            1,
-            0
-          ],
-          [
-            0,
-            0,
-            1
-          ]
-        ],
-        "literal_spatial_realization_sha256": "274a748d87b29acbab36fd530196cf8d1b820b83962a301fa90be97bbcc7b7f6",
-        "move_apply_restore_SWAP_instances": 102693692972,
-        "normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
-        "orientation_index": 23,
-        "positive_orientation_site": [
-          1,
-          2,
-          3
-        ],
-        "primitive_gate_instances": 770876
-      }
+  "local_constraint_scope": {
+    "coarse_neighbor_equality_defect_syndromes": [
+      6,
+      6,
+      6
     ],
-    "all576_route_generator_coordinate_checks": 859392,
-    "all576_route_generator_failures": 0,
-    "base_identity_frame_literal_word": {
-      "bus_edge_instances_including_moves": 102694023026,
-      "coordinate_or_bus_inverse_failures": 0,
-      "direct_NN_failures": 0,
-      "direct_one_M2_gate_instances": 440822,
-      "literal_route_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
-      "maximum_bus_distance": 1168111,
-      "move_apply_restore_SWAP_instances": 102693692972,
-      "pass": true,
-      "primitive_gate_instances": 770876,
-      "rotation_normalized_schedule_sha256": "91fe46bde20a0206ba551f759b8b31fc74da46cc25992ad29aaa36c1824f5669",
-      "routed_two_M2_gate_instances": 330054,
-      "samples": [
-        [
-          "selector_compute_g0",
-          "X",
-          [
-            0,
-            0,
-            0
-          ],
-          [
-            [
-              -1,
-              -2,
-              3
-            ]
-          ],
-          [
-            1123526
-          ],
-          "direct-one-site"
-        ],
-        [
-          "selector_compute_g1",
-          "X",
-          [
-            0,
-            0,
-            0
-          ],
-          [
-            [
-              -1,
-              -3,
-              -2
-            ]
-          ],
-          [
-            1039676
-          ],
-          "direct-one-site"
-        ],
-        [
-          "selector_compute_g2",
-          "X",
-          [
-            0,
-            0,
-            0
-          ],
-          [
-            [
-              -1,
-              3,
-              2
-            ]
-          ],
-          [
-            1107014
-          ],
-          "direct-one-site"
-        ],
-        [
-          "selector_compute_g3",
-          "X",
-          [
-            0,
-            0,
-            0
-          ],
-          [
-            [
-              -1,
-              2,
-              -3
-            ]
-          ],
-          [
-            1023164
-          ],
-          "direct-one-site"
-        ],
-        [
-          "selector_compute_g4",
-          "X",
-          [
-            0,
-            0,
-            0
-          ],
-          [
-            [
-              -2,
-              -1,
-              -3
-            ]
-          ],
-          [
-            1023548
-          ],
-          "direct-one-site"
-        ],
-        [
-          "selector_compute_g5",
-          "X",
-          [
-            0,
-            0,
-            0
-          ],
-          [
-            [
-              -2,
-              -3,
-              1
-            ]
-          ],
-          [
-            1090370
-          ],
-          "direct-one-site"
-        ],
-        [
-          "selector_compute_g6",
-          "X",
-          [
-            0,
-            0,
-            0
-          ],
-          [
-            [
-              -2,
-              3,
-              -1
-            ]
-          ],
-          [
-            1056314
-          ],
-          "direct-one-site"
-        ],
-        [
-          "selector_compute_g7",
-          "X",
-          [
-            0,
-            0,
-            0
-          ],
-          [
-            [
-              -2,
-              1,
-              3
-            ]
-          ],
-          [
-            1123136
-          ],
-          "direct-one-site"
-        ]
-      ],
-      "support_failures": 0
-    },
-    "clean_predicate_work_return": true,
-    "cross_control_copy_uncompute_CNOTs_per_branch": 288,
-    "cross_controlled_SWAP_rows_per_branch": 72,
-    "cross_dual_predicate_controlled_SWAP_clean_scratch_residual": 7.795215032290469e-16,
-    "cross_dual_predicate_full_unitary_residual": 6.055588362377014e-15,
-    "cross_dual_predicate_scratch_return_leakage": 2.157913621781963e-16,
-    "cross_five_line_literal_microsteps_per_swap": 110,
-    "full_autonomous_rule_move_restore_SWAPS_per_cell": 2464648631328,
-    "full_autonomous_rule_primitive_gate_instances_per_cell": 18501024,
-    "invalid_zero_or_multihot_clean_work_extension": "identity because all branch predicates are zero; dirty work lies outside the declared code but the total gate word remains unitary",
-    "literal_route_representation": "each support-two primitive stores ordered endpoints, oriented Hamiltonian-bus indices, exact opening interval, adjacent application edge, and reverse interval; all 23 other frames are exact integer spatial images",
-    "no_host_frame_control": true,
-    "orientation_bits_unchanged": true,
-    "pass": true,
-    "physical_factor_application_order": [
-      "factor_0 controlled onsite coin",
-      "factor_1 controlled stream S, completing free U=S C",
-      "factor_2 controlled onsite contact"
-    ],
-    "physical_orientation_register": "24 one-hot M2 sites in each counted supercell",
-    "predicate_compute_and_uncompute_support_two_gates": 1442,
-    "predicate_compute_support_two_gates": 721,
-    "selector_invalid_clean_work_identity_failures": 0,
-    "selector_lawful_truth_failures": 0,
-    "selector_word": "exact C24X compute with 22 clean work M2; controlled coin/contact/stream; exact inverse-C24X uncompute"
+    "constraint_preparation_repair_rejection_or_penalty_dynamics_constructed": false,
+    "constraints_supplied_on_declared_code": true,
+    "exactly_one_24_bit_truth_rows": 24,
+    "exactly_one_truth_failures": 0,
+    "literal_fine_NN_exactly_one_enforcement_gadget_constructed": false,
+    "literal_fine_NN_uniform_equality_enforcement_gadget_constructed": false,
+    "pass_as_honest_constraint_scope": true,
+    "predicate_compute_uncompute_gate_word_compiled": true,
+    "scope": "truth tables, a conditional predicate-computation circuit, and coarse-cell syndrome counts only; no physical NN admissibility law is constructed",
+    "zero_or_multihot_identity_table_failures": 0
   },
+  "local_cycle610_not_causal_time_PR5557_cycle610": "This local supercell Cycle610 is distinct from the causal-time PR #5557 Cycle610; the number collision carries no scientific dependency or evidence.",
   "local_geometry": {
     "directions_per_frame": 6,
     "failures": {
@@ -15075,207 +15591,611 @@
     "minimum_shuttle_path_sites": 43,
     "pass": true
   },
-  "maximum_RSS_bytes": 117293056,
+  "maximum_RSS_bytes": 141688832,
+  "minimal_axioms_test_contract": {
+    "contract": "physical Z^3 nearest-neighbor sites, standard translations, proper rotations about each site, and no privileged site",
+    "observed_sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+    "origin_main_lines": "37-41",
+    "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+    "used_as_dynamics_or_new_authority": false
+  },
   "no_go_discipline": {
-    "N1_family_count": 6,
+    "N1_all_markers_exact": true,
     "N1_normalized_families": [
       {
-        "family": "physical one-hot orientation-controlled flag shuttle",
+        "attempt_statement": "place A/B roles, face channels, and work sites in one 129-period motif repeated on a supplied coarse grid",
+        "authority": "none; current attempted artifact",
+        "comparison_strength": "strictly weaker: exact only conditional on a supplied origin/coloring",
+        "disposition": "conditional coarse-grid placement passes; physical-law promotion fails the unit-translation contract",
+        "failure_statement_with_citation": "the conditional coordinate schedule passes, but fine_site_translation_falsifier returns nonzero L3/L6/L7 unit-x symmetric differences",
+        "family": "fixed-origin K-periodic conditional supercell",
         "marker": "ATTEMPTED",
-        "mechanism": "24 physical one-hot M2s, exact C24X branch predicates, source/target role separation, and dual-predicate cross-face SWAPs",
-        "object": "129^3 cubic M2 supercell with A/B clusters and face channels",
-        "status": "candidate-complete",
-        "strength": "target-equivalent",
-        "terminal_obligation": "translation-invariant support-two physical stream with all-frame covariance"
+        "mechanism": "role-separated channels and serialized support-one/two coordinate words",
+        "object": "129^3 supplied coarse cells with persistent tagged roles",
+        "terminal_obligation": "one-fine-site translation-covariant physical M2 law"
       },
       {
-        "family": "direction-expanded partitioned lanes",
-        "marker": "ATTEMPTED IN PRIOR CYCLE606 AT REGISTER LEVEL",
-        "mechanism": "literal intercell lane SWAP partitions",
-        "object": "Cycle606 Route B Out/In direction registers",
-        "status": "provisional fallback",
-        "strength": "target-equivalent with larger overhead",
-        "terminal_obligation": "physical lane-exchange supercell if compact packing fails"
-      },
-      {
-        "family": "state-carried alternating buffer phase",
-        "marker": "ATTEMPTED IN PRIOR CYCLE606",
-        "mechanism": "local reversible phase toggle selects active buffer",
-        "object": "Cycle606 Route C phase field and two words",
-        "status": "provisional",
-        "strength": "target-equivalent with phase-genesis import",
-        "terminal_obligation": "autonomous recurrent stream without host tick"
-      },
-      {
-        "family": "co-present 24-orbit frame repetition code",
-        "marker": "ATTEMPTED GEOMETRY PROTOTYPE; NOT USED",
-        "mechanism": "literal invariant orbit under the cubic group",
-        "object": "twenty-four spatially rotated data copies",
-        "status": "blocked-local",
-        "strength": "unknown/comparable",
-        "terminal_obligation": "frame-free geometry plus coherent onsite logical coin"
-      },
-      {
-        "family": "cell Hamiltonian-bus onsite composition",
+        "attempt_statement": "reexecute the Cycle606 scatter-clear-swap permutation and its code-space EG/inverse/deletion controls at L3/L6/L7",
+        "authority": "none; final independently accepted Cycle606 artifact is byte pinned",
+        "comparison_strength": "target-equivalent at register level, weaker than physical M2",
+        "disposition": "register target closes exactly; physical promotion remains open",
+        "failure_statement_with_citation": "register residuals vanish, but the result supplies no physical encoder or one-fine-site covariant law (Cycle606 note:12-29,104-107)",
+        "family": "compact double-buffer register stream",
         "marker": "ATTEMPTED",
-        "mechanism": "move-apply-restore conjugation of Cycle603 gates",
-        "object": "all 129^3 fine sites in a serpentine NN path",
-        "status": "candidate-complete",
-        "strength": "target-equivalent with inherited analog angles",
-        "terminal_obligation": "mass/contact/seam preserving onsite-plus-stream physical macro"
+        "mechanism": "equality-controlled scatter, clear, and buffer swap",
+        "object": "two four-role-bit words per species and coarse cell",
+        "terminal_obligation": "exact logical/register stream and conditional placement semantics"
       },
       {
-        "family": "bounded role-color conflict schedule",
+        "attempt_statement": "encode 24 rotated branch sectors and select them by exact one-hot predicate compute/action/uncompute",
+        "authority": "none; current attempted artifact",
+        "comparison_strength": "closes conditional orientation action only",
+        "disposition": "rotation-orbit coordinate checks pass; partition/origin remains supplied",
+        "failure_statement_with_citation": "all24/all576 coordinate actions pass about supplied coarse origins, but they do not test rotations about every fine site or any unit translation",
+        "family": "proper-cubic orientation-controlled branch orbit",
         "marker": "ATTEMPTED",
-        "mechanism": "one autonomous product of 24 mutually exclusive controlled branch words",
-        "object": "cell-internal role geometry plus physical one-hot orientation and clean predicate work",
-        "status": "candidate-complete",
-        "strength": "target-equivalent",
-        "terminal_obligation": "avoid origin/parity/L queries while retaining proper-cubic covariance"
+        "mechanism": "mutually exclusive C24X branch predicates",
+        "object": "24 one-hot tagged orientation roles and 24 rotated coordinate words",
+        "terminal_obligation": "proper-cubic branch covariance without a runtime frame selector"
+      },
+      {
+        "attempt_statement": "route onsite gates by move-apply-restore bus intervals and cross-face controls by literal five-site NN words",
+        "authority": "none; current attempted artifact",
+        "comparison_strength": "exact conditional routing descriptor, not a complete physical intertwiner",
+        "disposition": "conditional routing and local gadget identities pass",
+        "failure_statement_with_citation": "support, inverse, scratch, and fixture residuals pass only relative to the supplied coarse partition; no physical encoder/leakage calculation is composed",
+        "family": "Hamiltonian-bus and five-line primitive composition",
+        "marker": "ATTEMPTED",
+        "mechanism": "nearest-neighbor bus conjugation and dual-predicate cross gadgets",
+        "object": "conditional fine-coordinate primitive descriptors",
+        "terminal_obligation": "bounded primitive realization of mass/contact/seam plus stream factors"
+      },
+      {
+        "attempt_statement": "take the support union of all K^3 translations so unit translations preserve the occupied set",
+        "authority": "none; current set-orbit attempt",
+        "comparison_strength": "weaker set-level comparator",
+        "disposition": "support invariance is trivial but role injectivity fails",
+        "failure_statement_with_citation": "the analytic orbit fills every fine site but aliases distinct role labels, so it is not an injective encoder or update compiler",
+        "family": "unlabelled union of all translated motif supports",
+        "marker": "ATTEMPTED",
+        "mechanism": "co-present union of translated supports",
+        "object": "Z_K^3 translation orbit of the 91-site tagged motif",
+        "terminal_obligation": "unit-translation-invariant code support with injective role identity"
+      },
+      {
+        "attempt_statement": "obtain the stream from six separately compiled crossed-link transpositions",
+        "authority": "independently accepted Cycle603 artifact; formal authority remains none",
+        "comparison_strength": "strictly weaker than the global target",
+        "disposition": "local endpoint circuits alone are insufficient",
+        "failure_statement_with_citation": "Cycle603 explicitly states that separate tables do not compose a simultaneous torus update (Cycle603 note:153-172)",
+        "family": "independent crossed-link endpoint tables",
+        "marker": "RULED OUT BY PRIOR",
+        "mechanism": "Gray-path local transpositions",
+        "object": "six eight-role-bit endpoint permutations",
+        "prior_citation": "docs/work_history/repo/review_feedback/PHYSICAL_CARRIER_PREPARATION_ELEMENTARY_SYNTHESIS_TOURNAMENT_CYCLE603_NOTE_2026-07-22.md:153-172",
+        "terminal_obligation": "one simultaneous torus stream"
       }
     ],
-    "N2_directional_pairs": [
+    "N1_open_counterroutes_not_counted": [
       {
-        "first": "uniform intrinsic role-orientation genesis",
-        "first_closes_second": false,
-        "independent_as_current_supplied_structures": true,
-        "second": "global exactly-one-carrier/species sector",
-        "second_closes_first": false
+        "family": "state-carried translation phase",
+        "mechanism": "unit translations permute phi and mutually exclusive P_(phi,h) branches select translated/rotated role words",
+        "object": "a locally recognized phase phi in Z_K^3 plus the 24 orientation values",
+        "status": "OPEN / NOT COUNTED AS ATTEMPTED OR RULED OUT",
+        "terminal_obligation": "literal NN phase/admissibility gadget and one-fine-site domain/update covariance"
       },
       {
-        "first": "uniform intrinsic role-orientation genesis",
-        "first_closes_second": false,
-        "independent_as_current_supplied_structures": true,
-        "second": "blank path/flag/work initialization",
-        "second_closes_first": false
-      },
-      {
-        "first": "uniform intrinsic role-orientation genesis",
-        "first_closes_second": false,
-        "independent_as_current_supplied_structures": true,
-        "second": "inherited beta/contact-g analog calibration",
-        "second_closes_first": false
-      },
-      {
-        "first": "uniform intrinsic role-orientation genesis",
-        "first_closes_second": false,
-        "independent_as_current_supplied_structures": true,
-        "second": "scatter-clear-swap macro factorization",
-        "second_closes_first": false
-      },
-      {
-        "first": "global exactly-one-carrier/species sector",
-        "first_closes_second": false,
-        "independent_as_current_supplied_structures": true,
-        "second": "blank path/flag/work initialization",
-        "second_closes_first": false
-      },
-      {
-        "first": "global exactly-one-carrier/species sector",
-        "first_closes_second": false,
-        "independent_as_current_supplied_structures": true,
-        "second": "inherited beta/contact-g analog calibration",
-        "second_closes_first": false
-      },
-      {
-        "first": "global exactly-one-carrier/species sector",
-        "first_closes_second": false,
-        "independent_as_current_supplied_structures": true,
-        "second": "scatter-clear-swap macro factorization",
-        "second_closes_first": false
-      },
-      {
-        "first": "blank path/flag/work initialization",
-        "first_closes_second": false,
-        "independent_as_current_supplied_structures": true,
-        "second": "inherited beta/contact-g analog calibration",
-        "second_closes_first": false
-      },
-      {
-        "first": "blank path/flag/work initialization",
-        "first_closes_second": false,
-        "independent_as_current_supplied_structures": true,
-        "second": "scatter-clear-swap macro factorization",
-        "second_closes_first": false
-      },
-      {
-        "first": "inherited beta/contact-g analog calibration",
-        "first_closes_second": false,
-        "independent_as_current_supplied_structures": true,
-        "second": "scatter-clear-swap macro factorization",
-        "second_closes_first": false
+        "family": "injective co-present union of translated role copies",
+        "mechanism": "translation permutes copy labels rather than changing the code support",
+        "object": "K^3 separately tagged translated code copies",
+        "status": "OPEN / NOT COUNTED AS ATTEMPTED OR RULED OUT",
+        "terminal_obligation": "bounded injective physical realization without role aliasing"
       }
     ],
-    "N2_pair_count": 10,
+    "N1_qualifying_family_count": 6,
+    "N2_directional_wall_independence": [
+      {
+        "A_implies_B": false,
+        "B_implies_A": false,
+        "evidence": "the executed predicates are separate booleans/resources and no implication is constructed",
+        "independent": true,
+        "shared_witness_identified": false,
+        "wall_A": "supplied K-periodic coarse partition/origin and structural role coloring",
+        "wall_B": "literal fine-NN exactly-one and uniform-equality admissibility enforcement"
+      },
+      {
+        "A_implies_B": false,
+        "B_implies_A": false,
+        "evidence": "the executed predicates are separate booleans/resources and no implication is constructed",
+        "independent": true,
+        "shared_witness_identified": false,
+        "wall_A": "supplied K-periodic coarse partition/origin and structural role coloring",
+        "wall_B": "explicit physical encoder/intertwiner/leakage evaluation"
+      },
+      {
+        "A_implies_B": false,
+        "B_implies_A": false,
+        "evidence": "the executed predicates are separate booleans/resources and no implication is constructed",
+        "independent": true,
+        "shared_witness_identified": false,
+        "wall_A": "supplied K-periodic coarse partition/origin and structural role coloring",
+        "wall_B": "global exactly-one-carrier/species sector"
+      },
+      {
+        "A_implies_B": false,
+        "B_implies_A": false,
+        "evidence": "the executed predicates are separate booleans/resources and no implication is constructed",
+        "independent": true,
+        "shared_witness_identified": false,
+        "wall_A": "supplied K-periodic coarse partition/origin and structural role coloring",
+        "wall_B": "blank path/flag/work initialization"
+      },
+      {
+        "A_implies_B": false,
+        "B_implies_A": false,
+        "evidence": "the executed predicates are separate booleans/resources and no implication is constructed",
+        "independent": true,
+        "shared_witness_identified": false,
+        "wall_A": "supplied K-periodic coarse partition/origin and structural role coloring",
+        "wall_B": "inherited beta/contact-g analog calibration"
+      },
+      {
+        "A_implies_B": false,
+        "B_implies_A": false,
+        "evidence": "the executed predicates are separate booleans/resources and no implication is constructed",
+        "independent": true,
+        "shared_witness_identified": false,
+        "wall_A": "supplied K-periodic coarse partition/origin and structural role coloring",
+        "wall_B": "scatter-clear-swap macro factorization"
+      },
+      {
+        "A_implies_B": false,
+        "B_implies_A": false,
+        "evidence": "the executed predicates are separate booleans/resources and no implication is constructed",
+        "independent": true,
+        "shared_witness_identified": false,
+        "wall_A": "literal fine-NN exactly-one and uniform-equality admissibility enforcement",
+        "wall_B": "explicit physical encoder/intertwiner/leakage evaluation"
+      },
+      {
+        "A_implies_B": false,
+        "B_implies_A": false,
+        "evidence": "the executed predicates are separate booleans/resources and no implication is constructed",
+        "independent": true,
+        "shared_witness_identified": false,
+        "wall_A": "literal fine-NN exactly-one and uniform-equality admissibility enforcement",
+        "wall_B": "global exactly-one-carrier/species sector"
+      },
+      {
+        "A_implies_B": false,
+        "B_implies_A": false,
+        "evidence": "the executed predicates are separate booleans/resources and no implication is constructed",
+        "independent": true,
+        "shared_witness_identified": false,
+        "wall_A": "literal fine-NN exactly-one and uniform-equality admissibility enforcement",
+        "wall_B": "blank path/flag/work initialization"
+      },
+      {
+        "A_implies_B": false,
+        "B_implies_A": false,
+        "evidence": "the executed predicates are separate booleans/resources and no implication is constructed",
+        "independent": true,
+        "shared_witness_identified": false,
+        "wall_A": "literal fine-NN exactly-one and uniform-equality admissibility enforcement",
+        "wall_B": "inherited beta/contact-g analog calibration"
+      },
+      {
+        "A_implies_B": false,
+        "B_implies_A": false,
+        "evidence": "the executed predicates are separate booleans/resources and no implication is constructed",
+        "independent": true,
+        "shared_witness_identified": false,
+        "wall_A": "literal fine-NN exactly-one and uniform-equality admissibility enforcement",
+        "wall_B": "scatter-clear-swap macro factorization"
+      },
+      {
+        "A_implies_B": false,
+        "B_implies_A": false,
+        "evidence": "the executed predicates are separate booleans/resources and no implication is constructed",
+        "independent": true,
+        "shared_witness_identified": false,
+        "wall_A": "explicit physical encoder/intertwiner/leakage evaluation",
+        "wall_B": "global exactly-one-carrier/species sector"
+      },
+      {
+        "A_implies_B": false,
+        "B_implies_A": false,
+        "evidence": "the executed predicates are separate booleans/resources and no implication is constructed",
+        "independent": true,
+        "shared_witness_identified": false,
+        "wall_A": "explicit physical encoder/intertwiner/leakage evaluation",
+        "wall_B": "blank path/flag/work initialization"
+      },
+      {
+        "A_implies_B": false,
+        "B_implies_A": false,
+        "evidence": "the executed predicates are separate booleans/resources and no implication is constructed",
+        "independent": true,
+        "shared_witness_identified": false,
+        "wall_A": "explicit physical encoder/intertwiner/leakage evaluation",
+        "wall_B": "inherited beta/contact-g analog calibration"
+      },
+      {
+        "A_implies_B": false,
+        "B_implies_A": false,
+        "evidence": "the executed predicates are separate booleans/resources and no implication is constructed",
+        "independent": true,
+        "shared_witness_identified": false,
+        "wall_A": "explicit physical encoder/intertwiner/leakage evaluation",
+        "wall_B": "scatter-clear-swap macro factorization"
+      },
+      {
+        "A_implies_B": false,
+        "B_implies_A": false,
+        "evidence": "the executed predicates are separate booleans/resources and no implication is constructed",
+        "independent": true,
+        "shared_witness_identified": false,
+        "wall_A": "global exactly-one-carrier/species sector",
+        "wall_B": "blank path/flag/work initialization"
+      },
+      {
+        "A_implies_B": false,
+        "B_implies_A": false,
+        "evidence": "the executed predicates are separate booleans/resources and no implication is constructed",
+        "independent": true,
+        "shared_witness_identified": false,
+        "wall_A": "global exactly-one-carrier/species sector",
+        "wall_B": "inherited beta/contact-g analog calibration"
+      },
+      {
+        "A_implies_B": false,
+        "B_implies_A": false,
+        "evidence": "the executed predicates are separate booleans/resources and no implication is constructed",
+        "independent": true,
+        "shared_witness_identified": false,
+        "wall_A": "global exactly-one-carrier/species sector",
+        "wall_B": "scatter-clear-swap macro factorization"
+      },
+      {
+        "A_implies_B": false,
+        "B_implies_A": false,
+        "evidence": "the executed predicates are separate booleans/resources and no implication is constructed",
+        "independent": true,
+        "shared_witness_identified": false,
+        "wall_A": "blank path/flag/work initialization",
+        "wall_B": "inherited beta/contact-g analog calibration"
+      },
+      {
+        "A_implies_B": false,
+        "B_implies_A": false,
+        "evidence": "the executed predicates are separate booleans/resources and no implication is constructed",
+        "independent": true,
+        "shared_witness_identified": false,
+        "wall_A": "blank path/flag/work initialization",
+        "wall_B": "scatter-clear-swap macro factorization"
+      },
+      {
+        "A_implies_B": false,
+        "B_implies_A": false,
+        "evidence": "the executed predicates are separate booleans/resources and no implication is constructed",
+        "independent": true,
+        "shared_witness_identified": false,
+        "wall_A": "inherited beta/contact-g analog calibration",
+        "wall_B": "scatter-clear-swap macro factorization"
+      }
+    ],
+    "N2_pair_count": 21,
     "N3_hidden_condition_scan": {
-      "empty spacer sites": "all 2146689 fine M2 sites per coarse cell counted",
-      "global one-carrier sector": "inherited nonlocal Cycle600 code condition; not generated",
-      "intrinsic role orientation": "24 counted physical one-hot M2s per cell, unchanged by the update; uniform genesis and clean predicate work are supplied and locally checkable",
-      "routing exactness": "each selector/action primitive has an exact bus interval/apply/return descriptor; every cross gadget is a literal five-site NN word",
-      "standard QFT/background/naturally/obviously": "no load-bearing occurrence",
-      "we assume/by construction": "no hidden use; every role, path, blank field, and sector is explicit"
+      "blank_work_and_one_carrier": "explicit supplied code conditions",
+      "empty_spacer_and_bus_sites": "all 2146689 fine sites are counted inside the conditional cell",
+      "hidden_wall_promotions_complete": true,
+      "one_hot_and_equality": "truth tables/syndromes only; no fine-NN enforcement gadget",
+      "periodic_sizes": "L3/L6/L7 fixtures",
+      "required_phrase_scan": {
+        "as is standard": "absent",
+        "background": "absent",
+        "bridge context": "absent",
+        "by construction": "absent after scope rewrite",
+        "canonical": "load-bearing supplied identity-frame motif/path convention; promoted to the K-periodic partition/origin wall",
+        "naturally": "absent",
+        "obviously": "absent",
+        "registered": "absent",
+        "standard QFT": "absent",
+        "the framework provides": "absent",
+        "we assume": "absent"
+      },
+      "supplied_partition_origin": "explicit K=129 periodic role motif; fine-translation falsifier is nonzero",
+      "uncited_standard_or_obvious_hits": 0
     },
     "N4_residual_matching": [
       {
-        "closed": true,
-        "current_residual": "exact same packing obligation, now supplied by role-separated face shuttles",
+        "closed": false,
+        "current_exact_residual": {
+          "L3_unit_x_tagged_support_symmetric_difference": 2970,
+          "L6_unit_x_tagged_support_symmetric_difference": 23760,
+          "L7_unit_x_tagged_support_symmetric_difference": 37730,
+          "physical_code_leakage_evaluated": false,
+          "physical_intertwiner_residual": null
+        },
         "match": true,
-        "witness": "Cycle606 physical supercell residual",
-        "witness_residual": "no translation-invariant simultaneous routed physical-M2 packing"
+        "reason": "conditional placement advances the residual but the one-fine-site contract is directly falsified",
+        "witness_citation": "docs/work_history/repo/review_feedback/PHYSICAL_GLOBAL_CARRIER_STREAM_QCA_APPROXIMATION_TOURNAMENT_CYCLE606_NOTE_2026-07-22.md:25-29,104-107",
+        "witness_residual": "literal physical encoder/product/intertwiner/leakage and one-site translation-covariant law absent"
       },
       {
         "closed": false,
-        "current_residual": "physical onsite routing retains those exact calibrated gates",
+        "current_exact_residual": "conditional onsite routing retains those exact calibrated gates; parameterized angle import retained=true",
         "match": true,
-        "witness": "Cycle603 analog-angle residual",
+        "witness_citation": "docs/work_history/repo/review_feedback/PHYSICAL_CARRIER_PREPARATION_ELEMENTARY_SYNTHESIS_TOURNAMENT_CYCLE603_NOTE_2026-07-22.md:120-130",
         "witness_residual": "beta/contact-g parametric one-M2 rotations"
       },
       {
         "closed": false,
-        "current_residual": "physical supercell remains reversible but does not repair collision",
+        "current_exact_residual": {
+          "collision_inverse_failures": [
+            0,
+            0,
+            0
+          ],
+          "collision_pairs_leaving_code": [
+            15,
+            15,
+            15
+          ],
+          "malformed_collision_repaired": false
+        },
         "match": true,
-        "witness": "Cycle606 malformed collision residual",
+        "witness_citation": "docs/work_history/repo/review_feedback/PHYSICAL_GLOBAL_CARRIER_STREAM_QCA_APPROXIMATION_TOURNAMENT_CYCLE606_NOTE_2026-07-22.md:80-88,167-180",
         "witness_residual": "duplicate same-species carriers leave the declared sector"
       }
     ],
+    "N5_five_resolutions_present": true,
     "N5_rhetoric_resolution": [
-      "physical compiler means the declared code, clean selector work, and uniform one-hot orientation sector, not arbitrary dirty work or malformed carriers",
-      "all24 means all 24 physical one-hot sectors are selected by mutually exclusive C24X predicates in one autonomous gate product, not a host frame parameter",
-      "schedule factorization is not causal time and full K^3 site count is not energy/source",
-      "onsite composition is exact move-apply-restore routing but retains parameterized analog gates"
+      {
+        "narrowed_phrase": "only coarse-grid covariance passes; one-fine-site covariance fails for the current motif",
+        "phrase": "every translation",
+        "resolutions": [
+          "coarse-cell displacement",
+          "K-fine-site displacement",
+          "one-fine-site displacement",
+          "arbitrary physical translation"
+        ],
+        "tested": [
+          "coarse-cell/K-fine-site displacements",
+          "one-fine-site x code-support falsifier"
+        ],
+        "untested_negative_status": "no universal impossibility inferred"
+      },
+      {
+        "narrowed_phrase": "bounded conditional coarse-grid M2 placement",
+        "phrase": "physical M2 compiler",
+        "resolutions": [
+          "literal coordinate",
+          "support-two descriptor",
+          "conditional primitive word",
+          "explicit encoder/intertwiner",
+          "translation-covariant law"
+        ],
+        "tested": [
+          "literal coordinates",
+          "support-two descriptors",
+          "conditional word identities"
+        ],
+        "untested_negative_status": "encoder/intertwiner/leakage remain unevaluated"
+      },
+      {
+        "narrowed_phrase": "supplied admissibility tables, not locally enforced constraints",
+        "phrase": "local constraint",
+        "resolutions": [
+          "truth table",
+          "bounded predicate computation",
+          "coarse equality syndrome",
+          "literal fine-NN enforcement",
+          "preparation/repair dynamics"
+        ],
+        "tested": [
+          "truth table",
+          "predicate computation",
+          "coarse syndrome"
+        ],
+        "untested_negative_status": "fine-NN enforcement and dynamics are absent"
+      },
+      {
+        "narrowed_phrase": "conditional coarse-origin proper-cubic group action",
+        "phrase": "all 24 / all 576 covariance",
+        "resolutions": [
+          "role coordinate",
+          "path coordinate",
+          "branch word image",
+          "update commutator",
+          "rotation about every fine site"
+        ],
+        "tested": [
+          "role/path coordinate actions",
+          "branch images about supplied coarse origins"
+        ],
+        "untested_negative_status": "physical update covariance and every-site rotations remain open"
+      },
+      {
+        "narrowed_phrase": "register-algebra EG residual zero; physical residual null",
+        "phrase": "EG/intertwiner",
+        "resolutions": [
+          "register carrier",
+          "exterior sample",
+          "conditional role routing",
+          "physical encoder",
+          "physical code space"
+        ],
+        "tested": [
+          "register carrier",
+          "exterior sample",
+          "conditional routing conjugation"
+        ],
+        "untested_negative_status": "physical encoder/intertwiner/leakage is unevaluated"
+      },
+      {
+        "narrowed_phrase": "fixed schedule is supplied law factorization, not time",
+        "phrase": "schedule is not time",
+        "resolutions": [
+          "factor order",
+          "microstep order",
+          "recurrent update",
+          "causal physical time"
+        ],
+        "tested": [
+          "factor order",
+          "microstep descriptors"
+        ],
+        "untested_negative_status": "no causal-time mechanism tested"
+      },
+      {
+        "narrowed_phrase": "counts are bookkeeping only",
+        "phrase": "site/gate counts are not source or energy",
+        "resolutions": [
+          "role",
+          "coarse cell",
+          "torus",
+          "physical observable"
+        ],
+        "tested": [
+          "resource counts"
+        ],
+        "untested_negative_status": "no source/energy map evaluated"
+      }
     ],
     "N6_partial_closure_paths": [
-      "derive or autonomously prepare the uniform role-orientation field",
-      "replace the global exactly-one sector by a local reversible collision/syndrome code",
-      "certify epsilon-target Clifford+T synthesis for beta/contact g with volume/horizon budget",
-      "shrink the supercell only through a fresh collision proof, never by deleting spacer accounting",
-      "use the already materialized Route B lane fallback if an independent audit falsifies Route A packing"
+      {
+        "file": "scripts/physical_proper_cubic_supercell_stream_composition_tournament_cycle610_2026_07_22.py",
+        "status": "PARTIAL / NARROWED",
+        "what_closes": "bounded conditional K-grid coordinate placement, primitive descriptors, and inherited register fixtures"
+      },
+      {
+        "file": "scripts/physical_global_carrier_stream_qca_approximation_tournament_cycle606_2026_07_22.py",
+        "status": "PARTIAL / PRIOR",
+        "what_closes": "exact register stream, inverse, deletion, collision exit, and seeded covariance"
+      },
+      {
+        "file": "scripts/physical_L41_elementary_gate_layout_compiler_cycle580_2026_07_22.py",
+        "status": "PARTIAL / PRIOR",
+        "what_closes": "a literal bounded M2 primitive layout for another fixture; shows materialization is possible"
+      },
+      {
+        "file": "UNMATERIALIZED",
+        "status": "OPEN / PRIORITY",
+        "what_closes": "state-carried Z_K^3 translation phase, local recognition/enforcement, and one-fine-site domain/update covariance"
+      },
+      {
+        "file": "UNMATERIALIZED",
+        "status": "OPEN",
+        "what_closes": "injective union of all translated role copies without aliasing"
+      },
+      {
+        "file": "UNMATERIALIZED",
+        "status": "OPEN",
+        "what_closes": "fine-NN exactly-one/equality admissibility plus preparation/repair dynamics"
+      },
+      {
+        "file": "UNMATERIALIZED",
+        "status": "OPEN",
+        "what_closes": "physical encoder/intertwiner/leakage and reversible collision syndrome"
+      },
+      {
+        "file": "UNMATERIALIZED",
+        "status": "OPEN",
+        "what_closes": "certified epsilon synthesis for beta/contact g"
+      }
     ],
-    "N7_hostile_steelman": "A hostile reviewer should reject any claim that the remaining supplied role orientation, particle-number sector, or analog angles are unavoidable. The role field could be prepared as a local ordered phase or eliminated by a co-present orbit/lane code; a reversible syndrome reservoir could localize particle-number and collision control; certified single-qubit synthesis can reduce calibrated-angle error. Those concrete mechanisms remain unclosed and prohibit no-go or axiom-pressure language.",
-    "N8_cross_cycle_echo": "Cycles580, 600, 603, and 606 successively replaced layout, carrier, local-event, and register-stream imports by bounded constructive objects. Cycle610 follows the same mechanism: a large explicit role-separated supercell retires only the physical packing residual. The precedent weighs against constitutional escalation for the remaining genesis/sector/precision imports.",
+    "N7_hostile_steelman": {
+      "authority_status": "OPEN / no retained authority",
+      "citations": [
+        "scripts/physical_proper_cubic_supercell_stream_composition_tournament_cycle610_2026_07_22.py:fine_site_translation_falsifier",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md:37-41",
+        "docs/work_history/repo/review_feedback/PHYSICAL_GLOBAL_CARRIER_STREAM_QCA_APPROXIMATION_TOURNAMENT_CYCLE606_NOTE_2026-07-22.md:251-268"
+      ],
+      "mechanism": "replace the privileged K-grid origin by a state-carried phase phi in Z_K^3, impose a literal local phase-matching/admissibility rule, and compile all mutually exclusive translated/rotated P_(phi,h) coordinate words; alternatively use an injective co-present union of all translated code copies",
+      "terminal_obligation": "execute one-fine-site code-domain and update covariance, every-site proper rotations, physical encoder/intertwiner/leakage, local constraint enforcement, deletion, and L3/L6/L7 held controls",
+      "why_not_defeated": "Cycle610 tests only one supplied phase/origin and finds no contradiction to the phase-orbit construction; the naive unlabelled union fails only by role aliasing"
+    },
+    "N8_cross_cycle_echo": [
+      {
+        "applicability": "suggests constructing, not assuming, translation-phase recognition",
+        "cycle": "Cycle560",
+        "mechanism": "explicit one-hot branch encoders",
+        "retired": "bounded local encoder tables"
+      },
+      {
+        "applicability": "a transported translation phase is a live analog",
+        "cycle": "Cycle563",
+        "mechanism": "bounded transported colors",
+        "retired": "runtime selected-factor order"
+      },
+      {
+        "applicability": "supports a constructive local-gadget route",
+        "cycle": "Cycle580",
+        "mechanism": "literal primitive circuit",
+        "retired": "one bounded physical gate-layout import"
+      },
+      {
+        "applicability": "does not supply global physical covariance",
+        "cycle": "Cycle603",
+        "mechanism": "explicit gates and routing",
+        "retired": "bounded local role-event lowering"
+      },
+      {
+        "applicability": "provides the exact register target retained here",
+        "cycle": "Cycle606",
+        "mechanism": "compact double buffer",
+        "retired": "logical global stream product"
+      },
+      {
+        "applicability": "fine-translation promotion is falsified and queued for phase-orbit repair",
+        "cycle": "local Cycle610",
+        "mechanism": "large role-separated motif",
+        "retired": "conditional K-grid coordinate placement"
+      }
+    ],
     "axiom_pressure": false,
+    "axiom_pressure_gate": "FAIL / DO NOT SHIP",
+    "broad_negative_gate": "FAIL / DO NOT SHIP",
+    "demoted_artifact_status": "bounded conditional coarse-grid placement with supplied partition/origin/role coloring",
+    "failed_checklist_items": [
+      "N7: state-carried translation phase/injective translate-orbit steelman remains live",
+      "promotion contract: current tagged code space fails one-fine-site translation invariance"
+    ],
     "minimum_content_claim_shipped": false,
+    "minimum_content_gate": "FAIL / DO NOT SHIP",
+    "narrowed_positive_artifact_gate": "PASS",
     "negative_claim_shipped": false,
-    "pass_for_scoped_positive_and_withholding_broad_negative": true,
+    "promotion_test_contract": {
+      "citation": "docs/MINIMAL_AXIOMS_2026-06-29.md:37-41",
+      "no_privileged_site_contract_passed": false,
+      "one_fine_site_translation_contract_passed": false,
+      "use": "test contract only; no axiom text edited and no new dynamics inferred"
+    },
     "route_evidence": {
       "Cycle230_factor_order_and_noncommutation": true,
-      "all576_covariance": true,
+      "all576_conditional_coordinate_group_action": true,
+      "conditional_one_hot_orientation": true,
+      "constraint_scope_honest": true,
       "controlled_global_conflicts": true,
-      "exact_stream": true,
+      "exact_conditional_stream": true,
+      "fine_translation_falsifier_reproduced": true,
       "global_microsteps": true,
       "literal_compute_control_uncompute": true,
       "local_geometry": true,
-      "onsite_composition": true,
-      "physical_one_hot_orientation": true
+      "onsite_composition": true
     },
     "shared_obstruction": false,
+    "shared_obstruction_gate": "FAIL / DO NOT SHIP",
     "skill_freshness": {
-      "local_skill_sha256": "aeac7b2b7df30c350961f4b36b980a91e9c2ebeca3f35b6c1adcd731071bdab5",
+      "local_skill_sha256": "9814b094837d11dcf223863851e4f53193d1c307835d80178af195f535f52e71",
       "newer_origin_main_version_followed": true,
       "origin_main_checked": true,
       "origin_main_skill_sha256": "7d1aea8243ddd972331b935e2e836657e72115da3efe259f828fe862469d68b7",
       "proof_search_governance_followed": true
-    }
+    },
+    "status": "FAIL"
   },
   "note_contract": {
     "forbidden_hits": [],
@@ -15283,6 +16203,8 @@
     "required": [
       "Authority: none",
       "Audit: unset",
+      "Author artifact status accepted: false",
+      "Breakthrough: false",
       "Cycle 610",
       "Route A",
       "Route B",
@@ -15290,32 +16212,33 @@
       "2,146,689",
       "proper-cubic",
       "role orientation",
-      "same autonomous rule",
+      "conditional coarse-grid",
       "L3",
       "L6",
       "L7",
-      "all 24",
-      "all 576",
-      "every translation",
-      "wrap seam",
-      "vertex",
-      "edge",
-      "microstep",
-      "support-two",
-      "E G_coarse = G_physical E",
+      "All 24",
+      "All 576",
+      "Coarse-grid translations",
+      "wrap-seam",
+      "one-fine-site",
+      "2,970",
+      "23,760",
+      "37,730",
+      "support-one/two",
+      "E_register G_coarse = G_conditional-register E_register",
       "one-hot",
       "C24X",
-      "compute/uncompute",
+      "computation/uncomputation",
       "dual-neighbor",
       "coin -> stream -> contact",
       "noncommutation",
-      "supplied law content",
+      "Factor order is supplied law content",
       "inverse",
       "scratch",
       "blank",
       "deletion",
       "malformed",
-      "duplicate-carrier",
+      "Duplicate-carrier",
       "label order",
       "mass",
       "contact",
@@ -15324,392 +16247,63 @@
       "N8",
       "schedule is not time",
       "not energy",
+      "not locally enforced",
+      "state-carried translation phase",
+      "PR #5557",
+      "FAIL / DO NOT SHIP",
       "no axiom pressure"
     ]
   },
-  "note_sha256": "6ee48e029ca6023e55cd834bd2ad2fcbb24275b48f9b25e1c03777e0d2c3d835",
-  "onsite_mass_contact_seam_composition": {
-    "all24_bus_paths_are_literal_spatial_rotations_selected_by_the_intrinsic_role_field": true,
-    "all_coarse_cells_execute_onsite_bus_in_parallel_without_cross_cell_edges": true,
-    "bus_NN_edges_checked": 2146688,
-    "bus_adjacency_failures": 0,
-    "bus_index_inverse_failures": 0,
-    "bus_sites": 2146689,
-    "fixture_residuals": {
-      "Cycle600_coin_EG_residual": 1.154543706932542e-15,
-      "Cycle600_contact_EG_residual": 0.0,
-      "Cycle600_local_stream_seam_EG_residual": 0.0,
-      "coin_clean_scratch_leakage": 2.890151575626252e-15,
-      "compiled_word_coin_EG_residual": 4.0336968129257627e-13,
-      "contact_inverse_phase_residual": 0.0,
-      "contact_phase_residual": 0.0,
-      "one_particle_mass_coin_compiled_full16_residual": 8.619648052454238e-14,
-      "one_particle_mass_coin_symmetry_residual": 1.731958809481102e-16
-    },
-    "inherited_parameterized_angle_import_retained": true,
-    "logical_coordinate_injection_failure": 0,
-    "onsite_work_coordinate": [
-      0,
-      0,
-      0
-    ],
-    "pass": true,
-    "physical_routing_preserves_fixture_by_exact_move_apply_restore_conjugation": true,
-    "routed_blocks": [
-      {
-        "base_gate_instances": 8400,
-        "block": "coin",
-        "constant_serial_routed_depth": 15528,
-        "maximum_bus_distance": 4,
-        "move_apply_restore_SWAP_instances": 7128,
-        "one_M2_gate_instances": 5520,
-        "routed_support_at_most_two": true,
-        "two_M2_gate_instances": 2880
-      },
-      {
-        "base_gate_instances": 477,
-        "block": "contact",
-        "constant_serial_routed_depth": 37563305,
-        "maximum_bus_distance": 668240,
-        "move_apply_restore_SWAP_instances": 37562828,
-        "one_M2_gate_instances": 315,
-        "routed_support_at_most_two": true,
-        "two_M2_gate_instances": 162
-      }
-    ],
-    "serpentine_bus_formula": "z-major; y reverses with z; x reverses with y+z; local coordinates subtract H"
-  },
-  "optimal_next_campaign": "replace the supplied uniform role-orientation and global one-carrier sectors with autonomous local preparation/syndrome dynamics, then shrink the supercell under the same exhaustive conflict certificate and add certified beta/g precision budgeting",
-  "orientation_controlled_global_conflicts": {
-    "all24_frames_and_all576_composition_inherited_from_compiler": true,
-    "bus_partition_proof": "for each fine coordinate p, quotient/remainder of p+H modulo K gives a unique coarse cell and local coordinate in [-H,H]^3; hence identical serialized bus microsteps have no intercell vertex or edge collision",
-    "pass": true,
-    "rows": [
-      {
-        "actual_bus_microstep_edge_conflicts": 0,
-        "actual_bus_microstep_vertex_conflicts": 0,
-        "actual_compute_act_uncompute_microsteps_per_cell_all24": 2464667132352,
-        "all_translations_tested": 27,
-        "bus_site_partition_covered_by_exact_quotient_remainder": 57960603,
-        "coarse_cells": 27,
-        "control_copy_routes_are_cell_bus_words": true,
-        "cross_five_line_NN_adjacency_failures": 0,
-        "cross_five_line_support_conflicts": 0,
-        "cross_five_line_supports_tested_all24": 11664,
-        "cross_five_line_wrap_seam_failures": 0,
-        "cross_literal_substeps_per_support": 110,
-        "every_local_primitive_serialized_within_cell": true,
-        "length": 3,
-        "pass": true,
-        "split": "train",
-        "supercell_corner_partition_collisions": 0,
-        "translation_failures": 0
-      },
-      {
-        "actual_bus_microstep_edge_conflicts": 0,
-        "actual_bus_microstep_vertex_conflicts": 0,
-        "actual_compute_act_uncompute_microsteps_per_cell_all24": 2464667132352,
-        "all_translations_tested": 216,
-        "bus_site_partition_covered_by_exact_quotient_remainder": 463684824,
-        "coarse_cells": 216,
-        "control_copy_routes_are_cell_bus_words": true,
-        "cross_five_line_NN_adjacency_failures": 0,
-        "cross_five_line_support_conflicts": 0,
-        "cross_five_line_supports_tested_all24": 93312,
-        "cross_five_line_wrap_seam_failures": 0,
-        "cross_literal_substeps_per_support": 110,
-        "every_local_primitive_serialized_within_cell": true,
-        "length": 6,
-        "pass": true,
-        "split": "held",
-        "supercell_corner_partition_collisions": 0,
-        "translation_failures": 0
-      },
-      {
-        "actual_bus_microstep_edge_conflicts": 0,
-        "actual_bus_microstep_vertex_conflicts": 0,
-        "actual_compute_act_uncompute_microsteps_per_cell_all24": 2464667132352,
-        "all_translations_tested": 343,
-        "bus_site_partition_covered_by_exact_quotient_remainder": 736314327,
-        "coarse_cells": 343,
-        "control_copy_routes_are_cell_bus_words": true,
-        "cross_five_line_NN_adjacency_failures": 0,
-        "cross_five_line_support_conflicts": 0,
-        "cross_five_line_supports_tested_all24": 148176,
-        "cross_five_line_wrap_seam_failures": 0,
-        "cross_literal_substeps_per_support": 110,
-        "every_local_primitive_serialized_within_cell": true,
-        "length": 7,
-        "pass": true,
-        "split": "held-out-size",
-        "supercell_corner_partition_collisions": 0,
-        "translation_failures": 0
-      }
-    ],
-    "schedule_scope": "literal selector compute; Cycle230 controlled coin then stream then contact; dual-neighbor-controlled cross SWAP; selector uncompute"
-  },
+  "note_sha256": "3768d2a1407bdc8de06e2a55fa18300469b1006c0a16a78ada8b8d3a4b936105",
+  "optimal_next_campaign": "construct a state-carried Z_129^3 translation phase or injective union of all translated role copies, with literal fine-NN phase/exactly-one/equality enforcement, then execute one-fine-site domain/update covariance, every-site rotations, physical encoder/intertwiner/leakage, deletion, and L3/L6/L7 controls; separately add reversible collision syndrome and certified beta/g precision",
   "pass": true,
-  "physical_one_hot_orientation_control": {
-    "branch_order": "P_h projectors are mutually orthogonal, so controlled branches commute and no frame enumeration is physical ordering",
-    "encoding": "24 one-hot M2 bits per coarse cell; orientation h selects layout R_h",
-    "failures": {
-      "all576_orientation_action": 0,
-      "all576_predicate_role_action": 0,
-      "invalid_zero_or_multi_hot_not_identity_extension": 0,
-      "one_hot_truth": 0,
-      "orientation_orbit_injection": 0,
-      "orientation_work_overlap": 0,
-      "predicate_work_orbit_injection": 0,
-      "role_storage_overlap": 0
-    },
-    "invalid_extension": "zero-hot or multi-hot activates no P_h branch and is identity; arbitrary dirty predicate work is outside the declared code but the gate product remains unitary",
-    "lawful_local_constraint": "exactly one of 24 bits is one; bounded within one supercell",
-    "lawful_update": "orientation bits are unchanged; compute mutually exclusive P_h flags, apply controlled G_h, uncompute",
-    "neighbor_constraint": "adjacent coarse cells carry the same one-hot word; radius-one equality syndrome",
-    "pass": true,
-    "predicate_compute_counts": {
-      "C24X_Toffoli_calls": 45,
-      "clean_work_M2": 22,
-      "exact_support_two_gates_after_Cycle603_Toffoli_lowering": 721,
-      "flag_M2": 1,
-      "negative_control_X": 46,
-      "spare_M2": 1
-    },
-    "truth_rows": [
-      {
-        "active_branch_count": 1,
-        "orientation_coordinate": [
-          -1,
-          -2,
-          3
-        ],
-        "orientation_index": 0
-      },
-      {
-        "active_branch_count": 1,
-        "orientation_coordinate": [
-          -1,
-          -3,
-          -2
-        ],
-        "orientation_index": 1
-      },
-      {
-        "active_branch_count": 1,
-        "orientation_coordinate": [
-          -1,
-          3,
-          2
-        ],
-        "orientation_index": 2
-      },
-      {
-        "active_branch_count": 1,
-        "orientation_coordinate": [
-          -1,
-          2,
-          -3
-        ],
-        "orientation_index": 3
-      },
-      {
-        "active_branch_count": 1,
-        "orientation_coordinate": [
-          -2,
-          -1,
-          -3
-        ],
-        "orientation_index": 4
-      },
-      {
-        "active_branch_count": 1,
-        "orientation_coordinate": [
-          -2,
-          -3,
-          1
-        ],
-        "orientation_index": 5
-      },
-      {
-        "active_branch_count": 1,
-        "orientation_coordinate": [
-          -2,
-          3,
-          -1
-        ],
-        "orientation_index": 6
-      },
-      {
-        "active_branch_count": 1,
-        "orientation_coordinate": [
-          -2,
-          1,
-          3
-        ],
-        "orientation_index": 7
-      },
-      {
-        "active_branch_count": 1,
-        "orientation_coordinate": [
-          -3,
-          -1,
-          2
-        ],
-        "orientation_index": 8
-      },
-      {
-        "active_branch_count": 1,
-        "orientation_coordinate": [
-          -3,
-          -2,
-          -1
-        ],
-        "orientation_index": 9
-      },
-      {
-        "active_branch_count": 1,
-        "orientation_coordinate": [
-          -3,
-          2,
-          1
-        ],
-        "orientation_index": 10
-      },
-      {
-        "active_branch_count": 1,
-        "orientation_coordinate": [
-          -3,
-          1,
-          -2
-        ],
-        "orientation_index": 11
-      },
-      {
-        "active_branch_count": 1,
-        "orientation_coordinate": [
-          3,
-          -1,
-          -2
-        ],
-        "orientation_index": 12
-      },
-      {
-        "active_branch_count": 1,
-        "orientation_coordinate": [
-          3,
-          -2,
-          1
-        ],
-        "orientation_index": 13
-      },
-      {
-        "active_branch_count": 1,
-        "orientation_coordinate": [
-          3,
-          2,
-          -1
-        ],
-        "orientation_index": 14
-      },
-      {
-        "active_branch_count": 1,
-        "orientation_coordinate": [
-          3,
-          1,
-          2
-        ],
-        "orientation_index": 15
-      },
-      {
-        "active_branch_count": 1,
-        "orientation_coordinate": [
-          2,
-          -1,
-          3
-        ],
-        "orientation_index": 16
-      },
-      {
-        "active_branch_count": 1,
-        "orientation_coordinate": [
-          2,
-          -3,
-          -1
-        ],
-        "orientation_index": 17
-      },
-      {
-        "active_branch_count": 1,
-        "orientation_coordinate": [
-          2,
-          3,
-          1
-        ],
-        "orientation_index": 18
-      },
-      {
-        "active_branch_count": 1,
-        "orientation_coordinate": [
-          2,
-          1,
-          -3
-        ],
-        "orientation_index": 19
-      },
-      {
-        "active_branch_count": 1,
-        "orientation_coordinate": [
-          1,
-          -2,
-          -3
-        ],
-        "orientation_index": 20
-      },
-      {
-        "active_branch_count": 1,
-        "orientation_coordinate": [
-          1,
-          -3,
-          2
-        ],
-        "orientation_index": 21
-      },
-      {
-        "active_branch_count": 1,
-        "orientation_coordinate": [
-          1,
-          3,
-          -2
-        ],
-        "orientation_index": 22
-      },
-      {
-        "active_branch_count": 1,
-        "orientation_coordinate": [
-          1,
-          2,
-          3
-        ],
-        "orientation_index": 23
-      }
-    ]
+  "physical_M2_scope": {
+    "conditional_literal_coordinates_compiled": true,
+    "conditional_support_two_primitive_descriptors_compiled": true,
+    "literal_physical_encoder_composed": false,
+    "one_fine_site_translation_covariant_law_executed": false,
+    "physical_code_leakage_evaluated": false,
+    "physical_intertwiner_residual": null,
+    "promotion_to_physical_M2_law": false,
+    "proper_rotations_about_every_fine_site_executed": false,
+    "supplied_partition_origin_or_role_coloring": true
   },
   "pins": {
-    "docs/work_history/repo/review_feedback/PHYSICAL_GLOBAL_CARRIER_STREAM_QCA_APPROXIMATION_TOURNAMENT_CYCLE606_NOTE_2026-07-22.md": "5d24b17813e36779202ef6eebd006001367ff6fab42cfee8fc0e8156cd152404",
+    "docs/work_history/repo/review_feedback/PHYSICAL_CARRIER_PREPARATION_ELEMENTARY_SYNTHESIS_TOURNAMENT_CYCLE603_NOTE_2026-07-22.md": "ddc06d6d4abf945794b1c0b7566c9183fa744839d1ba5630c1d9ad8b4559c417",
+    "docs/work_history/repo/review_feedback/PHYSICAL_GLOBAL_CARRIER_STREAM_QCA_APPROXIMATION_TOURNAMENT_CYCLE606_NOTE_2026-07-22.md": "01ef76e8e0c3d29645e1f9247fa479d3fa1d3dbabab09d884da102208cf31d78",
     "docs/work_history/repo/review_feedback/SPATIAL_CAR_CONTACT_SEAM_FORM_FACTOR_CYCLE230_NOTE_2026-07-17.md": "a7a3a0a021dbd691c6c2ddb9163679b445c5110b8150f63395271037963c7132",
-    "outputs/physical_global_carrier_stream_qca_approximation_tournament_cycle606_cold_2026_07_22.txt": "4c2e11c80dca205419aa50a96b7277478a1af0008c897a9e116fb81c2a3212f4",
-    "outputs/physical_global_carrier_stream_qca_approximation_tournament_cycle606_receipt_2026_07_22.json": "83f912b3e5d5b527c3d290291314cf9a634fd1a673bb7897bf3a721249450c2b",
-    "scripts/physical_global_carrier_stream_qca_approximation_tournament_cycle606_2026_07_22.py": "5dea1105139de76975a59efdae86d623a3b5715966b3d02631f65498baa3020d",
+    "outputs/physical_carrier_preparation_elementary_synthesis_tournament_cycle603_cold_2026_07_22.txt": "35385a09b5d075e553de1de9302e0317dd415acbe1f5ccf9425905eedae94174",
+    "outputs/physical_carrier_preparation_elementary_synthesis_tournament_cycle603_receipt_2026_07_22.json": "751487fa50a738d5473f7ddcb77474785c84463dda1264a34de2643f19102871",
+    "outputs/physical_global_carrier_stream_qca_approximation_tournament_cycle606_cold_2026_07_22.txt": "007d7fdf3d67d55afbacdd905bc44d67b685f9926ba395e393ed01eec005e5dd",
+    "outputs/physical_global_carrier_stream_qca_approximation_tournament_cycle606_receipt_2026_07_22.json": "2b225152dcdae055c4d751c57af913b6184b9977e52ebc3dba509b4fc0b3da3c",
+    "scripts/physical_carrier_preparation_elementary_synthesis_tournament_cycle603_2026_07_22.py": "e64032e369e08e03ad2a742a2bde6914d8adc6ed1fd64f15f4e301c1c8dea739",
+    "scripts/physical_global_carrier_stream_qca_approximation_tournament_cycle606_2026_07_22.py": "637a7ac6b5a56ef539bef3b94c6624a4f5f52372ef31e2d1e3bdc4328ae8767f",
     "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py": "b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae"
   },
-  "runner_sha256": "997234878a564cb8554ff5184888fe06b920db32bb54b5df6febfdc88a90e7de",
+  "promotion_disposition": {
+    "Route_B_register_lane_result_retained_but_not_credited_as_physical_repair": true,
+    "conditional_Route_A_coarse_grid_evidence_pass": true,
+    "one_site_translation_covariant_physical_target_closed": false,
+    "preferred_repair": {
+      "mechanism": "add a locally recognized phase phi in Z_K^3 so a unit translation sends phi to phi+e_i and mutually exclusive P_(phi,h) branches select the translated/rotated coordinate word",
+      "naive_unlabelled_union_warning": "the support union of all K^3 translates fills the cell but aliases distinct role labels; injective roles or a state-carried phase are still required",
+      "route": "state-carried translation phase or an injective union of all K^3 translated motifs",
+      "status": "OPEN / not implemented",
+      "terminal_obligation": "construct literal NN phase/admissibility gadgets and execute code-domain plus update commutators for one-fine-site translations, all site-centered proper rotations, L3/L6/L7, leakage, and deletion"
+    },
+    "reason": "the coordinate/gate construction survives only as a conditional K-grid placement because the tagged code support fails one-fine-site translation invariance",
+    "repair_route_required": true
+  },
+  "runner_sha256": "ed2250711646ad99bf077e74b8e4194f2df0a2cf368d3c05c45ea95cac8083db",
   "scratch_and_role_field": {
     "clean_path_port_flag_work_return": true,
     "clear_roundtrip_failures": 0,
     "dirty_path_full_permutation_inverse_failures": 0,
     "orientation_field": {
       "allowed_values": 24,
-      "kind": "24 physical one-hot M2 sites per supercell, not a Python or host-selected frame parameter",
+      "kind": "24 tagged one-hot site roles per supplied K-periodic supercell; not a runtime Python frame parameter, but still dependent on a supplied partition/origin",
+      "literal_fine_NN_equality_enforcement_gadget_constructed": false,
+      "literal_fine_NN_exactly_one_enforcement_gadget_constructed": false,
       "not_physical_time": true,
       "rows": [
         {
@@ -15734,8 +16328,8 @@
           "uniform_role_orientation_NN_syndrome": 0
         }
       ],
-      "same_autonomous_product_of_mutually_exclusive_branch_updates_for_every_value": true,
-      "uniform_neighbor_constraint_locally_checkable": true,
+      "same_coarse_grid_product_of_mutually_exclusive_branch_updates_for_every_value": true,
+      "uniform_coarse_neighbor_equality_syndrome_table_executed": true,
       "uniform_orientation_genesis_supplied": true
     },
     "pass": true,
@@ -15743,16 +16337,351 @@
     "zero_and_one_flag_roundtrip_rows": 1728
   },
   "shared_obstruction_or_axiom_pressure": false,
-  "status": "cycle610-proper-cubic-physical-supercell-stream-composition-tournament",
-  "strongest_constructive_result": "a translation-invariant 129^3 proper-cubic physical-M2 supercell with 24 counted one-hot orientation M2s compiles the accepted Cycle230 coin -> Cycle606 stream -> Cycle230 contact order into a literal exact C24X-compute, controlled-action, inverse-uncompute support-two NN word; its factor deletion/noncommutation witnesses, bus intervals, dual-neighbor cross gadgets, every translation, all24/all576 frame action, and L3/L6/L7 wrap seam pass",
+  "shore": {
+    "Cycle603_pass": true,
+    "Cycle603_tests_passed": 7,
+    "Cycle606_physical_M2_scope": {
+      "encoder_composed": false,
+      "intertwiner_residual": null,
+      "leakage_evaluated": false,
+      "literal_layout_compiled": false,
+      "one_site_translation_covariant_law_executed": false,
+      "primitive_composition": false
+    },
+    "author_artifact_status_accepted": false,
+    "axiom_pressure": false,
+    "broad_negative_gate": "FAIL / DO NOT SHIP",
+    "import_audit": {
+      "actual_imported_modules": {
+        "ROUTE1_DIRECT_CAR_COMPILER_CYCLE231_2026_07_17": "scripts/ROUTE1_DIRECT_CAR_COMPILER_CYCLE231_2026_07_17.py",
+        "active_cubic_source_response_cycle211_2026_07_16": "scripts/active_cubic_source_response_cycle211_2026_07_16.py",
+        "archive_carrier_source_ledger_cycle227_2026_07_17": "scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py",
+        "autonomous_cubic_field_emission_cycle214_2026_07_16": "scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py",
+        "common_matter_field_coin_family_cycle219_2026_07_16": "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py",
+        "exact_3d_higher_form_bosonization_cycle235_2026_07_17": "scripts/exact_3d_higher_form_bosonization_cycle235_2026_07_17.py",
+        "finite_coin_scalar_wave_dilation_cycle215_2026_07_16": "scripts/finite_coin_scalar_wave_dilation_cycle215_2026_07_16.py",
+        "fock_modular_boundary_current_cycle229_2026_07_17": "scripts/fock_modular_boundary_current_cycle229_2026_07_17.py",
+        "local_conservative_commit_resource_gravity_cycle9_2026_07_14": "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py",
+        "local_generator_source_tournament_cycle228_2026_07_17": "scripts/local_generator_source_tournament_cycle228_2026_07_17.py",
+        "local_rough_puncture_odd_sector_cycle247_2026_07_17": "scripts/local_rough_puncture_odd_sector_cycle247_2026_07_17.py",
+        "physical_adjacent_star_recurrence_tournament_cycle548_2026_07_21": "scripts/physical_adjacent_star_recurrence_tournament_cycle548_2026_07_21.py",
+        "physical_adjacent_two_star_compressed_gram_cycle518_2026_07_21": "scripts/physical_adjacent_two_star_compressed_gram_cycle518_2026_07_21.py",
+        "physical_adjacent_two_star_order_character_preflight_cycle517_2026_07_21": "scripts/physical_adjacent_two_star_order_character_preflight_cycle517_2026_07_21.py",
+        "physical_adjacent_two_star_seam_tag_preservation_cycle519_2026_07_21": "scripts/physical_adjacent_two_star_seam_tag_preservation_cycle519_2026_07_21.py",
+        "physical_boundary_aware_multistar_recurrence_tournament_cycle551_2026_07_21": "scripts/physical_boundary_aware_multistar_recurrence_tournament_cycle551_2026_07_21.py",
+        "physical_carrier_preparation_elementary_synthesis_tournament_cycle603_2026_07_22": "scripts/physical_carrier_preparation_elementary_synthesis_tournament_cycle603_2026_07_22.py",
+        "physical_correlated_double_shadow_stream_cycle529_2026_07_21": "scripts/physical_correlated_double_shadow_stream_cycle529_2026_07_21.py",
+        "physical_cycle269_collision_safe_auxiliary_ports_2026_07_17": "scripts/physical_cycle269_collision_safe_auxiliary_ports_2026_07_17.py",
+        "physical_cycle269_common_m64_fixed_seam_cycle311_2026_07_18": "scripts/physical_cycle269_common_m64_fixed_seam_cycle311_2026_07_18.py",
+        "physical_cycle269_five_cell_adjacent_star_cycle327_2026_07_18": "scripts/physical_cycle269_five_cell_adjacent_star_cycle327_2026_07_18.py",
+        "physical_cycle269_four_cell_star_cycle324_2026_07_18": "scripts/physical_cycle269_four_cell_star_cycle324_2026_07_18.py",
+        "physical_cycle269_full_two_particle_sector_interface_cycle305_2026_07_17": "scripts/physical_cycle269_full_two_particle_sector_interface_cycle305_2026_07_17.py",
+        "physical_cycle269_higher_number_fixed_seam_cycle308_2026_07_17": "scripts/physical_cycle269_higher_number_fixed_seam_cycle308_2026_07_17.py",
+        "physical_cycle269_overlap_aware_two_cell_cycle315_2026_07_18": "scripts/physical_cycle269_overlap_aware_two_cell_cycle315_2026_07_18.py",
+        "physical_cycle269_reference_relative_localized_pair_lift_2026_07_17": "scripts/physical_cycle269_reference_relative_localized_pair_lift_2026_07_17.py",
+        "physical_cycle269_seven_cell_maximal_star_cycle330_2026_07_18": "scripts/physical_cycle269_seven_cell_maximal_star_cycle330_2026_07_18.py",
+        "physical_cycle269_staggered_reservoir_catchup_2026_07_17": "scripts/physical_cycle269_staggered_reservoir_catchup_2026_07_17.py",
+        "physical_cycle269_three_cell_multiedge_cycle319_2026_07_18": "scripts/physical_cycle269_three_cell_multiedge_cycle319_2026_07_18.py",
+        "physical_cycle330_all_order_isometry_bridge_cycle515_2026_07_20": "scripts/physical_cycle330_all_order_isometry_bridge_cycle515_2026_07_20.py",
+        "physical_cycle515_koszul_frame_bridge_cycle516_2026_07_20": "scripts/physical_cycle515_koszul_frame_bridge_cycle516_2026_07_20.py",
+        "physical_global_N3_returned_slot_compiler_cycle560_2026_07_21": "scripts/physical_global_N3_returned_slot_compiler_cycle560_2026_07_21.py",
+        "physical_global_carrier_stream_qca_approximation_tournament_cycle606_2026_07_22": "scripts/physical_global_carrier_stream_qca_approximation_tournament_cycle606_2026_07_22.py",
+        "physical_global_selected_network_encoder_cycle555_2026_07_21": "scripts/physical_global_selected_network_encoder_cycle555_2026_07_21.py",
+        "physical_local_N3_six_ray_decoder_tournament_cycle557_2026_07_21": "scripts/physical_local_N3_six_ray_decoder_tournament_cycle557_2026_07_21.py",
+        "physical_local_cutoff_gauge_enforcement_tournament_cycle593_2026_07_22": "scripts/physical_local_cutoff_gauge_enforcement_tournament_cycle593_2026_07_22.py",
+        "physical_native_shadow_nearest_neighbor_router_cycle527_2026_07_21": "scripts/physical_native_shadow_nearest_neighbor_router_cycle527_2026_07_21.py",
+        "physical_opposite_carrier_reearned_compiler_cycle522_2026_07_21": "scripts/physical_opposite_carrier_reearned_compiler_cycle522_2026_07_21.py",
+        "physical_opposite_carrier_shared_cell_recurrence_cycle525_2026_07_21": "scripts/physical_opposite_carrier_shared_cell_recurrence_cycle525_2026_07_21.py",
+        "physical_protected_shadow_coin_gate_compiler_cycle523_2026_07_21": "scripts/physical_protected_shadow_coin_gate_compiler_cycle523_2026_07_21.py",
+        "physical_recurrent_shared_volume_compiler_cycle545_2026_07_21": "scripts/physical_recurrent_shared_volume_compiler_cycle545_2026_07_21.py",
+        "physical_root_free_cutoff_gauge_preparation_tournament_cycle598_2026_07_22": "scripts/physical_root_free_cutoff_gauge_preparation_tournament_cycle598_2026_07_22.py",
+        "physical_root_free_full_N3_carrier_genesis_tournament_cycle600_2026_07_22": "scripts/physical_root_free_full_N3_carrier_genesis_tournament_cycle600_2026_07_22.py",
+        "physical_rough_fswap_pauli_rotation_gate_compiler_cycle540_2026_07_21": "scripts/physical_rough_fswap_pauli_rotation_gate_compiler_cycle540_2026_07_21.py",
+        "physical_rough_gauge_subsystem_quotient_cycle532_2026_07_21": "scripts/physical_rough_gauge_subsystem_quotient_cycle532_2026_07_21.py",
+        "physical_selected_seam_code_space_isometry_compiler_cycle533_2026_07_21": "scripts/physical_selected_seam_code_space_isometry_compiler_cycle533_2026_07_21.py",
+        "physical_selected_seam_event_current_adapter_cycle526_2026_07_21": "scripts/physical_selected_seam_event_current_adapter_cycle526_2026_07_21.py",
+        "physical_shadow_normal_form_sync_cycle530_2026_07_21": "scripts/physical_shadow_normal_form_sync_cycle530_2026_07_21.py",
+        "physical_shared_seam_code_space_isometry_compiler_cycle539_2026_07_21": "scripts/physical_shared_seam_code_space_isometry_compiler_cycle539_2026_07_21.py",
+        "physical_three_star_shared_parity_overlap_cycle520_2026_07_21": "scripts/physical_three_star_shared_parity_overlap_cycle520_2026_07_21.py",
+        "proper_cubic_bound_object_equivalence_cycle210_2026_07_16": "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
+        "retarded_cubic_mass_field_cycle213_2026_07_16": "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py",
+        "spatial_car_contact_seam_form_factor_cycle230_2026_07_17": "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py",
+        "virtual_exchange_green_kernel_cycle216_2026_07_16": "scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py",
+        "wilson_subsystem_sector_free_compiler_cycle269_2026_07_17": "scripts/wilson_subsystem_sector_free_compiler_cycle269_2026_07_17.py"
+      },
+      "expected_file_count": 121,
+      "expected_transitive_sha256": {
+        "docs/work_history/repo/review_feedback/EXACT_3D_HIGHER_FORM_BOSONIZATION_CYCLE235_NOTE_2026-07-17.md": "295edee5608d3141fc3e3212bc51753265d953dadd68a8b44a66ed1e0e16e0d2",
+        "docs/work_history/repo/review_feedback/LOCAL_ROUGH_PUNCTURE_ODD_SECTOR_CYCLE247_NOTE_2026-07-17.md": "8cc36f383c1d175a80ad26f17f98287fc8e94ef2f69b36851c4c420bcec8dad9",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ADJACENT_STAR_RECURRENCE_TOURNAMENT_CYCLE548_NOTE_2026-07-21.md": "db16fe47dae51428447f42b88418fd0181a8908fee16a95f73b4bbf60fa23c04",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ADJACENT_TWO_STAR_COMPRESSED_GRAM_CYCLE518_NOTE_2026-07-21.md": "7278244447e4074e66966e418710e2ad401befc4b8cbfb9d0a30088c0f837107",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ADJACENT_TWO_STAR_ORDER_CHARACTER_PREFLIGHT_CYCLE517_NOTE_2026-07-21.md": "51c3b92448f7779fe838c51265b279d82f48e3b19f6c0464b95f18112bf07a74",
+        "docs/work_history/repo/review_feedback/PHYSICAL_BOUNDARY_AWARE_MULTISTAR_RECURRENCE_TOURNAMENT_CYCLE551_NOTE_2026-07-21.md": "15441dc81ff96527e67e5346493fc3d5ebbc0734d3d1982a77b900b53c290b40",
+        "docs/work_history/repo/review_feedback/PHYSICAL_CARRIER_PREPARATION_ELEMENTARY_SYNTHESIS_TOURNAMENT_CYCLE603_NOTE_2026-07-22.md": "ddc06d6d4abf945794b1c0b7566c9183fa744839d1ba5630c1d9ad8b4559c417",
+        "docs/work_history/repo/review_feedback/PHYSICAL_CONTACT_DIMER_INFINITE_INTERNAL_CONTENT_TOURNAMENT_CYCLE583_NOTE_2026-07-22.md": "6942341fa2fc8978a25acdd758677b04a5a1d0c9e13b8e5627bc9bf504814cf3",
+        "docs/work_history/repo/review_feedback/PHYSICAL_CORRELATED_DOUBLE_SHADOW_STREAM_CYCLE529_NOTE_2026-07-21.md": "8aa3eed5801349767f254651a7ba0b0d9d823448875c27f28259f4dd1a0474e2",
+        "docs/work_history/repo/review_feedback/PHYSICAL_COVARIANT_PROTECTED_LINK_SHADOW_CYCLE528_NOTE_2026-07-21.md": "f27f78a05910934ffd97bca780d9384b93a1aff12481d7e08611951f03acc432",
+        "docs/work_history/repo/review_feedback/PHYSICAL_CYCLE269_SEVEN_CELL_MAXIMAL_STAR_CYCLE330_NOTE_2026-07-18.md": "4edb939ca520bc5b148814e8c274e93e16c87e8f639d925db130fdfe16fd3b64",
+        "docs/work_history/repo/review_feedback/PHYSICAL_CYCLE330_ALL_ORDER_ISOMETRY_BRIDGE_CYCLE515_NOTE_2026-07-20.md": "99696f55a6e1f8f29958d878bdbd5bb0f889c59be8707e93206d1648ba94850a",
+        "docs/work_history/repo/review_feedback/PHYSICAL_CYCLE515_KOSZUL_FRAME_BRIDGE_CYCLE516_NOTE_2026-07-21.md": "5f32e766fad91a960031bf68dac4ba3b2498b02b5fc4fce9ac1c795e67c23597",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ENLARGED_LINK_CONTACT_WORK_TOURNAMENT_CYCLE569_NOTE_2026-07-22.md": "ca90108c802f1c39d5a3db95f78397ecc0da43a9c54d180f32d3108f7cb1eb19",
+        "docs/work_history/repo/review_feedback/PHYSICAL_GLOBAL_CARRIER_STREAM_QCA_APPROXIMATION_TOURNAMENT_CYCLE606_NOTE_2026-07-22.md": "01ef76e8e0c3d29645e1f9247fa479d3fa1d3dbabab09d884da102208cf31d78",
+        "docs/work_history/repo/review_feedback/PHYSICAL_GLOBAL_N3_RETURNED_SLOT_COMPILER_CYCLE560_NOTE_2026-07-21.md": "b6c5ee42cd26918f99ecc96d78440deef2a29ae6c05f576813b3f269997c50de",
+        "docs/work_history/repo/review_feedback/PHYSICAL_GLOBAL_SELECTED_NETWORK_ENCODER_CYCLE555_NOTE_2026-07-21.md": "34461d051b1bddd0319b439aecfe433f7309f8e4065375e52b2e91dac8c2867b",
+        "docs/work_history/repo/review_feedback/PHYSICAL_HELD_SPARSE_ORDER_RETIREMENT_CYCLE563_NOTE_2026-07-21.md": "3d636226e3fff5bfb68c2c38566537fe419ce03de5d60415742ffcd2307b34dd",
+        "docs/work_history/repo/review_feedback/PHYSICAL_INTRINSIC_CONTACT_BOUND_MOVING_TRANSITION_TOURNAMENT_CYCLE578_NOTE_2026-07-22.md": "41d3ded32f36a0f9ab0b407de14524db7d621e285fa5aeff6f76d480dd8e18d5",
+        "docs/work_history/repo/review_feedback/PHYSICAL_LOCAL_CUTOFF_GAUGE_ENFORCEMENT_TOURNAMENT_CYCLE593_NOTE_2026-07-22.md": "3040c484d8d3c4f30a1e8f4b1eb5bc75568246ad04424aaff4bd94ba63b55c44",
+        "docs/work_history/repo/review_feedback/PHYSICAL_LOCAL_N3_SIX_RAY_DECODER_TOURNAMENT_CYCLE557_NOTE_2026-07-21.md": "e46acc27ee4bddc8c89f0d322173cd76f20fee100d7f54134e53421f16155bda",
+        "docs/work_history/repo/review_feedback/PHYSICAL_OPPOSITE_CARRIER_SHARED_CELL_RECURRENCE_CYCLE525_NOTE_2026-07-21.md": "43a39dd4a33d06eaf11369eb84d436761832974a4f759aec44e9ab6b919e44a8",
+        "docs/work_history/repo/review_feedback/PHYSICAL_RECURRENT_SHARED_VOLUME_COMPILER_CYCLE545_NOTE_2026-07-21.md": "e1fd77a21cd1f2aac8b7c0a5afb66a43275fb1c202f576f958c126d235f5a4bb",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ROOT_FREE_CUTOFF_GAUGE_PREPARATION_TOURNAMENT_CYCLE598_NOTE_2026-07-22.md": "065192627b0c56b59d75a0ea837f26179b76579aa3e0783bc020092f173963ac",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ROOT_FREE_FULL_N3_CARRIER_GENESIS_TOURNAMENT_CYCLE600_NOTE_2026-07-22.md": "9c8772f365812caedb0c416f7f0681a8f342ff3d08ac412851e7e6141ea7f602",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md": "5f668f6cc04a5eece23f913d5869f57553df583c23d6dbb5cdac6756be41bfc3",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ROUTE_C_Q6_SYMBOLIC_AXIS_DIAGNOSTIC_CYCLE514_NOTE_2026-07-20.md": "e4365d2a9d7028941d882b13c1f00ba1b7dfcf52e45109e9a293f702a13eb278",
+        "docs/work_history/repo/review_feedback/PHYSICAL_SELECTED_SEAM_CODE_SPACE_ISOMETRY_COMPILER_CYCLE533_NOTE_2026-07-21.md": "e15712305bd770cff61133f184d02da1714c50453bb5f3c492f1cc3051e119c2",
+        "docs/work_history/repo/review_feedback/PHYSICAL_SHARED_SEAM_CODE_SPACE_ISOMETRY_COMPILER_CYCLE539_NOTE_2026-07-21.md": "7d95064985bd9b2d6312ec49fa738f86fd7bba289316539a06f71931a958fcc1",
+        "docs/work_history/repo/review_feedback/PHYSICAL_THREE_STAR_SHARED_PARITY_OVERLAP_CYCLE520_NOTE_2026-07-21.md": "8a1aa2c66cbc38320c829679e7b982936834510a58b38f89621f22278fd67cd8",
+        "docs/work_history/repo/review_feedback/SPATIAL_CAR_CONTACT_SEAM_FORM_FACTOR_CYCLE230_NOTE_2026-07-17.md": "a7a3a0a021dbd691c6c2ddb9163679b445c5110b8150f63395271037963c7132",
+        "outputs/physical_carrier_preparation_elementary_synthesis_tournament_cycle603_cold_2026_07_22.txt": "35385a09b5d075e553de1de9302e0317dd415acbe1f5ccf9425905eedae94174",
+        "outputs/physical_carrier_preparation_elementary_synthesis_tournament_cycle603_receipt_2026_07_22.json": "751487fa50a738d5473f7ddcb77474785c84463dda1264a34de2643f19102871",
+        "outputs/physical_contact_dimer_infinite_internal_content_tournament_cycle583_cold_2026_07_22.txt": "22af96509364601a99c3ed2d6b148643ede02369f70e5be92629d1f0e5d3ddce",
+        "outputs/physical_contact_dimer_infinite_internal_content_tournament_cycle583_receipt_2026_07_22.json": "0f4e2df9e25cdc7137c42fb91666c5eaae10efc652d5af84f421e38c5ad97aab",
+        "outputs/physical_cycle330_all_order_isometry_bridge_cycle515_attempt2_2026_07_20.log": "636d067ddd9284e59f24999666c5110fce425e60a7baa48d714b2a023abab1b1",
+        "outputs/physical_cycle330_all_order_isometry_bridge_cycle515_dry_2026_07_20.log": "7ef8b552f8dd08770691c1281b354970641bb75191c5a15e26b1e54078204b56",
+        "outputs/physical_cycle515_koszul_frame_bridge_cycle516_attempt4_2026_07_21.log": "710673f10229675789ab84abe24d15238f0b9b1674608b0254a77c02860ebcce",
+        "outputs/physical_cycle515_koszul_frame_bridge_cycle516_attempt4_receipt_2026_07_21.json": "bfcf92c44e8b651f3866fa017a77ab7462988427d80178da6cbbddbe5d703cbb",
+        "outputs/physical_enlarged_link_contact_work_tournament_cycle569_cold_2026_07_22.txt": "834155bbb74e1ce42b8c0d90b746787bba4373d4f0ea092d4afc74391881beb6",
+        "outputs/physical_enlarged_link_contact_work_tournament_cycle569_receipt_2026_07_22.json": "ddba1d3cfb3167416b12a4a327dd136c4b61878f07ef1448629f2a440208b195",
+        "outputs/physical_global_N3_returned_slot_compiler_cycle560_receipt_2026_07_21.json": "e27c9eba803413455fc6b5bf3aca7a38def9d4bb68694af37a44725343509598",
+        "outputs/physical_global_carrier_stream_qca_approximation_tournament_cycle606_cold_2026_07_22.txt": "007d7fdf3d67d55afbacdd905bc44d67b685f9926ba395e393ed01eec005e5dd",
+        "outputs/physical_global_carrier_stream_qca_approximation_tournament_cycle606_receipt_2026_07_22.json": "2b225152dcdae055c4d751c57af913b6184b9977e52ebc3dba509b4fc0b3da3c",
+        "outputs/physical_held_sparse_order_retirement_cycle563_2026_07_21.json": "e9a2b0c8013d1a75dad9ae5ff76c7219b30a2b8e2c29556d269aa2c8373a6c8f",
+        "outputs/physical_held_sparse_order_retirement_cycle563_receipt_2026_07_21.json": "ac9fcc1da45f33152679cfd2992abf1d037fae8647f1ab4d2d0526e6ac7000ae",
+        "outputs/physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_cold_2026_07_22.txt": "6068efb7f80a5dc4b15253b6816ebfabcd13fcb929c9e4b1d56195eb0d1b922d",
+        "outputs/physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_receipt_2026_07_22.json": "b84f1cfaa03661a0a2498fd409e077aeeb4f6ad423909807d20be7c846c571f7",
+        "outputs/physical_local_cutoff_gauge_enforcement_tournament_cycle593_cold_2026_07_22.txt": "5a2509151706307ffe158d37b78f467692ac8976636f6437a3069bfd158e2908",
+        "outputs/physical_local_cutoff_gauge_enforcement_tournament_cycle593_receipt_2026_07_22.json": "0b6d82faba587b50146bd1001dc72ba09ca9248fd74d5b02ddc6e5c33b486475",
+        "outputs/physical_root_free_cutoff_gauge_preparation_tournament_cycle598_cold_2026_07_22.txt": "3a8d6990d8dfaabefe0f5cec08af83d14613507ca0712b993f39c49025bb8797",
+        "outputs/physical_root_free_cutoff_gauge_preparation_tournament_cycle598_receipt_2026_07_22.json": "c8a27819fb1907d20aa9c73a7d66a2b8c0cc37b532da4686ef32a80996d909c1",
+        "outputs/physical_root_free_full_N3_carrier_genesis_tournament_cycle600_cold_2026_07_22.txt": "fd82ebe960fa57d25e85328465b782a644ae127220d9abbefe5c64ca1b9eb01f",
+        "outputs/physical_root_free_full_N3_carrier_genesis_tournament_cycle600_receipt_2026_07_22.json": "d09cd7a82070f4311ab84a07127551ccf1e30e5557586e32fcd55fa01fd3dba5",
+        "outputs/physical_route_c_q6_symbolic_axis_diagnostic_cycle514_attempt1_2026_07_20.log": "48c37e6ec11eb9cb7278e94f825ac5ab1f5569dc6f3c9b1fd247b1fe6c698847",
+        "outputs/physical_route_c_q6_symbolic_axis_diagnostic_cycle514_attempt1_receipt_2026_07_20.json": "5def6d3fb1e796341bb76cb51f6eb61a90274ef950a11a8007b7a3585f55c97d",
+        "outputs/physical_route_c_q6_symbolic_axis_diagnostic_cycle514_dry_2026_07_20.log": "e09d664911f681a3a85f6cf180b744c4c63fb84362fe8232af6b64400903a83f",
+        "scripts/ROUTE1_DIRECT_CAR_COMPILER_CYCLE231_2026_07_17.py": "5adb6dc52f6352a5367a2b56da94854e511f9dd174688029f1841e5004a91c32",
+        "scripts/active_cubic_source_response_cycle211_2026_07_16.py": "d5392152d322ea8f3850d0345d6caa426db22ae7f7694775b4bd6388704c18a6",
+        "scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py": "a5e78e40cad0c43ee62ae887df7d84a0b895ab217ba4f3d521353e5d0b6bf95a",
+        "scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py": "464e5928b7c1e46c23e4010363b6bd8ff3d0e2379c6e5ecb46891010ef47a5a4",
+        "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py": "ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a",
+        "scripts/exact_3d_higher_form_bosonization_cycle235_2026_07_17.py": "dd955ce629cde5e225b625be89f5f71045d688083a032b7bf104efa9b3f1bb34",
+        "scripts/finite_coin_scalar_wave_dilation_cycle215_2026_07_16.py": "3a977106389428d2281ea7e0e32b65fe57f6ce33d783742b80f264f78f4f2c17",
+        "scripts/fock_modular_boundary_current_cycle229_2026_07_17.py": "fbf434a94c8dae57ffb6e68776642e4342a91f0d39f071ee1388fcb89ff846d7",
+        "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py": "4ab857755b606d7ba7432179ed66de723ac31d3f66507cafa1168ab60d4965d6",
+        "scripts/local_generator_source_tournament_cycle228_2026_07_17.py": "97fdf54189d7da93099aeab4a9b1dd8501c7262d55493b9fa95bf1c2f5c97a9d",
+        "scripts/local_rough_puncture_odd_sector_cycle247_2026_07_17.py": "10f5cf027c76f5a0a3b1d3dbaa6cb0e6d418932c84553f0cca303d3f21742519",
+        "scripts/physical_adjacent_star_recurrence_tournament_cycle548_2026_07_21.py": "5830dacebf79720301192b0dcb39121e1ecf03137f94d6e97c7da4034d9c9ca0",
+        "scripts/physical_adjacent_two_star_compressed_gram_cycle518_2026_07_21.py": "8f505d2de6476bdbc20f87a901e8be9fe46deda5b568c98d750977069a352e53",
+        "scripts/physical_adjacent_two_star_order_character_preflight_cycle517_2026_07_21.py": "ad8b0c71840cbfa56aae3ae9da44eceec1cad7d84be06bab32604eb5f6fbb4a3",
+        "scripts/physical_adjacent_two_star_seam_tag_preservation_cycle519_2026_07_21.py": "d2e0648558fb3031a200600b0643de28a5c8e695c35165a6905a6a99ff45255d",
+        "scripts/physical_autonomous_localized_refocused_matter_transition_tournament_cycle575_2026_07_22.py": "0c845ecd02b86ce4d99aa8406a206e9b01628f02f1592cf37c41a084eb1e0a4b",
+        "scripts/physical_boundary_aware_multistar_recurrence_tournament_cycle551_2026_07_21.py": "3d68e536565c491b1b54547d82ed6faab73437c600229ff9060f471ffad84997",
+        "scripts/physical_carrier_preparation_elementary_synthesis_tournament_cycle603_2026_07_22.py": "e64032e369e08e03ad2a742a2bde6914d8adc6ed1fd64f15f4e301c1c8dea739",
+        "scripts/physical_contact_dimer_infinite_internal_content_tournament_cycle583_2026_07_22.py": "21957cc883550ee81fc48d5b55ad4a0384cbac8697557691c805d84c7c8dbaaf",
+        "scripts/physical_correlated_double_shadow_stream_cycle529_2026_07_21.py": "df118a01c2a95fcccd7986dc01afb5625d0faa8bb95beb2ecb344a9f5fbacda7",
+        "scripts/physical_covariant_protected_link_shadow_cycle528_2026_07_21.py": "5eb5160688465283126b990873398c2b8914e39a49f10919128b0b5d77496da5",
+        "scripts/physical_cycle269_collision_safe_auxiliary_ports_2026_07_17.py": "03786effa03eae50930ca0bfa14c881276df8bd6bdba83b6d7a893cffe1fe747",
+        "scripts/physical_cycle269_common_m64_fixed_seam_cycle311_2026_07_18.py": "4495bf39e1e2661866501e377b8ec1aefff656e261e428fa5b6738f73b49699c",
+        "scripts/physical_cycle269_five_cell_adjacent_star_cycle327_2026_07_18.py": "0688e7db8b8490e525c0e1f1108474903e2ff40d278e185b6add54f8086f8110",
+        "scripts/physical_cycle269_four_cell_star_cycle324_2026_07_18.py": "f2e07bf91e7a5b06c8037314798cb84cd6d747bc92fa6292c1759915fb91354d",
+        "scripts/physical_cycle269_full_two_particle_sector_interface_cycle305_2026_07_17.py": "3e970b2c84ebe891d36c132cd99d716ceb20b596cea89729f06ed8950c7a847c",
+        "scripts/physical_cycle269_higher_number_fixed_seam_cycle308_2026_07_17.py": "cb6de428c5054ea9415a59bab75d36c693c65d8070df30a6a0bbc2a926f3f4e4",
+        "scripts/physical_cycle269_overlap_aware_two_cell_cycle315_2026_07_18.py": "52c18f96a1f8db9b79e4d0fba5ff76905170e6a8dc8c3e818fdf69984a1778c3",
+        "scripts/physical_cycle269_reference_relative_localized_pair_lift_2026_07_17.py": "95820817eaf883040aae96531f1afd4fe7a90569a43215d226cf44dce9a1cc09",
+        "scripts/physical_cycle269_seven_cell_maximal_star_cycle330_2026_07_18.py": "4428d1f73ff315987edabd7f838a1c58414d0a982f0cd28656ddef3bd230d19f",
+        "scripts/physical_cycle269_staggered_reservoir_catchup_2026_07_17.py": "5310ee8e19a55694f7a11ccf013c696b16cdb37961c5ade41ed316b27238bab1",
+        "scripts/physical_cycle269_three_cell_multiedge_cycle319_2026_07_18.py": "faa05d97542efca7684f4acc6f9b7dfb8e32a02f3f9d16adeae16449f5b702fb",
+        "scripts/physical_cycle330_all_order_isometry_bridge_cycle515_2026_07_20.py": "93afe1600cb3fb8b7844729521b005ce62f957a128a6ffb9493a03a1d9932e96",
+        "scripts/physical_cycle515_koszul_frame_bridge_cycle516_2026_07_20.py": "3c4318a84c661893932c8d41a90db36445f80cefd092a6a3fffb56cbf8abfa9c",
+        "scripts/physical_enlarged_link_contact_work_tournament_cycle569_2026_07_22.py": "877dc75a840ff348f15022784dc60190fa884fad216db3e1904fc089c9d3c091",
+        "scripts/physical_global_N3_returned_slot_compiler_cycle560_2026_07_21.py": "f6d641e4735b26f9463ea623ee8ed6e28acc995fdfc88300709dcfac100c13ab",
+        "scripts/physical_global_carrier_stream_qca_approximation_tournament_cycle606_2026_07_22.py": "637a7ac6b5a56ef539bef3b94c6624a4f5f52372ef31e2d1e3bdc4328ae8767f",
+        "scripts/physical_global_selected_network_encoder_cycle555_2026_07_21.py": "af51110e8c4cb5245efd2bd99ef7f2b12fb02586c5e5225082ce4a13fba27e92",
+        "scripts/physical_held_sparse_order_retirement_cycle563_2026_07_21.py": "55e51cafffa70284a6e8e1f0510ca0d2f890989ccbcf5bce64435df4c8e812a6",
+        "scripts/physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_2026_07_22.py": "2a3c77c26003bb0f8b55fe2da0fd36b0ac98a14a21a083303fe175e5f802e99f",
+        "scripts/physical_joint_clock_accumulator_contraction_bridge_cycle570_2026_07_22.py": "37e9d0f336d773bd4a1957a6531f80dc35b9673a4ef0f99137e7fb33558bf849",
+        "scripts/physical_local_N3_six_ray_decoder_tournament_cycle557_2026_07_21.py": "8b153c0ec633d489a839221788115ae85c6bf80c4d4952339795aa7bd80150d8",
+        "scripts/physical_local_cutoff_gauge_enforcement_tournament_cycle593_2026_07_22.py": "9207101f5784bac0ff2097926a36e773f2a860102e57aee173581961771a4ae5",
+        "scripts/physical_matter_transition_clock_equivalence_tournament_cycle573_2026_07_22.py": "52c743889146189c2b574fa8012e7281340722303cb5b61fc53579e5fe23ebf4",
+        "scripts/physical_native_shadow_nearest_neighbor_router_cycle527_2026_07_21.py": "2ca2021fa76b889128b587a6a0d67986e236319ea8fb7ccd1dfaf31982c55fa0",
+        "scripts/physical_opposite_carrier_reearned_compiler_cycle522_2026_07_21.py": "d6a7700d7575dfba02d4b4d2438e54d37a02c6ca7f71673c8a871b474f6e088b",
+        "scripts/physical_opposite_carrier_shared_cell_recurrence_cycle525_2026_07_21.py": "379c67315de8d235f8d5287b281b6291d0a10731d030338d8bde0676a4c0b785",
+        "scripts/physical_protected_shadow_coin_gate_compiler_cycle523_2026_07_21.py": "d9dd02bbb4dfacebf0f75f6b8c56881ff56653843cb7ed75baa381d5aa605b9d",
+        "scripts/physical_recurrent_shared_volume_compiler_cycle545_2026_07_21.py": "b117c595f8c06f79931be98d573168e53d9f0fb9d5024e4ee623ba76d7488067",
+        "scripts/physical_root_free_cutoff_gauge_preparation_tournament_cycle598_2026_07_22.py": "5702ac74768c83bd97d0860ad827a5a66809c8bfbfafb2dd010982bcb917be51",
+        "scripts/physical_root_free_full_N3_carrier_genesis_tournament_cycle600_2026_07_22.py": "904342da79cbc22c9878479f586387414e4a3af0f7f603708ec03d272074c933",
+        "scripts/physical_rough_fswap_pauli_rotation_gate_compiler_cycle540_2026_07_21.py": "53b003bbda96eee1d85e48aa5cd0e8c530bea35c7b6eefef5a637127f66af13a",
+        "scripts/physical_rough_gauge_subsystem_quotient_cycle532_2026_07_21.py": "a768d4250e55399c03e6084614a772953e6bcdf1570b9e7c50ac8d18544cfe6a",
+        "scripts/physical_route_c_q6_symbolic_axis_diagnostic_cycle514_2026_07_20.py": "74d9231d0c78ad6c85c028cea69cc7ac29c7b1b0c04259513d7223c5e8ae19fe",
+        "scripts/physical_selected_seam_code_space_isometry_compiler_cycle533_2026_07_21.py": "72fe24e03b38812ef9f6dc610bc445b5ea6046a30683c2b734e9c0396e84facd",
+        "scripts/physical_selected_seam_event_current_adapter_cycle526_2026_07_21.py": "7c3d4a35664eaf5c7737c86464ca069e15ce29c40f61778081af8139970c37cd",
+        "scripts/physical_shadow_normal_form_sync_cycle530_2026_07_21.py": "f5f90a331803a43d293fa8e8e3640e29886bed81935827763773d84f61ce9c99",
+        "scripts/physical_shared_seam_code_space_isometry_compiler_cycle539_2026_07_21.py": "aa126a6363f9fc8c08d28a47b840c1b6e0a7c0b47bbe296087340b804a0087d1",
+        "scripts/physical_three_star_shared_parity_overlap_cycle520_2026_07_21.py": "22b00fd39fd07a04afb8776f4b97c31486ce4d2034617bd16aa170c263108b2b",
+        "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py": "c410b754d4e984f6ee5ccbc7c5a52e776c50c91c4daa12d798044f104cc7435b",
+        "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py": "472e28c78901368629c8d9d6f614bb8fb3ea003639ac61d480d06941cdf6cb86",
+        "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py": "b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae",
+        "scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py": "9ef0fff433bbf1c96c9b13c5ce79530e01fe705f08c6caf6b60316e20359e011",
+        "scripts/wilson_subsystem_sector_free_compiler_cycle269_2026_07_17.py": "c7b8673eb1a0dced08131820caa1fb2400fc8d1f73cfe2cddf5f8a28f9045d35"
+      },
+      "observed_transitive_sha256": {
+        "docs/work_history/repo/review_feedback/EXACT_3D_HIGHER_FORM_BOSONIZATION_CYCLE235_NOTE_2026-07-17.md": "295edee5608d3141fc3e3212bc51753265d953dadd68a8b44a66ed1e0e16e0d2",
+        "docs/work_history/repo/review_feedback/LOCAL_ROUGH_PUNCTURE_ODD_SECTOR_CYCLE247_NOTE_2026-07-17.md": "8cc36f383c1d175a80ad26f17f98287fc8e94ef2f69b36851c4c420bcec8dad9",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ADJACENT_STAR_RECURRENCE_TOURNAMENT_CYCLE548_NOTE_2026-07-21.md": "db16fe47dae51428447f42b88418fd0181a8908fee16a95f73b4bbf60fa23c04",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ADJACENT_TWO_STAR_COMPRESSED_GRAM_CYCLE518_NOTE_2026-07-21.md": "7278244447e4074e66966e418710e2ad401befc4b8cbfb9d0a30088c0f837107",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ADJACENT_TWO_STAR_ORDER_CHARACTER_PREFLIGHT_CYCLE517_NOTE_2026-07-21.md": "51c3b92448f7779fe838c51265b279d82f48e3b19f6c0464b95f18112bf07a74",
+        "docs/work_history/repo/review_feedback/PHYSICAL_BOUNDARY_AWARE_MULTISTAR_RECURRENCE_TOURNAMENT_CYCLE551_NOTE_2026-07-21.md": "15441dc81ff96527e67e5346493fc3d5ebbc0734d3d1982a77b900b53c290b40",
+        "docs/work_history/repo/review_feedback/PHYSICAL_CARRIER_PREPARATION_ELEMENTARY_SYNTHESIS_TOURNAMENT_CYCLE603_NOTE_2026-07-22.md": "ddc06d6d4abf945794b1c0b7566c9183fa744839d1ba5630c1d9ad8b4559c417",
+        "docs/work_history/repo/review_feedback/PHYSICAL_CONTACT_DIMER_INFINITE_INTERNAL_CONTENT_TOURNAMENT_CYCLE583_NOTE_2026-07-22.md": "6942341fa2fc8978a25acdd758677b04a5a1d0c9e13b8e5627bc9bf504814cf3",
+        "docs/work_history/repo/review_feedback/PHYSICAL_CORRELATED_DOUBLE_SHADOW_STREAM_CYCLE529_NOTE_2026-07-21.md": "8aa3eed5801349767f254651a7ba0b0d9d823448875c27f28259f4dd1a0474e2",
+        "docs/work_history/repo/review_feedback/PHYSICAL_COVARIANT_PROTECTED_LINK_SHADOW_CYCLE528_NOTE_2026-07-21.md": "f27f78a05910934ffd97bca780d9384b93a1aff12481d7e08611951f03acc432",
+        "docs/work_history/repo/review_feedback/PHYSICAL_CYCLE269_SEVEN_CELL_MAXIMAL_STAR_CYCLE330_NOTE_2026-07-18.md": "4edb939ca520bc5b148814e8c274e93e16c87e8f639d925db130fdfe16fd3b64",
+        "docs/work_history/repo/review_feedback/PHYSICAL_CYCLE330_ALL_ORDER_ISOMETRY_BRIDGE_CYCLE515_NOTE_2026-07-20.md": "99696f55a6e1f8f29958d878bdbd5bb0f889c59be8707e93206d1648ba94850a",
+        "docs/work_history/repo/review_feedback/PHYSICAL_CYCLE515_KOSZUL_FRAME_BRIDGE_CYCLE516_NOTE_2026-07-21.md": "5f32e766fad91a960031bf68dac4ba3b2498b02b5fc4fce9ac1c795e67c23597",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ENLARGED_LINK_CONTACT_WORK_TOURNAMENT_CYCLE569_NOTE_2026-07-22.md": "ca90108c802f1c39d5a3db95f78397ecc0da43a9c54d180f32d3108f7cb1eb19",
+        "docs/work_history/repo/review_feedback/PHYSICAL_GLOBAL_CARRIER_STREAM_QCA_APPROXIMATION_TOURNAMENT_CYCLE606_NOTE_2026-07-22.md": "01ef76e8e0c3d29645e1f9247fa479d3fa1d3dbabab09d884da102208cf31d78",
+        "docs/work_history/repo/review_feedback/PHYSICAL_GLOBAL_N3_RETURNED_SLOT_COMPILER_CYCLE560_NOTE_2026-07-21.md": "b6c5ee42cd26918f99ecc96d78440deef2a29ae6c05f576813b3f269997c50de",
+        "docs/work_history/repo/review_feedback/PHYSICAL_GLOBAL_SELECTED_NETWORK_ENCODER_CYCLE555_NOTE_2026-07-21.md": "34461d051b1bddd0319b439aecfe433f7309f8e4065375e52b2e91dac8c2867b",
+        "docs/work_history/repo/review_feedback/PHYSICAL_HELD_SPARSE_ORDER_RETIREMENT_CYCLE563_NOTE_2026-07-21.md": "3d636226e3fff5bfb68c2c38566537fe419ce03de5d60415742ffcd2307b34dd",
+        "docs/work_history/repo/review_feedback/PHYSICAL_INTRINSIC_CONTACT_BOUND_MOVING_TRANSITION_TOURNAMENT_CYCLE578_NOTE_2026-07-22.md": "41d3ded32f36a0f9ab0b407de14524db7d621e285fa5aeff6f76d480dd8e18d5",
+        "docs/work_history/repo/review_feedback/PHYSICAL_LOCAL_CUTOFF_GAUGE_ENFORCEMENT_TOURNAMENT_CYCLE593_NOTE_2026-07-22.md": "3040c484d8d3c4f30a1e8f4b1eb5bc75568246ad04424aaff4bd94ba63b55c44",
+        "docs/work_history/repo/review_feedback/PHYSICAL_LOCAL_N3_SIX_RAY_DECODER_TOURNAMENT_CYCLE557_NOTE_2026-07-21.md": "e46acc27ee4bddc8c89f0d322173cd76f20fee100d7f54134e53421f16155bda",
+        "docs/work_history/repo/review_feedback/PHYSICAL_OPPOSITE_CARRIER_SHARED_CELL_RECURRENCE_CYCLE525_NOTE_2026-07-21.md": "43a39dd4a33d06eaf11369eb84d436761832974a4f759aec44e9ab6b919e44a8",
+        "docs/work_history/repo/review_feedback/PHYSICAL_RECURRENT_SHARED_VOLUME_COMPILER_CYCLE545_NOTE_2026-07-21.md": "e1fd77a21cd1f2aac8b7c0a5afb66a43275fb1c202f576f958c126d235f5a4bb",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ROOT_FREE_CUTOFF_GAUGE_PREPARATION_TOURNAMENT_CYCLE598_NOTE_2026-07-22.md": "065192627b0c56b59d75a0ea837f26179b76579aa3e0783bc020092f173963ac",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ROOT_FREE_FULL_N3_CARRIER_GENESIS_TOURNAMENT_CYCLE600_NOTE_2026-07-22.md": "9c8772f365812caedb0c416f7f0681a8f342ff3d08ac412851e7e6141ea7f602",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md": "5f668f6cc04a5eece23f913d5869f57553df583c23d6dbb5cdac6756be41bfc3",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ROUTE_C_Q6_SYMBOLIC_AXIS_DIAGNOSTIC_CYCLE514_NOTE_2026-07-20.md": "e4365d2a9d7028941d882b13c1f00ba1b7dfcf52e45109e9a293f702a13eb278",
+        "docs/work_history/repo/review_feedback/PHYSICAL_SELECTED_SEAM_CODE_SPACE_ISOMETRY_COMPILER_CYCLE533_NOTE_2026-07-21.md": "e15712305bd770cff61133f184d02da1714c50453bb5f3c492f1cc3051e119c2",
+        "docs/work_history/repo/review_feedback/PHYSICAL_SHARED_SEAM_CODE_SPACE_ISOMETRY_COMPILER_CYCLE539_NOTE_2026-07-21.md": "7d95064985bd9b2d6312ec49fa738f86fd7bba289316539a06f71931a958fcc1",
+        "docs/work_history/repo/review_feedback/PHYSICAL_THREE_STAR_SHARED_PARITY_OVERLAP_CYCLE520_NOTE_2026-07-21.md": "8a1aa2c66cbc38320c829679e7b982936834510a58b38f89621f22278fd67cd8",
+        "docs/work_history/repo/review_feedback/SPATIAL_CAR_CONTACT_SEAM_FORM_FACTOR_CYCLE230_NOTE_2026-07-17.md": "a7a3a0a021dbd691c6c2ddb9163679b445c5110b8150f63395271037963c7132",
+        "outputs/physical_carrier_preparation_elementary_synthesis_tournament_cycle603_cold_2026_07_22.txt": "35385a09b5d075e553de1de9302e0317dd415acbe1f5ccf9425905eedae94174",
+        "outputs/physical_carrier_preparation_elementary_synthesis_tournament_cycle603_receipt_2026_07_22.json": "751487fa50a738d5473f7ddcb77474785c84463dda1264a34de2643f19102871",
+        "outputs/physical_contact_dimer_infinite_internal_content_tournament_cycle583_cold_2026_07_22.txt": "22af96509364601a99c3ed2d6b148643ede02369f70e5be92629d1f0e5d3ddce",
+        "outputs/physical_contact_dimer_infinite_internal_content_tournament_cycle583_receipt_2026_07_22.json": "0f4e2df9e25cdc7137c42fb91666c5eaae10efc652d5af84f421e38c5ad97aab",
+        "outputs/physical_cycle330_all_order_isometry_bridge_cycle515_attempt2_2026_07_20.log": "636d067ddd9284e59f24999666c5110fce425e60a7baa48d714b2a023abab1b1",
+        "outputs/physical_cycle330_all_order_isometry_bridge_cycle515_dry_2026_07_20.log": "7ef8b552f8dd08770691c1281b354970641bb75191c5a15e26b1e54078204b56",
+        "outputs/physical_cycle515_koszul_frame_bridge_cycle516_attempt4_2026_07_21.log": "710673f10229675789ab84abe24d15238f0b9b1674608b0254a77c02860ebcce",
+        "outputs/physical_cycle515_koszul_frame_bridge_cycle516_attempt4_receipt_2026_07_21.json": "bfcf92c44e8b651f3866fa017a77ab7462988427d80178da6cbbddbe5d703cbb",
+        "outputs/physical_enlarged_link_contact_work_tournament_cycle569_cold_2026_07_22.txt": "834155bbb74e1ce42b8c0d90b746787bba4373d4f0ea092d4afc74391881beb6",
+        "outputs/physical_enlarged_link_contact_work_tournament_cycle569_receipt_2026_07_22.json": "ddba1d3cfb3167416b12a4a327dd136c4b61878f07ef1448629f2a440208b195",
+        "outputs/physical_global_N3_returned_slot_compiler_cycle560_receipt_2026_07_21.json": "e27c9eba803413455fc6b5bf3aca7a38def9d4bb68694af37a44725343509598",
+        "outputs/physical_global_carrier_stream_qca_approximation_tournament_cycle606_cold_2026_07_22.txt": "007d7fdf3d67d55afbacdd905bc44d67b685f9926ba395e393ed01eec005e5dd",
+        "outputs/physical_global_carrier_stream_qca_approximation_tournament_cycle606_receipt_2026_07_22.json": "2b225152dcdae055c4d751c57af913b6184b9977e52ebc3dba509b4fc0b3da3c",
+        "outputs/physical_held_sparse_order_retirement_cycle563_2026_07_21.json": "e9a2b0c8013d1a75dad9ae5ff76c7219b30a2b8e2c29556d269aa2c8373a6c8f",
+        "outputs/physical_held_sparse_order_retirement_cycle563_receipt_2026_07_21.json": "ac9fcc1da45f33152679cfd2992abf1d037fae8647f1ab4d2d0526e6ac7000ae",
+        "outputs/physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_cold_2026_07_22.txt": "6068efb7f80a5dc4b15253b6816ebfabcd13fcb929c9e4b1d56195eb0d1b922d",
+        "outputs/physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_receipt_2026_07_22.json": "b84f1cfaa03661a0a2498fd409e077aeeb4f6ad423909807d20be7c846c571f7",
+        "outputs/physical_local_cutoff_gauge_enforcement_tournament_cycle593_cold_2026_07_22.txt": "5a2509151706307ffe158d37b78f467692ac8976636f6437a3069bfd158e2908",
+        "outputs/physical_local_cutoff_gauge_enforcement_tournament_cycle593_receipt_2026_07_22.json": "0b6d82faba587b50146bd1001dc72ba09ca9248fd74d5b02ddc6e5c33b486475",
+        "outputs/physical_root_free_cutoff_gauge_preparation_tournament_cycle598_cold_2026_07_22.txt": "3a8d6990d8dfaabefe0f5cec08af83d14613507ca0712b993f39c49025bb8797",
+        "outputs/physical_root_free_cutoff_gauge_preparation_tournament_cycle598_receipt_2026_07_22.json": "c8a27819fb1907d20aa9c73a7d66a2b8c0cc37b532da4686ef32a80996d909c1",
+        "outputs/physical_root_free_full_N3_carrier_genesis_tournament_cycle600_cold_2026_07_22.txt": "fd82ebe960fa57d25e85328465b782a644ae127220d9abbefe5c64ca1b9eb01f",
+        "outputs/physical_root_free_full_N3_carrier_genesis_tournament_cycle600_receipt_2026_07_22.json": "d09cd7a82070f4311ab84a07127551ccf1e30e5557586e32fcd55fa01fd3dba5",
+        "outputs/physical_route_c_q6_symbolic_axis_diagnostic_cycle514_attempt1_2026_07_20.log": "48c37e6ec11eb9cb7278e94f825ac5ab1f5569dc6f3c9b1fd247b1fe6c698847",
+        "outputs/physical_route_c_q6_symbolic_axis_diagnostic_cycle514_attempt1_receipt_2026_07_20.json": "5def6d3fb1e796341bb76cb51f6eb61a90274ef950a11a8007b7a3585f55c97d",
+        "outputs/physical_route_c_q6_symbolic_axis_diagnostic_cycle514_dry_2026_07_20.log": "e09d664911f681a3a85f6cf180b744c4c63fb84362fe8232af6b64400903a83f",
+        "scripts/ROUTE1_DIRECT_CAR_COMPILER_CYCLE231_2026_07_17.py": "5adb6dc52f6352a5367a2b56da94854e511f9dd174688029f1841e5004a91c32",
+        "scripts/active_cubic_source_response_cycle211_2026_07_16.py": "d5392152d322ea8f3850d0345d6caa426db22ae7f7694775b4bd6388704c18a6",
+        "scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py": "a5e78e40cad0c43ee62ae887df7d84a0b895ab217ba4f3d521353e5d0b6bf95a",
+        "scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py": "464e5928b7c1e46c23e4010363b6bd8ff3d0e2379c6e5ecb46891010ef47a5a4",
+        "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py": "ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a",
+        "scripts/exact_3d_higher_form_bosonization_cycle235_2026_07_17.py": "dd955ce629cde5e225b625be89f5f71045d688083a032b7bf104efa9b3f1bb34",
+        "scripts/finite_coin_scalar_wave_dilation_cycle215_2026_07_16.py": "3a977106389428d2281ea7e0e32b65fe57f6ce33d783742b80f264f78f4f2c17",
+        "scripts/fock_modular_boundary_current_cycle229_2026_07_17.py": "fbf434a94c8dae57ffb6e68776642e4342a91f0d39f071ee1388fcb89ff846d7",
+        "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py": "4ab857755b606d7ba7432179ed66de723ac31d3f66507cafa1168ab60d4965d6",
+        "scripts/local_generator_source_tournament_cycle228_2026_07_17.py": "97fdf54189d7da93099aeab4a9b1dd8501c7262d55493b9fa95bf1c2f5c97a9d",
+        "scripts/local_rough_puncture_odd_sector_cycle247_2026_07_17.py": "10f5cf027c76f5a0a3b1d3dbaa6cb0e6d418932c84553f0cca303d3f21742519",
+        "scripts/physical_adjacent_star_recurrence_tournament_cycle548_2026_07_21.py": "5830dacebf79720301192b0dcb39121e1ecf03137f94d6e97c7da4034d9c9ca0",
+        "scripts/physical_adjacent_two_star_compressed_gram_cycle518_2026_07_21.py": "8f505d2de6476bdbc20f87a901e8be9fe46deda5b568c98d750977069a352e53",
+        "scripts/physical_adjacent_two_star_order_character_preflight_cycle517_2026_07_21.py": "ad8b0c71840cbfa56aae3ae9da44eceec1cad7d84be06bab32604eb5f6fbb4a3",
+        "scripts/physical_adjacent_two_star_seam_tag_preservation_cycle519_2026_07_21.py": "d2e0648558fb3031a200600b0643de28a5c8e695c35165a6905a6a99ff45255d",
+        "scripts/physical_autonomous_localized_refocused_matter_transition_tournament_cycle575_2026_07_22.py": "0c845ecd02b86ce4d99aa8406a206e9b01628f02f1592cf37c41a084eb1e0a4b",
+        "scripts/physical_boundary_aware_multistar_recurrence_tournament_cycle551_2026_07_21.py": "3d68e536565c491b1b54547d82ed6faab73437c600229ff9060f471ffad84997",
+        "scripts/physical_carrier_preparation_elementary_synthesis_tournament_cycle603_2026_07_22.py": "e64032e369e08e03ad2a742a2bde6914d8adc6ed1fd64f15f4e301c1c8dea739",
+        "scripts/physical_contact_dimer_infinite_internal_content_tournament_cycle583_2026_07_22.py": "21957cc883550ee81fc48d5b55ad4a0384cbac8697557691c805d84c7c8dbaaf",
+        "scripts/physical_correlated_double_shadow_stream_cycle529_2026_07_21.py": "df118a01c2a95fcccd7986dc01afb5625d0faa8bb95beb2ecb344a9f5fbacda7",
+        "scripts/physical_covariant_protected_link_shadow_cycle528_2026_07_21.py": "5eb5160688465283126b990873398c2b8914e39a49f10919128b0b5d77496da5",
+        "scripts/physical_cycle269_collision_safe_auxiliary_ports_2026_07_17.py": "03786effa03eae50930ca0bfa14c881276df8bd6bdba83b6d7a893cffe1fe747",
+        "scripts/physical_cycle269_common_m64_fixed_seam_cycle311_2026_07_18.py": "4495bf39e1e2661866501e377b8ec1aefff656e261e428fa5b6738f73b49699c",
+        "scripts/physical_cycle269_five_cell_adjacent_star_cycle327_2026_07_18.py": "0688e7db8b8490e525c0e1f1108474903e2ff40d278e185b6add54f8086f8110",
+        "scripts/physical_cycle269_four_cell_star_cycle324_2026_07_18.py": "f2e07bf91e7a5b06c8037314798cb84cd6d747bc92fa6292c1759915fb91354d",
+        "scripts/physical_cycle269_full_two_particle_sector_interface_cycle305_2026_07_17.py": "3e970b2c84ebe891d36c132cd99d716ceb20b596cea89729f06ed8950c7a847c",
+        "scripts/physical_cycle269_higher_number_fixed_seam_cycle308_2026_07_17.py": "cb6de428c5054ea9415a59bab75d36c693c65d8070df30a6a0bbc2a926f3f4e4",
+        "scripts/physical_cycle269_overlap_aware_two_cell_cycle315_2026_07_18.py": "52c18f96a1f8db9b79e4d0fba5ff76905170e6a8dc8c3e818fdf69984a1778c3",
+        "scripts/physical_cycle269_reference_relative_localized_pair_lift_2026_07_17.py": "95820817eaf883040aae96531f1afd4fe7a90569a43215d226cf44dce9a1cc09",
+        "scripts/physical_cycle269_seven_cell_maximal_star_cycle330_2026_07_18.py": "4428d1f73ff315987edabd7f838a1c58414d0a982f0cd28656ddef3bd230d19f",
+        "scripts/physical_cycle269_staggered_reservoir_catchup_2026_07_17.py": "5310ee8e19a55694f7a11ccf013c696b16cdb37961c5ade41ed316b27238bab1",
+        "scripts/physical_cycle269_three_cell_multiedge_cycle319_2026_07_18.py": "faa05d97542efca7684f4acc6f9b7dfb8e32a02f3f9d16adeae16449f5b702fb",
+        "scripts/physical_cycle330_all_order_isometry_bridge_cycle515_2026_07_20.py": "93afe1600cb3fb8b7844729521b005ce62f957a128a6ffb9493a03a1d9932e96",
+        "scripts/physical_cycle515_koszul_frame_bridge_cycle516_2026_07_20.py": "3c4318a84c661893932c8d41a90db36445f80cefd092a6a3fffb56cbf8abfa9c",
+        "scripts/physical_enlarged_link_contact_work_tournament_cycle569_2026_07_22.py": "877dc75a840ff348f15022784dc60190fa884fad216db3e1904fc089c9d3c091",
+        "scripts/physical_global_N3_returned_slot_compiler_cycle560_2026_07_21.py": "f6d641e4735b26f9463ea623ee8ed6e28acc995fdfc88300709dcfac100c13ab",
+        "scripts/physical_global_carrier_stream_qca_approximation_tournament_cycle606_2026_07_22.py": "637a7ac6b5a56ef539bef3b94c6624a4f5f52372ef31e2d1e3bdc4328ae8767f",
+        "scripts/physical_global_selected_network_encoder_cycle555_2026_07_21.py": "af51110e8c4cb5245efd2bd99ef7f2b12fb02586c5e5225082ce4a13fba27e92",
+        "scripts/physical_held_sparse_order_retirement_cycle563_2026_07_21.py": "55e51cafffa70284a6e8e1f0510ca0d2f890989ccbcf5bce64435df4c8e812a6",
+        "scripts/physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_2026_07_22.py": "2a3c77c26003bb0f8b55fe2da0fd36b0ac98a14a21a083303fe175e5f802e99f",
+        "scripts/physical_joint_clock_accumulator_contraction_bridge_cycle570_2026_07_22.py": "37e9d0f336d773bd4a1957a6531f80dc35b9673a4ef0f99137e7fb33558bf849",
+        "scripts/physical_local_N3_six_ray_decoder_tournament_cycle557_2026_07_21.py": "8b153c0ec633d489a839221788115ae85c6bf80c4d4952339795aa7bd80150d8",
+        "scripts/physical_local_cutoff_gauge_enforcement_tournament_cycle593_2026_07_22.py": "9207101f5784bac0ff2097926a36e773f2a860102e57aee173581961771a4ae5",
+        "scripts/physical_matter_transition_clock_equivalence_tournament_cycle573_2026_07_22.py": "52c743889146189c2b574fa8012e7281340722303cb5b61fc53579e5fe23ebf4",
+        "scripts/physical_native_shadow_nearest_neighbor_router_cycle527_2026_07_21.py": "2ca2021fa76b889128b587a6a0d67986e236319ea8fb7ccd1dfaf31982c55fa0",
+        "scripts/physical_opposite_carrier_reearned_compiler_cycle522_2026_07_21.py": "d6a7700d7575dfba02d4b4d2438e54d37a02c6ca7f71673c8a871b474f6e088b",
+        "scripts/physical_opposite_carrier_shared_cell_recurrence_cycle525_2026_07_21.py": "379c67315de8d235f8d5287b281b6291d0a10731d030338d8bde0676a4c0b785",
+        "scripts/physical_protected_shadow_coin_gate_compiler_cycle523_2026_07_21.py": "d9dd02bbb4dfacebf0f75f6b8c56881ff56653843cb7ed75baa381d5aa605b9d",
+        "scripts/physical_recurrent_shared_volume_compiler_cycle545_2026_07_21.py": "b117c595f8c06f79931be98d573168e53d9f0fb9d5024e4ee623ba76d7488067",
+        "scripts/physical_root_free_cutoff_gauge_preparation_tournament_cycle598_2026_07_22.py": "5702ac74768c83bd97d0860ad827a5a66809c8bfbfafb2dd010982bcb917be51",
+        "scripts/physical_root_free_full_N3_carrier_genesis_tournament_cycle600_2026_07_22.py": "904342da79cbc22c9878479f586387414e4a3af0f7f603708ec03d272074c933",
+        "scripts/physical_rough_fswap_pauli_rotation_gate_compiler_cycle540_2026_07_21.py": "53b003bbda96eee1d85e48aa5cd0e8c530bea35c7b6eefef5a637127f66af13a",
+        "scripts/physical_rough_gauge_subsystem_quotient_cycle532_2026_07_21.py": "a768d4250e55399c03e6084614a772953e6bcdf1570b9e7c50ac8d18544cfe6a",
+        "scripts/physical_route_c_q6_symbolic_axis_diagnostic_cycle514_2026_07_20.py": "74d9231d0c78ad6c85c028cea69cc7ac29c7b1b0c04259513d7223c5e8ae19fe",
+        "scripts/physical_selected_seam_code_space_isometry_compiler_cycle533_2026_07_21.py": "72fe24e03b38812ef9f6dc610bc445b5ea6046a30683c2b734e9c0396e84facd",
+        "scripts/physical_selected_seam_event_current_adapter_cycle526_2026_07_21.py": "7c3d4a35664eaf5c7737c86464ca069e15ce29c40f61778081af8139970c37cd",
+        "scripts/physical_shadow_normal_form_sync_cycle530_2026_07_21.py": "f5f90a331803a43d293fa8e8e3640e29886bed81935827763773d84f61ce9c99",
+        "scripts/physical_shared_seam_code_space_isometry_compiler_cycle539_2026_07_21.py": "aa126a6363f9fc8c08d28a47b840c1b6e0a7c0b47bbe296087340b804a0087d1",
+        "scripts/physical_three_star_shared_parity_overlap_cycle520_2026_07_21.py": "22b00fd39fd07a04afb8776f4b97c31486ce4d2034617bd16aa170c263108b2b",
+        "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py": "c410b754d4e984f6ee5ccbc7c5a52e776c50c91c4daa12d798044f104cc7435b",
+        "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py": "472e28c78901368629c8d9d6f614bb8fb3ea003639ac61d480d06941cdf6cb86",
+        "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py": "b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae",
+        "scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py": "9ef0fff433bbf1c96c9b13c5ce79530e01fe705f08c6caf6b60316e20359e011",
+        "scripts/wilson_subsystem_sector_free_compiler_cycle269_2026_07_17.py": "c7b8673eb1a0dced08131820caa1fb2400fc8d1f73cfe2cddf5f8a28f9045d35"
+      },
+      "runtime_module_count": 55,
+      "uncovered_imported_modules": []
+    },
+    "minimal_axioms_test_contract": {
+      "contract": "physical Z^3 nearest-neighbor sites, standard translations, proper rotations about each site, and no privileged site",
+      "observed_sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+      "origin_main_lines": "37-41",
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+      "used_as_dynamics_or_new_authority": false
+    },
+    "one_carrier_global": true,
+    "pass": true,
+    "register_stream": true,
+    "tests_passed": 8
+  },
+  "status": "cycle610-conditional-proper-cubic-coarse-grid-stream-composition-tournament",
+  "strongest_constructive_result": "conditional on a supplied 129-period coarse partition/origin and role coloring, a bounded literal fine-coordinate support-one/two NN descriptor composes the accepted Cycle230 coin -> Cycle606 register stream -> Cycle230 contact order; its conditional bus/cross routing, register EG/inverse/deletion/collision controls, mass/contact/seam residuals, coarse-grid translations, coarse-origin all24/all576 coordinate action, and L3/L6/L7 wrap fixtures pass",
   "supplied_structure": [
-    "129^3 fine-site supercell placement and bounded structural role colors",
-    "uniform 24-one-hot physical role-orientation genesis",
+    "129^3 fine-site conditional placement, K-periodic partition/origin, and structural role colors",
+    "uniform 24-one-hot role-orientation table and genesis",
     "blank B/path/flag/predicate-work initialization",
     "global exactly-one-carrier/species sector",
     "coin-stream-contact order and scatter-clear-swap update factorization",
     "beta/contact-g parameterized rotations"
   ],
   "tests_failed": 0,
-  "tests_passed": 16
+  "tests_passed": 18
 }

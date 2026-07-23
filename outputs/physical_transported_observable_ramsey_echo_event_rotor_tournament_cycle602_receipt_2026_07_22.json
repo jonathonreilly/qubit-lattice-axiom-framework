@@ -1,334 +1,658 @@
 {
   "audit": "unset",
+  "author_accepted": false,
   "authority": "none",
   "axiom_pressure": false,
+  "breakthrough": false,
+  "causal_time_PR5557_comparison_no_backcredit": {
+    "Cycle610": "later proper-cubic compiler work; no retroactive physical-M2 status for Cycle602",
+    "Cycle611": "later matter/source response work; no Cycle602 source-response law",
+    "Cycle612_3_to_4_delay": "rate-compatible association only; not implemented here",
+    "Cycle612_5_to_4_advance": "requires a count/event edit and is a different mechanism; not implemented here",
+    "back_credit_to_Cycle602": false,
+    "executed_by_Cycle602": false,
+    "proper_time_or_lapse_implemented": false,
+    "runtime_imported_or_pinned": false,
+    "source": "PR #5557 Cycles610-612 comparison surface only"
+  },
+  "cold_transcript_sha256": "333c7a5003c74f7e730a3b88ef573f6cd29b11885e17c2f8b97bc6f3ef78b458",
   "constitutional_effect": "none",
   "domain": {
     "expected": 4,
     "lawful_domain_rejections": 4,
     "pass": true
   },
-  "elapsed_seconds": 2.4163489170605317,
-  "frozen_law_sha256": "e0efe1d1eb4dcb849d89dbfeb7ff3726e532a9cbe0e10096292118f5f0cb5eae",
-  "highest_honest_terminal": "finite all-checkpoint transported-observable Ramsey and contact-relative echo words over accepted strict physical-M2 dynamics, plus a literal bounded event-origin rotor; simultaneous Ramsey readout and controlled-contact primitive layouts, independent genesis, matter-event association, Record actuality, proper time, lapse, energy, and universal clock equivalence remain open",
-  "maturity": {
-    "Born_probability_repo_strict": [
-      4.2,
-      3.65
-    ],
-    "causal_time_repo_strict": [
-      4.02,
-      3.84
-    ],
-    "gravity_source_repo_strict": [
-      4.1,
-      3.85
-    ],
-    "inertia_matter_repo_strict": [
-      4.83,
-      4.9
-    ],
-    "operational_quantum_records_repo_strict": [
-      4.83,
-      4.67
-    ]
-  },
-  "maximum_RSS_bytes": 1080229888,
+  "elapsed_seconds": 2.0466235839994624,
+  "external_maximum_RSS_bytes": 1015463936,
+  "external_peak_memory_footprint_bytes": 1124320552,
+  "external_timed_wall_seconds": 68.1,
+  "frozen_law_sha256": "b46bf0c925c4ea640af6c4a60768830e90e27deb67130f3be3ecfa01aad96a0b",
+  "highest_honest_terminal": "finite fixed-coarse L3/L6 transported-A2 and contact-relative echo words plus a reversible finite-prefix one-hot Boolean rotor; no Cycle602 route executes physical-M2 E/G, placement, leakage or primitive composition, and no event, Record, proper time, lapse, energy, source response or universal clock equivalence is derived",
+  "maturity_rebase": null,
+  "maximum_RSS_bytes": 762085376,
   "no_go_discipline": {
-    "N1_attempted": 3,
-    "N1_broad_negative_gate": "FAIL",
-    "N1_normalized_route_families": [
+    "N1_gate": "FAIL",
+    "N1_qualifying": 3,
+    "N1_required": 5,
+    "N1_routes": [
       {
-        "attempted": true,
-        "disposition": "positive",
-        "mechanism_invariant": "fixed two-channel observable orbit",
-        "object_formulation": "onsite plus transported A2 detector",
-        "terminal_obligation": "all-q finite Ramsey word"
+        "disposition": "positive finite coarse-algebraic family; no physical detector",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "one-update transported observable orbit with fixed equal coefficients",
+        "object_formulation": "fixed-coarse onsite plus transported A2 covector",
+        "search_status": "COUNTED",
+        "terminal_obligation": "nonzero finite L3/L6 coherent word without a q selector"
       },
       {
-        "attempted": true,
-        "disposition": "positive code-space interface",
-        "mechanism_invariant": "contact-relative Loschmidt echo",
-        "object_formulation": "actual/contact-off direct-sum path",
-        "terminal_obligation": "finite interaction discriminator"
+        "disposition": "positive finite coarse-algebraic echo; no physical branch control",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "Loschmidt-style overlap under matched coarse updates",
+        "object_formulation": "single N=2 branch with contact-on/contact-off references",
+        "search_status": "COUNTED",
+        "terminal_obligation": "finite interaction-sensitive echo"
       },
       {
-        "attempted": true,
-        "disposition": "positive",
-        "mechanism_invariant": "local Gauss word and rollover receipts",
-        "object_formulation": "charged binder plus Q1 event rotor",
-        "terminal_obligation": "physical event-side phase origin"
+        "disposition": "positive algebraic rotor; not a physical event/clock device",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "fixed CNOT/TOFFOLI/FREDKIN Boolean permutation",
+        "object_formulation": "reversible one-hot rotor with binder and predecessor role bits",
+        "search_status": "COUNTED",
+        "terminal_obligation": "finite-prefix rollover and inverse with deletion sensitivity"
       },
       {
-        "attempted": false,
-        "disposition": "open N4",
-        "mechanism_invariant": "four-CAR encounter echo",
-        "object_formulation": "two physical dimers",
-        "terminal_obligation": "independent matter standard"
+        "disposition": "open",
+        "honesty_marker": null,
+        "mechanism_invariant": "primitive E/G product with placement and code-space leakage bound",
+        "object_formulation": "literal physical-M2 pulse/detector/readout block",
+        "search_status": "OPEN_UNTESTED_NOT_COUNTED",
+        "terminal_obligation": "physical transported-observable Ramsey device"
       },
       {
-        "attempted": false,
-        "disposition": "held localization open",
-        "mechanism_invariant": "internal beat observable",
-        "object_formulation": "localized A2/T2 branches",
-        "terminal_obligation": "second-mode intrinsic clock"
+        "disposition": "open",
+        "honesty_marker": null,
+        "mechanism_invariant": "locally stabilized path label and independent reference genesis",
+        "object_formulation": "autonomously prepared physical echo reference",
+        "search_status": "OPEN_UNTESTED_NOT_COUNTED",
+        "terminal_obligation": "physical interaction-conditioned comparison"
       },
       {
-        "attempted": false,
-        "disposition": "occurrence/Record open",
-        "mechanism_invariant": "actual permanent matched events",
-        "object_formulation": "Record-admitted echo corpus",
-        "terminal_obligation": "calibrated observed clock"
+        "disposition": "open; later Cycles610-612 give comparison facts without back-credit",
+        "honesty_marker": null,
+        "mechanism_invariant": "deletion-sensitive occurrence and calibrated interval association",
+        "object_formulation": "causal endpoint/predecessor interval with Record admission",
+        "search_status": "OPEN_UNTESTED_NOT_COUNTED",
+        "terminal_obligation": "proper-time-capable realized clock comparison"
       }
     ],
-    "N1_required_for_broad_negative": 5,
-    "N2_directional_wall_pairs": [
+    "N2_collapsed_walls": [
+      {
+        "obligation": "literal physical-M2 E/G, placement, leakage and primitive product for preparation and transported readout",
+        "type": "PHYSICAL_COMPILATION",
+        "wall": "transported detector primitive composition"
+      },
+      {
+        "obligation": "literal local path-control E/G and constraint enforcement for the contact-on/off echo",
+        "type": "PHYSICAL_COMPILATION",
+        "wall": "echo control primitive composition"
+      },
+      {
+        "obligation": "autonomous preparation of the A2 state, echo reference, root rotor and binder role",
+        "type": "GENESIS",
+        "wall": "autonomous state and origin genesis"
+      },
+      {
+        "obligation": "a physical law associating one matter interrogation with endpoint/predecessor interval data",
+        "type": "ASSOCIATION",
+        "wall": "matter-to-causal-interval association"
+      },
+      {
+        "obligation": "framework-owned occurrence, permanence, readability and admission",
+        "type": "ACTUALITY",
+        "wall": "Record actuality"
+      },
+      {
+        "obligation": "bounded local enforcement of the global N<=3 compiler promise",
+        "type": "DOMAIN_LOCALITY",
+        "wall": "local number-domain enforcement"
+      },
+      {
+        "obligation": "empirical cross-device equivalence and continuum unit map",
+        "type": "CALIBRATION",
+        "wall": "universal proper-time calibration"
+      }
+    ],
+    "N2_directional_wall_independence": [
       {
         "collapsed": false,
-        "left_to_right": "explicit physical gates for grade-changing preparation/readout does not supply autonomous preparation of the coherent local selector repetition code",
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "literal physical-M2 E/G, placement, leakage and primitive product for preparation and transported readout does not construct literal local path-control E/G and constraint enforcement for the contact-on/off echo",
+        "left_wall_type": "PHYSICAL_COMPILATION",
         "pair": [
-          "A2 pulse/read primitive layout",
-          "echo branch-field genesis"
+          "transported detector primitive composition",
+          "echo control primitive composition"
         ],
-        "right_to_left": "autonomous preparation of the coherent local selector repetition code does not supply explicit physical gates for grade-changing preparation/readout"
+        "right_closes_left": false,
+        "right_to_left_reason": "literal local path-control E/G and constraint enforcement for the contact-on/off echo does not construct literal physical-M2 E/G, placement, leakage and primitive product for preparation and transported readout",
+        "right_wall_type": "PHYSICAL_COMPILATION"
       },
       {
         "collapsed": false,
-        "left_to_right": "explicit physical gates for grade-changing preparation/readout does not supply physical law pairing one matter interrogation with one matched event",
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "literal physical-M2 E/G, placement, leakage and primitive product for preparation and transported readout does not construct autonomous preparation of the A2 state, echo reference, root rotor and binder role",
+        "left_wall_type": "PHYSICAL_COMPILATION",
         "pair": [
-          "A2 pulse/read primitive layout",
-          "matter-event association"
+          "transported detector primitive composition",
+          "autonomous state and origin genesis"
         ],
-        "right_to_left": "physical law pairing one matter interrogation with one matched event does not supply explicit physical gates for grade-changing preparation/readout"
+        "right_closes_left": false,
+        "right_to_left_reason": "autonomous preparation of the A2 state, echo reference, root rotor and binder role does not construct literal physical-M2 E/G, placement, leakage and primitive product for preparation and transported readout",
+        "right_wall_type": "GENESIS"
       },
       {
         "collapsed": false,
-        "left_to_right": "explicit physical gates for grade-changing preparation/readout does not supply autonomous preparation of root rotor and occupied binder",
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "literal physical-M2 E/G, placement, leakage and primitive product for preparation and transported readout does not construct a physical law associating one matter interrogation with endpoint/predecessor interval data",
+        "left_wall_type": "PHYSICAL_COMPILATION",
         "pair": [
-          "A2 pulse/read primitive layout",
-          "origin genesis"
+          "transported detector primitive composition",
+          "matter-to-causal-interval association"
         ],
-        "right_to_left": "autonomous preparation of root rotor and occupied binder does not supply explicit physical gates for grade-changing preparation/readout"
+        "right_closes_left": false,
+        "right_to_left_reason": "a physical law associating one matter interrogation with endpoint/predecessor interval data does not construct literal physical-M2 E/G, placement, leakage and primitive product for preparation and transported readout",
+        "right_wall_type": "ASSOCIATION"
       },
       {
         "collapsed": false,
-        "left_to_right": "explicit physical gates for grade-changing preparation/readout does not supply formation/admission of permanent realized events",
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "literal physical-M2 E/G, placement, leakage and primitive product for preparation and transported readout does not construct framework-owned occurrence, permanence, readability and admission",
+        "left_wall_type": "PHYSICAL_COMPILATION",
         "pair": [
-          "A2 pulse/read primitive layout",
+          "transported detector primitive composition",
           "Record actuality"
         ],
-        "right_to_left": "formation/admission of permanent realized events does not supply explicit physical gates for grade-changing preparation/readout"
+        "right_closes_left": false,
+        "right_to_left_reason": "framework-owned occurrence, permanence, readability and admission does not construct literal physical-M2 E/G, placement, leakage and primitive product for preparation and transported readout",
+        "right_wall_type": "ACTUALITY"
       },
       {
         "collapsed": false,
-        "left_to_right": "explicit physical gates for grade-changing preparation/readout does not supply empirical equivalence and continuum unit map",
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "literal physical-M2 E/G, placement, leakage and primitive product for preparation and transported readout does not construct bounded local enforcement of the global N<=3 compiler promise",
+        "left_wall_type": "PHYSICAL_COMPILATION",
         "pair": [
-          "A2 pulse/read primitive layout",
-          "universal calibration"
+          "transported detector primitive composition",
+          "local number-domain enforcement"
         ],
-        "right_to_left": "empirical equivalence and continuum unit map does not supply explicit physical gates for grade-changing preparation/readout"
+        "right_closes_left": false,
+        "right_to_left_reason": "bounded local enforcement of the global N<=3 compiler promise does not construct literal physical-M2 E/G, placement, leakage and primitive product for preparation and transported readout",
+        "right_wall_type": "DOMAIN_LOCALITY"
       },
       {
         "collapsed": false,
-        "left_to_right": "explicit physical gates for grade-changing preparation/readout does not supply bounded local enforcement of the compiler domain",
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "literal physical-M2 E/G, placement, leakage and primitive product for preparation and transported readout does not construct empirical cross-device equivalence and continuum unit map",
+        "left_wall_type": "PHYSICAL_COMPILATION",
         "pair": [
-          "A2 pulse/read primitive layout",
-          "global N<=3 locality"
+          "transported detector primitive composition",
+          "universal proper-time calibration"
         ],
-        "right_to_left": "bounded local enforcement of the compiler domain does not supply explicit physical gates for grade-changing preparation/readout"
+        "right_closes_left": false,
+        "right_to_left_reason": "empirical cross-device equivalence and continuum unit map does not construct literal physical-M2 E/G, placement, leakage and primitive product for preparation and transported readout",
+        "right_wall_type": "CALIBRATION"
       },
       {
         "collapsed": false,
-        "left_to_right": "autonomous preparation of the coherent local selector repetition code does not supply physical law pairing one matter interrogation with one matched event",
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "literal local path-control E/G and constraint enforcement for the contact-on/off echo does not construct autonomous preparation of the A2 state, echo reference, root rotor and binder role",
+        "left_wall_type": "PHYSICAL_COMPILATION",
         "pair": [
-          "echo branch-field genesis",
-          "matter-event association"
+          "echo control primitive composition",
+          "autonomous state and origin genesis"
         ],
-        "right_to_left": "physical law pairing one matter interrogation with one matched event does not supply autonomous preparation of the coherent local selector repetition code"
+        "right_closes_left": false,
+        "right_to_left_reason": "autonomous preparation of the A2 state, echo reference, root rotor and binder role does not construct literal local path-control E/G and constraint enforcement for the contact-on/off echo",
+        "right_wall_type": "GENESIS"
       },
       {
         "collapsed": false,
-        "left_to_right": "autonomous preparation of the coherent local selector repetition code does not supply autonomous preparation of root rotor and occupied binder",
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "literal local path-control E/G and constraint enforcement for the contact-on/off echo does not construct a physical law associating one matter interrogation with endpoint/predecessor interval data",
+        "left_wall_type": "PHYSICAL_COMPILATION",
         "pair": [
-          "echo branch-field genesis",
-          "origin genesis"
+          "echo control primitive composition",
+          "matter-to-causal-interval association"
         ],
-        "right_to_left": "autonomous preparation of root rotor and occupied binder does not supply autonomous preparation of the coherent local selector repetition code"
+        "right_closes_left": false,
+        "right_to_left_reason": "a physical law associating one matter interrogation with endpoint/predecessor interval data does not construct literal local path-control E/G and constraint enforcement for the contact-on/off echo",
+        "right_wall_type": "ASSOCIATION"
       },
       {
         "collapsed": false,
-        "left_to_right": "autonomous preparation of the coherent local selector repetition code does not supply formation/admission of permanent realized events",
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "literal local path-control E/G and constraint enforcement for the contact-on/off echo does not construct framework-owned occurrence, permanence, readability and admission",
+        "left_wall_type": "PHYSICAL_COMPILATION",
         "pair": [
-          "echo branch-field genesis",
+          "echo control primitive composition",
           "Record actuality"
         ],
-        "right_to_left": "formation/admission of permanent realized events does not supply autonomous preparation of the coherent local selector repetition code"
+        "right_closes_left": false,
+        "right_to_left_reason": "framework-owned occurrence, permanence, readability and admission does not construct literal local path-control E/G and constraint enforcement for the contact-on/off echo",
+        "right_wall_type": "ACTUALITY"
       },
       {
         "collapsed": false,
-        "left_to_right": "autonomous preparation of the coherent local selector repetition code does not supply empirical equivalence and continuum unit map",
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "literal local path-control E/G and constraint enforcement for the contact-on/off echo does not construct bounded local enforcement of the global N<=3 compiler promise",
+        "left_wall_type": "PHYSICAL_COMPILATION",
         "pair": [
-          "echo branch-field genesis",
-          "universal calibration"
+          "echo control primitive composition",
+          "local number-domain enforcement"
         ],
-        "right_to_left": "empirical equivalence and continuum unit map does not supply autonomous preparation of the coherent local selector repetition code"
+        "right_closes_left": false,
+        "right_to_left_reason": "bounded local enforcement of the global N<=3 compiler promise does not construct literal local path-control E/G and constraint enforcement for the contact-on/off echo",
+        "right_wall_type": "DOMAIN_LOCALITY"
       },
       {
         "collapsed": false,
-        "left_to_right": "autonomous preparation of the coherent local selector repetition code does not supply bounded local enforcement of the compiler domain",
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "literal local path-control E/G and constraint enforcement for the contact-on/off echo does not construct empirical cross-device equivalence and continuum unit map",
+        "left_wall_type": "PHYSICAL_COMPILATION",
         "pair": [
-          "echo branch-field genesis",
-          "global N<=3 locality"
+          "echo control primitive composition",
+          "universal proper-time calibration"
         ],
-        "right_to_left": "bounded local enforcement of the compiler domain does not supply autonomous preparation of the coherent local selector repetition code"
+        "right_closes_left": false,
+        "right_to_left_reason": "empirical cross-device equivalence and continuum unit map does not construct literal local path-control E/G and constraint enforcement for the contact-on/off echo",
+        "right_wall_type": "CALIBRATION"
       },
       {
         "collapsed": false,
-        "left_to_right": "physical law pairing one matter interrogation with one matched event does not supply autonomous preparation of root rotor and occupied binder",
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "autonomous preparation of the A2 state, echo reference, root rotor and binder role does not construct a physical law associating one matter interrogation with endpoint/predecessor interval data",
+        "left_wall_type": "GENESIS",
         "pair": [
-          "matter-event association",
-          "origin genesis"
+          "autonomous state and origin genesis",
+          "matter-to-causal-interval association"
         ],
-        "right_to_left": "autonomous preparation of root rotor and occupied binder does not supply physical law pairing one matter interrogation with one matched event"
+        "right_closes_left": false,
+        "right_to_left_reason": "a physical law associating one matter interrogation with endpoint/predecessor interval data does not construct autonomous preparation of the A2 state, echo reference, root rotor and binder role",
+        "right_wall_type": "ASSOCIATION"
       },
       {
         "collapsed": false,
-        "left_to_right": "physical law pairing one matter interrogation with one matched event does not supply formation/admission of permanent realized events",
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "autonomous preparation of the A2 state, echo reference, root rotor and binder role does not construct framework-owned occurrence, permanence, readability and admission",
+        "left_wall_type": "GENESIS",
         "pair": [
-          "matter-event association",
+          "autonomous state and origin genesis",
           "Record actuality"
         ],
-        "right_to_left": "formation/admission of permanent realized events does not supply physical law pairing one matter interrogation with one matched event"
+        "right_closes_left": false,
+        "right_to_left_reason": "framework-owned occurrence, permanence, readability and admission does not construct autonomous preparation of the A2 state, echo reference, root rotor and binder role",
+        "right_wall_type": "ACTUALITY"
       },
       {
         "collapsed": false,
-        "left_to_right": "physical law pairing one matter interrogation with one matched event does not supply empirical equivalence and continuum unit map",
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "autonomous preparation of the A2 state, echo reference, root rotor and binder role does not construct bounded local enforcement of the global N<=3 compiler promise",
+        "left_wall_type": "GENESIS",
         "pair": [
-          "matter-event association",
-          "universal calibration"
+          "autonomous state and origin genesis",
+          "local number-domain enforcement"
         ],
-        "right_to_left": "empirical equivalence and continuum unit map does not supply physical law pairing one matter interrogation with one matched event"
+        "right_closes_left": false,
+        "right_to_left_reason": "bounded local enforcement of the global N<=3 compiler promise does not construct autonomous preparation of the A2 state, echo reference, root rotor and binder role",
+        "right_wall_type": "DOMAIN_LOCALITY"
       },
       {
         "collapsed": false,
-        "left_to_right": "physical law pairing one matter interrogation with one matched event does not supply bounded local enforcement of the compiler domain",
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "autonomous preparation of the A2 state, echo reference, root rotor and binder role does not construct empirical cross-device equivalence and continuum unit map",
+        "left_wall_type": "GENESIS",
         "pair": [
-          "matter-event association",
-          "global N<=3 locality"
+          "autonomous state and origin genesis",
+          "universal proper-time calibration"
         ],
-        "right_to_left": "bounded local enforcement of the compiler domain does not supply physical law pairing one matter interrogation with one matched event"
+        "right_closes_left": false,
+        "right_to_left_reason": "empirical cross-device equivalence and continuum unit map does not construct autonomous preparation of the A2 state, echo reference, root rotor and binder role",
+        "right_wall_type": "CALIBRATION"
       },
       {
         "collapsed": false,
-        "left_to_right": "autonomous preparation of root rotor and occupied binder does not supply formation/admission of permanent realized events",
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "a physical law associating one matter interrogation with endpoint/predecessor interval data does not construct framework-owned occurrence, permanence, readability and admission",
+        "left_wall_type": "ASSOCIATION",
         "pair": [
-          "origin genesis",
+          "matter-to-causal-interval association",
           "Record actuality"
         ],
-        "right_to_left": "formation/admission of permanent realized events does not supply autonomous preparation of root rotor and occupied binder"
+        "right_closes_left": false,
+        "right_to_left_reason": "framework-owned occurrence, permanence, readability and admission does not construct a physical law associating one matter interrogation with endpoint/predecessor interval data",
+        "right_wall_type": "ACTUALITY"
       },
       {
         "collapsed": false,
-        "left_to_right": "autonomous preparation of root rotor and occupied binder does not supply empirical equivalence and continuum unit map",
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "a physical law associating one matter interrogation with endpoint/predecessor interval data does not construct bounded local enforcement of the global N<=3 compiler promise",
+        "left_wall_type": "ASSOCIATION",
         "pair": [
-          "origin genesis",
-          "universal calibration"
+          "matter-to-causal-interval association",
+          "local number-domain enforcement"
         ],
-        "right_to_left": "empirical equivalence and continuum unit map does not supply autonomous preparation of root rotor and occupied binder"
+        "right_closes_left": false,
+        "right_to_left_reason": "bounded local enforcement of the global N<=3 compiler promise does not construct a physical law associating one matter interrogation with endpoint/predecessor interval data",
+        "right_wall_type": "DOMAIN_LOCALITY"
       },
       {
         "collapsed": false,
-        "left_to_right": "autonomous preparation of root rotor and occupied binder does not supply bounded local enforcement of the compiler domain",
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "a physical law associating one matter interrogation with endpoint/predecessor interval data does not construct empirical cross-device equivalence and continuum unit map",
+        "left_wall_type": "ASSOCIATION",
         "pair": [
-          "origin genesis",
-          "global N<=3 locality"
+          "matter-to-causal-interval association",
+          "universal proper-time calibration"
         ],
-        "right_to_left": "bounded local enforcement of the compiler domain does not supply autonomous preparation of root rotor and occupied binder"
+        "right_closes_left": false,
+        "right_to_left_reason": "empirical cross-device equivalence and continuum unit map does not construct a physical law associating one matter interrogation with endpoint/predecessor interval data",
+        "right_wall_type": "CALIBRATION"
       },
       {
         "collapsed": false,
-        "left_to_right": "formation/admission of permanent realized events does not supply empirical equivalence and continuum unit map",
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "framework-owned occurrence, permanence, readability and admission does not construct bounded local enforcement of the global N<=3 compiler promise",
+        "left_wall_type": "ACTUALITY",
         "pair": [
           "Record actuality",
-          "universal calibration"
+          "local number-domain enforcement"
         ],
-        "right_to_left": "empirical equivalence and continuum unit map does not supply formation/admission of permanent realized events"
+        "right_closes_left": false,
+        "right_to_left_reason": "bounded local enforcement of the global N<=3 compiler promise does not construct framework-owned occurrence, permanence, readability and admission",
+        "right_wall_type": "DOMAIN_LOCALITY"
       },
       {
         "collapsed": false,
-        "left_to_right": "formation/admission of permanent realized events does not supply bounded local enforcement of the compiler domain",
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "framework-owned occurrence, permanence, readability and admission does not construct empirical cross-device equivalence and continuum unit map",
+        "left_wall_type": "ACTUALITY",
         "pair": [
           "Record actuality",
-          "global N<=3 locality"
+          "universal proper-time calibration"
         ],
-        "right_to_left": "bounded local enforcement of the compiler domain does not supply formation/admission of permanent realized events"
+        "right_closes_left": false,
+        "right_to_left_reason": "empirical cross-device equivalence and continuum unit map does not construct framework-owned occurrence, permanence, readability and admission",
+        "right_wall_type": "CALIBRATION"
       },
       {
         "collapsed": false,
-        "left_to_right": "empirical equivalence and continuum unit map does not supply bounded local enforcement of the compiler domain",
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "bounded local enforcement of the global N<=3 compiler promise does not construct empirical cross-device equivalence and continuum unit map",
+        "left_wall_type": "DOMAIN_LOCALITY",
         "pair": [
-          "universal calibration",
-          "global N<=3 locality"
+          "local number-domain enforcement",
+          "universal proper-time calibration"
         ],
-        "right_to_left": "bounded local enforcement of the compiler domain does not supply empirical equivalence and continuum unit map"
+        "right_closes_left": false,
+        "right_to_left_reason": "empirical cross-device equivalence and continuum unit map does not construct bounded local enforcement of the global N<=3 compiler promise",
+        "right_wall_type": "CALIBRATION"
       }
     ],
-    "N3_hidden_supplies": [
-      "beta=-0.3, g=0.37, L3/L6 tori, local A2 source and q=1..4/1..6 interrogation words",
-      "fixed detector coefficients, pulse/readout arms and noiseless bounded completions",
-      "free reference law, selector repetition field and its coherent genesis",
-      "root rotor K0, occupied binder, event opportunities, blank cells and Cycle570 matcher/profile/standard"
+    "N3_explicit_supplies": [
+      "beta=-0.3, contact=0.37, finite L3/L6 periodic tori and boundary rules",
+      "local A2 source, one-update transported covector, equal aggregate coefficients and q interrogation lists",
+      "contact-off reference branch, logical selector roles and noiseless coherent overlap evaluation",
+      "root one-hot rotor, binder/predecessor roles, blank bits and Cycle570 Boolean gate interpreter",
+      "Cycle451 matcher positions and 3:4/4:4/5:4 ratio labels"
     ],
-    "N4_exact_residual_matching": {
-      "Cycle586_wall": "two-dimer independence/N4 remains open and is not claimed by the direct-sum reference echo",
-      "Cycle599_wall": "q-odd onsite return only; closed at finite scope by a fixed transported channel, not by refitting q",
-      "Route_A": {
-        "maximum_inverse": 2.269842029081622e-15,
-        "surface": "physical_transported_observable_ramsey_echo_event_rotor_tournament_cycle602_2026_07_22.py:187"
+    "N3_hidden_conditions_promoted": 0,
+    "N3_phrase_hit_classifications": [
+      {
+        "classification": "NON_LOAD_BEARING_FILENAME",
+        "hit": "registered",
+        "reason": "the module key supplies no physics premise",
+        "surface": "runtime closure filename physical_registered_cylinder_future_equivalence_route_cycle342_2026_07_18"
       },
-      "Route_B": {
-        "maximum_inverse": 2.5029914798455842e-15,
-        "surface": "physical_transported_observable_ramsey_echo_event_rotor_tournament_cycle602_2026_07_22.py:322"
-      },
-      "Route_C": {
-        "deletion_controls": 2,
-        "surface": "physical_transported_observable_ramsey_echo_event_rotor_tournament_cycle602_2026_07_22.py:496"
+      {
+        "classification": "NON_LOAD_BEARING_META_SCAN",
+        "hit": "registered",
+        "reason": "these self-referential occurrences document the audit target rather than supply a proof step",
+        "surface": "Cycle602 N3 classification row and note N3 explanation"
       }
-    },
-    "N5_resolution_rhetoric": "exact finite L3 q1..4 and L6 q1..6 words; finite event prefixes through 21; no arbitrary-q, infinite-volume, noise, proper-time, lapse, or universal-clock claim",
-    "N6_new_axiom_gate_invoked": false,
+    ],
+    "N4_dropped_nonmatches": [
+      {
+        "current_residual": "Cycle602 executes only the Boolean run_schedule helper and a host-side ratio comparison",
+        "disposition": "dropped as physical, event, clock, or proper-time evidence",
+        "exact_match": false,
+        "prior_residual": "Cycle570's claimed physical endpoint/accumulator semantics",
+        "scope_match": false,
+        "witness": "docs/work_history/repo/review_feedback/PHYSICAL_JOINT_CLOCK_ACCUMULATOR_CONTRACTION_BRIDGE_CYCLE570_NOTE_2026-07-22.md:23-60"
+      }
+    ],
+    "N4_exact_residual_matches": [
+      {
+        "current_numeric_residual": 2.269842029081622e-15,
+        "current_residual": "fixed transported A2 covector supplies nonzero finite q=1..4/q=1..6 words while physical interface fields stay null",
+        "current_witness": "physical_transported_observable_ramsey_echo_event_rotor_tournament_cycle602_2026_07_22.py:450",
+        "exact_match": true,
+        "prior_residual": "fixed coarse A2 recurrence has odd-checkpoint zero visibility and lacks a primitive Ramsey interface",
+        "scope_match": true,
+        "witness": "docs/work_history/repo/review_feedback/PHYSICAL_INTRINSIC_RAMSEY_CLOCK_STRICT_M2_TIME_BRIDGE_TOURNAMENT_CYCLE599_NOTE_2026-07-22.md:147-172"
+      },
+      {
+        "current_numeric_residual": 2.5029914798455842e-15,
+        "current_residual": "Cycle602 calls the coarse array update only and preserves null physical fields",
+        "current_witness": "physical_transported_observable_ramsey_echo_event_rotor_tournament_cycle602_2026_07_22.py:594",
+        "exact_match": true,
+        "prior_residual": "conditional logical macro identity is not a physical M2 update and lacks physical E/G, leakage and primitive composition",
+        "scope_match": true,
+        "witness": "docs/work_history/repo/review_feedback/PHYSICAL_FULL_TORUS_DIMER_M2_COMPILER_TOURNAMENT_CYCLE590_NOTE_2026-07-22.md:126-141"
+      },
+      {
+        "current_numeric_residual": 0.0,
+        "current_residual": "Cycle602 executes that interpreter on a new one-hot rotor schedule and checks exact inverse/deletions",
+        "current_witness": "physical_transported_observable_ramsey_echo_event_rotor_tournament_cycle602_2026_07_22.py:779",
+        "exact_match": true,
+        "prior_residual": "reversible finite Boolean gate interpreter with deletion support",
+        "scope_match": true,
+        "witness": "scripts/physical_joint_clock_accumulator_contraction_bridge_cycle570_2026_07_22.py:357-375"
+      }
+    ],
+    "N5_rhetoric_resolution_ledger": [
+      {
+        "lattice_wide": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_block": "TESTED: q labels index finite coarse matrix products only",
+        "per_element": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_mode": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_site": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "phrase": "the executed update ordinal is not promoted to time"
+      },
+      {
+        "lattice_wide": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_block": "TESTED: no generator-to-energy or empirical unit map is executed",
+        "per_element": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_mode": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_site": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "phrase": "the reported principal phase is not promoted to energy"
+      },
+      {
+        "lattice_wide": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_block": "TESTED: physical E/G, placement, leakage and primitive-product fields are null",
+        "per_element": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_mode": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_site": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "phrase": "the 53-role Cycle590 blueprint is not promoted to strict physical M2"
+      },
+      {
+        "lattice_wide": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_block": "TESTED: no occurrence, permanence, readability or admission law is executed",
+        "per_element": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_mode": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_site": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "phrase": "the one-hot rotor bit word is not promoted to a Record"
+      },
+      {
+        "lattice_wide": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_block": "TESTED: overlap magnitude is a coherent diagnostic without selection or frequency calibration",
+        "per_element": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_mode": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_site": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "phrase": "the contact echo visibility is not promoted to probability"
+      }
+    ],
+    "N6_control_plane_edit": false,
+    "N6_convention_only_closure_found": false,
+    "N6_new_axiom_required": false,
     "N6_partial_closure_paths": [
-      "synthesize simultaneous A2/transported readout via local controlled inverse or a bounded Naimark dilation",
-      "generate and locally stabilize the echo selector field",
-      "compile complete N4 and compare two actual dimers",
-      "derive a matter-interrogation to matched-event association and Record admission",
-      "replace supplied rotor/binder origin by autonomous genesis and renewal"
+      {
+        "candidate_path": "scripts/physical_transported_observable_ramsey_echo_event_rotor_tournament_cycle602_2026_07_22.py",
+        "status": "EXECUTED_NARROW_COARSE_ALGEBRAIC_POSITIVE",
+        "what_it_closes": "finite L3/L6 transported-observable, echo and reversible-rotor diagnostics only"
+      },
+      {
+        "candidate_path": "scripts/physical_full_torus_dimer_M2_compiler_tournament_cycle590_2026_07_22.py",
+        "status": "EXACT_PINNED_CONDITIONAL_PARENT",
+        "what_it_closes": "coarse/logical parent identities, not Cycle602 physical detector or echo composition"
+      },
+      {
+        "candidate_path": "scripts/physical_transported_A2_detector_primitive_compiler_cycle_next.py",
+        "status": "NOT_CREATED_OPEN_CANDIDATE",
+        "what_it_closes": "physical pulse/readout E/G, placement, leakage, primitive product and all24 layout"
+      },
+      {
+        "candidate_path": "scripts/physical_autonomous_echo_reference_compiler_cycle_next.py",
+        "status": "NOT_CREATED_OPEN_CANDIDATE",
+        "what_it_closes": "autonomous constrained branch/reference genesis and controlled-contact primitive product"
+      },
+      {
+        "candidate_path": "scripts/physical_matter_clock_causal_interval_composition_cycle_next.py",
+        "status": "NOT_CREATED_OPEN_CANDIDATE",
+        "what_it_closes": "matter-to-endpoint association, deletion-sensitive interval and Record admission without Cycle610-612 back-credit"
+      }
     ],
-    "N7_hostile_steelman": "A hostile constructive reviewer can use the exact transported-bra factorization through G_physical inverse, compile its two simultaneous outputs with a bounded local Naimark dilation, and couple that device to the positive event rotor; this concrete route blocks any present physical-clock no-go.",
-    "N8_cross_cycle_echo": "Cycle599 exposed an onsite parity/return zero, Cycle602 closes that finite detector wall without selecting q; Cycles451/498/504/570 keep endpoint and rollover semantics physical while Cycles170/243 forbid schedule-to-time promotion.",
-    "axiom_pressure": false,
-    "minimum_content_claim_shipped": false,
-    "negative_claim_shipped": false,
+    "N7_steelman": {
+      "actionable_terminal": "construct and execute held L6 physical E/G/inverse/leakage/placement and primitive-product certificates for state preparation, transported readout and echo control, then demonstrate an autonomous association with a reversible deletion-sensitive causal interval",
+      "mechanism": "compile the fixed seven-cell transported A2 covector as a bounded physical-M2 Naimark/readout block, compose it with a literal primitive realization of the conditional Cycle590 macro, autonomously prepare the reference branch, then attach its nonzero word to a deletion-sensitive endpoint/predecessor interval",
+      "openness": "this concrete route is unattempted and defeats any broad no-go, minimum-content, shared-obstruction or axiom-pressure claim",
+      "supporting_authority": [
+        "docs/work_history/repo/review_feedback/PHYSICAL_INTRINSIC_RAMSEY_CLOCK_STRICT_M2_TIME_BRIDGE_TOURNAMENT_CYCLE599_NOTE_2026-07-22.md:147-172",
+        "docs/work_history/repo/review_feedback/PHYSICAL_FULL_TORUS_DIMER_M2_COMPILER_TOURNAMENT_CYCLE590_NOTE_2026-07-22.md:126-141",
+        "physical_transported_observable_ramsey_echo_event_rotor_tournament_cycle602_2026_07_22.py:450"
+      ]
+    },
+    "N8_cross_cycle_echo": [
+      {
+        "applicability_here": "compile literal detector/echo E/G, placement and leakage before physical promotion",
+        "citation": "docs/work_history/repo/review_feedback/PHYSICAL_FULL_TORUS_DIMER_M2_COMPILER_TOURNAMENT_CYCLE590_NOTE_2026-07-22.md:126-141",
+        "prior_wall": "Cycle590 conditional logical macro is not a physical M2 primitive product",
+        "retired_status": "NOT_RETIRED",
+        "retirement_mechanism": "none in Cycle602"
+      },
+      {
+        "applicability_here": "does not retire physical detector or clock obligations",
+        "citation": "docs/work_history/repo/review_feedback/PHYSICAL_INTRINSIC_RAMSEY_CLOCK_STRICT_M2_TIME_BRIDGE_TOURNAMENT_CYCLE599_NOTE_2026-07-22.md:147-172",
+        "prior_wall": "Cycle599 fixed onsite A2 readout has odd-checkpoint zero visibility",
+        "retired_status": "RETIRED_AT_FINITE_COARSE_OBSERVABLE_SCOPE",
+        "retirement_mechanism": "one-update transported covector with fixed equal coefficients"
+      },
+      {
+        "applicability_here": "3:4/4:4/5:4 remain host-side comparisons",
+        "citation": "docs/work_history/repo/review_feedback/PHYSICAL_SOURCE_CONDITIONED_RELATIONAL_DUAL_CLOCK_CYCLE451_NOTE_2026-07-19.md",
+        "prior_wall": "Cycle451 ratios are matched candidate words rather than a universal clock law",
+        "retired_status": "OPEN",
+        "retirement_mechanism": "none in Cycle602"
+      },
+      {
+        "applicability_here": "prefix and rotor counts remain non-time indices",
+        "citation": "docs/work_history/repo/review_feedback/PHYSICAL_JOINT_CLOCK_ACCUMULATOR_CONTRACTION_BRIDGE_CYCLE570_NOTE_2026-07-22.md:18-20,55-60",
+        "prior_wall": "Cycle570 reversible prefix schedule is not proper time",
+        "retired_status": "OPEN_AT_CYCLE602_INTERFACE",
+        "retirement_mechanism": "Boolean rotor inverse only"
+      },
+      {
+        "applicability_here": "cannot retroactively physicalize the C590 53-role blueprint or Cycle602 detector",
+        "citation": "docs/work_history/repo/review_feedback/PHYSICAL_PROPER_CUBIC_SUPERCELL_STREAM_COMPOSITION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md",
+        "prior_wall": "Cycle610 later proper-cubic physical compiler work",
+        "retired_status": "COMPARISON_ONLY_NO_BACK_CREDIT",
+        "retirement_mechanism": "not imported, pinned or executed by Cycle602"
+      },
+      {
+        "applicability_here": "Cycle602 derives no source-to-echo response, lapse or gravity law",
+        "citation": "docs/work_history/repo/review_feedback/PHYSICAL_MATTER_VARIATION_CURRENT_STRESS_COMPENSATOR_SOURCE_TOURNAMENT_CYCLE611_NOTE_2026-07-22.md",
+        "prior_wall": "Cycle611 later matter/source response work",
+        "retired_status": "COMPARISON_ONLY_NO_BACK_CREDIT",
+        "retirement_mechanism": "not imported, pinned or executed by Cycle602"
+      },
+      {
+        "applicability_here": "neither response is implemented and no proper-time claim follows",
+        "citation": "docs/work_history/repo/review_feedback/PHYSICAL_MATTER_CAUSED_CAUSAL_INTERVAL_PROPER_TIME_BRIDGE_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md:46-82",
+        "prior_wall": "Cycle612 conditional causal-interval comparison",
+        "retired_status": "COMPARISON_ONLY_NO_BACK_CREDIT",
+        "retirement_mechanism": "3:4 delay is rate-compatible association; 5:4 advance requires count/event edit and is a different mechanism"
+      }
+    ],
+    "Status": "FAIL",
+    "artifact_status": "PASS_NARROWED_COARSE_ALGEBRAIC_POSITIVE_ONLY",
+    "axiom_pressure_claim": false,
+    "broad_no_go_claim": false,
+    "minimum_content_claim": false,
     "pass": true,
-    "shared_obstruction": false
+    "shared_obstruction_claim": false
   },
   "note_contract": {
     "missing": [],
     "pass": true,
-    "required": 30
+    "required": 34
   },
-  "note_sha256": "748854d2369e0fc2257dfb96f9f4fbb139a6ad2a6fb46d5302d9c2a250ef8fba",
+  "note_sha256": "c5971546e74165b98349791e0bcbbc910f40441855aa1181a2f14231cc674e37",
   "pass": true,
+  "physical_composition_boundary": {
+    "route_A_physical_EG": null,
+    "route_A_physical_leakage": null,
+    "route_A_physical_placement": null,
+    "route_A_physical_primitive_product": null,
+    "route_B_physical_EG": null,
+    "route_B_physical_leakage": null,
+    "route_B_physical_placement": null,
+    "route_B_physical_primitive_product": null,
+    "route_C_physical_EG": null,
+    "route_C_physical_leakage": null,
+    "route_C_physical_placement": null,
+    "route_C_physical_primitive_product": null
+  },
+  "receipt_scope": "Cycle602 narrowed finite coarse-algebraic transported A2, echo, and reversible one-hot rotor; no physical-M2 composition",
   "route_A_transported_observable": {
     "Cycle230_contact_factorization_residual": 0.0,
+    "Cycle590_53_role_blueprint_promoted_to_strict_physical": false,
+    "Cycle590_conditional_roles_per_coarse_cell": 53,
     "bounded_readout_coarse_radius": 1,
-    "bounded_readout_support_upper_bound_M2": 373,
+    "detector_physical_M2_count": null,
+    "executed_layer": "fixed-coarse logical N=2 antisymmetric arrays on L3/L6",
     "global_N_le_3_cutoff_locally_enforced": false,
     "held_axis_seam_translation_residual": 0.0,
-    "held_compiler_live_M2": 11448,
     "held_contact_deletion_state_signal": 0.51021631599724,
     "held_contact_deletion_word_signal": 0.2966695642198343,
-    "held_live_M2_upper_bound": 11450,
+    "interpretation": "coarse-algebraic transported A2 observable; not a physical detector or Ramsey device",
     "maximum_all24_update_covariance_residual": 2.397692742256886e-16,
     "maximum_all24_word_covariance_residual": 5.551115123125783e-17,
     "maximum_antisymmetry_residual": 5.082053304865187e-16,
@@ -338,7 +662,12 @@
     "one_particle_mass_residual": 1.1102230246251565e-16,
     "paired_frames": 576,
     "pass": true,
+    "physical_EG": null,
+    "physical_leakage": null,
+    "physical_placement": null,
+    "physical_primitive_product": null,
     "proper_cubic_frames": 24,
+    "route_disposition": "positive fixed finite coarse-algebraic observable family only",
     "rows": [
       {
         "channel_orthogonality_residual": 0.0,
@@ -616,14 +945,18 @@
       }
     ],
     "runtime_parity_or_q_selector": false,
-    "simultaneous_readout_arm_M2": 2,
+    "strict_physical_M2_count": null,
     "synthesis_attempt": {
-      "both_channels_emitted_under_one_rule": true,
+      "both_channels_physically_emitted_under_one_rule": false,
       "onsite_A2_pulse_readout_primitive_layout_synthesized": false,
+      "physical_EG": null,
+      "physical_leakage": null,
+      "physical_placement": null,
+      "physical_primitive_product": null,
       "q_dependent_selector": false,
       "simultaneous_nondemolition_controlled_inverse_synthesized": false,
-      "strict_physical_claim_scope": "free-plus-contact G and inverse only",
-      "transported_channel_factorization": "apply accepted G_physical inverse, then the onsite A2 read interface"
+      "single_fixed_aggregate_evaluated": true,
+      "transported_channel_factorization": "apply the coarse inverse update algebraically, then contract with the onsite A2 bra"
     }
   },
   "route_B_contact_reference_echo": {
@@ -631,21 +964,32 @@
       "N4_or_four_CAR_domain_invoked": false,
       "controlled_contact_code_space_operator": "local selector=1 applies contact, selector=0 applies identity",
       "controlled_contact_primitive_gate_and_layout_synthesized": false,
-      "held_selector_field_M2": 216,
+      "held_selector_role_bits": 216,
       "local_selector_checks_enforced_by_update": false,
       "matter_sector": "one N=2 dimer in a direct-sum path label; not two simultaneous dimers",
       "nearest_neighbor_selector_equality_checks": 648,
-      "physical_status": "bounded-overhead code-space echo interface over accepted strict dynamics, not a completed physical clock",
+      "physical_EG": null,
+      "physical_leakage": null,
+      "physical_placement": null,
+      "physical_primitive_product": null,
+      "physical_status": "null; coarse algebraic echo only",
       "reference_channel": "declared g=0 free channel",
       "reference_independent_genesis": false,
-      "selector_field_M2_per_cell": 1
+      "selector_role_bits_per_coarse_cell": 1
     },
+    "executed_layer": "coarse algebraic N=2 contact-on/contact-off overlap on L3/L6",
     "held_contact_deletion_echo_signal": 0.3723568149953336,
+    "interpretation": "Loschmidt-style algebraic echo; not a physical pulse, branch device, detector, or clock",
     "maximum_inverse_residual": 2.5029914798455842e-15,
     "minimum_frozen_echo_visibility": 0.9371920339843274,
-    "paired_frames": 576,
     "pass": true,
-    "proper_cubic_frames": 24,
+    "physical_EG": null,
+    "physical_leakage": null,
+    "physical_placement": null,
+    "physical_primitive_product": null,
+    "proper_cubic_covariance_executed_here": false,
+    "proper_cubic_frames_checked_here": 0,
+    "route_disposition": "positive fixed finite coarse-algebraic echo only",
     "rows": [
       {
         "length": 3,
@@ -762,36 +1106,43 @@
     ],
     "runtime_q_selector": false
   },
-  "route_C_charged_event_rotor": {
+  "route_C_reversible_one_hot_rotor": {
     "Cycle451_matcher": {
       "3:4": "3/4",
       "4:4": "1",
       "5:4": "5/4"
     },
-    "Gauss_word_preserved": true,
-    "M2_per_event_cell": 9,
-    "bounded_routing_grammar": "inherited Cycle570 restored local routing within one cell and predecessor boundary",
-    "candidate_event_called_Record": false,
-    "deletion_controls_visible": 2,
-    "event_count_called_time": false,
-    "gauge_group_field_or_Gauss_generator_derived": false,
-    "global_charge_conservation_claimed": false,
-    "literal_gate_alphabet": [
+    "algebraic_bits_per_prefix_cell": 9,
+    "algebraic_gate_alphabet": [
       "CNOT",
       "TOFFOLI",
       "FREDKIN"
     ],
-    "local_Gauss_word": "binder occupation=1 and rotor Q1=1",
+    "bounded_algebraic_routing_grammar": "inherited Cycle570 reversible bit routing within a logical cell and predecessor boundary",
+    "candidate_event_called_Record": false,
+    "deletion_controls_visible": 2,
+    "event_count_called_time": false,
+    "executed_layer": "reversible Boolean one-hot rotor and binder-role schedule",
+    "gauge_group_field_or_Gauss_generator_derived": false,
+    "global_charge_conservation_claimed": false,
+    "interpretation": "algebraic rotor sidecar; not a physical M2 placement, event, Record, or clock",
+    "local_code_preserved": true,
+    "local_one_hot_binder_code": "binder role bit=1 and rotor one-hot weight=1",
     "malformed_rejections": 3,
     "matter_q_to_event_count_map_derived": false,
-    "maximum_terminal_gate_support_M2": 3,
-    "paired_frames": 576,
+    "maximum_gate_arity_bits": 3,
     "pass": true,
     "phase_origin": "supplied root rotor K0 plus occupied binder",
     "phase_origin_genesis_derived": false,
-    "proper_cubic_frames": 24,
-    "root_M2": 6,
-    "rotor_and_binder_frame_action": "scalar internal block",
+    "physical_EG": null,
+    "physical_leakage": null,
+    "physical_placement": null,
+    "physical_primitive_product": null,
+    "proper_cubic_covariance_executed_here": false,
+    "proper_cubic_frames_checked_here": 0,
+    "root_algebraic_bits": 6,
+    "rotor_and_binder_frame_action_supplied": "scalar internal role assignment",
+    "route_disposition": "positive reversible finite-prefix algebraic rotor only",
     "rows": {
       "1": {
         "Cycle570_endpoint_totals": [
@@ -799,9 +1150,19 @@
           3
         ],
         "inverse_exact": true,
-        "local_Gauss_checks": true,
+        "local_code_checks": true,
         "rotor_event_count_not_time": 1,
         "split": "train"
+      },
+      "13": {
+        "Cycle570_endpoint_totals": [
+          52,
+          51
+        ],
+        "inverse_exact": true,
+        "local_code_checks": true,
+        "rotor_event_count_not_time": 13,
+        "split": "held"
       },
       "2": {
         "Cycle570_endpoint_totals": [
@@ -809,9 +1170,19 @@
           7
         ],
         "inverse_exact": true,
-        "local_Gauss_checks": true,
+        "local_code_checks": true,
         "rotor_event_count_not_time": 2,
         "split": "train"
+      },
+      "21": {
+        "Cycle570_endpoint_totals": [
+          84,
+          84
+        ],
+        "inverse_exact": true,
+        "local_code_checks": true,
+        "rotor_event_count_not_time": 21,
+        "split": "held"
       },
       "4": {
         "Cycle570_endpoint_totals": [
@@ -819,7 +1190,7 @@
           15
         ],
         "inverse_exact": true,
-        "local_Gauss_checks": true,
+        "local_code_checks": true,
         "rotor_event_count_not_time": 4,
         "split": "train"
       },
@@ -829,7 +1200,7 @@
           19
         ],
         "inverse_exact": true,
-        "local_Gauss_checks": true,
+        "local_code_checks": true,
         "rotor_event_count_not_time": 5,
         "split": "train"
       },
@@ -839,75 +1210,82 @@
           31
         ],
         "inverse_exact": true,
-        "local_Gauss_checks": true,
+        "local_code_checks": true,
         "rotor_event_count_not_time": 8,
-        "split": "held"
-      },
-      "13": {
-        "Cycle570_endpoint_totals": [
-          52,
-          51
-        ],
-        "inverse_exact": true,
-        "local_Gauss_checks": true,
-        "rotor_event_count_not_time": 13,
-        "split": "held"
-      },
-      "21": {
-        "Cycle570_endpoint_totals": [
-          84,
-          84
-        ],
-        "inverse_exact": true,
-        "local_Gauss_checks": true,
-        "rotor_event_count_not_time": 21,
         "split": "held"
       }
     }
   },
-  "runner_sha256": "a56a4521acaba5263549f0a83d79dce39ddcd71a37d5a4f2c83e260f49def6c5",
+  "runner_sha256": "4b751525cd5918abbcc2ca47b71dba4bd3b2e9d2fbfd74deed0f932a8d75a137",
   "shared_obstruction": false,
   "shore": {
-    "frozen_law_sha256": "e0efe1d1eb4dcb849d89dbfeb7ff3726e532a9cbe0e10096292118f5f0cb5eae",
-    "observed": {
-      "docs/work_history/repo/review_feedback/PHYSICAL_AUTONOMOUS_ECHO_WRAP_EPOCH_CONVEYOR_CYCLE504_NOTE_2026-07-20.md": "e3e2a903ab7c83beebdce7d2c01f3f77383cafc5e6159a99fc64cc94ba3ab2a3",
-      "docs/work_history/repo/review_feedback/PHYSICAL_CAUSAL_LIGHT_CLOCK_ENDPOINT_REFINEMENT_CYCLE498_NOTE_2026-07-20.md": "ac4e7d1e09df5f979375ef46beb2bfec452e5e85136c8e9e55234fa914073d01",
-      "docs/work_history/repo/review_feedback/PHYSICAL_FULL_TORUS_DIMER_M2_COMPILER_TOURNAMENT_CYCLE590_NOTE_2026-07-22.md": "3ee6ba9bd5a01a5cab88832788156597a1491d7c2d47f9378caca624a35a1936",
-      "docs/work_history/repo/review_feedback/PHYSICAL_INTRINSIC_DIMER_CAUSAL_CLOCK_BRIDGE_TOURNAMENT_CYCLE586_NOTE_2026-07-22.md": "398959cd7851e9d74d707945f1cc5deec0c8c0e0960924b85938f721d57d77b7",
-      "docs/work_history/repo/review_feedback/PHYSICAL_INTRINSIC_RAMSEY_CLOCK_STRICT_M2_TIME_BRIDGE_TOURNAMENT_CYCLE599_NOTE_2026-07-22.md": "fff966a1672a034e5f9d0345909a7d4137660e96560d1af57835b0ce3806ddc3",
-      "docs/work_history/repo/review_feedback/PHYSICAL_JOINT_CLOCK_ACCUMULATOR_CONTRACTION_BRIDGE_CYCLE570_NOTE_2026-07-22.md": "f78441d4ee0a391768f9a4e9e7e6807a925b453b283fe5a1056a35bb934cc40c",
-      "docs/work_history/repo/review_feedback/PHYSICAL_SOURCE_CONDITIONED_RELATIONAL_DUAL_CLOCK_CYCLE451_NOTE_2026-07-19.md": "81f28e682b6b45d1572164a7a72b00d252bc81c542a4de5d83ed602b311320ca",
-      "docs/work_history/repo/review_feedback/RECORD_DEFINED_CAUSAL_DEPTH_CLOCK_CYCLE170_NOTE_2026-07-16.md": "9b6c16aaaa9513f95afd304bbf24d5332988122942393e53493d0ec72d8cbf6d",
-      "docs/work_history/repo/review_feedback/REST_INERTIAL_LAPSE_SOURCE_TRIANGLE_CYCLE204_NOTE_2026-07-16.md": "091985c2c28559c1a29b31cd97626e599414ea0d3017991a713cb75a9fbf49bf",
-      "docs/work_history/repo/review_feedback/SPATIAL_COMPILER_DERIVED_CAUSAL_TIME_BRIDGE_CYCLE243_NOTE_2026-07-17.md": "7aea7cd8938a9b63cac07a15835546d1046527a55c86444a8b8308c212e872b9",
-      "outputs/physical_intrinsic_ramsey_clock_strict_M2_time_bridge_tournament_cycle599_receipt_2026_07_22.json": "5cff047e3b6fc28408ce56a1ec14eae3784ae182aa414ceeb76df7609de1fef4",
-      "scripts/physical_autonomous_echo_wrap_epoch_conveyor_cycle504_2026_07_20.py": "fe1e96fbed14befd235b7799deecbf471f4862130d5fb0a1f905d75246bc226e",
-      "scripts/physical_causal_light_clock_endpoint_refinement_cycle498_2026_07_20.py": "839276eaa67d8a97413ca395ebc571774b797dc7dfae942a70cdec383b40fb97",
-      "scripts/physical_full_torus_dimer_M2_compiler_tournament_cycle590_2026_07_22.py": "5fbf3bcecc54df9912f9b79d2e5c45d51f145279c1ed83f507bc24e9e1980029",
-      "scripts/physical_intrinsic_dimer_causal_clock_bridge_tournament_cycle586_2026_07_22.py": "927be865f3ce16e2109dca602ecad365a9b5f1f2ebda7f78c3a3395f9e867755",
-      "scripts/physical_intrinsic_ramsey_clock_strict_M2_time_bridge_tournament_cycle599_2026_07_22.py": "11c7c12fab90a8ad3ac79cf9352b9d6c248f1f3359b67d260c3714a04ad74540",
-      "scripts/physical_joint_clock_accumulator_contraction_bridge_cycle570_2026_07_22.py": "853abe5470efd15b154d6cb348d49795a6fa84e77a62f0b21a79105892b1d415",
-      "scripts/physical_source_conditioned_relational_dual_clock_cycle451_2026_07_19.py": "c89e3d47b42b05c0d723afb5e68548bbb15ee79401eaa72f3c8c715e897071a1",
-      "scripts/record_defined_causal_depth_clock_cycle170_2026_07_16.py": "1542635ef85c7c8eee6be7b08245de0c6e3d406555b81b5dc5450bcc4d0e3927",
-      "scripts/rest_inertial_lapse_source_triangle_cycle204_2026_07_16.py": "689e06e32b63bfa988394c3bddc6656973cd2d859dceec0242113148dcab3bd9",
-      "scripts/spatial_compiler_derived_causal_time_bridge_cycle243_2026_07_17.py": "1ff4826b2a3c4a5fe839e868b14dcbf36924b8351259505025399a3c0abecbda"
+    "Cycle590_status_used_here": "conditional coarse-algebraic 53-role blueprint only; not strict physical",
+    "causal_time_comparison": {
+      "Cycle610": "later proper-cubic compiler work; no retroactive physical-M2 status for Cycle602",
+      "Cycle611": "later matter/source response work; no Cycle602 source-response law",
+      "Cycle612_3_to_4_delay": "rate-compatible association only; not implemented here",
+      "Cycle612_5_to_4_advance": "requires a count/event edit and is a different mechanism; not implemented here",
+      "back_credit_to_Cycle602": false,
+      "executed_by_Cycle602": false,
+      "proper_time_or_lapse_implemented": false,
+      "runtime_imported_or_pinned": false,
+      "source": "PR #5557 Cycles610-612 comparison surface only"
     },
-    "time_firewall": {
-      "Cycle170_actual_Record_dependencies": true,
-      "Cycle204_clock_map_load_bearing": true,
-      "Cycle243_update_not_time": true,
-      "Cycle586_not_independent_clock": true
-    }
+    "exact_pinned_surfaces": 13,
+    "expected_runtime_dependency_manifest_sha256": "b5c68885d243018aec66fa7e0a9bc367f18941c3965dca35959f465992681227",
+    "frozen_law_sha256": "b46bf0c925c4ea640af6c4a60768830e90e27deb67130f3be3ecfa01aad96a0b",
+    "observed": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_FULL_TORUS_DIMER_M2_COMPILER_TOURNAMENT_CYCLE590_NOTE_2026-07-22.md": "f0f3ed6d41132625b8907cbcda8f105b7ec975e4b952562b45fe5b7d8e1b3a0e",
+      "docs/work_history/repo/review_feedback/PHYSICAL_INTRINSIC_RAMSEY_CLOCK_STRICT_M2_TIME_BRIDGE_TOURNAMENT_CYCLE599_NOTE_2026-07-22.md": "d4c783fd5ab2134f8ece136af8c91ce6827000f9c63a3c0c057af16040f1fc6d",
+      "docs/work_history/repo/review_feedback/PHYSICAL_JOINT_CLOCK_ACCUMULATOR_CONTRACTION_BRIDGE_CYCLE570_NOTE_2026-07-22.md": "e88ee3daee2e07f215142d29cee7e6e5d3564bf5f92764aca49e89fe8f065438",
+      "docs/work_history/repo/review_feedback/PHYSICAL_SOURCE_CONDITIONED_RELATIONAL_DUAL_CLOCK_CYCLE451_NOTE_2026-07-19.md": "81f28e682b6b45d1572164a7a72b00d252bc81c542a4de5d83ed602b311320ca",
+      "outputs/physical_full_torus_dimer_M2_compiler_tournament_cycle590_cold_2026_07_22.txt": "cef70862eff7d6f10d562a67e2e8fcab503b998de5e0dea63300f0883efe398f",
+      "outputs/physical_full_torus_dimer_M2_compiler_tournament_cycle590_receipt_2026_07_22.json": "3ae94267d43a668a178ef02ee37ab12608f302419a25b0a37deffd27e51be647",
+      "outputs/physical_intrinsic_ramsey_clock_strict_M2_time_bridge_tournament_cycle599_cold_2026_07_22.txt": "c25c292c1ac5ba81f0139d6795990872312f371b997b076135345c7235e44803",
+      "outputs/physical_intrinsic_ramsey_clock_strict_M2_time_bridge_tournament_cycle599_receipt_2026_07_22.json": "95fe87ff5bb56151a2cc5c979fa0720a7aa4ecb33ab6da75c2e8b3f83ac495f0",
+      "outputs/physical_joint_clock_accumulator_contraction_bridge_cycle570_receipt_2026_07_22.json": "f9295faa4230427623ac350625a42fb17949fd86f523b6cf81aa247c14dd796c",
+      "scripts/physical_full_torus_dimer_M2_compiler_tournament_cycle590_2026_07_22.py": "43e5b749702fba9551fab43a242f832b824fdbff54817b5206097f02ad146e55",
+      "scripts/physical_intrinsic_ramsey_clock_strict_M2_time_bridge_tournament_cycle599_2026_07_22.py": "7077c58b7c41f59606c8a5ccc0135017d937a0dd24184c083fa2df5b4b435840",
+      "scripts/physical_joint_clock_accumulator_contraction_bridge_cycle570_2026_07_22.py": "37e9d0f336d773bd4a1957a6531f80dc35b9673a4ef0f99137e7fb33558bf849",
+      "scripts/physical_source_conditioned_relational_dual_clock_cycle451_2026_07_19.py": "c89e3d47b42b05c0d723afb5e68548bbb15ee79401eaa72f3c8c715e897071a1"
+    },
+    "receipt_checks": {
+      "Cycle570": {
+        "authority_audit": true,
+        "note_bound": true,
+        "pass": true,
+        "runner_bound": true
+      },
+      "Cycle590": {
+        "authority_audit": true,
+        "note_bound": true,
+        "pass": true,
+        "runner_bound": true
+      },
+      "Cycle599": {
+        "author_not_accepted": true,
+        "authority_audit": true,
+        "cold_bound": true,
+        "narrow_no_go_boundary": true,
+        "note_bound": true,
+        "pass": true,
+        "runner_bound": true
+      }
+    },
+    "runtime_dependency_count": 233,
+    "runtime_dependency_hash_mismatches": [],
+    "runtime_dependency_manifest_sha256": "b5c68885d243018aec66fa7e0a9bc367f18941c3965dca35959f465992681227"
   },
   "six_wall_ledger": {
-    "C_int": "actual strict-physical free-plus-contact dynamics drive Route A and are discriminated against g=0 in Route B",
-    "C_local": "Route A has radius-one bounded support and Route C a literal support-three gate word; simultaneous A2 readout and controlled-contact physical layouts remain open",
-    "C_num": "nonzero finite phase words at every frozen q and exact event-rotor rollover; no empirical unit or arbitrary-q theorem",
-    "C_ref": "fixed transported A2 channel and declared contact-off echo reference remove the finite onsite-return blind spots; independent genesis remains open",
+    "C_int": "coarse algebraic free-plus-contact arrays drive Route A and are discriminated against g=0 in Route B; no physical interaction primitive product is composed",
+    "C_local": "coarse detector support has radius one and Boolean rotor gates have arity at most three; every Cycle602 physical E/G, placement, leakage, and primitive-product field is null",
+    "C_num": "nonzero finite L3/L6 phase words and exact finite-prefix rotor rollover; no empirical unit, arbitrary-q theorem, probability law, or time law",
+    "C_ref": "fixed transported A2 covector and declared contact-off echo reference remove finite coarse return blind spots; independent physical genesis remains open",
     "C_source": "no source-conditioned Ramsey response, response sign, lapse, redshift, or gravity law is derived",
-    "C_wrap": "local Q1 rotor carries supplied origin and exact wrap receipts; matter-phase to event association and autonomous origin remain open"
+    "C_wrap": "algebraic one-hot rotor carries a supplied origin and exact finite rollover receipts; physical origin genesis and matter-interval association remain open"
   },
   "status": "PASS",
   "tests_failed": 0,
-  "tests_passed": 8
+  "tests_passed": 9,
+  "tests_total": 9
 }

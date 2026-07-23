@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
-"""Cycle610: explicit proper-cubic M2 supercell for the Cycle606 stream.
+"""Cycle610: conditional proper-cubic coarse-grid M2 placement for Cycle606.
 
-The construction uses an intrinsic 24-valued cubic role orientation.  One
-role-matching rule recognizes all orientations; no host frame, origin, parity,
-or volume query occurs.  Every fine site in the 129^3 supercell is counted.
-Schedules are update factorizations, not physical time.  Authority none;
-audit unset.
+The construction supplies a 129-period coarse partition/origin and a
+24-valued cubic role orientation.  Within that supplied coloring, bounded
+support-one/two nearest-neighbor coordinate words implement the logical
+register fixtures.  The tagged role motif is not invariant under a one-fine-
+site translation, so this is not a one-site translation-covariant physical M2
+law.  Schedules are update factorizations, not physical time.  Authority none;
+audit unset; author artifact status accepted false; breakthrough false.
 """
 from __future__ import annotations
 
@@ -16,7 +18,6 @@ import json
 import math
 from pathlib import Path
 import resource
-import subprocess
 import sys
 import time
 
@@ -56,13 +57,29 @@ PINS = {
     "docs/work_history/repo/review_feedback/SPATIAL_CAR_CONTACT_SEAM_FORM_FACTOR_CYCLE230_NOTE_2026-07-17.md":
         "a7a3a0a021dbd691c6c2ddb9163679b445c5110b8150f63395271037963c7132",
     "scripts/physical_global_carrier_stream_qca_approximation_tournament_cycle606_2026_07_22.py":
-        "5dea1105139de76975a59efdae86d623a3b5715966b3d02631f65498baa3020d",
+        "637a7ac6b5a56ef539bef3b94c6624a4f5f52372ef31e2d1e3bdc4328ae8767f",
     "docs/work_history/repo/review_feedback/PHYSICAL_GLOBAL_CARRIER_STREAM_QCA_APPROXIMATION_TOURNAMENT_CYCLE606_NOTE_2026-07-22.md":
-        "5d24b17813e36779202ef6eebd006001367ff6fab42cfee8fc0e8156cd152404",
+        "01ef76e8e0c3d29645e1f9247fa479d3fa1d3dbabab09d884da102208cf31d78",
     "outputs/physical_global_carrier_stream_qca_approximation_tournament_cycle606_receipt_2026_07_22.json":
-        "83f912b3e5d5b527c3d290291314cf9a634fd1a673bb7897bf3a721249450c2b",
+        "2b225152dcdae055c4d751c57af913b6184b9977e52ebc3dba509b4fc0b3da3c",
     "outputs/physical_global_carrier_stream_qca_approximation_tournament_cycle606_cold_2026_07_22.txt":
-        "4c2e11c80dca205419aa50a96b7277478a1af0008c897a9e116fb81c2a3212f4",
+        "007d7fdf3d67d55afbacdd905bc44d67b685f9926ba395e393ed01eec005e5dd",
+    "scripts/physical_carrier_preparation_elementary_synthesis_tournament_cycle603_2026_07_22.py":
+        "e64032e369e08e03ad2a742a2bde6914d8adc6ed1fd64f15f4e301c1c8dea739",
+    "docs/work_history/repo/review_feedback/PHYSICAL_CARRIER_PREPARATION_ELEMENTARY_SYNTHESIS_TOURNAMENT_CYCLE603_NOTE_2026-07-22.md":
+        "ddc06d6d4abf945794b1c0b7566c9183fa744839d1ba5630c1d9ad8b4559c417",
+    "outputs/physical_carrier_preparation_elementary_synthesis_tournament_cycle603_receipt_2026_07_22.json":
+        "751487fa50a738d5473f7ddcb77474785c84463dda1264a34de2643f19102871",
+    "outputs/physical_carrier_preparation_elementary_synthesis_tournament_cycle603_cold_2026_07_22.txt":
+        "35385a09b5d075e553de1de9302e0317dd415acbe1f5ccf9425905eedae94174",
+}
+
+MINIMAL_AXIOMS_TEST_CONTRACT = {
+    "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+    "origin_main_lines": "37-41",
+    "contract": "physical Z^3 nearest-neighbor sites, standard translations, proper rotations about each site, and no privileged site",
+    "used_as_dynamics_or_new_authority": False,
 }
 
 H = 64
@@ -163,23 +180,61 @@ def shore() -> dict:
         "tournament_cycle606_receipt_2026_07_22.json"
     )).read_text())
     route = receipt["route_A_compact_double_buffer"]
+    c603_receipt = json.loads((ROOT / (
+        "outputs/physical_carrier_preparation_elementary_synthesis_"
+        "tournament_cycle603_receipt_2026_07_22.json"
+    )).read_text())
+    expected_graph = dict(receipt["shore"]["import_audit"]["expected_transitive_sha256"])
+    expected_graph.update(receipt["pins"])
+    expected_graph.update(PINS)
+    observed_graph = {name: sha(ROOT / name) for name in expected_graph}
+    actual_modules = c606.c600.imported_science_modules(
+        c606, c603, c603.c219, c603.c230
+    )
+    uncovered = sorted(set(actual_modules.values()) - set(expected_graph))
+    test_contract_observed = sha(ROOT / MINIMAL_AXIOMS_TEST_CONTRACT["path"])
     inherited = {
         "pass": receipt["pass"],
         "tests_passed": receipt["tests_passed"],
+        "author_artifact_status_accepted": receipt["author_artifact_status_accepted"],
         "register_stream": route["pass_exact_declared_code_global_stream"],
-        "physical_packing": route["pass_elementary_translation_invariant_global_packing"],
+        "Cycle606_physical_M2_scope": receipt["physical_M2_scope"],
         "one_carrier_global": not route["exactly_one_sector_locally_generated"],
         "axiom_pressure": receipt["shared_obstruction_or_axiom_pressure"],
+        "broad_negative_gate": receipt["broad_negative_gate"],
+        "Cycle603_pass": c603_receipt["pass"],
+        "Cycle603_tests_passed": c603_receipt["tests_passed"],
+        "import_audit": {
+            "expected_transitive_sha256": expected_graph,
+            "observed_transitive_sha256": observed_graph,
+            "actual_imported_modules": actual_modules,
+            "uncovered_imported_modules": uncovered,
+            "expected_file_count": len(expected_graph),
+            "runtime_module_count": len(actual_modules),
+        },
+        "minimal_axioms_test_contract": {
+            **MINIMAL_AXIOMS_TEST_CONTRACT,
+            "observed_sha256": test_contract_observed,
+        },
     }
     condition = (
         observed == PINS and inherited["pass"] and inherited["tests_passed"] == 8
-        and inherited["register_stream"] and not inherited["physical_packing"]
+        and not inherited["author_artifact_status_accepted"]
+        and inherited["register_stream"]
+        and not inherited["Cycle606_physical_M2_scope"]["literal_layout_compiled"]
+        and not inherited["Cycle606_physical_M2_scope"]["primitive_composition"]
+        and inherited["Cycle606_physical_M2_scope"]["intertwiner_residual"] is None
+        and not inherited["Cycle606_physical_M2_scope"]["leakage_evaluated"]
         and inherited["one_carrier_global"] and not inherited["axiom_pressure"]
+        and inherited["broad_negative_gate"] == "FAIL / DO NOT SHIP"
+        and inherited["Cycle603_pass"] and inherited["Cycle603_tests_passed"] == 7
+        and observed_graph == expected_graph and not uncovered
+        and test_contract_observed == MINIMAL_AXIOMS_TEST_CONTRACT["sha256"]
     )
     check("accepted Cycle606 shore is byte exact", condition, {
         "observed": observed, "inherited": inherited,
     })
-    return receipt
+    return {"Cycle606_receipt": receipt, "verified_inheritance": inherited}
 
 
 # ---------------------------------------------------------------------------
@@ -344,6 +399,8 @@ def layout_manifest() -> dict:
     return {
         "supercell_local_coordinate_box": ((-H, -H, -H), (H, H, H)),
         "fine_linear_scale_K": K,
+        "supplied_coarse_partition_origin_period": K,
+        "coarse_partition_or_origin_derived_from_translation_invariant_state": False,
         "full_physical_M2_sites_per_coarse_cell": K**3,
         "species_centers": SPECIES_CENTERS,
         "storage_roles": storage,
@@ -368,6 +425,87 @@ def layout_manifest() -> dict:
         "predicate_flag_work_coordinates": PREDICATE_WORK_SITES,
         "role_orientation_genesis": "supplied one-hot 24-M2 field; every sector is accepted by mutually exclusive controlled branches of one autonomous rule",
     }
+
+
+def declared_tagged_role_motif() -> set[tuple[int, int, int]]:
+    """Persistent tagged sites in the supplied identity-frame coarse cell."""
+    base = np.eye(3, dtype=int)
+    tagged = set(ORIENTATION_SITES) | set(PREDICATE_WORK_SITES) | {ONSITE_WORK_SITE}
+    for species in range(3):
+        tagged.update(roles(species, base).values())
+    return tagged
+
+
+def fine_site_translation_falsifier() -> dict:
+    """Test the declared tagged-role support under physical unit translations.
+
+    Coarse translations by K preserve the supplied tiling.  A physical unit
+    translation must instead preserve or covariantly permute the code space
+    without assuming that tiling.  The nonzero symmetric differences below
+    falsify that stronger promotion for the current motif.
+    """
+    motif = declared_tagged_role_motif()
+    expected_unit_x = {3: 2970, 6: 23760, 7: 37730}
+    rows = []
+    for length, split in ((3, "train"), (6, "held"), (7, "held-out-size")):
+        period = K * length
+        tagged = {
+            global_coordinate(local, cell, length)
+            for cell in all_cells(length)
+            for local in motif
+        }
+        directional_differences = {}
+        for direction in DIRECTIONS:
+            shifted = {
+                tuple((site[axis] + direction[axis]) % period for axis in range(3))
+                for site in tagged
+            }
+            directional_differences[str(direction)] = len(tagged ^ shifted)
+        unit_x = directional_differences[str((1, 0, 0))]
+        rows.append({
+            "length": length,
+            "split": split,
+            "fine_torus_period": period,
+            "tagged_roles_per_supplied_coarse_cell": len(motif),
+            "tagged_sites": len(tagged),
+            "overlap_with_one_fine_site_x_translate": (
+                len(tagged) - unit_x // 2
+            ),
+            "one_fine_site_x_translation_symmetric_difference": unit_x,
+            "expected_root_falsifier": expected_unit_x[length],
+            "all_six_unit_translation_symmetric_differences": directional_differences,
+            "one_fine_site_x_translation_preserves_tagged_code_support": unit_x == 0,
+            "coarse_K_translation_preserves_partition": True,
+        })
+    result = {
+        "test_contract": MINIMAL_AXIOMS_TEST_CONTRACT,
+        "declared_tagged_role_definition": "42 A/B word/equality roles plus 24 orientation roles plus 24 predicate-work roles plus one onsite-work role in each supplied identity-frame coarse cell",
+        "tagged_roles_per_coarse_cell": len(motif),
+        "one_fine_site_translation_covariant_code_space": False,
+        "one_fine_site_translation_covariant_update_law": False,
+        "coarse_K_grid_translation_covariance_only": True,
+        "supplied_partition_origin_or_role_coloring": True,
+        "rows": rows,
+        "strongest_live_repair": {
+            "route": "state-carried translation phase or an injective union of all K^3 translated motifs",
+            "mechanism": "add a locally recognized phase phi in Z_K^3 so a unit translation sends phi to phi+e_i and mutually exclusive P_(phi,h) branches select the translated/rotated coordinate word",
+            "terminal_obligation": "construct literal NN phase/admissibility gadgets and execute code-domain plus update commutators for one-fine-site translations, all site-centered proper rotations, L3/L6/L7, leakage, and deletion",
+            "status": "OPEN / not implemented",
+            "naive_unlabelled_union_warning": "the support union of all K^3 translates fills the cell but aliases distinct role labels; injective roles or a state-carried phase are still required",
+        },
+        "naive_union_of_all_K3_translated_supports_fills_fine_cell": True,
+        "naive_union_preserves_injective_role_labels": False,
+    }
+    result["pass_as_reproduced_falsifier"] = (
+        len(motif) == 91
+        and all(
+            row["one_fine_site_x_translation_symmetric_difference"]
+            == row["expected_root_falsifier"] > 0
+            and not row["one_fine_site_x_translation_preserves_tagged_code_support"]
+            for row in rows
+        )
+    )
+    return result
 
 
 def frame_index(frame: np.ndarray) -> int:
@@ -491,12 +629,16 @@ def orientation_control_audit() -> dict:
         "spare_M2": 1,
     }
     return {
-        "encoding": "24 one-hot M2 bits per coarse cell; orientation h selects layout R_h",
-        "lawful_local_constraint": "exactly one of 24 bits is one; bounded within one supercell",
-        "neighbor_constraint": "adjacent coarse cells carry the same one-hot word; radius-one equality syndrome",
+        "conditional_encoding": "24 tagged one-hot site roles per supplied coarse cell; orientation h selects layout R_h",
+        "exactly_one_truth_table_executed": True,
+        "lawful_table_predicate": "exactly one of 24 tagged bits is one inside a supplied supercell partition",
+        "coarse_neighbor_equality_table": "adjacent supplied coarse cells carry the same one-hot word",
+        "literal_NN_exactly_one_constraint_enforcement_gadget_constructed": False,
+        "literal_NN_coarse_neighbor_equality_enforcement_gadget_constructed": False,
+        "constraint_preparation_repair_or_rejection_dynamics_constructed": False,
         "lawful_update": "orientation bits are unchanged; compute mutually exclusive P_h flags, apply controlled G_h, uncompute",
         "invalid_extension": "zero-hot or multi-hot activates no P_h branch and is identity; arbitrary dirty predicate work is outside the declared code but the gate product remains unitary",
-        "branch_order": "P_h projectors are mutually orthogonal, so controlled branches commute and no frame enumeration is physical ordering",
+        "branch_order": "P_h projectors are mutually orthogonal on the supplied table sector, so controlled branches commute; this does not derive the coarse partition/origin",
         "predicate_compute_counts": predicate_compute_counts,
         "truth_rows": truth_rows,
         "failures": failures,
@@ -675,7 +817,9 @@ def global_geometry_audit() -> dict:
                         ):
                             seam_failures += int(not nn(first, second, K * length))
 
-        # Every possible coarse translation maps cells and paths bijectively.
+        # Every supplied coarse-cell translation (a physical displacement by
+        # K fine sites) maps cells and paths bijectively.  This is not a test
+        # of physical one-fine-site translation covariance.
         translation_failures = 0
         for displacement in cells:
             mapped = {
@@ -689,8 +833,10 @@ def global_geometry_audit() -> dict:
             "coarse_cells": len(cells),
             "role_frames": len(frames),
             "directions": len(DIRECTIONS),
-            "all_translations_tested": len(cells),
-            "translation_failures": translation_failures,
+            "coarse_cell_translations_tested": len(cells),
+            "coarse_grid_translation_failures": translation_failures,
+            "physical_displacement_per_tested_coarse_step": K,
+            "one_fine_site_translation_covariance_executed_here": False,
             "flag_shuttle_microsteps_tested": microsteps,
             "routed_NN_edge_instances_tested": routed_edges,
             "cross_edges_tested_including_wrap": cross_edges_tested,
@@ -703,7 +849,7 @@ def global_geometry_audit() -> dict:
         }
         row["pass"] = all(
             row[key] == 0 for key in (
-                "translation_failures", "microstep_vertex_conflicts",
+                "coarse_grid_translation_failures", "microstep_vertex_conflicts",
                 "microstep_edge_conflicts", "NN_adjacency_failures",
                 "cross_endpoint_conflicts", "cross_edge_duplicates",
                 "wrap_seam_adjacency_failures",
@@ -747,6 +893,9 @@ def group_covariance_audit() -> dict:
         "role_group_failures": role_failures,
         "path_group_failures": path_failures,
         "direction_group_failures": direction_failures,
+        "executed_scope": "all576 composition of role, direction, and path coordinate actions about the supplied coarse-cell origin",
+        "physical_update_covariance_under_all576_executed": False,
+        "proper_rotations_about_every_fine_site_executed": False,
         "pass": role_failures == path_failures == direction_failures == 0,
     }
 
@@ -1418,7 +1567,7 @@ def physical_orientation_controlled_compiler(stream_operations: list[dict]) -> d
     )
 
     result = {
-        "physical_orientation_register": "24 one-hot M2 sites in each counted supercell",
+        "conditional_orientation_register": "24 tagged one-hot site roles in each supplied K-periodic supercell",
         "selector_word": "exact C24X compute with 22 clean work M2; controlled coin/contact/stream; exact inverse-C24X uncompute",
         "physical_factor_application_order": (
             "factor_0 controlled onsite coin",
@@ -1428,7 +1577,7 @@ def physical_orientation_controlled_compiler(stream_operations: list[dict]) -> d
         "predicate_compute_support_two_gates": len(selector),
         "predicate_compute_and_uncompute_support_two_gates": 2 * len(selector),
         "base_identity_frame_literal_word": base_word,
-        "all24_spatial_branch_realizations": branch_rows,
+        "all24_conditional_coarse_origin_spatial_branch_realizations": branch_rows,
         "all24_branch_count": len(branch_rows),
         "full_autonomous_rule_primitive_gate_instances_per_cell": (
             24 * base_word["primitive_gate_instances"]
@@ -1444,12 +1593,15 @@ def physical_orientation_controlled_compiler(stream_operations: list[dict]) -> d
         "cross_dual_predicate_controlled_SWAP_clean_scratch_residual": cross_controlled_swap_residual,
         "cross_dual_predicate_scratch_return_leakage": scratch_leakage,
         "cross_dual_predicate_full_unitary_residual": cross_full_unitary_residual,
-        "all576_route_generator_coordinate_checks": all576_coordinate_checks,
-        "all576_route_generator_failures": all576_failures,
+        "all576_coarse_origin_route_generator_coordinate_checks": all576_coordinate_checks,
+        "all576_coarse_origin_route_generator_failures": all576_failures,
         "all24_rotated_bus_realization_checks": 24 * len(generator_coordinates),
         "all24_rotated_bus_realization_failures": bus_realization_failures,
-        "literal_route_representation": "each support-two primitive stores ordered endpoints, oriented Hamiltonian-bus indices, exact opening interval, adjacent application edge, and reverse interval; all 23 other frames are exact integer spatial images",
-        "no_host_frame_control": True,
+        "literal_conditional_route_representation": "given the supplied K-periodic origin/role coloring, each support-two primitive stores ordered endpoints, oriented Hamiltonian-bus indices, exact opening interval, adjacent application edge, and reverse interval; all 23 other frames are exact integer spatial images",
+        "no_host_frame_control_within_supplied_coarse_partition": True,
+        "supplied_preferred_coarse_origin_or_role_coloring": True,
+        "one_fine_site_translation_covariant_rule": False,
+        "proper_rotations_about_every_fine_site_executed": False,
         "orientation_bits_unchanged": True,
         "clean_predicate_work_return": True,
         "invalid_zero_or_multihot_clean_work_extension": "identity because all branch predicates are zero; dirty work lies outside the declared code but the total gate word remains unitary",
@@ -1547,7 +1699,7 @@ def cycle230_factor_order_audit(compiler: dict) -> dict:
 
 
 def physical_control_global_conflict_audit(compiler: dict) -> dict:
-    """Audit the actual bus/copy/five-line schedule classes on every torus.
+    """Audit bus/copy/five-line schedule classes on the supplied coarse tiling.
 
     Cell-bus operations are serialized and identical in every translated
     cell.  Since [-H,H]^3 + K*x tiles the fine torus bijectively, all literal
@@ -1625,8 +1777,10 @@ def physical_control_global_conflict_audit(compiler: dict) -> dict:
             "length": length,
             "split": split,
             "coarse_cells": len(cells),
-            "all_translations_tested": len(cells),
-            "translation_failures": translation_failures,
+            "coarse_cell_translations_tested": len(cells),
+            "coarse_grid_translation_failures": translation_failures,
+            "physical_displacement_per_tested_coarse_step": K,
+            "one_fine_site_translation_covariance_executed_here": False,
             "supercell_corner_partition_collisions": corner_collisions,
             "bus_site_partition_covered_by_exact_quotient_remainder": K**3 * len(cells),
             "actual_compute_act_uncompute_microsteps_per_cell_all24": 24 * physical_steps_per_cell,
@@ -1644,7 +1798,7 @@ def physical_control_global_conflict_audit(compiler: dict) -> dict:
         }
         row["pass"] = all(
             row[key] == 0 for key in (
-                "translation_failures", "supercell_corner_partition_collisions",
+                "coarse_grid_translation_failures", "supercell_corner_partition_collisions",
                 "actual_bus_microstep_vertex_conflicts",
                 "actual_bus_microstep_edge_conflicts",
                 "cross_five_line_support_conflicts",
@@ -1655,9 +1809,10 @@ def physical_control_global_conflict_audit(compiler: dict) -> dict:
         overall &= row["pass"]
         rows.append(row)
     return {
-        "schedule_scope": "literal selector compute; Cycle230 controlled coin then stream then contact; dual-neighbor-controlled cross SWAP; selector uncompute",
-        "bus_partition_proof": "for each fine coordinate p, quotient/remainder of p+H modulo K gives a unique coarse cell and local coordinate in [-H,H]^3; hence identical serialized bus microsteps have no intercell vertex or edge collision",
-        "all24_frames_and_all576_composition_inherited_from_compiler": compiler["pass"],
+        "schedule_scope": "conditional on the supplied K-periodic partition: selector compute; Cycle230 controlled coin then stream then contact; dual-neighbor-controlled cross SWAP; selector uncompute",
+        "bus_partition_proof": "given the supplied origin, quotient/remainder of p+H modulo K gives a unique coarse cell and local coordinate; this is a conditional tiling proof, not a derivation from a one-site translation-invariant state",
+        "all24_frames_and_all576_coarse_origin_group_action_inherited_from_compiler": compiler["pass"],
+        "one_fine_site_translation_covariant_law_proved": False,
         "rows": rows,
         "pass": bool(overall and compiler["pass"]),
     }
@@ -1723,15 +1878,15 @@ def onsite_bus_audit(cycle606_receipt: dict) -> dict:
         "coin_clean_scratch_leakage": word_coin["clean_scratch_return_leakage"],
         "contact_phase_residual": contact_row["contact_phase_residual"],
         "contact_inverse_phase_residual": contact_row["contact_inverse_phase_residual"],
-        "Cycle600_coin_EG_residual": eg["Cycle600_coin_EG_residual_recomputed"],
-        "Cycle600_contact_EG_residual": eg["Cycle600_contact_EG_residual_recomputed"],
-        "Cycle600_local_stream_seam_EG_residual": eg["Cycle600_local_stream_EG_residual_recomputed"],
-        "compiled_word_coin_EG_residual": eg["compiled_word_coin_EG_residual"],
+        "Cycle600_coin_EG_residual": eg["Cycle600_coin_algebraic_intertwining_residual_recomputed"],
+        "Cycle600_contact_EG_residual": eg["Cycle600_contact_algebraic_intertwining_residual_recomputed"],
+        "Cycle600_local_stream_seam_EG_residual": eg["Cycle600_local_stream_algebraic_intertwining_residual_recomputed"],
+        "compiled_word_coin_EG_residual": eg["compiled_word_coin_algebraic_intertwining_residual"],
     }
     fixture_condition = (
         max(fixtures.values()) < 1e-10
-        and route["exact_support_two_parametric_event_compiler"]
-        and not route["exact_accepted_finite_alphabet_elementary_closure"]
+        and route["exact_support_two_parametric_role_event_circuit"]
+        and not route["exact_declared_finite_alphabet_elementary_closure"]
         and inherited["Cycle603_pass"]
     )
     return {
@@ -1743,11 +1898,13 @@ def onsite_bus_audit(cycle606_receipt: dict) -> dict:
         "logical_coordinate_injection_failure": coordinate_injection_failure,
         "onsite_work_coordinate": onsite_work,
         "routed_blocks": rows,
-        "all_coarse_cells_execute_onsite_bus_in_parallel_without_cross_cell_edges": True,
-        "all24_bus_paths_are_literal_spatial_rotations_selected_by_the_intrinsic_role_field": True,
+        "all_supplied_coarse_cells_execute_onsite_bus_in_parallel_without_cross_cell_edges": True,
+        "all24_bus_paths_are_conditional_spatial_rotations_about_supplied_coarse_origins": True,
         "inherited_parameterized_angle_import_retained": True,
         "fixture_residuals": fixtures,
-        "physical_routing_preserves_fixture_by_exact_move_apply_restore_conjugation": fixture_condition,
+        "conditional_coordinate_routing_preserves_fixture_by_exact_move_apply_restore_conjugation": fixture_condition,
+        "one_fine_site_translation_covariant_physical_law_executed": False,
+        "full_physical_code_leakage_evaluated": False,
         "pass": (
             adjacency_failures == inverse_failures == coordinate_injection_failure == 0
             and all(row["routed_support_at_most_two"] for row in rows)
@@ -1757,7 +1914,7 @@ def onsite_bus_audit(cycle606_receipt: dict) -> dict:
 
 
 # ---------------------------------------------------------------------------
-# Exact shuttle semantics and lattice-wide E G = Gphysical E controls.
+# Exact shuttle and register semantics on the supplied coarse partition.
 
 
 def swap_state(state: dict, first: tuple, second: tuple) -> None:
@@ -1851,10 +2008,12 @@ def scratch_and_role_field_audit() -> dict:
         "dirty_path_full_permutation_inverse_failures": dirty_inverse_failures,
         "clean_path_port_flag_work_return": scatter_failures == clear_failures == 0,
         "orientation_field": {
-            "kind": "24 physical one-hot M2 sites per supercell, not a Python or host-selected frame parameter",
+            "kind": "24 tagged one-hot site roles per supplied K-periodic supercell; not a runtime Python frame parameter, but still dependent on a supplied partition/origin",
             "allowed_values": 24,
-            "same_autonomous_product_of_mutually_exclusive_branch_updates_for_every_value": True,
-            "uniform_neighbor_constraint_locally_checkable": True,
+            "same_coarse_grid_product_of_mutually_exclusive_branch_updates_for_every_value": True,
+            "uniform_coarse_neighbor_equality_syndrome_table_executed": True,
+            "literal_fine_NN_equality_enforcement_gadget_constructed": False,
+            "literal_fine_NN_exactly_one_enforcement_gadget_constructed": False,
             "uniform_orientation_genesis_supplied": True,
             "not_physical_time": True,
             "rows": orientation_rows,
@@ -1869,7 +2028,40 @@ def scratch_and_role_field_audit() -> dict:
     }
 
 
-def exact_physical_stream_semantics() -> dict:
+def local_constraint_scope_audit(orientation: dict, scratch: dict,
+                                 controlled: dict) -> dict:
+    orientation_rows = scratch["orientation_field"]["rows"]
+    result = {
+        "exactly_one_24_bit_truth_rows": len(orientation["truth_rows"]),
+        "exactly_one_truth_failures": orientation["failures"]["one_hot_truth"],
+        "zero_or_multihot_identity_table_failures": orientation["failures"][
+            "invalid_zero_or_multi_hot_not_identity_extension"
+        ],
+        "coarse_neighbor_equality_defect_syndromes": tuple(
+            row["one_flipped_role_orientation_NN_syndrome"]
+            for row in orientation_rows
+        ),
+        "predicate_compute_uncompute_gate_word_compiled": controlled["pass"],
+        "literal_fine_NN_exactly_one_enforcement_gadget_constructed": False,
+        "literal_fine_NN_uniform_equality_enforcement_gadget_constructed": False,
+        "constraint_preparation_repair_rejection_or_penalty_dynamics_constructed": False,
+        "scope": "truth tables, a conditional predicate-computation circuit, and coarse-cell syndrome counts only; no physical NN admissibility law is constructed",
+        "constraints_supplied_on_declared_code": True,
+    }
+    result["pass_as_honest_constraint_scope"] = (
+        result["exactly_one_24_bit_truth_rows"] == 24
+        and result["exactly_one_truth_failures"] == 0
+        and result["zero_or_multihot_identity_table_failures"] == 0
+        and result["coarse_neighbor_equality_defect_syndromes"] == (6, 6, 6)
+        and result["predicate_compute_uncompute_gate_word_compiled"]
+        and not result["literal_fine_NN_exactly_one_enforcement_gadget_constructed"]
+        and not result["literal_fine_NN_uniform_equality_enforcement_gadget_constructed"]
+        and not result["constraint_preparation_repair_rejection_or_penalty_dynamics_constructed"]
+    )
+    return result
+
+
+def exact_conditional_stream_semantics() -> dict:
     rng = np.random.default_rng(61010)
     rows = []
     condition = True
@@ -1975,12 +2167,18 @@ def exact_physical_stream_semantics() -> dict:
         condition &= row["pass"]
         rows.append(row)
     return {
-        "intertwiner": "E G_coarse = G_physical E on the declared Cycle600 one-carrier/species code",
-        "physical_update": "role-matched equality compute; reversible flag shuttle; remote word XOR; shuttle return/uncompute; clear analog; four remote local word SWAPs",
-        "declared_code": "valid A word, B/path/flag/work blank, uniform intrinsic role orientation, exactly one carrier per species globally",
+        "register_algebraic_EG_identity": "E_register G_coarse = G_conditional-register E_register on the declared Cycle600 one-carrier/species code",
+        "conditional_coarse_grid_update_descriptor": "given the supplied K-periodic origin/roles: equality compute; reversible flag shuttle; remote word XOR; shuttle return/uncompute; clear analog; four remote local word SWAPs",
+        "declared_conditional_code": "valid A word, B/path/flag/work blank, supplied uniform role orientation on the supplied coarse grid, exactly one carrier per species globally",
+        "conditional_coarse_grid_gate_word_compiled": True,
+        "literal_physical_encoder_composed": False,
+        "physical_intertwiner_residual": None,
+        "physical_code_leakage_evaluated": False,
+        "one_fine_site_translation_covariant_physical_law_executed": False,
         "global_exactly_one_sector_locally_generated": False,
         "malformed_collision_repaired": False,
         "rows": rows,
+        "pass_exact_conditional_register_semantics": bool(condition),
         "pass": bool(condition),
     }
 
@@ -1988,165 +2186,281 @@ def exact_physical_stream_semantics() -> dict:
 def no_go_discipline(geometry: dict, global_geometry: dict, covariance: dict,
                       stream: dict, onsite: dict, orientation: dict,
                       controlled: dict, controlled_global: dict,
-                      factor_order: dict) -> dict:
+                      factor_order: dict, fine_translation: dict,
+                      constraints: dict) -> dict:
     walls = (
-        "uniform intrinsic role-orientation genesis",
+        "supplied K-periodic coarse partition/origin and structural role coloring",
+        "literal fine-NN exactly-one and uniform-equality admissibility enforcement",
+        "explicit physical encoder/intertwiner/leakage evaluation",
         "global exactly-one-carrier/species sector",
         "blank path/flag/work initialization",
         "inherited beta/contact-g analog calibration",
         "scatter-clear-swap macro factorization",
     )
-    pairs = []
+    pairs: list[dict] = []
     for first, second in combinations(walls, 2):
         pairs.append({
-            "first": first, "second": second,
-            "first_closes_second": False,
-            "second_closes_first": False,
-            "independent_as_current_supplied_structures": True,
+            "wall_A": first,
+            "wall_B": second,
+            "A_implies_B": False,
+            "B_implies_A": False,
+            "independent": True,
+            "shared_witness_identified": False,
+            "evidence": "the executed predicates are separate booleans/resources and no implication is constructed",
         })
     families = (
         {
-            "family": "physical one-hot orientation-controlled flag shuttle",
-            "object": "129^3 cubic M2 supercell with A/B clusters and face channels",
-            "mechanism": "24 physical one-hot M2s, exact C24X branch predicates, source/target role separation, and dual-predicate cross-face SWAPs",
-            "terminal_obligation": "translation-invariant support-two physical stream with all-frame covariance",
-            "strength": "target-equivalent",
-            "status": "candidate-complete",
+            "family": "fixed-origin K-periodic conditional supercell",
+            "attempt_statement": "place A/B roles, face channels, and work sites in one 129-period motif repeated on a supplied coarse grid",
+            "failure_statement_with_citation": "the conditional coordinate schedule passes, but fine_site_translation_falsifier returns nonzero L3/L6/L7 unit-x symmetric differences",
+            "authority": "none; current attempted artifact",
+            "object": "129^3 supplied coarse cells with persistent tagged roles",
+            "mechanism": "role-separated channels and serialized support-one/two coordinate words",
+            "terminal_obligation": "one-fine-site translation-covariant physical M2 law",
+            "comparison_strength": "strictly weaker: exact only conditional on a supplied origin/coloring",
             "marker": "ATTEMPTED",
+            "disposition": "conditional coarse-grid placement passes; physical-law promotion fails the unit-translation contract",
         },
         {
-            "family": "direction-expanded partitioned lanes",
-            "object": "Cycle606 Route B Out/In direction registers",
-            "mechanism": "literal intercell lane SWAP partitions",
-            "terminal_obligation": "physical lane-exchange supercell if compact packing fails",
-            "strength": "target-equivalent with larger overhead",
-            "status": "provisional fallback",
-            "marker": "ATTEMPTED IN PRIOR CYCLE606 AT REGISTER LEVEL",
-        },
-        {
-            "family": "state-carried alternating buffer phase",
-            "object": "Cycle606 Route C phase field and two words",
-            "mechanism": "local reversible phase toggle selects active buffer",
-            "terminal_obligation": "autonomous recurrent stream without host tick",
-            "strength": "target-equivalent with phase-genesis import",
-            "status": "provisional",
-            "marker": "ATTEMPTED IN PRIOR CYCLE606",
-        },
-        {
-            "family": "co-present 24-orbit frame repetition code",
-            "object": "twenty-four spatially rotated data copies",
-            "mechanism": "literal invariant orbit under the cubic group",
-            "terminal_obligation": "frame-free geometry plus coherent onsite logical coin",
-            "strength": "unknown/comparable",
-            "status": "blocked-local",
-            "marker": "ATTEMPTED GEOMETRY PROTOTYPE; NOT USED",
-        },
-        {
-            "family": "cell Hamiltonian-bus onsite composition",
-            "object": "all 129^3 fine sites in a serpentine NN path",
-            "mechanism": "move-apply-restore conjugation of Cycle603 gates",
-            "terminal_obligation": "mass/contact/seam preserving onsite-plus-stream physical macro",
-            "strength": "target-equivalent with inherited analog angles",
-            "status": "candidate-complete",
+            "family": "compact double-buffer register stream",
+            "attempt_statement": "reexecute the Cycle606 scatter-clear-swap permutation and its code-space EG/inverse/deletion controls at L3/L6/L7",
+            "failure_statement_with_citation": "register residuals vanish, but the result supplies no physical encoder or one-fine-site covariant law (Cycle606 note:12-29,104-107)",
+            "authority": "none; final independently accepted Cycle606 artifact is byte pinned",
+            "object": "two four-role-bit words per species and coarse cell",
+            "mechanism": "equality-controlled scatter, clear, and buffer swap",
+            "terminal_obligation": "exact logical/register stream and conditional placement semantics",
+            "comparison_strength": "target-equivalent at register level, weaker than physical M2",
             "marker": "ATTEMPTED",
+            "disposition": "register target closes exactly; physical promotion remains open",
         },
         {
-            "family": "bounded role-color conflict schedule",
-            "object": "cell-internal role geometry plus physical one-hot orientation and clean predicate work",
-            "mechanism": "one autonomous product of 24 mutually exclusive controlled branch words",
-            "terminal_obligation": "avoid origin/parity/L queries while retaining proper-cubic covariance",
-            "strength": "target-equivalent",
-            "status": "candidate-complete",
+            "family": "proper-cubic orientation-controlled branch orbit",
+            "attempt_statement": "encode 24 rotated branch sectors and select them by exact one-hot predicate compute/action/uncompute",
+            "failure_statement_with_citation": "all24/all576 coordinate actions pass about supplied coarse origins, but they do not test rotations about every fine site or any unit translation",
+            "authority": "none; current attempted artifact",
+            "object": "24 one-hot tagged orientation roles and 24 rotated coordinate words",
+            "mechanism": "mutually exclusive C24X branch predicates",
+            "terminal_obligation": "proper-cubic branch covariance without a runtime frame selector",
+            "comparison_strength": "closes conditional orientation action only",
             "marker": "ATTEMPTED",
+            "disposition": "rotation-orbit coordinate checks pass; partition/origin remains supplied",
         },
+        {
+            "family": "Hamiltonian-bus and five-line primitive composition",
+            "attempt_statement": "route onsite gates by move-apply-restore bus intervals and cross-face controls by literal five-site NN words",
+            "failure_statement_with_citation": "support, inverse, scratch, and fixture residuals pass only relative to the supplied coarse partition; no physical encoder/leakage calculation is composed",
+            "authority": "none; current attempted artifact",
+            "object": "conditional fine-coordinate primitive descriptors",
+            "mechanism": "nearest-neighbor bus conjugation and dual-predicate cross gadgets",
+            "terminal_obligation": "bounded primitive realization of mass/contact/seam plus stream factors",
+            "comparison_strength": "exact conditional routing descriptor, not a complete physical intertwiner",
+            "marker": "ATTEMPTED",
+            "disposition": "conditional routing and local gadget identities pass",
+        },
+        {
+            "family": "unlabelled union of all translated motif supports",
+            "attempt_statement": "take the support union of all K^3 translations so unit translations preserve the occupied set",
+            "failure_statement_with_citation": "the analytic orbit fills every fine site but aliases distinct role labels, so it is not an injective encoder or update compiler",
+            "authority": "none; current set-orbit attempt",
+            "object": "Z_K^3 translation orbit of the 91-site tagged motif",
+            "mechanism": "co-present union of translated supports",
+            "terminal_obligation": "unit-translation-invariant code support with injective role identity",
+            "comparison_strength": "weaker set-level comparator",
+            "marker": "ATTEMPTED",
+            "disposition": "support invariance is trivial but role injectivity fails",
+        },
+        {
+            "family": "independent crossed-link endpoint tables",
+            "attempt_statement": "obtain the stream from six separately compiled crossed-link transpositions",
+            "failure_statement_with_citation": "Cycle603 explicitly states that separate tables do not compose a simultaneous torus update (Cycle603 note:153-172)",
+            "authority": "independently accepted Cycle603 artifact; formal authority remains none",
+            "object": "six eight-role-bit endpoint permutations",
+            "mechanism": "Gray-path local transpositions",
+            "terminal_obligation": "one simultaneous torus stream",
+            "comparison_strength": "strictly weaker than the global target",
+            "marker": "RULED OUT BY PRIOR",
+            "prior_citation": "docs/work_history/repo/review_feedback/PHYSICAL_CARRIER_PREPARATION_ELEMENTARY_SYNTHESIS_TOURNAMENT_CYCLE603_NOTE_2026-07-22.md:153-172",
+            "disposition": "local endpoint circuits alone are insufficient",
+        },
+    )
+    open_counterroutes = (
+        {
+            "family": "state-carried translation phase",
+            "object": "a locally recognized phase phi in Z_K^3 plus the 24 orientation values",
+            "mechanism": "unit translations permute phi and mutually exclusive P_(phi,h) branches select translated/rotated role words",
+            "terminal_obligation": "literal NN phase/admissibility gadget and one-fine-site domain/update covariance",
+            "status": "OPEN / NOT COUNTED AS ATTEMPTED OR RULED OUT",
+        },
+        {
+            "family": "injective co-present union of translated role copies",
+            "object": "K^3 separately tagged translated code copies",
+            "mechanism": "translation permutes copy labels rather than changing the code support",
+            "terminal_obligation": "bounded injective physical realization without role aliasing",
+            "status": "OPEN / NOT COUNTED AS ATTEMPTED OR RULED OUT",
+        },
+    )
+    rhetoric = (
+        {"phrase": "every translation", "resolutions": ("coarse-cell displacement", "K-fine-site displacement", "one-fine-site displacement", "arbitrary physical translation"), "tested": ("coarse-cell/K-fine-site displacements", "one-fine-site x code-support falsifier"), "untested_negative_status": "no universal impossibility inferred", "narrowed_phrase": "only coarse-grid covariance passes; one-fine-site covariance fails for the current motif"},
+        {"phrase": "physical M2 compiler", "resolutions": ("literal coordinate", "support-two descriptor", "conditional primitive word", "explicit encoder/intertwiner", "translation-covariant law"), "tested": ("literal coordinates", "support-two descriptors", "conditional word identities"), "untested_negative_status": "encoder/intertwiner/leakage remain unevaluated", "narrowed_phrase": "bounded conditional coarse-grid M2 placement"},
+        {"phrase": "local constraint", "resolutions": ("truth table", "bounded predicate computation", "coarse equality syndrome", "literal fine-NN enforcement", "preparation/repair dynamics"), "tested": ("truth table", "predicate computation", "coarse syndrome"), "untested_negative_status": "fine-NN enforcement and dynamics are absent", "narrowed_phrase": "supplied admissibility tables, not locally enforced constraints"},
+        {"phrase": "all 24 / all 576 covariance", "resolutions": ("role coordinate", "path coordinate", "branch word image", "update commutator", "rotation about every fine site"), "tested": ("role/path coordinate actions", "branch images about supplied coarse origins"), "untested_negative_status": "physical update covariance and every-site rotations remain open", "narrowed_phrase": "conditional coarse-origin proper-cubic group action"},
+        {"phrase": "EG/intertwiner", "resolutions": ("register carrier", "exterior sample", "conditional role routing", "physical encoder", "physical code space"), "tested": ("register carrier", "exterior sample", "conditional routing conjugation"), "untested_negative_status": "physical encoder/intertwiner/leakage is unevaluated", "narrowed_phrase": "register-algebra EG residual zero; physical residual null"},
+        {"phrase": "schedule is not time", "resolutions": ("factor order", "microstep order", "recurrent update", "causal physical time"), "tested": ("factor order", "microstep descriptors"), "untested_negative_status": "no causal-time mechanism tested", "narrowed_phrase": "fixed schedule is supplied law factorization, not time"},
+        {"phrase": "site/gate counts are not source or energy", "resolutions": ("role", "coarse cell", "torus", "physical observable"), "tested": ("resource counts",), "untested_negative_status": "no source/energy map evaluated", "narrowed_phrase": "counts are bookkeeping only"},
     )
     result = {
         "skill_freshness": {
             "origin_main_checked": True,
             "origin_main_skill_sha256": "7d1aea8243ddd972331b935e2e836657e72115da3efe259f828fe862469d68b7",
-            "local_skill_sha256": "aeac7b2b7df30c350961f4b36b980a91e9c2ebeca3f35b6c1adcd731071bdab5",
+            "local_skill_sha256": "9814b094837d11dcf223863851e4f53193d1c307835d80178af195f535f52e71",
             "newer_origin_main_version_followed": True,
             "proof_search_governance_followed": True,
         },
         "N1_normalized_families": families,
-        "N1_family_count": len(families),
-        "N2_directional_pairs": pairs,
+        "N1_qualifying_family_count": len(families),
+        "N1_all_markers_exact": all(
+            row["marker"] in {"ATTEMPTED", "RULED OUT BY PRIOR"}
+            for row in families
+        ),
+        "N1_open_counterroutes_not_counted": open_counterroutes,
+        "N2_directional_wall_independence": pairs,
         "N2_pair_count": len(pairs),
         "N3_hidden_condition_scan": {
-            "we assume/by construction": "no hidden use; every role, path, blank field, and sector is explicit",
-            "intrinsic role orientation": "24 counted physical one-hot M2s per cell, unchanged by the update; uniform genesis and clean predicate work are supplied and locally checkable",
-            "empty spacer sites": f"all {K**3} fine M2 sites per coarse cell counted",
-            "routing exactness": "each selector/action primitive has an exact bus interval/apply/return descriptor; every cross gadget is a literal five-site NN word",
-            "global one-carrier sector": "inherited nonlocal Cycle600 code condition; not generated",
-            "standard QFT/background/naturally/obviously": "no load-bearing occurrence",
+            "required_phrase_scan": {
+                "we assume": "absent",
+                "by construction": "absent after scope rewrite",
+                "as is standard": "absent",
+                "the framework provides": "absent",
+                "bridge context": "absent",
+                "background": "absent",
+                "naturally": "absent",
+                "obviously": "absent",
+                "standard QFT": "absent",
+                "registered": "absent",
+                "canonical": "load-bearing supplied identity-frame motif/path convention; promoted to the K-periodic partition/origin wall",
+            },
+            "supplied_partition_origin": "explicit K=129 periodic role motif; fine-translation falsifier is nonzero",
+            "one_hot_and_equality": "truth tables/syndromes only; no fine-NN enforcement gadget",
+            "empty_spacer_and_bus_sites": f"all {K**3} fine sites are counted inside the conditional cell",
+            "blank_work_and_one_carrier": "explicit supplied code conditions",
+            "periodic_sizes": "L3/L6/L7 fixtures",
+            "hidden_wall_promotions_complete": True,
+            "uncited_standard_or_obvious_hits": 0,
         },
         "N4_residual_matching": (
             {
-                "witness": "Cycle606 physical supercell residual",
-                "witness_residual": "no translation-invariant simultaneous routed physical-M2 packing",
-                "current_residual": "exact same packing obligation, now supplied by role-separated face shuttles",
+                "witness_citation": "docs/work_history/repo/review_feedback/PHYSICAL_GLOBAL_CARRIER_STREAM_QCA_APPROXIMATION_TOURNAMENT_CYCLE606_NOTE_2026-07-22.md:25-29,104-107",
+                "witness_residual": "literal physical encoder/product/intertwiner/leakage and one-site translation-covariant law absent",
+                "current_exact_residual": {
+                    "L3_unit_x_tagged_support_symmetric_difference": fine_translation["rows"][0]["one_fine_site_x_translation_symmetric_difference"],
+                    "L6_unit_x_tagged_support_symmetric_difference": fine_translation["rows"][1]["one_fine_site_x_translation_symmetric_difference"],
+                    "L7_unit_x_tagged_support_symmetric_difference": fine_translation["rows"][2]["one_fine_site_x_translation_symmetric_difference"],
+                    "physical_intertwiner_residual": stream["physical_intertwiner_residual"],
+                    "physical_code_leakage_evaluated": stream["physical_code_leakage_evaluated"],
+                },
                 "match": True,
-                "closed": (
-                    geometry["pass"] and global_geometry["pass"]
-                    and covariance["pass"] and orientation["pass"]
-                    and controlled["pass"] and controlled_global["pass"]
-                ),
+                "closed": False,
+                "reason": "conditional placement advances the residual but the one-fine-site contract is directly falsified",
             },
             {
-                "witness": "Cycle603 analog-angle residual",
+                "witness_citation": "docs/work_history/repo/review_feedback/PHYSICAL_CARRIER_PREPARATION_ELEMENTARY_SYNTHESIS_TOURNAMENT_CYCLE603_NOTE_2026-07-22.md:120-130",
                 "witness_residual": "beta/contact-g parametric one-M2 rotations",
-                "current_residual": "physical onsite routing retains those exact calibrated gates",
+                "current_exact_residual": "conditional onsite routing retains those exact calibrated gates; parameterized angle import retained=true",
                 "match": True,
                 "closed": False,
             },
             {
-                "witness": "Cycle606 malformed collision residual",
+                "witness_citation": "docs/work_history/repo/review_feedback/PHYSICAL_GLOBAL_CARRIER_STREAM_QCA_APPROXIMATION_TOURNAMENT_CYCLE606_NOTE_2026-07-22.md:80-88,167-180",
                 "witness_residual": "duplicate same-species carriers leave the declared sector",
-                "current_residual": "physical supercell remains reversible but does not repair collision",
+                "current_exact_residual": {
+                    "collision_pairs_leaving_code": tuple(row["collision_pairs_leaving_declared_code"] for row in stream["rows"]),
+                    "collision_inverse_failures": tuple(row["collision_inverse_failures"] for row in stream["rows"]),
+                    "malformed_collision_repaired": stream["malformed_collision_repaired"],
+                },
                 "match": True,
                 "closed": False,
             },
         ),
-        "N5_rhetoric_resolution": (
-            "physical compiler means the declared code, clean selector work, and uniform one-hot orientation sector, not arbitrary dirty work or malformed carriers",
-            "all24 means all 24 physical one-hot sectors are selected by mutually exclusive C24X predicates in one autonomous gate product, not a host frame parameter",
-            "schedule factorization is not causal time and full K^3 site count is not energy/source",
-            "onsite composition is exact move-apply-restore routing but retains parameterized analog gates",
-        ),
+        "promotion_test_contract": {
+            "citation": "docs/MINIMAL_AXIOMS_2026-06-29.md:37-41",
+            "use": "test contract only; no axiom text edited and no new dynamics inferred",
+            "one_fine_site_translation_contract_passed": False,
+            "no_privileged_site_contract_passed": False,
+        },
+        "N5_rhetoric_resolution": rhetoric,
+        "N5_five_resolutions_present": len(rhetoric) >= 5,
         "N6_partial_closure_paths": (
-            "derive or autonomously prepare the uniform role-orientation field",
-            "replace the global exactly-one sector by a local reversible collision/syndrome code",
-            "certify epsilon-target Clifford+T synthesis for beta/contact g with volume/horizon budget",
-            "shrink the supercell only through a fresh collision proof, never by deleting spacer accounting",
-            "use the already materialized Route B lane fallback if an independent audit falsifies Route A packing",
+            {"file": "scripts/physical_proper_cubic_supercell_stream_composition_tournament_cycle610_2026_07_22.py", "status": "PARTIAL / NARROWED", "what_closes": "bounded conditional K-grid coordinate placement, primitive descriptors, and inherited register fixtures"},
+            {"file": "scripts/physical_global_carrier_stream_qca_approximation_tournament_cycle606_2026_07_22.py", "status": "PARTIAL / PRIOR", "what_closes": "exact register stream, inverse, deletion, collision exit, and seeded covariance"},
+            {"file": "scripts/physical_L41_elementary_gate_layout_compiler_cycle580_2026_07_22.py", "status": "PARTIAL / PRIOR", "what_closes": "a literal bounded M2 primitive layout for another fixture; shows materialization is possible"},
+            {"file": "UNMATERIALIZED", "status": "OPEN / PRIORITY", "what_closes": "state-carried Z_K^3 translation phase, local recognition/enforcement, and one-fine-site domain/update covariance"},
+            {"file": "UNMATERIALIZED", "status": "OPEN", "what_closes": "injective union of all translated role copies without aliasing"},
+            {"file": "UNMATERIALIZED", "status": "OPEN", "what_closes": "fine-NN exactly-one/equality admissibility plus preparation/repair dynamics"},
+            {"file": "UNMATERIALIZED", "status": "OPEN", "what_closes": "physical encoder/intertwiner/leakage and reversible collision syndrome"},
+            {"file": "UNMATERIALIZED", "status": "OPEN", "what_closes": "certified epsilon synthesis for beta/contact g"},
         ),
-        "N7_hostile_steelman": "A hostile reviewer should reject any claim that the remaining supplied role orientation, particle-number sector, or analog angles are unavoidable. The role field could be prepared as a local ordered phase or eliminated by a co-present orbit/lane code; a reversible syndrome reservoir could localize particle-number and collision control; certified single-qubit synthesis can reduce calibrated-angle error. Those concrete mechanisms remain unclosed and prohibit no-go or axiom-pressure language.",
-        "N8_cross_cycle_echo": "Cycles580, 600, 603, and 606 successively replaced layout, carrier, local-event, and register-stream imports by bounded constructive objects. Cycle610 follows the same mechanism: a large explicit role-separated supercell retires only the physical packing residual. The precedent weighs against constitutional escalation for the remaining genesis/sector/precision imports.",
+        "N7_hostile_steelman": {
+            "mechanism": "replace the privileged K-grid origin by a state-carried phase phi in Z_K^3, impose a literal local phase-matching/admissibility rule, and compile all mutually exclusive translated/rotated P_(phi,h) coordinate words; alternatively use an injective co-present union of all translated code copies",
+            "why_not_defeated": "Cycle610 tests only one supplied phase/origin and finds no contradiction to the phase-orbit construction; the naive unlabelled union fails only by role aliasing",
+            "terminal_obligation": "execute one-fine-site code-domain and update covariance, every-site proper rotations, physical encoder/intertwiner/leakage, local constraint enforcement, deletion, and L3/L6/L7 held controls",
+            "authority_status": "OPEN / no retained authority",
+            "citations": (
+                "scripts/physical_proper_cubic_supercell_stream_composition_tournament_cycle610_2026_07_22.py:fine_site_translation_falsifier",
+                "docs/MINIMAL_AXIOMS_2026-06-29.md:37-41",
+                "docs/work_history/repo/review_feedback/PHYSICAL_GLOBAL_CARRIER_STREAM_QCA_APPROXIMATION_TOURNAMENT_CYCLE606_NOTE_2026-07-22.md:251-268",
+            ),
+        },
+        "N8_cross_cycle_echo": (
+            {"cycle": "Cycle560", "retired": "bounded local encoder tables", "mechanism": "explicit one-hot branch encoders", "applicability": "suggests constructing, not assuming, translation-phase recognition"},
+            {"cycle": "Cycle563", "retired": "runtime selected-factor order", "mechanism": "bounded transported colors", "applicability": "a transported translation phase is a live analog"},
+            {"cycle": "Cycle580", "retired": "one bounded physical gate-layout import", "mechanism": "literal primitive circuit", "applicability": "supports a constructive local-gadget route"},
+            {"cycle": "Cycle603", "retired": "bounded local role-event lowering", "mechanism": "explicit gates and routing", "applicability": "does not supply global physical covariance"},
+            {"cycle": "Cycle606", "retired": "logical global stream product", "mechanism": "compact double buffer", "applicability": "provides the exact register target retained here"},
+            {"cycle": "local Cycle610", "retired": "conditional K-grid coordinate placement", "mechanism": "large role-separated motif", "applicability": "fine-translation promotion is falsified and queued for phase-orbit repair"},
+        ),
         "route_evidence": {
             "local_geometry": geometry["pass"],
             "global_microsteps": global_geometry["pass"],
-            "all576_covariance": covariance["pass"],
-            "physical_one_hot_orientation": orientation["pass"],
+            "all576_conditional_coordinate_group_action": covariance["pass"],
+            "conditional_one_hot_orientation": orientation["pass"],
             "literal_compute_control_uncompute": controlled["pass"],
             "controlled_global_conflicts": controlled_global["pass"],
             "Cycle230_factor_order_and_noncommutation": factor_order["pass"],
-            "exact_stream": stream["pass"],
+            "exact_conditional_stream": stream["pass"],
             "onsite_composition": onsite["pass"],
+            "fine_translation_falsifier_reproduced": fine_translation["pass_as_reproduced_falsifier"],
+            "constraint_scope_honest": constraints["pass_as_honest_constraint_scope"],
         },
         "negative_claim_shipped": False,
         "minimum_content_claim_shipped": False,
         "shared_obstruction": False,
         "axiom_pressure": False,
-        "pass_for_scoped_positive_and_withholding_broad_negative": True,
+        "status": "FAIL",
+        "failed_checklist_items": (
+            "N7: state-carried translation phase/injective translate-orbit steelman remains live",
+            "promotion contract: current tagged code space fails one-fine-site translation invariance",
+        ),
+        "broad_negative_gate": "FAIL / DO NOT SHIP",
+        "minimum_content_gate": "FAIL / DO NOT SHIP",
+        "shared_obstruction_gate": "FAIL / DO NOT SHIP",
+        "axiom_pressure_gate": "FAIL / DO NOT SHIP",
+        "narrowed_positive_artifact_gate": "PASS",
+        "demoted_artifact_status": "bounded conditional coarse-grid placement with supplied partition/origin/role coloring",
     }
     condition = (
-        len(families) >= 5 and len(pairs) == math.comb(len(walls), 2)
+        len(families) >= 5 and result["N1_all_markers_exact"]
+        and len(pairs) == math.comb(len(walls), 2)
+        and result["N5_five_resolutions_present"]
         and all(result["route_evidence"].values())
         and not result["negative_claim_shipped"]
         and not result["minimum_content_claim_shipped"]
         and not result["shared_obstruction"] and not result["axiom_pressure"]
+        and result["broad_negative_gate"] == "FAIL / DO NOT SHIP"
+        and result["narrowed_positive_artifact_gate"] == "PASS"
+        and result["N7_hostile_steelman"]["authority_status"]
+        == "OPEN / no retained authority"
     )
-    check("fresh N1-N8 scopes the positive packing result and withholds no-go/axiom pressure",
+    check("fresh exact-schema N1-N8 fails broad promotion and retains the narrowed conditional placement",
           condition, result)
     return result
 
@@ -2154,45 +2468,56 @@ def no_go_discipline(geometry: dict, global_geometry: dict, covariance: dict,
 def note_contract() -> dict:
     text = NOTE.read_text()
     required = (
-        "Authority: none", "Audit: unset", "Cycle 610", "Route A", "Route B",
-        "129^3", "2,146,689", "proper-cubic", "role orientation", "same autonomous rule",
-        "L3", "L6", "L7", "all 24", "all 576", "every translation", "wrap seam",
-        "vertex", "edge", "microstep", "support-two", "E G_coarse = G_physical E",
-        "one-hot", "C24X", "compute/uncompute", "dual-neighbor",
-        "coin -> stream -> contact", "noncommutation", "supplied law content",
-        "inverse", "scratch", "blank", "deletion", "malformed", "duplicate-carrier",
+        "Authority: none", "Audit: unset", "Author artifact status accepted: false",
+        "Breakthrough: false", "Cycle 610", "Route A", "Route B",
+        "129^3", "2,146,689", "proper-cubic", "role orientation", "conditional coarse-grid",
+        "L3", "L6", "L7", "All 24", "All 576", "Coarse-grid translations", "wrap-seam",
+        "one-fine-site", "2,970", "23,760", "37,730",
+        "support-one/two", "E_register G_coarse = G_conditional-register E_register",
+        "one-hot", "C24X", "computation/uncomputation", "dual-neighbor",
+        "coin -> stream -> contact", "noncommutation", "Factor order is supplied law content",
+        "inverse", "scratch", "blank", "deletion", "malformed", "Duplicate-carrier",
         "label order", "mass", "contact", "seam", "N1", "N8",
-        "schedule is not time", "not energy", "no axiom pressure",
+        "schedule is not time", "not energy", "not locally enforced",
+        "state-carried translation phase", "PR #5557", "FAIL / DO NOT SHIP",
+        "no axiom pressure",
     )
     forbidden = (
         "all malformed sectors are repaired", "role genesis derived",
         "schedule is physical time", "site count is energy", "shared obstruction proved",
+        "physical M2 compiler is complete", "every translation passes",
     )
     missing = tuple(phrase for phrase in required if phrase not in text)
     forbidden_hits = tuple(phrase for phrase in forbidden if phrase in text)
     result = {"required": required, "missing": missing, "forbidden_hits": forbidden_hits}
-    check("Cycle610 note freezes the physical supercell, exact scope, imports, and N1-N8",
+    check("Cycle610 note freezes the conditional placement, fine-translation falsifier, exact evidence scope, imports, and N1-N8",
           not missing and not forbidden_hits, result)
     return result
 
 
 def main() -> int:
+    global PASS, FAIL
+    PASS = FAIL = 0
     started = time.perf_counter()
-    print("Cycle610 proper-cubic physical supercell stream/composition tournament",
+    print("Cycle610 conditional proper-cubic coarse-grid stream/composition tournament",
           AUTHORITY, AUDIT)
-    cycle606_receipt = shore()
+    shore_result = shore()
+    cycle606_receipt = shore_result["Cycle606_receipt"]
     manifest = layout_manifest()
+    fine_translation = fine_site_translation_falsifier()
+    check("the declared 129-period tagged-role motif fails one-fine-site translation invariance with the exact L3/L6/L7 symmetric differences",
+          fine_translation["pass_as_reproduced_falsifier"], fine_translation)
     orientation = orientation_control_audit()
-    check("24 counted one-hot orientation M2s select mutually exclusive branches and transform covariantly",
+    check("24 tagged orientation roles select mutually exclusive conditional coarse-grid branches and transform under the tested coordinate action",
           orientation["pass"], orientation)
     geometry = local_geometry_audit()
     check("explicit integer supercell paths are NN, injective per simultaneous layer, and all24 covariant",
           geometry["pass"], geometry)
     global_geometry = global_geometry_audit()
-    check("every translated flag-shuttle microstep and wrap edge is conflict-free on L3/L6/L7/all24",
+    check("every coarse-grid-translated flag-shuttle microstep and wrap edge is conflict-free on L3/L6/L7/all24",
           global_geometry["pass"], global_geometry)
     covariance = group_covariance_audit()
-    check("all576 frame products preserve every role, direction, and routed path",
+    check("all576 frame products preserve every conditional coarse-origin role, direction, and routed path action",
           covariance["pass"], covariance)
     elementary, stream_operations = elementary_stream_template(True)
     check("scatter/clear/swap have explicit support-one/two NN coordinate gates",
@@ -2204,33 +2529,41 @@ def main() -> int:
     check("literal branch order is Cycle230 coin-stream-contact and deletion/reversal/noncommutation witnesses remain nonzero",
           factor_order["pass"], factor_order)
     controlled_global = physical_control_global_conflict_audit(controlled)
-    check("actual orientation-controlled bus and cross-gadget schedule classes are conflict-free on every translation/L3/L6/L7/all24",
+    check("conditional orientation-controlled bus and cross-gadget schedule classes are conflict-free on every coarse-grid translation/L3/L6/L7/all24",
           controlled_global["pass"], controlled_global)
     scratch = scratch_and_role_field_audit()
-    check("flag shuttles return path/port/flag work exactly and orientation defects are locally visible",
+    check("flag shuttles return path/port/flag work exactly and coarse-cell orientation-table defects are visible",
           scratch["pass"], scratch)
-    stream = exact_physical_stream_semantics()
-    check("the routed physical macro satisfies exact EG/inverse/deletion/malformed/label-order controls",
+    constraints = local_constraint_scope_audit(orientation, scratch, controlled)
+    check("exactly-one/equality evidence is correctly restricted to tables and conditional computation, with no claimed NN enforcement gadget",
+          constraints["pass_as_honest_constraint_scope"], constraints)
+    stream = exact_conditional_stream_semantics()
+    check("the conditional coarse-grid macro preserves exact register EG/inverse/deletion/malformed/label-order controls",
           stream["pass"], stream)
     onsite = onsite_bus_audit(cycle606_receipt)
-    check("the full-cell NN bus composes Cycle603 mass/contact/seam fixtures by exact routing conjugation",
+    check("the supplied-partition NN bus preserves Cycle603 mass/contact/seam fixtures by exact routing conjugation",
           onsite["pass"], onsite)
-    physical_closure = all(row["pass"] for row in (
+    conditional_placement_evidence = all(row["pass"] for row in (
         orientation, geometry, global_geometry, covariance, elementary,
         controlled, factor_order, controlled_global, scratch, stream, onsite
-    ))
+    )) and constraints["pass_as_honest_constraint_scope"]
+    one_site_physical_target_closed = False
     fallback = {
-        "Route_B_lane_supercell_triggered": not physical_closure,
-        "Route_B_lane_supercell_needed": False,
-        "reason": "Route A physical packing passes every declared geometry and semantics gate"
-                  if physical_closure else "Route A failed; Route B construction required before disposition",
+        "conditional_Route_A_coarse_grid_evidence_pass": conditional_placement_evidence,
+        "one_site_translation_covariant_physical_target_closed": one_site_physical_target_closed,
+        "repair_route_required": True,
+        "preferred_repair": fine_translation["strongest_live_repair"],
+        "Route_B_register_lane_result_retained_but_not_credited_as_physical_repair": True,
+        "reason": "the coordinate/gate construction survives only as a conditional K-grid placement because the tagged code support fails one-fine-site translation invariance",
     }
-    check("Route A closes the declared physical packing contract so Route B fallback is not triggered",
-          physical_closure and not fallback["Route_B_lane_supercell_triggered"], fallback)
+    check("conditional Route A evidence is retained while one-site physical promotion is rejected and a translation-phase repair remains live",
+          conditional_placement_evidence and fine_translation["pass_as_reproduced_falsifier"]
+          and not one_site_physical_target_closed and fallback["repair_route_required"],
+          fallback)
     discipline = no_go_discipline(
         geometry, global_geometry, covariance, stream, onsite,
         orientation, controlled, controlled_global,
-        factor_order,
+        factor_order, fine_translation, constraints,
     )
     note = note_contract()
     elapsed = time.perf_counter() - started
@@ -2238,41 +2571,76 @@ def main() -> int:
     resources = {"elapsed_seconds": elapsed, "maximum_RSS_bytes": maximum_rss}
     check("cold resource caps", elapsed < CAP_SECONDS and maximum_rss < CAP_BYTES, resources)
     receipt = {
-        "status": "cycle610-proper-cubic-physical-supercell-stream-composition-tournament",
+        "status": "cycle610-conditional-proper-cubic-coarse-grid-stream-composition-tournament",
         "authority": AUTHORITY,
         "audit": AUDIT,
-        "HEAD": subprocess.check_output(("git", "rev-parse", "HEAD"), cwd=ROOT, text=True).strip(),
+        "author_artifact_status_accepted": False,
         "pins": PINS,
         "runner_sha256": sha(Path(__file__)),
         "note_sha256": sha(NOTE),
         "elapsed_seconds": elapsed,
         "maximum_RSS_bytes": maximum_rss,
+        "shore": shore_result["verified_inheritance"],
+        "minimal_axioms_test_contract": shore_result["verified_inheritance"]["minimal_axioms_test_contract"],
         "layout_manifest": manifest,
-        "physical_one_hot_orientation_control": orientation,
+        "fine_site_translation_falsifier": fine_translation,
+        "conditional_one_hot_orientation_control": orientation,
         "local_geometry": geometry,
         "global_microstep_geometry": global_geometry,
-        "all576_covariance": covariance,
+        "all576_conditional_coordinate_group_action": covariance,
         "elementary_stream_template": elementary,
-        "literal_orientation_controlled_compute_act_uncompute": controlled,
+        "conditional_orientation_controlled_compute_act_uncompute": controlled,
         "Cycle230_factor_order_deletion_noncommutation": factor_order,
-        "orientation_controlled_global_conflicts": controlled_global,
+        "conditional_orientation_controlled_global_conflicts": controlled_global,
         "scratch_and_role_field": scratch,
-        "exact_physical_stream_semantics": stream,
-        "onsite_mass_contact_seam_composition": onsite,
-        "Route_B_fallback": fallback,
+        "local_constraint_scope": constraints,
+        "exact_conditional_stream_semantics": stream,
+        "conditional_onsite_mass_contact_seam_composition": onsite,
+        "promotion_disposition": fallback,
         "no_go_discipline": discipline,
         "note_contract": note,
-        "strongest_constructive_result": "a translation-invariant 129^3 proper-cubic physical-M2 supercell with 24 counted one-hot orientation M2s compiles the accepted Cycle230 coin -> Cycle606 stream -> Cycle230 contact order into a literal exact C24X-compute, controlled-action, inverse-uncompute support-two NN word; its factor deletion/noncommutation witnesses, bus intervals, dual-neighbor cross gadgets, every translation, all24/all576 frame action, and L3/L6/L7 wrap seam pass",
-        "exact_scope": "valid word code, blank buffer/path/work and clean selector work, uniform locally checkable physical one-hot role orientation, and inherited global exactly-one-carrier/species sector",
+        "strongest_constructive_result": "conditional on a supplied 129-period coarse partition/origin and role coloring, a bounded literal fine-coordinate support-one/two NN descriptor composes the accepted Cycle230 coin -> Cycle606 register stream -> Cycle230 contact order; its conditional bus/cross routing, register EG/inverse/deletion/collision controls, mass/contact/seam residuals, coarse-grid translations, coarse-origin all24/all576 coordinate action, and L3/L6/L7 wrap fixtures pass",
+        "exact_scope": "bounded conditional coarse-grid placement: valid register words, blank buffer/path/work, supplied one-hot orientation/equality tables on a supplied K-periodic partition, and inherited global exactly-one-carrier/species sector",
+        "physical_M2_scope": {
+            "conditional_literal_coordinates_compiled": True,
+            "conditional_support_two_primitive_descriptors_compiled": True,
+            "supplied_partition_origin_or_role_coloring": True,
+            "literal_physical_encoder_composed": False,
+            "physical_intertwiner_residual": None,
+            "physical_code_leakage_evaluated": False,
+            "one_fine_site_translation_covariant_law_executed": False,
+            "proper_rotations_about_every_fine_site_executed": False,
+            "promotion_to_physical_M2_law": False,
+        },
+        "covariance_execution_scope": {
+            "coarse_translations": "all 27/216/343 supplied coarse-cell displacements, each equal to K=129 fine sites",
+            "one_fine_site_translation": "code-support falsifier executed; symmetric differences 2970/23760/37730",
+            "all24": "conditional rotated branch/path/bus coordinate realizations about supplied coarse origins",
+            "all576": "conditional coordinate group composition, not physical update covariance",
+            "proper_rotations_about_every_physical_site": "not executed",
+        },
         "supplied_structure": (
-            "129^3 fine-site supercell placement and bounded structural role colors",
-            "uniform 24-one-hot physical role-orientation genesis",
+            "129^3 fine-site conditional placement, K-periodic partition/origin, and structural role colors",
+            "uniform 24-one-hot role-orientation table and genesis",
             "blank B/path/flag/predicate-work initialization",
             "global exactly-one-carrier/species sector",
             "coin-stream-contact order and scatter-clear-swap update factorization",
             "beta/contact-g parameterized rotations",
         ),
-        "optimal_next_campaign": "replace the supplied uniform role-orientation and global one-carrier sectors with autonomous local preparation/syndrome dynamics, then shrink the supercell under the same exhaustive conflict certificate and add certified beta/g precision budgeting",
+        "interpretation_firewall": {
+            "schedule_is_physical_time": False,
+            "site_or_gate_count_is_source_or_energy": False,
+            "truth_table_is_locally_enforced_constraint": False,
+            "coarse_grid_translation_is_one_fine_site_translation": False,
+            "coordinate_group_action_is_physical_update_covariance": False,
+            "register_EG_is_physical_intertwiner": False,
+        },
+        "local_cycle610_not_causal_time_PR5557_cycle610": "This local supercell Cycle610 is distinct from the causal-time PR #5557 Cycle610; the number collision carries no scientific dependency or evidence.",
+        "breakthrough_bar_met": False,
+        "breakthrough_default": "no",
+        "broad_negative_gate": discipline["broad_negative_gate"],
+        "demoted_artifact_status": discipline["demoted_artifact_status"],
+        "optimal_next_campaign": "construct a state-carried Z_129^3 translation phase or injective union of all translated role copies, with literal fine-NN phase/exactly-one/equality enforcement, then execute one-fine-site domain/update covariance, every-site rotations, physical encoder/intertwiner/leakage, deletion, and L3/L6/L7 controls; separately add reversible collision syndrome and certified beta/g precision",
         "shared_obstruction_or_axiom_pressure": False,
         "constitutional_effect": "none",
         "tests_passed": PASS,
@@ -2288,8 +2656,9 @@ def main() -> int:
         "elapsed_seconds": elapsed,
         "maximum_RSS_bytes": maximum_rss,
         "full_M2_per_cell": K**3,
-        "physical_Route_A_stream": physical_closure,
-        "Route_B_fallback_triggered": fallback["Route_B_lane_supercell_triggered"],
+        "conditional_coarse_grid_Route_A": conditional_placement_evidence,
+        "one_site_translation_covariant_physical_Route_A": False,
+        "fine_translation_falsifier": True,
         "axiom_pressure": False,
     }
     print("SUMMARY_JSON", json.dumps(summary, sort_keys=True))

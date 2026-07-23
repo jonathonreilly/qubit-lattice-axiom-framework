@@ -1,0 +1,39 @@
+PASS committed Cycle532/537/636 abstract shores are byte-exact and Cycle642 is not consumed :: {'files': 9, 'semantics': 4}
+PASS L3 forward full abstract tableau isometry :: {'factors': 19414, 'elapsed': 0.24547391606029123}
+PASS L6 forward full abstract tableau isometry :: {'factors': 218515, 'elapsed': 19.422653040965088}
+PASS L7 forward full abstract tableau isometry :: {'factors': 394819, 'elapsed': 61.96373333293013}
+PASS two inequivalent pivot/elimination schedules induce the same code and complete abstract generator chart :: {'forward': 19414, 'reverse': 16441}
+PASS factor deletion, malformed stabilizer, and optional gauge-vacuum controls are load-bearing and inverse-visible :: {'deletions': 3, 'vacuum': 26}
+PASS encoder/decoder inverse returns target, gauge, stabilizer blanks, and zero work exactly :: {'probes': 1324}
+PASS every factor is classified by rough-graph distance or explicit unplaced-cap status without claiming physical locality :: {'sizes': 3, 'L7max': 20}
+PASS L3/L6/L7 abstract encoder presentations close under all24/all576 :: {'sizes': 3, 'frames': 24}
+PASS the full Cycle537 full-Fock G composes with E at generator/algebra level for coin/FSWAP/contact/B, mass and seam :: {'generator_failures': 0, 'onsite': 5.272182555577386e-15}
+PASS N1-N8 scope firewall keeps the constructive abstract E distinct from physical placement and genesis :: {'families': 5, 'conditions': 2}
+PASS canonical claim gates, top-level flags, and scaling firewall are machine-enforced :: {'top_constitutional_effect_none': True, 'top_claim_flags_false': True, 'no_go_Status_PASS': True, 'all_promotion_gates_FAIL_DO_NOT_SHIP': True, 'no_go_claim_flags_false': True, 'scaling_firewall_complete': True, 'pass': True}
+PASS Cycle643 note preserves abstract/physical, causal, supply, and no-go firewalls :: []
+{
+  "pass": true,
+  "tests_passed": 13,
+  "tests_failed": 0,
+  "elapsed_seconds": 165.13669595797546,
+  "maximum_RSS_bytes": 341540864,
+  "receipt": "/private/tmp/toe-science.BB0KQV/outputs/abstract_fill_disk_full_tableau_isometry_cycle643_receipt_2026_07_23.json"
+}
+      165.84 real       163.63 user         1.76 sys
+           341540864  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              174068  page reclaims
+                 769  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1747  voluntary context switches
+               18550  involuntary context switches
+       3419957782923  instructions retired
+        612824139148  cycles elapsed
+           415417112  peak memory footprint

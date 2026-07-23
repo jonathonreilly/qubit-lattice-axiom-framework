@@ -1,0 +1,1464 @@
+{
+  "audit": "unset",
+  "author_accepted": false,
+  "author_artifact_status_accepted": false,
+  "authority": "none",
+  "axiom_pressure": false,
+  "axiom_pressure_claim": false,
+  "breakthrough": false,
+  "breakthrough_bar_met": false,
+  "broad_no_go_claim": false,
+  "canonical_claim_gate_contract": {
+    "all_promotion_gates_FAIL_DO_NOT_SHIP": true,
+    "no_go_Status_PASS": true,
+    "no_go_claim_flags_false": true,
+    "pass": true,
+    "scaling_firewall_complete": true,
+    "top_claim_flags_false": true,
+    "top_constitutional_effect_none": true
+  },
+  "constitutional_effect": "none",
+  "covariance": {
+    "compile_time_retriangulated_abstract_cap_presentations": true,
+    "encoder_family_transport_rule": "E_R = F_R E C_R^dagger on each frame-specific abstract presentation",
+    "frame_products": 576,
+    "one_fixed_physical_3D_cap_embedding_claimed": false,
+    "pass": true,
+    "physical_3D_gate_distance_claimed": false,
+    "proper_cubic_frames": 24,
+    "rows": [
+      {
+        "abstract_cap_boundary_labels": 9,
+        "factor_list_transport_digest": "e3efbbbcd1ed6536e7d63c63aa61b5030ebfb5135c1c64b913c41a1a8a44c236",
+        "frame_failures": 0,
+        "group_failures": 0,
+        "length": 3,
+        "split": "construction"
+      },
+      {
+        "abstract_cap_boundary_labels": 18,
+        "factor_list_transport_digest": "84063bd2ace0c21a6b40439a019674751617074a8afd1c23f2dc92b598772b48",
+        "frame_failures": 0,
+        "group_failures": 0,
+        "length": 6,
+        "split": "train"
+      },
+      {
+        "abstract_cap_boundary_labels": 21,
+        "factor_list_transport_digest": "8c94dc627b0873ef1d16570dacff3ba757e7bb3cdd0ce5ce9177ea31ef1b0557",
+        "frame_failures": 0,
+        "group_failures": 0,
+        "length": 7,
+        "split": "held-out-no-refit"
+      }
+    ],
+    "runtime_frame_selector": false
+  },
+  "deletion_and_gauge_vacuum_controls": {
+    "delete_one_gauge_vacuum_reference_rank": 467,
+    "delete_one_independent_stabilizer_rank": 441,
+    "flip_one_stabilizer_sign_phase_inconsistencies": 15,
+    "flip_one_stabilizer_sign_rank": 442,
+    "flipped_stabilizer_decodes_to_minus_reference": true,
+    "full_deleted_phase_inconsistencies": [
+      0,
+      0
+    ],
+    "full_stabilizer_rank": 442,
+    "gauge_vacuum_generators": 26,
+    "gauge_vacuum_is_optional_supplied_input_fixture": true,
+    "gauge_vacuum_matter_commutator_failures": 0,
+    "gauge_vacuum_phase_inconsistencies": [
+      0,
+      0,
+      0
+    ],
+    "independent_stabilizer_basis_rank": 442,
+    "length": 3,
+    "malformed_minus_gauge_vacuum_rank": 468,
+    "minus_gauge_reference_consistent_but_refused_by_declared_plus_fixture": true,
+    "pass": true,
+    "representative_factor_deletions": [
+      {
+        "ancilla_X_failures": 10,
+        "complete_generator_coordinate_failures": 0,
+        "deleted_decoder_factor": "H",
+        "detected": true,
+        "factor_index": 0,
+        "stabilizer_reference_failures": 9
+      },
+      {
+        "ancilla_X_failures": 1,
+        "complete_generator_coordinate_failures": 0,
+        "deleted_decoder_factor": "S",
+        "detected": true,
+        "factor_index": 4,
+        "stabilizer_reference_failures": 5
+      },
+      {
+        "ancilla_X_failures": 2,
+        "complete_generator_coordinate_failures": 0,
+        "deleted_decoder_factor": "CNOT",
+        "detected": true,
+        "factor_index": 1,
+        "stabilizer_reference_failures": 9
+      }
+    ],
+    "stabilizer_plus_gauge_vacuum_rank": 468
+  },
+  "elapsed_seconds": 162.7230596659938,
+  "factor_program_scaling_firewall": {
+    "bounded_depth_theorem": false,
+    "constant_factors_per_cell_theorem": false,
+    "generic_Gaussian_all_L_linear_size_theorem": false,
+    "held_L7_is_asymptotic_locality_evidence": false,
+    "observed_factors_per_cell_increase": true,
+    "rows": [
+      {
+        "cells": 27,
+        "factors": 19414,
+        "factors_per_cell": 719.0370370370371,
+        "length": 3
+      },
+      {
+        "cells": 216,
+        "factors": 218515,
+        "factors_per_cell": 1011.6435185185185,
+        "length": 6
+      },
+      {
+        "cells": 343,
+        "factors": 394819,
+        "factors_per_cell": 1151.0758017492712,
+        "length": 7
+      }
+    ],
+    "spatial_M2_overhead_and_factor_program_scaling_kept_distinct": true
+  },
+  "highest_honest_terminal": "complete literal H/S/CNOT isometry for the exact abstract Cycle537 fill-disk code at L3/L6/L7 with full generator/algebra intertwining; not a physical 3D M2 compiler",
+  "immutable_shore": {
+    "Cycle642_physical_embedding_used_as_premise": false,
+    "dirty_worktree_used_as_premise": false,
+    "expected_sha256": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_FIXED_WILSON_INITIALIZER_PREPARATION_TOURNAMENT_CYCLE636_NOTE_2026-07-23.md": "8427006703508c1648271b787b83cc70c8dbedb1aa068fb0edee4449a2fd587c",
+      "docs/work_history/repo/review_feedback/PHYSICAL_LOCAL_WILSON_FILL_DISK_CYCLE537_NOTE_2026-07-21.md": "e413a8c079fa2d5ff14d1b46d19df60cd07d853d118b51d8494632cc03a427f8",
+      "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md": "5f668f6cc04a5eece23f913d5869f57553df583c23d6dbb5cdac6756be41bfc3",
+      "outputs/physical_fixed_wilson_initializer_preparation_tournament_cycle636_receipt_2026_07_23.json": "984291942ab966236876f2d79f4d8ff8453a2c9a99eeae02aee4e76bd54de348",
+      "outputs/physical_local_wilson_fill_disk_cycle537_receipt_2026_07_21.json": "ebe7222afedba7907dcff9e233b2bc30284af8d35d5d7cae1941668ed81c5856",
+      "outputs/physical_rough_gauge_subsystem_quotient_cycle532_receipt_2026_07_21.json": "ee9687bb73f7a2e67c90b78fececad3d3db5af4f80ef2140bb81937d09a04391",
+      "scripts/physical_fixed_wilson_initializer_preparation_tournament_cycle636_2026_07_23.py": "d4a3321943078dbe5dfc1fb598705fbe361c0edb80c2f790643bd3d5f2352b39",
+      "scripts/physical_local_wilson_fill_disk_cycle537_2026_07_21.py": "cd00034db5e106accfd95e33de5c9b3b2a26b2c35719611454c3486481ad47ac",
+      "scripts/physical_rough_gauge_subsystem_quotient_cycle532_2026_07_21.py": "8bf1c836661b4c902d09cf2f7d147b07c3083404569ce9bc0a2b3dd4820233da"
+    },
+    "head": "c27f72ff8b1058d872695829c05e95da415813bc",
+    "observed_sha256": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_FIXED_WILSON_INITIALIZER_PREPARATION_TOURNAMENT_CYCLE636_NOTE_2026-07-23.md": "8427006703508c1648271b787b83cc70c8dbedb1aa068fb0edee4449a2fd587c",
+      "docs/work_history/repo/review_feedback/PHYSICAL_LOCAL_WILSON_FILL_DISK_CYCLE537_NOTE_2026-07-21.md": "e413a8c079fa2d5ff14d1b46d19df60cd07d853d118b51d8494632cc03a427f8",
+      "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md": "5f668f6cc04a5eece23f913d5869f57553df583c23d6dbb5cdac6756be41bfc3",
+      "outputs/physical_fixed_wilson_initializer_preparation_tournament_cycle636_receipt_2026_07_23.json": "984291942ab966236876f2d79f4d8ff8453a2c9a99eeae02aee4e76bd54de348",
+      "outputs/physical_local_wilson_fill_disk_cycle537_receipt_2026_07_21.json": "ebe7222afedba7907dcff9e233b2bc30284af8d35d5d7cae1941668ed81c5856",
+      "outputs/physical_rough_gauge_subsystem_quotient_cycle532_receipt_2026_07_21.json": "ee9687bb73f7a2e67c90b78fececad3d3db5af4f80ef2140bb81937d09a04391",
+      "scripts/physical_fixed_wilson_initializer_preparation_tournament_cycle636_2026_07_23.py": "d4a3321943078dbe5dfc1fb598705fbe361c0edb80c2f790643bd3d5f2352b39",
+      "scripts/physical_local_wilson_fill_disk_cycle537_2026_07_21.py": "cd00034db5e106accfd95e33de5c9b3b2a26b2c35719611454c3486481ad47ac",
+      "scripts/physical_rough_gauge_subsystem_quotient_cycle532_2026_07_21.py": "8bf1c836661b4c902d09cf2f7d147b07c3083404569ce9bc0a2b3dd4820233da"
+    },
+    "pass": true,
+    "semantics": {
+      "Cycle537_embedding_open": true,
+      "Cycle537_exact_factor": true,
+      "Cycle537_preparation_open": true,
+      "Cycle636_tableau_open": true
+    }
+  },
+  "inherited_full_Fock_G_composition": {
+    "E_Gcoarse_equals_Gabstract_E": true,
+    "blocks": {
+      "B_GammaP": {
+        "B_blocks_per_cell": 3,
+        "coefficient_identity_failures": 0,
+        "vacuum_linear_or_constant_residual_terms": 0
+      },
+      "FSWAP": {
+        "deleted_term_residual": 1.0,
+        "inverse_square_residual": 0.0,
+        "matrix_residual": 0.0
+      },
+      "coin_onsite": {
+        "intertwiner_residual": 5.272182555577386e-15,
+        "inverse_residual": 7.504184205291937e-15,
+        "leakage_residual": 0.0
+      },
+      "contact": {
+        "active_two_particle_states": 15,
+        "deletion_residual": 0.36789306705608243
+      },
+      "mass": {
+        "Cycle219_residual": 2.220446049250313e-16
+      },
+      "seam": {
+        "Cycle230_subchecks": {
+          "fail": 0,
+          "pass": 6
+        },
+        "singular_values": [
+          0.49577140670498115,
+          0.45566604871445016
+        ]
+      }
+    },
+    "composition_level": "exact generator and polynomial algebra on the declared abstract code space",
+    "generator_failures": 0,
+    "inherited_Cycle537_target_controls": {
+      "FSWAP_polynomial_inverse": {
+        "deleted_fourth_term_residual": 1.0,
+        "inverse_square_residual": 0.0,
+        "matrix_residual": 0.0,
+        "pass": true,
+        "perturbed_phase_basis_residual": 9.999999995833334e-05,
+        "unitarity_residual": 0.0
+      },
+      "full_Fock_Gamma_P": {
+        "Cycle529_15_call_chart_runtime_retained_literally": false,
+        "Cycle529_chart_CZ_and_bank_SWAP_calls_removed_modulo_gauge": 12,
+        "complete_low_sector_censuses": [
+          {
+            "complete_tests": 281626,
+            "deleted_CZ_basis_residual": 2,
+            "deleted_CZ_layer_first_witness": [
+              0,
+              1
+            ],
+            "deleted_CZ_layer_phase_failures": 60600,
+            "deleted_bank_SWAP_code_failures": 281250,
+            "deleted_bank_SWAP_first_witness": [
+              0
+            ],
+            "inverse_roundtrip_failures": 0,
+            "length": 5,
+            "modes": 750,
+            "pass": true,
+            "perturbed_first_active_CZ_basis_residual": 9.999999995833334e-05,
+            "sectors": {
+              "one_particle": {
+                "bank_failures": 0,
+                "inverse_failures": 0,
+                "phase_failures": 0,
+                "tests": 750
+              },
+              "two_particle": {
+                "bank_failures": 0,
+                "inverse_failures": 0,
+                "phase_failures": 0,
+                "tests": 280875
+              },
+              "vacuum": {
+                "bank_failures": 0,
+                "inverse_failures": 0,
+                "phase_failures": 0,
+                "tests": 1
+              }
+            },
+            "terminal_code_leakage_failures": 0
+          },
+          {
+            "complete_tests": 840457,
+            "deleted_CZ_basis_residual": 2,
+            "deleted_CZ_layer_first_witness": [
+              0,
+              1
+            ],
+            "deleted_CZ_layer_phase_failures": 154800,
+            "deleted_bank_SWAP_code_failures": 839808,
+            "deleted_bank_SWAP_first_witness": [
+              0
+            ],
+            "inverse_roundtrip_failures": 0,
+            "length": 6,
+            "modes": 1296,
+            "pass": true,
+            "perturbed_first_active_CZ_basis_residual": 9.999999995833334e-05,
+            "sectors": {
+              "one_particle": {
+                "bank_failures": 0,
+                "inverse_failures": 0,
+                "phase_failures": 0,
+                "tests": 1296
+              },
+              "two_particle": {
+                "bank_failures": 0,
+                "inverse_failures": 0,
+                "phase_failures": 0,
+                "tests": 839160
+              },
+              "vacuum": {
+                "bank_failures": 0,
+                "inverse_failures": 0,
+                "phase_failures": 0,
+                "tests": 1
+              }
+            },
+            "terminal_code_leakage_failures": 0
+          }
+        ],
+        "higher_sector_controls": [
+          {
+            "Cycle525_matching_three_cell_dimension": true,
+            "deterministic_high_sector_failures": {
+              "bank_failure": 0,
+              "inverse_failure": 0,
+              "phase_failure": 0,
+              "target_failure": 0
+            },
+            "deterministic_high_sector_tests": 120,
+            "deterministic_high_sector_weights": [
+              4,
+              6,
+              187,
+              375,
+              749
+            ],
+            "length": 5,
+            "pass": true,
+            "three_cell_corner_total_N_le_3": {
+              "failures": {
+                "bank_failure": 0,
+                "inverse_failure": 0,
+                "phase_failure": 0,
+                "target_failure": 0
+              },
+              "pass": true,
+              "tests": 988
+            },
+            "three_cell_straight_total_N_le_3": {
+              "failures": {
+                "bank_failure": 0,
+                "inverse_failure": 0,
+                "phase_failure": 0,
+                "target_failure": 0
+              },
+              "pass": true,
+              "tests": 988
+            },
+            "two_cell_full_Fock": {
+              "failures": {
+                "bank_failure": 0,
+                "inverse_failure": 0,
+                "phase_failure": 0,
+                "target_failure": 0
+              },
+              "pass": true,
+              "tests": 4096
+            }
+          },
+          {
+            "Cycle525_matching_three_cell_dimension": true,
+            "deterministic_high_sector_failures": {
+              "bank_failure": 0,
+              "inverse_failure": 0,
+              "phase_failure": 0,
+              "target_failure": 0
+            },
+            "deterministic_high_sector_tests": 120,
+            "deterministic_high_sector_weights": [
+              4,
+              6,
+              324,
+              648,
+              1295
+            ],
+            "length": 6,
+            "pass": true,
+            "three_cell_corner_total_N_le_3": {
+              "failures": {
+                "bank_failure": 0,
+                "inverse_failure": 0,
+                "phase_failure": 0,
+                "target_failure": 0
+              },
+              "pass": true,
+              "tests": 988
+            },
+            "three_cell_straight_total_N_le_3": {
+              "failures": {
+                "bank_failure": 0,
+                "inverse_failure": 0,
+                "phase_failure": 0,
+                "target_failure": 0
+              },
+              "pass": true,
+              "tests": 988
+            },
+            "two_cell_full_Fock": {
+              "failures": {
+                "bank_failure": 0,
+                "inverse_failure": 0,
+                "phase_failure": 0,
+                "target_failure": 0
+              },
+              "pass": true,
+              "tests": 4096
+            }
+          }
+        ],
+        "pass": true,
+        "quadratic_full_Fock_theorems": [
+          {
+            "coefficient_identity_failures": 0,
+            "first_failure": null,
+            "full_Fock_extension": "both exterior and endpoint signs are quadratic occupation characters; coefficient equality plus zero constant/linear terms proves every sector",
+            "length": 5,
+            "mode_pairs": 280875,
+            "pass": true,
+            "quadratic_residual_coefficients": 60600,
+            "symmetric_residual_matrix_GF2_rank": 576,
+            "vacuum_linear_or_constant_residual_terms": 0
+          },
+          {
+            "coefficient_identity_failures": 0,
+            "first_failure": null,
+            "full_Fock_extension": "both exterior and endpoint signs are quadratic occupation characters; coefficient equality plus zero constant/linear terms proves every sector",
+            "length": 6,
+            "mode_pairs": 839160,
+            "pass": true,
+            "quadratic_residual_coefficients": 154800,
+            "symmetric_residual_matrix_GF2_rank": 1040,
+            "vacuum_linear_or_constant_residual_terms": 0
+          }
+        ],
+        "rough_gauge_B_blocks_per_cell": 3,
+        "rough_pullback_statement": "each mapped outer-edge FSWAP is the exact B/A polynomial; the faithful matter quotient therefore pulls the product back to Gamma(P)"
+      },
+      "mass_contact_and_seam": {
+        "Cycle219_mass_fixture_residual": 2.220446049250313e-16,
+        "Cycle230_contact_active_two_particle_states": 15,
+        "Cycle230_contact_deletion_residual": 0.36789306705608243,
+        "Cycle230_seam_singular_values": [
+          0.49577140670498115,
+          0.45566604871445016
+        ],
+        "Cycle230_seam_subchecks": {
+          "fail": 0,
+          "pass": 6
+        },
+        "Cycle523_full_M64_onsite_pass": true,
+        "correlated_shadow_coin_and_reverse_A_transition_synthesized": false,
+        "full_update_physical_intertwiner_claimed": false,
+        "interpretation": "re-executed logical comparators; preservation follows conditionally through the faithful fixed-spin matter factor, not through a prepared E circuit",
+        "onsite_intertwiner_residual": 5.272182555577386e-15,
+        "onsite_inverse_residual": 7.504184205291937e-15,
+        "onsite_leakage_residual": 0.0,
+        "pass": true,
+        "rough_code_mass_contact_seam_matrix_enumerated": false
+      },
+      "pass": true
+    },
+    "pass": true,
+    "physical_Cycle642_G_claimed": false,
+    "proof_rule": "Clifford E maps every complete matter generator code-exactly; multiplication and linear combination therefore map each inherited coin/FSWAP/contact/B polynomial, while gauge inputs are spectators",
+    "sizes": [
+      3,
+      6,
+      7
+    ]
+  },
+  "inverse_controls": {
+    "pass": true,
+    "rows": [
+      {
+        "canonical_generator_probes": 1260,
+        "factorwise_inverse_rules": {
+          "CNOT": "CNOT",
+          "H": "H",
+          "S": "S S S"
+        },
+        "length": 3,
+        "returned_blank_work_exact": true,
+        "roundtrip_failures": 0,
+        "scope": "complete 2n canonical Pauli basis",
+        "work_M2": 0
+      },
+      {
+        "canonical_generator_probes": 32,
+        "factorwise_inverse_rules": {
+          "CNOT": "CNOT",
+          "H": "H",
+          "S": "S S S"
+        },
+        "length": 6,
+        "returned_blank_work_exact": true,
+        "roundtrip_failures": 0,
+        "scope": "deterministic boundary/quartile/ancilla/input basis sample plus factorwise inverse theorem",
+        "work_M2": 0
+      },
+      {
+        "canonical_generator_probes": 32,
+        "factorwise_inverse_rules": {
+          "CNOT": "CNOT",
+          "H": "H",
+          "S": "S S S"
+        },
+        "length": 7,
+        "returned_blank_work_exact": true,
+        "roundtrip_failures": 0,
+        "scope": "deterministic boundary/quartile/ancilla/input basis sample plus factorwise inverse theorem",
+        "work_M2": 0
+      }
+    ]
+  },
+  "isometry_L3_L6_L7": [
+    {
+      "abstract_complete_generator_sha256": "416f27645537cac28a747b105c99a1032852821a77fd956eb6a7ff4bdae32f40",
+      "all_local_and_fill_stabilizers_conjugated": 687,
+      "ancilla_X_leakage_failures": 0,
+      "both_matter_parities_in_domain": true,
+      "coarse_cells": 27,
+      "code_exponent": 188,
+      "complete_gauge_generators_conjugated": 108,
+      "complete_matter_generators_conjugated": 567,
+      "decoded_complete_generator_sha256": "59316221d0a3c8172b8ab7b9ce99c3b65eebfd08a60fd5d43685dc379e419513",
+      "decoder_logical_chart_gate_count": 7236,
+      "decoder_stabilizer_gate_count": 8230,
+      "elapsed_seconds": 0.240846750093624,
+      "encoder_factor_count": 19414,
+      "encoder_factor_counts": {
+        "CNOT": 9183,
+        "H": 4309,
+        "S": 5922
+      },
+      "encoder_factor_sha256": "d6fda91655323dee344ca6c8cddabf304b14dfcf01c51755c7ea81f70dd03d7a",
+      "encoder_factors_per_cell": 719.0370370370371,
+      "encoder_first_factors": [
+        {
+          "a": 617,
+          "b": -1,
+          "kind": "H"
+        },
+        {
+          "a": 617,
+          "b": -1,
+          "kind": "S"
+        },
+        {
+          "a": 617,
+          "b": -1,
+          "kind": "S"
+        },
+        {
+          "a": 617,
+          "b": -1,
+          "kind": "S"
+        },
+        {
+          "a": 617,
+          "b": -1,
+          "kind": "S"
+        },
+        {
+          "a": 617,
+          "b": -1,
+          "kind": "S"
+        },
+        {
+          "a": 617,
+          "b": -1,
+          "kind": "S"
+        },
+        {
+          "a": 617,
+          "b": -1,
+          "kind": "H"
+        }
+      ],
+      "encoder_last_factors": [
+        {
+          "a": 0,
+          "b": 3,
+          "kind": "CNOT"
+        },
+        {
+          "a": 3,
+          "b": -1,
+          "kind": "S"
+        },
+        {
+          "a": 3,
+          "b": -1,
+          "kind": "S"
+        },
+        {
+          "a": 3,
+          "b": -1,
+          "kind": "S"
+        },
+        {
+          "a": 0,
+          "b": 2,
+          "kind": "CNOT"
+        },
+        {
+          "a": 2,
+          "b": -1,
+          "kind": "H"
+        },
+        {
+          "a": 0,
+          "b": 1,
+          "kind": "CNOT"
+        },
+        {
+          "a": 1,
+          "b": -1,
+          "kind": "H"
+        }
+      ],
+      "expected_stabilizer_rank": 442,
+      "factor_alphabet": [
+        "H",
+        "S",
+        "CNOT"
+      ],
+      "gauge_generator_partition_failures": 0,
+      "gauge_input_qubits": 26,
+      "independent_stabilizers": 442,
+      "input_wire_sha256": "985de332ed308a8d1619f7548974b1d3b1660f3d4ec8ee1a02f3a25bb740e975",
+      "length": 3,
+      "matter_generator_target_only_failures": 0,
+      "maximum_factor_support_M2": 2,
+      "maximum_generator_ancilla_Z_dressing": 126,
+      "parity_conjugate_selector_supplied": true,
+      "pass": true,
+      "physical_M2": 630,
+      "pivot_order": "forward",
+      "returned_blank_work_exact": true,
+      "shared_parity_logical_match": true,
+      "split": "construction",
+      "stabilizer_blank_input_M2": 442,
+      "stabilizer_pivot_sha256": "27d6dd6d38ad408d0a5f187a0120b216a9a537af61e2888f0bc94dbc7f85623f",
+      "stabilizer_plus_reference_failures": 0,
+      "target_Fock_input_qubits": 162,
+      "target_plus_gauge_equals_code_exponent": true,
+      "work_M2": 0
+    },
+    {
+      "abstract_complete_generator_sha256": "1b4f57c3e2e7f5389e8b72bd1bcb3ef9c9839e405b6ff05491bda238c7812e43",
+      "all_local_and_fill_stabilizers_conjugated": 5367,
+      "ancilla_X_leakage_failures": 0,
+      "both_matter_parities_in_domain": true,
+      "coarse_cells": 216,
+      "code_exponent": 1511,
+      "complete_gauge_generators_conjugated": 864,
+      "complete_matter_generators_conjugated": 4536,
+      "decoded_complete_generator_sha256": "eebf2ca91e9a8df995fc9bee93a048b7b7100fc984258c05b3e6d02492e9b322",
+      "decoder_logical_chart_gate_count": 101017,
+      "decoder_stabilizer_gate_count": 87952,
+      "elapsed_seconds": 19.32559045800008,
+      "encoder_factor_count": 218515,
+      "encoder_factor_counts": {
+        "CNOT": 130565,
+        "H": 43631,
+        "S": 44319
+      },
+      "encoder_factor_sha256": "31add9b442401fce67be963c2ab0cd523aba38ec86957014f98b1fc334fbc3e7",
+      "encoder_factors_per_cell": 1011.6435185185185,
+      "encoder_first_factors": [
+        {
+          "a": 4931,
+          "b": -1,
+          "kind": "S"
+        },
+        {
+          "a": 4931,
+          "b": -1,
+          "kind": "S"
+        },
+        {
+          "a": 4931,
+          "b": -1,
+          "kind": "S"
+        },
+        {
+          "a": 4929,
+          "b": -1,
+          "kind": "H"
+        },
+        {
+          "a": 4929,
+          "b": -1,
+          "kind": "S"
+        },
+        {
+          "a": 4929,
+          "b": -1,
+          "kind": "S"
+        },
+        {
+          "a": 4929,
+          "b": -1,
+          "kind": "S"
+        },
+        {
+          "a": 4929,
+          "b": -1,
+          "kind": "S"
+        }
+      ],
+      "encoder_last_factors": [
+        {
+          "a": 0,
+          "b": 3,
+          "kind": "CNOT"
+        },
+        {
+          "a": 3,
+          "b": -1,
+          "kind": "S"
+        },
+        {
+          "a": 3,
+          "b": -1,
+          "kind": "S"
+        },
+        {
+          "a": 3,
+          "b": -1,
+          "kind": "S"
+        },
+        {
+          "a": 0,
+          "b": 2,
+          "kind": "CNOT"
+        },
+        {
+          "a": 2,
+          "b": -1,
+          "kind": "H"
+        },
+        {
+          "a": 0,
+          "b": 1,
+          "kind": "CNOT"
+        },
+        {
+          "a": 1,
+          "b": -1,
+          "kind": "H"
+        }
+      ],
+      "expected_stabilizer_rank": 3421,
+      "factor_alphabet": [
+        "H",
+        "S",
+        "CNOT"
+      ],
+      "gauge_generator_partition_failures": 0,
+      "gauge_input_qubits": 215,
+      "independent_stabilizers": 3421,
+      "input_wire_sha256": "52dd670dc191d4e33b16b7ef06700534e7adf16feaf5d70b943e40cab06c73b7",
+      "length": 6,
+      "matter_generator_target_only_failures": 0,
+      "maximum_factor_support_M2": 2,
+      "maximum_generator_ancilla_Z_dressing": 457,
+      "parity_conjugate_selector_supplied": true,
+      "pass": true,
+      "physical_M2": 4932,
+      "pivot_order": "forward",
+      "returned_blank_work_exact": true,
+      "shared_parity_logical_match": true,
+      "split": "train",
+      "stabilizer_blank_input_M2": 3421,
+      "stabilizer_pivot_sha256": "9d1708b6a7bd138e926731cacd571a6c086df6fc7e7e9d9a3c1cb2082ef5982d",
+      "stabilizer_plus_reference_failures": 0,
+      "target_Fock_input_qubits": 1296,
+      "target_plus_gauge_equals_code_exponent": true,
+      "work_M2": 0
+    },
+    {
+      "abstract_complete_generator_sha256": "cebea194f1bc48a6ee02ee893dd7b258a507d7e5543a022c728a496ed929ee53",
+      "all_local_and_fill_stabilizers_conjugated": 8487,
+      "ancilla_X_leakage_failures": 0,
+      "both_matter_parities_in_domain": true,
+      "coarse_cells": 343,
+      "code_exponent": 2400,
+      "complete_gauge_generators_conjugated": 1372,
+      "complete_matter_generators_conjugated": 7203,
+      "decoded_complete_generator_sha256": "d09bca7e5b58ab8cc88dc1d02584b20e05285c0fddd7ccd651ab085660d1a37c",
+      "decoder_logical_chart_gate_count": 194724,
+      "decoder_stabilizer_gate_count": 153905,
+      "elapsed_seconds": 60.6649727919139,
+      "encoder_factor_count": 394819,
+      "encoder_factor_counts": {
+        "CNOT": 249397,
+        "H": 76137,
+        "S": 69285
+      },
+      "encoder_factor_sha256": "8ecfcae8378294fd9625e725d191eb7138e91aec0b70f74fde2661cfd6be550f",
+      "encoder_factors_per_cell": 1151.0758017492712,
+      "encoder_first_factors": [
+        {
+          "a": 7797,
+          "b": -1,
+          "kind": "H"
+        },
+        {
+          "a": 7797,
+          "b": -1,
+          "kind": "S"
+        },
+        {
+          "a": 7797,
+          "b": -1,
+          "kind": "S"
+        },
+        {
+          "a": 7797,
+          "b": -1,
+          "kind": "S"
+        },
+        {
+          "a": 7797,
+          "b": -1,
+          "kind": "S"
+        },
+        {
+          "a": 7797,
+          "b": -1,
+          "kind": "S"
+        },
+        {
+          "a": 7797,
+          "b": -1,
+          "kind": "S"
+        },
+        {
+          "a": 7797,
+          "b": -1,
+          "kind": "H"
+        }
+      ],
+      "encoder_last_factors": [
+        {
+          "a": 0,
+          "b": 3,
+          "kind": "CNOT"
+        },
+        {
+          "a": 3,
+          "b": -1,
+          "kind": "S"
+        },
+        {
+          "a": 3,
+          "b": -1,
+          "kind": "S"
+        },
+        {
+          "a": 3,
+          "b": -1,
+          "kind": "S"
+        },
+        {
+          "a": 0,
+          "b": 2,
+          "kind": "CNOT"
+        },
+        {
+          "a": 2,
+          "b": -1,
+          "kind": "H"
+        },
+        {
+          "a": 0,
+          "b": 1,
+          "kind": "CNOT"
+        },
+        {
+          "a": 1,
+          "b": -1,
+          "kind": "H"
+        }
+      ],
+      "expected_stabilizer_rank": 5398,
+      "factor_alphabet": [
+        "H",
+        "S",
+        "CNOT"
+      ],
+      "gauge_generator_partition_failures": 0,
+      "gauge_input_qubits": 342,
+      "independent_stabilizers": 5398,
+      "input_wire_sha256": "de649ef972e078e544bca07e64fb2badb3a952d8c2dc87b18d15c223abe23ce6",
+      "length": 7,
+      "matter_generator_target_only_failures": 0,
+      "maximum_factor_support_M2": 2,
+      "maximum_generator_ancilla_Z_dressing": 631,
+      "parity_conjugate_selector_supplied": true,
+      "pass": true,
+      "physical_M2": 7798,
+      "pivot_order": "forward",
+      "returned_blank_work_exact": true,
+      "shared_parity_logical_match": true,
+      "split": "held-out-no-refit",
+      "stabilizer_blank_input_M2": 5398,
+      "stabilizer_pivot_sha256": "7280e6dbcda34a8741c355eaa6a27eff947e56c0c2bb90a2f13d8bdb44e2158a",
+      "stabilizer_plus_reference_failures": 0,
+      "target_Fock_input_qubits": 2058,
+      "target_plus_gauge_equals_code_exponent": true,
+      "work_M2": 0
+    }
+  ],
+  "maximum_RSS_bytes": 332316672,
+  "minimum_content_claim": false,
+  "no_go_discipline": {
+    "N1_broad_negative_gate": "FAIL / DO NOT SHIP",
+    "N1_normalized_families": [
+      {
+        "family": "signed stabilizer Gaussian decoder",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "Clifford column elimination to +Z pivots",
+        "object_formulation": "complete commuting Cycle537 stabilizer tableau",
+        "status": "POSITIVE",
+        "strength_vs_target": "target-equivalent abstractly",
+        "terminal_obligation": "literal E and inverse"
+      },
+      {
+        "family": "quotient symplectic chart",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "Gram-Schmidt plus shared parity conjugate",
+        "object_formulation": "complete matter/gauge quotient generators",
+        "status": "POSITIVE",
+        "strength_vs_target": "target-equivalent abstractly",
+        "terminal_obligation": "6N target plus N-1 gauge inputs"
+      },
+      {
+        "family": "dual pivot order",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "same code and generator coordinates modulo Pauli sign frame",
+        "object_formulation": "reverse signed tableau elimination",
+        "status": "POSITIVE",
+        "strength_vs_target": "comparator",
+        "terminal_obligation": "no hidden preferred order"
+      },
+      {
+        "family": "deletion and malformed-reference falsifier",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "rank, sign and coordinate witnesses",
+        "object_formulation": "factor/stabilizer/gauge-vacuum deletions",
+        "status": "POSITIVE",
+        "strength_vs_target": "comparator",
+        "terminal_obligation": "load-bearing circuit/reference audit"
+      },
+      {
+        "family": "frame-transported presentation",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "signed-axis action and 576 products",
+        "object_formulation": "24 abstract cap presentations",
+        "status": "POSITIVE",
+        "strength_vs_target": "weaker than physical embedding",
+        "terminal_obligation": "proper-cubic presentation family"
+      }
+    ],
+    "N1_open_routes_separate_without_honesty_marker": [
+      {
+        "family": "physical routed cap encoder",
+        "mechanism_invariant": "bounded physical distance routing",
+        "object_formulation": "one fixed 3D placement",
+        "status": "OPEN_UNTESTED_NOT_FAILURE",
+        "strength_vs_target": "different stronger target",
+        "terminal_obligation": "physical M2 E"
+      },
+      {
+        "family": "autonomous local genesis",
+        "mechanism_invariant": "derive pivot/root/order/gauge reference",
+        "object_formulation": "blank substrate plus state-carried scheduler",
+        "status": "OPEN_UNTESTED_NOT_FAILURE",
+        "strength_vs_target": "different stronger target",
+        "terminal_obligation": "host-free initialization"
+      }
+    ],
+    "N1_reason": "NO_NEGATIVE_CLAIM_IS_PROMOTED",
+    "N2_collapsed_open_conditions": {
+      "W_genesis": "generate blank stabilizer/gauge reference, pivot/root/order and schedule autonomously",
+      "W_place": "embed abstract cap adjacency and all encoder factors into bounded physical 3D neighborhoods"
+    },
+    "N2_directional_pairs": [
+      {
+        "closure_implied": false,
+        "from": "W_place",
+        "to": "W_genesis"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_genesis",
+        "to": "W_place"
+      }
+    ],
+    "N3_hidden_condition_scan": [
+      "cap topology and adjacency are supplied",
+      "pivot, root, row order, parity-conjugate selector and factor schedule are supplied",
+      "blank stabilizer M2s and optional plus gauge vacuum are supplied",
+      "Cycle642 physical embedding is not consumed",
+      "finite L3/L6/L7 domains and compile-time frame presentations are supplied",
+      "generic Gaussian factor/program scaling has no all-L linear-size, constant-per-cell, or bounded-depth theorem"
+    ],
+    "N4_residual_matching": [
+      {
+        "current_line": 592,
+        "current_path": "scripts/abstract_fill_disk_full_tableau_isometry_cycle643_2026_07_23.py",
+        "current_ref": "working-tree Cycle643 candidate",
+        "current_residual": "complete L3/L6/L7 abstract H/S/CNOT isometry",
+        "exact_match": true,
+        "prior_line": 39,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_LOCAL_WILSON_FILL_DISK_CYCLE537_NOTE_2026-07-21.md",
+        "prior_ref": "c27f72ff8b1058d872695829c05e95da415813bc",
+        "prior_residual": "no abstract Cycle537 code-space isometry",
+        "same_scope": true,
+        "use_as_closure": true
+      },
+      {
+        "current_line": 299,
+        "current_path": "scripts/abstract_fill_disk_full_tableau_isometry_cycle643_2026_07_23.py",
+        "current_ref": "working-tree Cycle643 candidate",
+        "current_residual": "complete stabilizer and logical-chart factor lists",
+        "exact_match": true,
+        "prior_line": 138,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_FIXED_WILSON_INITIALIZER_PREPARATION_TOURNAMENT_CYCLE636_NOTE_2026-07-23.md",
+        "prior_ref": "c27f72ff8b1058d872695829c05e95da415813bc",
+        "prior_residual": "full stabilizer tableau and volume logical map not derived",
+        "same_scope": true,
+        "use_as_closure": true
+      },
+      {
+        "current_line": 1097,
+        "current_path": "scripts/abstract_fill_disk_full_tableau_isometry_cycle643_2026_07_23.py",
+        "current_ref": "working-tree Cycle643 candidate",
+        "current_residual": "full abstract fill-code isometry without physical placement",
+        "exact_match": false,
+        "prior_line": 40,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_SHARED_SEAM_CODE_SPACE_ISOMETRY_COMPILER_CYCLE539_NOTE_2026-07-21.md",
+        "prior_ref": "c27f72ff8b1058d872695829c05e95da415813bc",
+        "prior_residual": "selected-patch overlap recurrence",
+        "same_scope": false,
+        "use_as_closure": false
+      }
+    ],
+    "N5_rhetoric_audit": [
+      {
+        "lattice_wide": "withheld",
+        "per_block": "abstract cap adjacency only",
+        "per_element": "tested factor arity",
+        "per_mode": "UNTESTED",
+        "per_site": "UNTESTED",
+        "phrase": "abstract support-two is not physical 3D locality"
+      },
+      {
+        "lattice_wide": "withheld",
+        "per_block": "finite scheduled circuit",
+        "per_element": "one gate",
+        "per_mode": "UNTESTED",
+        "per_site": "UNTESTED",
+        "phrase": "a compiler factor count is not time or a rate"
+      },
+      {
+        "lattice_wide": "withheld",
+        "per_block": "full E domain",
+        "per_element": "explicit input",
+        "per_mode": "gauge fixture",
+        "per_site": "declared reference",
+        "phrase": "a blank stabilizer or gauge reference is not autonomous genesis"
+      }
+    ],
+    "N6_partial_closure_paths": [
+      {
+        "file": "scripts/abstract_fill_disk_full_tableau_isometry_cycle643_2026_07_23.py",
+        "status": "EXECUTED_FULL_E_L3_L6_L7",
+        "what_closes": "abstract Cycle537 state-preparation/isometry surface"
+      },
+      {
+        "file": "scripts/physical_local_wilson_fill_disk_cycle537_2026_07_21.py",
+        "status": "COMMITTED_ABSTRACT_CODE",
+        "what_closes": "bounded cap stabilizers and target-times-gauge algebra"
+      },
+      {
+        "file": "scripts/physical_fixed_wilson_initializer_preparation_tournament_cycle636_2026_07_23.py",
+        "status": "RETIRED_OPEN_TABLEAU_ROW",
+        "what_closes": "its hostile full-tableau steelman"
+      },
+      {
+        "file": "future physical embedding/routing campaign",
+        "status": "OPEN_NOT_TESTED",
+        "what_closes": "physical distance/locality rather than abstract factor support"
+      },
+      {
+        "file": "future genesis campaign",
+        "status": "OPEN_NOT_TESTED",
+        "what_closes": "host-free roots, blank/gauge reference, order and schedule"
+      }
+    ],
+    "N7_steelman_against_any_no_go": {
+      "actionable_test": "take a reviewed physical cap embedding, compile each Cycle643 factor to bounded-distance paths, uncompute every routing rail, and compare the complete abstract generator digest at L3/L6/L7",
+      "argument": "Transport the now-complete abstract Clifford list through a reviewed Cycle642-or-later physical cap embedding, route each support-two factor with bounded physical swaps or a local wavefront, and replace the compile-time pivot/order by state-carried control; Cycle643 removes the algebraic isometry uncertainty rather than foreclosing that construction.",
+      "citations": [
+        {
+          "line": 254,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_LOCAL_WILSON_FILL_DISK_CYCLE537_NOTE_2026-07-21.md",
+          "ref": "c27f72ff8b1058d872695829c05e95da415813bc",
+          "supports": "physical cap embedding remains a separate constructive route"
+        },
+        {
+          "line": 212,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_FIXED_WILSON_INITIALIZER_PREPARATION_TOURNAMENT_CYCLE636_NOTE_2026-07-23.md",
+          "ref": "c27f72ff8b1058d872695829c05e95da415813bc",
+          "supports": "the full-tableau route was explicitly actionable and has now advanced"
+        }
+      ],
+      "mechanism": "physical cap routing plus autonomous state-carried tableau schedule",
+      "terminal_obligation": "same complete generator table, bounded physical neighborhoods, returned routing work, and all24/all576 without a runtime frame selector"
+    },
+    "N8_cross_cycle_echo": [
+      {
+        "applicability": "exact",
+        "citation_line": 39,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_LOCAL_WILSON_FILL_DISK_CYCLE537_NOTE_2026-07-21.md",
+        "citation_ref": "c27f72ff8b1058d872695829c05e95da415813bc",
+        "cycle": 537,
+        "mechanism": "complete signed stabilizer plus logical-frame Clifford synthesis",
+        "retired": "missing abstract code-space isometry"
+      },
+      {
+        "applicability": "exact abstract target",
+        "citation_line": 174,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_FIXED_WILSON_INITIALIZER_PREPARATION_TOURNAMENT_CYCLE636_NOTE_2026-07-23.md",
+        "citation_ref": "c27f72ff8b1058d872695829c05e95da415813bc",
+        "cycle": 636,
+        "mechanism": "materialized H/S/CNOT E at L3/L6/L7",
+        "retired": "full-tableau steelman"
+      },
+      {
+        "applicability": "prior mechanism only; not closure evidence",
+        "citation_line": 16,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_SHARED_SEAM_CODE_SPACE_ISOMETRY_COMPILER_CYCLE539_NOTE_2026-07-21.md",
+        "citation_ref": "c27f72ff8b1058d872695829c05e95da415813bc",
+        "cycle": 539,
+        "mechanism": "compute/select/uncompute on a different patch",
+        "retired": "selected-patch isometry only"
+      },
+      {
+        "applicability": "retained exactly, not physical embedding",
+        "citation_line": 35,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_LOCAL_WILSON_FILL_DISK_CYCLE537_NOTE_2026-07-21.md",
+        "citation_ref": "c27f72ff8b1058d872695829c05e95da415813bc",
+        "cycle": 537,
+        "mechanism": "compile-time retriangulated presentation orbit",
+        "retired": "abstract all24/all576 cap presentation"
+      },
+      {
+        "applicability": "still enforced; Cycle642 not consumed",
+        "citation_line": 16,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_FIXED_WILSON_INITIALIZER_PREPARATION_TOURNAMENT_CYCLE636_NOTE_2026-07-23.md",
+        "citation_ref": "c27f72ff8b1058d872695829c05e95da415813bc",
+        "cycle": 636,
+        "mechanism": "dependency-layer separation",
+        "retired": "physical embedding kept separate"
+      }
+    ],
+    "Status": "PASS",
+    "axiom_pressure": false,
+    "axiom_pressure_claim": false,
+    "axiom_pressure_gate": "FAIL / DO NOT SHIP",
+    "broad_negative_gate": "FAIL / DO NOT SHIP",
+    "broad_no_go_claim": false,
+    "broad_no_go_claimed": false,
+    "minimum_content_claim": false,
+    "minimum_content_claimed": false,
+    "minimum_content_gate": "FAIL / DO NOT SHIP",
+    "pass": true,
+    "shared_obstruction_claim": false,
+    "shared_obstruction_gate": "FAIL / DO NOT SHIP",
+    "shared_route_independent_obstruction": false,
+    "shared_route_independent_obstruction_claimed": false,
+    "status": "PASS"
+  },
+  "note_contract": {
+    "missing": [],
+    "pass": true,
+    "required_fragments": [
+      "authority: **none**",
+      "audit: **unset**",
+      "author artifact status accepted: **false**",
+      "breakthrough bar met: **false**",
+      "abstract enlarged fill-disk code",
+      "h",
+      "s",
+      "cnot",
+      "both matter parities",
+      "all 24",
+      "all 576",
+      "e g_coarse = g_abstract e",
+      "not time or a rate",
+      "not physical 3d locality",
+      "cycle642",
+      "shared route-independent obstruction: **not established**",
+      "axiom pressure: **none**",
+      "fail / do not ship",
+      "factor/program scaling is not established"
+    ]
+  },
+  "note_sha256": "e28a55a8312ae9cf4b9048f8b07557602e5a223cc6da487eeddd8b730a982d8f",
+  "optimal_next_campaign": "transport the exact Cycle643 factor grammar through a separately reviewed physical cap embedding, bound physical routing distance/work, and replace pivot/root/order/blank/gauge references with a state-carried autonomous schedule",
+  "pass": true,
+  "physical_distance_audit": {
+    "abstract_gate_arity_at_most_two": true,
+    "bounded_physical_3D_locality_claimed": false,
+    "metric": "exact line-graph distance between Cycle532 rough-edge M2s; cap-sheet M2s are counted unplaced because Cycle642 is not a premise",
+    "pass": true,
+    "rows": [
+      {
+        "all_measured_rough_rough_factors_nearest_neighbor": false,
+        "length": 3,
+        "rough_graph_distance_greater_than_one": 6820,
+        "rough_graph_distance_maximum": 8,
+        "rough_graph_distance_one": 1414,
+        "rough_graph_distance_p50_p90_p99": [
+          4,
+          6,
+          8
+        ],
+        "single_qubit_factors_on_rough_graph": 9329,
+        "single_qubit_factors_on_unplaced_cap_sites": 902,
+        "split": "construction",
+        "two_qubit_factors_total": 9183,
+        "two_qubit_rough_rough_distance_measured": 8234,
+        "two_qubit_with_one_or_more_unplaced_cap_endpoints": 949
+      },
+      {
+        "all_measured_rough_rough_factors_nearest_neighbor": false,
+        "length": 6,
+        "rough_graph_distance_greater_than_one": 113660,
+        "rough_graph_distance_maximum": 20,
+        "rough_graph_distance_one": 12305,
+        "rough_graph_distance_p50_p90_p99": [
+          7,
+          12,
+          16
+        ],
+        "single_qubit_factors_on_rough_graph": 84859,
+        "single_qubit_factors_on_unplaced_cap_sites": 3091,
+        "split": "train",
+        "two_qubit_factors_total": 130565,
+        "two_qubit_rough_rough_distance_measured": 125965,
+        "two_qubit_with_one_or_more_unplaced_cap_endpoints": 4600
+      },
+      {
+        "all_measured_rough_rough_factors_nearest_neighbor": false,
+        "length": 7,
+        "rough_graph_distance_greater_than_one": 223051,
+        "rough_graph_distance_maximum": 20,
+        "rough_graph_distance_one": 19761,
+        "rough_graph_distance_p50_p90_p99": [
+          8,
+          14,
+          18
+        ],
+        "single_qubit_factors_on_rough_graph": 141240,
+        "single_qubit_factors_on_unplaced_cap_sites": 4182,
+        "split": "held-out-no-refit",
+        "two_qubit_factors_total": 249397,
+        "two_qubit_rough_rough_distance_measured": 242812,
+        "two_qubit_with_one_or_more_unplaced_cap_endpoints": 6585
+      }
+    ],
+    "unplaced_cap_factors_not_assigned_fake_distance": true
+  },
+  "pivot_order_equivalence": {
+    "equivalent_modulo_stabilizer_and_target_gauge_chart": true,
+    "factor_lists_identical": false,
+    "forward_factor_count": 19414,
+    "forward_factor_sha256": "d6fda91655323dee344ca6c8cddabf304b14dfcf01c51755c7ea81f70dd03d7a",
+    "length": 3,
+    "orders": [
+      "forward-low-pivot",
+      "reverse-high-pivot"
+    ],
+    "pass": true,
+    "preferred_elimination_order_is_physical_input": false,
+    "relative_chart": "same complete even-algebra symplectic coordinates followed by one solved target/gauge Pauli sign frame; the supplied odd parity conjugate can differ only by target parity P",
+    "relative_sign_frame_gauge_support": 18,
+    "relative_sign_frame_target_support": 117,
+    "reverse_factor_count": 16441,
+    "reverse_factor_sha256": "f3580da877e2931aecbaa8ee0887f0e1ddfe188bb99428a19d6a528e3058afc4",
+    "reverse_row": {
+      "abstract_complete_generator_sha256": "770519cd927009841f5b3b4e405f115c52dbbc2994bf270f5f69d0bdb762c0e1",
+      "all_local_and_fill_stabilizers_conjugated": 687,
+      "ancilla_X_leakage_failures": 0,
+      "both_matter_parities_in_domain": true,
+      "coarse_cells": 27,
+      "code_exponent": 188,
+      "complete_gauge_generators_conjugated": 108,
+      "complete_matter_generators_conjugated": 567,
+      "decoded_complete_generator_sha256": "37e01a9070e194b97f71b595ffcf66839353eb33f3a22229d7bc920704c4f930",
+      "decoder_logical_chart_gate_count": 4608,
+      "decoder_stabilizer_gate_count": 8221,
+      "elapsed_seconds": 0.2395815000636503,
+      "encoder_factor_count": 16441,
+      "encoder_factor_counts": {
+        "CNOT": 7606,
+        "H": 3417,
+        "S": 5418
+      },
+      "encoder_factor_sha256": "f3580da877e2931aecbaa8ee0887f0e1ddfe188bb99428a19d6a528e3058afc4",
+      "encoder_factors_per_cell": 608.925925925926,
+      "encoder_first_factors": [
+        {
+          "a": 593,
+          "b": -1,
+          "kind": "H"
+        },
+        {
+          "a": 593,
+          "b": -1,
+          "kind": "S"
+        },
+        {
+          "a": 593,
+          "b": -1,
+          "kind": "S"
+        },
+        {
+          "a": 593,
+          "b": -1,
+          "kind": "S"
+        },
+        {
+          "a": 593,
+          "b": -1,
+          "kind": "S"
+        },
+        {
+          "a": 593,
+          "b": -1,
+          "kind": "S"
+        },
+        {
+          "a": 593,
+          "b": -1,
+          "kind": "S"
+        },
+        {
+          "a": 593,
+          "b": -1,
+          "kind": "H"
+        }
+      ],
+      "encoder_last_factors": [
+        {
+          "a": 169,
+          "b": -1,
+          "kind": "H"
+        },
+        {
+          "a": 629,
+          "b": 170,
+          "kind": "CNOT"
+        },
+        {
+          "a": 170,
+          "b": -1,
+          "kind": "H"
+        },
+        {
+          "a": 629,
+          "b": 171,
+          "kind": "CNOT"
+        },
+        {
+          "a": 171,
+          "b": -1,
+          "kind": "H"
+        },
+        {
+          "a": 629,
+          "b": 172,
+          "kind": "CNOT"
+        },
+        {
+          "a": 629,
+          "b": 623,
+          "kind": "CNOT"
+        },
+        {
+          "a": 629,
+          "b": 626,
+          "kind": "CNOT"
+        }
+      ],
+      "expected_stabilizer_rank": 442,
+      "factor_alphabet": [
+        "H",
+        "S",
+        "CNOT"
+      ],
+      "gauge_generator_partition_failures": 0,
+      "gauge_input_qubits": 26,
+      "independent_stabilizers": 442,
+      "input_wire_sha256": "b68db4c869f049c008d93caa9a06e86510dcb8896e243b5543c741420ef1eb66",
+      "length": 3,
+      "matter_generator_target_only_failures": 0,
+      "maximum_factor_support_M2": 2,
+      "maximum_generator_ancilla_Z_dressing": 221,
+      "parity_conjugate_selector_supplied": true,
+      "pass": true,
+      "physical_M2": 630,
+      "pivot_order": "reverse",
+      "returned_blank_work_exact": true,
+      "shared_parity_logical_match": true,
+      "split": "construction",
+      "stabilizer_blank_input_M2": 442,
+      "stabilizer_pivot_sha256": "08a38fd6c36685b6d453889e2cb1addcd3632ee66a54e5f5d622253c3d4e4a13",
+      "stabilizer_plus_reference_failures": 0,
+      "target_Fock_input_qubits": 162,
+      "target_plus_gauge_equals_code_exponent": true,
+      "work_M2": 0
+    },
+    "same_complete_abstract_matter_gauge_symplectic_coordinates": true,
+    "same_signed_stabilizer_code": true,
+    "sign_frame_correction_exists": true,
+    "sign_frame_equation_failures": 0
+  },
+  "process_swap_count": 0,
+  "route_disposition": {
+    "autonomous_genesis": "OPEN_NOT_CLAIMED",
+    "complete_stabilizer_matter_gauge_conjugation": "PASS_CODE_EXACT",
+    "full_abstract_Cycle537_E": "PASS_LITERAL_H_S_CNOT_L3_L6_L7",
+    "inherited_full_Fock_G": "PASS_E_GCOARSE_EQUALS_GABSTRACT_E_ON_CODE",
+    "physical_3D_M2_embedding_and_routing": "OPEN_NOT_CONSUMED",
+    "second_pivot_order": "PASS_EQUIVALENT_MODULO_STABILIZER_TARGET_GAUGE_SIGN_CHART"
+  },
+  "runner_sha256": "e64afbb2e7b97b02c90adc3245b92008f8a18b026efe3d5e1ff65cd363295c94",
+  "shared_obstruction_claim": false,
+  "shared_route_independent_obstruction": false,
+  "six_wall_ledger": {
+    "C_int": "coin/FSWAP/contact/B mass/seam compose; no new interaction and Cycle642 not consumed",
+    "C_local": "factor support<=2 and abstract all24/all576; physical 3D distance/routing untested",
+    "C_num": "exact target-times-gauge dimensions and complete tables; no empirical unit and factors not time/rates",
+    "C_ref": "full abstract E/both parity/inverse/order equivalence; pivot/root/chart/blank/gauge reference/schedule supplied",
+    "C_source": "all blanks/gauge/work/schedule explicit, work=0; no source/gravity or autonomous genesis",
+    "C_wrap": "abstract local stabilizers and inverse visible; physical embedding/renewal/Records/history open"
+  },
+  "status": "positive complete literal abstract Cycle537 fill-disk H/S/CNOT isometry; physical 3D placement and autonomous genesis open",
+  "supplied_structure_inventory": {
+    "Cycle532_Cycle537_committed_abstract_algebra": true,
+    "Cycle642_physical_embedding": false,
+    "abstract_cap_topology_and_adjacency": true,
+    "all_L_bounded_depth_theorem": false,
+    "all_L_linear_size_or_constant_factors_per_cell_theorem": false,
+    "autonomous_genesis": false,
+    "blank_plus_stabilizer_M2": true,
+    "finite_L3_L6_L7_domains": true,
+    "optional_plus_gauge_vacuum": true,
+    "parity_conjugate_and_target_gauge_chart": true,
+    "pivot_root_row_order_and_schedule": true,
+    "work_M2": 0
+  },
+  "tests_failed": 0,
+  "tests_passed": 13
+}

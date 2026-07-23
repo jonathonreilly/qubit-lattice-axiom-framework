@@ -1,0 +1,1576 @@
+{
+  "Cycle583_A2_and_relative_fiber_physical_host": {
+    "E15_dagger_E15_residual": 0.0,
+    "E15_shape": [
+      64,
+      15
+    ],
+    "all24_A2_characters": [
+      1,
+      -1,
+      -1,
+      1,
+      -1,
+      1,
+      1,
+      -1,
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      -1,
+      1,
+      1,
+      -1,
+      1,
+      -1,
+      -1,
+      1
+    ],
+    "all24_A2_maximum_ray_residual": 5.382005793715205e-16,
+    "all576_A2_character_composition_residual": 5.551115123125783e-16,
+    "all576_wedge_representation_composition_residual": 8.599750569898517e-16,
+    "coin_factor_count": 832,
+    "coin_factor_deletion_signal": 1.9999999999999996,
+    "coin_reconstruction_residual": 5.5475755987250936e-15,
+    "contact_EG_residual": 0.0,
+    "contact_deletion_signal": 1.4248437218933756,
+    "local_malformed_rejections": {
+      "one_carrier": true,
+      "same_mode_double_assignment": true,
+      "three_carriers": true,
+      "vacuum": true
+    },
+    "one_particle_analytic_mass": 0.4534056541748852,
+    "one_particle_mass_residual": 1.1102230246251565e-16,
+    "one_particle_rest_mass": 0.4534056541748851,
+    "onsite_A2_contact_basis_dimension": 15,
+    "onsite_wedge_coin_EG_residual": 4.2520609074186217e-16,
+    "onsite_wedge_coin_inverse_residual": 2.7802305306322836e-15,
+    "onsite_wedge_coin_leakage": 0.0,
+    "pass": true,
+    "physical_support": {
+      "coin_M2": 6,
+      "contact_M2": 6,
+      "separated_relative_coin_M2": 12
+    },
+    "proper_cubic_A2_rank": 1,
+    "relative_36_fiber_coin_EG_residual": 3.3306690738754696e-16,
+    "relative_36_fiber_inverse_residual": 4.302542620923802e-15,
+    "relative_36_supplied_reference": "two distinct labeled cell slots: left anchor first, right relative cell second; direction index 6a+b; exchanging slots requires the global antisymmetric rule",
+    "relative_direction_fiber_dimension": 36,
+    "unlanded_A2_line_scope": {
+      "both_reported_A2_spectral_concentrations_have_local_internal_ray_in_E15": true,
+      "branch": "origin/causal-time/cycle629-a2-line-discriminator-20260722",
+      "commit": "1085e03fddcf8c2ea2575ba27d554aa92c7e7f9f",
+      "held_L13_or_species_claimed": false,
+      "isolation_or_width_claimed": false,
+      "reason": "E15 spans the full onsite wedge2 space and therefore its unique proper-cubic A2 direction; this does not encode either concentration's spatial wavefunction",
+      "spatial_spectral_realization_claimed": false
+    }
+  },
+  "Cycle612_endpoint_packet_disposition": {
+    "Cycle583_local_matter_payload_hosted": true,
+    "Cycle612_clock_harness_rerun": false,
+    "Cycle612_full_physical_endpoint_packet_hosted": false,
+    "Cycle612_local_endpoint_packet_matter_slot_compatible": true,
+    "Cycle612_prior_proper_time_claimed": false,
+    "onsite_A2_contact_dimension": 15,
+    "pass": true,
+    "rate_claimed": false,
+    "reason": "the local A2/contact and separated relative coin fit bounded M2 blocks, but no tested route supplies one path-independent, seam-complete same-species stream E/G",
+    "relative_direction_fiber_dimension": 36,
+    "tick_claimed": false
+  },
+  "audit": "unset",
+  "author_accepted": false,
+  "author_artifact_status_accepted": false,
+  "authority": "none",
+  "axiom_pressure": false,
+  "breakthrough": false,
+  "breakthrough_bar_met": false,
+  "breakthrough_default": "no",
+  "broad_negative_gate": "FAIL / DO NOT SHIP",
+  "constitutional_effect": "none",
+  "decisive_route_discriminator": "the same endpoint-local FSWAP word disagrees with alternate three-mode and cubic-square paths and with the full exterior stream on 4140/154800/340452 L3/L6/L7 pair basis states; the exact ordered repair has supports 110/1082/1766 and selects a non-cubic prefix chain",
+  "edge_link_and_exchange_witness": {
+    "contractible_exchange_loop_amplitude": [
+      -1.0,
+      0.0
+    ],
+    "contractible_exchange_loop_word": "1010",
+    "cubic_square_two_path_failure_words": [
+      "0011",
+      "0110",
+      "1001",
+      "1100"
+    ],
+    "cubic_square_two_path_weight2_residual": 4.0,
+    "deleted_phase_signal": 1.9999999999999991,
+    "deleted_uncompute_signal": 1.4142135623730945,
+    "edge_EG_residual": 8.291228560033028e-16,
+    "edge_code_E_shape": [
+      8,
+      4
+    ],
+    "edge_code_leakage": 8.022394911587854e-17,
+    "edge_link_vacuum": "one local scratch M2 in |0> per active sign macro",
+    "fermionic_exchange_phase_required": -1,
+    "flat_Z2_square_Wilson_phase": 1,
+    "maximum_primitive_support_M2": 2,
+    "ordinary_SWAP_exchange_loop_amplitude": [
+      1.0,
+      0.0
+    ],
+    "pass_as_discriminator": true,
+    "support_one_two_primitive_count_per_link_FSWAP": 32,
+    "three_mode_direct_vs_adjacent_path_residual": 2.8284271247461903,
+    "three_occupied_pattern_rows": [
+      {
+        "direct_phase": 1.0,
+        "path_phase": -1.0,
+        "residual": 2.0,
+        "same_output": true,
+        "word": "011"
+      },
+      {
+        "direct_phase": -1.0,
+        "path_phase": -1.0,
+        "residual": 0.0,
+        "same_output": true,
+        "word": "101"
+      },
+      {
+        "direct_phase": 1.0,
+        "path_phase": -1.0,
+        "residual": 2.0,
+        "same_output": true,
+        "word": "110"
+      }
+    ]
+  },
+  "elapsed_seconds": 5.68820966698695,
+  "exact_target": "exactly two identical Cycle219 carriers on the Cycle230 L3/L6/L7 torus; computational-basis M2 E; local coin/full seam stream/contact G; exchange and alternate-path signs; route A link, route B paired equality, route C block/marker; all24/all576",
+  "full_M64_compiled": false,
+  "full_coin_stream_contact_sparse_tests": {
+    "G_coarse": "Cycle230 onsite exterior coin -> full depth-two seam stream -> local contact on exactly two identical carriers",
+    "G_physical_local_candidate": "six-M2 coin/contact plus endpoint-local FSWAP macros",
+    "factorwise_exactness_covers_full_basis": true,
+    "ordered_repair": "same product with the exact intermediate-occupation parity for every transposition",
+    "pass_as_discriminator": true,
+    "rows": [
+      {
+        "contains_seam_sample": true,
+        "length": 3,
+        "maximum_local_endpoint_product_residual": 2.0,
+        "maximum_ordered_repair_product_residual": 0.0,
+        "pass_as_discriminator": true,
+        "samples": [
+          {
+            "input_pair": [
+              0,
+              1
+            ],
+            "local_endpoint_product_residual": 2.0,
+            "ordered_repair_product_residual": 0.0,
+            "target_output_terms": 9
+          },
+          {
+            "input_pair": [
+              38,
+              108
+            ],
+            "local_endpoint_product_residual": 1.005392052125976,
+            "ordered_repair_product_residual": 0.0,
+            "target_output_terms": 36
+          },
+          {
+            "input_pair": [
+              0,
+              6
+            ],
+            "local_endpoint_product_residual": 1.2411961063749464,
+            "ordered_repair_product_residual": 0.0,
+            "target_output_terms": 36
+          },
+          {
+            "input_pair": [
+              54,
+              108
+            ],
+            "local_endpoint_product_residual": 1.118530259894277,
+            "ordered_repair_product_residual": 0.0,
+            "target_output_terms": 36
+          }
+        ],
+        "split": "train"
+      },
+      {
+        "contains_seam_sample": true,
+        "length": 6,
+        "maximum_local_endpoint_product_residual": 2.0,
+        "maximum_ordered_repair_product_residual": 0.0,
+        "pass_as_discriminator": true,
+        "samples": [
+          {
+            "input_pair": [
+              0,
+              1
+            ],
+            "local_endpoint_product_residual": 2.0,
+            "ordered_repair_product_residual": 0.0,
+            "target_output_terms": 9
+          },
+          {
+            "input_pair": [
+              182,
+              1080
+            ],
+            "local_endpoint_product_residual": 0.9036540944927259,
+            "ordered_repair_product_residual": 0.0,
+            "target_output_terms": 36
+          },
+          {
+            "input_pair": [
+              0,
+              6
+            ],
+            "local_endpoint_product_residual": 1.2411961063749464,
+            "ordered_repair_product_residual": 0.0,
+            "target_output_terms": 36
+          },
+          {
+            "input_pair": [
+              432,
+              864
+            ],
+            "local_endpoint_product_residual": 0.0,
+            "ordered_repair_product_residual": 0.0,
+            "target_output_terms": 36
+          }
+        ],
+        "split": "held"
+      },
+      {
+        "contains_seam_sample": true,
+        "length": 7,
+        "maximum_local_endpoint_product_residual": 2.0,
+        "maximum_ordered_repair_product_residual": 0.0,
+        "pass_as_discriminator": true,
+        "samples": [
+          {
+            "input_pair": [
+              0,
+              1
+            ],
+            "local_endpoint_product_residual": 2.0,
+            "ordered_repair_product_residual": 0.0,
+            "target_output_terms": 9
+          },
+          {
+            "input_pair": [
+              254,
+              1764
+            ],
+            "local_endpoint_product_residual": 0.9036540944927258,
+            "ordered_repair_product_residual": 0.0,
+            "target_output_terms": 36
+          },
+          {
+            "input_pair": [
+              0,
+              6
+            ],
+            "local_endpoint_product_residual": 1.2411961063749464,
+            "ordered_repair_product_residual": 0.0,
+            "target_output_terms": 36
+          },
+          {
+            "input_pair": [
+              686,
+              1372
+            ],
+            "local_endpoint_product_residual": 0.0,
+            "ordered_repair_product_residual": 0.0,
+            "target_output_terms": 36
+          }
+        ],
+        "split": "held-out-size"
+      }
+    ]
+  },
+  "interpretation_firewall": {
+    "Cycle583_fiber_is_full_physical_compiler": false,
+    "Cycle612_clock_harness_rerun": false,
+    "endpoint_packet_is_Record": false,
+    "factor_schedule_is_time": false,
+    "fixed_two_particle_is_full_M64": false,
+    "generator_element_is_rate": false,
+    "local_A2_host_is_full_stream": false,
+    "one_edge_FSWAP_is_lattice_CAR_compiler": false,
+    "wrapped_phase_is_energy": false
+  },
+  "maximum_RSS_bytes": 107462656,
+  "no_go_discipline": {
+    "N1_live_routes": [
+      "twisted charge-ribbon gauge code",
+      "auxiliary Majorana link code",
+      "tensor pull-through fermion code",
+      "bounded gauge-sector preparation",
+      "overlapping covariant block code"
+    ],
+    "N1_normalized_families": [
+      {
+        "family": "direct occupation endpoint-FSWAP",
+        "honesty_marker": "ATTEMPTED",
+        "marker": "ATTEMPTED",
+        "mechanism": "support-two CZ-SWAP signs on Cycle230 A/B edges",
+        "object": "6L^3 occupation M2 basis with exactly two occupied",
+        "result": "one edge and exchange loop pass; full stream/path equality fail",
+        "terminal": "same E, full seam stream and alternate-path equality"
+      },
+      {
+        "family": "cubic Z2 edge connection",
+        "honesty_marker": "ATTEMPTED",
+        "marker": "ATTEMPTED",
+        "mechanism": "link holonomy supplies exchange signs",
+        "object": "edge sign M2s with local plaquette/Gauss checks",
+        "result": "flat square has +1; required -1 needs an unbuilt source-bound flux/framing law",
+        "terminal": "flat path equality plus fermionic -1 and locally generated vacuum"
+      },
+      {
+        "family": "ordered prefix-parity auxiliary",
+        "honesty_marker": "ATTEMPTED",
+        "marker": "ATTEMPTED",
+        "mechanism": "local prefix constraints turn interval parity into endpoint data",
+        "object": "one cumulative parity M2 per ordered mode",
+        "result": "stream exact; support/initialization use a growing non-cubic chain",
+        "terminal": "exact stream without preferred order and all24 covariance"
+      },
+      {
+        "family": "paired/doubled equality code",
+        "honesty_marker": "ATTEMPTED",
+        "marker": "ATTEMPTED",
+        "mechanism": "data FSWAP plus spectator SWAP under local equality",
+        "object": "data/spectator occupation pairs",
+        "result": "adjacent path passes; direct edge residual is 2sqrt2",
+        "terminal": "intermediate-sign path equality on one code"
+      },
+      {
+        "family": "contractible wedge block/state marker",
+        "honesty_marker": "ATTEMPTED",
+        "marker": "ATTEMPTED",
+        "mechanism": "block exterior permutation and |-> exchange phase",
+        "object": "four-mode wedge2 block in three M2s plus phase marker",
+        "result": "local exchange passes; full stream leaves fixed blocks",
+        "terminal": "intercell/seam reblocking with local marker ownership"
+      },
+      {
+        "family": "Cycle532 higher-form rough comparator",
+        "honesty_marker": "RULED OUT BY PRIOR",
+        "marker": "RULED OUT BY PRIOR",
+        "mechanism": "BKSF face algebra and three spin characters",
+        "object": "22-M2/cell target-times-gauge factor",
+        "result": "conditional full-Fock algebra exists; its three initializer signs remain and are not credited here",
+        "terminal": "bounded computational-basis E with local spin genesis"
+      }
+    ],
+    "N1_open_routes_not_counted": [
+      {
+        "family": "twisted charge-ribbon gauge code",
+        "mechanism": "plaquette pull-through identifies alternate strings",
+        "object": "charge-bound local flux/ribbon degrees of freedom",
+        "search_status": "OPEN_UNTESTED_NOT_COUNTED",
+        "terminal": "path-independent seam stream with exchange minus sign"
+      },
+      {
+        "family": "auxiliary Majorana link code",
+        "mechanism": "link bilinears carry graded signs",
+        "object": "bounded link Majoranas with local parity constraints",
+        "search_status": "OPEN_UNTESTED_NOT_COUNTED",
+        "terminal": "same-code full stream and local auxiliary genesis"
+      },
+      {
+        "family": "tensor pull-through fermion code",
+        "mechanism": "graded virtual pull-through",
+        "object": "overlapping local tensor code",
+        "search_status": "OPEN_UNTESTED_NOT_COUNTED",
+        "terminal": "bounded all24 physical E and stream"
+      },
+      {
+        "family": "bounded gauge-sector preparation",
+        "mechanism": "local preparation/isometry of the spin sector",
+        "object": "Cycle532/Cycle537 target-times-gauge code",
+        "search_status": "OPEN_UNTESTED_NOT_COUNTED",
+        "terminal": "literal full-Fock E with returned work"
+      },
+      {
+        "family": "overlapping covariant block code",
+        "mechanism": "local split/merge and marker ownership",
+        "object": "stream-closed moving local blocks",
+        "search_status": "OPEN_UNTESTED_NOT_COUNTED",
+        "terminal": "seam-complete reblocking on one code"
+      }
+    ],
+    "N1_qualifying_attempts": 6,
+    "N1_required_for_broad_negative": 5,
+    "N2_collapsed_walls": {
+      "W_aux_genesis": "bounded local preparation/repair of any link, flux, prefix or marker sector",
+      "W_cubic": "all24/all576 covariance without a preferred chain or cut",
+      "W_endpoint": "rerun of the complete Cycle612 clock/endpoint harness on the physical matter code",
+      "W_path": "one path-independent graded stream action on the same computational-basis E",
+      "W_scope": "extension beyond the supplied exactly-two sector to full M64"
+    },
+    "N2_directed_pair_count": 10,
+    "N2_directed_pairs": [
+      {
+        "independence": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_path",
+        "left_to_right": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_aux_genesis",
+        "right_to_left": {
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_path",
+        "left_to_right": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_cubic",
+        "right_to_left": {
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_path",
+        "left_to_right": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_scope",
+        "right_to_left": {
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_path",
+        "left_to_right": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_endpoint",
+        "right_to_left": {
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_aux_genesis",
+        "left_to_right": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_cubic",
+        "right_to_left": {
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_aux_genesis",
+        "left_to_right": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_scope",
+        "right_to_left": {
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_aux_genesis",
+        "left_to_right": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_endpoint",
+        "right_to_left": {
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_cubic",
+        "left_to_right": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_scope",
+        "right_to_left": {
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_cubic",
+        "left_to_right": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_endpoint",
+        "right_to_left": {
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_scope",
+        "left_to_right": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_endpoint",
+        "right_to_left": {
+          "status": "NOT_ESTABLISHED"
+        }
+      }
+    ],
+    "N2_directional_independence": [
+      {
+        "independence": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_path",
+        "left_to_right": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_aux_genesis",
+        "right_to_left": {
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_path",
+        "left_to_right": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_cubic",
+        "right_to_left": {
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_path",
+        "left_to_right": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_scope",
+        "right_to_left": {
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_path",
+        "left_to_right": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_endpoint",
+        "right_to_left": {
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_aux_genesis",
+        "left_to_right": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_cubic",
+        "right_to_left": {
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_aux_genesis",
+        "left_to_right": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_scope",
+        "right_to_left": {
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_aux_genesis",
+        "left_to_right": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_endpoint",
+        "right_to_left": {
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_cubic",
+        "left_to_right": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_scope",
+        "right_to_left": {
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_cubic",
+        "left_to_right": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_endpoint",
+        "right_to_left": {
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      {
+        "independence": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "left": "W_scope",
+        "left_to_right": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "right": "W_endpoint",
+        "right_to_left": {
+          "status": "NOT_ESTABLISHED"
+        }
+      }
+    ],
+    "N2_independence_complete": false,
+    "N2_walls": {
+      "W_aux_genesis": "bounded local preparation/repair of any link, flux, prefix or marker sector",
+      "W_cubic": "all24/all576 covariance without a preferred chain or cut",
+      "W_endpoint": "rerun of the complete Cycle612 clock/endpoint harness on the physical matter code",
+      "W_path": "one path-independent graded stream action on the same computational-basis E",
+      "W_scope": "extension beyond the supplied exactly-two sector to full M64"
+    },
+    "N3_explicit_supplied_structure": [
+      "six direction roles per cell",
+      "exactly-two global sector",
+      "lexicographic test serialization",
+      "optional link scratch vacuum",
+      "prefix-chain order for repaired comparator",
+      "paired equality signs",
+      "contractible block partition and marker",
+      "Cycle230 coin/contact/order",
+      "periodic L3/L6/L7 domains",
+      "Cycle583 A2 axis"
+    ],
+    "N3_hidden_wall_phrases": [
+      "we assume",
+      "by construction",
+      "as is standard",
+      "the framework provides",
+      "bridge context",
+      "background",
+      "naturally",
+      "obviously",
+      "standard qft",
+      "registered",
+      "canonical"
+    ],
+    "N3_note_phrase_hits": [],
+    "N4_cited_lines_exist": true,
+    "N4_dropped_nonmatches": [
+      {
+        "current_line": 566,
+        "current_path": "scripts/physical_same_species_two_carrier_path_sign_compiler_cycle639_2026_07_23.py",
+        "current_residual": "local matter slot is hosted but clock harness is not rerun",
+        "exact_match": false,
+        "prior_line": 101,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_MATTER_CAUSED_CAUSAL_INTERVAL_PROPER_TIME_BRIDGE_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md",
+        "prior_residual": "computed endpoint packet is conditional on supplied matter/clock apparatus",
+        "same_scope": false,
+        "use_as_closure": false
+      }
+    ],
+    "N4_exact_residual_matches": [
+      {
+        "current_line": 292,
+        "current_path": "scripts/physical_same_species_two_carrier_path_sign_compiler_cycle639_2026_07_23.py",
+        "current_residual": "endpoint-local physical FSWAP is compared exhaustively with the exterior stream",
+        "exact_match": true,
+        "prior_line": 118,
+        "prior_path": "docs/work_history/repo/review_feedback/SPATIAL_CAR_CONTACT_SEAM_FORM_FACTOR_CYCLE230_NOTE_2026-07-17.md",
+        "prior_residual": "intrinsic CAR stream is not an ordinary physical-M2 compiler",
+        "same_scope": true,
+        "use_as_closure": false
+      },
+      {
+        "current_line": 230,
+        "current_path": "scripts/physical_same_species_two_carrier_path_sign_compiler_cycle639_2026_07_23.py",
+        "current_residual": "two-carrier exchange and alternate paths are now executed",
+        "exact_match": true,
+        "prior_line": 59,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_FIXED_SECTOR_HELD_L6_LITERAL_EG_PRODUCT_TOURNAMENT_CYCLE632_NOTE_2026-07-23.md",
+        "prior_residual": "same-species multiparticle exchange not encoded",
+        "same_scope": true,
+        "use_as_closure": false
+      },
+      {
+        "current_line": 488,
+        "current_path": "scripts/physical_same_species_two_carrier_path_sign_compiler_cycle639_2026_07_23.py",
+        "current_residual": "paired direct/path residual is reexecuted on the two-carrier slice",
+        "exact_match": true,
+        "prior_line": 53,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_PAIRED_NEUTRAL_GAUGE_COMPILER_DISCRIMINATOR_CYCLE635_NOTE_2026-07-23.md",
+        "prior_residual": "paired endpoint word misses intermediate occupation sign",
+        "same_scope": true,
+        "use_as_closure": false
+      },
+      {
+        "current_line": 337,
+        "current_path": "scripts/physical_same_species_two_carrier_path_sign_compiler_cycle639_2026_07_23.py",
+        "current_residual": "local computational-M2 E and coin/contact EG are executed, lattice stream remains",
+        "exact_match": true,
+        "prior_line": 25,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_CONTACT_DIMER_INFINITE_INTERNAL_CONTENT_TOURNAMENT_CYCLE583_NOTE_2026-07-22.md",
+        "prior_residual": "15D onsite antisymmetric contact and 36D relative fiber lack physical compiler",
+        "same_scope": true,
+        "use_as_closure": true
+      }
+    ],
+    "N4_exact_residual_matching": [
+      {
+        "current_line": 292,
+        "current_path": "scripts/physical_same_species_two_carrier_path_sign_compiler_cycle639_2026_07_23.py",
+        "current_residual": "endpoint-local physical FSWAP is compared exhaustively with the exterior stream",
+        "exact_match": true,
+        "prior_line": 118,
+        "prior_path": "docs/work_history/repo/review_feedback/SPATIAL_CAR_CONTACT_SEAM_FORM_FACTOR_CYCLE230_NOTE_2026-07-17.md",
+        "prior_residual": "intrinsic CAR stream is not an ordinary physical-M2 compiler",
+        "same_scope": true,
+        "use_as_closure": false
+      },
+      {
+        "current_line": 230,
+        "current_path": "scripts/physical_same_species_two_carrier_path_sign_compiler_cycle639_2026_07_23.py",
+        "current_residual": "two-carrier exchange and alternate paths are now executed",
+        "exact_match": true,
+        "prior_line": 59,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_FIXED_SECTOR_HELD_L6_LITERAL_EG_PRODUCT_TOURNAMENT_CYCLE632_NOTE_2026-07-23.md",
+        "prior_residual": "same-species multiparticle exchange not encoded",
+        "same_scope": true,
+        "use_as_closure": false
+      },
+      {
+        "current_line": 488,
+        "current_path": "scripts/physical_same_species_two_carrier_path_sign_compiler_cycle639_2026_07_23.py",
+        "current_residual": "paired direct/path residual is reexecuted on the two-carrier slice",
+        "exact_match": true,
+        "prior_line": 53,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_PAIRED_NEUTRAL_GAUGE_COMPILER_DISCRIMINATOR_CYCLE635_NOTE_2026-07-23.md",
+        "prior_residual": "paired endpoint word misses intermediate occupation sign",
+        "same_scope": true,
+        "use_as_closure": false
+      },
+      {
+        "current_line": 337,
+        "current_path": "scripts/physical_same_species_two_carrier_path_sign_compiler_cycle639_2026_07_23.py",
+        "current_residual": "local computational-M2 E and coin/contact EG are executed, lattice stream remains",
+        "exact_match": true,
+        "prior_line": 25,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_CONTACT_DIMER_INFINITE_INTERNAL_CONTENT_TOURNAMENT_CYCLE583_NOTE_2026-07-22.md",
+        "prior_residual": "15D onsite antisymmetric contact and 36D relative fiber lack physical compiler",
+        "same_scope": true,
+        "use_as_closure": true
+      },
+      {
+        "current_line": 566,
+        "current_path": "scripts/physical_same_species_two_carrier_path_sign_compiler_cycle639_2026_07_23.py",
+        "current_residual": "local matter slot is hosted but clock harness is not rerun",
+        "exact_match": false,
+        "prior_line": 101,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_MATTER_CAUSED_CAUSAL_INTERVAL_PROPER_TIME_BRIDGE_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md",
+        "prior_residual": "computed endpoint packet is conditional on supplied matter/clock apparatus",
+        "same_scope": false,
+        "use_as_closure": false
+      }
+    ],
+    "N5_five_resolution_rhetoric_audit": [
+      {
+        "claim": "one local FSWAP is not a cubic CAR compiler",
+        "lattice_wide": "L3/L6/L7 stream failures are nonzero",
+        "per_block": "square paths disagree",
+        "per_element": "one edge EG passes",
+        "per_mode": "three-mode alternate path differs",
+        "per_site": "scratch returns locally"
+      },
+      {
+        "claim": "ordered repair is not order-free",
+        "lattice_wide": "the prefix chain fails all24 invariance",
+        "per_block": "maximum interval grows",
+        "per_element": "each transposition reads its interval parity",
+        "per_mode": "three-mode correction passes",
+        "per_site": "endpoint scratch alone is insufficient"
+      },
+      {
+        "claim": "local A2 hosting is not full stream closure",
+        "lattice_wide": "seam-bearing stream fails",
+        "per_block": "intercell sign remains",
+        "per_element": "contact phase is exact",
+        "per_mode": "36 relative directions pass coin EG",
+        "per_site": "15 onsite states occupy six M2s"
+      },
+      {
+        "claim": "paired equality is not a sign service",
+        "lattice_wide": "Cycle635 growth is comparator-only",
+        "per_block": "exact correction uses a prefix",
+        "per_element": "data/spec equality is local",
+        "per_mode": "intermediate occupation produces 2sqrt2 residual",
+        "per_site": "adjacent paired swap passes"
+      },
+      {
+        "claim": "Cycle612 matter-slot compatibility is not a tick or rate",
+        "lattice_wide": "no recurrent clock run is executed",
+        "per_block": "endpoint harness is unchanged",
+        "per_element": "A2 vector is encoded",
+        "per_mode": "relative fiber is 36D",
+        "per_site": "coin/contact are bounded"
+      }
+    ],
+    "N5_rhetoric_resolution_ledger": [
+      {
+        "claim": "one local FSWAP is not a cubic CAR compiler",
+        "lattice_wide": "L3/L6/L7 stream failures are nonzero",
+        "per_block": "square paths disagree",
+        "per_element": "one edge EG passes",
+        "per_mode": "three-mode alternate path differs",
+        "per_site": "scratch returns locally"
+      },
+      {
+        "claim": "ordered repair is not order-free",
+        "lattice_wide": "the prefix chain fails all24 invariance",
+        "per_block": "maximum interval grows",
+        "per_element": "each transposition reads its interval parity",
+        "per_mode": "three-mode correction passes",
+        "per_site": "endpoint scratch alone is insufficient"
+      },
+      {
+        "claim": "local A2 hosting is not full stream closure",
+        "lattice_wide": "seam-bearing stream fails",
+        "per_block": "intercell sign remains",
+        "per_element": "contact phase is exact",
+        "per_mode": "36 relative directions pass coin EG",
+        "per_site": "15 onsite states occupy six M2s"
+      },
+      {
+        "claim": "paired equality is not a sign service",
+        "lattice_wide": "Cycle635 growth is comparator-only",
+        "per_block": "exact correction uses a prefix",
+        "per_element": "data/spec equality is local",
+        "per_mode": "intermediate occupation produces 2sqrt2 residual",
+        "per_site": "adjacent paired swap passes"
+      },
+      {
+        "claim": "Cycle612 matter-slot compatibility is not a tick or rate",
+        "lattice_wide": "no recurrent clock run is executed",
+        "per_block": "endpoint harness is unchanged",
+        "per_element": "A2 vector is encoded",
+        "per_mode": "relative fiber is 36D",
+        "per_site": "coin/contact are bounded"
+      }
+    ],
+    "N6_partial_closure_paths": [
+      {
+        "file": "docs/work_history/repo/review_feedback/SPATIAL_CAR_CONTACT_SEAM_FORM_FACTOR_CYCLE230_NOTE_2026-07-17.md",
+        "status": "PINNED_INTRINSIC_CAR_PARENT",
+        "what_closes": "target exterior coin/stream/contact law, not physical M2 locality"
+      },
+      {
+        "file": "outputs/physical_contact_dimer_infinite_internal_content_tournament_cycle583_receipt_2026_07_22.json",
+        "status": "PINNED_A2_PARENT",
+        "what_closes": "15D onsite A2 and 36D relative fiber target"
+      },
+      {
+        "file": "outputs/physical_fixed_sector_held_L6_literal_EG_product_tournament_cycle632_receipt_2026_07_23.json",
+        "status": "PINNED_DIRECT_COMPARATOR",
+        "what_closes": "distinguishable one-carrier sectors only"
+      },
+      {
+        "file": "outputs/physical_paired_neutral_gauge_compiler_discriminator_cycle635_receipt_2026_07_23.json",
+        "status": "PINNED_PAIRED_COMPARATOR",
+        "what_closes": "paired rank and conditional onsite map, not this path witness"
+      },
+      {
+        "file": "outputs/physical_matter_caused_causal_interval_proper_time_bridge_tournament_cycle612_receipt_2026_07_22.json",
+        "status": "PINNED_ENDPOINT_COMPARATOR",
+        "what_closes": "conditional endpoint/clock packet only; not rerun here"
+      }
+    ],
+    "N7_cited_actionable_steelman": {
+      "action": "construct the twisted charge-ribbon pull-through code rather than adding another endpoint phase",
+      "citations": [
+        {
+          "line": 451,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md",
+          "supports": "measurement, dissipative and topology repairs remain live"
+        },
+        {
+          "line": 180,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_PAIRED_NEUTRAL_GAUGE_COMPILER_DISCRIMINATOR_CYCLE635_NOTE_2026-07-23.md",
+          "supports": "auxiliary Majorana and topology repair routes remain live"
+        }
+      ],
+      "mechanism": "construct a computational-basis charge-ribbon E or an explicitly prepared gauge superposition, prove local pull-through for every A/B edge and plaquette, and show the exchange square has -1 while all contractible path changes act trivially on code",
+      "steelman": "A twisted cubic gauge code could bind a locally transported Z2 flux or framing ribbon to each fermionic charge, use local plaquette moves to identify alternate strings, and prepare the required spin sector by a bounded dissipative or measurement/reset process. That would evade both the endpoint-FSWAP discrepancy and the preferred prefix chain.",
+      "terminal_obligation": "zero pair-basis EG/leakage for full seam stream on L3/L6/L7, local vacuum genesis, all24/all576, A2/contact, deletion and malformed tests"
+    },
+    "N7_cited_lines_exist": true,
+    "N7_steelman": {
+      "action": "construct the twisted charge-ribbon pull-through code rather than adding another endpoint phase",
+      "citations": [
+        {
+          "line": 451,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md",
+          "supports": "measurement, dissipative and topology repairs remain live"
+        },
+        {
+          "line": 180,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_PAIRED_NEUTRAL_GAUGE_COMPILER_DISCRIMINATOR_CYCLE635_NOTE_2026-07-23.md",
+          "supports": "auxiliary Majorana and topology repair routes remain live"
+        }
+      ],
+      "mechanism": "construct a computational-basis charge-ribbon E or an explicitly prepared gauge superposition, prove local pull-through for every A/B edge and plaquette, and show the exchange square has -1 while all contractible path changes act trivially on code",
+      "steelman": "A twisted cubic gauge code could bind a locally transported Z2 flux or framing ribbon to each fermionic charge, use local plaquette moves to identify alternate strings, and prepare the required spin sector by a bounded dissipative or measurement/reset process. That would evade both the endpoint-FSWAP discrepancy and the preferred prefix chain.",
+      "terminal_obligation": "zero pair-basis EG/leakage for full seam stream on L3/L6/L7, local vacuum genesis, all24/all576, A2/contact, deletion and malformed tests"
+    },
+    "N8_cited_lines_exist": true,
+    "N8_cross_cycle_echo": [
+      {
+        "applicability": "ACTIONABLE_PATH_ROUTE",
+        "citation_line": 118,
+        "citation_path": "docs/work_history/repo/review_feedback/SPATIAL_CAR_CONTACT_SEAM_FORM_FACTOR_CYCLE230_NOTE_2026-07-17.md",
+        "could_apply_here": true,
+        "cycle": "Cycle230",
+        "echo": "intrinsic graded stream lacks ordinary-M2 compiler",
+        "effect": "direct endpoint phase is insufficient",
+        "mechanism": "twisted local gauge/ribbon code",
+        "prior_line": 118,
+        "prior_path": "docs/work_history/repo/review_feedback/SPATIAL_CAR_CONTACT_SEAM_FORM_FACTOR_CYCLE230_NOTE_2026-07-17.md",
+        "retired": false,
+        "retirement_mechanism": null
+      },
+      {
+        "applicability": "COMPARATOR_ONLY",
+        "citation_line": 45,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md",
+        "could_apply_here": true,
+        "cycle": "Cycle532",
+        "echo": "three spin characters remain",
+        "effect": "keeps gauge route live without closing Cycle639",
+        "mechanism": "bounded spin preparation",
+        "prior_line": 45,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md",
+        "retired": false,
+        "retirement_mechanism": null
+      },
+      {
+        "applicability": "RETIRES_WITNESS_ABSENCE_ONLY",
+        "citation_line": 59,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_FIXED_SECTOR_HELD_L6_LITERAL_EG_PRODUCT_TOURNAMENT_CYCLE632_NOTE_2026-07-23.md",
+        "could_apply_here": true,
+        "cycle": "Cycle632",
+        "echo": "same-species exchange was outside code",
+        "effect": "reveals rather than closes path wall",
+        "mechanism": "exactly-two occupation basis",
+        "prior_line": 59,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_FIXED_SECTOR_HELD_L6_LITERAL_EG_PRODUCT_TOURNAMENT_CYCLE632_NOTE_2026-07-23.md",
+        "retired": true,
+        "retirement_mechanism": "Cycle639 exchange loop and exhaustive two-particle discriminator"
+      },
+      {
+        "applicability": "ACTIONABLE_AUXILIARY_ROUTE",
+        "citation_line": 53,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_PAIRED_NEUTRAL_GAUGE_COMPILER_DISCRIMINATOR_CYCLE635_NOTE_2026-07-23.md",
+        "could_apply_here": true,
+        "cycle": "Cycle635",
+        "echo": "intermediate occupation sign survives pairing",
+        "effect": "matches three-mode residual",
+        "mechanism": "local sign-carrying gauge field",
+        "prior_line": 53,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_PAIRED_NEUTRAL_GAUGE_COMPILER_DISCRIMINATOR_CYCLE635_NOTE_2026-07-23.md",
+        "retired": false,
+        "retirement_mechanism": null
+      },
+      {
+        "applicability": "RETIRES_LOCAL_PAYLOAD_ONLY",
+        "citation_line": 25,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_CONTACT_DIMER_INFINITE_INTERNAL_CONTENT_TOURNAMENT_CYCLE583_NOTE_2026-07-22.md",
+        "could_apply_here": true,
+        "cycle": "Cycle583",
+        "echo": "A2 contact fiber lacked physical M2 host",
+        "effect": "full seam stream remains",
+        "mechanism": "computational occupation basis",
+        "prior_line": 25,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_CONTACT_DIMER_INFINITE_INTERNAL_CONTENT_TOURNAMENT_CYCLE583_NOTE_2026-07-22.md",
+        "retired": true,
+        "retirement_mechanism": "six-M2 local wedge2 E and exact contact/coin"
+      }
+    ],
+    "N8_rowwise_cross_cycle_echo": [
+      {
+        "applicability": "ACTIONABLE_PATH_ROUTE",
+        "citation_line": 118,
+        "citation_path": "docs/work_history/repo/review_feedback/SPATIAL_CAR_CONTACT_SEAM_FORM_FACTOR_CYCLE230_NOTE_2026-07-17.md",
+        "could_apply_here": true,
+        "cycle": "Cycle230",
+        "echo": "intrinsic graded stream lacks ordinary-M2 compiler",
+        "effect": "direct endpoint phase is insufficient",
+        "mechanism": "twisted local gauge/ribbon code",
+        "prior_line": 118,
+        "prior_path": "docs/work_history/repo/review_feedback/SPATIAL_CAR_CONTACT_SEAM_FORM_FACTOR_CYCLE230_NOTE_2026-07-17.md",
+        "retired": false,
+        "retirement_mechanism": null
+      },
+      {
+        "applicability": "COMPARATOR_ONLY",
+        "citation_line": 45,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md",
+        "could_apply_here": true,
+        "cycle": "Cycle532",
+        "echo": "three spin characters remain",
+        "effect": "keeps gauge route live without closing Cycle639",
+        "mechanism": "bounded spin preparation",
+        "prior_line": 45,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md",
+        "retired": false,
+        "retirement_mechanism": null
+      },
+      {
+        "applicability": "RETIRES_WITNESS_ABSENCE_ONLY",
+        "citation_line": 59,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_FIXED_SECTOR_HELD_L6_LITERAL_EG_PRODUCT_TOURNAMENT_CYCLE632_NOTE_2026-07-23.md",
+        "could_apply_here": true,
+        "cycle": "Cycle632",
+        "echo": "same-species exchange was outside code",
+        "effect": "reveals rather than closes path wall",
+        "mechanism": "exactly-two occupation basis",
+        "prior_line": 59,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_FIXED_SECTOR_HELD_L6_LITERAL_EG_PRODUCT_TOURNAMENT_CYCLE632_NOTE_2026-07-23.md",
+        "retired": true,
+        "retirement_mechanism": "Cycle639 exchange loop and exhaustive two-particle discriminator"
+      },
+      {
+        "applicability": "ACTIONABLE_AUXILIARY_ROUTE",
+        "citation_line": 53,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_PAIRED_NEUTRAL_GAUGE_COMPILER_DISCRIMINATOR_CYCLE635_NOTE_2026-07-23.md",
+        "could_apply_here": true,
+        "cycle": "Cycle635",
+        "echo": "intermediate occupation sign survives pairing",
+        "effect": "matches three-mode residual",
+        "mechanism": "local sign-carrying gauge field",
+        "prior_line": 53,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_PAIRED_NEUTRAL_GAUGE_COMPILER_DISCRIMINATOR_CYCLE635_NOTE_2026-07-23.md",
+        "retired": false,
+        "retirement_mechanism": null
+      },
+      {
+        "applicability": "RETIRES_LOCAL_PAYLOAD_ONLY",
+        "citation_line": 25,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_CONTACT_DIMER_INFINITE_INTERNAL_CONTENT_TOURNAMENT_CYCLE583_NOTE_2026-07-22.md",
+        "could_apply_here": true,
+        "cycle": "Cycle583",
+        "echo": "A2 contact fiber lacked physical M2 host",
+        "effect": "full seam stream remains",
+        "mechanism": "computational occupation basis",
+        "prior_line": 25,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_CONTACT_DIMER_INFINITE_INTERNAL_CONTENT_TOURNAMENT_CYCLE583_NOTE_2026-07-22.md",
+        "retired": true,
+        "retirement_mechanism": "six-M2 local wedge2 E and exact contact/coin"
+      }
+    ],
+    "Status": "PASS",
+    "artifact_status": "PASS_LOCAL_A2_HOST_AND_SCOPED_PATH_DISCRIMINATOR_ONLY",
+    "axiom_pressure": false,
+    "axiom_pressure_claim": false,
+    "axiom_pressure_gate": "FAIL / DO NOT SHIP",
+    "broad_negative_gate": "FAIL / DO NOT SHIP",
+    "broad_no_go_claim": false,
+    "minimum_content_claim": false,
+    "minimum_content_gate": "FAIL / DO NOT SHIP",
+    "narrow_route_discriminator_gate": "PASS / SHIP WITH FIREWALL",
+    "negative_claim_shipped": false,
+    "pass": true,
+    "shared_obstruction_claim": false,
+    "shared_obstruction_gate": "FAIL / DO NOT SHIP",
+    "shared_route_independent_obstruction": false,
+    "skill_freshness": {
+      "local_skill_sha256": "aeac7b2b7df30c350961f4b36b980a91e9c2ebeca3f35b6c1adcd731071bdab5",
+      "newer_origin_main_followed": true,
+      "origin_main_checked": true,
+      "origin_main_skill_sha256": "7d1aea8243ddd972331b935e2e836657e72115da3efe259f828fe862469d68b7",
+      "proof_search_governance_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    }
+  },
+  "note_contract": {
+    "missing": [],
+    "pass": true,
+    "required": [
+      "cycle 639",
+      "authority none",
+      "audit unset",
+      "exactly two identical",
+      "15d",
+      "36d",
+      "a2",
+      "cycle 583",
+      "cycle 612",
+      "exchange loop",
+      "three occupied",
+      "cubic square",
+      "l3/l6/l7",
+      "all24",
+      "all576",
+      "4,140",
+      "154,800",
+      "340,452",
+      "110",
+      "1082",
+      "1766",
+      "supplied vacuum",
+      "sector genesis",
+      "not full m64",
+      "not a tick",
+      "not a rate",
+      "n1",
+      "n8",
+      "same_scope",
+      "exact_match",
+      "use_as_closure",
+      "per_element",
+      "per_site",
+      "per_mode",
+      "per_block",
+      "lattice_wide",
+      "what_closes",
+      "actionable",
+      "no axiom pressure"
+    ]
+  },
+  "note_sha256": "95699ec410149a80ee255b85bf9fe4efc6d6fafde0b36d8a62cc3b146f7bbd92",
+  "optimal_next_campaign": "construct a twisted cubic charge-ribbon or auxiliary-Majorana pull-through code with local plaquette/path equality and bounded sector genesis; require the exchange square, full L3/L6/L7 seam stream, A2/contact, all24/all576 and literal E/G on one code before rerunning the Cycle612 clock harness",
+  "paired_and_contractible_block_routes": {
+    "Route_B_paired_equality": {
+      "E3_shape": [
+        64,
+        8
+      ],
+      "accepted_local_equal_words": 2,
+      "adjacent_path_EG_residual": 0.0,
+      "adjacent_path_code_leakage": 0.0,
+      "data_plus_spectator_M2_per_mode": 2,
+      "direct_edge_EG_residual": 2.8284271247461903,
+      "direct_vs_path_residual": 2.8284271247461903,
+      "local_equality_checks": 3,
+      "rejected_local_unequal_words": 2,
+      "same_intermediate_sign_open": true,
+      "spectator_swap_deletion_signal": 3.4641016151377544
+    },
+    "Route_C_contractible_block": {
+      "E_dagger_E_residual": 0.0,
+      "E_shape": [
+        8,
+        6
+      ],
+      "block_EG_residual": 0.0,
+      "block_code_leakage": 0.0,
+      "computational_M2": 3,
+      "exchange_sign_deletion_signal": 3.4641016151377544,
+      "fixed_cell_crossing_stream_edges_per_cell": 3,
+      "four_mode_two_carrier_dimension": 6,
+      "invalid_computational_labels_rejected": 2,
+      "smallest_stream_closed_lane_block_modes": "6L",
+      "state_carried_marker_genesis": "one local |-> phase marker makes the displayed square exchange negative, but marker ownership/reblocking across cell and seam is not supplied"
+    },
+    "pass_as_discriminator": true
+  },
+  "pass": true,
+  "pins": {
+    "docs/work_history/repo/review_feedback/COMMON_MATTER_FIELD_COIN_FAMILY_CYCLE219_NOTE_2026-07-16.md": "999e88c014f22637caeeb904bba3c27ee5beff8f4bbf04975f625094035a28ec",
+    "docs/work_history/repo/review_feedback/PHYSICAL_CONTACT_DIMER_INFINITE_INTERNAL_CONTENT_TOURNAMENT_CYCLE583_NOTE_2026-07-22.md": "6942341fa2fc8978a25acdd758677b04a5a1d0c9e13b8e5627bc9bf504814cf3",
+    "docs/work_history/repo/review_feedback/PHYSICAL_FIXED_SECTOR_HELD_L6_LITERAL_EG_PRODUCT_TOURNAMENT_CYCLE632_NOTE_2026-07-23.md": "d9ab97e1f46ad9ea7757b5de0d89b080bb101263190dee353263ab7b6ce1e4f2",
+    "docs/work_history/repo/review_feedback/PHYSICAL_MATTER_CAUSED_CAUSAL_INTERVAL_PROPER_TIME_BRIDGE_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md": "920776555dce6505bccb0e46e552e90d24858c08cfb7f6978d884f10a5bb0789",
+    "docs/work_history/repo/review_feedback/PHYSICAL_PAIRED_NEUTRAL_GAUGE_COMPILER_DISCRIMINATOR_CYCLE635_NOTE_2026-07-23.md": "93ceb2bb82205754dc121f4e83563c66ccd13eb683404b81538cdeee390e5815",
+    "docs/work_history/repo/review_feedback/SPATIAL_CAR_CONTACT_SEAM_FORM_FACTOR_CYCLE230_NOTE_2026-07-17.md": "a7a3a0a021dbd691c6c2ddb9163679b445c5110b8150f63395271037963c7132",
+    "outputs/physical_contact_dimer_infinite_internal_content_tournament_cycle583_cold_2026_07_22.txt": "22af96509364601a99c3ed2d6b148643ede02369f70e5be92629d1f0e5d3ddce",
+    "outputs/physical_contact_dimer_infinite_internal_content_tournament_cycle583_receipt_2026_07_22.json": "0f4e2df9e25cdc7137c42fb91666c5eaae10efc652d5af84f421e38c5ad97aab",
+    "outputs/physical_fixed_sector_held_L6_literal_EG_product_tournament_cycle632_cold_2026_07_23.txt": "26e26ac949da7fb4d34b877ea0a3fd76b4a00ae92e2a681b2599f62d8f221634",
+    "outputs/physical_fixed_sector_held_L6_literal_EG_product_tournament_cycle632_receipt_2026_07_23.json": "36f87c42c5cdbd97da5d66f25a2be2a63ad016130087ef56dc4da32d700215ff",
+    "outputs/physical_matter_caused_causal_interval_proper_time_bridge_tournament_cycle612_receipt_2026_07_22.json": "e7a8ea3dcbe370c9f8c6a94770508d1710a7013ce4ba62a1ad67e345fe1e2d11",
+    "outputs/physical_paired_neutral_gauge_compiler_discriminator_cycle635_cold_2026_07_23.txt": "934324d814c4d53f7051129f497f2a756df739f0de31d0de6176f6e17e632481",
+    "outputs/physical_paired_neutral_gauge_compiler_discriminator_cycle635_receipt_2026_07_23.json": "f6d75c8488514fbe90521626dba1fe0a8fadd3fd349c50755604856061328ed4",
+    "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py": "ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a",
+    "scripts/physical_carrier_preparation_elementary_synthesis_tournament_cycle603_2026_07_22.py": "e64032e369e08e03ad2a742a2bde6914d8adc6ed1fd64f15f4e301c1c8dea739",
+    "scripts/physical_contact_dimer_infinite_internal_content_tournament_cycle583_2026_07_22.py": "21957cc883550ee81fc48d5b55ad4a0384cbac8697557691c805d84c7c8dbaaf",
+    "scripts/physical_fixed_sector_held_L6_literal_EG_product_tournament_cycle632_2026_07_23.py": "3b8e32baf616f64769b45bb6258d7f9f13814c6e7df99a4cea063706a25b597f",
+    "scripts/physical_matter_caused_causal_interval_proper_time_bridge_tournament_cycle612_2026_07_22.py": "91f22d23dd2730f76a05736634236d41036f68eaedc4921daca69de25ab6a344",
+    "scripts/physical_paired_neutral_gauge_compiler_discriminator_cycle635_2026_07_23.py": "b3405f58d7700587ee53fd586dd3fc1641e84a82dbf9b1c7b7cca3ec61c9d19c",
+    "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py": "b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae"
+  },
+  "proper_cubic_covariance": {
+    "all576_pair_basis_checks": 7511616,
+    "endpoint_local_physical_stream_covariant_with_graded_target": false,
+    "exterior_target_all24_all576_pass": true,
+    "failures": {
+      "A_edge_family": 0,
+      "B_edge_family": 0,
+      "all576_modes": 0,
+      "all576_pair_signs": 0,
+      "local_endpoint_stream_vs_graded_frame": 109128,
+      "mode_stream": 0
+    },
+    "local_edge_families_all24_pass": true,
+    "pass_as_discriminator": true,
+    "prefix_order_chain_preserving_frames": 1,
+    "prefix_order_chain_total_frames": 24,
+    "proper_cubic_frames": 24
+  },
+  "route_by_route_disposition": {
+    "Cycle532_or_Cycle635_back_credit": false,
+    "Route_A_local_Z2_link_edge_sign": {
+      "failure_counts": [
+        4140,
+        154800,
+        340452
+      ],
+      "flat_cubic_link": "path-independent +1 plaquette holonomy misses the -1 exchange witness unless a source-bound flux/framing law and its genesis are added",
+      "full_stream": "FAIL AT ROUTE SCOPE: endpoint-local sign differs from exterior stream on all tested sizes",
+      "local_edge_macro": "PASS: exact support-one/two link-scratch FSWAP with returned scratch",
+      "ordered_prefix_repair": "exact but support grows and selects a chain",
+      "repair_supports": [
+        110,
+        1082,
+        1766
+      ]
+    },
+    "Route_B_paired_doubled_equality": {
+      "Cycle635_comparator_only": {
+        "support_growth": [
+          112,
+          340,
+          448
+        ],
+        "use_as_Cycle639_closure": false
+      },
+      "full_stream": "FAIL AT ROUTE SCOPE: pairing does not remove the intermediate-occupation sign",
+      "local_E_and_equality": "PASS",
+      "three_mode_path_residual": 2.8284271247461903
+    },
+    "Route_C_state_marker_contractible_block": {
+      "full_stream": "UNFINISHED: fixed blocks are not closed by intercell or seam stream",
+      "local_block": "PASS: four-mode wedge2 exchange in three computational M2s",
+      "marker_genesis": "supplied |-> marker and owner/reblocking rule; no lattice-wide local rule executed"
+    },
+    "fixed_two_particle_domain_only": true,
+    "full_M64_compiled": false,
+    "pass": true,
+    "same_species_local_E_G_closed": false,
+    "shared_obstruction_or_axiom_pressure": false,
+    "strongest_constructive_result": "six occupation M2s exactly host the local 15D onsite wedge2/A2 contact, 36D separated relative fiber coin, one-particle mass and contractible exchange -1; one edge has a literal returned-link FSWAP"
+  },
+  "route_disposition": {
+    "Cycle532_or_Cycle635_back_credit": false,
+    "Route_A_local_Z2_link_edge_sign": {
+      "failure_counts": [
+        4140,
+        154800,
+        340452
+      ],
+      "flat_cubic_link": "path-independent +1 plaquette holonomy misses the -1 exchange witness unless a source-bound flux/framing law and its genesis are added",
+      "full_stream": "FAIL AT ROUTE SCOPE: endpoint-local sign differs from exterior stream on all tested sizes",
+      "local_edge_macro": "PASS: exact support-one/two link-scratch FSWAP with returned scratch",
+      "ordered_prefix_repair": "exact but support grows and selects a chain",
+      "repair_supports": [
+        110,
+        1082,
+        1766
+      ]
+    },
+    "Route_B_paired_doubled_equality": {
+      "Cycle635_comparator_only": {
+        "support_growth": [
+          112,
+          340,
+          448
+        ],
+        "use_as_Cycle639_closure": false
+      },
+      "full_stream": "FAIL AT ROUTE SCOPE: pairing does not remove the intermediate-occupation sign",
+      "local_E_and_equality": "PASS",
+      "three_mode_path_residual": 2.8284271247461903
+    },
+    "Route_C_state_marker_contractible_block": {
+      "full_stream": "UNFINISHED: fixed blocks are not closed by intercell or seam stream",
+      "local_block": "PASS: four-mode wedge2 exchange in three computational M2s",
+      "marker_genesis": "supplied |-> marker and owner/reblocking rule; no lattice-wide local rule executed"
+    },
+    "fixed_two_particle_domain_only": true,
+    "full_M64_compiled": false,
+    "pass": true,
+    "same_species_local_E_G_closed": false,
+    "shared_obstruction_or_axiom_pressure": false,
+    "strongest_constructive_result": "six occupation M2s exactly host the local 15D onsite wedge2/A2 contact, 36D separated relative fiber coin, one-particle mass and contractible exchange -1; one edge has a literal returned-link FSWAP"
+  },
+  "runner_sha256": "2039cd847c99e250ec62e65905feb032bbaf2f18edac1ac22ced3cbbd0d5c627",
+  "same_species_local_E_G_closed": false,
+  "shared_obstruction_or_axiom_pressure": false,
+  "shared_route_independent_obstruction": false,
+  "shore": {
+    "Cycle583_A2_rank": 1,
+    "Cycle583_physical_compiler_claim": false,
+    "Cycle612_proper_time_claimed": false,
+    "Cycle632_same_species_compiled": false,
+    "Cycle635_improves_Cycle532": false,
+    "audits": {
+      "Cycle583": "unset",
+      "Cycle612": "unset",
+      "Cycle632": "unset",
+      "Cycle635": "unset"
+    },
+    "authorities": {
+      "Cycle583": "none",
+      "Cycle612": "none",
+      "Cycle632": "none",
+      "Cycle635": "none"
+    },
+    "hashes_match": true,
+    "observed": {
+      "docs/work_history/repo/review_feedback/COMMON_MATTER_FIELD_COIN_FAMILY_CYCLE219_NOTE_2026-07-16.md": "999e88c014f22637caeeb904bba3c27ee5beff8f4bbf04975f625094035a28ec",
+      "docs/work_history/repo/review_feedback/PHYSICAL_CONTACT_DIMER_INFINITE_INTERNAL_CONTENT_TOURNAMENT_CYCLE583_NOTE_2026-07-22.md": "6942341fa2fc8978a25acdd758677b04a5a1d0c9e13b8e5627bc9bf504814cf3",
+      "docs/work_history/repo/review_feedback/PHYSICAL_FIXED_SECTOR_HELD_L6_LITERAL_EG_PRODUCT_TOURNAMENT_CYCLE632_NOTE_2026-07-23.md": "d9ab97e1f46ad9ea7757b5de0d89b080bb101263190dee353263ab7b6ce1e4f2",
+      "docs/work_history/repo/review_feedback/PHYSICAL_MATTER_CAUSED_CAUSAL_INTERVAL_PROPER_TIME_BRIDGE_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md": "920776555dce6505bccb0e46e552e90d24858c08cfb7f6978d884f10a5bb0789",
+      "docs/work_history/repo/review_feedback/PHYSICAL_PAIRED_NEUTRAL_GAUGE_COMPILER_DISCRIMINATOR_CYCLE635_NOTE_2026-07-23.md": "93ceb2bb82205754dc121f4e83563c66ccd13eb683404b81538cdeee390e5815",
+      "docs/work_history/repo/review_feedback/SPATIAL_CAR_CONTACT_SEAM_FORM_FACTOR_CYCLE230_NOTE_2026-07-17.md": "a7a3a0a021dbd691c6c2ddb9163679b445c5110b8150f63395271037963c7132",
+      "outputs/physical_contact_dimer_infinite_internal_content_tournament_cycle583_cold_2026_07_22.txt": "22af96509364601a99c3ed2d6b148643ede02369f70e5be92629d1f0e5d3ddce",
+      "outputs/physical_contact_dimer_infinite_internal_content_tournament_cycle583_receipt_2026_07_22.json": "0f4e2df9e25cdc7137c42fb91666c5eaae10efc652d5af84f421e38c5ad97aab",
+      "outputs/physical_fixed_sector_held_L6_literal_EG_product_tournament_cycle632_cold_2026_07_23.txt": "26e26ac949da7fb4d34b877ea0a3fd76b4a00ae92e2a681b2599f62d8f221634",
+      "outputs/physical_fixed_sector_held_L6_literal_EG_product_tournament_cycle632_receipt_2026_07_23.json": "36f87c42c5cdbd97da5d66f25a2be2a63ad016130087ef56dc4da32d700215ff",
+      "outputs/physical_matter_caused_causal_interval_proper_time_bridge_tournament_cycle612_receipt_2026_07_22.json": "e7a8ea3dcbe370c9f8c6a94770508d1710a7013ce4ba62a1ad67e345fe1e2d11",
+      "outputs/physical_paired_neutral_gauge_compiler_discriminator_cycle635_cold_2026_07_23.txt": "934324d814c4d53f7051129f497f2a756df739f0de31d0de6176f6e17e632481",
+      "outputs/physical_paired_neutral_gauge_compiler_discriminator_cycle635_receipt_2026_07_23.json": "f6d75c8488514fbe90521626dba1fe0a8fadd3fd349c50755604856061328ed4",
+      "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py": "ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a",
+      "scripts/physical_carrier_preparation_elementary_synthesis_tournament_cycle603_2026_07_22.py": "e64032e369e08e03ad2a742a2bde6914d8adc6ed1fd64f15f4e301c1c8dea739",
+      "scripts/physical_contact_dimer_infinite_internal_content_tournament_cycle583_2026_07_22.py": "21957cc883550ee81fc48d5b55ad4a0384cbac8697557691c805d84c7c8dbaaf",
+      "scripts/physical_fixed_sector_held_L6_literal_EG_product_tournament_cycle632_2026_07_23.py": "3b8e32baf616f64769b45bb6258d7f9f13814c6e7df99a4cea063706a25b597f",
+      "scripts/physical_matter_caused_causal_interval_proper_time_bridge_tournament_cycle612_2026_07_22.py": "91f22d23dd2730f76a05736634236d41036f68eaedc4921daca69de25ab6a344",
+      "scripts/physical_paired_neutral_gauge_compiler_discriminator_cycle635_2026_07_23.py": "b3405f58d7700587ee53fd586dd3fc1641e84a82dbf9b1c7b7cca3ec61c9d19c",
+      "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py": "b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae"
+    },
+    "parent_passes": {
+      "Cycle583": true,
+      "Cycle612": true,
+      "Cycle632": true,
+      "Cycle635": true
+    },
+    "unlanded_Cycle629_A2_line_external_shore": {
+      "branch": "origin/causal-time/cycle629-a2-line-discriminator-20260722",
+      "branch_head_equality_is_scientific_dependency": false,
+      "branch_resolves_to_commit": true,
+      "commit": "1085e03fddcf8c2ea2575ba27d554aa92c7e7f9f",
+      "commit_object_available": true,
+      "landed_or_credited_as_Cycle639_science": false,
+      "note_matches": true,
+      "note_path": "docs/work_history/repo/review_feedback/PHYSICAL_A2_LINE_CONTACT_DISCRIMINATOR_TOURNAMENT_CYCLE629_NOTE_2026-07-22.md",
+      "note_sha256": "c28fedb4e45f3adf59bbc5bad51094437033992b72fb7e9eb65eff948e280557",
+      "receipt_matches": true,
+      "receipt_path": "outputs/physical_a2_line_contact_discriminator_tournament_cycle629_receipt_2026_07_22.json",
+      "receipt_sha256": "fe4dda981ad36b889850940e3e618a7b6a5b3ba91b71df84f708b92a9d9a22db"
+    }
+  },
+  "six_wall_ledger": {
+    "C_int": "local coin/contact/mass intertwining closes on the A2 payload; seam-complete interaction stream remains open",
+    "C_local": "one-edge FSWAP is support-two but alternate paths disagree; gauge/ribbon and full code-space E remain open",
+    "C_num": "15D onsite and 36D separated same-species sectors have literal M2 hosts; full M64 remains open",
+    "C_ref": "left/right relative reference, link vacuum, prefix order and marker are explicit supplies; no autonomous reference genesis",
+    "C_source": "no energy, source, stress, gravity or autonomous preparation content",
+    "C_wrap": "seam failures and ordered-chain growth are explicit; no tick, Record or realized-history claim"
+  },
+  "status": "cycle639-same-species-two-carrier-path-sign-compiler",
+  "strongest_constructive_result": "six local occupation M2s exactly host the Cycle583 15D onsite wedge2 contact, rank-one A2 ray, 36D separated relative-direction coin, local contact and one-particle mass; a returned-link support-one/two macro implements one FSWAP and a contractible square records exchange phase -1",
+  "supplied_structure": [
+    "six direction-role M2s per cell",
+    "exactly-two identical-carrier sector",
+    "test-only lexicographic serialization",
+    "optional all-zero link scratch",
+    "prefix-chain order only for the nonlocal repaired comparator",
+    "paired data/spectator equality",
+    "contractible block and |-> marker",
+    "Cycle230 coin/contact/order/coupling",
+    "periodic L3/L6/L7 domains",
+    "Cycle583 A2 source axis"
+  ],
+  "tests_failed": 0,
+  "tests_passed": 12,
+  "two_carrier_computational_basis_stream": {
+    "E": "unordered occupied-mode subset maps to the same two occupied data M2 basis factors; no particle labels",
+    "domain": "exactly two identical carriers of one Cycle219 species",
+    "lawful_domain": "Hamming weight exactly two on 6L^3 occupation M2s; optional edge scratch all zero",
+    "observed_failure_counts": [
+      4140,
+      154800,
+      340452
+    ],
+    "ordered_repair_supports": [
+      110,
+      1082,
+      1766
+    ],
+    "pass_as_discriminator": true,
+    "rows": [
+      {
+        "computational_basis_E_sha256": "a3d2eee1a5af492210873fb8d9453e97ccf3537f0e79f0dd6c332d3c56d793b9",
+        "data_M2_per_cell": 6,
+        "exact_ordered_parity_repair_failures": 0,
+        "first_failure": [
+          [
+            0,
+            1
+          ],
+          [
+            54,
+            109
+          ],
+          1,
+          [
+            54,
+            109
+          ],
+          -1
+        ],
+        "length": 3,
+        "local_endpoint_FSWAP_failures": 4140,
+        "local_endpoint_FSWAP_seam_failures": 2862,
+        "maximum_exact_ordered_repair_support_M2": 110,
+        "maximum_local_gate_support_M2": 6,
+        "maximum_order_interval_modes": 108,
+        "modes": 162,
+        "optional_link_scratch_M2_per_cell": 6,
+        "pass_as_discriminator": true,
+        "split": "train",
+        "stream_seam_source_modes": 54,
+        "two_identical_carrier_basis_dimension": 13041
+      },
+      {
+        "computational_basis_E_sha256": "f4d38dec1f0c9c0937634992a2aad92184fc77ca63fadd9f7837cd79b8793275",
+        "data_M2_per_cell": 6,
+        "exact_ordered_parity_repair_failures": 0,
+        "first_failure": [
+          [
+            0,
+            1
+          ],
+          [
+            216,
+            1081
+          ],
+          1,
+          [
+            216,
+            1081
+          ],
+          -1
+        ],
+        "length": 6,
+        "local_endpoint_FSWAP_failures": 154800,
+        "local_endpoint_FSWAP_seam_failures": 95040,
+        "maximum_exact_ordered_repair_support_M2": 1082,
+        "maximum_local_gate_support_M2": 6,
+        "maximum_order_interval_modes": 1080,
+        "modes": 1296,
+        "optional_link_scratch_M2_per_cell": 6,
+        "pass_as_discriminator": true,
+        "split": "held",
+        "stream_seam_source_modes": 216,
+        "two_identical_carrier_basis_dimension": 839160
+      },
+      {
+        "computational_basis_E_sha256": "93567f10a916451f16584dac9daa7ebca89e334b78a8b6736da8a6ab52806f44",
+        "data_M2_per_cell": 6,
+        "exact_ordered_parity_repair_failures": 0,
+        "first_failure": [
+          [
+            0,
+            1
+          ],
+          [
+            294,
+            1765
+          ],
+          1,
+          [
+            294,
+            1765
+          ],
+          -1
+        ],
+        "length": 7,
+        "local_endpoint_FSWAP_failures": 340452,
+        "local_endpoint_FSWAP_seam_failures": 205506,
+        "maximum_exact_ordered_repair_support_M2": 1766,
+        "maximum_local_gate_support_M2": 6,
+        "maximum_order_interval_modes": 1764,
+        "modes": 2058,
+        "optional_link_scratch_M2_per_cell": 6,
+        "pass_as_discriminator": true,
+        "split": "held-out-size",
+        "stream_seam_source_modes": 294,
+        "two_identical_carrier_basis_dimension": 2116653
+      }
+    ]
+  }
+}

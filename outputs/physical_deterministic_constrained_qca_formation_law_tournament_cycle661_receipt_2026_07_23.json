@@ -1,0 +1,1341 @@
+{
+  "audit": "unset",
+  "author_accepted": false,
+  "authority": "none",
+  "axiom_pressure": false,
+  "breakthrough": false,
+  "elapsed_seconds": 0.5160818749573082,
+  "extensional_QCA": {
+    "Cycle634_pointer_M2_aliased": 6,
+    "all_candidate_pointer_bits_retained": true,
+    "bounded_M2_event_block": 84,
+    "count_token_conserved": true,
+    "derived_accepted_hamming_shells": [
+      1
+    ],
+    "derived_extensional_truth_rows": [
+      {
+        "admit": 0,
+        "count_rail": 0,
+        "packet_direction": null,
+        "pointer_weight": 0,
+        "pointer_word": "000000",
+        "reject": 1
+      },
+      {
+        "admit": 1,
+        "count_rail": 1,
+        "packet_direction": 5,
+        "pointer_weight": 1,
+        "pointer_word": "000001",
+        "reject": 0
+      },
+      {
+        "admit": 1,
+        "count_rail": 1,
+        "packet_direction": 4,
+        "pointer_weight": 1,
+        "pointer_word": "000010",
+        "reject": 0
+      },
+      {
+        "admit": 0,
+        "count_rail": 2,
+        "packet_direction": null,
+        "pointer_weight": 2,
+        "pointer_word": "000011",
+        "reject": 1
+      },
+      {
+        "admit": 1,
+        "count_rail": 1,
+        "packet_direction": 3,
+        "pointer_weight": 1,
+        "pointer_word": "000100",
+        "reject": 0
+      },
+      {
+        "admit": 0,
+        "count_rail": 2,
+        "packet_direction": null,
+        "pointer_weight": 2,
+        "pointer_word": "000101",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 2,
+        "packet_direction": null,
+        "pointer_weight": 2,
+        "pointer_word": "000110",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 3,
+        "packet_direction": null,
+        "pointer_weight": 3,
+        "pointer_word": "000111",
+        "reject": 1
+      },
+      {
+        "admit": 1,
+        "count_rail": 1,
+        "packet_direction": 2,
+        "pointer_weight": 1,
+        "pointer_word": "001000",
+        "reject": 0
+      },
+      {
+        "admit": 0,
+        "count_rail": 2,
+        "packet_direction": null,
+        "pointer_weight": 2,
+        "pointer_word": "001001",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 2,
+        "packet_direction": null,
+        "pointer_weight": 2,
+        "pointer_word": "001010",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 3,
+        "packet_direction": null,
+        "pointer_weight": 3,
+        "pointer_word": "001011",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 2,
+        "packet_direction": null,
+        "pointer_weight": 2,
+        "pointer_word": "001100",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 3,
+        "packet_direction": null,
+        "pointer_weight": 3,
+        "pointer_word": "001101",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 3,
+        "packet_direction": null,
+        "pointer_weight": 3,
+        "pointer_word": "001110",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 4,
+        "packet_direction": null,
+        "pointer_weight": 4,
+        "pointer_word": "001111",
+        "reject": 1
+      },
+      {
+        "admit": 1,
+        "count_rail": 1,
+        "packet_direction": 1,
+        "pointer_weight": 1,
+        "pointer_word": "010000",
+        "reject": 0
+      },
+      {
+        "admit": 0,
+        "count_rail": 2,
+        "packet_direction": null,
+        "pointer_weight": 2,
+        "pointer_word": "010001",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 2,
+        "packet_direction": null,
+        "pointer_weight": 2,
+        "pointer_word": "010010",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 3,
+        "packet_direction": null,
+        "pointer_weight": 3,
+        "pointer_word": "010011",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 2,
+        "packet_direction": null,
+        "pointer_weight": 2,
+        "pointer_word": "010100",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 3,
+        "packet_direction": null,
+        "pointer_weight": 3,
+        "pointer_word": "010101",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 3,
+        "packet_direction": null,
+        "pointer_weight": 3,
+        "pointer_word": "010110",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 4,
+        "packet_direction": null,
+        "pointer_weight": 4,
+        "pointer_word": "010111",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 2,
+        "packet_direction": null,
+        "pointer_weight": 2,
+        "pointer_word": "011000",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 3,
+        "packet_direction": null,
+        "pointer_weight": 3,
+        "pointer_word": "011001",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 3,
+        "packet_direction": null,
+        "pointer_weight": 3,
+        "pointer_word": "011010",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 4,
+        "packet_direction": null,
+        "pointer_weight": 4,
+        "pointer_word": "011011",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 3,
+        "packet_direction": null,
+        "pointer_weight": 3,
+        "pointer_word": "011100",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 4,
+        "packet_direction": null,
+        "pointer_weight": 4,
+        "pointer_word": "011101",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 4,
+        "packet_direction": null,
+        "pointer_weight": 4,
+        "pointer_word": "011110",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 5,
+        "packet_direction": null,
+        "pointer_weight": 5,
+        "pointer_word": "011111",
+        "reject": 1
+      },
+      {
+        "admit": 1,
+        "count_rail": 1,
+        "packet_direction": 0,
+        "pointer_weight": 1,
+        "pointer_word": "100000",
+        "reject": 0
+      },
+      {
+        "admit": 0,
+        "count_rail": 2,
+        "packet_direction": null,
+        "pointer_weight": 2,
+        "pointer_word": "100001",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 2,
+        "packet_direction": null,
+        "pointer_weight": 2,
+        "pointer_word": "100010",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 3,
+        "packet_direction": null,
+        "pointer_weight": 3,
+        "pointer_word": "100011",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 2,
+        "packet_direction": null,
+        "pointer_weight": 2,
+        "pointer_word": "100100",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 3,
+        "packet_direction": null,
+        "pointer_weight": 3,
+        "pointer_word": "100101",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 3,
+        "packet_direction": null,
+        "pointer_weight": 3,
+        "pointer_word": "100110",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 4,
+        "packet_direction": null,
+        "pointer_weight": 4,
+        "pointer_word": "100111",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 2,
+        "packet_direction": null,
+        "pointer_weight": 2,
+        "pointer_word": "101000",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 3,
+        "packet_direction": null,
+        "pointer_weight": 3,
+        "pointer_word": "101001",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 3,
+        "packet_direction": null,
+        "pointer_weight": 3,
+        "pointer_word": "101010",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 4,
+        "packet_direction": null,
+        "pointer_weight": 4,
+        "pointer_word": "101011",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 3,
+        "packet_direction": null,
+        "pointer_weight": 3,
+        "pointer_word": "101100",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 4,
+        "packet_direction": null,
+        "pointer_weight": 4,
+        "pointer_word": "101101",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 4,
+        "packet_direction": null,
+        "pointer_weight": 4,
+        "pointer_word": "101110",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 5,
+        "packet_direction": null,
+        "pointer_weight": 5,
+        "pointer_word": "101111",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 2,
+        "packet_direction": null,
+        "pointer_weight": 2,
+        "pointer_word": "110000",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 3,
+        "packet_direction": null,
+        "pointer_weight": 3,
+        "pointer_word": "110001",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 3,
+        "packet_direction": null,
+        "pointer_weight": 3,
+        "pointer_word": "110010",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 4,
+        "packet_direction": null,
+        "pointer_weight": 4,
+        "pointer_word": "110011",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 3,
+        "packet_direction": null,
+        "pointer_weight": 3,
+        "pointer_word": "110100",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 4,
+        "packet_direction": null,
+        "pointer_weight": 4,
+        "pointer_word": "110101",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 4,
+        "packet_direction": null,
+        "pointer_weight": 4,
+        "pointer_word": "110110",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 5,
+        "packet_direction": null,
+        "pointer_weight": 5,
+        "pointer_word": "110111",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 3,
+        "packet_direction": null,
+        "pointer_weight": 3,
+        "pointer_word": "111000",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 4,
+        "packet_direction": null,
+        "pointer_weight": 4,
+        "pointer_word": "111001",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 4,
+        "packet_direction": null,
+        "pointer_weight": 4,
+        "pointer_word": "111010",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 5,
+        "packet_direction": null,
+        "pointer_weight": 5,
+        "pointer_word": "111011",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 4,
+        "packet_direction": null,
+        "pointer_weight": 4,
+        "pointer_word": "111100",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 5,
+        "packet_direction": null,
+        "pointer_weight": 5,
+        "pointer_word": "111101",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 5,
+        "packet_direction": null,
+        "pointer_weight": 5,
+        "pointer_word": "111110",
+        "reject": 1
+      },
+      {
+        "admit": 0,
+        "count_rail": 6,
+        "packet_direction": null,
+        "pointer_weight": 6,
+        "pointer_word": "111111",
+        "reject": 1
+      }
+    ],
+    "derived_relation_sha256": "7996f5c21fd295e32ae1ebcfa37207ac0d40cf5cd0b1f5ae0d08cd38040b0383",
+    "disposition": "positive deterministic constrained-QCA basis-code formation candidate",
+    "every_nonformed_sector_has_reject_owner": true,
+    "exact_rows": 1152,
+    "failures": 0,
+    "gate_word_generates_extensional_rule": true,
+    "host_winner": false,
+    "input_relation_table_or_ROM": false,
+    "inverse_failures": 0,
+    "pass": true,
+    "runtime_actuality_token": false,
+    "selector_work_leakage_failures": 0,
+    "update_interface_parameters": [
+      "word",
+      "delete_label"
+    ],
+    "update_source_forbidden_fragment_hits": []
+  },
+  "finite_carrier": {
+    "capacity": 6,
+    "collision_does_not_debit_or_advance": true,
+    "formed_episodes": 6,
+    "fresh_event_blocks_required": 6,
+    "head_after_each": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      0
+    ],
+    "inverse_failures": 0,
+    "ledger_failures": 0,
+    "non_erasing_or_indefinite_renewal_claim": false,
+    "pass": true,
+    "ready_after_each": [
+      5,
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "resource_called_energy_or_entropy": false,
+    "resource_mechanism": "one physical head advances through six pre-existing ready carriers",
+    "seventh_formation_refused_at_exhaustion": true,
+    "spent_after_each": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  "frozen_contract": {
+    "committed_shore_head": "60f450e0090d13343686554453380990fd1fdf27",
+    "expected_preregistration_sha256": "ba6f5dd71b90f7d4cf6be08a901ebfbae214a34045c8c4ed2d6cbedfe3bf4949",
+    "expected_shore_sha256": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_ADMISSIBILITY_OCCURRENCE_BORN_SHARED_MIDDLE_TOURNAMENT_CYCLE625_NOTE_2026-07-22.md": "190ed6dfc5502a0d8d68c665501fe4f009d21fb2aad4bc0b71e9f96a9856552d",
+      "docs/work_history/repo/review_feedback/PHYSICAL_FORCING_MENU_INSTRUMENT_BRIDGE_TOURNAMENT_CYCLE634_NOTE_2026-07-23.md": "d0b8b3b0cb496a3864320c38f2fd8948a42a03252bf18e1b2389618f76f3cd5c",
+      "docs/work_history/repo/review_feedback/PHYSICAL_POSTFORMATION_PRESERVATION_NON_ERASING_RENEWAL_TOURNAMENT_CYCLE621_NOTE_2026-07-22.md": "a52395a57fb34b6d827a677a43528033e913cde2f98ce708a276507f6e1e353e",
+      "outputs/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_receipt_2026_07_22.json": "a867cbeed66052da8cb85e8867a55802d27bfca586c9db805aa1649a6f0c7560",
+      "outputs/physical_forcing_menu_instrument_bridge_tournament_cycle634_receipt_2026_07_23.json": "3fd6a476feac3bae38f0da2b6c0d2826432e4b6a605d02d1e99b0d946e6efc87",
+      "outputs/physical_postformation_preservation_non_erasing_renewal_tournament_cycle621_receipt_2026_07_22.json": "d28ee4034b15ecd7eebac2a0481c9475d828bbbe444baa8d9b903f231ca47156",
+      "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py": "a618b5803cc1313a3dd644e3e066bb987bf366d8215a50a43d4260c69847b9e9",
+      "scripts/physical_forcing_menu_instrument_bridge_tournament_cycle634_2026_07_23.py": "ca187b7dda5c2b1b56a63ba960695734fc9915177c2769ef957913a096a74d52",
+      "scripts/physical_postformation_preservation_non_erasing_renewal_tournament_cycle621_2026_07_22.py": "faa1a251d7586ed9d2e496cc73b42f45108347fe5f627523fcef3caa4e652a73"
+    },
+    "expected_target_contract_sha256": "b42d372fd6457ccc4d0886f7f19d51cc46d764b5888a5264d110f8a1cb1e83d5",
+    "interfaces_pass": true,
+    "observed_shore_sha256": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_ADMISSIBILITY_OCCURRENCE_BORN_SHARED_MIDDLE_TOURNAMENT_CYCLE625_NOTE_2026-07-22.md": "190ed6dfc5502a0d8d68c665501fe4f009d21fb2aad4bc0b71e9f96a9856552d",
+      "docs/work_history/repo/review_feedback/PHYSICAL_FORCING_MENU_INSTRUMENT_BRIDGE_TOURNAMENT_CYCLE634_NOTE_2026-07-23.md": "d0b8b3b0cb496a3864320c38f2fd8948a42a03252bf18e1b2389618f76f3cd5c",
+      "docs/work_history/repo/review_feedback/PHYSICAL_POSTFORMATION_PRESERVATION_NON_ERASING_RENEWAL_TOURNAMENT_CYCLE621_NOTE_2026-07-22.md": "a52395a57fb34b6d827a677a43528033e913cde2f98ce708a276507f6e1e353e",
+      "outputs/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_receipt_2026_07_22.json": "a867cbeed66052da8cb85e8867a55802d27bfca586c9db805aa1649a6f0c7560",
+      "outputs/physical_forcing_menu_instrument_bridge_tournament_cycle634_receipt_2026_07_23.json": "3fd6a476feac3bae38f0da2b6c0d2826432e4b6a605d02d1e99b0d946e6efc87",
+      "outputs/physical_postformation_preservation_non_erasing_renewal_tournament_cycle621_receipt_2026_07_22.json": "d28ee4034b15ecd7eebac2a0481c9475d828bbbe444baa8d9b903f231ca47156",
+      "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py": "a618b5803cc1313a3dd644e3e066bb987bf366d8215a50a43d4260c69847b9e9",
+      "scripts/physical_forcing_menu_instrument_bridge_tournament_cycle634_2026_07_23.py": "ca187b7dda5c2b1b56a63ba960695734fc9915177c2769ef957913a096a74d52",
+      "scripts/physical_postformation_preservation_non_erasing_renewal_tournament_cycle621_2026_07_22.py": "faa1a251d7586ed9d2e496cc73b42f45108347fe5f627523fcef3caa4e652a73"
+    },
+    "pass": true,
+    "preregistration": {
+      "candidate_pattern_census": "each of the 64 pointer words appears once; no stochastic reading",
+      "candidate_pointer_value": 1,
+      "held_biased": {
+        "name": "biased_phase_product",
+        "phase": [
+          0.0,
+          0.2,
+          -0.3,
+          0.5,
+          -0.7,
+          0.9
+        ],
+        "split": "held_blinded",
+        "theta": [
+          0.19,
+          0.31,
+          0.43,
+          0.57,
+          0.71,
+          0.83
+        ]
+      },
+      "held_nonproduct": {
+        "name": "six_site_GHZ",
+        "split": "held_blinded_nonproduct",
+        "state": "(|000000>+exp(0.37i)|111111>)/sqrt(2)"
+      },
+      "menu": "Cycle634 mixed_projective_merge binary POVM at each of six incident ports",
+      "resource_capacity": 6,
+      "train": {
+        "name": "product_z0",
+        "split": "train",
+        "state": "|000000>"
+      }
+    },
+    "preregistration_sha256": "ba6f5dd71b90f7d4cf6be08a901ebfbae214a34045c8c4ed2d6cbedfe3bf4949",
+    "target_contract": {
+      "claim_ceiling": "candidate deterministic basis-code formation law only; no objective actuality, framework Record identification, Born probability, or nature-law selection",
+      "cycle": 661,
+      "forbidden_update_inputs": [
+        "shell predicate",
+        "admission ROM",
+        "actuality token",
+        "host winner",
+        "grade",
+        "weight",
+        "norm",
+        "probability",
+        "sampler"
+      ],
+      "near_shores": [
+        "Cycle634 fixed binary physical M2 menu",
+        "Cycle625-B/Cycle531 conditional occurrence port",
+        "Cycle621 supplied preserving-operation interface"
+      ],
+      "physical_law": "six local binary pointer ports commute through one conserved seven-rail count carrier; the count-one rail and a local ready carrier alone can form a packet",
+      "required": [
+        "extensional table generated only by the physical gate word",
+        "coherent accepted and rejected sector ownership",
+        "finite ready/spent carrier renewal",
+        "exact inverse, deletion, malformed and lawful-domain controls",
+        "all24 proper-cubic covariance and all576 composition",
+        "preregistered train, biased-held, and nonproduct-held quantum inputs",
+        "unchanged Cycle625-B/Cycle531 and Cycle621 interface execution",
+        "grade, frequency, Record, time, source and gravity firewalls"
+      ],
+      "route": "deterministic constrained-QCA formation"
+    },
+    "target_contract_sha256": "b42d372fd6457ccc4d0886f7f19d51cc46d764b5888a5264d110f8a1cb1e83d5",
+    "working_tree_bytes_used_as_premise": false,
+    "working_tree_comparison_sha256": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_ADMISSIBILITY_OCCURRENCE_BORN_SHARED_MIDDLE_TOURNAMENT_CYCLE625_NOTE_2026-07-22.md": "190ed6dfc5502a0d8d68c665501fe4f009d21fb2aad4bc0b71e9f96a9856552d",
+      "docs/work_history/repo/review_feedback/PHYSICAL_FORCING_MENU_INSTRUMENT_BRIDGE_TOURNAMENT_CYCLE634_NOTE_2026-07-23.md": "d0b8b3b0cb496a3864320c38f2fd8948a42a03252bf18e1b2389618f76f3cd5c",
+      "docs/work_history/repo/review_feedback/PHYSICAL_POSTFORMATION_PRESERVATION_NON_ERASING_RENEWAL_TOURNAMENT_CYCLE621_NOTE_2026-07-22.md": "a52395a57fb34b6d827a677a43528033e913cde2f98ce708a276507f6e1e353e",
+      "outputs/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_receipt_2026_07_22.json": "a867cbeed66052da8cb85e8867a55802d27bfca586c9db805aa1649a6f0c7560",
+      "outputs/physical_forcing_menu_instrument_bridge_tournament_cycle634_receipt_2026_07_23.json": "3fd6a476feac3bae38f0da2b6c0d2826432e4b6a605d02d1e99b0d946e6efc87",
+      "outputs/physical_postformation_preservation_non_erasing_renewal_tournament_cycle621_receipt_2026_07_22.json": "d28ee4034b15ecd7eebac2a0481c9475d828bbbe444baa8d9b903f231ca47156",
+      "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py": "a618b5803cc1313a3dd644e3e066bb987bf366d8215a50a43d4260c69847b9e9",
+      "scripts/physical_forcing_menu_instrument_bridge_tournament_cycle634_2026_07_23.py": "ca187b7dda5c2b1b56a63ba960695734fc9915177c2769ef957913a096a74d52",
+      "scripts/physical_postformation_preservation_non_erasing_renewal_tournament_cycle621_2026_07_22.py": "faa1a251d7586ed9d2e496cc73b42f45108347fe5f627523fcef3caa4e652a73"
+    }
+  },
+  "highest_honest_terminal": "candidate deterministic basis-code formation law after supplied menu/carrier genesis; not objective actuality, framework Record, probability, or nature-law selection",
+  "inventory": {
+    "derived": [
+      "one fixed conserved-count QCA gate word and its 64-row extensional admission table",
+      "accepted packet plus explicit rejected-sector provenance and exact inverse",
+      "unchanged Cycle625-B/Cycle531 occurrence and Cycle621 preservation-interface composition",
+      "six-event ready/spent/head renewal ledger and exact exhaustion refusal",
+      "preregistered product, biased and nonproduct coherent-sector accounting",
+      "deletion, malformed, held L3/L4/L6, support-two NN, all24 and all576 controls"
+    ],
+    "open": [
+      "nature-law selection of this deterministic count-carrier candidate",
+      "objective actuality/one-sector ownership for coherent inputs",
+      "framework Record identification and physical selection of the postformation operation algebra",
+      "non-erasing or indefinite renewal, noise and infinite-volume deployment",
+      "physical grade output, probability meaning, objective corpus, independence and convergence",
+      "autonomous menu/state/blank genesis, time, energy/stress/source/gravity integration"
+    ],
+    "supplied": [
+      "retained Cycle634 fixed binary menu, menu constants, six system preparations and blank pointer ports",
+      "six-port proper-cubic chart and candidate-pointer adapter",
+      "one count-zero carrier, one resource head, six ready carriers and fresh finite event blocks",
+      "unchanged Cycle625 lane-zero adapter and Cycle621 preserving generator alphabet",
+      "finite noiseless gates, Cycle523 support-two lowering, train/held state preparations"
+    ]
+  },
+  "locality_covariance_controls": {
+    "Cycle523_support_two_lowering_inherited_from_exact_Cycle634_shore": true,
+    "all24_line_edge_failures": 0,
+    "constant_overhead_per_event_cell": true,
+    "count_increments_commute": true,
+    "covariance_failures": 0,
+    "covariance_tests": 1536,
+    "deletion_rows": [
+      {
+        "basis_residual": 1.4142135623730951,
+        "gate": "archive:0",
+        "visible": true
+      },
+      {
+        "basis_residual": 1.4142135623730951,
+        "gate": "count:0:0->1",
+        "visible": true
+      },
+      {
+        "basis_residual": 1.4142135623730951,
+        "gate": "fire:0",
+        "visible": true
+      },
+      {
+        "basis_residual": 1.4142135623730951,
+        "gate": "admit:0",
+        "visible": true
+      },
+      {
+        "basis_residual": 1.4142135623730951,
+        "gate": "reject:formation-complement",
+        "visible": true
+      },
+      {
+        "basis_residual": 1.4142135623730951,
+        "gate": "reject-provenance:0",
+        "visible": true
+      },
+      {
+        "basis_residual": 1.4142135623730951,
+        "gate": "packet:0:direction:0",
+        "visible": true
+      },
+      {
+        "basis_residual": 1.4142135623730951,
+        "gate": "resource:0:ready-debit",
+        "visible": true
+      },
+      {
+        "basis_residual": 1.4142135623730951,
+        "gate": "head:0->1",
+        "visible": true
+      }
+    ],
+    "disjoint_cell_updates_commute": true,
+    "global_parity_or_order_service": false,
+    "group_direction_tests": 3456,
+    "group_failures": 0,
+    "literal_one_two_M2_calls_before_routing": 1359,
+    "logical_gate_count": 115,
+    "logical_gate_counts": {
+      "CNOT": 31,
+      "FREDKIN": 41,
+      "TOFFOLI": 42,
+      "X": 1
+    },
+    "malformed_rows": [
+      {
+        "case": "nonbinary_pointer",
+        "rejected": true
+      },
+      {
+        "case": "short_pointer",
+        "rejected": true
+      },
+      {
+        "case": "bad_head",
+        "rejected": true
+      },
+      {
+        "case": "ready_spent_conflict",
+        "rejected": true
+      },
+      {
+        "case": "dirty_count",
+        "rejected": true
+      },
+      {
+        "case": "dirty_archive",
+        "rejected": true
+      },
+      {
+        "case": "dirty_packet",
+        "rejected": true
+      },
+      {
+        "case": "dirty_selector",
+        "rejected": true
+      }
+    ],
+    "maximum_literal_support_M2": 2,
+    "maximum_unrouted_line_distance": 76,
+    "nearest_neighbor_calls": 55019,
+    "ordered_frame_products": 576,
+    "partitioned_supercell_QCA_translation_tests": 3,
+    "partitioned_supercell_translation_invariant": true,
+    "pass": true,
+    "preferred_incident_order_is_load_bearing": false,
+    "proper_cubic_frames": 24,
+    "route_and_return_adjacent_SWAPS": 18136,
+    "translated_normalized_schedule_digests": [
+      "c9de44fffa009593136474ea8ccd01248009cfc05bff775f51f680bdd721a7b1",
+      "c9de44fffa009593136474ea8ccd01248009cfc05bff775f51f680bdd721a7b1",
+      "c9de44fffa009593136474ea8ccd01248009cfc05bff775f51f680bdd721a7b1"
+    ]
+  },
+  "maximum_RSS_bytes": 74842112,
+  "no_go_discipline": {
+    "N1_attempted_count": 1,
+    "N1_broad_negative_gate": "FAIL_DO_NOT_SHIP",
+    "N1_required_for_broad_negative": 5,
+    "N1_routes": [
+      {
+        "family": "deterministic conserved-count constrained QCA",
+        "status": "ATTEMPTED_POSITIVE_CANDIDATE",
+        "terminal": "derive extensional basis table from a local reversible carrier word"
+      },
+      {
+        "family": "objective stochastic dilation",
+        "status": "OPEN_NOT_COUNTED",
+        "terminal": "derive one actuality owner and retained noise exhaust"
+      },
+      {
+        "family": "dissipative/metastable formation",
+        "status": "OPEN_NOT_COUNTED",
+        "terminal": "derive a nonreentering attractor and readable packet"
+      },
+      {
+        "family": "unique-extension history QCA",
+        "status": "OPEN_NOT_COUNTED",
+        "terminal": "derive one covariant successor without probability"
+      },
+      {
+        "family": "topological protected archive",
+        "status": "OPEN_NOT_COUNTED",
+        "terminal": "derive formation and all-future protection in a local phase"
+      },
+      {
+        "family": "objective-collapse carrier bath",
+        "status": "OPEN_NOT_COUNTED",
+        "terminal": "derive stochastic innovations, renewal and held calibration"
+      }
+    ],
+    "N2_collapsed_walls": [
+      "nature_law_selection",
+      "coherent_actuality",
+      "physical_preserving_algebra",
+      "unbounded_resource_renewal",
+      "grade_probability_corpus_law"
+    ],
+    "N2_directed_pair_rows": [
+      {
+        "independent": true,
+        "left": "nature_law_selection",
+        "left_closes_right": false,
+        "right": "coherent_actuality",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "nature_law_selection",
+        "left_closes_right": false,
+        "right": "physical_preserving_algebra",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "nature_law_selection",
+        "left_closes_right": false,
+        "right": "unbounded_resource_renewal",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "nature_law_selection",
+        "left_closes_right": false,
+        "right": "grade_probability_corpus_law",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "coherent_actuality",
+        "left_closes_right": false,
+        "right": "nature_law_selection",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "coherent_actuality",
+        "left_closes_right": false,
+        "right": "physical_preserving_algebra",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "coherent_actuality",
+        "left_closes_right": false,
+        "right": "unbounded_resource_renewal",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "coherent_actuality",
+        "left_closes_right": false,
+        "right": "grade_probability_corpus_law",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "physical_preserving_algebra",
+        "left_closes_right": false,
+        "right": "nature_law_selection",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "physical_preserving_algebra",
+        "left_closes_right": false,
+        "right": "coherent_actuality",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "physical_preserving_algebra",
+        "left_closes_right": false,
+        "right": "unbounded_resource_renewal",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "physical_preserving_algebra",
+        "left_closes_right": false,
+        "right": "grade_probability_corpus_law",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "unbounded_resource_renewal",
+        "left_closes_right": false,
+        "right": "nature_law_selection",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "unbounded_resource_renewal",
+        "left_closes_right": false,
+        "right": "coherent_actuality",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "unbounded_resource_renewal",
+        "left_closes_right": false,
+        "right": "physical_preserving_algebra",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "unbounded_resource_renewal",
+        "left_closes_right": false,
+        "right": "grade_probability_corpus_law",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "grade_probability_corpus_law",
+        "left_closes_right": false,
+        "right": "nature_law_selection",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "grade_probability_corpus_law",
+        "left_closes_right": false,
+        "right": "coherent_actuality",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "grade_probability_corpus_law",
+        "left_closes_right": false,
+        "right": "physical_preserving_algebra",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "grade_probability_corpus_law",
+        "left_closes_right": false,
+        "right": "unbounded_resource_renewal",
+        "right_closes_left": false
+      }
+    ],
+    "N3_hidden_condition_scan": [
+      {
+        "classification": "explicit supplied retained shore",
+        "term": "fixed Cycle634 binary menu"
+      },
+      {
+        "classification": "explicit genesis condition",
+        "term": "six-port chart and blank apparatus"
+      },
+      {
+        "classification": "explicit adapter convention",
+        "term": "candidate pointer value"
+      },
+      {
+        "classification": "explicit resource condition",
+        "term": "finite ready stock and fresh event blocks"
+      },
+      {
+        "classification": "explicit supplied candidate law",
+        "term": "Cycle621 operation alphabet"
+      },
+      {
+        "classification": "not used as physics authority",
+        "term": "canonical/registered"
+      }
+    ],
+    "N4_residual_matching": [
+      {
+        "current_line": 494,
+        "current_path": "scripts/physical_deterministic_constrained_qca_formation_law_tournament_cycle661_2026_07_23.py",
+        "current_residual": "QCA emits exact lane-zero member/provenance after generated formation",
+        "match": true,
+        "prior": "Cycle625-B/Cycle531 conditional binder",
+        "prior_line": 688,
+        "prior_path": "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py",
+        "prior_residual": "MEMBER/provenance supplied after candidate admission"
+      },
+      {
+        "current_line": 494,
+        "current_path": "scripts/physical_deterministic_constrained_qca_formation_law_tournament_cycle661_2026_07_23.py",
+        "current_residual": "generated packet reaches that unchanged supplied algebra",
+        "match": true,
+        "prior": "Cycle621 preservation",
+        "prior_line": 673,
+        "prior_path": "scripts/physical_postformation_preservation_non_erasing_renewal_tournament_cycle621_2026_07_22.py",
+        "prior_residual": "preserving algebra supplied"
+      },
+      {
+        "current_line": 266,
+        "current_path": "scripts/physical_deterministic_constrained_qca_formation_law_tournament_cycle661_2026_07_23.py",
+        "current_residual": "one extensional table generated by count-carrier gates",
+        "match": true,
+        "prior": "Cycle625 extensional-law exposure",
+        "prior_line": 443,
+        "prior_path": "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py",
+        "prior_residual": "extensional relation not selected by structural schema"
+      },
+      {
+        "current_line": 661,
+        "current_path": "scripts/physical_deterministic_constrained_qca_formation_law_tournament_cycle661_2026_07_23.py",
+        "current_residual": "64 pointer sectors retained with accepted/rejected exhaust",
+        "match": true,
+        "prior": "Cycle625 coherent actuality",
+        "prior_line": 688,
+        "prior_path": "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py",
+        "prior_residual": "orthogonal sectors retained"
+      },
+      {
+        "current_line": 661,
+        "current_path": "scripts/physical_deterministic_constrained_qca_formation_law_tournament_cycle661_2026_07_23.py",
+        "current_residual": "six physical binary pointer ports feed candidate QCA",
+        "match": true,
+        "prior": "Cycle634 physical fixed menu",
+        "prior_line": 275,
+        "prior_path": "scripts/physical_forcing_menu_instrument_bridge_tournament_cycle634_2026_07_23.py",
+        "prior_residual": "pointer sectors physical but objective selector open"
+      }
+    ],
+    "N5_rhetoric_resolution_audit": [
+      {
+        "narrowed": true,
+        "phrase": "coherent output is not objective actuality",
+        "resolutions": {
+          "lattice_wide": "untested",
+          "per_block": "tested one 84-M2 block",
+          "per_element": "tested",
+          "per_mode": "six ports tested",
+          "per_site": "tested one cell"
+        }
+      },
+      {
+        "narrowed": true,
+        "phrase": "candidate packet is not a framework Record",
+        "resolutions": {
+          "lattice_wide": "untested",
+          "per_block": "finite supplied monoid tested",
+          "per_element": "packet bits tested",
+          "per_mode": "not applicable",
+          "per_site": "one site tested"
+        }
+      },
+      {
+        "narrowed": true,
+        "phrase": "candidate census is not Born frequency",
+        "resolutions": {
+          "lattice_wide": "untested",
+          "per_block": "one complete block tested",
+          "per_element": "64 codewords tested",
+          "per_mode": "not promoted",
+          "per_site": "one cell census"
+        }
+      },
+      {
+        "narrowed": true,
+        "phrase": "finite renewal is not indefinite renewal",
+        "resolutions": {
+          "lattice_wide": "untested",
+          "per_block": "six-event block tested",
+          "per_element": "six tokens tested",
+          "per_mode": "not applicable",
+          "per_site": "one head tested"
+        }
+      },
+      {
+        "narrowed": true,
+        "phrase": "schedule is not physical time",
+        "resolutions": {
+          "lattice_wide": "untested",
+          "per_block": "one gate word",
+          "per_element": "gate labels tested",
+          "per_mode": "not applicable",
+          "per_site": "one cell"
+        }
+      }
+    ],
+    "N6_partial_closure_paths": [
+      {
+        "file": "Cycle661 Route",
+        "status": "EXECUTED",
+        "what_closes": "supplied shell-table import on one basis-code candidate"
+      },
+      {
+        "file": "Cycle634",
+        "status": "RETAINED",
+        "what_closes": "declared fixed-menu physical pointer compiler"
+      },
+      {
+        "file": "Cycle621",
+        "status": "RETAINED_CONDITIONAL",
+        "what_closes": "finite-word packet fixation under supplied monoid"
+      },
+      {
+        "file": "future stochastic-dilation route",
+        "status": "OPEN",
+        "what_closes": "objective innovation owner"
+      },
+      {
+        "file": "future dissipative route",
+        "status": "OPEN",
+        "what_closes": "nonreentering formation and renewal"
+      }
+    ],
+    "N6_primitive_registry_or_new_axiom_language_used": false,
+    "N7_hostile_steelman": "A hostile reviewer should build an objective stochastic dilation or dissipative local phase whose environment owns one sector, whose exhaust makes inverse reentry physically unavailable, and whose renewable medium feeds the unchanged Cycle634/625/621 chain. Freeze that law before nonproduct held states and compare only admitted readable packets. This concrete untested route can close actuality, Record, and calibration without an axiom edit, so a broad negative is premature.",
+    "N8_cross_cycle_echo": [
+      {
+        "cycle": 531,
+        "mechanism": "conditional binder",
+        "retired": "wiring only"
+      },
+      {
+        "cycle": 552,
+        "mechanism": "recurrent member after genesis",
+        "retired": "runtime host member wiring"
+      },
+      {
+        "cycle": 571,
+        "mechanism": "first-hit and finite append",
+        "retired": "bounded source/append wiring"
+      },
+      {
+        "cycle": 614,
+        "mechanism": "unique-quorum circuit",
+        "retired": "runtime token for one supplied rule"
+      },
+      {
+        "cycle": 621,
+        "mechanism": "generator monoid",
+        "retired": "finite preservation conditional on alphabet"
+      },
+      {
+        "cycle": 625,
+        "mechanism": "shared-middle separation",
+        "retired": "none of actuality/Record/Born"
+      },
+      {
+        "cycle": 634,
+        "mechanism": "fixed menu compiler",
+        "retired": "finite physical menu wall"
+      },
+      {
+        "cycle": 661,
+        "mechanism": "conserved count QCA",
+        "retired": "supplied extensional shell table on one route"
+      }
+    ],
+    "axiom_pressure": false,
+    "pass": true,
+    "shared_obstruction": false
+  },
+  "note_contract": {
+    "missing": [],
+    "pass": true,
+    "required_fragments": [
+      "authority: **none**",
+      "audit: **unset**",
+      "frozen target",
+      "no input truth table and no predicate/rom port",
+      "candidate law, not evidence that nature selects it",
+      "no pointer/packet is called a record",
+      "not an empirical frequency",
+      "not physical time or a rate",
+      "one attempted route is below the five-route threshold",
+      "all 20 directed pairs",
+      "shared route-independent obstruction: **not established**",
+      "axiom pressure: **none**"
+    ]
+  },
+  "note_sha256": "14262310b768983ebbdc8a89f914f237ab2a2523c8a096eece63b33a7e5e9ad4",
+  "optimal_next_experiment": "objective stochastic dilation with owned innovations/rejected exhaust, unchanged occurrence/preservation ports, frozen law, and the same blinded biased/nonproduct tests",
+  "pass": true,
+  "quantum_menu_and_firewalls": {
+    "Cycle634_family": "mixed_projective_merge",
+    "accepted_basis_sectors": 6,
+    "branch_grade_used_as_QCA_update_input": false,
+    "coherent_output_Gram_offdiagonal_residual": 0.0,
+    "coherent_pointer_sectors_retained": 64,
+    "coherent_sector_called_objective_actuality": false,
+    "formed_sector_weight_called_Born_probability": false,
+    "pass": true,
+    "pointer_or_packet_called_Record": false,
+    "preregistered_state_rows": {
+      "biased_phase_product": {
+        "QCA_formed_sector_weight": 0.001998661873188796,
+        "QCA_rejected_sector_weight": 0.9980013381268109,
+        "algebraic_one_candidate_grade": 0.001998661873188796,
+        "census_minus_grade_absolute_residual": 0.0917513381268112,
+        "minimum_sector_weight": 8.297895617877119e-05,
+        "normalization_residual": 3.3306690738754696e-16,
+        "pointer_sector_count": 64,
+        "split": "held_blinded",
+        "unweighted_complete_pattern_census_fraction": 0.09375
+      },
+      "product_z0": {
+        "QCA_formed_sector_weight": 0.004394531250000009,
+        "QCA_rejected_sector_weight": 0.99560546875,
+        "algebraic_one_candidate_grade": 0.004394531250000009,
+        "census_minus_grade_absolute_residual": 0.08935546874999999,
+        "minimum_sector_weight": 0.00024414062500000065,
+        "normalization_residual": 0.0,
+        "pointer_sector_count": 64,
+        "split": "train",
+        "unweighted_complete_pattern_census_fraction": 0.09375
+      },
+      "six_site_GHZ": {
+        "QCA_formed_sector_weight": 0.17881006736483476,
+        "QCA_rejected_sector_weight": 0.8211899326351648,
+        "algebraic_one_candidate_grade": 0.17881006736483476,
+        "census_minus_grade_absolute_residual": 0.08506006736483476,
+        "minimum_sector_weight": 0.006364177894139153,
+        "normalization_residual": 3.3306690738754696e-16,
+        "pointer_sector_count": 64,
+        "split": "held_blinded_nonproduct",
+        "unweighted_complete_pattern_census_fraction": 0.09375
+      }
+    },
+    "rejected_basis_sectors": 58,
+    "single_instrument_effect_residual": 1.2412670766236366e-16,
+    "six_local_instruments_M2": 12,
+    "unweighted_census_called_empirical_frequency": false
+  },
+  "route_disposition": {
+    "deterministic_constrained_QCA": "PASS_POSITIVE_CANDIDATE",
+    "dissipative_formation": "OPEN_THIRD_INDEPENDENT_ROUTE",
+    "objective_stochastic_dilation": "OPEN_NEXT_INDEPENDENT_ROUTE"
+  },
+  "runner_sha256": "83383268139e92bcd040fa176686f2e6c3d5eef806ba58ed5da9953a59af7590",
+  "semantic_promotion_boundary": {
+    "Born_probability": null,
+    "candidate_law_selected_by_nature": null,
+    "extensional_table_generated_by_physical_update": true,
+    "framework_Record": null,
+    "objective_actuality": null,
+    "physical_all_future_permanence": null,
+    "realized_history": null
+  },
+  "shared_substrate_obstruction": false,
+  "status": "positive deterministic constrained-QCA basis-code formation candidate; actuality, framework Record, Born and nature-law selection open",
+  "strongest_constructive_result": "one fixed deterministic count-carrier QCA generates a 64-row basis-code formation relation, owns all accepted/rejected pointer provenance, and feeds unchanged Cycle625/Cycle531/Cycle621 interfaces",
+  "tests_failed": 0,
+  "tests_passed": 8,
+  "unchanged_interfaces": {
+    "Cycle531_equation_failures": 0,
+    "Cycle531_port_equations_executed_unchanged": true,
+    "Cycle621_91_generator_monoid_interface_executed_unchanged": true,
+    "Cycle621_LOCK_deletion_basis_residual": 1.4142135623730951,
+    "Cycle621_formation_failures": 0,
+    "Cycle621_generator_preservation_failures": 0,
+    "Cycle625_B_extension_executed_unchanged": true,
+    "Cycle625_extension_failures": 0,
+    "Cycle625_inverse_failures": 0,
+    "Cycle625_member_deletion_basis_residual": 1.4142135623730951,
+    "candidate_packet_called_framework_Record": false,
+    "exact_pointer_rows": 64,
+    "finite_preservation_called_permanence": false,
+    "pass": true
+  }
+}

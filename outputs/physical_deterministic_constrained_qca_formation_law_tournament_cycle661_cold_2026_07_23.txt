@@ -1,0 +1,35 @@
+PASS Cycle661 target, held fixtures, and retained interfaces were frozen before evaluation :: {'contract': 'b42d372fd6457ccc4d0886f7f19d51cc46d764b5888a5264d110f8a1cb1e83d5', 'preregistration': 'ba6f5dd71b90f7d4cf6be08a901ebfbae214a34045c8c4ed2d6cbedfe3bf4949', 'shores': 9}
+PASS the fixed count-carrier QCA generates its extensional table with no predicate/ROM/actuality/winner port :: {'rows': 1152, 'relation': '7996f5c21fd295e32ae1ebcfa37207ac0d40cf5cd0b1f5ae0d08cd38040b0383'}
+PASS generated formation reaches unchanged Cycle625/Cycle531 and Cycle621 interfaces :: {'rows': 64, 'preservation': 546}
+PASS the physical head renews the active carrier through a finite six-token ready/spent ledger :: {'ready': [5, 4, 3, 2, 1, 0], 'heads': [1, 2, 3, 4, 5, 0]}
+PASS preregistered product, biased-held, and nonproduct-held inputs retain all menu/QCA sectors :: {'product_z0': 0.004394531250000009, 'biased_phase_product': 0.001998661873188796, 'six_site_GHZ': 0.17881006736483476}
+PASS QCA locality, deletion, malformed, all24 and all576 controls pass :: {'gates': 115, 'NN_calls': 55019}
+PASS fresh N1-N8 blocks broad negative/shared-obstruction/axiom-pressure promotion :: {'attempted': 1, 'required': 5, 'pairs': 20}
+PASS Cycle661 note preserves the frozen candidate-law/Record/Born/no-go boundaries :: ()
+{
+  "pass": true,
+  "tests_passed": 8,
+  "tests_failed": 0,
+  "elapsed_seconds": 0.5177927910117432,
+  "maximum_RSS_bytes": 74891264,
+  "receipt": "/private/tmp/toe-science.BB0KQV/outputs/physical_deterministic_constrained_qca_formation_law_tournament_cycle661_receipt_2026_07_23.json",
+  "note": "/private/tmp/toe-science.BB0KQV/docs/work_history/repo/review_feedback/PHYSICAL_DETERMINISTIC_CONSTRAINED_QCA_FORMATION_LAW_TOURNAMENT_CYCLE661_NOTE_2026-07-23.md"
+}
+        0.84 real         0.66 user         0.10 sys
+            75186176  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               32076  page reclaims
+                 516  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 442  voluntary context switches
+                 367  involuntary context switches
+          9063190311  instructions retired
+          2453003739  cycles elapsed
+            56590840  peak memory footprint

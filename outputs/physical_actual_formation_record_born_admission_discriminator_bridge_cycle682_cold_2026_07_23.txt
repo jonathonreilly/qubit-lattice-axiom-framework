@@ -1,0 +1,18 @@
+PASS Cycle682 target and exact route/discriminator source bytes were frozen before import :: {'current': 12, 'external': 5, 'external_checks': [24, 0]}
+PASS external rows 5-14 and unchanged discriminator function are byte-pinned :: {'external': [24, 0], 'function': '74badb8a8417ff039b386a4abcce4650865cc64e8c74b926ec6edaa0b01f488f'}
+PASS all 64 genuine Cycle661 outputs identify one candidate law through unchanged attached ports :: {'law': 'unique_quorum', 'field_failures': 0, 'all24': 0, 'all576': 0}
+PASS Cycle662 objective sigma is preserved while its non-Cycle625 port type is refused :: {'branches': 170, 'patterns': [1, 2, 3, 4], 'refusal': 'PortSchemaMismatch'}
+PASS Cycle663 blockade, pending, emission-time and global sectors retain their distinct interface types :: {'rejects': 58, 'horizons': ['3', '4', '6'], 'objective': False}
+PASS dependency ledger stops at candidate route-law identity :: {'Cycle661': 'formation -> exact classical port -> identified unique_quorum candidate', 'Cycle662': 'objective sigma -> PortSchemaMismatch -> decoder not called', 'Cycle663': 'retained amplitudes/reject -> no objective/full port -> decoder not called'}
+PASS fresh N1-N8 demotes route interface refusals and blocks shared-obstruction or axiom pressure :: {'families': 4, 'gate': 'FAIL_DO_NOT_SHIP_NEGATIVE'}
+PASS Cycle682 note preserves port-type and Record/Born/no-go firewalls :: ()
+{
+  "pass": true,
+  "tests_passed": 8,
+  "tests_failed": 0,
+  "elapsed_seconds": 76.1482162475586,
+  "maximum_RSS_bytes": 75661312,
+  "derived_candidate_law": "unique_quorum",
+  "note": "/private/tmp/toe-science.BB0KQV/docs/work_history/repo/review_feedback/PHYSICAL_ACTUAL_FORMATION_RECORD_BORN_ADMISSION_DISCRIMINATOR_BRIDGE_CYCLE682_NOTE_2026-07-23.md",
+  "receipt": "/private/tmp/toe-science.BB0KQV/outputs/physical_actual_formation_record_born_admission_discriminator_bridge_cycle682_receipt_2026_07_23.json"
+}

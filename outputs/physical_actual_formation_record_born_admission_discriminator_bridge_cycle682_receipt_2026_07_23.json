@@ -1,0 +1,1775 @@
+{
+  "Born_probability_derived": false,
+  "Cycle661_actual_port_bridge": {
+    "Cycle625_extension_deletion_failures": 0,
+    "Cycle625_extension_deletion_rows": [
+      {
+        "deleted_unchanged_Cycle625_extension_gate": "ready-debit",
+        "expected_reason": "W-resource",
+        "pass": true,
+        "verdict": {
+          "index": 0,
+          "kind": "refuse_malformed",
+          "reason": "W-resource"
+        },
+        "witness": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "deleted_unchanged_Cycle625_extension_gate": "spent-credit",
+        "expected_reason": "W-resource",
+        "pass": true,
+        "verdict": {
+          "index": 0,
+          "kind": "refuse_malformed",
+          "reason": "W-resource"
+        },
+        "witness": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "deleted_unchanged_Cycle625_extension_gate": "edge",
+        "expected_reason": "W-edge",
+        "pass": true,
+        "verdict": {
+          "index": 0,
+          "kind": "refuse_malformed",
+          "reason": "W-edge"
+        },
+        "witness": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "deleted_unchanged_Cycle625_extension_gate": "member",
+        "expected_reason": "W-member",
+        "pass": true,
+        "verdict": {
+          "index": 0,
+          "kind": "refuse_malformed",
+          "reason": "W-member"
+        },
+        "witness": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "deleted_unchanged_Cycle625_extension_gate": "receipt",
+        "expected_reason": "W-receipt",
+        "pass": true,
+        "verdict": {
+          "index": 0,
+          "kind": "refuse_malformed",
+          "reason": "W-receipt"
+        },
+        "witness": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "deleted_unchanged_Cycle625_extension_gate": "precommit",
+        "expected_reason": "W-531",
+        "pass": true,
+        "verdict": {
+          "index": 0,
+          "kind": "refuse_malformed",
+          "reason": "W-531"
+        },
+        "witness": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "deleted_unchanged_Cycle625_extension_gate": "occurrence",
+        "expected_reason": "W-531",
+        "pass": true,
+        "verdict": {
+          "index": 0,
+          "kind": "refuse_malformed",
+          "reason": "W-531"
+        },
+        "witness": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "deleted_unchanged_Cycle625_extension_gate": "atom-flag",
+        "expected_reason": "W-531",
+        "pass": true,
+        "verdict": {
+          "index": 0,
+          "kind": "refuse_malformed",
+          "reason": "W-531"
+        },
+        "witness": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "deleted_unchanged_Cycle625_extension_gate": "loser-winner:0",
+        "expected_reason": "W-losers1",
+        "pass": true,
+        "verdict": {
+          "index": 0,
+          "kind": "refuse_malformed",
+          "reason": "W-losers1"
+        },
+        "witness": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "deleted_unchanged_Cycle625_extension_gate": "loser-source:1",
+        "expected_reason": "W-losers0",
+        "pass": true,
+        "verdict": {
+          "index": 0,
+          "kind": "refuse_malformed",
+          "reason": "W-losers0"
+        },
+        "witness": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "Cycle661_admit_gate_deletion_verdict": {
+      "kind": "refuse_covariance",
+      "witness": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "Cycle661_admit_gate_deletion_visible": true,
+    "actual_Cycle625_port_field_failures": 0,
+    "actual_QCA_outputs": 64,
+    "all24_failures": 0,
+    "all24_tests": 24,
+    "all576_failures": 0,
+    "all576_tests": 576,
+    "blind_verdicts": {
+      "full": {
+        "kind": "identified",
+        "law": "unique_quorum",
+        "witnesses": {
+          "even_nonzero": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "low_density": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "nonempty": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "odd_shells": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "held_only": {
+        "completing_shell_sets": [
+          [
+            2
+          ]
+        ],
+        "consistent": [
+          "low_density",
+          "unique_quorum"
+        ],
+        "kind": "ambiguous"
+      },
+      "train": {
+        "kind": "identified",
+        "law": "unique_quorum",
+        "witnesses": {
+          "even_nonzero": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "low_density": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "nonempty": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "odd_shells": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "train_plus_held_no_refit": {
+        "kind": "identified",
+        "law": "unique_quorum",
+        "witnesses": {
+          "even_nonzero": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "low_density": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "nonempty": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "odd_shells": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      }
+    },
+    "coverage_starved_verdict": {
+      "completing_shell_sets": [
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "consistent": [
+        "low_density",
+        "nonempty",
+        "odd_shells",
+        "unique_quorum"
+      ],
+      "kind": "ambiguous"
+    },
+    "decoder_blindness_pass": true,
+    "decoder_source_sha256": "74badb8a8417ff039b386a4abcce4650865cc64e8c74b926ec6edaa0b01f488f",
+    "derived_candidate_law": "unique_quorum",
+    "external_emit_called": false,
+    "external_rows_5_14": {
+      "05_blinded_full_identification": {
+        "status": "EXECUTED_ACTUAL",
+        "verdict": {
+          "kind": "identified",
+          "law": "unique_quorum",
+          "witnesses": {
+            "even_nonzero": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "low_density": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            "nonempty": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            "odd_shells": [
+              0,
+              0,
+              0,
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      "06_train_prefix_held_no_refit": {
+        "extended": {
+          "kind": "identified",
+          "law": "unique_quorum",
+          "witnesses": {
+            "even_nonzero": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "low_density": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            "nonempty": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            "odd_shells": [
+              0,
+              0,
+              0,
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "status": "EXECUTED_ACTUAL",
+        "train": {
+          "kind": "identified",
+          "law": "unique_quorum",
+          "witnesses": {
+            "even_nonzero": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "low_density": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            "nonempty": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            "odd_shells": [
+              0,
+              0,
+              0,
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      "07_coverage_starved": {
+        "status": "EXECUTED_ACTUAL",
+        "verdict": {
+          "completing_shell_sets": [
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              5
+            ]
+          ],
+          "consistent": [
+            "low_density",
+            "nonempty",
+            "odd_shells",
+            "unique_quorum"
+          ],
+          "kind": "ambiguous"
+        }
+      },
+      "08_off_family_covariant_imposter": {
+        "reason": "would replace the actual QCA admission bit",
+        "status": "NOT_LAWFUL_FOR_ROUTE"
+      },
+      "09_non_covariant_imposter": {
+        "reason": "would replace the actual QCA admission bit",
+        "status": "NOT_LAWFUL_FOR_ROUTE"
+      },
+      "10_non_deterministic_imposter": {
+        "reason": "would duplicate one actual word with a fabricated opposite occurrence",
+        "status": "NOT_LAWFUL_FOR_ROUTE"
+      },
+      "11_held_corpus_retraction": {
+        "reason": "Cycle661 train prefix is already uniquely identified; no actual mimic route exists",
+        "status": "NOT_LAWFUL_FOR_ROUTE"
+      },
+      "12_malformed_port_refusals": {
+        "rows": [
+          {
+            "deleted_unchanged_Cycle625_extension_gate": "ready-debit",
+            "expected_reason": "W-resource",
+            "pass": true,
+            "verdict": {
+              "index": 0,
+              "kind": "refuse_malformed",
+              "reason": "W-resource"
+            },
+            "witness": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "deleted_unchanged_Cycle625_extension_gate": "spent-credit",
+            "expected_reason": "W-resource",
+            "pass": true,
+            "verdict": {
+              "index": 0,
+              "kind": "refuse_malformed",
+              "reason": "W-resource"
+            },
+            "witness": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "deleted_unchanged_Cycle625_extension_gate": "edge",
+            "expected_reason": "W-edge",
+            "pass": true,
+            "verdict": {
+              "index": 0,
+              "kind": "refuse_malformed",
+              "reason": "W-edge"
+            },
+            "witness": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "deleted_unchanged_Cycle625_extension_gate": "member",
+            "expected_reason": "W-member",
+            "pass": true,
+            "verdict": {
+              "index": 0,
+              "kind": "refuse_malformed",
+              "reason": "W-member"
+            },
+            "witness": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "deleted_unchanged_Cycle625_extension_gate": "receipt",
+            "expected_reason": "W-receipt",
+            "pass": true,
+            "verdict": {
+              "index": 0,
+              "kind": "refuse_malformed",
+              "reason": "W-receipt"
+            },
+            "witness": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "deleted_unchanged_Cycle625_extension_gate": "precommit",
+            "expected_reason": "W-531",
+            "pass": true,
+            "verdict": {
+              "index": 0,
+              "kind": "refuse_malformed",
+              "reason": "W-531"
+            },
+            "witness": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "deleted_unchanged_Cycle625_extension_gate": "occurrence",
+            "expected_reason": "W-531",
+            "pass": true,
+            "verdict": {
+              "index": 0,
+              "kind": "refuse_malformed",
+              "reason": "W-531"
+            },
+            "witness": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "deleted_unchanged_Cycle625_extension_gate": "atom-flag",
+            "expected_reason": "W-531",
+            "pass": true,
+            "verdict": {
+              "index": 0,
+              "kind": "refuse_malformed",
+              "reason": "W-531"
+            },
+            "witness": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "deleted_unchanged_Cycle625_extension_gate": "loser-winner:0",
+            "expected_reason": "W-losers1",
+            "pass": true,
+            "verdict": {
+              "index": 0,
+              "kind": "refuse_malformed",
+              "reason": "W-losers1"
+            },
+            "witness": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "deleted_unchanged_Cycle625_extension_gate": "loser-source:1",
+            "expected_reason": "W-losers0",
+            "pass": true,
+            "verdict": {
+              "index": 0,
+              "kind": "refuse_malformed",
+              "reason": "W-losers0"
+            },
+            "witness": [
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "status": "EXECUTED_ACTUAL_DELETIONS"
+      },
+      "13_verdict_frame_invariance": {
+        "all24_failures": 0,
+        "all576_failures": 0,
+        "status": "EXECUTED_ACTUAL"
+      },
+      "14_decoder_blindness": {
+        "signature": [
+          "stream",
+          "tables",
+          "frames"
+        ],
+        "status": "EXECUTED_SOURCE_AUDIT"
+      }
+    },
+    "frame_composition_failures": 0,
+    "held_rows": 22,
+    "host_RNG_or_sampler_called": false,
+    "pass": true,
+    "route_corpora": {
+      "L3_train": {
+        "head": 0,
+        "held_only_verdict": {
+          "completing_shell_sets": [
+            [
+              2
+            ]
+          ],
+          "consistent": [
+            "low_density",
+            "unique_quorum"
+          ],
+          "kind": "ambiguous"
+        },
+        "pass": true,
+        "rows": 64,
+        "verdict": {
+          "kind": "identified",
+          "law": "unique_quorum",
+          "witnesses": {
+            "even_nonzero": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "low_density": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            "nonempty": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            "odd_shells": [
+              0,
+              0,
+              0,
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      "L4_held_out": {
+        "head": 3,
+        "held_only_verdict": {
+          "completing_shell_sets": [
+            [
+              2
+            ]
+          ],
+          "consistent": [
+            "low_density",
+            "unique_quorum"
+          ],
+          "kind": "ambiguous"
+        },
+        "pass": true,
+        "rows": 64,
+        "verdict": {
+          "kind": "identified",
+          "law": "unique_quorum",
+          "witnesses": {
+            "even_nonzero": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "low_density": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            "nonempty": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            "odd_shells": [
+              0,
+              0,
+              0,
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      "L6_held": {
+        "head": 5,
+        "held_only_verdict": {
+          "completing_shell_sets": [
+            [
+              2
+            ]
+          ],
+          "consistent": [
+            "low_density",
+            "unique_quorum"
+          ],
+          "kind": "ambiguous"
+        },
+        "pass": true,
+        "rows": 64,
+        "verdict": {
+          "kind": "identified",
+          "law": "unique_quorum",
+          "witnesses": {
+            "even_nonzero": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "low_density": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            "nonempty": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            "odd_shells": [
+              0,
+              0,
+              0,
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      }
+    },
+    "train_rows": 42,
+    "unique_quorum_expected_only_after_external_derivation": true
+  },
+  "Cycle662_objective_interface_audit": {
+    "L3_L4_L6_resource_rows": [
+      {
+        "capacity": 3,
+        "pass": true,
+        "split": "train"
+      },
+      {
+        "capacity": 4,
+        "pass": true,
+        "split": "held-size"
+      },
+      {
+        "capacity": 6,
+        "pass": true,
+        "split": "held"
+      }
+    ],
+    "all24_frames": 24,
+    "all576_products": 576,
+    "branch_propensities_called_Born_probability": false,
+    "covariance_failures": 0,
+    "discriminate_called": false,
+    "ensemble_weights_replaced_with_samples": false,
+    "host_sampler_calls": 0,
+    "interface_disposition": {
+      "kind": "typed_interface_refusal",
+      "reason": "objective sigma is real within the supplied C662 law, but its patterns have lengths 1-4, half the branches use non-lane-zero MEMBER, and archive6/losers6/resource/snapshot fields are absent",
+      "type": "PortSchemaMismatch"
+    },
+    "lane_zero_members": 85,
+    "lane_zero_schema": false,
+    "non_lane_zero_members": 85,
+    "nonzero_objective_branches": 161,
+    "objective_bit_is_framework_actuality": false,
+    "objective_branches_enumerated": 170,
+    "objective_sigma_owned_within_supplied_candidate_law": true,
+    "pass": true,
+    "pattern_lengths": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "required_archive_loser_resource_snapshot_fields_present": false,
+    "six_port_schema": false,
+    "zero_propensity_branches_never_fire": 9
+  },
+  "Cycle663_sector_interface_audit": {
+    "L3_L4_L6_resource_rows": [
+      {
+        "capacity": 3,
+        "horizon": 3,
+        "pass": true,
+        "split": "train"
+      },
+      {
+        "capacity": 4,
+        "horizon": 4,
+        "pass": true,
+        "split": "held_out"
+      },
+      {
+        "capacity": 6,
+        "horizon": 6,
+        "pass": true,
+        "split": "held"
+      }
+    ],
+    "all_exhaust_modes_retained": true,
+    "amplitudes_or_populations_collapsed_to_classical_port": false,
+    "blockade_reject_rows": 58,
+    "blockade_rejected_word_Cycle625_port_supplied": false,
+    "blockade_truth_rows": 64,
+    "conditional_formed_direction_interfaces": 6,
+    "conditional_interface_pass": true,
+    "discriminate_called": false,
+    "global_dilation_objective_trajectory": false,
+    "global_inverse_accessible": true,
+    "horizons": {
+      "3": {
+        "blockade_reject": {
+          "classical_structural_bit": true,
+          "disposition": {
+            "kind": "typed_interface_refusal",
+            "type": "UnattachedRejectPort"
+          },
+          "unchanged_Cycle625_port_attached": false
+        },
+        "coherent_global_dilation": {
+          "disposition": {
+            "kind": "typed_interface_refusal",
+            "type": "CoherentSuperpositionNotPortTuple"
+          },
+          "global_inverse_residual": 2.813830806969804e-16,
+          "objective_branch_owner": false
+        },
+        "finite_horizon_no_emission": {
+          "disposition": {
+            "kind": "typed_interface_refusal",
+            "type": "CoherentNoEmissionAmplitude"
+          },
+          "objective_branch_owner": false,
+          "population": 0.12500000000000006
+        },
+        "retained_emission_time_branches": [
+          {
+            "amplitude_re_im": [
+              0.7071067811865476,
+              0.0
+            ],
+            "conditional_Cycle625_port_interface_exists": true,
+            "disposition": {
+              "kind": "typed_interface_refusal",
+              "type": "ConditionalAmplitudeOnly"
+            },
+            "objective_branch_owner": false,
+            "time_index": 1
+          },
+          {
+            "amplitude_re_im": [
+              0.5000000000000001,
+              0.0
+            ],
+            "conditional_Cycle625_port_interface_exists": true,
+            "disposition": {
+              "kind": "typed_interface_refusal",
+              "type": "ConditionalAmplitudeOnly"
+            },
+            "objective_branch_owner": false,
+            "time_index": 2
+          },
+          {
+            "amplitude_re_im": [
+              0.35355339059327384,
+              0.0
+            ],
+            "conditional_Cycle625_port_interface_exists": true,
+            "disposition": {
+              "kind": "typed_interface_refusal",
+              "type": "ConditionalAmplitudeOnly"
+            },
+            "objective_branch_owner": false,
+            "time_index": 3
+          }
+        ]
+      },
+      "4": {
+        "blockade_reject": {
+          "classical_structural_bit": true,
+          "disposition": {
+            "kind": "typed_interface_refusal",
+            "type": "UnattachedRejectPort"
+          },
+          "unchanged_Cycle625_port_attached": false
+        },
+        "coherent_global_dilation": {
+          "disposition": {
+            "kind": "typed_interface_refusal",
+            "type": "CoherentSuperpositionNotPortTuple"
+          },
+          "global_inverse_residual": 4.674393938201414e-16,
+          "objective_branch_owner": false
+        },
+        "finite_horizon_no_emission": {
+          "disposition": {
+            "kind": "typed_interface_refusal",
+            "type": "CoherentNoEmissionAmplitude"
+          },
+          "objective_branch_owner": false,
+          "population": 0.06250000000000003
+        },
+        "retained_emission_time_branches": [
+          {
+            "amplitude_re_im": [
+              0.7071067811865476,
+              0.0
+            ],
+            "conditional_Cycle625_port_interface_exists": true,
+            "disposition": {
+              "kind": "typed_interface_refusal",
+              "type": "ConditionalAmplitudeOnly"
+            },
+            "objective_branch_owner": false,
+            "time_index": 1
+          },
+          {
+            "amplitude_re_im": [
+              0.5000000000000001,
+              0.0
+            ],
+            "conditional_Cycle625_port_interface_exists": true,
+            "disposition": {
+              "kind": "typed_interface_refusal",
+              "type": "ConditionalAmplitudeOnly"
+            },
+            "objective_branch_owner": false,
+            "time_index": 2
+          },
+          {
+            "amplitude_re_im": [
+              0.35355339059327384,
+              0.0
+            ],
+            "conditional_Cycle625_port_interface_exists": true,
+            "disposition": {
+              "kind": "typed_interface_refusal",
+              "type": "ConditionalAmplitudeOnly"
+            },
+            "objective_branch_owner": false,
+            "time_index": 3
+          },
+          {
+            "amplitude_re_im": [
+              0.25000000000000006,
+              0.0
+            ],
+            "conditional_Cycle625_port_interface_exists": true,
+            "disposition": {
+              "kind": "typed_interface_refusal",
+              "type": "ConditionalAmplitudeOnly"
+            },
+            "objective_branch_owner": false,
+            "time_index": 4
+          }
+        ]
+      },
+      "6": {
+        "blockade_reject": {
+          "classical_structural_bit": true,
+          "disposition": {
+            "kind": "typed_interface_refusal",
+            "type": "UnattachedRejectPort"
+          },
+          "unchanged_Cycle625_port_attached": false
+        },
+        "coherent_global_dilation": {
+          "disposition": {
+            "kind": "typed_interface_refusal",
+            "type": "CoherentSuperpositionNotPortTuple"
+          },
+          "global_inverse_residual": 4.785465686274761e-16,
+          "objective_branch_owner": false
+        },
+        "finite_horizon_no_emission": {
+          "disposition": {
+            "kind": "typed_interface_refusal",
+            "type": "CoherentNoEmissionAmplitude"
+          },
+          "objective_branch_owner": false,
+          "population": 0.015625000000000007
+        },
+        "retained_emission_time_branches": [
+          {
+            "amplitude_re_im": [
+              0.7071067811865476,
+              0.0
+            ],
+            "conditional_Cycle625_port_interface_exists": true,
+            "disposition": {
+              "kind": "typed_interface_refusal",
+              "type": "ConditionalAmplitudeOnly"
+            },
+            "objective_branch_owner": false,
+            "time_index": 1
+          },
+          {
+            "amplitude_re_im": [
+              0.5000000000000001,
+              0.0
+            ],
+            "conditional_Cycle625_port_interface_exists": true,
+            "disposition": {
+              "kind": "typed_interface_refusal",
+              "type": "ConditionalAmplitudeOnly"
+            },
+            "objective_branch_owner": false,
+            "time_index": 2
+          },
+          {
+            "amplitude_re_im": [
+              0.35355339059327384,
+              0.0
+            ],
+            "conditional_Cycle625_port_interface_exists": true,
+            "disposition": {
+              "kind": "typed_interface_refusal",
+              "type": "ConditionalAmplitudeOnly"
+            },
+            "objective_branch_owner": false,
+            "time_index": 3
+          },
+          {
+            "amplitude_re_im": [
+              0.25000000000000006,
+              0.0
+            ],
+            "conditional_Cycle625_port_interface_exists": true,
+            "disposition": {
+              "kind": "typed_interface_refusal",
+              "type": "ConditionalAmplitudeOnly"
+            },
+            "objective_branch_owner": false,
+            "time_index": 4
+          },
+          {
+            "amplitude_re_im": [
+              0.17677669529663692,
+              0.0
+            ],
+            "conditional_Cycle625_port_interface_exists": true,
+            "disposition": {
+              "kind": "typed_interface_refusal",
+              "type": "ConditionalAmplitudeOnly"
+            },
+            "objective_branch_owner": false,
+            "time_index": 5
+          },
+          {
+            "amplitude_re_im": [
+              0.12500000000000003,
+              0.0
+            ],
+            "conditional_Cycle625_port_interface_exists": true,
+            "disposition": {
+              "kind": "typed_interface_refusal",
+              "type": "ConditionalAmplitudeOnly"
+            },
+            "objective_branch_owner": false,
+            "time_index": 6
+          }
+        ]
+      }
+    },
+    "pass": true
+  },
+  "actuality_derived": false,
+  "audit": "unset",
+  "authority": "none",
+  "axiom_pressure": false,
+  "cycle": 682,
+  "dependency_ledger": {
+    "Born_probability_derived": false,
+    "actuality_derived": false,
+    "dependency_chain": [
+      "formation route owns output",
+      "unchanged Cycle625-B/Cycle531 classical port exists",
+      "external discriminate sees stream/tables/frames only",
+      "candidate family member identified",
+      "separate nature-law/Record/Born obligations remain"
+    ],
+    "framework_Record_derived": false,
+    "frequency_derived": false,
+    "nature_admission_law_selected": false,
+    "pass": true,
+    "route_edges": {
+      "Cycle661": "formation -> exact classical port -> identified unique_quorum candidate",
+      "Cycle662": "objective sigma -> PortSchemaMismatch -> decoder not called",
+      "Cycle663": "retained amplitudes/reject -> no objective/full port -> decoder not called"
+    },
+    "six_wall_ledger": {
+      "C_int": {
+        "change": "none",
+        "note": "no new interaction law"
+      },
+      "C_local": {
+        "change": "bounded interface gain, wall not closed",
+        "note": "C661 exact local port-to-decoder edge is now executed"
+      },
+      "C_num": {
+        "change": "none",
+        "note": "Boolean identity is not numerical probability"
+      },
+      "C_ref": {
+        "change": "none",
+        "note": "candidate-law readout does not create a physical reference"
+      },
+      "C_source": {
+        "change": "none",
+        "note": "no gravity/source content"
+      },
+      "C_wrap": {
+        "change": "none",
+        "note": "finite resources remain finite"
+      }
+    }
+  },
+  "elapsed_seconds": 76.1482162475586,
+  "external_discriminator_audit": {
+    "discriminate_signature": [
+      "stream",
+      "tables",
+      "frames"
+    ],
+    "external_fail_count": 0,
+    "external_final_pass": true,
+    "external_pass_count": 24,
+    "function_bytes_unchanged": true,
+    "git_object_function_sha256": "74badb8a8417ff039b386a4abcce4650865cc64e8c74b926ec6edaa0b01f488f",
+    "loaded_function_sha256": "74badb8a8417ff039b386a4abcce4650865cc64e8c74b926ec6edaa0b01f488f",
+    "pass": true,
+    "rows_5_14_reference_self_tests_passed_at_external_commit": true,
+    "synthetic_emit_imported_but_never_called_by_Cycle682": true
+  },
+  "framework_Record_derived": false,
+  "frequency_derived": false,
+  "frozen_shores": {
+    "current_expected": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_DETERMINISTIC_CONSTRAINED_QCA_FORMATION_LAW_TOURNAMENT_CYCLE661_NOTE_2026-07-23.md": "14262310b768983ebbdc8a89f914f237ab2a2523c8a096eece63b33a7e5e9ad4",
+      "docs/work_history/repo/review_feedback/PHYSICAL_DISSIPATIVE_METASTABLE_FORMATION_CHANNEL_CYCLE663_NOTE_2026-07-23.md": "96f59a3f79ce7c29f3c9ccdf93cae9503ea4cd0084821c11ba6e0545046bec87",
+      "docs/work_history/repo/review_feedback/PHYSICAL_OBJECTIVE_STOCHASTIC_OPEN_DILATION_CYCLE662_NOTE_2026-07-23.md": "bdc8dda304985a62c73fc6e7a03f11d61041dd8053a9321fb7171c9b22947a05",
+      "outputs/physical_deterministic_constrained_qca_formation_law_tournament_cycle661_cold_2026_07_23.txt": "993a39d03462ddfe72ed7b838cca074f8c1fdca2bf34687ec91245edc55f1cf8",
+      "outputs/physical_deterministic_constrained_qca_formation_law_tournament_cycle661_receipt_2026_07_23.json": "c0ac1effe618bbdcbfc4bd6a3360f3beb557aa2469d47be476deef862e1340c5",
+      "outputs/physical_dissipative_metastable_formation_channel_cycle663_cold_2026_07_23.txt": "ec3fc442ab5a393a921f03517221db3f385667f5bf18b7ec55db0515d42cb680",
+      "outputs/physical_dissipative_metastable_formation_channel_cycle663_receipt_2026_07_23.json": "ab246cd35e6b6f30840621ca3e1eb9258a936de1c675fb2f0f429e9c131aa9b5",
+      "outputs/physical_objective_stochastic_open_dilation_cycle662_cold_2026_07_23.txt": "14c431047466462c57ecff1c83472e5233e88af3fc454920b6f6d6465a8cc625",
+      "outputs/physical_objective_stochastic_open_dilation_cycle662_receipt_2026_07_23.json": "27b258f1e4d96fb26f65937875bea32d74ecdfa62712c353e3327d0357a2c806",
+      "scripts/physical_deterministic_constrained_qca_formation_law_tournament_cycle661_2026_07_23.py": "83383268139e92bcd040fa176686f2e6c3d5eef806ba58ed5da9953a59af7590",
+      "scripts/physical_dissipative_metastable_formation_channel_cycle663_2026_07_23.py": "03446972470065a781c78b8e220169ca9d65239d1054535992e3e16b3ece09e4",
+      "scripts/physical_objective_stochastic_open_dilation_cycle662_2026_07_23.py": "219b6d3d93884a0ab8d9b0cc6c79850d008193fd5571b0281c76b6f8707d6b84"
+    },
+    "current_observed": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_DETERMINISTIC_CONSTRAINED_QCA_FORMATION_LAW_TOURNAMENT_CYCLE661_NOTE_2026-07-23.md": "14262310b768983ebbdc8a89f914f237ab2a2523c8a096eece63b33a7e5e9ad4",
+      "docs/work_history/repo/review_feedback/PHYSICAL_DISSIPATIVE_METASTABLE_FORMATION_CHANNEL_CYCLE663_NOTE_2026-07-23.md": "96f59a3f79ce7c29f3c9ccdf93cae9503ea4cd0084821c11ba6e0545046bec87",
+      "docs/work_history/repo/review_feedback/PHYSICAL_OBJECTIVE_STOCHASTIC_OPEN_DILATION_CYCLE662_NOTE_2026-07-23.md": "bdc8dda304985a62c73fc6e7a03f11d61041dd8053a9321fb7171c9b22947a05",
+      "outputs/physical_deterministic_constrained_qca_formation_law_tournament_cycle661_cold_2026_07_23.txt": "993a39d03462ddfe72ed7b838cca074f8c1fdca2bf34687ec91245edc55f1cf8",
+      "outputs/physical_deterministic_constrained_qca_formation_law_tournament_cycle661_receipt_2026_07_23.json": "c0ac1effe618bbdcbfc4bd6a3360f3beb557aa2469d47be476deef862e1340c5",
+      "outputs/physical_dissipative_metastable_formation_channel_cycle663_cold_2026_07_23.txt": "ec3fc442ab5a393a921f03517221db3f385667f5bf18b7ec55db0515d42cb680",
+      "outputs/physical_dissipative_metastable_formation_channel_cycle663_receipt_2026_07_23.json": "ab246cd35e6b6f30840621ca3e1eb9258a936de1c675fb2f0f429e9c131aa9b5",
+      "outputs/physical_objective_stochastic_open_dilation_cycle662_cold_2026_07_23.txt": "14c431047466462c57ecff1c83472e5233e88af3fc454920b6f6d6465a8cc625",
+      "outputs/physical_objective_stochastic_open_dilation_cycle662_receipt_2026_07_23.json": "27b258f1e4d96fb26f65937875bea32d74ecdfa62712c353e3327d0357a2c806",
+      "scripts/physical_deterministic_constrained_qca_formation_law_tournament_cycle661_2026_07_23.py": "83383268139e92bcd040fa176686f2e6c3d5eef806ba58ed5da9953a59af7590",
+      "scripts/physical_dissipative_metastable_formation_channel_cycle663_2026_07_23.py": "03446972470065a781c78b8e220169ca9d65239d1054535992e3e16b3ece09e4",
+      "scripts/physical_objective_stochastic_open_dilation_cycle662_2026_07_23.py": "219b6d3d93884a0ab8d9b0cc6c79850d008193fd5571b0281c76b6f8707d6b84"
+    },
+    "current_shore": "fb0ab5636e557d8de1da8e643f419867ae69197a",
+    "expected_preregistration_sha256": "524b3357840c94e5bbb2494d5bab2f84dc23e3f81959ee5d23779f44e633b529",
+    "expected_target_sha256": "6b2a3dcdd42e95f8f4d12cc80c322353fa368ca10a21fc3f4e68b1e7081c5494",
+    "external_evidence_commit": "317e866a3f",
+    "external_expected": {
+      "cold": "aa397cd6ab4803c84cdc67ccc204a8c5c1e9dd0ae593de9d19b182bec265d1c6",
+      "note": "9ccf6a4eadd36d59139a81200dd7f9d06fd85911eb7b526c050c820e2b55d466",
+      "receipt": "979e8d28051234bcc5e2f4aed287715c58113e42c6a715727cf811cb5ddbe8ad",
+      "script": "e73740331460538f4909532723a8a5baa34e344df55f9a97ee0320c041de868e",
+      "worker_grid": "5eeb9ca2c109e3f6c23a5a761b29c234dcffa36223025769aebc1f9f12ea0250"
+    },
+    "external_observed": {
+      "cold": "aa397cd6ab4803c84cdc67ccc204a8c5c1e9dd0ae593de9d19b182bec265d1c6",
+      "note": "9ccf6a4eadd36d59139a81200dd7f9d06fd85911eb7b526c050c820e2b55d466",
+      "receipt": "979e8d28051234bcc5e2f4aed287715c58113e42c6a715727cf811cb5ddbe8ad",
+      "script": "e73740331460538f4909532723a8a5baa34e344df55f9a97ee0320c041de868e",
+      "worker_grid": "5eeb9ca2c109e3f6c23a5a761b29c234dcffa36223025769aebc1f9f12ea0250"
+    },
+    "external_receipt_fail_count": 0,
+    "external_receipt_pass_count": 24,
+    "external_script_commit": "27a4db8c42",
+    "first_module_load_line": 161,
+    "frozen_before_module_load": true,
+    "no_cherry_pick_or_duplication": true,
+    "pass": true,
+    "preregistration_line": 43,
+    "preregistration_sha256": "524b3357840c94e5bbb2494d5bab2f84dc23e3f81959ee5d23779f44e633b529",
+    "route_receipt_pass": {
+      "Cycle661": true,
+      "Cycle662": true,
+      "Cycle663": true
+    },
+    "target_line": 12,
+    "target_sha256": "6b2a3dcdd42e95f8f4d12cc80c322353fa368ca10a21fc3f4e68b1e7081c5494",
+    "working_dependencies_equal_exact_shore_before_import": true,
+    "working_dependency_expected": {
+      "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py": "a618b5803cc1313a3dd644e3e066bb987bf366d8215a50a43d4260c69847b9e9",
+      "scripts/physical_forcing_menu_instrument_bridge_tournament_cycle634_2026_07_23.py": "ca187b7dda5c2b1b56a63ba960695734fc9915177c2769ef957913a096a74d52",
+      "scripts/physical_postformation_preservation_non_erasing_renewal_tournament_cycle621_2026_07_22.py": "faa1a251d7586ed9d2e496cc73b42f45108347fe5f627523fcef3caa4e652a73"
+    },
+    "working_dependency_observed": {
+      "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py": "a618b5803cc1313a3dd644e3e066bb987bf366d8215a50a43d4260c69847b9e9",
+      "scripts/physical_forcing_menu_instrument_bridge_tournament_cycle634_2026_07_23.py": "ca187b7dda5c2b1b56a63ba960695734fc9915177c2769ef957913a096a74d52",
+      "scripts/physical_postformation_preservation_non_erasing_renewal_tournament_cycle621_2026_07_22.py": "faa1a251d7586ed9d2e496cc73b42f45108347fe5f627523fcef3caa4e652a73"
+    }
+  },
+  "maximum_RSS_bytes": 75661312,
+  "nature_law_selected": false,
+  "no_go_discipline": {
+    "N1_qualifying_normalized_families": 4,
+    "N1_routes": [
+      {
+        "authority": {
+          "fragment": "def c625_interface_word(",
+          "line": 482,
+          "path": "scripts/physical_deterministic_constrained_qca_formation_law_tournament_cycle661_2026_07_23.py",
+          "ref": "fb0ab5636e557d8de1da8e643f419867ae69197a"
+        },
+        "family": "Cycle661 deterministic constrained QCA",
+        "honesty": "ATTEMPTED_POSITIVE",
+        "result": "actual all64 ports identify unique_quorum"
+      },
+      {
+        "authority": {
+          "fragment": "objective_sigma_is_law_state_not_input_token",
+          "line": 257,
+          "path": "scripts/physical_objective_stochastic_open_dilation_cycle662_2026_07_23.py",
+          "ref": "fb0ab5636e557d8de1da8e643f419867ae69197a"
+        },
+        "family": "Cycle662 objective stochastic dilation",
+        "honesty": "ATTEMPTED_TYPED",
+        "result": "objective sigma but incompatible 1-4-bit/multilane port schema"
+      },
+      {
+        "authority": {
+          "fragment": "A bath emission branch is not objective actuality",
+          "line": 1002,
+          "path": "scripts/physical_dissipative_metastable_formation_channel_cycle663_2026_07_23.py",
+          "ref": "fb0ab5636e557d8de1da8e643f419867ae69197a"
+        },
+        "family": "Cycle663 blockade plus collision dilation",
+        "honesty": "ATTEMPTED_TYPED",
+        "result": "reject unattached; emission amplitudes lack objective selector"
+      },
+      {
+        "authority": {
+          "fragment": "def discriminate(",
+          "line": 325,
+          "path": "scripts/physical_record_born_admission_law_discriminator_tournament_2026_07_23.py",
+          "ref": "27a4db8c42"
+        },
+        "family": "Cycle679 repo discriminator",
+        "honesty": "RULED_IN_AS_READOUT_ONLY",
+        "result": "pure readout, no formation route"
+      },
+      {
+        "authority": {
+          "fragment": "objective_sigma_is_law_state_not_input_token",
+          "line": 257,
+          "path": "scripts/physical_objective_stochastic_open_dilation_cycle662_2026_07_23.py",
+          "ref": "fb0ab5636e557d8de1da8e643f419867ae69197a"
+        },
+        "family": "objective schema adapter for C662",
+        "honesty": "OPEN_NOT_COUNTED",
+        "result": "could emit genuine six-port lane-zero fields without padding"
+      },
+      {
+        "authority": {
+          "fragment": "A bath emission branch is not objective actuality",
+          "line": 1002,
+          "path": "scripts/physical_dissipative_metastable_formation_channel_cycle663_2026_07_23.py",
+          "ref": "fb0ab5636e557d8de1da8e643f419867ae69197a"
+        },
+        "family": "objective bath selector plus reject adapter for C663",
+        "honesty": "OPEN_NOT_COUNTED",
+        "result": "could turn retained branches into actual typed streams"
+      }
+    ],
+    "N2_directed_pairwise_table": [
+      {
+        "from": "W_route_law_selection",
+        "implied": false,
+        "reason": "law choice, objective ownership, port schema, Record status and probability are independent obligations",
+        "to": "W_objective_owner"
+      },
+      {
+        "from": "W_route_law_selection",
+        "implied": false,
+        "reason": "law choice, objective ownership, port schema, Record status and probability are independent obligations",
+        "to": "W_port_schema"
+      },
+      {
+        "from": "W_route_law_selection",
+        "implied": false,
+        "reason": "law choice, objective ownership, port schema, Record status and probability are independent obligations",
+        "to": "W_Record_identification"
+      },
+      {
+        "from": "W_route_law_selection",
+        "implied": false,
+        "reason": "law choice, objective ownership, port schema, Record status and probability are independent obligations",
+        "to": "W_Born_frequency"
+      },
+      {
+        "from": "W_objective_owner",
+        "implied": false,
+        "reason": "law choice, objective ownership, port schema, Record status and probability are independent obligations",
+        "to": "W_route_law_selection"
+      },
+      {
+        "from": "W_objective_owner",
+        "implied": false,
+        "reason": "law choice, objective ownership, port schema, Record status and probability are independent obligations",
+        "to": "W_port_schema"
+      },
+      {
+        "from": "W_objective_owner",
+        "implied": false,
+        "reason": "law choice, objective ownership, port schema, Record status and probability are independent obligations",
+        "to": "W_Record_identification"
+      },
+      {
+        "from": "W_objective_owner",
+        "implied": false,
+        "reason": "law choice, objective ownership, port schema, Record status and probability are independent obligations",
+        "to": "W_Born_frequency"
+      },
+      {
+        "from": "W_port_schema",
+        "implied": false,
+        "reason": "law choice, objective ownership, port schema, Record status and probability are independent obligations",
+        "to": "W_route_law_selection"
+      },
+      {
+        "from": "W_port_schema",
+        "implied": false,
+        "reason": "law choice, objective ownership, port schema, Record status and probability are independent obligations",
+        "to": "W_objective_owner"
+      },
+      {
+        "from": "W_port_schema",
+        "implied": false,
+        "reason": "law choice, objective ownership, port schema, Record status and probability are independent obligations",
+        "to": "W_Record_identification"
+      },
+      {
+        "from": "W_port_schema",
+        "implied": false,
+        "reason": "law choice, objective ownership, port schema, Record status and probability are independent obligations",
+        "to": "W_Born_frequency"
+      },
+      {
+        "from": "W_Record_identification",
+        "implied": false,
+        "reason": "law choice, objective ownership, port schema, Record status and probability are independent obligations",
+        "to": "W_route_law_selection"
+      },
+      {
+        "from": "W_Record_identification",
+        "implied": false,
+        "reason": "law choice, objective ownership, port schema, Record status and probability are independent obligations",
+        "to": "W_objective_owner"
+      },
+      {
+        "from": "W_Record_identification",
+        "implied": false,
+        "reason": "law choice, objective ownership, port schema, Record status and probability are independent obligations",
+        "to": "W_port_schema"
+      },
+      {
+        "from": "W_Record_identification",
+        "implied": false,
+        "reason": "law choice, objective ownership, port schema, Record status and probability are independent obligations",
+        "to": "W_Born_frequency"
+      },
+      {
+        "from": "W_Born_frequency",
+        "implied": false,
+        "reason": "law choice, objective ownership, port schema, Record status and probability are independent obligations",
+        "to": "W_route_law_selection"
+      },
+      {
+        "from": "W_Born_frequency",
+        "implied": false,
+        "reason": "law choice, objective ownership, port schema, Record status and probability are independent obligations",
+        "to": "W_objective_owner"
+      },
+      {
+        "from": "W_Born_frequency",
+        "implied": false,
+        "reason": "law choice, objective ownership, port schema, Record status and probability are independent obligations",
+        "to": "W_port_schema"
+      },
+      {
+        "from": "W_Born_frequency",
+        "implied": false,
+        "reason": "law choice, objective ownership, port schema, Record status and probability are independent obligations",
+        "to": "W_Record_identification"
+      }
+    ],
+    "N2_walls": {
+      "W_Born_frequency": "no run derives frequency or Born probability from a Boolean profile or propensity",
+      "W_Record_identification": "Cycle531 conditional occurrence is not framework Record identification",
+      "W_objective_owner": "C661 basis execution and C663 amplitudes do not supply a universal objective trajectory law",
+      "W_port_schema": "C662 objective patterns are not unchanged Cycle625-B six-port lane-zero tuples",
+      "W_route_law_selection": "one route-level family identity is not nature-law selection"
+    },
+    "N3_hidden_wall_scan": [
+      {
+        "classification": "supplied test preparation",
+        "condition": "C661 computational-basis input word"
+      },
+      {
+        "classification": "supplied ontology; objective within law",
+        "condition": "C662 hybrid stochastic sigma law"
+      },
+      {
+        "classification": "amplitude sector, not objective selection",
+        "condition": "C663 retained branch label"
+      },
+      {
+        "classification": "fixed interface schema",
+        "condition": "Cycle625-B lane zero"
+      },
+      {
+        "classification": "published decoder input, not selected nature law",
+        "condition": "five candidate family tables"
+      }
+    ],
+    "N4_residual_matches": [
+      {
+        "current": "all64 actual port fields consumed",
+        "exact_match": true,
+        "prior": {
+          "fragment": "def c625_interface_word(",
+          "line": 482,
+          "path": "scripts/physical_deterministic_constrained_qca_formation_law_tournament_cycle661_2026_07_23.py",
+          "ref": "fb0ab5636e557d8de1da8e643f419867ae69197a"
+        },
+        "prior_residual": "unchanged Cycle625 adapter exists"
+      },
+      {
+        "current": "objective ownership preserved; schema mismatch typed",
+        "exact_match": true,
+        "prior": {
+          "fragment": "objective_sigma_is_law_state_not_input_token",
+          "line": 257,
+          "path": "scripts/physical_objective_stochastic_open_dilation_cycle662_2026_07_23.py",
+          "ref": "fb0ab5636e557d8de1da8e643f419867ae69197a"
+        },
+        "prior_residual": "sigma is law state, no host sampler"
+      },
+      {
+        "current": "no branch converted to PortTuple",
+        "exact_match": true,
+        "prior": {
+          "fragment": "A bath emission branch is not objective actuality",
+          "line": 1002,
+          "path": "scripts/physical_dissipative_metastable_formation_channel_cycle663_2026_07_23.py",
+          "ref": "fb0ab5636e557d8de1da8e643f419867ae69197a"
+        },
+        "prior_residual": "bath branch is not objective actuality"
+      },
+      {
+        "current": "unchanged function called",
+        "exact_match": true,
+        "prior": {
+          "fragment": "def discriminate(",
+          "line": 325,
+          "path": "scripts/physical_record_born_admission_law_discriminator_tournament_2026_07_23.py",
+          "ref": "27a4db8c42"
+        },
+        "prior_residual": "decoder reads only stream/tables/frames"
+      }
+    ],
+    "N5_rhetoric": [
+      {
+        "claim": "C662 schema mismatch",
+        "lattice_wide": "no impossibility claimed",
+        "per_block": "25 state rows",
+        "per_element": "one branch",
+        "per_mode": "five menus",
+        "per_site": "1-4 pointer bits"
+      },
+      {
+        "claim": "C663 has no objective branch selector",
+        "lattice_wide": "objective bath route remains open",
+        "per_block": "H3/H4/H6",
+        "per_element": "each amplitude",
+        "per_mode": "pending and emitted",
+        "per_site": "one collision cell"
+      },
+      {
+        "claim": "identified unique_quorum is candidate route law",
+        "lattice_wide": "nature selection unclaimed",
+        "per_block": "L3/L4/L6",
+        "per_element": "one Boolean port",
+        "per_mode": "all64 basis words",
+        "per_site": "one six-port cell"
+      }
+    ],
+    "N6_partial_closure_paths": [
+      {
+        "closes": "route-level candidate-law identity",
+        "path": "Cycle661 exact attachment",
+        "status": "EXECUTED_POSITIVE"
+      },
+      {
+        "closes": "lawful external discriminator input",
+        "path": "Cycle662 objective schema adapter",
+        "status": "OPEN"
+      },
+      {
+        "closes": "actual emission/no-emission stream",
+        "path": "Cycle663 objective bath selector",
+        "status": "OPEN"
+      },
+      {
+        "closes": "all64 route profile",
+        "path": "Cycle663 reject port attachment",
+        "status": "OPEN"
+      },
+      {
+        "closes": "probability meaning",
+        "path": "empirical frequency/Born campaign",
+        "status": "OPEN"
+      }
+    ],
+    "N6_primitive_registry_claim_made": false,
+    "N7_steelman": "Build a bounded local adapter whose input is C662's internally selected sigma or an objectively selected C663 bath sector, derive rather than pad a six-direction archive and loser mask, debit one physical ready rail, write the unchanged lane-zero Cycle531 tuple, retain every rejected/no-emission sector, and rerun the same blinded all64/held protocol without a host sample.",
+    "N8_cross_cycle_echo": [
+      {
+        "cycle": 625,
+        "remaining": "nature-law selection",
+        "retired": "five-law structural family and exact port grammar"
+      },
+      {
+        "cycle": 661,
+        "remaining": "objective/nature status",
+        "retired": "deterministic route table and attachment"
+      },
+      {
+        "cycle": 662,
+        "remaining": "six-port schema and Born meaning",
+        "retired": "objective sigma within supplied law"
+      },
+      {
+        "cycle": 663,
+        "remaining": "objective branch and reject port",
+        "retired": "retained dissipative dilation"
+      },
+      {
+        "cycle": 679,
+        "remaining": "physical streams",
+        "retired": "readout discriminator"
+      },
+      {
+        "cycle": 682,
+        "remaining": "C662/C663 lawful inputs and nature selection",
+        "retired": "C661 route-level identity"
+      }
+    ],
+    "axiom_pressure": false,
+    "broad_no_go_claim": false,
+    "minimum_content_claim": false,
+    "negative_claim_gate_status": "FAIL_DO_NOT_SHIP_NEGATIVE",
+    "negative_gate_failure_reason": "N7 C662 schema adapter and C663 objective-bath/reject attachment remain open",
+    "pass": true,
+    "shared_route_independent_obstruction": false,
+    "skill_freshness": {
+      "origin_main": "f6778942884658cd9849a70d610bcfdd45ac4740",
+      "origin_main_advanced": true,
+      "origin_main_checked": true,
+      "remote_skill_followed": true
+    }
+  },
+  "note_contract": {
+    "missing": [],
+    "pass": true,
+    "required_fragments": [
+      "Authority: **none**",
+      "Audit: **unset**",
+      "candidate law implemented by Cycle661",
+      "does not identify nature's law",
+      "never converted to a `PortTuple`",
+      "no shared route-independent obstruction"
+    ]
+  },
+  "note_sha256": "3a38403e21c84e11eadee2b5483e22f6111733042e9e51d3ad8ea2a71f54a280",
+  "optimal_next_campaign": "Build a bounded local adapter whose input is C662's internally selected sigma or an objectively selected C663 bath sector, derive rather than pad a six-direction archive and loser mask, debit one physical ready rail, write the unchanged lane-zero Cycle531 tuple, retain every rejected/no-emission sector, and rerun the same blinded all64/held protocol without a host sample.",
+  "pass": true,
+  "route_disposition": {
+    "Cycle661": "IDENTIFIED_CANDIDATE_LAW",
+    "Cycle662": "TYPED_PORT_SCHEMA_REFUSAL",
+    "Cycle663": "TYPED_OBJECTIVE_AND_ATTACHMENT_REFUSALS"
+  },
+  "runner_sha256": "625b7e0c8aecd779c949a8b0a05d0acf4fe8926ab69e7a13b3ae96e09881d318",
+  "shared_route_independent_obstruction": false,
+  "status": "positive Cycle661 candidate-law identification; C662/C663 typed interface dispositions",
+  "strongest_constructive_result": "all 64 genuine Cycle661 QCA outputs feed unchanged Cycle625-B/Cycle531 fields and blindly identify the unique_quorum candidate under the unchanged external discriminator",
+  "tests_failed": 0,
+  "tests_passed": 8
+}

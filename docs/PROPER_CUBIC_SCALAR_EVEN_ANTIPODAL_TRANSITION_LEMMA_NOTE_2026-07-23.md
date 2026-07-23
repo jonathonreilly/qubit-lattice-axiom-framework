@@ -27,7 +27,8 @@ C(beta) = exp[-i tan(beta/2)]
           (P_s - P_e + exp(i beta) P_v).
 ```
 
-Choose any normalized `|e>` in the even subspace and set
+Choose any normalized `|e>` in `ran(P_e)`, the reversal-even subspace
+orthogonal to `|s>`, and set
 
 ```text
 |+> = (|s> + |e>)/sqrt(2),

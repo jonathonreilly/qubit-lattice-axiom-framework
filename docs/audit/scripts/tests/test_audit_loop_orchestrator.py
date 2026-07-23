@@ -214,7 +214,7 @@ class GeneratedProvenanceRecoveryTest(unittest.TestCase):
         self.assertEqual(self.path.read_bytes(), before)
         self.assertEqual(stat.S_IMODE(self.path.stat().st_mode), before_mode)
 
-    def test_clean_main_recovers_without_normalizing_untracked_mode_bits(self):
+    def test_clean_main_refuses_noncanonical_mode_bits_without_mutation(self):
         for mode in (0o444, 0o600, 0o664, 0o2644, 0o4644):
             with self.subTest(mode=oct(mode)):
                 self.path.chmod(0o644)
@@ -224,16 +224,12 @@ class GeneratedProvenanceRecoveryTest(unittest.TestCase):
 
                 error = self._clean_main_error()
 
-                self.assertIsNone(error)
+                self.assertEqual(error, "working tree is not clean")
                 self.assertEqual(self.path.read_bytes(), before)
                 self.assertEqual(stat.S_IMODE(self.path.stat().st_mode), mode)
 
-    def test_clean_main_recovers_in_place_with_hardlink_and_xattr(self):
+    def test_clean_main_recognition_preserves_xattr(self):
         self._refresh()
-        outside = self.root.parent / f"{self.root.name}-certification-hardlink"
-        outside.unlink(missing_ok=True)
-        os.link(self.path, outside)
-        self.addCleanup(outside.unlink, missing_ok=True)
         before_inode = self.path.stat().st_ino
         before_bytes = self.path.read_bytes()
         xattr_name = "user.audit-recovery-test"
@@ -249,9 +245,7 @@ class GeneratedProvenanceRecoveryTest(unittest.TestCase):
 
         self.assertIsNone(error)
         self.assertEqual(self.path.stat().st_ino, before_inode)
-        self.assertEqual(outside.stat().st_ino, before_inode)
         self.assertEqual(self.path.read_bytes(), before_bytes)
-        self.assertEqual(outside.read_bytes(), before_bytes)
         if hasattr(os, "getxattr"):
             self.assertEqual(os.getxattr(self.path, xattr_name), xattr_value)
         elif xattr_command is not None:
@@ -262,6 +256,23 @@ class GeneratedProvenanceRecoveryTest(unittest.TestCase):
                 text=True,
             ).stdout.strip()
             self.assertEqual(value, xattr_value.decode())
+
+    def test_clean_main_refuses_hardlink_without_mutation(self):
+        self._refresh()
+        before = self.path.read_bytes()
+        outside = self.root.parent / f"{self.root.name}-certification-hardlink"
+        outside.unlink(missing_ok=True)
+        os.link(self.path, outside)
+        self.addCleanup(outside.unlink, missing_ok=True)
+        before_inode = self.path.stat().st_ino
+
+        error = self._clean_main_error()
+
+        self.assertEqual(error, "working tree is not clean")
+        self.assertEqual(self.path.stat().st_ino, before_inode)
+        self.assertEqual(outside.stat().st_ino, before_inode)
+        self.assertEqual(self.path.read_bytes(), before)
+        self.assertEqual(outside.read_bytes(), before)
 
     def test_clean_main_refuses_payload_drift(self):
         refreshed = dict(
@@ -415,13 +426,13 @@ class GeneratedProvenanceRecoveryTest(unittest.TestCase):
         raced_text = json.dumps(raced, indent=2, sort_keys=True) + "\n"
         original_sh = batch.sh
         injected = False
-        summary_calls = 0
+        status_calls = 0
 
         def racing_sh(cmd, timeout=120, *, honor_cancel=True, text=True):
-            nonlocal injected, summary_calls
-            if cmd[:2] == ["git", "diff"] and "--summary" in cmd:
-                summary_calls += 1
-            if summary_calls == 2 and not injected:
+            nonlocal injected, status_calls
+            if cmd == ["git", "status", "--porcelain"]:
+                status_calls += 1
+            if status_calls == 2 and not injected:
                 injected = True
                 self.path.write_text(raced_text, encoding="utf-8")
             return original_sh(
@@ -439,7 +450,10 @@ class GeneratedProvenanceRecoveryTest(unittest.TestCase):
             error = batch.clean_main_error()
 
         self.assertTrue(injected)
-        self.assertIsNotNone(error)
+        self.assertEqual(
+            error,
+            "working tree is not clean after provenance recognition",
+        )
         after = json.loads(self.path.read_text(encoding="utf-8"))
         self.assertEqual(
             after["lanes"][0]["blocking"],
@@ -497,13 +511,13 @@ class GeneratedProvenanceRecoveryTest(unittest.TestCase):
                 before_bytes = self.path.read_bytes()
                 original_sh = batch.sh
                 injected = False
-                summary_calls = 0
+                status_calls = 0
 
                 def racing_sh(cmd, timeout=120, *, honor_cancel=True, text=True):
-                    nonlocal injected, summary_calls
-                    if cmd[:2] == ["git", "diff"] and "--summary" in cmd:
-                        summary_calls += 1
-                    if summary_calls == 2 and not injected:
+                    nonlocal injected, status_calls
+                    if cmd == ["git", "status", "--porcelain"]:
+                        status_calls += 1
+                    if status_calls == 2 and not injected:
                         injected = True
                         self.path.chmod(concurrent_mode)
                     return original_sh(
@@ -525,7 +539,10 @@ class GeneratedProvenanceRecoveryTest(unittest.TestCase):
                     error = batch.clean_main_error()
 
                 self.assertTrue(injected)
-                self.assertEqual(error, "working tree is not clean")
+                self.assertEqual(
+                    error,
+                    "working tree is not clean after provenance recognition",
+                )
                 self.assertEqual(self.path.read_bytes(), before_bytes)
                 self.assertEqual(
                     stat.S_IMODE(self.path.stat().st_mode),

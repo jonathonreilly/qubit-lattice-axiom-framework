@@ -275,6 +275,10 @@ least every 15 minutes — never silence for a long run.
   rewrite, chmod, replace, or otherwise mutate the generated file. If
   overlapping or non-provenance content appears, preserve it, fail the clean
   check, and stop that transaction.
+- Require the canonical regular-file mode and single-link entry, then verify
+  the same raw bytes and metadata again after the second status read. Refuse
+  read-only, special-mode, hardlinked, or concurrently changed entries so the
+  downstream generator cannot mutate user-owned filesystem state.
 - Keep that recovery fail-closed. It must reject staged changes, source or
   ledger content, verdict-bearing changes, untracked files, deletions, and
   any payload delta beyond the exact allowlisted provenance field. Preserve

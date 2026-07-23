@@ -1496,14 +1496,29 @@ def stage_and_commit(message: str) -> tuple[bool, str]:
 def reset_to_origin_main() -> tuple[bool, str]:
     # Rollback must remain available after a cancellation request; otherwise
     # an interrupted commit/push can strand dirty or ahead local main state.
+    target = sh(
+        ["git", "rev-parse", "origin/main"],
+        honor_cancel=False,
+    )
+    target_oid = target.stdout.strip()
+    if target.returncode != 0 or not re.fullmatch(r"[0-9a-f]{40}", target_oid):
+        return False, "cannot resolve rollback target origin/main"
     reset = sh(
-        ["git", "reset", "--hard", "origin/main"],
+        ["git", "reset", "--hard", target_oid],
         honor_cancel=False,
     )
     if reset.returncode != 0:
         return False, f"reset failed: {(reset.stderr or reset.stdout).strip()[:240]}"
     error = clean_main_error(honor_cancel=False)
-    return (error is None, error or "reset to origin/main")
+    if error is not None:
+        return False, error
+    head = sh(["git", "rev-parse", "HEAD"], honor_cancel=False)
+    remote = sh(["git", "rev-parse", "origin/main"], honor_cancel=False)
+    if head.returncode != 0 or remote.returncode != 0:
+        return False, "cannot verify rollback refs"
+    if head.stdout.strip() != target_oid or remote.stdout.strip() != target_oid:
+        return False, "rollback did not leave HEAD synchronized with origin/main"
+    return True, f"reset to origin/main at {target_oid}"
 
 
 def apply_claim_serialized(
@@ -1523,17 +1538,26 @@ def apply_claim_serialized(
         raise ValueError("one non-empty claim delivery group is required")
     cid = next(iter(claim_ids))
 
-    def fail_after_local_commit(result: str, detail: str | None = None):
+    def fail_after_transaction(
+        result: str,
+        detail: str | None = None,
+        *,
+        pass_no: int | None = None,
+    ):
         reset, reset_detail = reset_to_origin_main()
         if not reset:
             return False, [{
                 "cid": cid,
                 "result": "race_reset_failed",
-                "detail": reset_detail,
+                "detail": f"{result}: {detail or 'transaction failed'}; {reset_detail}",
             }]
         failure = {"cid": cid, "result": result}
+        if pass_no is not None:
+            failure["pass"] = pass_no
         if detail is not None:
             failure["detail"] = detail
+        failure["rollback_verified"] = True
+        failure["rollback_detail"] = reset_detail
         return False, [failure]
 
     for attempt in range(1, retries + 1):
@@ -1548,18 +1572,15 @@ def apply_claim_serialized(
                 evidence_manifest=envelope["evidence_manifest"],
             )
             if not applied:
-                reset_to_origin_main()
-                return False, [{
-                    "cid": cid,
-                    "pass": job["pass"],
-                    "result": "apply_or_gate_failed",
-                    "detail": f"apply rejected: {apply_detail[:400]}",
-                }]
+                return fail_after_transaction(
+                    "apply_or_gate_failed",
+                    f"apply rejected: {apply_detail[:400]}",
+                    pass_no=job["pass"],
+                )
 
         gated, detail = run_generated_gates()
         if not gated:
-            reset_to_origin_main()
-            return False, [{"cid": cid, "result": "apply_or_gate_failed", "detail": detail}]
+            return fail_after_transaction("apply_or_gate_failed", detail)
         verdicts = [str(envelope["audit"].get("verdict")) for _, envelope in ordered]
         seats = ["first" if job["pass"] == 1 else "second" for job, _ in ordered]
         committed, detail = stage_and_commit(
@@ -1567,8 +1588,7 @@ def apply_claim_serialized(
             f"(codex-cli, {MODEL}, {REASONING}, {'+'.join(seats)}/batch)"
         )
         if not committed:
-            reset_to_origin_main()
-            return False, [{"cid": cid, "result": "commit_failed", "detail": detail}]
+            return fail_after_transaction("commit_failed", detail)
         local_commit = detail
         push = sh(["git", "push", "-q", "origin", "HEAD:main"])
         if push.returncode == 0:
@@ -1583,18 +1603,18 @@ def apply_claim_serialized(
             ]
 
         if _command_cancelled():
-            return fail_after_local_commit("commit_cancelled")
+            return fail_after_transaction("commit_cancelled")
 
         fetch = sh(["git", "fetch", "origin", "main", "-q"])
         if fetch.returncode != 0:
             result = "commit_cancelled" if _command_cancelled() else "push_failed"
             detail = None if result == "commit_cancelled" else "push and follow-up fetch failed"
-            return fail_after_local_commit(result, detail)
+            return fail_after_transaction(result, detail)
         if _command_cancelled():
-            return fail_after_local_commit("commit_cancelled")
+            return fail_after_transaction("commit_cancelled")
         landed = sh(["git", "merge-base", "--is-ancestor", local_commit, "origin/main"])
         if _command_cancelled():
-            return fail_after_local_commit("commit_cancelled")
+            return fail_after_transaction("commit_cancelled")
         if landed.returncode == 0:
             return True, [
                 {
@@ -1606,7 +1626,7 @@ def apply_claim_serialized(
                 for job, envelope in ordered
             ]
         if attempt == retries:
-            return fail_after_local_commit("push_race_exhausted")
+            return fail_after_transaction("push_race_exhausted")
         reset, reset_detail = reset_to_origin_main()
         if not reset:
             return False, [{"cid": cid, "result": "race_reset_failed", "detail": reset_detail}]
@@ -1743,19 +1763,46 @@ def launch_science_fix_worker(
     return proc.pid, handoff_path, log_path
 
 
-def load_campaign_quarantine(path: Path | None) -> set[str]:
+def load_campaign_exclusion_records(path: Path | None) -> list[dict]:
     if path is None or not path.exists():
-        return set()
-    claim_ids: set[str] = set()
-    for line in path.read_text(encoding="utf-8").splitlines():
-        try:
-            row = json.loads(line)
-        except json.JSONDecodeError:
+        return []
+    records: list[dict] = []
+    for line_number, line in enumerate(
+        path.read_text(encoding="utf-8").splitlines(),
+        start=1,
+    ):
+        if not line.strip():
             continue
-        cid = row.get("claim_id") if isinstance(row, dict) else None
-        if isinstance(cid, str) and cid:
-            claim_ids.add(cid)
-    return claim_ids
+        try:
+            record = json.loads(line)
+        except json.JSONDecodeError as exc:
+            raise ValueError(
+                f"{path}:{line_number}: invalid campaign exclusion JSON: "
+                f"{exc.msg}"
+            ) from exc
+        if not isinstance(record, dict):
+            raise ValueError(
+                f"{path}:{line_number}: campaign exclusion is not an object"
+            )
+        cid = record.get("claim_id")
+        reason = record.get("reason")
+        if not isinstance(cid, str) or not cid:
+            raise ValueError(
+                f"{path}:{line_number}: campaign exclusion has no claim_id"
+            )
+        if not isinstance(reason, str) or not reason:
+            raise ValueError(
+                f"{path}:{line_number}: campaign exclusion has no reason"
+            )
+        records.append(record)
+    return records
+
+
+def load_campaign_quarantine(path: Path | None) -> set[str]:
+    return {
+        record["claim_id"]
+        for record in load_campaign_exclusion_records(path)
+    }
 
 
 def persist_campaign_quarantine(
@@ -1788,10 +1835,17 @@ def persist_campaign_exclusions(
     """
     if path is None or not claim_ids:
         return
-    existing = load_campaign_quarantine(path)
+    existing = {
+        (record["claim_id"], record["reason"])
+        for record in load_campaign_exclusion_records(path)
+    }
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("a", encoding="utf-8") as handle:
-        for cid in sorted(claim_ids - existing):
+        for cid in sorted(
+            candidate
+            for candidate in claim_ids
+            if (candidate, reason) not in existing
+        ):
             failures = [
                 item
                 for item in report
@@ -1902,10 +1956,17 @@ def persist_blocked_row_reentries(
 ) -> None:
     if path is None or not reentries:
         return
-    existing = load_campaign_quarantine(path)
+    existing = {
+        (record["claim_id"], record["reason"])
+        for record in load_campaign_exclusion_records(path)
+    }
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("a", encoding="utf-8") as handle:
-        for cid in sorted(set(reentries) - existing):
+        for cid in sorted(
+            candidate
+            for candidate in reentries
+            if (candidate, BLOCKED_ROW_QUARANTINE_RESULT) not in existing
+        ):
             handle.write(
                 json.dumps(
                     {
@@ -2039,19 +2100,20 @@ def apply_serialized(
         ok, results = apply_claim_serialized(claim_deliveries, retries)
         report.extend(results)
         if not ok:
-            # apply_claim_serialized rolls an apply/gate rejection back to the
-            # synchronized origin/main parent.  Once that rollback is proven
-            # clean, this is a claim-local operational failure: quarantine the
-            # row for this campaign and keep draining unrelated science.
+            # apply_claim_serialized marks an apply/gate rejection claim-local
+            # only after reset_to_origin_main proves both a clean worktree and
+            # exact HEAD == origin/main synchronization. Once that explicit
+            # rollback proof is present, quarantine the row for this campaign
+            # and keep draining unrelated science.
             # Sync, reset, commit, and push failures remain global/uncertain
             # and still stop the batch.
             claim_local = (
                 bool(results)
                 and all(
                     item.get("result") == "apply_or_gate_failed"
+                    and item.get("rollback_verified") is True
                     for item in results
                 )
-                and clean_main_error() is None
             )
             if claim_local:
                 report.append({
@@ -2202,7 +2264,13 @@ def main() -> int:
     )
     report: list[dict] = []
     PROGRESS["report"] = report
-    session_skipped = load_campaign_quarantine(args.campaign_quarantine_file)
+    try:
+        session_skipped = load_campaign_quarantine(
+            args.campaign_quarantine_file
+        )
+    except (OSError, ValueError) as exc:
+        print(f"refusing to run with invalid campaign state: {exc}")
+        return finish(2)
     science_handoffs: dict[str, dict] = {}
     if not args.dry_run:
         try:

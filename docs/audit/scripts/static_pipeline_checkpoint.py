@@ -70,8 +70,10 @@ VERDICT_GENERATED_PATHS = frozenset({
 # source inputs (notes, dependency edges, and runners) remain fingerprinted;
 # the materialized metrics themselves must not invalidate the checkpoint when
 # a verdict changes descendant effective status during the same pipeline.
+# ``criticality`` is deliberately absent: seed_audit_ledger.py consumes the
+# prior value when deciding whether a legacy terminal row needs claim-type
+# re-audit, so changing it must invalidate fast mode.
 LEDGER_PIPELINE_DERIVED_FIELDS = frozenset({
-    "criticality",
     "direct_in_degree",
     "load_bearing_score",
     "max_descendant_status",

@@ -1,0 +1,10 @@
+PASS immutable Cycle655 quartet is byte exact :: {'commit': 'a1b5d30bba9bccfedfaef87deb2472b74508f8f6', 'mismatches': []}
+PASS Cycle655 and Cycle652 premises load from immutable archives only :: {'Cycle655': 'PASS', 'Cycle652': 'PASS', 'Cycle652_receipt_sha256': '56870b951b93c81125789041af6758196e588eeddf2cf7b0235e1f7fd5b03379'}
+PASS route A flat event tape has exact size accounting and fails its own L3 representation before placement :: {3: (67602884, 55985196, False), 6: (413877522, 461394075, True), 7: (502317360, 733822016, True)}
+PASS route B reuses one bounded tile and closes count recurrence while the exact gate/site digest remains unavailable :: {3: (1166120, 8, False), 6: (6467943, 8, False), 7: (7849620, 8, False)}
+PASS route C audits every placed program port and exact fine-NN backbone formula leg, but its successor remains host indexed :: {3: (2213, 669732, True), 6: (2732, 2007232, True), 7: (2821, 2458266, True)}
+PASS immutable route/scratch/leakage controls and band ownership remain exact without promoting full-code leakage :: {'systems': 3, 'lawful_leakage': 0.0, 'full_code_leakage': False}
+PASS canonical N1-N8 blocks flat-route failure and missing no-host digest from becoming obstruction or axiom pressure :: {'families': 5, 'walls': 3, 'pairs': 6}
+PASS Cycle657 note freezes all three dispositions, exact missing terminal, and N1-N8 scope :: ('Status: **PASS**', 'Authority: **none**', 'Audit: **unset**', 'Route A', 'Route B', 'Route C', 'no-host', 'gate/site digest', 'all24/all576', 'ordinary translations', 'N1-N8', 'Axiom pressure: **none**')
+PASS Cycle657 advances physical band/count traversal while preserving the no-host gate/site firewall :: {'autonomous_global': False, 'emitted_digests': [None, None, None]}
+{"elapsed": 13.542166415951215, "receipt": "outputs/physical_streamed_program_fibre_cycle657_receipt_2026_07_23.json", "status": "PASS", "tests": "9/9"}

@@ -1,0 +1,690 @@
+{
+  "Status": "PASS",
+  "audit": "unset",
+  "author_accepted": false,
+  "author_artifact_status_accepted": false,
+  "authority": "none",
+  "autonomous_local_dispatch_kernel_pass": true,
+  "autonomous_token_conditioned_global_dispatch_pass": false,
+  "axiom_pressure": false,
+  "axiom_pressure_gate": "FAIL / DO NOT SHIP",
+  "axiom_pressure_shipped": false,
+  "breakthrough": false,
+  "broad_negative_gate": "FAIL / DO NOT SHIP",
+  "broad_negative_shipped": false,
+  "classification": "literal covariant circulating program-band traversal and reusable count recurrence with three named global dispatch interfaces",
+  "constitutional_effect": "none",
+  "cycle": 657,
+  "date": "2026-07-23",
+  "exact_target_contract": {
+    "allowed_premises": "immutable Cycle652 program placements/fixed-word commitments and Cycle655 bounded local kernels/nine-colour state-carried phase; supplied blank backbone remains explicit",
+    "completion_witness": "all emitted opcode/site digests equal immutable commitments and a literal local successor/decoder returns head, token, opcode, counters, route stack, enable, probe, and scratch",
+    "does_not_count": "raw capacity, count-only wrap, host-indexed port traversal, source-code reproducibility, or an opaque digest without literal program values",
+    "forbidden_weakenings": "no digest-as-program substitution, Python event/row selector, host path/schedule, opaque exception hash as payload, refit, blank renewal, static repair, E, preparation, occurrence, Record, time, rate, energy, source, gravity, full-compiler, breakthrough, minimum-content, or axiom promotion",
+    "quantifiers_domain": "L3/L6/L7; every placed program role and fixed-word primitive ordinal; ordinary translations; all24 frames/all576 products; lawful, deletion, leakage, malformed token/opcode/counter/route/scratch sectors",
+    "target": "injectively place a streamed program fibre for every immutable Cycle652 primitive and execute a full forward/inverse recurrent traversal whose state-selected opcode/site digest equals the L3/L6/L7 fixed words with no host gate, site, path, or schedule service"
+  },
+  "full_no_host_head_traversal_gate_site_digest_pass": false,
+  "full_physical_oracle_compiler_pass": false,
+  "inherited_controls": {
+    "Cycle652_full_code_leakage_executed": false,
+    "Cycle652_lawful_auxiliary_slice_leakage_norm": 0.0,
+    "Cycle655_malformed_sector_tests": 39663,
+    "Cycle655_parity_enable_scratch_return": true,
+    "Cycle655_recurrence_inverse_failures": 0,
+    "Cycle655_token_opcode_counter_phase_sectors": 207669,
+    "mass_contact_seam_pin_scope": "immutable coin/stream/contact call word and L3/L6/L7 fixed-word digests only; no new mass/contact/seam fixture is executed",
+    "pass": true,
+    "systems": [
+      {
+        "Cycle652_counter_failures": 0,
+        "Cycle652_fixed_word_sha256": "fe80668b079120963371b6ef02e0322772ff22d0bd1fc9ed242f91463ebc6ba5",
+        "Cycle652_route_failures": 0,
+        "Cycle652_syndrome_work_failures": 0,
+        "Cycle655_local_route_return_failures": 0,
+        "Cycle655_local_tile_M2": 125,
+        "band_read_and_ownership_failures": 0,
+        "length": 3
+      },
+      {
+        "Cycle652_counter_failures": 0,
+        "Cycle652_fixed_word_sha256": "38da92dbb0e82755a4672041398b298dfd3c50cde0f8ea6afa300a772a8b574b",
+        "Cycle652_route_failures": 0,
+        "Cycle652_syndrome_work_failures": 0,
+        "Cycle655_local_route_return_failures": 0,
+        "Cycle655_local_tile_M2": 125,
+        "band_read_and_ownership_failures": 0,
+        "length": 6
+      },
+      {
+        "Cycle652_counter_failures": 0,
+        "Cycle652_fixed_word_sha256": "620d179dd28eb47a13e83059c9bc1c8aca5c64657e9c0d49615cb182a374126a",
+        "Cycle652_route_failures": 0,
+        "Cycle652_syndrome_work_failures": 0,
+        "Cycle655_local_route_return_failures": 0,
+        "Cycle655_local_tile_M2": 125,
+        "band_read_and_ownership_failures": 0,
+        "length": 7
+      }
+    ]
+  },
+  "maturity_0_to_5": {
+    "Born_and_probability": 1,
+    "causal_time": 1,
+    "gravity_and_source": 1,
+    "inertia_and_matter": 1,
+    "operational_quantum_and_records": 2
+  },
+  "minimum_content_gate": "FAIL / DO NOT SHIP",
+  "minimum_content_shipped": false,
+  "no_go_discipline": {
+    "N1_negative_gate": "FAIL / DO NOT SHIP",
+    "N1_normalized_families": [
+      {
+        "family": "flat spatial instruction fibre",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism": "literal one-bit-M2 event tape",
+        "object": "one opcode/absolute-site packet and head site per Cycle652 primitive",
+        "result": "exact representation exceeds L3 margin; L6/L7 raw capacity does not place it",
+        "strength_vs_target": "target-equivalent",
+        "terminal": "injective tape plus local successor and operand coupling"
+      },
+      {
+        "family": "compressed reusable program packets",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism": "nested counters and reusable opcode packet",
+        "object": "Cycle652 formula registers/search bank with one Cycle655 tile",
+        "result": "full count recurrence passes; static exception/program values and gate/site emission are not materialized",
+        "strength_vs_target": "target-equivalent",
+        "terminal": "state-selected gate/site digest equals immutable word"
+      },
+      {
+        "family": "staggered circulating backbone band",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism": "fine-NN backbone circulation under state-carried nine-colour layers",
+        "object": "every placed program seed/port plus one serialized head",
+        "result": "literal band traversal/covariance/return pass; next port is still host indexed",
+        "strength_vs_target": "target-equivalent",
+        "terminal": "local successor, no host site/schedule, and exact event digest"
+      },
+      {
+        "family": "immutable runner algorithm replay",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism": "rerun host formulas and hash events",
+        "object": "Cycle652 Python descriptor/route enumerator",
+        "result": "source contains a reproducer but host algorithm execution is forbidden as autonomous evidence",
+        "strength_vs_target": "weaker host replay",
+        "terminal": "physical recurrent local rule selects gate/site"
+      },
+      {
+        "family": "replicated Cycle655 bounded tiles",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism": "local exact Fredkin/controlled-P kernel replication",
+        "object": "one 125-M2 tile per controller vertex or event packet",
+        "result": "local tile inherited positive; event-scale replication was not placed and flat L3 demand fails",
+        "strength_vs_target": "weaker capacity route",
+        "terminal": "global injective placement and event coupling"
+      }
+    ],
+    "N1_open_routes_not_counted": [
+      {
+        "family": "self-delimiting topological packet loop",
+        "status": "OPEN / NOT COUNTED"
+      },
+      {
+        "family": "distributed local formula evaluators",
+        "status": "OPEN / NOT COUNTED"
+      }
+    ],
+    "N1_qualifying_attempts": 5,
+    "N1_required_for_negative": 5,
+    "N2_collapsed_walls": {
+      "W_gate_site_decoder": "no lowered local decoder turns the carried compressed state into every immutable opcode/site event and matching digest",
+      "W_local_successor": "no injectively placed next-port/instruction field makes the circulating head choose its successor locally",
+      "W_program_content_materialization": "placed formula/search roles are not bound to a complete literal value word available to the recurrent physical rule"
+    },
+    "N2_directed_ordered_pairs": [
+      {
+        "from": "W_program_content_materialization",
+        "implied": false,
+        "reason": "closing W_program_content_materialization does not construct W_local_successor",
+        "to": "W_local_successor"
+      },
+      {
+        "from": "W_program_content_materialization",
+        "implied": false,
+        "reason": "closing W_program_content_materialization does not construct W_gate_site_decoder",
+        "to": "W_gate_site_decoder"
+      },
+      {
+        "from": "W_local_successor",
+        "implied": false,
+        "reason": "closing W_local_successor does not construct W_program_content_materialization",
+        "to": "W_program_content_materialization"
+      },
+      {
+        "from": "W_local_successor",
+        "implied": false,
+        "reason": "closing W_local_successor does not construct W_gate_site_decoder",
+        "to": "W_gate_site_decoder"
+      },
+      {
+        "from": "W_gate_site_decoder",
+        "implied": false,
+        "reason": "closing W_gate_site_decoder does not construct W_program_content_materialization",
+        "to": "W_program_content_materialization"
+      },
+      {
+        "from": "W_gate_site_decoder",
+        "implied": false,
+        "reason": "closing W_gate_site_decoder does not construct W_local_successor",
+        "to": "W_local_successor"
+      }
+    ],
+    "N3_hidden_wall_scan": [
+      {
+        "classification": "commitment to a word, not the word or a physical program",
+        "phrase": "immutable digest",
+        "wall": "W_program_content_materialization"
+      },
+      {
+        "classification": "explicit prohibited site service",
+        "phrase": "host row index",
+        "wall": "W_local_successor"
+      },
+      {
+        "classification": "selects only ordinal, not opcode/site",
+        "phrase": "count recurrence",
+        "wall": "W_gate_site_decoder"
+      },
+      {
+        "classification": "explicit schedule field; neither time nor rate",
+        "phrase": "state-carried colour phase",
+        "wall": null
+      },
+      {
+        "classification": "separate blank-renewal interface, not folded into dispatcher walls",
+        "phrase": "supplied blank backbone",
+        "wall": null
+      }
+    ],
+    "N4_exact_residual_matches": [
+      {
+        "current_line": "def route_b_reusable_stream",
+        "current_path": "scripts/physical_streamed_program_fibre_cycle657_2026_07_23.py",
+        "current_residual": "count and literal band traversal now pass, but emitted gate/site digest is absent and successor is host indexed",
+        "exact_match": true,
+        "prior_line": "global autonomous flag",
+        "prior_path": "outputs/physical_moving_head_autonomous_dispatcher_cycle655_receipt_2026_07_23.json",
+        "prior_ref": "a1b5d30bba9bccfedfaef87deb2472b74508f8f6",
+        "prior_residual": "global program rail/operand coupling false and host gate/site not eliminated",
+        "same_scope": true,
+        "use_as_closure": false
+      }
+    ],
+    "N5_rhetoric": [
+      {
+        "claim": "circulating program-band geometry passes",
+        "lattice_wide": "successor and gate/site decoder remain unplaced",
+        "per_block": "L3/L6/L7 full row traversal",
+        "per_element": "every seed is NN to its port",
+        "per_mode": "program bits remain static",
+        "per_site": "ports/seeds are distinct and band paths stay on the backbone"
+      },
+      {
+        "claim": "global autonomous dispatch remains false",
+        "lattice_wide": "no full physical G or E claim",
+        "per_block": "count-only return is not word equality",
+        "per_element": "local Cycle655 kernels remain exact",
+        "per_mode": "no emitted opcode/site stream exists",
+        "per_site": "next port is selected by a Python row index"
+      }
+    ],
+    "N6_partial_closure_paths": [
+      {
+        "file": "UNMATERIALIZED/physical_program_value_binding_cycle_next.py",
+        "status": "OPEN / PRIORITY",
+        "what_closes": "W_program_content_materialization"
+      },
+      {
+        "file": "UNMATERIALIZED/physical_local_successor_pointer_cycle_next.py",
+        "status": "OPEN / PRIORITY",
+        "what_closes": "W_local_successor"
+      },
+      {
+        "file": "UNMATERIALIZED/physical_formula_decoder_lowering_cycle_next.py",
+        "status": "OPEN / PRIORITY",
+        "what_closes": "W_gate_site_decoder and emits the exact word"
+      }
+    ],
+    "N7_steelman": {
+      "actionable_steps": [
+        "export literal program/search values rather than hashes",
+        "place and route next-port fields",
+        "lower descriptor/support/route-step arithmetic",
+        "run L3/L6/L7 until emitted opcode/site digests equal Cycle652 and then reverse"
+      ],
+      "mechanism": "materialize the compressed search/program value word on the already placed seeds, add an injectively placed next-port coordinate beside each seed, lower the finite formula/route decoder with Cycle638 counter primitives, and let the state-carried colour rule move the head and packet through the Cycle655 tile",
+      "terminal_test": "the driver supplies only repeated application of one local rule; state alone emits every gate/site digest and returns head/token/opcode/counters/routes/scratch",
+      "why_it_breaks_the_negative": "Cycle657 closes full placed-port traversal and exact count return, so materialized values plus local successor/decoder are concrete remaining interfaces rather than a shared substrate obstruction"
+    },
+    "N8_cross_cycle_echo": [
+      {
+        "applicability": "candidate decoder substrate; not yet lowered for Cycle652 event emission",
+        "cycle": 638,
+        "mechanism": "nested stored-program counters"
+      },
+      {
+        "applicability": "used for full circulating-band traversal; blanks remain supplied",
+        "cycle": 649,
+        "mechanism": "outer backbone and literal program ports"
+      },
+      {
+        "applicability": "terminal commitment; receipt omits literal event payload",
+        "cycle": 652,
+        "mechanism": "exact fixed gate/site digest"
+      },
+      {
+        "applicability": "local act/schedule supplied; global successor/decoder open",
+        "cycle": 655,
+        "mechanism": "exact bounded opcode kernels and nine-colour phase"
+      },
+      {
+        "applicability": "narrows the global residual without closing no-host emission",
+        "cycle": 657,
+        "mechanism": "full placed-port and count traversal"
+      }
+    ],
+    "Status": "PASS_SCOPED_ROUTE_DISCRIMINATORS_GLOBAL_TERMINAL_OPEN",
+    "axiom_pressure": false,
+    "axiom_pressure_gate": "FAIL / DO NOT SHIP",
+    "axiom_pressure_shipped": false,
+    "broad_negative_gate": "FAIL / DO NOT SHIP",
+    "broad_negative_shipped": false,
+    "minimum_content_gate": "FAIL / DO NOT SHIP",
+    "minimum_content_shipped": false,
+    "pass": true,
+    "route_A_global_pass": false,
+    "route_B_global_pass": false,
+    "route_C_global_pass": false,
+    "shared_obstruction_gate": "FAIL / DO NOT SHIP",
+    "shared_obstruction_shipped": false,
+    "shared_route_independent_obstruction": false
+  },
+  "optimal_next_campaign": "export and bind the literal Cycle652 compressed program/search values to the placed seeds, injectively place next-port pointer fields, lower the descriptor/support/route-step decoder with Cycle638 reversible counter primitives, and rerun until the state-emitted L3/L6/L7 opcode/site digests match; keep blank renewal, repair, and E separate",
+  "pass": true,
+  "resources": {
+    "elapsed_seconds": 13.542166415951215,
+    "maximum_RSS_bytes": 49823744
+  },
+  "route_A_spatial_instruction_fibre": {
+    "L3_explicit_representation_exceeds_margin": true,
+    "not_a_minimum_content_claim": true,
+    "pass_as_exact_discriminator": true,
+    "pass_as_global_autonomous_route": false,
+    "representation": "one static opcode plus one/two absolute coordinates per primitive and one head-rail site per packet",
+    "route": "A spatial instruction fibre",
+    "route_specific_failure": "the explicit flat representation already exceeds L3 margin; L6/L7 raw fits do not supply an injective layout or successor rail",
+    "systems": [
+      {
+        "Cycle652_capacity_margin_M2": 55985196,
+        "coordinate_bits": 9,
+        "events": 1166120,
+        "explicit_flat_representation_M2": 67602884,
+        "flat_payload_M2": 66436764,
+        "injective_collision_free_placement_executed": false,
+        "length": 3,
+        "local_successor_edges_executed": false,
+        "one_head_site_per_packet_M2": 1166120,
+        "opcode_bits": 3,
+        "physical_side": 387,
+        "raw_capacity_discriminator_pass": false
+      },
+      {
+        "Cycle652_capacity_margin_M2": 461394075,
+        "coordinate_bits": 10,
+        "events": 6467943,
+        "explicit_flat_representation_M2": 413877522,
+        "flat_payload_M2": 407409579,
+        "injective_collision_free_placement_executed": false,
+        "length": 6,
+        "local_successor_edges_executed": false,
+        "one_head_site_per_packet_M2": 6467943,
+        "opcode_bits": 3,
+        "physical_side": 774,
+        "raw_capacity_discriminator_pass": true
+      },
+      {
+        "Cycle652_capacity_margin_M2": 733822016,
+        "coordinate_bits": 10,
+        "events": 7849620,
+        "explicit_flat_representation_M2": 502317360,
+        "flat_payload_M2": 494467740,
+        "injective_collision_free_placement_executed": false,
+        "length": 7,
+        "local_successor_edges_executed": false,
+        "one_head_site_per_packet_M2": 7849620,
+        "opcode_bits": 3,
+        "physical_side": 903,
+        "raw_capacity_discriminator_pass": true
+      }
+    ]
+  },
+  "route_B_streamed_reusable_packets": {
+    "constant_dispatch_tile_M2": 125,
+    "host_gate_site_eliminated": false,
+    "one_125_M2_tile_per_event_allocated": false,
+    "pass_as_exact_partial": true,
+    "pass_as_global_autonomous_route": false,
+    "program_memory_scaling": "Cycle652 active compressed program roles scale from 2,213 to 2,821 across L3/L6/L7; the event count is not stored flat",
+    "reuses_Cycle655_bounded_tile": true,
+    "route": "B streamed/reusable program packets",
+    "systems": [
+      {
+        "active_logical_program_roles": 2213,
+        "all_immutable_primitive_families_covered": true,
+        "count_only_recurrence": {
+          "delete_one_count_step_returns": false,
+          "events": 1166120,
+          "forward_count_head_return": true,
+          "inverse_count_head_return": true,
+          "malformed_accepts": 0,
+          "malformed_states": [
+            {
+              "accepted": false,
+              "ordinal": 0,
+              "token": 0
+            },
+            {
+              "accepted": false,
+              "ordinal": 0,
+              "token": 2
+            },
+            {
+              "accepted": false,
+              "ordinal": -1,
+              "token": 1
+            },
+            {
+              "accepted": false,
+              "ordinal": 1166120,
+              "token": 1
+            }
+          ]
+        },
+        "emitted_digest_matches": false,
+        "emitted_gate_site_sha256": null,
+        "exception_direction_payloads_materialized_in_receipt": false,
+        "expected_gate_site_sha256": "fe80668b079120963371b6ef02e0322772ff22d0bd1fc9ed242f91463ebc6ba5",
+        "length": 3,
+        "local_decoder_selects_gate_and_site": false,
+        "missing_exception_direction_payloads": 8,
+        "primitive_family_coverage": [
+          "CNOT_probe_flag/support2",
+          "H/support1",
+          "SWAP/support2",
+          "Z_violation/support1",
+          "controlled_X/support2",
+          "controlled_Y/support2",
+          "controlled_Z/support2"
+        ],
+        "proper_cubic_program_M2": 53112,
+        "search_bank_state_bits": 1484,
+        "static_program_value_word_literally_bound_to_placed_roles": false,
+        "stored_exception_records": 8
+      },
+      {
+        "active_logical_program_roles": 2732,
+        "all_immutable_primitive_families_covered": true,
+        "count_only_recurrence": {
+          "delete_one_count_step_returns": false,
+          "events": 6467943,
+          "forward_count_head_return": true,
+          "inverse_count_head_return": true,
+          "malformed_accepts": 0,
+          "malformed_states": [
+            {
+              "accepted": false,
+              "ordinal": 0,
+              "token": 0
+            },
+            {
+              "accepted": false,
+              "ordinal": 0,
+              "token": 2
+            },
+            {
+              "accepted": false,
+              "ordinal": -1,
+              "token": 1
+            },
+            {
+              "accepted": false,
+              "ordinal": 6467943,
+              "token": 1
+            }
+          ]
+        },
+        "emitted_digest_matches": false,
+        "emitted_gate_site_sha256": null,
+        "exception_direction_payloads_materialized_in_receipt": false,
+        "expected_gate_site_sha256": "38da92dbb0e82755a4672041398b298dfd3c50cde0f8ea6afa300a772a8b574b",
+        "length": 6,
+        "local_decoder_selects_gate_and_site": false,
+        "missing_exception_direction_payloads": 8,
+        "primitive_family_coverage": [
+          "CNOT_probe_flag/support2",
+          "H/support1",
+          "SWAP/support2",
+          "Z_sign/support1",
+          "Z_violation/support1",
+          "controlled_X/support2",
+          "controlled_Y/support2",
+          "controlled_Z/support2"
+        ],
+        "proper_cubic_program_M2": 65568,
+        "search_bank_state_bits": 1994,
+        "static_program_value_word_literally_bound_to_placed_roles": false,
+        "stored_exception_records": 8
+      },
+      {
+        "active_logical_program_roles": 2821,
+        "all_immutable_primitive_families_covered": true,
+        "count_only_recurrence": {
+          "delete_one_count_step_returns": false,
+          "events": 7849620,
+          "forward_count_head_return": true,
+          "inverse_count_head_return": true,
+          "malformed_accepts": 0,
+          "malformed_states": [
+            {
+              "accepted": false,
+              "ordinal": 0,
+              "token": 0
+            },
+            {
+              "accepted": false,
+              "ordinal": 0,
+              "token": 2
+            },
+            {
+              "accepted": false,
+              "ordinal": -1,
+              "token": 1
+            },
+            {
+              "accepted": false,
+              "ordinal": 7849620,
+              "token": 1
+            }
+          ]
+        },
+        "emitted_digest_matches": false,
+        "emitted_gate_site_sha256": null,
+        "exception_direction_payloads_materialized_in_receipt": false,
+        "expected_gate_site_sha256": "620d179dd28eb47a13e83059c9bc1c8aca5c64657e9c0d49615cb182a374126a",
+        "length": 7,
+        "local_decoder_selects_gate_and_site": false,
+        "missing_exception_direction_payloads": 8,
+        "primitive_family_coverage": [
+          "CNOT_probe_flag/support2",
+          "H/support1",
+          "SWAP/support2",
+          "Z_violation/support1",
+          "controlled_X/support2",
+          "controlled_Y/support2",
+          "controlled_Z/support2"
+        ],
+        "proper_cubic_program_M2": 67704,
+        "search_bank_state_bits": 2084,
+        "static_program_value_word_literally_bound_to_placed_roles": false,
+        "stored_exception_records": 8
+      }
+    ]
+  },
+  "route_C_staggered_circulating_band": {
+    "Cycle655_state_carried_nine_colour_rule_inherited": true,
+    "all24_program_failures": 0,
+    "all576_signed_permutation_group_failures": 0,
+    "band_geometry_failures": 0,
+    "host_schedule_eliminated": false,
+    "ordinary_translation_failures": 0,
+    "pass_as_global_autonomous_route": false,
+    "pass_as_literal_band_geometry": true,
+    "route": "C staggered circulating program band",
+    "state_carried_phase_is_rate": false,
+    "state_carried_phase_is_time": false,
+    "systems": [
+      {
+        "all24_program_seed_port_failures": 0,
+        "band_formula_word_sha256": "f3780ce7ff4bb45cda0a85b4b5939d434fd4807a9cb954f3323434394568a779",
+        "candidate_next_port_pointer_bits": 59751,
+        "circulating_band_edges": 669732,
+        "current_executable_successor_selected_by_host_row_index": true,
+        "delete_one_final_edge_nonreturn_residual": 1,
+        "forward_head_return": true,
+        "inverse_head_return": true,
+        "length": 3,
+        "maximum_port_to_port_leg_edges": 643,
+        "next_port_pointer_bits_injectively_placed": false,
+        "ordinary_translation_failures": 0,
+        "ordinary_translation_residue_representatives": 27,
+        "ownership_failures": 0,
+        "ports_distinct": true,
+        "program_roles_visited": 2213,
+        "seeds_distinct": true,
+        "static_seed_to_port_read_edge_failures": 0
+      },
+      {
+        "all24_program_seed_port_failures": 0,
+        "band_formula_word_sha256": "5fa9fa950c6e3eef4f3c84fa2033ff09e6785f4a3ca75499922e26fe454d8d64",
+        "candidate_next_port_pointer_bits": 81960,
+        "circulating_band_edges": 2007232,
+        "current_executable_successor_selected_by_host_row_index": true,
+        "delete_one_final_edge_nonreturn_residual": 1,
+        "forward_head_return": true,
+        "inverse_head_return": true,
+        "length": 6,
+        "maximum_port_to_port_leg_edges": 1417,
+        "next_port_pointer_bits_injectively_placed": false,
+        "ordinary_translation_failures": 0,
+        "ordinary_translation_residue_representatives": 27,
+        "ownership_failures": 0,
+        "ports_distinct": true,
+        "program_roles_visited": 2732,
+        "seeds_distinct": true,
+        "static_seed_to_port_read_edge_failures": 0
+      },
+      {
+        "all24_program_seed_port_failures": 0,
+        "band_formula_word_sha256": "e392f7b76e6bdd4d63b90c691d9cf74c3ca31e0d528b0dc10b8705ea33b08926",
+        "candidate_next_port_pointer_bits": 84630,
+        "circulating_band_edges": 2458266,
+        "current_executable_successor_selected_by_host_row_index": true,
+        "delete_one_final_edge_nonreturn_residual": 1,
+        "forward_head_return": true,
+        "inverse_head_return": true,
+        "length": 7,
+        "maximum_port_to_port_leg_edges": 1675,
+        "next_port_pointer_bits_injectively_placed": false,
+        "ordinary_translation_failures": 0,
+        "ordinary_translation_residue_representatives": 27,
+        "ownership_failures": 0,
+        "ports_distinct": true,
+        "program_roles_visited": 2821,
+        "seeds_distinct": true,
+        "static_seed_to_port_read_edge_failures": 0
+      }
+    ]
+  },
+  "route_by_route_disposition": {
+    "A_spatial_instruction_fibre": "FAIL_ROUTE_SPECIFIC_L3_EXPLICIT_FLAT_REPRESENTATION_EXCEEDS_MARGIN_L6_L7_UNPLACED",
+    "B_streamed_reusable_packets": "PARTIAL_COUNT_AND_CONSTANT_TILE_PASS_PROGRAM_VALUES_AND_GATE_SITE_DECODER_OPEN",
+    "C_staggered_circulating_band": "PARTIAL_LITERAL_BAND_TRAVERSAL_PASS_LOCAL_SUCCESSOR_AND_EVENT_DECODER_OPEN"
+  },
+  "semantic_firewall": {
+    "colour_phase_is_rate": false,
+    "colour_phase_is_time": false,
+    "gate_count_is_rate": false,
+    "gate_phase_is_energy": false,
+    "program_band_is_full_compiler": false,
+    "token_or_pointer_is_Record": false
+  },
+  "separate_unclosed_interfaces": {
+    "blank_renewal": "not attempted; backbone blanks remain supplied",
+    "dispatcher": "program value binding, local successor, and gate/site decoder",
+    "physical_E": "not attempted; no preparation/intertwiner claim",
+    "static_enforcement_or_repair": "not attempted; dispatcher is not repair/enforcement"
+  },
+  "shared_obstruction_gate": "FAIL / DO NOT SHIP",
+  "shared_obstruction_shipped": false,
+  "shared_route_independent_obstruction": false,
+  "shore": {
+    "freshness_check_origin_main_sha256": "1e0ec4ef4d7c5dd24243d7c3954c78a3f00ecd3d5e43805e788dd3629973a962",
+    "immutable_Cycle652_commit": "d353925ca046702f1b0f50a41a6f8fa5a0ee3395",
+    "immutable_Cycle655_commit": "a1b5d30bba9bccfedfaef87deb2472b74508f8f6",
+    "no_go_skill_origin_main_sha256": "7d1aea8243ddd972331b935e2e836657e72115da3efe259f828fe862469d68b7",
+    "observed": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_MOVING_HEAD_AUTONOMOUS_DISPATCHER_CYCLE655_NOTE_2026-07-23.md": "b567610ac4ecf53663c35a36f4f4a234105f7cfd9cf7d397e258e2a426b80b58",
+      "outputs/physical_moving_head_autonomous_dispatcher_cycle655_cold_2026_07_23.txt": "79c93fb88bdd17669adc2771f2870ca37a98448a8db63d44f5c51aa164486dd8",
+      "outputs/physical_moving_head_autonomous_dispatcher_cycle655_receipt_2026_07_23.json": "a518191b6d52309583108558b878d4578ffb8f78386cec7766ff959e392bf3f6",
+      "scripts/physical_moving_head_autonomous_dispatcher_cycle655_2026_07_23.py": "2492871ffdf5851273c925664cef939bd699497dd182a9c5abb054cc6d1a417e"
+    },
+    "pins": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_MOVING_HEAD_AUTONOMOUS_DISPATCHER_CYCLE655_NOTE_2026-07-23.md": "b567610ac4ecf53663c35a36f4f4a234105f7cfd9cf7d397e258e2a426b80b58",
+      "outputs/physical_moving_head_autonomous_dispatcher_cycle655_cold_2026_07_23.txt": "79c93fb88bdd17669adc2771f2870ca37a98448a8db63d44f5c51aa164486dd8",
+      "outputs/physical_moving_head_autonomous_dispatcher_cycle655_receipt_2026_07_23.json": "a518191b6d52309583108558b878d4578ffb8f78386cec7766ff959e392bf3f6",
+      "scripts/physical_moving_head_autonomous_dispatcher_cycle655_2026_07_23.py": "2492871ffdf5851273c925664cef939bd699497dd182a9c5abb054cc6d1a417e"
+    },
+    "proof_search_governance_origin_main_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+    "working_tree_bytes_used_as_premise": false
+  },
+  "six_wall_ledger": {
+    "C_int": "immutable coin/stream/contact and fixed-word pins are unchanged; no new mass/contact/seam fixture, inertia law, or E-intertwiner is executed",
+    "C_local": "one reusable bounded tile and a literal circulating band replace per-event tile replication geometrically; program values, local successor, gate/site decoder, blank renewal, repair, and E remain open",
+    "C_num": "exact capacities, counts, coordinates, NN edges, digests-as-commitments, and deletion residuals only; no normalization/Born claim",
+    "C_ref": "the literal program seed/port band passes ordinary translations, all24 and all576 group structure; state-carried frame/origin/phase and supplied backbone remain explicit",
+    "C_source": "unchanged; band length, capacity, counters, and phase carry no gravity/source meaning",
+    "C_wrap": "full placed-port and primitive-count forward/inverse returns pass; state-selected opcode/site digest, local successor, occurrence/history, and preparation remain absent"
+  },
+  "status": "cycle657-full-program-port-and-count-traversal-positive-no-host-gate-site-digest-open",
+  "strongest_constructive_result": "for L3/L6/L7, one serialized head visits every immutable Cycle652 placed program port under the exact occupied-safe fine-NN outer-backbone formula, returns forward and inverse at the port/count level, preserves static seed adjacency, and passes ordinary-translation/all24/all576 geometry while one reusable Cycle655 tile closes the full primitive-count recurrence",
+  "supplied_structure_inventory": {
+    "Cycle655_125_M2_local_tile": true,
+    "autonomous_blank_renewal": false,
+    "blank_outer_backbone": true,
+    "host_row_index_in_band_audit": true,
+    "immutable_Cycle652_program_seed_port_coordinates": true,
+    "immutable_fixed_word_digests_and_counts": true,
+    "literal_next_port_pointer_fields": false,
+    "literal_program_value_word_at_outer_seeds": false,
+    "lowered_gate_site_decoder": false,
+    "physical_E_or_preparation": false,
+    "state_carried_frame_and_origin": true,
+    "state_carried_nine_colour_phase": true,
+    "static_enforcement_or_repair": false
+  },
+  "tests_failed": 0,
+  "tests_passed": 9,
+  "tests_total": 9
+}

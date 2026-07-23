@@ -11,26 +11,26 @@ PASS Cycle676 note preserves finite/diagonal/superselection/objective and semant
   "pass": true,
   "tests_passed": 9,
   "tests_failed": 0,
-  "elapsed_seconds": 85.28687433293089,
-  "maximum_RSS_bytes": 91226112,
+  "elapsed_seconds": 82.20922924997285,
+  "maximum_RSS_bytes": 91062272,
   "note": "/private/tmp/toe-science.BB0KQV/docs/work_history/repo/review_feedback/PHYSICAL_MOVING_CARRIER_PHASE_FIELD_FINITE_RESTRICTION_CYCLE676_NOTE_2026-07-23.md",
   "receipt": "/private/tmp/toe-science.BB0KQV/outputs/physical_moving_carrier_phase_field_finite_restriction_cycle676_receipt_2026_07_23.json"
 }
-       86.54 real        85.77 user         0.51 sys
-            91226112  maximum resident set size
+       83.47 real        82.66 user         0.54 sys
+            91062272  maximum resident set size
                    0  average shared memory size
                    0  average unshared data size
                    0  average unshared stack size
-              125816  page reclaims
-                1109  page faults
+              124951  page reclaims
+                1786  page faults
                    0  swaps
                    0  block input operations
                    0  block output operations
                    0  messages sent
                    0  messages received
                    0  signals received
-                 892  voluntary context switches
-               25505  involuntary context switches
-       1522852559532  instructions retired
-        314173405283  cycles elapsed
-            72155664  peak memory footprint
+                1153  voluntary context switches
+                6009  involuntary context switches
+       1521988113470  instructions retired
+        310000988655  cycles elapsed
+            72106488  peak memory footprint

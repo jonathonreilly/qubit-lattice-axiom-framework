@@ -990,6 +990,25 @@ The limiting algebraic state is nevertheless a non-extremal mixture/central deco
 
 This type is **not obtained**. Neither a finite pure cat, a locally diagonal center, outward escape, a conditional disjoint-sector theorem, nor a central decomposition provides one objective member. An autonomous objective selection law remains absent and untested.
 
+## Prior-art and novelty boundary
+
+The general algebraic distinction among a finite coherent state, a reduced
+diagonal state, inequivalent or disjoint infinite-volume representations, and
+an extremal realized state is standard mathematical-physics structure; Cycle
+676 does not claim that distinction or the GNS disjointness criterion as new.
+The infinite tensor product, quasi-local algebra, local-weak limit, and GNS
+criterion are explicit supplied theorem machinery in this conditional result.
+
+The new repo-side content is narrower: one coordinate-explicit bounded M2 rule
+connects the exact Cycle-661 sector word to six persistent zero-density ray
+wakes, resets the finite source while reversibly exporting all 64 coherent
+sectors, admits exact C3/C4/C6/C9 finite restrictions, and attaches branchwise
+to Cycle 669. The construction therefore realizes all three state types in
+one dependency-tracked executable comparison and locates the remaining
+actuality import after conditional thermodynamic disjointness. It does not
+establish a new general superselection theorem, a full-density three-dimensional
+phase transition, Born weights, or an objective-collapse law.
+
 ## Cycle669 and semantic boundaries
 
 All `{sum(row['basis_rows'] for row in chain['cut_rows'].values())}` C3/C4/C6/C9 basis interfaces attach and invert exactly. The coherent interface remains `{chain['coherent_interface_type']}`; a native coherent `ObjectiveEventToken` is unavailable.

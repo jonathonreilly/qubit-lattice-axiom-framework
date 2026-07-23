@@ -1,0 +1,1396 @@
+{
+  "Status": "PASS",
+  "all_faces_scaled": false,
+  "audit": "unset",
+  "authority": "none",
+  "axiom_pressure": false,
+  "breakthrough": false,
+  "classification": "constructive selected-record physical parser/request-grant subcompiler; local route-head coupling remains open",
+  "constitutional_effect": "none",
+  "cycle": 667,
+  "date": "2026-07-23",
+  "elapsed_seconds": 56.977964624995366,
+  "exact_CCX_kernel": {
+    "all_clean_scratch_columns_return": true,
+    "delete_each_of_27_primitive_residual_min": 1.530733729460359,
+    "delete_each_of_27_primitive_residuals": [
+      4.0,
+      1.530733729460359,
+      1.530733729460359,
+      1.530733729460359,
+      2.82842712474619,
+      2.82842712474619,
+      1.530733729460359,
+      2.82842712474619,
+      2.82842712474619,
+      2.82842712474619,
+      2.82842712474619,
+      1.530733729460359,
+      2.8284271247461903,
+      2.82842712474619,
+      2.82842712474619,
+      2.82842712474619,
+      1.530733729460359,
+      2.8284271247461903,
+      2.82842712474619,
+      2.82842712474619,
+      2.82842712474619,
+      2.82842712474619,
+      1.530733729460359,
+      2.8284271247461903,
+      2.82842712474619,
+      2.82842712474619,
+      4.0
+    ],
+    "exact_clean_column_residual": 7.180046919090306e-16,
+    "pass": true,
+    "pinned_Cycle655_primitive_count": 27
+  },
+  "forbidden_structure_absent": {
+    "global_frame_selector": true,
+    "global_parity_service": true,
+    "hidden_or_host_schedule_in_strict_end_to_end_path": false,
+    "runtime_host_path_index_in_parser": true,
+    "runtime_host_row_index_in_parser": true
+  },
+  "frozen_target": {
+    "allowed_supplies": [
+      "byte-pinned Cycle660 ports/path",
+      "byte-pinned Cycle655 27-primitive CCX",
+      "one local selected-record request marker",
+      "one oriented cursor",
+      "static selected-record expected-bit microcode",
+      "blank parser tile and transport rails",
+      "typed local bonds"
+    ],
+    "completion_witness": "exact record bytes and 519-gate head action at L3/L6/held-L7; literal support-one/two M2 calls; a local grant-to-route-head token/cursor coupling; all controller work blank; all24/all576, collision, translation, malformed, inverse, leakage, and deletion controls",
+    "domain": [
+      "L3",
+      "L6",
+      "held-out L7 without format or parser refit",
+      "24 proper-cubic frames",
+      "576 frame compositions",
+      "all K129 coarse translations"
+    ],
+    "forbidden": [
+      "host row/path index at runtime",
+      "hidden schedule",
+      "global frame selector",
+      "global parity service",
+      "autonomous token or blank genesis claim",
+      "full C638 decoder claim",
+      "full physical E claim",
+      "all-face claim"
+    ],
+    "required_returns": [
+      "program cursor",
+      "expected-word head",
+      "mismatch counter",
+      "request",
+      "grant",
+      "parser scratch",
+      "transport carriers",
+      "route head"
+    ],
+    "selected_record": "the last routed syndrome_to_work_uncompute record in each exact Cycle654 one-face tile word",
+    "target": "lower one complete Cycle660 RLE record from a local program-port read through a literally placed stationary parser/request-grant circuit into the unchanged Cycle654 data-route head"
+  },
+  "full_C638_decoder_preserved": false,
+  "full_physical_E_compiled": false,
+  "general_RLE_decoder_compiled": false,
+  "layout": {
+    "Cycle660_role_collisions": 0,
+    "bus_roles": 180,
+    "canonical_new_role_orbits": 728,
+    "canonical_role_duplicates": 0,
+    "canonical_role_failures": 0,
+    "connector_edges": 61,
+    "cursor_park_roles": 3,
+    "expected_entry": [
+      25,
+      31,
+      42
+    ],
+    "expected_microcode_roles": 180,
+    "fine_NN_connector_failures": 0,
+    "fine_NN_stage_bond_failures": 0,
+    "global_frame_selector": false,
+    "head_roles": 180,
+    "host_path_index": false,
+    "new_connector_roles": 60,
+    "pass": true,
+    "program_entry": [
+      25,
+      30,
+      42
+    ],
+    "stage_capacity": 180,
+    "stationary_tile_M2": 125,
+    "tile_origin": [
+      25,
+      30,
+      38
+    ],
+    "tile_shape": [
+      5,
+      5,
+      5
+    ],
+    "typed_local_bonds_only": true,
+    "unsafe_role_collisions": 0
+  },
+  "local_grant_to_route_head_coupling_lowered": false,
+  "maturity_0_to_5": {
+    "Born_and_probability": 1.5,
+    "causal_time": 2.2,
+    "gravity_and_source": 1.7,
+    "inertia_and_matter": 2.4,
+    "operational_quantum_and_records": 3.1
+  },
+  "maximum_RSS_bytes": 447004672,
+  "no_go_discipline": {
+    "N1_normalized_families": [
+      {
+        "family": "streaming exact-word mismatch counter plus stationary request/grant",
+        "status": "ATTEMPTED_SCOPED_PARTIAL",
+        "terminal": "selected record through local grant-to-route-head controller"
+      },
+      {
+        "family": "raw record buffer plus prefix-AND recognizer",
+        "status": "CONSTRUCTIVE_ALTERNATIVE_OPEN",
+        "terminal": "same selected record with larger storage"
+      },
+      {
+        "family": "mobile parser carrying decoded fields",
+        "status": "PRIOR_CYCLE657_ROUTE_SPECIFIC_PARTIAL",
+        "terminal": "general RLE records"
+      },
+      {
+        "family": "compressed next-port packet decoder",
+        "status": "PRIOR_CYCLE659_ROUTE_SPECIFIC_PARTIAL",
+        "terminal": "complete compressed program"
+      },
+      {
+        "family": "general streaming RLE field decoder",
+        "status": "OPEN_UNTESTED_NOT_COUNTED",
+        "terminal": "all Cycle660 record types"
+      },
+      {
+        "family": "all-face formula decoder/arbitrator",
+        "status": "OPEN_UNTESTED_NOT_COUNTED",
+        "terminal": "all faces and translated cells"
+      }
+    ],
+    "N1_qualifying_negative_attempts": 3,
+    "N1_required_for_broad_negative": 5,
+    "N2_collapsed_walls": {
+      "W_allface_scale": "simultaneous all-face/all-cell arbitration is not compiled",
+      "W_full_E": "no complete physical code map E or E G_coarse = G_physical E is established",
+      "W_general_decoder": "the exact comparator does not dynamically decode arbitrary RLE fields",
+      "W_genesis_renewal": "cursor, request marker, static microcode, parser blank and transport blanks are supplied",
+      "W_route_head_coupling": "the computed grant is not yet locally coupled to a state-carried Cycle654 route-head token/cursor and microphase"
+    },
+    "N2_directed_pair_count": 20,
+    "N2_directed_pairs": [
+      {
+        "closure_implied": false,
+        "from": "W_route_head_coupling",
+        "reason": "closing W_route_head_coupling does not execute the separate W_general_decoder terminal",
+        "to": "W_general_decoder"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_route_head_coupling",
+        "reason": "closing W_route_head_coupling does not execute the separate W_genesis_renewal terminal",
+        "to": "W_genesis_renewal"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_route_head_coupling",
+        "reason": "closing W_route_head_coupling does not execute the separate W_allface_scale terminal",
+        "to": "W_allface_scale"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_route_head_coupling",
+        "reason": "closing W_route_head_coupling does not execute the separate W_full_E terminal",
+        "to": "W_full_E"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_general_decoder",
+        "reason": "closing W_general_decoder does not execute the separate W_route_head_coupling terminal",
+        "to": "W_route_head_coupling"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_general_decoder",
+        "reason": "closing W_general_decoder does not execute the separate W_genesis_renewal terminal",
+        "to": "W_genesis_renewal"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_general_decoder",
+        "reason": "closing W_general_decoder does not execute the separate W_allface_scale terminal",
+        "to": "W_allface_scale"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_general_decoder",
+        "reason": "closing W_general_decoder does not execute the separate W_full_E terminal",
+        "to": "W_full_E"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_genesis_renewal",
+        "reason": "closing W_genesis_renewal does not execute the separate W_route_head_coupling terminal",
+        "to": "W_route_head_coupling"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_genesis_renewal",
+        "reason": "closing W_genesis_renewal does not execute the separate W_general_decoder terminal",
+        "to": "W_general_decoder"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_genesis_renewal",
+        "reason": "closing W_genesis_renewal does not execute the separate W_allface_scale terminal",
+        "to": "W_allface_scale"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_genesis_renewal",
+        "reason": "closing W_genesis_renewal does not execute the separate W_full_E terminal",
+        "to": "W_full_E"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_allface_scale",
+        "reason": "closing W_allface_scale does not execute the separate W_route_head_coupling terminal",
+        "to": "W_route_head_coupling"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_allface_scale",
+        "reason": "closing W_allface_scale does not execute the separate W_general_decoder terminal",
+        "to": "W_general_decoder"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_allface_scale",
+        "reason": "closing W_allface_scale does not execute the separate W_genesis_renewal terminal",
+        "to": "W_genesis_renewal"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_allface_scale",
+        "reason": "closing W_allface_scale does not execute the separate W_full_E terminal",
+        "to": "W_full_E"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_full_E",
+        "reason": "closing W_full_E does not execute the separate W_route_head_coupling terminal",
+        "to": "W_route_head_coupling"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_full_E",
+        "reason": "closing W_full_E does not execute the separate W_general_decoder terminal",
+        "to": "W_general_decoder"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_full_E",
+        "reason": "closing W_full_E does not execute the separate W_genesis_renewal terminal",
+        "to": "W_genesis_renewal"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_full_E",
+        "reason": "closing W_full_E does not execute the separate W_allface_scale terminal",
+        "to": "W_allface_scale"
+      }
+    ],
+    "N2_independence_complete": false,
+    "N3_hidden_wall_scan": [
+      "the selected-record marker and one-hot orientations are supplied local state",
+      "the expected-bit rail is supplied decoder microcode and duplicates the selected record",
+      "parser/counter/route scratch starts blank and is not autonomously renewed",
+      "the serialized primitive/head order remains a supplied circuit microphase; a state-carried autonomous microphase is not compiled"
+    ],
+    "N4_exact_residual_matching": [
+      {
+        "closure": false,
+        "current": "one exact record has literal support-one/two port transport, exact parser and request/grant; the local grant-to-route-head token/cursor coupling remains open",
+        "prior": "parser_request_grant_depth=OPEN_NOT_COMPILED",
+        "prior_cycle": 660,
+        "same_scope": true
+      },
+      {
+        "closure": true,
+        "current": "one stationary tile is injectively placed and used by every mismatch-counter CCX",
+        "prior": "bounded exact 27-primitive CCX tile but no global placement",
+        "prior_cycle": 655,
+        "same_scope": "only this selected parser"
+      },
+      {
+        "closure": false,
+        "current": "still open; an exact recognizer is not a general decoder",
+        "prior": "full C638 decoder open",
+        "prior_cycle": 660,
+        "same_scope": true
+      }
+    ],
+    "N5_five_resolution_rhetoric_audit": [
+      {
+        "claim": "selected record parser",
+        "lattice_wide": "general records and all faces remain open",
+        "per_block": "one 5-cube and bounded rails",
+        "per_element": "each port/carrier/gate call is literal",
+        "per_mode": "exact/malformed and syndrome 0/1",
+        "per_site": "every dynamic bond is fine NN"
+      },
+      {
+        "claim": "proper-cubic covariance",
+        "lattice_wide": "program preparation remains supplied",
+        "per_block": "all576 compositions pass",
+        "per_element": "each role/bond rotates",
+        "per_mode": "no frame label is read",
+        "per_site": "generic orbits have 24 sites"
+      },
+      {
+        "claim": "returned parser controller",
+        "lattice_wide": "route-head cursor and blank renewal are not compiled",
+        "per_block": "counter/request/grant/parser scratch blank",
+        "per_element": "transport routes open/apply/close",
+        "per_mode": "inverse reread subtracts mismatch",
+        "per_site": "program cursor and expected head endpoints are local"
+      },
+      {
+        "claim": "unchanged data-route trace",
+        "lattice_wide": "local grant-to-head coupling remains open",
+        "per_block": "work blank, syndrome retained",
+        "per_element": "519 exact Cycle654 gates",
+        "per_mode": "two syndrome sectors",
+        "per_site": "support-two NN"
+      },
+      {
+        "claim": "bounded overhead",
+        "lattice_wide": "not a full E",
+        "per_block": "constant K129 chamber",
+        "per_element": "support at most two M2",
+        "per_mode": "L3/L6/L7 no refit",
+        "per_site": "finite typed incidence"
+      }
+    ],
+    "N6_partial_closure_paths": [
+      {
+        "artifact": "Cycle667",
+        "closes": "one selected Cycle660 record port-to-parser-to-request/grant subcompiler",
+        "does_not_close": [
+          "local grant-to-route-head token/cursor coupling",
+          "the computed grant is not yet locally coupled to a state-carried Cycle654 route-head token/cursor and microphase",
+          "the exact comparator does not dynamically decode arbitrary RLE fields",
+          "cursor, request marker, static microcode, parser blank and transport blanks are supplied",
+          "simultaneous all-face/all-cell arbitration is not compiled",
+          "no complete physical code map E or E G_coarse = G_physical E is established"
+        ]
+      },
+      {
+        "artifact": "next campaign",
+        "closes": "grant-to-route-head token/cursor gates and returned controller for this selected record before generalizing the grammar",
+        "status": "OPEN"
+      }
+    ],
+    "N7_cited_actionable_steelman": {
+      "action": "place and delete-test the selected record's grant launch, route-head cursor and microphase roles; require malformed words to leave the head blank and exact words to return it blank",
+      "argument": "first attach the computed grant by a literal local token/cursor transducer to the already placed Cycle654 route-head role, with state-carried primitive microphase and returned route history; only then replace the supplied expected-word comparator by a general reversible field decoder.",
+      "terminal_test": "the selected record, rather than a host-dispatched static list, drives the exact Cycle654 data route and returns grant, head, cursor, history and scratch"
+    },
+    "N8_cross_cycle_echo": [
+      {
+        "cycle": 654,
+        "echo": "the exact data-route trace and mass/contact/seam fixtures are unchanged; its route-head controller remains open"
+      },
+      {
+        "cycle": 655,
+        "echo": "the exact 27-primitive CCX is used, now in one literal stationary placement"
+      },
+      {
+        "cycle": 657,
+        "echo": "no host row/path index is reintroduced; typed bonds and one-hot state select successors"
+      },
+      {
+        "cycle": 659,
+        "echo": "packet/general decoder scope remains open rather than being silently claimed"
+      },
+      {
+        "cycle": 660,
+        "echo": "one named parser/request-grant residual closes at its exact selected-record scope"
+      }
+    ],
+    "axiom_pressure": false,
+    "axiom_pressure_gate": "FAIL / DO NOT SHIP",
+    "broad_negative_gate": "FAIL / DO NOT SHIP",
+    "broad_no_go_claim": false,
+    "minimum_content_claim": false,
+    "minimum_content_gate": "FAIL / DO NOT SHIP",
+    "pass": true,
+    "route_specific_failure_only": true,
+    "shared_obstruction_gate": "FAIL / DO NOT SHIP",
+    "shared_route_independent_obstruction": false,
+    "skill_freshness": {
+      "newer_origin_main_followed": true,
+      "origin_main_checked": true,
+      "origin_main_skill_sha256": "7d1aea8243ddd972331b935e2e836657e72115da3efe259f828fe862469d68b7",
+      "proof_search_governance_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    }
+  },
+  "note_sha256": "a1f688def4224eec46708388cd055b82e9ebf21c292542ec99294aee7a4f373d",
+  "open_residuals": [
+    "lower a local grant-to-Cycle654-route-head token/cursor coupling and state-carried primitive/head microphase; return the route-head controller blank",
+    "replace the supplied expected-bit comparator by a general reversible RLE field decoder",
+    "compile every Cycle660 record and the complete dense-C638-equivalent decoder path",
+    "compile all-face/all-cell arbitration and autonomous cursor/parser blank genesis/renewal",
+    "construct a full physical encoding E and prove E G_coarse = G_physical E on its declared code space"
+  ],
+  "optimal_next_campaign": "finish the selected-record terminal first: place the grant-launch, route-head token/cursor, returned route history and state-carried microphase so the unchanged 519-gate Cycle654 data route is locally driven rather than host-dispatched; only then replace the expected-bit comparator with a general RLE field decoder",
+  "parser_truth_table": {
+    "carry_or_zero_scratch_failures": 0,
+    "controlled_increment_failures": 0,
+    "controlled_increment_truth_rows": 512,
+    "increment_inverse_failures": 0,
+    "pass": true,
+    "zero_test_failures": 0,
+    "zero_test_truth_rows": 256
+  },
+  "pass": true,
+  "pins": {
+    "docs/work_history/repo/review_feedback/PHYSICAL_CUBIC_INVARIANT_SPARSE_PROGRAM_CONTROLLER_CYCLE660_NOTE_2026-07-23.md": "dec715a977ba86b7602e36d70d51cb3b86816d4f2c63cff2ef6d635931f2e18f",
+    "docs/work_history/repo/review_feedback/PHYSICAL_MOVING_HEAD_AUTONOMOUS_DISPATCHER_CYCLE655_NOTE_2026-07-23.md": "b567610ac4ecf53663c35a36f4f4a234105f7cfd9cf7d397e258e2a426b80b58",
+    "outputs/physical_cubic_invariant_sparse_program_controller_cycle660_cold_2026_07_23.txt": "afa0dbd64021f2ef0c2276a297b74f8a59c57fbe5c44df558e84625e9a3ab0e5",
+    "outputs/physical_cubic_invariant_sparse_program_controller_cycle660_receipt_2026_07_23.json": "236ad77ec0add3000d9a56acd54bd9f2784a8883d461621bc158ec0cf1193de8",
+    "outputs/physical_moving_head_autonomous_dispatcher_cycle655_cold_2026_07_23.txt": "79c93fb88bdd17669adc2771f2870ca37a98448a8db63d44f5c51aa164486dd8",
+    "outputs/physical_moving_head_autonomous_dispatcher_cycle655_receipt_2026_07_23.json": "a518191b6d52309583108558b878d4578ffb8f78386cec7766ff959e392bf3f6",
+    "scripts/physical_cubic_invariant_sparse_program_controller_cycle660_2026_07_23.py": "ad41ae12129866aa41da5f85d3aa9c144a106139a326c619a744db11e42d6eaa",
+    "scripts/physical_moving_head_autonomous_dispatcher_cycle655_2026_07_23.py": "2492871ffdf5851273c925664cef939bd699497dd182a9c5abb054cc6d1a417e"
+  },
+  "route_by_route_disposition": {
+    "mobile_or_packet_general_decoder": "route-specific partial from Cycles657/659; not constitutional evidence",
+    "raw_buffer_prefix_AND": "open alternative, not needed for this scoped closure",
+    "route_head_coupling": "PARTIAL: unchanged static data-route trace exact; local grant launch, route-head cursor and state-carried microphase open",
+    "streaming_stationary_mismatch_counter": "SCOPED PASS through computed request/grant for the selected exact last routed record"
+  },
+  "route_head_controller_blank_return_established": false,
+  "runner_sha256": "72a2fa246676fc3aa79244013eaee336a77195e4fcda329a7a70802031606157",
+  "scoped_port_to_parser_request_grant_subcompiler_pass": true,
+  "shared_route_independent_obstruction": false,
+  "six_wall_ledger": {
+    "C_int": "pinned Cycle219 mass and Cycle230 contact/seam fixtures remain exact; no new full E G intertwiner",
+    "C_local": "advanced through literal selected-record transport and parser/request-grant support-one/two M2 calls with bounded placement; route-head token/cursor coupling and general RLE grammar remain",
+    "C_num": "unchanged: exact binary truth tables/deletion residuals only; no empirical or Born normalization",
+    "C_ref": "advanced at one selected record: literal proper-cubic parser/controller placement and all576 covariance; general-record and all-face arbitration remain",
+    "C_source": "unchanged: no energy, rate, source, stress, gravity, Record, occurrence, or autonomous blank renewal",
+    "C_wrap": "advanced through one port-to-parser request/grant return and an independently exact retained-syndrome data-route trace; their local route-head coupling, renewal and all faces remain"
+  },
+  "sizes": [
+    {
+      "L6_format_reused_without_refit": true,
+      "all24_decoded_gate_sha256": "efe4425de004c2ceaf8e9b30efe492c8a3a871f33a580faad5d29214d94b2b75",
+      "all24_record_gate_sha256": "efe4425de004c2ceaf8e9b30efe492c8a3a871f33a580faad5d29214d94b2b75",
+      "coordinate_width_bits": 9,
+      "decoded_gate_list_sha256": "d8e4f3b6216ef571c47297f17be771edfffd35e09e9c4b6e234bafadcb5244de",
+      "deletion_controls": {
+        "delete_each_bus_role_detected": 180,
+        "delete_each_cursor_park_role_detected": 3,
+        "delete_each_expected_port_role_detected": 180,
+        "delete_each_new_connector_role_detected": 60,
+        "delete_each_selected_program_port_detected": 154,
+        "delete_each_selected_program_rail_detected": 154,
+        "delete_each_stage_head_role_detected": 180,
+        "delete_each_tile_role_detected": 125,
+        "delete_parser_CCX_primitive_positive_residual": true,
+        "delete_transport_call_nonreturn": true,
+        "expected_new_role_deletion_population": 728,
+        "head": {
+          "delete_each_head_gate_detected": 519,
+          "head_gate_count": 519,
+          "minimum_head_deletion_residual": 1.0,
+          "pass": true
+        },
+        "observed_new_role_deletion_population": 728,
+        "pass": true
+      },
+      "exact_record_decode": true,
+      "head_action_fixture": {
+        "apply_same_head_again_restores_input": true,
+        "inherited_Cycle219_mass_residual": 2.220446049250313e-16,
+        "inherited_Cycle230_contact_deletion_residual": 0.36789306705608243,
+        "inherited_Cycle230_seam_failures": 0,
+        "other_data_leakage_count": 0,
+        "pass": true,
+        "s_equals_1_nonzero_output": {
+          "(0, 63, 65)": 1
+        },
+        "syndrome_input_sectors_exhausted": [
+          0,
+          1
+        ],
+        "syndrome_retained": true,
+        "syndrome_seed": [
+          0,
+          63,
+          65
+        ],
+        "work_returns_blank": true,
+        "work_seed": [
+          0,
+          63,
+          193
+        ]
+      },
+      "held_out": false,
+      "length": 3,
+      "malformed_and_lawful_domain": {
+        "all_zero_word_rejected": true,
+        "autonomous_constraint_penalty_or_repair_dynamics_compiled": false,
+        "delete_one_bit_rejected_by_typed_terminal_length": true,
+        "dirty_counter_rejected_from_lawful_domain": true,
+        "duplicate_one_bit_rejected_by_typed_terminal_length": true,
+        "duplicate_selected_record_token_rejected": true,
+        "every_single_bit_flip_rejected": true,
+        "local_code_sector_constraints_enumerated": true,
+        "local_constraints": [
+          "support-one value projectors fix the selected expected-bit microcode ports",
+          "support-two typed incidences bind each program/head/bus role to its prescribed NN predecessor and successor",
+          "hard-core local cursor/head constraints reject zero or duplicate tokens in the declared sector",
+          "support-one blank projectors declare mismatch-counter, carry, zero-test, request, grant and carrier scratch clean at entry"
+        ],
+        "pass": true,
+        "wrong_expected_microcode_bit_rejected": true,
+        "zero_selected_record_token_rejected": true
+      },
+      "parser": {
+        "all_CCX_routes_return": true,
+        "counter_bits": 8,
+        "counter_request_grant_and_scratch_return_blank": true,
+        "counter_wrap_possible_on_declared_domain": false,
+        "expected_microcode_physical_value_roles": 4320,
+        "expected_microcode_replication_conflicts": 0,
+        "expected_microcode_supplied": true,
+        "expected_microcode_word_sha256": "e64370844429dda838b5f4d7f84569be7dc7deb19e845644104ad115bbf7dcc6",
+        "general_RLE_decoder": false,
+        "kind": "stationary exact selected-record recognizer with reversible eight-bit mismatch counter",
+        "logical_CCX_calls": 15106,
+        "logical_CNOT_calls_excluding_transport": 1542,
+        "logical_X_calls": 16,
+        "maximum_CCX_internal_open_route_edges": 11,
+        "maximum_possible_mismatch_count": 154,
+        "physical_parser_call_word_sha256": "64156eee0a99d9a4b771590f55852f0a5dfe5cc194ba73ef70113687ac330424",
+        "physical_parser_support1_2_call_count": 2947312,
+        "physical_parser_support_counts": {
+          "CNOT/support2": 273666,
+          "H/support1": 30236,
+          "SWAP_route/support2": 2537568,
+          "T/support1": 52926,
+          "Tdg/support1": 52900,
+          "X/support1": 16
+        },
+        "request_does_not_fire_for_any_single_flip": true,
+        "request_fires_for_exact_word": true,
+        "stage_capacity_bits": 180,
+        "stage_padding_bits": 26
+      },
+      "pass": true,
+      "placement": {
+        "Cycle660_physical_M2": 272640,
+        "K129_capacity_M2": 2146689,
+        "K129_capacity_margin_M2": 1856577,
+        "all24_orbit_injectivity_failures": 0,
+        "all576_coordinate_composition_failures": 0,
+        "canonical_new_role_orbits": 728,
+        "coarse_K129_translation_bijection": true,
+        "coarse_translation_count": 27,
+        "collisions": {
+          "Cycle654_route_support": 0,
+          "Cycle660_controller": 0,
+          "aux": 0,
+          "new_Cycle654_sidecar": 0,
+          "old": 0,
+          "prior_C649_sidecar": 0
+        },
+        "combined_controller_physical_M2": 290112,
+        "maximum_elementary_support_M2": 2,
+        "physical_new_M2": 17472,
+        "serialized_static_call_depth": 3755407,
+        "unit_fine_translation_controls": [
+          {
+            "collision_count": 0,
+            "direction": [
+              1,
+              0,
+              0
+            ],
+            "injective": true
+          },
+          {
+            "collision_count": 0,
+            "direction": [
+              -1,
+              0,
+              0
+            ],
+            "injective": true
+          },
+          {
+            "collision_count": 0,
+            "direction": [
+              0,
+              1,
+              0
+            ],
+            "injective": true
+          },
+          {
+            "collision_count": 0,
+            "direction": [
+              0,
+              -1,
+              0
+            ],
+            "injective": true
+          },
+          {
+            "collision_count": 0,
+            "direction": [
+              0,
+              0,
+              1
+            ],
+            "injective": true
+          },
+          {
+            "collision_count": 0,
+            "direction": [
+              0,
+              0,
+              -1
+            ],
+            "injective": true
+          }
+        ]
+      },
+      "record_central_gate_count": 1,
+      "record_direction_runs": [
+        [
+          [
+            0,
+            1,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0,
+            0
+          ],
+          64
+        ],
+        [
+          [
+            0,
+            0,
+            -1
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            0,
+            1
+          ],
+          129
+        ],
+        [
+          [
+            -1,
+            0,
+            0
+          ],
+          64
+        ]
+      ],
+      "record_forward_SWAP_count": 259,
+      "record_payload_bits": 154,
+      "record_start_path_offset": 4434,
+      "record_total_gate_count": 519,
+      "record_word_sha256": "8f28a5e1bf1ac97632398f92c7d4584284620e78e22671fa348473ef42f12276",
+      "scoped_port_to_parser_request_grant_subcompiler_pass": true,
+      "selected_record_index": 23,
+      "source_record_gate_list_sha256": "d8e4f3b6216ef571c47297f17be771edfffd35e09e9c4b6e234bafadcb5244de",
+      "strict_selected_record_port_to_route_head_compiled": false,
+      "transport": {
+        "Cycle654_head_static_order_is_host_dispatched": true,
+        "carriers_return_blank": true,
+        "connector_edges": 61,
+        "declared_exact_branch_call_word_sha256": "bee0ad4c5804138da859b6123d20a06678d7d9023d0c0b52eb9f4f4d9273ee2d",
+        "declared_exact_branch_static_call_count": 3755407,
+        "declared_exact_branch_support_counts": {
+          "CNOT/support2": 274899,
+          "H/support1": 30236,
+          "SWAP/support2": 806246,
+          "SWAP_cursor/support2": 310,
+          "SWAP_head/support2": 306,
+          "SWAP_route/support2": 2537568,
+          "T/support1": 52926,
+          "Tdg/support1": 52900,
+          "X/support1": 16
+        },
+        "expected_head_start_and_return_role": [
+          22,
+          30,
+          42
+        ],
+        "grant_truth_table_would_release_route_head_token": true,
+        "host_path_index": false,
+        "host_row_index": false,
+        "literal_transport_and_cursor_only_call_count": 807576,
+        "local_grant_to_route_head_token_coupling_lowered": false,
+        "malformed_branch_truth_table_would_release_route_head_token": false,
+        "parser_stage_host_index": false,
+        "primitive_macro_static_order_supplied": true,
+        "program_cursor_park_role": [
+          17,
+          25,
+          63
+        ],
+        "program_cursor_return_role": [
+          13,
+          50,
+          51
+        ],
+        "program_cursor_start_role": [
+          13,
+          50,
+          51
+        ],
+        "route_head_controller_blank_return_established": false,
+        "route_head_cursor_gate_list_lowered": false,
+        "runtime_successor_source": "one-hot cursor/head state plus locally typed NN bonds",
+        "strict_no_hidden_or_host_schedule": false,
+        "unchanged_data_route_permutation_return_established": true
+      },
+      "unchanged_Cycle654_head": true,
+      "whole_program_payload_bits": 4588,
+      "whole_word_suffix_exact": true
+    },
+    {
+      "L6_format_reused_without_refit": true,
+      "all24_decoded_gate_sha256": "a1e788bcd6ec6c749c9ebe8f729f0536954a2ec98fd2375b1b3e4a3ba4e0fe9c",
+      "all24_record_gate_sha256": "a1e788bcd6ec6c749c9ebe8f729f0536954a2ec98fd2375b1b3e4a3ba4e0fe9c",
+      "coordinate_width_bits": 10,
+      "decoded_gate_list_sha256": "d8e4f3b6216ef571c47297f17be771edfffd35e09e9c4b6e234bafadcb5244de",
+      "deletion_controls": {
+        "delete_each_bus_role_detected": 180,
+        "delete_each_cursor_park_role_detected": 3,
+        "delete_each_expected_port_role_detected": 180,
+        "delete_each_new_connector_role_detected": 60,
+        "delete_each_selected_program_port_detected": 168,
+        "delete_each_selected_program_rail_detected": 168,
+        "delete_each_stage_head_role_detected": 180,
+        "delete_each_tile_role_detected": 125,
+        "delete_parser_CCX_primitive_positive_residual": true,
+        "delete_transport_call_nonreturn": true,
+        "expected_new_role_deletion_population": 728,
+        "head": {
+          "delete_each_head_gate_detected": 519,
+          "head_gate_count": 519,
+          "minimum_head_deletion_residual": 1.0,
+          "pass": true
+        },
+        "observed_new_role_deletion_population": 728,
+        "pass": true
+      },
+      "exact_record_decode": true,
+      "head_action_fixture": {
+        "apply_same_head_again_restores_input": true,
+        "inherited_Cycle219_mass_residual": 2.220446049250313e-16,
+        "inherited_Cycle230_contact_deletion_residual": 0.36789306705608243,
+        "inherited_Cycle230_seam_failures": 0,
+        "other_data_leakage_count": 0,
+        "pass": true,
+        "s_equals_1_nonzero_output": {
+          "(0, 63, 65)": 1
+        },
+        "syndrome_input_sectors_exhausted": [
+          0,
+          1
+        ],
+        "syndrome_retained": true,
+        "syndrome_seed": [
+          0,
+          63,
+          65
+        ],
+        "work_returns_blank": true,
+        "work_seed": [
+          0,
+          63,
+          193
+        ]
+      },
+      "held_out": false,
+      "length": 6,
+      "malformed_and_lawful_domain": {
+        "all_zero_word_rejected": true,
+        "autonomous_constraint_penalty_or_repair_dynamics_compiled": false,
+        "delete_one_bit_rejected_by_typed_terminal_length": true,
+        "dirty_counter_rejected_from_lawful_domain": true,
+        "duplicate_one_bit_rejected_by_typed_terminal_length": true,
+        "duplicate_selected_record_token_rejected": true,
+        "every_single_bit_flip_rejected": true,
+        "local_code_sector_constraints_enumerated": true,
+        "local_constraints": [
+          "support-one value projectors fix the selected expected-bit microcode ports",
+          "support-two typed incidences bind each program/head/bus role to its prescribed NN predecessor and successor",
+          "hard-core local cursor/head constraints reject zero or duplicate tokens in the declared sector",
+          "support-one blank projectors declare mismatch-counter, carry, zero-test, request, grant and carrier scratch clean at entry"
+        ],
+        "pass": true,
+        "wrong_expected_microcode_bit_rejected": true,
+        "zero_selected_record_token_rejected": true
+      },
+      "parser": {
+        "all_CCX_routes_return": true,
+        "counter_bits": 8,
+        "counter_request_grant_and_scratch_return_blank": true,
+        "counter_wrap_possible_on_declared_domain": false,
+        "expected_microcode_physical_value_roles": 4320,
+        "expected_microcode_replication_conflicts": 0,
+        "expected_microcode_supplied": true,
+        "expected_microcode_word_sha256": "51c6732ad419b2f2ac09f7223b6aafdf8a970db26dc09e11777b60adc21f030d",
+        "general_RLE_decoder": false,
+        "kind": "stationary exact selected-record recognizer with reversible eight-bit mismatch counter",
+        "logical_CCX_calls": 16478,
+        "logical_CNOT_calls_excluding_transport": 1682,
+        "logical_X_calls": 16,
+        "maximum_CCX_internal_open_route_edges": 11,
+        "maximum_possible_mismatch_count": 168,
+        "physical_parser_call_word_sha256": "2c3b4f7a4d72ef75fd3cc4ebca349bc144467f955161fe7140e6d1cb3a970b89",
+        "physical_parser_support1_2_call_count": 3214824,
+        "physical_parser_support_counts": {
+          "CNOT/support2": 298502,
+          "H/support1": 32980,
+          "SWAP_route/support2": 2767896,
+          "T/support1": 57728,
+          "Tdg/support1": 57702,
+          "X/support1": 16
+        },
+        "request_does_not_fire_for_any_single_flip": true,
+        "request_fires_for_exact_word": true,
+        "stage_capacity_bits": 180,
+        "stage_padding_bits": 12
+      },
+      "pass": true,
+      "placement": {
+        "Cycle660_physical_M2": 272640,
+        "K129_capacity_M2": 2146689,
+        "K129_capacity_margin_M2": 1856577,
+        "all24_orbit_injectivity_failures": 0,
+        "all576_coordinate_composition_failures": 0,
+        "canonical_new_role_orbits": 728,
+        "coarse_K129_translation_bijection": true,
+        "coarse_translation_count": 216,
+        "collisions": {
+          "Cycle654_route_support": 0,
+          "Cycle660_controller": 0,
+          "aux": 0,
+          "new_Cycle654_sidecar": 0,
+          "old": 0,
+          "prior_C649_sidecar": 0
+        },
+        "combined_controller_physical_M2": 290112,
+        "maximum_elementary_support_M2": 2,
+        "physical_new_M2": 17472,
+        "serialized_static_call_depth": 3785199,
+        "unit_fine_translation_controls": [
+          {
+            "collision_count": 0,
+            "direction": [
+              1,
+              0,
+              0
+            ],
+            "injective": true
+          },
+          {
+            "collision_count": 0,
+            "direction": [
+              -1,
+              0,
+              0
+            ],
+            "injective": true
+          },
+          {
+            "collision_count": 0,
+            "direction": [
+              0,
+              1,
+              0
+            ],
+            "injective": true
+          },
+          {
+            "collision_count": 0,
+            "direction": [
+              0,
+              -1,
+              0
+            ],
+            "injective": true
+          },
+          {
+            "collision_count": 0,
+            "direction": [
+              0,
+              0,
+              1
+            ],
+            "injective": true
+          },
+          {
+            "collision_count": 0,
+            "direction": [
+              0,
+              0,
+              -1
+            ],
+            "injective": true
+          }
+        ]
+      },
+      "record_central_gate_count": 1,
+      "record_direction_runs": [
+        [
+          [
+            0,
+            1,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0,
+            0
+          ],
+          64
+        ],
+        [
+          [
+            0,
+            0,
+            -1
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            0,
+            1
+          ],
+          129
+        ],
+        [
+          [
+            -1,
+            0,
+            0
+          ],
+          64
+        ]
+      ],
+      "record_forward_SWAP_count": 259,
+      "record_payload_bits": 168,
+      "record_start_path_offset": 4897,
+      "record_total_gate_count": 519,
+      "record_word_sha256": "ab689c6f2f96a0b48fa3fb80ad3b8c2ac30e2f0b77cf2b98241a9aedbfd100b8",
+      "scoped_port_to_parser_request_grant_subcompiler_pass": true,
+      "selected_record_index": 24,
+      "source_record_gate_list_sha256": "d8e4f3b6216ef571c47297f17be771edfffd35e09e9c4b6e234bafadcb5244de",
+      "strict_selected_record_port_to_route_head_compiled": false,
+      "transport": {
+        "Cycle654_head_static_order_is_host_dispatched": true,
+        "carriers_return_blank": true,
+        "connector_edges": 61,
+        "declared_exact_branch_call_word_sha256": "2e33db0be616c4eb93b1555a00e914c5dd6c5523812fc5ad4ff5fc501f615940",
+        "declared_exact_branch_static_call_count": 3785199,
+        "declared_exact_branch_support_counts": {
+          "CNOT/support2": 299847,
+          "H/support1": 32980,
+          "SWAP/support2": 568358,
+          "SWAP_cursor/support2": 338,
+          "SWAP_head/support2": 334,
+          "SWAP_route/support2": 2767896,
+          "T/support1": 57728,
+          "Tdg/support1": 57702,
+          "X/support1": 16
+        },
+        "expected_head_start_and_return_role": [
+          22,
+          30,
+          42
+        ],
+        "grant_truth_table_would_release_route_head_token": true,
+        "host_path_index": false,
+        "host_row_index": false,
+        "literal_transport_and_cursor_only_call_count": 569856,
+        "local_grant_to_route_head_token_coupling_lowered": false,
+        "malformed_branch_truth_table_would_release_route_head_token": false,
+        "parser_stage_host_index": false,
+        "primitive_macro_static_order_supplied": true,
+        "program_cursor_park_role": [
+          17,
+          30,
+          49
+        ],
+        "program_cursor_return_role": [
+          18,
+          26,
+          29
+        ],
+        "program_cursor_start_role": [
+          18,
+          26,
+          29
+        ],
+        "route_head_controller_blank_return_established": false,
+        "route_head_cursor_gate_list_lowered": false,
+        "runtime_successor_source": "one-hot cursor/head state plus locally typed NN bonds",
+        "strict_no_hidden_or_host_schedule": false,
+        "unchanged_data_route_permutation_return_established": true
+      },
+      "unchanged_Cycle654_head": true,
+      "whole_program_payload_bits": 5065,
+      "whole_word_suffix_exact": true
+    },
+    {
+      "L6_format_reused_without_refit": true,
+      "all24_decoded_gate_sha256": "d74d41819634d0ce8c39489de3c7798f30504190fdcec6202d7e172efcb59a50",
+      "all24_record_gate_sha256": "d74d41819634d0ce8c39489de3c7798f30504190fdcec6202d7e172efcb59a50",
+      "coordinate_width_bits": 10,
+      "decoded_gate_list_sha256": "d8e4f3b6216ef571c47297f17be771edfffd35e09e9c4b6e234bafadcb5244de",
+      "deletion_controls": {
+        "delete_each_bus_role_detected": 180,
+        "delete_each_cursor_park_role_detected": 3,
+        "delete_each_expected_port_role_detected": 180,
+        "delete_each_new_connector_role_detected": 60,
+        "delete_each_selected_program_port_detected": 168,
+        "delete_each_selected_program_rail_detected": 168,
+        "delete_each_stage_head_role_detected": 180,
+        "delete_each_tile_role_detected": 125,
+        "delete_parser_CCX_primitive_positive_residual": true,
+        "delete_transport_call_nonreturn": true,
+        "expected_new_role_deletion_population": 728,
+        "head": {
+          "delete_each_head_gate_detected": 519,
+          "head_gate_count": 519,
+          "minimum_head_deletion_residual": 1.0,
+          "pass": true
+        },
+        "observed_new_role_deletion_population": 728,
+        "pass": true
+      },
+      "exact_record_decode": true,
+      "head_action_fixture": {
+        "apply_same_head_again_restores_input": true,
+        "inherited_Cycle219_mass_residual": 2.220446049250313e-16,
+        "inherited_Cycle230_contact_deletion_residual": 0.36789306705608243,
+        "inherited_Cycle230_seam_failures": 0,
+        "other_data_leakage_count": 0,
+        "pass": true,
+        "s_equals_1_nonzero_output": {
+          "(0, 63, 65)": 1
+        },
+        "syndrome_input_sectors_exhausted": [
+          0,
+          1
+        ],
+        "syndrome_retained": true,
+        "syndrome_seed": [
+          0,
+          63,
+          65
+        ],
+        "work_returns_blank": true,
+        "work_seed": [
+          0,
+          63,
+          193
+        ]
+      },
+      "held_out": true,
+      "length": 7,
+      "malformed_and_lawful_domain": {
+        "all_zero_word_rejected": true,
+        "autonomous_constraint_penalty_or_repair_dynamics_compiled": false,
+        "delete_one_bit_rejected_by_typed_terminal_length": true,
+        "dirty_counter_rejected_from_lawful_domain": true,
+        "duplicate_one_bit_rejected_by_typed_terminal_length": true,
+        "duplicate_selected_record_token_rejected": true,
+        "every_single_bit_flip_rejected": true,
+        "local_code_sector_constraints_enumerated": true,
+        "local_constraints": [
+          "support-one value projectors fix the selected expected-bit microcode ports",
+          "support-two typed incidences bind each program/head/bus role to its prescribed NN predecessor and successor",
+          "hard-core local cursor/head constraints reject zero or duplicate tokens in the declared sector",
+          "support-one blank projectors declare mismatch-counter, carry, zero-test, request, grant and carrier scratch clean at entry"
+        ],
+        "pass": true,
+        "wrong_expected_microcode_bit_rejected": true,
+        "zero_selected_record_token_rejected": true
+      },
+      "parser": {
+        "all_CCX_routes_return": true,
+        "counter_bits": 8,
+        "counter_request_grant_and_scratch_return_blank": true,
+        "counter_wrap_possible_on_declared_domain": false,
+        "expected_microcode_physical_value_roles": 4320,
+        "expected_microcode_replication_conflicts": 0,
+        "expected_microcode_supplied": true,
+        "expected_microcode_word_sha256": "51c6732ad419b2f2ac09f7223b6aafdf8a970db26dc09e11777b60adc21f030d",
+        "general_RLE_decoder": false,
+        "kind": "stationary exact selected-record recognizer with reversible eight-bit mismatch counter",
+        "logical_CCX_calls": 16478,
+        "logical_CNOT_calls_excluding_transport": 1682,
+        "logical_X_calls": 16,
+        "maximum_CCX_internal_open_route_edges": 11,
+        "maximum_possible_mismatch_count": 168,
+        "physical_parser_call_word_sha256": "2c3b4f7a4d72ef75fd3cc4ebca349bc144467f955161fe7140e6d1cb3a970b89",
+        "physical_parser_support1_2_call_count": 3214824,
+        "physical_parser_support_counts": {
+          "CNOT/support2": 298502,
+          "H/support1": 32980,
+          "SWAP_route/support2": 2767896,
+          "T/support1": 57728,
+          "Tdg/support1": 57702,
+          "X/support1": 16
+        },
+        "request_does_not_fire_for_any_single_flip": true,
+        "request_fires_for_exact_word": true,
+        "stage_capacity_bits": 180,
+        "stage_padding_bits": 12
+      },
+      "pass": true,
+      "placement": {
+        "Cycle660_physical_M2": 272640,
+        "K129_capacity_M2": 2146689,
+        "K129_capacity_margin_M2": 1856577,
+        "all24_orbit_injectivity_failures": 0,
+        "all576_coordinate_composition_failures": 0,
+        "canonical_new_role_orbits": 728,
+        "coarse_K129_translation_bijection": true,
+        "coarse_translation_count": 343,
+        "collisions": {
+          "Cycle654_route_support": 0,
+          "Cycle660_controller": 0,
+          "aux": 0,
+          "new_Cycle654_sidecar": 0,
+          "old": 0,
+          "prior_C649_sidecar": 0
+        },
+        "combined_controller_physical_M2": 290112,
+        "maximum_elementary_support_M2": 2,
+        "physical_new_M2": 17472,
+        "serialized_static_call_depth": 3810735,
+        "unit_fine_translation_controls": [
+          {
+            "collision_count": 0,
+            "direction": [
+              1,
+              0,
+              0
+            ],
+            "injective": true
+          },
+          {
+            "collision_count": 0,
+            "direction": [
+              -1,
+              0,
+              0
+            ],
+            "injective": true
+          },
+          {
+            "collision_count": 0,
+            "direction": [
+              0,
+              1,
+              0
+            ],
+            "injective": true
+          },
+          {
+            "collision_count": 0,
+            "direction": [
+              0,
+              -1,
+              0
+            ],
+            "injective": true
+          },
+          {
+            "collision_count": 0,
+            "direction": [
+              0,
+              0,
+              1
+            ],
+            "injective": true
+          },
+          {
+            "collision_count": 0,
+            "direction": [
+              0,
+              0,
+              -1
+            ],
+            "injective": true
+          }
+        ]
+      },
+      "record_central_gate_count": 1,
+      "record_direction_runs": [
+        [
+          [
+            0,
+            1,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0,
+            0
+          ],
+          64
+        ],
+        [
+          [
+            0,
+            0,
+            -1
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            0,
+            1
+          ],
+          129
+        ],
+        [
+          [
+            -1,
+            0,
+            0
+          ],
+          64
+        ]
+      ],
+      "record_forward_SWAP_count": 259,
+      "record_payload_bits": 168,
+      "record_start_path_offset": 4859,
+      "record_total_gate_count": 519,
+      "record_word_sha256": "ab689c6f2f96a0b48fa3fb80ad3b8c2ac30e2f0b77cf2b98241a9aedbfd100b8",
+      "scoped_port_to_parser_request_grant_subcompiler_pass": true,
+      "selected_record_index": 23,
+      "source_record_gate_list_sha256": "d8e4f3b6216ef571c47297f17be771edfffd35e09e9c4b6e234bafadcb5244de",
+      "strict_selected_record_port_to_route_head_compiled": false,
+      "transport": {
+        "Cycle654_head_static_order_is_host_dispatched": true,
+        "carriers_return_blank": true,
+        "connector_edges": 61,
+        "declared_exact_branch_call_word_sha256": "653613c7601d6f23dd28bf1e6457ce0d215aaa92a86941ad05b2552828838f8f",
+        "declared_exact_branch_static_call_count": 3810735,
+        "declared_exact_branch_support_counts": {
+          "CNOT/support2": 299847,
+          "H/support1": 32980,
+          "SWAP/support2": 593894,
+          "SWAP_cursor/support2": 338,
+          "SWAP_head/support2": 334,
+          "SWAP_route/support2": 2767896,
+          "T/support1": 57728,
+          "Tdg/support1": 57702,
+          "X/support1": 16
+        },
+        "expected_head_start_and_return_role": [
+          22,
+          30,
+          42
+        ],
+        "grant_truth_table_would_release_route_head_token": true,
+        "host_path_index": false,
+        "host_row_index": false,
+        "literal_transport_and_cursor_only_call_count": 595392,
+        "local_grant_to_route_head_token_coupling_lowered": false,
+        "malformed_branch_truth_table_would_release_route_head_token": false,
+        "parser_stage_host_index": false,
+        "primitive_macro_static_order_supplied": true,
+        "program_cursor_park_role": [
+          17,
+          29,
+          46
+        ],
+        "program_cursor_return_role": [
+          18,
+          25,
+          58
+        ],
+        "program_cursor_start_role": [
+          18,
+          25,
+          58
+        ],
+        "route_head_controller_blank_return_established": false,
+        "route_head_cursor_gate_list_lowered": false,
+        "runtime_successor_source": "one-hot cursor/head state plus locally typed NN bonds",
+        "strict_no_hidden_or_host_schedule": false,
+        "unchanged_data_route_permutation_return_established": true
+      },
+      "unchanged_Cycle654_head": true,
+      "whole_program_payload_bits": 5027,
+      "whole_word_suffix_exact": true
+    }
+  ],
+  "status": "cycle667-selected-record-stationary-parser-request-grant-positive-route-head-coupling-open",
+  "strict_selected_record_port_to_route_head_compiled": false,
+  "strongest_constructive_result": "one complete final Cycle660 RLE record is read from literal local ports and validated by a placed reversible mismatch-counter parser using the exact Cycle655 27-primitive CCX; it computes and uncomputes request/grant and returns the program cursor, expected head, counter, parser scratch and carriers at L3/L6/held-L7 with all24/all576 and zero placement collisions; the unchanged 519-gate Cycle654 data-route trace is exact but its local grant-to-route-head token/cursor coupling is not yet lowered",
+  "supplied_structure_inventory": [
+    "byte-pinned Cycle660 ports/path",
+    "byte-pinned Cycle655 27-primitive CCX",
+    "one local selected-record request marker",
+    "one oriented cursor",
+    "static selected-record expected-bit microcode",
+    "blank parser tile and transport rails",
+    "typed local bonds",
+    "the selected final record terminal type",
+    "the 24-frame replication of every new role and typed bond",
+    "the one-face Cycle654 request and retained syndrome environment"
+  ],
+  "tests_failed": 0,
+  "tests_passed": 10
+}

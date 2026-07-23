@@ -1,0 +1,35 @@
+PASS Cycle669 protocol, discriminators and exact shores were frozen before evidence :: {'target': '4760ebdd7ca69f6bfb86d38666194fcc76010770508e7330b2cdf070ae6ee24e', 'prereg': '646932b5c87541e7c8d4ce40e0c681bb5942072d5afd988b9b779dc4efd11e54', 'pins': 12}
+PASS fresh N1-N8 precedes and blocks broad negative/shared-obstruction/axiom-pressure claims :: {'independent': 4, 'required': 5, 'pairs': 20}
+PASS one state-carried append/read word builds exact Cycle612/Cycle665 predecessor chains :: {'capacities': [3, 4, 6], 'signature': ('state', 'event')}
+PASS identical protocol accepts both native finite adapters but exposes Cycle661's coherent objective-event type gap :: {'Cycle661_basis': [6, 58], 'Cycle666_branches': [63, 18], 'missing': 'A_661_coherent_sector_to_objective_event'}
+PASS all train/held chain laws are derived; preregistered formal discriminators are null but native types do not match :: {'product_z0': [0.0, 0.0], 'biased_phase_product': [0.0, 0.0], 'six_site_GHZ': [0.0, 0.0]}
+PASS bounded support/M2/depth, translation, all24 and all576 controls pass :: {'all24': 1872, 'all576': 3456, 'C6': {'logical_gate_counts': {'CNOT': 18, 'TOFFOLI': 200, 'FREDKIN': 13}, 'literal_one_two_M2_calls_upper_bound': 3239, 'conservative_sequential_depth': 3239, 'logical_max_support_M2': 3, 'lowered_max_support_M2': 2, 'common_overlay_M2': 179, 'address_width': 8, 'clean_FIRE_work_M2': 6, 'event_input_M2_aliased_to_route_output': 7, 'Cycle665_payload_blocks_preprovisioned_and_live_masked': True, 'schedule_semantics_control': {'forward_intertwining_tests': 42, 'inverse_schedule_tests': 36, 'failures': 0, 'E_Glogical_equals_Gphysical_E_on_declared_overlay_code': True, 'pass': True}}}
+PASS inverse, deletion, malformed, complete-exhaust and saturation controls pass :: {'deletions': 10, 'malformed': 9}
+PASS Cycle669 note preserves sequence/time/Record/Born/no-go boundaries :: ()
+{
+  "pass": true,
+  "tests_passed": 8,
+  "tests_failed": 0,
+  "elapsed_seconds": 63.64817866706289,
+  "maximum_RSS_bytes": 78430208,
+  "note": "/private/tmp/toe-science.BB0KQV/docs/work_history/repo/review_feedback/PHYSICAL_STATE_CARRIED_EVENT_CHAIN_SEQUENCE_PROTOCOL_CYCLE669_NOTE_2026-07-23.md",
+  "receipt": "/private/tmp/toe-science.BB0KQV/outputs/physical_state_carried_event_chain_sequence_protocol_cycle669_receipt_2026_07_23.json"
+}
+       64.19 real        63.72 user         0.30 sys
+            78430208  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               58071  page reclaims
+                 624  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 598  voluntary context switches
+                6183  involuntary context switches
+       1101049323531  instructions retired
+        237199675089  cycles elapsed
+            68600312  peak memory footprint

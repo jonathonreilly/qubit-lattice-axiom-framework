@@ -1,258 +1,107 @@
-# Cycle 620 — physical pair supercell, receiver feedback, and quasienergy tournament
+# Cycle 620 — pair-register algebra, feedback family, and coframe-generator tournament
 
 Date: 2026-07-22
-
 Authority: none
-
 Audit: unset
+Author artifact status accepted: false
 Constitutional effect: none
 
-## Frozen question and route boundary
+## Corrected question and scope
 
-Cycle 620 tests three separate live routes from Cycle 615. Route A asks whether
-the resource-to-cubic-neutral-pair involution and the supplied distinct `+/-`
-charge sectors can be lowered into the accepted Cycle 610 support-two
-nearest-neighbor K=129 supercell with one common E, clean-work return, exact
-inverse, constant overhead, all 24 proper-cubic frames, all 576 products, and
-L3/L6/L7 held-size controls. The candidate negative sector is not derived
-antimatter. Route B asks whether a local physical Cycle 608/612 endpoint bit can
-cause feedback in the joined gauge-Regge action and select one response without
-a host sign or a hardwired 3/4 target. Route C independently probes a full-unitary
-quasiphase/coframe-variation representative. The open-boundary and periodic
-real-space seam is preserved.
+Cycle 620 reexecutes three separate candidate routes. Route A asks what survives when the Cycle 615 resource/pair involution is embedded in a 13-bit register and the corrected Cycle 610 K=129 conditional support-two descriptors are reused. Route B tests a local endpoint-controlled feedback-square family. Route C tests a full-unitary quasiphase/coframe generator.
 
-The criteria were frozen before evaluating signs. No route failure is promoted
-to a shared substrate obstruction. Wrapped phase is not energy, a generator
-element is not a rate, the feedback carrier is not physical stress, and no
-update schedule is time.
+The earlier common-E physical-compiler headline is withdrawn. Cycle 610 supplies conditional register, coordinate, and gate descriptors relative to a supplied K-periodic partition/origin and role coloring. It does not supply a literal physical M2 encoder or update. Cycle 620 also does not construct a literal physical M2 E, physical update, fine-NN placement/product, full physical-code leakage audit, local constraint enforcement, one-fine-site translation-covariant code/update, or autonomous no-host schedule. Corresponding receipt fields are `false` or `null`.
 
-## Route A — common-E support-two pair and sector compiler
+Routes use L3 train, L6 held, and L7 held-out-size fixtures. The all-24 and all-576 tests are reported at their executed algebraic or conditional-coordinate scope, not as physical update covariance.
 
-The common E uses one neutral resource M2, six positive occupation M2s, and six
-negative occupation M2s. Its seven active words are the resource word and the
-six point-counterpoint pair words; all other 8185 local words receive the
-identity extension. A five-Givens word W maps one pair branch to the normalized
-cubic six-branch scalar. The target involution is exactly
+## Frozen evidence boundary
 
-`G_pair = W X_resource,pair0 W^dagger`.
+The final Cycle 615 quartet and corrected Cycle 610 quartet are byte-pinned. Cycle 615 supplies the exact seven-level pair algebra and response-family shore while retaining physical lowering. Corrected Cycle 610 supplies conditional K129 role coordinates, support-one/two descriptors, register semantics, and a direct one-fine-site translation falsifier.
 
-The five supplied angles have exact sines `1/sqrt(6)`, `1/sqrt(5)`,
-`1/sqrt(4)`, `1/sqrt(3)`, and `1/sqrt(2)`. Each two-level operation is converted
-to a Gray path. Every Gray conditional includes the physical Cycle 610 one-hot
-orientation predicate, twelve data controls, twelve clean conjunction roles,
-and an exact Toffoli/controlled-one-M2 lowering. All two-M2 endpoints are routed
-by the literal Cycle 610 Hamiltonian bus with move/apply/restore. The B
-occupation rails, predicate work, conjunction work, role orientation, and the
-neutral resource excitation are supplied clean at encoding.
+The final corrected Cycle 608 quartet is pinned only at its stated scope. Cycle 620 does not upgrade any Cycle 608 descriptor by renaming it physical.
 
-The two charge sectors use separate A/B occupation rails. For each charge and
-direction, the scatter and clear remote CNOTs use disjoint source and target
-radial paths and one cross-face nearest-neighbor edge; a local A/B swap completes
-the stream. The schedule is serialized by charge and direction and is constant,
-not a time variable. The positive coin and supplied conjugate negative coin are
-followed by this charge-blind stream and two separate same-g contacts with no
-cross contact. Thus the accepted subsequence remains `coin -> stream -> contact`.
+The local current-branch Cycle 612 trio is distinct from the external causal-time Cycle 612 lane in PR #5557. Local Cycle 612 supplies the declared 3/4 and 5/4 label rows used here. The external lane is pinned by commit and note hash as comparison only. Its runner is not imported or executed, and it supplies no Event, Record, count-edit, rate, or time backcredit.
 
-The runner tests the common-E intertwiner on a seeded coherent vector, clean
-inverse, code leakage, the identity extension, deletion of each W/swap stage,
-every clean conjunction truth row, literal bus endpoints, all 24 and all 576,
-every translated L3/L6/L7 cross edge and wrap seam, stream inverse and factor
-deletions, full-Fock +/- unitarity and order reversal, and the inherited
-one-particle mass fixture.
+## Route A — seven-level/Givens register algebra
 
-The final common-E residual is `3.78e-16`, inverse residual `3.62e-16`, and
-leakage zero. The compiled word contains 75 Gray conditionals, 1,800 exact
-Toffoli calls, 17,846 one-M2 gates, and 10,875 two-M2 gates before literal bus
-routing. Each branch also reuses the pinned 721-gate Cycle 610 orientation
-predicate and its inverse, for 1,442 additional support-two gates with clean
-predicate return. It exhausts 307,200 clean conjunction rows with zero
-failures. Across the 24 orientation branches, 261,000 actual support-two
-endpoint pairs pass the bus coordinate/inverse audit; the pair-conditional
-route-return debit, separate from the inherited predicate routing debit, is
-322,346,002,656 SWAPs per coarse cell. The added role upper bound is 313 M2 per
-coarse cell: 25 resource/A/B data roles plus the 288-member orbit of twelve
-clean conjunction roles. The two-charge stream uses 4,980 two-M2 gates per cell
-before the inherited orientation-control wrapper. This is a deliberately large
-feasibility upper bound, not a minimal or economical compiler.
+Route A supplies a neutral resource word and six point-counterpoint pair words. Five Givens rotations with sines `1/sqrt(6)`, `1/sqrt(5)`, `1/sqrt(4)`, `1/sqrt(3)`, and `1/sqrt(2)` surround one resource/pair swap. This reproduces the Cycle 615 seven-level involution.
 
-For L3/L6/L7 the physical stream checks 7,776/62,208/98,784 all-frame
-cross-face edges with no nearest-neighbor, wrap, source-target conflict,
-inverse, or B-buffer-leakage failure. The inherited one-particle mass residual
-is `8.62e-14`; the charge-conjugate spectrum pairing residual is zero. The
-accepted physical factor-order reversal signal is `0.520279`, with nonzero
-coin, stream, and contact deletions.
+The seven words are embedded in a 13-bit register: one resource bit, six positive occupation bits, and six opposite-charge occupation bits. The other 8,185 register words receive the identity extension. This is a register embedding, not a map into physical M2 sites. The register intertwiner residual is about `3.78e-16`, register-array escape is zero, inverse residual is about `3.62e-16`, and every deleted Givens/swap stage produces a nonzero signal.
 
-## Route B — endpoint-controlled feedback family
+The Gray/conjunction audit executes 75 conditionals and 307,200 truth rows: 75 matching rows and 307,125 malformed nonmatching rows, with clean work returned and zero failures. The K129 coordinate audit checks 261,000 conditional support-two endpoint pairs across supplied coarse-origin orientations. These are descriptor and returned-bus facts. The 313-role count is a declared role upper bound, not a physical M2 cost.
 
-The actual matter-caused control is the Cycle 608 word
+The two supplied charge-sector register copies preserve the `coin -> stream -> contact` order on L3/L6/L7. Conditional path, cross-face, conflict, inverse, and terminal-B array failures are zero. Deletion signals are nonzero. The inherited one-particle mass residual remains about `8.62e-14`; conjugate-spectrum pairing residual is zero. The opposite-charge copy is not derived antimatter or a derived particle identity.
 
-`P_d(pointer); Toffoli(pointer,binder,opportunity); P_d(pointer)`.
+The Cycle 610 one-fine-site translation test remains decisive for physical promotion. The inherited tagged code support has x-translation symmetric differences 2,970, 23,760, and 37,730 at L3/L6/L7. Local fine-NN admissibility preparation, enforcement, rejection, repair, cooling, or penalty dynamics is absent. Therefore Route A remains a seven-level/register and conditional-coordinate result.
 
-The opportunity bit is used locally and uncomputed. The candidate feedback is
+## Route B — conditional feedback-square family
 
-`A_fb = (sigma*kappa/2) sum_x b_x |D_x[e] - rho_x|^2`,
+Route B evaluates the candidate
 
-where D is the raw local proper-cubic sum of Regge deficits and rho is the local
-gauge occupation. This is state-dependent coframe feedback, not merely routing
-a supplied response-sign bit. The positive square, its 1/2 coefficient, the
-relative scaling of D and rho, and the nonnegative-feedback-Hessian criterion
-are candidate-law inputs; no pinned approved surface forces them.
+`A_fb = (sigma*kappa/2) sum_x b_x |D_x[e] - rho_x|^2`.
 
-The runner therefore audits both the positive square and the equally local
-negative square, kappa in `{1/2,1,2}`, both lambda signs and relative magnitudes
-`{1,2}`, and improvement coefficient `{-1,0,1}` on every L3/L6/L7 fixture. For
-each fixed feedback sign and scale the exact surviving family is
+The declared local Cycle 612 endpoint word is used and uncomputed. The positive square, negative square, scales `kappa in {1/2,1,2}`, both lambda signs and relative magnitudes `{1,2}`, and improvements `{-1,0,1}` are all audited on L3/L6/L7. The square form, coefficient, relative D/rho scaling, sign, and scale are supplied candidate-law content.
+
+For fixed square sign and scale, the exact family is
 
 `R(lambda,c) = R_fb + lambda (R0 + c Rimp)`.
 
-All signs and scales preserve the tested U(1) Gauss neutrality, Regge Ward
-identity, stationary equation, exact finite-state inverse, and all 24/all 576
-covariance controls. Deleting the matter predicate or endpoint vetoes the
-feedback, while deleting the density cross term changes the response.
-All 72 members of the frozen finite grid happen to have positive receiver
-values. That does not select a receiver: no numerical-response-to-Cycle612-word
-map is derived, and the grid does not exhaust the retained candidate
-`lambda,c` parameters. For every fixed feedback sign/scale and every fixture,
-the runner extracts the nonconstant affine family and constructs explicit
-opposite-sign parameter witnesses. The positive-square analytic family also
-has both signs. Unrestricted lambda is a retained candidate-law parameter, not
-a derived physical law. The exact family and the inherited `{3/4,5/4}` class
-therefore do not collapse. Mapping a numerical response sign through a supplied
-Cycle 612 convention is not a derived receiver law and is not selection.
+All 72 finite-grid members per fixture and the analytic opposite-sign witnesses preserve the tested stationary, Ward, inverse, all-24, and all-576 algebraic controls. Maximum residuals are approximately `1.27e-13` stationary, `2.01e-12` Ward, `4.42e-15` all-24 covariance, and `1.26e-15` inverse; all 576 representation products pass. Endpoint/cross-term deletion is nonzero.
 
-## Route C — full-unitary coframe generator
+Both analytic response signs and both local Cycle 612 labels `{3/4,5/4}` survive. The feedback square is a conditional candidate family, not selection of a unique response, source law, receiver, physical stress, or gravity. Route B uses periodic Regge objects and is not joined to the Cycle 615 open-boundary flux apparatus.
 
-Route C uses the actual full 64-dimensional Fock update
+## Route C — full-unitary quasiphase/coframe generator
+
+Route C differentiates the 64-dimensional update
 
 `U(e,k) = Contact Gamma(Stream(e,k) Coin)`
 
-in the accepted `coin -> stream -> contact` order. For the six spatial symmetric
-coframe components it constructs
+and evaluates `K_ab = i U^dag partial U / partial e_ab` for six spatial coframe components. It tracks nondegenerate eigenbranches at L3/L6/L7 and compares locally unwrapped quasiphase derivatives with K expectations.
 
-`K_ab = i U^dagger partial U / partial e_ab`.
+Hermiticity residual is zero. Half-step convergence is about `7.52e-9`; tracked quasiphase/generator residual is about `2.07e-9`; all-24 generator-tensor covariance is about `5.19e-7`; finite coframe-update covariance is about `2.50e-15`; all 576 tensor representation products pass. A separate 4,096-dimensional two-cell word has a bijective stream, zero norm residual, contact deletion signal about `1.538`, and factor-order signal about `0.488`.
 
-K is estimated from the centered relative unitary
-`U(-epsilon)^dagger U(+epsilon)` and its eigenphases, then rerun at half step.
-It is Hermitian by unitary construction; the maximum half-step convergence
-residual is `7.52e-9`. K is a generator representative. It is not a rate and is
-not called unique physical stress. At generic periodic Bloch points for
-L3/L6/L7, every nondegenerate eigenbranch is matched by overlap at positive and
-negative coframe displacement. Its locally unwrapped quasiphase derivative
-agrees with the corresponding K expectation to `2.07e-9`. The maximum all-24
-generator-tensor covariance residual is `5.19e-7`, the finite coframe-update
-covariance residual is `2.50e-15`, and all 576 representation products pass.
+A global rephasing exposes a principal wrapped-phase jump without changing the channel or K. Wrapped phase is not energy. The quasiphase/coframe generator is not physical stress. A generator element is not a rate or time, and the factor schedule is not time. No degenerate-branch extension or open-boundary join is claimed.
 
-A constant global rephasing places the most responsive branch on the principal
-quasiphase seam without changing the quantum channel or K. The principal
-wrapped value then jumps by almost `2*pi`, while the locally unwrapped step and
-K remain continuous. This is why wrapped phase is not energy. Degenerate branch
-transport is not claimed. Route C remains a periodic Bloch/full-unitary probe;
-it is not silently joined to the Route B/open-boundary real-space apparatus.
+## Supplied, executed, and open structure
 
-The single-Bloch onsite contact/diagonal-stream commutator is correctly zero,
-about `2.23e-15`; it is a valid reduced-block diagnostic, not an order-deletion
-failure. The order-sensitive control is separately evaluated on an explicit
-two-cell 4,096-dimensional real-space full-Fock word. Its stream permutation is
-bijective, norm residual is zero, contact deletion signal is `1.538`, and
-`coin -> stream -> contact` differs from contact-first by `0.488`. This
-two-cell order witness is not conflated with the L3/L6/L7 Bloch generator.
+Supplied: K129 partition/origin/role coloring; one-hot orientation and blank register/work roles; five Givens angles and pivot order; opposite-charge copy, conjugated coin, separate same-g contact and no cross contact; local Cycle 612 endpoint program and labels; feedback square/sign/scale; Regge complex, raw deficit, pseudoinverse, lambda and periodic momenta; finite-difference steps and nondegenerate fixtures.
 
-## Supplied, derived, and open
+Executed: seven-level pair and 13-bit register algebra; Gray/conjunction truth rows; conditional coordinate/bus descriptors; L3/L6/L7 register streams; deletion, malformed truth-row, inverse, all-24 and all-576 controls at declared scopes; feedback family; Ward/stationary algebra; coframe generators; quasiphase tracking; and the two-cell factor-order witness.
 
-Supplied: the K=129 one-hot orientation/predicate/bus fabric; blank B and work
-roles; the candidate negative-charge copy, conjugate coin, separate same-g
-contact, and absence of cross contact; the five Givens angles and resource
-excitation; the Cycle 608 binder/path/chart and Cycle 612 endpoint-use program;
-the feedback square, coefficient convention, D/rho scale and sign/scale family;
-the Cycle 576 Regge complex, raw deficit, pseudoinverse, lambda and periodic
-fixtures; and the diagnostic response-to-word convention.
+Open: literal physical M2 encoder/update; fine-NN placement/product; physical E/G residual; full physical-code leakage; local constraints; one-fine-site translation covariance; autonomous no-host schedule; particle identity; feedback/source/gravity selection; one receiver; physical energy/stress/rate/time; open-boundary Regge join; Event; Record; Born probability.
 
-Derived or executed: common-E pair lowering, exact Gray/conjunction and
-support-two bus word, clean return, inverse, leakage, deletion, all24/all576,
-two-sector L3/L6/L7 occupation streams, preserved coin -> stream -> contact and
-mass fixture, endpoint-controlled feedback variation with Gauss/Ward/inverse
-controls, the surviving affine response family, and the full-unitary K tensor
-with tracked nondegenerate quasiphase derivatives and seam control.
+## No-go discipline — N1 through N8
 
-Open: physical antiparticle identity; autonomous role/work/binder/path/chart
-genesis; selection of the feedback law, sign, scale, lambda, or improvement;
-an operational metric and derived Regge-response-to-Cycle612 receiver map; one
-receiver word; one joint open-boundary real-space Regge apparatus; physical
-stress, energy, gravity, causal time, event/Record formation, and Born
-probability.
+N1 — Six normalized attempted families cover seven-level/Givens algebra, conditional K129 descriptors, positive feedback, opposite-sign/scale feedback, the full-unitary coframe generator, and the two-cell factor-order witness. Exact markers are limited to `ATTEMPTED` and `RULED OUT BY PRIOR`. Live routes include a state-carried translation phase, local admissibility enforcement, normalized or nonlinear feedback, direct generator-to-endpoint coupling, and an open real-space join.
 
-## Full N1–N8 no-go discipline
+N2 — Seven tracked walls yield 21 directional pairs. Every `left_to_right`, `right_to_left`, and `independence` status is `NOT_ESTABLISHED`; no wall independence is asserted.
 
-N1 — Seven normalized mechanism families are separated: positive feedback
-square, negative feedback square, feedback scale orbit, normalized-deficit
-feedback, nonlinear bounded feedback, the full-unitary coframe generator, and
-an open real-space feedback apparatus. The normalized, nonlinear, and joint
-open routes remain live untested alternatives, so a broad negative must fail.
+N3 — The required hidden-condition phrase scan has zero note hits. Every load-bearing input is listed above and in the receipt.
 
-N2 — The collapsed walls are feedback-law choice, continuous lambda/improvement,
-receiver map, domain join, stress identity, and supplied genesis. All fifteen
-pairs are audited; no closure is inferred between them.
+N4 — Exact residual-matching rows cover corrected Cycle 610 conditional physical scope and translation falsifier, Cycle 615 pair lowering and response family, corrected Cycle 608's null physical-promotion boundary, local Cycle 612 labels, and external PR #5557. Every row records `prior_path`, `prior_line`, `prior_residual`, an exact Cycle-620 `current_path` and `current_line`, `current_residual`, `exact_match`, `same_scope`, and `use_as_closure`; the runner asserts that every cited line exists.
 
-N3 — The hidden-wall scan exposes one-hot orientation, clean work/B buffers,
-the Givens angles and pivot order, candidate negative sector and contacts,
-binder/path/chart, every feedback coefficient and criterion, raw Regge and
-pseudoinverse inputs, the response-word convention, finite-difference epsilon,
-and nondegenerate fixtures. The only literal phrase-scan hit is “Registered
-primitives”; it is classified as cited retained authority after reading the
-machine registry and all current primitive source notes, not as a hidden
-condition.
+N5 — Five-resolution rows cover register algebra versus physical M2 compiler, feedback family versus unique source/gravity, coframe generator versus energy/stress/rate/time, opposite-charge copy versus particle identity, and local Cycle 612 versus external causal-time evidence. Each row carries per-element, per-site, per-mode, per-block, and lattice-wide statements.
 
-N4 — Residual matching is exact and scoped. Cycle 615 Route A witnesses the
-physical pair/full-sector lowering residual; Cycle 610 witnesses the physical
-fabric; Cycle 615 Route C witnesses the same lambda/c and two-word residual;
-Cycle 612 witnesses the supplied delay/advance map; Cycle 576 witnesses the
-Regge sign/normalization/metric/domain terminals.
+N6 — Typed partial-closure rows preserve corrected Cycle 610, Cycle 615, corrected Cycle 608, local Cycle 612, and external PR #5557 at their exact scopes through explicit `file`, `status`, and `what_closes` fields. State-carried translation phase, local enforcement, nonlinear feedback, direct endpoint coupling, and an open-domain join remain actionable.
 
-N5 — “Physical pair compiler” means the declared common seven-word code, clean
-work and orientation sector. “Not derived antimatter” is local candidate-sector
-language, not a universal particle theorem. “Feedback is not selection” is
-restricted to the audited square family. K is a finite periodic generator
-representative, not physical stress, energy, or a rate.
+N7 — Cited actionable steelman: a state-carried `Z_129^3` phase with locally enforced admissibility could repair the supplied-origin translation defect and permit a literal physical encoder/update. Separately, normalized or bounded nonlinear feedback, or a direct generator-to-endpoint coupling, could select one response. Exact path-and-line rows cite the live repair and actionable physical-lowering/feedback surfaces. The terminal tests are one-fine-site code/update covariance, fine-NN gates, full-code leakage, local constraint enforcement, Gauss/Ward/inverse preservation, and one held-out receiver without refit.
 
-N6 — Registered primitives retain only their approved scale, kinetic-form, and
-pointwise evaluation roles. Live partial closures are a retained positivity
-theorem, normalized or nonlinear local feedback, a direct K-to-endpoint
-coupling, and a joint open real-space flux/Regge compiler.
+N8 — Cross-cycle rows preserve the corrected Cycle 610 demotion, Cycle 615 physical-lowering boundary, corrected Cycle 608 endpoint/compiler boundary, local Cycle 612 two-label residual, external causal-time separation, and Cycle 576 sign/normalization/domain seams. Every row carries `citation_path`/`citation_line` aliases for the exact prior path and line, the echo, retirement state and `retirement_mechanism`, required `mechanism` and `applicability`, `could_apply_here`, and its narrowing effect; every citation is live-checked.
 
-N7 — Steelman: a hostile reviewer should reject any broad selection no-go. A
-normalized local deficit scalar, a bounded nonlinear feedback potential with a
-unique fixed point, or a direct coupling of K to the physical endpoint could
-remove the lambda/c/sign orbit. Each has a concrete terminal: strict locality,
-covariance, clean endpoint return, Gauss/Ward/inverse, and one held receiver
-word without refit.
+Negative gate: FAIL / DO NOT SHIP NEGATIVE.
+Narrowed positive: PASS.
+Negative claim shipped: false.
+Shared obstruction: false.
+Minimum-content claim: false.
+No axiom pressure.
 
-N8 — The cross-cycle echo weighs against foreclosure. Cycle 610 turned a host
-packing residual into a bounded compiler; Cycle 612 turned detector pointers
-into matter-caused endpoint bits; Cycle 615 explicitly left feedback and
-full-unitary routes live; Cycle 576 constructed Regge while preserving its
-sign, normalization, metric, and domain seams.
+## Six-wall ledger and disposition
 
-Broad negative gate: FAIL / DO NOT SHIP. The narrow result is that the audited
-linear feedback-square family does not select a unique response. There is no
-minimum-content claim, no route-independent shared obstruction, and no axiom
-pressure.
+- `C_ref`: narrowed. Pair covariance passes algebraically and conditional coarse-origin coordinates pass, while the K129 motif is not one-fine-site covariant.
+- `C_num`: sharpened. Exact Givens angles and an affine feedback family are explicit; feedback and empirical normalizations remain supplied.
+- `C_wrap`: diagnostic only. Quasiphase tracking works away from degeneracy, but phase and generator are not energy, stress, rate, or time.
+- `C_int`: partial algebraic composition. No physical M2 apparatus or open/periodic real-space join is built.
+- `C_local`: narrowed. Conditional descriptors and register semantics pass; physical lowering, enforcement, leakage, one-site covariance, and autonomy remain open.
+- `C_source`: conditional family only. No unique source, receiver, physical stress, or gravity law is selected.
 
-## Dependency ledger and next route
-
-- `C_ref`: advanced by physical all-frame pair/sector lowering; role genesis,
-  endpoint chart/path, and receiver mapping remain.
-- `C_num`: sharpened by exact Givens angles and the explicit affine feedback
-  family; feedback and response normalizations remain.
-- `C_wrap`: advanced by the tracked full-unitary quasiphase derivative and
-  explicit branch seam; no phase is called energy.
-- `C_int`: advanced across pair/sector, endpoint feedback, Regge variation, and
-  full-unitary probes; the joint open real-space apparatus remains.
-- `C_local`: advanced by the constant-overhead support-two pair and occupation
-  stream compiler; economical packing and autonomous clean-role genesis remain.
-- `C_source`: sharpened by genuine matter-caused feedback, but its discretionary
-  law family leaves both receiver words and does not establish gravity.
-
-The optimal next campaign is to test normalized and nonlinear feedback and a
-direct K-to-endpoint coupling, while compiling the open flux boundary and Regge
-carrier into one physical real-space apparatus. Require one receiver word with
-no host sign, refit, hardwired 3/4 target, or added stability postulate.
+The strongest constructive result is the exact seven-level/Givens pair involution in one 13-bit register, with conditional K129 coordinate descriptors and L3/L6/L7 register-stream controls. No maturity score is retained or increased, and there is no confirmed breakthrough.

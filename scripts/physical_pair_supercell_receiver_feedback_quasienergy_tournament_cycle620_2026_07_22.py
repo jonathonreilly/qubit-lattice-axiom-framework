@@ -1,20 +1,23 @@
 #!/usr/bin/env python3
-"""Cycle620: physical pair lowering, receiver feedback, and full-unitary stress.
+"""Cycle620: pair-register algebra, feedback candidates, and coframe generators.
 
 The three routes are deliberately separate.  Route A lowers the Cycle615
-resource/cubic-neutral-pair involution and a two-charge occupation stream into
-the accepted Cycle610 K=129 support-two fabric.  Route B adds one explicit
-matter-caused local feedback-square candidate to the joined gauge-Regge action
-and audits the equally local sign/scale alternatives.  Route C differentiates
-the actual coin -> stream -> contact full-Fock unitary with respect to a
-spatial coframe.  Wrapped quasiphase is not energy and a generator element is
-not a rate.  Authority none; audit unset.
+resource/cubic-neutral-pair involution into a 13-bit register and reuses the
+Cycle610 K=129 conditional coordinate/gate descriptors.  It does not construct
+a literal physical M2 encoder or update.  Route B adds one explicit conditional
+feedback-square candidate to the joined gauge-Regge algebra and audits local
+sign/scale alternatives.  Route C differentiates the actual coin -> stream ->
+contact full-Fock unitary with respect to a spatial coframe.  Wrapped
+quasiphase is not energy or stress, and a generator element is not a rate or
+time.  Authority none; audit unset.
 """
 from __future__ import annotations
 
+import contextlib
 from fractions import Fraction
 from functools import lru_cache
 from hashlib import sha256
+import io
 from itertools import combinations, product
 import json
 import math
@@ -59,21 +62,33 @@ FIXTURES = (("TRAIN_L3", 3, False), ("HELD_L6", 6, True), ("OUT_HELD_L7", 7, Tru
 
 PINS = {
     "scripts/physical_lawful_charge_joined_metric_response_tournament_cycle615_2026_07_22.py":
-        "bbd0d70a62404f96ac02decee68aec465edbdc76b0948b8fb563183b7c61fc6d",
+        "e9649a3193590a0caeccb832d8738bbaa39ca3ca08a44131cd5cfe47a68f015e",
     "docs/work_history/repo/review_feedback/PHYSICAL_LAWFUL_CHARGE_JOINED_METRIC_RESPONSE_TOURNAMENT_CYCLE615_NOTE_2026-07-22.md":
-        "ebf7b618f4048bc964bd692073c828e9ff5cbb53fc5b0db1fed10fd8fcabf00b",
+        "58ceb8fcd82a808535ea2c7cc67084eec159255d4c38c368bbc2fa67b4c90a3f",
     "outputs/physical_lawful_charge_joined_metric_response_tournament_cycle615_receipt_2026_07_22.json":
-        "67e8f57c5505a4c5c8a861794c0a086227ac577af2337bab6902ba52f6eb1d67",
+        "7bf6e65b72976029bd55019a5338e5e9ee29c8c94f317e14c8b3031c453da929",
+    "outputs/physical_lawful_charge_joined_metric_response_tournament_cycle615_cold_2026_07_22.txt":
+        "2369ba76754bcc834508adb254bd4da6f10c42e31d16704edc612541f948a3ea",
     "scripts/physical_proper_cubic_supercell_stream_composition_tournament_cycle610_2026_07_22.py":
-        "997234878a564cb8554ff5184888fe06b920db32bb54b5df6febfdc88a90e7de",
+        "ed2250711646ad99bf077e74b8e4194f2df0a2cf368d3c05c45ea95cac8083db",
+    "docs/work_history/repo/review_feedback/PHYSICAL_PROPER_CUBIC_SUPERCELL_STREAM_COMPOSITION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md":
+        "3768d2a1407bdc8de06e2a55fa18300469b1006c0a16a78ada8b8d3a4b936105",
     "outputs/physical_proper_cubic_supercell_stream_composition_tournament_cycle610_receipt_2026_07_22.json":
-        "51373236a754b8ea941514609251b6721578c1f4fdfaa443958b7e7c7fba1c63",
+        "375f843606a81970ae50f71d74c53f7e4c4d1437007daaecbedd0b19e3fdfa34",
+    "outputs/physical_proper_cubic_supercell_stream_composition_tournament_cycle610_cold_2026_07_22.txt":
+        "0adbee38e398c9e1d1ccd2733454ead2669338b86d48cbefa5331abb78c126e8",
     "scripts/physical_radius_one_dressed_detector_controlled_update_recurrence_tournament_cycle608_2026_07_22.py":
-        "59a1125e1e71872b69c8b0e48cd114b221a107ee3d3f396cd28c4f87d233e41b",
+        "ac2a337140d40624500a5f23fc771b9b716d4c4bd467eb27a1963d1db5eac875",
+    "docs/work_history/repo/review_feedback/PHYSICAL_RADIUS_ONE_DRESSED_DETECTOR_CONTROLLED_UPDATE_RECURRENCE_TOURNAMENT_CYCLE608_NOTE_2026-07-22.md":
+        "6e8e3aae72547e8a13b0ced4cea7230c7b594348073e45802c95e6a55329ee54",
     "outputs/physical_radius_one_dressed_detector_controlled_update_recurrence_tournament_cycle608_receipt_2026_07_22.json":
-        "b9980fa13434a55f6209203f8801a367c0139ebacddcf13732a02b486f8f4096",
+        "4ccba85490c08120aab645917fee87dbd58f21cf4fb17c5f60b3a4fab9dbca48",
+    "outputs/physical_radius_one_dressed_detector_controlled_update_recurrence_tournament_cycle608_cold_2026_07_22.txt":
+        "087e3ef7a5657a85432553f29e7050458a9c8552a3e59852e74ae86b5f9fc605",
     "scripts/physical_matter_caused_causal_interval_proper_time_bridge_tournament_cycle612_2026_07_22.py":
         "91f22d23dd2730f76a05736634236d41036f68eaedc4921daca69de25ab6a344",
+    "docs/work_history/repo/review_feedback/PHYSICAL_MATTER_CAUSED_CAUSAL_INTERVAL_PROPER_TIME_BRIDGE_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md":
+        "920776555dce6505bccb0e46e552e90d24858c08cfb7f6978d884f10a5bb0789",
     "outputs/physical_matter_caused_causal_interval_proper_time_bridge_tournament_cycle612_receipt_2026_07_22.json":
         "e7a8ea3dcbe370c9f8c6a94770508d1710a7013ce4ba62a1ad67e345fe1e2d11",
     "docs/audit/data/axiom_premise_nodes.json":
@@ -86,6 +101,12 @@ PINS = {
         "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
     "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md":
         "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+}
+
+CAUSAL_TIME_PR_5557 = {
+    "commit": "a1e2f1ea60b1cf9b9cb0ae100c61cfd1f3a07318",
+    "note": "docs/work_history/repo/review_feedback/PHYSICAL_TICK_ECHO_ASSOCIATION_CAUSAL_ORDER_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md",
+    "note_sha256": "028133c490e771dd3012061c79910fcfb88cd6132df072ec15e725fe9bc35496",
 }
 
 
@@ -126,12 +147,28 @@ def check(label: str, condition: bool, detail="") -> None:
     print("PASS" if condition else "FAIL", label, "::", detail)
 
 
-def shore() -> tuple[dict, dict, dict, dict]:
+def shore() -> tuple[dict, dict, dict, dict, dict]:
     observed = {path: digest(path) for path in PINS}
     r615 = json.loads((ROOT / "outputs/physical_lawful_charge_joined_metric_response_tournament_cycle615_receipt_2026_07_22.json").read_text())
     r610 = json.loads((ROOT / "outputs/physical_proper_cubic_supercell_stream_composition_tournament_cycle610_receipt_2026_07_22.json").read_text())
     r608 = json.loads((ROOT / "outputs/physical_radius_one_dressed_detector_controlled_update_recurrence_tournament_cycle608_receipt_2026_07_22.json").read_text())
     r612 = json.loads((ROOT / "outputs/physical_matter_caused_causal_interval_proper_time_bridge_tournament_cycle612_receipt_2026_07_22.json").read_text())
+    causal_note = subprocess.check_output(
+        ("git", "show", f'{CAUSAL_TIME_PR_5557["commit"]}:{CAUSAL_TIME_PR_5557["note"]}'),
+        cwd=ROOT,
+    )
+    c610_scope = r610["physical_M2_scope"]
+    c608_boundary = r608["physical_promotion_boundary"]
+    c608_compiler_null_keys = (
+        "physical_encoder_E", "physical_update_G", "intertwiner_certificate",
+        "physical_placement", "physical_primitive_product", "full_code_leakage",
+        "locally_enforced_chart", "locally_enforced_path", "autonomous_genesis",
+    )
+    c608_composition_null_keys = (
+        "physical_encoder_E", "physical_update_G", "intertwiner_certificate",
+        "physical_placement", "physical_primitive_product", "full_code_leakage",
+        "Event", "Record", "time", "full_echo",
+    )
     result = {
         "hashes_match": observed == PINS,
         "observed": observed,
@@ -139,36 +176,75 @@ def shore() -> tuple[dict, dict, dict, dict]:
         "Cycle610_pass": r610["pass"],
         "Cycle608_pass": r608["pass"],
         "Cycle612_pass": r612["pass"],
-        "Cycle615_pair_gate_open": not r615["route_A_local_neutral_pair_sector"]["physical_NN_pair_gate_and_full_sector_compiled"],
-        "Cycle615_receiver_selection_residual": r615["route_C_joined_metric_receiver_equivalence"]["unique_receiver_word_selection_residual"],
-        "Cycle610_support_two_compiler": r610["literal_orientation_controlled_compute_act_uncompute"]["base_identity_frame_literal_word"]["support_failures"] == 0,
-        "Cycle608_physical_detector": r608["route_B_matter_caused_candidate"]["detector_output_generated_from_physical_matter"],
+        "Cycle615_physical_pair_gate_open": not r615["route_A_local_neutral_pair_sector"]["physical_support_two_pair_gate_executed"],
+        "Cycle615_receiver_selection_residual": r615["route_C_joined_metric_receiver_equivalence"]["receiver_label_selection_residual"],
+        "Cycle610_conditional_support_two_descriptors": c610_scope["conditional_support_two_primitive_descriptors_compiled"],
+        "Cycle610_literal_physical_encoder": c610_scope["literal_physical_encoder_composed"],
+        "Cycle610_physical_intertwiner_residual": c610_scope["physical_intertwiner_residual"],
+        "Cycle610_physical_code_leakage_evaluated": c610_scope["physical_code_leakage_evaluated"],
+        "Cycle610_one_fine_site_translation_covariant": r610["fine_site_translation_falsifier"]["one_fine_site_translation_covariant_code_space"],
+        "Cycle610_local_constraints_enforced": r610["local_constraint_scope"]["constraint_preparation_repair_rejection_or_penalty_dynamics_constructed"],
+        "Cycle608_physical_promotion_boundary_all_null": len(c608_boundary) == 14 and all(value is None for value in c608_boundary.values()),
+        "Cycle608_compiler_rows_physical_boundaries_all_null": all(
+            all(row[key] is None for key in c608_compiler_null_keys)
+            and row["every_cell_incident_C_role_table_audit"]["covariance_credit"] is None
+            and row["inherited_transported_all24_all576"]["Cycle608_physical_covariance_credit"] is None
+            for row in r608["compiler_rows"]
+        ),
+        "Cycle608_composition_physical_boundaries_all_null": all(
+            r608["algebraic_composition_blueprint"][key] is None
+            for key in c608_composition_null_keys
+        ),
+        "Cycle608_detector_Event_Record_time_boundaries_all_null": all(
+            r608["route_B_candidate_role_blueprint"][key] is None
+            for key in ("physical_detector_output", "physical_candidate_association", "Event", "Record", "time")
+        ) and r608["route_C_inherited_prefix_controls"]["proper_time"] is None,
+        "Cycle608_cold_hash_self_consistent": r608["cold_transcript_sha256"] == PINS["outputs/physical_radius_one_dressed_detector_controlled_update_recurrence_tournament_cycle608_cold_2026_07_22.txt"],
         "Cycle612_receiver_words": sorted({row["probe_over_reference"] for row in r612["route_C_source_motion_ratio"]["rows"] if row["physical_source_reservoir_predicate"] and row["receiver_M2"]}),
+        "causal_time_PR_5557": {
+            "commit": CAUSAL_TIME_PR_5557["commit"],
+            "note_sha256": sha256(causal_note).hexdigest(),
+            "matches_pin": sha256(causal_note).hexdigest() == CAUSAL_TIME_PR_5557["note_sha256"],
+            "comparison_only": True,
+            "runner_imported_or_executed": False,
+            "backcredit": False,
+        },
     }
     check(
         "Cycle608/610/612/615 shore is byte-pinned and retains the exact live residuals",
         result["hashes_match"]
         and all(result[key] for key in ("Cycle615_pass", "Cycle610_pass", "Cycle608_pass", "Cycle612_pass"))
-        and result["Cycle615_pair_gate_open"]
+        and result["Cycle615_physical_pair_gate_open"]
         and result["Cycle615_receiver_selection_residual"] == 1
-        and result["Cycle610_support_two_compiler"]
-        and result["Cycle608_physical_detector"]
-        and result["Cycle612_receiver_words"] == ["3/4", "5/4"],
+        and result["Cycle610_conditional_support_two_descriptors"]
+        and not result["Cycle610_literal_physical_encoder"]
+        and result["Cycle610_physical_intertwiner_residual"] is None
+        and not result["Cycle610_physical_code_leakage_evaluated"]
+        and not result["Cycle610_one_fine_site_translation_covariant"]
+        and not result["Cycle610_local_constraints_enforced"]
+        and result["Cycle608_physical_promotion_boundary_all_null"]
+        and result["Cycle608_compiler_rows_physical_boundaries_all_null"]
+        and result["Cycle608_composition_physical_boundaries_all_null"]
+        and result["Cycle608_detector_Event_Record_time_boundaries_all_null"]
+        and result["Cycle608_cold_hash_self_consistent"]
+        and result["Cycle612_receiver_words"] == ["3/4", "5/4"]
+        and result["causal_time_PR_5557"]["matches_pin"]
+        ,
         result,
     )
-    return r615, r610, r612, result
+    return r615, r610, r608, r612, result
 
 
 def note_contract() -> None:
     body = " ".join(NOTE.read_text().lower().replace("`", "").replace("*", "").split())
     required = (
         "cycle 620", "authority: none", "audit: unset", "route a", "route b", "route c",
-        "common e", "clean-work", "support-two", "constant overhead", "all 24", "all 576",
+        "13-bit register", "conditional", "support-two descriptors", "all-24", "all 576",
         "l3", "l6", "l7", "coin -> stream -> contact", "not derived antimatter",
         "positive square", "negative square", "scale", "lambda", "improvement", "3/4", "5/4",
         "not selection", "gauss", "ward", "quasiphase", "wrapped phase is not energy",
-        "generator element is not a rate", "open-boundary", "periodic", "n1", "n8",
-        "no axiom pressure",
+        "generator element is not a rate or time", "open-boundary", "periodic", "n1", "n8",
+        "one-fine-site translation", "local constraints", "no axiom pressure",
     )
     missing = tuple(item for item in required if item not in body)
     check("Cycle620 note freezes routes, controls, caveats, and full N1-N8 scope", not missing, missing)
@@ -277,14 +353,15 @@ def apply_compiled_conditionals(state: np.ndarray, conditionals: list[dict], *, 
 
 def exact_conjunction_audit(conditionals: list[dict]) -> dict:
     failures = 0
+    malformed_failures = 0
     rows = 0
     negative_x = 0
     for operation in conditionals:
         condition = operation["condition"]
         negative_x += 2 * sum(value == 0 for value in condition)
         for raw in product((0, 1), repeat=12):
-            # The physical orientation predicate is the thirteenth, positive
-            # control and is one on this branch's declared code.
+            # The supplied conditional orientation predicate is the thirteenth,
+            # positive control and is one on this branch's declared code.
             normalized = (1,) + tuple(value if wanted else 1 - value for value, wanted in zip(raw, condition))
             work = [0] * 12
             work[0] ^= normalized[0] & normalized[1]
@@ -294,17 +371,22 @@ def exact_conjunction_audit(conditionals: list[dict]) -> dict:
             for index in reversed(range(2, 13)):
                 work[index - 1] ^= work[index - 2] & normalized[index]
             work[0] ^= normalized[0] & normalized[1]
-            failures += int(fired != int(raw == condition) or any(work))
+            row_failure = int(fired != int(raw == condition) or any(work))
+            failures += row_failure
+            malformed_failures += int(raw != condition) * row_failure
             rows += 1
     return {
         "conditional_operations": len(conditionals),
         "clean_control_rows_exhausted": rows,
         "clean_control_failures": failures,
+        "lawful_condition_match_rows": len(conditionals),
+        "malformed_nonmatching_rows_exhausted": rows - len(conditionals),
+        "malformed_nonmatching_failures": malformed_failures,
         "negative_control_X_gates": negative_x,
-        "clean_conjunction_work_M2": 12,
+        "clean_conjunction_work_roles": 12,
         "Toffoli_calls": 24 * len(conditionals),
-        "one_M2_gates_after_exact_Toffoli_lowering": 9 * 24 * len(conditionals) + negative_x,
-        "two_M2_gates_after_exact_Toffoli_lowering": (6 * 24 + 1) * len(conditionals),
+        "one_site_gate_descriptors_after_exact_Toffoli_lowering": 9 * 24 * len(conditionals) + negative_x,
+        "two_site_gate_descriptors_after_exact_Toffoli_lowering": (6 * 24 + 1) * len(conditionals),
     }
 
 
@@ -386,11 +468,11 @@ def pair_bus_audit(layout: dict, conditionals: list[dict]) -> dict:
                 primitive_pairs += 1
     return {
         "proper_cubic_orientation_branches": 24,
-        "support_two_endpoint_pairs_audited": primitive_pairs,
+        "conditional_support_two_endpoint_pairs_audited": primitive_pairs,
         "endpoint_or_bus_inverse_failures": endpoint_failures,
         "maximum_bus_distance": max_distance,
         "move_apply_restore_SWAPs_all24_per_coarse_cell": route_swaps,
-        "all_routed_primitive_support_at_most_two": endpoint_failures == 0,
+        "all_conditional_routed_descriptors_support_at_most_two": endpoint_failures == 0,
     }
 
 
@@ -480,35 +562,36 @@ def route_a(r610: dict) -> dict:
         first, second = words[operation["first"]], words[operation["second"]]
         conditionals.extend(gray_conditionals(first, second, operation["kind"], operation.get("angle", math.pi / 2)))
     conjunction = exact_conjunction_audit(conditionals)
-    inherited_predicate = r610["literal_orientation_controlled_compute_act_uncompute"]
+    inherited_predicate = r610["conditional_orientation_controlled_compute_act_uncompute"]
     conjunction.update({
-        "inherited_orientation_predicate_compute_support_two_gates_per_branch": inherited_predicate["predicate_compute_support_two_gates"],
-        "inherited_orientation_predicate_compute_uncompute_support_two_gates_per_branch": inherited_predicate["predicate_compute_and_uncompute_support_two_gates"],
+        "inherited_conditional_orientation_predicate_compute_support_two_descriptors_per_branch": inherited_predicate["predicate_compute_support_two_gates"],
+        "inherited_conditional_orientation_predicate_compute_uncompute_support_two_descriptors_per_branch": inherited_predicate["predicate_compute_and_uncompute_support_two_gates"],
         "inherited_orientation_predicate_clean_work_return": inherited_predicate["clean_predicate_work_return"],
-        "total_pair_macro_one_or_two_M2_gates_per_branch_before_bus":
-            conjunction["one_M2_gates_after_exact_Toffoli_lowering"]
-            + conjunction["two_M2_gates_after_exact_Toffoli_lowering"]
+        "total_pair_macro_one_or_two_site_descriptors_per_branch_before_bus":
+            conjunction["one_site_gate_descriptors_after_exact_Toffoli_lowering"]
+            + conjunction["two_site_gate_descriptors_after_exact_Toffoli_lowering"]
             + inherited_predicate["predicate_compute_and_uncompute_support_two_gates"],
     })
     layout = sector_layout()
     bus = pair_bus_audit(layout, conditionals)
     stream = stream_geometry_and_semantics(layout)
 
-    # Common E is the one embedding of all seven logical basis states into the
-    # same resource/+/- occupation block.  Apply the physical two-level word
-    # sparsely on the full 2^13 block; every other word is the identity.
+    # This is one algebraic embedding of all seven logical basis states into a
+    # 13-bit resource/+/- occupation register.  It is not a literal map into
+    # the physical M2 lattice.  Apply the two-level register word sparsely on
+    # the full 2^13 block; every other register word is the identity.
     rng = np.random.default_rng(620)
     logical = rng.normal(size=7) + 1j * rng.normal(size=7)
     logical /= np.linalg.norm(logical)
     encoded = np.zeros(1 << 13, dtype=complex)
     encoded[list(words)] = logical
-    physical = encoded.copy()
-    apply_compiled_conditionals(physical, conditionals)
+    register_updated = encoded.copy()
+    apply_compiled_conditionals(register_updated, conditionals)
     expected_encoded = np.zeros_like(encoded)
     expected_encoded[list(words)] = expected @ logical
-    eg_residual = float(np.linalg.norm(physical - expected_encoded))
-    leakage = float(np.linalg.norm(np.delete(physical, list(words))))
-    restored = physical.copy()
+    register_intertwiner_residual = float(np.linalg.norm(register_updated - expected_encoded))
+    register_array_escape = float(np.linalg.norm(np.delete(register_updated, list(words))))
+    restored = register_updated.copy()
     apply_compiled_conditionals(restored, conditionals, inverse=True)
     inverse_residual = float(np.linalg.norm(restored - encoded))
 
@@ -524,7 +607,7 @@ def route_a(r610: dict) -> dict:
                 cosine, sine = math.cos(operation["angle"]), math.sin(operation["angle"])
                 block = np.asarray(((cosine, -sine), (sine, cosine)))
             apply_two_level(trial, words[operation["first"]], words[operation["second"]], block)
-        deletion_signals[name] = float(np.linalg.norm(trial - physical))
+        deletion_signals[name] = float(np.linalg.norm(trial - register_updated))
 
     frames = c210.proper_cubic_frames()
     covariance = 0.0
@@ -560,22 +643,22 @@ def route_a(r610: dict) -> dict:
     inherited_order = r610["Cycle230_factor_order_deletion_noncommutation"]
     order_signal = inherited_order["Cycle230_reverse_schedule_difference"]
     update_inverse = max(float(np.linalg.norm(plus_update.conj().T @ plus_update - np.eye(64))), float(np.linalg.norm(minus_update.conj().T @ minus_update - np.eye(64))))
-    mass_rows = r610["onsite_mass_contact_seam_composition"]["fixture_residuals"]
+    mass_rows = r610["conditional_onsite_mass_contact_seam_composition"]["fixture_residuals"]
     conjugate_mass_spectrum = float(np.max(np.abs(np.sort(np.angle(np.linalg.eigvals(coin))) + np.sort(np.angle(np.linalg.eigvals(coin.conj())))[::-1])))
 
     output = {
-        "object": "one common resource/+/- occupation embedding with an exact Gray/conjunction support-two pair word and two charge-blind double-buffer streams",
-        "disposition": "CONSTRUCTIVE_PHYSICAL_SUPPORT_TWO_PAIR_AND_DISTINCT_CHARGE_SECTOR_COMPILER_ON_DECLARED_CLEAN_ORIENTATION_CODE",
-        "common_E": {
-            "physical_data_bits": 13,
+        "object": "one seven-word resource/+/- register embedding with an exact Gray/conjunction descriptor word and two conditional coarse-grid double-buffer streams",
+        "disposition": "CONSTRUCTIVE_SEVEN_LEVEL_GIVENS_AND_REGISTER_DESCRIPTOR_ALGEBRA; LITERAL_PHYSICAL_M2_COMPILER_UNEXECUTED",
+        "register_embedding": {
+            "register_bits": 13,
             "resource_bit": 0,
             "positive_occupation_bits": list(range(1, 7)),
             "negative_occupation_bits": list(range(7, 13)),
-            "active_physical_words": words,
+            "active_register_words": words,
             "active_logical_dimension": 7,
             "identity_extension_words": (1 << 13) - 7,
-            "EG_residual": eg_residual,
-            "code_leakage": leakage,
+            "register_intertwiner_residual": register_intertwiner_residual,
+            "register_array_escape_residual": register_array_escape,
         },
         "Givens_angle_inventory": angle_rows,
         "high_level_pair_factors": high_level,
@@ -583,26 +666,26 @@ def route_a(r610: dict) -> dict:
         "clean_lowering": conjunction,
         "layout": {
             "K": c610.K,
-            "physical_M2_per_supercell": c610.K ** 3,
-            "new_A_B_resource_data_M2": 25,
-            "new_pair_conjunction_work_role_orbit_M2": 12 * 24,
-            "reused_Cycle610_orientation_and_predicate_roles": True,
-            "constant_added_role_upper_bound_M2": 25 + 12 * 24,
+            "fine_coordinate_sites_in_supplied_K_cell": c610.K ** 3,
+            "declared_A_B_resource_data_roles": 25,
+            "declared_pair_conjunction_work_role_orbit": 12 * 24,
+            "reused_Cycle610_conditional_orientation_and_predicate_roles": True,
+            "constant_added_declared_role_upper_bound": 25 + 12 * 24,
             "data_role_collisions": layout["data_role_collisions"],
             "work_role_collisions": layout["work_role_collisions"],
             "path_failures": layout["path_or_source_target_disjointness_failures"],
         },
         "stream_constant_gate_upper_bound": {
-            "positive_remote_CNOT_move_apply_restore_two_M2_gates": 217,
-            "negative_remote_CNOT_move_apply_restore_two_M2_gates": 197,
-            "scatter_clear_and_local_swap_two_M2_gates_per_cell_before_orientation_control": 4980,
-            "orientation_control_gadget": "the exact pinned Cycle610 dual-predicate support-two wrapper is reused",
+            "positive_remote_CNOT_move_apply_restore_two_site_descriptors": 217,
+            "negative_remote_CNOT_move_apply_restore_two_site_descriptors": 197,
+            "scatter_clear_and_local_swap_two_site_descriptors_per_cell_before_orientation_control": 4980,
+            "orientation_control_gadget": "the pinned Cycle610 conditional dual-predicate descriptor wrapper is reused",
         },
         "pair_bus": bus,
         "stream": stream,
         "pair_operator_residual": float(np.linalg.norm(target - expected)),
         "pair_unitarity_residual": float(np.linalg.norm(target.conj().T @ target - np.eye(7))),
-        "physical_inverse_residual": inverse_residual,
+        "register_inverse_residual": inverse_residual,
         "pair_deletion_signals": deletion_signals,
         "maximum_all24_pair_covariance_residual": covariance,
         "all576_pair_representation_failures": group_failures,
@@ -613,7 +696,7 @@ def route_a(r610: dict) -> dict:
             "maximum_joint_unitarity_residual": update_inverse,
             "order_reversal_signal": order_signal,
             "same_cell_momentum_block_contact_stream_commutator_diagnostic": same_cell_contact_stream_commutator_diagnostic,
-            "inherited_physical_factor_deletion_signals": inherited_order["delete_each_factor_difference"],
+            "inherited_conditional_factor_deletion_signals": inherited_order["delete_each_factor_difference"],
             "separate_same_g_contact": True,
             "cross_contact_present": False,
             "negative_coin_is_supplied_conjugate": True,
@@ -624,28 +707,63 @@ def route_a(r610: dict) -> dict:
             "charge_conjugate_spectrum_pairing_residual": conjugate_mass_spectrum,
             "preserved": max(mass_rows["one_particle_mass_coin_compiled_full16_residual"], conjugate_mass_spectrum) < 1e-10,
         },
+        "literal_physical_M2_encoder_composed": False,
+        "literal_physical_update_composed": False,
+        "physical_M2_cost_per_coarse_cell": None,
+        "physical_intertwiner_residual": None,
+        "physical_code_leakage_evaluated": False,
+        "physical_code_leakage_residual": None,
+        "fine_NN_placement_product_executed": False,
+        "physical_support_two_gate_product_executed": False,
+        "physical_all24_update_covariance_executed": False,
+        "physical_all576_update_composition_executed": False,
+        "physical_held_size_update_executed": False,
+        "physical_deletion_or_malformed_code_control_executed": False,
+        "one_fine_site_translation_covariant_code_space": False,
+        "one_fine_site_translation_covariant_update": False,
+        "proper_rotations_about_every_fine_site_executed": False,
+        "local_constraint_enforcement_constructed": False,
+        "autonomous_no_host_schedule_executed": False,
+        "conditional_support_two_coordinate_descriptors_executed": True,
+        "conditional_coarse_grid_translation_only": True,
+        "one_fine_site_translation_symmetric_difference": {
+            row["length"]: row["one_fine_site_x_translation_symmetric_difference"]
+            for row in r610["fine_site_translation_falsifier"]["rows"]
+        },
         "candidate_negative_sector_called_derived_antimatter": False,
         "global_Jordan_Wigner_or_parity_service": False,
-        "host_frame_or_size_control": False,
+        "runtime_host_frame_or_size_query": False,
+        "supplied_K_partition_origin_role_coloring": True,
         "uniform_one_hot_orientation_genesis_supplied": True,
         "blank_B_conjunction_predicate_work_supplied": True,
     }
     check(
-        "Route A gives one common E and an exact clean support-two resource/cubic-pair compiler",
-        max(output["pair_operator_residual"], output["pair_unitarity_residual"], eg_residual, leakage, inverse_residual, covariance) < TOL
+        "Route A gives an exact seven-level/Givens register word and conditional support-two descriptors",
+        max(output["pair_operator_residual"], output["pair_unitarity_residual"], register_intertwiner_residual, register_array_escape, inverse_residual, covariance) < TOL
         and group_failures == 0
         and conjunction["clean_control_failures"] == 0
+        and conjunction["malformed_nonmatching_failures"] == 0
         and layout["data_role_collisions"] == layout["work_role_collisions"] == layout["path_or_source_target_disjointness_failures"] == 0
-        and bus["all_routed_primitive_support_at_most_two"]
+        and bus["all_conditional_routed_descriptors_support_at_most_two"]
         and all(signal > 1e-4 for signal in deletion_signals.values()),
         output,
     )
     check(
-        "Route A composes distinct +/- streams on L3/L6/L7 while preserving coin -> stream -> contact and the mass fixture",
+        "Route A preserves the conditional +/- register streams and mass fixture without physical-M2 promotion",
         stream["maximum_failure_count"] == 0
         and all(all(value > 0 for value in row["deletion_signals"].values()) for row in stream["rows"])
         and update_inverse < TOL and order_signal > 1e-3 and output["one_particle_mass"]["preserved"]
-        and not output["candidate_negative_sector_called_derived_antimatter"],
+        and not output["candidate_negative_sector_called_derived_antimatter"]
+        and not output["literal_physical_M2_encoder_composed"]
+        and output["physical_M2_cost_per_coarse_cell"] is None
+        and output["physical_intertwiner_residual"] is None
+        and not output["physical_code_leakage_evaluated"]
+        and not output["physical_support_two_gate_product_executed"]
+        and not output["physical_all24_update_covariance_executed"]
+        and not output["physical_all576_update_composition_executed"]
+        and not output["one_fine_site_translation_covariant_code_space"]
+        and not output["local_constraint_enforcement_constructed"]
+        and not output["autonomous_no_host_schedule_executed"],
         output,
     )
     return output
@@ -829,10 +947,11 @@ def route_b(r612: dict) -> dict:
     positive_continuous_signs = sorted(positive_analytic_signs)
     diagnostic_words = sorted({"3/4" if sign < 0 else "5/4" for sign in continuous_signs})
     output = {
-        "object": "candidate local endpoint-controlled Regge-deficit/gauge-density feedback square plus every audited sign/scale/lambda/improvement alternative",
-        "disposition": "CONSTRUCTIVE_LOCAL_MATTER_CAUSED_FEEDBACK_TERM; DOES_NOT_SELECT_THE_JOINED_RESPONSE_OR_RECEIVER_CLASS",
+        "object": "conditional local endpoint-controlled Regge-deficit/gauge-density feedback-square family plus every audited sign/scale/lambda/improvement alternative",
+        "disposition": "CONSTRUCTIVE_CONDITIONAL_FEEDBACK_SQUARE_FAMILY; UNIQUE_SOURCE_GRAVITY_AND_RECEIVER_SELECTION_UNEARNED",
         "feedback_action": "A_fb=(sigma*kappa/2) sum_x b_x |D_x[e]-rho_x|^2",
-        "physical_endpoint_word": "P_d(pointer); Toffoli(pointer,binder,opportunity); P_d(pointer), then use/uncompute opportunity",
+        "declared_local_Cycle612_endpoint_word": "P_d(pointer); Toffoli(pointer,binder,opportunity); P_d(pointer), then use/uncompute opportunity",
+        "literal_physical_endpoint_compiler_revalidated_in_Cycle620": False,
         "endpoint_rows": endpoint_rows,
         "endpoint_and_detector_work_return_blank": all(row["pointer_after"] == 0 for row in endpoint_rows),
         "criterion_frozen_before_evaluation": {
@@ -871,10 +990,12 @@ def route_b(r612: dict) -> dict:
         "merely_routing_a_supplied_sign_bit": False,
         "Gauss_unchanged_because_endpoint_density_and_deficit_are_U1_scalars": True,
         "open_boundary_and_periodic_Regge_joint_real_space_compiler_executed": False,
+        "unique_source_law_selected": False,
+        "physical_gravity_law_selected": False,
         "gravity_or_physical_stress_claimed": False,
     }
     check(
-        "Route B constructs genuine matter-caused local feedback and preserves Gauss/Ward/inverse/covariance",
+        "Route B constructs a conditional local feedback-square family and preserves Gauss/Ward/inverse/covariance",
         output["endpoint_and_detector_work_return_blank"]
         and max(max_stationary, max_ward, max_covariance, max_inverse) < TOL
         and group_failures == 0 and min_deletion > 1e-8
@@ -883,12 +1004,14 @@ def route_b(r612: dict) -> dict:
         output,
     )
     check(
-        "Route B does not mis-credit the positive square as sign/scale/lambda/improvement or receiver selection",
+        "Route B does not mis-credit the square as a unique source, gravity, or receiver selection",
         continuous_signs == [-1, 1] and positive_continuous_signs == [-1, 1]
         and diagnostic_words == ["3/4", "5/4"]
         and not output["continuous_family_collapsed"] and not output["receiver_class_collapsed"]
         and not output["feedback_sign_or_scale_derived"]
         and not output["Cycle612_numeric_response_sign_to_word_map_derived"]
+        and not output["unique_source_law_selected"]
+        and not output["physical_gravity_law_selected"]
         and output["unique_receiver_selection_residual"] == 1,
         output,
     )
@@ -1135,7 +1258,7 @@ def route_c() -> dict:
     real_space_order = two_cell_contact_order_witness()
     output = {
         "object": "right Maurer-Cartan spatial-coframe generator tensor of the actual full 64-dimensional coin-stream-contact Fock unitary",
-        "disposition": "CONSTRUCTIVE_FULL_UNITARY_COFRAME_GENERATOR_AND_TRACKED_QUASIPHASE_REPRESENTATIVE; NO ENERGY_RATE_OR_UNIQUE_STRESS_IDENTIFICATION",
+        "disposition": "CONSTRUCTIVE_FULL_UNITARY_COFRAME_GENERATOR_AND_TRACKED_QUASIPHASE_REPRESENTATIVE; ENERGY_STRESS_RATE_AND_TIME_IDENTIFICATIONS_UNEARNED",
         "full_update": "U(e,k)=Contact * Gamma(Stream(e,k) Coin)",
         "generator": "K_ab=i U^dag dU/de_ab",
         "spatial_components": SPATIAL_COMPONENTS,
@@ -1153,7 +1276,9 @@ def route_c() -> dict:
         "single_Bloch_contact_stream_commutator_diagnostic": min_order,
         "real_space_two_cell_order_witness": real_space_order,
         "wrapped_quasiphase_called_energy": False,
+        "quasiphase_or_generator_called_physical_stress": False,
         "generator_element_called_rate": False,
+        "generator_or_schedule_called_time": False,
         "candidate_called_unique_physical_stress": False,
         "principal_branch_seam_is_convention_sensitive": True,
         "degenerate_branch_extension_claimed": False,
@@ -1171,10 +1296,12 @@ def route_c() -> dict:
         output,
     )
     check(
-        "Route C exposes the principal quasiphase seam without calling phase energy or the generator a rate",
+        "Route C exposes the principal quasiphase seam without calling it energy, stress, rate, or time",
         all(row["quasiphase"]["principal_wrapped_phase_jump"] > 6.0 and row["quasiphase"]["locally_unwrapped_phase_step"] < 1e-2 for row in rows)
         and not output["wrapped_quasiphase_called_energy"]
+        and not output["quasiphase_or_generator_called_physical_stress"]
         and not output["generator_element_called_rate"]
+        and not output["generator_or_schedule_called_time"]
         and not output["candidate_called_unique_physical_stress"],
         output,
     )
@@ -1183,27 +1310,116 @@ def route_c() -> dict:
 
 def no_go_discipline() -> dict:
     families = [
-        {"family": "positive endpoint feedback square", "object": "b|D-rho|^2", "mechanism": "positive semidefinite local coframe feedback Hessian", "terminal": "unique joined response/receiver", "marker": "ATTEMPTED", "result": "constructive term; positive sign is candidate input and lambda/c/scale class remains"},
-        {"family": "negative endpoint feedback square", "object": "-b|D-rho|^2", "mechanism": "equally local/covariant opposite feedback", "terminal": "sign discriminator", "marker": "ATTEMPTED", "result": "lawful algebraically; excluding it requires the unapproved stability criterion"},
-        {"family": "feedback scale orbit", "object": "kappa b|D-rho|^2", "mechanism": "positive and negative nonzero scale multiples", "terminal": "normalization selection", "marker": "ATTEMPTED", "result": "kappa=1/2,1,2 all preserve covariance/Ward/inverse"},
-        {"family": "normalized deficit feedback", "object": "b|D/||D||-rho|^2", "mechanism": "local-orbit normalization before feedback", "terminal": "remove raw-deficit scale", "marker": "LIVE_UNTESTED", "result": "normalization can be momentum/nonlocal and requires a fresh locality proof"},
-        {"family": "nonlinear bounded feedback", "object": "local polynomial or saturating function of D-rho", "mechanism": "state-dependent nonlinear fixed points", "terminal": "unique stable receiver branch", "marker": "LIVE_UNTESTED", "result": "concrete alternative; blocks broad feedback no-go"},
-        {"family": "full-unitary coframe generator", "object": "K_ab=iU^dag dU/de_ab", "mechanism": "tracked quasiphase derivative away from degeneracy", "terminal": "unitary-derived stress/receiver law", "marker": "ATTEMPTED", "result": "covariant representative constructed; physical stress and receiver coupling not selected"},
-        {"family": "open real-space feedback apparatus", "object": "Cycle615 open flux plus Regge edge variables", "mechanism": "joint boundary dynamics and local receiver", "terminal": "one executed open-domain response law", "marker": "LIVE_UNTESTED", "result": "periodic/open seam remains explicit"},
+        {"family": "seven-level Givens pair algebra", "object": "resource plus six opposite-direction pair branches", "mechanism": "five exact Givens rotations around one resource/pair swap", "terminal": "register intertwiner, inverse, deletion, all24 and all576", "marker": "ATTEMPTED", "result": "passes as seven-level/13-bit register algebra; no physical M2 encoder is composed"},
+        {"family": "conditional K129 coordinate descriptors", "object": "partition-relative roles and returned-bus gate descriptors", "mechanism": "supplied one-hot orientation and move/apply/restore paths", "terminal": "conditional support-two/NN audit and one-fine-site promotion test", "marker": "ATTEMPTED", "result": "descriptor audit passes while inherited tagged support has nonzero one-site difference"},
+        {"family": "positive endpoint feedback square", "object": "+kappa b|D-rho|^2", "mechanism": "positive local coframe-feedback Hessian", "terminal": "one response and receiver label", "marker": "ATTEMPTED", "result": "constructive candidate family; lambda, improvement and receiver alternatives remain"},
+        {"family": "opposite-sign and scale feedback orbit", "object": "sigma kappa b|D-rho|^2", "mechanism": "local sign and nonzero-scale alternatives", "terminal": "sign and normalization discriminator", "marker": "ATTEMPTED", "result": "both signs and all tested scales preserve the algebraic controls"},
+        {"family": "full-unitary coframe generator", "object": "K_ab=iU^dag dU/de_ab", "mechanism": "tracked nondegenerate quasiphase derivative", "terminal": "covariant generator representative", "marker": "ATTEMPTED", "result": "constructed without energy, stress, rate, time, or receiver identification"},
+        {"family": "two-cell factor-order witness", "object": "4096-dimensional two-cell full-Fock word", "mechanism": "stream permutation and contact deletion", "terminal": "coin-stream-contact order sensitivity", "marker": "ATTEMPTED", "result": "order and contact signals are nonzero; this is not a physical-time law"},
+    ]
+    live_routes = [
+        "construct a state-carried Z129^3 phase and literal fine-NN physical encoder/update",
+        "construct fine-NN admissibility preparation or enforcement for orientation and work constraints",
+        "test normalized or bounded nonlinear feedback with a complete fixed-point audit",
+        "couple the coframe generator directly to one locally compiled endpoint",
+        "join the open flux boundary and Regge variables in one real-space apparatus",
     ]
     walls = {
+        "W_physical_lowering": "literal physical M2 encoder, update, fine-NN product and full-code leakage",
+        "W_translation_constraints": "one-fine-site covariance and locally enforced admissibility",
         "W_feedback_law": "choice of square form, sign, and coefficient",
         "W_response_family": "continuous lambda and conserved-improvement coefficient",
         "W_receiver_map": "Regge response sign/value to Cycle612 3/4 or 5/4 word",
         "W_domain_join": "open charge boundary versus periodic Bloch/Regge real-space apparatus",
-        "W_stress_identity": "full-unitary coframe generator to physical stress observable",
-        "W_genesis": "one-hot orientation, blank work, binder/path/chart, and endpoint-law genesis",
+        "W_observable_identity": "coframe generator to energy, stress, rate or time observable",
     }
     names = tuple(walls)
     pairs = [{
         "left": names[first], "right": names[second],
-        "left_closes_right": False, "right_closes_left": False, "independent": True,
+        "left_to_right": {"status": "NOT_ESTABLISHED", "reason": "not jointly executed"},
+        "right_to_left": {"status": "NOT_ESTABLISHED", "reason": "not jointly executed"},
+        "independence": {"status": "NOT_ESTABLISHED", "reason": "directional non-implication was not proved"},
     } for first in range(len(names)) for second in range(first + 1, len(names))]
+    phrases = ("we assume", "by construction", "as is standard", "the framework provides",
+               "bridge context", "background", "naturally", "obviously", "standard qft",
+               "registered", "canonical")
+    phrase_hits = [phrase for phrase in phrases if phrase in NOTE.read_text().lower()]
+    markers = all(row["marker"] in {"ATTEMPTED", "RULED OUT BY PRIOR"} for row in families)
+    independence_complete = all(row["independence"]["status"] == "ESTABLISHED" for row in pairs)
+    current_cycle_path = "scripts/physical_pair_supercell_receiver_feedback_quasienergy_tournament_cycle620_2026_07_22.py"
+
+    def cited_line_exists(reference: str, line: int) -> bool:
+        if reference.startswith(f'{CAUSAL_TIME_PR_5557["commit"]}:'):
+            lines = subprocess.check_output(("git", "show", reference), cwd=ROOT, text=True).splitlines()
+        else:
+            path = ROOT / reference
+            if not path.is_file():
+                return False
+            lines = path.read_text().splitlines()
+        return 1 <= line <= len(lines) and bool(lines[line - 1].strip())
+
+    n4 = [
+        {"prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_PROPER_CUBIC_SUPERCELL_STREAM_COMPOSITION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md", "prior_line": 96, "prior_residual": "literal physical encoder/intertwiner/full-code leakage unevaluated", "current_path": current_cycle_path, "current_line": 727, "current_residual": "Cycle620 reuses only the conditional K129 descriptor scope", "exact_match": True, "same_scope": True, "use_as_closure": True},
+        {"prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_PROPER_CUBIC_SUPERCELL_STREAM_COMPOSITION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md", "prior_line": 25, "prior_residual": "one-fine-site translation-covariant physical promotion is false", "current_path": current_cycle_path, "current_line": 722, "current_residual": "same inherited tagged-support promotion test", "exact_match": True, "same_scope": True, "use_as_closure": True},
+        {"prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_LAWFUL_CHARGE_JOINED_METRIC_RESPONSE_TOURNAMENT_CYCLE615_NOTE_2026-07-22.md", "prior_line": 34, "prior_residual": "seven coarse roles are not seven physical M2s", "current_path": current_cycle_path, "current_line": 710, "current_residual": "seven-level/register algebra still lacks a physical encoder/update", "exact_match": True, "same_scope": True, "use_as_closure": False},
+        {"prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_LAWFUL_CHARGE_JOINED_METRIC_RESPONSE_TOURNAMENT_CYCLE615_NOTE_2026-07-22.md", "prior_line": 60, "prior_residual": "lambda/improvement and two receiver labels survive", "current_path": current_cycle_path, "current_line": 985, "current_residual": "same family survives feedback-square candidates", "exact_match": True, "same_scope": True, "use_as_closure": True},
+        {"prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_RADIUS_ONE_DRESSED_DETECTOR_CONTROLLED_UPDATE_RECURRENCE_TOURNAMENT_CYCLE608_NOTE_2026-07-22.md", "prior_line": 23, "prior_residual": "physical encoder/update/intertwiner/placement/product/leakage/detector/time boundary is null", "current_path": current_cycle_path, "current_line": 187, "current_residual": "Cycle620 grants no physical endpoint or compiler backcredit", "exact_match": True, "same_scope": True, "use_as_closure": True},
+        {"prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_MATTER_CAUSED_CAUSAL_INTERVAL_PROPER_TIME_BRIDGE_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md", "prior_line": 70, "prior_residual": "local source-on receiver words are 3:4 and 5:4", "current_path": current_cycle_path, "current_line": 983, "current_residual": "Cycle620 compares only to those declared labels", "exact_match": True, "same_scope": True, "use_as_closure": False},
+        {"prior_path": f'{CAUSAL_TIME_PR_5557["commit"]}:{CAUSAL_TIME_PR_5557["note"]}', "prior_line": 42, "prior_residual": "delay is rate-reachable while advance is edit-reachable", "current_path": current_cycle_path, "current_line": 209, "current_residual": "Cycle620 imports neither causal mechanism", "exact_match": True, "same_scope": False, "use_as_closure": False},
+    ]
+    n5 = [
+        {"claim": "Route A is register algebra rather than a literal physical M2 compiler", "per_element": "13 register bits and seven active words are enumerated", "per_site": "declared roles receive conditional K-cell coordinates", "per_mode": "six pair branches and two charge-sector copies are audited", "per_block": "no physical encoder/update or full physical-code leakage is composed", "lattice_wide": "one-fine-site support is noncovariant and local constraints are not enforced"},
+        {"claim": "the feedback square is a candidate family rather than a unique source or gravity law", "per_element": "D, rho, sign and scale are supplied", "per_site": "the endpoint bit multiplies a local square", "per_mode": "lambda and improvement alternatives are enumerated", "per_block": "both receiver labels survive", "lattice_wide": "open-boundary and periodic Regge apparatuses are not joined"},
+        {"claim": "the coframe generator is not identified as energy, stress, rate, or time", "per_element": "K_ab is computed from a relative unitary derivative", "per_site": "no local physical stress operator is selected", "per_mode": "nondegenerate Bloch branches are tracked", "per_block": "the 64-dimensional unitary and two-cell witness are separate", "lattice_wide": "no operational clock, rate accumulation, or gravity dynamics is executed"},
+        {"claim": "the opposite-charge copy is not a derived particle identity", "per_element": "charge sign and conjugated coin are supplied", "per_site": "separate same-g contact and no cross contact are supplied", "per_mode": "six conjugate directions are tested", "per_block": "the 64-word sectors are algebraic copies", "lattice_wide": "no empirical calibration or autonomous genesis is derived"},
+        {"claim": "local Cycle612 labels are not external causal-time PR evidence", "per_element": "3/4 and 5/4 are inherited labels", "per_site": "Cycle620 revalidates no physical endpoint compiler", "per_mode": "no delay/rate or advance/count edit is imported", "per_block": "the PR runner is not imported or executed", "lattice_wide": "no Event, Record, or time backcredit is granted"},
+    ]
+    n6 = [
+        {"file": "outputs/physical_proper_cubic_supercell_stream_composition_tournament_cycle610_receipt_2026_07_22.json", "status": "PINNED_CORRECTED_CONDITIONAL_PARENT", "what_closes": "conditional K129 register/coordinate/gate descriptor shore and exact one-site translation falsifier; no physical promotion"},
+        {"file": "outputs/physical_lawful_charge_joined_metric_response_tournament_cycle615_receipt_2026_07_22.json", "status": "PINNED_EXECUTED_PARENT", "what_closes": "seven-level pair and response-family algebra shore while physical lowering remains open"},
+        {"file": "outputs/physical_radius_one_dressed_detector_controlled_update_recurrence_tournament_cycle608_receipt_2026_07_22.json", "status": "PINNED_CORRECTED_COMPARATOR", "what_closes": "factor/count and small-matrix comparator scope plus the null physical-promotion boundary"},
+        {"file": "outputs/physical_matter_caused_causal_interval_proper_time_bridge_tournament_cycle612_receipt_2026_07_22.json", "status": "PINNED_LOCAL_LABEL_COMPARATOR", "what_closes": "declared local 3/4 and 5/4 label comparison without a Cycle620 selector"},
+        {"file": f'{CAUSAL_TIME_PR_5557["commit"]}:{CAUSAL_TIME_PR_5557["note"]}', "status": "PINNED_EXTERNAL_COMPARISON_NOT_EXECUTED", "what_closes": "identity separation from the causal-time lane only; no Event, Record, rate, edit, or time backcredit"},
+    ]
+    n8 = [
+        {"cycle": "Cycle610", "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_PROPER_CUBIC_SUPERCELL_STREAM_COMPOSITION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md", "prior_line": 208, "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_PROPER_CUBIC_SUPERCELL_STREAM_COMPOSITION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md", "citation_line": 208, "echo": "state-carried translation phase remains the strongest repair", "retired": False, "retirement_mechanism": None, "could_apply_here": True, "mechanism": "state-carried translation phase plus locally enforced admissibility", "applicability": "ACTIONABLE_PHYSICAL_LOWERING_ROUTE", "effect": "keeps literal physical lowering live and blocks foreclosure"},
+        {"cycle": "Cycle615", "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_LAWFUL_CHARGE_JOINED_METRIC_RESPONSE_TOURNAMENT_CYCLE615_NOTE_2026-07-22.md", "prior_line": 72, "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_LAWFUL_CHARGE_JOINED_METRIC_RESPONSE_TOURNAMENT_CYCLE615_NOTE_2026-07-22.md", "citation_line": 72, "echo": "physical lowering, open-domain join, feedback and receiver selection remain open", "retired": False, "retirement_mechanism": None, "could_apply_here": True, "mechanism": "literal lowering, open-domain joining, and bounded local receiver feedback", "applicability": "ACTIONABLE_JOIN_AND_SELECTOR_ROUTE", "effect": "supports algebraic calculations but not physical promotion"},
+        {"cycle": "Cycle608", "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_RADIUS_ONE_DRESSED_DETECTOR_CONTROLLED_UPDATE_RECURRENCE_TOURNAMENT_CYCLE608_NOTE_2026-07-22.md", "prior_line": 150, "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_RADIUS_ONE_DRESSED_DETECTOR_CONTROLLED_UPDATE_RECURRENCE_TOURNAMENT_CYCLE608_NOTE_2026-07-22.md", "citation_line": 150, "echo": "literal held-L6 E/G/placement/product/leakage remains the optimal campaign", "retired": False, "retirement_mechanism": None, "could_apply_here": True, "mechanism": "instantiate the literal held-L6 encoder, update, placement, product, and leakage audit", "applicability": "ACTIONABLE_TARGET_EQUIVALENT_COMPILER_ROUTE", "effect": "prevents endpoint/compiler backcredit"},
+        {"cycle": "local Cycle612", "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_MATTER_CAUSED_CAUSAL_INTERVAL_PROPER_TIME_BRIDGE_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md", "prior_line": 70, "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_MATTER_CAUSED_CAUSAL_INTERVAL_PROPER_TIME_BRIDGE_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md", "citation_line": 70, "echo": "two local labels survive without a selected response sign", "retired": False, "retirement_mechanism": None, "could_apply_here": True, "mechanism": "derive one receiver selector rather than route a supplied response sign", "applicability": "ACTIONABLE_RECEIVER_SELECTION_ROUTE", "effect": "prevents receiver-selection credit"},
+        {"cycle": "causal-time PR #5557", "prior_path": f'{CAUSAL_TIME_PR_5557["commit"]}:{CAUSAL_TIME_PR_5557["note"]}', "prior_line": 42, "citation_path": f'{CAUSAL_TIME_PR_5557["commit"]}:{CAUSAL_TIME_PR_5557["note"]}', "citation_line": 42, "echo": "delay and advance are separated by rate/edit reachability", "retired": False, "retirement_mechanism": None, "could_apply_here": False, "mechanism": "comparison-only rate/edit reachability split with no imported runner", "applicability": "NOT_APPLICABLE_WITHOUT_CAUSAL_MECHANISM_IMPORT", "effect": "comparison only; no time or Record import"},
+        {"cycle": "Cycle576", "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_DYNAMICAL_METRIC_SOURCE_LAW_BRIDGE_TOURNAMENT_CYCLE576_NOTE_2026-07-22.md", "prior_line": 36, "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_DYNAMICAL_METRIC_SOURCE_LAW_BRIDGE_TOURNAMENT_CYCLE576_NOTE_2026-07-22.md", "citation_line": 36, "echo": "source sign, normalization, frame preparation and update scale are supplied", "retired": False, "retirement_mechanism": None, "could_apply_here": True, "mechanism": "derive rather than supply feedback sign, normalization, frame preparation, and update scale", "applicability": "ACTIONABLE_SOURCE_NORMALIZATION_ROUTE", "effect": "keeps the feedback and coframe terms conditional"},
+    ]
+    n7 = {
+        "steelman": "A state-carried translation phase with locally enforced admissibility could repair the supplied-origin translation defect, and a normalized nonlinear feedback or direct generator-to-endpoint coupling could select one receiver response without changing the retained algebraic shores.",
+        "mechanism": "carry phi in Z_129^3 as local code data, update phi covariantly, enforce translated-role admissibility locally, and compose the resulting literal physical encoder/update with a bounded feedback selector",
+        "terminal_obligation": "execute one-fine-site code/update covariance, a fine-nearest-neighbor primitive product, full-code leakage and local-constraint controls, then preserve Gauss, Ward, inverse, and one held-out receiver without refit",
+        "citations": [
+            {
+                "path": "docs/work_history/repo/review_feedback/PHYSICAL_PROPER_CUBIC_SUPERCELL_STREAM_COMPOSITION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md",
+                "line": 208,
+                "supports": "state-carried translation phase is the strongest live repair",
+            },
+            {
+                "path": "docs/work_history/repo/review_feedback/PHYSICAL_LAWFUL_CHARGE_JOINED_METRIC_RESPONSE_TOURNAMENT_CYCLE615_NOTE_2026-07-22.md",
+                "line": 97,
+                "supports": "literal physical lowering, open-domain dynamics, and local receiver feedback are actionable live work",
+            },
+        ],
+        "action": "implement the local phase/admissibility compiler first, then test normalized nonlinear feedback and direct generator-to-endpoint coupling on one open real-space apparatus",
+    }
+    n4_cited_lines_exist = all(
+        cited_line_exists(row["prior_path"], row["prior_line"])
+        and cited_line_exists(row["current_path"], row["current_line"])
+        for row in n4
+    )
+    n7_cited_lines_exist = all(
+        cited_line_exists(citation["path"], citation["line"])
+        for citation in n7["citations"]
+    )
+    n8_cited_lines_exist = all(
+        cited_line_exists(row["citation_path"], row["citation_line"])
+        for row in n8
+    )
     output = {
         "skill_freshness": {
             "origin_main_checked": True,
@@ -1215,63 +1431,48 @@ def no_go_discipline() -> dict:
             "primitive_registry_and_current_source_notes_read": True,
         },
         "N1_normalized_families": families,
-        "N1_broad_negative_failure": "three actionable families remain LIVE_UNTESTED",
+        "N1_allowed_markers": ["ATTEMPTED", "RULED OUT BY PRIOR"],
+        "N1_marker_schema_pass": markers,
+        "N1_live_routes": live_routes,
         "N2_collapsed_wall_pair_audit": pairs,
-        "N3_hidden_wall_scan": [
-            "Cycle610 uniform one-hot role orientation and blank predicate/conjunction/B work",
-            "fixed five Givens angles and Gray-path pivot order",
-            "candidate negative-charge copy, conjugate coin, same-g separate contact, and no cross contact",
-            "Cycle608 binder/path/chart and Cycle612 endpoint-use program",
-            "feedback square form, 1/2 convention, relative D/rho scale, sign, and kappa",
-            "Cycle576 raw deficit, Regge complex, pseudoinverse representative, lambda, and periodic momentum",
-            "supplied diagnostic mapping between a numerical response sign and the Cycle612 words",
-            "finite-difference epsilon and nondegenerate eigenbranch fixtures",
-        ],
-        "N3_phrase_scan": {
-            "hits": ["registered primitives"],
-            "classification": "cited retained authority: docs/audit/data/axiom_premise_nodes.json and all three current primitive source notes were read; the phrase grants only their declared roles and is non-hidden",
-            "hidden_conditions_promoted": 0,
-        },
-        "N4_residual_matching": [
-            {"witness": "docs/work_history/repo/review_feedback/PHYSICAL_LAWFUL_CHARGE_JOINED_METRIC_RESPONSE_TOURNAMENT_CYCLE615_NOTE_2026-07-22.md:20", "witness_residual": "support-two pair gate and full-sector compiler open", "current_residual": "same pair gate lowered; candidate sector identity remains", "match": "yes for physical lowering only"},
-            {"witness": "docs/work_history/repo/review_feedback/PHYSICAL_PROPER_CUBIC_SUPERCELL_STREAM_COMPOSITION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md:8", "witness_residual": "support-two K=129 one-hot compiler", "current_residual": "same bus/predicate fabric reused for pair and bit-stream words", "match": "yes"},
-            {"witness": "docs/work_history/repo/review_feedback/PHYSICAL_LAWFUL_CHARGE_JOINED_METRIC_RESPONSE_TOURNAMENT_CYCLE615_NOTE_2026-07-22.md:44", "witness_residual": "R(lambda,c) and {3/4,5/4} not selected", "current_residual": "same family re-enumerated after endpoint feedback", "match": "yes"},
-            {"witness": "docs/work_history/repo/review_feedback/PHYSICAL_MATTER_CAUSED_CAUSAL_INTERVAL_PROPER_TIME_BRIDGE_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md:65", "witness_residual": "delay/advance map supplied", "current_residual": "numeric Regge response to receiver word remains unproved", "match": "yes"},
-            {"witness": "docs/work_history/repo/review_feedback/PHYSICAL_DYNAMICAL_METRIC_SOURCE_LAW_BRIDGE_TOURNAMENT_CYCLE576_NOTE_2026-07-22.md:102", "witness_residual": "sign/normalization/metric identity and open real-space compiler", "current_residual": "feedback and full-unitary representatives retain those exact terminals", "match": "yes"},
-        ],
-        "N5_rhetoric_audit": {
-            "physical_pair_compiler": "tested common seven-word code plus identity extension, clean work, and supplied one-hot orientation; not arbitrary dirty work",
-            "not_derived_antimatter": "candidate local negative-charge sector only; no interacting particle identity theorem",
-            "feedback_not_selection": "all audited local sign/scale and continuous lambda/c alternatives survive; no universal feedback theorem",
-            "full_unitary_stress": "a six-component generator representative on nondegenerate periodic Bloch fixtures, not physical stress/energy/rate",
-            "domain": "L3/L6/L7 periodic compiler and Bloch tests; no joint open-boundary real-space Regge apparatus",
-        },
-        "N6_partial_closure_paths": {
-            "approved_primitives": "scale reference, kinetic-form isotropy, and realized-state evaluation retain only their registered roles; none supplies this feedback selector, stress identity, or receiver map",
-            "paths": [
-                "derive a feedback sign/normalization from a separately retained positivity or bounded-action theorem",
-                "compile normalized or nonlinear endpoint feedback and test its complete fixed-point class",
-                "couple the full-unitary coframe generator directly to the physical Cycle612 endpoint and derive the receiver map",
-                "execute the Regge carrier and flux boundary together on one open real-space support-two apparatus",
-            ],
-        },
-        "N7_steelman": "A hostile reviewer should reject any no-selection theorem beyond the audited square family. A normalized local deficit scalar, a bounded nonlinear feedback potential with a unique fixed point, or a direct coupling of the full-unitary K_ab representative to the physical endpoint could remove the lambda/c/sign orbit. The terminal obligations are concrete: prove strict locality and covariance, return detector work, preserve Gauss/Ward/inverse, and obtain one receiver word on held domains without a fitted target.",
-        "N8_cross_cycle_echo": {
-            "Cycle610": "turned a host-frame packing residual into a large bounded compiler, warning against minimum claims",
-            "Cycle612": "turned supplied detector pointers into matter-caused endpoint bits while leaving response law live",
-            "Cycle615": "constructed lawful charge and joined variation but explicitly queued feedback and full-unitary routes",
-            "Cycle576": "constructed an actual Regge carrier while preserving sign, normalization, metric, and domain seams",
-        },
+        "N2_independence_complete": independence_complete,
+        "N3_canonical_hidden_wall_phrases": list(phrases),
+        "N3_note_phrase_hits": phrase_hits,
+        "N3_explicit_supplied_structure": ["K129 partition/origin/role coloring", "one-hot orientation and blank work", "five Givens angles and pivot order", "candidate opposite-charge copy and contacts", "local Cycle612 endpoint program", "feedback square/sign/scale", "Regge complex/pseudoinverse/lambda", "response-label comparison", "finite-difference step and nondegenerate fixtures"],
+        "N4_exact_residual_matching": n4,
+        "N4_cited_lines_exist": n4_cited_lines_exist,
+        "N5_five_resolution_rhetoric_audit": n5,
+        "N6_partial_closure_paths": n6,
+        "N7_cited_actionable_steelman": n7,
+        "N7_cited_lines_exist": n7_cited_lines_exist,
+        "N8_rowwise_cross_cycle_echo": n8,
+        "N8_cited_lines_exist": n8_cited_lines_exist,
         "walls": walls,
-        "broad_negative_gate": "FAIL / DO NOT SHIP",
-        "narrow_claim": "the explicitly audited linear feedback-square family does not collapse the inherited lambda/c or two-word receiver class",
+        "Status": "FAIL / DO NOT SHIP NEGATIVE",
+        "narrowed_positive_artifact_status": "PASS",
+        "negative_claim_shipped": False,
         "shared_route_independent_obstruction": False,
         "minimum_content_claim": False,
         "axiom_pressure": False,
     }
     check(
         "Full current-origin/main N1-N8 blocks broad no-go, minimum-content, and axiom-pressure claims",
-        len(families) >= 5 and len(pairs) == 15
+        len(families) >= 5 and markers and len(live_routes) >= 5 and len(pairs) == 21
+        and not independence_complete and not phrase_hits
+        and all(all(key in row for key in ("prior_path", "prior_line", "prior_residual", "current_path", "current_line", "current_residual", "exact_match", "same_scope", "use_as_closure")) for row in n4)
+        and n4_cited_lines_exist
+        and all(all(key in row for key in ("per_element", "per_site", "per_mode", "per_block", "lattice_wide")) for row in n5)
+        and all(all(key in row for key in ("file", "status", "what_closes")) for row in n6)
+        and all(key in n7 for key in ("steelman", "mechanism", "terminal_obligation", "citations", "action"))
+        and len(n7["citations"]) >= 2
+        and all(all(key in citation for key in ("path", "line", "supports")) for citation in n7["citations"])
+        and n7_cited_lines_exist
+        and all(all(key in row for key in ("cycle", "prior_path", "prior_line", "citation_path", "citation_line", "echo", "retired", "retirement_mechanism", "could_apply_here", "mechanism", "applicability", "effect")) for row in n8)
+        and all(row["citation_path"] == row["prior_path"] and row["citation_line"] == row["prior_line"] for row in n8)
+        and all(isinstance(row["mechanism"], str) and row["mechanism"] and isinstance(row["applicability"], str) and row["applicability"] for row in n8)
+        and n8_cited_lines_exist
+        and output["Status"] == "FAIL / DO NOT SHIP NEGATIVE"
+        and not output["negative_claim_shipped"]
         and not output["shared_route_independent_obstruction"]
         and not output["minimum_content_claim"] and not output["axiom_pressure"],
         output,
@@ -1280,7 +1481,7 @@ def no_go_discipline() -> dict:
 
 
 def main() -> int:
-    r615, r610, r612, shore_result = shore()
+    r615, r610, r608, r612, shore_result = shore()
     note_contract()
     route_a_result = route_a(r610)
     route_b_result = route_b(r612)
@@ -1293,6 +1494,8 @@ def main() -> int:
         "cycle": 620,
         "authority": AUTHORITY,
         "audit": AUDIT,
+        "author_artifact_status_accepted": False,
+        "audit_verdict_inferred_from_dependencies": False,
         "constitutional_effect": "none",
         "HEAD": subprocess.check_output(("git", "rev-parse", "HEAD"), cwd=ROOT, text=True).strip(),
         "runner_sha256": digest("scripts/physical_pair_supercell_receiver_feedback_quasienergy_tournament_cycle620_2026_07_22.py"),
@@ -1303,28 +1506,29 @@ def main() -> int:
         "route_B_receiver_feedback": route_b_result,
         "route_C_full_unitary_quasienergy": route_c_result,
         "no_go_discipline": nogo,
-        "decisive_answer": "The Cycle615 resource/cubic-neutral-pair involution now has a common-E, clean-work, exact support-two K=129 compiler and a distinct candidate +/- occupation stream on L3/L6/L7, with the supplied negative sector explicitly not called antimatter. A physical endpoint-controlled local gauge-Regge feedback square is constructively available, but after the equally local sign/scale alternatives and every surviving lambda/c improvement are re-enumerated it does not collapse either the continuous response family or {3/4,5/4}. The actual full coin-stream-contact Fock unitary supplies a covariant Hermitian coframe generator and tracked quasiphase derivatives away from degeneracy, not a unique physical stress, energy, rate, or receiver law.",
+        "decisive_answer": "Route A preserves an exact seven-level pair involution, one 13-bit register embedding, Gray/Givens/conjunction algebra, conditional K129 coordinate descriptors, and L3/L6/L7 register streams. It does not compose a literal physical M2 encoder or update, fine-NN product, full-code leakage audit, local enforcement, one-fine-site covariant code/update, or autonomous no-host schedule. Route B constructs a conditional feedback-square family; its sign, scale, lambda, improvement, source/gravity status, and {3/4,5/4} receiver choice remain unselected. Route C constructs a coframe-generator/quasiphase representative, not energy, stress, rate, or time.",
         "inventory": {
             "supplied": [
-                "Cycle610 K=129 one-hot orientation/predicate/bus fabric and blank work",
+                "Cycle610 K129 partition/origin/role coloring, conditional orientation/predicate/bus descriptors, and blank work",
                 "candidate negative-charge occupation copy, conjugate coin, separate same-g contact, and no cross contact",
                 "five exact cubic-scalar Givens angles and the neutral resource excitation",
-                "Cycle608 binder/path/chart and Cycle612 endpoint-use/admission program",
+                "final corrected Cycle608 comparator and local Cycle612 endpoint-use/admission program",
                 "feedback square form, 1/2 convention, D/rho relative scale, sign/scale alternatives",
                 "Cycle576 Regge complex/raw deficit/pseudoinverse/lambda and periodic Bloch fixtures",
                 "diagnostic response-sign to Cycle612-word convention and finite-difference epsilon",
             ],
             "derived_or_executed": [
-                "common seven-word embedding and exact Gray/conjunction pair lowering",
-                "clean-work return, identity extension, inverse, deletion, all24/all576 pair covariance",
-                "two-charge A/B occupation stream geometry and semantics on L3/L6/L7",
-                "endpoint-controlled feedback Hessian/force and full sign/scale/lambda/improvement family audit",
+                "seven-level pair involution, 13-bit register embedding, and exact Gray/conjunction algebra",
+                "conditional clean-work descriptor return, register identity extension, inverse, deletion, and pair all24/all576 algebra",
+                "two-charge A/B register-stream geometry and semantics on L3/L6/L7 conditional coarse grids",
+                "conditional endpoint-controlled feedback Hessian/force and sign/scale/lambda/improvement family audit",
                 "Gauss neutrality, Regge Ward, stationary, inverse, covariance, and feedback deletions",
                 "full-Fock coin-stream-contact coframe generators and nondegenerate quasiphase derivative match",
                 "principal wrapped-phase seam and order/contact falsifiers",
             ],
             "not_derived": [
-                "antimatter identity or negative-sector law selection",
+                "physical particle identity or negative-sector law selection",
+                "literal physical M2 encoder/update, fine-NN product, full-code leakage, local enforcement, one-site covariance, or autonomous schedule",
                 "uniform one-hot/work/binder/path/chart genesis",
                 "feedback square/sign/normalization or a stability law selecting them",
                 "unique lambda, improvement, metric observable, response sign, or Cycle612 receiver word",
@@ -1333,23 +1537,43 @@ def main() -> int:
             ],
         },
         "six_wall_ledger": {
-            "C_ref": "ADVANCED locally: the pair/sector compiler uses physical one-hot proper-cubic branches and passes all24/all576; orientation genesis, endpoint chart/path, and receiver map remain supplied.",
+            "C_ref": "NARROWED: pair all24/all576 algebra and conditional coarse-origin coordinate actions pass, while the supplied K129 origin/coloring fails one-fine-site translation promotion.",
             "C_num": "SHARPENED: exact pair angles and a full affine feedback family are explicit; feedback scale/sign, lambda, improvement, and empirical normalization remain unselected.",
-            "C_wrap": "ADVANCED diagnostically: full-unitary tracked quasiphase derivatives agree with K_ab away from degeneracy and an explicit principal seam is exposed; wrapped phase is not energy.",
-            "C_int": "ADVANCED: the neutral pair gate, +/- coin-stream-contact, physical endpoint feedback, joined Regge variation, and full-unitary coframe derivative are each composed on declared interfaces; no one apparatus joins the open boundary to periodic Regge.",
-            "C_local": "ADVANCED: the pair gate and two-charge occupation stream now have constant-overhead support-two K=129 words with clean return and held-size geometry; economical packing and autonomous role/work genesis remain open.",
-            "C_source": "SHARPENED: endpoint-controlled deficit-density feedback is a local candidate source law, but its sign/scale and inherited lambda/c class survive, so {3/4,5/4} remains unselected and no gravity claim follows.",
+            "C_wrap": "ADVANCED diagnostically only: tracked quasiphase derivatives agree with K_ab away from degeneracy and a principal seam is exposed; phase and generator are not energy, stress, rate, or time.",
+            "C_int": "PARTIAL ALGEBRAIC COMPOSITION: pair/register, feedback, and coframe calculations coexist, but there is no literal physical M2 apparatus or open-boundary/periodic Regge join.",
+            "C_local": "NARROWED: bounded conditional K129 descriptors and register semantics pass; physical encoder/update, local enforcement, one-fine-site covariance, full-code leakage, and autonomous scheduling remain unevaluated or false.",
+            "C_source": "CONDITIONAL FAMILY ONLY: endpoint-controlled deficit-density feedback is an explicit candidate, while sign/scale/lambda/improvement and both labels survive; no unique source or gravity law is selected.",
         },
-        "maturity_0_to_5": {
-            "operational_quantum_records": 4.08,
-            "time": 3.08,
-            "inertia_matter": 4.58,
-            "gravity_source": 4.02,
-            "Born_probability": 2.0,
+        "maturity_effect": "no maturity scores retained or increased; the corrected shore removes the prior physical-compiler promotion and the other routes remain conditional",
+        "physical_lowering_audit": {
+            "literal_physical_M2_encoder_composed": False,
+            "literal_physical_update_composed": False,
+            "physical_M2_cost_per_coarse_cell": None,
+            "physical_intertwiner_residual": None,
+            "fine_NN_placement_and_product_executed": False,
+            "physical_support_two_gate_product_executed": False,
+            "physical_all24_or_all576_update_covariance_executed": False,
+            "physical_held_size_deletion_or_malformed_control_executed": False,
+            "full_physical_code_leakage_evaluated": False,
+            "full_physical_code_leakage_residual": None,
+            "local_constraints_enforced": False,
+            "one_fine_site_translation_covariant_code_and_update": False,
+            "autonomous_no_host_schedule_executed": False,
+            "Route_B_literal_physical_endpoint_revalidated": False,
+            "Route_B_joint_open_periodic_physical_apparatus": False,
+            "Route_C_energy_stress_rate_or_time_identification": False,
         },
-        "strongest_constructive_result": "a common-E exact support-two physical compiler for the resource-to-cubic-neutral-pair involution plus distinct candidate +/- occupation streams, with explicit Givens/clean-work/bus debits and L3/L6/L7 all-frame controls",
+        "Cycle612_identity_boundary": {
+            "local_Cycle612": "current-branch label comparator only",
+            "causal_time_PR_5557": "distinct external comparison lane at a1e2f1ea60",
+            "causal_PR_runner_imported_or_executed": False,
+            "causal_PR_Event_Record_or_time_backcredit": False,
+        },
+        "strongest_constructive_result": "an exact seven-level/Givens pair involution embedded in a 13-bit register, with conditional K129 coordinate descriptors and L3/L6/L7 register-stream controls; this is not a physical M2 compiler",
+        "confirmed_breakthrough": False,
+        "negative_claim_shipped": False,
         "shared_obstruction_or_axiom_pressure": False,
-        "optimal_next_campaign": "attack feedback-law selection with normalized and nonlinear local potentials and a direct K_ab-to-endpoint coupling, while compiling the open flux boundary and Regge carrier into one real-space apparatus; require one receiver word without a sign map, refit, or stability postulate",
+        "optimal_next_campaign": "construct a state-carried Z129^3 translation phase plus literal fine-NN admissibility and test a physical E/update under one-site translations; separately test normalized/nonlinear feedback or direct generator-to-endpoint coupling on one open real-space apparatus",
         "tests_passed": PASS,
         "tests_failed": FAIL,
         "pass": FAIL == 0,
@@ -1371,12 +1595,12 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    COLD.parent.mkdir(parents=True, exist_ok=True)
-    with COLD.open("w") as cold_handle:
-        terminal = sys.stdout
-        sys.stdout = Tee(terminal, cold_handle)
-        try:
+    if "--cold" in sys.argv:
+        buffer = io.StringIO()
+        with contextlib.redirect_stdout(buffer):
             exit_code = main()
-        finally:
-            sys.stdout = terminal
-    raise SystemExit(exit_code)
+        transcript = buffer.getvalue()
+        COLD.write_text(transcript, encoding="utf-8")
+        print(transcript, end="")
+        raise SystemExit(exit_code)
+    raise SystemExit(main())

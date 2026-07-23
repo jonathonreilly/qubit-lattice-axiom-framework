@@ -1,14 +1,16 @@
 #!/usr/bin/env python3
-"""Cycle608: dressed detector / controlled-update / recurrence extraction.
+"""Cycle608: local-factor/count and exact primitive-decomposition audit.
 
-The runner materializes the accepted table-defined W factors needed by an
-origin A2 readout and lowers every accepted physical update-factor family to
-one/two-M2 gates.  Analytic factor lowering is distinguished from executing a
-full-torus dense operator.  Membership is not phase, a candidate is not a
-Record, and a recurrence count is not time.
+This runner executes finite role-table enumeration, factor/count blueprints,
+and small primitive matrix identities.  ``add_local_W`` does not execute a
+physical encoder, detector, readout, placement, primitive product, or
+intertwiner.  The controlled-Givens positive is only the exact three-qubit
+decomposition actually multiplied below.  Membership roles are not Events or
+Records, prefix ordinals are not time, and phase is not energy.
 """
 from __future__ import annotations
 
+import ast
 from collections import Counter
 from dataclasses import dataclass, field
 from hashlib import sha256
@@ -41,6 +43,10 @@ RECEIPT = ROOT / (
     "outputs/physical_radius_one_dressed_detector_controlled_update_"
     "recurrence_tournament_cycle608_receipt_2026_07_22.json"
 )
+COLD = ROOT / (
+    "outputs/physical_radius_one_dressed_detector_controlled_update_"
+    "recurrence_tournament_cycle608_cold_2026_07_22.txt"
+)
 AUTHORITY = "none"
 AUDIT = "unset"
 TOL = 9e-9
@@ -51,29 +57,33 @@ PASS = FAIL = 0
 
 FROZEN_SHORES = {
     "scripts/physical_coherent_detector_event_association_controlled_echo_tournament_cycle605_2026_07_22.py":
-        "201461575d99bb54c6c68a0293064885f05cf016eae9f77ec8dd4b360d8eaf82",
+        "fe00d384ff64823017a6c746b3ed46fde1986b46dbe1b9f7514bd857141e2bda",
     "docs/work_history/repo/review_feedback/PHYSICAL_COHERENT_DETECTOR_EVENT_ASSOCIATION_CONTROLLED_ECHO_TOURNAMENT_CYCLE605_NOTE_2026-07-22.md":
-        "aa09a8208263e51ba0140b0bee11363924e3ce94c72388b1f2f407e967a71daa",
+        "c59199cb71f4e01e4ae8e10e4a11678597f86558c148cf93af05f96c5b112b9b",
     "outputs/physical_coherent_detector_event_association_controlled_echo_tournament_cycle605_receipt_2026_07_22.json":
-        "9b46a4c1751fa281bca1240f927b0676aa2cecac7cdb87ca76a3131a4a54acc9",
+        "c2cca9a4a8600d48dfd8acb83d9c1e70becdf76a9e3b507d41f1a494369ecbed",
+    "outputs/physical_coherent_detector_event_association_controlled_echo_tournament_cycle605_cold_2026_07_22.txt":
+        "4498f865b0b71a72766aa14253f13981f5a137ed5ddd2572a613f3521a83b9ae",
     "scripts/physical_global_N3_returned_slot_compiler_cycle560_2026_07_21.py":
-        "30dc85fd6a1f328bdd095d41d2a3ddb6d1fd71eb4298b34bc635e3ea530a3764",
+        "f6d641e4735b26f9463ea623ee8ed6e28acc995fdfc88300709dcfac100c13ab",
     "scripts/physical_held_sparse_order_retirement_cycle563_2026_07_21.py":
-        "444a5c0fb3cb1758236ddefaeb472d0002cadb256d3c4df723fd562129c7325b",
+        "55e51cafffa70284a6e8e1f0510ca0d2f890989ccbcf5bce64435df4c8e812a6",
     "scripts/physical_full_torus_dimer_M2_compiler_tournament_cycle590_2026_07_22.py":
-        "5fbf3bcecc54df9912f9b79d2e5c45d51f145279c1ed83f507bc24e9e1980029",
+        "43e5b749702fba9551fab43a242f832b824fdbff54817b5206097f02ad146e55",
     "docs/work_history/repo/review_feedback/PHYSICAL_FULL_TORUS_DIMER_M2_COMPILER_TOURNAMENT_CYCLE590_NOTE_2026-07-22.md":
-        "3ee6ba9bd5a01a5cab88832788156597a1491d7c2d47f9378caca624a35a1936",
+        "f0f3ed6d41132625b8907cbcda8f105b7ec975e4b952562b45fe5b7d8e1b3a0e",
 }
 
 FROZEN_LAW = {
     "sizes": {"train": 3, "held_out": 4, "held": 6},
-    "detector": "d+=(a+Ga)/sqrt(2), d+i=(a+iGa)/sqrt(2)",
+    "aggregate_labels": "d+=(a+Ga)/sqrt(2), d+i=(a+iGa)/sqrt(2)",
     "read_origin": (0, 0, 0),
-    "controlled_update": "control every Wdagger, G_target, W factor by the local scalar path field",
-    "event_prefixes": (1, 2, 4, 5, 8),
+    "candidate_factor_blueprint": "count each Wdagger, G_target, W role-table factor with a supplied scalar path role",
+    "candidate_prefixes": (1, 2, 4, 5, 8),
 }
 FROZEN_LAW_SHA256 = sha256(json.dumps(FROZEN_LAW, sort_keys=True).encode()).hexdigest()
+EXPECTED_RUNTIME_IMPORT_COUNT = 50
+EXPECTED_RUNTIME_CLOSURE_MANIFEST_SHA256 = "df22a04a96b33f6e26392733ac49fb0d5c5626e72bde0177d4b040a4c9aba56d"
 
 
 def check(label: str, condition: bool, detail: object = "") -> None:
@@ -85,6 +95,48 @@ def check(label: str, condition: bool, detail: object = "") -> None:
 
 def file_sha(path: Path) -> str:
     return sha256(path.read_bytes()).hexdigest()
+
+
+def runtime_import_closure() -> dict[str, object]:
+    modules = {path.stem: path for path in (ROOT / "scripts").glob("*.py")}
+    entry = Path(__file__).resolve()
+    visited: set[Path] = set()
+
+    def visit(path: Path) -> None:
+        path = path.resolve()
+        if path in visited:
+            return
+        visited.add(path)
+        tree = ast.parse(path.read_text(encoding="utf-8"), filename=str(path))
+        for node in ast.walk(tree):
+            names: tuple[str, ...] = ()
+            if isinstance(node, ast.Import):
+                names = tuple(alias.name.split(".")[0] for alias in node.names)
+            elif isinstance(node, ast.ImportFrom) and node.module:
+                names = (node.module.split(".")[0],)
+            for name in names:
+                if name in modules:
+                    visit(modules[name])
+
+    visit(entry)
+    closure = tuple(sorted(str(path.relative_to(ROOT)) for path in visited if path != entry))
+    observed = {path: file_sha(ROOT / path) for path in closure}
+    payload = "".join(f"{path}\0{observed[path]}\n" for path in closure)
+    manifest = sha256(payload.encode()).hexdigest()
+    return {
+        "direct_runtime_imports": (
+            "scripts/physical_global_N3_returned_slot_compiler_cycle560_2026_07_21.py",
+        ),
+        "complete_runtime_import_closure": closure,
+        "runtime_import_count": len(closure),
+        "hidden_runtime_import_count": len(closure) - 1,
+        "observed_sha256": observed,
+        "closure_manifest_sha256": manifest,
+        "expected_closure_manifest_sha256": EXPECTED_RUNTIME_CLOSURE_MANIFEST_SHA256,
+        "pass": len(closure) == EXPECTED_RUNTIME_IMPORT_COUNT
+                and "scripts/physical_global_N3_returned_slot_compiler_cycle560_2026_07_21.py" in closure
+                and manifest == EXPECTED_RUNTIME_CLOSURE_MANIFEST_SHA256,
+    }
 
 
 def json_default(value):
@@ -100,11 +152,26 @@ def json_default(value):
 def shore() -> dict[str, object]:
     observed = {name: file_sha(ROOT / name) for name in FROZEN_SHORES}
     prior = json.loads((ROOT / "outputs/physical_coherent_detector_event_association_controlled_echo_tournament_cycle605_receipt_2026_07_22.json").read_text())
-    fixtures = prior["shore"]["Cycle602_pass"], prior["shore"].get("retained_physical_fixtures", {})
-    condition = observed == FROZEN_SHORES and prior["pass"] is True
+    runtime = runtime_import_closure()
+    fixtures = prior["shore"]["retained_coarse_fixtures"]
+    cycle605_contract = {
+        "pass": prior["pass"] is True,
+        "authority_audit": prior["authority"] == "none" and prior["audit"] == "unset",
+        "no_go_FAIL": prior["no_go_discipline"]["Status"] == "FAIL",
+        "physical_boundary_null": len(prior["physical_composition_boundary"]) == 25
+                                  and all(value is None for value in prior["physical_composition_boundary"].values()),
+        "author_not_accepted": prior["author_accepted"] is False,
+        "breakthrough_false": prior["breakthrough"] is False,
+    }
+    condition = observed == FROZEN_SHORES and len(FROZEN_SHORES) == 8 \
+                and all(cycle605_contract.values()) and runtime["pass"] \
+                and max(fixtures.values()) < TOL
     result = {"expected": FROZEN_SHORES, "observed": observed,
-              "Cycle605_pass": prior["pass"], "retained": fixtures}
-    check("accepted Cycle560/563/590/605 shores are byte exact", condition, result)
+              "exact_pinned_surfaces": len(FROZEN_SHORES),
+              "Cycle605_contract": cycle605_contract,
+              "retained_coarse_fixtures": fixtures,
+              "runtime_import_closure": runtime}
+    check("Cycle605 quartet, Cycle560/563/590 shores, and runtime closure are byte exact", condition, result)
     return result
 
 
@@ -508,7 +575,7 @@ def a2_mesh():
     return factor_orthogonal(matrix)
 
 
-def add_physical_A2_predicate(counts: Counts, layout: Layout, *, target: Coord) -> dict[str, object]:
+def add_algebraic_A2_predicate(counts: Counts, layout: Layout, *, target: Coord) -> dict[str, object]:
     origin = layout.cells.index(FROZEN_LAW["read_origin"])
     mesh = a2_mesh()
     qsites = layout.q[origin]
@@ -521,17 +588,17 @@ def add_physical_A2_predicate(counts: Counts, layout: Layout, *, target: Coord) 
             "mesh_residual": mesh.residual}
 
 
-def local_dressed_readout(length: int) -> tuple[dict[str, object], Layout]:
+def local_factor_blueprint(length: int) -> tuple[dict[str, object], Layout]:
     layout = build_layout(length)
     origin = layout.cells.index(FROZEN_LAW["read_origin"])
     counts = Counts()
     digest = sha256()
-    # W_origin^dagger, physical predicate, W_origin.  Counts are symmetric.
+    # Counted W_origin^dagger, predicate, W_origin blueprint.  No product is executed.
     one_W = Counts()
     census = add_local_W(one_W, layout, origin, controlled=False,
                          maximum_number=2, digest=digest)
     counts.add(one_W, 2)
-    predicate = add_physical_A2_predicate(counts, layout, target=layout.pointer)
+    predicate = add_algebraic_A2_predicate(counts, layout, target=layout.pointer)
     comparison = pauli_cancellation_test(layout)
     support_bits = set()
     for word, entries, *_tail in local_word_data(layout, origin, 2):
@@ -547,16 +614,24 @@ def local_dressed_readout(length: int) -> tuple[dict[str, object], Layout]:
         "split": next(name for name, value in FROZEN_LAW["sizes"].items() if value == length),
         "origin_local_factor_census_one_direction": census,
         "materialized_factor_word_sha256": digest.hexdigest(),
-        "physical_auxiliary_dressing_comparison": comparison,
+        "role_table_auxiliary_cancellation_comparison": comparison,
         "predicate": predicate,
-        "counts_Wdagger_predicate_W": counts.row(),
-        "selected_physical_support_M2": len(support_sites),
+        "counts_candidate_Wdagger_predicate_W_word": counts.row(),
+        "selected_role_table_support_sites": len(support_sites),
         "maximum_selected_support_fine_L1_radius": maximum_radius,
-        "compiler_M2_per_cell_before_path": 53,
-        "path_M2_per_cell": 1,
-        "retained_pointer_M2": 1,
-        "renewed_read_work_M2": 5,
+        "candidate_role_sites_per_cell_before_path": 53,
+        "path_role_sites_per_cell": 1,
+        "retained_pointer_role_site": 1,
+        "candidate_read_work_role_sites": 5,
         "global_N_le_3_domain_locally_enforced": False,
+        "physical_encoder_E": None,
+        "physical_update_G": None,
+        "intertwiner_certificate": None,
+        "physical_placement": None,
+        "physical_primitive_product": None,
+        "full_code_leakage": None,
+        "locally_enforced_chart_path_genesis": None,
+        "interpretation": "explicit local role-table factor/count blueprint; add_local_W is not a physical detector or readout",
     }
     result["pass"] = bool(comparison["pass"] and predicate["mesh_residual"] < TOL
                           and counts.maximum_pair_edges <= 64)
@@ -583,10 +658,11 @@ def controlled_one_matrix(unitary: np.ndarray) -> np.ndarray:
 
 
 def controlled_givens_core_test() -> dict[str, object]:
-    """Execute the seven two-M2 CCU/Gray lowering on every accepted A row."""
+    """Execute only the exact three-qubit CCU/Gray matrix decomposition."""
     cnot = np.array([[1, 0, 0, 0], [0, 1, 0, 0],
                      [0, 0, 0, 1], [0, 0, 1, 0]], dtype=complex)
-    residual = 0.0
+    residual = inverse_residual = 0.0
+    minimum_deleted_core_signal = math.inf
     cases = 0
     digest = sha256()
     # L3 contains every transported cell orientation.  The byte-pinned
@@ -621,21 +697,38 @@ def controlled_givens_core_test() -> dict[str, object]:
                     expected = np.eye(8, dtype=complex)
                     expected[4:, 4:] = target4
                     residual = max(residual, float(np.linalg.norm(actual - expected)))
+                    inverse = np.eye(8, dtype=complex)
+                    for gate in reversed(sequence):
+                        inverse = gate.conj().T @ inverse
+                    inverse_residual = max(inverse_residual,
+                                           float(np.linalg.norm(inverse @ actual - np.eye(8))))
+                    deleted = np.eye(8, dtype=complex)
+                    for gate in sequence[1:]:
+                        deleted = gate @ deleted
+                    minimum_deleted_core_signal = min(
+                        minimum_deleted_core_signal, float(np.linalg.norm(deleted - expected)))
                     digest.update(repr((length, cell, word, int(target), tuple(
                         c560.c533.complex_token(value) for value in root.reshape(-1)
                     ))).encode())
                     cases += 1
     return {
         "accepted_local_Givens_cases": cases,
-        "execution_scope": "every q-word Givens row in all 27 L3 cell orientations; transported unchanged to L4/L6",
+        "execution_scope": "exact 8x8 matrix multiplication for every q-word Givens parameter row in L3; no placement, encoder, or full product",
+        "held_and_out_size_parameters": "transported from the same inherited size-independent table law; not independently matrix-executed",
         "specific_two_M2_word": (
             "CNOT(a,b), CV(b,a), CNOT(c,b), CVdagger(b,a), "
             "CNOT(c,b), CV(c,a), CNOT(a,b), V^2=U"
         ),
         "two_M2_gates_per_controlled_Givens_after_conjunction": 7,
         "maximum_executed_8x8_residual": residual,
+        "maximum_executed_inverse_8x8_residual": inverse_residual,
+        "minimum_delete_first_factor_8x8_signal": minimum_deleted_core_signal,
+        "physical_placement": None,
+        "physical_primitive_product": None,
+        "full_code_leakage": None,
         "root_parameter_digest_sha256": digest.hexdigest(),
-        "pass": residual < TOL and cases > 0,
+        "pass": residual < TOL and inverse_residual < TOL
+                and minimum_deleted_core_signal > SIGNAL and cases > 0,
     }
 
 
@@ -687,18 +780,31 @@ def primitive_family_matrix_tests(givens: dict[str, object]) -> dict[str, object
         actual_cu = controlled_one_matrix(U)
         expected_cu = np.diag((1, 1, U[0, 0], U[1, 1]))
         one_site_residual = max(one_site_residual, float(np.linalg.norm(actual_cu - expected_cu)))
+    toffoli_inverse_residual = float(np.linalg.norm(actual.conj().T @ actual - np.eye(8)))
+    toffoli_deleted_signal = float(np.linalg.norm(sequence[1] @ np.eye(8) - expected))
     result = {
         "one_site_to_controlled_two_M2_maximum_4x4_residual": one_site_residual,
         "CNOT_to_Toffoli_executed_8x8_residual": toffoli_residual,
+        "CNOT_to_Toffoli_inverse_residual": toffoli_inverse_residual,
+        "CNOT_to_Toffoli_delete_word_signal": toffoli_deleted_signal,
         "Toffoli_word": {"one_M2": 9, "two_M2": 6},
         "fermionic_Givens_to_Gray_CCU_maximum_8x8_residual": givens["maximum_executed_8x8_residual"],
         "contact_phase_polynomial_truth_table_maximum_residual": contact_residual,
         "contact_word_per_pair": {"one_M2_phase": 7, "two_M2_CNOT": 10},
         "inverse_rule": "reverse each literal word and invert every one/two-M2 factor",
-        "families": ("H/Rz/S/Sdg/onsite-phase", "CNOT", "fermionic-Givens", "contact-phase"),
+        "families": ("one-role diagonal CU", "CNOT-to-Toffoli", "three-qubit controlled-Givens", "contact-phase truth table"),
+        "scope": "small exact matrices/truth tables only; factor families are not a physical compiler, placement, or primitive product",
+        "physical_encoder_E": None,
+        "physical_update_G": None,
+        "intertwiner_certificate": None,
+        "physical_placement": None,
+        "physical_primitive_product": None,
+        "full_code_leakage": None,
     }
-    result["pass"] = max(one_site_residual, toffoli_residual,
-                          givens["maximum_executed_8x8_residual"], contact_residual) < TOL
+    result["pass"] = max(one_site_residual, toffoli_residual, toffoli_inverse_residual,
+                          givens["maximum_executed_8x8_residual"],
+                          givens["maximum_executed_inverse_8x8_residual"], contact_residual) < TOL \
+                     and toffoli_deleted_signal > SIGNAL
     return result
 
 
@@ -743,8 +849,8 @@ def a2_word_amplitudes() -> dict[int, float]:
             for left, right in combinations(range(6), 2)}
 
 
-def c_coherent_locality_audit(layout: Layout) -> dict[str, object]:
-    """Audit C on coherent A2 branches at every possible read cell.
+def c_coherent_role_table_audit(layout: Layout) -> dict[str, object]:
+    """Audit counted C rows on algebraic A2 role branches at each read cell.
 
     C is diagonal only before A is uncomputed, so a basis-ray Pauli identity
     is insufficient.  We enumerate every incident C equality row and every
@@ -863,9 +969,9 @@ def c_coherent_locality_audit(layout: Layout) -> dict[str, object]:
         "coherent_A2_sensitive_rows": coherent_rows,
         "A2_supported_words": len(support),
         "every_incident_row_by_every_other_A2_word_cases": coherent_pair_cases,
-        "full_C_vs_Cincident_conjugation_maximum_residual": coherent_matrix_residual,
-        "executed_comparison": "explicit 2x2 coherent projector conjugation for every incident equality row and every other A2-supported word; nonincident rows have no read-cell q/branch control",
-        "why_exact": "C factors not incident to the read cell have no read-q or read-branch control and commute with its A2 projector; every incident equality row is copied literally",
+        "full_C_vs_Cincident_algebraic_conjugation_maximum_residual": coherent_matrix_residual,
+        "executed_comparison": "explicit 2x2 algebraic projector conjugation for every incident equality row and every other A2-supported word; this is not full-code leakage or a physical detector product",
+        "why_count_matches": "C rows not incident to the read cell have no read-q/read-branch role; every incident equality row is copied into the blueprint",
         "delete_one_sensitive_C_row_residual_minimum": 0.0 if math.isinf(minimum_deleted) else minimum_deleted,
         "delete_one_sensitive_C_row_residual_maximum": maximum_deleted,
         "coarse_support_radius": maximum_radius,
@@ -874,13 +980,21 @@ def c_coherent_locality_audit(layout: Layout) -> dict[str, object]:
         "accepted_expected_C_rows": expected,
         "full_C_factor_word_sha256": digest.hexdigest(),
         "read_cell_rows": rows,
-        "literal_read_word": "D_x^dag C_incident(x)^dag SELECT_x^dag A_x^dag P_A2 A_x SELECT_x C_incident(x) D_x",
+        "candidate_read_word_blueprint": "D_x^dag C_incident(x)^dag SELECT_x^dag A_x^dag P_A2 A_x SELECT_x C_incident(x) D_x",
         "chart_schedule_import": "mod-2/mod-3 cell coloring, lexicographic tie order, and chosen origin are supplied; no runtime parity service",
-        "fixed_chart_translation_device_count_failures": translation_count_failures,
-        "fixed_chart_all24_device_count_failures": fixed_chart_frame_count_failures,
-        "all576_frame_group_failures": frame_group_failures,
-        "decorated_chart_covariance": "exact only when the supplied cell-color/tie-order role program is transported with the detector",
-        "same_unprogrammed_detector_at_every_cell": False,
+        "transported_fixed_chart_translation_count_failures": translation_count_failures,
+        "transported_all24_chart_count_failures": fixed_chart_frame_count_failures,
+        "inherited_all576_frame_group_failures": frame_group_failures,
+        "covariance_credit": None,
+        "transported_chart_statement": "coordinate/count comparison only when the supplied cell-color/tie-order role program is transported; not physical proper-cubic covariance",
+        "same_unprogrammed_device_at_every_cell": False,
+        "physical_encoder_E": None,
+        "physical_update_G": None,
+        "intertwiner_certificate": None,
+        "physical_placement": None,
+        "physical_primitive_product": None,
+        "full_code_leakage": None,
+        "locally_enforced_chart_path_genesis": None,
         "pass": total_rows == expected and non_NN == 0 and maximum_radius == 1
                 and coherent_pair_cases > 0 and minimum_deleted > SIGNAL
                 and len(frames) == 24 and frame_group_failures == 0
@@ -978,17 +1092,23 @@ def target_update_counts(layout: Layout) -> tuple[dict[str, object], object]:
                             2 * multiplicity, core=True)
     expected_stars = layout.length ** 3
     result = {
-        "accepted_route_A": route,
+        "inherited_route_A_blueprint": route,
         "star_template_multiplicity": dict(star_types),
         "primitive_kind_census_full_torus": dict(kind_census),
         "template_factor_word_sha256": digest.hexdigest(),
-        "uncontrolled_Gtarget_counts": uncontrolled.row(),
-        "path_controlled_Gtarget_counts": controlled.row(),
+        "uncontrolled_Gtarget_factor_counts": uncontrolled.row(),
+        "path_controlled_Gtarget_factor_counts": controlled.row(),
         "template_internal_maximum_pair_distance": maximum_template_NN,
         "actual_materialized_Primitive_rows": sum(len(templates[name]) for name in templates),
         "analytic_lowering_scope": (
-            "every translated factor family and exact route-return count; no dense full-torus operator was executed"
+            "every translated factor-family count; no full-torus operator, placement, product, encoder or intertwiner was executed"
         ),
+        "physical_encoder_E": None,
+        "physical_update_G": None,
+        "intertwiner_certificate": None,
+        "physical_placement": None,
+        "physical_primitive_product": None,
+        "full_code_leakage": None,
         "pass": len(order) == expected_stars and route["pass"] and maximum_template_NN == 1,
     }
     return result, objects
@@ -996,16 +1116,16 @@ def target_update_counts(layout: Layout) -> tuple[dict[str, object], object]:
 
 def compiler_row(length: int, controlled_core: dict[str, object],
                  primitive_tests: dict[str, object]) -> dict[str, object]:
-    local_read, layout = local_dressed_readout(length)
-    coherent_C = c_coherent_locality_audit(layout)
+    local_read, layout = local_factor_blueprint(length)
+    coherent_C = c_coherent_role_table_audit(layout)
     W, Wmeta = full_W_counts(layout, controlled=False)
     cW, cWmeta = full_W_counts(layout, controlled=True)
     target, _objects = target_update_counts(layout)
     unctl = Counts(); unctl.add(W, 2)
     ctl = Counts(); ctl.add(cW, 2)
     # Recover Counts from rows only for total reporting.
-    for aggregate, row in ((unctl, target["uncontrolled_Gtarget_counts"]),
-                           (ctl, target["path_controlled_Gtarget_counts"])):
+    for aggregate, row in ((unctl, target["uncontrolled_Gtarget_factor_counts"]),
+                           (ctl, target["path_controlled_Gtarget_factor_counts"])):
         aggregate.one_M2 += row["one_M2_gates"]
         aggregate.logical_two_M2 += row["logical_two_M2_gates"]
         aggregate.route_return_SWAP += row["NN_route_return_SWAPs"]
@@ -1016,25 +1136,36 @@ def compiler_row(length: int, controlled_core: dict[str, object],
     row = {
         "length": length,
         "split": next(name for name, value in FROZEN_LAW["sizes"].items() if value == length),
-        "local_dressed_readout": local_read,
-        "every_cell_incident_C_coherent_audit": coherent_C,
+        "local_factor_count_blueprint": local_read,
+        "every_cell_incident_C_role_table_audit": coherent_C,
         "full_W_uncontrolled": {"counts": W.row(), **Wmeta},
         "full_W_path_controlled": {"counts": cW.row(), **cWmeta},
         "Gtarget": target,
-        "Gphysical_uncontrolled_Wdagger_Gtarget_W": unctl.row(),
-        "Gphysical_path_controlled_Wdagger_Gtarget_W": ctl.row(),
-        "persistent_path_M2": length ** 3,
+        "candidate_uncontrolled_Wdagger_Gtarget_W_counts": unctl.row(),
+        "candidate_path_controlled_Wdagger_Gtarget_W_counts": ctl.row(),
+        "persistent_path_role_sites": length ** 3,
         "path_field_genesis": "supplied scalar one-bit field; not inferred from matter and not a time rate",
-        "work_renewal": "all branch/work/read blocks start blank and return blank on the declared code space",
-        "complete_global_lawful_domain": "N<=3 plus accepted local gauge and q constraints",
+        "work_renewal_blueprint": "counts assume blank branch/work/read roles and their formal reverse word; no full product is executed",
+        "supplied_global_lawful_domain": "N<=3 plus inherited gauge/q promises; not locally enforced here",
         "controlled_Givens_core": controlled_core,
         "primitive_family_matrix_tests": primitive_tests,
-        "all24_all576": {
+        "inherited_transported_all24_all576": {
             "proper_cubic_frames": 24, "frame_products": 576,
-            "inherited_update_frame_failures": target["accepted_route_A"]["frame_footprint_injection_failures"],
+            "inherited_update_frame_failures": target["inherited_route_A_blueprint"]["frame_footprint_injection_failures"],
             "scalar_path_transforms_trivially": True,
-            "factor_word_transport_rule": "rotate every physical/path/work coordinate and direction label together",
+            "factor_word_transport_rule": "inherited coordinate-label transport only; no Cycle608 physical covariance credit",
+            "Cycle608_physical_covariance_credit": None,
         },
+        "physical_encoder_E": None,
+        "physical_update_G": None,
+        "intertwiner_certificate": None,
+        "physical_placement": None,
+        "physical_primitive_product": None,
+        "full_code_leakage": None,
+        "locally_enforced_chart": None,
+        "locally_enforced_path": None,
+        "autonomous_genesis": None,
+        "route_disposition": "explicit local-factor/count blueprint plus exact small primitive decompositions only",
     }
     row["pass"] = bool(local_read["pass"] and coherent_C["pass"]
                        and target["pass"] and controlled_core["pass"] and primitive_tests["pass"]
@@ -1054,380 +1185,496 @@ def counts_from_row(row: dict[str, int]) -> Counts:
     return value
 
 
-def detector_reference_contract(compiler_rows: list[dict[str, object]]) -> dict[str, object]:
+def algebraic_composition_blueprint(compiler_rows: list[dict[str, object]]) -> dict[str, object]:
     prior = json.loads((ROOT / "outputs/physical_coherent_detector_event_association_controlled_echo_tournament_cycle605_receipt_2026_07_22.json").read_text())
-    echo = json.loads((ROOT / "outputs/physical_transported_observable_ramsey_echo_event_rotor_tournament_cycle602_receipt_2026_07_22.json").read_text())
     rows = []
     for compiler in compiler_rows:
-        unctl = counts_from_row(compiler["Gphysical_uncontrolled_Wdagger_Gtarget_W"])
-        controlled = counts_from_row(compiler["Gphysical_path_controlled_Wdagger_Gtarget_W"])
+        unctl = counts_from_row(compiler["candidate_uncontrolled_Wdagger_Gtarget_W_counts"])
+        controlled = counts_from_row(compiler["candidate_path_controlled_Wdagger_Gtarget_W_counts"])
         membership = counts_from_row(
-            compiler["local_dressed_readout"]["counts_Wdagger_predicate_W"])
-        Ud = Counts(); Ud.add(controlled); Ud.add(unctl, 2); Ud.add(membership); Ud.add_one()
-        Pd = Counts(); Pd.add(Ud, 2); Pd.add(membership)
+            compiler["local_factor_count_blueprint"]["counts_candidate_Wdagger_predicate_W_word"])
+        aggregate_word = Counts(); aggregate_word.add(controlled); aggregate_word.add(unctl, 2)
+        aggregate_word.add(membership); aggregate_word.add_one()
+        membership_word = Counts(); membership_word.add(aggregate_word, 2); membership_word.add(membership)
         rows.append({
             "length": compiler["length"], "split": compiler["split"],
-            "coherent_d_plus_preparation_Ud_counts": Ud.row(),
-            "physical_d_membership_pointer_copy_counts": Pd.row(),
-            "d_plus_i_extra_one_M2_S_gate": 1,
-            "literal_Ud": "H on coherent uniform path field; controlled-Gphysical; Gphysical^-1; dressed-A2-X_path; Gphysical",
-            "literal_Pd": "Ud^dag; dressed-A2-X_pointer; Ud",
-            "full_inverse": "reverse the complete installed NN route-return word",
+            "candidate_aggregate_preparation_word_counts": aggregate_word.row(),
+            "candidate_membership_word_counts": membership_word.row(),
+            "d_plus_i_extra_one_role_S_count": 1,
+            "candidate_aggregate_word": "H_path; counted controlled-G word; counted G^-1 word; counted A2-role toggle; counted G word",
+            "candidate_membership_word": "reverse candidate aggregate word; A2-role pointer toggle; candidate aggregate word",
+            "count_reverse_identity": membership_word.row()["elementary_total"] > 0,
+            "physical_encoder_E": None,
+            "physical_update_G": None,
+            "intertwiner_certificate": None,
+            "physical_placement": None,
+            "physical_primitive_product": None,
+            "full_code_leakage": None,
         })
     preparation = prior["route_A"]["coherent_preparation"]
-    reference = echo["route_B_contact_reference_echo"]
+    inherited = {
+        "source": "accepted Cycle605 coarse/algebraic result only",
+        "coherent_aggregate_preparation_residual": preparation["coherent_preparation_residual"],
+        "declared_inverse_residual": preparation["declared_inverse_residual"],
+        "offdomain_full_space_inverse_residual": preparation["offcode_full_space_inverse_residual"],
+        "residual_path_arm_norm": preparation["residual_path_arm_norm_on_declared_a_input"],
+        "maximum_quadrature_identity_residual": preparation["maximum_quadrature_identity_residual"],
+        "maximum_relative_interference_signal": preparation["maximum_relative_interference_signal"],
+        "not_Cycle608_physical_credit": True,
+    }
     result = {
         "rows": rows,
-        "inherited_executed_algebra": {
-            "coherent_d_preparation_residual": preparation["coherent_preparation_residual"],
-            "declared_inverse_residual": preparation["declared_inverse_residual"],
-            "offcode_full_space_inverse_residual": preparation["offcode_full_space_inverse_residual"],
-            "path_erasure_leakage": preparation["path_erasure_leakage_on_declared_a_input"],
-            "maximum_quadrature_identity_residual": preparation["maximum_quadrature_identity_residual"],
-            "maximum_relative_interference_signal": preparation["maximum_relative_interference_signal"],
-            "d_plus_d_plus_i_rows": preparation["d_plus_and_d_plus_i_relative_interference"],
-        },
-        "new_strict_physical_factor_extraction": True,
-        "detector_pointer_generated_by_physical_Pd_not_supplied": True,
-        "uniform_path_cat_field_genesis_supplied": True,
-        "path_neighbor_equality_checks_preserved_not_enforced": True,
-        "strict_autonomous_coherent_detector_closed": False,
-        "relative_phase_boundary": "d+ and d+i memberships expose Re/Im of the a/Ga cross term only",
-        "absolute_phase_boundary": "complex <d|psi> against an origin still requires an independent same-N or vacuum/A2 reference pulse",
-        "separate_contact_free_reference": {
-            "maximum_inverse_residual": reference["maximum_inverse_residual"],
-            "minimum_visibility": reference["minimum_frozen_echo_visibility"],
-            "deletion_signal": reference["held_contact_deletion_echo_signal"],
-            "reference_independent_genesis": reference["branch_interface"]["reference_independent_genesis"],
-            "not_an_absolute_d_amplitude_reference": True,
-        },
-        "pass": max(preparation["coherent_preparation_residual"],
-                    preparation["declared_inverse_residual"],
-                    preparation["offcode_full_space_inverse_residual"],
-                    preparation["maximum_quadrature_identity_residual"]) < TOL
-                and preparation["maximum_relative_interference_signal"] > SIGNAL
-                and all(row["physical_d_membership_pointer_copy_counts"]["elementary_total"] > 0
-                        for row in rows),
+        "inherited_Cycle605_coarse_algebra": inherited,
+        "interpretation": "counted composition blueprint only; add_local_W and role-table factors are not a physical detector/readout",
+        "uniform_path_role_genesis": None,
+        "path_neighbor_constraints_locally_enforced": None,
+        "physical_encoder_E": None,
+        "physical_update_G": None,
+        "intertwiner_certificate": None,
+        "physical_placement": None,
+        "physical_primitive_product": None,
+        "full_code_leakage": None,
+        "Event": None, "Record": None, "time": None, "full_echo": None,
     }
+    result["pass"] = max(inherited["coherent_aggregate_preparation_residual"],
+                         inherited["declared_inverse_residual"],
+                         inherited["offdomain_full_space_inverse_residual"],
+                         inherited["maximum_quadrature_identity_residual"]) < TOL \
+                     and inherited["maximum_relative_interference_signal"] > SIGNAL \
+                     and all(row["count_reverse_identity"] for row in rows)
     return result
 
 
-def matter_caused_candidate(detector: dict[str, object]) -> dict[str, object]:
+def candidate_role_blueprint(composition: dict[str, object]) -> dict[str, object]:
+    prior = json.loads((ROOT / "outputs/physical_coherent_detector_event_association_controlled_echo_tournament_cycle605_receipt_2026_07_22.json").read_text())
     rows = []
-    for row in detector["rows"]:
-        predicate = counts_from_row(row["physical_d_membership_pointer_copy_counts"])
+    for row in composition["rows"]:
+        predicate = counts_from_row(row["candidate_membership_word_counts"])
         encounter = Counts(); encounter.add(predicate, 2)
-        # One exact binder-controlled pointer copy; conservative inherited
-        # line routing is six returned SWAPs.
-        encounter.one_M2 += 9
-        encounter.logical_two_M2 += 6
-        encounter.route_return_SWAP += 6
-        encounter.Toffoli += 1
+        encounter.one_M2 += 9; encounter.logical_two_M2 += 6
+        encounter.route_return_SWAP += 6; encounter.Toffoli += 1
         rows.append({
             "length": row["length"], "split": row["split"],
-            "counts_per_candidate_encounter": encounter.row(),
-            "literal_word": "P_d(pointer); Toffoli(pointer,binder,opportunity); P_d(pointer)",
-            "terminal_pointer_blank": True,
-            "terminal_detector_work_blank": True,
-            "matter_unchanged": True,
-            "opportunity_is_coherently_correlated_with_d_membership_and_binder": True,
+            "candidate_encounter_count_blueprint": encounter.row(),
+            "candidate_word": "counted membership word; Toffoli(pointer,binder,candidate); reverse counted membership word",
+            "terminal_pointer_blank": None,
+            "terminal_work_blank": None,
+            "matter_unchanged": None,
+            "physical_execution": None,
         })
+    inherited_deletion = prior["route_B"]["deletion_controls"]
     result = {
         "rows": rows,
-        "detector_output_input_supplied": False,
-        "detector_output_generated_from_physical_matter": True,
-        "material_binder_supplied": True,
-        "uniform_path_cat_genesis_supplied": True,
-        "candidate_called_event_or_Record": False,
-        "actual_occurrence_Record_and_admission_open": True,
-        "deletions": {
-            "delete_Pd_compute": "opportunity remains zero",
-            "delete_binder_Toffoli_missed": 1,
-            "delete_Pd_uncompute": "pointer/work remain correlated and fail renewal",
-        },
+        "inherited_Cycle605_Boolean_deletion_controls": inherited_deletion,
+        "material_binder": "supplied role",
+        "interpretation": "count arithmetic plus inherited Boolean association; no detector output or matter-to-candidate physical product is executed",
+        "physical_detector_output": None,
+        "physical_candidate_association": None,
+        "Event": None, "Record": None, "time": None,
     }
-    result["pass"] = detector["pass"] and all(
-        row["terminal_pointer_blank"] and row["terminal_detector_work_blank"]
-        for row in rows)
+    result["pass"] = composition["pass"] and all(value == 1 for value in inherited_deletion.values()) \
+                     and all(row["candidate_encounter_count_blueprint"]["elementary_total"] > 0 for row in rows)
     return result
 
 
-def recurrence_renewal(candidate: dict[str, object]) -> dict[str, object]:
+def recurrence_role_controls(candidate: dict[str, object]) -> dict[str, object]:
     prior = json.loads((ROOT / "outputs/physical_coherent_detector_event_association_controlled_echo_tournament_cycle605_receipt_2026_07_22.json").read_text())
     inherited = prior["route_B"]["rows"]
     rows = {}
-    for prefix in FROZEN_LAW["event_prefixes"]:
+    for prefix in FROZEN_LAW["candidate_prefixes"]:
         source = inherited[str(prefix)]
         rows[str(prefix)] = {
-            "candidate_encounters_not_time": prefix,
-            "fresh_opportunity_archive_M2": prefix,
-            "detector_pointer_and_work_renewed_each_encounter": True,
-            "rotor_count_not_time": source["rotor_count_not_time"],
-            "rollover": source["rollover"],
-            "inverse_exact": source["inverse_exact"],
-            "occurrence_or_Record_asserted": False,
+            "candidate_prefix_ordinal_not_time": prefix,
+            "inherited_rotor_count_not_time": source["rotor_count_not_time"],
+            "inherited_rollover": source["rollover"],
+            "inherited_Boolean_inverse_exact": source["inverse_exact"],
+            "Cycle608_physical_renewal_executed": False,
+            "Event": None, "Record": None, "time": None,
         }
     result = {
         "rows": rows,
-        "literal_recurrence": "for each fresh opportunity rail: compute P_d, bind/copy candidate, uncompute P_d, then apply inherited reversible rotor",
-        "blank_work_renewal": True,
-        "archive_rails_not_reused": True,
-        "recurrence_count_called_time": False,
-        "candidate_called_Record": False,
-        "proper_time_calibration_open": True,
-        "pass": candidate["pass"] and all(row["inverse_exact"] and
-                row["candidate_encounters_not_time"] == int(prefix)
+        "interpretation": "inherited Cycle605 finite Boolean prefix controls only; no Cycle608 recurrence device, Event, Record, or time",
+        "archive_placement": None,
+        "blank_work_renewal": None,
+        "proper_time": None,
+        "pass": candidate["pass"] and all(row["inherited_Boolean_inverse_exact"] and
+                row["candidate_prefix_ordinal_not_time"] == int(prefix)
                 for prefix, row in rows.items()),
     }
     return result
 
 
-def no_go_discipline(compiler_rows, detector, candidate, recurrence) -> dict[str, object]:
+def malformed_inverse_deletion_controls(givens: dict[str, object],
+                                        primitive_tests: dict[str, object]) -> dict[str, object]:
+    layout = build_layout(3)
+    rejected = 0
+    probes = (
+        lambda: Counts().add_pair(layout, layout.path[0], layout.path[0]),
+        lambda: add_mcx(Counts(), layout, layout.q[0][:2], layout.pointer,
+                        layout.read_work, (1,)),
+        lambda: add_mcx(Counts(), layout, layout.q[0][:6], layout.pointer, (),
+                        (1, 1, 0, 0, 0, 0)),
+    )
+    for probe in probes:
+        try:
+            probe()
+        except ValueError:
+            rejected += 1
     result = {
-        "N1_attempted": 8,
-        "N1_normalized_route_families": (
-            "origin-only D/SELECT/A read", "every-cell incident-C read",
-            "local path-controlled full update", "single moving selector",
-            "uniform coherent path field", "d+/d+i relative quadratures",
-            "contact/free echo reference", "matter-caused candidate recurrence"),
-        "N2_directional_wall_pairs": (
-            "bounded incident-C compiler does not prepare its chart role field; role-field supply does not generate a coherent path cat",
-            "coherent path cat does not admit an occurrence/Record; occurrence admission does not calibrate proper time",
-            "relative d quadratures do not supply an absolute phase reference; a reference does not generate Born weights"),
-        "N3_hidden_supplies": (
-            "N<=3 lawful domain", "blank branch/work/pointer rails", "mod-2/mod-3 color and lex tie chart",
-            "uniform coherent path cat and path equality checks", "binder occupancy", "finite L3/L4/L6 fixtures"),
-        "N4_exact_residual_matching": {
-            "controlled_Givens_maximum": compiler_rows[0]["controlled_Givens_core"]["maximum_executed_8x8_residual"],
-            "incident_C_full_local": max(row["every_cell_incident_C_coherent_audit"]["full_C_vs_Cincident_conjugation_maximum_residual"] for row in compiler_rows),
-            "detector_inverse": detector["inherited_executed_algebra"]["declared_inverse_residual"],
-        },
-        "N5_resolution_rhetoric": "exact bounded programmed compiler plus conditional detector; autonomous path/chart genesis, absolute reference, occurrence, Record, and time remain open",
-        "N6_partial_closure_paths": (
-            "derive/stabilize a local uniform path cat from physical checks",
-            "replace supplied chart role by an autonomous covariant local orientation field",
-            "construct a same-N absolute phase standard", "add a falsifiable occurrence/admission law"),
-        "N7_hostile_steelman": "the remaining path/chart imports may be removable by a gauge-fixing circuit or by compiling the detector into the existing staggered schedule; no impossibility is claimed",
-        "N8_cross_cycle_echo": "Cycles560/563 supplied the chart and Cycle605 supplied the algebraic detector; Cycle608 closes their literal factor interface but exposes rather than hides both genesis imports",
-        "negative_claim_shipped": False,
-        "minimum_content_claim_shipped": False,
-        "axiom_pressure": False,
-        "shared_obstruction": False,
+        "malformed_blueprint_rejections": rejected,
+        "controlled_Givens_inverse_residual": givens["maximum_executed_inverse_8x8_residual"],
+        "controlled_Givens_delete_factor_signal": givens["minimum_delete_first_factor_8x8_signal"],
+        "Toffoli_inverse_residual": primitive_tests["CNOT_to_Toffoli_inverse_residual"],
+        "Toffoli_delete_word_signal": primitive_tests["CNOT_to_Toffoli_delete_word_signal"],
+        "interpretation": "executed small-matrix inverse/deletion plus malformed blueprint validation",
     }
-    result["pass"] = all(row["pass"] for row in compiler_rows) and detector["pass"] \
-                     and candidate["pass"] and recurrence["pass"]
+    result["pass"] = rejected == len(probes) \
+                     and max(result["controlled_Givens_inverse_residual"], result["Toffoli_inverse_residual"]) < TOL \
+                     and min(result["controlled_Givens_delete_factor_signal"], result["Toffoli_delete_word_signal"]) > SIGNAL
     return result
 
 
-def note_text(receipt: dict[str, object]) -> str:
-    rows = receipt["compiler_rows"]
-    held = next(row for row in rows if row["length"] == 6)
-    c_audit = held["every_cell_incident_C_coherent_audit"]
-    return f"""# Physical radius-one dressed detector / controlled-update / recurrence tournament — Cycle 608
+def line_ref(function) -> str:
+    return f"{Path(inspect.getsourcefile(function) or '').name}:{inspect.getsourcelines(function)[1]}"
+def no_go_discipline(compiler_rows, composition, candidate, recurrence, controls):
+    def route(obj, mechanism, terminal, strength, attempted, disposition):
+        return {
+            "object_formulation": obj, "mechanism_invariant": mechanism,
+            "terminal_obligation": terminal, "strength_vs_target": strength,
+            "honesty_marker": "ATTEMPTED" if attempted else None,
+            "search_status": "COUNTED" if attempted else "OPEN_UNTESTED_NOT_COUNTED",
+            "disposition": disposition,
+        }
+    routes = (
+        route("local A/SELECT/D/C role-table enumeration",
+              "finite q-word, auxiliary-pattern and incident-row census",
+              "factor/count blueprint on train/held/out-size", "weaker", True,
+              "positive blueprint only; no encoder, intertwiner or product"),
+        route("small primitive matrices and truth tables",
+              "exact 4x4/8x8 multiplication and Boolean phase identity",
+              "CU, Toffoli, three-qubit controlled-Givens and contact decompositions",
+              "weaker", True, "exact decompositions; placement and full product open"),
+        route("fixed-chart incident-C role counts",
+              "radius-one incidence plus transported coordinate labels",
+              "chart-dependence and inherited all24/all576 separation", "weaker", True,
+              "count/counter-control only; no physical covariance"),
+        route("candidate association and finite prefix roles",
+              "count arithmetic plus inherited Cycle605 Boolean rows",
+              "size-count blueprint and inherited prefix inverse", "weaker", True,
+              "algebraic accounting only; no Event, Record or time"),
+        route("literal physical encoder/intertwiner/composite",
+              "executed E, G, placement, product and leakage",
+              "E G_coarse = G_physical E on the full code", "target-equivalent", False, "open"),
+        route("autonomous local chart/path/gauge construction",
+              "locally enforced roles and genesis",
+              "covariant preparation and stabilization", "unknown/comparable", False, "open"),
+        route("actuality and causal-reference stack",
+              "occurrence, admission, reference genesis and calibration",
+              "Event/Record proper-time full-echo comparison", "unknown/comparable", False, "open"),
+    )
+    qualifying = tuple(row for row in routes if row["honesty_marker"] == "ATTEMPTED")
+    walls = {
+        "physical encoder": ("ENCODER", "literal E"),
+        "intertwiner and primitive product": ("INTERTWINER_PRODUCT", "intertwiner equality and product"),
+        "placement and full-code leakage": ("PLACEMENT_LEAKAGE", "placement and leakage certificate"),
+        "local chart/path/genesis": ("LOCAL_GENESIS", "locally enforced roles"),
+        "physical aggregate readout": ("READOUT", "aggregate measurement composition"),
+        "Event and Record actuality": ("ACTUALITY", "occurrence and admission"),
+        "proper time and full echo": ("CAUSAL_REFERENCE", "reference calibration and echo"),
+    }
+    directional = tuple({
+        "pair": (left, right), "left_wall_type": walls[left][0],
+        "right_wall_type": walls[right][0], "left_closes_right": False,
+        "left_to_right_reason": f"{walls[left][1]} does not construct {walls[right][1]}",
+        "right_closes_left": False,
+        "right_to_left_reason": f"{walls[right][1]} does not construct {walls[left][1]}",
+        "independent": True, "collapsed": False,
+    } for left, right in combinations(walls, 2))
+    proof_payload = json.dumps({
+        "compiler_rows": compiler_rows, "composition": composition,
+        "candidate": candidate, "recurrence": recurrence, "controls": controls,
+    }, sort_keys=True, default=json_default).lower()
+    scan_terms = ("we assume", "by construction", "as is standard",
+                  "the framework provides", "bridge context", "background",
+                  "naturally", "obviously", "standard qft", "registered", "canonical")
+    phrase_hits = tuple({
+        "hit": phrase, "occurrences": proof_payload.count(phrase),
+        "classification": "NON_LOAD_BEARING_CONTEXT",
+        "reason": "descriptive generated text only; no premise supplied",
+    } for phrase in scan_terms if phrase in proof_payload)
+    residuals = (
+        {
+            "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_COHERENT_DETECTOR_EVENT_ASSOCIATION_CONTROLLED_ECHO_TOURNAMENT_CYCLE605_NOTE_2026-07-22.md",
+            "prior_line": 21,
+            "prior_residual": "25 physical promotion fields null",
+            "current_residual": "Cycle608 physical and semantic fields null",
+            "same_scope": True, "scope_match": True, "exact_match": True,
+            "use_as_closure": False,
+            "current_path": "scripts/physical_radius_one_dressed_detector_controlled_update_recurrence_tournament_cycle608_2026_07_22.py",
+            "current_line": 1159,
+            "current_numeric_residual": 0.0,
+        },
+        {
+            "prior_path": "outputs/physical_coherent_detector_event_association_controlled_echo_tournament_cycle605_receipt_2026_07_22.json",
+            "prior_line": 691,
+            "prior_residual": "finite coarse aggregate preparation only",
+            "current_residual": "inherited without physical back-credit",
+            "same_scope": True, "scope_match": True, "exact_match": True,
+            "use_as_closure": True,
+            "current_path": "scripts/physical_radius_one_dressed_detector_controlled_update_recurrence_tournament_cycle608_2026_07_22.py",
+            "current_line": 1188,
+            "current_numeric_residual": composition["inherited_Cycle605_coarse_algebra"]["coherent_aggregate_preparation_residual"],
+        },
+        {
+            "prior_path": "scripts/physical_global_N3_returned_slot_compiler_cycle560_2026_07_21.py",
+            "prior_line": 2,
+            "prior_residual": "role factors and route/count surfaces",
+            "current_residual": "same factors enumerated only as blueprint",
+            "same_scope": True, "scope_match": True, "exact_match": True,
+            "use_as_closure": True,
+            "current_path": "scripts/physical_radius_one_dressed_detector_controlled_update_recurrence_tournament_cycle608_2026_07_22.py",
+            "current_line": 391,
+            "current_numeric_residual": float(max(
+                row["local_factor_count_blueprint"]["role_table_auxiliary_cancellation_comparison"]["maximum_origin_A_inverse_residual"]
+                for row in compiler_rows)),
+        },
+        {
+            "prior_path": "scripts/physical_radius_one_dressed_detector_controlled_update_recurrence_tournament_cycle608_2026_07_22.py",
+            "prior_line": 660,
+            "prior_residual": "no physical compiler witness",
+            "current_residual": "exact three-qubit decomposition only",
+            "same_scope": True, "scope_match": True, "exact_match": True,
+            "use_as_closure": True,
+            "current_path": "scripts/physical_radius_one_dressed_detector_controlled_update_recurrence_tournament_cycle608_2026_07_22.py",
+            "current_line": 660,
+            "current_numeric_residual": compiler_rows[0]["controlled_Givens_core"]["maximum_executed_8x8_residual"],
+        },
+    )
+    dropped = ({
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_RADIUS_ONE_DRESSED_DETECTOR_CONTROLLED_UPDATE_RECURRENCE_TOURNAMENT_CYCLE608_NOTE_2026-07-22.md",
+        "prior_line": 56,
+        "prior_residual": "counts described as physical detector/intertwiner/product",
+        "current_residual": "literal E/G/product/leakage not executed",
+        "same_scope": False, "scope_match": False, "exact_match": False,
+        "use_as_closure": False,
+        "current_path": "scripts/physical_radius_one_dressed_detector_controlled_update_recurrence_tournament_cycle608_2026_07_22.py",
+        "current_line": 1159,
+        "disposition": "dropped as physical evidence",
+    },)
+    def rhetoric(phrase, **tested):
+        return {
+            "phrase": phrase,
+            "per_element": tested.get("per_element", "UNTESTED_NO_NEGATIVE_CLAIM"),
+            "per_site": tested.get("per_site", "UNTESTED_NO_NEGATIVE_CLAIM"),
+            "per_mode": tested.get("per_mode", "UNTESTED_NO_NEGATIVE_CLAIM"),
+            "per_block": tested.get("per_block", "UNTESTED_NO_NEGATIVE_CLAIM"),
+            "lattice_wide": tested.get("lattice_wide", "UNTESTED_NO_NEGATIVE_CLAIM"),
+        }
+    rhetoric_rows = (
+        rhetoric("role word not promoted to encoder", per_element="factor census", per_site="coordinate counts", per_mode="q words"),
+        rhetoric("counted composite not promoted to product", per_element="small matrices", per_site="route arithmetic", per_block="no product executed"),
+        rhetoric("controlled-Givens not promoted past three qubits", per_element="exact factors", per_mode="table parameters"),
+        rhetoric("transported counts not promoted to covariance", per_element="frame matrices", per_site="chart counts"),
+        rhetoric("candidate roles not promoted to Event or Record", per_block="Boolean inverse only"),
+        rhetoric("prefix ordinals not promoted to time", per_block="prefixes 1,2,4,5,8"),
+    )
+    partial = (
+        {"file": str(Path(__file__).relative_to(ROOT)), "candidate_path": str(Path(__file__).relative_to(ROOT)), "status": "EXECUTED_NARROW_BLUEPRINT_AND_SMALL_MATRICES", "what_closes": "counts and primitive decompositions only", "what_it_closes": "counts and primitive decompositions only"},
+        {"file": "scripts/physical_coherent_detector_event_association_controlled_echo_tournament_cycle605_2026_07_22.py", "candidate_path": "scripts/physical_coherent_detector_event_association_controlled_echo_tournament_cycle605_2026_07_22.py", "status": "EXACT_PINNED_COARSE_PARENT", "what_closes": "coarse algebra only", "what_it_closes": "coarse algebra only"},
+        {"file": "scripts/physical_EG_intertwiner_product_compiler_cycle_next.py", "candidate_path": "scripts/physical_EG_intertwiner_product_compiler_cycle_next.py", "status": "NOT_CREATED_OPEN_CANDIDATE", "what_closes": "E/G/intertwiner/placement/product/leakage", "what_it_closes": "E/G/intertwiner/placement/product/leakage"},
+        {"file": "scripts/autonomous_chart_path_genesis_cycle_next.py", "candidate_path": "scripts/autonomous_chart_path_genesis_cycle_next.py", "status": "NOT_CREATED_OPEN_CANDIDATE", "what_closes": "local constraints and genesis", "what_it_closes": "local constraints and genesis"},
+        {"file": "scripts/physical_event_record_time_full_echo_cycle_next.py", "candidate_path": "scripts/physical_event_record_time_full_echo_cycle_next.py", "status": "NOT_CREATED_OPEN_CANDIDATE", "what_closes": "actuality, interval and full echo", "what_it_closes": "actuality, interval and full echo"},
+    )
+    steelman = {
+        "mechanism": "instantiate every counted factor on the complete code, give placement E, multiply G_physical, test the intertwiner and leakage, and derive chart/path roles locally",
+        "supporting_authorities": (
+            {"path": "scripts/physical_global_N3_returned_slot_compiler_cycle560_2026_07_21.py", "line": 2,
+             "relevance": "declares the complete-network N<=3 code-space blueprint"},
+            {"path": "scripts/physical_radius_one_dressed_detector_controlled_update_recurrence_tournament_cycle608_2026_07_22.py", "line": 660,
+             "relevance": "executes the exact three-qubit controlled-Givens decomposition"},
+        ),
+        "terminal_obligation": "held-L6 E/G/placement/product/intertwiner/leakage/local-constraint certificate with deletion and inverse",
+        "openness": "unattempted target-equivalent route defeats broad negative and axiom-pressure claims",
+    }
+    echo_specs = (
+        ("Cycle560 role tables", "scripts/physical_global_N3_returned_slot_compiler_cycle560_2026_07_21.py", 2, "NOT_RETIRED_AS_PHYSICAL_PRODUCT", "Cycle608 counts only", "execute product"),
+        ("Cycle563 held order", "scripts/physical_held_sparse_order_retirement_cycle563_2026_07_21.py", 2, "COMPARISON_ONLY", "held tables imported", "no leakage/product"),
+        ("Cycle590 compiler", "docs/work_history/repo/review_feedback/PHYSICAL_FULL_TORUS_DIMER_M2_COMPILER_TOURNAMENT_CYCLE590_NOTE_2026-07-22.md", 24, "NOT_BACKCREDITED", "direct shore only", "no promotion"),
+        ("Cycle605 aggregate boundary", "docs/work_history/repo/review_feedback/PHYSICAL_COHERENT_DETECTOR_EVENT_ASSOCIATION_CONTROLLED_ECHO_TOURNAMENT_CYCLE605_NOTE_2026-07-22.md", 21, "OPEN", "count blueprint only", "readout null"),
+        ("later Cycle610 covariance", "docs/work_history/repo/review_feedback/PHYSICAL_PROPER_CUBIC_SUPERCELL_STREAM_COMPOSITION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md", 25, "COMPARISON_ONLY_NO_BACK_CREDIT", "not executed", "no covariance credit"),
+        ("later Cycle612 interval", "docs/work_history/repo/review_feedback/PHYSICAL_MATTER_CAUSED_CAUSAL_INTERVAL_PROPER_TIME_BRIDGE_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md", 32, "COMPARISON_ONLY_NO_BACK_CREDIT", "not executed", "no time credit"),
+    )
+    echoes = tuple({
+        "cycle": wall, "prior_wall": wall,
+        "citation_path": citation_path, "citation_line": citation_line,
+        "retired": status, "retired_status": status,
+        "mechanism": mechanism, "retirement_mechanism": mechanism,
+        "applicability": applicability, "applicability_here": applicability,
+    } for wall, citation_path, citation_line, status, mechanism, applicability in echo_specs)
+    result = {
+        "Status": "FAIL",
+        "artifact_status": "PASS_NARROWED_FACTOR_COUNT_AND_SMALL_MATRIX_POSITIVES_ONLY",
+        "exact_target_contract": {
+            "target_statement": "literal E/G/intertwiner/placement/product/leakage/local constraints",
+            "quantifiers_domain": "full declared code on train L3, held-out L4 and held L6",
+            "allowed_premises": "exact pinned shores only",
+            "forbidden_weakenings": "counts, tables, transported labels and inherited residuals",
+            "required_controls": "deletion, malformed, inverse, held size and covariance",
+            "completion_witness": "executed E G_coarse = G_physical E and leakage",
+            "nonclosures": "blueprints and small primitive decompositions",
+        },
+        "N1_routes": routes, "N1_qualifying": len(qualifying),
+        "N1_required": 5, "N1_gate": "FAIL",
+        "N2_collapsed_walls": tuple({"wall": name, "type": spec[0], "obligation": spec[1]} for name, spec in walls.items()),
+        "N2_directional_wall_independence": directional,
+        "N3_scan_scope": "generated proof payload excluding audit text",
+        "N3_phrase_hit_classifications": phrase_hits,
+        "N3_hidden_conditions_promoted": 0,
+        "N4_exact_residual_matches": residuals, "N4_dropped_nonmatches": dropped,
+        "N5_rhetoric_resolution_ledger": rhetoric_rows,
+        "N6_partial_closure_paths": partial,
+        "N6_convention_only_closure_found": False,
+        "N6_new_axiom_required": False, "N6_control_plane_edit": False,
+        "N7_steelman": steelman, "N8_cross_cycle_echo": echoes,
+        "broad_no_go_claim": False, "minimum_content_claim": False,
+        "shared_obstruction_claim": False, "axiom_pressure_claim": False,
+    }
+    result["pass"] = bool(
+        result["Status"] == "FAIL" and len(qualifying) == 4
+        and sum(row["search_status"] == "OPEN_UNTESTED_NOT_COUNTED" for row in routes) == 3
+        and len(directional) == math.comb(len(walls), 2) == 21
+        and len(residuals) == 4 and all(
+            row["same_scope"] and row["scope_match"] and row["exact_match"]
+            and all(key in row for key in ("prior_path", "prior_line", "current_path", "current_line", "same_scope", "use_as_closure"))
+            for row in residuals)
+        and all(not row["same_scope"] and all(key in row for key in ("prior_path", "prior_line", "current_path", "current_line", "same_scope", "use_as_closure")) for row in dropped)
+        and len(dropped) == 1 and len(rhetoric_rows) == 6
+        and len(partial) == 5
+        and all(all(key in row for key in ("file", "status", "what_closes")) for row in partial)
+        and len(echoes) == 6
+        and all(all(key in row for key in ("cycle", "retired", "mechanism", "applicability", "citation_path", "citation_line")) for row in echoes)
+        and all("path" in row and "line" in row for row in steelman["supporting_authorities"])
+        and result["N3_hidden_conditions_promoted"] == 0
+        and not any((result["broad_no_go_claim"], result["minimum_content_claim"],
+                     result["shared_obstruction_claim"], result["axiom_pressure_claim"]))
+    )
+    return result
 
-Status: **conditional constructive closure with named supplied path/chart programs; no broad negative**
-Authority: **none**
-Audit: **unset**
 
-## Decisive result
-
-Cycle 608 surfaces the literal Cycle-560/563 encoder word and every Cycle-548
-target-update `Primitive`.  On the declared complete global `N<=3` code space,
-the installed physical update has the explicit factor identity
-
-`G_physical = W^dag G_target W`,
-
-and its path-controlled version is lowered family by family to one/two-M2
-gates.  The lowering is analytic over every translated factor row; it is not a
-claim that a dense full-torus operator was executed.  Representative matrices
-for all primitive families and all 1,998 transported L3 local-W Givens rows
-were executed.  The maximum controlled-Givens 8x8 residual is
-`{receipt['primitive_family_matrix_tests']['fermionic_Givens_to_Gray_CCU_maximum_8x8_residual']:.3e}`.
-
-The physical A2 detector word is not the previously quoted 215-gate bare-q
-predicate.  Its literal order at read cell `x` is
-
-`D_x^dag C_incident(x)^dag SELECT_x^dag A_x^dag P_A2 A_x SELECT_x C_incident(x) D_x`.
-
-`A`, `SELECT`, `D`, and every incident `C` equality row are materialized and
-hashed.  Exhaustive coherent auditing at **every** read cell, rather than the
-privileged chart origin alone, shows that all required `C` factors have coarse
-radius one.  For held L6 the incident-C row range is
-`{c_audit['incident_C_rows_minimum']}..{c_audit['incident_C_rows_maximum']}`;
-the full-C versus copied-incident-C conjugation residual is
-`{c_audit['full_C_vs_Cincident_conjugation_maximum_residual']:.1e}` and deleting
-one coherent-sensitive row gives at least
-`{c_audit['delete_one_sensitive_C_row_residual_minimum']:.6f}`.
-
-The origin has zero incident C rows only because it is earliest in the supplied
-chart.  That shortcut is not translation-generic.  Fixed-chart identical-device
-translation and frame-count tests fail; covariance is exact only for the
-**decorated** detector when the mod-2/mod-3 color and lexicographic tie-role
-program is transported with it.  This supplied role program is inventoried,
-not hidden as a runtime parity service.
-
-## Controlled update and detector boundary
-
-Every accepted target factor is lowered as follows:
-
-- one-M2 factor -> path-controlled two-M2 `CU`;
-- CNOT -> exact 9-one/6-two-M2 Toffoli;
-- fermionic Givens -> two Gray CNOTs plus the exact five-gate `CCU`, seven
-  two-M2 factors after the equality conjunction;
-- contact phase -> the exact seven-phase/ten-CNOT parity polynomial;
-- inverse -> reverse the installed route-return word and invert each factor.
-
-L3, held-out L4, and held L6 include exact logical counts, NN route-return
-SWAP counts, work renewal, factor digests, seam/contact cases, deletions, and
-all-24/all-576 decorated-frame controls in the receipt.
-
-This does **not** autonomously prepare the coherent selector.  A local scalar
-path M2 is allocated per cell, and the coherent detector needs the uniform
-all-zero/all-one path cat plus preserved neighbor-equality checks.  Their
-genesis/enforcement remains supplied.  Therefore the strict autonomous
-coherent detector is still open even though every conditional factor is now
-physical and exact.
-
-Cycle-605's `d+` and `d+i` memberships retain their exact relative Re/Im
-quadrature identity (maximum residual
-`{receipt['detector_reference']['inherited_executed_algebra']['maximum_quadrature_identity_residual']:.3e}`;
-maximum signal
-`{receipt['detector_reference']['inherited_executed_algebra']['maximum_relative_interference_signal']:.6f}`).
-They do not supply the absolute complex phase of `<d|psi>` against a physical
-origin.  Cycle-602's contact/free echo remains a separate relative reference
-whose independent genesis is also not derived.
-
-## Matter-caused candidate and renewal
-
-Route B now uses a physical detector output rather than supplied detector
-pointers:
-
-`P_d(pointer); Toffoli(pointer,binder,opportunity); P_d(pointer)`.
-
-The pointer and detector work return blank and the candidate opportunity is
-caused coherently by matter membership plus a supplied occupied binder.  It is
-not an occurrence or a Record.  Route C repeats the compute/bind/uncompute word
-onto fresh archive rails and advances the inherited reversible rotor for
-prefixes 1,2,4,5,8.  Those integers are recurrence counts, not time; proper-time
-calibration and Record admission remain open.
-
-## Scope, supplied structure, and disposition
-
-Supplied: the complete global `N<=3` lawful domain, M2 geometry and route-return
-router, blank branch/work/pointer rails, selected Pauli tables, fixed
-cell-color/tie chart, local detector program, uniform coherent path cat and
-path checks, finite L3/L4/L6 splits, initial A2 matter ray, and binder.
-
-Derived here: literal local/full W factor words and hashes, ordinary pivot and
-special decoder rows, all local correction rows, exact path-controlled
-primitive lowerings, physical d-membership pointer composition, coherent
-candidate uncomputation, and recurrence renewal accounting.
-
-Open: autonomous chart/path genesis, local enforcement of the global cutoff,
-an absolute same-N phase reference, occurrence/Record admission, proper time,
-Born weights, gravity/source response, and independent source/reference
-genesis.
-
-Full N1-N8 testing ships no impossibility or minimum-content claim.  These are
-unfinished constructive interfaces, not a route-independent substrate
-obstruction and not axiom pressure.  No axioms, foundation, Qualification,
-primitives, registries, policies, queues, or audit surfaces were edited.
-"""
+def note_contract():
+    body = " ".join(NOTE.read_text(encoding="utf-8").lower().replace(chr(96), "").replace("*", "").split())
+    required = (
+        "authority: none", "audit: unset", "cycle 608", "status: fail",
+        "local-factor/count blueprint", "add_local_w is not a physical detector",
+        "controlled-givens", "exact three-qubit", "physical encoder: null",
+        "intertwiner: null", "placement/product: null", "full-code leakage: null",
+        "chart/path/genesis: null", "event: null", "record: null", "time: null",
+        "full echo: null", "train l3", "held-out l4", "held l6",
+        "inherited all24", "inherited all576", "deletion", "malformed", "inverse",
+        "same_scope", "use_as_closure", "exact repository path and line",
+        "file / status / what_closes", "cycle / retired / mechanism / applicability",
+        "n1 —", "n2 —", "n3 —", "n4 —", "n5 —", "n6 —", "n7 —", "n8 —",
+        "no axiom pressure", "author accepted: false", "breakthrough: false",
+    )
+    missing = tuple(fragment for fragment in required if fragment not in body)
+    result = {"required": len(required), "missing": missing, "pass": not missing}
+    check("Cycle608 note freezes promotion boundaries and current N1-N8", not missing, result)
+    return result
 
 
-def main() -> None:
+def main():
+    global PASS, FAIL
+    PASS = FAIL = 0
     started = time.monotonic()
     signal.alarm(int(WALL_CAP_SECONDS))
+    print("Cycle608 factor/count blueprint and primitive-decomposition audit", AUTHORITY, AUDIT)
     shore_result = shore()
     givens = controlled_givens_core_test()
     primitive_tests = primitive_family_matrix_tests(givens)
-    check("all controlled primitive-family matrices are exact", primitive_tests["pass"], primitive_tests)
+    check("small primitive matrices and truth tables are exact within scope",
+          primitive_tests["pass"], primitive_tests)
     compiler_rows = []
     for length in FROZEN_LAW["sizes"].values():
         row = compiler_row(length, givens, primitive_tests)
         compiler_rows.append(row)
-        check(f"L{length} literal W/C/read/controlled-G compiler passes", row["pass"], {
-            "local": row["local_dressed_readout"]["pass"],
-            "C": row["every_cell_incident_C_coherent_audit"]["pass"],
+        check(f"L{length} local-factor/count blueprint passes", row["pass"], {
+            "local": row["local_factor_count_blueprint"]["pass"],
+            "C": row["every_cell_incident_C_role_table_audit"]["pass"],
             "target": row["Gtarget"]["pass"],
+            "physical_encoder_E": row["physical_encoder_E"],
+            "physical_primitive_product": row["physical_primitive_product"],
         })
-    detector = detector_reference_contract(compiler_rows)
-    check("physical factor detector retains exact relative quadratures with explicit genesis boundary",
-          detector["pass"] and not detector["strict_autonomous_coherent_detector_closed"], detector)
-    candidate = matter_caused_candidate(detector)
-    check("Route B candidate is driven by computed physical detector output and renews pointer/work",
-          candidate["pass"] and not candidate["detector_output_input_supplied"], candidate)
-    recurrence = recurrence_renewal(candidate)
-    check("Route C renews reversible detector work without calling recurrence time or Record",
-          recurrence["pass"] and not recurrence["recurrence_count_called_time"], recurrence)
-    discipline = no_go_discipline(compiler_rows, detector, candidate, recurrence)
-    check("N1-N8 ships no broad negative, minimum-content claim, or axiom pressure",
-          discipline["pass"] and not discipline["negative_claim_shipped"]
-          and not discipline["axiom_pressure"], discipline)
-
+    composition = algebraic_composition_blueprint(compiler_rows)
+    check("aggregate composition remains count-only with inherited Cycle605 algebra",
+          composition["pass"] and composition["physical_primitive_product"] is None, composition)
+    candidate = candidate_role_blueprint(composition)
+    check("candidate association remains count arithmetic plus inherited Boolean controls",
+          candidate["pass"] and candidate["physical_candidate_association"] is None, candidate)
+    recurrence = recurrence_role_controls(candidate)
+    check("prefix controls remain inherited ordinals, not Event/Record/time",
+          recurrence["pass"] and recurrence["proper_time"] is None, recurrence)
+    controls = malformed_inverse_deletion_controls(givens, primitive_tests)
+    check("deletion/inverse and malformed blueprint controls pass", controls["pass"], controls)
+    discipline = no_go_discipline(compiler_rows, composition, candidate, recurrence, controls)
+    check("N1-N8 gate fails broad negative while preserving narrowed positives",
+          discipline["pass"] and discipline["Status"] == "FAIL"
+          and not discipline["axiom_pressure_claim"], discipline)
+    physical_boundary = {
+        "physical_encoder_E": None, "physical_update_G": None,
+        "intertwiner_certificate": None, "physical_placement": None,
+        "physical_primitive_product": None, "full_code_leakage": None,
+        "locally_enforced_chart": None, "locally_enforced_path": None,
+        "autonomous_genesis": None, "physical_detector_readout": None,
+        "Event": None, "Record": None, "time": None, "full_echo": None,
+    }
+    check("all physical and semantic promotion fields remain null",
+          all(value is None for value in physical_boundary.values()), physical_boundary)
+    contract = note_contract()
     elapsed = time.monotonic() - started
     rss = int(resource.getrusage(resource.RUSAGE_SELF).ru_maxrss)
     if sys.platform != "darwin":
         rss *= 1024
-    receipt = {
-        "status": "conditional constructive closure; autonomous path/chart genesis and absolute reference open",
-        "authority": AUTHORITY, "audit": AUDIT,
+    check("cold resource caps", elapsed < WALL_CAP_SECONDS and rss < RSS_CAP_BYTES,
+          {"elapsed_seconds": elapsed, "maximum_RSS_bytes": rss})
+    result = {
+        "status": "PASS" if FAIL == 0 else "FAIL", "pass": FAIL == 0,
+        "tests_passed": PASS, "tests_failed": FAIL, "tests_total": PASS + FAIL,
+        "authority": AUTHORITY, "audit": AUDIT, "author_accepted": False,
+        "breakthrough": False, "constitutional_effect": "none",
         "frozen_law_sha256": FROZEN_LAW_SHA256,
-        "shore": shore_result,
-        "primitive_family_matrix_tests": primitive_tests,
+        "runner_sha256": file_sha(Path(__file__)), "note_sha256": file_sha(NOTE),
+        "shore": shore_result, "primitive_family_matrix_tests": primitive_tests,
         "compiler_rows": compiler_rows,
-        "detector_reference": detector,
-        "route_B_matter_caused_candidate": candidate,
-        "route_C_recurrence_renewal": recurrence,
+        "algebraic_composition_blueprint": composition,
+        "route_B_candidate_role_blueprint": candidate,
+        "route_C_inherited_prefix_controls": recurrence,
+        "malformed_inverse_deletion_controls": controls,
         "no_go_discipline": discipline,
+        "physical_promotion_boundary": physical_boundary,
+        "note_contract": contract,
         "six_wall_ledger": {
-            "C_ref": "d+/d+i relative Re/Im quadratures now have a literal physical factor route; absolute d phase and independent reference genesis remain open",
-            "C_num": "unchanged: complete global N<=3 is an admitted lawful domain, not locally enforced and not an N4 fixture",
-            "C_wrap": "L3/L4/L6 read/update words have exact NN route-return counts; every-cell incident-C radius-one audit exposes chart-dependent device counts",
-            "C_int": "all free/contact target primitive families have exact path-controlled 1/2-M2 lowerings; uniform coherent path-field genesis remains supplied",
-            "C_local": "literal A/SELECT/D and incident-C detector is bounded; identical unprogrammed translation/frame device fails without the supplied chart role field",
-            "C_source": "candidate opportunity is computed from physical matter membership and uncomputed, but binder, occurrence/Record admission, source response, and proper time remain supplied/open",
+            "C_ref": "Cycle605 interference inherited only; no Cycle608 physical reference/readout/full echo",
+            "C_num": "finite size counts preserve supplied global N<=3; no local enforcement",
+            "C_wrap": "tables explicit; placement/product/leakage/chart/path/genesis/covariance null",
+            "C_int": "small decompositions exact; no full physical G or intertwiner",
+            "C_local": "factor/count support enumerated; add_local_W is not encoder/detector",
+            "C_source": "candidate/prefix roles inherited; Event/Record/time/source/gravity null",
         },
-        "maturity": {
-            "operational_quantum_records_repo_strict": (4.84, 4.72),
-            "causal_time_repo_strict": (4.04, 3.86),
-            "inertia_matter_repo_strict": (4.84, 4.90),
-            "gravity_source_repo_strict": (4.10, 3.85),
-            "Born_probability_repo_strict": (4.20, 3.68),
-        },
-        "shared_obstruction": False,
-        "axiom_pressure": False,
-        "constitutional_effect": "none",
+        "maturity_rebase": None,
+        "shared_obstruction": False, "axiom_pressure": False,
         "highest_honest_terminal": (
-            "literal bounded incident-C physical A2 read and every-family path-controlled physical update, "
-            "conditional on supplied chart/path programs; matter-caused coherent candidate and renewal, not occurrence/Record/time"
+            "local-factor/count blueprints on train L3, held-out L4 and held L6 plus exact "
+            "small primitive decompositions including the three-qubit controlled-Givens word; "
+            "no physical E/G, intertwiner, placement/product, leakage, local genesis, "
+            "detector/readout, Event, Record, time or full echo"
         ),
-        "elapsed_seconds": elapsed,
-        "maximum_RSS_bytes": rss,
-        "tests_passed": PASS,
-        "tests_failed": FAIL,
-        "pass": FAIL == 0 and elapsed < WALL_CAP_SECONDS and rss < RSS_CAP_BYTES,
+        "elapsed_seconds": elapsed, "maximum_RSS_bytes": rss,
     }
-    NOTE.parent.mkdir(parents=True, exist_ok=True)
-    NOTE.write_text(note_text(receipt))
-    receipt["runner_sha256"] = file_sha(Path(__file__))
-    receipt["note_sha256"] = file_sha(NOTE)
-    receipt["note_contract"] = {
-        "mentions_authority_none": "Authority: **none**" in NOTE.read_text(),
-        "mentions_audit_unset": "Audit: **unset**" in NOTE.read_text(),
-        "does_not_call_candidate_Record": "not an occurrence or a Record" in NOTE.read_text(),
-        "exposes_chart_and_path_genesis": "uniform coherent path cat" in NOTE.read_text()
-                                          and "chart" in NOTE.read_text(),
-    }
-    receipt["pass"] = receipt["pass"] and all(receipt["note_contract"].values())
-    RECEIPT.parent.mkdir(parents=True, exist_ok=True)
-    RECEIPT.write_text(json.dumps(receipt, indent=2, sort_keys=True, default=json_default) + "\n")
-    print(json.dumps({"pass": receipt["pass"], "tests_passed": PASS,
-                      "tests_failed": FAIL, "elapsed_seconds": elapsed,
-                      "maximum_RSS_bytes": rss, "receipt": str(RECEIPT)}, indent=2))
-    if not receipt["pass"]:
-        raise SystemExit(1)
+    print(json.dumps(result, indent=2, sort_keys=True, default=json_default))
+    print("\nSUMMARY", {"pass": PASS, "fail": FAIL,
+                        "elapsed_seconds": elapsed, "maximum_RSS_bytes": rss})
+    return int(FAIL != 0)
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

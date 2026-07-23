@@ -1,0 +1,10 @@
+PASS immutable Cycle657 quartet is byte exact :: {'commit': '60f450e0090d13343686554453380990fd1fdf27', 'mismatches': []}
+PASS Cycle657, Cycle655, and Cycle652 premises are immutable and passing :: {'Cycle657': 'PASS', 'Cycle655': 'PASS', 'Cycle652': 'PASS', 'pin652': True, 'pin655': True}
+PASS route A binds every retained selector header and isolates an exact 989-bit unexported exception suffix per size :: {3: (495, 989, False), 6: (1005, 989, False), 7: (1095, 989, False)}
+PASS route B materializes exact self-delimiting next-port value words with covariance and corruption controls, but no physical sidecar placement :: {3: (110650, 2655600, 0), 6: (144796, 3475104, 0), 7: (149513, 3588312, 0)}
+PASS route C inherits exact Cycle638 counters and Cycle655 kernels but emits no gate/site digest without the unlowered evaluator :: {3: (91, 8, False), 6: (193, 8, False), 7: (211, 8, False)}
+PASS inherited leakage, exact local-kernel, token/opcode/counter, malformed, and scratch controls remain pinned :: {'lawful_leakage': 0.0, 'sectors': 207669, 'malformed': 39663}
+PASS canonical N1-N8 blocks missing retained payload/placement/decoder from becoming a shared obstruction or axiom pressure :: {'families': 5, 'walls': 3, 'pairs': 6}
+PASS Cycle659 note freezes literal positives, exact missing bits, global terminal, and N1-N8 scope :: ('Status: **PASS**', 'Authority: **none**', 'Audit: **unset**', '989', 'Route A', 'Route B', 'Route C', 'self-delimiting', 'gate/site digest', 'all24/all576', 'ordinary translations', 'N1-N8', 'Axiom pressure: **none**')
+PASS Cycle659 materializes header and successor values without promoting absent physical placement/decoder to no-host dispatch :: {'autonomous_global': False, 'emitted_digests': [None, None, None]}
+{"elapsed": 2.2709685410372913, "receipt": "outputs/physical_compressed_program_value_binding_cycle659_receipt_2026_07_23.json", "status": "PASS", "tests": "9/9"}

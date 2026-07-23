@@ -1,0 +1,939 @@
+{
+  "Status": "PASS",
+  "audit": "unset",
+  "author_accepted": false,
+  "author_artifact_status_accepted": false,
+  "authority": "none",
+  "autonomous_token_conditioned_global_dispatch_pass": false,
+  "axiom_pressure": false,
+  "axiom_pressure_gate": "FAIL / DO NOT SHIP",
+  "axiom_pressure_shipped": false,
+  "breakthrough": false,
+  "broad_negative_gate": "FAIL / DO NOT SHIP",
+  "broad_negative_shipped": false,
+  "classification": "literal retained-header binding and complete self-delimiting successor value words with three named global decoder interfaces",
+  "complete_compressed_program_value_word_pass": false,
+  "constitutional_effect": "none",
+  "cycle": 659,
+  "date": "2026-07-23",
+  "exact_target_contract": {
+    "allowed_premises": "immutable Cycle638 counters, Cycle652 placed roles/commitments, Cycle655 bounded kernels, Cycle657 program-band geometry, explicit supplied blanks",
+    "completion_witness": "complete literal value word plus physical pointer sidecar and lowered decoder emits all three immutable gate/site digests and reverses cleanly",
+    "does_not_count": "known prefix, pointer value word without placement, counters/kernels without decoder, expected digest without emitted digest, or source-code reproducibility",
+    "forbidden_weakenings": "no Python generator replay, digest-as-program, hash preimage assumption, host gate/site/path/schedule, raw-capacity-as-placement, refit, blank renewal, repair, E, preparation, occurrence, Record, time, rate, energy, source, gravity, full/strict/breakthrough/minimum/axiom promotion",
+    "quantifiers_domain": "every retained search bit, program role, next-port packet, descriptor/support/route record, L3/L6/L7 fixed event, ordinary translation, all24/all576, deletion/leakage/malformed content",
+    "target": "materialize and bind the complete compressed Cycle652 program/search values, injectively place local successor fields, lower descriptor/support/route arithmetic, and execute a recurrent no-host L3/L6/L7 gate/site stream whose forward digest matches and whose inverse returns all head/counter/route/scratch state"
+  },
+  "full_forward_inverse_no_host_traversal_pass": false,
+  "full_physical_oracle_compiler_pass": false,
+  "inherited_controls": {
+    "Cycle652_full_code_leakage_executed": false,
+    "Cycle652_lawful_auxiliary_slice_leakage_norm": 0.0,
+    "Cycle655_inverse_failures": 0,
+    "Cycle655_local_kernel_exact_residuals": {
+      "FREDKIN": 2.2809888589187985e-15,
+      "controlled_X": 2.2809888589187985e-15,
+      "controlled_Y": 2.648215548225603e-15,
+      "controlled_Z": 3.0735541546319207e-15
+    },
+    "Cycle655_malformed_sector_tests": 39663,
+    "Cycle655_parity_enable_scratch_return": true,
+    "Cycle655_token_opcode_counter_phase_sector_tests": 207669,
+    "mass_contact_seam_pin_scope": "immutable Cycle652 call/fixed-word commitments only; Cycle659 executes no new mass/contact/seam fixture",
+    "pass": true
+  },
+  "injective_local_next_port_fields_pass": false,
+  "maturity_0_to_5": {
+    "Born_and_probability": 1,
+    "causal_time": 1,
+    "gravity_and_source": 1,
+    "inertia_and_matter": 1,
+    "operational_quantum_and_records": 2
+  },
+  "minimum_content_gate": "FAIL / DO NOT SHIP",
+  "minimum_content_shipped": false,
+  "no_go_discipline": {
+    "N1_negative_gate": "FAIL / DO NOT SHIP",
+    "N1_normalized_families": [
+      {
+        "family": "literal selector/search value export",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism": "bind retained kind/selector bits by logical index",
+        "object": "Cycle652 placed search-bit seeds",
+        "result": "header prefix bound; exact 989-bit exception suffix absent per size",
+        "strength_vs_target": "target-equivalent input",
+        "terminal": "complete exact search state value word"
+      },
+      {
+        "family": "self-delimiting next-port packets",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism": "gamma-length-prefixed binary packet value word",
+        "object": "logical index and successor port coordinates",
+        "result": "complete covariant value word and raw capacity pass; physical placement/routing open",
+        "strength_vs_target": "target-equivalent successor",
+        "terminal": "injectively placed local sidecar with fine-NN source access"
+      },
+      {
+        "family": "distributed formula evaluator",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism": "Cycle638 reversible counters feeding Cycle655 opcode kernels",
+        "object": "descriptor/support/route-step state",
+        "result": "selector and counters pass; evaluator unlowered and digest null",
+        "strength_vs_target": "target-equivalent",
+        "terminal": "state-emitted immutable gate/site digest"
+      },
+      {
+        "family": "self-routing topological packet",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism": "coordinate counter on supplied backbone",
+        "object": "packet carries successor coordinate and content",
+        "result": "pointer packets materialized; missing exception content prevents complete self-routing packet",
+        "strength_vs_target": "target-equivalent",
+        "terminal": "no static pointer sidecar and exact event emission"
+      },
+      {
+        "family": "immutable Python generator replay",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism": "host regenerates exception routes and events",
+        "object": "Cycle652 source formulas",
+        "result": "not executed; source reproducibility is not autonomous evidence",
+        "strength_vs_target": "forbidden weaker replay",
+        "terminal": "physical no-host recurrent rule"
+      }
+    ],
+    "N1_open_routes_not_counted": [
+      {
+        "family": "locally generated exception BFS proof packet",
+        "status": "OPEN / NOT COUNTED"
+      },
+      {
+        "family": "recomputed successor without stored pointer",
+        "status": "OPEN / NOT COUNTED"
+      }
+    ],
+    "N1_qualifying_attempts": 5,
+    "N1_required_for_negative": 5,
+    "N2_collapsed_walls": {
+      "W_exception_payload_export": "eight run-count records and 87 direction/count pairs, 989 bits total, are absent from each retained search value surface",
+      "W_formula_decoder_lowering": "descriptor/support/route arithmetic is not lowered into a recurrent physical rule that emits gate/site events",
+      "W_pointer_sidecar_placement": "complete successor packet values exist but no injective fine-NN local M2 sidecar placement exists"
+    },
+    "N2_directed_ordered_pairs": [
+      {
+        "from": "W_exception_payload_export",
+        "implied": false,
+        "reason": "closing W_exception_payload_export does not construct W_pointer_sidecar_placement",
+        "to": "W_pointer_sidecar_placement"
+      },
+      {
+        "from": "W_exception_payload_export",
+        "implied": false,
+        "reason": "closing W_exception_payload_export does not construct W_formula_decoder_lowering",
+        "to": "W_formula_decoder_lowering"
+      },
+      {
+        "from": "W_pointer_sidecar_placement",
+        "implied": false,
+        "reason": "closing W_pointer_sidecar_placement does not construct W_exception_payload_export",
+        "to": "W_exception_payload_export"
+      },
+      {
+        "from": "W_pointer_sidecar_placement",
+        "implied": false,
+        "reason": "closing W_pointer_sidecar_placement does not construct W_formula_decoder_lowering",
+        "to": "W_formula_decoder_lowering"
+      },
+      {
+        "from": "W_formula_decoder_lowering",
+        "implied": false,
+        "reason": "closing W_formula_decoder_lowering does not construct W_exception_payload_export",
+        "to": "W_exception_payload_export"
+      },
+      {
+        "from": "W_formula_decoder_lowering",
+        "implied": false,
+        "reason": "closing W_formula_decoder_lowering does not construct W_pointer_sidecar_placement",
+        "to": "W_pointer_sidecar_placement"
+      }
+    ],
+    "N3_hidden_wall_scan": [
+      {
+        "classification": "commitment, not missing 989-bit payload",
+        "phrase": "expected search SHA-256",
+        "wall": "W_exception_payload_export"
+      },
+      {
+        "classification": "value-size discriminator, not placement",
+        "phrase": "raw pointer capacity",
+        "wall": "W_pointer_sidecar_placement"
+      },
+      {
+        "classification": "host source, not lowered recurrent physical law",
+        "phrase": "source formula exists",
+        "wall": "W_formula_decoder_lowering"
+      },
+      {
+        "classification": "separate blank-renewal interface",
+        "phrase": "supplied blanks",
+        "wall": null
+      }
+    ],
+    "N4_exact_residual_matches": [
+      {
+        "current_line": "def route_a_literal_value_export_bind",
+        "current_path": "scripts/physical_compressed_program_value_binding_cycle659_2026_07_23.py",
+        "current_residual": "all retained headers and complete pointer values materialized; exact 989-bit exception suffix, pointer placement, and decoder lowering remain",
+        "exact_match": true,
+        "prior_line": "missing program/search values and successor",
+        "prior_path": "outputs/physical_streamed_program_fibre_cycle657_receipt_2026_07_23.json",
+        "prior_ref": "60f450e0090d13343686554453380990fd1fdf27",
+        "prior_residual": "program/search values, next-port fields, and gate/site decoder open",
+        "same_scope": true,
+        "use_as_closure": false
+      }
+    ],
+    "N5_rhetoric": [
+      {
+        "claim": "literal value materialization advances",
+        "lattice_wide": "pointer sidecar and exception suffix not placed/materialized",
+        "per_block": "L3/L6/L7",
+        "per_element": "every header bit and pointer packet bit",
+        "per_mode": "formula/exception selector",
+        "per_site": "headers bind to declared seeds"
+      },
+      {
+        "claim": "global decoder remains false",
+        "lattice_wide": "no recurrent event stream or E",
+        "per_block": "expected digests only",
+        "per_element": "Cycle655 kernels exact",
+        "per_mode": "exception routes unavailable",
+        "per_site": "no local successor sidecar"
+      }
+    ],
+    "N6_partial_closure_paths": [
+      {
+        "file": "UNMATERIALIZED/physical_exception_run_payload_export_cycle_next.py",
+        "status": "OPEN / PRIORITY",
+        "what_closes": "W_exception_payload_export"
+      },
+      {
+        "file": "UNMATERIALIZED/physical_pointer_sidecar_allocator_cycle_next.py",
+        "status": "OPEN / PRIORITY",
+        "what_closes": "W_pointer_sidecar_placement"
+      },
+      {
+        "file": "UNMATERIALIZED/physical_formula_decoder_circuit_cycle_next.py",
+        "status": "OPEN / PRIORITY",
+        "what_closes": "W_formula_decoder_lowering"
+      }
+    ],
+    "N7_steelman": {
+      "actionable_steps": [
+        "retain literal exception run pairs, not hashes",
+        "place pointer packet bits with all24 ownership",
+        "route packet read/unread",
+        "emit and reverse every gate/site event until all three digests match"
+      ],
+      "mechanism": "export the 87 deterministic exception direction/count pairs as literal bits, use a streamed sidecar allocator to place each already materialized next-port packet beside its source port, then compile descriptor/support/route arithmetic into Cycle638 counters and Cycle655 controlled kernels",
+      "terminal_test": "one repeated local rule reads only placed bits, emits the exact L3/L6/L7 opcode/site digests, and returns head/token/counters/routes/scratch",
+      "why_it_breaks_the_negative": "Cycle659 supplies every header and successor value, leaving three concrete construction interfaces rather than a route-independent obstruction"
+    },
+    "N8_cross_cycle_echo": [
+      {
+        "applicability": "available for decoder lowering, not a decoder by itself",
+        "cycle": 638,
+        "mechanism": "exact reversible counters"
+      },
+      {
+        "applicability": "headers recoverable; exception payload not retained",
+        "cycle": 652,
+        "mechanism": "search state commitment and placed roles"
+      },
+      {
+        "applicability": "act layer exact; global selection absent",
+        "cycle": 655,
+        "mechanism": "bounded controlled opcode kernels"
+      },
+      {
+        "applicability": "successor/value gaps isolated",
+        "cycle": 657,
+        "mechanism": "full port/count traversal"
+      },
+      {
+        "applicability": "closes value prefixes and successor values, not placement/decoder",
+        "cycle": 659,
+        "mechanism": "header binding and pointer packet word"
+      }
+    ],
+    "Status": "PASS_SCOPED_VALUE_PREFIX_AND_POINTER_WORD_POSITIVE_GLOBAL_DECODER_OPEN",
+    "axiom_pressure": false,
+    "axiom_pressure_gate": "FAIL / DO NOT SHIP",
+    "axiom_pressure_shipped": false,
+    "broad_negative_gate": "FAIL / DO NOT SHIP",
+    "broad_negative_shipped": false,
+    "minimum_content_gate": "FAIL / DO NOT SHIP",
+    "minimum_content_shipped": false,
+    "pass": true,
+    "route_A_complete_pass": false,
+    "route_B_global_pass": false,
+    "route_C_global_pass": false,
+    "shared_obstruction_gate": "FAIL / DO NOT SHIP",
+    "shared_obstruction_shipped": false,
+    "shared_route_independent_obstruction": false
+  },
+  "optimal_next_campaign": "retain/export the exact eight exception run-counts and 87 direction/count pairs per size, then build an occupied-aware all24 sidecar allocator for the complete pointer packets before lowering descriptor/support/route arithmetic; demand emitted digest equality and inverse return, keeping blanks/repair/E separate",
+  "pass": true,
+  "recurrent_exact_gate_site_digest_pass": false,
+  "resources": {
+    "elapsed_seconds": 2.2709685410372913,
+    "maximum_RSS_bytes": 55312384
+  },
+  "route_A_literal_compressed_value_export_bind": {
+    "digest_used_as_program": false,
+    "exact_missing_payload": "each size lacks the same 989-bit exception suffix: eight 4-bit run counts plus 87 direction/count pairs of 11 bits",
+    "host_generator_replay_used": false,
+    "pass_as_complete_value_export": false,
+    "pass_as_exact_partial": true,
+    "route": "A literal compressed value export/bind",
+    "strongest_positive": "every retained kind/selector header bit is assigned a value and bound to its already placed Cycle652 seed",
+    "systems": [
+      {
+        "candidate_matches_expected": false,
+        "candidate_unknown_zero_fill_sha256": "c34809f6b99f84f58bf579df6d35f3efa5a5bba43f99056940d0a658f5d07b4c",
+        "complete_literal_value_word_bound": false,
+        "complete_search_state_bits": 1484,
+        "deduced_total_exception_direction_runs": 87,
+        "delete_one_bit_length_and_sha_residual": 1,
+        "exception_header_records": 8,
+        "expected_search_state_sha256": "a9dc978ca6a7728da695085d3d9eda599dc2e3837ad7deb663b61d98481a8c0d",
+        "first_bindings": [
+          {
+            "logical_bit": 729,
+            "port": [
+              41,
+              65,
+              65
+            ],
+            "seed": [
+              41,
+              66,
+              65
+            ],
+            "value": 0
+          },
+          {
+            "logical_bit": 730,
+            "port": [
+              41,
+              65,
+              193
+            ],
+            "seed": [
+              41,
+              66,
+              193
+            ],
+            "value": 0
+          },
+          {
+            "logical_bit": 731,
+            "port": [
+              41,
+              65,
+              194
+            ],
+            "seed": [
+              41,
+              66,
+              194
+            ],
+            "value": 0
+          },
+          {
+            "logical_bit": 732,
+            "port": [
+              41,
+              65,
+              322
+            ],
+            "seed": [
+              41,
+              66,
+              322
+            ],
+            "value": 0
+          }
+        ],
+        "flip_one_selector_header_sha_residual": 1,
+        "formula_header_records": 91,
+        "last_bindings": [
+          {
+            "logical_bit": 1220,
+            "port": [
+              64,
+              64,
+              154
+            ],
+            "seed": [
+              63,
+              64,
+              154
+            ],
+            "value": 0
+          },
+          {
+            "logical_bit": 1221,
+            "port": [
+              64,
+              64,
+              155
+            ],
+            "seed": [
+              63,
+              64,
+              155
+            ],
+            "value": 0
+          },
+          {
+            "logical_bit": 1222,
+            "port": [
+              64,
+              64,
+              156
+            ],
+            "seed": [
+              63,
+              64,
+              156
+            ],
+            "value": 0
+          },
+          {
+            "logical_bit": 1223,
+            "port": [
+              64,
+              64,
+              157
+            ],
+            "seed": [
+              63,
+              64,
+              157
+            ],
+            "value": 0
+          }
+        ],
+        "length": 3,
+        "malformed_selector_15_rejected": true,
+        "materialized_header_bits": 495,
+        "missing_direction_count_bits": 957,
+        "missing_exception_payload_bits": 989,
+        "missing_run_count_bits": 32,
+        "placed_header_binding_failures": 0,
+        "placed_header_binding_sha256": "e3cf4e15ee81eb1797cc7bbd4d2d0d46d3083122112bebcde5e25710aad49799",
+        "search_role_end": 2212,
+        "search_role_start": 729,
+        "target_header_records": 99
+      },
+      {
+        "candidate_matches_expected": false,
+        "candidate_unknown_zero_fill_sha256": "c28ec5a06f2fae1ee707ba1f5ae0b534bc294ce3c4aa1729a3cbaea39db138f0",
+        "complete_literal_value_word_bound": false,
+        "complete_search_state_bits": 1994,
+        "deduced_total_exception_direction_runs": 87,
+        "delete_one_bit_length_and_sha_residual": 1,
+        "exception_header_records": 8,
+        "expected_search_state_sha256": "d17a6fb7869341e254d8e043362938d18f06e47efcb53689da304961f74fd396",
+        "first_bindings": [
+          {
+            "logical_bit": 738,
+            "port": [
+              10,
+              323,
+              581
+            ],
+            "seed": [
+              10,
+              324,
+              581
+            ],
+            "value": 0
+          },
+          {
+            "logical_bit": 739,
+            "port": [
+              10,
+              323,
+              709
+            ],
+            "seed": [
+              10,
+              324,
+              709
+            ],
+            "value": 0
+          },
+          {
+            "logical_bit": 740,
+            "port": [
+              10,
+              323,
+              710
+            ],
+            "seed": [
+              10,
+              324,
+              710
+            ],
+            "value": 0
+          },
+          {
+            "logical_bit": 741,
+            "port": [
+              11,
+              64,
+              64
+            ],
+            "seed": [
+              11,
+              63,
+              64
+            ],
+            "value": 0
+          }
+        ],
+        "flip_one_selector_header_sha_residual": 1,
+        "formula_header_records": 193,
+        "last_bindings": [
+          {
+            "logical_bit": 1739,
+            "port": [
+              24,
+              323,
+              193
+            ],
+            "seed": [
+              24,
+              324,
+              193
+            ],
+            "value": 0
+          },
+          {
+            "logical_bit": 1740,
+            "port": [
+              24,
+              323,
+              194
+            ],
+            "seed": [
+              24,
+              324,
+              194
+            ],
+            "value": 0
+          },
+          {
+            "logical_bit": 1741,
+            "port": [
+              24,
+              323,
+              322
+            ],
+            "seed": [
+              24,
+              324,
+              322
+            ],
+            "value": 0
+          },
+          {
+            "logical_bit": 1742,
+            "port": [
+              24,
+              323,
+              323
+            ],
+            "seed": [
+              24,
+              324,
+              323
+            ],
+            "value": 0
+          }
+        ],
+        "length": 6,
+        "malformed_selector_15_rejected": true,
+        "materialized_header_bits": 1005,
+        "missing_direction_count_bits": 957,
+        "missing_exception_payload_bits": 989,
+        "missing_run_count_bits": 32,
+        "placed_header_binding_failures": 0,
+        "placed_header_binding_sha256": "a1121dc5ca31227bb5441bc7b685a587ec141f0df97adeb7f8436b47f807b777",
+        "search_role_end": 2731,
+        "search_role_start": 738,
+        "target_header_records": 201
+      },
+      {
+        "candidate_matches_expected": false,
+        "candidate_unknown_zero_fill_sha256": "f93cc848b8141d30e8eacef759423f521a59e2c109ba6a0346b0f5778fcae607",
+        "complete_literal_value_word_bound": false,
+        "complete_search_state_bits": 2084,
+        "deduced_total_exception_direction_runs": 87,
+        "delete_one_bit_length_and_sha_residual": 1,
+        "exception_header_records": 8,
+        "expected_search_state_sha256": "434c910424bb72f4660ac627f2f31256c212be336672ab462c32af00777e34c8",
+        "first_bindings": [
+          {
+            "logical_bit": 737,
+            "port": [
+              8,
+              65,
+              323
+            ],
+            "seed": [
+              8,
+              66,
+              323
+            ],
+            "value": 0
+          },
+          {
+            "logical_bit": 738,
+            "port": [
+              8,
+              65,
+              451
+            ],
+            "seed": [
+              8,
+              66,
+              451
+            ],
+            "value": 0
+          },
+          {
+            "logical_bit": 739,
+            "port": [
+              8,
+              65,
+              452
+            ],
+            "seed": [
+              8,
+              66,
+              452
+            ],
+            "value": 0
+          },
+          {
+            "logical_bit": 740,
+            "port": [
+              8,
+              65,
+              580
+            ],
+            "seed": [
+              8,
+              66,
+              580
+            ],
+            "value": 0
+          }
+        ],
+        "flip_one_selector_header_sha_residual": 1,
+        "formula_header_records": 211,
+        "last_bindings": [
+          {
+            "logical_bit": 1828,
+            "port": [
+              19,
+              193,
+              322
+            ],
+            "seed": [
+              19,
+              192,
+              322
+            ],
+            "value": 0
+          },
+          {
+            "logical_bit": 1829,
+            "port": [
+              19,
+              193,
+              323
+            ],
+            "seed": [
+              19,
+              192,
+              323
+            ],
+            "value": 0
+          },
+          {
+            "logical_bit": 1830,
+            "port": [
+              19,
+              193,
+              451
+            ],
+            "seed": [
+              19,
+              192,
+              451
+            ],
+            "value": 0
+          },
+          {
+            "logical_bit": 1831,
+            "port": [
+              19,
+              193,
+              452
+            ],
+            "seed": [
+              19,
+              192,
+              452
+            ],
+            "value": 0
+          }
+        ],
+        "length": 7,
+        "malformed_selector_15_rejected": true,
+        "materialized_header_bits": 1095,
+        "missing_direction_count_bits": 957,
+        "missing_exception_payload_bits": 989,
+        "missing_run_count_bits": 32,
+        "placed_header_binding_failures": 0,
+        "placed_header_binding_sha256": "381e6f09624a1e69a89dbbb5a705ed56d2431886f1efeb3cea187dfa13b5c9f9",
+        "search_role_end": 2820,
+        "search_role_start": 737,
+        "target_header_records": 219
+      }
+    ]
+  },
+  "route_B_self_delimiting_next_port_packets": {
+    "all24_value_failures": 0,
+    "all576_group_failures": 0,
+    "complete_next_port_value_word_materialized": true,
+    "injective_local_next_port_fields_placed": false,
+    "ordinary_translation_failures": 0,
+    "pass_as_global_route": false,
+    "pass_as_value_word": true,
+    "route": "B self-delimiting/topological next-port packets",
+    "systems": [
+      {
+        "Cycle652_capacity_margin_M2": 55985196,
+        "active_packet_value_bits": 110650,
+        "all24_frame_replicated_candidate_M2": 2655600,
+        "all24_value_transform_failures": 0,
+        "coordinate_bits_per_axis": 9,
+        "decode_failures": 0,
+        "delete_last_bit_detected": true,
+        "fine_NN_pointer_to_source_seed_routing_executed": false,
+        "flip_last_pointer_bit_residual": 1,
+        "injective_local_pointer_M2_placement_executed": false,
+        "length": 3,
+        "logical_index_bits": 12,
+        "malformed_coordinate_equal_side_rejected": true,
+        "ordinary_translation_value_failures": 0,
+        "packet_value_word_sha256": "1f3d190e4c0ae6b5140f1a9f7c8cae1d14a74631d3002363ad7d7e467ced53a1",
+        "payload_bits_per_packet": 39,
+        "program_records": 2213,
+        "raw_capacity_discriminator_pass": true,
+        "self_delimiting_prefix_bits": 24343
+      },
+      {
+        "Cycle652_capacity_margin_M2": 461394075,
+        "active_packet_value_bits": 144796,
+        "all24_frame_replicated_candidate_M2": 3475104,
+        "all24_value_transform_failures": 0,
+        "coordinate_bits_per_axis": 10,
+        "decode_failures": 0,
+        "delete_last_bit_detected": true,
+        "fine_NN_pointer_to_source_seed_routing_executed": false,
+        "flip_last_pointer_bit_residual": 1,
+        "injective_local_pointer_M2_placement_executed": false,
+        "length": 6,
+        "logical_index_bits": 12,
+        "malformed_coordinate_equal_side_rejected": true,
+        "ordinary_translation_value_failures": 0,
+        "packet_value_word_sha256": "04aa9d9b15e917c27fdf5a76ea450bd2c03de3a8762491573105e74089e486e4",
+        "payload_bits_per_packet": 42,
+        "program_records": 2732,
+        "raw_capacity_discriminator_pass": true,
+        "self_delimiting_prefix_bits": 30052
+      },
+      {
+        "Cycle652_capacity_margin_M2": 733822016,
+        "active_packet_value_bits": 149513,
+        "all24_frame_replicated_candidate_M2": 3588312,
+        "all24_value_transform_failures": 0,
+        "coordinate_bits_per_axis": 10,
+        "decode_failures": 0,
+        "delete_last_bit_detected": true,
+        "fine_NN_pointer_to_source_seed_routing_executed": false,
+        "flip_last_pointer_bit_residual": 1,
+        "injective_local_pointer_M2_placement_executed": false,
+        "length": 7,
+        "logical_index_bits": 12,
+        "malformed_coordinate_equal_side_rejected": true,
+        "ordinary_translation_value_failures": 0,
+        "packet_value_word_sha256": "07f365ce7ff05bafffd11d6ef9e59938c27d1683c597ac0f5722f69ccf93562f",
+        "payload_bits_per_packet": 42,
+        "program_records": 2821,
+        "raw_capacity_discriminator_pass": true,
+        "self_delimiting_prefix_bits": 31031
+      }
+    ]
+  },
+  "route_C_distributed_formula_evaluator": {
+    "Cycle638_fine_NN_after_decoder_routing": true,
+    "Cycle638_increment_inverse_boundary_failures": 0,
+    "Cycle638_reversible_counter_pass": true,
+    "Cycle638_total_counter_Toffoli_macros": 704,
+    "Cycle655_bounded_kernel_pass": true,
+    "Cycle655_global_dispatch_pass": false,
+    "Python_descriptor_or_route_generator_replayed": false,
+    "digest_used_as_program": false,
+    "pass_as_exact_discriminator": true,
+    "pass_as_global_route": false,
+    "route": "C distributed formula evaluator",
+    "systems": [
+      {
+        "Cycle652_expected_gate_site_sha256": "fe80668b079120963371b6ef02e0322772ff22d0bd1fc9ed242f91463ebc6ba5",
+        "checks": 132,
+        "descriptor_formula_lowered_to_physical_rule": false,
+        "descriptor_formula_source_exists": true,
+        "emitted_digest_matches": false,
+        "exception_direction_payload_available": false,
+        "exception_route_records": 8,
+        "formula_route_evaluator_lowered_to_Cycle638_counters": false,
+        "formula_route_fraction": 0.9191919191919192,
+        "formula_route_records": 91,
+        "full_forward_inverse_head_traversal_with_gate_site_events": false,
+        "length": 3,
+        "maximum_support": 17,
+        "recurrent_state_emitted_gate_site_sha256": null,
+        "route_kind_selector_failures": 0,
+        "route_records": 99,
+        "support_occurrences": 395
+      },
+      {
+        "Cycle652_expected_gate_site_sha256": "38da92dbb0e82755a4672041398b298dfd3c50cde0f8ea6afa300a772a8b574b",
+        "checks": 261,
+        "descriptor_formula_lowered_to_physical_rule": false,
+        "descriptor_formula_source_exists": true,
+        "emitted_digest_matches": false,
+        "exception_direction_payload_available": false,
+        "exception_route_records": 8,
+        "formula_route_evaluator_lowered_to_Cycle638_counters": false,
+        "formula_route_fraction": 0.9601990049751243,
+        "formula_route_records": 193,
+        "full_forward_inverse_head_traversal_with_gate_site_events": false,
+        "length": 6,
+        "maximum_support": 24,
+        "recurrent_state_emitted_gate_site_sha256": null,
+        "route_kind_selector_failures": 0,
+        "route_records": 201,
+        "support_occurrences": 785
+      },
+      {
+        "Cycle652_expected_gate_site_sha256": "620d179dd28eb47a13e83059c9bc1c8aca5c64657e9c0d49615cb182a374126a",
+        "checks": 216,
+        "descriptor_formula_lowered_to_physical_rule": false,
+        "descriptor_formula_source_exists": true,
+        "emitted_digest_matches": false,
+        "exception_direction_payload_available": false,
+        "exception_route_records": 8,
+        "formula_route_evaluator_lowered_to_Cycle638_counters": false,
+        "formula_route_fraction": 0.9634703196347032,
+        "formula_route_records": 211,
+        "full_forward_inverse_head_traversal_with_gate_site_events": false,
+        "length": 7,
+        "maximum_support": 17,
+        "recurrent_state_emitted_gate_site_sha256": null,
+        "route_kind_selector_failures": 0,
+        "route_records": 219,
+        "support_occurrences": 707
+      }
+    ]
+  },
+  "route_by_route_disposition": {
+    "A_literal_export_bind": "PARTIAL_HEADER_BINDING_PASS_EXACT_989_BIT_EXCEPTION_SUFFIX_PER_SIZE_UNEXPORTED",
+    "B_self_delimiting_packets": "PARTIAL_COMPLETE_SUCCESSOR_VALUE_WORD_PASS_INJECTIVE_LOCAL_M2_PLACEMENT_OPEN",
+    "C_distributed_evaluator": "FAIL_GLOBAL_CYCLE638_COUNTERS_AND_CYCLE655_KERNELS_PASS_FORMULA_DECODER_UNLOWERED_EMITTED_DIGEST_NULL"
+  },
+  "semantic_firewall": {
+    "counter_or_packet_phase_is_rate": false,
+    "counter_or_packet_phase_is_time": false,
+    "gate_phase_is_energy": false,
+    "head_or_pointer_is_Record": false,
+    "program_value_binding_is_full_compiler": false
+  },
+  "separate_unclosed_interfaces": {
+    "blank_renewal": "not attempted",
+    "dispatcher": "989-bit exception suffix, physical pointer sidecar, and formula decoder",
+    "physical_E": "not attempted",
+    "static_enforcement_or_repair": "not attempted"
+  },
+  "shared_obstruction_gate": "FAIL / DO NOT SHIP",
+  "shared_obstruction_shipped": false,
+  "shared_route_independent_obstruction": false,
+  "shore": {
+    "Cycle652_receipt_sha256": "56870b951b93c81125789041af6758196e588eeddf2cf7b0235e1f7fd5b03379",
+    "Cycle655_receipt_sha256": "a518191b6d52309583108558b878d4578ffb8f78386cec7766ff959e392bf3f6",
+    "freshness_check_origin_main_sha256": "1e0ec4ef4d7c5dd24243d7c3954c78a3f00ecd3d5e43805e788dd3629973a962",
+    "immutable_Cycle652_commit": "d353925ca046702f1b0f50a41a6f8fa5a0ee3395",
+    "immutable_Cycle655_commit": "a1b5d30bba9bccfedfaef87deb2472b74508f8f6",
+    "immutable_Cycle657_commit": "60f450e0090d13343686554453380990fd1fdf27",
+    "no_go_skill_origin_main_sha256": "7d1aea8243ddd972331b935e2e836657e72115da3efe259f828fe862469d68b7",
+    "observed": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_STREAMED_PROGRAM_FIBRE_CYCLE657_NOTE_2026-07-23.md": "c6c0d850cd3b47a909776e76474db38403b303e9a4d27e7d3e29a6d18cb3a05a",
+      "outputs/physical_streamed_program_fibre_cycle657_cold_2026_07_23.txt": "0f6feda424540609bbe701ce91176fecedb7d6f3aec96d21668a7619d8f90924",
+      "outputs/physical_streamed_program_fibre_cycle657_receipt_2026_07_23.json": "839bf462b87fed29490d03044dd215293ee496c9a7c561f468b19604ddef09db",
+      "scripts/physical_streamed_program_fibre_cycle657_2026_07_23.py": "3bc1c5ff01d8ed15f99d7080f698f451a983f88737779fddeab13ffa0ba1e520"
+    },
+    "pins": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_STREAMED_PROGRAM_FIBRE_CYCLE657_NOTE_2026-07-23.md": "c6c0d850cd3b47a909776e76474db38403b303e9a4d27e7d3e29a6d18cb3a05a",
+      "outputs/physical_streamed_program_fibre_cycle657_cold_2026_07_23.txt": "0f6feda424540609bbe701ce91176fecedb7d6f3aec96d21668a7619d8f90924",
+      "outputs/physical_streamed_program_fibre_cycle657_receipt_2026_07_23.json": "839bf462b87fed29490d03044dd215293ee496c9a7c561f468b19604ddef09db",
+      "scripts/physical_streamed_program_fibre_cycle657_2026_07_23.py": "3bc1c5ff01d8ed15f99d7080f698f451a983f88737779fddeab13ffa0ba1e520"
+    },
+    "proof_search_governance_origin_main_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+    "working_tree_bytes_used_as_premise": false
+  },
+  "six_wall_ledger": {
+    "C_int": "immutable call/fixed-word pins unchanged; no new mass/contact/seam fixture, inertia law, or E-intertwiner",
+    "C_local": "placed headers and complete successor values advance the stream; 989-bit suffix, pointer sidecar, decoder, blank renewal, repair, and E remain open",
+    "C_num": "exact bit words, prefixes, packet decodes, SHA commitments, capacity discriminators, and corruption residuals only; no probability/normalization claim",
+    "C_ref": "header bindings and successor values transform under ordinary translations/all24/all576; pointer placement and state-carried frame/origin remain explicit",
+    "C_source": "unchanged; bit counts, packets, counters, and digests have no gravity/source meaning",
+    "C_wrap": "selector headers and successor value roundtrips close; exception payload, physical successor access, event digest, occurrence/history, and preparation remain absent"
+  },
+  "status": "cycle659-selector-header-and-next-port-values-positive-exception-payload-placement-decoder-open",
+  "strongest_constructive_result": "all retained Cycle652 kind/selector header bits are literally valued and bound to their already placed program seeds, and complete self-delimiting next-port packet value words are constructed, decoded, corrupted, and transformed covariantly for every L3/L6/L7 program role with explicit bit/M2 overhead",
+  "supplied_structure_inventory": {
+    "Cycle638_counters": true,
+    "Cycle655_bounded_kernels": true,
+    "autonomous_blank_renewal": false,
+    "blank_backbone": true,
+    "complete_next_port_packet_values_new": true,
+    "emitted_gate_site_digests": false,
+    "immutable_expected_search_and_gate_site_digests": true,
+    "injective_pointer_sidecar_coordinates": false,
+    "literal_exception_run_payloads": false,
+    "lowered_formula_decoder": false,
+    "physical_E": false,
+    "placed_search_role_coordinates": true,
+    "retained_selector_headers": true,
+    "static_repair": false
+  },
+  "tests_failed": 0,
+  "tests_passed": 9,
+  "tests_total": 9
+}

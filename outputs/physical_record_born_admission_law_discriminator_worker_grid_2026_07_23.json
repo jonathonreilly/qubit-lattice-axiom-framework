@@ -1,0 +1,321 @@
+{
+ "antipodal": {
+  "accepted_count": 3,
+  "is_shell_function": false,
+  "orbit_constant": true,
+  "shell2_accept_reject": [
+   3,
+   15
+  ]
+ },
+ "completing_sets_after_shell1_uq": [
+  [
+   2,
+   3
+  ],
+  [
+   2,
+   5
+  ]
+ ],
+ "mimic_odd_disagreements": {
+  "held": 6,
+  "held_witness_weights": [
+   5
+  ],
+  "train": 0
+ },
+ "minimal_separating_shell_sets": [
+  [
+   1,
+   2,
+   3
+  ],
+  [
+   1,
+   2,
+   5
+  ],
+  [
+   2,
+   3,
+   4
+  ],
+  [
+   2,
+   3,
+   6
+  ],
+  [
+   2,
+   4,
+   5
+  ],
+  [
+   2,
+   5,
+   6
+  ]
+ ],
+ "orbit_census": [
+  {
+   "representative": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "shell": 0,
+   "size": 1
+  },
+  {
+   "representative": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "shell": 1,
+   "size": 6
+  },
+  {
+   "representative": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    1
+   ],
+   "shell": 2,
+   "size": 3
+  },
+  {
+   "representative": [
+    0,
+    0,
+    0,
+    1,
+    0,
+    1
+   ],
+   "shell": 2,
+   "size": 12
+  },
+  {
+   "representative": [
+    0,
+    1,
+    0,
+    1,
+    0,
+    1
+   ],
+   "shell": 3,
+   "size": 8
+  },
+  {
+   "representative": [
+    0,
+    0,
+    0,
+    1,
+    1,
+    1
+   ],
+   "shell": 3,
+   "size": 12
+  },
+  {
+   "representative": [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1
+   ],
+   "shell": 4,
+   "size": 3
+  },
+  {
+   "representative": [
+    0,
+    1,
+    0,
+    1,
+    1,
+    1
+   ],
+   "shell": 4,
+   "size": 12
+  },
+  {
+   "representative": [
+    0,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "shell": 5,
+   "size": 6
+  },
+  {
+   "representative": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "shell": 6,
+   "size": 1
+  }
+ ],
+ "pairwise_separators": [
+  {
+   "held": 6,
+   "left": "unique_quorum",
+   "right": "odd_shells",
+   "total": 26,
+   "train": 20
+  },
+  {
+   "held": 22,
+   "left": "unique_quorum",
+   "right": "nonempty",
+   "total": 57,
+   "train": 35
+  },
+  {
+   "held": 0,
+   "left": "unique_quorum",
+   "right": "low_density",
+   "total": 15,
+   "train": 15
+  },
+  {
+   "held": 16,
+   "left": "unique_quorum",
+   "right": "even_nonzero",
+   "total": 37,
+   "train": 21
+  },
+  {
+   "held": 16,
+   "left": "odd_shells",
+   "right": "nonempty",
+   "total": 31,
+   "train": 15
+  },
+  {
+   "held": 6,
+   "left": "odd_shells",
+   "right": "low_density",
+   "total": 41,
+   "train": 35
+  },
+  {
+   "held": 22,
+   "left": "odd_shells",
+   "right": "even_nonzero",
+   "total": 63,
+   "train": 41
+  },
+  {
+   "held": 22,
+   "left": "nonempty",
+   "right": "low_density",
+   "total": 42,
+   "train": 20
+  },
+  {
+   "held": 6,
+   "left": "nonempty",
+   "right": "even_nonzero",
+   "total": 32,
+   "train": 26
+  },
+  {
+   "held": 16,
+   "left": "low_density",
+   "right": "even_nonzero",
+   "total": 22,
+   "train": 6
+  }
+ ],
+ "scenario_consistent_sets": {
+  "shell1_stream_labeled_by_even_nonzero": [
+   "even_nonzero"
+  ],
+  "shell1_stream_labeled_by_unique_quorum": [
+   "low_density",
+   "nonempty",
+   "odd_shells",
+   "unique_quorum"
+  ]
+ },
+ "shell_profiles": {
+  "even_nonzero": [
+   0,
+   0,
+   1,
+   0,
+   1,
+   0,
+   1
+  ],
+  "low_density": [
+   0,
+   1,
+   1,
+   0,
+   0,
+   0,
+   0
+  ],
+  "nonempty": [
+   0,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1
+  ],
+  "odd_shells": [
+   0,
+   1,
+   0,
+   1,
+   0,
+   1,
+   0
+  ],
+  "unique_quorum": [
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0
+  ]
+ },
+ "train_only_identifiable": {
+  "even_nonzero": true,
+  "low_density": true,
+  "nonempty": true,
+  "odd_shells": true,
+  "unique_quorum": true
+ },
+ "worker": "W1 independent verification worker: pure-Python (stdlib only), computed from scratch using ONLY the w1_grid_spec.md definitions; no repository file or external value consulted.",
+ "worker_source": "#!/usr/bin/env python3\n\"\"\"W1 independent verification grid. Pure stdlib. Computed from spec definitions only.\"\"\"\nimport itertools\nimport json\nfrom collections import defaultdict\n\nOUT = (\"/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes/\"\n       \"32362ff7-5014-4081-b545-c0309d006d52/scratchpad/worker_grid.json\")\n\nresult = {}\n\n\ndef flush():\n    with open(OUT, \"w\") as f:\n        json.dump(result, f, indent=1, sort_keys=True)\n\n\n# ---------------------------------------------------------------- definitions\nDIRECTIONS = ((1, 0, 0), (-1, 0, 0), (0, 1, 0), (0, -1, 0), (0, 0, 1), (0, 0, -1))\nWORDS = [tuple(w) for w in itertools.product((0, 1), repeat=6)]  # all 64\n\nresult[\"worker\"] = (\"W1 independent verification worker: pure-Python (stdlib only), \"\n                    \"computed from scratch using ONLY the w1_grid_spec.md definitions; \"\n                    \"no repository file or external value consulted.\")\nflush()\n\n\n# --------------------------------------------------------- proper cubic frames\ndef matvec(M, v):\n    return tuple(sum(M[r][c] * v[c] for c in range(3)) for r in range(3))\n\n\ndef det3(M):\n    return (M[0][0] * (M[1][1] * M[2][2] - M[1][2] * M[2][1])\n            - M[0][1] * (M[1][0] * M[2][2] - M[1][2] * M[2][0])\n            + M[0][2] * (M[1][0] * M[2][1] - M[1][1] * M[2][0]))\n\n\nFRAMES = []\nfor p in itertools.permutations(range(3)):\n    for s in itertools.product((-1, 1), repeat=3):\n        M = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]\n        for row in range(3):\n            M[row][p[row]] = s[row]\n        if det3(M) == 1:\n            FRAMES.append(tuple(tuple(r) for r in M))\nassert len(FRAMES) == 24, len(FRAMES)\n\nDIR_INDEX = {d: i for i, d in enumerate(DIRECTIONS)}\n\n\ndef frame_perm(F):\n    perm = [None] * 6\n    for d in range(6):\n        perm[d] = DIR_INDEX[matvec(F, DIRECTIONS[d])]\n    return perm\n\n\nFRAME_PERMS = [frame_perm(F) for F in FRAMES]\nfor perm in FRAME_PERMS:\n    assert sorted(perm) == list(range(6))\n\n\ndef rotate(w, perm):\n    nw = [0] * 6\n    for d in range(6):\n        nw[perm[d]] = w[d]  # bit w[d] moved to slot perm[d]\n    return tuple(nw)\n\n\n# --------------------------------------------------------------- orbit census\nseen = set()\norbits = []\nfor w in WORDS:\n    if w in seen:\n        continue\n    orb = set()\n    for perm in FRAME_PERMS:\n        orb.add(rotate(w, perm))\n    seen |= orb\n    orbits.append(orb)\nassert sum(len(o) for o in orbits) == 64, sum(len(o) for o in orbits)\n\norbit_census = []\nfor orb in orbits:\n    rep = min(orb)  # lexicographically smallest member\n    orbit_census.append({\"shell\": sum(rep), \"size\": len(orb), \"representative\": list(rep)})\norbit_census.sort(key=lambda o: (o[\"shell\"], o[\"size\"], o[\"representative\"]))\nresult[\"orbit_census\"] = orbit_census\nflush()\n\n\n# ----------------------------------------------------------------------- laws\nLAWS = {\n    \"unique_quorum\": {1},\n    \"odd_shells\": {1, 3, 5},\n    \"nonempty\": {1, 2, 3, 4, 5, 6},\n    \"low_density\": {1, 2},\n    \"even_nonzero\": {2, 4, 6},\n}\nLAW_ORDER = [\"unique_quorum\", \"odd_shells\", \"nonempty\", \"low_density\", \"even_nonzero\"]\n\n\ndef accepts(shells, w):\n    return 1 if sum(w) in shells else 0\n\n\ndef is_train(w):\n    return sum(w) <= 3\n\n\nresult[\"shell_profiles\"] = {name: [1 if s in LAWS[name] else 0 for s in range(7)]\n                            for name in LAWS}\nflush()\n\n\n# ------------------------------------------------------------ pairwise separators\npairwise = []\nfor a, b in itertools.combinations(LAW_ORDER, 2):\n    tr = hd = 0\n    for w in WORDS:\n        if accepts(LAWS[a], w) != accepts(LAWS[b], w):\n            if is_train(w):\n                tr += 1\n            else:\n                hd += 1\n    pairwise.append({\"left\": a, \"right\": b, \"train\": tr, \"held\": hd, \"total\": tr + hd})\nresult[\"pairwise_separators\"] = pairwise\nflush()\n\n\n# ------------------------------------------------ minimal separating shell sets\ndef restricted(names, S):\n    return [tuple(result[\"shell_profiles\"][n][s] for s in S) for n in names]\n\n\ndef all_distinct(rows):\n    return len(set(rows)) == len(rows)\n\n\ndef min_separating(names, universe):\n    for k in range(len(universe) + 1):\n        found = [sorted(S) for S in itertools.combinations(universe, k)\n                 if all_distinct(restricted(names, S))]\n        if found:\n            return sorted(found)\n    return []\n\n\nresult[\"minimal_separating_shell_sets\"] = min_separating(LAW_ORDER, range(7))\nflush()\n\n\n# ------------------------------------------------------ scenario consistent sets\ndef consistent_laws(observations):\n    return sorted(name for name in LAW_ORDER\n                  if all(accepts(LAWS[name], w) == bit for w, bit in observations))\n\n\nshell1_words = [w for w in WORDS if sum(w) == 1]\nresult[\"scenario_consistent_sets\"] = {\n    \"shell1_stream_labeled_by_unique_quorum\":\n        consistent_laws([(w, accepts(LAWS[\"unique_quorum\"], w)) for w in shell1_words]),\n    \"shell1_stream_labeled_by_even_nonzero\":\n        consistent_laws([(w, accepts(LAWS[\"even_nonzero\"], w)) for w in shell1_words]),\n}\nflush()\n\n\n# --------------------------------------------------------- train-only identifiable\ntrain_words = [w for w in WORDS if is_train(w)]\nresult[\"train_only_identifiable\"] = {}\nfor name in LAW_ORDER:\n    cons = consistent_laws([(w, accepts(LAWS[name], w)) for w in train_words])\n    result[\"train_only_identifiable\"][name] = (cons == [name])\nflush()\n\n\n# --------------------------------------------- completing sets after shell1 uq\nC = result[\"scenario_consistent_sets\"][\"shell1_stream_labeled_by_unique_quorum\"]\nresult[\"completing_sets_after_shell1_uq\"] = min_separating(C, [0, 2, 3, 4, 5, 6])\nflush()\n\n\n# ------------------------------------------------------- mimic vs odd_shells\nMIMIC = {1, 3}\nm_tr = m_hd = 0\nweights = set()\nfor w in WORDS:\n    if accepts(MIMIC, w) != accepts(LAWS[\"odd_shells\"], w):\n        if is_train(w):\n            m_tr += 1\n        else:\n            m_hd += 1\n            weights.add(sum(w))\nresult[\"mimic_odd_disagreements\"] = {\"train\": m_tr, \"held\": m_hd,\n                                     \"held_witness_weights\": sorted(weights)}\nflush()\n\n\n# ----------------------------------------------------------------- antipodal\nANTIPODAL_PAIRS = {(0, 1), (2, 3), (4, 5)}\n\n\ndef antipodal_accepts(w):\n    if sum(w) != 2:\n        return 0\n    setbits = tuple(i for i in range(6) if w[i] == 1)\n    return 1 if setbits in ANTIPODAL_PAIRS else 0\n\n\nshell2_words = [w for w in WORDS if sum(w) == 2]\nbyshell = defaultdict(set)\nfor w in WORDS:\n    byshell[sum(w)].add(antipodal_accepts(w))\norbit_const = all(len(set(antipodal_accepts(w) for w in orb)) == 1 for orb in orbits)\nresult[\"antipodal\"] = {\n    \"accepted_count\": sum(antipodal_accepts(w) for w in WORDS),\n    \"shell2_accept_reject\": [sum(antipodal_accepts(w) for w in shell2_words),\n                             len(shell2_words)],\n    \"is_shell_function\": all(len(v) == 1 for v in byshell.values()),\n    \"orbit_constant\": orbit_const,\n}\nflush()\n\n\n# ------------------------------------------------------------- worker source\nwith open(__file__) as f:\n    result[\"worker_source\"] = f.read()\nflush()\n\nprint(\"orbits=%d min_sep_size=%d n_min_sets=%d mimic_train=%d mimic_held=%d\" % (\n    len(orbit_census),\n    len(result[\"minimal_separating_shell_sets\"][0]),\n    len(result[\"minimal_separating_shell_sets\"]),\n    result[\"mimic_odd_disagreements\"][\"train\"],\n    result[\"mimic_odd_disagreements\"][\"held\"],\n))\n"
+}

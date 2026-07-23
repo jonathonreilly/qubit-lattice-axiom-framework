@@ -21,6 +21,7 @@ import argparse
 import fcntl
 import hashlib
 import json
+import math
 import os
 import queue
 import re
@@ -1800,6 +1801,99 @@ def _reject_campaign_json_constant(value: str) -> None:
     raise ValueError(f"non-finite JSON value {value!r}")
 
 
+def _contains_non_finite_json_number(value: object) -> bool:
+    if isinstance(value, float):
+        return not math.isfinite(value)
+    if isinstance(value, list):
+        return any(_contains_non_finite_json_number(item) for item in value)
+    if isinstance(value, dict):
+        return any(
+            _contains_non_finite_json_number(item)
+            for item in value.values()
+        )
+    return False
+
+
+def _campaign_failure_schema_error(
+    claim_id: str,
+    reason: str,
+    failure: object,
+) -> str | None:
+    if not isinstance(failure, dict):
+        return "campaign exclusion failure is not an object"
+    result = failure.get("result")
+    if not isinstance(result, str):
+        return "campaign exclusion failure has no string result"
+    if failure.get("cid") != claim_id:
+        return "campaign exclusion failure cid does not match claim_id"
+
+    if reason == SCHEMA_QUARANTINE_RESULT:
+        expected = {"cid", "pass", "result"}
+        if result == "validation_failed":
+            expected.add("detail")
+        elif result != "malformed_json":
+            return (
+                "campaign exclusion failure result is incompatible with "
+                f"{reason!r}"
+            )
+    elif reason == COMPUTE_QUARANTINE_RESULT:
+        if result != "compute_required":
+            return (
+                "campaign exclusion failure result is incompatible with "
+                f"{reason!r}"
+            )
+        expected = {"cid", "pass", "result", "detail"}
+    elif reason == CLAIM_TRANSACTION_QUARANTINE_RESULT:
+        if result == "apply_or_gate_failed":
+            expected = {
+                "cid",
+                "result",
+                "detail",
+                "rollback_verified",
+                "rollback_detail",
+            }
+            if "pass" in failure:
+                expected.add("pass")
+            if failure.get("rollback_verified") is not True:
+                return (
+                    "claim-transaction failure has no verified rollback proof"
+                )
+            rollback_detail = failure.get("rollback_detail")
+            if (
+                not isinstance(rollback_detail, str)
+                or not rollback_detail.strip()
+            ):
+                return (
+                    "claim-transaction failure has no rollback detail"
+                )
+        elif result == CLAIM_TRANSACTION_QUARANTINE_RESULT:
+            expected = {"cid", "result", "detail"}
+        else:
+            return (
+                "campaign exclusion failure result is incompatible with "
+                f"{reason!r}"
+            )
+    else:
+        return f"unsupported failure-bearing exclusion reason {reason!r}"
+
+    if set(failure) != expected:
+        missing = sorted(expected - set(failure))
+        unexpected = sorted(set(failure) - expected)
+        return (
+            "invalid campaign exclusion failure fields "
+            f"(missing={missing}, unexpected={unexpected})"
+        )
+    if "pass" in expected:
+        pass_no = failure.get("pass")
+        if isinstance(pass_no, bool) or pass_no not in {1, 2}:
+            return "campaign exclusion failure pass must be 1 or 2"
+    if "detail" in expected:
+        detail = failure.get("detail")
+        if not isinstance(detail, str) or not detail.strip():
+            return "campaign exclusion failure has no detail"
+    return None
+
+
 def load_campaign_exclusion_records(path: Path | None) -> list[dict]:
     if path is None or not path.exists():
         return []
@@ -1827,6 +1921,11 @@ def load_campaign_exclusion_records(path: Path | None) -> list[dict]:
             raise ValueError(
                 f"{path}:{line_number}: invalid campaign exclusion JSON: {exc}"
             ) from exc
+        if _contains_non_finite_json_number(record):
+            raise ValueError(
+                f"{path}:{line_number}: campaign exclusion contains a "
+                "non-finite JSON number"
+            )
         if not isinstance(record, dict):
             raise ValueError(
                 f"{path}:{line_number}: campaign exclusion is not an object"
@@ -1858,14 +1957,26 @@ def load_campaign_exclusion_records(path: Path | None) -> list[dict]:
                 f"{path}:{line_number}: invalid campaign exclusion fields "
                 f"(missing={missing}, unexpected={unexpected})"
             )
-        if cid.strip() != cid:
+        try:
+            ledger_io.shard_path(cid)
+        except ValueError as exc:
             raise ValueError(
-                f"{path}:{line_number}: campaign exclusion claim_id is not canonical"
-            )
+                f"{path}:{line_number}: campaign exclusion claim_id is not "
+                f"shard-safe: {cid!r}"
+            ) from exc
         recorded_at = record["recorded_at"]
         if not isinstance(recorded_at, str) or not recorded_at:
             raise ValueError(
                 f"{path}:{line_number}: campaign exclusion has no recorded_at"
+            )
+        if not re.fullmatch(
+            r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}"
+            r"(?:\.\d{6})?\+00:00",
+            recorded_at,
+        ):
+            raise ValueError(
+                f"{path}:{line_number}: campaign exclusion recorded_at "
+                "is not canonical UTC ISO-8601"
             )
         try:
             timestamp = datetime.fromisoformat(recorded_at)
@@ -1874,10 +1985,13 @@ def load_campaign_exclusion_records(path: Path | None) -> list[dict]:
                 f"{path}:{line_number}: campaign exclusion recorded_at "
                 "is not ISO-8601"
             ) from exc
-        if timestamp.tzinfo is None or timestamp.utcoffset() is None:
+        if (
+            timestamp.tzinfo is None
+            or timestamp.utcoffset() != timezone.utc.utcoffset(timestamp)
+        ):
             raise ValueError(
                 f"{path}:{line_number}: campaign exclusion recorded_at "
-                "has no timezone"
+                "is not UTC"
             )
         if reason == BLOCKED_ROW_QUARANTINE_RESULT:
             invalidation_reason = record["invalidation_reason"]
@@ -1891,14 +2005,32 @@ def load_campaign_exclusion_records(path: Path | None) -> list[dict]:
                 )
         else:
             failures = record["failures"]
-            if (
-                not isinstance(failures, list)
-                or not failures
-                or not all(isinstance(item, dict) for item in failures)
-            ):
+            if not isinstance(failures, list) or not failures:
                 raise ValueError(
                     f"{path}:{line_number}: campaign exclusion failures "
                     "must be a non-empty list of objects"
+                )
+            for failure in failures:
+                failure_error = _campaign_failure_schema_error(
+                    cid,
+                    reason,
+                    failure,
+                )
+                if failure_error is not None:
+                    raise ValueError(
+                        f"{path}:{line_number}: {failure_error}"
+                    )
+            if (
+                reason == CLAIM_TRANSACTION_QUARANTINE_RESULT
+                and not any(
+                    failure.get("result") == "apply_or_gate_failed"
+                    and failure.get("rollback_verified") is True
+                    for failure in failures
+                )
+            ):
+                raise ValueError(
+                    f"{path}:{line_number}: claim-transaction exclusion has "
+                    "no verified apply/gate rollback failure"
                 )
         records.append(record)
     return records

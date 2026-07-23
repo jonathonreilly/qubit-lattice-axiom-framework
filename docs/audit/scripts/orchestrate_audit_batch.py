@@ -26,6 +26,7 @@ import queue
 import re
 import shutil
 import signal
+import stat
 import subprocess
 import sys
 import tempfile
@@ -1157,9 +1158,11 @@ def recover_lane_certification_provenance_drift(
     be exactly either the committed payload with the obsolete field removed or
     with that field refreshed to the current commit, and refuses every staged,
     untracked, deleted, malformed, metadata, or content-bearing change. The
-    verified content-only Git patch is reversed instead of restoring the whole
-    file, so an overlapping concurrent write makes the apply fail and a
-    non-overlapping write survives for the post-recovery clean check.
+    verified content-only Git patch is reversed as raw bytes instead of through
+    Git's working-tree conversion or by restoring the whole file. Exact mode
+    bits are checked across the reversal, an overlapping concurrent write makes
+    the patch fail, and a non-overlapping write survives for the post-recovery
+    clean check.
     """
     if status_output.splitlines() != [f" M {LANE_CERTIFICATION_PATH}"]:
         return False
@@ -1174,8 +1177,20 @@ def recover_lane_certification_provenance_drift(
     path = REPO_ROOT / LANE_CERTIFICATION_PATH
     try:
         working_bytes = path.read_bytes()
+        working_stat = path.lstat()
     except OSError:
         return False
+    if not stat.S_ISREG(working_stat.st_mode):
+        return False
+    working_mode = stat.S_IMODE(working_stat.st_mode)
+    working_signature = (
+        working_stat.st_dev,
+        working_stat.st_ino,
+        working_stat.st_size,
+        working_stat.st_mtime_ns,
+        working_stat.st_ctime_ns,
+        working_mode,
+    )
 
     provenance_pattern = re.compile(
         rb'(?m)^(  "repo_head": ")([0-9a-f]{40})(",)(\r?\n)'
@@ -1260,7 +1275,20 @@ def recover_lane_certification_provenance_drift(
     try:
         if path.read_bytes() != working_bytes:
             return False
+        current_stat = path.lstat()
     except OSError:
+        return False
+    current_signature = (
+        current_stat.st_dev,
+        current_stat.st_ino,
+        current_stat.st_size,
+        current_stat.st_mtime_ns,
+        current_stat.st_ctime_ns,
+        stat.S_IMODE(current_stat.st_mode),
+    )
+    if not stat.S_ISREG(current_stat.st_mode):
+        return False
+    if current_signature != working_signature:
         return False
 
     patch_path: Path | None = None
@@ -1274,15 +1302,30 @@ def recover_lane_certification_provenance_drift(
             handle.write(patch.stdout)
         reversed_patch = sh(
             [
-                "git",
-                "apply",
-                "--reverse",
-                "--whitespace=nowarn",
+                "patch",
+                "-R",
+                "-p1",
+                "-f",
+                "-s",
+                "-r",
+                os.devnull,
+                "-i",
                 str(patch_path),
             ],
             honor_cancel=honor_cancel,
         )
         if reversed_patch.returncode != 0:
+            return False
+        try:
+            final_bytes = path.read_bytes()
+            final_stat = path.lstat()
+        except OSError:
+            return False
+        if final_bytes != committed.stdout:
+            return False
+        if not stat.S_ISREG(final_stat.st_mode):
+            return False
+        if stat.S_IMODE(final_stat.st_mode) != working_mode:
             return False
         print(
             "recovered generated certification provenance drift: "

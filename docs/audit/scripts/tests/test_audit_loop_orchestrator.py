@@ -67,6 +67,14 @@ class GeneratedProvenanceRecoveryTest(unittest.TestCase):
             text=True,
         ).stdout.strip()
 
+    def _git_bytes(self, *args: str) -> bytes:
+        return subprocess.run(
+            ["git", *args],
+            cwd=self.root,
+            check=True,
+            capture_output=True,
+        ).stdout
+
     def _write(self, payload: dict) -> None:
         self.path.write_text(
             json.dumps(payload, indent=2, sort_keys=True) + "\n",
@@ -99,6 +107,53 @@ class GeneratedProvenanceRecoveryTest(unittest.TestCase):
         self.assertIsNone(error)
         self.assertEqual(json.loads(self.path.read_text()), self.payload)
         self.assertEqual(self._git("status", "--porcelain"), "")
+
+    def test_clean_main_recovers_without_autocrlf_conversion(self):
+        self._git("config", "core.autocrlf", "true")
+        self._refresh()
+        before_mode = stat.S_IMODE(self.path.stat().st_mode)
+
+        error = self._clean_main_error()
+
+        self.assertIsNone(error)
+        self.assertEqual(
+            self.path.read_bytes(),
+            self._git_bytes("show", f"HEAD:{batch.LANE_CERTIFICATION_PATH}"),
+        )
+        self.assertEqual(stat.S_IMODE(self.path.stat().st_mode), before_mode)
+
+    def test_clean_main_recovers_without_attribute_eol_conversion(self):
+        attributes = self.root / ".gitattributes"
+        attributes.write_text("*.json text eol=crlf\n", encoding="utf-8")
+        self._git("add", ".gitattributes")
+        self._git("commit", "-q", "--amend", "--no-edit")
+        self._refresh()
+        before_mode = stat.S_IMODE(self.path.stat().st_mode)
+
+        error = self._clean_main_error()
+
+        self.assertIsNone(error)
+        self.assertEqual(
+            self.path.read_bytes(),
+            self._git_bytes("show", f"HEAD:{batch.LANE_CERTIFICATION_PATH}"),
+        )
+        self.assertEqual(stat.S_IMODE(self.path.stat().st_mode), before_mode)
+
+    def test_clean_main_recovers_without_normalizing_untracked_mode_bits(self):
+        for mode in (0o600, 0o664):
+            with self.subTest(mode=oct(mode)):
+                self._refresh()
+                self.path.chmod(mode)
+                committed = self._git_bytes(
+                    "show",
+                    f"HEAD:{batch.LANE_CERTIFICATION_PATH}",
+                )
+
+                error = self._clean_main_error()
+
+                self.assertIsNone(error)
+                self.assertEqual(self.path.read_bytes(), committed)
+                self.assertEqual(stat.S_IMODE(self.path.stat().st_mode), mode)
 
     def test_clean_main_refuses_payload_drift(self):
         refreshed = dict(
@@ -255,7 +310,7 @@ class GeneratedProvenanceRecoveryTest(unittest.TestCase):
 
         def racing_sh(cmd, timeout=120, *, honor_cancel=True, text=True):
             nonlocal injected
-            if cmd[:3] == ["git", "apply", "--reverse"] and not injected:
+            if cmd[:2] == ["patch", "-R"] and not injected:
                 injected = True
                 self.path.write_text(raced_text, encoding="utf-8")
             return original_sh(
@@ -319,6 +374,51 @@ class GeneratedProvenanceRecoveryTest(unittest.TestCase):
             json.loads(self.path.read_text(encoding="utf-8"))["repo_head"],
             self._git("rev-parse", "HEAD"),
         )
+
+    def test_late_concurrent_mode_change_survives_raw_patch(self):
+        for concurrent_mode in (0o600, 0o744):
+            with self.subTest(concurrent_mode=oct(concurrent_mode)):
+                self.path.chmod(0o644)
+                self._refresh()
+                original_sh = batch.sh
+                injected = False
+
+                def racing_sh(cmd, timeout=120, *, honor_cancel=True, text=True):
+                    nonlocal injected
+                    if cmd[:2] == ["patch", "-R"] and not injected:
+                        injected = True
+                        self.path.chmod(concurrent_mode)
+                    return original_sh(
+                        cmd,
+                        timeout=timeout,
+                        honor_cancel=honor_cancel,
+                        text=text,
+                    )
+
+                with mock.patch.object(
+                    batch,
+                    "REPO_ROOT",
+                    self.root,
+                ), mock.patch.object(
+                    batch,
+                    "sh",
+                    side_effect=racing_sh,
+                ):
+                    error = batch.clean_main_error()
+
+                self.assertTrue(injected)
+                self.assertEqual(error, "working tree is not clean")
+                self.assertEqual(
+                    self.path.read_bytes(),
+                    self._git_bytes(
+                        "show",
+                        f"HEAD:{batch.LANE_CERTIFICATION_PATH}",
+                    ),
+                )
+                self.assertEqual(
+                    stat.S_IMODE(self.path.stat().st_mode),
+                    concurrent_mode,
+                )
 
 
 def _args() -> argparse.Namespace:

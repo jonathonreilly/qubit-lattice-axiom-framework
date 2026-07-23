@@ -20,9 +20,12 @@
 #                                      -> removes deprecated author-status keys
 #   4. classify_runner_passes.py     -> data/runner_classification.json
 #                                       (heuristic; optional, slow on cold cache)
-#   5. compute_load_bearing.py       -> updates graph criticality metrics
+#   5. compute_load_bearing.py       -> updates graph criticality metrics used
+#                                       by invalidation
 #   6. compute_effective_status.py   -> applies claim_type-based status + summary
 #   7. invalidate_stale_audits.py    -> resets stale audit verdicts
+#  7a. compute_load_bearing.py       -> refreshes status-dependent descendant
+#                                       metrics after the status fixed point
 #   8. build_cycle_inventory.py      -> data/cycle_inventory.json
 #   9. compute_audit_queue.py        -> data/audit_queue.json (consumes
 #                                       cycle inventory for break targets)
@@ -151,6 +154,14 @@ if [[ "${invalidated}" != "0" || "${restored}" != "0" ]]; then
   echo "invalidate/restore did not reach a fixed point after 10 passes (joint invalidation/restoration)" >&2
   exit 1
 fi
+
+echo "==> 7a/18 compute_load_bearing.py post-status fixed point"
+# The first load-bearing pass supplies topology-derived criticality to the
+# invalidator.  load_bearing_score and max_descendant_status also consume
+# effective_status, which the invalidation/restore loop can change.  Recompute
+# them here so one pipeline invocation reaches generated-state fixed point
+# instead of leaving ancestors one pass stale.
+python3 docs/audit/scripts/compute_load_bearing.py
 
 echo "==> 7b/18 compute_lane_certification.py post-invalidation fixed point"
 python3 docs/audit/scripts/compute_lane_certification.py

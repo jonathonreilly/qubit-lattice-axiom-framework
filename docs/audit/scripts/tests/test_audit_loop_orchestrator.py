@@ -717,6 +717,16 @@ class BatchExitSemanticsTest(unittest.TestCase):
                     )
                 )
 
+    def test_verified_claim_transaction_quarantine_is_resumable(self):
+        report = [
+            {"cid": "row", "result": "apply_or_gate_failed", "detail": "boom"},
+            {
+                "cid": "row",
+                "result": batch.CLAIM_TRANSACTION_QUARANTINE_RESULT,
+            },
+        ]
+        self.assertFalse(batch.report_has_hard_blocker(report))
+
     def test_mixed_failure_records_the_judicial_handoff(self):
         report = [{"cid": "broken", "result": "validation_failed"}]
         selected = [{"claim_id": "disputed"}]
@@ -775,6 +785,122 @@ class SchemaRecoveryTest(unittest.TestCase):
         self.assertEqual(len(records), 1)
         self.assertEqual(records[0]["claim_id"], "row")
         self.assertEqual(records[0]["failures"][0]["detail"], "N8 exact validator error")
+
+    def test_compute_and_transaction_exclusions_persist_typed_causes(self):
+        report = [
+            {"cid": "compute", "result": "compute_required", "detail": "cache missing"},
+            {
+                "cid": "transaction",
+                "result": "apply_or_gate_failed",
+                "detail": "pipeline failed",
+            },
+            {
+                "cid": "transaction",
+                "result": batch.CLAIM_TRANSACTION_QUARANTINE_RESULT,
+            },
+        ]
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "quarantine.jsonl"
+            batch.persist_compute_required_skips(path, {"compute"}, report)
+            batch.persist_claim_transaction_quarantines(
+                path, {"transaction"}, report
+            )
+            records = [
+                json.loads(line) for line in path.read_text().splitlines()
+            ]
+
+        self.assertEqual(
+            {row["reason"] for row in records},
+            {
+                batch.COMPUTE_QUARANTINE_RESULT,
+                batch.CLAIM_TRANSACTION_QUARANTINE_RESULT,
+            },
+        )
+        by_claim = {row["claim_id"]: row for row in records}
+        self.assertEqual(
+            by_claim["compute"]["failures"][0]["detail"], "cache missing"
+        )
+        self.assertEqual(
+            by_claim["transaction"]["failures"][0]["detail"],
+            "pipeline failed",
+        )
+
+    def test_apply_gate_failure_continues_after_verified_clean_rollback(self):
+        job = {
+            "cid": "row",
+            "pass": 1,
+            "row": {
+                "claim_id": "row",
+                "criticality": "medium",
+                "note_path": "docs/row.md",
+            },
+        }
+        envelope = {"audit": {"verdict": "audited_clean"}}
+        report = []
+        with mock.patch.object(
+            batch, "finalize_worker", return_value=(envelope, {"ok": True})
+        ), mock.patch.object(
+            batch,
+            "apply_claim_serialized",
+            return_value=(
+                False,
+                [{
+                    "cid": "row",
+                    "result": "apply_or_gate_failed",
+                    "detail": "pipeline failed",
+                }],
+            ),
+        ), mock.patch.object(
+            batch, "clean_main_error", return_value=None
+        ):
+            ok, compute, schema, handoffs = batch.apply_serialized(
+                [job], report
+            )
+
+        self.assertTrue(ok)
+        self.assertEqual(compute, set())
+        self.assertEqual(schema, set())
+        self.assertEqual(handoffs, [])
+        self.assertIn(
+            batch.CLAIM_TRANSACTION_QUARANTINE_RESULT,
+            {item["result"] for item in report},
+        )
+
+    def test_apply_gate_failure_stops_when_rollback_is_not_clean(self):
+        job = {
+            "cid": "row",
+            "pass": 1,
+            "row": {
+                "claim_id": "row",
+                "criticality": "medium",
+                "note_path": "docs/row.md",
+            },
+        }
+        report = []
+        with mock.patch.object(
+            batch,
+            "finalize_worker",
+            return_value=(
+                {"audit": {"verdict": "audited_clean"}},
+                {"ok": True},
+            ),
+        ), mock.patch.object(
+            batch,
+            "apply_claim_serialized",
+            return_value=(
+                False,
+                [{"cid": "row", "result": "apply_or_gate_failed"}],
+            ),
+        ), mock.patch.object(
+            batch, "clean_main_error", return_value="working tree is not clean"
+        ):
+            ok, _, _, _ = batch.apply_serialized([job], report)
+
+        self.assertFalse(ok)
+        self.assertNotIn(
+            batch.CLAIM_TRANSACTION_QUARANTINE_RESULT,
+            {item["result"] for item in report},
+        )
 
     def test_invalid_optional_packet_is_dropped_without_completion(self):
         invocation = "a" * 32
@@ -1942,6 +2068,26 @@ class ClaimTransactionTest(unittest.TestCase):
                     encoding="utf-8",
                 )
                 audit_ok, _ = batch.static_checkpoint.verify_checkpoint()
+                shard.write_text(
+                    json.dumps(dict(
+                        before,
+                        audit_status="audited_clean",
+                        criticality="high",
+                        direct_in_degree=7,
+                        transitive_descendants=123,
+                        max_descendant_status="retained",
+                        max_descendant_status_rank=9,
+                        load_bearing_score=42.5,
+                    )),
+                    encoding="utf-8",
+                )
+                derived_metrics_ok, derived_metrics_detail = (
+                    batch.static_checkpoint.verify_checkpoint()
+                )
+                shard.write_text(
+                    json.dumps(dict(before, audit_status="audited_clean")),
+                    encoding="utf-8",
+                )
                 with mock.patch.dict(
                     os.environ,
                     {batch.static_checkpoint.EXPECTED_NONCE_ENV: "b" * 32},
@@ -2018,6 +2164,7 @@ class ClaimTransactionTest(unittest.TestCase):
         self.assertTrue(finalized, finalize_detail)
         self.assertTrue(receipts_cleaned)
         self.assertTrue(audit_ok)
+        self.assertTrue(derived_metrics_ok, derived_metrics_detail)
         self.assertFalse(wrong_identity_ok)
         self.assertIn("changed during fast use", wrong_identity_detail)
         self.assertFalse(ignored_note_ok)
@@ -2036,6 +2183,31 @@ class ClaimTransactionTest(unittest.TestCase):
         self.assertIn("static repository inputs changed", ledger_sidecar_detail)
         self.assertFalse(topology_ok)
         self.assertIn("static repository inputs changed", detail)
+
+    def test_pipeline_recomputes_status_dependent_load_bearing_after_fixed_point(self):
+        script = (batch.SCRIPTS / "run_pipeline.sh").read_text(encoding="utf-8")
+        first = script.index(
+            'echo "==> 5/18 compute_load_bearing.py"'
+        )
+        status = script.index(
+            'echo "==> 6/18 compute_effective_status.py"'
+        )
+        final = script.index(
+            'echo "==> 7a/18 compute_load_bearing.py post-status fixed point"'
+        )
+        certification = script.index(
+            'echo "==> 7b/18 compute_lane_certification.py'
+        )
+
+        self.assertLess(first, status)
+        self.assertLess(status, final)
+        self.assertLess(final, certification)
+        self.assertEqual(
+            script.count(
+                "python3 docs/audit/scripts/compute_load_bearing.py"
+            ),
+            2,
+        )
 
     def test_run_generated_gates_selects_verdict_only_pipeline(self):
         completed = mock.Mock(returncode=0, stdout="", stderr="")

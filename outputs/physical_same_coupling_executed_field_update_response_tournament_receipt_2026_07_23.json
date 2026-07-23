@@ -1,9 +1,4 @@
 {
- "acceptance_duties": [
-  "The supervisor owns all verdicts, line-by-line review, execution, the claimed cycle number and any promotion; this runner only computes rows and writes its receipt.",
-  "Re-hash the imported c576 runner against the pinned sha before trusting any anchor; the c626/c604 notes and receipts are transcribed read-only anchors, never read from disk.",
-  "Declared divergences (D1 periodic near/far antipode-peaking) are reported, not forced to a match, and not silently promoted to a pass."
- ],
  "anchors": {
   "D1_anchor_ok": true,
   "D1_anchor_size": 7,
@@ -22,21 +17,17 @@
    "6": 0.5941867925854836,
    "7": 0.45672280493227896
   },
-  "all_anchors_reproduced": true,
-  "declared_divergences": []
+  "all_literal_comparators_matched": true,
+  "literal_comparator_mismatches": []
  },
  "audit": "unset",
  "authority": "none",
- "c576_runner_sha256_observed": "53d60249420994818e7517645ad4157e1e11c7dc184fbf89b2838e94b53977d0",
+ "c576_note_sha256_observed": "5822c14b74de606d302beb637e03dd0a30968e6a7bf120723eb3da16e09e6768",
+ "c576_receipt_sha256_observed": "bc719ca8d88662e082fd63db8f524d9af94749012208b5a76f2ea6200f305c3a",
+ "c576_runner_sha256_observed": "7980bff1293202656afeefb46c7c7dcf8145e748004b541d3619f19896c79ea7",
  "c579_imported": false,
  "claim_boundaries": {
-  "F17_domain_touched": false,
-  "PR5557_harness_compiled": false,
-  "c613_representation_charge_not_unique_coupling_stands": true,
-  "certified_object": "same-coupling executed-update response law on two declared carriers",
-  "contact_sensitive_response_is_certified_as_nothing": true,
-  "finite_Weyl_NQ_carrier_join_c607_c609_executed": false,
-  "five_over_four_ADVANCE_count_edit_driven": false,
+  "finite_Weyl_NQ_carrier_join_executed": false,
   "is_attraction_language": false,
   "is_energy": false,
   "is_gravity": false,
@@ -47,40 +38,27 @@
   "is_unique_physical_coupling_normalization": false,
   "new_axiom_primitive_or_premise_class_added": false,
   "open_real_space_coframe_K_claimed": false,
-  "three_over_four_DELAY_association_used": false
+  "qrec0_is_definition_wiring_control_only": true,
+  "representation_charge_does_not_fix_unique_coupling": true,
+  "tested_object": "same-parameter executed-update response identity on two declared carriers"
  },
  "cycle_claim": 681,
  "date": "2026-07-23",
- "declared_divergences_near_far_periodic": {
-  "reason": "On the compact 3-torus the zero-mode-removed (P0) Green's function is antipode-peaked (commute-time / heat-kernel-on-torus structure): |response| does not decay monotonically with displacement, so the near/far LOCALITY gate is ill-posed on the periodic carrier and is reported as a diagnostic, not certified.  The open Dirichlet carrier D2 carries the near/far hard gate.",
-  "rows": [
-   {
-    "E_far_exec": 0.022633335889412826,
-    "E_near_exec": 0.020575787558040598,
-    "fixture": "D1_L3",
-    "near_gt_far": false
-   },
-   {
-    "E_far_exec": 0.06979648506526626,
-    "E_near_exec": 0.0064251165222604,
-    "fixture": "D1_L6",
-    "near_gt_far": false
-   },
-   {
-    "E_far_exec": 0.0580290623494681,
-    "E_near_exec": 0.0017999504213347653,
-    "fixture": "D1_L7",
-    "near_gt_far": false
-   }
-  ]
+ "declared_falsifiers": {
+  "adiabatic_rate": "adiabatic convergence violates frozen p=2 -> FAIL",
+  "d2_near_far": "near/far inverts on a declared D2 fixture -> FAIL",
+  "decoupled_parameter_sign": "decoupled source/readout parameters fail to flip -> FAIL",
+  "integrator_ordering": "kick/drift disagree beyond O(dt^2) -> FAIL",
+  "literal_comparator": "literal comparator eigenvalue mismatches -> FAIL",
+  "reversibility": "reversibility recovery exceeds machine-tight bound -> FAIL"
  },
  "dynamics": {
   "bridge_observable": "RMS over hold of (q<rho_rec,phi> - E_stat); executed hold-mean is E_resp",
   "coupling_wiring": "single scalar q enters BOTH source insertion and receiver readout",
+  "declared_rate_p": 2.0,
   "dt": 0.01,
   "hold_window": 24.0,
   "integrator": "leapfrog / Stormer-Verlet (KDK and DKD)",
-  "preregistered_rate_p": 2.0,
   "ramp": "quartic 4u^3-3u^4 on [0,tau] (g''(0)=0, g''(tau)!=0), then hold g=1",
   "tau_ladder": [
    20.0,
@@ -158,9 +136,9 @@
    "near_gt_far": false,
    "order_bound": 0.0001,
    "order_gap": 1.3945559984573919e-11,
-   "qrec0_bare_contact": 0.020575787558040598,
-   "qrec0_certified": 0.0,
-   "receiver_zero_action": 0.0,
+   "qrec0_bare_receiver_projection": 0.020575787558040598,
+   "qrec0_response": 0.0,
+   "receiver_zero_response": 0.0,
    "reversibility_frozen": 4.09683659547211e-14,
    "reversibility_ramp": 1.2086048079120925e-15,
    "scale_abs": [
@@ -171,7 +149,7 @@
    "scale_exponent": 1.9999999999999991,
    "sign_cancellation_residual": 0.0,
    "sign_invariance_residual": 0.0,
-   "source_off_action": 0.0,
+   "source_off_response": 0.0,
    "stationary_inverse_residual": 1.1117398714674708e-15,
    "supp_src_far_overlap": [],
    "supp_src_near_overlap": [],
@@ -250,9 +228,9 @@
    "near_gt_far": false,
    "order_bound": 0.0001,
    "order_gap": 4.550911470585506e-11,
-   "qrec0_bare_contact": 0.0064251165222604,
-   "qrec0_certified": 0.0,
-   "receiver_zero_action": 0.0,
+   "qrec0_bare_receiver_projection": 0.0064251165222604,
+   "qrec0_response": 0.0,
+   "receiver_zero_response": 0.0,
    "reversibility_frozen": 2.4098793726458987e-14,
    "reversibility_ramp": 1.842944258881298e-15,
    "scale_abs": [
@@ -263,7 +241,7 @@
    "scale_exponent": 1.9999999999999984,
    "sign_cancellation_residual": 0.0,
    "sign_invariance_residual": 0.0,
-   "source_off_action": 0.0,
+   "source_off_response": 0.0,
    "stationary_inverse_residual": 3.5006702552705506e-15,
    "supp_src_far_overlap": [],
    "supp_src_near_overlap": [],
@@ -342,9 +320,9 @@
    "near_gt_far": false,
    "order_bound": 0.0001,
    "order_gap": 8.244718146047103e-11,
-   "qrec0_bare_contact": 0.0017999504213347653,
-   "qrec0_certified": 0.0,
-   "receiver_zero_action": 0.0,
+   "qrec0_bare_receiver_projection": 0.0017999504213347653,
+   "qrec0_response": 0.0,
+   "receiver_zero_response": 0.0,
    "reversibility_frozen": 1.0769580589785988e-14,
    "reversibility_ramp": 1.9808339006281305e-15,
    "scale_abs": [
@@ -355,7 +333,7 @@
    "scale_exponent": 1.9999999999999998,
    "sign_cancellation_residual": 0.0,
    "sign_invariance_residual": 0.0,
-   "source_off_action": 0.0,
+   "source_off_response": 0.0,
    "stationary_inverse_residual": 4.241715057183982e-15,
    "supp_src_far_overlap": [],
    "supp_src_near_overlap": [],
@@ -434,9 +412,9 @@
    "near_gt_far": true,
    "order_bound": 0.0001,
    "order_gap": 2.14652740027077e-11,
-   "qrec0_bare_contact": 0.06843739777646976,
-   "qrec0_certified": 0.0,
-   "receiver_zero_action": 0.0,
+   "qrec0_bare_receiver_projection": 0.06843739777646976,
+   "qrec0_response": 0.0,
+   "receiver_zero_response": 0.0,
    "reversibility_frozen": 6.011334951938732e-15,
    "reversibility_ramp": 9.413805522819228e-16,
    "scale_abs": [
@@ -447,7 +425,7 @@
    "scale_exponent": 2.0000000000000004,
    "sign_cancellation_residual": 0.0,
    "sign_invariance_residual": 0.0,
-   "source_off_action": 0.0,
+   "source_off_response": 0.0,
    "stationary_inverse_residual": 1.0039254072328698e-15,
    "supp_src_far_overlap": [],
    "supp_src_near_overlap": [],
@@ -526,9 +504,9 @@
    "near_gt_far": true,
    "order_bound": 0.0001,
    "order_gap": 2.810719712531551e-11,
-   "qrec0_bare_contact": 0.016123112000249587,
-   "qrec0_certified": 0.0,
-   "receiver_zero_action": 0.0,
+   "qrec0_bare_receiver_projection": 0.016123112000249587,
+   "qrec0_response": 0.0,
+   "receiver_zero_response": 0.0,
    "reversibility_frozen": 5.815804235447596e-15,
    "reversibility_ramp": 1.1757562889140388e-15,
    "scale_abs": [
@@ -539,7 +517,7 @@
    "scale_exponent": 1.9999999999999996,
    "sign_cancellation_residual": 0.0,
    "sign_invariance_residual": 0.0,
-   "source_off_action": 0.0,
+   "source_off_response": 0.0,
    "stationary_inverse_residual": 2.304507561557792e-15,
    "supp_src_far_overlap": [],
    "supp_src_near_overlap": [],
@@ -618,9 +596,9 @@
    "near_gt_far": true,
    "order_bound": 0.0001,
    "order_gap": 5.415093720650965e-12,
-   "qrec0_bare_contact": 0.014824417533065272,
-   "qrec0_certified": 0.0,
-   "receiver_zero_action": 0.0,
+   "qrec0_bare_receiver_projection": 0.014824417533065272,
+   "qrec0_response": 0.0,
+   "receiver_zero_response": 0.0,
    "reversibility_frozen": 6.090937542125938e-15,
    "reversibility_ramp": 9.698760070164498e-16,
    "scale_abs": [
@@ -631,7 +609,7 @@
    "scale_exponent": 2.0,
    "sign_cancellation_residual": 0.0,
    "sign_invariance_residual": 0.0,
-   "source_off_action": 0.0,
+   "source_off_response": 0.0,
    "stationary_inverse_residual": 2.2978135372107597e-15,
    "supp_src_far_overlap": [],
    "supp_src_near_overlap": [],
@@ -644,43 +622,66 @@
   }
  },
  "interpretation_firewall": [
-  "The certified object is a same-coupling executed-update response law on the two declared carriers; it is NOT energy, NOT stress, NOT a unique physical coupling normalization (q is declared; c613's representation-charge-is-not-a-unique-coupling stands), NOT a source-law selection, NOT gravity, NOT attraction language, NOT a rate, NOT physical time.",
-  "A contact-sensitive response is not energy/stress/source/gravity: the q_rec=0 bare-field readout <rho_rec, phi> is reported as diagnostic only and certified as nothing; the certified response is the q-coupled readout.",
-  "The finite-Weyl NQ carrier join (c607/c609) is not executed here and stays open; no open-real-space coframe K claim; the F17 domain is untouched.",
-  "No 3/4 DELAY association, no PR5557 harness compilation, no 5/4 ADVANCE count-edit driving.",
+  "The tested object is a same-parameter executed-update response identity on the two declared carriers; it is NOT energy, NOT stress, NOT a physical coupling derivation or normalization, NOT a source-law selection, NOT gravity, NOT attraction language, NOT a rate, and NOT physical time.",
+  "The q_rec=0 row is a definition/wiring control only: q_rec*<rho_rec,phi> is zero by definition while the bare receiver projection is nonzero. It is not a physical leakage/no-leakage result.",
+  "The finite-Weyl NQ carrier join is not executed here and stays open; no open-real-space coframe K is claimed.",
   "Carriers, ramp, hold window, grids and source/receiver supports are declared supplied structure; no new axiom, primitive, or premise class."
  ],
  "inventory": {
   "derived": [
-   "exact reproduction of the transcribed c626 periodic and Dirichlet anchor eigenvalues",
+   "exact matching of the transcribed c626 periodic and Dirichlet comparator eigenvalues",
    "exactly reversible symplectic executed update (frozen and schedule-reversed)",
    "adiabatic bridge: executed response's residual oscillation about E_stat decays as tau^-2",
-   "same-coupling even-ness in q; decoupled arm sign flip; receiver-zero null response",
+   "same-parameter even-ness in q; decoupled readout sign flip; q_rec=0 definition control",
    "measured q^2 response scaling without refit",
-   "open-carrier near/far locality; declared periodic-carrier antipode divergence",
+   "near/far inequality on the three declared D2 fixtures; exact D1 fixture diagnostics",
    "kick/drift ordering agreement within the O(dt^2) bound sharing one adiabatic limit"
   ],
   "open": [
-   "selection/derivation of the carriers, ramp, coupling q, supports and grids",
+   "selection/derivation of the carriers, ramp, coupling parameter q, supports and grids",
+   "any identification of q as a physical coupling",
    "physical energy/stress/source/gravity identification (explicitly NOT claimed)",
-   "the finite-Weyl NQ carrier join (c607/c609) and any open-real-space coframe K",
+   "the finite-Weyl NQ carrier join and any open-real-space coframe K",
    "continuum, nonlinear and strong-field extensions; endogenous source law"
   ],
   "supplied": [
-   "c576 periodic L3/L6/L7 cubic site graph and its source_profiles texture machinery",
+   "c576 L3/L6/L7 site-set convention and source_profiles texture function; no parent graph object imported",
    "two declared carriers (periodic P0 graph Laplacian; open Dirichlet FD Laplacian)",
    "bounded non-negative disjoint source/receiver supports and their frozen displacements",
-   "one physical coupling q wired to both source insertion and receiver readout",
+   "one declared coupling parameter q wired to both source insertion and receiver readout",
    "quartic ramp 4u^3-3u^4, fixed hold window, leapfrog step, KDK/DKD orderings",
-   "geometric ramp-time ladder, preregistered adiabatic rate p=2 and tolerances",
-   "transcribed Cycle-626 comparator eigenvalues and stationary identities"
+   "geometric ramp-time ladder, submitted frozen adiabatic rate p=2 and tolerances",
+   "literal transcribed Cycle-626 comparator values, used as non-authoritative provenance"
   ]
  },
  "pass": true,
+ "periodic_near_far_diagnostics": {
+  "reason": "For these submitted D1 source/receiver profiles and displacements, the absolute response at the declared far control exceeds the declared near response. These three finite-fixture rows are diagnostics only: they do not establish a general Green-function monotonicity result, locality wall, or no-go. The separate D2 fixtures carry the declared near/far inequality gate.",
+  "rows": [
+   {
+    "E_far_exec": 0.022633335889412826,
+    "E_near_exec": 0.020575787558040598,
+    "fixture": "D1_L3",
+    "near_gt_far": false
+   },
+   {
+    "E_far_exec": 0.06979648506526626,
+    "E_near_exec": 0.0064251165222604,
+    "fixture": "D1_L6",
+    "near_gt_far": false
+   },
+   {
+    "E_far_exec": 0.0580290623494681,
+    "E_near_exec": 0.0017999504213347653,
+    "fixture": "D1_L7",
+    "near_gt_far": false
+   }
+  ]
+ },
  "pins": {
-  "c576_note": "2d5650c57d5518e274803f5c511886981c8572b553dda926739cc98199939c20",
-  "c576_receipt": "06456c1443f5464949f40d81e9f1c6316b3e4e8405415b5b0035e39d4b88c3bd",
-  "c576_script": "53d60249420994818e7517645ad4157e1e11c7dc184fbf89b2838e94b53977d0",
+  "c576_note": "5822c14b74de606d302beb637e03dd0a30968e6a7bf120723eb3da16e09e6768",
+  "c576_receipt": "bc719ca8d88662e082fd63db8f524d9af94749012208b5a76f2ea6200f305c3a",
+  "c576_script": "7980bff1293202656afeefb46c7c7dcf8145e748004b541d3619f19896c79ea7",
   "c579_script": "e607e8a0d46fbb70e7be35d1897acebebdb8ad900a4ab69159e572f3fbc5c7ab",
   "c604_receipt": "2fe20ba1ddbe304a11eb1809f76d552fdab89ff77d1c281d775d730c36021e90",
   "c626_dirichlet_min": {
@@ -691,24 +692,21 @@
   "c626_note": "1346e9c5aec6206642e64059eeff0b49d59df33f8fe0584c7c8537d3e2760893",
   "c626_periodic_min_nonzero": 0.753,
   "c626_receipt": "ab8489e9875e362d2b496b1f92464e6c5c642eb3cdb72b1755e77c4d70b752f6",
-  "c626_receiver_zero_action": 0.0,
+  "c626_receiver_zero_response": 0.0,
   "c626_sign_cancellation_residual": 0.0,
-  "c626_source_off_action": 0.0,
+  "c626_source_off_response": 0.0,
   "campaign_head": "fb0ab5636e557d8de1da8e643f419867ae69197a"
  },
- "preregistered_falsifiers": {
-  "F1": "decoupled arm fails to flip -> FAIL",
-  "F2": "adiabatic convergence violates frozen p=2 -> FAIL",
-  "F3": "reversibility recovery exceeds machine-tight bound -> FAIL",
-  "F4": "anchor eigenvalue mismatches with no declared divergence -> FAIL",
-  "F5": "near/far inverts where well-posed (open carrier) -> FAIL",
-  "F6": "kick/drift disagree beyond O(dt^2) -> FAIL"
- },
+ "provenance_limits": [
+  "This runner computes deterministic support rows and writes a receipt; it sets no audit verdict or effective status.",
+  "Re-hash the imported c576 source-profile runner and its paired note/receipt. The c626/c604 values are literal transcribed comparators; their absent campaign artifacts are never read from disk and supply no authority.",
+  "The D1 near/far inversions are exact diagnostics for the submitted profiles and displacements only; they establish no general Green-function monotonicity result, locality wall, or no-go."
+ ],
  "resources": {
-  "elapsed_seconds": 8.270659875008278,
-  "peak_rss_mb": 156.75
+  "elapsed_seconds": 8.626734916004352,
+  "peak_rss_mb": 153.96875
  },
- "runner_role": "bounded drafting worker output; supervisor owns all verdicts",
+ "runner_role": "deterministic bounded-support runner; no audit or effective-status authority",
  "tests_passed": 26,
  "tests_total": 26,
  "tolerances": {

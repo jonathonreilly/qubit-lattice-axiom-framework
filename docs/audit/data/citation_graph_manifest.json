@@ -1,6 +1,6 @@
 {
- "edge_count": 14981,
- "node_count": 4471,
+ "edge_count": 14982,
+ "node_count": 4472,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -16769,6 +16769,10 @@
   "work_history.repo.review_feedback.physical_row_role_literal_fanout_cycle153_note_2026-07-15": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_same_coupling_executed_field_update_response_tournament_note_2026-07-23": {
+   "deps_hash": "87f22fb4f4a2",
+   "out_degree": 1
   },
   "work_history.repo.review_feedback.physical_serial_repeat_measurement_cycle174_note_2026-07-16": {
    "deps_hash": "30344738a16d",

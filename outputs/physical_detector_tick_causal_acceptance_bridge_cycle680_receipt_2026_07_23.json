@@ -1,0 +1,920 @@
+{
+  "actual_detector_clocks": {
+    "pass": true,
+    "rows": {
+      "held_L13_moving": {
+        "antisymmetry_defect": 1.466861463936358e-14,
+        "bound_eigen_residual": 6.865729998646452e-13,
+        "detector_law_applications_not_time": 2048,
+        "event_count": 936,
+        "event_stream_sha256": "27dc1ed15c1b839a00fab79f3a0fdd5616555e5f1e16e0d1f82af79ddcfa827f",
+        "fine_lift_per_law_application_candidate": -0.4721301284156265,
+        "first_event_source_labels_not_decoder_inputs": [
+          66,
+          68,
+          70,
+          73
+        ],
+        "last_event_source_label_not_decoder_input": 2047,
+        "lawful_domain_locked": true,
+        "length": 13,
+        "norm_defect": 2.9187763317395365e-13,
+        "pass": true,
+        "signed_count": -936,
+        "signed_tick_count_per_law_application_candidate": -0.4717741935483871,
+        "split": "held",
+        "strict_physical_M2_detector_compiler_attached": false,
+        "tick_certificate_called_occurrence": false
+      },
+      "held_L13_rest": {
+        "antisymmetry_defect": 1.381628860511187e-14,
+        "bound_eigen_residual": 2.5166725331917524e-12,
+        "detector_law_applications_not_time": 2048,
+        "event_count": 939,
+        "event_stream_sha256": "10b8d2aafcefde5b97c4e63dec82fe3be999e435f13b0628af03e67da7266813",
+        "fine_lift_per_law_application_candidate": -0.47357761433010953,
+        "first_event_source_labels_not_decoder_inputs": [
+          66,
+          68,
+          70,
+          72
+        ],
+        "last_event_source_label_not_decoder_input": 2047,
+        "lawful_domain_locked": true,
+        "length": 13,
+        "norm_defect": 3.2307490016592055e-13,
+        "pass": true,
+        "signed_count": -939,
+        "signed_tick_count_per_law_application_candidate": -0.4732862903225806,
+        "split": "held",
+        "strict_physical_M2_detector_compiler_attached": false,
+        "tick_certificate_called_occurrence": false
+      },
+      "held_pair_ratio_relational_candidate": 0.9969435085808891,
+      "train_L9_rest": {
+        "antisymmetry_defect": 1.9985129271423247e-14,
+        "bound_eigen_residual": 2.133228115203293e-12,
+        "detector_law_applications_not_time": 4096,
+        "event_count": 1909,
+        "event_stream_sha256": "9cd43d15b3c5edabe87409e65912c24b511f94a7528716a7bc682299a1356321",
+        "fine_lift_per_law_application_candidate": -0.47357742338867254,
+        "first_event_source_labels_not_decoder_inputs": [
+          66,
+          68,
+          70,
+          72
+        ],
+        "last_event_source_label_not_decoder_input": 4095,
+        "lawful_domain_locked": true,
+        "length": 9,
+        "norm_defect": 6.643574579356937e-13,
+        "pass": true,
+        "signed_count": -1909,
+        "signed_tick_count_per_law_application_candidate": -0.47346230158730157,
+        "split": "train",
+        "strict_physical_M2_detector_compiler_attached": false,
+        "tick_certificate_called_occurrence": false
+      }
+    }
+  },
+  "audit": "unset",
+  "author_accepted": false,
+  "authority": "none",
+  "axiom_pressure": false,
+  "bank_and_causal_decoder": {
+    "Cycle669_packet_replicas_per_node": 3,
+    "carry_receipt_node_indices": [
+      3
+    ],
+    "causal_Cell_index_is_physical_onehot_address_not_loop_or_update_ordinal": true,
+    "causal_Cell_index_reads": 4,
+    "causal_acceptance_assertions": [
+      {
+        "causal_row": 1,
+        "name": "rate_constancy",
+        "reason": "no physical shared co-registration apparatus joins two independent regenerated detector streams; ideal nu/s generator forbidden",
+        "status": "UNRUN_PHYSICAL"
+      },
+      {
+        "causal_row": 2,
+        "name": "ratio_transitivity",
+        "reason": "requires the same absent three-clock physical co-registration surface",
+        "status": "UNRUN_PHYSICAL"
+      },
+      {
+        "causal_row": 3,
+        "name": "offset_prediction",
+        "reason": "requires a physical calibration pair and shared event marks, not host-selected addresses",
+        "status": "UNRUN_PHYSICAL"
+      },
+      {
+        "causal_row": 4,
+        "name": "renewal_invariance",
+        "pass": true,
+        "qualification": "regenerated detector-law tick certificates and physical carry/refill overlay; co-registration mark packets supplied",
+        "status": "CONDITIONAL_INTERFACE_PASS"
+      },
+      {
+        "causal_row": 5,
+        "name": "reversal",
+        "pass": true,
+        "qualification": "reversed accepted detector-event stream; mark packets supplied",
+        "status": "CONDITIONAL_INTERFACE_PASS"
+      },
+      {
+        "causal_row": 6,
+        "name": "piecewise_additivity",
+        "pass": true,
+        "qualification": "count additivity only; physical switch and endpoint marks supplied; nu/s floor prediction not run",
+        "status": "CONDITIONAL_INTERFACE_PASS"
+      },
+      {
+        "causal_row": 7,
+        "name": "missing_shared_event",
+        "pass": true,
+        "qualification": "predecessor-link deletion on physical bridge",
+        "status": "CONDITIONAL_INTERFACE_PASS"
+      },
+      {
+        "causal_row": 8,
+        "name": "inverted_coregistration",
+        "pass": true,
+        "qualification": "unchanged causal JointOrder on state-carried positions; physical mark genesis supplied",
+        "status": "CONDITIONAL_INTERFACE_PASS"
+      },
+      {
+        "causal_row": 9,
+        "name": "no_ordinal_or_s_decoder",
+        "pass": true,
+        "qualification": "unchanged causal decoder plus Cycle680 physical decoder source audit",
+        "status": "PASS"
+      }
+    ],
+    "conditional_interface_pass": true,
+    "decoder_forbidden_source_hits": [],
+    "decoder_signatures": {
+      "causal_interval": [
+        "chain",
+        "tag_a",
+        "tag_b"
+      ],
+      "causal_position": [
+        "chain",
+        "tag"
+      ],
+      "physical": [
+        "chain",
+        "tag_a",
+        "tag_b"
+      ]
+    },
+    "deletion_controls": {
+      "binder_deletion_undefined": true,
+      "carry_receipt_deletion_signal": 16,
+      "cross_bank_predecessor_deletion_undefined": true,
+      "refill_token_deletion_visible": true,
+      "rotor_factor_deletions_detected": 3
+    },
+    "executed_tick_certificates_consumed": 12,
+    "native_Cycle669_Cycle610_route_tag_present": false,
+    "pass": true,
+    "physical_to_unchanged_causal_decoder_failures": 0,
+    "piecewise_count_rows": {
+      "additive": true,
+      "called_proper_time": false,
+      "first": 5,
+      "second": 6,
+      "total": 11
+    },
+    "refill_after_nodes": [
+      6
+    ],
+    "refills_used": 1,
+    "renewal_intervals_equal": true,
+    "renewal_ratios_equal": true,
+    "resources": {
+      "Cycle680_adapter_overlay_M2": 631,
+      "K16_root_and_per_node_rotor_carry_binder_valid_M2": 244,
+      "accepted_nodes": 12,
+      "banks": 2,
+      "capacity_per_bank": 6,
+      "constant_overlay_per_node_M2": 19,
+      "cross_bank_global_identity_predecessor_M2": 28,
+      "frozen_Cycle669_capacity6_overlay_M2_per_bank": 179,
+      "logical_maximum_support_M2": 3,
+      "lowered_maximum_support_M2": 2,
+      "maximum_within_rotor_route_edges": 6,
+      "new_rotor_placement": "node n rotor rail r at (n, r mod 4, floor(r/4)); adjacent bank blocks share a boundary",
+      "refill_token_M2": 1,
+      "rotor_step_logical_factors_per_node": {
+        "FREDKIN": 15,
+        "TOFFOLI": 17
+      },
+      "strict_end_to_end_detector_plus_adapter_M2": null,
+      "two_Cycle669_overlay_M2": 358,
+      "why_total_is_null": "the Cycle610/Cycle602 tick detector has no strict physical M2 compiler; Cycle675 static detector has no trajectory-to-tick association"
+    },
+    "reversal_intervals_negate": true,
+    "rotor_basis_failures": 0,
+    "rotor_basis_tests": 32,
+    "rotor_inverse_failures": 0,
+    "rotor_malformed_rejections": 3,
+    "supplied_actuality_admissibility_law_domain": true
+  },
+  "breakthrough": false,
+  "causal_ideal_nu_s_generator_called": false,
+  "classification": "conditional-physical-M2-acceptance-bridge",
+  "covariance": {
+    "Cycle669_all576_failures": 0,
+    "Cycle669_all576_tests": 3456,
+    "Cycle669_append_all24_failures": 0,
+    "Cycle669_append_all24_tests": 1872,
+    "Cycle675_bounded_local_CZ_sheath_closed": true,
+    "Cycle675_signed_coordinate_only_failures_preserved": 48,
+    "Cycle680_direction_all24_failures": 0,
+    "Cycle680_direction_all24_tests": 144,
+    "Cycle680_direction_all576_failures": 0,
+    "Cycle680_direction_all576_tests": 3456,
+    "compile_time_orientation_axis_chart_supplied": true,
+    "pass": true,
+    "proper_cubic_frames": 24,
+    "runtime_frame_selector": false,
+    "scalar_K16_rotor_frame_failures": 0,
+    "scalar_K16_rotor_frame_tests": 384
+  },
+  "cycle": 680,
+  "date": "2026-07-23",
+  "decoded_count_or_ratio_called_proper_time": false,
+  "elapsed_seconds": 36.780489624943584,
+  "exact_terminal_disposition": "NOT_MET_NOT_FALSIFIED",
+  "exact_terminal_met": false,
+  "frozen_shores": {
+    "Cycle610_nonpassing_shore_preserved_not_promoted": true,
+    "causal_observed": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_BRANCH_TRACKED_ISOLATION_LABELED_VERNIER_CYCLE675_NOTE_2026-07-23.md": "f6e29bfb6d7082fdea7b2fb85ef2345b898df9b5a3fdf0fc83b79a0ef760e9dc",
+      "docs/work_history/repo/review_feedback/PHYSICAL_SYNCHRONIZATION_RENEWAL_PROPER_TIME_LAW_TOURNAMENT_CYCLE676_NOTE_2026-07-23.md": "5f32c4a3f0e17583fc5549def66dca3ce06ac7f13df42fa297453c41152b9fe1",
+      "outputs/physical_branch_tracked_isolation_labeled_vernier_cycle675_receipt_2026_07_23.json": "9f48bfc3ade8798d98535b5db11ab175e8580d35dffb8a42d3775fd086b23df3",
+      "outputs/physical_synchronization_renewal_proper_time_law_tournament_cycle676_receipt_2026_07_23.json": "dd96821334a90a58142d01a46ace53601686c940482f61e863d49f47cdd5150f",
+      "scripts/physical_branch_tracked_isolation_labeled_vernier_cycle675_2026_07_23.py": "7081a9cac970f06a6f38ab0ff57cfece986d8c29f986a7805d3f16259f6fbfe3",
+      "scripts/physical_synchronization_renewal_proper_time_law_tournament_cycle676_2026_07_23.py": "ff280208ecb5913984fe25941bab2623d0979408957a65d0c111719efaaf49d9"
+    },
+    "causal_pins": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_BRANCH_TRACKED_ISOLATION_LABELED_VERNIER_CYCLE675_NOTE_2026-07-23.md": "f6e29bfb6d7082fdea7b2fb85ef2345b898df9b5a3fdf0fc83b79a0ef760e9dc",
+      "docs/work_history/repo/review_feedback/PHYSICAL_SYNCHRONIZATION_RENEWAL_PROPER_TIME_LAW_TOURNAMENT_CYCLE676_NOTE_2026-07-23.md": "5f32c4a3f0e17583fc5549def66dca3ce06ac7f13df42fa297453c41152b9fe1",
+      "outputs/physical_branch_tracked_isolation_labeled_vernier_cycle675_receipt_2026_07_23.json": "9f48bfc3ade8798d98535b5db11ab175e8580d35dffb8a42d3775fd086b23df3",
+      "outputs/physical_synchronization_renewal_proper_time_law_tournament_cycle676_receipt_2026_07_23.json": "dd96821334a90a58142d01a46ace53601686c940482f61e863d49f47cdd5150f",
+      "scripts/physical_branch_tracked_isolation_labeled_vernier_cycle675_2026_07_23.py": "7081a9cac970f06a6f38ab0ff57cfece986d8c29f986a7805d3f16259f6fbfe3",
+      "scripts/physical_synchronization_renewal_proper_time_law_tournament_cycle676_2026_07_23.py": "ff280208ecb5913984fe25941bab2623d0979408957a65d0c111719efaaf49d9"
+    },
+    "causal_receipts_pass": {
+      "675": true,
+      "676": true
+    },
+    "causal_shore": "3621220d2a5c7e769b547f1be95386ecf7a1f62e",
+    "current_observed": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_CYCLE608_LITERAL_AGGREGATE_DETECTOR_PRODUCT_CYCLE672_NOTE_2026-07-23.md": "def730b1161028a584684482fdcadd76e86ad94e3c2590862a54aaf60e9d4263",
+      "docs/work_history/repo/review_feedback/PHYSICAL_DETECTOR_FORMATION_CURRENT_INTERVAL_KERNEL_CYCLE668_NOTE_2026-07-23.md": "9d991077c7533c98fc65114e6c3f516f523eeaf547722151ae5af8e0a1fc51fd",
+      "docs/work_history/repo/review_feedback/PHYSICAL_INTRINSIC_TICK_EVENT_RELATIONAL_DURATION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md": "63854c353f477f7beb8371d3a4489c02d8787c54679ab8963c7cc828972a4ea4",
+      "docs/work_history/repo/review_feedback/PHYSICAL_OCCUPANCY_SIX_Q_SYNDROME_EXTRACTOR_CYCLE675_NOTE_2026-07-23.md": "dbabca9a1460950f9701462723679d696ef4b94a8cda7cd3a62b220f885d51f5",
+      "docs/work_history/repo/review_feedback/PHYSICAL_STATE_CARRIED_EVENT_CHAIN_SEQUENCE_PROTOCOL_CYCLE669_NOTE_2026-07-23.md": "4ba9fe3a26606a944f362e81d6262543936018c6adf497069d8800e616f0c2c5",
+      "docs/work_history/repo/review_feedback/PHYSICAL_TRANSPORTED_OBSERVABLE_RAMSEY_ECHO_EVENT_ROTOR_TOURNAMENT_CYCLE602_NOTE_2026-07-22.md": "c5971546e74165b98349791e0bcbbc910f40441855aa1181a2f14231cc674e37",
+      "outputs/physical_cycle608_literal_aggregate_detector_product_cycle672_receipt_2026_07_23.json": "41d025b4c1b4cc89cc6c27b52157a4861189055e388f9f99c1929f997e07e745",
+      "outputs/physical_detector_formation_current_interval_kernel_cycle668_receipt_2026_07_23.json": "f7f733820abdbcf5520a7edf9de9aca067aa7998374e02f3af07204c2718f6a0",
+      "outputs/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_receipt_2026_07_22.json": "0816073d1861bb8b36238ec4948c387801a75442c797baf4a52e335cf6d30ccc",
+      "outputs/physical_occupancy_six_q_syndrome_extractor_cycle675_receipt_2026_07_23.json": "ac1e8585c48f8cd67366301be1837be3cdd80e21d9d47d4242c52f8db1481d64",
+      "outputs/physical_state_carried_event_chain_sequence_protocol_cycle669_receipt_2026_07_23.json": "0765c66f3d3625892d133976aca217a5676fef0820557b12b32c988cb6180760",
+      "outputs/physical_transported_observable_ramsey_echo_event_rotor_tournament_cycle602_receipt_2026_07_22.json": "db970ce03b88fdd7d6aa29bef2fd41c8df290b957c91181aec3f24e61e4f43b3",
+      "scripts/physical_cycle608_literal_aggregate_detector_product_cycle672_2026_07_23.py": "c0af96a46e7f8a8641c0ec9de92da934fb24efc3887d9d5966e40ae91be44735",
+      "scripts/physical_detector_formation_current_interval_kernel_cycle668_2026_07_23.py": "2e3402d01b1af725b51fcd8888c1c074f82bc6add07d34d2b020952308b1742b",
+      "scripts/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22.py": "61d624d3f47e371a3b99f55a3c60db68c1fe77f5d93a21651f9172b2d49f1458",
+      "scripts/physical_occupancy_six_q_syndrome_extractor_cycle675_2026_07_23.py": "cf0ad89d0628878f1355754a419163400eda2710092f879bead34e1ed2643181",
+      "scripts/physical_state_carried_event_chain_sequence_protocol_cycle669_2026_07_23.py": "ac1237e211bf06a8eb394db0dd8001c88a5aaf81726b38a3e43bd066285a9c84",
+      "scripts/physical_transported_observable_ramsey_echo_event_rotor_tournament_cycle602_2026_07_22.py": "4b751525cd5918abbcc2ca47b71dba4bd3b2e9d2fbfd74deed0f932a8d75a137"
+    },
+    "current_pins": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_CYCLE608_LITERAL_AGGREGATE_DETECTOR_PRODUCT_CYCLE672_NOTE_2026-07-23.md": "def730b1161028a584684482fdcadd76e86ad94e3c2590862a54aaf60e9d4263",
+      "docs/work_history/repo/review_feedback/PHYSICAL_DETECTOR_FORMATION_CURRENT_INTERVAL_KERNEL_CYCLE668_NOTE_2026-07-23.md": "9d991077c7533c98fc65114e6c3f516f523eeaf547722151ae5af8e0a1fc51fd",
+      "docs/work_history/repo/review_feedback/PHYSICAL_INTRINSIC_TICK_EVENT_RELATIONAL_DURATION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md": "63854c353f477f7beb8371d3a4489c02d8787c54679ab8963c7cc828972a4ea4",
+      "docs/work_history/repo/review_feedback/PHYSICAL_OCCUPANCY_SIX_Q_SYNDROME_EXTRACTOR_CYCLE675_NOTE_2026-07-23.md": "dbabca9a1460950f9701462723679d696ef4b94a8cda7cd3a62b220f885d51f5",
+      "docs/work_history/repo/review_feedback/PHYSICAL_STATE_CARRIED_EVENT_CHAIN_SEQUENCE_PROTOCOL_CYCLE669_NOTE_2026-07-23.md": "4ba9fe3a26606a944f362e81d6262543936018c6adf497069d8800e616f0c2c5",
+      "docs/work_history/repo/review_feedback/PHYSICAL_TRANSPORTED_OBSERVABLE_RAMSEY_ECHO_EVENT_ROTOR_TOURNAMENT_CYCLE602_NOTE_2026-07-22.md": "c5971546e74165b98349791e0bcbbc910f40441855aa1181a2f14231cc674e37",
+      "outputs/physical_cycle608_literal_aggregate_detector_product_cycle672_receipt_2026_07_23.json": "41d025b4c1b4cc89cc6c27b52157a4861189055e388f9f99c1929f997e07e745",
+      "outputs/physical_detector_formation_current_interval_kernel_cycle668_receipt_2026_07_23.json": "f7f733820abdbcf5520a7edf9de9aca067aa7998374e02f3af07204c2718f6a0",
+      "outputs/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_receipt_2026_07_22.json": "0816073d1861bb8b36238ec4948c387801a75442c797baf4a52e335cf6d30ccc",
+      "outputs/physical_occupancy_six_q_syndrome_extractor_cycle675_receipt_2026_07_23.json": "ac1e8585c48f8cd67366301be1837be3cdd80e21d9d47d4242c52f8db1481d64",
+      "outputs/physical_state_carried_event_chain_sequence_protocol_cycle669_receipt_2026_07_23.json": "0765c66f3d3625892d133976aca217a5676fef0820557b12b32c988cb6180760",
+      "outputs/physical_transported_observable_ramsey_echo_event_rotor_tournament_cycle602_receipt_2026_07_22.json": "db970ce03b88fdd7d6aa29bef2fd41c8df290b957c91181aec3f24e61e4f43b3",
+      "scripts/physical_cycle608_literal_aggregate_detector_product_cycle672_2026_07_23.py": "c0af96a46e7f8a8641c0ec9de92da934fb24efc3887d9d5966e40ae91be44735",
+      "scripts/physical_detector_formation_current_interval_kernel_cycle668_2026_07_23.py": "2e3402d01b1af725b51fcd8888c1c074f82bc6add07d34d2b020952308b1742b",
+      "scripts/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22.py": "61d624d3f47e371a3b99f55a3c60db68c1fe77f5d93a21651f9172b2d49f1458",
+      "scripts/physical_occupancy_six_q_syndrome_extractor_cycle675_2026_07_23.py": "cf0ad89d0628878f1355754a419163400eda2710092f879bead34e1ed2643181",
+      "scripts/physical_state_carried_event_chain_sequence_protocol_cycle669_2026_07_23.py": "ac1237e211bf06a8eb394db0dd8001c88a5aaf81726b38a3e43bd066285a9c84",
+      "scripts/physical_transported_observable_ramsey_echo_event_rotor_tournament_cycle602_2026_07_22.py": "4b751525cd5918abbcc2ca47b71dba4bd3b2e9d2fbfd74deed0f932a8d75a137"
+    },
+    "current_receipt_pass_expected": {
+      "602": true,
+      "610": false,
+      "668": true,
+      "669": true,
+      "672": true,
+      "675": true
+    },
+    "current_receipt_pass_observed": {
+      "602": true,
+      "610": false,
+      "668": true,
+      "669": true,
+      "672": true,
+      "675": true
+    },
+    "current_shore": "d2d16ab80b261c48cd7b9162cd08be0358a6d06e",
+    "expected_preregistration_sha256": "afd5c9c2d270533fc07248985720726edbc308429de98cc1e8c08d3afb44915a",
+    "expected_target_sha256": "c82e450cce472956c9f1d417972cb826b4aff420ebef94537d8a5f0d7bff22ad",
+    "first_evidence_line": 163,
+    "frozen_before_evidence": true,
+    "pass": true,
+    "preregistration_line": 41,
+    "preregistration_sha256": "afd5c9c2d270533fc07248985720726edbc308429de98cc1e8c08d3afb44915a",
+    "target_line": 6,
+    "target_sha256": "c82e450cce472956c9f1d417972cb826b4aff420ebef94537d8a5f0d7bff22ad",
+    "working_tree_bytes_used_as_evidence": false
+  },
+  "ideal_generator_call_audit": {
+    "causal_ideal_nu_s_generator_called": false,
+    "forbidden_causal_generator_calls": [],
+    "pass": true
+  },
+  "input_surface_classification": {
+    "pass": true,
+    "rows": {
+      "Cycle602": {
+        "classification": "coarse N=2 observable and Boolean sidecar; not strict physical M2 detector or clock",
+        "contact_residual": 0.0,
+        "event_stream": false,
+        "executed_output": "finite transported/coarse detector phase words plus algebraic K4 rotor",
+        "mass_residual": 1.1102230246251565e-16,
+        "rotor_physical_EG": null,
+        "seam_residual": 0.0,
+        "strict_physical_M2": false
+      },
+      "Cycle610": {
+        "classification": "candidate opportunities; overall committed receipt has 33 pass/3 fail and is not promoted",
+        "executed_output": "locked oriented tick certificates on regenerated purified train/held detector words",
+        "objective_occurrence": false,
+        "shore_pass": false,
+        "strict_physical_M2": false
+      },
+      "Cycle668": {
+        "classification": "objective only within supplied candidate law; no Cycle610 tick association or renewal",
+        "executed_output": "declared-code detector-to-formation/current/interval stochastic kernel",
+        "target_terminal": false
+      },
+      "Cycle669": {
+        "all24_tests": 1872,
+        "all576_tests": 3456,
+        "classification": "finite event-chain protocol; route enum has no native Cycle610 tick type and non-erasing renewal is open",
+        "executed_output": "physical support-two state-carried predecessor/current/packet overlay",
+        "target_terminal": false
+      },
+      "Cycle672": {
+        "all24_all576_failures": 0,
+        "classification": "static detector macro; no physical matter-to-q encoder in that cycle and no tick stream",
+        "executed_output": "executed L3/L4/L6 origin aggregate detector macro on supplied q",
+        "sizes": [
+          3,
+          4,
+          6
+        ],
+        "strict_tick_stream": false,
+        "supplied_q": true
+      },
+      "Cycle675": {
+        "classification": "physical static detector snapshots on supplied matter rails; no autonomous trajectory/tick law",
+        "closed_all24_all576_failures": 0,
+        "executed_output": "bounded physical occupancy-to-q SWAP extractor plus local detector macro",
+        "incident_C_star_product_executed": false,
+        "same_unprogrammed_device": false,
+        "signed_coordinate_only_covariance_failures": 48,
+        "static_size_rows": [
+          {
+            "detector_macro_factors": 1065,
+            "extractor_two_M2_factors": 18,
+            "global_radius_four_matter_rail_M2": 162,
+            "length": 3,
+            "maximum_interface_residual": 9.560577135331224e-16,
+            "maximum_macro_support_M2": 8,
+            "placed_operand_M2_per_selected_cell": 61,
+            "selected_cells": 9,
+            "split": "train",
+            "terminal_leakage_probability": 0.0
+          },
+          {
+            "detector_macro_factors": 1065,
+            "extractor_two_M2_factors": 18,
+            "global_radius_four_matter_rail_M2": 384,
+            "length": 4,
+            "maximum_interface_residual": 9.560577135331224e-16,
+            "maximum_macro_support_M2": 8,
+            "placed_operand_M2_per_selected_cell": 61,
+            "selected_cells": 7,
+            "split": "held_out",
+            "terminal_leakage_probability": 0.0
+          },
+          {
+            "detector_macro_factors": 1065,
+            "extractor_two_M2_factors": 18,
+            "global_radius_four_matter_rail_M2": 1296,
+            "length": 6,
+            "maximum_interface_residual": 9.560577135331224e-16,
+            "maximum_macro_support_M2": 8,
+            "placed_operand_M2_per_selected_cell": 61,
+            "selected_cells": 7,
+            "split": "held",
+            "terminal_leakage_probability": 0.0
+          }
+        ],
+        "strict_tick_stream": false
+      }
+    }
+  },
+  "maximum_RSS_bytes": 187711488,
+  "no_go_discipline": {
+    "N1_qualifying_normalized_families": 7,
+    "N1_routes": [
+      {
+        "authority": {
+          "line": 403,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_INTRINSIC_TICK_EVENT_RELATIONAL_DURATION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md",
+          "ref": "d2d16ab80b261c48cd7b9162cd08be0358a6d06e"
+        },
+        "family": "Cycle610 transported detector tick certificates",
+        "honesty": "ATTEMPTED",
+        "object": "actual regenerated train/held detector words",
+        "status": "positive locked candidate ticks; physical detector and objective admission absent",
+        "terminal": "physical objective clock stream"
+      },
+      {
+        "authority": {
+          "line": 51,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_TRANSPORTED_OBSERVABLE_RAMSEY_ECHO_EVENT_ROTOR_TOURNAMENT_CYCLE602_NOTE_2026-07-22.md",
+          "ref": "d2d16ab80b261c48cd7b9162cd08be0358a6d06e"
+        },
+        "family": "Cycle602 transported observable and K4 rotor",
+        "honesty": "RULED OUT BY PRIOR",
+        "object": "coarse N=2 array plus Boolean sidecar",
+        "status": "positive coarse result explicitly not physical M2",
+        "terminal": "strict physical detector/clock"
+      },
+      {
+        "authority": {
+          "line": 33,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_CYCLE608_LITERAL_AGGREGATE_DETECTOR_PRODUCT_CYCLE672_NOTE_2026-07-23.md",
+          "ref": "d2d16ab80b261c48cd7b9162cd08be0358a6d06e"
+        },
+        "family": "Cycle672 supplied-q detector macro",
+        "honesty": "RULED OUT BY PRIOR",
+        "object": "physical macro on supplied q",
+        "status": "static supplied-q detector; no matter-to-q or stream in that cycle",
+        "terminal": "material tick stream"
+      },
+      {
+        "authority": {
+          "line": 89,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_OCCUPANCY_SIX_Q_SYNDROME_EXTRACTOR_CYCLE675_NOTE_2026-07-23.md",
+          "ref": "d2d16ab80b261c48cd7b9162cd08be0358a6d06e"
+        },
+        "family": "Cycle675 occupancy-to-q detector",
+        "honesty": "ATTEMPTED",
+        "object": "physical L3/L4/L6 static detector snapshots",
+        "status": "positive bounded snapshot; no trajectory/tick association",
+        "terminal": "autonomous moving clock and generic device"
+      },
+      {
+        "authority": {
+          "line": 138,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_STATE_CARRIED_EVENT_CHAIN_SEQUENCE_PROTOCOL_CYCLE669_NOTE_2026-07-23.md",
+          "ref": "d2d16ab80b261c48cd7b9162cd08be0358a6d06e"
+        },
+        "family": "Cycle668/669 objective formation and predecessor chain",
+        "honesty": "ATTEMPTED",
+        "object": "supplied-law event and finite physical packet chain",
+        "status": "finite protocol positive; Cycle610 route type and non-erasing renewal absent",
+        "terminal": "native Cycle610 acceptance and renewal"
+      },
+      {
+        "authority": {
+          "line": 25,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_SYNCHRONIZATION_RENEWAL_PROPER_TIME_LAW_TOURNAMENT_CYCLE676_NOTE_2026-07-23.md",
+          "ref": "3621220d2a5c7e769b547f1be95386ecf7a1f62e"
+        },
+        "family": "causal Cycle676 ideal event-stream harness",
+        "honesty": "RULED OUT BY PRIOR",
+        "object": "nu/s-generated law-level chains",
+        "status": "nine law assertions pass but s is not physical and must not be replayed here",
+        "terminal": "physical apparatus acceptance"
+      },
+      {
+        "authority": {
+          "line": 403,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_INTRINSIC_TICK_EVENT_RELATIONAL_DURATION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md",
+          "ref": "d2d16ab80b261c48cd7b9162cd08be0358a6d06e"
+        },
+        "family": "Cycle680 two-bank K16 carry adapter",
+        "honesty": "ATTEMPTED",
+        "object": "regenerated tick certificates plus physical packet/rotor/carry overlay",
+        "status": "renewal/reversal/additivity/refusal decoder interface passes conditionally; sync rows unrun",
+        "terminal": "all causal assertions"
+      },
+      {
+        "authority": {
+          "line": 89,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_OCCUPANCY_SIX_Q_SYNDROME_EXTRACTOR_CYCLE675_NOTE_2026-07-23.md",
+          "ref": "d2d16ab80b261c48cd7b9162cd08be0358a6d06e"
+        },
+        "family": "matter-generated dual clock and co-registration apparatus",
+        "honesty": "OPEN_NOT_COUNTED",
+        "object": "two physical detectors coupled by local shared events",
+        "status": "not attempted",
+        "terminal": "unchanged rate/offset assertions"
+      }
+    ],
+    "N2_directed_pairwise_table": [
+      {
+        "from": "W_tick_source_physical_M2",
+        "implied": false,
+        "reason": "distinct source, admission, co-registration, renewal or identification obligation",
+        "to": "W_objective_admission"
+      },
+      {
+        "from": "W_tick_source_physical_M2",
+        "implied": false,
+        "reason": "distinct source, admission, co-registration, renewal or identification obligation",
+        "to": "W_shared_coregistration"
+      },
+      {
+        "from": "W_tick_source_physical_M2",
+        "implied": false,
+        "reason": "distinct source, admission, co-registration, renewal or identification obligation",
+        "to": "W_renewal_genesis"
+      },
+      {
+        "from": "W_tick_source_physical_M2",
+        "implied": false,
+        "reason": "distinct source, admission, co-registration, renewal or identification obligation",
+        "to": "W_duration_identification"
+      },
+      {
+        "from": "W_objective_admission",
+        "implied": false,
+        "reason": "distinct source, admission, co-registration, renewal or identification obligation",
+        "to": "W_tick_source_physical_M2"
+      },
+      {
+        "from": "W_objective_admission",
+        "implied": false,
+        "reason": "distinct source, admission, co-registration, renewal or identification obligation",
+        "to": "W_shared_coregistration"
+      },
+      {
+        "from": "W_objective_admission",
+        "implied": false,
+        "reason": "distinct source, admission, co-registration, renewal or identification obligation",
+        "to": "W_renewal_genesis"
+      },
+      {
+        "from": "W_objective_admission",
+        "implied": false,
+        "reason": "distinct source, admission, co-registration, renewal or identification obligation",
+        "to": "W_duration_identification"
+      },
+      {
+        "from": "W_shared_coregistration",
+        "implied": false,
+        "reason": "distinct source, admission, co-registration, renewal or identification obligation",
+        "to": "W_tick_source_physical_M2"
+      },
+      {
+        "from": "W_shared_coregistration",
+        "implied": false,
+        "reason": "distinct source, admission, co-registration, renewal or identification obligation",
+        "to": "W_objective_admission"
+      },
+      {
+        "from": "W_shared_coregistration",
+        "implied": false,
+        "reason": "distinct source, admission, co-registration, renewal or identification obligation",
+        "to": "W_renewal_genesis"
+      },
+      {
+        "from": "W_shared_coregistration",
+        "implied": false,
+        "reason": "distinct source, admission, co-registration, renewal or identification obligation",
+        "to": "W_duration_identification"
+      },
+      {
+        "from": "W_renewal_genesis",
+        "implied": false,
+        "reason": "distinct source, admission, co-registration, renewal or identification obligation",
+        "to": "W_tick_source_physical_M2"
+      },
+      {
+        "from": "W_renewal_genesis",
+        "implied": false,
+        "reason": "distinct source, admission, co-registration, renewal or identification obligation",
+        "to": "W_objective_admission"
+      },
+      {
+        "from": "W_renewal_genesis",
+        "implied": false,
+        "reason": "distinct source, admission, co-registration, renewal or identification obligation",
+        "to": "W_shared_coregistration"
+      },
+      {
+        "from": "W_renewal_genesis",
+        "implied": false,
+        "reason": "distinct source, admission, co-registration, renewal or identification obligation",
+        "to": "W_duration_identification"
+      },
+      {
+        "from": "W_duration_identification",
+        "implied": false,
+        "reason": "distinct source, admission, co-registration, renewal or identification obligation",
+        "to": "W_tick_source_physical_M2"
+      },
+      {
+        "from": "W_duration_identification",
+        "implied": false,
+        "reason": "distinct source, admission, co-registration, renewal or identification obligation",
+        "to": "W_objective_admission"
+      },
+      {
+        "from": "W_duration_identification",
+        "implied": false,
+        "reason": "distinct source, admission, co-registration, renewal or identification obligation",
+        "to": "W_shared_coregistration"
+      },
+      {
+        "from": "W_duration_identification",
+        "implied": false,
+        "reason": "distinct source, admission, co-registration, renewal or identification obligation",
+        "to": "W_renewal_genesis"
+      }
+    ],
+    "N2_walls": {
+      "W_duration_identification": "decoded count/ratio is only a relational duration candidate until causal identification and apparatus attach",
+      "W_objective_admission": "tick certificate is a candidate opportunity; actuality/admissibility/law-domain are supplied",
+      "W_renewal_genesis": "the refill token and fresh blank bank are supplied",
+      "W_shared_coregistration": "no physical interaction emits common marks for two independent clocks",
+      "W_tick_source_physical_M2": "Cycle610 ticks are actual coarse/fiber detector outputs but their detector compiler is not strict physical M2"
+    },
+    "N3_hidden_wall_scan": [
+      {
+        "classification": "supplied state preparation",
+        "condition": "purified Cycle610 source"
+      },
+      {
+        "classification": "supplied acceptance bits",
+        "condition": "actuality/admissibility/law-domain"
+      },
+      {
+        "classification": "supplied co-registration; decoder does not read source labels",
+        "condition": "S1-S4 mark packets"
+      },
+      {
+        "classification": "supplied finite renewal resource",
+        "condition": "blank second bank/refill token"
+      },
+      {
+        "classification": "compile-time chart; all24 transported",
+        "condition": "orientation-to-axis chart"
+      },
+      {
+        "classification": "not attached; no output called proper time",
+        "condition": "strong causal identification"
+      }
+    ],
+    "N4_residual_matches": [
+      {
+        "current": "Cycle680 supplies acceptance bits",
+        "exact_match": true,
+        "prior": {
+          "line": 403,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_INTRINSIC_TICK_EVENT_RELATIONAL_DURATION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md",
+          "ref": "d2d16ab80b261c48cd7b9162cd08be0358a6d06e"
+        },
+        "prior_residual": "tick certificate is not occurrence"
+      },
+      {
+        "current": "end-to-end M2 total remains null",
+        "exact_match": true,
+        "prior": {
+          "line": 51,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_TRANSPORTED_OBSERVABLE_RAMSEY_ECHO_EVENT_ROTOR_TOURNAMENT_CYCLE602_NOTE_2026-07-22.md",
+          "ref": "d2d16ab80b261c48cd7b9162cd08be0358a6d06e"
+        },
+        "prior_residual": "coarse detector is not strict physical M2"
+      },
+      {
+        "current": "one finite supplied refill passes; autonomous indefinite renewal not claimed",
+        "exact_match": true,
+        "prior": {
+          "line": 138,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_STATE_CARRIED_EVENT_CHAIN_SEQUENCE_PROTOCOL_CYCLE669_NOTE_2026-07-23.md",
+          "ref": "d2d16ab80b261c48cd7b9162cd08be0358a6d06e"
+        },
+        "prior_residual": "non-erasing renewal open"
+      },
+      {
+        "current": "Cycle680 never calls ideal generator",
+        "exact_match": true,
+        "prior": {
+          "line": 25,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_SYNCHRONIZATION_RENEWAL_PROPER_TIME_LAW_TOURNAMENT_CYCLE676_NOTE_2026-07-23.md",
+          "ref": "3621220d2a5c7e769b547f1be95386ecf7a1f62e"
+        },
+        "prior_residual": "s is bookkeeping"
+      }
+    ],
+    "N5_rhetoric": [
+      {
+        "claim": "detector tick certificate is not occurrence",
+        "lattice_wide": "objective admission remains supplied",
+        "per_block": "L9/L13",
+        "per_element": "one oriented crossing",
+        "per_mode": "train/held",
+        "per_site": "detector output register"
+      },
+      {
+        "claim": "decoded count is not proper time",
+        "lattice_wide": "identification law absent",
+        "per_block": "two capacity-six banks",
+        "per_element": "K16 carry receipt",
+        "per_mode": "forward/reversed",
+        "per_site": "one bridge node"
+      },
+      {
+        "claim": "static physical detector is not a clock stream",
+        "lattice_wide": "matter trajectory and common marks absent",
+        "per_block": "L3/L4/L6",
+        "per_element": "one occupancy-to-q snapshot",
+        "per_mode": "five detector profiles",
+        "per_site": "61 placed operands"
+      },
+      {
+        "claim": "finite supplied refill is not autonomous renewal",
+        "lattice_wide": "indefinite blank genesis unclaimed",
+        "per_block": "12 nodes",
+        "per_element": "one refill token",
+        "per_mode": "one K16 wrap",
+        "per_site": "adjacent bank boundary"
+      }
+    ],
+    "N6_partial_closure_paths": [
+      {
+        "closes": "regenerated tick-certificate input to causal decoder",
+        "path": "Cycle680 executed Cycle610 rerun",
+        "status": "EXECUTED_PARTIAL"
+      },
+      {
+        "closes": "one finite refill and persistent carry",
+        "path": "Cycle680 K16 carry overlay",
+        "status": "EXECUTED_CONDITIONAL"
+      },
+      {
+        "closes": "occupancy-to-q static detector",
+        "path": "Cycle675 physical detector snapshots",
+        "status": "EXECUTED_PRIOR"
+      },
+      {
+        "closes": "causal rows 1-3",
+        "path": "dual physical clock/co-registration apparatus",
+        "status": "OPEN"
+      },
+      {
+        "closes": "indefinite renewal",
+        "path": "autonomous blank-bank genesis",
+        "status": "OPEN"
+      }
+    ],
+    "N6_primitive_registry_claim_made": false,
+    "N7_steelman": "Construct two local Cycle675 detector cells on independently moving Cycle230 matter histories, derive their successive physical occupancy words from the same M2 law, convert each detector opportunity into objective admission without a supplied bit, and create S1-S4 only when a bounded local rendezvous interaction emits the same protected packet into both Cycle669 chains. Add a local blank-bank factory whose output carries the prior terminal predecessor and K16 receipt. Then rerun causal rows 1-9 unchanged with no source-label or host mark map.",
+    "N8_cross_cycle_echo": [
+      {
+        "cycle": 602,
+        "remaining": "physical detector",
+        "retired": "finite detector phase word"
+      },
+      {
+        "cycle": 610,
+        "remaining": "objective physical acceptance",
+        "retired": "oriented candidate ticks and additive chain"
+      },
+      {
+        "cycle": 668,
+        "remaining": "tick association and renewal",
+        "retired": "declared-code objective formation/current packet"
+      },
+      {
+        "cycle": 669,
+        "remaining": "native Cycle610 type and non-erasing renewal",
+        "retired": "finite physical predecessor overlay"
+      },
+      {
+        "cycle": 675,
+        "remaining": "trajectory and same-device apparatus",
+        "retired": "physical static occupancy detector"
+      },
+      {
+        "cycle": 676,
+        "remaining": "physical source and identification",
+        "retired": "law-level causal acceptance assertions"
+      },
+      {
+        "cycle": 680,
+        "remaining": "physical sync rows 1-3",
+        "retired": "finite conditional acceptance adapter"
+      }
+    ],
+    "axiom_pressure": false,
+    "broad_no_go_claim": false,
+    "minimum_content_claim": false,
+    "negative_claim_gate_status": "FAIL_DO_NOT_SHIP_NEGATIVE",
+    "negative_gate_failure_reason": "N7 physical dual-clock/co-registration and autonomous renewal constructions remain open",
+    "pass": true,
+    "shared_route_independent_obstruction": false,
+    "skill_freshness": {
+      "origin_main": "e42c5ec242a9b6eccde20af62692940fcf6c11f5",
+      "origin_main_advanced": false,
+      "origin_main_checked": true,
+      "remote_skill_followed": true
+    }
+  },
+  "note_contract": {
+    "missing": [],
+    "pass": true,
+    "required": [
+      "authority: **none**",
+      "audit: **unset**",
+      "regenerated cycle610 detector-law crossing outputs",
+      "not samples from causal cycle676's ideal `nu/s` generator",
+      "candidate opportunity, not an occurrence",
+      "relational duration candidates, not proper time",
+      "unrun physical obligations",
+      "not a no-go",
+      "axiom pressure: **none**",
+      "not met, not falsified",
+      "strict end-to-end total is null",
+      "no update, factor count or source label is called time, a rate or energy"
+    ]
+  },
+  "note_sha256": "982ec996aa0cd51d33e5de9350272017cc8718e5f6a71e4f5fe03c265785370f",
+  "optimal_next_campaign": "dual physical detector/co-registration apparatus plus autonomous blank-bank genesis",
+  "pass": true,
+  "physical_sync_rows_1_3_run": false,
+  "runner_sha256": "136a0eb61fee9e311bbcc337e58e4238f48c7bef95245dfb705e2904b50b57a0",
+  "shared_route_independent_obstruction": false,
+  "status": "finite regenerated-tick-certificate to causal-decoder acceptance overlay; physical synchronization rows 1-3 unrun",
+  "strict_full_framework_terminal_met": false,
+  "strongest_constructive_result": "regenerated Cycle610 train/held tick certificates pass through a 631-M2 two-bank predecessor/K16 carry overlay into unchanged causal decoders for renewal, reversal, additivity, missing/inverted and no-source-label rows",
+  "supplied_structure_inventory": {
+    "derived": [
+      "three regenerated detector-law tick-certificate streams",
+      "bounded reversible K16 node transition",
+      "one persistent wrap receipt",
+      "one finite cross-bank predecessor link",
+      "unchanged causal decoder equality",
+      "renewal/reversal/count-additivity",
+      "missing/inverted/no-source-label refusal",
+      "all24/all576 scalar/direction covariance"
+    ],
+    "open": [
+      "strict physical M2 implementation of the Cycle610 detector",
+      "native Cycle610 route type in Cycle669",
+      "objective tick admission law",
+      "physical dual-clock shared co-registration apparatus",
+      "autonomous blank-bank genesis and indefinite non-erasing renewal",
+      "causal proper-duration identification law",
+      "framework Record",
+      "physical time/rate/energy",
+      "gravity/source"
+    ],
+    "supplied": [
+      "Cycle610 purified train/held preparations and candidate-tick law",
+      "actuality/admissibility/law-domain bits",
+      "S1-S4 co-registration mark packets",
+      "two finite blank capacity-six banks and one refill token",
+      "K16 root rotor state 12",
+      "Cycle669 root/address seeds and preprovisioned Cycle612/Cycle665 packets",
+      "compile-time orientation axis/frame chart",
+      "causal Cycle676 decoder and JointOrder theorem machinery"
+    ]
+  },
+  "target_contract_candidate_terminal_met": false,
+  "terminology_firewall": {
+    "actuality_reserved_for": "explicitly supplied objective-admission bit",
+    "frozen_target_actual_means_executed_output_not_objective_actuality": true,
+    "result_term": "regenerated Cycle610 tick certificate"
+  },
+  "tests_failed": 0,
+  "tests_passed": 8
+}

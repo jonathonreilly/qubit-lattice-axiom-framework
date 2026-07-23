@@ -1,0 +1,17 @@
+PASS Cycle680 target and both exact git-object shores were frozen before evidence :: {'current_pins': 18, 'causal_pins': 6, 'Cycle610_pass': False}
+PASS fresh N1-N8 prevents physical-acceptance incompleteness from becoming a no-go or axiom claim :: {'families': 7, 'walls': 5, 'negative_gate': 'FAIL_DO_NOT_SHIP_NEGATIVE'}
+PASS executed Cycle610 detector law regenerates one train and two held locked candidate-tick streams :: {'train_L9_rest': 1909, 'held_L13_rest': 939, 'held_L13_moving': 936}
+PASS Cycle602/610/672/675/668/669 outputs are classified without promoting static or coarse surfaces to clocks :: {'Cycle602': 'coarse N=2 observable and Boolean sidecar; not strict physical M2 detector or clock', 'Cycle610': 'candidate opportunities; overall committed receipt has 33 pass/3 fail and is not promoted', 'Cycle672': 'static detector macro; no physical matter-to-q encoder in that cycle and no tick stream', 'Cycle675': 'physical static detector snapshots on supplied matter rails; no autonomous trajectory/tick law', 'Cycle668': 'objective only within supplied candidate law; no Cycle610 tick association or renewal', 'Cycle669': 'finite event-chain protocol; route enum has no native Cycle610 tick type and non-erasing renewal is open'}
+PASS bounded M2 carry/refill overlay feeds unchanged causal decoders on every semantically runnable row :: {'conditional_rows': 6, 'unrun_physical': 3, 'carry_deletion': 16}
+PASS new scalar carry overlay and direction provenance preserve the exact all24/all576 boundaries :: {'new_failures': [0, 0, 0], 'raw_Cycle675': 48}
+PASS Cycle680 source contains no call to the causal ideal nu/s event generator :: []
+PASS Cycle680 note preserves physical-source, causal, duration and no-go type gates :: ()
+{
+  "pass": true,
+  "tests_passed": 8,
+  "tests_failed": 0,
+  "elapsed_seconds": 36.780489624943584,
+  "maximum_RSS_bytes": 187711488,
+  "note": "/private/tmp/toe-science.BB0KQV/docs/work_history/repo/review_feedback/PHYSICAL_DETECTOR_TICK_CAUSAL_ACCEPTANCE_BRIDGE_CYCLE680_NOTE_2026-07-23.md",
+  "receipt": "/private/tmp/toe-science.BB0KQV/outputs/physical_detector_tick_causal_acceptance_bridge_cycle680_receipt_2026_07_23.json"
+}

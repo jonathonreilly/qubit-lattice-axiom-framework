@@ -1,16 +1,20 @@
 #!/usr/bin/env python3
-"""Cycle615: lawful charge and joined metric/receiver response tournament.
+"""Cycle615: opposite-charge, open-flux, and gauge-Regge comparison tournament.
 
-This runner constructs a candidate distinct charge-conjugate sector with a
-local neutral-pair resource gate, an independent centered open-boundary flux
-route, and a joined Cycle613-gauge/Cycle576-Regge action variation.  It does
-not identify the candidate sector as derived antimatter, F17 words as energy
-or stress, or the joined carrier as gravity.  Authority none; audit unset.
+All three families are reexecuted.  Their sector labels, action coefficients,
+resource roles, boundary state, Regge data, and receiver mapping remain supplied
+candidate structure.  No coarse role is counted as a physical M2 and no direct-
+sum algebra is promoted to a physical joined compiler.  Authority none; audit
+unset; author artifact status accepted false.
 """
 from __future__ import annotations
 
+import ast
+import contextlib
 from fractions import Fraction
+import gc
 from hashlib import sha256
+import io
 from itertools import product
 import json
 import math
@@ -33,25 +37,34 @@ NOTE=ROOT/("docs/work_history/repo/review_feedback/"
  "PHYSICAL_LAWFUL_CHARGE_JOINED_METRIC_RESPONSE_TOURNAMENT_CYCLE615_NOTE_2026-07-22.md")
 RECEIPT=ROOT/"outputs/physical_lawful_charge_joined_metric_response_tournament_cycle615_receipt_2026_07_22.json"
 COLD=ROOT/"outputs/physical_lawful_charge_joined_metric_response_tournament_cycle615_cold_2026_07_22.txt"
-AUTHORITY="none";AUDIT="unset";TOL=2e-8;START=perf_counter();PASS=FAIL=0
+AUTHORITY="none";AUDIT="unset";AUTHOR_ARTIFACT_STATUS_ACCEPTED=False
+AUDIT_VERDICT_INFERRED_FROM_DEPENDENCIES=False
+TOL=2e-8;START=perf_counter();PASS=FAIL=0
 PERIODIC_FIXTURES=(("TRAIN_L3",3,False),("HELD_L6",6,True),("OUT_HELD_L7",7,True))
 OPEN_FIXTURES=(("TRAIN_OPEN_L3",3,False),("HELD_OPEN_L5",5,True),("OUT_HELD_OPEN_L7",7,True))
 PINS={
- "scripts/physical_gauged_matter_action_stress_prediction_tournament_cycle613_2026_07_22.py":"f1fe6a4c1b37b8071031746c396162900a4a73acba90c6bd219cabe818205303",
- "docs/work_history/repo/review_feedback/PHYSICAL_GAUGED_MATTER_ACTION_STRESS_PREDICTION_TOURNAMENT_CYCLE613_NOTE_2026-07-22.md":"55f8def38aa1129405601b0fc3ba79c11d44e02886d564bf1bb26fcd80adb68f",
- "outputs/physical_gauged_matter_action_stress_prediction_tournament_cycle613_receipt_2026_07_22.json":"260dd78e1f648b3f6c062d3e5c79383182587fbeacf6e2aa06ffa6d84bb79c41",
- "scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py":"53d60249420994818e7517645ad4157e1e11c7dc184fbf89b2838e94b53977d0",
- "outputs/physical_dynamical_metric_source_law_bridge_tournament_cycle576_receipt_2026_07_22.json":"06456c1443f5464949f40d81e9f1c6316b3e4e8405415b5b0035e39d4b88c3bd",
- "outputs/physical_rational_regge_reciprocal_response_prediction_bridge_cycle604_receipt_2026_07_22.json":"c8210a1f170c3b11258f9876a0013b981b4b3c44a592423c8ce48a34a479b5ee",
+ "scripts/physical_gauged_matter_action_stress_prediction_tournament_cycle613_2026_07_22.py":"4a10475ffe3df07deaefd61119775eaeb483e5e894d4f006c35eec34df91586c",
+ "docs/work_history/repo/review_feedback/PHYSICAL_GAUGED_MATTER_ACTION_STRESS_PREDICTION_TOURNAMENT_CYCLE613_NOTE_2026-07-22.md":"038650533ef3811d221dc476015bd71f713a0838936790e64aca0ff73fad2f16",
+ "outputs/physical_gauged_matter_action_stress_prediction_tournament_cycle613_cold_2026_07_22.txt":"7d4c22cfc69aa44766ac60d9384a05cc32cd5cabd42b1c71333b66e771484901",
+ "scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py":"7aab3d6bc8d9d8b44263bca7a5cc308534269abb88094b2dfe0a820b12df2400",
+ "docs/work_history/repo/review_feedback/PHYSICAL_DYNAMICAL_METRIC_SOURCE_LAW_BRIDGE_TOURNAMENT_CYCLE576_NOTE_2026-07-22.md":"6fe73ca79366ad75fd9499b820b4e3a49833ba6919a8c8cd3ef4d44e403da0e3",
+ "outputs/physical_dynamical_metric_source_law_bridge_tournament_cycle576_receipt_2026_07_22.json":"5ba12c643c4f02355069e07dc4f8e7319bbb9374fd02a77505b9f635ef16135e",
+ "outputs/physical_dynamical_metric_source_law_bridge_tournament_cycle576_cold_2026_07_22.txt":"80f69b699f955663609461e12f978500eb44f582092f6db0739b449161edbd0d",
+ "scripts/physical_rational_regge_reciprocal_response_prediction_bridge_cycle604_2026_07_22.py":"aaa9e6b17bd5aa73172f7a2f19e3f4cf7c72d9542dce848947f7aa298e7af04b",
+ "docs/work_history/repo/review_feedback/PHYSICAL_RATIONAL_REGGE_RECIPROCAL_RESPONSE_PREDICTION_BRIDGE_CYCLE604_NOTE_2026-07-22.md":"a5687b86e9a2bffa5177a68ec9093826eb4ba034bef6f721910f813717ac755b",
+ "outputs/physical_rational_regge_reciprocal_response_prediction_bridge_cycle604_receipt_2026_07_22.json":"2fe20ba1ddbe304a11eb1809f76d552fdab89ff77d1c281d775d730c36021e90",
+ "outputs/physical_rational_regge_reciprocal_response_prediction_bridge_cycle604_cold_2026_07_22.txt":"1e05bd4f2fde179760b6a5945f9765212e27c54920196e0e08ff5a742d64d5ed",
  "scripts/physical_matter_caused_causal_interval_proper_time_bridge_tournament_cycle612_2026_07_22.py":"91f22d23dd2730f76a05736634236d41036f68eaedc4921daca69de25ab6a344",
  "docs/work_history/repo/review_feedback/PHYSICAL_MATTER_CAUSED_CAUSAL_INTERVAL_PROPER_TIME_BRIDGE_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md":"920776555dce6505bccb0e46e552e90d24858c08cfb7f6978d884f10a5bb0789",
  "outputs/physical_matter_caused_causal_interval_proper_time_bridge_tournament_cycle612_receipt_2026_07_22.json":"e7a8ea3dcbe370c9f8c6a94770508d1710a7013ce4ba62a1ad67e345fe1e2d11",
- "docs/MINIMAL_AXIOMS_2026-06-29.md":"fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
- "docs/audit/data/axiom_premise_nodes.json":"b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
- "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md":"e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
- "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md":"5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
- "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md":"755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
 }
+ACCEPTED_C613_RECEIPT_SHA256="36bf39b677e2330b1f345827c3cdcbfabd64af0acaeefb987031444db60671e3"
+CAUSAL_TIME_PR_5557={"number":5557,"commit":"a1e2f1ea60b1cf9b9cb0ae100c61cfd1f3a07318",
+ "path":"docs/work_history/repo/review_feedback/PHYSICAL_TICK_ECHO_ASSOCIATION_CAUSAL_ORDER_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md",
+ "content_sha256":"028133c490e771dd3012061c79910fcfb88cd6132df072ec15e725fe9bc35496"}
+EXPECTED_NOTE_SHA256="58ceb8fcd82a808535ea2c7cc67084eec159255d4c38c368bbc2fa67b4c90a3f"
+EXPECTED_RUNTIME_IMPORT_COUNT=64
+EXPECTED_RUNTIME_CLOSURE_MANIFEST_SHA256="b7cceb50db1a8714c68dc672f762b8076e29ec334c6167ba0b6eae9658249f73"
 
 
 class Tee:
@@ -71,42 +84,127 @@ def json_default(value):
 
 
 def digest(path):return sha256((ROOT/path).read_bytes()).hexdigest()
+
+
+def runtime_import_closure():
+ modules={path.stem:path for path in (ROOT/"scripts").glob("*.py")};entry=Path(__file__).resolve();visited=set()
+ def visit(path):
+  path=path.resolve()
+  if path in visited:return
+  visited.add(path);tree=ast.parse(path.read_text(encoding="utf-8"),filename=str(path))
+  for node in ast.walk(tree):
+   names=()
+   if isinstance(node,ast.Import):names=tuple(alias.name.split(".")[0] for alias in node.names)
+   elif isinstance(node,ast.ImportFrom) and node.module:names=(node.module.split(".")[0],)
+   for name in names:
+    if name in modules:visit(modules[name])
+ visit(entry)
+ return tuple(sorted(str(path.relative_to(ROOT)) for path in visited if path!=entry))
+
+
+def runtime_import_controls():
+ closure=runtime_import_closure();observed={path:digest(path) for path in closure}
+ payload="".join(f"{path}\0{observed[path]}\n" for path in closure);manifest=sha256(payload.encode()).hexdigest()
+ direct=("scripts/physical_gauged_matter_action_stress_prediction_tournament_cycle613_2026_07_22.py",
+         "scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py")
+ return {"direct_runtime_imports":direct,"complete_runtime_import_closure":closure,
+  "runtime_import_count":len(closure),"hidden_runtime_import_count":len(tuple(path for path in closure if path not in direct)),
+  "observed_sha256":observed,"closure_manifest_sha256":manifest,
+  "expected_closure_manifest_sha256":EXPECTED_RUNTIME_CLOSURE_MANIFEST_SHA256,
+  "pass":len(closure)==EXPECTED_RUNTIME_IMPORT_COUNT and all(path in closure for path in direct)
+         and manifest==EXPECTED_RUNTIME_CLOSURE_MANIFEST_SHA256}
+
+
+def causal_pr_content_sha256():
+ spec=f"{CAUSAL_TIME_PR_5557['commit']}:{CAUSAL_TIME_PR_5557['path']}"
+ content=subprocess.check_output(("git","show",spec),cwd=ROOT)
+ return sha256(content).hexdigest()
+
+
+def cold_json(path,prefix):
+ rows=[json.loads(line.removeprefix(prefix)) for line in (ROOT/path).read_text().splitlines() if line.startswith(prefix)]
+ if len(rows)!=1:raise RuntimeError(f"{path} must contain one {prefix.strip()} row")
+ return rows[0]
+
+
 def check(label,condition,detail=""):
  global PASS,FAIL;PASS+=int(condition);FAIL+=int(not condition)
  print("PASS" if condition else "FAIL",label,"::",detail)
 
 
 def shore():
- observed={path:digest(path) for path in PINS}
- r613=json.loads((ROOT/"outputs/physical_gauged_matter_action_stress_prediction_tournament_cycle613_receipt_2026_07_22.json").read_text())
+ observed={path:digest(path) for path in PINS};imports=runtime_import_controls();note_sha=digest(str(NOTE.relative_to(ROOT)))
+ r613=cold_json("outputs/physical_gauged_matter_action_stress_prediction_tournament_cycle613_cold_2026_07_22.txt","RECEIPT ")
+ current_r613_path="outputs/physical_gauged_matter_action_stress_prediction_tournament_cycle613_receipt_2026_07_22.json"
+ current_r613=json.loads((ROOT/current_r613_path).read_text());current_r613_sha=digest(current_r613_path)
  r576=json.loads((ROOT/"outputs/physical_dynamical_metric_source_law_bridge_tournament_cycle576_receipt_2026_07_22.json").read_text())
  r604=json.loads((ROOT/"outputs/physical_rational_regge_reciprocal_response_prediction_bridge_cycle604_receipt_2026_07_22.json").read_text())
  r612=json.loads((ROOT/"outputs/physical_matter_caused_causal_interval_proper_time_bridge_tournament_cycle612_receipt_2026_07_22.json").read_text())
- result={"hashes_match":observed==PINS,"Cycle613_pass":r613["pass"],"Cycle576_pass":r576["pass"],
-         "Cycle604_pass":r604["pass"],"Cycle612_pass":r612["pass"],
-         "Cycle613_divJ_coefficient_relative_residual":r613["route_C_prediction_compatibility"]["coefficient_relative_residual"],
-         "Cycle604_5_over_32pi_maximum_relative_residual":r604["route_C_prediction_bridge"]["maximum_5_over_32pi_relative_residual"],
-         "Cycle612_delay_or_advance_selected":r612["route_C_source_motion_ratio"]["delay_or_advance_selected"]}
- check("read-only foundation and Cycles576/604/612/613 are byte-pinned",result["hashes_match"]
-       and all(result[k] for k in ("Cycle613_pass","Cycle576_pass","Cycle604_pass","Cycle612_pass"))
-       and result["Cycle613_divJ_coefficient_relative_residual"]==1
-       and not result["Cycle612_delay_or_advance_selected"],result)
+ c613a=r613["route_A_conditional_F17_link_gauge_algebra"];c613c=r613["route_C_divJ_monopole_compatibility_falsifier"]
+ c576a=r576["route_A_actual_Regge_deficit_source"];c604c=r604["route_C_prediction_bridge"];local612c=r612["route_C_source_motion_ratio"]
+ causal_sha=causal_pr_content_sha256()
+ result={"direct_evidence_hashes_match":observed==PINS,"note_sha256":note_sha,
+  "note_matches_frozen_hash":note_sha==EXPECTED_NOTE_SHA256,"runtime_import_closure":imports,
+  "Cycle613":{"pass":r613["pass"],"tests":r613["tests_passed"],
+   "divJ_coefficient_relative_residual":c613c["coefficient_relative_residual"],
+   "divJ_source":"equal-six-direction periodic divJ=Ldelta/6 against the frozen Cycle604 graph-monopole comparator only",
+   "physical_M2_evaluated":c613a["physical_M2_placement_packing_routing_constraints_or_leakage_evaluated"],
+   "selected_metric_source_or_gravity":c613a["candidate_action_is_selected_metric_source_or_gravity"],
+   "accepted_receipt_expected_sha256":ACCEPTED_C613_RECEIPT_SHA256,
+   "accepted_receipt_recovered_from_accepted_cold_transcript":True,
+   "current_receipt_observed_sha256":current_r613_sha,
+   "current_receipt_matches_accepted_byte_hash":current_r613_sha==ACCEPTED_C613_RECEIPT_SHA256,
+   "current_receipt_rewrite_science_fields_match_accepted":all((current_r613["runner_sha256"]==r613["runner_sha256"],
+    current_r613["note_sha256"]==r613["note_sha256"],current_r613["pass"]==r613["pass"],
+    current_r613["tests_passed"]==r613["tests_passed"],
+    current_r613["route_C_divJ_monopole_compatibility_falsifier"]["coefficient_relative_residual"]==c613c["coefficient_relative_residual"])),
+   "packaging_scope":"accepted runner/note/cold are pinned; the independent rerun rewrote only the live receipt bytes, so the accepted embedded cold receipt is used without editing Cycle613"},
+  "Cycle576":{"pass":r576["pass"],"tests":r576["tests_passed"],
+   "metric_Bianchi_residual":c576a["metric_Bianchi_residual"],"source_Ward_residual":c576a["local_deficit_source_Ward_residual"],
+   "physical_generator_composed":c576a["physical_generator_composed_from_M2_primitives"],
+   "physical_stress_or_Einstein_closed":r576["terminal"]["physical_stress_or_Einstein_equation_closed"],
+   "sign_normalization_frame_selected":r576["terminal"]["source_sign_normalization_or_frame_preparation_selected"]},
+  "Cycle604":{"pass":r604["pass"],"tests":r604["tests_passed"],
+   "maximum_5_over_32pi_relative_residual":c604c["maximum_5_over_32pi_relative_residual"],
+   "physical_interface":c604c["exact_cross_cycle_physical_interface_composed"],"comparison_is_gravity":c604c["comparison_is_gravity"]},
+  "local_Cycle612":{"pass":r612["pass"],"tests":r612["tests_passed"],
+   "identity":"local matter-caused causal-interval candidate on the current branch; not causal-time PR #5557",
+   "source_to_response_map_derived":local612c["source_to_response_map_derived"],
+   "delay_or_advance_selected":local612c["delay_or_advance_selected"],
+   "empirical_normalization_selected":local612c["empirical_normalization_selected"]},
+  "causal_time_PR_5557":{"number":CAUSAL_TIME_PR_5557["number"],"commit":CAUSAL_TIME_PR_5557["commit"],
+   "path":CAUSAL_TIME_PR_5557["path"],"expected_content_sha256":CAUSAL_TIME_PR_5557["content_sha256"],
+   "observed_content_sha256":causal_sha,"content_matches":causal_sha==CAUSAL_TIME_PR_5557["content_sha256"],
+   "scope":"external comparison only: delay is rate-reachable and advance count-edit-reachable in that distinct lane",
+   "runner_imported_or_executed":False,"backcredited_to_Cycle615":False}}
+ shore_pass=(result["direct_evidence_hashes_match"] and result["note_matches_frozen_hash"] and imports["pass"]
+  and all(result[name]["pass"] for name in ("Cycle613","Cycle576","Cycle604","local_Cycle612"))
+  and result["Cycle613"]["accepted_receipt_recovered_from_accepted_cold_transcript"]
+  and result["Cycle613"]["current_receipt_rewrite_science_fields_match_accepted"]
+  and result["Cycle613"]["divJ_coefficient_relative_residual"]==1 and not result["Cycle613"]["physical_M2_evaluated"]
+  and not result["Cycle613"]["selected_metric_source_or_gravity"] and not result["Cycle576"]["physical_generator_composed"]
+  and not result["Cycle576"]["physical_stress_or_Einstein_closed"] and not result["Cycle576"]["sign_normalization_frame_selected"]
+  and not result["Cycle604"]["physical_interface"] and not result["Cycle604"]["comparison_is_gravity"]
+  and not result["local_Cycle612"]["source_to_response_map_derived"] and not result["local_Cycle612"]["delay_or_advance_selected"]
+  and result["causal_time_PR_5557"]["content_matches"] and not result["causal_time_PR_5557"]["backcredited_to_Cycle615"])
+ check("accepted C613 and current C576/C604/local-C612 evidence are pinned with the distinct causal PR boundary",shore_pass,result)
  return r613,r576,r604,r612,result
 
 
 def note_contract():
  body=" ".join(NOTE.read_text().lower().replace("`","").replace("*","").split())
- required=("authority: none","audit: unset","cycle 615","candidate distinct charged sector","not derived antimatter",
-  "route a","route b","route c","local neutral-pair","genesis debit","six negative","full coin","contact","gauss",
-  "open boundary","boundary flux","translation","joined action","regge","coframe variation","operational receiver",
-  "equivalence class","improvement","sign","scale","5/(32pi)","div j","l3","l5","l6","l7","all 24","576",
-  "inverse","leakage","deletion","f17 is not energy","not gravity","n1 —","n2 —","n3 —","n4 —","n5 —",
-  "n6 —","n7 —","n8 —","no axiom pressure")
+ required=("authority: none","audit: unset","author artifact status accepted: false","cycle 615","opposite-charge candidate sector",
+  "route a","route b","route c","local neutral-pair","resource debit","4096","full coin","contact","gauss",
+  "open boundary","boundary flux","translation covariance","gauge–regge","coframe variation","receiver-label equivalence",
+  "improvement","sign","scale","5/(32pi)","divj","l3","l5","l6","l7","all 24","576",
+  "inverse","deletion","physical leakage unevaluated","f17 is not energy or stress","joined algebra is not gravity",
+  "local cycle612","pr #5557","no back-credit","n1 —","n2 —","n3 —","n4 —","n5 —",
+  "n6 —","n7 —","n8 —","fail / do not ship negative","narrowed positive: pass","no axiom pressure")
  missing=tuple(item for item in required if item not in body)
  check("Cycle615 note freezes domains, alternatives, and N1-N8 scope",not missing,missing)
 
 
-# ---------- Route A: candidate charge-conjugate sector and local pair genesis ----------
+# ---------- Route A: opposite-charge candidate sector and resource-debited pair rule ----------
 def pair_gate():
  resource=np.zeros(7);resource[0]=1
  scalar=np.zeros(7);scalar[1:]=1/math.sqrt(6)
@@ -241,13 +339,17 @@ def route_a():
   min_delete=min(min_delete,fock["minimum_nonzero_current_deletion_signal"])
   rows.append({"fixture":label,"length":length,"held":held,"positive_gauge_covariance_residual":plus_res,
                "negative_gauge_covariance_residual":minus_res,"Fock_controls":fock,"pair_branch_controls":branches,
-               "lawful_F17_leakage":0})
- output={"object":"candidate distinct six-mode charge-conjugate CAR sector plus local neutral-pair resource gate",
-  "disposition":"CONSTRUCTIVE_LOCAL_NEUTRAL_PAIR_GENESIS_AND_BRANCHWISE_GAUSS; DERIVED_ANTIMATTER_AND_MONOPOLE_SOURCE_OPEN",
+               "F17_array_domain_escape_count":0,"physical_code_leakage_evaluated":False})
+ output={"object":"declared opposite-charge six-mode CAR copy plus one resource role and a neutral-pair candidate rule",
+  "disposition":"CONSTRUCTIVE_RESOURCE_DEBITED_OPPOSITE_CHARGE_PAIR_ALGEBRA; PHYSICAL_SECTOR_AND_PAIR_GATE_LOWERING_OPEN",
   "pair_rule":"one neutral genesis-resource excitation is reversibly swapped with the cubic scalar sum 6^-1/2 sum_d a_d^dag b_-d^dag",
-  "sector_status":"the negative-charge copy, charge-conjugate coin, separate same-g contact and no cross-contact term are supplied candidate-law symmetry/content; not derived antimatter",
-  "new_persistent_M2_per_coarse_cell":7,"site_debit":"six negative CAR occupation M2 rails plus one neutral genesis-resource M2",
-  "microscopic_support_two_pair_gate_compiled":False,"resource_excitation_supplied_at_encoding":True,
+  "sector_status":"the opposite-charge copy, conjugated coin, separate same-g contact and no cross-contact term are supplied candidate-law content; no physical particle identity is derived",
+  "declared_additional_coarse_roles_per_cell":7,
+  "declared_role_debit":"six opposite-charge CAR occupation roles plus one neutral resource role; these are not counted as physical M2s",
+  "physical_M2_cost_per_coarse_cell":None,"physical_support_two_pair_gate_executed":False,
+  "physical_E_and_G_composition_evaluated":False,"physical_code_leakage_residual":None,
+  "physical_joint_nearest_neighbor_sector_compiler_executed":False,
+  "resource_excitation_supplied_at_encoding":True,
   "pair_gate_unitarity_residual":unitary,"pair_gate_inverse_residual":inverse,"resource_remaining_after_genesis":creation,
   "created_pair_norm_residual":pair_norm,"genesis_omission_signal":omission,
   "maximum_all24_pair_gate_covariance_residual":covariance,"all576_pair_representation_failures":group_failures,
@@ -257,17 +359,22 @@ def route_a():
   "negative_coin_all24_covariance_residual":negative_coin_cubic,"rows":rows,
   "maximum_opposite_charge_gauge_residual":max_gauge,"maximum_Fock_control_residual":max_fock,
   "maximum_pair_branch_or_expectation_residual":max_branch,"minimum_current_deletion_signal":min_delete,
+  "basiswise_4096_field_update_is_one_coherent_physical_matter_field_update":False,
   "cubic_pair_expectation_is_monopole_source":False,"neutral_compiler_words_charged":False,
-  "candidate_sector_is_derived_antimatter":False,"physical_NN_pair_gate_and_full_sector_compiled":False}
- check("Route A materializes a local reversible cubic neutral-pair gate and preserves full +/- charge Gauss dynamics",
+  "candidate_sector_has_derived_physical_particle_identity":False}
+ check("Route A reexecutes the resource-debited pair algebra and all 4096 opposite-charge Gauss words",
        max(unitary,inverse,creation,pair_norm,covariance,negative_coin_cubic,max_gauge,max_fock,max_branch,
            *cubic.values(),negative_symmetry["coin_total_number_commutator"],
            negative_symmetry["contact_total_number_commutator"],negative_symmetry["gauged_contact_invariance_residual"])<TOL
        and group_failures==0 and min_delete>0 and omission>0
        and all(row["Fock_controls"]["joint_local_occupation_words_exhausted"]==4096 for row in rows),output)
- check("Route A pays a distinct sector/genesis debit without charging neutral compiler words or promoting the symmetric expectation to a monopole",
-       output["new_persistent_M2_per_coarse_cell"]==7 and not output["neutral_compiler_words_charged"]
-       and not output["candidate_sector_is_derived_antimatter"] and not output["cubic_pair_expectation_is_monopole_source"],output)
+ check("Route A records seven coarse roles without asserting physical M2/support-two/joint-NN lowering",
+       output["declared_additional_coarse_roles_per_cell"]==7 and output["physical_M2_cost_per_coarse_cell"] is None
+       and not output["physical_support_two_pair_gate_executed"] and output["physical_code_leakage_residual"] is None
+       and not output["physical_joint_nearest_neighbor_sector_compiler_executed"]
+       and not output["neutral_compiler_words_charged"]
+       and not output["candidate_sector_has_derived_physical_particle_identity"]
+       and not output["cubic_pair_expectation_is_monopole_source"],output)
  return output
 
 
@@ -297,6 +404,7 @@ def open_divergence(edges,radius):
 
 
 def rotate_edges(edges,frame):return {(rotate_coord(a,frame),rotate_coord(b,frame)):value for (a,b),value in edges.items()}
+def translate_edges(edges,offset):return {(add_coord(a,offset),add_coord(b,offset)):value for (a,b),value in edges.items()}
 
 
 def generic_open_edges(radius,seed):
@@ -313,9 +421,12 @@ def generic_open_edges(radius,seed):
 
 def open_edge_group_failures(radius):
  frames=c210.proper_cubic_frames();edges=generic_open_edges(radius,61600+radius);failures=0
+ coordinates=np.asarray(sorted({site for edge in edges for site in edge}),dtype=np.int64)
  for first in frames:
   for second in frames:
-   failures+=int(rotate_edges(edges,first@second)!=rotate_edges(rotate_edges(edges,second),first))
+   direct=coordinates@(first@second).T
+   composed=(coordinates@second.T)@first.T
+   failures+=int(not np.array_equal(direct,composed))
  return failures
 
 
@@ -357,7 +468,7 @@ def rotate_open_state(psi,frame,radius):
 
 
 def route_b():
- coin=c219.common_species(c230.BETA).coin;rows=[];max_gauss=max_inverse=max_gauge=max_cov=0;min_delete=math.inf;groups=0
+ coin=c219.common_species(c230.BETA).coin;rows=[];max_gauss=max_inverse=max_gauge=max_cov=0;min_delete=math.inf;min_translation_loss=math.inf;groups=0
  local_controls=c613.local_coin_contact_cubic_controls(coin);fock_controls=c611.fock_symmetry_controls(coin)
  for label,length,held in OPEN_FIXTURES:
   radius=(length-1)//2;flux=axial_open_flux(radius);div=open_divergence(flux,radius)
@@ -365,6 +476,7 @@ def route_b():
                 ((1 if site==(0,0,0) else 0)-value)%c609.MOD) for site,value in div.items())
   boundary=sum(value for (source,target),value in flux.items() if not in_cube(target,radius))%c609.MOD
   covariance=max(int(rotate_edges(flux,frame)!=flux) for frame in c210.proper_cubic_frames())
+  translated=translate_edges(flux,(1,0,0));translation_loss=len(set(flux.items())^set(translated.items()))
   groups+=open_edge_group_failures(radius)
   # One interior charged branch move and its exact electric inverse.
   target=(1,0,0);current={((0,0,0),target):1};e1=flux.copy()
@@ -391,14 +503,16 @@ def route_b():
     open_stream(rotate_open_state(coined,frame,radius),rotate_edges(q,frame),radius)-rotate_open_state(streamed,frame,radius))))
   max_gauss=max(max_gauss,gauss,moved);max_inverse=max(max_inverse,inverse,stream_inverse)
   max_gauge=max(max_gauge,gauge);max_cov=max(max_cov,covariance,frame_cov);min_delete=min(min_delete,delete_signal,delete_boundary)
+  min_translation_loss=min(min_translation_loss,translation_loss)
   rows.append({"fixture":label,"length":length,"held":held,"centered_cube_radius":radius,
    "F17_flux_per_cubic_boundary_port":pow(6,-1,c609.MOD),"interior_Gauss_residual":gauss,
    "boundary_total_flux_mod17":boundary,"charge_move_Gauss_residual":moved,"charge_move_inverse_residual":inverse,
    "reflecting_stream_inverse_residual":stream_inverse,"open_gauge_covariance_residual":gauge,
    "all24_open_stream_or_flux_covariance_residual":max(covariance,frame_cov),
    "deleted_boundary_port_Gauss_signal":delete_signal,"deleted_boundary_total_flux_signal":delete_boundary,
+   "one_site_translation_loss_signal":translation_loss,
    "interior_positive_link_words":3*(length-1)*length*length,"outward_boundary_port_words":6*length*length,
-   "lawful_F17_leakage":0})
+   "F17_array_domain_escape_count":0,"physical_code_leakage_evaluated":False})
  output={"object":"centered finite open cube with six equal axial F17 flux rays from one unit charge",
   "disposition":"CONSTRUCTIVE_OPEN_DOMAIN_LOCAL_GAUSS_CLOSURE; BOUNDARY_SELECTION_AND_TRANSLATION_IMPORT_EXPLICIT",
   "flux_selection":"within the supplied equal six-axial-ray ansatz, proper-cubic equality plus Gauss fixes each port flux to 6^-1=3 mod17",
@@ -406,18 +520,24 @@ def route_b():
   "rows":rows,"maximum_Gauss_residual":max_gauss,"maximum_inverse_residual":max_inverse,
   "maximum_open_gauge_covariance_residual":max_gauge,"maximum_all24_covariance_residual":max_cov,
   "all576_open_edge_representation_failures":groups,"minimum_boundary_deletion_signal":min_delete,
+  "minimum_one_site_translation_loss_signal":min_translation_loss,
   "full_local_coin_contact_controls":local_controls,"full_local_Fock_U1_controls":fock_controls,
-  "isolated_unit_charge_lawful_on_declared_open_domain":True,"compensator_used":False,
+  "isolated_unit_charge_lawful_on_declared_open_array_domain":True,"compensator_used":False,
   "neutral_compiler_words_charged":False,"translation_covariant":False,
   "flux_unique_among_all_open_Gauss_solutions":False,"divergence_free_flux_loops_unselected":True,
-  "bulk_or_gravity_law_claimed":False,"boundary_center_ports_and_flux_genesis_supplied":True}
+  "bulk_or_gravity_law_claimed":False,"boundary_center_ports_and_flux_genesis_supplied":True,
+  "physical_M2_boundary_or_link_roles_counted":None,"physical_support_two_gates_executed":False,
+  "physical_joint_nearest_neighbor_compiler_executed":False,"physical_code_leakage_residual":None}
  check("Route B closes local Gauss on centered open L3/L5/L7 domains with selected equal port flux and exact controls",
        max(max_gauss,max_inverse,max_gauge,max_cov,*local_controls.values(),fock_controls["coin_total_number_commutator"],
            fock_controls["contact_total_number_commutator"],fock_controls["gauged_contact_invariance_residual"])<TOL
-       and groups==0 and min_delete>0
+       and groups==0 and min_delete>0 and min_translation_loss>0
        and all(row["boundary_total_flux_mod17"]==1 and row["F17_flux_per_cubic_boundary_port"]==3 for row in rows),output)
  check("Route B exposes the open boundary/center import and makes no translation-covariant bulk or gravity claim",
-       output["isolated_unit_charge_lawful_on_declared_open_domain"] and not output["translation_covariant"]
+       output["isolated_unit_charge_lawful_on_declared_open_array_domain"] and not output["translation_covariant"]
+       and output["physical_M2_boundary_or_link_roles_counted"] is None
+       and not output["physical_support_two_gates_executed"] and output["physical_code_leakage_residual"] is None
+       and not output["physical_joint_nearest_neighbor_compiler_executed"]
        and not output["bulk_or_gravity_law_claimed"] and not output["compensator_used"],output)
  return output
 
@@ -450,8 +570,8 @@ def variation_residual(momentum,coupling,improvement_coefficient,seed):
 
 def route_c(r613,r576,r604,r612):
  alternatives=[];rows=[];max_stationary=max_ward=max_cov=max_variation=max_inverse=max_formula=0;min_delete=math.inf
- receiver_words=sorted({row["probe_over_reference"] for row in r612["route_C_source_motion_ratio"]["rows"]
-                        if row["physical_source_reservoir_predicate"]==1 and row["receiver_M2"]==1})
+ receiver_labels=sorted({row["probe_over_reference"] for row in r612["route_C_source_motion_ratio"]["rows"]
+                         if row["physical_source_reservoir_predicate"]==1 and row["receiver_M2"]==1})
  frames=c576.LIFTED_FRAMES
  for label,length,held in PERIODIC_FIXTURES:
   scale=2*math.pi/length;momentum=np.asarray((scale,scale,0.0,scale))
@@ -507,10 +627,12 @@ def route_c(r613,r576,r604,r612):
   for j,second in enumerate(c576.FRAMES):
    target=frame_lookup[tuple((first@second).reshape(-1))]
    group_failures+=int(np.linalg.norm(c576.METRIC_REPS[i]@c576.METRIC_REPS[j]-c576.METRIC_REPS[target])>TOL)
- output={"object":"one joined gauge-charge plus actual-Regge deficit/coframe quadratic action tested at an inherited receiver surface",
-  "disposition":"CONSTRUCTIVE_JOINED_VARIATION_EQUIVALENCE_CLASS; OPERATIONAL_RECEIVER_SELECTION_UNDERDETERMINED",
-  "joined_action":"A_join=A_Cycle613_gauge[psi,Q,E]+c_R A_Regge[e]-lambda sum_x rho_gauge(x) sum_local_hinges delta_hinge[e]",
-  "variation_identifications":{"A0_variation":"Cycle613 Gauss divE-rho=0","coframe_edge_variation":"Cycle576 actual Regge Hessian plus deficit source","receiver":"source-conjugate gauge-invariant metric quadrature compared to Cycle612 receiver words"},
+ output={"object":"conditional algebraic sum of the reexecuted gauge/Gauss family and actual-Regge deficit/coframe response",
+  "disposition":"CONSTRUCTIVE_CONDITIONAL_GAUGE_REGGE_RESPONSE_FAMILY; PHYSICAL_JOIN_AND_RECEIVER_SELECTION_OPEN",
+  "supplied_joined_functional":"A_join=A_Cycle613_candidate[psi,Q,E]+c_R A_Regge[e]-lambda sum_x rho_candidate(x) sum_local_hinges delta_hinge[e]",
+  "variation_identifications":{"gauge_side":"Cycle615 Routes A/B reexecute charge continuity and Gauss-array identities",
+   "coframe_edge_variation":"Cycle576 actual-Regge Hessian plus deficit-source row is reexecuted numerically",
+   "receiver":"source-conjugate Regge quadrature compared only to declared labels from local Cycle612"},
   "exact_continuous_equivalence_class":{"relative_source_coupling":"lambda in R (including zero and both signs)","equation_of_motion_exact_local_improvement":"c in R","receiver_family":"R(lambda,c)=lambda*(R0+c*Rimp) for each frozen momentum"},
   "audited_equivalence_grid":{"relative_coupling_magnitudes":[1,2],"coupling_signs":[-1,1],"local_conserved_improvement_coefficients":[-1,0,1],"members_per_fixture":12},
   "rows":rows,"maximum_stationary_equation_residual":max_stationary,"maximum_source_Ward_residual":max_ward,
@@ -518,97 +640,175 @@ def route_c(r613,r576,r604,r612):
   "all576_metric_representation_failures":group_failures,"maximum_finite_state_inverse_residual":max_inverse,
   "minimum_source_deletion_signal":min_delete,"enumerated_receiver_signs":signs,"enumerated_receiver_span":span,
   "maximum_analytic_family_residual_on_audited_grid":max_formula,
-  "Cycle612_operational_receiver_equivalence_class":receiver_words,"unique_receiver_word_selection_residual":len(receiver_words)-1,
-  "Cycle612_source_to_response_map_derived":r612["route_C_source_motion_ratio"]["source_to_response_map_derived"],
-  "Cycle612_delay_or_advance_selected":r612["route_C_source_motion_ratio"]["delay_or_advance_selected"],
+  "local_Cycle612_declared_receiver_label_equivalence_class":receiver_labels,
+  "receiver_label_selection_residual":len(receiver_labels)-1,
+  "local_Cycle612_receiver_M2_key_used_as_declared_role_flag_not_independently_validated_physical_M2":True,
+  "local_Cycle612_source_to_response_map_derived":r612["route_C_source_motion_ratio"]["source_to_response_map_derived"],
+  "local_Cycle612_delay_or_advance_selected":r612["route_C_source_motion_ratio"]["delay_or_advance_selected"],
   "Cycle604_5_over_32pi_maximum_relative_residual":r604["route_C_prediction_bridge"]["maximum_5_over_32pi_relative_residual"],
-  "Cycle613_divJ_coefficient_relative_residual_preserved":r613["route_C_prediction_compatibility"]["coefficient_relative_residual"],
+  "Cycle613_exact_source_shore_pair":{"source":"equal-six-direction periodic divJ=Ldelta/6",
+   "shore":"frozen Cycle604 graph-monopole 5/(32pi) comparator",
+   "coefficient_relative_residual":r613["route_C_divJ_monopole_compatibility_falsifier"]["coefficient_relative_residual"],
+   "used_to_close_other_source_routes":False},
   "parameters_refit":0,"absolute_action_or_source_normalization_selected":False,
   "improvement_selected":False,"response_sign_selected":False,"operational_metric_identification_derived":False,
   "open_boundary_and_periodic_Bloch_Regge_joint_real_space_compiler_executed":False,
-  "domain_join_status":"one local action/source-amplitude law is stated and its periodic Regge symbols are tested; Route B's open boundary and the Regge carrier were not jointly real-space compiled",
-  "F17_is_physical_energy_or_stress":False,"gravity_claimed":False}
- check("Route C joins unit gauge charge to the actual Regge coframe variation with Ward/covariance/inverse/deletion controls",
+  "domain_join_status":"Route B uses a finite centered open cube while the Regge response uses periodic Bloch symbols; no open-domain Regge operator or shared real-space boundary apparatus is compiled",
+  "physical_joint_M2_E_and_G_evaluated":False,"physical_support_two_join_gates_evaluated":False,
+  "physical_joint_nearest_neighbor_compiler_evaluated":False,"physical_joint_code_leakage_residual":None,
+  "causal_time_PR_5557_boundary":{"identity":"distinct causal-time lane, not local Cycle612",
+   "commit":CAUSAL_TIME_PR_5557["commit"],"comparison_only":True,
+   "delay_rate_reachable_and_advance_count_edit_reachable_in_that_lane":True,
+   "Cycle615_implements_Event_or_count_edit":False,"runner_imported_or_executed":False,"backcredited":False},
+  "receiver_alternatives_are_Event_or_Record":False,"Regge_generator_called_rate":False,
+  "F17_is_physical_energy_or_stress":False,"joined_algebra_is_gravity":False}
+ check("Route C reexecutes the conditional gauge-Regge response family with Ward/covariance/inverse/deletion controls",
        max(max_stationary,max_ward,max_cov,max_variation,max_inverse,max_formula)<TOL and min_delete>0 and group_failures==0
        and all(len(row["allowed_alternatives"])==12 and row["parameters_refit"]==0 for row in rows),output)
- check("Route C returns the exact surviving receiver equivalence class rather than a generic normalization failure",
-       signs==[-1,1] and span>0 and receiver_words==["3/4","5/4"]
-       and output["unique_receiver_word_selection_residual"]==1
-       and not output["Cycle612_source_to_response_map_derived"] and not output["response_sign_selected"]
-       and output["Cycle613_divJ_coefficient_relative_residual_preserved"]==1,output)
+ check("Route C returns the exact local-Cycle612 receiver-label equivalence without Event/Record or physical-M2 back-credit",
+       signs==[-1,1] and span>0 and receiver_labels==["3/4","5/4"]
+       and output["receiver_label_selection_residual"]==1
+       and not output["local_Cycle612_source_to_response_map_derived"] and not output["response_sign_selected"]
+       and output["Cycle613_exact_source_shore_pair"]["coefficient_relative_residual"]==1
+       and not output["Cycle613_exact_source_shore_pair"]["used_to_close_other_source_routes"]
+       and output["physical_joint_code_leakage_residual"] is None
+       and not output["causal_time_PR_5557_boundary"]["backcredited"],output)
  return output
 
 
 def no_go_discipline():
  families=[
-  {"family":"local neutral pair resource gate","object":"two six-mode CAR sectors plus neutral resource rail","mechanism":"cubic-scalar reversible pair swap and charge Gauss invariant","terminal":"derived physical antiparticle and monopole-compatible state","marker":"ATTEMPTED","result":"local genesis/Gauss positive; sector identity and state preparation open"},
-  {"family":"mobile uniform opposite carrier","object":"Cycle611 distinct binder sector","mechanism":"paired number plus supplied W preparation","terminal":"periodic point-minus-uniform source","marker":"RULED OUT BY PRIOR ONLY AS AUTONOMOUS GENESIS","result":"conditional positive; local genesis/W compiler was supplied"},
-  {"family":"centered open boundary flux","object":"finite cube links and boundary ports","mechanism":"six equal axial flux rays and Gauss","terminal":"lawful isolated unit charge","marker":"ATTEMPTED","result":"positive on declared open domains; boundary/center import remains"},
-  {"family":"periodic continuity source","object":"Cycle613 divJ=Ldelta/6","mechanism":"accepted stream continuity","terminal":"Cycle604 monopole shore","marker":"RULED OUT BY PRIOR FOR THIS SOURCE/SHORE PAIR ONLY","result":"coefficient residual exactly one; no broader source claim"},
-  {"family":"joined gauge-Regge coframe action","object":"unit gauge charge plus actual deficit Hessian","mechanism":"Gauss and metric Ward identities","terminal":"unique operational receiver prediction","marker":"ATTEMPTED","result":"continuous real lambda/improvement response family, audited on 12 representatives per fixture, leaves two receiver words"},
-  {"family":"quasienergy/log-unitary metric variation","object":"full accepted matter unitary","mechanism":"band/quasienergy response","terminal":"unique stress representative and receiver map","marker":"LIVE_UNTESTED","result":"concrete unclosed mechanism; blocks broad negative"},
-  {"family":"autonomous detector feedback selection","object":"Cycle612 matter-caused endpoint packet plus response carrier","mechanism":"local receiver-conditioned backreaction","terminal":"select response sign and calibration","marker":"LIVE_UNTESTED","result":"Cycle612 supplies both branches and does not derive the feedback law"},
+  {"route":"resource-debited neutral-pair algebra","attempt":"swap one declared resource role with a cubic scalar of opposite-charge directional pairs","mechanism":"seven-dimensional involution","terminal_obligation":"unitarity, inverse, cubic covariance, and nonzero resource-deletion response","result":"algebraic terminal passes; no physical gate lowering follows","citation":"scripts/physical_lawful_charge_joined_metric_response_tournament_cycle615_2026_07_22.py:210","marker":"ATTEMPTED"},
+  {"route":"full opposite-charge occupation audit","attempt":"enumerate both 64-word local occupation spaces","mechanism":"oriented plus/minus continuity and reciprocal F17 current debit","terminal_obligation":"4096-word continuity, Gauss-word preservation, inverse, deletion, and gauge covariance","result":"array terminal passes; coherent physical joint update remains unevaluated","citation":"scripts/physical_lawful_charge_joined_metric_response_tournament_cycle615_2026_07_22.py:260","marker":"ATTEMPTED"},
+  {"route":"centered open-boundary flux","attempt":"route equal flux from one center to six boundary ports","mechanism":"open divergence plus proper-cubic equality","terminal_obligation":"unit central Gauss source, inverse, gauge covariance, deletion, and explicit translation loss","result":"passes on declared centered cubes with supplied boundary and flux genesis","citation":"scripts/physical_lawful_charge_joined_metric_response_tournament_cycle615_2026_07_22.py:430","marker":"ATTEMPTED"},
+  {"route":"conditional gauge-Regge coframe response","attempt":"couple the candidate charge amplitude to the actual-Regge deficit row","mechanism":"pseudoinverse response in the Ward-compatible quotient","terminal_obligation":"stationary equation, coframe derivative, all24 covariance, finite-state inverse, and analytic response family","result":"passes as periodic Bloch algebra while the open-boundary real-space join remains unevaluated","citation":"scripts/physical_lawful_charge_joined_metric_response_tournament_cycle615_2026_07_22.py:520","marker":"ATTEMPTED"},
+  {"route":"local-Cycle612 receiver-label comparison","attempt":"carry every scale/sign/improvement response to the two declared local labels","mechanism":"source-conjugate Regge quadrature and label-set comparison","terminal_obligation":"exact response-family formula and no-refit label equivalence","result":"both labels survive; no source-to-response selection, physical receiver validation, Event, or Record follows","citation":"scripts/physical_lawful_charge_joined_metric_response_tournament_cycle615_2026_07_22.py:610","marker":"ATTEMPTED"},
+  {"route":"periodic equal-six-direction divJ source","attempt":"compare divJ=Ldelta/6 with the Cycle604 graph-monopole shore","mechanism":"exact local Laplacian source","terminal_obligation":"the named source/shore compatibility test only","result":"coefficient-relative residual one for that exact pair; no other source route is closed","citation":"scripts/physical_gauged_matter_action_stress_prediction_tournament_cycle613_2026_07_22.py:541","marker":"RULED OUT BY PRIOR"},
  ]
+ live_routes=["literal physical M2 and support-two lowering of the resource/pair sector",
+              "dynamical boundary membrane or flux-genesis law with translation audit",
+              "one open-domain real-space Regge operator joined to Route B",
+              "quasienergy or full-unitary coframe variation",
+              "local receiver-feedback law that selects one response member without Event/Record back-credit"]
  walls={
-  "W_sector":"candidate negative-charge sector symmetry/identity and microscopic pair-gate lowering",
-  "W_boundary":"open-domain boundary, center, ports, and flux-state genesis",
-  "W_response_class":"relative Regge coupling magnitude and sign",
-  "W_improvement":"conserved local coframe improvement coefficient",
-  "W_metric_receiver":"operational metric observable and Regge-to-Cycle612 receiver map",
-  "W_packing":"joint physical NN compilation and resource-sector enforcement",
-  "W_event":"receiver occurrence, Record admission, and empirical calibration",
+  "W_sector_definition":"opposite-charge copy, conjugated coin, contact choice, resource role, and pair rule are supplied",
+  "W_physical_lowering":"physical M2 cost, support-two gates, E/G, joint NN schedule, constraints, and leakage are unevaluated",
+  "W_boundary":"finite center, boundary ports, reflecting rule, and flux-state genesis are supplied and break translation covariance",
+  "W_domain_join":"open Route B and periodic-Bloch Regge response are not one real-space apparatus",
+  "W_response_class":"Regge coupling magnitude/sign and conserved-improvement coefficient are unselected",
+  "W_receiver_map":"local Cycle612 labels and its physical-role flags are not a derived joint receiver map",
+  "W_event":"causal-time PR #5557 is distinct and supplies no Event/Record back-credit to Cycle615",
  }
- names=tuple(walls);pairs=[{"left":names[i],"right":names[j],"left_closes_right":False,"right_closes_left":False,"independent":True}
-                           for i in range(len(names)) for j in range(i+1,len(names))]
- output={"N1_normalized_families":families,"N1_broad_negative_failure":"two actionable families remain LIVE_UNTESTED",
-  "N2_pairwise_collapsed_wall_audit":pairs,
-  "N3_hidden_wall_scan":["supplied compact U(1) and unit representation","candidate charge-conjugate coin and separate same-g contact","neutral resource excitation","no cross-contact law","F17 modulus and symplectic order","finite centered boundary and port state","Cycle576 Regge complex/frame state/lambda/update scale","trace improvement definition","pseudoinverse gauge representative","Cycle612 receiver map and empirical calibration","aggregate versus physical NN execution"],
-  "N4_residual_matching":[
-   {"witness":"Cycle611 Route C","witness_residual":"local pair genesis and W preparation supplied","current_residual":"Cycle615 local pair gate","match":"yes for local genesis only; W preparation is a different terminal"},
-   {"witness":"Cycle613 Route C","witness_residual":"divJ source versus monopole 5/(32pi) shore","current_residual":"same divJ incompatibility","match":"yes; preserved exactly"},
-   {"witness":"Cycle576 Route A","witness_residual":"actual Regge source sign/normalization and physical metric open","current_residual":"joined continuous response class","match":"yes"},
-   {"witness":"Cycle612 Route C","witness_residual":"source-to-response map and delay/advance selection supplied","current_residual":"two surviving operational receiver words","match":"yes"},
-   {"witness":"free Dirac antiparticle algebra","witness_residual":"bounded continuum free CAR relabeling","current_residual":"lattice charged-sector derivation","match":"no; used only as prior algebraic context, not a closure witness"}],
-  "N5_rhetoric_audit":{"not_derived_antimatter":"tested local candidate sector/gate and charge algebra only; no interacting identity theorem","not_bulk_gravity":"tested finite centered open cubes only; translations and operational metric absent","not_physical_stress_energy":"tested F17/site/link words and a Regge coframe carrier; no empirical observable identification","not_Record_or_event":"tested reversible receiver alternatives only; no occurrence or permanence"},
-  "N6_partial_closure_paths":{"approved_primitives":"scale ruler, kinetic-form isotropy, and pointwise realized-state slot chain-satisfy but supply none of charge/genesis/boundary/source-action/receiver selection","paths":["locally lower the seven-rail pair swap and derive its sector as a charge-conjugation symmetry","replace centered boundary by a dynamical finite flux membrane","derive lambda/sign from a joint variational symmetry or measured equivalence condition","couple a matter-caused Cycle612 receiver bit back into the joined action and test autonomous branch selection"]},
-  "N7_steelman":"A hostile reviewer should reject any broad selection no-go: the untested quasienergy variation can change the stress representative, while an explicit local receiver-feedback term can turn Cycle612's matter-caused endpoint bit into a sign-selecting backreaction. The terminal obligations are concrete: derive the feedback coupling from the same unitary, preserve Gauss/Regge Ward identities, and reduce the continuous response family to one receiver word on held domains.",
-  "N8_cross_cycle_echo":{"Cycle611":"paid opposite carrier closed zero mode conditionally but left genesis","Cycle613":"gauging closed local current/Gauss and correctly left open boundary/opposite charge live","Cycle576_604":"actual Regge and common-Laplacian prediction closed distinct mathematical bridges while retaining calibration","Cycle612":"matter-caused endpoints advanced operationality without selecting response sign"},
-  "walls":walls,"broad_negative_gate":"FAIL / DO NOT SHIP","shared_obstruction":False,"minimum_content_claim":False,"axiom_pressure":False}
- check("full updated N1-N8 gate blocks broad negative, minimum-content, and axiom-pressure claims",
-       len(families)>=5 and len(pairs)==21 and not output["shared_obstruction"]
+ names=tuple(walls);pairs=[{"left":names[i],"right":names[j],
+  "left_to_right":{"status":"NOT_ESTABLISHED","reason":f"no intervention closes {names[i]} and retests {names[j]}"},
+  "right_to_left":{"status":"NOT_ESTABLISHED","reason":f"no intervention closes {names[j]} and retests {names[i]}"},
+  "independence":{"status":"NOT_ESTABLISHED","reason":"neither directional closure experiment was executed"}}
+  for i in range(len(names)) for j in range(i+1,len(names))]
+ phrases=("we assume","by construction","as is standard","the framework provides","bridge context","background",
+          "naturally","obviously","standard qft","registered","canonical")
+ note_text=" ".join(NOTE.read_text().lower().split());hits=[phrase for phrase in phrases if phrase in note_text]
+ n4=[
+  {"prior_path":"scripts/physical_gauged_matter_action_stress_prediction_tournament_cycle613_2026_07_22.py","prior_line":541,
+   "prior_residual":"equal-six-direction periodic divJ=Ldelta/6 versus frozen graph-monopole shore","current_residual":"the same exact source/shore pair carried without extension","witness_residual":1.0,"match":True,"same_scope":True,"use_as_closure":True},
+  {"prior_path":"scripts/physical_rational_regge_reciprocal_response_prediction_bridge_cycle604_2026_07_22.py","prior_line":1105,
+   "prior_residual":"5/(32pi) graph-monopole comparator residual","current_residual":"comparator in the preserved C613 divJ pair","witness_residual":0.001748688020904332,"match":True,"same_scope":True,"use_as_closure":True},
+  {"prior_path":"scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py","prior_line":477,
+   "prior_residual":"actual-Regge metric Bianchi and deficit-source Ward identities","current_residual":"same periodic Regge Hessian/source row used in the Cycle615 response family","witness_residual":1.1216352294406378e-15,"match":True,"same_scope":True,"use_as_closure":True},
+  {"prior_path":"scripts/physical_matter_caused_causal_interval_proper_time_bridge_tournament_cycle612_2026_07_22.py","prior_line":580,
+   "prior_residual":"local Cycle612 source-to-response map not derived","current_residual":"both local receiver labels survive Cycle615 response alternatives","witness_residual":"PERSISTS","match":True,"same_scope":True,"use_as_closure":False},
+  {"prior_path":"scripts/physical_gauged_matter_action_stress_prediction_tournament_cycle613_2026_07_22.py","prior_line":391,
+   "prior_residual":"physical M2 placement/packing/routing/constraints/leakage unevaluated","current_residual":"Cycle615 coarse pair, open flux, and joined response remain without literal physical lowering","witness_residual":"PERSISTS","match":True,"same_scope":True,"use_as_closure":False},
+  {"prior_path":"a1e2f1ea60b1cf9b9cb0ae100c61cfd1f3a07318:docs/work_history/repo/review_feedback/PHYSICAL_TICK_ECHO_ASSOCIATION_CAUSAL_ORDER_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md","prior_line":29,
+   "prior_residual":"delay rate-reachable while advance is count-edit-reachable in causal-time PR #5557","current_residual":"Cycle615 implements no count edit, Event, or Record","witness_residual":"DISTINCT_LANE","match":True,"same_scope":False,"use_as_closure":False},
+ ]
+ n5=[
+  {"claim":"the opposite-charge candidate algebra does not derive a physical particle identity","per_element":"charge signs and conjugated coin entries are supplied","per_site":"the seven-dimensional pair rule is a declared local-role map","per_mode":"six opposite-direction pairs are exhausted","per_block":"both 64-word sectors are enumerated but no physical encoder is composed","lattice_wide":"no interacting identity, genesis law, or empirical species calibration is derived"},
+  {"claim":"the seven coarse roles are not a physical M2/support-two compiler","per_element":"role bits are not mapped to M2 primitives","per_site":"the pair involution has no literal support-two decomposition","per_mode":"directional currents are host arrays","per_block":"physical E/G, constraints, and leakage are unevaluated","lattice_wide":"no routed joint nearest-neighbor schedule exists"},
+  {"claim":"the centered open flux is not a translation-covariant bulk source law","per_element":"each F17 port word belongs to a supplied ray","per_site":"one selected center carries the unit source","per_mode":"six equal rays are a supplied ansatz","per_block":"finite reflecting boundary and port genesis are supplied","lattice_wide":"one-site translation changes the edge set and no dynamical boundary law is executed"},
+  {"claim":"the gauge-Regge response algebra is not selected physical stress, rate, or gravity","per_element":"F17 and Regge coefficients are supplied","per_site":"no shared open-domain Regge operator is built","per_mode":"the response uses periodic Bloch modes","per_block":"lambda, sign, and improvement remain an exact family","lattice_wide":"no physical joined compiler, receiver calibration, or unique source law is selected"},
+  {"claim":"the receiver alternatives are not Events or Records","per_element":"3/4 and 5/4 are inherited labels","per_site":"the local Cycle612 physical-role key is not independently revalidated","per_mode":"both signs survive","per_block":"no source-to-response selection is derived","lattice_wide":"causal-time PR #5557 is a distinct comparison lane and supplies no back-credit"},
+ ]
+ n6=[
+  {"file":"docs/work_history/repo/review_feedback/PHYSICAL_GAUGED_MATTER_ACTION_STRESS_PREDICTION_TOURNAMENT_CYCLE613_NOTE_2026-07-22.md","status":"PINNED_EXECUTED_PARENT","closure":"supplies only the conditional gauge algebra and exact divJ source/shore falsifier"},
+  {"file":"outputs/physical_dynamical_metric_source_law_bridge_tournament_cycle576_receipt_2026_07_22.json","status":"PINNED_AND_RUNTIME_REEXECUTED_REGGE_EVIDENCE","closure":"supplies periodic Regge Hessian/Bianchi/Ward formulas while physical lowering, sign, normalization, stress, and Einstein identity remain open"},
+  {"file":"outputs/physical_matter_caused_causal_interval_proper_time_bridge_tournament_cycle612_receipt_2026_07_22.json","status":"PINNED_LOCAL_CYCLE612_LABEL_COMPARATOR","closure":"supplies two declared receiver-label rows but no source-to-response or delay/advance selection"},
+  {"file":"a1e2f1ea60b1cf9b9cb0ae100c61cfd1f3a07318:docs/work_history/repo/review_feedback/PHYSICAL_TICK_ECHO_ASSOCIATION_CAUSAL_ORDER_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md","status":"PINNED_EXTERNAL_CAUSAL_TIME_PR_5557_COMPARISON_NOT_EXECUTED","closure":"keeps delay rate reachability and advance count-edit reachability separate; provides no Cycle615 Event/Record or physical-time back-credit"},
+  {"file":"docs/work_history/repo/review_feedback/PHYSICAL_LAWFUL_CHARGE_JOINED_METRIC_RESPONSE_TOURNAMENT_CYCLE615_NOTE_2026-07-22.md","status":"CURRENT_NARROWED_ARTIFACT","closure":"queues literal pair lowering, dynamical boundary genesis, open-domain Regge joining, and receiver feedback as live implementation paths"},
+ ]
+ n8=[
+  {"cycle":"Cycle576","echo":"Regge Bianchi/Ward algebra passed with sign, scale, frame preparation and physical metric open","effect":"supports the response calculation without physical identification"},
+  {"cycle":"Cycle604","echo":"the graph-monopole comparator is numerical and lacks a physical cross-cycle interface","effect":"limits the divJ result to its exact comparator"},
+  {"cycle":"Cycle611","echo":"a paid opposite carrier closed a role-array zero mode conditionally but left genesis and physical lowering open","effect":"prevents the declared pair rule from receiving autonomous-genesis credit"},
+  {"cycle":"Cycle613","echo":"conditional gauge/Gauss algebra passed and left open flux/opposite charge live","effect":"permits Routes A/B while retaining physical compiler walls"},
+  {"cycle":"local Cycle612","echo":"two response labels exist without a derived source-to-response map","effect":"the Cycle615 equivalence remains two-valued"},
+  {"cycle":"causal-time PR #5557","echo":"delay and advance use distinct rate/edit mechanisms","effect":"comparison only; no Event, Record, or count-edit mechanism is imported"},
+ ]
+ allowed={"ATTEMPTED","RULED OUT BY PRIOR"};markers=all(row["marker"] in allowed for row in families)
+ independence_complete=all(row["independence"]["status"]=="ESTABLISHED" for row in pairs)
+ output={"N1_normalized_families":families,"N1_allowed_markers":sorted(allowed),"N1_marker_schema_pass":markers,
+  "N1_live_routes":live_routes,"N2_pairwise_wall_closure_and_independence":pairs,"N2_independence_complete":independence_complete,
+  "N3_canonical_hidden_wall_phrases":list(phrases),"N3_note_phrase_hits":hits,
+  "N3_explicit_supplied_structure":["opposite-charge copy","conjugated coin","same-g/no-cross-contact choice","resource role","pair rule","F17 modulus and representation","boundary/center/ports/reflecting rule/flux state","Regge complex/frame state/lambda/update parameter","improvement formula and pseudoinverse","local Cycle612 labels","aggregate execution"],
+  "N4_exact_residual_matching":n4,"N5_five_resolution_rhetoric_audit":n5,"N6_partial_closure_paths":n6,
+  "N7_cited_actionable_steelman":{"citation":"scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py:472-501; scripts/physical_matter_caused_causal_interval_proper_time_bridge_tournament_cycle612_2026_07_22.py:518-581; scripts/physical_gauged_matter_action_stress_prediction_tournament_cycle613_2026_07_22.py:379-393","action":"lower the pair sector to literal physical primitives, derive a dynamical boundary state, build one open-domain real-space Regge operator, and add a reversible local receiver-feedback term that selects one response member while preserving Gauss/Regge Ward and held-size controls"},
+  "N8_rowwise_cross_cycle_echo":n8,"walls":walls,"Status":"FAIL / DO NOT SHIP NEGATIVE",
+  "negative_gate_reasons":["five constructive implementation routes remain live","pairwise wall independence is not established"],
+  "narrowed_positive_artifact_status":"PASS","negative_claim_shipped":False,
+  "shared_obstruction":False,"minimum_content_claim":False,"axiom_pressure":False}
+ check("full N1-N8 gate blocks broad negative, minimum-content, and axiom-pressure claims",
+       len(families)>=5 and markers and len(live_routes)>0 and len(pairs)==21 and not independence_complete and not hits
+       and all(all(field in row for field in ("prior_path","prior_line","match","same_scope","use_as_closure")) for row in n4)
+       and all(all(field in row for field in ("per_element","per_site","per_mode","per_block","lattice_wide")) for row in n5)
+       and all(all(field in row for field in ("file","status","closure")) for row in n6)
+       and all(all(field in row for field in ("cycle","echo","effect")) for row in n8)
+       and output["Status"]=="FAIL / DO NOT SHIP NEGATIVE" and output["narrowed_positive_artifact_status"]=="PASS"
+       and not output["negative_claim_shipped"] and not output["shared_obstruction"]
        and not output["minimum_content_claim"] and not output["axiom_pressure"],output)
  return output
 
 
 def main():
- r613,r576,r604,r612,shore_result=shore();note_contract();a=route_a();b=route_b();c=route_c(r613,r576,r604,r612);nogo=no_go_discipline()
+ r613,r576,r604,r612,shore_result=shore();note_contract();a=route_a();gc.collect();b=route_b();gc.collect();c=route_c(r613,r576,r604,r612);nogo=no_go_discipline()
  elapsed=perf_counter()-START;rss=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss;rss=int(rss if sys.platform=="darwin" else rss*1024)
- receipt={"cycle":615,"authority":AUTHORITY,"audit":AUDIT,"constitutional_effect":"none",
+ receipt={"cycle":615,"authority":AUTHORITY,"audit":AUDIT,
+  "author_artifact_status_accepted":AUTHOR_ARTIFACT_STATUS_ACCEPTED,
+  "audit_verdict_inferred_from_dependencies":AUDIT_VERDICT_INFERRED_FROM_DEPENDENCIES,
+  "constitutional_effect":"none",
   "HEAD":subprocess.check_output(("git","rev-parse","HEAD"),cwd=ROOT,text=True).strip(),"pins":PINS,"shore":shore_result,
-  "foundation_recon":{"minimal_axioms":"Lattice/Qubit/Admissibility/Record; no charge sector, dynamics, boundary, source/action, metric, or receiver map","registered_primitives":"scale conversion, kinetic-form isotropy, realized-state evaluation slot only; no charge/genesis/normalization/metric/receiver content","antiparticle_prior":"free-Dirac note supports bounded continuum free CAR relabeling only; it does not derive the Cycle615 lattice sector"},
+  "runner_sha256":sha256(Path(__file__).read_bytes()).hexdigest(),"note_sha256":sha256(NOTE.read_bytes()).hexdigest(),
+  "runtime_import_controls":shore_result["runtime_import_closure"],
+  "foundation_recon":{"scope":"read-only","claim":"the opposite-charge copy, pair rule, resource role, open boundary, flux state, Regge coefficients, improvement, and receiver labels are explicit candidate imports rather than foundation consequences"},
   "route_A_local_neutral_pair_sector":a,"route_B_open_boundary_flux":b,"route_C_joined_metric_receiver_equivalence":c,
   "no_go_discipline":nogo,
-  "decisive_answer":"lawful charge is constructively available in two distinct scoped ways: a local resource-debited neutral pair whose branchwise fields satisfy Gauss, and a centered open domain whose equal six-port flux admits one isolated unit charge. Neither selects the Cycle604 monopole state and physical normalization without imports. The joined gauge-Regge variation leaves the exact continuous response family R(lambda,c)=lambda*(R0+c*Rimp), audited on 12 representatives per fixture, and the two Cycle612 receiver words {3/4,5/4}; this is unfinished law selection, not gravity or a shared obstruction.",
-  "inventory":{"supplied":["candidate negative-charge six-mode sector and charge-conjugate coin","separate same-g contact and absence of cross contact","neutral genesis resource excitation","F17 compact group/modulus/symplectic order","finite centered open boundary/ports/flux state","Cycle576 Regge complex/frame state/lambda/update scale","spatial-trace improvement family and pseudoinverse representative","Cycle612 source-to-receiver association","aggregate-not-joint-NN execution"],
-   "derived_or_executed":["local reversible cubic neutral-pair gate","4096 +/- occupation continuity/Gauss/inverse audit","opposite Peierls gauge covariance","branchwise coherent controlled charge fields","equal open flux 6^-1 within the six-ray ansatz","open reflective stream gauge covariance","joined gauge-charge/Regge coframe variation","continuous response formula plus 12-point-per-fixture audit","all24/all576 and held/deletion controls"],
-   "not_derived":["physical antiparticle identity","microscopic pair-gate/full-sector NN compiler","monopole state from local pair rule","boundary/flux genesis or translation-covariant bulk law","unique coupling sign/magnitude/improvement","operational metric and unique receiver word","physical stress/energy/gravity","event/Record/Born rule"]},
-  "six_wall_ledger":{"C_ref":"SHARPENED: cubic pair and equal boundary flux remove host frame choice locally; boundary center, Regge frame state, receiver map remain supplied","C_num":"ADVANCED: unit +/- representation charge and open six-port weight 3 mod17 follow the chosen representations; relative physical coupling remains a continuous real class","C_wrap":"UNCHANGED: compact F17 arithmetic is exact and is not physical energy or stress","C_int":"ADVANCED: local neutral genesis, charge-conjugate streams, gauge Gauss, and actual Regge source variation are composed at law level; the open-boundary/periodic-Regge real-space join and operational receiver map remain open","C_local":"ADVANCED: pair gate is bounded local and open flux paths are explicit with inverse/covariance; microscopic support-two pair lowering and joint NN packing remain open","C_source":"ADVANCED/SHARPENED: isolated open-domain charge is lawful and neutral-pair branches are lawful; local scalar expectation is not a monopole and joined response remains R(lambda,c)=lambda*(R0+c*Rimp) -> {3/4,5/4}"},
-  "maturity_0_to_5":{"operational_quantum_records":4.05,"time":3.05,"inertia_matter":4.5,"gravity_source":3.95,"Born_probability":2.0},
-  "strongest_constructive_result":"a resource-debited local cubic neutral-pair gate plus opposite-charge gauge dynamics preserves all 4096 local occupation Gauss sectors coherently, while an independent centered open construction derives equal F17 boundary flux 3 and admits one isolated unit charge",
-  "shared_obstruction_or_axiom_pressure":False,
-  "optimal_next_campaign":"materialize the seven-rail neutral-pair gate in the accepted physical NN compiler and add a local matter-caused receiver-feedback term to the joined gauge-Regge action; require it to select one scale/sign/improvement member and one Cycle612 receiver word on held domains",
-  "tests_passed":PASS,"tests_failed":FAIL,"pass":FAIL==0,"elapsed_seconds":elapsed,"maximum_RSS_bytes":rss}
+  "decisive_answer":"three conditional families survive reexecution. The declared seven-role pair map and all 4096 opposite-charge occupation words preserve the tested charge/Gauss arrays; the centered open cubes carry one unit of F17 boundary flux and explicitly lose translation covariance; and the periodic Regge coframe response has the exact family R(lambda,c)=lambda*(R0+c Rimp), leaving both local-Cycle612 labels. None is a literal physical joined compiler or a unique source/stress/gravity law.",
+  "inventory":{"supplied":["opposite-charge six-mode copy and conjugated coin","separate same-g contact and absence of cross contact","one neutral resource role and seven-dimensional pair rule","F17 modulus, unit representation, current sign and update order","finite centered boundary, ports, reflecting rule and flux state","Cycle576 Regge complex, frame state, source coupling and update parameter","spatial-trace improvement and pseudoinverse representative","local Cycle612 label rows","causal-time PR #5557 comparison boundary","aggregate rather than physical joint execution"],
+   "derived_or_executed":["resource-debited pair involution and cubic covariance","4096-word plus/minus continuity, Gauss-array and inverse audit","opposite Peierls gauge covariance","equal open flux 3 mod17 within the six-ray ansatz","open reflecting-stream gauge covariance and explicit one-site translation loss","periodic Regge stationary/coframe response family","analytic response formula on 36 representatives","all24/all576, held-size, inverse and deletion controls"],
+   "not_derived":["physical particle identity of the opposite-charge copy","physical M2 cost or primitive composition","support-two pair gates, physical E/G, local constraints, joint NN routing, or physical leakage","autonomous boundary/flux genesis or translation-covariant bulk source","one open-domain real-space Regge join","unique coupling magnitude/sign/improvement or physical stress/source","physical receiver map or one selected receiver label","Regge rate, Event, Record, causal time, Born probability, or gravity"]},
+  "physical_lowering_audit":{"Route_A_physical_M2_cost":None,"Route_A_support_two_gate":False,"Route_A_physical_EG":False,"Route_A_physical_leakage":None,"Route_A_joint_NN":False,
+   "Route_B_physical_M2_cost":None,"Route_B_support_two_gate":False,"Route_B_physical_leakage":None,"Route_B_joint_NN":False,
+   "Route_C_physical_M2_cost":None,"Route_C_support_two_gate":False,"Route_C_physical_EG":False,"Route_C_physical_leakage":None,"Route_C_joint_NN":False},
+  "Cycle612_identity_boundary":{"local_Cycle612":"current-branch matter-caused causal-interval receipt used only for declared receiver labels; its source-to-response map and delay/advance selection are false",
+   "causal_time_PR_5557":"distinct remote lane at a1e2f1ea60; comparison-only delay/rate and advance/count-edit scope",
+   "causal_PR_runner_imported_or_executed":False,"causal_PR_Event_Record_or_time_backcredit":False},
+  "six_wall_ledger":{"C_ref":"SHARPENED CONDITIONALLY: pair and centered flux arrays are proper-cubic; center/boundary, Regge frame state, response sign, improvement and receiver map remain supplied","C_num":"ADVANCED ALGEBRAICALLY: all 4096 signed occupation ledgers and equal port word 3 mod17 are explicit; physical charge scale and encoding remain open","C_wrap":"UNCHANGED PHYSICALLY: F17 arithmetic is exact but is not energy, stress, rate or time","C_int":"PARTIAL CONDITIONAL COMPOSITION: pair, open-flux and periodic Regge response families coexist in one runner; no open-domain physical joint apparatus is compiled","C_local":"ADVANCED AT ROLE/ARRAY LEVEL: inverse, covariance, deletion and held sizes pass; physical M2, support-two, E/G, constraints, routing and leakage remain unevaluated","C_source":"ROUTE-SPECIFIC PROGRESS: open flux supports one centered unit array charge and the exact Regge response family reaches both local labels; divJ remains falsified only for its exact source/shore pair"},
+  "maturity_effect":"no maturity scores retained or increased; current evidence was not independently sufficient for a strict physical or unique-law promotion",
+  "strongest_constructive_result":"one resource-debited seven-role pair involution and all 4096 signed occupation words preserve the tested local charge/Gauss arrays, while an independent centered open construction carries exact unit boundary flux with measured translation loss",
+  "confirmed_breakthrough":False,"negative_claim_shipped":False,"shared_obstruction_or_axiom_pressure":False,
+  "optimal_next_campaign":"lower the pair sector to literal physical primitives, derive the boundary state dynamically, build one open-domain real-space Regge operator, and add a reversible receiver-feedback law that selects one response member on held domains",
+  "tests_passed":PASS,"tests_failed":FAIL,"tests_total":PASS+FAIL,"pass":FAIL==0,"elapsed_seconds":elapsed,"maximum_RSS_bytes":rss,
+  "runtime_environment":{"python":sys.version.split()[0],"numpy":np.__version__}}
  RECEIPT.write_text(json.dumps(receipt,indent=2,sort_keys=True,default=json_default)+"\n")
  print("RECEIPT",json.dumps(receipt,sort_keys=True,default=json_default))
  print("SUMMARY",json.dumps({"pass":receipt["pass"],"tests_passed":PASS,"tests_failed":FAIL,"elapsed_seconds":elapsed,
-  "route_A":a["disposition"],"route_B":b["disposition"],"route_C":c["disposition"],"receiver_equivalence":c["Cycle612_operational_receiver_equivalence_class"],"axiom_pressure":False},sort_keys=True))
+  "route_A":a["disposition"],"route_B":b["disposition"],"route_C":c["disposition"],
+  "receiver_label_equivalence":c["local_Cycle612_declared_receiver_label_equivalence_class"],"axiom_pressure":False},sort_keys=True))
  return int(FAIL!=0)
 
 
 if __name__=="__main__":
- COLD.parent.mkdir(parents=True,exist_ok=True)
- with COLD.open("w") as cold_handle:
-  terminal=sys.stdout;sys.stdout=Tee(terminal,cold_handle)
-  try:exit_code=main()
-  finally:sys.stdout=terminal
- raise SystemExit(exit_code)
+ if "--cold" in sys.argv:
+  buffer=io.StringIO()
+  with contextlib.redirect_stdout(buffer):exit_code=main()
+  transcript=buffer.getvalue();COLD.write_text(transcript,encoding="utf-8");print(transcript,end="")
+  raise SystemExit(exit_code)
+ raise SystemExit(main())

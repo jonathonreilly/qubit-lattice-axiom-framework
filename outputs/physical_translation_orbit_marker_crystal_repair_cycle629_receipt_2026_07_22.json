@@ -1,0 +1,1387 @@
+{
+  "Cycle610_bus_marker_intersection": {
+    "Hamiltonian_bus_sites": 2146689,
+    "actual_Cycle610_controlled_coin_two_site_primitives_scanned": 1,
+    "actual_routed_descriptor_witness": {
+      "active_marker_pattern_changed_after_opening": true,
+      "active_marker_pattern_restored_after_reverse": true,
+      "bus_distance": 234529,
+      "endpoint_bus_indices": [
+        1173831,
+        1408360
+      ],
+      "endpoint_coordinates": [
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          -3,
+          17,
+          20
+        ]
+      ],
+      "lowered_family": "CNOT",
+      "marker_role_indices_in_opening_interval": 26,
+      "stage": "factor_0_onsite_coin_g0"
+    },
+    "bus_coordinate_index_inverse_failures_on_marker_roles": 0,
+    "covariant_connected_NN_bus_routed_around_markers_constructed": false,
+    "macro_endpoint_spectator_return": true,
+    "marker_anchor_role_sites_on_bus": 120,
+    "marker_or_orientation_role_bus_intersection": 144,
+    "marker_preserving_routing_gadget_constructed": false,
+    "marker_recognition_preserved_during_open_interval": false,
+    "pass_as_load_bearing_falsifier": true,
+    "physical_update_credit_allowed": false,
+    "replacement_orientation_role_sites_on_bus": 24
+  },
+  "audit": "unset",
+  "author_artifact_status_accepted": false,
+  "authority": "none",
+  "breakthrough_bar_met": false,
+  "breakthrough_default": "no",
+  "broad_negative_gate": "FAIL / DO NOT SHIP",
+  "candidate_geometry": {
+    "H": 64,
+    "Hamiltonian_bus_still_visits_marker_sites": true,
+    "K": 129,
+    "all_frame_dynamic_role_path_predicate_work_union": 8967,
+    "anchor_orbit_sizes": [
+      24,
+      24,
+      24,
+      24,
+      24
+    ],
+    "anchor_seeds": [
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        2,
+        5,
+        7
+      ],
+      [
+        3,
+        8,
+        11
+      ],
+      [
+        4,
+        13,
+        17
+      ],
+      [
+        5,
+        19,
+        23
+      ]
+    ],
+    "anchor_sites": 120,
+    "failures": {
+      "anchor_count": 0,
+      "anchor_dynamic_overlap": 0,
+      "anchor_orbit_overlap": 0,
+      "anchor_orbit_size": 0,
+      "anchor_orientation_overlap": 0,
+      "anchor_outside_H": 0,
+      "orientation_dynamic_overlap": 0,
+      "orientation_orbit_size": 0,
+      "orientation_outside_H": 0
+    },
+    "identity_frame_Cycle610_allocated_union_before_replacement": 1492,
+    "identity_frame_allocated_union_after_replacement_and_anchors": 1612,
+    "maximum_nonanchor_variable_live_M2_per_phase_cell": 91,
+    "move_apply_restore_endpoint_returns_spectator_contents": true,
+    "new_anchor_or_orientation_conflict_with_dynamic_allocations": false,
+    "orientation_seed": [
+      6,
+      25,
+      31
+    ],
+    "orientation_sites": 24,
+    "pass": true,
+    "recognition_during_host_microsteps_preserved": false
+  },
+  "constitutional_effect": "none",
+  "elapsed_seconds": 66.83720733399969,
+  "exact_scope": "the supplied marker sector with all 120 anchors occupied, exactly one orientation bit, non-anchor weight <=91 per phase cell, and same-oriented +/-K neighbor centers",
+  "exact_target_contract": {
+    "allowed_premises": [
+      "the byte-pinned narrowed Cycle610 conditional coordinate result",
+      "the minimal-axiom lattice symmetry lines as a test contract only",
+      "120 occupied anchor offsets, one of 24 orientation offsets, and the explicit non-anchor weight <=91 code condition"
+    ],
+    "completion_witness": "literal fine-NN reversible enforcement plus an explicit physical encoder E and autonomous G_physical with E G_coarse = G_physical E, leakage/deletion/held controls, and no host schedule",
+    "does_not_count_as_closure": [
+      "autocorrelation alone",
+      "truth-table predicates",
+      "bounded but noncompiled projectors",
+      "conflict-free coordinate sets",
+      "inherited fixtures not reexecuted"
+    ],
+    "forbidden_weakenings": [
+      "coarse K-step covariance presented as one-site covariance",
+      "a diagonal projector contract presented as a fine-NN enforcement circuit",
+      "coordinate compatibility presented as a physical encoder/intertwiner",
+      "a host-ordered macro word presented as autonomous time or renewal"
+    ],
+    "quantifiers_and_domain": "all phi in Z_129^3 by exhaustive residue formula; six unit translations; all 24 proper-cubic frames and all 576 frame/orientation products; periodic L3/L6/L7 marker crystals; the explicitly declared marker/code-weight sector",
+    "required_edges": [
+      "unit shifts through phase seams",
+      "proper rotations about arbitrary integer sites",
+      "marker deletion",
+      "zero/two/all-hot orientation",
+      "mixed neighbor orientation",
+      "off-code false markers",
+      "L3/L6/L7 periodic seams"
+    ],
+    "target_statement": "construct a translation-invariant bounded marker/constraint family whose valid states carry a Z_129^3 phase and a proper-cubic orientation, then test whether it promotes the conditional Cycle610 geometry without a supplied origin"
+  },
+  "interpretation_firewall": {
+    "coordinate_covariance_is_update_covariance": false,
+    "host_microstep_schedule_is_autonomous_time": false,
+    "inherited_fixture_is_reexecuted_fixture": false,
+    "marker_or_site_count_is_energy_or_source": false,
+    "projector_is_fine_NN_enforcement_circuit": false,
+    "state_carried_phase_is_physical_time": false
+  },
+  "local_cycle629_not_causal_time_PR5557_cycle610": "Cycle629 depends only on the local conditional Cycle610 quartet; it does not import the distinct causal-time Cycle610 in PR #5557",
+  "local_marker_constraint_projectors": {
+    "anchor_deletion_false_accepts": 0,
+    "anchor_deletions_tested": 120,
+    "bounded_constant_support_independent_of_torus_size": true,
+    "constraint_preparation_rejection_repair_or_penalty_dynamics_compiled": false,
+    "diagonal_projector_off_code_commutator_residual": 0,
+    "fine_NN_reversible_enforcement_circuit_compiled": false,
+    "malformed_orientation_false_accepts": 0,
+    "malformed_orientation_rows": [
+      {
+        "accepted": false,
+        "name": "zero-hot"
+      },
+      {
+        "accepted": false,
+        "name": "two-hot"
+      },
+      {
+        "accepted": false,
+        "name": "all-hot"
+      }
+    ],
+    "neighbor_mismatch_false_accepts": 0,
+    "neighbor_mismatch_rows": 144,
+    "neighbor_projector_radius_Linf": 160,
+    "off_code_projector_family_well_defined": true,
+    "orientation_radius_Linf": 31,
+    "overweight_92_accepted": false,
+    "pass_as_exact_projector_contract": true,
+    "projector_P_center": "all 120 anchor M2 are one; exactly one of 24 orientation M2 is one; the non-anchor cell weight is at most 91",
+    "projector_Q_neighbor": "for each recognized center, the six centers at +/-129 e_i are recognized and carry the same orientation index",
+    "raw_anchor_off_code_spoof_constructed": true,
+    "raw_anchor_radius_Linf": 23,
+    "recognition_complete_without_weight_condition": false,
+    "valid_orientation_failures": 0,
+    "valid_orientation_rows": 24,
+    "weight_condition_status": "explicit supplied local code projector; not dynamically enforced",
+    "weight_projector_radius_Linf": 64
+  },
+  "mass_contact_seam_register_fixtures_reexecuted": false,
+  "maximum_RSS_bytes": 118915072,
+  "no_go_discipline": {
+    "N1_all_markers_exact": true,
+    "N1_normalized_families": [
+      {
+        "disposition": "passes with the explicit <=91 non-anchor weight condition",
+        "evidence": "nonzero autocorrelation maximum 9 and conditional margin 20",
+        "family": "five-orbit periodic anchor code",
+        "marker": "ATTEMPTED",
+        "mechanism": "exhaustive periodic autocorrelation",
+        "object": "120 occupied anchor offsets in Z_129^3",
+        "strength_vs_target": "weaker: projector recognition only",
+        "terminal_obligation": "unique local center recognition under the declared occupancy sector"
+      },
+      {
+        "disposition": "passes for the marker/projector family",
+        "evidence": "129^3 residues and six shifts exhausted; periodic sets agree",
+        "family": "state-carried translation-phase orbit",
+        "marker": "ATTEMPTED",
+        "mechanism": "unique [-64,64]^3 representatives and T_e:phi->phi+e",
+        "object": "all phi in Z_129^3 and L3/L6/L7 periodic crystals",
+        "strength_vs_target": "target-equivalent at the diagonal code-projector level",
+        "terminal_obligation": "one-fine-site code-sector covariance"
+      },
+      {
+        "disposition": "passes without a host frame parameter",
+        "evidence": "zero all24/all576 and periodic affine-action failures",
+        "family": "proper-cubic marker/orientation orbit",
+        "marker": "ATTEMPTED",
+        "mechanism": "signed-permutation affine site-centered action",
+        "object": "five anchor orbits and one 24-site orientation orbit",
+        "strength_vs_target": "target-equivalent at coordinate/projector level",
+        "terminal_obligation": "all24/all576 covariance about arbitrary physical sites"
+      },
+      {
+        "disposition": "projector contract passes; enforcement remains absent",
+        "evidence": "deletion, malformed, overweight, and L3/L6/L7 defect rows",
+        "family": "bounded diagonal admissibility projectors",
+        "marker": "ATTEMPTED",
+        "mechanism": "commuting diagonal local projectors",
+        "object": "anchor, one-hot, weight, and same-neighbor predicates",
+        "strength_vs_target": "weaker than a fine-NN reversible enforcement circuit",
+        "terminal_obligation": "off-code-defined local constraint contract"
+      },
+      {
+        "disposition": "endpoint geometry passes; bus-time renewal is open",
+        "evidence": "zero anchor/orientation conflicts with the all-frame dynamic union",
+        "family": "conditional Cycle610 geometry replacement",
+        "marker": "ATTEMPTED",
+        "mechanism": "exact coordinate-set disjointness",
+        "object": "new marker/orientation sites versus all rotated role/path/work sites",
+        "strength_vs_target": "strictly weaker than physical update integration",
+        "terminal_obligation": "conflict-free conditional geometry"
+      },
+      {
+        "disposition": "falsifies premise-free recognition; does not obstruct enforced weight codes",
+        "evidence": "explicit two-marker off-code configuration",
+        "family": "arbitrary off-code raw-marker adversary",
+        "marker": "ATTEMPTED",
+        "mechanism": "fill the 111 sites missing at an autocorrelation-9 shift",
+        "object": "union of the true anchor set with one shifted anchor completion",
+        "strength_vs_target": "stronger domain than declared code sector",
+        "terminal_obligation": "test uniqueness without the weight premise"
+      }
+    ],
+    "N1_open_counterroutes_not_counted": [
+      {
+        "family": "fine-NN reversible weight/marker enforcement",
+        "mechanism": "bounded Toffoli/transport network with clean uncompute and local repair",
+        "status": "OPEN / NOT COUNTED AS ATTEMPTED OR RULED OUT",
+        "terminal_obligation": "literal support-two circuit plus off-code unitarity"
+      },
+      {
+        "family": "autonomous marker-preserving phase-clock renewal",
+        "mechanism": "local clock/color fields that serialize bus motion while preserving or renewing recognition",
+        "status": "OPEN / NOT COUNTED AS ATTEMPTED OR RULED OUT",
+        "terminal_obligation": "one recurrent physical update with no host schedule"
+      }
+    ],
+    "N1_qualifying_family_count": 6,
+    "N2_collapsed_walls": [
+      "supplied <=91 non-anchor weight/admissibility sector",
+      "literal fine-NN reversible enforcement and repair",
+      "integration of replacement orientation controls into the full conditional word",
+      "physical encoder/intertwiner/leakage evaluation",
+      "autonomous microstep schedule and marker renewal"
+    ],
+    "N2_directional_wall_independence": [
+      {
+        "A_implies_B": false,
+        "B_implies_A": false,
+        "evidence": "no executed construction or logical implication connects these obligations",
+        "independent": true,
+        "shared_witness_identified": false,
+        "wall_A": "supplied <=91 non-anchor weight/admissibility sector",
+        "wall_B": "literal fine-NN reversible enforcement and repair"
+      },
+      {
+        "A_implies_B": false,
+        "B_implies_A": false,
+        "evidence": "no executed construction or logical implication connects these obligations",
+        "independent": true,
+        "shared_witness_identified": false,
+        "wall_A": "supplied <=91 non-anchor weight/admissibility sector",
+        "wall_B": "integration of replacement orientation controls into the full conditional word"
+      },
+      {
+        "A_implies_B": false,
+        "B_implies_A": false,
+        "evidence": "no executed construction or logical implication connects these obligations",
+        "independent": true,
+        "shared_witness_identified": false,
+        "wall_A": "supplied <=91 non-anchor weight/admissibility sector",
+        "wall_B": "physical encoder/intertwiner/leakage evaluation"
+      },
+      {
+        "A_implies_B": false,
+        "B_implies_A": false,
+        "evidence": "no executed construction or logical implication connects these obligations",
+        "independent": true,
+        "shared_witness_identified": false,
+        "wall_A": "supplied <=91 non-anchor weight/admissibility sector",
+        "wall_B": "autonomous microstep schedule and marker renewal"
+      },
+      {
+        "A_implies_B": false,
+        "B_implies_A": false,
+        "evidence": "no executed construction or logical implication connects these obligations",
+        "independent": true,
+        "shared_witness_identified": false,
+        "wall_A": "literal fine-NN reversible enforcement and repair",
+        "wall_B": "integration of replacement orientation controls into the full conditional word"
+      },
+      {
+        "A_implies_B": false,
+        "B_implies_A": false,
+        "evidence": "no executed construction or logical implication connects these obligations",
+        "independent": true,
+        "shared_witness_identified": false,
+        "wall_A": "literal fine-NN reversible enforcement and repair",
+        "wall_B": "physical encoder/intertwiner/leakage evaluation"
+      },
+      {
+        "A_implies_B": false,
+        "B_implies_A": false,
+        "evidence": "no executed construction or logical implication connects these obligations",
+        "independent": true,
+        "shared_witness_identified": false,
+        "wall_A": "literal fine-NN reversible enforcement and repair",
+        "wall_B": "autonomous microstep schedule and marker renewal"
+      },
+      {
+        "A_implies_B": false,
+        "B_implies_A": false,
+        "evidence": "no executed construction or logical implication connects these obligations",
+        "independent": true,
+        "shared_witness_identified": false,
+        "wall_A": "integration of replacement orientation controls into the full conditional word",
+        "wall_B": "physical encoder/intertwiner/leakage evaluation"
+      },
+      {
+        "A_implies_B": false,
+        "B_implies_A": false,
+        "evidence": "no executed construction or logical implication connects these obligations",
+        "independent": true,
+        "shared_witness_identified": false,
+        "wall_A": "integration of replacement orientation controls into the full conditional word",
+        "wall_B": "autonomous microstep schedule and marker renewal"
+      },
+      {
+        "A_implies_B": false,
+        "B_implies_A": false,
+        "evidence": "no executed construction or logical implication connects these obligations",
+        "independent": true,
+        "shared_witness_identified": false,
+        "wall_A": "physical encoder/intertwiner/leakage evaluation",
+        "wall_B": "autonomous microstep schedule and marker renewal"
+      }
+    ],
+    "N2_pair_count": 10,
+    "N3_hidden_condition_scan": {
+      "hidden_wall_promotions_complete": true,
+      "promoted_hidden_conditions": [
+        "<=91 non-anchor weight is an explicit supplied code projector",
+        "uniform same-orientation neighbor sector is an explicit projector condition",
+        "marker genesis and blank-work renewal are not supplied silently"
+      ],
+      "required_phrase_scan": {
+        "as is standard": "absent",
+        "background": "absent",
+        "bridge context": "absent",
+        "by construction": "absent",
+        "canonical": "absent",
+        "naturally": "absent",
+        "obviously": "absent",
+        "registered": "absent",
+        "standard QFT": "absent",
+        "the framework provides": "absent",
+        "we assume": "absent"
+      }
+    },
+    "N4_residual_matching": [
+      {
+        "citation": "docs/work_history/repo/review_feedback/PHYSICAL_PROPER_CUBIC_SUPERCELL_STREAM_COMPOSITION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md:20-44,198-218",
+        "closed": "projector-level origin dependence only",
+        "current_residual": "the marker/projector family transports phi exactly, but fine-NN enforcement and physical update integration are absent",
+        "match": true,
+        "prior_residual": "the fixed K-grid tagged motif fails unit translation and queues a state-carried phase/injective-union repair"
+      },
+      {
+        "citation": "docs/work_history/repo/review_feedback/PHYSICAL_PROPER_CUBIC_SUPERCELL_STREAM_COMPOSITION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md:160-175",
+        "closed": false,
+        "current_residual": "Cycle629 adds exact diagonal projectors but still no fine-NN enforcement circuit",
+        "match": true,
+        "prior_residual": "truth tables and coarse syndromes are not fine-NN admissibility enforcement"
+      },
+      {
+        "citation": "docs/work_history/repo/review_feedback/PHYSICAL_PROPER_CUBIC_SUPERCELL_STREAM_COMPOSITION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md:94-106",
+        "closed": false,
+        "current_residual": "still false/null/unevaluated",
+        "match": true,
+        "prior_residual": "physical encoder/intertwiner/leakage were not composed"
+      }
+    ],
+    "N5_five_resolutions_present": true,
+    "N5_rhetoric_resolution": [
+      {
+        "narrowed_phrase": "external origin removed only from the supplied-sector diagonal projector formula",
+        "phrase": "origin removed",
+        "resolutions": [
+          "coordinate formula",
+          "code-projector family",
+          "fine-NN enforcement",
+          "physical update",
+          "autonomous renewal"
+        ],
+        "tested": [
+          "coordinate formula",
+          "code-projector family"
+        ],
+        "untested_status": "enforcement, physical update, and renewal remain open"
+      },
+      {
+        "narrowed_phrase": "bounded supplied-sector predicate, not complete physical recognition",
+        "phrase": "local recognition",
+        "resolutions": [
+          "raw anchors",
+          "anchor plus weight projector",
+          "arbitrary off-code state",
+          "reversible circuit",
+          "fault repair"
+        ],
+        "tested": [
+          "raw anchors",
+          "anchor plus weight projector",
+          "explicit off-code spoof"
+        ],
+        "untested_status": "circuit and repair absent"
+      },
+      {
+        "narrowed_phrase": "proper-cubic affine projector covariance",
+        "phrase": "all24/all576 covariance",
+        "resolutions": [
+          "offset orbit",
+          "affine phase lattice",
+          "diagonal projectors",
+          "full update commutator"
+        ],
+        "tested": [
+          "offset orbit",
+          "affine phase lattice",
+          "diagonal projectors"
+        ],
+        "untested_status": "full update commutator absent"
+      },
+      {
+        "narrowed_phrase": "locally stated bounded diagonal constraint contract",
+        "phrase": "constraint",
+        "resolutions": [
+          "truth predicate",
+          "diagonal projector",
+          "fine-NN circuit",
+          "preparation/repair dynamics"
+        ],
+        "tested": [
+          "truth predicate",
+          "diagonal projector"
+        ],
+        "untested_status": "fine-NN circuit and dynamics absent"
+      },
+      {
+        "narrowed_phrase": "conflict-free conditional role geometry",
+        "phrase": "conflict-free compiler",
+        "resolutions": [
+          "endpoint site sets",
+          "conditional macro word",
+          "intermediate bus steps",
+          "autonomous recurrent law"
+        ],
+        "tested": [
+          "endpoint site sets"
+        ],
+        "untested_status": "word integration, microstep recognition, and recurrent law absent"
+      }
+    ],
+    "N6_partial_closure_paths": [
+      {
+        "file": "scripts/physical_translation_orbit_marker_crystal_repair_cycle629_2026_07_22.py",
+        "status": "PARTIAL / NARROWED",
+        "what_closes": "state-carried translation phase and proper-cubic marker projectors on an explicit weight sector"
+      },
+      {
+        "file": "scripts/physical_proper_cubic_supercell_stream_composition_tournament_cycle610_2026_07_22.py",
+        "status": "PARTIAL / PRIOR",
+        "what_closes": "conditional coarse-grid routing and the exact root falsifier"
+      },
+      {
+        "file": "UNMATERIALIZED",
+        "status": "OPEN / PRIORITY",
+        "what_closes": "fine-NN reversible marker/weight enforcement with clean uncompute and off-code extension"
+      },
+      {
+        "file": "UNMATERIALIZED",
+        "status": "OPEN",
+        "what_closes": "replacement selector integration and physical encoder/intertwiner/leakage"
+      },
+      {
+        "file": "UNMATERIALIZED",
+        "status": "OPEN",
+        "what_closes": "autonomous phase-clock schedule preserving or renewing marker recognition"
+      }
+    ],
+    "N7_hostile_steelman": {
+      "authority_status": "OPEN / no retained authority",
+      "citations": [
+        "scripts/physical_translation_orbit_marker_crystal_repair_cycle629_2026_07_22.py:marker_constraint_audit",
+        "scripts/physical_translation_orbit_marker_crystal_repair_cycle629_2026_07_22.py:rotation_covariance_audit",
+        "docs/work_history/repo/review_feedback/PHYSICAL_PROPER_CUBIC_SUPERCELL_STREAM_COMPOSITION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md:198-218"
+      ],
+      "mechanism": "compile the already explicit bounded anchor/weight/orientation predicates into a reversible support-two Toffoli-and-transport network, store the recognized phase in locally transported clock/color fields, and serialize the Cycle610 move/apply/restore word so recognition is preserved or renewed without host control",
+      "terminal_obligation": "literal fine-NN circuit, autonomous recurrent update, physical E G=G E, leakage/deletion, and L3/L6/L7 update commutators",
+      "why_it_could_close": "all required predicate supports are finite constants, the anchor/orientation coordinate orbits already satisfy translations and rotations, and the current failure is missing materialization rather than a contradiction"
+    },
+    "N8_cross_cycle_echo": [
+      {
+        "applicability": "supports literal marker-predicate compilation",
+        "cycle": "Cycle560",
+        "mechanism": "explicit one-hot branch encoders",
+        "retired": "bounded encoder tables"
+      },
+      {
+        "applicability": "candidate mechanism for state-carried phase clocks",
+        "cycle": "Cycle563",
+        "mechanism": "transported colors",
+        "retired": "runtime order service"
+      },
+      {
+        "applicability": "shows bounded projector materialization should be attempted",
+        "cycle": "Cycle580",
+        "mechanism": "literal support-two circuit",
+        "retired": "one primitive layout import"
+      },
+      {
+        "applicability": "does not itself integrate global renewal",
+        "cycle": "Cycle603",
+        "mechanism": "reversible elementary words",
+        "retired": "local role-event lowering"
+      },
+      {
+        "applicability": "supplies the geometry now repaired at projector level",
+        "cycle": "Cycle610",
+        "mechanism": "large bounded role geometry",
+        "retired": "conditional coordinate placement"
+      },
+      {
+        "applicability": "physical enforcement remains the next constructive route",
+        "cycle": "Cycle629",
+        "mechanism": "translation-orbit marker crystal",
+        "retired": "external phase argument in diagonal constraints"
+      }
+    ],
+    "axiom_pressure": false,
+    "axiom_pressure_gate": "FAIL / DO NOT SHIP",
+    "broad_negative_gate": "FAIL / DO NOT SHIP",
+    "demoted_artifact_status": "conditional state-carried translation-orbit marker/projector repair",
+    "evidence": {
+      "autocorrelation": true,
+      "bus_intersection_falsifier": true,
+      "constraints": true,
+      "coverage": true,
+      "geometry": true,
+      "promotion_honest": true,
+      "rotations": true,
+      "translations": true
+    },
+    "failed_checklist_items": [
+      "N7: a finite support-two enforcement/transport construction remains live",
+      "physical promotion: enforcement, E G=G E, leakage, and autonomous renewal are unexecuted"
+    ],
+    "minimum_content_claim_shipped": false,
+    "minimum_content_gate": "FAIL / DO NOT SHIP",
+    "narrowed_positive_artifact_gate": "PASS",
+    "negative_claim_shipped": false,
+    "shared_obstruction": false,
+    "shared_obstruction_gate": "FAIL / DO NOT SHIP",
+    "skill_freshness": {
+      "newer_origin_main_version_followed": true,
+      "origin_main_checked": true,
+      "origin_main_skill_sha256": "7d1aea8243ddd972331b935e2e836657e72115da3efe259f828fe862469d68b7",
+      "proof_search_governance_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    "status": "FAIL"
+  },
+  "note_contract": {
+    "forbidden_hits": [],
+    "missing": [],
+    "required": [
+      "Authority: none",
+      "Audit: unset",
+      "Author artifact status accepted: false",
+      "Breakthrough: false",
+      "Cycle 629",
+      "120",
+      "24",
+      "129^3",
+      "state-carried",
+      "translation-invariant",
+      "autocorrelation",
+      "9",
+      "20",
+      "111",
+      "<=91",
+      "all six",
+      "All 24",
+      "All 576",
+      "arbitrary physical site",
+      "L3",
+      "L6",
+      "L7",
+      "deletion",
+      "zero-hot",
+      "two-hot",
+      "all-hot",
+      "same-oriented",
+      "projector",
+      "fine-NN",
+      "intertwiner",
+      "leakage",
+      "autonomous",
+      "renewal",
+      "off-code",
+      "supplied",
+      "not recognition complete",
+      "not a physical M2 compiler",
+      "N1",
+      "N8",
+      "FAIL / DO NOT SHIP",
+      "no axiom pressure",
+      "PR #5557"
+    ]
+  },
+  "note_sha256": "db4200898dd970cc03e06d177d7ccfafb60038cf7ad57545e561b844145e9419",
+  "one_fine_site_translation_covariance": {
+    "explicit_phase_seam_failures": 0,
+    "one_fine_site_code_sector_covariance_at_projector_level": true,
+    "pass": true,
+    "physical_update_covariance_executed": false,
+    "rows": [
+      {
+        "active_orientation_ones": 27,
+        "anchor_ones": 3240,
+        "coarse_centers": 27,
+        "length": 3,
+        "pass": true,
+        "periodic_wrap_included": true,
+        "phase": [
+          51,
+          69,
+          93
+        ],
+        "phase_seam_cases_in_seeded_row": 0,
+        "six_unit_translation_failures": 0,
+        "split": "train"
+      },
+      {
+        "active_orientation_ones": 216,
+        "anchor_ones": 25920,
+        "coarse_centers": 216,
+        "length": 6,
+        "pass": true,
+        "periodic_wrap_included": true,
+        "phase": [
+          102,
+          9,
+          57
+        ],
+        "phase_seam_cases_in_seeded_row": 0,
+        "six_unit_translation_failures": 0,
+        "split": "held"
+      },
+      {
+        "active_orientation_ones": 343,
+        "anchor_ones": 41160,
+        "coarse_centers": 343,
+        "length": 7,
+        "pass": true,
+        "periodic_wrap_included": true,
+        "phase": [
+          119,
+          32,
+          88
+        ],
+        "phase_seam_cases_in_seeded_row": 0,
+        "six_unit_translation_failures": 0,
+        "split": "held-out-size"
+      }
+    ],
+    "state_carried_phase_action": "T_e maps marker code sector phi to phi+e mod 129",
+    "translation_invariant_constraint_family": "the same center predicate P_c is stated for every fine site c; no coordinate origin appears in the law"
+  },
+  "optimal_next_campaign": "compile the explicit radius-160 marker/weight/neighbor projector contract into a literal fine-NN reversible circuit with clean uncompute and off-code extension, integrate the replacement orientation controls, then construct an autonomous marker-preserving phase-clock schedule and execute physical E G=G E, leakage, deletion, and L3/L6/L7 update covariance",
+  "origin_disposition": {
+    "external_origin_argument_in_projector_family": false,
+    "one_site_translation_maps_phi_to_phi_plus_e": true,
+    "phase_carried_by_code_state": true,
+    "privileged_origin_removed_at_projector_contract_level": true,
+    "privileged_origin_removed_from_completed_physical_law": false,
+    "reason": "fine-NN enforcement, replacement-selector integration, physical EG/leakage, and autonomous renewal are not executed"
+  },
+  "pass": true,
+  "periodic_anchor_autocorrelation": {
+    "Cycle610_nonanchor_variable_live_upper_bound": 91,
+    "all_nonzero_periodic_shifts_exhausted": 2146688,
+    "anchor_count": 120,
+    "false_marker_margin_under_supplied_weight_condition": 20,
+    "maximizing_shifts": [
+      [
+        4,
+        4,
+        4
+      ],
+      [
+        4,
+        4,
+        125
+      ],
+      [
+        4,
+        125,
+        4
+      ],
+      [
+        4,
+        125,
+        125
+      ],
+      [
+        125,
+        4,
+        4
+      ],
+      [
+        125,
+        4,
+        125
+      ],
+      [
+        125,
+        125,
+        4
+      ],
+      [
+        125,
+        125,
+        125
+      ]
+    ],
+    "minimum_off_code_additions_to_spoof_a_second_raw_marker": 111,
+    "nonzero_periodic_autocorrelation_maximum": 9,
+    "off_code_spoof_constructed": true,
+    "recognition_unique_on_arbitrary_off_code_states": false,
+    "required_shift_present": true,
+    "weight_condition_fine_NN_enforced": false,
+    "weight_condition_locally_stated_projector": true,
+    "zero_shift_autocorrelation": 120
+  },
+  "periodic_same_orientation_neighbor_constraints": {
+    "held_out_size_included": true,
+    "pass": true,
+    "rows": [
+      {
+        "active_orientation_sites": 27,
+        "centers": 27,
+        "length": 3,
+        "one_flipped_center_undirected_defect_edges": 6,
+        "pass": true,
+        "periodic_anchor_sites": 3240,
+        "same_orientation_neighbor_checks": 3888,
+        "same_orientation_neighbor_failures": 0,
+        "split": "train",
+        "wrap_seams_included": true
+      },
+      {
+        "active_orientation_sites": 216,
+        "centers": 216,
+        "length": 6,
+        "one_flipped_center_undirected_defect_edges": 6,
+        "pass": true,
+        "periodic_anchor_sites": 25920,
+        "same_orientation_neighbor_checks": 31104,
+        "same_orientation_neighbor_failures": 0,
+        "split": "held",
+        "wrap_seams_included": true
+      },
+      {
+        "active_orientation_sites": 343,
+        "centers": 343,
+        "length": 7,
+        "one_flipped_center_undirected_defect_edges": 6,
+        "pass": true,
+        "periodic_anchor_sites": 41160,
+        "same_orientation_neighbor_checks": 49392,
+        "same_orientation_neighbor_failures": 0,
+        "split": "held-out-size",
+        "wrap_seams_included": true
+      }
+    ]
+  },
+  "phase_and_unique_center_coverage": {
+    "all_residues_exhausted": 2146689,
+    "cartesian_unique_representatives": 2146689,
+    "failures": {
+      "representative_range": 0,
+      "representative_residue": 0,
+      "unit_phase_inverse": 0,
+      "unit_phase_unchanged": 0
+    },
+    "host_supplied_phase_argument_in_constraint_law": false,
+    "pass": true,
+    "phase_is_state_carried": true,
+    "representative_box": [
+      [
+        -64,
+        -64,
+        -64
+      ],
+      [
+        64,
+        64,
+        64
+      ]
+    ],
+    "unique_center_within_H_formula": "for phase phi and site x, r_i=((x_i-phi_i+H) mod K)-H and c=x-r is the unique center in phi+K Z^3 with ||x-c||_infinity<=H",
+    "unique_scalar_representatives": 129,
+    "unit_phase_shift_checks": 12880134
+  },
+  "pins": {
+    "docs/work_history/repo/review_feedback/PHYSICAL_PROPER_CUBIC_SUPERCELL_STREAM_COMPOSITION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md": "3768d2a1407bdc8de06e2a55fa18300469b1006c0a16a78ada8b8d3a4b936105",
+    "outputs/physical_proper_cubic_supercell_stream_composition_tournament_cycle610_cold_2026_07_22.txt": "0adbee38e398c9e1d1ccd2733454ead2669338b86d48cbefa5331abb78c126e8",
+    "outputs/physical_proper_cubic_supercell_stream_composition_tournament_cycle610_receipt_2026_07_22.json": "375f843606a81970ae50f71d74c53f7e4c4d1437007daaecbedd0b19e3fdfa34",
+    "scripts/physical_proper_cubic_supercell_stream_composition_tournament_cycle610_2026_07_22.py": "ed2250711646ad99bf077e74b8e4194f2df0a2cf368d3c05c45ea95cac8083db"
+  },
+  "promotion_disposition": {
+    "breakthrough_bar_met": false,
+    "conditional_role_geometry_conflict_free": true,
+    "external_origin_removed_from_projector_formula": true,
+    "inherited_fixture_credit_taken": false,
+    "layer_a_locally_stated_constraint_projectors": {
+      "bounded_radius": 160,
+      "executed": true,
+      "proper_cubic_affine_covariance": true,
+      "status": "PASS on the supplied anchor/orientation/weight sector",
+      "translation_invariant_family": true
+    },
+    "layer_b_actual_fine_NN_reversible_enforcement": {
+      "circuit": null,
+      "executed": false,
+      "residual": null
+    },
+    "layer_c_physical_encoder_intertwiner_leakage": {
+      "EG_physical_executed": false,
+      "encoder_composed": false,
+      "intertwiner_residual": null,
+      "leakage_evaluated": false
+    },
+    "layer_d_autonomous_microstep_schedule_and_renewal": {
+      "actual_routed_descriptor_corruption_witness": {
+        "active_marker_pattern_changed_after_opening": true,
+        "active_marker_pattern_restored_after_reverse": true,
+        "bus_distance": 234529,
+        "endpoint_bus_indices": [
+          1173831,
+          1408360
+        ],
+        "endpoint_coordinates": [
+          [
+            4,
+            5,
+            6
+          ],
+          [
+            -3,
+            17,
+            20
+          ]
+        ],
+        "lowered_family": "CNOT",
+        "marker_role_indices_in_opening_interval": 26,
+        "stage": "factor_0_onsite_coin_g0"
+      },
+      "bus_routed_around_markers": false,
+      "executed": false,
+      "host_schedule_removed": false,
+      "marker_preserving_routing_gadget": false,
+      "marker_recognition_preserved_during_Cycle610_bus_microsteps": false
+    },
+    "mass_contact_seam_register_fixtures_reexecuted_in_Cycle629": false,
+    "phase_carried_by_valid_marker_state": true,
+    "privileged_origin_removed_from_completed_physical_law": false,
+    "recognition_complete_on_arbitrary_off_code_states": false,
+    "status": "conditional state-carried marker/projector repair; not a physical M2 compiler",
+    "strict_physical_EG_closed": false
+  },
+  "proper_cubic_affine_covariance": {
+    "anchor_all24_checks": 24,
+    "arbitrary_site_formula": "R_q(phi+K n)=q+R(phi-q)+K R n, so every integer site center q maps the phase lattice to the phase q+R(phi-q) mod K",
+    "failures": {
+      "anchor_all24": 0,
+      "arbitrary_site_affine_phase": 0,
+      "frame_determinant": 0,
+      "frame_signed_permutation": 0,
+      "orientation_all576": 0,
+      "periodic_anchor_state": 0,
+      "periodic_orientation_state": 0,
+      "translation_rotation_semidirect": 0
+    },
+    "formula_universal_scope": "all integer q and phi; exact signed-permutation coefficient identity, not a finite-q extrapolation",
+    "orientation_all576_checks": 576,
+    "pass": true,
+    "periodic_rows": [
+      {
+        "all24_anchor_state_failures": 0,
+        "all576_orientation_state_failures": 0,
+        "arbitrary_integer_rotation_center": [
+          20,
+          35,
+          50
+        ],
+        "length": 3,
+        "split": "train"
+      },
+      {
+        "all24_anchor_state_failures": 0,
+        "all576_orientation_state_failures": 0,
+        "arbitrary_integer_rotation_center": [
+          23,
+          41,
+          59
+        ],
+        "length": 6,
+        "split": "held"
+      },
+      {
+        "all24_anchor_state_failures": 0,
+        "all576_orientation_state_failures": 0,
+        "arbitrary_integer_rotation_center": [
+          24,
+          43,
+          62
+        ],
+        "length": 7,
+        "split": "held-out-size"
+      }
+    ]
+  },
+  "runner_sha256": "e7e90d8ad954cb1a571ee045527c059f48af121214a760d5bef3a09c199a1a8f",
+  "shared_obstruction_or_axiom_pressure": false,
+  "shore": {
+    "Cycle610_author_artifact_status_accepted": false,
+    "Cycle610_axiom_pressure": false,
+    "Cycle610_broad_negative_gate": "FAIL / DO NOT SHIP",
+    "Cycle610_pass": true,
+    "Cycle610_physical_M2_scope": {
+      "conditional_literal_coordinates_compiled": true,
+      "conditional_support_two_primitive_descriptors_compiled": true,
+      "literal_physical_encoder_composed": false,
+      "one_fine_site_translation_covariant_law_executed": false,
+      "physical_code_leakage_evaluated": false,
+      "physical_intertwiner_residual": null,
+      "promotion_to_physical_M2_law": false,
+      "proper_rotations_about_every_fine_site_executed": false,
+      "supplied_partition_origin_or_role_coloring": true
+    },
+    "Cycle610_tests_passed": 18,
+    "Cycle610_translation_rows": [
+      {
+        "all_six_unit_translation_symmetric_differences": {
+          "(-1, 0, 0)": 2970,
+          "(0, -1, 0)": 4914,
+          "(0, 0, -1)": 4914,
+          "(0, 0, 1)": 4914,
+          "(0, 1, 0)": 4914,
+          "(1, 0, 0)": 2970
+        },
+        "coarse_K_translation_preserves_partition": true,
+        "expected_root_falsifier": 2970,
+        "fine_torus_period": 387,
+        "length": 3,
+        "one_fine_site_x_translation_preserves_tagged_code_support": false,
+        "one_fine_site_x_translation_symmetric_difference": 2970,
+        "overlap_with_one_fine_site_x_translate": 972,
+        "split": "train",
+        "tagged_roles_per_supplied_coarse_cell": 91,
+        "tagged_sites": 2457
+      },
+      {
+        "all_six_unit_translation_symmetric_differences": {
+          "(-1, 0, 0)": 23760,
+          "(0, -1, 0)": 39312,
+          "(0, 0, -1)": 39312,
+          "(0, 0, 1)": 39312,
+          "(0, 1, 0)": 39312,
+          "(1, 0, 0)": 23760
+        },
+        "coarse_K_translation_preserves_partition": true,
+        "expected_root_falsifier": 23760,
+        "fine_torus_period": 774,
+        "length": 6,
+        "one_fine_site_x_translation_preserves_tagged_code_support": false,
+        "one_fine_site_x_translation_symmetric_difference": 23760,
+        "overlap_with_one_fine_site_x_translate": 7776,
+        "split": "held",
+        "tagged_roles_per_supplied_coarse_cell": 91,
+        "tagged_sites": 19656
+      },
+      {
+        "all_six_unit_translation_symmetric_differences": {
+          "(-1, 0, 0)": 37730,
+          "(0, -1, 0)": 62426,
+          "(0, 0, -1)": 62426,
+          "(0, 0, 1)": 62426,
+          "(0, 1, 0)": 62426,
+          "(1, 0, 0)": 37730
+        },
+        "coarse_K_translation_preserves_partition": true,
+        "expected_root_falsifier": 37730,
+        "fine_torus_period": 903,
+        "length": 7,
+        "one_fine_site_x_translation_preserves_tagged_code_support": false,
+        "one_fine_site_x_translation_symmetric_difference": 37730,
+        "overlap_with_one_fine_site_x_translate": 12348,
+        "split": "held-out-size",
+        "tagged_roles_per_supplied_coarse_cell": 91,
+        "tagged_sites": 31213
+      }
+    ],
+    "import_audit": {
+      "actual_imported_modules": {
+        "ROUTE1_DIRECT_CAR_COMPILER_CYCLE231_2026_07_17": "scripts/ROUTE1_DIRECT_CAR_COMPILER_CYCLE231_2026_07_17.py",
+        "active_cubic_source_response_cycle211_2026_07_16": "scripts/active_cubic_source_response_cycle211_2026_07_16.py",
+        "archive_carrier_source_ledger_cycle227_2026_07_17": "scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py",
+        "autonomous_cubic_field_emission_cycle214_2026_07_16": "scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py",
+        "common_matter_field_coin_family_cycle219_2026_07_16": "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py",
+        "exact_3d_higher_form_bosonization_cycle235_2026_07_17": "scripts/exact_3d_higher_form_bosonization_cycle235_2026_07_17.py",
+        "finite_coin_scalar_wave_dilation_cycle215_2026_07_16": "scripts/finite_coin_scalar_wave_dilation_cycle215_2026_07_16.py",
+        "fock_modular_boundary_current_cycle229_2026_07_17": "scripts/fock_modular_boundary_current_cycle229_2026_07_17.py",
+        "local_conservative_commit_resource_gravity_cycle9_2026_07_14": "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py",
+        "local_generator_source_tournament_cycle228_2026_07_17": "scripts/local_generator_source_tournament_cycle228_2026_07_17.py",
+        "local_rough_puncture_odd_sector_cycle247_2026_07_17": "scripts/local_rough_puncture_odd_sector_cycle247_2026_07_17.py",
+        "physical_adjacent_star_recurrence_tournament_cycle548_2026_07_21": "scripts/physical_adjacent_star_recurrence_tournament_cycle548_2026_07_21.py",
+        "physical_adjacent_two_star_compressed_gram_cycle518_2026_07_21": "scripts/physical_adjacent_two_star_compressed_gram_cycle518_2026_07_21.py",
+        "physical_adjacent_two_star_order_character_preflight_cycle517_2026_07_21": "scripts/physical_adjacent_two_star_order_character_preflight_cycle517_2026_07_21.py",
+        "physical_adjacent_two_star_seam_tag_preservation_cycle519_2026_07_21": "scripts/physical_adjacent_two_star_seam_tag_preservation_cycle519_2026_07_21.py",
+        "physical_boundary_aware_multistar_recurrence_tournament_cycle551_2026_07_21": "scripts/physical_boundary_aware_multistar_recurrence_tournament_cycle551_2026_07_21.py",
+        "physical_carrier_preparation_elementary_synthesis_tournament_cycle603_2026_07_22": "scripts/physical_carrier_preparation_elementary_synthesis_tournament_cycle603_2026_07_22.py",
+        "physical_correlated_double_shadow_stream_cycle529_2026_07_21": "scripts/physical_correlated_double_shadow_stream_cycle529_2026_07_21.py",
+        "physical_cycle269_collision_safe_auxiliary_ports_2026_07_17": "scripts/physical_cycle269_collision_safe_auxiliary_ports_2026_07_17.py",
+        "physical_cycle269_common_m64_fixed_seam_cycle311_2026_07_18": "scripts/physical_cycle269_common_m64_fixed_seam_cycle311_2026_07_18.py",
+        "physical_cycle269_five_cell_adjacent_star_cycle327_2026_07_18": "scripts/physical_cycle269_five_cell_adjacent_star_cycle327_2026_07_18.py",
+        "physical_cycle269_four_cell_star_cycle324_2026_07_18": "scripts/physical_cycle269_four_cell_star_cycle324_2026_07_18.py",
+        "physical_cycle269_full_two_particle_sector_interface_cycle305_2026_07_17": "scripts/physical_cycle269_full_two_particle_sector_interface_cycle305_2026_07_17.py",
+        "physical_cycle269_higher_number_fixed_seam_cycle308_2026_07_17": "scripts/physical_cycle269_higher_number_fixed_seam_cycle308_2026_07_17.py",
+        "physical_cycle269_overlap_aware_two_cell_cycle315_2026_07_18": "scripts/physical_cycle269_overlap_aware_two_cell_cycle315_2026_07_18.py",
+        "physical_cycle269_reference_relative_localized_pair_lift_2026_07_17": "scripts/physical_cycle269_reference_relative_localized_pair_lift_2026_07_17.py",
+        "physical_cycle269_seven_cell_maximal_star_cycle330_2026_07_18": "scripts/physical_cycle269_seven_cell_maximal_star_cycle330_2026_07_18.py",
+        "physical_cycle269_staggered_reservoir_catchup_2026_07_17": "scripts/physical_cycle269_staggered_reservoir_catchup_2026_07_17.py",
+        "physical_cycle269_three_cell_multiedge_cycle319_2026_07_18": "scripts/physical_cycle269_three_cell_multiedge_cycle319_2026_07_18.py",
+        "physical_cycle330_all_order_isometry_bridge_cycle515_2026_07_20": "scripts/physical_cycle330_all_order_isometry_bridge_cycle515_2026_07_20.py",
+        "physical_cycle515_koszul_frame_bridge_cycle516_2026_07_20": "scripts/physical_cycle515_koszul_frame_bridge_cycle516_2026_07_20.py",
+        "physical_global_N3_returned_slot_compiler_cycle560_2026_07_21": "scripts/physical_global_N3_returned_slot_compiler_cycle560_2026_07_21.py",
+        "physical_global_carrier_stream_qca_approximation_tournament_cycle606_2026_07_22": "scripts/physical_global_carrier_stream_qca_approximation_tournament_cycle606_2026_07_22.py",
+        "physical_global_selected_network_encoder_cycle555_2026_07_21": "scripts/physical_global_selected_network_encoder_cycle555_2026_07_21.py",
+        "physical_local_N3_six_ray_decoder_tournament_cycle557_2026_07_21": "scripts/physical_local_N3_six_ray_decoder_tournament_cycle557_2026_07_21.py",
+        "physical_local_cutoff_gauge_enforcement_tournament_cycle593_2026_07_22": "scripts/physical_local_cutoff_gauge_enforcement_tournament_cycle593_2026_07_22.py",
+        "physical_native_shadow_nearest_neighbor_router_cycle527_2026_07_21": "scripts/physical_native_shadow_nearest_neighbor_router_cycle527_2026_07_21.py",
+        "physical_opposite_carrier_reearned_compiler_cycle522_2026_07_21": "scripts/physical_opposite_carrier_reearned_compiler_cycle522_2026_07_21.py",
+        "physical_opposite_carrier_shared_cell_recurrence_cycle525_2026_07_21": "scripts/physical_opposite_carrier_shared_cell_recurrence_cycle525_2026_07_21.py",
+        "physical_proper_cubic_supercell_stream_composition_tournament_cycle610_2026_07_22": "scripts/physical_proper_cubic_supercell_stream_composition_tournament_cycle610_2026_07_22.py",
+        "physical_protected_shadow_coin_gate_compiler_cycle523_2026_07_21": "scripts/physical_protected_shadow_coin_gate_compiler_cycle523_2026_07_21.py",
+        "physical_recurrent_shared_volume_compiler_cycle545_2026_07_21": "scripts/physical_recurrent_shared_volume_compiler_cycle545_2026_07_21.py",
+        "physical_root_free_cutoff_gauge_preparation_tournament_cycle598_2026_07_22": "scripts/physical_root_free_cutoff_gauge_preparation_tournament_cycle598_2026_07_22.py",
+        "physical_root_free_full_N3_carrier_genesis_tournament_cycle600_2026_07_22": "scripts/physical_root_free_full_N3_carrier_genesis_tournament_cycle600_2026_07_22.py",
+        "physical_rough_fswap_pauli_rotation_gate_compiler_cycle540_2026_07_21": "scripts/physical_rough_fswap_pauli_rotation_gate_compiler_cycle540_2026_07_21.py",
+        "physical_rough_gauge_subsystem_quotient_cycle532_2026_07_21": "scripts/physical_rough_gauge_subsystem_quotient_cycle532_2026_07_21.py",
+        "physical_selected_seam_code_space_isometry_compiler_cycle533_2026_07_21": "scripts/physical_selected_seam_code_space_isometry_compiler_cycle533_2026_07_21.py",
+        "physical_selected_seam_event_current_adapter_cycle526_2026_07_21": "scripts/physical_selected_seam_event_current_adapter_cycle526_2026_07_21.py",
+        "physical_shadow_normal_form_sync_cycle530_2026_07_21": "scripts/physical_shadow_normal_form_sync_cycle530_2026_07_21.py",
+        "physical_shared_seam_code_space_isometry_compiler_cycle539_2026_07_21": "scripts/physical_shared_seam_code_space_isometry_compiler_cycle539_2026_07_21.py",
+        "physical_three_star_shared_parity_overlap_cycle520_2026_07_21": "scripts/physical_three_star_shared_parity_overlap_cycle520_2026_07_21.py",
+        "proper_cubic_bound_object_equivalence_cycle210_2026_07_16": "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
+        "retarded_cubic_mass_field_cycle213_2026_07_16": "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py",
+        "spatial_car_contact_seam_form_factor_cycle230_2026_07_17": "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py",
+        "virtual_exchange_green_kernel_cycle216_2026_07_16": "scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py",
+        "wilson_subsystem_sector_free_compiler_cycle269_2026_07_17": "scripts/wilson_subsystem_sector_free_compiler_cycle269_2026_07_17.py"
+      },
+      "expected_file_count": 125,
+      "expected_transitive_sha256": {
+        "docs/work_history/repo/review_feedback/EXACT_3D_HIGHER_FORM_BOSONIZATION_CYCLE235_NOTE_2026-07-17.md": "295edee5608d3141fc3e3212bc51753265d953dadd68a8b44a66ed1e0e16e0d2",
+        "docs/work_history/repo/review_feedback/LOCAL_ROUGH_PUNCTURE_ODD_SECTOR_CYCLE247_NOTE_2026-07-17.md": "8cc36f383c1d175a80ad26f17f98287fc8e94ef2f69b36851c4c420bcec8dad9",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ADJACENT_STAR_RECURRENCE_TOURNAMENT_CYCLE548_NOTE_2026-07-21.md": "db16fe47dae51428447f42b88418fd0181a8908fee16a95f73b4bbf60fa23c04",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ADJACENT_TWO_STAR_COMPRESSED_GRAM_CYCLE518_NOTE_2026-07-21.md": "7278244447e4074e66966e418710e2ad401befc4b8cbfb9d0a30088c0f837107",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ADJACENT_TWO_STAR_ORDER_CHARACTER_PREFLIGHT_CYCLE517_NOTE_2026-07-21.md": "51c3b92448f7779fe838c51265b279d82f48e3b19f6c0464b95f18112bf07a74",
+        "docs/work_history/repo/review_feedback/PHYSICAL_BOUNDARY_AWARE_MULTISTAR_RECURRENCE_TOURNAMENT_CYCLE551_NOTE_2026-07-21.md": "15441dc81ff96527e67e5346493fc3d5ebbc0734d3d1982a77b900b53c290b40",
+        "docs/work_history/repo/review_feedback/PHYSICAL_CARRIER_PREPARATION_ELEMENTARY_SYNTHESIS_TOURNAMENT_CYCLE603_NOTE_2026-07-22.md": "ddc06d6d4abf945794b1c0b7566c9183fa744839d1ba5630c1d9ad8b4559c417",
+        "docs/work_history/repo/review_feedback/PHYSICAL_CONTACT_DIMER_INFINITE_INTERNAL_CONTENT_TOURNAMENT_CYCLE583_NOTE_2026-07-22.md": "6942341fa2fc8978a25acdd758677b04a5a1d0c9e13b8e5627bc9bf504814cf3",
+        "docs/work_history/repo/review_feedback/PHYSICAL_CORRELATED_DOUBLE_SHADOW_STREAM_CYCLE529_NOTE_2026-07-21.md": "8aa3eed5801349767f254651a7ba0b0d9d823448875c27f28259f4dd1a0474e2",
+        "docs/work_history/repo/review_feedback/PHYSICAL_COVARIANT_PROTECTED_LINK_SHADOW_CYCLE528_NOTE_2026-07-21.md": "f27f78a05910934ffd97bca780d9384b93a1aff12481d7e08611951f03acc432",
+        "docs/work_history/repo/review_feedback/PHYSICAL_CYCLE269_SEVEN_CELL_MAXIMAL_STAR_CYCLE330_NOTE_2026-07-18.md": "4edb939ca520bc5b148814e8c274e93e16c87e8f639d925db130fdfe16fd3b64",
+        "docs/work_history/repo/review_feedback/PHYSICAL_CYCLE330_ALL_ORDER_ISOMETRY_BRIDGE_CYCLE515_NOTE_2026-07-20.md": "99696f55a6e1f8f29958d878bdbd5bb0f889c59be8707e93206d1648ba94850a",
+        "docs/work_history/repo/review_feedback/PHYSICAL_CYCLE515_KOSZUL_FRAME_BRIDGE_CYCLE516_NOTE_2026-07-21.md": "5f32e766fad91a960031bf68dac4ba3b2498b02b5fc4fce9ac1c795e67c23597",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ENLARGED_LINK_CONTACT_WORK_TOURNAMENT_CYCLE569_NOTE_2026-07-22.md": "ca90108c802f1c39d5a3db95f78397ecc0da43a9c54d180f32d3108f7cb1eb19",
+        "docs/work_history/repo/review_feedback/PHYSICAL_GLOBAL_CARRIER_STREAM_QCA_APPROXIMATION_TOURNAMENT_CYCLE606_NOTE_2026-07-22.md": "01ef76e8e0c3d29645e1f9247fa479d3fa1d3dbabab09d884da102208cf31d78",
+        "docs/work_history/repo/review_feedback/PHYSICAL_GLOBAL_N3_RETURNED_SLOT_COMPILER_CYCLE560_NOTE_2026-07-21.md": "b6c5ee42cd26918f99ecc96d78440deef2a29ae6c05f576813b3f269997c50de",
+        "docs/work_history/repo/review_feedback/PHYSICAL_GLOBAL_SELECTED_NETWORK_ENCODER_CYCLE555_NOTE_2026-07-21.md": "34461d051b1bddd0319b439aecfe433f7309f8e4065375e52b2e91dac8c2867b",
+        "docs/work_history/repo/review_feedback/PHYSICAL_HELD_SPARSE_ORDER_RETIREMENT_CYCLE563_NOTE_2026-07-21.md": "3d636226e3fff5bfb68c2c38566537fe419ce03de5d60415742ffcd2307b34dd",
+        "docs/work_history/repo/review_feedback/PHYSICAL_INTRINSIC_CONTACT_BOUND_MOVING_TRANSITION_TOURNAMENT_CYCLE578_NOTE_2026-07-22.md": "41d3ded32f36a0f9ab0b407de14524db7d621e285fa5aeff6f76d480dd8e18d5",
+        "docs/work_history/repo/review_feedback/PHYSICAL_LOCAL_CUTOFF_GAUGE_ENFORCEMENT_TOURNAMENT_CYCLE593_NOTE_2026-07-22.md": "3040c484d8d3c4f30a1e8f4b1eb5bc75568246ad04424aaff4bd94ba63b55c44",
+        "docs/work_history/repo/review_feedback/PHYSICAL_LOCAL_N3_SIX_RAY_DECODER_TOURNAMENT_CYCLE557_NOTE_2026-07-21.md": "e46acc27ee4bddc8c89f0d322173cd76f20fee100d7f54134e53421f16155bda",
+        "docs/work_history/repo/review_feedback/PHYSICAL_OPPOSITE_CARRIER_SHARED_CELL_RECURRENCE_CYCLE525_NOTE_2026-07-21.md": "43a39dd4a33d06eaf11369eb84d436761832974a4f759aec44e9ab6b919e44a8",
+        "docs/work_history/repo/review_feedback/PHYSICAL_PROPER_CUBIC_SUPERCELL_STREAM_COMPOSITION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md": "3768d2a1407bdc8de06e2a55fa18300469b1006c0a16a78ada8b8d3a4b936105",
+        "docs/work_history/repo/review_feedback/PHYSICAL_RECURRENT_SHARED_VOLUME_COMPILER_CYCLE545_NOTE_2026-07-21.md": "e1fd77a21cd1f2aac8b7c0a5afb66a43275fb1c202f576f958c126d235f5a4bb",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ROOT_FREE_CUTOFF_GAUGE_PREPARATION_TOURNAMENT_CYCLE598_NOTE_2026-07-22.md": "065192627b0c56b59d75a0ea837f26179b76579aa3e0783bc020092f173963ac",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ROOT_FREE_FULL_N3_CARRIER_GENESIS_TOURNAMENT_CYCLE600_NOTE_2026-07-22.md": "9c8772f365812caedb0c416f7f0681a8f342ff3d08ac412851e7e6141ea7f602",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md": "5f668f6cc04a5eece23f913d5869f57553df583c23d6dbb5cdac6756be41bfc3",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ROUTE_C_Q6_SYMBOLIC_AXIS_DIAGNOSTIC_CYCLE514_NOTE_2026-07-20.md": "e4365d2a9d7028941d882b13c1f00ba1b7dfcf52e45109e9a293f702a13eb278",
+        "docs/work_history/repo/review_feedback/PHYSICAL_SELECTED_SEAM_CODE_SPACE_ISOMETRY_COMPILER_CYCLE533_NOTE_2026-07-21.md": "e15712305bd770cff61133f184d02da1714c50453bb5f3c492f1cc3051e119c2",
+        "docs/work_history/repo/review_feedback/PHYSICAL_SHARED_SEAM_CODE_SPACE_ISOMETRY_COMPILER_CYCLE539_NOTE_2026-07-21.md": "7d95064985bd9b2d6312ec49fa738f86fd7bba289316539a06f71931a958fcc1",
+        "docs/work_history/repo/review_feedback/PHYSICAL_THREE_STAR_SHARED_PARITY_OVERLAP_CYCLE520_NOTE_2026-07-21.md": "8a1aa2c66cbc38320c829679e7b982936834510a58b38f89621f22278fd67cd8",
+        "docs/work_history/repo/review_feedback/SPATIAL_CAR_CONTACT_SEAM_FORM_FACTOR_CYCLE230_NOTE_2026-07-17.md": "a7a3a0a021dbd691c6c2ddb9163679b445c5110b8150f63395271037963c7132",
+        "outputs/physical_carrier_preparation_elementary_synthesis_tournament_cycle603_cold_2026_07_22.txt": "35385a09b5d075e553de1de9302e0317dd415acbe1f5ccf9425905eedae94174",
+        "outputs/physical_carrier_preparation_elementary_synthesis_tournament_cycle603_receipt_2026_07_22.json": "751487fa50a738d5473f7ddcb77474785c84463dda1264a34de2643f19102871",
+        "outputs/physical_contact_dimer_infinite_internal_content_tournament_cycle583_cold_2026_07_22.txt": "22af96509364601a99c3ed2d6b148643ede02369f70e5be92629d1f0e5d3ddce",
+        "outputs/physical_contact_dimer_infinite_internal_content_tournament_cycle583_receipt_2026_07_22.json": "0f4e2df9e25cdc7137c42fb91666c5eaae10efc652d5af84f421e38c5ad97aab",
+        "outputs/physical_cycle330_all_order_isometry_bridge_cycle515_attempt2_2026_07_20.log": "636d067ddd9284e59f24999666c5110fce425e60a7baa48d714b2a023abab1b1",
+        "outputs/physical_cycle330_all_order_isometry_bridge_cycle515_dry_2026_07_20.log": "7ef8b552f8dd08770691c1281b354970641bb75191c5a15e26b1e54078204b56",
+        "outputs/physical_cycle515_koszul_frame_bridge_cycle516_attempt4_2026_07_21.log": "710673f10229675789ab84abe24d15238f0b9b1674608b0254a77c02860ebcce",
+        "outputs/physical_cycle515_koszul_frame_bridge_cycle516_attempt4_receipt_2026_07_21.json": "bfcf92c44e8b651f3866fa017a77ab7462988427d80178da6cbbddbe5d703cbb",
+        "outputs/physical_enlarged_link_contact_work_tournament_cycle569_cold_2026_07_22.txt": "834155bbb74e1ce42b8c0d90b746787bba4373d4f0ea092d4afc74391881beb6",
+        "outputs/physical_enlarged_link_contact_work_tournament_cycle569_receipt_2026_07_22.json": "ddba1d3cfb3167416b12a4a327dd136c4b61878f07ef1448629f2a440208b195",
+        "outputs/physical_global_N3_returned_slot_compiler_cycle560_receipt_2026_07_21.json": "e27c9eba803413455fc6b5bf3aca7a38def9d4bb68694af37a44725343509598",
+        "outputs/physical_global_carrier_stream_qca_approximation_tournament_cycle606_cold_2026_07_22.txt": "007d7fdf3d67d55afbacdd905bc44d67b685f9926ba395e393ed01eec005e5dd",
+        "outputs/physical_global_carrier_stream_qca_approximation_tournament_cycle606_receipt_2026_07_22.json": "2b225152dcdae055c4d751c57af913b6184b9977e52ebc3dba509b4fc0b3da3c",
+        "outputs/physical_held_sparse_order_retirement_cycle563_2026_07_21.json": "e9a2b0c8013d1a75dad9ae5ff76c7219b30a2b8e2c29556d269aa2c8373a6c8f",
+        "outputs/physical_held_sparse_order_retirement_cycle563_receipt_2026_07_21.json": "ac9fcc1da45f33152679cfd2992abf1d037fae8647f1ab4d2d0526e6ac7000ae",
+        "outputs/physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_cold_2026_07_22.txt": "6068efb7f80a5dc4b15253b6816ebfabcd13fcb929c9e4b1d56195eb0d1b922d",
+        "outputs/physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_receipt_2026_07_22.json": "b84f1cfaa03661a0a2498fd409e077aeeb4f6ad423909807d20be7c846c571f7",
+        "outputs/physical_local_cutoff_gauge_enforcement_tournament_cycle593_cold_2026_07_22.txt": "5a2509151706307ffe158d37b78f467692ac8976636f6437a3069bfd158e2908",
+        "outputs/physical_local_cutoff_gauge_enforcement_tournament_cycle593_receipt_2026_07_22.json": "0b6d82faba587b50146bd1001dc72ba09ca9248fd74d5b02ddc6e5c33b486475",
+        "outputs/physical_proper_cubic_supercell_stream_composition_tournament_cycle610_cold_2026_07_22.txt": "0adbee38e398c9e1d1ccd2733454ead2669338b86d48cbefa5331abb78c126e8",
+        "outputs/physical_proper_cubic_supercell_stream_composition_tournament_cycle610_receipt_2026_07_22.json": "375f843606a81970ae50f71d74c53f7e4c4d1437007daaecbedd0b19e3fdfa34",
+        "outputs/physical_root_free_cutoff_gauge_preparation_tournament_cycle598_cold_2026_07_22.txt": "3a8d6990d8dfaabefe0f5cec08af83d14613507ca0712b993f39c49025bb8797",
+        "outputs/physical_root_free_cutoff_gauge_preparation_tournament_cycle598_receipt_2026_07_22.json": "c8a27819fb1907d20aa9c73a7d66a2b8c0cc37b532da4686ef32a80996d909c1",
+        "outputs/physical_root_free_full_N3_carrier_genesis_tournament_cycle600_cold_2026_07_22.txt": "fd82ebe960fa57d25e85328465b782a644ae127220d9abbefe5c64ca1b9eb01f",
+        "outputs/physical_root_free_full_N3_carrier_genesis_tournament_cycle600_receipt_2026_07_22.json": "d09cd7a82070f4311ab84a07127551ccf1e30e5557586e32fcd55fa01fd3dba5",
+        "outputs/physical_route_c_q6_symbolic_axis_diagnostic_cycle514_attempt1_2026_07_20.log": "48c37e6ec11eb9cb7278e94f825ac5ab1f5569dc6f3c9b1fd247b1fe6c698847",
+        "outputs/physical_route_c_q6_symbolic_axis_diagnostic_cycle514_attempt1_receipt_2026_07_20.json": "5def6d3fb1e796341bb76cb51f6eb61a90274ef950a11a8007b7a3585f55c97d",
+        "outputs/physical_route_c_q6_symbolic_axis_diagnostic_cycle514_dry_2026_07_20.log": "e09d664911f681a3a85f6cf180b744c4c63fb84362fe8232af6b64400903a83f",
+        "scripts/ROUTE1_DIRECT_CAR_COMPILER_CYCLE231_2026_07_17.py": "5adb6dc52f6352a5367a2b56da94854e511f9dd174688029f1841e5004a91c32",
+        "scripts/active_cubic_source_response_cycle211_2026_07_16.py": "d5392152d322ea8f3850d0345d6caa426db22ae7f7694775b4bd6388704c18a6",
+        "scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py": "a5e78e40cad0c43ee62ae887df7d84a0b895ab217ba4f3d521353e5d0b6bf95a",
+        "scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py": "464e5928b7c1e46c23e4010363b6bd8ff3d0e2379c6e5ecb46891010ef47a5a4",
+        "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py": "ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a",
+        "scripts/exact_3d_higher_form_bosonization_cycle235_2026_07_17.py": "dd955ce629cde5e225b625be89f5f71045d688083a032b7bf104efa9b3f1bb34",
+        "scripts/finite_coin_scalar_wave_dilation_cycle215_2026_07_16.py": "3a977106389428d2281ea7e0e32b65fe57f6ce33d783742b80f264f78f4f2c17",
+        "scripts/fock_modular_boundary_current_cycle229_2026_07_17.py": "fbf434a94c8dae57ffb6e68776642e4342a91f0d39f071ee1388fcb89ff846d7",
+        "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py": "4ab857755b606d7ba7432179ed66de723ac31d3f66507cafa1168ab60d4965d6",
+        "scripts/local_generator_source_tournament_cycle228_2026_07_17.py": "97fdf54189d7da93099aeab4a9b1dd8501c7262d55493b9fa95bf1c2f5c97a9d",
+        "scripts/local_rough_puncture_odd_sector_cycle247_2026_07_17.py": "10f5cf027c76f5a0a3b1d3dbaa6cb0e6d418932c84553f0cca303d3f21742519",
+        "scripts/physical_adjacent_star_recurrence_tournament_cycle548_2026_07_21.py": "5830dacebf79720301192b0dcb39121e1ecf03137f94d6e97c7da4034d9c9ca0",
+        "scripts/physical_adjacent_two_star_compressed_gram_cycle518_2026_07_21.py": "8f505d2de6476bdbc20f87a901e8be9fe46deda5b568c98d750977069a352e53",
+        "scripts/physical_adjacent_two_star_order_character_preflight_cycle517_2026_07_21.py": "ad8b0c71840cbfa56aae3ae9da44eceec1cad7d84be06bab32604eb5f6fbb4a3",
+        "scripts/physical_adjacent_two_star_seam_tag_preservation_cycle519_2026_07_21.py": "d2e0648558fb3031a200600b0643de28a5c8e695c35165a6905a6a99ff45255d",
+        "scripts/physical_autonomous_localized_refocused_matter_transition_tournament_cycle575_2026_07_22.py": "0c845ecd02b86ce4d99aa8406a206e9b01628f02f1592cf37c41a084eb1e0a4b",
+        "scripts/physical_boundary_aware_multistar_recurrence_tournament_cycle551_2026_07_21.py": "3d68e536565c491b1b54547d82ed6faab73437c600229ff9060f471ffad84997",
+        "scripts/physical_carrier_preparation_elementary_synthesis_tournament_cycle603_2026_07_22.py": "e64032e369e08e03ad2a742a2bde6914d8adc6ed1fd64f15f4e301c1c8dea739",
+        "scripts/physical_contact_dimer_infinite_internal_content_tournament_cycle583_2026_07_22.py": "21957cc883550ee81fc48d5b55ad4a0384cbac8697557691c805d84c7c8dbaaf",
+        "scripts/physical_correlated_double_shadow_stream_cycle529_2026_07_21.py": "df118a01c2a95fcccd7986dc01afb5625d0faa8bb95beb2ecb344a9f5fbacda7",
+        "scripts/physical_covariant_protected_link_shadow_cycle528_2026_07_21.py": "5eb5160688465283126b990873398c2b8914e39a49f10919128b0b5d77496da5",
+        "scripts/physical_cycle269_collision_safe_auxiliary_ports_2026_07_17.py": "03786effa03eae50930ca0bfa14c881276df8bd6bdba83b6d7a893cffe1fe747",
+        "scripts/physical_cycle269_common_m64_fixed_seam_cycle311_2026_07_18.py": "4495bf39e1e2661866501e377b8ec1aefff656e261e428fa5b6738f73b49699c",
+        "scripts/physical_cycle269_five_cell_adjacent_star_cycle327_2026_07_18.py": "0688e7db8b8490e525c0e1f1108474903e2ff40d278e185b6add54f8086f8110",
+        "scripts/physical_cycle269_four_cell_star_cycle324_2026_07_18.py": "f2e07bf91e7a5b06c8037314798cb84cd6d747bc92fa6292c1759915fb91354d",
+        "scripts/physical_cycle269_full_two_particle_sector_interface_cycle305_2026_07_17.py": "3e970b2c84ebe891d36c132cd99d716ceb20b596cea89729f06ed8950c7a847c",
+        "scripts/physical_cycle269_higher_number_fixed_seam_cycle308_2026_07_17.py": "cb6de428c5054ea9415a59bab75d36c693c65d8070df30a6a0bbc2a926f3f4e4",
+        "scripts/physical_cycle269_overlap_aware_two_cell_cycle315_2026_07_18.py": "52c18f96a1f8db9b79e4d0fba5ff76905170e6a8dc8c3e818fdf69984a1778c3",
+        "scripts/physical_cycle269_reference_relative_localized_pair_lift_2026_07_17.py": "95820817eaf883040aae96531f1afd4fe7a90569a43215d226cf44dce9a1cc09",
+        "scripts/physical_cycle269_seven_cell_maximal_star_cycle330_2026_07_18.py": "4428d1f73ff315987edabd7f838a1c58414d0a982f0cd28656ddef3bd230d19f",
+        "scripts/physical_cycle269_staggered_reservoir_catchup_2026_07_17.py": "5310ee8e19a55694f7a11ccf013c696b16cdb37961c5ade41ed316b27238bab1",
+        "scripts/physical_cycle269_three_cell_multiedge_cycle319_2026_07_18.py": "faa05d97542efca7684f4acc6f9b7dfb8e32a02f3f9d16adeae16449f5b702fb",
+        "scripts/physical_cycle330_all_order_isometry_bridge_cycle515_2026_07_20.py": "93afe1600cb3fb8b7844729521b005ce62f957a128a6ffb9493a03a1d9932e96",
+        "scripts/physical_cycle515_koszul_frame_bridge_cycle516_2026_07_20.py": "3c4318a84c661893932c8d41a90db36445f80cefd092a6a3fffb56cbf8abfa9c",
+        "scripts/physical_enlarged_link_contact_work_tournament_cycle569_2026_07_22.py": "877dc75a840ff348f15022784dc60190fa884fad216db3e1904fc089c9d3c091",
+        "scripts/physical_global_N3_returned_slot_compiler_cycle560_2026_07_21.py": "f6d641e4735b26f9463ea623ee8ed6e28acc995fdfc88300709dcfac100c13ab",
+        "scripts/physical_global_carrier_stream_qca_approximation_tournament_cycle606_2026_07_22.py": "637a7ac6b5a56ef539bef3b94c6624a4f5f52372ef31e2d1e3bdc4328ae8767f",
+        "scripts/physical_global_selected_network_encoder_cycle555_2026_07_21.py": "af51110e8c4cb5245efd2bd99ef7f2b12fb02586c5e5225082ce4a13fba27e92",
+        "scripts/physical_held_sparse_order_retirement_cycle563_2026_07_21.py": "55e51cafffa70284a6e8e1f0510ca0d2f890989ccbcf5bce64435df4c8e812a6",
+        "scripts/physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_2026_07_22.py": "2a3c77c26003bb0f8b55fe2da0fd36b0ac98a14a21a083303fe175e5f802e99f",
+        "scripts/physical_joint_clock_accumulator_contraction_bridge_cycle570_2026_07_22.py": "37e9d0f336d773bd4a1957a6531f80dc35b9673a4ef0f99137e7fb33558bf849",
+        "scripts/physical_local_N3_six_ray_decoder_tournament_cycle557_2026_07_21.py": "8b153c0ec633d489a839221788115ae85c6bf80c4d4952339795aa7bd80150d8",
+        "scripts/physical_local_cutoff_gauge_enforcement_tournament_cycle593_2026_07_22.py": "9207101f5784bac0ff2097926a36e773f2a860102e57aee173581961771a4ae5",
+        "scripts/physical_matter_transition_clock_equivalence_tournament_cycle573_2026_07_22.py": "52c743889146189c2b574fa8012e7281340722303cb5b61fc53579e5fe23ebf4",
+        "scripts/physical_native_shadow_nearest_neighbor_router_cycle527_2026_07_21.py": "2ca2021fa76b889128b587a6a0d67986e236319ea8fb7ccd1dfaf31982c55fa0",
+        "scripts/physical_opposite_carrier_reearned_compiler_cycle522_2026_07_21.py": "d6a7700d7575dfba02d4b4d2438e54d37a02c6ca7f71673c8a871b474f6e088b",
+        "scripts/physical_opposite_carrier_shared_cell_recurrence_cycle525_2026_07_21.py": "379c67315de8d235f8d5287b281b6291d0a10731d030338d8bde0676a4c0b785",
+        "scripts/physical_proper_cubic_supercell_stream_composition_tournament_cycle610_2026_07_22.py": "ed2250711646ad99bf077e74b8e4194f2df0a2cf368d3c05c45ea95cac8083db",
+        "scripts/physical_protected_shadow_coin_gate_compiler_cycle523_2026_07_21.py": "d9dd02bbb4dfacebf0f75f6b8c56881ff56653843cb7ed75baa381d5aa605b9d",
+        "scripts/physical_recurrent_shared_volume_compiler_cycle545_2026_07_21.py": "b117c595f8c06f79931be98d573168e53d9f0fb9d5024e4ee623ba76d7488067",
+        "scripts/physical_root_free_cutoff_gauge_preparation_tournament_cycle598_2026_07_22.py": "5702ac74768c83bd97d0860ad827a5a66809c8bfbfafb2dd010982bcb917be51",
+        "scripts/physical_root_free_full_N3_carrier_genesis_tournament_cycle600_2026_07_22.py": "904342da79cbc22c9878479f586387414e4a3af0f7f603708ec03d272074c933",
+        "scripts/physical_rough_fswap_pauli_rotation_gate_compiler_cycle540_2026_07_21.py": "53b003bbda96eee1d85e48aa5cd0e8c530bea35c7b6eefef5a637127f66af13a",
+        "scripts/physical_rough_gauge_subsystem_quotient_cycle532_2026_07_21.py": "a768d4250e55399c03e6084614a772953e6bcdf1570b9e7c50ac8d18544cfe6a",
+        "scripts/physical_route_c_q6_symbolic_axis_diagnostic_cycle514_2026_07_20.py": "74d9231d0c78ad6c85c028cea69cc7ac29c7b1b0c04259513d7223c5e8ae19fe",
+        "scripts/physical_selected_seam_code_space_isometry_compiler_cycle533_2026_07_21.py": "72fe24e03b38812ef9f6dc610bc445b5ea6046a30683c2b734e9c0396e84facd",
+        "scripts/physical_selected_seam_event_current_adapter_cycle526_2026_07_21.py": "7c3d4a35664eaf5c7737c86464ca069e15ce29c40f61778081af8139970c37cd",
+        "scripts/physical_shadow_normal_form_sync_cycle530_2026_07_21.py": "f5f90a331803a43d293fa8e8e3640e29886bed81935827763773d84f61ce9c99",
+        "scripts/physical_shared_seam_code_space_isometry_compiler_cycle539_2026_07_21.py": "aa126a6363f9fc8c08d28a47b840c1b6e0a7c0b47bbe296087340b804a0087d1",
+        "scripts/physical_three_star_shared_parity_overlap_cycle520_2026_07_21.py": "22b00fd39fd07a04afb8776f4b97c31486ce4d2034617bd16aa170c263108b2b",
+        "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py": "c410b754d4e984f6ee5ccbc7c5a52e776c50c91c4daa12d798044f104cc7435b",
+        "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py": "472e28c78901368629c8d9d6f614bb8fb3ea003639ac61d480d06941cdf6cb86",
+        "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py": "b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae",
+        "scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py": "9ef0fff433bbf1c96c9b13c5ce79530e01fe705f08c6caf6b60316e20359e011",
+        "scripts/wilson_subsystem_sector_free_compiler_cycle269_2026_07_17.py": "c7b8673eb1a0dced08131820caa1fb2400fc8d1f73cfe2cddf5f8a28f9045d35"
+      },
+      "observed_transitive_sha256": {
+        "docs/work_history/repo/review_feedback/EXACT_3D_HIGHER_FORM_BOSONIZATION_CYCLE235_NOTE_2026-07-17.md": "295edee5608d3141fc3e3212bc51753265d953dadd68a8b44a66ed1e0e16e0d2",
+        "docs/work_history/repo/review_feedback/LOCAL_ROUGH_PUNCTURE_ODD_SECTOR_CYCLE247_NOTE_2026-07-17.md": "8cc36f383c1d175a80ad26f17f98287fc8e94ef2f69b36851c4c420bcec8dad9",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ADJACENT_STAR_RECURRENCE_TOURNAMENT_CYCLE548_NOTE_2026-07-21.md": "db16fe47dae51428447f42b88418fd0181a8908fee16a95f73b4bbf60fa23c04",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ADJACENT_TWO_STAR_COMPRESSED_GRAM_CYCLE518_NOTE_2026-07-21.md": "7278244447e4074e66966e418710e2ad401befc4b8cbfb9d0a30088c0f837107",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ADJACENT_TWO_STAR_ORDER_CHARACTER_PREFLIGHT_CYCLE517_NOTE_2026-07-21.md": "51c3b92448f7779fe838c51265b279d82f48e3b19f6c0464b95f18112bf07a74",
+        "docs/work_history/repo/review_feedback/PHYSICAL_BOUNDARY_AWARE_MULTISTAR_RECURRENCE_TOURNAMENT_CYCLE551_NOTE_2026-07-21.md": "15441dc81ff96527e67e5346493fc3d5ebbc0734d3d1982a77b900b53c290b40",
+        "docs/work_history/repo/review_feedback/PHYSICAL_CARRIER_PREPARATION_ELEMENTARY_SYNTHESIS_TOURNAMENT_CYCLE603_NOTE_2026-07-22.md": "ddc06d6d4abf945794b1c0b7566c9183fa744839d1ba5630c1d9ad8b4559c417",
+        "docs/work_history/repo/review_feedback/PHYSICAL_CONTACT_DIMER_INFINITE_INTERNAL_CONTENT_TOURNAMENT_CYCLE583_NOTE_2026-07-22.md": "6942341fa2fc8978a25acdd758677b04a5a1d0c9e13b8e5627bc9bf504814cf3",
+        "docs/work_history/repo/review_feedback/PHYSICAL_CORRELATED_DOUBLE_SHADOW_STREAM_CYCLE529_NOTE_2026-07-21.md": "8aa3eed5801349767f254651a7ba0b0d9d823448875c27f28259f4dd1a0474e2",
+        "docs/work_history/repo/review_feedback/PHYSICAL_COVARIANT_PROTECTED_LINK_SHADOW_CYCLE528_NOTE_2026-07-21.md": "f27f78a05910934ffd97bca780d9384b93a1aff12481d7e08611951f03acc432",
+        "docs/work_history/repo/review_feedback/PHYSICAL_CYCLE269_SEVEN_CELL_MAXIMAL_STAR_CYCLE330_NOTE_2026-07-18.md": "4edb939ca520bc5b148814e8c274e93e16c87e8f639d925db130fdfe16fd3b64",
+        "docs/work_history/repo/review_feedback/PHYSICAL_CYCLE330_ALL_ORDER_ISOMETRY_BRIDGE_CYCLE515_NOTE_2026-07-20.md": "99696f55a6e1f8f29958d878bdbd5bb0f889c59be8707e93206d1648ba94850a",
+        "docs/work_history/repo/review_feedback/PHYSICAL_CYCLE515_KOSZUL_FRAME_BRIDGE_CYCLE516_NOTE_2026-07-21.md": "5f32e766fad91a960031bf68dac4ba3b2498b02b5fc4fce9ac1c795e67c23597",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ENLARGED_LINK_CONTACT_WORK_TOURNAMENT_CYCLE569_NOTE_2026-07-22.md": "ca90108c802f1c39d5a3db95f78397ecc0da43a9c54d180f32d3108f7cb1eb19",
+        "docs/work_history/repo/review_feedback/PHYSICAL_GLOBAL_CARRIER_STREAM_QCA_APPROXIMATION_TOURNAMENT_CYCLE606_NOTE_2026-07-22.md": "01ef76e8e0c3d29645e1f9247fa479d3fa1d3dbabab09d884da102208cf31d78",
+        "docs/work_history/repo/review_feedback/PHYSICAL_GLOBAL_N3_RETURNED_SLOT_COMPILER_CYCLE560_NOTE_2026-07-21.md": "b6c5ee42cd26918f99ecc96d78440deef2a29ae6c05f576813b3f269997c50de",
+        "docs/work_history/repo/review_feedback/PHYSICAL_GLOBAL_SELECTED_NETWORK_ENCODER_CYCLE555_NOTE_2026-07-21.md": "34461d051b1bddd0319b439aecfe433f7309f8e4065375e52b2e91dac8c2867b",
+        "docs/work_history/repo/review_feedback/PHYSICAL_HELD_SPARSE_ORDER_RETIREMENT_CYCLE563_NOTE_2026-07-21.md": "3d636226e3fff5bfb68c2c38566537fe419ce03de5d60415742ffcd2307b34dd",
+        "docs/work_history/repo/review_feedback/PHYSICAL_INTRINSIC_CONTACT_BOUND_MOVING_TRANSITION_TOURNAMENT_CYCLE578_NOTE_2026-07-22.md": "41d3ded32f36a0f9ab0b407de14524db7d621e285fa5aeff6f76d480dd8e18d5",
+        "docs/work_history/repo/review_feedback/PHYSICAL_LOCAL_CUTOFF_GAUGE_ENFORCEMENT_TOURNAMENT_CYCLE593_NOTE_2026-07-22.md": "3040c484d8d3c4f30a1e8f4b1eb5bc75568246ad04424aaff4bd94ba63b55c44",
+        "docs/work_history/repo/review_feedback/PHYSICAL_LOCAL_N3_SIX_RAY_DECODER_TOURNAMENT_CYCLE557_NOTE_2026-07-21.md": "e46acc27ee4bddc8c89f0d322173cd76f20fee100d7f54134e53421f16155bda",
+        "docs/work_history/repo/review_feedback/PHYSICAL_OPPOSITE_CARRIER_SHARED_CELL_RECURRENCE_CYCLE525_NOTE_2026-07-21.md": "43a39dd4a33d06eaf11369eb84d436761832974a4f759aec44e9ab6b919e44a8",
+        "docs/work_history/repo/review_feedback/PHYSICAL_PROPER_CUBIC_SUPERCELL_STREAM_COMPOSITION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md": "3768d2a1407bdc8de06e2a55fa18300469b1006c0a16a78ada8b8d3a4b936105",
+        "docs/work_history/repo/review_feedback/PHYSICAL_RECURRENT_SHARED_VOLUME_COMPILER_CYCLE545_NOTE_2026-07-21.md": "e1fd77a21cd1f2aac8b7c0a5afb66a43275fb1c202f576f958c126d235f5a4bb",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ROOT_FREE_CUTOFF_GAUGE_PREPARATION_TOURNAMENT_CYCLE598_NOTE_2026-07-22.md": "065192627b0c56b59d75a0ea837f26179b76579aa3e0783bc020092f173963ac",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ROOT_FREE_FULL_N3_CARRIER_GENESIS_TOURNAMENT_CYCLE600_NOTE_2026-07-22.md": "9c8772f365812caedb0c416f7f0681a8f342ff3d08ac412851e7e6141ea7f602",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md": "5f668f6cc04a5eece23f913d5869f57553df583c23d6dbb5cdac6756be41bfc3",
+        "docs/work_history/repo/review_feedback/PHYSICAL_ROUTE_C_Q6_SYMBOLIC_AXIS_DIAGNOSTIC_CYCLE514_NOTE_2026-07-20.md": "e4365d2a9d7028941d882b13c1f00ba1b7dfcf52e45109e9a293f702a13eb278",
+        "docs/work_history/repo/review_feedback/PHYSICAL_SELECTED_SEAM_CODE_SPACE_ISOMETRY_COMPILER_CYCLE533_NOTE_2026-07-21.md": "e15712305bd770cff61133f184d02da1714c50453bb5f3c492f1cc3051e119c2",
+        "docs/work_history/repo/review_feedback/PHYSICAL_SHARED_SEAM_CODE_SPACE_ISOMETRY_COMPILER_CYCLE539_NOTE_2026-07-21.md": "7d95064985bd9b2d6312ec49fa738f86fd7bba289316539a06f71931a958fcc1",
+        "docs/work_history/repo/review_feedback/PHYSICAL_THREE_STAR_SHARED_PARITY_OVERLAP_CYCLE520_NOTE_2026-07-21.md": "8a1aa2c66cbc38320c829679e7b982936834510a58b38f89621f22278fd67cd8",
+        "docs/work_history/repo/review_feedback/SPATIAL_CAR_CONTACT_SEAM_FORM_FACTOR_CYCLE230_NOTE_2026-07-17.md": "a7a3a0a021dbd691c6c2ddb9163679b445c5110b8150f63395271037963c7132",
+        "outputs/physical_carrier_preparation_elementary_synthesis_tournament_cycle603_cold_2026_07_22.txt": "35385a09b5d075e553de1de9302e0317dd415acbe1f5ccf9425905eedae94174",
+        "outputs/physical_carrier_preparation_elementary_synthesis_tournament_cycle603_receipt_2026_07_22.json": "751487fa50a738d5473f7ddcb77474785c84463dda1264a34de2643f19102871",
+        "outputs/physical_contact_dimer_infinite_internal_content_tournament_cycle583_cold_2026_07_22.txt": "22af96509364601a99c3ed2d6b148643ede02369f70e5be92629d1f0e5d3ddce",
+        "outputs/physical_contact_dimer_infinite_internal_content_tournament_cycle583_receipt_2026_07_22.json": "0f4e2df9e25cdc7137c42fb91666c5eaae10efc652d5af84f421e38c5ad97aab",
+        "outputs/physical_cycle330_all_order_isometry_bridge_cycle515_attempt2_2026_07_20.log": "636d067ddd9284e59f24999666c5110fce425e60a7baa48d714b2a023abab1b1",
+        "outputs/physical_cycle330_all_order_isometry_bridge_cycle515_dry_2026_07_20.log": "7ef8b552f8dd08770691c1281b354970641bb75191c5a15e26b1e54078204b56",
+        "outputs/physical_cycle515_koszul_frame_bridge_cycle516_attempt4_2026_07_21.log": "710673f10229675789ab84abe24d15238f0b9b1674608b0254a77c02860ebcce",
+        "outputs/physical_cycle515_koszul_frame_bridge_cycle516_attempt4_receipt_2026_07_21.json": "bfcf92c44e8b651f3866fa017a77ab7462988427d80178da6cbbddbe5d703cbb",
+        "outputs/physical_enlarged_link_contact_work_tournament_cycle569_cold_2026_07_22.txt": "834155bbb74e1ce42b8c0d90b746787bba4373d4f0ea092d4afc74391881beb6",
+        "outputs/physical_enlarged_link_contact_work_tournament_cycle569_receipt_2026_07_22.json": "ddba1d3cfb3167416b12a4a327dd136c4b61878f07ef1448629f2a440208b195",
+        "outputs/physical_global_N3_returned_slot_compiler_cycle560_receipt_2026_07_21.json": "e27c9eba803413455fc6b5bf3aca7a38def9d4bb68694af37a44725343509598",
+        "outputs/physical_global_carrier_stream_qca_approximation_tournament_cycle606_cold_2026_07_22.txt": "007d7fdf3d67d55afbacdd905bc44d67b685f9926ba395e393ed01eec005e5dd",
+        "outputs/physical_global_carrier_stream_qca_approximation_tournament_cycle606_receipt_2026_07_22.json": "2b225152dcdae055c4d751c57af913b6184b9977e52ebc3dba509b4fc0b3da3c",
+        "outputs/physical_held_sparse_order_retirement_cycle563_2026_07_21.json": "e9a2b0c8013d1a75dad9ae5ff76c7219b30a2b8e2c29556d269aa2c8373a6c8f",
+        "outputs/physical_held_sparse_order_retirement_cycle563_receipt_2026_07_21.json": "ac9fcc1da45f33152679cfd2992abf1d037fae8647f1ab4d2d0526e6ac7000ae",
+        "outputs/physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_cold_2026_07_22.txt": "6068efb7f80a5dc4b15253b6816ebfabcd13fcb929c9e4b1d56195eb0d1b922d",
+        "outputs/physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_receipt_2026_07_22.json": "b84f1cfaa03661a0a2498fd409e077aeeb4f6ad423909807d20be7c846c571f7",
+        "outputs/physical_local_cutoff_gauge_enforcement_tournament_cycle593_cold_2026_07_22.txt": "5a2509151706307ffe158d37b78f467692ac8976636f6437a3069bfd158e2908",
+        "outputs/physical_local_cutoff_gauge_enforcement_tournament_cycle593_receipt_2026_07_22.json": "0b6d82faba587b50146bd1001dc72ba09ca9248fd74d5b02ddc6e5c33b486475",
+        "outputs/physical_proper_cubic_supercell_stream_composition_tournament_cycle610_cold_2026_07_22.txt": "0adbee38e398c9e1d1ccd2733454ead2669338b86d48cbefa5331abb78c126e8",
+        "outputs/physical_proper_cubic_supercell_stream_composition_tournament_cycle610_receipt_2026_07_22.json": "375f843606a81970ae50f71d74c53f7e4c4d1437007daaecbedd0b19e3fdfa34",
+        "outputs/physical_root_free_cutoff_gauge_preparation_tournament_cycle598_cold_2026_07_22.txt": "3a8d6990d8dfaabefe0f5cec08af83d14613507ca0712b993f39c49025bb8797",
+        "outputs/physical_root_free_cutoff_gauge_preparation_tournament_cycle598_receipt_2026_07_22.json": "c8a27819fb1907d20aa9c73a7d66a2b8c0cc37b532da4686ef32a80996d909c1",
+        "outputs/physical_root_free_full_N3_carrier_genesis_tournament_cycle600_cold_2026_07_22.txt": "fd82ebe960fa57d25e85328465b782a644ae127220d9abbefe5c64ca1b9eb01f",
+        "outputs/physical_root_free_full_N3_carrier_genesis_tournament_cycle600_receipt_2026_07_22.json": "d09cd7a82070f4311ab84a07127551ccf1e30e5557586e32fcd55fa01fd3dba5",
+        "outputs/physical_route_c_q6_symbolic_axis_diagnostic_cycle514_attempt1_2026_07_20.log": "48c37e6ec11eb9cb7278e94f825ac5ab1f5569dc6f3c9b1fd247b1fe6c698847",
+        "outputs/physical_route_c_q6_symbolic_axis_diagnostic_cycle514_attempt1_receipt_2026_07_20.json": "5def6d3fb1e796341bb76cb51f6eb61a90274ef950a11a8007b7a3585f55c97d",
+        "outputs/physical_route_c_q6_symbolic_axis_diagnostic_cycle514_dry_2026_07_20.log": "e09d664911f681a3a85f6cf180b744c4c63fb84362fe8232af6b64400903a83f",
+        "scripts/ROUTE1_DIRECT_CAR_COMPILER_CYCLE231_2026_07_17.py": "5adb6dc52f6352a5367a2b56da94854e511f9dd174688029f1841e5004a91c32",
+        "scripts/active_cubic_source_response_cycle211_2026_07_16.py": "d5392152d322ea8f3850d0345d6caa426db22ae7f7694775b4bd6388704c18a6",
+        "scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py": "a5e78e40cad0c43ee62ae887df7d84a0b895ab217ba4f3d521353e5d0b6bf95a",
+        "scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py": "464e5928b7c1e46c23e4010363b6bd8ff3d0e2379c6e5ecb46891010ef47a5a4",
+        "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py": "ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a",
+        "scripts/exact_3d_higher_form_bosonization_cycle235_2026_07_17.py": "dd955ce629cde5e225b625be89f5f71045d688083a032b7bf104efa9b3f1bb34",
+        "scripts/finite_coin_scalar_wave_dilation_cycle215_2026_07_16.py": "3a977106389428d2281ea7e0e32b65fe57f6ce33d783742b80f264f78f4f2c17",
+        "scripts/fock_modular_boundary_current_cycle229_2026_07_17.py": "fbf434a94c8dae57ffb6e68776642e4342a91f0d39f071ee1388fcb89ff846d7",
+        "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py": "4ab857755b606d7ba7432179ed66de723ac31d3f66507cafa1168ab60d4965d6",
+        "scripts/local_generator_source_tournament_cycle228_2026_07_17.py": "97fdf54189d7da93099aeab4a9b1dd8501c7262d55493b9fa95bf1c2f5c97a9d",
+        "scripts/local_rough_puncture_odd_sector_cycle247_2026_07_17.py": "10f5cf027c76f5a0a3b1d3dbaa6cb0e6d418932c84553f0cca303d3f21742519",
+        "scripts/physical_adjacent_star_recurrence_tournament_cycle548_2026_07_21.py": "5830dacebf79720301192b0dcb39121e1ecf03137f94d6e97c7da4034d9c9ca0",
+        "scripts/physical_adjacent_two_star_compressed_gram_cycle518_2026_07_21.py": "8f505d2de6476bdbc20f87a901e8be9fe46deda5b568c98d750977069a352e53",
+        "scripts/physical_adjacent_two_star_order_character_preflight_cycle517_2026_07_21.py": "ad8b0c71840cbfa56aae3ae9da44eceec1cad7d84be06bab32604eb5f6fbb4a3",
+        "scripts/physical_adjacent_two_star_seam_tag_preservation_cycle519_2026_07_21.py": "d2e0648558fb3031a200600b0643de28a5c8e695c35165a6905a6a99ff45255d",
+        "scripts/physical_autonomous_localized_refocused_matter_transition_tournament_cycle575_2026_07_22.py": "0c845ecd02b86ce4d99aa8406a206e9b01628f02f1592cf37c41a084eb1e0a4b",
+        "scripts/physical_boundary_aware_multistar_recurrence_tournament_cycle551_2026_07_21.py": "3d68e536565c491b1b54547d82ed6faab73437c600229ff9060f471ffad84997",
+        "scripts/physical_carrier_preparation_elementary_synthesis_tournament_cycle603_2026_07_22.py": "e64032e369e08e03ad2a742a2bde6914d8adc6ed1fd64f15f4e301c1c8dea739",
+        "scripts/physical_contact_dimer_infinite_internal_content_tournament_cycle583_2026_07_22.py": "21957cc883550ee81fc48d5b55ad4a0384cbac8697557691c805d84c7c8dbaaf",
+        "scripts/physical_correlated_double_shadow_stream_cycle529_2026_07_21.py": "df118a01c2a95fcccd7986dc01afb5625d0faa8bb95beb2ecb344a9f5fbacda7",
+        "scripts/physical_covariant_protected_link_shadow_cycle528_2026_07_21.py": "5eb5160688465283126b990873398c2b8914e39a49f10919128b0b5d77496da5",
+        "scripts/physical_cycle269_collision_safe_auxiliary_ports_2026_07_17.py": "03786effa03eae50930ca0bfa14c881276df8bd6bdba83b6d7a893cffe1fe747",
+        "scripts/physical_cycle269_common_m64_fixed_seam_cycle311_2026_07_18.py": "4495bf39e1e2661866501e377b8ec1aefff656e261e428fa5b6738f73b49699c",
+        "scripts/physical_cycle269_five_cell_adjacent_star_cycle327_2026_07_18.py": "0688e7db8b8490e525c0e1f1108474903e2ff40d278e185b6add54f8086f8110",
+        "scripts/physical_cycle269_four_cell_star_cycle324_2026_07_18.py": "f2e07bf91e7a5b06c8037314798cb84cd6d747bc92fa6292c1759915fb91354d",
+        "scripts/physical_cycle269_full_two_particle_sector_interface_cycle305_2026_07_17.py": "3e970b2c84ebe891d36c132cd99d716ceb20b596cea89729f06ed8950c7a847c",
+        "scripts/physical_cycle269_higher_number_fixed_seam_cycle308_2026_07_17.py": "cb6de428c5054ea9415a59bab75d36c693c65d8070df30a6a0bbc2a926f3f4e4",
+        "scripts/physical_cycle269_overlap_aware_two_cell_cycle315_2026_07_18.py": "52c18f96a1f8db9b79e4d0fba5ff76905170e6a8dc8c3e818fdf69984a1778c3",
+        "scripts/physical_cycle269_reference_relative_localized_pair_lift_2026_07_17.py": "95820817eaf883040aae96531f1afd4fe7a90569a43215d226cf44dce9a1cc09",
+        "scripts/physical_cycle269_seven_cell_maximal_star_cycle330_2026_07_18.py": "4428d1f73ff315987edabd7f838a1c58414d0a982f0cd28656ddef3bd230d19f",
+        "scripts/physical_cycle269_staggered_reservoir_catchup_2026_07_17.py": "5310ee8e19a55694f7a11ccf013c696b16cdb37961c5ade41ed316b27238bab1",
+        "scripts/physical_cycle269_three_cell_multiedge_cycle319_2026_07_18.py": "faa05d97542efca7684f4acc6f9b7dfb8e32a02f3f9d16adeae16449f5b702fb",
+        "scripts/physical_cycle330_all_order_isometry_bridge_cycle515_2026_07_20.py": "93afe1600cb3fb8b7844729521b005ce62f957a128a6ffb9493a03a1d9932e96",
+        "scripts/physical_cycle515_koszul_frame_bridge_cycle516_2026_07_20.py": "3c4318a84c661893932c8d41a90db36445f80cefd092a6a3fffb56cbf8abfa9c",
+        "scripts/physical_enlarged_link_contact_work_tournament_cycle569_2026_07_22.py": "877dc75a840ff348f15022784dc60190fa884fad216db3e1904fc089c9d3c091",
+        "scripts/physical_global_N3_returned_slot_compiler_cycle560_2026_07_21.py": "f6d641e4735b26f9463ea623ee8ed6e28acc995fdfc88300709dcfac100c13ab",
+        "scripts/physical_global_carrier_stream_qca_approximation_tournament_cycle606_2026_07_22.py": "637a7ac6b5a56ef539bef3b94c6624a4f5f52372ef31e2d1e3bdc4328ae8767f",
+        "scripts/physical_global_selected_network_encoder_cycle555_2026_07_21.py": "af51110e8c4cb5245efd2bd99ef7f2b12fb02586c5e5225082ce4a13fba27e92",
+        "scripts/physical_held_sparse_order_retirement_cycle563_2026_07_21.py": "55e51cafffa70284a6e8e1f0510ca0d2f890989ccbcf5bce64435df4c8e812a6",
+        "scripts/physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_2026_07_22.py": "2a3c77c26003bb0f8b55fe2da0fd36b0ac98a14a21a083303fe175e5f802e99f",
+        "scripts/physical_joint_clock_accumulator_contraction_bridge_cycle570_2026_07_22.py": "37e9d0f336d773bd4a1957a6531f80dc35b9673a4ef0f99137e7fb33558bf849",
+        "scripts/physical_local_N3_six_ray_decoder_tournament_cycle557_2026_07_21.py": "8b153c0ec633d489a839221788115ae85c6bf80c4d4952339795aa7bd80150d8",
+        "scripts/physical_local_cutoff_gauge_enforcement_tournament_cycle593_2026_07_22.py": "9207101f5784bac0ff2097926a36e773f2a860102e57aee173581961771a4ae5",
+        "scripts/physical_matter_transition_clock_equivalence_tournament_cycle573_2026_07_22.py": "52c743889146189c2b574fa8012e7281340722303cb5b61fc53579e5fe23ebf4",
+        "scripts/physical_native_shadow_nearest_neighbor_router_cycle527_2026_07_21.py": "2ca2021fa76b889128b587a6a0d67986e236319ea8fb7ccd1dfaf31982c55fa0",
+        "scripts/physical_opposite_carrier_reearned_compiler_cycle522_2026_07_21.py": "d6a7700d7575dfba02d4b4d2438e54d37a02c6ca7f71673c8a871b474f6e088b",
+        "scripts/physical_opposite_carrier_shared_cell_recurrence_cycle525_2026_07_21.py": "379c67315de8d235f8d5287b281b6291d0a10731d030338d8bde0676a4c0b785",
+        "scripts/physical_proper_cubic_supercell_stream_composition_tournament_cycle610_2026_07_22.py": "ed2250711646ad99bf077e74b8e4194f2df0a2cf368d3c05c45ea95cac8083db",
+        "scripts/physical_protected_shadow_coin_gate_compiler_cycle523_2026_07_21.py": "d9dd02bbb4dfacebf0f75f6b8c56881ff56653843cb7ed75baa381d5aa605b9d",
+        "scripts/physical_recurrent_shared_volume_compiler_cycle545_2026_07_21.py": "b117c595f8c06f79931be98d573168e53d9f0fb9d5024e4ee623ba76d7488067",
+        "scripts/physical_root_free_cutoff_gauge_preparation_tournament_cycle598_2026_07_22.py": "5702ac74768c83bd97d0860ad827a5a66809c8bfbfafb2dd010982bcb917be51",
+        "scripts/physical_root_free_full_N3_carrier_genesis_tournament_cycle600_2026_07_22.py": "904342da79cbc22c9878479f586387414e4a3af0f7f603708ec03d272074c933",
+        "scripts/physical_rough_fswap_pauli_rotation_gate_compiler_cycle540_2026_07_21.py": "53b003bbda96eee1d85e48aa5cd0e8c530bea35c7b6eefef5a637127f66af13a",
+        "scripts/physical_rough_gauge_subsystem_quotient_cycle532_2026_07_21.py": "a768d4250e55399c03e6084614a772953e6bcdf1570b9e7c50ac8d18544cfe6a",
+        "scripts/physical_route_c_q6_symbolic_axis_diagnostic_cycle514_2026_07_20.py": "74d9231d0c78ad6c85c028cea69cc7ac29c7b1b0c04259513d7223c5e8ae19fe",
+        "scripts/physical_selected_seam_code_space_isometry_compiler_cycle533_2026_07_21.py": "72fe24e03b38812ef9f6dc610bc445b5ea6046a30683c2b734e9c0396e84facd",
+        "scripts/physical_selected_seam_event_current_adapter_cycle526_2026_07_21.py": "7c3d4a35664eaf5c7737c86464ca069e15ce29c40f61778081af8139970c37cd",
+        "scripts/physical_shadow_normal_form_sync_cycle530_2026_07_21.py": "f5f90a331803a43d293fa8e8e3640e29886bed81935827763773d84f61ce9c99",
+        "scripts/physical_shared_seam_code_space_isometry_compiler_cycle539_2026_07_21.py": "aa126a6363f9fc8c08d28a47b840c1b6e0a7c0b47bbe296087340b804a0087d1",
+        "scripts/physical_three_star_shared_parity_overlap_cycle520_2026_07_21.py": "22b00fd39fd07a04afb8776f4b97c31486ce4d2034617bd16aa170c263108b2b",
+        "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py": "c410b754d4e984f6ee5ccbc7c5a52e776c50c91c4daa12d798044f104cc7435b",
+        "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py": "472e28c78901368629c8d9d6f614bb8fb3ea003639ac61d480d06941cdf6cb86",
+        "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py": "b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae",
+        "scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py": "9ef0fff433bbf1c96c9b13c5ce79530e01fe705f08c6caf6b60316e20359e011",
+        "scripts/wilson_subsystem_sector_free_compiler_cycle269_2026_07_17.py": "c7b8673eb1a0dced08131820caa1fb2400fc8d1f73cfe2cddf5f8a28f9045d35"
+      },
+      "runtime_module_count": 56,
+      "uncovered_imported_modules": []
+    },
+    "minimal_axioms_test_contract": {
+      "observed_sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+      "origin_main_lines": "37-41",
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+      "use": "promotion test contract only; no axiom or foundation edit and no inferred dynamics"
+    }
+  },
+  "status": "conditional_state_carried_marker_projector_repair",
+  "strongest_constructive_result": "a translation-invariant bounded family of diagonal marker/neighbor/code-weight projectors with a state-carried phi in Z_129^3: five disjoint proper-cubic anchor orbits give 120 anchors, a disjoint 24-site orbit carries orientation, all residues/six unit shifts/all24/all576 affine actions and L3/L6/L7 periodic constraints pass, and the new sites are disjoint from conditional Cycle610 role geometry",
+  "supplied_structure": [
+    "five anchor seeds and their occupied anchor state",
+    "one of 24 orientation bits",
+    "non-anchor weight <=91",
+    "uniform same-orientation neighbor sector",
+    "marker genesis/renewal and blank work are not derived"
+  ],
+  "tests_failed": 0,
+  "tests_passed": 14
+}

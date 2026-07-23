@@ -1,143 +1,157 @@
-# Physical coherent-detector / event-association / controlled-echo tournament — Cycle 605
+# Coherent-aggregate algebra / candidate association / controlled-contact tournament — Cycle 605
 
 Date: 2026-07-22
+
 Authority: none
+
 Audit: unset
+
 Constitutional effect: none
 
-## Frozen question and claim ceiling
+Status: FAIL
 
-Cycle 605 continues the accepted Cycle 602 detector and event-side campaign.  It asks whether the fixed orthogonal onsite ray `a` and transported ray `G a` can be compiled into a strict physical-M2 coherent detector; whether its output can replace Cycle 570's supplied event opportunity; and whether the contact/reference echo can be made N4-free with literal local gates.
+Artifact status: `PASS_NARROWED_COARSE_ALGEBRAIC_POSITIVE_ONLY`
 
-The answer is a bounded partial closure.  There are three positive constructions:
+Author accepted: false
 
-1. the onsite A2 ray is exactly a rank-two Slater determinant, and its decoded-N2 membership predicate has an exact adjacent-Givens plus reversible-equality circuit;
-2. the exact algebraic path identity `H_path; controlled-G; G^-1; A2-membership-X_path; G` prepares `(a+G a)/sqrt(2)` from `a` and erases the path on that declared input;
-3. the selector-controlled onsite contact is an exact seven-M2-line phase-polynomial circuit using only one- and two-M2 gates and invokes no N4 matter state.
+Breakthrough: false
 
-This does **not** close a strict physical coherent readout.  The accepted physical encoder does not yet expose the code-compatible local `W^dagger` membership word with a per-readout NN SWAP total, controlled-G is not compiled from the accepted physical factor list, and the even X/Y phase readout still requires a physical vacuum/A2 grade-changing pulse.  No arbitrary Householder or opaque two-level unitary is counted as primitive closure.
+## Claim ceiling and result
 
-The fixed sizes are train L3, held L6, and held-out L4.  L3 uses q=1..4; L6 and held-out L4 use q=1..6.  The material law remains Cycle 590's accepted `beta=-0.3`, `g=0.37` free-plus-contact update and inverse.
+Cycle 605 executes four finite coarse/algebraic constructions: an exact six-mode A2 Slater preparation identity, a which-channel versus coherent aggregate interference comparison, a reversible coherent-candidate association, and exact controlled-contact phase algebra. It does not execute a literal physical-M2 encoder/update pair, placement, primitive product, leakage certificate, or locally enforced constraint for any component. The algebraic helpers are not named or credited as a physical preparation, detector, readout, Event, Record, clock, or full echo.
 
-## Route A — what is and is not a coherent detector
+The strongest result is therefore an exact finite algebraic bridge, not a physical compiler. All five physical promotion fields are null for each of the Slater, membership, Route A, Route B, and Route C components:
 
-Let `P_a=|a><a|` and `P_b=|G a><G a|`.  The accepted channels are orthogonal, so the runner checks `||[P_a,P_b]||`, both sequential-copy orders, inverse, leakage, and pointer-sector norm closure.  Both sharp values can be copied nondemolitionally into two pointer M2 on the declared N2 code.
+- Physical EG: null.
+- Physical placement: null.
+- Physical primitive product: null.
+- Physical leakage: null.
+- Physical locally enforced constraints: null.
 
-That which-channel instrument is not Cycle 602's coherent detector.  If `alpha=<a|psi>` and `beta=<G a|psi>`, separate membership statistics give the normalized sum `(|alpha|^2+|beta|^2)/2`.  The fixed Cycle 602 detector `d=(a+G a)/sqrt(2)` gives
+This makes 25 explicit null fields. No shared obstruction, minimum-content result, impossibility result, or axiom pressure follows.
 
-`|<d|psi>|^2 = (|alpha|^2+|beta|^2+2 Re(alpha* beta))/2`.
+## Frozen provenance and conservative runtime closure
 
-The runner prints the cross term at every frozen q and requires a nonzero which-channel/coherent-detector residual.  A membership predicate is not a phase or amplitude readout.  In particular, reducing over the orthogonal matter branches deletes the pointer coherence.
+The runner is `scripts/physical_coherent_detector_event_association_controlled_echo_tournament_cycle605_2026_07_22.py`, SHA-256 `fe00d384ff64823017a6c746b3ed46fde1986b46dbe1b9f7514bd857141e2bda`.
 
-### Elementary onsite predicate attempt
+The 11 direct frozen shores are:
 
-The six-mode A2 coefficient matrix has rank two.  A deterministic real orbital pair reconstructs it to tolerance, and an adjacent-row mesh has exactly eight number-preserving two-M2 Givens gates.  On decoded q M2, `Q^dagger` maps A2 to occupation word `110000`.  The equality copy uses five clean work M2 and one retained pointer M2:
+| Cycle | Surface | SHA-256 |
+|---|---|---|
+| 602 | runner | `4b751525cd5918abbcc2ca47b71dba4bd3b2e9d2fbfd74deed0f932a8d75a137` |
+| 602 | note | `c5971546e74165b98349791e0bcbbc910f40441855aa1181a2f14231cc674e37` |
+| 602 | receipt | `db970ce03b88fdd7d6aa29bef2fd41c8df290b957c91181aec3f24e61e4f43b3` |
+| 602 | cold transcript | `333c7a5003c74f7e730a3b88ef573f6cd29b11885e17c2f8b97bc6f3ef78b458` |
+| 583 | runner | `21957cc883550ee81fc48d5b55ad4a0384cbac8697557691c805d84c7c8dbaaf` |
+| 583 | note | `6942341fa2fc8978a25acdd758677b04a5a1d0c9e13b8e5627bc9bf504814cf3` |
+| 583 | receipt | `0f4e2df9e25cdc7137c42fb91666c5eaae10efc652d5af84f421e38c5ad97aab` |
+| 583 | cold transcript | `22af96509364601a99c3ed2d6b148643ede02369f70e5be92629d1f0e5d3ddce` |
+| 570 | runner | `37e9d0f336d773bd4a1957a6531f80dc35b9673a4ef0f99137e7fb33558bf849` |
+| 570 | note | `e88ee3daee2e07f215142d29cee7e6e5d3564bf5f92764aca49e89fe8f065438` |
+| 570 | receipt | `f9295faa4230427623ac350625a42fb17949fd86f523b6cf81aa247c14dd796c` |
 
-- four negative-control X gates before and after;
-- five Toffolis to compute the six-bit conjunction, one pointer CNOT, then five inverse Toffolis;
-- every Toffoli is decomposed exactly into 9 one-M2 Clifford/T gates and 6 CNOTs;
-- the fixed line is `q0,q1,w0,q2,w1,q3,w2,q4,w3,q5,w4,pointer`;
-- route-return installs 40 SWAPs; the two Q meshes add 16 adjacent fermionic Givens.
+The runner embeds the complete conservative repo-local runtime closure of 234 modules. Its sorted name-to-hash manifest SHA-256 is `a690df164b560d57758cb523cf0844d035366edf3c531925e9921e206fb02c35`. Direct runtime imports are the frozen Cycle-602, Cycle-583, and Cycle-570 runners. The frozen parent checks preserve the one-particle mass fixture, Cycle-230 contact factorization fixture, and Cycle-230 held seam-translation fixture below tolerance.
 
-The exact per-predicate installed count is 98 one-M2 gates, 61 logical two-M2 gates, 40 NN route-return SWAPs, 117 installed two-M2 gates after the 16 Givens are included, and serial depth/total 215.  Five work M2 return blank.  The retained pointer is explicit.  Reversing the word, exchanging T/T-dagger and Q/Q-dagger, is the full-space inverse.
+## Route A — exact finite interference distinction
 
-This count begins after the physical code is locally decoded.  Cycle 560/590 reports 15,984 Route-B Givens on L6, or 74 per cell, and maximum route length 32, but its published receipt does not expose a literal selected-factor/local-decoder word and exact per-readout SWAP count.  Rotating only the persistent q M2 has not been proved to rotate the auxiliary dressing correctly.  Therefore the decoded predicate is not called a strict physical-M2 readout.
+The Cycle-583 six-mode A2 coefficient matrix has antisymmetric rank two. A deterministic real orbital pair reconstructs it exactly to numerical tolerance. An adjacent-row mesh prepares it with eight adjacent-mode Givens rotations; the inverse is the reversed mesh.
 
-### Coherent preparation and phase-sensitive alternative
+After algebraic decoding, the A2 membership helper checks occupation word `110000`. It uses five clean work roles and a retained pointer role. Five Toffolis compute the conjunction, a pointer CNOT copies it, and five inverse Toffolis uncompute the work. Each Toffoli is checked against the stated Clifford/T decomposition. The fixed finite schedule has:
 
-The path-erasure identity is constructive and uses orthogonality rather than a q selector.  Starting from blank path and `a`, apply a path Hadamard, controlled-G on path one, unconditional `G^-1`, toggle the path on A2 membership, and apply G.  On the declared input the final path is blank and matter is exactly `d`.  The inverse is the reversed word.  Deleting controlled-G or the membership eraser is visible.
+- 98 one-role operations;
+- 61 logical two-role operations;
+- 40 declared-line route-return SWAPs;
+- 117 logical two-role operations with routes, including 16 Givens for preparation plus inverse;
+- serial depth and elementary total 215.
 
-The remaining physical obligation is not hidden: compile controlled-G from the accepted physical factor sequence and route it, then compile the code-compatible membership word.  Memberships for `d+=(a+G a)/sqrt(2)` and `d+i=(a+i G a)/sqrt(2)` expose the real and imaginary relative `a/G a` interference quadratures.  They still do not expose the complex phase of `<d|psi>` against a fixed origin.  A phase-sensitive Hadamard/Naimark readout for that absolute overlap additionally applies `U_d^dagger` followed by a vacuum/A2 X or Y grade-changing pulse, or uses a separately physical reference arm such as a fully compiled contact/free echo.  The grade-changing pulse and physical reference remain supplied, so this note does not claim an operational complex-amplitude detector.
+The Toffoli decomposition residual is `7.93119113412187e-16`. This is an exact algebraic membership helper, not a detector or readout. Its physical EG, placement, primitive product, leakage, and locally enforced constraint fields are null.
 
-All24 covariance and all576 frame products are tested for the scalar A2 projector/update orbit.  The proper-cubic A2 sign cancels in the projector.  The law retains bounded coarse support, but strict elementary physical support awaits the missing compiler surfaces above.
+The interference surface is frozen before evaluation on train L3 (`q=1..4`), held L6 (`q=1..6`), and held-out L4 (`q=1..6`). Separate onsite/transported memberships lose the cross term present in the coherent aggregate. The executed residuals are:
 
-## Route B — explicit matter interrogation to candidate opportunity
+| Test | Residual or signal |
+|---|---:|
+| maximum projector commutator | `0` |
+| order disturbance | `0` |
+| pointer closure | `2.5979218776228663e-14` |
+| inverse | `2.328276530778557e-15` |
+| coarse norm | `1.3322676295501878e-14` |
+| maximum interference cross term / which-channel loss | `0.003209185236062409` |
+| coherent aggregate preparation | `5.916983715440049e-16` |
+| residual path arm | `1.8889546759398252e-16` |
+| declared inverse | `1.4340978779080623e-15` |
+| off-domain full-space inverse | `1.7236753648881522e-15` |
+| off-domain norm | `1.3322676295501878e-15` |
+| quadrature identity | `1.1102230246251565e-16` |
+| maximum relative-interference signal | `0.01004288847904733` |
+| deleted controlled-G signal | `0.7653668647301793` |
+| deleted membership-eraser path signal | `0.7071067811865475` |
+| all24 update covariance | `2.397692742256886e-16` |
+| all576 projector-group covariance | `0` |
 
-The two orthogonal pointer bits feed a clean certificate through `CNOT(p0,c); CNOT(p1,c)`.  On the lawful N2 pointer code they cannot both be one, so `c=p0 XOR p1` is also their OR.  `TOFFOLI(c,binder,opportunity)` derives the Cycle 570 opportunity from an explicit detector certificate and occupied binder.  It never reads q or an update ordinal.
+The path-role identity exactly prepares the fixed coherent aggregate and has an exact algebraic inverse on its declared input. Deleting either controlled-G or the membership eraser is visible. It does not supply the literal physical-M2 E/G, placement, primitive product, leakage, or local-constraint surfaces demanded for physical credit. Route A disposition: positive finite coarse/algebraic interference result only.
 
-The runner exhausts pointer/binder truth words, marks `11` outside the declared detector code, tests missed and extra controls, reverses the composed reversible schedule, and checks Cycle 570 rollover for certified prefixes 1, 2, 4, 5, and 8.  Identity and predecessor handling remain the accepted Cycle 570 interfaces.
+## Route B — reversible coherent-candidate association
 
-The pointer/binder-to-opportunity map is derived.  The physical detector/pointer input and occupied binder remain supplied.  More importantly, the opportunity is a coherent candidate branch.  It is not an actual occurrence and not a Record.  Cycle 170's actual/permanent Record obligations, Cycle 451's typed matcher, Cycle 498's endpoint refinement, Cycle 504's wrap conveyor, and Cycle 570's counter remain separate.  An update ordinal is not time, an event count is not time, and phase is not energy.
+Route B executes a finite Boolean reversible schedule on channel, binder, certificate, candidate, and rotor roles. It checks train prefixes 1, 2, 4, and 5 and held prefix 8. The lawful truth failures and inverse failures are zero; each deleted control is detected with signal one. Three malformed words are rejected: simultaneous channel roles, a non-bit pointer role, and a non-bit binder role.
 
-## Route C — physical controlled-contact path echo without N4
+This coherent-candidate role association is a reversible algebraic linear extension only. It is not an Event, not a Record, not a detector, and not a clock. The update ordinal is not time; the finite prefix count is not time; phase is not energy. No actuality, admission, permanence, readability, causal interval, or empirical calibration rule is derived. Its five physical promotion fields are null. Route B disposition: positive finite candidate-association algebra only.
 
-For selector `s` and occupation bits `x,y`, the controlled pair phase uses
+## Route C — exact controlled-contact component
 
-`sxy = [s+x+y-(s XOR x)-(s XOR y)-(x XOR y)+(s XOR x XOR y)]/4`.
+For selector role `s` and occupation bits `x,y`, the identity
 
-Seven one-M2 phase gates and ten routed CNOTs therefore implement `exp(i g sxy)` exactly.  Applying the macro to all 15 unordered direction pairs implements `exp(i g s C(n,2))` on the full local N0..N6 truth table; the executed matter fixture remains the accepted complete global N<=3 code.  No N4 fixture is introduced.
+`sxy = [s+x+y-(s XOR x)-(s XOR y)-(x XOR y)+(s XOR x XOR y)]/4`
 
-The literal local line is `selector,q0,q1,q2,q3,q4,q5`.  Every CNOT is routed to adjacency and immediately routed back.  The runner prints exact one-M2, CNOT, SWAP, serial-depth, per-cell, and held-L6 totals.  Deleting one pair phase is visible on its occupied pair.  Including every unordered pair makes the circuit proper-cubic covariant under all24 frames and all576 frame products.
+gives an exact seven-phase, ten-CNOT polynomial for one selected pair. The runner applies it to all 15 unordered pairs of the six modes on the full N0-through-N6 local truth table. Its fixed algebraic schedule contains 105 one-role phase operations, 150 logical CNOTs, 680 declared-line route-return SWAPs, and total serial depth 935 per cell.
 
-This closes the contact-controlled part only.  A strict full actual/reference echo also needs a controlled physical free update.  The scalar selector equality checks are preserved by the contact circuit but not dynamically enforced, and selector genesis/direct-sum reference genesis remains supplied.
+The truth-table maximum residual is `7.108895957933346e-16`; deleting one contact-pair term gives signal `0.36789306705608243`. The all24 pair-orbit and all576 direction-group failure counts are both zero.
 
-## Leakage, deletion, domain, and semantic controls
+This closes controlled-contact algebra only. It does not execute a controlled free update, full inverse echo, physical primitive product, autonomous reference role, or selector genesis. Its five physical promotion fields are null. Route C disposition: positive controlled-contact algebra only; controlled free branch and full echo remain open.
 
-- The detector is declared only on the complete global N2 physical code with blank path, pointer, and work M2.  Its elementary circuit is a full-space unitary, but the rank-one A2 meaning outside that code is not claimed.
-- The five predicate work M2 return blank; pointer/path outputs or their environment are retained until the inverse.
-- Deleted controlled-G, membership eraser, pointer-certificate CNOT, binder Toffoli, rotor carry, and one contact-pair phase all have explicit residuals or malformed words.
-- L3/L6 plus held-out L4 are frozen before evaluation.  all24/all576 tests do not select a frame at runtime.
-- The inherited global N<=3 cutoff remains a supplied lawful domain and is not claimed locally enforced.
-- No Born rule, occurrence rule, proper time, energy identification, lapse, redshift, or gravity/source response is inferred.
+## Domain, deletion, and covariance controls
+
+- L3/L6/held-out L4 lists are declared before evaluation.
+- Route A checks deletion, exact declared inverse, off-domain full-space inverse and norm, all24 updates, and all576 projector products.
+- Route B checks lawful, malformed, missed-control, extra-control, inverse, train, and held words.
+- Route C checks all N0-through-N6 local words, one-pair deletion, all24 pair orbits, and all576 products.
+- Blank auxiliary roles and the inherited global number-domain promises are supplies, not locally enforced laws.
+- Covariance of finite algebraic objects does not promote them to physical-M2 constructions.
+
+## Cycles 610–612 comparison boundary
+
+PR #5557 and Cycles 610–612 are comparison surfaces only: they are not imported, pinned, or executed here, and provide no back-credit to Cycle 605. Cycle 610 cannot retroactively physicalize these algebraic operations. Cycle 611 supplies no Cycle-605 source-response law. The Cycle-612 3:4 delay is rate-compatible but unimplemented here; the 5:4 advance requires a distinct count/Event edit and is also unimplemented. Neither supplies proper time or lapse.
 
 ## N1–N8 no-go discipline
 
-N1 — Normalized alternatives: (i) commuting which-channel copies terminating in populations; (ii) path-H/controlled-G/membership erasure terminating in coherent d preparation; (iii) `U_d^dagger` plus vacuum/A2 X/Y pulse terminating in complex-amplitude readout; (iv) detector/binder certificate terminating in a coherent candidate opportunity; (v) phase-polynomial controlled contact terminating in an N4-free contact echo component; (vi) two physical dimers terminating in an independent standard, not attempted because N4 remains outside the code; and (vii) Record-admitted events terminating in proper-time calibration, still open.  Five constructive families are actually tested.  No broad negative is sought.
+N1 — Six normalized routes are inventoried. Four are `ATTEMPTED` and counted: the six-mode Slater identity, which-channel/coherent-aggregate comparison, reversible candidate association, and controlled-contact polynomial. The literal physical-M2 preparation/readout stack and autonomous physical contact/reference interval stack are `OPEN_UNTESTED_NOT_COUNTED`. With four qualifying routes against a required five, the broad no-go gate fails. Open routes are not treated as negative results.
 
-N2 — Directional wall audit: physical coherent detection does not supply event actuality, selector genesis, proper time, or a locally enforced global-domain cutoff; and none of those reverse implications holds.  Event actuality does not compile controlled-G.  Selector genesis does not supply a grade pulse.  Proper-time calibration does not establish a local code decoder.  These walls remain directionally distinct.
+N2 — Seven typed walls remain: preparation compilation, readout compilation, echo composition, genesis, actuality, local-domain enforcement, and calibration. All 21 unordered wall pairs carry both directional non-implications. No algebraic closure of one is counted as closure of another.
 
-N3 — Hidden supplies: beta, coupling, finite tori, N2/N<=3 code domains, blank path/pointer/work M2, H/T phases, noiseless controls, accepted G/G^-1, the local encoder theorem, occupied binder, root rotor, selector cat field, and reference genesis are inventoried.  The exact physical decoder routing, controlled-G, grade pulse, occurrence rule, Record admission, and calibration are not smuggled in.
+N3 — Explicit supplies are `beta=-0.3`, contact coupling `0.37`, finite tori, the inherited global number promise, the Cycle-583 A2 vector, the real rank-two convention, blank roles, ideal H/T phases, noiseless algebra, Cycle-602 coarse helpers, Cycle-570 Boolean interpreter, binder/root/selector/reference roles, and matched q/prefix lists. The actual phrase scan has two self-classified hits for “registered”: one non-load-bearing runtime filename and one non-load-bearing meta-scan explanation. Hidden conditions promoted: zero.
 
-N4 — Exact residual matching: the Route A surface prints commutator, order-swap, inverse, leakage, cross-term, coherent-preparation, deletion, all24, and all576 residuals.  The nonzero cross-term mismatch is matched directly to Cycle 602's coherent aggregate, not to projector noncommutation.  Route B prints exhaustive truth failures, inverse, rollover, missed, and extra controls.  Route C prints the N0..N6 truth residual and deletion signal.
+N4 — Three exact, scope-matched residual rows connect the Cycle-602 interference wall, Cycle-602 echo-composition wall, and Cycle-570 Boolean inverse surface to the current numeric witnesses. One Cycle-570 physical endpoint/accumulator claim is explicitly dropped as a scope mismatch; it gives no Event, Record, physical, or time credit.
 
-N5 — Resolution rhetoric: claims are finite exact statements on L3/L6/held-out L4, a seven-M2 local contact line, and event prefixes through 8.  There is no arbitrary-size physical-readout theorem, infinite-volume claim, actual event, Record, proper time, energy, Born, or gravity claim.
+N5 — Five rhetoric rows report `per_element`, `per_site`, `per_mode`, `per_block`, and `lattice_wide` status. The positive scope is finite six-mode/coarse algebra only. There is no arbitrary-size theorem, physical readout, actual occurrence, Record, proper time, energy, Born/probability, or gravity claim.
 
-N6 — Partial closure paths: extract and route the accepted local W/W-dagger decoder; compile controlled-G factor by factor or replace it with a direct d preparation; compile the vacuum/A2 X/Y pulse; derive actual occurrence and Record admission; and derive selector genesis or avoid the direct-sum echo.  No new-axiom gate is invoked.
+N6 — Five partial-closure paths are explicit: the executed narrowed Cycle-605 algebra; the exact pinned Cycle-602 parent; an uncreated physical A2/readout compiler; an uncreated controlled-free/full-echo compiler; and an uncreated candidate-to-Record interval bridge. No convention-only closure, new axiom, or control-plane edit is claimed.
 
-N7 — Hostile steelman: a constructor may control every accepted physical-G factor, use the exact path-erasure identity, and compile the remaining grade pulse.  That live construction route blocks a no-go or minimum-content claim.  Likewise a local selector-production law could close the echo without N4.
+N7 — The actionable steelman is to compile the exact eight-Givens preparation and coherent-aggregate path identity into literal physical-M2 E/G products with placement, leakage, and local constraints; compose a controlled free/contact echo; then attach a deletion-sensitive endpoint/predecessor interval. This live unattempted route defeats broad no-go, minimum-content, shared-obstruction, and axiom-pressure claims.
 
-N8 — Cross-cycle echo: Cycles 170 and 243 forbid promoting schedule/count to time.  Cycles 451, 498, 504, and 570 retain identity, predecessor, rollover, and Record boundaries.  Cycle 602's target is the coherent aggregate, not the sum of two channel populations.  Cycle 599's grade-changing pulse/read wall is therefore narrowed but not silently closed.
+N8 — Seven row-wise comparisons cover Cycle 583, Cycle 602, Cycle 570, Cycle 599, Cycle 610, Cycle 611, and Cycle 612. Each records citation, retired/open status, mechanism, and applicability. Cycles 610–612 remain comparison-only with no back-credit.
 
-There is no shared substrate obstruction, no minimum-content conclusion, and no axiom pressure.
+Overall no-go Status: FAIL. The narrowed positive artifact passes, while broad no-go, minimum-content, shared-obstruction, and axiom-pressure claims are false. There is no axiom pressure.
 
-## Six-wall ledger and maturity
+## Six-wall dependency ledger
 
-- `C_ref`: exact algebraic coherent-d preparation; physical controlled-G, code-compatible predicate, and grade pulse open.
-- `C_num`: L3/L6 and held-out L4 distinguish coherent aggregate from which-channel populations; no arbitrary-size or empirical-unit theorem.
-- `C_wrap`: detector/binder gates derive a coherent candidate opportunity and exact rollover; occurrence, Record, calibration, and proper time open.
-- `C_int`: selector-controlled contact has an exact N4-free elementary circuit; controlled free update and branch genesis open.
-- `C_local`: decoded A2 predicate and controlled contact have literal NN schedules; physical W readout routing and controlled-G remain open.
-- `C_source`: no source-conditioned response, lapse, redshift, backreaction, or gravity law.
+- `C_ref`: the coherent-aggregate preparation identity and contact-off reference roles are exact algebraically; physical reference/preparation genesis remains open.
+- `C_num`: L3/L6 and held-out L4 separate the coherent aggregate from which-channel populations; there is no empirical unit, probability, or arbitrary-size theorem.
+- `C_wrap`: reversible role algebra derives a coherent candidate association and finite rollover; Event/Record actuality, calibration, and proper time remain open.
+- `C_int`: selector-controlled onsite contact has exact phase-polynomial algebra; the controlled free update, full echo, and physical primitive product remain open.
+- `C_local`: eight adjacent-mode Givens, membership roles, and controlled contact have bounded algebraic descriptions; all physical E/G, placement, product, leakage, and local-constraint fields remain null.
+- `C_source`: no source-conditioned aggregate response, lapse, redshift, backreaction, or gravity law is derived.
 
-Repo-strict / TOE-strict maturity after this cycle:
+The maturity rebase is null: Cycle 605 earns no physical detector/readout, records, time, inertia, source/gravity, or Born/probability back-credit.
 
-- operational quantum / records: 4.84 / 4.68;
-- causal time: 4.04 / 3.86;
-- inertia / matter: 4.84 / 4.90;
-- gravity / source: 4.10 / 3.85;
-- Born / probability: 4.20 / 3.65.
+## Optimal next campaign
 
-The optimal next campaign is a narrow compiler extraction: surface the actual Cycle 560/563 physical factor word for one radius-one read block, control every factor with a local path field, print its literal NN route and exact gate/SWAP/depth counts, and then attach the vacuum/A2 X/Y pulse.  Only after that succeeds should the candidate opportunity be taken to an occurrence/Record campaign.
-
-## Independent parent verification
-
-The parent first rejected the initial interpretation of two sharp channel
-pointers as the Cycle-602 coherent detector: the separate pointer populations
-omit the interference cross term.  After that boundary was corrected, the
-parent inspected the rank-two Slater factorization, equality circuit,
-path-erasure identity, event association, controlled-contact phase polynomial,
-and full N1--N8 ledger.  It then re-executed all eight scientific and note
-checks without invoking the receipt-writing `main` function; all passed.
-
-The spot reproduction returned coherent preparation residual
-`5.916983715440049e-16`, which-channel/coherent weight difference
-`0.003209185236062409`, relative-interference signal
-`0.01004288847904733`, zero Route-B lawful truth failures, and Route-C truth
-residual `7.108895957933346e-16`.  The parent accepts the algebraic coherent-d
-preparation/inverse, decoded A2 predicate compiler, pointer/binder association
-map, and N4-free controlled-contact circuit.  It does not accept a strict
-physical coherent phase readout, a physical controlled-G, a fully routed
-code-compatible `W^dagger` readout, a derived reference/grade pulse, an actual
-event or Record, proper time, full controlled echo, shared obstruction, or
-axiom pressure.  The frozen worker receipt and cold transcript were not
-overwritten by this reproduction.
+Build one literal physical-M2 A2 preparation/readout compiler on held L6: expose E and G, placement, the primitive product and inverse, leakage, and locally enforced constraints; then control the accepted free/contact factors and test the full echo with deletion. Only after those surfaces execute should the candidate role be connected to an actuality/Record/interval campaign.

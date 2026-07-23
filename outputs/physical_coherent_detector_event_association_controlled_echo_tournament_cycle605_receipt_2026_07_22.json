@@ -1,50 +1,39 @@
 {
   "audit": "unset",
+  "author_accepted": false,
   "authority": "none",
   "axiom_pressure": false,
-  "constitutional_effect": "none",
-  "elapsed_seconds": 2.1398980000521988,
-  "frozen_law_sha256": "d3353a3c4c098fecc5c54209e8498d4703f3951700b8ad71660abaecbcb7bb87",
-  "highest_honest_terminal": "exact decoded-N2 A2 predicate circuit, exact algebraic coherent-d path-erasure identity, explicit detector/binder candidate association, and exact N4-free controlled-contact circuit; physical code-compatible membership routing, controlled-G, grade-changing X/Y read pulse, selector genesis, actual occurrence/Record, proper time, calibration, Born rule, and gravity/source response remain open",
-  "maturity": {
-    "Born_probability_repo_strict": [
-      4.2,
-      3.65
-    ],
-    "causal_time_repo_strict": [
-      4.04,
-      3.86
-    ],
-    "gravity_source_repo_strict": [
-      4.1,
-      3.85
-    ],
-    "inertia_matter_repo_strict": [
-      4.84,
-      4.9
-    ],
-    "operational_quantum_records_repo_strict": [
-      4.84,
-      4.68
-    ]
+  "breakthrough": false,
+  "causal_time_PR5557_comparison_no_backcredit": {
+    "Cycle610": "later proper-cubic compiler work; no retroactive physical-M2 credit for Cycle605",
+    "Cycle611": "later matter/source response work; no Cycle605 source-response law",
+    "Cycle612_3_to_4_delay": "rate-compatible association only; not implemented here",
+    "Cycle612_5_to_4_advance": "requires a distinct count/Event edit; not implemented here",
+    "back_credit_to_Cycle605": false,
+    "executed_by_Cycle605": false,
+    "proper_time_or_lapse_implemented": false,
+    "runtime_imported_or_pinned": false,
+    "source": "PR #5557 Cycles610-612 comparison surface only"
   },
-  "maximum_RSS_bytes": 1110425600,
+  "constitutional_effect": "none",
+  "elapsed_seconds": 7.626779666985385,
+  "frozen_law_sha256": "ea8fa3b6bbaa9db1188ef2aa8430f30a760e109eb9a9959e207f3e5a8d962e99",
+  "highest_honest_terminal": "exact six-mode A2 Slater factorization by eight adjacent-mode Givens, finite which-channel/coherent-aggregate interference loss, reversible coherent-candidate role association and exact controlled-contact phase algebra; no Cycle605 physical-M2 E/G, placement, primitive product, leakage, locally enforced constraint, detector/readout, Event, Record, time or full echo is derived",
+  "maturity_rebase": null,
+  "maximum_RSS_bytes": 714522624,
   "membership_compiler": {
-    "Toffoli_decomposition_residual": 7.93119113412187e-16,
-    "clean_work_M2": 5,
+    "Toffoli_decomposition_residual": 7.93119113412187E-16,
+    "clean_work_role_bits": 5,
     "counts_per_predicate_copy": {
-      "NN_route_return_SWAPs": 40,
-      "adjacent_fermionic_Givens": 16,
+      "adjacent_mode_Givens": 16,
+      "declared_line_route_return_SWAPS": 40,
       "elementary_total": 215,
-      "installed_two_M2_gates": 117,
-      "logical_two_M2_gates": 61,
-      "one_M2_gates": 98,
+      "logical_two_role_operations": 61,
+      "logical_two_role_operations_with_routes": 117,
+      "one_role_operations": 98,
       "serial_depth": 215
     },
-    "decoded_N2_predicate": "Q^dagger then equality 110000 then Q",
-    "exact_inverse": "reverse elementary word with T/Tdg and Q/Qdag exchanged",
-    "full_computational_Hilbert_unitary": true,
-    "literal_NN_line": [
+    "declared_algebraic_role_line": [
       "q0",
       "q1",
       "w0",
@@ -58,233 +47,663 @@
       "w4",
       "pointer"
     ],
+    "decoded_N2_predicate": "Q^dagger then equality 110000 then Q",
+    "exact_inverse": "reverse elementary word with T/Tdg and Q/Qdag exchanged",
+    "executed_layer": "algebraic decoded-A2 membership permutation over named role bits",
+    "full_computational_Hilbert_unitary": true,
+    "interpretation": "exact algebraic membership helper; not a detector or readout",
     "pass": true,
-    "physical_code_interface": {
-      "accepted_compiler_maximum_route_edges": 32,
-      "accepted_route_B_exact_Givens_L6_total": 15984,
-      "accepted_route_B_exact_Givens_per_cell": 74,
-      "missing": [
-        "literal selected-factor/local-encoder decode order and per-readout NN SWAP total",
-        "proof that rotating persistent q M2 without Wdagger preserves auxiliary dressing"
-      ],
-      "strict_physical_predicate_closed": false
-    },
-    "retained_pointer_M2": 1,
+    "physical_EG": null,
+    "physical_leakage": null,
+    "physical_locally_enforced_constraints": null,
+    "physical_placement": null,
+    "physical_primitive_product": null,
+    "retained_pointer_role_bit": 1,
     "work_returns_blank": true
   },
   "no_go_discipline": {
-    "N1_attempted": 5,
-    "N1_broad_negative_gate": "not invoked; positive partial closures exist",
-    "N1_normalized_route_families": [
+    "N1_gate": "FAIL",
+    "N1_qualifying": 4,
+    "N1_required": 5,
+    "N1_routes": [
       {
-        "attempted": true,
-        "disposition": "positive but not phase readout",
-        "mechanism_invariant": "commuting P_a/P_Ga copies",
-        "object_formulation": "which-channel sharp instrument",
-        "terminal_obligation": "channel populations"
+        "disposition": "positive algebraic preparation; no physical placement/product",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "rank-two wedge factorization and adjacent-mode Givens mesh",
+        "object_formulation": "six-mode A2 Slater orbital pair",
+        "search_status": "COUNTED",
+        "terminal_obligation": "exact finite algebraic A2 preparation and inverse"
       },
       {
-        "attempted": true,
-        "disposition": "algebraic positive; physical control open",
-        "mechanism_invariant": "path-H, controlled-G, membership erasure",
-        "object_formulation": "coherent detector preparation",
-        "terminal_obligation": "prepare d and inverse"
+        "disposition": "positive finite interference distinction; not a readout",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "commuting projectors versus coherent aggregate cross term",
+        "object_formulation": "orthogonal onsite/transported channel memberships",
+        "search_status": "COUNTED",
+        "terminal_obligation": "quantify which-channel interference loss on train/held sizes"
       },
       {
-        "attempted": true,
-        "disposition": "grade pulse open",
-        "mechanism_invariant": "U_d inverse plus vacuum/A2 grade pulse",
-        "object_formulation": "even X/Y Naimark readout",
-        "terminal_obligation": "complex amplitude and phase"
+        "disposition": "positive algebraic candidate association; not an Event or Record",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "reversible XOR/AND candidate association",
+        "object_formulation": "channel/binder/certificate rotor roles",
+        "search_status": "COUNTED",
+        "terminal_obligation": "finite-prefix coherent-candidate association and inverse"
       },
       {
-        "attempted": true,
-        "disposition": "positive coherent association",
-        "mechanism_invariant": "pointer XOR and occupied binder",
-        "object_formulation": "detector-certified rotor",
-        "terminal_obligation": "candidate opportunity/rollover"
+        "disposition": "positive contact algebra; controlled free branch/full echo open",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "exact XOR expansion over all 15 unordered pairs",
+        "object_formulation": "selector-controlled six-mode contact polynomial",
+        "search_status": "COUNTED",
+        "terminal_obligation": "controlled-contact component with deletion and cubic orbit controls"
       },
       {
-        "attempted": true,
-        "disposition": "contact positive; controlled free/genesis open",
-        "mechanism_invariant": "phase-polynomial local contact",
-        "object_formulation": "controlled-contact echo",
-        "terminal_obligation": "actual/reference echo"
+        "disposition": "open",
+        "honesty_marker": null,
+        "mechanism_invariant": "physical E/G, placement, primitive product, leakage and local constraints",
+        "object_formulation": "literal physical-M2 preparation/detector/readout stack",
+        "search_status": "OPEN_UNTESTED_NOT_COUNTED",
+        "terminal_obligation": "operational coherent-aggregate detector/readout"
       },
       {
-        "attempted": false,
-        "disposition": "N4 remains out of domain",
-        "mechanism_invariant": "N4 encounter",
-        "object_formulation": "two independent dimers",
-        "terminal_obligation": "independent matter standard"
-      },
-      {
-        "attempted": false,
-        "disposition": "occurrence/Record open",
-        "mechanism_invariant": "actual permanent events",
-        "object_formulation": "Record-admitted detector corpus",
-        "terminal_obligation": "proper-time calibration"
+        "disposition": "open; Cycles610-612 comparison gives no back-credit",
+        "honesty_marker": null,
+        "mechanism_invariant": "reference genesis, controlled free update, endpoint association and admission",
+        "object_formulation": "autonomous physical contact/reference echo at causal intervals",
+        "search_status": "OPEN_UNTESTED_NOT_COUNTED",
+        "terminal_obligation": "Event/Record-qualified clock comparison"
       }
     ],
-    "N1_required_for_broad_negative": 5,
-    "N2_directional_wall_pairs": [
+    "N2_collapsed_walls": [
       {
-        "collapsed": false,
-        "left_to_right": "controlled-G plus code-compatible physical membership and grade pulse does not supply selection/admission of one coherent candidate as an occurrence/Record",
-        "pair": [
-          "physical coherent detector",
-          "event actuality"
-        ],
-        "right_to_left": "selection/admission of one coherent candidate as an occurrence/Record does not supply controlled-G plus code-compatible physical membership and grade pulse"
+        "obligation": "literal physical-M2 E/G, placement and primitive product for the eight-Givens A2 preparation",
+        "type": "PREPARATION_COMPILATION",
+        "wall": "physical Slater/preparation compilation"
       },
       {
-        "collapsed": false,
-        "left_to_right": "controlled-G plus code-compatible physical membership and grade pulse does not supply autonomous preparation/stabilization of the actual/reference cat field",
-        "pair": [
-          "physical coherent detector",
-          "selector genesis"
-        ],
-        "right_to_left": "autonomous preparation/stabilization of the actual/reference cat field does not supply controlled-G plus code-compatible physical membership and grade pulse"
+        "obligation": "literal physical-M2 coherent-aggregate measurement with leakage and reference-arm certificate",
+        "type": "READOUT_COMPILATION",
+        "wall": "physical detector/readout compilation"
       },
       {
-        "collapsed": false,
-        "left_to_right": "controlled-G plus code-compatible physical membership and grade pulse does not supply calibration of permanent event intervals to a physical time standard",
-        "pair": [
-          "physical coherent detector",
-          "proper time"
-        ],
-        "right_to_left": "calibration of permanent event intervals to a physical time standard does not supply controlled-G plus code-compatible physical membership and grade pulse"
+        "obligation": "controlled free update composed with controlled contact and inverse",
+        "type": "ECHO_COMPOSITION",
+        "wall": "full contact/reference echo composition"
       },
       {
-        "collapsed": false,
-        "left_to_right": "controlled-G plus code-compatible physical membership and grade pulse does not supply local enforcement of the inherited global N<=3 cutoff",
-        "pair": [
-          "physical coherent detector",
-          "global domain"
-        ],
-        "right_to_left": "local enforcement of the inherited global N<=3 cutoff does not supply controlled-G plus code-compatible physical membership and grade pulse"
+        "obligation": "autonomous local preparation and stabilization of reference/selector roles",
+        "type": "GENESIS",
+        "wall": "autonomous reference and selector genesis"
       },
       {
-        "collapsed": false,
-        "left_to_right": "selection/admission of one coherent candidate as an occurrence/Record does not supply autonomous preparation/stabilization of the actual/reference cat field",
-        "pair": [
-          "event actuality",
-          "selector genesis"
-        ],
-        "right_to_left": "autonomous preparation/stabilization of the actual/reference cat field does not supply selection/admission of one coherent candidate as an occurrence/Record"
+        "obligation": "framework-owned occurrence, permanence, readability and admission",
+        "type": "ACTUALITY",
+        "wall": "Event and Record actuality"
       },
       {
-        "collapsed": false,
-        "left_to_right": "selection/admission of one coherent candidate as an occurrence/Record does not supply calibration of permanent event intervals to a physical time standard",
-        "pair": [
-          "event actuality",
-          "proper time"
-        ],
-        "right_to_left": "calibration of permanent event intervals to a physical time standard does not supply selection/admission of one coherent candidate as an occurrence/Record"
+        "obligation": "bounded local enforcement of the inherited global N<=3 promise",
+        "type": "DOMAIN_LOCALITY",
+        "wall": "local number-domain enforcement"
       },
       {
-        "collapsed": false,
-        "left_to_right": "selection/admission of one coherent candidate as an occurrence/Record does not supply local enforcement of the inherited global N<=3 cutoff",
-        "pair": [
-          "event actuality",
-          "global domain"
-        ],
-        "right_to_left": "local enforcement of the inherited global N<=3 cutoff does not supply selection/admission of one coherent candidate as an occurrence/Record"
-      },
-      {
-        "collapsed": false,
-        "left_to_right": "autonomous preparation/stabilization of the actual/reference cat field does not supply calibration of permanent event intervals to a physical time standard",
-        "pair": [
-          "selector genesis",
-          "proper time"
-        ],
-        "right_to_left": "calibration of permanent event intervals to a physical time standard does not supply autonomous preparation/stabilization of the actual/reference cat field"
-      },
-      {
-        "collapsed": false,
-        "left_to_right": "autonomous preparation/stabilization of the actual/reference cat field does not supply local enforcement of the inherited global N<=3 cutoff",
-        "pair": [
-          "selector genesis",
-          "global domain"
-        ],
-        "right_to_left": "local enforcement of the inherited global N<=3 cutoff does not supply autonomous preparation/stabilization of the actual/reference cat field"
-      },
-      {
-        "collapsed": false,
-        "left_to_right": "calibration of permanent event intervals to a physical time standard does not supply local enforcement of the inherited global N<=3 cutoff",
-        "pair": [
-          "proper time",
-          "global domain"
-        ],
-        "right_to_left": "local enforcement of the inherited global N<=3 cutoff does not supply calibration of permanent event intervals to a physical time standard"
+        "obligation": "empirical cross-device equivalence and continuum unit map",
+        "type": "CALIBRATION",
+        "wall": "proper-time calibration"
       }
     ],
-    "N3_hidden_supplies": [
-      "beta=-0.3, g=0.37, L3/L6 and held-out L4, N=2 detector code",
-      "blank path/pointers/work, H/T phases, noiseless coherent control",
-      "accepted G/G^-1, local encoder theorem, supplied global N<=3 domain",
-      "occupied binder, root rotor, selector cat field and reference genesis"
-    ],
-    "N4_exact_residual_matching": {
-      "Cycle602_exact_match": "the missing cross term, not projector noncommutation, distinguishes which-channel copying from the frozen coherent detector",
-      "Route_A": {
-        "commutator": 0.0,
-        "interference_loss": 0.003209185236062409,
-        "surface": "physical_coherent_detector_event_association_controlled_echo_tournament_cycle605_2026_07_22.py:315"
+    "N2_directional_wall_independence": [
+      {
+        "collapsed": false,
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "literal physical-M2 E/G, placement and primitive product for the eight-Givens A2 preparation does not construct literal physical-M2 coherent-aggregate measurement with leakage and reference-arm certificate",
+        "left_wall_type": "PREPARATION_COMPILATION",
+        "pair": [
+          "physical Slater/preparation compilation",
+          "physical detector/readout compilation"
+        ],
+        "right_closes_left": false,
+        "right_to_left_reason": "literal physical-M2 coherent-aggregate measurement with leakage and reference-arm certificate does not construct literal physical-M2 E/G, placement and primitive product for the eight-Givens A2 preparation",
+        "right_wall_type": "READOUT_COMPILATION"
       },
-      "Route_B": {
-        "lawful_truth_failures": 0,
-        "surface": "physical_coherent_detector_event_association_controlled_echo_tournament_cycle605_2026_07_22.py:530"
+      {
+        "collapsed": false,
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "literal physical-M2 E/G, placement and primitive product for the eight-Givens A2 preparation does not construct controlled free update composed with controlled contact and inverse",
+        "left_wall_type": "PREPARATION_COMPILATION",
+        "pair": [
+          "physical Slater/preparation compilation",
+          "full contact/reference echo composition"
+        ],
+        "right_closes_left": false,
+        "right_to_left_reason": "controlled free update composed with controlled contact and inverse does not construct literal physical-M2 E/G, placement and primitive product for the eight-Givens A2 preparation",
+        "right_wall_type": "ECHO_COMPOSITION"
       },
-      "Route_C": {
-        "surface": "physical_coherent_detector_event_association_controlled_echo_tournament_cycle605_2026_07_22.py:643",
-        "truth_residual": 7.108895957933346e-16
+      {
+        "collapsed": false,
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "literal physical-M2 E/G, placement and primitive product for the eight-Givens A2 preparation does not construct autonomous local preparation and stabilization of reference/selector roles",
+        "left_wall_type": "PREPARATION_COMPILATION",
+        "pair": [
+          "physical Slater/preparation compilation",
+          "autonomous reference and selector genesis"
+        ],
+        "right_closes_left": false,
+        "right_to_left_reason": "autonomous local preparation and stabilization of reference/selector roles does not construct literal physical-M2 E/G, placement and primitive product for the eight-Givens A2 preparation",
+        "right_wall_type": "GENESIS"
+      },
+      {
+        "collapsed": false,
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "literal physical-M2 E/G, placement and primitive product for the eight-Givens A2 preparation does not construct framework-owned occurrence, permanence, readability and admission",
+        "left_wall_type": "PREPARATION_COMPILATION",
+        "pair": [
+          "physical Slater/preparation compilation",
+          "Event and Record actuality"
+        ],
+        "right_closes_left": false,
+        "right_to_left_reason": "framework-owned occurrence, permanence, readability and admission does not construct literal physical-M2 E/G, placement and primitive product for the eight-Givens A2 preparation",
+        "right_wall_type": "ACTUALITY"
+      },
+      {
+        "collapsed": false,
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "literal physical-M2 E/G, placement and primitive product for the eight-Givens A2 preparation does not construct bounded local enforcement of the inherited global N<=3 promise",
+        "left_wall_type": "PREPARATION_COMPILATION",
+        "pair": [
+          "physical Slater/preparation compilation",
+          "local number-domain enforcement"
+        ],
+        "right_closes_left": false,
+        "right_to_left_reason": "bounded local enforcement of the inherited global N<=3 promise does not construct literal physical-M2 E/G, placement and primitive product for the eight-Givens A2 preparation",
+        "right_wall_type": "DOMAIN_LOCALITY"
+      },
+      {
+        "collapsed": false,
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "literal physical-M2 E/G, placement and primitive product for the eight-Givens A2 preparation does not construct empirical cross-device equivalence and continuum unit map",
+        "left_wall_type": "PREPARATION_COMPILATION",
+        "pair": [
+          "physical Slater/preparation compilation",
+          "proper-time calibration"
+        ],
+        "right_closes_left": false,
+        "right_to_left_reason": "empirical cross-device equivalence and continuum unit map does not construct literal physical-M2 E/G, placement and primitive product for the eight-Givens A2 preparation",
+        "right_wall_type": "CALIBRATION"
+      },
+      {
+        "collapsed": false,
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "literal physical-M2 coherent-aggregate measurement with leakage and reference-arm certificate does not construct controlled free update composed with controlled contact and inverse",
+        "left_wall_type": "READOUT_COMPILATION",
+        "pair": [
+          "physical detector/readout compilation",
+          "full contact/reference echo composition"
+        ],
+        "right_closes_left": false,
+        "right_to_left_reason": "controlled free update composed with controlled contact and inverse does not construct literal physical-M2 coherent-aggregate measurement with leakage and reference-arm certificate",
+        "right_wall_type": "ECHO_COMPOSITION"
+      },
+      {
+        "collapsed": false,
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "literal physical-M2 coherent-aggregate measurement with leakage and reference-arm certificate does not construct autonomous local preparation and stabilization of reference/selector roles",
+        "left_wall_type": "READOUT_COMPILATION",
+        "pair": [
+          "physical detector/readout compilation",
+          "autonomous reference and selector genesis"
+        ],
+        "right_closes_left": false,
+        "right_to_left_reason": "autonomous local preparation and stabilization of reference/selector roles does not construct literal physical-M2 coherent-aggregate measurement with leakage and reference-arm certificate",
+        "right_wall_type": "GENESIS"
+      },
+      {
+        "collapsed": false,
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "literal physical-M2 coherent-aggregate measurement with leakage and reference-arm certificate does not construct framework-owned occurrence, permanence, readability and admission",
+        "left_wall_type": "READOUT_COMPILATION",
+        "pair": [
+          "physical detector/readout compilation",
+          "Event and Record actuality"
+        ],
+        "right_closes_left": false,
+        "right_to_left_reason": "framework-owned occurrence, permanence, readability and admission does not construct literal physical-M2 coherent-aggregate measurement with leakage and reference-arm certificate",
+        "right_wall_type": "ACTUALITY"
+      },
+      {
+        "collapsed": false,
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "literal physical-M2 coherent-aggregate measurement with leakage and reference-arm certificate does not construct bounded local enforcement of the inherited global N<=3 promise",
+        "left_wall_type": "READOUT_COMPILATION",
+        "pair": [
+          "physical detector/readout compilation",
+          "local number-domain enforcement"
+        ],
+        "right_closes_left": false,
+        "right_to_left_reason": "bounded local enforcement of the inherited global N<=3 promise does not construct literal physical-M2 coherent-aggregate measurement with leakage and reference-arm certificate",
+        "right_wall_type": "DOMAIN_LOCALITY"
+      },
+      {
+        "collapsed": false,
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "literal physical-M2 coherent-aggregate measurement with leakage and reference-arm certificate does not construct empirical cross-device equivalence and continuum unit map",
+        "left_wall_type": "READOUT_COMPILATION",
+        "pair": [
+          "physical detector/readout compilation",
+          "proper-time calibration"
+        ],
+        "right_closes_left": false,
+        "right_to_left_reason": "empirical cross-device equivalence and continuum unit map does not construct literal physical-M2 coherent-aggregate measurement with leakage and reference-arm certificate",
+        "right_wall_type": "CALIBRATION"
+      },
+      {
+        "collapsed": false,
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "controlled free update composed with controlled contact and inverse does not construct autonomous local preparation and stabilization of reference/selector roles",
+        "left_wall_type": "ECHO_COMPOSITION",
+        "pair": [
+          "full contact/reference echo composition",
+          "autonomous reference and selector genesis"
+        ],
+        "right_closes_left": false,
+        "right_to_left_reason": "autonomous local preparation and stabilization of reference/selector roles does not construct controlled free update composed with controlled contact and inverse",
+        "right_wall_type": "GENESIS"
+      },
+      {
+        "collapsed": false,
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "controlled free update composed with controlled contact and inverse does not construct framework-owned occurrence, permanence, readability and admission",
+        "left_wall_type": "ECHO_COMPOSITION",
+        "pair": [
+          "full contact/reference echo composition",
+          "Event and Record actuality"
+        ],
+        "right_closes_left": false,
+        "right_to_left_reason": "framework-owned occurrence, permanence, readability and admission does not construct controlled free update composed with controlled contact and inverse",
+        "right_wall_type": "ACTUALITY"
+      },
+      {
+        "collapsed": false,
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "controlled free update composed with controlled contact and inverse does not construct bounded local enforcement of the inherited global N<=3 promise",
+        "left_wall_type": "ECHO_COMPOSITION",
+        "pair": [
+          "full contact/reference echo composition",
+          "local number-domain enforcement"
+        ],
+        "right_closes_left": false,
+        "right_to_left_reason": "bounded local enforcement of the inherited global N<=3 promise does not construct controlled free update composed with controlled contact and inverse",
+        "right_wall_type": "DOMAIN_LOCALITY"
+      },
+      {
+        "collapsed": false,
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "controlled free update composed with controlled contact and inverse does not construct empirical cross-device equivalence and continuum unit map",
+        "left_wall_type": "ECHO_COMPOSITION",
+        "pair": [
+          "full contact/reference echo composition",
+          "proper-time calibration"
+        ],
+        "right_closes_left": false,
+        "right_to_left_reason": "empirical cross-device equivalence and continuum unit map does not construct controlled free update composed with controlled contact and inverse",
+        "right_wall_type": "CALIBRATION"
+      },
+      {
+        "collapsed": false,
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "autonomous local preparation and stabilization of reference/selector roles does not construct framework-owned occurrence, permanence, readability and admission",
+        "left_wall_type": "GENESIS",
+        "pair": [
+          "autonomous reference and selector genesis",
+          "Event and Record actuality"
+        ],
+        "right_closes_left": false,
+        "right_to_left_reason": "framework-owned occurrence, permanence, readability and admission does not construct autonomous local preparation and stabilization of reference/selector roles",
+        "right_wall_type": "ACTUALITY"
+      },
+      {
+        "collapsed": false,
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "autonomous local preparation and stabilization of reference/selector roles does not construct bounded local enforcement of the inherited global N<=3 promise",
+        "left_wall_type": "GENESIS",
+        "pair": [
+          "autonomous reference and selector genesis",
+          "local number-domain enforcement"
+        ],
+        "right_closes_left": false,
+        "right_to_left_reason": "bounded local enforcement of the inherited global N<=3 promise does not construct autonomous local preparation and stabilization of reference/selector roles",
+        "right_wall_type": "DOMAIN_LOCALITY"
+      },
+      {
+        "collapsed": false,
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "autonomous local preparation and stabilization of reference/selector roles does not construct empirical cross-device equivalence and continuum unit map",
+        "left_wall_type": "GENESIS",
+        "pair": [
+          "autonomous reference and selector genesis",
+          "proper-time calibration"
+        ],
+        "right_closes_left": false,
+        "right_to_left_reason": "empirical cross-device equivalence and continuum unit map does not construct autonomous local preparation and stabilization of reference/selector roles",
+        "right_wall_type": "CALIBRATION"
+      },
+      {
+        "collapsed": false,
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "framework-owned occurrence, permanence, readability and admission does not construct bounded local enforcement of the inherited global N<=3 promise",
+        "left_wall_type": "ACTUALITY",
+        "pair": [
+          "Event and Record actuality",
+          "local number-domain enforcement"
+        ],
+        "right_closes_left": false,
+        "right_to_left_reason": "bounded local enforcement of the inherited global N<=3 promise does not construct framework-owned occurrence, permanence, readability and admission",
+        "right_wall_type": "DOMAIN_LOCALITY"
+      },
+      {
+        "collapsed": false,
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "framework-owned occurrence, permanence, readability and admission does not construct empirical cross-device equivalence and continuum unit map",
+        "left_wall_type": "ACTUALITY",
+        "pair": [
+          "Event and Record actuality",
+          "proper-time calibration"
+        ],
+        "right_closes_left": false,
+        "right_to_left_reason": "empirical cross-device equivalence and continuum unit map does not construct framework-owned occurrence, permanence, readability and admission",
+        "right_wall_type": "CALIBRATION"
+      },
+      {
+        "collapsed": false,
+        "independent": true,
+        "left_closes_right": false,
+        "left_to_right_reason": "bounded local enforcement of the inherited global N<=3 promise does not construct empirical cross-device equivalence and continuum unit map",
+        "left_wall_type": "DOMAIN_LOCALITY",
+        "pair": [
+          "local number-domain enforcement",
+          "proper-time calibration"
+        ],
+        "right_closes_left": false,
+        "right_to_left_reason": "empirical cross-device equivalence and continuum unit map does not construct bounded local enforcement of the inherited global N<=3 promise",
+        "right_wall_type": "CALIBRATION"
       }
-    },
-    "N5_resolution_rhetoric": "finite exact L3/L6/L4 N=2 detector algebra, seven-M2 local contact line, and prefixes through 8; no arbitrary-size physical readout, event actuality, Record, proper time, energy, or Born claim",
-    "N6_new_axiom_gate_invoked": false,
+    ],
+    "N3_explicit_supplies": [
+      "beta=-0.3, contact=0.37, finite L3/L6/held-out-L4 tori and global N<=3 promise",
+      "Cycle583 A2 vector, real rank-two choice and algebraic adjacent-mode Givens convention",
+      "blank path/pointer/work roles, H/T phases and noiseless coherent algebra",
+      "Cycle602 coarse G/G^-1 helpers and Cycle570 Boolean gate interpreter",
+      "occupied binder/root rotor, selector/reference roles and matched q/prefix lists"
+    ],
+    "N3_hidden_conditions_promoted": 0,
+    "N3_phrase_hit_classifications": [
+      {
+        "classification": "NON_LOAD_BEARING_FILENAME",
+        "hit": "registered",
+        "reason": "module key supplies no proof premise",
+        "surface": "runtime closure filename physical_registered_cylinder_future_equivalence_route_cycle342_2026_07_18"
+      },
+      {
+        "classification": "NON_LOAD_BEARING_META_SCAN",
+        "hit": "registered",
+        "reason": "self-referential audit text only",
+        "surface": "Cycle605 N3 classification row and note N3 explanation"
+      }
+    ],
+    "N4_dropped_nonmatches": [
+      {
+        "current_residual": "Cycle605 uses only Boolean run_schedule algebra and candidate roles",
+        "disposition": "dropped as physical, Event, Record or time evidence",
+        "exact_match": false,
+        "prior_residual": "Cycle570 physical endpoint/accumulator and clock-semigroup claims",
+        "scope_match": false,
+        "witness": "docs/work_history/repo/review_feedback/PHYSICAL_JOINT_CLOCK_ACCUMULATOR_CONTRACTION_BRIDGE_CYCLE570_NOTE_2026-07-22.md:23-60"
+      }
+    ],
+    "N4_exact_residual_matches": [
+      {
+        "current_numeric_residual": 0.003209185236062409,
+        "current_residual": "Cycle605 exactly measures which-channel cross-term loss and keeps every physical detector/readout field null",
+        "current_witness": "physical_coherent_detector_event_association_controlled_echo_tournament_cycle605_2026_07_22.py:630",
+        "exact_match": true,
+        "prior_residual": "fixed coherent aggregate is positive at finite coarse scope while physical detector/readout composition is absent",
+        "scope_match": true,
+        "witness": "docs/work_history/repo/review_feedback/PHYSICAL_TRANSPORTED_OBSERVABLE_RAMSEY_ECHO_EVENT_ROTOR_TOURNAMENT_CYCLE602_NOTE_2026-07-22.md:143-167"
+      },
+      {
+        "current_numeric_residual": 7.108895957933346E-16,
+        "current_residual": "Cycle605 supplies exact controlled-contact algebra only; full contact/free echo and physical product stay open",
+        "current_witness": "physical_coherent_detector_event_association_controlled_echo_tournament_cycle605_2026_07_22.py:997",
+        "exact_match": true,
+        "prior_residual": "coarse contact/reference echo is positive while controlled physical primitive composition remains open",
+        "scope_match": true,
+        "witness": "docs/work_history/repo/review_feedback/PHYSICAL_TRANSPORTED_OBSERVABLE_RAMSEY_ECHO_EVENT_ROTOR_TOURNAMENT_CYCLE602_NOTE_2026-07-22.md:169-184"
+      },
+      {
+        "current_numeric_residual": 0.0,
+        "current_residual": "Cycle605 executes a new reversible channel/binder/certificate schedule and exact inverse",
+        "current_witness": "physical_coherent_detector_event_association_controlled_echo_tournament_cycle605_2026_07_22.py:859",
+        "exact_match": true,
+        "prior_residual": "reversible finite Boolean gate interpreter with deletion support",
+        "scope_match": true,
+        "witness": "scripts/physical_joint_clock_accumulator_contraction_bridge_cycle570_2026_07_22.py:357-375"
+      }
+    ],
+    "N5_rhetoric_resolution_ledger": [
+      {
+        "lattice_wide": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_block": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_element": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_mode": "TESTED: exact six-mode algebraic mesh only",
+        "per_site": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "phrase": "the eight-Givens identity is not promoted to physical preparation"
+      },
+      {
+        "lattice_wide": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_block": "TESTED: no physical E/G/placement/product/leakage certificate",
+        "per_element": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_mode": "TESTED: finite A2 membership and cross-term loss",
+        "per_site": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "phrase": "the membership predicate is not promoted to a detector/readout"
+      },
+      {
+        "lattice_wide": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_block": "TESTED: reversible role bits have no actuality/admission law",
+        "per_element": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_mode": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_site": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "phrase": "the candidate opportunity is not promoted to an Event or Record"
+      },
+      {
+        "lattice_wide": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_block": "TESTED: controlled free branch/product remains absent",
+        "per_element": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_mode": "TESTED: all 15 local mode pairs",
+        "per_site": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "phrase": "the controlled-contact polynomial is not promoted to a physical echo"
+      },
+      {
+        "lattice_wide": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_block": "TESTED: finite composition indices only",
+        "per_element": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_mode": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_site": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "phrase": "the update/prefix indices are not promoted to time"
+      }
+    ],
+    "N6_control_plane_edit": false,
+    "N6_convention_only_closure_found": false,
+    "N6_new_axiom_required": false,
     "N6_partial_closure_paths": [
-      "extract and route the accepted W/Wdagger local decoder as an explicit readout macro",
-      "compile controlled G from the accepted physical factor list or replace it by a direct d-state circuit",
-      "compile the vacuum/A2 X/Y pulse; derive actual occurrence and Record admission",
-      "derive selector genesis or avoid the direct-sum echo"
+      {
+        "candidate_path": "scripts/physical_coherent_detector_event_association_controlled_echo_tournament_cycle605_2026_07_22.py",
+        "status": "EXECUTED_NARROW_COARSE_ALGEBRAIC_POSITIVE",
+        "what_it_closes": "finite Slater/interference/candidate-association/controlled-contact algebra only"
+      },
+      {
+        "candidate_path": "scripts/physical_transported_observable_ramsey_echo_event_rotor_tournament_cycle602_2026_07_22.py",
+        "status": "EXACT_PINNED_COARSE_PARENT",
+        "what_it_closes": "fixed transported aggregate and coarse echo/rotor inputs, not Cycle605 physical compilation"
+      },
+      {
+        "candidate_path": "scripts/physical_A2_preparation_coherent_readout_compiler_cycle_next.py",
+        "status": "NOT_CREATED_OPEN_CANDIDATE",
+        "what_it_closes": "literal physical E/G, placement, primitive product, leakage and locally enforced constraints"
+      },
+      {
+        "candidate_path": "scripts/physical_controlled_free_contact_echo_compiler_cycle_next.py",
+        "status": "NOT_CREATED_OPEN_CANDIDATE",
+        "what_it_closes": "controlled free branch, reference genesis, inverse and full echo"
+      },
+      {
+        "candidate_path": "scripts/physical_candidate_to_record_interval_bridge_cycle_next.py",
+        "status": "NOT_CREATED_OPEN_CANDIDATE",
+        "what_it_closes": "actuality, Record admission and causal interval association without Cycles610-612 back-credit"
+      }
     ],
-    "N7_hostile_steelman": "A hostile constructor can control every accepted physical G factor, use the exact path-erasure identity, and then compile the remaining grade pulse; the finite walls are explicit engineering obligations, not a no-go.",
-    "N8_cross_cycle_echo": "Cycles170/243 forbid schedule-to-time promotion; Cycles451/498/504/570 retain identity, predecessor and rollover; Cycle602's coherent aggregate\u2014not its two separate populations\u2014is the readout target.",
-    "axiom_pressure": false,
-    "minimum_content_claim_shipped": false,
-    "negative_claim_shipped": false,
+    "N7_steelman": {
+      "actionable_terminal": "execute held L6 physical E/G/inverse/placement/primitive-product/leakage/local-constraint certificates for preparation, coherent readout and full echo, then demonstrate autonomous candidate-to-interval association",
+      "mechanism": "compile the exact eight-Givens A2 mesh and coherent-aggregate path-erasure identity into a literal physical-M2 E/G product with placement, local constraints and leakage, then compose a controlled free/contact echo and attach its output to a deletion-sensitive endpoint/predecessor interval",
+      "openness": "this route is unattempted and defeats broad no-go, minimum-content, shared-obstruction and axiom-pressure claims",
+      "supporting_authority": [
+        "scripts/physical_contact_dimer_infinite_internal_content_tournament_cycle583_2026_07_22.py:281-282",
+        "docs/work_history/repo/review_feedback/PHYSICAL_TRANSPORTED_OBSERVABLE_RAMSEY_ECHO_EVENT_ROTOR_TOURNAMENT_CYCLE602_NOTE_2026-07-22.md:143-184",
+        "physical_coherent_detector_event_association_controlled_echo_tournament_cycle605_2026_07_22.py:630"
+      ]
+    },
+    "N8_cross_cycle_echo": [
+      {
+        "applicability_here": "physical placement/product/leakage remain open",
+        "citation": "scripts/physical_contact_dimer_infinite_internal_content_tournament_cycle583_2026_07_22.py:281-282",
+        "prior_wall": "Cycle583 supplies finite A2 irrep vectors but no Cycle605 physical preparation",
+        "retired_status": "RETIRED_AT_SIX_MODE_ALGEBRAIC_SLATER_SCOPE",
+        "retirement_mechanism": "rank-two factorization and eight adjacent-mode Givens"
+      },
+      {
+        "applicability_here": "compile literal physical readout stack",
+        "citation": "docs/work_history/repo/review_feedback/PHYSICAL_TRANSPORTED_OBSERVABLE_RAMSEY_ECHO_EVENT_ROTOR_TOURNAMENT_CYCLE602_NOTE_2026-07-22.md:143-167",
+        "prior_wall": "Cycle602 transported aggregate lacks physical detector/readout",
+        "retired_status": "NOT_RETIRED",
+        "retirement_mechanism": "Cycle605 quantifies algebraic cross-term loss only"
+      },
+      {
+        "applicability_here": "do not promote prefix/candidate bits",
+        "citation": "docs/work_history/repo/review_feedback/PHYSICAL_JOINT_CLOCK_ACCUMULATOR_CONTRACTION_BRIDGE_CYCLE570_NOTE_2026-07-22.md:18-20,55-60",
+        "prior_wall": "Cycle570 reversible prefix schedule is not time or Record actuality",
+        "retired_status": "OPEN",
+        "retirement_mechanism": "candidate-role inverse only"
+      },
+      {
+        "applicability_here": "physical coherent readout still needs a literal primitive stack",
+        "citation": "docs/work_history/repo/review_feedback/PHYSICAL_INTRINSIC_RAMSEY_CLOCK_STRICT_M2_TIME_BRIDGE_TOURNAMENT_CYCLE599_NOTE_2026-07-22.md:147-172",
+        "prior_wall": "Cycle599 grade-changing pulse/readout remains algebraic",
+        "retired_status": "OPEN",
+        "retirement_mechanism": "none in Cycle605"
+      },
+      {
+        "applicability_here": "cannot retroactively physicalize algebraic gates/roles",
+        "citation": "docs/work_history/repo/review_feedback/PHYSICAL_PROPER_CUBIC_SUPERCELL_STREAM_COMPOSITION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md",
+        "prior_wall": "Cycle610 later proper-cubic compiler",
+        "retired_status": "COMPARISON_ONLY_NO_BACK_CREDIT",
+        "retirement_mechanism": "not imported, pinned or executed by Cycle605"
+      },
+      {
+        "applicability_here": "no Cycle605 source response",
+        "citation": "docs/work_history/repo/review_feedback/PHYSICAL_MATTER_VARIATION_CURRENT_STRESS_COMPENSATOR_SOURCE_TOURNAMENT_CYCLE611_NOTE_2026-07-22.md",
+        "prior_wall": "Cycle611 later matter/source response",
+        "retired_status": "COMPARISON_ONLY_NO_BACK_CREDIT",
+        "retirement_mechanism": "not imported, pinned or executed by Cycle605"
+      },
+      {
+        "applicability_here": "neither is implemented and no time claim follows",
+        "citation": "docs/work_history/repo/review_feedback/PHYSICAL_MATTER_CAUSED_CAUSAL_INTERVAL_PROPER_TIME_BRIDGE_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md:46-82",
+        "prior_wall": "Cycle612 conditional causal interval",
+        "retired_status": "COMPARISON_ONLY_NO_BACK_CREDIT",
+        "retirement_mechanism": "3:4 delay is rate-compatible but unimplemented; 5:4 advance requires distinct count/Event edit"
+      }
+    ],
+    "Status": "FAIL",
+    "artifact_status": "PASS_NARROWED_COARSE_ALGEBRAIC_POSITIVE_ONLY",
+    "axiom_pressure_claim": false,
+    "broad_no_go_claim": false,
+    "minimum_content_claim": false,
     "pass": true,
-    "shared_obstruction": false
+    "shared_obstruction_claim": false
   },
   "note_contract": {
     "missing": [],
     "pass": true,
-    "required": 29
+    "required": 33
   },
-  "note_sha256": "831fd6e20630d0fcc3623ffb9197fab2e420f0ec9f9378136f74ef888c3b3a03",
+  "note_sha256": "c59199cb71f4e01e4ae8e10e4a11678597f86558c148cf93af05f96c5b112b9b",
   "pass": true,
+  "physical_composition_boundary": {
+    "membership_physical_EG": null,
+    "membership_physical_leakage": null,
+    "membership_physical_locally_enforced_constraints": null,
+    "membership_physical_placement": null,
+    "membership_physical_primitive_product": null,
+    "route_A_physical_EG": null,
+    "route_A_physical_leakage": null,
+    "route_A_physical_locally_enforced_constraints": null,
+    "route_A_physical_placement": null,
+    "route_A_physical_primitive_product": null,
+    "route_B_physical_EG": null,
+    "route_B_physical_leakage": null,
+    "route_B_physical_locally_enforced_constraints": null,
+    "route_B_physical_placement": null,
+    "route_B_physical_primitive_product": null,
+    "route_C_physical_EG": null,
+    "route_C_physical_leakage": null,
+    "route_C_physical_locally_enforced_constraints": null,
+    "route_C_physical_placement": null,
+    "route_C_physical_primitive_product": null,
+    "slater_physical_EG": null,
+    "slater_physical_leakage": null,
+    "slater_physical_locally_enforced_constraints": null,
+    "slater_physical_placement": null,
+    "slater_physical_primitive_product": null
+  },
   "route_A": {
     "coherent_preparation": {
-      "Hadamard_XY_readout_requires": "U_d inverse followed by a vacuum/A2 grade-changing X/Y pulse and pointer; that pulse remains supplied",
       "absolute_complex_phase_boundary": "d+ and d+i memberships expose relative a/Ga interference; phase of <d|psi> against a fixed origin needs a physical reference arm",
-      "coherent_detector_preparation_identity": "H_path; controlled-G; G^-1; A2-membership-X_path; G",
-      "coherent_preparation_residual": 5.916983715440049e-16,
-      "controlled_G_elementary_physical_layout_synthesized": false,
+      "coherent_aggregate_preparation_identity": "H_path; controlled-G; G^-1; A2-membership-X_path; G",
+      "coherent_preparation_residual": 5.916983715440049E-16,
+      "complex_phase_candidate_requires": "U_d inverse followed by a vacuum/A2 grade-changing X/Y algebra and a reference arm; no such physical device is executed",
       "d_plus_and_d_plus_i_relative_interference": [
         {
-          "Im_relative_interference": -5.551115123125783e-17,
+          "Im_relative_interference": -5.551115123125783E-17,
           "P_d_plus_i_weight": 0.4999999999999996,
           "P_d_plus_weight": 0.4999999999999996,
-          "Re_relative_interference": -5.551115123125783e-17,
+          "Re_relative_interference": -5.551115123125783E-17,
           "q": 1,
           "split": "train"
         },
         {
-          "Im_relative_interference": -1.3877787807814457e-17,
+          "Im_relative_interference": -1.3877787807814457E-17,
           "P_d_plus_i_weight": 0.09548472984700875,
           "P_d_plus_weight": 0.09548472984700875,
-          "Re_relative_interference": -1.3877787807814457e-17,
+          "Re_relative_interference": -1.3877787807814457E-17,
           "q": 2,
           "split": "train"
         },
@@ -305,18 +724,18 @@
           "split": "train"
         },
         {
-          "Im_relative_interference": -5.551115123125783e-17,
+          "Im_relative_interference": -5.551115123125783E-17,
           "P_d_plus_i_weight": 0.4999999999999996,
           "P_d_plus_weight": 0.4999999999999996,
-          "Re_relative_interference": -5.551115123125783e-17,
+          "Re_relative_interference": -5.551115123125783E-17,
           "q": 1,
           "split": "held"
         },
         {
-          "Im_relative_interference": -1.3877787807814457e-17,
+          "Im_relative_interference": -1.3877787807814457E-17,
           "P_d_plus_i_weight": 0.09548472984700875,
           "P_d_plus_weight": 0.09548472984700875,
-          "Re_relative_interference": -1.3877787807814457e-17,
+          "Re_relative_interference": -1.3877787807814457E-17,
           "q": 2,
           "split": "held"
         },
@@ -329,42 +748,42 @@
           "split": "held"
         },
         {
-          "Im_relative_interference": -1.1102230246251565e-16,
+          "Im_relative_interference": -1.1102230246251565E-16,
           "P_d_plus_i_weight": 0.2637905941994677,
           "P_d_plus_weight": 0.2637905941994677,
-          "Re_relative_interference": -1.1102230246251565e-16,
+          "Re_relative_interference": -1.1102230246251565E-16,
           "q": 4,
           "split": "held"
         },
         {
-          "Im_relative_interference": -5.551115123125783e-17,
+          "Im_relative_interference": -5.551115123125783E-17,
           "P_d_plus_i_weight": 0.2637905941994676,
           "P_d_plus_weight": 0.2637905941994676,
-          "Re_relative_interference": -5.551115123125783e-17,
+          "Re_relative_interference": -5.551115123125783E-17,
           "q": 5,
           "split": "held"
         },
         {
-          "Im_relative_interference": -2.7755575615628914e-17,
+          "Im_relative_interference": -2.7755575615628914E-17,
           "P_d_plus_i_weight": 0.1335862098368123,
           "P_d_plus_weight": 0.1335862098368123,
-          "Re_relative_interference": -2.7755575615628914e-17,
+          "Re_relative_interference": -2.7755575615628914E-17,
           "q": 6,
           "split": "held"
         },
         {
-          "Im_relative_interference": -5.551115123125783e-17,
+          "Im_relative_interference": -5.551115123125783E-17,
           "P_d_plus_i_weight": 0.4999999999999996,
           "P_d_plus_weight": 0.4999999999999996,
-          "Re_relative_interference": -5.551115123125783e-17,
+          "Re_relative_interference": -5.551115123125783E-17,
           "q": 1,
           "split": "held_out_size"
         },
         {
-          "Im_relative_interference": -1.3877787807814457e-17,
+          "Im_relative_interference": -1.3877787807814457E-17,
           "P_d_plus_i_weight": 0.09548472984700875,
           "P_d_plus_weight": 0.09548472984700875,
-          "Re_relative_interference": -1.3877787807814457e-17,
+          "Re_relative_interference": -1.3877787807814457E-17,
           "q": 2,
           "split": "held_out_size"
         },
@@ -377,73 +796,82 @@
           "split": "held_out_size"
         },
         {
-          "Im_relative_interference": -8.326672684688674e-17,
+          "Im_relative_interference": -8.326672684688674E-17,
           "P_d_plus_i_weight": 0.23991826458237026,
           "P_d_plus_weight": 0.23991826458237026,
-          "Re_relative_interference": -8.326672684688674e-17,
+          "Re_relative_interference": -8.326672684688674E-17,
           "q": 4,
           "split": "held_out_size"
         },
         {
-          "Im_relative_interference": -8.326672684688674e-17,
+          "Im_relative_interference": -8.326672684688674E-17,
           "P_d_plus_i_weight": 0.2399182645823701,
           "P_d_plus_weight": 0.2399182645823701,
-          "Re_relative_interference": -8.326672684688674e-17,
+          "Re_relative_interference": -8.326672684688674E-17,
           "q": 5,
           "split": "held_out_size"
         },
         {
-          "Im_relative_interference": -2.7755575615628914e-17,
+          "Im_relative_interference": -2.7755575615628914E-17,
           "P_d_plus_i_weight": 0.14898183504973567,
           "P_d_plus_weight": 0.14898183504973567,
-          "Re_relative_interference": -2.7755575615628914e-17,
+          "Re_relative_interference": -2.7755575615628914E-17,
           "q": 6,
           "split": "held_out_size"
         }
       ],
-      "declared_inverse_residual": 1.4340978779080623e-15,
-      "maximum_quadrature_identity_residual": 1.1102230246251565e-16,
+      "declared_inverse_residual": 1.4340978779080623E-15,
+      "maximum_quadrature_identity_residual": 1.1102230246251565E-16,
       "maximum_relative_interference_signal": 0.01004288847904733,
       "membership_predicate_called_phase_or_amplitude_readout": false,
-      "offcode_full_space_inverse_residual": 1.7236753648881522e-15,
-      "offcode_norm_residual": 1.3322676295501878e-15,
-      "path_erasure_leakage_on_declared_a_input": 1.8889546759398252e-16,
+      "offcode_full_space_inverse_residual": 1.7236753648881522E-15,
+      "offcode_norm_residual": 1.3322676295501878E-15,
+      "physical_EG": null,
+      "physical_leakage": null,
+      "physical_locally_enforced_constraints": null,
+      "physical_placement": null,
+      "physical_primitive_product": null,
       "reason": "its reduced pointer statistics omit 2 Re(alpha* conjugate(beta))/2 and contain no aggregate complex phase",
-      "which_channel_copy_is_not_Cycle602_detector": true
+      "residual_path_arm_norm_on_declared_a_input": 1.8889546759398252E-16,
+      "which_channel_copy_is_not_Cycle602_coherent_aggregate": true
     },
-    "declared_readout_code": "global N=2 physical code with blank path, pointer, and five work M2",
+    "declared_algebraic_code": "global N=2 coarse array with blank path role, pointer role and five work-role bits",
     "deletion": {
       "controlled_G_deleted_target_residual": 0.7653668647301793,
-      "membership_eraser_deleted_path_leakage": 0.7071067811865475
+      "membership_eraser_deleted_path_residual": 0.7071067811865475
     },
+    "executed_layer": "finite L3/L6/held-out-L4 coarse N=2 arrays and algebraic path-role unitary",
     "frame_products": 576,
     "full_space_unitary_extension": true,
-    "maximum_all24_update_covariance_residual": 2.397692742256886e-16,
+    "interpretation": "which-channel/coherent-aggregate interference comparison; not a physical detector or readout",
+    "maximum_all24_update_covariance_residual": 2.397692742256886E-16,
     "maximum_all576_projector_group_residual": 0.0,
-    "maximum_inverse_residual": 2.328276530778557e-15,
-    "maximum_lawful_N2_leakage": 1.3322676295501878e-14,
+    "maximum_coarse_norm_residual": 1.3322676295501878E-14,
+    "maximum_inverse_residual": 2.328276530778557E-15,
     "maximum_nonzero_interference_cross_term": 0.003209185236062409,
     "maximum_order_swap_disturbance": 0.0,
-    "maximum_pointer_sector_norm_residual": 2.5979218776228663e-14,
+    "maximum_pointer_sector_norm_residual": 2.5979218776228663E-14,
     "maximum_projector_commutator": 0.0,
-    "maximum_which_channel_vs_coherent_detector_weight_residual": 0.003209185236062409,
+    "maximum_which_channel_vs_coherent_aggregate_weight_residual": 0.003209185236062409,
     "pass": true,
+    "physical_EG": null,
+    "physical_leakage": null,
+    "physical_locally_enforced_constraints": null,
+    "physical_placement": null,
+    "physical_primitive_product": null,
     "predicate_compiler": {
-      "Toffoli_decomposition_residual": 7.93119113412187e-16,
-      "clean_work_M2": 5,
+      "Toffoli_decomposition_residual": 7.93119113412187E-16,
+      "clean_work_role_bits": 5,
       "counts_per_predicate_copy": {
-        "NN_route_return_SWAPs": 40,
-        "adjacent_fermionic_Givens": 16,
+        "adjacent_mode_Givens": 16,
+        "declared_line_route_return_SWAPS": 40,
         "elementary_total": 215,
-        "installed_two_M2_gates": 117,
-        "logical_two_M2_gates": 61,
-        "one_M2_gates": 98,
+        "logical_two_role_operations": 61,
+        "logical_two_role_operations_with_routes": 117,
+        "one_role_operations": 98,
         "serial_depth": 215
       },
-      "decoded_N2_predicate": "Q^dagger then equality 110000 then Q",
-      "exact_inverse": "reverse elementary word with T/Tdg and Q/Qdag exchanged",
-      "full_computational_Hilbert_unitary": true,
-      "literal_NN_line": [
+      "declared_algebraic_role_line": [
         "q0",
         "q1",
         "w0",
@@ -457,22 +885,23 @@
         "w4",
         "pointer"
       ],
+      "decoded_N2_predicate": "Q^dagger then equality 110000 then Q",
+      "exact_inverse": "reverse elementary word with T/Tdg and Q/Qdag exchanged",
+      "executed_layer": "algebraic decoded-A2 membership permutation over named role bits",
+      "full_computational_Hilbert_unitary": true,
+      "interpretation": "exact algebraic membership helper; not a detector or readout",
       "pass": true,
-      "physical_code_interface": {
-        "accepted_compiler_maximum_route_edges": 32,
-        "accepted_route_B_exact_Givens_L6_total": 15984,
-        "accepted_route_B_exact_Givens_per_cell": 74,
-        "missing": [
-          "literal selected-factor/local-encoder decode order and per-readout NN SWAP total",
-          "proof that rotating persistent q M2 without Wdagger preserves auxiliary dressing"
-        ],
-        "strict_physical_predicate_closed": false
-      },
-      "retained_pointer_M2": 1,
+      "physical_EG": null,
+      "physical_leakage": null,
+      "physical_locally_enforced_constraints": null,
+      "physical_placement": null,
+      "physical_primitive_product": null,
+      "retained_pointer_role_bit": 1,
       "work_returns_blank": true
     },
     "proper_cubic_frames": 24,
-    "retained_environment": "two which-channel pointer M2; five equality work M2 return blank",
+    "retained_algebraic_roles": "two which-channel pointer roles; five equality work roles return blank",
+    "route_disposition": "positive finite coarse/algebraic interference result only",
     "rows": [
       {
         "length": 3,
@@ -484,8 +913,8 @@
               "imag": 0.0,
               "real": 0.7071067811865474
             },
-            "coherent_detector_weight": 0.4999999999999998,
-            "interference_cross_term": 1.1102230246251565e-16,
+            "coherent_aggregate_weight": 0.4999999999999998,
+            "interference_cross_term": 1.1102230246251565E-16,
             "law_applications_not_time": 1,
             "onsite_amplitude": {
               "imag": 0.0,
@@ -502,8 +931,8 @@
               "imag": 0.15452805989245166,
               "real": 0.26759261677573165
             },
-            "coherent_detector_weight": 0.0954847298470087,
-            "interference_cross_term": -5.551115123125783e-17,
+            "coherent_aggregate_weight": 0.0954847298470087,
+            "interference_cross_term": -5.551115123125783E-17,
             "law_applications_not_time": 2,
             "onsite_amplitude": {
               "imag": 0.2185356780671071,
@@ -520,7 +949,7 @@
               "imag": 0.14978643898698865,
               "real": 0.2763271854849153
             },
-            "coherent_detector_weight": 0.09879269074241764,
+            "coherent_aggregate_weight": 0.09879269074241764,
             "interference_cross_term": 0.003209185236062409,
             "law_applications_not_time": 3,
             "onsite_amplitude": {
@@ -538,7 +967,7 @@
               "imag": 0.3952689853025164,
               "real": 0.3308868760431414
             },
-            "coherent_detector_weight": 0.26572369547967023,
+            "coherent_aggregate_weight": 0.26572369547967023,
             "interference_cross_term": 0.0018343256208558367,
             "law_applications_not_time": 4,
             "onsite_amplitude": {
@@ -563,8 +992,8 @@
               "imag": 0.0,
               "real": 0.7071067811865474
             },
-            "coherent_detector_weight": 0.4999999999999998,
-            "interference_cross_term": 1.1102230246251565e-16,
+            "coherent_aggregate_weight": 0.4999999999999998,
+            "interference_cross_term": 1.1102230246251565E-16,
             "law_applications_not_time": 1,
             "onsite_amplitude": {
               "imag": 0.0,
@@ -581,8 +1010,8 @@
               "imag": 0.15452805989245166,
               "real": 0.26759261677573165
             },
-            "coherent_detector_weight": 0.0954847298470087,
-            "interference_cross_term": -5.551115123125783e-17,
+            "coherent_aggregate_weight": 0.0954847298470087,
+            "interference_cross_term": -5.551115123125783E-17,
             "law_applications_not_time": 2,
             "onsite_amplitude": {
               "imag": 0.21853567806710708,
@@ -599,8 +1028,8 @@
               "imag": 0.15452805989245158,
               "real": 0.26759261677573154
             },
-            "coherent_detector_weight": 0.0954847298470086,
-            "interference_cross_term": -2.7755575615628914e-17,
+            "coherent_aggregate_weight": 0.0954847298470086,
+            "interference_cross_term": -2.7755575615628914E-17,
             "law_applications_not_time": 3,
             "onsite_amplitude": {
               "imag": 0.0,
@@ -617,7 +1046,7 @@
               "imag": 0.40001060620797935,
               "real": 0.3221523073339577
             },
-            "coherent_detector_weight": 0.2637905941994678,
+            "coherent_aggregate_weight": 0.2637905941994678,
             "interference_cross_term": 0.0,
             "law_applications_not_time": 4,
             "onsite_amplitude": {
@@ -635,8 +1064,8 @@
               "imag": 0.400010606207979,
               "real": 0.3221523073339575
             },
-            "coherent_detector_weight": 0.2637905941994675,
-            "interference_cross_term": -1.6653345369377348e-16,
+            "coherent_aggregate_weight": 0.2637905941994675,
+            "interference_cross_term": -1.6653345369377348E-16,
             "law_applications_not_time": 5,
             "onsite_amplitude": {
               "imag": 0.0,
@@ -653,8 +1082,8 @@
               "imag": 0.3627330597032465,
               "real": 0.044843474833395236
             },
-            "coherent_detector_weight": 0.1335862098368123,
-            "interference_cross_term": -2.7755575615628914e-17,
+            "coherent_aggregate_weight": 0.1335862098368123,
+            "interference_cross_term": -2.7755575615628914E-17,
             "law_applications_not_time": 6,
             "onsite_amplitude": {
               "imag": 0.5129820125534208,
@@ -678,8 +1107,8 @@
               "imag": 0.0,
               "real": 0.7071067811865474
             },
-            "coherent_detector_weight": 0.4999999999999998,
-            "interference_cross_term": 1.1102230246251565e-16,
+            "coherent_aggregate_weight": 0.4999999999999998,
+            "interference_cross_term": 1.1102230246251565E-16,
             "law_applications_not_time": 1,
             "onsite_amplitude": {
               "imag": 0.0,
@@ -696,8 +1125,8 @@
               "imag": 0.15452805989245166,
               "real": 0.26759261677573165
             },
-            "coherent_detector_weight": 0.0954847298470087,
-            "interference_cross_term": -5.551115123125783e-17,
+            "coherent_aggregate_weight": 0.0954847298470087,
+            "interference_cross_term": -5.551115123125783E-17,
             "law_applications_not_time": 2,
             "onsite_amplitude": {
               "imag": 0.21853567806710708,
@@ -714,8 +1143,8 @@
               "imag": 0.15452805989245158,
               "real": 0.26759261677573154
             },
-            "coherent_detector_weight": 0.0954847298470086,
-            "interference_cross_term": -2.7755575615628914e-17,
+            "coherent_aggregate_weight": 0.0954847298470086,
+            "interference_cross_term": -2.7755575615628914E-17,
             "law_applications_not_time": 3,
             "onsite_amplitude": {
               "imag": 0.0,
@@ -732,8 +1161,8 @@
               "imag": 0.40603931592398157,
               "real": 0.2739531684546749
             },
-            "coherent_detector_weight": 0.23991826458237037,
-            "interference_cross_term": 2.7755575615628914e-17,
+            "coherent_aggregate_weight": 0.23991826458237037,
+            "interference_cross_term": 2.7755575615628914E-17,
             "law_applications_not_time": 4,
             "onsite_amplitude": {
               "imag": 0.5742263074363885,
@@ -750,8 +1179,8 @@
               "imag": 0.40603931592398135,
               "real": 0.27395316845467466
             },
-            "coherent_detector_weight": 0.23991826458237003,
-            "interference_cross_term": -1.3877787807814457e-16,
+            "coherent_aggregate_weight": 0.23991826458237003,
+            "interference_cross_term": -1.3877787807814457E-16,
             "law_applications_not_time": 5,
             "onsite_amplitude": {
               "imag": 0.0,
@@ -768,8 +1197,8 @@
               "imag": 0.38160988313952837,
               "real": 0.05792868149691624
             },
-            "coherent_detector_weight": 0.14898183504973567,
-            "interference_cross_term": -2.7755575615628914e-17,
+            "coherent_aggregate_weight": 0.14898183504973567,
+            "interference_cross_term": -2.7755575615628914E-17,
             "law_applications_not_time": 6,
             "onsite_amplitude": {
               "imag": 0.539677872271533,
@@ -783,73 +1212,83 @@
           }
         ]
       }
-    ],
-    "strict_physical_coherent_detector_closed": false
+    ]
   },
   "route_B": {
     "actual_occurrence_Record_and_proper_time_open": true,
+    "algebraic_channel_pointer_input_supplied": true,
+    "algebraic_matter_role_and_occupied_binder_role_supplied": true,
     "association_word": "CNOT(p0,certificate); CNOT(p1,certificate); TOFFOLI(certificate,binder,opportunity); Cycle570 rotor",
     "candidate_opportunity_called_event_or_Record": false,
-    "candidate_opportunity_is_coherent": true,
+    "candidate_opportunity_has_reversible_linear_extension": true,
     "deletion_controls": {
       "delete_binder_Toffoli_missed": 1,
       "delete_p1_certificate_CNOT_missed": 1,
       "dirty_certificate_with_pointers_00_extra": 1
     },
-    "frame_products": 576,
+    "executed_layer": "reversible Boolean channel/binder/certificate association on finite prefixes",
+    "interpretation": "coherent-candidate role association by reversible linear-extension algebra; not an Event, Record, detector or clock",
     "lawful_truth_failures": 0,
-    "material_detector_state_and_occupied_binder_supplied": true,
+    "malformed_role_rejections": 3,
     "new_elementary_gate_counts_per_encounter": {
-      "CNOT": 2,
-      "NN_route_return_SWAPs": 6,
-      "TOFFOLI": 1,
-      "Toffoli_as_one_two_M2_gates": 15,
-      "installed_serial_total": 23,
-      "new_total_before_NN_routing": 17
+      "declared_role_line_route_return_SWAPS": 6,
+      "logical_CNOT": 2,
+      "logical_TOFFOLI": 1
     },
     "pass": true,
-    "physical_detector_pointer_input_supplied": true,
+    "physical_EG": null,
+    "physical_leakage": null,
+    "physical_locally_enforced_constraints": null,
+    "physical_placement": null,
+    "physical_primitive_product": null,
     "pointer_binder_to_opportunity_map_derived": true,
-    "proper_cubic_frames": 24,
+    "proper_cubic_covariance_executed_here": false,
+    "proper_cubic_frames_checked_here": 0,
+    "route_disposition": "positive finite reversible candidate-association algebra only",
     "rows": {
       "1": {
-        "certified_detector_encounters_not_time": 1,
+        "candidate_association_count_not_time": 1,
         "identity_and_predecessor_inherited_from_Cycle570": true,
         "inverse_exact": true,
         "rollover": 0,
         "rotor_count_not_time": 1,
+        "split": "train",
         "terminal_certificate_matches_pointer_XOR": true
       },
       "2": {
-        "certified_detector_encounters_not_time": 2,
+        "candidate_association_count_not_time": 2,
         "identity_and_predecessor_inherited_from_Cycle570": true,
         "inverse_exact": true,
         "rollover": 0,
         "rotor_count_not_time": 2,
+        "split": "train",
         "terminal_certificate_matches_pointer_XOR": true
       },
       "4": {
-        "certified_detector_encounters_not_time": 4,
+        "candidate_association_count_not_time": 4,
         "identity_and_predecessor_inherited_from_Cycle570": true,
         "inverse_exact": true,
         "rollover": 1,
         "rotor_count_not_time": 4,
+        "split": "train",
         "terminal_certificate_matches_pointer_XOR": true
       },
       "5": {
-        "certified_detector_encounters_not_time": 5,
+        "candidate_association_count_not_time": 5,
         "identity_and_predecessor_inherited_from_Cycle570": true,
         "inverse_exact": true,
         "rollover": 1,
         "rotor_count_not_time": 5,
+        "split": "train",
         "terminal_certificate_matches_pointer_XOR": true
       },
       "8": {
-        "certified_detector_encounters_not_time": 8,
+        "candidate_association_count_not_time": 8,
         "identity_and_predecessor_inherited_from_Cycle570": true,
         "inverse_exact": true,
         "rollover": 2,
         "rotor_count_not_time": 8,
+        "split": "held",
         "terminal_certificate_matches_pointer_XOR": true
       }
     },
@@ -925,24 +1364,16 @@
     "all576_direction_group_failures": 0,
     "controlled_free_update_compiled": false,
     "counts": {
-      "NN_route_return_SWAPs": 680,
       "controlled_pair_phase_macros": 15,
+      "declared_line_route_return_SWAPS": 680,
       "elementary_total_per_cell": 935,
-      "held_L6_cells": 216,
-      "held_elementary_total": 201960,
-      "installed_two_M2_gates": 830,
       "logical_CNOT": 150,
-      "one_M2_phase_gates": 105,
+      "logical_two_role_operations_with_routes": 830,
+      "one_role_phase_operations": 105,
       "serial_depth_per_cell": 935
     },
     "covariance_reason": "all 15 unordered direction pairs are included and scalar selector is frame-fixed",
-    "deleted_one_contact_pair_signal": 0.36789306705608243,
-    "direct_sum_reference_independent_genesis_supplied": true,
-    "frame_products": 576,
-    "full_path_echo_strict_physical_closed": false,
-    "inverse": "reverse the same route-return word and negate all phase angles",
-    "lawful_executed_matter_domain": "same complete global N<=3 code as Cycle590; no N4 fixture",
-    "literal_local_NN_line": [
+    "declared_algebraic_role_line": [
       "selector",
       "q0",
       "q1",
@@ -951,45 +1382,102 @@
       "q4",
       "q5"
     ],
+    "deleted_one_contact_pair_signal": 0.36789306705608243,
+    "direct_sum_reference_independent_genesis_supplied": true,
+    "executed_layer": "seven-role Boolean phase-polynomial contact-control algebra",
+    "frame_products": 576,
+    "full_contact_on_off_echo_composed": false,
+    "interpretation": "controlled-contact component for an echo candidate; not a physical echo device",
+    "inverse": "reverse the same route-return word and negate all phase angles",
+    "lawful_executed_matter_domain": "same complete global N<=3 code as Cycle590; no N4 fixture",
     "pass": true,
     "phase_polynomial": "xyz=(x+y+z-(x XOR y)-(x XOR z)-(y XOR z)+(x XOR y XOR z))/4",
+    "physical_EG": null,
+    "physical_leakage": null,
+    "physical_locally_enforced_constraints": null,
+    "physical_placement": null,
+    "physical_primitive_product": null,
     "proper_cubic_frames": 24,
-    "selector_M2_per_cell": 1,
+    "route_disposition": "positive controlled-contact algebra only; controlled free branch and full echo remain open",
     "selector_checks_preserved_not_enforced": true,
     "selector_equality_checks_per_cell": 3,
     "selector_field_genesis_supplied": true,
-    "truth_table_maximum_residual_N0_through_N6": 7.108895957933346e-16
+    "selector_role_bits_per_cell": 1,
+    "truth_table_maximum_residual_N0_through_N6": 7.108895957933346E-16
   },
-  "runner_sha256": "201461575d99bb54c6c68a0293064885f05cf016eae9f77ec8dd4b360d8eaf82",
+  "runner_sha256": "fe00d384ff64823017a6c746b3ed46fde1986b46dbe1b9f7514bd857141e2bda",
   "shared_obstruction": false,
   "shore": {
-    "Cycle602_pass": true,
-    "expected": {
-      "docs/work_history/repo/review_feedback/PHYSICAL_TRANSPORTED_OBSERVABLE_RAMSEY_ECHO_EVENT_ROTOR_TOURNAMENT_CYCLE602_NOTE_2026-07-22.md": "06bb25903cca7004ed47bade96a21a135467a4b0ab4ee6214fa22dd4ef7698fe",
-      "outputs/physical_transported_observable_ramsey_echo_event_rotor_tournament_cycle602_receipt_2026_07_22.json": "dfab872f4f6aff8c27fa71d70a2b85975e769c8eac8850b1d0aac85f6b9ab5d4",
-      "scripts/physical_transported_observable_ramsey_echo_event_rotor_tournament_cycle602_2026_07_22.py": "a56a4521acaba5263549f0a83d79dce39ddcd71a37d5a4f2c83e260f49def6c5"
+    "causal_time_comparison": {
+      "Cycle610": "later proper-cubic compiler work; no retroactive physical-M2 credit for Cycle605",
+      "Cycle611": "later matter/source response work; no Cycle605 source-response law",
+      "Cycle612_3_to_4_delay": "rate-compatible association only; not implemented here",
+      "Cycle612_5_to_4_advance": "requires a distinct count/Event edit; not implemented here",
+      "back_credit_to_Cycle605": false,
+      "executed_by_Cycle605": false,
+      "proper_time_or_lapse_implemented": false,
+      "runtime_imported_or_pinned": false,
+      "source": "PR #5557 Cycles610-612 comparison surface only"
     },
+    "exact_pinned_surfaces": 11,
+    "expected_runtime_dependency_manifest_sha256": "a690df164b560d57758cb523cf0844d035366edf3c531925e9921e206fb02c35",
     "observed": {
-      "docs/work_history/repo/review_feedback/PHYSICAL_TRANSPORTED_OBSERVABLE_RAMSEY_ECHO_EVENT_ROTOR_TOURNAMENT_CYCLE602_NOTE_2026-07-22.md": "06bb25903cca7004ed47bade96a21a135467a4b0ab4ee6214fa22dd4ef7698fe",
-      "outputs/physical_transported_observable_ramsey_echo_event_rotor_tournament_cycle602_receipt_2026_07_22.json": "dfab872f4f6aff8c27fa71d70a2b85975e769c8eac8850b1d0aac85f6b9ab5d4",
-      "scripts/physical_transported_observable_ramsey_echo_event_rotor_tournament_cycle602_2026_07_22.py": "a56a4521acaba5263549f0a83d79dce39ddcd71a37d5a4f2c83e260f49def6c5"
+      "docs/work_history/repo/review_feedback/PHYSICAL_CONTACT_DIMER_INFINITE_INTERNAL_CONTENT_TOURNAMENT_CYCLE583_NOTE_2026-07-22.md": "6942341fa2fc8978a25acdd758677b04a5a1d0c9e13b8e5627bc9bf504814cf3",
+      "docs/work_history/repo/review_feedback/PHYSICAL_JOINT_CLOCK_ACCUMULATOR_CONTRACTION_BRIDGE_CYCLE570_NOTE_2026-07-22.md": "e88ee3daee2e07f215142d29cee7e6e5d3564bf5f92764aca49e89fe8f065438",
+      "docs/work_history/repo/review_feedback/PHYSICAL_TRANSPORTED_OBSERVABLE_RAMSEY_ECHO_EVENT_ROTOR_TOURNAMENT_CYCLE602_NOTE_2026-07-22.md": "c5971546e74165b98349791e0bcbbc910f40441855aa1181a2f14231cc674e37",
+      "outputs/physical_contact_dimer_infinite_internal_content_tournament_cycle583_cold_2026_07_22.txt": "22af96509364601a99c3ed2d6b148643ede02369f70e5be92629d1f0e5d3ddce",
+      "outputs/physical_contact_dimer_infinite_internal_content_tournament_cycle583_receipt_2026_07_22.json": "0f4e2df9e25cdc7137c42fb91666c5eaae10efc652d5af84f421e38c5ad97aab",
+      "outputs/physical_joint_clock_accumulator_contraction_bridge_cycle570_receipt_2026_07_22.json": "f9295faa4230427623ac350625a42fb17949fd86f523b6cf81aa247c14dd796c",
+      "outputs/physical_transported_observable_ramsey_echo_event_rotor_tournament_cycle602_cold_2026_07_22.txt": "333c7a5003c74f7e730a3b88ef573f6cd29b11885e17c2f8b97bc6f3ef78b458",
+      "outputs/physical_transported_observable_ramsey_echo_event_rotor_tournament_cycle602_receipt_2026_07_22.json": "db970ce03b88fdd7d6aa29bef2fd41c8df290b957c91181aec3f24e61e4f43b3",
+      "scripts/physical_contact_dimer_infinite_internal_content_tournament_cycle583_2026_07_22.py": "21957cc883550ee81fc48d5b55ad4a0384cbac8697557691c805d84c7c8dbaaf",
+      "scripts/physical_joint_clock_accumulator_contraction_bridge_cycle570_2026_07_22.py": "37e9d0f336d773bd4a1957a6531f80dc35b9673a4ef0f99137e7fb33558bf849",
+      "scripts/physical_transported_observable_ramsey_echo_event_rotor_tournament_cycle602_2026_07_22.py": "4b751525cd5918abbcc2ca47b71dba4bd3b2e9d2fbfd74deed0f932a8d75a137"
     },
-    "retained_physical_fixtures": {
+    "receipt_checks": {
+      "Cycle570": {
+        "authority_audit": true,
+        "note_bound": true,
+        "pass": true,
+        "runner_bound": true
+      },
+      "Cycle583": {
+        "authority_audit": true,
+        "note_bound": true,
+        "pass": true,
+        "runner_bound": true
+      },
+      "Cycle602": {
+        "author_not_accepted": true,
+        "authority_audit": true,
+        "cold_bound": true,
+        "no_go_FAIL": true,
+        "note_bound": true,
+        "pass": true,
+        "runner_bound": true
+      }
+    },
+    "retained_coarse_fixtures": {
       "Cycle230_contact_factorization_residual": 0.0,
       "Cycle230_held_seam_translation_residual": 0.0,
-      "one_particle_mass_residual": 1.1102230246251565e-16
-    }
+      "one_particle_mass_residual": 1.1102230246251565E-16
+    },
+    "runtime_dependency_count": 234,
+    "runtime_dependency_hash_mismatches": [],
+    "runtime_dependency_manifest_sha256": "a690df164b560d57758cb523cf0844d035366edf3c531925e9921e206fb02c35"
   },
   "six_wall_ledger": {
-    "C_int": "selector-controlled onsite contact now has an exact N4-free 1/2-M2 phase circuit; controlled free update and branch genesis remain open",
-    "C_local": "A2 decoded predicate and controlled contact have literal NN schedules; physical W readout routing and controlled-G keep the coherent detector open",
-    "C_num": "L3/L6 plus held-out L4 separate coherent aggregate from which-channel populations; no arbitrary-size or empirical-unit theorem",
-    "C_ref": "coherent d preparation identity is exact algebraically; physical controlled-G, code-compatible predicate, and grade pulse remain explicit",
-    "C_source": "no source-conditioned detector response, lapse, redshift, backreaction, or gravity law is derived",
-    "C_wrap": "detector/binder gates derive a coherent candidate opportunity and drive exact rollover; occurrence, Record, calibration, and proper time remain open"
+    "C_int": "selector-controlled onsite contact has exact phase-polynomial algebra; controlled free update, full echo and physical primitive product remain open",
+    "C_local": "eight adjacent-mode Givens, membership roles and controlled contact have bounded algebraic descriptions; every physical E/G, placement, primitive-product, leakage and local-constraint field is null",
+    "C_num": "L3/L6 plus held-out L4 separate coherent aggregate from which-channel populations; no empirical unit, probability, or arbitrary-size theorem",
+    "C_ref": "coherent aggregate preparation identity and contact-off reference roles are exact algebraically; physical reference/preparation genesis remains open",
+    "C_source": "no source-conditioned aggregate response, lapse, redshift, backreaction or gravity law is derived",
+    "C_wrap": "reversible role algebra derives a coherent candidate association and finite rollover; Event/Record actuality, calibration and proper time remain open"
   },
   "slater_mesh": {
-    "adjacent_number_preserving_Givens": 8,
+    "adjacent_mode_number_preserving_Givens": 8,
+    "algebraic_diagonal_minus_signs": 0,
+    "executed_layer": "six-mode algebraic orbital basis and wedge-two Slater preparation",
     "first_orbital": [
       0.0,
       0.0,
@@ -998,15 +1486,20 @@
       0.4999999999999999,
       0.4999999999999999
     ],
+    "interpretation": "exact algebraic preparation identity; not a physical M2 preparation device",
     "mesh_digest": "5c2cdae94d6aa0efbb3979b7af792f9818dbe6e24e13b6102a6aa91f149ef542",
-    "one_M2_diagonal_minus_signs": 0,
     "pass": true,
+    "physical_EG": null,
+    "physical_leakage": null,
+    "physical_locally_enforced_constraints": null,
+    "physical_placement": null,
+    "physical_primitive_product": null,
     "residuals": {
-      "Slater_reconstruction": 5.4672143489065705e-16,
+      "Slater_reconstruction": 5.4672143489065705E-16,
       "antisymmetric_rank": 2,
-      "mesh_matrix": 6.442343541099382e-16,
-      "orthogonality": 7.987089712905829e-16,
-      "wedge_A2": 3.8659043403122315e-16
+      "mesh_matrix": 6.442343541099382E-16,
+      "orthogonality": 7.987089712905829E-16,
+      "wedge_A2": 3.8659043403122315E-16
     },
     "second_orbital": [
       0.5773502691896258,
@@ -1019,5 +1512,11 @@
   },
   "status": "PASS",
   "tests_failed": 0,
-  "tests_passed": 9
+  "tests_passed": 10,
+  "tests_total": 10,
+  "cold_transcript_sha256": "4498f865b0b71a72766aa14253f13981f5a137ed5ddd2572a613f3521a83b9ae",
+  "external_timed_wall_seconds": 211.33,
+  "external_maximum_RSS_bytes": 877264896,
+  "external_peak_memory_footprint_bytes": 1392035328,
+  "receipt_scope": "Cycle605 narrowed algebraic Slater/interference/candidate-association/controlled-contact result; no physical-M2 detector/readout or full echo"
 }

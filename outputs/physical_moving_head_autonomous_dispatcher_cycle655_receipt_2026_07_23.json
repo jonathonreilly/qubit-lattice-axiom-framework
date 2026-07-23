@@ -1,0 +1,650 @@
+{
+  "Status": "PASS",
+  "audit": "unset",
+  "author_accepted": false,
+  "author_artifact_status_accepted": false,
+  "authority": "none",
+  "autonomous_local_dispatch_kernel_pass": true,
+  "autonomous_token_conditioned_global_dispatch_pass": false,
+  "axiom_pressure": false,
+  "axiom_pressure_gate": "FAIL / DO NOT SHIP",
+  "axiom_pressure_shipped": false,
+  "breakthrough": false,
+  "broad_negative_gate": "FAIL / DO NOT SHIP",
+  "broad_negative_shipped": false,
+  "classification": "bounded exact moving-head/QCA/staggered dispatcher kernels with one named global embedding interface",
+  "constitutional_effect": "none",
+  "cycle": 655,
+  "date": "2026-07-23",
+  "exact_local_kernel": {
+    "Cycle631_exact_Toffoli_primitive_count": 27,
+    "all_eight_clean_scratch_columns": true,
+    "core_delete_one_primitive_residuals": {
+      "CCX": 2.82842712474619,
+      "CCY": 2.82842712474619,
+      "CCZ": 2.8284271247461894,
+      "FREDKIN": 2.82842712474619
+    },
+    "core_exact_residuals": {
+      "CCX": 7.180046919090306e-16,
+      "CCY": 7.614188330092645e-16,
+      "CCZ": 1.1656885095924974e-15,
+      "FREDKIN": 7.180046919090306e-16
+    },
+    "core_primitive_counts": {
+      "CCX": 27,
+      "CCY": 31,
+      "CCZ": 29,
+      "FREDKIN": 29
+    },
+    "gated_all_sixteen_token_opcode_probe_target_columns": true,
+    "gated_delete_uncompute_primitive_residuals": {
+      "FREDKIN": 3.0614674589207174,
+      "controlled_X": 3.0614674589207174,
+      "controlled_Y": 3.0614674589207174,
+      "controlled_Z": 3.061467458920717
+    },
+    "gated_exact_residuals": {
+      "FREDKIN": 2.2809888589187985e-15,
+      "controlled_X": 2.2809888589187985e-15,
+      "controlled_Y": 2.648215548225603e-15,
+      "controlled_Z": 3.0735541546319207e-15
+    },
+    "parity_and_enable_scratch_return_clean": true,
+    "pass": true
+  },
+  "exact_target_contract": {
+    "allowed_premises": "immutable Cycle652/Cycle638/Cycle631 resources, state-carried proper-cubic frame, static program opcodes, and explicitly supplied clean parity/routing work",
+    "completion_witness": "literal collision-free global program/head/operand embedding plus a repeated local rule whose executed digest equals every Cycle652 fixed word and whose inverse returns head, counters, token, route stack, enable, probe, and parity scratch",
+    "does_not_count": "exact local macro, abstract head recurrence, colour schedule, or raw capacity without the global embedding and no-host trace",
+    "forbidden_weakenings": "no host-selected gate/site, nonlocal parity service, preferred global ordering, hidden route query, refit, blank renewal, repair, E, preparation, occurrence, Record, time, rate, energy, source, gravity, full-compiler, or axiom promotion",
+    "quantifiers_domain": "L3/L6/L7; token sectors including malformed states; every local opcode/microphase/check-counter sector; ordinary translations; all24 proper-cubic frames and all576 ordered products",
+    "target": "replace host iteration of the immutable Cycle652 fixed support-one/fine-NN-support-two word by one recurrent state-conditioned local physical update over a placed instruction/head/operand substrate"
+  },
+  "full_physical_oracle_compiler_pass": false,
+  "inherited_pins_and_capacity_discriminator": {
+    "Cycle652_lawful_auxiliary_slice_leakage_norm": 0.0,
+    "Cycle652_status": "PASS",
+    "Cycle652_tests": 17,
+    "conditional_act_calls": 769434,
+    "descriptor_word_sha256": "9760bc3163efa2f118cd48bcb4fada97b34167ea46374d523f1fd227c9abcd7b",
+    "factor_call_population": {
+      "factor_0_coin": 87360,
+      "factor_1_stream": 677124,
+      "factor_2_contact": 4950
+    },
+    "mass_contact_seam_pin_scope": "the inherited exact coin/stream/contact call word and Cycle652 fixed physical words are byte pinned; Cycle655 executes no new one-particle mass, contact, or seam fixture",
+    "parameter_word_sha256": "f2a63fc91e25d9287c0e1d740e2cdf1809d085469417c2ea68a91bd95f865b73",
+    "pass": true,
+    "systems": [
+      {
+        "Cycle652_Pauli_histogram": {
+          "X": 258,
+          "Y": 9,
+          "Z": 128
+        },
+        "Cycle652_capacity_margin_M2": 55985196,
+        "Cycle652_checks": 132,
+        "Cycle652_fixed_word_gate_count": 1166120,
+        "Cycle652_fixed_word_sha256": "fe80668b079120963371b6ef02e0322772ff22d0bd1fc9ed242f91463ebc6ba5",
+        "candidate_125_M2_tiles": 6264875,
+        "candidate_controller_cells": 50119,
+        "injective_global_placement_witness": false,
+        "length": 3,
+        "raw_capacity_discriminator_pass": true
+      },
+      {
+        "Cycle652_Pauli_histogram": {
+          "X": 516,
+          "Y": 18,
+          "Z": 251
+        },
+        "Cycle652_capacity_margin_M2": 461394075,
+        "Cycle652_checks": 261,
+        "Cycle652_fixed_word_gate_count": 6467943,
+        "Cycle652_fixed_word_sha256": "38da92dbb0e82755a4672041398b298dfd3c50cde0f8ea6afa300a772a8b574b",
+        "candidate_125_M2_tiles": 43611875,
+        "candidate_controller_cells": 348895,
+        "injective_global_placement_witness": false,
+        "length": 6,
+        "raw_capacity_discriminator_pass": true
+      },
+      {
+        "Cycle652_Pauli_histogram": {
+          "X": 426,
+          "Y": 21,
+          "Z": 260
+        },
+        "Cycle652_capacity_margin_M2": 733822016,
+        "Cycle652_checks": 216,
+        "Cycle652_fixed_word_gate_count": 7849620,
+        "Cycle652_fixed_word_sha256": "620d179dd28eb47a13e83059c9bc1c8aca5c64657e9c0d49615cb182a374126a",
+        "candidate_125_M2_tiles": 68192875,
+        "candidate_controller_cells": 545543,
+        "injective_global_placement_witness": false,
+        "length": 7,
+        "raw_capacity_discriminator_pass": true
+      }
+    ]
+  },
+  "maturity_0_to_5": {
+    "Born_and_probability": 1,
+    "causal_time": 1,
+    "gravity_and_source": 1,
+    "inertia_and_matter": 1,
+    "operational_quantum_and_records": 2
+  },
+  "minimum_content_gate": "FAIL / DO NOT SHIP",
+  "minimum_content_shipped": false,
+  "no_go_discipline": {
+    "N1_negative_gate": "FAIL / DO NOT SHIP",
+    "N1_normalized_families": [
+      {
+        "family": "moving-head program/storage rail",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism": "state-carried opcode microphase, terminal Fredkin, adjacent-cell counter transition",
+        "object": "static instruction cells plus one-hot mobile head",
+        "result": "local recurrence exact; global rail placement and operand coupling unmaterialized",
+        "strength_vs_target": "target-equivalent",
+        "terminal": "global Cycle652 word traversed with no host-selected gate/site"
+      },
+      {
+        "family": "static bounded QCA transition tile",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism": "Cycle631 Toffoli, Fredkin, CCX/CCY/CCZ and fine-NN open/apply/reverse routing",
+        "object": "token/opcode/enable/probe/target/four-scratch 5-cube",
+        "result": "bounded tile exact; injective global tiling unmaterialized",
+        "strength_vs_target": "target-equivalent",
+        "terminal": "one repeated physical local rule over the occupied Cycle652 graph"
+      },
+      {
+        "family": "staggered state-carried colour dispatcher",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism": "three residues per axis form matchings; translations and signed permutations act on colours",
+        "object": "nine NN edge colours and frame/phase state",
+        "result": "ordinary translations/all24/all576 exact; instruction cells still unplaced",
+        "strength_vs_target": "target-equivalent",
+        "terminal": "no host-selected edge layer or site"
+      },
+      {
+        "family": "nested stored-program decoder adapter",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism": "reuse exact counters/decoder and attach the bounded macro library",
+        "object": "immutable Cycle638 200-opcode grammar and Cycle652 fixed word",
+        "result": "byte pins and opcode-family coverage positive; adapter placement unmaterialized",
+        "strength_vs_target": "target-equivalent",
+        "terminal": "literal physical adapter from every stored action record to a local tile"
+      },
+      {
+        "family": "flat replicated controller-tile budget",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism": "compare explicit constant tile budget with immutable free-capacity margin",
+        "object": "one candidate 125-M2 tile per Cycle652 backbone/finger controller vertex",
+        "result": "raw L3/L6/L7 capacity positive; capacity is not an embedding",
+        "strength_vs_target": "weaker discriminator",
+        "terminal": "collision-free injective placement with local operand access"
+      }
+    ],
+    "N1_open_routes_not_counted": [
+      {
+        "family": "distributed packet/tree controller",
+        "status": "OPEN / NOT COUNTED"
+      },
+      {
+        "family": "topological program fibre",
+        "status": "OPEN / NOT COUNTED"
+      }
+    ],
+    "N1_qualifying_attempts": 5,
+    "N1_required_for_negative": 5,
+    "N2_collapsed_walls": {
+      "W_blank_renewal": "the clean outer-shell/routing blanks remain supplied rather than locally generated or renewed",
+      "W_global_controller_embedding": "no injective placement couples each stored opcode/head tile to its Cycle652 routed operand while preserving occupied roles",
+      "W_static_enforcement_or_repair": "the circuit dispatcher is not a static constraint/enforcement or autonomous malformed-sector repair law"
+    },
+    "N2_directed_ordered_pairs": [
+      {
+        "from": "W_global_controller_embedding",
+        "implied": false,
+        "reason": "closing W_global_controller_embedding does not construct W_blank_renewal",
+        "to": "W_blank_renewal"
+      },
+      {
+        "from": "W_global_controller_embedding",
+        "implied": false,
+        "reason": "closing W_global_controller_embedding does not construct W_static_enforcement_or_repair",
+        "to": "W_static_enforcement_or_repair"
+      },
+      {
+        "from": "W_blank_renewal",
+        "implied": false,
+        "reason": "closing W_blank_renewal does not construct W_global_controller_embedding",
+        "to": "W_global_controller_embedding"
+      },
+      {
+        "from": "W_blank_renewal",
+        "implied": false,
+        "reason": "closing W_blank_renewal does not construct W_static_enforcement_or_repair",
+        "to": "W_static_enforcement_or_repair"
+      },
+      {
+        "from": "W_static_enforcement_or_repair",
+        "implied": false,
+        "reason": "closing W_static_enforcement_or_repair does not construct W_global_controller_embedding",
+        "to": "W_global_controller_embedding"
+      },
+      {
+        "from": "W_static_enforcement_or_repair",
+        "implied": false,
+        "reason": "closing W_static_enforcement_or_repair does not construct W_blank_renewal",
+        "to": "W_blank_renewal"
+      }
+    ],
+    "N3_hidden_wall_scan": [
+      {
+        "classification": "explicit program-cell state, not a host gate choice",
+        "phrase": "static opcode",
+        "wall": "W_global_controller_embedding"
+      },
+      {
+        "classification": "explicit nine-sector field, not schedule time or rate",
+        "phrase": "state-carried phase",
+        "wall": null
+      },
+      {
+        "classification": "necessary discriminator only, not placement",
+        "phrase": "raw capacity",
+        "wall": "W_global_controller_embedding"
+      },
+      {
+        "classification": "explicit supplied blank resource",
+        "phrase": "clean parity/routing scratch",
+        "wall": "W_blank_renewal"
+      }
+    ],
+    "N4_exact_residual_matches": [
+      {
+        "current_line": "def recurrence_audit",
+        "current_path": "scripts/physical_moving_head_autonomous_dispatcher_cycle655_2026_07_23.py",
+        "current_residual": "bounded local recurrence is exact but global program rail/operand coupling remains unembedded",
+        "exact_match": true,
+        "prior_line": "controller fixed-word result",
+        "prior_path": "outputs/physical_inherited_role_alias_repair_tournament_cycle652_receipt_2026_07_23.json",
+        "prior_ref": "d353925ca046702f1b0f50a41a6f8fa5a0ee3395",
+        "prior_residual": "autonomous_token_conditioned_gate_dispatch_law_executed=false",
+        "same_scope": true,
+        "use_as_closure": false
+      }
+    ],
+    "N5_rhetoric": [
+      {
+        "claim": "bounded local dispatcher kernel passes",
+        "lattice_wide": "no injective controller embedding claimed",
+        "per_block": "same tile for L3/L6/L7",
+        "per_element": "every core and opcode-gated truth-table column",
+        "per_mode": "X/Y/Z and Fredkin",
+        "per_site": "all routed support-two primitives are fine NN in one 5-cube"
+      },
+      {
+        "claim": "autonomous physical dispatch does not yet pass",
+        "lattice_wide": "host-selected Cycle652 event iteration is not replaced",
+        "per_block": "raw capacity only",
+        "per_element": "local opcode lookup is a finite transition table",
+        "per_mode": "all local Pauli families covered",
+        "per_site": "global active site remains unplaced"
+      }
+    ],
+    "N6_partial_closure_paths": [
+      {
+        "file": "UNMATERIALIZED/physical_injective_program_fibre_cycle_next.py",
+        "status": "OPEN / PRIORITY",
+        "what_closes": "W_global_controller_embedding with literal instruction/head/operand placement"
+      },
+      {
+        "file": "UNMATERIALIZED/physical_outer_shell_blank_renewal_cycle_next.py",
+        "status": "OPEN / SEPARATE",
+        "what_closes": "W_blank_renewal"
+      },
+      {
+        "file": "UNMATERIALIZED/physical_static_or_repair_law_cycle_next.py",
+        "status": "OPEN / SEPARATE",
+        "what_closes": "W_static_enforcement_or_repair"
+      }
+    ],
+    "N7_steelman": {
+      "actionable_steps": [
+        "stream a collision-free instruction-cell placement instead of storing it flat",
+        "route token/opcode/enable/parity roles to each occurrence",
+        "execute a full head round trip for L3/L6/L7",
+        "delete one cell and corrupt every token/opcode sector"
+      ],
+      "mechanism": "embed one static primitive-opcode cell beside each already enumerated Cycle652 gate occurrence, use the proven nine-colour matching rule to move a one-hot head, and couple each tile's probe/target ports to the existing route without overlap",
+      "terminal_test": "a literal repeated local rule traverses the immutable fixed-word digest, returns head/counters/scratch, and never receives a gate or site from Python",
+      "why_it_breaks_the_negative": "all required local quantum kernels, routes, counter transitions, and covariant edge layers now exist, so the remaining question is a concrete global embedding rather than a substrate obstruction"
+    },
+    "N8_cross_cycle_echo": [
+      {
+        "applicability": "used verbatim for all controlled local kernels",
+        "cycle": 631,
+        "mechanism": "exact 27-primitive clean-scratch Toffoli"
+      },
+      {
+        "applicability": "pins the instruction grammar but not Cycle655 cell placement",
+        "cycle": 638,
+        "mechanism": "nested program decoder and counters"
+      },
+      {
+        "applicability": "supplies route geometry and blanks, not renewal",
+        "cycle": 649,
+        "mechanism": "outer-shell backbone/fingers"
+      },
+      {
+        "applicability": "exact target word; host dispatch residual is narrowed, not closed",
+        "cycle": 652,
+        "mechanism": "literal support-one/two fixed word"
+      }
+    ],
+    "Status": "PASS_SCOPED_POSITIVE_LOCAL_KERNEL_AND_BOUNDED_GLOBAL_RESIDUAL",
+    "axiom_pressure": false,
+    "axiom_pressure_gate": "FAIL / DO NOT SHIP",
+    "axiom_pressure_shipped": false,
+    "broad_negative_gate": "FAIL / DO NOT SHIP",
+    "broad_negative_shipped": false,
+    "minimum_content_gate": "FAIL / DO NOT SHIP",
+    "minimum_content_shipped": false,
+    "pass": true,
+    "route_A_local_pass": true,
+    "route_B_local_pass": true,
+    "route_C_phase_pass": true,
+    "shared_obstruction_gate": "FAIL / DO NOT SHIP",
+    "shared_obstruction_shipped": false,
+    "shared_route_independent_obstruction": false
+  },
+  "optimal_next_campaign": "construct a streamed injective program-fibre placement for every Cycle652 primitive occurrence, couple each bounded tile to the already routed operands, and execute one full forward/inverse head circuit for L3/L6/L7 with no Python-supplied gate or site; keep blank renewal, static enforcement/repair, and E separate",
+  "pass": true,
+  "resources": {
+    "elapsed_seconds": 11.642821332905442,
+    "maximum_RSS_bytes": 388038656
+  },
+  "route_A_moving_head_program_rail": {
+    "every_token_check_counter_opcode_phase_sector_exhausted": true,
+    "global_program_rail_embedded": false,
+    "host_selected_gate_within_local_rule": false,
+    "host_selected_site_in_global_Cycle652_word_eliminated": false,
+    "inverse_failures": 0,
+    "local_transition_rule": "advance state-carried microphase; at the opcode terminal use Fredkin to move the one-hot head to the adjacent static instruction cell and increment the check counter; inverse restores both",
+    "macro_lengths": {
+      "CNOT": 1,
+      "FREDKIN": 83,
+      "H": 1,
+      "NOP": 1,
+      "SWAP": 1,
+      "T": 1,
+      "Tdg": 1,
+      "X": 1,
+      "Y": 1,
+      "Z": 1,
+      "controlled_X": 81,
+      "controlled_Y": 85,
+      "controlled_Z": 83
+    },
+    "malformed_accepts": 0,
+    "malformed_sector_tests": 39663,
+    "opcodes": [
+      "CNOT",
+      "FREDKIN",
+      "H",
+      "NOP",
+      "SWAP",
+      "T",
+      "Tdg",
+      "X",
+      "Y",
+      "Z",
+      "controlled_X",
+      "controlled_Y",
+      "controlled_Z"
+    ],
+    "pass_as_reversible_local_recurrence": true,
+    "sector_tests": 207669,
+    "state_fields": [
+      "one-hot token/head on adjacent program cells",
+      "static opcode",
+      "microphase",
+      "check counter",
+      "error bit",
+      "four clean parity scratch"
+    ],
+    "systems": [
+      {
+        "checks": 132,
+        "counter_forward_inverse_return": true,
+        "fixed_word_primitives": 1166120,
+        "head_terminal_moves_to_adjacent_program_cell": true,
+        "length": 3,
+        "opcode_phase_counter_sectors_exhausted": 45012,
+        "opcode_sectors": 13,
+        "token_sectors": [
+          "00 rejected",
+          "10 active",
+          "01 inverse-facing",
+          "11 rejected",
+          "nonbinary rejected"
+        ]
+      },
+      {
+        "checks": 261,
+        "counter_forward_inverse_return": true,
+        "fixed_word_primitives": 6467943,
+        "head_terminal_moves_to_adjacent_program_cell": true,
+        "length": 6,
+        "opcode_phase_counter_sectors_exhausted": 89001,
+        "opcode_sectors": 13,
+        "token_sectors": [
+          "00 rejected",
+          "10 active",
+          "01 inverse-facing",
+          "11 rejected",
+          "nonbinary rejected"
+        ]
+      },
+      {
+        "checks": 216,
+        "counter_forward_inverse_return": true,
+        "fixed_word_primitives": 7849620,
+        "head_terminal_moves_to_adjacent_program_cell": true,
+        "length": 7,
+        "opcode_phase_counter_sectors_exhausted": 73656,
+        "opcode_sectors": 13,
+        "token_sectors": [
+          "00 rejected",
+          "10 active",
+          "01 inverse-facing",
+          "11 rejected",
+          "nonbinary rejected"
+        ]
+      }
+    ],
+    "transition_failures": 0
+  },
+  "route_B_static_local_transition_tile": {
+    "all_support_two_steps_fine_NN": true,
+    "bounded_tile_M2": 125,
+    "delete_one_closing_swap_nonreturn": true,
+    "global_injective_tile_placement_executed": false,
+    "logical_roles": {
+      "0": [
+        1,
+        1,
+        1
+      ],
+      "1": [
+        3,
+        1,
+        1
+      ],
+      "2": [
+        2,
+        2,
+        2
+      ],
+      "3": [
+        1,
+        3,
+        1
+      ],
+      "4": [
+        3,
+        3,
+        1
+      ],
+      "5": [
+        1,
+        1,
+        3
+      ],
+      "6": [
+        3,
+        1,
+        3
+      ],
+      "7": [
+        1,
+        3,
+        3
+      ],
+      "8": [
+        3,
+        3,
+        3
+      ]
+    },
+    "maximum_open_route_edges": 5,
+    "pass_as_bounded_local_tile": true,
+    "physical_primitive_counts": {
+      "CNOT/support2": 219,
+      "H/support1": 27,
+      "SWAP/support2": 1,
+      "SWAP_route/support2": 1160,
+      "T/support1": 51,
+      "Tdg/support1": 39,
+      "X/support1": 1,
+      "Y/support1": 1,
+      "Z/support1": 1
+    },
+    "roles_named": [
+      "token",
+      "opcode",
+      "enable",
+      "probe_or_left",
+      "target_or_right",
+      "parity_scratch_0",
+      "parity_scratch_1",
+      "parity_scratch_2",
+      "parity_scratch_3"
+    ],
+    "route_return_failures": 0,
+    "routed_library_sha256": "71ce7034d4c8f9124ce230b1e29881312437e8586aedcc7e149cbf7fa4f28f7c",
+    "routed_two_site_primitives": 220,
+    "tile_shape": [
+      5,
+      5,
+      5
+    ]
+  },
+  "route_C_staggered_state_carried_phase": {
+    "all24_permutation_failures": 0,
+    "all576_composition_failures": 0,
+    "colour_classes": 9,
+    "colour_definition": "(positive-edge axis, positive-edge-origin coordinate mod 3)",
+    "each_colour_is_a_periodic_NN_matching": true,
+    "global_instruction_cells_placed": false,
+    "ordered_frame_products": 576,
+    "ordinary_translation_permutation_failures": 0,
+    "ordinary_translation_residue_representatives": 81,
+    "pass_as_state_carried_staggered_rule": true,
+    "phase_is_rate": false,
+    "phase_is_time": false,
+    "physical_sides": [
+      387,
+      774,
+      903
+    ],
+    "proper_cubic_frames": 24,
+    "rule": "advance the state-carried phase and apply only the matching edge rule; transform the phase with the frame/translation-induced colour permutation",
+    "state_carried_fields": [
+      "proper-cubic frame sector",
+      "nine-colour phase"
+    ]
+  },
+  "route_by_route_disposition": {
+    "A_moving_head": "PARTIAL_LOCAL_RECURRENCE_PASS_GLOBAL_PROGRAM_RAIL_AND_OPERAND_COUPLING_OPEN",
+    "B_static_QCA_tile": "PARTIAL_BOUNDED_TILE_PASS_GLOBAL_INJECTIVE_TILING_OPEN",
+    "C_staggered_colour": "PARTIAL_PHASE_RULE_PASS_GLOBAL_INSTRUCTION_CELL_PLACEMENT_OPEN"
+  },
+  "semantic_firewall": {
+    "gate_count_is_rate": false,
+    "local_kernel_is_full_compiler": false,
+    "phase_is_energy": false,
+    "phase_is_rate": false,
+    "phase_is_time": false,
+    "pointer_or_token_is_Record": false
+  },
+  "separate_unclosed_interfaces": {
+    "blank_renewal": "not attempted; supplied clean work remains explicit",
+    "dispatcher": "global injective controller/program/head/operand embedding",
+    "physical_E": "not attempted; no preparation or intertwiner claim",
+    "static_enforcement_or_repair": "not attempted; circuit dispatch is not enforcement/repair"
+  },
+  "shared_obstruction_gate": "FAIL / DO NOT SHIP",
+  "shared_obstruction_shipped": false,
+  "shared_route_independent_obstruction": false,
+  "shore": {
+    "archive_root": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle655-immutable-9amzg99n",
+    "freshness_check_origin_main_sha256": "1e0ec4ef4d7c5dd24243d7c3954c78a3f00ecd3d5e43805e788dd3629973a962",
+    "immutable_commit": "d353925ca046702f1b0f50a41a6f8fa5a0ee3395",
+    "no_go_skill_origin_main_sha256": "7d1aea8243ddd972331b935e2e836657e72115da3efe259f828fe862469d68b7",
+    "observed": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_INHERITED_ROLE_ALIAS_REPAIR_TOURNAMENT_CYCLE652_NOTE_2026-07-23.md": "f0d4b852205d76d17cc1e39ff1ff10ee5c978826f66c410691882a81b0251a7d",
+      "outputs/physical_inherited_role_alias_repair_tournament_cycle652_cold_2026_07_23.txt": "f18a69198636eda35186d713e0e63eb962d5761a6264c656673bb45066b151dd",
+      "outputs/physical_inherited_role_alias_repair_tournament_cycle652_receipt_2026_07_23.json": "56870b951b93c81125789041af6758196e588eeddf2cf7b0235e1f7fd5b03379",
+      "scripts/physical_inherited_role_alias_repair_tournament_cycle652_2026_07_23.py": "f8836934b210fa00ff7b828799388d72dbab8a627c47d7a97fe8e241a50eccdf"
+    },
+    "pins": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_INHERITED_ROLE_ALIAS_REPAIR_TOURNAMENT_CYCLE652_NOTE_2026-07-23.md": "f0d4b852205d76d17cc1e39ff1ff10ee5c978826f66c410691882a81b0251a7d",
+      "outputs/physical_inherited_role_alias_repair_tournament_cycle652_cold_2026_07_23.txt": "f18a69198636eda35186d713e0e63eb962d5761a6264c656673bb45066b151dd",
+      "outputs/physical_inherited_role_alias_repair_tournament_cycle652_receipt_2026_07_23.json": "56870b951b93c81125789041af6758196e588eeddf2cf7b0235e1f7fd5b03379",
+      "scripts/physical_inherited_role_alias_repair_tournament_cycle652_2026_07_23.py": "f8836934b210fa00ff7b828799388d72dbab8a627c47d7a97fe8e241a50eccdf"
+    },
+    "proof_search_governance_origin_main_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+    "working_tree_bytes_used_as_premise": false
+  },
+  "six_wall_ledger": {
+    "C_int": "immutable coin/stream/contact populations and fixed words are pinned; no new mass/contact/seam fixture, inertia law, or E-intertwiner is executed",
+    "C_local": "exact bounded Fredkin and controlled-X/Y/Z kernels plus a local colour rule now pass; injective instruction/head/operand tiling, blank renewal, static enforcement/repair, and E remain separate",
+    "C_num": "exact finite matrices, truth-table columns, counters, route stacks, digests, and deletion residuals only; no normalization/Born claim",
+    "C_ref": "nine-colour edge layers and the bounded tile are ordinary-translation/all24/all576 covariant; the active frame, macro origin, phase, and global controller placement remain supplied/open as declared",
+    "C_source": "unchanged; controller geometry, capacity, gate phase, and counters carry no gravity/source meaning",
+    "C_wrap": "local head/token/opcode/check-counter forward-inverse return passes; global traversal of each million-gate Cycle652 word without host gate/site dispatch remains open"
+  },
+  "status": "cycle655-exact-local-dispatch-kernels-positive-global-controller-embedding-open",
+  "strongest_constructive_result": "one bounded 5x5x5 M2 tile exactly realizes Fredkin and token+opcode+probe-controlled X/Y/Z using the immutable Cycle631 27-primitive clean-scratch Toffoli; every support-two primitive is fine-NN routed with inverse return, and an exact nine-colour state-carried matching rule is ordinary-translation/all24/all576 covariant",
+  "supplied_structure_inventory": {
+    "autonomous_blank_renewal": false,
+    "clean_enable_and_route_work": true,
+    "four_clean_parity_scratch": true,
+    "global_operand_coupling": false,
+    "global_program_rail_placement": false,
+    "immutable_Cycle652_fixed_words": true,
+    "one_hot_head_token": true,
+    "physical_E_or_preparation": false,
+    "raw_free_capacity_margin": true,
+    "state_carried_active_frame": true,
+    "state_carried_nine_colour_phase": true,
+    "static_enforcement_or_repair": false,
+    "static_program_opcode_bits": true
+  },
+  "tests_failed": 0,
+  "tests_passed": 10,
+  "tests_total": 10
+}

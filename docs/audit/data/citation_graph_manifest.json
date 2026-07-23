@@ -1,6 +1,6 @@
 {
  "edge_count": 14981,
- "node_count": 4466,
+ "node_count": 4467,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -10937,6 +10937,10 @@
   "propagator_family_unification_note": {
    "deps_hash": "475143577275",
    "out_degree": 5
+  },
+  "proper_cubic_scalar_even_antipodal_transition_lemma_note_2026-07-23": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "protocol_admissibility_3d_realization_bridge_and_word_dispersiveness_narrow_theorem_note_2026-07-10": {
    "deps_hash": "141f668125ad",

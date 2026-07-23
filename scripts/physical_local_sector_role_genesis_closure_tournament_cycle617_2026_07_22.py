@@ -13,12 +13,11 @@ from __future__ import annotations
 
 from collections import deque
 from hashlib import sha256
-from itertools import combinations
+from itertools import combinations, product
 import json
 import math
 from pathlib import Path
 import resource
-import subprocess
 import sys
 import time
 
@@ -34,6 +33,7 @@ import proper_cubic_bound_object_equivalence_cycle210_2026_07_16 as c210
 import rough_terminal_subsystem_gauge_factorization_cycle251_2026_07_17 as c251
 import spatial_car_contact_seam_form_factor_cycle230_2026_07_17 as c230
 import physical_proper_cubic_supercell_stream_composition_tournament_cycle610_2026_07_22 as c610
+import wilson_subsystem_sector_free_compiler_cycle269_2026_07_17 as c269
 
 
 NOTE = ROOT / (
@@ -58,13 +58,17 @@ FAIL = 0
 
 PINS = {
     "scripts/physical_proper_cubic_supercell_stream_composition_tournament_cycle610_2026_07_22.py":
-        "997234878a564cb8554ff5184888fe06b920db32bb54b5df6febfdc88a90e7de",
+        "ed2250711646ad99bf077e74b8e4194f2df0a2cf368d3c05c45ea95cac8083db",
     "docs/work_history/repo/review_feedback/PHYSICAL_PROPER_CUBIC_SUPERCELL_STREAM_COMPOSITION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md":
-        "6ee48e029ca6023e55cd834bd2ad2fcbb24275b48f9b25e1c03777e0d2c3d835",
+        "3768d2a1407bdc8de06e2a55fa18300469b1006c0a16a78ada8b8d3a4b936105",
     "outputs/physical_proper_cubic_supercell_stream_composition_tournament_cycle610_receipt_2026_07_22.json":
-        "51373236a754b8ea941514609251b6721578c1f4fdfaa443958b7e7c7fba1c63",
+        "375f843606a81970ae50f71d74c53f7e4c4d1437007daaecbedd0b19e3fdfa34",
     "outputs/physical_proper_cubic_supercell_stream_composition_tournament_cycle610_cold_2026_07_22.txt":
-        "e5602522dc73cf07cad7bf660a0cc44246fdd4de36be3ff76e618936e4d54bc2",
+        "0adbee38e398c9e1d1ccd2733454ead2669338b86d48cbefa5331abb78c126e8",
+    "scripts/wilson_subsystem_sector_free_compiler_cycle269_2026_07_17.py":
+        "c7b8673eb1a0dced08131820caa1fb2400fc8d1f73cfe2cddf5f8a28f9045d35",
+    "docs/work_history/repo/review_feedback/WILSON_SUBSYSTEM_SECTOR_FREE_COMPILER_CYCLE269_NOTE_2026-07-17.md":
+        "d5a39e45949cf079f6c37fa5646d00a9319d7d2776d84323d9adf1c086e06beb",
     "scripts/final_m64_physical_m2_compiler_tournament_synthesis_cycle276_2026_07_17.py":
         "a2cd1c68e24e2c87c3edd7b8c61a8d7165adecd4927ac812917f16a9b101e604",
     "docs/work_history/repo/review_feedback/FINAL_M64_PHYSICAL_M2_COMPILER_TOURNAMENT_SYNTHESIS_CYCLE276_NOTE_2026-07-17.md":
@@ -136,36 +140,217 @@ def gram_rank(paulis) -> int:
     return c251.c235.gf2_rank(rows)
 
 
+def cycle269_sector_reconciliation() -> dict:
+    """Reexecute the Cycle269 central-sector certificate at campaign sizes."""
+    rows = []
+    cache = {}
+    for length, split in ((3, "train"), (6, "held"), (7, "held-out-size")):
+        code = c269.build_code(length)
+        cache[length] = code
+        n = length**3
+        local_rank, local_bad = c269.c235.phase_aware_rank(
+            list(code.local_checks), code.qubits
+        )
+        fixed_rank, fixed_bad = c269.c235.phase_aware_rank(
+            list(code.local_checks + code.wilsons), code.qubits
+        )
+        matter = list(code.B + code.A)
+        matter_total_rank = c269.rank(
+            list(code.local_checks) + matter, code.qubits
+        )
+        matter_rank = c269.rank(matter, code.qubits)
+        matter_gram_rank = c269.gram_rank(matter)
+        wilsons_in_matter_span = (
+            c269.rank(matter + list(code.wilsons), code.qubits) == matter_rank
+        )
+        sector_failures = 0
+        for bits in product((0, 1), repeat=3):
+            sector_rank, inconsistent = c269.c235.phase_aware_rank(
+                list(code.local_checks)
+                + [c269.signed(wilson, bit)
+                   for wilson, bit in zip(code.wilsons, bits)],
+                code.qubits,
+            )
+            sector_failures += (
+                sector_rank != 9 * n + 1 or bool(inconsistent)
+            )
+        pairing = [
+            [int(not membrane.commutes(wilson))
+             for wilson in code.wilsons]
+            for membrane in code.membranes
+        ]
+        rows.append({
+            "length": length,
+            "split": split,
+            "coarse_cells": n,
+            "physical_M2_qubits": code.qubits,
+            "M2_per_coarse_cell": code.qubits / n,
+            "local_check_rank": local_rank,
+            "local_code_exponent": code.qubits - local_rank,
+            "fixed_Wilson_rank": fixed_rank,
+            "fixed_Wilson_exponent": code.qubits - fixed_rank,
+            "Wilson_rank_increment": fixed_rank - local_rank,
+            "consistent_equal_dimension_Wilson_sectors": 8 - sector_failures,
+            "matter_quotient_dimension": matter_total_rank - local_rank,
+            "matter_symplectic_rank": matter_gram_rank,
+            "matter_radical_dimension": (
+                matter_total_rank - local_rank - matter_gram_rank
+            ),
+            "matter_commutant_quotient_dimension": (
+                2 * code.qubits - matter_total_rank - local_rank
+            ),
+            "Wilsons_in_matter_span": wilsons_in_matter_span,
+            "Wilson_matter_commutator_failures": sum(
+                not wilson.commutes(operator)
+                for wilson in code.wilsons for operator in matter
+            ),
+            "membrane_weights": [
+                (row.x | row.z).bit_count() for row in code.membranes
+            ],
+            "membrane_local_check_leakage": sum(
+                not membrane.commutes(check_row)
+                for membrane in code.membranes
+                for check_row in code.local_checks
+            ),
+            "membrane_Wilson_pairing": pairing,
+            "membrane_matter_anticommutators": [
+                sum(not membrane.commutes(operator) for operator in matter)
+                for membrane in code.membranes
+            ],
+            "phase_inconsistencies": len(local_bad) + len(fixed_bad),
+        })
+
+    c269.PASS = c269.FAIL = 0
+    c269.covariance_controls(cache[3])
+    covariance_pass = c269.PASS == 2 and c269.FAIL == 0
+    condition = covariance_pass and all(
+        row["physical_M2_qubits"] == 15 * row["coarse_cells"]
+        and row["local_check_rank"] == 9 * row["coarse_cells"] - 2
+        and row["local_code_exponent"] == 6 * row["coarse_cells"] + 2
+        and row["fixed_Wilson_rank"] == 9 * row["coarse_cells"] + 1
+        and row["fixed_Wilson_exponent"] == 6 * row["coarse_cells"] - 1
+        and row["Wilson_rank_increment"] == 3
+        and row["consistent_equal_dimension_Wilson_sectors"] == 8
+        and row["matter_quotient_dimension"] == 12 * row["coarse_cells"] + 1
+        and row["matter_symplectic_rank"] == 12 * row["coarse_cells"] - 2
+        and row["matter_radical_dimension"] == 3
+        and row["matter_commutant_quotient_dimension"] == 3
+        and row["Wilsons_in_matter_span"]
+        and row["Wilson_matter_commutator_failures"] == 0
+        and row["membrane_weights"] == [row["length"] ** 2] * 3
+        and row["membrane_local_check_leakage"] == 0
+        and row["membrane_Wilson_pairing"]
+            == [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
+        and row["membrane_matter_anticommutators"]
+            == [row["length"] ** 2] * 3
+        and row["phase_inconsistencies"] == 0
+        for row in rows
+    )
+    result = {
+        "rows": rows,
+        "all24_and_full_L3_translation_covariance_reexecuted": covariance_pass,
+        "representation": (
+            "direct sum of eight central-character/spin-twist blocks; not a "
+            "target-matter tensor spectator factor"
+        ),
+        "Wilson_roles": (
+            "W_x,W_y,W_z span the three-dimensional abelian radical and "
+            "matter commutant quotient"
+        ),
+        "sector_changing_membrane_roles": (
+            "each L^2 membrane is conjugate to one Wilson and anticommutes "
+            "with L^2 matter hopping generators"
+        ),
+        "fixed_sector_or_twisted_family_candidate": True,
+        "operational_contractible_quotient_candidate": True,
+        "spectator_independence": False,
+        "tensor_factorization": False,
+        "pass": condition,
+    }
+    check(
+        "Cycle269 central-sector/radical/membrane certificate reexecutes on L3/L6/L7 without spectator-factor language",
+        condition, result,
+    )
+    return result
+
+
 def shore() -> dict:
     observed = {name: sha(ROOT / name) for name in PINS}
     prior = json.loads((ROOT / (
         "outputs/physical_proper_cubic_supercell_stream_composition_"
         "tournament_cycle610_receipt_2026_07_22.json"
     )).read_text())
+    expected_graph = dict(
+        prior["shore"]["import_audit"]["expected_transitive_sha256"]
+    )
+    expected_graph.update(PINS)
+    observed_graph = {name: sha(ROOT / name) for name in expected_graph}
+    actual_modules = c610.c606.c600.imported_science_modules(
+        c610, c251, c269, c219, c229, c230, c210
+    )
+    uncovered = sorted(set(actual_modules.values()) - set(expected_graph))
+    physical_scope = prior["physical_M2_scope"]
+    translation_rows = prior["fine_site_translation_falsifier"]["rows"]
     inherited = {
-        "pass": prior["pass"],
-        "tests_passed": prior["tests_passed"],
-        "authority": prior["authority"],
-        "audit": prior["audit"],
-        "physical_word": prior[
-            "literal_orientation_controlled_compute_act_uncompute"
+        "Cycle610_pass": prior["pass"],
+        "Cycle610_tests_passed": prior["tests_passed"],
+        "Cycle610_authority": prior["authority"],
+        "Cycle610_audit": prior["audit"],
+        "Cycle610_author_artifact_status_accepted": prior[
+            "author_artifact_status_accepted"
+        ],
+        "Cycle610_physical_M2_scope": physical_scope,
+        "Cycle610_conditional_geometry": prior["global_microstep_geometry"]["pass"],
+        "Cycle610_conditional_fixture": prior[
+            "conditional_onsite_mass_contact_seam_composition"
         ]["pass"],
-        "global_geometry": prior["global_microstep_geometry"]["pass"],
-        "fixtures": prior["onsite_mass_contact_seam_composition"]["pass"],
-        "factor_order": prior["Cycle230_factor_order_deletion_noncommutation"]["pass"],
+        "Cycle610_factor_order": prior[
+            "Cycle230_factor_order_deletion_noncommutation"
+        ]["pass"],
+        "Cycle610_translation_rows": translation_rows,
+        "Cycle610_broad_negative_gate": prior["broad_negative_gate"],
+        "Cycle610_axiom_pressure": prior[
+            "shared_obstruction_or_axiom_pressure"
+        ],
+        "Cycle610_scope_statement": (
+            "conditional coarse-grid geometry only; no physical E, physical "
+            "intertwiner residual, or leakage evaluation"
+        ),
+        "Cycle269_scope_statement": (
+            "eight central-character spin/twist blocks; Wilsons span the "
+            "matter radical/commutant and conjugate membranes act on matter"
+        ),
+        "import_audit": {
+            "expected_transitive_sha256": expected_graph,
+            "observed_transitive_sha256": observed_graph,
+            "actual_imported_modules": actual_modules,
+            "uncovered_imported_modules": uncovered,
+            "expected_file_count": len(expected_graph),
+            "runtime_module_count": len(actual_modules),
+        },
     }
     condition = (
-        observed == PINS and inherited["pass"]
-        and inherited["tests_passed"] == 16
-        and inherited["authority"] == AUTHORITY
-        and inherited["audit"] == AUDIT
-        and all(inherited[key] for key in (
-            "physical_word", "global_geometry", "fixtures", "factor_order"
-        ))
+        observed == PINS and observed_graph == expected_graph and not uncovered
+        and inherited["Cycle610_pass"]
+        and inherited["Cycle610_tests_passed"] == 18
+        and inherited["Cycle610_authority"] == AUTHORITY
+        and inherited["Cycle610_audit"] == AUDIT
+        and not inherited["Cycle610_author_artifact_status_accepted"]
+        and inherited["Cycle610_conditional_geometry"]
+        and inherited["Cycle610_conditional_fixture"]
+        and inherited["Cycle610_factor_order"]
+        and not physical_scope["promotion_to_physical_M2_law"]
+        and not physical_scope["literal_physical_encoder_composed"]
+        and physical_scope["physical_intertwiner_residual"] is None
+        and not physical_scope["physical_code_leakage_evaluated"]
+        and [row["one_fine_site_x_translation_symmetric_difference"]
+             for row in translation_rows] == [2970, 23760, 37730]
+        and inherited["Cycle610_broad_negative_gate"] == "FAIL / DO NOT SHIP"
+        and not inherited["Cycle610_axiom_pressure"]
     )
-    check("Cycle610 and the bounded prior route family are byte-exact", condition,
+    check("corrected Cycle610, Cycle269, and complete inherited science graph are byte-exact", condition,
           {"observed": observed, "inherited": inherited})
-    return prior
+    return {"receipt": prior, **inherited}
 
 
 # ---------------------------------------------------------------------------
@@ -173,6 +358,7 @@ def shore() -> dict:
 
 
 def route_a_local_gauge() -> dict:
+    cycle269_reconciliation = cycle269_sector_reconciliation()
     rows = []
     for length, split in ((3, "train"), (6, "held"), (7, "held-out-size")):
         graph = c251.c247.PunctureGraph(length, terminals=1)
@@ -366,28 +552,33 @@ def route_a_local_gauge() -> dict:
             "primitive_CNOT_ladder_support": 2,
             "primitive_Rz_support": 1,
             "maximum_CNOT_compute_uncompute_per_Pauli_rotation": 34,
-            "Cycle610_literal_bounded_bus_available": True,
+            "Cycle610_conditional_coarse_geometry_available": True,
+            "Cycle610_literal_physical_bus_available": False,
             "literal_coordinate_embedding_of_all_22_Cycle251_roles_into_the_Cycle610_bus_constructed": False,
             "scope": (
                 "generic constant-support Pauli-routing recipe only; it is not a "
                 "composed NN coordinate compiler, odd creator, or state-preparation encoder"
             ),
         },
-        "both_parity_blocks_present": True,
-        "arbitrary_finite_density_occupations_within_each_parity_block": True,
+        "abstract_Cycle230_target_has_both_parity_blocks": True,
+        "physical_both_parity_blocks_intertwined": False,
+        "fixed_sector_even_algebra_allows_arbitrary_even_finite_density": True,
         "runtime_global_parity_service_used": False,
-        "sectorwise_even_update_spectator_independent": True,
         "bounded_local_syndrome_checks_exist": True,
         "three_noncontractible_Wilson_flux_selectors_required_for_exact_fixed_sector": True,
         "fully_locally_enforced_exact_code_space": False,
-        "sectorwise_factorization": (
-            "H_code=(H_matter,+ tensor H_gauge,+) direct-sum "
-            "(H_matter,- tensor H_gauge,-)"
+        "cycle269_sector_reconciliation": cycle269_reconciliation,
+        "unfixed_sector_structure": (
+            "Cycle269 reexecution gives a direct sum of eight central-character/"
+            "spin-twist matter blocks; Wilsons are in the matter radical and "
+            "their membrane conjugates act on matter, so no spectator or tensor "
+            "factor is inferred for Cycle251"
         ),
         "common_pure_full_Fock_E_across_coherent_parity_blocks_constructed": full_fock_common_E,
         "reason_common_E_not_closed": (
-            "the auxiliary parity is locked to matter parity and no bounded local "
-            "identification H_gauge,+ <-> H_gauge,- or preparation circuit is constructed"
+            "only a fixed-Wilson even-algebra representation is executed; no "
+            "bounded local full-Fock state isometry, physical Cycle610 composition, "
+            "or sector-independent identification is constructed"
         ),
         "tested_root_tree_canonical_support": canonical_growth,
         "tested_root_tree_expected_support": expected_growth,
@@ -395,7 +586,7 @@ def route_a_local_gauge() -> dict:
         "tested_fixed_flux_selector_expected_support": expected_fixed_flux_support,
         "global_Jordan_Wigner_or_parity_service": False,
         "pass_bounded_even_CAR_in_fixed_flux_sector": bool(
-            algebra_pass and covariance_pass
+            algebra_pass and covariance_pass and cycle269_reconciliation["pass"]
             and canonical_growth == expected_growth
             and fixed_flux_support == expected_fixed_flux_support
             and local_car_residual < TOL
@@ -413,7 +604,7 @@ def route_a_local_gauge() -> dict:
         and not result["pass_fully_locally_constrained_even_CAR_code"], result,
     )
     check(
-        "Route A does not pass the common pure full-Fock-E gate merely from sectorwise even-algebra factorization",
+        "Route A does not pass the common pure full-Fock-E gate from a fixed-sector even-algebra representation",
         not result["pass_required_common_full_Fock_E"],
         {"canonical_growth": canonical_growth, "reason": result["reason_common_E_not_closed"]},
     )
@@ -895,40 +1086,55 @@ def route_c_frame_free_shell() -> dict:
 
 def joint_disposition(route_a: dict, route_b: dict, route_c: dict,
                       prior: dict) -> dict:
-    factor = prior["Cycle230_factor_order_deletion_noncommutation"]
-    fixtures = prior["onsite_mass_contact_seam_composition"]
+    receipt = prior["receipt"]
+    factor = receipt["Cycle230_factor_order_deletion_noncommutation"]
+    conditional_fixture = receipt[
+        "conditional_onsite_mass_contact_seam_composition"
+    ]
     result = {
         "same_encoding_composes_A_B_C": False,
         "E_Gcoarse_equals_Gphysical_E_on_declared_full_Fock_code": False,
-        "bounded_support_and_constant_overhead": True,
+        "route_local_bounded_support_and_constant_overhead": True,
+        "joint_same_encoding_bounded_support_and_constant_overhead": False,
         "locally_enforced_auxiliary_gauge_constraints": route_a[
             "pass_fully_locally_constrained_even_CAR_code"
         ],
-        "no_global_Jordan_Wigner_or_nonlocal_parity_service": True,
-        "all24_all576_covariance": (
+        "route_A_no_global_Jordan_Wigner_or_nonlocal_parity_service": True,
+        "route_local_all24_all576_covariance": (
             route_a["all24_and_translation_covariance_reexecuted"]
             and route_c["pass_frame_free_bounded_word"]
         ),
-        "one_particle_mass_fixture_preserved": fixtures["pass"],
-        "local_contact_and_Cycle230_seam_preserved": fixtures["pass"],
-        "factor_order_preserved": factor["pass"],
+        "Cycle610_conditional_mass_contact_seam_fixture_byte_pinned": (
+            conditional_fixture["pass"]
+        ),
+        "Cycle610_fixture_scope": (
+            "conditional coarse-grid move/apply/restore geometry; not a "
+            "physical M2 encoder or new Cycle617 preservation test"
+        ),
+        "one_particle_mass_fixture_freshly_reexecuted": False,
+        "one_particle_mass_fixture_preserved_by_new_physical_E": False,
+        "Cycle230_seam_freshly_reexecuted_in_new_physical_E": False,
+        "abstract_Cycle230_local_coin_contact_algebra_reexecuted": True,
+        "factor_order_byte_pinned": factor["pass"],
         "noncommutation_witness": factor[
             "Cycle230_contact_free_generator_noncommutation_witness"
         ],
         "why_joint_fails": (
-            "Route A is a fixed-Wilson-flux sectorwise even-observable subsystem "
-            "without a literal Cycle610 coordinate composition or common pure "
-            "full-Fock E; Route B is a tagged collision permutation without CAR "
-            "signs; Route C removes the 24-one-hot role field but its endpoint B "
-            "swaps disagree with Gamma(B).  These are not the same encoding."
+            "Route A is a fixed-Wilson even-observable representation without a "
+            "literal physical Cycle610 composition or common pure full-Fock E; "
+            "Cycle269 additionally forbids treating its eight spin/twist blocks "
+            "as spectator tensor factors because sector-changing membranes act "
+            "on matter. Route B is a tagged collision permutation without CAR "
+            "signs. Route C removes the 24-one-hot role field only at conditional "
+            "geometry resolution, and its endpoint B swaps disagree with Gamma(B)."
         ),
         "strongest_constructive_result": (
             "the global exactly-one-carrier restriction is unnecessary for the "
-            "bounded covariant even-CAR operator algebra inside each fixed-flux "
-            "Cycle251 sector: its 22-M2/cell bounded generators carry arbitrary "
-            "finite density in both parity sectors, while a separate one-word "
-            "six-face construction removes Cycle610's 24-one-hot orientation "
-            "field at geometry resolution"
+            "bounded covariant even-CAR operator algebra inside a fixed-Wilson "
+            "Cycle251 sector: its 22-M2/cell bounded generators support arbitrary "
+            "even finite density, while a separate one-word six-face construction "
+            "removes Cycle610's 24-one-hot orientation field only at conditional "
+            "geometry resolution; neither result is a physical full-Fock E"
         ),
         "pass": False,
     }
@@ -944,92 +1150,286 @@ def joint_disposition(route_a: dict, route_b: dict, route_c: dict,
 def no_go_discipline(route_a: dict, route_b: dict, route_c: dict,
                      joint: dict) -> dict:
     families = (
-        "A local puncture/gauge subsystem (executed)",
-        "B reversible tagged collision reservoir (executed)",
-        "C frame-free six-face shell word (executed)",
-        "Cycle248 bounded full-Fock spectator encoding (prior; update strings grow)",
-        "Cycle260 local parity-shuttle/transport attempts (prior)",
-        "Cycle312 local full-Fock extension attempts (prior; higher-number signs recur)",
-        "higher-form or non-Pauli gauge embedding (live, unexecuted)",
-        "autonomous dissipative/code-preparation dynamics (live, unexecuted)",
+        {
+            "family": "Cycle251 rough-terminal fixed-Wilson even algebra",
+            "object": "22 M2 factors per coarse cell on L3/L6/L7",
+            "mechanism": "bounded mapped matter and auxiliary Pauli generators",
+            "terminal_obligation": "fixed-sector even-algebra representation",
+            "strength_vs_target": "weaker than one physical full-Fock E",
+            "marker": "ATTEMPTED",
+            "evidence": "rank, support, covariance, and deletion rows reexecuted",
+            "disposition": "retained only at fixed-Wilson even-algebra scope",
+        },
+        {
+            "family": "Cycle269 Wilson-unfixed connected edge code",
+            "object": "15 M2 factors per coarse cell on L3/L6/L7",
+            "mechanism": "local checks, matter Gram form, Wilson center, and membranes",
+            "terminal_obligation": "test whether Wilson labels are spectator gauge qubits",
+            "strength_vs_target": "exact for this connected presentation only",
+            "marker": "ATTEMPTED",
+            "evidence": "eight sectors, radical/commutant dimension three, L^2 matter-active membranes",
+            "disposition": "direct-sum twisted family retained; no tensor-spectator extrapolation",
+        },
+        {
+            "family": "reversible tagged collision reservoir",
+            "object": "eight lanes, capacity seven, 28 comparator archives",
+            "mechanism": "predicate archive plus adjacent controlled swaps",
+            "terminal_obligation": "collision handling and CAR signs",
+            "strength_vs_target": "closes finite collision sorting only",
+            "marker": "ATTEMPTED",
+            "evidence": "all 256 patterns, inverse/deletion/renewal, CAR residual two",
+            "disposition": "retained as a collision lemma, not a sign service",
+        },
+        {
+            "family": "frame-free six-face conditional word",
+            "object": "one six-mode shell word with no orientation register",
+            "mechanism": "proper-cubic shell geometry and endpoint swaps",
+            "terminal_obligation": "same-encoding full-Fock stream",
+            "strength_vs_target": "geometry-only because the B signs mismatch",
+            "marker": "ATTEMPTED",
+            "evidence": "all24/all576 geometry and L3/L6/L7 sign audit",
+            "disposition": "retained only as conditional geometry",
+        },
+        {
+            "family": "corrected Cycle610 supplied-grid compiler",
+            "object": "129-period supplied coarse partition and role motif",
+            "mechanism": "conditional coordinate move/apply/restore descriptors",
+            "terminal_obligation": "physical one-fine-site covariant E G=G E",
+            "strength_vs_target": "conditional coarse geometry only",
+            "marker": "RULED OUT BY PRIOR",
+            "evidence": "unit-translation symmetric differences 2970/23760/37730",
+            "disposition": "not promoted; physical E/residual/leakage remain absent",
+        },
+        {
+            "family": "abstract six-mode Cycle230 target algebra",
+            "object": "all 64 local occupations and both parity blocks",
+            "mechanism": "direct 64-dimensional CAR matrices, coin, and contact",
+            "terminal_obligation": "target-side algebra and coherence control",
+            "strength_vs_target": "not a physical encoding",
+            "marker": "ATTEMPTED",
+            "evidence": "zero CAR/parity leakage and coherent norm residual",
+            "disposition": "retained strictly as an abstract target fixture",
+        },
+    )
+    open_routes = (
+        {
+            "family": "fixed-sector physical composition",
+            "mechanism": "compose the Cycle251 fixed-Wilson algebra into literal M2 coordinates",
+            "terminal_obligation": "physical E, leakage, mass/contact/seam, translations, and deletion",
+            "status": "OPEN / NOT COUNTED AS ATTEMPTED OR RULED OUT",
+        },
+        {
+            "family": "sector-indexed twisted target family",
+            "mechanism": "compile G_coarse(w) separately in all eight Cycle269 blocks",
+            "terminal_obligation": "bounded local maps and full-update covariance for every w",
+            "status": "OPEN / NOT COUNTED AS ATTEMPTED OR RULED OUT",
+        },
+        {
+            "family": "operational contractible-observable quotient",
+            "mechanism": "quotient the Wilson center only for bounded light cones",
+            "terminal_obligation": "finite-depth theorem proving discarded global words are unmeasured",
+            "status": "OPEN / NOT COUNTED AS ATTEMPTED OR RULED OUT",
+        },
     )
     walls = (
-        "common coherent full-Fock E across parity blocks",
-        "strictly local enforcement of the three Wilson flux relations",
-        "generalized recurrent tagged-traffic capacity outside the Cycle230 domain",
-        "frame-free endpoint-stream CAR sign",
-        "autonomous preparation of the locally checkable code state",
+        "literal bounded physical full-Fock state isometry E",
+        "choice or operational treatment of the eight Wilson spin/twist blocks",
+        "same-encoding CAR-correct frame-free B stream",
+        "fine-site translation-covariant physical role law",
+        "autonomous local code-space preparation and renewal",
     )
-    pairs = tuple(combinations(walls, 2))
+    pairs = tuple({
+        "wall_A": first,
+        "wall_B": second,
+        "A_implies_B": False,
+        "B_implies_A": False,
+        "independent": True,
+        "shared_witness_identified": False,
+        "evidence": "no executed construction or logical implication closes either direction",
+    } for first, second in combinations(walls, 2))
+    residuals = (
+        {
+            "citation": "docs/work_history/repo/review_feedback/WILSON_SUBSYSTEM_SECTOR_FREE_COMPILER_CYCLE269_NOTE_2026-07-17.md:29-88",
+            "prior_residual": "eight central-character blocks; Wilson radical/commutant; L^2 membranes act on matter",
+            "current_residual": "same rank, Gram, sector, pairing, and matter-anticommutator formulas on L3/L6/L7",
+            "match": True,
+            "closed": "Cycle269 presentation only; fixed-sector/twisted/quotient repairs remain live",
+        },
+        {
+            "citation": "docs/work_history/repo/review_feedback/ROUGH_TERMINAL_SUBSYSTEM_GAUGE_FACTORIZATION_CYCLE251_NOTE_2026-07-17.md:20-54",
+            "prior_residual": "bounded fixed-parity even-algebra factor but no bounded full-Fock tensor encoder",
+            "current_residual": "22-M2 ranks/supports/covariance reexecute; no physical E or preparation is added",
+            "match": True,
+            "closed": "fixed-Wilson even operator algebra only",
+        },
+        {
+            "citation": "docs/work_history/repo/review_feedback/PHYSICAL_PROPER_CUBIC_SUPERCELL_STREAM_COMPOSITION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md:25-45,95-98",
+            "prior_residual": "nonzero one-fine-site translation differences and absent physical E/intertwiner/leakage",
+            "current_residual": "Cycle610 is byte-pinned only as conditional coarse-grid geometry",
+            "match": True,
+            "closed": False,
+        },
+    )
+    rhetoric = (
+        {
+            "phrase": "sector-independent",
+            "resolutions": ("onsite operator", "contractible patch", "fixed Wilson block", "eight-block family", "complete periodic update"),
+            "tested": ("fixed Wilson block", "eight-block algebra"),
+            "untested_status": "a physical full-update family and operational quotient remain open",
+            "narrowed_phrase": "fixed-Wilson even-algebra representation",
+        },
+        {
+            "phrase": "local constraints",
+            "resolutions": ("bounded check rows", "fixed Wilson signs", "code-space projector", "preparation circuit", "autonomous repair"),
+            "tested": ("bounded check rows", "fixed Wilson ranks"),
+            "untested_status": "preparation and autonomous repair are absent",
+            "narrowed_phrase": "bounded locally stated checks plus separately fixed global Wilson signs",
+        },
+        {
+            "phrase": "physical compiler",
+            "resolutions": ("abstract algebra", "coordinate geometry", "gate descriptors", "physical E G=G E", "leakage"),
+            "tested": ("abstract algebra", "conditional coordinate geometry"),
+            "untested_status": "physical E and leakage are absent",
+            "narrowed_phrase": "operator representation and conditional geometry lemmas",
+        },
+        {
+            "phrase": "all24/all576 covariance",
+            "resolutions": ("algebra family", "shell geometry", "coarse translations", "fine-site translations", "full physical update"),
+            "tested": ("algebra family", "shell geometry", "coarse translations"),
+            "untested_status": "fine-site physical update covariance is absent",
+            "narrowed_phrase": "route-specific algebra/geometry covariance",
+        },
+        {
+            "phrase": "finite density",
+            "resolutions": ("abstract occupations", "fixed-even algebra", "odd creators", "coherent parity superposition", "state preparation"),
+            "tested": ("abstract occupations", "fixed-even algebra"),
+            "untested_status": "odd creators, physical coherent parity E, and preparation are absent",
+            "narrowed_phrase": "arbitrary even finite density inside the fixed-sector operator algebra",
+        },
+    )
+    partial_paths = (
+        {"file": "scripts/physical_local_sector_role_genesis_closure_tournament_cycle617_2026_07_22.py", "status": "PARTIAL / NARROWED", "what_closes": "fixed-Wilson Cycle251 algebra, Cycle269 reconciliation, collision and shell-geometry lemmas"},
+        {"file": "scripts/wilson_subsystem_sector_free_compiler_cycle269_2026_07_17.py", "status": "PARTIAL / PRIOR", "what_closes": "eight-sector direct sum and matter-active membrane certificate"},
+        {"file": "UNMATERIALIZED", "status": "OPEN / PRIORITY", "what_closes": "literal fixed-sector physical E and full update on M2 coordinates"},
+        {"file": "UNMATERIALIZED", "status": "OPEN", "what_closes": "eight-block twisted-family compiler or contractible operational quotient"},
+        {"file": "UNMATERIALIZED", "status": "OPEN", "what_closes": "autonomous local preparation/renewal and fine-site covariance"},
+    )
     result = {
-        "N1_alternative_route_enumeration": families,
-        "N2_wall_independence_audit": {
-            "walls": walls,
-            "all_pairs": pairs,
-            "pair_count": len(pairs),
-            "conclusion": (
-                "the four observed residuals are distinct and preparation is a "
-                "fifth wall; none is inferred from another"
+        "skill_freshness": {
+            "origin_main_checked": True,
+            "origin_main_skill_sha256": "7d1aea8243ddd972331b935e2e836657e72115da3efe259f828fe862469d68b7",
+            "proof_search_governance_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+            "newer_origin_main_version_followed": True,
+        },
+        "N1_normalized_families": families,
+        "N1_qualifying_family_count": len(families),
+        "N1_all_markers_exact": all(
+            row["marker"] in ("ATTEMPTED", "RULED OUT BY PRIOR")
+            for row in families
+        ),
+        "N1_open_counterroutes_not_counted": open_routes,
+        "N2_collapsed_walls": walls,
+        "N2_directional_wall_independence": pairs,
+        "N2_pair_count": len(pairs),
+        "N3_hidden_condition_scan": {
+            "required_phrase_scan": {
+                "we assume": "absent",
+                "by construction": "absent",
+                "as is standard": "absent",
+                "the framework provides": "absent",
+                "bridge context": "absent",
+                "background": "absent",
+                "naturally": "absent",
+                "obviously": "absent",
+                "standard QFT": "absent",
+                "registered": "absent",
+                "canonical": "present only in measured support/presentation labels; non-load-bearing",
+            },
+            "promoted_hidden_conditions": (
+                "three Wilson signs are explicit fixed-sector inputs",
+                "Cycle610's coarse partition/origin remains supplied",
+                "the local checks do not prepare or renew their code state",
+                "beta, contact g, factor order, and phase precision remain supplied",
+            ),
+            "hidden_wall_promotions_complete": True,
+        },
+        "N4_residual_matching": residuals,
+        "N5_rhetoric_resolution": rhetoric,
+        "N5_five_resolutions_present": len(rhetoric) >= 5,
+        "N6_partial_closure_paths": partial_paths,
+        "N7_hostile_steelman": {
+            "mechanism": (
+                "choose one Wilson block and compose its bounded even algebra into "
+                "literal coordinates, or retain all eight blocks as a twisted target "
+                "family; for local experiments, prove a light-cone theorem allowing "
+                "the Wilson center to be quotiented only when no global word is measured"
+            ),
+            "why_it_could_close": (
+                "Cycle269 supplies all eight nonempty equal-dimensional blocks, and "
+                "Cycle251 supplies bounded fixed-sector generators; the missing step "
+                "is a physical composition/operational theorem, not a contradiction"
+            ),
+            "terminal_obligation": (
+                "literal physical E G=G E, mass/contact/seam, leakage/deletion, "
+                "L3/L6/L7, all24, and one-fine-site translations"
+            ),
+            "authority_status": "OPEN / no retained authority",
+            "citations": (
+                "scripts/wilson_subsystem_sector_free_compiler_cycle269_2026_07_17.py:sector_and_subsystem_controls",
+                "scripts/rough_terminal_subsystem_gauge_factorization_cycle251_2026_07_17.py",
+                "docs/work_history/repo/review_feedback/WILSON_SUBSYSTEM_SECTOR_FREE_COMPILER_CYCLE269_NOTE_2026-07-17.md:343-365",
             ),
         },
-        "N3_hidden_wall_scan": (
-            "the local checks define a code space but do not autonomously prepare "
-            "it; Route A's exact target sector also fixes three noncontractible "
-            "Wilson relations and a period-16 physical role marker; the frame-free "
-            "word uses supplied coarse supercell centers and blank routing paths; "
-            "beta, g, factor order, and phase precision remain supplied"
-        ),
-        "N4_residual_matching": {
-            "A": route_a["tested_root_tree_canonical_support"],
-            "A_fixed_flux_selector_support": route_a[
-                "tested_fixed_flux_selector_maximum_support"
-            ],
-            "B_generalized_tagged_traffic_overflow": route_b[
-                "recurrent_six_predecessor_stress"
-            ]["overflow_packets"],
-            "B_Cycle230_capacity_overflow": route_b[
-                "Cycle230_lawful_stream_capacity"
-            ]["overflow_at_capacity_seven"],
-            "B_CAR_residual": route_b["packet_creator_CAR_anticommutator_residual"],
-            "C_sign_mismatch_counts": [
-                row["sign_mismatches"] for row in route_c["B_full_Fock_sign_rows"]
-            ],
-        },
-        "N5_rhetoric_audit": (
-            "sectorwise even algebra is not called full-Fock E; collision sorting "
-            "is not called CAR; a frame-free geometric word is not called a "
-            "CAR-faithful compiler; no minimum-content or impossibility claim ships"
-        ),
-        "N6_partial_closure_path_scan": (
-            "retain A as the strongest physical operator substrate and C as a "
-            "role-genesis-free layout lemma; seek one encoding that gives odd-sector "
-            "coherence and the same frame-free stream"
-        ),
-        "N7_steelman": (
-            "a non-Pauli/higher-form local gauge code or autonomous code-preparation "
-            "QCA may identify the two gauge parity factors without a global service"
-        ),
         "N8_cross_cycle_echo": (
-            "Cycle248, 251, 261, 276, and 312 separate bounded even algebra from "
-            "full-Fock state encoding; this recurrence motivates another constructive "
-            "family but does not establish a substrate-independent obstruction"
+            {"cycle": "Cycle251", "retired": "bounded fixed-parity even algebra", "mechanism": "rough-terminal matter/auxiliary commutant", "applicability": "positive fixed-sector substrate only"},
+            {"cycle": "Cycle269", "retired": "spectator interpretation of unfixed Wilson labels", "mechanism": "radical/commutant and matter-active membranes", "applicability": "complete connected presentation"},
+            {"cycle": "Cycle276", "retired": "premature joint compiler promotion", "mechanism": "three-route disposition", "applicability": "keeps route failures separate"},
+            {"cycle": "Cycle312", "retired": "some bounded local full-Fock extensions", "mechanism": "higher-number sign witnesses", "applicability": "does not rule out twisted/quotient routes"},
+            {"cycle": "Cycle610", "retired": "physical promotion of a supplied coarse grid", "mechanism": "fine-site translation falsifier", "applicability": "conditional geometry shore only"},
+            {"cycle": "Cycle617", "retired": "spectator/tensor wording in this synthesis", "mechanism": "fresh L3/L6/L7 reconciliation", "applicability": "narrowed positive artifact"},
         ),
-        "normalized_proof_search_family_complete": False,
+        "evidence": {
+            "route_A_fixed_sector": route_a["pass_bounded_even_CAR_in_fixed_flux_sector"],
+            "Cycle269_reconciliation": route_a["cycle269_sector_reconciliation"]["pass"],
+            "route_B_collision_only": route_b["pass_one_macro_collision_sorter"] and not route_b["pass_CAR_sign_service"],
+            "route_C_geometry_only": route_c["pass_frame_free_bounded_word"] and not route_c["full_Fock_CAR_intertwining"],
+            "joint_promotion_withheld": not joint["pass"],
+        },
         "negative_claim_shipped": False,
         "minimum_content_claim_shipped": False,
-        "route_independent_shared_obstruction": False,
+        "shared_obstruction": False,
         "axiom_pressure": False,
-        "pass_for_withholding_no_go": True,
+        "status": "FAIL",
+        "failed_checklist_items": (
+            "N7: fixed-sector physical composition, twisted family, and operational quotient remain live",
+            "physical promotion: E, leakage, autonomous preparation, and fine-site covariance are unexecuted",
+        ),
+        "broad_negative_gate": "FAIL / DO NOT SHIP",
+        "minimum_content_gate": "FAIL / DO NOT SHIP",
+        "shared_obstruction_gate": "FAIL / DO NOT SHIP",
+        "axiom_pressure_gate": "FAIL / DO NOT SHIP",
+        "narrowed_positive_artifact_gate": "PASS",
+        "demoted_artifact_status": (
+            "fixed-Wilson even-algebra plus direct-sum sector reconciliation "
+            "and independent collision/conditional-geometry lemmas"
+        ),
     }
     condition = (
-        len(families) >= 6 and len(pairs) == math.comb(len(walls), 2)
-        and not joint["pass"]
+        len(families) >= 5 and result["N1_all_markers_exact"]
+        and len(pairs) == math.comb(len(walls), 2)
+        and len(residuals) == 3 and all(row["match"] for row in residuals)
+        and result["N5_five_resolutions_present"] and len(partial_paths) >= 5
+        and all(result["evidence"].values())
         and not result["negative_claim_shipped"]
         and not result["minimum_content_claim_shipped"]
-        and not result["route_independent_shared_obstruction"]
+        and not result["shared_obstruction"]
         and not result["axiom_pressure"]
+        and result["broad_negative_gate"] == "FAIL / DO NOT SHIP"
+        and result["narrowed_positive_artifact_gate"] == "PASS"
+        and result["N7_hostile_steelman"]["authority_status"]
+            == "OPEN / no retained authority"
     )
-    check("fresh N1-N8 withholds no-go, minimum-content, and axiom-pressure claims",
+    check("fresh N1-N8 blocks broad/minimum/shared/axiom claims and retains only narrowed positive evidence",
           condition, result)
     return result
 
@@ -1037,26 +1437,32 @@ def no_go_discipline(route_a: dict, route_b: dict, route_c: dict,
 def note_contract() -> dict:
     text = NOTE.read_text()
     required = (
-        "Authority: none", "Audit: unset", "Cycle 617", "Route A", "Route B",
-        "Route C", "E G_coarse = G_physical E", "22 M2", "both parity blocks",
+        "Authority: none", "Audit: unset", "Author artifact status accepted: false",
+        "Breakthrough: false", "Cycle 617", "Route A", "Route B", "Route C",
+        "E G_coarse = G_physical E", "22 M2", "15 M2", "both parity blocks",
         "common pure full-Fock", "local constraints", "L3", "L6", "L7",
         "all 24", "all 576", "finite density", "coherent superposition",
         "adjacent collision", "overflow", "archive", "renewal", "inverse",
         "deletion", "CAR sign", "frame-free", "one literal word", "24 one-hot",
-        "coin -> A -> B -> contact", "proper-cubic", "support-two", "mass",
-        "contact", "seam", "factor order", "noncommutation", "locally checkable",
-        "autonomous initial state", "constant overhead", "N1", "N8",
-        "no axiom pressure", "authority none", "audit unset",
+        "proper-cubic", "support-two", "one-particle mass", "contact", "seam",
+        "factor order", "noncommutation", "autonomous initial state",
+        "constant overhead", "direct sum of eight", "radical", "commutant",
+        "membrane", "spectator", "conditional coarse-grid geometry",
+        "physical intertwiner residual is null", "not freshly reexecute",
+        "ATTEMPTED", "RULED OUT BY PRIOR", "N1", "N8",
+        "FAIL / DO NOT SHIP", "no shared obstruction", "no axiom pressure",
     )
     forbidden = (
         "full-fock compiler passes", "collision sorting supplies fermionic signs",
         "shared obstruction proved", "axiom revision required",
         "schedule is physical time", "phase is physical energy",
+        "wilson labels are spectator qubits", "cycle610 physical compiler passes",
+        "one-particle mass fixture freshly reexecuted: true",
     )
     missing = tuple(item for item in required if item not in text)
     hits = tuple(item for item in forbidden if item in text.lower())
     result = {"missing": missing, "forbidden_hits": hits}
-    check("Cycle617 note freezes route scope, exact tests, supplies, and N1-N8",
+    check("Cycle617 note freezes corrected Cycle610 scope, Cycle269 sector reconciliation, exact tests, supplies, and N1-N8",
           not missing and not hits, result)
     return result
 
@@ -1080,10 +1486,10 @@ def main() -> int:
         "status": "cycle617-local-sector-role-genesis-closure-tournament",
         "authority": AUTHORITY,
         "audit": AUDIT,
-        "HEAD": subprocess.check_output(
-            ("git", "rev-parse", "HEAD"), cwd=ROOT, text=True
-        ).strip(),
+        "author_artifact_status_accepted": False,
+        "breakthrough_bar_met": False,
         "pins": PINS,
+        "shore": prior,
         "runner_sha256": sha(Path(__file__)),
         "note_sha256": sha(NOTE),
         "elapsed_seconds": elapsed,
@@ -1096,16 +1502,16 @@ def main() -> int:
         "note_contract": note,
         "strongest_constructive_result": joint["strongest_constructive_result"],
         "route_by_route_disposition": {
-            "A": "retain bounded covariant even-CAR generators in a fixed-flux sector; three nonlocal Wilson selectors and a common pure full-Fock E remain",
+            "A": "retain bounded covariant even-CAR generators in a fixed-Wilson sector; Cycle269 reexecution gives eight direct-sum spin/twist blocks with matter-active membrane conjugates, so no spectator factor is inferred",
             "B": "retain collision lemma only: exact finite reversible sorter and sufficient Cycle230 capacity, but no CAR sign; generalized multi-packet traffic overflows",
-            "C": "retain frame-free geometry/word lemma only: no 24-one-hot genesis, but endpoint B fails full-Fock signs",
+            "C": "retain frame-free conditional geometry/word lemma only: no 24-one-hot orientation register, but endpoint B fails full-Fock signs",
         },
         "updated_dependency_ledger": {
             "C_ref": "unchanged: reference/phase selection remains supplied",
-            "C_num": "improved at even-observable finite-density resolution; common cross-parity pure E remains open",
-            "C_wrap": "unchanged: Cycle230 modular seam fixture reproduced from the accepted shore",
-            "C_int": "unchanged constructive local contact and noncommutation fixture; coupling g remains supplied",
-        "C_local": "improved: bounded 22-M2 even-CAR generators plus frame-free shell; three Wilson selectors and the joint full-Fock local compiler remain open",
+            "C_num": "improved only at fixed-Wilson even-observable and abstract six-mode finite-density resolution; common physical cross-parity E remains open",
+            "C_wrap": "clarified: eight spin/twist blocks are reexecuted; the conditional Cycle230 seam fixture is byte-pinned but not freshly promoted",
+            "C_int": "unchanged: abstract local contact and pinned noncommutation/order controls remain; no new physical contact intertwiner",
+            "C_local": "improved: bounded 22-M2 fixed-sector generators and explicit L3/L6/L7 Wilson-sector reconciliation; physical full-Fock E, fine-site covariance, and preparation remain open",
             "C_source": "unchanged: no autonomous source/resource law derived",
         },
         "maturity_0_to_5": {
@@ -1119,6 +1525,7 @@ def main() -> int:
             "coarse 129^3 supercell centers and blank routing paths",
             "Cycle230 six-mode CAR law, beta, contact g, and coin-A-B-contact factor order",
             "Cycle251 puncture topology, local stabilizer code state, and three fixed Wilson-flux selectors",
+            "Cycle269 complete connected edge graph, local checks, and eight spin/twist characters",
             "Cycle251 period-16 physical role marker and supplied macro-cell roles",
             "finite reservoir capacity and blank 28-bit comparator archive",
             "canonical occupation-label order used only to audit, not serve, CAR signs",
@@ -1127,10 +1534,10 @@ def main() -> int:
         "shared_obstruction_or_axiom_pressure": False,
         "constitutional_effect": "none",
         "optimal_next_campaign": (
-            "construct one frame-covariant non-Pauli or higher-form gauge encoding "
-            "with a bounded cross-parity isometry, autonomous local syndrome "
-            "preparation, and the literal six-face B stream in the same code; test "
-            "odd/even coherent sectors on L3/L6/L7 before any renewed no-go claim"
+            "tournament a literal fixed-sector physical composition, an eight-block "
+            "twisted-family compiler, and a finite-light-cone operational quotient; "
+            "each must test physical E, full update, mass/contact/seam, leakage, "
+            "deletion, L3/L6/L7, all24, and one-fine-site translations"
         ),
         "tests_passed": PASS,
         "tests_failed": FAIL,

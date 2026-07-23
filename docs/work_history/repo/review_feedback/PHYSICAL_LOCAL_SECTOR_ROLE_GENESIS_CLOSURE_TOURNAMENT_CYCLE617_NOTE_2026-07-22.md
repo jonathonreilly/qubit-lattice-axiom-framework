@@ -1,268 +1,362 @@
 # Physical local-sector / role-genesis closure tournament — Cycle 617
 
-Date: 2026-07-22
-Authority: none
-Audit: unset
-Constitutional effect: none
+**Date:** 2026-07-22
 
-The operative scope is authority none and audit unset. This is retained-grade
-probe evidence, not an axiom edit, policy edit, registry edit, or audit
-verdict.
+**Authority: none**
 
-## Decisive question and acceptance rule
+**Audit: unset**
 
-Cycle 617 asks whether the Cycle-230 six-mode M64 intrinsic-CAR cell and its
-free-plus-contact update can lose both Cycle 610 imports—the global
-exactly-one-carrier/species sector and the uniform 24 one-hot orientation
-genesis—while retaining a local physical-M2 implementation. The requested
-identity remains
+**Author artifact status accepted: false**
 
-`E G_coarse = G_physical E`
+**Breakthrough: false**
 
-on one declared code space, with bounded support, constant overhead, local
-constraints, no global Jordan–Wigner ordering or parity service, proper-cubic
-covariance, the one-particle mass fixture, contact, and seam.
+**Constitutional effect: none**
 
-The exact acceptance language is local constraints and a locally checkable
-code; merely writing bounded generator formulas does not satisfy that gate.
+Companion runner:
 
-The strict joint gate is load bearing: positive pieces from different
-encodings do not compose merely because each piece is useful. Route A, Route
-B, and Route C must use the same encoding before the whole compiler can pass.
+```text
+scripts/physical_local_sector_role_genesis_closure_tournament_cycle617_2026_07_22.py
+```
 
-## Frozen shore and supplied structure
+This rebuilt artifact reconciles the tournament with the accepted corrected
+Cycle 610 and the already committed Cycle 269 Wilson/spin-sector result. It
+changes no axiom, foundation, Qualification, primitive, registry, policy,
+queue, or audit-status surface.
 
-The accepted Cycle-610 runner, note, receipt, and cold transcript are pinned
-byte for byte. Its support-two physical word, L3/L6/L7 wrap geometry, all 24
-frames, all 576 frame products, mass/contact/seam fixtures, factor order,
-deletion witnesses, and noncommutation witnesses are inherited only at their
-declared scope.
+## Result up front
 
-The remaining supplied inventory is explicit:
+The tournament does not construct one physical encoding satisfying
 
-- the 129^3 coarse-supercell centers and blank physical routing paths;
-- the Cycle-230 six-mode CAR law, beta, contact coupling, and
-  coin -> A -> B -> contact order;
-- the Cycle-251 puncture topology and a state already in its locally
-  checkable stabilizer space;
-- the Cycle-251 period-16 physical role marker and supplied macro-cell roles;
-- the finite collision-reservoir capacity and blank reversible archive;
-- angle precision and initial/boundary-state selection.
+```text
+E G_coarse = G_physical E.
+```
 
-Locally checkable code membership is not autonomous initial state genesis.
-No preparation or cooling law is inferred from the existence of local
-syndromes.
+The strongest constructive result is narrower. Route A reexecutes the bounded
+22 M2-per-cell Cycle 251 even-CAR operator representation in one fixed-Wilson
+sector at L3, held L6, and held-out-size L7. The bounded mapped matter and
+auxiliary generators, local constraints, rank formulas, all 24 proper-cubic
+frames, coarse translations, and deletion controls pass. No global
+Jordan–Wigner ordering or runtime parity service is used.
 
-## Route A — local gauge/parity/syndrome encoding
+That positive result is not a common pure full-Fock state encoder. The
+six-mode Cycle 230 target-side calculation separately covers all 64
+occupations, both parity blocks, finite density, and a coherent superposition,
+but it is an abstract CAR fixture, not a physical E.
 
-Route A reexecutes the Cycle-251 rough-terminal subsystem on L3, L6, and L7.
-It uses 22 M2 qubits per coarse cell. The local stabilizers, mapped matter
-even-CAR generators, and auxiliary even-CAR generators have size-independent
-bounded weight; deletion of an independent constraint lowers the stabilizer
-rank. The exact rank identities are
+Cycle 269 supplies the required topological correction on its 15 M2 factors
+per coarse cell. Reexecution on
+L3/L6/L7 gives a direct sum of eight equal-dimensional spin/twist central-
+character blocks. The three Wilson operators span the three-dimensional
+radical and abelian matter commutant quotient. Each conjugate L^2 membrane
+changes one Wilson character and anticommutes with L^2 matter hopping
+generators. Therefore this Cycle 617 synthesis does not call Wilson labels
+spectator qubits and does not infer a matter/gauge tensor factor from the
+unfixed local code. Fixed-sector, sector-indexed twisted-family, and
+contractible operational-quotient compilers remain candidates.
 
-- stabilizer rank `15N+1`, code exponent `7N-1`;
-- mapped-matter quotient dimension `12N-1` and symplectic rank `12N-2`;
-- auxiliary quotient dimension `2N-1` and symplectic rank `2N-2`;
-- a one-dimensional intersection generated by the equality of matter and
-  auxiliary total parity.
+Route B constructs an exact finite reversible adjacent collision sorter, but
+its packet creators commute and its CAR anticommutator residual is 2. Route C
+constructs one frame-free six-face conditional word with all 24/all 576
+proper-cubic geometry covariance, but the endpoint stream has nonzero
+full-Fock sign mismatches on L3/L6/L7. These independent lemmas do not compose
+with Route A into the same encoding.
 
-Those identities describe a fixed topological-flux sector. The bounded local
-syndromes alone have rank `15N-2`, code exponent `7N+2`, and maximum weight
-28. The exact fixed sector adds three noncontractible Wilson selectors. Their
-maximum support is 28, 39, and 45 on L3, L6, and L7. Without those three
-selectors, the mapped-matter and gauge quotients each acquire three extra
-topological operators and their intersection grows from one to four. Thus the
-bounded local syndrome family is genuine, but the exact Cycle-251 target
-sector is not enforced solely by local constraints.
+## Frozen dependency shore
 
-The existing physical covariance calculation is reexecuted: the complete
-bounded generator family is covariant under all 24 proper-cubic frames and
-coarse translations. Bounded Pauli rotations of weight at most 18 admit the
-standard support-one basis changes, support-two CNOT ladder, one local phase
-rotation, and inverse uncompute. The Cycle-610 bus is a generic bounded router
-once coordinates are selected, but this tournament does not construct or
-audit one literal placement of all 22 Cycle-251 roles in that bus. Route A is
-therefore not a composed nearest-neighbor coordinate compiler.
+The runner byte-pins the corrected Cycle 610 quartet at:
 
-All 64 local occupation words are admitted logically: vacuum, every
-single-particle word, adjacent collision words, and the fully occupied word.
-The local CAR residual, odd/even leakage, parity commutator, and norm residual
-for a coherent superposition spanning both parity blocks are tested. This
-removes the exactly-one restriction at the even-observable/update level and
-admits arbitrary finite density within both parity blocks without a runtime
-global parity service.
+| artifact | SHA-256 |
+|---|---|
+| runner | `ed2250711646ad99bf077e74b8e4194f2df0a2cf368d3c05c45ea95cac8083db` |
+| note | `3768d2a1407bdc8de06e2a55fa18300469b1006c0a16a78ada8b8d3a4b936105` |
+| receipt | `375f843606a81970ae50f71d74c53f7e4c4d1437007daaecbedd0b19e3fdfa34` |
+| cold output | `0adbee38e398c9e1d1ccd2733454ead2669338b86d48cbefa5331abb78c126e8` |
 
-The boundary is equally explicit. The code decomposes sectorwise as
+It also directly pins the Cycle 269 runner
+`c7b8673eb1a0dced08131820caa1fb2400fc8d1f73cfe2cddf5f8a28f9045d35`
+and note
+`d5a39e45949cf079f6c37fa5646d00a9319d7d2776d84323d9adf1c086e06beb`,
+then reconstructs the complete inherited science graph.
 
-`(H_m,+ tensor H_g,+) direct-sum (H_m,- tensor H_g,-)`.
+The corrected Cycle 610 result has 18 passing tests, authority none, and audit
+unset. Its useful result is conditional coarse-grid geometry. Its own fields
+say that no literal physical encoder was composed, the physical intertwiner
+residual is null—equivalently, **physical intertwiner residual is null**—
+physical leakage was not evaluated, and promotion to a
+physical M2 law is false. Its one-fine-site x-translation symmetric
+differences are exactly 2,970, 23,760, and 37,730 on L3/L6/L7.
 
-Auxiliary parity is locked to matter parity. No bounded identification of the
-two auxiliary parity factors and no common pure full-Fock state-preparation
-isometry is constructed. The tested root/tree canonical supports grow as
-162, 1296, and 2058 on L3, L6, and L7. Therefore the sectorwise even algebra
-does not pass the common pure full-Fock E gate.
+Cycle 610's conditional one-particle mass, contact, and seam fixture remains
+byte-pinned prior evidence. Cycle 617 does not freshly reexecute that fixture
+inside a new physical E and receives no physical preservation credit from it.
+The pinned factor order remains
 
-Disposition: retain Route A as the strongest constructive fixed-flux
-operator result. It does not satisfy the fully local-constraint gate, and it
-also does not pass the common cross-parity encoder gate.
+```text
+coin -> stream S (U=S C) -> contact.
+```
 
-## Route B — reversible collision/syndrome reservoir
+Its noncommutation witness is retained as a supplied-order control. The
+compiler schedule is not physical time, a phase is not physical energy, and a
+generator element is not a rate.
 
-Route B instantiates eight tagged input lanes, a seven-packet reservoir, and
-the complete 28-stage adjacent comparator network. Each comparator computes
-its predicate into one archive bit, performs a controlled swap, and retains
-that bit. The inverse reverses the swap and clears the predicate, so renewal
-returns the entire archive to blank.
+## Route A — fixed-Wilson bounded even algebra
 
-Every one of the 256 occupancy patterns is tested for sorting, number and
-odd/even conservation, inverse recovery, and clean renewal. Because each
-microstep is a reversible permutation, its coherent extension is unitary.
-Deleting a comparator produces an explicit distinguishing input. Eight
-packets produce one explicit overflow; no deletion or hidden erasure is
-allowed.
+The Cycle 251 puncture graph uses 22 physical M2 factors per coarse cell.
+Every bounded local constraint has weight at most 28, every mapped matter
+generator has weight at most 11, and every tested auxiliary generator has
+weight at most 18. The route reexecutes:
 
-Cycle-230 itself has one fermion per directional mode, so its bijective stream
-delivers at most six occupied modes to a cell: capacity seven has zero
-Cycle-230 overflow. A broader tagged-packet traffic law allowing seven packets
-per incoming bond can deliver 42 packets from six predecessors to a
-capacity-seven target, leaving overflow 35. That is an explicit generalized
-traffic stress outside the Cycle-230 lawful domain, not a Cycle-230 recurrent
-failure. The capacity residual is distinct from fermionic statistics. Tagged
-tensor-product packet creators commute, and their CAR anticommutator residual
-is nonzero, so collision sorting does not supply a CAR sign.
+| L | split | M2 | fixed rank | fixed exponent | local rank | local exponent | Wilson increment | matter quotient / symplectic | auxiliary quotient / symplectic |
+|---:|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 3 | train | 594 | 406 | 188 | 403 | 191 | 3 | 323 / 322 | 53 / 52 |
+| 6 | held | 4,752 | 3,241 | 1,511 | 3,238 | 1,514 | 3 | 2,591 / 2,590 | 431 / 430 |
+| 7 | held-out-size | 7,546 | 5,146 | 2,400 | 5,143 | 2,403 | 3 | 4,115 / 4,114 | 685 / 684 |
 
-Disposition: retain the exact finite collision, archive, inverse, deletion,
-overflow, renewal, and sufficient Cycle-230 capacity lemmas; reject it as a
-full-Fock compiler because it supplies no CAR sign.
+The fixed-code matter/auxiliary intersection is one parity relation,
+`P_g=P_m`. With only bounded local checks, the intersection dimension is four
+and the three Wilson labels remain. The full fixed-flux selector maximum
+supports are 28, 39, and 45. Root-tree canonical Pauli supports grow as 162,
+1,296, and 2,058. Those measured supports are reported as global presentation
+costs, not as a universal bounded-E result.
 
-## Route C — frame-free six-face word
+The first independent Wilson deletion lowers fixed rank by one. Deleting the
+tested independent local constraint lowers local rank by one. The all-24 and
+unit-coarse-translation covariance audit is reexecuted with zero failures.
 
-Route C removes the supplied uniform 24 one-hot role field at register-word
-geometry resolution. It places the six logical modes at the six face centers
-of one cubic supercell. Proper-cubic rotations permute this single set, so
-there are zero orientation bits and zero host-selected frame branches.
+The retained statement is a bounded fixed-Wilson even-observable
+representation. It does not supply odd creators, a common coherent cross-
+parity physical E, an autonomous initial state, or a literal Cycle 610
+coordinate composition.
 
-The construction gives one literal word, not 24 analytic rotations:
+### Cycle 269 reconciliation
 
-1. an exact Givens decomposition of the supplied six-mode coin and its
-   exterior lift;
-2. three onsite opposite-face fermionic swaps for A;
-3. the nearest-neighbor cross-face B matching;
-4. fifteen onsite pair phases for contact.
+The complete connected Cycle 269 edge code is separately reexecuted rather
+than conflated with the rough-terminal Cycle 251 code:
 
-Every two-mode onsite factor has an explicit finite radial move/apply/return
-path. All path edges are nearest neighbor, every primitive has support-two or
-less, and the path is returned. The total local word is checked under all 24
-frames and all 576 frame products. This schedule is a factorization of an
-update, not physical time.
+| L | split | M2 | local rank / exponent | fixed-Wilson rank / exponent | matter quotient / symplectic | radical / commutant | each membrane weight |
+|---:|---|---:|---:|---:|---:|---:|---:|
+| 3 | train | 405 | 241 / 164 | 244 / 161 | 325 / 322 | 3 / 3 | 9 |
+| 6 | held | 3,240 | 1,942 / 1,298 | 1,945 / 1,295 | 2,593 / 2,590 | 3 / 3 | 36 |
+| 7 | held-out-size | 5,145 | 3,085 / 2,060 | 3,088 / 2,057 | 4,117 / 4,114 | 3 / 3 | 49 |
 
-The decisive full-Fock test rejects the direct endpoint interpretation.
-For every two-particle basis word on L3, L6, and L7, the runner compares the
-sign of the abstract exterior lift `Gamma(B)` with the product of local
-endpoint fermionic swaps. Witnesses with an occupied endpoint and an occupied
-mode between canonical images disagree. This is the familiar sign residual
-measured directly, not a shipped impossibility claim and not a request for a
-global parity service.
+All eight Wilson sign choices are phase-consistent and equal-dimensional at
+each size. Wilsons lie in the matter span, commute with the matter generators,
+and exhaust the radical/commutant quotient. The three membrane/Wilson
+pairings form the identity matrix. Local-check leakage is zero, but the three
+membranes have exactly L^2 matter anticommutators each. The local code, matter
+generators, and Wilson center also pass all 24 proper frames and the complete
+27-element L3 coarse-translation group; a fixed seam representative is not
+promoted to an invariant physical branch.
 
-Disposition: retain the frame-free shell and literal bounded word as a role
-genesis result; reject its ordinary endpoint stream as a full-Fock CAR
+This is the exact reason Cycle 617 removes the earlier spectator-independent
+wording. It is not a new impossibility statement and is not transferred from
+the Cycle 269 graph to every other encoding.
+
+## Target-side algebra control
+
+The abstract six-mode fixture tests all 64 occupations: 32 even and 32 odd,
+including vacuum, full occupation, and all 15 two-mode occupations. The CAR
+matrix residual, coherent-state norm residual, even/odd block leakage, and
+parity commutator are zero to numerical tolerance. Same-mode double creation
+is zero. The local contact at supplied `g=0.37` is included in the target word.
+
+This is an abstract target algebra and not a coarse CAR cell compiled into
+physical sites. It does not preserve the physical mass fixture or Cycle 230
+seam by itself.
+
+## Route B — reversible collision reservoir
+
+Route B uses eight input lanes, capacity seven, and a 28-stage adjacent
+comparator schedule. All 256 occupation patterns pass sorting, number/parity
+conservation, archive cleanup, renewal, and the explicit inverse. Deleting one
+comparator has a named witness. Eight arrivals produce one overflow.
+
+The generalized six-predecessor stress injects 42 tagged arrivals into
+capacity seven and reports 35 overflow packets. This stress is outside the
+Cycle 230 lawful domain. The lawful six incoming directional modes fit with
+zero overflow at capacity seven.
+
+Collision control remains distinct from fermionic signs. Tagged
+tensor-product packet creators commute with residual 0, while their CAR
+anticommutator residual is exactly 2. Route B supplies no CAR sign service.
+The 28 comparator layers are an explicit host-side schedule for this lemma,
+not causal time.
+
+## Route C — frame-free six-face conditional geometry
+
+Route C places six mode roles on the face shell without 24 one-hot orientation
+bits or a host-selected frame. The runner records **one literal word** that decomposes the coin into
+Givens factors, applies opposite-face onsite A swaps, nearest-neighbor endpoint
+B swaps, and onsite contact in the supplied factor order.
+
+The shell, routed support-two descriptors, and total register word pass all 24
+proper frames and all 576 frame/orientation products. The maximum primitive
+support is two M2 factors. These are conditional geometry and word facts, not
+a physical one-fine-site law.
+
+The endpoint B permutation is an involution at L3/L6/L7, but its two-particle
+sign mismatches against the abstract exterior lift are 4,140, 154,800, and
+340,452. Route C therefore does not furnish the required full-Fock CAR
 intertwiner.
 
-## Joint disposition and fixtures
+## Joint disposition and exact residuals
 
-No one encoding in this tournament composes all three partial results.
-Route A needs three nonlocal Wilson selectors, lacks a literal Cycle-610
-coordinate composition, and lacks a common cross-parity pure E. Route B has
-sufficient Cycle-230 capacity but lacks fermionic signs; its broader traffic
-stress is outside the lawful Cycle-230 domain. Route C fails the full-Fock
-B-sign test. Consequently the full
-`E G_coarse = G_physical E` claim is withheld.
+| obligation | disposition |
+|---|---|
+| bounded support / constant overhead per coarse cell | route-local positive |
+| bounded locally stated checks | Route A positive |
+| all 24 / all 576 route covariance | route-local positive |
+| no global Jordan–Wigner runtime service | positive in Route A |
+| fixed-Wilson even algebra | positive on L3/L6/L7 |
+| unfixed-sector spectator factor | not retained; Cycle 269 gives eight central blocks and matter-active membranes |
+| reversible finite collision control | Route B positive |
+| collision CAR signs | residual 2; absent |
+| frame-free shell word | conditional geometry positive |
+| endpoint B full-Fock signs | mismatch counts 4,140 / 154,800 / 340,452 |
+| fresh one-particle mass / contact / seam in a new physical E | not executed |
+| one same-encoding `E G_coarse = G_physical E` | open |
 
-The accepted Cycle-610 one-particle mass, local contact, Cycle-230 seam,
-factor order, factor deletion, inverse, and noncommutation fixtures remain
-reproduced from the byte-pinned shore. Wrapped phase is not called physical
-energy, a factor schedule is not called time, a generator element is not
-called a rate, and no pointer copy is called a Record.
+No route-specific failure is promoted to a shared substrate obstruction.
 
-## Updated dependency ledger
+## Supplied-structure inventory
 
-- `C_ref`: unchanged; reference/phase selection remains supplied.
-- `C_num`: improved at even-observable finite-density resolution; a common
-  coherent cross-parity pure encoder remains open.
-- `C_wrap`: unchanged; the modular seam fixture remains reproduced.
-- `C_int`: unchanged constructive contact and noncommutation fixture;
-  coupling selection remains supplied.
-- `C_local`: improved by bounded 22-M2 even-CAR generators and the frame-free
-  shell; three Wilson selectors and the joint physical full-Fock compiler
-  remain open.
-- `C_source`: unchanged; no autonomous source/resource law is derived.
+The tournament supplies:
 
-Maturity scores remain operational quantum/records 3.0, causal time 2.0,
-inertia/matter 3.5, gravity/source 2.5, and Born/probability 1.5.
+1. the cubic coarse lattice, periodic sizes, and test splits;
+2. the Cycle 251 rough-terminal graph, 22 M2 roles, code signs, and three fixed
+   Wilson choices for the fixed-sector test;
+3. the Cycle 269 connected edge graph and its local-check presentation;
+4. the Cycle 230 six-mode CAR law, beta, contact coupling `g`, and factor order;
+5. the corrected Cycle 610 supplied coarse partition, origin, and conditional
+   coordinate paths when comparing geometry;
+6. blank path/work registers and gate-angle precision;
+7. the Route B capacity-seven reservoir, tag ordering, and 28-bit archive;
+8. the Route C shell coordinates and host enumeration used for exhaustive
+   covariance testing; and
+9. initial state/code-space selection and boundary conditions.
 
-## Fresh no-go discipline
+Wilson labels, auxiliary values, pointer-like copied tags, compiler layers,
+and schedules are not Records.
 
-### N1 — alternative-route enumeration
+## N1–N8 no-go-discipline gate
 
-The normalized family ledger includes the executed local gauge subsystem,
-reversible collision reservoir, and frame-free shell; the prior direct
-spectator encoding, parity shuttle, and local full-Fock extensions; and live
-higher-form/non-Pauli gauge and autonomous code-preparation families.
+The current no-go-discipline skill and proof-search governance are
+byte-identified in the receipt. This section withholds every broad negative,
+minimum-content, shared-obstruction, and axiom-pressure claim.
 
-### N2 — wall-independence audit
+### N1 — normalized alternative routes
 
-All pairs among common full-Fock E, local enforcement of the three Wilson
-relations, generalized tagged-traffic capacity outside the Cycle-230 domain,
-frame-free stream signs, and autonomous code preparation are examined. The
-observed residuals are distinct. No wall is inferred from another.
+The exact qualifying markers are:
 
-### N3 — hidden-wall scan
+1. **ATTEMPTED** — Cycle 251 fixed-Wilson 22-M2 even algebra.
+2. **ATTEMPTED** — Cycle 269 Wilson-unfixed connected edge code and membrane
+   reconciliation.
+3. **ATTEMPTED** — Route B reversible tagged collision reservoir.
+4. **ATTEMPTED** — Route C frame-free six-face conditional word.
+5. **RULED OUT BY PRIOR** — corrected Cycle 610 promotion of its supplied
+   129-period motif to a one-fine-site physical law.
+6. **ATTEMPTED** — abstract six-mode Cycle 230 target algebra.
 
-Local checks do not prepare their code space, and the exact Route-A target
-sector also fixes three noncontractible Wilson relations and inherits a
-period-16 physical role marker. Blank bus paths, the coarse supercell centers,
-beta, coupling, factor order, precision, and initial state remain supplied.
+Fixed-sector physical composition, an eight-block twisted-family compiler, and
+the contractible operational quotient are **OPEN / NOT COUNTED AS ATTEMPTED OR
+RULED OUT**.
+
+### N2 — condition-independence audit
+
+The collapsed walls are physical full-Fock E; treatment of the eight Wilson
+blocks; same-encoding CAR-correct frame-free B stream; fine-site translation
+covariance; and autonomous preparation/renewal. All ten unordered pairs are
+audited in both directions. No executed implication closes either direction,
+so no shared witness is inferred.
+
+### N3 — hidden-condition scan
+
+The required phrases—“we assume,” “by construction,” “as is standard,” “the
+framework provides,” “bridge context,” “background,” “naturally,” “obviously,”
+“standard QFT,” “registered,” and “canonical”—are scanned. “Canonical” occurs
+only for a measured Pauli support or seam presentation and is non-load-bearing.
+The three Wilson signs, supplied Cycle 610 partition/origin, absent autonomous
+preparation, beta, `g`, factor order, and phase precision are promoted to the
+explicit supply list.
 
 ### N4 — residual matching
 
-The receipt records the growing Route-A canonical support, Route-B overflow
-and CAR residual, and exact Route-C L3/L6/L7 sign-mismatch counts. Each claim
-is matched to its measured residual.
+Cycle 269 note lines 29–88 match the reexecuted eight-sector, radical,
+commutant, and L^2 matter-active membrane residuals. Cycle 251 note lines
+20–54 match the fixed-parity bounded algebra and missing bounded full-Fock E.
+Corrected Cycle 610 note lines 25–45 and 95–98 match the translation falsifier
+and absent physical E/intertwiner/leakage. Each match is scoped to its own
+presentation; none is reused as route-independent proof.
 
-### N5 — rhetoric audit
+### N5 — resolution and rhetoric audit
 
-An even algebra is not called a full-Fock encoder, a collision permutation is
-not called fermionic statistics, and a frame-free layout is not called a
-CAR-faithful compiler. No minimum-content claim ships.
+The runner separately records onsite operator, contractible patch, fixed
+Wilson block, eight-block family, and full periodic-update resolutions. It
+also separates bounded checks from preparation; abstract algebra from
+physical E; route covariance from fine-site physical covariance; and abstract
+finite density from odd creators and coherent physical parity encoding. The
+narrowed language is “fixed-Wilson even-algebra representation” and
+“conditional geometry lemma.”
 
 ### N6 — partial-closure path scan
 
-Route A is retained as the physical even-operator substrate and Route C as a
-role-genesis-free layout lemma. The next construction must combine them in
-one encoding rather than narratively splice them.
+Retained paths are the Cycle 617 narrowed quartet, the prior Cycle 269 direct-
+sum certificate, an open fixed-sector physical composition, an open twisted-
+family or operational-quotient compiler, and open autonomous preparation plus
+fine-site covariance. None requests a new axiom.
 
-### N7 — steelman
+### N7 — hostile steelman
 
-A non-Pauli or higher-form local gauge code, or an autonomous
-code-preparation QCA, may identify the two gauge parity factors without a
-global service. That family remains live.
+A live constructive repair chooses one Wilson block and composes its bounded
+even algebra into literal physical coordinates. A second retains all eight
+blocks as targets `G_coarse(w)`. A third proves a light-cone theorem for the
+contractible observable net and quotients the Wilson center only when no
+global word is measured. Cycle 269 makes the blocks explicit and Cycle 251
+makes fixed-sector generators bounded, so missing materialization is not a
+contradiction. Status: **OPEN / no retained authority**.
 
 ### N8 — cross-cycle echo
 
-Cycles 248, 251, 261, 276, and 312 repeatedly separate bounded even algebra
-from a coherent full-Fock state encoder. Recurrence raises the priority of a
-new constructive family; it does not establish a substrate-independent
-obstruction.
+Cycle 251 supplies the fixed-parity bounded algebra. Cycle 269 corrects the
+unfixed-sector spectator interpretation. Cycle 276 keeps the three routes
+separate. Cycle 312 carries higher-number sign witnesses without closing the
+twisted or quotient candidates. Corrected Cycle 610 demotes its supplied-grid
+physical promotion. Rebuilt Cycle 617 retires its own spectator/tensor wording
+and preserves only executed route-local positives.
 
-## Conclusion and next campaign
+**Broad negative gate: FAIL / DO NOT SHIP.**
 
-There is no route-independent obstruction and no axiom pressure. The failure
-is an unfinished common implementation, not constitutional evidence.
+**Minimum-content gate: FAIL / DO NOT SHIP.**
 
-The next campaign should construct one frame-covariant non-Pauli or
-higher-form gauge encoding with a bounded cross-parity isometry, autonomous
-local syndrome preparation, and the literal six-face B stream in that same
-code. It should test odd/even coherent sectors, malformed syndromes, deletion,
-translation/proper-cubic covariance, and L3/L6/L7 seams before any renewed
-negative claim.
+**Shared-obstruction gate: FAIL / DO NOT SHIP.**
+
+**Axiom-pressure gate: FAIL / DO NOT SHIP.**
+
+**Narrowed positive artifact gate: PASS.**
+
+There is no shared obstruction and no axiom pressure.
+
+## Dependency ledger and next campaign
+
+- `C_ref`: unchanged; reference, spin/twist character, and phase choices remain
+  supplied.
+- `C_num`: improved only for a fixed-Wilson even algebra and exact abstract
+  six-mode occupations; common physical cross-parity E remains open.
+- `C_wrap`: clarified; eight finite-torus spin/twist blocks are explicit, while
+  the conditional Cycle 230 seam fixture is pinned but not freshly promoted.
+- `C_int`: unchanged; abstract local contact and factor-order controls remain,
+  but no new physical contact intertwiner is constructed.
+- `C_local`: improved by bounded fixed-sector generators and explicit
+  L3/L6/L7 sector reconciliation; same-encoding physical full-Fock locality,
+  fine-site covariance, and preparation remain open.
+- `C_source`: unchanged; no autonomous source/resource law is derived.
+
+Maturity remains operational quantum/records 3.0/5, causal time 2.0/5,
+inertia/matter 3.5/5, gravity/source 2.5/5, and Born/probability 1.5/5.
+
+The optimal next campaign is the N7 tournament: independently attempt a
+literal fixed-sector physical composition, an eight-block twisted-family
+compiler, and a finite-light-cone operational quotient. Each must execute
+physical E, the full update, one-particle mass, contact, seam, leakage,
+deletion, L3/L6/L7, all 24 frames, and one-fine-site translations before any
+renewed negative or axiom-pressure language.

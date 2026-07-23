@@ -1885,7 +1885,7 @@ def _campaign_failure_schema_error(
         )
     if "pass" in expected:
         pass_no = failure.get("pass")
-        if isinstance(pass_no, bool) or pass_no not in {1, 2}:
+        if type(pass_no) is not int or pass_no not in {1, 2}:
             return "campaign exclusion failure pass must be 1 or 2"
     if "detail" in expected:
         detail = failure.get("detail")

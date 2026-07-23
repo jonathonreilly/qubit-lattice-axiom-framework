@@ -1,0 +1,228 @@
+{
+  "accepted_Cycle573_ancestor_commit": "69e1a7cfbc47ddd73c07e3d4ea8854226cd41389",
+  "audit": "unset",
+  "authority": "none",
+  "branch_head_equality_is_scientific_dependency": false,
+  "cold_internal_elapsed_seconds": 0.24230858299415559,
+  "cold_maximum_RSS_bytes": 87277568,
+  "controls": {
+    "E_G_and_inverse_tested": true,
+    "all24_and_all576_tested": true,
+    "constant_bounded_overhead_on_declared_codes": true,
+    "deletion_and_work_leakage_visible": true,
+    "generator_entry_called_rate": false,
+    "malformed_words_rejected": true,
+    "no_clock_dimension": true,
+    "phase_called_energy": false,
+    "projector_weight_called_probability": false,
+    "reusable_comparison_work_blank": true,
+    "schedule_called_time": false,
+    "source_variation_called_gravity_or_redshift": false,
+    "transition_receipt_called_Record_or_actuality": false,
+    "undefined_coerced_to_zero": false
+  },
+  "definitive_run_HEAD": "69e1a7cfbc47ddd73c07e3d4ea8854226cd41389",
+  "exact_pinned_dependencies": {
+    "Cycle219_runner_sha256": "ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a",
+    "Cycle230_runner_sha256": "b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae",
+    "Cycle563_receipt_sha256": "350e2c1922379bb42091e1cb5685c9e1f698ed23b81acf7c14803ba5043fcfc1",
+    "Cycle563_runner_sha256": "444a5c0fb3cb1758236ddefaeb472d0002cadb256d3c4df723fd562129c7325b",
+    "Cycle569_receipt_sha256": "c80aae229d3721b273d12188960e2a4b16402d10a982856bec76c465dad52baa",
+    "Cycle569_runner_sha256": "c0f06a9cc9ffc4dcfe1d80b94da10bbef81ca1c74fddddac48712b0a7c332ced",
+    "Cycle570_receipt_sha256": "f104399af621ded1b50e180e6fcce5f254008715b72191c6199fe4d583a8a806",
+    "Cycle570_runner_sha256": "853abe5470efd15b154d6cb348d49795a6fa84e77a62f0b21a79105892b1d415",
+    "Cycle573_note_sha256": "7c27ee648c4865985c7286ebb8c332f6c91846cebb608aafab79222b4e2ef1b5",
+    "Cycle573_receipt_sha256": "bac4169a90f7bf45dd05fa0ea1a9febd96497ddb664fcf7673c365b456422e0a",
+    "Cycle573_runner_sha256": "e959fa0ef29787b6eaca0fa0552ad3e921541432e11cdefffda7e9255472ff77"
+  },
+  "frozen_split": {
+    "held_refit_parameters": 0,
+    "route_A_held": {
+      "beta": -0.35,
+      "contact_source": -0.23,
+      "length": 9
+    },
+    "route_A_train": [
+      {
+        "beta": -0.2,
+        "contact_source": 0.0,
+        "length": 5
+      },
+      {
+        "beta": -0.3,
+        "contact_source": 0.37,
+        "length": 7
+      }
+    ],
+    "route_B_held": {
+      "beta": -0.35,
+      "contact_source": -0.23,
+      "length": 9,
+      "width": 1.9
+    },
+    "route_B_train": [
+      {
+        "beta": -0.2,
+        "contact_source": 0.0,
+        "length": 7,
+        "width": 1.5
+      },
+      {
+        "beta": -0.3,
+        "contact_source": 0.37,
+        "length": 7,
+        "width": 1.8
+      }
+    ],
+    "route_C_held": [
+      {
+        "clock_beta": -0.41,
+        "contact_source": -0.23,
+        "envelope_beta": -0.35,
+        "length": 9,
+        "width": 2.0
+      },
+      {
+        "clock_beta": -0.41,
+        "contact_source": 0.51,
+        "envelope_beta": -0.35,
+        "length": 9,
+        "width": 2.2
+      }
+    ],
+    "route_C_train": [
+      {
+        "clock_beta": -0.25,
+        "contact_source": 0.0,
+        "envelope_beta": -0.2,
+        "length": 5,
+        "width": 1.2
+      },
+      {
+        "clock_beta": -0.32,
+        "contact_source": 0.37,
+        "envelope_beta": -0.3,
+        "length": 7,
+        "width": 1.7
+      }
+    ]
+  },
+  "no_go_discipline": {
+    "N1_through_N8_executed": true,
+    "axiom_pressure": false,
+    "independent_wall_pairs": 36,
+    "minimum_content_claim": false,
+    "normalized_route_families": 6,
+    "route_specific_failure_promoted_to_shared_obstruction": false,
+    "shared_substrate_obstruction": false
+  },
+  "note_sha256": "59bc7ae275140943f017d2a31107504e19fc8871c3bb7881d5b796761ada05ec",
+  "optimal_next_campaign": "search the unmodified massive Cycle219/contact update for a compact flat-band pair or nonlinear self-bound orbit; otherwise derive the Route-B control tag from a recyclable local QCA carrier and add a genuine Route-C envelope-clock interaction that makes the decoupled spectator control fail",
+  "pass": true,
+  "retained_physical_fixtures": {
+    "axis_seam_braid_residual": 0.0,
+    "contact_factorization_residual": 2.149937642474629e-15,
+    "one_particle_mass_residual": 8.7159799596118e-16
+  },
+  "route_A_carrier_generated_star_defect": {
+    "autonomous_moving_transport_closed": false,
+    "carrier_M2": 7,
+    "carrier_local_adjacency_constraint_enforced": true,
+    "carrier_stationarity_law_supplied": true,
+    "coin_cancel_reversal_contact_supplied": true,
+    "deleted_shell_role_signal": 0.5206306602938691,
+    "disposition": "positive exact compact transition under a supplied in-state carrier and engineered stationary defect law; moving transport open",
+    "host_coordinate_potential": false,
+    "maximum_EG_inverse_norm_or_leakage_residual": 1.6318698558282648e-15,
+    "maximum_all24_covariance_residual": 4.524449626803486e-16,
+    "static_host_trap": false
+  },
+  "route_B_carried_autonomous_inverse_echo": {
+    "M2_per_cell_per_standard": 12,
+    "arbitrary_full_domain_involution_residual": 4.613815283669683e-16,
+    "arbitrary_full_domain_norm_residual": 4.440892098500626e-16,
+    "carried_control_law_supplied": true,
+    "comparison_cleanup_deletion_leakage": 1.0000000000000013,
+    "comparison_cleanup_deletion_state_change": 1.414213562373096,
+    "disposition": "strongest positive: exact original-six-mode packet refocusing with a carried supplied two-rail controller and local accepted factors",
+    "host_chosen_mirror_cadence": false,
+    "inverse_branch_deletion_signal": 0.3427835443132167,
+    "maximum_EG_inverse_norm_tag_residual": 4.884981308350689e-15,
+    "maximum_covariance_residual": 1.7197510827642688e-16,
+    "maximum_local_RSR_inverse_compiler_residual": 0.0,
+    "maximum_local_forward_compiler_residual": 0.0,
+    "maximum_physical_comparison_inverse_residual": 1.2444831855111774e-15,
+    "maximum_physical_comparison_norm_residual": 1.3322676295501878e-15,
+    "net_transport_after_echo": false,
+    "nonlocal_inverse_service": false,
+    "paired_frame_comparisons": 576,
+    "paired_frame_failures": 0,
+    "proper_cubic_frames": 24,
+    "reusable_comparison_work_M2": 3,
+    "second_reversal_deletion_signal": 1.4142135623730951
+  },
+  "route_C_composite_internal_transition": {
+    "additional_M2_per_cell_over_six_mode_matter": 30,
+    "clock_coin_deletion_signal": 1.414213562373095,
+    "clock_is_dynamically_bound_to_envelope": false,
+    "clock_is_kinematically_attached_by_rail_identity": true,
+    "decoupled_clock_transition_residual": 5.202840303283412e-16,
+    "decoupled_clock_transition_weight": 1.0000000000000009,
+    "disposition": "positive exact moving-envelope carriage on a supplied 36-rail tensor code; decoupled control shows the clock is a spectator rather than matter-derived",
+    "envelope_to_clock_coupling_signal": 2.3536266308767165e-15,
+    "fresh_work_M2_per_prefix": 0,
+    "matter_M2_per_cell_per_standard": 36,
+    "maximum_EG_inverse_norm_factorization_mass_channel_residual": 6.994405055138486e-15,
+    "maximum_composite_coin_covariance_residual": 0.0,
+    "maximum_physical_comparison_inverse_residual": 1.204405698968264e-15,
+    "maximum_physical_comparison_norm_residual": 1.3322676295501878e-15,
+    "maximum_terminal_support_M2": 3,
+    "one_clock_rail_deletion_leakage": 0.0021068133820173474,
+    "paired_frame_comparisons": 576,
+    "paired_frame_failures": 0,
+    "proper_cubic_frames": 24,
+    "stream_deletion_signal": 0.21567773497388604,
+    "two_standard_plus_reusable_work_M2_per_cell": 75
+  },
+  "runner_sha256": "7221d4ebb86fd599cf9dc7cc42535ad5ec461f99661f718c6a2b8d9317c64ba7",
+  "scope_boundary": {
+    "Born_probability_closed": false,
+    "FORMATION_Record_actuality_closed": false,
+    "axiom_pressure": false,
+    "broad_localization_no_go_gate": "FAIL / DO NOT SHIP",
+    "carried_control_law_derived": false,
+    "carrier_defect_law_derived": false,
+    "composite_tensor_content_derived": false,
+    "continuum_Lorentz_proper_time_closed": false,
+    "dynamical_envelope_clock_binding_closed": false,
+    "empirical_dimensionful_scale_derived": false,
+    "highest_honest_terminal": "finite autonomous localized/refocused matter-transition candidates under explicitly supplied carrier, inverse-control, or composite-content laws; not intrinsic proper time",
+    "independent_clock_universality_closed": false,
+    "intrinsic_unmodified_six_mode_moving_clock_closed": false,
+    "shared_substrate_obstruction": false,
+    "source_gravity_closed": false
+  },
+  "six_wall_ledger": {
+    "C_int": "accepted mass/contact transition used without naming phase energy or a generator entry rate",
+    "C_local": "star radius one, carried 12-rail echo, 36-rail composite with 30 extra rails, support-three receipts, all24/all576; compiler and dynamical-binding retirement open",
+    "C_num": "exact finite E/G, inverse, factorization, composition and covariance residuals; no empirical duration scale",
+    "C_ref": "localized carrier/echo/composite transition references constructed; preparation and update content remain supplied, and the composite clock is a kinematically attached spectator",
+    "C_source": "contact/source phase varied as a common-mode input only; no stress, gravity, redshift, or backreaction law",
+    "C_wrap": "comparison work returns blank and carried echo control recycles; unbounded/noisy renewal remains open"
+  },
+  "status": "cycle575-autonomous-localized-refocused-matter-transition-tournament",
+  "tests_passed": 8,
+  "tests_total": 8,
+  "typed_downstream_interface": {
+    "Cycle456_classifier_consumed_here": false,
+    "Cycle456_compatible_word_builder_may_consume_later": true,
+    "Cycle456_law_tags_consumed_here": false,
+    "Record_or_Born_semantics_assigned": false,
+    "endpoint_words_consumed_here": false,
+    "rails": [
+      "reference_transition_candidate",
+      "probe_transition_candidate",
+      "comparison_agreement_candidate"
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+ "cycle": 675,
+ "authority": "none",
+ "audit": "unset",
+ "contract_sha256": "174ce1cae3edce3f888f1ecb10e6d258d9ffd23c620aea5f92d6524c74e1bf32",
+ "consumed_cycle662": "18232a8cc85c8a6fc102a0bac3c83d7bea89ad337ed8cca2fedd16f78d326567",
+ "branch_tracked": {
+  "orders": {
+   "32": {
+    "theta": 0.3136860749863371,
+    "abs_b": 1.3520678688287408e-12
+   },
+   "40": {
+    "theta": 0.31368581847007615,
+    "abs_b": 1.0563073514526871e-12
+   }
+  },
+  "order_stable": true,
+  "theta_star": 0.31368581847007615,
+  "reading": {
+   "kind": "isolated_zero",
+   "transversality": 16.0756285695807
+  },
+  "plateau_reference": 0.31368
+ },
+ "labeled_vernier": [
+  {
+   "alpha_true": 0.0,
+   "alpha_rec": -2.794912236598213e-12,
+   "err": 2.795097486796294e-12,
+   "ok": true
+  },
+  {
+   "alpha_true": 0.7853981633974483,
+   "alpha_rec": 0.7850781072193836,
+   "err": 0.0003200561780647426,
+   "ok": true
+  },
+  {
+   "alpha_true": -0.7439,
+   "alpha_rec": 5.539326339725978,
+   "err": 4.103254639176157e-05,
+   "ok": true,
+   "R_rec": 1.249988335141429,
+   "a_count": 5
+  },
+  {
+   "alpha_true": 2.0,
+   "alpha_rec": 2.0004204775185768,
+   "err": 0.0004204775185767673,
+   "ok": true
+  },
+  {
+   "alpha_true": -2.9,
+   "alpha_rec": 3.3836566025066324,
+   "err": 0.0004712953270455955,
+   "ok": true
+  },
+  {
+   "alpha_true": 6.283185307179586,
+   "alpha_rec": -2.794912236598213e-12,
+   "err": 2.795097486796294e-12,
+   "ok": true
+  }
+ ],
+ "elapsed_seconds": 201.79603385925293,
+ "pass_count": 2,
+ "fail_count": 0,
+ "pass": true
+}

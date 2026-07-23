@@ -354,8 +354,14 @@ def execute_candidate(m672,c608,candidate,profiles,incident_row,cycle672_row) ->
         target_fixture_extractor_deletions.append({"full_word_ordinal":ordinal,"target_fixture_signal":signal})
     extractor_deletions,minimum_extractor=executed_factor_deletion_witnesses(m672,candidate["extractor"])
     deletion_rows,minimum_all=m672.factor_local_deletion_rows(candidate["full"])
+    W_descriptors=[f.descriptor(i) for i,f in enumerate(candidate["W"])]
     descriptors={"extractor_factors":[f.descriptor(i) for i,f in enumerate(candidate["extractor"])],
-                 "W_factors":[f.descriptor(i) for i,f in enumerate(candidate["W"])],
+                 "W_factor_descriptor_count":len(W_descriptors),
+                 "W_factor_descriptor_sha256":stable_digest(W_descriptors),
+                 "W_factor_descriptor_head":W_descriptors[:4],
+                 "W_factor_descriptor_tail":W_descriptors[-4:],
+                 "W_factor_full_export_serialized":False,
+                 "W_factor_full_export_regenerated_by_runner":True,
                  "predicate_factors":[f.descriptor(i) for i,f in enumerate(candidate["predicate"])],
                  "conjunction":candidate["conjunction"].descriptor(0),
                  "full_chronological_segments":["extractor_SWAP","inverse(W_cell)","Cycle672_detector=W_cell;P_A2;inverse(W_cell)",

@@ -7,23 +7,23 @@ PASS all24/all576 transported extractor and full-word covariance :: {'proper_cub
 PASS same-q/different-matter and same-matter/different-q controls :: {'cells': 23, 'fixtures': 460, 'max_interface': 9.560577135331224e-16, 'max_initial_q': 9.560577135331224e-16}
 PASS all 18 extractor factors have executed deletion signal :: 1.4142135623730951
 PASS full N1-N8; no broad negative or axiom claim :: {'W_incident_C_star_product': 'the proper-cubic-closed generic family executes the local Cycle672 A/SELECT/D detector variant but does not insert incident Cycle608 C equality rows or neighboring prepared branches into the product', 'W_same_device_generic_chart': 'each generic cell factor word and read block is compiled from the supplied Cycle608 chart; transported circuits are equivariant but one autonomous unprogrammed all-cell device is not constructed', 'W_framework_matter_identification': 'radius-four M2 occupancy rails are explicit independent physical inputs but their identification with an autonomous framework matter law is supplied'}
-REPORT_DIGEST 17fdd73828f542ec8920d2d4a6b400008ac6b227dcced3c11787d6bd85c75966
+REPORT_DIGEST c37125ca9c4e5fa3ef91ce935ad51e4137ceaa4307e3ad9a92ca409fcc4af251
 SUMMARY {'tests_passed': 9, 'tests_failed': 0, 'status': 'positive bounded reversible six-rail physical-occupancy-to-q SWAP extractor composed with the exact Cycle672 origin macro and a proper-cubic-closed generic local-macro family; incident-C star and same-device chart remain open'}
-      166.63 real       164.41 user         1.49 sys
-           254885888  maximum resident set size
+      165.84 real       163.71 user         1.47 sys
+           225935360  maximum resident set size
                    0  average shared memory size
                    0  average unshared data size
                    0  average unshared stack size
-              140881  page reclaims
-                3978  page faults
+              112003  page reclaims
+                3466  page faults
                    0  swaps
                    0  block input operations
                    0  block output operations
                    0  messages sent
                    0  messages received
                    0  signals received
-                8922  voluntary context switches
-               16500  involuntary context switches
-       3018643194984  instructions retired
-        616199842429  cycles elapsed
-           348897976  peak memory footprint
+                8247  voluntary context switches
+               17440  involuntary context switches
+       3015905669203  instructions retired
+        614108467885  cycles elapsed
+           286294712  peak memory footprint

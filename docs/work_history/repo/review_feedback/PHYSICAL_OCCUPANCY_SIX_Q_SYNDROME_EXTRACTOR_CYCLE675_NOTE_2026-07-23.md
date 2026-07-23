@@ -89,6 +89,14 @@ disjoint pairs.  This is compile-time transported circuit covariance.  It is
 not promoted to a same unprogrammed all-cell device, and there is no runtime
 frame selector.
 
+For reviewability, the receipt does not repeat every one of the 524–3,791
+generated `W_cell` factor descriptors for all 23 cells. It retains each word's
+factor count, canonical digest, and first/last four coordinate-explicit
+descriptors; the runner regenerates and executes the full word before writing
+those summaries. The extractor, predicate, conjunction, covariance sheath,
+residual, and deletion exports remain explicit. This is receipt compaction,
+not a reduced execution domain.
+
 Each of the 18 extractor factors has an executed full-extractor deletion
 witness with signal `sqrt(2)`.  The witness is constructed by applying the
 inverse prefix to a local matching-control/target-zero basis state.  Some

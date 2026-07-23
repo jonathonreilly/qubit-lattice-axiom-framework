@@ -1,0 +1,576 @@
+{
+  "Cycle667_consumed": {
+    "pass": true,
+    "strict_terminal_before_Cycle670": false
+  },
+  "E_G_selected_equals_G_physical_E_on_declared_code": false,
+  "Status": "PASS",
+  "audit": "unset",
+  "author_accepted": false,
+  "author_artifact_status_accepted": false,
+  "authority": "none",
+  "axiom_pressure": false,
+  "breakthrough": false,
+  "classification": "bounded constructive selected-record terminal partial with one exact physical coupling residual",
+  "constitutional_effect": "none",
+  "controller_placement": {
+    "all576_coordinate_composition_failures": 0,
+    "all_head_successor_bonds_fine_NN": true,
+    "fine_NN_phase_to_operand_corridors_jointly_placed": false,
+    "grant_carrier_edges": 85,
+    "grant_carrier_new_roles": 85,
+    "grant_endpoint": [
+      1,
+      65,
+      67
+    ],
+    "grant_endpoint_adjacent_to_returned_start_head": true,
+    "grant_path_sha256": "ba29bacb744c374b98fd8c6ea50a019584d75efe1dba2b861b16fc3e6680d93d",
+    "head_anchor_roles": 524,
+    "maximum_elementary_call_support_M2": 2,
+    "maximum_phase_offset_L1": 34,
+    "pass": true,
+    "phase_rail_count": 17,
+    "phase_roles": 8908,
+    "sizes": [
+      {
+        "Cycle667_parser_orbit_aliases": 0,
+        "K129_capacity_margin_after_Cycle667": 1628169,
+        "all24_orbit_injectivity_failures": 0,
+        "canonical_new_roles": 9517,
+        "held_out": false,
+        "length": 3,
+        "physical_new_M2": 228408,
+        "surface_collisions": {
+          "aux": 0,
+          "new_sidecars": 0,
+          "old": 0,
+          "prior": 0,
+          "route_support": 0
+        }
+      },
+      {
+        "Cycle667_parser_orbit_aliases": 0,
+        "K129_capacity_margin_after_Cycle667": 1628169,
+        "all24_orbit_injectivity_failures": 0,
+        "canonical_new_roles": 9517,
+        "held_out": false,
+        "length": 6,
+        "physical_new_M2": 228408,
+        "surface_collisions": {
+          "aux": 0,
+          "new_sidecars": 0,
+          "old": 0,
+          "prior": 0,
+          "route_support": 0
+        }
+      },
+      {
+        "Cycle667_parser_orbit_aliases": 0,
+        "K129_capacity_margin_after_Cycle667": 1628169,
+        "all24_orbit_injectivity_failures": 0,
+        "canonical_new_roles": 9517,
+        "held_out": true,
+        "length": 7,
+        "physical_new_M2": 228408,
+        "surface_collisions": {
+          "aux": 0,
+          "new_sidecars": 0,
+          "old": 0,
+          "prior": 0,
+          "route_support": 0
+        }
+      }
+    ]
+  },
+  "cycle": 670,
+  "date": "2026-07-23",
+  "deletion_and_return_controls": {
+    "delete_clear_CNOT_detected": true,
+    "delete_each_data_gate_positive_residual": 519,
+    "delete_each_grant_carrier_edge_nonlaunch_or_nonreturn": 85,
+    "delete_each_head_successor_bond_nonreturn": 524,
+    "delete_each_phase_role_or_transition_detected": 8908,
+    "delete_launch_CNOT_detected": true,
+    "grant_copy_launch_return_clear_calls": 340,
+    "head_phase_grant_carrier_return_blank": true,
+    "head_returns_to_launch_anchor_before_clear": true,
+    "pass": true,
+    "program_markers_and_typed_bonds_are_static_supplied_structure": true,
+    "token_gated_action_support1_2_calls": 37857
+  },
+  "exact_missing_coupling": "joint fine-NN collision-free operand-access corridors from each active phase role to each unchanged Cycle654 gate endpoint, including literal open/apply/close calls and deletion tests",
+  "exact_token_gated_kernels": {
+    "ancilla_free_CCX_primitive_count": 15,
+    "ancilla_free_Fredkin_primitive_count": 17,
+    "delete_each_primitive": {
+      "CCX": {
+        "count": 15,
+        "maximum_residual": 4.0,
+        "minimum_residual": 1.5307337294603587
+      },
+      "FREDKIN": {
+        "count": 17,
+        "maximum_residual": 4.0,
+        "minimum_residual": 1.5307337294603587
+      }
+    },
+    "exact_residuals": {
+      "CCX": 7.346882794269506e-16,
+      "FREDKIN": 7.346882794269506e-16
+    },
+    "inactive_head_sector_is_identity": true,
+    "maximum_elementary_support_M2": 2,
+    "pass": true,
+    "token_gate_rule": "one-site data U -> controlled-U support2; data-data CNOT -> exact CCX 15-call word; token-touching primitive unchanged",
+    "token_gated_support1_2_call_counts": {
+      "CCX": 43,
+      "FREDKIN": 73
+    }
+  },
+  "frozen_target": {
+    "domain": [
+      "L3",
+      "L6",
+      "held-out L7",
+      "24 proper-cubic frames",
+      "576 ordered frame products",
+      "selected exact last RLE record"
+    ],
+    "forbidden": [
+      "general RLE decoder claim",
+      "host schedule",
+      "global frame selector",
+      "blank genesis or renewal claim",
+      "all-face claim",
+      "full E claim",
+      "shared obstruction or axiom pressure"
+    ],
+    "required": [
+      "local grant launch",
+      "no host gate/site index",
+      "closed route-head ring",
+      "state-carried primitive phase",
+      "support-one/two calls",
+      "returned head/phase/grant carrier",
+      "exact selected-code intertwiner"
+    ],
+    "target": "computed Cycle667 grant through a local route-head cursor and state-carried primitive microphase into the unchanged 519-gate Cycle654 selected route, with controller blank return"
+  },
+  "maturity_0_to_5": {
+    "Born_and_probability": 1,
+    "causal_time": 1,
+    "gravity_and_source": 1,
+    "inertia_and_matter": 1,
+    "operational_quantum_and_records": 2
+  },
+  "no_go_discipline": {
+    "N1_negative_gate": "FAIL / DO NOT SHIP",
+    "N1_normalized_families": [
+      {
+        "family": "closed parallel-rail route head",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism": "one-hot local successor token",
+        "object": "524-cell NN anchor ring",
+        "result": "head/grant placement exact; operand corridors open",
+        "terminal": "fine-NN phase-to-data operand access"
+      },
+      {
+        "family": "local auxiliary phase rails",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism": "state-carried primitive cursor and token-gated calls",
+        "object": "17 proper-cubic phase-role copies per anchor",
+        "result": "role allocation and exact kernels pass; coupling open",
+        "terminal": "joint action-corridor placement"
+      },
+      {
+        "family": "binary phase counter",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism": "local reversible selector",
+        "object": "five phase bits plus enable",
+        "result": "capacity/role scout positive; not used as closure",
+        "terminal": "literal selector word at all 519 cells"
+      },
+      {
+        "family": "staggered coloured dispatcher",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism": "translation/all24 covariant matchings",
+        "object": "Cycle655 nine-colour state field",
+        "result": "prior local recurrence positive; not needed for head ring",
+        "terminal": "selected tape operand cells"
+      },
+      {
+        "family": "static host-ordered trace",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism": "external loop",
+        "object": "Cycle654 519-gate list",
+        "result": "exact data action but forbidden as completion witness",
+        "terminal": "no host dispatch/index/schedule"
+      }
+    ],
+    "N1_qualifying_attempts": 5,
+    "N2_collapsed_walls": {
+      "W_allface_scale": "one selected record is not all faces or all cells",
+      "W_full_E": "the demanded end-to-end physical selected-code intertwiner is not promoted while W_operand_corridors remains",
+      "W_general_decoder": "Cycle667 remains an exact selected-word recognizer, not a general RLE decoder",
+      "W_genesis_renewal": "grant marker, static program, typed bonds and blank controller roles are supplied",
+      "W_operand_corridors": "joint fine-NN routes from each placed phase token to the unchanged data operands are not materialized"
+    },
+    "N2_directed_pairs": [
+      {
+        "closure_implied": false,
+        "from": "W_operand_corridors",
+        "reason": "closing W_operand_corridors does not construct W_general_decoder",
+        "to": "W_general_decoder"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_operand_corridors",
+        "reason": "closing W_operand_corridors does not construct W_genesis_renewal",
+        "to": "W_genesis_renewal"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_operand_corridors",
+        "reason": "closing W_operand_corridors does not construct W_allface_scale",
+        "to": "W_allface_scale"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_operand_corridors",
+        "reason": "closing W_operand_corridors does not construct W_full_E",
+        "to": "W_full_E"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_general_decoder",
+        "reason": "closing W_general_decoder does not construct W_operand_corridors",
+        "to": "W_operand_corridors"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_general_decoder",
+        "reason": "closing W_general_decoder does not construct W_genesis_renewal",
+        "to": "W_genesis_renewal"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_general_decoder",
+        "reason": "closing W_general_decoder does not construct W_allface_scale",
+        "to": "W_allface_scale"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_general_decoder",
+        "reason": "closing W_general_decoder does not construct W_full_E",
+        "to": "W_full_E"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_genesis_renewal",
+        "reason": "closing W_genesis_renewal does not construct W_operand_corridors",
+        "to": "W_operand_corridors"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_genesis_renewal",
+        "reason": "closing W_genesis_renewal does not construct W_general_decoder",
+        "to": "W_general_decoder"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_genesis_renewal",
+        "reason": "closing W_genesis_renewal does not construct W_allface_scale",
+        "to": "W_allface_scale"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_genesis_renewal",
+        "reason": "closing W_genesis_renewal does not construct W_full_E",
+        "to": "W_full_E"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_allface_scale",
+        "reason": "closing W_allface_scale does not construct W_operand_corridors",
+        "to": "W_operand_corridors"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_allface_scale",
+        "reason": "closing W_allface_scale does not construct W_general_decoder",
+        "to": "W_general_decoder"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_allface_scale",
+        "reason": "closing W_allface_scale does not construct W_genesis_renewal",
+        "to": "W_genesis_renewal"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_allface_scale",
+        "reason": "closing W_allface_scale does not construct W_full_E",
+        "to": "W_full_E"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_full_E",
+        "reason": "closing W_full_E does not construct W_operand_corridors",
+        "to": "W_operand_corridors"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_full_E",
+        "reason": "closing W_full_E does not construct W_general_decoder",
+        "to": "W_general_decoder"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_full_E",
+        "reason": "closing W_full_E does not construct W_genesis_renewal",
+        "to": "W_genesis_renewal"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_full_E",
+        "reason": "closing W_full_E does not construct W_allface_scale",
+        "to": "W_allface_scale"
+      }
+    ],
+    "N2_independence_complete": false,
+    "N3_hidden_wall_scan": [
+      "selected-record genesis marker is supplied",
+      "17 phase rails and their blanks are supplied",
+      "static opcode/successor markers are supplied local structure",
+      "bounded token-gated action kernels do not themselves place fine-NN operand corridors",
+      "microphase call count is not time, rate or energy"
+    ],
+    "N4_exact_residual_matching": [
+      {
+        "closure": false,
+        "current_residual": "grant, closed head ring and phase roles are placed; joint fine-NN phase-to-operand access remains",
+        "prior_cycle": 667,
+        "prior_residual": "local grant-to-route-head token/cursor coupling and state-carried microphase open",
+        "same_scope": true
+      },
+      {
+        "closure": false,
+        "current_residual": "one selected instruction/head/phase embedding is placed, but its operand corridors are not jointly enumerated",
+        "prior_cycle": 655,
+        "prior_residual": "local exact dispatcher kernels, global instruction/operand embedding open",
+        "same_scope": "selected record only"
+      }
+    ],
+    "N5_five_resolution_rhetoric_audit": [
+      {
+        "claim": "closed route head",
+        "lattice_wide": "one selected record only",
+        "per_block": "head returns to launch",
+        "per_element": "every successor is NN",
+        "per_mode": "519 gates plus five NOPs",
+        "per_site": "524 unique anchors"
+      },
+      {
+        "claim": "proper-cubic phase placement",
+        "lattice_wide": "action corridors open",
+        "per_block": "L3/L6/L7 collision-free",
+        "per_element": "17 explicit offsets",
+        "per_mode": "all576 compositions",
+        "per_site": "generic 24-orbits"
+      },
+      {
+        "claim": "exact action kernel",
+        "lattice_wide": "kernel is not coupled placement",
+        "per_block": "all primitive deletions",
+        "per_element": "15-call CCX and 17-call Fredkin",
+        "per_mode": "active/inactive token sectors",
+        "per_site": "support at most two"
+      },
+      {
+        "claim": "returned controller",
+        "lattice_wide": "supplied blanks not renewed",
+        "per_block": "head/phase/carrier blank",
+        "per_element": "grant copy/shuttle/launch/clear",
+        "per_mode": "exact/malformed grant",
+        "per_site": "85-edge carrier"
+      },
+      {
+        "claim": "selected data action",
+        "lattice_wide": "strict physical intertwiner remains false",
+        "per_block": "exact CNOT",
+        "per_element": "519 unchanged gates",
+        "per_mode": "GF(2) basis and arbitrary amplitudes",
+        "per_site": "260 data roles"
+      }
+    ],
+    "N6_partial_closure_paths": [
+      {
+        "artifact": "Cycle670",
+        "closes": "literal grant path, closed head ring, state-carried phase-role placement and exact token-gated local kernels",
+        "does_not_close": [
+          "joint fine-NN routes from each placed phase token to the unchanged data operands are not materialized",
+          "Cycle667 remains an exact selected-word recognizer, not a general RLE decoder",
+          "grant marker, static program, typed bonds and blank controller roles are supplied",
+          "one selected record is not all faces or all cells",
+          "the demanded end-to-end physical selected-code intertwiner is not promoted while W_operand_corridors remains"
+        ]
+      },
+      {
+        "artifact": "next bounded step",
+        "closes": "joint all24 fine-NN operand-access corridors for all 519 cells",
+        "status": "OPEN / PRIORITY"
+      }
+    ],
+    "N7_cited_actionable_steelman": {
+      "mechanism": "route each unchanged data operand through a collision-free local blank corridor to the already placed active phase token, apply the exact token-gated call, reverse the corridor, and exhaust every phase/cell at L3/L6/L7",
+      "terminal_test": "literal corridor roles and calls make the selected-code E G_selected = G_physical E residual zero with every controller role blank",
+      "why_it_breaks_the_negative": "the head, grant, phase placement, capacity and local action kernels already pass"
+    },
+    "N8_cross_cycle_echo": [
+      {
+        "cycle": 654,
+        "echo": "unchanged 519-gate data trace consumed"
+      },
+      {
+        "cycle": 655,
+        "echo": "exact state-carried local dispatcher kernels narrowed to one placed record"
+      },
+      {
+        "cycle": 660,
+        "echo": "static program ports remain supplied"
+      },
+      {
+        "cycle": 667,
+        "echo": "exact parser/grant is byte-pinned and its terminal is narrowed"
+      }
+    ],
+    "axiom_pressure": false,
+    "axiom_pressure_gate": "FAIL / DO NOT SHIP",
+    "broad_negative_gate": "FAIL / DO NOT SHIP",
+    "broad_negative_shipped": false,
+    "minimum_content_gate": "FAIL / DO NOT SHIP",
+    "minimum_content_shipped": false,
+    "pass": true,
+    "shared_obstruction_gate": "FAIL / DO NOT SHIP",
+    "shared_route_independent_obstruction": false,
+    "skill_freshness": {
+      "newer_origin_main_followed": true,
+      "origin_main_no_go_sha256": "7d1aea8243ddd972331b935e2e836657e72115da3efe259f828fe862469d68b7",
+      "proof_search_governance_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    }
+  },
+  "optimal_next_campaign": "close only the remaining Cycle670 operand interface: place shared/reused all24 fine-NN open/apply/close corridors from the 17 phase rails to each of the 519 unchanged data-gate endpoints, then rerun exact selected-code intertwiner, deletion and held-L7 tests; do not generalize the RLE decoder first",
+  "pass": true,
+  "resources": {
+    "elapsed_seconds": 16.78603249997832,
+    "maximum_RSS_bytes": 486866944
+  },
+  "route_by_route_disposition": {
+    "binary_phase_counter": "CONSTRUCTIVE_SCOUT_NOT_USED",
+    "host_static_schedule": "FORBIDDEN AS COMPLETION WITNESS",
+    "local_auxiliary_phase": "PLACEMENT_AND_KERNEL_PASS__OPERAND_CORRIDORS_OPEN",
+    "parallel_head_ring": "SCOPED PASS",
+    "staggered_dispatch": "PRIOR LOCAL PASS NOT REQUIRED"
+  },
+  "selected_record_grant_to_closed_head_ring_compiled": true,
+  "semantic_firewall": {
+    "call_count_is_energy": false,
+    "call_count_is_rate": false,
+    "coarse_route_is_physical_site_compiler": false,
+    "head_token_is_Record": false,
+    "microphase_is_physical_time": false,
+    "selected_record_controller_is_full_E": false
+  },
+  "shared_route_independent_obstruction": false,
+  "shore": {
+    "Cycle667_pins": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_STATIONARY_RLE_RECORD_PARSER_REQUEST_GRANT_CYCLE667_NOTE_2026-07-23.md": "a1f688def4224eec46708388cd055b82e9ebf21c292542ec99294aee7a4f373d",
+      "outputs/physical_stationary_rle_record_parser_request_grant_cycle667_cold_2026_07_23.txt": "25f5ad7576571c2357d79376acaeb579b2305a21b4c631616b102ab8b3dff4af",
+      "outputs/physical_stationary_rle_record_parser_request_grant_cycle667_receipt_2026_07_23.json": "84b61d16fdcb559d302a7e632fb6a050b086defa35f9573a6e7a13782f227191",
+      "scripts/physical_stationary_rle_record_parser_request_grant_cycle667_2026_07_23.py": "72a2fa246676fc3aa79244013eaee336a77195e4fcda329a7a70802031606157"
+    },
+    "no_go_skill_origin_main_sha256": "7d1aea8243ddd972331b935e2e836657e72115da3efe259f828fe862469d68b7",
+    "observed": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_STATIONARY_RLE_RECORD_PARSER_REQUEST_GRANT_CYCLE667_NOTE_2026-07-23.md": "a1f688def4224eec46708388cd055b82e9ebf21c292542ec99294aee7a4f373d",
+      "outputs/physical_stationary_rle_record_parser_request_grant_cycle667_cold_2026_07_23.txt": "25f5ad7576571c2357d79376acaeb579b2305a21b4c631616b102ab8b3dff4af",
+      "outputs/physical_stationary_rle_record_parser_request_grant_cycle667_receipt_2026_07_23.json": "84b61d16fdcb559d302a7e632fb6a050b086defa35f9573a6e7a13782f227191",
+      "scripts/physical_stationary_rle_record_parser_request_grant_cycle667_2026_07_23.py": "72a2fa246676fc3aa79244013eaee336a77195e4fcda329a7a70802031606157"
+    },
+    "proof_search_governance_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+  },
+  "six_wall_ledger": {
+    "C_int": "unchanged Cycle654 data route retains inherited Cycle219 mass and Cycle230 contact/seam fixtures through the pinned Cycle667 shore; no new inertia law",
+    "C_local": "advanced through literal controller-role placement and exact support-one/two token-gated kernels; the one named fine-NN coupling is open",
+    "C_num": "unchanged exact GF(2)/unitary residuals and deletion tests; no probability claim",
+    "C_ref": "advanced through an explicit all24 closed head ring, phase rails and grant carrier for one selected record; action corridors/general records/all faces remain",
+    "C_source": "unchanged; controller geometry and phase carry no gravity/source meaning",
+    "C_wrap": "advanced from computed grant to a returned abstract head/phase/carrier cycle; strict physical wrap awaits joint fine-NN operand corridors"
+  },
+  "state_carried_primitive_phase_roles_placed": true,
+  "state_carried_recurrence": {
+    "five_bit_phase_capacity": 32,
+    "host_dispatch_or_index": false,
+    "inverse_map_population": 8826,
+    "lawful_one_hot_head_phase_states": 8826,
+    "malformed_broken_successor_marker_rejected": true,
+    "malformed_dirty_phase_or_enable_rejected": true,
+    "malformed_duplicate_head_rejected": true,
+    "malformed_zero_head_rejected": true,
+    "maximum_used_phase": 16,
+    "pass": true,
+    "returns_to_launch_state": true,
+    "saturation_and_invalid_phase_sectors_rejected": 7942,
+    "single_cycle_states_visited": 8826
+  },
+  "static_route_head_tape": {
+    "NOP_cells": 5,
+    "cells": 524,
+    "data_gate_cells": 519,
+    "fine_NN_successor_failures": 0,
+    "host_gate_index_at_runtime": false,
+    "host_site_index_at_runtime": false,
+    "pass": true,
+    "runtime_successor_source": "one-hot head/phase state plus the locally typed static successor bond",
+    "static_program_sha256": "cfafdfa24f6f30c81fb1c5b9015f68cca194169d8b6c4fdc123f549fce9d8290",
+    "unique_sites": 524
+  },
+  "status": "cycle670-selected-record-grant-head-phase-placement-positive-operand-corridors-open",
+  "strict_selected_record_physical_intertwiner_compiled": false,
+  "strongest_constructive_result": "the byte-pinned Cycle667 grant now has an 85-edge local carrier into a 524-cell closed NN head ring whose 519 action cells are exactly the unchanged Cycle654 selected route; 17 explicit state-carried phase rails per cell and exact token-gated ancilla-free CCX/Fredkin kernels are all24-injective and collision-free at L3/L6/held-L7, and the abstract head/phase recurrence plus data action return exactly, but joint fine-NN phase-to-data operand corridors are not placed",
+  "supplied_structure_inventory": {
+    "17_phase_rail_offsets": true,
+    "Cycle667_exact_record_parser_and_grant": true,
+    "all_face_arbitration": false,
+    "autonomous_blank_genesis_or_renewal": false,
+    "blank_phase_and_grant_carrier_roles": true,
+    "five_NOP_detour_markers": true,
+    "general_RLE_decoder": false,
+    "proper_cubic_frame_replication": true,
+    "selected_record_genesis_marker": true,
+    "static_519_gate_program_markers": true,
+    "typed_successor_bonds": true
+  },
+  "tests_failed": 0,
+  "tests_passed": 12,
+  "tests_total": 12,
+  "unchanged_route_action": {
+    "basis_and_arbitrary_amplitude_intertwiner_residual": 0.0,
+    "data_roles": 260,
+    "delete_each_gate_tests": 519,
+    "exact_GF2_row_residual": 0,
+    "minimum_deleted_gate_row_residual": 1,
+    "pass": true,
+    "route_gates": 519,
+    "syndrome_site": [
+      0,
+      63,
+      65
+    ],
+    "work_site": [
+      0,
+      63,
+      193
+    ]
+  }
+}

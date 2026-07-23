@@ -1,0 +1,1660 @@
+{
+  "Status": "PASS",
+  "W_local_enforcement": "SHARPLY_NARROWED_NOT_CLOSED",
+  "W_local_enforcement_disposition": "SHARPLY_NARROWED_NOT_CLOSED",
+  "W_local_enforcement_residual": "oracle grammar and serial ownership specification pass; literal register placement, occupied-data/program-safe detours, fine-NN physical lowering, and autonomous rejection/repair remain open",
+  "audit": "unset",
+  "author_accepted": false,
+  "author_artifact_status_accepted": false,
+  "authority": "none",
+  "axiom_pressure": false,
+  "axiom_pressure_claim": false,
+  "axiom_pressure_gate": "FAIL / DO NOT SHIP",
+  "axiom_pressure_shipped": false,
+  "breakthrough": false,
+  "broad_negative_gate": "FAIL / DO NOT SHIP",
+  "broad_negative_shipped": false,
+  "broad_no_go_claim": false,
+  "classification": "positive algebraic state-carried formula controller/register specification compatible with physical storage but not literally placed or fine-NN lowered",
+  "coherent_violation_phase_oracle_grammars": [
+    {
+      "all_work_probe_flag_and_token_clean_after_oracle": true,
+      "checks": 132,
+      "compatible_with_physical_storage": true,
+      "flat_check_or_path_table_stored": false,
+      "gate_counts": {
+        "fine_NN_route_SWAP": 111936,
+        "support_one_H": 1056,
+        "support_one_probe_Z_for_row_sign": 0,
+        "support_one_violation_phase": 132,
+        "support_two_controlled_P": 1580,
+        "support_two_syndrome_flag_CNOT": 264
+      },
+      "lawful_code_action": "identity because every stabilizer syndrome is zero",
+      "length": 3,
+      "literal_full_fine_NN_physical_lowering_closed": false,
+      "logical_program_and_work_bits": 281,
+      "maximum_route_leg_fine_edges": 136,
+      "occupied_data_program_role_safe_detours_compiled": false,
+      "off_code_action": "coherent -1 phase per violated displayed check; no measurement occurrence or Record semantics",
+      "one_parity_compute_tour_fine_edges": 27984,
+      "oracle_squared_is_identity": true,
+      "oracle_word": "C; CNOT(probe,flag); C^-1; Z(flag); C; CNOT(probe,flag); C^-1",
+      "pass_as_exact_coherent_oracle_grammar": true,
+      "program_register_specification": "24 frame-sector copies of one formula ROM plus one active state-carried orientation/token; counters generate checks and supports",
+      "program_registers_literally_placed": false,
+      "proper_cubic_orbit_replicated_program_M2_upper_bound": 6744,
+      "route_owner_descriptors": 263,
+      "route_owner_sha256": "a844a5e7c41c692cf03dcce3152eb66340c9cd23f84693aa34567249179afcdb",
+      "runtime_host_branch_or_path_query": false,
+      "schedule_grammar": "one state-carried token serializes check-oracle words; hence active route-route collision count is zero at grammar level even though declared route bodies overlap",
+      "simultaneous_active_route_collisions": 0,
+      "state_carried_register_widths": {
+        "Pauli_opcode": 2,
+        "axis": 2,
+        "axis_order_mask": 3,
+        "check_counter": 8,
+        "clean_work": 128,
+        "current_coordinate": 27,
+        "family": 2,
+        "fiber_copy": 4,
+        "microcode_two_rail": 32,
+        "orientation_one_hot": 24,
+        "probe_syndrome_flag_token": 4,
+        "route_step": 11,
+        "support_counter": 5,
+        "target_coordinate": 27,
+        "tree_index": 2
+      },
+      "support_occurrences": 395,
+      "symbolic_failures": 0,
+      "symbolic_syndrome_cases": [
+        {
+          "final_flag": 0,
+          "final_probe": 0,
+          "input_syndrome": 0,
+          "phase": 1
+        },
+        {
+          "final_flag": 0,
+          "final_probe": 0,
+          "input_syndrome": 1,
+          "phase": -1
+        }
+      ]
+    },
+    {
+      "all_work_probe_flag_and_token_clean_after_oracle": true,
+      "checks": 261,
+      "compatible_with_physical_storage": true,
+      "flat_check_or_path_table_stored": false,
+      "gate_counts": {
+        "fine_NN_route_SWAP": 302368,
+        "support_one_H": 2088,
+        "support_one_probe_Z_for_row_sign": 12,
+        "support_one_violation_phase": 261,
+        "support_two_controlled_P": 3140,
+        "support_two_syndrome_flag_CNOT": 522
+      },
+      "lawful_code_action": "identity because every stabilizer syndrome is zero",
+      "length": 6,
+      "literal_full_fine_NN_physical_lowering_closed": false,
+      "logical_program_and_work_bits": 290,
+      "maximum_route_leg_fine_edges": 344,
+      "occupied_data_program_role_safe_detours_compiled": false,
+      "off_code_action": "coherent -1 phase per violated displayed check; no measurement occurrence or Record semantics",
+      "one_parity_compute_tour_fine_edges": 75592,
+      "oracle_squared_is_identity": true,
+      "oracle_word": "C; CNOT(probe,flag); C^-1; Z(flag); C; CNOT(probe,flag); C^-1",
+      "pass_as_exact_coherent_oracle_grammar": true,
+      "program_register_specification": "24 frame-sector copies of one formula ROM plus one active state-carried orientation/token; counters generate checks and supports",
+      "program_registers_literally_placed": false,
+      "proper_cubic_orbit_replicated_program_M2_upper_bound": 6960,
+      "route_owner_descriptors": 524,
+      "route_owner_sha256": "e8c9a5ce64da2408d270c37e5444a0443b9384c49010ffb92ed0e5eb018688d4",
+      "runtime_host_branch_or_path_query": false,
+      "schedule_grammar": "one state-carried token serializes check-oracle words; hence active route-route collision count is zero at grammar level even though declared route bodies overlap",
+      "simultaneous_active_route_collisions": 0,
+      "state_carried_register_widths": {
+        "Pauli_opcode": 2,
+        "axis": 2,
+        "axis_order_mask": 3,
+        "check_counter": 9,
+        "clean_work": 128,
+        "current_coordinate": 30,
+        "family": 2,
+        "fiber_copy": 4,
+        "microcode_two_rail": 32,
+        "orientation_one_hot": 24,
+        "probe_syndrome_flag_token": 4,
+        "route_step": 12,
+        "support_counter": 5,
+        "target_coordinate": 30,
+        "tree_index": 3
+      },
+      "support_occurrences": 785,
+      "symbolic_failures": 0,
+      "symbolic_syndrome_cases": [
+        {
+          "final_flag": 0,
+          "final_probe": 0,
+          "input_syndrome": 0,
+          "phase": 1
+        },
+        {
+          "final_flag": 0,
+          "final_probe": 0,
+          "input_syndrome": 1,
+          "phase": -1
+        }
+      ]
+    },
+    {
+      "all_work_probe_flag_and_token_clean_after_oracle": true,
+      "checks": 216,
+      "compatible_with_physical_storage": true,
+      "flat_check_or_path_table_stored": false,
+      "gate_counts": {
+        "fine_NN_route_SWAP": 276992,
+        "support_one_H": 1728,
+        "support_one_probe_Z_for_row_sign": 0,
+        "support_one_violation_phase": 216,
+        "support_two_controlled_P": 2828,
+        "support_two_syndrome_flag_CNOT": 432
+      },
+      "lawful_code_action": "identity because every stabilizer syndrome is zero",
+      "length": 7,
+      "literal_full_fine_NN_physical_lowering_closed": false,
+      "logical_program_and_work_bits": 289,
+      "maximum_route_leg_fine_edges": 345,
+      "occupied_data_program_role_safe_detours_compiled": false,
+      "off_code_action": "coherent -1 phase per violated displayed check; no measurement occurrence or Record semantics",
+      "one_parity_compute_tour_fine_edges": 69248,
+      "oracle_squared_is_identity": true,
+      "oracle_word": "C; CNOT(probe,flag); C^-1; Z(flag); C; CNOT(probe,flag); C^-1",
+      "pass_as_exact_coherent_oracle_grammar": true,
+      "program_register_specification": "24 frame-sector copies of one formula ROM plus one active state-carried orientation/token; counters generate checks and supports",
+      "program_registers_literally_placed": false,
+      "proper_cubic_orbit_replicated_program_M2_upper_bound": 6936,
+      "route_owner_descriptors": 491,
+      "route_owner_sha256": "4482bd26e7e303749e6d1e0e63daf9d2e5044e513977c0a0166fd3893462d16a",
+      "runtime_host_branch_or_path_query": false,
+      "schedule_grammar": "one state-carried token serializes check-oracle words; hence active route-route collision count is zero at grammar level even though declared route bodies overlap",
+      "simultaneous_active_route_collisions": 0,
+      "state_carried_register_widths": {
+        "Pauli_opcode": 2,
+        "axis": 2,
+        "axis_order_mask": 3,
+        "check_counter": 8,
+        "clean_work": 128,
+        "current_coordinate": 30,
+        "family": 2,
+        "fiber_copy": 4,
+        "microcode_two_rail": 32,
+        "orientation_one_hot": 24,
+        "probe_syndrome_flag_token": 4,
+        "route_step": 12,
+        "support_counter": 5,
+        "target_coordinate": 30,
+        "tree_index": 3
+      },
+      "support_occurrences": 707,
+      "symbolic_failures": 0,
+      "symbolic_syndrome_cases": [
+        {
+          "final_flag": 0,
+          "final_probe": 0,
+          "input_syndrome": 0,
+          "phase": 1
+        },
+        {
+          "final_flag": 0,
+          "final_probe": 0,
+          "input_syndrome": 1,
+          "phase": -1
+        }
+      ]
+    }
+  ],
+  "constitutional_effect": "none",
+  "cycle": 646,
+  "date": "2026-07-23",
+  "deletion_malformed_and_leakage_controls": {
+    "complete_token_word_terminal_is_home": true,
+    "delete_one_controlled_P_support": 1,
+    "delete_one_fine_NN_route_edge_endpoint_disconnect": 1,
+    "delete_token_return_exhaust_residual": 1,
+    "deleted_route_edge_index": 2,
+    "deleted_route_length": 4,
+    "deleted_term_syndrome_xor_residual": 1,
+    "intact_support": 2,
+    "lawful_code_oracle_leakage": 0,
+    "malformed_Pauli_opcode_descriptor_hash_residual": 1,
+    "malformed_opcode_sha256": "4a43621a60d264b317c8ea97c6b2caecb2de35597c470ee606a5ee707b65bb68",
+    "off_code_domain": "coherent syndrome phase is defined; no measurement occurrence, Record, or repair meaning",
+    "original_opcode_sha256": "23972a5538a01df27b77b6d930d1846af154907755866ea4e6838394b142f68b",
+    "pass": true,
+    "witness_family": "XX_equality",
+    "witness_length": 3
+  },
+  "exact_check_descriptor_compilers": [
+    {
+      "Pauli_letter_histogram": {
+        "X": 258,
+        "Y": 9,
+        "Z": 128
+      },
+      "XX_equality_checks": 120,
+      "checks": 132,
+      "descriptor_sha256": "9bae2cae1755257a46565c5774c27ae687aaf3a698e01d3ebbc17aac4d703c30",
+      "formula_generated_no_flat_check_table": true,
+      "length": 3,
+      "maximum_support": 17,
+      "negative_phase_rows": 0,
+      "pass": true,
+      "support_occurrences": 395,
+      "tree_Z_face_checks": 12
+    },
+    {
+      "Pauli_letter_histogram": {
+        "X": 516,
+        "Y": 18,
+        "Z": 251
+      },
+      "XX_equality_checks": 240,
+      "checks": 261,
+      "descriptor_sha256": "5337da4546070848424928339da0fffda76cad62848908f0933f6dd013f41d5b",
+      "formula_generated_no_flat_check_table": true,
+      "length": 6,
+      "maximum_support": 24,
+      "negative_phase_rows": 3,
+      "pass": true,
+      "support_occurrences": 785,
+      "tree_Z_face_checks": 21
+    },
+    {
+      "Pauli_letter_histogram": {
+        "X": 426,
+        "Y": 21,
+        "Z": 260
+      },
+      "XX_equality_checks": 192,
+      "checks": 216,
+      "descriptor_sha256": "0c556d9a8184dcbe3bed0b31b496d091b0afe3d524a792801a2ea7a502260e15",
+      "formula_generated_no_flat_check_table": true,
+      "length": 7,
+      "maximum_support": 17,
+      "negative_phase_rows": 0,
+      "pass": true,
+      "support_occurrences": 707,
+      "tree_Z_face_checks": 24
+    }
+  ],
+  "minimum_content_claim": false,
+  "minimum_content_gate": "FAIL / DO NOT SHIP",
+  "minimum_content_shipped": false,
+  "no_go_discipline": {
+    "N1_negative_gate": "FAIL / DO NOT SHIP",
+    "N1_normalized_families": [
+      {
+        "family": "simple static stabilizer XX wire",
+        "honesty_marker": "ATTEMPTED",
+        "marker": "ATTEMPTED",
+        "mechanism": "nearest-neighbor XX edge stabilizers",
+        "object": "one path graph per equality",
+        "result": "exponent correct; Z support grows across component",
+        "terminal": "localize equality and every commuting Z face"
+      },
+      {
+        "family": "Cycle642 finite-NN route families",
+        "honesty_marker": "RULED OUT BY PRIOR",
+        "marker": "RULED OUT BY PRIOR",
+        "mechanism": "all shortest axis orders",
+        "object": "all equality/face support pairs",
+        "result": "geometry positive; enforcement explicitly open",
+        "terminal": "physical crossing ownership"
+      },
+      {
+        "family": "state-carried coherent syndrome grammar",
+        "honesty_marker": "ATTEMPTED",
+        "marker": "ATTEMPTED",
+        "mechanism": "clean Hadamard-test phase grammar plus serialized token register",
+        "object": "formula-generated stabilizer descriptors",
+        "result": "oracle grammar positive; literal register placement and occupied-role-safe fine-NN lowering open",
+        "terminal": "exact oracle algebra and symbolic clean exhaust"
+      },
+      {
+        "family": "Cycle638 coordinate-counter control",
+        "honesty_marker": "RULED OUT BY PRIOR",
+        "marker": "RULED OUT BY PRIOR",
+        "mechanism": "generated predecessor routes",
+        "object": "declared program/token registers and coordinate counters",
+        "result": "controller grammar exists on its conditional act sector; this is not a Cycle646 placement",
+        "terminal": "no host path table"
+      }
+    ],
+    "N1_open_routes_not_counted": [
+      {
+        "family": "3D subsystem crossing center",
+        "mechanism": "Bacon-Shor/wire-code center products",
+        "object": "noncommuting local gauge center",
+        "status": "OPEN / NOT COUNTED",
+        "terminal": "exact original stabilizer center with bounded generators"
+      },
+      {
+        "family": "occupied-role-safe sidecar network",
+        "mechanism": "distributed detours around data/program roles",
+        "object": "reserved shell/backbone corridors",
+        "status": "OPEN / NOT COUNTED",
+        "terminal": "literal fine-NN controller lowering"
+      },
+      {
+        "family": "autonomous rejection or repair",
+        "mechanism": "reversible rejection, cooling, or repair",
+        "object": "violation flags plus exhaust reservoir",
+        "status": "OPEN / NOT COUNTED",
+        "terminal": "convergence without E or host intervention"
+      },
+      {
+        "family": "perturbative static gadget",
+        "mechanism": "low-energy effective stabilizer penalty",
+        "object": "local mediator Hamiltonian",
+        "status": "OPEN / NOT COUNTED",
+        "terminal": "exact rather than approximate code and leakage control"
+      }
+    ],
+    "N1_qualifying_attempts": 4,
+    "N1_required_for_negative": 5,
+    "N2_collapsed_walls": {
+      "W_collision_free_lowering": "literal occupied-role-safe fine-NN routes for the coherent oracle controller",
+      "W_repair": "autonomous rejection/convergence/repair rather than a coherent phase oracle",
+      "W_static_center": "a bounded local gauge center simultaneously representing XX wires and Z faces"
+    },
+    "N2_directed_ordered_pairs": [
+      {
+        "from": "W_static_center",
+        "implied": false,
+        "reason": "closing W_static_center does not construct W_collision_free_lowering",
+        "to": "W_collision_free_lowering"
+      },
+      {
+        "from": "W_static_center",
+        "implied": false,
+        "reason": "closing W_static_center does not construct W_repair",
+        "to": "W_repair"
+      },
+      {
+        "from": "W_collision_free_lowering",
+        "implied": false,
+        "reason": "closing W_collision_free_lowering does not construct W_static_center",
+        "to": "W_static_center"
+      },
+      {
+        "from": "W_collision_free_lowering",
+        "implied": false,
+        "reason": "closing W_collision_free_lowering does not construct W_repair",
+        "to": "W_repair"
+      },
+      {
+        "from": "W_repair",
+        "implied": false,
+        "reason": "closing W_repair does not construct W_static_center",
+        "to": "W_static_center"
+      },
+      {
+        "from": "W_repair",
+        "implied": false,
+        "reason": "closing W_repair does not construct W_collision_free_lowering",
+        "to": "W_collision_free_lowering"
+      }
+    ],
+    "N2_negative_gate": "FAIL / DO NOT SHIP",
+    "N3_hidden_wall_scan": [
+      {
+        "classification": "declared supplied register specification, not host selector; literal placement open",
+        "phrase": "state-carried orientation/token",
+        "wall": "W_collision_free_lowering"
+      },
+      {
+        "classification": "does not imply occupied-role-safe paths",
+        "phrase": "formula route geometry",
+        "wall": "W_collision_free_lowering"
+      },
+      {
+        "classification": "not rejection, cooling, convergence, or repair",
+        "phrase": "coherent phase oracle",
+        "wall": "W_repair"
+      },
+      {
+        "classification": "capacity only, not placement",
+        "phrase": "distributed capacity inequality",
+        "wall": "W_collision_free_lowering"
+      },
+      {
+        "classification": "explicitly out of Cycle646 scope; not counted as an enforcement wall",
+        "phrase": "physical E/preparation",
+        "wall": null
+      }
+    ],
+    "N4_exact_residual_matches": [
+      {
+        "current_line": 165,
+        "current_path": "scripts/physical_orbit_tree_local_enforcement_cycle646_2026_07_23.py",
+        "current_residual": "coherent oracle grammar closes algebraically while literal register placement and occupied-role-safe route lowering remain absent",
+        "exact_match": true,
+        "prior_line": 110,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_FIXED_CUBIC_WILSON_FILL_INCIDENCE_CYCLE642_NOTE_2026-07-23.md",
+        "prior_ref": "71d15c192af1fbb82f1860052eb6b10c7f244ddd",
+        "prior_residual": "static subsystem wire or autonomous crossing schedule absent",
+        "same_scope": true,
+        "use_as_closure": true
+      }
+    ],
+    "N4_negative_gate": "FAIL / DO NOT SHIP broad closure",
+    "N4_nonmatches_not_used_as_closure": [
+      {
+        "current_line": 365,
+        "current_path": "scripts/physical_orbit_tree_local_enforcement_cycle646_2026_07_23.py",
+        "current_residual": "simple XX wire has a Z-locality failure, not a general distributed-placement theorem",
+        "exact_match": false,
+        "prior_line": 70,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_FIXED_CUBIC_WILSON_FILL_INCIDENCE_CYCLE642_NOTE_2026-07-23.md",
+        "prior_ref": "71d15c192af1fbb82f1860052eb6b10c7f244ddd",
+        "prior_residual": "single-shell all-L physical placement absent",
+        "same_scope": false,
+        "use_as_closure": false
+      }
+    ],
+    "N4_required_fields": [
+      "current_line",
+      "current_path",
+      "current_residual",
+      "exact_match",
+      "prior_line",
+      "prior_path",
+      "prior_ref",
+      "prior_residual",
+      "same_scope",
+      "use_as_closure"
+    ],
+    "N5_rhetoric": [
+      {
+        "claim": "the simple XX chain does not localize the coupled Z face",
+        "lattice_wide": "other subsystem/crossing centers remain open",
+        "per_block": "wire lengths1..31 are certified",
+        "per_element": "each XX edge commutation equation enters the exact path-incidence rank certificate",
+        "per_mode": "no fermion-mode no-go is inferred",
+        "per_site": "Z inclusion is constant on every wire vertex"
+      },
+      {
+        "claim": "a coherent syndrome oracle is not autonomous repair",
+        "lattice_wide": "safe routing and convergence remain open",
+        "per_block": "L3/L6/L7 controller resources pass",
+        "per_element": "both syndrome eigenvalues are exact",
+        "per_mode": "matter/gauge commutation is retained",
+        "per_site": "each primitive is support1/2 after a safe route exists"
+      }
+    ],
+    "N6_partial_closure_paths": [
+      {
+        "file": "UNMATERIALIZED/physical_3d_subsystem_crossing_center_cycle_next.py",
+        "status": "OPEN / PRIORITY",
+        "what_closes": "W_static_center"
+      },
+      {
+        "file": "UNMATERIALIZED/physical_reserved_shell_sidecar_router_cycle_next.py",
+        "status": "OPEN / PRIORITY",
+        "what_closes": "W_collision_free_lowering"
+      },
+      {
+        "file": "UNMATERIALIZED/physical_violation_repair_exhaust_cycle_next.py",
+        "status": "OPEN",
+        "what_closes": "W_repair"
+      }
+    ],
+    "N7_steelman": {
+      "actionable_steps": [
+        "construct one XX/Z crossing tile",
+        "prove its center and gauge-rank formula",
+        "tile Cycle642 incidence with bounded congestion",
+        "recompute target/gauge commutant and leakage at L3/L6/L7"
+      ],
+      "mechanism": "embed the Tanner graph in 3D with noncommuting gauge-wire crossings so bounded gauge generators have the original tree stabilizers as their center",
+      "supporting_citations": [
+        {
+          "fragment": "Intersecting routes still need either a static",
+          "line": 110,
+          "line_text": "constraint enforcement.  Intersecting routes still need either a static",
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_FIXED_CUBIC_WILSON_FILL_INCIDENCE_CYCLE642_NOTE_2026-07-23.md",
+          "ref": "71d15c192af1fbb82f1860052eb6b10c7f244ddd"
+        },
+        {
+          "fragment": "NOT EXECUTED. No support-two circuit computes",
+          "line": 210,
+          "line_text": "NOT EXECUTED. No support-two circuit computes the 120-anchor, weight, or",
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_TRANSLATION_ORBIT_MARKER_CRYSTAL_REPAIR_CYCLE629_NOTE_2026-07-22.md",
+          "ref": "71d15c192af1fbb82f1860052eb6b10c7f244ddd"
+        }
+      ],
+      "terminal_test": "bounded-degree 3D placement, exact center/rank, all24/all576, deletion, malformed gauge, and full matter/gauge commutation",
+      "why_it_breaks_the_negative": "the constant-Z lemma applies only to a commuting XX stabilizer chain; subsystem gauge generators may anticommute locally while their bounded center products reproduce both checks"
+    },
+    "N8_cross_cycle_echo": [
+      {
+        "applicability": "supports frame-sector control but not enforcement",
+        "citation_line": 210,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_TRANSLATION_ORBIT_MARKER_CRYSTAL_REPAIR_CYCLE629_NOTE_2026-07-22.md",
+        "citation_ref": "71d15c192af1fbb82f1860052eb6b10c7f244ddd",
+        "citation_text": "NOT EXECUTED. No support-two circuit computes the 120-anchor, weight, or",
+        "cycle": 629,
+        "mechanism": "state-carried frame phase",
+        "retired": "external-origin projector covariance at supplied-sector level"
+      },
+      {
+        "applicability": "supports no-host route generation; cap lowering is not composed",
+        "citation_line": 85,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_HIERARCHICAL_GRAMMAR_FULL_ACT_COMPILER_CYCLE638_NOTE_2026-07-23.md",
+        "citation_ref": "71d15c192af1fbb82f1860052eb6b10c7f244ddd",
+        "citation_text": "Cycle 638 does not store the Cycle-630 parent tree or 4,570 path words. For",
+        "cycle": 638,
+        "mechanism": "coordinate-counter controller",
+        "retired": "stored route parent/path table"
+      },
+      {
+        "applicability": "supplies the checks and route geometry whose enforcement is tested",
+        "citation_line": 110,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_FIXED_CUBIC_WILSON_FILL_INCIDENCE_CYCLE642_NOTE_2026-07-23.md",
+        "citation_ref": "71d15c192af1fbb82f1860052eb6b10c7f244ddd",
+        "citation_text": "constraint enforcement.  Intersecting routes still need either a static",
+        "cycle": 642,
+        "mechanism": "orbit-tree role fibers",
+        "retired": "abstract absence of a fixed covariant cap role placement at L3/L6/L7"
+      }
+    ],
+    "Status": "PASS",
+    "axiom_pressure": false,
+    "axiom_pressure_claim": false,
+    "axiom_pressure_gate": "FAIL / DO NOT SHIP",
+    "axiom_pressure_shipped": false,
+    "broad_negative_gate": "FAIL / DO NOT SHIP",
+    "broad_negative_shipped": false,
+    "broad_no_go_claim": false,
+    "minimum_content_claim": false,
+    "minimum_content_gate": "FAIL / DO NOT SHIP",
+    "minimum_content_shipped": false,
+    "shared_obstruction_claim": false,
+    "shared_obstruction_gate": "FAIL / DO NOT SHIP",
+    "shared_obstruction_shipped": false,
+    "shared_route_independent_obstruction": false
+  },
+  "optimal_next_campaign": "construct one exact 3D subsystem XX/Z crossing-center tile, or reserve and exhaustively route a K129 shell sidecar network around all data/program roles; then add rejection/repair only if separately authorized, while keeping E independent",
+  "pass": true,
+  "rank_code_and_matter_gauge_retention": [
+    {
+      "code_exponent": 188,
+      "commutator_failures": {
+        "selected_stabilizer_mutual": 0,
+        "selected_vs_dressed_gauge": 0,
+        "selected_vs_dressed_matter": 0
+      },
+      "controller_adds_persistent_code_M2_or_constraints": false,
+      "expected_code_exponent": 188,
+      "expected_rank": 454,
+      "length": 3,
+      "pass": true,
+      "phase_inconsistent": 0,
+      "rank_and_target_gauge_quotient_unchanged_from_immutable_Cycle642": true,
+      "stabilizer_rank": 454
+    },
+    {
+      "code_exponent": 1511,
+      "commutator_failures": {
+        "selected_stabilizer_mutual": 0,
+        "selected_vs_dressed_gauge": 0,
+        "selected_vs_dressed_matter": 0
+      },
+      "controller_adds_persistent_code_M2_or_constraints": false,
+      "expected_code_exponent": 1511,
+      "expected_rank": 3337,
+      "length": 6,
+      "pass": true,
+      "phase_inconsistent": 0,
+      "rank_and_target_gauge_quotient_unchanged_from_immutable_Cycle642": true,
+      "stabilizer_rank": 3337
+    },
+    {
+      "code_exponent": 2400,
+      "commutator_failures": {
+        "selected_stabilizer_mutual": 0,
+        "selected_vs_dressed_gauge": 0,
+        "selected_vs_dressed_matter": 0
+      },
+      "controller_adds_persistent_code_M2_or_constraints": false,
+      "expected_code_exponent": 2400,
+      "expected_rank": 5242,
+      "length": 7,
+      "pass": true,
+      "phase_inconsistent": 0,
+      "rank_and_target_gauge_quotient_unchanged_from_immutable_Cycle642": true,
+      "stabilizer_rank": 5242
+    }
+  ],
+  "resources": {
+    "elapsed_seconds": 5.229881207924336,
+    "maximum_RSS_bytes": 343097344
+  },
+  "route_disposition": {
+    "autonomous_rejection_repair_convergence": "OPEN",
+    "occupied_role_safe_physical_lowering": "OPEN",
+    "physical_E_or_preparation": "OUT_OF_SCOPE_NOT_TOUCHED",
+    "simple_static_XX_stabilizer_wire": "NARROWLY_FAILS_Z_FACE_LOCALITY",
+    "state_carried_coherent_oracle": "PASS_EXACT_ORACLE_GRAMMAR_AND_SYMBOLIC_CLEAN_EXHAUST",
+    "static_3D_subsystem_crossing_center": "OPEN"
+  },
+  "semantic_firewall": {
+    "generator_is_rate": false,
+    "phase_is_energy": false,
+    "program_or_schedule_is_time": false,
+    "syndrome_flag_is_Record": false,
+    "syndrome_flag_is_measurement_occurrence": false
+  },
+  "shared_obstruction_claim": false,
+  "shared_obstruction_gate": "FAIL / DO NOT SHIP",
+  "shared_obstruction_shipped": false,
+  "shared_route_independent_obstruction": false,
+  "shore": {
+    "actual_imported_physical_modules": {
+      "physical_adjacent_star_recurrence_tournament_cycle548_2026_07_21": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_adjacent_star_recurrence_tournament_cycle548_2026_07_21.py",
+      "physical_adjacent_two_star_compressed_gram_cycle518_2026_07_21": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_adjacent_two_star_compressed_gram_cycle518_2026_07_21.py",
+      "physical_adjacent_two_star_order_character_preflight_cycle517_2026_07_21": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_adjacent_two_star_order_character_preflight_cycle517_2026_07_21.py",
+      "physical_adjacent_two_star_seam_tag_preservation_cycle519_2026_07_21": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_adjacent_two_star_seam_tag_preservation_cycle519_2026_07_21.py",
+      "physical_autonomous_marker_recognition_token_attempt_cycle631_2026_07_23": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_autonomous_marker_recognition_token_attempt_cycle631_2026_07_23.py",
+      "physical_boundary_aware_multistar_recurrence_tournament_cycle551_2026_07_21": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_boundary_aware_multistar_recurrence_tournament_cycle551_2026_07_21.py",
+      "physical_carrier_preparation_elementary_synthesis_tournament_cycle603_2026_07_22": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_carrier_preparation_elementary_synthesis_tournament_cycle603_2026_07_22.py",
+      "physical_correlated_double_shadow_stream_cycle529_2026_07_21": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_correlated_double_shadow_stream_cycle529_2026_07_21.py",
+      "physical_cycle269_collision_safe_auxiliary_ports_2026_07_17": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_cycle269_collision_safe_auxiliary_ports_2026_07_17.py",
+      "physical_cycle269_common_m64_fixed_seam_cycle311_2026_07_18": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_cycle269_common_m64_fixed_seam_cycle311_2026_07_18.py",
+      "physical_cycle269_five_cell_adjacent_star_cycle327_2026_07_18": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_cycle269_five_cell_adjacent_star_cycle327_2026_07_18.py",
+      "physical_cycle269_four_cell_star_cycle324_2026_07_18": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_cycle269_four_cell_star_cycle324_2026_07_18.py",
+      "physical_cycle269_full_two_particle_sector_interface_cycle305_2026_07_17": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_cycle269_full_two_particle_sector_interface_cycle305_2026_07_17.py",
+      "physical_cycle269_higher_number_fixed_seam_cycle308_2026_07_17": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_cycle269_higher_number_fixed_seam_cycle308_2026_07_17.py",
+      "physical_cycle269_overlap_aware_two_cell_cycle315_2026_07_18": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_cycle269_overlap_aware_two_cell_cycle315_2026_07_18.py",
+      "physical_cycle269_reference_relative_localized_pair_lift_2026_07_17": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_cycle269_reference_relative_localized_pair_lift_2026_07_17.py",
+      "physical_cycle269_seven_cell_maximal_star_cycle330_2026_07_18": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_cycle269_seven_cell_maximal_star_cycle330_2026_07_18.py",
+      "physical_cycle269_staggered_reservoir_catchup_2026_07_17": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_cycle269_staggered_reservoir_catchup_2026_07_17.py",
+      "physical_cycle269_three_cell_multiedge_cycle319_2026_07_18": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_cycle269_three_cell_multiedge_cycle319_2026_07_18.py",
+      "physical_cycle330_all_order_isometry_bridge_cycle515_2026_07_20": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_cycle330_all_order_isometry_bridge_cycle515_2026_07_20.py",
+      "physical_cycle515_koszul_frame_bridge_cycle516_2026_07_20": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_cycle515_koszul_frame_bridge_cycle516_2026_07_20.py",
+      "physical_fixed_cubic_wilson_fill_incidence_cycle642_2026_07_23": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle646-immutable-u5t4wral/scripts/physical_fixed_cubic_wilson_fill_incidence_cycle642_2026_07_23.py",
+      "physical_global_N3_returned_slot_compiler_cycle560_2026_07_21": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_global_N3_returned_slot_compiler_cycle560_2026_07_21.py",
+      "physical_global_carrier_stream_qca_approximation_tournament_cycle606_2026_07_22": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_global_carrier_stream_qca_approximation_tournament_cycle606_2026_07_22.py",
+      "physical_global_selected_network_encoder_cycle555_2026_07_21": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_global_selected_network_encoder_cycle555_2026_07_21.py",
+      "physical_hierarchical_grammar_full_act_compiler_cycle638_2026_07_23": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_hierarchical_grammar_full_act_compiler_cycle638_2026_07_23.py",
+      "physical_literal_program_track_interpreter_cycle633_2026_07_23": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_literal_program_track_interpreter_cycle633_2026_07_23.py",
+      "physical_local_N3_six_ray_decoder_tournament_cycle557_2026_07_21": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_local_N3_six_ray_decoder_tournament_cycle557_2026_07_21.py",
+      "physical_local_cutoff_gauge_enforcement_tournament_cycle593_2026_07_22": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_local_cutoff_gauge_enforcement_tournament_cycle593_2026_07_22.py",
+      "physical_local_sector_role_genesis_closure_tournament_cycle617_2026_07_22": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_local_sector_role_genesis_closure_tournament_cycle617_2026_07_22.py",
+      "physical_local_wilson_fill_disk_cycle537_2026_07_21": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_local_wilson_fill_disk_cycle537_2026_07_21.py",
+      "physical_marker_preserving_free_quotient_router_cycle630_2026_07_23": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_marker_preserving_free_quotient_router_cycle630_2026_07_23.py",
+      "physical_native_shadow_nearest_neighbor_router_cycle527_2026_07_21": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_native_shadow_nearest_neighbor_router_cycle527_2026_07_21.py",
+      "physical_opposite_carrier_reearned_compiler_cycle522_2026_07_21": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_opposite_carrier_reearned_compiler_cycle522_2026_07_21.py",
+      "physical_opposite_carrier_shared_cell_recurrence_cycle525_2026_07_21": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_opposite_carrier_shared_cell_recurrence_cycle525_2026_07_21.py",
+      "physical_proper_cubic_supercell_stream_composition_tournament_cycle610_2026_07_22": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_proper_cubic_supercell_stream_composition_tournament_cycle610_2026_07_22.py",
+      "physical_protected_shadow_coin_gate_compiler_cycle523_2026_07_21": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_protected_shadow_coin_gate_compiler_cycle523_2026_07_21.py",
+      "physical_recurrent_shared_volume_compiler_cycle545_2026_07_21": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_recurrent_shared_volume_compiler_cycle545_2026_07_21.py",
+      "physical_root_free_cutoff_gauge_preparation_tournament_cycle598_2026_07_22": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_root_free_cutoff_gauge_preparation_tournament_cycle598_2026_07_22.py",
+      "physical_root_free_full_N3_carrier_genesis_tournament_cycle600_2026_07_22": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_root_free_full_N3_carrier_genesis_tournament_cycle600_2026_07_22.py",
+      "physical_rough_fswap_pauli_rotation_gate_compiler_cycle540_2026_07_21": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_rough_fswap_pauli_rotation_gate_compiler_cycle540_2026_07_21.py",
+      "physical_rough_gauge_subsystem_quotient_cycle532_2026_07_21": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_rough_gauge_subsystem_quotient_cycle532_2026_07_21.py",
+      "physical_selected_seam_code_space_isometry_compiler_cycle533_2026_07_21": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_selected_seam_code_space_isometry_compiler_cycle533_2026_07_21.py",
+      "physical_selected_seam_event_current_adapter_cycle526_2026_07_21": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_selected_seam_event_current_adapter_cycle526_2026_07_21.py",
+      "physical_shadow_normal_form_sync_cycle530_2026_07_21": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_shadow_normal_form_sync_cycle530_2026_07_21.py",
+      "physical_shared_seam_code_space_isometry_compiler_cycle539_2026_07_21": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_shared_seam_code_space_isometry_compiler_cycle539_2026_07_21.py",
+      "physical_three_star_shared_parity_overlap_cycle520_2026_07_21": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_three_star_shared_parity_overlap_cycle520_2026_07_21.py",
+      "physical_translation_orbit_marker_crystal_repair_cycle629_2026_07_22": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-geyi6j35/scripts/physical_translation_orbit_marker_crystal_repair_cycle629_2026_07_22.py"
+    },
+    "immutable_commit": "71d15c192af1fbb82f1860052eb6b10c7f244ddd",
+    "immutable_import_failures": [],
+    "no_go_skill_origin_main_sha256": "7d1aea8243ddd972331b935e2e836657e72115da3efe259f828fe862469d68b7",
+    "observed": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_FIXED_CUBIC_WILSON_FILL_INCIDENCE_CYCLE642_NOTE_2026-07-23.md": "13f8074746f3b5e978f971567bbebecd1006ccd13b7d5fe91a0e38a946d30d3e",
+      "docs/work_history/repo/review_feedback/PHYSICAL_HIERARCHICAL_GRAMMAR_FULL_ACT_COMPILER_CYCLE638_NOTE_2026-07-23.md": "30b9793f87ac0e96d92567709201fbae8833904302b9c195eb8eefcc0972abf1",
+      "outputs/physical_fixed_cubic_wilson_fill_incidence_cycle642_cold_2026_07_23.txt": "2af7cb45f80e1e5719da6750cd9f2efbbf2bee1bc14abe95e234eba91d6920cb",
+      "outputs/physical_fixed_cubic_wilson_fill_incidence_cycle642_receipt_2026_07_23.json": "9251ac323d4f26b672783fa8ed01dc8da6f3059c308d37325b3d7984969c3b37",
+      "outputs/physical_hierarchical_grammar_full_act_compiler_cycle638_receipt_2026_07_23.json": "706a592d667dfa12a2215d588f5b3cf09c8d1212d4907e9a73d8647a76762e46",
+      "scripts/physical_fixed_cubic_wilson_fill_incidence_cycle642_2026_07_23.py": "fb0d8366494066e4191d66b9a2d83180cd99bf6f622b9de355bf28494e050bf7",
+      "scripts/physical_hierarchical_grammar_full_act_compiler_cycle638_2026_07_23.py": "7c30cb47934ea6faf908d13ef15e6d62bf0c494ba8632ebdffeec88352037d53"
+    },
+    "pins": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_FIXED_CUBIC_WILSON_FILL_INCIDENCE_CYCLE642_NOTE_2026-07-23.md": "13f8074746f3b5e978f971567bbebecd1006ccd13b7d5fe91a0e38a946d30d3e",
+      "docs/work_history/repo/review_feedback/PHYSICAL_HIERARCHICAL_GRAMMAR_FULL_ACT_COMPILER_CYCLE638_NOTE_2026-07-23.md": "30b9793f87ac0e96d92567709201fbae8833904302b9c195eb8eefcc0972abf1",
+      "outputs/physical_fixed_cubic_wilson_fill_incidence_cycle642_cold_2026_07_23.txt": "2af7cb45f80e1e5719da6750cd9f2efbbf2bee1bc14abe95e234eba91d6920cb",
+      "outputs/physical_fixed_cubic_wilson_fill_incidence_cycle642_receipt_2026_07_23.json": "9251ac323d4f26b672783fa8ed01dc8da6f3059c308d37325b3d7984969c3b37",
+      "outputs/physical_hierarchical_grammar_full_act_compiler_cycle638_receipt_2026_07_23.json": "706a592d667dfa12a2215d588f5b3cf09c8d1212d4907e9a73d8647a76762e46",
+      "scripts/physical_fixed_cubic_wilson_fill_incidence_cycle642_2026_07_23.py": "fb0d8366494066e4191d66b9a2d83180cd99bf6f622b9de355bf28494e050bf7",
+      "scripts/physical_hierarchical_grammar_full_act_compiler_cycle638_2026_07_23.py": "7c30cb47934ea6faf908d13ef15e6d62bf0c494ba8632ebdffeec88352037d53"
+    },
+    "working_tree_bytes_used_as_premise": false
+  },
+  "simple_static_XX_wire_discriminator": {
+    "all_commuting_Z_kernels_only_constant": true,
+    "all_exponent_counts_correct": true,
+    "general_static_subsystem_gadget_no_go": false,
+    "narrow_failure": "local XX equality succeeds, but any anticommuting logical Z face must cover the complete connected wire, so its support/diameter grows with route length",
+    "pass_as_narrow_discriminator": true,
+    "route": "simple stabilizer XX chain",
+    "rows": [
+      {
+        "XX_path_incidence_rank": 1,
+        "commuting_Z_kernel_dimension": 1,
+        "commuting_Z_kernel_witnesses": [
+          0,
+          3
+        ],
+        "kernel_witness_failures": 0,
+        "local_XX_checks": 1,
+        "net_code_exponent_change": -1,
+        "new_ancillas": 0,
+        "nontrivial_Z_diameter_edges": 1,
+        "nontrivial_Z_weight": 2,
+        "pass": true,
+        "wire_edges": 1,
+        "wire_vertices": 2
+      },
+      {
+        "XX_path_incidence_rank": 2,
+        "commuting_Z_kernel_dimension": 1,
+        "commuting_Z_kernel_witnesses": [
+          0,
+          7
+        ],
+        "kernel_witness_failures": 0,
+        "local_XX_checks": 2,
+        "net_code_exponent_change": -1,
+        "new_ancillas": 1,
+        "nontrivial_Z_diameter_edges": 2,
+        "nontrivial_Z_weight": 3,
+        "pass": true,
+        "wire_edges": 2,
+        "wire_vertices": 3
+      },
+      {
+        "XX_path_incidence_rank": 3,
+        "commuting_Z_kernel_dimension": 1,
+        "commuting_Z_kernel_witnesses": [
+          0,
+          15
+        ],
+        "kernel_witness_failures": 0,
+        "local_XX_checks": 3,
+        "net_code_exponent_change": -1,
+        "new_ancillas": 2,
+        "nontrivial_Z_diameter_edges": 3,
+        "nontrivial_Z_weight": 4,
+        "pass": true,
+        "wire_edges": 3,
+        "wire_vertices": 4
+      },
+      {
+        "XX_path_incidence_rank": 4,
+        "commuting_Z_kernel_dimension": 1,
+        "commuting_Z_kernel_witnesses": [
+          0,
+          31
+        ],
+        "kernel_witness_failures": 0,
+        "local_XX_checks": 4,
+        "net_code_exponent_change": -1,
+        "new_ancillas": 3,
+        "nontrivial_Z_diameter_edges": 4,
+        "nontrivial_Z_weight": 5,
+        "pass": true,
+        "wire_edges": 4,
+        "wire_vertices": 5
+      },
+      {
+        "XX_path_incidence_rank": 5,
+        "commuting_Z_kernel_dimension": 1,
+        "commuting_Z_kernel_witnesses": [
+          0,
+          63
+        ],
+        "kernel_witness_failures": 0,
+        "local_XX_checks": 5,
+        "net_code_exponent_change": -1,
+        "new_ancillas": 4,
+        "nontrivial_Z_diameter_edges": 5,
+        "nontrivial_Z_weight": 6,
+        "pass": true,
+        "wire_edges": 5,
+        "wire_vertices": 6
+      },
+      {
+        "XX_path_incidence_rank": 6,
+        "commuting_Z_kernel_dimension": 1,
+        "commuting_Z_kernel_witnesses": [
+          0,
+          127
+        ],
+        "kernel_witness_failures": 0,
+        "local_XX_checks": 6,
+        "net_code_exponent_change": -1,
+        "new_ancillas": 5,
+        "nontrivial_Z_diameter_edges": 6,
+        "nontrivial_Z_weight": 7,
+        "pass": true,
+        "wire_edges": 6,
+        "wire_vertices": 7
+      },
+      {
+        "XX_path_incidence_rank": 7,
+        "commuting_Z_kernel_dimension": 1,
+        "commuting_Z_kernel_witnesses": [
+          0,
+          255
+        ],
+        "kernel_witness_failures": 0,
+        "local_XX_checks": 7,
+        "net_code_exponent_change": -1,
+        "new_ancillas": 6,
+        "nontrivial_Z_diameter_edges": 7,
+        "nontrivial_Z_weight": 8,
+        "pass": true,
+        "wire_edges": 7,
+        "wire_vertices": 8
+      },
+      {
+        "XX_path_incidence_rank": 8,
+        "commuting_Z_kernel_dimension": 1,
+        "commuting_Z_kernel_witnesses": [
+          0,
+          511
+        ],
+        "kernel_witness_failures": 0,
+        "local_XX_checks": 8,
+        "net_code_exponent_change": -1,
+        "new_ancillas": 7,
+        "nontrivial_Z_diameter_edges": 8,
+        "nontrivial_Z_weight": 9,
+        "pass": true,
+        "wire_edges": 8,
+        "wire_vertices": 9
+      },
+      {
+        "XX_path_incidence_rank": 9,
+        "commuting_Z_kernel_dimension": 1,
+        "commuting_Z_kernel_witnesses": [
+          0,
+          1023
+        ],
+        "kernel_witness_failures": 0,
+        "local_XX_checks": 9,
+        "net_code_exponent_change": -1,
+        "new_ancillas": 8,
+        "nontrivial_Z_diameter_edges": 9,
+        "nontrivial_Z_weight": 10,
+        "pass": true,
+        "wire_edges": 9,
+        "wire_vertices": 10
+      },
+      {
+        "XX_path_incidence_rank": 10,
+        "commuting_Z_kernel_dimension": 1,
+        "commuting_Z_kernel_witnesses": [
+          0,
+          2047
+        ],
+        "kernel_witness_failures": 0,
+        "local_XX_checks": 10,
+        "net_code_exponent_change": -1,
+        "new_ancillas": 9,
+        "nontrivial_Z_diameter_edges": 10,
+        "nontrivial_Z_weight": 11,
+        "pass": true,
+        "wire_edges": 10,
+        "wire_vertices": 11
+      },
+      {
+        "XX_path_incidence_rank": 11,
+        "commuting_Z_kernel_dimension": 1,
+        "commuting_Z_kernel_witnesses": [
+          0,
+          4095
+        ],
+        "kernel_witness_failures": 0,
+        "local_XX_checks": 11,
+        "net_code_exponent_change": -1,
+        "new_ancillas": 10,
+        "nontrivial_Z_diameter_edges": 11,
+        "nontrivial_Z_weight": 12,
+        "pass": true,
+        "wire_edges": 11,
+        "wire_vertices": 12
+      },
+      {
+        "XX_path_incidence_rank": 12,
+        "commuting_Z_kernel_dimension": 1,
+        "commuting_Z_kernel_witnesses": [
+          0,
+          8191
+        ],
+        "kernel_witness_failures": 0,
+        "local_XX_checks": 12,
+        "net_code_exponent_change": -1,
+        "new_ancillas": 11,
+        "nontrivial_Z_diameter_edges": 12,
+        "nontrivial_Z_weight": 13,
+        "pass": true,
+        "wire_edges": 12,
+        "wire_vertices": 13
+      },
+      {
+        "XX_path_incidence_rank": 13,
+        "commuting_Z_kernel_dimension": 1,
+        "commuting_Z_kernel_witnesses": [
+          0,
+          16383
+        ],
+        "kernel_witness_failures": 0,
+        "local_XX_checks": 13,
+        "net_code_exponent_change": -1,
+        "new_ancillas": 12,
+        "nontrivial_Z_diameter_edges": 13,
+        "nontrivial_Z_weight": 14,
+        "pass": true,
+        "wire_edges": 13,
+        "wire_vertices": 14
+      },
+      {
+        "XX_path_incidence_rank": 14,
+        "commuting_Z_kernel_dimension": 1,
+        "commuting_Z_kernel_witnesses": [
+          0,
+          32767
+        ],
+        "kernel_witness_failures": 0,
+        "local_XX_checks": 14,
+        "net_code_exponent_change": -1,
+        "new_ancillas": 13,
+        "nontrivial_Z_diameter_edges": 14,
+        "nontrivial_Z_weight": 15,
+        "pass": true,
+        "wire_edges": 14,
+        "wire_vertices": 15
+      },
+      {
+        "XX_path_incidence_rank": 15,
+        "commuting_Z_kernel_dimension": 1,
+        "commuting_Z_kernel_witnesses": [
+          0,
+          65535
+        ],
+        "kernel_witness_failures": 0,
+        "local_XX_checks": 15,
+        "net_code_exponent_change": -1,
+        "new_ancillas": 14,
+        "nontrivial_Z_diameter_edges": 15,
+        "nontrivial_Z_weight": 16,
+        "pass": true,
+        "wire_edges": 15,
+        "wire_vertices": 16
+      },
+      {
+        "XX_path_incidence_rank": 16,
+        "commuting_Z_kernel_dimension": 1,
+        "commuting_Z_kernel_witnesses": [
+          0,
+          131071
+        ],
+        "kernel_witness_failures": 0,
+        "local_XX_checks": 16,
+        "net_code_exponent_change": -1,
+        "new_ancillas": 15,
+        "nontrivial_Z_diameter_edges": 16,
+        "nontrivial_Z_weight": 17,
+        "pass": true,
+        "wire_edges": 16,
+        "wire_vertices": 17
+      },
+      {
+        "XX_path_incidence_rank": 17,
+        "commuting_Z_kernel_dimension": 1,
+        "commuting_Z_kernel_witnesses": [
+          0,
+          262143
+        ],
+        "kernel_witness_failures": 0,
+        "local_XX_checks": 17,
+        "net_code_exponent_change": -1,
+        "new_ancillas": 16,
+        "nontrivial_Z_diameter_edges": 17,
+        "nontrivial_Z_weight": 18,
+        "pass": true,
+        "wire_edges": 17,
+        "wire_vertices": 18
+      },
+      {
+        "XX_path_incidence_rank": 18,
+        "commuting_Z_kernel_dimension": 1,
+        "commuting_Z_kernel_witnesses": [
+          0,
+          524287
+        ],
+        "kernel_witness_failures": 0,
+        "local_XX_checks": 18,
+        "net_code_exponent_change": -1,
+        "new_ancillas": 17,
+        "nontrivial_Z_diameter_edges": 18,
+        "nontrivial_Z_weight": 19,
+        "pass": true,
+        "wire_edges": 18,
+        "wire_vertices": 19
+      },
+      {
+        "XX_path_incidence_rank": 19,
+        "commuting_Z_kernel_dimension": 1,
+        "commuting_Z_kernel_witnesses": [
+          0,
+          1048575
+        ],
+        "kernel_witness_failures": 0,
+        "local_XX_checks": 19,
+        "net_code_exponent_change": -1,
+        "new_ancillas": 18,
+        "nontrivial_Z_diameter_edges": 19,
+        "nontrivial_Z_weight": 20,
+        "pass": true,
+        "wire_edges": 19,
+        "wire_vertices": 20
+      },
+      {
+        "XX_path_incidence_rank": 20,
+        "commuting_Z_kernel_dimension": 1,
+        "commuting_Z_kernel_witnesses": [
+          0,
+          2097151
+        ],
+        "kernel_witness_failures": 0,
+        "local_XX_checks": 20,
+        "net_code_exponent_change": -1,
+        "new_ancillas": 19,
+        "nontrivial_Z_diameter_edges": 20,
+        "nontrivial_Z_weight": 21,
+        "pass": true,
+        "wire_edges": 20,
+        "wire_vertices": 21
+      },
+      {
+        "XX_path_incidence_rank": 21,
+        "commuting_Z_kernel_dimension": 1,
+        "commuting_Z_kernel_witnesses": [
+          0,
+          4194303
+        ],
+        "kernel_witness_failures": 0,
+        "local_XX_checks": 21,
+        "net_code_exponent_change": -1,
+        "new_ancillas": 20,
+        "nontrivial_Z_diameter_edges": 21,
+        "nontrivial_Z_weight": 22,
+        "pass": true,
+        "wire_edges": 21,
+        "wire_vertices": 22
+      },
+      {
+        "XX_path_incidence_rank": 22,
+        "commuting_Z_kernel_dimension": 1,
+        "commuting_Z_kernel_witnesses": [
+          0,
+          8388607
+        ],
+        "kernel_witness_failures": 0,
+        "local_XX_checks": 22,
+        "net_code_exponent_change": -1,
+        "new_ancillas": 21,
+        "nontrivial_Z_diameter_edges": 22,
+        "nontrivial_Z_weight": 23,
+        "pass": true,
+        "wire_edges": 22,
+        "wire_vertices": 23
+      },
+      {
+        "XX_path_incidence_rank": 23,
+        "commuting_Z_kernel_dimension": 1,
+        "commuting_Z_kernel_witnesses": [
+          0,
+          16777215
+        ],
+        "kernel_witness_failures": 0,
+        "local_XX_checks": 23,
+        "net_code_exponent_change": -1,
+        "new_ancillas": 22,
+        "nontrivial_Z_diameter_edges": 23,
+        "nontrivial_Z_weight": 24,
+        "pass": true,
+        "wire_edges": 23,
+        "wire_vertices": 24
+      },
+      {
+        "XX_path_incidence_rank": 24,
+        "commuting_Z_kernel_dimension": 1,
+        "commuting_Z_kernel_witnesses": [
+          0,
+          33554431
+        ],
+        "kernel_witness_failures": 0,
+        "local_XX_checks": 24,
+        "net_code_exponent_change": -1,
+        "new_ancillas": 23,
+        "nontrivial_Z_diameter_edges": 24,
+        "nontrivial_Z_weight": 25,
+        "pass": true,
+        "wire_edges": 24,
+        "wire_vertices": 25
+      },
+      {
+        "XX_path_incidence_rank": 25,
+        "commuting_Z_kernel_dimension": 1,
+        "commuting_Z_kernel_witnesses": [
+          0,
+          67108863
+        ],
+        "kernel_witness_failures": 0,
+        "local_XX_checks": 25,
+        "net_code_exponent_change": -1,
+        "new_ancillas": 24,
+        "nontrivial_Z_diameter_edges": 25,
+        "nontrivial_Z_weight": 26,
+        "pass": true,
+        "wire_edges": 25,
+        "wire_vertices": 26
+      },
+      {
+        "XX_path_incidence_rank": 26,
+        "commuting_Z_kernel_dimension": 1,
+        "commuting_Z_kernel_witnesses": [
+          0,
+          134217727
+        ],
+        "kernel_witness_failures": 0,
+        "local_XX_checks": 26,
+        "net_code_exponent_change": -1,
+        "new_ancillas": 25,
+        "nontrivial_Z_diameter_edges": 26,
+        "nontrivial_Z_weight": 27,
+        "pass": true,
+        "wire_edges": 26,
+        "wire_vertices": 27
+      },
+      {
+        "XX_path_incidence_rank": 27,
+        "commuting_Z_kernel_dimension": 1,
+        "commuting_Z_kernel_witnesses": [
+          0,
+          268435455
+        ],
+        "kernel_witness_failures": 0,
+        "local_XX_checks": 27,
+        "net_code_exponent_change": -1,
+        "new_ancillas": 26,
+        "nontrivial_Z_diameter_edges": 27,
+        "nontrivial_Z_weight": 28,
+        "pass": true,
+        "wire_edges": 27,
+        "wire_vertices": 28
+      },
+      {
+        "XX_path_incidence_rank": 28,
+        "commuting_Z_kernel_dimension": 1,
+        "commuting_Z_kernel_witnesses": [
+          0,
+          536870911
+        ],
+        "kernel_witness_failures": 0,
+        "local_XX_checks": 28,
+        "net_code_exponent_change": -1,
+        "new_ancillas": 27,
+        "nontrivial_Z_diameter_edges": 28,
+        "nontrivial_Z_weight": 29,
+        "pass": true,
+        "wire_edges": 28,
+        "wire_vertices": 29
+      },
+      {
+        "XX_path_incidence_rank": 29,
+        "commuting_Z_kernel_dimension": 1,
+        "commuting_Z_kernel_witnesses": [
+          0,
+          1073741823
+        ],
+        "kernel_witness_failures": 0,
+        "local_XX_checks": 29,
+        "net_code_exponent_change": -1,
+        "new_ancillas": 28,
+        "nontrivial_Z_diameter_edges": 29,
+        "nontrivial_Z_weight": 30,
+        "pass": true,
+        "wire_edges": 29,
+        "wire_vertices": 30
+      },
+      {
+        "XX_path_incidence_rank": 30,
+        "commuting_Z_kernel_dimension": 1,
+        "commuting_Z_kernel_witnesses": [
+          0,
+          2147483647
+        ],
+        "kernel_witness_failures": 0,
+        "local_XX_checks": 30,
+        "net_code_exponent_change": -1,
+        "new_ancillas": 29,
+        "nontrivial_Z_diameter_edges": 30,
+        "nontrivial_Z_weight": 31,
+        "pass": true,
+        "wire_edges": 30,
+        "wire_vertices": 31
+      },
+      {
+        "XX_path_incidence_rank": 31,
+        "commuting_Z_kernel_dimension": 1,
+        "commuting_Z_kernel_witnesses": [
+          0,
+          4294967295
+        ],
+        "kernel_witness_failures": 0,
+        "local_XX_checks": 31,
+        "net_code_exponent_change": -1,
+        "new_ancillas": 30,
+        "nontrivial_Z_diameter_edges": 31,
+        "nontrivial_Z_weight": 32,
+        "pass": true,
+        "wire_edges": 31,
+        "wire_vertices": 32
+      }
+    ]
+  },
+  "single_presentation_frame_falsifier": {
+    "broad_cubic_no_go": false,
+    "first_residual_rows": 21,
+    "fixed_identity_presentation_failing_frames": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      16,
+      17,
+      18,
+      20,
+      21,
+      22,
+      23
+    ],
+    "fixed_identity_presentation_failure_count": 21,
+    "frame_sector_rank_preserved": "each U_h is an invertible Clifford/permutation, so every sector has the identity rank and quotient",
+    "frame_sector_repair": "declare state-carried h and S_h=U_h S_identity; R maps h to Rh; literal register placement remains open",
+    "length": 3,
+    "pass_as_narrow_falsifier": true,
+    "proper_frames": 24,
+    "single_fixed_tree_stabilizer_span_cubic_covariant": false
+  },
+  "six_wall_ledger": {
+    "C_int": "rank and matter/gauge commutation retained; no new mass/contact/seam dynamics claim",
+    "C_local": "narrowed to occupied-role-safe route lowering plus rejection/repair; simple static XX wire route is specifically falsified",
+    "C_num": "exact binary/Clifford oracle only; no probability or normalization",
+    "C_ref": "state-carried 24-frame sectors close oracle-grammar covariance algebra; register placement and sector genesis remain supplied/open",
+    "C_source": "unchanged; no energy, stress, source, resource, or gravity meaning",
+    "C_wrap": "Wilson-fixing checks now have a coherent local-oracle grammar compatible with physical storage, not literal lowering, preparation, or realized history"
+  },
+  "size_uniform_and_distributed_capacity_audit": {
+    "asymptotic_counts": {
+      "available_fine_sites": "K^3 L^3",
+      "displayed_equality_rows": "O(L)",
+      "formula_controller_register_width": "O(log L)",
+      "orbit_copy_M2": "O(L)",
+      "reserved_shell_sites": "Theta(K^2 L^3)",
+      "reusable_probe_flag_token_work": "O(1)",
+      "tree_logical_edges": "O(L)"
+    },
+    "distributed_capacity_failures": 0,
+    "distributed_capacity_inequality": "24*3*E_tree + O(log L) <= K^3 L^3 for every L>=3 under the displayed upper bound",
+    "distributed_collision_free_placement_constructed": false,
+    "pass_as_capacity_audit": true,
+    "rows": [
+      {
+        "controller_bits_per_coarse_cell": 8.88888888888889,
+        "copy_upper_per_coarse_cell": 8.0,
+        "equality_row_upper_bound": 2484,
+        "length": 3,
+        "logical_controller_bits": 240,
+        "logical_edges": 9,
+        "physical_copy_upper_bound": 216,
+        "tree_pass": true
+      },
+      {
+        "controller_bits_per_coarse_cell": 3.828125,
+        "copy_upper_per_coarse_cell": 4.5,
+        "equality_row_upper_bound": 3312,
+        "length": 4,
+        "logical_controller_bits": 245,
+        "logical_edges": 12,
+        "physical_copy_upper_bound": 288,
+        "tree_pass": true
+      },
+      {
+        "controller_bits_per_coarse_cell": 1.968,
+        "copy_upper_per_coarse_cell": 2.88,
+        "equality_row_upper_bound": 4140,
+        "length": 5,
+        "logical_controller_bits": 246,
+        "logical_edges": 15,
+        "physical_copy_upper_bound": 360,
+        "tree_pass": true
+      },
+      {
+        "controller_bits_per_coarse_cell": 1.1388888888888888,
+        "copy_upper_per_coarse_cell": 2.0,
+        "equality_row_upper_bound": 4968,
+        "length": 6,
+        "logical_controller_bits": 246,
+        "logical_edges": 18,
+        "physical_copy_upper_bound": 432,
+        "tree_pass": true
+      },
+      {
+        "controller_bits_per_coarse_cell": 0.717201166180758,
+        "copy_upper_per_coarse_cell": 1.469387755102041,
+        "equality_row_upper_bound": 5796,
+        "length": 7,
+        "logical_controller_bits": 246,
+        "logical_edges": 21,
+        "physical_copy_upper_bound": 504,
+        "tree_pass": true
+      },
+      {
+        "controller_bits_per_coarse_cell": 0.490234375,
+        "copy_upper_per_coarse_cell": 1.125,
+        "equality_row_upper_bound": 6624,
+        "length": 8,
+        "logical_controller_bits": 251,
+        "logical_edges": 24,
+        "physical_copy_upper_bound": 576,
+        "tree_pass": true
+      },
+      {
+        "controller_bits_per_coarse_cell": 0.3443072702331962,
+        "copy_upper_per_coarse_cell": 0.8888888888888888,
+        "equality_row_upper_bound": 7452,
+        "length": 9,
+        "logical_controller_bits": 251,
+        "logical_edges": 27,
+        "physical_copy_upper_bound": 648,
+        "tree_pass": true
+      },
+      {
+        "controller_bits_per_coarse_cell": 0.252,
+        "copy_upper_per_coarse_cell": 0.72,
+        "equality_row_upper_bound": 8280,
+        "length": 10,
+        "logical_controller_bits": 252,
+        "logical_edges": 30,
+        "physical_copy_upper_bound": 720,
+        "tree_pass": true
+      },
+      {
+        "controller_bits_per_coarse_cell": 0.1893313298271976,
+        "copy_upper_per_coarse_cell": 0.5950413223140496,
+        "equality_row_upper_bound": 9108,
+        "length": 11,
+        "logical_controller_bits": 252,
+        "logical_edges": 33,
+        "physical_copy_upper_bound": 792,
+        "tree_pass": true
+      },
+      {
+        "controller_bits_per_coarse_cell": 0.14583333333333334,
+        "copy_upper_per_coarse_cell": 0.5,
+        "equality_row_upper_bound": 9936,
+        "length": 12,
+        "logical_controller_bits": 252,
+        "logical_edges": 36,
+        "physical_copy_upper_bound": 864,
+        "tree_pass": true
+      },
+      {
+        "controller_bits_per_coarse_cell": 0.11470186618115612,
+        "copy_upper_per_coarse_cell": 0.4260355029585799,
+        "equality_row_upper_bound": 10764,
+        "length": 13,
+        "logical_controller_bits": 252,
+        "logical_edges": 39,
+        "physical_copy_upper_bound": 936,
+        "tree_pass": true
+      },
+      {
+        "controller_bits_per_coarse_cell": 0.09183673469387756,
+        "copy_upper_per_coarse_cell": 0.3673469387755102,
+        "equality_row_upper_bound": 11592,
+        "length": 14,
+        "logical_controller_bits": 252,
+        "logical_edges": 42,
+        "physical_copy_upper_bound": 1008,
+        "tree_pass": true
+      },
+      {
+        "controller_bits_per_coarse_cell": 0.07466666666666667,
+        "copy_upper_per_coarse_cell": 0.32,
+        "equality_row_upper_bound": 12420,
+        "length": 15,
+        "logical_controller_bits": 252,
+        "logical_edges": 45,
+        "physical_copy_upper_bound": 1080,
+        "tree_pass": true
+      },
+      {
+        "controller_bits_per_coarse_cell": 0.062744140625,
+        "copy_upper_per_coarse_cell": 0.28125,
+        "equality_row_upper_bound": 13248,
+        "length": 16,
+        "logical_controller_bits": 257,
+        "logical_edges": 48,
+        "physical_copy_upper_bound": 1152,
+        "tree_pass": true
+      },
+      {
+        "controller_bits_per_coarse_cell": 0.05231019743537554,
+        "copy_upper_per_coarse_cell": 0.2491349480968858,
+        "equality_row_upper_bound": 14076,
+        "length": 17,
+        "logical_controller_bits": 257,
+        "logical_edges": 51,
+        "physical_copy_upper_bound": 1224,
+        "tree_pass": true
+      },
+      {
+        "controller_bits_per_coarse_cell": 0.04406721536351166,
+        "copy_upper_per_coarse_cell": 0.2222222222222222,
+        "equality_row_upper_bound": 14904,
+        "length": 18,
+        "logical_controller_bits": 257,
+        "logical_edges": 54,
+        "physical_copy_upper_bound": 1296,
+        "tree_pass": true
+      },
+      {
+        "controller_bits_per_coarse_cell": 0.03746901880740633,
+        "copy_upper_per_coarse_cell": 0.1994459833795014,
+        "equality_row_upper_bound": 15732,
+        "length": 19,
+        "logical_controller_bits": 257,
+        "logical_edges": 57,
+        "physical_copy_upper_bound": 1368,
+        "tree_pass": true
+      },
+      {
+        "controller_bits_per_coarse_cell": 0.03225,
+        "copy_upper_per_coarse_cell": 0.18,
+        "equality_row_upper_bound": 16560,
+        "length": 20,
+        "logical_controller_bits": 258,
+        "logical_edges": 60,
+        "physical_copy_upper_bound": 1440,
+        "tree_pass": true
+      },
+      {
+        "controller_bits_per_coarse_cell": 0.027858762552640103,
+        "copy_upper_per_coarse_cell": 0.16326530612244897,
+        "equality_row_upper_bound": 17388,
+        "length": 21,
+        "logical_controller_bits": 258,
+        "logical_edges": 63,
+        "physical_copy_upper_bound": 1512,
+        "tree_pass": true
+      },
+      {
+        "controller_bits_per_coarse_cell": 0.024229902329075882,
+        "copy_upper_per_coarse_cell": 0.1487603305785124,
+        "equality_row_upper_bound": 18216,
+        "length": 22,
+        "logical_controller_bits": 258,
+        "logical_edges": 66,
+        "physical_copy_upper_bound": 1584,
+        "tree_pass": true
+      },
+      {
+        "controller_bits_per_coarse_cell": 0.02120489849593162,
+        "copy_upper_per_coarse_cell": 0.13610586011342155,
+        "equality_row_upper_bound": 19044,
+        "length": 23,
+        "logical_controller_bits": 258,
+        "logical_edges": 69,
+        "physical_copy_upper_bound": 1656,
+        "tree_pass": true
+      },
+      {
+        "controller_bits_per_coarse_cell": 0.018663194444444444,
+        "copy_upper_per_coarse_cell": 0.125,
+        "equality_row_upper_bound": 19872,
+        "length": 24,
+        "logical_controller_bits": 258,
+        "logical_edges": 72,
+        "physical_copy_upper_bound": 1728,
+        "tree_pass": true
+      },
+      {
+        "controller_bits_per_coarse_cell": 0.016512,
+        "copy_upper_per_coarse_cell": 0.1152,
+        "equality_row_upper_bound": 20700,
+        "length": 25,
+        "logical_controller_bits": 258,
+        "logical_edges": 75,
+        "physical_copy_upper_bound": 1800,
+        "tree_pass": true
+      },
+      {
+        "controller_bits_per_coarse_cell": 0.014679107874374146,
+        "copy_upper_per_coarse_cell": 0.10650887573964497,
+        "equality_row_upper_bound": 21528,
+        "length": 26,
+        "logical_controller_bits": 258,
+        "logical_edges": 78,
+        "physical_copy_upper_bound": 1872,
+        "tree_pass": true
+      },
+      {
+        "controller_bits_per_coarse_cell": 0.013107757963725042,
+        "copy_upper_per_coarse_cell": 0.09876543209876543,
+        "equality_row_upper_bound": 22356,
+        "length": 27,
+        "logical_controller_bits": 258,
+        "logical_edges": 81,
+        "physical_copy_upper_bound": 1944,
+        "tree_pass": true
+      },
+      {
+        "controller_bits_per_coarse_cell": 0.011752915451895043,
+        "copy_upper_per_coarse_cell": 0.09183673469387756,
+        "equality_row_upper_bound": 23184,
+        "length": 28,
+        "logical_controller_bits": 258,
+        "logical_edges": 84,
+        "physical_copy_upper_bound": 2016,
+        "tree_pass": true
+      },
+      {
+        "controller_bits_per_coarse_cell": 0.01057853950551478,
+        "copy_upper_per_coarse_cell": 0.08561236623067776,
+        "equality_row_upper_bound": 24012,
+        "length": 29,
+        "logical_controller_bits": 258,
+        "logical_edges": 87,
+        "physical_copy_upper_bound": 2088,
+        "tree_pass": true
+      },
+      {
+        "controller_bits_per_coarse_cell": 0.009555555555555555,
+        "copy_upper_per_coarse_cell": 0.08,
+        "equality_row_upper_bound": 24840,
+        "length": 30,
+        "logical_controller_bits": 258,
+        "logical_edges": 90,
+        "physical_copy_upper_bound": 2160,
+        "tree_pass": true
+      },
+      {
+        "controller_bits_per_coarse_cell": 0.008660333657816119,
+        "copy_upper_per_coarse_cell": 0.07492195629552549,
+        "equality_row_upper_bound": 25668,
+        "length": 31,
+        "logical_controller_bits": 258,
+        "logical_edges": 93,
+        "physical_copy_upper_bound": 2232,
+        "tree_pass": true
+      }
+    ],
+    "same_formula_L3_L31": true,
+    "scope": "resource capacity and size-uniform program law, not a literal occupied-role-safe placement",
+    "single_origin_K129_shell_all_L_capacity_claim": false
+  },
+  "state_carried_frame_sector_covariance": {
+    "coordinate_group_cases": 12672,
+    "coordinate_group_failures": 0,
+    "frame_group_failures": 0,
+    "individual_unlabelled_presentation_claimed_covariant": false,
+    "ordered_products": 576,
+    "orientation_one_hot_is_state_carried_register_specification": true,
+    "orientation_register_literally_placed": false,
+    "pass": true,
+    "proper_frames": 24,
+    "runtime_host_frame_selector": false,
+    "state_carried_sector_action": "(R,h,S_h,program_h) -> (Rh,U_R S_h U_R^-1,program_Rh)"
+  },
+  "status": "cycle646-coherent-local-enforcement-oracle-grammar-partial-closure",
+  "strongest_constructive_result": "for every Cycle642 XX equality and tree-face stabilizer at L3/L6/L7, a state-carried formula controller/register grammar specifies exact clean coherent syndrome-phase algebra and a serial ownership schedule compatible with physical storage; rank/code exponent and matter/gauge commutation are unchanged and frame-sector algebra closes all24/all576, but registers, occupied-role-safe detours, and literal fine-NN physical lowering are not constructed",
+  "supplied_structure_inventory": {
+    "K129_partition_macro_origin_and_state_carried_frame_sector": true,
+    "controller_registers_literally_placed": false,
+    "distributed_collision_free_corridor": false,
+    "finite_full_certificates_L3_L6_L7": true,
+    "formula_microcode_and_pi_violation_phase_choice": true,
+    "host_path_table_or_runtime_branch": false,
+    "immutable_Cycle638_formula_controller_grammar_mechanism": true,
+    "immutable_Cycle642_orbit_tree_checks_roles_and_routing_scout": true,
+    "initial_blank_probe_flag_route_work_and_one_active_token": true,
+    "no_refit_combinatorial_capacity_scan_L3_L31": true,
+    "physical_E_preparation_repair_or_measurement": false,
+    "single_shell_asymptotic_placement": false
+  },
+  "tests_failed": 0,
+  "tests_passed": 18,
+  "tests_total": 18
+}

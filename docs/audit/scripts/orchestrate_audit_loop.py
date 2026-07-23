@@ -118,6 +118,14 @@ def blocked_row_reentry_count() -> int:
     return campaign_exclusion_count(batch.BLOCKED_ROW_QUARANTINE_RESULT)
 
 
+def compute_quarantine_count() -> int:
+    return campaign_exclusion_count(batch.COMPUTE_QUARANTINE_RESULT)
+
+
+def claim_transaction_quarantine_count() -> int:
+    return campaign_exclusion_count(batch.CLAIM_TRANSACTION_QUARANTINE_RESULT)
+
+
 def audit_status_snapshot() -> dict[str, str | None]:
     """Read the materialized ledger without refreshing or rewriting caches."""
     ledger_cache = DATA / "audit_ledger.json"
@@ -167,6 +175,8 @@ def summary_line(final: bool = False) -> str:
         f"ready_rows={ready if ready is not None else 'unknown'} "
         f"remaining_lane_blockers={blockers if blockers is not None else 'unknown'} "
         f"schema_quarantined={schema_quarantine_count()} "
+        f"compute_quarantined={compute_quarantine_count()} "
+        f"transaction_quarantined={claim_transaction_quarantine_count()} "
         f"blocked_row_reentries={blocked_row_reentry_count()}"
     )
 
@@ -535,6 +545,19 @@ def main(argv: list[str] | None = None) -> int:
                         "fixed point excludes post-verdict rows that immediately "
                         "re-entered dep-ready selection; all other eligible rows "
                         f"were drained: {args.campaign_quarantine_file}"
+                    )
+                if compute_quarantine_count():
+                    emit(
+                        "fixed point excludes compute-required rows until their "
+                        "runner cache, sliced certificate, or independent "
+                        f"derivation is repaired: {args.campaign_quarantine_file}"
+                    )
+                if claim_transaction_quarantine_count():
+                    emit(
+                        "fixed point excludes claim-local apply/gate failures "
+                        "whose rollback to origin/main was verified; repair the "
+                        "recorded operational cause before a new campaign: "
+                        f"{args.campaign_quarantine_file}"
                     )
                 break
 

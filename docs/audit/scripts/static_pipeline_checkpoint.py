@@ -66,10 +66,23 @@ VERDICT_GENERATED_PATHS = frozenset({
     "docs/repo/RETAINED_BACKBONE.md",
 })
 
+# These topology/status metrics are owned by compute_load_bearing.py. Their
+# source inputs (notes, dependency edges, and runners) remain fingerprinted;
+# the materialized metrics themselves must not invalidate the checkpoint when
+# a verdict changes descendant effective status during the same pipeline.
+LEDGER_PIPELINE_DERIVED_FIELDS = frozenset({
+    "criticality",
+    "direct_in_degree",
+    "load_bearing_score",
+    "max_descendant_status",
+    "max_descendant_status_rank",
+    "transitive_descendants",
+})
+
 # Only these known auditor-owned or downstream-derived fields may change
 # without invalidating a skipped seed/classifier pass. Unknown fields are
 # hashed by default, so schema growth fails closed rather than silently being
-# treated as verdict-owned.
+# treated as verdict- or pipeline-owned.
 LEDGER_VERDICT_FIELDS = frozenset({
     "audit_date",
     "audit_invocation_history",
@@ -96,8 +109,6 @@ LEDGER_VERDICT_FIELDS = frozenset({
     "intrinsic_status",
     "load_bearing_step",
     "load_bearing_step_class",
-    "max_descendant_status",
-    "max_descendant_status_rank",
     "negative_assertion_classes",
     "no_go_discipline",
     "notes_for_re_audit_if_any",
@@ -112,7 +123,7 @@ LEDGER_VERDICT_FIELDS = frozenset({
     "runner_check_breakdown",
     "unattributed_audit_provenance",
     "verdict_rationale",
-})
+}) | LEDGER_PIPELINE_DERIVED_FIELDS
 RUNNER_PATH_RE = re.compile(
     r"(scripts/[A-Za-z0-9_./\-]+\.py)|"
     r"(?<![A-Za-z0-9_./\-])([A-Za-z0-9_.\-]+\.py)"

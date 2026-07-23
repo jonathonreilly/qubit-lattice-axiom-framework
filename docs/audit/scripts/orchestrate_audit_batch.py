@@ -73,12 +73,18 @@ SCHEMA_QUARANTINE_RESULT = "schema_invalid_quarantined"
 SCHEMA_DEFERRED_RESULT = "schema_invalid_peer_deferred"
 SCHEMA_SUPERSEDED_RESULT = "schema_invalid_attempt_superseded"
 BLOCKED_ROW_QUARANTINE_RESULT = "blocked_row_reentry_quarantined"
+COMPUTE_QUARANTINE_RESULT = "compute_required_quarantined"
+CLAIM_TRANSACTION_QUARANTINE_RESULT = "claim_transaction_quarantined"
 SCHEMA_RECOVERY_RESULTS = {
     SCHEMA_QUARANTINE_RESULT,
     SCHEMA_DEFERRED_RESULT,
     SCHEMA_SUPERSEDED_RESULT,
 }
-CAMPAIGN_EXCLUSION_RESULTS = {BLOCKED_ROW_QUARANTINE_RESULT}
+CAMPAIGN_EXCLUSION_RESULTS = {
+    BLOCKED_ROW_QUARANTINE_RESULT,
+    COMPUTE_QUARANTINE_RESULT,
+    CLAIM_TRANSACTION_QUARANTINE_RESULT,
+}
 SCIENCE_FIX_RESULTS = {"science_fix_dispatched", "science_fix_dispatch_failed"}
 MIN_DELIVERY_BYTES = 200
 PACKET_COMPLETION_STALL_SECONDS = 20 * 60
@@ -1757,6 +1763,29 @@ def persist_campaign_quarantine(
     claim_ids: set[str],
     report: list[dict],
 ) -> None:
+    persist_campaign_exclusions(
+        path,
+        claim_ids,
+        reason=SCHEMA_QUARANTINE_RESULT,
+        report=report,
+        companion_results=SCHEMA_INVALID_RESULTS,
+    )
+
+
+def persist_campaign_exclusions(
+    path: Path | None,
+    claim_ids: set[str],
+    *,
+    reason: str,
+    report: list[dict],
+    companion_results: set[str],
+) -> None:
+    """Append one durable campaign-local exclusion record per claim.
+
+    Exclusions are operational state, never audit verdicts.  The exact
+    companion failures stay attached so a later repair campaign can route the
+    row without reading prior scientific rationales.
+    """
     if path is None or not claim_ids:
         return
     existing = load_campaign_quarantine(path)
@@ -1767,13 +1796,13 @@ def persist_campaign_quarantine(
                 item
                 for item in report
                 if item.get("cid") == cid
-                and item.get("result") in SCHEMA_INVALID_RESULTS
+                and item.get("result") in companion_results
             ]
             handle.write(
                 json.dumps(
                     {
                         "claim_id": cid,
-                        "reason": SCHEMA_QUARANTINE_RESULT,
+                        "reason": reason,
                         "failures": failures,
                         "recorded_at": datetime.now(timezone.utc).isoformat(),
                     },
@@ -1781,6 +1810,37 @@ def persist_campaign_quarantine(
                 )
                 + "\n"
             )
+
+
+def persist_compute_required_skips(
+    path: Path | None,
+    claim_ids: set[str],
+    report: list[dict],
+) -> None:
+    persist_campaign_exclusions(
+        path,
+        claim_ids,
+        reason=COMPUTE_QUARANTINE_RESULT,
+        report=report,
+        companion_results={"compute_required"},
+    )
+
+
+def persist_claim_transaction_quarantines(
+    path: Path | None,
+    claim_ids: set[str],
+    report: list[dict],
+) -> None:
+    persist_campaign_exclusions(
+        path,
+        claim_ids,
+        reason=CLAIM_TRANSACTION_QUARANTINE_RESULT,
+        report=report,
+        companion_results={
+            "apply_or_gate_failed",
+            CLAIM_TRANSACTION_QUARANTINE_RESULT,
+        },
+    )
 
 
 def _latest_invalidation_reason(row: dict) -> str:
@@ -1979,6 +2039,31 @@ def apply_serialized(
         ok, results = apply_claim_serialized(claim_deliveries, retries)
         report.extend(results)
         if not ok:
+            # apply_claim_serialized rolls an apply/gate rejection back to the
+            # synchronized origin/main parent.  Once that rollback is proven
+            # clean, this is a claim-local operational failure: quarantine the
+            # row for this campaign and keep draining unrelated science.
+            # Sync, reset, commit, and push failures remain global/uncertain
+            # and still stop the batch.
+            claim_local = (
+                bool(results)
+                and all(
+                    item.get("result") == "apply_or_gate_failed"
+                    for item in results
+                )
+                and clean_main_error() is None
+            )
+            if claim_local:
+                report.append({
+                    "cid": cid,
+                    "result": CLAIM_TRANSACTION_QUARANTINE_RESULT,
+                    "detail": (
+                        "apply/pipeline/lint transaction failed after validated "
+                        "delivery; rollback to synchronized origin/main was "
+                        "verified, so this claim is excluded for the campaign"
+                    ),
+                })
+                continue
             return (
                 False,
                 compute_skips,
@@ -2258,9 +2343,26 @@ def main() -> int:
             ) = apply_serialized(jobs, report, args.push_retries)
         session_skipped.update(compute_skips)
         session_skipped.update(schema_quarantines)
+        transaction_quarantines = {
+            item["cid"]
+            for item in report
+            if item.get("result") == CLAIM_TRANSACTION_QUARANTINE_RESULT
+            and isinstance(item.get("cid"), str)
+        }
+        session_skipped.update(transaction_quarantines)
         persist_campaign_quarantine(
             args.campaign_quarantine_file,
             schema_quarantines,
+            report,
+        )
+        persist_compute_required_skips(
+            args.campaign_quarantine_file,
+            compute_skips,
+            report,
+        )
+        persist_claim_transaction_quarantines(
+            args.campaign_quarantine_file,
+            transaction_quarantines,
             report,
         )
         science_handoffs.update(
@@ -2351,12 +2453,21 @@ def report_has_hard_blocker(report: list[dict]) -> bool:
         for item in report
         if item.get("result") in SCHEMA_RECOVERY_RESULTS
     }
+    transaction_quarantined = {
+        item.get("cid")
+        for item in report
+        if item.get("result") == CLAIM_TRANSACTION_QUARANTINE_RESULT
+    }
     quarantine_companions = SCHEMA_INVALID_RESULTS | {"critical_peer_pending"}
     return any(
         item.get("result") not in accepted
         and not (
             item.get("cid") in recovered
             and item.get("result") in quarantine_companions
+        )
+        and not (
+            item.get("cid") in transaction_quarantined
+            and item.get("result") == "apply_or_gate_failed"
         )
         for item in report
     )

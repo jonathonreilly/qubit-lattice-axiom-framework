@@ -1,0 +1,4270 @@
+{
+  "audit": "unset",
+  "author_accepted": false,
+  "author_artifact_status_accepted": false,
+  "authority": "none",
+  "axiom_pressure": false,
+  "axiom_pressure_claim": false,
+  "breakthrough": false,
+  "broad_no_go_claim": false,
+  "classification": "partial narrowing with exact marked-square covariance falsifier and positive orbit-tree enlarged-incidence comparator",
+  "constitutional_effect": "none",
+  "cycle": 642,
+  "date": "2026-07-23",
+  "deletion_and_malformed_incidence": {
+    "delete_one_face_rank": 453,
+    "deleted_face_old_Wilson_rank_increment": 1,
+    "deleted_face_rank_loss": 1,
+    "disconnect_one_repetition_copy_rank": 453,
+    "disconnected_copy_rank_loss": 1,
+    "full_rank": 454,
+    "malformed_one-copy_face_equality_syndromes": 7,
+    "pass": true
+  },
+  "exact_Cycle537_marked_square_fixed_frame_falsifier": {
+    "general_enlarged_incidence_no_go": false,
+    "narrow_conclusion": "the exact marked Cycle537 square presentation has no injective row-permutation-equivariant fixed placement; retriangulation, role splitting, or a changed incidence remains open",
+    "pass_as_narrow_falsifier": true,
+    "rows": [
+      {
+        "all_chunks_fixed_by_rotation_about_their_axis": true,
+        "chunk_attachment_incidence_mismatches": 3,
+        "injective_exact_marked_square_incidence_equivariant": false,
+        "length": 3,
+        "marked_chunk_faces": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "marked_set_nonclosure_count": 2,
+        "quarter_turn_fixed_faces": [
+          [
+            1,
+            1
+          ]
+        ],
+        "quarter_turned_marked_faces": [
+          [
+            2,
+            0
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "all_chunks_fixed_by_rotation_about_their_axis": true,
+        "chunk_attachment_incidence_mismatches": 6,
+        "injective_exact_marked_square_incidence_equivariant": false,
+        "length": 6,
+        "marked_chunk_faces": [
+          [
+            0,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        "marked_set_nonclosure_count": 6,
+        "quarter_turn_fixed_faces": [],
+        "quarter_turned_marked_faces": [
+          [
+            5,
+            0
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            0
+          ]
+        ]
+      },
+      {
+        "all_chunks_fixed_by_rotation_about_their_axis": true,
+        "chunk_attachment_incidence_mismatches": 7,
+        "injective_exact_marked_square_incidence_equivariant": false,
+        "length": 7,
+        "marked_chunk_faces": [
+          [
+            0,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        "marked_set_nonclosure_count": 6,
+        "quarter_turn_fixed_faces": [
+          [
+            3,
+            3
+          ]
+        ],
+        "quarter_turned_marked_faces": [
+          [
+            6,
+            0
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      }
+    ],
+    "tested_object": "the exact Cycle537 one-chunk-to-one-marked-face square-disk incidence",
+    "witness": "a proper 90-degree rotation about the Wilson axis fixes every axial chunk label and rotates the square faces"
+  },
+  "fine_NN_routing_scouts": [
+    {
+      "all24_path_family_covariance": "the full shortest-path family is invariant under signed coordinate permutations",
+      "all_axis_order_and_tied_sign_route_variants": 4090,
+      "autonomous_crossing_schedule_or_static_local_check_gadget_constructed": false,
+      "checks_scouted": 132,
+      "crossing_ownership": "each descriptor owns (check label, unordered support pair); shared sites and maximum owner multiplicity are exhaustively counted but not yet autonomously scheduled",
+      "distinct_physical_sites_touched": 30859,
+      "host_path_table_used": false,
+      "length": 3,
+      "literal_fine_NN_path_exists_for_every_pair": true,
+      "maximum_route_owner_multiplicity_at_one_site": 84,
+      "maximum_shortest_fine_NN_path_edges": 136,
+      "path_family_sha256": "1d2cd82132faa15e93478ac3eb10a2c138da191d9a82bb385042e1367a45b038",
+      "physical_period": 387,
+      "physical_sites_with_multiple_route_owners": 24824,
+      "route_owner_site_incidences": 209870,
+      "route_rule": "state-carried endpoint coordinates may enumerate all signed shortest steps and all axis orders; no path table is required",
+      "strict_physical_enforcement_pass": false,
+      "support_weight_histogram": {
+        "2": 120,
+        "10": 6,
+        "13": 1,
+        "16": 3,
+        "17": 2
+      },
+      "total_shortest_fine_NN_edges_if_pairs_routed_separately": 63660,
+      "unordered_support_pair_routes": 1100
+    },
+    {
+      "all24_path_family_covariance": "the full shortest-path family is invariant under signed coordinate permutations",
+      "all_axis_order_and_tied_sign_route_variants": 9493,
+      "autonomous_crossing_schedule_or_static_local_check_gadget_constructed": false,
+      "checks_scouted": 261,
+      "crossing_ownership": "each descriptor owns (check label, unordered support pair); shared sites and maximum owner multiplicity are exhaustively counted but not yet autonomously scheduled",
+      "distinct_physical_sites_touched": 117934,
+      "host_path_table_used": false,
+      "length": 6,
+      "literal_fine_NN_path_exists_for_every_pair": true,
+      "maximum_route_owner_multiplicity_at_one_site": 195,
+      "maximum_shortest_fine_NN_path_edges": 344,
+      "path_family_sha256": "eef9550e2dc262fa310d71b8aa624b1a598cbd9f2afb0510b28d52d3448b3e23",
+      "physical_period": 774,
+      "physical_sites_with_multiple_route_owners": 92985,
+      "route_owner_site_incidences": 711581,
+      "route_rule": "state-carried endpoint coordinates may enumerate all signed shortest steps and all axis orders; no path table is required",
+      "strict_physical_enforcement_pass": false,
+      "support_weight_histogram": {
+        "2": 240,
+        "10": 6,
+        "13": 1,
+        "14": 9,
+        "17": 2,
+        "24": 3
+      },
+      "total_shortest_fine_NN_edges_if_pairs_routed_separately": 200280,
+      "unordered_support_pair_routes": 2507
+    },
+    {
+      "all24_path_family_covariance": "the full shortest-path family is invariant under signed coordinate permutations",
+      "all_axis_order_and_tied_sign_route_variants": 8766,
+      "autonomous_crossing_schedule_or_static_local_check_gadget_constructed": false,
+      "checks_scouted": 216,
+      "crossing_ownership": "each descriptor owns (check label, unordered support pair); shared sites and maximum owner multiplicity are exhaustively counted but not yet autonomously scheduled",
+      "distinct_physical_sites_touched": 109131,
+      "host_path_table_used": false,
+      "length": 7,
+      "literal_fine_NN_path_exists_for_every_pair": true,
+      "maximum_route_owner_multiplicity_at_one_site": 152,
+      "maximum_shortest_fine_NN_path_edges": 345,
+      "path_family_sha256": "672e93e9a9299c892a7c48e188742f1962051a156638316e2b31b92c7509a5c5",
+      "physical_period": 903,
+      "physical_sites_with_multiple_route_owners": 90315,
+      "route_owner_site_incidences": 678610,
+      "route_rule": "state-carried endpoint coordinates may enumerate all signed shortest steps and all axis orders; no path table is required",
+      "strict_physical_enforcement_pass": false,
+      "support_weight_histogram": {
+        "2": 192,
+        "10": 6,
+        "13": 1,
+        "14": 12,
+        "16": 3,
+        "17": 2
+      },
+      "total_shortest_fine_NN_edges_if_pairs_routed_separately": 183892,
+      "unordered_support_pair_routes": 2264
+    }
+  ],
+  "fixed_K129_orbit_role_placements": [
+    {
+      "Cycle532_rescaled_old_role_collisions": 0,
+      "Cycle629_638_dynamic_geometry_collisions": 0,
+      "Cycle629_638_marker_role_collisions": 0,
+      "Cycle638_inner_program_role_collisions": 0,
+      "abstract_role_orbits": 2,
+      "all24_fiber_covariance_failures": 0,
+      "all576_label_group_failures": 0,
+      "injective_role_collisions": 0,
+      "length": 3,
+      "logical_aux_edges": 9,
+      "orbit_rows": [
+        {
+          "abstract_orbit_size": 3,
+          "physical_orbit_size": 24,
+          "physical_seed": [
+            64,
+            1,
+            2
+          ],
+          "representative": [
+            0,
+            "root",
+            0
+          ],
+          "role_stabilizer_size": 8
+        },
+        {
+          "abstract_orbit_size": 6,
+          "physical_orbit_size": 24,
+          "physical_seed": [
+            64,
+            1,
+            3
+          ],
+          "representative": [
+            0,
+            "root",
+            1
+          ],
+          "role_stabilizer_size": 4
+        }
+      ],
+      "pass": true,
+      "physical_aux_M2": 48,
+      "placement_bound": "all cap roles lie on max|coordinate|=64 shell of one supplied K129 block",
+      "role_copy_multiplicity_histogram": {
+        "4": 6,
+        "8": 3
+      },
+      "translated_L3_L6_L7": {
+        "3": {
+          "collisions": 0,
+          "motif_copies": 27,
+          "placed_roles": 1296
+        },
+        "6": {
+          "collisions": 0,
+          "motif_copies": 216,
+          "placed_roles": 10368
+        },
+        "7": {
+          "collisions": 0,
+          "motif_copies": 343,
+          "placed_roles": 16464
+        }
+      }
+    },
+    {
+      "Cycle532_rescaled_old_role_collisions": 0,
+      "Cycle629_638_dynamic_geometry_collisions": 0,
+      "Cycle629_638_marker_role_collisions": 0,
+      "Cycle638_inner_program_role_collisions": 0,
+      "abstract_role_orbits": 4,
+      "all24_fiber_covariance_failures": 0,
+      "all576_label_group_failures": 0,
+      "injective_role_collisions": 0,
+      "length": 6,
+      "logical_aux_edges": 18,
+      "orbit_rows": [
+        {
+          "abstract_orbit_size": 3,
+          "physical_orbit_size": 24,
+          "physical_seed": [
+            64,
+            1,
+            2
+          ],
+          "representative": [
+            0,
+            "root",
+            0
+          ],
+          "role_stabilizer_size": 8
+        },
+        {
+          "abstract_orbit_size": 6,
+          "physical_orbit_size": 24,
+          "physical_seed": [
+            64,
+            1,
+            3
+          ],
+          "representative": [
+            0,
+            "root",
+            1
+          ],
+          "role_stabilizer_size": 4
+        },
+        {
+          "abstract_orbit_size": 3,
+          "physical_orbit_size": 24,
+          "physical_seed": [
+            64,
+            1,
+            4
+          ],
+          "representative": [
+            0,
+            "root",
+            3
+          ],
+          "role_stabilizer_size": 8
+        },
+        {
+          "abstract_orbit_size": 6,
+          "physical_orbit_size": 24,
+          "physical_seed": [
+            64,
+            1,
+            5
+          ],
+          "representative": [
+            0,
+            1,
+            2
+          ],
+          "role_stabilizer_size": 4
+        }
+      ],
+      "pass": true,
+      "physical_aux_M2": 96,
+      "placement_bound": "all cap roles lie on max|coordinate|=64 shell of one supplied K129 block",
+      "role_copy_multiplicity_histogram": {
+        "4": 12,
+        "8": 6
+      },
+      "translated_L3_L6_L7": {
+        "3": {
+          "collisions": 0,
+          "motif_copies": 27,
+          "placed_roles": 2592
+        },
+        "6": {
+          "collisions": 0,
+          "motif_copies": 216,
+          "placed_roles": 20736
+        },
+        "7": {
+          "collisions": 0,
+          "motif_copies": 343,
+          "placed_roles": 32928
+        }
+      }
+    },
+    {
+      "Cycle532_rescaled_old_role_collisions": 0,
+      "Cycle629_638_dynamic_geometry_collisions": 0,
+      "Cycle629_638_marker_role_collisions": 0,
+      "Cycle638_inner_program_role_collisions": 0,
+      "abstract_role_orbits": 4,
+      "all24_fiber_covariance_failures": 0,
+      "all576_label_group_failures": 0,
+      "injective_role_collisions": 0,
+      "length": 7,
+      "logical_aux_edges": 21,
+      "orbit_rows": [
+        {
+          "abstract_orbit_size": 3,
+          "physical_orbit_size": 24,
+          "physical_seed": [
+            64,
+            1,
+            2
+          ],
+          "representative": [
+            0,
+            "root",
+            0
+          ],
+          "role_stabilizer_size": 8
+        },
+        {
+          "abstract_orbit_size": 6,
+          "physical_orbit_size": 24,
+          "physical_seed": [
+            64,
+            1,
+            3
+          ],
+          "representative": [
+            0,
+            "root",
+            1
+          ],
+          "role_stabilizer_size": 4
+        },
+        {
+          "abstract_orbit_size": 6,
+          "physical_orbit_size": 24,
+          "physical_seed": [
+            64,
+            1,
+            4
+          ],
+          "representative": [
+            0,
+            1,
+            2
+          ],
+          "role_stabilizer_size": 4
+        },
+        {
+          "abstract_orbit_size": 6,
+          "physical_orbit_size": 24,
+          "physical_seed": [
+            64,
+            1,
+            5
+          ],
+          "representative": [
+            0,
+            2,
+            3
+          ],
+          "role_stabilizer_size": 4
+        }
+      ],
+      "pass": true,
+      "physical_aux_M2": 96,
+      "placement_bound": "all cap roles lie on max|coordinate|=64 shell of one supplied K129 block",
+      "role_copy_multiplicity_histogram": {
+        "4": 18,
+        "8": 3
+      },
+      "translated_L3_L6_L7": {
+        "3": {
+          "collisions": 0,
+          "motif_copies": 27,
+          "placed_roles": 2592
+        },
+        "6": {
+          "collisions": 0,
+          "motif_copies": 216,
+          "placed_roles": 20736
+        },
+        "7": {
+          "collisions": 0,
+          "motif_copies": 343,
+          "placed_roles": 32928
+        }
+      }
+    }
+  ],
+  "git_head_at_run": "de30bf39ca5efda2640aa70503dd996b4bb68813",
+  "minimum_content_claim": false,
+  "no_go_discipline": {
+    "N1_broad_gate": "FAIL / DO NOT SHIP",
+    "N1_negative_gate": "FAIL / DO NOT SHIP",
+    "N1_normalized_families": [
+      {
+        "family": "exact marked square-disk row-permutation placement",
+        "marker": "ATTEMPTED",
+        "mechanism": "one fixed injective proper-cubic action",
+        "object": "Cycle537 marked face/chunk incidence",
+        "result": "quarter-turn falsifier at L3/L6/L7",
+        "terminal": "all24 incidence automorphism"
+      },
+      {
+        "family": "unchanged-torus plaquette cap",
+        "marker": "RULED OUT BY PRIOR",
+        "mechanism": "sum old plaquette boundaries",
+        "object": "old cubic two-chain",
+        "result": "Cycle637 dual-cocycle pairing",
+        "terminal": "one axial Wilson boundary"
+      },
+      {
+        "family": "orbit-split tree normal form",
+        "marker": "ATTEMPTED",
+        "mechanism": "tree edge cancellation and X repetition constraints",
+        "object": "bounded-degree incidence tree plus cubic stabilizer fibers",
+        "result": "algebra/rank/K129 roles positive; terminal open",
+        "terminal": "static local enforcement or autonomous routed controller"
+      }
+    ],
+    "N1_open_routes_not_counted": [
+      {
+        "family": "cubic-symmetric redesigned disk",
+        "mechanism": "role splitting before attachment",
+        "object": "new face/star complex",
+        "result": "not ruled out",
+        "status": "OPEN / NOT COUNTED",
+        "terminal": "exact full-matter fixed embedding"
+      },
+      {
+        "family": "defect/code-growth encoder",
+        "mechanism": "leave code, grow and reglue",
+        "object": "temporary rough boundaries",
+        "result": "not ruled out",
+        "status": "OPEN / NOT COUNTED",
+        "terminal": "local E and restored target intertwiner"
+      },
+      {
+        "family": "time-multiplexed cap worldvolume",
+        "mechanism": "sequential incidence simulation",
+        "object": "reusable ancillas and state-carried program",
+        "result": "not ruled out",
+        "status": "OPEN / NOT COUNTED",
+        "terminal": "autonomous inverse/leakage and no host control"
+      },
+      {
+        "family": "cut-sheet deformation",
+        "mechanism": "temporary boundary then reglue",
+        "object": "open periodic planes",
+        "result": "not ruled out",
+        "status": "OPEN / NOT COUNTED",
+        "terminal": "proper-cubic restored streams"
+      }
+    ],
+    "N1_qualifying_attempts": 3,
+    "N1_required_for_negative": 5,
+    "N2_collapsed_walls": {
+      "W_fixed_incidence": "replace Cycle537's retriangulated marked square orbit by one fixed cubic incidence",
+      "W_local_enforcement": "turn routed support geometry into static local gauge checks or an autonomous stored controller",
+      "W_prepare": "construct code-state E/initialization preserving the target factor"
+    },
+    "N2_directed_ordered_pairs": [
+      {
+        "from": "W_fixed_incidence",
+        "implied": false,
+        "reason": "closing W_fixed_incidence does not construct or prove W_local_enforcement",
+        "to": "W_local_enforcement"
+      },
+      {
+        "from": "W_fixed_incidence",
+        "implied": false,
+        "reason": "closing W_fixed_incidence does not construct or prove W_prepare",
+        "to": "W_prepare"
+      },
+      {
+        "from": "W_local_enforcement",
+        "implied": false,
+        "reason": "closing W_local_enforcement does not construct or prove W_fixed_incidence",
+        "to": "W_fixed_incidence"
+      },
+      {
+        "from": "W_local_enforcement",
+        "implied": false,
+        "reason": "closing W_local_enforcement does not construct or prove W_prepare",
+        "to": "W_prepare"
+      },
+      {
+        "from": "W_prepare",
+        "implied": false,
+        "reason": "closing W_prepare does not construct or prove W_fixed_incidence",
+        "to": "W_fixed_incidence"
+      },
+      {
+        "from": "W_prepare",
+        "implied": false,
+        "reason": "closing W_prepare does not construct or prove W_local_enforcement",
+        "to": "W_local_enforcement"
+      }
+    ],
+    "N2_negative_gate": "FAIL / DO NOT SHIP: no directed implication combines the three walls",
+    "N3_hidden_wall_scan": [
+      {
+        "classification": "explicit condition",
+        "phrase": "supplied K129 block origin and shell",
+        "wall": "W_fixed_incidence"
+      },
+      {
+        "classification": "explicit finite-held-family scope; asymptotic distributed placement is open",
+        "phrase": "one finite K129 outer shell has finite orbit capacity while fill-tree roles grow as O(L)",
+        "wall": "W_fixed_incidence"
+      },
+      {
+        "classification": "descriptor only, not enforcement",
+        "phrase": "state-carried endpoint route rule",
+        "wall": "W_local_enforcement"
+      },
+      {
+        "classification": "algebraic code statement, not preparation",
+        "phrase": "target-times-gauge quotient",
+        "wall": "W_prepare"
+      }
+    ],
+    "N4_exact_residual_matches": [
+      {
+        "current_line": 632,
+        "current_path": "scripts/physical_fixed_cubic_wilson_fill_incidence_cycle642_2026_07_23.py",
+        "current_residual": "the orbit-tree comparator changes the incidence and does not reopen the old-plaquette route",
+        "exact_match": true,
+        "prior_line": 32,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_UNCHANGED_TORUS_CAP_HOMOLOGY_DISCRIMINATOR_CYCLE637_NOTE_2026-07-23.md",
+        "prior_ref": "e2719c0f7fceccc3a61e7b4a11049bc1e616550a",
+        "prior_residual": "no old-periodic cubic plaquette two-chain has an axial Wilson boundary",
+        "same_scope": true,
+        "use_as_closure": true
+      }
+    ],
+    "N4_negative_gate": "FAIL / DO NOT SHIP beyond the one exact old-plaquette residual",
+    "N4_nonmatches_not_used_as_closure": [
+      {
+        "current_line": 133,
+        "current_path": "scripts/physical_fixed_cubic_wilson_fill_incidence_cycle642_2026_07_23.py",
+        "current_residual": "only the exact unsplit one-chunk/one-marked-face square incidence is quarter-turn falsified",
+        "exact_match": false,
+        "prior_line": 36,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_LOCAL_WILSON_FILL_DISK_CYCLE537_NOTE_2026-07-21.md",
+        "prior_ref": "e2719c0f7fceccc3a61e7b4a11049bc1e616550a",
+        "prior_residual": "one fixed frame-independent physical cap embedding plus preparation is absent",
+        "same_scope": false,
+        "use_as_closure": false
+      },
+      {
+        "current_line": 636,
+        "current_path": "scripts/physical_fixed_cubic_wilson_fill_incidence_cycle642_2026_07_23.py",
+        "current_residual": "Cycle642 has route geometry but no autonomous local enforcement or preparation",
+        "exact_match": false,
+        "prior_line": 138,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_HIERARCHICAL_GRAMMAR_FULL_ACT_COMPILER_CYCLE638_NOTE_2026-07-23.md",
+        "prior_ref": "e2719c0f7fceccc3a61e7b4a11049bc1e616550a",
+        "prior_residual": "Cycle638 has no literal physical encoder E",
+        "same_scope": false,
+        "use_as_closure": false
+      }
+    ],
+    "N5_rhetoric": [
+      {
+        "claim": "the exact marked Cycle537 square is not one fixed injective row-permutation cubic incidence",
+        "lattice_wide": "no general local-compiler impossibility is inferred",
+        "per_block": "L3/L6/L7 exact marked disks are enumerated",
+        "per_element": "all marked chunk-face incidences are tested under the axial quarter-turn",
+        "per_mode": "no fermionic-mode no-go is inferred",
+        "per_site": "no conclusion about arbitrary physical-site gadgets; orbit-split sites remain open"
+      },
+      {
+        "claim": "finite-NN path geometry is not autonomous local enforcement",
+        "lattice_wide": "crossing schedule, full-code leakage, E, and G_physical are untested",
+        "per_block": "K129 roles and route families are tested at L3/L6/L7",
+        "per_element": "every equality/face support pair has a shortest-path family",
+        "per_mode": "matter/gauge quotient compatibility is algebraic only",
+        "per_site": "shared physical route sites and maximum owner multiplicity are counted"
+      }
+    ],
+    "N6_partial_closure_paths": [
+      {
+        "file": "UNMATERIALIZED/static_subsystem_wire_cycle_next.py",
+        "status": "OPEN / PRIORITY",
+        "what_closes": "W_local_enforcement with local static equality/face gadgets"
+      },
+      {
+        "file": "UNMATERIALIZED/physical_defect_code_growth_E_cycle_next.py",
+        "status": "OPEN",
+        "what_closes": "W_prepare without requiring a static square disk"
+      },
+      {
+        "file": "UNMATERIALIZED/state_carried_cap_crossing_controller_cycle_next.py",
+        "status": "OPEN",
+        "what_closes": "W_local_enforcement for routed incidence without host scheduling"
+      }
+    ],
+    "N7_steelman": {
+      "actionable_steps": [
+        "compile each displayed XX equality and Z face row to support-one/two fine-NN primitives",
+        "color or gauge every shared route site with locally stored ownership and clean inverse/exhaust",
+        "execute full-code leakage and then construct preparation E as a separate terminal"
+      ],
+      "mechanism": "split every symmetric axial attachment into its proper-cubic stabilizer fiber and connect those fibers with a static subsystem wire code or a state-carried crossing controller",
+      "supporting_citations": [
+        {
+          "fragment": "Added topology or a genuinely enlarged local incidence graph",
+          "line": 86,
+          "line_text": "- Added topology or a genuinely enlarged local incidence graph;",
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_UNCHANGED_TORUS_CAP_HOMOLOGY_DISCRIMINATOR_CYCLE637_NOTE_2026-07-23.md",
+          "ref": "e2719c0f7fceccc3a61e7b4a11049bc1e616550a"
+        },
+        {
+          "fragment": "does not store the Cycle-630 parent tree",
+          "line": 85,
+          "line_text": "Cycle 638 does not store the Cycle-630 parent tree or 4,570 path words. For",
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_HIERARCHICAL_GRAMMAR_FULL_ACT_COMPILER_CYCLE638_NOTE_2026-07-23.md",
+          "ref": "e2719c0f7fceccc3a61e7b4a11049bc1e616550a"
+        },
+        {
+          "fragment": "dynamic puncture sweep",
+          "line": 283,
+          "line_text": "| dynamic puncture sweep | moving defect could measure/fix twists with local gates | open; needs an autonomous reversible protocol, causal schedule, and inverse audit |",
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_LOCAL_WILSON_FILL_DISK_CYCLE537_NOTE_2026-07-21.md",
+          "ref": "e2719c0f7fceccc3a61e7b4a11049bc1e616550a"
+        }
+      ],
+      "terminal_test": "literal local enforcement or autonomous routed checks, all24/all576 update covariance, deletion/malformed rejection, full-code leakage, and E G_coarse = G_physical E without host control",
+      "why_it_breaks_the_negative": "the positive orbit-tree comparator already preserves Wilson products and target quotient after role splitting, so the unsplit-square quarter-turn witness cannot exclude the split construction"
+    },
+    "N8_cross_cycle_echo": [
+      {
+        "applicability": "supports changed incidence while leaving fixed embedding and preparation open",
+        "citation_line": 36,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_LOCAL_WILSON_FILL_DISK_CYCLE537_NOTE_2026-07-21.md",
+        "citation_ref": "e2719c0f7fceccc3a61e7b4a11049bc1e616550a",
+        "citation_text": "compile-time proper-cubic presentation orbit.  It does not embed those cap",
+        "cycle": 537,
+        "mechanism": "bounded square-disk face/star algebra",
+        "retired": "the need for growing Wilson initializer rows after adding cap topology"
+      },
+      {
+        "applicability": "shows orbit splitting can repair covariance without proving enforcement",
+        "citation_line": 203,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_TRANSLATION_ORBIT_MARKER_CRYSTAL_REPAIR_CYCLE629_NOTE_2026-07-22.md",
+        "citation_ref": "e2719c0f7fceccc3a61e7b4a11049bc1e616550a",
+        "citation_text": "PASS at exact declared scope. The phase is state-carried, the same predicate is",
+        "cycle": 629,
+        "mechanism": "state-carried translation orbit and cubic marker fibers",
+        "retired": "external origin at the supplied projector-sector level"
+      },
+      {
+        "applicability": "forces changed incidence but leaves enlarged/dynamic routes open",
+        "citation_line": 32,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_UNCHANGED_TORUS_CAP_HOMOLOGY_DISCRIMINATOR_CYCLE637_NOTE_2026-07-23.md",
+        "citation_ref": "e2719c0f7fceccc3a61e7b4a11049bc1e616550a",
+        "citation_text": "and adding all three raises it by three.  Therefore no static plaquette",
+        "cycle": 637,
+        "mechanism": "exact H1 dual-cocycle discriminator",
+        "retired": "unchanged-torus static plaquette realization"
+      },
+      {
+        "applicability": "offers a controller mechanism but does not supply Cycle642 enforcement or E",
+        "citation_line": 85,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_HIERARCHICAL_GRAMMAR_FULL_ACT_COMPILER_CYCLE638_NOTE_2026-07-23.md",
+        "citation_ref": "e2719c0f7fceccc3a61e7b4a11049bc1e616550a",
+        "citation_text": "Cycle 638 does not store the Cycle-630 parent tree or 4,570 path words. For",
+        "cycle": 638,
+        "mechanism": "coordinate-counter route generation",
+        "retired": "stored 4,570-path parent table"
+      }
+    ],
+    "Status": "PASS",
+    "axiom_pressure": false,
+    "axiom_pressure_claim": false,
+    "broad_no_go_claim": false,
+    "minimum_content_claim": false,
+    "narrow_marked_square_falsifier": true,
+    "shared_obstruction_claim": false,
+    "shared_route_independent_obstruction": false
+  },
+  "not_constructed": {
+    "autonomous_static_or_routed_constraint_enforcement": false,
+    "full_M64_G_physical": false,
+    "global_parity_service": false,
+    "hidden_fourth_dimension": false,
+    "host_path_table": false,
+    "local_encoding_E": false,
+    "preferred_fermion_ordering": false,
+    "state_preparation_or_initialization": false
+  },
+  "novelty_boundary": {
+    "new_here": "quarter-turn incidence falsifier for the exact marked square; reflection-symmetric tree fill; stabilizer-fiber orbit replication; exact K129 collision/rank/quotient/routing/deletion certificates",
+    "not_claimed": "general bosonization, physical encoder E, full M64 G_physical, autonomous local constraint enforcement, state genesis, causal time, energy, source, or gravity",
+    "prior_art_engine_used": "Cycle532/537 code algebra only; no Thirring engine used"
+  },
+  "optimal_next_campaign": "compile the orbit-tree X-equality and Z-face rows into a literal static subsystem-wire gadget or a state-carried fine-NN syndrome controller with explicit crossing colors, clean inverse/exhaust, and full physical-code leakage; then separately construct preparation E",
+  "pass": true,
+  "reflection_symmetric_fill_trees": [
+    {
+      "Euler_surplus": 1,
+      "connected": true,
+      "edge_count": 3,
+      "edges": [
+        [
+          "root",
+          0
+        ],
+        [
+          "root",
+          1
+        ],
+        [
+          "root",
+          2
+        ]
+      ],
+      "length": 3,
+      "maximum_degree": 3,
+      "pass": true,
+      "reflection_failures": 0,
+      "vertex_count": 4,
+      "vertices": [
+        "root",
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "Euler_surplus": 1,
+      "connected": true,
+      "edge_count": 6,
+      "edges": [
+        [
+          "root",
+          0
+        ],
+        [
+          "root",
+          1
+        ],
+        [
+          "root",
+          3
+        ],
+        [
+          "root",
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "length": 6,
+      "maximum_degree": 4,
+      "pass": true,
+      "reflection_failures": 0,
+      "vertex_count": 7,
+      "vertices": [
+        "root",
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "Euler_surplus": 1,
+      "connected": true,
+      "edge_count": 7,
+      "edges": [
+        [
+          "root",
+          0
+        ],
+        [
+          "root",
+          1
+        ],
+        [
+          "root",
+          6
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "length": 7,
+      "maximum_degree": 3,
+      "pass": true,
+      "reflection_failures": 0,
+      "vertex_count": 8,
+      "vertices": [
+        "root",
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  ],
+  "resources": {
+    "elapsed_seconds": 71.92885491694324,
+    "maximum_RSS_bytes": 243515392
+  },
+  "route_disposition": {
+    "cubic_symmetric_redesigned_disk": "OPEN",
+    "defect_code_growth": "OPEN",
+    "exact_Cycle537_marked_square_fixed_embedding": "NARROWLY_FALSIFIED_BY_AXIS_QUARTER_TURN",
+    "old_torus_plaquette_cap": "RULED_OUT_BY_CYCLE637",
+    "orbit_split_tree_enlarged_incidence": "ALGEBRA_AND_FIXED_ROLE_PLACEMENT_PASS_LOCAL_ENFORCEMENT_OPEN",
+    "time_multiplexed": "OPEN"
+  },
+  "semantic_firewall": {
+    "coarse_CAR_cell_is_physical_site_compiler": false,
+    "generator_is_rate": false,
+    "phase_is_energy": false,
+    "pointer_is_Record": false,
+    "program_or_schedule_is_time": false
+  },
+  "shared_obstruction_claim": false,
+  "shared_route_independent_obstruction": false,
+  "shore": {
+    "actual_imported_physical_modules": {
+      "physical_adjacent_star_recurrence_tournament_cycle548_2026_07_21": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_adjacent_star_recurrence_tournament_cycle548_2026_07_21.py",
+      "physical_adjacent_two_star_compressed_gram_cycle518_2026_07_21": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_adjacent_two_star_compressed_gram_cycle518_2026_07_21.py",
+      "physical_adjacent_two_star_order_character_preflight_cycle517_2026_07_21": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_adjacent_two_star_order_character_preflight_cycle517_2026_07_21.py",
+      "physical_adjacent_two_star_seam_tag_preservation_cycle519_2026_07_21": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_adjacent_two_star_seam_tag_preservation_cycle519_2026_07_21.py",
+      "physical_autonomous_marker_recognition_token_attempt_cycle631_2026_07_23": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_autonomous_marker_recognition_token_attempt_cycle631_2026_07_23.py",
+      "physical_boundary_aware_multistar_recurrence_tournament_cycle551_2026_07_21": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_boundary_aware_multistar_recurrence_tournament_cycle551_2026_07_21.py",
+      "physical_carrier_preparation_elementary_synthesis_tournament_cycle603_2026_07_22": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_carrier_preparation_elementary_synthesis_tournament_cycle603_2026_07_22.py",
+      "physical_correlated_double_shadow_stream_cycle529_2026_07_21": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_correlated_double_shadow_stream_cycle529_2026_07_21.py",
+      "physical_cycle269_collision_safe_auxiliary_ports_2026_07_17": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_cycle269_collision_safe_auxiliary_ports_2026_07_17.py",
+      "physical_cycle269_common_m64_fixed_seam_cycle311_2026_07_18": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_cycle269_common_m64_fixed_seam_cycle311_2026_07_18.py",
+      "physical_cycle269_five_cell_adjacent_star_cycle327_2026_07_18": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_cycle269_five_cell_adjacent_star_cycle327_2026_07_18.py",
+      "physical_cycle269_four_cell_star_cycle324_2026_07_18": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_cycle269_four_cell_star_cycle324_2026_07_18.py",
+      "physical_cycle269_full_two_particle_sector_interface_cycle305_2026_07_17": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_cycle269_full_two_particle_sector_interface_cycle305_2026_07_17.py",
+      "physical_cycle269_higher_number_fixed_seam_cycle308_2026_07_17": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_cycle269_higher_number_fixed_seam_cycle308_2026_07_17.py",
+      "physical_cycle269_overlap_aware_two_cell_cycle315_2026_07_18": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_cycle269_overlap_aware_two_cell_cycle315_2026_07_18.py",
+      "physical_cycle269_reference_relative_localized_pair_lift_2026_07_17": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_cycle269_reference_relative_localized_pair_lift_2026_07_17.py",
+      "physical_cycle269_seven_cell_maximal_star_cycle330_2026_07_18": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_cycle269_seven_cell_maximal_star_cycle330_2026_07_18.py",
+      "physical_cycle269_staggered_reservoir_catchup_2026_07_17": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_cycle269_staggered_reservoir_catchup_2026_07_17.py",
+      "physical_cycle269_three_cell_multiedge_cycle319_2026_07_18": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_cycle269_three_cell_multiedge_cycle319_2026_07_18.py",
+      "physical_cycle330_all_order_isometry_bridge_cycle515_2026_07_20": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_cycle330_all_order_isometry_bridge_cycle515_2026_07_20.py",
+      "physical_cycle515_koszul_frame_bridge_cycle516_2026_07_20": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_cycle515_koszul_frame_bridge_cycle516_2026_07_20.py",
+      "physical_global_N3_returned_slot_compiler_cycle560_2026_07_21": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_global_N3_returned_slot_compiler_cycle560_2026_07_21.py",
+      "physical_global_carrier_stream_qca_approximation_tournament_cycle606_2026_07_22": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_global_carrier_stream_qca_approximation_tournament_cycle606_2026_07_22.py",
+      "physical_global_selected_network_encoder_cycle555_2026_07_21": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_global_selected_network_encoder_cycle555_2026_07_21.py",
+      "physical_hierarchical_grammar_full_act_compiler_cycle638_2026_07_23": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_hierarchical_grammar_full_act_compiler_cycle638_2026_07_23.py",
+      "physical_literal_program_track_interpreter_cycle633_2026_07_23": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_literal_program_track_interpreter_cycle633_2026_07_23.py",
+      "physical_local_N3_six_ray_decoder_tournament_cycle557_2026_07_21": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_local_N3_six_ray_decoder_tournament_cycle557_2026_07_21.py",
+      "physical_local_cutoff_gauge_enforcement_tournament_cycle593_2026_07_22": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_local_cutoff_gauge_enforcement_tournament_cycle593_2026_07_22.py",
+      "physical_local_sector_role_genesis_closure_tournament_cycle617_2026_07_22": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_local_sector_role_genesis_closure_tournament_cycle617_2026_07_22.py",
+      "physical_local_wilson_fill_disk_cycle537_2026_07_21": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_local_wilson_fill_disk_cycle537_2026_07_21.py",
+      "physical_marker_preserving_free_quotient_router_cycle630_2026_07_23": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_marker_preserving_free_quotient_router_cycle630_2026_07_23.py",
+      "physical_native_shadow_nearest_neighbor_router_cycle527_2026_07_21": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_native_shadow_nearest_neighbor_router_cycle527_2026_07_21.py",
+      "physical_opposite_carrier_reearned_compiler_cycle522_2026_07_21": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_opposite_carrier_reearned_compiler_cycle522_2026_07_21.py",
+      "physical_opposite_carrier_shared_cell_recurrence_cycle525_2026_07_21": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_opposite_carrier_shared_cell_recurrence_cycle525_2026_07_21.py",
+      "physical_proper_cubic_supercell_stream_composition_tournament_cycle610_2026_07_22": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_proper_cubic_supercell_stream_composition_tournament_cycle610_2026_07_22.py",
+      "physical_protected_shadow_coin_gate_compiler_cycle523_2026_07_21": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_protected_shadow_coin_gate_compiler_cycle523_2026_07_21.py",
+      "physical_recurrent_shared_volume_compiler_cycle545_2026_07_21": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_recurrent_shared_volume_compiler_cycle545_2026_07_21.py",
+      "physical_root_free_cutoff_gauge_preparation_tournament_cycle598_2026_07_22": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_root_free_cutoff_gauge_preparation_tournament_cycle598_2026_07_22.py",
+      "physical_root_free_full_N3_carrier_genesis_tournament_cycle600_2026_07_22": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_root_free_full_N3_carrier_genesis_tournament_cycle600_2026_07_22.py",
+      "physical_rough_fswap_pauli_rotation_gate_compiler_cycle540_2026_07_21": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_rough_fswap_pauli_rotation_gate_compiler_cycle540_2026_07_21.py",
+      "physical_rough_gauge_subsystem_quotient_cycle532_2026_07_21": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_rough_gauge_subsystem_quotient_cycle532_2026_07_21.py",
+      "physical_selected_seam_code_space_isometry_compiler_cycle533_2026_07_21": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_selected_seam_code_space_isometry_compiler_cycle533_2026_07_21.py",
+      "physical_selected_seam_event_current_adapter_cycle526_2026_07_21": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_selected_seam_event_current_adapter_cycle526_2026_07_21.py",
+      "physical_shadow_normal_form_sync_cycle530_2026_07_21": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_shadow_normal_form_sync_cycle530_2026_07_21.py",
+      "physical_shared_seam_code_space_isometry_compiler_cycle539_2026_07_21": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_shared_seam_code_space_isometry_compiler_cycle539_2026_07_21.py",
+      "physical_three_star_shared_parity_overlap_cycle520_2026_07_21": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_three_star_shared_parity_overlap_cycle520_2026_07_21.py",
+      "physical_translation_orbit_marker_crystal_repair_cycle629_2026_07_22": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cycle642-immutable-apvckj4u/scripts/physical_translation_orbit_marker_crystal_repair_cycle629_2026_07_22.py"
+    },
+    "immutable_export_commit": "e2719c0f7fceccc3a61e7b4a11049bc1e616550a",
+    "immutable_import_failures": [],
+    "no_go_skill_origin_main_sha256": "7d1aea8243ddd972331b935e2e836657e72115da3efe259f828fe862469d68b7",
+    "observed": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_HIERARCHICAL_GRAMMAR_FULL_ACT_COMPILER_CYCLE638_NOTE_2026-07-23.md": "30b9793f87ac0e96d92567709201fbae8833904302b9c195eb8eefcc0972abf1",
+      "docs/work_history/repo/review_feedback/PHYSICAL_LOCAL_WILSON_FILL_DISK_CYCLE537_NOTE_2026-07-21.md": "e413a8c079fa2d5ff14d1b46d19df60cd07d853d118b51d8494632cc03a427f8",
+      "docs/work_history/repo/review_feedback/PHYSICAL_UNCHANGED_TORUS_CAP_HOMOLOGY_DISCRIMINATOR_CYCLE637_NOTE_2026-07-23.md": "15e01b73d71631646ee3387443575a9c4921eca1e1104c83fda11d74b8b76ff0",
+      "outputs/physical_hierarchical_grammar_full_act_compiler_cycle638_cold_2026_07_23.txt": "6ec79c334322c832c9bb54babe0dd80ad2e55e8f44304e6ee1ccfdaa96557ffa",
+      "outputs/physical_hierarchical_grammar_full_act_compiler_cycle638_receipt_2026_07_23.json": "706a592d667dfa12a2215d588f5b3cf09c8d1212d4907e9a73d8647a76762e46",
+      "outputs/physical_local_wilson_fill_disk_cycle537_receipt_2026_07_21.json": "ebe7222afedba7907dcff9e233b2bc30284af8d35d5d7cae1941668ed81c5856",
+      "outputs/physical_unchanged_torus_cap_homology_discriminator_cycle637_receipt_2026_07_23.json": "871ce37fa9308ce9316681e1290866f40c908f8b6b70469250e5d06b500207ff",
+      "scripts/physical_hierarchical_grammar_full_act_compiler_cycle638_2026_07_23.py": "7c30cb47934ea6faf908d13ef15e6d62bf0c494ba8632ebdffeec88352037d53",
+      "scripts/physical_local_wilson_fill_disk_cycle537_2026_07_21.py": "cd00034db5e106accfd95e33de5c9b3b2a26b2c35719611454c3486481ad47ac",
+      "scripts/physical_rough_gauge_subsystem_quotient_cycle532_2026_07_21.py": "8bf1c836661b4c902d09cf2f7d147b07c3083404569ce9bc0a2b3dd4820233da",
+      "scripts/physical_unchanged_torus_cap_homology_discriminator_cycle637_2026_07_23.py": "65accbf8d3c7ffba2bd469c5cdee76cf14d79241a3c0899fede8764ce703e672"
+    },
+    "pins": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_HIERARCHICAL_GRAMMAR_FULL_ACT_COMPILER_CYCLE638_NOTE_2026-07-23.md": "30b9793f87ac0e96d92567709201fbae8833904302b9c195eb8eefcc0972abf1",
+      "docs/work_history/repo/review_feedback/PHYSICAL_LOCAL_WILSON_FILL_DISK_CYCLE537_NOTE_2026-07-21.md": "e413a8c079fa2d5ff14d1b46d19df60cd07d853d118b51d8494632cc03a427f8",
+      "docs/work_history/repo/review_feedback/PHYSICAL_UNCHANGED_TORUS_CAP_HOMOLOGY_DISCRIMINATOR_CYCLE637_NOTE_2026-07-23.md": "15e01b73d71631646ee3387443575a9c4921eca1e1104c83fda11d74b8b76ff0",
+      "outputs/physical_hierarchical_grammar_full_act_compiler_cycle638_cold_2026_07_23.txt": "6ec79c334322c832c9bb54babe0dd80ad2e55e8f44304e6ee1ccfdaa96557ffa",
+      "outputs/physical_hierarchical_grammar_full_act_compiler_cycle638_receipt_2026_07_23.json": "706a592d667dfa12a2215d588f5b3cf09c8d1212d4907e9a73d8647a76762e46",
+      "outputs/physical_local_wilson_fill_disk_cycle537_receipt_2026_07_21.json": "ebe7222afedba7907dcff9e233b2bc30284af8d35d5d7cae1941668ed81c5856",
+      "outputs/physical_unchanged_torus_cap_homology_discriminator_cycle637_receipt_2026_07_23.json": "871ce37fa9308ce9316681e1290866f40c908f8b6b70469250e5d06b500207ff",
+      "scripts/physical_hierarchical_grammar_full_act_compiler_cycle638_2026_07_23.py": "7c30cb47934ea6faf908d13ef15e6d62bf0c494ba8632ebdffeec88352037d53",
+      "scripts/physical_local_wilson_fill_disk_cycle537_2026_07_21.py": "cd00034db5e106accfd95e33de5c9b3b2a26b2c35719611454c3486481ad47ac",
+      "scripts/physical_rough_gauge_subsystem_quotient_cycle532_2026_07_21.py": "8bf1c836661b4c902d09cf2f7d147b07c3083404569ce9bc0a2b3dd4820233da",
+      "scripts/physical_unchanged_torus_cap_homology_discriminator_cycle637_2026_07_23.py": "65accbf8d3c7ffba2bd469c5cdee76cf14d79241a3c0899fede8764ce703e672"
+    },
+    "skill_freshness_file_sha256": "1e0ec4ef4d7c5dd24243d7c3954c78a3f00ecd3d5e43805e788dd3629973a962",
+    "working_tree_bytes_used_as_premise": false
+  },
+  "six_wall_ledger": {
+    "C_int": "retained conditionally: matter/gauge quotient and prior mass/contact/seam inheritance are algebraic, not a physical E/G",
+    "C_local": "mixed: exact marked square is falsified; tree role placement and finite-NN route geometry pass; autonomous local enforcement remains open",
+    "C_num": "retained: exact ranks and phases only; no empirical normalization or Born statement",
+    "C_ref": "narrowed: orbit fibers remove the role-stabilizer collision for the tree comparator; the macro-origin/K129 shell remains supplied",
+    "C_source": "unchanged: no energy, stress, resource-source, or gravity identification",
+    "C_wrap": "narrowed: old Wilsons are exact products of bounded-support tree faces, but preparation/history meaning remains open"
+  },
+  "size_uniform_fill_tree_no_refit_scan_L3_L31": {
+    "all_connected_E_eq_V_minus_1_reflection_invariant_degree_le_4": true,
+    "formula": "vertices {root} union Z_L; odd L=2m+1 has root--0 plus reflected +/- chains; even L=2m has root--0, root--m plus reflected +/- chains",
+    "full_rank_or_quotient_credit_outside_L3_L6_L7": false,
+    "lengths": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "rows": [
+      {
+        "Euler_surplus": 1,
+        "connected": true,
+        "edge_count": 3,
+        "edges": [
+          [
+            "root",
+            0
+          ],
+          [
+            "root",
+            1
+          ],
+          [
+            "root",
+            2
+          ]
+        ],
+        "length": 3,
+        "maximum_degree": 3,
+        "pass": true,
+        "reflection_failures": 0,
+        "vertex_count": 4,
+        "vertices": [
+          "root",
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "Euler_surplus": 1,
+        "connected": true,
+        "edge_count": 4,
+        "edges": [
+          [
+            "root",
+            0
+          ],
+          [
+            "root",
+            1
+          ],
+          [
+            "root",
+            2
+          ],
+          [
+            "root",
+            3
+          ]
+        ],
+        "length": 4,
+        "maximum_degree": 4,
+        "pass": true,
+        "reflection_failures": 0,
+        "vertex_count": 5,
+        "vertices": [
+          "root",
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "Euler_surplus": 1,
+        "connected": true,
+        "edge_count": 5,
+        "edges": [
+          [
+            "root",
+            0
+          ],
+          [
+            "root",
+            1
+          ],
+          [
+            "root",
+            4
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "length": 5,
+        "maximum_degree": 3,
+        "pass": true,
+        "reflection_failures": 0,
+        "vertex_count": 6,
+        "vertices": [
+          "root",
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "Euler_surplus": 1,
+        "connected": true,
+        "edge_count": 6,
+        "edges": [
+          [
+            "root",
+            0
+          ],
+          [
+            "root",
+            1
+          ],
+          [
+            "root",
+            3
+          ],
+          [
+            "root",
+            5
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "length": 6,
+        "maximum_degree": 4,
+        "pass": true,
+        "reflection_failures": 0,
+        "vertex_count": 7,
+        "vertices": [
+          "root",
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "Euler_surplus": 1,
+        "connected": true,
+        "edge_count": 7,
+        "edges": [
+          [
+            "root",
+            0
+          ],
+          [
+            "root",
+            1
+          ],
+          [
+            "root",
+            6
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        "length": 7,
+        "maximum_degree": 3,
+        "pass": true,
+        "reflection_failures": 0,
+        "vertex_count": 8,
+        "vertices": [
+          "root",
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "Euler_surplus": 1,
+        "connected": true,
+        "edge_count": 8,
+        "edges": [
+          [
+            "root",
+            0
+          ],
+          [
+            "root",
+            1
+          ],
+          [
+            "root",
+            4
+          ],
+          [
+            "root",
+            7
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        "length": 8,
+        "maximum_degree": 4,
+        "pass": true,
+        "reflection_failures": 0,
+        "vertex_count": 9,
+        "vertices": [
+          "root",
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "Euler_surplus": 1,
+        "connected": true,
+        "edge_count": 9,
+        "edges": [
+          [
+            "root",
+            0
+          ],
+          [
+            "root",
+            1
+          ],
+          [
+            "root",
+            8
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            8
+          ]
+        ],
+        "length": 9,
+        "maximum_degree": 3,
+        "pass": true,
+        "reflection_failures": 0,
+        "vertex_count": 10,
+        "vertices": [
+          "root",
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "Euler_surplus": 1,
+        "connected": true,
+        "edge_count": 10,
+        "edges": [
+          [
+            "root",
+            0
+          ],
+          [
+            "root",
+            1
+          ],
+          [
+            "root",
+            5
+          ],
+          [
+            "root",
+            9
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            8,
+            9
+          ]
+        ],
+        "length": 10,
+        "maximum_degree": 4,
+        "pass": true,
+        "reflection_failures": 0,
+        "vertex_count": 11,
+        "vertices": [
+          "root",
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "Euler_surplus": 1,
+        "connected": true,
+        "edge_count": 11,
+        "edges": [
+          [
+            "root",
+            0
+          ],
+          [
+            "root",
+            1
+          ],
+          [
+            "root",
+            10
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            9,
+            10
+          ]
+        ],
+        "length": 11,
+        "maximum_degree": 3,
+        "pass": true,
+        "reflection_failures": 0,
+        "vertex_count": 12,
+        "vertices": [
+          "root",
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "Euler_surplus": 1,
+        "connected": true,
+        "edge_count": 12,
+        "edges": [
+          [
+            "root",
+            0
+          ],
+          [
+            "root",
+            1
+          ],
+          [
+            "root",
+            11
+          ],
+          [
+            "root",
+            6
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            9,
+            10
+          ]
+        ],
+        "length": 12,
+        "maximum_degree": 4,
+        "pass": true,
+        "reflection_failures": 0,
+        "vertex_count": 13,
+        "vertices": [
+          "root",
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "Euler_surplus": 1,
+        "connected": true,
+        "edge_count": 13,
+        "edges": [
+          [
+            "root",
+            0
+          ],
+          [
+            "root",
+            1
+          ],
+          [
+            "root",
+            12
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            11,
+            12
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            9,
+            10
+          ]
+        ],
+        "length": 13,
+        "maximum_degree": 3,
+        "pass": true,
+        "reflection_failures": 0,
+        "vertex_count": 14,
+        "vertices": [
+          "root",
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      {
+        "Euler_surplus": 1,
+        "connected": true,
+        "edge_count": 14,
+        "edges": [
+          [
+            "root",
+            0
+          ],
+          [
+            "root",
+            1
+          ],
+          [
+            "root",
+            13
+          ],
+          [
+            "root",
+            7
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            11,
+            12
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            9,
+            10
+          ]
+        ],
+        "length": 14,
+        "maximum_degree": 4,
+        "pass": true,
+        "reflection_failures": 0,
+        "vertex_count": 15,
+        "vertices": [
+          "root",
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      {
+        "Euler_surplus": 1,
+        "connected": true,
+        "edge_count": 15,
+        "edges": [
+          [
+            "root",
+            0
+          ],
+          [
+            "root",
+            1
+          ],
+          [
+            "root",
+            14
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            11,
+            12
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            13,
+            14
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            9,
+            10
+          ]
+        ],
+        "length": 15,
+        "maximum_degree": 3,
+        "pass": true,
+        "reflection_failures": 0,
+        "vertex_count": 16,
+        "vertices": [
+          "root",
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      {
+        "Euler_surplus": 1,
+        "connected": true,
+        "edge_count": 16,
+        "edges": [
+          [
+            "root",
+            0
+          ],
+          [
+            "root",
+            1
+          ],
+          [
+            "root",
+            15
+          ],
+          [
+            "root",
+            8
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            11,
+            12
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            13,
+            14
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            9,
+            10
+          ]
+        ],
+        "length": 16,
+        "maximum_degree": 4,
+        "pass": true,
+        "reflection_failures": 0,
+        "vertex_count": 17,
+        "vertices": [
+          "root",
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "Euler_surplus": 1,
+        "connected": true,
+        "edge_count": 17,
+        "edges": [
+          [
+            "root",
+            0
+          ],
+          [
+            "root",
+            1
+          ],
+          [
+            "root",
+            16
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            11,
+            12
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            13,
+            14
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            15,
+            16
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            9,
+            10
+          ]
+        ],
+        "length": 17,
+        "maximum_degree": 3,
+        "pass": true,
+        "reflection_failures": 0,
+        "vertex_count": 18,
+        "vertices": [
+          "root",
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      },
+      {
+        "Euler_surplus": 1,
+        "connected": true,
+        "edge_count": 18,
+        "edges": [
+          [
+            "root",
+            0
+          ],
+          [
+            "root",
+            1
+          ],
+          [
+            "root",
+            17
+          ],
+          [
+            "root",
+            9
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            11,
+            12
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            13,
+            14
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            15,
+            16
+          ],
+          [
+            16,
+            17
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            8
+          ]
+        ],
+        "length": 18,
+        "maximum_degree": 4,
+        "pass": true,
+        "reflection_failures": 0,
+        "vertex_count": 19,
+        "vertices": [
+          "root",
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ]
+      },
+      {
+        "Euler_surplus": 1,
+        "connected": true,
+        "edge_count": 19,
+        "edges": [
+          [
+            "root",
+            0
+          ],
+          [
+            "root",
+            1
+          ],
+          [
+            "root",
+            18
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            11,
+            12
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            13,
+            14
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            15,
+            16
+          ],
+          [
+            16,
+            17
+          ],
+          [
+            17,
+            18
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            8,
+            9
+          ]
+        ],
+        "length": 19,
+        "maximum_degree": 3,
+        "pass": true,
+        "reflection_failures": 0,
+        "vertex_count": 20,
+        "vertices": [
+          "root",
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ]
+      },
+      {
+        "Euler_surplus": 1,
+        "connected": true,
+        "edge_count": 20,
+        "edges": [
+          [
+            "root",
+            0
+          ],
+          [
+            "root",
+            1
+          ],
+          [
+            "root",
+            10
+          ],
+          [
+            "root",
+            19
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            11,
+            12
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            13,
+            14
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            15,
+            16
+          ],
+          [
+            16,
+            17
+          ],
+          [
+            17,
+            18
+          ],
+          [
+            18,
+            19
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            8,
+            9
+          ]
+        ],
+        "length": 20,
+        "maximum_degree": 4,
+        "pass": true,
+        "reflection_failures": 0,
+        "vertex_count": 21,
+        "vertices": [
+          "root",
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      {
+        "Euler_surplus": 1,
+        "connected": true,
+        "edge_count": 21,
+        "edges": [
+          [
+            "root",
+            0
+          ],
+          [
+            "root",
+            1
+          ],
+          [
+            "root",
+            20
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            11,
+            12
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            13,
+            14
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            15,
+            16
+          ],
+          [
+            16,
+            17
+          ],
+          [
+            17,
+            18
+          ],
+          [
+            18,
+            19
+          ],
+          [
+            19,
+            20
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            9,
+            10
+          ]
+        ],
+        "length": 21,
+        "maximum_degree": 3,
+        "pass": true,
+        "reflection_failures": 0,
+        "vertex_count": 22,
+        "vertices": [
+          "root",
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      },
+      {
+        "Euler_surplus": 1,
+        "connected": true,
+        "edge_count": 22,
+        "edges": [
+          [
+            "root",
+            0
+          ],
+          [
+            "root",
+            1
+          ],
+          [
+            "root",
+            11
+          ],
+          [
+            "root",
+            21
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            13,
+            14
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            15,
+            16
+          ],
+          [
+            16,
+            17
+          ],
+          [
+            17,
+            18
+          ],
+          [
+            18,
+            19
+          ],
+          [
+            19,
+            20
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            20,
+            21
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            9,
+            10
+          ]
+        ],
+        "length": 22,
+        "maximum_degree": 4,
+        "pass": true,
+        "reflection_failures": 0,
+        "vertex_count": 23,
+        "vertices": [
+          "root",
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ]
+      },
+      {
+        "Euler_surplus": 1,
+        "connected": true,
+        "edge_count": 23,
+        "edges": [
+          [
+            "root",
+            0
+          ],
+          [
+            "root",
+            1
+          ],
+          [
+            "root",
+            22
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            13,
+            14
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            15,
+            16
+          ],
+          [
+            16,
+            17
+          ],
+          [
+            17,
+            18
+          ],
+          [
+            18,
+            19
+          ],
+          [
+            19,
+            20
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            20,
+            21
+          ],
+          [
+            21,
+            22
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            9,
+            10
+          ]
+        ],
+        "length": 23,
+        "maximum_degree": 3,
+        "pass": true,
+        "reflection_failures": 0,
+        "vertex_count": 24,
+        "vertices": [
+          "root",
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ]
+      },
+      {
+        "Euler_surplus": 1,
+        "connected": true,
+        "edge_count": 24,
+        "edges": [
+          [
+            "root",
+            0
+          ],
+          [
+            "root",
+            1
+          ],
+          [
+            "root",
+            12
+          ],
+          [
+            "root",
+            23
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            13,
+            14
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            15,
+            16
+          ],
+          [
+            16,
+            17
+          ],
+          [
+            17,
+            18
+          ],
+          [
+            18,
+            19
+          ],
+          [
+            19,
+            20
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            20,
+            21
+          ],
+          [
+            21,
+            22
+          ],
+          [
+            22,
+            23
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            9,
+            10
+          ]
+        ],
+        "length": 24,
+        "maximum_degree": 4,
+        "pass": true,
+        "reflection_failures": 0,
+        "vertex_count": 25,
+        "vertices": [
+          "root",
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ]
+      },
+      {
+        "Euler_surplus": 1,
+        "connected": true,
+        "edge_count": 25,
+        "edges": [
+          [
+            "root",
+            0
+          ],
+          [
+            "root",
+            1
+          ],
+          [
+            "root",
+            24
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            15,
+            16
+          ],
+          [
+            16,
+            17
+          ],
+          [
+            17,
+            18
+          ],
+          [
+            18,
+            19
+          ],
+          [
+            19,
+            20
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            20,
+            21
+          ],
+          [
+            21,
+            22
+          ],
+          [
+            22,
+            23
+          ],
+          [
+            23,
+            24
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            9,
+            10
+          ]
+        ],
+        "length": 25,
+        "maximum_degree": 3,
+        "pass": true,
+        "reflection_failures": 0,
+        "vertex_count": 26,
+        "vertices": [
+          "root",
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24
+        ]
+      },
+      {
+        "Euler_surplus": 1,
+        "connected": true,
+        "edge_count": 26,
+        "edges": [
+          [
+            "root",
+            0
+          ],
+          [
+            "root",
+            1
+          ],
+          [
+            "root",
+            13
+          ],
+          [
+            "root",
+            25
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            11,
+            12
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            15,
+            16
+          ],
+          [
+            16,
+            17
+          ],
+          [
+            17,
+            18
+          ],
+          [
+            18,
+            19
+          ],
+          [
+            19,
+            20
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            20,
+            21
+          ],
+          [
+            21,
+            22
+          ],
+          [
+            22,
+            23
+          ],
+          [
+            23,
+            24
+          ],
+          [
+            24,
+            25
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            9,
+            10
+          ]
+        ],
+        "length": 26,
+        "maximum_degree": 4,
+        "pass": true,
+        "reflection_failures": 0,
+        "vertex_count": 27,
+        "vertices": [
+          "root",
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ]
+      },
+      {
+        "Euler_surplus": 1,
+        "connected": true,
+        "edge_count": 27,
+        "edges": [
+          [
+            "root",
+            0
+          ],
+          [
+            "root",
+            1
+          ],
+          [
+            "root",
+            26
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            11,
+            12
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            15,
+            16
+          ],
+          [
+            16,
+            17
+          ],
+          [
+            17,
+            18
+          ],
+          [
+            18,
+            19
+          ],
+          [
+            19,
+            20
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            20,
+            21
+          ],
+          [
+            21,
+            22
+          ],
+          [
+            22,
+            23
+          ],
+          [
+            23,
+            24
+          ],
+          [
+            24,
+            25
+          ],
+          [
+            25,
+            26
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            9,
+            10
+          ]
+        ],
+        "length": 27,
+        "maximum_degree": 3,
+        "pass": true,
+        "reflection_failures": 0,
+        "vertex_count": 28,
+        "vertices": [
+          "root",
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26
+        ]
+      },
+      {
+        "Euler_surplus": 1,
+        "connected": true,
+        "edge_count": 28,
+        "edges": [
+          [
+            "root",
+            0
+          ],
+          [
+            "root",
+            1
+          ],
+          [
+            "root",
+            14
+          ],
+          [
+            "root",
+            27
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            11,
+            12
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            15,
+            16
+          ],
+          [
+            16,
+            17
+          ],
+          [
+            17,
+            18
+          ],
+          [
+            18,
+            19
+          ],
+          [
+            19,
+            20
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            20,
+            21
+          ],
+          [
+            21,
+            22
+          ],
+          [
+            22,
+            23
+          ],
+          [
+            23,
+            24
+          ],
+          [
+            24,
+            25
+          ],
+          [
+            25,
+            26
+          ],
+          [
+            26,
+            27
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            9,
+            10
+          ]
+        ],
+        "length": 28,
+        "maximum_degree": 4,
+        "pass": true,
+        "reflection_failures": 0,
+        "vertex_count": 29,
+        "vertices": [
+          "root",
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27
+        ]
+      },
+      {
+        "Euler_surplus": 1,
+        "connected": true,
+        "edge_count": 29,
+        "edges": [
+          [
+            "root",
+            0
+          ],
+          [
+            "root",
+            1
+          ],
+          [
+            "root",
+            28
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            11,
+            12
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            13,
+            14
+          ],
+          [
+            15,
+            16
+          ],
+          [
+            16,
+            17
+          ],
+          [
+            17,
+            18
+          ],
+          [
+            18,
+            19
+          ],
+          [
+            19,
+            20
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            20,
+            21
+          ],
+          [
+            21,
+            22
+          ],
+          [
+            22,
+            23
+          ],
+          [
+            23,
+            24
+          ],
+          [
+            24,
+            25
+          ],
+          [
+            25,
+            26
+          ],
+          [
+            26,
+            27
+          ],
+          [
+            27,
+            28
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            9,
+            10
+          ]
+        ],
+        "length": 29,
+        "maximum_degree": 3,
+        "pass": true,
+        "reflection_failures": 0,
+        "vertex_count": 30,
+        "vertices": [
+          "root",
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ]
+      },
+      {
+        "Euler_surplus": 1,
+        "connected": true,
+        "edge_count": 30,
+        "edges": [
+          [
+            "root",
+            0
+          ],
+          [
+            "root",
+            1
+          ],
+          [
+            "root",
+            15
+          ],
+          [
+            "root",
+            29
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            11,
+            12
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            13,
+            14
+          ],
+          [
+            16,
+            17
+          ],
+          [
+            17,
+            18
+          ],
+          [
+            18,
+            19
+          ],
+          [
+            19,
+            20
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            20,
+            21
+          ],
+          [
+            21,
+            22
+          ],
+          [
+            22,
+            23
+          ],
+          [
+            23,
+            24
+          ],
+          [
+            24,
+            25
+          ],
+          [
+            25,
+            26
+          ],
+          [
+            26,
+            27
+          ],
+          [
+            27,
+            28
+          ],
+          [
+            28,
+            29
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            9,
+            10
+          ]
+        ],
+        "length": 30,
+        "maximum_degree": 4,
+        "pass": true,
+        "reflection_failures": 0,
+        "vertex_count": 31,
+        "vertices": [
+          "root",
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ]
+      },
+      {
+        "Euler_surplus": 1,
+        "connected": true,
+        "edge_count": 31,
+        "edges": [
+          [
+            "root",
+            0
+          ],
+          [
+            "root",
+            1
+          ],
+          [
+            "root",
+            30
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            11,
+            12
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            13,
+            14
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            16,
+            17
+          ],
+          [
+            17,
+            18
+          ],
+          [
+            18,
+            19
+          ],
+          [
+            19,
+            20
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            20,
+            21
+          ],
+          [
+            21,
+            22
+          ],
+          [
+            22,
+            23
+          ],
+          [
+            23,
+            24
+          ],
+          [
+            24,
+            25
+          ],
+          [
+            25,
+            26
+          ],
+          [
+            26,
+            27
+          ],
+          [
+            27,
+            28
+          ],
+          [
+            28,
+            29
+          ],
+          [
+            29,
+            30
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            9,
+            10
+          ]
+        ],
+        "length": 31,
+        "maximum_degree": 3,
+        "pass": true,
+        "reflection_failures": 0,
+        "vertex_count": 32,
+        "vertices": [
+          "root",
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ]
+      }
+    ]
+  },
+  "status": "cycle642-partial-narrowing-positive-orbit-tree-comparator",
+  "strict_fixed_3D_embedding_disposition": "FAIL_NOT_CLOSED: exact square incidence fails; tree roles/ranks pass but autonomous local enforcement/crossing schedule is absent",
+  "strongest_constructive_result": "three proper-cubic orbit-replicated bounded-degree fill trees in fixed K129 shells have injective roles, all24/all576 fiber covariance, exact face-product Wilson phases, rank 15N+1+n_aux, code exponent 7N-1, and exact matter/gauge quotient data at L3/L6/L7",
+  "supplied_structure_inventory": {
+    "K129_outer_shell_allocation_scope": "finite L3/L6/L7 held-family certificate only; not an asymptotic all-L placement",
+    "all_axis_order_shortest_path_family": true,
+    "asymptotic_distributed_tree_role_placement": false,
+    "finite_periodic_L3_L6_L7_domains": true,
+    "generic_cubic_orbit_seed_enumeration": true,
+    "host_Wilson_or_parity_query": false,
+    "host_path_table": false,
+    "immutable_Cycle532_rough_graph_chunks_matter_and_gauge": true,
+    "immutable_Cycle537_square_disk_and_phase_repair": true,
+    "immutable_Cycle637_old_torus_scope_boundary": true,
+    "immutable_Cycle638_K129_inner_role_envelope": true,
+    "one_macro_origin_K129_partition_and_outer_shell": true,
+    "pairwise_XX_fiber_equality_presentation": true,
+    "reflection_symmetric_tree_topology_per_length": true,
+    "runtime_frame_selector": false,
+    "size_uniform_fill_tree_formula": "vertices {root} union Z_L; odd L=2m+1 has root--0 and two reflected chains root--(+/-1)--...--(+/-m); even L=2m has root--0, root--m and reflected chains root--(+/-1)--...--(+/-(m-1)); no fitted parameter varies by size",
+    "size_uniform_formula_refit_between_L3_L6_L7": false,
+    "state_preparation_or_initialization": false
+  },
+  "tests_failed": 0,
+  "tests_passed": 18,
+  "tests_total": 18,
+  "tree_fill_target_times_gauge_certificates": [
+    {
+      "average_total_M2_per_coarse_cell": 23.77777777777778,
+      "coarse_cells": 27,
+      "code_exponent": 188,
+      "commutator_failures": {
+        "gauge_stabilizer": 0,
+        "matter_gauge": 0,
+        "matter_stabilizer": 0,
+        "stabilizer_mutual": 0
+      },
+      "equality_check_rows_displayed": 120,
+      "expected_code_exponent": 188,
+      "expected_gauge_dimension_rank": [
+        53,
+        52
+      ],
+      "expected_matter_dimension_rank": [
+        323,
+        322
+      ],
+      "expected_stabilizer_rank": 454,
+      "face_product_exact_old_Wilson_including_phase": true,
+      "face_product_phases": [
+        3,
+        3,
+        3
+      ],
+      "full_matter_commutant_dimension_rank": [
+        53,
+        52
+      ],
+      "gauge_quotient_dimension_rank": [
+        53,
+        52
+      ],
+      "length": 3,
+      "matter_quotient_dimension_rank": [
+        323,
+        322
+      ],
+      "maximum_dressed_support_M2": {
+        "gauge": 20,
+        "local": 32,
+        "matter": 13
+      },
+      "maximum_equality_support_M2": 2,
+      "maximum_face_support_M2": 17,
+      "maximum_selected_tree_edges": {
+        "gauge": 2,
+        "local": 6,
+        "matter": 2
+      },
+      "old_Wilson_rank_increments": [
+        0,
+        0,
+        0
+      ],
+      "pass": true,
+      "physical_orbit_aux_M2": 48,
+      "rough_M2": 594,
+      "stabilizer_rank": 454,
+      "total_M2": 642,
+      "tree_face_checks": 12,
+      "tree_logical_edges": 9
+    },
+    {
+      "average_total_M2_per_coarse_cell": 22.444444444444443,
+      "coarse_cells": 216,
+      "code_exponent": 1511,
+      "commutator_failures": {
+        "gauge_stabilizer": 0,
+        "matter_gauge": 0,
+        "matter_stabilizer": 0,
+        "stabilizer_mutual": 0
+      },
+      "equality_check_rows_displayed": 240,
+      "expected_code_exponent": 1511,
+      "expected_gauge_dimension_rank": [
+        431,
+        430
+      ],
+      "expected_matter_dimension_rank": [
+        2591,
+        2590
+      ],
+      "expected_stabilizer_rank": 3337,
+      "face_product_exact_old_Wilson_including_phase": true,
+      "face_product_phases": [
+        0,
+        0,
+        0
+      ],
+      "full_matter_commutant_dimension_rank": [
+        null,
+        null
+      ],
+      "gauge_quotient_dimension_rank": [
+        431,
+        430
+      ],
+      "length": 6,
+      "matter_quotient_dimension_rank": [
+        2591,
+        2590
+      ],
+      "maximum_dressed_support_M2": {
+        "gauge": 21,
+        "local": 32,
+        "matter": 13
+      },
+      "maximum_equality_support_M2": 2,
+      "maximum_face_support_M2": 24,
+      "maximum_selected_tree_edges": {
+        "gauge": 3,
+        "local": 6,
+        "matter": 3
+      },
+      "old_Wilson_rank_increments": [
+        0,
+        0,
+        0
+      ],
+      "pass": true,
+      "physical_orbit_aux_M2": 96,
+      "rough_M2": 4752,
+      "stabilizer_rank": 3337,
+      "total_M2": 4848,
+      "tree_face_checks": 21,
+      "tree_logical_edges": 18
+    },
+    {
+      "average_total_M2_per_coarse_cell": 22.279883381924197,
+      "coarse_cells": 343,
+      "code_exponent": 2400,
+      "commutator_failures": {
+        "gauge_stabilizer": 0,
+        "matter_gauge": 0,
+        "matter_stabilizer": 0,
+        "stabilizer_mutual": 0
+      },
+      "equality_check_rows_displayed": 192,
+      "expected_code_exponent": 2400,
+      "expected_gauge_dimension_rank": [
+        685,
+        684
+      ],
+      "expected_matter_dimension_rank": [
+        4115,
+        4114
+      ],
+      "expected_stabilizer_rank": 5242,
+      "face_product_exact_old_Wilson_including_phase": true,
+      "face_product_phases": [
+        3,
+        3,
+        3
+      ],
+      "full_matter_commutant_dimension_rank": [
+        null,
+        null
+      ],
+      "gauge_quotient_dimension_rank": [
+        685,
+        684
+      ],
+      "length": 7,
+      "matter_quotient_dimension_rank": [
+        4115,
+        4114
+      ],
+      "maximum_dressed_support_M2": {
+        "gauge": 24,
+        "local": 32,
+        "matter": 14
+      },
+      "maximum_equality_support_M2": 2,
+      "maximum_face_support_M2": 17,
+      "maximum_selected_tree_edges": {
+        "gauge": 6,
+        "local": 6,
+        "matter": 6
+      },
+      "old_Wilson_rank_increments": [
+        0,
+        0,
+        0
+      ],
+      "pass": true,
+      "physical_orbit_aux_M2": 96,
+      "rough_M2": 7546,
+      "stabilizer_rank": 5242,
+      "total_M2": 7642,
+      "tree_face_checks": 24,
+      "tree_logical_edges": 21
+    }
+  ]
+}

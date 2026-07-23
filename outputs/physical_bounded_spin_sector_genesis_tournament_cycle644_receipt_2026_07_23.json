@@ -1,0 +1,1450 @@
+{
+  "Status": "PASS",
+  "audit": "unset",
+  "author_accepted": false,
+  "author_artifact_status_accepted": false,
+  "authority": "none",
+  "axiom_pressure": false,
+  "axiom_pressure_claim": false,
+  "boundary_inflow_supplied": true,
+  "breakthrough": false,
+  "broad_no_go_claim": false,
+  "canonical_claim_gate_contract": {
+    "Status": "PASS",
+    "axiom_pressure_gate": "FAIL / DO NOT SHIP",
+    "broad_negative_gate": "FAIL / DO NOT SHIP",
+    "minimum_content_gate": "FAIL / DO NOT SHIP",
+    "pass": true,
+    "shared_obstruction_gate": "FAIL / DO NOT SHIP"
+  },
+  "constitutional_effect": "none",
+  "elapsed_seconds": 8.17913670791313,
+  "exact_narrowing": "the three displayed signs need no growing-support gate, but their rooted path-factor union grows 51/105/123; the identical repeated per-cell tensor fails the translated family with residual 1",
+  "fixed_code_all24_all576": true,
+  "full_periodic_E_preparation_and_G_closed": false,
+  "growing_Wilson_word_supplied": false,
+  "growing_rooted_path_factor_pattern_supplied": true,
+  "immutable_shore_ref": "40e8b5718ee92c0e1d0ec41386c0ff9cc84aefac",
+  "logical_fixtures": {
+    "Cycle230_contact_deletion_residual": 0.36789306705608243,
+    "Cycle230_seam_subchecks": {
+      "fail": 0,
+      "pass": 6
+    },
+    "Cycle523_full_M64_onsite_pass": true,
+    "literal_full_rough_code_seam_matrix_enumerated": false,
+    "one_particle_mass_residual": 2.220446049250313e-16
+  },
+  "maximum_RSS_bytes": 233930752,
+  "minimum_content_claim": false,
+  "no_go_discipline": {
+    "N1_live_routes": [
+      "non-JW auxiliary Clifford Wilson resolver",
+      "multi-round puncture-directed automaton",
+      "alternative stabilizer bases",
+      "weight-three/four reset duals",
+      "fermionic PEPS boundary inflow"
+    ],
+    "N1_normalized_families": [
+      {
+        "family": "replicated puncture/boundary inflow",
+        "honesty_marker": "ATTEMPTED",
+        "marker": "ATTEMPTED",
+        "mechanism": "factor every translated Wilson into local axes and resolve cell crossings",
+        "object": "one repeated four-M2 Bell/S crossing block per cell plus local axis factors",
+        "result": "ATTEMPTED_REPLICATED_FIXED_DEFECT_FAIL__POSITIVE_ROOTED_BASE_TRIPLET_SEED",
+        "target_equivalent": true,
+        "terminal": "all 3L^2 translated signs +1, every local check +1, no rooted paths"
+      },
+      {
+        "family": "reversible data/link ancilla",
+        "honesty_marker": "ATTEMPTED",
+        "marker": "ATTEMPTED",
+        "mechanism": "controlled link encoding, physical update, inverse encoding",
+        "object": "four data plus four link M2s on one plaquette",
+        "result": "EXACT_REVERSIBLE_ONE_PLAQUETTE_DATA_LINK_ENCODER__ELEMENTARY_AND_PERIODIC_EXTENSION_OPEN",
+        "target_equivalent": false,
+        "terminal": "elementary shared-link periodic encoder on L3/L6/L7"
+      },
+      {
+        "family": "local measurement-reset dual pump",
+        "honesty_marker": "ATTEMPTED",
+        "marker": "ATTEMPTED",
+        "mechanism": "syndrome-local Kraus correction commuting with all other checks and Wilsons",
+        "object": "actual L3 independent local stabilizers and bounded Pauli duals",
+        "result": "ATTEMPTED_L3_LOCAL_RESET_DUALS__INCOMPLETE_GENERATOR_COVERAGE",
+        "target_equivalent": true,
+        "terminal": "complete held-size generator coverage and convergence"
+      }
+    ],
+    "N1_open_routes_not_counted": [
+      {
+        "family": "non-JW auxiliary Clifford Wilson resolver",
+        "mechanism": "make spin characters products of bounded checks",
+        "object": "local Clifford crossing/link ancillas",
+        "search_status": "OPEN_UNTESTED_NOT_COUNTED",
+        "terminal": "root-free fixed code"
+      },
+      {
+        "family": "multi-round puncture-directed automaton",
+        "mechanism": "transport and absorb defects at repeated punctures",
+        "object": "local syndrome carriers",
+        "search_status": "OPEN_UNTESTED_NOT_COUNTED",
+        "terminal": "held-size convergence"
+      },
+      {
+        "family": "alternative stabilizer bases",
+        "mechanism": "increase isolated bounded-dual coverage",
+        "object": "other independent local-check presentations",
+        "search_status": "OPEN_UNTESTED_NOT_COUNTED",
+        "terminal": "zero unresolved generators"
+      },
+      {
+        "family": "weight-three/four reset duals",
+        "mechanism": "pump generators unresolved at weight two",
+        "object": "bounded multi-M2 corrections",
+        "search_status": "OPEN_UNTESTED_NOT_COUNTED",
+        "terminal": "all L3/L6/L7 checks"
+      },
+      {
+        "family": "fermionic PEPS boundary inflow",
+        "mechanism": "absorb varying segment characters locally",
+        "object": "graded virtual boundary tensor",
+        "search_status": "OPEN_UNTESTED_NOT_COUNTED",
+        "terminal": "all24 periodic E without rooted path"
+      }
+    ],
+    "N1_qualifying_attempts": 2,
+    "N1_required_for_broad_negative": 5,
+    "N2_collapsed_walls": {
+      "W_elementary": "route B's controlled support-eight unitary lacks a literal one/two-M2 factorization",
+      "W_held": "route C leaves 173 L3 generators unresolved and has no L6/L7 pump",
+      "W_localprep": "all bounded local-stabilizer expectations are zero in the tested route-A seed",
+      "W_replica": "the identical four-M2 block yields L^2 plus and 2L^2 zero translated-loop expectations",
+      "W_root": "the exact base triplet seed uses three rooted noncontractible paths of growing factor count"
+    },
+    "N2_directed_pair_count": 20,
+    "N2_directed_pairs": [
+      {
+        "closure_implied": false,
+        "from": "W_replica",
+        "independence_evidence": {
+          "from_interface": "Route A translated-loop tensor census",
+          "reason": "closing W_replica on Route A translated-loop tensor census does not construct or test the distinct obligation W_root on Route A rooted base-triplet seed",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "Route A rooted base-triplet seed"
+        },
+        "to": "W_root"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_replica",
+        "independence_evidence": {
+          "from_interface": "Route A translated-loop tensor census",
+          "reason": "closing W_replica on Route A translated-loop tensor census does not construct or test the distinct obligation W_localprep on Route A bounded local-stabilizer expectations",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "Route A bounded local-stabilizer expectations"
+        },
+        "to": "W_localprep"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_replica",
+        "independence_evidence": {
+          "from_interface": "Route A translated-loop tensor census",
+          "reason": "closing W_replica on Route A translated-loop tensor census does not construct or test the distinct obligation W_elementary on Route B support-eight reversible plaquette",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "Route B support-eight reversible plaquette"
+        },
+        "to": "W_elementary"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_replica",
+        "independence_evidence": {
+          "from_interface": "Route A translated-loop tensor census",
+          "reason": "closing W_replica on Route A translated-loop tensor census does not construct or test the distinct obligation W_held on Route C selected-basis L3 reset pump",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "Route C selected-basis L3 reset pump"
+        },
+        "to": "W_held"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_root",
+        "independence_evidence": {
+          "from_interface": "Route A rooted base-triplet seed",
+          "reason": "closing W_root on Route A rooted base-triplet seed does not construct or test the distinct obligation W_replica on Route A translated-loop tensor census",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "Route A translated-loop tensor census"
+        },
+        "to": "W_replica"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_root",
+        "independence_evidence": {
+          "from_interface": "Route A rooted base-triplet seed",
+          "reason": "closing W_root on Route A rooted base-triplet seed does not construct or test the distinct obligation W_localprep on Route A bounded local-stabilizer expectations",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "Route A bounded local-stabilizer expectations"
+        },
+        "to": "W_localprep"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_root",
+        "independence_evidence": {
+          "from_interface": "Route A rooted base-triplet seed",
+          "reason": "closing W_root on Route A rooted base-triplet seed does not construct or test the distinct obligation W_elementary on Route B support-eight reversible plaquette",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "Route B support-eight reversible plaquette"
+        },
+        "to": "W_elementary"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_root",
+        "independence_evidence": {
+          "from_interface": "Route A rooted base-triplet seed",
+          "reason": "closing W_root on Route A rooted base-triplet seed does not construct or test the distinct obligation W_held on Route C selected-basis L3 reset pump",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "Route C selected-basis L3 reset pump"
+        },
+        "to": "W_held"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_localprep",
+        "independence_evidence": {
+          "from_interface": "Route A bounded local-stabilizer expectations",
+          "reason": "closing W_localprep on Route A bounded local-stabilizer expectations does not construct or test the distinct obligation W_replica on Route A translated-loop tensor census",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "Route A translated-loop tensor census"
+        },
+        "to": "W_replica"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_localprep",
+        "independence_evidence": {
+          "from_interface": "Route A bounded local-stabilizer expectations",
+          "reason": "closing W_localprep on Route A bounded local-stabilizer expectations does not construct or test the distinct obligation W_root on Route A rooted base-triplet seed",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "Route A rooted base-triplet seed"
+        },
+        "to": "W_root"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_localprep",
+        "independence_evidence": {
+          "from_interface": "Route A bounded local-stabilizer expectations",
+          "reason": "closing W_localprep on Route A bounded local-stabilizer expectations does not construct or test the distinct obligation W_elementary on Route B support-eight reversible plaquette",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "Route B support-eight reversible plaquette"
+        },
+        "to": "W_elementary"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_localprep",
+        "independence_evidence": {
+          "from_interface": "Route A bounded local-stabilizer expectations",
+          "reason": "closing W_localprep on Route A bounded local-stabilizer expectations does not construct or test the distinct obligation W_held on Route C selected-basis L3 reset pump",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "Route C selected-basis L3 reset pump"
+        },
+        "to": "W_held"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_elementary",
+        "independence_evidence": {
+          "from_interface": "Route B support-eight reversible plaquette",
+          "reason": "closing W_elementary on Route B support-eight reversible plaquette does not construct or test the distinct obligation W_replica on Route A translated-loop tensor census",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "Route A translated-loop tensor census"
+        },
+        "to": "W_replica"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_elementary",
+        "independence_evidence": {
+          "from_interface": "Route B support-eight reversible plaquette",
+          "reason": "closing W_elementary on Route B support-eight reversible plaquette does not construct or test the distinct obligation W_root on Route A rooted base-triplet seed",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "Route A rooted base-triplet seed"
+        },
+        "to": "W_root"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_elementary",
+        "independence_evidence": {
+          "from_interface": "Route B support-eight reversible plaquette",
+          "reason": "closing W_elementary on Route B support-eight reversible plaquette does not construct or test the distinct obligation W_localprep on Route A bounded local-stabilizer expectations",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "Route A bounded local-stabilizer expectations"
+        },
+        "to": "W_localprep"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_elementary",
+        "independence_evidence": {
+          "from_interface": "Route B support-eight reversible plaquette",
+          "reason": "closing W_elementary on Route B support-eight reversible plaquette does not construct or test the distinct obligation W_held on Route C selected-basis L3 reset pump",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "Route C selected-basis L3 reset pump"
+        },
+        "to": "W_held"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_held",
+        "independence_evidence": {
+          "from_interface": "Route C selected-basis L3 reset pump",
+          "reason": "closing W_held on Route C selected-basis L3 reset pump does not construct or test the distinct obligation W_replica on Route A translated-loop tensor census",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "Route A translated-loop tensor census"
+        },
+        "to": "W_replica"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_held",
+        "independence_evidence": {
+          "from_interface": "Route C selected-basis L3 reset pump",
+          "reason": "closing W_held on Route C selected-basis L3 reset pump does not construct or test the distinct obligation W_root on Route A rooted base-triplet seed",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "Route A rooted base-triplet seed"
+        },
+        "to": "W_root"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_held",
+        "independence_evidence": {
+          "from_interface": "Route C selected-basis L3 reset pump",
+          "reason": "closing W_held on Route C selected-basis L3 reset pump does not construct or test the distinct obligation W_localprep on Route A bounded local-stabilizer expectations",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "Route A bounded local-stabilizer expectations"
+        },
+        "to": "W_localprep"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_held",
+        "independence_evidence": {
+          "from_interface": "Route C selected-basis L3 reset pump",
+          "reason": "closing W_held on Route C selected-basis L3 reset pump does not construct or test the distinct obligation W_elementary on Route B support-eight reversible plaquette",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "Route B support-eight reversible plaquette"
+        },
+        "to": "W_elementary"
+      }
+    ],
+    "N2_directional_independence": [
+      {
+        "closure_implied": false,
+        "from": "W_replica",
+        "independence_evidence": {
+          "from_interface": "Route A translated-loop tensor census",
+          "reason": "closing W_replica on Route A translated-loop tensor census does not construct or test the distinct obligation W_root on Route A rooted base-triplet seed",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "Route A rooted base-triplet seed"
+        },
+        "to": "W_root"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_replica",
+        "independence_evidence": {
+          "from_interface": "Route A translated-loop tensor census",
+          "reason": "closing W_replica on Route A translated-loop tensor census does not construct or test the distinct obligation W_localprep on Route A bounded local-stabilizer expectations",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "Route A bounded local-stabilizer expectations"
+        },
+        "to": "W_localprep"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_replica",
+        "independence_evidence": {
+          "from_interface": "Route A translated-loop tensor census",
+          "reason": "closing W_replica on Route A translated-loop tensor census does not construct or test the distinct obligation W_elementary on Route B support-eight reversible plaquette",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "Route B support-eight reversible plaquette"
+        },
+        "to": "W_elementary"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_replica",
+        "independence_evidence": {
+          "from_interface": "Route A translated-loop tensor census",
+          "reason": "closing W_replica on Route A translated-loop tensor census does not construct or test the distinct obligation W_held on Route C selected-basis L3 reset pump",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "Route C selected-basis L3 reset pump"
+        },
+        "to": "W_held"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_root",
+        "independence_evidence": {
+          "from_interface": "Route A rooted base-triplet seed",
+          "reason": "closing W_root on Route A rooted base-triplet seed does not construct or test the distinct obligation W_replica on Route A translated-loop tensor census",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "Route A translated-loop tensor census"
+        },
+        "to": "W_replica"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_root",
+        "independence_evidence": {
+          "from_interface": "Route A rooted base-triplet seed",
+          "reason": "closing W_root on Route A rooted base-triplet seed does not construct or test the distinct obligation W_localprep on Route A bounded local-stabilizer expectations",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "Route A bounded local-stabilizer expectations"
+        },
+        "to": "W_localprep"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_root",
+        "independence_evidence": {
+          "from_interface": "Route A rooted base-triplet seed",
+          "reason": "closing W_root on Route A rooted base-triplet seed does not construct or test the distinct obligation W_elementary on Route B support-eight reversible plaquette",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "Route B support-eight reversible plaquette"
+        },
+        "to": "W_elementary"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_root",
+        "independence_evidence": {
+          "from_interface": "Route A rooted base-triplet seed",
+          "reason": "closing W_root on Route A rooted base-triplet seed does not construct or test the distinct obligation W_held on Route C selected-basis L3 reset pump",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "Route C selected-basis L3 reset pump"
+        },
+        "to": "W_held"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_localprep",
+        "independence_evidence": {
+          "from_interface": "Route A bounded local-stabilizer expectations",
+          "reason": "closing W_localprep on Route A bounded local-stabilizer expectations does not construct or test the distinct obligation W_replica on Route A translated-loop tensor census",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "Route A translated-loop tensor census"
+        },
+        "to": "W_replica"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_localprep",
+        "independence_evidence": {
+          "from_interface": "Route A bounded local-stabilizer expectations",
+          "reason": "closing W_localprep on Route A bounded local-stabilizer expectations does not construct or test the distinct obligation W_root on Route A rooted base-triplet seed",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "Route A rooted base-triplet seed"
+        },
+        "to": "W_root"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_localprep",
+        "independence_evidence": {
+          "from_interface": "Route A bounded local-stabilizer expectations",
+          "reason": "closing W_localprep on Route A bounded local-stabilizer expectations does not construct or test the distinct obligation W_elementary on Route B support-eight reversible plaquette",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "Route B support-eight reversible plaquette"
+        },
+        "to": "W_elementary"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_localprep",
+        "independence_evidence": {
+          "from_interface": "Route A bounded local-stabilizer expectations",
+          "reason": "closing W_localprep on Route A bounded local-stabilizer expectations does not construct or test the distinct obligation W_held on Route C selected-basis L3 reset pump",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "Route C selected-basis L3 reset pump"
+        },
+        "to": "W_held"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_elementary",
+        "independence_evidence": {
+          "from_interface": "Route B support-eight reversible plaquette",
+          "reason": "closing W_elementary on Route B support-eight reversible plaquette does not construct or test the distinct obligation W_replica on Route A translated-loop tensor census",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "Route A translated-loop tensor census"
+        },
+        "to": "W_replica"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_elementary",
+        "independence_evidence": {
+          "from_interface": "Route B support-eight reversible plaquette",
+          "reason": "closing W_elementary on Route B support-eight reversible plaquette does not construct or test the distinct obligation W_root on Route A rooted base-triplet seed",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "Route A rooted base-triplet seed"
+        },
+        "to": "W_root"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_elementary",
+        "independence_evidence": {
+          "from_interface": "Route B support-eight reversible plaquette",
+          "reason": "closing W_elementary on Route B support-eight reversible plaquette does not construct or test the distinct obligation W_localprep on Route A bounded local-stabilizer expectations",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "Route A bounded local-stabilizer expectations"
+        },
+        "to": "W_localprep"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_elementary",
+        "independence_evidence": {
+          "from_interface": "Route B support-eight reversible plaquette",
+          "reason": "closing W_elementary on Route B support-eight reversible plaquette does not construct or test the distinct obligation W_held on Route C selected-basis L3 reset pump",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "Route C selected-basis L3 reset pump"
+        },
+        "to": "W_held"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_held",
+        "independence_evidence": {
+          "from_interface": "Route C selected-basis L3 reset pump",
+          "reason": "closing W_held on Route C selected-basis L3 reset pump does not construct or test the distinct obligation W_replica on Route A translated-loop tensor census",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "Route A translated-loop tensor census"
+        },
+        "to": "W_replica"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_held",
+        "independence_evidence": {
+          "from_interface": "Route C selected-basis L3 reset pump",
+          "reason": "closing W_held on Route C selected-basis L3 reset pump does not construct or test the distinct obligation W_root on Route A rooted base-triplet seed",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "Route A rooted base-triplet seed"
+        },
+        "to": "W_root"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_held",
+        "independence_evidence": {
+          "from_interface": "Route C selected-basis L3 reset pump",
+          "reason": "closing W_held on Route C selected-basis L3 reset pump does not construct or test the distinct obligation W_localprep on Route A bounded local-stabilizer expectations",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "Route A bounded local-stabilizer expectations"
+        },
+        "to": "W_localprep"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_held",
+        "independence_evidence": {
+          "from_interface": "Route C selected-basis L3 reset pump",
+          "reason": "closing W_held on Route C selected-basis L3 reset pump does not construct or test the distinct obligation W_elementary on Route B support-eight reversible plaquette",
+          "status": "NOT_ESTABLISHED_BEYOND_EXECUTED_INTERFACES",
+          "to_interface": "Route B support-eight reversible plaquette"
+        },
+        "to": "W_elementary"
+      }
+    ],
+    "N2_independence_complete": false,
+    "N2_machine_check_count": 20,
+    "N2_walls": {
+      "W_elementary": "route B's controlled support-eight unitary lacks a literal one/two-M2 factorization",
+      "W_held": "route C leaves 173 L3 generators unresolved and has no L6/L7 pump",
+      "W_localprep": "all bounded local-stabilizer expectations are zero in the tested route-A seed",
+      "W_replica": "the identical four-M2 block yields L^2 plus and 2L^2 zero translated-loop expectations",
+      "W_root": "the exact base triplet seed uses three rooted noncontractible paths of growing factor count"
+    },
+    "N3_explicit_supplied_structure": [
+      "compile-time L/parity",
+      "three axes",
+      "macro-origin and three rooted paths",
+      "four face roles per attempted block",
+      "three sign markers",
+      "Cycle532 code/runtime",
+      "support-eight route-B synthesis",
+      "selected L3 basis",
+      "local feed-forward",
+      "logical fixtures"
+    ],
+    "N3_hidden_wall_phrases": [
+      "we assume",
+      "by construction",
+      "as is standard",
+      "the framework provides",
+      "bridge context",
+      "background",
+      "naturally",
+      "obviously",
+      "standard qft",
+      "registered",
+      "canonical"
+    ],
+    "N3_note_phrase_hits": [],
+    "N4_cited_lines_exist": true,
+    "N4_dropped_nonmatches": [
+      {
+        "current_line": 493,
+        "current_path": "scripts/physical_bounded_spin_sector_genesis_tournament_cycle644_2026_07_23.py",
+        "current_ref": "working-tree Cycle644 candidate",
+        "current_residual": "rooted periodic path seed has growing factor count but does not open the boundary",
+        "exact_match": false,
+        "prior_line": 381,
+        "prior_path": "docs/work_history/repo/review_feedback/LOCAL_ROUGH_PUNCTURE_ODD_SECTOR_CYCLE247_NOTE_2026-07-17.md",
+        "prior_ref": "40e8b5718ee92c0e1d0ec41386c0ff9cc84aefac",
+        "prior_residual": "open boundary has area overhead and changes the periodic contract",
+        "same_scope": false,
+        "use_as_closure": false
+      }
+    ],
+    "N4_exact_residual_matches": [
+      {
+        "current_line": 285,
+        "current_path": "scripts/physical_bounded_spin_sector_genesis_tournament_cycle644_2026_07_23.py",
+        "current_ref": "working-tree Cycle644 candidate",
+        "current_residual": "the three displayed signs have residual-0 local-gate seeds but rooted support-union weights 51/105/123",
+        "exact_match": true,
+        "prior_line": 142,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_TWISTED_CHARGE_RIBBON_AUXILIARY_LINK_GAUGE_CYCLE641_NOTE_2026-07-23.md",
+        "prior_ref": "40e8b5718ee92c0e1d0ec41386c0ff9cc84aefac",
+        "prior_residual": "three displayed Wilson initializers have weights 21/39/45",
+        "same_scope": true,
+        "use_as_closure": true
+      },
+      {
+        "current_line": 497,
+        "current_path": "scripts/physical_bounded_spin_sector_genesis_tournament_cycle644_2026_07_23.py",
+        "current_ref": "working-tree Cycle644 candidate",
+        "current_residual": "648/5184/8232 local rows have zero expectation in the replicated seed",
+        "exact_match": true,
+        "prior_line": 143,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_TWISTED_CHARGE_RIBBON_AUXILIARY_LINK_GAUGE_CYCLE641_NOTE_2026-07-23.md",
+        "prior_ref": "40e8b5718ee92c0e1d0ec41386c0ff9cc84aefac",
+        "prior_residual": "full fixed-code preparation absent",
+        "same_scope": true,
+        "use_as_closure": false
+      },
+      {
+        "current_line": 697,
+        "current_path": "scripts/physical_bounded_spin_sector_genesis_tournament_cycle644_2026_07_23.py",
+        "current_ref": "working-tree Cycle644 candidate",
+        "current_residual": "separate data/link prepare-update-unprepare residual is <=2.3e-16",
+        "exact_match": true,
+        "prior_line": 100,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_TWISTED_CHARGE_RIBBON_AUXILIARY_LINK_GAUGE_CYCLE641_NOTE_2026-07-23.md",
+        "prior_ref": "40e8b5718ee92c0e1d0ec41386c0ff9cc84aefac",
+        "prior_residual": "one Q=+1 plaquette has a bounded reversible vacuum preparation surface",
+        "same_scope": true,
+        "use_as_closure": true
+      }
+    ],
+    "N4_exact_residual_matching": [
+      {
+        "current_line": 285,
+        "current_path": "scripts/physical_bounded_spin_sector_genesis_tournament_cycle644_2026_07_23.py",
+        "current_ref": "working-tree Cycle644 candidate",
+        "current_residual": "the three displayed signs have residual-0 local-gate seeds but rooted support-union weights 51/105/123",
+        "exact_match": true,
+        "prior_line": 142,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_TWISTED_CHARGE_RIBBON_AUXILIARY_LINK_GAUGE_CYCLE641_NOTE_2026-07-23.md",
+        "prior_ref": "40e8b5718ee92c0e1d0ec41386c0ff9cc84aefac",
+        "prior_residual": "three displayed Wilson initializers have weights 21/39/45",
+        "same_scope": true,
+        "use_as_closure": true
+      },
+      {
+        "current_line": 497,
+        "current_path": "scripts/physical_bounded_spin_sector_genesis_tournament_cycle644_2026_07_23.py",
+        "current_ref": "working-tree Cycle644 candidate",
+        "current_residual": "648/5184/8232 local rows have zero expectation in the replicated seed",
+        "exact_match": true,
+        "prior_line": 143,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_TWISTED_CHARGE_RIBBON_AUXILIARY_LINK_GAUGE_CYCLE641_NOTE_2026-07-23.md",
+        "prior_ref": "40e8b5718ee92c0e1d0ec41386c0ff9cc84aefac",
+        "prior_residual": "full fixed-code preparation absent",
+        "same_scope": true,
+        "use_as_closure": false
+      },
+      {
+        "current_line": 697,
+        "current_path": "scripts/physical_bounded_spin_sector_genesis_tournament_cycle644_2026_07_23.py",
+        "current_ref": "working-tree Cycle644 candidate",
+        "current_residual": "separate data/link prepare-update-unprepare residual is <=2.3e-16",
+        "exact_match": true,
+        "prior_line": 100,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_TWISTED_CHARGE_RIBBON_AUXILIARY_LINK_GAUGE_CYCLE641_NOTE_2026-07-23.md",
+        "prior_ref": "40e8b5718ee92c0e1d0ec41386c0ff9cc84aefac",
+        "prior_residual": "one Q=+1 plaquette has a bounded reversible vacuum preparation surface",
+        "same_scope": true,
+        "use_as_closure": true
+      },
+      {
+        "current_line": 493,
+        "current_path": "scripts/physical_bounded_spin_sector_genesis_tournament_cycle644_2026_07_23.py",
+        "current_ref": "working-tree Cycle644 candidate",
+        "current_residual": "rooted periodic path seed has growing factor count but does not open the boundary",
+        "exact_match": false,
+        "prior_line": 381,
+        "prior_path": "docs/work_history/repo/review_feedback/LOCAL_ROUGH_PUNCTURE_ODD_SECTOR_CYCLE247_NOTE_2026-07-17.md",
+        "prior_ref": "40e8b5718ee92c0e1d0ec41386c0ff9cc84aefac",
+        "prior_residual": "open boundary has area overhead and changes the periodic contract",
+        "same_scope": false,
+        "use_as_closure": false
+      }
+    ],
+    "N5_five_resolution_rhetoric_audit": [
+      {
+        "claim": "local gates do not imply bounded-neighborhood genesis",
+        "lattice_wide": "rooted factor counts grow 51/105/123",
+        "per_block": "translated blocks vary along paths",
+        "per_element": "route A uses support-one/two gates",
+        "per_mode": "three rooted Wilson characters are exact",
+        "per_site": "one attempted four-M2 block per cell"
+      },
+      {
+        "claim": "rank equivalence does not prepare the code",
+        "lattice_wide": "all 648/5184/8232 local rows are unprepared",
+        "per_block": "identical block seed leaves zero expectations",
+        "per_element": "each Wilson factor has a local axis",
+        "per_mode": "translated family adds only three ranks",
+        "per_site": "axis conflicts occupy four roles"
+      },
+      {
+        "claim": "reversible plaquette is not periodic elementary E",
+        "lattice_wide": "shared links and one/two-M2 factorization are open",
+        "per_block": "controlled unitary support is eight",
+        "per_element": "edge/exchange EG pass",
+        "per_mode": "all eight even words return link blank",
+        "per_site": "eight M2s are used"
+      },
+      {
+        "claim": "partial reset coverage is not a dissipative encoder",
+        "lattice_wide": "L6/L7 convergence is not executed",
+        "per_block": "173 generators remain",
+        "per_element": "230 selected L3 generators have weight<=2 duals",
+        "per_mode": "Wilson preservation is explicit",
+        "per_site": "maximum accepted dual diameter is 44"
+      },
+      {
+        "claim": "fixed-code covariance is not preparation covariance",
+        "lattice_wide": "no root-free all24/all576 E is claimed",
+        "per_block": "rooted preparation circuit orbit is not synthesized",
+        "per_element": "single-face group law passes",
+        "per_mode": "three fixed characters form a cubic orbit",
+        "per_site": "layout is frame covariant"
+      }
+    ],
+    "N5_rhetoric_resolution_ledger": [
+      {
+        "claim": "local gates do not imply bounded-neighborhood genesis",
+        "lattice_wide": "rooted factor counts grow 51/105/123",
+        "per_block": "translated blocks vary along paths",
+        "per_element": "route A uses support-one/two gates",
+        "per_mode": "three rooted Wilson characters are exact",
+        "per_site": "one attempted four-M2 block per cell"
+      },
+      {
+        "claim": "rank equivalence does not prepare the code",
+        "lattice_wide": "all 648/5184/8232 local rows are unprepared",
+        "per_block": "identical block seed leaves zero expectations",
+        "per_element": "each Wilson factor has a local axis",
+        "per_mode": "translated family adds only three ranks",
+        "per_site": "axis conflicts occupy four roles"
+      },
+      {
+        "claim": "reversible plaquette is not periodic elementary E",
+        "lattice_wide": "shared links and one/two-M2 factorization are open",
+        "per_block": "controlled unitary support is eight",
+        "per_element": "edge/exchange EG pass",
+        "per_mode": "all eight even words return link blank",
+        "per_site": "eight M2s are used"
+      },
+      {
+        "claim": "partial reset coverage is not a dissipative encoder",
+        "lattice_wide": "L6/L7 convergence is not executed",
+        "per_block": "173 generators remain",
+        "per_element": "230 selected L3 generators have weight<=2 duals",
+        "per_mode": "Wilson preservation is explicit",
+        "per_site": "maximum accepted dual diameter is 44"
+      },
+      {
+        "claim": "fixed-code covariance is not preparation covariance",
+        "lattice_wide": "no root-free all24/all576 E is claimed",
+        "per_block": "rooted preparation circuit orbit is not synthesized",
+        "per_element": "single-face group law passes",
+        "per_mode": "three fixed characters form a cubic orbit",
+        "per_site": "layout is frame covariant"
+      }
+    ],
+    "N6_partial_closure_paths": [
+      {
+        "file": "outputs/physical_twisted_charge_ribbon_auxiliary_link_gauge_cycle641_receipt_2026_07_23.json",
+        "status": "PINNED_IMMUTABLE_PARENT",
+        "what_closes": "one Q=+1 plaquette and conditional fixed-spin runtime, not periodic preparation"
+      },
+      {
+        "file": "docs/work_history/repo/review_feedback/LOCAL_ROUGH_PUNCTURE_ODD_SECTOR_CYCLE247_NOTE_2026-07-17.md",
+        "status": "PINNED_BOUNDARY_COMPARATOR",
+        "what_closes": "rough-terminal even algebra and exact boundary-multiplicity diagnostics"
+      },
+      {
+        "file": "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md",
+        "status": "PINNED_FACTOR_COMPARATOR",
+        "what_closes": "fixed-spin target-times-gauge factor and all24/all576 code covariance"
+      },
+      {
+        "file": "docs/work_history/repo/review_feedback/PHYSICAL_BOUNDED_SPIN_SECTOR_GENESIS_TOURNAMENT_CYCLE644_NOTE_2026-07-23.md",
+        "status": "CURRENT_SCOPED_NOTE",
+        "what_closes": "rooted base-triplet seed and route dispositions only"
+      },
+      {
+        "file": "scripts/physical_bounded_spin_sector_genesis_tournament_cycle644_2026_07_23.py",
+        "status": "CURRENT_EXECUTABLE",
+        "what_closes": "L3/L6/L7 translated-loop census, reversible plaquette and L3 reset-dual audit"
+      }
+    ],
+    "N7_cited_actionable_steelman": {
+      "action": "construct the varying crossing tensor and puncture-directed held-size pump",
+      "actionable": true,
+      "citations": [
+        {
+          "line": 356,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_TWISTED_CHARGE_RIBBON_AUXILIARY_LINK_GAUGE_CYCLE641_NOTE_2026-07-23.md",
+          "ref": "40e8b5718ee92c0e1d0ec41386c0ff9cc84aefac",
+          "supports": "boundary inflow and reset routes were explicitly live"
+        },
+        {
+          "line": 448,
+          "path": "docs/work_history/repo/review_feedback/LOCAL_ROUGH_PUNCTURE_ODD_SECTOR_CYCLE247_NOTE_2026-07-17.md",
+          "ref": "40e8b5718ee92c0e1d0ec41386c0ff9cc84aefac",
+          "supports": "measurement-assisted image selection was not ruled out"
+        }
+      ],
+      "mechanism": "replace the scalar cell block by a direction-sensitive Clifford/PEPS tensor and pump its local syndromes to repeated punctures",
+      "steelman": "A repeated graded crossing tensor could carry the varying Wilson segment character that defeats the identical Bell/S block, while a puncture-directed local automaton prepares the remaining stabilizers without changing the spin sector.",
+      "terminal_obligation": "literal elementary E/prep/G on L3/L6/L7, zero local syndromes, no rooted paths, preparation all24/all576 and full fixtures"
+    },
+    "N7_cited_lines_exist": true,
+    "N7_steelman": {
+      "action": "construct the varying crossing tensor and puncture-directed held-size pump",
+      "actionable": true,
+      "citations": [
+        {
+          "line": 356,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_TWISTED_CHARGE_RIBBON_AUXILIARY_LINK_GAUGE_CYCLE641_NOTE_2026-07-23.md",
+          "ref": "40e8b5718ee92c0e1d0ec41386c0ff9cc84aefac",
+          "supports": "boundary inflow and reset routes were explicitly live"
+        },
+        {
+          "line": 448,
+          "path": "docs/work_history/repo/review_feedback/LOCAL_ROUGH_PUNCTURE_ODD_SECTOR_CYCLE247_NOTE_2026-07-17.md",
+          "ref": "40e8b5718ee92c0e1d0ec41386c0ff9cc84aefac",
+          "supports": "measurement-assisted image selection was not ruled out"
+        }
+      ],
+      "mechanism": "replace the scalar cell block by a direction-sensitive Clifford/PEPS tensor and pump its local syndromes to repeated punctures",
+      "steelman": "A repeated graded crossing tensor could carry the varying Wilson segment character that defeats the identical Bell/S block, while a puncture-directed local automaton prepares the remaining stabilizers without changing the spin sector.",
+      "terminal_obligation": "literal elementary E/prep/G on L3/L6/L7, zero local syndromes, no rooted paths, preparation all24/all576 and full fixtures"
+    },
+    "N8_cited_lines_exist": true,
+    "N8_cross_cycle_echo": [
+      {
+        "applicability": "ACTIONABLE_LOCAL_PREP_ROUTE",
+        "citation_line": 378,
+        "citation_path": "docs/work_history/repo/review_feedback/LOCAL_ROUGH_PUNCTURE_ODD_SECTOR_CYCLE247_NOTE_2026-07-17.md",
+        "citation_ref": "40e8b5718ee92c0e1d0ec41386c0ff9cc84aefac",
+        "could_apply_here": true,
+        "cycle": "Cycle247",
+        "echo": "repeated rough terminals close the even algebra but not image selection",
+        "effect": "keeps route C and automata live",
+        "mechanism": "puncture-directed reset",
+        "prior_line": 378,
+        "prior_path": "docs/work_history/repo/review_feedback/LOCAL_ROUGH_PUNCTURE_ODD_SECTOR_CYCLE247_NOTE_2026-07-17.md",
+        "retired": false,
+        "retirement_mechanism": null
+      },
+      {
+        "applicability": "EXACT_CURRENT_BOUNDARY",
+        "citation_line": 140,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md",
+        "citation_ref": "40e8b5718ee92c0e1d0ec41386c0ff9cc84aefac",
+        "could_apply_here": true,
+        "cycle": "Cycle532",
+        "echo": "algebraic factorization is not preparation",
+        "effect": "blocks full periodic E",
+        "mechanism": "compose rooted seed with local constraints",
+        "prior_line": 140,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md",
+        "retired": false,
+        "retirement_mechanism": null
+      },
+      {
+        "applicability": "RETIRES_GROWING_GATE_ONLY",
+        "citation_line": 142,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_TWISTED_CHARGE_RIBBON_AUXILIARY_LINK_GAUGE_CYCLE641_NOTE_2026-07-23.md",
+        "citation_ref": "40e8b5718ee92c0e1d0ec41386c0ff9cc84aefac",
+        "could_apply_here": true,
+        "cycle": "Cycle641",
+        "echo": "displayed Wilson words grow",
+        "effect": "rooted path extent and local-code prep remain",
+        "mechanism": "locally prepare each Pauli factor",
+        "prior_line": 142,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_TWISTED_CHARGE_RIBBON_AUXILIARY_LINK_GAUGE_CYCLE641_NOTE_2026-07-23.md",
+        "retired": true,
+        "retirement_mechanism": "support-one/two rooted path seed with residual zero"
+      },
+      {
+        "applicability": "OPEN_VARIANT_AFTER_SCALAR_BLOCK_FAIL",
+        "citation_line": 358,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_TWISTED_CHARGE_RIBBON_AUXILIARY_LINK_GAUGE_CYCLE641_NOTE_2026-07-23.md",
+        "citation_ref": "40e8b5718ee92c0e1d0ec41386c0ff9cc84aefac",
+        "could_apply_here": true,
+        "cycle": "Cycle641",
+        "echo": "replicated boundary inflow was live",
+        "effect": "prevents route-A no-go promotion",
+        "mechanism": "direction-sensitive crossing tensor",
+        "prior_line": 358,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_TWISTED_CHARGE_RIBBON_AUXILIARY_LINK_GAUGE_CYCLE641_NOTE_2026-07-23.md",
+        "retired": false,
+        "retirement_mechanism": null
+      }
+    ],
+    "N8_rowwise_cross_cycle_echo": [
+      {
+        "applicability": "ACTIONABLE_LOCAL_PREP_ROUTE",
+        "citation_line": 378,
+        "citation_path": "docs/work_history/repo/review_feedback/LOCAL_ROUGH_PUNCTURE_ODD_SECTOR_CYCLE247_NOTE_2026-07-17.md",
+        "citation_ref": "40e8b5718ee92c0e1d0ec41386c0ff9cc84aefac",
+        "could_apply_here": true,
+        "cycle": "Cycle247",
+        "echo": "repeated rough terminals close the even algebra but not image selection",
+        "effect": "keeps route C and automata live",
+        "mechanism": "puncture-directed reset",
+        "prior_line": 378,
+        "prior_path": "docs/work_history/repo/review_feedback/LOCAL_ROUGH_PUNCTURE_ODD_SECTOR_CYCLE247_NOTE_2026-07-17.md",
+        "retired": false,
+        "retirement_mechanism": null
+      },
+      {
+        "applicability": "EXACT_CURRENT_BOUNDARY",
+        "citation_line": 140,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md",
+        "citation_ref": "40e8b5718ee92c0e1d0ec41386c0ff9cc84aefac",
+        "could_apply_here": true,
+        "cycle": "Cycle532",
+        "echo": "algebraic factorization is not preparation",
+        "effect": "blocks full periodic E",
+        "mechanism": "compose rooted seed with local constraints",
+        "prior_line": 140,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md",
+        "retired": false,
+        "retirement_mechanism": null
+      },
+      {
+        "applicability": "RETIRES_GROWING_GATE_ONLY",
+        "citation_line": 142,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_TWISTED_CHARGE_RIBBON_AUXILIARY_LINK_GAUGE_CYCLE641_NOTE_2026-07-23.md",
+        "citation_ref": "40e8b5718ee92c0e1d0ec41386c0ff9cc84aefac",
+        "could_apply_here": true,
+        "cycle": "Cycle641",
+        "echo": "displayed Wilson words grow",
+        "effect": "rooted path extent and local-code prep remain",
+        "mechanism": "locally prepare each Pauli factor",
+        "prior_line": 142,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_TWISTED_CHARGE_RIBBON_AUXILIARY_LINK_GAUGE_CYCLE641_NOTE_2026-07-23.md",
+        "retired": true,
+        "retirement_mechanism": "support-one/two rooted path seed with residual zero"
+      },
+      {
+        "applicability": "OPEN_VARIANT_AFTER_SCALAR_BLOCK_FAIL",
+        "citation_line": 358,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_TWISTED_CHARGE_RIBBON_AUXILIARY_LINK_GAUGE_CYCLE641_NOTE_2026-07-23.md",
+        "citation_ref": "40e8b5718ee92c0e1d0ec41386c0ff9cc84aefac",
+        "could_apply_here": true,
+        "cycle": "Cycle641",
+        "echo": "replicated boundary inflow was live",
+        "effect": "prevents route-A no-go promotion",
+        "mechanism": "direction-sensitive crossing tensor",
+        "prior_line": 358,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_TWISTED_CHARGE_RIBBON_AUXILIARY_LINK_GAUGE_CYCLE641_NOTE_2026-07-23.md",
+        "retired": false,
+        "retirement_mechanism": null
+      }
+    ],
+    "Status": "PASS",
+    "artifact_status": "PASS_ROOTED_TRIPLET_AND_LOCAL_REVERSIBLE_BLOCK_ONLY",
+    "axiom_pressure": false,
+    "axiom_pressure_claim": false,
+    "axiom_pressure_gate": "FAIL / DO NOT SHIP",
+    "broad_negative_gate": "FAIL / DO NOT SHIP",
+    "broad_no_go_claim": false,
+    "minimum_content_claim": false,
+    "minimum_content_gate": "FAIL / DO NOT SHIP",
+    "negative_claim_shipped": false,
+    "pass": true,
+    "shared_obstruction_claim": false,
+    "shared_obstruction_gate": "FAIL / DO NOT SHIP",
+    "shared_route_independent_obstruction": false,
+    "skill_freshness": {
+      "local_skill_sha256": "aeac7b2b7df30c350961f4b36b980a91e9c2ebeca3f35b6c1adcd731071bdab5",
+      "newer_origin_main_followed": true,
+      "origin_main_checked": true,
+      "origin_main_skill_sha256": "7d1aea8243ddd972331b935e2e836657e72115da3efe259f828fe862469d68b7",
+      "proof_search_governance_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    }
+  },
+  "note_contract": {
+    "accepted_false": true,
+    "audit_unset": true,
+    "authority_none": true,
+    "missing_sections": [],
+    "pass": true
+  },
+  "note_sha256": "c72899538a369c1c078b36844ef3f1d402c0ac14ee028e26a960f6dfedb9a2b5",
+  "optimal_next_campaign": "replace the failed identical replicated tensor by a direction-sensitive crossing tensor and compose it with a local stabilizer encoder: first search alternative independent bases and weight-3/4 bounded duals, then a puncture-directed multi-round syndrome automaton; require held L6/L7 convergence, boundary-deletion, all24/all576 preparation covariance, and elementary factorization of route B before claiming periodic E",
+  "pass": true,
+  "pins": {
+    "docs/work_history/repo/review_feedback/PHYSICAL_TWISTED_CHARGE_RIBBON_AUXILIARY_LINK_GAUGE_CYCLE641_NOTE_2026-07-23.md": "506dc7947aeb9ebd1c3c03ecad2f845931be35b9147ec1c1e08eb4883e70a705",
+    "outputs/physical_twisted_charge_ribbon_auxiliary_link_gauge_cycle641_cold_2026_07_23.txt": "873c389ffb4f834e1ac342c3362f02135b6df4c776e043901c06d3c14681e355",
+    "outputs/physical_twisted_charge_ribbon_auxiliary_link_gauge_cycle641_receipt_2026_07_23.json": "936532e57e78ac4c042f64bc967e8aeaf166659357a8378a26a5425f22f4efa1",
+    "scripts/exact_3d_higher_form_bosonization_cycle235_2026_07_17.py": "dd955ce629cde5e225b625be89f5f71045d688083a032b7bf104efa9b3f1bb34",
+    "scripts/local_rough_puncture_odd_sector_cycle247_2026_07_17.py": "10f5cf027c76f5a0a3b1d3dbaa6cb0e6d418932c84553f0cca303d3f21742519",
+    "scripts/physical_rough_gauge_subsystem_quotient_cycle532_2026_07_21.py": "8bf1c836661b4c902d09cf2f7d147b07c3083404569ce9bc0a2b3dd4820233da",
+    "scripts/physical_twisted_charge_ribbon_auxiliary_link_gauge_cycle641_2026_07_23.py": "17b8c95c8cc6e2b04723c97c394722a2aeb4a1f5fe45259dc28181ec7927292b"
+  },
+  "preparation_all24_all576_established": false,
+  "route_A_replicated_boundary_inflow": {
+    "base_triplet_constant_parallel_depth_but_growing_path_extent": true,
+    "base_triplet_rooted_paths_supplied": true,
+    "boundary_inflow_autonomously_generated": false,
+    "constant_M2_overhead": true,
+    "constructive_theorem": "the displayed three Wilson signs have an exact locally gated seed with one diameter-8 crossing block and single-M2 factors along three rooted noncontractible paths",
+    "fixed_code_covariance": {
+      "abstract_chart_orbit_substituted": false,
+      "active_runtime_frame_selector": false,
+      "fixed_all_plus_Wilson_code_frame_failures": 0,
+      "frame_products": 576,
+      "gauge_A_frame_failures": 0,
+      "gauge_Z_frame_failures": 0,
+      "length": 3,
+      "pass": true,
+      "proper_cubic_frames": 24,
+      "single_face_X_Z_group_law_cases": 684288,
+      "single_face_X_Z_group_law_mismatches": 0
+    },
+    "full_local_constraint_preparation": false,
+    "full_periodic_E_prepared": false,
+    "growing_Wilson_operator_applied_or_measured": false,
+    "pass": true,
+    "preparation_all24_all576_established": false,
+    "replicated_fixed_defect_closes_translated_family": false,
+    "replicated_marker_sheet_closes_translated_family": false,
+    "route_status": "ATTEMPTED_REPLICATED_FIXED_DEFECT_FAIL__POSITIVE_ROOTED_BASE_TRIPLET_SEED",
+    "runtime_global_query": false,
+    "sizes": [
+      {
+        "axis_conflict_qubits": 108,
+        "base_Wilson_rank_increment": 3,
+        "base_fixed_rank": 406,
+        "base_triplet_is_bounded_neighborhood_E": false,
+        "base_triplet_maximum_single_Wilson_weight": 21,
+        "base_triplet_parallel_preparation_depth_bound": 6,
+        "base_triplet_rooted_path_physical_L1_diameter": 96,
+        "base_triplet_seed_maximum_residual": 0.0,
+        "base_triplet_support_union_weight": 51,
+        "base_triplet_total_local_gate_count_bound": 57,
+        "base_triplet_unique_sign_markers": 3,
+        "block_roles_without_conflict": 0,
+        "boundary_sign_sheet_is_supplied": true,
+        "cells": 27,
+        "conflicts_outside_four_M2_blocks": 0,
+        "crossing_block_circuit": "per cell: H(q0), CNOT(q0,q1), S(q1), H(q2), CNOT(q2,q3), S(q3)",
+        "delete_one_base_marker_residual": 2.0,
+        "expected_four_conflict_M2_per_cell": 108,
+        "expected_translated_Wilson_loops": 27,
+        "four_M2_crossing_blocks": 27,
+        "length": 3,
+        "local_constraint_rank": 403,
+        "local_constraint_seed_expectations": {
+          "minus_one": 0,
+          "other": 0,
+          "plus_one": 0,
+          "zero": 648
+        },
+        "macro_origin_or_axis_free": false,
+        "marker_failures": 0,
+        "marker_owner_axis_coordinates": {
+          "0": [
+            0
+          ],
+          "1": [
+            0
+          ],
+          "2": [
+            0
+          ]
+        },
+        "maximum_Wilson_expectation_residual": 1.0,
+        "maximum_crossing_block_physical_L1_diameter": 8,
+        "maximum_elementary_preparation_gate_support": 2,
+        "phase_inconsistencies": 0,
+        "replicated_fixed_defect_seed_closes_all_translated_loops": false,
+        "seed_is_full_fixed_code_state": false,
+        "single_M2_axis_preparations": 486,
+        "translated_Wilson_loops": 27,
+        "translated_Wilson_pair_anticommutations": 0,
+        "translated_Wilson_rank_increment": 3,
+        "translated_factor_seed_expectation_counts": {
+          "minus_one": 0,
+          "other": 0,
+          "plus_one": 9,
+          "zero": 18
+        },
+        "translated_fixed_rank": 406,
+        "unique_sign_markers": 27
+      },
+      {
+        "axis_conflict_qubits": 864,
+        "base_Wilson_rank_increment": 3,
+        "base_fixed_rank": 3241,
+        "base_triplet_is_bounded_neighborhood_E": false,
+        "base_triplet_maximum_single_Wilson_weight": 39,
+        "base_triplet_parallel_preparation_depth_bound": 6,
+        "base_triplet_rooted_path_physical_L1_diameter": 192,
+        "base_triplet_seed_maximum_residual": 0.0,
+        "base_triplet_support_union_weight": 105,
+        "base_triplet_total_local_gate_count_bound": 111,
+        "base_triplet_unique_sign_markers": 3,
+        "block_roles_without_conflict": 0,
+        "boundary_sign_sheet_is_supplied": true,
+        "cells": 216,
+        "conflicts_outside_four_M2_blocks": 0,
+        "crossing_block_circuit": "per cell: H(q0), CNOT(q0,q1), S(q1), H(q2), CNOT(q2,q3), S(q3)",
+        "delete_one_base_marker_residual": 2.0,
+        "expected_four_conflict_M2_per_cell": 864,
+        "expected_translated_Wilson_loops": 108,
+        "four_M2_crossing_blocks": 216,
+        "length": 6,
+        "local_constraint_rank": 3238,
+        "local_constraint_seed_expectations": {
+          "minus_one": 0,
+          "other": 0,
+          "plus_one": 0,
+          "zero": 5184
+        },
+        "macro_origin_or_axis_free": false,
+        "marker_failures": 0,
+        "marker_owner_axis_coordinates": {
+          "0": [
+            0
+          ],
+          "1": [
+            0
+          ],
+          "2": [
+            0
+          ]
+        },
+        "maximum_Wilson_expectation_residual": 1.0,
+        "maximum_crossing_block_physical_L1_diameter": 8,
+        "maximum_elementary_preparation_gate_support": 2,
+        "phase_inconsistencies": 0,
+        "replicated_fixed_defect_seed_closes_all_translated_loops": false,
+        "seed_is_full_fixed_code_state": false,
+        "single_M2_axis_preparations": 3888,
+        "translated_Wilson_loops": 108,
+        "translated_Wilson_pair_anticommutations": 0,
+        "translated_Wilson_rank_increment": 3,
+        "translated_factor_seed_expectation_counts": {
+          "minus_one": 0,
+          "other": 0,
+          "plus_one": 36,
+          "zero": 72
+        },
+        "translated_fixed_rank": 3241,
+        "unique_sign_markers": 108
+      },
+      {
+        "axis_conflict_qubits": 1372,
+        "base_Wilson_rank_increment": 3,
+        "base_fixed_rank": 5146,
+        "base_triplet_is_bounded_neighborhood_E": false,
+        "base_triplet_maximum_single_Wilson_weight": 45,
+        "base_triplet_parallel_preparation_depth_bound": 6,
+        "base_triplet_rooted_path_physical_L1_diameter": 224,
+        "base_triplet_seed_maximum_residual": 0.0,
+        "base_triplet_support_union_weight": 123,
+        "base_triplet_total_local_gate_count_bound": 129,
+        "base_triplet_unique_sign_markers": 3,
+        "block_roles_without_conflict": 0,
+        "boundary_sign_sheet_is_supplied": true,
+        "cells": 343,
+        "conflicts_outside_four_M2_blocks": 0,
+        "crossing_block_circuit": "per cell: H(q0), CNOT(q0,q1), S(q1), H(q2), CNOT(q2,q3), S(q3)",
+        "delete_one_base_marker_residual": 2.0,
+        "expected_four_conflict_M2_per_cell": 1372,
+        "expected_translated_Wilson_loops": 147,
+        "four_M2_crossing_blocks": 343,
+        "length": 7,
+        "local_constraint_rank": 5143,
+        "local_constraint_seed_expectations": {
+          "minus_one": 0,
+          "other": 0,
+          "plus_one": 0,
+          "zero": 8232
+        },
+        "macro_origin_or_axis_free": false,
+        "marker_failures": 0,
+        "marker_owner_axis_coordinates": {
+          "0": [
+            0
+          ],
+          "1": [
+            0
+          ],
+          "2": [
+            0
+          ]
+        },
+        "maximum_Wilson_expectation_residual": 1.0,
+        "maximum_crossing_block_physical_L1_diameter": 8,
+        "maximum_elementary_preparation_gate_support": 2,
+        "phase_inconsistencies": 0,
+        "replicated_fixed_defect_seed_closes_all_translated_loops": false,
+        "seed_is_full_fixed_code_state": false,
+        "single_M2_axis_preparations": 6174,
+        "translated_Wilson_loops": 147,
+        "translated_Wilson_pair_anticommutations": 0,
+        "translated_Wilson_rank_increment": 3,
+        "translated_factor_seed_expectation_counts": {
+          "minus_one": 0,
+          "other": 0,
+          "plus_one": 49,
+          "zero": 98
+        },
+        "translated_fixed_rank": 5146,
+        "unique_sign_markers": 147
+      }
+    ]
+  },
+  "route_B_reversible_local_ancilla": {
+    "autonomous_runtime_sector_query": false,
+    "data_M2": 4,
+    "deleted_link_exchange_signal": 1.4142135623730951,
+    "edge_EG_residual": 1.1102230246251565e-16,
+    "encoding_isometry_residual": 2.220446049250313e-16,
+    "encoding_shape": [
+      256,
+      8
+    ],
+    "exchange_EG_residual": 1.1102230246251565e-16,
+    "exchange_leakage_residual": 1.3401577416544657e-16,
+    "link_M2": 4,
+    "literal_one_two_M2_factorization_of_controlled_preparation": false,
+    "maximum_synthesized_unitary_support": 8,
+    "pass": true,
+    "periodic_shared_link_extension_constructed": false,
+    "preparation_residual": 1.1102230246251565e-16,
+    "preparation_unitarity_residual": 2.220446049250313e-16,
+    "prepare_update_unprepare_residual": 2.220446049250313e-16,
+    "route_status": "EXACT_REVERSIBLE_ONE_PLAQUETTE_DATA_LINK_ENCODER__ELEMENTARY_AND_PERIODIC_EXTENSION_OPEN",
+    "total_M2_per_plaquette": 8
+  },
+  "route_C_local_measurement_reset": {
+    "all_independent_local_generators_pumped": false,
+    "bounded_layouts": [
+      {
+        "B_FSWAP_blocks_per_cell": 3.0,
+        "frame_position_failures": 0,
+        "length": 3,
+        "maximum_B_FSWAP_block_M2_support": 13,
+        "maximum_B_FSWAP_block_physical_L1_diameter": 32,
+        "maximum_gauge_generator_physical_L1_diameter": 40,
+        "maximum_local_constraint_physical_L1_diameter": 64,
+        "maximum_matter_generator_physical_L1_diameter": 32,
+        "pass": true,
+        "period": 96,
+        "physical_M2": 594,
+        "physical_M2_per_cell": 22.0,
+        "placement_collisions": 0,
+        "proper_cubic_frames": 24
+      },
+      {
+        "B_FSWAP_blocks_per_cell": 3.0,
+        "frame_position_failures": 0,
+        "length": 6,
+        "maximum_B_FSWAP_block_M2_support": 13,
+        "maximum_B_FSWAP_block_physical_L1_diameter": 32,
+        "maximum_gauge_generator_physical_L1_diameter": 40,
+        "maximum_local_constraint_physical_L1_diameter": 64,
+        "maximum_matter_generator_physical_L1_diameter": 32,
+        "pass": true,
+        "period": 192,
+        "physical_M2": 4752,
+        "physical_M2_per_cell": 22.0,
+        "placement_collisions": 0,
+        "proper_cubic_frames": 24
+      },
+      {
+        "B_FSWAP_blocks_per_cell": 3.0,
+        "frame_position_failures": 0,
+        "length": 7,
+        "maximum_B_FSWAP_block_M2_support": 13,
+        "maximum_B_FSWAP_block_physical_L1_diameter": 32,
+        "maximum_gauge_generator_physical_L1_diameter": 40,
+        "maximum_local_constraint_physical_L1_diameter": 64,
+        "maximum_matter_generator_physical_L1_diameter": 32,
+        "pass": true,
+        "period": 224,
+        "physical_M2": 7546,
+        "physical_M2_per_cell": 22.0,
+        "placement_collisions": 0,
+        "proper_cubic_frames": 24
+      }
+    ],
+    "full_periodic_E_prepared": false,
+    "held_L6_L7_pump_executed": false,
+    "host_side_sector_selection": false,
+    "mass_contact_logical_seam_fixture": {
+      "Cycle219_mass_fixture_residual": 2.220446049250313e-16,
+      "Cycle230_contact_active_two_particle_states": 15,
+      "Cycle230_contact_deletion_residual": 0.36789306705608243,
+      "Cycle230_seam_singular_values": [
+        0.49577140670498115,
+        0.45566604871445016
+      ],
+      "Cycle230_seam_subchecks": {
+        "fail": 0,
+        "pass": 6
+      },
+      "Cycle523_full_M64_onsite_pass": true,
+      "correlated_shadow_coin_and_reverse_A_transition_synthesized": false,
+      "full_update_physical_intertwiner_claimed": false,
+      "interpretation": "re-executed logical comparators; preservation follows conditionally through the faithful fixed-spin matter factor, not through a prepared E circuit",
+      "onsite_intertwiner_residual": 5.272182555577386e-15,
+      "onsite_inverse_residual": 7.504184205291937e-15,
+      "onsite_leakage_residual": 0.0,
+      "pass": true,
+      "rough_code_mass_contact_seam_matrix_enumerated": false
+    },
+    "measurement_outcome_used_only_locally": true,
+    "pass": true,
+    "pump_if_Wilson_preservation_is_deleted": {
+      "Kraus_completeness_for_each_resolved_generator": true,
+      "Wilson_commutation_required": false,
+      "additional_weight_two_diameter_at_most_64_duals": 61,
+      "candidate_single_M2_Paulis": 1782,
+      "independent_local_generators": 403,
+      "length": 3,
+      "maximum_used_pair_diameter": 44,
+      "unresolved_generators": 173,
+      "weight_one_isolated_duals": 169
+    },
+    "route_status": "ATTEMPTED_L3_LOCAL_RESET_DUALS__INCOMPLETE_GENERATOR_COVERAGE",
+    "sector_preserving_parallel_pump": {
+      "Kraus_completeness_for_each_resolved_generator": true,
+      "Wilson_commutation_required": true,
+      "additional_weight_two_diameter_at_most_64_duals": 61,
+      "candidate_single_M2_Paulis": 1782,
+      "independent_local_generators": 403,
+      "length": 3,
+      "maximum_used_pair_diameter": 44,
+      "unresolved_generators": 173,
+      "weight_one_isolated_duals": 169
+    }
+  },
+  "route_by_route_disposition": {
+    "A": "ATTEMPTED_REPLICATED_FIXED_DEFECT_FAIL__POSITIVE_ROOTED_BASE_TRIPLET_SEED",
+    "B": "EXACT_REVERSIBLE_ONE_PLAQUETTE_DATA_LINK_ENCODER__ELEMENTARY_AND_PERIODIC_EXTENSION_OPEN",
+    "C": "ATTEMPTED_L3_LOCAL_RESET_DUALS__INCOMPLETE_GENERATOR_COVERAGE"
+  },
+  "runner_sha256": "41a29d1ddc4f38b49bf8822b45b4bb62fc8b6e98231905a990863e714a5c87bd",
+  "runtime_global_query": false,
+  "scope_firewall": {
+    "Wilson_eigenstate_is_full_fixed_code_E": false,
+    "factor_order_is_time": false,
+    "gauge_seed_is_Record": false,
+    "generator_is_rate": false,
+    "logical_seam_fixture_is_literal_full_rough_code_seam_matrix": false,
+    "partial_L3_reset_coverage_is_held_size_preparation": false,
+    "phase_is_energy": false,
+    "replicated_fixed_defect_seed_closes_translated_family": false,
+    "rooted_path_seed_is_bounded_neighborhood_or_autonomous_genesis": false,
+    "source_or_gravity_claimed": false,
+    "support_eight_unitary_is_elementary_one_two_M2_circuit": false
+  },
+  "shared_obstruction_claim": false,
+  "shared_route_independent_obstruction": false,
+  "shore": {
+    "Cycle641_Wilson_rank_increments": [
+      3,
+      3,
+      3
+    ],
+    "Cycle641_alternate_path_residual": 0.0,
+    "Cycle641_audit": "unset",
+    "Cycle641_authority": "none",
+    "Cycle641_axiom_pressure": false,
+    "Cycle641_local_plaquette_closed": true,
+    "Cycle641_pass": true,
+    "Cycle641_periodic_closed": false,
+    "hashes_match": true,
+    "immutable_shore_ref": "40e8b5718ee92c0e1d0ec41386c0ff9cc84aefac",
+    "observed": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_TWISTED_CHARGE_RIBBON_AUXILIARY_LINK_GAUGE_CYCLE641_NOTE_2026-07-23.md": "506dc7947aeb9ebd1c3c03ecad2f845931be35b9147ec1c1e08eb4883e70a705",
+      "outputs/physical_twisted_charge_ribbon_auxiliary_link_gauge_cycle641_cold_2026_07_23.txt": "873c389ffb4f834e1ac342c3362f02135b6df4c776e043901c06d3c14681e355",
+      "outputs/physical_twisted_charge_ribbon_auxiliary_link_gauge_cycle641_receipt_2026_07_23.json": "936532e57e78ac4c042f64bc967e8aeaf166659357a8378a26a5425f22f4efa1",
+      "scripts/exact_3d_higher_form_bosonization_cycle235_2026_07_17.py": "dd955ce629cde5e225b625be89f5f71045d688083a032b7bf104efa9b3f1bb34",
+      "scripts/local_rough_puncture_odd_sector_cycle247_2026_07_17.py": "10f5cf027c76f5a0a3b1d3dbaa6cb0e6d418932c84553f0cca303d3f21742519",
+      "scripts/physical_rough_gauge_subsystem_quotient_cycle532_2026_07_21.py": "8bf1c836661b4c902d09cf2f7d147b07c3083404569ce9bc0a2b3dd4820233da",
+      "scripts/physical_twisted_charge_ribbon_auxiliary_link_gauge_cycle641_2026_07_23.py": "17b8c95c8cc6e2b04723c97c394722a2aeb4a1f5fe45259dc28181ec7927292b"
+    },
+    "working_tree_bytes_used_as_scientific_premise": false
+  },
+  "six_wall_ledger": {
+    "C_int": "Cycle219 mass, Cycle230 contact/logical seam and Cycle641 local exchange are preserved as pinned comparators, not a new full physical update",
+    "C_local": "advanced on spin-sector seed and local reversible plaquette; route C leaves explicit unresolved L3 generators and no held pump",
+    "C_num": "unchanged: local even-CAR and reversible eight-M2 plaquette surfaces are exact; full periodic E remains open",
+    "C_ref": "narrowed: the displayed triplet has an exact locally gated but growing rooted-path seed; the replicated per-cell translated seed fails; axes, origin, paths, markers and L parity are supplied",
+    "C_source": "unchanged: no energy, rate, source, stress, gravity, Record or autonomous resource genesis",
+    "C_wrap": "narrowed: no growing-support Wilson operation is needed for the displayed triplet, but rooted path extent grows; replicated genesis, local-stabilizer preparation and literal seam-matrix EG remain open"
+  },
+  "status": "cycle644-bounded-spin-sector-genesis-tournament",
+  "strongest_constructive_result": "the displayed three Wilson signs have residual-0 locally gated seeds on L3/L6/L7 using one diameter-8 crossing block, single-M2 factors along three supplied rooted noncontractible paths, and three markers; route B gives exact one-plaquette reversible unpreparation",
+  "supplied_structure": [
+    "compile-time L and L parity",
+    "three coordinate axes, macro-origin and three rooted noncontractible paths",
+    "one four-M2 crossing block and three sign markers for the exact base triplet",
+    "four named internal-face roles per cell for the failed replicated tensor test",
+    "single-M2 axis eigenstates along rooted and translated Wilson supports",
+    "Cycle247 rough-terminal face graph",
+    "Cycle532 fixed-code layout, constraints and mapped runtime",
+    "Cycle641 local Q=+1 plaquette encoding and update",
+    "route B support-eight controlled preparation synthesis",
+    "route C selected independent L3 stabilizer basis and local syndrome feed-forward"
+  ],
+  "tests_failed": 0,
+  "tests_passed": 8
+}

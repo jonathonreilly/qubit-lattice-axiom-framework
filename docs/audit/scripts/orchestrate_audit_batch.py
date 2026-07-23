@@ -85,6 +85,10 @@ CAMPAIGN_EXCLUSION_RESULTS = {
     COMPUTE_QUARANTINE_RESULT,
     CLAIM_TRANSACTION_QUARANTINE_RESULT,
 }
+CAMPAIGN_EXCLUSION_REASONS = {
+    SCHEMA_QUARANTINE_RESULT,
+    *CAMPAIGN_EXCLUSION_RESULTS,
+}
 SCIENCE_FIX_RESULTS = {"science_fix_dispatched", "science_fix_dispatch_failed"}
 MIN_DELIVERY_BYTES = 200
 PACKET_COMPLETION_STALL_SECONDS = 20 * 60
@@ -1509,9 +1513,29 @@ def reset_to_origin_main() -> tuple[bool, str]:
     )
     if reset.returncode != 0:
         return False, f"reset failed: {(reset.stderr or reset.stdout).strip()[:240]}"
-    error = clean_main_error(honor_cancel=False)
-    if error is not None:
-        return False, error
+    branch = sh(
+        ["git", "rev-parse", "--abbrev-ref", "HEAD"],
+        honor_cancel=False,
+    )
+    if branch.returncode != 0:
+        return False, "cannot determine current branch after rollback"
+    if branch.stdout.strip() != "main":
+        return False, (
+            "rollback did not leave main checked out "
+            f"({branch.stdout.strip()!r})"
+        )
+    status = sh(
+        ["git", "status", "--porcelain"],
+        honor_cancel=False,
+    )
+    if status.returncode != 0:
+        return False, "cannot determine worktree status after rollback"
+    if status.stdout.strip():
+        # The normal main guard can tolerate one mechanically recognized
+        # lane-certification provenance drift. Transaction rollback cannot:
+        # quarantine is permitted only after reset proves literal zero-diff
+        # source and generated state.
+        return False, "rollback did not leave a literally clean worktree"
     head = sh(["git", "rev-parse", "HEAD"], honor_cancel=False)
     remote = sh(["git", "rev-parse", "origin/main"], honor_cancel=False)
     if head.returncode != 0 or remote.returncode != 0:
@@ -1763,6 +1787,19 @@ def launch_science_fix_worker(
     return proc.pid, handoff_path, log_path
 
 
+def _campaign_json_object(pairs: list[tuple[str, object]]) -> dict:
+    record: dict = {}
+    for key, value in pairs:
+        if key in record:
+            raise ValueError(f"duplicate JSON key {key!r}")
+        record[key] = value
+    return record
+
+
+def _reject_campaign_json_constant(value: str) -> None:
+    raise ValueError(f"non-finite JSON value {value!r}")
+
+
 def load_campaign_exclusion_records(path: Path | None) -> list[dict]:
     if path is None or not path.exists():
         return []
@@ -1772,13 +1809,23 @@ def load_campaign_exclusion_records(path: Path | None) -> list[dict]:
         start=1,
     ):
         if not line.strip():
-            continue
+            raise ValueError(
+                f"{path}:{line_number}: blank campaign exclusion record"
+            )
         try:
-            record = json.loads(line)
+            record = json.loads(
+                line,
+                object_pairs_hook=_campaign_json_object,
+                parse_constant=_reject_campaign_json_constant,
+            )
         except json.JSONDecodeError as exc:
             raise ValueError(
                 f"{path}:{line_number}: invalid campaign exclusion JSON: "
                 f"{exc.msg}"
+            ) from exc
+        except ValueError as exc:
+            raise ValueError(
+                f"{path}:{line_number}: invalid campaign exclusion JSON: {exc}"
             ) from exc
         if not isinstance(record, dict):
             raise ValueError(
@@ -1794,6 +1841,65 @@ def load_campaign_exclusion_records(path: Path | None) -> list[dict]:
             raise ValueError(
                 f"{path}:{line_number}: campaign exclusion has no reason"
             )
+        if reason not in CAMPAIGN_EXCLUSION_REASONS:
+            raise ValueError(
+                f"{path}:{line_number}: unrecognized campaign exclusion "
+                f"reason {reason!r}"
+            )
+        common_fields = {"claim_id", "reason", "recorded_at"}
+        if reason == BLOCKED_ROW_QUARANTINE_RESULT:
+            expected_fields = common_fields | {"invalidation_reason"}
+        else:
+            expected_fields = common_fields | {"failures"}
+        if set(record) != expected_fields:
+            missing = sorted(expected_fields - set(record))
+            unexpected = sorted(set(record) - expected_fields)
+            raise ValueError(
+                f"{path}:{line_number}: invalid campaign exclusion fields "
+                f"(missing={missing}, unexpected={unexpected})"
+            )
+        if cid.strip() != cid:
+            raise ValueError(
+                f"{path}:{line_number}: campaign exclusion claim_id is not canonical"
+            )
+        recorded_at = record["recorded_at"]
+        if not isinstance(recorded_at, str) or not recorded_at:
+            raise ValueError(
+                f"{path}:{line_number}: campaign exclusion has no recorded_at"
+            )
+        try:
+            timestamp = datetime.fromisoformat(recorded_at)
+        except ValueError as exc:
+            raise ValueError(
+                f"{path}:{line_number}: campaign exclusion recorded_at "
+                "is not ISO-8601"
+            ) from exc
+        if timestamp.tzinfo is None or timestamp.utcoffset() is None:
+            raise ValueError(
+                f"{path}:{line_number}: campaign exclusion recorded_at "
+                "has no timezone"
+            )
+        if reason == BLOCKED_ROW_QUARANTINE_RESULT:
+            invalidation_reason = record["invalidation_reason"]
+            if (
+                not isinstance(invalidation_reason, str)
+                or not invalidation_reason.strip()
+            ):
+                raise ValueError(
+                    f"{path}:{line_number}: blocked-row exclusion has no "
+                    "invalidation_reason"
+                )
+        else:
+            failures = record["failures"]
+            if (
+                not isinstance(failures, list)
+                or not failures
+                or not all(isinstance(item, dict) for item in failures)
+            ):
+                raise ValueError(
+                    f"{path}:{line_number}: campaign exclusion failures "
+                    "must be a non-empty list of objects"
+                )
         records.append(record)
     return records
 

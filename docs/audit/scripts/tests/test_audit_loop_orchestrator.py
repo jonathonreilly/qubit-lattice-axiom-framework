@@ -860,8 +860,16 @@ class SchemaRecoveryTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "quarantine.jsonl"
             path.write_text(
-                '{"claim_id":"kept","reason":"schema_invalid_quarantined"}\n'
-                '{"claim_id":"torn"',
+                json.dumps(
+                    {
+                        "claim_id": "kept",
+                        "reason": batch.SCHEMA_QUARANTINE_RESULT,
+                        "failures": [{"result": "validation_failed"}],
+                        "recorded_at": "2026-07-23T12:00:00+00:00",
+                    }
+                )
+                + "\n"
+                + '{"claim_id":"torn"',
                 encoding="utf-8",
             )
             with self.assertRaisesRegex(
@@ -878,6 +886,41 @@ class SchemaRecoveryTest(unittest.TestCase):
                     "invalid campaign exclusion JSON",
                 ):
                     audit_loop.campaign_exclusion_counts()
+
+    def test_campaign_state_loader_rejects_corrupt_schema_variants(self):
+        valid_tail = (
+            '"reason":"schema_invalid_quarantined",'
+            '"failures":[{"result":"validation_failed"}],'
+            '"recorded_at":"2026-07-23T12:00:00+00:00"'
+        )
+        cases = {
+            "blank": ("\n", "blank campaign exclusion record"),
+            "duplicate": (
+                '{"claim_id":"first","claim_id":"second",' + valid_tail + "}\n",
+                "duplicate JSON key",
+            ),
+            "unknown reason": (
+                '{"claim_id":"row","reason":"unknown_quarantine",'
+                '"failures":[{"result":"validation_failed"}],'
+                '"recorded_at":"2026-07-23T12:00:00+00:00"}\n',
+                "unrecognized campaign exclusion reason",
+            ),
+            "invalid fields": (
+                '{"claim_id":"row",' + valid_tail + ',"typo":[]}\n',
+                "invalid campaign exclusion fields",
+            ),
+            "invalid failures": (
+                '{"claim_id":"row","reason":"schema_invalid_quarantined",'
+                '"failures":[],"recorded_at":"2026-07-23T12:00:00+00:00"}\n',
+                "failures must be a non-empty list",
+            ),
+        }
+        for label, (payload, expected) in cases.items():
+            with self.subTest(label=label), tempfile.TemporaryDirectory() as tmp:
+                path = Path(tmp) / "quarantine.jsonl"
+                path.write_text(payload, encoding="utf-8")
+                with self.assertRaisesRegex(ValueError, expected):
+                    batch.load_campaign_quarantine(path)
 
     def test_apply_gate_failure_continues_after_explicit_verified_rollback(self):
         job = {
@@ -1855,6 +1898,24 @@ class ClaimTransactionTest(unittest.TestCase):
 
         self.assertFalse(ok)
         self.assertIn("HEAD synchronized with origin/main", detail)
+
+    def test_reset_to_origin_main_rejects_recognizable_provenance_drift(self):
+        target_oid = "a" * 40
+        commands = [
+            mock.Mock(returncode=0, stdout=f"{target_oid}\n", stderr=""),
+            mock.Mock(returncode=0, stdout="", stderr=""),
+            mock.Mock(returncode=0, stdout="main\n", stderr=""),
+            mock.Mock(
+                returncode=0,
+                stdout=f" M {batch.LANE_CERTIFICATION_PATH}\n",
+                stderr="",
+            ),
+        ]
+        with mock.patch.object(batch, "sh", side_effect=commands):
+            ok, detail = batch.reset_to_origin_main()
+
+        self.assertFalse(ok)
+        self.assertIn("literally clean worktree", detail)
 
     def test_apply_rejection_is_global_when_reset_cannot_be_verified(self):
         delivery = [(

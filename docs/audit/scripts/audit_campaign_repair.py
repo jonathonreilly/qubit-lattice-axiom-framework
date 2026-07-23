@@ -19,37 +19,17 @@ REPO_ROOT = SCRIPTS.parents[2]
 sys.path.insert(0, str(SCRIPTS))
 
 import ledger_io  # noqa: E402
+import orchestrate_audit_batch as batch  # noqa: E402
 
 
-SCHEMA_QUARANTINE = "schema_invalid_quarantined"
-COMPUTE_QUARANTINE = "compute_required_quarantined"
-TRANSACTION_QUARANTINE = "claim_transaction_quarantined"
-BLOCKED_REENTRY = "blocked_row_reentry_quarantined"
+SCHEMA_QUARANTINE = batch.SCHEMA_QUARANTINE_RESULT
+COMPUTE_QUARANTINE = batch.COMPUTE_QUARANTINE_RESULT
+TRANSACTION_QUARANTINE = batch.CLAIM_TRANSACTION_QUARANTINE_RESULT
+BLOCKED_REENTRY = batch.BLOCKED_ROW_QUARANTINE_RESULT
 
 
 def load_exclusions(path: Path) -> list[dict]:
-    records: list[dict] = []
-    for line_number, line in enumerate(
-        path.read_text(encoding="utf-8").splitlines(), start=1
-    ):
-        if not line.strip():
-            continue
-        try:
-            record = json.loads(line)
-        except json.JSONDecodeError as exc:
-            raise ValueError(
-                f"{path}:{line_number}: invalid JSON: {exc.msg}"
-            ) from exc
-        if not isinstance(record, dict):
-            raise ValueError(f"{path}:{line_number}: record is not an object")
-        claim_id = record.get("claim_id")
-        reason = record.get("reason")
-        if not isinstance(claim_id, str) or not claim_id:
-            raise ValueError(f"{path}:{line_number}: missing claim_id")
-        if not isinstance(reason, str) or not reason:
-            raise ValueError(f"{path}:{line_number}: missing reason")
-        records.append(record)
-    return records
+    return batch.load_campaign_exclusion_records(path)
 
 
 def repair_route(record: dict, row: dict | None) -> dict:
@@ -186,7 +166,7 @@ def main(argv: list[str] | None = None) -> int:
     try:
         exclusions = load_exclusions(path)
         rows = ledger_io.load_ledger().get("rows", {})
-    except (OSError, ValueError, json.JSONDecodeError) as exc:
+    except (OSError, ValueError) as exc:
         parser.error(str(exc))
     plan = build_plan(exclusions, rows)
     if args.json:

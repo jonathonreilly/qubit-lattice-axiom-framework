@@ -17,7 +17,7 @@ class CampaignRepairTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "campaign-row-exclusions.jsonl"
             path.write_text('{"claim_id":"row"}\n', encoding="utf-8")
-            with self.assertRaisesRegex(ValueError, "missing reason"):
+            with self.assertRaisesRegex(ValueError, "has no reason"):
                 repair.load_exclusions(path)
 
     def test_routes_operational_exclusions_without_minting_verdicts(self):

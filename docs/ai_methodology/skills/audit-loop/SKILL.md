@@ -327,6 +327,15 @@ failures. This boundary is fail-closed and does not weaken any audit gate.
   campaign state, unavailable required audit model, authentication failure
   after bounded retry, or an applyability/policy defect that cannot be scoped
   to one row. Preserve artifacts and stop before minting authority.
+- Treat the campaign exclusion JSONL as a closed operational schema. Reject
+  blank records, duplicate JSON keys, unknown exclusion reasons, noncanonical
+  claim ids, missing reason-specific evidence, malformed timestamps, and
+  unexpected fields. A damaged record must hard-stop the whole campaign
+  rather than silently suppressing a claim.
+- Transaction rollback proof is stricter than the normal main-checkout guard:
+  after resetting to the captured `origin/main` OID, require literal empty
+  `git status --porcelain` plus exact local/remote OID equality. The narrowly
+  tolerated lane-certification provenance drift is not clean rollback proof.
 
 If the product surface supports a persistent goal, use it as a watchdog around
 the detached canonical drainer, not as a replacement for the drainer. The goal

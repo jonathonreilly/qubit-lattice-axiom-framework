@@ -1328,10 +1328,6 @@
           "effective_status": "unaudited"
         },
         {
-          "claim_id": "koide_circulant_wilson_target_note_2026-04-18",
-          "effective_status": "audit_in_progress"
-        },
-        {
           "claim_id": "koide_emergent_time_eta_conjugation_parity_bounded_note_2026-05-30",
           "effective_status": "audited_conditional"
         },
@@ -2756,7 +2752,7 @@
       "roots": [
         "strong_cp_theta_zero_note"
       ],
-      "uncertified_count": 632
+      "uncertified_count": 631
     }
   ],
   "schema": "lane_certification_v2"

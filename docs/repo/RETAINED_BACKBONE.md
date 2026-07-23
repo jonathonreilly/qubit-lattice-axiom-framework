@@ -16,12 +16,12 @@ file per claim), summarized in
 
 | Metric | Value |
 |---|---:|
-| Retained positive rows | 93 |
+| Retained positive rows | 94 |
 | Retained bounded rows | 314 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 18 |
 
-## Retained positive rows (93)
+## Retained positive rows (94)
 
 Sorted by load-bearing graph score (descending).
 
@@ -62,6 +62,7 @@ Sorted by load-bearing graph score (descending).
 - [`universal_gr_supermetric_normal_form_note`](../../docs/UNIVERSAL_GR_SUPERMETRIC_NORMAL_FORM_NOTE.md) — score 11.562; audited 2026-05-07T01:31:04.953494+00:00
 - [`three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10`](../../docs/THREE_GENERATION_OBSERVABLE_M3C_BURNSIDE_NARROW_THEOREM_NOTE_2026-05-10.md) — score 11.524; audited 2026-07-12T19:21:35.332691+00:00
 - [`hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10`](../../docs/HIERARCHY_DIMENSIONAL_FOURTH_ROOT_COMPRESSION_NARROW_THEOREM_NOTE_2026-05-10.md) — score 11.512; audited 2026-07-22T19:33:03.631121+00:00
+- [`koide_circulant_wilson_target_note_2026-04-18`](../../docs/KOIDE_CIRCULANT_WILSON_TARGET_NOTE_2026-04-18.md) — score 11.506; audited 2026-07-23T14:58:23.522618+00:00
 - [`record_clock_rate_normalization_gate_2026-06-06`](../../docs/RECORD_CLOCK_RATE_NORMALIZATION_GATE_2026-06-06.md) — score 11.504; audited 2026-07-22T20:28:51.446526+00:00
 - [`staggered_graph_portability_note`](../../docs/STAGGERED_GRAPH_PORTABILITY_NOTE.md) — score 11.170; audited 2026-05-05T06:31:24.580329+00:00
 - [`cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19`](../../docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md) — score 10.996; audited 2026-05-29T02:03:27.054059+00:00

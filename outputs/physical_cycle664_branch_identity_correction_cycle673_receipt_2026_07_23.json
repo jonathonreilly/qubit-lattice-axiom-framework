@@ -1,0 +1,362 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "breakthrough": false,
+  "comparisons": [
+    {
+      "Cycle662_tracked_theta": 0.3138499846547214,
+      "Cycle664_branch_abs_value": 1.486380915539482e-10,
+      "Cycle664_eigen_update_residual": 8.037145548577513e-12,
+      "Cycle664_selected_theta": 0.2999807926704712,
+      "L": 9,
+      "absolute_phase_delta": 0.01386919198425024,
+      "beta": -0.3,
+      "label": "train",
+      "same_tracked_branch_within_frozen_tolerance": false
+    },
+    {
+      "Cycle662_tracked_theta": 0.313690460920994,
+      "Cycle664_branch_abs_value": 6.476588094907856e-10,
+      "Cycle664_eigen_update_residual": 1.2089897600200166e-11,
+      "Cycle664_selected_theta": 0.29199854795719715,
+      "L": 13,
+      "absolute_phase_delta": 0.021691912963796856,
+      "beta": -0.3,
+      "label": "held_size",
+      "same_tracked_branch_within_frozen_tolerance": false
+    },
+    {
+      "Cycle662_tracked_theta": 0.35901040319558253,
+      "Cycle664_branch_abs_value": 2.4587952275993994e-11,
+      "Cycle664_eigen_update_residual": 2.696046236093973e-12,
+      "Cycle664_selected_theta": 0.359010403193849,
+      "L": 9,
+      "absolute_phase_delta": 1.7335022306497194e-12,
+      "beta": -0.35,
+      "label": "held_beta",
+      "same_tracked_branch_within_frozen_tolerance": true
+    },
+    {
+      "Cycle662_tracked_theta": 0.35816143974085607,
+      "Cycle664_branch_abs_value": 1.101058171161395e-10,
+      "Cycle664_eigen_update_residual": 3.9453304725379195e-12,
+      "Cycle664_selected_theta": 0.27800714562884554,
+      "L": 13,
+      "absolute_phase_delta": 0.08015429411201053,
+      "beta": -0.35,
+      "label": "held_both",
+      "same_tracked_branch_within_frozen_tolerance": false
+    }
+  ],
+  "constitutional_effect": "none",
+  "corrected_claims": {
+    "open": [
+      "branch-tracked infinite-volume isolation/width and rigorous contact-cyclic theorem",
+      "autonomous preparation of the corrected branch eigenvectors",
+      "physical two-line clock, tick-to-echo association, renewal, proper time, source and gravity"
+    ],
+    "retain": [
+      "all four Cycle664 roots are exact finite-volume A2 eigenzeros on their declared periodic boxes",
+      "Cycle664 local-isolation, normalized eigenstate, cavity Ritz, and contact-deletion residuals",
+      "the L9 beta=-0.35 Cycle664 root agrees post hoc with the branch-tracked row",
+      "Cycle662 branch-tracked L9-L21 and held-species line evidence plus its declared error/method boundaries"
+    ],
+    "withdraw": [
+      "identifying the Cycle664 train L9 beta=-0.30 root 0.29998079 as the recurring second A2 line",
+      "identifying the Cycle664 held-size L13 beta=-0.30 root 0.29199855 as that branch",
+      "identifying the Cycle664 held-both L13 beta=-0.35 root 0.27800715 as the held-species branch",
+      "using the four Cycle664 selected eigenvectors as the physical two-level preparation targets"
+    ]
+  },
+  "cycle": 673,
+  "date": "2026-07-23",
+  "elapsed_seconds": 0.0022057919995859265,
+  "match_tolerance": 5e-05,
+  "n1_n8": {
+    "N1_alternative_routes": [
+      "Cycle664 global-minimum continuum-window zero selection",
+      "Cycle662 branch-tracked cross-L continuation",
+      "two-line word peak",
+      "masked-cavity contact deletion",
+      "held-beta crossing"
+    ],
+    "N2_wall_independence": "branch identity, finite-box eigenzero existence, continuum theorem, preparation, and clock association are separate",
+    "N3_hidden_walls": [
+      "many razor-thin finite-L zeros inside the continuum",
+      "worker-grid branch labels",
+      "amplitude-labeled word lines",
+      "absorber boundary dressing"
+    ],
+    "N4_residual_match": "all Cycle664 residuals retained; correction changes identity, not eigenzero arithmetic",
+    "N5_rhetoric": "bounded four-row correction only; no impossibility, minimum-content, energy, clock, or axiom claim",
+    "N6_partial_closure": "correct branch held evidence and lawful two-line word survive while width/preparation/association remain open",
+    "N7_steelman": "a Cycle664 artifact zero may be a genuine box eigenline; that does not make it the recurring branch",
+    "N8_cross_cycle_echo": "Cycle662 explicitly supersedes Cycle629's global-min root and therefore also changes Cycle664's inherited identification",
+    "axiom_pressure": false,
+    "broad_negative": "DO NOT SHIP",
+    "shared_obstruction": false
+  },
+  "note_sha256": "5932990d3cd7efb840253ee93f61765c5a514388b7d8aba6dddfe979091deaee",
+  "pass": true,
+  "pins": {
+    "docs/work_history/repo/review_feedback/PHYSICAL_HELD_A2_SECOND_LINE_VERIFICATION_CYCLE664_NOTE_2026-07-23.md": "bdeed805ba9c187deffa40237dfce971aacdc78d72f849d3248a4632d5d53ff5",
+    "docs/work_history/repo/review_feedback/PHYSICAL_INFINITE_VOLUME_A2_TWO_LINE_VERNIER_TOURNAMENT_CYCLE662_NOTE_2026-07-23.md": "eaac6dfd0246d72d9f76e472fb4ee4a1796c510d149459048595b4ea1db8b08b",
+    "outputs/physical_held_a2_second_line_verification_cycle664_cold_2026_07_23.txt": "a2a57dfecc77b32e4161b99129c21266a8bb2fc99d73d3aea14f338fe2f43575",
+    "outputs/physical_held_a2_second_line_verification_cycle664_receipt_2026_07_23.json": "ec97733cd4c86a06fe2a5816f7e4260760255a4cac8d5c34df2502b6da26e9b2",
+    "outputs/physical_infinite_volume_a2_two_line_vernier_cycle662_worker_grid_2026_07_23.json": "3f4a4cd26e71670b53dbd6925840deabee50ac3c9a34f531e96665e6f8905ead",
+    "outputs/physical_infinite_volume_a2_two_line_vernier_tournament_cycle662_cold_2026_07_23.txt": "228ee66c391f163a0f9b0a516b2317ef5f7b0c44de177325fc5b1100ba5e5177",
+    "outputs/physical_infinite_volume_a2_two_line_vernier_tournament_cycle662_receipt_2026_07_23.json": "66a4379e5225e6651d0863495f9f4a873c50bc31844ffa65341e8f3d2b17f8cf",
+    "scripts/physical_held_a2_second_line_verification_cycle664_2026_07_23.py": "4641d0500fde54cfe1b820c6c7a56772d62cb070a65255f452e6bac77271f741",
+    "scripts/physical_infinite_volume_a2_two_line_vernier_tournament_cycle662_2026_07_23.py": "18232a8cc85c8a6fc102a0bac3c83d7bea89ad337ed8cca2fedd16f78d326567"
+  },
+  "runner_sha256": "7a723dcb75b82aecb31ac5b1a7730b42957afc8cf782ee8ccdbf221622e5cadc",
+  "six_wall_ledger": {
+    "C_int": "corrected preparation target; contact-dressed line evidence retained",
+    "C_local": "unchanged: no physical M2 two-line clock or preparation product",
+    "C_num": "advanced by rowwise identity discriminator; no probability or empirical calibration",
+    "C_ref": "corrected: global-minimum root identity withdrawn in favor of explicit branch tracking",
+    "C_source": "unchanged: no energy, stress, source, or gravity identification",
+    "C_wrap": "unchanged: two-line reconstruction remains retained-data analysis, not physical time"
+  },
+  "status": "Cycle664 branch identity corrected; finite-box eigenzero evidence retained",
+  "target_contract": {
+    "allowed_premises": "byte-pinned Cycle664 quartet; byte-pinned causal-time Cycle662 quartet and independent worker grid; exact JSON arithmetic",
+    "completion_witness": "rowwise phase deltas to the tracked branch, retained finite-box residual audit, cross-L branch stability, and explicit corrected/retained/open claim ledger",
+    "forbidden_weakenings": "discarding Cycle664's exact eigenzeros; calling every continuum-window zero the recurring physical branch; calling a spectral line energy or a clock; hiding C662's two FAIL rows; no-go, minimum-content, or axiom-pressure rhetoric",
+    "outcomes_not_closure": "a corrected branch label is not an infinite-volume spectral theorem, physical clock, preparation law, tick-to-echo association, proper time, source, gravity, Born law, or realized history",
+    "quantifiers_domain": "all four Cycle664 periodic rows: L in {9,13} crossed with beta in {-0.30,-0.35}",
+    "required_edge_cases": "the one coincident L9 beta=-0.35 row; all three nonmatching rows; C662's own 6/2 method-failure status; word and cavity dressing boundaries",
+    "target_statement": "compare every Cycle664 selected positive A2 root with the independently branch-tracked Cycle662 worker grid on the same (L,beta) fixture and correct only the branch-identity claim"
+  },
+  "target_contract_sha256": "778d70ad42a6e6f96a13674d99eb6e72d4526c8216c2374f3745468cb2b04200",
+  "tests": [
+    {
+      "evidence": {
+        "expected": {
+          "docs/work_history/repo/review_feedback/PHYSICAL_HELD_A2_SECOND_LINE_VERIFICATION_CYCLE664_NOTE_2026-07-23.md": "bdeed805ba9c187deffa40237dfce971aacdc78d72f849d3248a4632d5d53ff5",
+          "docs/work_history/repo/review_feedback/PHYSICAL_INFINITE_VOLUME_A2_TWO_LINE_VERNIER_TOURNAMENT_CYCLE662_NOTE_2026-07-23.md": "eaac6dfd0246d72d9f76e472fb4ee4a1796c510d149459048595b4ea1db8b08b",
+          "outputs/physical_held_a2_second_line_verification_cycle664_cold_2026_07_23.txt": "a2a57dfecc77b32e4161b99129c21266a8bb2fc99d73d3aea14f338fe2f43575",
+          "outputs/physical_held_a2_second_line_verification_cycle664_receipt_2026_07_23.json": "ec97733cd4c86a06fe2a5816f7e4260760255a4cac8d5c34df2502b6da26e9b2",
+          "outputs/physical_infinite_volume_a2_two_line_vernier_cycle662_worker_grid_2026_07_23.json": "3f4a4cd26e71670b53dbd6925840deabee50ac3c9a34f531e96665e6f8905ead",
+          "outputs/physical_infinite_volume_a2_two_line_vernier_tournament_cycle662_cold_2026_07_23.txt": "228ee66c391f163a0f9b0a516b2317ef5f7b0c44de177325fc5b1100ba5e5177",
+          "outputs/physical_infinite_volume_a2_two_line_vernier_tournament_cycle662_receipt_2026_07_23.json": "66a4379e5225e6651d0863495f9f4a873c50bc31844ffa65341e8f3d2b17f8cf",
+          "scripts/physical_held_a2_second_line_verification_cycle664_2026_07_23.py": "4641d0500fde54cfe1b820c6c7a56772d62cb070a65255f452e6bac77271f741",
+          "scripts/physical_infinite_volume_a2_two_line_vernier_tournament_cycle662_2026_07_23.py": "18232a8cc85c8a6fc102a0bac3c83d7bea89ad337ed8cca2fedd16f78d326567"
+        },
+        "observed": {
+          "docs/work_history/repo/review_feedback/PHYSICAL_HELD_A2_SECOND_LINE_VERIFICATION_CYCLE664_NOTE_2026-07-23.md": "bdeed805ba9c187deffa40237dfce971aacdc78d72f849d3248a4632d5d53ff5",
+          "docs/work_history/repo/review_feedback/PHYSICAL_INFINITE_VOLUME_A2_TWO_LINE_VERNIER_TOURNAMENT_CYCLE662_NOTE_2026-07-23.md": "eaac6dfd0246d72d9f76e472fb4ee4a1796c510d149459048595b4ea1db8b08b",
+          "outputs/physical_held_a2_second_line_verification_cycle664_cold_2026_07_23.txt": "a2a57dfecc77b32e4161b99129c21266a8bb2fc99d73d3aea14f338fe2f43575",
+          "outputs/physical_held_a2_second_line_verification_cycle664_receipt_2026_07_23.json": "ec97733cd4c86a06fe2a5816f7e4260760255a4cac8d5c34df2502b6da26e9b2",
+          "outputs/physical_infinite_volume_a2_two_line_vernier_cycle662_worker_grid_2026_07_23.json": "3f4a4cd26e71670b53dbd6925840deabee50ac3c9a34f531e96665e6f8905ead",
+          "outputs/physical_infinite_volume_a2_two_line_vernier_tournament_cycle662_cold_2026_07_23.txt": "228ee66c391f163a0f9b0a516b2317ef5f7b0c44de177325fc5b1100ba5e5177",
+          "outputs/physical_infinite_volume_a2_two_line_vernier_tournament_cycle662_receipt_2026_07_23.json": "66a4379e5225e6651d0863495f9f4a873c50bc31844ffa65341e8f3d2b17f8cf",
+          "scripts/physical_held_a2_second_line_verification_cycle664_2026_07_23.py": "4641d0500fde54cfe1b820c6c7a56772d62cb070a65255f452e6bac77271f741",
+          "scripts/physical_infinite_volume_a2_two_line_vernier_tournament_cycle662_2026_07_23.py": "18232a8cc85c8a6fc102a0bac3c83d7bea89ad337ed8cca2fedd16f78d326567"
+        }
+      },
+      "label": "all Cycle664/Cycle662 correction shores are byte exact",
+      "pass": true
+    },
+    {
+      "evidence": {
+        "Cycle662_vernier": [
+          4,
+          2
+        ],
+        "Cycle664": [
+          9,
+          0
+        ]
+      },
+      "label": "upstream evidentiary status is retained rather than laundered",
+      "pass": true
+    },
+    {
+      "evidence": [
+        {
+          "Cycle662_tracked_theta": 0.3138499846547214,
+          "Cycle664_branch_abs_value": 1.486380915539482e-10,
+          "Cycle664_eigen_update_residual": 8.037145548577513e-12,
+          "Cycle664_selected_theta": 0.2999807926704712,
+          "L": 9,
+          "absolute_phase_delta": 0.01386919198425024,
+          "beta": -0.3,
+          "label": "train",
+          "same_tracked_branch_within_frozen_tolerance": false
+        },
+        {
+          "Cycle662_tracked_theta": 0.313690460920994,
+          "Cycle664_branch_abs_value": 6.476588094907856e-10,
+          "Cycle664_eigen_update_residual": 1.2089897600200166e-11,
+          "Cycle664_selected_theta": 0.29199854795719715,
+          "L": 13,
+          "absolute_phase_delta": 0.021691912963796856,
+          "beta": -0.3,
+          "label": "held_size",
+          "same_tracked_branch_within_frozen_tolerance": false
+        },
+        {
+          "Cycle662_tracked_theta": 0.35901040319558253,
+          "Cycle664_branch_abs_value": 2.4587952275993994e-11,
+          "Cycle664_eigen_update_residual": 2.696046236093973e-12,
+          "Cycle664_selected_theta": 0.359010403193849,
+          "L": 9,
+          "absolute_phase_delta": 1.7335022306497194e-12,
+          "beta": -0.35,
+          "label": "held_beta",
+          "same_tracked_branch_within_frozen_tolerance": true
+        },
+        {
+          "Cycle662_tracked_theta": 0.35816143974085607,
+          "Cycle664_branch_abs_value": 1.101058171161395e-10,
+          "Cycle664_eigen_update_residual": 3.9453304725379195e-12,
+          "Cycle664_selected_theta": 0.27800714562884554,
+          "L": 13,
+          "absolute_phase_delta": 0.08015429411201053,
+          "beta": -0.35,
+          "label": "held_both",
+          "same_tracked_branch_within_frozen_tolerance": false
+        }
+      ],
+      "label": "rowwise branch-identity audit resolves one match and three nonmatches",
+      "pass": true
+    },
+    {
+      "evidence": {
+        "max_branch_abs_value": 6.476588094907856e-10,
+        "max_eigen_update_residual": 1.2089897600200166e-11
+      },
+      "label": "Cycle664 finite-box eigenzero evidence remains valid on every row",
+      "pass": true
+    },
+    {
+      "evidence": {
+        "beta=-0.3": {
+          "span": 0.00016885073403383188,
+          "values": [
+            0.3138499846547214,
+            0.3137160119762102,
+            0.313690460920994,
+            0.31368461655970326,
+            0.3136811339206876,
+            0.3136889963830126,
+            0.31368327611198726
+          ]
+        },
+        "beta=-0.35": {
+          "span": 0.0009751630147156742,
+          "values": [
+            0.35901040319558253,
+            0.35816143974085607,
+            0.35803524018086685
+          ]
+        }
+      },
+      "label": "independently tracked branches are cross-L stable on both beta fixtures",
+      "pass": true
+    },
+    {
+      "evidence": {
+        "delta": 0.0002659836944594596,
+        "tracked_limit": 0.31368327611198726,
+        "word_line": 0.3134172924175278
+      },
+      "label": "the independently labeled word peak corroborates the tracked beta=-0.3 branch",
+      "pass": true
+    },
+    {
+      "evidence": {
+        "N1_alternative_routes": [
+          "Cycle664 global-minimum continuum-window zero selection",
+          "Cycle662 branch-tracked cross-L continuation",
+          "two-line word peak",
+          "masked-cavity contact deletion",
+          "held-beta crossing"
+        ],
+        "N2_wall_independence": "branch identity, finite-box eigenzero existence, continuum theorem, preparation, and clock association are separate",
+        "N3_hidden_walls": [
+          "many razor-thin finite-L zeros inside the continuum",
+          "worker-grid branch labels",
+          "amplitude-labeled word lines",
+          "absorber boundary dressing"
+        ],
+        "N4_residual_match": "all Cycle664 residuals retained; correction changes identity, not eigenzero arithmetic",
+        "N5_rhetoric": "bounded four-row correction only; no impossibility, minimum-content, energy, clock, or axiom claim",
+        "N6_partial_closure": "correct branch held evidence and lawful two-line word survive while width/preparation/association remain open",
+        "N7_steelman": "a Cycle664 artifact zero may be a genuine box eigenline; that does not make it the recurring branch",
+        "N8_cross_cycle_echo": "Cycle662 explicitly supersedes Cycle629's global-min root and therefore also changes Cycle664's inherited identification",
+        "axiom_pressure": false,
+        "broad_negative": "DO NOT SHIP",
+        "shared_obstruction": false
+      },
+      "label": "full N1-N8 blocks broad negative and axiom-pressure promotion",
+      "pass": true
+    },
+    {
+      "evidence": {
+        "open": [
+          "branch-tracked infinite-volume isolation/width and rigorous contact-cyclic theorem",
+          "autonomous preparation of the corrected branch eigenvectors",
+          "physical two-line clock, tick-to-echo association, renewal, proper time, source and gravity"
+        ],
+        "retain": [
+          "all four Cycle664 roots are exact finite-volume A2 eigenzeros on their declared periodic boxes",
+          "Cycle664 local-isolation, normalized eigenstate, cavity Ritz, and contact-deletion residuals",
+          "the L9 beta=-0.35 Cycle664 root agrees post hoc with the branch-tracked row",
+          "Cycle662 branch-tracked L9-L21 and held-species line evidence plus its declared error/method boundaries"
+        ],
+        "withdraw": [
+          "identifying the Cycle664 train L9 beta=-0.30 root 0.29998079 as the recurring second A2 line",
+          "identifying the Cycle664 held-size L13 beta=-0.30 root 0.29199855 as that branch",
+          "identifying the Cycle664 held-both L13 beta=-0.35 root 0.27800715 as the held-species branch",
+          "using the four Cycle664 selected eigenvectors as the physical two-level preparation targets"
+        ]
+      },
+      "label": "correction ledger preserves true partial results and names the replacement target",
+      "pass": true
+    },
+    {
+      "evidence": [
+        "one of four",
+        "Three of four",
+        "finite-volume eigenzeros",
+        "+0.31368",
+        "Authority: **none**",
+        "Audit: **unset**",
+        "Axiom pressure: **none**"
+      ],
+      "label": "Cycle673 note contains the correction and firewalls",
+      "pass": true
+    }
+  ],
+  "tests_failed": 0,
+  "tests_passed": 9,
+  "tracked_branch_stability": {
+    "beta=-0.3": {
+      "span": 0.00016885073403383188,
+      "values": [
+        0.3138499846547214,
+        0.3137160119762102,
+        0.313690460920994,
+        0.31368461655970326,
+        0.3136811339206876,
+        0.3136889963830126,
+        0.31368327611198726
+      ]
+    },
+    "beta=-0.35": {
+      "span": 0.0009751630147156742,
+      "values": [
+        0.35901040319558253,
+        0.35816143974085607,
+        0.35803524018086685
+      ]
+    }
+  },
+  "word_branch_comparison": {
+    "absolute_delta": 0.0002659836944594596,
+    "tracked_beta_minus_0_3_limit": 0.31368327611198726,
+    "word_line": 0.3134172924175278
+  }
+}

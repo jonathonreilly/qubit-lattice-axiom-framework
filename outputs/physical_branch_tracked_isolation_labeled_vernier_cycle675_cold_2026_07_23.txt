@@ -1,0 +1,4 @@
+PASS branch-tracked theta_2 on the narrow window is order-stable and near the finite-L plateau, with the frozen either-outcome reading :: {'orders': {32: {'theta': 0.3136860749863371, 'abs_b': 1.3520678688287408e-12}, 40: {'theta': 0.31368581847007615, 'abs_b': 1.0563073514526871e-12}}, 'order_stable': True, 'theta_star': 0.31368581847007615, 'reading': {'kind': 'isolated_zero', 'transversality': 16.0756285695807}, 'plateau_reference': 0.31368}
+PASS amplitude-labeled pairing reconstructs all six frozen rows within two bins (repairing the sorted-pair degeneracy) with the gold row unchanged :: {'errors': [0.0, 0.00032, 4.1e-05, 0.00042, 0.000471, 0.0], 'gold': {'R_rec': 1.249988335141429, 'a_count': 5}}
+RESULT 2 0 elapsed 201.8 s
+exit=0

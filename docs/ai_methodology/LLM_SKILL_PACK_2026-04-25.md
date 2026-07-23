@@ -39,6 +39,7 @@ and follow.
 | `physics-claim-reviewer` | Perform adversarial review of a candidate theorem, runner, or branch and classify findings into actionable dispositions. | [`skills/physics-claim-reviewer/SKILL.md`](./skills/physics-claim-reviewer/SKILL.md) |
 | `review-loop` | Run an iterative physics review loop across code/runners, claim boundaries, imported values, Nature-grade retention, and repo-governance surfaces. | [`skills/review-loop/SKILL.md`](./skills/review-loop/SKILL.md) |
 | `audit-loop` | Run adversarial claim audits from the repo audit queue, apply accepted verdicts through the audit ledger, verify, commit, and push one claim at a time. | [`skills/audit-loop/SKILL.md`](./skills/audit-loop/SKILL.md) |
+| `science-fix-loop` | Drain validated audit repairs plus typed quarantine and skip routes through source-side PRs, review-loop, and fresh re-audit without treating operational failures as verdicts. | [`skills/science-fix-loop/SKILL.md`](./skills/science-fix-loop/SKILL.md) |
 | `reviewer-backpressure-integrator` | Convert review pressure into narrow honest fixes, demotions, rejections, or selective landings. | [`skills/reviewer-backpressure-integrator/SKILL.md`](./skills/reviewer-backpressure-integrator/SKILL.md) |
 | `methodology-paper-synthesizer` | Turn raw prompt, repo-history, review, and landing evidence into methods-paper source material. | [`skills/methodology-paper-synthesizer/SKILL.md`](./skills/methodology-paper-synthesizer/SKILL.md) |
 

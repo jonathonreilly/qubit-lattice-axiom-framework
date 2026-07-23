@@ -2372,6 +2372,9 @@ class ClaimTransactionTest(unittest.TestCase):
         first = script.index(
             'echo "==> 5/18 compute_load_bearing.py"'
         )
+        fixed_point_seed = script.index(
+            'echo "==> 3a/18 seed_audit_ledger.py fixed-point receipt"'
+        )
         checkpoint = script.index(
             'echo "==> 3b/18 static_pipeline_checkpoint.py prepare'
         )
@@ -2387,6 +2390,8 @@ class ClaimTransactionTest(unittest.TestCase):
 
         self.assertLess(pre_seed, seed)
         self.assertLess(seed, first)
+        self.assertLess(first, fixed_point_seed)
+        self.assertLess(fixed_point_seed, checkpoint)
         self.assertLess(first, checkpoint)
         self.assertLess(first, status)
         self.assertLess(status, final)
@@ -2396,6 +2401,12 @@ class ClaimTransactionTest(unittest.TestCase):
                 "python3 docs/audit/scripts/compute_load_bearing.py"
             ),
             3,
+        )
+        self.assertEqual(
+            script.count(
+                "python3 docs/audit/scripts/seed_audit_ledger.py"
+            ),
+            2,
         )
 
     def test_run_generated_gates_selects_verdict_only_pipeline(self):

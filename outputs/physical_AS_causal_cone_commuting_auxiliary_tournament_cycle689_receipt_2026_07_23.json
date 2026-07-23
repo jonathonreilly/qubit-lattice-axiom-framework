@@ -1,0 +1,993 @@
+{
+  "Status": "PASS",
+  "TOE_dependency_ledger": {
+    "Born_probability_maturity_0_to_5": 2.2,
+    "causal_time_maturity_0_to_5": 2.4,
+    "dependency_change": "C_int/C_local advance for the global SELECT compiler only; target-star, time, source and Born walls are not promoted",
+    "gravity_source_maturity_0_to_5": 1.4,
+    "inertia_matter_maturity_0_to_5": 2.4,
+    "operational_quantum_records_maturity_0_to_5": 3.33
+  },
+  "aggregate_summary": {
+    "Cycle679_target_star_equivalence_proven": false,
+    "commuting_auxiliary_global_SELECT_compiler": true,
+    "direct_common_U_vs_Cycle679_target_star_executed": false,
+    "exact_flag_uncompute": true,
+    "exact_global_SELECT_normal_form": true,
+    "maximum_flag_leakage": 0.0,
+    "maximum_pattern_failures": 0,
+    "minimum_chronology_CZ_deletion_signal": 2.0,
+    "pass": true,
+    "sizes": [
+      3,
+      4,
+      6
+    ],
+    "strict_physical_all_cell_tile_terminal_met": false
+  },
+  "audit": "unset",
+  "authority": "none",
+  "bounded_partial_construction_pass": true,
+  "cycle": 689,
+  "date": "2026-07-23",
+  "elapsed_seconds": 125.04616862500552,
+  "highest_honest_terminal": "coordinate-explicit constant-overhead coherent-flag compilation of the full color-ordered global SELECT stream into commuting compute / local chronology-CZ / X / Z / uncompute layers on L3/L4/L6, with exact Pauli-pattern equality and zero flag leakage; the exact support causal cone is enumerated, but direct common-U versus Cycle679 target-star contraction and equality remain open",
+  "inherited_physical_controls": {
+    "Cycle230_contact_and_seam_fixture_preserved": true,
+    "all24_controller_covariance": true,
+    "all576_controller_group_law": true,
+    "boundary": "byte-pinned Cycle684 local physical fixtures/covariance; auxiliary substitution is exact for global SELECT, but target-star equality is not inferred",
+    "maximum_full_C_reference_residual": 0.0,
+    "maximum_physical_interface_residual": 1.3322676295501878e-15,
+    "maximum_terminal_internal_leakage_probability": 0.0,
+    "minimum_incident_C_deletion_signal": 2.0,
+    "one_particle_mass_fixture_preserved": true
+  },
+  "maximum_RSS_bytes": 496631808,
+  "no_go_discipline": {
+    "N1_normalized_families": [
+      {
+        "family": "exact color-ordered support causal cone",
+        "honesty_marker": "ATTEMPTED",
+        "status": "PASS CENSUS / DIRECT SPARSE COMPARISON OPEN"
+      },
+      {
+        "family": "commuting flag/CZ SELECT normal form",
+        "honesty_marker": "ATTEMPTED",
+        "status": "PASS EXACT GLOBAL-CHRONOLOGY COMPILATION"
+      },
+      {
+        "family": "target-star chronology request/grant",
+        "honesty_marker": "OPEN / NOT ATTEMPTED",
+        "status": "OPEN / NOT ATTEMPTED"
+      },
+      {
+        "family": "disjoint target copies without chronology phase",
+        "honesty_marker": "ATTEMPTED",
+        "status": "REJECTED by Cycle684 residual"
+      }
+    ],
+    "N1_qualifying_attempts_for_negative": 3,
+    "N1_required_for_negative": 5,
+    "N1_threshold_met_for_negative": false,
+    "N2_directed_ordered_pairs": [
+      {
+        "from": "W_direct_causal_cone_execution",
+        "implied": false,
+        "reason": "distinct constructive obligation",
+        "to": "W_target_star_equivalence"
+      },
+      {
+        "from": "W_direct_causal_cone_execution",
+        "implied": false,
+        "reason": "distinct constructive obligation",
+        "to": "W_flag_controller_genesis"
+      },
+      {
+        "from": "W_direct_causal_cone_execution",
+        "implied": false,
+        "reason": "distinct constructive obligation",
+        "to": "W_framework_matter_identification"
+      },
+      {
+        "from": "W_target_star_equivalence",
+        "implied": false,
+        "reason": "distinct constructive obligation",
+        "to": "W_direct_causal_cone_execution"
+      },
+      {
+        "from": "W_target_star_equivalence",
+        "implied": false,
+        "reason": "distinct constructive obligation",
+        "to": "W_flag_controller_genesis"
+      },
+      {
+        "from": "W_target_star_equivalence",
+        "implied": false,
+        "reason": "distinct constructive obligation",
+        "to": "W_framework_matter_identification"
+      },
+      {
+        "from": "W_flag_controller_genesis",
+        "implied": false,
+        "reason": "distinct constructive obligation",
+        "to": "W_direct_causal_cone_execution"
+      },
+      {
+        "from": "W_flag_controller_genesis",
+        "implied": false,
+        "reason": "distinct constructive obligation",
+        "to": "W_target_star_equivalence"
+      },
+      {
+        "from": "W_flag_controller_genesis",
+        "implied": false,
+        "reason": "distinct constructive obligation",
+        "to": "W_framework_matter_identification"
+      },
+      {
+        "from": "W_framework_matter_identification",
+        "implied": false,
+        "reason": "distinct constructive obligation",
+        "to": "W_direct_causal_cone_execution"
+      },
+      {
+        "from": "W_framework_matter_identification",
+        "implied": false,
+        "reason": "distinct constructive obligation",
+        "to": "W_target_star_equivalence"
+      },
+      {
+        "from": "W_framework_matter_identification",
+        "implied": false,
+        "reason": "distinct constructive obligation",
+        "to": "W_flag_controller_genesis"
+      }
+    ],
+    "N2_walls": {
+      "W_direct_causal_cone_execution": "the exact support cone is enumerated but saturates most/all small tori; a direct sparse common-U versus target-star contraction was not completed",
+      "W_flag_controller_genesis": "blank flag rails, carried colors/ordinals and their genesis remain supplied",
+      "W_framework_matter_identification": "independent occupancy rails remain supplied",
+      "W_target_star_equivalence": "the commuting auxiliary normal form exactly preserves the color-ordered global SELECT stream, not the distinct Cycle679 target-star order"
+    },
+    "N3_hidden_wall_scan": [
+      {
+        "classification": "carried local schedule type, not time or unique global site order",
+        "condition": "color/factor ordinal"
+      },
+      {
+        "classification": "locally derived from two flags sharing a physical target and their carried schedule order; no parity service",
+        "condition": "chronology CZ mask"
+      },
+      {
+        "classification": "implementation/contraction wall, not impossibility",
+        "condition": "support cone saturation"
+      }
+    ],
+    "N4_exact_residual_matches": [
+      {
+        "current": "exactly absorbed by inversion CZ phases",
+        "prior_cycle": 684,
+        "residual": "AS noncommutation",
+        "retired": true
+      },
+      {
+        "current": "global chronology preserved but target-star comparison not executed",
+        "prior_cycle": 684,
+        "residual": "target-star equality open",
+        "retired": false
+      }
+    ],
+    "N5_rhetoric": [
+      {
+        "claim": "flag normal form compiles global SELECT only",
+        "lattice_wide": "target-star equality open",
+        "per_block": "compute-phase-act-uncompute",
+        "per_element": "flag",
+        "per_mode": "Pauli X/Z",
+        "per_site": "cell-local"
+      },
+      {
+        "claim": "factor ordinal is not time",
+        "lattice_wide": "no causal-time claim",
+        "per_block": "finite controller",
+        "per_element": "schedule label",
+        "per_mode": "no rate",
+        "per_site": "carried"
+      }
+    ],
+    "N6_partial_closure_paths": [
+      {
+        "file": "scripts/physical_AS_causal_cone_commuting_auxiliary_tournament_cycle689_2026_07_23.py",
+        "status": "EXECUTED PARTIAL",
+        "what_closes": "Cycle684 syntactic AS-overlap compilation"
+      },
+      {
+        "file": "UNMATERIALIZED/cycle689_direct_tensor_cone_next.py",
+        "status": "OPEN",
+        "what_closes": "W_direct_causal_cone_execution"
+      },
+      {
+        "file": "UNMATERIALIZED/cycle689_target_star_request_grant_next.py",
+        "status": "OPEN",
+        "what_closes": "W_target_star_equivalence"
+      }
+    ],
+    "N7_steelman": {
+      "mechanism": "contract the exact cone as a tensor network or make local request/grant chronology reproduce each target-star word without host selection",
+      "terminal_test": "direct common-U versus Wstar observable residual on lawful L3/L4/L6 states"
+    },
+    "N8_cross_cycle_echo": [
+      {
+        "applicability": "does not retire target-star equality",
+        "cycle": 684,
+        "mechanism": "reachable MCX/MCZ residual",
+        "retired": "yes for global chronology via CZ inversion phase"
+      },
+      {
+        "applicability": "comparison target remains pinned",
+        "cycle": 679,
+        "mechanism": "selected incident star",
+        "retired": "no"
+      }
+    ],
+    "axiom_pressure_claim": false,
+    "axiom_pressure_gate": "FAIL / DO NOT SHIP",
+    "broad_negative_gate": "FAIL / DO NOT SHIP",
+    "broad_no_go_claim": false,
+    "minimum_content_claim": false,
+    "minimum_content_gate": "FAIL / DO NOT SHIP",
+    "pass": true,
+    "shared_obstruction_claim": false,
+    "shared_obstruction_gate": "FAIL / DO NOT SHIP",
+    "shared_route_independent_obstruction": false
+  },
+  "note": "docs/work_history/repo/review_feedback/PHYSICAL_AS_CAUSAL_CONE_COMMUTING_AUXILIARY_TOURNAMENT_CYCLE689_NOTE_2026-07-23.md",
+  "optimal_next_campaign": "tensor-contract the enumerated color-ordered cone directly against Cycle679 Wstar, or construct local request/grant chronology that reproduces every target-star order without host target selection",
+  "pass": true,
+  "route_disposition": {
+    "A_exact_causal_cone": "PASS_EXACT_SUPPORT_CENSUS; DIRECT_SPARSE_CONTRACTION_OPEN",
+    "B_commuting_gauge_auxiliary": "PASS_EXACT_FOR_COLOR_ORDERED_GLOBAL_SELECT_WITH_FLAG_UNCOMPUTE",
+    "C_request_grant_target_star_chronology": "OPEN_NOT_ATTEMPTED"
+  },
+  "shared_obstruction_creates_axiom_pressure": false,
+  "shore": {
+    "Cycle684_residual": "distinct-cell AS words overlap and have an explicit noncommuting factor witness on every tested size",
+    "observed": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_SHARED_WORK_ALL_CELL_TILE_CYCLE684_NOTE_2026-07-23.md": "f4e2b5271a7ae957e0f14bca11aa9db04ce1520375c7dd3de648e410576c5a12",
+      "outputs/physical_shared_work_all_cell_tile_cycle684_cold_2026_07_23.txt": "06a86e01525384892ab6b148e474c150985420a10b46075da729b36c70b2b5fa",
+      "outputs/physical_shared_work_all_cell_tile_cycle684_receipt_2026_07_23.json": "3659784cb1394567aad6bb1596a39bf1ba2722e9ce5814cdb0145ec3fd8ab6e8",
+      "scripts/physical_shared_work_all_cell_tile_cycle684_2026_07_23.py": "567705a8db99c9832af651000a4dfab832f2765ac3ff518c594ba622726e3cce"
+    },
+    "pass": true,
+    "pins": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_SHARED_WORK_ALL_CELL_TILE_CYCLE684_NOTE_2026-07-23.md": "f4e2b5271a7ae957e0f14bca11aa9db04ce1520375c7dd3de648e410576c5a12",
+      "outputs/physical_shared_work_all_cell_tile_cycle684_cold_2026_07_23.txt": "06a86e01525384892ab6b148e474c150985420a10b46075da729b36c70b2b5fa",
+      "outputs/physical_shared_work_all_cell_tile_cycle684_receipt_2026_07_23.json": "3659784cb1394567aad6bb1596a39bf1ba2722e9ce5814cdb0145ec3fd8ab6e8",
+      "scripts/physical_shared_work_all_cell_tile_cycle684_2026_07_23.py": "567705a8db99c9832af651000a4dfab832f2765ac3ff518c594ba622726e3cce"
+    },
+    "ref": "43c798bb3555e6def67235c7ef829263f14604b3",
+    "working_tree_bytes_used_as_scientific_premise": false
+  },
+  "six_wall_ledger": {
+    "C_int": "advance: Cycle684 MCX/MCZ order phase is compiled by local inversion CZ pairs",
+    "C_local": "advance: coordinate-explicit cell-local flags, bounded pair routes and exact uncompute; genesis/controller remain supplied",
+    "C_num": "advance in exact binary Pauli normal form only; sparse cone contraction open",
+    "C_ref": "advance: global SELECT chronology has an exact commuting auxiliary normal form; target-star reference equality open",
+    "C_source": "unchanged",
+    "C_wrap": "held L4/L6 placement and prior seam controls retained; no phase-as-energy claim"
+  },
+  "size_rows": [
+    {
+      "Cycle679_target_star_equivalence_executed": false,
+      "SELECT_factors": 13347,
+      "auxiliary_factor_counts": {
+        "canonical_controlled_X": 6183,
+        "canonical_controlled_Z": 7164,
+        "chronology_CZ": 21023,
+        "flag_compute": 13347,
+        "flag_uncompute": 13347
+      },
+      "causal_cone": {
+        "active_M2_support": 828,
+        "cell_owners_touched": 26,
+        "direct_sparse_common_U_vs_target_star_executed": false,
+        "exact_support_cancellation_rule": "reverse color-ordered factor sweep; include iff current observable support intersects factor support, then union support",
+        "global_U_factors": 16884,
+        "included_factors": 15212,
+        "included_fraction": 0.9009713338071547,
+        "included_ordinal_sha256": "bcada1ea64dfcd96e1119a93023f43ecd090c5f2c7f3353c80f34dda663d7b4c",
+        "segment_counts": {
+          "AS": 13488,
+          "C": 1680,
+          "D": 44
+        }
+      },
+      "cells": 27,
+      "chronology_CZ_deletion_signal": 2.0,
+      "chronology_inversion_CZ_pairs": 21023,
+      "common_U_preserved_by_substitution": true,
+      "executed_weight_le_2_plus_all_active_pattern_comparisons": 348498,
+      "flag_coordinate_collisions": 0,
+      "flag_deletion_signal": 1.0,
+      "flags_terminal_leakage_probability": 0.0,
+      "global_SELECT_normal_form_exact_by_adjacent_swap_induction": true,
+      "length": 3,
+      "maximum_SELECT_factors_per_physical_target": 40,
+      "maximum_flag_pair_NN_route_edges": 43,
+      "maximum_flags_per_cell": 553,
+      "maximum_inversion_pair_owner_cell_distance": 1,
+      "maximum_inversion_pairs_charged_to_one_cell": 1491,
+      "normal_form_pattern_failures": 0,
+      "pass": true,
+      "physical_target_groups": 621,
+      "retained_commutator_auxiliary_repair_residual": 0.0,
+      "retained_reachable_commutator": {
+        "A_preparation_matching_component_amplitude": [
+          -0.5000000000000001,
+          0.0
+        ],
+        "A_preparation_matching_component_probability": 0.2500000000000001,
+        "MCX_factor": {
+          "controls": [
+            [
+              3,
+              0,
+              0
+            ],
+            [
+              45,
+              0,
+              0
+            ],
+            [
+              0,
+              3,
+              0
+            ],
+            [
+              0,
+              45,
+              0
+            ],
+            [
+              0,
+              0,
+              3
+            ],
+            [
+              0,
+              0,
+              45
+            ],
+            [
+              47,
+              0,
+              0
+            ]
+          ],
+          "kind": "MCX",
+          "label": [
+            "SELECT",
+            0,
+            16,
+            0,
+            "X",
+            2
+          ],
+          "ordinal": 0,
+          "support_M2": 8,
+          "targets": [
+            [
+              1,
+              0,
+              1
+            ]
+          ],
+          "values": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ]
+        },
+        "MCZ_factor": {
+          "controls": [
+            [
+              3,
+              0,
+              16
+            ],
+            [
+              45,
+              0,
+              16
+            ],
+            [
+              0,
+              3,
+              16
+            ],
+            [
+              0,
+              45,
+              16
+            ],
+            [
+              0,
+              0,
+              19
+            ],
+            [
+              0,
+              0,
+              13
+            ],
+            [
+              47,
+              0,
+              16
+            ]
+          ],
+          "kind": "MCZ",
+          "label": [
+            "SELECT",
+            1,
+            16,
+            0,
+            "Z",
+            2
+          ],
+          "ordinal": 0,
+          "support_M2": 8,
+          "targets": [
+            [
+              1,
+              0,
+              1
+            ]
+          ],
+          "values": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ]
+        },
+        "X_then_Z_terms": 1,
+        "Z_then_X_terms": 1,
+        "both_controls_match_lawful_basis": true,
+        "declared_total_q_occupation": 2,
+        "executed_order_swap_residual": 2.0,
+        "left_cell": [
+          0,
+          0,
+          0
+        ],
+        "matching_control_conflicts": 0,
+        "pass": true,
+        "right_cell": [
+          0,
+          0,
+          1
+        ],
+        "shared_target": [
+          1,
+          0,
+          1
+        ],
+        "two_cell_branch_one_hot": true,
+        "within_declared_global_N_le_3": true
+      },
+      "route_colors": {
+        "colors_used": 12,
+        "conflict_edges": 215,
+        "deleted_color_seed_unscheduled_vertices": 1,
+        "malformed_force_neighbor_same_color_collision_signal": 1,
+        "maximum_conflict_degree": 18,
+        "pass": true,
+        "same_color_conflict_failures": 0,
+        "vertices": 27
+      },
+      "target_cell": [
+        2,
+        2,
+        2
+      ],
+      "target_degree": 6
+    },
+    {
+      "Cycle679_target_star_equivalence_executed": false,
+      "SELECT_factors": 31240,
+      "auxiliary_factor_counts": {
+        "canonical_controlled_X": 14656,
+        "canonical_controlled_Z": 16584,
+        "chronology_CZ": 51236,
+        "flag_compute": 31240,
+        "flag_uncompute": 31240
+      },
+      "causal_cone": {
+        "active_M2_support": 1485,
+        "cell_owners_touched": 36,
+        "direct_sparse_common_U_vs_target_star_executed": false,
+        "exact_support_cancellation_rule": "reverse color-ordered factor sweep; include iff current observable support intersects factor support, then union support",
+        "global_U_factors": 40136,
+        "included_factors": 18441,
+        "included_fraction": 0.4594628263902731,
+        "included_ordinal_sha256": "222df6d6861863c5a291f931a92dc96a15f283960724862b106bad8651786dd2",
+        "segment_counts": {
+          "AS": 18157,
+          "C": 240,
+          "D": 44
+        }
+      },
+      "cells": 64,
+      "chronology_CZ_deletion_signal": 2.0,
+      "chronology_inversion_CZ_pairs": 51236,
+      "common_U_preserved_by_substitution": true,
+      "executed_weight_le_2_plus_all_active_pattern_comparisons": 811120,
+      "flag_coordinate_collisions": 0,
+      "flag_deletion_signal": 1.0,
+      "flags_terminal_leakage_probability": 0.0,
+      "global_SELECT_normal_form_exact_by_adjacent_swap_induction": true,
+      "length": 4,
+      "maximum_SELECT_factors_per_physical_target": 40,
+      "maximum_flag_pair_NN_route_edges": 45,
+      "maximum_flags_per_cell": 553,
+      "maximum_inversion_pair_owner_cell_distance": 1,
+      "maximum_inversion_pairs_charged_to_one_cell": 1406,
+      "normal_form_pattern_failures": 0,
+      "pass": true,
+      "physical_target_groups": 1472,
+      "retained_commutator_auxiliary_repair_residual": 0.0,
+      "retained_reachable_commutator": {
+        "A_preparation_matching_component_amplitude": [
+          -0.5000000000000001,
+          0.0
+        ],
+        "A_preparation_matching_component_probability": 0.2500000000000001,
+        "MCX_factor": {
+          "controls": [
+            [
+              3,
+              0,
+              0
+            ],
+            [
+              61,
+              0,
+              0
+            ],
+            [
+              0,
+              3,
+              0
+            ],
+            [
+              0,
+              61,
+              0
+            ],
+            [
+              0,
+              0,
+              3
+            ],
+            [
+              0,
+              0,
+              61
+            ],
+            [
+              63,
+              0,
+              0
+            ]
+          ],
+          "kind": "MCX",
+          "label": [
+            "SELECT",
+            0,
+            16,
+            0,
+            "X",
+            2
+          ],
+          "ordinal": 0,
+          "support_M2": 8,
+          "targets": [
+            [
+              1,
+              0,
+              1
+            ]
+          ],
+          "values": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ]
+        },
+        "MCZ_factor": {
+          "controls": [
+            [
+              3,
+              0,
+              16
+            ],
+            [
+              61,
+              0,
+              16
+            ],
+            [
+              0,
+              3,
+              16
+            ],
+            [
+              0,
+              61,
+              16
+            ],
+            [
+              0,
+              0,
+              19
+            ],
+            [
+              0,
+              0,
+              13
+            ],
+            [
+              63,
+              0,
+              16
+            ]
+          ],
+          "kind": "MCZ",
+          "label": [
+            "SELECT",
+            1,
+            16,
+            0,
+            "Z",
+            2
+          ],
+          "ordinal": 0,
+          "support_M2": 8,
+          "targets": [
+            [
+              1,
+              0,
+              1
+            ]
+          ],
+          "values": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ]
+        },
+        "X_then_Z_terms": 1,
+        "Z_then_X_terms": 1,
+        "both_controls_match_lawful_basis": true,
+        "declared_total_q_occupation": 2,
+        "executed_order_swap_residual": 2.0,
+        "left_cell": [
+          0,
+          0,
+          0
+        ],
+        "matching_control_conflicts": 0,
+        "pass": true,
+        "right_cell": [
+          0,
+          0,
+          1
+        ],
+        "shared_target": [
+          1,
+          0,
+          1
+        ],
+        "two_cell_branch_one_hot": true,
+        "within_declared_global_N_le_3": true
+      },
+      "route_colors": {
+        "colors_used": 6,
+        "conflict_edges": 495,
+        "deleted_color_seed_unscheduled_vertices": 1,
+        "malformed_force_neighbor_same_color_collision_signal": 1,
+        "maximum_conflict_degree": 18,
+        "pass": true,
+        "same_color_conflict_failures": 0,
+        "vertices": 64
+      },
+      "target_cell": [
+        0,
+        0,
+        1
+      ],
+      "target_degree": 5
+    },
+    {
+      "Cycle679_target_star_equivalence_executed": false,
+      "SELECT_factors": 104076,
+      "auxiliary_factor_counts": {
+        "canonical_controlled_X": 49464,
+        "canonical_controlled_Z": 54612,
+        "chronology_CZ": 170876,
+        "flag_compute": 104076,
+        "flag_uncompute": 104076
+      },
+      "causal_cone": {
+        "active_M2_support": 3416,
+        "cell_owners_touched": 77,
+        "direct_sparse_common_U_vs_target_star_executed": false,
+        "exact_support_cancellation_rule": "reverse color-ordered factor sweep; include iff current observable support intersects factor support, then union support",
+        "global_U_factors": 134100,
+        "included_factors": 37701,
+        "included_fraction": 0.28114093959731545,
+        "included_ordinal_sha256": "41f9ed976c64d27bec64dfa21e231eff934d2046ec40048e8cfe6db868109f07",
+        "segment_counts": {
+          "AS": 37417,
+          "C": 240,
+          "D": 44
+        }
+      },
+      "cells": 216,
+      "chronology_CZ_deletion_signal": 2.0,
+      "chronology_inversion_CZ_pairs": 170876,
+      "common_U_preserved_by_substitution": true,
+      "executed_weight_le_2_plus_all_active_pattern_comparisons": 2688624,
+      "flag_coordinate_collisions": 0,
+      "flag_deletion_signal": 1.0,
+      "flags_terminal_leakage_probability": 0.0,
+      "global_SELECT_normal_form_exact_by_adjacent_swap_induction": true,
+      "length": 6,
+      "maximum_SELECT_factors_per_physical_target": 40,
+      "maximum_flag_pair_NN_route_edges": 45,
+      "maximum_flags_per_cell": 553,
+      "maximum_inversion_pair_owner_cell_distance": 1,
+      "maximum_inversion_pairs_charged_to_one_cell": 1414,
+      "normal_form_pattern_failures": 0,
+      "pass": true,
+      "physical_target_groups": 4968,
+      "retained_commutator_auxiliary_repair_residual": 0.0,
+      "retained_reachable_commutator": {
+        "A_preparation_matching_component_amplitude": [
+          -0.5000000000000001,
+          0.0
+        ],
+        "A_preparation_matching_component_probability": 0.2500000000000001,
+        "MCX_factor": {
+          "controls": [
+            [
+              3,
+              0,
+              0
+            ],
+            [
+              93,
+              0,
+              0
+            ],
+            [
+              0,
+              3,
+              0
+            ],
+            [
+              0,
+              93,
+              0
+            ],
+            [
+              0,
+              0,
+              3
+            ],
+            [
+              0,
+              0,
+              93
+            ],
+            [
+              95,
+              0,
+              0
+            ]
+          ],
+          "kind": "MCX",
+          "label": [
+            "SELECT",
+            0,
+            16,
+            0,
+            "X",
+            2
+          ],
+          "ordinal": 0,
+          "support_M2": 8,
+          "targets": [
+            [
+              1,
+              0,
+              1
+            ]
+          ],
+          "values": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ]
+        },
+        "MCZ_factor": {
+          "controls": [
+            [
+              3,
+              0,
+              16
+            ],
+            [
+              93,
+              0,
+              16
+            ],
+            [
+              0,
+              3,
+              16
+            ],
+            [
+              0,
+              93,
+              16
+            ],
+            [
+              0,
+              0,
+              19
+            ],
+            [
+              0,
+              0,
+              13
+            ],
+            [
+              95,
+              0,
+              16
+            ]
+          ],
+          "kind": "MCZ",
+          "label": [
+            "SELECT",
+            1,
+            16,
+            0,
+            "Z",
+            2
+          ],
+          "ordinal": 0,
+          "support_M2": 8,
+          "targets": [
+            [
+              1,
+              0,
+              1
+            ]
+          ],
+          "values": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ]
+        },
+        "X_then_Z_terms": 1,
+        "Z_then_X_terms": 1,
+        "both_controls_match_lawful_basis": true,
+        "declared_total_q_occupation": 2,
+        "executed_order_swap_residual": 2.0,
+        "left_cell": [
+          0,
+          0,
+          0
+        ],
+        "matching_control_conflicts": 0,
+        "pass": true,
+        "right_cell": [
+          0,
+          0,
+          1
+        ],
+        "shared_target": [
+          1,
+          0,
+          1
+        ],
+        "two_cell_branch_one_hot": true,
+        "within_declared_global_N_le_3": true
+      },
+      "route_colors": {
+        "colors_used": 8,
+        "conflict_edges": 1619,
+        "deleted_color_seed_unscheduled_vertices": 1,
+        "malformed_force_neighbor_same_color_collision_signal": 1,
+        "maximum_conflict_degree": 18,
+        "pass": true,
+        "same_color_conflict_failures": 0,
+        "vertices": 216
+      },
+      "target_cell": [
+        0,
+        0,
+        1
+      ],
+      "target_degree": 5
+    }
+  ],
+  "supplied_structure_inventory": {
+    "Cycle684_carried_route_colors_and_factor_ordinal": true,
+    "Jordan_Wigner_order": false,
+    "blank_cell_local_flag_rails": true,
+    "chronology_inversion_CZ_rule": true,
+    "flag_offset_chart_and_frame_transport": true,
+    "global_parity_service": false,
+    "physical_flag_genesis_law": false,
+    "runtime_host_target_list": false
+  },
+  "target_contract": {
+    "allowed_premises": "byte-pinned committed Cycle684 quartet and its Cycle679/675/608 shores; carried route colors and factor ordinal; blank cell-local flag rails; bounded local NN routes; exact Pauli anticommutation",
+    "completion_witness": "coordinate-explicit local flag placement, a factor-counted compute-phase-canonical-Pauli-uncompute normal form, executed equality patterns and retained commutator repair, exact color-ordered cone census, and a strict statement of whether target-star equality was actually executed",
+    "forbidden_weakenings": "calling support-cone enumeration a completed sparse-state comparison; dropping chronological phases; syntactic commutator only; host target selection at runtime; global parity/Jordan-Wigner service or unique site order; calling factor ordinal time; hiding flag genesis, placement, leakage, deletion, held-size or covariance residuals",
+    "outcomes_not_closure": "a formal flag recipe with no execution; an auxiliary word that leaks flags; global-U equality called target-star equality; a saturated cone called a no-go; route-specific failure promoted to shared obstruction or axiom pressure",
+    "quantifiers_domain": "L3 train, L4 held-out-size, L6 held; maximum-degree target; every color-ordered SELECT factor and shared physical target; all zero/singleton/pair/all-active Pauli patterns on both target basis values; retained mass/contact/seam/deletion/leakage and all24/all576 shores",
+    "required_edge_cases": "every SELECT target group; X/Z inversion pairs; both physical target basis values; reachable Cycle684 commutator; exact flag return; deleted inversion CZ; L3/L4/L6; causal-cone saturation; mass/contact/seam and all24/all576 inherited only at their pinned boundary",
+    "target_statement": "stress the Cycle684 AS-overlap residual by (A) constructing the exact support causal cone of the color-ordered common U, (B) compiling its SELECT stream to cell-local coherent flags, chronological inversion CZ phases and commuting X/Z layers with exact flag uncompute, and (C) auditing whether this proves the Cycle679 target-star equality"
+  },
+  "target_contract_auxiliary_terminal_met": true,
+  "target_contract_target_star_equivalence_met": false,
+  "target_freeze": {
+    "first_evidence_load_line": 62,
+    "frozen_before_evidence": true,
+    "pass": true,
+    "proof_search_governance_exact_fields": [
+      "allowed_premises",
+      "completion_witness",
+      "forbidden_weakenings",
+      "outcomes_not_closure",
+      "quantifiers_domain",
+      "required_edge_cases",
+      "target_statement"
+    ],
+    "target_contract_sha256": "7ae446fda9e9b1e6e1186a227637f8c3b2daa6d5e44aa1aa8c45552a10c7770d",
+    "target_line": 6
+  },
+  "tests_failed": 0,
+  "tests_passed": 7
+}

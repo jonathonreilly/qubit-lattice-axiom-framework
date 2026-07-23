@@ -1,0 +1,9 @@
+PASS target frozen before evidence :: {'target_line': 6, 'first_evidence_load_line': 62, 'frozen_before_evidence': True, 'target_contract_sha256': '7ae446fda9e9b1e6e1186a227637f8c3b2daa6d5e44aa1aa8c45552a10c7770d', 'proof_search_governance_exact_fields': ['allowed_premises', 'completion_witness', 'forbidden_weakenings', 'outcomes_not_closure', 'quantifiers_domain', 'required_edge_cases', 'target_statement'], 'pass': True}
+PASS Cycle684 committed shore pinned :: 43c798bb3555e6def67235c7ef829263f14604b3
+PASS L3 exact commuting SELECT auxiliary and cone census :: {'cone': 15212, 'cells': 26, 'flags': 13347, 'CZ': 21023, 'patterns': 348498, 'failures': 0}
+PASS L4 exact commuting SELECT auxiliary and cone census :: {'cone': 18441, 'cells': 36, 'flags': 31240, 'CZ': 51236, 'patterns': 811120, 'failures': 0}
+PASS L6 exact commuting SELECT auxiliary and cone census :: {'cone': 37701, 'cells': 77, 'flags': 104076, 'CZ': 170876, 'patterns': 2688624, 'failures': 0}
+PASS exact Pauli normal form, uncompute and deletion :: {'pattern_failures': 0, 'leakage': 0.0, 'min_CZ_delete': 2.0}
+PASS full N1-N8; no negative or axiom pressure :: {'W_direct_causal_cone_execution': 'the exact support cone is enumerated but saturates most/all small tori; a direct sparse common-U versus target-star contraction was not completed', 'W_target_star_equivalence': 'the commuting auxiliary normal form exactly preserves the color-ordered global SELECT stream, not the distinct Cycle679 target-star order', 'W_flag_controller_genesis': 'blank flag rails, carried colors/ordinals and their genesis remain supplied', 'W_framework_matter_identification': 'independent occupancy rails remain supplied'}
+RECEIPT outputs/physical_AS_causal_cone_commuting_auxiliary_tournament_cycle689_receipt_2026_07_23.json
+RESULT PASS tests 7 failed 0 elapsed 125.04616862500552

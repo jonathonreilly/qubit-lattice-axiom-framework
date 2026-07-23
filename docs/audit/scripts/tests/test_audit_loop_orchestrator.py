@@ -960,6 +960,20 @@ class SchemaRecoveryTest(unittest.TestCase):
                 '"recorded_at":"2026-07-23T12:00:00+00:00"}\n',
                 "failure cid does not match",
             ),
+            "float pass one": (
+                '{"claim_id":"row","reason":"compute_required_quarantined",'
+                '"failures":[{"cid":"row","pass":1.0,'
+                '"result":"compute_required","detail":"cache missing"}],'
+                '"recorded_at":"2026-07-23T12:00:00+00:00"}\n',
+                "failure pass must be 1 or 2",
+            ),
+            "float pass two": (
+                '{"claim_id":"row","reason":"compute_required_quarantined",'
+                '"failures":[{"cid":"row","pass":2.0,'
+                '"result":"compute_required","detail":"cache missing"}],'
+                '"recorded_at":"2026-07-23T12:00:00+00:00"}\n',
+                "failure pass must be 1 or 2",
+            ),
             "shard unsafe claim id": (
                 '{"claim_id":"bad/id","reason":"compute_required_quarantined",'
                 '"failures":[{"cid":"bad/id","pass":1,'

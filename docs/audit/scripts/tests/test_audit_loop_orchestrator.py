@@ -2311,6 +2311,9 @@ class ClaimTransactionTest(unittest.TestCase):
         first = script.index(
             'echo "==> 5/18 compute_load_bearing.py"'
         )
+        checkpoint = script.index(
+            'echo "==> 3b/18 static_pipeline_checkpoint.py prepare'
+        )
         status = script.index(
             'echo "==> 6/18 compute_effective_status.py"'
         )
@@ -2323,6 +2326,7 @@ class ClaimTransactionTest(unittest.TestCase):
 
         self.assertLess(pre_seed, seed)
         self.assertLess(seed, first)
+        self.assertLess(first, checkpoint)
         self.assertLess(first, status)
         self.assertLess(status, final)
         self.assertLess(final, certification)

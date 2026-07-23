@@ -96,7 +96,15 @@ class CampaignRepairTest(unittest.TestCase):
             "dependency": {
                 "audit_status": "unaudited",
                 "effective_status": "retained_pending_chain",
-                "dependencies": ["upstream"],
+                "deps": ["upstream", "retained_parent"],
+            },
+            "upstream": {
+                "audit_status": "unaudited",
+                "effective_status": "unaudited",
+            },
+            "retained_parent": {
+                "audit_status": "audited_clean",
+                "effective_status": "retained",
             },
             "forensic": {
                 "audit_status": "unaudited",
@@ -151,6 +159,22 @@ class CampaignRepairTest(unittest.TestCase):
         )
         self.assertEqual(by_claim["forensic"]["route"], "forensic_audit")
         self.assertEqual(by_claim["hash"]["route"], "refresh_note_hash_pipeline")
+
+    def test_retained_selector_skip_is_recorded_as_non_actionable(self):
+        item = repair.repair_route(
+            {
+                "claim_id": "retained",
+                "reason": "effective_status_not_actionable",
+                "detail": (
+                    "effective_status=retained - already retained-grade or "
+                    "governed"
+                ),
+            },
+            {"audit_status": "audited_clean", "effective_status": "retained"},
+        )
+
+        self.assertEqual(item["route"], "already_settled_or_governed")
+        self.assertTrue(item["ready_for_new_campaign"])
 
     def test_campaign_loader_includes_selector_skip_inventory(self):
         with tempfile.TemporaryDirectory() as tmp:

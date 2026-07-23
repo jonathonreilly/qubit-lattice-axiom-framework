@@ -552,7 +552,40 @@ CAMPAIGN_REASON_CATEGORY = {
 }
 
 
-def campaign_record_fingerprint(record: dict, canonical: dict | None) -> str:
+def origin_main_blob_oid(path: str | None) -> str | None:
+    """Return the current origin/main blob identity for one canonical path."""
+    if not isinstance(path, str) or not path or Path(path).is_absolute():
+        return None
+    if ".." in Path(path).parts or "\n" in path or "\r" in path:
+        return None
+    result = git("rev-parse", "--verify", f"origin/main:{path}", check=False)
+    oid = (result.stdout or "").strip()
+    if result.returncode == 0 and re.fullmatch(r"[0-9a-f]+", oid):
+        return oid
+    return None
+
+
+def campaign_artifact_state(canonical: dict | None) -> dict:
+    """Content identities that make a repaired incident a new recurrence."""
+    if not canonical:
+        return {}
+    helpers = canonical.get("helper_runner_paths") or []
+    return {
+        "note_blob_oid": origin_main_blob_oid(canonical.get("note_path")),
+        "runner_blob_oid": origin_main_blob_oid(canonical.get("runner_path")),
+        "helper_runner_blob_oids": {
+            path: origin_main_blob_oid(path)
+            for path in helpers
+            if isinstance(path, str) and path
+        },
+    }
+
+
+def campaign_record_fingerprint(
+    record: dict,
+    canonical: dict | None,
+    artifact_state: dict | None = None,
+) -> str:
     """Stable incident identity without campaign-local timestamps."""
     payload = {
         "claim_id": record.get("claim_id"),
@@ -562,6 +595,19 @@ def campaign_record_fingerprint(record: dict, canonical: dict | None) -> str:
         "invalidation_reason": record.get("invalidation_reason"),
         "note_path": canonical.get("note_path") if canonical else None,
         "runner_path": canonical.get("runner_path") if canonical else None,
+        "canonical_state": (
+            {
+                "note_hash": canonical.get("note_hash"),
+                "audit_status": canonical.get("audit_status"),
+                "effective_status": canonical.get("effective_status"),
+                "audit_invocation_id": canonical.get("audit_invocation_id"),
+                "deps": canonical.get("deps") or [],
+                "audit_state_snapshot": canonical.get("audit_state_snapshot"),
+            }
+            if canonical
+            else None
+        ),
+        "artifact_state": artifact_state or {},
     }
     encoded = json.dumps(
         payload, sort_keys=True, separators=(",", ":"), default=str
@@ -679,7 +725,11 @@ def parse_campaign_workdir(
             category = "campaign_blocked_reentry"
         if category is None:
             category = "campaign_operational_triage"
-        fingerprint = campaign_record_fingerprint(record, canonical)
+        fingerprint = campaign_record_fingerprint(
+            record,
+            canonical,
+            campaign_artifact_state(canonical),
+        )
         candidate = {
                 "category": category,
                 "claim_id": claim_id,
@@ -703,11 +753,7 @@ def parse_campaign_workdir(
                     f"campaign incident `{record['reason']}` in "
                     f"`{campaign_workdir}` (fingerprint `{fingerprint}`)"
                 ),
-                "worker_mode": (
-                    "science"
-                    if category == "campaign_compute_artifact"
-                    else "operational"
-                ),
+                "worker_mode": "operational",
                 "state_key": (
                     f"campaign:{claim_id}:{record['reason']}:{fingerprint}"
                 ),
@@ -1167,7 +1213,7 @@ def commit_and_push(claim_id: str, worktree: Path, branch: str,
                     summary: str, prompt_source: str,
                     category: str,
                     target_note_path: str = "") -> tuple[bool, str]:
-    if category.startswith("campaign_") and category != "campaign_compute_artifact":
+    if category.startswith("campaign_"):
         changed = {
             line.strip()
             for line in git(

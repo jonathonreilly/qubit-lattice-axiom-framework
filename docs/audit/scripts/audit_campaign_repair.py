@@ -45,7 +45,11 @@ def load_campaign_records(campaign_workdir: Path) -> list[dict]:
     return records
 
 
-def repair_route(record: dict, row: dict | None) -> dict:
+def repair_route(
+    record: dict,
+    row: dict | None,
+    rows: dict[str, dict] | None = None,
+) -> dict:
     claim_id = record["claim_id"]
     reason = record["reason"]
     current = {
@@ -146,6 +150,16 @@ def repair_route(record: dict, row: dict | None) -> dict:
                     "full pipeline before starting a new campaign."
                 ),
             }
+        if reason == "effective_status_not_actionable":
+            return {
+                **result,
+                "route": "already_settled_or_governed",
+                "ready_for_new_campaign": True,
+                "action": (
+                    "The row is retained-grade, meta, or a governed decoration. "
+                    "Record the non-actionable disposition and continue."
+                ),
+            }
         if reason == "audit_status_not_unaudited":
             audit_status = str(row.get("audit_status") or "")
             if audit_status == "audit_in_progress":
@@ -195,11 +209,24 @@ def repair_route(record: dict, row: dict | None) -> dict:
                 ),
             }
         if reason == "dependencies_not_retained":
-            blockers = [
-                dep
-                for dep in row.get("dependencies", [])
-                if isinstance(dep, str)
-            ]
+            blockers = []
+            for dep in row.get("deps") or []:
+                if not isinstance(dep, str):
+                    continue
+                if batch.audit_runner.premise_nodes.is_non_evidence_context_dep(
+                    dep
+                ):
+                    blockers.append(dep)
+                    continue
+                if batch.accepted(dep):
+                    continue
+                dep_status = (rows or {}).get(dep, {}).get("effective_status")
+                if (
+                    dep_status in batch.RETAINED
+                    or str(dep_status or "").startswith("decoration_under_")
+                ):
+                    continue
+                blockers.append(dep)
             return {
                 **result,
                 "route": "repair_or_audit_upstream_dependencies",
@@ -252,7 +279,7 @@ def repair_route(record: dict, row: dict | None) -> dict:
 
 def build_plan(exclusions: list[dict], rows: dict[str, dict]) -> list[dict]:
     return [
-        repair_route(record, rows.get(record["claim_id"]))
+        repair_route(record, rows.get(record["claim_id"]), rows)
         for record in exclusions
     ]
 

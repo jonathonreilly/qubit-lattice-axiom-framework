@@ -319,7 +319,7 @@ class CampaignRepairIntakeTest(unittest.TestCase):
         self.assertEqual(
             by_claim["compute"]["category"], "campaign_compute_artifact"
         )
-        self.assertEqual(by_claim["compute"]["worker_mode"], "science")
+        self.assertEqual(by_claim["compute"]["worker_mode"], "operational")
         self.assertEqual(by_claim["transaction"]["worker_mode"], "operational")
         self.assertNotIn("settled", by_claim)
         self.assertIn("carries no scientific", by_claim["schema"]["prompt_body"])
@@ -366,6 +366,39 @@ class CampaignRepairIntakeTest(unittest.TestCase):
         )
         self.assertEqual(first, second)
         self.assertNotEqual(first, changed)
+
+    def test_fingerprint_tracks_current_source_and_runner_state(self):
+        record = {
+            "claim_id": "row",
+            "reason": "compute_required_quarantined",
+            "failures": [{"detail": "cache missing"}],
+        }
+        canonical = {
+            "note_path": "docs/X.md",
+            "runner_path": "scripts/x.py",
+            "note_hash": "a" * 64,
+            "audit_status": "unaudited",
+            "effective_status": "unaudited",
+            "deps": [],
+        }
+        first = sfl.campaign_record_fingerprint(
+            record,
+            canonical,
+            {"note_blob_oid": "1" * 40, "runner_blob_oid": "2" * 40},
+        )
+        note_changed = sfl.campaign_record_fingerprint(
+            record,
+            {**canonical, "note_hash": "b" * 64},
+            {"note_blob_oid": "3" * 40, "runner_blob_oid": "2" * 40},
+        )
+        runner_changed = sfl.campaign_record_fingerprint(
+            record,
+            canonical,
+            {"note_blob_oid": "1" * 40, "runner_blob_oid": "4" * 40},
+        )
+
+        self.assertNotEqual(first, note_changed)
+        self.assertNotEqual(first, runner_changed)
 
     def test_real_selector_skip_inventory_routes_only_operational_work(self):
         campaign = self._campaign([])
@@ -462,6 +495,28 @@ class OperationalAuthorityBoundaryTest(unittest.TestCase):
             sfl.forbidden_operational_science_paths({target}, target),
             [target],
         )
+
+    def test_compute_quarantine_cannot_authorize_claim_note_commit(self):
+        def fake_git(*args, **kwargs):
+            if args[:3] == ("diff", "--name-only", "HEAD"):
+                return mock.Mock(stdout="docs/CLAIM_NOTE.md\n", returncode=0)
+            if args[:3] == ("ls-files", "--others", "--exclude-standard"):
+                return mock.Mock(stdout="", returncode=0)
+            raise AssertionError(f"unexpected git call: {args}")
+
+        with mock.patch.object(sfl, "git", side_effect=fake_git):
+            ok, detail = sfl.commit_and_push(
+                "claim",
+                Path("/tmp/not-used"),
+                "branch",
+                "summary",
+                "campaign",
+                "campaign_compute_artifact",
+                "docs/CLAIM_NOTE.md",
+            )
+
+        self.assertFalse(ok)
+        self.assertIn("cannot authorize those edits", detail)
 
 
 

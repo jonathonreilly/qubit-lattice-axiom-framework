@@ -1,0 +1,785 @@
+{
+  "audit": "unset",
+  "author_accepted": false,
+  "author_artifact_status_accepted": false,
+  "authority": "none",
+  "auxiliary_Majorana_link_route": {
+    "auxiliary_modes_per_square": 8,
+    "broad_no_go": false,
+    "commuting_link_vacuum_assumed": true,
+    "edge_pair_order": {
+      "dressed_support_outside_endpoint_blocks": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "maximum_dressed_edge_JW_support": 6,
+      "maximum_link_stabilizer_JW_support": 2
+    },
+    "held_scaling_witness": [
+      {
+        "edge_pair_order_matter_interval_lower_bound": 3,
+        "length": 3,
+        "vertex_block_closing_link_lower_bound": 7
+      },
+      {
+        "edge_pair_order_matter_interval_lower_bound": 6,
+        "length": 6,
+        "vertex_block_closing_link_lower_bound": 16
+      },
+      {
+        "edge_pair_order_matter_interval_lower_bound": 7,
+        "length": 7,
+        "vertex_block_closing_link_lower_bound": 19
+      }
+    ],
+    "local_link_vacuum_preparation_supplied": false,
+    "one_order_with_both_local_link_checks_and_local_dressed_edges_found": false,
+    "pass": true,
+    "route_status": "ATTEMPTED_TWO_NATURAL_ORDERINGS__OPEN_AUXILIARY_CLIFFORD_VARIANTS",
+    "vertex_block_order": {
+      "dressed_support_outside_endpoint_blocks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "maximum_dressed_edge_JW_support": 6,
+      "maximum_link_stabilizer_JW_support": 10
+    }
+  },
+  "axiom_pressure": false,
+  "breakthrough": false,
+  "charge_bound_flux_ribbon": {
+    "alternate_path_residual": 0.0,
+    "clockwise_exchange_EG_residual": 1.1102230246251565e-16,
+    "clockwise_exchange_leakage_residual": 1.3401577416544657e-16,
+    "code_dimension": 8,
+    "counterclockwise_exchange_EG_residual": 1.1102230246251565e-16,
+    "counterclockwise_exchange_leakage_residual": 1.3401577416544657e-16,
+    "delete_one_vacuum_entangler_residual": 0.9999999999999999,
+    "encoding_isometry_residual": 2.220446049250313e-16,
+    "encoding_shape": [
+      16,
+      8
+    ],
+    "even_matter_modes_per_square": 4,
+    "gauge_vacuum_residual": 0.0,
+    "lawful_even_words": 8,
+    "local_CAR_adjacent_anticommutator_failures": 0,
+    "local_CAR_disjoint_commutator_failures": 0,
+    "loop_constraint_residual": 0.0,
+    "loop_constraint_weight": 4,
+    "malformed_odd_syndromes_rejected": 8,
+    "maximum_FSWAP_polynomial_Pauli_support": 3,
+    "no_global_prefix_or_parity_query": true,
+    "one_edge_EG_residual": 1.1102230246251565e-16,
+    "one_edge_inverse_residual": 0.0,
+    "one_edge_leakage_residual": 1.3401577416544657e-16,
+    "opposite_carrier_exchange_amplitudes": [
+      [
+        -0.9999999999999998,
+        0.0
+      ],
+      [
+        -1.0000000000000002,
+        0.0
+      ]
+    ],
+    "pass": true,
+    "physical_M2_per_square": 4,
+    "preparation": "H(edge0), then CNOT edge0->edge1,edge2,edge3 prepares the empty-charge Q=+1 link vacuum",
+    "wrong_flux_deletion_signal": 1.9999999999999998,
+    "wrong_flux_opposite_exchange_amplitudes": [
+      [
+        0.9999999999999998,
+        0.0
+      ],
+      [
+        0.9999999999999998,
+        0.0
+      ]
+    ]
+  },
+  "constitutional_effect": "none",
+  "elapsed_seconds": 11.644498834037222,
+  "full_periodic_physical_compiler_closed": false,
+  "global_prefix_or_runtime_parity_service": false,
+  "maximum_RSS_bytes": 227311616,
+  "no_go_discipline": {
+    "N1_broad_negative_gate": "WITHHELD_BECAUSE_FEWER_THAN_FIVE_QUALIFYING_ATTEMPTS_AND_OPEN_ROUTES_REMAIN",
+    "N1_normalized_families": [
+      {
+        "family": "charge-bound plaquette flux/ribbon",
+        "honesty_marker": "ATTEMPTED",
+        "status": "CONTRACTIBLE_EXACT__PERIODIC_CONDITIONAL"
+      },
+      {
+        "family": "auxiliary Majorana link",
+        "honesty_marker": "ATTEMPTED",
+        "status": "ATTEMPTED_TWO_NATURAL_ORDERINGS__OPEN_AUXILIARY_CLIFFORD_VARIANTS"
+      },
+      {
+        "family": "overlapping pull-through tensor",
+        "honesty_marker": "ATTEMPTED",
+        "status": "ATTEMPTED_LOCAL_PULL_THROUGH__PERIODIC_PREPARATION_OPEN"
+      }
+    ],
+    "N1_open_routes_not_counted": [
+      {
+        "family": "punctured/open-boundary spin-sector genesis",
+        "status": "OPEN_NOT_ATTEMPTED"
+      },
+      {
+        "family": "bounded dissipative/measurement-reset Wilson preparation",
+        "status": "OPEN_NOT_ATTEMPTED"
+      }
+    ],
+    "N1_qualifying_attempts": 3,
+    "N1_required_for_broad_negative": 5,
+    "N2_collapsed_walls": [
+      {
+        "independence": "CORRELATED_SAME_HIGHER_FORM_CODE",
+        "routes": [
+          "charge-ribbon",
+          "overlap-tensor"
+        ],
+        "wall": "periodic_spin_sector_genesis"
+      },
+      {
+        "independence": "DISTINCT_BUT_ROUTE_FAMILY_UNEXHAUSTED",
+        "routes": [
+          "auxiliary-Majorana"
+        ],
+        "wall": "auxiliary_clifford_locality"
+      },
+      {
+        "independence": "IMPLEMENTATION_WALL_NOT_TOPOLOGICAL_WALL",
+        "routes": [
+          "charge-ribbon"
+        ],
+        "wall": "support13_elementary_factorization"
+      }
+    ],
+    "N2_directed_pair_count": 6,
+    "N2_directed_pairs": [
+      {
+        "from": "periodic_spin_sector_genesis",
+        "independent": false,
+        "reason": "explicitly compared; no route-independent obstruction inferred",
+        "to": "auxiliary_clifford_locality"
+      },
+      {
+        "from": "periodic_spin_sector_genesis",
+        "independent": false,
+        "reason": "explicitly compared; no route-independent obstruction inferred",
+        "to": "support13_elementary_factorization"
+      },
+      {
+        "from": "auxiliary_clifford_locality",
+        "independent": false,
+        "reason": "explicitly compared; no route-independent obstruction inferred",
+        "to": "periodic_spin_sector_genesis"
+      },
+      {
+        "from": "auxiliary_clifford_locality",
+        "independent": true,
+        "reason": "explicitly compared; no route-independent obstruction inferred",
+        "to": "support13_elementary_factorization"
+      },
+      {
+        "from": "support13_elementary_factorization",
+        "independent": false,
+        "reason": "explicitly compared; no route-independent obstruction inferred",
+        "to": "periodic_spin_sector_genesis"
+      },
+      {
+        "from": "support13_elementary_factorization",
+        "independent": true,
+        "reason": "explicitly compared; no route-independent obstruction inferred",
+        "to": "auxiliary_clifford_locality"
+      }
+    ],
+    "N3_hidden_wall_scan": [
+      "the plaquette E prepares a GHZ-like gauge vacuum; arbitrary periodic E is not supplied",
+      "three Wilson signs are initialized structure, not local checks",
+      "the conditional full-lattice presentation uses 22 M2 per coarse cell and support-13 polynomial blocks",
+      "literal factorization of every support-13 polynomial into one/two-M2 physical gates is not frozen",
+      "the auxiliary route assumes fermionic auxiliary modes before checking their qubit-local stabilizers",
+      "no runtime frame selector, global parity query, energy, rate, Record, source, or tick is supplied"
+    ],
+    "N4_dropped_nonmatches": [
+      {
+        "current_line": 670,
+        "current_path": "scripts/physical_twisted_charge_ribbon_auxiliary_link_gauge_cycle641_2026_07_23.py",
+        "current_residual": [
+          {
+            "edge_pair_order_matter_interval_lower_bound": 3,
+            "length": 3,
+            "vertex_block_closing_link_lower_bound": 7
+          },
+          {
+            "edge_pair_order_matter_interval_lower_bound": 6,
+            "length": 6,
+            "vertex_block_closing_link_lower_bound": 16
+          },
+          {
+            "edge_pair_order_matter_interval_lower_bound": 7,
+            "length": 7,
+            "vertex_block_closing_link_lower_bound": 19
+          }
+        ],
+        "exact_match": false,
+        "mechanism": "prefix correction and two auxiliary JW layouts are different constructions",
+        "prior_line": 53,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_SAME_SPECIES_TWO_CARRIER_PATH_SIGN_COMPILER_CYCLE639_NOTE_2026-07-23.md",
+        "prior_ref": "c27f72ff8b1058d872695829c05e95da415813bc",
+        "prior_residual": [
+          110,
+          1082,
+          1766
+        ],
+        "same_scope": false,
+        "use_as_closure": false
+      }
+    ],
+    "N4_exact_residual_matches": [
+      {
+        "current_line": 593,
+        "current_path": "scripts/physical_twisted_charge_ribbon_auxiliary_link_gauge_cycle641_2026_07_23.py",
+        "current_residual": "three_unfixed_Wilson_characters",
+        "exact_match": true,
+        "mechanism": "same rough-face periodic presentation; repeated evidence is an echo",
+        "prior_line": 44,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md",
+        "prior_ref": "c27f72ff8b1058d872695829c05e95da415813bc",
+        "prior_residual": "three_unfixed_Wilson_characters",
+        "same_scope": true,
+        "use_as_closure": false
+      }
+    ],
+    "N4_residual_matching": [
+      {
+        "current_line": 84,
+        "current_path": "docs/work_history/repo/review_feedback/PHYSICAL_TWISTED_CHARGE_RIBBON_AUXILIARY_LINK_GAUGE_CYCLE641_NOTE_2026-07-23.md",
+        "current_residual": 0.0,
+        "exact_match": false,
+        "mechanism": "the local Q=+1 loop sector binds the exchange sign to the ribbon",
+        "prior_line": 34,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_SAME_SPECIES_TWO_CARRIER_PATH_SIGN_COMPILER_CYCLE639_NOTE_2026-07-23.md",
+        "prior_ref": "c27f72ff8b1058d872695829c05e95da415813bc",
+        "prior_residual": 4.0,
+        "same_scope": true,
+        "use_as_closure": true
+      },
+      {
+        "current_line": 593,
+        "current_path": "scripts/physical_twisted_charge_ribbon_auxiliary_link_gauge_cycle641_2026_07_23.py",
+        "current_residual": "three_unfixed_Wilson_characters",
+        "exact_match": true,
+        "mechanism": "same rough-face periodic presentation; repeated evidence is an echo",
+        "prior_line": 44,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md",
+        "prior_ref": "c27f72ff8b1058d872695829c05e95da415813bc",
+        "prior_residual": "three_unfixed_Wilson_characters",
+        "same_scope": true,
+        "use_as_closure": false
+      },
+      {
+        "current_line": 670,
+        "current_path": "scripts/physical_twisted_charge_ribbon_auxiliary_link_gauge_cycle641_2026_07_23.py",
+        "current_residual": [
+          {
+            "edge_pair_order_matter_interval_lower_bound": 3,
+            "length": 3,
+            "vertex_block_closing_link_lower_bound": 7
+          },
+          {
+            "edge_pair_order_matter_interval_lower_bound": 6,
+            "length": 6,
+            "vertex_block_closing_link_lower_bound": 16
+          },
+          {
+            "edge_pair_order_matter_interval_lower_bound": 7,
+            "length": 7,
+            "vertex_block_closing_link_lower_bound": 19
+          }
+        ],
+        "exact_match": false,
+        "mechanism": "prefix correction and two auxiliary JW layouts are different constructions",
+        "prior_line": 53,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_SAME_SPECIES_TWO_CARRIER_PATH_SIGN_COMPILER_CYCLE639_NOTE_2026-07-23.md",
+        "prior_ref": "c27f72ff8b1058d872695829c05e95da415813bc",
+        "prior_residual": [
+          110,
+          1082,
+          1766
+        ],
+        "same_scope": false,
+        "use_as_closure": false
+      }
+    ],
+    "N5_rhetoric_resolution_ledger": [
+      {
+        "claim": "one edge and square are exact",
+        "lattice_wide": "withheld",
+        "per_block": "contractible only",
+        "per_element": "exact",
+        "per_mode": "four-mode even code",
+        "per_site": "four M2"
+      },
+      {
+        "claim": "alternate paths close locally",
+        "lattice_wide": "withheld",
+        "per_block": "two schedules",
+        "per_element": "one FSWAP",
+        "per_mode": "complete eight-ray even code",
+        "per_site": "one square"
+      },
+      {
+        "claim": "periodic extension is conditional",
+        "lattice_wide": "three supplied Wilson signs",
+        "per_block": "support <=13",
+        "per_element": "bounded generators",
+        "per_mode": "fixed-spin factor only",
+        "per_site": "22 M2/cell"
+      },
+      {
+        "claim": "auxiliary route remains open",
+        "lattice_wide": "not ruled out",
+        "per_block": "ordering tradeoff",
+        "per_element": "two tested JW orders",
+        "per_mode": "auxiliary Majoranas supplied",
+        "per_site": "endpoint blocks"
+      },
+      {
+        "claim": "no time/source/Record follows",
+        "lattice_wide": "no law-level claim",
+        "per_block": "compiler surface",
+        "per_element": "generator only",
+        "per_mode": "even algebra only",
+        "per_site": "gauge vacuum only"
+      }
+    ],
+    "N6_partial_closure_paths": [
+      {
+        "file": "scripts/physical_twisted_charge_ribbon_auxiliary_link_gauge_cycle641_2026_07_23.py",
+        "status": "EXECUTED_CONTRACTIBLE_EG",
+        "what_closes": "one fixed four-M2 local code and two exchange paths"
+      },
+      {
+        "file": "scripts/physical_twisted_charge_ribbon_auxiliary_link_gauge_cycle641_2026_07_23.py",
+        "status": "EXECUTED_CONDITIONAL_PERIODIC_RANKS",
+        "what_closes": "L3/L6/L7 local incidence and fixed-Wilson logical comparators only"
+      },
+      {
+        "file": "scripts/physical_twisted_charge_ribbon_auxiliary_link_gauge_cycle641_2026_07_23.py",
+        "status": "EXECUTED_TWO_AUXILIARY_JW_LAYOUTS",
+        "what_closes": "two natural ordering variants, not the Clifford family"
+      },
+      {
+        "file": "scripts/physical_twisted_charge_ribbon_auxiliary_link_gauge_cycle641_2026_07_23.py",
+        "status": "OPEN_PUNCTURE_OR_DISSIPATIVE_GENESIS",
+        "what_closes": "unconditional local spin-sector preparation"
+      },
+      {
+        "file": "scripts/physical_twisted_charge_ribbon_auxiliary_link_gauge_cycle641_2026_07_23.py",
+        "status": "OPEN_ELEMENTARY_FACTORIZATION",
+        "what_closes": "literal support-one/two realization of conditional support-13 blocks"
+      }
+    ],
+    "N7_hostile_steelman": {
+      "actionable": true,
+      "argument": "A punctured fermionic PEPS, a non-JW auxiliary Clifford code, or autonomous local dissipation may combine the exact plaquette pull-through with bounded spin-sector genesis. Those live constructions prevent a no-go inference.",
+      "decisive_test": "one fixed periodic E/G on L3/L6/L7 with local vacuum genesis, no Wilson initializer input, all24/all576, full seam, A2/contact/mass, and elementary physical factorization",
+      "mechanism": "boundary inflow or autonomous local preparation fixes the spin sector without a runtime Wilson query",
+      "supporting_citations": [
+        {
+          "line": 44,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md",
+          "ref": "c27f72ff8b1058d872695829c05e95da415813bc"
+        },
+        {
+          "line": 356,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_TWISTED_CHARGE_RIBBON_AUXILIARY_LINK_GAUGE_CYCLE641_NOTE_2026-07-23.md",
+          "ref": "WORKTREE_CYCLE641"
+        }
+      ]
+    },
+    "N7_steelman": {
+      "actionable": true,
+      "argument": "A punctured fermionic PEPS, a non-JW auxiliary Clifford code, or autonomous local dissipation may combine the exact plaquette pull-through with bounded spin-sector genesis. Those live constructions prevent a no-go inference.",
+      "decisive_test": "one fixed periodic E/G on L3/L6/L7 with local vacuum genesis, no Wilson initializer input, all24/all576, full seam, A2/contact/mass, and elementary physical factorization",
+      "mechanism": "boundary inflow or autonomous local preparation fixes the spin sector without a runtime Wilson query",
+      "supporting_citations": [
+        {
+          "line": 44,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md",
+          "ref": "c27f72ff8b1058d872695829c05e95da415813bc"
+        },
+        {
+          "line": 356,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_TWISTED_CHARGE_RIBBON_AUXILIARY_LINK_GAUGE_CYCLE641_NOTE_2026-07-23.md",
+          "ref": "WORKTREE_CYCLE641"
+        }
+      ]
+    },
+    "N8_cross_cycle_echo": [
+      {
+        "applicability": "same periodic topological-sector obligation",
+        "citation_line": 66,
+        "citation_path": "docs/work_history/repo/review_feedback/EXACT_3D_HIGHER_FORM_BOSONIZATION_CYCLE235_NOTE_2026-07-17.md",
+        "citation_ref": "c27f72ff8b1058d872695829c05e95da415813bc",
+        "cycle": 235,
+        "mechanism": "face-M2 higher-form code with three Wilson characters",
+        "retired": "local even-algebra geometry only"
+      },
+      {
+        "applicability": "direct periodic shore; not independent evidence",
+        "citation_line": 44,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_ROUGH_GAUGE_SUBSYSTEM_QUOTIENT_CYCLE532_NOTE_2026-07-21.md",
+        "citation_ref": "c27f72ff8b1058d872695829c05e95da415813bc",
+        "cycle": 532,
+        "mechanism": "rough-face code plus three initialized Wilson signs",
+        "retired": "fixed-spin subsystem factorization"
+      },
+      {
+        "applicability": "contractible square only",
+        "citation_line": 34,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_SAME_SPECIES_TWO_CARRIER_PATH_SIGN_COMPILER_CYCLE639_NOTE_2026-07-23.md",
+        "citation_ref": "c27f72ff8b1058d872695829c05e95da415813bc",
+        "cycle": 639,
+        "mechanism": "Cycle641 binds the sign to local Q=+1 flux",
+        "retired": "ordinary-M2 contractible path mismatch"
+      }
+    ],
+    "Status": "PASS",
+    "axiom_pressure": false,
+    "axiom_pressure_claim": false,
+    "axiom_pressure_gate": "FAIL / DO NOT SHIP",
+    "broad_negative_gate": "FAIL / DO NOT SHIP",
+    "broad_no_go_claim": false,
+    "minimum_content_claim": false,
+    "minimum_content_gate": "FAIL / DO NOT SHIP",
+    "negative_claim_shipped": false,
+    "pass": true,
+    "shared_obstruction_claim": false,
+    "shared_obstruction_gate": "FAIL / DO NOT SHIP",
+    "shared_route_independent_obstruction": false,
+    "skill_freshness": {
+      "local_skill_sha256": "aeac7b2b7df30c350961f4b36b980a91e9c2ebeca3f35b6c1adcd731071bdab5",
+      "newer_origin_main_followed": true,
+      "origin_main_skill_sha256": "7d1aea8243ddd972331b935e2e836657e72115da3efe259f828fe862469d68b7",
+      "proof_search_governance_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    }
+  },
+  "note_contract": {
+    "accepted_false": true,
+    "audit_unset": true,
+    "authority_none": true,
+    "missing_sections": [],
+    "pass": true,
+    "required_sections": [
+      "## Exact contractible result",
+      "## Periodic extension boundary",
+      "## Route-by-route disposition",
+      "## N1-N8 discipline",
+      "## Supplied structure",
+      "## Dependency ledger",
+      "## Scope firewall"
+    ]
+  },
+  "note_sha256": "506dc7947aeb9ebd1c3c03ecad2f845931be35b9147ec1c1e08eb4883e70a705",
+  "optimal_next_campaign": "bounded spin-sector genesis tournament: punctured/boundary inflow versus dissipative or measurement-reset Wilson preparation versus a non-JW auxiliary-Clifford link code; require one fixed periodic E/G and then factor the support-13 matter polynomials into elementary one/two-M2 gates",
+  "overlapping_pull_through_tensor_route": {
+    "bounded_tensor_contraction_or_dissipative_sector_genesis_supplied": false,
+    "contractible_pull_through": true,
+    "local_tensor": "the 16x8 Q=+1 square encoding used by the primary route",
+    "not_counted_independent_of_higher_form_charge_ribbon": true,
+    "overlap_rule": "neighboring plaquette projectors share edge M2 factors",
+    "pass": true,
+    "periodic_local_projectors_leave_three_characters": true,
+    "periodic_rank_data": [
+      [
+        3,
+        403,
+        406
+      ],
+      [
+        6,
+        3238,
+        3241
+      ],
+      [
+        7,
+        5143,
+        5146
+      ]
+    ],
+    "route_status": "ATTEMPTED_LOCAL_PULL_THROUGH__PERIODIC_PREPARATION_OPEN"
+  },
+  "pass": true,
+  "periodic_L3_L6_L7_extension": {
+    "bounded_or_autonomous_Wilson_sector_preparation": false,
+    "conditional_fixed_sector_extension": true,
+    "constraint_and_Wilson_deletions": {
+      "bare_stream_cell_constraint_syndrome": 2,
+      "bounded_local_rank": 403,
+      "delete_left_spoke_from_gauge_A_matter_commutator_failures": 6,
+      "delete_one_Wilson_initializer_rank": 405,
+      "delete_one_displayed_local_row_rank": 403,
+      "delete_one_independent_local_row_rank": 402,
+      "dressed_stream_cell_constraint_syndrome": 0,
+      "fixed_sector_rank": 406,
+      "independent_local_basis_rows": 403,
+      "pass": true,
+      "undeleted_gauge_A_matter_commutator_failures": 0
+    },
+    "local_checks_only_define_one_fixed_periodic_target": false,
+    "mass_contact_seam_fixture": {
+      "Cycle219_mass_fixture_residual": 2.220446049250313e-16,
+      "Cycle230_contact_active_two_particle_states": 15,
+      "Cycle230_contact_deletion_residual": 0.36789306705608243,
+      "Cycle230_seam_singular_values": [
+        0.49577140670498115,
+        0.45566604871445016
+      ],
+      "Cycle230_seam_subchecks": {
+        "fail": 0,
+        "pass": 6
+      },
+      "Cycle523_full_M64_onsite_pass": true,
+      "correlated_shadow_coin_and_reverse_A_transition_synthesized": false,
+      "full_update_physical_intertwiner_claimed": false,
+      "interpretation": "re-executed logical comparators; preservation follows conditionally through the faithful fixed-spin matter factor, not through a prepared E circuit",
+      "onsite_intertwiner_residual": 5.272182555577386e-15,
+      "onsite_inverse_residual": 7.504184205291937e-15,
+      "onsite_leakage_residual": 0.0,
+      "pass": true,
+      "rough_code_mass_contact_seam_matrix_enumerated": false
+    },
+    "pass": true,
+    "proper_cubic_covariance": {
+      "abstract_chart_orbit_substituted": false,
+      "active_runtime_frame_selector": false,
+      "fixed_all_plus_Wilson_code_frame_failures": 0,
+      "frame_products": 576,
+      "gauge_A_frame_failures": 0,
+      "gauge_Z_frame_failures": 0,
+      "length": 3,
+      "pass": true,
+      "proper_cubic_frames": 24,
+      "single_face_X_Z_group_law_cases": 684288,
+      "single_face_X_Z_group_law_mismatches": 0
+    },
+    "sizes": [
+      {
+        "Wilson_rank_increment": 3,
+        "cells": 27,
+        "fixed_constraint_inconsistencies": 0,
+        "fixed_constraint_rank": 406,
+        "layout": {
+          "B_FSWAP_blocks_per_cell": 3.0,
+          "frame_position_failures": 0,
+          "length": 3,
+          "maximum_B_FSWAP_block_M2_support": 13,
+          "maximum_B_FSWAP_block_physical_L1_diameter": 32,
+          "maximum_gauge_generator_physical_L1_diameter": 40,
+          "maximum_local_constraint_physical_L1_diameter": 64,
+          "maximum_matter_generator_physical_L1_diameter": 32,
+          "pass": true,
+          "period": 96,
+          "physical_M2": 594,
+          "physical_M2_per_cell": 22.0,
+          "placement_collisions": 0,
+          "proper_cubic_frames": 24
+        },
+        "length": 3,
+        "local_constraint_inconsistencies": 0,
+        "local_constraint_rank": 403,
+        "local_constraint_rows": 648,
+        "mapped_outer_A_local_constraint_commutator_failures": 0,
+        "maximum_Wilson_initializer_weight": 21,
+        "maximum_local_constraint_weight": 28,
+        "onsite": {
+          "all_15_onsite_mode_pairs_available": true,
+          "full_Cycle523_two_M2_schedule_transplanted": false,
+          "length": 3,
+          "maximum_contact_word_M2_support": 12,
+          "maximum_onsite_hopping_M2_support": 7,
+          "onsite_and_contact_gauge_commutator_failures": 0,
+          "onsite_and_contact_stabilizer_failures": 0,
+          "onsite_hopping_endpoint_incidence_failures": 0,
+          "pass": true,
+          "primitive_Givens_recode_compatible": true
+        },
+        "outer_seam_edges": 81,
+        "outer_seam_edges_per_cell": 3.0,
+        "physical_M2": 594,
+        "physical_M2_per_cell": 22.0
+      },
+      {
+        "Wilson_rank_increment": 3,
+        "cells": 216,
+        "fixed_constraint_inconsistencies": 0,
+        "fixed_constraint_rank": 3241,
+        "layout": {
+          "B_FSWAP_blocks_per_cell": 3.0,
+          "frame_position_failures": 0,
+          "length": 6,
+          "maximum_B_FSWAP_block_M2_support": 13,
+          "maximum_B_FSWAP_block_physical_L1_diameter": 32,
+          "maximum_gauge_generator_physical_L1_diameter": 40,
+          "maximum_local_constraint_physical_L1_diameter": 64,
+          "maximum_matter_generator_physical_L1_diameter": 32,
+          "pass": true,
+          "period": 192,
+          "physical_M2": 4752,
+          "physical_M2_per_cell": 22.0,
+          "placement_collisions": 0,
+          "proper_cubic_frames": 24
+        },
+        "length": 6,
+        "local_constraint_inconsistencies": 0,
+        "local_constraint_rank": 3238,
+        "local_constraint_rows": 5184,
+        "mapped_outer_A_local_constraint_commutator_failures": 0,
+        "maximum_Wilson_initializer_weight": 39,
+        "maximum_local_constraint_weight": 28,
+        "onsite": {
+          "all_15_onsite_mode_pairs_available": true,
+          "full_Cycle523_two_M2_schedule_transplanted": false,
+          "length": 6,
+          "maximum_contact_word_M2_support": 12,
+          "maximum_onsite_hopping_M2_support": 7,
+          "onsite_and_contact_gauge_commutator_failures": 0,
+          "onsite_and_contact_stabilizer_failures": 0,
+          "onsite_hopping_endpoint_incidence_failures": 0,
+          "pass": true,
+          "primitive_Givens_recode_compatible": true
+        },
+        "outer_seam_edges": 648,
+        "outer_seam_edges_per_cell": 3.0,
+        "physical_M2": 4752,
+        "physical_M2_per_cell": 22.0
+      },
+      {
+        "Wilson_rank_increment": 3,
+        "cells": 343,
+        "fixed_constraint_inconsistencies": 0,
+        "fixed_constraint_rank": 5146,
+        "layout": {
+          "B_FSWAP_blocks_per_cell": 3.0,
+          "frame_position_failures": 0,
+          "length": 7,
+          "maximum_B_FSWAP_block_M2_support": 13,
+          "maximum_B_FSWAP_block_physical_L1_diameter": 32,
+          "maximum_gauge_generator_physical_L1_diameter": 40,
+          "maximum_local_constraint_physical_L1_diameter": 64,
+          "maximum_matter_generator_physical_L1_diameter": 32,
+          "pass": true,
+          "period": 224,
+          "physical_M2": 7546,
+          "physical_M2_per_cell": 22.0,
+          "placement_collisions": 0,
+          "proper_cubic_frames": 24
+        },
+        "length": 7,
+        "local_constraint_inconsistencies": 0,
+        "local_constraint_rank": 5143,
+        "local_constraint_rows": 8232,
+        "mapped_outer_A_local_constraint_commutator_failures": 0,
+        "maximum_Wilson_initializer_weight": 45,
+        "maximum_local_constraint_weight": 28,
+        "onsite": {
+          "all_15_onsite_mode_pairs_available": true,
+          "full_Cycle523_two_M2_schedule_transplanted": false,
+          "length": 7,
+          "maximum_contact_word_M2_support": 12,
+          "maximum_onsite_hopping_M2_support": 7,
+          "onsite_and_contact_gauge_commutator_failures": 0,
+          "onsite_and_contact_stabilizer_failures": 0,
+          "onsite_hopping_endpoint_incidence_failures": 0,
+          "pass": true,
+          "primitive_Givens_recode_compatible": true
+        },
+        "outer_seam_edges": 1029,
+        "outer_seam_edges_per_cell": 3.0,
+        "physical_M2": 7546,
+        "physical_M2_per_cell": 22.0
+      }
+    ],
+    "three_Wilson_initializers_supplied": true,
+    "unconditional_periodic_physical_compiler": false
+  },
+  "periodic_disposition": "the bounded 22-M2/cell rough-face extension passes L3/L6/L7 locality, seam incidence/logical comparators, onsite, mass/contact and all24/all576 checks only after three growing Wilson signs are supplied",
+  "pins": {
+    "outputs/physical_same_species_two_carrier_path_sign_compiler_cycle639_receipt_2026_07_23.json": "eea3d94d46d3d8b8b05517a5a670723740a764b2a48ff0aa0c2b835edc091841",
+    "scripts/exact_3d_higher_form_bosonization_cycle235_2026_07_17.py": "dd955ce629cde5e225b625be89f5f71045d688083a032b7bf104efa9b3f1bb34",
+    "scripts/local_rough_puncture_odd_sector_cycle247_2026_07_17.py": "10f5cf027c76f5a0a3b1d3dbaa6cb0e6d418932c84553f0cca303d3f21742519",
+    "scripts/physical_rough_gauge_subsystem_quotient_cycle532_2026_07_21.py": "8bf1c836661b4c902d09cf2f7d147b07c3083404569ce9bc0a2b3dd4820233da",
+    "scripts/physical_same_species_two_carrier_path_sign_compiler_cycle639_2026_07_23.py": "2039cd847c99e250ec62e65905feb032bbaf2f18edac1ac22ced3cbbd0d5c627"
+  },
+  "route_by_route_disposition": {
+    "auxiliary_Majorana_link": "ATTEMPTED_TWO_NATURAL_ORDERINGS__OPEN_AUXILIARY_CLIFFORD_VARIANTS",
+    "charge_bound_flux_ribbon": "EXACT_ON_ONE_CONTRACTIBLE_PLAQUETTE__CONDITIONAL_PERIODIC_EXTENSION",
+    "overlapping_pull_through_tensor": "ATTEMPTED_LOCAL_PULL_THROUGH__PERIODIC_PREPARATION_OPEN"
+  },
+  "runner_sha256": "17b8c95c8cc6e2b04723c97c394722a2aeb4a1f5fe45259dc28181ec7927292b",
+  "same_code_one_plaquette_E_G_closed": true,
+  "scope_firewall": {
+    "charge_ribbon_and_overlap_tensor_are_independent_failures": false,
+    "conditional_Wilson_extension_is_unconditional_local_E": false,
+    "gauge_vacuum_is_Record": false,
+    "generator_element_is_rate": false,
+    "logical_seam_comparator_is_literal_full_rough_code_seam_matrix": false,
+    "one_plaquette_is_full_periodic_compiler": false,
+    "source_or_gravity_claimed": false,
+    "tick_or_realized_history_claimed": false,
+    "two_tested_JW_orders_are_auxiliary_no_go": false,
+    "wrapped_phase_is_energy": false
+  },
+  "shared_route_independent_obstruction": false,
+  "shore": {
+    "Cycle639_audit": "unset",
+    "Cycle639_authority": "none",
+    "Cycle639_axiom_pressure": false,
+    "Cycle639_pass": true,
+    "Cycle639_same_species_local_E_G_closed": false,
+    "dirty_Cycle532_worktree_sha256_comparison_only": "a768d4250e55399c03e6084614a772953e6bcdf1570b9e7c50ac8d18544cfe6a",
+    "hashes_match": true,
+    "immutable_shore_ref": "c27f72ff8b1058d872695829c05e95da415813bc",
+    "observed": {
+      "outputs/physical_same_species_two_carrier_path_sign_compiler_cycle639_receipt_2026_07_23.json": "eea3d94d46d3d8b8b05517a5a670723740a764b2a48ff0aa0c2b835edc091841",
+      "scripts/exact_3d_higher_form_bosonization_cycle235_2026_07_17.py": "dd955ce629cde5e225b625be89f5f71045d688083a032b7bf104efa9b3f1bb34",
+      "scripts/local_rough_puncture_odd_sector_cycle247_2026_07_17.py": "10f5cf027c76f5a0a3b1d3dbaa6cb0e6d418932c84553f0cca303d3f21742519",
+      "scripts/physical_rough_gauge_subsystem_quotient_cycle532_2026_07_21.py": "8bf1c836661b4c902d09cf2f7d147b07c3083404569ce9bc0a2b3dd4820233da",
+      "scripts/physical_same_species_two_carrier_path_sign_compiler_cycle639_2026_07_23.py": "2039cd847c99e250ec62e65905feb032bbaf2f18edac1ac22ced3cbbd0d5c627"
+    },
+    "working_tree_bytes_used_as_premise": false
+  },
+  "six_wall_ledger": {
+    "C_int": "one edge, exchange square, onsite Givens/contact, Cycle219 mass and Cycle230 logical seam comparators pass on their declared code surfaces; no full rough-code seam matrix is enumerated here",
+    "C_local": "advanced: the Cycle639 square residual is removed locally with constant overhead and no prefix; unconditional periodic E/preparation is not closed",
+    "C_num": "four-mode even CAR has a literal 16x8 four-M2 code; the Cycle583 onsite A2 payload remains preserved conditionally through Cycle532",
+    "C_ref": "local square orientation, Q=+1 flux and gauge vacuum are explicit supplies; periodic Wilson-sector genesis remains open",
+    "C_source": "unchanged; no physical energy/source/stress/gravity or autonomous resource genesis is derived",
+    "C_wrap": "contractible alternate paths close exactly; periodic L3/L6/L7 retains three growing Wilson initializers and no tick/Record claim"
+  },
+  "status": "cycle641-twisted-charge-ribbon-auxiliary-link-gauge-discriminator",
+  "strongest_constructive_result": "one 16x8, four-M2, Q=+1 charge-ribbon encoding exactly intertwines a local edge FSWAP and both opposite-carrier exchange schedules with Gamma((02)(13)); alternate-path residual is zero and the exchange amplitude is -1, while flipping the local flux gives +1",
+  "supplied_structure": [
+    "four named square vertices and four named edge M2 factors",
+    "one proper orientation/framing z-dress for the A_e generators",
+    "the local Q=+1 plaquette flux sector",
+    "a four-mode presentation order used only to state the exterior target",
+    "GHZ-like empty-link gauge vacuum and its local four-M2 preparation circuit",
+    "Cycle247 rough/punctured face graph for the periodic extension",
+    "three all-plus Wilson/spin signs for the conditional periodic extension",
+    "Cycle532 22-M2/cell layout and support-13 FSWAP polynomial",
+    "Cycle219 mass and Cycle230 contact/seam comparators"
+  ],
+  "tests_failed": 0,
+  "tests_passed": 8
+}

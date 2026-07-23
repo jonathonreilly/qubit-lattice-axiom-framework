@@ -1,0 +1,85 @@
+{
+ "cycle": 676,
+ "authority": "none",
+ "audit": "unset",
+ "frozen_contract_sha256": "bbbe6148679b865958d16180c9b800b7a48f1733e1191d754f41f04a8ec0513b",
+ "rates": {
+  "nu_A": -0.4736,
+  "nu_B": -0.3125,
+  "nu_C": -0.2296,
+  "nu_D1": -0.4736,
+  "nu_D2": -0.3125
+ },
+ "s_coreg": {
+  "S1": 512,
+  "S2": 1500,
+  "S3": 2600,
+  "S4": 3800
+ },
+ "s_max": 4096,
+ "s_split": 2048,
+ "K16": 16,
+ "tick_counts": {
+  "A": 1939,
+  "B": 1279,
+  "C": 940,
+  "D": 1609
+ },
+ "decoded_positions": {
+  "A": {
+   "S1": 242,
+   "S2": 710,
+   "S3": 1231,
+   "S4": 1799
+  },
+  "B": {
+   "S1": 160,
+   "S2": 468,
+   "S3": 812,
+   "S4": 1187
+  },
+  "C": {
+   "S1": 117,
+   "S2": 344,
+   "S3": 596,
+   "S4": 872
+  }
+ },
+ "ratios": {
+  "r_AB_segments": [
+   0.6581196581196581,
+   0.6602687140115163,
+   0.6602112676056338
+  ],
+  "r_BC_segments": [
+   0.737012987012987,
+   0.7325581395348837,
+   0.736
+  ],
+  "r_AB_full": 0.659601798330122,
+  "r_BC_full": 0.7351509250243428,
+  "r_AC_full": 0.4849068721901092,
+  "transitivity_residual": 0.0,
+  "nu_ratio_AB": 0.659839527027027,
+  "nu_ratio_BC": 0.73472,
+  "nu_ratio_AC": 0.48479729729729726
+ },
+ "piecewise": {
+  "first": 969,
+  "second": 640,
+  "total": 1609,
+  "phase_split": 969.9328,
+  "phase_end": 1609.9328,
+  "boundary_frac": 0.9328000000000429
+ },
+ "interpretation_firewall": [
+  "s is generator bookkeeping, not time; the decoders provably never read it (check 9)",
+  "r_AB, r_BC, r_AC are relational rate candidates, not proper time; a tick count is not identified with a proper-time interval",
+  "renewal invariance is a property of the carry-receipt decoder, not a claim about physical clock stability; loop ordinals are non-decodable",
+  "the cross-order refusal is a finite declared-code statement, not a lattice-wide simultaneity theorem"
+ ],
+ "elapsed_seconds": 0.011193037033081055,
+ "pass_count": 9,
+ "fail_count": 0,
+ "pass": true
+}

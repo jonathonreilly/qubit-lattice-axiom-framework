@@ -1,0 +1,18 @@
+PASS Cycle685 target and exact route/discriminator shores were frozen before imports :: {'current': 14, 'external': 5, 'origin_main': 'f35ab187c24b'}
+PASS Cycle685 calls the exact Cycle682-pinned discriminator and never its synthetic emitter :: {'checks': [24, 0], 'sha': '74badb8a8417ff039b386a4abcce4650865cc64e8c74b926ec6edaa0b01f488f'}
+PASS Cycle662 priority route yields an exact reversible scalar fragment and exhaustive cubic type boundary :: {'live': 161, 'invariant_archives': 2, 'accepted_ports': 0}
+PASS Cycle663 objective collision-sigma and reject adapter produces exact unchanged type-correct ports :: {'events': 270, 'inverse': 0, 'all24': 0, 'all576': 0}
+PASS Cycle685 dependency ledger exposes both supplied jump laws and stops below Record/Born/nature meaning :: {'new_edges': 4, 'open': 8}
+PASS fresh normalized N1-N8 confines the C662 result and forbids shared obstruction or axiom pressure :: {'families': 6, 'gate': 'FAIL_DO_NOT_SHIP_BROAD_NEGATIVE'}
+PASS Cycle685 note preserves supplied-law, Record/Born and no-go boundaries :: ()
+{
+  "pass": true,
+  "tests_passed": 7,
+  "tests_failed": 0,
+  "elapsed_seconds": 82.39945220947266,
+  "maximum_RSS_bytes": 74186752,
+  "Cycle662_covariant_accepted_ports": 0,
+  "Cycle663_event_rows": 270,
+  "note": "/private/tmp/toe-science.BB0KQV/docs/work_history/repo/review_feedback/PHYSICAL_OBJECTIVE_BORN_PORT_ADAPTER_TOURNAMENT_CYCLE685_NOTE_2026-07-23.md",
+  "receipt": "/private/tmp/toe-science.BB0KQV/outputs/physical_objective_born_port_adapter_tournament_cycle685_receipt_2026_07_23.json"
+}

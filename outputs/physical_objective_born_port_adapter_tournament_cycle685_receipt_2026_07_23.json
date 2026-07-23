@@ -1,0 +1,2446 @@
+{
+  "Born_probability_derived": false,
+  "Cycle662_priority_route": {
+    "L3_L4_L6_resources": [
+      {
+        "capacity": 3,
+        "pass": true,
+        "split": "train"
+      },
+      {
+        "capacity": 4,
+        "pass": true,
+        "split": "held-size"
+      },
+      {
+        "capacity": 6,
+        "pass": true,
+        "split": "held"
+      }
+    ],
+    "approach_routes": [
+      {
+        "family": "direct pointer-pattern embedding",
+        "status": "ROUTE_SPECIFIC_REFUSAL",
+        "witness": "pattern arities are 1-4, not six; padding forbidden"
+      },
+      {
+        "family": "effect-label to direction",
+        "status": "ROUTE_SPECIFIC_REFUSAL",
+        "witness": "five scalar labels cannot select one of six cubic directions equivariantly"
+      },
+      {
+        "family": "invariant all-six archive",
+        "status": "EXHAUSTED",
+        "witness": "invariant archives ((0, 0, 0, 0, 0, 0), (1, 1, 1, 1, 1, 1)); zero covariant well-formed accepted ports"
+      },
+      {
+        "family": "independent Cycle621 packet graft",
+        "status": "TYPED_SUPPLY_REFUSAL",
+        "witness": "direction packet exists only as an independent test loop, not bound to sigma"
+      },
+      {
+        "family": "reversible scalar fragment",
+        "status": "POSITIVE_PARTIAL",
+        "witness": "161 live objective branches copied exactly"
+      }
+    ],
+    "archive_loser_resource_snapshot_fabricated": false,
+    "covariant_well_formed_occurrence_ports": 0,
+    "direction_or_lane_chosen": false,
+    "exact_Cycle625_PortTuple_derived_from_Cycle662_branch_alone": false,
+    "exhaustive_invariant_archive_loser_pairs": 128,
+    "external_discriminate_called": false,
+    "fragment_deletion_rows": [
+      {
+        "basis_residual": 1.4142135623730951,
+        "field": "pattern",
+        "source_index": 1,
+        "visible": true
+      },
+      {
+        "basis_residual": 1.4142135623730951,
+        "field": "member",
+        "source_index": 3,
+        "visible": true
+      },
+      {
+        "basis_residual": 1.4142135623730951,
+        "field": "receipt",
+        "source_index": 8,
+        "visible": true
+      },
+      {
+        "basis_residual": 1.4142135623730951,
+        "field": "edge",
+        "source_index": 12,
+        "visible": true
+      },
+      {
+        "basis_residual": 1.4142135623730951,
+        "field": "occurrence",
+        "source_index": 13,
+        "visible": true
+      },
+      {
+        "basis_residual": 1.4142135623730951,
+        "field": "admit",
+        "source_index": 14,
+        "visible": true
+      },
+      {
+        "basis_residual": 1.4142135623730951,
+        "field": "lock",
+        "source_index": 15,
+        "visible": true
+      },
+      {
+        "basis_residual": 1.4142135623730951,
+        "field": "spent",
+        "source_index": 17,
+        "visible": true
+      }
+    ],
+    "held_state_rows": 10,
+    "host_sampler_called": false,
+    "invariant_archive_words": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "live_objective_branches": 161,
+    "maximum_fragment_copy_block_M2": 40,
+    "maximum_fragment_gate_support_M2": 2,
+    "maximum_fragment_source_M2": 20,
+    "member_lanes_used": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "objective_branches_enumerated": 170,
+    "pass": true,
+    "pattern_arities": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "pattern_padded": false,
+    "reversible_fragment_copy_failures": 0,
+    "reversible_fragment_inverse_failures": 0,
+    "scalar_all24_failures": 0,
+    "scalar_all24_tests": 3864,
+    "scalar_all576_group_failures": 0,
+    "scalar_all576_group_tests": 576,
+    "typed_route_specific_reason": "the exact branch datum transforms trivially under proper-cubic frames; an accepted Cycle625 tuple must clear one directional winner, but no all24-fixed well-formed accepted tuple exists",
+    "zero_propensity_nonfiring_branches": 9
+  },
+  "Cycle663_constructive_route": {
+    "H6_all24_discriminator_failures": 0,
+    "H6_all24_discriminator_tests": 24,
+    "H6_all576_discriminator_failures": 0,
+    "H6_all576_discriminator_tests": 576,
+    "H6_frame_composition_failures": 0,
+    "adapter_forward_signature": [
+      "c663",
+      "word",
+      "horizon",
+      "delete_label"
+    ],
+    "all_amplitudes_and_reject_exhaust_retained": true,
+    "branch_fixture_enumeration_is_post_selector_code_space_not_sampling": true,
+    "candidate_law": "supplied objective collision-sigma jump law matched to exact retained dilation branch weights",
+    "deletion_rows": [
+      {
+        "basis_residual": 1.4142135623730951,
+        "discriminator_verdict": {
+          "index": 0,
+          "kind": "refuse_malformed",
+          "reason": "W-losers1"
+        },
+        "emit_work_leakage": 0,
+        "gate": "endpoint:0:0",
+        "visible": true
+      },
+      {
+        "basis_residual": 1.4142135623730951,
+        "discriminator_verdict": {
+          "kind": "identified",
+          "law": "even_nonzero",
+          "witnesses": {
+            "low_density": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "nonempty": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "odd_shells": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "unique_quorum": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "emit_work_leakage": 1,
+        "gate": "selector:emit-open:1",
+        "visible": true
+      },
+      {
+        "basis_residual": 1.4142135623730951,
+        "discriminator_verdict": {
+          "index": 0,
+          "kind": "refuse_malformed",
+          "reason": "W-losers0"
+        },
+        "emit_work_leakage": 0,
+        "gate": "selector:admit",
+        "visible": true
+      },
+      {
+        "basis_residual": 1.4142135623730951,
+        "discriminator_verdict": {
+          "index": 0,
+          "kind": "refuse_malformed",
+          "reason": "W-losers1"
+        },
+        "emit_work_leakage": 0,
+        "gate": "packet:0:direction:0",
+        "visible": true
+      },
+      {
+        "basis_residual": 1.4142135623730951,
+        "discriminator_verdict": {
+          "index": 0,
+          "kind": "refuse_malformed",
+          "reason": "W-member"
+        },
+        "emit_work_leakage": 0,
+        "gate": "extension:member",
+        "visible": true
+      },
+      {
+        "basis_residual": 1.4142135623730951,
+        "discriminator_verdict": {
+          "index": 0,
+          "kind": "refuse_malformed",
+          "reason": "W-531"
+        },
+        "emit_work_leakage": 0,
+        "gate": "extension:occurrence",
+        "visible": true
+      },
+      {
+        "basis_residual": 1.4142135623730951,
+        "discriminator_verdict": {
+          "completing_shell_sets": [
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              5
+            ]
+          ],
+          "consistent": [
+            "low_density",
+            "nonempty",
+            "odd_shells",
+            "unique_quorum"
+          ],
+          "kind": "ambiguous"
+        },
+        "emit_work_leakage": 1,
+        "gate": "selector:emit-close:1",
+        "visible": true
+      }
+    ],
+    "external_discriminate_function_changed": false,
+    "external_emit_called": false,
+    "horizons": {
+      "3": {
+        "adapter_covariance_failures": 0,
+        "adapter_covariance_tests": 1968,
+        "bath_basis_all24_covariance_failures": 0,
+        "bath_basis_all24_covariance_tests": 432,
+        "bath_basis_identity_and_inverse_failures": 0,
+        "bath_basis_identity_and_inverse_tests": 36,
+        "branch_support_census_called_one_realized_history": false,
+        "emission_ports_per_time": {
+          "1": 6,
+          "2": 6,
+          "3": 6
+        },
+        "emission_time_verdicts": {
+          "1": {
+            "kind": "identified",
+            "law": "unique_quorum",
+            "witnesses": {
+              "even_nonzero": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "low_density": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "nonempty": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "odd_shells": [
+                0,
+                0,
+                0,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "2": {
+            "kind": "identified",
+            "law": "unique_quorum",
+            "witnesses": {
+              "even_nonzero": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "low_density": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "nonempty": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "odd_shells": [
+                0,
+                0,
+                0,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "3": {
+            "kind": "identified",
+            "law": "unique_quorum",
+            "witnesses": {
+              "even_nonzero": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "low_density": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "nonempty": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "odd_shells": [
+                0,
+                0,
+                0,
+                1,
+                1,
+                1
+              ]
+            }
+          }
+        },
+        "emit_work_leakage_failures": 0,
+        "event_rows": 82,
+        "held_reject_verdict": {
+          "completing_shell_sets": [
+            [
+              2
+            ]
+          ],
+          "consistent": [
+            "low_density",
+            "unique_quorum"
+          ],
+          "kind": "ambiguous"
+        },
+        "inverse_failures": 0,
+        "law_semantics": "one sigma is objective within the separately supplied collision-sigma candidate law; runner enumerates support and never samples",
+        "objective_sigma_weights": [
+          0.12500000000000006,
+          0.5000000000000001,
+          0.2500000000000001,
+          0.12500000000000006
+        ],
+        "pass": true,
+        "pending_ports": 6,
+        "pending_verdict": {
+          "kind": "off_family",
+          "witnesses": {
+            "even_nonzero": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            "low_density": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "nonempty": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "odd_shells": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "unique_quorum": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "port_grammar_failures": 0,
+        "reject_verdict": {
+          "kind": "identified",
+          "law": "unique_quorum",
+          "witnesses": {
+            "even_nonzero": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            "low_density": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            "nonempty": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            "odd_shells": [
+              0,
+              0,
+              0,
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "source_branch_reject_and_bath_exhaust_retention_failures": 0,
+        "structural_reject_ports": 58,
+        "train_emission_verdicts": {
+          "1": {
+            "kind": "identified",
+            "law": "unique_quorum",
+            "witnesses": {
+              "even_nonzero": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "low_density": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "nonempty": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "odd_shells": [
+                0,
+                0,
+                0,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "2": {
+            "kind": "identified",
+            "law": "unique_quorum",
+            "witnesses": {
+              "even_nonzero": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "low_density": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "nonempty": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "odd_shells": [
+                0,
+                0,
+                0,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "3": {
+            "kind": "identified",
+            "law": "unique_quorum",
+            "witnesses": {
+              "even_nonzero": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "low_density": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "nonempty": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "odd_shells": [
+                0,
+                0,
+                0,
+                1,
+                1,
+                1
+              ]
+            }
+          }
+        },
+        "transition_support_verdict": {
+          "kind": "refuse_contradiction",
+          "word": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "weight_sum_residual": 4.440892098500626e-16,
+        "weights_called_Born_probability": false
+      },
+      "4": {
+        "adapter_covariance_failures": 0,
+        "adapter_covariance_tests": 2112,
+        "bath_basis_all24_covariance_failures": 0,
+        "bath_basis_all24_covariance_tests": 576,
+        "bath_basis_identity_and_inverse_failures": 0,
+        "bath_basis_identity_and_inverse_tests": 48,
+        "branch_support_census_called_one_realized_history": false,
+        "emission_ports_per_time": {
+          "1": 6,
+          "2": 6,
+          "3": 6,
+          "4": 6
+        },
+        "emission_time_verdicts": {
+          "1": {
+            "kind": "identified",
+            "law": "unique_quorum",
+            "witnesses": {
+              "even_nonzero": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "low_density": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "nonempty": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "odd_shells": [
+                0,
+                0,
+                0,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "2": {
+            "kind": "identified",
+            "law": "unique_quorum",
+            "witnesses": {
+              "even_nonzero": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "low_density": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "nonempty": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "odd_shells": [
+                0,
+                0,
+                0,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "3": {
+            "kind": "identified",
+            "law": "unique_quorum",
+            "witnesses": {
+              "even_nonzero": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "low_density": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "nonempty": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "odd_shells": [
+                0,
+                0,
+                0,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "4": {
+            "kind": "identified",
+            "law": "unique_quorum",
+            "witnesses": {
+              "even_nonzero": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "low_density": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "nonempty": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "odd_shells": [
+                0,
+                0,
+                0,
+                1,
+                1,
+                1
+              ]
+            }
+          }
+        },
+        "emit_work_leakage_failures": 0,
+        "event_rows": 88,
+        "held_reject_verdict": {
+          "completing_shell_sets": [
+            [
+              2
+            ]
+          ],
+          "consistent": [
+            "low_density",
+            "unique_quorum"
+          ],
+          "kind": "ambiguous"
+        },
+        "inverse_failures": 0,
+        "law_semantics": "one sigma is objective within the separately supplied collision-sigma candidate law; runner enumerates support and never samples",
+        "objective_sigma_weights": [
+          0.06250000000000003,
+          0.5000000000000001,
+          0.2500000000000001,
+          0.12500000000000006,
+          0.06250000000000003
+        ],
+        "pass": true,
+        "pending_ports": 6,
+        "pending_verdict": {
+          "kind": "off_family",
+          "witnesses": {
+            "even_nonzero": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            "low_density": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "nonempty": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "odd_shells": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "unique_quorum": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "port_grammar_failures": 0,
+        "reject_verdict": {
+          "kind": "identified",
+          "law": "unique_quorum",
+          "witnesses": {
+            "even_nonzero": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            "low_density": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            "nonempty": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            "odd_shells": [
+              0,
+              0,
+              0,
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "source_branch_reject_and_bath_exhaust_retention_failures": 0,
+        "structural_reject_ports": 58,
+        "train_emission_verdicts": {
+          "1": {
+            "kind": "identified",
+            "law": "unique_quorum",
+            "witnesses": {
+              "even_nonzero": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "low_density": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "nonempty": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "odd_shells": [
+                0,
+                0,
+                0,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "2": {
+            "kind": "identified",
+            "law": "unique_quorum",
+            "witnesses": {
+              "even_nonzero": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "low_density": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "nonempty": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "odd_shells": [
+                0,
+                0,
+                0,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "3": {
+            "kind": "identified",
+            "law": "unique_quorum",
+            "witnesses": {
+              "even_nonzero": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "low_density": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "nonempty": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "odd_shells": [
+                0,
+                0,
+                0,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "4": {
+            "kind": "identified",
+            "law": "unique_quorum",
+            "witnesses": {
+              "even_nonzero": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "low_density": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "nonempty": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "odd_shells": [
+                0,
+                0,
+                0,
+                1,
+                1,
+                1
+              ]
+            }
+          }
+        },
+        "transition_support_verdict": {
+          "kind": "refuse_contradiction",
+          "word": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "weight_sum_residual": 4.440892098500626e-16,
+        "weights_called_Born_probability": false
+      },
+      "6": {
+        "adapter_covariance_failures": 0,
+        "adapter_covariance_tests": 2400,
+        "bath_basis_all24_covariance_failures": 0,
+        "bath_basis_all24_covariance_tests": 864,
+        "bath_basis_identity_and_inverse_failures": 0,
+        "bath_basis_identity_and_inverse_tests": 72,
+        "branch_support_census_called_one_realized_history": false,
+        "emission_ports_per_time": {
+          "1": 6,
+          "2": 6,
+          "3": 6,
+          "4": 6,
+          "5": 6,
+          "6": 6
+        },
+        "emission_time_verdicts": {
+          "1": {
+            "kind": "identified",
+            "law": "unique_quorum",
+            "witnesses": {
+              "even_nonzero": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "low_density": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "nonempty": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "odd_shells": [
+                0,
+                0,
+                0,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "2": {
+            "kind": "identified",
+            "law": "unique_quorum",
+            "witnesses": {
+              "even_nonzero": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "low_density": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "nonempty": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "odd_shells": [
+                0,
+                0,
+                0,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "3": {
+            "kind": "identified",
+            "law": "unique_quorum",
+            "witnesses": {
+              "even_nonzero": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "low_density": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "nonempty": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "odd_shells": [
+                0,
+                0,
+                0,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "4": {
+            "kind": "identified",
+            "law": "unique_quorum",
+            "witnesses": {
+              "even_nonzero": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "low_density": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "nonempty": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "odd_shells": [
+                0,
+                0,
+                0,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "5": {
+            "kind": "identified",
+            "law": "unique_quorum",
+            "witnesses": {
+              "even_nonzero": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "low_density": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "nonempty": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "odd_shells": [
+                0,
+                0,
+                0,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "6": {
+            "kind": "identified",
+            "law": "unique_quorum",
+            "witnesses": {
+              "even_nonzero": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "low_density": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "nonempty": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "odd_shells": [
+                0,
+                0,
+                0,
+                1,
+                1,
+                1
+              ]
+            }
+          }
+        },
+        "emit_work_leakage_failures": 0,
+        "event_rows": 100,
+        "held_reject_verdict": {
+          "completing_shell_sets": [
+            [
+              2
+            ]
+          ],
+          "consistent": [
+            "low_density",
+            "unique_quorum"
+          ],
+          "kind": "ambiguous"
+        },
+        "inverse_failures": 0,
+        "law_semantics": "one sigma is objective within the separately supplied collision-sigma candidate law; runner enumerates support and never samples",
+        "objective_sigma_weights": [
+          0.015625000000000007,
+          0.5000000000000001,
+          0.2500000000000001,
+          0.12500000000000006,
+          0.06250000000000003,
+          0.031250000000000014,
+          0.015625000000000007
+        ],
+        "pass": true,
+        "pending_ports": 6,
+        "pending_verdict": {
+          "kind": "off_family",
+          "witnesses": {
+            "even_nonzero": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            "low_density": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "nonempty": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "odd_shells": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "unique_quorum": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "port_grammar_failures": 0,
+        "reject_verdict": {
+          "kind": "identified",
+          "law": "unique_quorum",
+          "witnesses": {
+            "even_nonzero": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            "low_density": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            "nonempty": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            "odd_shells": [
+              0,
+              0,
+              0,
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "source_branch_reject_and_bath_exhaust_retention_failures": 0,
+        "structural_reject_ports": 58,
+        "train_emission_verdicts": {
+          "1": {
+            "kind": "identified",
+            "law": "unique_quorum",
+            "witnesses": {
+              "even_nonzero": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "low_density": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "nonempty": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "odd_shells": [
+                0,
+                0,
+                0,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "2": {
+            "kind": "identified",
+            "law": "unique_quorum",
+            "witnesses": {
+              "even_nonzero": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "low_density": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "nonempty": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "odd_shells": [
+                0,
+                0,
+                0,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "3": {
+            "kind": "identified",
+            "law": "unique_quorum",
+            "witnesses": {
+              "even_nonzero": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "low_density": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "nonempty": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "odd_shells": [
+                0,
+                0,
+                0,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "4": {
+            "kind": "identified",
+            "law": "unique_quorum",
+            "witnesses": {
+              "even_nonzero": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "low_density": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "nonempty": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "odd_shells": [
+                0,
+                0,
+                0,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "5": {
+            "kind": "identified",
+            "law": "unique_quorum",
+            "witnesses": {
+              "even_nonzero": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "low_density": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "nonempty": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "odd_shells": [
+                0,
+                0,
+                0,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "6": {
+            "kind": "identified",
+            "law": "unique_quorum",
+            "witnesses": {
+              "even_nonzero": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "low_density": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "nonempty": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "odd_shells": [
+                0,
+                0,
+                0,
+                1,
+                1,
+                1
+              ]
+            }
+          }
+        },
+        "transition_support_verdict": {
+          "kind": "refuse_contradiction",
+          "word": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "weight_sum_residual": 4.440892098500626e-16,
+        "weights_called_Born_probability": false
+      }
+    },
+    "host_sampler_called": false,
+    "malformed_rows": [
+      {
+        "case": "multiple_sigma",
+        "refused": true
+      },
+      {
+        "case": "missing_sigma",
+        "refused": true
+      },
+      {
+        "case": "dirty_emit_work",
+        "refused": true
+      },
+      {
+        "case": "dirty_port_target",
+        "refused": true
+      },
+      {
+        "case": "corrupt_blockade_output",
+        "refused": true
+      }
+    ],
+    "maximum_logical_gate_support_M2": 3,
+    "maximum_weight_sum_residual": 4.440892098500626e-16,
+    "objective_within_supplied_candidate_law_not_framework_actuality": true,
+    "pass": true,
+    "prior_L3_L4_L6_bath_resources": [
+      {
+        "capacity": 3,
+        "explicit_M2": 246,
+        "horizon": 3,
+        "pass": true,
+        "split": "train"
+      },
+      {
+        "capacity": 4,
+        "explicit_M2": 352,
+        "horizon": 4,
+        "pass": true,
+        "split": "held_out"
+      },
+      {
+        "capacity": 6,
+        "explicit_M2": 600,
+        "horizon": 6,
+        "pass": true,
+        "split": "held"
+      }
+    ],
+    "prior_resource_rows_match_preregistration": true,
+    "random_module_imported": false,
+    "retained_quantum_bath_is_exact_identity_spectator": true,
+    "runtime_host_branch_index_parameter": false,
+    "schedule_resources": {
+      "3": {
+        "CNOT": 57,
+        "TOFFOLI": 18,
+        "X": 1,
+        "bath_spectator_disjoint_from_all_gate_operands": true,
+        "bounded_M2": 190,
+        "logical_gates": 76,
+        "retained_quantum_bath_spectator_M2": 18
+      },
+      "4": {
+        "CNOT": 59,
+        "TOFFOLI": 18,
+        "X": 1,
+        "bath_spectator_disjoint_from_all_gate_operands": true,
+        "bounded_M2": 197,
+        "logical_gates": 78,
+        "retained_quantum_bath_spectator_M2": 24
+      },
+      "6": {
+        "CNOT": 63,
+        "TOFFOLI": 18,
+        "X": 1,
+        "bath_spectator_disjoint_from_all_gate_operands": true,
+        "bounded_M2": 211,
+        "logical_gates": 82,
+        "retained_quantum_bath_spectator_M2": 36
+      }
+    },
+    "source_blockade_word_mutated": false,
+    "total_adapter_covariance_failures": 0.0,
+    "total_emit_work_leakage_failures": 0,
+    "total_event_rows": 270,
+    "total_inverse_failures": 0,
+    "total_port_failures": 0,
+    "total_source_branch_reject_and_bath_exhaust_retention_failures": 0,
+    "unchanged_Cycle625_extension_used": true
+  },
+  "audit": "unset",
+  "authority": "none",
+  "axiom_pressure": false,
+  "cycle": 685,
+  "dependency_ledger": {
+    "Born_probability_derived": false,
+    "derived": [
+      "C662 all24 fixed-point archive exhaust",
+      "C662 reversible partial fragment",
+      "Cycle663 exact branch-weight match",
+      "all reject/pending/emission port fields by gates",
+      "inverse, deletion, leakage, lawful-domain and all24/all576 controls",
+      "route-level discriminator verdicts"
+    ],
+    "framework_Record_derived": false,
+    "frequency_derived": false,
+    "nature_law_selected": false,
+    "new_edges": [
+      "Cycle662 objective sigma -> reversible scalar branch fragment",
+      "Cycle663 CAND/PENDING + supplied objective collision sigma -> reversible exact Cycle625-B/Cycle531 port",
+      "type-correct fixed emission stratum -> unchanged discriminator -> unique_quorum candidate identity",
+      "type-correct transition support -> unchanged discriminator -> nondeterminism refusal"
+    ],
+    "objective_actuality_derived": false,
+    "open": [
+      "C662 physical directional apparatus bound to sigma",
+      "derivation/selection of objective collision kernel",
+      "non-erasing renewable bath",
+      "nature-law selection",
+      "framework Record",
+      "actuality beyond candidate ontology",
+      "empirical frequency/Born interpretation",
+      "gravity/source"
+    ],
+    "pass": true,
+    "six_wall_ledger": {
+      "C_int": "bounded collision-sigma/port adapter positive; stochastic jump ontology supplied",
+      "C_local": "bounded H3/H4/H6, all24/all576 positive; no infinite/noisy deployment",
+      "C_num": "exact candidate branch weights and residuals; no numerical-to-Born bridge",
+      "C_ref": "unchanged; no new physical reference",
+      "C_source": "finite ready/spent and bath exhaust counted; no energy/stress/gravity or renewable source",
+      "C_wrap": "candidate occurrence tuple constructed for Cycle663; framework Record/history still open"
+    },
+    "supplied": [
+      "Cycle662 hybrid objective jump ontology",
+      "Cycle663 objective collision-sigma jump ontology",
+      "blank finite M2 target",
+      "Cycle625/Cycle531 schedule",
+      "external five-law tables and decoder",
+      "compile-time cubic chart",
+      "H3/H4/H6 fresh bath resources"
+    ]
+  },
+  "elapsed_seconds": 82.39945220947266,
+  "external_discriminator": {
+    "external_fail_count": 0,
+    "external_final_pass": true,
+    "external_pass_count": 24,
+    "function_sha256": "74badb8a8417ff039b386a4abcce4650865cc64e8c74b926ec6edaa0b01f488f",
+    "pass": true,
+    "signature": [
+      "stream",
+      "tables",
+      "frames"
+    ],
+    "synthetic_emit_called": false
+  },
+  "framework_Record_derived": false,
+  "frequency_derived": false,
+  "frozen_shores": {
+    "current_expected": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_ACTUAL_FORMATION_RECORD_BORN_ADMISSION_DISCRIMINATOR_BRIDGE_CYCLE682_NOTE_2026-07-23.md": "3a38403e21c84e11eadee2b5483e22f6111733042e9e51d3ad8ea2a71f54a280",
+      "docs/work_history/repo/review_feedback/PHYSICAL_DISSIPATIVE_METASTABLE_FORMATION_CHANNEL_CYCLE663_NOTE_2026-07-23.md": "96f59a3f79ce7c29f3c9ccdf93cae9503ea4cd0084821c11ba6e0545046bec87",
+      "docs/work_history/repo/review_feedback/PHYSICAL_OBJECTIVE_STOCHASTIC_OPEN_DILATION_CYCLE662_NOTE_2026-07-23.md": "bdc8dda304985a62c73fc6e7a03f11d61041dd8053a9321fb7171c9b22947a05",
+      "outputs/physical_actual_formation_record_born_admission_discriminator_bridge_cycle682_cold_2026_07_23.txt": "026fe080cda07f022faf3b0dd73487f50cb9f9da46c274fa00e6f0623d51397f",
+      "outputs/physical_actual_formation_record_born_admission_discriminator_bridge_cycle682_receipt_2026_07_23.json": "736a7ed18693e90753df83aa65931a0251d0864b00ecacb4ddfe13d9c787e24a",
+      "outputs/physical_dissipative_metastable_formation_channel_cycle663_cold_2026_07_23.txt": "ec3fc442ab5a393a921f03517221db3f385667f5bf18b7ec55db0515d42cb680",
+      "outputs/physical_dissipative_metastable_formation_channel_cycle663_receipt_2026_07_23.json": "ab246cd35e6b6f30840621ca3e1eb9258a936de1c675fb2f0f429e9c131aa9b5",
+      "outputs/physical_objective_stochastic_open_dilation_cycle662_cold_2026_07_23.txt": "14c431047466462c57ecff1c83472e5233e88af3fc454920b6f6d6465a8cc625",
+      "outputs/physical_objective_stochastic_open_dilation_cycle662_receipt_2026_07_23.json": "27b258f1e4d96fb26f65937875bea32d74ecdfa62712c353e3327d0357a2c806",
+      "scripts/physical_actual_formation_record_born_admission_discriminator_bridge_cycle682_2026_07_23.py": "625b7e0c8aecd779c949a8b0a05d0acf4fe8926ab69e7a13b3ae96e09881d318",
+      "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py": "a618b5803cc1313a3dd644e3e066bb987bf366d8215a50a43d4260c69847b9e9",
+      "scripts/physical_dissipative_metastable_formation_channel_cycle663_2026_07_23.py": "03446972470065a781c78b8e220169ca9d65239d1054535992e3e16b3ece09e4",
+      "scripts/physical_objective_stochastic_open_dilation_cycle662_2026_07_23.py": "219b6d3d93884a0ab8d9b0cc6c79850d008193fd5571b0281c76b6f8707d6b84",
+      "scripts/physical_selected_seam_conditional_record_binder_cycle531_2026_07_21.py": "8885593dcc644e601179891265c226158c8835a8a143ed7205c0cc7e291e9057"
+    },
+    "current_observed": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_ACTUAL_FORMATION_RECORD_BORN_ADMISSION_DISCRIMINATOR_BRIDGE_CYCLE682_NOTE_2026-07-23.md": "3a38403e21c84e11eadee2b5483e22f6111733042e9e51d3ad8ea2a71f54a280",
+      "docs/work_history/repo/review_feedback/PHYSICAL_DISSIPATIVE_METASTABLE_FORMATION_CHANNEL_CYCLE663_NOTE_2026-07-23.md": "96f59a3f79ce7c29f3c9ccdf93cae9503ea4cd0084821c11ba6e0545046bec87",
+      "docs/work_history/repo/review_feedback/PHYSICAL_OBJECTIVE_STOCHASTIC_OPEN_DILATION_CYCLE662_NOTE_2026-07-23.md": "bdc8dda304985a62c73fc6e7a03f11d61041dd8053a9321fb7171c9b22947a05",
+      "outputs/physical_actual_formation_record_born_admission_discriminator_bridge_cycle682_cold_2026_07_23.txt": "026fe080cda07f022faf3b0dd73487f50cb9f9da46c274fa00e6f0623d51397f",
+      "outputs/physical_actual_formation_record_born_admission_discriminator_bridge_cycle682_receipt_2026_07_23.json": "736a7ed18693e90753df83aa65931a0251d0864b00ecacb4ddfe13d9c787e24a",
+      "outputs/physical_dissipative_metastable_formation_channel_cycle663_cold_2026_07_23.txt": "ec3fc442ab5a393a921f03517221db3f385667f5bf18b7ec55db0515d42cb680",
+      "outputs/physical_dissipative_metastable_formation_channel_cycle663_receipt_2026_07_23.json": "ab246cd35e6b6f30840621ca3e1eb9258a936de1c675fb2f0f429e9c131aa9b5",
+      "outputs/physical_objective_stochastic_open_dilation_cycle662_cold_2026_07_23.txt": "14c431047466462c57ecff1c83472e5233e88af3fc454920b6f6d6465a8cc625",
+      "outputs/physical_objective_stochastic_open_dilation_cycle662_receipt_2026_07_23.json": "27b258f1e4d96fb26f65937875bea32d74ecdfa62712c353e3327d0357a2c806",
+      "scripts/physical_actual_formation_record_born_admission_discriminator_bridge_cycle682_2026_07_23.py": "625b7e0c8aecd779c949a8b0a05d0acf4fe8926ab69e7a13b3ae96e09881d318",
+      "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py": "a618b5803cc1313a3dd644e3e066bb987bf366d8215a50a43d4260c69847b9e9",
+      "scripts/physical_dissipative_metastable_formation_channel_cycle663_2026_07_23.py": "03446972470065a781c78b8e220169ca9d65239d1054535992e3e16b3ece09e4",
+      "scripts/physical_objective_stochastic_open_dilation_cycle662_2026_07_23.py": "219b6d3d93884a0ab8d9b0cc6c79850d008193fd5571b0281c76b6f8707d6b84",
+      "scripts/physical_selected_seam_conditional_record_binder_cycle531_2026_07_21.py": "8885593dcc644e601179891265c226158c8835a8a143ed7205c0cc7e291e9057"
+    },
+    "current_shore": "03b05c09a91c0ef21715f27f041d37e25d2b9b0f",
+    "expected_preregistration_sha256": "1ff895c064b4e709c6646d79a19374d911bca438ccae0548a25a1eeb8ec7dc37",
+    "expected_target_sha256": "71672cc3747d5d0768b28bf1c0f053c3945b1da19223d1bad4b549e4a9828eff",
+    "external_evidence_commit": "317e866a3f",
+    "external_expected": {
+      "cold": "aa397cd6ab4803c84cdc67ccc204a8c5c1e9dd0ae593de9d19b182bec265d1c6",
+      "note": "9ccf6a4eadd36d59139a81200dd7f9d06fd85911eb7b526c050c820e2b55d466",
+      "receipt": "979e8d28051234bcc5e2f4aed287715c58113e42c6a715727cf811cb5ddbe8ad",
+      "script": "e73740331460538f4909532723a8a5baa34e344df55f9a97ee0320c041de868e",
+      "worker_grid": "5eeb9ca2c109e3f6c23a5a761b29c234dcffa36223025769aebc1f9f12ea0250"
+    },
+    "external_observed": {
+      "cold": "aa397cd6ab4803c84cdc67ccc204a8c5c1e9dd0ae593de9d19b182bec265d1c6",
+      "note": "9ccf6a4eadd36d59139a81200dd7f9d06fd85911eb7b526c050c820e2b55d466",
+      "receipt": "979e8d28051234bcc5e2f4aed287715c58113e42c6a715727cf811cb5ddbe8ad",
+      "script": "e73740331460538f4909532723a8a5baa34e344df55f9a97ee0320c041de868e",
+      "worker_grid": "5eeb9ca2c109e3f6c23a5a761b29c234dcffa36223025769aebc1f9f12ea0250"
+    },
+    "external_script_commit": "27a4db8c42",
+    "first_load_line": 176,
+    "frozen_before_load": true,
+    "no_cherry_pick_or_source_duplication": true,
+    "origin_main_skill_freshness": {
+      "advanced": true,
+      "checked": true,
+      "head": "f35ab187c24ba6ea8a466e95eca5f428e004a26e"
+    },
+    "pass": true,
+    "preregistration_line": 48,
+    "preregistration_sha256": "1ff895c064b4e709c6646d79a19374d911bca438ccae0548a25a1eeb8ec7dc37",
+    "receipt_pass": {
+      "662": true,
+      "663": true,
+      "682": true,
+      "external": true
+    },
+    "target_line": 14,
+    "target_sha256": "71672cc3747d5d0768b28bf1c0f053c3945b1da19223d1bad4b549e4a9828eff",
+    "working_dependencies_equal_exact_shore_before_import": true,
+    "working_dependency_expected": {
+      "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py": "a618b5803cc1313a3dd644e3e066bb987bf366d8215a50a43d4260c69847b9e9",
+      "scripts/physical_forcing_menu_instrument_bridge_tournament_cycle634_2026_07_23.py": "ca187b7dda5c2b1b56a63ba960695734fc9915177c2769ef957913a096a74d52",
+      "scripts/physical_postformation_preservation_non_erasing_renewal_tournament_cycle621_2026_07_22.py": "faa1a251d7586ed9d2e496cc73b42f45108347fe5f627523fcef3caa4e652a73"
+    },
+    "working_dependency_observed": {
+      "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py": "a618b5803cc1313a3dd644e3e066bb987bf366d8215a50a43d4260c69847b9e9",
+      "scripts/physical_forcing_menu_instrument_bridge_tournament_cycle634_2026_07_23.py": "ca187b7dda5c2b1b56a63ba960695734fc9915177c2769ef957913a096a74d52",
+      "scripts/physical_postformation_preservation_non_erasing_renewal_tournament_cycle621_2026_07_22.py": "faa1a251d7586ed9d2e496cc73b42f45108347fe5f627523fcef3caa4e652a73"
+    }
+  },
+  "maximum_RSS_bytes": 74186752,
+  "nature_law_selected": false,
+  "no_go_discipline": {
+    "N1_approach_registry": [
+      {
+        "authority": {
+          "fragment": "\"member_receipt_occurrence_frame_type\": \"Cycle531 scalar labels",
+          "line": 475,
+          "path": "scripts/physical_objective_stochastic_open_dilation_cycle662_2026_07_23.py",
+          "ref": "03b05c09a91c0ef21715f27f041d37e25d2b9b0f"
+        },
+        "family": "Cycle662 direct pattern embedding",
+        "honesty": "ATTEMPTED",
+        "mechanism_invariant": "literal bit identity",
+        "object_formulation": "variable 1-4 pointer bits -> archive6",
+        "result": "typed arity refusal",
+        "strength": "weaker",
+        "terminal_obligation": "exact arity and port grammar"
+      },
+      {
+        "authority": {
+          "fragment": "\"member_receipt_occurrence_frame_type\": \"Cycle531 scalar labels",
+          "line": 475,
+          "path": "scripts/physical_objective_stochastic_open_dilation_cycle662_2026_07_23.py",
+          "ref": "03b05c09a91c0ef21715f27f041d37e25d2b9b0f"
+        },
+        "family": "Cycle662 scalar equivariant port",
+        "honesty": "ATTEMPTED",
+        "mechanism_invariant": "all24 fixed-point enumeration",
+        "object_formulation": "trivial cubic branch representation -> directional winner",
+        "result": "0 accepted covariant tuples among 128 invariant archive/loser pairs",
+        "strength": "target-equivalent for branch-only route",
+        "terminal_obligation": "well-formed accepted PortTuple"
+      },
+      {
+        "authority": {
+          "fragment": "objective_sigma_is_law_state_not_input_token",
+          "line": 257,
+          "path": "scripts/physical_objective_stochastic_open_dilation_cycle662_2026_07_23.py",
+          "ref": "03b05c09a91c0ef21715f27f041d37e25d2b9b0f"
+        },
+        "family": "Cycle662 independent packet graft",
+        "honesty": "ATTEMPTED",
+        "mechanism_invariant": "separate transported direction",
+        "object_formulation": "sigma plus Cycle621 direction packet",
+        "result": "typed hidden-supply refusal; packet loop is independent",
+        "strength": "unknown/comparable",
+        "terminal_obligation": "physical binding of packet to sigma"
+      },
+      {
+        "authority": {
+          "fragment": "objective_sigma_is_law_state_not_input_token",
+          "line": 257,
+          "path": "scripts/physical_objective_stochastic_open_dilation_cycle662_2026_07_23.py",
+          "ref": "03b05c09a91c0ef21715f27f041d37e25d2b9b0f"
+        },
+        "family": "Cycle662 reversible scalar fragment",
+        "honesty": "ATTEMPTED",
+        "mechanism_invariant": "support-two CNOT copy and exact inverse",
+        "object_formulation": "objective branch basis fields",
+        "result": "positive 161-branch fragment",
+        "strength": "weaker",
+        "terminal_obligation": "strongest lawful partial without vector invention"
+      },
+      {
+        "authority": {
+          "fragment": "CAND = tuple(range(0, 6))",
+          "line": 243,
+          "path": "scripts/physical_dissipative_metastable_formation_channel_cycle663_2026_07_23.py",
+          "ref": "03b05c09a91c0ef21715f27f041d37e25d2b9b0f"
+        },
+        "family": "Cycle663 objective collision-sigma adapter",
+        "honesty": "ATTEMPTED",
+        "mechanism_invariant": "supplied jump sigma and reversible unchanged extension",
+        "object_formulation": "six CAND/PENDING rails plus retained bath sectors",
+        "result": "positive exact adapter",
+        "strength": "target-equivalent under supplied law",
+        "terminal_obligation": "all reject/pending/emission ports"
+      },
+      {
+        "authority": {
+          "fragment": "A bath emission branch is not objective actuality",
+          "line": 1002,
+          "path": "scripts/physical_dissipative_metastable_formation_channel_cycle663_2026_07_23.py",
+          "ref": "03b05c09a91c0ef21715f27f041d37e25d2b9b0f"
+        },
+        "family": "Cycle663 coherent dilation alone",
+        "honesty": "RULED OUT BY PRIOR",
+        "mechanism_invariant": "retained inverse and no collapse",
+        "object_formulation": "global unitary amplitude vector",
+        "result": "no objective path without separate law",
+        "strength": "incomparable/weaker",
+        "terminal_obligation": "objective classical selector"
+      },
+      {
+        "authority": {
+          "fragment": "\"type\": \"PortSchemaMismatch\"",
+          "line": 367,
+          "path": "scripts/physical_actual_formation_record_born_admission_discriminator_bridge_cycle682_2026_07_23.py",
+          "ref": "03b05c09a91c0ef21715f27f041d37e25d2b9b0f"
+        },
+        "family": "relational apparatus direction",
+        "honesty": "OPEN_NOT_COUNTED",
+        "mechanism_invariant": "cubic-covariant apparatus orientation",
+        "object_formulation": "new local vector carrier bound to C662 sigma",
+        "result": "concrete reopen route",
+        "strength": "unknown/comparable",
+        "terminal_obligation": "derive carrier and binding locally"
+      }
+    ],
+    "N1_qualifying_normalized_families": 6,
+    "N2_directed_pairwise_table": [
+      {
+        "from": "W_C662_direction_type",
+        "from_closes_to": false,
+        "independent": true,
+        "reason": "direction type, stochastic-law supply, nature selection, Record status and probability meaning are distinct",
+        "to": "W_candidate_law_supply",
+        "to_closes_from": false
+      },
+      {
+        "from": "W_C662_direction_type",
+        "from_closes_to": false,
+        "independent": true,
+        "reason": "direction type, stochastic-law supply, nature selection, Record status and probability meaning are distinct",
+        "to": "W_nature_law_selection",
+        "to_closes_from": false
+      },
+      {
+        "from": "W_C662_direction_type",
+        "from_closes_to": false,
+        "independent": true,
+        "reason": "direction type, stochastic-law supply, nature selection, Record status and probability meaning are distinct",
+        "to": "W_Record_identification",
+        "to_closes_from": false
+      },
+      {
+        "from": "W_C662_direction_type",
+        "from_closes_to": false,
+        "independent": true,
+        "reason": "direction type, stochastic-law supply, nature selection, Record status and probability meaning are distinct",
+        "to": "W_Born_frequency",
+        "to_closes_from": false
+      },
+      {
+        "from": "W_candidate_law_supply",
+        "from_closes_to": false,
+        "independent": true,
+        "reason": "direction type, stochastic-law supply, nature selection, Record status and probability meaning are distinct",
+        "to": "W_C662_direction_type",
+        "to_closes_from": false
+      },
+      {
+        "from": "W_candidate_law_supply",
+        "from_closes_to": false,
+        "independent": true,
+        "reason": "direction type, stochastic-law supply, nature selection, Record status and probability meaning are distinct",
+        "to": "W_nature_law_selection",
+        "to_closes_from": false
+      },
+      {
+        "from": "W_candidate_law_supply",
+        "from_closes_to": false,
+        "independent": true,
+        "reason": "direction type, stochastic-law supply, nature selection, Record status and probability meaning are distinct",
+        "to": "W_Record_identification",
+        "to_closes_from": false
+      },
+      {
+        "from": "W_candidate_law_supply",
+        "from_closes_to": false,
+        "independent": true,
+        "reason": "direction type, stochastic-law supply, nature selection, Record status and probability meaning are distinct",
+        "to": "W_Born_frequency",
+        "to_closes_from": false
+      },
+      {
+        "from": "W_nature_law_selection",
+        "from_closes_to": false,
+        "independent": true,
+        "reason": "direction type, stochastic-law supply, nature selection, Record status and probability meaning are distinct",
+        "to": "W_C662_direction_type",
+        "to_closes_from": false
+      },
+      {
+        "from": "W_nature_law_selection",
+        "from_closes_to": false,
+        "independent": true,
+        "reason": "direction type, stochastic-law supply, nature selection, Record status and probability meaning are distinct",
+        "to": "W_candidate_law_supply",
+        "to_closes_from": false
+      },
+      {
+        "from": "W_nature_law_selection",
+        "from_closes_to": false,
+        "independent": true,
+        "reason": "direction type, stochastic-law supply, nature selection, Record status and probability meaning are distinct",
+        "to": "W_Record_identification",
+        "to_closes_from": false
+      },
+      {
+        "from": "W_nature_law_selection",
+        "from_closes_to": false,
+        "independent": true,
+        "reason": "direction type, stochastic-law supply, nature selection, Record status and probability meaning are distinct",
+        "to": "W_Born_frequency",
+        "to_closes_from": false
+      },
+      {
+        "from": "W_Record_identification",
+        "from_closes_to": false,
+        "independent": true,
+        "reason": "direction type, stochastic-law supply, nature selection, Record status and probability meaning are distinct",
+        "to": "W_C662_direction_type",
+        "to_closes_from": false
+      },
+      {
+        "from": "W_Record_identification",
+        "from_closes_to": false,
+        "independent": true,
+        "reason": "direction type, stochastic-law supply, nature selection, Record status and probability meaning are distinct",
+        "to": "W_candidate_law_supply",
+        "to_closes_from": false
+      },
+      {
+        "from": "W_Record_identification",
+        "from_closes_to": false,
+        "independent": true,
+        "reason": "direction type, stochastic-law supply, nature selection, Record status and probability meaning are distinct",
+        "to": "W_nature_law_selection",
+        "to_closes_from": false
+      },
+      {
+        "from": "W_Record_identification",
+        "from_closes_to": false,
+        "independent": true,
+        "reason": "direction type, stochastic-law supply, nature selection, Record status and probability meaning are distinct",
+        "to": "W_Born_frequency",
+        "to_closes_from": false
+      },
+      {
+        "from": "W_Born_frequency",
+        "from_closes_to": false,
+        "independent": true,
+        "reason": "direction type, stochastic-law supply, nature selection, Record status and probability meaning are distinct",
+        "to": "W_C662_direction_type",
+        "to_closes_from": false
+      },
+      {
+        "from": "W_Born_frequency",
+        "from_closes_to": false,
+        "independent": true,
+        "reason": "direction type, stochastic-law supply, nature selection, Record status and probability meaning are distinct",
+        "to": "W_candidate_law_supply",
+        "to_closes_from": false
+      },
+      {
+        "from": "W_Born_frequency",
+        "from_closes_to": false,
+        "independent": true,
+        "reason": "direction type, stochastic-law supply, nature selection, Record status and probability meaning are distinct",
+        "to": "W_nature_law_selection",
+        "to_closes_from": false
+      },
+      {
+        "from": "W_Born_frequency",
+        "from_closes_to": false,
+        "independent": true,
+        "reason": "direction type, stochastic-law supply, nature selection, Record status and probability meaning are distinct",
+        "to": "W_Record_identification",
+        "to_closes_from": false
+      }
+    ],
+    "N2_walls": {
+      "W_Born_frequency": "branch weights are not empirical frequency or Born probability",
+      "W_C662_direction_type": "Cycle662 branch-only data are cubic scalars and do not carry a directional winner",
+      "W_Record_identification": "unchanged conditional occurrence port is not framework Record identity",
+      "W_candidate_law_supply": "Cycle663 objective collision-sigma jump ontology is explicitly supplied",
+      "W_nature_law_selection": "one working candidate kernel is not selection of nature's kernel"
+    },
+    "N3_hidden_wall_scan": [
+      {
+        "classification": "explicit load-bearing candidate-law premise",
+        "phrase": "supplied objective collision-sigma law"
+      },
+      {
+        "classification": "explicit finite resource",
+        "phrase": "blank M2 target"
+      },
+      {
+        "classification": "byte-pinned retained interface",
+        "phrase": "unchanged Cycle625 extension"
+      },
+      {
+        "classification": "compile-time transported structure, no runtime selector",
+        "phrase": "proper-cubic frame chart"
+      },
+      {
+        "classification": "transition census, explicitly not one realized history",
+        "phrase": "branch-support stream"
+      }
+    ],
+    "N4_residual_matches": [
+      {
+        "current_residual": "C662 branch-only direction type",
+        "match": true,
+        "prior": {
+          "fragment": "\"member_receipt_occurrence_frame_type\": \"Cycle531 scalar labels",
+          "line": 475,
+          "path": "scripts/physical_objective_stochastic_open_dilation_cycle662_2026_07_23.py",
+          "ref": "03b05c09a91c0ef21715f27f041d37e25d2b9b0f"
+        },
+        "prior_residual": "scalar label/frame type"
+      },
+      {
+        "current_residual": "same supplied-law ceiling",
+        "match": true,
+        "prior": {
+          "fragment": "objective_sigma_is_law_state_not_input_token",
+          "line": 257,
+          "path": "scripts/physical_objective_stochastic_open_dilation_cycle662_2026_07_23.py",
+          "ref": "03b05c09a91c0ef21715f27f041d37e25d2b9b0f"
+        },
+        "prior_residual": "sigma objective only within supplied law"
+      },
+      {
+        "current_residual": "separate supplied sigma is named, not inferred from amplitude",
+        "match": true,
+        "prior": {
+          "fragment": "A bath emission branch is not objective actuality",
+          "line": 1002,
+          "path": "scripts/physical_dissipative_metastable_formation_channel_cycle663_2026_07_23.py",
+          "ref": "03b05c09a91c0ef21715f27f041d37e25d2b9b0f"
+        },
+        "prior_residual": "coherent bath branch not objective"
+      },
+      {
+        "current_residual": "priority route exact schema",
+        "match": true,
+        "prior": {
+          "fragment": "\"type\": \"PortSchemaMismatch\"",
+          "line": 367,
+          "path": "scripts/physical_actual_formation_record_born_admission_discriminator_bridge_cycle682_2026_07_23.py",
+          "ref": "03b05c09a91c0ef21715f27f041d37e25d2b9b0f"
+        },
+        "prior_residual": "missing exact six-port schema"
+      },
+      {
+        "current_residual": "constructive Cycle663 adapter controls",
+        "match": true,
+        "prior": {
+          "fragment": "CAND = tuple(range(0, 6))",
+          "line": 243,
+          "path": "scripts/physical_dissipative_metastable_formation_channel_cycle663_2026_07_23.py",
+          "ref": "03b05c09a91c0ef21715f27f041d37e25d2b9b0f"
+        },
+        "prior_residual": "six directional retained input rails"
+      }
+    ],
+    "N5_rhetoric": [
+      {
+        "claim": "Cycle662 branch alone does not produce an accepted cubic-covariant port",
+        "lattice_wide": "untested and not claimed",
+        "per_block": "25 state rows/all24",
+        "per_element": "161 live branches",
+        "per_mode": "five menus",
+        "per_site": "one bounded fragment"
+      },
+      {
+        "claim": "coherent Cycle663 amplitude is not one classical port",
+        "lattice_wide": "untested",
+        "per_block": "all branch support retained",
+        "per_element": "pending/emission amplitude",
+        "per_mode": "H3/H4/H6",
+        "per_site": "one cell"
+      },
+      {
+        "claim": "candidate branch weight is not Born probability",
+        "lattice_wide": "empirical interpretation open",
+        "per_block": "no sampling/frequency",
+        "per_element": "exact kernel weight",
+        "per_mode": "all H branches",
+        "per_site": "one selected event"
+      }
+    ],
+    "N6_partial_closure_paths": [
+      {
+        "closes": "objective field preservation without fabrication",
+        "path": "Cycle662 scalar fragment",
+        "status": "EXECUTED_POSITIVE"
+      },
+      {
+        "closes": "candidate-law type-correct reject/pending/emission ports",
+        "path": "Cycle663 objective collision-sigma adapter",
+        "status": "EXECUTED_POSITIVE"
+      },
+      {
+        "closes": "priority route vector type",
+        "path": "C662 relational directional apparatus",
+        "status": "OPEN"
+      },
+      {
+        "closes": "candidate-law supply",
+        "path": "autonomous collision-sigma law derivation",
+        "status": "OPEN"
+      },
+      {
+        "closes": "frequency/Born interpretation",
+        "path": "empirical repeated-history campaign",
+        "status": "OPEN"
+      }
+    ],
+    "N6_primitive_registry_claim_made": false,
+    "N7_steelman": "The C662 branch-only refusal is not constitutional: couple the 125-site instrument to a local oriented apparatus carrier whose six-state vector transforms under the proper-cubic permutation representation, prove the carrier's preinteraction direction is bound reversibly to the selected sigma rather than independently supplied, and feed that bound vector into the same Cycle625 gate word used here. Cycle685's positive Cycle663 construction already demonstrates that once genuine CAND/PENDING vector rails exist, no common port-substrate obstruction remains.",
+    "N8_cross_cycle_echo": [
+      {
+        "cycle": 625,
+        "remaining": "extensional/nature law selection",
+        "retired": "exact port grammar"
+      },
+      {
+        "cycle": 662,
+        "remaining": "direction type and law derivation",
+        "retired": "objective sigma within supplied law"
+      },
+      {
+        "cycle": 663,
+        "remaining": "objective selector",
+        "retired": "six-direction blockade/dilation"
+      },
+      {
+        "cycle": 682,
+        "remaining": "constructive adapter attempt",
+        "retired": "typed PortSchemaMismatch"
+      },
+      {
+        "cycle": 685,
+        "remaining": "C662 vector carrier and Born/nature meaning",
+        "retired": "Cycle663 candidate-law adapter"
+      }
+    ],
+    "axiom_pressure": false,
+    "broad_no_go_claim": false,
+    "minimum_content_claim": false,
+    "negative_claim_gate_status": "FAIL_DO_NOT_SHIP_BROAD_NEGATIVE",
+    "negative_gate_failure_reason": "positive Cycle663 route and concrete C662 apparatus-vector reopen mechanism",
+    "pass": true,
+    "shared_route_independent_obstruction": false,
+    "shipped_classification": "partial-narrowing plus independent positive construction",
+    "skill_freshness": {
+      "origin_main": "f35ab187c24ba6ea8a466e95eca5f428e004a26e",
+      "origin_main_advanced": true,
+      "origin_main_checked": true,
+      "proof_search_governance_read": true,
+      "remote_skill_followed": true
+    }
+  },
+  "note_contract": {
+    "missing": [],
+    "pass": true,
+    "required": [
+      "Authority: **none**",
+      "Audit: **unset**",
+      "objective **inside an explicitly supplied candidate stochastic law**",
+      "narrow route/type result",
+      "support census, not sampled frequencies or one history",
+      "there is no shared port-substrate obstruction",
+      "no minimum-content or axiom-pressure claim"
+    ]
+  },
+  "note_sha256": "2528c938d2faf861f039c68d68f9650ea85755542ea26a451550e13a3894e67d",
+  "objective_actuality_derived": false,
+  "optimal_next_campaign": "The C662 branch-only refusal is not constitutional: couple the 125-site instrument to a local oriented apparatus carrier whose six-state vector transforms under the proper-cubic permutation representation, prove the carrier's preinteraction direction is bound reversibly to the selected sigma rather than independently supplied, and feed that bound vector into the same Cycle625 gate word used here. Cycle685's positive Cycle663 construction already demonstrates that once genuine CAND/PENDING vector rails exist, no common port-substrate obstruction remains.",
+  "pass": true,
+  "route_disposition": {
+    "Cycle662_exact_port": "ROUTE_SPECIFIC_TYPED_REFUSAL",
+    "Cycle662_scalar_fragment": "POSITIVE_PARTIAL",
+    "Cycle663_objective_collision_sigma_port": "POSITIVE_UNDER_EXPLICIT_SUPPLIED_CANDIDATE_LAW"
+  },
+  "runner_sha256": "bf57940e69c09cdbfcc58baf64702c173982fca602607896024e9030ea0d6a8f",
+  "shared_route_independent_obstruction": false,
+  "status": "positive Cycle663 objective-within-supplied-law exact port adapter; Cycle662 reversible scalar partial and cubic type boundary",
+  "strongest_constructive_result": "a bounded reversible Cycle663 collision-sigma/reject adapter generates exact unchanged Cycle625-B/Cycle531 ports for all H3/H4/H6 structural reject, pending and emission-time sectors with zero inverse, leakage, grammar, all24 or all576 failures",
+  "tests_failed": 0,
+  "tests_passed": 7
+}

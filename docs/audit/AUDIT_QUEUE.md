@@ -62,7 +62,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 45 | `pmns_oriented_cycle_channel_value_law_note` | bounded_theorem | unaudited | critical | 771 | 18.59 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_pmns_oriented_cycle_channel_value_law.py` |
 | 46 | `self_consistency_forces_poisson_note` | bounded_theorem | non_terminal_conditional | critical | 771 | 18.09 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_self_consistent_field_equation.py` |
 | 47 | `poisson_self_gravity_loop_v3_note` | bounded_theorem | non_terminal_conditional | critical | 771 | 11.59 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/poisson_self_gravity_loop_v3.py` |
-| 48 | `pmns_graph_axis_to_active_lane_bridge_note` | bounded_theorem | audit_in_progress | critical | 771 | 11.09 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_pmns_graph_axis_to_active_lane_bridge.py` |
+| 48 | `pmns_graph_axis_to_active_lane_bridge_note` | bounded_theorem | non_terminal_failed | critical | 771 | 11.09 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_pmns_graph_axis_to_active_lane_bridge.py` |
 | 49 | `su3_cube_index_graph_shortcut_open_gate_note_2026-05-03` | no_go | unaudited | critical | 766 | 10.08 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_su3_cube_index_graph_shortcut_open_gate.py` |
 | 50 | `pmns_uniform_scalar_deformation_boundary_note` | positive_theorem | non_terminal_conditional | critical | 765 | 12.58 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_pmns_uniform_scalar_deformation_boundary.py` |
 

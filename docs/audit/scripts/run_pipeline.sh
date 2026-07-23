@@ -114,11 +114,15 @@ python3 docs/audit/scripts/sanitize_legacy_audit_artifacts.py
 # Run the ordinary pre-invalidation metric pass before checkpoint capture.
 # Seeding may add rows that did not exist during the pre-seed refresh; every
 # such row must receive topology criticality before the full-build fingerprint
-# is bound.
+# is bound. A final seed pass below then consumes that refreshed criticality
+# and records the producer receipt at the actual classifier-input fixed point.
 echo "==> 5/18 compute_load_bearing.py"
 python3 docs/audit/scripts/compute_load_bearing.py
 
 if [[ "${PIPELINE_MODE}" == "full" ]]; then
+  echo "==> 3a/18 seed_audit_ledger.py fixed-point receipt"
+  python3 docs/audit/scripts/seed_audit_ledger.py
+
   echo "==> 3b/18 static_pipeline_checkpoint.py prepare (fresh graph/seed proof)"
   python3 docs/audit/scripts/static_pipeline_checkpoint.py prepare
 

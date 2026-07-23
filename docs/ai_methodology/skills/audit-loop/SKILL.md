@@ -269,15 +269,18 @@ least every 15 minutes — never silence for a long run.
 - One full pipeline invocation must reach a generated-state fixed point.
   In a full run, `compute_load_bearing.py` first refreshes topology
   `criticality` from the newly built graph before the ledger seeder consumes
-  it, runs again before invalidation, and finally refreshes status-dependent
-  ancestor metrics after the effective-status/invalidation/restore fixed
-  point. Pipeline-produced ledger status-dependent metrics are derived outputs
-  in the static checkpoint; topology `criticality` remains fingerprinted
-  because the skipped ledger seeder consumes its prior value when deciding
-  whether legacy terminal rows require claim-type re-audit. Their underlying
-  notes, dependency edges, runners, and classifier inputs remain fingerprinted.
-  Never accept a design that requires a second operator-run pipeline merely to
-  stabilize the first.
+  it. Because that seeder can discover rows absent from the pre-seed ledger,
+  load-bearing runs again and a second idempotent seed pass consumes the
+  refreshed criticality and records the producer receipt before the static
+  checkpoint binds classifier inputs. The final load-bearing pass refreshes
+  status-dependent ancestor metrics after the effective-status/invalidation/
+  restore fixed point. Pipeline-produced ledger status-dependent metrics are
+  derived outputs in the static checkpoint; topology `criticality` remains
+  fingerprinted because the skipped ledger seeder consumes its prior value
+  when deciding whether legacy terminal rows require claim-type re-audit.
+  Their underlying notes, dependency edges, runners, and classifier inputs
+  remain fingerprinted. Never accept a design that requires a second
+  operator-run pipeline merely to stabilize the first.
 - Tracked generated audit surfaces must be commit-invariant. Never embed the
   current `HEAD` commit in a tracked pipeline output: committing that output
   changes `HEAD` and guarantees fresh dirt at the next regeneration.

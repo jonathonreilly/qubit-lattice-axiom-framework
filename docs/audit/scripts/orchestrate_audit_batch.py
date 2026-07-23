@@ -1144,6 +1144,120 @@ def finalize_worker(job: dict) -> tuple[dict | None, dict]:
     return envelope, result
 
 
+def _file_snapshot_signature(file_stat: os.stat_result) -> tuple:
+    """State that must remain unchanged before an in-place byte rewrite."""
+    return (
+        file_stat.st_dev,
+        file_stat.st_ino,
+        file_stat.st_nlink,
+        file_stat.st_uid,
+        file_stat.st_gid,
+        file_stat.st_size,
+        file_stat.st_mtime_ns,
+        file_stat.st_ctime_ns,
+        stat.S_IMODE(file_stat.st_mode),
+        getattr(file_stat, "st_flags", None),
+    )
+
+
+def _file_entry_signature(file_stat: os.stat_result) -> tuple:
+    """Entry metadata an in-place content rewrite must preserve exactly."""
+    return (
+        file_stat.st_dev,
+        file_stat.st_ino,
+        file_stat.st_nlink,
+        file_stat.st_uid,
+        file_stat.st_gid,
+        stat.S_IMODE(file_stat.st_mode),
+        getattr(file_stat, "st_flags", None),
+    )
+
+
+def _read_open_file(fd: int) -> bytes:
+    os.lseek(fd, 0, os.SEEK_SET)
+    chunks: list[bytes] = []
+    while True:
+        chunk = os.read(fd, 1024 * 1024)
+        if not chunk:
+            return b"".join(chunks)
+        chunks.append(chunk)
+
+
+def _write_all_at(fd: int, content: bytes, offset: int) -> None:
+    written = 0
+    while written < len(content):
+        count = os.pwrite(fd, content[written:], offset + written)
+        if count <= 0:
+            raise OSError("short write while recovering certification provenance")
+        written += count
+
+
+def _rewrite_verified_bytes_in_place(
+    path: Path,
+    *,
+    expected: bytes,
+    replacement: bytes,
+    expected_signature: tuple,
+) -> bool:
+    """Rewrite verified bytes without replacing the file or touching a sibling.
+
+    Keeping the same open inode preserves hardlinks, xattrs, ACLs, ownership,
+    exact permission bits, and every neighboring path. The advisory lock
+    coordinates cooperating writers; the signature and byte checks close the
+    observable check/mutation windows for non-cooperating writers.
+    """
+    flags = os.O_RDWR
+    if hasattr(os, "O_NOFOLLOW"):
+        flags |= os.O_NOFOLLOW
+    try:
+        fd = os.open(path, flags)
+    except OSError:
+        return False
+    try:
+        try:
+            fcntl.flock(fd, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        except OSError:
+            return False
+        before = os.fstat(fd)
+        if not stat.S_ISREG(before.st_mode):
+            return False
+        if _file_snapshot_signature(before) != expected_signature:
+            return False
+        if _read_open_file(fd) != expected:
+            return False
+
+        prefix = 0
+        shared_limit = min(len(expected), len(replacement))
+        while prefix < shared_limit and expected[prefix] == replacement[prefix]:
+            prefix += 1
+        suffix = 0
+        while (
+            suffix < shared_limit - prefix
+            and expected[len(expected) - suffix - 1]
+            == replacement[len(replacement) - suffix - 1]
+        ):
+            suffix += 1
+
+        if len(expected) == len(replacement):
+            end = len(replacement) - suffix if suffix else len(replacement)
+            _write_all_at(fd, replacement[prefix:end], prefix)
+        else:
+            _write_all_at(fd, replacement, 0)
+            os.ftruncate(fd, len(replacement))
+        os.fsync(fd)
+
+        after = os.fstat(fd)
+        if not stat.S_ISREG(after.st_mode):
+            return False
+        if _file_entry_signature(after) != _file_entry_signature(before):
+            return False
+        return _read_open_file(fd) == replacement
+    except OSError:
+        return False
+    finally:
+        os.close(fd)
+
+
 def recover_lane_certification_provenance_drift(
     status_output: str,
     *,
@@ -1158,11 +1272,10 @@ def recover_lane_certification_provenance_drift(
     be exactly either the committed payload with the obsolete field removed or
     with that field refreshed to the current commit, and refuses every staged,
     untracked, deleted, malformed, metadata, or content-bearing change. The
-    verified content-only Git patch is reversed as raw bytes instead of through
-    Git's working-tree conversion or by restoring the whole file. Exact mode
-    bits are checked across the reversal, an overlapping concurrent write makes
-    the patch fail, and a non-overlapping write survives for the post-recovery
-    clean check.
+    verified content-only Git patch is subtracted through the already-open file
+    descriptor instead of through Git's conversion layer, an external patcher,
+    or a whole-file restore. This preserves the inode and all entry metadata;
+    exact bytes and metadata are rechecked at the mutation boundary.
     """
     if status_output.splitlines() != [f" M {LANE_CERTIFICATION_PATH}"]:
         return False
@@ -1182,15 +1295,7 @@ def recover_lane_certification_provenance_drift(
         return False
     if not stat.S_ISREG(working_stat.st_mode):
         return False
-    working_mode = stat.S_IMODE(working_stat.st_mode)
-    working_signature = (
-        working_stat.st_dev,
-        working_stat.st_ino,
-        working_stat.st_size,
-        working_stat.st_mtime_ns,
-        working_stat.st_ctime_ns,
-        working_mode,
-    )
+    working_signature = _file_snapshot_signature(working_stat)
 
     provenance_pattern = re.compile(
         rb'(?m)^(  "repo_head": ")([0-9a-f]{40})(",)(\r?\n)'
@@ -1241,6 +1346,8 @@ def recover_lane_certification_provenance_drift(
             "--no-textconv",
             "--no-color",
             "--binary",
+            "--src-prefix=a/",
+            "--dst-prefix=b/",
             "--",
             LANE_CERTIFICATION_PATH,
         ],
@@ -1278,66 +1385,24 @@ def recover_lane_certification_provenance_drift(
         current_stat = path.lstat()
     except OSError:
         return False
-    current_signature = (
-        current_stat.st_dev,
-        current_stat.st_ino,
-        current_stat.st_size,
-        current_stat.st_mtime_ns,
-        current_stat.st_ctime_ns,
-        stat.S_IMODE(current_stat.st_mode),
-    )
     if not stat.S_ISREG(current_stat.st_mode):
         return False
-    if current_signature != working_signature:
+    if _file_snapshot_signature(current_stat) != working_signature:
         return False
 
-    patch_path: Path | None = None
-    try:
-        descriptor, temporary = tempfile.mkstemp(
-            prefix="audit-lane-provenance-",
-            suffix=".patch",
-        )
-        patch_path = Path(temporary)
-        with os.fdopen(descriptor, "wb") as handle:
-            handle.write(patch.stdout)
-        reversed_patch = sh(
-            [
-                "patch",
-                "-R",
-                "-p1",
-                "-f",
-                "-s",
-                "-r",
-                os.devnull,
-                "-i",
-                str(patch_path),
-            ],
-            honor_cancel=honor_cancel,
-        )
-        if reversed_patch.returncode != 0:
-            return False
-        try:
-            final_bytes = path.read_bytes()
-            final_stat = path.lstat()
-        except OSError:
-            return False
-        if final_bytes != committed.stdout:
-            return False
-        if not stat.S_ISREG(final_stat.st_mode):
-            return False
-        if stat.S_IMODE(final_stat.st_mode) != working_mode:
-            return False
-        print(
-            "recovered generated certification provenance drift: "
-            f"{LANE_CERTIFICATION_PATH}",
-            flush=True,
-        )
-        return True
-    except OSError:
+    if not _rewrite_verified_bytes_in_place(
+        path,
+        expected=working_bytes,
+        replacement=committed.stdout,
+        expected_signature=working_signature,
+    ):
         return False
-    finally:
-        if patch_path is not None:
-            patch_path.unlink(missing_ok=True)
+    print(
+        "recovered generated certification provenance drift: "
+        f"{LANE_CERTIFICATION_PATH}",
+        flush=True,
+    )
+    return True
 
 
 def clean_main_error(*, honor_cancel: bool = True) -> str | None:

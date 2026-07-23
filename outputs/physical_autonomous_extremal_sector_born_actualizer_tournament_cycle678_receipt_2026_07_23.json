@@ -1,0 +1,2302 @@
+{
+  "audit": "unset",
+  "author_accepted": false,
+  "authority": "none",
+  "axiom_pressure": false,
+  "breakthrough": false,
+  "classification": "conditional-candidate-law-discriminator",
+  "cross_route_discriminator": {
+    "axiom_pressure": false,
+    "candidate_law_table": {
+      "A": {
+        "added_supply": "deterministic nonlinear state map and exhaust-copy extension",
+        "bounded_M2": false,
+        "exact_repeated_weights": false,
+        "single_objective": false
+      },
+      "B": {
+        "added_supply": "objective hybrid ontology, state-weight oracle and independent innovation stream",
+        "bounded_M2": false,
+        "exact_repeated_weights": true,
+        "single_objective": true
+      },
+      "C": {
+        "added_supply": "chosen unraveling required for an outcome",
+        "bounded_M2": true,
+        "exact_repeated_weights": false,
+        "single_objective": false
+      }
+    },
+    "common_named_exhaust": "immutable Cycle676 64-sector coherent wave plus six-ray dual carrier provenance",
+    "decisive_result": "B alone owns a single exact repeated-trial result, but only as a supplied stochastic hybrid law; C alone has a bounded M2 dilation, but no outcome ownership; A has neither universal selection nor Born trials",
+    "exact_terminal_met": false,
+    "pass": true,
+    "routes_meeting_every_exact_target_type_gate": [],
+    "shared_route_independent_obstruction": false
+  },
+  "cycle": 678,
+  "date": "2026-07-23",
+  "elapsed_seconds": 1.3680174999171868,
+  "exact_terminal_disposition": "NOT_MET_NOT_FALSIFIED",
+  "exact_terminal_met": false,
+  "fixture_crosscheck": {
+    "pass": true,
+    "residuals": {
+      "held_sparse_complex": 3.469446951953614e-18,
+      "phase_ramp64": 3.469446951953614e-18,
+      "uniform64": 0.0
+    }
+  },
+  "frozen_contract": {
+    "Cycle676_novelty_firewall_present": true,
+    "expected_preregistration_sha256": "0fe3777afcd98da4a9d539577cbea3ba2c35ddd4c5dc2bbd9924c60eb895c789",
+    "expected_target_sha256": "49b60e16b634fd5d1f895b39dccd347a3082343f612da770cdfea245284c746e",
+    "first_evidence_line": 155,
+    "frozen_before_evidence": true,
+    "imported_contracts": {
+      "Cycle661_pass": true,
+      "Cycle662_pass": true,
+      "Cycle669_pass": true,
+      "Cycle676_pass": true
+    },
+    "observed": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_DETERMINISTIC_CONSTRAINED_QCA_FORMATION_LAW_TOURNAMENT_CYCLE661_NOTE_2026-07-23.md": "14262310b768983ebbdc8a89f914f237ab2a2523c8a096eece63b33a7e5e9ad4",
+      "docs/work_history/repo/review_feedback/PHYSICAL_MOVING_CARRIER_PHASE_FIELD_FINITE_RESTRICTION_CYCLE676_NOTE_2026-07-23.md": "0b99e2dabc397e2b8556a18b7f573838f399a3397ed7524d9c16cf1902125611",
+      "docs/work_history/repo/review_feedback/PHYSICAL_OBJECTIVE_STOCHASTIC_OPEN_DILATION_CYCLE662_NOTE_2026-07-23.md": "bdc8dda304985a62c73fc6e7a03f11d61041dd8053a9321fb7171c9b22947a05",
+      "docs/work_history/repo/review_feedback/PHYSICAL_STATE_CARRIED_EVENT_CHAIN_SEQUENCE_PROTOCOL_CYCLE669_NOTE_2026-07-23.md": "4ba9fe3a26606a944f362e81d6262543936018c6adf497069d8800e616f0c2c5",
+      "outputs/physical_deterministic_constrained_qca_formation_law_tournament_cycle661_receipt_2026_07_23.json": "c0ac1effe618bbdcbfc4bd6a3360f3beb557aa2469d47be476deef862e1340c5",
+      "outputs/physical_moving_carrier_phase_field_finite_restriction_cycle676_receipt_2026_07_23.json": "f670254197a9590e2de9c2ce03b27cd1034915e548bb961c5864e7937e0a1891",
+      "outputs/physical_objective_stochastic_open_dilation_cycle662_receipt_2026_07_23.json": "27b258f1e4d96fb26f65937875bea32d74ecdfa62712c353e3327d0357a2c806",
+      "outputs/physical_state_carried_event_chain_sequence_protocol_cycle669_receipt_2026_07_23.json": "0765c66f3d3625892d133976aca217a5676fef0820557b12b32c988cb6180760",
+      "scripts/physical_deterministic_constrained_qca_formation_law_tournament_cycle661_2026_07_23.py": "83383268139e92bcd040fa176686f2e6c3d5eef806ba58ed5da9953a59af7590",
+      "scripts/physical_moving_carrier_phase_field_finite_restriction_cycle676_2026_07_23.py": "29099a51af2efef0291c951b18d175e71ff9eac4fb22fdc70dba2cb2db050389",
+      "scripts/physical_objective_stochastic_open_dilation_cycle662_2026_07_23.py": "219b6d3d93884a0ab8d9b0cc6c79850d008193fd5571b0281c76b6f8707d6b84",
+      "scripts/physical_state_carried_event_chain_sequence_protocol_cycle669_2026_07_23.py": "ac1237e211bf06a8eb394db0dd8001c88a5aaf81726b38a3e43bd066285a9c84"
+    },
+    "pass": true,
+    "pins": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_DETERMINISTIC_CONSTRAINED_QCA_FORMATION_LAW_TOURNAMENT_CYCLE661_NOTE_2026-07-23.md": "14262310b768983ebbdc8a89f914f237ab2a2523c8a096eece63b33a7e5e9ad4",
+      "docs/work_history/repo/review_feedback/PHYSICAL_MOVING_CARRIER_PHASE_FIELD_FINITE_RESTRICTION_CYCLE676_NOTE_2026-07-23.md": "0b99e2dabc397e2b8556a18b7f573838f399a3397ed7524d9c16cf1902125611",
+      "docs/work_history/repo/review_feedback/PHYSICAL_OBJECTIVE_STOCHASTIC_OPEN_DILATION_CYCLE662_NOTE_2026-07-23.md": "bdc8dda304985a62c73fc6e7a03f11d61041dd8053a9321fb7171c9b22947a05",
+      "docs/work_history/repo/review_feedback/PHYSICAL_STATE_CARRIED_EVENT_CHAIN_SEQUENCE_PROTOCOL_CYCLE669_NOTE_2026-07-23.md": "4ba9fe3a26606a944f362e81d6262543936018c6adf497069d8800e616f0c2c5",
+      "outputs/physical_deterministic_constrained_qca_formation_law_tournament_cycle661_receipt_2026_07_23.json": "c0ac1effe618bbdcbfc4bd6a3360f3beb557aa2469d47be476deef862e1340c5",
+      "outputs/physical_moving_carrier_phase_field_finite_restriction_cycle676_receipt_2026_07_23.json": "f670254197a9590e2de9c2ce03b27cd1034915e548bb961c5864e7937e0a1891",
+      "outputs/physical_objective_stochastic_open_dilation_cycle662_receipt_2026_07_23.json": "27b258f1e4d96fb26f65937875bea32d74ecdfa62712c353e3327d0357a2c806",
+      "outputs/physical_state_carried_event_chain_sequence_protocol_cycle669_receipt_2026_07_23.json": "0765c66f3d3625892d133976aca217a5676fef0820557b12b32c988cb6180760",
+      "scripts/physical_deterministic_constrained_qca_formation_law_tournament_cycle661_2026_07_23.py": "83383268139e92bcd040fa176686f2e6c3d5eef806ba58ed5da9953a59af7590",
+      "scripts/physical_moving_carrier_phase_field_finite_restriction_cycle676_2026_07_23.py": "29099a51af2efef0291c951b18d175e71ff9eac4fb22fdc70dba2cb2db050389",
+      "scripts/physical_objective_stochastic_open_dilation_cycle662_2026_07_23.py": "219b6d3d93884a0ab8d9b0cc6c79850d008193fd5571b0281c76b6f8707d6b84",
+      "scripts/physical_state_carried_event_chain_sequence_protocol_cycle669_2026_07_23.py": "ac1237e211bf06a8eb394db0dd8001c88a5aaf81726b38a3e43bd066285a9c84"
+    },
+    "preregistration": {
+      "fixtures": {
+        "C3_uniform64": {
+          "split": "train",
+          "weights": [
+            "29/32",
+            "1/64",
+            "1/64",
+            "1/64",
+            "1/64",
+            "1/64",
+            "1/64"
+          ]
+        },
+        "C4_phase_ramp64": {
+          "split": "held_blinded_phase",
+          "weights": [
+            "29/32",
+            "1/64",
+            "1/64",
+            "1/64",
+            "1/64",
+            "1/64",
+            "1/64"
+          ]
+        },
+        "C6_sparse_complex": {
+          "split": "held_blinded_nonproduct",
+          "weights": [
+            "34/35",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1/35"
+          ]
+        },
+        "C9_asymmetric": {
+          "split": "held_larger",
+          "weights": [
+            "7/28",
+            "6/28",
+            "5/28",
+            "4/28",
+            "3/28",
+            "2/28",
+            "1/28"
+          ]
+        },
+        "direction_tie": {
+          "split": "adversarial_tie",
+          "weights": [
+            "0",
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6"
+          ]
+        }
+      },
+      "named_exhaust": "immutable Cycle676 64-sector coherent wave plus six-ray dual carrier provenance",
+      "no_go_gate": "fresh remote-main N1-N8 before disposition",
+      "route_A": {
+        "iterations": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "replicator_power": 2,
+        "tie_rule_under_test": "lowest-index argmax is tested as a hostile noncovariant fallback"
+      },
+      "route_B": {
+        "convergence_sizes": [
+          64,
+          256,
+          1024
+        ],
+        "kernel": "uniform active unordered pair; merge pair mass to one endpoint with conditional weight p_i/(p_i+p_j)",
+        "maximum_updates": 6,
+        "trial_law": "identical state reset plus independent law-owned innovations per trial"
+      },
+      "route_C": {
+        "channel": "complete event-basis dephasing",
+        "collision": "seven event rails CNOT to seven blank environment rails",
+        "unravelings": [
+          "seven projectors",
+          "seven Fourier diagonal random unitaries"
+        ]
+      },
+      "type_gate": "one objective token and repeated-trial law are separate from diagonal density and channel decomposition"
+    },
+    "preregistration_line": 48,
+    "preregistration_sha256": "0fe3777afcd98da4a9d539577cbea3ba2c35ddd4c5dc2bbd9924c60eb895c789",
+    "shore": "b42ab53eaa76ccdd7807e9742d66de5184750c06",
+    "target": {
+      "allowed_premises": "byte-pinned committed Cycle661, Cycle669, Cycle676 novelty-firewall result and Cycle662 bounded prior; candidate nonlinear, stochastic and open laws only when their added state space and resources are typed",
+      "completion_witness": "a law-owned one-token output, exact |a_i|^2 repeated-trial convergence, complete named coherent exhaust, and a proper-cubic bounded physical M2 compiler without hidden selector/innovation/representation imports",
+      "cycle": 678,
+      "forbidden_weakenings": "a reduced diagonal, coherent cat, disjoint-sector mixture or chosen unraveling called one objective token; weights called probabilities/frequencies before an objective repeated-trial law; nonlinear/stochastic maps called M2 unitaries; host randomness; hidden tie order; update count called physical time/rate; constitutional language",
+      "outcomes_not_closure": "argmax on unique maxima only; asymptotic replicator concentration; a stochastic law supplied by hand; finite reduced decoherence; a selected Kraus decomposition; branchwise Cycle669 attachment",
+      "quantifiers_domain": "all seven event sectors, all 64 Cycle661 sectors, C3 train/C4 held/C6 nonproduct-held/C9 larger-held, ties and unique maxima, two ensemble decompositions of one density operator, a bipartite steering test, all24/all576, deletion/malformed/saturation, and unchanged Cycle669 composition",
+      "required_edge_cases": "direction-symmetric tie, none/direction tie, unique maximum, ensemble-decomposition equality, no-signalling, absorbing vertices, exact hitting weights, repeated resets/independent innovations, unraveling nonuniqueness",
+      "routes": {
+        "A": "deterministic norm-preserving nonlinear argmax/replicator extremalization",
+        "B": "law-owned absorbing pair-gambler martingale with exact vertex-hitting weights",
+        "C": "linear dephasing channel/collision dilation with competing unravelings"
+      },
+      "target_statement": "from the native coherent Cycle661/Cycle676 input, produce exactly one objective none|six token while retaining all unselected amplitudes and phases in a named exhaust, with no host sampler, seed or selector, a proper-cubic bounded local implementation, and a declared objective repeated-trial law"
+    },
+    "target_line": 6,
+    "target_sha256": "49b60e16b634fd5d1f895b39dccd347a3082343f612da770cdfea245284c746e",
+    "working_tree_bytes_used_as_evidence": false
+  },
+  "maximum_RSS_bytes": 101072896,
+  "no_go_discipline": {
+    "N1_qualifying_normalized_families": 5,
+    "N1_routes": [
+      {
+        "authority": {
+          "line": 271,
+          "path": "scripts/physical_autonomous_extremal_sector_born_actualizer_tournament_cycle678_2026_07_23.py",
+          "ref": "Cycle678 current"
+        },
+        "disposition": "ties, ensemble dependence and deterministic trial weights reject the terminal",
+        "family": "deterministic nonlinear extremalization",
+        "honesty": "ATTEMPTED",
+        "mechanism": "replicator concentration or argmax",
+        "object": "projective simplex/pure-state flow",
+        "terminal": "covariant nonsignalling Born trials"
+      },
+      {
+        "authority": {
+          "line": 404,
+          "path": "scripts/physical_autonomous_extremal_sector_born_actualizer_tournament_cycle678_2026_07_23.py",
+          "ref": "Cycle678 current"
+        },
+        "disposition": "exact Born trials conditional on supplied objective stochastic law",
+        "family": "objective absorbing martingale",
+        "honesty": "ATTEMPTED",
+        "mechanism": "martingale fixation",
+        "object": "hybrid simplex Markov kernel",
+        "terminal": "derive local physical law and innovation"
+      },
+      {
+        "authority": {
+          "line": 592,
+          "path": "scripts/physical_autonomous_extremal_sector_born_actualizer_tournament_cycle678_2026_07_23.py",
+          "ref": "Cycle678 current"
+        },
+        "disposition": "same channel has event and non-event unravelings",
+        "family": "linear open collision channel",
+        "honesty": "ATTEMPTED",
+        "mechanism": "environmental decoherence",
+        "object": "CPTP channel and dilation",
+        "terminal": "unique objective unraveling"
+      },
+      {
+        "authority": {
+          "line": 131,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_MOVING_CARRIER_PHASE_FIELD_FINITE_RESTRICTION_CYCLE676_NOTE_2026-07-23.md",
+          "ref": "b42ab53eaa76ccdd7807e9742d66de5184750c06"
+        },
+        "disposition": "Cycle676 reaches disjoint sectors but not selection",
+        "family": "infinite-volume phase sectors",
+        "honesty": "RULED OUT BY PRIOR",
+        "mechanism": "disjoint GNS sectors",
+        "object": "quasi-local central decomposition",
+        "terminal": "one extremal realized sector"
+      },
+      {
+        "authority": {
+          "line": 24,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_OBJECTIVE_STOCHASTIC_OPEN_DILATION_CYCLE662_NOTE_2026-07-23.md",
+          "ref": "b42ab53eaa76ccdd7807e9742d66de5184750c06"
+        },
+        "disposition": "objective output is conditional on the supplied stochastic law",
+        "family": "supplied objective stochastic dilation",
+        "honesty": "RULED OUT BY PRIOR",
+        "mechanism": "law-owned sigma update",
+        "object": "quantum-classical instrument",
+        "terminal": "derive rather than supply the law"
+      },
+      {
+        "authority": {
+          "line": 148,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_MOVING_CARRIER_PHASE_FIELD_FINITE_RESTRICTION_CYCLE676_NOTE_2026-07-23.md",
+          "ref": "b42ab53eaa76ccdd7807e9742d66de5184750c06"
+        },
+        "disposition": "not tested; finite hidden state risks deterministic frequencies and seed dependence",
+        "family": "state-carried deterministic pseudorandom innovation",
+        "honesty": "OPEN_NOT_COUNTED",
+        "mechanism": "hidden state supplies repeatable innovation",
+        "object": "finite local chaotic reservoir",
+        "terminal": "seed-free iid Born law with no signalling"
+      }
+    ],
+    "N2_collapsed_walls": [
+      "W_objective_law_ownership",
+      "W_bounded_local_physical_compilation"
+    ],
+    "N2_pairwise_table": [
+      {
+        "first": "W_objective_law_ownership",
+        "first_implies_second": false,
+        "independent": true,
+        "second": "W_bounded_local_physical_compilation",
+        "second_implies_first": false,
+        "witness": "route B closes ownership without M2; route C closes M2 dilation without ownership"
+      }
+    ],
+    "N3_hidden_phrase_hits": [],
+    "N4_residual_matches": [
+      {
+        "current": "routes A/C still do not select; B adds objective law",
+        "match": true,
+        "prior": "central decomposition does not select one member",
+        "witness": {
+          "line": 131,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_MOVING_CARRIER_PHASE_FIELD_FINITE_RESTRICTION_CYCLE676_NOTE_2026-07-23.md",
+          "ref": "b42ab53eaa76ccdd7807e9742d66de5184750c06"
+        }
+      },
+      {
+        "current": "route B has the same explicit law-ownership residual",
+        "match": true,
+        "prior": "objective result belongs to supplied stochastic law",
+        "witness": {
+          "line": 24,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_OBJECTIVE_STOCHASTIC_OPEN_DILATION_CYCLE662_NOTE_2026-07-23.md",
+          "ref": "b42ab53eaa76ccdd7807e9742d66de5184750c06"
+        }
+      },
+      {
+        "current": "route C dephasing is not promoted",
+        "match": true,
+        "prior": "diagonal density is not a realized member",
+        "witness": {
+          "line": 96,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_COHERENT_SEED_MEMBER_DILATION_CYCLE536_NOTE_2026-07-21.md",
+          "ref": "b42ab53eaa76ccdd7807e9742d66de5184750c06"
+        }
+      }
+    ],
+    "N5_rhetoric": [
+      {
+        "claim": "replicator concentration is not a Born trial law",
+        "lattice_wide": "bipartite ensemble test; no universal claim beyond this nonlinear family",
+        "per_block": "C3/C4/C6/C9",
+        "per_element": "five exact fixture weights",
+        "per_mode": "tie and unique-max modes",
+        "per_site": "seven event rails"
+      },
+      {
+        "claim": "decoherence is not objective outcome ownership",
+        "lattice_wide": "channel statement only; alternative open laws remain",
+        "per_block": "five fixtures",
+        "per_element": "seven projectors",
+        "per_mode": "projector versus Fourier-phase unraveling",
+        "per_site": "14-M2 collision"
+      },
+      {
+        "claim": "exact martingale hitting is not a physical M2 compiler",
+        "lattice_wide": "state-weight oracle/innovation explicitly supplied",
+        "per_block": "four held/train cuts",
+        "per_element": "exact rational transitions",
+        "per_mode": "seven vertices",
+        "per_site": "law-level simplex state"
+      }
+    ],
+    "N6_partial_closure_paths": [
+      {
+        "closes": "unique-max nonlinear concentration",
+        "path": "Cycle678 A",
+        "status": "EXECUTED_REJECTED_TERMINAL"
+      },
+      {
+        "closes": "objective exact Born trials under supplied hybrid law",
+        "path": "Cycle678 B",
+        "status": "EXECUTED_CONDITIONAL_CANDIDATE"
+      },
+      {
+        "closes": "bounded M2 dephasing dilation and unraveling discriminator",
+        "path": "Cycle678 C",
+        "status": "EXECUTED_PARTIAL"
+      },
+      {
+        "closes": "coherent exhaust and conditional disjoint sectors",
+        "path": "Cycle676",
+        "status": "EXECUTED_PRIOR"
+      },
+      {
+        "closes": "possible law-owned state-carried innovation",
+        "path": "finite local chaotic innovation",
+        "status": "OPEN"
+      }
+    ],
+    "N6_primitive_registry_claim_made": false,
+    "N7_steelman": "A hostile reviewer should construct a finite proper-cubic cellular reservoir whose microscopic state is generated from the same neutral lawful genesis, prove that its first-passage bits are independent across identically reset trials with exact Cycle676 sector hitting weights, and couple those bits to the absorbing martingale while preserving the complete outgoing wave and no-signalling. Such a state-carried innovation mechanism would remove route B's external innovation stream and could reopen bounded physical compilation; it has not been attempted here.",
+    "N7_supporting_authority": {
+      "line": 148,
+      "path": "docs/work_history/repo/review_feedback/PHYSICAL_MOVING_CARRIER_PHASE_FIELD_FINITE_RESTRICTION_CYCLE676_NOTE_2026-07-23.md",
+      "ref": "b42ab53eaa76ccdd7807e9742d66de5184750c06"
+    },
+    "N8_cross_cycle_echo": [
+      {
+        "cycle": 536,
+        "remaining": "one realized member",
+        "retired": "coherent diagonal construction"
+      },
+      {
+        "cycle": 662,
+        "remaining": "derive its law",
+        "retired": "objective stochastic instrument"
+      },
+      {
+        "cycle": 671,
+        "remaining": "native-domain ownership",
+        "retired": "selector-conditioned token"
+      },
+      {
+        "cycle": 674,
+        "remaining": "objective promotion",
+        "retired": "finite robust latches"
+      },
+      {
+        "cycle": 676,
+        "remaining": "selected extremal sector",
+        "retired": "conditional disjoint sectors"
+      },
+      {
+        "cycle": 678,
+        "remaining": "bounded law genesis",
+        "retired": "law-class discriminator and exact martingale candidate"
+      }
+    ],
+    "axiom_pressure": false,
+    "broad_no_go_claim": false,
+    "checklist_complete": true,
+    "demotion": "partial-attempt-with-conditional-candidate-and-named-untested-route",
+    "discipline_compliance_pass": true,
+    "minimum_content_claim": false,
+    "negative_claim_gate_status": "FAIL_DO_NOT_SHIP_NEGATIVE",
+    "negative_gate_failure_reason": "N7 state-carried lawful innovation mechanism remains untested",
+    "shared_route_independent_obstruction": false,
+    "skill_freshness": {
+      "dirty_worktree_moved": false,
+      "origin_main_advanced": false,
+      "origin_main_checked": true,
+      "remote_skill_followed": true
+    }
+  },
+  "note_contract": {
+    "missing": [],
+    "pass": true,
+    "required": [
+      "authority: **none**",
+      "audit: **unset**",
+      "fresh no-go-discipline gate before disposition",
+      "not a no-go",
+      "shared route-independent obstruction: **not established**",
+      "axiom pressure: **none**",
+      "not met, not falsified",
+      "tracing-out is not objective actuality",
+      "not physical time or rates",
+      "no generator element is called a rate",
+      "conditional on a supplied stochastic hybrid law",
+      "before route b's declared objective iid law passes, quantities are called weights, not probabilities or frequencies"
+    ]
+  },
+  "note_sha256": "b4f4eab00fc27b745b504daf6eb0d884d4c214d089679979f018f8f6f4825f78",
+  "optimal_next_campaign": "finite state-carried lawful-innovation compiler with exact reset, no seed and no host service",
+  "pass": true,
+  "routes": {
+    "A": {
+      "deletion_controls": {
+        "delete_normalization_raw_sum_not_one": true,
+        "delete_phase_retention_detected_on_C4": true,
+        "delete_power_changes_nonfixed_fixture": true,
+        "delete_tie_audit_exposes_covariance_failures": true
+      },
+      "direction_tie_argmax_all24_failures": 20,
+      "direction_tie_lowest_index_choice": 1,
+      "disposition": "unique maxima concentrate asymptotically, but ties do not select covariantly, deterministic trials do not match input weights, and pure-state nonlinear extension is ensemble-dependent/signalling",
+      "ensemble_test": {
+        "argmax_trace_distance_between_output_ensembles": "1/4",
+        "bipartite_remote_steering_no_signalling_pass": false,
+        "replicator_alpha2_coherent_ensemble_weight": "1/10",
+        "rho_diagonal_weight": "1/4",
+        "trace_distance_between_output_ensembles": "3/20"
+      },
+      "equivariant_tie_lemma": "an invariant six-direction tie has no invariant direction label; a deterministic proper-cubic-equivariant single-valued argmax therefore cannot choose one tied direction",
+      "exhaust_copy_requires_nonlinear_hybrid_state_extension": true,
+      "fixture_rows": {
+        "C3_uniform64": {
+          "finite_iteration_exact_vertex": false,
+          "replicator_iterates": {
+            "1": [
+              "1682/1685",
+              "1/3370",
+              "1/3370",
+              "1/3370",
+              "1/3370",
+              "1/3370",
+              "1/3370"
+            ],
+            "2": [
+              "5658248/5658251",
+              "1/11316502",
+              "1/11316502",
+              "1/11316502",
+              "1/11316502",
+              "1/11316502",
+              "1/11316502"
+            ],
+            "4": [
+              "8200076449557621925069488128/8200076449557621925069488131",
+              "1/16400152899115243850138976262",
+              "1/16400152899115243850138976262",
+              "1/16400152899115243850138976262",
+              "1/16400152899115243850138976262",
+              "1/16400152899115243850138976262",
+              "1/16400152899115243850138976262"
+            ],
+            "8": [
+              "13694190228837905998896508165891546151131815283607659493475435984858488696983167922014829342580061709988866118052903814477680885521293226888926922199447559768109357182109060750808238387141583684581679826137521829340558159835904332460109052605117096477461921649078715304581080799383076888416329312759487560273724696617739221012937318823433999030763106834142327214689848806090459871674494561251597664768947633184983330844444198382401831018378135997513728/13694190228837905998896508165891546151131815283607659493475435984858488696983167922014829342580061709988866118052903814477680885521293226888926922199447559768109357182109060750808238387141583684581679826137521829340558159835904332460109052605117096477461921649078715304581080799383076888416329312759487560273724696617739221012937318823433999030763106834142327214689848806090459871674494561251597664768947633184983330844444198382401831018378135997513731",
+              "1/27388380457675811997793016331783092302263630567215318986950871969716977393966335844029658685160123419977732236105807628955361771042586453777853844398895119536218714364218121501616476774283167369163359652275043658681116319671808664920218105210234192954923843298157430609162161598766153776832658625518975120547449393235478442025874637646867998061526213668284654429379697612180919743348989122503195329537895266369966661688888396764803662036756271995027462",
+              "1/27388380457675811997793016331783092302263630567215318986950871969716977393966335844029658685160123419977732236105807628955361771042586453777853844398895119536218714364218121501616476774283167369163359652275043658681116319671808664920218105210234192954923843298157430609162161598766153776832658625518975120547449393235478442025874637646867998061526213668284654429379697612180919743348989122503195329537895266369966661688888396764803662036756271995027462",
+              "1/27388380457675811997793016331783092302263630567215318986950871969716977393966335844029658685160123419977732236105807628955361771042586453777853844398895119536218714364218121501616476774283167369163359652275043658681116319671808664920218105210234192954923843298157430609162161598766153776832658625518975120547449393235478442025874637646867998061526213668284654429379697612180919743348989122503195329537895266369966661688888396764803662036756271995027462",
+              "1/27388380457675811997793016331783092302263630567215318986950871969716977393966335844029658685160123419977732236105807628955361771042586453777853844398895119536218714364218121501616476774283167369163359652275043658681116319671808664920218105210234192954923843298157430609162161598766153776832658625518975120547449393235478442025874637646867998061526213668284654429379697612180919743348989122503195329537895266369966661688888396764803662036756271995027462",
+              "1/27388380457675811997793016331783092302263630567215318986950871969716977393966335844029658685160123419977732236105807628955361771042586453777853844398895119536218714364218121501616476774283167369163359652275043658681116319671808664920218105210234192954923843298157430609162161598766153776832658625518975120547449393235478442025874637646867998061526213668284654429379697612180919743348989122503195329537895266369966661688888396764803662036756271995027462",
+              "1/27388380457675811997793016331783092302263630567215318986950871969716977393966335844029658685160123419977732236105807628955361771042586453777853844398895119536218714364218121501616476774283167369163359652275043658681116319671808664920218105210234192954923843298157430609162161598766153776832658625518975120547449393235478442025874637646867998061526213668284654429379697612180919743348989122503195329537895266369966661688888396764803662036756271995027462"
+            ]
+          },
+          "split": "train",
+          "unique_argmax": 0
+        },
+        "C4_phase_ramp64": {
+          "finite_iteration_exact_vertex": false,
+          "replicator_iterates": {
+            "1": [
+              "1682/1685",
+              "1/3370",
+              "1/3370",
+              "1/3370",
+              "1/3370",
+              "1/3370",
+              "1/3370"
+            ],
+            "2": [
+              "5658248/5658251",
+              "1/11316502",
+              "1/11316502",
+              "1/11316502",
+              "1/11316502",
+              "1/11316502",
+              "1/11316502"
+            ],
+            "4": [
+              "8200076449557621925069488128/8200076449557621925069488131",
+              "1/16400152899115243850138976262",
+              "1/16400152899115243850138976262",
+              "1/16400152899115243850138976262",
+              "1/16400152899115243850138976262",
+              "1/16400152899115243850138976262",
+              "1/16400152899115243850138976262"
+            ],
+            "8": [
+              "13694190228837905998896508165891546151131815283607659493475435984858488696983167922014829342580061709988866118052903814477680885521293226888926922199447559768109357182109060750808238387141583684581679826137521829340558159835904332460109052605117096477461921649078715304581080799383076888416329312759487560273724696617739221012937318823433999030763106834142327214689848806090459871674494561251597664768947633184983330844444198382401831018378135997513728/13694190228837905998896508165891546151131815283607659493475435984858488696983167922014829342580061709988866118052903814477680885521293226888926922199447559768109357182109060750808238387141583684581679826137521829340558159835904332460109052605117096477461921649078715304581080799383076888416329312759487560273724696617739221012937318823433999030763106834142327214689848806090459871674494561251597664768947633184983330844444198382401831018378135997513731",
+              "1/27388380457675811997793016331783092302263630567215318986950871969716977393966335844029658685160123419977732236105807628955361771042586453777853844398895119536218714364218121501616476774283167369163359652275043658681116319671808664920218105210234192954923843298157430609162161598766153776832658625518975120547449393235478442025874637646867998061526213668284654429379697612180919743348989122503195329537895266369966661688888396764803662036756271995027462",
+              "1/27388380457675811997793016331783092302263630567215318986950871969716977393966335844029658685160123419977732236105807628955361771042586453777853844398895119536218714364218121501616476774283167369163359652275043658681116319671808664920218105210234192954923843298157430609162161598766153776832658625518975120547449393235478442025874637646867998061526213668284654429379697612180919743348989122503195329537895266369966661688888396764803662036756271995027462",
+              "1/27388380457675811997793016331783092302263630567215318986950871969716977393966335844029658685160123419977732236105807628955361771042586453777853844398895119536218714364218121501616476774283167369163359652275043658681116319671808664920218105210234192954923843298157430609162161598766153776832658625518975120547449393235478442025874637646867998061526213668284654429379697612180919743348989122503195329537895266369966661688888396764803662036756271995027462",
+              "1/27388380457675811997793016331783092302263630567215318986950871969716977393966335844029658685160123419977732236105807628955361771042586453777853844398895119536218714364218121501616476774283167369163359652275043658681116319671808664920218105210234192954923843298157430609162161598766153776832658625518975120547449393235478442025874637646867998061526213668284654429379697612180919743348989122503195329537895266369966661688888396764803662036756271995027462",
+              "1/27388380457675811997793016331783092302263630567215318986950871969716977393966335844029658685160123419977732236105807628955361771042586453777853844398895119536218714364218121501616476774283167369163359652275043658681116319671808664920218105210234192954923843298157430609162161598766153776832658625518975120547449393235478442025874637646867998061526213668284654429379697612180919743348989122503195329537895266369966661688888396764803662036756271995027462",
+              "1/27388380457675811997793016331783092302263630567215318986950871969716977393966335844029658685160123419977732236105807628955361771042586453777853844398895119536218714364218121501616476774283167369163359652275043658681116319671808664920218105210234192954923843298157430609162161598766153776832658625518975120547449393235478442025874637646867998061526213668284654429379697612180919743348989122503195329537895266369966661688888396764803662036756271995027462"
+            ]
+          },
+          "split": "held_blinded_phase",
+          "unique_argmax": 0
+        },
+        "C6_sparse_complex": {
+          "finite_iteration_exact_vertex": false,
+          "replicator_iterates": {
+            "1": [
+              "1156/1157",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1/1157"
+            ],
+            "2": [
+              "1336336/1336337",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1/1336337"
+            ],
+            "4": [
+              "3189059870763703892770816/3189059870763703892770817",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1/3189059870763703892770817"
+            ],
+            "8": [
+              "114446565139337029156143692357814488064230053898467111624067622847903984231562988155896394106634998363321498193798143094146489630442949845869272961057003392606135843772798493150836605684929307683903241607329236685201759470859518312472201545162999811920773439762824352961192747744432884402643507162880583612523791925955600275933841748585700978358084090170693446819999515688326579333310411964416/114446565139337029156143692357814488064230053898467111624067622847903984231562988155896394106634998363321498193798143094146489630442949845869272961057003392606135843772798493150836605684929307683903241607329236685201759470859518312472201545162999811920773439762824352961192747744432884402643507162880583612523791925955600275933841748585700978358084090170693446819999515688326579333310411964417",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1/114446565139337029156143692357814488064230053898467111624067622847903984231562988155896394106634998363321498193798143094146489630442949845869272961057003392606135843772798493150836605684929307683903241607329236685201759470859518312472201545162999811920773439762824352961192747744432884402643507162880583612523791925955600275933841748585700978358084090170693446819999515688326579333310411964417"
+            ]
+          },
+          "split": "held_blinded_nonproduct",
+          "unique_argmax": 0
+        },
+        "C9_asymmetric": {
+          "finite_iteration_exact_vertex": false,
+          "replicator_iterates": {
+            "1": [
+              "7/20",
+              "9/35",
+              "5/28",
+              "4/35",
+              "9/140",
+              "1/35",
+              "1/140"
+            ],
+            "2": [
+              "343/668",
+              "324/1169",
+              "625/4676",
+              "64/1169",
+              "81/4676",
+              "4/1169",
+              "1/4676"
+            ],
+            "4": [
+              "4747561509943/5172995206748",
+              "705277476864/9052741611809",
+              "152587890625/36210966447236",
+              "1073741824/9052741611809",
+              "43046721/36210966447236",
+              "16384/9052741611809",
+              "1/36210966447236"
+            ],
+            "8": [
+              "316227914292292593635741230782135133880359578608581867130909484360672139143998570978286204833991482968970636466044658228409623346562937144979432552340278065564457976768445210523320961929954388752035177598518906901943/316227914292292595935181105410072492758663235626903083021020486128100188504648687618666986934578194723394378259166044883372134322629296605857607143022501027775456592023002796072725974065525137204222938897253710704348",
+              "4024019780598890378015440978394326016244228370084046104967698428316069415661971202911884327298766779623667849193215846259017612791552711228187501142410817775407245609901195376477653165501341094641664/553398850011512042886566934467626862327660662347080395286785850724175329883135203332667227135511840765940161953540578545901235064601269060250812500289376798607049036040254893127270454614668990107390143070193993732609",
+              "86361685550944446253863518628003995711160003644362813850237034701685918031624270579715075034722882265605472939461496635969950989468319466936530037770580747746862471103668212890625/2213595400046048171546267737870507449310642649388321581147143402896701319532540813330668908542047363063760647814162314183604940258405076241003250001157507194428196144161019572509081818458675960429560572280775974930436",
+              "3351951982485649274893506249551461531869841455148098344430890360930441007518386744200468574541725856922507964546621512713438470702986642486608412251521024/553398850011512042886566934467626862327660662347080395286785850724175329883135203332667227135511840765940161953540578545901235064601269060250812500289376798607049036040254893127270454614668990107390143070193993732609",
+              "139008452377144732764939786789661303114218850808529137991604824430036072629766435941001769154109609521811665540548899435521/2213595400046048171546267737870507449310642649388321581147143402896701319532540813330668908542047363063760647814162314183604940258405076241003250001157507194428196144161019572509081818458675960429560572280775974930436",
+              "28948022309329048855892746252171976963317496166410141009864396001978282409984/553398850011512042886566934467626862327660662347080395286785850724175329883135203332667227135511840765940161953540578545901235064601269060250812500289376798607049036040254893127270454614668990107390143070193993732609",
+              "1/2213595400046048171546267737870507449310642649388321581147143402896701319532540813330668908542047363063760647814162314183604940258405076241003250001157507194428196144161019572509081818458675960429560572280775974930436"
+            ]
+          },
+          "split": "held_larger",
+          "unique_argmax": 0
+        },
+        "direction_tie": {
+          "finite_iteration_exact_vertex": false,
+          "replicator_iterates": {
+            "1": [
+              "0",
+              "1/6",
+              "1/6",
+              "1/6",
+              "1/6",
+              "1/6",
+              "1/6"
+            ],
+            "2": [
+              "0",
+              "1/6",
+              "1/6",
+              "1/6",
+              "1/6",
+              "1/6",
+              "1/6"
+            ],
+            "4": [
+              "0",
+              "1/6",
+              "1/6",
+              "1/6",
+              "1/6",
+              "1/6",
+              "1/6"
+            ],
+            "8": [
+              "0",
+              "1/6",
+              "1/6",
+              "1/6",
+              "1/6",
+              "1/6",
+              "1/6"
+            ]
+          },
+          "split": "adversarial_tie",
+          "unique_argmax": null
+        }
+      },
+      "host_sampler_calls": 0,
+      "host_sampling_source_hits": [],
+      "named_coherent_exhaust": "immutable Cycle676 64-sector coherent wave plus six-ray dual carrier provenance",
+      "normalization_failures": 0,
+      "objective_repeated_trial_law": false,
+      "one_objective_token_on_all_inputs": false,
+      "pass": true,
+      "physical_M2_unitary_compiler": false,
+      "reads_state_weights_not_single-copy_M2_bits": true,
+      "repeated_trial_rows": {
+        "C3_uniform64": {
+          "deterministic_repeated_trial_weight_residual_L1": "3/16",
+          "matches_input_weights": false
+        },
+        "C4_phase_ramp64": {
+          "deterministic_repeated_trial_weight_residual_L1": "3/16",
+          "matches_input_weights": false
+        },
+        "C6_sparse_complex": {
+          "deterministic_repeated_trial_weight_residual_L1": "2/35",
+          "matches_input_weights": false
+        },
+        "C9_asymmetric": {
+          "deterministic_repeated_trial_weight_residual_L1": "3/2",
+          "matches_input_weights": false
+        },
+        "direction_tie": {
+          "deterministic_repeated_trial_weight_residual_L1": null,
+          "matches_input_weights": false
+        }
+      },
+      "replicator_all24_failures": 0,
+      "replicator_all24_tests": 480,
+      "replicator_power": 2,
+      "route": "A_deterministic_nonlinear_argmax_replicator",
+      "weight_group_law_failures": 0,
+      "weights_called_Born_probabilities_or_frequencies": false
+    },
+    "B": {
+      "Cycle669_basis_composition_failures": 0,
+      "absorption_failures": 0,
+      "bounded_physical_M2_unitary_compiler": false,
+      "conditional_Born_probabilities": {
+        "C3_uniform64": [
+          "29/32",
+          "1/64",
+          "1/64",
+          "1/64",
+          "1/64",
+          "1/64",
+          "1/64"
+        ],
+        "C4_phase_ramp64": [
+          "29/32",
+          "1/64",
+          "1/64",
+          "1/64",
+          "1/64",
+          "1/64",
+          "1/64"
+        ],
+        "C6_sparse_complex": [
+          "34/35",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1/35"
+        ],
+        "C9_asymmetric": [
+          "1/4",
+          "3/14",
+          "5/28",
+          "1/7",
+          "3/28",
+          "1/14",
+          "1/28"
+        ],
+        "direction_tie": [
+          "0",
+          "1/6",
+          "1/6",
+          "1/6",
+          "1/6",
+          "1/6",
+          "1/6"
+        ]
+      },
+      "declared_iid_convergence_pass": true,
+      "deletion_and_saturation_controls": {
+        "absorbing_vertex_is_fixed": true,
+        "delete_first_branch_breaks_row_sum": true,
+        "malformed_simplex_rows_rejected": true,
+        "normal_kernel_row_and_martingale": true,
+        "replace_conditional_by_half_breaks_martingale": true
+      },
+      "disposition": "exact objective Born/repeated-trial candidate conditional on a newly supplied hybrid stochastic law, state-weight access and innovation stream; not derived as bounded physical M2 dynamics",
+      "fixture_rows": {
+        "C3_uniform64": {
+          "absorption_updates_exact": 6,
+          "active_vertices": 7,
+          "empirical_mean_variance_limit": "0",
+          "empirical_mean_variance_strictly_decreases_on_declared_sizes": true,
+          "exact_hitting_match": true,
+          "iid_convergence_rows": [
+            {
+              "maximum_Chebyshev_tail_bound_at_epsilon_1_over_10": "2175/16384",
+              "maximum_empirical_mean_variance": "87/65536",
+              "trials": 64
+            },
+            {
+              "maximum_Chebyshev_tail_bound_at_epsilon_1_over_10": "2175/65536",
+              "maximum_empirical_mean_variance": "87/262144",
+              "trials": 256
+            },
+            {
+              "maximum_Chebyshev_tail_bound_at_epsilon_1_over_10": "2175/262144",
+              "maximum_empirical_mean_variance": "87/1048576",
+              "trials": 1024
+            }
+          ],
+          "input_squared_amplitude_weights": [
+            "29/32",
+            "1/64",
+            "1/64",
+            "1/64",
+            "1/64",
+            "1/64",
+            "1/64"
+          ],
+          "split": "train",
+          "vertex_hitting_weights": [
+            "29/32",
+            "1/64",
+            "1/64",
+            "1/64",
+            "1/64",
+            "1/64",
+            "1/64"
+          ]
+        },
+        "C4_phase_ramp64": {
+          "absorption_updates_exact": 6,
+          "active_vertices": 7,
+          "empirical_mean_variance_limit": "0",
+          "empirical_mean_variance_strictly_decreases_on_declared_sizes": true,
+          "exact_hitting_match": true,
+          "iid_convergence_rows": [
+            {
+              "maximum_Chebyshev_tail_bound_at_epsilon_1_over_10": "2175/16384",
+              "maximum_empirical_mean_variance": "87/65536",
+              "trials": 64
+            },
+            {
+              "maximum_Chebyshev_tail_bound_at_epsilon_1_over_10": "2175/65536",
+              "maximum_empirical_mean_variance": "87/262144",
+              "trials": 256
+            },
+            {
+              "maximum_Chebyshev_tail_bound_at_epsilon_1_over_10": "2175/262144",
+              "maximum_empirical_mean_variance": "87/1048576",
+              "trials": 1024
+            }
+          ],
+          "input_squared_amplitude_weights": [
+            "29/32",
+            "1/64",
+            "1/64",
+            "1/64",
+            "1/64",
+            "1/64",
+            "1/64"
+          ],
+          "split": "held_blinded_phase",
+          "vertex_hitting_weights": [
+            "29/32",
+            "1/64",
+            "1/64",
+            "1/64",
+            "1/64",
+            "1/64",
+            "1/64"
+          ]
+        },
+        "C6_sparse_complex": {
+          "absorption_updates_exact": 1,
+          "active_vertices": 2,
+          "empirical_mean_variance_limit": "0",
+          "empirical_mean_variance_strictly_decreases_on_declared_sizes": true,
+          "exact_hitting_match": true,
+          "iid_convergence_rows": [
+            {
+              "maximum_Chebyshev_tail_bound_at_epsilon_1_over_10": "17/392",
+              "maximum_empirical_mean_variance": "17/39200",
+              "trials": 64
+            },
+            {
+              "maximum_Chebyshev_tail_bound_at_epsilon_1_over_10": "17/1568",
+              "maximum_empirical_mean_variance": "17/156800",
+              "trials": 256
+            },
+            {
+              "maximum_Chebyshev_tail_bound_at_epsilon_1_over_10": "17/6272",
+              "maximum_empirical_mean_variance": "17/627200",
+              "trials": 1024
+            }
+          ],
+          "input_squared_amplitude_weights": [
+            "34/35",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1/35"
+          ],
+          "split": "held_blinded_nonproduct",
+          "vertex_hitting_weights": [
+            "34/35",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1/35"
+          ]
+        },
+        "C9_asymmetric": {
+          "absorption_updates_exact": 6,
+          "active_vertices": 7,
+          "empirical_mean_variance_limit": "0",
+          "empirical_mean_variance_strictly_decreases_on_declared_sizes": true,
+          "exact_hitting_match": true,
+          "iid_convergence_rows": [
+            {
+              "maximum_Chebyshev_tail_bound_at_epsilon_1_over_10": "75/256",
+              "maximum_empirical_mean_variance": "3/1024",
+              "trials": 64
+            },
+            {
+              "maximum_Chebyshev_tail_bound_at_epsilon_1_over_10": "75/1024",
+              "maximum_empirical_mean_variance": "3/4096",
+              "trials": 256
+            },
+            {
+              "maximum_Chebyshev_tail_bound_at_epsilon_1_over_10": "75/4096",
+              "maximum_empirical_mean_variance": "3/16384",
+              "trials": 1024
+            }
+          ],
+          "input_squared_amplitude_weights": [
+            "1/4",
+            "3/14",
+            "5/28",
+            "1/7",
+            "3/28",
+            "1/14",
+            "1/28"
+          ],
+          "split": "held_larger",
+          "vertex_hitting_weights": [
+            "1/4",
+            "3/14",
+            "5/28",
+            "1/7",
+            "3/28",
+            "1/14",
+            "1/28"
+          ]
+        },
+        "direction_tie": {
+          "absorption_updates_exact": 5,
+          "active_vertices": 6,
+          "empirical_mean_variance_limit": "0",
+          "empirical_mean_variance_strictly_decreases_on_declared_sizes": true,
+          "exact_hitting_match": true,
+          "iid_convergence_rows": [
+            {
+              "maximum_Chebyshev_tail_bound_at_epsilon_1_over_10": "125/576",
+              "maximum_empirical_mean_variance": "5/2304",
+              "trials": 64
+            },
+            {
+              "maximum_Chebyshev_tail_bound_at_epsilon_1_over_10": "125/2304",
+              "maximum_empirical_mean_variance": "5/9216",
+              "trials": 256
+            },
+            {
+              "maximum_Chebyshev_tail_bound_at_epsilon_1_over_10": "125/9216",
+              "maximum_empirical_mean_variance": "5/36864",
+              "trials": 1024
+            }
+          ],
+          "input_squared_amplitude_weights": [
+            "0",
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6"
+          ],
+          "split": "adversarial_tie",
+          "vertex_hitting_weights": [
+            "0",
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6"
+          ]
+        }
+      },
+      "host_sampler_calls": 0,
+      "host_sampling_source_hits": [],
+      "innovation_supply": "at each of at most six updates the law supplies an active-pair choice and a conditional Bernoulli draw; exact rational draws require an ideal independent innovation stream with rejection overhead",
+      "kernel_all24_failures": 0,
+      "kernel_all24_tests": 120,
+      "kernel_all576_group_failures": 0,
+      "kernel_all576_group_tests": 2880,
+      "lawful_domain": "seven exact nonnegative rational weights summing to one",
+      "malformed_simplex_rows_rejected": 4,
+      "malformed_simplex_rows_tested": 4,
+      "martingale_failures": 0,
+      "named_coherent_exhaust": "immutable Cycle676 64-sector coherent wave plus six-ray dual carrier provenance",
+      "nonlinear_stochastic_update_called_M2_unitary": false,
+      "objective_hybrid_state": "(immutable CoherentExhaust[Cycle676 wave], classical simplex state, law-owned innovation history)",
+      "objective_repeated_trial_law": "identical coherent-state reset and independent law-owned innovations make vertex outputs iid categorical; the strong law gives empirical convergence to the exact vertex-hitting weights",
+      "one_objective_vertex_per_trial_under_declared_law": true,
+      "pass": true,
+      "route": "B_law_owned_absorbing_pair_gambler",
+      "state_weight_oracle_supplied": true,
+      "unselected_amplitudes_and_phases_retained": true,
+      "update_count_is_physical_time_or_rate": false
+    },
+    "C": {
+      "Kraus_superoperator_residual": 3.575106834326502e-15,
+      "channel_all24_failures": 0,
+      "channel_all24_tests": 120,
+      "channel_all576_group_failures": 0.0,
+      "channel_owns_one_objective_outcome": false,
+      "chosen_projector_unravelling_adds_objective_innovation_law": true,
+      "chosen_projector_unravelling_reduces_to_route_B_supply": true,
+      "collision_dilation": {
+        "CNOT_factors": 7,
+        "Cycle676_all64_interface_failures": 0,
+        "Cycle676_all64_interface_tests": 128,
+        "Cycle676_wave_and_carrier_exhaust_unchanged": true,
+        "basis_failures": 0,
+        "blank_environment_M2": 7,
+        "deletions_detected": 7,
+        "geometry": {
+          "Cycle676_active_M2": 187,
+          "all24_active_frame_placements_inside_cube": true,
+          "all24_reserved_cube_invariant": true,
+          "constant_overhead_environment_M2_per_coarse_cell": 7,
+          "environment_active_M2": 7,
+          "environment_rail_coordinates": [
+            [
+              3,
+              -2,
+              0
+            ],
+            [
+              3,
+              -1,
+              -1
+            ],
+            [
+              3,
+              -1,
+              1
+            ],
+            [
+              3,
+              0,
+              -2
+            ],
+            [
+              3,
+              0,
+              2
+            ],
+            [
+              3,
+              1,
+              -1
+            ],
+            [
+              3,
+              1,
+              1
+            ]
+          ],
+          "event_rail_coordinates": [
+            [
+              -1,
+              2,
+              -1
+            ],
+            [
+              -1,
+              2,
+              1
+            ],
+            [
+              -1,
+              3,
+              0
+            ],
+            [
+              0,
+              -3,
+              -1
+            ],
+            [
+              0,
+              -3,
+              1
+            ],
+            [
+              0,
+              -2,
+              -2
+            ],
+            [
+              0,
+              -2,
+              2
+            ]
+          ],
+          "global_coordinate_rule": "coarse cell x and local p map to physical M2 coordinate 7*x+p",
+          "local_cube": "[-3,3]^3",
+          "logical_index_to_coordinate": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              -1,
+              0,
+              0
+            ],
+            [
+              0,
+              -1,
+              0
+            ],
+            [
+              0,
+              0,
+              -1
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              -2,
+              0,
+              0
+            ],
+            [
+              -1,
+              -1,
+              0
+            ],
+            [
+              -1,
+              0,
+              -1
+            ],
+            [
+              -1,
+              0,
+              1
+            ],
+            [
+              -1,
+              1,
+              0
+            ],
+            [
+              0,
+              -2,
+              0
+            ],
+            [
+              0,
+              -1,
+              -1
+            ],
+            [
+              0,
+              -1,
+              1
+            ],
+            [
+              0,
+              0,
+              -2
+            ],
+            [
+              0,
+              0,
+              2
+            ],
+            [
+              0,
+              1,
+              -1
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              2,
+              0
+            ],
+            [
+              1,
+              -1,
+              0
+            ],
+            [
+              1,
+              0,
+              -1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              -3,
+              0,
+              0
+            ],
+            [
+              -2,
+              -1,
+              0
+            ],
+            [
+              -2,
+              0,
+              -1
+            ],
+            [
+              -2,
+              0,
+              1
+            ],
+            [
+              -2,
+              1,
+              0
+            ],
+            [
+              -1,
+              -2,
+              0
+            ],
+            [
+              -1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              1
+            ],
+            [
+              -1,
+              0,
+              -2
+            ],
+            [
+              -1,
+              0,
+              2
+            ],
+            [
+              -1,
+              1,
+              -1
+            ],
+            [
+              -1,
+              1,
+              1
+            ],
+            [
+              -1,
+              2,
+              0
+            ],
+            [
+              0,
+              -3,
+              0
+            ],
+            [
+              0,
+              -2,
+              -1
+            ],
+            [
+              0,
+              -2,
+              1
+            ],
+            [
+              0,
+              -1,
+              -2
+            ],
+            [
+              0,
+              -1,
+              2
+            ],
+            [
+              0,
+              0,
+              -3
+            ],
+            [
+              0,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              -2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              -1
+            ],
+            [
+              0,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              0
+            ],
+            [
+              1,
+              -2,
+              0
+            ],
+            [
+              1,
+              -1,
+              -1
+            ],
+            [
+              1,
+              -1,
+              1
+            ],
+            [
+              1,
+              0,
+              -2
+            ],
+            [
+              1,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              -1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              2,
+              -1,
+              0
+            ],
+            [
+              2,
+              0,
+              -1
+            ],
+            [
+              2,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              0
+            ],
+            [
+              3,
+              0,
+              0
+            ],
+            [
+              -3,
+              -1,
+              0
+            ],
+            [
+              -3,
+              0,
+              -1
+            ],
+            [
+              -3,
+              0,
+              1
+            ],
+            [
+              -3,
+              1,
+              0
+            ],
+            [
+              -2,
+              -2,
+              0
+            ],
+            [
+              -2,
+              -1,
+              -1
+            ],
+            [
+              -2,
+              -1,
+              1
+            ],
+            [
+              -2,
+              0,
+              -2
+            ],
+            [
+              -2,
+              0,
+              2
+            ],
+            [
+              -2,
+              1,
+              -1
+            ],
+            [
+              -2,
+              1,
+              1
+            ],
+            [
+              -2,
+              2,
+              0
+            ],
+            [
+              -1,
+              -3,
+              0
+            ],
+            [
+              -1,
+              -2,
+              -1
+            ],
+            [
+              -1,
+              -2,
+              1
+            ],
+            [
+              -1,
+              -1,
+              -2
+            ],
+            [
+              -1,
+              -1,
+              2
+            ],
+            [
+              -1,
+              0,
+              -3
+            ],
+            [
+              -1,
+              0,
+              3
+            ],
+            [
+              -1,
+              1,
+              -2
+            ],
+            [
+              -1,
+              1,
+              2
+            ],
+            [
+              -1,
+              2,
+              -1
+            ],
+            [
+              -1,
+              2,
+              1
+            ],
+            [
+              -1,
+              3,
+              0
+            ],
+            [
+              0,
+              -3,
+              -1
+            ],
+            [
+              0,
+              -3,
+              1
+            ],
+            [
+              0,
+              -2,
+              -2
+            ],
+            [
+              0,
+              -2,
+              2
+            ],
+            [
+              0,
+              -1,
+              -3
+            ],
+            [
+              0,
+              -1,
+              3
+            ],
+            [
+              0,
+              1,
+              -3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              2,
+              -2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              0,
+              3,
+              -1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              1,
+              -3,
+              0
+            ],
+            [
+              1,
+              -2,
+              -1
+            ],
+            [
+              1,
+              -2,
+              1
+            ],
+            [
+              1,
+              -1,
+              -2
+            ],
+            [
+              1,
+              -1,
+              2
+            ],
+            [
+              1,
+              0,
+              -3
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              1,
+              1,
+              -2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              1,
+              2,
+              -1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              2,
+              -2,
+              0
+            ],
+            [
+              2,
+              -1,
+              -1
+            ],
+            [
+              2,
+              -1,
+              1
+            ],
+            [
+              2,
+              0,
+              -2
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              2,
+              1,
+              -1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              3,
+              -1,
+              0
+            ],
+            [
+              3,
+              0,
+              -1
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              -3,
+              -2,
+              0
+            ],
+            [
+              -3,
+              -1,
+              -1
+            ],
+            [
+              -3,
+              -1,
+              1
+            ],
+            [
+              -3,
+              0,
+              -2
+            ],
+            [
+              -3,
+              0,
+              2
+            ],
+            [
+              -3,
+              1,
+              -1
+            ],
+            [
+              -3,
+              1,
+              1
+            ],
+            [
+              -3,
+              2,
+              0
+            ],
+            [
+              -2,
+              -3,
+              0
+            ],
+            [
+              -2,
+              -2,
+              -1
+            ],
+            [
+              -2,
+              -2,
+              1
+            ],
+            [
+              -2,
+              -1,
+              -2
+            ],
+            [
+              -2,
+              -1,
+              2
+            ],
+            [
+              -2,
+              0,
+              -3
+            ],
+            [
+              -2,
+              0,
+              3
+            ],
+            [
+              -2,
+              1,
+              -2
+            ],
+            [
+              -2,
+              1,
+              2
+            ],
+            [
+              -2,
+              2,
+              -1
+            ],
+            [
+              -2,
+              2,
+              1
+            ],
+            [
+              -2,
+              3,
+              0
+            ],
+            [
+              -1,
+              -3,
+              -1
+            ],
+            [
+              -1,
+              -3,
+              1
+            ],
+            [
+              -1,
+              -2,
+              -2
+            ],
+            [
+              -1,
+              -2,
+              2
+            ],
+            [
+              -1,
+              -1,
+              -3
+            ],
+            [
+              -1,
+              -1,
+              3
+            ],
+            [
+              -1,
+              1,
+              -3
+            ],
+            [
+              -1,
+              1,
+              3
+            ],
+            [
+              -1,
+              2,
+              -2
+            ],
+            [
+              -1,
+              2,
+              2
+            ],
+            [
+              -1,
+              3,
+              -1
+            ],
+            [
+              -1,
+              3,
+              1
+            ],
+            [
+              0,
+              -3,
+              -2
+            ],
+            [
+              0,
+              -3,
+              2
+            ],
+            [
+              0,
+              -2,
+              -3
+            ],
+            [
+              0,
+              -2,
+              3
+            ],
+            [
+              0,
+              2,
+              -3
+            ],
+            [
+              0,
+              2,
+              3
+            ],
+            [
+              0,
+              3,
+              -2
+            ],
+            [
+              0,
+              3,
+              2
+            ],
+            [
+              1,
+              -3,
+              -1
+            ],
+            [
+              1,
+              -3,
+              1
+            ],
+            [
+              1,
+              -2,
+              -2
+            ],
+            [
+              1,
+              -2,
+              2
+            ],
+            [
+              1,
+              -1,
+              -3
+            ],
+            [
+              1,
+              -1,
+              3
+            ],
+            [
+              1,
+              1,
+              -3
+            ],
+            [
+              1,
+              1,
+              3
+            ],
+            [
+              1,
+              2,
+              -2
+            ],
+            [
+              1,
+              2,
+              2
+            ],
+            [
+              1,
+              3,
+              -1
+            ],
+            [
+              1,
+              3,
+              1
+            ],
+            [
+              2,
+              -3,
+              0
+            ],
+            [
+              2,
+              -2,
+              -1
+            ],
+            [
+              2,
+              -2,
+              1
+            ],
+            [
+              2,
+              -1,
+              -2
+            ],
+            [
+              2,
+              -1,
+              2
+            ],
+            [
+              2,
+              0,
+              -3
+            ],
+            [
+              2,
+              0,
+              3
+            ],
+            [
+              2,
+              1,
+              -2
+            ],
+            [
+              2,
+              1,
+              2
+            ],
+            [
+              2,
+              2,
+              -1
+            ],
+            [
+              2,
+              2,
+              1
+            ],
+            [
+              2,
+              3,
+              0
+            ],
+            [
+              3,
+              -2,
+              0
+            ],
+            [
+              3,
+              -1,
+              -1
+            ],
+            [
+              3,
+              -1,
+              1
+            ],
+            [
+              3,
+              0,
+              -2
+            ],
+            [
+              3,
+              0,
+              2
+            ],
+            [
+              3,
+              1,
+              -1
+            ],
+            [
+              3,
+              1,
+              1
+            ]
+          ],
+          "maximum_CNOT_pair_L1_span": 9,
+          "placement_sha256": "7629ce80c8d6bd8f43ea5c8f82bf6fd4102a53a43e1b002ba253f0e63f1769fd",
+          "reserved_M2_per_coarse_cell": 343,
+          "total_active_M2": 194
+        },
+        "incoming_Cycle676_active_M2": 187,
+        "inverse_failures": 0,
+        "malformed_rejected": 4,
+        "maximum_support_M2": 2,
+        "total_active_M2": 194
+      },
+      "disposition": "bounded local collision dilation and exact decoherence pass, but the channel does not choose an unraveling or own one objective event; choosing the projector unraveling imports route B's stochastic law",
+      "finite_global_type": "PureCoherentState[center x environment x Cycle676 exhaust]",
+      "fixture_rows": {
+        "C3_uniform64": {
+          "dephased_purity": 0.8227539062500002,
+          "input_purity": 1.0000000000000004,
+          "phase_unravelling_outcome_weights": [
+            "1/7",
+            "1/7",
+            "1/7",
+            "1/7",
+            "1/7",
+            "1/7",
+            "1/7"
+          ],
+          "phase_unravelling_system_state_remains_coherent_per_trajectory": true,
+          "projector_unravelling_event_weights": [
+            "29/32",
+            "1/64",
+            "1/64",
+            "1/64",
+            "1/64",
+            "1/64",
+            "1/64"
+          ],
+          "projector_vs_phase_channel_residual": 1.3907745252465237e-16,
+          "split": "train"
+        },
+        "C4_phase_ramp64": {
+          "dephased_purity": 0.8227539062500002,
+          "input_purity": 1.0000000000000004,
+          "phase_unravelling_outcome_weights": [
+            "1/7",
+            "1/7",
+            "1/7",
+            "1/7",
+            "1/7",
+            "1/7",
+            "1/7"
+          ],
+          "phase_unravelling_system_state_remains_coherent_per_trajectory": true,
+          "projector_unravelling_event_weights": [
+            "29/32",
+            "1/64",
+            "1/64",
+            "1/64",
+            "1/64",
+            "1/64",
+            "1/64"
+          ],
+          "projector_vs_phase_channel_residual": 1.3907745252465237e-16,
+          "split": "held_blinded_phase"
+        },
+        "C6_sparse_complex": {
+          "dephased_purity": 0.9444897959183673,
+          "input_purity": 1.0,
+          "phase_unravelling_outcome_weights": [
+            "1/7",
+            "1/7",
+            "1/7",
+            "1/7",
+            "1/7",
+            "1/7",
+            "1/7"
+          ],
+          "phase_unravelling_system_state_remains_coherent_per_trajectory": true,
+          "projector_unravelling_event_weights": [
+            "34/35",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1/35"
+          ],
+          "projector_vs_phase_channel_residual": 1.992039191427928e-16,
+          "split": "held_blinded_nonproduct"
+        },
+        "C9_asymmetric": {
+          "dephased_purity": 0.17857142857142855,
+          "input_purity": 0.9999999999999998,
+          "phase_unravelling_outcome_weights": [
+            "1/7",
+            "1/7",
+            "1/7",
+            "1/7",
+            "1/7",
+            "1/7",
+            "1/7"
+          ],
+          "phase_unravelling_system_state_remains_coherent_per_trajectory": true,
+          "projector_unravelling_event_weights": [
+            "1/4",
+            "3/14",
+            "5/28",
+            "1/7",
+            "3/28",
+            "1/14",
+            "1/28"
+          ],
+          "projector_vs_phase_channel_residual": 3.6019684658958494e-16,
+          "split": "held_larger"
+        },
+        "direction_tie": {
+          "dephased_purity": 0.16666666666666663,
+          "input_purity": 0.9999999999999999,
+          "phase_unravelling_outcome_weights": [
+            "1/7",
+            "1/7",
+            "1/7",
+            "1/7",
+            "1/7",
+            "1/7",
+            "1/7"
+          ],
+          "phase_unravelling_system_state_remains_coherent_per_trajectory": true,
+          "projector_unravelling_event_weights": [
+            "0",
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6"
+          ],
+          "projector_vs_phase_channel_residual": 6.112717868034765e-16,
+          "split": "adversarial_tie"
+        }
+      },
+      "host_sampler_calls": 0,
+      "host_sampling_source_hits": [],
+      "objective_repeated_trial_law": false,
+      "one_objective_token_without_chosen_unravelling": false,
+      "pass": true,
+      "projector_vs_random_phase_channel_maximum_residual": 6.112717868034765e-16,
+      "reduced_type": "DiagonalDensity[none|six]",
+      "route": "C_linear_dephasing_collision_and_unravellings",
+      "unravelling_discriminator": "the projector and Fourier-phase ensembles implement the same channel; the first labels event sectors, the second labels phase kicks and leaves a coherent system state on each trajectory",
+      "unravelling_unique": false,
+      "update_application_is_physical_time_or_rate": false,
+      "weights_called_Born_probabilities_or_frequencies": false
+    }
+  },
+  "runner_sha256": "e3780ef97d394116c49044ff44eacd178da0146a8f60dd3b47838bbac904775a",
+  "shared_route_independent_obstruction": false,
+  "status": "exact absorbing Born martingale conditional on supplied law; bounded native physical actualizer not met",
+  "strict_full_framework_terminal_met": false,
+  "strongest_constructive_result": "an exact proper-cubic absorbing martingale with vertex-hitting weights |a_i|^2, at most six updates, declared iid objective trials, named immutable Cycle676 exhaust and exact Cycle669 composition",
+  "supplied_structure_inventory": {
+    "derived": [
+      "replicator tie/ensemble/no-signalling discriminator",
+      "exact absorbing martingale and vertex-hitting theorem",
+      "conditional iid repeated-trial/Born law",
+      "194-active-M2 dephasing collision dilation",
+      "exact nonunique-unraveling equality",
+      "branchwise Cycle669 composition"
+    ],
+    "open": [
+      "bounded physical genesis of objective innovation",
+      "one route closing both objective ownership and M2 compilation",
+      "framework Record",
+      "physical time/rate",
+      "physical energy/generator",
+      "gravity/source"
+    ],
+    "supplied": [
+      "Cycle661/Cycle676 coherent 64-sector wave and phase/exhaust compiler",
+      "Cycle669 chain seeds",
+      "candidate A nonlinear pure-state rule",
+      "candidate B objective hybrid state-weight oracle",
+      "candidate B independent innovation stream and identical trial reset",
+      "candidate C blank environment rails",
+      "candidate C unraveling choice when an outcome is requested",
+      "compile-time frame chart",
+      "finite Markov-chain recursion plus optional-stopping, Chebyshev and strong-law theorem machinery"
+    ]
+  },
+  "target_contract_candidate_terminal_met": false,
+  "tests_failed": 0,
+  "tests_passed": 8
+}

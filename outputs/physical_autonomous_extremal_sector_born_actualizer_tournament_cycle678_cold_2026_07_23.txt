@@ -1,0 +1,35 @@
+PASS Cycle678 three-law target and b42ab53eaa shores were frozen before evidence :: {'target': '49b60e16b634fd5d1f895b39dccd347a3082343f612da770cdfea245284c746e', 'prereg': '0fe3777afcd98da4a9d539577cbea3ba2c35ddd4c5dc2bbd9924c60eb895c789', 'pins': 12}
+PASS fresh N1-N8 blocks a broad actualization impossibility or axiom-pressure claim :: {'families': 5, 'walls': ['W_objective_law_ownership', 'W_bounded_local_physical_compilation'], 'negative_gate': 'FAIL_DO_NOT_SHIP_NEGATIVE'}
+PASS Cycle676 coherent fixtures match frozen exact event weights :: {'uniform64': 0.0, 'phase_ramp64': 3.469446951953614e-18, 'held_sparse_complex': 3.469446951953614e-18}
+PASS route A discriminates covariant replicator concentration from objective Born actualization :: {'tie_failures': 20, 'ensemble_trace_distance': '3/20', 'terminal': False}
+PASS route B gives exact Born hitting/repeated-trial law only under an explicit stochastic hybrid supply :: {'fixtures': 5, 'convergence': True, 'Cycle669_failures': 0, 'physical_M2': False}
+PASS route C separates bounded linear decoherence from objective unraveling ownership :: {'channel_residual': 6.112717868034765e-16, 'unravelling_unique': False, 'terminal': False}
+PASS cross-route discriminator finds no route satisfying selection, Born trials and physical M2 compilation together :: {'A': {'single_objective': False, 'exact_repeated_weights': False, 'bounded_M2': False, 'added_supply': 'deterministic nonlinear state map and exhaust-copy extension'}, 'B': {'single_objective': True, 'exact_repeated_weights': True, 'bounded_M2': False, 'added_supply': 'objective hybrid ontology, state-weight oracle and independent innovation stream'}, 'C': {'single_objective': False, 'exact_repeated_weights': False, 'bounded_M2': True, 'added_supply': 'chosen unraveling required for an outcome'}}
+PASS Cycle678 note preserves outcome/Born/unravelling/M2/time/no-go type gates :: ()
+{
+  "pass": true,
+  "tests_passed": 8,
+  "tests_failed": 0,
+  "elapsed_seconds": 1.3680174999171868,
+  "maximum_RSS_bytes": 101072896,
+  "note": "/private/tmp/toe-science.BB0KQV/docs/work_history/repo/review_feedback/PHYSICAL_AUTONOMOUS_EXTREMAL_SECTOR_BORN_ACTUALIZER_TOURNAMENT_CYCLE678_NOTE_2026-07-23.md",
+  "receipt": "/private/tmp/toe-science.BB0KQV/outputs/physical_autonomous_extremal_sector_born_actualizer_tournament_cycle678_receipt_2026_07_23.json"
+}
+        2.83 real         2.21 user         0.39 sys
+           101072896  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              151337  page reclaims
+                2102  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1650  voluntary context switches
+                1504  involuntary context switches
+         30871084400  instructions retired
+          7811016606  cycles elapsed
+            82788880  peak memory footprint

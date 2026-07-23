@@ -1,0 +1,1245 @@
+{
+  "audit": "unset",
+  "author_accepted": false,
+  "author_artifact_status_accepted": false,
+  "authority": "none",
+  "axiom_pressure": false,
+  "breakthrough": false,
+  "breakthrough_bar_met": false,
+  "classification": "positive bounded support-three physical candidate-packet interface; seam-complete A2 stream, elementary support-two lowering, tick law, and actuality remain open",
+  "contact_echo_instrument": {
+    "Cycle634_positive_root_binary_effect_residual": 2.0816681711721685e-17,
+    "contact_deletion_kills_candidate_pointer": true,
+    "contact_off_pointer_one_effect_residual": 5.004680467665246e-34,
+    "contact_phase": 0.37,
+    "deletion_rows": [
+      {
+        "deletion": "delete_first_H",
+        "effect_difference": 0.4999999999999999
+      },
+      {
+        "deletion": "delete_controlled_contact",
+        "effect_difference": 0.03383632719698277
+      },
+      {
+        "deletion": "delete_final_H",
+        "effect_difference": 0.4999999999999999
+      }
+    ],
+    "direct_effect_residual": 2.0816681711721685e-17,
+    "echo_unitary_inverse_residual": 4.888314961915773e-16,
+    "matter_input": "one supplied local contact-eigenflag M2; extraction from the committed Cycle639 64x15 local A2 payload is not consumed",
+    "maximum_native_echo_gate_support_M2": 2,
+    "pass": true,
+    "pointer_is_coherent_candidate_not_occurrence": true,
+    "pointer_one_effect": [
+      [
+        5.004680467665246e-34,
+        0.0
+      ],
+      [
+        0.0,
+        0.03383632719698277
+      ]
+    ],
+    "pointer_one_probability_on_contact_flag_one": 0.03383632719698279,
+    "system_plus_pointer_M2": 2
+  },
+  "covariance_controls": {
+    "crossing_orientation_channel_and_convention_are_spatial_scalars": true,
+    "ordered_frame_products": 576,
+    "pass": true,
+    "proper_cubic_frames": 24,
+    "reference_ray_and_bank_direction_supplied": true,
+    "rows": [
+      {
+        "all24_bijection_failures": 0,
+        "all576_group_failures": 0,
+        "constant_overhead_per_event_cell": true,
+        "endpoint_M2_per_local_packet": 18,
+        "interval_cell_M2": 23,
+        "length": 3,
+        "oriented_apparatus_labels": 48,
+        "split": "construction"
+      },
+      {
+        "all24_bijection_failures": 0,
+        "all576_group_failures": 0,
+        "constant_overhead_per_event_cell": true,
+        "endpoint_M2_per_local_packet": 18,
+        "interval_cell_M2": 23,
+        "length": 6,
+        "oriented_apparatus_labels": 48,
+        "split": "train"
+      },
+      {
+        "all24_bijection_failures": 0,
+        "all576_group_failures": 0,
+        "constant_overhead_per_event_cell": true,
+        "endpoint_M2_per_local_packet": 18,
+        "interval_cell_M2": 23,
+        "length": 7,
+        "oriented_apparatus_labels": 48,
+        "split": "held-out-no-refit"
+      }
+    ],
+    "runtime_frame_selector": false,
+    "spatial_ray_transported": true
+  },
+  "cycle610_semantic_adapter": {
+    "Cycle610_sample_interval_match": true,
+    "Cycle610_status_semantics": {
+      "actuality_or_admissibility_or_law_domain_deleted": "no target cell",
+      "binder_deleted": "no target cell",
+      "duplicate": "one-use packet token produces no target cell",
+      "lineage_gap": null
+    },
+    "full_Cycle610_tick_word_composed_to_physical_stream": false,
+    "pass": true,
+    "reason": "Cycle640 consumes a certified crossing packet interface; the same-species A2 seam-complete physical stream and detector crossing circuit are not yet committed shores",
+    "rows": [
+      {
+        "binder_gap_is_undefined": true,
+        "carries_first_24": 2,
+        "carry_deletion_is_undefined": true,
+        "decoder_inputs_update_ordinal": false,
+        "events": 27,
+        "intervals": {
+          "d_ab": 9,
+          "d_ac": 21,
+          "d_bc": 12
+        },
+        "length": 3,
+        "lineage_gap_is_undefined": true,
+        "orientation_reverse": -9,
+        "pass": true,
+        "rotor_deletion_is_undefined": true,
+        "split": "construction",
+        "unique_terminal_local_head": true,
+        "work_returned_blank": true
+      },
+      {
+        "binder_gap_is_undefined": true,
+        "carries_first_24": 2,
+        "carry_deletion_is_undefined": true,
+        "decoder_inputs_update_ordinal": false,
+        "events": 30,
+        "intervals": {
+          "d_ab": 9,
+          "d_ac": 21,
+          "d_bc": 12
+        },
+        "length": 6,
+        "lineage_gap_is_undefined": true,
+        "orientation_reverse": -9,
+        "pass": true,
+        "rotor_deletion_is_undefined": true,
+        "split": "train",
+        "unique_terminal_local_head": true,
+        "work_returned_blank": true
+      },
+      {
+        "binder_gap_is_undefined": true,
+        "carries_first_24": 2,
+        "carry_deletion_is_undefined": true,
+        "decoder_inputs_update_ordinal": false,
+        "events": 31,
+        "intervals": {
+          "d_ab": 9,
+          "d_ac": 21,
+          "d_bc": 12
+        },
+        "length": 7,
+        "lineage_gap_is_undefined": true,
+        "orientation_reverse": -9,
+        "pass": true,
+        "rotor_deletion_is_undefined": true,
+        "split": "held-out-no-refit",
+        "unique_terminal_local_head": true,
+        "work_returned_blank": true
+      }
+    ]
+  },
+  "elapsed_seconds": 1.142519291024655,
+  "endpoint_predicate": {
+    "channel_certification_and_convention_certificate_supplied": true,
+    "channel_or_convention_selected_by_host_at_runtime": false,
+    "channel_sign_port": "one retained M2 copied into a valid certificate; 0=plus, 1=minus",
+    "crossing_orientation_port": "one retained M2; invariant under spatial proper-cubic frames",
+    "deletion_rows": [
+      {
+        "deleted_gate": "p0_endpoint_and_compute_0",
+        "full_inverse_visible_hamming": 1,
+        "output_hamming": 7
+      },
+      {
+        "deleted_gate": "p0_certificate_emit",
+        "full_inverse_visible_hamming": 1,
+        "output_hamming": 6
+      },
+      {
+        "deleted_gate": "p0_orientation_copy",
+        "full_inverse_visible_hamming": 1,
+        "output_hamming": 1
+      },
+      {
+        "deleted_gate": "p0_channel_copy",
+        "full_inverse_visible_hamming": 1,
+        "output_hamming": 1
+      },
+      {
+        "deleted_gate": "p0_convention_copy",
+        "full_inverse_visible_hamming": 1,
+        "output_hamming": 1
+      },
+      {
+        "deleted_gate": "p0_token_emit",
+        "full_inverse_visible_hamming": 1,
+        "output_hamming": 1
+      },
+      {
+        "deleted_gate": "p0_endpoint_and_uncompute_0",
+        "full_inverse_visible_hamming": 2,
+        "output_hamming": 1
+      },
+      {
+        "deleted_gate": "p0_claim_latch",
+        "full_inverse_visible_hamming": 2,
+        "output_hamming": 1
+      }
+    ],
+    "duplicate_second_certificate_refused": true,
+    "line_agnostic_hardware": true,
+    "pass": true,
+    "predicate": "contact_pointer AND crossing AND channel_certified AND convention_certified AND NOT claimed",
+    "resources": {
+      "echo_pointer_M2": 1,
+      "endpoint_boolean_input_M2_including_pointer": 8,
+      "endpoint_output_M2": 5,
+      "endpoint_work_M2": 4,
+      "gate_count": 14,
+      "local_contact_eigenflag_M2": 1,
+      "maximum_gate_support_M2": 3,
+      "total_distinct_local_M2": 18
+    },
+    "second_A2_line_or_root_used": false,
+    "tick_convention_port": "one retained M2 copied into a valid certificate; 0=T1, 1=T2",
+    "truth_table_failures": 0,
+    "truth_table_rows": 256,
+    "work_returned_blank": true
+  },
+  "full_Cycle610_612_harness_composition": false,
+  "highest_honest_terminal": "Cycle612 physical-side candidate packet interface, not a full physical CT-1 clock and not time/occurrence/Record/history",
+  "immutable_shores": {
+    "Cycle639_committed_local_wedge2_A2_host_consumed_as_premise": false,
+    "PR5557_head": "a1e2f1ea60b1cf9b9cb0ae100c61cfd1f3a07318",
+    "current_committed_shore_head": "ab87e466684e77b10cefbc799addc4701f8b8e0d",
+    "expected_PR5557_sha256": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_AUTONOMOUS_BOUND_BRANCH_PREPARATION_TOURNAMENT_CYCLE611_NOTE_2026-07-22.md": "91e0e0bb6c931f7da7a468a7094deffb775523f22b75334322417639edf57056",
+      "docs/work_history/repo/review_feedback/PHYSICAL_INTRINSIC_TICK_EVENT_RELATIONAL_DURATION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md": "63854c353f477f7beb8371d3a4489c02d8787c54679ab8963c7cc828972a4ea4",
+      "docs/work_history/repo/review_feedback/PHYSICAL_TICK_ECHO_ASSOCIATION_CAUSAL_ORDER_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md": "028133c490e771dd3012061c79910fcfb88cd6132df072ec15e725fe9bc35496",
+      "outputs/physical_autonomous_bound_branch_preparation_tournament_cycle611_receipt_2026_07_22.json": "fe9ce56e115d064f82cb3483afc9ea51c6bd76bbdc8a737b8e7bb279119efe6b",
+      "outputs/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_receipt_2026_07_22.json": "0816073d1861bb8b36238ec4948c387801a75442c797baf4a52e335cf6d30ccc",
+      "outputs/physical_minus_channel_certification_addendum_cycle612_receipt_2026_07_22.json": "c768c814412b259938f804f18581956d354c680e35c497eeb636fd5d6cae0c10",
+      "outputs/physical_tick_echo_association_causal_order_tournament_cycle612_receipt_2026_07_22.json": "6da06e7c1147b28e74b0f1469fb466018a20f524167e628189e80e5348165cd6",
+      "scripts/physical_autonomous_bound_branch_preparation_tournament_cycle611_2026_07_22.py": "9f1d4a2aabca8af1f61ef42071c8d2bce05018eace7a6f0886d769871689a13d",
+      "scripts/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22.py": "61d624d3f47e371a3b99f55a3c60db68c1fe77f5d93a21651f9172b2d49f1458",
+      "scripts/physical_minus_channel_certification_addendum_cycle612_2026_07_22.py": "5eee5e2b510c92f72dfd9a40ed1633c3257962cb39faf615ad4a9af7f3b4e711",
+      "scripts/physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22.py": "4494ce889809f6a179fc9bb712aa851fa6e73dac32a7b1bfbdb71903be5fadde"
+    },
+    "expected_current_sha256": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_FIXED_SECTOR_HELD_L6_LITERAL_EG_PRODUCT_TOURNAMENT_CYCLE632_NOTE_2026-07-23.md": "d9ab97e1f46ad9ea7757b5de0d89b080bb101263190dee353263ab7b6ce1e4f2",
+      "docs/work_history/repo/review_feedback/PHYSICAL_FORCING_MENU_INSTRUMENT_BRIDGE_TOURNAMENT_CYCLE634_NOTE_2026-07-23.md": "d0b8b3b0cb496a3864320c38f2fd8948a42a03252bf18e1b2389618f76f3cd5c",
+      "outputs/physical_fixed_sector_held_L6_literal_EG_product_tournament_cycle632_receipt_2026_07_23.json": "36f87c42c5cdbd97da5d66f25a2be2a63ad016130087ef56dc4da32d700215ff",
+      "outputs/physical_forcing_menu_instrument_bridge_tournament_cycle634_receipt_2026_07_23.json": "3fd6a476feac3bae38f0da2b6c0d2826432e4b6a605d02d1e99b0d946e6efc87",
+      "scripts/physical_fixed_sector_held_L6_literal_EG_product_tournament_cycle632_2026_07_23.py": "3b8e32baf616f64769b45bb6258d7f9f13814c6e7df99a4cea063706a25b597f",
+      "scripts/physical_forcing_menu_instrument_bridge_tournament_cycle634_2026_07_23.py": "ca187b7dda5c2b1b56a63ba960695734fc9915177c2769ef957913a096a74d52"
+    },
+    "observed_PR5557_sha256": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_AUTONOMOUS_BOUND_BRANCH_PREPARATION_TOURNAMENT_CYCLE611_NOTE_2026-07-22.md": "91e0e0bb6c931f7da7a468a7094deffb775523f22b75334322417639edf57056",
+      "docs/work_history/repo/review_feedback/PHYSICAL_INTRINSIC_TICK_EVENT_RELATIONAL_DURATION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md": "63854c353f477f7beb8371d3a4489c02d8787c54679ab8963c7cc828972a4ea4",
+      "docs/work_history/repo/review_feedback/PHYSICAL_TICK_ECHO_ASSOCIATION_CAUSAL_ORDER_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md": "028133c490e771dd3012061c79910fcfb88cd6132df072ec15e725fe9bc35496",
+      "outputs/physical_autonomous_bound_branch_preparation_tournament_cycle611_receipt_2026_07_22.json": "fe9ce56e115d064f82cb3483afc9ea51c6bd76bbdc8a737b8e7bb279119efe6b",
+      "outputs/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_receipt_2026_07_22.json": "0816073d1861bb8b36238ec4948c387801a75442c797baf4a52e335cf6d30ccc",
+      "outputs/physical_minus_channel_certification_addendum_cycle612_receipt_2026_07_22.json": "c768c814412b259938f804f18581956d354c680e35c497eeb636fd5d6cae0c10",
+      "outputs/physical_tick_echo_association_causal_order_tournament_cycle612_receipt_2026_07_22.json": "6da06e7c1147b28e74b0f1469fb466018a20f524167e628189e80e5348165cd6",
+      "scripts/physical_autonomous_bound_branch_preparation_tournament_cycle611_2026_07_22.py": "9f1d4a2aabca8af1f61ef42071c8d2bce05018eace7a6f0886d769871689a13d",
+      "scripts/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22.py": "61d624d3f47e371a3b99f55a3c60db68c1fe77f5d93a21651f9172b2d49f1458",
+      "scripts/physical_minus_channel_certification_addendum_cycle612_2026_07_22.py": "5eee5e2b510c92f72dfd9a40ed1633c3257962cb39faf615ad4a9af7f3b4e711",
+      "scripts/physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22.py": "4494ce889809f6a179fc9bb712aa851fa6e73dac32a7b1bfbdb71903be5fadde"
+    },
+    "observed_current_sha256": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_FIXED_SECTOR_HELD_L6_LITERAL_EG_PRODUCT_TOURNAMENT_CYCLE632_NOTE_2026-07-23.md": "d9ab97e1f46ad9ea7757b5de0d89b080bb101263190dee353263ab7b6ce1e4f2",
+      "docs/work_history/repo/review_feedback/PHYSICAL_FORCING_MENU_INSTRUMENT_BRIDGE_TOURNAMENT_CYCLE634_NOTE_2026-07-23.md": "d0b8b3b0cb496a3864320c38f2fd8948a42a03252bf18e1b2389618f76f3cd5c",
+      "outputs/physical_fixed_sector_held_L6_literal_EG_product_tournament_cycle632_receipt_2026_07_23.json": "36f87c42c5cdbd97da5d66f25a2be2a63ad016130087ef56dc4da32d700215ff",
+      "outputs/physical_forcing_menu_instrument_bridge_tournament_cycle634_receipt_2026_07_23.json": "3fd6a476feac3bae38f0da2b6c0d2826432e4b6a605d02d1e99b0d946e6efc87",
+      "scripts/physical_fixed_sector_held_L6_literal_EG_product_tournament_cycle632_2026_07_23.py": "3b8e32baf616f64769b45bb6258d7f9f13814c6e7df99a4cea063706a25b597f",
+      "scripts/physical_forcing_menu_instrument_bridge_tournament_cycle634_2026_07_23.py": "ca187b7dda5c2b1b56a63ba960695734fc9915177c2769ef957913a096a74d52"
+    },
+    "pass": true,
+    "semantic_acceptance_contract": {
+      "Cycle610_expected_preregistered_exit_one": true,
+      "Cycle610_interval_contract": true,
+      "Cycle611_expected_preregistered_exit_one": true,
+      "Cycle612_addendum_positive": true,
+      "Cycle612_expected_preregistered_exit_one": true,
+      "Cycle612_minus_channel_load_bearing": true,
+      "Cycle632_fixed_sector_only": true,
+      "Cycle634_pointer_candidate_only": true
+    },
+    "working_tree_bytes_used_as_premise": false
+  },
+  "interval_packet_unit": {
+    "basis_case_failures": 0,
+    "basis_cases_exhausted": 4096,
+    "binder_deletion_blocks_opportunity": true,
+    "blank_target_genesis_supplied_not_autonomous": true,
+    "deletion_rows": [
+      {
+        "deleted_gate": "u_predecessor_copy_0",
+        "full_inverse_visible_hamming": 1,
+        "output_hamming": 1
+      },
+      {
+        "deleted_gate": "u_rotor_increment_bit0",
+        "full_inverse_visible_hamming": 1,
+        "output_hamming": 1
+      },
+      {
+        "deleted_gate": "u_carry_set",
+        "full_inverse_visible_hamming": 1,
+        "output_hamming": 1
+      },
+      {
+        "deleted_gate": "u_binder_copy",
+        "full_inverse_visible_hamming": 1,
+        "output_hamming": 1
+      },
+      {
+        "deleted_gate": "u_orientation_copy",
+        "full_inverse_visible_hamming": 1,
+        "output_hamming": 1
+      },
+      {
+        "deleted_gate": "u_valid_set",
+        "full_inverse_visible_hamming": 1,
+        "output_hamming": 4
+      },
+      {
+        "deleted_gate": "u_admit_and_uncompute_0",
+        "full_inverse_visible_hamming": 13,
+        "output_hamming": 1
+      },
+      {
+        "deleted_gate": "u_token_consume",
+        "full_inverse_visible_hamming": 13,
+        "output_hamming": 1
+      },
+      {
+        "deleted_gate": "u_head_move",
+        "full_inverse_visible_hamming": 14,
+        "output_hamming": 2
+      }
+    ],
+    "exactly_once": true,
+    "explicit_port_deletions": [
+      {
+        "admission_refused": true,
+        "deleted_port": "actuality"
+      },
+      {
+        "admission_refused": true,
+        "deleted_port": "admissibility"
+      },
+      {
+        "admission_refused": true,
+        "deleted_port": "law_domain"
+      }
+    ],
+    "pass": true,
+    "predecessor_source": "identity copied from the adjacent cell carrying the unique local head marker",
+    "resources": {
+      "cell_M2": 23,
+      "declared_maximum_identity": 63,
+      "explicit_admission_port_M2": 4,
+      "gate_count": 52,
+      "gate_counts": {
+        "swap": 1,
+        "toggle": 51
+      },
+      "identity_width_bits": 6,
+      "maximum_gate_support_M2": 3,
+      "packet_M2": 10,
+      "two_cell_packet_and_work_neighborhood_M2": 72,
+      "work_M2": 12
+    },
+    "second_attempt_work_blank": true,
+    "target_blank_local_input_constraints": [
+      {
+        "bit": "tgt_identity_0",
+        "declared_blank_code_refuses": true
+      },
+      {
+        "bit": "tgt_identity_1",
+        "declared_blank_code_refuses": true
+      },
+      {
+        "bit": "tgt_identity_2",
+        "declared_blank_code_refuses": true
+      },
+      {
+        "bit": "tgt_identity_3",
+        "declared_blank_code_refuses": true
+      },
+      {
+        "bit": "tgt_identity_4",
+        "declared_blank_code_refuses": true
+      },
+      {
+        "bit": "tgt_identity_5",
+        "declared_blank_code_refuses": true
+      },
+      {
+        "bit": "tgt_predecessor_0",
+        "declared_blank_code_refuses": true
+      },
+      {
+        "bit": "tgt_predecessor_1",
+        "declared_blank_code_refuses": true
+      },
+      {
+        "bit": "tgt_predecessor_2",
+        "declared_blank_code_refuses": true
+      },
+      {
+        "bit": "tgt_predecessor_3",
+        "declared_blank_code_refuses": true
+      },
+      {
+        "bit": "tgt_predecessor_4",
+        "declared_blank_code_refuses": true
+      },
+      {
+        "bit": "tgt_predecessor_5",
+        "declared_blank_code_refuses": true
+      },
+      {
+        "bit": "tgt_rotor_0",
+        "declared_blank_code_refuses": true
+      },
+      {
+        "bit": "tgt_rotor_1",
+        "declared_blank_code_refuses": true
+      },
+      {
+        "bit": "tgt_rotor_2",
+        "declared_blank_code_refuses": true
+      },
+      {
+        "bit": "tgt_rotor_3",
+        "declared_blank_code_refuses": true
+      },
+      {
+        "bit": "tgt_carry",
+        "declared_blank_code_refuses": true
+      },
+      {
+        "bit": "tgt_binder",
+        "declared_blank_code_refuses": true
+      },
+      {
+        "bit": "tgt_valid",
+        "declared_blank_code_refuses": true
+      },
+      {
+        "bit": "tgt_orientation",
+        "declared_blank_code_refuses": true
+      },
+      {
+        "bit": "tgt_channel",
+        "declared_blank_code_refuses": true
+      },
+      {
+        "bit": "tgt_convention",
+        "declared_blank_code_refuses": true
+      },
+      {
+        "bit": "tgt_head",
+        "declared_blank_code_refuses": true
+      }
+    ],
+    "update": "one-use packet token AND local source head/valid AND binder/actuality/admissibility/law-domain; copy identity/predecessor/metadata; increment K16; K15->K0 carry; consume token; move head"
+  },
+  "inventory": {
+    "derived": [
+      "two-M2 coherent contact echo and exact contact-off kill",
+      "bounded-support-three reversible endpoint predicate with duplicate refusal and copied orientation/channel/convention",
+      "bounded-support-three reversible predecessor/K16/carry packet with token consumption and local head move",
+      "L3/L6/L7 9+12=21/two-carry acceptance equality, inverse/deletion/malformed, undefined-gap, all24/all576 controls"
+    ],
+    "open": [
+      "committed seam-complete physical same-species A2 stream and local extraction of the contact eigenflag",
+      "physical CT-1 crossing/channel/convention certificate generator over that stream",
+      "actuality/admissibility/law-domain value law and occurrence",
+      "autonomous identity, bank, root-head, schedule, reset, renewal, and permanence",
+      "unbounded causal order, empirical duration unit, continuum/Lorentz/proper-time interpretation"
+    ],
+    "supplied": [
+      "immutable PR5557 Cycle610-612 contracts at a1e2f1ea60b1cf9b9cb0ae100c61cfd1f3a07318",
+      "committed Cycle632/634 shores at ab87e466684e77b10cefbc799addc4701f8b8e0d",
+      "one local contact eigenflag and its contact phase",
+      "crossing bit, crossing orientation, channel sign, channel certificate, T1/T2 convention, convention certificate",
+      "six-bit candidate identity and one claimed latch per crossing cell",
+      "one-use packet token, root cell rotor K14/head, blank target-cell bank, nearest-neighbor bank direction, serialized local schedule",
+      "binder, actuality, admissibility, and law-domain port values"
+    ]
+  },
+  "maximum_RSS_bytes": 39927808,
+  "minimum_content_claim": false,
+  "no_go_discipline": {
+    "N1_broad_negative_gate": "WITHHELD_BECAUSE_TARGET_EQUIVALENT_STREAM_ROUTE_IS_OPEN",
+    "N1_normalized_families": [
+      {
+        "family": "coherent contact echo",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "Hadamard-controlled-contact-Hadamard gives zero pointer-one effect when contact is deleted",
+        "object_formulation": "contact eigenflag plus path-pointer M2",
+        "status": "POSITIVE_CANDIDATE_POINTER",
+        "strength_vs_target": "weaker",
+        "terminal_obligation": "matter-caused candidate pointer"
+      },
+      {
+        "family": "fixed-menu positive-root instrument",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "Cycle634 dilation realizes the echo effect",
+        "object_formulation": "binary qubit effect on a cubic-star pointer",
+        "status": "POSITIVE_EFFECT_ONLY",
+        "strength_vs_target": "weaker",
+        "terminal_obligation": "physical pointer effect"
+      },
+      {
+        "family": "claimed-latch endpoint transducer",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "one claimed bit suppresses repeat emission",
+        "object_formulation": "reversible Boolean certificate cell",
+        "status": "POSITIVE",
+        "strength_vs_target": "weaker",
+        "terminal_obligation": "duplicate-safe oriented packet"
+      },
+      {
+        "family": "one-use predecessor rotor packet",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "token consumption, local head move, K16 recurrence",
+        "object_formulation": "two adjacent interval cells plus one packet token",
+        "status": "POSITIVE",
+        "strength_vs_target": "target-equivalent for packet layer",
+        "terminal_obligation": "reversible interval cell"
+      },
+      {
+        "family": "retained-state lineage decoder",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "any missing or inconsistent edge returns undefined",
+        "object_formulation": "predecessor graph and rotor/carry validation",
+        "status": "POSITIVE",
+        "strength_vs_target": "target-equivalent for decoder",
+        "terminal_obligation": "additive interval word"
+      },
+      {
+        "family": "immutable Cycle610 semantic adapter",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "9+12=21 and two K16 carries without ordinal decoder input",
+        "object_formulation": "L3/L6/L7 local packet chains",
+        "status": "POSITIVE",
+        "strength_vs_target": "weaker than full tick composition",
+        "terminal_obligation": "acceptance-row equality"
+      }
+    ],
+    "N1_open_routes_not_counted": [
+      {
+        "family": "seam-complete same-species A2 detector composition",
+        "mechanism_invariant": "future Cycle639 successor stream host and local crossing extractor",
+        "object_formulation": "physical wedge2 stream plus CT-1 detector",
+        "status": "OPEN_UNTESTED_NOT_FAILURE",
+        "strength_vs_target": "target-equivalent",
+        "terminal_obligation": "unchanged Cycle610-612 end-to-end physical harness"
+      }
+    ],
+    "N1_qualifying_attempts": 6,
+    "N1_required_for_broad_negative": 5,
+    "N2_collapsed_walls": {
+      "W_actuality": "actuality/admissibility/law-domain values rather than explicit supplied ports",
+      "W_crossing": "physical CT-1 crossing/channel/convention certificate generator over that stream",
+      "W_genesis": "autonomous blank bank, root-head, identity, schedule, and renewal genesis",
+      "W_stream": "committed seam-complete physical same-species A2 stream host"
+    },
+    "N2_directed_pair_count": 12,
+    "N2_directed_pairs": [
+      {
+        "closure_implied": false,
+        "from": "W_stream",
+        "reason": "the source object does not construct the target typed interface",
+        "to": "W_crossing"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_stream",
+        "reason": "the source object does not construct the target typed interface",
+        "to": "W_actuality"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_stream",
+        "reason": "the source object does not construct the target typed interface",
+        "to": "W_genesis"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_crossing",
+        "reason": "the source object does not construct the target typed interface",
+        "to": "W_stream"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_crossing",
+        "reason": "the source object does not construct the target typed interface",
+        "to": "W_actuality"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_crossing",
+        "reason": "the source object does not construct the target typed interface",
+        "to": "W_genesis"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_actuality",
+        "reason": "the source object does not construct the target typed interface",
+        "to": "W_stream"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_actuality",
+        "reason": "the source object does not construct the target typed interface",
+        "to": "W_crossing"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_actuality",
+        "reason": "the source object does not construct the target typed interface",
+        "to": "W_genesis"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_genesis",
+        "reason": "the source object does not construct the target typed interface",
+        "to": "W_stream"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_genesis",
+        "reason": "the source object does not construct the target typed interface",
+        "to": "W_crossing"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_genesis",
+        "reason": "the source object does not construct the target typed interface",
+        "to": "W_actuality"
+      }
+    ],
+    "N3_hidden_wall_scan": [
+      "contact eigenflag, crossing bit, channel/convention certification and labels are supplied",
+      "actuality, admissibility, law-domain, binder, identity, blank bank, root head, and schedule are supplied",
+      "Cycle632 is fixed-sector comparison only; no same-species A2 back-credit",
+      "Cycle634 pointer is coherent candidate only; no occurrence or Record back-credit",
+      "Cycle639 local A2 hosting is committed but not consumed; the unlanded positive +0.30 line is not used",
+      "finite L3/L6/L7 and six-bit identity domain only; no infinite or renewal claim"
+    ],
+    "N4_dropped_nonmatches": [
+      {
+        "current_line": 156,
+        "current_path": "scripts/physical_m2_endpoint_interval_packet_interface_cycle640_2026_07_23.py",
+        "current_residual": "comparison-only physical update host; same-species A2 not back-credited",
+        "disposition": "dropped as full Cycle610 A2 stream evidence",
+        "exact_match": false,
+        "prior_line": 37,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_FIXED_SECTOR_HELD_L6_LITERAL_EG_PRODUCT_TOURNAMENT_CYCLE632_NOTE_2026-07-23.md",
+        "prior_ref": "ab87e466684e77b10cefbc799addc4701f8b8e0d",
+        "prior_residual": "fixed-sector factorwise EG zero",
+        "same_scope": false,
+        "use_as_closure": false
+      }
+    ],
+    "N4_exact_matches": [
+      {
+        "current_line": 918,
+        "current_path": "scripts/physical_m2_endpoint_interval_packet_interface_cycle640_2026_07_23.py",
+        "current_residual": {
+          "carries": 2,
+          "d_ab": 9,
+          "d_ac": 21,
+          "d_bc": 12
+        },
+        "exact_match": true,
+        "prior_line": 186,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_INTRINSIC_TICK_EVENT_RELATIONAL_DURATION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md",
+        "prior_ref": "a1e2f1ea60b1cf9b9cb0ae100c61cfd1f3a07318",
+        "prior_residual": {
+          "carries": 2,
+          "d_ab": 9,
+          "d_ac": 21,
+          "d_bc": 12
+        },
+        "same_scope": true,
+        "use_as_closure": true
+      },
+      {
+        "current_line": 918,
+        "current_path": "scripts/physical_m2_endpoint_interval_packet_interface_cycle640_2026_07_23.py",
+        "current_residual": "lineage gap -> undefined",
+        "exact_match": true,
+        "prior_line": 49,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_INTRINSIC_TICK_EVENT_RELATIONAL_DURATION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md",
+        "prior_ref": "a1e2f1ea60b1cf9b9cb0ae100c61cfd1f3a07318",
+        "prior_residual": "lineage gap -> undefined",
+        "same_scope": true,
+        "use_as_closure": true
+      },
+      {
+        "current_line": 418,
+        "current_path": "scripts/physical_m2_endpoint_interval_packet_interface_cycle640_2026_07_23.py",
+        "current_residual": "consumed one-use packet produces no second cell",
+        "exact_match": true,
+        "prior_line": 50,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_INTRINSIC_TICK_EVENT_RELATIONAL_DURATION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md",
+        "prior_ref": "a1e2f1ea60b1cf9b9cb0ae100c61cfd1f3a07318",
+        "prior_residual": "duplicate refused",
+        "same_scope": true,
+        "use_as_closure": true
+      },
+      {
+        "current_line": 269,
+        "current_path": "scripts/physical_m2_endpoint_interval_packet_interface_cycle640_2026_07_23.py",
+        "current_residual": 5.004680467665246e-34,
+        "exact_match": true,
+        "prior_line": 85,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_TICK_ECHO_ASSOCIATION_CAUSAL_ORDER_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md",
+        "prior_ref": "a1e2f1ea60b1cf9b9cb0ae100c61cfd1f3a07318",
+        "prior_residual": 0.0,
+        "same_scope": true,
+        "use_as_closure": true
+      },
+      {
+        "current_line": 707,
+        "current_path": "scripts/physical_m2_endpoint_interval_packet_interface_cycle640_2026_07_23.py",
+        "current_residual": "blank target and unspent token",
+        "exact_match": true,
+        "prior_line": 94,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_TICK_ECHO_ASSOCIATION_CAUSAL_ORDER_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md",
+        "prior_ref": "a1e2f1ea60b1cf9b9cb0ae100c61cfd1f3a07318",
+        "prior_residual": "no opportunity",
+        "same_scope": true,
+        "use_as_closure": true
+      },
+      {
+        "current_line": 707,
+        "current_path": "scripts/physical_m2_endpoint_interval_packet_interface_cycle640_2026_07_23.py",
+        "current_residual": "three explicit retained control M2",
+        "exact_match": true,
+        "prior_line": 96,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_TICK_ECHO_ASSOCIATION_CAUSAL_ORDER_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md",
+        "prior_ref": "a1e2f1ea60b1cf9b9cb0ae100c61cfd1f3a07318",
+        "prior_residual": "three explicit ports",
+        "same_scope": true,
+        "use_as_closure": true
+      },
+      {
+        "current_line": 269,
+        "current_path": "scripts/physical_m2_endpoint_interval_packet_interface_cycle640_2026_07_23.py",
+        "current_residual": "contact echo pointer is candidate only",
+        "exact_match": true,
+        "prior_line": 127,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_FORCING_MENU_INSTRUMENT_BRIDGE_TOURNAMENT_CYCLE634_NOTE_2026-07-23.md",
+        "prior_ref": "ab87e466684e77b10cefbc799addc4701f8b8e0d",
+        "prior_residual": "pointer is candidate only",
+        "same_scope": true,
+        "use_as_closure": true
+      }
+    ],
+    "N4_exact_residual_matches": [
+      {
+        "current_line": 918,
+        "current_path": "scripts/physical_m2_endpoint_interval_packet_interface_cycle640_2026_07_23.py",
+        "current_residual": {
+          "carries": 2,
+          "d_ab": 9,
+          "d_ac": 21,
+          "d_bc": 12
+        },
+        "exact_match": true,
+        "prior_line": 186,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_INTRINSIC_TICK_EVENT_RELATIONAL_DURATION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md",
+        "prior_ref": "a1e2f1ea60b1cf9b9cb0ae100c61cfd1f3a07318",
+        "prior_residual": {
+          "carries": 2,
+          "d_ab": 9,
+          "d_ac": 21,
+          "d_bc": 12
+        },
+        "same_scope": true,
+        "use_as_closure": true
+      },
+      {
+        "current_line": 918,
+        "current_path": "scripts/physical_m2_endpoint_interval_packet_interface_cycle640_2026_07_23.py",
+        "current_residual": "lineage gap -> undefined",
+        "exact_match": true,
+        "prior_line": 49,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_INTRINSIC_TICK_EVENT_RELATIONAL_DURATION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md",
+        "prior_ref": "a1e2f1ea60b1cf9b9cb0ae100c61cfd1f3a07318",
+        "prior_residual": "lineage gap -> undefined",
+        "same_scope": true,
+        "use_as_closure": true
+      },
+      {
+        "current_line": 418,
+        "current_path": "scripts/physical_m2_endpoint_interval_packet_interface_cycle640_2026_07_23.py",
+        "current_residual": "consumed one-use packet produces no second cell",
+        "exact_match": true,
+        "prior_line": 50,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_INTRINSIC_TICK_EVENT_RELATIONAL_DURATION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md",
+        "prior_ref": "a1e2f1ea60b1cf9b9cb0ae100c61cfd1f3a07318",
+        "prior_residual": "duplicate refused",
+        "same_scope": true,
+        "use_as_closure": true
+      },
+      {
+        "current_line": 269,
+        "current_path": "scripts/physical_m2_endpoint_interval_packet_interface_cycle640_2026_07_23.py",
+        "current_residual": 5.004680467665246e-34,
+        "exact_match": true,
+        "prior_line": 85,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_TICK_ECHO_ASSOCIATION_CAUSAL_ORDER_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md",
+        "prior_ref": "a1e2f1ea60b1cf9b9cb0ae100c61cfd1f3a07318",
+        "prior_residual": 0.0,
+        "same_scope": true,
+        "use_as_closure": true
+      },
+      {
+        "current_line": 707,
+        "current_path": "scripts/physical_m2_endpoint_interval_packet_interface_cycle640_2026_07_23.py",
+        "current_residual": "blank target and unspent token",
+        "exact_match": true,
+        "prior_line": 94,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_TICK_ECHO_ASSOCIATION_CAUSAL_ORDER_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md",
+        "prior_ref": "a1e2f1ea60b1cf9b9cb0ae100c61cfd1f3a07318",
+        "prior_residual": "no opportunity",
+        "same_scope": true,
+        "use_as_closure": true
+      },
+      {
+        "current_line": 707,
+        "current_path": "scripts/physical_m2_endpoint_interval_packet_interface_cycle640_2026_07_23.py",
+        "current_residual": "three explicit retained control M2",
+        "exact_match": true,
+        "prior_line": 96,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_TICK_ECHO_ASSOCIATION_CAUSAL_ORDER_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md",
+        "prior_ref": "a1e2f1ea60b1cf9b9cb0ae100c61cfd1f3a07318",
+        "prior_residual": "three explicit ports",
+        "same_scope": true,
+        "use_as_closure": true
+      },
+      {
+        "current_line": 269,
+        "current_path": "scripts/physical_m2_endpoint_interval_packet_interface_cycle640_2026_07_23.py",
+        "current_residual": "contact echo pointer is candidate only",
+        "exact_match": true,
+        "prior_line": 127,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_FORCING_MENU_INSTRUMENT_BRIDGE_TOURNAMENT_CYCLE634_NOTE_2026-07-23.md",
+        "prior_ref": "ab87e466684e77b10cefbc799addc4701f8b8e0d",
+        "prior_residual": "pointer is candidate only",
+        "same_scope": true,
+        "use_as_closure": true
+      }
+    ],
+    "N4_residual_matching": [
+      {
+        "current_line": 918,
+        "current_path": "scripts/physical_m2_endpoint_interval_packet_interface_cycle640_2026_07_23.py",
+        "current_residual": {
+          "carries": 2,
+          "d_ab": 9,
+          "d_ac": 21,
+          "d_bc": 12
+        },
+        "exact_match": true,
+        "prior_line": 186,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_INTRINSIC_TICK_EVENT_RELATIONAL_DURATION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md",
+        "prior_ref": "a1e2f1ea60b1cf9b9cb0ae100c61cfd1f3a07318",
+        "prior_residual": {
+          "carries": 2,
+          "d_ab": 9,
+          "d_ac": 21,
+          "d_bc": 12
+        },
+        "same_scope": true,
+        "use_as_closure": true
+      },
+      {
+        "current_line": 918,
+        "current_path": "scripts/physical_m2_endpoint_interval_packet_interface_cycle640_2026_07_23.py",
+        "current_residual": "lineage gap -> undefined",
+        "exact_match": true,
+        "prior_line": 49,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_INTRINSIC_TICK_EVENT_RELATIONAL_DURATION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md",
+        "prior_ref": "a1e2f1ea60b1cf9b9cb0ae100c61cfd1f3a07318",
+        "prior_residual": "lineage gap -> undefined",
+        "same_scope": true,
+        "use_as_closure": true
+      },
+      {
+        "current_line": 418,
+        "current_path": "scripts/physical_m2_endpoint_interval_packet_interface_cycle640_2026_07_23.py",
+        "current_residual": "consumed one-use packet produces no second cell",
+        "exact_match": true,
+        "prior_line": 50,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_INTRINSIC_TICK_EVENT_RELATIONAL_DURATION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md",
+        "prior_ref": "a1e2f1ea60b1cf9b9cb0ae100c61cfd1f3a07318",
+        "prior_residual": "duplicate refused",
+        "same_scope": true,
+        "use_as_closure": true
+      },
+      {
+        "current_line": 269,
+        "current_path": "scripts/physical_m2_endpoint_interval_packet_interface_cycle640_2026_07_23.py",
+        "current_residual": 5.004680467665246e-34,
+        "exact_match": true,
+        "prior_line": 85,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_TICK_ECHO_ASSOCIATION_CAUSAL_ORDER_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md",
+        "prior_ref": "a1e2f1ea60b1cf9b9cb0ae100c61cfd1f3a07318",
+        "prior_residual": 0.0,
+        "same_scope": true,
+        "use_as_closure": true
+      },
+      {
+        "current_line": 707,
+        "current_path": "scripts/physical_m2_endpoint_interval_packet_interface_cycle640_2026_07_23.py",
+        "current_residual": "blank target and unspent token",
+        "exact_match": true,
+        "prior_line": 94,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_TICK_ECHO_ASSOCIATION_CAUSAL_ORDER_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md",
+        "prior_ref": "a1e2f1ea60b1cf9b9cb0ae100c61cfd1f3a07318",
+        "prior_residual": "no opportunity",
+        "same_scope": true,
+        "use_as_closure": true
+      },
+      {
+        "current_line": 707,
+        "current_path": "scripts/physical_m2_endpoint_interval_packet_interface_cycle640_2026_07_23.py",
+        "current_residual": "three explicit retained control M2",
+        "exact_match": true,
+        "prior_line": 96,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_TICK_ECHO_ASSOCIATION_CAUSAL_ORDER_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md",
+        "prior_ref": "a1e2f1ea60b1cf9b9cb0ae100c61cfd1f3a07318",
+        "prior_residual": "three explicit ports",
+        "same_scope": true,
+        "use_as_closure": true
+      },
+      {
+        "current_line": 156,
+        "current_path": "scripts/physical_m2_endpoint_interval_packet_interface_cycle640_2026_07_23.py",
+        "current_residual": "comparison-only physical update host; same-species A2 not back-credited",
+        "disposition": "dropped as full Cycle610 A2 stream evidence",
+        "exact_match": false,
+        "prior_line": 37,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_FIXED_SECTOR_HELD_L6_LITERAL_EG_PRODUCT_TOURNAMENT_CYCLE632_NOTE_2026-07-23.md",
+        "prior_ref": "ab87e466684e77b10cefbc799addc4701f8b8e0d",
+        "prior_residual": "fixed-sector factorwise EG zero",
+        "same_scope": false,
+        "use_as_closure": false
+      },
+      {
+        "current_line": 269,
+        "current_path": "scripts/physical_m2_endpoint_interval_packet_interface_cycle640_2026_07_23.py",
+        "current_residual": "contact echo pointer is candidate only",
+        "exact_match": true,
+        "prior_line": 127,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_FORCING_MENU_INSTRUMENT_BRIDGE_TOURNAMENT_CYCLE634_NOTE_2026-07-23.md",
+        "prior_ref": "ab87e466684e77b10cefbc799addc4701f8b8e0d",
+        "prior_residual": "pointer is candidate only",
+        "same_scope": true,
+        "use_as_closure": true
+      }
+    ],
+    "N5_rhetoric_resolution_ledger": [
+      {
+        "lattice_wide": "UNTESTED_NO_BROADER_NEGATIVE",
+        "per_block": "endpoint truth table",
+        "per_element": "UNTESTED_NO_BROADER_NEGATIVE",
+        "per_mode": "UNTESTED_NO_BROADER_NEGATIVE",
+        "per_site": "two-M2 echo",
+        "phrase": "a coherent contact pointer is not an occurrence"
+      },
+      {
+        "lattice_wide": "withheld",
+        "per_block": "9+12=21 packet chain",
+        "per_element": "one K16 increment",
+        "per_mode": "UNTESTED_NO_BROADER_NEGATIVE",
+        "per_site": "UNTESTED_NO_BROADER_NEGATIVE",
+        "phrase": "a packet count is not time"
+      },
+      {
+        "lattice_wide": "UNTESTED_NO_BROADER_NEGATIVE",
+        "per_block": "inverse-visible chain",
+        "per_element": "UNTESTED_NO_BROADER_NEGATIVE",
+        "per_mode": "UNTESTED_NO_BROADER_NEGATIVE",
+        "per_site": "retained reversible cell",
+        "phrase": "a pointer or packet cell is not a Record"
+      },
+      {
+        "lattice_wide": "withheld",
+        "per_block": "scope mismatch exact",
+        "per_element": "UNTESTED_NO_BROADER_NEGATIVE",
+        "per_mode": "UNTESTED_NO_BROADER_NEGATIVE",
+        "per_site": "UNTESTED_NO_BROADER_NEGATIVE",
+        "phrase": "Cycle632 fixed-sector EG is not the same-species A2 stream"
+      },
+      {
+        "lattice_wide": "withheld",
+        "per_block": "finite packet family",
+        "per_element": "UNTESTED_NO_BROADER_NEGATIVE",
+        "per_mode": "UNTESTED_NO_BROADER_NEGATIVE",
+        "per_site": "ray labels",
+        "phrase": "all24/all576 is not Lorentz covariance"
+      },
+      {
+        "lattice_wide": "withheld",
+        "per_block": "L3/L6/L7 chains",
+        "per_element": "UNTESTED_NO_BROADER_NEGATIVE",
+        "per_mode": "UNTESTED_NO_BROADER_NEGATIVE",
+        "per_site": "UNTESTED_NO_BROADER_NEGATIVE",
+        "phrase": "undefined on a tested lineage gap is not an unbounded causal theorem"
+      }
+    ],
+    "N6_partial_closure_paths": [
+      {
+        "file": "scripts/physical_m2_endpoint_interval_packet_interface_cycle640_2026_07_23.py",
+        "status": "EXECUTED_CONTACT_ECHO",
+        "what_closes": "contact-caused coherent candidate pointer"
+      },
+      {
+        "file": "scripts/physical_m2_endpoint_interval_packet_interface_cycle640_2026_07_23.py",
+        "status": "EXECUTED_ENDPOINT_TRANSDUCER",
+        "what_closes": "duplicate-safe oriented channel/convention packet"
+      },
+      {
+        "file": "scripts/physical_m2_endpoint_interval_packet_interface_cycle640_2026_07_23.py",
+        "status": "EXECUTED_INTERVAL_PACKET",
+        "what_closes": "reversible exactly-once predecessor/rotor/carry update"
+      },
+      {
+        "file": "scripts/physical_m2_endpoint_interval_packet_interface_cycle640_2026_07_23.py",
+        "status": "EXECUTED_LINEAGE_DECODER",
+        "what_closes": "finite additive and undefined-gap semantics"
+      },
+      {
+        "file": "docs/work_history/repo/review_feedback/PHYSICAL_FIXED_SECTOR_HELD_L6_LITERAL_EG_PRODUCT_TOURNAMENT_CYCLE632_NOTE_2026-07-23.md",
+        "status": "COMMITTED_FIXED_SECTOR_COMPARISON_ONLY",
+        "what_closes": "physical E/G grammar only, not A2 stream"
+      },
+      {
+        "file": "docs/work_history/repo/review_feedback/PHYSICAL_FORCING_MENU_INSTRUMENT_BRIDGE_TOURNAMENT_CYCLE634_NOTE_2026-07-23.md",
+        "status": "COMMITTED_FIXED_MENU_APPARATUS",
+        "what_closes": "binary candidate pointer effect only"
+      }
+    ],
+    "N7_hostile_steelman": {
+      "argument": "Once a Cycle639 successor lands a seam-complete same-species wedge2 stream, compile the Cycle610 two-channel detector and phase-crossing comparator into bounded pointer M2s, drive Cycle640's already exact channel/convention endpoint port, and rerun the immutable 610-612 harness. This is a concrete unclosed construction, so the present stream/tick gap is implementation evidence, not an obstruction.",
+      "mechanism": "seam-complete local A2 E/G plus a reversible crossing comparator feeding the existing endpoint circuit",
+      "supporting_authorities": [
+        {
+          "line": 78,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_TICK_ECHO_ASSOCIATION_CAUSAL_ORDER_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md",
+          "ref": "a1e2f1ea60b1cf9b9cb0ae100c61cfd1f3a07318"
+        },
+        {
+          "line": 3,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_FORCING_MENU_INSTRUMENT_BRIDGE_TOURNAMENT_CYCLE634_NOTE_2026-07-23.md",
+          "ref": "ab87e466684e77b10cefbc799addc4701f8b8e0d"
+        }
+      ],
+      "terminal_obligation": "unchanged Cycle610-612 end-to-end physical composition with contact deletion, held L7, and returned work"
+    },
+    "N7_steelman": {
+      "argument": "Once a Cycle639 successor lands a seam-complete same-species wedge2 stream, compile the Cycle610 two-channel detector and phase-crossing comparator into bounded pointer M2s, drive Cycle640's already exact channel/convention endpoint port, and rerun the immutable 610-612 harness. This is a concrete unclosed construction, so the present stream/tick gap is implementation evidence, not an obstruction.",
+      "mechanism": "seam-complete local A2 E/G plus a reversible crossing comparator feeding the existing endpoint circuit",
+      "supporting_authorities": [
+        {
+          "line": 78,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_TICK_ECHO_ASSOCIATION_CAUSAL_ORDER_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md",
+          "ref": "a1e2f1ea60b1cf9b9cb0ae100c61cfd1f3a07318"
+        },
+        {
+          "line": 3,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_FORCING_MENU_INSTRUMENT_BRIDGE_TOURNAMENT_CYCLE634_NOTE_2026-07-23.md",
+          "ref": "ab87e466684e77b10cefbc799addc4701f8b8e0d"
+        }
+      ],
+      "terminal_obligation": "unchanged Cycle610-612 end-to-end physical composition with contact deletion, held L7, and returned work"
+    },
+    "N8_cross_cycle_echo": [
+      {
+        "applicability": "exact packet acceptance target",
+        "citation_line": 176,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_INTRINSIC_TICK_EVENT_RELATIONAL_DURATION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md",
+        "citation_ref": "a1e2f1ea60b1cf9b9cb0ae100c61cfd1f3a07318",
+        "cycle": 610,
+        "mechanism": "EventChain K16/predecessor grammar",
+        "retired": "candidate interval semantics"
+      },
+      {
+        "applicability": "channel sign remains explicit",
+        "citation_line": 18,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_AUTONOMOUS_BOUND_BRANCH_PREPARATION_TOURNAMENT_CYCLE611_NOTE_2026-07-22.md",
+        "citation_ref": "a1e2f1ea60b1cf9b9cb0ae100c61cfd1f3a07318",
+        "cycle": 611,
+        "mechanism": "preparation/certification separation",
+        "retired": "plus-channel diagnosis only"
+      },
+      {
+        "applicability": "direct",
+        "citation_line": 78,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_TICK_ECHO_ASSOCIATION_CAUSAL_ORDER_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md",
+        "citation_ref": "a1e2f1ea60b1cf9b9cb0ae100c61cfd1f3a07318",
+        "cycle": 612,
+        "mechanism": "typed endpoint/interval/admission clauses",
+        "retired": "physical-M2 interface acceptance contract"
+      },
+      {
+        "applicability": "grammar comparator; A2 scope mismatch",
+        "citation_line": 9,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_FIXED_SECTOR_HELD_L6_LITERAL_EG_PRODUCT_TOURNAMENT_CYCLE632_NOTE_2026-07-23.md",
+        "citation_ref": "ab87e466684e77b10cefbc799addc4701f8b8e0d",
+        "cycle": 632,
+        "mechanism": "factorwise routed product",
+        "retired": "fixed-sector physical E/G only"
+      },
+      {
+        "applicability": "contact echo effect comparator",
+        "citation_line": 11,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_FORCING_MENU_INSTRUMENT_BRIDGE_TOURNAMENT_CYCLE634_NOTE_2026-07-23.md",
+        "citation_ref": "ab87e466684e77b10cefbc799addc4701f8b8e0d",
+        "cycle": 634,
+        "mechanism": "positive-root binary dilation",
+        "retired": "fixed-menu physical candidate pointer"
+      },
+      {
+        "applicability": "not consumed; seam stream still open",
+        "citation_line": 17,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_SAME_SPECIES_TWO_CARRIER_PATH_SIGN_COMPILER_CYCLE639_NOTE_2026-07-23.md",
+        "citation_ref": "e2719c0f7fceccc3a61e7b4a11049bc1e616550a",
+        "cycle": 639,
+        "mechanism": "64x15 local wedge2 E",
+        "retired": "committed local onsite A2 payload only"
+      }
+    ],
+    "Status": "PASS",
+    "axiom_pressure": false,
+    "axiom_pressure_claim": false,
+    "broad_no_go_claim": false,
+    "minimum_content_claim": false,
+    "pass": true,
+    "shared_obstruction_claim": false,
+    "shared_route_independent_obstruction": false
+  },
+  "note_contract": {
+    "missing": [],
+    "pass": true,
+    "required_fragments": [
+      "authority: **none**",
+      "audit: **unset**",
+      "author artifact status accepted: **false**",
+      "breakthrough bar met: **false**",
+      "counts are not time",
+      "not an occurrence",
+      "not records or histories",
+      "actuality",
+      "admissibility",
+      "law-domain",
+      "t1/t2",
+      "channel sign",
+      "contact deletion",
+      "undefined",
+      "all24/all576",
+      "shared route-independent obstruction: **not established**",
+      "axiom pressure: **none**"
+    ]
+  },
+  "note_sha256": "c432ca02a0dc00b50bf72571e24fbbecf8b16dfc18efb1dc85dfc53d9b36ebba",
+  "optimal_next_campaign": "after a Cycle639 successor lands a seam-complete same-species A2 stream, compile the CT-1 two-channel crossing/channel/convention certificate into bounded M2s and feed this unchanged packet interface through the immutable Cycle610-612 harness",
+  "pass": true,
+  "route_by_route_disposition": {
+    "Cycle610_packet_semantics": "PASS_EXACT_9_PLUS_12_EQUALS_21",
+    "actual_occurrence_Record_history": "OPEN_EXPLICIT_PORTS_ONLY",
+    "contact_echo": "PASS_COHERENT_CANDIDATE_CONTACT_OFF_KILL",
+    "endpoint_predicate": "PASS_DUPLICATE_SAFE_ORIENTED_CHANNEL_CONVENTION_EXPLICIT",
+    "full_Cycle610_physical_tick_composition": "OPEN_CONDITIONAL_ON_SEAM_COMPLETE_A2_STREAM_AND_CROSSING_DETECTOR",
+    "interval_packet": "PASS_REVERSIBLE_EXACTLY_ONCE_K16_LOCAL_HEAD"
+  },
+  "route_disposition": {
+    "Cycle610_packet_semantics": "PASS_EXACT_9_PLUS_12_EQUALS_21",
+    "actual_occurrence_Record_history": "OPEN_EXPLICIT_PORTS_ONLY",
+    "contact_echo": "PASS_COHERENT_CANDIDATE_CONTACT_OFF_KILL",
+    "endpoint_predicate": "PASS_DUPLICATE_SAFE_ORIENTED_CHANNEL_CONVENTION_EXPLICIT",
+    "full_Cycle610_physical_tick_composition": "OPEN_CONDITIONAL_ON_COMMITTED_A2_STREAM_AND_CROSSING_DETECTOR",
+    "interval_packet": "PASS_REVERSIBLE_EXACTLY_ONCE_K16_LOCAL_HEAD"
+  },
+  "runner_sha256": "3a11a467fb1c7aadf2db05f8332ed9b253b3c31d27bc2a591e15e5009e334f7e",
+  "shared_route_independent_obstruction": false,
+  "shared_substrate_obstruction": false,
+  "six_wall_ledger": {
+    "C_int": "contact echo candidate with exact deletion kill; seam-complete A2 stream/crossing detector open",
+    "C_local": "support<=3, constant neighborhood, all24/all576; serialized schedule and infinite deployment open",
+    "C_num": "exact K16 and 9+12=21; count has no empirical unit and is not time",
+    "C_ref": "one-use identity/predecessor/head provenance; root/bank/reference genesis supplied",
+    "C_source": "all pointer/work/bank/ports counted; port values and renewal supplied, no gravity/source meaning",
+    "C_wrap": "rotor/carry/gap explicit; reversible cells not Records/histories"
+  },
+  "status": "positive bounded physical-M2 candidate endpoint/interval packet; full A2 stream/tick and actuality open",
+  "strongest_constructive_result": "a bounded support-three reversible physical-M2 candidate endpoint and predecessor/K16 interval packet with exact contact-off kill, duplicate refusal, explicit channel/T1-T2 and actuality/admissibility/law-domain ports, L3/L6/L7 and all24/all576 controls",
+  "tests_failed": 0,
+  "tests_passed": 8,
+  "unchanged_harness_external_run": {
+    "Cycle610": {
+      "exit_code": 1,
+      "fail_count": 3,
+      "generated_receipt_sha256": "ae91bb0e28b91e0db1e89ee1777df393919431da48f038ec799cdd3053ffd93e",
+      "pass_count": 33,
+      "runner_sha256": "61d624d3f47e371a3b99f55a3c60db68c1fe77f5d93a21651f9172b2d49f1458"
+    },
+    "Cycle611": {
+      "exit_code": 1,
+      "fail_count": 2,
+      "generated_receipt_sha256": "9cc4eabf8824341e5ac5810b2a27833ca5d997052b3294f2e852909c9cd50801",
+      "pass_count": 9,
+      "runner_sha256": "9f1d4a2aabca8af1f61ef42071c8d2bce05018eace7a6f0886d769871689a13d"
+    },
+    "Cycle612_main": {
+      "exit_code": 1,
+      "fail_count": 1,
+      "generated_receipt_sha256": "2a00ba531299feb4cfd415b00a8cbef88dcf112d047114f10443bb4cf83c0267",
+      "pass_count": 6,
+      "runner_sha256": "4494ce889809f6a179fc9bb712aa851fa6e73dac32a7b1bfbdb71903be5fadde"
+    },
+    "Cycle612_minus_addendum": {
+      "exit_code": 0,
+      "fail_count": 0,
+      "generated_receipt_sha256": "bed186c69ace4878753efdeba861388713e092cbcf1952694a8409fe33d01662",
+      "pass_count": 5,
+      "runner_sha256": "5eee5e2b510c92f72dfd9a40ed1633c3257962cb39faf615ad4a9af7f3b4e711"
+    },
+    "execution_mode": "detached isolated git worktree; source runners unchanged",
+    "execution_ref": "a1e2f1ea60b1cf9b9cb0ae100c61cfd1f3a07318",
+    "outcomes_match_immutable_contract": true
+  }
+}

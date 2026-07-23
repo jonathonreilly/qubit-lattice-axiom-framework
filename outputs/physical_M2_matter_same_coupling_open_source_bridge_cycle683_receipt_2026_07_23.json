@@ -1,0 +1,4202 @@
+{
+  "Status": "PASS",
+  "TOE_dependency_ledger": {
+    "Born_probability_maturity_0_to_5": 2.2,
+    "causal_time_maturity_0_to_5": 2.4,
+    "dependency_change": "C_source and C_int advance through the first same-q executed response sourced directly by accepted physical M2 matter; no time, Record, Born, stress or gravity identification is promoted",
+    "gravity_source_maturity_0_to_5": 2.0,
+    "inertia_matter_maturity_0_to_5": 2.5,
+    "operational_quantum_records_maturity_0_to_5": 3.4
+  },
+  "aggregate_summary": {
+    "Cycle576_source_profiles_called": false,
+    "all24_all576_pass": true,
+    "duplicate_M2_occupation_rejected": true,
+    "host_source_profile_replaced": true,
+    "maximum_coframe_Ward_residual": 0.0,
+    "maximum_continuity_residual": 0.0,
+    "maximum_executed_response_residual": 3.5981126591678306e-15,
+    "maximum_q2_exponent_residual": 6.661338147750939e-16,
+    "maximum_q_sign_residual": 0.0,
+    "maximum_reversibility_residual": 3.268502925814642e-15,
+    "maximum_two_particle_number_linearity_residual": 0.0,
+    "pass": true,
+    "same_declared_q_at_source_and_receiver": true,
+    "sizes": [
+      3,
+      6,
+      7
+    ],
+    "source_deletion_pass": true,
+    "source_is_local_physical_M2_number": true
+  },
+  "audit": "unset",
+  "authority": "none",
+  "continuity_and_contact_Ward": {
+    "all24_current_transport_failures": 0,
+    "contact_number_commutator": "exact zero because Cycle230 contact and n_x are diagonal in the same occupation basis",
+    "maximum_sitewise_continuity_residual": 0.0,
+    "pass": true,
+    "rows": [
+      {
+        "continuity_residual": 0.0,
+        "current_link_M2": [
+          20,
+          16,
+          16
+        ],
+        "destination": [
+          2,
+          1,
+          1
+        ],
+        "direction": 0,
+        "length": 3,
+        "source_cell": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "continuity_residual": 0.0,
+        "current_link_M2": [
+          12,
+          16,
+          16
+        ],
+        "destination": [
+          0,
+          1,
+          1
+        ],
+        "direction": 1,
+        "length": 3,
+        "source_cell": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "continuity_residual": 0.0,
+        "current_link_M2": [
+          16,
+          20,
+          16
+        ],
+        "destination": [
+          1,
+          2,
+          1
+        ],
+        "direction": 2,
+        "length": 3,
+        "source_cell": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "continuity_residual": 0.0,
+        "current_link_M2": [
+          16,
+          12,
+          16
+        ],
+        "destination": [
+          1,
+          0,
+          1
+        ],
+        "direction": 3,
+        "length": 3,
+        "source_cell": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "continuity_residual": 0.0,
+        "current_link_M2": [
+          16,
+          16,
+          20
+        ],
+        "destination": [
+          1,
+          1,
+          2
+        ],
+        "direction": 4,
+        "length": 3,
+        "source_cell": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "continuity_residual": 0.0,
+        "current_link_M2": [
+          16,
+          16,
+          12
+        ],
+        "destination": [
+          1,
+          1,
+          0
+        ],
+        "direction": 5,
+        "length": 3,
+        "source_cell": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "continuity_residual": 0.0,
+        "current_link_M2": [
+          36,
+          32,
+          32
+        ],
+        "destination": [
+          3,
+          2,
+          2
+        ],
+        "direction": 0,
+        "length": 6,
+        "source_cell": [
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "continuity_residual": 0.0,
+        "current_link_M2": [
+          28,
+          32,
+          32
+        ],
+        "destination": [
+          1,
+          2,
+          2
+        ],
+        "direction": 1,
+        "length": 6,
+        "source_cell": [
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "continuity_residual": 0.0,
+        "current_link_M2": [
+          32,
+          36,
+          32
+        ],
+        "destination": [
+          2,
+          3,
+          2
+        ],
+        "direction": 2,
+        "length": 6,
+        "source_cell": [
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "continuity_residual": 0.0,
+        "current_link_M2": [
+          32,
+          28,
+          32
+        ],
+        "destination": [
+          2,
+          1,
+          2
+        ],
+        "direction": 3,
+        "length": 6,
+        "source_cell": [
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "continuity_residual": 0.0,
+        "current_link_M2": [
+          32,
+          32,
+          36
+        ],
+        "destination": [
+          2,
+          2,
+          3
+        ],
+        "direction": 4,
+        "length": 6,
+        "source_cell": [
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "continuity_residual": 0.0,
+        "current_link_M2": [
+          32,
+          32,
+          28
+        ],
+        "destination": [
+          2,
+          2,
+          1
+        ],
+        "direction": 5,
+        "length": 6,
+        "source_cell": [
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "continuity_residual": 0.0,
+        "current_link_M2": [
+          52,
+          48,
+          48
+        ],
+        "destination": [
+          4,
+          3,
+          3
+        ],
+        "direction": 0,
+        "length": 7,
+        "source_cell": [
+          3,
+          3,
+          3
+        ]
+      },
+      {
+        "continuity_residual": 0.0,
+        "current_link_M2": [
+          44,
+          48,
+          48
+        ],
+        "destination": [
+          2,
+          3,
+          3
+        ],
+        "direction": 1,
+        "length": 7,
+        "source_cell": [
+          3,
+          3,
+          3
+        ]
+      },
+      {
+        "continuity_residual": 0.0,
+        "current_link_M2": [
+          48,
+          52,
+          48
+        ],
+        "destination": [
+          3,
+          4,
+          3
+        ],
+        "direction": 2,
+        "length": 7,
+        "source_cell": [
+          3,
+          3,
+          3
+        ]
+      },
+      {
+        "continuity_residual": 0.0,
+        "current_link_M2": [
+          48,
+          44,
+          48
+        ],
+        "destination": [
+          3,
+          2,
+          3
+        ],
+        "direction": 3,
+        "length": 7,
+        "source_cell": [
+          3,
+          3,
+          3
+        ]
+      },
+      {
+        "continuity_residual": 0.0,
+        "current_link_M2": [
+          48,
+          48,
+          52
+        ],
+        "destination": [
+          3,
+          3,
+          4
+        ],
+        "direction": 4,
+        "length": 7,
+        "source_cell": [
+          3,
+          3,
+          3
+        ]
+      },
+      {
+        "continuity_residual": 0.0,
+        "current_link_M2": [
+          48,
+          48,
+          44
+        ],
+        "destination": [
+          3,
+          3,
+          2
+        ],
+        "direction": 5,
+        "length": 7,
+        "source_cell": [
+          3,
+          3,
+          3
+        ]
+      }
+    ],
+    "source_kick_changes_matter_bits": false
+  },
+  "cycle": 683,
+  "date": "2026-07-23",
+  "elapsed_seconds": 12.21314279094804,
+  "evidence": {
+    "exact_git_object_ids_read": {
+      "394c30e:outputs/physical_same_coupling_executed_field_update_response_tournament_receipt_2026_07_23.json": "119de03700a55b31c0bbc6a06f30ca6e074ac911",
+      "3fedc918:outputs/physical_dynamical_metric_source_law_bridge_tournament_cycle576_receipt_2026_07_22.json": "822317e0228320d6f96a5e95414de88fb1523b68",
+      "3fedc918:outputs/physical_source_insertion_selection_backreaction_tournament_cycle572_receipt_2026_07_22.json": "5bda6c05cf3e512d688fbf4d60feb3b21a15adb4",
+      "854b4b48:docs/work_history/repo/review_feedback/PHYSICAL_OPERATIONAL_METRIC_CONSERVED_SOURCE_LOCAL_RANGE_TOURNAMENT_CYCLE591_NOTE_2026-07-22.md": "01cd521acc9114e5f462616d7ac880ebb1a447d9",
+      "854b4b48:outputs/physical_car_matter_weyl_reciprocal_source_response_tournament_cycle607_receipt_2026_07_22.json": "64fca1cfcf2d5d45427b2c6662e29b3d0b268283",
+      "854b4b48:outputs/physical_incident_C_prepared_star_detector_cycle679_receipt_2026_07_23.json": "f080eeccd0ffb8c81498aa6db2d2969f8e2cdde4",
+      "854b4b48:outputs/physical_lawful_charge_joined_metric_response_tournament_cycle615_receipt_2026_07_22.json": "13a44f2b1d3ef8ea25b758185d980f1680790a4f",
+      "854b4b48:outputs/physical_local_normalized_nonlinear_source_law_selection_tournament_cycle626_receipt_2026_07_22.json": "3d633cccce0dc13bc7165dcb8d2801c19a2cdc34",
+      "854b4b48:outputs/physical_matter_variation_current_stress_compensator_source_tournament_cycle611_receipt_2026_07_22.json": "dace832f5f9433d60137974e637c443ca76f3d13",
+      "854b4b48:outputs/physical_operational_metric_conserved_source_local_range_tournament_cycle591_cold_2026_07_22.txt": "aa7c69ef34824d5e92a5170f4e58a2385b04675c",
+      "854b4b48:outputs/physical_term_complete_flat_link_update_cycle656_receipt_2026_07_23.json": "f1e7daf9eeba4f649fad07b589ae463812fd3f22",
+      "854b4b48:outputs/physical_two_M2_CAR_phase_link_field_QCA_tournament_cycle609_receipt_2026_07_22.json": "26d933cb17e711266cbe7edffda6498fae967b8d",
+      "854b4b48:scripts/physical_operational_metric_conserved_source_local_range_tournament_cycle591_2026_07_22.py": "5ef33f7f611be9e107373254e68f44e87e2cd11a",
+      "c4b31f:outputs/physical_finite_reversible_norm_saturation_evaluator_tournament_receipt_2026_07_23.json": "398b773afb6ff397244f8d1dcd1148f1336a0bb6"
+    },
+    "external_commits_cherry_picked_or_duplicated": false,
+    "external_open_evidence_commits": {
+      "394c30e": "394c30e1c12d40f65b6ce6456d9b026106d0bdda",
+      "3fedc918": "3fedc918e318359567f76bc066255271dc8d8046",
+      "c4b31f": "c4b31f0d87be8bf9058b0d159121f4c0833e6247"
+    },
+    "observed": {
+      "394c30e:outputs/physical_same_coupling_executed_field_update_response_tournament_receipt_2026_07_23.json": "da75185e5833721d467b98f26ae49e1f7aef47677aaf1c2c17f5a15d45cd3712",
+      "3fedc918:outputs/physical_dynamical_metric_source_law_bridge_tournament_cycle576_receipt_2026_07_22.json": "06456c1443f5464949f40d81e9f1c6316b3e4e8405415b5b0035e39d4b88c3bd",
+      "3fedc918:outputs/physical_source_insertion_selection_backreaction_tournament_cycle572_receipt_2026_07_22.json": "0a97b2b4a2dc66c9a80f94b583822ec4406fa60478b65e4d7664c48c1af53fd1",
+      "854b4b48:docs/work_history/repo/review_feedback/PHYSICAL_OPERATIONAL_METRIC_CONSERVED_SOURCE_LOCAL_RANGE_TOURNAMENT_CYCLE591_NOTE_2026-07-22.md": "86746b0cf9a80145b9c7cb4415c4402d6a697bb99e1fa83bae547bf091ac37e5",
+      "854b4b48:outputs/physical_car_matter_weyl_reciprocal_source_response_tournament_cycle607_receipt_2026_07_22.json": "ec0da4276602ae363e0bc9e36a8a696b209542ebd9fed888fb369abec4b455cd",
+      "854b4b48:outputs/physical_incident_C_prepared_star_detector_cycle679_receipt_2026_07_23.json": "1343f10d230e43a870474e0c5b482e9a8efc58893ef1fc4897db3144b762b442",
+      "854b4b48:outputs/physical_lawful_charge_joined_metric_response_tournament_cycle615_receipt_2026_07_22.json": "7bf6e65b72976029bd55019a5338e5e9ee29c8c94f317e14c8b3031c453da929",
+      "854b4b48:outputs/physical_local_normalized_nonlinear_source_law_selection_tournament_cycle626_receipt_2026_07_22.json": "ab8489e9875e362d2b496b1f92464e6c5c642eb3cdb72b1755e77c4d70b752f6",
+      "854b4b48:outputs/physical_matter_variation_current_stress_compensator_source_tournament_cycle611_receipt_2026_07_22.json": "cbba773dabe96f0c27c9bf3d87c77735608d3b9563adad919b8538db61f1a4be",
+      "854b4b48:outputs/physical_operational_metric_conserved_source_local_range_tournament_cycle591_cold_2026_07_22.txt": "765770317f82aeec1105bc33c80c21c920b09d35deab5663df62b4edab2f917c",
+      "854b4b48:outputs/physical_term_complete_flat_link_update_cycle656_receipt_2026_07_23.json": "a97cf4d906b8d1f9e5dcfccb4d8b8c30dcfd3a0fa36c5371e9d2bc8a6f72315c",
+      "854b4b48:outputs/physical_two_M2_CAR_phase_link_field_QCA_tournament_cycle609_receipt_2026_07_22.json": "a5bd17754c3d0e80ad2cff72e7ab63d5b3a5046805c92be583d95ede8b0463ff",
+      "854b4b48:scripts/physical_operational_metric_conserved_source_local_range_tournament_cycle591_2026_07_22.py": "b927333e3287fa46c03f7ed9b53259cd126f47cca30eaca35c8220971b822a08",
+      "c4b31f:outputs/physical_finite_reversible_norm_saturation_evaluator_tournament_receipt_2026_07_23.json": "bfcd5ed10f3f61ba60c0259b6a813dcfb28009385b1e2c1d8121100376c7e485"
+    },
+    "pass": true,
+    "pins": {
+      "394c30e:outputs/physical_same_coupling_executed_field_update_response_tournament_receipt_2026_07_23.json": "da75185e5833721d467b98f26ae49e1f7aef47677aaf1c2c17f5a15d45cd3712",
+      "3fedc918:outputs/physical_dynamical_metric_source_law_bridge_tournament_cycle576_receipt_2026_07_22.json": "06456c1443f5464949f40d81e9f1c6316b3e4e8405415b5b0035e39d4b88c3bd",
+      "3fedc918:outputs/physical_source_insertion_selection_backreaction_tournament_cycle572_receipt_2026_07_22.json": "0a97b2b4a2dc66c9a80f94b583822ec4406fa60478b65e4d7664c48c1af53fd1",
+      "854b4b48:docs/work_history/repo/review_feedback/PHYSICAL_OPERATIONAL_METRIC_CONSERVED_SOURCE_LOCAL_RANGE_TOURNAMENT_CYCLE591_NOTE_2026-07-22.md": "86746b0cf9a80145b9c7cb4415c4402d6a697bb99e1fa83bae547bf091ac37e5",
+      "854b4b48:outputs/physical_car_matter_weyl_reciprocal_source_response_tournament_cycle607_receipt_2026_07_22.json": "ec0da4276602ae363e0bc9e36a8a696b209542ebd9fed888fb369abec4b455cd",
+      "854b4b48:outputs/physical_incident_C_prepared_star_detector_cycle679_receipt_2026_07_23.json": "1343f10d230e43a870474e0c5b482e9a8efc58893ef1fc4897db3144b762b442",
+      "854b4b48:outputs/physical_lawful_charge_joined_metric_response_tournament_cycle615_receipt_2026_07_22.json": "7bf6e65b72976029bd55019a5338e5e9ee29c8c94f317e14c8b3031c453da929",
+      "854b4b48:outputs/physical_local_normalized_nonlinear_source_law_selection_tournament_cycle626_receipt_2026_07_22.json": "ab8489e9875e362d2b496b1f92464e6c5c642eb3cdb72b1755e77c4d70b752f6",
+      "854b4b48:outputs/physical_matter_variation_current_stress_compensator_source_tournament_cycle611_receipt_2026_07_22.json": "cbba773dabe96f0c27c9bf3d87c77735608d3b9563adad919b8538db61f1a4be",
+      "854b4b48:outputs/physical_operational_metric_conserved_source_local_range_tournament_cycle591_cold_2026_07_22.txt": "765770317f82aeec1105bc33c80c21c920b09d35deab5663df62b4edab2f917c",
+      "854b4b48:outputs/physical_term_complete_flat_link_update_cycle656_receipt_2026_07_23.json": "a97cf4d906b8d1f9e5dcfccb4d8b8c30dcfd3a0fa36c5371e9d2bc8a6f72315c",
+      "854b4b48:outputs/physical_two_M2_CAR_phase_link_field_QCA_tournament_cycle609_receipt_2026_07_22.json": "a5bd17754c3d0e80ad2cff72e7ab63d5b3a5046805c92be583d95ede8b0463ff",
+      "854b4b48:scripts/physical_operational_metric_conserved_source_local_range_tournament_cycle591_2026_07_22.py": "b927333e3287fa46c03f7ed9b53259cd126f47cca30eaca35c8220971b822a08",
+      "c4b31f:outputs/physical_finite_reversible_norm_saturation_evaluator_tournament_receipt_2026_07_23.json": "bfcd5ed10f3f61ba60c0259b6a813dcfb28009385b1e2c1d8121100376c7e485"
+    },
+    "shore": "854b4b48f4c98fa6b82f2e05cc2d33edbaf569fa",
+    "working_tree_bytes_used_as_premise": false
+  },
+  "highest_honest_terminal": "physical-M2 matter-number to executed open same-q response bridge with a supplied real carrier, plus an exact local finite-carrier subcompiler and open scalar coframe derivative",
+  "maximum_RSS_bytes": 65896448,
+  "no_go_discipline": {
+    "N1_normalized_families": [
+      {
+        "family": "finite-step open leapfrog with physical-number kick",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "local symplectic shears",
+        "object_formulation": "real open Q/P arrays plus six-rail M2 number",
+        "status": "PASS_EXECUTED_WITH_SUPPLIED_REAL_CARRIER",
+        "terminal_obligation": "same-q executed response"
+      },
+      {
+        "family": "finite W17 local matter phase",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "N Phi phase/Fourier shift",
+        "object_formulation": "M2 occupation plus unary finite Weyl carrier",
+        "status": "PASS_EXECUTED_ONE_LINK",
+        "terminal_obligation": "same-q finite receiver label"
+      },
+      {
+        "family": "open real-space coframe derivative",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "two-site link quadratic",
+        "object_formulation": "boundary-preserving scalar link operator",
+        "status": "PASS_EXECUTED_SCALAR_CARRIER",
+        "terminal_obligation": "Ward and derivative response"
+      },
+      {
+        "family": "live current-driven response",
+        "honesty_marker": "OPEN / NOT ATTEMPTED",
+        "mechanism_invariant": "Cycle591/611 continuity current",
+        "object_formulation": "moving six-direction M2 occupation",
+        "status": "continuity reexecuted; response join open",
+        "terminal_obligation": "source a field while the full matter update runs"
+      },
+      {
+        "family": "full Cycle656 graph/link matter plus finite open QCA",
+        "honesty_marker": "OPEN / NOT ATTEMPTED",
+        "mechanism_invariant": "seven-color matter factors plus local field schedule",
+        "object_formulation": "25-M2 even-CAR cell and finite field rails",
+        "status": "strict next construction",
+        "terminal_obligation": "one autonomous joint update"
+      }
+    ],
+    "N1_qualifying_attempts_for_negative": 3,
+    "N1_required_for_negative": 5,
+    "N1_threshold_met_for_negative": false,
+    "N2_collapsed_walls": {
+      "W_coupling_identification": "one dimensionless q is wired consistently and its algebra is predictive, but its magnitude, units and any physical source/stress interpretation are not selected",
+      "W_field_M2_update": "Route A/C execute a finite real open carrier; Route B gives a finite physical W17 local phase and one-link transfer, but one full open field update is not lowered to an M2 QCA",
+      "W_fixture_genesis": "the matter snapshot, receiver cell, blank carrier, ramp and open grid are explicit inputs rather than outputs of one autonomous law"
+    },
+    "N2_pairwise_wall_independence": [
+      {
+        "independent": true,
+        "left": "W_field_M2_update",
+        "left_closes_right": false,
+        "reason": "physical field lowering, fixture genesis and coupling identification are different terminal obligations",
+        "right": "W_fixture_genesis",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_field_M2_update",
+        "left_closes_right": false,
+        "reason": "physical field lowering, fixture genesis and coupling identification are different terminal obligations",
+        "right": "W_coupling_identification",
+        "right_closes_left": false
+      },
+      {
+        "independent": true,
+        "left": "W_fixture_genesis",
+        "left_closes_right": false,
+        "reason": "physical field lowering, fixture genesis and coupling identification are different terminal obligations",
+        "right": "W_coupling_identification",
+        "right_closes_left": false
+      }
+    ],
+    "N3_hidden_wall_scan": [
+      {
+        "classification": "explicit W_fixture_genesis",
+        "condition": "physical matter snapshot"
+      },
+      {
+        "classification": "explicit W_field_M2_update/W_fixture_genesis",
+        "condition": "real Dirichlet carrier and ramp"
+      },
+      {
+        "classification": "explicit finite carrier supply",
+        "condition": "W17 modulus and unary one-hot rails"
+      },
+      {
+        "classification": "explicit W_coupling_identification",
+        "condition": "dimensionless q"
+      },
+      {
+        "classification": "explicit W_fixture_genesis",
+        "condition": "open receiver site"
+      }
+    ],
+    "N4_residual_matching": [
+      {
+        "current_residual": "physical M2 number drives source insertion and same-q receiver",
+        "exact_match": true,
+        "use_as_closure": true,
+        "witness": "Cycle607",
+        "witness_residual": "no physical matter/source response join"
+      },
+      {
+        "current_residual": "number source joined; live-current response remains open",
+        "exact_match": true,
+        "use_as_closure": "partial",
+        "witness": "Cycle611",
+        "witness_residual": "unit number current/continuity but no physical field join"
+      },
+      {
+        "current_residual": "open scalar coframe derivative executed, not open Regge",
+        "exact_match": true,
+        "use_as_closure": "narrow scalar only",
+        "witness": "Cycle615",
+        "witness_residual": "open boundary and periodic Regge domains unjoined"
+      },
+      {
+        "current_residual": "executed same-q open update now reads M2 number",
+        "exact_match": true,
+        "use_as_closure": true,
+        "witness": "Cycle626",
+        "witness_residual": "common-q stationary comparator lacks executed same-carrier update"
+      },
+      {
+        "current_residual": "host texture removed; matter snapshot genesis remains supplied",
+        "exact_match": true,
+        "use_as_closure": "profile wall retired, genesis not retired",
+        "witness": "external Cycle681",
+        "witness_residual": "host source texture and endogenous source law open"
+      }
+    ],
+    "N5_rhetoric_audit": [
+      {
+        "lattice_wide": "autonomous genesis not tested",
+        "per_block": "L3/L6/L7 response",
+        "per_element": "matter bit controls local kick/phase",
+        "per_mode": "six directions and N=0..6",
+        "per_site": "six-bit number",
+        "phrase": "physical M2 source input is not a selected physical source law"
+      },
+      {
+        "lattice_wide": "Regge hinge carrier absent",
+        "per_block": "all24/all576",
+        "per_element": "one link K",
+        "per_mode": "constant-field Ward",
+        "per_site": "two-site support",
+        "phrase": "open scalar coframe derivative is not the Regge tensor"
+      },
+      {
+        "lattice_wide": "no clock law",
+        "per_block": "finite ramp grid",
+        "per_element": "shear order",
+        "per_mode": "no calibration",
+        "per_site": "local update",
+        "phrase": "finite schedule is not physical time"
+      }
+    ],
+    "N6_partial_closure_paths": [
+      {
+        "file": "scripts/physical_M2_matter_same_coupling_open_source_bridge_cycle683_2026_07_23.py",
+        "status": "EXECUTED PARTIAL",
+        "what_closes": "host source profile replaced by physical M2 number and same-q response"
+      },
+      {
+        "file": "scripts/physical_term_complete_flat_link_update_cycle656_2026_07_23.py",
+        "status": "PINNED PRIOR",
+        "what_closes": "term-complete physical matter side of a future live joint update"
+      },
+      {
+        "file": "UNMATERIALIZED/cycle683_full_open_W17_field_QCA_next.py",
+        "status": "OPEN PRIORITY",
+        "what_closes": "W_field_M2_update and live current response"
+      }
+    ],
+    "N6_primitive_registry_check": {
+      "kinetic_isotropy_used_to_supply_dynamics": false,
+      "realized_state_used_to_select_snapshot": false,
+      "registry_ref": "origin/main docs/audit/data/axiom_premise_nodes.json",
+      "scale_reference_used": false,
+      "statement": "no approved primitive supplies q, carrier, ramp, source profile, receiver or dynamics; none is misclassified as a wall"
+    },
+    "N7_steelman": {
+      "actionable_terminal": "one finite open M2 field QCA plus live Cycle656 matter, inverse/leakage/deletion/all24/all576 on L3/L6/L7",
+      "argument": "A hostile reviewer should reject any claim that the remaining bridge is structurally blocked: extend the exact W17 matter phase and one-link receiver accumulator to the full open cube, drive it from the Cycle656 seven-color live matter schedule, and compile the shared blank/genesis and receiver rails into the same local QCA. Route B already shows the same-q finite arithmetic and Route C supplies the boundary-preserving link derivative.",
+      "no_go_premature": true
+    },
+    "N8_cross_cycle_echo": [
+      {
+        "cycle": 591,
+        "effect": "current is now read from physical rails",
+        "mechanism": "host cut upgraded to conserved occupation/current"
+      },
+      {
+        "cycle": 609,
+        "effect": "reused as actual local finite phase certificate",
+        "mechanism": "algebraic finite-Weyl phase lowering"
+      },
+      {
+        "cycle": 626,
+        "effect": "external Cycle681 executed it; current cycle removes its host source texture",
+        "mechanism": "common-q stationary comparator"
+      },
+      {
+        "cycle": 656,
+        "effect": "live full matter schedule remains the next join",
+        "mechanism": "physical term-complete even-CAR cell"
+      },
+      {
+        "cycle": 679,
+        "effect": "source profile now comes from these rails",
+        "mechanism": "independent physical occupancy rails"
+      }
+    ],
+    "axiom_pressure_claim": false,
+    "broad_no_go_claim": false,
+    "minimum_content_claim": false,
+    "negative_gate": "FAIL / DO NOT SHIP NEGATIVE",
+    "pass": true,
+    "shared_obstruction_claim": false,
+    "shared_route_independent_obstruction": false
+  },
+  "optimal_next_campaign": "compile the full open W17 Q/P field update and receiver accumulator into one locally constrained M2 QCA, driven by live Cycle656 seven-color matter rather than a static snapshot; retain source deletion, continuity, q^2/sign/qrec0, coframe Ward, L3/L6/L7 and all24/all576",
+  "pass": true,
+  "physical_matter_layout": {
+    "frame_group_failures": 0,
+    "ordered_products": 576,
+    "pass": true,
+    "proper_cubic_frames": 24,
+    "size_rows": [
+      {
+        "M2_per_cell": 6,
+        "all24_rail_covariance_failures": 0,
+        "injective": true,
+        "integer_microgrid_scale": 16,
+        "length": 3,
+        "pass": true,
+        "physical_matter_M2": 162,
+        "radius_from_cell_center": 4
+      },
+      {
+        "M2_per_cell": 6,
+        "all24_rail_covariance_failures": 0,
+        "injective": true,
+        "integer_microgrid_scale": 16,
+        "length": 6,
+        "pass": true,
+        "physical_matter_M2": 1296,
+        "radius_from_cell_center": 4
+      },
+      {
+        "M2_per_cell": 6,
+        "all24_rail_covariance_failures": 0,
+        "injective": true,
+        "integer_microgrid_scale": 16,
+        "length": 7,
+        "pass": true,
+        "physical_matter_M2": 2058,
+        "radius_from_cell_center": 4
+      }
+    ]
+  },
+  "route_A_open_reversible_leapfrog": {
+    "bridge_slope_tolerance": 0.15,
+    "carrier": "supplied real open Dirichlet Q/P arrays",
+    "local_source_kick": "pi_x <- pi_x - dt q sum_d n_(x,d)",
+    "matter_bits_changed_or_deleted": false,
+    "maximum_KDK_DKD_gap": 5.102673839019189e-10,
+    "maximum_all24_response_covariance_residual": 2.7755575615628914e-17,
+    "maximum_bridge_slope_residual_from_minus_two": 0.08358989757462965,
+    "maximum_frozen_reversibility_residual": 3.268502925814642e-15,
+    "maximum_q2_exponent_residual": 6.661338147750939e-16,
+    "maximum_q_sign_or_decoupled_residual": 0.0,
+    "maximum_ramp_reversibility_residual": 7.155820825105523e-16,
+    "maximum_receiver_zero_response": 0.0,
+    "maximum_source_deleted_response": 0.0,
+    "maximum_spatial_radius_cells": 1,
+    "maximum_stationary_inverse_residual": 3.5981126591678306e-15,
+    "maximum_two_particle_number_linearity_residual": 0.0,
+    "minimum_receiver_zero_bare_field": 0.04901935126833648,
+    "open_field_link_object_support": 2,
+    "pass": true,
+    "receiver_readout_local_object_support": 2,
+    "rows": [
+      {
+        "KDK_DKD_gap": 3.529219971820652e-11,
+        "all24_executed_response_covariance_residual": 0.0,
+        "bridge": [
+          {
+            "RMS": 0.0006640671282409361,
+            "mean": -0.04902411142382899,
+            "tau": 20.0
+          },
+          {
+            "RMS": 0.00015583326093155387,
+            "mean": -0.049018162811324005,
+            "tau": 40.0
+          },
+          {
+            "RMS": 3.810189462863318e-05,
+            "mean": -0.04901935126833648,
+            "tau": 80.0
+          },
+          {
+            "RMS": 9.54803497049632e-06,
+            "mean": -0.04901948843956439,
+            "tau": 160.0
+          }
+        ],
+        "bridge_slope": -2.0392012826897146,
+        "carrier_minimum_eigenvalue": 1.7573593128807143,
+        "decoupled_sign_flip_residual": 0.0,
+        "far_cell": [
+          2,
+          2,
+          2
+        ],
+        "far_response": -0.0098036166847632,
+        "frozen_reversibility_residual": 2.1528648546157707e-15,
+        "length": 3,
+        "near_exceeds_far": true,
+        "near_response": -0.04901935126833648,
+        "q2_scale_exponent": 1.9999999999999998,
+        "q_sign_residual": 0.0,
+        "ramp_schedule_reversibility_residual": 5.374091603547627e-16,
+        "receiver_cell": [
+          2,
+          1,
+          1
+        ],
+        "receiver_q_zero_bare_field": -0.04901935126833648,
+        "receiver_q_zero_response": 0.0,
+        "source": {
+          "host_source_profile_used": false,
+          "occupied_physical_M2": [
+            {
+              "M2": [
+                20,
+                16,
+                16
+              ],
+              "cell": [
+                1,
+                1,
+                1
+              ],
+              "direction": 0
+            }
+          ],
+          "source_sha256": "e81c4875489da9121b3f4ba89efd25c0b8673a115d433e862d2aa768bb75dd8e",
+          "total_number": 1
+        },
+        "source_cell": [
+          1,
+          1,
+          1
+        ],
+        "source_deletion_response": 0.0,
+        "stationary_inverse_residual": 1.2103895536698993e-15,
+        "stationary_response": -0.049019607843137324,
+        "symplectic_defect": 1.2005485123148005e-16,
+        "two_particle_number_linearity_residual": 0.0,
+        "two_particle_source": {
+          "host_source_profile_used": false,
+          "occupied_physical_M2": [
+            {
+              "M2": [
+                20,
+                16,
+                16
+              ],
+              "cell": [
+                1,
+                1,
+                1
+              ],
+              "direction": 0
+            },
+            {
+              "M2": [
+                12,
+                16,
+                16
+              ],
+              "cell": [
+                1,
+                1,
+                1
+              ],
+              "direction": 1
+            }
+          ],
+          "source_sha256": "4fcf60d830c7b4e6303e366d5d7ae504c3132e528dbbe57e7ca91ff4c2167f1f",
+          "total_number": 2
+        }
+      },
+      {
+        "KDK_DKD_gap": 3.8142780600658455e-11,
+        "all24_executed_response_covariance_residual": 1.3877787807814457e-17,
+        "bridge": [
+          {
+            "RMS": 0.0012338049480964033,
+            "mean": -0.06563023508246893,
+            "tau": 20.0
+          },
+          {
+            "RMS": 0.00030400256021998373,
+            "mean": -0.06558772878250628,
+            "tau": 40.0
+          },
+          {
+            "RMS": 7.531644855962729e-05,
+            "mean": -0.06556828121441129,
+            "tau": 80.0
+          },
+          {
+            "RMS": 1.913688495795819e-05,
+            "mean": -0.0655656419911861,
+            "tau": 160.0
+          }
+        ],
+        "bridge_slope": -2.0044890141557317,
+        "carrier_minimum_eigenvalue": 0.5941867925854861,
+        "decoupled_sign_flip_residual": 0.0,
+        "far_cell": [
+          5,
+          5,
+          5
+        ],
+        "far_response": -0.000629407580829215,
+        "frozen_reversibility_residual": 3.0647182657996255e-15,
+        "length": 6,
+        "near_exceeds_far": true,
+        "near_response": -0.06556828121441129,
+        "q2_scale_exponent": 1.9999999999999993,
+        "q_sign_residual": 0.0,
+        "ramp_schedule_reversibility_residual": 5.013244302570066e-16,
+        "receiver_cell": [
+          3,
+          2,
+          2
+        ],
+        "receiver_q_zero_bare_field": -0.06556828121441129,
+        "receiver_q_zero_response": 0.0,
+        "source": {
+          "host_source_profile_used": false,
+          "occupied_physical_M2": [
+            {
+              "M2": [
+                36,
+                32,
+                32
+              ],
+              "cell": [
+                2,
+                2,
+                2
+              ],
+              "direction": 0
+            }
+          ],
+          "source_sha256": "3b5e1989930563ba12d506ff66aa99003cfd2dcf0993d6648bff2e3c323bd2aa",
+          "total_number": 1
+        },
+        "source_cell": [
+          2,
+          2,
+          2
+        ],
+        "source_deletion_response": 0.0,
+        "stationary_inverse_residual": 2.978123875048212e-15,
+        "stationary_response": -0.06556521204663737,
+        "symplectic_defect": null,
+        "two_particle_number_linearity_residual": 0.0,
+        "two_particle_source": {
+          "host_source_profile_used": false,
+          "occupied_physical_M2": [
+            {
+              "M2": [
+                36,
+                32,
+                32
+              ],
+              "cell": [
+                2,
+                2,
+                2
+              ],
+              "direction": 0
+            },
+            {
+              "M2": [
+                28,
+                32,
+                32
+              ],
+              "cell": [
+                2,
+                2,
+                2
+              ],
+              "direction": 1
+            }
+          ],
+          "source_sha256": "5646d9313f54066456e2c122c8ac6c0d12bb4452a76663382322f74997d0f6a7",
+          "total_number": 2
+        }
+      },
+      {
+        "KDK_DKD_gap": 5.102673839019189e-10,
+        "all24_executed_response_covariance_residual": 2.7755575615628914e-17,
+        "bridge": [
+          {
+            "RMS": 0.0017873196397184138,
+            "mean": -0.0688632673209842,
+            "tau": 20.0
+          },
+          {
+            "RMS": 0.0004009624708309694,
+            "mean": -0.06852303698739468,
+            "tau": 40.0
+          },
+          {
+            "RMS": 9.12470055072887e-05,
+            "mean": -0.06845771182824767,
+            "tau": 80.0
+          },
+          {
+            "RMS": 2.3754928979667324e-05,
+            "mean": -0.06844447810739873,
+            "tau": 160.0
+          }
+        ],
+        "bridge_slope": -2.0835898975746296,
+        "carrier_minimum_eigenvalue": 0.45672280493227857,
+        "decoupled_sign_flip_residual": 0.0,
+        "far_cell": [
+          6,
+          6,
+          6
+        ],
+        "far_response": -0.0006962569693897409,
+        "frozen_reversibility_residual": 3.268502925814642e-15,
+        "length": 7,
+        "near_exceeds_far": true,
+        "near_response": -0.06845771182824767,
+        "q2_scale_exponent": 1.9999999999999993,
+        "q_sign_residual": 0.0,
+        "ramp_schedule_reversibility_residual": 7.155820825105523e-16,
+        "receiver_cell": [
+          4,
+          3,
+          3
+        ],
+        "receiver_q_zero_bare_field": -0.06845771182824767,
+        "receiver_q_zero_response": 0.0,
+        "source": {
+          "host_source_profile_used": false,
+          "occupied_physical_M2": [
+            {
+              "M2": [
+                52,
+                48,
+                48
+              ],
+              "cell": [
+                3,
+                3,
+                3
+              ],
+              "direction": 0
+            }
+          ],
+          "source_sha256": "65228ab1a8f66a58fccb855e8ea22251d232315d6e8a427ef3b38ff80890fb33",
+          "total_number": 1
+        },
+        "source_cell": [
+          3,
+          3,
+          3
+        ],
+        "source_deletion_response": 0.0,
+        "stationary_inverse_residual": 3.5981126591678306e-15,
+        "stationary_response": -0.06843990421270396,
+        "symplectic_defect": null,
+        "two_particle_number_linearity_residual": 0.0,
+        "two_particle_source": {
+          "host_source_profile_used": false,
+          "occupied_physical_M2": [
+            {
+              "M2": [
+                52,
+                48,
+                48
+              ],
+              "cell": [
+                3,
+                3,
+                3
+              ],
+              "direction": 0
+            },
+            {
+              "M2": [
+                44,
+                48,
+                48
+              ],
+              "cell": [
+                3,
+                3,
+                3
+              ],
+              "direction": 1
+            }
+          ],
+          "source_sha256": "a5a5781150af641187f4b9b805eb92400e0147697ba60ee203befa11fdc41e1e",
+          "total_number": 2
+        }
+      }
+    ],
+    "same_q_wiring": "q multiplies the physical matter-number kick and q multiplies the receiver field readout",
+    "source_kick_local_object_support": 2,
+    "source_profile_origin": "six physical M2 occupation rails only; Cycle576 source_profiles is never called",
+    "terminal_matter_rail_leakage_probability": 0.0
+  },
+  "route_B_finite_W17_phase_and_receiver": {
+    "all24_open_path_failures": 0,
+    "exact_result": "R=q^2 n mod 17",
+    "global_order_or_parity_service": false,
+    "inverse_failures": 0,
+    "lawful_W17_label_escape_count": 0,
+    "one_hot_carrier_terminal_leakage_probability": 0.0,
+    "pass": true,
+    "phase_Fourier_certificate": {
+      "local_W17_Fourier_Givens_support_M2": 2,
+      "maximum_inverse_residual": 3.510833468576701e-16,
+      "maximum_phase_to_Fourier_shift_residual": 1.970028334147078e-14,
+      "maximum_unitarity_residual": 2.5223664721700016e-14,
+      "minimum_nonvacuum_phase_deletion_signal": 1.991468352590069,
+      "pass": true,
+      "phase_word": "product over six matter M2 rails and 16 occupied W17 unary rails of exp(2 pi i q n rail_label/17)",
+      "rows": [
+        {
+          "Fourier_shift": 0,
+          "inverse_residual": 0.0,
+          "matter_number": 0,
+          "phase_to_shift_residual": 1.2611832360850003e-14,
+          "q": -2,
+          "unitarity_residual": 2.5223664721700016e-14
+        },
+        {
+          "Fourier_shift": 0,
+          "inverse_residual": 0.0,
+          "matter_number": 0,
+          "phase_to_shift_residual": 1.2611832360850003e-14,
+          "q": -1,
+          "unitarity_residual": 2.5223664721700016e-14
+        },
+        {
+          "Fourier_shift": 0,
+          "inverse_residual": 0.0,
+          "matter_number": 0,
+          "phase_to_shift_residual": 1.2611832360850003e-14,
+          "q": 1,
+          "unitarity_residual": 2.5223664721700016e-14
+        },
+        {
+          "Fourier_shift": 0,
+          "inverse_residual": 0.0,
+          "matter_number": 0,
+          "phase_to_shift_residual": 1.2611832360850003e-14,
+          "q": 2,
+          "unitarity_residual": 2.5223664721700016e-14
+        },
+        {
+          "Fourier_shift": 15,
+          "inverse_residual": 2.482534153247273e-16,
+          "matter_number": 1,
+          "phase_to_shift_residual": 1.4766581393154568e-14,
+          "q": -2,
+          "unitarity_residual": 1.564040212713676e-14
+        },
+        {
+          "Fourier_shift": 16,
+          "inverse_residual": 2.482534153247273e-16,
+          "matter_number": 1,
+          "phase_to_shift_residual": 1.3778969741382572e-14,
+          "q": -1,
+          "unitarity_residual": 1.697392380319949e-14
+        },
+        {
+          "Fourier_shift": 1,
+          "inverse_residual": 2.482534153247273e-16,
+          "matter_number": 1,
+          "phase_to_shift_residual": 1.3789900965279195e-14,
+          "q": 1,
+          "unitarity_residual": 1.7002493634963608e-14
+        },
+        {
+          "Fourier_shift": 2,
+          "inverse_residual": 2.482534153247273e-16,
+          "matter_number": 1,
+          "phase_to_shift_residual": 1.4789939211291118e-14,
+          "q": 2,
+          "unitarity_residual": 1.570763880134302e-14
+        },
+        {
+          "Fourier_shift": 13,
+          "inverse_residual": 1.9229626863835638e-16,
+          "matter_number": 2,
+          "phase_to_shift_residual": 1.532212428990925e-14,
+          "q": -2,
+          "unitarity_residual": 1.7279209289005517e-14
+        },
+        {
+          "Fourier_shift": 15,
+          "inverse_residual": 2.482534153247273e-16,
+          "matter_number": 2,
+          "phase_to_shift_residual": 1.4766581393154568e-14,
+          "q": -1,
+          "unitarity_residual": 1.564040212713676e-14
+        },
+        {
+          "Fourier_shift": 2,
+          "inverse_residual": 2.482534153247273e-16,
+          "matter_number": 2,
+          "phase_to_shift_residual": 1.4789939211291118e-14,
+          "q": 1,
+          "unitarity_residual": 1.570763880134302e-14
+        },
+        {
+          "Fourier_shift": 4,
+          "inverse_residual": 1.9229626863835638e-16,
+          "matter_number": 2,
+          "phase_to_shift_residual": 1.53269767156797e-14,
+          "q": 2,
+          "unitarity_residual": 1.7210610069327953e-14
+        },
+        {
+          "Fourier_shift": 11,
+          "inverse_residual": 3.3306690738754696e-16,
+          "matter_number": 3,
+          "phase_to_shift_residual": 1.533284570915608e-14,
+          "q": -2,
+          "unitarity_residual": 1.698703988650884e-14
+        },
+        {
+          "Fourier_shift": 14,
+          "inverse_residual": 2.7194799110210365e-16,
+          "matter_number": 3,
+          "phase_to_shift_residual": 1.5020755620231665e-14,
+          "q": -1,
+          "unitarity_residual": 1.8178466300755403e-14
+        },
+        {
+          "Fourier_shift": 3,
+          "inverse_residual": 2.7194799110210365e-16,
+          "matter_number": 3,
+          "phase_to_shift_residual": 1.503002272320924e-14,
+          "q": 1,
+          "unitarity_residual": 1.8172570903954078e-14
+        },
+        {
+          "Fourier_shift": 6,
+          "inverse_residual": 3.3306690738754696e-16,
+          "matter_number": 3,
+          "phase_to_shift_residual": 1.532195568008996e-14,
+          "q": 2,
+          "unitarity_residual": 1.6974778833849072e-14
+        },
+        {
+          "Fourier_shift": 9,
+          "inverse_residual": 1.1102230246251565e-16,
+          "matter_number": 4,
+          "phase_to_shift_residual": 1.9505608403222114e-14,
+          "q": -2,
+          "unitarity_residual": 1.8275133968731763e-14
+        },
+        {
+          "Fourier_shift": 13,
+          "inverse_residual": 1.9229626863835638e-16,
+          "matter_number": 4,
+          "phase_to_shift_residual": 1.532212428990925e-14,
+          "q": -1,
+          "unitarity_residual": 1.7279209289005517e-14
+        },
+        {
+          "Fourier_shift": 4,
+          "inverse_residual": 1.9229626863835638e-16,
+          "matter_number": 4,
+          "phase_to_shift_residual": 1.53269767156797e-14,
+          "q": 1,
+          "unitarity_residual": 1.7210610069327953e-14
+        },
+        {
+          "Fourier_shift": 8,
+          "inverse_residual": 1.1102230246251565e-16,
+          "matter_number": 4,
+          "phase_to_shift_residual": 1.9526029567580207e-14,
+          "q": 2,
+          "unitarity_residual": 1.8307011259236583e-14
+        },
+        {
+          "Fourier_shift": 7,
+          "inverse_residual": 2.7194799110210365e-16,
+          "matter_number": 5,
+          "phase_to_shift_residual": 1.9682468539096825e-14,
+          "q": -2,
+          "unitarity_residual": 1.675847013068527e-14
+        },
+        {
+          "Fourier_shift": 12,
+          "inverse_residual": 1.5700924586837752e-16,
+          "matter_number": 5,
+          "phase_to_shift_residual": 1.56333355643208e-14,
+          "q": -1,
+          "unitarity_residual": 1.7668363020960205e-14
+        },
+        {
+          "Fourier_shift": 5,
+          "inverse_residual": 1.5700924586837752e-16,
+          "matter_number": 5,
+          "phase_to_shift_residual": 1.560019156173338e-14,
+          "q": 1,
+          "unitarity_residual": 1.7638549635957344e-14
+        },
+        {
+          "Fourier_shift": 10,
+          "inverse_residual": 2.7194799110210365e-16,
+          "matter_number": 5,
+          "phase_to_shift_residual": 1.970028334147078e-14,
+          "q": 2,
+          "unitarity_residual": 1.686173125231543e-14
+        },
+        {
+          "Fourier_shift": 5,
+          "inverse_residual": 3.510833468576701e-16,
+          "matter_number": 6,
+          "phase_to_shift_residual": 1.823873504859671e-14,
+          "q": -2,
+          "unitarity_residual": 1.759721119575103e-14
+        },
+        {
+          "Fourier_shift": 11,
+          "inverse_residual": 3.3306690738754696e-16,
+          "matter_number": 6,
+          "phase_to_shift_residual": 1.533284570915608e-14,
+          "q": -1,
+          "unitarity_residual": 1.698703988650884e-14
+        },
+        {
+          "Fourier_shift": 6,
+          "inverse_residual": 3.3306690738754696e-16,
+          "matter_number": 6,
+          "phase_to_shift_residual": 1.532195568008996e-14,
+          "q": 1,
+          "unitarity_residual": 1.6974778833849072e-14
+        },
+        {
+          "Fourier_shift": 12,
+          "inverse_residual": 3.510833468576701e-16,
+          "matter_number": 6,
+          "phase_to_shift_residual": 1.826488172796873e-14,
+          "q": 2,
+          "unitarity_residual": 1.765635285762135e-14
+        }
+      ],
+      "source_phase_elementary_support_M2": 2
+    },
+    "q_sign_cancellation_failures": 0,
+    "q_squared_failures": 0,
+    "receiver_q_zero_failures": 0,
+    "same_q_wiring": "P_source += q n_M2; local open transfer P_receiver += P_source; R += q P_receiver",
+    "size_rows": [
+      {
+        "W17_unary_QP_M2_per_site": 34,
+        "arithmetic_rows": [
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 0,
+            "expected_q_squared_number_label": 0,
+            "full_inverse_restores_zero": true,
+            "matter_number": 0,
+            "q": -2,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 0,
+            "same_q_readout_label": 0,
+            "signed_readout": 0,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 0
+          },
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 0,
+            "expected_q_squared_number_label": 0,
+            "full_inverse_restores_zero": true,
+            "matter_number": 0,
+            "q": -1,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 0,
+            "same_q_readout_label": 0,
+            "signed_readout": 0,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 0
+          },
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 0,
+            "expected_q_squared_number_label": 0,
+            "full_inverse_restores_zero": true,
+            "matter_number": 0,
+            "q": 1,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 0,
+            "same_q_readout_label": 0,
+            "signed_readout": 0,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 0
+          },
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 0,
+            "expected_q_squared_number_label": 0,
+            "full_inverse_restores_zero": true,
+            "matter_number": 0,
+            "q": 2,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 0,
+            "same_q_readout_label": 0,
+            "signed_readout": 0,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 0
+          },
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 13,
+            "expected_q_squared_number_label": 4,
+            "full_inverse_restores_zero": true,
+            "matter_number": 1,
+            "q": -2,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 15,
+            "same_q_readout_label": 4,
+            "signed_readout": 4,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 15
+          },
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 16,
+            "expected_q_squared_number_label": 1,
+            "full_inverse_restores_zero": true,
+            "matter_number": 1,
+            "q": -1,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 16,
+            "same_q_readout_label": 1,
+            "signed_readout": 1,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 16
+          },
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 16,
+            "expected_q_squared_number_label": 1,
+            "full_inverse_restores_zero": true,
+            "matter_number": 1,
+            "q": 1,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 1,
+            "same_q_readout_label": 1,
+            "signed_readout": 1,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 1
+          },
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 13,
+            "expected_q_squared_number_label": 4,
+            "full_inverse_restores_zero": true,
+            "matter_number": 1,
+            "q": 2,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 2,
+            "same_q_readout_label": 4,
+            "signed_readout": 4,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 2
+          },
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 9,
+            "expected_q_squared_number_label": 8,
+            "full_inverse_restores_zero": true,
+            "matter_number": 2,
+            "q": -2,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 13,
+            "same_q_readout_label": 8,
+            "signed_readout": 8,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 13
+          },
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 15,
+            "expected_q_squared_number_label": 2,
+            "full_inverse_restores_zero": true,
+            "matter_number": 2,
+            "q": -1,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 15,
+            "same_q_readout_label": 2,
+            "signed_readout": 2,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 15
+          },
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 15,
+            "expected_q_squared_number_label": 2,
+            "full_inverse_restores_zero": true,
+            "matter_number": 2,
+            "q": 1,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 2,
+            "same_q_readout_label": 2,
+            "signed_readout": 2,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 2
+          },
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 9,
+            "expected_q_squared_number_label": 8,
+            "full_inverse_restores_zero": true,
+            "matter_number": 2,
+            "q": 2,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 4,
+            "same_q_readout_label": 8,
+            "signed_readout": 8,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 4
+          },
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 5,
+            "expected_q_squared_number_label": 12,
+            "full_inverse_restores_zero": true,
+            "matter_number": 3,
+            "q": -2,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 11,
+            "same_q_readout_label": 12,
+            "signed_readout": -5,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 11
+          },
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 14,
+            "expected_q_squared_number_label": 3,
+            "full_inverse_restores_zero": true,
+            "matter_number": 3,
+            "q": -1,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 14,
+            "same_q_readout_label": 3,
+            "signed_readout": 3,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 14
+          },
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 14,
+            "expected_q_squared_number_label": 3,
+            "full_inverse_restores_zero": true,
+            "matter_number": 3,
+            "q": 1,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 3,
+            "same_q_readout_label": 3,
+            "signed_readout": 3,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 3
+          },
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 5,
+            "expected_q_squared_number_label": 12,
+            "full_inverse_restores_zero": true,
+            "matter_number": 3,
+            "q": 2,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 6,
+            "same_q_readout_label": 12,
+            "signed_readout": -5,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 6
+          }
+        ],
+        "geometry_rows": [
+          {
+            "frame": 0,
+            "receiver": [
+              0,
+              1,
+              1
+            ],
+            "source": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "frame": 1,
+            "receiver": [
+              0,
+              1,
+              1
+            ],
+            "source": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "frame": 2,
+            "receiver": [
+              2,
+              1,
+              1
+            ],
+            "source": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "frame": 3,
+            "receiver": [
+              2,
+              1,
+              1
+            ],
+            "source": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "frame": 4,
+            "receiver": [
+              0,
+              1,
+              1
+            ],
+            "source": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "frame": 5,
+            "receiver": [
+              0,
+              1,
+              1
+            ],
+            "source": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "frame": 6,
+            "receiver": [
+              2,
+              1,
+              1
+            ],
+            "source": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "frame": 7,
+            "receiver": [
+              2,
+              1,
+              1
+            ],
+            "source": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "frame": 8,
+            "receiver": [
+              1,
+              0,
+              1
+            ],
+            "source": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "frame": 9,
+            "receiver": [
+              1,
+              2,
+              1
+            ],
+            "source": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "frame": 10,
+            "receiver": [
+              1,
+              0,
+              1
+            ],
+            "source": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "frame": 11,
+            "receiver": [
+              1,
+              2,
+              1
+            ],
+            "source": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "frame": 12,
+            "receiver": [
+              1,
+              1,
+              2
+            ],
+            "source": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "frame": 13,
+            "receiver": [
+              1,
+              1,
+              0
+            ],
+            "source": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "frame": 14,
+            "receiver": [
+              1,
+              1,
+              0
+            ],
+            "source": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "frame": 15,
+            "receiver": [
+              1,
+              1,
+              2
+            ],
+            "source": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "frame": 16,
+            "receiver": [
+              1,
+              0,
+              1
+            ],
+            "source": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "frame": 17,
+            "receiver": [
+              1,
+              2,
+              1
+            ],
+            "source": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "frame": 18,
+            "receiver": [
+              1,
+              0,
+              1
+            ],
+            "source": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "frame": 19,
+            "receiver": [
+              1,
+              2,
+              1
+            ],
+            "source": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "frame": 20,
+            "receiver": [
+              1,
+              1,
+              0
+            ],
+            "source": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "frame": 21,
+            "receiver": [
+              1,
+              1,
+              2
+            ],
+            "source": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "frame": 22,
+            "receiver": [
+              1,
+              1,
+              2
+            ],
+            "source": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "frame": 23,
+            "receiver": [
+              1,
+              1,
+              0
+            ],
+            "source": [
+              1,
+              1,
+              1
+            ]
+          }
+        ],
+        "length": 3,
+        "one_hot_constraint": "(sum rail-1)^2, a sum of support-one and support-two terms",
+        "open_path_no_wrap": true,
+        "physical_source_M2": [
+          20,
+          16,
+          16
+        ],
+        "receiver_accumulator_M2": 17,
+        "receiver_cell": [
+          2,
+          1,
+          1
+        ],
+        "source_cell": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "W17_unary_QP_M2_per_site": 34,
+        "arithmetic_rows": [
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 0,
+            "expected_q_squared_number_label": 0,
+            "full_inverse_restores_zero": true,
+            "matter_number": 0,
+            "q": -2,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 0,
+            "same_q_readout_label": 0,
+            "signed_readout": 0,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 0
+          },
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 0,
+            "expected_q_squared_number_label": 0,
+            "full_inverse_restores_zero": true,
+            "matter_number": 0,
+            "q": -1,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 0,
+            "same_q_readout_label": 0,
+            "signed_readout": 0,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 0
+          },
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 0,
+            "expected_q_squared_number_label": 0,
+            "full_inverse_restores_zero": true,
+            "matter_number": 0,
+            "q": 1,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 0,
+            "same_q_readout_label": 0,
+            "signed_readout": 0,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 0
+          },
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 0,
+            "expected_q_squared_number_label": 0,
+            "full_inverse_restores_zero": true,
+            "matter_number": 0,
+            "q": 2,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 0,
+            "same_q_readout_label": 0,
+            "signed_readout": 0,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 0
+          },
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 13,
+            "expected_q_squared_number_label": 4,
+            "full_inverse_restores_zero": true,
+            "matter_number": 1,
+            "q": -2,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 15,
+            "same_q_readout_label": 4,
+            "signed_readout": 4,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 15
+          },
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 16,
+            "expected_q_squared_number_label": 1,
+            "full_inverse_restores_zero": true,
+            "matter_number": 1,
+            "q": -1,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 16,
+            "same_q_readout_label": 1,
+            "signed_readout": 1,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 16
+          },
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 16,
+            "expected_q_squared_number_label": 1,
+            "full_inverse_restores_zero": true,
+            "matter_number": 1,
+            "q": 1,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 1,
+            "same_q_readout_label": 1,
+            "signed_readout": 1,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 1
+          },
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 13,
+            "expected_q_squared_number_label": 4,
+            "full_inverse_restores_zero": true,
+            "matter_number": 1,
+            "q": 2,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 2,
+            "same_q_readout_label": 4,
+            "signed_readout": 4,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 2
+          },
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 9,
+            "expected_q_squared_number_label": 8,
+            "full_inverse_restores_zero": true,
+            "matter_number": 2,
+            "q": -2,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 13,
+            "same_q_readout_label": 8,
+            "signed_readout": 8,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 13
+          },
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 15,
+            "expected_q_squared_number_label": 2,
+            "full_inverse_restores_zero": true,
+            "matter_number": 2,
+            "q": -1,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 15,
+            "same_q_readout_label": 2,
+            "signed_readout": 2,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 15
+          },
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 15,
+            "expected_q_squared_number_label": 2,
+            "full_inverse_restores_zero": true,
+            "matter_number": 2,
+            "q": 1,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 2,
+            "same_q_readout_label": 2,
+            "signed_readout": 2,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 2
+          },
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 9,
+            "expected_q_squared_number_label": 8,
+            "full_inverse_restores_zero": true,
+            "matter_number": 2,
+            "q": 2,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 4,
+            "same_q_readout_label": 8,
+            "signed_readout": 8,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 4
+          },
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 5,
+            "expected_q_squared_number_label": 12,
+            "full_inverse_restores_zero": true,
+            "matter_number": 3,
+            "q": -2,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 11,
+            "same_q_readout_label": 12,
+            "signed_readout": -5,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 11
+          },
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 14,
+            "expected_q_squared_number_label": 3,
+            "full_inverse_restores_zero": true,
+            "matter_number": 3,
+            "q": -1,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 14,
+            "same_q_readout_label": 3,
+            "signed_readout": 3,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 14
+          },
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 14,
+            "expected_q_squared_number_label": 3,
+            "full_inverse_restores_zero": true,
+            "matter_number": 3,
+            "q": 1,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 3,
+            "same_q_readout_label": 3,
+            "signed_readout": 3,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 3
+          },
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 5,
+            "expected_q_squared_number_label": 12,
+            "full_inverse_restores_zero": true,
+            "matter_number": 3,
+            "q": 2,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 6,
+            "same_q_readout_label": 12,
+            "signed_readout": -5,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 6
+          }
+        ],
+        "geometry_rows": [
+          {
+            "frame": 0,
+            "receiver": [
+              2,
+              3,
+              2
+            ],
+            "source": [
+              3,
+              3,
+              2
+            ]
+          },
+          {
+            "frame": 1,
+            "receiver": [
+              2,
+              2,
+              3
+            ],
+            "source": [
+              3,
+              2,
+              3
+            ]
+          },
+          {
+            "frame": 2,
+            "receiver": [
+              3,
+              3,
+              3
+            ],
+            "source": [
+              2,
+              3,
+              3
+            ]
+          },
+          {
+            "frame": 3,
+            "receiver": [
+              3,
+              2,
+              2
+            ],
+            "source": [
+              2,
+              2,
+              2
+            ]
+          },
+          {
+            "frame": 4,
+            "receiver": [
+              2,
+              3,
+              3
+            ],
+            "source": [
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "frame": 5,
+            "receiver": [
+              2,
+              2,
+              2
+            ],
+            "source": [
+              3,
+              2,
+              2
+            ]
+          },
+          {
+            "frame": 6,
+            "receiver": [
+              3,
+              3,
+              2
+            ],
+            "source": [
+              2,
+              3,
+              2
+            ]
+          },
+          {
+            "frame": 7,
+            "receiver": [
+              3,
+              2,
+              3
+            ],
+            "source": [
+              2,
+              2,
+              3
+            ]
+          },
+          {
+            "frame": 8,
+            "receiver": [
+              3,
+              2,
+              3
+            ],
+            "source": [
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "frame": 9,
+            "receiver": [
+              3,
+              3,
+              2
+            ],
+            "source": [
+              3,
+              2,
+              2
+            ]
+          },
+          {
+            "frame": 10,
+            "receiver": [
+              2,
+              2,
+              2
+            ],
+            "source": [
+              2,
+              3,
+              2
+            ]
+          },
+          {
+            "frame": 11,
+            "receiver": [
+              2,
+              3,
+              3
+            ],
+            "source": [
+              2,
+              2,
+              3
+            ]
+          },
+          {
+            "frame": 12,
+            "receiver": [
+              3,
+              3,
+              3
+            ],
+            "source": [
+              3,
+              3,
+              2
+            ]
+          },
+          {
+            "frame": 13,
+            "receiver": [
+              3,
+              2,
+              2
+            ],
+            "source": [
+              3,
+              2,
+              3
+            ]
+          },
+          {
+            "frame": 14,
+            "receiver": [
+              2,
+              3,
+              2
+            ],
+            "source": [
+              2,
+              3,
+              3
+            ]
+          },
+          {
+            "frame": 15,
+            "receiver": [
+              2,
+              2,
+              3
+            ],
+            "source": [
+              2,
+              2,
+              2
+            ]
+          },
+          {
+            "frame": 16,
+            "receiver": [
+              3,
+              2,
+              2
+            ],
+            "source": [
+              3,
+              3,
+              2
+            ]
+          },
+          {
+            "frame": 17,
+            "receiver": [
+              3,
+              3,
+              3
+            ],
+            "source": [
+              3,
+              2,
+              3
+            ]
+          },
+          {
+            "frame": 18,
+            "receiver": [
+              2,
+              2,
+              3
+            ],
+            "source": [
+              2,
+              3,
+              3
+            ]
+          },
+          {
+            "frame": 19,
+            "receiver": [
+              2,
+              3,
+              2
+            ],
+            "source": [
+              2,
+              2,
+              2
+            ]
+          },
+          {
+            "frame": 20,
+            "receiver": [
+              3,
+              3,
+              2
+            ],
+            "source": [
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "frame": 21,
+            "receiver": [
+              3,
+              2,
+              3
+            ],
+            "source": [
+              3,
+              2,
+              2
+            ]
+          },
+          {
+            "frame": 22,
+            "receiver": [
+              2,
+              3,
+              3
+            ],
+            "source": [
+              2,
+              3,
+              2
+            ]
+          },
+          {
+            "frame": 23,
+            "receiver": [
+              2,
+              2,
+              2
+            ],
+            "source": [
+              2,
+              2,
+              3
+            ]
+          }
+        ],
+        "length": 6,
+        "one_hot_constraint": "(sum rail-1)^2, a sum of support-one and support-two terms",
+        "open_path_no_wrap": true,
+        "physical_source_M2": [
+          36,
+          32,
+          32
+        ],
+        "receiver_accumulator_M2": 17,
+        "receiver_cell": [
+          3,
+          2,
+          2
+        ],
+        "source_cell": [
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "W17_unary_QP_M2_per_site": 34,
+        "arithmetic_rows": [
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 0,
+            "expected_q_squared_number_label": 0,
+            "full_inverse_restores_zero": true,
+            "matter_number": 0,
+            "q": -2,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 0,
+            "same_q_readout_label": 0,
+            "signed_readout": 0,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 0
+          },
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 0,
+            "expected_q_squared_number_label": 0,
+            "full_inverse_restores_zero": true,
+            "matter_number": 0,
+            "q": -1,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 0,
+            "same_q_readout_label": 0,
+            "signed_readout": 0,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 0
+          },
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 0,
+            "expected_q_squared_number_label": 0,
+            "full_inverse_restores_zero": true,
+            "matter_number": 0,
+            "q": 1,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 0,
+            "same_q_readout_label": 0,
+            "signed_readout": 0,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 0
+          },
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 0,
+            "expected_q_squared_number_label": 0,
+            "full_inverse_restores_zero": true,
+            "matter_number": 0,
+            "q": 2,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 0,
+            "same_q_readout_label": 0,
+            "signed_readout": 0,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 0
+          },
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 13,
+            "expected_q_squared_number_label": 4,
+            "full_inverse_restores_zero": true,
+            "matter_number": 1,
+            "q": -2,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 15,
+            "same_q_readout_label": 4,
+            "signed_readout": 4,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 15
+          },
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 16,
+            "expected_q_squared_number_label": 1,
+            "full_inverse_restores_zero": true,
+            "matter_number": 1,
+            "q": -1,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 16,
+            "same_q_readout_label": 1,
+            "signed_readout": 1,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 16
+          },
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 16,
+            "expected_q_squared_number_label": 1,
+            "full_inverse_restores_zero": true,
+            "matter_number": 1,
+            "q": 1,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 1,
+            "same_q_readout_label": 1,
+            "signed_readout": 1,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 1
+          },
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 13,
+            "expected_q_squared_number_label": 4,
+            "full_inverse_restores_zero": true,
+            "matter_number": 1,
+            "q": 2,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 2,
+            "same_q_readout_label": 4,
+            "signed_readout": 4,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 2
+          },
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 9,
+            "expected_q_squared_number_label": 8,
+            "full_inverse_restores_zero": true,
+            "matter_number": 2,
+            "q": -2,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 13,
+            "same_q_readout_label": 8,
+            "signed_readout": 8,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 13
+          },
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 15,
+            "expected_q_squared_number_label": 2,
+            "full_inverse_restores_zero": true,
+            "matter_number": 2,
+            "q": -1,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 15,
+            "same_q_readout_label": 2,
+            "signed_readout": 2,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 15
+          },
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 15,
+            "expected_q_squared_number_label": 2,
+            "full_inverse_restores_zero": true,
+            "matter_number": 2,
+            "q": 1,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 2,
+            "same_q_readout_label": 2,
+            "signed_readout": 2,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 2
+          },
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 9,
+            "expected_q_squared_number_label": 8,
+            "full_inverse_restores_zero": true,
+            "matter_number": 2,
+            "q": 2,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 4,
+            "same_q_readout_label": 8,
+            "signed_readout": 8,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 4
+          },
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 5,
+            "expected_q_squared_number_label": 12,
+            "full_inverse_restores_zero": true,
+            "matter_number": 3,
+            "q": -2,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 11,
+            "same_q_readout_label": 12,
+            "signed_readout": -5,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 11
+          },
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 14,
+            "expected_q_squared_number_label": 3,
+            "full_inverse_restores_zero": true,
+            "matter_number": 3,
+            "q": -1,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 14,
+            "same_q_readout_label": 3,
+            "signed_readout": 3,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 14
+          },
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 14,
+            "expected_q_squared_number_label": 3,
+            "full_inverse_restores_zero": true,
+            "matter_number": 3,
+            "q": 1,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 3,
+            "same_q_readout_label": 3,
+            "signed_readout": 3,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 3
+          },
+          {
+            "decoupled_is_negative": true,
+            "decoupled_readout_label": 5,
+            "expected_q_squared_number_label": 12,
+            "full_inverse_restores_zero": true,
+            "matter_number": 3,
+            "q": 2,
+            "q_receiver_zero_readout": 0,
+            "receiver_momentum_label": 6,
+            "same_q_readout_label": 12,
+            "signed_readout": -5,
+            "source_deleted_readout": 0,
+            "source_momentum_label": 6
+          }
+        ],
+        "geometry_rows": [
+          {
+            "frame": 0,
+            "receiver": [
+              2,
+              3,
+              3
+            ],
+            "source": [
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "frame": 1,
+            "receiver": [
+              2,
+              3,
+              3
+            ],
+            "source": [
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "frame": 2,
+            "receiver": [
+              4,
+              3,
+              3
+            ],
+            "source": [
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "frame": 3,
+            "receiver": [
+              4,
+              3,
+              3
+            ],
+            "source": [
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "frame": 4,
+            "receiver": [
+              2,
+              3,
+              3
+            ],
+            "source": [
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "frame": 5,
+            "receiver": [
+              2,
+              3,
+              3
+            ],
+            "source": [
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "frame": 6,
+            "receiver": [
+              4,
+              3,
+              3
+            ],
+            "source": [
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "frame": 7,
+            "receiver": [
+              4,
+              3,
+              3
+            ],
+            "source": [
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "frame": 8,
+            "receiver": [
+              3,
+              2,
+              3
+            ],
+            "source": [
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "frame": 9,
+            "receiver": [
+              3,
+              4,
+              3
+            ],
+            "source": [
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "frame": 10,
+            "receiver": [
+              3,
+              2,
+              3
+            ],
+            "source": [
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "frame": 11,
+            "receiver": [
+              3,
+              4,
+              3
+            ],
+            "source": [
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "frame": 12,
+            "receiver": [
+              3,
+              3,
+              4
+            ],
+            "source": [
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "frame": 13,
+            "receiver": [
+              3,
+              3,
+              2
+            ],
+            "source": [
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "frame": 14,
+            "receiver": [
+              3,
+              3,
+              2
+            ],
+            "source": [
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "frame": 15,
+            "receiver": [
+              3,
+              3,
+              4
+            ],
+            "source": [
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "frame": 16,
+            "receiver": [
+              3,
+              2,
+              3
+            ],
+            "source": [
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "frame": 17,
+            "receiver": [
+              3,
+              4,
+              3
+            ],
+            "source": [
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "frame": 18,
+            "receiver": [
+              3,
+              2,
+              3
+            ],
+            "source": [
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "frame": 19,
+            "receiver": [
+              3,
+              4,
+              3
+            ],
+            "source": [
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "frame": 20,
+            "receiver": [
+              3,
+              3,
+              2
+            ],
+            "source": [
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "frame": 21,
+            "receiver": [
+              3,
+              3,
+              4
+            ],
+            "source": [
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "frame": 22,
+            "receiver": [
+              3,
+              3,
+              4
+            ],
+            "source": [
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "frame": 23,
+            "receiver": [
+              3,
+              3,
+              2
+            ],
+            "source": [
+              3,
+              3,
+              3
+            ]
+          }
+        ],
+        "length": 7,
+        "one_hot_constraint": "(sum rail-1)^2, a sum of support-one and support-two terms",
+        "open_path_no_wrap": true,
+        "physical_source_M2": [
+          52,
+          48,
+          48
+        ],
+        "receiver_accumulator_M2": 17,
+        "receiver_cell": [
+          4,
+          3,
+          3
+        ],
+        "source_cell": [
+          3,
+          3,
+          3
+        ]
+      }
+    ],
+    "source_deletion_failures": 0,
+    "source_phase_support_M2": 2,
+    "transfer_and_accumulator_maximum_support_M2": 3
+  },
+  "route_C_open_real_space_coframe": {
+    "all576_group_failures": 0,
+    "boundary_or_wrap_failures": 0,
+    "coframe_generator_object_support": 2,
+    "finite_difference_epsilon": 1e-05,
+    "maximum_all24_K_covariance_residual": 0.0,
+    "maximum_coframe_finite_difference_residual": 5.4334766288190513e-11,
+    "maximum_constant_field_Ward_residual": 0.0,
+    "maximum_response_derivative_residual": 2.5232524403229206e-12,
+    "maximum_spatial_radius_cells": 1,
+    "minimum_coframe_deletion_signal": 0.025676937441643326,
+    "operator_scope": "open real-space scalar link derivative, not the Cycle576 Regge tensor and not a periodic Bloch K",
+    "pass": true,
+    "same_q_derivative": "q at matter-number insertion and q at receiver makes the open coframe response derivative even in q",
+    "size_rows": [
+      {
+        "boundary_preserved": true,
+        "coframe_link": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            2,
+            1,
+            1
+          ]
+        ],
+        "constant_field_Ward_residual": 0.0,
+        "deleted_K_signal": 0.025676937441643326,
+        "finite_difference_K_residual": 5.4334766288190513e-11,
+        "frame_rows": [
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 0,
+            "left": [
+              1,
+              1,
+              1
+            ],
+            "right": [
+              0,
+              1,
+              1
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 1,
+            "left": [
+              1,
+              1,
+              1
+            ],
+            "right": [
+              0,
+              1,
+              1
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 2,
+            "left": [
+              1,
+              1,
+              1
+            ],
+            "right": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 3,
+            "left": [
+              1,
+              1,
+              1
+            ],
+            "right": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 4,
+            "left": [
+              1,
+              1,
+              1
+            ],
+            "right": [
+              0,
+              1,
+              1
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 5,
+            "left": [
+              1,
+              1,
+              1
+            ],
+            "right": [
+              0,
+              1,
+              1
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 6,
+            "left": [
+              1,
+              1,
+              1
+            ],
+            "right": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 7,
+            "left": [
+              1,
+              1,
+              1
+            ],
+            "right": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 8,
+            "left": [
+              1,
+              1,
+              1
+            ],
+            "right": [
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 9,
+            "left": [
+              1,
+              1,
+              1
+            ],
+            "right": [
+              1,
+              2,
+              1
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 10,
+            "left": [
+              1,
+              1,
+              1
+            ],
+            "right": [
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 11,
+            "left": [
+              1,
+              1,
+              1
+            ],
+            "right": [
+              1,
+              2,
+              1
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 12,
+            "left": [
+              1,
+              1,
+              1
+            ],
+            "right": [
+              1,
+              1,
+              2
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 13,
+            "left": [
+              1,
+              1,
+              1
+            ],
+            "right": [
+              1,
+              1,
+              0
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 14,
+            "left": [
+              1,
+              1,
+              1
+            ],
+            "right": [
+              1,
+              1,
+              0
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 15,
+            "left": [
+              1,
+              1,
+              1
+            ],
+            "right": [
+              1,
+              1,
+              2
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 16,
+            "left": [
+              1,
+              1,
+              1
+            ],
+            "right": [
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 17,
+            "left": [
+              1,
+              1,
+              1
+            ],
+            "right": [
+              1,
+              2,
+              1
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 18,
+            "left": [
+              1,
+              1,
+              1
+            ],
+            "right": [
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 19,
+            "left": [
+              1,
+              1,
+              1
+            ],
+            "right": [
+              1,
+              2,
+              1
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 20,
+            "left": [
+              1,
+              1,
+              1
+            ],
+            "right": [
+              1,
+              1,
+              0
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 21,
+            "left": [
+              1,
+              1,
+              1
+            ],
+            "right": [
+              1,
+              1,
+              2
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 22,
+            "left": [
+              1,
+              1,
+              1
+            ],
+            "right": [
+              1,
+              1,
+              2
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 23,
+            "left": [
+              1,
+              1,
+              1
+            ],
+            "right": [
+              1,
+              1,
+              0
+            ]
+          }
+        ],
+        "length": 3,
+        "periodic_wrap_edges": 0,
+        "q_receiver_zero_derivative": 0.0,
+        "q_sign_cancellation_residual": 0.0,
+        "response_derivative_finite_difference_residual": 9.408168688551655e-13,
+        "same_q_response_derivative": -0.025676937441643326,
+        "source_cell": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "boundary_preserved": true,
+        "coframe_link": [
+          [
+            2,
+            2,
+            2
+          ],
+          [
+            3,
+            2,
+            2
+          ]
+        ],
+        "constant_field_Ward_residual": 0.0,
+        "deleted_K_signal": 0.02753784333827076,
+        "finite_difference_K_residual": 5.4334766288190513e-11,
+        "frame_rows": [
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 0,
+            "left": [
+              3,
+              3,
+              2
+            ],
+            "right": [
+              2,
+              3,
+              2
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 1,
+            "left": [
+              3,
+              2,
+              3
+            ],
+            "right": [
+              2,
+              2,
+              3
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 2,
+            "left": [
+              2,
+              3,
+              3
+            ],
+            "right": [
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 3,
+            "left": [
+              2,
+              2,
+              2
+            ],
+            "right": [
+              3,
+              2,
+              2
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 4,
+            "left": [
+              3,
+              3,
+              3
+            ],
+            "right": [
+              2,
+              3,
+              3
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 5,
+            "left": [
+              3,
+              2,
+              2
+            ],
+            "right": [
+              2,
+              2,
+              2
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 6,
+            "left": [
+              2,
+              3,
+              2
+            ],
+            "right": [
+              3,
+              3,
+              2
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 7,
+            "left": [
+              2,
+              2,
+              3
+            ],
+            "right": [
+              3,
+              2,
+              3
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 8,
+            "left": [
+              3,
+              3,
+              3
+            ],
+            "right": [
+              3,
+              2,
+              3
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 9,
+            "left": [
+              3,
+              2,
+              2
+            ],
+            "right": [
+              3,
+              3,
+              2
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 10,
+            "left": [
+              2,
+              3,
+              2
+            ],
+            "right": [
+              2,
+              2,
+              2
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 11,
+            "left": [
+              2,
+              2,
+              3
+            ],
+            "right": [
+              2,
+              3,
+              3
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 12,
+            "left": [
+              3,
+              3,
+              2
+            ],
+            "right": [
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 13,
+            "left": [
+              3,
+              2,
+              3
+            ],
+            "right": [
+              3,
+              2,
+              2
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 14,
+            "left": [
+              2,
+              3,
+              3
+            ],
+            "right": [
+              2,
+              3,
+              2
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 15,
+            "left": [
+              2,
+              2,
+              2
+            ],
+            "right": [
+              2,
+              2,
+              3
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 16,
+            "left": [
+              3,
+              3,
+              2
+            ],
+            "right": [
+              3,
+              2,
+              2
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 17,
+            "left": [
+              3,
+              2,
+              3
+            ],
+            "right": [
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 18,
+            "left": [
+              2,
+              3,
+              3
+            ],
+            "right": [
+              2,
+              2,
+              3
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 19,
+            "left": [
+              2,
+              2,
+              2
+            ],
+            "right": [
+              2,
+              3,
+              2
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 20,
+            "left": [
+              3,
+              3,
+              3
+            ],
+            "right": [
+              3,
+              3,
+              2
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 21,
+            "left": [
+              3,
+              2,
+              2
+            ],
+            "right": [
+              3,
+              2,
+              3
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 22,
+            "left": [
+              2,
+              3,
+              2
+            ],
+            "right": [
+              2,
+              3,
+              3
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 23,
+            "left": [
+              2,
+              2,
+              3
+            ],
+            "right": [
+              2,
+              2,
+              2
+            ]
+          }
+        ],
+        "length": 6,
+        "periodic_wrap_edges": 0,
+        "q_receiver_zero_derivative": 0.0,
+        "q_sign_cancellation_residual": 0.0,
+        "response_derivative_finite_difference_residual": 7.053663209077854e-13,
+        "same_q_response_derivative": -0.02753784333827076,
+        "source_cell": [
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "boundary_preserved": true,
+        "coframe_link": [
+          [
+            3,
+            3,
+            3
+          ],
+          [
+            4,
+            3,
+            3
+          ]
+        ],
+        "constant_field_Ward_residual": 0.0,
+        "deleted_K_signal": 0.027616981298103905,
+        "finite_difference_K_residual": 5.4334766288190513e-11,
+        "frame_rows": [
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 0,
+            "left": [
+              3,
+              3,
+              3
+            ],
+            "right": [
+              2,
+              3,
+              3
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 1,
+            "left": [
+              3,
+              3,
+              3
+            ],
+            "right": [
+              2,
+              3,
+              3
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 2,
+            "left": [
+              3,
+              3,
+              3
+            ],
+            "right": [
+              4,
+              3,
+              3
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 3,
+            "left": [
+              3,
+              3,
+              3
+            ],
+            "right": [
+              4,
+              3,
+              3
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 4,
+            "left": [
+              3,
+              3,
+              3
+            ],
+            "right": [
+              2,
+              3,
+              3
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 5,
+            "left": [
+              3,
+              3,
+              3
+            ],
+            "right": [
+              2,
+              3,
+              3
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 6,
+            "left": [
+              3,
+              3,
+              3
+            ],
+            "right": [
+              4,
+              3,
+              3
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 7,
+            "left": [
+              3,
+              3,
+              3
+            ],
+            "right": [
+              4,
+              3,
+              3
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 8,
+            "left": [
+              3,
+              3,
+              3
+            ],
+            "right": [
+              3,
+              2,
+              3
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 9,
+            "left": [
+              3,
+              3,
+              3
+            ],
+            "right": [
+              3,
+              4,
+              3
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 10,
+            "left": [
+              3,
+              3,
+              3
+            ],
+            "right": [
+              3,
+              2,
+              3
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 11,
+            "left": [
+              3,
+              3,
+              3
+            ],
+            "right": [
+              3,
+              4,
+              3
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 12,
+            "left": [
+              3,
+              3,
+              3
+            ],
+            "right": [
+              3,
+              3,
+              4
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 13,
+            "left": [
+              3,
+              3,
+              3
+            ],
+            "right": [
+              3,
+              3,
+              2
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 14,
+            "left": [
+              3,
+              3,
+              3
+            ],
+            "right": [
+              3,
+              3,
+              2
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 15,
+            "left": [
+              3,
+              3,
+              3
+            ],
+            "right": [
+              3,
+              3,
+              4
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 16,
+            "left": [
+              3,
+              3,
+              3
+            ],
+            "right": [
+              3,
+              2,
+              3
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 17,
+            "left": [
+              3,
+              3,
+              3
+            ],
+            "right": [
+              3,
+              4,
+              3
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 18,
+            "left": [
+              3,
+              3,
+              3
+            ],
+            "right": [
+              3,
+              2,
+              3
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 19,
+            "left": [
+              3,
+              3,
+              3
+            ],
+            "right": [
+              3,
+              4,
+              3
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 20,
+            "left": [
+              3,
+              3,
+              3
+            ],
+            "right": [
+              3,
+              3,
+              2
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 21,
+            "left": [
+              3,
+              3,
+              3
+            ],
+            "right": [
+              3,
+              3,
+              4
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 22,
+            "left": [
+              3,
+              3,
+              3
+            ],
+            "right": [
+              3,
+              3,
+              4
+            ]
+          },
+          {
+            "K_covariance_residual": 0.0,
+            "frame": 23,
+            "left": [
+              3,
+              3,
+              3
+            ],
+            "right": [
+              3,
+              3,
+              2
+            ]
+          }
+        ],
+        "length": 7,
+        "periodic_wrap_edges": 0,
+        "q_receiver_zero_derivative": 0.0,
+        "q_sign_cancellation_residual": 0.0,
+        "response_derivative_finite_difference_residual": 2.5232524403229206e-12,
+        "same_q_response_derivative": -0.027616981298103905,
+        "source_cell": [
+          3,
+          3,
+          3
+        ]
+      }
+    ]
+  },
+  "route_disposition": {
+    "A": "PASS_EXECUTED_PHYSICAL_M2_NUMBER_TO_OPEN_REVERSIBLE_RESPONSE__REAL_FIELD_CARRIER_SUPPLIED",
+    "B": "PASS_EXACT_FINITE_W17_MATTER_PHASE_AND_SAME_Q_RECEIVER__FULL_CUBE_QCA_OPEN",
+    "C": "PASS_OPEN_SCALAR_COFRAME_DERIVATIVE__NOT_REGGE_TENSOR"
+  },
+  "shared_obstruction_creates_axiom_pressure": false,
+  "six_wall_ledger": {
+    "C_int": "advance: the same q now composes physical M2 number insertion with receiver readout under an executed open update",
+    "C_local": "advance: source kick is local, open H is NN, finite phase support two and coframe K support two; full open field M2 QCA remains open",
+    "C_num": "advance: exact W17 phase/Fourier shift and receiver q^2 arithmetic plus finite-step residuals; continuum/units remain open",
+    "C_ref": "advance: arbitrary host source texture removed; matter snapshot, receiver, q and carrier/ramp references remain explicit",
+    "C_source": "advance: source datum is accepted physical M2 number/current rather than a host profile; its genesis and any physical source/stress interpretation remain open",
+    "C_wrap": "advance only for exact W17 modular inverse and alias accounting; no wrapped phase/energy claim"
+  },
+  "strongest_constructive_result": "the accepted six-rail physical M2 occupation at one local cell directly controls the source kick of an executed reversible open L3/L6/L7 response update, while the identical declared q controls receiver readout; sign cancels, response scales q^2, qrec=0 and source deletion null exactly, continuity and open coframe Ward identities pass, and a finite W17 local phase/receiver version is exact",
+  "supplied_structure_inventory": {
+    "coupling": "one declared dimensionless q, same object at both arms",
+    "coupling_magnitude_or_units_derived": false,
+    "field_blank_genesis_derived": false,
+    "field_carriers": "Route A/C real open Dirichlet Q/P arrays; Route B W17 unary rails",
+    "grids": "open L3/L6/L7",
+    "host_Cycle576_texture": false,
+    "matter_snapshot_genesis_derived": false,
+    "physical_matter": "six radius-four M2 occupancy rails per coarse cell; source word supplied at one cell",
+    "physical_source_stress_gravity_identification": false,
+    "ramp": "quartic 4u^3-3u^4, dt=0.02, hold=12, tau ladder 20/40/80/160",
+    "receiver": "one supplied neighboring open cell and one W17 accumulator"
+  },
+  "target_contract": {
+    "allowed_premises": "byte/object-pinned Cycle591 unit current and continuity, Cycle607/609 finite-Weyl algebra, Cycle611 Ward/current, Cycle615 open flux, Cycle626 common-q comparator, Cycle656 physical even-CAR representation, Cycle679 physical occupation rails, and external commits 3fedc918/c4b31f/394c30e as read-only open evidence",
+    "completion_witness": "one executed finite-step reversible open leapfrog whose kick reads physical M2 occupation, one exact finite W17 matter-controlled phase/Fourier source and same-q receiver accumulator, and one boundary-preserving open link derivative, each with explicit deletion, covariance, held-size and supplied-structure receipts",
+    "forbidden_weakenings": "no Cycle576 host texture or source profile may enter the source; no supplied scalar array may be renamed physical matter; no q_src/q_rec equality inferred after separate fitting; no periodic operator may stand in for the open coframe derivative; no phase called energy, generator called rate, response called gravity/stress/source law, pointer called Record, or finite schedule called time",
+    "outcomes_not_closure": "reusing a host texture; an expectation array with no physical rail source; a stationary q squared identity without an executed update; a finite-Weyl phase with no receiver arm; periodic Bloch K relabelled open; route-specific failure promoted to a shared obstruction or axiom pressure",
+    "quantifiers_domain": "open L3 train, L6 held and L7 out-family cubes; one- and two-particle physical occupation words with N<=3 controls; q signs and q magnitudes; q_rec=0 and decoupled arms; all 24 proper-cubic frames and all 576 products",
+    "required_edge_cases": "matter-source deletion; receiver q=0 with nonzero bare field; q sign cancellation, q squared scaling and decoupled sign flip; local continuity and contact-number commutation; inverse/symplectic/leakage/lawful-domain controls; open boundary/no-wrap; coframe finite difference and Ward rows; support/locality; all24/all576; L3/L6/L7; exact inventory of matter, carrier, receiver, ramp and grids",
+    "target_statement": "replace the host source profile in the same-coupling finite response update by a local source computed only from accepted six-rail physical M2 matter occupation/current, with the identical declared q entering source insertion and receiver readout; independently test a finite Weyl phase carrier and an open real-space coframe derivative"
+  },
+  "target_freeze": {
+    "contract_sha256": "84a4ab98029355a6bc86cbc8a4acb8404ebadb0c6817158666d06eefc902e9ba",
+    "first_evidence_load_line": 84,
+    "frozen_before_evidence": true,
+    "pass": true,
+    "target_line": 6
+  },
+  "tests_failed": 0,
+  "tests_passed": 10
+}

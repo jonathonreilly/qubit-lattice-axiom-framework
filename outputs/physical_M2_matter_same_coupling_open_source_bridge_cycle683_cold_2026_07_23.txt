@@ -1,0 +1,12 @@
+PASS target frozen before evidence :: {'target_line': 6, 'first_evidence_load_line': 84, 'frozen_before_evidence': True, 'contract_sha256': '84a4ab98029355a6bc86cbc8a4acb8404ebadb0c6817158666d06eefc902e9ba', 'pass': True}
+PASS specified cycles and external open-evidence objects pinned :: {'3fedc918': '3fedc918e318359567f76bc066255271dc8d8046', 'c4b31f': 'c4b31f0d87be8bf9058b0d159121f4c0833e6247', '394c30e': '394c30e1c12d40f65b6ce6456d9b026106d0bdda'}
+PASS six physical M2 rails per cell are injective and all24/all576 covariant :: {'sizes': [3, 6, 7], 'group_failures': 0}
+PASS physical occupation current obeys exact open sitewise continuity :: {'residual': 0.0, 'frame_failures': 0}
+PASS duplicate occupation of one physical M2 rail is rejected :: True
+PASS Route A physical-number controlled reversible open leapfrog :: {'inverse': 3.5981126591678306e-15, 'reversal': 3.268502925814642e-15, 'sign': 0.0, 'q2': 6.661338147750939e-16, 'covariance': 2.7755575615628914e-17}
+PASS Route B finite W17 local phase and same-q receiver accumulator :: {'phase': 1.970028334147078e-14, 'inverse_failures': 0, 'q2_failures': 0}
+PASS Route C boundary-preserving open real-space coframe derivative :: {'finite_difference': 5.4334766288190513e-11, 'Ward': 0.0, 'response': 2.5232524403229206e-12, 'all576': 0}
+PASS source deletion and q_receiver=0 controls fire without bare-field contact leakage :: {'A_source_deleted': 0.0, 'A_qrec0': 0.0, 'A_bare': 0.04901935126833648, 'B_source_failures': 0}
+PASS full N1-N8 with no shared obstruction or axiom pressure :: {'W_field_M2_update': 'Route A/C execute a finite real open carrier; Route B gives a finite physical W17 local phase and one-link transfer, but one full open field update is not lowered to an M2 QCA', 'W_fixture_genesis': 'the matter snapshot, receiver cell, blank carrier, ramp and open grid are explicit inputs rather than outputs of one autonomous law', 'W_coupling_identification': 'one dimensionless q is wired consistently and its algebra is predictive, but its magnitude, units and any physical source/stress interpretation are not selected'}
+RECEIPT outputs/physical_M2_matter_same_coupling_open_source_bridge_cycle683_receipt_2026_07_23.json
+RESULT PASS tests 10 failed 0 elapsed 12.21314279094804

@@ -1,0 +1,1596 @@
+{
+  "Status": "PASS",
+  "TOE_dependency_ledger": {
+    "Born_probability_maturity_0_to_5": 2.2,
+    "causal_time_maturity_0_to_5": 2.4,
+    "dependency_change": "C_local, C_int and C_source advance through a live coherent matter-to-full-finite-field scheduled composition; no clock, Record, Born rule, stress or gravity identification is promoted",
+    "gravity_source_maturity_0_to_5": 2.2,
+    "inertia_matter_maturity_0_to_5": 2.6,
+    "operational_quantum_records_maturity_0_to_5": 3.5
+  },
+  "aggregate_summary": {
+    "all24_all576_pass": true,
+    "autonomous_joint_law_claimed": false,
+    "full_open_cube_QP_update": true,
+    "host_matter_snapshot_used": false,
+    "joint_inverse_pass": true,
+    "live_coin_stream_branches_used": true,
+    "one_hot_leakage_or_constraint_failures": 0,
+    "open_boundary_no_wrap": true,
+    "pass": true,
+    "q_sign_q_squared_qrec0_pass": true,
+    "same_q_source_and_receiver": true,
+    "scheduled_controller_supplied": true,
+    "sizes": [
+      3,
+      6,
+      7
+    ],
+    "source_deletion_pass": true
+  },
+  "audit": "unset",
+  "authority": "none",
+  "cycle": 687,
+  "date": "2026-07-23",
+  "elapsed_seconds": 6.259133667103015,
+  "evidence": {
+    "cycle656_status": "PASS",
+    "cycle683_status": "PASS",
+    "exact_git_object_ids_read": {
+      "28261bc1d92ad9e85f97d0101ee884daddc2063f:outputs/physical_M2_matter_same_coupling_open_source_bridge_cycle683_receipt_2026_07_23.json": "5debe4403b3c102ce0469679171a8b9f69fab131",
+      "28261bc1d92ad9e85f97d0101ee884daddc2063f:outputs/physical_term_complete_flat_link_update_cycle656_receipt_2026_07_23.json": "f1e7daf9eeba4f649fad07b589ae463812fd3f22",
+      "28261bc1d92ad9e85f97d0101ee884daddc2063f:scripts/common_matter_field_coin_family_cycle219_2026_07_16.py": "1e36cd2e9780b1bf7aa294e221a09167e40a01f2",
+      "28261bc1d92ad9e85f97d0101ee884daddc2063f:scripts/local_rough_puncture_odd_sector_cycle247_2026_07_17.py": "31ac286e49adac150d2d58595c01c889f2e1aa8d",
+      "28261bc1d92ad9e85f97d0101ee884daddc2063f:scripts/physical_M2_matter_same_coupling_open_source_bridge_cycle683_2026_07_23.py": "9b822f9c5adb3135252de33cba03563df0e77a3e",
+      "28261bc1d92ad9e85f97d0101ee884daddc2063f:scripts/physical_term_complete_flat_link_update_cycle656_2026_07_23.py": "c5be62a48ceaecba342032c4ffa26d68e72495df",
+      "28261bc1d92ad9e85f97d0101ee884daddc2063f:scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py": "0be8d83ec8ed874ff12e2092dc47121b8030a5bc",
+      "28261bc1d92ad9e85f97d0101ee884daddc2063f:scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py": "629cb69cb9b80e0a747cb20296b7f29f02628fba",
+      "394c30e1c12d40f65b6ce6456d9b026106d0bdda:outputs/physical_same_coupling_executed_field_update_response_tournament_receipt_2026_07_23.json": "119de03700a55b31c0bbc6a06f30ca6e074ac911",
+      "3fedc918e318359567f76bc066255271dc8d8046:outputs/physical_dynamical_metric_source_law_bridge_tournament_cycle576_receipt_2026_07_22.json": "822317e0228320d6f96a5e95414de88fb1523b68",
+      "c4b31f0d87be8bf9058b0d159121f4c0833e6247:outputs/physical_finite_reversible_norm_saturation_evaluator_tournament_receipt_2026_07_23.json": "398b773afb6ff397244f8d1dcd1148f1336a0bb6"
+    },
+    "external_code_or_artifacts_duplicated": false,
+    "external_commits_cherry_picked": false,
+    "external_open_evidence_commits": {
+      "394c30e": "394c30e1c12d40f65b6ce6456d9b026106d0bdda",
+      "3fedc918": "3fedc918e318359567f76bc066255271dc8d8046",
+      "c4b31f0": "c4b31f0d87be8bf9058b0d159121f4c0833e6247"
+    },
+    "observed": {
+      "28261bc1d92ad9e85f97d0101ee884daddc2063f:outputs/physical_M2_matter_same_coupling_open_source_bridge_cycle683_receipt_2026_07_23.json": "ba28d21962db07ae90bedd978b610290a1cb8d74012bfeeeb553904eb8a77fd6",
+      "28261bc1d92ad9e85f97d0101ee884daddc2063f:outputs/physical_term_complete_flat_link_update_cycle656_receipt_2026_07_23.json": "a97cf4d906b8d1f9e5dcfccb4d8b8c30dcfd3a0fa36c5371e9d2bc8a6f72315c",
+      "28261bc1d92ad9e85f97d0101ee884daddc2063f:scripts/common_matter_field_coin_family_cycle219_2026_07_16.py": "ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a",
+      "28261bc1d92ad9e85f97d0101ee884daddc2063f:scripts/local_rough_puncture_odd_sector_cycle247_2026_07_17.py": "10f5cf027c76f5a0a3b1d3dbaa6cb0e6d418932c84553f0cca303d3f21742519",
+      "28261bc1d92ad9e85f97d0101ee884daddc2063f:scripts/physical_M2_matter_same_coupling_open_source_bridge_cycle683_2026_07_23.py": "b3470294d1d096e2389ed09a22c35366511f8c184bb57f2e69a83ad606bc1331",
+      "28261bc1d92ad9e85f97d0101ee884daddc2063f:scripts/physical_term_complete_flat_link_update_cycle656_2026_07_23.py": "9c10b91f9028c341b431de9489c100975991cd3a4e8651c2482a10d4bfe6b1f9",
+      "28261bc1d92ad9e85f97d0101ee884daddc2063f:scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py": "c410b754d4e984f6ee5ccbc7c5a52e776c50c91c4daa12d798044f104cc7435b",
+      "28261bc1d92ad9e85f97d0101ee884daddc2063f:scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py": "b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae",
+      "394c30e1c12d40f65b6ce6456d9b026106d0bdda:outputs/physical_same_coupling_executed_field_update_response_tournament_receipt_2026_07_23.json": "da75185e5833721d467b98f26ae49e1f7aef47677aaf1c2c17f5a15d45cd3712",
+      "3fedc918e318359567f76bc066255271dc8d8046:outputs/physical_dynamical_metric_source_law_bridge_tournament_cycle576_receipt_2026_07_22.json": "06456c1443f5464949f40d81e9f1c6316b3e4e8405415b5b0035e39d4b88c3bd",
+      "c4b31f0d87be8bf9058b0d159121f4c0833e6247:outputs/physical_finite_reversible_norm_saturation_evaluator_tournament_receipt_2026_07_23.json": "bfcd5ed10f3f61ba60c0259b6a813dcfb28009385b1e2c1d8121100376c7e485"
+    },
+    "pass": true,
+    "pins": {
+      "28261bc1d92ad9e85f97d0101ee884daddc2063f:outputs/physical_M2_matter_same_coupling_open_source_bridge_cycle683_receipt_2026_07_23.json": "ba28d21962db07ae90bedd978b610290a1cb8d74012bfeeeb553904eb8a77fd6",
+      "28261bc1d92ad9e85f97d0101ee884daddc2063f:outputs/physical_term_complete_flat_link_update_cycle656_receipt_2026_07_23.json": "a97cf4d906b8d1f9e5dcfccb4d8b8c30dcfd3a0fa36c5371e9d2bc8a6f72315c",
+      "28261bc1d92ad9e85f97d0101ee884daddc2063f:scripts/common_matter_field_coin_family_cycle219_2026_07_16.py": "ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a",
+      "28261bc1d92ad9e85f97d0101ee884daddc2063f:scripts/local_rough_puncture_odd_sector_cycle247_2026_07_17.py": "10f5cf027c76f5a0a3b1d3dbaa6cb0e6d418932c84553f0cca303d3f21742519",
+      "28261bc1d92ad9e85f97d0101ee884daddc2063f:scripts/physical_M2_matter_same_coupling_open_source_bridge_cycle683_2026_07_23.py": "b3470294d1d096e2389ed09a22c35366511f8c184bb57f2e69a83ad606bc1331",
+      "28261bc1d92ad9e85f97d0101ee884daddc2063f:scripts/physical_term_complete_flat_link_update_cycle656_2026_07_23.py": "9c10b91f9028c341b431de9489c100975991cd3a4e8651c2482a10d4bfe6b1f9",
+      "28261bc1d92ad9e85f97d0101ee884daddc2063f:scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py": "c410b754d4e984f6ee5ccbc7c5a52e776c50c91c4daa12d798044f104cc7435b",
+      "28261bc1d92ad9e85f97d0101ee884daddc2063f:scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py": "b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae",
+      "394c30e1c12d40f65b6ce6456d9b026106d0bdda:outputs/physical_same_coupling_executed_field_update_response_tournament_receipt_2026_07_23.json": "da75185e5833721d467b98f26ae49e1f7aef47677aaf1c2c17f5a15d45cd3712",
+      "3fedc918e318359567f76bc066255271dc8d8046:outputs/physical_dynamical_metric_source_law_bridge_tournament_cycle576_receipt_2026_07_22.json": "06456c1443f5464949f40d81e9f1c6316b3e4e8405415b5b0035e39d4b88c3bd",
+      "c4b31f0d87be8bf9058b0d159121f4c0833e6247:outputs/physical_finite_reversible_norm_saturation_evaluator_tournament_receipt_2026_07_23.json": "bfcd5ed10f3f61ba60c0259b6a813dcfb28009385b1e2c1d8121100376c7e485"
+    },
+    "shore": "28261bc1d92ad9e85f97d0101ee884daddc2063f",
+    "working_tree_bytes_used_as_scientific_premise": false
+  },
+  "exact_tests_and_residuals": {
+    "all24_response_failures": 0,
+    "all576_group_failures": 0,
+    "coframe_difference_failures": 0,
+    "coin_all24": 0.0,
+    "coin_unitarity": 1.2678428887764673e-15,
+    "encoded_matter_source_intertwiner_failures": 0,
+    "field_inverse_failures": 0,
+    "joint_matter_inverse_amplitude": 5.619512403730799e-16,
+    "mass_fixture": 5.551115123125783e-17,
+    "matter_continuity": 0.0,
+    "matter_inverse_stream_failures": 0,
+    "minimum_link_deletion_signal": 0.6454969604081238,
+    "modular_inverse_failures": 0,
+    "one_hot_constraint_failures": 0,
+    "open_Ward_failures": 0,
+    "opposite_sign_failures": 0,
+    "q_sign_failures": 0,
+    "q_squared_failures": 0,
+    "qrec0_failures": 0,
+    "source_deletion_failures": 0
+  },
+  "external_read_only_comparison": {
+    "cherry_picked": false,
+    "code_duplicated": false,
+    "pass": true,
+    "rows": [
+      {
+        "PR": 5564,
+        "bounded_use": "read-only Regge/source-chain contrast",
+        "commit": "3fedc918e318359567f76bc066255271dc8d8046",
+        "nonduplication": "Cycle687 uses a finite W17 open Q/P carrier and live matter branches, not the Cycle576 real Regge/static texture chain",
+        "status": true
+      },
+      {
+        "PR": 5565,
+        "bounded_use": "read-only finite reversible evaluator contrast",
+        "commit": "c4b31f0d87be8bf9058b0d159121f4c0833e6247",
+        "nonduplication": "Cycle687 constructs a full open Q/P propagation update and same-q receiver, not a norm/saturation evaluator",
+        "status": true
+      },
+      {
+        "PR": 5566,
+        "bounded_use": "read-only executed same-coupling comparator",
+        "commit": "394c30e1c12d40f65b6ce6456d9b026106d0bdda",
+        "nonduplication": "Cycle687 replaces its host/static source side by one coherent live Cycle219/230 matter tick and lowers the whole W17 open cube",
+        "status": true
+      }
+    ]
+  },
+  "finite_open_W17_field_QCA": {
+    "inverse_field_failures": 0,
+    "inverse_matter_stream_failures": 0,
+    "joint_matter_inverse_amplitude_residual": 5.619512403730799e-16,
+    "minimum_drift_deletion_signal": 1.1842954103316774,
+    "minimum_matter_coin_deletion_signal": 1.0795580390846629,
+    "minimum_nonzero_bare_field_registers_at_qrec0": 17,
+    "minimum_receiver_distribution_link_deletion_signal": 0.6454969604081238,
+    "minimum_stream_deletion_signal": 1.1842954103316774,
+    "opposite_receiver_sign_failures": 0,
+    "pass": true,
+    "q_receiver_zero_failures": 0,
+    "q_sign_failures": 0,
+    "q_squared_failures": 0,
+    "same_q_identity": "Q and P are linear in q_source over F17; R adds q_receiver Q, hence simultaneous q sign cancels and q=2 multiplies R by four",
+    "size_rows": [
+      {
+        "branch_response_labels_q1": [
+          13,
+          9,
+          1,
+          1,
+          1,
+          1
+        ],
+        "branch_response_labels_q2": [
+          1,
+          2,
+          4,
+          4,
+          4,
+          4
+        ],
+        "branch_response_labels_qminus1": [
+          13,
+          9,
+          1,
+          1,
+          1,
+          1
+        ],
+        "edge_colors": 6,
+        "field_microsteps_per_matter_tick": 3,
+        "length": 3,
+        "minimum_nonzero_bare_register_count_qrec0": 38,
+        "open_links": 54,
+        "receiver_cell": [
+          2,
+          1,
+          1
+        ],
+        "receiver_distribution_q1": [
+          0.0,
+          0.4444444444444447,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.43700052596537853,
+          0.0,
+          0.0,
+          0.0,
+          0.11855502959017683,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sites": 27,
+        "split": "construction",
+        "target_link_deletion_index": 32
+      },
+      {
+        "branch_response_labels_q1": [
+          7,
+          9,
+          1,
+          1,
+          1,
+          1
+        ],
+        "branch_response_labels_q2": [
+          11,
+          2,
+          4,
+          4,
+          4,
+          4
+        ],
+        "branch_response_labels_qminus1": [
+          7,
+          9,
+          1,
+          1,
+          1,
+          1
+        ],
+        "edge_colors": 6,
+        "field_microsteps_per_matter_tick": 3,
+        "length": 6,
+        "minimum_nonzero_bare_register_count_qrec0": 75,
+        "open_links": 540,
+        "receiver_cell": [
+          3,
+          2,
+          2
+        ],
+        "receiver_distribution_q1": [
+          0.0,
+          0.4444444444444447,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.11855502959017683,
+          0.0,
+          0.43700052596537853,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sites": 216,
+        "split": "train",
+        "target_link_deletion_index": 232
+      },
+      {
+        "branch_response_labels_q1": [
+          7,
+          9,
+          1,
+          1,
+          1,
+          1
+        ],
+        "branch_response_labels_q2": [
+          11,
+          2,
+          4,
+          4,
+          4,
+          4
+        ],
+        "branch_response_labels_qminus1": [
+          7,
+          9,
+          1,
+          1,
+          1,
+          1
+        ],
+        "edge_colors": 6,
+        "field_microsteps_per_matter_tick": 3,
+        "length": 7,
+        "minimum_nonzero_bare_register_count_qrec0": 87,
+        "open_links": 882,
+        "receiver_cell": [
+          4,
+          3,
+          3
+        ],
+        "receiver_distribution_q1": [
+          0.0,
+          0.4444444444444447,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.11855502959017683,
+          0.0,
+          0.43700052596537853,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sites": 343,
+        "split": "held-out-no-refit",
+        "target_link_deletion_index": 468
+      }
+    ],
+    "source_deletion_failures": 0
+  },
+  "highest_honest_terminal": "exact scheduled locally constrained finite-M2 matter/field composition with live coherent source and same-q response; not an autonomous joint law, reference genesis, physical time, energy, stress, source law, gravity or Record",
+  "live_Cycle656_matter": {
+    "analytic_mass": 0.4534056541748852,
+    "beta": -0.3,
+    "coin_unitarity_residual": 1.2678428887764673e-15,
+    "contact_number_commutator": "exact zero; the Cycle230 contact is diagonal in occupation and is identity on this N=1 fixture",
+    "live_update": "actual beta=-0.3 proper-cubic coin followed by one six-direction stream; source is read after the stream",
+    "mass_fixture_residual": 5.551115123125783e-17,
+    "maximum_all24_coin_covariance_residual": 0.0,
+    "maximum_all24_live_branch_transport_residual": 0.0,
+    "maximum_local_continuity_residual": 0.0,
+    "pass": true,
+    "rest_phase": 0.15113521805829508,
+    "rows": [
+      {
+        "branch_probabilities": [
+          0.11855502959017683,
+          0.43700052596537853,
+          0.11111111111111117,
+          0.11111111111111117,
+          0.11111111111111117,
+          0.11111111111111117
+        ],
+        "continuity_residual": 0.0,
+        "length": 3,
+        "origin": [
+          1,
+          1,
+          1
+        ],
+        "source_snapshot_supplied": false,
+        "split": "construction"
+      },
+      {
+        "branch_probabilities": [
+          0.11855502959017683,
+          0.43700052596537853,
+          0.11111111111111117,
+          0.11111111111111117,
+          0.11111111111111117,
+          0.11111111111111117
+        ],
+        "continuity_residual": 0.0,
+        "length": 6,
+        "origin": [
+          2,
+          2,
+          2
+        ],
+        "source_snapshot_supplied": false,
+        "split": "train"
+      },
+      {
+        "branch_probabilities": [
+          0.11855502959017683,
+          0.43700052596537853,
+          0.11111111111111117,
+          0.11111111111111117,
+          0.11111111111111117,
+          0.11111111111111117
+        ],
+        "continuity_residual": 0.0,
+        "length": 7,
+        "origin": [
+          3,
+          3,
+          3
+        ],
+        "source_snapshot_supplied": false,
+        "split": "held-out-no-refit"
+      }
+    ]
+  },
+  "maximum_RSS_bytes": 43188224,
+  "no_go_discipline": {
+    "N1_negative_threshold_met": false,
+    "N1_normalized_families": [
+      {
+        "family": "coherent live matter plus full finite open field",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "number-controlled reversible shears",
+        "object_formulation": "Cycle219/230 one-particle branches composed with W17 Q/P/receiver words",
+        "status": "PASS_SCHEDULED",
+        "terminal_obligation": "live source, inverse and same-q response"
+      },
+      {
+        "family": "unary local gauge/auxiliary lowering",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "controlled rail transpositions",
+        "object_formulation": "17 M2 rails per finite digit plus one-hot checks",
+        "status": "PASS_SCHEDULED",
+        "terminal_obligation": "bounded physical support and leakage control"
+      },
+      {
+        "family": "staggered finite-color execution",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "support-disjoint color layers",
+        "object_formulation": "Cycle656 seven-color matter order plus six-color open-link order",
+        "status": "PASS_WITH_SUPPLIED_CONTROLLER",
+        "terminal_obligation": "finite local controller"
+      },
+      {
+        "family": "autonomous regenerative joint law",
+        "honesty_marker": "OPEN / NOT ATTEMPTED",
+        "mechanism_invariant": "returned local clock/work",
+        "object_formulation": "matter, field, receiver, clock and work in one local state",
+        "status": "not counted toward a negative",
+        "terminal_obligation": "no supplied layer order or blank/genesis"
+      }
+    ],
+    "N1_qualifying_attempts_for_negative": 3,
+    "N1_required_for_negative": 5,
+    "N2_collapsed_walls": {
+      "W_controller": "Cycle656 30-family/58-layer matter order and the finite W17 shear order remain supplied",
+      "W_genesis": "matter input mode, blank field/receiver, beta, q, receiver and open cube remain supplied",
+      "W_identification": "no units, continuum map, stress/source-law or gravity interpretation is selected"
+    },
+    "N2_pairwise_wall_independence": [
+      {
+        "independent": true,
+        "left": "W_controller",
+        "reason": "execution order, reference genesis and empirical interpretation are distinct obligations",
+        "right": "W_genesis"
+      },
+      {
+        "independent": true,
+        "left": "W_controller",
+        "reason": "execution order, reference genesis and empirical interpretation are distinct obligations",
+        "right": "W_identification"
+      },
+      {
+        "independent": true,
+        "left": "W_genesis",
+        "reason": "execution order, reference genesis and empirical interpretation are distinct obligations",
+        "right": "W_identification"
+      }
+    ],
+    "N3_hidden_wall_scan": [
+      {
+        "classification": "explicit inherited representation supply",
+        "condition": "Cycle656 graph/link encoder and gauge section"
+      },
+      {
+        "classification": "explicit matter fixture supply",
+        "condition": "beta=-0.3 and input direction"
+      },
+      {
+        "classification": "explicit field/controller supply",
+        "condition": "W17, three field microsteps and receiver"
+      },
+      {
+        "classification": "explicit genesis/reference supply",
+        "condition": "blank one-hot Q/P/R rails"
+      },
+      {
+        "classification": "explicit candidate coupling supply",
+        "condition": "q in both arms"
+      }
+    ],
+    "N4_residual_matching": [
+      {
+        "current_result": "live coin-stream number controls full open W17 field; host order remains",
+        "exact_match": true,
+        "prior_residual": "term-complete matter factors but no live field join and host factor order",
+        "witness": "Cycle656"
+      },
+      {
+        "current_result": "actual live matter tick and full-cube W17 Q/P update",
+        "exact_match": true,
+        "prior_residual": "static matter snapshot and only one-link finite carrier",
+        "witness": "Cycle683"
+      },
+      {
+        "current_result": "coherent live physical-matter branch source; genesis still supplied",
+        "exact_match": true,
+        "prior_residual": "executed same coupling with host/static source side",
+        "witness": "external #5566"
+      }
+    ],
+    "N5_rhetoric_audit": [
+      {
+        "lattice_wide": "controller/genesis open",
+        "per_block": "L3/L6/L7 open cubes",
+        "per_element": "field support three, encoded matter-source support eight, inherited matter-factor support sixteen",
+        "per_mode": "six matter directions and W17 digits",
+        "per_site": "59 M2 plus receiver",
+        "phrase": "scheduled physical composition is not an autonomous law"
+      },
+      {
+        "lattice_wide": "units and continuum identification open",
+        "per_block": "same-q q-squared identity",
+        "per_element": "F17 labels",
+        "per_mode": "linear source and receiver shears",
+        "per_site": "Q/P/R digits",
+        "phrase": "modular response is not energy, stress or gravity"
+      },
+      {
+        "lattice_wide": "no occurrence/record law",
+        "per_block": "three supplied microsteps",
+        "per_element": "ordered reversible gates",
+        "per_mode": "no clock calibration",
+        "per_site": "local receiver rail",
+        "phrase": "finite schedule is not time and accumulator is not a Record"
+      }
+    ],
+    "N6_partial_closure_paths": [
+      {
+        "file": "scripts/physical_live_cycle656_matter_w17_open_field_qca_cycle687_2026_07_23.py",
+        "status": "EXECUTED POSITIVE",
+        "what_closes": "live matter to full finite open W17 scheduled QCA join"
+      },
+      {
+        "file": "scripts/physical_term_complete_flat_link_update_cycle656_2026_07_23.py",
+        "status": "PINNED POSITIVE",
+        "what_closes": "term-complete bounded matter factor presentation"
+      },
+      {
+        "file": "UNMATERIALIZED/autonomous_joint_matter_field_regenerative_controller_cycle_next.py",
+        "status": "OPEN",
+        "what_closes": "W_controller and part of W_genesis"
+      }
+    ],
+    "N6_primitive_registry_check": {
+      "registry_ref": "origin/main docs/audit/data/axiom_premise_nodes.json",
+      "statement": "no retained primitive is used to supply q, beta, blank/genesis, receiver, controller or physical interpretation; no missing primitive is promoted to a no-go"
+    },
+    "N7_steelman": {
+      "actionable_terminal": "one autonomous joint local rule with returned clock/work, arbitrary lawful inputs, inverse, all24/all576 and no host layer selector",
+      "argument": "A hostile reviewer should reject any shared-obstruction claim: add a returned finite clock/work band to the already bounded seven-color matter and six-color field schedules, preserve arbitrary Cycle656 holonomies, and prepare/uncompute blank W17 rails locally.",
+      "no_go_premature": true
+    },
+    "N8_cross_cycle_echo": [
+      {
+        "current_effect": "live current is reexecuted rather than supplied as a texture",
+        "cycle": 591,
+        "mechanism": "operational conserved occupation/current"
+      },
+      {
+        "current_effect": "expanded from one link to every Q/P/receiver register",
+        "cycle": 609,
+        "mechanism": "finite-Weyl modular lowering"
+      },
+      {
+        "current_effect": "composed with field under the still-supplied controller",
+        "cycle": 656,
+        "mechanism": "term-complete seven-color matter presentation"
+      },
+      {
+        "current_effect": "static snapshot and full-field finite carrier residuals retired",
+        "cycle": 683,
+        "mechanism": "physical matter same-q open response"
+      },
+      {
+        "current_effect": "live-source boundary strengthened without copying its engine",
+        "external_PR": 5566,
+        "mechanism": "executed same-coupling response"
+      }
+    ],
+    "axiom_pressure_claim": false,
+    "broad_no_go_claim": false,
+    "minimum_content_claim": false,
+    "negative_gate": "FAIL / DO NOT SHIP NEGATIVE",
+    "pass": true,
+    "shared_obstruction_claim": false,
+    "shared_route_independent_obstruction": false
+  },
+  "note_contract": {
+    "missing": [],
+    "pass": true,
+    "required": [
+      "authority: **none**",
+      "audit: **unset**",
+      "target frozen before evidence",
+      "live cycle656",
+      "w17",
+      "q/p",
+      "all 24",
+      "all 576",
+      "l3/l6/l7",
+      "source deletion",
+      "q_receiver=0",
+      "q squared",
+      "one-hot",
+      "open coframe ward",
+      "factor order",
+      "controller",
+      "supplied",
+      "not time",
+      "not energy",
+      "not a record",
+      "not gravity",
+      "#5564",
+      "#5565",
+      "#5566",
+      "n1 \u2014",
+      "n2 \u2014",
+      "n3 \u2014",
+      "n4 \u2014",
+      "n5 \u2014",
+      "n6 \u2014",
+      "n7 \u2014",
+      "n8 \u2014",
+      "fail / do not ship",
+      "no axiom pressure",
+      "optimal next campaign"
+    ]
+  },
+  "open_coframe_and_covariance": {
+    "all24_edge_color_transport": [
+      {
+        "frames": [
+          {
+            "color_permutation": [
+              1,
+              0,
+              3,
+              2,
+              4,
+              5
+            ],
+            "frame": 0
+          },
+          {
+            "color_permutation": [
+              1,
+              0,
+              5,
+              4,
+              3,
+              2
+            ],
+            "frame": 1
+          },
+          {
+            "color_permutation": [
+              1,
+              0,
+              4,
+              5,
+              2,
+              3
+            ],
+            "frame": 2
+          },
+          {
+            "color_permutation": [
+              1,
+              0,
+              2,
+              3,
+              5,
+              4
+            ],
+            "frame": 3
+          },
+          {
+            "color_permutation": [
+              3,
+              2,
+              1,
+              0,
+              5,
+              4
+            ],
+            "frame": 4
+          },
+          {
+            "color_permutation": [
+              4,
+              5,
+              1,
+              0,
+              3,
+              2
+            ],
+            "frame": 5
+          },
+          {
+            "color_permutation": [
+              5,
+              4,
+              1,
+              0,
+              2,
+              3
+            ],
+            "frame": 6
+          },
+          {
+            "color_permutation": [
+              2,
+              3,
+              1,
+              0,
+              4,
+              5
+            ],
+            "frame": 7
+          },
+          {
+            "color_permutation": [
+              3,
+              2,
+              4,
+              5,
+              1,
+              0
+            ],
+            "frame": 8
+          },
+          {
+            "color_permutation": [
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ],
+            "frame": 9
+          },
+          {
+            "color_permutation": [
+              4,
+              5,
+              2,
+              3,
+              1,
+              0
+            ],
+            "frame": 10
+          },
+          {
+            "color_permutation": [
+              2,
+              3,
+              5,
+              4,
+              1,
+              0
+            ],
+            "frame": 11
+          },
+          {
+            "color_permutation": [
+              3,
+              2,
+              5,
+              4,
+              0,
+              1
+            ],
+            "frame": 12
+          },
+          {
+            "color_permutation": [
+              4,
+              5,
+              3,
+              2,
+              0,
+              1
+            ],
+            "frame": 13
+          },
+          {
+            "color_permutation": [
+              5,
+              4,
+              2,
+              3,
+              0,
+              1
+            ],
+            "frame": 14
+          },
+          {
+            "color_permutation": [
+              2,
+              3,
+              4,
+              5,
+              0,
+              1
+            ],
+            "frame": 15
+          },
+          {
+            "color_permutation": [
+              3,
+              2,
+              0,
+              1,
+              4,
+              5
+            ],
+            "frame": 16
+          },
+          {
+            "color_permutation": [
+              5,
+              4,
+              0,
+              1,
+              3,
+              2
+            ],
+            "frame": 17
+          },
+          {
+            "color_permutation": [
+              4,
+              5,
+              0,
+              1,
+              2,
+              3
+            ],
+            "frame": 18
+          },
+          {
+            "color_permutation": [
+              2,
+              3,
+              0,
+              1,
+              5,
+              4
+            ],
+            "frame": 19
+          },
+          {
+            "color_permutation": [
+              0,
+              1,
+              3,
+              2,
+              5,
+              4
+            ],
+            "frame": 20
+          },
+          {
+            "color_permutation": [
+              0,
+              1,
+              4,
+              5,
+              3,
+              2
+            ],
+            "frame": 21
+          },
+          {
+            "color_permutation": [
+              0,
+              1,
+              5,
+              4,
+              2,
+              3
+            ],
+            "frame": 22
+          },
+          {
+            "color_permutation": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "frame": 23
+          }
+        ],
+        "length": 3
+      },
+      {
+        "frames": [
+          {
+            "color_permutation": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "frame": 0
+          },
+          {
+            "color_permutation": [
+              0,
+              1,
+              4,
+              5,
+              2,
+              3
+            ],
+            "frame": 1
+          },
+          {
+            "color_permutation": [
+              0,
+              1,
+              4,
+              5,
+              2,
+              3
+            ],
+            "frame": 2
+          },
+          {
+            "color_permutation": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "frame": 3
+          },
+          {
+            "color_permutation": [
+              2,
+              3,
+              0,
+              1,
+              4,
+              5
+            ],
+            "frame": 4
+          },
+          {
+            "color_permutation": [
+              4,
+              5,
+              0,
+              1,
+              2,
+              3
+            ],
+            "frame": 5
+          },
+          {
+            "color_permutation": [
+              4,
+              5,
+              0,
+              1,
+              2,
+              3
+            ],
+            "frame": 6
+          },
+          {
+            "color_permutation": [
+              2,
+              3,
+              0,
+              1,
+              4,
+              5
+            ],
+            "frame": 7
+          },
+          {
+            "color_permutation": [
+              2,
+              3,
+              4,
+              5,
+              0,
+              1
+            ],
+            "frame": 8
+          },
+          {
+            "color_permutation": [
+              4,
+              5,
+              2,
+              3,
+              0,
+              1
+            ],
+            "frame": 9
+          },
+          {
+            "color_permutation": [
+              4,
+              5,
+              2,
+              3,
+              0,
+              1
+            ],
+            "frame": 10
+          },
+          {
+            "color_permutation": [
+              2,
+              3,
+              4,
+              5,
+              0,
+              1
+            ],
+            "frame": 11
+          },
+          {
+            "color_permutation": [
+              2,
+              3,
+              4,
+              5,
+              0,
+              1
+            ],
+            "frame": 12
+          },
+          {
+            "color_permutation": [
+              4,
+              5,
+              2,
+              3,
+              0,
+              1
+            ],
+            "frame": 13
+          },
+          {
+            "color_permutation": [
+              4,
+              5,
+              2,
+              3,
+              0,
+              1
+            ],
+            "frame": 14
+          },
+          {
+            "color_permutation": [
+              2,
+              3,
+              4,
+              5,
+              0,
+              1
+            ],
+            "frame": 15
+          },
+          {
+            "color_permutation": [
+              2,
+              3,
+              0,
+              1,
+              4,
+              5
+            ],
+            "frame": 16
+          },
+          {
+            "color_permutation": [
+              4,
+              5,
+              0,
+              1,
+              2,
+              3
+            ],
+            "frame": 17
+          },
+          {
+            "color_permutation": [
+              4,
+              5,
+              0,
+              1,
+              2,
+              3
+            ],
+            "frame": 18
+          },
+          {
+            "color_permutation": [
+              2,
+              3,
+              0,
+              1,
+              4,
+              5
+            ],
+            "frame": 19
+          },
+          {
+            "color_permutation": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "frame": 20
+          },
+          {
+            "color_permutation": [
+              0,
+              1,
+              4,
+              5,
+              2,
+              3
+            ],
+            "frame": 21
+          },
+          {
+            "color_permutation": [
+              0,
+              1,
+              4,
+              5,
+              2,
+              3
+            ],
+            "frame": 22
+          },
+          {
+            "color_permutation": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "frame": 23
+          }
+        ],
+        "length": 6
+      },
+      {
+        "frames": [
+          {
+            "color_permutation": [
+              1,
+              0,
+              3,
+              2,
+              4,
+              5
+            ],
+            "frame": 0
+          },
+          {
+            "color_permutation": [
+              1,
+              0,
+              5,
+              4,
+              3,
+              2
+            ],
+            "frame": 1
+          },
+          {
+            "color_permutation": [
+              1,
+              0,
+              4,
+              5,
+              2,
+              3
+            ],
+            "frame": 2
+          },
+          {
+            "color_permutation": [
+              1,
+              0,
+              2,
+              3,
+              5,
+              4
+            ],
+            "frame": 3
+          },
+          {
+            "color_permutation": [
+              3,
+              2,
+              1,
+              0,
+              5,
+              4
+            ],
+            "frame": 4
+          },
+          {
+            "color_permutation": [
+              4,
+              5,
+              1,
+              0,
+              3,
+              2
+            ],
+            "frame": 5
+          },
+          {
+            "color_permutation": [
+              5,
+              4,
+              1,
+              0,
+              2,
+              3
+            ],
+            "frame": 6
+          },
+          {
+            "color_permutation": [
+              2,
+              3,
+              1,
+              0,
+              4,
+              5
+            ],
+            "frame": 7
+          },
+          {
+            "color_permutation": [
+              3,
+              2,
+              4,
+              5,
+              1,
+              0
+            ],
+            "frame": 8
+          },
+          {
+            "color_permutation": [
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ],
+            "frame": 9
+          },
+          {
+            "color_permutation": [
+              4,
+              5,
+              2,
+              3,
+              1,
+              0
+            ],
+            "frame": 10
+          },
+          {
+            "color_permutation": [
+              2,
+              3,
+              5,
+              4,
+              1,
+              0
+            ],
+            "frame": 11
+          },
+          {
+            "color_permutation": [
+              3,
+              2,
+              5,
+              4,
+              0,
+              1
+            ],
+            "frame": 12
+          },
+          {
+            "color_permutation": [
+              4,
+              5,
+              3,
+              2,
+              0,
+              1
+            ],
+            "frame": 13
+          },
+          {
+            "color_permutation": [
+              5,
+              4,
+              2,
+              3,
+              0,
+              1
+            ],
+            "frame": 14
+          },
+          {
+            "color_permutation": [
+              2,
+              3,
+              4,
+              5,
+              0,
+              1
+            ],
+            "frame": 15
+          },
+          {
+            "color_permutation": [
+              3,
+              2,
+              0,
+              1,
+              4,
+              5
+            ],
+            "frame": 16
+          },
+          {
+            "color_permutation": [
+              5,
+              4,
+              0,
+              1,
+              3,
+              2
+            ],
+            "frame": 17
+          },
+          {
+            "color_permutation": [
+              4,
+              5,
+              0,
+              1,
+              2,
+              3
+            ],
+            "frame": 18
+          },
+          {
+            "color_permutation": [
+              2,
+              3,
+              0,
+              1,
+              5,
+              4
+            ],
+            "frame": 19
+          },
+          {
+            "color_permutation": [
+              0,
+              1,
+              3,
+              2,
+              5,
+              4
+            ],
+            "frame": 20
+          },
+          {
+            "color_permutation": [
+              0,
+              1,
+              4,
+              5,
+              3,
+              2
+            ],
+            "frame": 21
+          },
+          {
+            "color_permutation": [
+              0,
+              1,
+              5,
+              4,
+              2,
+              3
+            ],
+            "frame": 22
+          },
+          {
+            "color_permutation": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "frame": 23
+          }
+        ],
+        "length": 7
+      }
+    ],
+    "all24_live_response_covariance_failures": 0,
+    "all24_open_edge_transport_failures": 0,
+    "all576_group_action_failures": 0,
+    "coframe_scope": "finite open scalar link-weight derivative of the W17 field kick; not a Regge tensor",
+    "constant_field_open_Ward_failures": 0,
+    "link_weight_finite_difference_failures": 0,
+    "open_boundary": true,
+    "ordered_frame_products": 576,
+    "pass": true,
+    "periodic_field_edges": 0,
+    "proper_cubic_frames": 24,
+    "size_rows": [
+      {
+        "constant_Q_Ward_failures": 0,
+        "length": 3,
+        "open_wrap_edges": 0,
+        "single_link_weight_finite_difference_failures": 0
+      },
+      {
+        "constant_Q_Ward_failures": 0,
+        "length": 6,
+        "open_wrap_edges": 0,
+        "single_link_weight_finite_difference_failures": 0
+      },
+      {
+        "constant_Q_Ward_failures": 0,
+        "length": 7,
+        "open_wrap_edges": 0,
+        "single_link_weight_finite_difference_failures": 0
+      }
+    ]
+  },
+  "optimal_next_campaign": "compile the bounded Cycle656 seven-color matter order and Cycle687 six-color/W17 field order into one returned regenerative local clock/work band, including arbitrary holonomies and local preparation/uncomputation of blank field/receiver rails; then re-run L3/L6/L7, all24/all576, inverse, deletion and lawful-input tests without a host layer selector",
+  "pass": true,
+  "physical_M2_lowering": {
+    "Cycle656_B_matter_occupation_Pauli_weight": 6,
+    "Cycle656_local_Gauss_and_plaquette_constraints_inherited": true,
+    "Cycle656_maximum_local_Gauss_constraint_support": 18,
+    "Cycle656_maximum_local_Gauss_fine_L1_diameter": 452,
+    "autonomous_clock_claimed": false,
+    "constant_overhead": true,
+    "exhaustive_modular_SUM_inverse_failures": 0,
+    "exhaustive_six_mode_encoded_source_intertwiner_failures": 0,
+    "field_P_M2_per_cell": 17,
+    "field_Q_M2_per_cell": 17,
+    "field_edge_color_palette": 6,
+    "field_factor_order_supplied": true,
+    "field_logical_shear_layers_per_microstep": 16,
+    "field_microsteps_per_matter_tick": 3,
+    "global_Jordan_Wigner_order": false,
+    "host_side_source_update": false,
+    "joint_M2_per_cell_excluding_receiver": 59,
+    "joint_intertwiner": {
+      "equation": "(E_Cycle656 tensor E_W17) G_joint_coarse = G_joint_physical (E_Cycle656 tensor E_W17)",
+      "factor_controller_supplied": true,
+      "pass": true,
+      "premises": "pinned Cycle656 exact complete-update intertwiner, exhaustive n_m=(1-B_m)/2 source controls, and exhaustive W17 shear inverse"
+    },
+    "lowering": "a W17 shift is sixteen rail transpositions; W17-controlled field SUMs have support at most three; the encoded matter source uses n_m=(1-B_m)/2 with Cycle656 weight-six B_m, so each B_m-parity-controlled rail transposition has support at most eight",
+    "malformed_label_rejected": true,
+    "matter_M2_per_cell_from_Cycle656": 25,
+    "matter_factor_order_supplied": true,
+    "matter_field_register_namespace_collisions": 0,
+    "maximum_Cycle656_B_controlled_field_transposition_support": 8,
+    "maximum_field_only_elementary_M2_support": 3,
+    "maximum_field_spatial_radius_cells": 1,
+    "maximum_inherited_Cycle656_matter_factor_fine_L1_diameter": 452,
+    "maximum_inherited_Cycle656_matter_factor_support": 16,
+    "maximum_joint_elementary_update_support": 16,
+    "maximum_site_overhead_with_receiver": 76,
+    "nonlocal_parity_service": false,
+    "one_hot_constraint": "(sum_r n_r-1)^2 independently for every Q, P and receiver W17 register",
+    "one_hot_constraint_locally_enforced": true,
+    "one_hot_constraint_violation_count": 0,
+    "pass": true,
+    "receiver_M2_at_selected_cell": 17
+  },
+  "prior_art_and_novelty_boundary": {
+    "broader_novelty_claimed": false,
+    "narrow_new_result": "their first exact composition with an actually live proper-cubic matter coin-stream branch state and a full locally lowered finite open W17 Q/P/receiver cube, including same-q, inverse, deletion, held-size and covariance receipts",
+    "pinned_internal_dependencies": [
+      "Cycle656 term-complete bounded matter presentation",
+      "Cycle683 physical-M2 same-q open-source bridge"
+    ],
+    "standard_or_bounded_prior_art": [
+      "finite Weyl/unary qudit arithmetic",
+      "controlled modular SUM",
+      "St\u00f6rmer-Verlet/KDK shear",
+      "open cubic edge coloring",
+      "Gauss/plaquette and one-hot constraints",
+      "proper-cubic covariance"
+    ]
+  },
+  "route_disposition": {
+    "A": "PASS_LIVE_COHERENT_CYCLE219_230_MATTER_TO_FULL_OPEN_W17_QP_RESPONSE",
+    "B": "PASS_LOCAL_ONE_HOT_W17_M2_LOWERING__CONSTRAINT_AND_INVERSE_EXACT",
+    "C": "PASS_SIX_COLOR_FIELD_PLUS_SEVEN_COLOR_MATTER_SCHEDULE__CONTROLLER_SUPPLIED_NOT_AUTONOMOUS"
+  },
+  "shared_obstruction_creates_axiom_pressure": false,
+  "six_wall_ledger": {
+    "C_int": "advance: live Cycle219/230 matter number now controls the complete finite field update and same-q receiver; the factor/controller law is still supplied",
+    "C_local": "advance: 25+34=59 M2/cell excluding the receiver; field support <=3, encoded matter-source support <=8, inherited matter-factor support <=16 and local Gauss support <=18; six field colors, Cycle656 seven matter colors, L3/L6/L7; autonomous clock/work remains open",
+    "C_num": "advance: the entire open field update is exact F17 arithmetic with exhaustive local inverse and q^2 controls; units, continuum and empirical normalization remain open",
+    "C_ref": "advance: the source snapshot is removed; beta, input mode, blank field/receiver, q, receiver, grids and both controllers remain supplied",
+    "C_source": "advance: the field source is the live post-stream local occupation branch, not a static host profile; genesis and any stress/source-law/gravity meaning remain open",
+    "C_wrap": "advance: every finite label remains lawful under exact modular inverse and the open field has no wrap edge; no wrapped phase/energy claim"
+  },
+  "strongest_constructive_result": "a genuine live beta=-0.3 Cycle219/230 one-particle coin-stream tick, inherited through the pinned Cycle656 bounded physical matter presentation, coherently controls every source kick of a complete open L3/L6/L7 W17 Q/P update; the same q controls a local receiver accumulator, giving exact branchwise q-sign cancellation, q-squared scaling, qrec=0 and source deletion, with exact inverse, one-hot M2 lowering, open Ward and all24/all576 receipts",
+  "supplied_structure_inventory": {
+    "Cycle656_30_family_up_to_58_layer_factor_order": true,
+    "Cycle656_58_layer_physical_factor_word_numerically_reexecuted_in_Cycle687": false,
+    "Cycle656_arbitrary_holonomy_inputs": true,
+    "Cycle656_complete_update_intertwiner_composed_from_pinned_object": true,
+    "Cycle656_encoder_gauge_section_and_25_M2_cell": true,
+    "W17_modulus_and_unary_digit_encoding": true,
+    "autonomous_clock_or_returned_work": false,
+    "beta_minus_0p3_and_input_direction": true,
+    "blank_Q_P_receiver_words": true,
+    "dimensionless_q": true,
+    "global_Jordan_Wigner_order": false,
+    "host_source_snapshot_or_texture": false,
+    "nonlocal_parity_service": false,
+    "occurrence_or_Record_identification": false,
+    "open_L3_L6_L7_cubes_and_receiver_cell": true,
+    "physical_source_stress_energy_gravity_identification": false,
+    "six_color_field_order_and_internal_W17_transposition_order": true,
+    "three_field_microsteps_per_matter_tick": true,
+    "units_or_continuum_identification": false
+  },
+  "target_contract": {
+    "allowed_premises": "exact Git-object bytes at Cycle683 commit 28261bc1 for Cycles210/219/230/656/683; external #5564-5566 commits are read-only comparisons; W17 modulus, blank Q/P/receiver words, beta, q, open cube, receiver, three field microsteps, Cycle656 30-family/58-layer order and the finite W17 controller are declared inputs",
+    "completion_witness": "one coherent one-particle coin-stream tick whose physical occupation branches control three complete open W17 KDK field microsteps and a same-q receiver accumulator, with exact modular response identities, inverse, deletion, Ward, locality, held-size and covariance receipts, plus an explicit scheduled-not-autonomous boundary",
+    "forbidden_weakenings": "no host matter texture, static matter snapshot, global parity service, Jordan-Wigner order, periodic field edge, host-updated source array, fitted source/receiver couplings, or autonomous-clock claim; no modular phase called physical energy, generator element called rate, schedule called time, response register called Record, or result called gravity/stress/source law",
+    "outcomes_not_closure": "a deterministic matter subword with no actual coin; replaying a static occupation word; one W17 link with no full cube update; logical modular arithmetic with no local M2 lowering; inherited Cycle656 factorization relabelled an autonomous law; route-specific residual relabelled shared obstruction or axiom pressure",
+    "quantifiers_domain": "open W17 field cubes L3 construction, L6 train, L7 held-out; beta=-0.3 one-particle Cycle219/230 matter tick; q=plus/minus one and plus/minus two; q_receiver zero and opposite-sign arms; all 24 proper-cubic frames and all 576 ordered products",
+    "required_edge_cases": "live local continuity; exact joint inverse; one-hot constraint preservation and malformed rejection; source, matter-coin, stream, link, drift and receiver deletion; q sign, q squared, opposite-sign receiver and q_receiver zero; nonzero bare field at q_receiver zero; open coframe Ward; mass fixture; L3/L6/L7; all24/all576; locally bounded support and constant overhead; exact supply inventory",
+    "target_statement": "compose the pinned Cycle656 term-complete seven-color physical matter presentation with a locally constrained finite W17 Q/P open-field update, driven by the live Cycle219/230 coin-stream occupation/current rather than a supplied source snapshot, and use the identical declared q at source and receiver"
+  },
+  "target_freeze": {
+    "contract_sha256": "2775dad003ad001bdacce569e0e86b2368f666a6b962b901e10f219281e1a81e",
+    "first_evidence_load_line": 97,
+    "frozen_before_evidence": true,
+    "pass": true,
+    "target_line": 11
+  },
+  "tests_failed": 0,
+  "tests_passed": 9
+}

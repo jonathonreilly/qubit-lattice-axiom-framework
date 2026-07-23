@@ -1,0 +1,11 @@
+PASS target frozen before evidence :: {'target_line': 11, 'first_evidence_load_line': 97, 'frozen_before_evidence': True, 'contract_sha256': '2775dad003ad001bdacce569e0e86b2368f666a6b962b901e10f219281e1a81e', 'pass': True}
+PASS Cycle656/Cycle683 and external #5564-5566 exact Git objects pinned read-only :: {'3fedc918': '3fedc918e318359567f76bc066255271dc8d8046', 'c4b31f0': 'c4b31f0d87be8bf9058b0d159121f4c0833e6247', '394c30e': '394c30e1c12d40f65b6ce6456d9b026106d0bdda'}
+PASS claim note contract :: ()
+PASS live beta=-0.3 coin-stream current, mass fixture and all24 covariance :: {'continuity': 0.0, 'mass': 5.551115123125783e-17, 'covariance': 0.0}
+PASS full open W17 Q/P update, same-q receiver, inverse and deletion controls :: {'inverse': 0, 'qsign': 0, 'q2': 0, 'link_delete': 0.6454969604081238}
+PASS locally constrained constant-overhead W17-to-M2 lowering and joint intertwiner :: {'M2_per_cell': 59, 'joint_support': 16, 'source_intertwiner': 0}
+PASS open coframe Ward and all24/all576 field covariance :: {'Ward': 0, 'response': 0, 'all576': 0}
+PASS external #5564-5566 compared read-only without duplication :: [5564, 5565, 5566]
+PASS full N1-N8; no shared obstruction or axiom pressure :: {'W_controller': 'Cycle656 30-family/58-layer matter order and the finite W17 shear order remain supplied', 'W_genesis': 'matter input mode, blank field/receiver, beta, q, receiver and open cube remain supplied', 'W_identification': 'no units, continuum map, stress/source-law or gravity interpretation is selected'}
+RECEIPT outputs/physical_live_cycle656_matter_w17_open_field_qca_cycle687_receipt_2026_07_23.json
+RESULT PASS tests 9 failed 0 elapsed 6.259133667103015

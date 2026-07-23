@@ -21,6 +21,92 @@ import orchestrate_audit_batch as batch
 import orchestrate_audit_loop as audit_loop
 
 
+class GeneratedProvenanceRecoveryTest(unittest.TestCase):
+    def setUp(self):
+        self._tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self._tmp.cleanup)
+        self.root = Path(self._tmp.name)
+        self.path = self.root / batch.LANE_CERTIFICATION_PATH
+        self.path.parent.mkdir(parents=True)
+        self.payload = {
+            "schema": "lane_certification_v2",
+            "repo_head": "a" * 40,
+            "lanes": [{"lane": "test", "blocking": []}],
+        }
+        self.path.write_text(
+            json.dumps(self.payload, indent=2, sort_keys=True) + "\n",
+            encoding="utf-8",
+        )
+        self._git("init", "-q", "-b", "main")
+        self._git("config", "user.email", "audit-test@example.invalid")
+        self._git("config", "user.name", "Audit Test")
+        self._git("add", batch.LANE_CERTIFICATION_PATH)
+        self._git("commit", "-q", "-m", "baseline")
+
+    def _git(self, *args: str) -> str:
+        return subprocess.run(
+            ["git", *args],
+            cwd=self.root,
+            check=True,
+            capture_output=True,
+            text=True,
+        ).stdout.strip()
+
+    def _write(self, payload: dict) -> None:
+        self.path.write_text(
+            json.dumps(payload, indent=2, sort_keys=True) + "\n",
+            encoding="utf-8",
+        )
+
+    def test_clean_main_recovers_current_head_only_refresh(self):
+        refreshed = dict(self.payload, repo_head=self._git("rev-parse", "HEAD"))
+        self._write(refreshed)
+
+        with mock.patch.object(batch, "REPO_ROOT", self.root):
+            error = batch.clean_main_error()
+
+        self.assertIsNone(error)
+        self.assertEqual(json.loads(self.path.read_text()), self.payload)
+        self.assertEqual(self._git("status", "--porcelain"), "")
+
+    def test_clean_main_recovers_obsolete_field_removal(self):
+        refreshed = dict(self.payload)
+        refreshed.pop("repo_head")
+        self._write(refreshed)
+
+        with mock.patch.object(batch, "REPO_ROOT", self.root):
+            error = batch.clean_main_error()
+
+        self.assertIsNone(error)
+        self.assertEqual(json.loads(self.path.read_text()), self.payload)
+        self.assertEqual(self._git("status", "--porcelain"), "")
+
+    def test_clean_main_refuses_payload_drift(self):
+        refreshed = dict(
+            self.payload,
+            repo_head=self._git("rev-parse", "HEAD"),
+            lanes=[{"lane": "test", "blocking": ["science-row"]}],
+        )
+        self._write(refreshed)
+
+        with mock.patch.object(batch, "REPO_ROOT", self.root):
+            error = batch.clean_main_error()
+
+        self.assertEqual(error, "working tree is not clean")
+        self.assertEqual(json.loads(self.path.read_text()), refreshed)
+
+    def test_clean_main_refuses_staged_provenance_drift(self):
+        refreshed = dict(self.payload, repo_head=self._git("rev-parse", "HEAD"))
+        self._write(refreshed)
+        self._git("add", batch.LANE_CERTIFICATION_PATH)
+
+        with mock.patch.object(batch, "REPO_ROOT", self.root):
+            error = batch.clean_main_error()
+
+        self.assertEqual(error, "working tree is not clean")
+        self.assertEqual(json.loads(self.path.read_text()), refreshed)
+
+
 def _args() -> argparse.Namespace:
     return argparse.Namespace(
         lane=None,

@@ -85,6 +85,7 @@ PACKET_COMPLETION_POLL_SECONDS = 15
 PACKET_COMPLETION_EXIT_GRACE_SECONDS = 10
 COMMAND_TERMINATION_GRACE_SECONDS = 5
 INHERITED_DRAIN_LOCK_FD_ENV = "AUDIT_DRAIN_LOCK_FD"
+LANE_CERTIFICATION_PATH = "docs/audit/data/lane_certification.json"
 
 
 def _repo_identity() -> str:
@@ -1130,6 +1131,74 @@ def finalize_worker(job: dict) -> tuple[dict | None, dict]:
     return envelope, result
 
 
+def recover_lane_certification_provenance_drift(
+    status_output: str,
+    *,
+    honor_cancel: bool = True,
+) -> bool:
+    """Restore exact legacy ``repo_head``-only drift at a sync boundary.
+
+    ``lane_certification.json`` used to embed the current commit. A pipeline
+    refresh therefore dirtied the file as soon as a later commit changed
+    ``HEAD``. This recovery is intentionally narrower than the audit generated
+    path allowlist: it accepts one unstaged modified file, verifies that the
+    parsed payload differs from ``HEAD`` only by the obsolete ``repo_head``
+    field, and refuses every staged, untracked, deleted, or content-bearing
+    change.
+    """
+    if status_output.splitlines() != [f" M {LANE_CERTIFICATION_PATH}"]:
+        return False
+
+    committed = sh(
+        ["git", "show", f"HEAD:{LANE_CERTIFICATION_PATH}"],
+        honor_cancel=honor_cancel,
+    )
+    if committed.returncode != 0:
+        return False
+    path = REPO_ROOT / LANE_CERTIFICATION_PATH
+    try:
+        working_text = path.read_text(encoding="utf-8")
+        committed_payload = json.loads(committed.stdout)
+        working_payload = json.loads(working_text)
+    except (OSError, json.JSONDecodeError):
+        return False
+    if not isinstance(committed_payload, dict) or not isinstance(
+        working_payload, dict
+    ):
+        return False
+    if committed_payload == working_payload:
+        return False
+
+    committed_without_head = dict(committed_payload)
+    working_without_head = dict(working_payload)
+    committed_without_head.pop("repo_head", None)
+    working_head = working_without_head.pop("repo_head", None)
+    if committed_without_head != working_without_head:
+        return False
+    if working_head is not None:
+        head = sh(["git", "rev-parse", "HEAD"], honor_cancel=honor_cancel)
+        if head.returncode != 0 or working_head != head.stdout.strip():
+            return False
+    try:
+        if path.read_text(encoding="utf-8") != working_text:
+            return False
+    except OSError:
+        return False
+
+    restored = sh(
+        ["git", "restore", "--worktree", "--", LANE_CERTIFICATION_PATH],
+        honor_cancel=honor_cancel,
+    )
+    if restored.returncode != 0:
+        return False
+    print(
+        "recovered generated certification provenance drift: "
+        f"{LANE_CERTIFICATION_PATH}",
+        flush=True,
+    )
+    return True
+
+
 def clean_main_error(*, honor_cancel: bool = True) -> str | None:
     branch = sh(
         ["git", "rev-parse", "--abbrev-ref", "HEAD"],
@@ -1143,7 +1212,17 @@ def clean_main_error(*, honor_cancel: bool = True) -> str | None:
     if status.returncode != 0:
         return "cannot determine worktree status"
     if status.stdout.strip():
-        return "working tree is not clean"
+        recovered = recover_lane_certification_provenance_drift(
+            status.stdout,
+            honor_cancel=honor_cancel,
+        )
+        if not recovered:
+            return "working tree is not clean"
+        status = sh(["git", "status", "--porcelain"], honor_cancel=honor_cancel)
+        if status.returncode != 0:
+            return "cannot determine worktree status after provenance recovery"
+        if status.stdout.strip():
+            return "working tree is not clean after provenance recovery"
     return None
 
 

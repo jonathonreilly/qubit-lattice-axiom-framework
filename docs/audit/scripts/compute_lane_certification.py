@@ -14,7 +14,6 @@ edit or source change) is the honest coordination signal, not an error.
 from __future__ import annotations
 
 import json
-import subprocess
 from pathlib import Path
 
 import premise_nodes
@@ -47,13 +46,6 @@ def main() -> int:
     config = json.loads(CONFIG.read_text(encoding="utf-8"))
     ledger = json.loads(LEDGER.read_text(encoding="utf-8"))
     rows = ledger.get("rows", {})
-    try:
-        head = subprocess.run(
-            ["git", "rev-parse", "HEAD"], cwd=REPO_ROOT,
-            capture_output=True, text=True, check=True,
-        ).stdout.strip()
-    except Exception:
-        head = None
 
     lanes_out = []
     for lane in config.get("lanes", []):
@@ -132,7 +124,6 @@ def main() -> int:
 
     OUT.write_text(json.dumps({
         "schema": "lane_certification_v2",
-        "repo_head": head,
         "lanes": lanes_out,
     }, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     for lane in lanes_out:

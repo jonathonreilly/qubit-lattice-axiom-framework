@@ -1,0 +1,23 @@
+PASS immutable Cycle653 quartet is byte exact :: {'mismatches': []}
+PASS exact coin/contact/FSWAP polynomial coefficients and signs :: {'coin': 2.2210572578543893e-16, 'contact': 1.1102230246251565e-16, 'fswap': 0.0}
+PASS unchanged Cycle523 onsite mass/contact compiler :: {'mass': 2.220446049250313e-16, 'intertwiner': 5.272182555577386e-15}
+PASS L3 exact graph/link quotient and local gauge checks :: {'rank': 484, 'quotient': 323, 'gram': 322}
+PASS L3 complete 32N factor census and finite coloring :: {'factors': 864, 'palette': 7, 'layers': 58}
+PASS L6 exact graph/link quotient and local gauge checks :: {'rank': 3886, 'quotient': 2591, 'gram': 2590}
+PASS L6 complete 32N factor census and finite coloring :: {'factors': 6912, 'palette': 6, 'layers': 46}
+PASS L7 exact graph/link quotient and local gauge checks :: {'rank': 6172, 'quotient': 4115, 'gram': 4114}
+PASS L7 complete 32N factor census and finite coloring :: {'factors': 10976, 'palette': 7, 'layers': 58}
+PASS train seven-color palette covers held L7 without refit :: {'train': 6, 'held': 7}
+PASS all24/all576 B/A, link, six-mode, and Koszul covariance :: {'sizes': 3, 'mode_products': 0}
+PASS immutable Cycle653 all-eight-sector and E inverse controls :: {'basis_sectors': 8, 'character_failures': 0, 'arbitrary_coherent_inputs_by_linearity': True, 'E_inverse_probe_failures': 0, 'immutable_Cycle653_pass': True, 'pass': True}
+PASS inverse, deletion, leakage, lawful-domain, mass/contact/seam controls :: {'mass': 2.220446049250313e-16, 'contact_delete': 0.36789306705608243}
+PASS term-complete finite-code-space intertwiner :: E_local G_coarse = G_flat_complete E_local
+PASS canonical N1-N8 schema and negative gates :: {'Status_PASS': True, 'gates': True, 'flags': True, 'N1': True, 'N2': True, 'N4': True, 'N5': True, 'N6': True, 'N7': True, 'N8': True, 'pass': True}
+PASS top-level strict/full/breakthrough fields and gates :: {'Status': True, 'gates': True, 'flags': True, 'strict_false': True, 'full_false': True, 'breakthrough_false': True, 'pass': True}
+PASS note contract :: []
+{
+  "pass": true,
+  "tests": "17/17",
+  "elapsed": 231.8645882080309,
+  "receipt": "/private/tmp/toe-science.BB0KQV/outputs/physical_term_complete_flat_link_update_cycle656_receipt_2026_07_23.json"
+}

@@ -1,0 +1,1369 @@
+{
+  "Status": "PASS",
+  "audit": "unset",
+  "author_accepted": false,
+  "author_artifact_status_accepted": false,
+  "authority": "none",
+  "axiom_pressure": false,
+  "axiom_pressure_claim": false,
+  "axiom_pressure_gate": "FAIL / DO NOT SHIP",
+  "axiom_pressure_shipped": false,
+  "breakthrough": false,
+  "broad_negative_gate": "FAIL / DO NOT SHIP",
+  "broad_negative_shipped": false,
+  "broad_no_go_claim": false,
+  "canonical_claim_gate_contract": {
+    "N1": true,
+    "N2": true,
+    "N4": true,
+    "N5": true,
+    "N6": true,
+    "N7": true,
+    "N8": true,
+    "Status_PASS": true,
+    "flags": true,
+    "gates": true,
+    "pass": true
+  },
+  "classification": "three-route complete flat-link even-CAR update tournament",
+  "constitutional_effect": "none",
+  "controls": {
+    "Cycle219_mass_fixture_residual": 2.220446049250313e-16,
+    "Cycle230_contact_active_two_particle_states": 15,
+    "Cycle230_contact_deletion_residual": 0.36789306705608243,
+    "Cycle230_seam_subchecks": {
+      "fail": 0,
+      "pass": 6
+    },
+    "Cycle653_all8_and_E_inverse": {
+      "E_inverse_probe_failures": 0,
+      "arbitrary_coherent_inputs_by_linearity": true,
+      "basis_sectors": 8,
+      "character_failures": 0,
+      "immutable_Cycle653_pass": true,
+      "pass": true
+    },
+    "FSWAP_matrix_control": {
+      "deleted_fourth_term_residual": 1.0,
+      "inverse_square_residual": 0.0,
+      "matrix_residual": 0.0,
+      "pass": true,
+      "perturbed_phase_basis_residual": 9.999999995833334e-05,
+      "unitarity_residual": 0.0
+    },
+    "combined_check_deletion_detected": true,
+    "exact_coefficients_and_signs": 1.0,
+    "factor_deletion_nonzero": true,
+    "held_L7_no_refit": true,
+    "inverse_scope": "each polynomial factor is unitary and the Cycle523 onsite compiler inverse roundtrip is exact; Cycle653 supplies reversible E",
+    "lawful_domain": {
+      "minimum_length": 3,
+      "periodic_cubic": true,
+      "six_modes_per_cell": true,
+      "tested_lengths": [
+        3,
+        6,
+        7
+      ]
+    },
+    "malformed_phase_detected": true,
+    "matter_code_leakage_failures": 0,
+    "onsite_deletion_and_perturbation": {
+      "deleted_first_Givens_core": {
+        "Frobenius": 4.329622682145759,
+        "maximum_column": 0.7653763896310886,
+        "terminal_leakage": 0.0
+      },
+      "deleted_first_contact_phase": {
+        "Frobenius": 1.4715722682243304,
+        "maximum_column": 0.36789306705608227,
+        "terminal_leakage": 0.0
+      },
+      "deleted_first_final_parity_CNOT": {
+        "Frobenius": 8.000000000000004,
+        "maximum_column": 1.414213562373096,
+        "terminal_leakage": 5.656854249492382
+      },
+      "deleted_first_route_FSWAP": {
+        "Frobenius": 8.000000000000004,
+        "maximum_column": 1.4142135623730956,
+        "terminal_leakage": 5.6568542494923815
+      },
+      "final_parity_CNOT_deletion_bad_columns": 63,
+      "pass": true,
+      "perturbation_radians": 0.0001,
+      "perturbed_first_Givens_core": {
+        "Frobenius": 0.0005656854247137266,
+        "maximum_column": 9.999999995866999e-05,
+        "terminal_leakage": 0.0
+      }
+    },
+    "onsite_inverse_and_leakage": {
+      "Cycle219_mass_fixture": 0.4534056541748852,
+      "QR_Givens": 10,
+      "QR_diagonalization_residual": 1.2391324586559453e-15,
+      "QR_onsite_phases": 1,
+      "QR_schedule_sha256": "0fdb7f3f8a29f532961e48c04fac9aa4d0fd2f37dd3e9cdd0d5f4246bf3d4ea0",
+      "active_M2_per_cell": 7,
+      "all_runtime_gate_support_at_most_two_M2": true,
+      "beta": -0.3,
+      "blank_supercell_sites": 20,
+      "compile_time_QR_runtime_adaptation": false,
+      "compiled_rest_mass": 0.453405654174885,
+      "contact_active_two_particle_states": 15,
+      "contact_coupling": 0.37,
+      "contact_deletion_residual": 0.36789306705608243,
+      "exterior_coin_reconstruction_residual": 4.845707866508042e-15,
+      "fifteen_contact_phase_reconstruction_residual": 3.658686032644649e-15,
+      "inverse_roundtrip_residual": 7.504184205291937e-15,
+      "local_CAR_dimension": 64,
+      "local_primitive_gates": 88,
+      "local_two_M2_gate_maximum_physical_L1": 1,
+      "mass_fixture_residual": 2.220446049250313e-16,
+      "one_particle_coin_reconstruction_residual": 1.0979470389962261e-15,
+      "one_particle_coin_unitarity_residual": 1.0806226211343075e-15,
+      "onsite_EG_intertwiner_residual": 5.272182555577386e-15,
+      "onsite_maximum_column_intertwiner_residual": 9.992007221626409e-16,
+      "parity_involution_residual": 0.0,
+      "parity_uncompute_blank_residual": 0.0,
+      "pass": true,
+      "physical_block_dimension": 128,
+      "physical_supercell_sites": 27,
+      "physical_unitarity_residual": 8.132563207440339e-15,
+      "terminal_code_leakage_residual": 0.0
+    },
+    "pass": true
+  },
+  "covariance": {
+    "Cycle523_Koszul_coin_contact_covariance": {
+      "cocycle_CZ_pairs_by_frame_histogram": {
+        "0": 1,
+        "2": 3,
+        "5": 6,
+        "7": 2,
+        "8": 2,
+        "10": 6,
+        "13": 3,
+        "15": 1
+      },
+      "frame_product_failures": 0,
+      "frame_products": 576,
+      "maximum_cocycle_CZ_pairs": 15,
+      "maximum_cocycle_routed_two_M2_gates": 45,
+      "maximum_contact_geometric_covariance_residual": 0.0,
+      "maximum_corrected_frame_code_residual": 8.102539046077842e-15,
+      "maximum_frame_product_residual": 0.0,
+      "maximum_frame_representation_code_residual": 0.0,
+      "maximum_mapped_schedule_conjugacy_residual": 1.5535550445956367e-15,
+      "maximum_pure_geometric_coin_residual": 9.237604307034013,
+      "maximum_routed_Koszul_cocycle_compile_residual": 0.0,
+      "pass": true,
+      "proper_cubic_frames": 24,
+      "pure_geometric_coin_failed_frames": 22
+    },
+    "finite_color_schedule_transport": "compile-time permutation of factor supports and color labels; no runtime selector",
+    "frame_products": 576,
+    "pass": true,
+    "proper_cubic_frames": 24,
+    "signed_six_mode_all576_group_failures": 0,
+    "size_rows": [
+      {
+        "B_A_generator_map_failures": 0,
+        "frame_products": 576,
+        "length": 3,
+        "link_all576_group_failures": 0,
+        "link_constraint_covariance": {
+          "all576_group_failures": 0,
+          "constraint_image_failures": 0,
+          "frame_bijection_failures": 0,
+          "frame_products": 576,
+          "logical_homology_image_failures": 0,
+          "pass": true,
+          "proper_cubic_frames": 24
+        },
+        "oriented_A_sign_failures": 0,
+        "pass": true,
+        "proper_frames": 24
+      },
+      {
+        "B_A_generator_map_failures": 0,
+        "frame_products": 576,
+        "length": 6,
+        "link_all576_group_failures": 0,
+        "link_constraint_covariance": {
+          "all576_group_failures": 0,
+          "constraint_image_failures": 0,
+          "frame_bijection_failures": 0,
+          "frame_products": 576,
+          "logical_homology_image_failures": 0,
+          "pass": true,
+          "proper_cubic_frames": 24
+        },
+        "oriented_A_sign_failures": 0,
+        "pass": true,
+        "proper_frames": 24
+      },
+      {
+        "B_A_generator_map_failures": 0,
+        "frame_products": 576,
+        "length": 7,
+        "link_all576_group_failures": 0,
+        "link_constraint_covariance": {
+          "all576_group_failures": 0,
+          "constraint_image_failures": 0,
+          "frame_bijection_failures": 0,
+          "frame_products": 576,
+          "logical_homology_image_failures": 0,
+          "pass": true,
+          "proper_cubic_frames": 24
+        },
+        "oriented_A_sign_failures": 0,
+        "pass": true,
+        "proper_frames": 24
+      }
+    ],
+    "sparse_evaluator_exact_immutable_L3_FrameData_failures": 0
+  },
+  "cycle": 656,
+  "date": "2026-07-23",
+  "elapsed_seconds": 231.8645882080309,
+  "full_autonomous_terminal_met": false,
+  "highest_honest_terminal": "term-complete exact finite local-generator representation and seven-color schedule; not an autonomous physical law and not reference genesis",
+  "immutable_shore": {
+    "observed": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_DISTRIBUTED_TREE_TORIC_RETURNED_WORK_COMPILER_CYCLE653_NOTE_2026-07-23.md": "18f0d3b6ad3c5923cf5ed6bce44b403a6a8c12562b5bee0b21c9762d8a2c624b",
+      "outputs/physical_distributed_tree_toric_returned_work_compiler_cycle653_cold_2026_07_23.txt": "568e166c13b91d14b19347ac20c8fb50aca9b0429d1feb0f726cdcf76ae88c4d",
+      "outputs/physical_distributed_tree_toric_returned_work_compiler_cycle653_receipt_2026_07_23.json": "f629486f9aa6a9b1c7b7e10d9389904241c682687bfe1d2c71386e8cd799706b",
+      "scripts/physical_distributed_tree_toric_returned_work_compiler_cycle653_2026_07_23.py": "1ead5e8f60b7593771abc68b89ccb9674eec75b39a857aefa2cf4b5391d3e974"
+    },
+    "pins": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_DISTRIBUTED_TREE_TORIC_RETURNED_WORK_COMPILER_CYCLE653_NOTE_2026-07-23.md": "18f0d3b6ad3c5923cf5ed6bce44b403a6a8c12562b5bee0b21c9762d8a2c624b",
+      "outputs/physical_distributed_tree_toric_returned_work_compiler_cycle653_cold_2026_07_23.txt": "568e166c13b91d14b19347ac20c8fb50aca9b0429d1feb0f726cdcf76ae88c4d",
+      "outputs/physical_distributed_tree_toric_returned_work_compiler_cycle653_receipt_2026_07_23.json": "f629486f9aa6a9b1c7b7e10d9389904241c682687bfe1d2c71386e8cd799706b",
+      "scripts/physical_distributed_tree_toric_returned_work_compiler_cycle653_2026_07_23.py": "1ead5e8f60b7593771abc68b89ccb9674eec75b39a857aefa2cf4b5391d3e974"
+    },
+    "ref": "2506280d701546e59748940124bb0f08f58da7fa",
+    "working_tree_bytes_used_as_premise": false
+  },
+  "intertwiner": {
+    "G_coarse_redefined": false,
+    "all_eight_holonomy_sectors": true,
+    "arbitrary_coherent_holonomy_inputs": true,
+    "declared_code_space": "Cycle653 E-image graph/link correlated code with arbitrary three-qubit holonomy input",
+    "equation": "E_local G_coarse = G_flat_complete E_local",
+    "fixed_plus_plus_plus": false,
+    "pass": true,
+    "proof": "exact quotient representation of the complete even-CAR B/A algebra plus exact local polynomial for every ordered Cycle230 factor",
+    "runtime_Wilson_table": false,
+    "term_complete": true
+  },
+  "maximum_RSS_bytes": 244400128,
+  "minimum_content_claim": false,
+  "minimum_content_gate": "FAIL / DO NOT SHIP",
+  "minimum_content_shipped": false,
+  "no_go_discipline": {
+    "N1_broad_negative_gate": "FAIL / DO NOT SHIP",
+    "N1_normalized_families": [
+      {
+        "family": "direct link-dressed even-CAR factors",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "exact CAR polynomial functional calculus",
+        "object_formulation": "B vertices and link-dressed A edges",
+        "status": "passes L3/L6/held L7",
+        "strength_vs_target": "term-complete",
+        "terminal_obligation": "all 32N Cycle230 factors"
+      },
+      {
+        "family": "local auxiliary gauge subsystem",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "endpoint parity/link-star cancellation",
+        "object_formulation": "rough graph plus flat links, local Gauss and plaquettes",
+        "status": "local invariance passes; static all-local seam correlation not claimed",
+        "strength_vs_target": "term-complete with supplied E-image logical alignment",
+        "terminal_obligation": "gauge-invariant local factor algebra"
+      },
+      {
+        "family": "finite-color factorization",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "support-disjoint parallel layers",
+        "object_formulation": "30 ordered factor families with seven-color palette",
+        "status": "palette passes; clock/work law open",
+        "strength_vs_target": "one step short of autonomous clock",
+        "terminal_obligation": "size-independent local schedule alphabet"
+      },
+      {
+        "citation": {
+          "line": 131,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_DISTRIBUTED_TREE_TORIC_RETURNED_WORK_COMPILER_CYCLE653_NOTE_2026-07-23.md",
+          "ref": "2506280d701546e59748940124bb0f08f58da7fa",
+          "text": "| `C_int` | original mass/contact/seam character composes | complete elementary G factorization remains open |"
+        },
+        "family": "character-only flat-link coupling",
+        "honesty_marker": "RULED OUT BY PRIOR",
+        "mechanism_invariant": "local flat-link sign",
+        "object_formulation": "Cycle653 seam-character interface",
+        "status": "retired by current term-complete construction",
+        "strength_vs_target": "strictly weaker",
+        "terminal_obligation": "complete elementary G"
+      },
+      {
+        "citation": {
+          "line": 25,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_DISTRIBUTED_TREE_TORIC_RETURNED_WORK_COMPILER_CYCLE653_NOTE_2026-07-23.md",
+          "ref": "2506280d701546e59748940124bb0f08f58da7fa",
+          "text": "table and never fixes `+++`."
+        },
+        "family": "fixed plus-plus-plus sector",
+        "honesty_marker": "RULED OUT BY PRIOR",
+        "mechanism_invariant": "three fixed Wilson initializers",
+        "object_formulation": "one topological character",
+        "status": "not admissible and not used",
+        "strength_vs_target": "strict subset",
+        "terminal_obligation": "all coherent holonomies"
+      }
+    ],
+    "N1_open_routes_not_counted": [
+      {
+        "family": "autonomous seven-color QCA",
+        "status": "OPEN / NOT COUNTED"
+      },
+      {
+        "family": "regenerative reference genesis",
+        "status": "OPEN / NOT COUNTED"
+      }
+    ],
+    "N1_qualifying_attempts": 5,
+    "N1_required_for_negative": 5,
+    "N2_directed_ordered_pairs": [
+      {
+        "from": "W_autonomous_execution",
+        "implied": false,
+        "reason": "a clocked rule does not prepare its blank/reference",
+        "to": "W_reference_genesis"
+      },
+      {
+        "from": "W_reference_genesis",
+        "implied": false,
+        "reason": "a prepared reference does not execute the ordered factor law",
+        "to": "W_autonomous_execution"
+      }
+    ],
+    "N2_walls": {
+      "W_autonomous_execution": "replace the finite-color host order by a bounded-period local clock/QCA with returned work",
+      "W_reference_genesis": "prepare or renew the correlation/link/clock reference without a supplied blank or gauge section"
+    },
+    "N3_hidden_wall_scan": [
+      {
+        "classification": "explicit supplied gauge section",
+        "condition": "Cycle653 E-image graph/link logical alignment"
+      },
+      {
+        "classification": "explicit compile-time host schedule",
+        "condition": "30-family/58-layer order"
+      },
+      {
+        "classification": "explicit supplied reference/genesis",
+        "condition": "flat-link and clock blanks"
+      }
+    ],
+    "N4_exact_residual_matches": [
+      {
+        "current_line": 386,
+        "current_path": "scripts/physical_term_complete_flat_link_update_cycle656_2026_07_23.py",
+        "current_residual": "all 32N elementary free-plus-contact factors now have exact local polynomials",
+        "exact_match": true,
+        "prior_line": 131,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_DISTRIBUTED_TREE_TORIC_RETURNED_WORK_COMPILER_CYCLE653_NOTE_2026-07-23.md",
+        "prior_ref": "2506280d701546e59748940124bb0f08f58da7fa",
+        "prior_residual": "complete elementary G factorization remains open",
+        "same_scope": true,
+        "use_as_closure": true
+      }
+    ],
+    "N4_nonmatches_not_used_as_closure": [
+      {
+        "current_line": 386,
+        "current_path": "scripts/physical_term_complete_flat_link_update_cycle656_2026_07_23.py",
+        "current_residual": "finite colors are constructed but autonomous_local_clock_constructed is false",
+        "exact_match": true,
+        "prior_line": 124,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_DISTRIBUTED_TREE_TORIC_RETURNED_WORK_COMPILER_CYCLE653_NOTE_2026-07-23.md",
+        "prior_ref": "2506280d701546e59748940124bb0f08f58da7fa",
+        "prior_residual": "autonomous bounded-period G remains open",
+        "same_scope": true,
+        "use_as_closure": false
+      }
+    ],
+    "N5_rhetoric": [
+      {
+        "claim": "Cycle656 closes term completeness but not an autonomous physical compiler",
+        "lattice_wide": "no arbitrary-L theorem of autonomous genesis or impossibility is claimed",
+        "per_block": "L3/L6/held L7 quotient and colors are exact",
+        "per_element": "every coin, reverse, stream, and contact factor is enumerated with exact coefficients",
+        "per_mode": "all six modes, 15 contacts, mass, and FSWAP signs are tested",
+        "per_site": "all factor supports are bounded on 25 active M2 per cell"
+      }
+    ],
+    "N6_partial_closure_paths": [
+      {
+        "file": "UNMATERIALIZED/autonomous_seven_color_flat_link_QCA_cycle_next.py",
+        "status": "OPEN / PRIORITY",
+        "what_closes": "W_autonomous_execution"
+      },
+      {
+        "file": "UNMATERIALIZED/regenerative_flat_link_clock_reference_cycle_next.py",
+        "status": "OPEN",
+        "what_closes": "W_reference_genesis"
+      },
+      {
+        "file": "UNMATERIALIZED/static_local_logical_alignment_subsystem_cycle_next.py",
+        "status": "OPEN / ALTERNATIVE",
+        "what_closes": "an alternative to Cycle653 scheduled E-image Wilson/link alignment"
+      }
+    ],
+    "N7_steelman": {
+      "actionable_steps": [
+        "compile the 58 color layers into a translational cell alphabet",
+        "prove collision-free controlled execution and inverse work return",
+        "replace supplied clock/link blanks by a regenerative local reference"
+      ],
+      "mechanism": "attach a finite local clock band to the seven-color palette, translate each polynomial into controlled local rotations, and uncompute/renew the clock and link work after one period",
+      "supporting_citations": [
+        {
+          "line": 124,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_DISTRIBUTED_TREE_TORIC_RETURNED_WORK_COMPILER_CYCLE653_NOTE_2026-07-23.md",
+          "ref": "2506280d701546e59748940124bb0f08f58da7fa",
+          "text": "bounded-period G and term-complete local CAR representation remain open**."
+        },
+        {
+          "line": 131,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_DISTRIBUTED_TREE_TORIC_RETURNED_WORK_COMPILER_CYCLE653_NOTE_2026-07-23.md",
+          "ref": "2506280d701546e59748940124bb0f08f58da7fa",
+          "text": "| `C_int` | original mass/contact/seam character composes | complete elementary G factorization remains open |"
+        }
+      ],
+      "terminal_test": "constant-period autonomous G_physical, exact full-update intertwiner, all24/all576, arbitrary holonomies, returned work, and no supplied blank/genesis"
+    },
+    "N8_cross_cycle_echo": [
+      {
+        "applicability": "retired at L3/L6/held L7; autonomous execution remains open",
+        "citation_line": 131,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_DISTRIBUTED_TREE_TORIC_RETURNED_WORK_COMPILER_CYCLE653_NOTE_2026-07-23.md",
+        "citation_ref": "2506280d701546e59748940124bb0f08f58da7fa",
+        "citation_text": "| `C_int` | original mass/contact/seam character composes | complete elementary G factorization remains open |",
+        "cycle": 653,
+        "mechanism": "exact B/A polynomial census and 32N factor composition",
+        "retired": "term-complete local CAR representation remained open"
+      },
+      {
+        "applicability": "does not supply a clock, work return, or genesis",
+        "citation_line": 124,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_DISTRIBUTED_TREE_TORIC_RETURNED_WORK_COMPILER_CYCLE653_NOTE_2026-07-23.md",
+        "citation_ref": "2506280d701546e59748940124bb0f08f58da7fa",
+        "citation_text": "bounded-period G and term-complete local CAR representation remain open**.",
+        "cycle": 653,
+        "mechanism": "seven-color finite schedule is a partial closure only",
+        "retired": "none of the autonomous scheduling residual"
+      }
+    ],
+    "Status": "PASS",
+    "axiom_pressure": false,
+    "axiom_pressure_claim": false,
+    "axiom_pressure_gate": "FAIL / DO NOT SHIP",
+    "axiom_pressure_shipped": false,
+    "broad_negative_gate": "FAIL / DO NOT SHIP",
+    "broad_negative_shipped": false,
+    "broad_no_go_claim": false,
+    "minimum_content_claim": false,
+    "minimum_content_gate": "FAIL / DO NOT SHIP",
+    "minimum_content_shipped": false,
+    "shared_obstruction_claim": false,
+    "shared_obstruction_gate": "FAIL / DO NOT SHIP",
+    "shared_obstruction_shipped": false,
+    "shared_route_independent_obstruction": false
+  },
+  "note_sha256": "2404726f9fce2bec177e1c0103ad37cf5aaf491c8adee4e32e24ed3e37c536af",
+  "optimal_next_campaign": "compile the seven-color factorization into an autonomous local QCA with returned regenerative clock/link work and no supplied blank",
+  "pass": true,
+  "polynomial_coefficients": {
+    "FSWAP_exact_coefficient_sign_failures": 0.0,
+    "FSWAP_exact_polynomial": "(Bl+Br+i Bl A-i Br A)/2",
+    "FSWAP_polynomial_reconstruction_residual": 0.0,
+    "coin_Givens": 10,
+    "coin_coefficient_sha256": "ef735d506e2b00df46ecec01d0f11280334950cab9e76d868221c9de31fc6bd8",
+    "coin_factor_rows": [
+      {
+        "coefficients": [
+          {
+            "basis": "I",
+            "imag_hex": "0x1.be61e866db3eep-9",
+            "real_hex": "0x1.fffe7ad23291cp-1"
+          },
+          {
+            "basis": "B",
+            "imag_hex": "-0x1.be61e866db3eep-9",
+            "real_hex": "0x1.852dcd6e48000p-17"
+          }
+        ],
+        "index": 0,
+        "kind": "phase",
+        "modes": [
+          5
+        ]
+      },
+      {
+        "coefficients": [
+          {
+            "basis": "Bl^0 Br^0 A^0",
+            "imag_hex": "-0x1.0000000000000p-62",
+            "real_hex": "0x1.b50478e548590p-1"
+          },
+          {
+            "basis": "Bl^0 Br^0 A^1",
+            "imag_hex": "0x1.6a09a94095cfcp-2",
+            "real_hex": "0x0.0p+0"
+          },
+          {
+            "basis": "Bl^0 Br^1 A^0",
+            "imag_hex": "-0x1.a4daefb31ea4ep-10",
+            "real_hex": "0x0.0p+0"
+          },
+          {
+            "basis": "Bl^0 Br^1 A^1",
+            "imag_hex": "0x0.0p+0",
+            "real_hex": "-0x1.a4db36c9e4c01p-11"
+          },
+          {
+            "basis": "Bl^1 Br^0 A^0",
+            "imag_hex": "0x1.a4daefb31ea50p-10",
+            "real_hex": "0x0.0p+0"
+          },
+          {
+            "basis": "Bl^1 Br^0 A^1",
+            "imag_hex": "0x0.0p+0",
+            "real_hex": "0x1.a4db36c9e4c01p-11"
+          },
+          {
+            "basis": "Bl^1 Br^1 A^0",
+            "imag_hex": "-0x1.0000000000000p-62",
+            "real_hex": "0x1.2bee1c6ade9c0p-3"
+          },
+          {
+            "basis": "Bl^1 Br^1 A^1",
+            "imag_hex": "-0x1.6a09a94095cfcp-2",
+            "real_hex": "0x0.0p+0"
+          }
+        ],
+        "index": 1,
+        "kind": "givens",
+        "modes": [
+          4,
+          5
+        ]
+      },
+      {
+        "coefficients": [
+          {
+            "basis": "Bl^0 Br^0 A^0",
+            "imag_hex": "0x0.0p+0",
+            "real_hex": "0x1.93cd21353abe8p-1"
+          },
+          {
+            "basis": "Bl^0 Br^0 A^1",
+            "imag_hex": "0x1.a20b9063800e3p-2",
+            "real_hex": "0x0.0p+0"
+          },
+          {
+            "basis": "Bl^0 Br^1 A^0",
+            "imag_hex": "-0x1.57a0b32b2eadfp-11",
+            "real_hex": "-0x1.0000000000000p-54"
+          },
+          {
+            "basis": "Bl^0 Br^1 A^1",
+            "imag_hex": "0x0.0p+0",
+            "real_hex": "-0x1.e5f68747464bfp-11"
+          },
+          {
+            "basis": "Bl^1 Br^0 A^0",
+            "imag_hex": "0x1.57a0b32b2eadfp-11",
+            "real_hex": "-0x1.0000000000000p-54"
+          },
+          {
+            "basis": "Bl^1 Br^0 A^1",
+            "imag_hex": "0x0.0p+0",
+            "real_hex": "0x1.e5f68747464bfp-11"
+          },
+          {
+            "basis": "Bl^1 Br^1 A^0",
+            "imag_hex": "0x0.0p+0",
+            "real_hex": "0x1.b0cb7b2b15066p-3"
+          },
+          {
+            "basis": "Bl^1 Br^1 A^1",
+            "imag_hex": "-0x1.a20b9063800e3p-2",
+            "real_hex": "0x0.0p+0"
+          }
+        ],
+        "index": 2,
+        "kind": "givens",
+        "modes": [
+          3,
+          4
+        ]
+      },
+      {
+        "coefficients": [
+          {
+            "basis": "Bl^0 Br^0 A^0",
+            "imag_hex": "0x0.0p+0",
+            "real_hex": "0x1.00002b3e041ebp-2"
+          },
+          {
+            "basis": "Bl^0 Br^0 A^1",
+            "imag_hex": "-0x1.bb67ae8584caap-2",
+            "real_hex": "0x0.0p+0"
+          },
+          {
+            "basis": "Bl^0 Br^1 A^0",
+            "imag_hex": "0x1.299720fb21501p-11",
+            "real_hex": "-0x1.0000000000000p-54"
+          },
+          {
+            "basis": "Bl^0 Br^1 A^1",
+            "imag_hex": "0x0.0p+0",
+            "real_hex": "0x0.0p+0"
+          },
+          {
+            "basis": "Bl^1 Br^0 A^0",
+            "imag_hex": "-0x1.299720fb21501p-11",
+            "real_hex": "-0x1.0000000000000p-54"
+          },
+          {
+            "basis": "Bl^1 Br^0 A^1",
+            "imag_hex": "0x0.0p+0",
+            "real_hex": "0x0.0p+0"
+          },
+          {
+            "basis": "Bl^1 Br^1 A^0",
+            "imag_hex": "0x0.0p+0",
+            "real_hex": "0x1.7fffea60fdf0cp-1"
+          },
+          {
+            "basis": "Bl^1 Br^1 A^1",
+            "imag_hex": "0x1.bb67ae8584caap-2",
+            "real_hex": "0x0.0p+0"
+          }
+        ],
+        "index": 3,
+        "kind": "givens",
+        "modes": [
+          2,
+          3
+        ]
+      },
+      {
+        "coefficients": [
+          {
+            "basis": "Bl^0 Br^0 A^0",
+            "imag_hex": "0x0.0p+0",
+            "real_hex": "0x1.5729b97da5a78p-2"
+          },
+          {
+            "basis": "Bl^0 Br^0 A^1",
+            "imag_hex": "-0x1.dd4c2a0848878p-2",
+            "real_hex": "0x0.0p+0"
+          },
+          {
+            "basis": "Bl^0 Br^1 A^0",
+            "imag_hex": "-0x1.314867360b8e1p-4",
+            "real_hex": "0x0.0p+0"
+          },
+          {
+            "basis": "Bl^0 Br^1 A^1",
+            "imag_hex": "0x0.0p+0",
+            "real_hex": "0x1.156ba88536f57p-11"
+          },
+          {
+            "basis": "Bl^1 Br^0 A^0",
+            "imag_hex": "0x1.314867360b8e1p-4",
+            "real_hex": "0x1.0000000000000p-55"
+          },
+          {
+            "basis": "Bl^1 Br^0 A^1",
+            "imag_hex": "0x0.0p+0",
+            "real_hex": "-0x1.156ba88536f57p-11"
+          },
+          {
+            "basis": "Bl^1 Br^1 A^0",
+            "imag_hex": "0x0.0p+0",
+            "real_hex": "0x1.546b23412d2c4p-1"
+          },
+          {
+            "basis": "Bl^1 Br^1 A^1",
+            "imag_hex": "0x1.dd4c2a0848878p-2",
+            "real_hex": "0x0.0p+0"
+          }
+        ],
+        "index": 4,
+        "kind": "givens",
+        "modes": [
+          3,
+          4
+        ]
+      },
+      {
+        "coefficients": [
+          {
+            "basis": "Bl^0 Br^0 A^0",
+            "imag_hex": "-0x1.8000000000000p-58",
+            "real_hex": "0x1.b3c1951aa4f02p-1"
+          },
+          {
+            "basis": "Bl^0 Br^0 A^1",
+            "imag_hex": "0x1.678b0f3ba9adfp-2",
+            "real_hex": "0x0.0p+0"
+          },
+          {
+            "basis": "Bl^0 Br^1 A^0",
+            "imag_hex": "0x1.ac1cf496cf0a0p-6",
+            "real_hex": "-0x1.0000000000000p-54"
+          },
+          {
+            "basis": "Bl^0 Br^1 A^1",
+            "imag_hex": "0x0.0p+0",
+            "real_hex": "0x1.af60b953f7de0p-5"
+          },
+          {
+            "basis": "Bl^1 Br^0 A^0",
+            "imag_hex": "-0x1.ac1cf496cf09ep-6",
+            "real_hex": "-0x1.0000000000000p-54"
+          },
+          {
+            "basis": "Bl^1 Br^0 A^1",
+            "imag_hex": "0x0.0p+0",
+            "real_hex": "-0x1.af60b953f7de0p-5"
+          },
+          {
+            "basis": "Bl^1 Br^1 A^0",
+            "imag_hex": "-0x1.8000000000000p-58",
+            "real_hex": "0x1.30f9ab956c3fap-3"
+          },
+          {
+            "basis": "Bl^1 Br^1 A^1",
+            "imag_hex": "-0x1.678b0f3ba9adfp-2",
+            "real_hex": "0x0.0p+0"
+          }
+        ],
+        "index": 5,
+        "kind": "givens",
+        "modes": [
+          1,
+          2
+        ]
+      },
+      {
+        "coefficients": [
+          {
+            "basis": "Bl^0 Br^0 A^0",
+            "imag_hex": "0x0.0p+0",
+            "real_hex": "0x1.54676e882d64fp-1"
+          },
+          {
+            "basis": "Bl^0 Br^0 A^1",
+            "imag_hex": "-0x1.e0b157693655cp-2",
+            "real_hex": "0x0.0p+0"
+          },
+          {
+            "basis": "Bl^0 Br^1 A^0",
+            "imag_hex": "0x1.96886d4b232e7p-5",
+            "real_hex": "0x0.0p+0"
+          },
+          {
+            "basis": "Bl^0 Br^1 A^1",
+            "imag_hex": "0x0.0p+0",
+            "real_hex": "-0x1.0000000000000p-58"
+          },
+          {
+            "basis": "Bl^1 Br^0 A^0",
+            "imag_hex": "-0x1.96886d4b232e7p-5",
+            "real_hex": "0x0.0p+0"
+          },
+          {
+            "basis": "Bl^1 Br^0 A^1",
+            "imag_hex": "0x0.0p+0",
+            "real_hex": "0x1.0000000000000p-58"
+          },
+          {
+            "basis": "Bl^1 Br^1 A^0",
+            "imag_hex": "0x0.0p+0",
+            "real_hex": "0x1.573122efa5362p-2"
+          },
+          {
+            "basis": "Bl^1 Br^1 A^1",
+            "imag_hex": "0x1.e0b157693655cp-2",
+            "real_hex": "0x0.0p+0"
+          }
+        ],
+        "index": 6,
+        "kind": "givens",
+        "modes": [
+          0,
+          1
+        ]
+      },
+      {
+        "coefficients": [
+          {
+            "basis": "Bl^0 Br^0 A^0",
+            "imag_hex": "0x1.0000000000000p-59",
+            "real_hex": "0x1.30f9ab956c3f8p-3"
+          },
+          {
+            "basis": "Bl^0 Br^0 A^1",
+            "imag_hex": "-0x1.6b906ec161061p-2",
+            "real_hex": "0x0.0p+0"
+          },
+          {
+            "basis": "Bl^0 Br^1 A^0",
+            "imag_hex": "-0x1.ac1cf496cf09cp-6",
+            "real_hex": "0x0.0p+0"
+          },
+          {
+            "basis": "Bl^0 Br^1 A^1",
+            "imag_hex": "0x0.0p+0",
+            "real_hex": "-0x1.10ac531108c48p-59"
+          },
+          {
+            "basis": "Bl^1 Br^0 A^0",
+            "imag_hex": "0x1.ac1cf496cf09ap-6",
+            "real_hex": "0x0.0p+0"
+          },
+          {
+            "basis": "Bl^1 Br^0 A^1",
+            "imag_hex": "0x0.0p+0",
+            "real_hex": "0x1.10ac531108c48p-59"
+          },
+          {
+            "basis": "Bl^1 Br^1 A^0",
+            "imag_hex": "0x1.0000000000000p-59",
+            "real_hex": "0x1.b3c1951aa4f02p-1"
+          },
+          {
+            "basis": "Bl^1 Br^1 A^1",
+            "imag_hex": "0x1.6b906ec161061p-2",
+            "real_hex": "0x0.0p+0"
+          }
+        ],
+        "index": 7,
+        "kind": "givens",
+        "modes": [
+          1,
+          2
+        ]
+      },
+      {
+        "coefficients": [
+          {
+            "basis": "Bl^0 Br^0 A^0",
+            "imag_hex": "0x0.0p+0",
+            "real_hex": "0x1.7e8a788bc5166p-1"
+          },
+          {
+            "basis": "Bl^0 Br^0 A^1",
+            "imag_hex": "-0x1.bb67ae8584caap-2",
+            "real_hex": "0x0.0p+0"
+          },
+          {
+            "basis": "Bl^0 Br^1 A^0",
+            "imag_hex": "-0x1.3459112394e6bp-5",
+            "real_hex": "0x0.0p+0"
+          },
+          {
+            "basis": "Bl^0 Br^1 A^1",
+            "imag_hex": "0x0.0p+0",
+            "real_hex": "-0x1.7ffffffffffffp-59"
+          },
+          {
+            "basis": "Bl^1 Br^0 A^0",
+            "imag_hex": "0x1.3459112394e6bp-5",
+            "real_hex": "0x1.0000000000000p-54"
+          },
+          {
+            "basis": "Bl^1 Br^0 A^1",
+            "imag_hex": "0x0.0p+0",
+            "real_hex": "0x1.7ffffffffffffp-59"
+          },
+          {
+            "basis": "Bl^1 Br^1 A^0",
+            "imag_hex": "0x0.0p+0",
+            "real_hex": "0x1.02eb0ee875d34p-2"
+          },
+          {
+            "basis": "Bl^1 Br^1 A^1",
+            "imag_hex": "0x1.bb67ae8584caap-2",
+            "real_hex": "0x0.0p+0"
+          }
+        ],
+        "index": 8,
+        "kind": "givens",
+        "modes": [
+          2,
+          3
+        ]
+      },
+      {
+        "coefficients": [
+          {
+            "basis": "Bl^0 Br^0 A^0",
+            "imag_hex": "0x0.0p+0",
+            "real_hex": "0x1.921de9b85288cp-1"
+          },
+          {
+            "basis": "Bl^0 Br^0 A^1",
+            "imag_hex": "-0x1.a20bd700c2c3dp-2",
+            "real_hex": "0x0.0p+0"
+          },
+          {
+            "basis": "Bl^0 Br^1 A^0",
+            "imag_hex": "-0x1.640cac77e2917p-5",
+            "real_hex": "0x1.0000000000000p-54"
+          },
+          {
+            "basis": "Bl^0 Br^1 A^1",
+            "imag_hex": "0x0.0p+0",
+            "real_hex": "0x0.0p+0"
+          },
+          {
+            "basis": "Bl^1 Br^0 A^0",
+            "imag_hex": "0x1.640cac77e2917p-5",
+            "real_hex": "0x0.0p+0"
+          },
+          {
+            "basis": "Bl^1 Br^0 A^1",
+            "imag_hex": "0x0.0p+0",
+            "real_hex": "0x0.0p+0"
+          },
+          {
+            "basis": "Bl^1 Br^1 A^0",
+            "imag_hex": "0x0.0p+0",
+            "real_hex": "0x1.b788591eb5dccp-3"
+          },
+          {
+            "basis": "Bl^1 Br^1 A^1",
+            "imag_hex": "0x1.a20bd700c2c3dp-2",
+            "real_hex": "0x0.0p+0"
+          }
+        ],
+        "index": 9,
+        "kind": "givens",
+        "modes": [
+          3,
+          4
+        ]
+      },
+      {
+        "coefficients": [
+          {
+            "basis": "Bl^0 Br^0 A^0",
+            "imag_hex": "-0x1.0000000000000p-57",
+            "real_hex": "0x1.b2f4b337ac1a5p-1"
+          },
+          {
+            "basis": "Bl^0 Br^0 A^1",
+            "imag_hex": "-0x1.65e9666f5834bp-2",
+            "real_hex": "0x0.0p+0"
+          },
+          {
+            "basis": "Bl^0 Br^1 A^0",
+            "imag_hex": "-0x1.b411dee3259e1p-5",
+            "real_hex": "0x1.0000000000000p-53"
+          },
+          {
+            "basis": "Bl^0 Br^1 A^1",
+            "imag_hex": "0x0.0p+0",
+            "real_hex": "0x1.b411dee3259e2p-5"
+          },
+          {
+            "basis": "Bl^1 Br^0 A^0",
+            "imag_hex": "0x1.b411dee3259e3p-5",
+            "real_hex": "0x1.0000000000000p-53"
+          },
+          {
+            "basis": "Bl^1 Br^0 A^1",
+            "imag_hex": "0x0.0p+0",
+            "real_hex": "-0x1.b411dee3259e2p-5"
+          },
+          {
+            "basis": "Bl^1 Br^1 A^0",
+            "imag_hex": "-0x1.0000000000000p-57",
+            "real_hex": "0x1.342d33214f966p-3"
+          },
+          {
+            "basis": "Bl^1 Br^1 A^1",
+            "imag_hex": "0x1.65e9666f5834bp-2",
+            "real_hex": "0x0.0p+0"
+          }
+        ],
+        "index": 10,
+        "kind": "givens",
+        "modes": [
+          4,
+          5
+        ]
+      }
+    ],
+    "coin_factors": 11,
+    "coin_phases": 1,
+    "contact_exact_coefficient_sign_failures": 0.0,
+    "contact_exact_polynomial": "[(3+e)I+(1-e)(Bl+Br)+(e-1)BlBr]/4, e=exp(i*0.37)",
+    "contact_polynomial_reconstruction_residual": 1.1102230246251565e-16,
+    "maximum_coin_polynomial_reconstruction_residual": 2.2210572578543893e-16,
+    "one_particle_QR_residual": 1.0979470389962261e-15,
+    "pass": 1.0
+  },
+  "prior_art_novelty_boundary": {
+    "broader_novelty_claimed": false,
+    "narrow_new_result": "exact composition with the Cycle653 graph/link correlation code and full Cycle230 factor census, quotient, held-size, coefficient, and covariance receipts",
+    "standard_prior_art": [
+      "Z2 link dressing and Gauss/plaquette constraints",
+      "even-CAR B/A generator polynomials",
+      "QR/Givens decomposition",
+      "fermionic SWAP polynomial",
+      "greedy support-conflict coloring"
+    ]
+  },
+  "route_A_direct_link_dressed_algebra": [
+    {
+      "E_image_correlation_rows": 81,
+      "E_image_logical_alignment_supplied": true,
+      "Gauss_matter_commutator_failures": 0,
+      "Gauss_plaquette_commutator_failures": 0,
+      "active_M2": 675,
+      "active_M2_per_cell": 25,
+      "all_eight_holonomy_sectors_in_domain": true,
+      "arbitrary_topological_input_qubits": 3,
+      "coarse_cells": 27,
+      "combined_code_exponent": 191,
+      "combined_rank": 484,
+      "delete_one_independent_check_rank": 483,
+      "dressing_type_failures": 0,
+      "expected_code_exponent": 191,
+      "expected_combined_rank": 484,
+      "expected_deleted_rank": 483,
+      "expected_graph_local_rank": 403,
+      "expected_matter_quotient_dimension": 323,
+      "expected_matter_quotient_symplectic_rank": 322,
+      "fixed_plus_plus_plus": false,
+      "flat_link_M2": 81,
+      "graph_M2": 594,
+      "graph_local_rank": 403,
+      "graph_local_stabilizers": 648,
+      "length": 3,
+      "local_Gauss_rows": 27,
+      "local_plaquette_product_equalities": 81,
+      "malformed_phase_inconsistencies": 1,
+      "matter_A_generators": 405,
+      "matter_B_generators": 162,
+      "matter_center_dimension": 1,
+      "matter_combined_stabilizer_commutator_failures": 0,
+      "matter_quotient_dimension": 323,
+      "matter_quotient_symplectic_rank": 322,
+      "maximum_Gauss_fine_L1_diameter": 452,
+      "maximum_Gauss_weight": 18,
+      "maximum_plaquette_fine_L1_diameter": 258,
+      "maximum_plaquette_weight": 4,
+      "outer_link_dressed_A": 81,
+      "pass": true,
+      "placement_collisions": 0,
+      "plaquette_product_equality_failures": 0,
+      "runtime_Wilson_table": false,
+      "split": "construction",
+      "static_all_local_correlation_stabilizer_claimed": false
+    },
+    {
+      "E_image_correlation_rows": 648,
+      "E_image_logical_alignment_supplied": true,
+      "Gauss_matter_commutator_failures": 0,
+      "Gauss_plaquette_commutator_failures": 0,
+      "active_M2": 5400,
+      "active_M2_per_cell": 25,
+      "all_eight_holonomy_sectors_in_domain": true,
+      "arbitrary_topological_input_qubits": 3,
+      "coarse_cells": 216,
+      "combined_code_exponent": 1514,
+      "combined_rank": 3886,
+      "delete_one_independent_check_rank": 3885,
+      "dressing_type_failures": 0,
+      "expected_code_exponent": 1514,
+      "expected_combined_rank": 3886,
+      "expected_deleted_rank": 3885,
+      "expected_graph_local_rank": 3238,
+      "expected_matter_quotient_dimension": 2591,
+      "expected_matter_quotient_symplectic_rank": 2590,
+      "fixed_plus_plus_plus": false,
+      "flat_link_M2": 648,
+      "graph_M2": 4752,
+      "graph_local_rank": 3238,
+      "graph_local_stabilizers": 5184,
+      "length": 6,
+      "local_Gauss_rows": 216,
+      "local_plaquette_product_equalities": 648,
+      "malformed_phase_inconsistencies": 1,
+      "matter_A_generators": 3240,
+      "matter_B_generators": 1296,
+      "matter_center_dimension": 1,
+      "matter_combined_stabilizer_commutator_failures": 0,
+      "matter_quotient_dimension": 2591,
+      "matter_quotient_symplectic_rank": 2590,
+      "maximum_Gauss_fine_L1_diameter": 452,
+      "maximum_Gauss_weight": 18,
+      "maximum_plaquette_fine_L1_diameter": 258,
+      "maximum_plaquette_weight": 4,
+      "outer_link_dressed_A": 648,
+      "pass": true,
+      "placement_collisions": 0,
+      "plaquette_product_equality_failures": 0,
+      "runtime_Wilson_table": false,
+      "split": "train",
+      "static_all_local_correlation_stabilizer_claimed": false
+    },
+    {
+      "E_image_correlation_rows": 1029,
+      "E_image_logical_alignment_supplied": true,
+      "Gauss_matter_commutator_failures": 0,
+      "Gauss_plaquette_commutator_failures": 0,
+      "active_M2": 8575,
+      "active_M2_per_cell": 25,
+      "all_eight_holonomy_sectors_in_domain": true,
+      "arbitrary_topological_input_qubits": 3,
+      "coarse_cells": 343,
+      "combined_code_exponent": 2403,
+      "combined_rank": 6172,
+      "delete_one_independent_check_rank": 6171,
+      "dressing_type_failures": 0,
+      "expected_code_exponent": 2403,
+      "expected_combined_rank": 6172,
+      "expected_deleted_rank": 6171,
+      "expected_graph_local_rank": 5143,
+      "expected_matter_quotient_dimension": 4115,
+      "expected_matter_quotient_symplectic_rank": 4114,
+      "fixed_plus_plus_plus": false,
+      "flat_link_M2": 1029,
+      "graph_M2": 7546,
+      "graph_local_rank": 5143,
+      "graph_local_stabilizers": 8232,
+      "length": 7,
+      "local_Gauss_rows": 343,
+      "local_plaquette_product_equalities": 1029,
+      "malformed_phase_inconsistencies": 1,
+      "matter_A_generators": 5145,
+      "matter_B_generators": 2058,
+      "matter_center_dimension": 1,
+      "matter_combined_stabilizer_commutator_failures": 0,
+      "matter_quotient_dimension": 4115,
+      "matter_quotient_symplectic_rank": 4114,
+      "maximum_Gauss_fine_L1_diameter": 452,
+      "maximum_Gauss_weight": 18,
+      "maximum_plaquette_fine_L1_diameter": 258,
+      "maximum_plaquette_weight": 4,
+      "outer_link_dressed_A": 1029,
+      "pass": true,
+      "placement_collisions": 0,
+      "plaquette_product_equality_failures": 0,
+      "runtime_Wilson_table": false,
+      "split": "held-out-no-refit",
+      "static_all_local_correlation_stabilizer_claimed": false
+    }
+  ],
+  "route_B_local_gauge_auxiliary": [
+    {
+      "E_image_logical_alignment_supplied": true,
+      "Gauss_matter_commutator_failures": 0,
+      "Gauss_plaquette_commutator_failures": 0,
+      "length": 3,
+      "local_Gauss_rows": 27,
+      "local_plaquette_product_equalities": 81,
+      "maximum_Gauss_fine_L1_diameter": 452,
+      "maximum_Gauss_weight": 18,
+      "pass": true,
+      "plaquette_product_equality_failures": 0,
+      "static_all_local_correlation_stabilizer_claimed": false
+    },
+    {
+      "E_image_logical_alignment_supplied": true,
+      "Gauss_matter_commutator_failures": 0,
+      "Gauss_plaquette_commutator_failures": 0,
+      "length": 6,
+      "local_Gauss_rows": 216,
+      "local_plaquette_product_equalities": 648,
+      "maximum_Gauss_fine_L1_diameter": 452,
+      "maximum_Gauss_weight": 18,
+      "pass": true,
+      "plaquette_product_equality_failures": 0,
+      "static_all_local_correlation_stabilizer_claimed": false
+    },
+    {
+      "E_image_logical_alignment_supplied": true,
+      "Gauss_matter_commutator_failures": 0,
+      "Gauss_plaquette_commutator_failures": 0,
+      "length": 7,
+      "local_Gauss_rows": 343,
+      "local_plaquette_product_equalities": 1029,
+      "maximum_Gauss_fine_L1_diameter": 452,
+      "maximum_Gauss_weight": 18,
+      "pass": true,
+      "plaquette_product_equality_failures": 0,
+      "static_all_local_correlation_stabilizer_claimed": false
+    }
+  ],
+  "route_C_finite_color_factorization": [
+    {
+      "G_coarse_redefined": false,
+      "autonomous_local_clock_constructed": false,
+      "coarse_cells": 27,
+      "complete_factor_count": 864,
+      "constant_overhead_active_M2_per_cell": 25,
+      "expected_factor_count": 864,
+      "factor_counts": {
+        "coin_Givens": 270,
+        "coin_phase": 27,
+        "contact_phase": 405,
+        "reverse_FSWAP": 81,
+        "spatial_FSWAP": 81
+      },
+      "finite_color_palette": 7,
+      "host_supplied_factor_order": true,
+      "length": 3,
+      "maximum_all_update_factor_overlap_per_active_M2": 24,
+      "maximum_factor_M2_weight": 16,
+      "maximum_factor_fine_L1_diameter": 452,
+      "maximum_stage_conflict_degree": 10,
+      "ordered_stage_groups": 30,
+      "pass": true,
+      "runtime_frame_selector": false,
+      "sequential_color_layers": 58,
+      "split": "construction",
+      "stage_color_count_histogram": {
+        "1": 18,
+        "3": 11,
+        "7": 1
+      },
+      "support_disjoint_color_failures": 0
+    },
+    {
+      "G_coarse_redefined": false,
+      "autonomous_local_clock_constructed": false,
+      "coarse_cells": 216,
+      "complete_factor_count": 6912,
+      "constant_overhead_active_M2_per_cell": 25,
+      "expected_factor_count": 6912,
+      "factor_counts": {
+        "coin_Givens": 2160,
+        "coin_phase": 216,
+        "contact_phase": 3240,
+        "reverse_FSWAP": 648,
+        "spatial_FSWAP": 648
+      },
+      "finite_color_palette": 6,
+      "host_supplied_factor_order": true,
+      "length": 6,
+      "maximum_all_update_factor_overlap_per_active_M2": 24,
+      "maximum_factor_M2_weight": 16,
+      "maximum_factor_fine_L1_diameter": 452,
+      "maximum_stage_conflict_degree": 10,
+      "ordered_stage_groups": 30,
+      "pass": true,
+      "runtime_frame_selector": false,
+      "sequential_color_layers": 46,
+      "split": "train",
+      "stage_color_count_histogram": {
+        "1": 18,
+        "2": 11,
+        "6": 1
+      },
+      "support_disjoint_color_failures": 0
+    },
+    {
+      "G_coarse_redefined": false,
+      "autonomous_local_clock_constructed": false,
+      "coarse_cells": 343,
+      "complete_factor_count": 10976,
+      "constant_overhead_active_M2_per_cell": 25,
+      "expected_factor_count": 10976,
+      "factor_counts": {
+        "coin_Givens": 3430,
+        "coin_phase": 343,
+        "contact_phase": 5145,
+        "reverse_FSWAP": 1029,
+        "spatial_FSWAP": 1029
+      },
+      "finite_color_palette": 7,
+      "host_supplied_factor_order": true,
+      "length": 7,
+      "maximum_all_update_factor_overlap_per_active_M2": 24,
+      "maximum_factor_M2_weight": 16,
+      "maximum_factor_fine_L1_diameter": 452,
+      "maximum_stage_conflict_degree": 10,
+      "ordered_stage_groups": 30,
+      "pass": true,
+      "runtime_frame_selector": false,
+      "sequential_color_layers": 58,
+      "split": "held-out-no-refit",
+      "stage_color_count_histogram": {
+        "1": 18,
+        "3": 11,
+        "7": 1
+      },
+      "support_disjoint_color_failures": 0
+    }
+  ],
+  "route_disposition": {
+    "A": "PASS_TERM_COMPLETE_DIRECT_LINK_DRESSED_EVEN_CAR_FACTORS",
+    "B": "PASS_LOCAL_GAUGE_INVARIANT_FACTORS__STATIC_ALL_LOCAL_LOGICAL_ALIGNMENT_OPEN",
+    "C": "PASS_SEVEN_COLOR_FINITE_FACTORIZATION__AUTONOMOUS_CLOCK_WORK_OPEN"
+  },
+  "runner_sha256": "9c10b91f9028c341b431de9489c100975991cd3a4e8651c2482a10d4bfe6b1f9",
+  "shared_obstruction_claim": false,
+  "shared_obstruction_gate": "FAIL / DO NOT SHIP",
+  "shared_obstruction_shipped": false,
+  "shared_route_independent_obstruction": false,
+  "six_wall_ledger": {
+    "C_int": "complete mass/coin/FSWAP/contact factorization closes Cycle653 term residual; autonomous law open",
+    "C_local": "25 active M2/cell, bounded support, seven colors; 58-layer host order supplied",
+    "C_num": "exact quotient/coefficients/inverse/deletion/held controls; no Born or empirical normalization",
+    "C_ref": "arbitrary holonomies retained; gauge section, blanks, schedule, and genesis supplied",
+    "C_source": "link/active-site resources counted; no source/stress/energy/gravity identification",
+    "C_wrap": "every wrapping factor is local-link dressed in all eight sectors; autonomous holonomy genesis open"
+  },
+  "status": "positive term-complete finite local-generator presentation; autonomous physical compiler open",
+  "strict_physical_local_M2_compiler_claimed": false,
+  "strict_success_criterion_met": false,
+  "strongest_constructive_result": "exact 25-M2-per-cell graph/link representation of all 32N Cycle230 factors, quotient dimension/rank 12N-1/12N-2, and at-most-seven-color support-disjoint factorization at L3/L6/held L7",
+  "supplied_structure_inventory": {
+    "Cycle653_encoder_and_gauge_section": true,
+    "K129_placement_and_routing_convention": true,
+    "autonomous_clock_or_update_law": false,
+    "compile_time_frame_transport": true,
+    "factor_order": true,
+    "finite_L3_L6_L7_domains": true,
+    "fixed_plus_plus_plus": false,
+    "flat_link_and_work_blank_references": true,
+    "global_Jordan_Wigner_order": false,
+    "nonlocal_parity_service": false,
+    "rough_puncture_graph": true,
+    "runtime_frame_selector": false,
+    "runtime_global_Wilson_table": false,
+    "three_coherent_holonomy_inputs": true
+  },
+  "tests_failed": 0,
+  "tests_passed": 17,
+  "top_level_claim_gate_contract": {
+    "Status": true,
+    "breakthrough_false": true,
+    "flags": true,
+    "full_false": true,
+    "gates": true,
+    "pass": true,
+    "strict_false": true
+  }
+}

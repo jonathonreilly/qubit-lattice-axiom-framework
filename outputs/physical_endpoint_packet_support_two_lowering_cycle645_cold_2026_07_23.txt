@@ -1,0 +1,14 @@
+Cycle645 endpoint/packet support-two lowering none unset
+PASS Cycle640 is loaded from one exact immutable shore :: {'ref': 'c27f72ff8b1058d872695829c05e95da415813bc', 'Cycle640_runner_sha256': '3a11a467fb1c7aadf2db05f8332ed9b253b3c31d27bc2a591e15e5009e334f7e', 'expected_Cycle640_runner_sha256': '3a11a467fb1c7aadf2db05f8332ed9b253b3c31d27bc2a591e15e5009e334f7e', 'Cycle640_pass': True, 'Cycle640_authority': 'none', 'Cycle640_audit': 'unset', 'working_tree_bytes_used_as_premise': False, 'pass': True}
+PASS Cycle645 note is complete and non-authoritative :: {'missing_sections': (), 'authority_none': True, 'audit_unset': True, 'accepted_false': True, 'pass': True}
+PASS the endpoint predicate is bounded, oriented, duplicate-safe, channel/convention explicit, and deletion-sensitive :: {'truth_rows': 256, 'failures': 0, 'duplicate_refused': True, 'max_support': 3}
+PASS the local packet is reversible, exactly-once, K15->K0 carry exact, binder/port/deletion sensitive, and head-local :: {'cases': 4096, 'failures': 0, 'once': True, 'max_support': 3}
+PASS the endpoint/packet label family closes under all24/all576 at L3/L6/L7 :: {'frames': 24, 'failures': 0}
+PASS immutable Cycle640 truth/inverse/deletion/held/covariance controls rerun unchanged :: {'Cycle640_pass': 3, 'Cycle640_fail': 0, 'endpoint_rows': 256, 'packet_cases': 4096}
+PASS every endpoint gate lowers exactly to support-one/two primitives :: {'high_level': 14, 'primitive': 172, 'residual': 3.1401849173675503e-16, 'support': 2}
+PASS every packet gate lowers exactly to support-one/two primitives :: {'high_level': 52, 'primitive': 726, 'residual': 3.1401849173675503e-16, 'support': 2}
+PASS all positive/negative CNOT, Toffoli and Fredkin templates are exact and deletion-sensitive :: {'templates': 8, 'maximum_residual': 3.1401849173675503e-16}
+PASS N1-N8 permits only the constructive support-two claim :: {'attempted': 1, 'open': 3, 'negative': False}
+PASS cold run stays within declared caps :: {'elapsed_seconds': 1.1655156670603901, 'maximum_RSS_bytes': 134250496}
+SUMMARY_JSON {"axiom_pressure": false, "endpoint_primitive_gates": 172, "maximum_residual": 3.1401849173675503e-16, "maximum_support_M2": 2, "nearest_neighbour_layout_closed": false, "packet_primitive_gates": 726, "pass": true, "tests_failed": 0, "tests_passed": 8}
+RESULT 8 0

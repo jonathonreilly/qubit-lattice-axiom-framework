@@ -1,0 +1,2256 @@
+{
+  "audit": "unset",
+  "author_accepted": false,
+  "author_artifact_status_accepted": false,
+  "authority": "none",
+  "axiom_pressure": false,
+  "breakthrough": false,
+  "constitutional_effect": "none",
+  "elapsed_seconds": 1.1655156670603901,
+  "endpoint_lowering": {
+    "high_level_gate_count": 14,
+    "maximum_inverse_residual": 4.440892098500626e-16,
+    "maximum_matrix_residual": 3.1401849173675503e-16,
+    "maximum_primitive_support_M2": 2,
+    "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+    "pass": true,
+    "primitive_counts": {
+      "CNOT": 69,
+      "H": 22,
+      "T": 44,
+      "Tdg": 33,
+      "X": 4
+    },
+    "primitive_gate_count": 172,
+    "rows": [
+      {
+        "controls": [
+          [
+            "in_contact_pointer",
+            1
+          ],
+          [
+            "in_crossing",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "p0_endpoint_and_compute_0",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "p0_endpoint_and_0",
+            1
+          ],
+          [
+            "in_channel_certified",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "p0_endpoint_and_compute_1",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "p0_endpoint_and_1",
+            1
+          ],
+          [
+            "in_convention_certified",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "p0_endpoint_and_compute_2",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "p0_endpoint_and_2",
+            1
+          ],
+          [
+            "claimed",
+            0
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "p0_endpoint_and_compute_3",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 17,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "p0_endpoint_and_3",
+            1
+          ]
+        ],
+        "high_level_support": 2,
+        "inverse_residual": 0.0,
+        "kind": "toggle",
+        "label": "p0_certificate_emit",
+        "matrix_residual": 0.0,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 2.0,
+        "primitive_count": 1,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "p0_certificate",
+            1
+          ],
+          [
+            "in_orientation",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "p0_orientation_copy",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "p0_certificate",
+            1
+          ],
+          [
+            "in_channel_sign",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "p0_channel_copy",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "p0_certificate",
+            1
+          ],
+          [
+            "in_tick_convention",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "p0_convention_copy",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "p0_certificate",
+            1
+          ]
+        ],
+        "high_level_support": 2,
+        "inverse_residual": 0.0,
+        "kind": "toggle",
+        "label": "p0_token_emit",
+        "matrix_residual": 0.0,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 2.0,
+        "primitive_count": 1,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "p0_endpoint_and_2",
+            1
+          ],
+          [
+            "claimed",
+            0
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "p0_endpoint_and_uncompute_3",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 17,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "p0_endpoint_and_1",
+            1
+          ],
+          [
+            "in_convention_certified",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "p0_endpoint_and_uncompute_2",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "p0_endpoint_and_0",
+            1
+          ],
+          [
+            "in_channel_certified",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "p0_endpoint_and_uncompute_1",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "in_contact_pointer",
+            1
+          ],
+          [
+            "in_crossing",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "p0_endpoint_and_uncompute_0",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "p0_certificate",
+            1
+          ]
+        ],
+        "high_level_support": 2,
+        "inverse_residual": 0.0,
+        "kind": "toggle",
+        "label": "p0_claim_latch",
+        "matrix_residual": 0.0,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 2.0,
+        "primitive_count": 1,
+        "target_count": 1
+      }
+    ]
+  },
+  "immutable_shore": {
+    "Cycle640_audit": "unset",
+    "Cycle640_authority": "none",
+    "Cycle640_pass": true,
+    "Cycle640_runner_sha256": "3a11a467fb1c7aadf2db05f8332ed9b253b3c31d27bc2a591e15e5009e334f7e",
+    "expected_Cycle640_runner_sha256": "3a11a467fb1c7aadf2db05f8332ed9b253b3c31d27bc2a591e15e5009e334f7e",
+    "pass": true,
+    "ref": "c27f72ff8b1058d872695829c05e95da415813bc",
+    "working_tree_bytes_used_as_premise": false
+  },
+  "maximum_RSS_bytes": 134250496,
+  "nearest_neighbour_layout_closed": false,
+  "no_go_discipline": {
+    "N1_broad_negative_gate": "WITHHELD__CONSTRUCTIVE_RESULT_AND_OPEN_ROUTES",
+    "N1_normalized_families": [
+      {
+        "family": "exact no-ancilla Clifford+T lowering",
+        "honesty_marker": "ATTEMPTED",
+        "status": "POSITIVE_ALL_CYCLE640_GATES"
+      }
+    ],
+    "N1_open_routes_not_counted": [
+      {
+        "family": "ancilla-assisted Clifford+T optimization",
+        "status": "OPEN_NOT_ATTEMPTED"
+      },
+      {
+        "family": "measurement/reset lowering",
+        "status": "OPEN_NOT_ATTEMPTED"
+      },
+      {
+        "family": "native support-three primitive",
+        "status": "OPEN_NOT_NEEDED"
+      }
+    ],
+    "N1_qualifying_attempts": 1,
+    "N1_required_for_broad_negative": 5,
+    "N2_collapsed_walls": [
+      {
+        "status": "CLOSED_HERE",
+        "wall": "elementary_support"
+      },
+      {
+        "status": "OPEN_DISTINCT",
+        "wall": "nearest_neighbour_layout"
+      },
+      {
+        "status": "OPEN_DISTINCT",
+        "wall": "law_level_occurrence"
+      }
+    ],
+    "N2_directed_pairs": [
+      {
+        "from": "elementary_support",
+        "independent": true,
+        "to": "nearest_neighbour_layout"
+      },
+      {
+        "from": "nearest_neighbour_layout",
+        "independent": true,
+        "to": "elementary_support"
+      },
+      {
+        "from": "elementary_support",
+        "independent": true,
+        "to": "law_level_occurrence"
+      },
+      {
+        "from": "law_level_occurrence",
+        "independent": true,
+        "to": "elementary_support"
+      },
+      {
+        "from": "nearest_neighbour_layout",
+        "independent": true,
+        "to": "law_level_occurrence"
+      },
+      {
+        "from": "law_level_occurrence",
+        "independent": true,
+        "to": "nearest_neighbour_layout"
+      }
+    ],
+    "N3_hidden_wall_scan": [
+      "X/H/T/T-dagger/CNOT matrices are supplied candidate physical gate law",
+      "nearest-neighbour role coordinates are not supplied",
+      "blank transport sites and their genesis are not supplied",
+      "actuality/admissibility/law-domain ports remain supplied",
+      "finite L3/L6/L7 is not an infinite history theorem",
+      "gate count is not elapsed time or energy"
+    ],
+    "N4_dropped_nonmatches": [],
+    "N4_exact_residual_matches": [],
+    "N4_residual_matching": [
+      {
+        "current_line": 279,
+        "current_path": "scripts/physical_endpoint_packet_support_two_lowering_cycle645_2026_07_23.py",
+        "current_residual": 2,
+        "exact_match": false,
+        "prior_line": 50,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_M2_ENDPOINT_INTERVAL_PACKET_INTERFACE_CYCLE640_NOTE_2026-07-23.md",
+        "prior_ref": "c27f72ff8b1058d872695829c05e95da415813bc",
+        "prior_residual": "maximum_support_3",
+        "same_scope": true,
+        "use_as_closure": true
+      }
+    ],
+    "N5_rhetoric_resolution_ledger": [
+      {
+        "claim": "each replacement is exact",
+        "lattice_wide": "layout withheld",
+        "per_block": "all Cycle640 blocks",
+        "per_element": "matrix equality",
+        "per_mode": "Boolean basis and coherent extension",
+        "per_site": "at most two M2"
+      },
+      {
+        "claim": "support three is lowered",
+        "lattice_wide": "nearest-neighbour withheld",
+        "per_block": "endpoint and packet",
+        "per_element": "X/H/T/Tdg/CNOT",
+        "per_mode": "no ancilla",
+        "per_site": "support <=2"
+      },
+      {
+        "claim": "truth tables persist",
+        "lattice_wide": "finite L3/L6/L7 only",
+        "per_block": "256 and 4096 controls",
+        "per_element": "replacement theorem",
+        "per_mode": "all basis inputs",
+        "per_site": "local"
+      },
+      {
+        "claim": "the packet is reversible",
+        "lattice_wide": "not time",
+        "per_block": "predecessor/K16",
+        "per_element": "dagger inverse",
+        "per_mode": "lawful domain",
+        "per_site": "work returned"
+      },
+      {
+        "claim": "no law-level closure follows",
+        "lattice_wide": "occurrence/Record/time open",
+        "per_block": "interface only",
+        "per_element": "gate law supplied",
+        "per_mode": "ports supplied",
+        "per_site": "pointer candidate"
+      }
+    ],
+    "N6_partial_closure_paths": [
+      {
+        "file": "scripts/physical_endpoint_packet_support_two_lowering_cycle645_2026_07_23.py",
+        "status": "EXECUTED_ENDPOINT_SUPPORT_TWO",
+        "what_closes": "Cycle640 endpoint elementary-gate support"
+      },
+      {
+        "file": "scripts/physical_endpoint_packet_support_two_lowering_cycle645_2026_07_23.py",
+        "status": "EXECUTED_PACKET_SUPPORT_TWO",
+        "what_closes": "Cycle640 predecessor/K16 packet elementary-gate support"
+      },
+      {
+        "file": "scripts/physical_endpoint_packet_support_two_lowering_cycle645_2026_07_23.py",
+        "status": "OPEN_NEAREST_NEIGHBOUR_PLACEMENT",
+        "what_closes": "one fixed physical coordinate route for the packet roles"
+      },
+      {
+        "file": "scripts/physical_endpoint_packet_support_two_lowering_cycle645_2026_07_23.py",
+        "status": "OPEN_OCCURRENCE_AND_ADMISSION",
+        "what_closes": "law-level actuality/admissibility ports"
+      }
+    ],
+    "N7_hostile_steelman": {
+      "actionable": true,
+      "argument": "The exact support-two factorization still needs one fixed nearest-neighbour placement and autonomous schedule on the actual packet roles; Cycle527 proves such routing only for a different pre-seam decoder.",
+      "decisive_test": "literal packet coordinates, adjacent calls, conflict-free schedule, inverse, deletion, L3/L6/L7, all24/all576",
+      "mechanism": "route each one/two-M2 primitive through installed blank physical sites and return all transport work",
+      "supporting_citations": [
+        {
+          "line": 78,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_NATIVE_SHADOW_NEAREST_NEIGHBOR_ROUTER_CYCLE527_NOTE_2026-07-21.md",
+          "ref": "c27f72ff8b1058d872695829c05e95da415813bc"
+        },
+        {
+          "line": 121,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_ENDPOINT_PACKET_SUPPORT_TWO_LOWERING_CYCLE645_NOTE_2026-07-23.md",
+          "ref": "WORKTREE_CYCLE645"
+        }
+      ]
+    },
+    "N7_steelman": {
+      "actionable": true,
+      "argument": "The exact support-two factorization still needs one fixed nearest-neighbour placement and autonomous schedule on the actual packet roles; Cycle527 proves such routing only for a different pre-seam decoder.",
+      "decisive_test": "literal packet coordinates, adjacent calls, conflict-free schedule, inverse, deletion, L3/L6/L7, all24/all576",
+      "mechanism": "route each one/two-M2 primitive through installed blank physical sites and return all transport work",
+      "supporting_citations": [
+        {
+          "line": 78,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_NATIVE_SHADOW_NEAREST_NEIGHBOR_ROUTER_CYCLE527_NOTE_2026-07-21.md",
+          "ref": "c27f72ff8b1058d872695829c05e95da415813bc"
+        },
+        {
+          "line": 121,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_ENDPOINT_PACKET_SUPPORT_TWO_LOWERING_CYCLE645_NOTE_2026-07-23.md",
+          "ref": "WORKTREE_CYCLE645"
+        }
+      ]
+    },
+    "N8_cross_cycle_echo": [
+      {
+        "applicability": "direct primitive identity",
+        "citation_line": 204,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_PROTECTED_SHADOW_COIN_GATE_COMPILER_CYCLE523_NOTE_2026-07-21.md",
+        "citation_ref": "c27f72ff8b1058d872695829c05e95da415813bc",
+        "cycle": 523,
+        "mechanism": "exact 15-gate no-ancilla sequence",
+        "retired": "support-three Toffoli import for its decoder"
+      },
+      {
+        "applicability": "constructive template, not packet back-credit",
+        "citation_line": 78,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_NATIVE_SHADOW_NEAREST_NEIGHBOR_ROUTER_CYCLE527_NOTE_2026-07-21.md",
+        "citation_ref": "c27f72ff8b1058d872695829c05e95da415813bc",
+        "cycle": 527,
+        "mechanism": "state-carried SWAP/CNOT paths",
+        "retired": "NN routing for a different decoder"
+      },
+      {
+        "applicability": "direct lowering target",
+        "citation_line": 44,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_M2_ENDPOINT_INTERVAL_PACKET_INTERFACE_CYCLE640_NOTE_2026-07-23.md",
+        "citation_ref": "c27f72ff8b1058d872695829c05e95da415813bc",
+        "cycle": 640,
+        "mechanism": "reversible endpoint and predecessor/K16 cells",
+        "retired": "bounded support-three packet"
+      }
+    ],
+    "Status": "PASS",
+    "axiom_pressure": false,
+    "axiom_pressure_claim": false,
+    "broad_no_go_claim": false,
+    "minimum_content_claim": false,
+    "pass": true,
+    "shared_obstruction_claim": false,
+    "shared_route_independent_obstruction": false
+  },
+  "note_contract": {
+    "accepted_false": true,
+    "audit_unset": true,
+    "authority_none": true,
+    "missing_sections": [],
+    "pass": true
+  },
+  "note_sha256": "88f308ae0131b5c644ad711ac82242b19a327533e01ab6167dac4d5fca7acd1c",
+  "occurrence_Record_or_time_claimed": false,
+  "packet_lowering": {
+    "high_level_gate_count": 52,
+    "maximum_inverse_residual": 4.440892098500626e-16,
+    "maximum_matrix_residual": 3.1401849173675503e-16,
+    "maximum_primitive_support_M2": 2,
+    "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+    "pass": true,
+    "primitive_counts": {
+      "CNOT": 294,
+      "H": 96,
+      "T": 192,
+      "Tdg": 144
+    },
+    "primitive_gate_count": 726,
+    "rows": [
+      {
+        "controls": [
+          [
+            "pkt_token",
+            1
+          ],
+          [
+            "src_head",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_admit_and_compute_0",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "u_admit_and_0",
+            1
+          ],
+          [
+            "src_valid",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_admit_and_compute_1",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "u_admit_and_1",
+            1
+          ],
+          [
+            "port_binder",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_admit_and_compute_2",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "u_admit_and_2",
+            1
+          ],
+          [
+            "port_actuality",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_admit_and_compute_3",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "u_admit_and_3",
+            1
+          ],
+          [
+            "port_admissibility",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_admit_and_compute_4",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "u_admit_and_4",
+            1
+          ],
+          [
+            "port_law_domain",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_admit_and_compute_5",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "u_admit_and_5",
+            1
+          ],
+          [
+            "pkt_identity_0",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_identity_copy_0",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "u_admit_and_5",
+            1
+          ],
+          [
+            "src_identity_0",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_predecessor_copy_0",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "u_admit_and_5",
+            1
+          ],
+          [
+            "pkt_identity_1",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_identity_copy_1",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "u_admit_and_5",
+            1
+          ],
+          [
+            "src_identity_1",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_predecessor_copy_1",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "u_admit_and_5",
+            1
+          ],
+          [
+            "pkt_identity_2",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_identity_copy_2",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "u_admit_and_5",
+            1
+          ],
+          [
+            "src_identity_2",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_predecessor_copy_2",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "u_admit_and_5",
+            1
+          ],
+          [
+            "pkt_identity_3",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_identity_copy_3",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "u_admit_and_5",
+            1
+          ],
+          [
+            "src_identity_3",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_predecessor_copy_3",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "u_admit_and_5",
+            1
+          ],
+          [
+            "pkt_identity_4",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_identity_copy_4",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "u_admit_and_5",
+            1
+          ],
+          [
+            "src_identity_4",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_predecessor_copy_4",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "u_admit_and_5",
+            1
+          ],
+          [
+            "pkt_identity_5",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_identity_copy_5",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "u_admit_and_5",
+            1
+          ],
+          [
+            "src_identity_5",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_predecessor_copy_5",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "u_admit_and_5",
+            1
+          ],
+          [
+            "src_rotor_0",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_rotor_copy_0",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "u_admit_and_5",
+            1
+          ],
+          [
+            "src_rotor_1",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_rotor_copy_1",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "u_admit_and_5",
+            1
+          ],
+          [
+            "src_rotor_2",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_rotor_copy_2",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "u_admit_and_5",
+            1
+          ],
+          [
+            "src_rotor_3",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_rotor_copy_3",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "u_admit_and_5",
+            1
+          ]
+        ],
+        "high_level_support": 2,
+        "inverse_residual": 0.0,
+        "kind": "toggle",
+        "label": "u_rotor_increment_bit0",
+        "matrix_residual": 0.0,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 2.0,
+        "primitive_count": 1,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "u_admit_and_5",
+            1
+          ],
+          [
+            "src_rotor_0",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_rotor_increment_bit1",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "src_rotor_0",
+            1
+          ],
+          [
+            "src_rotor_1",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_inc2_and_compute_0",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "u_admit_and_5",
+            1
+          ],
+          [
+            "u_inc2_and_0",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_rotor_increment_bit2",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "src_rotor_0",
+            1
+          ],
+          [
+            "src_rotor_1",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_inc2_and_uncompute_0",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "src_rotor_0",
+            1
+          ],
+          [
+            "src_rotor_1",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_inc3_and_compute_0",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "u_inc3_and_0",
+            1
+          ],
+          [
+            "src_rotor_2",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_inc3_and_compute_1",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "u_admit_and_5",
+            1
+          ],
+          [
+            "u_inc3_and_1",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_rotor_increment_bit3",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "u_inc3_and_0",
+            1
+          ],
+          [
+            "src_rotor_2",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_inc3_and_uncompute_1",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "src_rotor_0",
+            1
+          ],
+          [
+            "src_rotor_1",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_inc3_and_uncompute_0",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "src_rotor_0",
+            1
+          ],
+          [
+            "src_rotor_1",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_carry_and_compute_0",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "u_carry_and_0",
+            1
+          ],
+          [
+            "src_rotor_2",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_carry_and_compute_1",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "u_carry_and_1",
+            1
+          ],
+          [
+            "src_rotor_3",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_carry_and_compute_2",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "u_admit_and_5",
+            1
+          ],
+          [
+            "u_carry_and_2",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_carry_set",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "u_carry_and_1",
+            1
+          ],
+          [
+            "src_rotor_3",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_carry_and_uncompute_2",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "u_carry_and_0",
+            1
+          ],
+          [
+            "src_rotor_2",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_carry_and_uncompute_1",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "src_rotor_0",
+            1
+          ],
+          [
+            "src_rotor_1",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_carry_and_uncompute_0",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "u_admit_and_5",
+            1
+          ]
+        ],
+        "high_level_support": 2,
+        "inverse_residual": 0.0,
+        "kind": "toggle",
+        "label": "u_binder_copy",
+        "matrix_residual": 0.0,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 2.0,
+        "primitive_count": 1,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "u_admit_and_5",
+            1
+          ],
+          [
+            "pkt_orientation",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_orientation_copy",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "u_admit_and_5",
+            1
+          ],
+          [
+            "pkt_channel_sign",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_channel_copy",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "u_admit_and_5",
+            1
+          ],
+          [
+            "pkt_tick_convention",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_convention_copy",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "u_admit_and_5",
+            1
+          ]
+        ],
+        "high_level_support": 2,
+        "inverse_residual": 0.0,
+        "kind": "toggle",
+        "label": "u_valid_set",
+        "matrix_residual": 0.0,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 2.0,
+        "primitive_count": 1,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "u_admit_and_4",
+            1
+          ],
+          [
+            "port_law_domain",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_admit_and_uncompute_5",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "u_admit_and_3",
+            1
+          ],
+          [
+            "port_admissibility",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_admit_and_uncompute_4",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "u_admit_and_2",
+            1
+          ],
+          [
+            "port_actuality",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_admit_and_uncompute_3",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "u_admit_and_1",
+            1
+          ],
+          [
+            "port_binder",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_admit_and_uncompute_2",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "u_admit_and_0",
+            1
+          ],
+          [
+            "src_valid",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_admit_and_uncompute_1",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "pkt_token",
+            1
+          ],
+          [
+            "src_head",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "toggle",
+        "label": "u_admit_and_uncompute_0",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 15,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "tgt_valid",
+            1
+          ]
+        ],
+        "high_level_support": 2,
+        "inverse_residual": 0.0,
+        "kind": "toggle",
+        "label": "u_token_consume",
+        "matrix_residual": 0.0,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 2.0,
+        "primitive_count": 1,
+        "target_count": 1
+      },
+      {
+        "controls": [
+          [
+            "tgt_valid",
+            1
+          ]
+        ],
+        "high_level_support": 3,
+        "inverse_residual": 4.440892098500626e-16,
+        "kind": "swap",
+        "label": "u_head_move",
+        "matrix_residual": 3.1401849173675503e-16,
+        "maximum_primitive_support_M2": 2,
+        "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+        "primitive_count": 17,
+        "target_count": 2
+      }
+    ]
+  },
+  "pass": true,
+  "polarity_templates": {
+    "fredkin_0": {
+      "high_level_gate_count": 1,
+      "maximum_inverse_residual": 4.440892098500626e-16,
+      "maximum_matrix_residual": 3.1401849173675503e-16,
+      "maximum_primitive_support_M2": 2,
+      "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+      "pass": true,
+      "primitive_counts": {
+        "CNOT": 8,
+        "H": 2,
+        "T": 4,
+        "Tdg": 3,
+        "X": 2
+      },
+      "primitive_gate_count": 19,
+      "rows": [
+        {
+          "controls": [
+            [
+              "c",
+              0
+            ]
+          ],
+          "high_level_support": 3,
+          "inverse_residual": 4.440892098500626e-16,
+          "kind": "swap",
+          "label": "fredkin_0",
+          "matrix_residual": 3.1401849173675503e-16,
+          "maximum_primitive_support_M2": 2,
+          "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+          "primitive_count": 19,
+          "target_count": 2
+        }
+      ]
+    },
+    "fredkin_1": {
+      "high_level_gate_count": 1,
+      "maximum_inverse_residual": 4.440892098500626e-16,
+      "maximum_matrix_residual": 3.1401849173675503e-16,
+      "maximum_primitive_support_M2": 2,
+      "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+      "pass": true,
+      "primitive_counts": {
+        "CNOT": 8,
+        "H": 2,
+        "T": 4,
+        "Tdg": 3
+      },
+      "primitive_gate_count": 17,
+      "rows": [
+        {
+          "controls": [
+            [
+              "c",
+              1
+            ]
+          ],
+          "high_level_support": 3,
+          "inverse_residual": 4.440892098500626e-16,
+          "kind": "swap",
+          "label": "fredkin_1",
+          "matrix_residual": 3.1401849173675503e-16,
+          "maximum_primitive_support_M2": 2,
+          "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+          "primitive_count": 17,
+          "target_count": 2
+        }
+      ]
+    },
+    "toggle_0": {
+      "high_level_gate_count": 1,
+      "maximum_inverse_residual": 0.0,
+      "maximum_matrix_residual": 0.0,
+      "maximum_primitive_support_M2": 2,
+      "minimum_single_primitive_deletion_signal": 2.0,
+      "pass": true,
+      "primitive_counts": {
+        "CNOT": 1,
+        "X": 2
+      },
+      "primitive_gate_count": 3,
+      "rows": [
+        {
+          "controls": [
+            [
+              "c0",
+              0
+            ]
+          ],
+          "high_level_support": 2,
+          "inverse_residual": 0.0,
+          "kind": "toggle",
+          "label": "toggle_0",
+          "matrix_residual": 0.0,
+          "maximum_primitive_support_M2": 2,
+          "minimum_single_primitive_deletion_signal": 2.0,
+          "primitive_count": 3,
+          "target_count": 1
+        }
+      ]
+    },
+    "toggle_00": {
+      "high_level_gate_count": 1,
+      "maximum_inverse_residual": 4.440892098500626e-16,
+      "maximum_matrix_residual": 3.1401849173675503e-16,
+      "maximum_primitive_support_M2": 2,
+      "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+      "pass": true,
+      "primitive_counts": {
+        "CNOT": 6,
+        "H": 2,
+        "T": 4,
+        "Tdg": 3,
+        "X": 4
+      },
+      "primitive_gate_count": 19,
+      "rows": [
+        {
+          "controls": [
+            [
+              "c0",
+              0
+            ],
+            [
+              "c1",
+              0
+            ]
+          ],
+          "high_level_support": 3,
+          "inverse_residual": 4.440892098500626e-16,
+          "kind": "toggle",
+          "label": "toggle_00",
+          "matrix_residual": 3.1401849173675503e-16,
+          "maximum_primitive_support_M2": 2,
+          "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+          "primitive_count": 19,
+          "target_count": 1
+        }
+      ]
+    },
+    "toggle_01": {
+      "high_level_gate_count": 1,
+      "maximum_inverse_residual": 4.440892098500626e-16,
+      "maximum_matrix_residual": 3.1401849173675503e-16,
+      "maximum_primitive_support_M2": 2,
+      "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+      "pass": true,
+      "primitive_counts": {
+        "CNOT": 6,
+        "H": 2,
+        "T": 4,
+        "Tdg": 3,
+        "X": 2
+      },
+      "primitive_gate_count": 17,
+      "rows": [
+        {
+          "controls": [
+            [
+              "c0",
+              0
+            ],
+            [
+              "c1",
+              1
+            ]
+          ],
+          "high_level_support": 3,
+          "inverse_residual": 4.440892098500626e-16,
+          "kind": "toggle",
+          "label": "toggle_01",
+          "matrix_residual": 3.1401849173675503e-16,
+          "maximum_primitive_support_M2": 2,
+          "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+          "primitive_count": 17,
+          "target_count": 1
+        }
+      ]
+    },
+    "toggle_1": {
+      "high_level_gate_count": 1,
+      "maximum_inverse_residual": 0.0,
+      "maximum_matrix_residual": 0.0,
+      "maximum_primitive_support_M2": 2,
+      "minimum_single_primitive_deletion_signal": 2.0,
+      "pass": true,
+      "primitive_counts": {
+        "CNOT": 1
+      },
+      "primitive_gate_count": 1,
+      "rows": [
+        {
+          "controls": [
+            [
+              "c0",
+              1
+            ]
+          ],
+          "high_level_support": 2,
+          "inverse_residual": 0.0,
+          "kind": "toggle",
+          "label": "toggle_1",
+          "matrix_residual": 0.0,
+          "maximum_primitive_support_M2": 2,
+          "minimum_single_primitive_deletion_signal": 2.0,
+          "primitive_count": 1,
+          "target_count": 1
+        }
+      ]
+    },
+    "toggle_10": {
+      "high_level_gate_count": 1,
+      "maximum_inverse_residual": 4.440892098500626e-16,
+      "maximum_matrix_residual": 3.1401849173675503e-16,
+      "maximum_primitive_support_M2": 2,
+      "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+      "pass": true,
+      "primitive_counts": {
+        "CNOT": 6,
+        "H": 2,
+        "T": 4,
+        "Tdg": 3,
+        "X": 2
+      },
+      "primitive_gate_count": 17,
+      "rows": [
+        {
+          "controls": [
+            [
+              "c0",
+              1
+            ],
+            [
+              "c1",
+              0
+            ]
+          ],
+          "high_level_support": 3,
+          "inverse_residual": 4.440892098500626e-16,
+          "kind": "toggle",
+          "label": "toggle_10",
+          "matrix_residual": 3.1401849173675503e-16,
+          "maximum_primitive_support_M2": 2,
+          "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+          "primitive_count": 17,
+          "target_count": 1
+        }
+      ]
+    },
+    "toggle_11": {
+      "high_level_gate_count": 1,
+      "maximum_inverse_residual": 4.440892098500626e-16,
+      "maximum_matrix_residual": 3.1401849173675503e-16,
+      "maximum_primitive_support_M2": 2,
+      "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+      "pass": true,
+      "primitive_counts": {
+        "CNOT": 6,
+        "H": 2,
+        "T": 4,
+        "Tdg": 3
+      },
+      "primitive_gate_count": 15,
+      "rows": [
+        {
+          "controls": [
+            [
+              "c0",
+              1
+            ],
+            [
+              "c1",
+              1
+            ]
+          ],
+          "high_level_support": 3,
+          "inverse_residual": 4.440892098500626e-16,
+          "kind": "toggle",
+          "label": "toggle_11",
+          "matrix_residual": 3.1401849173675503e-16,
+          "maximum_primitive_support_M2": 2,
+          "minimum_single_primitive_deletion_signal": 1.5307337294603587,
+          "primitive_count": 15,
+          "target_count": 1
+        }
+      ]
+    }
+  },
+  "runner_sha256": "9a08e797ea5962d6975a73494a36fa8894e5c5a9191cb179a0a9aacc84820d09",
+  "shared_route_independent_obstruction": false,
+  "six_wall_ledger": {
+    "C_int": "endpoint/packet Boolean interaction now elementary support two; occurrence/admission remain law-level ports",
+    "C_local": "advanced for Cycle640 interface; fixed nearest-neighbour role placement remains open",
+    "C_num": "unchanged; exact coherent unitary lowering introduces no numerical fit",
+    "C_ref": "unchanged; blank roles, identity and reference genesis remain supplied",
+    "C_source": "unchanged; no source, gravity, energy or resource genesis is derived",
+    "C_wrap": "support-three packet gate import retired; packet counts remain not time"
+  },
+  "status": "positive exact Cycle640 support-two elementary lowering; NN layout and law-level occurrence open",
+  "strongest_constructive_result": "all Cycle640 endpoint and predecessor/K16 packet gates have exact no-ancilla X/H/T/T-dagger/CNOT replacements with maximum physical support two",
+  "supplied_structure": [
+    "immutable Cycle640 Boolean endpoint/packet circuit and lawful domain",
+    "candidate physical X/H/T/T-dagger/CNOT matrices",
+    "the standard exact no-ancilla Toffoli identity",
+    "named endpoint roles, packet roles, truth inputs, and port meanings",
+    "finite L3/L6/L7 size family and compile-time proper-cubic labels"
+  ],
+  "tests_failed": 0,
+  "tests_passed": 8,
+  "unchanged_Cycle640_controls": {
+    "covariance": {
+      "crossing_orientation_channel_and_convention_are_spatial_scalars": true,
+      "ordered_frame_products": 576,
+      "pass": true,
+      "proper_cubic_frames": 24,
+      "reference_ray_and_bank_direction_supplied": true,
+      "rows": [
+        {
+          "all24_bijection_failures": 0,
+          "all576_group_failures": 0,
+          "constant_overhead_per_event_cell": true,
+          "endpoint_M2_per_local_packet": 18,
+          "interval_cell_M2": 23,
+          "length": 3,
+          "oriented_apparatus_labels": 48,
+          "split": "construction"
+        },
+        {
+          "all24_bijection_failures": 0,
+          "all576_group_failures": 0,
+          "constant_overhead_per_event_cell": true,
+          "endpoint_M2_per_local_packet": 18,
+          "interval_cell_M2": 23,
+          "length": 6,
+          "oriented_apparatus_labels": 48,
+          "split": "train"
+        },
+        {
+          "all24_bijection_failures": 0,
+          "all576_group_failures": 0,
+          "constant_overhead_per_event_cell": true,
+          "endpoint_M2_per_local_packet": 18,
+          "interval_cell_M2": 23,
+          "length": 7,
+          "oriented_apparatus_labels": 48,
+          "split": "held-out-no-refit"
+        }
+      ],
+      "runtime_frame_selector": false,
+      "spatial_ray_transported": true
+    },
+    "endpoint": {
+      "channel_certification_and_convention_certificate_supplied": true,
+      "channel_or_convention_selected_by_host_at_runtime": false,
+      "channel_sign_port": "one retained M2 copied into a valid certificate; 0=plus, 1=minus",
+      "crossing_orientation_port": "one retained M2; invariant under spatial proper-cubic frames",
+      "deletion_rows": [
+        {
+          "deleted_gate": "p0_endpoint_and_compute_0",
+          "full_inverse_visible_hamming": 1,
+          "output_hamming": 7
+        },
+        {
+          "deleted_gate": "p0_certificate_emit",
+          "full_inverse_visible_hamming": 1,
+          "output_hamming": 6
+        },
+        {
+          "deleted_gate": "p0_orientation_copy",
+          "full_inverse_visible_hamming": 1,
+          "output_hamming": 1
+        },
+        {
+          "deleted_gate": "p0_channel_copy",
+          "full_inverse_visible_hamming": 1,
+          "output_hamming": 1
+        },
+        {
+          "deleted_gate": "p0_convention_copy",
+          "full_inverse_visible_hamming": 1,
+          "output_hamming": 1
+        },
+        {
+          "deleted_gate": "p0_token_emit",
+          "full_inverse_visible_hamming": 1,
+          "output_hamming": 1
+        },
+        {
+          "deleted_gate": "p0_endpoint_and_uncompute_0",
+          "full_inverse_visible_hamming": 2,
+          "output_hamming": 1
+        },
+        {
+          "deleted_gate": "p0_claim_latch",
+          "full_inverse_visible_hamming": 2,
+          "output_hamming": 1
+        }
+      ],
+      "duplicate_second_certificate_refused": true,
+      "line_agnostic_hardware": true,
+      "pass": true,
+      "predicate": "contact_pointer AND crossing AND channel_certified AND convention_certified AND NOT claimed",
+      "resources": {
+        "echo_pointer_M2": 1,
+        "endpoint_boolean_input_M2_including_pointer": 8,
+        "endpoint_output_M2": 5,
+        "endpoint_work_M2": 4,
+        "gate_count": 14,
+        "local_contact_eigenflag_M2": 1,
+        "maximum_gate_support_M2": 3,
+        "total_distinct_local_M2": 18
+      },
+      "second_A2_line_or_root_used": false,
+      "tick_convention_port": "one retained M2 copied into a valid certificate; 0=T1, 1=T2",
+      "truth_table_failures": 0,
+      "truth_table_rows": 256,
+      "work_returned_blank": true
+    },
+    "packet": {
+      "basis_case_failures": 0,
+      "basis_cases_exhausted": 4096,
+      "binder_deletion_blocks_opportunity": true,
+      "blank_target_genesis_supplied_not_autonomous": true,
+      "deletion_rows": [
+        {
+          "deleted_gate": "u_predecessor_copy_0",
+          "full_inverse_visible_hamming": 1,
+          "output_hamming": 1
+        },
+        {
+          "deleted_gate": "u_rotor_increment_bit0",
+          "full_inverse_visible_hamming": 1,
+          "output_hamming": 1
+        },
+        {
+          "deleted_gate": "u_carry_set",
+          "full_inverse_visible_hamming": 1,
+          "output_hamming": 1
+        },
+        {
+          "deleted_gate": "u_binder_copy",
+          "full_inverse_visible_hamming": 1,
+          "output_hamming": 1
+        },
+        {
+          "deleted_gate": "u_orientation_copy",
+          "full_inverse_visible_hamming": 1,
+          "output_hamming": 1
+        },
+        {
+          "deleted_gate": "u_valid_set",
+          "full_inverse_visible_hamming": 1,
+          "output_hamming": 4
+        },
+        {
+          "deleted_gate": "u_admit_and_uncompute_0",
+          "full_inverse_visible_hamming": 13,
+          "output_hamming": 1
+        },
+        {
+          "deleted_gate": "u_token_consume",
+          "full_inverse_visible_hamming": 13,
+          "output_hamming": 1
+        },
+        {
+          "deleted_gate": "u_head_move",
+          "full_inverse_visible_hamming": 14,
+          "output_hamming": 2
+        }
+      ],
+      "exactly_once": true,
+      "explicit_port_deletions": [
+        {
+          "admission_refused": true,
+          "deleted_port": "actuality"
+        },
+        {
+          "admission_refused": true,
+          "deleted_port": "admissibility"
+        },
+        {
+          "admission_refused": true,
+          "deleted_port": "law_domain"
+        }
+      ],
+      "pass": true,
+      "predecessor_source": "identity copied from the adjacent cell carrying the unique local head marker",
+      "resources": {
+        "cell_M2": 23,
+        "declared_maximum_identity": 63,
+        "explicit_admission_port_M2": 4,
+        "gate_count": 52,
+        "gate_counts": {
+          "swap": 1,
+          "toggle": 51
+        },
+        "identity_width_bits": 6,
+        "maximum_gate_support_M2": 3,
+        "packet_M2": 10,
+        "two_cell_packet_and_work_neighborhood_M2": 72,
+        "work_M2": 12
+      },
+      "second_attempt_work_blank": true,
+      "target_blank_local_input_constraints": [
+        {
+          "bit": "tgt_identity_0",
+          "declared_blank_code_refuses": true
+        },
+        {
+          "bit": "tgt_identity_1",
+          "declared_blank_code_refuses": true
+        },
+        {
+          "bit": "tgt_identity_2",
+          "declared_blank_code_refuses": true
+        },
+        {
+          "bit": "tgt_identity_3",
+          "declared_blank_code_refuses": true
+        },
+        {
+          "bit": "tgt_identity_4",
+          "declared_blank_code_refuses": true
+        },
+        {
+          "bit": "tgt_identity_5",
+          "declared_blank_code_refuses": true
+        },
+        {
+          "bit": "tgt_predecessor_0",
+          "declared_blank_code_refuses": true
+        },
+        {
+          "bit": "tgt_predecessor_1",
+          "declared_blank_code_refuses": true
+        },
+        {
+          "bit": "tgt_predecessor_2",
+          "declared_blank_code_refuses": true
+        },
+        {
+          "bit": "tgt_predecessor_3",
+          "declared_blank_code_refuses": true
+        },
+        {
+          "bit": "tgt_predecessor_4",
+          "declared_blank_code_refuses": true
+        },
+        {
+          "bit": "tgt_predecessor_5",
+          "declared_blank_code_refuses": true
+        },
+        {
+          "bit": "tgt_rotor_0",
+          "declared_blank_code_refuses": true
+        },
+        {
+          "bit": "tgt_rotor_1",
+          "declared_blank_code_refuses": true
+        },
+        {
+          "bit": "tgt_rotor_2",
+          "declared_blank_code_refuses": true
+        },
+        {
+          "bit": "tgt_rotor_3",
+          "declared_blank_code_refuses": true
+        },
+        {
+          "bit": "tgt_carry",
+          "declared_blank_code_refuses": true
+        },
+        {
+          "bit": "tgt_binder",
+          "declared_blank_code_refuses": true
+        },
+        {
+          "bit": "tgt_valid",
+          "declared_blank_code_refuses": true
+        },
+        {
+          "bit": "tgt_orientation",
+          "declared_blank_code_refuses": true
+        },
+        {
+          "bit": "tgt_channel",
+          "declared_blank_code_refuses": true
+        },
+        {
+          "bit": "tgt_convention",
+          "declared_blank_code_refuses": true
+        },
+        {
+          "bit": "tgt_head",
+          "declared_blank_code_refuses": true
+        }
+      ],
+      "update": "one-use packet token AND local source head/valid AND binder/actuality/admissibility/law-domain; copy identity/predecessor/metadata; increment K16; K15->K0 carry; consume token; move head"
+    },
+    "pass": true
+  }
+}

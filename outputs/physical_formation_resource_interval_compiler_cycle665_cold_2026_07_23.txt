@@ -1,0 +1,16 @@
+PASS exact target frozen before evidence load :: {'target_contract_sha256': 'e9618c5e8224dad1e4e2351ab838bc785567d1c9d01b9594a82b3317ba6e9fad', 'target_line': 6, 'first_evidence_load_line': 161, 'frozen_before_evidence': True, 'proof_search_governance_exact_fields': ['allowed_premises', 'completion_witness', 'forbidden_weakenings', 'outcomes_not_closure', 'quantifiers_domain', 'required_edge_cases', 'target_statement'], 'pass': True}
+PASS Cycle559/Cycle591/Cycle612/Cycle662 immutable shores :: {'Cycle559_pass': True, 'Cycle559_authority_audit': ['none', 'unset'], 'Cycle591_tests': [16, 0], 'Cycle591_authority_audit': ['none', 'unset'], 'Cycle612_pass': True, 'Cycle612_interval_pass': True, 'Cycle662_pass': True, 'Cycle662_tests': [9, 0]}
+PASS all Cycle662 train and blinded held branches compile to current plus endpoint :: {'rows': 170, 'live': 161, 'held_live': 66}
+PASS train/held finite capacity, saturation, inverse, and M2 accounting :: {'capacities': [3, 4, 6], 'M2': [2187, 2916, 4374]}
+PASS exact local current conservation and all24/all576 covariance :: {'current': 144, 'group': 3456}
+PASS inverse/deletion/malformed/saturation and semantic firewalls :: {'deletions': 17, 'malformed': 6}
+PASS fresh N1-N8 scoped-wall discipline :: {'families': 5, 'walls': ('W_endpoint_predecessor_genesis', 'W_joint_non_erasing_renewal')}
+PASS canonical N1-N8 schema and all negative gates :: {'Status_PASS': True, 'gates': True, 'flags': True, 'N1': True, 'N2': True, 'N4': True, 'N5': True, 'N6': True, 'N7': True, 'N8': True, 'pass': True}
+PASS top-level candidate/strict/breakthrough and negative gates :: {'Status': True, 'gates': True, 'flags': True, 'strict_false': True, 'candidate_true': True, 'breakthrough_false': True, 'pass': True}
+PASS Cycle665 note semantic contract :: []
+{
+  "pass": true,
+  "tests": "10/10",
+  "elapsed": 1.3428715420886874,
+  "receipt": "/private/tmp/toe-science.BB0KQV/outputs/physical_formation_resource_interval_compiler_cycle665_receipt_2026_07_23.json"
+}

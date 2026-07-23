@@ -1,0 +1,2990 @@
+{
+  "Status": "PASS",
+  "audit": "unset",
+  "authority": "none",
+  "axiom_pressure": false,
+  "axiom_pressure_claim": false,
+  "axiom_pressure_gate": "FAIL / DO NOT SHIP",
+  "axiom_pressure_shipped": false,
+  "breakthrough": false,
+  "broad_negative_gate": "FAIL / DO NOT SHIP",
+  "broad_negative_shipped": false,
+  "broad_no_go_claim": false,
+  "canonical_claim_gate_contract": {
+    "N1": true,
+    "N2": true,
+    "N4": true,
+    "N5": true,
+    "N6": true,
+    "N7": true,
+    "N8": true,
+    "Status_PASS": true,
+    "flags": true,
+    "gates": true,
+    "pass": true
+  },
+  "classification": "exact interface-level fixed local compiler over immutable physical shores",
+  "constitutional_effect": "none",
+  "covariance": {
+    "compile_time_frame_transport": true,
+    "continuity_failures": 0,
+    "cube_all24_failures": 0,
+    "direction_current_comparisons": 144,
+    "direction_group_comparisons": 3456,
+    "direction_group_failures": 0,
+    "inverse_MINUS_current_failures": 0,
+    "ordered_frame_products": 576,
+    "pass": true,
+    "proper_cubic_frames": 24,
+    "runtime_frame_selector": false,
+    "scalar_packet_transport_failures": 0,
+    "transported_register_chart_all576_failures": 0,
+    "transported_register_chart_failures": 0
+  },
+  "cycle": 665,
+  "date": "2026-07-23",
+  "deletion_and_domain": {
+    "composite_gate_truth_failures": 0,
+    "composite_gate_truth_rows": [
+      {
+        "binder": 0,
+        "expected": 0,
+        "fired": 0,
+        "formation_live": 0,
+        "law_domain": 0,
+        "matter": 0
+      },
+      {
+        "binder": 0,
+        "expected": 0,
+        "fired": 0,
+        "formation_live": 0,
+        "law_domain": 1,
+        "matter": 0
+      },
+      {
+        "binder": 1,
+        "expected": 0,
+        "fired": 0,
+        "formation_live": 0,
+        "law_domain": 0,
+        "matter": 0
+      },
+      {
+        "binder": 1,
+        "expected": 0,
+        "fired": 0,
+        "formation_live": 0,
+        "law_domain": 1,
+        "matter": 0
+      },
+      {
+        "binder": 0,
+        "expected": 0,
+        "fired": 0,
+        "formation_live": 0,
+        "law_domain": 0,
+        "matter": 1
+      },
+      {
+        "binder": 0,
+        "expected": 0,
+        "fired": 0,
+        "formation_live": 0,
+        "law_domain": 1,
+        "matter": 1
+      },
+      {
+        "binder": 1,
+        "expected": 0,
+        "fired": 0,
+        "formation_live": 0,
+        "law_domain": 0,
+        "matter": 1
+      },
+      {
+        "binder": 1,
+        "expected": 0,
+        "fired": 0,
+        "formation_live": 0,
+        "law_domain": 1,
+        "matter": 1
+      },
+      {
+        "binder": 0,
+        "expected": 0,
+        "fired": 0,
+        "formation_live": 1,
+        "law_domain": 0,
+        "matter": 0
+      },
+      {
+        "binder": 0,
+        "expected": 0,
+        "fired": 0,
+        "formation_live": 1,
+        "law_domain": 1,
+        "matter": 0
+      },
+      {
+        "binder": 1,
+        "expected": 0,
+        "fired": 0,
+        "formation_live": 1,
+        "law_domain": 0,
+        "matter": 0
+      },
+      {
+        "binder": 1,
+        "expected": 0,
+        "fired": 0,
+        "formation_live": 1,
+        "law_domain": 1,
+        "matter": 0
+      },
+      {
+        "binder": 0,
+        "expected": 0,
+        "fired": 0,
+        "formation_live": 1,
+        "law_domain": 0,
+        "matter": 1
+      },
+      {
+        "binder": 0,
+        "expected": 0,
+        "fired": 0,
+        "formation_live": 1,
+        "law_domain": 1,
+        "matter": 1
+      },
+      {
+        "binder": 1,
+        "expected": 0,
+        "fired": 0,
+        "formation_live": 1,
+        "law_domain": 0,
+        "matter": 1
+      },
+      {
+        "binder": 1,
+        "expected": 1,
+        "fired": 1,
+        "formation_live": 1,
+        "law_domain": 1,
+        "matter": 1
+      }
+    ],
+    "deleted_surfaces": 17,
+    "deletion_controls": {
+      "ADMIT": true,
+      "LOCK": true,
+      "Pd-compute": true,
+      "Pd-uncompute": true,
+      "binder-Toffoli": true,
+      "binding": true,
+      "branch": true,
+      "coherent-exhaust": true,
+      "current-EDGE": true,
+      "current-J+": true,
+      "endpoint-type": true,
+      "join-uncompute": true,
+      "occurrence": true,
+      "packet-replica-2": true,
+      "predecessor": true,
+      "ready-debit": true,
+      "spent-credit": true
+    },
+    "generator_entry_called_rate": false,
+    "malformed_rejections": 6,
+    "malformed_total": 6,
+    "packet_called_Record_or_proper_time": false,
+    "packet_called_realized_history": false,
+    "pass": true,
+    "pointer_copying_called_Record": false,
+    "saturated_or_malformed_event_debits_source": false,
+    "source_current_called_gravity": false,
+    "source_current_called_physical_energy": false
+  },
+  "elapsed_seconds": 1.3428715420886874,
+  "fixed_local_word": [
+    "Cycle662 stochastic branch update and retained coherent exhaust",
+    "Cycle612 Pd matter predicate compute",
+    "local conjunction of occurrence, binding, ADMIT, LOCK, matter, law-domain, packet-fresh, ready",
+    "ready-source debit and spent/exhaust credit",
+    "Cycle559 EDGE/J+/J- current-certificate write with EDGE reused from Cycle662",
+    "Cycle612 triplicate endpoint/predecessor/receipt packet append",
+    "Cycle612 Pd and join-work uncompute"
+  ],
+  "fixed_local_word_sha256": "c916dfa492b01ef410e87faff3133b7ebddbc5bd0a7800b85911bfff9d7a6f10",
+  "formation_interface_compiler": {
+    "Cycle662_state_rows": 25,
+    "actuality_lookup_calls": 0,
+    "all_Cycle662_coherent_exhaust_identity_untouched": true,
+    "branch_rows": 170,
+    "exhaust_tag_is_an_audit_checksum_not_a_physical_register": true,
+    "grade_lookup_calls": 0,
+    "held_biased_and_nonproduct_present": true,
+    "held_live_branch_rows": 66,
+    "held_state_types": [
+      "held_blind_biased",
+      "held_blind_nonproduct"
+    ],
+    "host_scheduler_calls": 0,
+    "inherited_maximum_CQ_entropy_ledger_residual": 5.852306811134284e-16,
+    "interface_failures": 0,
+    "inverse_failures": 0,
+    "lawful_unit_propensity_branch_rows": 1,
+    "live_branch_rows": 161,
+    "pass": true,
+    "physical_join_controls": [
+      "occurrence",
+      "binding",
+      "ADMIT",
+      "LOCK",
+      "Cycle612_Pd_matter",
+      "Cycle612_binder",
+      "law_domain",
+      "packet_blank",
+      "ready"
+    ],
+    "rejected_and_zero_interface_sectors_retained_as_explicit_no_fire_rows": true,
+    "row_and_branch_arguments_are_exhaustive_basis_fixtures_not_runtime_selectors": true,
+    "rows": [
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "ternary_trine",
+        "pattern": [
+          0,
+          0
+        ],
+        "propensity": 0.33333333333333315,
+        "split": "train",
+        "state": "train_zero"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "ternary_trine",
+        "pattern": [
+          0,
+          1
+        ],
+        "propensity": 0.33333333333333337,
+        "split": "train",
+        "state": "train_zero"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "ternary_trine",
+        "pattern": [
+          1,
+          0
+        ],
+        "propensity": 0.16666666666666663,
+        "split": "train",
+        "state": "train_zero"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "ternary_trine",
+        "pattern": [
+          1,
+          1
+        ],
+        "propensity": 0.1666666666666666,
+        "split": "train",
+        "state": "train_zero"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "ternary_trine",
+        "pattern": [
+          0,
+          0
+        ],
+        "propensity": 0.04465819873852039,
+        "split": "train",
+        "state": "train_plus_y"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "ternary_trine",
+        "pattern": [
+          0,
+          1
+        ],
+        "propensity": 0.6220084679281459,
+        "split": "train",
+        "state": "train_plus_y"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "ternary_trine",
+        "pattern": [
+          1,
+          0
+        ],
+        "propensity": 0.16666666666666657,
+        "split": "train",
+        "state": "train_plus_y"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "ternary_trine",
+        "pattern": [
+          1,
+          1
+        ],
+        "propensity": 0.16666666666666657,
+        "split": "train",
+        "state": "train_plus_y"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "ternary_trine",
+        "pattern": [
+          0,
+          0
+        ],
+        "propensity": 0.37960895300726594,
+        "split": "train",
+        "state": "train_mixed"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "ternary_trine",
+        "pattern": [
+          0,
+          1
+        ],
+        "propensity": 0.22372438032606712,
+        "split": "train",
+        "state": "train_mixed"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "ternary_trine",
+        "pattern": [
+          1,
+          0
+        ],
+        "propensity": 0.1983333333333333,
+        "split": "train",
+        "state": "train_mixed"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "ternary_trine",
+        "pattern": [
+          1,
+          1
+        ],
+        "propensity": 0.19833333333333325,
+        "split": "train",
+        "state": "train_mixed"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "ternary_trine",
+        "pattern": [
+          0,
+          0
+        ],
+        "propensity": 0.34271668269937766,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_biased"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "ternary_trine",
+        "pattern": [
+          0,
+          1
+        ],
+        "propensity": 0.5128760120029534,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_biased"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "ternary_trine",
+        "pattern": [
+          1,
+          0
+        ],
+        "propensity": 0.07220365264883437,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_biased"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "ternary_trine",
+        "pattern": [
+          1,
+          1
+        ],
+        "propensity": 0.07220365264883435,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_biased"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "ternary_trine",
+        "pattern": [
+          0,
+          0
+        ],
+        "propensity": 0.3333333333333332,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_nonproduct"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "ternary_trine",
+        "pattern": [
+          0,
+          1
+        ],
+        "propensity": 0.33333333333333326,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_nonproduct"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "ternary_trine",
+        "pattern": [
+          1,
+          0
+        ],
+        "propensity": 0.16666666666666663,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_nonproduct"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "ternary_trine",
+        "pattern": [
+          1,
+          1
+        ],
+        "propensity": 0.1666666666666666,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_nonproduct"
+      },
+      {
+        "fired": 0,
+        "live": false,
+        "menu": "scaled_axis_cancellation",
+        "pattern": [
+          0,
+          0,
+          0
+        ],
+        "propensity": 9.857225428255374e-32,
+        "split": "train",
+        "state": "train_zero"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "scaled_axis_cancellation",
+        "pattern": [
+          0,
+          0,
+          1
+        ],
+        "propensity": 0.21132486540518713,
+        "split": "train",
+        "state": "train_zero"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "scaled_axis_cancellation",
+        "pattern": [
+          0,
+          1,
+          0
+        ],
+        "propensity": 0.10566243270259361,
+        "split": "train",
+        "state": "train_zero"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "scaled_axis_cancellation",
+        "pattern": [
+          0,
+          1,
+          1
+        ],
+        "propensity": 0.10566243270259368,
+        "split": "train",
+        "state": "train_zero"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "scaled_axis_cancellation",
+        "pattern": [
+          1,
+          0,
+          0
+        ],
+        "propensity": 0.19245008972987526,
+        "split": "train",
+        "state": "train_zero"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "scaled_axis_cancellation",
+        "pattern": [
+          1,
+          0,
+          1
+        ],
+        "propensity": 0.19245008972987532,
+        "split": "train",
+        "state": "train_zero"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "scaled_axis_cancellation",
+        "pattern": [
+          1,
+          1,
+          0
+        ],
+        "propensity": 0.09622504486493778,
+        "split": "train",
+        "state": "train_zero"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "scaled_axis_cancellation",
+        "pattern": [
+          1,
+          1,
+          1
+        ],
+        "propensity": 0.09622504486493785,
+        "split": "train",
+        "state": "train_zero"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "scaled_axis_cancellation",
+        "pattern": [
+          0,
+          0,
+          0
+        ],
+        "propensity": 0.21132486540518658,
+        "split": "train",
+        "state": "train_plus_y"
+      },
+      {
+        "fired": 0,
+        "live": false,
+        "menu": "scaled_axis_cancellation",
+        "pattern": [
+          0,
+          0,
+          1
+        ],
+        "propensity": 3.851859888774472e-33,
+        "split": "train",
+        "state": "train_plus_y"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "scaled_axis_cancellation",
+        "pattern": [
+          0,
+          1,
+          0
+        ],
+        "propensity": 0.1056624327025936,
+        "split": "train",
+        "state": "train_plus_y"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "scaled_axis_cancellation",
+        "pattern": [
+          0,
+          1,
+          1
+        ],
+        "propensity": 0.1056624327025936,
+        "split": "train",
+        "state": "train_plus_y"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "scaled_axis_cancellation",
+        "pattern": [
+          1,
+          0,
+          0
+        ],
+        "propensity": 0.19245008972987512,
+        "split": "train",
+        "state": "train_plus_y"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "scaled_axis_cancellation",
+        "pattern": [
+          1,
+          0,
+          1
+        ],
+        "propensity": 0.19245008972987526,
+        "split": "train",
+        "state": "train_plus_y"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "scaled_axis_cancellation",
+        "pattern": [
+          1,
+          1,
+          0
+        ],
+        "propensity": 0.09622504486493774,
+        "split": "train",
+        "state": "train_plus_y"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "scaled_axis_cancellation",
+        "pattern": [
+          1,
+          1,
+          1
+        ],
+        "propensity": 0.09622504486493781,
+        "split": "train",
+        "state": "train_plus_y"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "scaled_axis_cancellation",
+        "pattern": [
+          0,
+          0,
+          0
+        ],
+        "propensity": 0.1415876598214751,
+        "split": "train",
+        "state": "train_mixed"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "scaled_axis_cancellation",
+        "pattern": [
+          0,
+          0,
+          1
+        ],
+        "propensity": 0.2683825790645876,
+        "split": "train",
+        "state": "train_mixed"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "scaled_axis_cancellation",
+        "pattern": [
+          0,
+          1,
+          0
+        ],
+        "propensity": 0.08558657048910079,
+        "split": "train",
+        "state": "train_mixed"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "scaled_axis_cancellation",
+        "pattern": [
+          0,
+          1,
+          1
+        ],
+        "propensity": 0.08558657048910083,
+        "split": "train",
+        "state": "train_mixed"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "scaled_axis_cancellation",
+        "pattern": [
+          1,
+          0,
+          0
+        ],
+        "propensity": 0.13961887337857848,
+        "split": "train",
+        "state": "train_mixed"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "scaled_axis_cancellation",
+        "pattern": [
+          1,
+          0,
+          1
+        ],
+        "propensity": 0.1396188733785785,
+        "split": "train",
+        "state": "train_mixed"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "scaled_axis_cancellation",
+        "pattern": [
+          1,
+          1,
+          0
+        ],
+        "propensity": 0.06980943668928935,
+        "split": "train",
+        "state": "train_mixed"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "scaled_axis_cancellation",
+        "pattern": [
+          1,
+          1,
+          1
+        ],
+        "propensity": 0.06980943668928939,
+        "split": "train",
+        "state": "train_mixed"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "scaled_axis_cancellation",
+        "pattern": [
+          0,
+          0,
+          0
+        ],
+        "propensity": 0.27680148401691085,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_biased"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "scaled_axis_cancellation",
+        "pattern": [
+          0,
+          0,
+          1
+        ],
+        "propensity": 0.14904222818915658,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_biased"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "scaled_axis_cancellation",
+        "pattern": [
+          0,
+          1,
+          0
+        ],
+        "propensity": 0.16554958387185373,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_biased"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "scaled_axis_cancellation",
+        "pattern": [
+          0,
+          1,
+          1
+        ],
+        "propensity": 0.16554958387185378,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_biased"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "scaled_axis_cancellation",
+        "pattern": [
+          1,
+          0,
+          0
+        ],
+        "propensity": 0.08101904001674146,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_biased"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "scaled_axis_cancellation",
+        "pattern": [
+          1,
+          0,
+          1
+        ],
+        "propensity": 0.08101904001674151,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_biased"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "scaled_axis_cancellation",
+        "pattern": [
+          1,
+          1,
+          0
+        ],
+        "propensity": 0.04050952000837081,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_biased"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "scaled_axis_cancellation",
+        "pattern": [
+          1,
+          1,
+          1
+        ],
+        "propensity": 0.04050952000837084,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_biased"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "scaled_axis_cancellation",
+        "pattern": [
+          0,
+          0,
+          0
+        ],
+        "propensity": 0.1795621018854297,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_nonproduct"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "scaled_axis_cancellation",
+        "pattern": [
+          0,
+          0,
+          1
+        ],
+        "propensity": 0.21132486540518708,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_nonproduct"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "scaled_axis_cancellation",
+        "pattern": [
+          0,
+          1,
+          0
+        ],
+        "propensity": 0.1056624327025936,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_nonproduct"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "scaled_axis_cancellation",
+        "pattern": [
+          0,
+          1,
+          1
+        ],
+        "propensity": 0.10566243270259362,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_nonproduct"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "scaled_axis_cancellation",
+        "pattern": [
+          1,
+          0,
+          0
+        ],
+        "propensity": 0.1325960557680652,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_nonproduct"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "scaled_axis_cancellation",
+        "pattern": [
+          1,
+          0,
+          1
+        ],
+        "propensity": 0.13259605576806527,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_nonproduct"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "scaled_axis_cancellation",
+        "pattern": [
+          1,
+          1,
+          0
+        ],
+        "propensity": 0.06629802788403273,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_nonproduct"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "scaled_axis_cancellation",
+        "pattern": [
+          1,
+          1,
+          1
+        ],
+        "propensity": 0.06629802788403276,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_nonproduct"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "mixed_projective_merge",
+        "pattern": [
+          0
+        ],
+        "propensity": 0.2500000000000001,
+        "split": "train",
+        "state": "train_zero"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "mixed_projective_merge",
+        "pattern": [
+          1
+        ],
+        "propensity": 0.7499999999999999,
+        "split": "train",
+        "state": "train_zero"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "mixed_projective_merge",
+        "pattern": [
+          0
+        ],
+        "propensity": 0.4999999999999999,
+        "split": "train",
+        "state": "train_plus_y"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "mixed_projective_merge",
+        "pattern": [
+          1
+        ],
+        "propensity": 0.49999999999999983,
+        "split": "train",
+        "state": "train_plus_y"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "mixed_projective_merge",
+        "pattern": [
+          0
+        ],
+        "propensity": 0.37000000000000005,
+        "split": "train",
+        "state": "train_mixed"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "mixed_projective_merge",
+        "pattern": [
+          1
+        ],
+        "propensity": 0.63,
+        "split": "train",
+        "state": "train_mixed"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "mixed_projective_merge",
+        "pattern": [
+          0
+        ],
+        "propensity": 0.7191541925213709,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_biased"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "mixed_projective_merge",
+        "pattern": [
+          1
+        ],
+        "propensity": 0.2808458074786291,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_biased"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "mixed_projective_merge",
+        "pattern": [
+          0
+        ],
+        "propensity": 0.46242424730892867,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_nonproduct"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "mixed_projective_merge",
+        "pattern": [
+          1
+        ],
+        "propensity": 0.5375757526910714,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_nonproduct"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "propensity": 0.33333333333333326,
+        "split": "train",
+        "state": "train_zero"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "propensity": 0.3333333333333328,
+        "split": "train",
+        "state": "train_zero"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "propensity": 0.05555555555555544,
+        "split": "train",
+        "state": "train_zero"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "propensity": 0.05555555555555551,
+        "split": "train",
+        "state": "train_zero"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "propensity": 0.033333333333333284,
+        "split": "train",
+        "state": "train_zero"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "propensity": 0.033333333333333326,
+        "split": "train",
+        "state": "train_zero"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "propensity": 0.02222222222222223,
+        "split": "train",
+        "state": "train_zero"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "propensity": 0.022222222222222258,
+        "split": "train",
+        "state": "train_zero"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "propensity": 0.023809523809523742,
+        "split": "train",
+        "state": "train_zero"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "propensity": 0.023809523809523774,
+        "split": "train",
+        "state": "train_zero"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "propensity": 0.015873015873015858,
+        "split": "train",
+        "state": "train_zero"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "propensity": 0.01587301587301588,
+        "split": "train",
+        "state": "train_zero"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "propensity": 0.009523809523809516,
+        "split": "train",
+        "state": "train_zero"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "propensity": 0.009523809523809528,
+        "split": "train",
+        "state": "train_zero"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "propensity": 0.006349206349206355,
+        "split": "train",
+        "state": "train_zero"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "propensity": 0.006349206349206362,
+        "split": "train",
+        "state": "train_zero"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "propensity": 0.04465819873852062,
+        "split": "train",
+        "state": "train_plus_y"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "propensity": 0.6220084679281451,
+        "split": "train",
+        "state": "train_plus_y"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "propensity": 0.05555555555555547,
+        "split": "train",
+        "state": "train_plus_y"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "propensity": 0.055555555555555525,
+        "split": "train",
+        "state": "train_plus_y"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "propensity": 0.033333333333333284,
+        "split": "train",
+        "state": "train_plus_y"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "propensity": 0.033333333333333326,
+        "split": "train",
+        "state": "train_plus_y"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "propensity": 0.022222222222222227,
+        "split": "train",
+        "state": "train_plus_y"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "propensity": 0.022222222222222254,
+        "split": "train",
+        "state": "train_plus_y"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "propensity": 0.02380952380952374,
+        "split": "train",
+        "state": "train_plus_y"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "propensity": 0.02380952380952377,
+        "split": "train",
+        "state": "train_plus_y"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "propensity": 0.015873015873015858,
+        "split": "train",
+        "state": "train_plus_y"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "propensity": 0.015873015873015872,
+        "split": "train",
+        "state": "train_plus_y"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "propensity": 0.009523809523809513,
+        "split": "train",
+        "state": "train_plus_y"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "propensity": 0.009523809523809526,
+        "split": "train",
+        "state": "train_plus_y"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "propensity": 0.006349206349206354,
+        "split": "train",
+        "state": "train_plus_y"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "propensity": 0.006349206349206361,
+        "split": "train",
+        "state": "train_plus_y"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "propensity": 0.37960895300726577,
+        "split": "train",
+        "state": "train_mixed"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "propensity": 0.22372438032606684,
+        "split": "train",
+        "state": "train_mixed"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "propensity": 0.06611111111111101,
+        "split": "train",
+        "state": "train_mixed"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "propensity": 0.06611111111111109,
+        "split": "train",
+        "state": "train_mixed"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "propensity": 0.039666666666666614,
+        "split": "train",
+        "state": "train_mixed"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "propensity": 0.039666666666666656,
+        "split": "train",
+        "state": "train_mixed"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "propensity": 0.026444444444444458,
+        "split": "train",
+        "state": "train_mixed"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "propensity": 0.026444444444444493,
+        "split": "train",
+        "state": "train_mixed"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "propensity": 0.028333333333333252,
+        "split": "train",
+        "state": "train_mixed"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "propensity": 0.028333333333333294,
+        "split": "train",
+        "state": "train_mixed"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "propensity": 0.018888888888888872,
+        "split": "train",
+        "state": "train_mixed"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "propensity": 0.018888888888888893,
+        "split": "train",
+        "state": "train_mixed"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "propensity": 0.011333333333333324,
+        "split": "train",
+        "state": "train_mixed"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "propensity": 0.011333333333333338,
+        "split": "train",
+        "state": "train_mixed"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "propensity": 0.007555555555555562,
+        "split": "train",
+        "state": "train_mixed"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "propensity": 0.007555555555555572,
+        "split": "train",
+        "state": "train_mixed"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "propensity": 0.34271668269937783,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_biased"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "propensity": 0.5128760120029529,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_biased"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "propensity": 0.024067884216278104,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_biased"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "propensity": 0.02406788421627813,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_biased"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "propensity": 0.014440730529766856,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_biased"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "propensity": 0.014440730529766875,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_biased"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "propensity": 0.009627153686511255,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_biased"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "propensity": 0.009627153686511267,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_biased"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "propensity": 0.010314807521262025,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_biased"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "propensity": 0.010314807521262037,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_biased"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "propensity": 0.006876538347508029,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_biased"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "propensity": 0.006876538347508038,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_biased"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "propensity": 0.0041259230085048185,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_biased"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "propensity": 0.004125923008504824,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_biased"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "propensity": 0.0027506153390032166,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_biased"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "propensity": 0.00275061533900322,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_biased"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "propensity": 0.33333333333333315,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_nonproduct"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "propensity": 0.33333333333333287,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_nonproduct"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "propensity": 0.05555555555555548,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_nonproduct"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "propensity": 0.05555555555555554,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_nonproduct"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "propensity": 0.033333333333333284,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_nonproduct"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "propensity": 0.033333333333333326,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_nonproduct"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "propensity": 0.022222222222222233,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_nonproduct"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "propensity": 0.02222222222222226,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_nonproduct"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "propensity": 0.023809523809523746,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_nonproduct"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "propensity": 0.023809523809523777,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_nonproduct"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "propensity": 0.015873015873015858,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_nonproduct"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "propensity": 0.01587301587301588,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_nonproduct"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "propensity": 0.009523809523809516,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_nonproduct"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "propensity": 0.009523809523809528,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_nonproduct"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "propensity": 0.006349206349206355,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_nonproduct"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "held_size5_split_trine",
+        "pattern": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "propensity": 0.006349206349206363,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_nonproduct"
+      },
+      {
+        "fired": 0,
+        "live": false,
+        "menu": "singular_rank_loss_control",
+        "pattern": [
+          0,
+          0
+        ],
+        "propensity": 0.0,
+        "split": "train",
+        "state": "train_zero"
+      },
+      {
+        "fired": 0,
+        "live": false,
+        "menu": "singular_rank_loss_control",
+        "pattern": [
+          0,
+          1
+        ],
+        "propensity": 0.0,
+        "split": "train",
+        "state": "train_zero"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "singular_rank_loss_control",
+        "pattern": [
+          1,
+          0
+        ],
+        "propensity": 1.0,
+        "split": "train",
+        "state": "train_zero"
+      },
+      {
+        "fired": 0,
+        "live": false,
+        "menu": "singular_rank_loss_control",
+        "pattern": [
+          1,
+          1
+        ],
+        "propensity": 0.0,
+        "split": "train",
+        "state": "train_zero"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "singular_rank_loss_control",
+        "pattern": [
+          0,
+          0
+        ],
+        "propensity": 0.29999999999999993,
+        "split": "train",
+        "state": "train_plus_y"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "singular_rank_loss_control",
+        "pattern": [
+          0,
+          1
+        ],
+        "propensity": 0.19999999999999998,
+        "split": "train",
+        "state": "train_plus_y"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "singular_rank_loss_control",
+        "pattern": [
+          1,
+          0
+        ],
+        "propensity": 0.4999999999999999,
+        "split": "train",
+        "state": "train_plus_y"
+      },
+      {
+        "fired": 0,
+        "live": false,
+        "menu": "singular_rank_loss_control",
+        "pattern": [
+          1,
+          1
+        ],
+        "propensity": 0.0,
+        "split": "train",
+        "state": "train_plus_y"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "singular_rank_loss_control",
+        "pattern": [
+          0,
+          0
+        ],
+        "propensity": 0.20099999999999998,
+        "split": "train",
+        "state": "train_mixed"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "singular_rank_loss_control",
+        "pattern": [
+          0,
+          1
+        ],
+        "propensity": 0.134,
+        "split": "train",
+        "state": "train_mixed"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "singular_rank_loss_control",
+        "pattern": [
+          1,
+          0
+        ],
+        "propensity": 0.665,
+        "split": "train",
+        "state": "train_mixed"
+      },
+      {
+        "fired": 0,
+        "live": false,
+        "menu": "singular_rank_loss_control",
+        "pattern": [
+          1,
+          1
+        ],
+        "propensity": 0.0,
+        "split": "train",
+        "state": "train_mixed"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "singular_rank_loss_control",
+        "pattern": [
+          0,
+          0
+        ],
+        "propensity": 0.39295160579354704,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_biased"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "singular_rank_loss_control",
+        "pattern": [
+          0,
+          1
+        ],
+        "propensity": 0.261967737195698,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_biased"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "singular_rank_loss_control",
+        "pattern": [
+          1,
+          0
+        ],
+        "propensity": 0.345080657010755,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_biased"
+      },
+      {
+        "fired": 0,
+        "live": false,
+        "menu": "singular_rank_loss_control",
+        "pattern": [
+          1,
+          1
+        ],
+        "propensity": 0.0,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_biased"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "singular_rank_loss_control",
+        "pattern": [
+          0,
+          0
+        ],
+        "propensity": 0.2549090967707144,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_nonproduct"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "singular_rank_loss_control",
+        "pattern": [
+          0,
+          1
+        ],
+        "propensity": 0.1699393978471429,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_nonproduct"
+      },
+      {
+        "fired": 1,
+        "live": true,
+        "menu": "singular_rank_loss_control",
+        "pattern": [
+          1,
+          0
+        ],
+        "propensity": 0.5751515053821428,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_nonproduct"
+      },
+      {
+        "fired": 0,
+        "live": false,
+        "menu": "singular_rank_loss_control",
+        "pattern": [
+          1,
+          1
+        ],
+        "propensity": 0.0,
+        "split": "held-blinded-no-refit",
+        "state": "held_blind_nonproduct"
+      }
+    ],
+    "runner_samples_a_branch": false,
+    "shell_predicate_ROM_rows": 0,
+    "train_live_branch_rows": 95,
+    "zero_branch_debit_failures": 0,
+    "zero_propensity_or_nonadmitted_rows": 9
+  },
+  "highest_honest_terminal": "positive local physical-interface compiler on pinned declared code; no autonomous predecessor/material genesis, full joint detector matrix, non-erasing renewal, gravity, Record, or proper time",
+  "maximum_RSS_bytes": 30097408,
+  "minimum_content_claim": false,
+  "minimum_content_gate": "FAIL / DO NOT SHIP",
+  "minimum_content_shipped": false,
+  "no_go_discipline": {
+    "N1_broad_negative_gate": "FAIL / DO NOT SHIP",
+    "N1_normalized_families": [
+      {
+        "family": "direct ready/spent current-word compiler",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "one fixed branch-controlled reversible basis permutation and exact two-endpoint continuity",
+        "object_formulation": "Cycle662 slot plus Cycle559 EDGE/J+/J- and Cycle612 packet bits",
+        "status": "candidate-complete on the declared finite interface",
+        "strength_vs_target": "target-equivalent at the pinned interface scope",
+        "terminal_obligation": "same event owns debit/current/exhaust/endpoint"
+      },
+      {
+        "citation": {
+          "line": 126,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_LOCALLY_CONSERVED_CURRENT_RESPONSE_LAW_TOURNAMENT_CYCLE559_NOTE_2026-07-21.md",
+          "ref": "cd2c32e3ed5faf198604fc22414ca4b71931328c",
+          "text": "dynamics. The source-location preparation itself remains supplied."
+        },
+        "family": "six-lane resource mediator",
+        "honesty_marker": "RULED OUT BY PRIOR",
+        "mechanism_invariant": "number-preserving emitter/stream/receiver exchange",
+        "object_formulation": "Cycle559 vacuum-plus-Q1 cubic walk",
+        "status": "resource current is positive but source-location preparation and formation join remain supplied",
+        "strength_vs_target": "incomparable",
+        "terminal_obligation": "formation-controlled endpoint append"
+      },
+      {
+        "citation": {
+          "line": 21,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_OPERATIONAL_METRIC_CONSERVED_SOURCE_LOCAL_RANGE_TOURNAMENT_CYCLE591_NOTE_2026-07-22.md",
+          "ref": "cd2c32e3ed5faf198604fc22414ca4b71931328c",
+          "text": "This does not finish physical source identification.  The candidate gate and its placement are supplied, conservation does not select its coefficient, `ell-to-h44` and the action orientation remain supplied, a localized matter profile is not stationary under the actual free update, and the balancing background has no autonomous physical genesis.  Phase is not energy.  A generator is not a rate.  The update parameter is not time."
+        },
+        "family": "occupation-charge continuity",
+        "honesty_marker": "RULED OUT BY PRIOR",
+        "mechanism_invariant": "U(1) number conservation through coin/stream/contact",
+        "object_formulation": "Cycle591 q_beta N density/current",
+        "status": "conserved candidate charge exists but its coupling/meaning is separately supplied",
+        "strength_vs_target": "incomparable",
+        "terminal_obligation": "current caused by the Cycle662 ready-to-spent event"
+      },
+      {
+        "citation": {
+          "line": 93,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_MATTER_CAUSED_CAUSAL_INTERVAL_PROPER_TIME_BRIDGE_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md",
+          "ref": "cd2c32e3ed5faf198604fc22414ca4b71931328c",
+          "text": "not claim that one new globally scheduled apparatus joining every inherited"
+        },
+        "family": "standalone protected endpoint append",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "compute/copy/uncompute admission involution",
+        "object_formulation": "Cycle612 triplicate predecessor/clock packet",
+        "status": "packet inverse and deletion pass, but standalone append has no Cycle662 resource current",
+        "strength_vs_target": "weaker",
+        "terminal_obligation": "atomic formation debit and current"
+      },
+      {
+        "family": "host-sequenced ledger then packet",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "external sequencing and lookup",
+        "object_formulation": "two independently invoked shore transitions",
+        "status": "rejected by the frozen target; fixed local word replaces host sequencing",
+        "strength_vs_target": "weaker/forbidden",
+        "terminal_obligation": "one physical law-owned event"
+      }
+    ],
+    "N1_open_routes_not_counted": [
+      {
+        "family": "mobile regenerative current/endpoint exhaust QCA",
+        "status": "OPEN / NOT COUNTED"
+      },
+      {
+        "family": "autonomous successor/predecessor formation graph",
+        "status": "OPEN / NOT COUNTED"
+      }
+    ],
+    "N1_qualifying_attempts": 5,
+    "N1_required_for_negative": 5,
+    "N2_directed_ordered_pairs": [
+      {
+        "from": "W_endpoint_predecessor_genesis",
+        "implied": false,
+        "reason": "autonomous endpoint genesis does not renew spent physical capacity",
+        "to": "W_joint_non_erasing_renewal"
+      },
+      {
+        "from": "W_joint_non_erasing_renewal",
+        "implied": false,
+        "reason": "a renewable sink does not generate the matter predicate or causal predecessor",
+        "to": "W_endpoint_predecessor_genesis"
+      }
+    ],
+    "N2_walls": {
+      "W_endpoint_predecessor_genesis": "the compiler consumes the pinned Cycle612 physical matter predicate, binder/law-domain program, and predecessor address; it does not autonomously create their genesis",
+      "W_joint_non_erasing_renewal": "finite joint source/current/packet/exhaust capacity saturates; inverse frees a slot only by erasing that event's current certificate, endpoint packet, occurrence, and exhaust"
+    },
+    "N3_hidden_wall_scan": [
+      {
+        "classification": "explicit pinned target premise",
+        "condition": "Cycle662 stochastic law, menus, finite blank slots, and branch interface"
+      },
+      {
+        "classification": "explicit pinned implementation convention",
+        "condition": "Cycle559 current word and Cycle591 continuity orientation"
+      },
+      {
+        "classification": "explicit supplied structure; W_endpoint_predecessor_genesis",
+        "condition": "Cycle612 physical matter predicate, binder, law domain, packet freshness, endpoint identity, predecessor zero, 4:4 receipts, and triplicate layout"
+      },
+      {
+        "classification": "explicit bounded implementation structure; renewal belongs to W_joint_non_erasing_renewal",
+        "condition": "finite 729-site chart, blank packet blocks, and compile-time transported direction"
+      },
+      {
+        "classification": "non-load-bearing output-schema label; it confers no scientific or audit authority",
+        "condition": "the word canonical in canonical_claim_gate_contract"
+      }
+    ],
+    "N4_exact_residual_matches": [
+      {
+        "classification": "residual preserved",
+        "current_line": 453,
+        "current_path": "scripts/physical_formation_resource_interval_compiler_cycle665_2026_07_23.py",
+        "current_residual": "Cycle665 executes the bounded Boolean/M2 interface join but not the full Cycle608 detector plus formation matrix",
+        "exact_match": true,
+        "prior_line": 93,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_MATTER_CAUSED_CAUSAL_INTERVAL_PROPER_TIME_BRIDGE_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md",
+        "prior_ref": "cd2c32e3ed5faf198604fc22414ca4b71931328c",
+        "prior_residual": "Cycle612 did not route and matrix-execute one globally joined apparatus",
+        "same_scope": true,
+        "use_as_closure": false
+      }
+    ],
+    "N4_nonmatches_not_used_as_closure": [
+      {
+        "classification": "strict scope extension, not an exact witness",
+        "current_line": 453,
+        "current_path": "scripts/physical_formation_resource_interval_compiler_cycle665_2026_07_23.py",
+        "current_residual": "Cycle665 finite joint current/endpoint/exhaust ledger lacks non-erasing renewal",
+        "exact_match": false,
+        "prior_line": 116,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_OBJECTIVE_STOCHASTIC_OPEN_DILATION_CYCLE662_NOTE_2026-07-23.md",
+        "prior_ref": "cd2c32e3ed5faf198604fc22414ca4b71931328c",
+        "prior_residual": "Cycle662 finite occurrence/exhaust ledger lacks non-erasing renewal",
+        "same_scope": false,
+        "use_as_closure": false
+      }
+    ],
+    "N5_rhetoric": [
+      {
+        "claim": "the coefficient-one interface resource current is not identified as physical energy, stress, or gravity",
+        "lattice_wide": "no infinite deployment, field response, energy-stress tensor, or gravity claim is made",
+        "per_block": "train/held capacities 3/4/6 are tested",
+        "per_element": "ready/spent bits and EDGE/J rails are exact",
+        "per_mode": "all six transported cubic directions are tested",
+        "per_site": "two endpoint continuity equations are tested"
+      },
+      {
+        "claim": "the typed endpoint packet is not a framework Record, proper time, or realized history",
+        "lattice_wide": "autonomous Record DAG, permanence, and history recurrence are untested",
+        "per_block": "finite packet capacity and inverse erasure are tested",
+        "per_element": "all 16 bits and three replicas are checked",
+        "per_mode": "packet is scalar under all proper-cubic frames",
+        "per_site": "one event endpoint and its predecessor address are checked"
+      },
+      {
+        "claim": "the fixed update word and any generator entry are not a physical rate",
+        "lattice_wide": "no clock calibration or continuum rate is claimed",
+        "per_block": "fixed compiler order only",
+        "per_element": "no division by update count is performed",
+        "per_mode": "six current directions are compared",
+        "per_site": "current is a conserved transition debit"
+      }
+    ],
+    "N6_partial_closure_paths": [
+      {
+        "file": "UNMATERIALIZED/autonomous_successor_predecessor_formation_qca_cycle_next.py",
+        "status": "OPEN / PRIORITY",
+        "what_closes": "W_endpoint_predecessor_genesis"
+      },
+      {
+        "file": "UNMATERIALIZED/regenerative_current_interval_exhaust_qca_cycle_next.py",
+        "status": "OPEN / PRIORITY",
+        "what_closes": "W_joint_non_erasing_renewal"
+      },
+      {
+        "file": "scripts/physical_matter_caused_causal_interval_proper_time_bridge_tournament_cycle612_2026_07_22.py",
+        "status": "EXECUTED PARTIAL INTERFACE",
+        "what_closes": "packet Boolean inverse/deletion/covariance, not either genesis or renewal wall"
+      }
+    ],
+    "N7_steelman": {
+      "actionable_steps": [
+        "construct the local collision permutation and mobile exhaust carriers",
+        "prove the induced branch kernel equals every pinned Cycle662 K_p propensity",
+        "prove successor uniqueness and exact stationary source/current conservation without packet deletion"
+      ],
+      "mechanism": "A hostile constructive reviewer can make both residuals disappear by embedding the Cycle662 jump cell in a translation-invariant collision QCA: mobile purified ancillas carry spent coherent exhaust outward, a local successor token is emitted only when a prior material endpoint packet is encountered, and an oppositely moving blank carrier returns only after entropy has been exported to a separately counted sink. This would make predecessor selection dynamical and renew local ready capacity without clearing retained occurrence data.",
+      "supporting_citations": [
+        {
+          "line": 116,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_OBJECTIVE_STOCHASTIC_OPEN_DILATION_CYCLE662_NOTE_2026-07-23.md",
+          "ref": "cd2c32e3ed5faf198604fc22414ca4b71931328c",
+          "text": "`W_finite_innovation_exhaust_non_erasing_renewal`.  In the tested finite ledger, inverse restores"
+        },
+        {
+          "line": 98,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_MATTER_CAUSED_CAUSAL_INTERVAL_PROPER_TIME_BRIDGE_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md",
+          "ref": "cd2c32e3ed5faf198604fc22414ca4b71931328c",
+          "text": "admission law and finite packet capacity, source preparation/interpretation,"
+        }
+      ],
+      "terminal_test": "unchanged Cycle662 held kernel, no supplied predecessor or fresh bath, finite-density stationary renewal, retained occurrence/current/endpoint exhaust, all24/all576, and no host schedule"
+    },
+    "N8_cross_cycle_echo": [
+      {
+        "applicability": "motivates the exact ready/spent current join but does not supply renewal or endpoint genesis",
+        "citation_line": 30,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_LOCALLY_CONSERVED_CURRENT_RESPONSE_LAW_TOURNAMENT_CYCLE559_NOTE_2026-07-21.md",
+        "citation_ref": "cd2c32e3ed5faf198604fc22414ca4b71931328c",
+        "citation_text": "The strongest constructive result is Route 3. It supplies a coefficient-one,",
+        "cycle": 559,
+        "mechanism": "explicit auxiliary debit and later six-lane conserved mediator",
+        "retired": "receiver-only missing debit at bounded resource-number scope"
+      },
+      {
+        "applicability": "reused as a pinned endpoint input; its profile/predecessor genesis remains supplied",
+        "citation_line": 93,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_MATTER_CAUSED_CAUSAL_INTERVAL_PROPER_TIME_BRIDGE_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md",
+        "citation_ref": "cd2c32e3ed5faf198604fc22414ca4b71931328c",
+        "citation_text": "not claim that one new globally scheduled apparatus joining every inherited",
+        "cycle": 612,
+        "mechanism": "physical Pd compute/copy/uncompute predicate",
+        "retired": "supplied detector-output pointer for the bounded endpoint packet"
+      },
+      {
+        "applicability": "supplies the event but explicitly does not retire finite non-erasing renewal",
+        "citation_line": 116,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_OBJECTIVE_STOCHASTIC_OPEN_DILATION_CYCLE662_NOTE_2026-07-23.md",
+        "citation_ref": "cd2c32e3ed5faf198604fc22414ca4b71931328c",
+        "citation_text": "`W_finite_innovation_exhaust_non_erasing_renewal`.  In the tested finite ledger, inverse restores",
+        "cycle": 662,
+        "mechanism": "hybrid stochastic sigma with retained coherent exhaust",
+        "retired": "absence of one objective-within-law branch candidate"
+      }
+    ],
+    "Status": "PASS",
+    "axiom_pressure": false,
+    "axiom_pressure_claim": false,
+    "axiom_pressure_gate": "FAIL / DO NOT SHIP",
+    "axiom_pressure_shipped": false,
+    "broad_negative_gate": "FAIL / DO NOT SHIP",
+    "broad_negative_shipped": false,
+    "broad_no_go_claim": false,
+    "minimum_content_claim": false,
+    "minimum_content_gate": "FAIL / DO NOT SHIP",
+    "minimum_content_shipped": false,
+    "pass": true,
+    "shared_obstruction_claim": false,
+    "shared_obstruction_gate": "FAIL / DO NOT SHIP",
+    "shared_obstruction_shipped": false,
+    "shared_route_independent_obstruction": false
+  },
+  "note_sha256": "699c296a9411317c31f2cc1c2642829a88af529dd739c6aa85c58c7252817456",
+  "optimal_next_campaign": "construct a mobile regenerative collision/successor QCA that generates the material predecessor locally and renews joint current/packet/exhaust capacity without erasure while reproducing every pinned Cycle662 branch propensity",
+  "pass": true,
+  "resource_ledger": {
+    "Cycle612_bounded_append_block_M2": 436,
+    "Cycle662_EDGE_reused_as_Cycle559_EDGE": true,
+    "Cycle662_inner_cube_M2": 125,
+    "additional_independent_innovation_bits": 0,
+    "current_and_endpoint_are_deterministic_functions_of_stored_event_and_material_program_bits": true,
+    "declared_interface_register_M2_per_event": 563,
+    "explicit_root_frame_register_injection": true,
+    "joint_full_detector_formation_matrix_executed": false,
+    "maximum_Cycle662_stochastic_jump_support_M2": 30,
+    "maximum_conservative_join_route_edges": 24,
+    "maximum_inherited_packet_compiler_literal_gate_support_M2": 2,
+    "maximum_supercell_L1_diameter": 24,
+    "new_current_M2": 2,
+    "pass": true,
+    "physical_supercell_M2": 729,
+    "proper_cubic_padding_M2": 166,
+    "ready_source_coordinate": [
+      0,
+      0,
+      0
+    ],
+    "ready_to_spent_link_range": 1,
+    "renewal_residual": "finite composite ledgers saturate; inverse restores ready capacity only by erasing the retained current certificate, endpoint packet, objective occurrence, and coherent exhaust",
+    "renewal_residual_name": "W_joint_current_interval_exhaust_non_erasing_renewal",
+    "rows": [
+      {
+        "Cycle612_append_block_M2": 1308,
+        "Cycle662_inner_cube_M2": 375,
+        "capacity": 3,
+        "declared_interface_register_M2": 1689,
+        "dirty_non_erasing_relabel_refused": true,
+        "inverse_erases_current_endpoint_and_exhaust": true,
+        "inverse_roundtrip_failures": 0,
+        "new_Jplus_Jminus_M2": 6,
+        "pass": true,
+        "physical_M2_9cube": 2187,
+        "proper_cubic_padding_M2": 498,
+        "ready_plus_spent_conservation_failures": 0,
+        "saturation_refuses_firing": true,
+        "spent_at_saturation": 3,
+        "split": "train"
+      },
+      {
+        "Cycle612_append_block_M2": 1744,
+        "Cycle662_inner_cube_M2": 500,
+        "capacity": 4,
+        "declared_interface_register_M2": 2252,
+        "dirty_non_erasing_relabel_refused": true,
+        "inverse_erases_current_endpoint_and_exhaust": true,
+        "inverse_roundtrip_failures": 0,
+        "new_Jplus_Jminus_M2": 8,
+        "pass": true,
+        "physical_M2_9cube": 2916,
+        "proper_cubic_padding_M2": 664,
+        "ready_plus_spent_conservation_failures": 0,
+        "saturation_refuses_firing": true,
+        "spent_at_saturation": 4,
+        "split": "held-out-size"
+      },
+      {
+        "Cycle612_append_block_M2": 2616,
+        "Cycle662_inner_cube_M2": 750,
+        "capacity": 6,
+        "declared_interface_register_M2": 3378,
+        "dirty_non_erasing_relabel_refused": true,
+        "inverse_erases_current_endpoint_and_exhaust": true,
+        "inverse_roundtrip_failures": 0,
+        "new_Jplus_Jminus_M2": 12,
+        "pass": true,
+        "physical_M2_9cube": 4374,
+        "proper_cubic_padding_M2": 996,
+        "ready_plus_spent_conservation_failures": 0,
+        "saturation_refuses_firing": true,
+        "spent_at_saturation": 6,
+        "split": "held"
+      }
+    ],
+    "spent_sink_coordinate_frame_root": [
+      1,
+      0,
+      0
+    ],
+    "supercell_shape": "{-4,-3,...,4}^3 cube"
+  },
+  "route_disposition": {
+    "direct_current_packet_compiler": "PASS_BOUNDED_INTERFACE_CODE",
+    "host_sequenced_join": "REJECTED_BY_TARGET",
+    "qbetaN_continuity": "PRIOR_POSITIVE_INCOMPARABLE__NO_FORMATION_JOIN",
+    "six_lane_mediator": "PRIOR_POSITIVE_INCOMPARABLE__NO_FORMATION_JOIN",
+    "standalone_packet": "PRIOR_POSITIVE_WEAKER__NO_ATOMIC_RESOURCE_CURRENT"
+  },
+  "runner_sha256": "c80146085edecf6b5dfc9417edb4180e9b54d9d83c9c3e94f2bcdd3e0acfca68",
+  "semantic_separation": {
+    "generator_or_update_word": "fixed compiler order; not a physical rate or time",
+    "objective_event": "inherited Cycle662 objective-within-supplied-candidate-law branch; not a supplied actuality lookup",
+    "resource_number_current": "coefficient-one ready/spent debit and EDGE/J flux; not physical energy, stress, force, or gravity",
+    "typed_endpoint": "protected causal-interval endpoint candidate; not Record, proper time, permanence, or realized history"
+  },
+  "shared_obstruction_claim": false,
+  "shared_obstruction_gate": "FAIL / DO NOT SHIP",
+  "shared_obstruction_shipped": false,
+  "shared_route_independent_obstruction": false,
+  "shore": {
+    "author_status_accepted_as_audit": false,
+    "imported_contracts": {
+      "Cycle559_authority_audit": [
+        "none",
+        "unset"
+      ],
+      "Cycle559_pass": true,
+      "Cycle591_authority_audit": [
+        "none",
+        "unset"
+      ],
+      "Cycle591_tests": [
+        16,
+        0
+      ],
+      "Cycle612_interval_pass": true,
+      "Cycle612_pass": true,
+      "Cycle662_pass": true,
+      "Cycle662_tests": [
+        9,
+        0
+      ]
+    },
+    "observed": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_LOCALLY_CONSERVED_CURRENT_RESPONSE_LAW_TOURNAMENT_CYCLE559_NOTE_2026-07-21.md": "4410c285e8c2a41969a8854258ccaeaaad6c0b3a3340bae1ed39fdfbe9ca1136",
+      "docs/work_history/repo/review_feedback/PHYSICAL_MATTER_CAUSED_CAUSAL_INTERVAL_PROPER_TIME_BRIDGE_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md": "920776555dce6505bccb0e46e552e90d24858c08cfb7f6978d884f10a5bb0789",
+      "docs/work_history/repo/review_feedback/PHYSICAL_OBJECTIVE_STOCHASTIC_OPEN_DILATION_CYCLE662_NOTE_2026-07-23.md": "bdc8dda304985a62c73fc6e7a03f11d61041dd8053a9321fb7171c9b22947a05",
+      "docs/work_history/repo/review_feedback/PHYSICAL_OPERATIONAL_METRIC_CONSERVED_SOURCE_LOCAL_RANGE_TOURNAMENT_CYCLE591_NOTE_2026-07-22.md": "86746b0cf9a80145b9c7cb4415c4402d6a697bb99e1fa83bae547bf091ac37e5",
+      "outputs/physical_locally_conserved_current_response_law_tournament_cycle559_receipt_2026_07_21.json": "ac7afebd283cfab893e6fd85ee71e46351e950805b10e8d5258ba1b06aea665b",
+      "outputs/physical_matter_caused_causal_interval_proper_time_bridge_tournament_cycle612_receipt_2026_07_22.json": "e7a8ea3dcbe370c9f8c6a94770508d1710a7013ce4ba62a1ad67e345fe1e2d11",
+      "outputs/physical_objective_stochastic_open_dilation_cycle662_cold_2026_07_23.txt": "14c431047466462c57ecff1c83472e5233e88af3fc454920b6f6d6465a8cc625",
+      "outputs/physical_objective_stochastic_open_dilation_cycle662_receipt_2026_07_23.json": "27b258f1e4d96fb26f65937875bea32d74ecdfa62712c353e3327d0357a2c806",
+      "outputs/physical_operational_metric_conserved_source_local_range_tournament_cycle591_cold_2026_07_22.txt": "765770317f82aeec1105bc33c80c21c920b09d35deab5663df62b4edab2f917c",
+      "scripts/physical_locally_conserved_current_response_law_tournament_cycle559_2026_07_21.py": "a6475b85ad4c87cae58ee09d371ff91f82719d50e72e8f5ff88d5030fef681be",
+      "scripts/physical_matter_caused_causal_interval_proper_time_bridge_tournament_cycle612_2026_07_22.py": "91f22d23dd2730f76a05736634236d41036f68eaedc4921daca69de25ab6a344",
+      "scripts/physical_objective_stochastic_open_dilation_cycle662_2026_07_23.py": "219b6d3d93884a0ab8d9b0cc6c79850d008193fd5571b0281c76b6f8707d6b84",
+      "scripts/physical_operational_metric_conserved_source_local_range_tournament_cycle591_2026_07_22.py": "b927333e3287fa46c03f7ed9b53259cd126f47cca30eaca35c8220971b822a08"
+    },
+    "pass": true,
+    "pins": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_LOCALLY_CONSERVED_CURRENT_RESPONSE_LAW_TOURNAMENT_CYCLE559_NOTE_2026-07-21.md": "4410c285e8c2a41969a8854258ccaeaaad6c0b3a3340bae1ed39fdfbe9ca1136",
+      "docs/work_history/repo/review_feedback/PHYSICAL_MATTER_CAUSED_CAUSAL_INTERVAL_PROPER_TIME_BRIDGE_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md": "920776555dce6505bccb0e46e552e90d24858c08cfb7f6978d884f10a5bb0789",
+      "docs/work_history/repo/review_feedback/PHYSICAL_OBJECTIVE_STOCHASTIC_OPEN_DILATION_CYCLE662_NOTE_2026-07-23.md": "bdc8dda304985a62c73fc6e7a03f11d61041dd8053a9321fb7171c9b22947a05",
+      "docs/work_history/repo/review_feedback/PHYSICAL_OPERATIONAL_METRIC_CONSERVED_SOURCE_LOCAL_RANGE_TOURNAMENT_CYCLE591_NOTE_2026-07-22.md": "86746b0cf9a80145b9c7cb4415c4402d6a697bb99e1fa83bae547bf091ac37e5",
+      "outputs/physical_locally_conserved_current_response_law_tournament_cycle559_receipt_2026_07_21.json": "ac7afebd283cfab893e6fd85ee71e46351e950805b10e8d5258ba1b06aea665b",
+      "outputs/physical_matter_caused_causal_interval_proper_time_bridge_tournament_cycle612_receipt_2026_07_22.json": "e7a8ea3dcbe370c9f8c6a94770508d1710a7013ce4ba62a1ad67e345fe1e2d11",
+      "outputs/physical_objective_stochastic_open_dilation_cycle662_cold_2026_07_23.txt": "14c431047466462c57ecff1c83472e5233e88af3fc454920b6f6d6465a8cc625",
+      "outputs/physical_objective_stochastic_open_dilation_cycle662_receipt_2026_07_23.json": "27b258f1e4d96fb26f65937875bea32d74ecdfa62712c353e3327d0357a2c806",
+      "outputs/physical_operational_metric_conserved_source_local_range_tournament_cycle591_cold_2026_07_22.txt": "765770317f82aeec1105bc33c80c21c920b09d35deab5663df62b4edab2f917c",
+      "scripts/physical_locally_conserved_current_response_law_tournament_cycle559_2026_07_21.py": "a6475b85ad4c87cae58ee09d371ff91f82719d50e72e8f5ff88d5030fef681be",
+      "scripts/physical_matter_caused_causal_interval_proper_time_bridge_tournament_cycle612_2026_07_22.py": "91f22d23dd2730f76a05736634236d41036f68eaedc4921daca69de25ab6a344",
+      "scripts/physical_objective_stochastic_open_dilation_cycle662_2026_07_23.py": "219b6d3d93884a0ab8d9b0cc6c79850d008193fd5571b0281c76b6f8707d6b84",
+      "scripts/physical_operational_metric_conserved_source_local_range_tournament_cycle591_2026_07_22.py": "b927333e3287fa46c03f7ed9b53259cd126f47cca30eaca35c8220971b822a08"
+    },
+    "ref": "cd2c32e3ed5faf198604fc22414ca4b71931328c",
+    "working_tree_bytes_used_as_premise": false
+  },
+  "six_wall_ledger": {
+    "C_int": "one fixed local word joins occurrence, debit/current, retained exhaust, and endpoint; full detector-plus-stochastic monolith not matrix-executed",
+    "C_local": "bounded 729-site proper cube, support counts, all24/all576; infinite/noisy deployment and non-erasing renewal open",
+    "C_num": "all train/held branch interfaces, capacities, deletions, and exact integer continuity tested; no empirical or Born interpretation",
+    "C_ref": "formation sigma is inherited and stored; current coefficient one is exact; upstream law, material profile, binder, and predecessor genesis supplied",
+    "C_source": "ready/spent/current/packet/exhaust resources explicitly counted; not energy-stress, gravity, or a renewable bath",
+    "C_wrap": "one typed predecessor endpoint per admitted event; no Record, proper time, permanence, or realized history"
+  },
+  "status": "positive bounded local formation-resource/current-to-typed-interval interface compiler; predecessor genesis and non-erasing joint renewal open",
+  "strict_full_framework_terminal_met": false,
+  "strongest_constructive_result": "one fixed bounded interface update compiles every live Cycle662 train/held branch into an exact Cycle559/Cycle591 conserved ready-to-spent current and a Cycle612 typed material-endpoint packet while retaining coherent exhaust",
+  "supplied_structure_inventory": {
+    "Cycle559_EDGE_Jplus_Jminus_word": true,
+    "Cycle591_oriented_continuity_convention": true,
+    "Cycle612_binder_law_domain_freshness_program": true,
+    "Cycle612_bounded_append_block_436_M2": true,
+    "Cycle612_computed_physical_matter_predicate": true,
+    "Cycle612_endpoint_identity_predecessor_zero_4to4_receipts_triplicate_layout": true,
+    "Cycle662_branch_interface_coherent_exhaust_blank_slots_125_chart": true,
+    "Cycle662_quadratic_stochastic_candidate_law_and_menu": true,
+    "actuality_lookup": false,
+    "compile_time_frame_transport": true,
+    "fixed_join_gate_word": true,
+    "grade_lookup": false,
+    "host_sampler": false,
+    "host_scheduler": false,
+    "proper_cubic_729_site_chart": true,
+    "shell_predicate_ROM": false
+  },
+  "target_contract": {
+    "allowed_premises": "immutable landed Cycle662 stochastic formation law and ready/spent/exhaust transition; immutable retained Cycle559/Cycle591 source/current port and conservation convention; immutable landed Cycle612 matter-caused causal-interval packet; finite bounded M2 registers, compile-time proper-cubic frame transport, local reversible permutations, and explicit blank/source/sink registers",
+    "completion_witness": "an executable local encoding and update with exact transition tables and register counts showing that one admitted Cycle662 formation firing simultaneously debits one local ready source, credits spent/exhaust, writes a conserved local current/interface certificate, and emits a typed Cycle612 interval endpoint, together with inverse, conservation, covariance, deletion, malformed, saturation, and pinned-shore tests",
+    "forbidden_weakenings": "host scheduler or sampler; supplied actuality token or lookup; runtime grade lookup; shell-predicate ROM; calling a generator a rate; calling the resource debit/current physical energy or gravity; deleting coherent, rejected, source, current, or interval sectors; modifying any shore; importing a target-equivalent resource-current or interval oracle",
+    "outcomes_not_closure": "a bookkeeping-only ledger without the immutable current interface; a current label without exact local conservation; an interval label not produced in the same transition; host-sequenced composition; pointer copying; energy, force, stress, gravity, rate, Record, Born, or realized-history claims; discarded exhaust; a route-specific failure promoted to shared obstruction or axiom pressure",
+    "quantifiers_domain": "all lawful finite Cycle662 menu-state branches on declared train and blinded held capacities; every proper-cubic frame and ordered frame product; every tested Cycle559/Cycle591 conserved-current orientation and Cycle612 packet direction; malformed, saturated, deleted, inverse, zero-propensity, and unit-propensity cases",
+    "required_edge_cases": "train and blinded held capacities; lawful zero and unit propensities; biased and nonproduct states inherited from Cycle662; all24/all576; source/current conservation; bounded locality/support/M2 accounting; inverse, deletion, malformed-source, saturation, and unchanged-shore regression",
+    "target_statement": "construct an explicit bounded-support local compiler C that attaches each lawful Cycle662 ready-to-spent objective formation transition to the immutable Cycle559/Cycle591 locally conserved source/current interface and the landed Cycle612 matter-caused causal-interval packet, producing in the same admitted event one counted local source debit/current, retained innovation/coherent exhaust, and one typed interval endpoint without host scheduling, energy language, actuality lookup, or discarded exhaust"
+  },
+  "target_contract_candidate_terminal_met": true,
+  "target_freeze": {
+    "first_evidence_load_line": 161,
+    "frozen_before_evidence": true,
+    "pass": true,
+    "proof_search_governance_exact_fields": [
+      "allowed_premises",
+      "completion_witness",
+      "forbidden_weakenings",
+      "outcomes_not_closure",
+      "quantifiers_domain",
+      "required_edge_cases",
+      "target_statement"
+    ],
+    "target_contract_sha256": "e9618c5e8224dad1e4e2351ab838bc785567d1c9d01b9594a82b3317ba6e9fad",
+    "target_line": 6
+  },
+  "tests_failed": 0,
+  "tests_passed": 10,
+  "top_level_claim_gate_contract": {
+    "Status": true,
+    "breakthrough_false": true,
+    "candidate_true": true,
+    "flags": true,
+    "gates": true,
+    "pass": true,
+    "strict_false": true
+  }
+}

@@ -258,6 +258,28 @@ least every 15 minutes — never silence for a long run.
   one that stops early still reports what landed, what failed, and what
   remains through that forced summary.
 
+## Drain Liveness And Generated-State Recovery
+
+- A quiet worker is bounded by the configured stall timer, and every
+  supervisor phase continues to emit the 15-minute progress summary. Do not
+  leave a drain silently waiting past those bounds.
+- Tracked generated audit surfaces must be commit-invariant. Never embed the
+  current `HEAD` commit in a tracked pipeline output: committing that output
+  changes `HEAD` and guarantees fresh dirt at the next regeneration.
+- Treat mechanically verified provenance-only drift on an explicitly
+  allowlisted generated surface as recoverable coordination state, not as a
+  terminal campaign failure. Normalize it at the clean sync boundary and
+  continue the same supervisor.
+- Keep that recovery fail-closed. It must reject staged changes, source or
+  ledger content, verdict-bearing changes, untracked files, deletions, and
+  any payload delta beyond the exact allowlisted provenance field. Preserve
+  every in-flight claim transaction and user-authored change.
+- If a supervisor exits after a transaction has committed and pushed, verify
+  process absence and exact local/remote synchronization, repair only the
+  mechanically verified generated-state condition, and relaunch exactly one
+  canonical top-level drainer. Do not leave a recoverable sync condition as a
+  parked audit campaign.
+
 ## Scaling: The One Canonical Fan-Out
 
 There is exactly one sanctioned way to parallelize this lane — the

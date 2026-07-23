@@ -9866,20 +9866,18 @@ class ComputeLaneCertificationTest(unittest.TestCase):
         self.data = self.root / "docs" / "audit" / "data"
         self.data.mkdir(parents=True)
 
-    def _run(self, lanes: list[dict], rows: dict, *, head="a" * 40):
+    def _run(self, lanes: list[dict], rows: dict):
         m = _import("compute_lane_certification")
         config = self.data / "lane_certification_config.json"
         ledger = self.data / "audit_ledger.json"
         out = self.data / "lane_certification.json"
         config.write_text(json.dumps({"lanes": lanes}), encoding="utf-8")
         ledger.write_text(json.dumps({"rows": rows}), encoding="utf-8")
-        completed = mock.Mock(stdout=head + "\n")
         m.ledger_io.DATA = self.data
         with mock.patch.object(m, "CONFIG", config), \
              mock.patch.object(m, "LEDGER", ledger), \
              mock.patch.object(m, "OUT", out), \
-             mock.patch.object(m, "REPO_ROOT", self.root), \
-             mock.patch.object(m.subprocess, "run", return_value=completed):
+             mock.patch.object(m, "REPO_ROOT", self.root):
             self.assertEqual(m.main(), 0)
         return json.loads(out.read_text(encoding="utf-8")), out.read_bytes()
 
@@ -10008,8 +10006,9 @@ class ComputeLaneCertificationTest(unittest.TestCase):
             "deps": [],
         }}
         lanes = [{"lane": "stable", "root": "root"}]
-        _, first = self._run(lanes, rows)
+        payload, first = self._run(lanes, rows)
         _, second = self._run(lanes, rows)
+        self.assertNotIn("repo_head", payload)
         self.assertEqual(first, second)
 
         script = (

@@ -6,6 +6,7 @@ import hashlib
 import json
 import os
 import signal
+import stat
 import subprocess
 import sys
 import tempfile
@@ -53,6 +54,7 @@ class GeneratedProvenanceRecoveryTest(unittest.TestCase):
         self._git("init", "-q", "-b", "main")
         self._git("config", "user.email", "audit-test@example.invalid")
         self._git("config", "user.name", "Audit Test")
+        self._git("config", "core.filemode", "true")
         self._git("add", ".")
         self._git("commit", "-q", "-m", "baseline")
 
@@ -167,6 +169,44 @@ class GeneratedProvenanceRecoveryTest(unittest.TestCase):
                 self.assertEqual(self.path.read_bytes(), content)
                 self._git("restore", "--worktree", "--", batch.LANE_CERTIFICATION_PATH)
 
+    def test_clean_main_refuses_line_ending_drift(self):
+        self._refresh()
+        content = self.path.read_bytes().replace(b"\n", b"\r\n")
+        self.path.write_bytes(content)
+
+        error = self._clean_main_error()
+
+        self.assertEqual(error, "working tree is not clean")
+        self.assertEqual(self.path.read_bytes(), content)
+
+    def test_clean_main_refuses_committed_crlf_normalization(self):
+        committed = self.path.read_bytes().replace(b"\n", b"\r\n")
+        self.path.write_bytes(committed)
+        self._git("add", batch.LANE_CERTIFICATION_PATH)
+        self._git("commit", "-q", "--amend", "--no-edit")
+        refreshed = dict(self.payload, repo_head=self._git("rev-parse", "HEAD"))
+        normalized = (
+            json.dumps(refreshed, indent=2, sort_keys=True) + "\n"
+        ).encode("utf-8")
+        self.path.write_bytes(normalized)
+
+        error = self._clean_main_error()
+
+        self.assertEqual(error, "working tree is not clean")
+        self.assertEqual(self.path.read_bytes(), normalized)
+
+    def test_clean_main_refuses_preexisting_mode_change(self):
+        self._refresh()
+        self.path.chmod(stat.S_IMODE(self.path.stat().st_mode) | stat.S_IXUSR)
+        before_bytes = self.path.read_bytes()
+        before_mode = stat.S_IMODE(self.path.stat().st_mode)
+
+        error = self._clean_main_error()
+
+        self.assertEqual(error, "working tree is not clean")
+        self.assertEqual(self.path.read_bytes(), before_bytes)
+        self.assertEqual(stat.S_IMODE(self.path.stat().st_mode), before_mode)
+
     def test_clean_main_refuses_untracked_source_ledger_and_mixed_state(self):
         cases = ("untracked", "source", "ledger", "mixed")
         for case in cases:
@@ -213,12 +253,17 @@ class GeneratedProvenanceRecoveryTest(unittest.TestCase):
         original_sh = batch.sh
         injected = False
 
-        def racing_sh(cmd, timeout=120, *, honor_cancel=True):
+        def racing_sh(cmd, timeout=120, *, honor_cancel=True, text=True):
             nonlocal injected
             if cmd[:3] == ["git", "apply", "--reverse"] and not injected:
                 injected = True
                 self.path.write_text(raced_text, encoding="utf-8")
-            return original_sh(cmd, timeout=timeout, honor_cancel=honor_cancel)
+            return original_sh(
+                cmd,
+                timeout=timeout,
+                honor_cancel=honor_cancel,
+                text=text,
+            )
 
         with mock.patch.object(batch, "REPO_ROOT", self.root), mock.patch.object(
             batch,
@@ -233,6 +278,46 @@ class GeneratedProvenanceRecoveryTest(unittest.TestCase):
         self.assertEqual(
             after["lanes"][0]["blocking"],
             ["concurrent-user-work"],
+        )
+
+    def test_concurrent_mode_change_survives_patch_capture(self):
+        self._refresh()
+        original_sh = batch.sh
+        injected = False
+
+        def racing_sh(cmd, timeout=120, *, honor_cancel=True, text=True):
+            nonlocal injected
+            if (
+                cmd[:2] == ["git", "diff"]
+                and "--binary" in cmd
+                and not injected
+            ):
+                injected = True
+                mode = stat.S_IMODE(self.path.stat().st_mode)
+                self.path.chmod(mode | stat.S_IXUSR)
+            return original_sh(
+                cmd,
+                timeout=timeout,
+                honor_cancel=honor_cancel,
+                text=text,
+            )
+
+        with mock.patch.object(batch, "REPO_ROOT", self.root), mock.patch.object(
+            batch,
+            "sh",
+            side_effect=racing_sh,
+        ):
+            error = batch.clean_main_error()
+
+        self.assertTrue(injected)
+        self.assertEqual(error, "working tree is not clean")
+        self.assertEqual(
+            stat.S_IMODE(self.path.stat().st_mode) & stat.S_IXUSR,
+            stat.S_IXUSR,
+        )
+        self.assertEqual(
+            json.loads(self.path.read_text(encoding="utf-8"))["repo_head"],
+            self._git("rev-parse", "HEAD"),
         )
 
 

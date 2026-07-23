@@ -159,16 +159,21 @@ def sh(
     timeout: int | None = 120,
     *,
     honor_cancel: bool = True,
+    text: bool = True,
 ) -> subprocess.CompletedProcess:
+    empty = "" if text else b""
+    cancelled_message = (
+        "cancelled before launch" if text else b"cancelled before launch"
+    )
     cancel_event = _command_cancel_event() if honor_cancel else None
     if cancel_event is not None and cancel_event.is_set():
-        return subprocess.CompletedProcess(cmd, 125, "", "cancelled before launch")
+        return subprocess.CompletedProcess(cmd, 125, empty, cancelled_message)
     proc = subprocess.Popen(
         cmd,
         cwd=REPO_ROOT,
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
-        text=True,
+        text=text,
         start_new_session=True,
     )
     deadline = time.monotonic() + timeout if timeout is not None else None
@@ -178,8 +183,13 @@ def sh(
         try:
             stdout, stderr = proc.communicate(timeout=poll_window)
             if cancel_event is not None and cancel_event.is_set():
+                message = (
+                    "cancelled during command"
+                    if text
+                    else b"cancelled during command"
+                )
                 return subprocess.CompletedProcess(
-                    cmd, 125, stdout or "", stderr or "cancelled during command"
+                    cmd, 125, stdout or empty, stderr or message
                 )
             return subprocess.CompletedProcess(cmd, proc.returncode, stdout, stderr)
         except subprocess.TimeoutExpired:
@@ -205,8 +215,10 @@ def sh(
                 pass
             stdout, stderr = proc.communicate()
         reason = "cancelled" if cancelled else f"timed out after {timeout}s"
+        if not text:
+            reason = reason.encode("utf-8")
         return subprocess.CompletedProcess(
-            cmd, 125 if cancelled else 124, stdout or "", stderr or reason
+            cmd, 125 if cancelled else 124, stdout or empty, stderr or reason
         )
 
 
@@ -1144,10 +1156,10 @@ def recover_lane_certification_provenance_drift(
     path allowlist: it accepts one unstaged modified file, requires its bytes to
     be exactly either the committed payload with the obsolete field removed or
     with that field refreshed to the current commit, and refuses every staged,
-    untracked, deleted, malformed, or content-bearing change. The exact Git
-    patch is reversed instead of restoring the whole file, so an overlapping
-    concurrent write makes the apply fail and a non-overlapping write survives
-    for the post-recovery clean check.
+    untracked, deleted, malformed, metadata, or content-bearing change. The
+    verified content-only Git patch is reversed instead of restoring the whole
+    file, so an overlapping concurrent write makes the apply fail and a
+    non-overlapping write survives for the post-recovery clean check.
     """
     if status_output.splitlines() != [f" M {LANE_CERTIFICATION_PATH}"]:
         return False
@@ -1155,17 +1167,18 @@ def recover_lane_certification_provenance_drift(
     committed = sh(
         ["git", "show", f"HEAD:{LANE_CERTIFICATION_PATH}"],
         honor_cancel=honor_cancel,
+        text=False,
     )
     if committed.returncode != 0:
         return False
     path = REPO_ROOT / LANE_CERTIFICATION_PATH
     try:
-        working_text = path.read_text(encoding="utf-8")
-    except (OSError, UnicodeError):
+        working_bytes = path.read_bytes()
+    except OSError:
         return False
 
     provenance_pattern = re.compile(
-        r'(?m)^(  "repo_head": ")([0-9a-f]{40})(",)\n'
+        rb'(?m)^(  "repo_head": ")([0-9a-f]{40})(",)(\r?\n)'
     )
     provenance_matches = list(provenance_pattern.finditer(committed.stdout))
     if len(provenance_matches) != 1:
@@ -1179,35 +1192,75 @@ def recover_lane_certification_provenance_drift(
     if head.returncode != 0:
         return False
     current_head = head.stdout.strip()
+    if re.fullmatch(r"[0-9a-f]{40}", current_head) is None:
+        return False
+    current_head_bytes = current_head.encode("ascii")
     with_current_head = (
         committed.stdout[: provenance.start(2)]
-        + current_head
+        + current_head_bytes
         + committed.stdout[provenance.end(2) :]
     )
-    if working_text not in {without_provenance, with_current_head}:
+    if working_bytes not in {without_provenance, with_current_head}:
         return False
 
-    try:
-        patch = sh(
-            [
-                "git",
-                "diff",
-                "--no-ext-diff",
-                "--no-color",
-                "--binary",
-                "--",
-                LANE_CERTIFICATION_PATH,
-            ],
-            honor_cancel=honor_cancel,
-        )
-    except UnicodeError:
+    metadata = sh(
+        [
+            "git",
+            "diff",
+            "--no-ext-diff",
+            "--no-color",
+            "--summary",
+            "--",
+            LANE_CERTIFICATION_PATH,
+        ],
+        honor_cancel=honor_cancel,
+    )
+    if metadata.returncode != 0 or metadata.stdout.strip():
         return False
+
+    patch = sh(
+        [
+            "git",
+            "diff",
+            "--no-ext-diff",
+            "--no-textconv",
+            "--no-color",
+            "--binary",
+            "--",
+            LANE_CERTIFICATION_PATH,
+        ],
+        honor_cancel=honor_cancel,
+        text=False,
+    )
     if patch.returncode != 0 or not patch.stdout:
         return False
+    forbidden_patch_markers = (
+        b"old mode ",
+        b"new mode ",
+        b"new file mode ",
+        b"deleted file mode ",
+        b"GIT binary patch",
+    )
+    if any(marker in patch.stdout for marker in forbidden_patch_markers):
+        return False
+    metadata = sh(
+        [
+            "git",
+            "diff",
+            "--no-ext-diff",
+            "--no-color",
+            "--summary",
+            "--",
+            LANE_CERTIFICATION_PATH,
+        ],
+        honor_cancel=honor_cancel,
+    )
+    if metadata.returncode != 0 or metadata.stdout.strip():
+        return False
     try:
-        if path.read_text(encoding="utf-8") != working_text:
+        if path.read_bytes() != working_bytes:
             return False
-    except (OSError, UnicodeError):
+    except OSError:
         return False
 
     patch_path: Path | None = None
@@ -1217,7 +1270,7 @@ def recover_lane_certification_provenance_drift(
             suffix=".patch",
         )
         patch_path = Path(temporary)
-        with os.fdopen(descriptor, "w", encoding="utf-8") as handle:
+        with os.fdopen(descriptor, "wb") as handle:
             handle.write(patch.stdout)
         reversed_patch = sh(
             [

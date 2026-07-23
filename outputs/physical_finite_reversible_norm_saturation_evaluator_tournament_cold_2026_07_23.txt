@@ -1,0 +1,36 @@
+FINITE REVERSIBLE NORM/SATURATION EVALUATOR TOURNAMENT
+authority none audit unset cycle_claim 680
+PASS 01 pins/c576_script_and_note_and_receipt_sha256 :: {'module_sha': '53d60249420994818e7517645ad4157e1e11c7dc184fbf89b2838e94b53977d0', 'observed': {'scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py': '53d60249420994818e7517645ad4157e1e11c7dc184fbf89b2838e94b53977d0', 'docs/work_history/repo/review_feedback/PHYSICAL_DYNAMICAL_METRIC_SOURCE_LAW_BRIDGE_TOURNAMENT_CYCLE576_NOTE_2026-07-22.md': '2d5650c57d5518e274803f5c511886981c8572b553dda926739cc98199939c20', 'outputs/physical_dynamical_metric_source_law_bridge_tournament_cycle576_receipt_2026_07_22.json': '06456c1443f5464949f40d81e9f1c6316b3e4e8405415b5b0035e39d4b88c3bd'}}
+PASS 02 note_present_with_all_firewall_clauses :: {'present': True, 'missing': ()}
+PASS 03 frame_label_perms_valid_and_match_c576_rule :: {'n_perms': 24}
+PASS 04 all576_label_perm_products_close_integer_exact :: {'n_products': 576}
+PASS 05 population_built_and_floor_below_min_orbit_norm :: {'n_orbits': 24, 'min_norm': 0.209199, 'max_norm': 1.154701, 'FLOOR': 0.1}
+PASS 06 certified_rounding_exact_over_bounded_domain :: {'bad': 0, 'states': 39800}
+PASS 07 certificate_holds_on_every_evaluated_population_input :: {'checked': 4608}
+PASS 08a primitive_modular_adder_bijective_exhaustive :: {'states': 279810}
+PASS 08b primitive_squarer_pair_map_bijective_and_exactly_inverted :: {'states': 8224}
+PASS 08c primitive_accumulator_add_bijective :: {'states': 16384}
+PASS 09 structural_every_gate_is_a_verified_primitive_kind :: {'kinds': ['acc_add', 'acc_add_const', 'acc_add_const_inv', 'acc_add_inv', 'add_mod', 'squarer', 'squarer_inv'], 'gates': 122}
+PASS 10 reduced_fixture_all_inputs_ancilla_restored_and_matches_float_ref :: {'n_inputs': 27, 'Q': 16}
+PASS 11 micro_permutation_matrix_bijection_and_unitary :: {'D': 78732, 'PtP_minus_I_nnz': 0}
+PASS 12 micro_permutation_matrix_linear_and_norm_preserving :: {'linearity_residual': 1.7763568394002505e-15, 'norm_residual': 5.684341886080802e-14}
+PASS 13 micro_clean_ancilla_exactly_unentangled_superposition :: {'clean_weight_M_nonzero': 0.0, 'inputs': [(-1, -1, -1), (1, 1, 1)], 'M': [3, 3]}
+PASS 14 F1_garbage_retention_probe_fails_cleanliness :: {'retention_weight_M_nonzero': 0.9999999999999998, 'clean_weight_M_nonzero': 0.0}
+PASS 15a support_two_all_micro_rotations_recompose_exactly :: {'rotations': 9, 'max_word_len': 20, 'word_len_bound': 36}
+PASS 15b support_two_full_instance_budget_from_trace_within_cap :: {'budget': {64: 198144, 256: 3151872}, 'cap': 10000000}
+PASS 16 E2_saturation_injective_over_grid_bijection_witness :: {'grid': 18, 'rvals': 41}
+PASS 17 E2_denominator_census_within_declared_bound :: {'observed_max_den': 410, 'declared_bound': 820}
+PASS 18 E2_zero_input_and_receiver_zero_controls_exact :: {'zero_input': True, 'receiver_zero': True}
+PASS 19 quantization_bound_validity_all_inputs_within_B :: {'n_pairs': 8}
+PASS 20 quantization_bound_tightness_informative :: {'max_ratio': 0.7096, 'threshold': 0.125}
+PASS 21 quantization_bound_scaling_one_over_Q :: {'B256_over_B64': 0.25}
+PASS 22 covariance_evaluator_commutes_all24_frames_integer_exact :: {'comparisons': 1152}
+PASS 23 F3_zero_branch_exact_zero_output_no_division :: {'zero_branch': True, 'all_zero': True}
+PASS 24 F4_below_floor_refused_with_witness_healthy_evaluated :: {'sub_floor': 'refused', 'sub_norm': 0.01562, 'point_neutral_real_data': 'zero_branch', 'healthy': 'evaluated'}
+PASS 25 F2_truncating_variant_has_explicit_collision_pair :: {'collision': [[-2, -2, -2], [-1, -1, -1], [-37, -37, -37]]}
+PASS 26 F5_no_refit_single_frozen_tol_table :: {'keys': ['bound_slack', 'float_match', 'scaling_factor', 'signal', 'tightness_ratio']}
+PASS 27 actuation_endpoint_finite_matches_reference_within_propagated_bound :: {'max_dP': {'0.0:64': 0.00223479, '0.5:64': 0.00184246, '1.0:64': 0.00157837, '2.0:64': 0.00098599, '0.0:256': 0.00056923, '0.5:256': 0.00037145, '1.0:256': 0.00040417, '2.0:256': 0.00016546}, 'lambda_scaled_inputs_stayed_above_floor': True}
+PASS 28 actuation_both_quadrature_signs_occur :: {'coupling_signs': [-1, 1]}
+PASS 29 actuation_deletion_sensitivity_signal :: {'driven_max': 0.055583, 'deleted_max': 0.0}
+SUMMARY_JSON {"audit": "unset", "authority": "none", "cycle_claim": 680, "elapsed_seconds": 0.161, "failures": 0, "passes": 32}
+RESULT FINITE_REVERSIBLE_NORM_SATURATION_EVALUATOR_CONSTRUCTIVE_POSITIVE

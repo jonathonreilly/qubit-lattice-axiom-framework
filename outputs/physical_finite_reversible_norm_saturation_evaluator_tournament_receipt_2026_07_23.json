@@ -1,0 +1,382 @@
+{
+ "actuation_max_dP": {
+  "0.0:256": 0.0005692344765629159,
+  "0.0:64": 0.0022347858052241404,
+  "0.5:256": 0.0003714455767152777,
+  "0.5:64": 0.0018424604997264032,
+  "1.0:256": 0.000404173155264061,
+  "1.0:64": 0.001578371415237756,
+  "2.0:256": 0.00016546197047558574,
+  "2.0:64": 0.0009859933139380814
+ },
+ "audit": "unset",
+ "authority": "none",
+ "campaign_consistency_anchors": {
+  "c626_note": "1346e9c5aec6206642e64059eeff0b49d59df33f8fe0584c7c8537d3e2760893",
+  "c626_receipt": "ab8489e9875e362d2b496b1f92464e6c5c642eb3cdb72b1755e77c4d70b752f6",
+  "c626_runner": "a775cb759ebd4a54ca4707dd99540256658d5f70315afbb6685058fd568911cf",
+  "campaign_head": "fb0ab5636e557d8de1da8e643f419867ae69197a",
+  "route_a_all24_covariance_residual": 1.22e-15,
+  "route_a_both_quadrature_signs_occur": true,
+  "route_a_inverse_residual": 6.69e-16,
+  "route_a_min_endpoint_deletion": 0.0106,
+  "route_a_unitarity_residual": 3.09e-15,
+  "route_b_max_fixed_point_residual": 3.55e-15,
+  "route_b_min_feedback_deletion": 0.0378,
+  "route_b_pointwise_inverse_residual": 3.14e-16
+ },
+ "contract": {
+  "E2": {
+   "alpha": [
+    "1/2",
+    "1",
+    "2"
+   ],
+   "den_bound": 820,
+   "kappa": [
+    "1/2",
+    "1",
+    "2"
+   ],
+   "r0": "3/10",
+   "rho": "-1/5",
+   "sigma": [
+    -1,
+    1
+   ]
+  },
+  "actuation": {
+   "b": 0.17,
+   "c": [
+    0
+   ],
+   "improvement_axis_c": "DECLARED-ABSENT: c626's improvement vector is c620.spatial_trace_vector()@q from the unlanded Cycle-620 module; the c grid is not executable off main and no substitute semantics are invented",
+   "kappa": [
+    "1/2",
+    "1",
+    "2"
+   ],
+   "lam_mag": [
+    "1/2",
+    "1"
+   ],
+   "lam_sign": [
+    -1,
+    1
+   ],
+   "lambda_placement": "input-side, faithful to the c626 member loop (lambda scales the orbit before normalization; magnitude cancels only at eps=0)",
+   "n_orbits_thinned": 3,
+   "sigma": [
+    -1,
+    1
+   ],
+   "t": 0.7,
+   "thinning_declared": "orbit set thinned to one representative per length; full sigma/kappa/eps/lambda axes preserved"
+  },
+  "bounds": {
+   "B": {
+    "0.0:256": 0.10525151238521467,
+    "0.0:64": 0.4210060495408587,
+    "0.5:256": 0.028704957923240366,
+    "0.5:64": 0.11481983169296146,
+    "1.0:256": 0.019136638615493577,
+    "1.0:64": 0.07654655446197431,
+    "2.0:256": 0.014352478961620183,
+    "2.0:64": 0.05740991584648073
+   }
+  },
+  "lattice": {
+   "FLOOR": 0.1,
+   "K_max_factor": 2,
+   "Q_sizes": [
+    64,
+    256
+   ],
+   "eps_grid": [
+    "0",
+    "1/2",
+    "1",
+    "2"
+   ],
+   "n_frames": 24
+  },
+  "micro_instance": {
+   "D": 78732,
+   "Q": 4
+  },
+  "population": {
+   "lengths": [
+    3,
+    6,
+    7
+   ],
+   "max_orbit_norm": 1.1547005383792517,
+   "min_orbit_norm": 0.2091990546880976,
+   "n_orbits": 24,
+   "profiles": [
+    "TRAIN_XY",
+    "TRAIN_DIAGONAL",
+    "BLINDED_HELD_OBLIQUE"
+   ],
+   "sites": [
+    [
+     2,
+     1,
+     0
+    ],
+    [
+     3,
+     1,
+     0
+    ],
+    [
+     2,
+     1,
+     3
+    ]
+   ]
+  },
+  "reduced_instance": {
+   "Q": 16,
+   "bijectivity": "structural (per-gate exhaustive + composition); reduced enumerated in full; full instance NOT exhaustive",
+   "n_inputs": 27
+  },
+  "tol": {
+   "bound_slack": 1e-12,
+   "float_match": 1e-09,
+   "scaling_factor": 16.0,
+   "signal": 1e-06,
+   "tightness_ratio": 0.125
+  }
+ },
+ "cycle_claim": 680,
+ "date": "2026-07-23",
+ "elapsed_seconds": 0.16081375000067055,
+ "firewalls": [
+  "Constructive closure of the Cycle-626 finite-evaluator wall ON THE DECLARED LATTICES ONLY; arbitrary-precision and continuum claims NOT made.",
+  "No sign, scale, regulator, saturation-scale, lambda, or c is selected; the full grid survives; branch selection remains open.",
+  "No shared-code 3/4 DELAY association is derived; the PR5557 acceptance harness is untouched; the 5/4 ADVANCE count-edit interface is not driven.",
+  "No energy, stress, source, gravity, causal-rate, event, Record, or Born claim. A contact-sensitive response is not energy, stress, source, or gravity.",
+  "The value lattice, FLOOR, register widths, and grid are DECLARED SUPPLIED STRUCTURE. No new axiom, primitive, or premise class is introduced."
+ ],
+ "inventory": {
+  "derived": [
+   "certified integer reciprocal-sqrt-multiply and garbage-free reversible normalizer",
+   "exact all-24 covariance and 576 label-perm products of the finite evaluator",
+   "derived quantization bound B(eps,Q) with validity/tightness/scaling",
+   "exact-rational saturation with denominator census and controls",
+   "materialised integer permutation matrix: bijection/unitarity/linearity/unentanglement",
+   "support-two rail-SWAP recomposition and full-instance budget",
+   "actuation endpoint match within a derived propagated bound"
+  ],
+  "open": [
+   "arbitrary-precision / continuum evaluator and non-lattice inputs",
+   "selection of sign/scale/regulator/saturation-scale/lambda/c (full grid survives)",
+   "endogenous source profiles and locally-enforced value-basis domain",
+   "physical stress/energy/gravity identification (not claimed)"
+  ],
+  "supplied": [
+   "c576 actual-Regge source profiles, proper-cubic 24 frames, frame-sector permutation",
+   "value lattice L_Q with Q in {64,256}, K_max, FLOOR, register widths",
+   "regulator grid eps in {0,1/2,1,2}; saturation grid sigma/kappa/alpha; r0, rho",
+   "actuation grid b, t, sigma, kappa, lambda, c; one-excitation block layout"
+  ]
+ },
+ "observed_bound_ratios": {
+  "0.0:256": 0.264235455340303,
+  "0.0:64": 0.31843769399451816,
+  "0.5:256": 0.5676137125392188,
+  "0.5:64": 0.5139530166314333,
+  "1.0:256": 0.6158919770208019,
+  "1.0:64": 0.6002888011868077,
+  "2.0:256": 0.7095575409678487,
+  "2.0:64": 0.6275816130337324
+ },
+ "pass": true,
+ "pins": {
+  "c576_files": {
+   "docs/work_history/repo/review_feedback/PHYSICAL_DYNAMICAL_METRIC_SOURCE_LAW_BRIDGE_TOURNAMENT_CYCLE576_NOTE_2026-07-22.md": "2d5650c57d5518e274803f5c511886981c8572b553dda926739cc98199939c20",
+   "outputs/physical_dynamical_metric_source_law_bridge_tournament_cycle576_receipt_2026_07_22.json": "06456c1443f5464949f40d81e9f1c6316b3e4e8405415b5b0035e39d4b88c3bd",
+   "scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py": "53d60249420994818e7517645ad4157e1e11c7dc184fbf89b2838e94b53977d0"
+  },
+  "campaign_anchors": {
+   "c626_note": "1346e9c5aec6206642e64059eeff0b49d59df33f8fe0584c7c8537d3e2760893",
+   "c626_receipt": "ab8489e9875e362d2b496b1f92464e6c5c642eb3cdb72b1755e77c4d70b752f6",
+   "c626_runner": "a775cb759ebd4a54ca4707dd99540256658d5f70315afbb6685058fd568911cf",
+   "campaign_head": "fb0ab5636e557d8de1da8e643f419867ae69197a",
+   "route_a_all24_covariance_residual": 1.22e-15,
+   "route_a_both_quadrature_signs_occur": true,
+   "route_a_inverse_residual": 6.69e-16,
+   "route_a_min_endpoint_deletion": 0.0106,
+   "route_a_unitarity_residual": 3.09e-15,
+   "route_b_max_fixed_point_residual": 3.55e-15,
+   "route_b_min_feedback_deletion": 0.0378,
+   "route_b_pointwise_inverse_residual": 3.14e-16
+  }
+ },
+ "rows": [
+  {
+   "detail": "{'module_sha': '53d60249420994818e7517645ad4157e1e11c7dc184fbf89b2838e94b53977d0', 'observed': {'scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py': '53d60249420994818e7517645ad4157e1e11c7dc184fbf89b2838e94b53977d0', 'docs/work_history/repo/review_feedback/PHYSICAL_DYNAMICAL_METRIC_SOURCE_LAW_BRIDGE_TOURNAMENT_CYCLE576_NOTE_2026-07-22.md': '2d5650c57d5518e274803",
+   "label": "01 pins/c576_script_and_note_and_receipt_sha256",
+   "pass": true
+  },
+  {
+   "detail": "{'present': True, 'missing': ()}",
+   "label": "02 note_present_with_all_firewall_clauses",
+   "pass": true
+  },
+  {
+   "detail": "{'n_perms': 24}",
+   "label": "03 frame_label_perms_valid_and_match_c576_rule",
+   "pass": true
+  },
+  {
+   "detail": "{'n_products': 576}",
+   "label": "04 all576_label_perm_products_close_integer_exact",
+   "pass": true
+  },
+  {
+   "detail": "{'n_orbits': 24, 'min_norm': 0.209199, 'max_norm': 1.154701, 'FLOOR': 0.1}",
+   "label": "05 population_built_and_floor_below_min_orbit_norm",
+   "pass": true
+  },
+  {
+   "detail": "{'bad': 0, 'states': 39800}",
+   "label": "06 certified_rounding_exact_over_bounded_domain",
+   "pass": true
+  },
+  {
+   "detail": "{'checked': 4608}",
+   "label": "07 certificate_holds_on_every_evaluated_population_input",
+   "pass": true
+  },
+  {
+   "detail": "{'states': 279810}",
+   "label": "08a primitive_modular_adder_bijective_exhaustive",
+   "pass": true
+  },
+  {
+   "detail": "{'states': 8224}",
+   "label": "08b primitive_squarer_pair_map_bijective_and_exactly_inverted",
+   "pass": true
+  },
+  {
+   "detail": "{'states': 16384}",
+   "label": "08c primitive_accumulator_add_bijective",
+   "pass": true
+  },
+  {
+   "detail": "{'kinds': ['acc_add', 'acc_add_const', 'acc_add_const_inv', 'acc_add_inv', 'add_mod', 'squarer', 'squarer_inv'], 'gates': 122}",
+   "label": "09 structural_every_gate_is_a_verified_primitive_kind",
+   "pass": true
+  },
+  {
+   "detail": "{'n_inputs': 27, 'Q': 16}",
+   "label": "10 reduced_fixture_all_inputs_ancilla_restored_and_matches_float_ref",
+   "pass": true
+  },
+  {
+   "detail": "{'D': 78732, 'PtP_minus_I_nnz': 0}",
+   "label": "11 micro_permutation_matrix_bijection_and_unitary",
+   "pass": true
+  },
+  {
+   "detail": "{'linearity_residual': 1.7763568394002505e-15, 'norm_residual': 5.684341886080802e-14}",
+   "label": "12 micro_permutation_matrix_linear_and_norm_preserving",
+   "pass": true
+  },
+  {
+   "detail": "{'clean_weight_M_nonzero': 0.0, 'inputs': [(-1, -1, -1), (1, 1, 1)], 'M': [3, 3]}",
+   "label": "13 micro_clean_ancilla_exactly_unentangled_superposition",
+   "pass": true
+  },
+  {
+   "detail": "{'retention_weight_M_nonzero': 0.9999999999999998, 'clean_weight_M_nonzero': 0.0}",
+   "label": "14 F1_garbage_retention_probe_fails_cleanliness",
+   "pass": true
+  },
+  {
+   "detail": "{'rotations': 9, 'max_word_len': 20, 'word_len_bound': 36}",
+   "label": "15a support_two_all_micro_rotations_recompose_exactly",
+   "pass": true
+  },
+  {
+   "detail": "{'budget': {64: 198144, 256: 3151872}, 'cap': 10000000}",
+   "label": "15b support_two_full_instance_budget_from_trace_within_cap",
+   "pass": true
+  },
+  {
+   "detail": "{'grid': 18, 'rvals': 41}",
+   "label": "16 E2_saturation_injective_over_grid_bijection_witness",
+   "pass": true
+  },
+  {
+   "detail": "{'observed_max_den': 410, 'declared_bound': 820}",
+   "label": "17 E2_denominator_census_within_declared_bound",
+   "pass": true
+  },
+  {
+   "detail": "{'zero_input': True, 'receiver_zero': True}",
+   "label": "18 E2_zero_input_and_receiver_zero_controls_exact",
+   "pass": true
+  },
+  {
+   "detail": "{'n_pairs': 8}",
+   "label": "19 quantization_bound_validity_all_inputs_within_B",
+   "pass": true
+  },
+  {
+   "detail": "{'max_ratio': 0.7096, 'threshold': 0.125}",
+   "label": "20 quantization_bound_tightness_informative",
+   "pass": true
+  },
+  {
+   "detail": "{'B256_over_B64': 0.25}",
+   "label": "21 quantization_bound_scaling_one_over_Q",
+   "pass": true
+  },
+  {
+   "detail": "{'comparisons': 1152}",
+   "label": "22 covariance_evaluator_commutes_all24_frames_integer_exact",
+   "pass": true
+  },
+  {
+   "detail": "{'zero_branch': True, 'all_zero': True}",
+   "label": "23 F3_zero_branch_exact_zero_output_no_division",
+   "pass": true
+  },
+  {
+   "detail": "{'sub_floor': 'refused', 'sub_norm': 0.01562, 'point_neutral_real_data': 'zero_branch', 'healthy': 'evaluated'}",
+   "label": "24 F4_below_floor_refused_with_witness_healthy_evaluated",
+   "pass": true
+  },
+  {
+   "detail": "{'collision': [[-2, -2, -2], [-1, -1, -1], [-37, -37, -37]]}",
+   "label": "25 F2_truncating_variant_has_explicit_collision_pair",
+   "pass": true
+  },
+  {
+   "detail": "{'keys': ['bound_slack', 'float_match', 'scaling_factor', 'signal', 'tightness_ratio']}",
+   "label": "26 F5_no_refit_single_frozen_tol_table",
+   "pass": true
+  },
+  {
+   "detail": "{'max_dP': {'0.0:64': 0.00223479, '0.5:64': 0.00184246, '1.0:64': 0.00157837, '2.0:64': 0.00098599, '0.0:256': 0.00056923, '0.5:256': 0.00037145, '1.0:256': 0.00040417, '2.0:256': 0.00016546}, 'lambda_scaled_inputs_stayed_above_floor': True}",
+   "label": "27 actuation_endpoint_finite_matches_reference_within_propagated_bound",
+   "pass": true
+  },
+  {
+   "detail": "{'coupling_signs': [-1, 1]}",
+   "label": "28 actuation_both_quadrature_signs_occur",
+   "pass": true
+  },
+  {
+   "detail": "{'driven_max': 0.055583, 'deleted_max': 0.0}",
+   "label": "29 actuation_deletion_sensitivity_signal",
+   "pass": true
+  }
+ ],
+ "tests_failed": 0,
+ "tests_passed": 32,
+ "tests_total": 32
+}

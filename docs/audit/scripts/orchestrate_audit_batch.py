@@ -1200,6 +1200,12 @@ def recover_lane_certification_provenance_drift(
         return False
     if working_stat.st_nlink != 1:
         return False
+    if working_stat.st_uid != os.geteuid():
+        return False
+    if getattr(working_stat, "st_flags", 0):
+        return False
+    if not os.access(path, os.W_OK):
+        return False
     working_signature = _file_snapshot_signature(working_stat)
 
     provenance_pattern = re.compile(

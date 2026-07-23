@@ -1,0 +1,15 @@
+PASS exact target contract frozen before evidence load :: {'target_contract_sha256': 'c1d33a79c4a702f19c44dec5dcf8ae04ac1c3553fa9d335f69897aff5f632fc1', 'target_line': 10, 'first_evidence_load_line': 117, 'frozen_before_evidence': True, 'proof_search_governance_exact_fields': ['allowed_premises', 'completion_witness', 'forbidden_weakenings', 'outcomes_not_closure', 'quantifiers_domain', 'required_edge_cases', 'target_statement'], 'pass': True}
+PASS Cycle634/Cycle625/Cycle531/Cycle621 immutable shores and interfaces :: {'Cycle634_fixed_menu_pass': True, 'Cycle625_route_B_pass': True, 'Cycle625_route_B_Cycle531_failures': 0, 'Cycle531_port_pass': True, 'Cycle621_preservation_pass': True}
+PASS objective stochastic retained-exhaust kernel on all train and blinded held states :: {'rows': 25, 'held': 10, 'effect': 9.992007221626409e-16}
+PASS finite ready/spent innovation ledger, inverse, saturation, and exact renewal residual :: {'sizes': 3, 'renewal': 'W_finite_innovation_exhaust_non_erasing_renewal'}
+PASS all24/all576 menu propensities, supercell, packet, and Cycle621 preservation :: {'comparisons': 4080, 'generators': 546}
+PASS inverse/deletion/malformed/lawful-domain and host-free controls :: {'gate_rows': 12, 'malformed': 6}
+PASS fresh canonical N1-N8 schema and negative gates :: {'Status_PASS': True, 'gates': True, 'flags': True, 'N1': True, 'N2': True, 'N4': True, 'N5': True, 'N6': True, 'N7': True, 'N8': True, 'pass': True}
+PASS top-level candidate/strict/breakthrough and negative gates :: {'Status': True, 'gates': True, 'flags': True, 'strict_false': True, 'candidate_true': True, 'breakthrough_false': True, 'pass': True}
+PASS Cycle662 note semantic contract :: []
+{
+  "pass": true,
+  "tests": "9/9",
+  "elapsed": 0.7969107499811798,
+  "receipt": "/private/tmp/toe-science.BB0KQV/outputs/physical_objective_stochastic_open_dilation_cycle662_receipt_2026_07_23.json"
+}

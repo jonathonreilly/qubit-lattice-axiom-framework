@@ -1,0 +1,426 @@
+{
+  "Cycle670_exact_missing_coupling_retired": true,
+  "Status": "PASS",
+  "arbitrary_carrier_and_deletion_controls": {
+    "actual_access_edge_population": 287861,
+    "all_arbitrary_carrier_labels_exhausted_symbolically": true,
+    "available_path_edge_population": 377447,
+    "delete_each_actual_open_or_close_SWAP_tests": 575722,
+    "delete_each_apply_atom_inherited_positive": true,
+    "final_borrowed_role_leakage_count": 0,
+    "full_G_physical_returns_the_declared_code_sector": true,
+    "intermediate_roles_may_leave_the_stroboscopic_code_sector": true,
+    "minimum_deleted_SWAP_carrier_permutation_residual": 2,
+    "open_inverse_carrier_return_failures": 0,
+    "pass": true,
+    "payload_arrival_failures": 0
+  },
+  "audit": "unset",
+  "author_accepted": false,
+  "author_artifact_status_accepted": false,
+  "authority": "none",
+  "axiom_pressure": false,
+  "breakthrough": false,
+  "classification": "candidate-complete exact selected-record physical corridor compiler",
+  "constitutional_effect": "none",
+  "coordinate_explicit_corridors": {
+    "action_phases": 8821,
+    "active_controller_role_hits": 0,
+    "axis_order_histogram": {
+      "(0, 1, 2)": 13290,
+      "(1, 0, 2)": 4352
+    },
+    "canonical_corridor_bonds": 58681,
+    "canonical_corridor_roles": 49249,
+    "coordinate_explicit_operand_paths": 17642,
+    "coordinate_explicit_path_word_sha256": "ef590d11a30794a47a51fe3f7b081faa24a6cf0ef1617cc8a5709d5723a6419d",
+    "expected_action_phases": 8821,
+    "fine_NN_bond_failures": 0,
+    "maximum_path_edges": 37,
+    "mean_path_edges": 21.394796508332387,
+    "minimum_path_edges": 5,
+    "pass": true,
+    "path_construction_failures": 0,
+    "paths_are_simple": true,
+    "runtime_path_source": "active one-hot head/phase plus static typed access word; no host gate/site/path index"
+  },
+  "covariance_collision_capacity": {
+    "all24_fine_NN_failures": 0,
+    "all24_rotated_bond_checks": 1408344,
+    "all24_rotated_bond_word_sha256": "fcad0a5f3ece43c16687b616900c4515516879876b03f8fe4ea8aadc783970a0",
+    "all576_coordinate_composition_failures": 0,
+    "canonical_corridor_bonds": 58681,
+    "canonical_corridor_roles": 49249,
+    "coordinate_explicit_path_word_sha256": "ef590d11a30794a47a51fe3f7b081faa24a6cf0ef1617cc8a5709d5723a6419d",
+    "helper_inventory_match": true,
+    "memory_isolated_size_and_bond_replays": true,
+    "one_hot_head_phase_access_subphase_serializes_every_shared_role": true,
+    "ordinary_coarse_K129_translation_covariance": true,
+    "pass": true,
+    "proper_cubic_aliases_are_shared_serial_carriers": true,
+    "sizes": [
+      {
+        "K129_capacity_margin_after_C667_C670_and_new_free_corridors": 653269,
+        "canonical_corridor_roles": 49249,
+        "forbidden_unreturned_collisions": 0,
+        "held_out": false,
+        "intentional_borrowed_physical_roles": 183584,
+        "intersection_inventory": {
+          "Cycle667_parser": 0,
+          "Cycle670_controller": 164232,
+          "aux": 0,
+          "new_sidecars": 5952,
+          "old": 0,
+          "prior": 5112,
+          "route_support": 8336
+        },
+        "length": 3,
+        "new_free_physical_roles": 974900,
+        "physical_corridor_role_union": 1158484,
+        "proper_cubic_shared_role_aliases": 23492
+      },
+      {
+        "K129_capacity_margin_after_C667_C670_and_new_free_corridors": 623845,
+        "canonical_corridor_roles": 49249,
+        "forbidden_unreturned_collisions": 0,
+        "held_out": false,
+        "intentional_borrowed_physical_roles": 173408,
+        "intersection_inventory": {
+          "Cycle667_parser": 0,
+          "Cycle670_controller": 163992,
+          "aux": 0,
+          "new_sidecars": 912,
+          "old": 0,
+          "prior": 1944,
+          "route_support": 6608
+        },
+        "length": 6,
+        "new_free_physical_roles": 1004324,
+        "physical_corridor_role_union": 1177732,
+        "proper_cubic_shared_role_aliases": 4244
+      },
+      {
+        "K129_capacity_margin_after_C667_C670_and_new_free_corridors": 623269,
+        "canonical_corridor_roles": 49249,
+        "forbidden_unreturned_collisions": 0,
+        "held_out": true,
+        "intentional_borrowed_physical_roles": 172832,
+        "intersection_inventory": {
+          "Cycle667_parser": 0,
+          "Cycle670_controller": 163992,
+          "aux": 0,
+          "new_sidecars": 744,
+          "old": 0,
+          "prior": 1536,
+          "route_support": 6608
+        },
+        "length": 7,
+        "new_free_physical_roles": 1004900,
+        "physical_corridor_role_union": 1177732,
+        "proper_cubic_shared_role_aliases": 4244
+      }
+    ],
+    "unit_fine_translation_of_complete_substrate_preserves_bonds_and_intersections": true
+  },
+  "cycle": 677,
+  "date": "2026-07-23",
+  "frozen_target": {
+    "completion_witness": "coordinate-explicit open/apply/close call words with arbitrary-carrier return, deletion controls, and exact selected-code E G_selected = G_physical E",
+    "does_not_count": [
+      "blank-only corridor scout",
+      "host-selected route",
+      "non-NN token/data call",
+      "general RLE decoder",
+      "full E",
+      "all-face compiler"
+    ],
+    "domain": [
+      "exact selected final Cycle660/Cycle667 record",
+      "L3",
+      "L6",
+      "held-out L7",
+      "all 24 proper-cubic frames",
+      "all 576 ordered frame products"
+    ],
+    "target": "close only the Cycle670 joint fine-NN phase-to-operand corridors while preserving its 524-cell ring, 85-edge grant carrier, 17 rails/cell, 8,826-state return and unchanged Cycle654 action"
+  },
+  "inherited_fixtures": {
+    "Cycle219_mass_residual": 2.220446049250313e-16,
+    "Cycle230_contact_deletion_residual": 0.36789306705608243,
+    "Cycle230_seam_failures": 0,
+    "pass": true
+  },
+  "literal_physical_call_word": {
+    "access_subphase_saturation_margin": 205,
+    "direct_action_fine_NN_failures": 0,
+    "fine_NN_access_failures": 0,
+    "host_dispatch_index_or_schedule": false,
+    "inactive_phase_cells_identity": true,
+    "literal_call_word_sha256": "5a4dbfbd6cc548b9382e20e1183eedd062f3bf10d91a96f1490582cf60218258",
+    "literal_physical_call_count": 613579,
+    "maximum_elementary_support_M2": 2,
+    "maximum_one_phase_physical_calls": 307,
+    "nine_bit_access_subphase_capacity": 512,
+    "operand_access_SWAP_calls": 575722,
+    "operand_access_open_edges": 287861,
+    "operand_access_round_trips": 14524,
+    "pass": true,
+    "support_failures": 0,
+    "support_histogram": {
+      "CNOT/support2": 14520,
+      "H/support1": 4148,
+      "SWAP_close/support2": 287861,
+      "SWAP_open/support2": 287861,
+      "T/support1": 8815,
+      "Tdg/support1": 6222,
+      "controlled_H/support2": 1038,
+      "controlled_T/support2": 1557,
+      "controlled_Tdg/support2": 1557
+    },
+    "token_gated_action_atom_count": 37857
+  },
+  "local_constraint_scope": {
+    "declared_selected_code_preserved_by_full_G_physical": true,
+    "every_borrowed_role_returned_exactly": true,
+    "intermediate_microcalls_may_leave_stroboscopic_constraint_sector": true,
+    "malformed_zero_duplicate_head_phase_and_saturated_subphase_rejected": true
+  },
+  "maturity_0_to_5": {
+    "Born_and_probability": 1,
+    "causal_time": 1,
+    "gravity_and_source": 1,
+    "inertia_and_matter": 1,
+    "operational_quantum_and_records": 3
+  },
+  "no_go_discipline": {
+    "N1_negative_gate": "FAIL / DO NOT SHIP",
+    "N1_normalized_families": [
+      {
+        "family": "blank-only disjoint action tiles",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism": "collision-free vacuum routing",
+        "object": "two simultaneous operand paths into a four-site token tile",
+        "result": "route-specific misses; not used as negative evidence",
+        "terminal": "all 8,821 phase cells"
+      },
+      {
+        "family": "blank-only sequential single slot",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism": "one-at-a-time shuttling",
+        "object": "one action neighbor reused by both operands",
+        "result": "improved but left route-specific misses",
+        "terminal": "cross proper-cubic occupied shells"
+      },
+      {
+        "family": "arbitrary-carrier catalytic shuttle",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism": "S inverse U S conjugation restores every carrier",
+        "object": "coordinate paths through arbitrary M2 carrier states",
+        "result": "candidate-complete positive",
+        "terminal": "literal all-phase word and deletion audit"
+      },
+      {
+        "family": "residual-vector route cursor",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism": "local decrementing successor rule",
+        "object": "carried displacement/axis priority",
+        "result": "static exact access words suffice at selected-record scope; kept as alternative",
+        "terminal": "avoid static path table"
+      },
+      {
+        "family": "staggered matching access",
+        "honesty_marker": "RULED OUT BY PRIOR Cycle655 as unnecessary here",
+        "mechanism": "state-carried colour",
+        "object": "proper-cubic edge-colour layers",
+        "result": "not used as closure",
+        "terminal": "full operand excursion"
+      }
+    ],
+    "N1_qualifying_attempts": 5,
+    "N2_collapsed_walls": {},
+    "N2_directed_pairs": [],
+    "N2_independence_complete": true,
+    "N3_hidden_wall_scan": [
+      {
+        "classification": "proved symbolic S^-1 U S return; no blank premise",
+        "phrase": "arbitrary carrier"
+      },
+      {
+        "classification": "explicit supplied local program structure; runtime selected by carried head/phase/access subphase",
+        "phrase": "static typed access word"
+      },
+      {
+        "classification": "explicit shared serial carriers, not unreported collisions",
+        "phrase": "proper-cubic aliases"
+      }
+    ],
+    "N4_exact_residual_matching": [
+      {
+        "closure": true,
+        "current_residual": "all 17,642 coordinate paths plus exact open/apply/close word pass",
+        "exact_match": true,
+        "prior_line": 361,
+        "prior_path": "scripts/physical_selected_record_route_head_microphase_cycle670_2026_07_23.py",
+        "prior_ref": "26af99c636",
+        "prior_residual": "joint fine-NN phase-to-operand corridors false",
+        "same_scope": true
+      },
+      {
+        "closure": true,
+        "current_residual": "selected-record intertwiner residual zero after corridor conjugations",
+        "exact_match": true,
+        "prior_line": 28,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_SELECTED_RECORD_ROUTE_HEAD_MICROPHASE_CYCLE670_NOTE_2026-07-23.md",
+        "prior_ref": "26af99c636",
+        "prior_residual": "strict selected-record intertwiner false only pending operand corridors",
+        "same_scope": true
+      }
+    ],
+    "N5_five_resolution_rhetoric_audit": [
+      {
+        "claim": "corridor closure",
+        "lattice_wide": "selected record across all24/coarse translations only",
+        "per_block": "all 519 actions",
+        "per_element": "every bond NN",
+        "per_mode": "active/inactive phase",
+        "per_site": "arbitrary carrier restored"
+      },
+      {
+        "claim": "not a general decoder",
+        "lattice_wide": "all records/all faces untested and unclaimed",
+        "per_block": "one controller",
+        "per_element": "access records only",
+        "per_mode": "one selected word",
+        "per_site": "no RLE field read"
+      }
+    ],
+    "N6_partial_closure_paths": [
+      {
+        "artifact": "Cycle677",
+        "status": "CANDIDATE COMPLETE SELECTED SCOPE",
+        "what_closes": "the exact Cycle670 corridor residual without new axiom or convention"
+      },
+      {
+        "artifact": "general decoder/all-face scale",
+        "status": "SEPARATE UNATTEMPTED",
+        "what_closes": "different residuals; not prerequisites for selected-code theorem"
+      }
+    ],
+    "N7_cited_actionable_steelman": {
+      "argument": "A hostile reviewer should try to break catalytic borrowing with entangled, non-basis carrier states or a proper-frame alias. The S^-1 U S identity is operator-level, not a basis-only permutation claim; every borrowed path is simple, exact inverse is enumerated, shared aliases are serialized by the unique carried controller, and deletion leaves a nonidentity permutation. The remaining attack is independent replay/audit, not a known constructive gap.",
+      "terminal_test": "independent cold replay of all paths, arbitrary-carrier returns, selected-code residual and held-L7/all24 controls"
+    },
+    "N8_cross_cycle_echo": [
+      {
+        "cycle": 654,
+        "echo": "forward/reverse SWAP excursions already restore arbitrary route carriers; same conjugation mechanism is extended here"
+      },
+      {
+        "cycle": 655,
+        "echo": "state-carried local dispatch prevents a static host trace from serving as closure"
+      },
+      {
+        "cycle": 667,
+        "echo": "grant and exact selected record remain byte-pinned"
+      },
+      {
+        "cycle": 670,
+        "echo": "one named corridor residual is matched exactly and retired"
+      }
+    ],
+    "axiom_pressure": false,
+    "axiom_pressure_gate": "FAIL / DO NOT SHIP",
+    "broad_negative_gate": "FAIL / DO NOT SHIP",
+    "broad_negative_shipped": false,
+    "minimum_content_gate": "FAIL / DO NOT SHIP",
+    "minimum_content_shipped": false,
+    "pass": true,
+    "shared_obstruction_gate": "FAIL / DO NOT SHIP",
+    "shared_route_independent_obstruction": false,
+    "skill_freshness": {
+      "newer_origin_main_followed": true,
+      "origin_main_no_go_sha256": "7d1aea8243ddd972331b935e2e836657e72115da3efe259f828fe862469d68b7",
+      "proof_search_governance_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    }
+  },
+  "optimal_next_campaign": "independently replay/audit the Cycle677 selected-code theorem, then\u2014only if retained\u2014return to the campaign ledger and choose the highest-value separate wall; do not silently generalize this access compiler into a general RLE decoder or all-face E",
+  "pass": true,
+  "preserved_Cycle670": {
+    "grant_carrier_edges": 85,
+    "head_ring_cells": 524,
+    "phase_rails_per_cell": 17,
+    "reversible_head_phase_states": 8826,
+    "static_program_sha256": "cfafdfa24f6f30c81fb1c5b9015f68cca194169d8b6c4fdc123f549fce9d8290",
+    "unchanged_data_gate_cells": 519
+  },
+  "resources": {
+    "elapsed_seconds": 64.18112841702532,
+    "maximum_RSS_bytes": 449445888
+  },
+  "route_by_route_disposition": {
+    "arbitrary_carrier_catalytic_shuttle": "SELECTED-CODE PASS",
+    "blank_only_disjoint_tile": "ROUTE_SPECIFIC MISS NOT OBSTRUCTION",
+    "blank_only_single_slot": "ROUTE_SPECIFIC PARTIAL",
+    "host_static_schedule": "FORBIDDEN",
+    "residual_vector_cursor": "ALTERNATIVE NOT NEEDED"
+  },
+  "selected_code_intertwiner": {
+    "E_G_selected_equals_G_physical_E": true,
+    "all_face_claim": false,
+    "domain": "exact Cycle667-selected final record; one proper-cubic carried frame/head sector; arbitrary data and borrowed-carrier amplitudes; controller work blank at boundary",
+    "exact_residual": 0.0,
+    "full_E_claim": false,
+    "general_RLE_decoder_claim": false
+  },
+  "semantic_firewall": {
+    "coarse_CAR_cell_is_physical_site_compiler": false,
+    "gate_phase_is_energy": false,
+    "head_or_access_cursor_is_Record": false,
+    "microphase_is_time": false,
+    "selected_record_theorem_is_full_E": false,
+    "subphase_call_count_is_rate": false
+  },
+  "shared_route_independent_obstruction": false,
+  "shore": {
+    "Cycle670_pins": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_SELECTED_RECORD_ROUTE_HEAD_MICROPHASE_CYCLE670_NOTE_2026-07-23.md": "701ddd6fe9b5f7ddd3177f7e864c2259b29f5b3adf87c5ba3f6cccf537c48fa8",
+      "outputs/physical_selected_record_route_head_microphase_cycle670_cold_2026_07_23.txt": "13af942ba16d75c36121d18799d59d617f0eee1c0a268d7c93881374534c5f03",
+      "outputs/physical_selected_record_route_head_microphase_cycle670_receipt_2026_07_23.json": "23453dbe32a8a6fbeb856d0158f5520a5a491cbf7807c89dd5bf6181340a29a6",
+      "scripts/physical_selected_record_route_head_microphase_cycle670_2026_07_23.py": "2bd2795728335fbccbef980108e0f508879495622ebc5e2e21e1b5abe7908bd0"
+    },
+    "no_go_skill_origin_main_sha256": "7d1aea8243ddd972331b935e2e836657e72115da3efe259f828fe862469d68b7",
+    "observed": {
+      "docs/work_history/repo/review_feedback/PHYSICAL_SELECTED_RECORD_ROUTE_HEAD_MICROPHASE_CYCLE670_NOTE_2026-07-23.md": "701ddd6fe9b5f7ddd3177f7e864c2259b29f5b3adf87c5ba3f6cccf537c48fa8",
+      "outputs/physical_selected_record_route_head_microphase_cycle670_cold_2026_07_23.txt": "13af942ba16d75c36121d18799d59d617f0eee1c0a268d7c93881374534c5f03",
+      "outputs/physical_selected_record_route_head_microphase_cycle670_receipt_2026_07_23.json": "23453dbe32a8a6fbeb856d0158f5520a5a491cbf7807c89dd5bf6181340a29a6",
+      "scripts/physical_selected_record_route_head_microphase_cycle670_2026_07_23.py": "2bd2795728335fbccbef980108e0f508879495622ebc5e2e21e1b5abe7908bd0"
+    },
+    "proof_search_governance_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+  },
+  "six_wall_ledger": {
+    "C_int": "unchanged Cycle654 route preserves pinned Cycle219 mass and Cycle230 contact/seam fixtures; no new inertia law",
+    "C_local": "the one named Cycle670 locality residual is retired by 17,642 literal fine-NN access paths and a support<=2 call word; intermediate stroboscopic-sector departure is explicit",
+    "C_num": "exact operator/permutation/GF(2) residuals and exhaustive deletion populations only; no Born claim",
+    "C_ref": "advanced at the exact selected-record scope through proper-cubic rotated corridor bonds, shared-role serialization and all576 closure; general records/all faces remain separate",
+    "C_source": "unchanged; corridor geometry and calls have no gravity/source interpretation",
+    "C_wrap": "the Cycle667 grant, Cycle670 head/phase ring, every operand shuttle and every borrowed carrier now return at the selected-code boundary"
+  },
+  "status": "cycle677-selected-record-joint-fine-NN-operand-corridors-closed",
+  "strict_selected_record_physical_intertwiner_compiled": true,
+  "strongest_constructive_result": "all 8,821 active Cycle670 microphases now have two coordinate-explicit fine-NN operand paths; the 17,642 paths compile to one exact support-one/two open/apply/close word whose arbitrary occupied carriers return by operator-level conjugation, with zero final leakage, positive deletion controls, L3/L6/held-L7 capacity and all24/all576 covariance; composed with the unchanged Cycle654 route and returned Cycle670 controller, the declared selected-record code satisfies E G_selected = G_physical E exactly",
+  "supplied_structure_inventory": {
+    "Cycle670_controller_and_static_program": true,
+    "all_face_arbitration": false,
+    "arbitrary_borrowed_carrier_states": true,
+    "autonomous_genesis_or_blank_renewal": false,
+    "blank_corridor_vacuum": false,
+    "carried_head_phase_and_access_subphase": true,
+    "coordinate_explicit_access_words": true,
+    "general_decoder": false,
+    "nine_reused_inactive_phase_roles_for_access_subphase": true,
+    "proper_cubic_rotated_bond_types": true
+  },
+  "tests_failed": 0,
+  "tests_passed": 10,
+  "tests_total": 10
+}

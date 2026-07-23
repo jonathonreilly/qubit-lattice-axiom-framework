@@ -1,0 +1,828 @@
+{
+  "TOE_dependency_ledger": {
+    "Born_probability": "unchanged",
+    "causal_time": "physical rows 1-3 added to prior conditional rows 4-9 on a trapped transition code",
+    "gravity_source": "unchanged",
+    "inertia_matter": "actual common-family matter collision standards drive the apparatus",
+    "operational_quantum_records": "candidate shared packets generated; framework Record open"
+  },
+  "audit": "unset",
+  "authority": "none",
+  "baseline_transition_and_marks": {
+    "events": {
+      "A": [
+        [
+          "A",
+          [
+            "coreg",
+            [
+              1,
+              0,
+              0,
+              0
+            ]
+          ],
+          1
+        ],
+        [
+          "A",
+          [
+            "coreg",
+            [
+              0,
+              1,
+              0,
+              0
+            ]
+          ],
+          1
+        ],
+        [
+          "A",
+          [
+            "coreg",
+            [
+              0,
+              0,
+              1,
+              0
+            ]
+          ],
+          1
+        ],
+        [
+          "A",
+          [
+            "coreg",
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          1
+        ]
+      ],
+      "B": [
+        [
+          "B",
+          [
+            "coreg",
+            [
+              1,
+              0,
+              0,
+              0
+            ]
+          ],
+          1
+        ],
+        [
+          "B",
+          [
+            "coreg",
+            [
+              0,
+              1,
+              0,
+              0
+            ]
+          ],
+          1
+        ],
+        [
+          "B",
+          [
+            "coreg",
+            [
+              0,
+              0,
+              1,
+              0
+            ]
+          ],
+          1
+        ],
+        [
+          "B",
+          [
+            "coreg",
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          1
+        ]
+      ],
+      "C": [
+        [
+          "C",
+          [
+            "coreg",
+            [
+              1,
+              0,
+              0,
+              0
+            ]
+          ],
+          1
+        ],
+        [
+          "C",
+          [
+            "transition",
+            false
+          ],
+          1
+        ],
+        [
+          "C",
+          [
+            "coreg",
+            [
+              0,
+              1,
+              0,
+              0
+            ]
+          ],
+          1
+        ],
+        [
+          "C",
+          [
+            "transition",
+            false
+          ],
+          1
+        ],
+        [
+          "C",
+          [
+            "coreg",
+            [
+              0,
+              0,
+              1,
+              0
+            ]
+          ],
+          1
+        ],
+        [
+          "C",
+          [
+            "transition",
+            false
+          ],
+          1
+        ],
+        [
+          "C",
+          [
+            "coreg",
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          1
+        ],
+        [
+          "C",
+          [
+            "transition",
+            false
+          ],
+          1
+        ]
+      ]
+    },
+    "handshakes": [
+      {
+        "marker_before": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "step_exhaust": 1,
+        "tag": "S1"
+      },
+      {
+        "marker_before": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "step_exhaust": 3,
+        "tag": "S2"
+      },
+      {
+        "marker_before": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "step_exhaust": 5,
+        "tag": "S3"
+      },
+      {
+        "marker_before": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "step_exhaust": 7,
+        "tag": "S4"
+      }
+    ],
+    "inverse_rows": {
+      "A": 7.7326877594049e-15,
+      "B": 5.2843047987843356e-15,
+      "C": 6.193540304186869e-15
+    },
+    "local_event_work_leakage": 0,
+    "mark_keys": {
+      "A": {
+        "S1": [
+          "A",
+          [
+            "coreg",
+            [
+              1,
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "S2": [
+          "A",
+          [
+            "coreg",
+            [
+              0,
+              1,
+              0,
+              0
+            ]
+          ]
+        ],
+        "S3": [
+          "A",
+          [
+            "coreg",
+            [
+              0,
+              0,
+              1,
+              0
+            ]
+          ]
+        ],
+        "S4": [
+          "A",
+          [
+            "coreg",
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        ]
+      },
+      "B": {
+        "S1": [
+          "B",
+          [
+            "coreg",
+            [
+              1,
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "S2": [
+          "B",
+          [
+            "coreg",
+            [
+              0,
+              1,
+              0,
+              0
+            ]
+          ]
+        ],
+        "S3": [
+          "B",
+          [
+            "coreg",
+            [
+              0,
+              0,
+              1,
+              0
+            ]
+          ]
+        ],
+        "S4": [
+          "B",
+          [
+            "coreg",
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        ]
+      },
+      "C": {
+        "S1": [
+          "C",
+          [
+            "coreg",
+            [
+              1,
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "S2": [
+          "C",
+          [
+            "coreg",
+            [
+              0,
+              1,
+              0,
+              0
+            ]
+          ]
+        ],
+        "S3": [
+          "C",
+          [
+            "coreg",
+            [
+              0,
+              0,
+              1,
+              0
+            ]
+          ]
+        ],
+        "S4": [
+          "C",
+          [
+            "coreg",
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        ]
+      }
+    },
+    "marker_final": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "maximum_inverse_residual": 7.7326877594049e-15,
+    "maximum_transition_code_residual": 3.838513070811238e-15
+  },
+  "causal_rows": {
+    "1_rate_constancy": {
+      "pass": true,
+      "qualification": "exact transition-convention refinement ratios, not physical rates",
+      "r_AB": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "r_AC": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "r_BC": [
+        2.0,
+        2.0,
+        2.0
+      ]
+    },
+    "2_ratio_transitivity": {
+      "full": [
+        1.0,
+        2.0,
+        2.0
+      ],
+      "pass": true,
+      "residual": 0.0
+    },
+    "3_offset_prediction": {
+      "observed": 3,
+      "pass": true,
+      "predicted": 3.0,
+      "residual": 0.0
+    }
+  },
+  "covariance": {
+    "event_count_patterns": [
+      [
+        4,
+        4,
+        8
+      ]
+    ],
+    "frame_failures": 0,
+    "group_or_event_failures": 0,
+    "ordered_products": 576,
+    "pass": true,
+    "proper_frames": 24,
+    "runtime_frame_selector": false
+  },
+  "cycle": 686,
+  "date": "2026-07-23",
+  "deletion_and_domain": {
+    "A_tick_deletion_removes_one_shared_mark": true,
+    "C_refinement_deletion_signal": 1.0,
+    "C_refinement_tick_deletion_ratio": 1.0,
+    "binder_deletion_interval_undefined": true,
+    "four_mark_saturation_visible": true,
+    "malformed_marker_rejections": 3,
+    "marker_rotation_deletion_collapses_tags": true,
+    "pass": true
+  },
+  "elapsed_seconds": 0.807826042175293,
+  "highest_honest_terminal": "bounded trapped physical matter-transition triple co-registration and unchanged causal synchronization acceptance; not an autonomous moving clock, framework Record, rate or proper time",
+  "joint_admissions": [
+    "admitted",
+    "admitted",
+    "admitted",
+    "admitted"
+  ],
+  "maximum_RSS_bytes": 112541696,
+  "no_go_discipline": {
+    "N1_broad_negative_gate": "FAIL_DO_NOT_SHIP_NEGATIVE",
+    "N1_normalized_families": [
+      {
+        "family": "Cycle573 trapped matter-transition standards",
+        "honesty": "ATTEMPTED",
+        "status": "PASS_BOUNDED_TRIPLE_COREG"
+      },
+      {
+        "family": "Cycle610 contact-line clock",
+        "honesty": "RULED_OUT_BY_PRIOR for this terminal",
+        "status": "candidate clock but strict M2 detector/coreg absent"
+      },
+      {
+        "family": "Cycle675 static physical detector",
+        "honesty": "RULED_OUT_BY_PRIOR for trajectory",
+        "status": "static snapshot only"
+      },
+      {
+        "family": "Cycle578 intrinsic moving contact dimer",
+        "honesty": "OPEN_NOT_COUNTED",
+        "status": "moving band exists; autonomous clock/coreg open"
+      },
+      {
+        "family": "chart-free dual/all-cell detector rendezvous",
+        "honesty": "OPEN_NOT_COUNTED",
+        "status": "strong strict route"
+      },
+      {
+        "family": "free localized matter-transition clock",
+        "honesty": "RULED_OUT_BY_PRIOR for fixed code",
+        "status": "leaves Cycle573 two-state code; refocusing route open"
+      }
+    ],
+    "N1_qualifying_attempts_for_broad_negative": 4,
+    "N1_required": 5,
+    "N2_collapsed_walls": {
+      "W_current_all_cell_M2_clock": "the transition/latch block is bounded physical M2, but it is not yet driven by the current chart-free all-cell compiler",
+      "W_duration_identification": "the decoder yields relational counts/refinement ratios, not physical proper time or an empirical scale",
+      "W_objective_Record_admission": "deterministic code ticks produce candidate packets; framework Record permanence/admission is not derived",
+      "W_trap_preparation_genesis": "the three standards, their traps and their local rendezvous are supplied"
+    },
+    "N2_directed_pairs": [
+      {
+        "from": "W_trap_preparation_genesis",
+        "implied": false,
+        "reason": "distinct constructive obligation",
+        "to": "W_current_all_cell_M2_clock"
+      },
+      {
+        "from": "W_trap_preparation_genesis",
+        "implied": false,
+        "reason": "distinct constructive obligation",
+        "to": "W_objective_Record_admission"
+      },
+      {
+        "from": "W_trap_preparation_genesis",
+        "implied": false,
+        "reason": "distinct constructive obligation",
+        "to": "W_duration_identification"
+      },
+      {
+        "from": "W_current_all_cell_M2_clock",
+        "implied": false,
+        "reason": "distinct constructive obligation",
+        "to": "W_trap_preparation_genesis"
+      },
+      {
+        "from": "W_current_all_cell_M2_clock",
+        "implied": false,
+        "reason": "distinct constructive obligation",
+        "to": "W_objective_Record_admission"
+      },
+      {
+        "from": "W_current_all_cell_M2_clock",
+        "implied": false,
+        "reason": "distinct constructive obligation",
+        "to": "W_duration_identification"
+      },
+      {
+        "from": "W_objective_Record_admission",
+        "implied": false,
+        "reason": "distinct constructive obligation",
+        "to": "W_trap_preparation_genesis"
+      },
+      {
+        "from": "W_objective_Record_admission",
+        "implied": false,
+        "reason": "distinct constructive obligation",
+        "to": "W_current_all_cell_M2_clock"
+      },
+      {
+        "from": "W_objective_Record_admission",
+        "implied": false,
+        "reason": "distinct constructive obligation",
+        "to": "W_duration_identification"
+      },
+      {
+        "from": "W_duration_identification",
+        "implied": false,
+        "reason": "distinct constructive obligation",
+        "to": "W_trap_preparation_genesis"
+      },
+      {
+        "from": "W_duration_identification",
+        "implied": false,
+        "reason": "distinct constructive obligation",
+        "to": "W_current_all_cell_M2_clock"
+      },
+      {
+        "from": "W_duration_identification",
+        "implied": false,
+        "reason": "distinct constructive obligation",
+        "to": "W_objective_Record_admission"
+      }
+    ],
+    "N3_hidden_wall_scan": [
+      {
+        "classification": "explicit supplied fixture",
+        "condition": "trapped preparation and rendezvous"
+      },
+      {
+        "classification": "explicit finite resource",
+        "condition": "blank marker and finite banks"
+      },
+      {
+        "classification": "declared transition convention; ratios are refinement",
+        "condition": "event conventions minus/plus/every-edge"
+      },
+      {
+        "classification": "explicit; runtime selector absent",
+        "condition": "compile-time frame transport"
+      }
+    ],
+    "N4_exact_residual_matches": [
+      {
+        "current": "four marks emitted by local matter rendezvous and marker rotor",
+        "match": true,
+        "prior_cycle": 680,
+        "residual": "shared marks supplied",
+        "retired_on_declared_code": true
+      },
+      {
+        "current": "same trapped boundary retained",
+        "match": true,
+        "prior_cycle": 573,
+        "residual": "trapped recurrence not universal moving clock",
+        "retired": false
+      },
+      {
+        "current": "ideal generator never called",
+        "match": true,
+        "prior_cycle": 676,
+        "residual": "ideal nu/s is bookkeeping",
+        "retired": true
+      }
+    ],
+    "N5_rhetoric": [
+      {
+        "claim": "refinement ratio is not physical rate",
+        "lattice_wide": "not tested",
+        "per_block": "three clocks",
+        "per_element": "projector edge",
+        "per_mode": "plus/minus",
+        "per_site": "trapped block"
+      },
+      {
+        "claim": "candidate packet is not framework Record",
+        "lattice_wide": "permanence open",
+        "per_block": "finite chain",
+        "per_element": "binder bit",
+        "per_mode": "deterministic code",
+        "per_site": "rendezvous"
+      },
+      {
+        "claim": "decoded count is not proper time",
+        "lattice_wide": "identification open",
+        "per_block": "conditional causal decoder",
+        "per_element": "K16 rotor",
+        "per_mode": "refinement",
+        "per_site": "chain node"
+      }
+    ],
+    "N6_partial_closure_paths": [
+      {
+        "closes": "Cycle680 shared-mark genesis on trapped transition code",
+        "path": "scripts/physical_matter_transition_triple_coregistration_bridge_cycle686_2026_07_23.py",
+        "status": "EXECUTED_PARTIAL"
+      },
+      {
+        "closes": "trap/universality wall",
+        "path": "UNMATERIALIZED/cycle686_moving_dimer_coreg_next.py",
+        "status": "OPEN_PRIORITY"
+      },
+      {
+        "closes": "current all-cell M2 wall",
+        "path": "UNMATERIALIZED/cycle686_all_cell_clock_compiler_next.py",
+        "status": "OPEN"
+      }
+    ],
+    "N7_steelman": {
+      "mechanism": "use two independently moving Cycle578 contact dimers and one locally generated rendezvous packet inside a chart-free all-cell compiler, then rerun the unchanged decoder with a physical preparation/refill factory",
+      "terminal": "nontrapped L3/L6/L7 dual-clock all nine causal rows with no supplied marks, admission or bank genesis"
+    },
+    "N8_cross_cycle_echo": [
+      {
+        "applicability": "triple local co-registration added",
+        "cycle": 573,
+        "echo": "matter transition and recyclable calibration"
+      },
+      {
+        "applicability": "different candidate clock; no back-credit",
+        "cycle": 610,
+        "echo": "intrinsic line clock"
+      },
+      {
+        "applicability": "rows 1-3 executed on new physical transition source",
+        "cycle": 680,
+        "echo": "conditional causal acceptance"
+      }
+    ],
+    "axiom_pressure_claim": false,
+    "broad_no_go_claim": false,
+    "minimum_content_claim": false,
+    "pass": true,
+    "shared_obstruction_claim": false
+  },
+  "note": "docs/work_history/repo/review_feedback/PHYSICAL_MATTER_TRANSITION_TRIPLE_COREGISTRATION_BRIDGE_CYCLE686_NOTE_2026-07-23.md",
+  "optimal_next_campaign": "replace the supplied traps by two moving Cycle578 contact dimers inside the chart-free all-cell compiler, derive local rendezvous and refill genesis, then rerun all nine causal rows unchanged",
+  "pass": true,
+  "physical_to_unchanged_decoder_failures": 0,
+  "renewal_interval_failures": 0,
+  "resources": {
+    "event_handshake_work_M2": 4,
+    "explicit_chain_state_M2_upper_bound": 1366,
+    "finite_blank_banks_supplied": true,
+    "fresh_host_work_per_tick": 0,
+    "matter_transition_M2": 18,
+    "maximum_new_logical_support_M2": 4,
+    "physical_chain_nodes": 16,
+    "prior_state_reference_M2": 3,
+    "state_carried_marker_M2": 4,
+    "strict_autonomous_all_cell_clock_M2": false,
+    "support_two_lowering": "triple rendezvous uses one returned conjunction work bit; controlled marker rotation uses Fredkin/Toffoli decomposition",
+    "total_explicit_M2_upper_bound": 1395
+  },
+  "route_disposition": {
+    "causal_rows_1_3": "PASS_EXACT_REFINEMENT_RATIOS_NOT_PHYSICAL_RATES",
+    "framework_Record_and_proper_time": "OPEN_NOT_CLAIMED",
+    "moving_free_clock": "OPEN_NOT_FALSIFIED",
+    "trapped_matter_transition_triple_coreg": "PASS_EXECUTED_BOUNDED"
+  },
+  "shared_obstruction_creates_axiom_pressure": false,
+  "six_wall_ledger": {
+    "C_int": "advance: local matter rendezvous emits all shared packets; Record admission/permanence open",
+    "C_local": "bounded local transition/latch/chain support; chart-free all-cell clock compiler open",
+    "C_num": "unchanged: exact integer/refinement counts; no Born or empirical normalization",
+    "C_ref": "advance: shared marks arise from local state-carried marker genesis on the declared apparatus; trap/preparation references supplied",
+    "C_source": "unchanged: no source, stress, gravity or energy identification",
+    "C_wrap": "advance: physical causal rows 1-3 execute and finite refill is invariant; proper-time identification and autonomous renewal open"
+  },
+  "size_rows": {
+    "pass": true,
+    "rows": [
+      {
+        "causal_rows_1_3_pass": true,
+        "length": 3,
+        "maximum_transport_inverse_residual": 0.0,
+        "pass": true,
+        "split": "train",
+        "supplied_trap_distance": 1,
+        "transition_code_residual": 3.838513070811238e-15,
+        "transport_SWAP_calls": 36
+      },
+      {
+        "causal_rows_1_3_pass": true,
+        "length": 4,
+        "maximum_transport_inverse_residual": 0.0,
+        "pass": true,
+        "split": "held_out",
+        "supplied_trap_distance": 2,
+        "transition_code_residual": 3.838513070811238e-15,
+        "transport_SWAP_calls": 72
+      },
+      {
+        "causal_rows_1_3_pass": true,
+        "length": 6,
+        "maximum_transport_inverse_residual": 0.0,
+        "pass": true,
+        "split": "held",
+        "supplied_trap_distance": 3,
+        "transition_code_residual": 3.838513070811238e-15,
+        "transport_SWAP_calls": 108
+      }
+    ]
+  },
+  "status": "positive bounded trapped matter-transition co-registration bridge; not proper time or an autonomous moving clock",
+  "strict_full_framework_terminal_met": false,
+  "strongest_constructive_result": "three independently parameterized physical matter-transition standards generate S1-S4 locally and execute unchanged causal rows 1-3 with exact refinement ratios 1,2,2",
+  "supplied_structure_inventory": {
+    "autonomous_moving_clock": false,
+    "blank_marker_and_chain_banks": true,
+    "compile_time_frame_transport": true,
+    "finite_bank_refill_tokens": true,
+    "global_parity_or_ordering_service": false,
+    "host_selected_mark_addresses": false,
+    "ideal_nu_s_generator": false,
+    "local_rendezvous_geometry": true,
+    "objective_Record_admission": false,
+    "plus_minus_every_edge_event_conventions": true,
+    "proper_time_identification": false,
+    "runtime_frame_selector": false,
+    "trapped_standard_preparation": true
+  },
+  "target_and_shores": {
+    "expected_target_sha256": "0699634f738dc0a7b598ffb209fb646d9133226b4b4b98e00d82d7ede8f41c5b",
+    "first_evidence_load_line": 133,
+    "frozen_before_evidence": true,
+    "pass": true,
+    "pins": {
+      "03b05c09a91c0ef21715f27f041d37e25d2b9b0f:outputs/physical_matter_transition_clock_equivalence_tournament_cycle573_receipt_2026_07_22.json": "4863e0e32c8298c1539b0d10e274cd14661ed3d8aa895bbe6af697dc9b9d5553",
+      "03b05c09a91c0ef21715f27f041d37e25d2b9b0f:scripts/common_matter_field_coin_family_cycle219_2026_07_16.py": "ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a",
+      "03b05c09a91c0ef21715f27f041d37e25d2b9b0f:scripts/physical_matter_transition_clock_equivalence_tournament_cycle573_2026_07_22.py": "a85daf8fa9b8f3f1b7ef9aed6bfb84fe908ecbe33b2524f8ffebd66471dec20d",
+      "03b05c09a91c0ef21715f27f041d37e25d2b9b0f:scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py": "c410b754d4e984f6ee5ccbc7c5a52e776c50c91c4daa12d798044f104cc7435b",
+      "2b1febe83f7462143376bb78ab66838a2c2a6d47:outputs/physical_detector_tick_causal_acceptance_bridge_cycle680_receipt_2026_07_23.json": "7134038e2201f186e3df8392faa91f9437abc00d58e8859a1ce536567b406f2f",
+      "2b1febe83f7462143376bb78ab66838a2c2a6d47:scripts/physical_detector_tick_causal_acceptance_bridge_cycle680_2026_07_23.py": "136a0eb61fee9e311bbcc337e58e4238f48c7bef95245dfb705e2904b50b57a0",
+      "3621220d2a5c7e769b547f1be95386ecf7a1f62e:outputs/physical_synchronization_renewal_proper_time_law_tournament_cycle676_receipt_2026_07_23.json": "dd96821334a90a58142d01a46ace53601686c940482f61e863d49f47cdd5150f",
+      "3621220d2a5c7e769b547f1be95386ecf7a1f62e:scripts/physical_synchronization_renewal_proper_time_law_tournament_cycle676_2026_07_23.py": "ff280208ecb5913984fe25941bab2623d0979408957a65d0c111719efaaf49d9"
+    },
+    "receipt_passes": [
+      true,
+      true,
+      true
+    ],
+    "target_line": 18,
+    "target_sha256": "0699634f738dc0a7b598ffb209fb646d9133226b4b4b98e00d82d7ede8f41c5b"
+  },
+  "tests_failed": 0,
+  "tests_passed": 9
+}

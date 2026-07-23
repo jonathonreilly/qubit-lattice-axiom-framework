@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Explain how campaign-scoped audit exclusions re-enter the drainer.
+"""Explain how campaign-scoped audit exclusions and skips re-enter.
 
 The audit supervisor records operational exclusions in
-``campaign-row-exclusions.jsonl``.  They are not scientific verdicts and must
-not be copied into the ledger.  This read-only helper joins those records to
-current operational ledger metadata and emits the prerequisite repair route
-for a fresh campaign.
+``campaign-row-exclusions.jsonl`` and non-suppressing selector dispositions in
+``campaign-selector-skips.jsonl``. They are not scientific verdicts and must
+not be copied into the ledger. This read-only helper joins those records to
+current operational ledger metadata and emits the prerequisite repair route.
 """
 from __future__ import annotations
 
@@ -26,10 +26,23 @@ SCHEMA_QUARANTINE = batch.SCHEMA_QUARANTINE_RESULT
 COMPUTE_QUARANTINE = batch.COMPUTE_QUARANTINE_RESULT
 TRANSACTION_QUARANTINE = batch.CLAIM_TRANSACTION_QUARANTINE_RESULT
 BLOCKED_REENTRY = batch.BLOCKED_ROW_QUARANTINE_RESULT
+SELECTION_SKIP = "selection_skip"
 
 
 def load_exclusions(path: Path) -> list[dict]:
     return batch.load_campaign_exclusion_records(path)
+
+
+def load_campaign_records(campaign_workdir: Path) -> list[dict]:
+    records = load_exclusions(
+        campaign_workdir / "campaign-row-exclusions.jsonl"
+    )
+    records.extend(
+        batch.load_campaign_selection_skip_records(
+            campaign_workdir / "campaign-selector-skips.jsonl"
+        )
+    )
+    return records
 
 
 def repair_route(record: dict, row: dict | None) -> dict:
@@ -46,6 +59,7 @@ def repair_route(record: dict, row: dict | None) -> dict:
         "reason": reason,
         "current": current,
         "failures": record.get("failures") or [],
+        "detail": record.get("detail"),
     }
     if row is None:
         return {
@@ -121,6 +135,110 @@ def repair_route(record: dict, row: dict | None) -> dict:
                 "the exact envelope and source fingerprint."
             ),
         }
+    if reason in batch.SELECTION_SKIP_REASONS:
+        if reason == "missing_ledger_row":
+            return {
+                **result,
+                "route": "ledger_registration_resolved",
+                "ready_for_new_campaign": True,
+                "action": (
+                    "The row now exists in the canonical ledger. Verify the "
+                    "full pipeline before starting a new campaign."
+                ),
+            }
+        if reason == "audit_status_not_unaudited":
+            audit_status = str(row.get("audit_status") or "")
+            if audit_status == "audit_in_progress":
+                route = "resume_audit_seat"
+                action = "Resume the missing independent audit seat."
+            elif audit_status in {
+                "audited_conditional",
+                "audited_renaming",
+                "audited_failed",
+                "audited_numerical_match",
+            }:
+                route = "validated_science_handoff"
+                action = (
+                    "Use the canonical applied verdict and invocation-bound "
+                    "science-fix handoff; never reconstruct it from skip prose."
+                )
+            else:
+                route = "already_settled_or_governed"
+                action = (
+                    "The row's current canonical status needs no science-fix "
+                    "worker; record the disposition and continue."
+                )
+            return {
+                **result,
+                "route": route,
+                "ready_for_new_campaign": route == "already_settled_or_governed",
+                "action": action,
+            }
+        if reason in {"forensic_no_go", "forensic_source_shape"}:
+            return {
+                **result,
+                "route": "forensic_audit",
+                "ready_for_new_campaign": False,
+                "action": (
+                    "Route the row through audit-loop forensic mode; ordinary "
+                    "science-fix workers cannot settle this skip."
+                ),
+            }
+        if reason == "non_batch_claim_type":
+            return {
+                **result,
+                "route": "governed_non_batch_type",
+                "ready_for_new_campaign": False,
+                "action": (
+                    "Keep the row out of the development batch and use the "
+                    "governed owner lane for its canonical claim type."
+                ),
+            }
+        if reason == "dependencies_not_retained":
+            blockers = [
+                dep
+                for dep in row.get("dependencies", [])
+                if isinstance(dep, str)
+            ]
+            return {
+                **result,
+                "route": "repair_or_audit_upstream_dependencies",
+                "ready_for_new_campaign": False,
+                "blocking_dependencies": blockers,
+                "action": (
+                    "Repair or audit the cheapest blocking upstream dependency; "
+                    "do not edit the downstream row to hide the edge."
+                ),
+            }
+        if reason == "note_hash_drift":
+            return {
+                **result,
+                "route": "refresh_note_hash_pipeline",
+                "ready_for_new_campaign": False,
+                "action": (
+                    "Run the seeder, full pipeline, and strict lint so the "
+                    "ledger note hash matches the canonical source."
+                ),
+            }
+        if reason == "awaiting_science_repair":
+            return {
+                **result,
+                "route": "validated_science_handoff",
+                "ready_for_new_campaign": False,
+                "action": (
+                    "Use the current applied non-clean verdict and its "
+                    "invocation-bound handoff for a source-side repair PR."
+                ),
+            }
+        return {
+            **result,
+            "route": "manual_selector_triage",
+            "ready_for_new_campaign": False,
+            "action": (
+                "Add a typed selector route and regression before retrying; "
+                "never infer a verdict from an unknown skip."
+            ),
+        }
     return {
         **result,
         "route": "manual_operational_triage",
@@ -156,15 +274,19 @@ def main(argv: list[str] | None = None) -> int:
     )
     parser.add_argument("--json", action="store_true", help="emit JSON only")
     args = parser.parse_args(argv)
-    path = (
-        args.exclusions
-        if args.exclusions is not None
-        else args.campaign_workdir / "campaign-row-exclusions.jsonl"
-    )
-    if not path.exists():
+    path = args.exclusions
+    if path is not None and not path.exists():
         parser.error(f"exclusion file does not exist: {path}")
+    if args.campaign_workdir is not None and not args.campaign_workdir.is_dir():
+        parser.error(
+            f"campaign workdir does not exist: {args.campaign_workdir}"
+        )
     try:
-        exclusions = load_exclusions(path)
+        exclusions = (
+            load_exclusions(path)
+            if path is not None
+            else load_campaign_records(args.campaign_workdir)
+        )
         rows = ledger_io.load_ledger().get("rows", {})
     except (OSError, ValueError) as exc:
         parser.error(str(exc))
@@ -172,7 +294,8 @@ def main(argv: list[str] | None = None) -> int:
     if args.json:
         print(json.dumps({"exclusions": plan}, indent=2, sort_keys=True))
         return 0
-    print(f"audit campaign repair plan: {path}")
+    source_label = path or args.campaign_workdir
+    print(f"audit campaign repair plan: {source_label}")
     if not plan:
         print("  no campaign exclusions")
         return 0

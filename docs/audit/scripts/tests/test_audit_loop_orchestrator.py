@@ -862,6 +862,50 @@ class SchemaRecoveryTest(unittest.TestCase):
         )
         self.assertEqual(len(records), 2)
 
+    def test_selector_skips_persist_typed_routes_without_quarantining(self):
+        skipped = [
+            "missing: missing ledger row",
+            "conditional: awaiting repair (sources and deps unchanged since "
+            "audited_conditional)",
+            "blocked: dependencies are not retained-grade",
+            "forensic: source shape requires forensic tier",
+        ]
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "campaign-selector-skips.jsonl"
+            batch.persist_campaign_selection_skips(path, skipped)
+            batch.persist_campaign_selection_skips(path, skipped)
+            records = batch.load_campaign_selection_skip_records(path)
+
+        self.assertEqual(len(records), 4)
+        self.assertEqual(
+            {record["reason"] for record in records},
+            {
+                "missing_ledger_row",
+                "awaiting_science_repair",
+                "dependencies_not_retained",
+                "forensic_source_shape",
+            },
+        )
+        self.assertTrue(all(record.get("detail") for record in records))
+
+    def test_selector_skip_loader_rejects_reason_detail_mismatch(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "campaign-selector-skips.jsonl"
+            path.write_text(
+                json.dumps(
+                    {
+                        "claim_id": "row",
+                        "reason": "note_hash_drift",
+                        "detail": "dependencies are not retained-grade",
+                        "recorded_at": "2026-07-23T12:00:00+00:00",
+                    }
+                )
+                + "\n",
+                encoding="utf-8",
+            )
+            with self.assertRaisesRegex(ValueError, "does not match"):
+                batch.load_campaign_selection_skip_records(path)
+
     def test_campaign_state_loader_rejects_truncated_record(self):
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "quarantine.jsonl"
@@ -2810,11 +2854,16 @@ class CampaignContractTest(unittest.TestCase):
     def test_inner_batches_share_campaign_quarantine_and_dispatch_policy(self):
         args = _args()
         args.campaign_quarantine_file = Path("/tmp/campaign/quarantine.jsonl")
+        args.campaign_selection_skip_file = Path(
+            "/tmp/campaign/selector-skips.jsonl"
+        )
 
         command = audit_loop.batch_command("lane_a", args)
 
         self.assertIn("--campaign-quarantine-file", command)
         self.assertIn(str(args.campaign_quarantine_file), command)
+        self.assertIn("--campaign-selection-skip-file", command)
+        self.assertIn(str(args.campaign_selection_skip_file), command)
         self.assertNotIn("--dispatch-science-fixes", command)
 
         args.dispatch_science_fixes = True

@@ -333,6 +333,11 @@ def batch_command(lane: str, args: argparse.Namespace) -> list[str]:
     quarantine_file = getattr(args, "campaign_quarantine_file", None)
     if quarantine_file is not None:
         command.extend(["--campaign-quarantine-file", str(quarantine_file)])
+    selection_skip_file = getattr(args, "campaign_selection_skip_file", None)
+    if selection_skip_file is not None:
+        command.extend(
+            ["--campaign-selection-skip-file", str(selection_skip_file)]
+        )
     if getattr(args, "dispatch_science_fixes", False):
         command.append("--dispatch-science-fixes")
     if args.dry_run:
@@ -479,11 +484,17 @@ def main(argv: list[str] | None = None) -> int:
     )
     campaign_dir.mkdir(parents=True, exist_ok=True)
     args.campaign_quarantine_file = campaign_dir / "campaign-row-exclusions.jsonl"
+    args.campaign_selection_skip_file = (
+        campaign_dir / "campaign-selector-skips.jsonl"
+    )
     PROGRESS["quarantine_file"] = args.campaign_quarantine_file
     emit(f"campaign artifacts: {campaign_dir}")
     try:
         validate_requested_lanes(args.lane)
         batch.load_campaign_exclusion_records(args.campaign_quarantine_file)
+        batch.load_campaign_selection_skip_records(
+            args.campaign_selection_skip_file
+        )
     except (OSError, ValueError, json.JSONDecodeError) as exc:
         emit(str(exc))
         return 2
@@ -573,6 +584,11 @@ def main(argv: list[str] | None = None) -> int:
                         "whose rollback to origin/main was verified; repair the "
                         "recorded operational cause before a new campaign: "
                         f"{args.campaign_quarantine_file}"
+                    )
+                if args.campaign_selection_skip_file.exists():
+                    emit(
+                        "typed selector-skip repair inventory: "
+                        f"{args.campaign_selection_skip_file}"
                     )
                 break
 

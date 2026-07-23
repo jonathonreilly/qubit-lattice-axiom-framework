@@ -191,14 +191,21 @@ def verdict_generated_path(path: str) -> bool:
     )
 
 
+def cache_hash(name: str) -> tuple[str | None, str]:
+    try:
+        digest = hashlib.sha256((DATA / name).read_bytes()).hexdigest()
+    except OSError as exc:
+        return None, f"cannot hash required cache {name}: {exc}"
+    return digest, f"{name} hashed"
+
+
 def cache_hashes() -> tuple[dict[str, str] | None, str]:
     hashes = {}
     for name in STATIC_CACHE_NAMES:
-        path = DATA / name
-        try:
-            hashes[name] = hashlib.sha256(path.read_bytes()).hexdigest()
-        except OSError as exc:
-            return None, f"cannot hash required cache {name}: {exc}"
+        digest, detail = cache_hash(name)
+        if digest is None:
+            return None, detail
+        hashes[name] = digest
     return hashes, "static caches hashed"
 
 
@@ -568,15 +575,15 @@ def prepare_checkpoint() -> tuple[bool, str]:
         return False, detail
     if seed_receipt.get("input_sha256") != static_fingerprint:
         return False, "seed producer receipt has different classifier inputs"
-    hashes, detail = cache_hashes()
-    if hashes is None:
+    citation_graph_hash, detail = cache_hash("citation_graph.json")
+    if citation_graph_hash is None:
         return False, detail
-    if graph_receipt.get("output_sha256") != hashes["citation_graph.json"]:
+    if graph_receipt.get("output_sha256") != citation_graph_hash:
         return False, "citation graph differs from its producer receipt"
     payload = {
         **checkpoint,
         "schema": PREPARED_SCHEMA,
-        "citation_graph_sha256": hashes["citation_graph.json"],
+        "citation_graph_sha256": citation_graph_hash,
         "static_input_sha256": static_fingerprint,
     }
     ok, detail = _write_checkpoint(payload)

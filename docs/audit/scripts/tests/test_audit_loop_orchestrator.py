@@ -31,16 +31,29 @@ class GeneratedProvenanceRecoveryTest(unittest.TestCase):
         self.payload = {
             "schema": "lane_certification_v2",
             "repo_head": "a" * 40,
-            "lanes": [{"lane": "test", "blocking": []}],
+            "lanes": [
+                {"lane": "test", "certified": False, "blocking": []}
+            ],
         }
         self.path.write_text(
             json.dumps(self.payload, indent=2, sort_keys=True) + "\n",
             encoding="utf-8",
         )
+        self.source = self.root / "docs" / "SOURCE.md"
+        self.source.parent.mkdir(parents=True, exist_ok=True)
+        self.source.write_text("source baseline\n", encoding="utf-8")
+        self.ledger = (
+            self.root / "docs" / "audit" / "data" / "ledger" / "ro" / "row.json"
+        )
+        self.ledger.parent.mkdir(parents=True)
+        self.ledger.write_text(
+            '{"audit_status":"unaudited"}\n',
+            encoding="utf-8",
+        )
         self._git("init", "-q", "-b", "main")
         self._git("config", "user.email", "audit-test@example.invalid")
         self._git("config", "user.name", "Audit Test")
-        self._git("add", batch.LANE_CERTIFICATION_PATH)
+        self._git("add", ".")
         self._git("commit", "-q", "-m", "baseline")
 
     def _git(self, *args: str) -> str:
@@ -58,12 +71,18 @@ class GeneratedProvenanceRecoveryTest(unittest.TestCase):
             encoding="utf-8",
         )
 
-    def test_clean_main_recovers_current_head_only_refresh(self):
+    def _refresh(self) -> dict:
         refreshed = dict(self.payload, repo_head=self._git("rev-parse", "HEAD"))
         self._write(refreshed)
+        return refreshed
 
+    def _clean_main_error(self) -> str | None:
         with mock.patch.object(batch, "REPO_ROOT", self.root):
-            error = batch.clean_main_error()
+            return batch.clean_main_error()
+
+    def test_clean_main_recovers_current_head_only_refresh(self):
+        self._refresh()
+        error = self._clean_main_error()
 
         self.assertIsNone(error)
         self.assertEqual(json.loads(self.path.read_text()), self.payload)
@@ -73,9 +92,7 @@ class GeneratedProvenanceRecoveryTest(unittest.TestCase):
         refreshed = dict(self.payload)
         refreshed.pop("repo_head")
         self._write(refreshed)
-
-        with mock.patch.object(batch, "REPO_ROOT", self.root):
-            error = batch.clean_main_error()
+        error = self._clean_main_error()
 
         self.assertIsNone(error)
         self.assertEqual(json.loads(self.path.read_text()), self.payload)
@@ -88,23 +105,135 @@ class GeneratedProvenanceRecoveryTest(unittest.TestCase):
             lanes=[{"lane": "test", "blocking": ["science-row"]}],
         )
         self._write(refreshed)
-
-        with mock.patch.object(batch, "REPO_ROOT", self.root):
-            error = batch.clean_main_error()
+        error = self._clean_main_error()
 
         self.assertEqual(error, "working tree is not clean")
         self.assertEqual(json.loads(self.path.read_text()), refreshed)
 
     def test_clean_main_refuses_staged_provenance_drift(self):
-        refreshed = dict(self.payload, repo_head=self._git("rev-parse", "HEAD"))
-        self._write(refreshed)
+        refreshed = self._refresh()
         self._git("add", batch.LANE_CERTIFICATION_PATH)
-
-        with mock.patch.object(batch, "REPO_ROOT", self.root):
-            error = batch.clean_main_error()
+        error = self._clean_main_error()
 
         self.assertEqual(error, "working tree is not clean")
         self.assertEqual(json.loads(self.path.read_text()), refreshed)
+
+    def test_clean_main_refuses_type_confused_payload_drift(self):
+        refreshed = self._refresh()
+        refreshed["lanes"][0]["certified"] = 0
+        self._write(refreshed)
+        before = self.path.read_bytes()
+
+        error = self._clean_main_error()
+
+        self.assertEqual(error, "working tree is not clean")
+        self.assertEqual(self.path.read_bytes(), before)
+
+    def test_clean_main_refuses_duplicate_json_keys(self):
+        refreshed = self._refresh()
+        text = json.dumps(refreshed, indent=2, sort_keys=True) + "\n"
+        duplicate = text.replace(
+            '      "certified": false,\n',
+            '      "certified": true,\n      "certified": false,\n',
+        )
+        self.path.write_text(duplicate, encoding="utf-8")
+
+        error = self._clean_main_error()
+
+        self.assertEqual(error, "working tree is not clean")
+        self.assertEqual(self.path.read_text(encoding="utf-8"), duplicate)
+
+    def test_clean_main_refuses_null_or_stale_repo_head(self):
+        for value in (None, "b" * 40):
+            with self.subTest(repo_head=value):
+                refreshed = dict(self.payload, repo_head=value)
+                self._write(refreshed)
+                before = self.path.read_bytes()
+
+                error = self._clean_main_error()
+
+                self.assertEqual(error, "working tree is not clean")
+                self.assertEqual(self.path.read_bytes(), before)
+                self._git("restore", "--worktree", "--", batch.LANE_CERTIFICATION_PATH)
+
+    def test_clean_main_refuses_malformed_or_non_utf8_payload(self):
+        for content in (b"{not-json\n", b"\xff\xfe\x00not-utf8"):
+            with self.subTest(content=content):
+                self.path.write_bytes(content)
+
+                error = self._clean_main_error()
+
+                self.assertEqual(error, "working tree is not clean")
+                self.assertEqual(self.path.read_bytes(), content)
+                self._git("restore", "--worktree", "--", batch.LANE_CERTIFICATION_PATH)
+
+    def test_clean_main_refuses_untracked_source_ledger_and_mixed_state(self):
+        cases = ("untracked", "source", "ledger", "mixed")
+        for case in cases:
+            with self.subTest(case=case):
+                self._refresh()
+                scratch = self.root / "scratch.txt"
+                if case in {"untracked", "mixed"}:
+                    scratch.write_text("scratch\n", encoding="utf-8")
+                if case in {"source", "mixed"}:
+                    self.source.write_text("source user edit\n", encoding="utf-8")
+                if case in {"ledger", "mixed"}:
+                    self.ledger.write_text(
+                        '{"audit_status":"audited_clean"}\n',
+                        encoding="utf-8",
+                    )
+                snapshots = {
+                    path: path.read_bytes()
+                    for path in (self.path, self.source, self.ledger)
+                }
+                if scratch.exists():
+                    snapshots[scratch] = scratch.read_bytes()
+
+                error = self._clean_main_error()
+
+                self.assertEqual(error, "working tree is not clean")
+                for path, expected in snapshots.items():
+                    self.assertEqual(path.read_bytes(), expected)
+                self._git("restore", "--worktree", "--", ".")
+                scratch.unlink(missing_ok=True)
+
+    def test_clean_main_refuses_deleted_certification(self):
+        self.path.unlink()
+
+        error = self._clean_main_error()
+
+        self.assertEqual(error, "working tree is not clean")
+        self.assertFalse(self.path.exists())
+
+    def test_concurrent_same_file_edit_survives_reverse_patch(self):
+        refreshed = self._refresh()
+        raced = json.loads(json.dumps(refreshed))
+        raced["lanes"][0]["blocking"] = ["concurrent-user-work"]
+        raced_text = json.dumps(raced, indent=2, sort_keys=True) + "\n"
+        original_sh = batch.sh
+        injected = False
+
+        def racing_sh(cmd, timeout=120, *, honor_cancel=True):
+            nonlocal injected
+            if cmd[:3] == ["git", "apply", "--reverse"] and not injected:
+                injected = True
+                self.path.write_text(raced_text, encoding="utf-8")
+            return original_sh(cmd, timeout=timeout, honor_cancel=honor_cancel)
+
+        with mock.patch.object(batch, "REPO_ROOT", self.root), mock.patch.object(
+            batch,
+            "sh",
+            side_effect=racing_sh,
+        ):
+            error = batch.clean_main_error()
+
+        self.assertTrue(injected)
+        self.assertIsNotNone(error)
+        after = json.loads(self.path.read_text(encoding="utf-8"))
+        self.assertEqual(
+            after["lanes"][0]["blocking"],
+            ["concurrent-user-work"],
+        )
 
 
 def _args() -> argparse.Namespace:
@@ -1328,9 +1457,9 @@ class ClaimTransactionTest(unittest.TestCase):
             git("add", ".gitignore", str(shard.relative_to(root)))
             git("commit", "-qm", "baseline")
 
-            for name in batch.static_checkpoint.STATIC_CACHE_NAMES:
-                content = f"{{\"cache\": \"{name}\"}}\n".encode()
-                (data / name).write_bytes(content)
+            citation_graph = data / "citation_graph.json"
+            citation_graph.write_bytes(b'{"cache": "citation_graph.json"}\n')
+            runner_classification = data / "runner_classification.json"
             checkpoint = data / "static_pipeline_checkpoint.json"
 
             nonce = "a" * 32
@@ -1360,6 +1489,12 @@ class ClaimTransactionTest(unittest.TestCase):
                 )
                 prepared, prepare_detail = (
                     batch.static_checkpoint.prepare_checkpoint()
+                )
+                runner_cache_absent_at_prepare = (
+                    not runner_classification.exists()
+                )
+                runner_classification.write_bytes(
+                    b'{"cache": "runner_classification.json"}\n'
                 )
                 classifier_receipt_ok, classifier_receipt_detail = (
                     batch.static_checkpoint.record_producer_receipt(
@@ -1450,6 +1585,7 @@ class ClaimTransactionTest(unittest.TestCase):
         self.assertTrue(graph_receipt_ok, graph_receipt_detail)
         self.assertTrue(seed_receipt_ok, seed_receipt_detail)
         self.assertTrue(prepared, prepare_detail)
+        self.assertTrue(runner_cache_absent_at_prepare)
         self.assertTrue(classifier_receipt_ok, classifier_receipt_detail)
         self.assertTrue(captured, capture_detail)
         self.assertTrue(finalized, finalize_detail)

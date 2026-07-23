@@ -1136,15 +1136,18 @@ def recover_lane_certification_provenance_drift(
     *,
     honor_cancel: bool = True,
 ) -> bool:
-    """Restore exact legacy ``repo_head``-only drift at a sync boundary.
+    """Subtract exact legacy ``repo_head``-only drift at a sync boundary.
 
     ``lane_certification.json`` used to embed the current commit. A pipeline
     refresh therefore dirtied the file as soon as a later commit changed
     ``HEAD``. This recovery is intentionally narrower than the audit generated
-    path allowlist: it accepts one unstaged modified file, verifies that the
-    parsed payload differs from ``HEAD`` only by the obsolete ``repo_head``
-    field, and refuses every staged, untracked, deleted, or content-bearing
-    change.
+    path allowlist: it accepts one unstaged modified file, requires its bytes to
+    be exactly either the committed payload with the obsolete field removed or
+    with that field refreshed to the current commit, and refuses every staged,
+    untracked, deleted, malformed, or content-bearing change. The exact Git
+    patch is reversed instead of restoring the whole file, so an overlapping
+    concurrent write makes the apply fail and a non-overlapping write survives
+    for the post-recovery clean check.
     """
     if status_output.splitlines() != [f" M {LANE_CERTIFICATION_PATH}"]:
         return False
@@ -1158,45 +1161,87 @@ def recover_lane_certification_provenance_drift(
     path = REPO_ROOT / LANE_CERTIFICATION_PATH
     try:
         working_text = path.read_text(encoding="utf-8")
-        committed_payload = json.loads(committed.stdout)
-        working_payload = json.loads(working_text)
-    except (OSError, json.JSONDecodeError):
-        return False
-    if not isinstance(committed_payload, dict) or not isinstance(
-        working_payload, dict
-    ):
-        return False
-    if committed_payload == working_payload:
+    except (OSError, UnicodeError):
         return False
 
-    committed_without_head = dict(committed_payload)
-    working_without_head = dict(working_payload)
-    committed_without_head.pop("repo_head", None)
-    working_head = working_without_head.pop("repo_head", None)
-    if committed_without_head != working_without_head:
+    provenance_pattern = re.compile(
+        r'(?m)^(  "repo_head": ")([0-9a-f]{40})(",)\n'
+    )
+    provenance_matches = list(provenance_pattern.finditer(committed.stdout))
+    if len(provenance_matches) != 1:
         return False
-    if working_head is not None:
-        head = sh(["git", "rev-parse", "HEAD"], honor_cancel=honor_cancel)
-        if head.returncode != 0 or working_head != head.stdout.strip():
-            return False
+    provenance = provenance_matches[0]
+    without_provenance = (
+        committed.stdout[: provenance.start()]
+        + committed.stdout[provenance.end() :]
+    )
+    head = sh(["git", "rev-parse", "HEAD"], honor_cancel=honor_cancel)
+    if head.returncode != 0:
+        return False
+    current_head = head.stdout.strip()
+    with_current_head = (
+        committed.stdout[: provenance.start(2)]
+        + current_head
+        + committed.stdout[provenance.end(2) :]
+    )
+    if working_text not in {without_provenance, with_current_head}:
+        return False
+
+    try:
+        patch = sh(
+            [
+                "git",
+                "diff",
+                "--no-ext-diff",
+                "--no-color",
+                "--binary",
+                "--",
+                LANE_CERTIFICATION_PATH,
+            ],
+            honor_cancel=honor_cancel,
+        )
+    except UnicodeError:
+        return False
+    if patch.returncode != 0 or not patch.stdout:
+        return False
     try:
         if path.read_text(encoding="utf-8") != working_text:
             return False
-    except OSError:
+    except (OSError, UnicodeError):
         return False
 
-    restored = sh(
-        ["git", "restore", "--worktree", "--", LANE_CERTIFICATION_PATH],
-        honor_cancel=honor_cancel,
-    )
-    if restored.returncode != 0:
+    patch_path: Path | None = None
+    try:
+        descriptor, temporary = tempfile.mkstemp(
+            prefix="audit-lane-provenance-",
+            suffix=".patch",
+        )
+        patch_path = Path(temporary)
+        with os.fdopen(descriptor, "w", encoding="utf-8") as handle:
+            handle.write(patch.stdout)
+        reversed_patch = sh(
+            [
+                "git",
+                "apply",
+                "--reverse",
+                "--whitespace=nowarn",
+                str(patch_path),
+            ],
+            honor_cancel=honor_cancel,
+        )
+        if reversed_patch.returncode != 0:
+            return False
+        print(
+            "recovered generated certification provenance drift: "
+            f"{LANE_CERTIFICATION_PATH}",
+            flush=True,
+        )
+        return True
+    except OSError:
         return False
-    print(
-        "recovered generated certification provenance drift: "
-        f"{LANE_CERTIFICATION_PATH}",
-        flush=True,
-    )
-    return True
+    finally:
+        if patch_path is not None:
+            patch_path.unlink(missing_ok=True)
 
 
 def clean_main_error(*, honor_cancel: bool = True) -> str | None:

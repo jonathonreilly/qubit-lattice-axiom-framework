@@ -270,6 +270,9 @@ least every 15 minutes — never silence for a long run.
   allowlisted generated surface as recoverable coordination state, not as a
   terminal campaign failure. Normalize it at the clean sync boundary and
   continue the same supervisor.
+- Subtract only the exact verified provenance patch; never restore the whole
+  generated file. If overlapping or non-provenance content appears before the
+  patch applies, preserve it, fail the clean check, and stop that transaction.
 - Keep that recovery fail-closed. It must reject staged changes, source or
   ledger content, verdict-bearing changes, untracked files, deletions, and
   any payload delta beyond the exact allowlisted provenance field. Preserve

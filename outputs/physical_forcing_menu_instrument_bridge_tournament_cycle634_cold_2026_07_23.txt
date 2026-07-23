@@ -1,0 +1,35 @@
+PASS immutable committed Cycle523/Cycle625 and axiom shores are exact :: {'files': 7, 'head': '1d3d7a005bc74256ac23b9ace7b2669a45a9fc79'}
+PASS three closed Born heads are byte-exact comparison-only objects :: 3
+PASS sequential nearest-neighbor M2 compiler realizes all declared and held menus :: {'families': 4, 'frames': 24, 'held': 5}
+PASS mixed-projective split/merge has two local physical presentations with one effect identity :: {'effect': np.float64(4.1633363423443375e-16), 'channel_difference': np.float64(0.25)}
+PASS candidate grade and executable Cycle625 B/C adapters remain semantically separated :: {'families': 4, 'grade_is_physical': False}
+PASS generic spectator factor and local input-code/resource ledger are explicit without mass back-credit :: {'spectator_residual': 0.0, 'constraints': 4}
+PASS six-layer contract promotes only fixed-menu physical eligibility :: {'closed_layers': 1, 'layers': 6}
+PASS current N1-N8 forbids broad negative, shared obstruction, minimum content, and axiom pressure :: {'attempted': 3, 'required': 5, 'pairs': 30}
+PASS Cycle634 note preserves exact scope and semantic boundaries :: ()
+{
+  "pass": true,
+  "tests_passed": 9,
+  "tests_failed": 0,
+  "elapsed_seconds": 0.21640629204921424,
+  "maximum_RSS_bytes": 74170368,
+  "receipt": "/private/tmp/toe-science.BB0KQV/outputs/physical_forcing_menu_instrument_bridge_tournament_cycle634_receipt_2026_07_23.json"
+}
+        0.52 real         0.37 user         0.08 sys
+            74465280  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               25405  page reclaims
+                 207  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 423  voluntary context switches
+                 276  involuntary context switches
+          4898838818  instructions retired
+          1517442607  cycles elapsed
+            55820792  peak memory footprint

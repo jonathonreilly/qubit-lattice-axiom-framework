@@ -1,0 +1,2044 @@
+{
+  "audit": "unset",
+  "author_accepted": false,
+  "author_artifact_status_accepted": false,
+  "authority": "none",
+  "axiom_pressure": false,
+  "breakthrough": false,
+  "breakthrough_bar_met": false,
+  "candidate_grade_and_Cycle625_interfaces": {
+    "Born_probability_claim": false,
+    "Route_B_interface": {
+      "coherent_pointer_sectors_are_retained": true,
+      "committed_upstream_M2": 129,
+      "fixed_adapter_is_supplied": true,
+      "pointer_states_called_Records": false,
+      "runtime_actuality_token": false
+    },
+    "Route_C_interface": {
+      "committed_upstream_M2": 531,
+      "counts_called_realized_frequency_or_Born": false,
+      "denominator": 64,
+      "fixed_eight_history_labels": true,
+      "quantization_is_physical": false
+    },
+    "candidate_grade_definition": "w(E)=Tr(rho E)",
+    "families": {
+      "held_size5_split_trine": {
+        "Route_B_fixed_supplied_adapter": "effect label j -> direction one-hot j among six",
+        "Route_C_denominator64_counts": [
+          9,
+          8,
+          8,
+          14,
+          25,
+          0,
+          0,
+          0
+        ],
+        "Route_C_quantizer": "supplied host-side largest remainder diagnostic",
+        "candidate_w_Tr_rho_E": [
+          0.1333333333333333,
+          0.1333333333333333,
+          0.1333333333333333,
+          0.21339745962155612,
+          0.3866025403784438
+        ],
+        "candidate_w_sum_residual": 2.220446049250313e-16,
+        "coherent_input_nonzero_pointer_sectors": 16,
+        "effect_identity_grade_residual": 3.608224830031759e-16,
+        "pointer_patterns": [
+          {
+            "Route_B_onehot": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            "effect_label": 4,
+            "pattern": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "Route_B_onehot": [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            "effect_label": 3,
+            "pattern": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "Route_B_onehot": [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            "effect_label": 2,
+            "pattern": [
+              0,
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "Route_B_onehot": [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            "effect_label": 2,
+            "pattern": [
+              0,
+              0,
+              1,
+              1
+            ]
+          },
+          {
+            "Route_B_onehot": [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "effect_label": 1,
+            "pattern": [
+              0,
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "Route_B_onehot": [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "effect_label": 1,
+            "pattern": [
+              0,
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "Route_B_onehot": [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "effect_label": 1,
+            "pattern": [
+              0,
+              1,
+              1,
+              0
+            ]
+          },
+          {
+            "Route_B_onehot": [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "effect_label": 1,
+            "pattern": [
+              0,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "Route_B_onehot": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "effect_label": 0,
+            "pattern": [
+              1,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "Route_B_onehot": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "effect_label": 0,
+            "pattern": [
+              1,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "Route_B_onehot": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "effect_label": 0,
+            "pattern": [
+              1,
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "Route_B_onehot": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "effect_label": 0,
+            "pattern": [
+              1,
+              0,
+              1,
+              1
+            ]
+          },
+          {
+            "Route_B_onehot": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "effect_label": 0,
+            "pattern": [
+              1,
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "Route_B_onehot": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "effect_label": 0,
+            "pattern": [
+              1,
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "Route_B_onehot": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "effect_label": 0,
+            "pattern": [
+              1,
+              1,
+              1,
+              0
+            ]
+          },
+          {
+            "Route_B_onehot": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "effect_label": 0,
+            "pattern": [
+              1,
+              1,
+              1,
+              1
+            ]
+          }
+        ]
+      },
+      "mixed_projective_merge": {
+        "Route_B_fixed_supplied_adapter": "effect label j -> direction one-hot j among six",
+        "Route_C_denominator64_counts": [
+          42,
+          22,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "Route_C_quantizer": "supplied host-side largest remainder diagnostic",
+        "candidate_w_Tr_rho_E": [
+          0.6499999999999999,
+          0.35
+        ],
+        "candidate_w_sum_residual": 1.1102230246251565e-16,
+        "coherent_input_nonzero_pointer_sectors": 2,
+        "effect_identity_grade_residual": 5.551115123125783e-17,
+        "pointer_patterns": [
+          {
+            "Route_B_onehot": [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "effect_label": 1,
+            "pattern": [
+              0
+            ]
+          },
+          {
+            "Route_B_onehot": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "effect_label": 0,
+            "pattern": [
+              1
+            ]
+          }
+        ]
+      },
+      "scaled_axis_cancellation": {
+        "Route_B_fixed_supplied_adapter": "effect label j -> direction one-hot j among six",
+        "Route_C_denominator64_counts": [
+          27,
+          11,
+          18,
+          8,
+          0,
+          0,
+          0,
+          0
+        ],
+        "Route_C_quantizer": "supplied host-side largest remainder diagnostic",
+        "candidate_w_Tr_rho_E": [
+          0.42942286340599467,
+          0.1690598923241497,
+          0.27472232502674326,
+          0.1267949192431123
+        ],
+        "candidate_w_sum_residual": 1.1102230246251565e-16,
+        "coherent_input_nonzero_pointer_sectors": 6,
+        "effect_identity_grade_residual": 3.3306690738754696e-16,
+        "pointer_patterns": [
+          {
+            "Route_B_onehot": [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            "effect_label": 3,
+            "pattern": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "Route_B_onehot": [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            "effect_label": 2,
+            "pattern": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "Route_B_onehot": [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "effect_label": 1,
+            "pattern": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "Route_B_onehot": [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "effect_label": 1,
+            "pattern": [
+              0,
+              1,
+              1
+            ]
+          },
+          {
+            "Route_B_onehot": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "effect_label": 0,
+            "pattern": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "Route_B_onehot": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "effect_label": 0,
+            "pattern": [
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "Route_B_onehot": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "effect_label": 0,
+            "pattern": [
+              1,
+              1,
+              0
+            ]
+          },
+          {
+            "Route_B_onehot": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "effect_label": 0,
+            "pattern": [
+              1,
+              1,
+              1
+            ]
+          }
+        ]
+      },
+      "ternary_trine": {
+        "Route_B_fixed_supplied_adapter": "effect label j -> direction one-hot j among six",
+        "Route_C_denominator64_counts": [
+          25,
+          14,
+          25,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "Route_C_quantizer": "supplied host-side largest remainder diagnostic",
+        "candidate_w_Tr_rho_E": [
+          0.4,
+          0.21339745962155612,
+          0.3866025403784438
+        ],
+        "candidate_w_sum_residual": 0.0,
+        "coherent_input_nonzero_pointer_sectors": 4,
+        "effect_identity_grade_residual": 1.6653345369377348e-16,
+        "pointer_patterns": [
+          {
+            "Route_B_onehot": [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            "effect_label": 2,
+            "pattern": [
+              0,
+              0
+            ]
+          },
+          {
+            "Route_B_onehot": [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "effect_label": 1,
+            "pattern": [
+              0,
+              1
+            ]
+          },
+          {
+            "Route_B_onehot": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "effect_label": 0,
+            "pattern": [
+              1,
+              0
+            ]
+          },
+          {
+            "Route_B_onehot": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "effect_label": 0,
+            "pattern": [
+              1,
+              1
+            ]
+          }
+        ]
+      }
+    },
+    "frequency_claim": false,
+    "grade_used_to_construct_or_select_unitary": false,
+    "mixed_presentation_effect_independence_consumed": true,
+    "pass": true,
+    "physical_numeric_grade_output": false,
+    "rho_minimum_eigenvalue": 0.23074175964327487,
+    "supplied_diagnostic_rho": "(I+0.2X-0.3Y+0.4Z)/2"
+  },
+  "elapsed_seconds": 0.2500467919744551,
+  "external_comparison_heads": {
+    "back_credit": false,
+    "comparison_only": true,
+    "heads": {
+      "PR5472": {
+        "back_credit": false,
+        "declared_state": "CLOSED_NONRETAINED",
+        "fragment": "Neither horn is selected. The axioms supply no menus at all",
+        "head_oid": "2c648ccb408a8c36a700f53ec5401369e3bbd490",
+        "line": 60,
+        "line_text": "Neither horn is selected. The axioms supply no menus at all; which resolutions",
+        "observed_sha256": "f7ddc109ebb97d5514c7b41a78c523fe6adcf5419c08cff1ec75e54b2c99d435",
+        "pass": true,
+        "path": "docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+        "retained_as_premise": false,
+        "sha256": "f7ddc109ebb97d5514c7b41a78c523fe6adcf5419c08cff1ec75e54b2c99d435",
+        "use": "conditional effect-menu forcing comparison only"
+      },
+      "PR5476": {
+        "back_credit": false,
+        "declared_state": "CLOSED_NONRETAINED",
+        "fragment": "the menu family the physical registration supplies is underived",
+        "head_oid": "a994617819f57e599dd101c654be366123392236",
+        "line": 17,
+        "line_text": "adopted; the menu family the physical registration supplies is underived.",
+        "observed_sha256": "042a5e69a50dba337fc3e8bfd5faa3a6cef34b42c3e0ab6344ae5d05f5e6cdc7",
+        "pass": true,
+        "path": "docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+        "retained_as_premise": false,
+        "sha256": "042a5e69a50dba337fc3e8bfd5faa3a6cef34b42c3e0ab6344ae5d05f5e6cdc7",
+        "use": "conditional scaled-projector forcing comparison only"
+      },
+      "PR5479": {
+        "back_credit": false,
+        "declared_state": "CLOSED_NONRETAINED",
+        "fragment": "No family is selected; nothing here derives which menus record formation",
+        "head_oid": "84053108a424cef26dc23e484549df331ad2050f",
+        "line": 62,
+        "line_text": "No family is selected; nothing here derives which menus record formation",
+        "observed_sha256": "feb8b3ca2ed1a8ffb3d272ce81814cfc2c6598148e9fecf2a48df88b53c45a35",
+        "pass": true,
+        "path": "docs/BORN_FORM_MENU_OUTCOME_THRESHOLD_AND_MIXED_PROJECTIVE_FORCING_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+        "retained_as_premise": false,
+        "sha256": "feb8b3ca2ed1a8ffb3d272ce81814cfc2c6598148e9fecf2a48df88b53c45a35",
+        "use": "conditional ternary/mixed-projective forcing comparison only"
+      }
+    },
+    "pass": true
+  },
+  "highest_honest_terminal": "physical eligibility of the declared fixed compiled menu and local pointer effect algebra; not autonomous menu genesis, grade, actuality, Record, or probability",
+  "inventory": {
+    "derived": [
+      "one reusable positive-root sequential compiler for declared 2..7-outcome qubit menus",
+      "exact unitary dilations and pointer-effect identities for ternary trine, scaled axis-cancellation, mixed merge, and held size5",
+      "support-two nearest-neighbor cubic-star layout, explicit inverse, deletion, malformed, leakage/norm, all24/all576, and generic spectator-factor controls",
+      "two inequivalent mixed-projective physical presentations with identical effects but different post-state channels",
+      "executable candidate-only interfaces to committed Cycle625 Routes B and C"
+    ],
+    "open": [
+      "autonomous physical genesis/selection of the menu family and parameters",
+      "physical effect-functional numeric grade output and calibration genesis",
+      "objective occurrence selector sigma with exhaust ownership",
+      "pointer-to-Record identification, permanence/readability, reset, and renewal",
+      "realized corpus, frequency law, independence/convergence, and Born meaning",
+      "translation-invariant infinite/noisy deployment and gravity/source coupling"
+    ],
+    "supplied": [
+      "immutable committed shores at 1d3d7a005bc74256ac23b9ace7b2669a45a9fc79; dirty working-tree bytes are comparison-only",
+      "closed PR5472/5476/5479 heads as comparison-only objects with no back-credit",
+      "finite effect matrices, outcome labels, compile order, and one transported cubic reference star",
+      "one system M2 plus blank apparatus M2 ports and their support-one input-code constraints",
+      "mixed-presentation coin preparations, axes, and analyzer gates",
+      "diagnostic rho, fixed Route-B label adapter, and Route-C denominator64 quantizer"
+    ]
+  },
+  "maturity_rebase": null,
+  "maximum_RSS_bytes": 74235904,
+  "mixed_projective_presentations": {
+    "bounded_M2_each_presentation": 3,
+    "canonical_direct_dilation_effect_residual": 1.2412670766236366e-16,
+    "coarse_pointer_merge_is_local_projector_sum": true,
+    "delete_A_multiplexer_residual": 0.35355339059327373,
+    "delete_B_multiplexer_residual": 0.35355339059327384,
+    "full_inverse_residual": 6.839998139638599e-16,
+    "hidden_coin_is_retained_not_erased": true,
+    "host_outcome_selection": false,
+    "lambda_minus": 0.1464466094067262,
+    "lambda_plus": 0.8535533905932737,
+    "matching_effects_called_matching_instruments": false,
+    "maximum_gate_support_M2": 2,
+    "pass": true,
+    "post_state_channel_difference": 0.25,
+    "presentation_A": "equal coherent coin with z/x conditional projective analyzers",
+    "presentation_A_all24_effect_covariance_residual": 3.7905385079340885e-16,
+    "presentation_A_effect_residual": 2.906601613561372e-16,
+    "presentation_B": "spectral coin with lambda_plus P_u + lambda_minus P_minus_u",
+    "presentation_B_all24_effect_covariance_residual": 4.552781551046228e-16,
+    "presentation_B_effect_residual": 1.304945628976102e-16,
+    "presentation_independent_effect_residual": 4.1633363423443375e-16,
+    "target_E0": "(P_z+P_x)/2"
+  },
+  "no_go_discipline": {
+    "N1_broad_negative_gate": "FAIL_DO_NOT_SHIP",
+    "N1_normalized_families": [
+      {
+        "family": "sequential positive-root first-hit dilation",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "conditional positive roots and orthogonal first-hit pointer sectors",
+        "object_formulation": "finite qubit POVM and blank neighbor ports",
+        "search_status": "ATTEMPTED_POSITIVE",
+        "strength_vs_target": "closes fixed-menu eligibility only",
+        "terminal_obligation": "local fixed-menu physical eligibility"
+      },
+      {
+        "family": "coherent coin mixed-projective split/merge",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "controlled z/x analyzers with retained coin exhaust",
+        "object_formulation": "coin, system, local pointer",
+        "search_status": "ATTEMPTED_POSITIVE",
+        "strength_vs_target": "closes one mixed effect presentation",
+        "terminal_obligation": "physical merge without host outcome selection"
+      },
+      {
+        "family": "canonical spectral/direct presentation",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism_invariant": "same effect under inequivalent post-state channels",
+        "object_formulation": "spectral coin or direct positive-root dilation",
+        "search_status": "ATTEMPTED_POSITIVE",
+        "strength_vs_target": "effect identity, not instrument identity",
+        "terminal_obligation": "embedding-independent effect identity"
+      },
+      {
+        "family": "autonomous menu-program QCA",
+        "honesty_marker": null,
+        "mechanism_invariant": "local generation of effect parameters and pointer ports",
+        "object_formulation": "translation-invariant program and apparatus medium",
+        "search_status": "OPEN_UNTESTED_NOT_COUNTED",
+        "strength_vs_target": "unknown/comparable",
+        "terminal_obligation": "derive which menu nature deploys"
+      },
+      {
+        "family": "objective dissipative actualization",
+        "honesty_marker": null,
+        "mechanism_invariant": "local nonunitary/stochastic occurrence with covariance",
+        "object_formulation": "pointer plus retained environment exhaust",
+        "search_status": "OPEN_UNTESTED_NOT_COUNTED",
+        "strength_vs_target": "unknown/comparable",
+        "terminal_obligation": "derive sigma without deleting alternatives"
+      },
+      {
+        "family": "renewable Record-corpus calibration",
+        "honesty_marker": null,
+        "mechanism_invariant": "renewal, blinding, and convergence controls",
+        "object_formulation": "admitted persistent records across trials",
+        "search_status": "OPEN_UNTESTED_NOT_COUNTED",
+        "strength_vs_target": "unknown/comparable",
+        "terminal_obligation": "derive physical grade/frequency/Born meaning"
+      }
+    ],
+    "N1_qualifying_attempts": 3,
+    "N1_required_for_broad_negative": 5,
+    "N2_all_pair_implications_false_on_exhibited_interfaces": true,
+    "N2_collapsed_walls": {
+      "W_Record": "pointer-to-Record identification and permanence/readability",
+      "W_deployment": "translation-invariant infinite deployment, noise, and reset",
+      "W_frequency": "renewed realized corpus, independence/convergence, and Born meaning",
+      "W_grade": "physical effect-functional grade output rather than supplied-rho algebra",
+      "W_menu_genesis": "which compiled menu/family nature deploys and how parameters are generated",
+      "W_sigma": "objective occurrence selector on coherent pointer sectors"
+    },
+    "N2_directed_pair_count": 30,
+    "N2_directed_pairs": [
+      {
+        "closure_implied": false,
+        "from": "W_menu_genesis",
+        "reason": "closing W_menu_genesis does not construct W_grade on the exhibited interfaces",
+        "to": "W_grade"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_menu_genesis",
+        "reason": "closing W_menu_genesis does not construct W_sigma on the exhibited interfaces",
+        "to": "W_sigma"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_menu_genesis",
+        "reason": "closing W_menu_genesis does not construct W_Record on the exhibited interfaces",
+        "to": "W_Record"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_menu_genesis",
+        "reason": "closing W_menu_genesis does not construct W_frequency on the exhibited interfaces",
+        "to": "W_frequency"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_menu_genesis",
+        "reason": "closing W_menu_genesis does not construct W_deployment on the exhibited interfaces",
+        "to": "W_deployment"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_grade",
+        "reason": "closing W_grade does not construct W_menu_genesis on the exhibited interfaces",
+        "to": "W_menu_genesis"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_grade",
+        "reason": "closing W_grade does not construct W_sigma on the exhibited interfaces",
+        "to": "W_sigma"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_grade",
+        "reason": "closing W_grade does not construct W_Record on the exhibited interfaces",
+        "to": "W_Record"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_grade",
+        "reason": "closing W_grade does not construct W_frequency on the exhibited interfaces",
+        "to": "W_frequency"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_grade",
+        "reason": "closing W_grade does not construct W_deployment on the exhibited interfaces",
+        "to": "W_deployment"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_sigma",
+        "reason": "closing W_sigma does not construct W_menu_genesis on the exhibited interfaces",
+        "to": "W_menu_genesis"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_sigma",
+        "reason": "closing W_sigma does not construct W_grade on the exhibited interfaces",
+        "to": "W_grade"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_sigma",
+        "reason": "closing W_sigma does not construct W_Record on the exhibited interfaces",
+        "to": "W_Record"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_sigma",
+        "reason": "closing W_sigma does not construct W_frequency on the exhibited interfaces",
+        "to": "W_frequency"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_sigma",
+        "reason": "closing W_sigma does not construct W_deployment on the exhibited interfaces",
+        "to": "W_deployment"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_Record",
+        "reason": "closing W_Record does not construct W_menu_genesis on the exhibited interfaces",
+        "to": "W_menu_genesis"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_Record",
+        "reason": "closing W_Record does not construct W_grade on the exhibited interfaces",
+        "to": "W_grade"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_Record",
+        "reason": "closing W_Record does not construct W_sigma on the exhibited interfaces",
+        "to": "W_sigma"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_Record",
+        "reason": "closing W_Record does not construct W_frequency on the exhibited interfaces",
+        "to": "W_frequency"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_Record",
+        "reason": "closing W_Record does not construct W_deployment on the exhibited interfaces",
+        "to": "W_deployment"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_frequency",
+        "reason": "closing W_frequency does not construct W_menu_genesis on the exhibited interfaces",
+        "to": "W_menu_genesis"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_frequency",
+        "reason": "closing W_frequency does not construct W_grade on the exhibited interfaces",
+        "to": "W_grade"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_frequency",
+        "reason": "closing W_frequency does not construct W_sigma on the exhibited interfaces",
+        "to": "W_sigma"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_frequency",
+        "reason": "closing W_frequency does not construct W_Record on the exhibited interfaces",
+        "to": "W_Record"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_frequency",
+        "reason": "closing W_frequency does not construct W_deployment on the exhibited interfaces",
+        "to": "W_deployment"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_deployment",
+        "reason": "closing W_deployment does not construct W_menu_genesis on the exhibited interfaces",
+        "to": "W_menu_genesis"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_deployment",
+        "reason": "closing W_deployment does not construct W_grade on the exhibited interfaces",
+        "to": "W_grade"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_deployment",
+        "reason": "closing W_deployment does not construct W_sigma on the exhibited interfaces",
+        "to": "W_sigma"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_deployment",
+        "reason": "closing W_deployment does not construct W_Record on the exhibited interfaces",
+        "to": "W_Record"
+      },
+      {
+        "closure_implied": false,
+        "from": "W_deployment",
+        "reason": "closing W_deployment does not construct W_frequency on the exhibited interfaces",
+        "to": "W_frequency"
+      }
+    ],
+    "N3_hidden_wall_scan": [
+      "effect matrices, labels, compile order, gate constants, and finite reference star",
+      "blank apparatus M2 genesis and support-one input-code constraints",
+      "mixed coin weights, axes, analyzer gates, and retained hidden coin",
+      "supplied diagnostic rho, Route-B one-hot adapter, and Route-C denominator64 quantizer",
+      "outcome aggregation is an analytical pointer-projector sum, not host runtime selection",
+      "menu genesis, grade output, sigma, Record/permanence, renewal, frequency/Born meaning, and infinite deployment remain explicit"
+    ],
+    "N4_dropped_nonmatches": [
+      {
+        "current_line": 388,
+        "current_path": "scripts/physical_forcing_menu_instrument_bridge_tournament_cycle634_2026_07_23.py",
+        "current_residual": "closed conditional theorem is not used as physical dilation evidence",
+        "disposition": "comparison-only; no back-credit",
+        "exact_match": false,
+        "prior_line": 60,
+        "prior_path": "docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+        "prior_ref": "2c648ccb408a8c36a700f53ec5401369e3bbd490",
+        "prior_residual": "conditional effect-menu forcing comparison only",
+        "same_scope": false,
+        "scope_match": false,
+        "use_as_closure": false
+      },
+      {
+        "current_line": 388,
+        "current_path": "scripts/physical_forcing_menu_instrument_bridge_tournament_cycle634_2026_07_23.py",
+        "current_residual": "closed conditional theorem is not used as physical dilation evidence",
+        "disposition": "comparison-only; no back-credit",
+        "exact_match": false,
+        "prior_line": 17,
+        "prior_path": "docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+        "prior_ref": "a994617819f57e599dd101c654be366123392236",
+        "prior_residual": "conditional scaled-projector forcing comparison only",
+        "same_scope": false,
+        "scope_match": false,
+        "use_as_closure": false
+      },
+      {
+        "current_line": 388,
+        "current_path": "scripts/physical_forcing_menu_instrument_bridge_tournament_cycle634_2026_07_23.py",
+        "current_residual": "closed conditional theorem is not used as physical dilation evidence",
+        "disposition": "comparison-only; no back-credit",
+        "exact_match": false,
+        "prior_line": 62,
+        "prior_path": "docs/BORN_FORM_MENU_OUTCOME_THRESHOLD_AND_MIXED_PROJECTIVE_FORCING_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+        "prior_ref": "84053108a424cef26dc23e484549df331ad2050f",
+        "prior_residual": "conditional ternary/mixed-projective forcing comparison only",
+        "same_scope": false,
+        "scope_match": false,
+        "use_as_closure": false
+      }
+    ],
+    "N4_exact_residual_matches": [
+      {
+        "current_line": 388,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_forcing_menu_instrument_bridge_tournament_cycle634_2026_07_23.py",
+        "current_residual": "declared fixed menus now have literal bounded M2 unitary dilations",
+        "exact_match": true,
+        "prior_line": 63,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_ADMISSIBILITY_OCCURRENCE_BORN_SHARED_MIDDLE_TOURNAMENT_CYCLE625_NOTE_2026-07-22.md",
+        "prior_ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+        "prior_residual": "physical menu eligibility was open on inspected retained surfaces",
+        "same_scope": true,
+        "scope_match": true,
+        "use_as_closure": true
+      },
+      {
+        "current_line": 669,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_forcing_menu_instrument_bridge_tournament_cycle634_2026_07_23.py",
+        "current_residual": "w(E)=Tr(rho E) is presentation-independent algebra but remains a supplied diagnostic",
+        "exact_match": true,
+        "prior_line": 64,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_ADMISSIBILITY_OCCURRENCE_BORN_SHARED_MIDDLE_TOURNAMENT_CYCLE625_NOTE_2026-07-22.md",
+        "prior_ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+        "prior_residual": "candidate grade was not effect-functional physical output",
+        "same_scope": true,
+        "scope_match": true,
+        "use_as_closure": false
+      },
+      {
+        "current_line": 809,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_forcing_menu_instrument_bridge_tournament_cycle634_2026_07_23.py",
+        "current_residual": "orthogonal pointer sectors remain coherent and sigma remains open",
+        "exact_match": true,
+        "prior_line": 65,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_ADMISSIBILITY_OCCURRENCE_BORN_SHARED_MIDDLE_TOURNAMENT_CYCLE625_NOTE_2026-07-22.md",
+        "prior_ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+        "prior_residual": "occurrence selector sigma remained open",
+        "same_scope": true,
+        "scope_match": true,
+        "use_as_closure": false
+      },
+      {
+        "current_line": 809,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_forcing_menu_instrument_bridge_tournament_cycle634_2026_07_23.py",
+        "current_residual": "pointer basis states are not promoted to Records",
+        "exact_match": true,
+        "prior_line": 66,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_ADMISSIBILITY_OCCURRENCE_BORN_SHARED_MIDDLE_TOURNAMENT_CYCLE625_NOTE_2026-07-22.md",
+        "prior_ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+        "prior_residual": "Record admission/permanence remained physically unidentified",
+        "same_scope": true,
+        "scope_match": true,
+        "use_as_closure": false
+      },
+      {
+        "current_line": 669,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_forcing_menu_instrument_bridge_tournament_cycle634_2026_07_23.py",
+        "current_residual": "denominator64 adapter remains supplied host diagnostic only",
+        "exact_match": true,
+        "prior_line": 67,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_ADMISSIBILITY_OCCURRENCE_BORN_SHARED_MIDDLE_TOURNAMENT_CYCLE625_NOTE_2026-07-22.md",
+        "prior_ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+        "prior_residual": "candidate corpus was not objective or Born",
+        "same_scope": true,
+        "scope_match": true,
+        "use_as_closure": false
+      },
+      {
+        "current_line": 388,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_forcing_menu_instrument_bridge_tournament_cycle634_2026_07_23.py",
+        "current_residual": "each binary dilation acts on system and one adjacent apparatus M2",
+        "exact_match": true,
+        "prior_line": 96,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_PROTECTED_SHADOW_COIN_GATE_COMPILER_CYCLE523_NOTE_2026-07-21.md",
+        "prior_ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+        "prior_residual": "every declared primitive acts on one or two physical M2s",
+        "same_scope": true,
+        "scope_match": true,
+        "use_as_closure": true
+      },
+      {
+        "current_line": 809,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_forcing_menu_instrument_bridge_tournament_cycle634_2026_07_23.py",
+        "current_residual": "Cycle634 does not call pointer ports Records or rederive occurrence",
+        "exact_match": true,
+        "prior_line": 65,
+        "prior_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "prior_ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+        "prior_residual": "Records form is axiom content",
+        "same_scope": true,
+        "scope_match": true,
+        "use_as_closure": false
+      },
+      {
+        "current_line": 669,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_forcing_menu_instrument_bridge_tournament_cycle634_2026_07_23.py",
+        "current_residual": "supplied rho diagnostic is not occurrence or state selection",
+        "exact_match": true,
+        "prior_line": 37,
+        "prior_path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+        "prior_ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+        "prior_residual": "pointwise realized-state evaluation is not state selection",
+        "same_scope": true,
+        "scope_match": true,
+        "use_as_closure": false
+      }
+    ],
+    "N4_residual_matching": [
+      {
+        "current_line": 388,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_forcing_menu_instrument_bridge_tournament_cycle634_2026_07_23.py",
+        "current_residual": "declared fixed menus now have literal bounded M2 unitary dilations",
+        "exact_match": true,
+        "prior_line": 63,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_ADMISSIBILITY_OCCURRENCE_BORN_SHARED_MIDDLE_TOURNAMENT_CYCLE625_NOTE_2026-07-22.md",
+        "prior_ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+        "prior_residual": "physical menu eligibility was open on inspected retained surfaces",
+        "same_scope": true,
+        "scope_match": true,
+        "use_as_closure": true
+      },
+      {
+        "current_line": 669,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_forcing_menu_instrument_bridge_tournament_cycle634_2026_07_23.py",
+        "current_residual": "w(E)=Tr(rho E) is presentation-independent algebra but remains a supplied diagnostic",
+        "exact_match": true,
+        "prior_line": 64,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_ADMISSIBILITY_OCCURRENCE_BORN_SHARED_MIDDLE_TOURNAMENT_CYCLE625_NOTE_2026-07-22.md",
+        "prior_ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+        "prior_residual": "candidate grade was not effect-functional physical output",
+        "same_scope": true,
+        "scope_match": true,
+        "use_as_closure": false
+      },
+      {
+        "current_line": 809,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_forcing_menu_instrument_bridge_tournament_cycle634_2026_07_23.py",
+        "current_residual": "orthogonal pointer sectors remain coherent and sigma remains open",
+        "exact_match": true,
+        "prior_line": 65,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_ADMISSIBILITY_OCCURRENCE_BORN_SHARED_MIDDLE_TOURNAMENT_CYCLE625_NOTE_2026-07-22.md",
+        "prior_ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+        "prior_residual": "occurrence selector sigma remained open",
+        "same_scope": true,
+        "scope_match": true,
+        "use_as_closure": false
+      },
+      {
+        "current_line": 809,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_forcing_menu_instrument_bridge_tournament_cycle634_2026_07_23.py",
+        "current_residual": "pointer basis states are not promoted to Records",
+        "exact_match": true,
+        "prior_line": 66,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_ADMISSIBILITY_OCCURRENCE_BORN_SHARED_MIDDLE_TOURNAMENT_CYCLE625_NOTE_2026-07-22.md",
+        "prior_ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+        "prior_residual": "Record admission/permanence remained physically unidentified",
+        "same_scope": true,
+        "scope_match": true,
+        "use_as_closure": false
+      },
+      {
+        "current_line": 669,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_forcing_menu_instrument_bridge_tournament_cycle634_2026_07_23.py",
+        "current_residual": "denominator64 adapter remains supplied host diagnostic only",
+        "exact_match": true,
+        "prior_line": 67,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_ADMISSIBILITY_OCCURRENCE_BORN_SHARED_MIDDLE_TOURNAMENT_CYCLE625_NOTE_2026-07-22.md",
+        "prior_ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+        "prior_residual": "candidate corpus was not objective or Born",
+        "same_scope": true,
+        "scope_match": true,
+        "use_as_closure": false
+      },
+      {
+        "current_line": 388,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_forcing_menu_instrument_bridge_tournament_cycle634_2026_07_23.py",
+        "current_residual": "each binary dilation acts on system and one adjacent apparatus M2",
+        "exact_match": true,
+        "prior_line": 96,
+        "prior_path": "docs/work_history/repo/review_feedback/PHYSICAL_PROTECTED_SHADOW_COIN_GATE_COMPILER_CYCLE523_NOTE_2026-07-21.md",
+        "prior_ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+        "prior_residual": "every declared primitive acts on one or two physical M2s",
+        "same_scope": true,
+        "scope_match": true,
+        "use_as_closure": true
+      },
+      {
+        "current_line": 809,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_forcing_menu_instrument_bridge_tournament_cycle634_2026_07_23.py",
+        "current_residual": "Cycle634 does not call pointer ports Records or rederive occurrence",
+        "exact_match": true,
+        "prior_line": 65,
+        "prior_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "prior_ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+        "prior_residual": "Records form is axiom content",
+        "same_scope": true,
+        "scope_match": true,
+        "use_as_closure": false
+      },
+      {
+        "current_line": 669,
+        "current_numeric_residual": 0.0,
+        "current_path": "scripts/physical_forcing_menu_instrument_bridge_tournament_cycle634_2026_07_23.py",
+        "current_residual": "supplied rho diagnostic is not occurrence or state selection",
+        "exact_match": true,
+        "prior_line": 37,
+        "prior_path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+        "prior_ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+        "prior_residual": "pointwise realized-state evaluation is not state selection",
+        "same_scope": true,
+        "scope_match": true,
+        "use_as_closure": false
+      }
+    ],
+    "N5_rhetoric_audit": [
+      {
+        "lattice_wide": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_block": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_element": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_mode": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_site": "four bounded menu cells",
+        "phrase": "fixed-menu physical eligibility is not autonomous menu genesis"
+      },
+      {
+        "lattice_wide": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_block": "four menus",
+        "per_element": "all declared effects",
+        "per_mode": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_site": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "phrase": "effect identity is not a physical grade output"
+      },
+      {
+        "lattice_wide": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_block": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_element": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_mode": "all pointer patterns",
+        "per_site": "coherent input sectors",
+        "phrase": "pointer sector is not occurrence selector sigma"
+      },
+      {
+        "lattice_wide": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_block": "inverse/deletion tests",
+        "per_element": "local ports",
+        "per_mode": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_site": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "phrase": "pointer basis state is not a Record"
+      },
+      {
+        "lattice_wide": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_block": "four diagnostic menus",
+        "per_element": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_mode": "eight Route-C labels",
+        "per_site": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "phrase": "denominator64 candidate count is not frequency or Born meaning"
+      },
+      {
+        "lattice_wide": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_block": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_element": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_mode": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_site": "all24 transported stars",
+        "phrase": "finite cubic star is not infinite translation-invariant deployment"
+      }
+    ],
+    "N5_rhetoric_resolution_ledger": [
+      {
+        "lattice_wide": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_block": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_element": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_mode": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_site": "four bounded menu cells",
+        "phrase": "fixed-menu physical eligibility is not autonomous menu genesis"
+      },
+      {
+        "lattice_wide": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_block": "four menus",
+        "per_element": "all declared effects",
+        "per_mode": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_site": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "phrase": "effect identity is not a physical grade output"
+      },
+      {
+        "lattice_wide": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_block": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_element": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_mode": "all pointer patterns",
+        "per_site": "coherent input sectors",
+        "phrase": "pointer sector is not occurrence selector sigma"
+      },
+      {
+        "lattice_wide": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_block": "inverse/deletion tests",
+        "per_element": "local ports",
+        "per_mode": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_site": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "phrase": "pointer basis state is not a Record"
+      },
+      {
+        "lattice_wide": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_block": "four diagnostic menus",
+        "per_element": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_mode": "eight Route-C labels",
+        "per_site": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "phrase": "denominator64 candidate count is not frequency or Born meaning"
+      },
+      {
+        "lattice_wide": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_block": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_element": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_mode": "UNTESTED_NO_NEGATIVE_CLAIM",
+        "per_site": "all24 transported stars",
+        "phrase": "finite cubic star is not infinite translation-invariant deployment"
+      }
+    ],
+    "N6_partial_closure": [
+      {
+        "file": "scripts/physical_forcing_menu_instrument_bridge_tournament_cycle634_2026_07_23.py",
+        "status": "EXECUTED_FIXED_MENU_DILATION",
+        "what_closes": "bounded physical menu eligibility for declared menus"
+      },
+      {
+        "file": "scripts/physical_forcing_menu_instrument_bridge_tournament_cycle634_2026_07_23.py",
+        "status": "EXECUTED_MIXED_PRESENTATIONS",
+        "what_closes": "effect identity across two inequivalent local dilation presentations"
+      },
+      {
+        "file": "scripts/physical_forcing_menu_instrument_bridge_tournament_cycle634_2026_07_23.py",
+        "status": "EXECUTED_C625_ROUTE_B_ADAPTER",
+        "what_closes": "pointer label to candidate one-hot interface only"
+      },
+      {
+        "file": "scripts/physical_forcing_menu_instrument_bridge_tournament_cycle634_2026_07_23.py",
+        "status": "EXECUTED_C625_ROUTE_C_DIAGNOSTIC",
+        "what_closes": "supplied denominator64 candidate-count interface only"
+      },
+      {
+        "file": "scripts/physical_autonomous_menu_program_genesis_cycle_next.py",
+        "status": "NOT_CREATED_OPEN_CANDIDATE",
+        "what_closes": "menu/family parameter genesis"
+      },
+      {
+        "file": "scripts/physical_sigma_Record_frequency_cycle_next.py",
+        "status": "NOT_CREATED_OPEN_CANDIDATE",
+        "what_closes": "actuality, Record, renewal, and blinded frequency law"
+      }
+    ],
+    "N6_partial_closure_paths": [
+      {
+        "file": "scripts/physical_forcing_menu_instrument_bridge_tournament_cycle634_2026_07_23.py",
+        "status": "EXECUTED_FIXED_MENU_DILATION",
+        "what_closes": "bounded physical menu eligibility for declared menus"
+      },
+      {
+        "file": "scripts/physical_forcing_menu_instrument_bridge_tournament_cycle634_2026_07_23.py",
+        "status": "EXECUTED_MIXED_PRESENTATIONS",
+        "what_closes": "effect identity across two inequivalent local dilation presentations"
+      },
+      {
+        "file": "scripts/physical_forcing_menu_instrument_bridge_tournament_cycle634_2026_07_23.py",
+        "status": "EXECUTED_C625_ROUTE_B_ADAPTER",
+        "what_closes": "pointer label to candidate one-hot interface only"
+      },
+      {
+        "file": "scripts/physical_forcing_menu_instrument_bridge_tournament_cycle634_2026_07_23.py",
+        "status": "EXECUTED_C625_ROUTE_C_DIAGNOSTIC",
+        "what_closes": "supplied denominator64 candidate-count interface only"
+      },
+      {
+        "file": "scripts/physical_autonomous_menu_program_genesis_cycle_next.py",
+        "status": "NOT_CREATED_OPEN_CANDIDATE",
+        "what_closes": "menu/family parameter genesis"
+      },
+      {
+        "file": "scripts/physical_sigma_Record_frequency_cycle_next.py",
+        "status": "NOT_CREATED_OPEN_CANDIDATE",
+        "what_closes": "actuality, Record, renewal, and blinded frequency law"
+      }
+    ],
+    "N7_hostile_steelman": {
+      "actionable_test": "compile a local menu-program register and autonomous blank renewal, then require all24/all576, inverse/exhaust, coherent sigma, post-admission preservation, and blinded changed-rho frequencies",
+      "mechanism": "a translation-invariant local apparatus QCA prepares its own menu program and blank ports, runs this dilation, retains all exhaust, objectively actualizes one sector, preserves an admitted Record, renews, and yields blinded frequencies",
+      "openness": "this target-equivalent route is open, so broad negative, shared-obstruction, minimum-content, and axiom-pressure claims do not ship",
+      "supporting_authorities": [
+        {
+          "line": 63,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_ADMISSIBILITY_OCCURRENCE_BORN_SHARED_MIDDLE_TOURNAMENT_CYCLE625_NOTE_2026-07-22.md",
+          "ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+          "relevance": "prior physical-menu wall now narrowed by this compiler"
+        },
+        {
+          "line": 65,
+          "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+          "relevance": "Record formation is supplied but its physical formation law is not"
+        },
+        {
+          "line": 37,
+          "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+          "ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+          "relevance": "realized-state evaluation cannot substitute for a selector"
+        }
+      ]
+    },
+    "N7_steelman": {
+      "actionable_test": "compile a local menu-program register and autonomous blank renewal, then require all24/all576, inverse/exhaust, coherent sigma, post-admission preservation, and blinded changed-rho frequencies",
+      "mechanism": "a translation-invariant local apparatus QCA prepares its own menu program and blank ports, runs this dilation, retains all exhaust, objectively actualizes one sector, preserves an admitted Record, renews, and yields blinded frequencies",
+      "openness": "this target-equivalent route is open, so broad negative, shared-obstruction, minimum-content, and axiom-pressure claims do not ship",
+      "supporting_authorities": [
+        {
+          "line": 63,
+          "path": "docs/work_history/repo/review_feedback/PHYSICAL_ADMISSIBILITY_OCCURRENCE_BORN_SHARED_MIDDLE_TOURNAMENT_CYCLE625_NOTE_2026-07-22.md",
+          "ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+          "relevance": "prior physical-menu wall now narrowed by this compiler"
+        },
+        {
+          "line": 65,
+          "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+          "relevance": "Record formation is supplied but its physical formation law is not"
+        },
+        {
+          "line": 37,
+          "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+          "ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+          "relevance": "realized-state evaluation cannot substitute for a selector"
+        }
+      ]
+    },
+    "N8_cross_cycle_echo": [
+      {
+        "applicability": "supports literal local gate cardinality, not menu semantics",
+        "citation_line": 96,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_PROTECTED_SHADOW_COIN_GATE_COMPILER_CYCLE523_NOTE_2026-07-21.md",
+        "citation_ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+        "cycle": "Cycle523",
+        "mechanism": "one-/two-M2 primitive surface",
+        "retired": "SUPPORT_TWO_VOCABULARY_REUSED"
+      },
+      {
+        "applicability": "fixed declared menu now physical; genesis/grade/sigma/Record/Born remain",
+        "citation_line": 63,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_ADMISSIBILITY_OCCURRENCE_BORN_SHARED_MIDDLE_TOURNAMENT_CYCLE625_NOTE_2026-07-22.md",
+        "citation_ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+        "cycle": "Cycle625",
+        "mechanism": "six-layer acceptance contract",
+        "retired": "PHYSICAL_FIXED_MENU_WALL_PARTIALLY_RETIRED"
+      },
+      {
+        "applicability": "Cycle634 exports one-hot labels but no selector",
+        "citation_line": 161,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_ADMISSIBILITY_OCCURRENCE_BORN_SHARED_MIDDLE_TOURNAMENT_CYCLE625_NOTE_2026-07-22.md",
+        "citation_ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+        "cycle": "Cycle625 RouteB",
+        "mechanism": "129-M2 candidate packet interface",
+        "retired": "NOT_ACTUALITY"
+      },
+      {
+        "applicability": "Cycle634 supplies only diagnostic denominator64 counts",
+        "citation_line": 188,
+        "citation_path": "docs/work_history/repo/review_feedback/PHYSICAL_ADMISSIBILITY_OCCURRENCE_BORN_SHARED_MIDDLE_TOURNAMENT_CYCLE625_NOTE_2026-07-22.md",
+        "citation_ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+        "cycle": "Cycle625 RouteC",
+        "mechanism": "531-M2 candidate grade block",
+        "retired": "NOT_BORN"
+      },
+      {
+        "applicability": "no physical compiler back-credit",
+        "citation_line": 60,
+        "citation_path": "docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+        "citation_ref": "2c648ccb408a8c36a700f53ec5401369e3bbd490",
+        "cycle": "PR5472",
+        "mechanism": "conditional effect-menu forcing",
+        "retired": "CLOSED_NONRETAINED_COMPARISON_ONLY"
+      },
+      {
+        "applicability": "no physical compiler back-credit",
+        "citation_line": 17,
+        "citation_path": "docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+        "citation_ref": "a994617819f57e599dd101c654be366123392236",
+        "cycle": "PR5476",
+        "mechanism": "conditional scaled-projector forcing",
+        "retired": "CLOSED_NONRETAINED_COMPARISON_ONLY"
+      },
+      {
+        "applicability": "no physical compiler back-credit",
+        "citation_line": 62,
+        "citation_path": "docs/BORN_FORM_MENU_OUTCOME_THRESHOLD_AND_MIXED_PROJECTIVE_FORCING_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+        "citation_ref": "84053108a424cef26dc23e484549df331ad2050f",
+        "cycle": "PR5479",
+        "mechanism": "conditional mixed-projective forcing",
+        "retired": "CLOSED_NONRETAINED_COMPARISON_ONLY"
+      }
+    ],
+    "Status": "FAIL",
+    "artifact_status": "PASS_NARROW_FIXED_MENU_PHYSICAL_DILATION_ONLY",
+    "axiom_pressure": false,
+    "axiom_pressure_claim": false,
+    "broad_no_go_claim": false,
+    "minimum_content_claim": false,
+    "pass": true,
+    "shared_obstruction_claim": false,
+    "shared_route_independent_obstruction": false
+  },
+  "note_contract": {
+    "missing": [],
+    "pass": true,
+    "required_fragments": [
+      "authority: **none**",
+      "audit: **unset**",
+      "fixed-menu m2 instrument compiler",
+      "no host selects an outcome",
+      "pointer basis states are not records",
+      "not realized frequencies or born probabilities",
+      "comparison-only objects with no back-credit",
+      "claims no general novelty or priority",
+      "cycle634 does not reexecute or claim preservation",
+      "three is below the required five attempts",
+      "all 30 directed pairs",
+      "eight exact same-scope residual rows",
+      "six five-resolution rhetoric rows",
+      "shared route-independent obstruction: **not established**",
+      "axiom pressure: **none**"
+    ]
+  },
+  "note_sha256": "d0b8b3b0cb496a3864320c38f2fd8948a42a03252bf18e1b2389618f76f3cd5c",
+  "optimal_next_campaign": "autonomous bounded menu-program and blank-renewal QCA feeding the unchanged Cycle625 Route-B pointer interface, with retained exhaust and blinded sigma/Record/frequency tests",
+  "pass": true,
+  "physical_controls": {
+    "Cycle634_one_particle_mass_fixture_preservation_claim": false,
+    "blank_ports_are_supplied_genesis": true,
+    "committed_Cycle523_mass_fixture_comparison_only": {
+      "Cycle219_fixture_residual": 2.220446049250313e-16,
+      "compiled_rest_mass": 0.453405654174885,
+      "reexecuted_or_preserved_by_Cycle634": false,
+      "source_line": 30,
+      "source_path": "docs/work_history/repo/review_feedback/PHYSICAL_PROTECTED_SHADOW_COIN_GATE_COMPILER_CYCLE523_NOTE_2026-07-21.md",
+      "source_ref": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79"
+    },
+    "constraints_are_input_code_not_persistent_pointer_constraints": true,
+    "generic_separate_spectator_factor_commutator_residual": 0.0,
+    "generic_spectator_called_Cycle523_mass_fixture": false,
+    "inverse_restores_blank_ports_if_output_is_retained_and_uncomputed": true,
+    "local_auxiliary_code_constraints": [
+      {
+        "all_blank_accepted": true,
+        "autonomous_blank_preparation_or_reset": false,
+        "commuting_support1_constraints": [
+          "Q_0=|0><0| on port 0"
+        ],
+        "each_nonblank_basis_word_refused_by_declared_input_code": true,
+        "ports": 1
+      },
+      {
+        "all_blank_accepted": true,
+        "autonomous_blank_preparation_or_reset": false,
+        "commuting_support1_constraints": [
+          "Q_0=|0><0| on port 0",
+          "Q_1=|0><0| on port 1"
+        ],
+        "each_nonblank_basis_word_refused_by_declared_input_code": true,
+        "ports": 2
+      },
+      {
+        "all_blank_accepted": true,
+        "autonomous_blank_preparation_or_reset": false,
+        "commuting_support1_constraints": [
+          "Q_0=|0><0| on port 0",
+          "Q_1=|0><0| on port 1",
+          "Q_2=|0><0| on port 2"
+        ],
+        "each_nonblank_basis_word_refused_by_declared_input_code": true,
+        "ports": 3
+      },
+      {
+        "all_blank_accepted": true,
+        "autonomous_blank_preparation_or_reset": false,
+        "commuting_support1_constraints": [
+          "Q_0=|0><0| on port 0",
+          "Q_1=|0><0| on port 1",
+          "Q_2=|0><0| on port 2",
+          "Q_3=|0><0| on port 3"
+        ],
+        "each_nonblank_basis_word_refused_by_declared_input_code": true,
+        "ports": 4
+      }
+    ],
+    "no_reset_or_renewal_claim": true,
+    "pass": true,
+    "resource_genesis_ledger": {
+      "derived": [
+        "full local unitary and inverse",
+        "orthogonal pointer-sector Kraus operators",
+        "exact induced effects and presentation comparison",
+        "bounded resource count"
+      ],
+      "open": [
+        "autonomous menu parameter genesis",
+        "blank-port renewal/reset",
+        "objective pointer actuality",
+        "Record admission/permanence",
+        "physical grade output",
+        "frequency/Born meaning"
+      ],
+      "supplied": [
+        "one system M2 and m-1 blank nearest-neighbor apparatus M2 ports",
+        "finite reference star and transported proper-cubic port chart",
+        "effect matrices, outcome labels, compiler order, and fixed gate constants",
+        "mixed-presentation coin preparation and analyzer axes",
+        "diagnostic rho and Route-B/C adapters"
+      ]
+    },
+    "spectator_phase_called_energy_or_rate": false
+  },
+  "prior_art_and_novelty_boundary": {
+    "external_theorem_used_as_runner_evidence": false,
+    "general_novelty_or_priority_claim": false,
+    "repo_specific_contribution": "declared forcing-menu cubic-star compilation with exact proper-cubic/held/deletion/domain controls and typed candidate-only Cycle625 interfaces",
+    "standard_mechanism_classes": [
+      "finite-outcome POVM/Naimark dilation",
+      "sequential binary decompositions",
+      "nonuniqueness of instruments realizing a fixed POVM"
+    ]
+  },
+  "route_by_route_disposition": {
+    "autonomous_menu_program": "OPEN_NOT_ATTEMPTED",
+    "held_size5": "PASS_LOCAL_5M2_FOUR_GATE_DILATION",
+    "mixed_projective_split_merge": "PASS_TWO_3M2_PRESENTATIONS_PLUS_DIRECT_DILATION",
+    "scaled_projector_axis_cancellation": "PASS_LOCAL_4M2_THREE_GATE_DILATION",
+    "ternary_trine": "PASS_LOCAL_3M2_TWO_GATE_DILATION"
+  },
+  "runner_sha256": "ca187b7dda5c2b1b56a63ba960695734fc9915177c2769ef957913a096a74d52",
+  "semantic_promotion_boundary": {
+    "Born_probability": null,
+    "author_artifact_status_accepted": false,
+    "autonomous_menu_family_genesis": null,
+    "breakthrough_bar_met": false,
+    "framework_Record_identification": null,
+    "frequency_meaning": null,
+    "objective_occurrence_selector_sigma": null,
+    "physical_effect_functionality_w": null,
+    "physical_fixed_menu_eligibility": "POSITIVE_ON_DECLARED_2_TO_7_OUTCOME_QUBIT_MENUS",
+    "physical_permanence_and_renewal": null,
+    "realized_history": null
+  },
+  "sequential_compiler": {
+    "compiler_law": "positive-root sequential first-hit dilation F_j=A_j^{-dagger} E_j A_j^{-1}",
+    "effect_identity": "E_j=sum_{pointer patterns with first hit j} K_p^dagger K_p; final E is all-zero pattern",
+    "families": {
+      "held_size5_split_trine": {
+        "all_orderings_effect_residual": 0.0,
+        "all_orderings_tested": 0,
+        "binary_dilation_primitive_lowering_residual": 3.3432592853008993e-16,
+        "binary_neighbor_gates": 4,
+        "blank_code_norm_residual": 4.440892098500626e-16,
+        "bounded_M2_system_plus_apparatus": 5,
+        "conditional_effect_maximum_eigenvalue": 1.0000000000000009,
+        "conditional_effect_minimum_eigenvalue": 0.0,
+        "constant_overhead_per_menu_cell": true,
+        "deletion_residuals": [
+          0.22222222222222224,
+          0.22222222222222224,
+          0.22222222222222224,
+          0.6666666666666667
+        ],
+        "effect_covariance_residual": 1.0389119849885098e-15,
+        "effect_sum_residual": 5.551115123125783e-17,
+        "exact_effect_identity_residual": 9.216141886893362e-16,
+        "global_parity_or_order_service": false,
+        "host_outcome_selection": false,
+        "input_auxiliary_constraints": [
+          "port_0: |0><0|",
+          "port_1: |0><0|",
+          "port_2: |0><0|",
+          "port_3: |0><0|"
+        ],
+        "input_constraint_autonomous_genesis": false,
+        "input_constraint_support_M2": 1,
+        "inverse_residual": 1.72305594371255e-15,
+        "later_gates_always_execute_after_first_hit": true,
+        "literal_adjacent_CNOT_calls": 8,
+        "literal_gate_calls": 24,
+        "literal_one_M2_calls": 16,
+        "maximum_gate_support_M2": 2,
+        "nearest_neighbor_star": true,
+        "outcomes": 5,
+        "pass": true,
+        "pointer_completeness_residual": 1.226742014281567e-15,
+        "pointer_states_called_Records": false,
+        "port_positions_reference_chart": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            -1,
+            0
+          ]
+        ],
+        "proper_cubic_frames": 24,
+        "unitarity_residual": 1.72305594371255e-15,
+        "unitary_covariance_residual": 2.8715411621283884e-15
+      },
+      "mixed_projective_merge": {
+        "all_orderings_effect_residual": 1.2412670766236366e-16,
+        "all_orderings_tested": 2,
+        "binary_dilation_primitive_lowering_residual": 3.2015744635877256e-16,
+        "binary_neighbor_gates": 1,
+        "blank_code_norm_residual": 0.0,
+        "bounded_M2_system_plus_apparatus": 2,
+        "conditional_effect_maximum_eigenvalue": 0.8535533905932737,
+        "conditional_effect_minimum_eigenvalue": 0.14644660940672627,
+        "constant_overhead_per_menu_cell": true,
+        "deletion_residuals": [
+          0.8535533905932738
+        ],
+        "effect_covariance_residual": 9.176653438305597e-16,
+        "effect_sum_residual": 0.0,
+        "exact_effect_identity_residual": 1.2412670766236366e-16,
+        "global_parity_or_order_service": false,
+        "host_outcome_selection": false,
+        "input_auxiliary_constraints": [
+          "port_0: |0><0|"
+        ],
+        "input_constraint_autonomous_genesis": false,
+        "input_constraint_support_M2": 1,
+        "inverse_residual": 1.4079910847138678e-16,
+        "later_gates_always_execute_after_first_hit": true,
+        "literal_adjacent_CNOT_calls": 2,
+        "literal_gate_calls": 6,
+        "literal_one_M2_calls": 4,
+        "maximum_gate_support_M2": 2,
+        "nearest_neighbor_star": true,
+        "outcomes": 2,
+        "pass": true,
+        "pointer_completeness_residual": 2.7755575615628914e-17,
+        "pointer_states_called_Records": false,
+        "port_positions_reference_chart": [
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "proper_cubic_frames": 24,
+        "unitarity_residual": 1.4079910847138678e-16,
+        "unitary_covariance_residual": 9.553509686418514e-16
+      },
+      "scaled_axis_cancellation": {
+        "all_orderings_effect_residual": 1.9429260955662208e-15,
+        "all_orderings_tested": 24,
+        "binary_dilation_primitive_lowering_residual": 2.7010673732317743e-16,
+        "binary_neighbor_gates": 3,
+        "blank_code_norm_residual": 5.551115123125783e-16,
+        "bounded_M2_system_plus_apparatus": 4,
+        "conditional_effect_maximum_eigenvalue": 1.0,
+        "conditional_effect_minimum_eigenvalue": -1.968140395673395e-16,
+        "constant_overhead_per_menu_cell": true,
+        "deletion_residuals": [
+          0.7320508075688773,
+          0.4226497308103743,
+          0.4226497308103743
+        ],
+        "effect_covariance_residual": 1.1400277041730844e-15,
+        "effect_sum_residual": 3.925231146709438e-17,
+        "exact_effect_identity_residual": 1.039285451371306e-15,
+        "global_parity_or_order_service": false,
+        "host_outcome_selection": false,
+        "input_auxiliary_constraints": [
+          "port_0: |0><0|",
+          "port_1: |0><0|",
+          "port_2: |0><0|"
+        ],
+        "input_constraint_autonomous_genesis": false,
+        "input_constraint_support_M2": 1,
+        "inverse_residual": 1.4209641213831122e-15,
+        "later_gates_always_execute_after_first_hit": true,
+        "literal_adjacent_CNOT_calls": 6,
+        "literal_gate_calls": 18,
+        "literal_one_M2_calls": 12,
+        "maximum_gate_support_M2": 2,
+        "nearest_neighbor_star": true,
+        "outcomes": 4,
+        "pass": true,
+        "pointer_completeness_residual": 1.1523516489855886e-15,
+        "pointer_states_called_Records": false,
+        "port_positions_reference_chart": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "proper_cubic_frames": 24,
+        "unitarity_residual": 1.4209641213831122e-15,
+        "unitary_covariance_residual": 2.389447738741372e-15
+      },
+      "ternary_trine": {
+        "all_orderings_effect_residual": 5.601169496965694e-16,
+        "all_orderings_tested": 6,
+        "binary_dilation_primitive_lowering_residual": 2.687623121107389e-16,
+        "binary_neighbor_gates": 2,
+        "blank_code_norm_residual": 2.220446049250313e-16,
+        "bounded_M2_system_plus_apparatus": 3,
+        "conditional_effect_maximum_eigenvalue": 1.0000000000000002,
+        "conditional_effect_minimum_eigenvalue": 0.0,
+        "constant_overhead_per_menu_cell": true,
+        "deletion_residuals": [
+          0.6666666666666666,
+          0.6666666666666667
+        ],
+        "effect_covariance_residual": 4.440892098500626e-16,
+        "effect_sum_residual": 5.551115123125783e-17,
+        "exact_effect_identity_residual": 3.1872601151527685e-16,
+        "global_parity_or_order_service": false,
+        "host_outcome_selection": false,
+        "input_auxiliary_constraints": [
+          "port_0: |0><0|",
+          "port_1: |0><0|"
+        ],
+        "input_constraint_autonomous_genesis": false,
+        "input_constraint_support_M2": 1,
+        "inverse_residual": 5.69101379331002e-16,
+        "later_gates_always_execute_after_first_hit": true,
+        "literal_adjacent_CNOT_calls": 4,
+        "literal_gate_calls": 12,
+        "literal_one_M2_calls": 8,
+        "maximum_gate_support_M2": 2,
+        "nearest_neighbor_star": true,
+        "outcomes": 3,
+        "pass": true,
+        "pointer_completeness_residual": 4.900761532559245e-16,
+        "pointer_states_called_Records": false,
+        "port_positions_reference_chart": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            0
+          ]
+        ],
+        "proper_cubic_frames": 24,
+        "unitarity_residual": 5.69101379331002e-16,
+        "unitary_covariance_residual": 7.616596870222824e-16
+      }
+    },
+    "frame_group_failures": 0,
+    "held_size_tested": 5,
+    "malformed_rows": [
+      {
+        "name": "negative_effect",
+        "refused": true
+      },
+      {
+        "name": "nonnormalized_sum",
+        "refused": true
+      },
+      {
+        "name": "nonhermitian",
+        "refused": true
+      },
+      {
+        "name": "too_many_outcomes_for_six_neighbors",
+        "refused": true
+      }
+    ],
+    "ordered_frame_products": 576,
+    "pass": true,
+    "proper_cubic_frames": 24,
+    "runtime_schedule": "every fixed neighbor gate executes; no pointer bit controls whether a later gate runs",
+    "singular_intermediate_remainder_control": {
+      "Moore_Penrose_support_extension": true,
+      "effect_identity_residual": 1.1102230246251565e-16,
+      "intermediate_remainder_is_rank_one": true,
+      "inverse_residual": 4.756613696065403e-18,
+      "menu": "P_z, 0.4 P_-z, 0.6 P_-z"
+    }
+  },
+  "shared_substrate_obstruction": false,
+  "shore": {
+    "Cycle625_interface": {
+      "Route_B_bounded_M2": 129,
+      "Route_B_coherent_sectors": 6,
+      "Route_B_runtime_actuality_token": false,
+      "Route_C_bounded_M2": 531,
+      "Route_C_called_Born": false
+    },
+    "committed_shore_head": "1d3d7a005bc74256ac23b9ace7b2669a45a9fc79",
+    "expected_sha256": {
+      "docs/MINIMAL_AXIOMS_2026-06-29.md": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+      "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "docs/work_history/repo/review_feedback/PHYSICAL_ADMISSIBILITY_OCCURRENCE_BORN_SHARED_MIDDLE_TOURNAMENT_CYCLE625_NOTE_2026-07-22.md": "190ed6dfc5502a0d8d68c665501fe4f009d21fb2aad4bc0b71e9f96a9856552d",
+      "docs/work_history/repo/review_feedback/PHYSICAL_PROTECTED_SHADOW_COIN_GATE_COMPILER_CYCLE523_NOTE_2026-07-21.md": "a8fc040d97e019214000eec4bdef702f259b9f30c011b77c97261e5c1288cf20",
+      "outputs/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_receipt_2026_07_22.json": "a867cbeed66052da8cb85e8867a55802d27bfca586c9db805aa1649a6f0c7560",
+      "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py": "a618b5803cc1313a3dd644e3e066bb987bf366d8215a50a43d4260c69847b9e9",
+      "scripts/physical_protected_shadow_coin_gate_compiler_cycle523_2026_07_21.py": "d9dd02bbb4dfacebf0f75f6b8c56881ff56653843cb7ed75baa381d5aa605b9d"
+    },
+    "observed_sha256": {
+      "docs/MINIMAL_AXIOMS_2026-06-29.md": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+      "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "docs/work_history/repo/review_feedback/PHYSICAL_ADMISSIBILITY_OCCURRENCE_BORN_SHARED_MIDDLE_TOURNAMENT_CYCLE625_NOTE_2026-07-22.md": "190ed6dfc5502a0d8d68c665501fe4f009d21fb2aad4bc0b71e9f96a9856552d",
+      "docs/work_history/repo/review_feedback/PHYSICAL_PROTECTED_SHADOW_COIN_GATE_COMPILER_CYCLE523_NOTE_2026-07-21.md": "a8fc040d97e019214000eec4bdef702f259b9f30c011b77c97261e5c1288cf20",
+      "outputs/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_receipt_2026_07_22.json": "a867cbeed66052da8cb85e8867a55802d27bfca586c9db805aa1649a6f0c7560",
+      "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py": "a618b5803cc1313a3dd644e3e066bb987bf366d8215a50a43d4260c69847b9e9",
+      "scripts/physical_protected_shadow_coin_gate_compiler_cycle523_2026_07_21.py": "d9dd02bbb4dfacebf0f75f6b8c56881ff56653843cb7ed75baa381d5aa605b9d"
+    },
+    "pass": true,
+    "working_tree_bytes_used_as_premise": false,
+    "working_tree_comparison_sha256": {
+      "docs/MINIMAL_AXIOMS_2026-06-29.md": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+      "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "docs/work_history/repo/review_feedback/PHYSICAL_ADMISSIBILITY_OCCURRENCE_BORN_SHARED_MIDDLE_TOURNAMENT_CYCLE625_NOTE_2026-07-22.md": "190ed6dfc5502a0d8d68c665501fe4f009d21fb2aad4bc0b71e9f96a9856552d",
+      "docs/work_history/repo/review_feedback/PHYSICAL_PROTECTED_SHADOW_COIN_GATE_COMPILER_CYCLE523_NOTE_2026-07-21.md": "a8fc040d97e019214000eec4bdef702f259b9f30c011b77c97261e5c1288cf20",
+      "outputs/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_receipt_2026_07_22.json": "a867cbeed66052da8cb85e8867a55802d27bfca586c9db805aa1649a6f0c7560",
+      "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py": "a618b5803cc1313a3dd644e3e066bb987bf366d8215a50a43d4260c69847b9e9",
+      "scripts/physical_protected_shadow_coin_gate_compiler_cycle523_2026_07_21.py": "d9dd02bbb4dfacebf0f75f6b8c56881ff56653843cb7ed75baa381d5aa605b9d"
+    }
+  },
+  "six_layer_contract": {
+    "candidate_counts_are_Born_or_frequency": false,
+    "effect_identity_independent_of_grade": true,
+    "layers": [
+      {
+        "Cycle634_closure": false,
+        "layer": "conditional_form_forcing_theorem",
+        "remaining_import": "none consumed as a premise",
+        "status": "COMPARISON_ONLY_NO_BACK_CREDIT"
+      },
+      {
+        "Cycle634_closure": true,
+        "layer": "physically_supplied_menu_eligibility",
+        "remaining_import": "which menu/family and its physical parameter genesis",
+        "status": "POSITIVE_FOR_DECLARED_FIXED_COMPILED_MENUS"
+      },
+      {
+        "Cycle634_closure": false,
+        "layer": "effect_functionality_candidate_grade_w",
+        "remaining_import": "physical grade output and state/calibration genesis",
+        "status": "ALGEBRAIC_DIAGNOSTIC_ONLY"
+      },
+      {
+        "Cycle634_closure": false,
+        "layer": "occurrence_selector_sigma",
+        "remaining_import": "objective occurrence selector sigma",
+        "status": "OPEN_POINTER_SECTORS_REMAIN_COHERENT"
+      },
+      {
+        "Cycle634_closure": false,
+        "layer": "Record_and_permanence",
+        "remaining_import": "Record identification, permanence, readability, renewal",
+        "status": "OPEN_POINTER_IS_NOT_RECORD"
+      },
+      {
+        "Cycle634_closure": false,
+        "layer": "frequency_and_Born_meaning",
+        "remaining_import": "realized corpus, frequency law, Born meaning",
+        "status": "OPEN_HOST_DIAGNOSTIC_COUNTS_ONLY"
+      }
+    ],
+    "menu_family_genesis_derived": false,
+    "pass": true,
+    "physical_menu_eligibility_narrow_positive": true,
+    "pointer_port_is_Record": false,
+    "pointer_port_is_occurrence": false
+  },
+  "six_wall_ledger": {
+    "C_int": "literal support-two system-apparatus unitary; supplied gate constants and no new interaction/generator/rate law",
+    "C_local": "bounded star through seven outcomes with inverse/deletion/malformed/held/all24/all576; infinite/noisy deployment open",
+    "C_num": "exact finite effect identities and algebraic candidate w; no physical grade, frequency, or Born meaning",
+    "C_ref": "fixed reference-star menus now have covariant physical dilations; chart/menu genesis remains supplied",
+    "C_source": "blank capacity and coin exhaust explicit; no energy/stress/source/gravity meaning or autonomous genesis",
+    "C_wrap": "local pointer ports are physical; sigma, Record/permanence, renewal, and history remain open"
+  },
+  "status": "positive bounded fixed-menu M2 instrument compiler; menu genesis, grade, sigma, Record, and Born meaning remain supplied/open",
+  "strongest_constructive_result": "a reusable positive-root sequential compiler realizing declared 2..7-outcome qubit effect menus on one system M2 plus bounded nearest-neighbor pointer M2s with exact local effect identities",
+  "tests_failed": 0,
+  "tests_passed": 9
+}

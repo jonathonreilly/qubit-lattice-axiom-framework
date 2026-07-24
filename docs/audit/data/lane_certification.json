@@ -2228,10 +2228,6 @@
           "effective_status": "unaudited"
         },
         {
-          "claim_id": "staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_narrow_theorem_note_2026-05-17",
-          "effective_status": "unaudited"
-        },
-        {
           "claim_id": "staggered_dirac_substep4_amin_joint_c3_automorphism_selector_invariance_bridge_narrow_theorem_note_2026-07-05",
           "effective_status": "unaudited"
         },
@@ -2748,7 +2744,7 @@
       "roots": [
         "strong_cp_theta_zero_note"
       ],
-      "uncertified_count": 630
+      "uncertified_count": 629
     }
   ],
   "schema": "lane_certification_v2"

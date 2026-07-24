@@ -814,7 +814,6 @@
    "verdict_frame_invariance",
    "decoder_blindness_discipline"
   ],
-  "cycle": 679,
   "date": "2026-07-23",
   "expected_verdicts": {
    "antipodal": "off_family",
@@ -1037,9 +1036,8 @@
   "train_max_weight": 3,
   "worker_grid_file": "finite_proper_cubic_admission_table_discriminator_independent_grid_2026_07_23.json"
  },
- "cycle": 679,
  "date": "2026-07-23",
- "elapsed_seconds": 8.249,
+ "elapsed_seconds": 8.407,
  "fail_count": 0,
  "frame_invariance": {
   "antipodal": {
@@ -1055,7 +1053,7 @@
    "matches": 24
   }
  },
- "frozen_contract_sha256": "f723c695b28b98b4f692a08bab6cad6747b0d73cd1cf0686fed5d2fd0b7a1707",
+ "frozen_contract_sha256": "23415f9ce9d54c7b78a5bceeffc7fe6396347bda62f45566399e8a88146b3743",
  "identification_table": {
   "antipodal": {
    "correct": true,

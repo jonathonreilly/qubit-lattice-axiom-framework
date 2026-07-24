@@ -51,14 +51,11 @@ from itertools import combinations, permutations, product
 from pathlib import Path
 
 # ---- header constants (frozen)
-FROZEN_CONTRACT_SHA256 = "f723c695b28b98b4f692a08bab6cad6747b0d73cd1cf0686fed5d2fd0b7a1707"
-CYCLE = 679
+FROZEN_CONTRACT_SHA256 = "23415f9ce9d54c7b78a5bceeffc7fe6396347bda62f45566399e8a88146b3743"
 DATE = "2026-07-23"
 AUTHORITY = "none"
 AUDIT = "unset"
 
-# Descriptive filenames (owner directive 2026-07-23): no cycle numbers in
-# note/runner/receipt filenames; the claimed cycle lives in contract/receipt.
 ROOT = Path(__file__).resolve().parents[1]
 RECEIPT_PATH = ROOT / "outputs" / (
     "finite_proper_cubic_admission_table_discriminator_receipt_2026_07_23.json"
@@ -722,7 +719,6 @@ def build_malformed_streams():
 def contract():
     """The frozen contract: only JSON-native types (no timestamps, no env)."""
     return {
-        "cycle": CYCLE,
         "date": DATE,
         "authority": AUTHORITY,
         "audit": AUDIT,
@@ -1143,7 +1139,6 @@ def main(argv):
         "not about any physical channel; no gravity content.",
     ]
     receipt.update({
-        "cycle": CYCLE,
         "date": DATE,
         "authority": AUTHORITY,
         "audit": AUDIT,

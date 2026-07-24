@@ -1,9 +1,10 @@
 {
   "audit_date": null,
   "audit_invocation_history": [
-    "1cf441294f464c94a9690a63f1fdd64c"
+    "1cf441294f464c94a9690a63f1fdd64c",
+    "133000f731bc4489895486b968374503"
   ],
-  "audit_invocation_id": "1cf441294f464c94a9690a63f1fdd64c",
+  "audit_invocation_id": "133000f731bc4489895486b968374503",
   "audit_state_snapshot": null,
   "audit_status": "audit_in_progress",
   "auditor": null,
@@ -11,7 +12,7 @@
   "auditor_family": null,
   "auditor_model": null,
   "auditor_reasoning_effort": null,
-  "blocker": "awaiting_cross_confirmation",
+  "blocker": "cross_confirmation_disagreement",
   "chain_closes": null,
   "chain_closure_explanation": null,
   "claim_id": "su3_wigner_intertwiner_block1_theorem_note_2026-05-03",
@@ -51,8 +52,35 @@
       "verdict": "audited_clean",
       "verdict_rationale": "The runner genuinely constructs the Gell-Mann, adjoint, tensor-product, exchange, and Casimir operators rather than merely printing expected results. It computes the spectral blocks and tests ranks, scalar actions, completeness, an independent polynomial construction, hostile controls, and seeded equivariance. The exact conclusion is correctly based on the stated representation-theory identities and functional calculus, not on floating-point residuals alone."
     },
-    "second_audit": null,
-    "status": "awaiting_second"
+    "second_audit": {
+      "audit_date": "2026-07-24T00:25:35.827366+00:00",
+      "audit_invocation_id": "133000f731bc4489895486b968374503",
+      "auditor": "codex-audit-batch-B-20260724-baf90f47",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "chain_closes": false,
+      "chain_closure_explanation": "The exact projector algebra closes conditional on the stated SU(3) decomposition and Casimir data, but the packet supplies neither a cited authority nor a self-contained exact derivation for those load-bearing inputs.",
+      "claim_scope": "Finite-dimensional SU(3) adjoint tensor-square decomposition and joint projectors, audited conditional on the stated Littlewood\u2013Richardson and Casimir inputs, with the numerical CG witness consistency-checked.",
+      "claim_type": "positive_theorem",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The asserted Littlewood\u2013Richardson decomposition and exact Casimir spectrum imply the six joint spectral projectors through the displayed invariant polynomials.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "notes_for_re_audit_if_any": "other: add a cited mathematical authority for the Littlewood\u2013Richardson product and Casimir theorems, or supply a self-contained exact character/weight derivation and centrality proof; this is a pure mathematical proof obligation rather than a physical bridge.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict": "audited_conditional",
+      "verdict_rationale": "Issue: The exact Littlewood\u2013Richardson decomposition and Casimir spectrum/centrality are named as standard inputs, while the restricted packet supplies neither an authority nor a self-contained exact derivation. Why this blocks: the complex128 runner checks the asserted spectral data and conditional polynomial identities to tolerance, but finite numerical agreement cannot discharge the exact decomposition and irreducibility leaf. Repair target: cite an appropriate mathematical authority or add an exact character/weight derivation with centrality proof. Claim boundary until fixed: the finite numerical witness is reproducible, and the displayed projector and H arithmetic is correct conditional on the stated representation-theory inputs."
+    },
+    "status": "disagreement"
   },
   "decoration_parent_claim_id": null,
   "deps": [],

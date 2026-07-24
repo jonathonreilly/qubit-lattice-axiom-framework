@@ -42,14 +42,21 @@ eligible to every surviving worker.
 - Run at most one orchestrator in any clone. The clone-wide lock covers all
   worktrees of that clone.
 - Independent clones may run concurrently. Every apply transaction first
-  synchronizes to `origin/main` and compares the current claim, dependency,
-  source-file, and alternate-source selection fingerprints with the state
-  seen by the restricted seat. If anything moved, the stale delivery is
-  discarded as `remote_state_superseded`; it mints no verdict and creates no
-  quarantine.
+  synchronizes to `origin/main` and compares the current ledger provenance,
+  exact packet evidence manifest, dependency note bytes, runner/helper inputs,
+  computed seat role/independence/passes, and alternate-source selection with
+  the state seen by the restricted seat. The cascade source must exactly match
+  a pure recomputation from current ledger and runner bytes. If anything
+  moved, the stale delivery is discarded as `remote_state_superseded`; it
+  mints no verdict and creates no quarantine.
 - Different claims still commit one at a time per clone. A push race is
   reconciled against the intended commit and replayed from current
-  `origin/main`; never hand-merge generated audit state.
+  `origin/main`; never hand-merge generated audit state. If the remote outcome
+  cannot be reconciled, preserve the intended local commit and stop instead of
+  resetting or replaying an uncertain push.
+- Primary and helper runners execute in disposable isolated worktrees. Their
+  process groups are terminated and the whole worktree is discarded; runner
+  cleanup never deletes deltas observed in the canonical committer checkout.
 - Use unique worker ids. Reusing an id is safe but defeats target dispersion
   and wastes seats.
 - Keep the combined repository-wide load near 8-10 active Codex processes,
@@ -94,4 +101,7 @@ Schema-invalid, compute-required, and verified claim-transaction failures
 exclude only their claim for the current campaign. The coordinator continues
 to the next unrelated row. A successfully applied non-clean forensic verdict
 that immediately re-enters unchanged is durably excluded from that campaign
-so it cannot consume the next forensic seat before source repair.
+so it cannot consume the next forensic seat before source repair. A newly
+written exclusion counts as operational progress: the supervisor starts
+another bounded batch even when that round landed no Git commit, and declares
+a lane fixed point only after both HEAD and the exclusion set remain stable.

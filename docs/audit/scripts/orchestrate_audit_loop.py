@@ -108,6 +108,13 @@ def campaign_exclusion_counts() -> Counter:
     return Counter(reason for _cid, reason in pairs)
 
 
+def campaign_exclusion_keys(path: Path | None) -> set[tuple[str, str]]:
+    return {
+        (record["claim_id"], record["reason"])
+        for record in batch.load_campaign_exclusion_records(path)
+    }
+
+
 def campaign_exclusion_count(reason: str) -> int:
     return campaign_exclusion_counts()[reason]
 
@@ -387,6 +394,9 @@ def drain_lane(
             emit(f"STOP lane cycle safety bound reached: lane={label}")
             return 4, made_progress
         before = git_head()
+        before_exclusions = campaign_exclusion_keys(
+            getattr(args, "campaign_quarantine_file", None)
+        )
         batch_rc = run_command(
             f"batch-{label}-cycle-{cycle}",
             batch_command(lane, args, source=source),
@@ -401,7 +411,10 @@ def drain_lane(
         if batch_rc != 0:
             return batch_rc, made_progress
         after = git_head()
-        if after == before:
+        after_exclusions = campaign_exclusion_keys(
+            getattr(args, "campaign_quarantine_file", None)
+        )
+        if after == before and after_exclusions == before_exclusions:
             return 0, made_progress
         made_progress = True
         if args.dry_run:
@@ -499,6 +512,8 @@ def forensic_canary_terminal_record(
         "skip_prompt_transport",
         "skip_role",
         "weak_clean_unratifiable",
+        "remote_state_superseded",
+        "source_refresh_failed",
         "dry-run",
     }
     return next(
@@ -650,7 +665,7 @@ def run_forensic_canary(
         if rc != 0:
             return rc
         terminal_phase = terminal.get("phase") if terminal else None
-        if terminal_phase == "applied" or (
+        if terminal_phase in {"applied", "remote_state_superseded"} or (
             args.dry_run and terminal_phase == "dry-run"
         ):
             return 0
@@ -936,6 +951,15 @@ def main(argv: list[str] | None = None) -> int:
                     return 2
                 forensic_after = git_head()
                 canary_claim = PROGRESS.get("last_canary_claim_id")
+                if (
+                    PROGRESS.get("last_canary_terminal_phase")
+                    == "remote_state_superseded"
+                ):
+                    emit(
+                        "forensic seat was superseded by remote source/state "
+                        "movement; returning to development for fresh selection"
+                    )
+                    continue
                 if forensic_after != forensic_before:
                     if isinstance(canary_claim, str) and canary_claim:
                         current_rows = batch.load_rows()

@@ -2744,7 +2744,7 @@ class ClaimTransactionTest(unittest.TestCase):
         reset.assert_called_once_with()
         self.assertEqual({item["commit"] for item in results}, {"commit-2"})
 
-    def test_push_race_cancellation_rolls_back_local_commit(self):
+    def test_indeterminate_push_cancellation_preserves_local_commit(self):
         cancel = threading.Event()
         row = {"claim_id": "row", "criticality": "high"}
         deliveries = [(
@@ -2780,8 +2780,72 @@ class ClaimTransactionTest(unittest.TestCase):
             del batch._COMMAND_CONTEXT.cancel_event
 
         self.assertFalse(ok)
-        self.assertEqual(results[0]["result"], "commit_cancelled")
-        reset.assert_called_once_with()
+        self.assertEqual(
+            results[0]["result"],
+            batch.PUSH_RECONCILIATION_REQUIRED_RESULT,
+        )
+        self.assertEqual(results[0]["commit"], "local-commit")
+        reset.assert_not_called()
+
+    def test_indeterminate_push_and_failed_fetch_preserves_intended_oid(self):
+        row = {"claim_id": "row", "criticality": "high"}
+        deliveries = [(
+            {"cid": "row", "pass": 1, "row": row},
+            {"audit": {"verdict": "audited_clean"}, "evidence_manifest": {}},
+        )]
+        commands = [
+            subprocess.CompletedProcess(["git", "push"], 1, "", "lost response"),
+            subprocess.CompletedProcess(["git", "fetch"], 1, "", "offline"),
+        ]
+        with mock.patch.object(
+            batch, "sync_origin_main", return_value=(True, "base")
+        ), mock.patch.object(
+            batch.audit_runner, "apply_one", return_value=(True, "applied")
+        ), mock.patch.object(
+            batch, "run_generated_gates", return_value=(True, "gated")
+        ), mock.patch.object(
+            batch, "stage_and_commit", return_value=(True, "intended-commit")
+        ), mock.patch.object(
+            batch, "reset_to_origin_main", return_value=(True, "reset")
+        ) as reset, mock.patch.object(batch, "sh", side_effect=commands):
+            ok, results = batch.apply_claim_serialized(deliveries, retries=3)
+
+        self.assertFalse(ok)
+        self.assertEqual(
+            results[0]["result"],
+            batch.PUSH_RECONCILIATION_REQUIRED_RESULT,
+        )
+        self.assertEqual(results[0]["commit"], "intended-commit")
+        reset.assert_not_called()
+
+    def test_nonzero_push_is_success_when_exact_intended_oid_landed(self):
+        row = {"claim_id": "row", "criticality": "high"}
+        deliveries = [(
+            {"cid": "row", "pass": 1, "row": row},
+            {"audit": {"verdict": "audited_clean"}, "evidence_manifest": {}},
+        )]
+        commands = [
+            subprocess.CompletedProcess(["git", "push"], 1, "", "lost response"),
+            subprocess.CompletedProcess(["git", "fetch"], 0, "", ""),
+            subprocess.CompletedProcess(["git", "merge-base"], 0, "", ""),
+        ]
+        with mock.patch.object(
+            batch, "sync_origin_main", return_value=(True, "base")
+        ), mock.patch.object(
+            batch.audit_runner, "apply_one", return_value=(True, "applied")
+        ), mock.patch.object(
+            batch, "run_generated_gates", return_value=(True, "gated")
+        ), mock.patch.object(
+            batch, "stage_and_commit", return_value=(True, "intended-commit")
+        ), mock.patch.object(
+            batch, "reset_to_origin_main", return_value=(True, "reset")
+        ) as reset, mock.patch.object(batch, "sh", side_effect=commands):
+            ok, results = batch.apply_claim_serialized(deliveries, retries=3)
+
+        self.assertTrue(ok)
+        self.assertEqual(results[0]["result"], "audited_clean")
+        self.assertEqual(results[0]["commit"], "intended-commit")
+        reset.assert_not_called()
 
     def test_terminal_push_race_rolls_back_local_commit(self):
         row = {"claim_id": "row", "criticality": "high"}
@@ -2859,8 +2923,227 @@ class AutomaticPanelResumeTest(unittest.TestCase):
             ["batch-lane_a-cycle-1", "panel-after-lane_a-cycle-1"],
         )
 
+    def test_quarantine_only_batch_progress_resumes_until_stable(self):
+        args = _args()
+        heads = iter(["same", "same", "same", "same"])
+        record = {
+            "claim_id": "quarantined",
+            "reason": batch.COMPUTE_QUARANTINE_RESULT,
+        }
+        exclusions = iter([[], [record], [record], [record]])
+        labels: list[str] = []
+
+        def fake_run(label, command, env=None):
+            labels.append(label)
+            return 0
+
+        with mock.patch.object(
+            audit_loop, "git_head", side_effect=lambda: next(heads)
+        ), mock.patch.object(
+            audit_loop, "run_command", side_effect=fake_run
+        ), mock.patch.object(
+            batch,
+            "load_campaign_exclusion_records",
+            side_effect=lambda _path: next(exclusions),
+        ):
+            rc, progressed = audit_loop.drain_lane("lane_a", args)
+
+        self.assertEqual(rc, 0)
+        self.assertTrue(progressed)
+        self.assertEqual(
+            labels,
+            [
+                "batch-lane_a-cycle-1",
+                "panel-after-lane_a-cycle-1",
+                "batch-lane_a-cycle-2",
+                "panel-after-lane_a-cycle-2",
+            ],
+        )
+
 
 class CampaignContractTest(unittest.TestCase):
+    def test_packet_fingerprint_normalizes_transport_bounded_virtual_index(self):
+        row = {"claim_id": "target", "deps": []}
+        rows = {"target": row}
+        full_text = '{"candidates":[{"candidate_id":"one"}]}'
+        unbounded = {
+            "audit-packet://cross-cycle-index/target": {
+                "path": "audit-packet://cross-cycle-index/target",
+                "roles": ["cross_cycle_index"],
+                "text": full_text,
+            }
+        }
+        bounded = {
+            "audit-packet://cross-cycle-index/target": {
+                "path": "audit-packet://cross-cycle-index/target",
+                "roles": ["cross_cycle_index"],
+                "text": '{"candidates":[]}',
+                "transport_bounded_full_content_sha256": hashlib.sha256(
+                    full_text.encode("utf-8")
+                ).hexdigest(),
+                "transport_bounded_full_candidate_count": 1,
+                "transport_bounded_rendered_candidate_count": 0,
+                "transport_bounded_rendered_candidate_ids": [],
+            }
+        }
+        with tempfile.TemporaryDirectory() as tmp, mock.patch.object(
+            batch.audit_runner,
+            "REPO_ROOT",
+            Path(tmp),
+        ), mock.patch.object(
+            batch.audit_runner,
+            "PROMPT_TEMPLATE_PATH",
+            Path(tmp) / "missing-template",
+        ):
+            expected = batch.audit_runner.audit_packet_source_fingerprint(
+                row,
+                rows,
+                unbounded,
+            )
+            actual = batch.audit_runner.audit_packet_source_fingerprint(
+                row,
+                rows,
+                bounded,
+            )
+
+        self.assertEqual(actual, expected)
+
+    def test_packet_fingerprint_binds_dependency_bytes_and_seat_provenance(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "docs").mkdir()
+            (root / "scripts").mkdir()
+            (root / "docs" / "target.md").write_text("target", encoding="utf-8")
+            dependency = root / "docs" / "dependency.md"
+            dependency.write_text("dependency v1", encoding="utf-8")
+            runner = root / "scripts" / "runner.py"
+            runner.write_text(
+                "AUDIT_INPUT_PATHS = ('docs/input.json',)\n",
+                encoding="utf-8",
+            )
+            (root / "docs" / "input.json").write_text("input v1", encoding="utf-8")
+            prompt_template = root / "prompt.md"
+            prompt_template.write_text("prompt", encoding="utf-8")
+            rows = {
+                "target": {
+                    "claim_id": "target",
+                    "note_path": "docs/target.md",
+                    "runner_path": "scripts/runner.py",
+                    "deps": ["dependency"],
+                    "criticality": "high",
+                    "claim_type": "bounded_theorem",
+                    "audit_status": "unaudited",
+                    "author_family": "claude",
+                },
+                "dependency": {
+                    "claim_id": "dependency",
+                    "note_path": "docs/dependency.md",
+                    "effective_status": "retained",
+                },
+            }
+            manifest = {
+                "docs/target.md": {
+                    "path": "docs/target.md",
+                    "roles": ["source"],
+                    "text": "target",
+                },
+                "docs/dependency.md": {
+                    "path": "docs/dependency.md",
+                    "roles": ["authority"],
+                    "text": "dependency v1",
+                },
+                "scripts/runner.py": {
+                    "path": "scripts/runner.py",
+                    "roles": ["runner"],
+                    "text": runner.read_text(encoding="utf-8"),
+                },
+                "audit-packet://cross-cycle-index/target": {
+                    "path": "audit-packet://cross-cycle-index/target",
+                    "roles": ["cross_cycle_index"],
+                    "text": "virtual evidence v1",
+                },
+            }
+            with mock.patch.object(
+                batch.audit_runner, "REPO_ROOT", root
+            ), mock.patch.object(
+                batch.audit_runner, "PROMPT_TEMPLATE_PATH", prompt_template
+            ):
+                first = batch.selection_fingerprint(
+                    rows["target"],
+                    rows,
+                    manifest,
+                )
+                dependency.write_text("dependency v2", encoding="utf-8")
+                dependency_changed = batch.selection_fingerprint(
+                    rows["target"],
+                    rows,
+                    manifest,
+                )
+                rows["target"]["author_family"] = "codex-gpt-5.6"
+                provenance_changed = batch.selection_fingerprint(
+                    rows["target"],
+                    rows,
+                    manifest,
+                )
+
+            self.assertNotEqual(first, dependency_changed)
+            self.assertNotEqual(dependency_changed, provenance_changed)
+
+    def test_forensic_precondition_discards_remote_head_movement(self):
+        row = {"claim_id": "row"}
+        commands = [
+            subprocess.CompletedProcess(["git", "fetch"], 0, "", ""),
+            subprocess.CompletedProcess(["git", "rev-parse"], 0, "a" * 40, ""),
+            subprocess.CompletedProcess(["git", "rev-parse"], 0, "b" * 40, ""),
+        ]
+        with mock.patch.object(
+            batch.audit_runner, "git", side_effect=commands
+        ), mock.patch.object(
+            batch.audit_runner, "load_ledger_rows"
+        ) as load_rows:
+            current, result, detail = (
+                batch.audit_runner.audit_delivery_precondition(
+                    row,
+                    source=None,
+                    expected_packet_fingerprint="packet",
+                    expected_selection_fingerprint="selection",
+                    expected_role="first",
+                    expected_independence="cross_family",
+                    auditor_family="codex-gpt-5.6",
+                )
+            )
+
+        self.assertFalse(current)
+        self.assertEqual(result, "remote_state_superseded")
+        self.assertIn("moved", detail)
+        load_rows.assert_not_called()
+
+    def test_forensic_push_never_rebases_already_applied_audit(self):
+        oid = "c" * 40
+        commands: list[list[str]] = []
+
+        def fake_git(*args, check=True):
+            commands.append(list(args))
+            if args[:2] == ("diff", "--cached"):
+                return subprocess.CompletedProcess(args, 1, "", "")
+            if args[0] == "rev-parse":
+                return subprocess.CompletedProcess(args, 0, oid, "")
+            if args[0] == "push":
+                return subprocess.CompletedProcess(args, 1, "", "race")
+            if args[0] == "fetch":
+                return subprocess.CompletedProcess(args, 0, "", "")
+            if args[0] == "merge-base":
+                return subprocess.CompletedProcess(args, 1, "", "")
+            return subprocess.CompletedProcess(args, 0, "", "")
+
+        with mock.patch.object(batch.audit_runner, "git", side_effect=fake_git):
+            pushed, detail = batch.audit_runner.commit_and_push_to_main("audit")
+
+        self.assertFalse(pushed)
+        self.assertIn(oid, detail)
+        self.assertIn("preserved", detail)
+        self.assertFalse(any(command[0] == "rebase" for command in commands))
+
     def test_alternate_source_uses_current_role_and_authenticated_fingerprint(self):
         row = {
             "claim_id": "dispatch_row",
@@ -3006,27 +3289,103 @@ class CampaignContractTest(unittest.TestCase):
         apply_one.assert_not_called()
         gates.assert_not_called()
 
-    def test_runner_execution_removes_only_new_checkout_side_effects(self):
-        marker = f"runner-side-effect-{time.time_ns()}.tmp"
-        marker_path = batch.audit_runner.REPO_ROOT / marker
-        before = batch.audit_runner._runner_worktree_state()
+    def test_runner_execution_discards_isolated_checkout_side_effects(self):
         with tempfile.TemporaryDirectory() as tmp:
-            runner = Path(tmp) / "runner.py"
+            root = Path(tmp)
+            scripts = root / "scripts"
+            scripts.mkdir()
+            runner = scripts / "runner.py"
+            detached_marker = root / (
+                f"detached-runner-marker-{time.time_ns()}.txt"
+            )
             runner.write_text(
                 "from pathlib import Path\n"
-                f"Path({marker!r}).write_text('generated by runner')\n"
+                "import subprocess, sys, time\n"
+                "Path('tracked.txt').write_text('runner changed tracked')\n"
+                "Path('operator-note.txt').unlink(missing_ok=True)\n"
+                "Path('logs').mkdir(exist_ok=True)\n"
+                "Path('logs/cache.txt').write_text('runner changed ignored')\n"
+                "subprocess.Popen([\n"
+                "    sys.executable, '-c',\n"
+                "    \"import time; from pathlib import Path; time.sleep(0.3); "
+                f"Path({str(detached_marker)!r}).write_text('late')\",\n"
+                "], start_new_session=True)\n"
+                "time.sleep(0.2)\n"
                 "print('runner evidence')\n",
                 encoding="utf-8",
             )
-            result = batch.audit_runner._run_repo_runner(runner, 30)
+            (root / "tracked.txt").write_text("tracked baseline", encoding="utf-8")
+            (root / ".gitignore").write_text("logs/\n", encoding="utf-8")
+            subprocess.run(["git", "init", "-q", "-b", "main"], cwd=root, check=True)
+            subprocess.run(
+                ["git", "config", "user.email", "audit-test@example.invalid"],
+                cwd=root,
+                check=True,
+            )
+            subprocess.run(
+                ["git", "config", "user.name", "Audit Test"],
+                cwd=root,
+                check=True,
+            )
+            subprocess.run(["git", "add", "."], cwd=root, check=True)
+            subprocess.run(
+                ["git", "commit", "-q", "-m", "baseline"],
+                cwd=root,
+                check=True,
+            )
+            operator_note = root / "operator-note.txt"
+            operator_note.write_text("operator baseline", encoding="utf-8")
+            ignored = root / "logs" / "cache.txt"
+            ignored.parent.mkdir()
+            ignored.write_text("ignored baseline", encoding="utf-8")
+            concurrent = root / "concurrent-note.txt"
 
-        self.assertEqual(result.returncode, 0)
-        self.assertIn("runner evidence", result.stdout)
-        self.assertFalse(marker_path.exists())
-        self.assertEqual(
-            batch.audit_runner._runner_worktree_state(),
-            before,
-        )
+            def create_concurrent_note() -> None:
+                time.sleep(0.05)
+                concurrent.write_text("unrelated concurrent output", encoding="utf-8")
+
+            writer = threading.Thread(target=create_concurrent_note)
+            worktrees_before = subprocess.run(
+                ["git", "worktree", "list", "--porcelain"],
+                cwd=root,
+                check=True,
+                capture_output=True,
+                text=True,
+            ).stdout
+            writer.start()
+            with mock.patch.object(batch.audit_runner, "REPO_ROOT", root):
+                result = batch.audit_runner._run_repo_runner(runner, 30)
+            writer.join(timeout=2)
+            time.sleep(0.4)
+            worktrees_after = subprocess.run(
+                ["git", "worktree", "list", "--porcelain"],
+                cwd=root,
+                check=True,
+                capture_output=True,
+                text=True,
+            ).stdout
+
+            self.assertEqual(result.returncode, 0)
+            self.assertIn("runner evidence", result.stdout)
+            self.assertEqual(
+                (root / "tracked.txt").read_text(encoding="utf-8"),
+                "tracked baseline",
+            )
+            self.assertEqual(
+                operator_note.read_text(encoding="utf-8"),
+                "operator baseline",
+            )
+            self.assertEqual(
+                ignored.read_text(encoding="utf-8"),
+                "ignored baseline",
+            )
+            self.assertEqual(
+                concurrent.read_text(encoding="utf-8"),
+                "unrelated concurrent output",
+            )
+            self.assertFalse((root / "late-runner-residue.txt").exists())
+            self.assertFalse(detached_marker.exists())
+            self.assertEqual(worktrees_after, worktrees_before)
 
     def test_inherited_campaign_lock_is_reentrant_for_child(self):
         held = batch.acquire_exclusive_drain_lock("top-level-test")

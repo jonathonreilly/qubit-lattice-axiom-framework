@@ -37,7 +37,7 @@ import json
 import os
 import re
 import shutil
-import stat
+import signal
 import subprocess
 import sys
 import tempfile
@@ -65,6 +65,7 @@ import no_go_discipline_gate
 import audit_invocation
 import audit_contract
 import compute_audit_dispatch_queue
+import compute_reaudit_candidates
 
 LEDGER_PATH = AUDIT_DIR / "data" / "audit_ledger.json"
 QUEUE_PATH = AUDIT_DIR / "data" / "audit_queue.json"
@@ -808,26 +809,56 @@ def select_named_targets(queue: list[dict], claim_ids: list[str]) -> list[dict]:
     return [by_id[cid] for cid in claim_ids]
 
 
-def load_reaudit_candidates(criticality_filter: str | None = None,
-                            include_runner_drift: bool = True) -> list[dict]:
-    """Load rows from reaudit_candidates.json, sorted by leverage.
+def _reaudit_json_object(pairs: list[tuple[str, object]]) -> dict:
+    record: dict = {}
+    for key, value in pairs:
+        if key in record:
+            raise ValueError(f"duplicate JSON key {key!r}")
+        record[key] = value
+    return record
 
-    The pipeline writes two streams to that file:
 
-    - `candidates`: rows whose audit was non-clean and where every current
-      dep is now retained-grade. Re-audit may now close the chain.
-    - `runner_drift_candidates`: rows whose audit cited a runner_artifact_issue
-      and whose runner SHA has changed since audit time.
+def _reject_reaudit_json_constant(value: str) -> None:
+    raise ValueError(f"non-finite JSON value {value!r}")
 
-    Both are valid re-audit triggers. Each entry is normalized into the
-    same shape as audit_queue.json rows (claim_id, note_path, runner_path,
-    deps, criticality, etc.) so the rest of the runner can treat them
-    uniformly. The `ready` flag is set to True because this alternate source
-    has already been prefiltered by the re-audit-candidate producer; runner
-    drift rows may still get a non-clean verdict if a different blocker
-    remains.
+
+def _expected_reaudit_payload(ledger_rows: dict[str, dict]) -> dict:
+    """Recompute the producer's complete payload without trusting its cache."""
+    return compute_reaudit_candidates.build_payload(ledger_rows)
+
+
+def load_reaudit_candidates(
+    criticality_filter: str | None = None,
+    include_runner_drift: bool = True,
+    *,
+    ledger_rows: dict[str, dict] | None = None,
+) -> list[dict]:
+    """Load only a byte-for-byte current re-audit producer result.
+
+    The tracked JSON is a generated selection cache, not authority. Recompute
+    both candidate streams from the current ledger and runner bytes and refuse
+    unsupported policy, stale counters, missing rows, or injected rows.
     """
-    payload = json.loads(REAUDIT_CANDIDATES_PATH.read_text(encoding="utf-8"))
+    try:
+        payload = json.loads(
+            REAUDIT_CANDIDATES_PATH.read_text(encoding="utf-8"),
+            object_pairs_hook=_reaudit_json_object,
+            parse_constant=_reject_reaudit_json_constant,
+        )
+    except json.JSONDecodeError as exc:
+        raise ValueError(
+            f"invalid re-audit candidate JSON: {exc.msg}"
+        ) from exc
+    if not isinstance(payload, dict):
+        raise ValueError("re-audit candidate payload is not an object")
+    current_rows = ledger_rows if ledger_rows is not None else load_ledger_rows()
+    expected = _expected_reaudit_payload(current_rows)
+    if payload != expected:
+        raise ValueError(
+            "reaudit_candidates.json does not exactly match the current "
+            "producer policy, ledger, dependency state, counters, and runner "
+            "bytes; run the full audit pipeline and commit the refreshed cache"
+        )
     streams: list[dict] = []
     streams.extend(payload.get("candidates", []))
     if include_runner_drift:
@@ -1091,134 +1122,386 @@ def find_cached_runner_output(runner_path: str) -> str | None:
     return rc.cache_excerpt_for_audit(runner_path)
 
 
-def _runner_path_signature(relative: str) -> str:
-    path = REPO_ROOT / relative
+AUDIT_PACKET_CONTROL_PATHS = (
+    "scripts/codex_audit_runner.py",
+    "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+    "docs/audit/scripts/apply_audit.py",
+    "docs/audit/scripts/audit_contract.py",
+    "docs/audit/scripts/audit_invocation.py",
+    "docs/audit/scripts/no_go_discipline_gate.py",
+    "docs/audit/scripts/premise_nodes.py",
+    "docs/audit/scripts/run_pipeline.sh",
+)
+
+
+def _path_content_identity(path: Path) -> dict[str, object]:
+    """Return a stable byte identity without treating a ledger hash as bytes."""
     try:
         info = path.lstat()
     except OSError:
-        return "<missing>"
+        return {"kind": "missing"}
     if path.is_symlink():
         try:
-            return f"symlink:{os.readlink(path)}"
+            link_target = os.readlink(path)
         except OSError:
-            return "symlink:<unreadable>"
+            link_target = "<unreadable>"
+        try:
+            body_hash = hashlib.sha256(path.read_bytes()).hexdigest()
+        except OSError:
+            body_hash = "<unreadable>"
+        return {
+            "kind": "symlink",
+            "target": link_target,
+            "target_bytes_sha256": body_hash,
+        }
     if path.is_file():
         try:
-            return "file:" + hashlib.sha256(path.read_bytes()).hexdigest()
+            body_hash = hashlib.sha256(path.read_bytes()).hexdigest()
         except OSError:
-            return "file:<unreadable>"
-    return f"mode:{stat.S_IFMT(info.st_mode):o}:size:{info.st_size}"
+            body_hash = "<unreadable>"
+        return {"kind": "file", "bytes_sha256": body_hash}
+    return {
+        "kind": "other",
+        "mode": info.st_mode,
+        "size": info.st_size,
+    }
 
 
-def _runner_worktree_state() -> dict[str, tuple[str, str]]:
-    """Return path -> (porcelain status, content identity) for dirty paths."""
+def _packet_manifest_for_fingerprint(
+    row: dict,
+    ledger_rows: dict[str, dict],
+) -> dict[str, dict]:
+    cid = str(row.get("claim_id") or "")
+    packet_row = {**(ledger_rows.get(cid) or {}), **row, "claim_id": cid}
+    if row.get("dispatch_target"):
+        packet_row = no_go_discipline_gate.blind_reaudit_row_projection(
+            packet_row
+        )
+    manifest = no_go_discipline_gate.build_evidence_manifest(
+        packet_row,
+        ledger_rows,
+        REPO_ROOT,
+    )
+    if row.get("dispatch_target"):
+        no_go_discipline_gate.set_packet_evidence(
+            manifest,
+            path=no_go_discipline_gate.blind_reaudit_control_path(cid),
+            role="blind_reaudit_control",
+            text=(
+                "Fresh-context dispatch: prior claim scope and audit judgments "
+                "are withheld from the auditor."
+            ),
+        )
+    return manifest
+
+
+def audit_packet_source_fingerprint(
+    row: dict,
+    ledger_rows: dict[str, dict],
+    evidence_manifest: dict[str, dict] | None = None,
+) -> str:
+    """Bind a seat to exact governed packet sources and ledger provenance."""
+    cid = str(row.get("claim_id") or "")
+    manifest = (
+        evidence_manifest
+        if evidence_manifest is not None
+        else _packet_manifest_for_fingerprint(row, ledger_rows)
+    )
+    manifest_state: dict[str, dict] = {}
+    for path, raw_entry in sorted(manifest.items()):
+        entry = raw_entry if isinstance(raw_entry, dict) else {}
+        roles = {
+            str(role) for role in (entry.get("roles") or [])
+        }
+        if path.startswith("audit-packet://"):
+            if any(role.startswith("runner_stdout") for role in roles):
+                continue
+            canonical_text_hash = entry.get(
+                "transport_bounded_full_content_sha256"
+            )
+            if not canonical_text_hash:
+                canonical_text_hash = hashlib.sha256(
+                    str(entry.get("text") or "").encode("utf-8")
+                ).hexdigest()
+            virtual_state = {
+                key: value
+                for key, value in entry.items()
+                if key not in {
+                    "text",
+                    "invocation_bound_rendered_text",
+                    "transport_bounded_full_content_sha256",
+                    "transport_bounded_full_candidate_count",
+                    "transport_bounded_rendered_candidate_count",
+                    "transport_bounded_rendered_candidate_ids",
+                }
+            }
+            virtual_state["canonical_text_sha256"] = canonical_text_hash
+            manifest_state[path] = virtual_state
+            continue
+        metadata = {
+            key: value
+            for key, value in entry.items()
+            if key not in {"text", "invocation_bound_rendered_text"}
+        }
+        metadata["source_identity"] = _path_content_identity(REPO_ROOT / path)
+        if roles.intersection({"runner", "helper"}):
+            declared = rc.declared_input_paths(REPO_ROOT / path)
+            if declared is not None:
+                metadata["declared_input_identities"] = {
+                    relative: _path_content_identity(REPO_ROOT / relative)
+                    for relative in declared
+                }
+        manifest_state[path] = metadata
+
+    controls = {
+        path: _path_content_identity(REPO_ROOT / path)
+        for path in AUDIT_PACKET_CONTROL_PATHS
+    }
+    controls["<prompt-template-runtime-path>"] = _path_content_identity(
+        PROMPT_TEMPLATE_PATH
+    )
+    ledger_row = ledger_rows.get(cid)
+    dependency_rows = {
+        dep: ledger_rows.get(dep)
+        for dep in (ledger_row or row).get("deps") or []
+    }
+    payload = {
+        "schema": "audit-packet-source-fingerprint-v2",
+        "claim_id": cid,
+        "dispatch_target": bool(row.get("dispatch_target")),
+        "ledger_row": ledger_row,
+        "dependency_rows": dependency_rows,
+        "manifest_state": manifest_state,
+        "control_sources": controls,
+    }
+    return hashlib.sha256(
+        json.dumps(
+            payload,
+            sort_keys=True,
+            separators=(",", ":"),
+            allow_nan=False,
+        ).encode("utf-8")
+    ).hexdigest()
+
+
+def audit_selection_fingerprint(row: dict) -> str:
+    return hashlib.sha256(
+        json.dumps(
+            row,
+            sort_keys=True,
+            separators=(",", ":"),
+            allow_nan=False,
+        ).encode("utf-8")
+    ).hexdigest()
+
+
+def _runner_descendant_pids(root_pid: int) -> set[int]:
+    """Snapshot recursive descendants before they can orphan via setsid()."""
     result = subprocess.run(
-        [
-            "git", "status", "--porcelain=v1", "-z",
-            "--untracked-files=all",
-        ],
-        cwd=REPO_ROOT,
+        ["ps", "-axo", "pid=,ppid="],
         capture_output=True,
+        text=True,
         check=False,
     )
     if result.returncode != 0:
-        raise RuntimeError("cannot snapshot worktree around runner execution")
-    records = result.stdout.split(b"\0")
-    state: dict[str, tuple[str, str]] = {}
-    index = 0
-    while index < len(records):
-        record = records[index]
-        index += 1
-        if not record:
+        return set()
+    children: dict[int, set[int]] = {}
+    for line in result.stdout.splitlines():
+        fields = line.split()
+        if len(fields) != 2:
             continue
-        if len(record) < 4:
-            raise RuntimeError("malformed git status record around runner execution")
-        code = record[:2].decode("ascii", errors="replace")
-        path = record[3:].decode("utf-8", errors="surrogateescape")
-        state[path] = (code, _runner_path_signature(path))
-        if "R" in code or "C" in code:
-            if index >= len(records) or not records[index]:
-                raise RuntimeError(
-                    "malformed rename status around runner execution"
-                )
-            source = records[index].decode(
-                "utf-8", errors="surrogateescape"
-            )
-            index += 1
-            state[source] = (code, _runner_path_signature(source))
-    return state
-
-
-def _restore_runner_created_paths(
-    before: dict[str, tuple[str, str]],
-) -> None:
-    """Remove only checkout mutations proven to have been created by a runner."""
-    after = _runner_worktree_state()
-    changed = sorted(
-        path for path, state in after.items()
-        if before.get(path) != state
-    )
-    unsafe_overlap = sorted(path for path in changed if path in before)
-    if unsafe_overlap:
-        raise RuntimeError(
-            "runner modified pre-existing worktree changes: "
-            + ", ".join(unsafe_overlap[:5])
-        )
-    for relative in changed:
-        root = REPO_ROOT.resolve()
-        path = Path(os.path.abspath(REPO_ROOT / relative))
         try:
-            path.relative_to(root)
-        except ValueError as exc:
-            raise RuntimeError(
-                f"runner mutation escaped repository: {relative}"
-            ) from exc
-        tracked = subprocess.run(
-            ["git", "ls-files", "--error-unmatch", "--", relative],
-            cwd=REPO_ROOT,
-            capture_output=True,
-            check=False,
-        )
-        if tracked.returncode == 0:
-            restored = subprocess.run(
-                ["git", "restore", "--staged", "--worktree", "--", relative],
-                cwd=REPO_ROOT,
-                capture_output=True,
-                text=True,
-                check=False,
-            )
-            if restored.returncode != 0:
-                raise RuntimeError(
-                    f"cannot restore runner-mutated tracked path {relative}: "
-                    f"{(restored.stderr or restored.stdout).strip()[:200]}"
-                )
-        elif path.is_dir() and not path.is_symlink():
-            shutil.rmtree(path)
-        elif path.exists() or path.is_symlink():
-            path.unlink()
-    if _runner_worktree_state() != before:
-        raise RuntimeError(
-            "runner side-effect cleanup did not restore the prior worktree state"
-        )
+            pid, parent = (int(field) for field in fields)
+        except ValueError:
+            continue
+        children.setdefault(parent, set()).add(pid)
+    descendants: set[int] = set()
+    frontier = list(children.get(root_pid, ()))
+    while frontier:
+        pid = frontier.pop()
+        if pid in descendants:
+            continue
+        descendants.add(pid)
+        frontier.extend(children.get(pid, ()))
+    return descendants
+
+
+def _terminate_runner_process_group(
+    process: subprocess.Popen,
+    descendant_pids: set[int] | None = None,
+) -> None:
+    """Best-effort termination for grouped and observed detached descendants."""
+    detached = set(descendant_pids or ())
+    try:
+        os.killpg(process.pid, signal.SIGTERM)
+    except ProcessLookupError:
+        pass
+    for pid in detached:
+        try:
+            os.kill(pid, signal.SIGTERM)
+        except ProcessLookupError:
+            pass
+    deadline = time.monotonic() + 1.0
+    while time.monotonic() < deadline:
+        survivors: set[int] = set()
+        for pid in detached:
+            try:
+                os.kill(pid, 0)
+            except ProcessLookupError:
+                continue
+            survivors.add(pid)
+        try:
+            os.killpg(process.pid, 0)
+        except ProcessLookupError:
+            if not survivors:
+                return
+        detached = survivors
+        time.sleep(0.02)
+    try:
+        os.killpg(process.pid, signal.SIGKILL)
+    except ProcessLookupError:
+        pass
+    for pid in detached:
+        try:
+            os.kill(pid, signal.SIGKILL)
+        except ProcessLookupError:
+            pass
 
 
 def _run_repo_runner(
     path: Path,
     timeout_sec: int,
 ) -> subprocess.CompletedProcess:
-    """Execute a runner and restore any checkout side effects it created."""
-    before = _runner_worktree_state()
+    """Execute in a disposable checkout; never repair/delete shared-worktree deltas."""
+    source_root = REPO_ROOT.resolve()
+    source_path = path.resolve()
     try:
-        return subprocess.run(
-            [sys.executable, str(path)],
+        relative_runner = source_path.relative_to(source_root)
+    except ValueError:
+        relative_runner = Path("scripts") / (
+            f"external-audit-runner-{uuid.uuid4().hex}.py"
+        )
+    with tempfile.TemporaryDirectory(prefix="audit-runner-checkout-") as parent:
+        isolated_root = Path(parent) / "checkout"
+        added = subprocess.run(
+            [
+                "git",
+                "worktree",
+                "add",
+                "--detach",
+                "--quiet",
+                str(isolated_root),
+                "HEAD",
+            ],
             cwd=REPO_ROOT,
             capture_output=True,
             text=True,
-            timeout=timeout_sec,
-            env={**os.environ, "PYTHONPATH": str(REPO_ROOT / "scripts")},
+            check=False,
         )
-    finally:
-        _restore_runner_created_paths(before)
+        if added.returncode != 0:
+            raise RuntimeError(
+                "cannot create isolated runner worktree: "
+                f"{(added.stderr or added.stdout).strip()[:240]}"
+            )
+        cleanup_error: str | None = None
+        try:
+            isolated_runner = isolated_root / relative_runner
+            isolated_runner.parent.mkdir(parents=True, exist_ok=True)
+            try:
+                isolated_bytes = isolated_runner.read_bytes()
+            except OSError:
+                isolated_bytes = None
+            source_bytes = source_path.read_bytes()
+            if isolated_bytes != source_bytes:
+                isolated_runner.write_bytes(source_bytes)
+
+            runner_env = {
+                **os.environ,
+                "PYTHONPATH": str(isolated_root / "scripts"),
+                "GIT_CONFIG_COUNT": "1",
+                "GIT_CONFIG_KEY_0": "remote.origin.pushurl",
+                "GIT_CONFIG_VALUE_0": "audit-runner-push-disabled://origin",
+                "GIT_OPTIONAL_LOCKS": "0",
+            }
+            with tempfile.TemporaryFile(
+                mode="w+t",
+                encoding="utf-8",
+            ) as stdout_file, tempfile.TemporaryFile(
+                mode="w+t",
+                encoding="utf-8",
+            ) as stderr_file:
+                process = subprocess.Popen(
+                    [sys.executable, str(isolated_runner)],
+                    cwd=isolated_root,
+                    stdout=stdout_file,
+                    stderr=stderr_file,
+                    text=True,
+                    env=runner_env,
+                    start_new_session=True,
+                )
+                observed_descendants: set[int] = set()
+                deadline = time.monotonic() + timeout_sec
+                timed_out = False
+                while process.poll() is None:
+                    observed_descendants.update(
+                        _runner_descendant_pids(process.pid)
+                    )
+                    if time.monotonic() >= deadline:
+                        timed_out = True
+                        break
+                    time.sleep(0.05)
+                _terminate_runner_process_group(
+                    process,
+                    observed_descendants,
+                )
+                try:
+                    process.wait(timeout=2)
+                except subprocess.TimeoutExpired:
+                    _terminate_runner_process_group(
+                        process,
+                        observed_descendants,
+                    )
+                    process.wait()
+                stdout_file.seek(0)
+                stderr_file.seek(0)
+                stdout = stdout_file.read()
+                stderr = stderr_file.read()
+                if timed_out:
+                    raise subprocess.TimeoutExpired(
+                        process.args,
+                        timeout_sec,
+                        output=stdout,
+                        stderr=stderr,
+                    )
+                return subprocess.CompletedProcess(
+                    process.args,
+                    process.returncode,
+                    stdout,
+                    stderr,
+                )
+        finally:
+            removed = subprocess.run(
+                ["git", "worktree", "remove", "--force", str(isolated_root)],
+                cwd=REPO_ROOT,
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            if removed.returncode != 0:
+                shutil.rmtree(isolated_root, ignore_errors=True)
+                subprocess.run(
+                    ["git", "worktree", "prune"],
+                    cwd=REPO_ROOT,
+                    capture_output=True,
+                    check=False,
+                )
+                if isolated_root.exists():
+                    cleanup_error = (
+                        "cannot discard isolated runner worktree: "
+                        f"{(removed.stderr or removed.stdout).strip()[:240]}"
+                    )
+            if cleanup_error is not None:
+                raise RuntimeError(cleanup_error)
 
 
 def get_runner_stdout(runner_path: str | None, default_timeout_sec: int,
@@ -1951,8 +2234,13 @@ def assert_main_and_clean() -> str | None:
     return None
 
 
-def commit_and_push_to_main(message: str, max_attempts: int = 3) -> tuple[bool, str]:
-    """Stage audit-data files, commit, push to main with rebase-on-conflict retry."""
+def commit_and_push_to_main(message: str) -> tuple[bool, str]:
+    """Commit one validated transaction and reconcile its exact OID.
+
+    An already-applied audit is never rebased onto a parent it was not
+    validated against. A rejected or indeterminate push preserves the local
+    commit for forensic reconciliation and stops the caller.
+    """
     # Stage every audit-data path that exists
     paths = [p for p in AUDIT_DATA_FILES if (REPO_ROOT / p).exists()]
     add = git("add", *paths, check=False)
@@ -1964,17 +2252,149 @@ def commit_and_push_to_main(message: str, max_attempts: int = 3) -> tuple[bool, 
     commit = git("commit", "-m", message, check=False)
     if commit.returncode != 0:
         return False, f"git commit failed: {(commit.stderr or commit.stdout).strip()[:200]}"
-    for attempt in range(1, max_attempts + 1):
-        push = git("push", "origin", "main", check=False)
-        if push.returncode == 0:
-            return True, f"pushed (attempt {attempt})"
-        # Try fetch + rebase
-        git("fetch", "origin", "main", check=False)
-        rebase = git("rebase", "origin/main", check=False)
-        if rebase.returncode != 0:
-            git("rebase", "--abort", check=False)
-            return False, f"push attempt {attempt} failed and rebase conflicted: {(push.stderr or push.stdout).strip()[:200]}"
-    return False, f"push failed after {max_attempts} attempts"
+    resolved = git("rev-parse", "HEAD", check=False)
+    local_commit = resolved.stdout.strip()
+    if resolved.returncode != 0 or not re.fullmatch(r"[0-9a-f]{40}", local_commit):
+        return False, "commit created but its intended OID cannot be resolved"
+    push = git("push", "origin", "main", check=False)
+    if push.returncode == 0:
+        return True, f"pushed {local_commit}"
+    fetch = git("fetch", "origin", "main", check=False)
+    if fetch.returncode != 0:
+        return False, (
+            f"push state unknown for intended commit {local_commit}; "
+            "follow-up fetch failed; local commit preserved"
+        )
+    landed = git(
+        "merge-base",
+        "--is-ancestor",
+        local_commit,
+        "origin/main",
+        check=False,
+    )
+    if landed.returncode == 0:
+        return True, f"push response failed but {local_commit} is on origin/main"
+    if landed.returncode == 1:
+        return False, (
+            f"push rejected for intended commit {local_commit}; canonical main "
+            "moved; local commit preserved and must not be rebased"
+        )
+    return False, (
+        f"push state unknown for intended commit {local_commit}; ancestry "
+        "reconciliation failed; local commit preserved"
+    )
+
+
+def audit_delivery_precondition(
+    row: dict,
+    *,
+    source: str | None,
+    expected_packet_fingerprint: str,
+    expected_selection_fingerprint: str,
+    expected_role: str,
+    expected_independence: str,
+    auditor_family: str,
+) -> tuple[bool, str, str]:
+    """Refresh remote state and reject a forensic delivery selected on old inputs."""
+    fetch = git("fetch", "origin", "main", check=False)
+    if fetch.returncode != 0:
+        return (
+            False,
+            "source_refresh_failed",
+            f"cannot fetch origin/main: {(fetch.stderr or fetch.stdout).strip()[:240]}",
+        )
+    head = git("rev-parse", "HEAD", check=False)
+    remote = git("rev-parse", "origin/main", check=False)
+    if head.returncode != 0 or remote.returncode != 0:
+        return False, "source_refresh_failed", "cannot resolve local/remote main"
+    if head.stdout.strip() != remote.stdout.strip():
+        return (
+            False,
+            "remote_state_superseded",
+            "origin/main moved while the restricted forensic seat was running",
+        )
+
+    try:
+        current_rows = load_ledger_rows()
+        if source == "dispatch":
+            current_source_rows = load_dispatch_targets(
+                current_rows,
+                ready_only=True,
+                selected_claim_ids={str(row.get("claim_id") or "")},
+                limit=None,
+            )
+        elif source == "reaudit":
+            current_source_rows = load_reaudit_candidates(
+                ledger_rows=current_rows
+            )
+        elif source is None:
+            current_source_rows = load_queue(
+                criticality_filter=None,
+                ready_only=False,
+            )
+        else:
+            return (
+                False,
+                "source_refresh_failed",
+                f"unknown audit selection source {source!r}",
+            )
+    except (OSError, ValueError, json.JSONDecodeError) as exc:
+        return (
+            False,
+            "source_refresh_failed",
+            f"cannot authenticate current {source or 'queue'} source: {exc}",
+        )
+
+    cid = str(row.get("claim_id") or "")
+    current_row = next(
+        (
+            candidate
+            for candidate in current_source_rows
+            if candidate.get("claim_id") == cid
+        ),
+        None,
+    )
+    current_ledger_row = current_rows.get(cid)
+    if not isinstance(current_row, dict) or not isinstance(current_ledger_row, dict):
+        return (
+            False,
+            "remote_state_superseded",
+            "the claim is no longer present in its current authenticated source",
+        )
+    current_role, current_independence = determine_audit_role(
+        current_ledger_row,
+        auditor_family,
+        is_reaudit_candidate=source in {"dispatch", "reaudit"},
+        is_dispatch_target=source == "dispatch",
+    )
+    if (current_role, current_independence) != (
+        expected_role,
+        expected_independence,
+    ):
+        return (
+            False,
+            "remote_state_superseded",
+            "seat role or independence changed while the forensic seat was running",
+        )
+    if audit_selection_fingerprint(current_row) != expected_selection_fingerprint:
+        return (
+            False,
+            "remote_state_superseded",
+            "the queue/dispatch/re-audit selection record changed while the "
+            "forensic seat was running",
+        )
+    current_packet_fingerprint = audit_packet_source_fingerprint(
+        current_row,
+        current_rows,
+    )
+    if current_packet_fingerprint != expected_packet_fingerprint:
+        return (
+            False,
+            "remote_state_superseded",
+            "claim, dependency, governed context, runner input, or packet policy "
+            "changed while the forensic seat was running",
+        )
+    return True, "current", head.stdout.strip()
 
 
 CODEX_RESPONSE_RE = re.compile(
@@ -3070,6 +3490,7 @@ def main() -> int:
         queue = load_reaudit_candidates(
             args.criticality,
             include_runner_drift=not args.no_runner_drift_candidates,
+            ledger_rows=ledger_rows,
         )
     else:
         queue = load_queue(args.criticality, ready_only=not args.allow_blocked)
@@ -3300,6 +3721,13 @@ def main() -> int:
                     f"{transport_bound['prompt_chars_after']} chars; "
                     f"{transport_disposition}"
                 )
+
+            delivery_packet_fingerprint = audit_packet_source_fingerprint(
+                row,
+                ledger_rows,
+                exact_evidence_manifest,
+            )
+            delivery_selection_fingerprint = audit_selection_fingerprint(row)
 
             if args.dry_run:
                 print(f"  [dry-run] prompt size: {len(prompt)} chars")
@@ -3776,6 +4204,42 @@ def main() -> int:
                 auditor_model=audit_model,
                 auditor_reasoning_effort=reasoning_effort,
             )
+            if args.push_mode != "none":
+                selection_source = (
+                    "dispatch"
+                    if args.from_dispatch
+                    else "reaudit"
+                    if args.from_reaudit_candidates
+                    else None
+                )
+                current, precondition_result, precondition_detail = (
+                    audit_delivery_precondition(
+                        row,
+                        source=selection_source,
+                        expected_packet_fingerprint=delivery_packet_fingerprint,
+                        expected_selection_fingerprint=(
+                            delivery_selection_fingerprint
+                        ),
+                        expected_role=role,
+                        expected_independence=row_independence,
+                        auditor_family=auditor_family,
+                    )
+                )
+                if not current:
+                    print(
+                        f"  {precondition_result}: {precondition_detail}"
+                    )
+                    with run_log.open("a", encoding="utf-8") as f:
+                        f.write(json.dumps({
+                            "claim_id": cid,
+                            "phase": precondition_result,
+                            "reason": precondition_detail,
+                        }) + "\n")
+                    if precondition_result == "remote_state_superseded":
+                        skipped += 1
+                    else:
+                        failed += 1
+                    continue
             ok, msg = apply_one(
                 full_blob,
                 propagate=not args.no_propagate,

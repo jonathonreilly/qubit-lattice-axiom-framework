@@ -401,17 +401,11 @@ def first_ready_forensic_claim(
     return None
 
 
-def forensic_canary_claim_local_failure(
+def forensic_canary_terminal_record(
     run_log: Path,
     claim_id: str,
-) -> tuple[str, dict] | None:
-    """Classify only typed claim-local canary outcomes from its preserved log.
-
-    Unknown execution, apply, propagation, and push failures remain hard. A
-    malformed or schema-invalid packet minted no verdict and is safe to
-    quarantine for this campaign. Missing runner evidence is compute work, not
-    negative science.
-    """
+) -> dict | None:
+    """Return the last target-scoped terminal record from one canary log."""
     if not run_log.is_file():
         return None
     records: list[dict] = []
@@ -446,10 +440,11 @@ def forensic_canary_claim_local_failure(
         "compute_required",
         "skip_no_runner_log",
         "skip_prompt_transport",
+        "skip_role",
         "weak_clean_unratifiable",
         "dry-run",
     }
-    terminal = next(
+    return next(
         (
             record
             for record in reversed(records)
@@ -457,25 +452,44 @@ def forensic_canary_claim_local_failure(
         ),
         None,
     )
+
+
+def forensic_canary_claim_local_failure(
+    terminal: dict | None,
+    claim_id: str,
+    run_log: Path,
+) -> tuple[str, dict, int] | None:
+    """Classify typed claim-local no-verdict outcomes and their expected exit.
+
+    Unknown execution, apply, propagation, and push failures remain hard. A
+    malformed or schema-invalid packet minted no verdict and is safe to
+    quarantine for this campaign. Missing runner evidence is compute work, not
+    negative science.
+    """
     if terminal is None:
         return None
     phase = terminal["phase"]
     if phase == "validate_failed":
         detail = str(terminal.get("error") or "").strip()
-        if not detail:
+        if not detail or detail.startswith(
+            (
+                "fresh schema retry codex exec failed:",
+                "validation repair codex exec failed:",
+            )
+        ):
             return None
         return batch.SCHEMA_QUARANTINE_RESULT, {
             "cid": claim_id,
             "pass": 1,
             "result": "validation_failed",
             "detail": f"{detail}; preserved_run_log={run_log.name}",
-        }
+        }, 1
     if phase == "json_parse_failed":
         return batch.SCHEMA_QUARANTINE_RESULT, {
             "cid": claim_id,
             "pass": 1,
             "result": "malformed_json",
-        }
+        }, 1
     if phase == "skip_prompt_transport":
         detail = str(
             terminal.get("reason")
@@ -486,7 +500,7 @@ def forensic_canary_claim_local_failure(
             "pass": 1,
             "result": "validation_failed",
             "detail": f"{detail}; preserved_run_log={run_log.name}",
-        }
+        }, 0
     if phase in {"compute_required", "skip_no_runner_log"}:
         detail = str(
             terminal.get("reason")
@@ -498,7 +512,7 @@ def forensic_canary_claim_local_failure(
             "pass": 1,
             "result": "compute_required",
             "detail": detail,
-        }
+        }, 0
     return None
 
 
@@ -541,14 +555,38 @@ def run_forensic_canary(args: argparse.Namespace) -> int:
     env["AUDIT_FORENSIC_MODE"] = "1"
     rc = run_command(f"forensic-canary-{claim_id}", command, env=env)
     try:
-        claim_local = forensic_canary_claim_local_failure(run_log, claim_id)
+        terminal = forensic_canary_terminal_record(run_log, claim_id)
     except (OSError, ValueError) as exc:
         emit(f"invalid forensic canary artifact; refusing quarantine: {exc}")
         return 2
+    claim_local = forensic_canary_claim_local_failure(
+        terminal,
+        claim_id,
+        run_log,
+    )
     if claim_local is None:
-        return rc
+        if rc != 0:
+            return rc
+        terminal_phase = terminal.get("phase") if terminal else None
+        if terminal_phase == "applied" or (
+            args.dry_run and terminal_phase == "dry-run"
+        ):
+            return 0
+        emit(
+            "forensic canary returned success without an applied verdict, "
+            "typed quarantine, or dry-run terminal record; failing closed: "
+            f"claim={claim_id} terminal={terminal_phase or 'missing'}"
+        )
+        return 2
 
-    reason, failure = claim_local
+    reason, failure, expected_rc = claim_local
+    if rc != expected_rc:
+        emit(
+            "forensic canary terminal/exit mismatch; refusing claim-local "
+            f"quarantine: claim={claim_id} terminal={terminal['phase']} "
+            f"expected_exit={expected_rc} actual_exit={rc}"
+        )
+        return rc if rc != 0 else 2
     if reason == batch.SCHEMA_QUARANTINE_RESULT:
         batch.persist_campaign_quarantine(
             args.campaign_quarantine_file,

@@ -2976,6 +2976,50 @@ class CampaignContractTest(unittest.TestCase):
                 audit_loop.PROGRESS["canary_state"].startswith("quarantined:")
             )
 
+    def test_forensic_compute_skip_is_quarantined_and_returns_success(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            campaign = Path(tmp)
+            args = _args()
+            args.campaign_workdir = campaign
+            args.campaign_quarantine_file = (
+                campaign / "campaign-row-exclusions.jsonl"
+            )
+            claim_id = "forensic_row"
+
+            def fake_run(_label, command, env=None):
+                log = Path(command[command.index("--run-log-path") + 1])
+                log.write_text(
+                    json.dumps(
+                        {
+                            "claim_id": claim_id,
+                            "phase": "compute_required",
+                            "reason": "runner evidence unavailable",
+                        }
+                    )
+                    + "\n",
+                    encoding="utf-8",
+                )
+                return 0
+
+            with mock.patch.object(
+                audit_loop,
+                "first_ready_forensic_claim",
+                return_value=claim_id,
+            ), mock.patch.object(audit_loop, "run_command", side_effect=fake_run):
+                rc = audit_loop.run_forensic_canary(args)
+
+            records = batch.load_campaign_exclusion_records(
+                args.campaign_quarantine_file
+            )
+            self.assertEqual(rc, 0)
+            self.assertEqual(len(records), 1)
+            self.assertEqual(
+                records[0]["reason"], batch.COMPUTE_QUARANTINE_RESULT
+            )
+            self.assertEqual(
+                records[0]["failures"][0]["result"], "compute_required"
+            )
+
     def test_forensic_unknown_failure_still_fails_closed(self):
         with tempfile.TemporaryDirectory() as tmp:
             campaign = Path(tmp)
@@ -2994,6 +3038,108 @@ class CampaignContractTest(unittest.TestCase):
                             "claim_id": claim_id,
                             "phase": "push_failed",
                             "msg": "remote rejected",
+                        }
+                    )
+                    + "\n",
+                    encoding="utf-8",
+                )
+                return 1
+
+            with mock.patch.object(
+                audit_loop,
+                "first_ready_forensic_claim",
+                return_value=claim_id,
+            ), mock.patch.object(audit_loop, "run_command", side_effect=fake_run):
+                rc = audit_loop.run_forensic_canary(args)
+
+            self.assertEqual(rc, 1)
+            self.assertFalse(args.campaign_quarantine_file.exists())
+
+    def test_forensic_fresh_schema_execution_failure_is_not_quarantined(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            campaign = Path(tmp)
+            args = _args()
+            args.campaign_workdir = campaign
+            args.campaign_quarantine_file = (
+                campaign / "campaign-row-exclusions.jsonl"
+            )
+            claim_id = "forensic_row"
+
+            def fake_run(_label, command, env=None):
+                log = Path(command[command.index("--run-log-path") + 1])
+                log.write_text(
+                    json.dumps(
+                        {
+                            "claim_id": claim_id,
+                            "phase": "validate_failed",
+                            "error": (
+                                "fresh schema retry codex exec failed: "
+                                "transport died"
+                            ),
+                            "blob": {},
+                        }
+                    )
+                    + "\n",
+                    encoding="utf-8",
+                )
+                return 1
+
+            with mock.patch.object(
+                audit_loop,
+                "first_ready_forensic_claim",
+                return_value=claim_id,
+            ), mock.patch.object(audit_loop, "run_command", side_effect=fake_run):
+                rc = audit_loop.run_forensic_canary(args)
+
+            self.assertEqual(rc, 1)
+            self.assertFalse(args.campaign_quarantine_file.exists())
+
+    def test_forensic_zero_exit_without_terminal_outcome_fails_closed(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            campaign = Path(tmp)
+            args = _args()
+            args.campaign_workdir = campaign
+            args.campaign_quarantine_file = (
+                campaign / "campaign-row-exclusions.jsonl"
+            )
+            claim_id = "forensic_row"
+
+            def fake_run(_label, command, env=None):
+                log = Path(command[command.index("--run-log-path") + 1])
+                log.write_text(
+                    json.dumps({"phase": "model_policy"}) + "\n",
+                    encoding="utf-8",
+                )
+                return 0
+
+            with mock.patch.object(
+                audit_loop,
+                "first_ready_forensic_claim",
+                return_value=claim_id,
+            ), mock.patch.object(audit_loop, "run_command", side_effect=fake_run):
+                rc = audit_loop.run_forensic_canary(args)
+
+            self.assertEqual(rc, 2)
+            self.assertFalse(args.campaign_quarantine_file.exists())
+
+    def test_forensic_terminal_exit_mismatch_fails_closed(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            campaign = Path(tmp)
+            args = _args()
+            args.campaign_workdir = campaign
+            args.campaign_quarantine_file = (
+                campaign / "campaign-row-exclusions.jsonl"
+            )
+            claim_id = "forensic_row"
+
+            def fake_run(_label, command, env=None):
+                log = Path(command[command.index("--run-log-path") + 1])
+                log.write_text(
+                    json.dumps(
+                        {
+                            "claim_id": claim_id,
+                            "phase": "compute_required",
+                            "reason": "runner evidence unavailable",
                         }
                     )
                     + "\n",

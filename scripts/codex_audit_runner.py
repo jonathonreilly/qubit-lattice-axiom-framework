@@ -3244,7 +3244,7 @@ def main() -> int:
                 with run_log.open("a", encoding="utf-8") as f:
                     f.write(json.dumps({
                         "claim_id": cid, "phase": "json_parse_failed",
-                        "reply": reply[:2000]
+                        "reply": reply,
                     }) + "\n")
                 continue
 
@@ -3366,7 +3366,7 @@ def main() -> int:
                                 "claim_id": cid,
                                 "phase": "validation_repair_json_parse_failed",
                                 "attempt": repair_attempt,
-                                "reply": (repair_reply or "")[:2000],
+                                "reply": repair_reply or "",
                             }) + "\n")
                         continue
                     repair_casefold_path_bindings = (
@@ -3505,6 +3505,13 @@ def main() -> int:
                             "fresh schema retry codex exec failed: "
                             f"{schema_stderr.strip()[:300]}"
                         )
+                        with run_log.open("a", encoding="utf-8") as f:
+                            f.write(json.dumps({
+                                "claim_id": cid,
+                                "phase": "fresh_schema_retry_codex_failed",
+                                "attempt": schema_attempt,
+                                "error": err,
+                            }) + "\n")
                         continue
                     schema_reply = extract_response(schema_stdout)
                     schema_retry_compute_required = compute_required_reason(schema_reply)
@@ -3513,6 +3520,13 @@ def main() -> int:
                     schema_blob = parse_verdict_json(schema_reply or "")
                     if schema_blob is None:
                         err = "fresh schema retry reply not valid JSON"
+                        with run_log.open("a", encoding="utf-8") as f:
+                            f.write(json.dumps({
+                                "claim_id": cid,
+                                "phase": "fresh_schema_retry_json_parse_failed",
+                                "attempt": schema_attempt,
+                                "reply": schema_reply or "",
+                            }) + "\n")
                         continue
                     schema_casefold_path_bindings = (
                         bind_authenticated_casefold_evidence_paths(

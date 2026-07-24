@@ -5014,6 +5014,10 @@
    "deps_hash": "23027abf39aa",
    "out_degree": 3
   },
+  "full128_local_m64_seam_m2_bare_frame_intertwiner_bounded_theorem_note_2026-07-24": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
   "full_pl_s3_atlas_cocycle_closure_theorem_note_2026-05-03": {
    "deps_hash": "3201cbadbd12",
    "out_degree": 2

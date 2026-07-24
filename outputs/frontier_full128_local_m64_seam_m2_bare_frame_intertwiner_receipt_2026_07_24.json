@@ -1,0 +1,169 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "claim_type": "bounded_theorem",
+  "date": "2026-07-24",
+  "pass": true,
+  "package_scope": "bounded full local M64 tensor seam-M2 physical-site circuit/intertwiner with a static commuting-projector code and bare-coordinate code-space covariance",
+  "note": {
+    "path": "docs/FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md",
+    "bytes": 14053,
+    "sha256": "7e715a56c3d9a543821f13852cb153efb64c5943fa17e50f132a889db7e02a3b"
+  },
+  "source_dependency_closure": [
+    {
+      "path": "scripts/frontier_full128_cycle_encoder_2026_07_24.py",
+      "bytes": 36325,
+      "sha256": "c35f793b34ee202d0483de507144cfefe141372b7feba091df854f380be96e9a"
+    },
+    {
+      "path": "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py",
+      "bytes": 32492,
+      "sha256": "e79b733bd3b8e273a2094679e6175b5d1f253ebef1a33b96544519cbdf278e13"
+    },
+    {
+      "path": "scripts/frontier_full128_25site_nn_supplied_schedule_2026_07_24.py",
+      "bytes": 17419,
+      "sha256": "8ccbd6b8e14db848a65b16348842f87af0b88346beaaf7e122e564f5322093ac"
+    },
+    {
+      "path": "scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py",
+      "bytes": 28546,
+      "sha256": "18c201533790b2b876be5c414a99d857756628fc814ae32d105015506dda45e6"
+    },
+    {
+      "path": "scripts/frontier_full128_code_projectors_2026_07_24.py",
+      "bytes": 14150,
+      "sha256": "f561714d036c8c7568b1772110303d6c0da11c6d73c9df3bdcbae2db632f5b44"
+    },
+    {
+      "path": "scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py",
+      "bytes": 37738,
+      "sha256": "fb82f04e73b554e1d39f82fd40771fa5691d1f53cc2b22c76cbd5f0a741239b0"
+    }
+  ],
+  "primary_runs": [
+    {
+      "runner": "scripts/frontier_full128_cycle_encoder_2026_07_24.py",
+      "tests_passed": 10,
+      "tests_failed": 0,
+      "terminal": "LOCAL_22_M2_CYCLE_CODE_NLE2_SEAM_PORT_INTERTWINER",
+      "cache": "logs/runner-cache/frontier_full128_cycle_encoder_2026_07_24.txt",
+      "cache_sha256": "1ef451ec42bb9fa0ce81a6541e5fddaa3c0bd6947590f77659923cfc50fb6793",
+      "input_fingerprint_sha256": "465c4966326db653ac0957788ef6af6d35cebb3cb4e9dcf0e61224215dcf0766"
+    },
+    {
+      "runner": "scripts/frontier_full128_25site_nn_supplied_schedule_2026_07_24.py",
+      "tests_passed": 12,
+      "tests_failed": 0,
+      "terminal": "PASS",
+      "cache": "logs/runner-cache/frontier_full128_25site_nn_supplied_schedule_2026_07_24.txt",
+      "cache_sha256": "25fde7878673922c698de46d748aeadb5b3d74c78e94ff746d0f382870a9f8e8",
+      "input_fingerprint_sha256": "d7516e022b58b36c0bb862b91214481904d2c2002abb4db3e32ec2e6f622db9a"
+    },
+    {
+      "runner": "scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py",
+      "tests_passed": 11,
+      "tests_failed": 0,
+      "terminal": "FULL_M64_BARE_FRAME_PAIR_COCYCLE_CONTACT_CERTIFICATE",
+      "cache": "logs/runner-cache/frontier_full128_bare_frame_pair_cocycle_2026_07_24.txt",
+      "cache_sha256": "fe247b1fc910a3c93ff26897b166d3b8b5793a0bcb7df5168ab70dcf48465a12",
+      "input_fingerprint_sha256": "465c4966326db653ac0957788ef6af6d35cebb3cb4e9dcf0e61224215dcf0766"
+    },
+    {
+      "runner": "scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py",
+      "tests_passed": 13,
+      "tests_failed": 0,
+      "terminal": "FULL128_CYCLE_COCYCLE_BARE_FRAME_INTERTWINER_CERTIFICATE",
+      "cache": "logs/runner-cache/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.txt",
+      "cache_sha256": "58b8a0865dfa3a430d011d8ac77fbc4a2c983fcf58ea5edb2e730c2a6bbf83ec",
+      "input_fingerprint_sha256": "ac183c03508de8c72b9eb36153cfe9cbe9b469c56cb4bd951c09a0198f9deab6"
+    }
+  ],
+  "maximum_residuals": {
+    "pair_preparation": 0.0,
+    "pair_inverse": 8.92674853442885e-16,
+    "full_register_norm": 2.3314683517128287e-15,
+    "free_plus_seam": 8.290102484032882e-15,
+    "register_contact": 0.0,
+    "full128_EG": 8.40686768501364e-15,
+    "bare_frame_register": 0.0,
+    "update_covariance": 3.010942510752124e-15,
+    "pair_projector_hermiticity": 0.0,
+    "pair_projector_idempotence": 2.220446049250313e-16
+  },
+  "commuting_projector_certificate": {
+    "cycle_triangle_projectors": 35,
+    "cycle_independent_rank": 15,
+    "outer_repetition_projectors": 3,
+    "conditional_pair_projectors": 15,
+    "corridor_blank_projectors": 6,
+    "total_projectors": 59,
+    "joint_code_dimension": 128,
+    "pair_projector_rank": 4,
+    "pair_pair_commutator_tests": 105,
+    "pair_pair_commutator_failures": 0,
+    "cycle_pair_cross_commutator_tests": 1050,
+    "cycle_pair_cross_commutator_failures": 0,
+    "cycle_outer_cross_commutator_tests": 105,
+    "cycle_outer_cross_commutator_failures": 0,
+    "maximum_exact_DU_pair_projector_site_support": 13,
+    "maximum_exact_DU_pair_projector_L1_diameter": 7,
+    "DU_pair_projector_support_exactness_failures": 0,
+    "frame_family_covariance_failures": 0,
+    "ordered_frame_product_failures": 0,
+    "pair_projector_deletion_dimension": 512,
+    "outer_projector_deletion_dimension": 256,
+    "corridor_projector_deletion_dimension": 256,
+    "finite_cell_penalty_gap": 1,
+    "penalty_interpretation": "static code certificate only; not physical energy or a preparation/enforcement dynamics"
+  },
+  "deletion_controls": {
+    "wrong_decoded_coordinate_residual": 1.414213562373095,
+    "deleted_pair_Z_frame_residual": 1.9999999999999998,
+    "deleted_WA_dag_work_reset_residual": 1.414213562373095,
+    "contact_before_prepare_missing_phase_residual": 0.36789306705608243,
+    "deleted_one_ordered_contact_site_code_leakage": 0.1839465335280422,
+    "deleted_seam_factor_residual": 16.000000000000004
+  },
+  "resources": {
+    "semantic_M2": 61,
+    "cycle_data_M2": 25,
+    "ordered_pair_register_M2": 30,
+    "corridor_and_returned_work_M2": 6,
+    "used_routing_support_M2": 115,
+    "carrier_radius": 4,
+    "carrier_cube_M2": 729,
+    "combined_NN_gate_count": 3907,
+    "one_site_gates": 601,
+    "two_site_gates": 3306,
+    "route_swap_gates": 2716,
+    "combined_word_sha256": "a2e461d4984e4901fa0e8902c289ed2543da7545370891b96f2b50c6ba7f0fbf"
+  },
+  "domains": {
+    "train_L3_blocks": 27,
+    "held_L4_blocks": 64,
+    "held_parameters_refit": 0,
+    "placement_collisions": 0,
+    "lawful_rejections": 4,
+    "shared_port_or_recurrent_overlap_tested": false
+  },
+  "claim_boundary": {
+    "recurrent_or_two_cell_compiler": false,
+    "autonomous_microscopic_law": false,
+    "dynamical_code_enforcement_or_genesis": false,
+    "canonical_off_code_word_invariance": false,
+    "physical_time_energy_source_gravity_Record_or_Born": false,
+    "minimum_no_go_or_axiom_pressure": false
+  },
+  "dependency_hygiene": {
+    "ordinary_repo_local_imports": true,
+    "temporary_path_fallbacks": 0,
+    "archived_object_reads": 0,
+    "network_calls": 0,
+    "nonstdlib_imports": [
+      "numpy"
+    ],
+    "all_audit_sources_under_40000_bytes": true
+  }
+}

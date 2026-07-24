@@ -1,24 +1,11 @@
 #!/usr/bin/env python3
-"""Dependency-clean finite admission/port/grade substrate certificate.
+"""Dependency-clean certificate for the note's three bounded finite claims.
 
-This runner reconstructs, without campaign-module imports, the exact finite
-content needed for three deliberately narrow statements:
-
-1. five displayed radius-one, proper-cubic-invariant Boolean relations on a
-   six-direction word are total, nonconstant, and pairwise extensionally
-   distinct;
-2. unique quorum feeds one explicit conditional port, followed by a supplied
-   finite lock/readout preservation algebra;
-3. one supplied endpoint-to-unary calibration feeds a finite denominator-64
-   grade block.
-
-The runner derives no actuality or framework-Record identification.  The
-finite grade and its complete-block count identity supply no probability,
-Born-calibration, corpus, or realized-history bridge.  Physical M2 compilation
-and formation-law selection are outside the proved finite scope.
-
-The implementation is Python-standard-library only.  It does not invoke git,
-subprocesses, a network, archived objects, or another runner.
+It verifies the five proper-cubic relations, the supplied unique-quorum
+port/LOCK algebra, and the supplied denominator-64 grade block.  It derives no
+selection, actuality, Record, Born/history, or physical-M2 bridge.  The runner
+uses only the Python standard library and no external process, network, or
+archived object.
 """
 
 from __future__ import annotations
@@ -74,9 +61,7 @@ def digest(path: Path) -> str:
     return sha256(path.read_bytes()).hexdigest()
 
 
-# ---------------------------------------------------------------------------
 # Proper-cubic action on the six directed nearest-neighbor labels.
-# ---------------------------------------------------------------------------
 Vector = tuple[int, int, int]
 Matrix = tuple[Vector, Vector, Vector]
 DIRECTIONS: tuple[Vector, ...] = (
@@ -172,9 +157,7 @@ def frame_certificate() -> dict[str, object]:
     return result
 
 
-# ---------------------------------------------------------------------------
 # Five explicit local admission relations and exact model separation.
-# ---------------------------------------------------------------------------
 RULES: dict[str, frozenset[int]] = {
     "unique_quorum": frozenset((1,)),
     "odd_shells": frozenset((1, 3, 5)),
@@ -311,9 +294,7 @@ def relation_certificate() -> dict[str, object]:
     return result
 
 
-# ---------------------------------------------------------------------------
 # Unique-quorum conditional port.
-# ---------------------------------------------------------------------------
 @dataclass(frozen=True)
 class ConditionalPort:
     archive6: tuple[int, ...]
@@ -465,9 +446,7 @@ def conditional_port_certificate() -> dict[str, object]:
     return result
 
 
-# ---------------------------------------------------------------------------
 # Supplied finite lock/readout algebra.
-# ---------------------------------------------------------------------------
 @dataclass(frozen=True)
 class LockedPortState:
     payload: tuple[int, ...]
@@ -583,9 +562,7 @@ def finite_preservation_certificate() -> dict[str, object]:
     return result
 
 
-# ---------------------------------------------------------------------------
 # Endpoint-derived denominator-64 finite grade block.
-# ---------------------------------------------------------------------------
 def axis_occupancies(word: tuple[int, ...]) -> tuple[int, int, int]:
     validate_six_word(word)
     return word[0] + word[1], word[2] + word[3], word[4] + word[5]
@@ -840,9 +817,7 @@ def finite_grade_certificate() -> dict[str, object]:
     return result
 
 
-# ---------------------------------------------------------------------------
 # Clean-clone/dependency and source-note controls.
-# ---------------------------------------------------------------------------
 def dependency_closure_certificate() -> dict[str, object]:
     source = Path(__file__).read_text()
     tree = ast.parse(source)

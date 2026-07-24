@@ -502,7 +502,7 @@
     "totality_failures": 0,
     "train_words": 42
   },
-  "runner_sha256": "44621b28503d216112a60bba1adb3580e4833693d9708269ee2eae926a3480ed",
+  "runner_sha256": "79f02cc24cf5ec6949a674494c33158871fd208c85a1c9e8a05f64ddb50aa63f",
   "supplied_structure": [
     "six directed nearest-neighbor labels and their opposite pairing",
     "five static accepted-shell sets defining five candidate relations",

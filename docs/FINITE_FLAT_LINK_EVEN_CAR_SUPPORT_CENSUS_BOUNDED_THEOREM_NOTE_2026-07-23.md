@@ -192,8 +192,18 @@ proper-cubic covariance of a physical compiler is not established.
 
 Every load-bearing discretionary input is exposed:
 
-- Python standard-library facilities, NumPy, and `scipy.linalg.schur` are the
-  complete runtime import surface; no mutable repository artifact is imported;
+- Python standard-library facilities, NumPy, `scipy.linalg.schur`, and two
+  ordinary repo-local source helpers are the complete runtime import surface.
+  [`frontier_finite_flat_link_even_car_support_census_graph_2026_07_23.py`](../scripts/frontier_finite_flat_link_even_car_support_census_graph_2026_07_23.py)
+  contains the Pauli/GF(2), frame, cellulation, graph/link, and covariance
+  definitions;
+  [`frontier_finite_flat_link_even_car_support_census_factors_2026_07_23.py`](../scripts/frontier_finite_flat_link_even_car_support_census_factors_2026_07_23.py)
+  contains the transport controls, onsite algebra, mode-gate/Fock controls,
+  even-CAR polynomial checks, three-mode parity comparison, and factor census.
+  Neither helper reads notes, registries, audit state, campaign outputs, Git
+  objects, or network data. The primary runner declares both helper paths in
+  `AUDIT_INPUT_PATHS`, includes their byte counts and SHA-256 identities in
+  `source_dependency_closure`, and binds its canonical cache to their contents;
 - the signed-mode order is
   `(+x,-x,+y,-y,+z,-z)`, with reverse map `(0 1)(2 3)(4 5)`;
 - `beta=-0.3`, contact coupling `g=0.37`, inertial-mass fixture

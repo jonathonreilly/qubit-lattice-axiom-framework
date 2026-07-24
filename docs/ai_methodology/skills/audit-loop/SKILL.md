@@ -410,9 +410,16 @@ python3 docs/audit/scripts/orchestrate_audit_batch.py \
   ledger and runner bytes. Remote movement supersedes the stale delivery
   without applying or quarantining it.
 - **Live runners never repair a shared checkout.** Execute each primary/helper
-  runner in a disposable isolated worktree, capture stdout/stderr, terminate
-  its process group, and discard the whole checkout. Never infer ownership of
-  a shared untracked/ignored delta and recursively delete it.
+  runner in a disposable isolated worktree and capture stdout/stderr. Bind the
+  runner and every inherited child to an unguessable invocation token; on
+  every completion, timeout, exception, or cancellation, repeatedly enumerate
+  token-bearing processes, revalidate the token immediately before each
+  signal, and fail closed unless none remain. Never retain or signal a bare PID
+  after its identity can change. On macOS, also apply a kernel sandbox that
+  denies writes to the canonical checkout. A containment or checkout-discard
+  failure is a hard error; discard the isolated checkout on every exit path.
+  Never infer ownership of a shared untracked/ignored delta and recursively
+  delete it.
 - **Concurrency budget (shared codex pool).** Auditor seats, review-loop
   reviewers, and judicial panels all draw on one pool. Keep the TOTAL
   concurrent codex processes across every lane at or under ~8-10, and

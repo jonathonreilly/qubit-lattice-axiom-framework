@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/proper_cubic_local_admission_relations_conditional_port_finite_grade_block_2026_07_23.py
-runner_sha256: 44621b28503d216112a60bba1adb3580e4833693d9708269ee2eae926a3480ed
+runner_sha256: 79f02cc24cf5ec6949a674494c33158871fd208c85a1c9e8a05f64ddb50aa63f
 input_fingerprint_sha256: a1956ea444f0e450c5a5cdecc204db4b05346795319de4b462c25759409b80b0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.57
+elapsed_sec: 1.58
 status: ok
 ----- stdout -----
 FINITE ADMISSION / CONDITIONAL PORT / GRADE SUBSTRATE CERTIFICATE

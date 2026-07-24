@@ -36,9 +36,8 @@ import frontier_cubic_coxeter_regge_second_variation_3plus1_2026_06_09 as regge
 
 
 NOTE = ROOT / (
-    "docs/work_history/repo/review_feedback/"
-    "PHYSICAL_DYNAMICAL_METRIC_SOURCE_LAW_BRIDGE_TOURNAMENT_"
-    "CYCLE576_NOTE_2026-07-22.md"
+    "docs/FINITE_REGGE_PLAQUETTE_SCATTERING_DIAGNOSTICS_"
+    "CYCLE576_BOUNDED_THEOREM_NOTE_2026-07-22.md"
 )
 AUTHORITY = "none"
 AUDIT = "unset"
@@ -56,15 +55,26 @@ SCATTER_AMPLITUDE = 0.071
 SCATTER_STEPS = 2
 PASS = 0
 FAIL = 0
+AUDIT_TIMEOUT_SEC = 300
+AUDIT_INPUT_PATHS = (
+    "docs/FINITE_REGGE_PLAQUETTE_SCATTERING_DIAGNOSTICS_CYCLE576_BOUNDED_THEOREM_NOTE_2026-07-22.md",
+    "outputs/physical_source_insertion_selection_backreaction_tournament_cycle572_receipt_2026_07_22.json",
+    "scripts/physical_source_insertion_selection_backreaction_tournament_cycle572_2026_07_22.py",
+    "docs/FINITE_SOURCE_INSERTION_ALGEBRA_CARRIER_LABEL_SUPPORT_CYCLE572_BOUNDED_THEOREM_NOTE_2026-07-22.md",
+    "scripts/r3_regge_linearization_lambda1_healthy_graviton_2026_06_08.py",
+    "docs/R3_GEOMETRIC_REGGE_LINEARIZATION_GIVES_HEALTHY_LAMBDA1_GRAVITON_NARROW_THEOREM_NOTE_2026-06-08.md",
+    "scripts/frontier_cubic_coxeter_regge_second_variation_3plus1_2026_06_09.py",
+    "docs/CUBIC_COXETER_REGGE_3PLUS1_TICK_EXTENSION_SECOND_VARIATION_NARROW_THEOREM_NOTE_2026-06-09.md",
+)
 
 
 DEPENDENCIES = {
     "outputs/physical_source_insertion_selection_backreaction_tournament_cycle572_receipt_2026_07_22.json":
-        "0a97b2b4a2dc66c9a80f94b583822ec4406fa60478b65e4d7664c48c1af53fd1",
+        "bc3decba5fad793a177cf16823a03e7f786d717f1f68a269f7fb0859e089a675",
     "scripts/physical_source_insertion_selection_backreaction_tournament_cycle572_2026_07_22.py":
-        "ca7480c80959238585054613a45ea6dd891fd187dfcd2e3535d420b2a5225a21",
-    "docs/work_history/repo/review_feedback/PHYSICAL_SOURCE_INSERTION_SELECTION_BACKREACTION_TOURNAMENT_CYCLE572_NOTE_2026-07-22.md":
-        "95bb83a400bce4e628de0f9b47c5c23fd9c1e3212bc7a328de385ac3128c7c5a",
+        "8d9d2f53b672847fb6678ebbb6654699361f4afadf0a43daad620d99db96cdc5",
+    "docs/FINITE_SOURCE_INSERTION_ALGEBRA_CARRIER_LABEL_SUPPORT_CYCLE572_BOUNDED_THEOREM_NOTE_2026-07-22.md":
+        "46fc6d404d5b7ef973d1ef6475c802575eaedb17122b9c425217d837382acd4e",
     "scripts/r3_regge_linearization_lambda1_healthy_graviton_2026_06_08.py":
         "cd70b8d2d2deb0bd539c0d33db8254205e0112356a943a046aab4c0e1ca43264",
     "docs/R3_GEOMETRIC_REGGE_LINEARIZATION_GIVES_HEALTHY_LAMBDA1_GRAVITON_NARROW_THEOREM_NOTE_2026-06-08.md":
@@ -73,22 +83,6 @@ DEPENDENCIES = {
         "537371554e1a5244875645ca600f5f01e0ccfae64530572630d934e8ea0a85ce",
     "docs/CUBIC_COXETER_REGGE_3PLUS1_TICK_EXTENSION_SECOND_VARIATION_NARROW_THEOREM_NOTE_2026-06-09.md":
         "798e0df4311aa59f5d0d4f24b20b8949fec863484d1482111b04bce357f0d9ea",
-    "scripts/signed_gravity_tensor_source_transport_retention.py":
-        "8d7378be8f5a0e7bd5f33db058036e4e26e728f7067aa3d3448803472d06366e",
-    "docs/SIGNED_GRAVITY_TENSOR_SOURCE_TRANSPORT_RETENTION_NOTE.md":
-        "c2638add3d47d14df0358acf510a0935c7aea92b4132df5c407c4df65bcfa12f",
-    "scripts/frontier_gravity_weak_field_source_response_bridge_2026_06_11.py":
-        "0d290c4c72d78597287168f02a9aea3cdd833cb196752d4b6c0f9a7429953ccb",
-    "docs/GRAVITY_WEAK_FIELD_SOURCE_RESPONSE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md":
-        "71023af5e313037d74eb3efb56b0515c913e66947981950e1871b3acc398fdbf",
-    "scripts/frontier_gravity_leading_lattice_correction_cubic_anisotropy.py":
-        "e168cffdd005d58ec929e51e9122f3766efafc1cee82a86f9502427acece18a5",
-    "docs/GRAVITY_LEADING_LATTICE_CORRECTION_CUBIC_ANISOTROPY_THEOREM_NOTE_2026-06-07.md":
-        "933e516364782dc51c03e07863370ab891e9b7ff8d4afa4ebfd355576cb8f079",
-    "scripts/physical_m2_gravity_source_bridge_tournament_synthesis_cycle294_2026_07_17.py":
-        "834f63475a66e02b7b2a956c710d9b6b3107df764605bae747cc1bf40ed61b59",
-    "docs/work_history/repo/review_feedback/PHYSICAL_M2_GRAVITY_SOURCE_BRIDGE_TOURNAMENT_SYNTHESIS_CYCLE294_NOTE_2026-07-17.md":
-        "1295fdde24bb590b1ac14e276d4232f57c52ea833e71d1a9a777b5d3ec10c4f9",
 }
 
 
@@ -128,12 +122,12 @@ def cycle572_receipt() -> dict:
         receipt["pass"]
         and receipt["authority"] == "none"
         and receipt["audit"] == "unset"
-        and receipt["tests_passed"] == receipt["tests_total"] == 11
+        and receipt["tests_passed"] == receipt["tests_total"] == 8
         and receipt["runner_sha256"] == DEPENDENCIES[
             "scripts/physical_source_insertion_selection_backreaction_tournament_cycle572_2026_07_22.py"
         ]
         and receipt["note_sha256"] == DEPENDENCIES[
-            "docs/work_history/repo/review_feedback/PHYSICAL_SOURCE_INSERTION_SELECTION_BACKREACTION_TOURNAMENT_CYCLE572_NOTE_2026-07-22.md"
+            "docs/FINITE_SOURCE_INSERTION_ALGEBRA_CARRIER_LABEL_SUPPORT_CYCLE572_BOUNDED_THEOREM_NOTE_2026-07-22.md"
         ]
     )
     if not good:
@@ -144,15 +138,14 @@ def cycle572_receipt() -> dict:
 def note_contract() -> dict:
     required = (
         "authority: none", "audit: unset", "cycle 576", "route a", "route b", "route c",
-        "physically co-present 24-sector", "uniform frame-sector preparation is supplied",
-        "actual regge", "r3/eh target-algebra compatibility", "not an einstein equation",
-        "deficit source insertion", "bianchi", "noether", "plaquette", "conjugate",
+        "supplied 24-sector", "uniform frame-sector preparation is supplied",
+        "actual regge", "r3/eh target-algebra comparison", "not an einstein equation",
+        "deficit source insertion", "bianchi", "ward", "plaquette", "conjugate",
         "blinded held", "zero-source", "wrong-sign", "anisotropic control", "source deletion",
-        "response deletion", "actual cycle-230 contact", "physical m2", "all 24", "576",
-        "eg = gphysical e", "not physical stress", "not physical energy", "not gravity",
-        "generator is not a rate", "bounded-depth finite-time regge circuit remains open",
-        "5/(32pi)", "downstream compatibility", "n1 —", "n8 —",
-        "broad negative gate: fail / do not ship", "no axiom pressure",
+        "response deletion", "all 24", "576", "not physical stress", "not physical energy",
+        "not gravity", "generator is not a rate",
+        "bounded-depth finite-time regge circuit remains open",
+        "no physical-site compiler", "no minimum claim", "no no-go claim",
     )
     body = "" if not NOTE.exists() else " ".join(NOTE.read_text(encoding="utf-8").lower().split())
     missing = tuple(item for item in required if item not in body)
@@ -313,7 +306,7 @@ def frame_sector_hamiltonian(
     return result
 
 
-def route_a_regge(receipt: dict) -> dict:
+def route_a_regge() -> dict:
     directions = (
         np.asarray((1, 0, 0, 0), float),
         np.asarray((1, 1, 0, 0), float) / math.sqrt(2),
@@ -387,18 +380,18 @@ def route_a_regge(receipt: dict) -> dict:
             )
             products += 1
 
-    physical_hamiltonian = frame_sector_hamiltonian(generic)
+    finite_hamiltonian = frame_sector_hamiltonian(generic)
     declared_raw_source_generator = SOURCE_COUPLING * np.concatenate([
         base_deficit_source(frame @ generic) for frame in LIFTED_FRAMES
     ])
     raw_source_generator_residual = float(np.linalg.norm(
-        physical_hamiltonian[0, 1:] - declared_raw_source_generator
+        finite_hamiltonian[0, 1:] - declared_raw_source_generator
     ))
-    hermiticity = float(np.linalg.norm(physical_hamiltonian - physical_hamiltonian.conj().T))
-    initial = np.zeros(len(physical_hamiltonian), dtype=complex)
+    hermiticity = float(np.linalg.norm(finite_hamiltonian - finite_hamiltonian.conj().T))
+    initial = np.zeros(len(finite_hamiltonian), dtype=complex)
     initial[0] = 1
-    evolved = expm_multiply(-1j * UPDATE_PARAMETER * physical_hamiltonian, initial)
-    restored = expm_multiply(+1j * UPDATE_PARAMETER * physical_hamiltonian, evolved)
+    evolved = expm_multiply(-1j * UPDATE_PARAMETER * finite_hamiltonian, initial)
+    restored = expm_multiply(+1j * UPDATE_PARAMETER * finite_hamiltonian, evolved)
     deleted_source = expm_multiply(
         -1j * UPDATE_PARAMETER * frame_sector_hamiltonian(generic, include_source=False), initial
     )
@@ -434,7 +427,7 @@ def route_a_regge(receipt: dict) -> dict:
     representation = FRAME_SECTOR_REPS[1]
     update_covariance_one_frame = float(np.linalg.norm(
         representation.T @ expm(-1j * UPDATE_PARAMETER * h_rotated) @ representation
-        - expm(-1j * UPDATE_PARAMETER * physical_hamiltonian)
+        - expm(-1j * UPDATE_PARAMETER * finite_hamiltonian)
     ))
 
     single = base_metric_hessian(generic)
@@ -448,10 +441,10 @@ def route_a_regge(receipt: dict) -> dict:
         )
 
     return {
-        "route": "A_physically_co_present_24_sector_actual_Regge_edge_carrier",
+        "route": "A_supplied_24_sector_actual_Regge_edge_carrier",
         "frame_sector_status": (
-            "24 frame sectors are physically co-present one-excitation M2 rails; uniform coherent "
-            "frame-sector preparation/readout is supplied and not substrate-selected"
+            "24 frame sectors are coordinates of a supplied finite one-excitation model; uniform coherent "
+            "frame-sector preparation/readout is supplied and not selected"
         ),
         "frame_average_status": (
             "compile-time target comparison and first-order uniform-sector projection only; not a stochastic mixture "
@@ -475,9 +468,9 @@ def route_a_regge(receipt: dict) -> dict:
         "all576_metric_representation_products": products,
         "all576_metric_representation_residual": product_residual,
         "all576_sector_representation_residual": sector_product_residual,
-        "physical_edge_source_Hermiticity_residual": hermiticity,
-        "physical_update_inverse_residual": float(np.linalg.norm(restored - initial)),
-        "physical_update_norm_residual": abs(float(np.vdot(evolved, evolved).real) - 1.0),
+        "finite_edge_source_Hermiticity_residual": hermiticity,
+        "finite_state_update_inverse_residual": float(np.linalg.norm(restored - initial)),
+        "finite_state_update_norm_residual": abs(float(np.vdot(evolved, evolved).real) - 1.0),
         "source_deletion_residual": float(np.linalg.norm(evolved - deleted_source)),
         "metric_response_deletion_residual": float(np.linalg.norm(evolved - deleted_response)),
         "zero_source_metric_carrier_norm": float(np.linalg.norm(zero_source[1:])),
@@ -486,15 +479,14 @@ def route_a_regge(receipt: dict) -> dict:
         "single_frame_anisotropic_control_residual": anisotropic_control,
         "one_frame_finite_update_covariance_residual": update_covariance_one_frame,
         "source_amplitude_rows": amplitudes,
-        "physical_M2_per_cell": 361,
-        "physical_code": "one source rail plus 24x15 intrinsic hard-core edge rails per spatial coarse cell",
+        "finite_coordinate_count": 361,
+        "finite_coordinate_layout": "one source coordinate plus 24x15 edge coordinates",
         "local_generator_support": "one path 4-cell and its bounded hinge star; tick offsets are internal layer roles",
-        "generator_level_EG_equals_GphysicalE_residual": 0.0,
         "finite_time_state_law_exact_unitary": True,
         "bounded_depth_finite_time_Regge_circuit_compiled": False,
         "target_equation_used_as_update": False,
         "Einstein_equation_or_physical_gravity_derived": False,
-        "Cycle572_mass_contact_seam_receipt": receipt["physical_M2_scope"],
+        "physical_site_encoding_or_intertwiner_executed": False,
     }
 
 
@@ -608,7 +600,7 @@ def route_b_plaquette(receipt: dict) -> dict:
     return {
         "route": "B_local_plaquette_curvature_conjugate_reciprocal_gate",
         "local_dimension": 31,
-        "physical_M2_per_cell": 31,
+        "finite_coordinate_count": 31,
         "one_excitation_resource_conserved": True,
         "Hermiticity_residual": float(np.linalg.norm(hamiltonian - hamiltonian.conj().T)),
         "unitarity_residual": float(np.linalg.norm(unitary.conj().T @ unitary - np.eye(31))),
@@ -632,10 +624,10 @@ def route_b_plaquette(receipt: dict) -> dict:
         "R3_relative_residual": r3_residual,
         "R3_gauge_sample_response_norm": float(np.linalg.norm(candidate @ gauge_sample)),
         "R3_target_match_closed": False,
-        "generator_level_EG_equals_GphysicalE_residual": 0.0,
-        "placement": "after Cycle572 reservoir vertex and before streams and actual Cycle-230 contact",
+        "placement": "finite local model only; no compiled placement in a physical-site schedule",
         "Cycle572_gamma_reused_but_not_derived": receipt["route_B_plaquette_curvature_response"]["gamma_supplied"],
         "called_physical_stress_energy_or_gravity": False,
+        "physical_site_encoding_or_intertwiner_executed": False,
     }
 
 
@@ -917,69 +909,23 @@ def route_c_scattering() -> dict:
         "train_R3_relative_residual": train_r3_residual,
         "blinded_held_R3_relative_residuals": held_residuals,
         "R3_source_match_closed": False,
-        "physical_M2_per_cell": 12,
-        "two_axial_hop_face_stream_inherited": True,
-        "finite_update_EG_equals_GphysicalE_residual": 0.0,
+        "finite_direction_coordinate_count": 12,
+        "two_axial_hop_face_stream_supplied": True,
+        "physical_site_encoding_or_intertwiner_executed": False,
         "source_profile_is_supplied_background_not_dynamic_stress": True,
         "called_physical_stress_energy_gravity_or_time": False,
-    }
-
-
-def physical_compiler_controls(receipt: dict) -> dict:
-    base = receipt["physical_M2_scope"]
-    return {
-        "Cycle572_EG_equals_GphysicalE_residual": base["EG_equals_GphysicalE_residual"],
-        "one_particle_mass_residual": base["one_particle_mass_residual"],
-        "actual_Cycle230_contact_factorization_residual": base["Cycle230_contact_factorization_residual"],
-        "Cycle230_seam_braid_residual": base["Cycle230_axis_seam_braid_residual"],
-        "target_code_leakage": base["target_code_leakage"],
-        "branch_route_work_leakage": base["branch_route_work_leakage"],
-        "Route_A_extra_M2_per_cell": 361,
-        "Route_B_extra_M2_per_cell": 31,
-        "Route_C_extra_M2_per_cell": 12,
-        "Route_A_combined_live_M2": {"L3": 1782 + 361 * 27, "held_L4": 4224 + 361 * 64},
-        "Route_B_combined_live_M2": {"L3": 1782 + 31 * 27, "held_L4": 4224 + 31 * 64},
-        "Route_C_combined_live_M2": {"L3": 1782 + 12 * 27, "held_L4": 4224 + 12 * 64},
-        "bounded_constant_overhead_per_spatial_cell": True,
-        "one_excitation_hard_core_interfaces_intrinsic_M2": True,
-        "generator_level_route_A_intertwiner_residual": 0.0,
-        "finite_update_route_B_C_intertwiner_residual": 0.0,
-        "intertwiner_values_are_definitional_rail_identifications": True,
-        "intertwiner_residuals_recomputed_on_parent_branch": False,
-        "interface_evidence_scope": (
-            "exact-pinned Cycle572 receipt plus definitional one-excitation rail embedding; "
-            "no fresh parent-branch dense compiler recomputation or audit elevation"
-        ),
-        "Route_A_exact_bounded_depth_finite_time_circuit": False,
-        "global_matter_N_le_3_cutoff_locally_enforced": base["global_matter_N_le_3_cutoff_locally_enforced"],
-        "runtime_global_parity_order_or_frame_service": False,
-        "frame_sector_uniform_preparation_selected_by_substrate": False,
-    }
-
-
-def prediction_interface() -> dict:
-    return {
-        "downstream_target": "GRAVITY_LEADING_LATTICE_CORRECTION_CUBIC_ANISOTROPY",
-        "exact_target_coefficient": "5/(32pi)",
-        "cubic_harmonic": "K4(n)=sum_i n_i^4-3/5",
-        "used_to_select_or_fit_Cycle576_law": False,
-        "Newtonian_identification_imported": False,
-        "Route_A_local_metric_operator_exists": True,
-        "Route_A_static_scalar_Poisson_projection_and_inverse_closed": False,
-        "compatibility_audit_status": "interface preserved; numerical coefficient test deferred until a static scalar projection is derived",
-        "Cycle453_quadrupole_used": False,
     }
 
 
 def inventory() -> dict:
     return {
         "supplied": (
-            "Cycle572 exact-pinned resource/current, reciprocal curvature response, physical M2 counts and source amplitude interface",
+            "Cycle572 exact-pinned finite resource convention, reciprocal curvature response and supplied gamma",
             "actual 3+1 cubic-Coxeter Regge edge variables, path complex, Regge action choice and flat Hessian machinery",
-            "24 physically co-present frame sectors, uniform coherent frame-sector preparation/readout and its normalization",
+            "24 finite frame-sector coordinates, uniform coherent frame-sector preparation/readout and its normalization",
             "Regge action orientation and update scale; source coupling magnitude and sign",
-            "local deficit-sum source insertion and Cycle572 resource-to-deficit coupling rule",
-            "Route B 31-rail layout, conjugate frequency, reservoir coupling, gamma and factor placement",
+            "local deficit-sum source insertion and resource-to-deficit coupling rule",
+            "Route B 31-coordinate layout, conjugate frequency, reservoir coupling, gamma and factor placement",
             "Route C Grover coin, two-step schedule, face stream, source amplitude and supplied source profiles",
             "finite L3/L4 periodic domains, tolerances, readouts and train/held split",
         ),
@@ -991,7 +937,6 @@ def inventory() -> dict:
             "exact local plaquette/conjugate reciprocal resource gate with all24/all576 covariance",
             "exact face scattering tangent/inverse plus least-squares tensor-projection and blinded held diagnostics",
             "route-specific R3 mismatch diagnostics for B and C",
-            "physical-M2 one-excitation compiler interfaces and exact-pinned mass/contact/seam controls",
         ),
         "open": (
             "derivation/selection of edge variables, Regge action, orientation, source sign and normalization",
@@ -999,86 +944,38 @@ def inventory() -> dict:
             "physical stress-energy identification and coordinate-observable calibration",
             "nonlinear Regge/Einstein equation, Lorentzian/continuum/strong-field closure and global existence",
             "endogenous source profiles, locally enforced arbitrary matter sector and arbitrary size",
-            "static scalar Poisson projection, 5/(32pi) downstream correction audit and empirical coupling",
+            "a local physical-site encoding, constraint system, leakage controls and executed intertwiner",
             "physical time, Record formation, realized history and Born probability",
         ),
-    }
-
-
-def no_go_controls() -> dict:
-    families = (
-        {"family": "co-present frame-orbit Regge edge action", "object": "24x15 edge rails", "mechanism": "actual deficit Hessian plus local deficit source", "terminal": "R3-compatible local metric generator", "marker": "ATTEMPTED", "result": "bounded generator positive; finite-depth circuit/source selection open"},
-        {"family": "plaquette conjugate carrier", "object": "matter/curvature/momentum/reservoir one-excitation block", "mechanism": "reciprocal Hermitian exchange", "terminal": "dynamical curvature response", "marker": "ATTEMPTED", "result": "local positive; R3 mismatch"},
-        {"family": "scattering tensor projection", "object": "face-orbit quantum walk", "mechanism": "directional phase tangent and least-squares tensor diagnostic", "terminal": "held source-to-metric law", "marker": "ATTEMPTED", "result": "held tangent positive; tensor fit poor and R3 source mismatch"},
-        {"family": "weak-field graph Poisson", "object": "scalar graph Laplacian", "mechanism": "stationary quadratic action", "terminal": "static scalar response", "marker": "RULED OUT BY PRIOR ONLY FOR FULL R3 TERMINAL", "result": "bounded scalar comparator, not tensor metric dynamics"},
-        {"family": "signed tensor projective transport", "object": "orientation-line tensor bundle", "mechanism": "linear/projective transport", "terminal": "signed source portability", "marker": "RULED OUT BY PRIOR ONLY FOR NAIVE NONLINEAR SIGN FLIP", "result": "linear carrier positive; graded nonlinear/global open"},
-        {"family": "recurrent nonlinear Regge scattering", "object": "many-edge many-source sectors", "mechanism": "local repeated action/backreaction", "terminal": "nonlinear metric equation", "marker": "OPEN", "result": "not ruled out"},
-        {"family": "induced metric from clock/record intervals", "object": "operational interval network", "mechanism": "record-clock reconstruction", "terminal": "physical metric calibration", "marker": "OPEN", "result": "not tested here"},
-    )
-    walls = (
-        ("W_select", "select edge/action/frame preparation and source coupling law"),
-        ("W_circuit", "exact bounded-depth finite-time Regge update on physical M2"),
-        ("W_physical", "physical stress/metric observable and calibration"),
-        ("W_nonlinear", "nonlinear/global metric equation and existence"),
-        ("W_sector", "locally enforced arbitrary matter/source sectors and endogenous preparation"),
-    )
-    pairs = []
-    for left in range(len(walls)):
-        for right in range(left + 1, len(walls)):
-            pairs.append({
-                "pair": [walls[left][0], walls[right][0]],
-                "first_closes_second": "no",
-                "second_closes_first": "no",
-                "independent": "yes",
-            })
-    return {
-        "N1_approach_families": families,
-        "N2_collapsed_walls": walls,
-        "N2_pairwise_independence": pairs,
-        "N3_hidden_condition_scan": (
-            "Regge complex/action/edge variables/orientation and exact line-averaged metric map are explicit",
-            "24-sector physical layout, uniform coherent preparation/readout and normalization are explicit",
-            "source insertion/sign/amplitude, update scales, gate orders and finite domains are explicit",
-            "Route B/C layouts, profiles, calibration fit and held split are explicit",
-            "Cycle572 compiler cutoff and generator-versus-finite-circuit boundary are explicit",
-        ),
-        "N4_residual_matching": (
-            {"witness": "Cycle572", "witness_residual": "supplied bilinear response/no metric equation", "current_residual": "deficit-sourced actual-Regge generator", "match": "yes for bounded generator bridge only"},
-            {"witness": "R3 target", "witness_residual": "target algebra, no Regge action", "current_residual": "target compatibility", "match": "yes; actual Regge Hessian used, target equation not update"},
-            {"witness": "3+1 Regge theorem", "witness_residual": "edge/action selection and sign", "current_residual": "same selections remain supplied", "match": "yes"},
-            {"witness": "signed tensor transport", "witness_residual": "naive nonlinear sign flip", "current_residual": "linear sign control only", "match": "no; not used as nonlinear closure"},
-            {"witness": "weak-field Poisson", "witness_residual": "scalar stationary response", "current_residual": "tensor metric dynamics", "match": "no; downstream comparator only"},
-            {"witness": "Cycle294", "witness_residual": "no common source/response law", "current_residual": "one bounded deficit source interface", "match": "partial; physical identification remains open"},
-        ),
-        "N5_rhetoric_audit": (
-            {"statement": "not an Einstein equation", "tested": "linearized finite-mode target compatibility and exact Regge generator", "untested": "nonlinear/global/continuum physical equation", "scope": "Cycle576 does not claim them"},
-            {"statement": "resource is not physical stress", "tested": "explicit supplied deficit coupling and conserved one-excitation resource", "untested": "empirical/operational stress calibration", "scope": "no physical naming"},
-            {"statement": "B/C do not match R3", "tested": "declared oscillator and held scattering ansatz", "untested": "other plaquette/scattering laws", "scope": "route-specific only"},
-        ),
-        "N6_partial_closure_paths": (
-            "derive the frame-sector scalar preparation as a unique invariant ground/code state",
-            "color the finite-range Regge generator into an exact covariant bounded-depth circuit or quantify a convergent product formula",
-            "derive the deficit coupling from a coordinate variation of the joined matter action",
-            "extend the edge/source Hamiltonian into recurrent many-excitation nonlinear sectors",
-            "derive a static scalar projection before auditing the downstream 5/(32pi) target",
-        ),
-        "N7_hostile_steelman": (
-            "The strongest construction still chooses the Regge edge variables, action orientation, deficit coupling, "
-            "and uniform frame-sector state. A different invariant frame-sector Hamiltonian, a local product formula, "
-            "or a many-edge quantum link model could select these ingredients and close the circuit wall. Conversely, "
-            "the plaquette and scattering failures concern only their present finite ansatz and cannot exclude richer "
-            "curvature or transport carriers."
-        ),
-        "N8_cross_cycle_echo": (
-            "Cycle294's common-law wall was narrowed by Cycle572's reciprocal local source response",
-            "Cycle560/563 retired compiler/order walls by explicit bounded auxiliaries rather than axiom edits",
-            "the 3+1 Regge pass retired the R3 action-Hessian gap while preserving selection/sign walls",
-            "signed gravity replaced a naive sign flip with graded jets rather than a universal no-go",
-            "Cycle576 uses a co-present frame orbit to repair preferred-frame covariance but keeps preparation selection open",
-        ),
-        "broad_negative_gate": "FAIL / DO NOT SHIP",
-        "shared_obstruction": "none established",
-        "axiom_pressure": "none",
+        "supplied_parameters": {
+            "regge_update_scale": REGGE_UPDATE_SCALE,
+            "source_coupling": SOURCE_COUPLING,
+            "source_coupling_sign": "+",
+            "update_parameter": UPDATE_PARAMETER,
+            "plaquette_omega": PLAQUETTE_OMEGA,
+            "plaquette_eta": PLAQUETTE_ETA,
+            "plaquette_gamma": PLAQUETTE_GAMMA,
+            "scatter_amplitude": SCATTER_AMPLITUDE,
+            "scatter_steps": SCATTER_STEPS,
+            "frame_sector_count": len(FRAMES),
+            "edge_coordinates_per_sector": 15,
+            "uniform_frame_sector_preparation_and_readout": True,
+            "small_momentum_comparison_magnitude": 1.0e-3,
+            "covariance_control_momentum": (0.17, 0.11, 0.07, 0.13),
+            "route_A_source_amplitude_fixtures": (
+                ("TRAIN_L3", 3, 0.6, (2 * np.pi / 3, 0.0, 0.0, 0.0)),
+                ("HELD_L4_LOW", 4, 0.37, (np.pi / 2, np.pi / 2, 0.0, 0.0)),
+                ("HELD_L4_SIGN", 4, -0.81, (np.pi / 2, 0.0, np.pi / 2, np.pi / 2)),
+            ),
+            "route_B_coordinate_layout": "6 matter + 12 curvature + 12 conjugate + 1 reservoir",
+            "route_C_coin": "normalized 12-direction Grover coin",
+            "route_C_profile_coefficients": (0.35, 0.27, 0.41),
+            "route_C_tangent_step": 8.0e-7,
+            "tolerance": TOL,
+            "finite_difference_tolerance": FD_TOL,
+            "target_match_tolerance": MATCH_TOL,
+            "signal_floor": SIGNAL,
+        },
     }
 
 
@@ -1089,16 +986,13 @@ def main() -> int:
     dependencies = dependency_controls()
     receipt = cycle572_receipt()
     note = note_contract()
-    route_a = route_a_regge(receipt)
+    route_a = route_a_regge()
     route_b = route_b_plaquette(receipt)
     route_c = route_c_scattering()
-    compiler = physical_compiler_controls(receipt)
-    prediction = prediction_interface()
     supplied = inventory()
-    nogo = no_go_controls()
 
-    check("all Cycle572, actual-Regge, R3, signed-source and prediction dependencies are exact-pinned", dependencies["pass"], dependencies)
-    check("note contract keeps frame-sector, source, physical-naming, compiler and N1-N8 firewalls", note["pass"], note)
+    check("all Cycle572, actual-Regge and R3 dependencies are exact-pinned", dependencies["pass"], dependencies)
+    check("note contract keeps the finite-execution and physical-naming boundary explicit", note["pass"], note)
     check(
         "Route A actual-Regge target projection matches R3/EH at small k without using the target equation as update",
         abs(route_a["mean_best_fit_coefficient"] + 0.5) < MATCH_TOL
@@ -1124,10 +1018,10 @@ def main() -> int:
         route_a,
     )
     check(
-        "Route A co-present frame-sector state law is inverse and source/response/deletion sensitive with honest circuit wall",
-        route_a["physical_edge_source_Hermiticity_residual"] < TOL
-        and route_a["physical_update_inverse_residual"] < TOL
-        and route_a["physical_update_norm_residual"] < TOL
+        "Route A supplied frame-sector state law is inverse and source/response/deletion sensitive",
+        route_a["finite_edge_source_Hermiticity_residual"] < TOL
+        and route_a["finite_state_update_inverse_residual"] < TOL
+        and route_a["finite_state_update_norm_residual"] < TOL
         and route_a["source_deletion_residual"] > SIGNAL
         and route_a["metric_response_deletion_residual"] > SIGNAL
         and route_a["zero_source_metric_carrier_norm"] < TOL
@@ -1185,7 +1079,7 @@ def main() -> int:
         route_c,
     )
     check(
-        "Route C held source profiles falsify only the declared scattering-to-R3 source template",
+        "Route C held source profiles diagnose mismatch of the declared scattering-to-R3 source template",
         route_c["train_R3_relative_residual"] > 0.05
         and min(route_c["blinded_held_R3_relative_residuals"]) > 0.05
         and not route_c["R3_source_match_closed"],
@@ -1196,47 +1090,12 @@ def main() -> int:
         },
     )
     check(
-        "physical-M2 interface carries exact-pinned Cycle572 values and exposes evidence/circuit walls",
-        compiler["Cycle572_EG_equals_GphysicalE_residual"] == 0
-        and compiler["one_particle_mass_residual"] < TOL
-        and compiler["actual_Cycle230_contact_factorization_residual"] < TOL
-        and compiler["Cycle230_seam_braid_residual"] < TOL
-        and compiler["target_code_leakage"] < TOL
-        and compiler["branch_route_work_leakage"] < TOL
-        and compiler["bounded_constant_overhead_per_spatial_cell"]
-        and compiler["generator_level_route_A_intertwiner_residual"] == 0
-        and compiler["finite_update_route_B_C_intertwiner_residual"] == 0
-        and compiler["intertwiner_values_are_definitional_rail_identifications"]
-        and not compiler["intertwiner_residuals_recomputed_on_parent_branch"]
-        and not compiler["Route_A_exact_bounded_depth_finite_time_circuit"]
-        and not compiler["global_matter_N_le_3_cutoff_locally_enforced"]
-        and not compiler["frame_sector_uniform_preparation_selected_by_substrate"],
-        compiler,
-    )
-    check(
-        "5/(32pi) cubic-anisotropy prediction remains downstream and is not imported into law selection",
-        prediction["exact_target_coefficient"] == "5/(32pi)"
-        and not prediction["used_to_select_or_fit_Cycle576_law"]
-        and not prediction["Newtonian_identification_imported"]
-        and not prediction["Route_A_static_scalar_Poisson_projection_and_inverse_closed"],
-        prediction,
-    )
-    check(
         "supplied/derived/open inventory exposes sign, calibration, frame, circuit and nonlinear structure",
-        len(supplied["supplied"]) >= 8 and len(supplied["derived"]) >= 8 and len(supplied["open"]) >= 7,
+        len(supplied["supplied"]) >= 8
+        and len(supplied["derived"]) >= 7
+        and len(supplied["open"]) >= 7
+        and len(supplied["supplied_parameters"]) >= 20,
         supplied,
-    )
-    check(
-        "full N1-N8 retains bounded positives but blocks route-specific failure, shared no-go and axiom pressure",
-        len(nogo["N1_approach_families"]) >= 7
-        and len(nogo["N2_collapsed_walls"]) == 5
-        and len(nogo["N2_pairwise_independence"]) == 10
-        and len(nogo["N4_residual_matching"]) >= 6
-        and len(nogo["N5_rhetoric_audit"]) >= 3
-        and nogo["broad_negative_gate"] == "FAIL / DO NOT SHIP"
-        and nogo["shared_obstruction"] == "none established"
-        and nogo["axiom_pressure"] == "none",
-        nogo,
     )
 
     peak = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
@@ -1248,21 +1107,17 @@ def main() -> int:
         "route_A": route_a,
         "route_B": route_b,
         "route_C": route_c,
-        "physical_compiler": compiler,
-        "prediction_interface": prediction,
         "inventory": supplied,
-        "no_go": nogo,
         "terminal": {
             "strongest_constructive_result": (
-                "co-present proper-cubic actual-Regge edge carrier with local deficit source and R3 target compatibility"
+                "supplied proper-cubic finite Regge edge model with deficit insertion and R3 target-algebra match"
             ),
             "actual_Regge_generator_and_source_Ward_closed": True,
             "R3_target_algebra_compatibility_closed": True,
+            "physical_site_compiler_executed": False,
             "physical_stress_or_Einstein_equation_closed": False,
             "bounded_depth_finite_time_Regge_circuit_closed": False,
             "source_sign_normalization_or_frame_preparation_selected": False,
-            "shared_obstruction": False,
-            "axiom_pressure": False,
         },
         "resources": {"elapsed_seconds": perf_counter() - started, "peak_rss_mb": peak},
         "passes": PASS,

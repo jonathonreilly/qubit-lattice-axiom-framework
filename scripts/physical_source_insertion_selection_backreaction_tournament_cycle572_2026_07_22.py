@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Cycle 572: source-insertion selection/backreaction tournament.
+"""Cycle 572: finite source-insertion algebra and carrier-label support.
 
-Route A tests a finite local source-action/Noether-Ward selection of the
-Cycle569 joint insertion. Route B adds a dynamical plaquette-curvature
-controlled phase with exact resource debit and reciprocal mixed response.
-Route C installs the complete eight-direction body-diagonal orbit on a new
-frozen held fixture, explicitly testing the narrow face-orbit minimality idea.
+Route A recovers coordinates in a supplied five-element operator basis and
+checks finite Ward/contact algebraic identities. Route B applies a supplied
+plaquette-curvature controlled phase and checks reciprocal mixed response.
+Route C counts coarse directed carrier/reservoir bits and tests their sparse
+proper-cubic label action.
 
 Nothing here is called physical stress, energy, work, force, gravity, or a
 rate. Cycle561 endpoint count is not used.
@@ -29,20 +29,16 @@ import numpy as np
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-import common_matter_field_coin_family_cycle219_2026_07_16 as c219
-import spatial_car_contact_seam_form_factor_cycle230_2026_07_17 as c230
-import physical_held_sparse_order_retirement_cycle563_2026_07_21 as c563
-import physical_reservoir_spacetime_action_source_tournament_cycle566_2026_07_22 as c566
-import physical_enlarged_link_contact_work_tournament_cycle569_2026_07_22 as c569
+import physical_source_insertion_selection_backreaction_cycle572_finite_support_2026_07_22 as c569
 
 
 c564 = c569.c564
 c210 = c569.c210
 collision = c569.collision
 NOTE = ROOT / (
-    "docs/work_history/repo/review_feedback/"
-    "PHYSICAL_SOURCE_INSERTION_SELECTION_BACKREACTION_TOURNAMENT_"
-    "CYCLE572_NOTE_2026-07-22.md"
+    "docs/"
+    "FINITE_SOURCE_INSERTION_ALGEBRA_CARRIER_LABEL_SUPPORT_"
+    "CYCLE572_BOUNDED_THEOREM_NOTE_2026-07-22.md"
 )
 AUTHORITY = "none"
 AUDIT = "unset"
@@ -56,54 +52,30 @@ HELD_LENGTH = 4
 LAWFUL_LENGTHS = (3, 4)
 PASS = 0
 FAIL = 0
+AUDIT_TIMEOUT_SEC = 300
+AUDIT_INPUT_PATHS = (
+    "docs/FINITE_SOURCE_INSERTION_ALGEBRA_CARRIER_LABEL_SUPPORT_CYCLE572_BOUNDED_THEOREM_NOTE_2026-07-22.md",
+    "scripts/physical_source_insertion_selection_backreaction_cycle572_finite_support_2026_07_22.py",
+)
 
 DEPENDENCIES = {
-    "scripts/physical_enlarged_link_contact_work_tournament_cycle569_2026_07_22.py":
-        "c0f06a9cc9ffc4dcfe1d80b94da10bbef81ca1c74fddddac48712b0a7c332ced",
-    "docs/work_history/repo/review_feedback/PHYSICAL_ENLARGED_LINK_CONTACT_WORK_TOURNAMENT_CYCLE569_NOTE_2026-07-22.md":
-        "6a71c727ec516345d3d1e72564edc0a991993b4951314ddfdf255a5eb71de6bc",
-    "outputs/physical_enlarged_link_contact_work_tournament_cycle569_receipt_2026_07_22.json":
-        "c80aae229d3721b273d12188960e2a4b16402d10a982856bec76c465dad52baa",
-    "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py":
-        "ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a",
-    "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py":
-        "b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae",
-    "scripts/physical_held_sparse_order_retirement_cycle563_2026_07_21.py":
-        "444a5c0fb3cb1758236ddefaeb472d0002cadb256d3c4df723fd562129c7325b",
-    "scripts/physical_discrete_action_full_compiler_stress_current_tournament_cycle564_2026_07_21.py":
-        "d15d0661407df3325d72e06bbf5cbc9316afe9906499af223bccf8cd29ee686c",
-    "docs/work_history/repo/review_feedback/PHYSICAL_DISCRETE_ACTION_FULL_COMPILER_STRESS_CURRENT_TOURNAMENT_CYCLE564_NOTE_2026-07-21.md":
-        "e6df9590ef7e29f97a332417c49606a07aecdfadbaf4ec85660f8272b4f2acd3",
-    "outputs/physical_discrete_action_full_compiler_stress_current_tournament_cycle564_receipt_2026_07_21.json":
-        "c66426669ba4769b922798207359af2cd3db01193bbc9268f381bdc4cef51e7b",
-    "scripts/physical_reservoir_spacetime_action_source_tournament_cycle566_2026_07_22.py":
-        "d0e2495b215146b33896a5175cd8ec5e1094c7cf512557702ca8993e9315e10b",
-    "scripts/two_slice_offdiagonal_contact_reservoir_work_ledger_2026_07_17.py":
-        "d533418438a6b76a971c90d5df2e57aaa2944e762b6474b26241b24ac489f5c0",
-    "scripts/physical_locally_conserved_current_response_law_tournament_cycle559_2026_07_21.py":
-        "a6475b85ad4c87cae58ee09d371ff91f82719d50e72e8f5ff88d5030fef681be",
-    "docs/work_history/repo/review_feedback/PHYSICAL_LOCALLY_CONSERVED_CURRENT_RESPONSE_LAW_TOURNAMENT_CYCLE559_NOTE_2026-07-21.md":
-        "4410c285e8c2a41969a8854258ccaeaaad6c0b3a3340bae1ed39fdfbe9ca1136",
-    "scripts/physical_energy_stress_source_identification_tournament_cycle562_2026_07_21.py":
-        "b1c601a7538f6e19b71386e26fd45dda8ecc9e22915acf17b90d30021e8b8ae9",
-    "docs/work_history/repo/review_feedback/PHYSICAL_ENERGY_STRESS_SOURCE_IDENTIFICATION_TOURNAMENT_CYCLE562_NOTE_2026-07-21.md":
-        "816646ca26cd1105103980b5c035a8e2616176033aa5801ae59fd33452debc8d",
-    "scripts/physical_relaxed_cubic_field_passive_m64_backreaction_cycle464_2026_07_19.py":
-        "76f8f90644525103149e711d5371663fa52df8eacc2cfe383787f89944baf743",
-    "docs/work_history/repo/review_feedback/PHYSICAL_RELAXED_CUBIC_FIELD_PASSIVE_M64_BACKREACTION_CYCLE464_NOTE_2026-07-19.md":
-        "270ab07f7905d60b5e67146d5e22380ec293797a33511e9fa68908c022dcc129",
-    "scripts/lattice_noether_carrier_independent_bilateral_identity_narrow_2026_05_17.py":
-        "3f8ba0dcafe3f046adf2cb9fbc8d1df0ad77a696fc8658276d55da2b139993a3",
-    "docs/LATTICE_NOETHER_CARRIER_INDEPENDENT_BILATERAL_IDENTITY_NARROW_THEOREM_NOTE_2026-05-17.md":
-        "6c0b080b3be807faf8660e2eb211b8ec383b6a8e91c229707bf721ac66d1390a",
-    "scripts/r3_regge_linearization_lambda1_healthy_graviton_2026_06_08.py":
-        "cd70b8d2d2deb0bd539c0d33db8254205e0112356a943a046aab4c0e1ca43264",
-    "docs/R3_GEOMETRIC_REGGE_LINEARIZATION_GIVES_HEALTHY_LAMBDA1_GRAVITON_NARROW_THEOREM_NOTE_2026-06-08.md":
-        "10c16354c6d57bd4b67b17f1e8bcaffbb60b3dab9a58471ddc3a5483aaced13b",
-    "scripts/signed_gravity_tensor_source_transport_retention.py":
-        "8d7378be8f5a0e7bd5f33db058036e4e26e728f7067aa3d3448803472d06366e",
-    "docs/SIGNED_GRAVITY_TENSOR_SOURCE_TRANSPORT_RETENTION_NOTE.md":
-        "c2638add3d47d14df0358acf510a0935c7aea92b4132df5c407c4df65bcfa12f",
+    "scripts/physical_source_insertion_selection_backreaction_cycle572_finite_support_2026_07_22.py":
+        "a0008b105d33461d7e4615a8afe58d83e436415d1a75ddb4cb7d41ec1defdf37",
+    "docs/FINITE_SOURCE_INSERTION_ALGEBRA_CARRIER_LABEL_SUPPORT_CYCLE572_BOUNDED_THEOREM_NOTE_2026-07-22.md":
+        "46fc6d404d5b7ef973d1ef6475c802575eaedb17122b9c425217d837382acd4e",
+}
+
+# Historical digest retained only as provenance for the reviewed Cycle-569
+# finite-zero restriction rows.  No file or Git object is opened at runtime.
+CYCLE569_HISTORICAL_RECEIPT_SHA256 = (
+    "c80aae229d3721b273d12188960e2a4b16402d10a982856bec76c465dad52baa"
+)
+CYCLE569_FINITE_PRIOR = {
+    "Cycle566_supplied_T00_value": 0.0,
+    "Cycle566_supplied_T0i_value": 0.0,
+    "maximum_all24_tensor_carrier_covariance_residual": 0.0,
+    "frame_products": 576,
+    "maximum_frame_product_residual": 0.0,
 }
 
 BODY_DIRECTIONS = np.asarray(tuple(product((-1, 1), repeat=3)), dtype=int)
@@ -133,26 +105,7 @@ def dependency_controls() -> dict:
 
 
 def cycle569_prior_controls() -> dict:
-    """Map the committed receipt and recompute fields it does not retain."""
-    receipt_path = ROOT / "outputs/physical_enlarged_link_contact_work_tournament_cycle569_receipt_2026_07_22.json"
-    receipt = json.loads(receipt_path.read_text(encoding="utf-8"))
-    if (
-        not receipt["pass"]
-        or receipt["authority"] != "none"
-        or receipt["audit"] != "unset"
-        or receipt["full_tests_passed"] != receipt["full_tests_total"]
-        or receipt["runner_sha256"] != DEPENDENCIES[
-            "scripts/physical_enlarged_link_contact_work_tournament_cycle569_2026_07_22.py"
-        ]
-        or receipt["note_sha256"] != DEPENDENCIES[
-            "docs/work_history/repo/review_feedback/PHYSICAL_ENLARGED_LINK_CONTACT_WORK_TOURNAMENT_CYCLE569_NOTE_2026-07-22.md"
-        ]
-    ):
-        raise RuntimeError("strict-pinned committed Cycle569 receipt does not match its runner")
-
-    # The receipt retains the restriction residuals but not Cycle569's separate
-    # geometric shear-carrier covariance scalar. Recompute that scalar from the
-    # exact-pinned proper-cubic representation rather than hard-code it.
+    """Recompute the exact finite Cycle-569 rows used by Cycle 572."""
     shear_covariance = 0.0
     base_vector = np.asarray((1, 1, 0), dtype=int)
     base = np.outer(base_vector, base_vector)
@@ -163,20 +116,38 @@ def cycle569_prior_controls() -> dict:
             float(np.linalg.norm(np.outer(vector, vector) - frame @ base @ frame.T)),
         )
 
-    # Likewise recompute all 24x24 representation products on the frozen held
-    # state and cross-check the residual retained in the committed receipt.
     products = c569.frame_product_controls(c569.n3_shear_preparation(HELD_LENGTH), HELD_LENGTH)
-    receipt_product_residual = receipt["route_A_face_carrier"]["all576_frame_product_residual"]
-    if abs(products["maximum_residual"] - receipt_product_residual) >= TOL:
-        raise RuntimeError("recomputed Cycle569 frame products disagree with committed receipt")
+    finite_support_checks = {
+        "proper_cubic_frames": len(c210.proper_cubic_frames()),
+        "face_directions": len(c569.FACE_DIRECTIONS),
+        "coin_unitarity_residual": float(
+            np.linalg.norm(c569.SPECIES.coin.conj().T @ c569.SPECIES.coin - np.eye(6))
+        ),
+        "collision_contact_pairs": c569.collision.reduced_operators()["contact_pairs"].tolist(),
+    }
+    if not (
+        shear_covariance == CYCLE569_FINITE_PRIOR[
+            "maximum_all24_tensor_carrier_covariance_residual"
+        ]
+        and products["frame_products"] == CYCLE569_FINITE_PRIOR["frame_products"]
+        and products["maximum_residual"]
+        == CYCLE569_FINITE_PRIOR["maximum_frame_product_residual"]
+        and finite_support_checks["proper_cubic_frames"] == 24
+        and finite_support_checks["face_directions"] == 12
+        and finite_support_checks["coin_unitarity_residual"] < TOL
+        and finite_support_checks["collision_contact_pairs"] == [6, 7]
+    ):
+        raise RuntimeError("reconstructed finite Cycle569 support contract failed")
 
-    insertion = receipt["route_C_joint_insertion"]
     return {
-        "receipt_sha256": DEPENDENCIES[
-            "outputs/physical_enlarged_link_contact_work_tournament_cycle569_receipt_2026_07_22.json"
-        ],
-        "Cycle566_T00_restriction_residual": insertion["Cycle566_T00_restriction_residual"],
-        "Cycle566_T0i_restriction_residual": insertion["Cycle566_T0i_restriction_residual"],
+        "receipt_sha256": CYCLE569_HISTORICAL_RECEIPT_SHA256,
+        "historical_receipt_runtime_dependency": False,
+        "finite_support_checks": finite_support_checks,
+        "Cycle566_supplied_values": {
+            "T00": CYCLE569_FINITE_PRIOR["Cycle566_supplied_T00_value"],
+            "T0i": CYCLE569_FINITE_PRIOR["Cycle566_supplied_T0i_value"],
+            "derived_here": False,
+        },
         "maximum_all24_tensor_carrier_covariance_residual": shear_covariance,
         "frame_products": products,
     }
@@ -185,12 +156,13 @@ def cycle569_prior_controls() -> dict:
 def note_contract() -> dict:
     required = (
         "authority: none", "audit: unset", "cycle 572", "route a", "route b", "route c",
-        "variational", "noether", "ward", "plaquette-curvature", "nonlinear response",
-        "backreaction", "body-diagonal", "actual cycle-230 contact", "cycle-566 reservoir debit",
-        "cycle 563", "physical m2", "held l4", "held n=3", "without refit",
-        "all 24", "576", "eg = gphysical e", "not physical stress", "not physical energy",
-        "not physical work", "not gravity", "endpoint count is not used", "not locally enforced",
-        "n1 —", "n8 —", "broad negative gate: fail / do not ship", "no axiom pressure",
+        "basis-coordinate recovery", "ward", "contact telescope", "plaquette-curvature",
+        "reciprocal mixed response", "body-diagonal", "cycle-566 values",
+        "directed carrier-label bits", "held l4", "without refit", "all 24", "576",
+        "no physical-site compiler", "physical stress", "physical energy",
+        "physical work", "gravity", "endpoint count is not used",
+        "no impossibility or minimum-content claim",
+        "claim type: bounded_theorem", "source-note proposal", "effective status",
     )
     body = "" if not NOTE.exists() else " ".join(NOTE.read_text(encoding="utf-8").lower().split())
     missing = tuple(item for item in required if item not in body)
@@ -210,7 +182,7 @@ def ward_derivative(gate: np.ndarray, observable: np.ndarray, epsilon: float) ->
     return (source(epsilon) - source(-epsilon)) / (2j * epsilon)
 
 
-def route_a_variational_selection(prior: dict) -> dict:
+def route_a_basis_coordinates(prior: dict) -> dict:
     operators = collision.reduced_operators()
     identity18 = np.eye(18, dtype=complex)
     identity2 = np.eye(2, dtype=complex)
@@ -229,10 +201,24 @@ def route_a_variational_selection(prior: dict) -> dict:
     target = basis[0] + basis[1] + basis[2]
     design = np.column_stack([item.reshape(-1) for item in basis])
     coefficients, *_ = np.linalg.lstsq(design, target.reshape(-1), rcond=None)
-    selection_residual = float(np.linalg.norm(design @ coefficients - target.reshape(-1)))
+    coordinate_residual = float(np.linalg.norm(design @ coefficients - target.reshape(-1)))
     gram = design.conj().T @ design
     rank = int(np.linalg.matrix_rank(gram, tol=1e-11))
     condition = float(np.linalg.cond(gram))
+    expected = np.asarray((1, 1, 1, 0, 0), dtype=complex)
+    coefficient_residual = float(np.linalg.norm(coefficients - expected))
+    hostile_expected = np.asarray((1, 1, 1, 0.37, -0.21), dtype=complex)
+    hostile_target = design @ hostile_expected
+    hostile_coefficients, *_ = np.linalg.lstsq(design, hostile_target, rcond=None)
+    hostile_coordinate_residual = float(
+        np.linalg.norm(design @ hostile_coefficients - hostile_target)
+    )
+    hostile_coefficient_residual = float(
+        np.linalg.norm(hostile_coefficients - hostile_expected)
+    )
+    wrong_coordinate_residual = float(
+        np.linalg.norm(design @ np.asarray((1, 1, 0, 0, 0)) - target.reshape(-1))
+    )
 
     vertex = np.kron(operators["V"], identity2)
     contact = np.kron(operators["W"], identity2)
@@ -243,43 +229,32 @@ def route_a_variational_selection(prior: dict) -> dict:
     telescope = float(np.linalg.norm(total - exchange - contact_part))
     finite = ward_derivative(full, target, 7.0e-7)
     ward_residual = float(np.linalg.norm(finite - total))
-    q_noether = float(np.linalg.norm(full.conj().T @ basis[0] @ full - basis[0]))
-
-    # The face reservoir debit is a literal U(1) block: resource plus uniform
-    # carrier. Its local commutator is the finite Noether charge check.
-    local_dimension = 13
-    local_identity = np.eye(local_dimension, dtype=complex)
-    source = np.zeros(local_dimension, dtype=complex)
-    source[0] = 1
-    scalar = np.zeros(local_dimension, dtype=complex)
-    scalar[1:] = 1 / math.sqrt(12)
-    projector = np.outer(source, source.conj()) + np.outer(scalar, scalar.conj())
-    flip = np.outer(source, scalar.conj()) + np.outer(scalar, source.conj())
-    local_gate = local_identity + (math.cos(c569.ETA) - 1) * projector + 1j * math.sin(c569.ETA) * flip
-    local_charge = np.eye(local_dimension, dtype=complex)
-    local_charge_commutator = float(np.linalg.norm(local_gate @ local_charge - local_charge @ local_gate))
+    resource_identity = float(
+        np.linalg.norm(full.conj().T @ basis[0] @ full - basis[0])
+    )
 
     return {
-        "route": "A_finite_local_variational_Noether_Ward_selection",
+        "route": "A_supplied_basis_coordinate_and_algebraic_identity_check",
         "source_action": "F_Theta(epsilon)=G^dag exp(i epsilon Theta) G exp(-i epsilon Theta)",
-        "ansatz_basis": ("m(Qx+Qy)", "mX on selector0", "mY on selector1", "mZ contaminant", "identity contaminant"),
-        "ansatz_rank": rank,
-        "ansatz_dimension": len(basis),
+        "supplied_operator_basis": ("m(Qx+Qy)", "mX on selector0", "mY on selector1", "mZ control", "identity control"),
+        "basis_rank": rank,
+        "basis_dimension": len(basis),
         "gram_condition_number": condition,
-        "selected_coefficients": [[float(value.real), float(value.imag)] for value in coefficients],
-        "selection_residual": selection_residual,
-        "joint_Ward_finite_difference_residual": ward_residual,
-        "joint_exchange_contact_telescope_residual": telescope,
-        "resource_Noether_conservation_residual": q_noether,
-        "face_local_U1_charge_commutator": local_charge_commutator,
+        "recovered_coefficients": [[float(value.real), float(value.imag)] for value in coefficients],
+        "coordinate_recovery_residual": coordinate_residual,
+        "coefficient_recovery_residual": coefficient_residual,
+        "hostile_coordinate_recovery_residual": hostile_coordinate_residual,
+        "hostile_coefficient_recovery_residual": hostile_coefficient_residual,
+        "wrong_coordinate_control_residual": wrong_coordinate_residual,
+        "Ward_finite_difference_identity_residual": ward_residual,
+        "exchange_contact_telescope_identity_residual": telescope,
+        "resource_conservation_identity_residual": resource_identity,
         "Cycle569_committed_receipt_sha256": prior["receipt_sha256"],
-        "Cycle569_T00_restriction_residual": prior["Cycle566_T00_restriction_residual"],
-        "Cycle569_T0i_restriction_residual": prior["Cycle566_T0i_restriction_residual"],
+        "Cycle566_values": prior["Cycle566_supplied_values"],
         "Cycle569_all24_tensor_covariance_residual": prior["maximum_all24_tensor_carrier_covariance_residual"],
         "Cycle569_all576_frame_products": prior["frame_products"],
-        "selection_scope": "unique only inside the declared five-dimensional local insertion ansatz",
-        "lattice_index_shifting_coordinate_Noether_theorem_proved": False,
-        "physical_law_selection_or_calibration_closed": False,
+        "basis_or_coefficients_selected_by_physics": False,
+        "variational_or_Noether_selection_claimed": False,
         "called_physical_stress_energy_work_or_gravity": False,
     }
 
@@ -850,73 +825,36 @@ def path_endpoint_transposition(path_length: int) -> dict:
 
 
 def route_c_body_diagonal() -> dict:
-    rows = (
-        body_fixture(body_n2_preparation(TRAIN_LENGTH), TRAIN_LENGTH, "TRAIN_L3_N2_BODY", False, False),
-        body_fixture(body_n2_preparation(HELD_LENGTH), HELD_LENGTH, "HELD_L4_N2_BODY", True, False),
-        body_fixture(body_n3_preparation(HELD_LENGTH), HELD_LENGTH, "FROZEN_HELD_L4_N3_BODY_XYZ_SHEAR", True, True),
-    )
-    held_n3 = rows[-1]
     local = carrier_local_gate_controls(BODY_DIRECTIONS)
     products = generic_frame_products(body_n3_preparation(HELD_LENGTH), HELD_LENGTH, BODY_DIRECTIONS)
-    path = path_endpoint_transposition(3)
+    label_bijection_failures = 0
+    expected_labels = {
+        tuple(int(item) for item in vector) for vector in BODY_DIRECTIONS
+    }
+    for frame in c210.proper_cubic_frames():
+        transformed = {
+            tuple(int(item) for item in frame @ vector)
+            for vector in BODY_DIRECTIONS
+        }
+        label_bijection_failures += transformed != expected_labels
     return {
-        "route": "C_complete_eight_direction_body_diagonal_carrier",
+        "route": "C_coarse_directed_carrier_reservoir_label_count_and_covariance",
         "body_direction_orbit": BODY_DIRECTIONS.tolist(),
         "orbit_size": len(BODY_DIRECTIONS),
-        "rows": rows,
-        "local_gate": local,
-        "frame_products": products,
-        "body_route": path,
-        "maximum_norm_residual": max(row["norm_residual"] for row in rows),
-        "maximum_inverse_residual": max(row["inverse_residual"] for row in rows),
-        "maximum_cleanup_amplitude": max(row["cleanup_amplitude"] for row in rows),
-        "maximum_resource_residual": max(row["global_resource_residual"] for row in rows),
-        "maximum_local_continuity_residual": max(row["maximum_local_continuity_residual"] for row in rows),
-        "minimum_contact_deletion_residual": min(row["contact_deletion_residual"] for row in rows),
-        "minimum_vertex_deletion_residual": min(row["vertex_deletion_residual"] for row in rows),
-        "maximum_all24_update_covariance_residual": max(row["maximum_all24_update_covariance_residual"] for row in rows),
-        "held_N3_offdiagonal_Txy_Txz_Tyz": [
-            held_n3["Tij_totals"][0][1], held_n3["Tij_totals"][0][2], held_n3["Tij_totals"][1][2]
+        "face_directed_carrier_label_bits_per_cell": len(c569.FACE_DIRECTIONS),
+        "body_directed_carrier_label_bits_per_cell": len(BODY_DIRECTIONS),
+        "reservoir_label_bits_per_cell": 1,
+        "face_carrier_plus_reservoir_label_bits_per_cell": len(c569.FACE_DIRECTIONS) + 1,
+        "body_carrier_plus_reservoir_label_bits_per_cell": len(BODY_DIRECTIONS) + 1,
+        "proper_cubic_frames": len(c210.proper_cubic_frames()),
+        "all24_label_bijection_failures": label_bijection_failures,
+        "local_sparse_label_gate_unitarity_or_covariance_residual": local[
+            "maximum_unitarity_or_covariance_residual"
         ],
-        "held_N3_finite_difference_maximum_residual": held_n3["finite_difference"]["maximum_residual"],
-        "face_orbit_rails": 12,
-        "body_orbit_rails": 8,
-        "face_carrier_plus_reservoir_M2_per_cell": 13,
-        "body_carrier_plus_reservoir_M2_per_cell": 9,
-        "face_radius_axial_hops": 2,
-        "body_radius_axial_hops": 3,
-        "narrow_face_orientation_count_and_M2_minimality_falsified": True,
-        "spatial_radius_minimality_falsified": False,
-        "universal_minimum_carrier_claim": False,
-        "called_physical_stress_energy_or_gravity": False,
-    }
-
-
-def physical_compiler_controls() -> dict:
-    return {
-        "matter_code": "strict-pinned Cycle563 complete N<=3 physical M2 code",
-        "Cycle563_route_B_matter_M2": {"L3": 1431, "held_L4": 3392},
-        "Cycle569_face_or_plaquette_plus_reservoir_M2": {"L3": 351, "held_L4": 832},
-        "Route_B_curvature_combined_live_M2": {"L3": 1782, "held_L4": 4224},
-        "Route_C_body_plus_reservoir_M2": {"L3": 243, "held_L4": 576},
-        "Route_C_body_combined_live_M2": {"L3": 1674, "held_L4": 3968},
-        "Route_A_collision_plus_selector_support_M2": 50,
-        "physical_macro": "(W563 tensor Icarrier) G_target_extended (W563^dagger tensor Icarrier)",
-        "EG_equals_GphysicalE_residual": 0.0,
-        "bounded_constant_overhead_per_cell": True,
-        "maximum_new_route_radius_axial_hops": 3,
-        "maximum_Cycle563_matter_route_length": 48,
-        "Cycle560_563_auxiliary_constraints_locally_enforced": True,
-        "carrier_reservoir_selector_hard_core_intrinsic_M2": True,
-        "body_intermediate_rails_restored_locally": True,
-        "global_matter_N_le_3_cutoff_locally_enforced": False,
-        "target_code_leakage": 0.0,
-        "branch_route_work_leakage": 0.0,
-        "runtime_global_parity_order_frame_or_sector_service": False,
-        "one_particle_mass_residual": 8.7159799596118e-16,
-        "Cycle230_contact_factorization_residual": 2.149937642474629e-15,
-        "Cycle230_axis_seam_braid_residual": 0.0,
-        "full_dense_physical_matrix_materialized": False,
+        "frame_products": products["frame_products"],
+        "all576_sparse_label_frame_product_residual": products["maximum_residual"],
+        "held_sparse_label_fixture_length": HELD_LENGTH,
+        "physical_M2_compiler_or_minimum_claimed": False,
     }
 
 
@@ -924,15 +862,15 @@ def domain_controls(route_b: dict, route_c: dict) -> dict:
     rejected = sum(length not in LAWFUL_LENGTHS for length in (2, 5, 8))
     rejected += sum(number not in (2, 3) for number in (0, 1, 4))
     held_b = next(row for row in route_b["rows"] if row["matter_number"] == 3)
-    held_c = next(row for row in route_c["rows"] if row["matter_number"] == 3)
     return {
         "lawful_lengths": LAWFUL_LENGTHS,
         "executed_matter_numbers": (2, 3),
         "lawful_domain_rejections": rejected,
         "train_L3_held_L4_split": True,
-        "frozen_held_N3_curvature_and_body_fixtures": True,
-        "held_parameters_refit": held_b["parameters_refit"] + held_c["parameters_refit"],
-        "held_rows_called_blind_empirical_predictions": held_b["blind_empirical_prediction"] or held_c["blind_empirical_prediction"],
+        "frozen_held_N3_curvature_fixture": True,
+        "held_sparse_label_fixture_length": route_c["held_sparse_label_fixture_length"],
+        "held_parameters_refit": held_b["parameters_refit"],
+        "held_rows_called_blind_empirical_predictions": held_b["blind_empirical_prediction"],
         "endpoint_count_used_for_time_or_rate": False,
     }
 
@@ -940,150 +878,102 @@ def domain_controls(route_b: dict, route_c: dict) -> dict:
 def inventory() -> dict:
     return {
         "supplied": (
-            "Cycle219 beta=-0.3 coin, mass fixture and rest normalization",
-            "Cycle230 g=0.37 actual contact, contact-last order and seam block",
-            "Cycle563 complete N<=3 matter encoder/layout, reference, auxiliaries, layers and router",
-            "Cycle566 eta=0.8m reservoir debit, equal m weights and source preparation",
-            "Cycle569 face/plaquette orbit, geometric source, selector and joint insertion",
-            "five-dimensional local insertion ansatz and exclusion of Z/identity contaminants",
+            "beta=-0.3 six-mode coin and its resource-scale convention",
+            "g=0.37 contact phase and contact-last order",
+            "Cycle566 T00=0 and T0i=0 values, supplied rather than derived here",
+            "face/plaquette orbit, geometric source, selector and joint insertion",
+            "five-element local operator basis including Z and identity controls",
             "gamma=0.23 and the bilinear traceless matter-direction/face-curvature coupling",
-            "factor placement of the curvature phase after the local vertex and before both streams and actual contact",
-            "eight body-diagonal labels, uniform scalar carrier and three-hop path convention",
-            "frozen train/held N2 and separate held-N3 curvature/body preparations and readouts",
+            "factor placement of the curvature phase after the local vertex and before both streams and contact",
+            "eight body-diagonal directed labels and one reservoir label per cell",
+            "frozen train/held N2 and held-N3 curvature preparations and readouts",
             "finite periodic L3/L4 charts, proper-cubic frame transport and tolerances",
         ),
         "derived": (
-            "unique joint insertion coefficients within the declared finite local ansatz",
-            "exact resource Noether conservation and joint source-Ward/contact telescope",
+            "basis coordinates for the declared joint insertion, including hostile coefficient controls",
+            "resource-conservation, Ward finite-difference and exchange/contact telescope identities",
             "proper-cubic bilinear curvature coupling with reciprocal mixed Hessian",
             "nonzero matter response and carrier backreaction quadrature impulses",
-            "unitary/inverse resource-conserving curvature update with actual contact and deletions",
-            "complete body-diagonal orbit current, shear, all24/all576 and held-N3 prediction",
-            "body carrier uses fewer rails/M2 than face carrier but one larger axial-hop radius",
-            "exact Cycle563 physical conjugation macro and zero declared-code leakage",
+            "unitary/inverse resource-conserving curvature update with contact and deletions",
+            "exact face/body directed-label and reservoir-bit counts",
+            "body-label proper-cubic bijection and sparse-label all24/all576 covariance",
         ),
         "open": (
-            "derivation of the finite insertion ansatz, gamma, curvature action and body/face law selection",
-            "lattice-index coordinate-variation Noether theorem and empirical physical tensor calibration",
+            "derivation or physical selection of the operator basis, coefficients, gamma and carrier law",
+            "coordinate-variation stress theorem and empirical physical tensor calibration",
             "dynamical metric variables, Einstein/Regge field equation and global nonlinear existence",
+            "physical-site encoding, local constraints, leakage control and autonomous scheduling",
             "endogenous source/carrier/selector preparation and local matter-sector enforcement",
             "arbitrary N/size, continuum scaling, asymptotic response and observed coupling",
             "physical clock/proper time, Record formation, realized history and Born probability",
         ),
-    }
-
-
-def no_go_controls() -> dict:
-    families = (
-        {"family": "finite source-action Ward selection", "object": "five-dimensional local insertion ansatz", "mechanism": "full-rank restrictions plus Ward variation", "terminal": "unique joint insertion inside ansatz", "marker": "ATTEMPTED", "result": "bounded positive; ansatz supplied"},
-        {"family": "plaquette-curvature reciprocal phase", "object": "matter direction times face quadrupole", "mechanism": "bilinear local unitary and mixed-Hessian reciprocity", "terminal": "resource-conserving response/backreaction", "marker": "ATTEMPTED", "result": "bounded positive"},
-        {"family": "body-diagonal carrier", "object": "eight oriented body rails", "mechanism": "reservoir debit plus three-hop stream", "terminal": "shear with lower rail count", "marker": "ATTEMPTED", "result": "bounded positive; larger radius"},
-        {"family": "face-diagonal carrier", "object": "twelve oriented face rails", "mechanism": "Cycle569 reservoir debit/source derivative", "terminal": "radius-two shear", "marker": "STRICT-PIN POSITIVE", "result": "comparator, not minimum"},
-        {"family": "Grassmann bilateral Noether", "object": "AxisInv nearest-neighbor bilinear action", "mechanism": "site-local internal local-alpha Ward identity", "terminal": "bilateral conserved current", "marker": "RULED OUT BY PRIOR FOR COORDINATE-STRESS TERMINAL ONLY", "result": "does not treat lattice-index-shifting generator"},
-        {"family": "Regge/Einstein target", "object": "edge metric and linearized Einstein operator", "mechanism": "second variation and Bianchi identity", "terminal": "metric field equation", "marker": "OPEN", "result": "target algebra exists; premises/bridge absent here"},
-        {"family": "recurrent many-carrier response", "object": "many-Q curvature/source field", "mechanism": "nonlinear scattering or fixed point", "terminal": "large-volume backreaction scaling", "marker": "OPEN", "result": "not ruled out by bounded phase route"},
-    )
-    walls = (
-        ("W_select", "derive the ansatz/carrier/coupling law rather than supply it"),
-        ("W_cal", "physical stress-energy/work identification and empirical unit"),
-        ("W_metric", "dynamical metric/Regge-Einstein field equation and nonlinear existence"),
-        ("W_sector", "local arbitrary-sector and unbounded-size enforcement"),
-        ("W_prep", "endogenous source/carrier/selector preparation"),
-    )
-    pairs = []
-    for left in range(len(walls)):
-        for right in range(left + 1, len(walls)):
-            pairs.append({
-                "pair": [walls[left][0], walls[right][0]],
-                "first_closes_second": "no",
-                "second_closes_first": "no",
-                "independent": "yes",
-                "witness": "Cycle572 separately tests ansatz selection, calibration firewall, metric target, compiler domain and preparation",
-            })
-    return {
-        "N1_approach_families": families,
-        "N2_collapsed_walls": walls,
-        "N2_pairwise_independence": pairs,
-        "N3_hidden_condition_scan": (
-            "Cycle219/230/563/566/569 coefficients, factor order, physical code and strict pins are explicit",
-            "five-dimensional ansatz, selector restrictions, source exponential and finite difference are explicit",
-            "gamma, curvature weight matrix, phase placement, face/body orbit and routing are explicit",
-            "periodic L3/L4, N2/N3 sectors, preparations, readouts and no-refit split are explicit",
-            "Cycle563 reference/auxiliaries/cutoff/layers/router and compiled frame are explicit",
-        ),
-        "N4_residual_matching": (
-            {"witness": "Cycle569", "witness_residual": "joint insertion supplied but unselected", "current_residual": "unique finite-ansatz Ward insertion", "match": "yes, narrowed not full physical selection"},
-            {"witness": "Cycle464", "witness_residual": "reciprocal field change/nonproduct response", "current_residual": "bilinear phase mixed-Hessian response/backreaction", "match": "yes only for bounded reciprocal mechanism"},
-            {"witness": "lattice Noether narrow theorem", "witness_residual": "site-local/internal conserved bilateral current", "current_residual": "coordinate-variation physical stress", "match": "no; not used as closure"},
-            {"witness": "R3 Regge target", "witness_residual": "linearized Einstein target algebra", "current_residual": "dynamical metric/source equation", "match": "no; target only"},
-            {"witness": "signed tensor transport", "witness_residual": "linear/projective transport and formal graded jets", "current_residual": "global nonlinear physical source dynamics", "match": "no; not used as closure"},
-            {"witness": "Cycle563", "witness_residual": "N<=3 physical EG=GphysicalE", "current_residual": "matter lift with literal curvature/body rails", "match": "yes for matter mechanism; extensions checked here"},
-        ),
-        "N5_rhetoric_audit": (
-            {"statement": "face orbit is not minimum", "tested": "orientation count and carrier-plus-reservoir M2 per cell", "untested": "radius, gate count, action selection, all carriers", "scope": "only narrow 12-versus-8 explicit comparison"},
-            {"statement": "backreaction is not gravity", "tested": "local bilinear mixed derivative, quadrature impulses, finite L3/L4", "untested": "metric equation, nonlinear PDE, continuum", "scope": "bounded reciprocal phase only"},
-            {"statement": "Noether selection is not physical stress selection", "tested": "finite internal/local ansatz and source-Ward derivative", "untested": "lattice-index-shifting coordinate variation", "scope": "no universal impossibility"},
-        ),
-        "N6_partial_closure_paths": (
-            "derive the local insertion ansatz as a unique stationary action current",
-            "introduce dynamical edge/plaquette metric variables and match the R3 target operator",
-            "extend the bilinear phase to a recurrent many-carrier nonlinear scattering law",
-            "calibrate the resource unit independently without using endpoint count as time",
-            "use Cycle563 compiler machinery to extend local sector enforcement and size",
-        ),
-        "N7_hostile_steelman": (
-            "The present selection is only full-rank inside an ansatz chosen to contain the answer, and the curvature phase is a supplied "
-            "bilinear unitary rather than a metric equation. A Regge second-variation route, a many-carrier recurrent plaquette field, or "
-            "a stationary-action uniqueness theorem could still derive a different tensor and calibrated backreaction law. The body route "
-            "also defeats only rail-count minimality; a radius-two lower-work encoding may still exist."
-        ),
-        "N8_cross_cycle_echo": (
-            "Cycle559 retired host current control with a conserved mediator but kept physical identification open",
-            "Cycles562/564/566/569 progressively joined local current, action derivative, debit and quadrature without axiom changes",
-            "Cycle464 replaced a profile table with local word rules while preserving preparation/calibration walls",
-            "Cycle560/563 retired physical compiler and held-memory/order walls constructively",
-            "signed-gravity work replaced naive nonlinear sign flip with graded jets rather than declaring a universal obstruction",
-        ),
-        "broad_negative_gate": "FAIL / DO NOT SHIP",
-        "minimum_content_gate": "FAIL / DO NOT SHIP beyond the exact 12-versus-8 rail/M2 counterexample",
-        "shared_obstruction": "none established",
-        "axiom_pressure": "none",
+        "supplied_parameters": {
+            "coin_beta": c569.BETA,
+            "analytic_mass": c569.ANALYTIC_MASS,
+            "rest_phase": c569.REST_PHASE,
+            "reduced_exchange_kappa": c569.KAPPA,
+            "face_reservoir_vertex_angle": c569.ETA,
+            "contact_phase": c569.CONTACT,
+            "curvature_phase_gamma": GAMMA,
+            "basis": (
+                "m(Qx+Qy)", "mX tensor P0", "mY tensor P1",
+                "mZbranch", "identity",
+            ),
+            "target_coordinates": (1.0, 1.0, 1.0, 0.0, 0.0),
+            "hostile_control_coordinates": (1.0, 1.0, 1.0, 0.37, -0.21),
+            "ward_finite_difference_step": 7.0e-7,
+            "update_factor_order": (
+                "matter_coin", "face_reservoir_vertex", "curvature_phase",
+                "matter_stream", "face_stream", "contact",
+            ),
+            "train_length": TRAIN_LENGTH,
+            "held_length": HELD_LENGTH,
+            "executed_matter_numbers": (2, 3),
+            "tolerance": TOL,
+            "finite_difference_tolerance": FD_TOL,
+            "signal_floor": SIGNAL,
+            "cleanup_cutoff": CLEAN,
+        },
     }
 
 
 def main() -> int:
     started = perf_counter()
-    print("CYCLE572 PHYSICAL SOURCE-INSERTION SELECTION/BACKREACTION TOURNAMENT")
+    print("CYCLE572 FINITE SOURCE-INSERTION ALGEBRA AND CARRIER-LABEL SUPPORT")
     print("authority", AUTHORITY, "audit", AUDIT)
     dependencies = dependency_controls()
     prior = cycle569_prior_controls()
     note = note_contract()
-    route_a = route_a_variational_selection(prior)
+    route_a = route_a_basis_coordinates(prior)
     route_b = route_b_curvature()
     route_c = route_c_body_diagonal()
-    compiler = physical_compiler_controls()
     domain = domain_controls(route_b, route_c)
     supplied = inventory()
-    nogo = no_go_controls()
 
-    check("exact-pinned Cycle569 artifacts, accepted physics and gravity/source comparators are unchanged", dependencies["pass"], dependencies)
-    check("note contract preserves variational/backreaction/minimality firewalls, physical lift and N1-N8", note["pass"], note)
     check(
-        "Route A finite variational ansatz uniquely selects the joint insertion and closes resource Noether plus contact Ward identities",
-        route_a["ansatz_rank"] == route_a["ansatz_dimension"] == 5
-        and route_a["selection_residual"] < TOL
-        and np.max(abs(np.asarray(route_a["selected_coefficients"])[:, 1])) < TOL
-        and np.max(abs(np.asarray(route_a["selected_coefficients"])[:, 0] - np.asarray((1, 1, 1, 0, 0)))) < TOL
-        and route_a["joint_Ward_finite_difference_residual"] < FD_TOL
-        and route_a["joint_exchange_contact_telescope_residual"] < TOL
-        and route_a["resource_Noether_conservation_residual"] < TOL
-        and route_a["face_local_U1_charge_commutator"] < TOL
-        and route_a["Cycle569_T00_restriction_residual"] < TOL
-        and route_a["Cycle569_T0i_restriction_residual"] < TOL
+        "self-contained finite support and audit-visible canonical source note are exact-pinned",
+        dependencies["pass"],
+        dependencies,
+    )
+    check("canonical note contract preserves the narrowed executed claim", note["pass"], note)
+    check(
+        "Route A recovers coordinates in the supplied basis and verifies Ward/contact identities with hostile controls",
+        route_a["basis_rank"] == route_a["basis_dimension"] == 5
+        and route_a["coordinate_recovery_residual"] < TOL
+        and route_a["coefficient_recovery_residual"] < TOL
+        and route_a["hostile_coordinate_recovery_residual"] < TOL
+        and route_a["hostile_coefficient_recovery_residual"] < TOL
+        and route_a["wrong_coordinate_control_residual"] > SIGNAL
+        and route_a["Ward_finite_difference_identity_residual"] < FD_TOL
+        and route_a["exchange_contact_telescope_identity_residual"] < TOL
+        and route_a["resource_conservation_identity_residual"] < TOL
+        and route_a["Cycle566_values"]["T00"] == 0.0
+        and route_a["Cycle566_values"]["T0i"] == 0.0
+        and not route_a["Cycle566_values"]["derived_here"]
         and route_a["Cycle569_all24_tensor_covariance_residual"] < TOL
         and route_a["Cycle569_all576_frame_products"]["frame_products"] == 576
-        and not route_a["lattice_index_shifting_coordinate_Noether_theorem_proved"]
-        and not route_a["physical_law_selection_or_calibration_closed"]
+        and not route_a["basis_or_coefficients_selected_by_physics"]
+        and not route_a["variational_or_Noether_selection_claimed"]
         and not route_a["called_physical_stress_energy_work_or_gravity"],
         route_a,
     )
@@ -1118,89 +1008,39 @@ def main() -> int:
         local,
     )
     check(
-        "Route C body-diagonal carrier is inverse, resource-conserving, shear/contact sensitive and all24/576 covariant",
+        "Route C reports exact coarse directed-label counts and executed sparse-label covariance only",
         route_c["orbit_size"] == 8
-        and route_c["maximum_norm_residual"] < TOL
-        and route_c["maximum_inverse_residual"] < TOL
-        and route_c["maximum_cleanup_amplitude"] < TOL
-        and route_c["maximum_resource_residual"] < TOL
-        and route_c["maximum_local_continuity_residual"] < TOL
-        and route_c["minimum_contact_deletion_residual"] > SIGNAL
-        and route_c["minimum_vertex_deletion_residual"] > SIGNAL
-        and route_c["maximum_all24_update_covariance_residual"] < TOL
-        and route_c["local_gate"]["maximum_unitarity_or_covariance_residual"] < TOL
-        and route_c["frame_products"]["frame_products"] == 576
-        and route_c["frame_products"]["maximum_residual"] < TOL
-        and route_c["body_route"]["failures"] == 0
-        and route_c["body_route"]["intermediate_rails_restored"]
-        and min(abs(value) for value in route_c["held_N3_offdiagonal_Txy_Txz_Tyz"]) > SIGNAL
-        and route_c["held_N3_finite_difference_maximum_residual"] < FD_TOL
-        and not route_c["called_physical_stress_energy_or_gravity"],
+        and route_c["face_directed_carrier_label_bits_per_cell"] == 12
+        and route_c["body_directed_carrier_label_bits_per_cell"] == 8
+        and route_c["reservoir_label_bits_per_cell"] == 1
+        and route_c["face_carrier_plus_reservoir_label_bits_per_cell"] == 13
+        and route_c["body_carrier_plus_reservoir_label_bits_per_cell"] == 9
+        and route_c["proper_cubic_frames"] == 24
+        and route_c["all24_label_bijection_failures"] == 0
+        and route_c["local_sparse_label_gate_unitarity_or_covariance_residual"] < TOL
+        and route_c["frame_products"] == 576
+        and route_c["all576_sparse_label_frame_product_residual"] < TOL
+        and not route_c["physical_M2_compiler_or_minimum_claimed"],
         route_c,
-    )
-    check(
-        "body route falsifies only face rail-count/M2 minimality while leaving spatial-radius and universal minimum claims open",
-        route_c["body_orbit_rails"] < route_c["face_orbit_rails"]
-        and route_c["body_carrier_plus_reservoir_M2_per_cell"] < route_c["face_carrier_plus_reservoir_M2_per_cell"]
-        and route_c["body_radius_axial_hops"] > route_c["face_radius_axial_hops"]
-        and route_c["narrow_face_orientation_count_and_M2_minimality_falsified"]
-        and not route_c["spatial_radius_minimality_falsified"]
-        and not route_c["universal_minimum_carrier_claim"],
-        {
-            "face_rails": route_c["face_orbit_rails"],
-            "body_rails": route_c["body_orbit_rails"],
-            "face_M2": route_c["face_carrier_plus_reservoir_M2_per_cell"],
-            "body_M2": route_c["body_carrier_plus_reservoir_M2_per_cell"],
-            "face_radius": route_c["face_radius_axial_hops"],
-            "body_radius": route_c["body_radius_axial_hops"],
-        },
-    )
-    check(
-        "Cycle563 physical lift has exact EG=GphysicalE, bounded constant overhead and honest local-constraint/leakage status",
-        compiler["Route_B_curvature_combined_live_M2"]["held_L4"] == 4224
-        and compiler["Route_C_body_combined_live_M2"]["held_L4"] == 3968
-        and compiler["EG_equals_GphysicalE_residual"] == 0
-        and compiler["bounded_constant_overhead_per_cell"]
-        and compiler["maximum_new_route_radius_axial_hops"] == 3
-        and compiler["Cycle560_563_auxiliary_constraints_locally_enforced"]
-        and compiler["body_intermediate_rails_restored_locally"]
-        and not compiler["global_matter_N_le_3_cutoff_locally_enforced"]
-        and compiler["target_code_leakage"] == 0
-        and compiler["branch_route_work_leakage"] == 0
-        and not compiler["runtime_global_parity_order_frame_or_sector_service"]
-        and compiler["one_particle_mass_residual"] < TOL
-        and compiler["Cycle230_contact_factorization_residual"] < TOL
-        and compiler["Cycle230_axis_seam_braid_residual"] < TOL
-        and not compiler["full_dense_physical_matrix_materialized"],
-        compiler,
     )
     check(
         "lawful-domain, train/held, frozen N3 and endpoint-time firewalls are explicit",
         domain["lawful_domain_rejections"] == 6
         and domain["train_L3_held_L4_split"]
-        and domain["frozen_held_N3_curvature_and_body_fixtures"]
+        and domain["frozen_held_N3_curvature_fixture"]
+        and domain["held_sparse_label_fixture_length"] == HELD_LENGTH
         and domain["held_parameters_refit"] == 0
         and not domain["held_rows_called_blind_empirical_predictions"]
         and not domain["endpoint_count_used_for_time_or_rate"],
         domain,
     )
     check(
-        "supplied/derived/open inventory preserves ansatz, curvature, carrier, metric, calibration and history boundaries",
-        len(supplied["supplied"]) >= 11 and len(supplied["derived"]) >= 8 and len(supplied["open"]) >= 6,
+        "supplied/derived/open inventory preserves basis, curvature, carrier-label and physical-site boundaries",
+        len(supplied["supplied"]) >= 9
+        and len(supplied["derived"]) >= 7
+        and len(supplied["open"]) >= 7
+        and len(supplied["supplied_parameters"]) >= 15,
         supplied,
-    )
-    check(
-        "fresh N1-N8 permits bounded selection/backreaction and narrow minimum falsifier but blocks broad no-go/minimum/axiom pressure",
-        len(nogo["N1_approach_families"]) >= 5
-        and len(nogo["N2_collapsed_walls"]) == 5
-        and len(nogo["N2_pairwise_independence"]) == 10
-        and all(row["independent"] == "yes" for row in nogo["N2_pairwise_independence"])
-        and len(nogo["N4_residual_matching"]) >= 5
-        and len(nogo["N5_rhetoric_audit"]) >= 3
-        and nogo["broad_negative_gate"] == "FAIL / DO NOT SHIP"
-        and nogo["shared_obstruction"] == "none established"
-        and nogo["axiom_pressure"] == "none",
-        nogo,
     )
 
     peak = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
@@ -1212,20 +1052,17 @@ def main() -> int:
         "route_A": route_a,
         "route_B": route_b,
         "route_C": route_c,
-        "physical_compiler": compiler,
         "domain": domain,
         "inventory": supplied,
-        "no_go": nogo,
         "terminal": {
-            "strongest_constructive_result": "finite-ansatz Ward selection plus reciprocal curvature phase and lower-rail body carrier",
-            "finite_ansatz_selection_closed": True,
-            "nonlinear_bilinear_backreaction_identity_closed": True,
-            "face_rail_count_minimality_falsified": True,
+            "strongest_constructive_result": "supplied-basis coordinates, algebraic Ward/contact identities, reciprocal curvature phase, and sparse carrier-label covariance",
+            "basis_coordinates_and_identities_closed": True,
+            "reciprocal_bilinear_response_identity_closed": True,
+            "physical_site_compiler_claimed": False,
+            "minimum_content_claimed": False,
             "physical_stress_energy_work_identified": False,
             "metric_or_gravity_equation": False,
             "proper_time_or_rate_claim": False,
-            "shared_obstruction": False,
-            "axiom_pressure": False,
         },
         "resources": {"elapsed_seconds": perf_counter() - started, "peak_rss_mb": peak},
         "passes": PASS,
@@ -1235,7 +1072,7 @@ def main() -> int:
     if FAIL:
         print("RESULT PHYSICAL_SOURCE_INSERTION_SELECTION_BACKREACTION_TOURNAMENT_FAILED")
         return 1
-    print("RESULT WARD_CURVATURE_BODY_CARRIER_BOUNDED_POSITIVE")
+    print("RESULT FINITE_IDENTITIES_CURVATURE_AND_CARRIER_LABEL_COVARIANCE_BOUNDED_SUPPORT")
     return 0
 
 

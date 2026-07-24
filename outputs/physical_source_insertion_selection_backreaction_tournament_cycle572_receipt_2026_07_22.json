@@ -4,9 +4,10 @@
   "claim_type_author_hint": "bounded_theorem",
   "authority": "none",
   "audit": "unset",
-  "runner_sha256": "8d9d2f53b672847fb6678ebbb6654699361f4afadf0a43daad620d99db96cdc5",
+  "runner_sha256": "ee3cae3d548dbf7f28c848cdb2710521483aa66e46b4e60363627b7d2d36e9b0",
   "finite_support_sha256": "a0008b105d33461d7e4615a8afe58d83e436415d1a75ddb4cb7d41ec1defdf37",
-  "note_sha256": "46fc6d404d5b7ef973d1ef6475c802575eaedb17122b9c425217d837382acd4e",
+  "carrier_support_sha256": "5c05c0c8e4c86f1166b0a22159e644297799850ab51bd7d7348c3aec1af0c808",
+  "note_sha256": "72e37ba7301e2aa6926c666304440bf370e2e22158d69e26262440d51bf07ecc",
   "tests_passed": 8,
   "tests_total": 8,
   "pass": true,
@@ -14,9 +15,10 @@
     "repair_base": "origin/main@98b0cfa3b1b5e1977dce76471638a8094f58e964",
     "canonical_source_note": "docs/FINITE_SOURCE_INSERTION_ALGEBRA_CARRIER_LABEL_SUPPORT_CYCLE572_BOUNDED_THEOREM_NOTE_2026-07-22.md",
     "runtime_repo_local_imports": [
-      "scripts/physical_source_insertion_selection_backreaction_cycle572_finite_support_2026_07_22.py"
+      "scripts/physical_source_insertion_selection_backreaction_cycle572_finite_support_2026_07_22.py",
+      "scripts/physical_source_insertion_selection_backreaction_cycle572_carrier_support_2026_07_22.py"
     ],
-    "dependency_paths": 2,
+    "dependency_paths": 3,
     "missing_paths": [],
     "untracked_dependencies": [],
     "historical_git_object_runtime_dependencies": [],

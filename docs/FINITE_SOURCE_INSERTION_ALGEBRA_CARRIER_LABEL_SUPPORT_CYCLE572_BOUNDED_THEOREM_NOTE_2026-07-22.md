@@ -22,6 +22,8 @@ Controlled metadata literals: `authority: none`; `audit: unset`;
 [`scripts/physical_source_insertion_selection_backreaction_tournament_cycle572_2026_07_22.py`](../scripts/physical_source_insertion_selection_backreaction_tournament_cycle572_2026_07_22.py)
 **Finite support kernel:**
 [`scripts/physical_source_insertion_selection_backreaction_cycle572_finite_support_2026_07_22.py`](../scripts/physical_source_insertion_selection_backreaction_cycle572_finite_support_2026_07_22.py)
+**Directed-carrier support helper:**
+[`scripts/physical_source_insertion_selection_backreaction_cycle572_carrier_support_2026_07_22.py`](../scripts/physical_source_insertion_selection_backreaction_cycle572_carrier_support_2026_07_22.py)
 **Receipt:**
 [`outputs/physical_source_insertion_selection_backreaction_tournament_cycle572_receipt_2026_07_22.json`](../outputs/physical_source_insertion_selection_backreaction_tournament_cycle572_receipt_2026_07_22.json)
 **Campaign provenance (non-source history):**
@@ -99,6 +101,12 @@ The complete supplied parameter and control inventory is:
 The support kernel reconstructs the finite objects used by the runner without
 opening historical Git objects or absent campaign scripts. The historical
 Cycle-569 receipt digest is provenance only.
+
+Audit-packet import inventory: the primary runner ordinary-imports the finite
+support kernel for the common matter/face construction and the directed-carrier
+support helper for the unchanged Route-C construction. Both helpers are bound
+through `AUDIT_INPUT_PATHS` and the runner's source-dependency closure. Neither
+helper is an independent claim or authority surface.
 
 ## Boundaries
 

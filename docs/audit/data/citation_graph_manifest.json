@@ -1,6 +1,6 @@
 {
- "edge_count": 14984,
- "node_count": 4476,
+ "edge_count": 14987,
+ "node_count": 4478,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -4507,6 +4507,14 @@
    "out_degree": 0
   },
   "finite_rank_source_to_metric_theorem_note": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "finite_regge_plaquette_scattering_diagnostics_cycle576_bounded_theorem_note_2026-07-22": {
+   "deps_hash": "5fb6941074c0",
+   "out_degree": 3
+  },
+  "finite_source_insertion_algebra_carrier_label_support_cycle572_bounded_theorem_note_2026-07-22": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

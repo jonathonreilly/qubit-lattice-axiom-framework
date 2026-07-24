@@ -1,0 +1,1664 @@
+{
+ "audit": "unset",
+ "author_accepted": false,
+ "author_artifact_status_accepted": false,
+ "authority": "none",
+ "blinded_verdicts": {
+  "stream_00": {
+   "kind": "identified",
+   "law": "odd_shells",
+   "witnesses": {
+    "even_nonzero": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    "low_density": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    "nonempty": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    "unique_quorum": [
+     0,
+     0,
+     0,
+     1,
+     1,
+     1
+    ]
+   }
+  },
+  "stream_01": {
+   "kind": "identified",
+   "law": "unique_quorum",
+   "witnesses": {
+    "even_nonzero": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    "low_density": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    "nonempty": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    "odd_shells": [
+     0,
+     0,
+     0,
+     1,
+     1,
+     1
+    ]
+   }
+  },
+  "stream_02": {
+   "kind": "identified",
+   "law": "low_density",
+   "witnesses": {
+    "even_nonzero": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    "nonempty": [
+     0,
+     0,
+     0,
+     1,
+     1,
+     1
+    ],
+    "odd_shells": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    "unique_quorum": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     1
+    ]
+   }
+  },
+  "stream_03": {
+   "kind": "identified",
+   "law": "nonempty",
+   "witnesses": {
+    "even_nonzero": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    "low_density": [
+     0,
+     0,
+     0,
+     1,
+     1,
+     1
+    ],
+    "odd_shells": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    "unique_quorum": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     1
+    ]
+   }
+  },
+  "stream_04": {
+   "kind": "off_family",
+   "witnesses": {
+    "even_nonzero": [
+     0,
+     0,
+     0,
+     1,
+     0,
+     1
+    ],
+    "low_density": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    "nonempty": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    "odd_shells": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    "unique_quorum": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  "stream_05": {
+   "kind": "refuse_covariance",
+   "witness": [
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    [
+     1,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   ]
+  },
+  "stream_06": {
+   "kind": "identified",
+   "law": "even_nonzero",
+   "witnesses": {
+    "low_density": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    "nonempty": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    "odd_shells": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    "unique_quorum": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  "stream_07": {
+   "kind": "identified",
+   "law": "even_nonzero",
+   "witnesses": {
+    "low_density": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    "nonempty": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    "odd_shells": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    "unique_quorum": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  "stream_08": {
+   "kind": "identified",
+   "law": "odd_shells",
+   "witnesses": {
+    "even_nonzero": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    "low_density": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    "nonempty": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    "unique_quorum": [
+     0,
+     0,
+     0,
+     1,
+     1,
+     1
+    ]
+   }
+  },
+  "stream_09": {
+   "kind": "identified",
+   "law": "unique_quorum",
+   "witnesses": {
+    "even_nonzero": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    "low_density": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    "nonempty": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    "odd_shells": [
+     0,
+     0,
+     0,
+     1,
+     1,
+     1
+    ]
+   }
+  },
+  "stream_10": {
+   "kind": "identified",
+   "law": "low_density",
+   "witnesses": {
+    "even_nonzero": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    "nonempty": [
+     0,
+     0,
+     0,
+     1,
+     1,
+     1
+    ],
+    "odd_shells": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    "unique_quorum": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     1
+    ]
+   }
+  },
+  "stream_11": {
+   "kind": "identified",
+   "law": "nonempty",
+   "witnesses": {
+    "even_nonzero": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    "low_density": [
+     0,
+     0,
+     0,
+     1,
+     1,
+     1
+    ],
+    "odd_shells": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    "unique_quorum": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     1
+    ]
+   }
+  },
+  "stream_12": {
+   "kind": "identified",
+   "law": "odd_shells",
+   "witnesses": {
+    "even_nonzero": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    "low_density": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    "nonempty": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    "unique_quorum": [
+     0,
+     0,
+     0,
+     1,
+     1,
+     1
+    ]
+   }
+  },
+  "stream_13": {
+   "kind": "identified",
+   "law": "unique_quorum",
+   "witnesses": {
+    "even_nonzero": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    "low_density": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    "nonempty": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    "odd_shells": [
+     0,
+     0,
+     0,
+     1,
+     1,
+     1
+    ]
+   }
+  },
+  "stream_14": {
+   "kind": "identified",
+   "law": "even_nonzero",
+   "witnesses": {
+    "low_density": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    "nonempty": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    "odd_shells": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    "unique_quorum": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  "stream_15": {
+   "kind": "identified",
+   "law": "odd_shells",
+   "witnesses": {
+    "even_nonzero": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    "low_density": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    "nonempty": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    "unique_quorum": [
+     0,
+     0,
+     0,
+     1,
+     1,
+     1
+    ]
+   }
+  },
+  "stream_16": {
+   "kind": "identified",
+   "law": "low_density",
+   "witnesses": {
+    "even_nonzero": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    "nonempty": [
+     0,
+     0,
+     0,
+     1,
+     1,
+     1
+    ],
+    "odd_shells": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    "unique_quorum": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     1
+    ]
+   }
+  },
+  "stream_17": {
+   "kind": "off_family",
+   "witnesses": {
+    "even_nonzero": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    "low_density": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    "nonempty": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    "odd_shells": [
+     0,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "unique_quorum": [
+     0,
+     0,
+     0,
+     1,
+     1,
+     1
+    ]
+   }
+  },
+  "stream_18": {
+   "completing_shell_sets": [
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     5
+    ]
+   ],
+   "consistent": [
+    "low_density",
+    "nonempty",
+    "odd_shells",
+    "unique_quorum"
+   ],
+   "kind": "ambiguous"
+  },
+  "stream_19": {
+   "kind": "identified",
+   "law": "nonempty",
+   "witnesses": {
+    "even_nonzero": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    "low_density": [
+     0,
+     0,
+     0,
+     1,
+     1,
+     1
+    ],
+    "odd_shells": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    "unique_quorum": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     1
+    ]
+   }
+  },
+  "stream_20": {
+   "kind": "identified",
+   "law": "even_nonzero",
+   "witnesses": {
+    "low_density": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    "nonempty": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    "odd_shells": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    "unique_quorum": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  "stream_21": {
+   "kind": "refuse_contradiction",
+   "word": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+   ]
+  }
+ },
+ "breakthrough": false,
+ "constitutional_effect": "none",
+ "contract": {
+  "audit": "unset",
+  "authority": "none",
+  "blind_seed": "finite-proper-cubic-admission-table-discriminator-blind-2026-07-23",
+  "check_labels": [
+   "port_grammar_anchor",
+   "family_census_fixture_crosscheck",
+   "separator_catalog",
+   "worker_grid_agreement",
+   "blinded_full_identification",
+   "train_prefix_held_no_refit",
+   "coverage_starved_refusal",
+   "off_family_covariant_imposter",
+   "non_covariant_imposter",
+   "non_deterministic_imposter",
+   "held_corpus_retraction",
+   "malformed_port_refusals",
+   "verdict_frame_invariance",
+   "decoder_blindness_discipline"
+  ],
+  "date": "2026-07-23",
+  "expected_verdicts": {
+   "antipodal": "off_family",
+   "axis": "refuse_covariance",
+   "mimic_full": "off_family",
+   "mimic_train": "identified:odd_shells",
+   "noisy": "refuse_contradiction",
+   "starved_even": "identified:even_nonzero",
+   "starved_uq": "ambiguous"
+  },
+  "family": {
+   "even_nonzero": [
+    2,
+    4,
+    6
+   ],
+   "low_density": [
+    1,
+    2
+   ],
+   "nonempty": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "odd_shells": [
+    1,
+    3,
+    5
+   ],
+   "unique_quorum": [
+    1
+   ]
+  },
+  "imposters": {
+   "antipodal_pairs": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     4,
+     5
+    ]
+   ],
+   "axis_slot": 0,
+   "mimic_shells": [
+    1,
+    3
+   ],
+   "noisy_repeat_word": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+   ]
+  },
+  "law_order": [
+   "unique_quorum",
+   "odd_shells",
+   "nonempty",
+   "low_density",
+   "even_nonzero"
+  ],
+  "malformed_catalog": {
+   "m_edge": "W-edge",
+   "m_loser_mask": "W-losers0",
+   "m_member_without_occ": "W-member",
+   "m_receipt_mismatch": "W-receipt",
+   "m_resource_rail": "W-resource",
+   "m_snapshot_equation": "W-snapshot-consistency",
+   "m_snapshot_tail": "W-snapshot-consistency",
+   "m_winner_not_onehot": "W-losers1"
+  },
+  "port_grammar": {
+   "clauses": [
+    "W-bits",
+    "W-snapshot-consistency",
+    "W-member",
+    "W-receipt",
+    "W-edge",
+    "W-resource",
+    "W-losers0",
+    "W-losers1"
+   ],
+   "emitter_winner_convention": "lowest-index set candidate bit (supplied bookkeeping, not law content)",
+   "version": "finite lane-zero readout, winner-generalized, v1"
+  },
+  "stream_roster": [
+   "antipodal",
+   "axis",
+   "in_family_ext:even_nonzero",
+   "in_family_ext:low_density",
+   "in_family_ext:nonempty",
+   "in_family_ext:odd_shells",
+   "in_family_ext:unique_quorum",
+   "in_family_full:even_nonzero",
+   "in_family_full:low_density",
+   "in_family_full:nonempty",
+   "in_family_full:odd_shells",
+   "in_family_full:unique_quorum",
+   "in_family_train:even_nonzero",
+   "in_family_train:low_density",
+   "in_family_train:nonempty",
+   "in_family_train:odd_shells",
+   "in_family_train:unique_quorum",
+   "mimic_full",
+   "mimic_train",
+   "noisy",
+   "starved_even",
+   "starved_uq"
+  ],
+  "supplied_fixture": {
+   "family_census": {
+    "accepted_truth_rows": {
+     "even_nonzero": 31,
+     "low_density": 21,
+     "nonempty": 63,
+     "odd_shells": 32,
+     "unique_quorum": 6
+    },
+    "candidate_relation_digest": "c724243216bffdd804d69106872486ee92efd71adfb23b0d1f5821778ed14b34",
+    "held_accepts": {
+     "even_nonzero": 16,
+     "low_density": 0,
+     "nonempty": 22,
+     "odd_shells": 6,
+     "unique_quorum": 0
+    },
+    "pairwise": [
+     [
+      "unique_quorum",
+      "odd_shells",
+      20,
+      6,
+      26
+     ],
+     [
+      "unique_quorum",
+      "nonempty",
+      35,
+      22,
+      57
+     ],
+     [
+      "unique_quorum",
+      "low_density",
+      15,
+      0,
+      15
+     ],
+     [
+      "unique_quorum",
+      "even_nonzero",
+      21,
+      16,
+      37
+     ],
+     [
+      "odd_shells",
+      "nonempty",
+      15,
+      16,
+      31
+     ],
+     [
+      "odd_shells",
+      "low_density",
+      35,
+      6,
+      41
+     ],
+     [
+      "odd_shells",
+      "even_nonzero",
+      41,
+      22,
+      63
+     ],
+     [
+      "nonempty",
+      "low_density",
+      20,
+      22,
+      42
+     ],
+     [
+      "nonempty",
+      "even_nonzero",
+      26,
+      6,
+      32
+     ],
+     [
+      "low_density",
+      "even_nonzero",
+      6,
+      16,
+      22
+     ]
+    ],
+    "train_accepts": {
+     "even_nonzero": 15,
+     "low_density": 21,
+     "nonempty": 41,
+     "odd_shells": 26,
+     "unique_quorum": 6
+    }
+   }
+  },
+  "train_max_weight": 3,
+  "worker_grid_file": "finite_proper_cubic_admission_table_discriminator_independent_grid_2026_07_23.json"
+ },
+ "date": "2026-07-23",
+ "elapsed_seconds": 8.407,
+ "fail_count": 0,
+ "frame_invariance": {
+  "antipodal": {
+   "frames": 24,
+   "kind": "off_family",
+   "law": null,
+   "matches": 24
+  },
+  "in_family_full:unique_quorum": {
+   "frames": 24,
+   "kind": "identified",
+   "law": "unique_quorum",
+   "matches": 24
+  }
+ },
+ "frozen_contract_sha256": "23415f9ce9d54c7b78a5bceeffc7fe6396347bda62f45566399e8a88146b3743",
+ "identification_table": {
+  "antipodal": {
+   "correct": true,
+   "expected": "off_family",
+   "verdict": "off_family"
+  },
+  "axis": {
+   "correct": true,
+   "expected": "refuse_covariance",
+   "verdict": "refuse_covariance"
+  },
+  "in_family_ext:even_nonzero": {
+   "correct": true,
+   "expected": "identified:even_nonzero",
+   "verdict": "identified:even_nonzero"
+  },
+  "in_family_ext:low_density": {
+   "correct": true,
+   "expected": "identified:low_density",
+   "verdict": "identified:low_density"
+  },
+  "in_family_ext:nonempty": {
+   "correct": true,
+   "expected": "identified:nonempty",
+   "verdict": "identified:nonempty"
+  },
+  "in_family_ext:odd_shells": {
+   "correct": true,
+   "expected": "identified:odd_shells",
+   "verdict": "identified:odd_shells"
+  },
+  "in_family_ext:unique_quorum": {
+   "correct": true,
+   "expected": "identified:unique_quorum",
+   "verdict": "identified:unique_quorum"
+  },
+  "in_family_full:even_nonzero": {
+   "correct": true,
+   "expected": "identified:even_nonzero",
+   "verdict": "identified:even_nonzero"
+  },
+  "in_family_full:low_density": {
+   "correct": true,
+   "expected": "identified:low_density",
+   "verdict": "identified:low_density"
+  },
+  "in_family_full:nonempty": {
+   "correct": true,
+   "expected": "identified:nonempty",
+   "verdict": "identified:nonempty"
+  },
+  "in_family_full:odd_shells": {
+   "correct": true,
+   "expected": "identified:odd_shells",
+   "verdict": "identified:odd_shells"
+  },
+  "in_family_full:unique_quorum": {
+   "correct": true,
+   "expected": "identified:unique_quorum",
+   "verdict": "identified:unique_quorum"
+  },
+  "in_family_train:even_nonzero": {
+   "correct": true,
+   "expected": "identified:even_nonzero",
+   "verdict": "identified:even_nonzero"
+  },
+  "in_family_train:low_density": {
+   "correct": true,
+   "expected": "identified:low_density",
+   "verdict": "identified:low_density"
+  },
+  "in_family_train:nonempty": {
+   "correct": true,
+   "expected": "identified:nonempty",
+   "verdict": "identified:nonempty"
+  },
+  "in_family_train:odd_shells": {
+   "correct": true,
+   "expected": "identified:odd_shells",
+   "verdict": "identified:odd_shells"
+  },
+  "in_family_train:unique_quorum": {
+   "correct": true,
+   "expected": "identified:unique_quorum",
+   "verdict": "identified:unique_quorum"
+  },
+  "mimic_full": {
+   "correct": true,
+   "expected": "off_family",
+   "verdict": "off_family"
+  },
+  "mimic_train": {
+   "correct": true,
+   "expected": "identified:odd_shells",
+   "verdict": "identified:odd_shells"
+  },
+  "noisy": {
+   "correct": true,
+   "expected": "refuse_contradiction",
+   "verdict": "refuse_contradiction"
+  },
+  "starved_even": {
+   "correct": true,
+   "expected": "identified:even_nonzero",
+   "verdict": "identified:even_nonzero"
+  },
+  "starved_uq": {
+   "correct": true,
+   "expected": "ambiguous",
+   "verdict": "ambiguous"
+  }
+ },
+ "interpretation_firewall": [
+  "The five candidate tables and port grammar are supplied finite inputs; identifying a table does not identify nature's fixed Admissibility rule.",
+  "occurrence / MEMBER / LAW_RECEIPT are supplied grammar fields; no objective actuality or framework-Record identification is claimed for any stream element.",
+  "Acceptance profiles are Boolean; no frequency, weight, grade, or Born probability is computed or interpreted.",
+  "The reference emitters are synthetic stream generators for harness self-test only; they are NOT formation routes, and the emitter's winner convention is supplied bookkeeping the decoder never reads beyond grammar well-formedness.",
+  "Refusal verdicts about imposter streams are statements about those synthetic streams, not about any physical channel; no gravity content."
+ ],
+ "orbit_census": [
+  [
+   0,
+   1,
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  ],
+  [
+   1,
+   6,
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+   ]
+  ],
+  [
+   2,
+   3,
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    1
+   ]
+  ],
+  [
+   2,
+   12,
+   [
+    0,
+    0,
+    0,
+    1,
+    0,
+    1
+   ]
+  ],
+  [
+   3,
+   8,
+   [
+    0,
+    1,
+    0,
+    1,
+    0,
+    1
+   ]
+  ],
+  [
+   3,
+   12,
+   [
+    0,
+    0,
+    0,
+    1,
+    1,
+    1
+   ]
+  ],
+  [
+   4,
+   3,
+   [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1
+   ]
+  ],
+  [
+   4,
+   12,
+   [
+    0,
+    1,
+    0,
+    1,
+    1,
+    1
+   ]
+  ],
+  [
+   5,
+   6,
+   [
+    0,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  ],
+  [
+   6,
+   1,
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  ]
+ ],
+ "pass": true,
+ "pass_count": 24,
+ "refusal_rows": {
+  "axis": {
+   "kind": "refuse_covariance",
+   "witness": [
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    [
+     1,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   ]
+  },
+  "malformed": {
+   "m_edge": {
+    "expected": "W-edge",
+    "kind": "refuse_malformed",
+    "ok": true,
+    "reason": "W-edge"
+   },
+   "m_loser_mask": {
+    "expected": "W-losers0",
+    "kind": "refuse_malformed",
+    "ok": true,
+    "reason": "W-losers0"
+   },
+   "m_member_without_occ": {
+    "expected": "W-member",
+    "kind": "refuse_malformed",
+    "ok": true,
+    "reason": "W-member"
+   },
+   "m_receipt_mismatch": {
+    "expected": "W-receipt",
+    "kind": "refuse_malformed",
+    "ok": true,
+    "reason": "W-receipt"
+   },
+   "m_resource_rail": {
+    "expected": "W-resource",
+    "kind": "refuse_malformed",
+    "ok": true,
+    "reason": "W-resource"
+   },
+   "m_snapshot_equation": {
+    "expected": "W-snapshot-consistency",
+    "kind": "refuse_malformed",
+    "ok": true,
+    "reason": "W-snapshot-consistency"
+   },
+   "m_snapshot_tail": {
+    "expected": "W-snapshot-consistency",
+    "kind": "refuse_malformed",
+    "ok": true,
+    "reason": "W-snapshot-consistency"
+   },
+   "m_winner_not_onehot": {
+    "expected": "W-losers1",
+    "kind": "refuse_malformed",
+    "ok": true,
+    "reason": "W-losers1"
+   }
+  },
+  "noisy": {
+   "kind": "refuse_contradiction",
+   "word": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+   ]
+  }
+ },
+ "retraction_row": {
+  "mimic_full": {
+   "kind": "off_family",
+   "witnesses": {
+    "even_nonzero": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    "low_density": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    "nonempty": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    "odd_shells": [
+     0,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "unique_quorum": [
+     0,
+     0,
+     0,
+     1,
+     1,
+     1
+    ]
+   }
+  },
+  "mimic_train": {
+   "kind": "identified",
+   "law": "odd_shells",
+   "witnesses": {
+    "even_nonzero": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    "low_density": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    "nonempty": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    "unique_quorum": [
+     0,
+     0,
+     0,
+     1,
+     1,
+     1
+    ]
+   }
+  }
+ },
+ "separator_catalog": {
+  "minimal_separating_shell_sets": {
+   "sets": [
+    [
+     1,
+     2,
+     3
+    ],
+    [
+     1,
+     2,
+     5
+    ],
+    [
+     2,
+     3,
+     4
+    ],
+    [
+     2,
+     3,
+     6
+    ],
+    [
+     2,
+     4,
+     5
+    ],
+    [
+     2,
+     5,
+     6
+    ]
+   ],
+   "size": 3
+  },
+  "pairwise": [
+   [
+    "unique_quorum",
+    "odd_shells",
+    20,
+    6,
+    26
+   ],
+   [
+    "unique_quorum",
+    "nonempty",
+    35,
+    22,
+    57
+   ],
+   [
+    "unique_quorum",
+    "low_density",
+    15,
+    0,
+    15
+   ],
+   [
+    "unique_quorum",
+    "even_nonzero",
+    21,
+    16,
+    37
+   ],
+   [
+    "odd_shells",
+    "nonempty",
+    15,
+    16,
+    31
+   ],
+   [
+    "odd_shells",
+    "low_density",
+    35,
+    6,
+    41
+   ],
+   [
+    "odd_shells",
+    "even_nonzero",
+    41,
+    22,
+    63
+   ],
+   [
+    "nonempty",
+    "low_density",
+    20,
+    22,
+    42
+   ],
+   [
+    "nonempty",
+    "even_nonzero",
+    26,
+    6,
+    32
+   ],
+   [
+    "low_density",
+    "even_nonzero",
+    6,
+    16,
+    22
+   ]
+  ]
+ },
+ "shell_profiles": {
+  "even_nonzero": [
+   0,
+   0,
+   1,
+   0,
+   1,
+   0,
+   1
+  ],
+  "low_density": [
+   0,
+   1,
+   1,
+   0,
+   0,
+   0,
+   0
+  ],
+  "nonempty": [
+   0,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1
+  ],
+  "odd_shells": [
+   0,
+   1,
+   0,
+   1,
+   0,
+   1,
+   0
+  ],
+  "unique_quorum": [
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0
+  ]
+ },
+ "unblind_manifest": {
+  "stream_00": "in_family_train:odd_shells",
+  "stream_01": "in_family_ext:unique_quorum",
+  "stream_02": "in_family_full:low_density",
+  "stream_03": "in_family_ext:nonempty",
+  "stream_04": "antipodal",
+  "stream_05": "axis",
+  "stream_06": "in_family_train:even_nonzero",
+  "stream_07": "starved_even",
+  "stream_08": "in_family_ext:odd_shells",
+  "stream_09": "in_family_full:unique_quorum",
+  "stream_10": "in_family_ext:low_density",
+  "stream_11": "in_family_full:nonempty",
+  "stream_12": "mimic_train",
+  "stream_13": "in_family_train:unique_quorum",
+  "stream_14": "in_family_ext:even_nonzero",
+  "stream_15": "in_family_full:odd_shells",
+  "stream_16": "in_family_train:low_density",
+  "stream_17": "mimic_full",
+  "stream_18": "starved_uq",
+  "stream_19": "in_family_train:nonempty",
+  "stream_20": "in_family_full:even_nonzero",
+  "stream_21": "noisy"
+ },
+ "worker_grid_agreement": {
+  "fields": {
+   "antipodal": true,
+   "completing_sets_after_shell1_uq": true,
+   "mimic_odd_disagreements": true,
+   "minimal_separating_shell_sets": true,
+   "orbit_census": true,
+   "pairwise_separators": true,
+   "scenario_consistent_sets": true,
+   "shell_profiles": true,
+   "train_only_identifiable": true
+  },
+  "grid_path": "outputs/finite_proper_cubic_admission_table_discriminator_independent_grid_2026_07_23.json",
+  "grid_sha256": "6cece4e936e0f41ca1c87daf9e6bdc3de2b60cfe24c5971eb88787429afef54a"
+ }
+}

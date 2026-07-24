@@ -80,11 +80,11 @@
   ],
   "cycles_detected": 58,
   "effective_status_counts": {
-    "audit_in_progress": 6,
+    "audit_in_progress": 5,
     "audited_conditional": 67,
     "audited_failed": 10,
     "audited_numerical_match": 6,
-    "audited_renaming": 17,
+    "audited_renaming": 18,
     "decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": 1,
     "decoration_under_d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12": 1,
     "decoration_under_gauge_vacuum_plaquette_reduction_existence_theorem_note": 1,

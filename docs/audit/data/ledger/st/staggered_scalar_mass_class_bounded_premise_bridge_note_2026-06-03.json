@@ -1,44 +1,133 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
-  "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "audit_date": "2026-07-24T00:09:01.947690+00:00",
+  "audit_invocation_history": [
+    "3328479275674f03be7e6fcc8d8c53a2",
+    "7033f76e247e4573805a65681479979d"
+  ],
+  "audit_invocation_id": "7033f76e247e4573805a65681479979d",
+  "audit_state_snapshot": {
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+    },
+    "dep_claim_type": {
+      "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+    },
+    "deps": [
+      "staggered_only_det_positivity_case_a_note_2026-05-17"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 9.996,
+    "runner_hash": "d186e6326c3af0cb88a10cfc762ec6c207f3020e18f6d161e91d1e2950527ccb",
+    "transitive_descendants": 721
+  },
+  "audit_status": "audit_in_progress",
+  "auditor": "codex-audit-batch-A-20260724-47566045",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": "cross_confirmation_disagreement",
+  "chain_closes": false,
+  "chain_closure_explanation": "The runner hard-codes the scalar-mass action class and checks consequences after its introduction; it does not derive that class from retained inputs. The clipped Case A authority also prevents an independent audit of the imported exact determinant-positivity theorem.",
   "claim_id": "staggered_scalar_mass_class_bounded_premise_bridge_note_2026-06-03",
-  "claim_scope": null,
+  "claim_scope": "Row-local introduction of the real-positive scalar mass class M=mI with m>0 and M_epsilon=0, together with exact I/epsilon membership tests and finite-sample determinant-phase consequences.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint_after_invalidation",
+  "claim_type_last_reviewed": "2026-07-24T00:09:01.947690+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "critical",
-  "cross_confirmation": null,
+  "cross_confirmation": {
+    "first_audit": {
+      "audit_date": "2026-07-24T00:09:01.947690+00:00",
+      "audit_invocation_id": "3328479275674f03be7e6fcc8d8c53a2",
+      "auditor": "codex-audit-batch-A-20260724-47566045",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner hard-codes the scalar-mass action class and checks consequences after its introduction; it does not derive that class from retained inputs. The clipped Case A authority also prevents an independent audit of the imported exact determinant-positivity theorem.",
+      "claim_scope": "Row-local introduction of the real-positive scalar mass class M=mI with m>0 and M_epsilon=0, together with exact I/epsilon membership tests and finite-sample determinant-phase consequences.",
+      "claim_type": "bounded_theorem",
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The reviewed mass action class is introduced as the real scalar line M=mI, m>0, with M_epsilon=0.",
+      "load_bearing_step_class": "E",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls"
+      ],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive the scalar-mass action-class selection from retained inputs and rebuild the restricted packet with the complete retained Case A authority before re-audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 22,
+        "B": 0,
+        "C": 6,
+        "D": 0,
+        "total_pass": 28
+      },
+      "verdict": "audited_renaming",
+      "verdict_rationale": "Issue: The load-bearing scalar-mass action class is introduced as a row-local definition or premise, and the packet clips the retained authority used for exact determinant positivity. Why this blocks: the runner verifies membership and finite-sample phase consequences after hard-coding the premise, but it neither derives the class nor permits an independent check of the imported exact theorem. Repair target: supply a retained bridge deriving the scalar-mass action-class selection and rebuild the packet with the complete Case A proof. Claim boundary until fixed: the scalar/epsilon decompositions and sampled phase checks remain bounded support, and the only supported named-wall judgment is that sampled determinant positivity does not itself impose the scalar class; no closure of all mixed or pseudoscalar routes follows."
+    },
+    "mode": "terminal_second_pass",
+    "second_audit": {
+      "audit_date": "2026-07-24T00:09:01.955325+00:00",
+      "audit_invocation_id": "7033f76e247e4573805a65681479979d",
+      "auditor": "codex-audit-batch-B-20260724-273a7d9c",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "chain_closes": false,
+      "chain_closure_explanation": "The scalar-mass action class is stipulated row-locally rather than derived from retained framework inputs. In addition, the restricted packet clips the cited authority supplying exact scalar-line determinant positivity.",
+      "claim_scope": "Given the row-local premise M = mI with m > 0 and M_epsilon = 0, the I/epsilon membership exclusions, cited scalar-line determinant positivity, and finite-sample phase checks were audited.",
+      "claim_type": "bounded_theorem",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The reviewed mass action class is introduced as the real scalar line M = m I, m > 0, with M_epsilon = 0.",
+      "load_bearing_step_class": "E",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale"
+      ],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive the scalar-mass-only action class M = mI, m > 0, M_epsilon = 0 from retained inputs and regenerate the restricted packet with the complete Case A authority.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 22,
+        "B": 0,
+        "C": 6,
+        "D": 0,
+        "total_pass": 28
+      },
+      "verdict": "audited_renaming",
+      "verdict_rationale": "The note honestly records bounded-premise support, but its load-bearing move introduces the scalar-mass class locally rather than deriving it. The algebraic membership exclusions and finite-sample phase checks pass, while exact positivity is imported from a retained authority whose load-bearing evidence is clipped in this packet. The mixed-mass sample also shows that determinant positivity alone does not eliminate the epsilon-component route, leaving the scalar-class wall as an explicit independent condition."
+    },
+    "status": "disagreement"
+  },
   "decoration_parent_claim_id": null,
   "deps": [
     "staggered_only_det_positivity_case_a_note_2026-05-17"
   ],
   "direct_in_degree": 1,
-  "effective_status": "unaudited",
+  "effective_status": "audit_in_progress",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audit_in_progress",
   "load_bearing_score": 9.996,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The reviewed mass action class is introduced as the real scalar line M=mI, m>0, with M_epsilon=0.",
+  "load_bearing_step_class": "E",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls"
+  ],
   "note_hash": "7cc69a28027684d1eee6a5a0bf0aabec2d8cf9a5a04765eb9cfd331a49d27ab9",
   "note_path": "docs/STAGGERED_SCALAR_MASS_CLASS_BOUNDED_PREMISE_BRIDGE_NOTE_2026-06-03.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "missing_bridge_theorem: derive the scalar-mass action-class selection from retained inputs and rebuild the restricted packet with the complete retained Case A authority before re-audit.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -281,14 +370,14 @@
     }
   ],
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 22,
     "B": 0,
-    "C": 0,
+    "C": 6,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 28
   },
   "runner_path": "scripts/staggered_scalar_mass_class_bounded_premise_runner.py",
   "title": "Staggered Scalar-Mass Action Class Bounded-Premise Bridge",
   "transitive_descendants": 721,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: The load-bearing scalar-mass action class is introduced as a row-local definition or premise, and the packet clips the retained authority used for exact determinant positivity. Why this blocks: the runner verifies membership and finite-sample phase consequences after hard-coding the premise, but it neither derives the class nor permits an independent check of the imported exact theorem. Repair target: supply a retained bridge deriving the scalar-mass action-class selection and rebuild the packet with the complete Case A proof. Claim boundary until fixed: the scalar/epsilon decompositions and sampled phase checks remain bounded support, and the only supported named-wall judgment is that sampled determinant positivity does not itself impose the scalar class; no closure of all mixed or pseudoscalar routes follows."
 }

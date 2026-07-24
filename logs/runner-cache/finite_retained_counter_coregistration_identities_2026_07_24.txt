@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/finite_retained_counter_coregistration_identities_2026_07_24.py
+runner_sha256: 916315f0dbb8b2e6ee433f3e643d6759893f392955d2a48afa29ff1760e5262f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+PASS exact counter snapshots equal supplied tick-prefix counts :: {'A': {'S1': 242, 'S2': 710, 'S3': 1231, 'S4': 1799}, 'B': {'S1': 160, 'S2': 468, 'S3': 812, 'S4': 1187}, 'C': {'S1': 117, 'S2': 344, 'S3': 596, 'S4': 872}}
+PASS exact integer telescoping holds on all supplied label triples :: {'rows': 12}
+PASS exact reversal negates decoded intervals and preserves rational count ratios :: {'interval_pairs_checked': 18, 'ratio_B_over_A': {'numerator': 1027, 'denominator': 1557, 'decimal': 0.659601798330122}, 'ratio_C_over_B': {'numerator': 755, 'denominator': 1027, 'decimal': 0.7351509250243428}}
+PASS exact marked counts are invariant under the supplied one-reset procedure :: {'resets_used': 1, 'reset_cell_index': 702, 'inside_S2_S3': True, 'positions_equal': True, 'intervals_equal': True, 'carry_erasure_control_changes_S1_S3': True}
+PASS missing-label queries return None while an unrelated marked interval is unchanged :: {'missing_results': [None, None, None], 'surviving_S1_S3': 652}
+PASS exact decoded-count additivity holds across the supplied slope change :: {'first': 969, 'second': 640, 'total': 1609, 'accumulated_at_split': '606208/625', 'accumulated_at_end': '1006208/625'}
+PASS supplied cross-order predicate accepts ordinary rows and refuses the injected inversion :: {'ordinary': ['accepted', 'accepted', 'accepted', 'accepted'], 'ordinary_accept_mutation_exact': True, 'first_adversarial_fixture_call': 'accepted', 'first_accept_mutation_exact': True, 'after_injected_snapshot': 'refused_inverted', 'refusal_state_unchanged': True}
+PASS displayed decoders ignore bank/generator metadata but retain index-oriented predecessor lineage :: {'baseline_S1_S3': 652, 'metadata_mutant_S1_S3': 652, 'broken_predecessor_S1_S3': None, 'index_lineage_remains_used': True}
+PASS finite floating diagnostic only: segment-ratio spreads fit disclosed two-count tolerances :: {'B_over_A': [0.6581196581196581, 0.6602687140115163, 0.6602112676056338], 'spread_B_over_A': 0.0021490558918582092, 'tolerance_B_over_A': 0.006493506493506494, 'C_over_B': [0.737012987012987, 0.7325581395348837, 0.736], 'spread_C_over_B': 0.004454847478103319, 'tolerance_C_over_B': 0.00881057268722467, 'classification': 'finite floating diagnostic, not exact identity'}
+RESULT 9 0
+RECEIPT outputs/finite_retained_counter_coregistration_identities_receipt_2026_07_24.json
+
+----- stderr -----
+

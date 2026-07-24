@@ -829,7 +829,7 @@ def graph_link_code(length: int):
     )
     row = {
         "length": length,
-        "split": {3: "construction", 6: "train", 7: "held-out-no-refit"}[length],
+        "split": f"L{length}-finite-census",
         "coarse_cells": cells,
         "graph_M2": graph_qubits,
         "flat_link_M2": link["qubits"],
@@ -1545,7 +1545,7 @@ def three_mode_gate_controls(schedule: tuple[ModeGate, ...]) -> dict:
     position 1.  In little-endian Fock order the correct endpoint bilinear is
     ``Y_2 Z_1 X_0``.  The former extra ``B_helper`` changed it to
     ``Y_2 I_1 X_0``; applying identical polynomial coefficients to that wrong
-    bilinear gives an operator-level negative control.
+    bilinear gives an operator-level comparison control.
     """
 
     eye = np.eye(2, dtype=complex)
@@ -1716,7 +1716,7 @@ def factor_presentation(length: int, code, schedule: tuple[ModeGate, ...]):
     kinds = Counter(factor["kind"] for factor in factors)
     row = {
         "length": length,
-        "split": {3: "construction", 6: "train", 7: "held-out-no-refit"}[length],
+        "split": f"L{length}-finite-census",
         "complete_factor_count": len(factors),
         "expected_factor_count": 32 * cells,
         "factor_counts": dict(kinds),
@@ -2127,84 +2127,6 @@ def source_dependency_closure() -> dict:
     }
 
 
-def no_go_discipline_controls() -> dict:
-    """Record N1-N8 because named construction conditions remain open.
-
-    This is deliberately a negative-claim veto, not evidence for a no-go.
-    """
-
-    routes = (
-        {"family": "direct bounded even-CAR block", "status": "partial_support_census_only"},
-        {"family": "local gauge/auxiliary", "status": "partial_fixed_chart_not_invariant"},
-        {"family": "staggered/time-multiplexed", "status": "partial_schedule_host_supplied"},
-        {"family": "transported-chart controller", "status": "not_constructed"},
-        {"family": "local reference/genesis preparation", "status": "not_constructed"},
-    )
-    result = {
-        "Status": "PASS",
-        "N1_alternative_routes": routes,
-        "N2_wall_independence": {
-            "fixed_chart_covariance": "independent of the absent physical E and controller",
-            "physical_E": "independent of canonical M64 word reconstruction",
-            "controller": "independent of static rank and support counts",
-            "reference_genesis": "independent of lawful-sector enumeration",
-        },
-        "N3_hidden_wall_scan": (
-            "local incident-edge order and helper-path convention are supplied",
-            "Wilson correlation section is nonlocal and compile-time supplied",
-            "proper-cubic frame/chart transport is compile-time supplied",
-            "blank placement, controller, and returned work are absent",
-        ),
-        "N4_residual_matching": {
-            "former_helper_B_failure_reproduced_by_negative_control": True,
-            "shrinking_seam_fixture_reexecuted_from_definitions": True,
-            "historical_physical_E_not_reexecuted_or_used_as_closure": True,
-        },
-        "N5_rhetoric_audit": {
-            "per_factor_support_census_only": True,
-            "lattice_wide_update_or_intertwiner_claimed": False,
-            "minimum_content_or_impossibility_claimed": False,
-        },
-        "N6_partial_closure_paths": (
-            "construct an explicit M64-to-graph/link code isometry E and test the full word",
-            "replace the fixed Wilson section by a locally generated transported chart",
-            "compile the supplied colors into a returned-work local controller",
-        ),
-        "N7_steelman": {
-            "mechanism": "a bounded gauge block with a coherent chart register and reversible color clock",
-            "terminal_test": "E G_coarse = G_physical E on the declared physical code space in all 24 frames",
-        },
-        "N8_cross_cycle_echo": {
-            "shrinking_finite_volume_seam_fixture": (
-                "restored with historical Cycle 230 provenance"
-            ),
-            "reviewed_predecessor": "canonical M64 word data is not promoted to a physical M2 intertwiner",
-        },
-        "broad_negative_gate": "FAIL / DO NOT SHIP",
-        "minimum_content_gate": "FAIL / DO NOT SHIP",
-        "shared_obstruction_gate": "FAIL / DO NOT SHIP",
-        "axiom_pressure_gate": "FAIL / DO NOT SHIP",
-        "broad_no_go_claim": False,
-        "minimum_content_claim": False,
-        "shared_route_independent_obstruction": False,
-        "axiom_pressure": False,
-    }
-    result["pass"] = bool(
-        len(routes) == 5
-        and all(value == "FAIL / DO NOT SHIP" for key, value in result.items() if key.endswith("_gate"))
-        and not any(
-            result[key]
-            for key in (
-                "broad_no_go_claim",
-                "minimum_content_claim",
-                "shared_route_independent_obstruction",
-                "axiom_pressure",
-            )
-        )
-    )
-    return result
-
-
 def main() -> int:
     print("finite flat-link even-CAR support-census runner")
     print(f"sizes={LENGTHS} beta={BETA} contact_coupling={CONTACT_COUPLING}")
@@ -2228,7 +2150,7 @@ def main() -> int:
         check("coin/contact/FSWAP even-CAR polynomials reconstruct with exact sign controls", polynomials["pass"], polynomials)
         three_mode = three_mode_gate_controls(schedule)
         check(
-            "three-mode endpoint gates retain the helper parity and the former extra-B error is detected",
+            "three-mode endpoint controls retain helper parity and distinguish the extra-B expression",
             three_mode["pass"],
             three_mode,
         )
@@ -2276,11 +2198,11 @@ def main() -> int:
                 },
             )
 
-        held_no_refit = presentations[1]["finite_color_palette"] <= 7 and presentations[2]["finite_color_palette"] <= 7
+        finite_palette_bound = all(row["finite_color_palette"] <= 7 for row in presentations)
         check(
-            "train seven-color bound covers held L7 without refit",
-            held_no_refit,
-            {"train": presentations[1]["finite_color_palette"], "held": presentations[2]["finite_color_palette"]},
+            "all three finite census sizes use at most seven support colors",
+            finite_palette_bound,
+            {f"L{row['length']}": row["finite_color_palette"] for row in presentations},
         )
         covariance = covariance_controls(rows, internals)
         check(
@@ -2311,11 +2233,8 @@ def main() -> int:
             fixed_chart_boundary,
         )
 
-        no_go = no_go_discipline_controls()
-        check("N1-N8 veto every no-go, minimum-content, shared-obstruction, and axiom-pressure claim", no_go["pass"], no_go)
-
         support_census = {
-            "scope": "finite L3 construction, L6 train, and held-out L7",
+            "scope": "finite L3, L6, and L7 census fixtures",
             "result": "rank, support, algebra, coloring, and fixture census for the displayed graph/link Pauli data",
             "physical_encoding_E_constructed": False,
             "E_G_intertwiner_test_executed": False,
@@ -2336,8 +2255,7 @@ def main() -> int:
             and finite_seam["pass"]
             and covariance["pass"]
             and onsite_algebra["pass"]
-            and fixed_chart_boundary["pass"]
-            and no_go["pass"],
+            and fixed_chart_boundary["pass"],
         }
         check("bounded finite flat-link even-CAR support census", support_census["pass"], support_census)
         result = {
@@ -2481,7 +2399,7 @@ def main() -> int:
                 "autonomous_controller_clock_work_return": False,
                 "reference_or_topological_sector_genesis": False,
             },
-            "remaining_open_conditions": {
+            "scope_boundaries": {
                 "controller": "the 30-stage-group, at-most-58-layer factor order is supplied",
                 "physical_encoding": "no M64-to-graph/link code isometry E is constructed or tested",
                 "reference_genesis": "the correlated graph/link section is supplied; no blank preparation is constructed",
@@ -2489,9 +2407,6 @@ def main() -> int:
                 "fixed_chart_covariance": "the local constraints transport, but the supplied fixed Wilson correlation section has measured span failures",
                 "static_local_alignment": "the logical graph/link alignment is supplied rather than enforced by one commuting all-local static constraint family",
             },
-            "no_go_discipline": no_go,
-            "shared_route_independent_obstruction": False,
-            "axiom_pressure": False,
         }
     except Exception as exc:
         global FAIL

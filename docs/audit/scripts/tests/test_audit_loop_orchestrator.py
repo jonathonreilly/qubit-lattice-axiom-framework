@@ -667,6 +667,8 @@ def _args() -> argparse.Namespace:
     return argparse.Namespace(
         lane=None,
         max_workers=4,
+        worker_id="",
+        development_helper=False,
         max_passes=0,
         max_lane_cycles=0,
         batch_rounds=6,
@@ -955,7 +957,11 @@ class SchemaRecoveryTest(unittest.TestCase):
         self.assertEqual([row["claim_id"] for row in targets], ["target"])
         self.assertEqual(
             {record["reason"] for record in records},
-            batch.SELECTION_SKIP_REASONS - {"unclassified_selector_skip"},
+            batch.SELECTION_SKIP_REASONS - {
+                "unclassified_selector_skip",
+                "audit_role_not_actionable",
+                "weak_dispatch_independence",
+            },
         )
 
     def test_selector_skip_loader_rejects_reason_detail_mismatch(self):
@@ -2855,6 +2861,173 @@ class AutomaticPanelResumeTest(unittest.TestCase):
 
 
 class CampaignContractTest(unittest.TestCase):
+    def test_alternate_source_uses_current_role_and_authenticated_fingerprint(self):
+        row = {
+            "claim_id": "dispatch_row",
+            "audit_status": "audited_clean",
+            "effective_status": "retained",
+            "claim_type": "bounded_theorem",
+            "criticality": "high",
+            "author_family": "claude",
+            "auditor_family": "codex-gpt-5.6",
+            "deps": [],
+        }
+        source_row = dict(
+            row,
+            dispatch_target=True,
+            allowed_context_paths=["docs/DISPATCH.md"],
+        )
+        with mock.patch.object(
+            batch, "source_queue_rows", return_value=[source_row]
+        ), mock.patch.object(
+            batch, "source_requires_forensic", return_value=False
+        ), mock.patch.object(
+            batch, "note_hash_drifted", return_value=False
+        ):
+            targets, skipped = batch.compute_alternate_targets(
+                "dispatch",
+                {"dispatch_row": row},
+            )
+
+        self.assertEqual(skipped, [])
+        self.assertEqual(len(targets), 1)
+        self.assertEqual(targets[0]["_audit_passes"], [1])
+        self.assertEqual(targets[0]["_audit_independence"], "cross_family")
+        self.assertEqual(targets[0]["_selection_source"], "dispatch")
+        self.assertEqual(
+            targets[0]["_source_fingerprint"],
+            batch.source_row_fingerprint(source_row),
+        )
+
+    def test_applied_alternate_source_that_stays_live_is_campaign_excluded(self):
+        selected = [{
+            "claim_id": "dispatch_row",
+            "_selection_source": "dispatch",
+        }]
+        current = {
+            "dispatch_row": {
+                "claim_id": "dispatch_row",
+                "audit_status": "audited_conditional",
+            }
+        }
+        report = [{
+            "cid": "dispatch_row",
+            "result": "audited_conditional",
+            "commit": "landed",
+        }]
+        with mock.patch.object(
+            batch,
+            "source_queue_rows",
+            return_value=[{"claim_id": "dispatch_row"}],
+        ):
+            reentries = batch.blocked_row_reentries(
+                selected,
+                current,
+                report,
+            )
+
+        self.assertEqual(
+            reentries,
+            {
+                "dispatch_row":
+                    "dispatch_selection_still_live_after_applied_verdict"
+            },
+        )
+        self.assertEqual(
+            report[-1]["result"],
+            batch.BLOCKED_ROW_QUARANTINE_RESULT,
+        )
+
+    def test_worker_rotation_preserves_full_set_and_spreads_starts(self):
+        targets = [
+            {
+                "claim_id": f"critical_{index}",
+                "criticality": "critical",
+            }
+            for index in range(7)
+        ] + [
+            {
+                "claim_id": f"high_{index}",
+                "criticality": "high",
+            }
+            for index in range(7)
+        ]
+
+        first = batch.rotate_priority_tiers(targets, "employee-alpha")
+        repeated = batch.rotate_priority_tiers(targets, "employee-alpha")
+        second = batch.rotate_priority_tiers(targets, "employee-beta")
+
+        self.assertEqual(first, repeated)
+        self.assertEqual(
+            {row["claim_id"] for row in first},
+            {row["claim_id"] for row in targets},
+        )
+        self.assertNotEqual(
+            [row["claim_id"] for row in first],
+            [row["claim_id"] for row in second],
+        )
+        self.assertEqual(
+            [row["criticality"] for row in first],
+            ["critical"] * 7 + ["high"] * 7,
+        )
+
+    def test_remote_claim_movement_discards_stale_delivery(self):
+        row = {"claim_id": "row", "criticality": "high"}
+        deliveries = [(
+            {
+                "cid": "row",
+                "pass": 1,
+                "row": row,
+                "selection_fingerprint": "launched-state",
+            },
+            {
+                "audit": {"verdict": "audited_clean"},
+                "evidence_manifest": {},
+            },
+        )]
+        with mock.patch.object(
+            batch, "sync_origin_main", return_value=(True, "remote")
+        ), mock.patch.object(
+            batch, "load_rows", return_value={"row": row}
+        ), mock.patch.object(
+            batch, "selection_fingerprint", return_value="current-state"
+        ), mock.patch.object(
+            batch.audit_runner, "apply_one"
+        ) as apply_one, mock.patch.object(
+            batch, "run_generated_gates"
+        ) as gates:
+            ok, results = batch.apply_claim_serialized(deliveries, retries=3)
+
+        self.assertTrue(ok)
+        self.assertEqual(
+            results[0]["result"],
+            batch.REMOTE_STATE_SUPERSEDED_RESULT,
+        )
+        apply_one.assert_not_called()
+        gates.assert_not_called()
+
+    def test_runner_execution_removes_only_new_checkout_side_effects(self):
+        marker = f"runner-side-effect-{time.time_ns()}.tmp"
+        marker_path = batch.audit_runner.REPO_ROOT / marker
+        before = batch.audit_runner._runner_worktree_state()
+        with tempfile.TemporaryDirectory() as tmp:
+            runner = Path(tmp) / "runner.py"
+            runner.write_text(
+                "from pathlib import Path\n"
+                f"Path({marker!r}).write_text('generated by runner')\n"
+                "print('runner evidence')\n",
+                encoding="utf-8",
+            )
+            result = batch.audit_runner._run_repo_runner(runner, 30)
+
+        self.assertEqual(result.returncode, 0)
+        self.assertIn("runner evidence", result.stdout)
+        self.assertFalse(marker_path.exists())
+        self.assertEqual(
+            batch.audit_runner._runner_worktree_state(),
+            before,
+        )
+
     def test_inherited_campaign_lock_is_reentrant_for_child(self):
         held = batch.acquire_exclusive_drain_lock("top-level-test")
         self.assertIsNotNone(held)
@@ -2975,6 +3148,47 @@ class CampaignContractTest(unittest.TestCase):
             self.assertTrue(
                 audit_loop.PROGRESS["canary_state"].startswith("quarantined:")
             )
+
+    def test_forensic_alternate_source_is_forwarded_to_restricted_runner(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            campaign = Path(tmp)
+            args = _args()
+            args.campaign_workdir = campaign
+            args.campaign_quarantine_file = (
+                campaign / "campaign-row-exclusions.jsonl"
+            )
+            claim_id = "cascade_no_go"
+            seen_command: list[str] = []
+
+            def select(*_args, **_kwargs):
+                audit_loop.PROGRESS["last_canary_source"] = "reaudit"
+                return claim_id
+
+            def fake_run(_label, command, env=None):
+                seen_command.extend(command)
+                log = Path(command[command.index("--run-log-path") + 1])
+                log.write_text(
+                    json.dumps(
+                        {
+                            "claim_id": claim_id,
+                            "phase": "applied",
+                            "verdict": "audited_conditional",
+                        }
+                    )
+                    + "\n",
+                    encoding="utf-8",
+                )
+                return 0
+
+            with mock.patch.object(
+                audit_loop,
+                "first_ready_forensic_claim",
+                side_effect=select,
+            ), mock.patch.object(audit_loop, "run_command", side_effect=fake_run):
+                rc = audit_loop.run_forensic_canary(args)
+
+        self.assertEqual(rc, 0)
+        self.assertIn("--from-reaudit-candidates", seen_command)
 
     def test_forensic_compute_skip_is_quarantined_and_returns_success(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -3172,6 +3386,91 @@ class CampaignContractTest(unittest.TestCase):
         self.assertEqual(rc, 2)
         run_panel.assert_not_called()
 
+    def test_development_helper_skips_panels_and_priority_lane_duplication(self):
+        with tempfile.TemporaryDirectory() as tmp, mock.patch.object(
+            audit_loop, "validate_requested_lanes"
+        ), mock.patch.object(
+            batch, "load_campaign_exclusion_records", return_value=[]
+        ), mock.patch.object(
+            batch, "load_campaign_selection_skip_records", return_value=[]
+        ), mock.patch.object(
+            audit_loop, "audit_status_snapshot", return_value={}
+        ), mock.patch.object(
+            audit_loop, "git_head", return_value="same"
+        ), mock.patch.object(
+            audit_loop, "run_panel"
+        ) as run_panel, mock.patch.object(
+            audit_loop, "blocking_lanes"
+        ) as blocking_lanes, mock.patch.object(
+            audit_loop, "drain_lane", return_value=(0, False)
+        ) as drain_lane:
+            rc = audit_loop.main(
+                [
+                    "--dry-run",
+                    "--development-helper",
+                    "--worker-id",
+                    "employee-alpha",
+                    "--campaign-workdir",
+                    tmp,
+                ]
+            )
+
+        self.assertEqual(rc, 0)
+        run_panel.assert_not_called()
+        blocking_lanes.assert_not_called()
+        drain_lane.assert_called_once()
+        self.assertIsNone(drain_lane.call_args.args[0])
+
+    def test_coordinator_continues_after_claim_local_forensic_exclusion(self):
+        lock = mock.Mock()
+        canary_calls = 0
+
+        def fake_canary(_args, _excluded):
+            nonlocal canary_calls
+            canary_calls += 1
+            audit_loop.PROGRESS["last_canary_claim_id"] = (
+                "quarantined_row" if canary_calls == 1 else None
+            )
+            return 0
+
+        with tempfile.TemporaryDirectory() as tmp, mock.patch.object(
+            audit_loop, "validate_requested_lanes"
+        ), mock.patch.object(
+            batch, "load_campaign_exclusion_records", return_value=[]
+        ), mock.patch.object(
+            batch, "load_campaign_selection_skip_records", return_value=[]
+        ), mock.patch.object(
+            batch, "acquire_exclusive_drain_lock", return_value=lock
+        ), mock.patch.object(
+            batch, "clean_main_error", return_value=None
+        ), mock.patch.object(
+            batch, "sync_origin_main", return_value=(True, "same")
+        ), mock.patch.object(
+            audit_loop, "audit_status_snapshot", return_value={}
+        ), mock.patch.object(
+            audit_loop, "git_head", return_value="same"
+        ), mock.patch.object(
+            audit_loop, "run_panel", return_value=0
+        ), mock.patch.object(
+            audit_loop, "blocking_lanes", return_value=[]
+        ), mock.patch.object(
+            audit_loop, "drain_lane", return_value=(0, False)
+        ), mock.patch.object(
+            audit_loop, "run_forensic_canary", side_effect=fake_canary
+        ):
+            rc = audit_loop.main(
+                [
+                    "--campaign-workdir",
+                    tmp,
+                    "--worker-id",
+                    "coordinator",
+                ]
+            )
+
+        self.assertEqual(rc, 0)
+        self.assertEqual(canary_calls, 2)
+        lock.close.assert_called_once_with()
+
     def test_verdict_summary_never_rematerializes_ledger_cache(self):
         with mock.patch.object(
             audit_loop, "audit_status_snapshot", return_value={"row": "audited_clean"}
@@ -3203,6 +3502,14 @@ class CampaignContractTest(unittest.TestCase):
         self.assertIn(
             "--dispatch-science-fixes",
             audit_loop.batch_command("lane_a", args),
+        )
+        self.assertIn(
+            "--from-dispatch",
+            audit_loop.batch_command(None, args, source="dispatch"),
+        )
+        self.assertNotIn(
+            "--all",
+            audit_loop.batch_command(None, args, source="dispatch"),
         )
 
 

@@ -37,6 +37,7 @@ import json
 import os
 import re
 import shutil
+import stat
 import subprocess
 import sys
 import tempfile
@@ -1090,6 +1091,136 @@ def find_cached_runner_output(runner_path: str) -> str | None:
     return rc.cache_excerpt_for_audit(runner_path)
 
 
+def _runner_path_signature(relative: str) -> str:
+    path = REPO_ROOT / relative
+    try:
+        info = path.lstat()
+    except OSError:
+        return "<missing>"
+    if path.is_symlink():
+        try:
+            return f"symlink:{os.readlink(path)}"
+        except OSError:
+            return "symlink:<unreadable>"
+    if path.is_file():
+        try:
+            return "file:" + hashlib.sha256(path.read_bytes()).hexdigest()
+        except OSError:
+            return "file:<unreadable>"
+    return f"mode:{stat.S_IFMT(info.st_mode):o}:size:{info.st_size}"
+
+
+def _runner_worktree_state() -> dict[str, tuple[str, str]]:
+    """Return path -> (porcelain status, content identity) for dirty paths."""
+    result = subprocess.run(
+        [
+            "git", "status", "--porcelain=v1", "-z",
+            "--untracked-files=all",
+        ],
+        cwd=REPO_ROOT,
+        capture_output=True,
+        check=False,
+    )
+    if result.returncode != 0:
+        raise RuntimeError("cannot snapshot worktree around runner execution")
+    records = result.stdout.split(b"\0")
+    state: dict[str, tuple[str, str]] = {}
+    index = 0
+    while index < len(records):
+        record = records[index]
+        index += 1
+        if not record:
+            continue
+        if len(record) < 4:
+            raise RuntimeError("malformed git status record around runner execution")
+        code = record[:2].decode("ascii", errors="replace")
+        path = record[3:].decode("utf-8", errors="surrogateescape")
+        state[path] = (code, _runner_path_signature(path))
+        if "R" in code or "C" in code:
+            if index >= len(records) or not records[index]:
+                raise RuntimeError(
+                    "malformed rename status around runner execution"
+                )
+            source = records[index].decode(
+                "utf-8", errors="surrogateescape"
+            )
+            index += 1
+            state[source] = (code, _runner_path_signature(source))
+    return state
+
+
+def _restore_runner_created_paths(
+    before: dict[str, tuple[str, str]],
+) -> None:
+    """Remove only checkout mutations proven to have been created by a runner."""
+    after = _runner_worktree_state()
+    changed = sorted(
+        path for path, state in after.items()
+        if before.get(path) != state
+    )
+    unsafe_overlap = sorted(path for path in changed if path in before)
+    if unsafe_overlap:
+        raise RuntimeError(
+            "runner modified pre-existing worktree changes: "
+            + ", ".join(unsafe_overlap[:5])
+        )
+    for relative in changed:
+        root = REPO_ROOT.resolve()
+        path = Path(os.path.abspath(REPO_ROOT / relative))
+        try:
+            path.relative_to(root)
+        except ValueError as exc:
+            raise RuntimeError(
+                f"runner mutation escaped repository: {relative}"
+            ) from exc
+        tracked = subprocess.run(
+            ["git", "ls-files", "--error-unmatch", "--", relative],
+            cwd=REPO_ROOT,
+            capture_output=True,
+            check=False,
+        )
+        if tracked.returncode == 0:
+            restored = subprocess.run(
+                ["git", "restore", "--staged", "--worktree", "--", relative],
+                cwd=REPO_ROOT,
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            if restored.returncode != 0:
+                raise RuntimeError(
+                    f"cannot restore runner-mutated tracked path {relative}: "
+                    f"{(restored.stderr or restored.stdout).strip()[:200]}"
+                )
+        elif path.is_dir() and not path.is_symlink():
+            shutil.rmtree(path)
+        elif path.exists() or path.is_symlink():
+            path.unlink()
+    if _runner_worktree_state() != before:
+        raise RuntimeError(
+            "runner side-effect cleanup did not restore the prior worktree state"
+        )
+
+
+def _run_repo_runner(
+    path: Path,
+    timeout_sec: int,
+) -> subprocess.CompletedProcess:
+    """Execute a runner and restore any checkout side effects it created."""
+    before = _runner_worktree_state()
+    try:
+        return subprocess.run(
+            [sys.executable, str(path)],
+            cwd=REPO_ROOT,
+            capture_output=True,
+            text=True,
+            timeout=timeout_sec,
+            env={**os.environ, "PYTHONPATH": str(REPO_ROOT / "scripts")},
+        )
+    finally:
+        _restore_runner_created_paths(before)
+
+
 def get_runner_stdout(runner_path: str | None, default_timeout_sec: int,
                       use_cache: bool = False) -> str:
     """Get runner output, live by default.
@@ -1111,14 +1242,7 @@ def get_runner_stdout(runner_path: str | None, default_timeout_sec: int,
         return f"[runner missing on disk: {runner_path}]"
     timeout_sec = runner_timeout_for(runner_path, default_timeout_sec)
     try:
-        res = subprocess.run(
-            [sys.executable, str(p)],
-            cwd=REPO_ROOT,
-            capture_output=True,
-            text=True,
-            timeout=timeout_sec,
-            env={**os.environ, "PYTHONPATH": str(REPO_ROOT / "scripts")},
-        )
+        res = _run_repo_runner(p, timeout_sec)
         if res.returncode != 0:
             return f"[runner exit={res.returncode}]\n{res.stdout[-3000:]}\n--- stderr ---\n{res.stderr[-1500:]}"
         if len(res.stdout) > 6000:
@@ -1171,14 +1295,7 @@ def get_independent_runner_stdout(
     runner_path, path = local_runner
     timeout_sec = runner_timeout_for(runner_path, default_timeout_sec)
     try:
-        result = subprocess.run(
-            [sys.executable, str(path)],
-            cwd=REPO_ROOT,
-            capture_output=True,
-            text=True,
-            timeout=timeout_sec,
-            env={**os.environ, "PYTHONPATH": str(REPO_ROOT / "scripts")},
-        )
+        result = _run_repo_runner(path, timeout_sec)
         if result.returncode != 0:
             return (
                 f"[runner exit={result.returncode}]\n"

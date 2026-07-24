@@ -6,10 +6,13 @@ disagreement appears. This supervisor owns the missing control-flow edge:
 
     panel pending work -> drain lane -> panel new disagreement -> resume lane
 
-It repeats configured lanes until a complete pass lands no commits, then runs
-one forensic no-go canary unless explicitly disabled. Auditor fan-out remains
-inside the existing batch and judicial orchestrators; this process never
-authors or edits verdict content.
+It drains authenticated dispatch and cascade sources, prioritizes configured
+flagship lanes, then drains every remaining eligible development-tier row. A
+coordinator owns panels and advances all forensic sources one validated row at
+a time; named development helpers may run from independent clones with
+dispersed target ordering. Auditor fan-out remains inside the existing batch
+and judicial orchestrators; this process never authors or edits verdict
+content.
 """
 from __future__ import annotations
 
@@ -22,6 +25,7 @@ import sys
 import tempfile
 import threading
 import time
+import uuid
 from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
@@ -51,6 +55,9 @@ PROGRESS = {
     "failures": [],
     "panel_state": "not_started",
     "canary_state": "not_started",
+    "last_canary_claim_id": None,
+    "last_canary_terminal_phase": None,
+    "last_canary_source": None,
     "baseline_status": {},
     "quarantine_file": None,
 }
@@ -313,12 +320,14 @@ def panel_command(args: argparse.Namespace) -> list[str]:
     return command
 
 
-def batch_command(lane: str, args: argparse.Namespace) -> list[str]:
+def batch_command(
+    lane: str | None,
+    args: argparse.Namespace,
+    source: str | None = None,
+) -> list[str]:
     command = [
         sys.executable,
         str(BATCH),
-        "--lane",
-        lane,
         "--max-workers",
         str(args.max_workers),
         "--rounds",
@@ -330,6 +339,19 @@ def batch_command(lane: str, args: argparse.Namespace) -> list[str]:
         "--push-retries",
         str(args.push_retries),
     ]
+    if source == "dispatch":
+        command.append("--from-dispatch")
+    elif source == "reaudit":
+        command.append("--from-reaudit-candidates")
+    elif source is not None:
+        raise ValueError(f"unknown audit source {source!r}")
+    elif lane is None:
+        command.append("--all")
+    else:
+        command.extend(["--lane", lane])
+    worker_id = getattr(args, "worker_id", "")
+    if worker_id:
+        command.extend(["--worker-id", worker_id])
     quarantine_file = getattr(args, "campaign_quarantine_file", None)
     if quarantine_file is not None:
         command.extend(["--campaign-quarantine-file", str(quarantine_file)])
@@ -346,26 +368,34 @@ def batch_command(lane: str, args: argparse.Namespace) -> list[str]:
 
 
 def run_panel(args: argparse.Namespace, label: str) -> int:
+    if getattr(args, "development_helper", False):
+        PROGRESS["panel_state"] = "delegated_to_coordinator"
+        return 0
     return run_command(label, panel_command(args))
 
 
-def drain_lane(lane: str, args: argparse.Namespace) -> tuple[int, bool]:
-    """Drain one lane, paneling after every batch before deciding to stop."""
+def drain_lane(
+    lane: str | None,
+    args: argparse.Namespace,
+    source: str | None = None,
+) -> tuple[int, bool]:
+    """Drain one scoped phase, paneling after every batch when coordinator."""
     made_progress = False
+    label = f"{source}-source" if source else (lane or "global-development")
     for cycle in itertools.count(1):
         if args.max_lane_cycles and cycle > args.max_lane_cycles:
-            emit(f"STOP lane cycle safety bound reached: lane={lane}")
+            emit(f"STOP lane cycle safety bound reached: lane={label}")
             return 4, made_progress
         before = git_head()
         batch_rc = run_command(
-            f"batch-{lane}-cycle-{cycle}",
-            batch_command(lane, args),
+            f"batch-{label}-cycle-{cycle}",
+            batch_command(lane, args, source=source),
         )
         # This is intentionally unconditional, including after a hard batch
         # result: another row in the same batch may already have recorded a
         # panel-eligible disagreement. Preserve the hard result only after the
         # judicial sweep has consumed every resumable handoff.
-        panel_rc = run_panel(args, f"panel-after-{lane}-cycle-{cycle}")
+        panel_rc = run_panel(args, f"panel-after-{label}-cycle-{cycle}")
         if panel_rc != 0:
             return panel_rc, made_progress
         if batch_rc != 0:
@@ -380,10 +410,37 @@ def drain_lane(lane: str, args: argparse.Namespace) -> tuple[int, bool]:
 
 def first_ready_forensic_claim(
     excluded_claim_ids: set[str] | None = None,
+    *,
+    include_alternate_sources: bool = False,
 ) -> str | None:
+    PROGRESS["last_canary_source"] = None
+    excluded = excluded_claim_ids or set()
+    if include_alternate_sources:
+        ledger_rows = batch.load_rows()
+        for source in ("dispatch", "reaudit"):
+            for row in batch.source_queue_rows(source, ledger_rows):
+                claim_id = row.get("claim_id")
+                if (
+                    not isinstance(claim_id, str)
+                    or not claim_id
+                    or claim_id in excluded
+                ):
+                    continue
+                role, independence = batch.audit_runner.determine_audit_role(
+                    ledger_rows.get(claim_id) or {},
+                    batch.AUDITOR_FAMILY,
+                    is_reaudit_candidate=True,
+                    is_dispatch_target=(source == "dispatch"),
+                )
+                if role == "skip" or independence == "weak":
+                    continue
+                if batch.source_requires_forensic(
+                    ledger_rows.get(claim_id) or row
+                ):
+                    PROGRESS["last_canary_source"] = source
+                    return claim_id
     if not QUEUE.exists():
         return None
-    excluded = excluded_claim_ids or set()
     rows = json.loads(QUEUE.read_text(encoding="utf-8")).get("queue", [])
     for row in rows:
         if (
@@ -516,7 +573,13 @@ def forensic_canary_claim_local_failure(
     return None
 
 
-def run_forensic_canary(args: argparse.Namespace) -> int:
+def run_forensic_canary(
+    args: argparse.Namespace,
+    extra_excluded: set[str] | None = None,
+) -> int:
+    PROGRESS["last_canary_claim_id"] = None
+    PROGRESS["last_canary_terminal_phase"] = None
+    PROGRESS["last_canary_source"] = None
     try:
         excluded = batch.load_campaign_quarantine(
             args.campaign_quarantine_file
@@ -524,12 +587,23 @@ def run_forensic_canary(args: argparse.Namespace) -> int:
     except (OSError, ValueError) as exc:
         emit(f"invalid campaign state before forensic canary: {exc}")
         return 2
-    claim_id = first_ready_forensic_claim(excluded)
+    excluded.update(extra_excluded or set())
+    try:
+        claim_id = first_ready_forensic_claim(
+            excluded,
+            include_alternate_sources=True,
+        )
+    except (OSError, ValueError, json.JSONDecodeError) as exc:
+        emit(f"cannot authenticate forensic selection sources: {exc}")
+        return 2
     if not claim_id:
+        PROGRESS["canary_state"] = "no_ready_target"
         emit("no ready forensic-tier row available for the forensic canary")
         return 0
+    PROGRESS["last_canary_claim_id"] = claim_id
     run_log = args.campaign_workdir / (
-        f"forensic-canary-{batch.artifact_key(claim_id)}.jsonl"
+        f"forensic-canary-{batch.artifact_key(claim_id)}-"
+        f"{uuid.uuid4().hex[:8]}.jsonl"
     )
     command = [
         sys.executable,
@@ -549,6 +623,11 @@ def run_forensic_canary(args: argparse.Namespace) -> int:
         "--run-log-path",
         str(run_log),
     ]
+    canary_source = PROGRESS.get("last_canary_source")
+    if canary_source == "dispatch":
+        command.append("--from-dispatch")
+    elif canary_source == "reaudit":
+        command.append("--from-reaudit-candidates")
     if args.dry_run:
         command.append("--dry-run")
     env = dict(os.environ)
@@ -559,6 +638,9 @@ def run_forensic_canary(args: argparse.Namespace) -> int:
     except (OSError, ValueError) as exc:
         emit(f"invalid forensic canary artifact; refusing quarantine: {exc}")
         return 2
+    PROGRESS["last_canary_terminal_phase"] = (
+        terminal.get("phase") if terminal else None
+    )
     claim_local = forensic_canary_claim_local_failure(
         terminal,
         claim_id,
@@ -622,6 +704,22 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--lane", action="append", help="limit to a configured lane")
     parser.add_argument("--max-workers", type=int, default=4)
     parser.add_argument(
+        "--worker-id",
+        default=os.environ.get("AUDIT_WORKER_ID", ""),
+        help=(
+            "stable employee/account identifier used to disperse development "
+            "targets across independent clones"
+        ),
+    )
+    parser.add_argument(
+        "--development-helper",
+        action="store_true",
+        help=(
+            "drain development-tier work only; the one designated coordinator "
+            "owns judicial panels and forensic rows"
+        ),
+    )
+    parser.add_argument(
         "--max-passes",
         type=int,
         default=0,
@@ -672,6 +770,9 @@ def main(argv: list[str] | None = None) -> int:
         raise SystemExit("worker, round, timeout, and retry values must be positive")
     if args.max_passes < 0 or args.max_lane_cycles < 0:
         raise SystemExit("pass and cycle safety bounds must be non-negative")
+    if args.development_helper and not args.worker_id.strip():
+        raise SystemExit("--development-helper requires a non-empty --worker-id")
+    args.worker_id = args.worker_id.strip()
     campaign_dir = args.campaign_workdir or Path(
         tempfile.mkdtemp(prefix="audit_loop_campaign_")
     )
@@ -717,6 +818,10 @@ def main(argv: list[str] | None = None) -> int:
     PROGRESS["failures"] = []
     PROGRESS["panel_state"] = "not_started"
     PROGRESS["canary_state"] = "not_started"
+    PROGRESS["last_canary_claim_id"] = None
+    PROGRESS["last_canary_terminal_phase"] = None
+    PROGRESS["last_canary_source"] = None
+    forensic_attempted: set[str] = set()
     _STOP_HEARTBEAT.clear()
     thread = threading.Thread(target=heartbeat, daemon=True)
     thread.start()
@@ -728,14 +833,25 @@ def main(argv: list[str] | None = None) -> int:
             PROGRESS["pass"] = pass_number
             PROGRESS["lane"] = None
             before = git_head()
-            rc = run_panel(args, f"panel-pass-{pass_number}-opening")
-            if rc != 0:
-                return rc
-            try:
-                lanes = blocking_lanes(args.lane)
-            except ValueError as exc:
-                emit(str(exc))
-                return 2
+            if args.development_helper:
+                PROGRESS["panel_state"] = "delegated_to_coordinator"
+                lanes = []
+            else:
+                rc = run_panel(args, f"panel-pass-{pass_number}-opening")
+                if rc != 0:
+                    return rc
+                if not args.lane:
+                    for source in ("dispatch", "reaudit"):
+                        PROGRESS["lane"] = f"{source}-source"
+                        emit(f"draining ready {source} source rows")
+                        rc, _ = drain_lane(None, args, source=source)
+                        if rc != 0:
+                            return rc
+                try:
+                    lanes = blocking_lanes(args.lane)
+                except ValueError as exc:
+                    emit(str(exc))
+                    return 2
             emit(
                 "blocking lanes: "
                 + (", ".join(f"{lane}={count}" for lane, count in lanes) or "none")
@@ -746,6 +862,17 @@ def main(argv: list[str] | None = None) -> int:
                 rc, _ = drain_lane(lane, args)
                 if rc != 0:
                     return rc
+            if not args.lane:
+                PROGRESS["lane"] = "global-development"
+                emit("draining every remaining eligible development-tier row")
+                rc, _ = drain_lane(None, args)
+                if rc != 0:
+                    return rc
+            if not args.dry_run:
+                synced, detail = batch.sync_origin_main()
+                if not synced:
+                    emit(f"cannot verify remote-stable fixed point: {detail}")
+                    return 2
             after = git_head()
             emit(f"development pass {pass_number}: before={before} after={after}")
             if after == before:
@@ -754,7 +881,14 @@ def main(argv: list[str] | None = None) -> int:
                 except (OSError, ValueError) as exc:
                     emit(f"invalid campaign state; refusing fixed point: {exc}")
                     return 2
-                emit("development fixed point reached: full pass landed nothing new")
+                fixed_point_kind = (
+                    "helper-local development fixed point"
+                    if args.development_helper
+                    else "development fixed point"
+                )
+                emit(
+                    f"{fixed_point_kind} reached: full pass landed nothing new"
+                )
                 if exclusions[batch.SCHEMA_QUARANTINE_RESULT]:
                     emit(
                         "fixed point excludes campaign-scoped schema-invalid "
@@ -784,11 +918,109 @@ def main(argv: list[str] | None = None) -> int:
                         "typed selector-skip repair inventory: "
                         f"{args.campaign_selection_skip_file}"
                     )
-                break
-
-        if not args.skip_forensic_canary:
-            return run_forensic_canary(args)
-        return 0
+                if (
+                    args.development_helper
+                    or args.skip_forensic_canary
+                    or args.lane
+                ):
+                    return 0
+                forensic_before = after
+                rc = run_forensic_canary(args, forensic_attempted)
+                if rc != 0:
+                    return rc
+                if args.dry_run:
+                    return 0
+                synced, detail = batch.sync_origin_main()
+                if not synced:
+                    emit(f"cannot reconcile forensic result with origin/main: {detail}")
+                    return 2
+                forensic_after = git_head()
+                canary_claim = PROGRESS.get("last_canary_claim_id")
+                if forensic_after != forensic_before:
+                    if isinstance(canary_claim, str) and canary_claim:
+                        current_rows = batch.load_rows()
+                        current_row = current_rows.get(canary_claim) or {}
+                        canary_source = PROGRESS.get("last_canary_source")
+                        cross_status = (
+                            current_row.get("cross_confirmation") or {}
+                        ).get("status")
+                        awaiting_second = (
+                            current_row.get("audit_status") == "audit_in_progress"
+                            and cross_status == "awaiting_second"
+                        )
+                        if not awaiting_second:
+                            forensic_attempted.add(canary_claim)
+                        reentry_reason = None
+                        if canary_source in {"dispatch", "reaudit"}:
+                            try:
+                                source_ids = {
+                                    row.get("claim_id")
+                                    for row in batch.source_queue_rows(
+                                        str(canary_source),
+                                        current_rows,
+                                    )
+                                }
+                            except (
+                                OSError,
+                                ValueError,
+                                json.JSONDecodeError,
+                            ) as exc:
+                                emit(
+                                    "cannot authenticate post-forensic source "
+                                    f"state: {exc}"
+                                )
+                                return 2
+                            if canary_claim in source_ids:
+                                reentry_reason = (
+                                    f"{canary_source}_selection_still_live_"
+                                    "after_applied_verdict"
+                                )
+                        elif (
+                            current_row.get("audit_status") == "unaudited"
+                            and batch.source_requires_forensic(current_row)
+                        ):
+                            reentry_reason = batch._latest_invalidation_reason(
+                                current_row
+                            )
+                        if reentry_reason is not None:
+                            batch.persist_blocked_row_reentries(
+                                args.campaign_quarantine_file,
+                                {canary_claim: reentry_reason},
+                            )
+                            forensic_attempted.add(canary_claim)
+                            emit(
+                                "forensic verdict re-entered the unchanged "
+                                "ready queue and was excluded for this campaign: "
+                                f"claim={canary_claim} reason={reentry_reason}"
+                            )
+                    emit(
+                        "forensic row landed; returning to development because "
+                        "the new verdict may unblock additional dependencies"
+                    )
+                    continue
+                if isinstance(canary_claim, str) and canary_claim:
+                    forensic_attempted.add(canary_claim)
+                    if PROGRESS.get("last_canary_terminal_phase") == "applied":
+                        reason = (
+                            "applied_forensic_verdict_produced_no_canonical_"
+                            "state_change"
+                        )
+                        batch.persist_blocked_row_reentries(
+                            args.campaign_quarantine_file,
+                            {canary_claim: reason},
+                        )
+                        emit(
+                            "forensic apply produced no canonical commit and "
+                            "was excluded for this campaign: "
+                            f"claim={canary_claim} reason={reason}"
+                        )
+                        continue
+                    emit(
+                        "forensic row minted no verdict and is excluded for "
+                        "this campaign; advancing to the next ready forensic row"
+                    )
+                    continue
+                return 0
     finally:
         _STOP_HEARTBEAT.set()
         emit(summary_line(final=True))

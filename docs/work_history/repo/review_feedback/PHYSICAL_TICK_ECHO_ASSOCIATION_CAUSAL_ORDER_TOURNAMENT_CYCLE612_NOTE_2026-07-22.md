@@ -2,6 +2,8 @@
 
 Date: 2026-07-22
 
+Claim type: bounded_theorem
+
 Authority: none. Audit: unset. Constitutional effect: none.
 
 Runners:
@@ -179,3 +181,12 @@ contract:        final SHA d45cad77c7d74df1951930ae796295fd8c405cc59d668f2fda98c
 W4 extraction:   scratchpad artifact, SHA-256
                  3b3162d42f8f2dc6281136d62b1a8cc66abdcfb331ea178489726bb4d26c62f0
 ```
+
+## Dependency citations
+
+This runner loads and byte-pins
+[Cycle 610](PHYSICAL_INTRINSIC_TICK_EVENT_RELATIONAL_DURATION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md)
+and [Cycle 611](PHYSICAL_AUTONOMOUS_BOUND_BRANCH_PREPARATION_TOURNAMENT_CYCLE611_NOTE_2026-07-22.md),
+and through them the accepted upstream surfaces
+[Cycle 578](PHYSICAL_INTRINSIC_CONTACT_BOUND_MOVING_TRANSITION_TOURNAMENT_CYCLE578_NOTE_2026-07-22.md)
+and [Cycle 583](PHYSICAL_CONTACT_DIMER_INFINITE_INTERNAL_CONTENT_TOURNAMENT_CYCLE583_NOTE_2026-07-22.md).

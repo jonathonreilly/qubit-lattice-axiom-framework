@@ -2,6 +2,8 @@
 
 Date: 2026-07-22
 
+Claim type: bounded_theorem
+
 Authority: none. Audit: unset. Constitutional effect: none. No axiom,
 foundation, Qualification, primitive, registry, policy, queue, audit-status,
 or PR-control surface is edited. Out of scope by owner directive: pulse/readout
@@ -160,3 +162,11 @@ frozen contract SHA-256:  1dab9ebb17ac1d351651da745ca698a15a3bc94648dd38c6222022
 receipt:                  outputs/physical_autonomous_bound_branch_preparation_tournament_cycle611_receipt_2026_07_22.json
 cold transcript:          outputs/physical_autonomous_bound_branch_preparation_tournament_cycle611_cold_2026_07_22.txt
 ```
+
+## Dependency citations
+
+This runner loads and byte-pins
+[Cycle 610](PHYSICAL_INTRINSIC_TICK_EVENT_RELATIONAL_DURATION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md),
+and through it the accepted upstream surfaces
+[Cycle 578](PHYSICAL_INTRINSIC_CONTACT_BOUND_MOVING_TRANSITION_TOURNAMENT_CYCLE578_NOTE_2026-07-22.md)
+and [Cycle 583](PHYSICAL_CONTACT_DIMER_INFINITE_INTERNAL_CONTENT_TOURNAMENT_CYCLE583_NOTE_2026-07-22.md).

@@ -103,11 +103,17 @@
       "positions_equal": true,
       "intervals_equal": true
     },
-    "missing_label_results": [
-      null,
-      null,
-      null
-    ],
+    "missing_label_results": {
+      "position": null,
+      "ordered_intervals": {
+        "S1->S2": null,
+        "S2->S1": null,
+        "S2->S3": null,
+        "S2->S4": null,
+        "S3->S2": null,
+        "S4->S2": null
+      }
+    },
     "piecewise_counts": {
       "first": 969,
       "second": 640,
@@ -123,10 +129,13 @@
       "ordinary_accept_mutation_exact": true,
       "first_accept_mutation_exact": true,
       "injected_inversion": "refused_inverted",
-      "refusal_state_unchanged": true
+      "refusal_state_unchanged": true,
+      "equality_boundary": "refused_inverted",
+      "equality_refusal_state_unchanged": true
     }
   },
   "controls": {
+    "fixture_hash_matches_literal": true,
     "constant_crossing_oracle": {
       "strict_totals": {
         "A": 1939,
@@ -143,7 +152,8 @@
     "predecessor_break_makes_interval_undefined": true,
     "index_lineage_remains_used": true,
     "cross_order_accept_mutation_exact": true,
-    "cross_order_refusal_state_unchanged": true
+    "cross_order_refusal_state_unchanged": true,
+    "cross_order_equality_refusal_state_unchanged": true
   },
   "floating_diagnostic": {
     "classification": "finite floating diagnostic, not exact identity",

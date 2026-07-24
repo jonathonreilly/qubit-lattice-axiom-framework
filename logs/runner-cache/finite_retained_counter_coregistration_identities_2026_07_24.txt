@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/finite_retained_counter_coregistration_identities_2026_07_24.py
-runner_sha256: fa0f6724593d7f3764944a50816305aed906f89944c79cedcc5d787295f1dd84
+runner_sha256: 43775379cd415bc6344eaa648a57c2f20c2a91ccf3351877a637fb2aa9b828cb
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.14
@@ -10,9 +10,9 @@ PASS exact counter snapshots equal supplied tick-prefix counts :: {'A': {'S1': 2
 PASS exact integer telescoping holds on all supplied label triples :: {'rows': 12}
 PASS exact reversal negates decoded intervals and preserves rational count ratios :: {'interval_pairs_checked': 18, 'ratio_B_over_A': {'numerator': 1027, 'denominator': 1557, 'decimal': 0.659601798330122}, 'ratio_C_over_B': {'numerator': 755, 'denominator': 1027, 'decimal': 0.7351509250243428}}
 PASS exact marked counts are invariant under the supplied one-reset procedure :: {'resets_used': 1, 'reset_cell_index': 702, 'inside_S2_S3': True, 'positions_equal': True, 'intervals_equal': True, 'carry_erasure_control_changes_S1_S3': True}
-PASS missing-label queries return None while an unrelated marked interval is unchanged :: {'missing_results': [None, None, None], 'surviving_S1_S3': 652}
+PASS missing-label queries return None while an unrelated marked interval is unchanged :: {'missing_position': None, 'ordered_interval_results': {'S1->S2': None, 'S2->S1': None, 'S2->S3': None, 'S2->S4': None, 'S3->S2': None, 'S4->S2': None}, 'surviving_S1_S3': 652}
 PASS exact decoded-count additivity holds across the supplied slope change :: {'first': 969, 'second': 640, 'total': 1609, 'accumulated_at_split': '606208/625', 'accumulated_at_end': '1006208/625'}
-PASS supplied cross-order predicate accepts ordinary rows and refuses the injected inversion :: {'ordinary': ['accepted', 'accepted', 'accepted', 'accepted'], 'ordinary_accept_mutation_exact': True, 'first_adversarial_fixture_call': 'accepted', 'first_accept_mutation_exact': True, 'after_injected_snapshot': 'refused_inverted', 'refusal_state_unchanged': True}
+PASS supplied cross-order predicate accepts ordinary rows and refuses the injected inversion :: {'ordinary': ['accepted', 'accepted', 'accepted', 'accepted'], 'ordinary_accept_mutation_exact': True, 'first_adversarial_fixture_call': 'accepted', 'first_accept_mutation_exact': True, 'after_injected_snapshot': 'refused_inverted', 'refusal_state_unchanged': True, 'equality_boundary': 'refused_inverted', 'equality_refusal_state_unchanged': True}
 PASS displayed decoders ignore bank/generator metadata but retain index-oriented predecessor lineage :: {'baseline_S1_S3': 652, 'metadata_mutant_S1_S3': 652, 'broken_predecessor_S1_S3': None, 'index_lineage_remains_used': True}
 PASS finite floating diagnostic only: segment-ratio spreads fit disclosed two-count tolerances :: {'B_over_A': [0.6581196581196581, 0.6602687140115163, 0.6602112676056338], 'spread_B_over_A': 0.0021490558918582092, 'tolerance_B_over_A': 0.006493506493506494, 'C_over_B': [0.737012987012987, 0.7325581395348837, 0.736], 'spread_C_over_B': 0.004454847478103319, 'tolerance_C_over_B': 0.00881057268722467, 'classification': 'finite floating diagnostic, not exact identity'}
 RESULT 9 0

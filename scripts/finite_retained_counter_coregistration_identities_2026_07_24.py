@@ -145,6 +145,9 @@ SUPPLIED_FIXTURE: dict[str, object] = {
 FIXTURE_SHA256 = sha256(
     json.dumps(SUPPLIED_FIXTURE, sort_keys=True, separators=(",", ":")).encode("utf-8")
 ).hexdigest()
+EXPECTED_FIXTURE_SHA256 = (
+    "49ffc9256366b787cd38d71c3c0348514b833b21549826468ebd7214b7ae0cc2"
+)
 
 GENERATOR_END = Fraction(4096)
 PIECEWISE_SPLIT = Fraction(2048)
@@ -495,7 +498,8 @@ def main() -> int:
     )
     prefix_details: dict[str, dict[str, int | None]] = {}
     prefix_ok = (
-        oracle_totals == EXPECTED_CONSTANT_TOTALS
+        FIXTURE_SHA256 == EXPECTED_FIXTURE_SHA256
+        and oracle_totals == EXPECTED_CONSTANT_TOTALS
         and oracle_prefixes == EXPECTED_CONSTANT_PREFIXES
         and generated_crossings_match_oracle
         and b_s1_tie_exact
@@ -618,18 +622,23 @@ def main() -> int:
     missing = copy.deepcopy(forward["B"])
     surviving_before = decode_interval(missing, "S1", "S3")
     del missing.marks["S2"]
-    missing_results = [
-        decode_interval(missing, "S1", "S2"),
-        decode_interval(missing, "S2", "S3"),
-        decode_position(missing, "S2"),
-    ]
+    missing_interval_results = {
+        f"{label_a}->{label_b}": decode_interval(missing, label_a, label_b)
+        for label_a in COREGISTRATION_COORDINATES
+        for label_b in COREGISTRATION_COORDINATES
+        if label_a != label_b and "S2" in (label_a, label_b)
+    }
+    missing_position = decode_position(missing, "S2")
     surviving_after = decode_interval(missing, "S1", "S3")
     check(
         "missing-label queries return None while an unrelated marked interval is unchanged",
-        all(value is None for value in missing_results)
+        len(missing_interval_results) == 6
+        and all(value is None for value in missing_interval_results.values())
+        and missing_position is None
         and surviving_before == surviving_after,
         {
-            "missing_results": missing_results,
+            "missing_position": missing_position,
+            "ordered_interval_results": missing_interval_results,
             "surviving_S1_S3": surviving_after,
         },
     )
@@ -709,6 +718,18 @@ def main() -> int:
         adversarial.positions == positions_before_refusal
         and adversarial.shared_snapshots == snapshots_before_refusal
     )
+    equality_boundary = SuppliedCrossOrderPredicate(["A", "B", "C"])
+    for _ in range(5):
+        for device in equality_boundary.positions:
+            equality_boundary.append_local(device)
+    equality_boundary.inject_snapshot({"A": 5, "B": 4, "C": 4})
+    equality_positions_before = dict(equality_boundary.positions)
+    equality_snapshots_before = copy.deepcopy(equality_boundary.shared_snapshots)
+    equality_result = equality_boundary.try_shared()
+    equality_refusal_state_unchanged = (
+        equality_boundary.positions == equality_positions_before
+        and equality_boundary.shared_snapshots == equality_snapshots_before
+    )
     check(
         "supplied cross-order predicate accepts ordinary rows and refuses the injected inversion",
         ordinary_results == ["accepted"] * 4
@@ -716,7 +737,9 @@ def main() -> int:
         and first_result == "accepted"
         and first_accept_mutation_ok
         and adversarial_result == "refused_inverted"
-        and refusal_state_unchanged,
+        and refusal_state_unchanged
+        and equality_result == "refused_inverted"
+        and equality_refusal_state_unchanged,
         {
             "ordinary": ordinary_results,
             "ordinary_accept_mutation_exact": ordinary_mutation_ok,
@@ -724,6 +747,8 @@ def main() -> int:
             "first_accept_mutation_exact": first_accept_mutation_ok,
             "after_injected_snapshot": adversarial_result,
             "refusal_state_unchanged": refusal_state_unchanged,
+            "equality_boundary": equality_result,
+            "equality_refusal_state_unchanged": equality_refusal_state_unchanged,
         },
     )
 
@@ -795,7 +820,10 @@ def main() -> int:
             "positions_equal": positions_equal,
             "intervals_equal": intervals_equal,
         },
-        "missing_label_results": missing_results,
+        "missing_label_results": {
+            "position": missing_position,
+            "ordered_intervals": missing_interval_results,
+        },
         "piecewise_counts": {
             "first": d_first,
             "second": d_second,
@@ -807,9 +835,12 @@ def main() -> int:
             "first_accept_mutation_exact": first_accept_mutation_ok,
             "injected_inversion": adversarial_result,
             "refusal_state_unchanged": refusal_state_unchanged,
+            "equality_boundary": equality_result,
+            "equality_refusal_state_unchanged": equality_refusal_state_unchanged,
         },
     }
     receipt["controls"] = {
+        "fixture_hash_matches_literal": FIXTURE_SHA256 == EXPECTED_FIXTURE_SHA256,
         "constant_crossing_oracle": {
             "strict_totals": oracle_totals,
             "literal_prefixes_match": oracle_prefixes == EXPECTED_CONSTANT_PREFIXES,
@@ -827,6 +858,10 @@ def main() -> int:
             ordinary_mutation_ok and first_accept_mutation_ok
         ),
         "cross_order_refusal_state_unchanged": refusal_state_unchanged,
+        "cross_order_equality_refusal_state_unchanged": (
+            equality_result == "refused_inverted"
+            and equality_refusal_state_unchanged
+        ),
     }
     receipt["floating_diagnostic"] = {
         "classification": "finite floating diagnostic, not exact identity",

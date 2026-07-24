@@ -1,11 +1,11 @@
-PASS 01 port_grammar_anchor :: generalized emitter == c625_b_expected on 64/64 words, edge==admit
-PASS 02 family_census_c625_crosscheck/truth_rows :: accepted truth rows {'unique_quorum': 6, 'odd_shells': 32, 'nonempty': 63, 'low_density': 21, 'even_nonzero': 31}
-PASS 02 family_census_c625_crosscheck/train_accepts :: train accepts {'unique_quorum': 6, 'odd_shells': 26, 'nonempty': 41, 'low_density': 21, 'even_nonzero': 15}
-PASS 02 family_census_c625_crosscheck/held_accepts :: held accepts {'unique_quorum': 0, 'odd_shells': 6, 'nonempty': 22, 'low_density': 0, 'even_nonzero': 16}
-PASS 02 family_census_c625_crosscheck/covariance :: 7680 comparisons, 0 covariance failures
-PASS 02 family_census_c625_crosscheck/nonconstant :: both outputs occur per law
-PASS 02 family_census_c625_crosscheck/digest :: candidate_relation_digest c724243216bffdd804d69106872486ee92efd71adfb23b0d1f5821778ed14b34
-PASS 03 separator_catalog/pairwise :: 10 pairwise separator rows match pins
+PASS 01 port_grammar_anchor :: generalized emitter == supplied port fixture on 64/64 words, edge==admit
+PASS 02 family_census_fixture_crosscheck/truth_rows :: accepted truth rows {'unique_quorum': 6, 'odd_shells': 32, 'nonempty': 63, 'low_density': 21, 'even_nonzero': 31}
+PASS 02 family_census_fixture_crosscheck/train_accepts :: train accepts {'unique_quorum': 6, 'odd_shells': 26, 'nonempty': 41, 'low_density': 21, 'even_nonzero': 15}
+PASS 02 family_census_fixture_crosscheck/held_accepts :: held accepts {'unique_quorum': 0, 'odd_shells': 6, 'nonempty': 22, 'low_density': 0, 'even_nonzero': 16}
+PASS 02 family_census_fixture_crosscheck/covariance :: 7680 comparisons, 0 covariance failures
+PASS 02 family_census_fixture_crosscheck/nonconstant :: both outputs occur per law
+PASS 02 family_census_fixture_crosscheck/digest :: candidate_relation_digest c724243216bffdd804d69106872486ee92efd71adfb23b0d1f5821778ed14b34
+PASS 03 separator_catalog/pairwise :: 10 pairwise separator rows match supplied fixture
 PASS 03 separator_catalog/orbits :: 10 orbits, sizes sum to 64
 PASS 03 separator_catalog/min_separating_sets :: min size 3, 6 sets, restricted profiles distinct
 PASS 04 worker_grid_agreement :: worker grid agrees on all fields
@@ -22,4 +22,4 @@ PASS 11 held_corpus_retraction/full_retract :: mimic full -> off_family, held wi
 PASS 12 malformed_port_refusals :: 8/8 malformed streams refused with the expected reason
 PASS 13 verdict_frame_invariance :: 2/2 streams frame-invariant across all 24 frames
 PASS 14 decoder_blindness_discipline :: signature=['stream', 'tables', 'frames'], forbidden-tokens-present=[]
-RESULT 24 0 OK /private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes/32362ff7-5014-4081-b545-c0309d006d52/scratchpad/wt-c677/outputs/physical_record_born_admission_law_discriminator_tournament_receipt_2026_07_23.json
+RESULT 24 0 OK outputs/finite_proper_cubic_admission_table_discriminator_receipt_2026_07_23.json

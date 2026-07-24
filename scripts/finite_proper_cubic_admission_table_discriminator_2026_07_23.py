@@ -1,55 +1,42 @@
 #!/usr/bin/env python3
-"""Cycle 679 - Record/Born admission-law discriminator tournament (repo-side readout harness).
+"""Finite proper-cubic admission-table discriminator.
 
-Cycle 625 (campaign lane) proved that five extensionally distinct, total,
-nonconstant, proper-cubic-covariant local relations on the 64 six-neighbor words
-all satisfy the retained Admissibility structural schema: the public axiom
-surface does NOT select the extensional admission law. The modeling side is
-building three physical formation routes that plug into the unchanged
-Cycle-625-B / Cycle-531 conditional-occurrence port. THIS runner is the repo-side
-READOUT HARNESS for that tournament: a discriminating observable plus a blinded
-held-corpus protocol which, given only port-readout streams, identifies WHICH
-candidate admission law a route implements, or refuses with a witness
-(off-family / covariance violation / non-determinism / malformed port grammar /
-insufficient coverage). It builds NO formation route, touches NO gravity surface,
-and claims NO Born probability content.
+Five explicitly supplied shell tables and one explicitly supplied port grammar
+define the complete finite domain of this runner.  The runner constructs a
+discriminating observable plus a blinded held-corpus protocol which, given only
+well-typed port-readout streams, identifies which supplied table generated a
+stream or refuses with a witness (off-family, covariance violation,
+non-determinism, malformed grammar, or insufficient coverage).
+
+The theorem is about this declared table family and grammar only.  It does not
+claim that the framework selects one of these tables, that the family exhausts
+admissible physical laws, or that any stream is physically formed.
 
 Firewalls (interpretation guards; also written to the receipt):
-- The five candidate laws are Cycle-625 Route-A candidate ADMISSION laws;
-  identifying which law a formation route implements is not identifying nature's
-  fixed Admissibility rule (that extensional identification remains open, per
-  Cycle 625).
-- occurrence / MEMBER / LAW_RECEIPT are conditional candidate Records in the
-  Cycle-531/625 sense; no objective actuality and no framework-Record
-  identification is claimed for any stream element.
+- The five candidate tables and port grammar are supplied finite inputs. Their
+  relationship to the framework's fixed Admissibility rule remains open.
+- occurrence / MEMBER / LAW_RECEIPT are field names in the supplied grammar;
+  no objective actuality or framework-Record identification is claimed.
 - Acceptance profiles are Boolean; no frequency, weight, grade, or Born
-  probability is computed or interpreted; the Route-C grade/corpus lane is
-  untouched.
+  probability is computed or interpreted.
 - The reference emitters are synthetic stream generators for harness self-test
   only; they are NOT formation routes, and the emitter's winner convention is
   supplied bookkeeping the decoder never reads beyond grammar well-formedness.
 - Refusal verdicts about imposter streams are statements about those synthetic
   streams, not about any physical channel; no gravity content.
 
-Acceptance duties (for the modeling side):
-- feed each formation route's port-readout stream (archive, losers, ready, spent,
-  edge, member, receipt, snapshot per trial) to discriminate() unchanged, with
-  the frozen family tables and the 24 frames;
-- rerun rows 5-14 semantics on real streams: identification must be reproduced
-  blind, held extensions must not flip train identifications except by the
-  retraction rule, and every refusal must carry its witness;
-- a refusal on a physical route is a finding about the route (off-family,
-  frame-dependence, non-determinism, or port-grammar violation), not about the
-  harness.
+A future physical route may call ``discriminate`` only after an independent
+theorem proves that its output matches the supplied grammar.  No such bridge is
+claimed here, so the synthetic refusal rows have no physical-route semantics.
 
 Preregistered falsifiers (each maps to named check rows):
 - P-F1 (rows 5, 6): any blinded in-family stream misidentified -> the
   discriminator is unsound; harness FAILS; do not ship a positive.
 - P-F2 (row 11): the mimic survives the held corpus without retraction -> the
   held protocol carries no content; FAIL.
-- P-F3 (rows 2, 3): the family census / separator catalog disagrees with the
-  pinned Cycle-625 receipt -> the harness is not anchored to the Cycle-625
-  family; FAIL.
+- P-F3 (rows 2, 3): the independently recomputed family census / separator
+  catalog disagrees with the frozen supplied fixture -> the implementation
+  does not match its declared finite input; FAIL.
 
 Pure Python stdlib only (no numpy). Python 3.11+.
 """
@@ -64,9 +51,8 @@ from itertools import combinations, permutations, product
 from pathlib import Path
 
 # ---- header constants (frozen)
-FROZEN_CONTRACT_SHA256 = "8b968ceb7c32b9350869c8f65126aa3e45388d8d48f54b2a00c66f43cf03d966"
-CYCLE = 679  # claimed strictly above the joint visible max (678) at freeze;
-#              campaign-lane collisions at 676 and 677 recorded in the contract
+FROZEN_CONTRACT_SHA256 = "f723c695b28b98b4f692a08bab6cad6747b0d73cd1cf0686fed5d2fd0b7a1707"
+CYCLE = 679
 DATE = "2026-07-23"
 AUTHORITY = "none"
 AUDIT = "unset"
@@ -75,14 +61,13 @@ AUDIT = "unset"
 # note/runner/receipt filenames; the claimed cycle lives in contract/receipt.
 ROOT = Path(__file__).resolve().parents[1]
 RECEIPT_PATH = ROOT / "outputs" / (
-    "physical_record_born_admission_law_discriminator_tournament_"
-    "receipt_2026_07_23.json"
+    "finite_proper_cubic_admission_table_discriminator_receipt_2026_07_23.json"
 )
 WORKER_GRID_PATH = ROOT / "outputs" / (
-    "physical_record_born_admission_law_discriminator_"
-    "worker_grid_2026_07_23.json"
+    "finite_proper_cubic_admission_table_discriminator_"
+    "independent_grid_2026_07_23.json"
 )
-BLIND_SEED = "cycle677-record-born-discriminator-blind-2026-07-23"
+BLIND_SEED = "finite-proper-cubic-admission-table-discriminator-blind-2026-07-23"
 
 # ---- candidate family (frozen)
 RULES = {
@@ -101,7 +86,7 @@ def accepts(rule_shells, word):
     return int(sum(word) in rule_shells)
 
 
-# Reproduces the Cycle-625 receipt digest (expected value pinned in PINS).
+# Digest of the explicitly supplied five-table family.
 candidate_relation_digest = hashlib.sha256(
     json.dumps(
         {name: sorted(rule) for name, rule in RULES.items()},
@@ -123,7 +108,7 @@ GENERATOR_KINDS = tuple(
        "antipodal", "axis", "noisy"]
 )
 
-# ---- pass/fail harness (Cycle-676 style)
+# ---- pass/fail harness
 PASS = 0
 FAIL = 0
 
@@ -140,7 +125,7 @@ def check(label, condition, detail):
     return bool(condition)
 
 
-# ---- geometry (transcribed from the pinned Cycle-625 runner)
+# ---- finite proper-cubic geometry
 Matrix = tuple[tuple[int, int, int], tuple[int, int, int], tuple[int, int, int]]
 DIRECTIONS = ((1, 0, 0), (-1, 0, 0), (0, 1, 0), (0, -1, 0), (0, 0, 1), (0, 0, -1))
 
@@ -202,18 +187,17 @@ def orbit_census(words, frames):
     return sorted(census)
 
 
-# ---- port readout tuple (Cycle-625-B / Cycle-531 lane-zero readout grammar,
-#      winner-generalized)
+# ---- port readout tuple (supplied finite lane-zero grammar)
 @dataclass(frozen=True)
 class PortTuple:
-    archive: tuple      # 6 bits - retained six-candidate word
-    losers: tuple       # 6 bits - retained loser mask
+    archive: tuple      # 6 bits - copied six-candidate word
+    losers: tuple       # 6 bits - copied loser mask
     ready: int          # 1 bit
     spent: int          # 1 bit
     edge: int           # 1 bit
     member: tuple       # 5 bits - lane-zero one-hot MEMBER
     receipt: tuple      # 5 bits - lane-zero LAW_RECEIPT
-    snapshot: tuple     # 12 bits - Cycle-531 retained output tuple
+    snapshot: tuple     # 12 bits - supplied lane-zero output tuple
     #                     snapshot[0]=PRECOMMIT, [1]=OCCURRENCE, [2]=ATOM_FLAG,
     #                     [3:]=label-zero content (zero)
 
@@ -238,12 +222,12 @@ def port_well_formed(port):
         return (False, "W-bits")
     # W-occ: occ := snapshot[1]
     occ = port.snapshot[1]
-    # W-531: PRECOMMIT == OCCURRENCE == ATOM_FLAG and the tail is zero
+    # W-snapshot-consistency: PRECOMMIT == OCCURRENCE == ATOM_FLAG and tail zero
     if not (
         port.snapshot[0] == port.snapshot[1] == port.snapshot[2]
         and port.snapshot[3:] == (0,) * 9
     ):
-        return (False, "W-531")
+        return (False, "W-snapshot-consistency")
     # W-member: one-hot MEMBER carries occ in slot 0
     if port.member != (occ, 0, 0, 0, 0):
         return (False, "W-member")
@@ -303,8 +287,8 @@ def emit(accept_bit, word):
     )
 
 
-def c625_b_expected(word):
-    """Cycle-625 b_expected transcription (verbatim semantics; anchor check)."""
+def supplied_port_expected(word):
+    """Expected supplied grammar tuple at the unique-quorum anchor."""
     admit = int(sum(word) == 1)
     direction = word.index(1) if admit else None
     losers = tuple(bit ^ int(direction == index) for index, bit in enumerate(word))
@@ -441,27 +425,9 @@ def det_shuffle(items, seed, label):
     return array
 
 
-# ---- PINS (frozen; read-only evidence anchors, nothing imported/executed)
-PINS = {
-    "campaign_head": "fb0ab5636e557d8de1da8e643f419867ae69197a",
-    "landing_status": (
-        "Cycle-625/531 substrate is campaign-branch-only (unlanded on origin/main "
-        "at branch cut); pinned as read-only evidence anchors; the port grammar is "
-        "transcribed, nothing imported"
-    ),
-    "files": {
-        "scripts/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_2026_07_22.py":
-            "a618b5803cc1313a3dd644e3e066bb987bf366d8215a50a43d4260c69847b9e9",
-        "docs/work_history/repo/review_feedback/PHYSICAL_ADMISSIBILITY_OCCURRENCE_BORN_SHARED_MIDDLE_TOURNAMENT_CYCLE625_NOTE_2026-07-22.md":
-            "190ed6dfc5502a0d8d68c665501fe4f009d21fb2aad4bc0b71e9f96a9856552d",
-        "outputs/physical_admissibility_occurrence_born_shared_middle_tournament_cycle625_receipt_2026_07_22.json":
-            "a867cbeed66052da8cb85e8867a55802d27bfca586c9db805aa1649a6f0c7560",
-        "scripts/physical_selected_seam_conditional_record_binder_cycle531_2026_07_21.py":
-            "8885593dcc644e601179891265c226158c8835a8a143ed7205c0cc7e291e9057",
-        "outputs/physical_selected_seam_conditional_record_binder_cycle531_receipt_2026_07_21.json":
-            "9be703167c256e420177d9f34eaa23f98acfc4a74f6e6237a45df3da81555221",
-    },
-    "c625_route_a_census": {
+# ---- frozen supplied fixture (finite theorem input; no inherited authority)
+SUPPLIED_FIXTURE = {
+    "family_census": {
         "accepted_truth_rows": {
             "unique_quorum": 6, "odd_shells": 32, "nonempty": 63,
             "low_density": 21, "even_nonzero": 31,
@@ -626,8 +592,8 @@ NOISY_REPEAT_WORD = min(w for w in WORDS if sum(w) == 1)  # lex-min shell-1 word
 MALFORMED_CATALOG = {
     "m_member_without_occ": "W-member",
     "m_receipt_mismatch": "W-receipt",
-    "m_snapshot_equation": "W-531",
-    "m_snapshot_tail": "W-531",
+    "m_snapshot_equation": "W-snapshot-consistency",
+    "m_snapshot_tail": "W-snapshot-consistency",
     "m_resource_rail": "W-resource",
     "m_loser_mask": "W-losers0",
     "m_winner_not_onehot": "W-losers1",
@@ -646,7 +612,7 @@ EXPECTED_VERDICTS = {
 
 CHECK_LABELS = (
     "port_grammar_anchor",
-    "family_census_c625_crosscheck",
+    "family_census_fixture_crosscheck",
     "separator_catalog",
     "worker_grid_agreement",
     "blinded_full_identification",
@@ -725,11 +691,11 @@ def build_malformed_streams():
         "m_receipt_mismatch": [PortTuple(
             (1, 0, 0, 0, 0, 0), (0,) * 6, 0, 1, 1, (1, 0, 0, 0, 0), (0, 0, 0, 0, 0),
             (1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0))],
-        # PRECOMMIT/OCCURRENCE/ATOM_FLAG not all equal -> W-531
+        # PRECOMMIT/OCCURRENCE/ATOM_FLAG differ -> W-snapshot-consistency
         "m_snapshot_equation": [PortTuple(
             (0,) * 6, (0,) * 6, 1, 0, 0, (0, 0, 0, 0, 0), (0, 0, 0, 0, 0),
             (1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0))],
-        # nonzero label-zero tail -> W-531
+        # nonzero label-zero tail -> W-snapshot-consistency
         "m_snapshot_tail": [PortTuple(
             (1, 0, 0, 0, 0, 0), (0,) * 6, 0, 1, 1, (1, 0, 0, 0, 0), (1, 0, 0, 0, 0),
             (1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0))],
@@ -765,8 +731,8 @@ def contract():
         "train_max_weight": TRAIN_MAX_WEIGHT,
         "blind_seed": BLIND_SEED,
         "port_grammar": {
-            "version": "c625-B/c531 lane-zero readout, winner-generalized, v1",
-            "clauses": ["W-bits", "W-531", "W-member", "W-receipt",
+            "version": "finite lane-zero readout, winner-generalized, v1",
+            "clauses": ["W-bits", "W-snapshot-consistency", "W-member", "W-receipt",
                         "W-edge", "W-resource", "W-losers0", "W-losers1"],
             "emitter_winner_convention":
                 "lowest-index set candidate bit (supplied bookkeeping, not law content)",
@@ -781,23 +747,7 @@ def contract():
         "malformed_catalog": dict(MALFORMED_CATALOG),
         "expected_verdicts": dict(EXPECTED_VERDICTS),
         "worker_grid_file": WORKER_GRID_PATH.name,
-        "work_history": {
-            "joint_visible_max_at_freeze": 678,
-            "claimed": CYCLE,
-            "collisions_observed": [
-                "campaign lane independently claimed 676 "
-                "(moving_carrier_phase_field_finite_restriction, 2026-07-23) "
-                "while causal-time Cycle 676 (PR #5561) was in flight",
-                "campaign lane independently claimed 677 "
-                "(selected_record_joint_operand_corridors, fb0ab5636e, "
-                "2026-07-23 12:12 -0400) after this work's branch "
-                "causal-time/cycle677-record-born-discriminator-20260723 was "
-                "cut; the branch name predates the collision discovery and "
-                "stands per owner instruction; the claimed number is 679",
-            ],
-            "campaign_tip_at_freeze": "fb0ab5636e557d8de1da8e643f419867ae69197a",
-        },
-        "c625_pins": PINS,
+        "supplied_fixture": SUPPLIED_FIXTURE,
         "check_labels": list(CHECK_LABELS),
     }
 
@@ -872,15 +822,15 @@ def main(argv):
     anchor_ok = 0
     for word in WORDS:
         produced = emit(accepts(RULES["unique_quorum"], word), word)
-        expected = c625_b_expected(word)
+        expected = supplied_port_expected(word)
         if (all(getattr(produced, name) == expected[name] for name in anchor_fields)
                 and produced.edge == expected["admit"]):
             anchor_ok += 1
     check(f"01 {CHECK_LABELS[0]}", anchor_ok == 64,
-          f"generalized emitter == c625_b_expected on {anchor_ok}/64 words, edge==admit")
+          f"generalized emitter == supplied port fixture on {anchor_ok}/64 words, edge==admit")
 
-    # ---- 2. family census + Cycle-625 receipt cross-check (P-F3)
-    census = PINS["c625_route_a_census"]
+    # ---- 2. family census + frozen supplied-fixture cross-check (P-F3)
+    census = SUPPLIED_FIXTURE["family_census"]
     truth_rows = truth_counts(WORDS)
     train_rows = truth_counts(TRAIN_WORDS)
     held_rows = truth_counts(HELD_WORDS)
@@ -909,7 +859,7 @@ def main(argv):
     # ---- 3. separator catalog + orbit census + minimal separating shell sets (P-F3)
     computed_pairwise = pairwise_separators()
     check(f"03 {CHECK_LABELS[2]}/pairwise", computed_pairwise == census["pairwise"],
-          f"{len(computed_pairwise)} pairwise separator rows match pins")
+          f"{len(computed_pairwise)} pairwise separator rows match supplied fixture")
     census_triples = orbit_census(WORDS, frames)
     orbit_total = sum(size for _, size, _ in census_triples)
     check(f"03 {CHECK_LABELS[2]}/orbits",
@@ -1001,7 +951,7 @@ def main(argv):
               else f"worker grid mismatches: {sorted(mismatches)}")
     receipt["worker_grid_agreement"] = {
         "fields": agreement,
-        "grid_path": str(WORKER_GRID_PATH),
+        "grid_path": str(WORKER_GRID_PATH.relative_to(ROOT)),
         "grid_sha256": grid_sha,
     }
 
@@ -1180,36 +1130,27 @@ def main(argv):
         }
 
     firewalls = [
-        "The five candidate laws are Cycle-625 Route-A candidate ADMISSION laws; "
-        "identifying which law a formation route implements is not identifying nature's "
-        "fixed Admissibility rule (that extensional identification remains open, per Cycle 625).",
-        "occurrence / MEMBER / LAW_RECEIPT are conditional candidate Records in the "
-        "Cycle-531/625 sense; no objective actuality and no framework-Record identification "
-        "is claimed for any stream element.",
+        "The five candidate tables and port grammar are supplied finite inputs; "
+        "identifying a table does not identify nature's fixed Admissibility rule.",
+        "occurrence / MEMBER / LAW_RECEIPT are supplied grammar fields; no objective "
+        "actuality or framework-Record identification is claimed for any stream element.",
         "Acceptance profiles are Boolean; no frequency, weight, grade, or Born probability is "
-        "computed or interpreted; the Route-C grade/corpus lane is untouched.",
+        "computed or interpreted.",
         "The reference emitters are synthetic stream generators for harness self-test only; "
         "they are NOT formation routes, and the emitter's winner convention is supplied "
         "bookkeeping the decoder never reads beyond grammar well-formedness.",
         "Refusal verdicts about imposter streams are statements about those synthetic streams, "
         "not about any physical channel; no gravity content.",
     ]
-    acceptance_duties = [
-        "feed each formation route's port-readout stream (archive, losers, ready, spent, edge, "
-        "member, receipt, snapshot per trial) to discriminate() unchanged, with the frozen "
-        "family tables and the 24 frames;",
-        "rerun rows 5-14 semantics on real streams: identification must be reproduced blind, "
-        "held extensions must not flip train identifications except by the retraction rule, and "
-        "every refusal must carry its witness;",
-        "a refusal on a physical route is a finding about the route (off-family, "
-        "frame-dependence, non-determinism, or port-grammar violation), not about the harness.",
-    ]
-
     receipt.update({
         "cycle": CYCLE,
         "date": DATE,
         "authority": AUTHORITY,
         "audit": AUDIT,
+        "author_accepted": False,
+        "author_artifact_status_accepted": False,
+        "breakthrough": False,
+        "constitutional_effect": "none",
         "frozen_contract_sha256": FROZEN_CONTRACT_SHA256,
         "contract": contract(),
         "blinded_verdicts": {label: normalize(v) for label, v in blinded_verdicts.items()},
@@ -1226,7 +1167,6 @@ def main(argv):
         },
         "frame_invariance": frame_invariance_summary,
         "interpretation_firewall": firewalls,
-        "acceptance_duties": acceptance_duties,
         "elapsed_seconds": round(time.time() - start, 3),
         "pass_count": PASS,
         "fail_count": FAIL,
@@ -1234,12 +1174,14 @@ def main(argv):
     })
 
     RECEIPT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    RECEIPT_PATH.write_text(json.dumps(receipt, indent=1, sort_keys=True))
+    RECEIPT_PATH.write_text(json.dumps(receipt, indent=1, sort_keys=True) + "\n")
 
-    print("RESULT", PASS, FAIL, "OK" if FAIL == 0 else "FAIL", str(RECEIPT_PATH))
+    print(
+        "RESULT", PASS, FAIL, "OK" if FAIL == 0 else "FAIL",
+        str(RECEIPT_PATH.relative_to(ROOT)),
+    )
     return 0 if FAIL == 0 else 1
 
 
 if __name__ == "__main__":
     sys.exit(main(sys.argv[1:]))
-

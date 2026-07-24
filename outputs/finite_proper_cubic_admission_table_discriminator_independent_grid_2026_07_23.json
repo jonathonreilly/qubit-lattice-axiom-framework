@@ -1,0 +1,321 @@
+{
+ "antipodal": {
+  "accepted_count": 3,
+  "is_shell_function": false,
+  "orbit_constant": true,
+  "shell2_accept_reject": [
+   3,
+   15
+  ]
+ },
+ "completing_sets_after_shell1_uq": [
+  [
+   2,
+   3
+  ],
+  [
+   2,
+   5
+  ]
+ ],
+ "generator_path": "scripts/finite_proper_cubic_admission_table_discriminator_independent_check_2026_07_23.py",
+ "generator_sha256": "4590533b8c3ec0c15e1eb49dc2e25d337b9c46e1cac62caaedce5a38555a1c70",
+ "mimic_odd_disagreements": {
+  "held": 6,
+  "held_witness_weights": [
+   5
+  ],
+  "train": 0
+ },
+ "minimal_separating_shell_sets": [
+  [
+   1,
+   2,
+   3
+  ],
+  [
+   1,
+   2,
+   5
+  ],
+  [
+   2,
+   3,
+   4
+  ],
+  [
+   2,
+   3,
+   6
+  ],
+  [
+   2,
+   4,
+   5
+  ],
+  [
+   2,
+   5,
+   6
+  ]
+ ],
+ "orbit_census": [
+  {
+   "representative": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "shell": 0,
+   "size": 1
+  },
+  {
+   "representative": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "shell": 1,
+   "size": 6
+  },
+  {
+   "representative": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    1
+   ],
+   "shell": 2,
+   "size": 3
+  },
+  {
+   "representative": [
+    0,
+    0,
+    0,
+    1,
+    0,
+    1
+   ],
+   "shell": 2,
+   "size": 12
+  },
+  {
+   "representative": [
+    0,
+    1,
+    0,
+    1,
+    0,
+    1
+   ],
+   "shell": 3,
+   "size": 8
+  },
+  {
+   "representative": [
+    0,
+    0,
+    0,
+    1,
+    1,
+    1
+   ],
+   "shell": 3,
+   "size": 12
+  },
+  {
+   "representative": [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1
+   ],
+   "shell": 4,
+   "size": 3
+  },
+  {
+   "representative": [
+    0,
+    1,
+    0,
+    1,
+    1,
+    1
+   ],
+   "shell": 4,
+   "size": 12
+  },
+  {
+   "representative": [
+    0,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "shell": 5,
+   "size": 6
+  },
+  {
+   "representative": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "shell": 6,
+   "size": 1
+  }
+ ],
+ "pairwise_separators": [
+  {
+   "held": 6,
+   "left": "unique_quorum",
+   "right": "odd_shells",
+   "total": 26,
+   "train": 20
+  },
+  {
+   "held": 22,
+   "left": "unique_quorum",
+   "right": "nonempty",
+   "total": 57,
+   "train": 35
+  },
+  {
+   "held": 0,
+   "left": "unique_quorum",
+   "right": "low_density",
+   "total": 15,
+   "train": 15
+  },
+  {
+   "held": 16,
+   "left": "unique_quorum",
+   "right": "even_nonzero",
+   "total": 37,
+   "train": 21
+  },
+  {
+   "held": 16,
+   "left": "odd_shells",
+   "right": "nonempty",
+   "total": 31,
+   "train": 15
+  },
+  {
+   "held": 6,
+   "left": "odd_shells",
+   "right": "low_density",
+   "total": 41,
+   "train": 35
+  },
+  {
+   "held": 22,
+   "left": "odd_shells",
+   "right": "even_nonzero",
+   "total": 63,
+   "train": 41
+  },
+  {
+   "held": 22,
+   "left": "nonempty",
+   "right": "low_density",
+   "total": 42,
+   "train": 20
+  },
+  {
+   "held": 6,
+   "left": "nonempty",
+   "right": "even_nonzero",
+   "total": 32,
+   "train": 26
+  },
+  {
+   "held": 16,
+   "left": "low_density",
+   "right": "even_nonzero",
+   "total": 22,
+   "train": 6
+  }
+ ],
+ "scenario_consistent_sets": {
+  "shell1_stream_labeled_by_even_nonzero": [
+   "even_nonzero"
+  ],
+  "shell1_stream_labeled_by_unique_quorum": [
+   "low_density",
+   "nonempty",
+   "odd_shells",
+   "unique_quorum"
+  ]
+ },
+ "shell_profiles": {
+  "even_nonzero": [
+   0,
+   0,
+   1,
+   0,
+   1,
+   0,
+   1
+  ],
+  "low_density": [
+   0,
+   1,
+   1,
+   0,
+   0,
+   0,
+   0
+  ],
+  "nonempty": [
+   0,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1
+  ],
+  "odd_shells": [
+   0,
+   1,
+   0,
+   1,
+   0,
+   1,
+   0
+  ],
+  "unique_quorum": [
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0
+  ]
+ },
+ "train_only_identifiable": {
+  "even_nonzero": true,
+  "low_density": true,
+  "nonempty": true,
+  "odd_shells": true,
+  "unique_quorum": true
+ }
+}

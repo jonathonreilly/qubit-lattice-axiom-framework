@@ -342,7 +342,9 @@ failures. This boundary is fail-closed and does not weaken any audit gate.
   edge; neither is a campaign failure.
 - **Global retryable:** a transient fetch/push failure whose remote outcome can
   be reconciled exactly. Reconcile the intended commit OID before replay; never
-  blindly repeat an uncertain push.
+  blindly repeat an uncertain push. If fetch or ancestry proof is unavailable,
+  preserve the local intended commit and hard-stop with
+  `push_reconciliation_required`; do not reset to a stale remote-tracking ref.
 - **Global hard stop:** dirty or divergent source state, failed rollback,
   repository invariant failure, unclassifiable generated diff, corrupted
   campaign state, unavailable required audit model, authentication failure
@@ -401,9 +403,16 @@ python3 docs/audit/scripts/orchestrate_audit_batch.py \
   worker id rotates each criticality tier while retaining the complete target
   set, so helpers start in different places without creating abandoned
   shards. Immediately before apply, the drainer refreshes `origin/main` and
-  binds the delivery to the claim, dependencies, source bytes, and any
-  dispatch/cascade entry that selected it. Remote movement supersedes the
-  stale delivery without applying or quarantining it.
+  binds the delivery to the complete ledger provenance, exact packet evidence
+  manifest, dependency note bytes, runner/helper declared inputs, computed
+  role/independence/passes, and any dispatch/cascade entry that selected it.
+  The cascade cache must exactly equal a pure recomputation from the current
+  ledger and runner bytes. Remote movement supersedes the stale delivery
+  without applying or quarantining it.
+- **Live runners never repair a shared checkout.** Execute each primary/helper
+  runner in a disposable isolated worktree, capture stdout/stderr, terminate
+  its process group, and discard the whole checkout. Never infer ownership of
+  a shared untracked/ignored delta and recursively delete it.
 - **Concurrency budget (shared codex pool).** Auditor seats, review-loop
   reviewers, and judicial panels all draw on one pool. Keep the TOTAL
   concurrent codex processes across every lane at or under ~8-10, and
@@ -510,6 +519,9 @@ schema). It does not show that the source claim is false or needs editing.
   quarantine the claim for the current top-level campaign. Continue draining
   other ready rows. Pass the campaign quarantine file to every inner batch so
   a new batch cycle cannot immediately burn the same row again.
+- A new campaign-exclusion record is operational progress even when no Git
+  commit landed. Run another bounded batch so quarantine-only rounds cannot be
+  mistaken for a lane fixed point while later unrelated rows remain eligible.
 - Do not apply a verdict, mutate the ledger, or launch a science-editing PR
   from malformed output. A source-repair PR requires a validated non-clean
   verdict with a concrete rationale and repair target.
@@ -1085,14 +1097,20 @@ git add docs/audit
 git commit -m "audit: <claim-id> <verdict>"
 ```
 
-Before pushing, fetch and confirm `origin/main` is still the parent or rebase cleanly and rerun the pipeline:
+Before pushing, fetch and confirm `origin/main` is still the validated parent:
 
 ```bash
 git fetch origin main
 git push origin HEAD:main
 ```
 
-If the push is rejected, fetch/rebase onto `origin/main`, rerun pipeline/lint/diff-check, amend only if it is the same audit commit and no one else has consumed it, then push.
+If the push is rejected, reconcile the exact intended commit OID first. If it
+already landed, record success. If canonical source, dependency, packet,
+selection, role, or independence state moved, discard the old seat and build a
+fresh packet; never rebase an already-applied forensic verdict onto that new
+authority state. A manual replay is permitted only after exact source
+fingerprints still match and apply/pipeline/lint/diff-check are rerun from the
+new parent.
 
 ## Loop Control
 

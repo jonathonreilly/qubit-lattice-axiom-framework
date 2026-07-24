@@ -92,6 +92,7 @@ CAMPAIGN_EXCLUSION_REASONS = {
     *CAMPAIGN_EXCLUSION_RESULTS,
 }
 REMOTE_STATE_SUPERSEDED_RESULT = "remote_state_superseded"
+PUSH_RECONCILIATION_REQUIRED_RESULT = "push_reconciliation_required"
 SELECTION_SKIP_REASONS = {
     "missing_ledger_row",
     "effective_status_not_actionable",
@@ -501,7 +502,7 @@ def source_queue_rows(source: str, rows: dict[str, dict]) -> list[dict]:
     if source == "dispatch":
         return audit_runner.load_dispatch_targets(rows, ready_only=True)
     if source == "reaudit":
-        return audit_runner.load_reaudit_candidates()
+        return audit_runner.load_reaudit_candidates(ledger_rows=rows)
     raise ValueError(f"unknown alternate audit source {source!r}")
 
 
@@ -649,52 +650,48 @@ def passes_for_row(row: dict) -> list[int]:
     return [1, 2] if row.get("criticality") == "critical" else [1]
 
 
-def selection_fingerprint(row: dict, rows: dict[str, dict]) -> str:
-    """Bind a launched seat to the claim/dependency state it actually saw."""
-    source_hashes: dict[str, str] = {}
-    for path in filter(
-        None,
-        (
-            row.get("note_path"),
-            row.get("runner_path"),
-            *(row.get("helper_runner_paths") or []),
-        ),
-    ):
-        source = REPO_ROOT / str(path)
-        try:
-            source_hashes[str(path)] = hashlib.sha256(source.read_bytes()).hexdigest()
-        except OSError:
-            source_hashes[str(path)] = "<missing>"
-    dependency_state = {
-        dep: {
-            "claim_type": (rows.get(dep) or {}).get("claim_type"),
-            "claim_scope": (rows.get(dep) or {}).get("claim_scope"),
-            "effective_status": (rows.get(dep) or {}).get("effective_status"),
-            "note_hash": (rows.get(dep) or {}).get("note_hash"),
-        }
-        for dep in row.get("deps") or []
-    }
+def selection_fingerprint(
+    row: dict,
+    rows: dict[str, dict],
+    evidence_manifest: dict[str, dict] | None = None,
+) -> str:
+    """Bind a launched seat to exact packet bytes and seat provenance."""
+    selection_source = row.get("_selection_source")
+    role, role_independence = audit_runner.determine_audit_role(
+        rows.get(str(row.get("claim_id") or "")) or row,
+        AUDITOR_FAMILY,
+        is_reaudit_candidate=selection_source in {"dispatch", "reaudit"},
+        is_dispatch_target=selection_source == "dispatch",
+    )
+    audit_passes = passes_for_row(row)
     payload = {
-        "claim_id": row.get("claim_id"),
-        "audit_status": row.get("audit_status"),
-        "cross_confirmation_status": (
-            (row.get("cross_confirmation") or {}).get("status")
+        "schema": "audit-batch-selection-fingerprint-v2",
+        "packet_source_fingerprint": (
+            audit_runner.audit_packet_source_fingerprint(
+                row,
+                rows,
+                evidence_manifest,
+            )
         ),
-        "effective_status": row.get("effective_status"),
-        "note_hash": row.get("note_hash"),
-        "claim_type": row.get("claim_type"),
-        "claim_scope": row.get("claim_scope"),
-        "deps": row.get("deps") or [],
-        "audit_invocation_id": row.get("audit_invocation_id"),
-        "audit_invocation_history_count": len(
-            row.get("audit_invocation_history") or []
-        ),
-        "previous_audits_count": len(row.get("previous_audits") or []),
-        "source_hashes": source_hashes,
-        "dependency_state": dependency_state,
+        "batch_control_sha256": hashlib.sha256(
+            Path(__file__).read_bytes()
+        ).hexdigest(),
+        "selection_source": selection_source,
+        "selection_source_fingerprint": row.get("_source_fingerprint"),
+        "role": role,
+        "role_independence": role_independence,
+        "planned_passes": audit_passes,
+        "seat_independence": [
+            seat_independence(row, pass_no) for pass_no in audit_passes
+        ],
     }
     return hashlib.sha256(
-        json.dumps(payload, sort_keys=True, separators=(",", ":")).encode("utf-8")
+        json.dumps(
+            payload,
+            sort_keys=True,
+            separators=(",", ":"),
+            allow_nan=False,
+        ).encode("utf-8")
     ).hexdigest()
 
 
@@ -808,7 +805,11 @@ def launch_worker(
         "isolated": isolated,
         "evidence_manifest": evidence_manifest,
         "invocation_id": invocation_id,
-        "selection_fingerprint": selection_fingerprint(row, rows),
+        "selection_fingerprint": selection_fingerprint(
+            row,
+            rows,
+            evidence_manifest,
+        ),
         "selection_source": row.get("_selection_source"),
         "source_fingerprint": row.get("_source_fingerprint"),
         "transport_bound": None,
@@ -1804,27 +1805,12 @@ def apply_claim_serialized(
                         "seat was running; no stale delivery was applied"
                     ),
                 }]
-            current_fingerprint = selection_fingerprint(current_row, current_rows)
-            launched_fingerprints = {
-                str(job["selection_fingerprint"])
-                for job, _envelope in ordered
-            }
-            if launched_fingerprints != {current_fingerprint}:
-                return True, [{
-                    "cid": cid,
-                    "result": REMOTE_STATE_SUPERSEDED_RESULT,
-                    "detail": (
-                        "claim, dependency, or source state changed on "
-                        "origin/main while the restricted seat was running; "
-                        "discard the stale delivery and let a fresh round "
-                        "reselect current state"
-                    ),
-                }]
             launched_sources = {
                 str(job.get("selection_source"))
                 for job, _envelope in ordered
                 if job.get("selection_source")
             }
+            current_selection_row = current_row
             if launched_sources:
                 if len(launched_sources) != 1:
                     return False, [{
@@ -1868,6 +1854,48 @@ def apply_claim_serialized(
                             "delivery was applied"
                         ),
                     }]
+                current_targets, _skipped = compute_alternate_targets(
+                    source,
+                    current_rows,
+                )
+                current_selection_row = next(
+                    (
+                        target
+                        for target in current_targets
+                        if target.get("claim_id") == cid
+                    ),
+                    None,
+                )
+                if not isinstance(current_selection_row, dict):
+                    return True, [{
+                        "cid": cid,
+                        "result": REMOTE_STATE_SUPERSEDED_RESULT,
+                        "detail": (
+                            f"{source} no longer selects this claim with the "
+                            "same actionable role and independence; no stale "
+                            "delivery was applied"
+                        ),
+                    }]
+
+            current_fingerprint = selection_fingerprint(
+                current_selection_row,
+                current_rows,
+            )
+            launched_fingerprints = {
+                str(job["selection_fingerprint"])
+                for job, _envelope in ordered
+            }
+            if launched_fingerprints != {current_fingerprint}:
+                return True, [{
+                    "cid": cid,
+                    "result": REMOTE_STATE_SUPERSEDED_RESULT,
+                    "detail": (
+                        "claim, dependency, governed packet source, runner "
+                        "input, or seat provenance changed on origin/main while "
+                        "the restricted seat was running; discard the stale "
+                        "delivery and let a fresh round reselect current state"
+                    ),
+                }]
 
         for job, envelope in ordered:
             applied, apply_detail = audit_runner.apply_one(
@@ -1906,19 +1934,28 @@ def apply_claim_serialized(
                 for job, envelope in ordered
             ]
 
-        if _command_cancelled():
-            return fail_after_transaction("commit_cancelled")
-
-        fetch = sh(["git", "fetch", "origin", "main", "-q"])
+        # A nonzero client result does not prove rejection: the remote may
+        # have accepted the commit before the response path failed. Reconcile
+        # the exact intended OID even after cancellation. Until that succeeds,
+        # preserve the local commit and stop every later transaction.
+        fetch = sh(
+            ["git", "fetch", "origin", "main", "-q"],
+            honor_cancel=False,
+        )
         if fetch.returncode != 0:
-            result = "commit_cancelled" if _command_cancelled() else "push_failed"
-            detail = None if result == "commit_cancelled" else "push and follow-up fetch failed"
-            return fail_after_transaction(result, detail)
-        if _command_cancelled():
-            return fail_after_transaction("commit_cancelled")
-        landed = sh(["git", "merge-base", "--is-ancestor", local_commit, "origin/main"])
-        if _command_cancelled():
-            return fail_after_transaction("commit_cancelled")
+            return False, [{
+                "cid": cid,
+                "result": PUSH_RECONCILIATION_REQUIRED_RESULT,
+                "commit": local_commit,
+                "detail": (
+                    "push returned nonzero and follow-up fetch failed; remote "
+                    "acceptance is unknown, so the intended commit is preserved"
+                ),
+            }]
+        landed = sh(
+            ["git", "merge-base", "--is-ancestor", local_commit, "origin/main"],
+            honor_cancel=False,
+        )
         if landed.returncode == 0:
             return True, [
                 {
@@ -1929,6 +1966,18 @@ def apply_claim_serialized(
                 }
                 for job, envelope in ordered
             ]
+        if landed.returncode != 1:
+            return False, [{
+                "cid": cid,
+                "result": PUSH_RECONCILIATION_REQUIRED_RESULT,
+                "commit": local_commit,
+                "detail": (
+                    "push returned nonzero and intended-commit ancestry could "
+                    "not be decided; local commit preserved"
+                ),
+            }]
+        if _command_cancelled():
+            return fail_after_transaction("commit_cancelled")
         if attempt == retries:
             return fail_after_transaction("push_race_exhausted")
         reset, reset_detail = reset_to_origin_main()

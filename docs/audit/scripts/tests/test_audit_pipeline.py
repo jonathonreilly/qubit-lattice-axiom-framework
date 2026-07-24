@@ -10189,6 +10189,8 @@ class BatchOrchestratorRoundSemanticsTest(unittest.TestCase):
         ), mock.patch.object(
             m.audit_runner, "PROMPT_TEMPLATE_PATH"
         ) as template_path, mock.patch.object(
+            m, "selection_fingerprint", return_value="selection"
+        ), mock.patch.object(
             m.subprocess, "Popen", return_value=proc
         ) as popen:
             template_path.read_text.return_value = "template"
@@ -10749,35 +10751,37 @@ class CodexAuditRunnerReauditCandidatesTest(unittest.TestCase):
     def test_load_reaudit_candidates_normalizes_sorts_and_filters_streams(self):
         m = _import_codex_audit_runner()
         path = self.tmp_root / "reaudit_candidates.json"
-        path.write_text(
-            json.dumps(
+        payload = {
+            "candidates": [
                 {
-                    "candidates": [
-                        {
-                            "claim_id": "medium_dep",
-                            "criticality": "medium",
-                            "criticality_rank": 1,
-                            "transitive_descendants": 10,
-                            "load_bearing_score": 2.0,
-                        }
-                    ],
-                    "runner_drift_candidates": [
-                        {
-                            "claim_id": "critical_runner",
-                            "criticality": "critical",
-                            "criticality_rank": 3,
-                            "transitive_descendants": 1,
-                            "load_bearing_score": 1.0,
-                            "queue_reason": "custom_runner_reason",
-                        }
-                    ],
+                    "claim_id": "medium_dep",
+                    "criticality": "medium",
+                    "criticality_rank": 1,
+                    "transitive_descendants": 10,
+                    "load_bearing_score": 2.0,
                 }
-            ),
+            ],
+            "runner_drift_candidates": [
+                {
+                    "claim_id": "critical_runner",
+                    "criticality": "critical",
+                    "criticality_rank": 3,
+                    "transitive_descendants": 1,
+                    "load_bearing_score": 1.0,
+                    "queue_reason": "custom_runner_reason",
+                }
+            ],
+        }
+        path.write_text(
+            json.dumps(payload),
             encoding="utf-8",
         )
         m.REAUDIT_CANDIDATES_PATH = path
 
-        rows = m.load_reaudit_candidates()
+        with mock.patch.object(
+            m, "_expected_reaudit_payload", return_value=payload
+        ):
+            rows = m.load_reaudit_candidates(ledger_rows={})
 
         self.assertEqual([r["claim_id"] for r in rows], ["critical_runner", "medium_dep"])
         self.assertTrue(all(r["ready"] for r in rows))
@@ -10785,8 +10789,43 @@ class CodexAuditRunnerReauditCandidatesTest(unittest.TestCase):
         self.assertEqual(rows[1]["queue_reason"], "reaudit_candidate")
         self.assertEqual(rows[1]["audit_status"], "unaudited")
 
-        dep_only = m.load_reaudit_candidates(include_runner_drift=False)
+        with mock.patch.object(
+            m, "_expected_reaudit_payload", return_value=payload
+        ):
+            dep_only = m.load_reaudit_candidates(
+                include_runner_drift=False,
+                ledger_rows={},
+            )
         self.assertEqual([r["claim_id"] for r in dep_only], ["medium_dep"])
+
+    def test_load_reaudit_candidates_rejects_stale_or_unsupported_payload(self):
+        m = _import_codex_audit_runner()
+        path = self.tmp_root / "reaudit_candidates.json"
+        forged = {
+            "policy": "forged-or-stale-policy",
+            "total_candidates": 0,
+            "total_runner_drift_candidates": 0,
+            "candidates": [{"claim_id": "injected"}],
+            "runner_drift_candidates": [],
+        }
+        path.write_text(json.dumps(forged), encoding="utf-8")
+        m.REAUDIT_CANDIDATES_PATH = path
+
+        with mock.patch.object(
+            m,
+            "_expected_reaudit_payload",
+            return_value={
+                "policy": "reaudit_unblocked_v2_dep_or_runner_drift",
+                "total_candidates": 0,
+                "total_runner_drift_candidates": 0,
+                "candidates": [],
+                "runner_drift_candidates": [],
+            },
+        ), self.assertRaisesRegex(
+            ValueError,
+            "does not exactly match",
+        ):
+            m.load_reaudit_candidates(ledger_rows={})
 
 
 class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):

@@ -166,14 +166,8 @@ def sort_key(entry: dict) -> tuple:
     )
 
 
-def main() -> int:
-    ledger_io.ensure_cache()
-    if not LEDGER_PATH.exists():
-        raise SystemExit("audit_ledger.json missing")
-
-    ledger = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))
-    rows = ledger.get("rows", {})
-
+def build_payload(rows: dict[str, dict]) -> dict:
+    """Return the canonical cache payload from current authoritative inputs."""
     candidates: list[dict] = []
     runner_drift_candidates: list[dict] = []
     for cid, row in rows.items():
@@ -218,7 +212,7 @@ def main() -> int:
     for idx, entry in enumerate(runner_drift_candidates, 1):
         entry["generated_order"] = idx
 
-    output = {
+    return {
         "policy": "reaudit_unblocked_v2_dep_or_runner_drift",
         "policy_summary": (
             "Non-clean audited theorem/no-go/open-gate claims surfaced under "
@@ -244,6 +238,14 @@ def main() -> int:
         "runner_drift_candidates": runner_drift_candidates,
     }
 
+
+def main() -> int:
+    ledger_io.ensure_cache()
+    if not LEDGER_PATH.exists():
+        raise SystemExit("audit_ledger.json missing")
+
+    ledger = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))
+    output = build_payload(ledger.get("rows", {}))
     CANDIDATES_JSON.write_text(json.dumps(output, indent=2, sort_keys=True) + "\n")
 
     print(f"Wrote {CANDIDATES_JSON.relative_to(REPO_ROOT)}")
@@ -251,6 +253,7 @@ def main() -> int:
     print(f"  by criticality: {output['by_criticality']}")
     print(f"  runner drift candidates: {output['total_runner_drift_candidates']}")
     print(f"  by criticality (runner drift): {output['by_criticality_runner_drift']}")
+    candidates = output["candidates"]
     if candidates:
         print("  top dep-ratified candidates:")
         for entry in candidates[:5]:
@@ -260,6 +263,7 @@ def main() -> int:
                 f"({entry['criticality']}, after "
                 f"{','.join(entry['reraudit_after_claim_ids'])})"
             )
+    runner_drift_candidates = output["runner_drift_candidates"]
     if runner_drift_candidates:
         print("  top runner-drift candidates:")
         for entry in runner_drift_candidates[:5]:

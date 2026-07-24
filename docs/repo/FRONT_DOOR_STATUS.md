@@ -39,7 +39,7 @@ Owner-approval history for axioms and primitives:
 | Retained bounded rows | 315 |
 | Boxed decorations under retained parents | 19 |
 | Open gates | 2 |
-| Unaudited rows | 2955 |
+| Unaudited rows | 2954 |
 | Retained-pending-chain rows | 5 |
 | Audited conditional rows | 70 |
 | Audited renaming rows | 18 |
@@ -82,14 +82,14 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 226 |
+| critical | `unaudited` | 225 |
 | high | `unaudited` | 171 |
 | medium | `unaudited` | 129 |
 | critical | `audited_conditional` | 16 |
 | ? | `unresolved` | 4 |
+| critical | `audit_in_progress` | 2 |
 | critical | `audited_renaming` | 2 |
 | high | `audited_conditional` | 2 |
-| critical | `audit_in_progress` | 1 |
 | critical | `audited_failed` | 1 |
 | critical | `audited_numerical_match` | 1 |
 | critical | `retained_pending_chain` | 1 |

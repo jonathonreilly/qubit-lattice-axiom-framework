@@ -4,9 +4,9 @@
  "audit": "unset",
  "frozen_contract_sha256": "8c8c0082d56c79fec970af54213961db2feb4415c674796d0cefea88a75cbc2c",
  "consumed": {
-  "cycle610_runner": "61d624d3f47e371a3b99f55a3c60db68c1fe77f5d93a21651f9172b2d49f1458",
-  "cycle611_runner": "9f1d4a2aabca8af1f61ef42071c8d2bce05018eace7a6f0886d769871689a13d",
-  "cycle610_receipt_sha256": "0816073d1861bb8b36238ec4948c387801a75442c797baf4a52e335cf6d30ccc"
+  "cycle610_runner": "e658ee75020f503553b8a69b9db2c6ddc5a61f6933923d1eace281255e59373a",
+  "cycle611_runner": "ebb96f23ab8040947904dab9d0be0bb48ea9a80447861109eebe1ed9759fdc57",
+  "cycle610_receipt_sha256": "c810a22ab8cc8f624ad38d4149fb16fc32e1d31ab703d567c8cbffa221df4664"
  },
  "w4_mechanism_verdict": "COUNT-EDIT (single receiver-gated +/-1 tick edit in a dedicated post-corridor stage; both signs symmetric swaps)",
  "a_count_table": [
@@ -124,7 +124,7 @@
   "matched-ray certification uses spectral data on the certification side only; the preparation and rays consume no spectral data",
   "shared co-registrations are candidate events; the acyclicity result is a finite declared-code statement, not a lattice-wide light-cone theorem"
  ],
- "elapsed_seconds": 4.459991693496704,
+ "elapsed_seconds": 4.944495916366577,
  "pass_count": 6,
  "fail_count": 1,
  "pass": false

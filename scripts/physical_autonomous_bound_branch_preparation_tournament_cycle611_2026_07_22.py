@@ -39,7 +39,7 @@ C610_NAME = (
     "physical_intrinsic_tick_event_relational_duration_tournament_"
     "cycle610_2026_07_22"
 )
-C610_SHA256 = "61d624d3f47e371a3b99f55a3c60db68c1fe77f5d93a21651f9172b2d49f1458"
+C610_SHA256 = "e658ee75020f503553b8a69b9db2c6ddc5a61f6933923d1eace281255e59373a"
 FROZEN_CONTRACT_SHA256 = (
     "1dab9ebb17ac1d351651da745ca698a15a3bc94648dd38c6222022df6df77bde"
 )

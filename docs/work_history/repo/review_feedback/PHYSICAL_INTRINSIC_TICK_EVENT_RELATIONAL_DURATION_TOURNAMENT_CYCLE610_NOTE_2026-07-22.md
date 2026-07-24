@@ -112,8 +112,8 @@ T2 (odd-pi crossings); tolerance 5e-9; caps 360 s / 3 GiB.
 |---|---|
 | Cycle219 runner | `ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a` |
 | Cycle230 runner | `b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae` |
-| Cycle578 runner | `25806853483a822b86dd55c50ebedb7957395151ef262317110b348c6931b9ab` |
-| Cycle583 runner | `3f1672ef0d2c0063d5760a6b0885d75cb75b63c64b44951399fd0762d5499f7f` |
+| Cycle578 runner | `73ab0364fc5b8ddd9c708a3bd8910b660d36cb0d53aad388f42e2b09b970a7ac` |
+| Cycle583 runner | `687adfc11d823329a40445bc9f02aada93fd64f4617bf25857c5bdf0fd68cfe7` |
 
 The runner byte-pins these shores and refuses drift.  The Cycle-590 physical
 compiler, Cycle-570/571 event interfaces, and Cycle-602/605 detector notes are
@@ -439,9 +439,9 @@ external wall:                68.27 s
 maximum resident set size:    343,162,880 bytes
 peak memory footprint:        224,396,200 bytes
 swaps:                        0
-runner SHA-256:               61d624d3f47e371a3b99f55a3c60db68c1fe77f5d93a21651f9172b2d49f1458
-receipt SHA-256:              0816073d1861bb8b36238ec4948c387801a75442c797baf4a52e335cf6d30ccc
-cold transcript SHA-256:      95cb76b9471e5f861f6b65c7e0e73fd51bb267f8d7db5bac8ed6717c4520d0d7
+runner SHA-256:               e658ee75020f503553b8a69b9db2c6ddc5a61f6933923d1eace281255e59373a
+receipt SHA-256:              c810a22ab8cc8f624ad38d4149fb16fc32e1d31ab703d567c8cbffa221df4664
+cold transcript SHA-256:      a7fc54b4856cbe53421a24965fd53d65f76d6e1ca0ed2aa02ea6ed91ac1fb638
 frozen contract SHA-256:      52666bb481107d722f976a4ebb72943d802211acac84e6108dca8f5daa233406
 worker root file SHA-256:     3ef1fe2987236e4e02bdd5b9511067e3e4ec4e50b61175e23dc6505dd2c181af
 worker solver SHA-256:        a2c75d3406645884328f6d8eb23fb26f0020f11e02da79321f68d3396b2502ee

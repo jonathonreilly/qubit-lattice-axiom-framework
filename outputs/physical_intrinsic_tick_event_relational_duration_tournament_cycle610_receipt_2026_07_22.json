@@ -310,7 +310,7 @@
   "the uniform-field row is a supplied lawful field configuration; non-uniform field gradients across the packet remain open",
   "the purified source is a supplied preparation (disclosed); the raw onsite-A2 rows measure the lawful-domain boundary"
  ],
- "elapsed_seconds": 67.93132066726685,
+ "elapsed_seconds": 63.6005859375,
  "pass_count": 33,
  "fail_count": 3,
  "pass": false

@@ -4,8 +4,8 @@
  "audit": "unset",
  "frozen_contract_sha256": "d45cad77c7d74df1951930ae796295fd8c405cc59d668f2fda98ca430b32cea1",
  "consumed": {
-  "cycle610_runner": "61d624d3f47e371a3b99f55a3c60db68c1fe77f5d93a21651f9172b2d49f1458",
-  "cycle611_runner": "9f1d4a2aabca8af1f61ef42071c8d2bce05018eace7a6f0886d769871689a13d"
+  "cycle610_runner": "e658ee75020f503553b8a69b9db2c6ddc5a61f6933923d1eace281255e59373a",
+  "cycle611_runner": "ebb96f23ab8040947904dab9d0be0bb48ea9a80447861109eebe1ed9759fdc57"
  },
  "channel_factors": {
   "plus_bound_factor": 0.013749355556730332,
@@ -85,7 +85,7 @@
   "a certified rate is a dimensionless relational candidate, not proper time, lapse, or energy",
   "the plus-channel falsification rows of Cycles 610-612 stand unchanged; this addendum refines the candidate law, it does not repair preregistered failures"
  ],
- "elapsed_seconds": 7.242326736450195,
+ "elapsed_seconds": 7.966284990310669,
  "pass_count": 5,
  "fail_count": 0,
  "pass": true

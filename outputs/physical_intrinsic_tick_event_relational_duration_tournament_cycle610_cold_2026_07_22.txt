@@ -1,4 +1,4 @@
-PASS every consumed shore runner is byte exact :: {'common_matter_field_coin_family_cycle219_2026_07_16.py': 'ad9bf5febde8', 'spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py': 'b449301837c1', 'physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_2026_07_22.py': '25806853483a', 'physical_contact_dimer_infinite_internal_content_tournament_cycle583_2026_07_22.py': '3f1672ef0d2c'}
+PASS every consumed shore runner is byte exact :: {'common_matter_field_coin_family_cycle219_2026_07_16.py': 'ad9bf5febde8', 'spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py': 'b449301837c1', 'physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_2026_07_22.py': '73ab0364fc5b', 'physical_contact_dimer_infinite_internal_content_tournament_cycle583_2026_07_22.py': '687adfc11d82'}
 PASS A2 bound-branch root exists near the retained Cycle-583 phase with an A2-dominant null vector :: {'theta': -2.975574708446694, 'branch_abs_value': 1.1314491454171574e-11, 'null_A2_overlap': 0.9999999999999997}
 PASS the BS null vector reconstructs a genuine fiber bound eigenvector :: {'eigen_residual': 2.1331798302301967e-12, 'antisym': 4.35734353712177e-15, 'source_overlap': 0.2626773191935509}
 PASS norm and antisymmetry are preserved by the literal law :: {'norm': np.float64(1.6131540547803525e-13), 'antisym': 2.641381394369509e-13}
@@ -34,22 +34,22 @@ PASS duplicate admission is refused by the derived freshness predicate :: {'stat
 PASS binder deletion blocks the opportunity; deleting the supplied actuality token blocks admission (the supplied middle is explicit) :: {'no_binder': 'no_opportunity', 'no_actuality': 'refused_supplied'}
 PASS missing event: a lineage gap makes the interval undefined, never zero :: {'removed_identity': 3}
 PASS independent observers: two chains fed by the same tick stream decode identical intervals :: {'observer_a': 8, 'observer_b': 8}
-RESULT 33 3 elapsed 67.93 s
-       68.27 real        66.16 user         2.04 sys
-           343162880  maximum resident set size
+RESULT 33 3 elapsed 63.6 s
+       64.11 real        61.86 user         2.03 sys
+           332169216  maximum resident set size
                    0  average shared memory size
                    0  average unshared data size
                    0  average unshared stack size
-               27069  page reclaims
-                  17  page faults
+               25923  page reclaims
+                 586  page faults
                    0  swaps
                    0  block input operations
                    0  block output operations
                    0  messages sent
                    0  messages received
                    0  signals received
-                   9  voluntary context switches
-                1127  involuntary context switches
-       1219426945086  instructions retired
-        243962792697  cycles elapsed
-           224396200  peak memory footprint
+                 912  voluntary context switches
+                4987  involuntary context switches
+       1218670272021  instructions retired
+        243479514966  cycles elapsed
+           228721504  peak memory footprint

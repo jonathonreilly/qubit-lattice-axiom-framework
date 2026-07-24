@@ -1,4 +1,4 @@
-PASS the Cycle-610 runner is consumed byte-pinned and unchanged :: 61d624d3f47e371a
+PASS the Cycle-610 runner is consumed byte-pinned and unchanged :: e658ee75020f5035
 PASS the position-representation engine reproduces the Cycle-610 word and the raw source bound weight :: {'rep_defect': 5.162537501411147e-14, 'raw_bound_weight': 0.2626773191935403, 'eig_residual': 2.1331798302301967e-12}
 PASS no-op control reproduces the Cycle-610 falsification: locked but convention-dependent and uncertified :: {'rate_T1': 0.049899193548387094, 'rate_T2': 0.049899193548387094, 'locked': True, 'convention_independent': False, 'certified': False}
 PASS lawful-domain: a non-antisymmetric input is refused :: {'antisym_defect': 0.14142135623730953}
@@ -9,23 +9,22 @@ PASS P-A prior: the minus-port filter raises the bound-weight diagnostic monoton
 PASS port-swap control: the plus port does not purify (the minus port is load-bearing) :: {'plus_port_weight': 0.03173352762619215, 'raw': 0.2626773191935403}
 PASS P-C: ramp fidelity trend and certification outcome are reported against the frozen prior (monotone improvement expected, certification uncertain) :: {'weights': [0.0196, 0.0041, 0.0003], 'certified': [False, False, False]}
 FAIL held transfer: no certified P-B configuration to transfer :: P-B never certified
-RESULT 9 2 elapsed 14.87 s
-       15.16 real        14.76 user         0.38 sys
-           199475200  maximum resident set size
+RESULT 9 2 elapsed 15.67 s
+       16.01 real        15.56 user         0.41 sys
+           193347584  maximum resident set size
                    0  average shared memory size
                    0  average unshared data size
                    0  average unshared stack size
-               17271  page reclaims
-                   1  page faults
+               16902  page reclaims
+                   5  page faults
                    0  swaps
                    0  block input operations
                    0  block output operations
                    0  messages sent
                    0  messages received
                    0  signals received
-                   4  voluntary context switches
-                 296  involuntary context switches
-        258387528861  instructions retired
-         60121764468  cycles elapsed
-           122552968  peak memory footprint
-exit=1
+                   1  voluntary context switches
+                 833  involuntary context switches
+        258139786499  instructions retired
+         61106911425  cycles elapsed
+           122929800  peak memory footprint

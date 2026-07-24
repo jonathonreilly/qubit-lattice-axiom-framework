@@ -36,7 +36,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 FROZEN_CONTRACT_SHA256 = (
     "8c8c0082d56c79fec970af54213961db2feb4415c674796d0cefea88a75cbc2c"
 )
-C610_SHA256 = "61d624d3f47e371a3b99f55a3c60db68c1fe77f5d93a21651f9172b2d49f1458"
+C610_SHA256 = "e658ee75020f503553b8a69b9db2c6ddc5a61f6933923d1eace281255e59373a"
 
 NOTE = ROOT / (
     "docs/work_history/repo/review_feedback/"

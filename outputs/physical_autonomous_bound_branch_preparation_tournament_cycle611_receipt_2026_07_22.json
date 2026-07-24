@@ -3,7 +3,7 @@
  "authority": "none",
  "audit": "unset",
  "frozen_contract_sha256": "1dab9ebb17ac1d351651da745ca698a15a3bc94648dd38c6222022df6df77bde",
- "consumed_cycle610_sha256": "61d624d3f47e371a3b99f55a3c60db68c1fe77f5d93a21651f9172b2d49f1458",
+ "consumed_cycle610_sha256": "e658ee75020f503553b8a69b9db2c6ddc5a61f6933923d1eace281255e59373a",
  "parameters": {
   "beta": -0.3,
   "contact": 0.37,
@@ -238,7 +238,7 @@
   "certification uses spectral data; preparation does not",
   "conditioned routes are resource-accounted postselection, not deterministic autonomy; the deterministic route is P-C"
  ],
- "elapsed_seconds": 14.874460935592651,
+ "elapsed_seconds": 15.673256158828735,
  "pass_count": 9,
  "fail_count": 2,
  "pass": false

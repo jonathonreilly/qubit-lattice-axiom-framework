@@ -1,0 +1,522 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "checks": [
+    {
+      "detail": {
+        "direction_image_failures": 0,
+        "group_closure_failures": 0,
+        "ordered_frame_products": 576,
+        "pass": true,
+        "proper_cubic_frames": 24,
+        "unique": true
+      },
+      "label": "24 proper-cubic frames form a closed action",
+      "pass": true
+    },
+    {
+      "detail": {
+        "relations": 5,
+        "separators": 10
+      },
+      "label": "five local relations are total, covariant, and extensionally distinct",
+      "pass": true
+    },
+    {
+      "detail": {
+        "covariance_tests": 1536,
+        "words": 64
+      },
+      "label": "unique quorum reaches the exact finite conditional port equations",
+      "pass": true
+    },
+    {
+      "detail": {
+        "generators": 52,
+        "pair_controls": 32448
+      },
+      "label": "supplied finite lock/readout algebra preserves the conditional payload",
+      "pass": true
+    },
+    {
+      "detail": {
+        "count_grid": 27,
+        "covariance_tests": 99840,
+        "words": 64
+      },
+      "label": "finite denominator-64 grade block is exact on its declared code",
+      "pass": true
+    },
+    {
+      "detail": {
+        "imports": [
+          "__future__",
+          "ast",
+          "dataclasses",
+          "fractions",
+          "hashlib",
+          "itertools",
+          "json",
+          "pathlib"
+        ],
+        "nonstdlib": []
+      },
+      "label": "dependency closure is self-contained on current main plus this package",
+      "pass": true
+    }
+  ],
+  "claim_type": "bounded_theorem",
+  "conditional_port_certificate": {
+    "actuality_derived": false,
+    "archive_makes_map_injective": true,
+    "classification_census": {
+      "collision": 57,
+      "no_hit": 1,
+      "unique": 6
+    },
+    "conditional_equation_failures": 0,
+    "covariance_failures": 0,
+    "covariance_tests": 1536,
+    "field_presence_witnesses": {
+      "collision_loser_copy": true,
+      "edge": true,
+      "member": true,
+      "ready_spent": true,
+      "receipt": true,
+      "snapshot": true
+    },
+    "formation_or_admission_selection_derived": false,
+    "framework_Record_identification_derived": false,
+    "inverse_failures": 0,
+    "lane_zero_binding_is_supplied": true,
+    "malformed_rows": [
+      {
+        "case": "bad_provenance",
+        "rejected": true
+      },
+      {
+        "case": "short_archive",
+        "rejected": true
+      },
+      {
+        "case": "nonbinary_archive",
+        "rejected": true
+      }
+    ],
+    "pass": true,
+    "words": 64
+  },
+  "date": "2026-07-23",
+  "dependency_closure": {
+    "allowed_stdlib_import_roots": [
+      "__future__",
+      "ast",
+      "dataclasses",
+      "fractions",
+      "hashlib",
+      "itertools",
+      "json",
+      "pathlib"
+    ],
+    "archived_object_reads": 0,
+    "canonical_links": {
+      "cache": "../logs/runner-cache/proper_cubic_local_admission_relations_conditional_port_finite_grade_block_2026_07_23.txt",
+      "receipt": "../outputs/proper_cubic_local_admission_relations_conditional_port_finite_grade_block_receipt_2026_07_23.json",
+      "runner": "../scripts/proper_cubic_local_admission_relations_conditional_port_finite_grade_block_2026_07_23.py"
+    },
+    "clean_clone_requirement": "the four new package files atop origin/main; runner executes with Python stdlib only",
+    "dynamic_import_or_eval_calls_present": [],
+    "external_runner_imports": 0,
+    "forbidden_import_roots_present": [],
+    "network_calls": 0,
+    "nonstdlib_imports": [],
+    "note_exists": true,
+    "note_metadata_and_boundaries": {
+      "actuality_boundary": true,
+      "audit": true,
+      "authority": true,
+      "born_boundary": true,
+      "claim_type": true,
+      "record_boundary": true
+    },
+    "pass": true,
+    "stdlib_import_roots": [
+      "__future__",
+      "ast",
+      "dataclasses",
+      "fractions",
+      "hashlib",
+      "itertools",
+      "json",
+      "pathlib"
+    ],
+    "subprocess_calls": 0
+  },
+  "finite_grade_certificate": {
+    "Born_probability_or_calibration_derived": false,
+    "address_reversal_counts_on_witness": [
+      2,
+      2,
+      0
+    ],
+    "address_reversal_grade_L1": "0",
+    "address_reversal_order_separator": 64,
+    "address_reversal_witness": [
+      1,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "alternative_calibration_grade_L1": "11/16",
+    "alternative_calibration_witness": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "auxiliary_frame_action": "unsigned axis permutation; frame sign flips act trivially on address coordinates",
+    "calibration": "count_axis=2*(endpoint_plus+endpoint_minus); p_axis=count_axis/4",
+    "calibration_is_supplied_candidate_structure": true,
+    "counterfactual_calibration_counts_on_witness": [
+      1,
+      1,
+      1
+    ],
+    "covariance_failures": 0,
+    "covariance_tests": 99840,
+    "declared_calibration_counts_on_witness": [
+      2,
+      2,
+      2
+    ],
+    "endpoint_deletion_grade_L1": "1",
+    "endpoint_words": 64,
+    "equally_weighted_addresses": 64,
+    "forward_failures": 0,
+    "framework_Record_identification_derived": false,
+    "grade_or_normalization_failures": 0,
+    "group_failures": 0,
+    "group_tests": 2304,
+    "held_input_controlled_uncompute_failures": 0,
+    "malformed_and_held_rows": [
+      {
+        "case": "short_endpoint",
+        "rejected": true
+      },
+      {
+        "case": "nonbinary_endpoint",
+        "rejected": true
+      },
+      {
+        "case": "odd_external_counts",
+        "rejected": true
+      },
+      {
+        "case": "held_size_137",
+        "rejected": true
+      },
+      {
+        "case": "held_size_211",
+        "rejected": true
+      },
+      {
+        "case": "wrong_controlled_uncompute_mask",
+        "rejected": true
+      }
+    ],
+    "mask_width": 512,
+    "one_hot_mask_bits_per_block": 64,
+    "ordered_frame_products": 576,
+    "pass": true,
+    "reachable_count_grid_size": 27,
+    "reachable_counts_per_axis": [
+      0,
+      2,
+      4
+    ],
+    "realized_history_identification_derived": false,
+    "retained_endpoint_word_required_for_controlled_uncompute": true,
+    "unary_width": 12
+  },
+  "finite_preservation_certificate": {
+    "all24_generator_family_closure_failures": 0,
+    "all24_generator_family_closure_tests": 1248,
+    "all_future_permanence_derived": false,
+    "finite_composition_proof": "each declared generator fixes every payload coordinate and LOCK at LOCK=1; induction therefore fixes them under every finite word in this supplied generator monoid",
+    "formed_unique_ports": 6,
+    "framework_Record_identification_derived": false,
+    "generator_count": 52,
+    "generator_families": {
+      "matter_flip": 6,
+      "negative_lock_prewrite": 23,
+      "read": 23
+    },
+    "generator_inverse_failures": 0,
+    "generator_payload_failures_at_lock1": 0,
+    "generator_tests": 624,
+    "lock_genesis_is_supplied": true,
+    "matter_nontrivial_count": 72,
+    "negative_lock_prewrite_nontrivial_at_lock0": 23,
+    "ordered_pair_controls": 32448,
+    "ordered_pair_payload_failures_at_lock1": 0,
+    "pass": true,
+    "payload_width": 23,
+    "physical_future_operation_class_derived": false,
+    "read_nontrivial_count": 72
+  },
+  "frame_certificate": {
+    "direction_image_failures": 0,
+    "group_closure_failures": 0,
+    "ordered_frame_products": 576,
+    "pass": true,
+    "proper_cubic_frames": 24,
+    "unique": true
+  },
+  "interpretation_boundaries": {
+    "actuality_derived": false,
+    "formation_or_admission_selection_derived": false,
+    "framework_Record_identification_derived": false,
+    "objective_corpus_or_realized_history_identification_derived": false,
+    "physical_M2_compiler_derived": false,
+    "physical_future_operation_class_derived": false,
+    "probability_or_Born_calibration_derived": false
+  },
+  "not_derived": [
+    "physical formation/admission selection law",
+    "objective actuality and packet-to-framework-Record identification",
+    "derivation of the LOCK genesis and physical future-operation class",
+    "derivation of the endpoint-to-grade calibration",
+    "objective corpus, probability interpretation, Born calibration, independence, and convergence",
+    "physical M2 compiler, noise, renewal, scaling, and infinite-volume control"
+  ],
+  "note_sha256": "58e8e5a1cbaefdf560f8feba9ca78d1009f496d90432f8168f12ccdb73bc9a64",
+  "package_scope": "self-contained finite model separation plus candidate conditional port, finite declared preservation algebra, and finite grade block",
+  "pass": true,
+  "relation_certificate": {
+    "all_five_extensionally_distinct": true,
+    "covariance_failures": 0,
+    "covariance_tests": 7680,
+    "freshness_zero_failures": 0,
+    "held_words": 22,
+    "malformed_rows": [
+      {
+        "case": "short_word",
+        "rejected": true
+      },
+      {
+        "case": "nonbinary_word",
+        "rejected": true
+      },
+      {
+        "case": "nonboolean_freshness",
+        "rejected": true
+      }
+    ],
+    "neighborhood_words": 64,
+    "pairwise_separators": [
+      {
+        "held_separators": 6,
+        "left": "unique_quorum",
+        "right": "odd_shells",
+        "total_separators": 26,
+        "train_separators": 20,
+        "witness": "000111"
+      },
+      {
+        "held_separators": 22,
+        "left": "unique_quorum",
+        "right": "nonempty",
+        "total_separators": 57,
+        "train_separators": 35,
+        "witness": "000011"
+      },
+      {
+        "held_separators": 0,
+        "left": "unique_quorum",
+        "right": "low_density",
+        "total_separators": 15,
+        "train_separators": 15,
+        "witness": "000011"
+      },
+      {
+        "held_separators": 16,
+        "left": "unique_quorum",
+        "right": "even_nonzero",
+        "total_separators": 37,
+        "train_separators": 21,
+        "witness": "000001"
+      },
+      {
+        "held_separators": 16,
+        "left": "odd_shells",
+        "right": "nonempty",
+        "total_separators": 31,
+        "train_separators": 15,
+        "witness": "000011"
+      },
+      {
+        "held_separators": 6,
+        "left": "odd_shells",
+        "right": "low_density",
+        "total_separators": 41,
+        "train_separators": 35,
+        "witness": "000011"
+      },
+      {
+        "held_separators": 22,
+        "left": "odd_shells",
+        "right": "even_nonzero",
+        "total_separators": 63,
+        "train_separators": 41,
+        "witness": "000001"
+      },
+      {
+        "held_separators": 22,
+        "left": "nonempty",
+        "right": "low_density",
+        "total_separators": 42,
+        "train_separators": 20,
+        "witness": "000111"
+      },
+      {
+        "held_separators": 6,
+        "left": "nonempty",
+        "right": "even_nonzero",
+        "total_separators": 32,
+        "train_separators": 26,
+        "witness": "000001"
+      },
+      {
+        "held_separators": 16,
+        "left": "low_density",
+        "right": "even_nonzero",
+        "total_separators": 22,
+        "train_separators": 6,
+        "witness": "000001"
+      }
+    ],
+    "pass": true,
+    "physical_selection_in_theorem_scope": false,
+    "positive_model_theorem": "the declared finite schema has at least five displayed extensionally distinct models",
+    "relations": {
+      "even_nonzero": {
+        "accepted_shells": [
+          2,
+          4,
+          6
+        ],
+        "accepted_truth_rows": 31,
+        "census_match": true,
+        "expected_census": [
+          31,
+          15,
+          16
+        ],
+        "held_accepts_weight_4_through_6": 16,
+        "nonconstant": true,
+        "static_shell_set_is_supplied_rule": true,
+        "total": true,
+        "train_accepts_weight_0_through_3": 15
+      },
+      "low_density": {
+        "accepted_shells": [
+          1,
+          2
+        ],
+        "accepted_truth_rows": 21,
+        "census_match": true,
+        "expected_census": [
+          21,
+          21,
+          0
+        ],
+        "held_accepts_weight_4_through_6": 0,
+        "nonconstant": true,
+        "static_shell_set_is_supplied_rule": true,
+        "total": true,
+        "train_accepts_weight_0_through_3": 21
+      },
+      "nonempty": {
+        "accepted_shells": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "accepted_truth_rows": 63,
+        "census_match": true,
+        "expected_census": [
+          63,
+          41,
+          22
+        ],
+        "held_accepts_weight_4_through_6": 22,
+        "nonconstant": true,
+        "static_shell_set_is_supplied_rule": true,
+        "total": true,
+        "train_accepts_weight_0_through_3": 41
+      },
+      "odd_shells": {
+        "accepted_shells": [
+          1,
+          3,
+          5
+        ],
+        "accepted_truth_rows": 32,
+        "census_match": true,
+        "expected_census": [
+          32,
+          26,
+          6
+        ],
+        "held_accepts_weight_4_through_6": 6,
+        "nonconstant": true,
+        "static_shell_set_is_supplied_rule": true,
+        "total": true,
+        "train_accepts_weight_0_through_3": 26
+      },
+      "unique_quorum": {
+        "accepted_shells": [
+          1
+        ],
+        "accepted_truth_rows": 6,
+        "census_match": true,
+        "expected_census": [
+          6,
+          6,
+          0
+        ],
+        "held_accepts_weight_4_through_6": 0,
+        "nonconstant": true,
+        "static_shell_set_is_supplied_rule": true,
+        "total": true,
+        "train_accepts_weight_0_through_3": 6
+      }
+    },
+    "totality_failures": 0,
+    "train_words": 42
+  },
+  "runner_sha256": "44621b28503d216112a60bba1adb3580e4833693d9708269ee2eae926a3480ed",
+  "supplied_structure": [
+    "six directed nearest-neighbor labels and their opposite pairing",
+    "five static accepted-shell sets defining five candidate relations",
+    "freshness Boolean and uniform tiling convention",
+    "unique-quorum choice for the conditional candidate port",
+    "lane-zero member/receipt adapter, blank output fields, and ready token",
+    "LOCK genesis, transient/readout rails, and finite generator list",
+    "trivial proper-cubic action on scalar payload and readout lanes",
+    "endpoint-to-count calibration count=2*(endpoint_plus+endpoint_minus)",
+    "equally weighted 4x4x4 address chart and eight-label convention",
+    "complete-block rule and unsigned-axis/sign-trivial auxiliary frame action",
+    "original endpoint word retained for controlled uncompute",
+    "finite noiseless Boolean operations"
+  ],
+  "tests_failed": 0,
+  "tests_passed": 6
+}

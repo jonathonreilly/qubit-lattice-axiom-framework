@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/proper_cubic_local_admission_relations_conditional_port_finite_grade_block_2026_07_23.py
+runner_sha256: 44621b28503d216112a60bba1adb3580e4833693d9708269ee2eae926a3480ed
+input_fingerprint_sha256: a1956ea444f0e450c5a5cdecc204db4b05346795319de4b462c25759409b80b0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.57
+status: ok
+----- stdout -----
+FINITE ADMISSION / CONDITIONAL PORT / GRADE SUBSTRATE CERTIFICATE
+authority none audit unset claim_type bounded_theorem
+PASS 24 proper-cubic frames form a closed action :: {'proper_cubic_frames': 24, 'unique': True, 'direction_image_failures': 0, 'ordered_frame_products': 576, 'group_closure_failures': 0, 'pass': True}
+PASS five local relations are total, covariant, and extensionally distinct :: {'relations': 5, 'separators': 10}
+PASS unique quorum reaches the exact finite conditional port equations :: {'words': 64, 'covariance_tests': 1536}
+PASS supplied finite lock/readout algebra preserves the conditional payload :: {'generators': 52, 'pair_controls': 32448}
+PASS finite denominator-64 grade block is exact on its declared code :: {'words': 64, 'count_grid': 27, 'covariance_tests': 99840}
+PASS dependency closure is self-contained on current main plus this package :: {'imports': ['__future__', 'ast', 'dataclasses', 'fractions', 'hashlib', 'itertools', 'json', 'pathlib'], 'nonstdlib': []}
+RECEIPT outputs/proper_cubic_local_admission_relations_conditional_port_finite_grade_block_receipt_2026_07_23.json
+SCORE PASS=6 FAIL=0
+DISPOSITION PASS
+
+----- stderr -----
+

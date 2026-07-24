@@ -224,6 +224,12 @@ default session is:
    Keep the printed campaign artifact directory. It is the durable operational
    record for schema, compute, blocked-reentry, and safely rolled-back
    transaction exclusions; it does not carry scientific authority.
+   A bounded JSON/schema rejection from the final canary is also claim-local:
+   the supervisor preserves the complete `forensic-canary-*.jsonl` run log,
+   appends a strict `schema_invalid_quarantined` record, reports that the
+   canary did not land, and exits the campaign successfully at its
+   non-excluded fixed point. Unknown execution failures and apply,
+   propagation, or push failures still fail closed.
 3. If the user names a lane, pass `--lane <name>`. Otherwise the orchestrator
    iterates lanes from `docs/audit/data/lane_certification_config.json`,
    selecting entries whose generated `lane_certification.json` record still
@@ -396,6 +402,16 @@ after a canary lands may the forensic lane run more than one seat, and never
 more than two. Parallelizing a failing forensic path multiplies model burn
 with zero landings.
 
+The canary gets the bounded three-seat fresh-schema budget because distinct
+packet-completion defects can surface serially (for example, an N1 route-class
+marker mismatch followed by an N5 rhetoric-scan coverage mismatch). Coverage
+rejects require one exact N3/N5 disposition for every authenticated
+`full_phrase_groups` record on every applicable manifest path; records that
+share a group id or digest are still distinct when their phrase/path tuple is
+distinct. If that bounded budget still ends in malformed JSON or a validator
+reject, quarantine the row for the campaign and continue to the fixed-point
+exit. That is not a landed canary and does not authorize forensic fan-out.
+
 **Seat-blocked judicial rows are reseated, never frozen and never retried
 as recorded.** A disagreement whose recorded seats lack invocation-bound
 full rationales can never finish through a panel. When the original seat
@@ -555,7 +571,7 @@ Repair and re-entry are reason-specific:
 
 | Operational result | Required repair | Re-entry |
 | --- | --- | --- |
-| `schema_invalid_quarantined` | Preserve the malformed response and exact validator errors; correct the CLI transport schema, prompt, or bounded packet-completion defect. Never edit the scientific judgment into validity. | Start a new campaign so a fresh restricted-context seat is selected. |
+| `schema_invalid_quarantined` | Preserve the malformed response, exact validator errors, and any `forensic-canary-*.jsonl` artifact; correct the CLI transport schema, prompt, or bounded packet-completion defect. A failed final canary must enter this route and finish the campaign at its non-excluded fixed point rather than becoming a global schema stop. Never edit the scientific judgment into validity. | Start a new campaign so a fresh restricted-context seat is selected. Reusing the old workdir keeps the claim excluded. |
 | `compute_required_quarantined` / `compute_required` | Produce a SHA-pinned runner cache with `cached_runner_output.py`, a sliced deterministic certificate, or an independent derivation; then run the full pipeline and strict lint. | Start a new campaign after the artifact is current. |
 | `blocked_row_reentry_quarantined` | Repair the recorded classifier promotion, dependency/status cycle, note-hash drift, or other invalidation cause. Require one converged full pipeline. | Start a new campaign only after the row no longer immediately returns to the same dep-ready state. |
 | `claim_transaction_quarantined` | Fix the recorded apply, pipeline, or lint defect and prove the clean full pipeline converges. The failed delivery minted no verdict. | Use a fresh seat in a new campaign unless canonical tooling verifies an exact preserved-envelope replay against the current source/seat fingerprint. |

@@ -50,8 +50,8 @@ hard, quarantined, forensic-only, or awaiting a panel.
    supervisor process. Do not infer that a campaign is healthy from a running
    PID, and do not recursively search unrelated user directories.
 4. Preserve `campaign-row-exclusions.jsonl`, rejected responses, delivery
-   envelopes, `campaign-selector-skips.jsonl`, and reports as incident
-   provenance. Never commit them.
+   envelopes, `campaign-selector-skips.jsonl`, `forensic-canary-*.jsonl`, and
+   reports as incident provenance. Never commit them.
 
 ## Build the complete repair inventory
 
@@ -92,6 +92,16 @@ python3 scripts/science_fix_loop.py \
 The second command may create repair candidates, but it must reconstruct them
 from current `origin/main` plus the typed operational record. It must never use
 malformed audit prose as a scientific instruction.
+This includes a failed final forensic canary: its
+`schema_invalid_quarantined` record must select a
+`campaign_schema_transport` operational worker even though the top-level audit
+campaign exited successfully. Inspect the named preserved canary run log for
+the exact validator sequence. Repair a reproducible packet-completion,
+sanitized-guidance, retry-budget, or quarantine-control-flow defect with
+tests; never edit the claim note or reinterpret the rejected JSON as a
+verdict. If current `main` already contains the systemic repair, make no
+duplicate edit and route the row to a fresh restricted-context seat in a new
+campaign.
 Use `--retry-failed` for a campaign incident only after its fingerprint or the
 relevant source on `main` changes; do not spend repeated workers on an
 identical seat-local record.
@@ -108,7 +118,7 @@ for re-entry. "Skipped" without a route is an incomplete campaign result.
 
 | State or result | Owner and repair | Re-entry proof |
 | --- | --- | --- |
-| `schema_invalid_quarantined` | Audit tooling. Preserve the rejected output; reproduce validator/transport behavior. Fix only a systemic prompt, schema, CLI, or bounded completion defect. A seat-local malformed answer gets no source edit. | Fresh restricted-context seat in a new campaign. |
+| `schema_invalid_quarantined` | Audit tooling. Preserve the rejected output and `forensic-canary-*.jsonl` when present; reproduce validator/transport behavior. Fix only a systemic prompt, schema, CLI, bounded completion, or claim-local quarantine/continue defect. A seat-local malformed answer gets no source edit. | Fresh restricted-context seat in a new campaign. |
 | `compute_required` / `compute_required_quarantined` | Physics/runner repair. Produce a SHA-pinned cache, sliced deterministic certificate, faster equivalent runner, or independent derivation. Timeout alone is not a negative verdict. | Completed artifact plus full pipeline and strict lint, then a new campaign. |
 | `blocked_row_reentry_quarantined` | Audit control-plane repair. Fix the recorded classifier promotion, dependency/status cycle, hash drift, or invalidation bug; do not mint a placeholder verdict. | One full pipeline convergence where the row does not immediately return to the same dep-ready state. |
 | `claim_transaction_quarantined` | Audit control-plane repair. Reproduce and fix apply, pipeline, or strict-lint failure. The rolled-back delivery minted no verdict. | Clean full pipeline; normally a fresh seat in a new campaign. |

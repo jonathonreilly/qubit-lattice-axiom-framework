@@ -11657,13 +11657,39 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
             "missing=[], extra=[('secret_path', 'sector', 'secret_id')]"
         )
         self.assertEqual(
-            n3_scan_code, "N3_AUTHENTICATED_GROUP_TUPLE_MISMATCH"
+            n3_scan_code, "N3_AUTHENTICATED_GROUP_COVERAGE_MISMATCH"
         )
         n3_scan_prompt = m.render_fresh_schema_retry_prompt(
             "ORIGINAL RESTRICTED PACKET", n3_scan_code, 1,
         )
+        self.assertIn(
+            "every authenticated full_phrase_groups record", n3_scan_prompt
+        )
+        self.assertIn("exactly once in N3.hits", n3_scan_prompt)
+        self.assertIn(
+            "(evidence_path, phrase, occurrence_group_id)", n3_scan_prompt
+        )
         self.assertNotIn("secret_path", n3_scan_prompt)
         self.assertNotIn("secret_id", n3_scan_prompt)
+        n5_scan_code = m.fresh_schema_retry_code(
+            "N5.statements must exactly disposition orchestrator rhetoric scan; "
+            "missing=[('secret_path', 'cannot', 'secret_id')], extra=[]"
+        )
+        self.assertEqual(
+            n5_scan_code, "N5_AUTHENTICATED_GROUP_COVERAGE_MISMATCH"
+        )
+        n5_scan_prompt = m.render_fresh_schema_retry_prompt(
+            "ORIGINAL RESTRICTED PACKET", n5_scan_code, 1,
+        )
+        self.assertIn(
+            "every authenticated full_phrase_groups record", n5_scan_prompt
+        )
+        self.assertIn("exactly once in N5.statements", n5_scan_prompt)
+        self.assertIn(
+            "Shared group ids or digests do not merge", n5_scan_prompt
+        )
+        self.assertNotIn("secret_path", n5_scan_prompt)
+        self.assertNotIn("secret_id", n5_scan_prompt)
         for n7_error in (
             "N7.argument is not evidenced at its N1 execution path",
             "N7.resolution is not evidenced at resolution_evidence_path",

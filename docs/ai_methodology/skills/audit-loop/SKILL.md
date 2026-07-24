@@ -209,14 +209,18 @@ default session is:
 2. Launch the panel-aware top-level drainer:
 
    ```bash
+   AUDIT_WORKER_ID=<unique-coordinator-id> \
    python3 docs/audit/scripts/orchestrate_audit_loop.py --max-workers 4
    ```
 
-   This command owns the complete control loop: finish pending judicial work,
-   drain configured development lanes in order, immediately panel every fresh
-   cross-seat disagreement, resume the same lane after the panel lands, repeat
-   until a full pass lands nothing new, then run one forensic canary. Raise
-   toward 6 workers only in a quiet pool per the budget below. The supervisor
+   This command owns the complete control loop: drain authenticated targeted
+   dispatch and cascade re-audit sources, finish pending judicial work, drain
+   configured development lanes in order, drain every other eligible
+   development row, immediately panel every fresh cross-seat disagreement,
+   resume after the panel lands, then advance the forensic source one
+   validated row at a time. Every landed forensic result returns through the
+   development phases because it may unblock dependencies. Raise toward 6
+   workers only in a quiet pool per the budget below. The supervisor
    holds the clone-wide audit lock for the complete campaign and hands that
    lock to its batch/panel children. It runs the panel sweep after every batch
    termination before propagating any unrelated hard batch failure, so a mixed
@@ -224,16 +228,24 @@ default session is:
    Keep the printed campaign artifact directory. It is the durable operational
    record for schema, compute, blocked-reentry, and safely rolled-back
    transaction exclusions; it does not carry scientific authority.
-   A bounded JSON/schema rejection from the final canary is also claim-local:
+   A bounded JSON/schema rejection from a forensic row is also claim-local:
    the supervisor preserves the complete `forensic-canary-*.jsonl` run log,
-   appends a strict `schema_invalid_quarantined` record, reports that the
-   canary did not land, and exits the campaign successfully at its
-   non-excluded fixed point. Unknown execution failures and apply,
+   appends a strict `schema_invalid_quarantined` record, reports that the row
+   did not land, and advances to the next non-excluded forensic row. Unknown
+   execution failures and apply,
    propagation, or push failures still fail closed.
 3. If the user names a lane, pass `--lane <name>`. Otherwise the orchestrator
    iterates lanes from `docs/audit/data/lane_certification_config.json`,
    selecting entries whose generated `lane_certification.json` record still
    has blocking rows.
+
+When multiple employees or Codex accounts participate, read and follow
+[`references/distributed-drain.md`](references/distributed-drain.md). There is
+one coordinator; every other independent clone runs
+`--development-helper --worker-id <globally-unique-id>`. A helper's exit is
+local information, never global completion. The concurrent-wave coordinator
+uses `--skip-forensic-canary`; after every helper quiesces, one fresh
+coordinator-only campaign runs without that flag and owns final completion.
 
 Do not detach `orchestrate_audit_batch.py` as the whole `/audit-loop`
 campaign. A batch is one inner development-tier step and intentionally yields
@@ -355,11 +367,13 @@ stop only at a genuine backlog fixed point, credit exhaustion, or a verified
 global integrity/tooling blocker. A goal cannot repair a nonzero pipeline or
 supervisor exit by itself.
 
-## Scaling: The One Canonical Fan-Out
+## Scaling: Canonical Fan-Out And Distributed Helpers
 
-There is exactly one sanctioned way to parallelize this lane — the
-repo-native batch drainer, invoked directly for a scoped inner step or by the
-top-level panel-aware orchestrator for the default backlog drain:
+There is exactly one sanctioned audit machinery: the repo-native batch
+drainer, invoked directly for a scoped inner step or by the top-level
+panel-aware orchestrator. Across independent employee clones, use only the
+top-level coordinator/helper contract in
+[`references/distributed-drain.md`](references/distributed-drain.md):
 
 ```bash
 python3 docs/audit/scripts/orchestrate_audit_batch.py \
@@ -383,6 +397,13 @@ python3 docs/audit/scripts/orchestrate_audit_batch.py \
   generated-surface transactions; push-race retry replays the whole pair from
   refreshed `origin/main`. Never add a second committer against the same
   checkout; parallelism lives in the auditor seats only.
+- **Cross-clone seats are optimistic, not authority-racing.** A stable unique
+  worker id rotates each criticality tier while retaining the complete target
+  set, so helpers start in different places without creating abandoned
+  shards. Immediately before apply, the drainer refreshes `origin/main` and
+  binds the delivery to the claim, dependencies, source bytes, and any
+  dispatch/cascade entry that selected it. Remote movement supersedes the
+  stale delivery without applying or quarantining it.
 - **Concurrency budget (shared codex pool).** Auditor seats, review-loop
   reviewers, and judicial panels all draw on one pool. Keep the TOTAL
   concurrent codex processes across every lane at or under ~8-10, and
@@ -394,8 +415,8 @@ python3 docs/audit/scripts/orchestrate_audit_batch.py \
   non-batch-auditable claim types, and forensic-shaped sources at selection;
   do not force them in via `--claims`.
 
-**Forensic tier scales by canary, not by fan-out.** Run exactly ONE
-forensic-tier row at a time until an N1-N8 packet has landed end-to-end
+**Forensic tier scales serially, not by fan-out.** Run exactly ONE
+forensic-tier row at a time until its N1-N8 packet has landed end-to-end
 through validation and apply; record every validator rejection verbatim
 (they are repair evidence for the packet/validator path, not noise). Only
 after a canary lands may the forensic lane run more than one seat, and never
@@ -409,8 +430,9 @@ rejects require one exact N3/N5 disposition for every authenticated
 `full_phrase_groups` record on every applicable manifest path; records that
 share a group id or digest are still distinct when their phrase/path tuple is
 distinct. If that bounded budget still ends in malformed JSON or a validator
-reject, quarantine the row for the campaign and continue to the fixed-point
-exit. That is not a landed canary and does not authorize forensic fan-out.
+reject, quarantine only that row for the campaign and continue to the next
+ready forensic row. That is not a landed canary and does not authorize
+forensic fan-out.
 
 **Seat-blocked judicial rows are reseated, never frozen and never retried
 as recorded.** A disagreement whose recorded seats lack invocation-bound
@@ -433,13 +455,15 @@ failure exits nonzero.
 
 **Parallel coexistence with review-loop.** The audit lane and review-loop
 sessions may run at the same time by design; the rules that keep concurrent
-landings cheap are: (1) exactly ONE audit-lane orchestrator per clone —
+landings cheap are: (1) exactly ONE audit-lane orchestrator per clone and
+exactly ONE coordinator globally — other independent clones use named
+development-helper mode —
 the drainer and the panel orchestrator enforce this with a machine-local
 exclusive lock keyed to the clone's git common directory, so every worktree
 of that clone shares one lock, and a second instance exits with guidance
-(parallelism belongs in the seats inside the one instance; an INDEPENDENT
-clone has its own lock, and cross-clone coordination stays with this
-contract and the concurrency budget, not the lock); (2) audit
+(an INDEPENDENT clone has its own lock, and cross-clone coordination stays
+with the coordinator/helper contract, remote-state preconditions, and the
+concurrency budget, not the lock); (2) audit
 commits are the expensive racers (they ship regenerated audit surfaces and
 a push race replays the pipeline), review landings are cheap racers
 (cherry-pick retries in seconds) — so the audit lane never waits for
@@ -571,7 +595,7 @@ Repair and re-entry are reason-specific:
 
 | Operational result | Required repair | Re-entry |
 | --- | --- | --- |
-| `schema_invalid_quarantined` | Preserve the malformed response, exact validator errors, and any `forensic-canary-*.jsonl` artifact; correct the CLI transport schema, prompt, or bounded packet-completion defect. A failed final canary must enter this route and finish the campaign at its non-excluded fixed point rather than becoming a global schema stop. Never edit the scientific judgment into validity. | Start a new campaign so a fresh restricted-context seat is selected. Reusing the old workdir keeps the claim excluded. |
+| `schema_invalid_quarantined` | Preserve the malformed response, exact validator errors, and any `forensic-canary-*.jsonl` artifact; correct the CLI transport schema, prompt, or bounded packet-completion defect. A failed forensic row enters this route while the coordinator advances through the remaining non-excluded backlog. Never edit the scientific judgment into validity. | Start a new campaign so a fresh restricted-context seat is selected. Reusing the old workdir keeps the claim excluded. |
 | `compute_required_quarantined` / `compute_required` | Produce a SHA-pinned runner cache with `cached_runner_output.py`, a sliced deterministic certificate, or an independent derivation; then run the full pipeline and strict lint. | Start a new campaign after the artifact is current. |
 | `blocked_row_reentry_quarantined` | Repair the recorded classifier promotion, dependency/status cycle, note-hash drift, or other invalidation cause. Require one converged full pipeline. | Start a new campaign only after the row no longer immediately returns to the same dep-ready state. |
 | `claim_transaction_quarantined` | Fix the recorded apply, pipeline, or lint defect and prove the clean full pipeline converges. The failed delivery minted no verdict. | Use a fresh seat in a new campaign unless canonical tooling verifies an exact preserved-envelope replay against the current source/seat fingerprint. |
@@ -755,9 +779,10 @@ PY
 ### Dispatch Queue
 
 `docs/audit/data/audit_dispatch_queue.json` carries provenance and
-promotion re-audit targets, processed only when explicitly selected
-by the user or surfaced by an external dispatcher — not automatically
-pulled by the default selection above.
+promotion re-audit targets. The top-level coordinator authenticates and
+drains ready entries before cascade and regular development work; a
+development helper does not. A manual single-claim run processes this source
+when explicitly selected by the user or surfaced by an external dispatcher.
 
 **Same-status confirmation rule:** if a fresh-context re-audit on a
 dispatch target confirms the same `{claim_type, audit_status,

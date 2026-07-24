@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Drain routine development-tier audit rows with parallel fresh auditors.
 
-Each round selects dependency-ready unaudited rows from an explicit claim set
-or a configured lane closure, renders the canonical restricted packet, starts
-detached GPT-5.6-sol/xhigh auditors, and then applies deliveries serially:
+Each round selects dependency-ready unaudited rows from an explicit claim set,
+a configured lane closure, the global ledger, or an authenticated dispatch /
+cascade re-audit source; renders the canonical restricted packet; starts
+detached GPT-5.6-sol/xhigh auditors; and then applies deliveries serially:
 
     apply -> pipeline -> strict lint -> diff/scope check -> commit -> push
 
@@ -56,7 +57,7 @@ AUDITABLE_TYPES = {"positive_theorem", "bounded_theorem", "open_gate"}
 SUCCESS_RESULTS = {
     "audited_clean", "audited_renaming", "audited_conditional",
     "audited_decoration", "audited_numerical_match", "audited_failed",
-    "compute_required",
+    "compute_required", "remote_state_superseded",
 }
 _COMMAND_CONTEXT = threading.local()
 
@@ -90,6 +91,7 @@ CAMPAIGN_EXCLUSION_REASONS = {
     SCHEMA_QUARANTINE_RESULT,
     *CAMPAIGN_EXCLUSION_RESULTS,
 }
+REMOTE_STATE_SUPERSEDED_RESULT = "remote_state_superseded"
 SELECTION_SKIP_REASONS = {
     "missing_ledger_row",
     "effective_status_not_actionable",
@@ -100,6 +102,8 @@ SELECTION_SKIP_REASONS = {
     "dependencies_not_retained",
     "note_hash_drift",
     "awaiting_science_repair",
+    "audit_role_not_actionable",
+    "weak_dispatch_independence",
     "unclassified_selector_skip",
 }
 SCIENCE_FIX_RESULTS = {"science_fix_dispatched", "science_fix_dispatch_failed"}
@@ -430,6 +434,7 @@ def compute_targets(
     scope: set[str],
     rows: dict[str, dict],
     retarget: frozenset[str] = frozenset(),
+    worker_id: str = "",
 ) -> tuple[list[dict], list[str]]:
     effective = {cid: row.get("effective_status", "?") for cid, row in rows.items()}
     targets: list[dict] = []
@@ -486,7 +491,126 @@ def compute_targets(
             )
             continue
         targets.append(row)
+    if worker_id:
+        targets = rotate_priority_tiers(targets, worker_id)
     return targets, skipped
+
+
+def source_queue_rows(source: str, rows: dict[str, dict]) -> list[dict]:
+    """Load one authenticated alternate selection stream."""
+    if source == "dispatch":
+        return audit_runner.load_dispatch_targets(rows, ready_only=True)
+    if source == "reaudit":
+        return audit_runner.load_reaudit_candidates()
+    raise ValueError(f"unknown alternate audit source {source!r}")
+
+
+def source_row_fingerprint(row: dict) -> str:
+    return hashlib.sha256(
+        json.dumps(row, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    ).hexdigest()
+
+
+def compute_alternate_targets(
+    source: str,
+    rows: dict[str, dict],
+    worker_id: str = "",
+) -> tuple[list[dict], list[str]]:
+    """Select dispatch/cascade work without weakening their producer contract."""
+    targets: list[dict] = []
+    skipped: list[str] = []
+    for source_row in source_queue_rows(source, rows):
+        cid = str(source_row.get("claim_id") or "")
+        current = rows.get(cid)
+        if not cid or not isinstance(current, dict):
+            skipped.append(f"{cid or '<missing>'}: missing ledger row")
+            continue
+        role, independence = audit_runner.determine_audit_role(
+            current,
+            AUDITOR_FAMILY,
+            is_reaudit_candidate=True,
+            is_dispatch_target=(source == "dispatch"),
+        )
+        if role == "skip":
+            skipped.append(f"{cid}: audit role is not actionable: {independence}")
+            continue
+        if independence == "weak":
+            skipped.append(
+                f"{cid}: dispatch has weak independence; repair provenance "
+                "before a promotion-capable audit"
+            )
+            continue
+        if source_requires_forensic(current):
+            skipped.append(f"{cid}: source shape requires forensic tier")
+            continue
+        if note_hash_drifted(current):
+            skipped.append(
+                f"{cid}: ledger note_hash lags the note file; run "
+                "seed_audit_ledger.py + pipeline and commit before auditing"
+            )
+            continue
+        row = dict(current)
+        for field in (
+            "allowed_context_paths",
+            "dispatch_target",
+            "dispatch_question",
+            "queue_reason",
+            "ready",
+            "ready_blocker",
+            "source_json_path",
+            "source_schema",
+        ):
+            if field in source_row:
+                row[field] = source_row[field]
+        if role == "second":
+            audit_passes = [2]
+        elif role == "first" and row.get("criticality") == "critical":
+            audit_passes = [1, 2]
+        else:
+            audit_passes = [1]
+        row["_audit_passes"] = audit_passes
+        row["_audit_independence"] = independence
+        row["_selection_source"] = source
+        row["_source_fingerprint"] = source_row_fingerprint(source_row)
+        targets.append(row)
+    if worker_id:
+        targets = rotate_priority_tiers(targets, worker_id)
+    return targets, skipped
+
+
+CRITICALITY_PRIORITY = {
+    "critical": 0,
+    "high": 1,
+    "medium": 2,
+    "leaf": 3,
+}
+
+
+def rotate_priority_tiers(targets: list[dict], worker_id: str) -> list[dict]:
+    """Give independent clones distinct starts without creating abandoned shards.
+
+    Every worker retains the complete eligible set, so an employee leaving
+    does not strand a shard. Within each criticality tier, a stable
+    worker-specific rotation spreads initial seats across the backlog. Remote
+    apply preconditions remain the final duplicate-work guard.
+    """
+    ordered: list[dict] = []
+    for tier in range(5):
+        group = [
+            row
+            for row in targets
+            if CRITICALITY_PRIORITY.get(
+                str(row.get("criticality") or ""), 4
+            ) == tier
+        ]
+        if not group:
+            continue
+        digest = hashlib.sha256(
+            f"audit-worker-v1:{worker_id}:{tier}".encode("utf-8")
+        ).digest()
+        offset = int.from_bytes(digest[:8], "big") % len(group)
+        ordered.extend(group[offset:] + group[:offset])
+    return ordered
 
 
 def artifact_key(cid: str) -> str:
@@ -496,6 +620,9 @@ def artifact_key(cid: str) -> str:
 
 
 def seat_independence(row: dict, pass_no: int) -> str:
+    planned = row.get("_audit_independence")
+    if isinstance(planned, str) and planned:
+        return planned
     if pass_no == 2:
         return "fresh_context"
     author_family = row.get("author_family")
@@ -509,10 +636,66 @@ def seat_independence(row: dict, pass_no: int) -> str:
 
 
 def passes_for_row(row: dict) -> list[int]:
+    planned = row.get("_audit_passes")
+    if (
+        isinstance(planned, list)
+        and planned
+        and all(pass_no in {1, 2} for pass_no in planned)
+    ):
+        return list(planned)
     cross_status = (row.get("cross_confirmation") or {}).get("status")
     if row.get("audit_status") == "audit_in_progress" and cross_status == "awaiting_second":
         return [2]
     return [1, 2] if row.get("criticality") == "critical" else [1]
+
+
+def selection_fingerprint(row: dict, rows: dict[str, dict]) -> str:
+    """Bind a launched seat to the claim/dependency state it actually saw."""
+    source_hashes: dict[str, str] = {}
+    for path in filter(
+        None,
+        (
+            row.get("note_path"),
+            row.get("runner_path"),
+            *(row.get("helper_runner_paths") or []),
+        ),
+    ):
+        source = REPO_ROOT / str(path)
+        try:
+            source_hashes[str(path)] = hashlib.sha256(source.read_bytes()).hexdigest()
+        except OSError:
+            source_hashes[str(path)] = "<missing>"
+    dependency_state = {
+        dep: {
+            "claim_type": (rows.get(dep) or {}).get("claim_type"),
+            "claim_scope": (rows.get(dep) or {}).get("claim_scope"),
+            "effective_status": (rows.get(dep) or {}).get("effective_status"),
+            "note_hash": (rows.get(dep) or {}).get("note_hash"),
+        }
+        for dep in row.get("deps") or []
+    }
+    payload = {
+        "claim_id": row.get("claim_id"),
+        "audit_status": row.get("audit_status"),
+        "cross_confirmation_status": (
+            (row.get("cross_confirmation") or {}).get("status")
+        ),
+        "effective_status": row.get("effective_status"),
+        "note_hash": row.get("note_hash"),
+        "claim_type": row.get("claim_type"),
+        "claim_scope": row.get("claim_scope"),
+        "deps": row.get("deps") or [],
+        "audit_invocation_id": row.get("audit_invocation_id"),
+        "audit_invocation_history_count": len(
+            row.get("audit_invocation_history") or []
+        ),
+        "previous_audits_count": len(row.get("previous_audits") or []),
+        "source_hashes": source_hashes,
+        "dependency_state": dependency_state,
+    }
+    return hashlib.sha256(
+        json.dumps(payload, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    ).hexdigest()
 
 
 def prompt_has_clipped_evidence(manifest: dict[str, dict]) -> list[str]:
@@ -625,6 +808,9 @@ def launch_worker(
         "isolated": isolated,
         "evidence_manifest": evidence_manifest,
         "invocation_id": invocation_id,
+        "selection_fingerprint": selection_fingerprint(row, rows),
+        "selection_source": row.get("_selection_source"),
+        "source_fingerprint": row.get("_source_fingerprint"),
         "transport_bound": None,
         "auditor": f"codex-audit-batch-{ident}",
         "independence": seat_independence(row, pass_no),
@@ -1606,6 +1792,83 @@ def apply_claim_serialized(
         if not synced:
             return False, [{"cid": cid, "result": "sync_blocked", "detail": detail}]
 
+        if all(job.get("selection_fingerprint") for job, _envelope in ordered):
+            current_rows = load_rows()
+            current_row = current_rows.get(cid)
+            if not isinstance(current_row, dict):
+                return True, [{
+                    "cid": cid,
+                    "result": REMOTE_STATE_SUPERSEDED_RESULT,
+                    "detail": (
+                        "claim disappeared from the canonical ledger while its "
+                        "seat was running; no stale delivery was applied"
+                    ),
+                }]
+            current_fingerprint = selection_fingerprint(current_row, current_rows)
+            launched_fingerprints = {
+                str(job["selection_fingerprint"])
+                for job, _envelope in ordered
+            }
+            if launched_fingerprints != {current_fingerprint}:
+                return True, [{
+                    "cid": cid,
+                    "result": REMOTE_STATE_SUPERSEDED_RESULT,
+                    "detail": (
+                        "claim, dependency, or source state changed on "
+                        "origin/main while the restricted seat was running; "
+                        "discard the stale delivery and let a fresh round "
+                        "reselect current state"
+                    ),
+                }]
+            launched_sources = {
+                str(job.get("selection_source"))
+                for job, _envelope in ordered
+                if job.get("selection_source")
+            }
+            if launched_sources:
+                if len(launched_sources) != 1:
+                    return False, [{
+                        "cid": cid,
+                        "result": "sync_blocked",
+                        "detail": "claim transaction mixed alternate sources",
+                    }]
+                source = next(iter(launched_sources))
+                try:
+                    current_source_rows = source_queue_rows(
+                        source,
+                        current_rows,
+                    )
+                except (OSError, ValueError, json.JSONDecodeError) as exc:
+                    return False, [{
+                        "cid": cid,
+                        "result": "sync_blocked",
+                        "detail": (
+                            f"cannot authenticate current {source} source: {exc}"
+                        ),
+                    }]
+                current_source_fingerprints = {
+                    str(row.get("claim_id")): source_row_fingerprint(row)
+                    for row in current_source_rows
+                }
+                launched_source_fingerprints = {
+                    str(job.get("source_fingerprint"))
+                    for job, _envelope in ordered
+                }
+                if (
+                    current_source_fingerprints.get(cid)
+                    not in launched_source_fingerprints
+                    or len(launched_source_fingerprints) != 1
+                ):
+                    return True, [{
+                        "cid": cid,
+                        "result": REMOTE_STATE_SUPERSEDED_RESULT,
+                        "detail": (
+                            f"{source} selection changed on origin/main while "
+                            "the restricted seat was running; no stale "
+                            "delivery was applied"
+                        ),
+                    }]
+
         for job, envelope in ordered:
             applied, apply_detail = audit_runner.apply_one(
                 envelope["audit"],
@@ -2090,6 +2353,13 @@ def selection_skip_reason(detail: str) -> str:
         "awaiting repair (sources and deps unchanged since audited_conditional)"
     ):
         return "awaiting_science_repair"
+    if detail.startswith("audit role is not actionable: "):
+        return "audit_role_not_actionable"
+    if detail == (
+        "dispatch has weak independence; repair provenance before a "
+        "promotion-capable audit"
+    ):
+        return "weak_dispatch_independence"
     return "unclassified_selector_skip"
 
 
@@ -2368,12 +2638,27 @@ def blocked_row_reentries(
     for selected in selected_rows:
         cid = selected["claim_id"]
         row = current_rows.get(cid) or {}
-        if cid not in applied or row.get("audit_status") != "unaudited":
+        if cid not in applied:
             continue
-        targets, _ = compute_targets({cid}, current_rows)
-        if not any(target.get("claim_id") == cid for target in targets):
-            continue
-        reason = _latest_invalidation_reason(row)
+        source = selected.get("_selection_source")
+        if source:
+            try:
+                source_ids = {
+                    source_row.get("claim_id")
+                    for source_row in source_queue_rows(str(source), current_rows)
+                }
+            except (OSError, ValueError, json.JSONDecodeError):
+                source_ids = set()
+            if cid not in source_ids:
+                continue
+            reason = f"{source}_selection_still_live_after_applied_verdict"
+        else:
+            if row.get("audit_status") != "unaudited":
+                continue
+            targets, _ = compute_targets({cid}, current_rows)
+            if not any(target.get("claim_id") == cid for target in targets):
+                continue
+            reason = _latest_invalidation_reason(row)
         reentries[cid] = reason
         report.append(
             {
@@ -2618,7 +2903,13 @@ def scope_for_args(args: argparse.Namespace, rows: dict[str, dict]) -> set[str]:
         for root in roots:
             scope.update(lane_closure(root, rows))
         return scope
-    return {claim.strip() for claim in args.claims.split(",") if claim.strip()}
+    if getattr(args, "all", False):
+        return set(rows)
+    return {
+        claim.strip()
+        for claim in (getattr(args, "claims", "") or "").split(",")
+        if claim.strip()
+    }
 
 
 def main() -> int:
@@ -2635,6 +2926,29 @@ def main() -> int:
     scope_group = parser.add_mutually_exclusive_group(required=True)
     scope_group.add_argument("--lane", help="lane name from lane_certification_config.json")
     scope_group.add_argument("--claims", help="comma-separated claim ids")
+    scope_group.add_argument(
+        "--all",
+        action="store_true",
+        help="drain every eligible development-tier row in the current ledger",
+    )
+    scope_group.add_argument(
+        "--from-dispatch",
+        action="store_true",
+        help="drain ready authenticated targeted dispatch entries",
+    )
+    scope_group.add_argument(
+        "--from-reaudit-candidates",
+        action="store_true",
+        help="drain dependency-strengthened and runner-drift re-audit entries",
+    )
+    parser.add_argument(
+        "--worker-id",
+        default=os.environ.get("AUDIT_WORKER_ID", ""),
+        help=(
+            "stable employee/account identifier used to rotate target order "
+            "within each criticality tier across independent clones"
+        ),
+    )
     parser.add_argument(
         "--retarget-conditionals",
         action="store_true",
@@ -2743,8 +3057,23 @@ def main() -> int:
     for round_no in range(1, args.rounds + 1):
         rows = load_rows()
         try:
-            scope = scope_for_args(args, rows)
-        except ValueError as exc:
+            alternate_source = (
+                "dispatch"
+                if args.from_dispatch
+                else "reaudit" if args.from_reaudit_candidates else None
+            )
+            if alternate_source:
+                targets, skipped = compute_alternate_targets(
+                    alternate_source,
+                    rows,
+                    worker_id=args.worker_id,
+                )
+                scope = {row["claim_id"] for row in targets}
+            else:
+                scope = scope_for_args(args, rows)
+                targets = []
+                skipped = []
+        except (OSError, ValueError, json.JSONDecodeError) as exc:
             print(str(exc))
             return finish(2)
         existing_disagreements = sorted(
@@ -2758,7 +3087,19 @@ def main() -> int:
                 report.append({"cid": cid, "result": "judicial_panel_required"})
                 session_skipped.add(cid)
         scope.difference_update(session_skipped)
-        targets, skipped = compute_targets(scope, rows, retarget=retarget)
+        if alternate_source:
+            targets = [
+                row
+                for row in targets
+                if row["claim_id"] not in session_skipped
+            ]
+        else:
+            targets, skipped = compute_targets(
+                scope,
+                rows,
+                retarget=retarget,
+                worker_id=args.worker_id,
+            )
         print(f"== round {round_no}: {len(targets)} dep-ready targets, {len(skipped)} skipped")
         PROGRESS["round_targets"] = len(targets)
         maybe_progress_summary(force=(round_no == 1))

@@ -1,29 +1,74 @@
 {
-  "audit_date": null,
+  "audit_date": "2026-07-24T00:50:34.635013+00:00",
   "audit_invocation_history": [
     "cb65336138204e2da10ba1642f99d0c0",
-    "3d755d72d27143b497f148dad8668128"
+    "3d755d72d27143b497f148dad8668128",
+    "36b5dc18531a4a209fcfb83e136f4db5"
   ],
-  "audit_invocation_id": "3d755d72d27143b497f148dad8668128",
-  "audit_state_snapshot": null,
-  "audit_status": "audit_in_progress",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
-  "blocker": "cross_confirmation_disagreement",
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "audit_invocation_id": "36b5dc18531a4a209fcfb83e136f4db5",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 16,
+        "B": 0,
+        "C": 6,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true,
+      "runner_path": "scripts/frontier_unit_singlet_overlap_narrow.py"
+    },
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 12.355,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_unit_singlet_overlap_narrow.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "66a3b013720d6b2d04c38d657aa03041d07e3abbf3f4e1258f8485272b85a092",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "66a3b013720d6b2d04c38d657aa03041d07e3abbf3f4e1258f8485272b85a092",
+    "runner_path": "scripts/frontier_unit_singlet_overlap_narrow.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 925
+  },
+  "audit_status": "audited_failed",
+  "auditor": "codex-judicial-2-20260724-d8da6a20",
+  "auditor_confidence": "judicial",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "Five-judge panel majority (3/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The scoped positive matrix theorem is algebraically correct and class A: commutation forces H=cI_n, while positivity and Hilbert\u2013Schmidt normalization force c=1/\u221an. However, the artifact also asserts derived weakened-hypothesis boundaries. The supplied live stdout covers only normal mode and does not provide the alternative-route, five-resolution, partial-closure, steelman, and cross-cycle evidence required for a clean verdict on those assertions.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260724-d182a5ea\", \"judge\": 1, \"rationale\": \"The matrix theorem and basis-expectation consequence close by exact finite-dimensional algebra. However, the note also asserts derived boundaries under omitted positivity, centrality, or Hilbert\\u2013Schmidt normalization, and the restricted packet lacks the live, complete N1\\u2013N8 evidence required for an audited_clean artifact containing those assertions.\", \"tuple\": [\"hybrid\", \"audited_failed\", \"positive_theorem\", \"For n\\u22651, every positive semidefinite H\\u2208End(C^n) commuting with all matrix units and satisfying Tr(H\\u2020H)=1 equals I_n/\\u221an, every standard-basis diagonal expectation equals 1/\\u221an, and the stated weakened-hypothesis counterexamples establish the claimed necessity boundaries.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-2-20260724-d8da6a20\", \"judge\": 2, \"rationale\": \"The scoped positive matrix theorem is algebraically correct and class A: commutation forces H=cI_n, while positivity and Hilbert\\u2013Schmidt normalization force c=1/\\u221an. However, the artifact also asserts derived weakened-hypothesis boundaries. The supplied live stdout covers only normal mode and does not provide the alternative-route, five-resolution, partial-closure, steelman, and cross-cycle evidence required for a clean verdict on those assertions.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For n\\u22651, every positive semidefinite H\\u2208End(C^n) commuting with all matrix units and satisfying Tr(H\\u2020H)=1 equals I_n/\\u221an.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260724-c076f586\", \"judge\": 3, \"rationale\": \"The positive matrix theorem is algebraically sound, but the artifact also asserts derived negative boundaries concerning removal of positivity or centrality and substitution of the Hilbert\\u2013Schmidt normalization. Those assertions require N1\\u2013N8 certification for an audited-clean verdict, while the restricted live stdout contains only normal mode and lacks the required route and rhetoric-resolution evidence. The second auditor\\u2019s conservative non-clean tuple is therefore correct.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For n\\u22651, every positive semidefinite H\\u2208End(C^n) commuting with all matrix units and satisfying Tr(H\\u2020H)=1 equals I_n/\\u221an.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260724-639babe0\", \"judge\": 4, \"rationale\": \"The central positive Hilbert\\u2013Schmidt theorem is an exact class-A argument. However, the note also derives negative boundaries when positivity, centrality, or Hilbert\\u2013Schmidt normalization is weakened; the supplied live stdout covers only normal mode and cannot satisfy the required N1\\u2013N8 stress-test evidence for an audited_clean artifact verdict.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For n\\u22651, every positive semidefinite H\\u2208End(C^n) commuting with all matrix units and satisfying Tr(H\\u2020H)=1 equals I_n/\\u221an.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-5-20260724-e8a7d99e\", \"judge\": 5, \"rationale\": \"The packet proves the full scoped positive theorem by exact entrywise algebra: centrality gives H=cI_n, positivity selects c\\u22650, Hilbert\\u2013Schmidt normalization gives c=1/\\u221an, and the diagonal expectations follow immediately, including n=1. The source-shape trigger is false; the weakened-hypothesis examples establish necessity, while the physical-language passages expressly delimit scope rather than assert a framework no-go.\", \"tuple\": [\"first\", \"audited_clean\", \"positive_theorem\", \"For n\\u22651, every positive semidefinite H\\u2208End(C^n) commuting with all matrix units and satisfying Tr(H\\u2020H)=1 equals I_n/\\u221an, and every standard-basis diagonal expectation equals 1/\\u221an.\", \"A\", null, []]}]",
   "claim_id": "unit_singlet_overlap_narrow_theorem_note_2026-05-02",
-  "claim_scope": "For n\u22651, every positive semidefinite H\u2208End(C^n) commuting with all matrix units and satisfying Tr(H\u2020H)=1 equals I_n/\u221an, and every standard-basis diagonal expectation equals 1/\u221an.",
+  "claim_scope": "For n\u22651, every positive semidefinite H\u2208End(C^n) commuting with all matrix units and satisfying Tr(H\u2020H)=1 equals I_n/\u221an.",
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": "2026-07-24T00:43:06.860217+00:00",
-  "claim_type_provenance": "audited_pending_cross_confirmation",
+  "claim_type_last_reviewed": "2026-07-24T00:50:34.635013+00:00",
+  "claim_type_provenance": "judicial_review",
   "criticality": "critical",
   "cross_confirmation": {
+    "agreement_schema": "audit_tuple_v2",
     "first_audit": {
       "audit_date": "2026-07-24T00:43:06.860217+00:00",
       "audit_invocation_id": "cb65336138204e2da10ba1642f99d0c0",
@@ -52,6 +97,166 @@
       "verdict": "audited_clean",
       "verdict_rationale": "The proof is self-contained: evaluating [H,E_jj] kills every off-diagonal entry, and [H,E_jk] equates all diagonal entries. An independent manual check confirms the commutator signs, the n=1 edge case, the positive branch, n|c|\u00b2=1, the basis expectations, and the trace-norm contrast; the runner performs 27 matching exact checks without imported premises or comparator data. The note keeps the result strictly within abstract matrix algebra and makes no physical identification."
     },
+    "judicial_panel_record_v1": {
+      "cid": "unit_singlet_overlap_narrow_theorem_note_2026-05-02",
+      "disagreement_fingerprint": {
+        "claim_id": "unit_singlet_overlap_narrow_theorem_note_2026-05-02",
+        "first_audit_invocation_id": "cb65336138204e2da10ba1642f99d0c0",
+        "note_hash": "6b5ece3665070c4c9ceffb7be3c7f9b8715241f5b288b4a0a38c17c42ff55b1d",
+        "schema": "judicial_disagreement_fingerprint_v1",
+        "seat_summaries_sha256": "62b94f2fdfa920297e81def5ce46e344ce35cb9128b04ce159ed030f31eb1b85",
+        "second_audit_invocation_id": "3d755d72d27143b497f148dad8668128"
+      },
+      "failures": [],
+      "invocation_id": "36b5dc18531a4a209fcfb83e136f4db5",
+      "majority_count": 3,
+      "panel": 1,
+      "result": "majority_candidate",
+      "schema": "judicial_panel_record_v1",
+      "tally": [
+        {
+          "count": 3,
+          "tuple": [
+            "second",
+            "audited_failed",
+            "positive_theorem",
+            "For n\u22651, every positive semidefinite H\u2208End(C^n) commuting with all matrix units and satisfying Tr(H\u2020H)=1 equals I_n/\u221an.",
+            "A",
+            null,
+            [
+              "derived_no_go_boundary"
+            ]
+          ]
+        },
+        {
+          "count": 1,
+          "tuple": [
+            "hybrid",
+            "audited_failed",
+            "positive_theorem",
+            "For n\u22651, every positive semidefinite H\u2208End(C^n) commuting with all matrix units and satisfying Tr(H\u2020H)=1 equals I_n/\u221an, every standard-basis diagonal expectation equals 1/\u221an, and the stated weakened-hypothesis counterexamples establish the claimed necessity boundaries.",
+            "A",
+            null,
+            [
+              "derived_no_go_boundary"
+            ]
+          ]
+        },
+        {
+          "count": 1,
+          "tuple": [
+            "first",
+            "audited_clean",
+            "positive_theorem",
+            "For n\u22651, every positive semidefinite H\u2208End(C^n) commuting with all matrix units and satisfying Tr(H\u2020H)=1 equals I_n/\u221an, and every standard-basis diagonal expectation equals 1/\u221an.",
+            "A",
+            null,
+            []
+          ]
+        }
+      ],
+      "votes": [
+        {
+          "auditor": "codex-judicial-1-20260724-d182a5ea",
+          "first_auditor_error": "The first auditor incorrectly declared no negative assertions: the weakened-hypothesis counterexamples assert derived no-go boundaries, so audited_clean requires a complete passing N1\u2013N8 packet.",
+          "hybrid_resolution_note": "This hybrid retains the second auditor's failed verdict while correcting the audited scope to include T2 and the explicit necessity boundaries; the failure concerns artifact-level audit certification, not the validity of the core algebraic proof.",
+          "judge": 1,
+          "judgment_rationale": "The matrix theorem and basis-expectation consequence close by exact finite-dimensional algebra. However, the note also asserts derived boundaries under omitted positivity, centrality, or Hilbert\u2013Schmidt normalization, and the restricted packet lacks the live, complete N1\u2013N8 evidence required for an audited_clean artifact containing those assertions.",
+          "negative_assertion_classes": [
+            "derived_no_go_boundary"
+          ],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "Capture completed hostile and independent stdout, provide five distinct live route classes and all five N5 resolution checks, and fully disposition the supplied N6 and N8 candidates before re-audit.",
+          "ratified_claim_scope": "For n\u22651, every positive semidefinite H\u2208End(C^n) commuting with all matrix units and satisfying Tr(H\u2020H)=1 equals I_n/\u221an, every standard-basis diagonal expectation equals 1/\u221an, and the stated weakened-hypothesis counterexamples establish the claimed necessity boundaries.",
+          "ratified_claim_type": "positive_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "Commutation with all matrix units forces H=cI_n; positivity and Tr(H\u2020H)=1 force c=1/\u221an, while the explicit alternative branches and projectors establish the stated necessity boundaries.",
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_failed",
+          "second_auditor_error": "The second auditor correctly identified the certification failure but omitted the basis-expectation conclusion and the negative necessity boundaries from its claim scope, while describing the proven algebraic chain itself as non-closing.",
+          "sided_with": "hybrid"
+        },
+        {
+          "auditor": "codex-judicial-2-20260724-d8da6a20",
+          "first_auditor_error": "It declared no negative assertion class and ratified audited_clean despite the note\u2019s explicit derived boundaries for omitted positivity, omitted centrality, and substituted trace normalization, none of which has the required live N1\u2013N8 certification in this packet.",
+          "hybrid_resolution_note": null,
+          "judge": 2,
+          "judgment_rationale": "The scoped positive matrix theorem is algebraically correct and class A: commutation forces H=cI_n, while positivity and Hilbert\u2013Schmidt normalization force c=1/\u221an. However, the artifact also asserts derived weakened-hypothesis boundaries. The supplied live stdout covers only normal mode and does not provide the alternative-route, five-resolution, partial-closure, steelman, and cross-cycle evidence required for a clean verdict on those assertions.",
+          "negative_assertion_classes": [
+            "derived_no_go_boundary"
+          ],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "Capture completed hostile and independent mode stdout, add five distinct live alternative-route classes and all five N5 resolution checks, disposition the supplied N6 and N8 candidates, and re-audit.",
+          "ratified_claim_scope": "For n\u22651, every positive semidefinite H\u2208End(C^n) commuting with all matrix units and satisfying Tr(H\u2020H)=1 equals I_n/\u221an.",
+          "ratified_claim_type": "positive_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "Commutation with every off-diagonal matrix unit implies d_j=d_k for every pair, so H=cI_n; positivity and Tr(H\u2020H)=1 then give c=1/\u221an.",
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_failed",
+          "second_auditor_error": "none",
+          "sided_with": "second"
+        },
+        {
+          "auditor": "codex-judicial-3-20260724-c076f586",
+          "first_auditor_error": "It classified the weakened-hypothesis counterexamples as non-assertive caveats and left negative_assertion_classes empty. They are artifact-level derived_no_go_boundary assertions, so audited_clean with null no_go_discipline is unsupported.",
+          "hybrid_resolution_note": null,
+          "judge": 3,
+          "judgment_rationale": "The positive matrix theorem is algebraically sound, but the artifact also asserts derived negative boundaries concerning removal of positivity or centrality and substitution of the Hilbert\u2013Schmidt normalization. Those assertions require N1\u2013N8 certification for an audited-clean verdict, while the restricted live stdout contains only normal mode and lacks the required route and rhetoric-resolution evidence. The second auditor\u2019s conservative non-clean tuple is therefore correct.",
+          "negative_assertion_classes": [
+            "derived_no_go_boundary"
+          ],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "Capture completed hostile and independent mode stdout, add five distinct live alternative-route classes and all five N5 resolution checks, disposition the supplied N6 and N8 candidates, and re-audit.",
+          "ratified_claim_scope": "For n\u22651, every positive semidefinite H\u2208End(C^n) commuting with all matrix units and satisfying Tr(H\u2020H)=1 equals I_n/\u221an.",
+          "ratified_claim_type": "positive_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "Commutation with every off-diagonal matrix unit implies d_j=d_k for every pair, so H=cI_n; positivity and Tr(H\u2020H)=1 then give c=1/\u221an.",
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_failed",
+          "second_auditor_error": "none",
+          "sided_with": "second"
+        },
+        {
+          "auditor": "codex-judicial-4-20260724-639babe0",
+          "first_auditor_error": "It classified the note\u2019s explicit weakened-hypothesis counterexamples as carrying no negative assertion and ratified audited_clean without the required N1\u2013N8 evidence packet for those derived negative boundaries.",
+          "hybrid_resolution_note": null,
+          "judge": 4,
+          "judgment_rationale": "The central positive Hilbert\u2013Schmidt theorem is an exact class-A argument. However, the note also derives negative boundaries when positivity, centrality, or Hilbert\u2013Schmidt normalization is weakened; the supplied live stdout covers only normal mode and cannot satisfy the required N1\u2013N8 stress-test evidence for an audited_clean artifact verdict.",
+          "negative_assertion_classes": [
+            "derived_no_go_boundary"
+          ],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "Capture completed hostile and independent mode stdout, add five distinct live alternative-route classes and all five N5 resolution checks, disposition the supplied N6 and N8 candidates, and re-audit.",
+          "ratified_claim_scope": "For n\u22651, every positive semidefinite H\u2208End(C^n) commuting with all matrix units and satisfying Tr(H\u2020H)=1 equals I_n/\u221an.",
+          "ratified_claim_type": "positive_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "Commutation with every off-diagonal matrix unit implies d_j=d_k for every pair, so H=cI_n; positivity and Tr(H\u2020H)=1 then give c=1/\u221an.",
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_failed",
+          "second_auditor_error": "none",
+          "sided_with": "second"
+        },
+        {
+          "auditor": "codex-judicial-5-20260724-e8a7d99e",
+          "first_auditor_error": "none",
+          "hybrid_resolution_note": null,
+          "judge": 5,
+          "judgment_rationale": "The packet proves the full scoped positive theorem by exact entrywise algebra: centrality gives H=cI_n, positivity selects c\u22650, Hilbert\u2013Schmidt normalization gives c=1/\u221an, and the diagonal expectations follow immediately, including n=1. The source-shape trigger is false; the weakened-hypothesis examples establish necessity, while the physical-language passages expressly delimit scope rather than assert a framework no-go.",
+          "negative_assertion_classes": [],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": null,
+          "ratified_claim_scope": "For n\u22651, every positive semidefinite H\u2208End(C^n) commuting with all matrix units and satisfying Tr(H\u2020H)=1 equals I_n/\u221an, and every standard-basis diagonal expectation equals 1/\u221an.",
+          "ratified_claim_type": "positive_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "Commutation with all matrix units forces H=cI_n; positivity and Tr(H\u2020H)=1 then force c=1/\u221an.",
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_clean",
+          "second_auditor_error": "The second auditor misclassified exact hypothesis-necessity counterexamples and explicit physical-scope disclaimers as a derived no-go boundary, thereby imposing N1\u2013N8 on a positive abstract matrix theorem whose orchestrated source-shape gate is false and whose stated conclusions close completely.",
+          "sided_with": "first"
+        }
+      ]
+    },
+    "mode": "judicial_panel_majority",
     "second_audit": {
       "audit_date": "2026-07-24T00:43:06.873402+00:00",
       "audit_invocation_id": "3d755d72d27143b497f148dad8668128",
@@ -82,24 +287,47 @@
       "verdict": "audited_failed",
       "verdict_rationale": "The scoped positive theorem is mathematically correct: centrality forces H=cI_n, positivity selects the nonnegative branch, and Hilbert\u2013Schmidt normalization fixes c=1/\u221an. N1 lacks five distinct live route classes, while N2\u2019s positivity, centrality, and norm-substitution boundaries lack captured hostile-mode evidence. N3\u2019s boundary, convention, normalization, sector, and canonical occurrences are non-load-bearing, N4 has no prior residual witness, and N5 lacks the required five-resolution live tests; the indexed N6 candidates are not fully dispositioned. N7 therefore has no independently evidenced steelman resolution, and N8\u2019s authenticated 437-row universe is not completely addressed, forcing a conservative non-clean verdict."
     },
-    "status": "disagreement"
+    "status": "third_confirmed_second",
+    "third_audit": {
+      "audit_date": "2026-07-24T00:50:34.635013+00:00",
+      "audit_invocation_id": "36b5dc18531a4a209fcfb83e136f4db5",
+      "auditor": "codex-judicial-2-20260724-d8da6a20",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "claim_scope": "For n\u22651, every positive semidefinite H\u2208End(C^n) commuting with all matrix units and satisfying Tr(H\u2020H)=1 equals I_n/\u221an.",
+      "claim_type": "positive_theorem",
+      "first_auditor_error": "It declared no negative assertion class and ratified audited_clean despite the note\u2019s explicit derived boundaries for omitted positivity, omitted centrality, and substituted trace normalization, none of which has the required live N1\u2013N8 certification in this packet.",
+      "independence": "judicial_review",
+      "judgment_rationale": "Five-judge panel majority (3/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The scoped positive matrix theorem is algebraically correct and class A: commutation forces H=cI_n, while positivity and Hilbert\u2013Schmidt normalization force c=1/\u221an. However, the artifact also asserts derived weakened-hypothesis boundaries. The supplied live stdout covers only normal mode and does not provide the alternative-route, five-resolution, partial-closure, steelman, and cross-cycle evidence required for a clean verdict on those assertions.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260724-d182a5ea\", \"judge\": 1, \"rationale\": \"The matrix theorem and basis-expectation consequence close by exact finite-dimensional algebra. However, the note also asserts derived boundaries under omitted positivity, centrality, or Hilbert\\u2013Schmidt normalization, and the restricted packet lacks the live, complete N1\\u2013N8 evidence required for an audited_clean artifact containing those assertions.\", \"tuple\": [\"hybrid\", \"audited_failed\", \"positive_theorem\", \"For n\\u22651, every positive semidefinite H\\u2208End(C^n) commuting with all matrix units and satisfying Tr(H\\u2020H)=1 equals I_n/\\u221an, every standard-basis diagonal expectation equals 1/\\u221an, and the stated weakened-hypothesis counterexamples establish the claimed necessity boundaries.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-2-20260724-d8da6a20\", \"judge\": 2, \"rationale\": \"The scoped positive matrix theorem is algebraically correct and class A: commutation forces H=cI_n, while positivity and Hilbert\\u2013Schmidt normalization force c=1/\\u221an. However, the artifact also asserts derived weakened-hypothesis boundaries. The supplied live stdout covers only normal mode and does not provide the alternative-route, five-resolution, partial-closure, steelman, and cross-cycle evidence required for a clean verdict on those assertions.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For n\\u22651, every positive semidefinite H\\u2208End(C^n) commuting with all matrix units and satisfying Tr(H\\u2020H)=1 equals I_n/\\u221an.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260724-c076f586\", \"judge\": 3, \"rationale\": \"The positive matrix theorem is algebraically sound, but the artifact also asserts derived negative boundaries concerning removal of positivity or centrality and substitution of the Hilbert\\u2013Schmidt normalization. Those assertions require N1\\u2013N8 certification for an audited-clean verdict, while the restricted live stdout contains only normal mode and lacks the required route and rhetoric-resolution evidence. The second auditor\\u2019s conservative non-clean tuple is therefore correct.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For n\\u22651, every positive semidefinite H\\u2208End(C^n) commuting with all matrix units and satisfying Tr(H\\u2020H)=1 equals I_n/\\u221an.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260724-639babe0\", \"judge\": 4, \"rationale\": \"The central positive Hilbert\\u2013Schmidt theorem is an exact class-A argument. However, the note also derives negative boundaries when positivity, centrality, or Hilbert\\u2013Schmidt normalization is weakened; the supplied live stdout covers only normal mode and cannot satisfy the required N1\\u2013N8 stress-test evidence for an audited_clean artifact verdict.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For n\\u22651, every positive semidefinite H\\u2208End(C^n) commuting with all matrix units and satisfying Tr(H\\u2020H)=1 equals I_n/\\u221an.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-5-20260724-e8a7d99e\", \"judge\": 5, \"rationale\": \"The packet proves the full scoped positive theorem by exact entrywise algebra: centrality gives H=cI_n, positivity selects c\\u22650, Hilbert\\u2013Schmidt normalization gives c=1/\\u221an, and the diagonal expectations follow immediately, including n=1. The source-shape trigger is false; the weakened-hypothesis examples establish necessity, while the physical-language passages expressly delimit scope rather than assert a framework no-go.\", \"tuple\": [\"first\", \"audited_clean\", \"positive_theorem\", \"For n\\u22651, every positive semidefinite H\\u2208End(C^n) commuting with all matrix units and satisfying Tr(H\\u2020H)=1 equals I_n/\\u221an, and every standard-basis diagonal expectation equals 1/\\u221an.\", \"A\", null, []]}]",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "second_auditor_error": "none",
+      "sided_with": "second",
+      "verdict": "audited_failed"
+    }
   },
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 5,
-  "effective_status": "audit_in_progress",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_failed",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "audit_in_progress",
+  "independence": "judicial_review",
+  "intrinsic_status": "audited_failed",
   "load_bearing_score": 12.355,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Commutation with every off-diagonal matrix unit implies d_j=d_k for every pair, so H=cI_n; positivity and Tr(H\u2020H)=1 then give c=1/\u221an.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "derived_no_go_boundary"
+  ],
   "note_hash": "6b5ece3665070c4c9ceffb7be3c7f9b8715241f5b288b4a0a38c17c42ff55b1d",
   "note_path": "docs/UNIT_SINGLET_OVERLAP_NARROW_THEOREM_NOTE_2026-05-02.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Capture completed hostile and independent mode stdout, add five distinct live alternative-route classes and all five N5 resolution checks, disposition the supplied N6 and N8 candidates, and re-audit.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -1835,5 +2063,5 @@
   "runner_path": "scripts/frontier_unit_singlet_overlap_narrow.py",
   "title": "Central Positive Hilbert--Schmidt Unit Uniqueness Theorem",
   "transitive_descendants": 925,
-  "verdict_rationale": null
+  "verdict_rationale": "Five-judge panel majority (3/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The scoped positive matrix theorem is algebraically correct and class A: commutation forces H=cI_n, while positivity and Hilbert\u2013Schmidt normalization force c=1/\u221an. However, the artifact also asserts derived weakened-hypothesis boundaries. The supplied live stdout covers only normal mode and does not provide the alternative-route, five-resolution, partial-closure, steelman, and cross-cycle evidence required for a clean verdict on those assertions.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260724-d182a5ea\", \"judge\": 1, \"rationale\": \"The matrix theorem and basis-expectation consequence close by exact finite-dimensional algebra. However, the note also asserts derived boundaries under omitted positivity, centrality, or Hilbert\\u2013Schmidt normalization, and the restricted packet lacks the live, complete N1\\u2013N8 evidence required for an audited_clean artifact containing those assertions.\", \"tuple\": [\"hybrid\", \"audited_failed\", \"positive_theorem\", \"For n\\u22651, every positive semidefinite H\\u2208End(C^n) commuting with all matrix units and satisfying Tr(H\\u2020H)=1 equals I_n/\\u221an, every standard-basis diagonal expectation equals 1/\\u221an, and the stated weakened-hypothesis counterexamples establish the claimed necessity boundaries.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-2-20260724-d8da6a20\", \"judge\": 2, \"rationale\": \"The scoped positive matrix theorem is algebraically correct and class A: commutation forces H=cI_n, while positivity and Hilbert\\u2013Schmidt normalization force c=1/\\u221an. However, the artifact also asserts derived weakened-hypothesis boundaries. The supplied live stdout covers only normal mode and does not provide the alternative-route, five-resolution, partial-closure, steelman, and cross-cycle evidence required for a clean verdict on those assertions.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For n\\u22651, every positive semidefinite H\\u2208End(C^n) commuting with all matrix units and satisfying Tr(H\\u2020H)=1 equals I_n/\\u221an.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260724-c076f586\", \"judge\": 3, \"rationale\": \"The positive matrix theorem is algebraically sound, but the artifact also asserts derived negative boundaries concerning removal of positivity or centrality and substitution of the Hilbert\\u2013Schmidt normalization. Those assertions require N1\\u2013N8 certification for an audited-clean verdict, while the restricted live stdout contains only normal mode and lacks the required route and rhetoric-resolution evidence. The second auditor\\u2019s conservative non-clean tuple is therefore correct.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For n\\u22651, every positive semidefinite H\\u2208End(C^n) commuting with all matrix units and satisfying Tr(H\\u2020H)=1 equals I_n/\\u221an.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260724-639babe0\", \"judge\": 4, \"rationale\": \"The central positive Hilbert\\u2013Schmidt theorem is an exact class-A argument. However, the note also derives negative boundaries when positivity, centrality, or Hilbert\\u2013Schmidt normalization is weakened; the supplied live stdout covers only normal mode and cannot satisfy the required N1\\u2013N8 stress-test evidence for an audited_clean artifact verdict.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For n\\u22651, every positive semidefinite H\\u2208End(C^n) commuting with all matrix units and satisfying Tr(H\\u2020H)=1 equals I_n/\\u221an.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-5-20260724-e8a7d99e\", \"judge\": 5, \"rationale\": \"The packet proves the full scoped positive theorem by exact entrywise algebra: centrality gives H=cI_n, positivity selects c\\u22650, Hilbert\\u2013Schmidt normalization gives c=1/\\u221an, and the diagonal expectations follow immediately, including n=1. The source-shape trigger is false; the weakened-hypothesis examples establish necessity, while the physical-language passages expressly delimit scope rather than assert a framework no-go.\", \"tuple\": [\"first\", \"audited_clean\", \"positive_theorem\", \"For n\\u22651, every positive semidefinite H\\u2208End(C^n) commuting with all matrix units and satisfying Tr(H\\u2020H)=1 equals I_n/\\u221an, and every standard-basis diagonal expectation equals 1/\\u221an.\", \"A\", null, []]}]"
 }

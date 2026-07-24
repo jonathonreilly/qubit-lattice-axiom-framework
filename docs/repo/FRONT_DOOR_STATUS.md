@@ -32,7 +32,7 @@ Owner-approval history for axioms and primitives:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3854 |
-| Applied audit verdicts | 539 |
+| Applied audit verdicts | 540 |
 | Retained-grade rows, including boxed decorations | 428 |
 | Retained positive theorems | 94 |
 | Retained no-go rows | 0 |
@@ -87,10 +87,10 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 | medium | `unaudited` | 129 |
 | critical | `audited_conditional` | 16 |
 | ? | `unresolved` | 4 |
-| critical | `audit_in_progress` | 2 |
+| critical | `audited_failed` | 2 |
 | critical | `audited_renaming` | 2 |
 | high | `audited_conditional` | 2 |
-| critical | `audited_failed` | 1 |
+| critical | `audit_in_progress` | 1 |
 | critical | `audited_numerical_match` | 1 |
 | critical | `retained_pending_chain` | 1 |
 | high | `audited_failed` | 1 |
@@ -105,7 +105,7 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 | Manifest pending removals | 0 |
 | Unmanifested candidates (need pending entries) | 0 |
 | Admitted ids absent from lane candidates | 19 |
-| Live conditional/failed rows that would park | 22 |
+| Live conditional/failed rows that would park | 23 |
 | Live rows fail-open (legacy/unversioned snapshot) | 42 |
 | Lane rows already in actual ready top-10 | 3 |
 | Lane rows added since prior pass | 0 |

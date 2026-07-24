@@ -17,7 +17,7 @@ file per claim), summarized in
 | Metric | Value |
 |---|---:|
 | Retained positive rows | 94 |
-| Retained bounded rows | 314 |
+| Retained bounded rows | 315 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 18 |
 
@@ -120,7 +120,7 @@ Sorted by load-bearing graph score (descending).
 - [`replay_environment_note`](../../docs/REPLAY_ENVIRONMENT_NOTE.md) — score 0.000; audited 2026-05-01T23:28:33.389906+00:00
 - [`staggered_graph_portability_stress_note`](../../docs/STAGGERED_GRAPH_PORTABILITY_STRESS_NOTE.md) — score 0.000; audited 2026-05-05T11:44:13.477263+00:00
 
-## Retained bounded rows (314)
+## Retained bounded rows (315)
 
 Sorted by load-bearing graph score (descending).
 
@@ -130,6 +130,7 @@ Sorted by load-bearing graph score (descending).
 - [`gauge_vacuum_plaquette_reduction_existence_theorem_note`](../../docs/GAUGE_VACUUM_PLAQUETTE_REDUCTION_EXISTENCE_THEOREM_NOTE.md) — score 18.919; audited 2026-07-22T17:50:03.273685+00:00
 - [`dm_leptogenesis_pmns_projector_interface_note_2026-04-16`](../../docs/DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md) — score 18.572; audited 2026-07-21T18:21:47.783638+00:00
 - [`spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10`](../../docs/SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md) — score 15.782; audited 2026-07-18T01:07:50.223817+00:00
+- [`rp_p2_gauge_extension_and_realization_residual_note_2026-05-28`](../../docs/RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md) — score 15.690; audited 2026-07-23T23:57:13.115858+00:00
 - [`gate_b_grown_distance_law_note`](../../docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md) — score 15.619; audited 2026-05-05T00:56:01.672707+00:00
 - [`pl_topology_infrastructure_textbook_import_note_2026-05-17`](../../docs/PL_TOPOLOGY_INFRASTRUCTURE_TEXTBOOK_IMPORT_NOTE_2026-05-17.md) — score 15.262; audited 2026-05-26T19:25:11.724360+00:00
 - [`plaquette_v1_picard_fuchs_ode_note_2026-05-05`](../../docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md) — score 15.135; audited 2026-06-08T18:55:20.964216+00:00

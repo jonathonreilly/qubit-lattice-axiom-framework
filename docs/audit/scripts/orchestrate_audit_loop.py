@@ -378,9 +378,12 @@ def drain_lane(lane: str, args: argparse.Namespace) -> tuple[int, bool]:
             return 0, made_progress
 
 
-def first_ready_forensic_claim() -> str | None:
+def first_ready_forensic_claim(
+    excluded_claim_ids: set[str] | None = None,
+) -> str | None:
     if not QUEUE.exists():
         return None
+    excluded = excluded_claim_ids or set()
     rows = json.loads(QUEUE.read_text(encoding="utf-8")).get("queue", [])
     for row in rows:
         if (
@@ -389,16 +392,145 @@ def first_ready_forensic_claim() -> str | None:
             and batch.source_requires_forensic(row)
         ):
             claim_id = row.get("claim_id")
-            if isinstance(claim_id, str) and claim_id:
+            if (
+                isinstance(claim_id, str)
+                and claim_id
+                and claim_id not in excluded
+            ):
                 return claim_id
     return None
 
 
+def forensic_canary_terminal_record(
+    run_log: Path,
+    claim_id: str,
+) -> dict | None:
+    """Return the last target-scoped terminal record from one canary log."""
+    if not run_log.is_file():
+        return None
+    records: list[dict] = []
+    for line_number, line in enumerate(
+        run_log.read_text(encoding="utf-8").splitlines(),
+        start=1,
+    ):
+        if not line.strip():
+            raise ValueError(f"{run_log}:{line_number}: blank canary log record")
+        try:
+            record = json.loads(line)
+        except json.JSONDecodeError as exc:
+            raise ValueError(
+                f"{run_log}:{line_number}: invalid canary log JSON: {exc.msg}"
+            ) from exc
+        if not isinstance(record, dict):
+            raise ValueError(
+                f"{run_log}:{line_number}: canary log record is not an object"
+            )
+        if record.get("claim_id") in {None, claim_id}:
+            records.append(record)
+
+    terminal_phases = {
+        "applied",
+        "apply_failed",
+        "applied_propagation_failed",
+        "push_failed",
+        "codex_failed",
+        "extract_failed",
+        "json_parse_failed",
+        "validate_failed",
+        "compute_required",
+        "skip_no_runner_log",
+        "skip_prompt_transport",
+        "skip_role",
+        "weak_clean_unratifiable",
+        "dry-run",
+    }
+    return next(
+        (
+            record
+            for record in reversed(records)
+            if record.get("phase") in terminal_phases
+        ),
+        None,
+    )
+
+
+def forensic_canary_claim_local_failure(
+    terminal: dict | None,
+    claim_id: str,
+    run_log: Path,
+) -> tuple[str, dict, int] | None:
+    """Classify typed claim-local no-verdict outcomes and their expected exit.
+
+    Unknown execution, apply, propagation, and push failures remain hard. A
+    malformed or schema-invalid packet minted no verdict and is safe to
+    quarantine for this campaign. Missing runner evidence is compute work, not
+    negative science.
+    """
+    if terminal is None:
+        return None
+    phase = terminal["phase"]
+    if phase == "validate_failed":
+        detail = str(terminal.get("error") or "").strip()
+        if not detail or detail.startswith(
+            (
+                "fresh schema retry codex exec failed:",
+                "validation repair codex exec failed:",
+            )
+        ):
+            return None
+        return batch.SCHEMA_QUARANTINE_RESULT, {
+            "cid": claim_id,
+            "pass": 1,
+            "result": "validation_failed",
+            "detail": f"{detail}; preserved_run_log={run_log.name}",
+        }, 1
+    if phase == "json_parse_failed":
+        return batch.SCHEMA_QUARANTINE_RESULT, {
+            "cid": claim_id,
+            "pass": 1,
+            "result": "malformed_json",
+        }, 1
+    if phase == "skip_prompt_transport":
+        detail = str(
+            terminal.get("reason")
+            or "forensic canary prompt exceeded the bounded transport"
+        ).strip()
+        return batch.SCHEMA_QUARANTINE_RESULT, {
+            "cid": claim_id,
+            "pass": 1,
+            "result": "validation_failed",
+            "detail": f"{detail}; preserved_run_log={run_log.name}",
+        }, 0
+    if phase in {"compute_required", "skip_no_runner_log"}:
+        detail = str(
+            terminal.get("reason")
+            or terminal.get("runner_path")
+            or "forensic canary requires a current runner artifact"
+        ).strip()
+        return batch.COMPUTE_QUARANTINE_RESULT, {
+            "cid": claim_id,
+            "pass": 1,
+            "result": "compute_required",
+            "detail": detail,
+        }, 0
+    return None
+
+
 def run_forensic_canary(args: argparse.Namespace) -> int:
-    claim_id = first_ready_forensic_claim()
+    try:
+        excluded = batch.load_campaign_quarantine(
+            args.campaign_quarantine_file
+        )
+    except (OSError, ValueError) as exc:
+        emit(f"invalid campaign state before forensic canary: {exc}")
+        return 2
+    claim_id = first_ready_forensic_claim(excluded)
     if not claim_id:
         emit("no ready forensic-tier row available for the forensic canary")
         return 0
+    run_log = args.campaign_workdir / (
+        f"forensic-canary-{batch.artifact_key(claim_id)}.jsonl"
+    )
     command = [
         sys.executable,
         str(FORENSIC),
@@ -413,13 +545,74 @@ def run_forensic_canary(args: argparse.Namespace) -> int:
         "--validation-repair-attempts",
         "1",
         "--fresh-schema-retry-attempts",
-        "2",
+        "3",
+        "--run-log-path",
+        str(run_log),
     ]
     if args.dry_run:
         command.append("--dry-run")
     env = dict(os.environ)
     env["AUDIT_FORENSIC_MODE"] = "1"
-    return run_command(f"forensic-canary-{claim_id}", command, env=env)
+    rc = run_command(f"forensic-canary-{claim_id}", command, env=env)
+    try:
+        terminal = forensic_canary_terminal_record(run_log, claim_id)
+    except (OSError, ValueError) as exc:
+        emit(f"invalid forensic canary artifact; refusing quarantine: {exc}")
+        return 2
+    claim_local = forensic_canary_claim_local_failure(
+        terminal,
+        claim_id,
+        run_log,
+    )
+    if claim_local is None:
+        if rc != 0:
+            return rc
+        terminal_phase = terminal.get("phase") if terminal else None
+        if terminal_phase == "applied" or (
+            args.dry_run and terminal_phase == "dry-run"
+        ):
+            return 0
+        emit(
+            "forensic canary returned success without an applied verdict, "
+            "typed quarantine, or dry-run terminal record; failing closed: "
+            f"claim={claim_id} terminal={terminal_phase or 'missing'}"
+        )
+        return 2
+
+    reason, failure, expected_rc = claim_local
+    if rc != expected_rc:
+        emit(
+            "forensic canary terminal/exit mismatch; refusing claim-local "
+            f"quarantine: claim={claim_id} terminal={terminal['phase']} "
+            f"expected_exit={expected_rc} actual_exit={rc}"
+        )
+        return rc if rc != 0 else 2
+    if reason == batch.SCHEMA_QUARANTINE_RESULT:
+        batch.persist_campaign_quarantine(
+            args.campaign_quarantine_file,
+            {claim_id},
+            [failure],
+        )
+    elif reason == batch.COMPUTE_QUARANTINE_RESULT:
+        batch.persist_compute_required_skips(
+            args.campaign_quarantine_file,
+            {claim_id},
+            [failure],
+        )
+    else:
+        emit(f"unsupported forensic canary quarantine reason: {reason}")
+        return 2
+    try:
+        batch.load_campaign_exclusion_records(args.campaign_quarantine_file)
+    except (OSError, ValueError) as exc:
+        emit(f"forensic canary quarantine did not validate: {exc}")
+        return 2
+    PROGRESS["canary_state"] = f"quarantined:{reason}:{claim_id}"
+    emit(
+        "forensic canary minted no verdict and was quarantined claim-locally: "
+        f"claim={claim_id} reason={reason} artifact={run_log}"
+    )
+    return 0
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -487,6 +680,7 @@ def main(argv: list[str] | None = None) -> int:
     args.campaign_selection_skip_file = (
         campaign_dir / "campaign-selector-skips.jsonl"
     )
+    args.campaign_workdir = campaign_dir
     PROGRESS["quarantine_file"] = args.campaign_quarantine_file
     emit(f"campaign artifacts: {campaign_dir}")
     try:

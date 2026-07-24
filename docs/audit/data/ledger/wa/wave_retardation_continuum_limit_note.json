@@ -1,10 +1,11 @@
 {
-  "audit_date": "2026-07-24T00:46:19.729609+00:00",
+  "audit_date": "2026-07-24T00:58:33.328187+00:00",
   "audit_invocation_history": [
     "0d7c5f8fcf7144e592999c2cb86e4152",
-    "188bce9509b24ff88f0bd557c62a99d7"
+    "188bce9509b24ff88f0bd557c62a99d7",
+    "1726b3b083a04d9e8fa6961bfc01f7a7"
   ],
-  "audit_invocation_id": "188bce9509b24ff88f0bd557c62a99d7",
+  "audit_invocation_id": "1726b3b083a04d9e8fa6961bfc01f7a7",
   "audit_state_snapshot": {
     "artifact_classifier_state": {
       "assert_count": 0,
@@ -49,24 +50,25 @@
     "schema": "blocker_fingerprint_v1",
     "transitive_descendants": 734
   },
-  "audit_status": "audit_in_progress",
-  "auditor": "codex-audit-batch-A-20260724-6b183f21",
-  "auditor_confidence": "high",
+  "audit_status": "audited_failed",
+  "auditor": "codex-judicial-1-20260724-957c6e9c",
+  "auditor_confidence": "judicial",
   "auditor_family": "codex-gpt-5.6",
   "auditor_model": "gpt-5.6-sol",
   "auditor_reasoning_effort": "xhigh",
-  "blocker": "cross_confirmation_disagreement",
+  "blocker": null,
   "chain_closes": false,
-  "chain_closure_explanation": "The printed finite-run arithmetic is largely reproducible, but the physical refinement chain does not close: multiplying the unscaled spatial Laplacian by H\u00b2 changes the Courant number when each layer is assigned physical duration H. Three such points also cannot establish continuum convergence or attribute the instability uniquely to the comparators.",
+  "chain_closure_explanation": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The first position captures the full audited claim, including its explicit comparator-dominance attribution. The runner\u2019s laplacian_yz function returns an unscaled second difference, while solve_wave multiplies that difference by H\u00b2 even though each layer is assigned physical duration H. The three H rows therefore evolve different effective wave operators, so neither dM continuum stability nor unique attribution of the gap instability to the comparators follows. The finite-run tables do not close the claimed continuum interpretation.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260724-957c6e9c\", \"judge\": 1, \"rationale\": \"The first position captures the full audited claim, including its explicit comparator-dominance attribution. The runner\\u2019s laplacian_yz function returns an unscaled second difference, while solve_wave multiplies that difference by H\\u00b2 even though each layer is assigned physical duration H. The three H rows therefore evolve different effective wave operators, so neither dM continuum stability nor unique attribution of the gap instability to the comparators follows. The finite-run tables do not close the claimed continuum interpretation.\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"Three-point 2+1D H-refinement claim that cached-static, equilibrated-static, and imposed-Newton retardation gaps are non-converged while dM is comparatively continuum-stable and the instability is comparator-dominated.\", \"C\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\", \"stretch_attempt_negative\"]]}, {\"auditor\": \"codex-judicial-2-20260724-7af6323c\", \"judge\": 2, \"rationale\": \"The runner performs a genuine numerical computation, so class C is appropriate, but it does not implement a controlled refinement of one fixed physical wave equation. laplacian_yz returns an unscaled nearest-neighbor difference while solve_wave multiplies that difference by H\\u00b2; with both spatial and layer-time spacing identified as H, this changes the effective Courant number and propagation speed across the sweep. The three rows therefore cannot establish continuum stability of dM or a continuum failure attributable specifically to the comparators. The non-nested random DAG realizations, abse\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"Three-point 2+1D H-refinement claim that cached-static, equilibrated-static, and imposed-Newton retardation gaps are non-converged while dM is comparatively continuum-stable and the instability is comparator-dominated.\", \"C\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\", \"stretch_attempt_negative\"]]}, {\"auditor\": \"codex-judicial-3-20260724-b72ca7d5\", \"judge\": 3, \"rationale\": \"The first position captures the full audited claim and correctly assigns class C because the runner genuinely computes the contested quantities rather than printing imported constants. The chain nevertheless fails: laplacian_yz returns an unscaled spatial second difference, while solve_wave multiplies it by H\\u00b2 even though spatial and temporal steps are both H, so the effective Courant factor and propagation speed change across the refinement. Consequently the three-point outputs cannot establish dM continuum stability or uniquely comparator-dominated nonconvergence.\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"Three-point 2+1D H-refinement claim that cached-static, equilibrated-static, and imposed-Newton retardation gaps are non-converged while dM is comparatively continuum-stable and the instability is comparator-dominated.\", \"C\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\", \"stretch_attempt_negative\"]]}, {\"auditor\": \"codex-judicial-4-20260724-8dd4c252\", \"judge\": 4, \"rationale\": \"The runner genuinely computes the finite-H quantities, so class C is appropriate, but its continuum inference fails. With physical time and spatial steps both identified with H, laplacian_yz returns an unscaled second difference and solve_wave multiplies it by H\\u00b2, causing the effective propagation speed to vary with H rather than refining one fixed wave equation. The non-nested random geometries, unasserted tables, undamped \\u201cequilibration,\\u201d and signed-formula versus absolute-value implementation further prevent the three points from establishing dM continuum stability or uniquely comparator-do\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"Three-point 2+1D H-refinement claim that cached-static, equilibrated-static, and imposed-Newton retardation gaps are non-converged while dM is comparatively continuum-stable and the instability is comparator-dominated.\", \"C\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\", \"stretch_attempt_negative\"]]}, {\"auditor\": \"codex-judicial-5-20260724-20c98bfd\", \"judge\": 5, \"rationale\": \"The first position captures the full audited claim and the decisive defect. The runner reproduces the finite-H arithmetic, but solve_wave applies H\\u00b2 to an unscaled nearest-neighbor Laplacian while treating NL\\u00b7H as physical time, so the sweep changes the effective wave propagation rather than refining one fixed physical equation. Three non-nested finite-H runs therefore cannot establish continuum stability of dM or uniquely attribute the gap instability to comparator construction. The absence of runner assertions and an exact discrete-static comparator further prevents closure.\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"Three-point 2+1D H-refinement claim that cached-static, equilibrated-static, and imposed-Newton retardation gaps are non-converged while dM is comparatively continuum-stable and the instability is comparator-dominated.\", \"C\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\", \"stretch_attempt_negative\"]]}]",
   "claim_id": "wave_retardation_continuum_limit_note",
   "claim_scope": "Three-point 2+1D H-refinement claim that cached-static, equilibrated-static, and imposed-Newton retardation gaps are non-converged while dM is comparatively continuum-stable and the instability is comparator-dominated.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": "2026-07-24T00:46:19.729609+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": "2026-07-24T00:58:33.328187+00:00",
+  "claim_type_provenance": "judicial_review",
   "criticality": "critical",
   "cross_confirmation": {
+    "agreement_schema": "audit_tuple_v2",
     "first_audit": {
       "audit_date": "2026-07-24T00:46:19.729609+00:00",
       "audit_invocation_id": "0d7c5f8fcf7144e592999c2cb86e4152",
@@ -100,7 +102,160 @@
       "verdict": "audited_failed",
       "verdict_rationale": "Issue: the purported fixed-physics refinement changes the wave operator with H, calls late slices of an undamped wave evolution \u201cequilibrated,\u201d computes absolute relative gaps while displaying a signed formula, and contains no assertions for the reported tables; the note also says the runner is unregistered although this packet designates it as primary. Why this blocks: the oscillations can arise from changing propagation speed, non-equilibrating slices, definition drift, boundaries, or non-nested random DAG realizations, so comparator dominance and dM continuum stability do not follow from the three outputs. Repair target: use a dimensionally consistent fixed-Courant discretization, matched source scaling and boundaries, an exact discrete-static comparator, an unambiguous gap formula, and additional refinements with uncertainty control. Claim boundary until fixed: the runner reports the stated three finite-H tables for its coded model but not a physical continuum theorem; N1 leaves fixed-Courant, direct-static, finer-lattice, and alternate-observable routes open, N2 does not establish independence of the operator-scaling, comparator, and boundary walls, N3 exposes load-bearing normalization and boundary assumptions, N4 has no cited residual witness, N5 is not resolution-complete, N6 leaves the direct-static reframe open, N7 leaves the fixed-Courant steelman unresolved, and N8 supplies no applicable retirement mechanism that closes these defects."
     },
-    "mode": "terminal_second_pass",
+    "judicial_panel_record_v1": {
+      "cid": "wave_retardation_continuum_limit_note",
+      "disagreement_fingerprint": {
+        "claim_id": "wave_retardation_continuum_limit_note",
+        "first_audit_invocation_id": "0d7c5f8fcf7144e592999c2cb86e4152",
+        "note_hash": "77c2e6f4621b39ab75fe655470ed56df1546517a71f506176b543ed76e83c975",
+        "schema": "judicial_disagreement_fingerprint_v1",
+        "seat_summaries_sha256": "b97e3657aac7f702d0537899b39874e8b9a424b8c47f97172a9aa0c03a08120e",
+        "second_audit_invocation_id": "188bce9509b24ff88f0bd557c62a99d7"
+      },
+      "failures": [],
+      "invocation_id": "1726b3b083a04d9e8fa6961bfc01f7a7",
+      "majority_count": 5,
+      "panel": 1,
+      "result": "majority_candidate",
+      "schema": "judicial_panel_record_v1",
+      "tally": [
+        {
+          "count": 5,
+          "tuple": [
+            "first",
+            "audited_failed",
+            "bounded_theorem",
+            "Three-point 2+1D H-refinement claim that cached-static, equilibrated-static, and imposed-Newton retardation gaps are non-converged while dM is comparatively continuum-stable and the instability is comparator-dominated.",
+            "C",
+            null,
+            [
+              "bounded_with_named_walls",
+              "conditional_wall_rationale",
+              "derived_no_go_boundary",
+              "stretch_attempt_negative"
+            ]
+          ]
+        }
+      ],
+      "votes": [
+        {
+          "auditor": "codex-judicial-1-20260724-957c6e9c",
+          "first_auditor_error": "none",
+          "hybrid_resolution_note": null,
+          "judge": 1,
+          "judgment_rationale": "The first position captures the full audited claim, including its explicit comparator-dominance attribution. The runner\u2019s laplacian_yz function returns an unscaled second difference, while solve_wave multiplies that difference by H\u00b2 even though each layer is assigned physical duration H. The three H rows therefore evolve different effective wave operators, so neither dM continuum stability nor unique attribution of the gap instability to the comparators follows. The finite-run tables do not close the claimed continuum interpretation.",
+          "negative_assertion_classes": [
+            "bounded_with_named_walls",
+            "conditional_wall_rationale",
+            "derived_no_go_boundary",
+            "stretch_attempt_negative"
+          ],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "runner_artifact_issue: Rebuild the sweep with a fixed Courant number and source normalization, matched boundary conditions, an exact discrete static solve, and an asserted signed-or-absolute gap definition; then add controlled finer refinements and error estimates.",
+          "ratified_claim_scope": "Three-point 2+1D H-refinement claim that cached-static, equilibrated-static, and imposed-Newton retardation gaps are non-converged while dM is comparatively continuum-stable and the instability is comparator-dominated.",
+          "ratified_claim_type": "bounded_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "The non-monotone relative-gap sequences at H = 0.50, 0.35, 0.25 are taken to show that the retardation magnitude lacks a clean continuum limit while the monotone 14% dM drift is continuum-stable.",
+          "ratified_load_bearing_step_class": "C",
+          "ratified_verdict": "audited_failed",
+          "second_auditor_error": "The second position narrows away the source note\u2019s explicit comparator-dominated attribution, so its scope does not cover the full load-bearing claim. It also calls the geometries independently regenerated even though the runner reuses seed 0; the evidenced problem is that the H-dependent realizations are non-nested, not that statistical independence was established.",
+          "sided_with": "first"
+        },
+        {
+          "auditor": "codex-judicial-2-20260724-7af6323c",
+          "first_auditor_error": "none",
+          "hybrid_resolution_note": null,
+          "judge": 2,
+          "judgment_rationale": "The runner performs a genuine numerical computation, so class C is appropriate, but it does not implement a controlled refinement of one fixed physical wave equation. laplacian_yz returns an unscaled nearest-neighbor difference while solve_wave multiplies that difference by H\u00b2; with both spatial and layer-time spacing identified as H, this changes the effective Courant number and propagation speed across the sweep. The three rows therefore cannot establish continuum stability of dM or a continuum failure attributable specifically to the comparators. The non-nested random DAG realizations, absent uncertainty or finer-refinement control, non-equilibrating static-wave slices, boundary and normalization dependence, unsigned code-level gap versus the displayed signed definition, and lack of assertions reinforce the failure. The first position correctly audits the source's full comparator-dominated continuum claim and conservatively ratifies audited_failed.",
+          "negative_assertion_classes": [
+            "bounded_with_named_walls",
+            "conditional_wall_rationale",
+            "derived_no_go_boundary",
+            "stretch_attempt_negative"
+          ],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "runner_artifact_issue: Rebuild the sweep with a fixed Courant number and source normalization, matched boundary conditions, an exact discrete static solve, and an asserted signed-or-absolute gap definition; then add controlled finer refinements and error estimates.",
+          "ratified_claim_scope": "Three-point 2+1D H-refinement claim that cached-static, equilibrated-static, and imposed-Newton retardation gaps are non-converged while dM is comparatively continuum-stable and the instability is comparator-dominated.",
+          "ratified_claim_type": "bounded_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "The non-monotone relative-gap sequences at H = 0.50, 0.35, 0.25 are taken to show that the retardation magnitude lacks a clean continuum limit while the monotone 14% dM drift is continuum-stable.",
+          "ratified_load_bearing_step_class": "C",
+          "ratified_verdict": "audited_failed",
+          "second_auditor_error": "The second position reaches the correct failure verdict but its ratified scope narrows away the source's explicit comparator-dominated attribution and weakens the claimed dM conclusion from continuum-stable to merely comparatively stable, so it does not capture the full load-bearing claim being audited.",
+          "sided_with": "first"
+        },
+        {
+          "auditor": "codex-judicial-3-20260724-b72ca7d5",
+          "first_auditor_error": "none",
+          "hybrid_resolution_note": null,
+          "judge": 3,
+          "judgment_rationale": "The first position captures the full audited claim and correctly assigns class C because the runner genuinely computes the contested quantities rather than printing imported constants. The chain nevertheless fails: laplacian_yz returns an unscaled spatial second difference, while solve_wave multiplies it by H\u00b2 even though spatial and temporal steps are both H, so the effective Courant factor and propagation speed change across the refinement. Consequently the three-point outputs cannot establish dM continuum stability or uniquely comparator-dominated nonconvergence.",
+          "negative_assertion_classes": [
+            "bounded_with_named_walls",
+            "conditional_wall_rationale",
+            "derived_no_go_boundary",
+            "stretch_attempt_negative"
+          ],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "runner_artifact_issue: Rebuild the sweep with a fixed Courant number and source normalization, matched boundary conditions, an exact discrete static solve, and an asserted signed-or-absolute gap definition; then add controlled finer refinements and error estimates.",
+          "ratified_claim_scope": "Three-point 2+1D H-refinement claim that cached-static, equilibrated-static, and imposed-Newton retardation gaps are non-converged while dM is comparatively continuum-stable and the instability is comparator-dominated.",
+          "ratified_claim_type": "bounded_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "The non-monotone relative-gap sequences at H = 0.50, 0.35, 0.25 are taken to show that the retardation magnitude lacks a clean continuum limit while the monotone 14% dM drift is continuum-stable.",
+          "ratified_load_bearing_step_class": "C",
+          "ratified_verdict": "audited_failed",
+          "second_auditor_error": "The second position narrows the scope by omitting the source's load-bearing comparator-dominated attribution and its C=0 runner characterization overlooks that the runner performs genuine numerical computations, even though those computations do not close the physical continuum claim.",
+          "sided_with": "first"
+        },
+        {
+          "auditor": "codex-judicial-4-20260724-8dd4c252",
+          "first_auditor_error": "none",
+          "hybrid_resolution_note": null,
+          "judge": 4,
+          "judgment_rationale": "The runner genuinely computes the finite-H quantities, so class C is appropriate, but its continuum inference fails. With physical time and spatial steps both identified with H, laplacian_yz returns an unscaled second difference and solve_wave multiplies it by H\u00b2, causing the effective propagation speed to vary with H rather than refining one fixed wave equation. The non-nested random geometries, unasserted tables, undamped \u201cequilibration,\u201d and signed-formula versus absolute-value implementation further prevent the three points from establishing dM continuum stability or uniquely comparator-dominated instability.",
+          "negative_assertion_classes": [
+            "bounded_with_named_walls",
+            "conditional_wall_rationale",
+            "derived_no_go_boundary",
+            "stretch_attempt_negative"
+          ],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "runner_artifact_issue: Rebuild the sweep with a fixed Courant number and source normalization, matched boundary conditions, an exact discrete static solve, and an asserted signed-or-absolute gap definition; then add controlled finer refinements and error estimates.",
+          "ratified_claim_scope": "Three-point 2+1D H-refinement claim that cached-static, equilibrated-static, and imposed-Newton retardation gaps are non-converged while dM is comparatively continuum-stable and the instability is comparator-dominated.",
+          "ratified_claim_type": "bounded_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "The non-monotone relative-gap sequences at H = 0.50, 0.35, 0.25 are taken to show that the retardation magnitude lacks a clean continuum limit while the monotone 14% dM drift is continuum-stable.",
+          "ratified_load_bearing_step_class": "C",
+          "ratified_verdict": "audited_failed",
+          "second_auditor_error": "The second position's central scaling diagnosis is correct, but its ratified scope omits the source's explicit comparator-dominated attribution and therefore under-scopes the full claim being audited; it also omits additional packet-visible defects relevant to that attribution.",
+          "sided_with": "first"
+        },
+        {
+          "auditor": "codex-judicial-5-20260724-20c98bfd",
+          "first_auditor_error": "none",
+          "hybrid_resolution_note": null,
+          "judge": 5,
+          "judgment_rationale": "The first position captures the full audited claim and the decisive defect. The runner reproduces the finite-H arithmetic, but solve_wave applies H\u00b2 to an unscaled nearest-neighbor Laplacian while treating NL\u00b7H as physical time, so the sweep changes the effective wave propagation rather than refining one fixed physical equation. Three non-nested finite-H runs therefore cannot establish continuum stability of dM or uniquely attribute the gap instability to comparator construction. The absence of runner assertions and an exact discrete-static comparator further prevents closure.",
+          "negative_assertion_classes": [
+            "bounded_with_named_walls",
+            "conditional_wall_rationale",
+            "derived_no_go_boundary",
+            "stretch_attempt_negative"
+          ],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": null,
+          "ratified_claim_scope": "Three-point 2+1D H-refinement claim that cached-static, equilibrated-static, and imposed-Newton retardation gaps are non-converged while dM is comparatively continuum-stable and the instability is comparator-dominated.",
+          "ratified_claim_type": "bounded_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": null,
+          "ratified_load_bearing_step_class": "C",
+          "ratified_verdict": "audited_failed",
+          "second_auditor_error": "Its claim scope omits the source note's load-bearing comparator-dominated attribution and weakens the explicit claim that dM is continuum-stable to the narrower statement that dM is merely comparatively stable.",
+          "sided_with": "first"
+        }
+      ]
+    },
+    "mode": "judicial_panel_majority",
     "second_audit": {
       "audit_date": "2026-07-24T00:46:19.747457+00:00",
       "audit_invocation_id": "188bce9509b24ff88f0bd557c62a99d7",
@@ -134,16 +289,39 @@
       "verdict": "audited_failed",
       "verdict_rationale": "Independent arithmetic recomputation reproduces the four reported relative-gap families and the approximately 14% dM drift. However, with spatial and temporal step H, the update requires either an unscaled nearest-neighbor Laplacian contribution or division by H\u00b2 before multiplication; the implemented H\u00b2-scaled unnormalized Laplacian changes the wave speed across the sweep. The independently regenerated random geometry at each H also prevents the three rows from being a controlled refinement of one realization, so neither dM continuum stability nor comparator-driven continuum nonconvergence follows. For N1-N8 judgment, the note exposes independent finer-H, exact-static/Green-function, boundary-normalization, and alternate-observable routes as open, cites no prior residual or retained authority closing them, and no cross-cycle echo can repair the runner defect; the result is therefore a failed bounded attempt, not a no-go."
     },
-    "status": "disagreement"
+    "status": "third_confirmed_first",
+    "third_audit": {
+      "audit_date": "2026-07-24T00:58:33.328187+00:00",
+      "audit_invocation_id": "1726b3b083a04d9e8fa6961bfc01f7a7",
+      "auditor": "codex-judicial-1-20260724-957c6e9c",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "claim_scope": "Three-point 2+1D H-refinement claim that cached-static, equilibrated-static, and imposed-Newton retardation gaps are non-converged while dM is comparatively continuum-stable and the instability is comparator-dominated.",
+      "claim_type": "bounded_theorem",
+      "first_auditor_error": "none",
+      "independence": "judicial_review",
+      "judgment_rationale": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The first position captures the full audited claim, including its explicit comparator-dominance attribution. The runner\u2019s laplacian_yz function returns an unscaled second difference, while solve_wave multiplies that difference by H\u00b2 even though each layer is assigned physical duration H. The three H rows therefore evolve different effective wave operators, so neither dM continuum stability nor unique attribution of the gap instability to the comparators follows. The finite-run tables do not close the claimed continuum interpretation.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260724-957c6e9c\", \"judge\": 1, \"rationale\": \"The first position captures the full audited claim, including its explicit comparator-dominance attribution. The runner\\u2019s laplacian_yz function returns an unscaled second difference, while solve_wave multiplies that difference by H\\u00b2 even though each layer is assigned physical duration H. The three H rows therefore evolve different effective wave operators, so neither dM continuum stability nor unique attribution of the gap instability to the comparators follows. The finite-run tables do not close the claimed continuum interpretation.\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"Three-point 2+1D H-refinement claim that cached-static, equilibrated-static, and imposed-Newton retardation gaps are non-converged while dM is comparatively continuum-stable and the instability is comparator-dominated.\", \"C\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\", \"stretch_attempt_negative\"]]}, {\"auditor\": \"codex-judicial-2-20260724-7af6323c\", \"judge\": 2, \"rationale\": \"The runner performs a genuine numerical computation, so class C is appropriate, but it does not implement a controlled refinement of one fixed physical wave equation. laplacian_yz returns an unscaled nearest-neighbor difference while solve_wave multiplies that difference by H\\u00b2; with both spatial and layer-time spacing identified as H, this changes the effective Courant number and propagation speed across the sweep. The three rows therefore cannot establish continuum stability of dM or a continuum failure attributable specifically to the comparators. The non-nested random DAG realizations, abse\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"Three-point 2+1D H-refinement claim that cached-static, equilibrated-static, and imposed-Newton retardation gaps are non-converged while dM is comparatively continuum-stable and the instability is comparator-dominated.\", \"C\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\", \"stretch_attempt_negative\"]]}, {\"auditor\": \"codex-judicial-3-20260724-b72ca7d5\", \"judge\": 3, \"rationale\": \"The first position captures the full audited claim and correctly assigns class C because the runner genuinely computes the contested quantities rather than printing imported constants. The chain nevertheless fails: laplacian_yz returns an unscaled spatial second difference, while solve_wave multiplies it by H\\u00b2 even though spatial and temporal steps are both H, so the effective Courant factor and propagation speed change across the refinement. Consequently the three-point outputs cannot establish dM continuum stability or uniquely comparator-dominated nonconvergence.\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"Three-point 2+1D H-refinement claim that cached-static, equilibrated-static, and imposed-Newton retardation gaps are non-converged while dM is comparatively continuum-stable and the instability is comparator-dominated.\", \"C\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\", \"stretch_attempt_negative\"]]}, {\"auditor\": \"codex-judicial-4-20260724-8dd4c252\", \"judge\": 4, \"rationale\": \"The runner genuinely computes the finite-H quantities, so class C is appropriate, but its continuum inference fails. With physical time and spatial steps both identified with H, laplacian_yz returns an unscaled second difference and solve_wave multiplies it by H\\u00b2, causing the effective propagation speed to vary with H rather than refining one fixed wave equation. The non-nested random geometries, unasserted tables, undamped \\u201cequilibration,\\u201d and signed-formula versus absolute-value implementation further prevent the three points from establishing dM continuum stability or uniquely comparator-do\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"Three-point 2+1D H-refinement claim that cached-static, equilibrated-static, and imposed-Newton retardation gaps are non-converged while dM is comparatively continuum-stable and the instability is comparator-dominated.\", \"C\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\", \"stretch_attempt_negative\"]]}, {\"auditor\": \"codex-judicial-5-20260724-20c98bfd\", \"judge\": 5, \"rationale\": \"The first position captures the full audited claim and the decisive defect. The runner reproduces the finite-H arithmetic, but solve_wave applies H\\u00b2 to an unscaled nearest-neighbor Laplacian while treating NL\\u00b7H as physical time, so the sweep changes the effective wave propagation rather than refining one fixed physical equation. Three non-nested finite-H runs therefore cannot establish continuum stability of dM or uniquely attribute the gap instability to comparator construction. The absence of runner assertions and an exact discrete-static comparator further prevents closure.\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"Three-point 2+1D H-refinement claim that cached-static, equilibrated-static, and imposed-Newton retardation gaps are non-converged while dM is comparatively continuum-stable and the instability is comparator-dominated.\", \"C\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\", \"stretch_attempt_negative\"]]}]",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale",
+        "derived_no_go_boundary",
+        "stretch_attempt_negative"
+      ],
+      "second_auditor_error": "The second position narrows away the source note\u2019s explicit comparator-dominated attribution, so its scope does not cover the full load-bearing claim. It also calls the geometries independently regenerated even though the runner reuses seed 0; the evidenced problem is that the H-dependent realizations are non-nested, not that statistical independence was established.",
+      "sided_with": "first",
+      "verdict": "audited_failed"
+    }
   },
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 7,
-  "effective_status": "audit_in_progress",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_failed",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audit_in_progress",
+  "independence": "judicial_review",
+  "intrinsic_status": "audited_failed",
   "load_bearing_score": 13.022,
   "load_bearing_step": "The non-monotone relative-gap sequences at H = 0.50, 0.35, 0.25 are taken to show that the retardation magnitude lacks a clean continuum limit while the monotone 14% dM drift is continuum-stable.",
   "load_bearing_step_class": "C",
@@ -335,5 +513,5 @@
   "runner_path": "scripts/wave_retardation_continuum_limit.py",
   "title": "Wave-Retardation Continuum Limit \u2014 Conditional Negative (Comparator-Dominated)",
   "transitive_descendants": 734,
-  "verdict_rationale": "Issue: the purported fixed-physics refinement changes the wave operator with H, calls late slices of an undamped wave evolution \u201cequilibrated,\u201d computes absolute relative gaps while displaying a signed formula, and contains no assertions for the reported tables; the note also says the runner is unregistered although this packet designates it as primary. Why this blocks: the oscillations can arise from changing propagation speed, non-equilibrating slices, definition drift, boundaries, or non-nested random DAG realizations, so comparator dominance and dM continuum stability do not follow from the three outputs. Repair target: use a dimensionally consistent fixed-Courant discretization, matched source scaling and boundaries, an exact discrete-static comparator, an unambiguous gap formula, and additional refinements with uncertainty control. Claim boundary until fixed: the runner reports the stated three finite-H tables for its coded model but not a physical continuum theorem; N1 leaves fixed-Courant, direct-static, finer-lattice, and alternate-observable routes open, N2 does not establish independence of the operator-scaling, comparator, and boundary walls, N3 exposes load-bearing normalization and boundary assumptions, N4 has no cited residual witness, N5 is not resolution-complete, N6 leaves the direct-static reframe open, N7 leaves the fixed-Courant steelman unresolved, and N8 supplies no applicable retirement mechanism that closes these defects."
+  "verdict_rationale": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The first position captures the full audited claim, including its explicit comparator-dominance attribution. The runner\u2019s laplacian_yz function returns an unscaled second difference, while solve_wave multiplies that difference by H\u00b2 even though each layer is assigned physical duration H. The three H rows therefore evolve different effective wave operators, so neither dM continuum stability nor unique attribution of the gap instability to the comparators follows. The finite-run tables do not close the claimed continuum interpretation.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260724-957c6e9c\", \"judge\": 1, \"rationale\": \"The first position captures the full audited claim, including its explicit comparator-dominance attribution. The runner\\u2019s laplacian_yz function returns an unscaled second difference, while solve_wave multiplies that difference by H\\u00b2 even though each layer is assigned physical duration H. The three H rows therefore evolve different effective wave operators, so neither dM continuum stability nor unique attribution of the gap instability to the comparators follows. The finite-run tables do not close the claimed continuum interpretation.\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"Three-point 2+1D H-refinement claim that cached-static, equilibrated-static, and imposed-Newton retardation gaps are non-converged while dM is comparatively continuum-stable and the instability is comparator-dominated.\", \"C\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\", \"stretch_attempt_negative\"]]}, {\"auditor\": \"codex-judicial-2-20260724-7af6323c\", \"judge\": 2, \"rationale\": \"The runner performs a genuine numerical computation, so class C is appropriate, but it does not implement a controlled refinement of one fixed physical wave equation. laplacian_yz returns an unscaled nearest-neighbor difference while solve_wave multiplies that difference by H\\u00b2; with both spatial and layer-time spacing identified as H, this changes the effective Courant number and propagation speed across the sweep. The three rows therefore cannot establish continuum stability of dM or a continuum failure attributable specifically to the comparators. The non-nested random DAG realizations, abse\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"Three-point 2+1D H-refinement claim that cached-static, equilibrated-static, and imposed-Newton retardation gaps are non-converged while dM is comparatively continuum-stable and the instability is comparator-dominated.\", \"C\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\", \"stretch_attempt_negative\"]]}, {\"auditor\": \"codex-judicial-3-20260724-b72ca7d5\", \"judge\": 3, \"rationale\": \"The first position captures the full audited claim and correctly assigns class C because the runner genuinely computes the contested quantities rather than printing imported constants. The chain nevertheless fails: laplacian_yz returns an unscaled spatial second difference, while solve_wave multiplies it by H\\u00b2 even though spatial and temporal steps are both H, so the effective Courant factor and propagation speed change across the refinement. Consequently the three-point outputs cannot establish dM continuum stability or uniquely comparator-dominated nonconvergence.\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"Three-point 2+1D H-refinement claim that cached-static, equilibrated-static, and imposed-Newton retardation gaps are non-converged while dM is comparatively continuum-stable and the instability is comparator-dominated.\", \"C\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\", \"stretch_attempt_negative\"]]}, {\"auditor\": \"codex-judicial-4-20260724-8dd4c252\", \"judge\": 4, \"rationale\": \"The runner genuinely computes the finite-H quantities, so class C is appropriate, but its continuum inference fails. With physical time and spatial steps both identified with H, laplacian_yz returns an unscaled second difference and solve_wave multiplies it by H\\u00b2, causing the effective propagation speed to vary with H rather than refining one fixed wave equation. The non-nested random geometries, unasserted tables, undamped \\u201cequilibration,\\u201d and signed-formula versus absolute-value implementation further prevent the three points from establishing dM continuum stability or uniquely comparator-do\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"Three-point 2+1D H-refinement claim that cached-static, equilibrated-static, and imposed-Newton retardation gaps are non-converged while dM is comparatively continuum-stable and the instability is comparator-dominated.\", \"C\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\", \"stretch_attempt_negative\"]]}, {\"auditor\": \"codex-judicial-5-20260724-20c98bfd\", \"judge\": 5, \"rationale\": \"The first position captures the full audited claim and the decisive defect. The runner reproduces the finite-H arithmetic, but solve_wave applies H\\u00b2 to an unscaled nearest-neighbor Laplacian while treating NL\\u00b7H as physical time, so the sweep changes the effective wave propagation rather than refining one fixed physical equation. Three non-nested finite-H runs therefore cannot establish continuum stability of dM or uniquely attribute the gap instability to comparator construction. The absence of runner assertions and an exact discrete-static comparator further prevents closure.\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"Three-point 2+1D H-refinement claim that cached-static, equilibrated-static, and imposed-Newton retardation gaps are non-converged while dM is comparatively continuum-stable and the instability is comparator-dominated.\", \"C\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\", \"stretch_attempt_negative\"]]}]"
 }

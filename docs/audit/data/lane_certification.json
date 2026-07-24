@@ -2458,7 +2458,7 @@
         },
         {
           "claim_id": "wave_retardation_continuum_limit_note",
-          "effective_status": "audit_in_progress"
+          "effective_status": "audited_failed"
         },
         {
           "claim_id": "wave_static_direct_probe_fine_note",

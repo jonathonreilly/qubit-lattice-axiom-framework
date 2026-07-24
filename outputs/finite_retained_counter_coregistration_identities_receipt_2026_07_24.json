@@ -1,0 +1,170 @@
+{
+  "authority": "none",
+  "audit": "unset",
+  "fixture_sha256": "49ffc9256366b787cd38d71c3c0348514b833b21549826468ebd7214b7ae0cc2",
+  "supplied_fixture": {
+    "generator_span": [
+      0,
+      4096
+    ],
+    "piecewise_split": 2048,
+    "co_registration_coordinates": {
+      "S1": 512,
+      "S2": 1500,
+      "S3": 2600,
+      "S4": 3800
+    },
+    "signed_tick_slopes": {
+      "A": "-296/625",
+      "B": "-5/16",
+      "C": "-287/1250",
+      "D_first": "-296/625",
+      "D_second": "-5/16"
+    },
+    "counter_modulus": 16,
+    "position_decoder": "P(label) = counter_modulus * carry_count(label) + rotor(label); a missing label returns None",
+    "interval_decoder": "Delta(label_a,label_b) = P(label_b) - P(label_a) only when both labels exist and predecessor traversal connects the later-index cell to the earlier-index cell; otherwise return None",
+    "large_bank_capacity": 1000000000,
+    "large_bank_reset_allowance": 0,
+    "reset_test_bank_capacity": 700,
+    "reset_test_allowance": 1,
+    "crossing_convention": "positive integer crossings of accumulated absolute slope; segment upper endpoints excluded",
+    "tie_convention": "tick before label in forward order; label before tick in reverse order",
+    "label_convention": "a co-registration label snapshots counter state without consuming a bank slot",
+    "reset_convention": "on exhaustion, restore the supplied bank capacity and reset bank_slot; retain rotor and carry_count",
+    "cell_topology": "each cell index is its zero-based list position; each noninitial cell's predecessor is the preceding cell index and the initial predecessor is None",
+    "lineage_convention": "cell.index orients the requested endpoints and predecessor links must connect them",
+    "missing_label_convention": "a missing label decodes to None, not zero",
+    "floating_diagnostic_tolerance": "2 / min(abs(nonzero decoded segment count)); infinity if there is no nonzero decoded segment count",
+    "cross_order_devices": [
+      "A",
+      "B",
+      "C"
+    ],
+    "cross_order_initial_state": "every device position is 0 and the shared-snapshot list is empty",
+    "cross_order_local_operation": "append_local(device) increments only that device position by 1",
+    "cross_order_predicate": "for current snapshot s, accept iff for every prior shared snapshot p and every device d, p[d] < s[d]",
+    "cross_order_accept_mutation": "on acceptance increment every device position by 1, append the pre-increment current snapshot, and return accepted",
+    "cross_order_refusal_mutation": "on refusal return refused_inverted without changing device positions or the shared-snapshot list",
+    "ordinary_cross_order_fixture": "increment every device twice, then call the supplied predicate four times",
+    "adversarial_cross_order_fixture": "increment every device four times; accept once; append the supplied prior snapshot A=1,B=9,C=1 without applying the predicate; call the predicate once"
+  },
+  "dependencies": [],
+  "execution_imports": [
+    "__future__.annotations",
+    "copy",
+    "dataclasses.dataclass",
+    "fractions.Fraction",
+    "hashlib.sha256",
+    "itertools.combinations",
+    "json",
+    "math",
+    "pathlib.Path",
+    "sys",
+    "typing.Iterable",
+    "typing.Sequence"
+  ],
+  "exact_results": {
+    "counter_positions": {
+      "A": {
+        "S1": 242,
+        "S2": 710,
+        "S3": 1231,
+        "S4": 1799
+      },
+      "B": {
+        "S1": 160,
+        "S2": 468,
+        "S3": 812,
+        "S4": 1187
+      },
+      "C": {
+        "S1": 117,
+        "S2": 344,
+        "S3": 596,
+        "S4": 872
+      }
+    },
+    "telescoping_rows_checked": 12,
+    "reversal_interval_pairs_checked": 18,
+    "ratio_B_over_A": {
+      "numerator": 1027,
+      "denominator": 1557,
+      "decimal": 0.659601798330122
+    },
+    "ratio_C_over_B": {
+      "numerator": 755,
+      "denominator": 1027,
+      "decimal": 0.7351509250243428
+    },
+    "one_reset": {
+      "reset_cell_index": 702,
+      "inside_S2_S3": true,
+      "positions_equal": true,
+      "intervals_equal": true
+    },
+    "missing_label_results": [
+      null,
+      null,
+      null
+    ],
+    "piecewise_counts": {
+      "first": 969,
+      "second": 640,
+      "total": 1609
+    },
+    "cross_order_results": {
+      "ordinary": [
+        "accepted",
+        "accepted",
+        "accepted",
+        "accepted"
+      ],
+      "ordinary_accept_mutation_exact": true,
+      "first_accept_mutation_exact": true,
+      "injected_inversion": "refused_inverted",
+      "refusal_state_unchanged": true
+    }
+  },
+  "controls": {
+    "carry_erasure_changes_cross_reset_interval": true,
+    "bank_and_generator_metadata_mutation_preserves_interval": true,
+    "predecessor_break_makes_interval_undefined": true,
+    "index_lineage_remains_used": true,
+    "cross_order_accept_mutation_exact": true,
+    "cross_order_refusal_state_unchanged": true
+  },
+  "floating_diagnostic": {
+    "classification": "finite floating diagnostic, not exact identity",
+    "B_over_A": [
+      0.6581196581196581,
+      0.6602687140115163,
+      0.6602112676056338
+    ],
+    "spread_B_over_A": 0.0021490558918582092,
+    "tolerance_B_over_A": 0.006493506493506494,
+    "C_over_B": [
+      0.737012987012987,
+      0.7325581395348837,
+      0.736
+    ],
+    "spread_C_over_B": 0.004454847478103319,
+    "tolerance_C_over_B": 0.00881057268722467
+  },
+  "boundaries": [
+    "The tick streams, slopes, generator span, labels, decoder, counter modulus, bank sizes, reset procedure, cell topology, diagnostic tolerance, and cross-order predicate are supplied.",
+    "The generator coordinate orders the fixture and is not decoded.",
+    "Cell indices and predecessor links remain load-bearing for lineage and orientation.",
+    "Retained means only that carry_count is unchanged through the one supplied refill; it is not audit retained status or physical persistence.",
+    "The cross-order result executes the supplied finite predicate; it does not select or derive that predicate.",
+    "Binary floating-point segment-ratio checks are finite diagnostics with disclosed tolerances; the integer and Fraction identities are exact.",
+    "No tick, count, coordinate, label order, or decoded interval is identified with physical time, elapsed duration, a time metric, causal order, chronology, evolution, or an update law.",
+    "The finite counter is not a physical clock; no count or count ratio is a clock rate, frequency, calibration, detector observable, or empirical measurement.",
+    "No label, snapshot, cell, rotor, or carry count is a framework Record; no Record formation, locking, permanence, readout, or realized-history mechanism is constructed.",
+    "No encoding into physical M_2(C) sites is supplied, so this is not a physical-site compiler or a resource-overhead, noise, leakage, deletion, held-out-size, or scaling result.",
+    "These construction-scope boundaries leave downstream physical bridges open and assert no route-independent no-go or axiom pressure."
+  ],
+  "pass_count": 9,
+  "fail_count": 0,
+  "pass": true
+}

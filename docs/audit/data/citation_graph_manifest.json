@@ -1,6 +1,6 @@
 {
- "edge_count": 14981,
- "node_count": 4466,
+ "edge_count": 14984,
+ "node_count": 4473,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -379,8 +379,8 @@
    "out_degree": 2
   },
   "ai_methodology.llm_skill_pack_2026-04-25": {
-   "deps_hash": "60f23c29f29e",
-   "out_degree": 11
+   "deps_hash": "5f9ac28949c1",
+   "out_degree": 12
   },
   "ai_methodology.methodology_case_studies_2026-04-25": {
    "deps_hash": "e3b0c44298fc",
@@ -651,8 +651,8 @@
    "out_degree": 0
   },
   "ai_methodology.readme": {
-   "deps_hash": "3d8eefee3be6",
-   "out_degree": 24
+   "deps_hash": "f46fee0b3fd7",
+   "out_degree": 25
   },
   "ai_methodology.repo_trajectory_and_governance_evidence_2026-04-25": {
    "deps_hash": "e3b0c44298fc",
@@ -731,6 +731,10 @@
    "out_degree": 4
   },
   "ai_methodology.skills.reviewer-backpressure-integrator.skill": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "ai_methodology.skills.science-fix-loop.skill": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
@@ -10938,6 +10942,10 @@
    "deps_hash": "475143577275",
    "out_degree": 5
   },
+  "proper_cubic_scalar_even_antipodal_transition_lemma_note_2026-07-23": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "protocol_admissibility_3d_realization_bridge_and_word_dispersiveness_narrow_theorem_note_2026-07-10": {
    "deps_hash": "141f668125ad",
    "out_degree": 2
@@ -12955,6 +12963,10 @@
    "out_degree": 7
   },
   "site_phase_cube_shift_intertwiner_note": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "six_mode_paired_direction_coin_b_eigenvalue_determinant_factorization_theorem_note_2026-07-23": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
@@ -16670,6 +16682,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "work_history.repo.review_feedback.physical_dynamical_metric_source_law_bridge_tournament_cycle576_note_2026-07-22": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "work_history.repo.review_feedback.physical_effect_equivalence_normalized_grade_cycle321_note_2026-07-18": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -16679,6 +16695,10 @@
    "out_degree": 0
   },
   "work_history.repo.review_feedback.physical_event_to_append_commit_candidate_cycle326_note_2026-07-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_finite_reversible_norm_saturation_evaluator_tournament_note_2026-07-23": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
@@ -16754,9 +16774,17 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "work_history.repo.review_feedback.physical_same_coupling_executed_field_update_response_tournament_note_2026-07-23": {
+   "deps_hash": "87f22fb4f4a2",
+   "out_degree": 1
+  },
   "work_history.repo.review_feedback.physical_serial_repeat_measurement_cycle174_note_2026-07-16": {
    "deps_hash": "30344738a16d",
    "out_degree": 4
+  },
+  "work_history.repo.review_feedback.physical_source_insertion_selection_backreaction_tournament_cycle572_note_2026-07-22": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "work_history.repo.review_feedback.physical_state_contact_bridge_synthesis_cycle301_note_2026-07-17": {
    "deps_hash": "e3b0c44298fc",

@@ -717,6 +717,16 @@ class BatchExitSemanticsTest(unittest.TestCase):
                     )
                 )
 
+    def test_verified_claim_transaction_quarantine_is_resumable(self):
+        report = [
+            {"cid": "row", "result": "apply_or_gate_failed", "detail": "boom"},
+            {
+                "cid": "row",
+                "result": batch.CLAIM_TRANSACTION_QUARANTINE_RESULT,
+            },
+        ]
+        self.assertFalse(batch.report_has_hard_blocker(report))
+
     def test_mixed_failure_records_the_judicial_handoff(self):
         report = [{"cid": "broken", "result": "validation_failed"}]
         selected = [{"claim_id": "disputed"}]
@@ -775,6 +785,430 @@ class SchemaRecoveryTest(unittest.TestCase):
         self.assertEqual(len(records), 1)
         self.assertEqual(records[0]["claim_id"], "row")
         self.assertEqual(records[0]["failures"][0]["detail"], "N8 exact validator error")
+
+    def test_compute_and_transaction_exclusions_persist_typed_causes(self):
+        report = [
+            {
+                "cid": "compute",
+                "pass": 1,
+                "result": "compute_required",
+                "detail": "cache missing",
+            },
+            {
+                "cid": "transaction",
+                "result": "apply_or_gate_failed",
+                "detail": "pipeline failed",
+                "rollback_verified": True,
+                "rollback_detail": "reset to origin/main",
+            },
+            {
+                "cid": "transaction",
+                "result": batch.CLAIM_TRANSACTION_QUARANTINE_RESULT,
+                "detail": "claim excluded after verified rollback",
+            },
+        ]
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "quarantine.jsonl"
+            batch.persist_compute_required_skips(path, {"compute"}, report)
+            batch.persist_claim_transaction_quarantines(
+                path, {"transaction"}, report
+            )
+            records = batch.load_campaign_exclusion_records(path)
+
+        self.assertEqual(
+            {row["reason"] for row in records},
+            {
+                batch.COMPUTE_QUARANTINE_RESULT,
+                batch.CLAIM_TRANSACTION_QUARANTINE_RESULT,
+            },
+        )
+        by_claim = {row["claim_id"]: row for row in records}
+        self.assertEqual(
+            by_claim["compute"]["failures"][0]["detail"], "cache missing"
+        )
+        self.assertEqual(
+            by_claim["transaction"]["failures"][0]["detail"],
+            "pipeline failed",
+        )
+
+    def test_mixed_seat_causes_persist_both_typed_reasons(self):
+        report = [
+            {
+                "cid": "mixed",
+                "pass": 1,
+                "result": "compute_required",
+                "detail": "cache missing",
+            },
+            {
+                "cid": "mixed",
+                "pass": 2,
+                "result": "validation_failed",
+                "detail": "bad schema",
+            },
+        ]
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "quarantine.jsonl"
+            batch.persist_campaign_quarantine(path, {"mixed"}, report)
+            batch.persist_compute_required_skips(path, {"mixed"}, report)
+            batch.persist_campaign_quarantine(path, {"mixed"}, report)
+            records = batch.load_campaign_exclusion_records(path)
+
+        self.assertEqual(
+            {(row["claim_id"], row["reason"]) for row in records},
+            {
+                ("mixed", batch.SCHEMA_QUARANTINE_RESULT),
+                ("mixed", batch.COMPUTE_QUARANTINE_RESULT),
+            },
+        )
+        self.assertEqual(len(records), 2)
+
+    def test_selector_skips_persist_typed_routes_without_quarantining(self):
+        skipped = [
+            "missing: missing ledger row",
+            "retained: effective_status=retained - already retained-grade or "
+            "governed",
+            "conditional: awaiting repair (sources and deps unchanged since "
+            "audited_conditional)",
+            "blocked: dependencies are not retained-grade",
+            "forensic: source shape requires forensic tier",
+        ]
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "campaign-selector-skips.jsonl"
+            batch.persist_campaign_selection_skips(path, skipped)
+            batch.persist_campaign_selection_skips(path, skipped)
+            records = batch.load_campaign_selection_skip_records(path)
+
+        self.assertEqual(len(records), 5)
+        self.assertEqual(
+            {record["reason"] for record in records},
+            {
+                "missing_ledger_row",
+                "effective_status_not_actionable",
+                "awaiting_science_repair",
+                "dependencies_not_retained",
+                "forensic_source_shape",
+            },
+        )
+        self.assertTrue(all(record.get("detail") for record in records))
+
+    def test_every_compute_target_skip_branch_has_a_typed_record(self):
+        common = {
+            "audit_status": "unaudited",
+            "effective_status": "unaudited",
+            "claim_type": "bounded_theorem",
+            "deps": [],
+        }
+        rows = {
+            "retained": {
+                **common,
+                "claim_id": "retained",
+                "effective_status": "retained",
+            },
+            "status": {
+                **common,
+                "claim_id": "status",
+                "audit_status": "audited_clean",
+            },
+            "nogo": {**common, "claim_id": "nogo", "claim_type": "no_go"},
+            "nonbatch": {
+                **common,
+                "claim_id": "nonbatch",
+                "claim_type": "decoration",
+            },
+            "forensic": {**common, "claim_id": "forensic"},
+            "deps": {**common, "claim_id": "deps"},
+            "drift": {**common, "claim_id": "drift"},
+            "awaiting": {**common, "claim_id": "awaiting"},
+            "target": {**common, "claim_id": "target"},
+        }
+        scope = {"missing", *rows}
+
+        with mock.patch.object(
+            batch,
+            "source_requires_forensic",
+            side_effect=lambda row: row["claim_id"] == "forensic",
+        ), mock.patch.object(
+            batch,
+            "dep_ready",
+            side_effect=lambda row, _effective: row["claim_id"] != "deps",
+        ), mock.patch.object(
+            batch,
+            "note_hash_drifted",
+            side_effect=lambda row: row["claim_id"] == "drift",
+        ), mock.patch.object(
+            batch,
+            "awaiting_repair_since_conditional",
+            side_effect=lambda row, _effective, _rows: (
+                row["claim_id"] == "awaiting"
+            ),
+        ):
+            targets, skipped = batch.compute_targets(scope, rows)
+
+        records = [batch.selector_skip_record(line) for line in skipped]
+        self.assertEqual([row["claim_id"] for row in targets], ["target"])
+        self.assertEqual(
+            {record["reason"] for record in records},
+            batch.SELECTION_SKIP_REASONS - {"unclassified_selector_skip"},
+        )
+
+    def test_selector_skip_loader_rejects_reason_detail_mismatch(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "campaign-selector-skips.jsonl"
+            path.write_text(
+                json.dumps(
+                    {
+                        "claim_id": "row",
+                        "reason": "note_hash_drift",
+                        "detail": "dependencies are not retained-grade",
+                        "recorded_at": "2026-07-23T12:00:00+00:00",
+                    }
+                )
+                + "\n",
+                encoding="utf-8",
+            )
+            with self.assertRaisesRegex(ValueError, "does not match"):
+                batch.load_campaign_selection_skip_records(path)
+
+    def test_campaign_state_loader_rejects_truncated_record(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "quarantine.jsonl"
+            path.write_text(
+                json.dumps(
+                    {
+                        "claim_id": "kept",
+                        "reason": batch.SCHEMA_QUARANTINE_RESULT,
+                        "failures": [{
+                            "cid": "kept",
+                            "pass": 1,
+                            "result": "validation_failed",
+                            "detail": "bad schema",
+                        }],
+                        "recorded_at": "2026-07-23T12:00:00+00:00",
+                    }
+                )
+                + "\n"
+                + '{"claim_id":"torn"',
+                encoding="utf-8",
+            )
+            with self.assertRaisesRegex(
+                ValueError,
+                "invalid campaign exclusion JSON",
+            ):
+                batch.load_campaign_quarantine(path)
+            with mock.patch.dict(
+                audit_loop.PROGRESS,
+                {"quarantine_file": path},
+            ):
+                with self.assertRaisesRegex(
+                    ValueError,
+                    "invalid campaign exclusion JSON",
+                ):
+                    audit_loop.campaign_exclusion_counts()
+
+    def test_campaign_state_loader_rejects_corrupt_schema_variants(self):
+        valid_tail = (
+            '"reason":"schema_invalid_quarantined",'
+            '"failures":[{"result":"validation_failed"}],'
+            '"recorded_at":"2026-07-23T12:00:00+00:00"'
+        )
+        cases = {
+            "blank": ("\n", "blank campaign exclusion record"),
+            "duplicate": (
+                '{"claim_id":"first","claim_id":"second",' + valid_tail + "}\n",
+                "duplicate JSON key",
+            ),
+            "unknown reason": (
+                '{"claim_id":"row","reason":"unknown_quarantine",'
+                '"failures":[{"result":"validation_failed"}],'
+                '"recorded_at":"2026-07-23T12:00:00+00:00"}\n',
+                "unrecognized campaign exclusion reason",
+            ),
+            "invalid fields": (
+                '{"claim_id":"row",' + valid_tail + ',"typo":[]}\n',
+                "invalid campaign exclusion fields",
+            ),
+            "invalid failures": (
+                '{"claim_id":"row","reason":"schema_invalid_quarantined",'
+                '"failures":[],"recorded_at":"2026-07-23T12:00:00+00:00"}\n',
+                "failures must be a non-empty list",
+            ),
+            "empty failure object": (
+                '{"claim_id":"row","reason":"schema_invalid_quarantined",'
+                '"failures":[{}],'
+                '"recorded_at":"2026-07-23T12:00:00+00:00"}\n',
+                "failure has no string result",
+            ),
+            "unexpected failure field": (
+                '{"claim_id":"row","reason":"schema_invalid_quarantined",'
+                '"failures":[{"cid":"row","pass":1,'
+                '"result":"malformed_json","typo":true}],'
+                '"recorded_at":"2026-07-23T12:00:00+00:00"}\n',
+                "invalid campaign exclusion failure fields",
+            ),
+            "wrong reason evidence": (
+                '{"claim_id":"row","reason":"compute_required_quarantined",'
+                '"failures":[{"cid":"row","pass":1,'
+                '"result":"validation_failed","detail":"bad schema"}],'
+                '"recorded_at":"2026-07-23T12:00:00+00:00"}\n',
+                "failure result is incompatible",
+            ),
+            "transaction without rollback proof": (
+                '{"claim_id":"row","reason":"claim_transaction_quarantined",'
+                '"failures":[{"cid":"row",'
+                '"result":"claim_transaction_quarantined",'
+                '"detail":"quarantined"}],'
+                '"recorded_at":"2026-07-23T12:00:00+00:00"}\n',
+                "no verified apply/gate rollback failure",
+            ),
+            "failure cid mismatch": (
+                '{"claim_id":"row","reason":"compute_required_quarantined",'
+                '"failures":[{"cid":"other","pass":1,'
+                '"result":"compute_required","detail":"cache missing"}],'
+                '"recorded_at":"2026-07-23T12:00:00+00:00"}\n',
+                "failure cid does not match",
+            ),
+            "float pass one": (
+                '{"claim_id":"row","reason":"compute_required_quarantined",'
+                '"failures":[{"cid":"row","pass":1.0,'
+                '"result":"compute_required","detail":"cache missing"}],'
+                '"recorded_at":"2026-07-23T12:00:00+00:00"}\n',
+                "failure pass must be 1 or 2",
+            ),
+            "float pass two": (
+                '{"claim_id":"row","reason":"compute_required_quarantined",'
+                '"failures":[{"cid":"row","pass":2.0,'
+                '"result":"compute_required","detail":"cache missing"}],'
+                '"recorded_at":"2026-07-23T12:00:00+00:00"}\n',
+                "failure pass must be 1 or 2",
+            ),
+            "shard unsafe claim id": (
+                '{"claim_id":"bad/id","reason":"compute_required_quarantined",'
+                '"failures":[{"cid":"bad/id","pass":1,'
+                '"result":"compute_required","detail":"cache missing"}],'
+                '"recorded_at":"2026-07-23T12:00:00+00:00"}\n',
+                "claim_id is not shard-safe",
+            ),
+            "dot-only claim id": (
+                '{"claim_id":".","reason":"compute_required_quarantined",'
+                '"failures":[{"cid":".","pass":1,'
+                '"result":"compute_required","detail":"cache missing"}],'
+                '"recorded_at":"2026-07-23T12:00:00+00:00"}\n',
+                "claim_id is not shard-safe",
+            ),
+            "overflow float": (
+                '{"claim_id":"row","reason":"compute_required_quarantined",'
+                '"failures":[{"cid":"row","pass":1,'
+                '"result":"compute_required","detail":1e999}],'
+                '"recorded_at":"2026-07-23T12:00:00+00:00"}\n',
+                "non-finite JSON number",
+            ),
+            "noncanonical timestamp separator": (
+                '{"claim_id":"row","reason":"compute_required_quarantined",'
+                '"failures":[{"cid":"row","pass":1,'
+                '"result":"compute_required","detail":"cache missing"}],'
+                '"recorded_at":"2026-07-23x12:00:00+00:00"}\n',
+                "not canonical UTC ISO-8601",
+            ),
+        }
+        for label, (payload, expected) in cases.items():
+            with self.subTest(label=label), tempfile.TemporaryDirectory() as tmp:
+                path = Path(tmp) / "quarantine.jsonl"
+                path.write_text(payload, encoding="utf-8")
+                with self.assertRaisesRegex(ValueError, expected):
+                    batch.load_campaign_quarantine(path)
+
+    def test_campaign_state_loader_accepts_canonical_dotted_claim_id(self):
+        record = {
+            "claim_id": "ai_methodology.raw.canonical_framing_paragraph",
+            "reason": batch.COMPUTE_QUARANTINE_RESULT,
+            "failures": [{
+                "cid": "ai_methodology.raw.canonical_framing_paragraph",
+                "pass": 1,
+                "result": "compute_required",
+                "detail": "cache missing",
+            }],
+            "recorded_at": "2026-07-23T12:00:00+00:00",
+        }
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "quarantine.jsonl"
+            path.write_text(json.dumps(record) + "\n", encoding="utf-8")
+            loaded = batch.load_campaign_exclusion_records(path)
+
+        self.assertEqual(loaded, [record])
+
+    def test_apply_gate_failure_continues_after_explicit_verified_rollback(self):
+        job = {
+            "cid": "row",
+            "pass": 1,
+            "row": {
+                "claim_id": "row",
+                "criticality": "medium",
+                "note_path": "docs/row.md",
+            },
+        }
+        envelope = {"audit": {"verdict": "audited_clean"}}
+        report = []
+        with mock.patch.object(
+            batch, "finalize_worker", return_value=(envelope, {"ok": True})
+        ), mock.patch.object(
+            batch,
+            "apply_claim_serialized",
+            return_value=(
+                False,
+                [{
+                    "cid": "row",
+                    "result": "apply_or_gate_failed",
+                    "detail": "pipeline failed",
+                    "rollback_verified": True,
+                }],
+            ),
+        ):
+            ok, compute, schema, handoffs = batch.apply_serialized(
+                [job], report
+            )
+
+        self.assertTrue(ok)
+        self.assertEqual(compute, set())
+        self.assertEqual(schema, set())
+        self.assertEqual(handoffs, [])
+        self.assertIn(
+            batch.CLAIM_TRANSACTION_QUARANTINE_RESULT,
+            {item["result"] for item in report},
+        )
+
+    def test_apply_gate_failure_stops_without_explicit_rollback_proof(self):
+        job = {
+            "cid": "row",
+            "pass": 1,
+            "row": {
+                "claim_id": "row",
+                "criticality": "medium",
+                "note_path": "docs/row.md",
+            },
+        }
+        report = []
+        with mock.patch.object(
+            batch,
+            "finalize_worker",
+            return_value=(
+                {"audit": {"verdict": "audited_clean"}},
+                {"ok": True},
+            ),
+        ), mock.patch.object(
+            batch,
+            "apply_claim_serialized",
+            return_value=(
+                False,
+                [{"cid": "row", "result": "apply_or_gate_failed"}],
+            ),
+        ):
+            ok, _, _, _ = batch.apply_serialized([job], report)
+
+        self.assertFalse(ok)
+        self.assertNotIn(
+            batch.CLAIM_TRANSACTION_QUARANTINE_RESULT,
+            {item["result"] for item in report},
+        )
 
     def test_invalid_optional_packet_is_dropped_without_completion(self):
         invocation = "a" * 32
@@ -1642,19 +2076,87 @@ class ClaimTransactionTest(unittest.TestCase):
         self.assertEqual(result.stderr, "stderr")
 
     def test_rollback_commands_bypass_committer_cancellation(self):
+        oid = "a" * 40
+        target = mock.Mock(returncode=0, stdout=f"{oid}\n", stderr="")
         reset = mock.Mock(returncode=0, stdout="", stderr="")
         branch = mock.Mock(returncode=0, stdout="main\n", stderr="")
         status = mock.Mock(returncode=0, stdout="", stderr="")
+        head = mock.Mock(returncode=0, stdout=f"{oid}\n", stderr="")
+        remote = mock.Mock(returncode=0, stdout=f"{oid}\n", stderr="")
         with mock.patch.object(
-            batch, "sh", side_effect=[reset, branch, status]
+            batch,
+            "sh",
+            side_effect=[target, reset, branch, status, head, remote],
         ) as sh:
             ok, detail = batch.reset_to_origin_main()
 
         self.assertTrue(ok, detail)
-        self.assertEqual(sh.call_count, 3)
+        self.assertEqual(sh.call_count, 6)
         self.assertTrue(
             all(call.kwargs.get("honor_cancel") is False for call in sh.call_args_list)
         )
+
+    def test_reset_to_origin_main_rejects_clean_ref_mismatch(self):
+        target_oid = "a" * 40
+        moved_oid = "b" * 40
+        commands = [
+            mock.Mock(returncode=0, stdout=f"{target_oid}\n", stderr=""),
+            mock.Mock(returncode=0, stdout="", stderr=""),
+            mock.Mock(returncode=0, stdout="main\n", stderr=""),
+            mock.Mock(returncode=0, stdout="", stderr=""),
+            mock.Mock(returncode=0, stdout=f"{target_oid}\n", stderr=""),
+            mock.Mock(returncode=0, stdout=f"{moved_oid}\n", stderr=""),
+        ]
+        with mock.patch.object(batch, "sh", side_effect=commands):
+            ok, detail = batch.reset_to_origin_main()
+
+        self.assertFalse(ok)
+        self.assertIn("HEAD synchronized with origin/main", detail)
+
+    def test_reset_to_origin_main_rejects_recognizable_provenance_drift(self):
+        target_oid = "a" * 40
+        commands = [
+            mock.Mock(returncode=0, stdout=f"{target_oid}\n", stderr=""),
+            mock.Mock(returncode=0, stdout="", stderr=""),
+            mock.Mock(returncode=0, stdout="main\n", stderr=""),
+            mock.Mock(
+                returncode=0,
+                stdout=f" M {batch.LANE_CERTIFICATION_PATH}\n",
+                stderr="",
+            ),
+        ]
+        with mock.patch.object(batch, "sh", side_effect=commands):
+            ok, detail = batch.reset_to_origin_main()
+
+        self.assertFalse(ok)
+        self.assertIn("literally clean worktree", detail)
+
+    def test_apply_rejection_is_global_when_reset_cannot_be_verified(self):
+        delivery = [(
+            {
+                "cid": "row",
+                "pass": 1,
+                "row": {"claim_id": "row", "criticality": "medium"},
+            },
+            {
+                "audit": {"verdict": "audited_clean"},
+                "evidence_manifest": {},
+            },
+        )]
+        with mock.patch.object(
+            batch, "sync_origin_main", return_value=(True, "base")
+        ), mock.patch.object(
+            batch.audit_runner, "apply_one", return_value=(False, "rejected")
+        ), mock.patch.object(
+            batch,
+            "reset_to_origin_main",
+            return_value=(False, "ref mismatch"),
+        ):
+            ok, results = batch.apply_claim_serialized(delivery, retries=1)
+
+        self.assertFalse(ok)
+        self.assertEqual(results[0]["result"], "race_reset_failed")
+        self.assertIn("ref mismatch", results[0]["detail"])
 
     def test_packet_completion_cancel_skips_exit_grace(self):
         cancel = threading.Event()
@@ -1942,6 +2444,41 @@ class ClaimTransactionTest(unittest.TestCase):
                     encoding="utf-8",
                 )
                 audit_ok, _ = batch.static_checkpoint.verify_checkpoint()
+                shard.write_text(
+                    json.dumps(dict(
+                        before,
+                        audit_status="audited_clean",
+                        direct_in_degree=7,
+                        transitive_descendants=123,
+                        max_descendant_status="retained",
+                        max_descendant_status_rank=9,
+                        load_bearing_score=42.5,
+                    )),
+                    encoding="utf-8",
+                )
+                derived_metrics_ok, derived_metrics_detail = (
+                    batch.static_checkpoint.verify_checkpoint()
+                )
+                shard.write_text(
+                    json.dumps(dict(
+                        before,
+                        audit_status="audited_clean",
+                        criticality="high",
+                        direct_in_degree=7,
+                        transitive_descendants=123,
+                        max_descendant_status="retained",
+                        max_descendant_status_rank=9,
+                        load_bearing_score=42.5,
+                    )),
+                    encoding="utf-8",
+                )
+                criticality_ok, criticality_detail = (
+                    batch.static_checkpoint.verify_checkpoint()
+                )
+                shard.write_text(
+                    json.dumps(dict(before, audit_status="audited_clean")),
+                    encoding="utf-8",
+                )
                 with mock.patch.dict(
                     os.environ,
                     {batch.static_checkpoint.EXPECTED_NONCE_ENV: "b" * 32},
@@ -2018,6 +2555,9 @@ class ClaimTransactionTest(unittest.TestCase):
         self.assertTrue(finalized, finalize_detail)
         self.assertTrue(receipts_cleaned)
         self.assertTrue(audit_ok)
+        self.assertTrue(derived_metrics_ok, derived_metrics_detail)
+        self.assertFalse(criticality_ok)
+        self.assertIn("static repository inputs changed", criticality_detail)
         self.assertFalse(wrong_identity_ok)
         self.assertIn("changed during fast use", wrong_identity_detail)
         self.assertFalse(ignored_note_ok)
@@ -2036,6 +2576,52 @@ class ClaimTransactionTest(unittest.TestCase):
         self.assertIn("static repository inputs changed", ledger_sidecar_detail)
         self.assertFalse(topology_ok)
         self.assertIn("static repository inputs changed", detail)
+
+    def test_pipeline_recomputes_status_dependent_load_bearing_after_fixed_point(self):
+        script = (batch.SCRIPTS / "run_pipeline.sh").read_text(encoding="utf-8")
+        pre_seed = script.index(
+            'echo "==> 1c/18 compute_load_bearing.py pre-seed topology refresh"'
+        )
+        seed = script.index('echo "==> 2/18 seed_audit_ledger.py"')
+        first = script.index(
+            'echo "==> 5/18 compute_load_bearing.py"'
+        )
+        fixed_point_seed = script.index(
+            'echo "==> 3a/18 seed_audit_ledger.py fixed-point receipt"'
+        )
+        checkpoint = script.index(
+            'echo "==> 3b/18 static_pipeline_checkpoint.py prepare'
+        )
+        status = script.index(
+            'echo "==> 6/18 compute_effective_status.py"'
+        )
+        final = script.index(
+            'echo "==> 7a/18 compute_load_bearing.py post-status fixed point"'
+        )
+        certification = script.index(
+            'echo "==> 7b/18 compute_lane_certification.py'
+        )
+
+        self.assertLess(pre_seed, seed)
+        self.assertLess(seed, first)
+        self.assertLess(first, fixed_point_seed)
+        self.assertLess(fixed_point_seed, checkpoint)
+        self.assertLess(first, checkpoint)
+        self.assertLess(first, status)
+        self.assertLess(status, final)
+        self.assertLess(final, certification)
+        self.assertEqual(
+            script.count(
+                "python3 docs/audit/scripts/compute_load_bearing.py"
+            ),
+            3,
+        )
+        self.assertEqual(
+            script.count(
+                "python3 docs/audit/scripts/seed_audit_ledger.py"
+            ),
+            2,
+        )
 
     def test_run_generated_gates_selects_verdict_only_pipeline(self):
         completed = mock.Mock(returncode=0, stdout="", stderr="")
@@ -2331,11 +2917,16 @@ class CampaignContractTest(unittest.TestCase):
     def test_inner_batches_share_campaign_quarantine_and_dispatch_policy(self):
         args = _args()
         args.campaign_quarantine_file = Path("/tmp/campaign/quarantine.jsonl")
+        args.campaign_selection_skip_file = Path(
+            "/tmp/campaign/selector-skips.jsonl"
+        )
 
         command = audit_loop.batch_command("lane_a", args)
 
         self.assertIn("--campaign-quarantine-file", command)
         self.assertIn(str(args.campaign_quarantine_file), command)
+        self.assertIn("--campaign-selection-skip-file", command)
+        self.assertIn(str(args.campaign_selection_skip_file), command)
         self.assertNotIn("--dispatch-science-fixes", command)
 
         args.dispatch_science_fixes = True

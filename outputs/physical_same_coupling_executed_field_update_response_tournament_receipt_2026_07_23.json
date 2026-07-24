@@ -1,0 +1,729 @@
+{
+ "anchors": {
+  "D1_anchor_ok": true,
+  "D1_anchor_size": 7,
+  "D1_periodic_min_nonzero": {
+   "3": 2.999999999999995,
+   "6": 0.9999999999999947,
+   "7": 0.7530203962825306
+  },
+  "D2_anchor_ok": {
+   "3": true,
+   "6": true,
+   "7": true
+  },
+  "D2_dirichlet_min": {
+   "3": 1.7573593128807143,
+   "6": 0.5941867925854836,
+   "7": 0.45672280493227896
+  },
+  "all_literal_comparators_matched": true,
+  "literal_comparator_mismatches": []
+ },
+ "audit": "unset",
+ "authority": "none",
+ "c576_note_sha256_observed": "5822c14b74de606d302beb637e03dd0a30968e6a7bf120723eb3da16e09e6768",
+ "c576_receipt_sha256_observed": "bc719ca8d88662e082fd63db8f524d9af94749012208b5a76f2ea6200f305c3a",
+ "c576_runner_sha256_observed": "7980bff1293202656afeefb46c7c7dcf8145e748004b541d3619f19896c79ea7",
+ "c579_imported": false,
+ "claim_boundaries": {
+  "finite_Weyl_NQ_carrier_join_executed": false,
+  "is_attraction_language": false,
+  "is_energy": false,
+  "is_gravity": false,
+  "is_physical_time": false,
+  "is_rate": false,
+  "is_source_law_selection": false,
+  "is_stress": false,
+  "is_unique_physical_coupling_normalization": false,
+  "new_axiom_primitive_or_premise_class_added": false,
+  "open_real_space_coframe_K_claimed": false,
+  "qrec0_is_definition_wiring_control_only": true,
+  "representation_charge_does_not_fix_unique_coupling": true,
+  "tested_object": "same-parameter executed-update response identity on two declared carriers"
+ },
+ "cycle_claim": 681,
+ "date": "2026-07-23",
+ "declared_falsifiers": {
+  "adiabatic_rate": "adiabatic convergence violates frozen p=2 -> FAIL",
+  "d2_near_far": "near/far inverts on a declared D2 fixture -> FAIL",
+  "decoupled_parameter_sign": "decoupled source/readout parameters fail to flip -> FAIL",
+  "integrator_ordering": "kick/drift disagree beyond O(dt^2) -> FAIL",
+  "literal_comparator": "literal comparator eigenvalue mismatches -> FAIL",
+  "reversibility": "reversibility recovery exceeds machine-tight bound -> FAIL"
+ },
+ "dynamics": {
+  "bridge_observable": "RMS over hold of (q<rho_rec,phi> - E_stat); executed hold-mean is E_resp",
+  "coupling_wiring": "single scalar q enters BOTH source insertion and receiver readout",
+  "declared_rate_p": 2.0,
+  "dt": 0.01,
+  "hold_window": 24.0,
+  "integrator": "leapfrog / Stormer-Verlet (KDK and DKD)",
+  "ramp": "quartic 4u^3-3u^4 on [0,tau] (g''(0)=0, g''(tau)!=0), then hold g=1",
+  "tau_ladder": [
+   20.0,
+   40.0,
+   80.0,
+   160.0
+  ]
+ },
+ "fixtures": {
+  "D1_L3": {
+   "E_dec_executed": 0.020575787558040598,
+   "E_far_exec": 0.022633335889412826,
+   "E_near_exec": 0.020575787558040598,
+   "E_same_executed": -0.020575787558040598,
+   "E_stat_far": 0.022633744855967,
+   "E_stat_near": -0.02057613168724274,
+   "L": 3,
+   "bridge_envelope_ok": true,
+   "bridge_mean_converges": true,
+   "bridge_mean_dev": [
+    5.163323724976382e-06,
+    1.2181028854092724e-06,
+    3.4412920214138554e-07,
+    9.317315189869002e-08
+   ],
+   "bridge_means_KDK": [
+    -0.020570968363517763,
+    -0.02057491358435733,
+    -0.020575787558040598,
+    -0.02057603851409084
+   ],
+   "bridge_monotone": true,
+   "bridge_rms_DKD": [
+    0.0002638282851145022,
+    6.741926793074382e-05,
+    1.6800441077232923e-05,
+    4.194342038865316e-06
+   ],
+   "bridge_rms_KDK": [
+    0.00026383865908058315,
+    6.742191944328114e-05,
+    1.6801101816451626e-05,
+    4.1945069692283885e-06
+   ],
+   "bridge_slope_DKD": -1.9929694611434394,
+   "bridge_slope_KDK": -1.9929694606254482,
+   "decouple_flips": true,
+   "decouple_gap": 3.4412920214138554e-07,
+   "decouple_rel": 1.6724679224071384e-05,
+   "disjoint_src_far": true,
+   "disjoint_src_near": true,
+   "energy_relative_band": 0.00012375793842179242,
+   "energy_secular_fraction": 0.00093012791005837,
+   "fixture": "D1_L3",
+   "geometry": {
+    "ball_radius": 0,
+    "far": [
+     1,
+     1,
+     1
+    ],
+    "near": [
+     1,
+     0,
+     0
+    ],
+    "src": [
+     0,
+     0,
+     0
+    ]
+   },
+   "kind": "D1",
+   "min_sector_eigenvalue": 2.999999999999995,
+   "near_gt_far": false,
+   "order_bound": 0.0001,
+   "order_gap": 1.3945559984573919e-11,
+   "qrec0_bare_receiver_projection": 0.020575787558040598,
+   "qrec0_response": 0.0,
+   "receiver_zero_response": 0.0,
+   "reversibility_frozen": 4.09683659547211e-14,
+   "reversibility_ramp": 1.2086048079120925e-15,
+   "scale_abs": [
+    0.0051439468895101495,
+    0.020575787558040598,
+    0.08230315023216239
+   ],
+   "scale_exponent": 1.9999999999999991,
+   "sign_cancellation_residual": 0.0,
+   "sign_invariance_residual": 0.0,
+   "source_off_response": 0.0,
+   "stationary_inverse_residual": 1.1117398714674708e-15,
+   "supp_src_far_overlap": [],
+   "supp_src_near_overlap": [],
+   "support_sizes": {
+    "far": 1,
+    "near": 1,
+    "src": 1
+   },
+   "symplectic_defect": 4.483430617072023e-17
+  },
+  "D1_L6": {
+   "E_dec_executed": -0.0064251165222604,
+   "E_far_exec": 0.06979648506526626,
+   "E_near_exec": 0.0064251165222604,
+   "E_same_executed": 0.0064251165222604,
+   "E_stat_far": 0.06980788757504071,
+   "E_stat_near": 0.006422376049642865,
+   "L": 6,
+   "bridge_envelope_ok": true,
+   "bridge_mean_converges": true,
+   "bridge_mean_dev": [
+    4.4090468274214645e-05,
+    1.1771873384969211e-05,
+    2.7404726175347255e-06,
+    6.983879096839063e-07
+   ],
+   "bridge_means_KDK": [
+    0.00646646651791708,
+    0.006434147923027834,
+    0.0064251165222604,
+    0.006423074437552549
+   ],
+   "bridge_monotone": true,
+   "bridge_rms_DKD": [
+    0.0008315553573297095,
+    0.00019606759407250952,
+    4.7297939258946456e-05,
+    1.2016311644412762e-05
+   ],
+   "bridge_rms_KDK": [
+    0.0008315690597608995,
+    0.00019607090923113262,
+    4.729875482715886e-05,
+    1.201651683981567e-05
+   ],
+   "bridge_slope_DKD": -2.038974067904384,
+   "bridge_slope_KDK": -2.038973760621914,
+   "decouple_flips": true,
+   "decouple_gap": 2.7404726175347255e-06,
+   "decouple_rel": 0.0004267069689398081,
+   "disjoint_src_far": true,
+   "disjoint_src_near": true,
+   "energy_relative_band": 0.00012382244965820612,
+   "energy_secular_fraction": 0.0009060295839916795,
+   "fixture": "D1_L6",
+   "geometry": {
+    "ball_radius": 1,
+    "far": [
+     3,
+     3,
+     3
+    ],
+    "near": [
+     3,
+     0,
+     0
+    ],
+    "src": [
+     0,
+     0,
+     0
+    ]
+   },
+   "kind": "D1",
+   "min_sector_eigenvalue": 0.9999999999999947,
+   "near_gt_far": false,
+   "order_bound": 0.0001,
+   "order_gap": 4.550911470585506e-11,
+   "qrec0_bare_receiver_projection": 0.0064251165222604,
+   "qrec0_response": 0.0,
+   "receiver_zero_response": 0.0,
+   "reversibility_frozen": 2.4098793726458987e-14,
+   "reversibility_ramp": 1.842944258881298e-15,
+   "scale_abs": [
+    0.0016062791305651,
+    0.0064251165222604,
+    0.0257004660890416
+   ],
+   "scale_exponent": 1.9999999999999984,
+   "sign_cancellation_residual": 0.0,
+   "sign_invariance_residual": 0.0,
+   "source_off_response": 0.0,
+   "stationary_inverse_residual": 3.5006702552705506e-15,
+   "supp_src_far_overlap": [],
+   "supp_src_near_overlap": [],
+   "support_sizes": {
+    "far": 7,
+    "near": 7,
+    "src": 7
+   },
+   "symplectic_defect": null
+  },
+  "D1_L7": {
+   "E_dec_executed": 0.0017999504213347653,
+   "E_far_exec": 0.0580290623494681,
+   "E_near_exec": 0.0017999504213347653,
+   "E_same_executed": -0.0017999504213347653,
+   "E_stat_far": 0.058012354351402104,
+   "E_stat_near": -0.001793445427634789,
+   "L": 7,
+   "bridge_envelope_ok": true,
+   "bridge_mean_converges": true,
+   "bridge_mean_dev": [
+    0.00010339748307081303,
+    2.415070327726641e-05,
+    6.504993699976312e-06,
+    1.565291164167459e-06
+   ],
+   "bridge_means_KDK": [
+    -0.001896842910705602,
+    -0.0018175961309120554,
+    -0.0017999504213347653,
+    -0.0017950107187989564
+   ],
+   "bridge_monotone": true,
+   "bridge_rms_DKD": [
+    0.0010551853728236315,
+    0.0002771451566437463,
+    7.188993747941577e-05,
+    1.789923815638056e-05
+   ],
+   "bridge_rms_KDK": [
+    0.001055197409522928,
+    0.0002771482190903319,
+    7.189073545540735e-05,
+    1.7899437701886755e-05
+   ],
+   "bridge_slope_DKD": -1.9591143472940409,
+   "bridge_slope_KDK": -1.9591144521434678,
+   "decouple_flips": true,
+   "decouple_gap": 6.504993699976312e-06,
+   "decouple_rel": 0.0036270931915420215,
+   "disjoint_src_far": true,
+   "disjoint_src_near": true,
+   "energy_relative_band": 0.00012136417235785455,
+   "energy_secular_fraction": 0.001030603853535524,
+   "fixture": "D1_L7",
+   "geometry": {
+    "ball_radius": 1,
+    "far": [
+     3,
+     3,
+     3
+    ],
+    "near": [
+     3,
+     0,
+     0
+    ],
+    "src": [
+     0,
+     0,
+     0
+    ]
+   },
+   "kind": "D1",
+   "min_sector_eigenvalue": 0.7530203962825306,
+   "near_gt_far": false,
+   "order_bound": 0.0001,
+   "order_gap": 8.244718146047103e-11,
+   "qrec0_bare_receiver_projection": 0.0017999504213347653,
+   "qrec0_response": 0.0,
+   "receiver_zero_response": 0.0,
+   "reversibility_frozen": 1.0769580589785988e-14,
+   "reversibility_ramp": 1.9808339006281305e-15,
+   "scale_abs": [
+    0.0004499876053336913,
+    0.0017999504213347653,
+    0.007199801685339061
+   ],
+   "scale_exponent": 1.9999999999999998,
+   "sign_cancellation_residual": 0.0,
+   "sign_invariance_residual": 0.0,
+   "source_off_response": 0.0,
+   "stationary_inverse_residual": 4.241715057183982e-15,
+   "supp_src_far_overlap": [],
+   "supp_src_near_overlap": [],
+   "support_sizes": {
+    "far": 7,
+    "near": 7,
+    "src": 7
+   },
+   "symplectic_defect": null
+  },
+  "D2_L3": {
+   "E_dec_executed": 0.06843739777646976,
+   "E_far_exec": 0.008817928089412792,
+   "E_near_exec": 0.06843739777646976,
+   "E_same_executed": -0.06843739777646976,
+   "E_stat_far": -0.008815563741000194,
+   "E_stat_near": -0.0684361092484269,
+   "L": 3,
+   "bridge_envelope_ok": true,
+   "bridge_mean_converges": true,
+   "bridge_mean_dev": [
+    2.2811390111621144e-05,
+    5.296873992671758e-06,
+    1.2885280428615031e-06,
+    3.1282275314570285e-07
+   ],
+   "bridge_means_KDK": [
+    -0.06845892063853852,
+    -0.06844140612241957,
+    -0.06843739777646976,
+    -0.06843642207118004
+   ],
+   "bridge_monotone": true,
+   "bridge_rms_DKD": [
+    0.0013943157806400063,
+    0.00032687287070041473,
+    7.993763870085268e-05,
+    2.0028178406577792e-05
+   ],
+   "bridge_rms_KDK": [
+    0.0013943467220470453,
+    0.0003268801438324484,
+    7.99394200210807e-05,
+    2.0028624621981567e-05
+   ],
+   "bridge_slope_DKD": -2.0395929721974824,
+   "bridge_slope_KDK": -2.0395929291979313,
+   "decouple_flips": true,
+   "decouple_gap": 1.2885280428615031e-06,
+   "decouple_rel": 1.882818963573856e-05,
+   "disjoint_src_far": true,
+   "disjoint_src_near": true,
+   "energy_relative_band": 0.00012889940256728468,
+   "energy_secular_fraction": 0.004871323459951641,
+   "fixture": "D2_L3",
+   "geometry": {
+    "ball_radius": 1,
+    "far": [
+     2,
+     2,
+     2
+    ],
+    "near": [
+     1,
+     1,
+     1
+    ],
+    "src": [
+     0,
+     0,
+     0
+    ]
+   },
+   "kind": "D2",
+   "min_sector_eigenvalue": 1.7573593128807143,
+   "near_gt_far": true,
+   "order_bound": 0.0001,
+   "order_gap": 2.14652740027077e-11,
+   "qrec0_bare_receiver_projection": 0.06843739777646976,
+   "qrec0_response": 0.0,
+   "receiver_zero_response": 0.0,
+   "reversibility_frozen": 6.011334951938732e-15,
+   "reversibility_ramp": 9.413805522819228e-16,
+   "scale_abs": [
+    0.01710934944411744,
+    0.06843739777646976,
+    0.27374959110587904
+   ],
+   "scale_exponent": 2.0000000000000004,
+   "sign_cancellation_residual": 0.0,
+   "sign_invariance_residual": 0.0,
+   "source_off_response": 0.0,
+   "stationary_inverse_residual": 1.0039254072328698e-15,
+   "supp_src_far_overlap": [],
+   "supp_src_near_overlap": [],
+   "support_sizes": {
+    "far": 4,
+    "near": 7,
+    "src": 4
+   },
+   "symplectic_defect": 2.3635720811055985e-17
+  },
+  "D2_L6": {
+   "E_dec_executed": 0.016123112000249587,
+   "E_far_exec": 0.00020517868390703415,
+   "E_near_exec": 0.016123112000249587,
+   "E_same_executed": -0.016123112000249587,
+   "E_stat_far": -0.000205462235946944,
+   "E_stat_near": -0.016124595244145924,
+   "L": 6,
+   "bridge_envelope_ok": true,
+   "bridge_mean_converges": true,
+   "bridge_mean_dev": [
+    2.4132359497351652e-05,
+    6.083662456114747e-06,
+    1.4832438963371941e-06,
+    3.784782275813303e-07
+   ],
+   "bridge_means_KDK": [
+    -0.016100462884648573,
+    -0.01611851158168981,
+    -0.016123112000249587,
+    -0.016124216765918343
+   ],
+   "bridge_monotone": true,
+   "bridge_rms_DKD": [
+    0.0008786895150418192,
+    0.0002140707169429614,
+    5.32415776911312e-05,
+    1.354705901624481e-05
+   ],
+   "bridge_rms_KDK": [
+    0.0008786988226084597,
+    0.00021407297367037641,
+    5.324214092050558e-05,
+    1.354720188683417e-05
+   ],
+   "bridge_slope_DKD": -2.0065367898912903,
+   "bridge_slope_KDK": -2.0065368046286642,
+   "decouple_flips": true,
+   "decouple_gap": 1.4832438963371941e-06,
+   "decouple_rel": 9.198642656631581e-05,
+   "disjoint_src_far": true,
+   "disjoint_src_near": true,
+   "energy_relative_band": 0.00012667885954939547,
+   "energy_secular_fraction": 0.002921202951401839,
+   "fixture": "D2_L6",
+   "geometry": {
+    "ball_radius": 1,
+    "far": [
+     5,
+     5,
+     5
+    ],
+    "near": [
+     2,
+     2,
+     2
+    ],
+    "src": [
+     0,
+     0,
+     0
+    ]
+   },
+   "kind": "D2",
+   "min_sector_eigenvalue": 0.5941867925854836,
+   "near_gt_far": true,
+   "order_bound": 0.0001,
+   "order_gap": 2.810719712531551e-11,
+   "qrec0_bare_receiver_projection": 0.016123112000249587,
+   "qrec0_response": 0.0,
+   "receiver_zero_response": 0.0,
+   "reversibility_frozen": 5.815804235447596e-15,
+   "reversibility_ramp": 1.1757562889140388e-15,
+   "scale_abs": [
+    0.004030778000062397,
+    0.016123112000249587,
+    0.06449244800099835
+   ],
+   "scale_exponent": 1.9999999999999996,
+   "sign_cancellation_residual": 0.0,
+   "sign_invariance_residual": 0.0,
+   "source_off_response": 0.0,
+   "stationary_inverse_residual": 2.304507561557792e-15,
+   "supp_src_far_overlap": [],
+   "supp_src_near_overlap": [],
+   "support_sizes": {
+    "far": 4,
+    "near": 7,
+    "src": 4
+   },
+   "symplectic_defect": null
+  },
+  "D2_L7": {
+   "E_dec_executed": 0.014824417533065272,
+   "E_far_exec": 7.328359383213931e-05,
+   "E_near_exec": 0.014824417533065272,
+   "E_same_executed": -0.014824417533065272,
+   "E_stat_far": -7.339194647289424e-05,
+   "E_stat_near": -0.014825657521510754,
+   "L": 7,
+   "bridge_envelope_ok": true,
+   "bridge_mean_converges": true,
+   "bridge_mean_dev": [
+    1.265907255246397e-05,
+    3.0611915991622662e-06,
+    1.2399884454818155e-06,
+    3.577099790090521e-07
+   ],
+   "bridge_means_KDK": [
+    -0.014838316594063218,
+    -0.014822596329911591,
+    -0.014824417533065272,
+    -0.014825299811531745
+   ],
+   "bridge_monotone": true,
+   "bridge_rms_DKD": [
+    0.0007564833643488045,
+    0.00017738433452778318,
+    4.243099625631763e-05,
+    1.0847094599643038e-05
+   ],
+   "bridge_rms_KDK": [
+    0.0007564908512060609,
+    0.00017738614866806725,
+    4.24314567269379e-05,
+    1.084720995402828e-05
+   ],
+   "bridge_slope_DKD": -2.0435471499559963,
+   "bridge_slope_KDK": -2.043546740516604,
+   "decouple_flips": true,
+   "decouple_gap": 1.2399884454818155e-06,
+   "decouple_rel": 8.363800685957428e-05,
+   "disjoint_src_far": true,
+   "disjoint_src_near": true,
+   "energy_relative_band": 0.00012470776992090432,
+   "energy_secular_fraction": 0.0013649336633482442,
+   "fixture": "D2_L7",
+   "geometry": {
+    "ball_radius": 1,
+    "far": [
+     6,
+     6,
+     6
+    ],
+    "near": [
+     2,
+     2,
+     2
+    ],
+    "src": [
+     0,
+     0,
+     0
+    ]
+   },
+   "kind": "D2",
+   "min_sector_eigenvalue": 0.45672280493227896,
+   "near_gt_far": true,
+   "order_bound": 0.0001,
+   "order_gap": 5.415093720650965e-12,
+   "qrec0_bare_receiver_projection": 0.014824417533065272,
+   "qrec0_response": 0.0,
+   "receiver_zero_response": 0.0,
+   "reversibility_frozen": 6.090937542125938e-15,
+   "reversibility_ramp": 9.698760070164498e-16,
+   "scale_abs": [
+    0.003706104383266318,
+    0.014824417533065272,
+    0.05929767013226109
+   ],
+   "scale_exponent": 2.0,
+   "sign_cancellation_residual": 0.0,
+   "sign_invariance_residual": 0.0,
+   "source_off_response": 0.0,
+   "stationary_inverse_residual": 2.2978135372107597e-15,
+   "supp_src_far_overlap": [],
+   "supp_src_near_overlap": [],
+   "support_sizes": {
+    "far": 4,
+    "near": 7,
+    "src": 4
+   },
+   "symplectic_defect": null
+  }
+ },
+ "interpretation_firewall": [
+  "The tested object is a same-parameter executed-update response identity on the two declared carriers; it is NOT energy, NOT stress, NOT a physical coupling derivation or normalization, NOT a source-law selection, NOT gravity, NOT attraction language, NOT a rate, and NOT physical time.",
+  "The q_rec=0 row is a definition/wiring control only: q_rec*<rho_rec,phi> is zero by definition while the bare receiver projection is nonzero. It is not a physical leakage/no-leakage result.",
+  "The finite-Weyl NQ carrier join is not executed here and stays open; no open-real-space coframe K is claimed.",
+  "Carriers, ramp, hold window, grids and source/receiver supports are declared supplied structure; no new axiom, primitive, or premise class."
+ ],
+ "inventory": {
+  "derived": [
+   "exact matching of the transcribed c626 periodic and Dirichlet comparator eigenvalues",
+   "exactly reversible symplectic executed update (frozen and schedule-reversed)",
+   "adiabatic bridge: executed response's residual oscillation about E_stat decays as tau^-2",
+   "same-parameter even-ness in q; decoupled readout sign flip; q_rec=0 definition control",
+   "measured q^2 response scaling without refit",
+   "near/far inequality on the three declared D2 fixtures; exact D1 fixture diagnostics",
+   "kick/drift ordering agreement within the O(dt^2) bound sharing one adiabatic limit"
+  ],
+  "open": [
+   "selection/derivation of the carriers, ramp, coupling parameter q, supports and grids",
+   "any identification of q as a physical coupling",
+   "physical energy/stress/source/gravity identification (explicitly NOT claimed)",
+   "the finite-Weyl NQ carrier join and any open-real-space coframe K",
+   "continuum, nonlinear and strong-field extensions; endogenous source law"
+  ],
+  "supplied": [
+   "c576 L3/L6/L7 site-set convention and source_profiles texture function; no parent graph object imported",
+   "two declared carriers (periodic P0 graph Laplacian; open Dirichlet FD Laplacian)",
+   "bounded non-negative disjoint source/receiver supports and their frozen displacements",
+   "one declared coupling parameter q wired to both source insertion and receiver readout",
+   "quartic ramp 4u^3-3u^4, fixed hold window, leapfrog step, KDK/DKD orderings",
+   "geometric ramp-time ladder, submitted frozen adiabatic rate p=2 and tolerances",
+   "literal transcribed Cycle-626 comparator values, used as non-authoritative provenance"
+  ]
+ },
+ "pass": true,
+ "periodic_near_far_diagnostics": {
+  "reason": "For these submitted D1 source/receiver profiles and displacements, the absolute response at the declared far control exceeds the declared near response. These three finite-fixture rows are diagnostics only: they do not establish a general Green-function monotonicity result, locality wall, or no-go. The separate D2 fixtures carry the declared near/far inequality gate.",
+  "rows": [
+   {
+    "E_far_exec": 0.022633335889412826,
+    "E_near_exec": 0.020575787558040598,
+    "fixture": "D1_L3",
+    "near_gt_far": false
+   },
+   {
+    "E_far_exec": 0.06979648506526626,
+    "E_near_exec": 0.0064251165222604,
+    "fixture": "D1_L6",
+    "near_gt_far": false
+   },
+   {
+    "E_far_exec": 0.0580290623494681,
+    "E_near_exec": 0.0017999504213347653,
+    "fixture": "D1_L7",
+    "near_gt_far": false
+   }
+  ]
+ },
+ "pins": {
+  "c576_note": "5822c14b74de606d302beb637e03dd0a30968e6a7bf120723eb3da16e09e6768",
+  "c576_receipt": "bc719ca8d88662e082fd63db8f524d9af94749012208b5a76f2ea6200f305c3a",
+  "c576_script": "7980bff1293202656afeefb46c7c7dcf8145e748004b541d3619f19896c79ea7",
+  "c579_script": "e607e8a0d46fbb70e7be35d1897acebebdb8ad900a4ab69159e572f3fbc5c7ab",
+  "c604_receipt": "2fe20ba1ddbe304a11eb1809f76d552fdab89ff77d1c281d775d730c36021e90",
+  "c626_dirichlet_min": {
+   "3": 1.757,
+   "6": 0.594,
+   "7": 0.457
+  },
+  "c626_note": "1346e9c5aec6206642e64059eeff0b49d59df33f8fe0584c7c8537d3e2760893",
+  "c626_periodic_min_nonzero": 0.753,
+  "c626_receipt": "ab8489e9875e362d2b496b1f92464e6c5c642eb3cdb72b1755e77c4d70b752f6",
+  "c626_receiver_zero_response": 0.0,
+  "c626_sign_cancellation_residual": 0.0,
+  "c626_source_off_response": 0.0,
+  "campaign_head": "fb0ab5636e557d8de1da8e643f419867ae69197a"
+ },
+ "provenance_limits": [
+  "This runner computes deterministic support rows and writes a receipt; it sets no audit verdict or effective status.",
+  "Re-hash the imported c576 source-profile runner and its paired note/receipt. The c626/c604 values are literal transcribed comparators; their absent campaign artifacts are never read from disk and supply no authority.",
+  "The D1 near/far inversions are exact diagnostics for the submitted profiles and displacements only; they establish no general Green-function monotonicity result, locality wall, or no-go."
+ ],
+ "resources": {
+  "elapsed_seconds": 8.626734916004352,
+  "peak_rss_mb": 153.96875
+ },
+ "runner_role": "deterministic bounded-support runner; no audit or effective-status authority",
+ "tests_passed": 26,
+ "tests_total": 26,
+ "tolerances": {
+  "ANCHOR_TOL": 0.001,
+  "DECOUPLE_REL_TOL": 0.012,
+  "ENERGY_DRIFT_TOL": 0.05,
+  "ENVELOPE_C": 1.0,
+  "EXACT_ZERO_TOL": 1e-12,
+  "INVERSE_RESID_TOL": 1e-12,
+  "ORDER_DT2_COEFF": 1.0,
+  "POSITIVITY_MARGIN": 1e-06,
+  "P_TOL": 0.35,
+  "REVERSIBILITY_TOL": 1e-11,
+  "SCALE_EXP_TOL": 0.05,
+  "SECULAR_FRACTION_TOL": 0.2,
+  "SIGNAL": 1e-06,
+  "SIGN_INVARIANCE_TOL": 1e-10,
+  "SYMPLECTIC_TOL": 1e-11
+ }
+}

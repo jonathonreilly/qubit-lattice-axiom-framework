@@ -1,0 +1,4 @@
+interface:
+  display_name: "Science Fix Loop"
+  short_description: "Drain audited science and quarantine repairs"
+  default_prompt: "Use $science-fix-loop to drain every actionable science-repair and audit-quarantine item through reviewed PRs."

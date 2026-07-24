@@ -1,42 +1,309 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-23T19:46:25.209759+00:00",
+  "audit_invocation_history": [
+    "a7dcad5e760c425ab7f7e6ab8b95979e",
+    "48a525ebcdcd467393decde70c4d8a53",
+    "0117cfa80c984658911f3083eeeb9c50"
+  ],
+  "audit_invocation_id": "0117cfa80c984658911f3083eeeb9c50",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 4
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true,
+      "runner_path": "scripts/frontier_qcd_low_energy_running_bridge.py"
+    },
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 13.134,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_qcd_low_energy_running_bridge.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "189c6c50c09132d9b7bf2be53e7467d498c76303ca8483dee59f5580c78156d0",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "189c6c50c09132d9b7bf2be53e7467d498c76303ca8483dee59f5580c78156d0",
+    "runner_path": "scripts/frontier_qcd_low_energy_running_bridge.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 1123
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-judicial-1-20260723-fbe984d8",
+  "auditor_confidence": "judicial",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The runner genuinely computes and cross-checks the algebraic and finite-grid consequences of the defined map, so class A and bounded_theorem are correct. However, the restricted packet supplies no full one-hop authority authenticating the imported QCD beta function and pole-mass matching convention, making the result conditional under the rubric; K5 also asserts a derived boundary against interpreting T_2-T_1 as a remainder bound.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260723-fbe984d8\", \"judge\": 1, \"rationale\": \"The runner genuinely computes and cross-checks the algebraic and finite-grid consequences of the defined map, so class A and bounded_theorem are correct. However, the restricted packet supplies no full one-hop authority authenticating the imported QCD beta function and pole-mass matching convention, making the result conditional under the rubric; K5 also asserts a derived boundary against interpreting T_2-T_1 as a remainder bound.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"The exact T_1 formula on D and finite K1-K5 certificate for the defined two-loop QCD EFT map on G plus the center point, conditional on the supplied beta function, scales, and identity matching.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-2-20260723-5266ff6b\", \"judge\": 2, \"rationale\": \"The runner closes the algebraic and finite numerical map, but it cannot authenticate the supplied beta function, scales, or threshold-matching prescription; the restricted packet explicitly supplies no one-hop authorities. The appropriate result is therefore a conditional bounded theorem, and K5\\u2019s computed counterexample constitutes a derived_no_go_boundary assertion.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"The exact T_1 formula on D and finite K1-K5 certificate for the defined two-loop QCD EFT map on G plus the center point, conditional on the supplied beta function, scales, and identity matching.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260723-b207bca6\", \"judge\": 3, \"rationale\": \"The runner and displayed algebra close the transfer map on its stated analytic and finite domains, but only after accepting the supplied QCD beta function, physical scales, flavor segmentation, and identity matching. Because those inputs are not authenticated by a full one-hop authority in the restricted packet, the rubric requires audited_conditional. K5's unconstrained-higher-term counterexample is also an asserted derived no-go boundary, as the second auditor records.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"The exact T_1 formula on D and finite K1-K5 certificate for the defined two-loop QCD EFT map on G plus the center point, conditional on the supplied beta function, scales, and identity matching.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260723-447fc2f5\", \"judge\": 4, \"rationale\": \"The runner genuinely computes the stated algebraic and finite numerical certificate, but the restricted packet does not close or authenticate the supplied physical beta-function infrastructure, scales, and threshold prescription. The rubric therefore requires a conditional verdict. K5 also uses a computed unconstrained-alpha_s^4 counterexample to assert that the adjacent-order shift is not a remainder bound, so derived_no_go_boundary is the honest negative-assertion class.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"The exact T_1 formula on D and finite K1-K5 certificate for the defined two-loop QCD EFT map on G plus the center point, conditional on the supplied beta function, scales, and identity matching.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-5-20260723-df0e1bae\", \"judge\": 5, \"rationale\": \"The runner genuinely establishes the stated algebraic and finite numerical properties of the defined map, so class A and bounded_theorem are appropriate. However, the restricted packet contains no full one-hop authority authenticating the supplied QCD beta function, scales, or matching prescription, making the result audited_conditional under the rubric; K5 also asserts a derived no-go boundary through its counterexample to remainder-bound semantics.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"The exact T_1 formula on D and finite K1-K5 certificate for the defined two-loop QCD EFT map on G plus the center point, conditional on the supplied beta function, scales, and identity matching.\", \"A\", null, [\"derived_no_go_boundary\"]]}]",
   "claim_id": "qcd_low_energy_running_bridge_note_2026-05-01",
-  "claim_scope": null,
+  "claim_scope": "The exact T_1 formula on D and finite K1-K5 certificate for the defined two-loop QCD EFT map on G plus the center point, conditional on the supplied beta function, scales, and identity matching.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint_after_invalidation",
+  "claim_type_last_reviewed": "2026-07-23T19:46:25.209759+00:00",
+  "claim_type_provenance": "judicial_review",
   "criticality": "critical",
-  "cross_confirmation": null,
+  "cross_confirmation": {
+    "agreement_schema": "audit_tuple_v2",
+    "first_audit": {
+      "audit_date": "2026-07-23T19:42:44.687256+00:00",
+      "audit_invocation_id": "a7dcad5e760c425ab7f7e6ab8b95979e",
+      "auditor": "codex-audit-batch-A-20260723-c0d75851",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "chain_closes": true,
+      "chain_closure_explanation": "The coefficient substitutions, chain-rule conversion, one-loop integration, derivative, and two-loop implicit primitive independently reproduce the formulas used by the numerical implementation. The completed runner then verifies the explicitly finite K1-K5 claims without importing a target value or hard-coding an output table.",
+      "claim_scope": "The exact piecewise one-loop transfer formula on D = [0.085, 0.130] and the K1-K5 finite certificate for the defined piecewise two-loop QCD EFT map on the ten-point grid G and separate center point 0.1075, under the displayed coefficients, scales, flavor segments, and identity threshold matching.",
+      "claim_type": "bounded_theorem",
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Direct integration gives 1/T_1(a) = 1/a - L, while solving the displayed scalar two-loop equation on the n_f=6 and n_f=5 segments with identity carry yields the finite K1-K5 grid certificate.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "notes_for_re_audit_if_any": "If the scope later includes nonidentity threshold corrections, independently recheck the quoted pole-mass matching coefficient and direction convention.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 15,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 15
+      },
+      "verdict": "audited_clean",
+      "verdict_rationale": "The bounded claim closes internally: direct substitution gives the stated beta coefficients, the chain rule fixes the two-loop normalization, integration gives T_1 and its derivative, and differentiation of Phi_f gives the stated implicit segment relation. The runner computes all 15 reported checks using two adaptive solvers and an implicit solution, while its source also supplies a separate fixed-step reconstruction and hostile mutations; no fitted comparator or hard-coded result table is load-bearing. The continuum beta function, scales, flavor segmentation, and identity matching are explicitly supplied inputs, so this is a bounded transfer-map theorem rather than a framework-native QCD prediction."
+    },
+    "judicial_panel_record_v1": {
+      "cid": "qcd_low_energy_running_bridge_note_2026-05-01",
+      "disagreement_fingerprint": {
+        "claim_id": "qcd_low_energy_running_bridge_note_2026-05-01",
+        "first_audit_invocation_id": "a7dcad5e760c425ab7f7e6ab8b95979e",
+        "note_hash": "4ab786fc52cfdb804b765734898f580ed51d972f21b732a9b174f2e54ee00a47",
+        "schema": "judicial_disagreement_fingerprint_v1",
+        "seat_summaries_sha256": "d8eb4431d714291a0d86a866e6dc9d83c70e9de408e0d42218050b0e37237add",
+        "second_audit_invocation_id": "48a525ebcdcd467393decde70c4d8a53"
+      },
+      "failures": [],
+      "invocation_id": "0117cfa80c984658911f3083eeeb9c50",
+      "majority_count": 5,
+      "panel": 1,
+      "result": "majority_candidate",
+      "schema": "judicial_panel_record_v1",
+      "tally": [
+        {
+          "count": 5,
+          "tuple": [
+            "second",
+            "audited_conditional",
+            "bounded_theorem",
+            "The exact T_1 formula on D and finite K1-K5 certificate for the defined two-loop QCD EFT map on G plus the center point, conditional on the supplied beta function, scales, and identity matching.",
+            "A",
+            null,
+            [
+              "derived_no_go_boundary"
+            ]
+          ]
+        }
+      ],
+      "votes": [
+        {
+          "auditor": "codex-judicial-1-20260723-fbe984d8",
+          "first_auditor_error": "It treated the uncited supplied QCD beta-function and threshold-matching physics as sufficient for audited-clean closure despite the packet declaring no one-hop authorities, and it omitted K5's asserted derived no-go boundary.",
+          "hybrid_resolution_note": null,
+          "judge": 1,
+          "judgment_rationale": "The runner genuinely computes and cross-checks the algebraic and finite-grid consequences of the defined map, so class A and bounded_theorem are correct. However, the restricted packet supplies no full one-hop authority authenticating the imported QCD beta function and pole-mass matching convention, making the result conditional under the rubric; K5 also asserts a derived boundary against interpreting T_2-T_1 as a remainder bound.",
+          "negative_assertion_classes": [
+            "derived_no_go_boundary"
+          ],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "missing_dependency_edge: include byte-authenticated one-hop authority text for the standard two-loop QCD beta function and pole-mass threshold matching convention, then re-audit the same supplied-input scope.",
+          "ratified_claim_scope": "The exact T_1 formula on D and finite K1-K5 certificate for the defined two-loop QCD EFT map on G plus the center point, conditional on the supplied beta function, scales, and identity matching.",
+          "ratified_claim_type": "bounded_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "Each segment obeys Phi_f(alpha_out)-Phi_f(alpha_in)=[beta_0/(2 pi)] ln(mu_out/mu_in), which is solved on the n_f=6 and n_f=5 segments with identity carry at m_t.",
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_conditional",
+          "second_auditor_error": "none",
+          "sided_with": "second"
+        },
+        {
+          "auditor": "codex-judicial-2-20260723-5266ff6b",
+          "first_auditor_error": "It treats the supplied external QCD infrastructure as independently retained-grade input despite the packet explicitly providing no cited authorities, and it overlooks K5\u2019s derived negative boundary against remainder-bound semantics.",
+          "hybrid_resolution_note": null,
+          "judge": 2,
+          "judgment_rationale": "The runner closes the algebraic and finite numerical map, but it cannot authenticate the supplied beta function, scales, or threshold-matching prescription; the restricted packet explicitly supplies no one-hop authorities. The appropriate result is therefore a conditional bounded theorem, and K5\u2019s computed counterexample constitutes a derived_no_go_boundary assertion.",
+          "negative_assertion_classes": [
+            "derived_no_go_boundary"
+          ],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "missing_dependency_edge: include byte-authenticated one-hop authority text for the standard two-loop QCD beta function and pole-mass threshold matching convention, then re-audit the same supplied-input scope.",
+          "ratified_claim_scope": "The exact T_1 formula on D and finite K1-K5 certificate for the defined two-loop QCD EFT map on G plus the center point, conditional on the supplied beta function, scales, and identity matching.",
+          "ratified_claim_type": "bounded_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "Each segment obeys Phi_f(alpha_out)-Phi_f(alpha_in)=[beta_0/(2 pi)] ln(mu_out/mu_in), which is solved on the n_f=6 and n_f=5 segments with identity carry at m_t.",
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_conditional",
+          "second_auditor_error": "none",
+          "sided_with": "second"
+        },
+        {
+          "auditor": "codex-judicial-3-20260723-b207bca6",
+          "first_auditor_error": "It treated inputs declared in the audited source as independent retained-grade inputs. The packet supplies no one-hop authorities, while the rubric requires an explicit imported premise, boundary condition, or asymptotic authority to be closed by the restricted packet before an algebraic class-A result can receive audited_clean.",
+          "hybrid_resolution_note": null,
+          "judge": 3,
+          "judgment_rationale": "The runner and displayed algebra close the transfer map on its stated analytic and finite domains, but only after accepting the supplied QCD beta function, physical scales, flavor segmentation, and identity matching. Because those inputs are not authenticated by a full one-hop authority in the restricted packet, the rubric requires audited_conditional. K5's unconstrained-higher-term counterexample is also an asserted derived no-go boundary, as the second auditor records.",
+          "negative_assertion_classes": [
+            "derived_no_go_boundary"
+          ],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "missing_dependency_edge: include byte-authenticated one-hop authority text for the standard two-loop QCD beta function and pole-mass threshold matching convention, then re-audit the same supplied-input scope.",
+          "ratified_claim_scope": "The exact T_1 formula on D and finite K1-K5 certificate for the defined two-loop QCD EFT map on G plus the center point, conditional on the supplied beta function, scales, and identity matching.",
+          "ratified_claim_type": "bounded_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "Each segment obeys Phi_f(alpha_out)-Phi_f(alpha_in)=[beta_0/(2 pi)] ln(mu_out/mu_in), which is solved on the n_f=6 and n_f=5 segments with identity carry at m_t.",
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_conditional",
+          "second_auditor_error": "none",
+          "sided_with": "second"
+        },
+        {
+          "auditor": "codex-judicial-4-20260723-447fc2f5",
+          "first_auditor_error": "The first position incorrectly treated the supplied beta function, scales, and identity matching as independent retained-grade inputs despite the absence of authenticated one-hop authorities, and it omitted K5's asserted derived no-go boundary.",
+          "hybrid_resolution_note": null,
+          "judge": 4,
+          "judgment_rationale": "The runner genuinely computes the stated algebraic and finite numerical certificate, but the restricted packet does not close or authenticate the supplied physical beta-function infrastructure, scales, and threshold prescription. The rubric therefore requires a conditional verdict. K5 also uses a computed unconstrained-alpha_s^4 counterexample to assert that the adjacent-order shift is not a remainder bound, so derived_no_go_boundary is the honest negative-assertion class.",
+          "negative_assertion_classes": [
+            "derived_no_go_boundary"
+          ],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "missing_dependency_edge: include byte-authenticated one-hop authority text for the standard two-loop QCD beta function and pole-mass threshold matching convention, then re-audit the same supplied-input scope.",
+          "ratified_claim_scope": "The exact T_1 formula on D and finite K1-K5 certificate for the defined two-loop QCD EFT map on G plus the center point, conditional on the supplied beta function, scales, and identity matching.",
+          "ratified_claim_type": "bounded_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": null,
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_conditional",
+          "second_auditor_error": "none",
+          "sided_with": "second"
+        },
+        {
+          "auditor": "codex-judicial-5-20260723-df0e1bae",
+          "first_auditor_error": "The first position treats the supplied beta function, physical scales, and identity matching prescription as sufficient for audited_clean closure, although the rubric requires imported physical premises and boundary conditions to be closed by restricted-packet authorities.",
+          "hybrid_resolution_note": null,
+          "judge": 5,
+          "judgment_rationale": "The runner genuinely establishes the stated algebraic and finite numerical properties of the defined map, so class A and bounded_theorem are appropriate. However, the restricted packet contains no full one-hop authority authenticating the supplied QCD beta function, scales, or matching prescription, making the result audited_conditional under the rubric; K5 also asserts a derived no-go boundary through its counterexample to remainder-bound semantics.",
+          "negative_assertion_classes": [
+            "derived_no_go_boundary"
+          ],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "missing_dependency_edge: include byte-authenticated one-hop authority text for the standard two-loop QCD beta function and pole-mass threshold matching convention, then re-audit the same supplied-input scope.",
+          "ratified_claim_scope": "The exact T_1 formula on D and finite K1-K5 certificate for the defined two-loop QCD EFT map on G plus the center point, conditional on the supplied beta function, scales, and identity matching.",
+          "ratified_claim_type": "bounded_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "Each segment obeys Phi_f(alpha_out)-Phi_f(alpha_in)=[beta_0/(2 pi)] ln(mu_out/mu_in), which is solved on the n_f=6 and n_f=5 segments with identity carry at m_t.",
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_conditional",
+          "second_auditor_error": "none",
+          "sided_with": "second"
+        }
+      ]
+    },
+    "mode": "judicial_panel_majority",
+    "second_audit": {
+      "audit_date": "2026-07-23T19:42:44.696664+00:00",
+      "audit_invocation_id": "48a525ebcdcd467393decde70c4d8a53",
+      "auditor": "codex-audit-batch-B-20260723-39638438",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic and numerical map closes conditional on the explicitly supplied QCD beta function, scales, and identity matching. Those physics inputs are not derived or authenticated by a full one-hop authority in the restricted packet.",
+      "claim_scope": "The exact T_1 formula on D and finite K1-K5 certificate for the defined two-loop QCD EFT map on G plus the center point, conditional on the supplied beta function, scales, and identity matching.",
+      "claim_type": "bounded_theorem",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "Each segment obeys Phi_f(alpha_out)-Phi_f(alpha_in)=[beta_0/(2 pi)] ln(mu_out/mu_in), which is solved on the n_f=6 and n_f=5 segments with identity carry at m_t.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "notes_for_re_audit_if_any": "missing_dependency_edge: include byte-authenticated one-hop authority text for the standard two-loop QCD beta function and pole-mass threshold matching convention, then re-audit the same supplied-input scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 15,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 15
+      },
+      "verdict": "audited_conditional",
+      "verdict_rationale": "The runner genuinely derives the group factors, converts conventions, integrates the defined scalar flow, cross-checks two solvers and the implicit primitive, and computes all 15 checks rather than printing hard-coded targets. These results support K1-K5 on their stated analytic and finite domains, but the physical beta-function infrastructure, scales, and identity threshold prescription are declared supplied inputs without a full one-hop authority in this restricted packet. K5 additionally asserts a derived no-go boundary: with an unconstrained alpha_s^4 term, the adjacent-order shift is not a remainder bound. For that boundary, N1 supplies only the numerical-counterexample route; N2 has one premise condition, N3 finds declared inputs and conventions rather than hidden admissions, N4 has no prior witness, N5 lacks five-resolution live evidence, N6 and N8 do not change the scoped logic, and N7 lacks an independent steelman-resolution line."
+    },
+    "status": "third_confirmed_second",
+    "third_audit": {
+      "audit_date": "2026-07-23T19:46:25.209759+00:00",
+      "audit_invocation_id": "0117cfa80c984658911f3083eeeb9c50",
+      "auditor": "codex-judicial-1-20260723-fbe984d8",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "claim_scope": "The exact T_1 formula on D and finite K1-K5 certificate for the defined two-loop QCD EFT map on G plus the center point, conditional on the supplied beta function, scales, and identity matching.",
+      "claim_type": "bounded_theorem",
+      "first_auditor_error": "It treated the uncited supplied QCD beta-function and threshold-matching physics as sufficient for audited-clean closure despite the packet declaring no one-hop authorities, and it omitted K5's asserted derived no-go boundary.",
+      "independence": "judicial_review",
+      "judgment_rationale": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The runner genuinely computes and cross-checks the algebraic and finite-grid consequences of the defined map, so class A and bounded_theorem are correct. However, the restricted packet supplies no full one-hop authority authenticating the imported QCD beta function and pole-mass matching convention, making the result conditional under the rubric; K5 also asserts a derived boundary against interpreting T_2-T_1 as a remainder bound.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260723-fbe984d8\", \"judge\": 1, \"rationale\": \"The runner genuinely computes and cross-checks the algebraic and finite-grid consequences of the defined map, so class A and bounded_theorem are correct. However, the restricted packet supplies no full one-hop authority authenticating the imported QCD beta function and pole-mass matching convention, making the result conditional under the rubric; K5 also asserts a derived boundary against interpreting T_2-T_1 as a remainder bound.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"The exact T_1 formula on D and finite K1-K5 certificate for the defined two-loop QCD EFT map on G plus the center point, conditional on the supplied beta function, scales, and identity matching.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-2-20260723-5266ff6b\", \"judge\": 2, \"rationale\": \"The runner closes the algebraic and finite numerical map, but it cannot authenticate the supplied beta function, scales, or threshold-matching prescription; the restricted packet explicitly supplies no one-hop authorities. The appropriate result is therefore a conditional bounded theorem, and K5\\u2019s computed counterexample constitutes a derived_no_go_boundary assertion.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"The exact T_1 formula on D and finite K1-K5 certificate for the defined two-loop QCD EFT map on G plus the center point, conditional on the supplied beta function, scales, and identity matching.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260723-b207bca6\", \"judge\": 3, \"rationale\": \"The runner and displayed algebra close the transfer map on its stated analytic and finite domains, but only after accepting the supplied QCD beta function, physical scales, flavor segmentation, and identity matching. Because those inputs are not authenticated by a full one-hop authority in the restricted packet, the rubric requires audited_conditional. K5's unconstrained-higher-term counterexample is also an asserted derived no-go boundary, as the second auditor records.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"The exact T_1 formula on D and finite K1-K5 certificate for the defined two-loop QCD EFT map on G plus the center point, conditional on the supplied beta function, scales, and identity matching.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260723-447fc2f5\", \"judge\": 4, \"rationale\": \"The runner genuinely computes the stated algebraic and finite numerical certificate, but the restricted packet does not close or authenticate the supplied physical beta-function infrastructure, scales, and threshold prescription. The rubric therefore requires a conditional verdict. K5 also uses a computed unconstrained-alpha_s^4 counterexample to assert that the adjacent-order shift is not a remainder bound, so derived_no_go_boundary is the honest negative-assertion class.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"The exact T_1 formula on D and finite K1-K5 certificate for the defined two-loop QCD EFT map on G plus the center point, conditional on the supplied beta function, scales, and identity matching.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-5-20260723-df0e1bae\", \"judge\": 5, \"rationale\": \"The runner genuinely establishes the stated algebraic and finite numerical properties of the defined map, so class A and bounded_theorem are appropriate. However, the restricted packet contains no full one-hop authority authenticating the supplied QCD beta function, scales, or matching prescription, making the result audited_conditional under the rubric; K5 also asserts a derived no-go boundary through its counterexample to remainder-bound semantics.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"The exact T_1 formula on D and finite K1-K5 certificate for the defined two-loop QCD EFT map on G plus the center point, conditional on the supplied beta function, scales, and identity matching.\", \"A\", null, [\"derived_no_go_boundary\"]]}]",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "second_auditor_error": "none",
+      "sided_with": "second",
+      "verdict": "audited_conditional"
+    }
+  },
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 6,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "judicial_review",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 13.134,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Each segment obeys Phi_f(alpha_out)-Phi_f(alpha_in)=[beta_0/(2 pi)] ln(mu_out/mu_in), which is solved on the n_f=6 and n_f=5 segments with identity carry at m_t.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "derived_no_go_boundary"
+  ],
   "note_hash": "4ab786fc52cfdb804b765734898f580ed51d972f21b732a9b174f2e54ee00a47",
   "note_path": "docs/QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "missing_dependency_edge: include byte-authenticated one-hop authority text for the standard two-loop QCD beta function and pole-mass threshold matching convention, then re-audit the same supplied-input scope.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -332,5 +599,5 @@
   "runner_path": "scripts/frontier_qcd_low_energy_running_bridge.py",
   "title": "QCD `v -> M_Z` Supplied-Input Transfer-Map Theorem",
   "transitive_descendants": 1123,
-  "verdict_rationale": null
+  "verdict_rationale": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The runner genuinely computes and cross-checks the algebraic and finite-grid consequences of the defined map, so class A and bounded_theorem are correct. However, the restricted packet supplies no full one-hop authority authenticating the imported QCD beta function and pole-mass matching convention, making the result conditional under the rubric; K5 also asserts a derived boundary against interpreting T_2-T_1 as a remainder bound.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260723-fbe984d8\", \"judge\": 1, \"rationale\": \"The runner genuinely computes and cross-checks the algebraic and finite-grid consequences of the defined map, so class A and bounded_theorem are correct. However, the restricted packet supplies no full one-hop authority authenticating the imported QCD beta function and pole-mass matching convention, making the result conditional under the rubric; K5 also asserts a derived boundary against interpreting T_2-T_1 as a remainder bound.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"The exact T_1 formula on D and finite K1-K5 certificate for the defined two-loop QCD EFT map on G plus the center point, conditional on the supplied beta function, scales, and identity matching.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-2-20260723-5266ff6b\", \"judge\": 2, \"rationale\": \"The runner closes the algebraic and finite numerical map, but it cannot authenticate the supplied beta function, scales, or threshold-matching prescription; the restricted packet explicitly supplies no one-hop authorities. The appropriate result is therefore a conditional bounded theorem, and K5\\u2019s computed counterexample constitutes a derived_no_go_boundary assertion.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"The exact T_1 formula on D and finite K1-K5 certificate for the defined two-loop QCD EFT map on G plus the center point, conditional on the supplied beta function, scales, and identity matching.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260723-b207bca6\", \"judge\": 3, \"rationale\": \"The runner and displayed algebra close the transfer map on its stated analytic and finite domains, but only after accepting the supplied QCD beta function, physical scales, flavor segmentation, and identity matching. Because those inputs are not authenticated by a full one-hop authority in the restricted packet, the rubric requires audited_conditional. K5's unconstrained-higher-term counterexample is also an asserted derived no-go boundary, as the second auditor records.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"The exact T_1 formula on D and finite K1-K5 certificate for the defined two-loop QCD EFT map on G plus the center point, conditional on the supplied beta function, scales, and identity matching.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260723-447fc2f5\", \"judge\": 4, \"rationale\": \"The runner genuinely computes the stated algebraic and finite numerical certificate, but the restricted packet does not close or authenticate the supplied physical beta-function infrastructure, scales, and threshold prescription. The rubric therefore requires a conditional verdict. K5 also uses a computed unconstrained-alpha_s^4 counterexample to assert that the adjacent-order shift is not a remainder bound, so derived_no_go_boundary is the honest negative-assertion class.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"The exact T_1 formula on D and finite K1-K5 certificate for the defined two-loop QCD EFT map on G plus the center point, conditional on the supplied beta function, scales, and identity matching.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-5-20260723-df0e1bae\", \"judge\": 5, \"rationale\": \"The runner genuinely establishes the stated algebraic and finite numerical properties of the defined map, so class A and bounded_theorem are appropriate. However, the restricted packet contains no full one-hop authority authenticating the supplied QCD beta function, scales, or matching prescription, making the result audited_conditional under the rubric; K5 also asserts a derived no-go boundary through its counterexample to remainder-bound semantics.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"The exact T_1 formula on D and finite K1-K5 certificate for the defined two-loop QCD EFT map on G plus the center point, conditional on the supplied beta function, scales, and identity matching.\", \"A\", null, [\"derived_no_go_boundary\"]]}]"
 }

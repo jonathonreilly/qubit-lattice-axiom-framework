@@ -221,6 +221,9 @@ default session is:
    lock to its batch/panel children. It runs the panel sweep after every batch
    termination before propagating any unrelated hard batch failure, so a mixed
    result cannot strand a valid judicial handoff.
+   Keep the printed campaign artifact directory. It is the durable operational
+   record for schema, compute, blocked-reentry, and safely rolled-back
+   transaction exclusions; it does not carry scientific authority.
 3. If the user names a lane, pass `--lane <name>`. Otherwise the orchestrator
    iterates lanes from `docs/audit/data/lane_certification_config.json`,
    selecting entries whose generated `lane_certification.json` record still
@@ -263,6 +266,21 @@ least every 15 minutes — never silence for a long run.
 - A quiet worker is bounded by the configured stall timer, and every
   supervisor phase continues to emit the 15-minute progress summary. Do not
   leave a drain silently waiting past those bounds.
+- One full pipeline invocation must reach a generated-state fixed point.
+  In a full run, `compute_load_bearing.py` first refreshes topology
+  `criticality` from the newly built graph before the ledger seeder consumes
+  it. Because that seeder can discover rows absent from the pre-seed ledger,
+  load-bearing runs again and a second idempotent seed pass consumes the
+  refreshed criticality and records the producer receipt before the static
+  checkpoint binds classifier inputs. The final load-bearing pass refreshes
+  status-dependent ancestor metrics after the effective-status/invalidation/
+  restore fixed point. Pipeline-produced ledger status-dependent metrics are
+  derived outputs in the static checkpoint; topology `criticality` remains
+  fingerprinted because the skipped ledger seeder consumes its prior value
+  when deciding whether legacy terminal rows require claim-type re-audit.
+  Their underlying notes, dependency edges, runners, and classifier inputs
+  remain fingerprinted. Never accept a design that requires a second
+  operator-run pipeline merely to stabilize the first.
 - Tracked generated audit surfaces must be commit-invariant. Never embed the
   current `HEAD` commit in a tracked pipeline output: committing that output
   changes `HEAD` and guarantees fresh dirt at the next regeneration.
@@ -289,6 +307,47 @@ least every 15 minutes — never silence for a long run.
   mechanically verified generated-state condition, and relaunch exactly one
   canonical top-level drainer. Do not leave a recoverable sync condition as a
   parked audit campaign.
+
+## Campaign Failure Taxonomy And Persistence
+
+The drainer separates claim-local operational failures from global integrity
+failures. This boundary is fail-closed and does not weaken any audit gate.
+
+- **Claim-local, campaign-quarantined:** exhausted schema delivery; an explicit
+  `compute_required` skip; a post-verdict row that immediately re-enters
+  selection; or an apply/pipeline/lint failure for one validated delivery only
+  after rollback to the synchronized `origin/main` parent is verified clean.
+  Record the exact cause, exclude only that claim for the current campaign,
+  and continue every unrelated ready row.
+- **Resumable control flow:** a banked valid critical seat awaiting its peer,
+  or `judicial_panel_required`. Resume it through the canonical batch/panel
+  edge; neither is a campaign failure.
+- **Global retryable:** a transient fetch/push failure whose remote outcome can
+  be reconciled exactly. Reconcile the intended commit OID before replay; never
+  blindly repeat an uncertain push.
+- **Global hard stop:** dirty or divergent source state, failed rollback,
+  repository invariant failure, unclassifiable generated diff, corrupted
+  campaign state, unavailable required audit model, authentication failure
+  after bounded retry, or an applyability/policy defect that cannot be scoped
+  to one row. Preserve artifacts and stop before minting authority.
+- Treat the campaign exclusion JSONL as a closed operational schema. Reject
+  blank records, duplicate JSON keys, unknown exclusion reasons, noncanonical
+  claim ids, non-finite numbers, noncanonical UTC timestamps, missing or
+  reason-incompatible failure evidence, unverified transaction rollback
+  evidence, and unexpected fields at every nesting level. A damaged record
+  must hard-stop the whole campaign rather than silently suppressing a claim.
+- Transaction rollback proof is stricter than the normal main-checkout guard:
+  after resetting to the captured `origin/main` OID, require literal empty
+  `git status --porcelain` plus exact local/remote OID equality. The narrowly
+  tolerated lane-certification provenance drift is not clean rollback proof.
+
+If the product surface supports a persistent goal, use it as a watchdog around
+the detached canonical drainer, not as a replacement for the drainer. The goal
+is: keep one clean independent-main campaign running or canonically resumed;
+preserve every Nature-grade gate; continue through claim-local quarantines; and
+stop only at a genuine backlog fixed point, credit exhaustion, or a verified
+global integrity/tooling blocker. A goal cannot repair a nonzero pipeline or
+supervisor exit by itself.
 
 ## Scaling: The One Canonical Fan-Out
 
@@ -473,6 +532,45 @@ The graph-cycle warning is currently expected. Treat any error as a blocker.
 - Treat an accepted verdict as a blocked-row reentry when the post-pipeline row is again `unaudited` and the canonical development-tier selector would immediately choose it. Exclude it for the rest of the campaign, report `blocked_row_reentry_quarantined`, and continue draining every other eligible row. Do not exclude `audit_in_progress` / `awaiting_second` rows; they must resume the missing clean seat normally.
 - Do not stop the top-level drainer merely because a row was excluded this way. Reach the fixed point over all non-excluded rows, then report the blocked rows and their exact invalidation reasons separately from schema-invalid quarantines.
 - Do not write an unsupported blocked verdict into the ledger unless `apply_audit.py` provides such a route. Report skipped blocked rows at the end of the loop and require upstream dependency/status repair before retrying them.
+
+## Quarantine And Skip Repair
+
+Quarantines and skips are routing state, never evidence about whether a claim
+is true. Do not convert them into `audited_conditional`, `audited_failed`, or
+any other ledger verdict. Inspect a completed campaign with:
+
+```bash
+python3 docs/audit/scripts/audit_campaign_repair.py \
+  --campaign-workdir /tmp/audit_loop_campaign_<id>
+```
+
+The campaign workdir carries two fail-closed append-only surfaces:
+`campaign-row-exclusions.jsonl` suppresses typed claim-local failures only for
+that campaign, while `campaign-selector-skips.jsonl` records every canonical
+selector disposition without suppressing it. The repair helper joins both to
+the current ledger. A missing route is an operational defect; do not leave a
+skip only in transient stdout.
+
+Repair and re-entry are reason-specific:
+
+| Operational result | Required repair | Re-entry |
+| --- | --- | --- |
+| `schema_invalid_quarantined` | Preserve the malformed response and exact validator errors; correct the CLI transport schema, prompt, or bounded packet-completion defect. Never edit the scientific judgment into validity. | Start a new campaign so a fresh restricted-context seat is selected. |
+| `compute_required_quarantined` / `compute_required` | Produce a SHA-pinned runner cache with `cached_runner_output.py`, a sliced deterministic certificate, or an independent derivation; then run the full pipeline and strict lint. | Start a new campaign after the artifact is current. |
+| `blocked_row_reentry_quarantined` | Repair the recorded classifier promotion, dependency/status cycle, note-hash drift, or other invalidation cause. Require one converged full pipeline. | Start a new campaign only after the row no longer immediately returns to the same dep-ready state. |
+| `claim_transaction_quarantined` | Fix the recorded apply, pipeline, or lint defect and prove the clean full pipeline converges. The failed delivery minted no verdict. | Use a fresh seat in a new campaign unless canonical tooling verifies an exact preserved-envelope replay against the current source/seat fingerprint. |
+| `dependencies are not retained-grade` | Audit or repair the named upstream dependency; do not force the downstream row. | Automatic when dependency closure becomes retained-grade and the pipeline refreshes the queue. |
+| `no_go row` or `source shape requires forensic tier` | Run the required N1-N8 forensic path, one canary at a time. | Through the forensic selector, never by forcing the development batch. |
+| `claim_type ... not batch-auditable` | Route `meta` or `decoration` only when explicitly requested and through their compatible apply contract. | Targeted audit, not default development selection. |
+| `missing ledger row` | Restore or register the canonical row and pass the full pipeline, strict lint, and repository invariants. | New campaign after registry repair. |
+| `judicial_panel_required` | No repair: this is the normal two-seat disagreement handoff. | Immediate five-judge panel, then resume the same lane. |
+
+The exclusion JSONL is append-only incident provenance for one campaign. Do
+not delete individual records to force retry and do not reuse the old campaign
+workdir after repairing prerequisites. Start a new campaign workdir; the row is
+then eligible under current queue and selector rules. A campaign fixed point
+with exclusions means “all non-excluded actionable work drained,” not “the
+entire audit backlog is empty.”
 
 ## Long-Running Runner / Timeout Guard
 
@@ -915,8 +1013,9 @@ policy blocker prevents progress:
 | --- | --- |
 | Five-judge panel has no 3-of-5 majority, sides with neither original audit, or produces a hybrid / currently unapplyable tuple | Run another five-judge panel with all prior panel outcomes in context |
 | Cross-confirmation disagreement exists but the five-judge panel cannot be run with the required context/model | Stop as a tooling availability blocker |
-| `apply_audit.py` rejects the verdict JSON or blocks on a hard rule | Stop as an audit tooling blocker after preserving the rejected JSON and exact error |
-| `audit_lint.py --strict` fails after applying the verdict | Restore the pre-apply generated audit diff and stop as a verification blocker |
+| A batch claim's apply/pipeline/lint transaction fails and rollback to synchronized `origin/main` is verified clean | Quarantine that claim for the campaign, preserve the validated delivery and exact error, and continue unrelated rows |
+| `apply_audit.py` rejects a targeted/manual verdict JSON or a hard rule cannot be scoped to one cleanly rolled-back batch claim | Stop as an audit tooling blocker after preserving the rejected JSON and exact error |
+| `audit_lint.py --strict` fails and rollback cannot be verified clean, or the same infrastructure failure repeats across unrelated claims | Stop as a global verification blocker |
 
 ## Commit And Push
 
@@ -962,8 +1061,9 @@ After each successful direct-main push:
 2. If time and user intent allow, fetch `origin/main`, refresh the queue, exclude any session-local blocked/skip rows, and start the next claim.
 3. Stop if there is an ambiguous independence issue, source-note hash drift that cannot be resolved mechanically, or an audit requiring domain expertise beyond the provided authorities.
 
-For unresolved hard tooling or policy blockers listed above, do not push to
-`main`; preserve the rejected JSON, panel logs, and exact command output, then
-report the blocker. Do not stop merely because a five-judge panel occurred or
-because a panel was unresolved; continue with a fresh panel carrying the prior
-panel outcomes in context.
+For unresolved global hard tooling or policy blockers listed above, do not
+push to `main`; preserve the rejected JSON, panel logs, campaign exclusion
+records, and exact command output, then report the blocker. A verified
+claim-local rollback is quarantined and does not stop the campaign. Do not stop
+merely because a five-judge panel occurred or because a panel was unresolved;
+continue with a fresh panel carrying the prior panel outcomes in context.

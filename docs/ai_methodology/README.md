@@ -100,6 +100,7 @@ Use it to answer:
   [`skills/physics-claim-reviewer/SKILL.md`](./skills/physics-claim-reviewer/SKILL.md),
   [`skills/review-loop/SKILL.md`](./skills/review-loop/SKILL.md),
   [`skills/audit-loop/SKILL.md`](./skills/audit-loop/SKILL.md),
+  [`skills/science-fix-loop/SKILL.md`](./skills/science-fix-loop/SKILL.md),
   [`skills/reviewer-backpressure-integrator/SKILL.md`](./skills/reviewer-backpressure-integrator/SKILL.md),
   [`skills/methodology-paper-synthesizer/SKILL.md`](./skills/methodology-paper-synthesizer/SKILL.md)
 

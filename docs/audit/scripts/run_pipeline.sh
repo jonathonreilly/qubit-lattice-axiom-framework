@@ -14,15 +14,20 @@
 #
 # Run order:
 #   1. build_citation_graph.py       -> data/citation_graph.json
+#  1c. compute_load_bearing.py       -> refreshes topology criticality before
+#                                       the ledger seeder consumes it
 #   2. seed_audit_ledger.py          -> data/audit_ledger.json (preserves
 #                                       prior audits if note hash unchanged)
 #   3. sanitize_legacy_audit_artifacts.py
 #                                      -> removes deprecated author-status keys
 #   4. classify_runner_passes.py     -> data/runner_classification.json
 #                                       (heuristic; optional, slow on cold cache)
-#   5. compute_load_bearing.py       -> updates graph criticality metrics
+#   5. compute_load_bearing.py       -> updates graph criticality metrics used
+#                                       by invalidation
 #   6. compute_effective_status.py   -> applies claim_type-based status + summary
 #   7. invalidate_stale_audits.py    -> resets stale audit verdicts
+#  7a. compute_load_bearing.py       -> refreshes status-dependent descendant
+#                                       metrics after the status fixed point
 #   8. build_cycle_inventory.py      -> data/cycle_inventory.json
 #   9. compute_audit_queue.py        -> data/audit_queue.json (consumes
 #                                       cycle inventory for break targets)
@@ -90,6 +95,13 @@ if [[ "${PIPELINE_MODE}" == "full" ]]; then
   echo "==> 1b/18 write_citation_graph_manifest.py (tracked graph-topology acknowledgment)"
   python3 docs/audit/scripts/write_citation_graph_manifest.py
 
+  echo "==> 1c/18 compute_load_bearing.py pre-seed topology refresh"
+  # seed_audit_ledger.py consumes prior criticality when deciding whether a
+  # legacy terminal row needs claim-type re-audit. Refresh it from the newly
+  # built graph before seeding so one full run reaches that semantic fixed
+  # point and the static checkpoint can keep criticality fail-closed.
+  python3 docs/audit/scripts/compute_load_bearing.py
+
   echo "==> 2/18 seed_audit_ledger.py"
   python3 docs/audit/scripts/seed_audit_ledger.py
 else
@@ -99,7 +111,18 @@ fi
 echo "==> 3/18 sanitize_legacy_audit_artifacts.py"
 python3 docs/audit/scripts/sanitize_legacy_audit_artifacts.py
 
+# Run the ordinary pre-invalidation metric pass before checkpoint capture.
+# Seeding may add rows that did not exist during the pre-seed refresh; every
+# such row must receive topology criticality before the full-build fingerprint
+# is bound. A final seed pass below then consumes that refreshed criticality
+# and records the producer receipt at the actual classifier-input fixed point.
+echo "==> 5/18 compute_load_bearing.py"
+python3 docs/audit/scripts/compute_load_bearing.py
+
 if [[ "${PIPELINE_MODE}" == "full" ]]; then
+  echo "==> 3a/18 seed_audit_ledger.py fixed-point receipt"
+  python3 docs/audit/scripts/seed_audit_ledger.py
+
   echo "==> 3b/18 static_pipeline_checkpoint.py prepare (fresh graph/seed proof)"
   python3 docs/audit/scripts/static_pipeline_checkpoint.py prepare
 
@@ -111,9 +134,6 @@ if [[ "${PIPELINE_MODE}" == "full" ]]; then
 else
   echo "==> 4/18 reuse verified runner classification (verdict-only)"
 fi
-
-echo "==> 5/18 compute_load_bearing.py"
-python3 docs/audit/scripts/compute_load_bearing.py
 
 echo "==> 6/18 compute_effective_status.py"
 python3 docs/audit/scripts/compute_effective_status.py
@@ -151,6 +171,14 @@ if [[ "${invalidated}" != "0" || "${restored}" != "0" ]]; then
   echo "invalidate/restore did not reach a fixed point after 10 passes (joint invalidation/restoration)" >&2
   exit 1
 fi
+
+echo "==> 7a/18 compute_load_bearing.py post-status fixed point"
+# The first load-bearing pass supplies topology-derived criticality to the
+# invalidator.  load_bearing_score and max_descendant_status also consume
+# effective_status, which the invalidation/restore loop can change.  Recompute
+# them here so one pipeline invocation reaches generated-state fixed point
+# instead of leaving ancestors one pass stale.
+python3 docs/audit/scripts/compute_load_bearing.py
 
 echo "==> 7b/18 compute_lane_certification.py post-invalidation fixed point"
 python3 docs/audit/scripts/compute_lane_certification.py

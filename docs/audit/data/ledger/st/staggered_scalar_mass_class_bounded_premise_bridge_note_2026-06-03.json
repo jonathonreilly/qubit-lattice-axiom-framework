@@ -1,44 +1,311 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-24T00:13:49.888242+00:00",
+  "audit_invocation_history": [
+    "3328479275674f03be7e6fcc8d8c53a2",
+    "7033f76e247e4573805a65681479979d",
+    "acb6d8a86b8345e5ba7d9d56ce882340"
+  ],
+  "audit_invocation_id": "acb6d8a86b8345e5ba7d9d56ce882340",
+  "audit_state_snapshot": {
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+    },
+    "dep_claim_type": {
+      "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+    },
+    "deps": [
+      "staggered_only_det_positivity_case_a_note_2026-05-17"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 9.996,
+    "runner_hash": "d186e6326c3af0cb88a10cfc762ec6c207f3020e18f6d161e91d1e2950527ccb",
+    "transitive_descendants": 721
+  },
+  "audit_status": "audited_renaming",
+  "auditor": "codex-judicial-1-20260724-42a033a9",
+  "auditor_confidence": "judicial",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "Five-judge panel majority (4/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The load-bearing move stipulates the real-positive scalar mass class rather than deriving it, making class E and audited_renaming appropriate. The runner verifies algebraic membership and sampled determinant-phase consequences, while the exact positivity authority is clipped; the note also explicitly uses the mixed-mass sample to justify an independent conditional wall.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260724-42a033a9\", \"judge\": 1, \"rationale\": \"The load-bearing move stipulates the real-positive scalar mass class rather than deriving it, making class E and audited_renaming appropriate. The runner verifies algebraic membership and sampled determinant-phase consequences, while the exact positivity authority is clipped; the note also explicitly uses the mixed-mass sample to justify an independent conditional wall.\", \"tuple\": [\"second\", \"audited_renaming\", \"bounded_theorem\", \"Given the row-local premise M = mI with m > 0 and M_epsilon = 0, the I/epsilon membership exclusions, cited scalar-line determinant positivity, and finite-sample phase checks were audited.\", \"E\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\"]]}, {\"auditor\": \"codex-judicial-2-20260724-99f51a41\", \"judge\": 2, \"rationale\": \"The load-bearing move explicitly stipulates the row-local scalar-mass class M = mI, m > 0, with M_epsilon = 0, after which the runner checks membership and consequences; class E and audited_renaming are therefore correct. The note both names the bounded wall and gives a conditional rationale for its independence by showing that mixed masses can pass the sampled determinant-positivity gate. The second position captures both negative-assertion classes and the full audited scope, while recognizing that the clipped authority prevents independent closure of exact positivity.\", \"tuple\": [\"second\", \"audited_renaming\", \"bounded_theorem\", \"Given the row-local premise M = mI with m > 0 and M_epsilon = 0, the I/epsilon membership exclusions, cited scalar-line determinant positivity, and finite-sample phase checks were audited.\", \"E\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\"]]}, {\"auditor\": \"codex-judicial-3-20260724-d8ffd1a6\", \"judge\": 3, \"rationale\": \"The load-bearing move stipulates the real-positive scalar-mass class rather than deriving it, so class E and audited_renaming are correct. The runner checks exact basis decomposition and finite samples after that stipulation, while the cited exact-positivity authority is clipped. The source also gives an explicit conditional rationale for an independent named wall, supporting both declared negative-assertion classes.\", \"tuple\": [\"second\", \"audited_renaming\", \"bounded_theorem\", \"Given the row-local premise M = mI with m > 0 and M_epsilon = 0, the I/epsilon membership exclusions, cited scalar-line determinant positivity, and finite-sample phase checks were audited.\", \"E\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\"]]}, {\"auditor\": \"codex-judicial-4-20260724-1b307fcb\", \"judge\": 4, \"rationale\": \"The source explicitly presents the scalar-mass action class as a row-local premise, and the runner records that premise before checking algebraic membership and finite-sample determinant-phase consequences. It does not derive the class from retained inputs, so the load-bearing move is class E and the correct verdict is audited_renaming within the first auditor\\u2019s bounded scope. The mixed-mass computation supports the single declared bounded named-wall class.\", \"tuple\": [\"first\", \"audited_renaming\", \"bounded_theorem\", \"Row-local introduction of the real-positive scalar mass class M=mI with m>0 and M_epsilon=0, together with exact I/epsilon membership tests and finite-sample determinant-phase consequences.\", \"E\", null, [\"bounded_with_named_walls\"]]}, {\"auditor\": \"codex-judicial-5-20260724-456104ec\", \"judge\": 5, \"rationale\": \"The load-bearing scalar-mass class is stipulated as a row-local premise, so class E and audited_renaming are correct. The runner verifies membership and sampled consequences but does not derive the premise; the note also asserts both a bounded named wall and a conditional rationale for that wall by showing determinant positivity alone does not exclude mixed masses.\", \"tuple\": [\"second\", \"audited_renaming\", \"bounded_theorem\", \"Given the row-local premise M = mI with m > 0 and M_epsilon = 0, the I/epsilon membership exclusions, cited scalar-line determinant positivity, and finite-sample phase checks were audited.\", \"E\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\"]]}]",
   "claim_id": "staggered_scalar_mass_class_bounded_premise_bridge_note_2026-06-03",
-  "claim_scope": null,
+  "claim_scope": "Given the row-local premise M = mI with m > 0 and M_epsilon = 0, the I/epsilon membership exclusions, cited scalar-line determinant positivity, and finite-sample phase checks were audited.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint_after_invalidation",
+  "claim_type_last_reviewed": "2026-07-24T00:13:49.888242+00:00",
+  "claim_type_provenance": "judicial_review",
   "criticality": "critical",
-  "cross_confirmation": null,
+  "cross_confirmation": {
+    "agreement_schema": "audit_tuple_v2",
+    "first_audit": {
+      "audit_date": "2026-07-24T00:09:01.947690+00:00",
+      "audit_invocation_id": "3328479275674f03be7e6fcc8d8c53a2",
+      "auditor": "codex-audit-batch-A-20260724-47566045",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner hard-codes the scalar-mass action class and checks consequences after its introduction; it does not derive that class from retained inputs. The clipped Case A authority also prevents an independent audit of the imported exact determinant-positivity theorem.",
+      "claim_scope": "Row-local introduction of the real-positive scalar mass class M=mI with m>0 and M_epsilon=0, together with exact I/epsilon membership tests and finite-sample determinant-phase consequences.",
+      "claim_type": "bounded_theorem",
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The reviewed mass action class is introduced as the real scalar line M=mI, m>0, with M_epsilon=0.",
+      "load_bearing_step_class": "E",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls"
+      ],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive the scalar-mass action-class selection from retained inputs and rebuild the restricted packet with the complete retained Case A authority before re-audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 22,
+        "B": 0,
+        "C": 6,
+        "D": 0,
+        "total_pass": 28
+      },
+      "verdict": "audited_renaming",
+      "verdict_rationale": "Issue: The load-bearing scalar-mass action class is introduced as a row-local definition or premise, and the packet clips the retained authority used for exact determinant positivity. Why this blocks: the runner verifies membership and finite-sample phase consequences after hard-coding the premise, but it neither derives the class nor permits an independent check of the imported exact theorem. Repair target: supply a retained bridge deriving the scalar-mass action-class selection and rebuild the packet with the complete Case A proof. Claim boundary until fixed: the scalar/epsilon decompositions and sampled phase checks remain bounded support, and the only supported named-wall judgment is that sampled determinant positivity does not itself impose the scalar class; no closure of all mixed or pseudoscalar routes follows."
+    },
+    "judicial_panel_record_v1": {
+      "cid": "staggered_scalar_mass_class_bounded_premise_bridge_note_2026-06-03",
+      "disagreement_fingerprint": {
+        "claim_id": "staggered_scalar_mass_class_bounded_premise_bridge_note_2026-06-03",
+        "first_audit_invocation_id": "3328479275674f03be7e6fcc8d8c53a2",
+        "note_hash": "7cc69a28027684d1eee6a5a0bf0aabec2d8cf9a5a04765eb9cfd331a49d27ab9",
+        "schema": "judicial_disagreement_fingerprint_v1",
+        "seat_summaries_sha256": "f0383cbdf2e8def7083a36bb2ff1bda962190945bf445dd251e5dc6bd3b2af9c",
+        "second_audit_invocation_id": "7033f76e247e4573805a65681479979d"
+      },
+      "failures": [],
+      "invocation_id": "acb6d8a86b8345e5ba7d9d56ce882340",
+      "majority_count": 4,
+      "panel": 1,
+      "result": "majority_candidate",
+      "schema": "judicial_panel_record_v1",
+      "tally": [
+        {
+          "count": 4,
+          "tuple": [
+            "second",
+            "audited_renaming",
+            "bounded_theorem",
+            "Given the row-local premise M = mI with m > 0 and M_epsilon = 0, the I/epsilon membership exclusions, cited scalar-line determinant positivity, and finite-sample phase checks were audited.",
+            "E",
+            null,
+            [
+              "bounded_with_named_walls",
+              "conditional_wall_rationale"
+            ]
+          ]
+        },
+        {
+          "count": 1,
+          "tuple": [
+            "first",
+            "audited_renaming",
+            "bounded_theorem",
+            "Row-local introduction of the real-positive scalar mass class M=mI with m>0 and M_epsilon=0, together with exact I/epsilon membership tests and finite-sample determinant-phase consequences.",
+            "E",
+            null,
+            [
+              "bounded_with_named_walls"
+            ]
+          ]
+        }
+      ],
+      "votes": [
+        {
+          "auditor": "codex-judicial-1-20260724-42a033a9",
+          "first_auditor_error": "The first position omits conditional_wall_rationale even though the note explicitly argues that mixed masses can pass the determinant-positivity gate and therefore the scalar-class wall remains an independent condition; its scope also does not state as clearly that the audited consequences are conditional on the row-local premise.",
+          "hybrid_resolution_note": null,
+          "judge": 1,
+          "judgment_rationale": "The load-bearing move stipulates the real-positive scalar mass class rather than deriving it, making class E and audited_renaming appropriate. The runner verifies algebraic membership and sampled determinant-phase consequences, while the exact positivity authority is clipped; the note also explicitly uses the mixed-mass sample to justify an independent conditional wall.",
+          "negative_assertion_classes": [
+            "bounded_with_named_walls",
+            "conditional_wall_rationale"
+          ],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: derive the scalar-mass-only action class M = mI, m > 0, M_epsilon = 0 from retained inputs and regenerate the restricted packet with the complete Case A authority.",
+          "ratified_claim_scope": "Given the row-local premise M = mI with m > 0 and M_epsilon = 0, the I/epsilon membership exclusions, cited scalar-line determinant positivity, and finite-sample phase checks were audited.",
+          "ratified_claim_type": "bounded_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "The reviewed mass action class is introduced as the real scalar line M = m I, m > 0, with M_epsilon = 0.",
+          "ratified_load_bearing_step_class": "E",
+          "ratified_verdict": "audited_renaming",
+          "second_auditor_error": "none",
+          "sided_with": "second"
+        },
+        {
+          "auditor": "codex-judicial-2-20260724-99f51a41",
+          "first_auditor_error": "The first position omits conditional_wall_rationale even though the note expressly argues that sampled mixed-mass determinant positivity leaves the scalar-class wall independent; its scope also excludes the cited scalar-line positivity input that the note consumes.",
+          "hybrid_resolution_note": null,
+          "judge": 2,
+          "judgment_rationale": "The load-bearing move explicitly stipulates the row-local scalar-mass class M = mI, m > 0, with M_epsilon = 0, after which the runner checks membership and consequences; class E and audited_renaming are therefore correct. The note both names the bounded wall and gives a conditional rationale for its independence by showing that mixed masses can pass the sampled determinant-positivity gate. The second position captures both negative-assertion classes and the full audited scope, while recognizing that the clipped authority prevents independent closure of exact positivity.",
+          "negative_assertion_classes": [
+            "bounded_with_named_walls",
+            "conditional_wall_rationale"
+          ],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: derive the scalar-mass-only action class M = mI, m > 0, M_epsilon = 0 from retained inputs and regenerate the restricted packet with the complete Case A authority.",
+          "ratified_claim_scope": "Given the row-local premise M = mI with m > 0 and M_epsilon = 0, the I/epsilon membership exclusions, cited scalar-line determinant positivity, and finite-sample phase checks were audited.",
+          "ratified_claim_type": "bounded_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "The reviewed mass action class is introduced as the real scalar line M = m I, m > 0, with M_epsilon = 0.",
+          "ratified_load_bearing_step_class": "E",
+          "ratified_verdict": "audited_renaming",
+          "second_auditor_error": "none",
+          "sided_with": "second"
+        },
+        {
+          "auditor": "codex-judicial-3-20260724-d8ffd1a6",
+          "first_auditor_error": "It omitted conditional_wall_rationale even though the source explicitly uses the sampled mixed-mass positivity result to argue that the scalar-class wall is independent of determinant positivity.",
+          "hybrid_resolution_note": null,
+          "judge": 3,
+          "judgment_rationale": "The load-bearing move stipulates the real-positive scalar-mass class rather than deriving it, so class E and audited_renaming are correct. The runner checks exact basis decomposition and finite samples after that stipulation, while the cited exact-positivity authority is clipped. The source also gives an explicit conditional rationale for an independent named wall, supporting both declared negative-assertion classes.",
+          "negative_assertion_classes": [
+            "bounded_with_named_walls",
+            "conditional_wall_rationale"
+          ],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: derive the scalar-mass-only action class M = mI, m > 0, M_epsilon = 0 from retained inputs and regenerate the restricted packet with the complete Case A authority.",
+          "ratified_claim_scope": "Given the row-local premise M = mI with m > 0 and M_epsilon = 0, the I/epsilon membership exclusions, cited scalar-line determinant positivity, and finite-sample phase checks were audited.",
+          "ratified_claim_type": "bounded_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": null,
+          "ratified_load_bearing_step_class": "E",
+          "ratified_verdict": "audited_renaming",
+          "second_auditor_error": "none",
+          "sided_with": "second"
+        },
+        {
+          "auditor": "codex-judicial-4-20260724-1b307fcb",
+          "first_auditor_error": "none",
+          "hybrid_resolution_note": null,
+          "judge": 4,
+          "judgment_rationale": "The source explicitly presents the scalar-mass action class as a row-local premise, and the runner records that premise before checking algebraic membership and finite-sample determinant-phase consequences. It does not derive the class from retained inputs, so the load-bearing move is class E and the correct verdict is audited_renaming within the first auditor\u2019s bounded scope. The mixed-mass computation supports the single declared bounded named-wall class.",
+          "negative_assertion_classes": [
+            "bounded_with_named_walls"
+          ],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": null,
+          "ratified_claim_scope": "Row-local introduction of the real-positive scalar mass class M=mI with m>0 and M_epsilon=0, together with exact I/epsilon membership tests and finite-sample determinant-phase consequences.",
+          "ratified_claim_type": "bounded_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": null,
+          "ratified_load_bearing_step_class": "E",
+          "ratified_verdict": "audited_renaming",
+          "second_auditor_error": "The second position enlarges the audited scope to include cited scalar-line determinant positivity despite the packet-clipped load-bearing authority, and it overclassifies the source\u2019s explicit coverage-routing caveats as conditional_wall_rationale; the substantive negative assertion evidenced here is the bounded named-wall judgment.",
+          "sided_with": "first"
+        },
+        {
+          "auditor": "codex-judicial-5-20260724-456104ec",
+          "first_auditor_error": "It omits conditional_wall_rationale even though the note explicitly argues that the scalar-class condition remains independent because sampled mixed masses can pass determinant positivity.",
+          "hybrid_resolution_note": null,
+          "judge": 5,
+          "judgment_rationale": "The load-bearing scalar-mass class is stipulated as a row-local premise, so class E and audited_renaming are correct. The runner verifies membership and sampled consequences but does not derive the premise; the note also asserts both a bounded named wall and a conditional rationale for that wall by showing determinant positivity alone does not exclude mixed masses.",
+          "negative_assertion_classes": [
+            "bounded_with_named_walls",
+            "conditional_wall_rationale"
+          ],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: derive the scalar-mass-only action class M = mI, m > 0, M_epsilon = 0 from retained inputs and regenerate the restricted packet with the complete Case A authority.",
+          "ratified_claim_scope": "Given the row-local premise M = mI with m > 0 and M_epsilon = 0, the I/epsilon membership exclusions, cited scalar-line determinant positivity, and finite-sample phase checks were audited.",
+          "ratified_claim_type": "bounded_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "The reviewed mass action class is introduced as the real scalar line M = m I, m > 0, with M_epsilon = 0.",
+          "ratified_load_bearing_step_class": "E",
+          "ratified_verdict": "audited_renaming",
+          "second_auditor_error": "none",
+          "sided_with": "second"
+        }
+      ]
+    },
+    "mode": "judicial_panel_majority",
+    "second_audit": {
+      "audit_date": "2026-07-24T00:09:01.955325+00:00",
+      "audit_invocation_id": "7033f76e247e4573805a65681479979d",
+      "auditor": "codex-audit-batch-B-20260724-273a7d9c",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "chain_closes": false,
+      "chain_closure_explanation": "The scalar-mass action class is stipulated row-locally rather than derived from retained framework inputs. In addition, the restricted packet clips the cited authority supplying exact scalar-line determinant positivity.",
+      "claim_scope": "Given the row-local premise M = mI with m > 0 and M_epsilon = 0, the I/epsilon membership exclusions, cited scalar-line determinant positivity, and finite-sample phase checks were audited.",
+      "claim_type": "bounded_theorem",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The reviewed mass action class is introduced as the real scalar line M = m I, m > 0, with M_epsilon = 0.",
+      "load_bearing_step_class": "E",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale"
+      ],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive the scalar-mass-only action class M = mI, m > 0, M_epsilon = 0 from retained inputs and regenerate the restricted packet with the complete Case A authority.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 22,
+        "B": 0,
+        "C": 6,
+        "D": 0,
+        "total_pass": 28
+      },
+      "verdict": "audited_renaming",
+      "verdict_rationale": "The note honestly records bounded-premise support, but its load-bearing move introduces the scalar-mass class locally rather than deriving it. The algebraic membership exclusions and finite-sample phase checks pass, while exact positivity is imported from a retained authority whose load-bearing evidence is clipped in this packet. The mixed-mass sample also shows that determinant positivity alone does not eliminate the epsilon-component route, leaving the scalar-class wall as an explicit independent condition."
+    },
+    "status": "third_confirmed_second",
+    "third_audit": {
+      "audit_date": "2026-07-24T00:13:49.888242+00:00",
+      "audit_invocation_id": "acb6d8a86b8345e5ba7d9d56ce882340",
+      "auditor": "codex-judicial-1-20260724-42a033a9",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "claim_scope": "Given the row-local premise M = mI with m > 0 and M_epsilon = 0, the I/epsilon membership exclusions, cited scalar-line determinant positivity, and finite-sample phase checks were audited.",
+      "claim_type": "bounded_theorem",
+      "first_auditor_error": "The first position omits conditional_wall_rationale even though the note explicitly argues that mixed masses can pass the determinant-positivity gate and therefore the scalar-class wall remains an independent condition; its scope also does not state as clearly that the audited consequences are conditional on the row-local premise.",
+      "independence": "judicial_review",
+      "judgment_rationale": "Five-judge panel majority (4/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The load-bearing move stipulates the real-positive scalar mass class rather than deriving it, making class E and audited_renaming appropriate. The runner verifies algebraic membership and sampled determinant-phase consequences, while the exact positivity authority is clipped; the note also explicitly uses the mixed-mass sample to justify an independent conditional wall.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260724-42a033a9\", \"judge\": 1, \"rationale\": \"The load-bearing move stipulates the real-positive scalar mass class rather than deriving it, making class E and audited_renaming appropriate. The runner verifies algebraic membership and sampled determinant-phase consequences, while the exact positivity authority is clipped; the note also explicitly uses the mixed-mass sample to justify an independent conditional wall.\", \"tuple\": [\"second\", \"audited_renaming\", \"bounded_theorem\", \"Given the row-local premise M = mI with m > 0 and M_epsilon = 0, the I/epsilon membership exclusions, cited scalar-line determinant positivity, and finite-sample phase checks were audited.\", \"E\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\"]]}, {\"auditor\": \"codex-judicial-2-20260724-99f51a41\", \"judge\": 2, \"rationale\": \"The load-bearing move explicitly stipulates the row-local scalar-mass class M = mI, m > 0, with M_epsilon = 0, after which the runner checks membership and consequences; class E and audited_renaming are therefore correct. The note both names the bounded wall and gives a conditional rationale for its independence by showing that mixed masses can pass the sampled determinant-positivity gate. The second position captures both negative-assertion classes and the full audited scope, while recognizing that the clipped authority prevents independent closure of exact positivity.\", \"tuple\": [\"second\", \"audited_renaming\", \"bounded_theorem\", \"Given the row-local premise M = mI with m > 0 and M_epsilon = 0, the I/epsilon membership exclusions, cited scalar-line determinant positivity, and finite-sample phase checks were audited.\", \"E\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\"]]}, {\"auditor\": \"codex-judicial-3-20260724-d8ffd1a6\", \"judge\": 3, \"rationale\": \"The load-bearing move stipulates the real-positive scalar-mass class rather than deriving it, so class E and audited_renaming are correct. The runner checks exact basis decomposition and finite samples after that stipulation, while the cited exact-positivity authority is clipped. The source also gives an explicit conditional rationale for an independent named wall, supporting both declared negative-assertion classes.\", \"tuple\": [\"second\", \"audited_renaming\", \"bounded_theorem\", \"Given the row-local premise M = mI with m > 0 and M_epsilon = 0, the I/epsilon membership exclusions, cited scalar-line determinant positivity, and finite-sample phase checks were audited.\", \"E\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\"]]}, {\"auditor\": \"codex-judicial-4-20260724-1b307fcb\", \"judge\": 4, \"rationale\": \"The source explicitly presents the scalar-mass action class as a row-local premise, and the runner records that premise before checking algebraic membership and finite-sample determinant-phase consequences. It does not derive the class from retained inputs, so the load-bearing move is class E and the correct verdict is audited_renaming within the first auditor\\u2019s bounded scope. The mixed-mass computation supports the single declared bounded named-wall class.\", \"tuple\": [\"first\", \"audited_renaming\", \"bounded_theorem\", \"Row-local introduction of the real-positive scalar mass class M=mI with m>0 and M_epsilon=0, together with exact I/epsilon membership tests and finite-sample determinant-phase consequences.\", \"E\", null, [\"bounded_with_named_walls\"]]}, {\"auditor\": \"codex-judicial-5-20260724-456104ec\", \"judge\": 5, \"rationale\": \"The load-bearing scalar-mass class is stipulated as a row-local premise, so class E and audited_renaming are correct. The runner verifies membership and sampled consequences but does not derive the premise; the note also asserts both a bounded named wall and a conditional rationale for that wall by showing determinant positivity alone does not exclude mixed masses.\", \"tuple\": [\"second\", \"audited_renaming\", \"bounded_theorem\", \"Given the row-local premise M = mI with m > 0 and M_epsilon = 0, the I/epsilon membership exclusions, cited scalar-line determinant positivity, and finite-sample phase checks were audited.\", \"E\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\"]]}]",
+      "load_bearing_step_class": "E",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale"
+      ],
+      "second_auditor_error": "none",
+      "sided_with": "second",
+      "verdict": "audited_renaming"
+    }
+  },
   "decoration_parent_claim_id": null,
   "deps": [
     "staggered_only_det_positivity_case_a_note_2026-05-17"
   ],
   "direct_in_degree": 1,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_renaming",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "judicial_review",
+  "intrinsic_status": "audited_renaming",
   "load_bearing_score": 9.996,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The reviewed mass action class is introduced as the real scalar line M = m I, m > 0, with M_epsilon = 0.",
+  "load_bearing_step_class": "E",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls",
+    "conditional_wall_rationale"
+  ],
   "note_hash": "7cc69a28027684d1eee6a5a0bf0aabec2d8cf9a5a04765eb9cfd331a49d27ab9",
   "note_path": "docs/STAGGERED_SCALAR_MASS_CLASS_BOUNDED_PREMISE_BRIDGE_NOTE_2026-06-03.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "missing_bridge_theorem: derive the scalar-mass-only action class M = mI, m > 0, M_epsilon = 0 from retained inputs and regenerate the restricted packet with the complete Case A authority.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -281,14 +548,14 @@
     }
   ],
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 22,
     "B": 0,
-    "C": 0,
+    "C": 6,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 28
   },
   "runner_path": "scripts/staggered_scalar_mass_class_bounded_premise_runner.py",
   "title": "Staggered Scalar-Mass Action Class Bounded-Premise Bridge",
   "transitive_descendants": 721,
-  "verdict_rationale": null
+  "verdict_rationale": "Five-judge panel majority (4/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The load-bearing move stipulates the real-positive scalar mass class rather than deriving it, making class E and audited_renaming appropriate. The runner verifies algebraic membership and sampled determinant-phase consequences, while the exact positivity authority is clipped; the note also explicitly uses the mixed-mass sample to justify an independent conditional wall.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260724-42a033a9\", \"judge\": 1, \"rationale\": \"The load-bearing move stipulates the real-positive scalar mass class rather than deriving it, making class E and audited_renaming appropriate. The runner verifies algebraic membership and sampled determinant-phase consequences, while the exact positivity authority is clipped; the note also explicitly uses the mixed-mass sample to justify an independent conditional wall.\", \"tuple\": [\"second\", \"audited_renaming\", \"bounded_theorem\", \"Given the row-local premise M = mI with m > 0 and M_epsilon = 0, the I/epsilon membership exclusions, cited scalar-line determinant positivity, and finite-sample phase checks were audited.\", \"E\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\"]]}, {\"auditor\": \"codex-judicial-2-20260724-99f51a41\", \"judge\": 2, \"rationale\": \"The load-bearing move explicitly stipulates the row-local scalar-mass class M = mI, m > 0, with M_epsilon = 0, after which the runner checks membership and consequences; class E and audited_renaming are therefore correct. The note both names the bounded wall and gives a conditional rationale for its independence by showing that mixed masses can pass the sampled determinant-positivity gate. The second position captures both negative-assertion classes and the full audited scope, while recognizing that the clipped authority prevents independent closure of exact positivity.\", \"tuple\": [\"second\", \"audited_renaming\", \"bounded_theorem\", \"Given the row-local premise M = mI with m > 0 and M_epsilon = 0, the I/epsilon membership exclusions, cited scalar-line determinant positivity, and finite-sample phase checks were audited.\", \"E\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\"]]}, {\"auditor\": \"codex-judicial-3-20260724-d8ffd1a6\", \"judge\": 3, \"rationale\": \"The load-bearing move stipulates the real-positive scalar-mass class rather than deriving it, so class E and audited_renaming are correct. The runner checks exact basis decomposition and finite samples after that stipulation, while the cited exact-positivity authority is clipped. The source also gives an explicit conditional rationale for an independent named wall, supporting both declared negative-assertion classes.\", \"tuple\": [\"second\", \"audited_renaming\", \"bounded_theorem\", \"Given the row-local premise M = mI with m > 0 and M_epsilon = 0, the I/epsilon membership exclusions, cited scalar-line determinant positivity, and finite-sample phase checks were audited.\", \"E\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\"]]}, {\"auditor\": \"codex-judicial-4-20260724-1b307fcb\", \"judge\": 4, \"rationale\": \"The source explicitly presents the scalar-mass action class as a row-local premise, and the runner records that premise before checking algebraic membership and finite-sample determinant-phase consequences. It does not derive the class from retained inputs, so the load-bearing move is class E and the correct verdict is audited_renaming within the first auditor\\u2019s bounded scope. The mixed-mass computation supports the single declared bounded named-wall class.\", \"tuple\": [\"first\", \"audited_renaming\", \"bounded_theorem\", \"Row-local introduction of the real-positive scalar mass class M=mI with m>0 and M_epsilon=0, together with exact I/epsilon membership tests and finite-sample determinant-phase consequences.\", \"E\", null, [\"bounded_with_named_walls\"]]}, {\"auditor\": \"codex-judicial-5-20260724-456104ec\", \"judge\": 5, \"rationale\": \"The load-bearing scalar-mass class is stipulated as a row-local premise, so class E and audited_renaming are correct. The runner verifies membership and sampled consequences but does not derive the premise; the note also asserts both a bounded named wall and a conditional rationale for that wall by showing determinant positivity alone does not exclude mixed masses.\", \"tuple\": [\"second\", \"audited_renaming\", \"bounded_theorem\", \"Given the row-local premise M = mI with m > 0 and M_epsilon = 0, the I/epsilon membership exclusions, cited scalar-line determinant positivity, and finite-sample phase checks were audited.\", \"E\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\"]]}]"
 }

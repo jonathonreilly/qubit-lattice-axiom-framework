@@ -1,44 +1,67 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-24T00:10:24.511472+00:00",
+  "audit_invocation_history": [
+    "ff49c696de7d40d2a4c6778c94383aef",
+    "af6a9ce336444424a2b50f5f8b9b8d21"
+  ],
+  "audit_invocation_id": "af6a9ce336444424a2b50f5f8b9b8d21",
+  "audit_state_snapshot": {
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "Pure algebraic Fourier/character identities relating H = aI + bC + b\u0304C\u00b2 on R \u00d7 C to the C_3 character coefficients of its eigenvalue triple."
+    },
+    "dep_claim_type": {
+      "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "retained"
+    },
+    "deps": [
+      "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 10.66,
+    "runner_hash": "bbdd63ad642fc0205744f00f48f710b9826a7bffcc8f4de00bde21ae252291df",
+    "transitive_descendants": 1143
+  },
+  "audit_status": "audited_decoration",
+  "auditor": "codex-audit-batch-B-20260724-df6fcc0c",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "On the abstract carrier, solving HC=CH and imposing Hermiticity gives H=aI+bC+b\u0304C\u00b2; the diagonal, trace, and generic-spectrum statements then follow exactly. The physical hw=1 identification is expressly outside the audited scope.",
   "claim_id": "staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_narrow_theorem_note_2026-05-17",
-  "claim_scope": null,
-  "claim_type": "positive_theorem",
+  "claim_scope": "For the abstract three-dimensional regular Z/3Z carrier, a Hermitian operator commuting with the standard cyclic permutation has basis diagonals Tr(H)/3 and a generically distinct circulant spectrum.",
+  "claim_type": "decoration",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-24T00:10:24.511472+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "critical",
   "cross_confirmation": null,
-  "decoration_parent_claim_id": null,
+  "decoration_parent_claim_id": "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
   "deps": [
     "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09"
   ],
   "direct_in_degree": 1,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+  "effective_status_reason": "decoration_parent_retained",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "fresh_context",
+  "intrinsic_status": "decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
   "load_bearing_score": 10.66,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Using H=aI+bC+b\u0304C\u00b2 and the zero diagonals of C and C\u00b2, every basis expectation equals a=Tr(H)/3.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "a0df810a8de08ec167898c46c88850a200115ab6000a8d45795a28a4a6727d06",
   "note_path": "docs/STAGGERED_DIRAC_SUBSTEP4_AC_PHI_TRACE_EQUIPARTITION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Clarify that the coincidence set is finite in arg(b) modulo 2\u03c0, not as a subset of the complex b-plane, and do not treat the runner's single H_bad example as proof of commutant uniqueness.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -97,14 +120,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 19,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 19
   },
   "runner_path": "scripts/audit_companion_staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_2026_05_17.py",
   "title": "Staggered-Dirac Substep 4 \u2014 AC_\u03c6 Trace-Equipartition Bridge Narrow Theorem",
   "transitive_descendants": 1143,
-  "verdict_rationale": null
+  "verdict_rationale": "The abstract algebra is correct: an independent commutant calculation gives span{I,C,C\u00b2}, and Hermiticity gives the stated coefficient pairing, after which trace equipartition and the eigenvalue formula follow. The runner checks the ansatz, diagonal and trace identities, characteristic polynomial, and a generic finite case, although its single non-circulant counterexample does not establish uniqueness. Because the note is an exact standard-mathematics corollary of one retained parent, with no external comparator or independent physical bridge, it is algebraic decoration rather than a standalone positive theorem. The physical hw=1 identification is explicitly excluded."
 }

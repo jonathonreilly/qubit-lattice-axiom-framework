@@ -1451,11 +1451,11 @@
   "helper_runner_paths": [],
   "independence": "judicial_review",
   "intrinsic_status": "retained",
-  "load_bearing_score": 10.508,
+  "load_bearing_score": 14.508,
   "load_bearing_step": "Solving all real and imaginary entries of HC-CH=0 gives H=aB0+xB1+yB2, after which the nonsingular Gram matrix diag(3,6,6) gives the unique Riesz representative.",
   "load_bearing_step_class": "A",
-  "max_descendant_status": "audit_in_progress",
-  "max_descendant_status_rank": 30,
+  "max_descendant_status": "retained_no_go",
+  "max_descendant_status_rank": 100,
   "negative_assertion_classes": [],
   "no_go_discipline": {
     "N1_alternative_routes": [

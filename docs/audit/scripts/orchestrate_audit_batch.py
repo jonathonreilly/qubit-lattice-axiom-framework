@@ -21,6 +21,7 @@ import argparse
 import fcntl
 import hashlib
 import json
+import math
 import os
 import queue
 import re
@@ -73,12 +74,34 @@ SCHEMA_QUARANTINE_RESULT = "schema_invalid_quarantined"
 SCHEMA_DEFERRED_RESULT = "schema_invalid_peer_deferred"
 SCHEMA_SUPERSEDED_RESULT = "schema_invalid_attempt_superseded"
 BLOCKED_ROW_QUARANTINE_RESULT = "blocked_row_reentry_quarantined"
+COMPUTE_QUARANTINE_RESULT = "compute_required_quarantined"
+CLAIM_TRANSACTION_QUARANTINE_RESULT = "claim_transaction_quarantined"
 SCHEMA_RECOVERY_RESULTS = {
     SCHEMA_QUARANTINE_RESULT,
     SCHEMA_DEFERRED_RESULT,
     SCHEMA_SUPERSEDED_RESULT,
 }
-CAMPAIGN_EXCLUSION_RESULTS = {BLOCKED_ROW_QUARANTINE_RESULT}
+CAMPAIGN_EXCLUSION_RESULTS = {
+    BLOCKED_ROW_QUARANTINE_RESULT,
+    COMPUTE_QUARANTINE_RESULT,
+    CLAIM_TRANSACTION_QUARANTINE_RESULT,
+}
+CAMPAIGN_EXCLUSION_REASONS = {
+    SCHEMA_QUARANTINE_RESULT,
+    *CAMPAIGN_EXCLUSION_RESULTS,
+}
+SELECTION_SKIP_REASONS = {
+    "missing_ledger_row",
+    "effective_status_not_actionable",
+    "audit_status_not_unaudited",
+    "forensic_no_go",
+    "non_batch_claim_type",
+    "forensic_source_shape",
+    "dependencies_not_retained",
+    "note_hash_drift",
+    "awaiting_science_repair",
+    "unclassified_selector_skip",
+}
 SCIENCE_FIX_RESULTS = {"science_fix_dispatched", "science_fix_dispatch_failed"}
 MIN_DELIVERY_BYTES = 200
 PACKET_COMPLETION_STALL_SECONDS = 20 * 60
@@ -418,6 +441,10 @@ def compute_targets(
             continue
         status = row.get("effective_status")
         if status in RETAINED or str(status or "").startswith("decoration_under_"):
+            skipped.append(
+                f"{cid}: effective_status={status} - already retained-grade "
+                "or governed"
+            )
             continue
         audit_status = row.get("audit_status") or "unaudited"
         cross_status = (row.get("cross_confirmation") or {}).get("status")
@@ -1490,14 +1517,49 @@ def stage_and_commit(message: str) -> tuple[bool, str]:
 def reset_to_origin_main() -> tuple[bool, str]:
     # Rollback must remain available after a cancellation request; otherwise
     # an interrupted commit/push can strand dirty or ahead local main state.
+    target = sh(
+        ["git", "rev-parse", "origin/main"],
+        honor_cancel=False,
+    )
+    target_oid = target.stdout.strip()
+    if target.returncode != 0 or not re.fullmatch(r"[0-9a-f]{40}", target_oid):
+        return False, "cannot resolve rollback target origin/main"
     reset = sh(
-        ["git", "reset", "--hard", "origin/main"],
+        ["git", "reset", "--hard", target_oid],
         honor_cancel=False,
     )
     if reset.returncode != 0:
         return False, f"reset failed: {(reset.stderr or reset.stdout).strip()[:240]}"
-    error = clean_main_error(honor_cancel=False)
-    return (error is None, error or "reset to origin/main")
+    branch = sh(
+        ["git", "rev-parse", "--abbrev-ref", "HEAD"],
+        honor_cancel=False,
+    )
+    if branch.returncode != 0:
+        return False, "cannot determine current branch after rollback"
+    if branch.stdout.strip() != "main":
+        return False, (
+            "rollback did not leave main checked out "
+            f"({branch.stdout.strip()!r})"
+        )
+    status = sh(
+        ["git", "status", "--porcelain"],
+        honor_cancel=False,
+    )
+    if status.returncode != 0:
+        return False, "cannot determine worktree status after rollback"
+    if status.stdout.strip():
+        # The normal main guard can tolerate one mechanically recognized
+        # lane-certification provenance drift. Transaction rollback cannot:
+        # quarantine is permitted only after reset proves literal zero-diff
+        # source and generated state.
+        return False, "rollback did not leave a literally clean worktree"
+    head = sh(["git", "rev-parse", "HEAD"], honor_cancel=False)
+    remote = sh(["git", "rev-parse", "origin/main"], honor_cancel=False)
+    if head.returncode != 0 or remote.returncode != 0:
+        return False, "cannot verify rollback refs"
+    if head.stdout.strip() != target_oid or remote.stdout.strip() != target_oid:
+        return False, "rollback did not leave HEAD synchronized with origin/main"
+    return True, f"reset to origin/main at {target_oid}"
 
 
 def apply_claim_serialized(
@@ -1517,17 +1579,26 @@ def apply_claim_serialized(
         raise ValueError("one non-empty claim delivery group is required")
     cid = next(iter(claim_ids))
 
-    def fail_after_local_commit(result: str, detail: str | None = None):
+    def fail_after_transaction(
+        result: str,
+        detail: str | None = None,
+        *,
+        pass_no: int | None = None,
+    ):
         reset, reset_detail = reset_to_origin_main()
         if not reset:
             return False, [{
                 "cid": cid,
                 "result": "race_reset_failed",
-                "detail": reset_detail,
+                "detail": f"{result}: {detail or 'transaction failed'}; {reset_detail}",
             }]
         failure = {"cid": cid, "result": result}
+        if pass_no is not None:
+            failure["pass"] = pass_no
         if detail is not None:
             failure["detail"] = detail
+        failure["rollback_verified"] = True
+        failure["rollback_detail"] = reset_detail
         return False, [failure]
 
     for attempt in range(1, retries + 1):
@@ -1542,18 +1613,15 @@ def apply_claim_serialized(
                 evidence_manifest=envelope["evidence_manifest"],
             )
             if not applied:
-                reset_to_origin_main()
-                return False, [{
-                    "cid": cid,
-                    "pass": job["pass"],
-                    "result": "apply_or_gate_failed",
-                    "detail": f"apply rejected: {apply_detail[:400]}",
-                }]
+                return fail_after_transaction(
+                    "apply_or_gate_failed",
+                    f"apply rejected: {apply_detail[:400]}",
+                    pass_no=job["pass"],
+                )
 
         gated, detail = run_generated_gates()
         if not gated:
-            reset_to_origin_main()
-            return False, [{"cid": cid, "result": "apply_or_gate_failed", "detail": detail}]
+            return fail_after_transaction("apply_or_gate_failed", detail)
         verdicts = [str(envelope["audit"].get("verdict")) for _, envelope in ordered]
         seats = ["first" if job["pass"] == 1 else "second" for job, _ in ordered]
         committed, detail = stage_and_commit(
@@ -1561,8 +1629,7 @@ def apply_claim_serialized(
             f"(codex-cli, {MODEL}, {REASONING}, {'+'.join(seats)}/batch)"
         )
         if not committed:
-            reset_to_origin_main()
-            return False, [{"cid": cid, "result": "commit_failed", "detail": detail}]
+            return fail_after_transaction("commit_failed", detail)
         local_commit = detail
         push = sh(["git", "push", "-q", "origin", "HEAD:main"])
         if push.returncode == 0:
@@ -1577,18 +1644,18 @@ def apply_claim_serialized(
             ]
 
         if _command_cancelled():
-            return fail_after_local_commit("commit_cancelled")
+            return fail_after_transaction("commit_cancelled")
 
         fetch = sh(["git", "fetch", "origin", "main", "-q"])
         if fetch.returncode != 0:
             result = "commit_cancelled" if _command_cancelled() else "push_failed"
             detail = None if result == "commit_cancelled" else "push and follow-up fetch failed"
-            return fail_after_local_commit(result, detail)
+            return fail_after_transaction(result, detail)
         if _command_cancelled():
-            return fail_after_local_commit("commit_cancelled")
+            return fail_after_transaction("commit_cancelled")
         landed = sh(["git", "merge-base", "--is-ancestor", local_commit, "origin/main"])
         if _command_cancelled():
-            return fail_after_local_commit("commit_cancelled")
+            return fail_after_transaction("commit_cancelled")
         if landed.returncode == 0:
             return True, [
                 {
@@ -1600,7 +1667,7 @@ def apply_claim_serialized(
                 for job, envelope in ordered
             ]
         if attempt == retries:
-            return fail_after_local_commit("push_race_exhausted")
+            return fail_after_transaction("push_race_exhausted")
         reset, reset_detail = reset_to_origin_main()
         if not reset:
             return False, [{"cid": cid, "result": "race_reset_failed", "detail": reset_detail}]
@@ -1737,19 +1804,443 @@ def launch_science_fix_worker(
     return proc.pid, handoff_path, log_path
 
 
-def load_campaign_quarantine(path: Path | None) -> set[str]:
+def _campaign_json_object(pairs: list[tuple[str, object]]) -> dict:
+    record: dict = {}
+    for key, value in pairs:
+        if key in record:
+            raise ValueError(f"duplicate JSON key {key!r}")
+        record[key] = value
+    return record
+
+
+def _reject_campaign_json_constant(value: str) -> None:
+    raise ValueError(f"non-finite JSON value {value!r}")
+
+
+def _contains_non_finite_json_number(value: object) -> bool:
+    if isinstance(value, float):
+        return not math.isfinite(value)
+    if isinstance(value, list):
+        return any(_contains_non_finite_json_number(item) for item in value)
+    if isinstance(value, dict):
+        return any(
+            _contains_non_finite_json_number(item)
+            for item in value.values()
+        )
+    return False
+
+
+def _campaign_failure_schema_error(
+    claim_id: str,
+    reason: str,
+    failure: object,
+) -> str | None:
+    if not isinstance(failure, dict):
+        return "campaign exclusion failure is not an object"
+    result = failure.get("result")
+    if not isinstance(result, str):
+        return "campaign exclusion failure has no string result"
+    if failure.get("cid") != claim_id:
+        return "campaign exclusion failure cid does not match claim_id"
+
+    if reason == SCHEMA_QUARANTINE_RESULT:
+        expected = {"cid", "pass", "result"}
+        if result == "validation_failed":
+            expected.add("detail")
+        elif result != "malformed_json":
+            return (
+                "campaign exclusion failure result is incompatible with "
+                f"{reason!r}"
+            )
+    elif reason == COMPUTE_QUARANTINE_RESULT:
+        if result != "compute_required":
+            return (
+                "campaign exclusion failure result is incompatible with "
+                f"{reason!r}"
+            )
+        expected = {"cid", "pass", "result", "detail"}
+    elif reason == CLAIM_TRANSACTION_QUARANTINE_RESULT:
+        if result == "apply_or_gate_failed":
+            expected = {
+                "cid",
+                "result",
+                "detail",
+                "rollback_verified",
+                "rollback_detail",
+            }
+            if "pass" in failure:
+                expected.add("pass")
+            if failure.get("rollback_verified") is not True:
+                return (
+                    "claim-transaction failure has no verified rollback proof"
+                )
+            rollback_detail = failure.get("rollback_detail")
+            if (
+                not isinstance(rollback_detail, str)
+                or not rollback_detail.strip()
+            ):
+                return (
+                    "claim-transaction failure has no rollback detail"
+                )
+        elif result == CLAIM_TRANSACTION_QUARANTINE_RESULT:
+            expected = {"cid", "result", "detail"}
+        else:
+            return (
+                "campaign exclusion failure result is incompatible with "
+                f"{reason!r}"
+            )
+    else:
+        return f"unsupported failure-bearing exclusion reason {reason!r}"
+
+    if set(failure) != expected:
+        missing = sorted(expected - set(failure))
+        unexpected = sorted(set(failure) - expected)
+        return (
+            "invalid campaign exclusion failure fields "
+            f"(missing={missing}, unexpected={unexpected})"
+        )
+    if "pass" in expected:
+        pass_no = failure.get("pass")
+        if type(pass_no) is not int or pass_no not in {1, 2}:
+            return "campaign exclusion failure pass must be 1 or 2"
+    if "detail" in expected:
+        detail = failure.get("detail")
+        if not isinstance(detail, str) or not detail.strip():
+            return "campaign exclusion failure has no detail"
+    return None
+
+
+def load_campaign_exclusion_records(path: Path | None) -> list[dict]:
     if path is None or not path.exists():
-        return set()
-    claim_ids: set[str] = set()
-    for line in path.read_text(encoding="utf-8").splitlines():
+        return []
+    records: list[dict] = []
+    for line_number, line in enumerate(
+        path.read_text(encoding="utf-8").splitlines(),
+        start=1,
+    ):
+        if not line.strip():
+            raise ValueError(
+                f"{path}:{line_number}: blank campaign exclusion record"
+            )
         try:
-            row = json.loads(line)
-        except json.JSONDecodeError:
-            continue
-        cid = row.get("claim_id") if isinstance(row, dict) else None
-        if isinstance(cid, str) and cid:
-            claim_ids.add(cid)
-    return claim_ids
+            record = json.loads(
+                line,
+                object_pairs_hook=_campaign_json_object,
+                parse_constant=_reject_campaign_json_constant,
+            )
+        except json.JSONDecodeError as exc:
+            raise ValueError(
+                f"{path}:{line_number}: invalid campaign exclusion JSON: "
+                f"{exc.msg}"
+            ) from exc
+        except ValueError as exc:
+            raise ValueError(
+                f"{path}:{line_number}: invalid campaign exclusion JSON: {exc}"
+            ) from exc
+        if _contains_non_finite_json_number(record):
+            raise ValueError(
+                f"{path}:{line_number}: campaign exclusion contains a "
+                "non-finite JSON number"
+            )
+        if not isinstance(record, dict):
+            raise ValueError(
+                f"{path}:{line_number}: campaign exclusion is not an object"
+            )
+        cid = record.get("claim_id")
+        reason = record.get("reason")
+        if not isinstance(cid, str) or not cid:
+            raise ValueError(
+                f"{path}:{line_number}: campaign exclusion has no claim_id"
+            )
+        if not isinstance(reason, str) or not reason:
+            raise ValueError(
+                f"{path}:{line_number}: campaign exclusion has no reason"
+            )
+        if reason not in CAMPAIGN_EXCLUSION_REASONS:
+            raise ValueError(
+                f"{path}:{line_number}: unrecognized campaign exclusion "
+                f"reason {reason!r}"
+            )
+        common_fields = {"claim_id", "reason", "recorded_at"}
+        if reason == BLOCKED_ROW_QUARANTINE_RESULT:
+            expected_fields = common_fields | {"invalidation_reason"}
+        else:
+            expected_fields = common_fields | {"failures"}
+        if set(record) != expected_fields:
+            missing = sorted(expected_fields - set(record))
+            unexpected = sorted(set(record) - expected_fields)
+            raise ValueError(
+                f"{path}:{line_number}: invalid campaign exclusion fields "
+                f"(missing={missing}, unexpected={unexpected})"
+            )
+        try:
+            ledger_io.shard_path(cid)
+        except ValueError as exc:
+            raise ValueError(
+                f"{path}:{line_number}: campaign exclusion claim_id is not "
+                f"shard-safe: {cid!r}"
+            ) from exc
+        recorded_at = record["recorded_at"]
+        if not isinstance(recorded_at, str) or not recorded_at:
+            raise ValueError(
+                f"{path}:{line_number}: campaign exclusion has no recorded_at"
+            )
+        if not re.fullmatch(
+            r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}"
+            r"(?:\.\d{6})?\+00:00",
+            recorded_at,
+        ):
+            raise ValueError(
+                f"{path}:{line_number}: campaign exclusion recorded_at "
+                "is not canonical UTC ISO-8601"
+            )
+        try:
+            timestamp = datetime.fromisoformat(recorded_at)
+        except ValueError as exc:
+            raise ValueError(
+                f"{path}:{line_number}: campaign exclusion recorded_at "
+                "is not ISO-8601"
+            ) from exc
+        if (
+            timestamp.tzinfo is None
+            or timestamp.utcoffset() != timezone.utc.utcoffset(timestamp)
+        ):
+            raise ValueError(
+                f"{path}:{line_number}: campaign exclusion recorded_at "
+                "is not UTC"
+            )
+        if reason == BLOCKED_ROW_QUARANTINE_RESULT:
+            invalidation_reason = record["invalidation_reason"]
+            if (
+                not isinstance(invalidation_reason, str)
+                or not invalidation_reason.strip()
+            ):
+                raise ValueError(
+                    f"{path}:{line_number}: blocked-row exclusion has no "
+                    "invalidation_reason"
+                )
+        else:
+            failures = record["failures"]
+            if not isinstance(failures, list) or not failures:
+                raise ValueError(
+                    f"{path}:{line_number}: campaign exclusion failures "
+                    "must be a non-empty list of objects"
+                )
+            for failure in failures:
+                failure_error = _campaign_failure_schema_error(
+                    cid,
+                    reason,
+                    failure,
+                )
+                if failure_error is not None:
+                    raise ValueError(
+                        f"{path}:{line_number}: {failure_error}"
+                    )
+            if (
+                reason == CLAIM_TRANSACTION_QUARANTINE_RESULT
+                and not any(
+                    failure.get("result") == "apply_or_gate_failed"
+                    and failure.get("rollback_verified") is True
+                    for failure in failures
+                )
+            ):
+                raise ValueError(
+                    f"{path}:{line_number}: claim-transaction exclusion has "
+                    "no verified apply/gate rollback failure"
+                )
+        records.append(record)
+    return records
+
+
+def selection_skip_reason(detail: str) -> str:
+    """Map the canonical selector diagnostic to a stable repair route."""
+    if detail == "missing ledger row":
+        return "missing_ledger_row"
+    if re.fullmatch(
+        r"effective_status=(?:retained|retained_bounded|retained_no_go|meta|"
+        r"decoration_under_[A-Za-z0-9][A-Za-z0-9_.-]*) - "
+        r"already retained-grade or governed",
+        detail,
+    ):
+        return "effective_status_not_actionable"
+    if re.fullmatch(
+        r"audit_status=(?:audit_in_progress|audited_clean|audited_renaming|"
+        r"audited_conditional|audited_decoration|audited_failed|"
+        r"audited_numerical_match)",
+        detail,
+    ):
+        return "audit_status_not_unaudited"
+    if detail == "no_go row - forensic tier, run individually":
+        return "forensic_no_go"
+    if re.fullmatch(
+        r"claim_type=(?:decoration|meta|None) - not batch-auditable",
+        detail,
+    ):
+        return "non_batch_claim_type"
+    if detail == "source shape requires forensic tier":
+        return "forensic_source_shape"
+    if detail == "dependencies are not retained-grade":
+        return "dependencies_not_retained"
+    if detail == (
+        "ledger note_hash lags the note file; run seed_audit_ledger.py + "
+        "pipeline and commit before auditing"
+    ):
+        return "note_hash_drift"
+    if detail == (
+        "awaiting repair (sources and deps unchanged since audited_conditional)"
+    ):
+        return "awaiting_science_repair"
+    return "unclassified_selector_skip"
+
+
+def selector_skip_record(line: str) -> dict:
+    claim_id, separator, detail = line.partition(": ")
+    if not separator or not claim_id or not detail:
+        raise ValueError(f"invalid selector skip diagnostic: {line!r}")
+    try:
+        ledger_io.shard_path(claim_id)
+    except ValueError as exc:
+        raise ValueError(
+            f"selector skip claim_id is not shard-safe: {claim_id!r}"
+        ) from exc
+    return {
+        "claim_id": claim_id,
+        "reason": selection_skip_reason(detail),
+        "detail": detail,
+        "recorded_at": datetime.now(timezone.utc).isoformat(),
+    }
+
+
+def load_campaign_selection_skip_records(path: Path | None) -> list[dict]:
+    """Strictly load durable selector dispositions without excluding rows."""
+    if path is None or not path.exists():
+        return []
+    records: list[dict] = []
+    for line_number, line in enumerate(
+        path.read_text(encoding="utf-8").splitlines(),
+        start=1,
+    ):
+        if not line.strip():
+            raise ValueError(
+                f"{path}:{line_number}: blank campaign selection-skip record"
+            )
+        try:
+            record = json.loads(
+                line,
+                object_pairs_hook=_campaign_json_object,
+                parse_constant=_reject_campaign_json_constant,
+            )
+        except json.JSONDecodeError as exc:
+            raise ValueError(
+                f"{path}:{line_number}: invalid campaign selection-skip JSON: "
+                f"{exc.msg}"
+            ) from exc
+        except ValueError as exc:
+            raise ValueError(
+                f"{path}:{line_number}: invalid campaign selection-skip JSON: "
+                f"{exc}"
+            ) from exc
+        if _contains_non_finite_json_number(record):
+            raise ValueError(
+                f"{path}:{line_number}: campaign selection-skip contains a "
+                "non-finite JSON number"
+            )
+        if not isinstance(record, dict):
+            raise ValueError(
+                f"{path}:{line_number}: campaign selection-skip is not an object"
+            )
+        expected_fields = {"claim_id", "reason", "detail", "recorded_at"}
+        if set(record) != expected_fields:
+            missing = sorted(expected_fields - set(record))
+            unexpected = sorted(set(record) - expected_fields)
+            raise ValueError(
+                f"{path}:{line_number}: invalid campaign selection-skip fields "
+                f"(missing={missing}, unexpected={unexpected})"
+            )
+        claim_id = record["claim_id"]
+        reason = record["reason"]
+        detail = record["detail"]
+        if not isinstance(claim_id, str) or not claim_id:
+            raise ValueError(
+                f"{path}:{line_number}: campaign selection-skip has no claim_id"
+            )
+        try:
+            ledger_io.shard_path(claim_id)
+        except ValueError as exc:
+            raise ValueError(
+                f"{path}:{line_number}: campaign selection-skip claim_id is "
+                f"not shard-safe: {claim_id!r}"
+            ) from exc
+        if reason not in SELECTION_SKIP_REASONS:
+            raise ValueError(
+                f"{path}:{line_number}: unrecognized campaign selection-skip "
+                f"reason {reason!r}"
+            )
+        if not isinstance(detail, str) or not detail:
+            raise ValueError(
+                f"{path}:{line_number}: campaign selection-skip has no detail"
+            )
+        if selection_skip_reason(detail) != reason:
+            raise ValueError(
+                f"{path}:{line_number}: campaign selection-skip reason does "
+                "not match its canonical detail"
+            )
+        recorded_at = record["recorded_at"]
+        if not isinstance(recorded_at, str) or not re.fullmatch(
+            r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}"
+            r"(?:\.\d{6})?\+00:00",
+            recorded_at,
+        ):
+            raise ValueError(
+                f"{path}:{line_number}: campaign selection-skip recorded_at "
+                "is not canonical UTC ISO-8601"
+            )
+        try:
+            timestamp = datetime.fromisoformat(recorded_at)
+        except ValueError as exc:
+            raise ValueError(
+                f"{path}:{line_number}: campaign selection-skip recorded_at "
+                "is not ISO-8601"
+            ) from exc
+        if (
+            timestamp.tzinfo is None
+            or timestamp.utcoffset() != timezone.utc.utcoffset(timestamp)
+        ):
+            raise ValueError(
+                f"{path}:{line_number}: campaign selection-skip recorded_at "
+                "is not UTC"
+            )
+        records.append(record)
+    return records
+
+
+def persist_campaign_selection_skips(
+    path: Path | None,
+    skipped: list[str],
+) -> None:
+    """Append each distinct selector disposition without suppressing it."""
+    if path is None or not skipped:
+        return
+    existing = {
+        (record["claim_id"], record["reason"], record["detail"])
+        for record in load_campaign_selection_skip_records(path)
+    }
+    pending = [selector_skip_record(line) for line in skipped]
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("a", encoding="utf-8") as handle:
+        for record in pending:
+            key = (record["claim_id"], record["reason"], record["detail"])
+            if key in existing:
+                continue
+            handle.write(json.dumps(record, sort_keys=True) + "\n")
+            existing.add(key)
+
+
+def load_campaign_quarantine(path: Path | None) -> set[str]:
+    return {
+        record["claim_id"]
+        for record in load_campaign_exclusion_records(path)
+    }
 
 
 def persist_campaign_quarantine(
@@ -1757,23 +2248,53 @@ def persist_campaign_quarantine(
     claim_ids: set[str],
     report: list[dict],
 ) -> None:
+    persist_campaign_exclusions(
+        path,
+        claim_ids,
+        reason=SCHEMA_QUARANTINE_RESULT,
+        report=report,
+        companion_results=SCHEMA_INVALID_RESULTS,
+    )
+
+
+def persist_campaign_exclusions(
+    path: Path | None,
+    claim_ids: set[str],
+    *,
+    reason: str,
+    report: list[dict],
+    companion_results: set[str],
+) -> None:
+    """Append one durable campaign-local exclusion record per claim.
+
+    Exclusions are operational state, never audit verdicts.  The exact
+    companion failures stay attached so a later repair campaign can route the
+    row without reading prior scientific rationales.
+    """
     if path is None or not claim_ids:
         return
-    existing = load_campaign_quarantine(path)
+    existing = {
+        (record["claim_id"], record["reason"])
+        for record in load_campaign_exclusion_records(path)
+    }
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("a", encoding="utf-8") as handle:
-        for cid in sorted(claim_ids - existing):
+        for cid in sorted(
+            candidate
+            for candidate in claim_ids
+            if (candidate, reason) not in existing
+        ):
             failures = [
                 item
                 for item in report
                 if item.get("cid") == cid
-                and item.get("result") in SCHEMA_INVALID_RESULTS
+                and item.get("result") in companion_results
             ]
             handle.write(
                 json.dumps(
                     {
                         "claim_id": cid,
-                        "reason": SCHEMA_QUARANTINE_RESULT,
+                        "reason": reason,
                         "failures": failures,
                         "recorded_at": datetime.now(timezone.utc).isoformat(),
                     },
@@ -1781,6 +2302,37 @@ def persist_campaign_quarantine(
                 )
                 + "\n"
             )
+
+
+def persist_compute_required_skips(
+    path: Path | None,
+    claim_ids: set[str],
+    report: list[dict],
+) -> None:
+    persist_campaign_exclusions(
+        path,
+        claim_ids,
+        reason=COMPUTE_QUARANTINE_RESULT,
+        report=report,
+        companion_results={"compute_required"},
+    )
+
+
+def persist_claim_transaction_quarantines(
+    path: Path | None,
+    claim_ids: set[str],
+    report: list[dict],
+) -> None:
+    persist_campaign_exclusions(
+        path,
+        claim_ids,
+        reason=CLAIM_TRANSACTION_QUARANTINE_RESULT,
+        report=report,
+        companion_results={
+            "apply_or_gate_failed",
+            CLAIM_TRANSACTION_QUARANTINE_RESULT,
+        },
+    )
 
 
 def _latest_invalidation_reason(row: dict) -> str:
@@ -1842,10 +2394,17 @@ def persist_blocked_row_reentries(
 ) -> None:
     if path is None or not reentries:
         return
-    existing = load_campaign_quarantine(path)
+    existing = {
+        (record["claim_id"], record["reason"])
+        for record in load_campaign_exclusion_records(path)
+    }
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("a", encoding="utf-8") as handle:
-        for cid in sorted(set(reentries) - existing):
+        for cid in sorted(
+            candidate
+            for candidate in reentries
+            if (candidate, BLOCKED_ROW_QUARANTINE_RESULT) not in existing
+        ):
             handle.write(
                 json.dumps(
                     {
@@ -1979,6 +2538,32 @@ def apply_serialized(
         ok, results = apply_claim_serialized(claim_deliveries, retries)
         report.extend(results)
         if not ok:
+            # apply_claim_serialized marks an apply/gate rejection claim-local
+            # only after reset_to_origin_main proves both a clean worktree and
+            # exact HEAD == origin/main synchronization. Once that explicit
+            # rollback proof is present, quarantine the row for this campaign
+            # and keep draining unrelated science.
+            # Sync, reset, commit, and push failures remain global/uncertain
+            # and still stop the batch.
+            claim_local = (
+                bool(results)
+                and all(
+                    item.get("result") == "apply_or_gate_failed"
+                    and item.get("rollback_verified") is True
+                    for item in results
+                )
+            )
+            if claim_local:
+                report.append({
+                    "cid": cid,
+                    "result": CLAIM_TRANSACTION_QUARANTINE_RESULT,
+                    "detail": (
+                        "apply/pipeline/lint transaction failed after validated "
+                        "delivery; rollback to synchronized origin/main was "
+                        "verified, so this claim is excluded for the campaign"
+                    ),
+                })
+                continue
             return (
                 False,
                 compute_skips,
@@ -2077,6 +2662,15 @@ def main() -> int:
         ),
     )
     parser.add_argument(
+        "--campaign-selection-skip-file",
+        type=Path,
+        default=None,
+        help=(
+            "append-only JSONL inventory of selector skips for repair routing; "
+            "unlike quarantine state, these records never suppress selection"
+        ),
+    )
+    parser.add_argument(
         "--dispatch-science-fixes",
         action="store_true",
         help=(
@@ -2117,7 +2711,16 @@ def main() -> int:
     )
     report: list[dict] = []
     PROGRESS["report"] = report
-    session_skipped = load_campaign_quarantine(args.campaign_quarantine_file)
+    try:
+        session_skipped = load_campaign_quarantine(
+            args.campaign_quarantine_file
+        )
+        load_campaign_selection_skip_records(
+            args.campaign_selection_skip_file
+        )
+    except (OSError, ValueError) as exc:
+        print(f"refusing to run with invalid campaign state: {exc}")
+        return finish(2)
     science_handoffs: dict[str, dict] = {}
     if not args.dry_run:
         try:
@@ -2163,6 +2766,18 @@ def main() -> int:
             start_progress_ticker()
         for line in skipped:
             print(f"   skip: {line}")
+        if not args.dry_run:
+            try:
+                persist_campaign_selection_skips(
+                    args.campaign_selection_skip_file,
+                    skipped,
+                )
+            except (OSError, ValueError) as exc:
+                print(
+                    "refusing to continue with invalid campaign selection "
+                    f"state: {exc}"
+                )
+                return finish(2)
         missing = [line for line in skipped if line.endswith("missing ledger row")]
         if args.claims and missing:
             return finish(2)
@@ -2258,9 +2873,26 @@ def main() -> int:
             ) = apply_serialized(jobs, report, args.push_retries)
         session_skipped.update(compute_skips)
         session_skipped.update(schema_quarantines)
+        transaction_quarantines = {
+            item["cid"]
+            for item in report
+            if item.get("result") == CLAIM_TRANSACTION_QUARANTINE_RESULT
+            and isinstance(item.get("cid"), str)
+        }
+        session_skipped.update(transaction_quarantines)
         persist_campaign_quarantine(
             args.campaign_quarantine_file,
             schema_quarantines,
+            report,
+        )
+        persist_compute_required_skips(
+            args.campaign_quarantine_file,
+            compute_skips,
+            report,
+        )
+        persist_claim_transaction_quarantines(
+            args.campaign_quarantine_file,
+            transaction_quarantines,
             report,
         )
         science_handoffs.update(
@@ -2351,12 +2983,21 @@ def report_has_hard_blocker(report: list[dict]) -> bool:
         for item in report
         if item.get("result") in SCHEMA_RECOVERY_RESULTS
     }
+    transaction_quarantined = {
+        item.get("cid")
+        for item in report
+        if item.get("result") == CLAIM_TRANSACTION_QUARANTINE_RESULT
+    }
     quarantine_companions = SCHEMA_INVALID_RESULTS | {"critical_peer_pending"}
     return any(
         item.get("result") not in accepted
         and not (
             item.get("cid") in recovered
             and item.get("result") in quarantine_companions
+        )
+        and not (
+            item.get("cid") in transaction_quarantined
+            and item.get("result") == "apply_or_gate_failed"
         )
         for item in report
     )

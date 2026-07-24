@@ -1,29 +1,74 @@
 {
-  "audit_date": null,
+  "audit_date": "2026-07-23T19:24:29.122107+00:00",
   "audit_invocation_history": [
     "6b0c08265e3c46a891963c5f27450538",
-    "fdd8b8c884504c338db386d8fbafe3b8"
+    "fdd8b8c884504c338db386d8fbafe3b8",
+    "5e9c8dec7ad3400ca0806e3e1d5c7414"
   ],
-  "audit_invocation_id": "fdd8b8c884504c338db386d8fbafe3b8",
-  "audit_state_snapshot": null,
-  "audit_status": "audit_in_progress",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
-  "blocker": "cross_confirmation_disagreement",
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "audit_invocation_id": "5e9c8dec7ad3400ca0806e3e1d5c7414",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true,
+      "runner_path": "scripts/lattice_nn_topological_causal_bound_check.py"
+    },
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 12.504,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/lattice_nn_topological_causal_bound_check.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "3d8f3ae900c25e92aec78323a015d5da6e2fd53bced3fdf97fa5a7a0f7187bce",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "3d8f3ae900c25e92aec78323a015d5da6e2fd53bced3fdf97fa5a7a0f7187bce",
+    "runner_path": "scripts/lattice_nn_topological_causal_bound_check.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 725
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-judicial-1-20260723-99e70f82",
+  "auditor_confidence": "judicial",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The one-step extensionality lemma and induction mathematically establish the stated finite-graph containment, and class A is correct. However, that containment asserts a derived no-influence boundary outside C_t(S). The packet therefore cannot support audited_clean without the mandatory structured N1\u2013N8 evidence, which the current runner transcript does not provide.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260723-99e70f82\", \"judge\": 1, \"rationale\": \"The one-step extensionality lemma and induction mathematically establish the stated finite-graph containment, and class A is correct. However, that containment asserts a derived no-influence boundary outside C_t(S). The packet therefore cannot support audited_clean without the mandatory structured N1\\u2013N8 evidence, which the current runner transcript does not provide.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For a finite dependency graph and a fixed R-local update rule, differences initially confined to S remain confined at tick t to the cumulative forward-reachability neighborhood C_t(S), with shared external randomness when applicable.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-2-20260723-0f41caf0\", \"judge\": 2, \"rationale\": \"The mathematical containment proof is correct, but its equivalent no-influence statement is an asserted derived negative boundary, not merely non-claim routing. The packet therefore requires N1\\u2013N8 evidence for audited_clean; the supplied stdout lacks the required N1 route attempts, N5 resolution checks, and independent N7 evidence. A non-clean positive-theorem verdict may omit the structured packet in this development-tier case.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For a finite dependency graph and a fixed R-local update rule, differences initially confined to S remain confined at tick t to the cumulative forward-reachability neighborhood C_t(S), with shared external randomness when applicable.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260723-3855275b\", \"judge\": 3, \"rationale\": \"The mathematical class-(A) proof closes, but audited_clean does not: the packet requires a structured passing N1-N8 gate for a clean verdict. The runner supplies the ordinary reachability checks but lacks the required current-cycle N1 route attempts, N5 resolution evidence, and independent N7 resolution evidence. Because the theorem expressly derives that vertices outside C_t(S) cannot be influenced, derived_no_go_boundary is the honest negative-assertion class; audited_conditional is therefore the applyable conservative tuple.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For a finite dependency graph and a fixed R-local update rule, differences initially confined to S remain confined at tick t to the cumulative forward-reachability neighborhood C_t(S), with shared external randomness when applicable.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260723-61da62e6\", \"judge\": 4, \"rationale\": \"The one-step lemma and induction are mathematically valid class-A closure. However, the note explicitly presents the containment as the derived assertion that no vertex outside C_t(S) can be influenced. That triggers the clean-verdict No-Go Discipline requirement, while the current-cycle stdout lacks the required N1 route attempts, N5 resolution evidence, and independent N7 resolution evidence; the conservative audited_conditional tuple is therefore correct.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For a finite dependency graph and a fixed R-local update rule, differences initially confined to S remain confined at tick t to the cumulative forward-reachability neighborhood C_t(S), with shared external randomness when applicable.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-5-20260723-c6779f37\", \"judge\": 5, \"rationale\": \"The one-step extensionality lemma and induction correctly prove the finite-graph reachability bound, and the runner performs genuine finite checks. However, the note explicitly asserts a derived no-influence boundary outside C_t(S); under the packet\\u2019s policy, ratifying that negative boundary as audited_clean requires a complete N1\\u2013N8 packet, which the supplied evidence does not support. The conservative applyable result is therefore audited_conditional pending the specified runner-artifact repair.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For a finite dependency graph and a fixed R-local update rule, differences initially confined to S remain confined at tick t to the cumulative forward-reachability neighborhood C_t(S), with shared external randomness when applicable.\", \"A\", null, [\"derived_no_go_boundary\"]]}]",
   "claim_id": "lattice_nn_light_cone_note",
-  "claim_scope": "For a finite dependency graph and fixed R-local map family, initial differences confined to S remain within C_t(S) after t ticks, pathwise under shared external randomness.",
+  "claim_scope": "For a finite dependency graph and a fixed R-local update rule, differences initially confined to S remain confined at tick t to the cumulative forward-reachability neighborhood C_t(S), with shared external randomness when applicable.",
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "`positive_theorem`",
-  "claim_type_last_reviewed": "2026-07-22T20:52:57.898694+00:00",
-  "claim_type_provenance": "audited_pending_cross_confirmation",
+  "claim_type_last_reviewed": "2026-07-23T19:24:29.122107+00:00",
+  "claim_type_provenance": "judicial_review",
   "criticality": "critical",
   "cross_confirmation": {
+    "agreement_schema": "audit_tuple_v2",
     "first_audit": {
       "audit_date": "2026-07-22T20:52:57.898694+00:00",
       "audit_invocation_id": "6b0c08265e3c46a891963c5f27450538",
@@ -52,6 +97,142 @@
       "verdict": "audited_clean",
       "verdict_rationale": "The one-step containment is an exact consequence of deterministic R-locality with the same map family and shared realized randomness: output disagreement requires at least one predecessor disagreement. The induction preserves the stated quantifiers and covers empty sources, DAGs without carry, self-edge graphs, arbitrary state spaces, and time-dependent maps. Independently recomputing the runner totals gives 16,658 Boolean cases, 7,268 output-difference cases, 4,608 history assertions, and graph-family counts 322, 475, 221, and 238, matching stdout without imported comparators or tuned inputs."
     },
+    "judicial_panel_record_v1": {
+      "cid": "lattice_nn_light_cone_note",
+      "disagreement_fingerprint": {
+        "claim_id": "lattice_nn_light_cone_note",
+        "first_audit_invocation_id": "6b0c08265e3c46a891963c5f27450538",
+        "note_hash": "25d6205f588c1098bb1f15430b1661da4ee7de69608f0930924c4172be9a9fc7",
+        "schema": "judicial_disagreement_fingerprint_v1",
+        "seat_summaries_sha256": "824729664850992f478a1c7ebc682e14f283acc8bf524ce70d47823f62ad3a41",
+        "second_audit_invocation_id": "fdd8b8c884504c338db386d8fbafe3b8"
+      },
+      "failures": [],
+      "invocation_id": "5e9c8dec7ad3400ca0806e3e1d5c7414",
+      "majority_count": 5,
+      "panel": 1,
+      "result": "majority_candidate",
+      "schema": "judicial_panel_record_v1",
+      "tally": [
+        {
+          "count": 5,
+          "tuple": [
+            "second",
+            "audited_conditional",
+            "positive_theorem",
+            "For a finite dependency graph and a fixed R-local update rule, differences initially confined to S remain confined at tick t to the cumulative forward-reachability neighborhood C_t(S), with shared external randomness when applicable.",
+            "A",
+            null,
+            [
+              "derived_no_go_boundary"
+            ]
+          ]
+        }
+      ],
+      "votes": [
+        {
+          "auditor": "codex-judicial-1-20260723-99e70f82",
+          "first_auditor_error": "The first position declares no negative assertion and ratifies audited_clean with no_go_discipline=null, although the theorem asserts a derived no-influence boundary and the rubric requires a complete N1\u2013N8 packet for every audited_clean verdict; the supplied stdout lacks the required N1, N5, and N7 evidence.",
+          "hybrid_resolution_note": null,
+          "judge": 1,
+          "judgment_rationale": "The one-step extensionality lemma and induction mathematically establish the stated finite-graph containment, and class A is correct. However, that containment asserts a derived no-influence boundary outside C_t(S). The packet therefore cannot support audited_clean without the mandatory structured N1\u2013N8 evidence, which the current runner transcript does not provide.",
+          "negative_assertion_classes": [
+            "derived_no_go_boundary"
+          ],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "runner_artifact_issue: emit a current-cycle audit transcript containing five distinct N1 route attempts, the required five-resolution N5 evidence for every authenticated negative phrase, and independent N7 resolution evidence, then re-audit.",
+          "ratified_claim_scope": "For a finite dependency graph and a fixed R-local update rule, differences initially confined to S remain confined at tick t to the cumulative forward-reachability neighborhood C_t(S), with shared external randomness when applicable.",
+          "ratified_claim_type": "positive_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "The load-bearing one-step lemma is D_{t+1} subset R^+(D_t).",
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_conditional",
+          "second_auditor_error": "none",
+          "sided_with": "second"
+        },
+        {
+          "auditor": "codex-judicial-2-20260723-0f41caf0",
+          "first_auditor_error": "It declared no negative assertion class despite the note explicitly asserting that no vertex outside the forward-reachability set can be influenced within t ticks. That is a derived_no_go_boundary, so audited_clean requires the structured N1\u2013N8 gate.",
+          "hybrid_resolution_note": null,
+          "judge": 2,
+          "judgment_rationale": "The mathematical containment proof is correct, but its equivalent no-influence statement is an asserted derived negative boundary, not merely non-claim routing. The packet therefore requires N1\u2013N8 evidence for audited_clean; the supplied stdout lacks the required N1 route attempts, N5 resolution checks, and independent N7 evidence. A non-clean positive-theorem verdict may omit the structured packet in this development-tier case.",
+          "negative_assertion_classes": [
+            "derived_no_go_boundary"
+          ],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "runner_artifact_issue: emit a current-cycle audit transcript containing five distinct N1 route attempts, the required five-resolution N5 evidence for every authenticated negative phrase, and independent N7 resolution evidence, then re-audit.",
+          "ratified_claim_scope": "For a finite dependency graph and a fixed R-local update rule, differences initially confined to S remain confined at tick t to the cumulative forward-reachability neighborhood C_t(S), with shared external randomness when applicable.",
+          "ratified_claim_type": "positive_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "The load-bearing one-step lemma is D_{t+1} subset R^+(D_t).",
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_conditional",
+          "second_auditor_error": "none",
+          "sided_with": "second"
+        },
+        {
+          "auditor": "codex-judicial-3-20260723-3855275b",
+          "first_auditor_error": "It ratified audited_clean with no No-Go Discipline packet and an empty negative-assertion declaration, despite the theorem's derived no-influence boundary and the rubric's explicit requirement that an audited_clean verdict carry a passing N1-N8 packet.",
+          "hybrid_resolution_note": null,
+          "judge": 3,
+          "judgment_rationale": "The mathematical class-(A) proof closes, but audited_clean does not: the packet requires a structured passing N1-N8 gate for a clean verdict. The runner supplies the ordinary reachability checks but lacks the required current-cycle N1 route attempts, N5 resolution evidence, and independent N7 resolution evidence. Because the theorem expressly derives that vertices outside C_t(S) cannot be influenced, derived_no_go_boundary is the honest negative-assertion class; audited_conditional is therefore the applyable conservative tuple.",
+          "negative_assertion_classes": [
+            "derived_no_go_boundary"
+          ],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "runner_artifact_issue: emit a current-cycle audit transcript containing five distinct N1 route attempts, the required five-resolution N5 evidence for every authenticated negative phrase, and independent N7 resolution evidence, then re-audit.",
+          "ratified_claim_scope": "For a finite dependency graph and a fixed R-local update rule, differences initially confined to S remain confined at tick t to the cumulative forward-reachability neighborhood C_t(S), with shared external randomness when applicable.",
+          "ratified_claim_type": "positive_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "The load-bearing one-step lemma is D_{t+1} subset R^+(D_t).",
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_conditional",
+          "second_auditor_error": "none",
+          "sided_with": "second"
+        },
+        {
+          "auditor": "codex-judicial-4-20260723-61da62e6",
+          "first_auditor_error": "It treated the explicit theorem-level statement that no vertex outside C_t(S) can be influenced as carrying no negative assertion class. That is a derived_no_go_boundary; the packet says semantic classification is independent of the false mechanical source-shape trigger, so audited_clean required the complete N1\u2013N8 packet.",
+          "hybrid_resolution_note": null,
+          "judge": 4,
+          "judgment_rationale": "The one-step lemma and induction are mathematically valid class-A closure. However, the note explicitly presents the containment as the derived assertion that no vertex outside C_t(S) can be influenced. That triggers the clean-verdict No-Go Discipline requirement, while the current-cycle stdout lacks the required N1 route attempts, N5 resolution evidence, and independent N7 resolution evidence; the conservative audited_conditional tuple is therefore correct.",
+          "negative_assertion_classes": [
+            "derived_no_go_boundary"
+          ],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "runner_artifact_issue: emit a current-cycle audit transcript containing five distinct N1 route attempts, the required five-resolution N5 evidence for every authenticated negative phrase, and independent N7 resolution evidence, then re-audit.",
+          "ratified_claim_scope": "For a finite dependency graph and a fixed R-local update rule, differences initially confined to S remain confined at tick t to the cumulative forward-reachability neighborhood C_t(S), with shared external randomness when applicable.",
+          "ratified_claim_type": "positive_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "The load-bearing one-step lemma is D_{t+1} subset R^+(D_t).",
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_conditional",
+          "second_auditor_error": "none",
+          "sided_with": "second"
+        },
+        {
+          "auditor": "codex-judicial-5-20260723-c6779f37",
+          "first_auditor_error": "It treated the theorem\u2019s explicit no-influence conclusion outside C_t(S) as mere scope routing and therefore omitted the derived_no_go_boundary classification and the mandatory N1\u2013N8 clean-verdict evidence packet.",
+          "hybrid_resolution_note": null,
+          "judge": 5,
+          "judgment_rationale": "The one-step extensionality lemma and induction correctly prove the finite-graph reachability bound, and the runner performs genuine finite checks. However, the note explicitly asserts a derived no-influence boundary outside C_t(S); under the packet\u2019s policy, ratifying that negative boundary as audited_clean requires a complete N1\u2013N8 packet, which the supplied evidence does not support. The conservative applyable result is therefore audited_conditional pending the specified runner-artifact repair.",
+          "negative_assertion_classes": [
+            "derived_no_go_boundary"
+          ],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "runner_artifact_issue: emit a current-cycle audit transcript containing five distinct N1 route attempts, the required five-resolution N5 evidence for every authenticated negative phrase, and independent N7 resolution evidence, then re-audit.",
+          "ratified_claim_scope": "For a finite dependency graph and a fixed R-local update rule, differences initially confined to S remain confined at tick t to the cumulative forward-reachability neighborhood C_t(S), with shared external randomness when applicable.",
+          "ratified_claim_type": "positive_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "The load-bearing one-step lemma is D_{t+1} subset R^+(D_t).",
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_conditional",
+          "second_auditor_error": "none",
+          "sided_with": "second"
+        }
+      ]
+    },
+    "mode": "judicial_panel_majority",
     "second_audit": {
       "audit_date": "2026-07-22T20:52:57.901711+00:00",
       "audit_invocation_id": "fdd8b8c884504c338db386d8fbafe3b8",
@@ -82,24 +263,47 @@
       "verdict": "audited_conditional",
       "verdict_rationale": "The one-step lemma is a correct extensionality argument for shared R-local maps, and induction yields the stated finite-graph containment. The runner genuinely enumerates Boolean maps and representative histories rather than printing constants, and the artifact asserts the derived no-influence boundary outside C_t(S). However, the packet\u2019s mandatory clean-verdict N1\u2013N8 gate cannot pass because its current-cycle stdout lacks five distinct route-class attempts, per-resolution N5 evidence, and independent N7 evidence."
     },
-    "status": "disagreement"
+    "status": "third_confirmed_second",
+    "third_audit": {
+      "audit_date": "2026-07-23T19:24:29.122107+00:00",
+      "audit_invocation_id": "5e9c8dec7ad3400ca0806e3e1d5c7414",
+      "auditor": "codex-judicial-1-20260723-99e70f82",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "claim_scope": "For a finite dependency graph and a fixed R-local update rule, differences initially confined to S remain confined at tick t to the cumulative forward-reachability neighborhood C_t(S), with shared external randomness when applicable.",
+      "claim_type": "positive_theorem",
+      "first_auditor_error": "The first position declares no negative assertion and ratifies audited_clean with no_go_discipline=null, although the theorem asserts a derived no-influence boundary and the rubric requires a complete N1\u2013N8 packet for every audited_clean verdict; the supplied stdout lacks the required N1, N5, and N7 evidence.",
+      "independence": "judicial_review",
+      "judgment_rationale": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The one-step extensionality lemma and induction mathematically establish the stated finite-graph containment, and class A is correct. However, that containment asserts a derived no-influence boundary outside C_t(S). The packet therefore cannot support audited_clean without the mandatory structured N1\u2013N8 evidence, which the current runner transcript does not provide.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260723-99e70f82\", \"judge\": 1, \"rationale\": \"The one-step extensionality lemma and induction mathematically establish the stated finite-graph containment, and class A is correct. However, that containment asserts a derived no-influence boundary outside C_t(S). The packet therefore cannot support audited_clean without the mandatory structured N1\\u2013N8 evidence, which the current runner transcript does not provide.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For a finite dependency graph and a fixed R-local update rule, differences initially confined to S remain confined at tick t to the cumulative forward-reachability neighborhood C_t(S), with shared external randomness when applicable.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-2-20260723-0f41caf0\", \"judge\": 2, \"rationale\": \"The mathematical containment proof is correct, but its equivalent no-influence statement is an asserted derived negative boundary, not merely non-claim routing. The packet therefore requires N1\\u2013N8 evidence for audited_clean; the supplied stdout lacks the required N1 route attempts, N5 resolution checks, and independent N7 evidence. A non-clean positive-theorem verdict may omit the structured packet in this development-tier case.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For a finite dependency graph and a fixed R-local update rule, differences initially confined to S remain confined at tick t to the cumulative forward-reachability neighborhood C_t(S), with shared external randomness when applicable.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260723-3855275b\", \"judge\": 3, \"rationale\": \"The mathematical class-(A) proof closes, but audited_clean does not: the packet requires a structured passing N1-N8 gate for a clean verdict. The runner supplies the ordinary reachability checks but lacks the required current-cycle N1 route attempts, N5 resolution evidence, and independent N7 resolution evidence. Because the theorem expressly derives that vertices outside C_t(S) cannot be influenced, derived_no_go_boundary is the honest negative-assertion class; audited_conditional is therefore the applyable conservative tuple.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For a finite dependency graph and a fixed R-local update rule, differences initially confined to S remain confined at tick t to the cumulative forward-reachability neighborhood C_t(S), with shared external randomness when applicable.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260723-61da62e6\", \"judge\": 4, \"rationale\": \"The one-step lemma and induction are mathematically valid class-A closure. However, the note explicitly presents the containment as the derived assertion that no vertex outside C_t(S) can be influenced. That triggers the clean-verdict No-Go Discipline requirement, while the current-cycle stdout lacks the required N1 route attempts, N5 resolution evidence, and independent N7 resolution evidence; the conservative audited_conditional tuple is therefore correct.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For a finite dependency graph and a fixed R-local update rule, differences initially confined to S remain confined at tick t to the cumulative forward-reachability neighborhood C_t(S), with shared external randomness when applicable.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-5-20260723-c6779f37\", \"judge\": 5, \"rationale\": \"The one-step extensionality lemma and induction correctly prove the finite-graph reachability bound, and the runner performs genuine finite checks. However, the note explicitly asserts a derived no-influence boundary outside C_t(S); under the packet\\u2019s policy, ratifying that negative boundary as audited_clean requires a complete N1\\u2013N8 packet, which the supplied evidence does not support. The conservative applyable result is therefore audited_conditional pending the specified runner-artifact repair.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For a finite dependency graph and a fixed R-local update rule, differences initially confined to S remain confined at tick t to the cumulative forward-reachability neighborhood C_t(S), with shared external randomness when applicable.\", \"A\", null, [\"derived_no_go_boundary\"]]}]",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "second_auditor_error": "none",
+      "sided_with": "second",
+      "verdict": "audited_conditional"
+    }
   },
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 6,
-  "effective_status": "audit_in_progress",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "audit_in_progress",
+  "independence": "judicial_review",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 12.504,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The load-bearing one-step lemma is D_{t+1} subset R^+(D_t).",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "derived_no_go_boundary"
+  ],
   "note_hash": "25d6205f588c1098bb1f15430b1661da4ee7de69608f0930924c4172be9a9fc7",
   "note_path": "docs/LATTICE_NN_LIGHT_CONE_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "runner_artifact_issue: emit a current-cycle audit transcript containing five distinct N1 route attempts, the required five-resolution N5 evidence for every authenticated negative phrase, and independent N7 resolution evidence, then re-audit.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -252,5 +456,5 @@
   "runner_path": "scripts/lattice_nn_topological_causal_bound_check.py",
   "title": "NN Topological Causal-Bound Note",
   "transitive_descendants": 725,
-  "verdict_rationale": null
+  "verdict_rationale": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The one-step extensionality lemma and induction mathematically establish the stated finite-graph containment, and class A is correct. However, that containment asserts a derived no-influence boundary outside C_t(S). The packet therefore cannot support audited_clean without the mandatory structured N1\u2013N8 evidence, which the current runner transcript does not provide.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260723-99e70f82\", \"judge\": 1, \"rationale\": \"The one-step extensionality lemma and induction mathematically establish the stated finite-graph containment, and class A is correct. However, that containment asserts a derived no-influence boundary outside C_t(S). The packet therefore cannot support audited_clean without the mandatory structured N1\\u2013N8 evidence, which the current runner transcript does not provide.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For a finite dependency graph and a fixed R-local update rule, differences initially confined to S remain confined at tick t to the cumulative forward-reachability neighborhood C_t(S), with shared external randomness when applicable.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-2-20260723-0f41caf0\", \"judge\": 2, \"rationale\": \"The mathematical containment proof is correct, but its equivalent no-influence statement is an asserted derived negative boundary, not merely non-claim routing. The packet therefore requires N1\\u2013N8 evidence for audited_clean; the supplied stdout lacks the required N1 route attempts, N5 resolution checks, and independent N7 evidence. A non-clean positive-theorem verdict may omit the structured packet in this development-tier case.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For a finite dependency graph and a fixed R-local update rule, differences initially confined to S remain confined at tick t to the cumulative forward-reachability neighborhood C_t(S), with shared external randomness when applicable.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260723-3855275b\", \"judge\": 3, \"rationale\": \"The mathematical class-(A) proof closes, but audited_clean does not: the packet requires a structured passing N1-N8 gate for a clean verdict. The runner supplies the ordinary reachability checks but lacks the required current-cycle N1 route attempts, N5 resolution evidence, and independent N7 resolution evidence. Because the theorem expressly derives that vertices outside C_t(S) cannot be influenced, derived_no_go_boundary is the honest negative-assertion class; audited_conditional is therefore the applyable conservative tuple.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For a finite dependency graph and a fixed R-local update rule, differences initially confined to S remain confined at tick t to the cumulative forward-reachability neighborhood C_t(S), with shared external randomness when applicable.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260723-61da62e6\", \"judge\": 4, \"rationale\": \"The one-step lemma and induction are mathematically valid class-A closure. However, the note explicitly presents the containment as the derived assertion that no vertex outside C_t(S) can be influenced. That triggers the clean-verdict No-Go Discipline requirement, while the current-cycle stdout lacks the required N1 route attempts, N5 resolution evidence, and independent N7 resolution evidence; the conservative audited_conditional tuple is therefore correct.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For a finite dependency graph and a fixed R-local update rule, differences initially confined to S remain confined at tick t to the cumulative forward-reachability neighborhood C_t(S), with shared external randomness when applicable.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-5-20260723-c6779f37\", \"judge\": 5, \"rationale\": \"The one-step extensionality lemma and induction correctly prove the finite-graph reachability bound, and the runner performs genuine finite checks. However, the note explicitly asserts a derived no-influence boundary outside C_t(S); under the packet\\u2019s policy, ratifying that negative boundary as audited_clean requires a complete N1\\u2013N8 packet, which the supplied evidence does not support. The conservative applyable result is therefore audited_conditional pending the specified runner-artifact repair.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For a finite dependency graph and a fixed R-local update rule, differences initially confined to S remain confined at tick t to the cumulative forward-reachability neighborhood C_t(S), with shared external randomness when applicable.\", \"A\", null, [\"derived_no_go_boundary\"]]}]"
 }

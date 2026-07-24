@@ -2360,18 +2360,22 @@ def fresh_schema_retry_eligible(validation_error: str | None) -> bool:
 
 def fresh_schema_retry_code(validation_error: str) -> str:
     """Reduce validator text to a conclusion-free control-plane code."""
+    if validation_error.startswith(
+        "N3.hits must exactly disposition orchestrator phrase scan"
+    ):
+        return "N3_AUTHENTICATED_GROUP_COVERAGE_MISMATCH"
     if (
         validation_error.startswith("N3 hit ")
         and "occurrence_" in validation_error
-    ) or validation_error.startswith(
-        "N3.hits must exactly disposition orchestrator phrase scan"
     ):
         return "N3_AUTHENTICATED_GROUP_TUPLE_MISMATCH"
+    if validation_error.startswith(
+        "N5.statements must exactly disposition orchestrator rhetoric scan"
+    ):
+        return "N5_AUTHENTICATED_GROUP_COVERAGE_MISMATCH"
     if (
         validation_error.startswith("N5 statement ")
         and "occurrence_" in validation_error
-    ) or validation_error.startswith(
-        "N5.statements must exactly disposition orchestrator rhetoric scan"
     ):
         return "N5_AUTHENTICATED_GROUP_TUPLE_MISMATCH"
     if validation_error.startswith("N3 retained_authority hit "):
@@ -2479,11 +2483,30 @@ def render_fresh_schema_retry_prompt(
             "infer an unlisted phrase from a shared id or cross-label a count, "
             "digest, or locator from another record.\n"
         ),
+        "N3_AUTHENTICATED_GROUP_COVERAGE_MISMATCH": (
+            "Static N3 coverage invariant: enumerate every authenticated "
+            "full_phrase_groups record from every applicable manifest path "
+            "exactly once in N3.hits. Key coverage by the complete "
+            "(evidence_path, phrase, occurrence_group_id) tuple. Do not "
+            "deduplicate records merely because they share a context-derived "
+            "group id or digest, and do not add a phrase absent from the "
+            "authenticated records. Copy each record's complete occurrence "
+            "tuple without cross-labeling fields.\n"
+        ),
         "N5_AUTHENTICATED_GROUP_TUPLE_MISMATCH": (
             "Static N5 invariant: copy phrase, occurrence_group_id, "
             "occurrence_count, occurrence_locator_sha256, and evidence_locator "
             "from one same full_phrase_groups record. Never cross-label a group "
             "id, count, digest, or locator under another phrase.\n"
+        ),
+        "N5_AUTHENTICATED_GROUP_COVERAGE_MISMATCH": (
+            "Static N5 coverage invariant: enumerate every authenticated "
+            "full_phrase_groups record from every applicable manifest path "
+            "exactly once in N5.statements. Key coverage by the complete "
+            "(evidence_path, phrase, occurrence_group_id) tuple. Shared group "
+            "ids or digests do not merge distinct phrase records. Do not omit, "
+            "deduplicate, or invent records; copy each record's complete "
+            "occurrence tuple from that same record.\n"
         ),
         "N5_TESTED_RESOLUTION_VERBATIM_MISMATCH": (
             "Static N5 invariant: copy every complete tested_resolutions entry, "
@@ -2764,6 +2787,16 @@ def main() -> int:
                         "this way will be tagged with the actual sub-floor "
                         "family and won't satisfy the standard "
                         "independence rule for clean verdicts.")
+    p.add_argument(
+        "--run-log-path",
+        type=Path,
+        default=None,
+        help=(
+            "Write the append-only JSONL run log at this exact path. The path "
+            "must not already exist. Audit-loop uses this to preserve a "
+            "forensic canary's rejected packet inside its campaign workdir."
+        ),
+    )
     args = p.parse_args()
 
     if not 0 <= args.validation_repair_attempts <= 3:
@@ -2808,14 +2841,24 @@ def main() -> int:
             f"verdicts. Use only for testing."
         )
 
-    LOG_DIR.mkdir(parents=True, exist_ok=True)
     run_uuid = uuid.uuid4().hex
     run_id = run_uuid[:8]
     auditor_name_base = args.auditor_name or (
         f"codex-cli-{audit_model}-"
         f"{datetime.now(timezone.utc).strftime('%Y%m%d-%H%M%S')}-{run_id}"
     )
-    run_log = LOG_DIR / f"run-{datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')}-{run_id}.jsonl"
+    if args.run_log_path is not None:
+        run_log = args.run_log_path
+        if run_log.exists():
+            print(f"REFUSING: --run-log-path already exists: {run_log}")
+            return 2
+        run_log.parent.mkdir(parents=True, exist_ok=True)
+    else:
+        LOG_DIR.mkdir(parents=True, exist_ok=True)
+        run_log = LOG_DIR / (
+            f"run-{datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')}-"
+            f"{run_id}.jsonl"
+        )
     print(f"Run log: {run_log}")
     print(f"Auditor (base): {auditor_name_base}  ({auditor_family})")
     print(f"Codex model: {audit_model}  reasoning_effort={reasoning_effort}")

@@ -325,6 +325,62 @@ class CampaignRepairIntakeTest(unittest.TestCase):
         self.assertIn("carries no scientific", by_claim["schema"]["prompt_body"])
         self.assertTrue(by_claim["schema"]["state_key"].startswith("campaign:"))
 
+    def test_real_forensic_canary_quarantine_becomes_operational_repair(self):
+        campaign = self._campaign(
+            [
+                {
+                    "claim_id": "forensic_row",
+                    "reason": "schema_invalid_quarantined",
+                    "failures": [
+                        {
+                            "cid": "forensic_row",
+                            "pass": 1,
+                            "result": "validation_failed",
+                            "detail": (
+                                "N5.statements must exactly disposition "
+                                "orchestrator rhetoric scan; "
+                                "preserved_run_log=forensic-canary-row.jsonl"
+                            ),
+                        }
+                    ],
+                    "recorded_at": "2026-07-24T12:00:00+00:00",
+                }
+            ]
+        )
+        (campaign / "forensic-canary-row.jsonl").write_text(
+            json.dumps(
+                {
+                    "claim_id": "forensic_row",
+                    "phase": "validate_failed",
+                    "error": "N5 coverage mismatch",
+                    "blob": {"untrusted": "rejected response"},
+                }
+            )
+            + "\n",
+            encoding="utf-8",
+        )
+        canonical = {
+            "claim_id": "forensic_row",
+            "note_path": "docs/FORENSIC.md",
+            "runner_path": "scripts/forensic.py",
+            "audit_status": "unaudited",
+            "effective_status": "unaudited",
+            "transitive_descendants": 10,
+        }
+
+        candidates = sfl.parse_campaign_workdir(
+            campaign,
+            ledger_loader=lambda _cid: canonical,
+        )
+
+        self.assertEqual(len(candidates), 1)
+        candidate = candidates[0]
+        self.assertEqual(candidate["category"], "campaign_schema_transport")
+        self.assertEqual(candidate["worker_mode"], "operational")
+        self.assertIn("preserved_run_log", candidate["prompt_body"])
+        self.assertIn("carries no scientific", candidate["prompt_body"])
+        self.assertEqual(candidate["note_path"], "docs/FORENSIC.md")
+
     def test_missing_ledger_row_gets_registration_route(self):
         campaign = self._campaign(
             [{"claim_id": "missing", "reason": "unknown_quarantine"}]

@@ -48,8 +48,9 @@ H_rl = -H_lr.
 The two-edge product already contains the helper-mode fermionic parity.
 Multiplication by an additional `B_h` cancels that parity. The remaining minus
 sign fixes the ordered-pair orientation against the twelve direct edges, as
-checked by `H_ij H_jk H_ik = -i` on code for every `i<j<k`. The former formula
-therefore failed the even-CAR endpoint-incidence algebra.
+checked by `H_ij H_jk H_ik = -i` on code for every `i<j<k`. The displayed
+two-edge expression is the one that matches the even-CAR endpoint-incidence
+algebra in these fixtures.
 
 The repaired executable checks every cell at `L=3,6,7`:
 
@@ -57,14 +58,14 @@ The repaired executable checks every cell at `L=3,6,7`:
 |---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 3 | 162 | 405 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 6 | 1,296 | 3,240 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 7 held | 2,058 | 5,145 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 7 | 2,058 | 5,145 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 A separate three-mode operator test covers the five affected coin Givens and
 all three reverse FSWAP factors. With the repaired two-edge bilinear, the
 maximum Frobenius reconstruction residual is
 `2.221417347195572e-16`. Reintroducing the extra helper `B_h` gives operator
-residuals from `1.4142135623730947` to `2.0`; this is a genuine negative
-control that would have rejected the old expression.
+residuals from `1.4142135623730947` to `2.0`; this comparison distinguishes
+the two expressions on the stated finite matrices.
 
 The all-24 derived-bilinear frame test uses one representative of the exact
 translation orbit at each size. There are `54` raw Pauli representative
@@ -82,7 +83,7 @@ resources of a compiler.
 |---:|---:|---:|---:|---:|---:|---:|---:|
 | 3 | 675 | 25 | 484 | 191 | 323 | 322 | 1 |
 | 6 | 5,400 | 25 | 3,886 | 1,514 | 2,591 | 2,590 | 1 |
-| 7 held | 8,575 | 25 | 6,172 | 2,403 | 4,115 | 4,114 | 1 |
+| 7 | 8,575 | 25 | 6,172 | 2,403 | 4,115 | 4,114 | 1 |
 
 The verified formulas are combined rank `18N-2`, code exponent `7N+2`,
 matter quotient dimension `12N-1`, symplectic rank `12N-2`, and a
@@ -111,13 +112,12 @@ and `15N` contact phases.
 |---:|---:|---:|---:|---:|---:|
 | 3 | 864 | 7 | 58 | 14 | 452 |
 | 6 | 6,912 | 6 | 46 | 14 | 452 |
-| 7 held | 10,976 | 7 | 58 | 14 | 452 |
+| 7 | 10,976 | 7 | 58 | 14 | 452 |
 
-Every reported color layer is support-disjoint. The held `L=7` calculation
-uses the same seven-color ceiling without refitting. The 30 stage groups and
-their order are supplied host-side data. A layer count is not physical time,
-duration, or a transition rate, and no local clock or returned-work controller
-is present.
+Every reported color layer is support-disjoint, and each of the three finite
+census sizes uses at most seven colors. The 30 stage groups and their order
+are supplied host-side data. A layer count is not physical time, duration, or
+a transition rate, and no local clock or returned-work controller is present.
 
 ## Canonical M64 word and shrinking-seam fixtures
 
@@ -224,7 +224,7 @@ Every load-bearing discretionary input is exposed:
   computed greedy first-fit colors within lexicographically sorted stages and
   construction/lexicographic-cell factor order;
 - compile-time frame/chart transport; and
-- the choice of construction/train/held sizes.
+- the choice of the three finite census sizes.
 
 The numerical and selection conventions are also explicit: global residual
 tolerance `2e-11`; QR drop/phase cutoff `1e-13`; polynomial coefficient-sign
@@ -257,37 +257,6 @@ blank physical M2 reference preparation, a local frame/chart register, an
 autonomous controller, a clock, placement dynamics, a returned-work band, or
 reference/topological-sector genesis.
 
-## Route disposition and N1-N8 discipline
-
-- Direct bounded-block route: partial positive algebra/support census; no `E`.
-- Local gauge/auxiliary route: partial positive local constraints and dressing;
-  the fixed Wilson section fails the tested combined covariance condition.
-- Staggered/time-multiplexed route: partial positive finite coloring; schedule,
-  chart transport, controller, blanks, and returned work remain supplied or
-  absent.
-
-N1 enumerates these routes plus transported-chart and local-genesis
-constructive alternatives. N2 keeps the missing `E`, fixed-chart covariance,
-controller, and genesis logically separate. N3 exposes the ordering, helper,
-Wilson, chart, blank, and work imports. N4 reproduces the former helper-parity
-failure and restores the shrinking-seam fixture with historical Cycle 230
-provenance. N5 restricts every conclusion to the tested resolution. N6 lists
-constructive partial-closure paths. N7
-steelmans a coherent chart register with a reversible color clock. N8 prevents
-the canonical M64 word from being promoted to a physical M2 intertwiner.
-
-Broad negative gate: **FAIL / DO NOT SHIP**.
-
-Minimum-content gate: **FAIL / DO NOT SHIP**.
-
-Shared-obstruction gate: **FAIL / DO NOT SHIP**.
-
-Axiom-pressure gate: **FAIL / DO NOT SHIP**.
-
-No route-independent obstruction has survived the three constructive
-attempts. No impossibility, minimum-content, shared-obstruction, or axiom
-pressure claim is made.
-
 ## Prior-art and novelty boundary
 
 Fermionic even-algebra encodings, auxiliary/gauge fields, Pauli stabilizer
@@ -300,7 +269,7 @@ strings by Verstraete and Cirac ([J. Stat. Mech. P09012 (2005)](https://doi.org/
 
 The narrow result here is the corrected, self-contained coexecution of the
 specific finite graph/link rank and support data, all-15 onsite incidence
-tests, helper-parity negative control, canonical M64 word, held-size census,
+tests, helper-parity comparison control, canonical M64 word, `L=7` census,
 fixed-chart covariance boundary, and restored shrinking-seam fixtures
 (historical Cycle 230 provenance). No novel encoding principle, arbitrary-size
 theorem, continuum limit, empirical prediction, or broader priority is

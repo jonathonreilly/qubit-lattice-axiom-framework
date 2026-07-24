@@ -161,6 +161,12 @@ SLOPES = {
     "D_first": Fraction(-296, 625),
     "D_second": Fraction(-5, 16),
 }
+EXPECTED_CONSTANT_PREFIXES = {
+    "A": {"S1": 242, "S2": 710, "S3": 1231, "S4": 1799},
+    "B": {"S1": 160, "S2": 468, "S3": 812, "S4": 1187},
+    "C": {"S1": 117, "S2": 344, "S3": 596, "S4": 872},
+}
+EXPECTED_CONSTANT_TOTALS = {"A": 1939, "B": 1279, "C": 940}
 COUNTER_MODULUS = 16
 LARGE_BANK_CAPACITY = 1_000_000_000
 RESET_TEST_BANK_CAPACITY = 700
@@ -338,6 +344,24 @@ def constant_tick_coordinates(slope: Fraction) -> list[Fraction]:
     )
 
 
+def constant_prefix_count_oracle(slope: Fraction, coordinate: Fraction) -> int:
+    """Count positive integer levels at or before a coordinate by exact division."""
+    accumulated = abs(slope) * coordinate
+    return accumulated.numerator // accumulated.denominator
+
+
+def constant_strict_total_oracle(slope: Fraction) -> int:
+    """Count positive integer levels strictly before the excluded upper endpoint."""
+    accumulated = abs(slope) * GENERATOR_END
+    return (accumulated.numerator - 1) // accumulated.denominator
+
+
+def constant_crossing_coordinates_oracle(slope: Fraction) -> list[Fraction]:
+    """Enumerate the exact constant-slope crossings from independent level bounds."""
+    total = constant_strict_total_oracle(slope)
+    return [Fraction(level, abs(slope)) for level in range(1, total + 1)]
+
+
 def ordered_items(
     ticks: Sequence[Fraction],
     labels: dict[str, Fraction],
@@ -445,16 +469,49 @@ def main() -> int:
     }
     pairs = all_label_pairs()
 
-    # 1. Exact counter snapshots equal exact tick-prefix counts.
+    # 1. Exact counter snapshots equal independent exact tick-prefix oracles.
+    oracle_totals = {
+        name: constant_strict_total_oracle(SLOPES[name]) for name in ("A", "B", "C")
+    }
+    oracle_prefixes = {
+        name: {
+            label: constant_prefix_count_oracle(SLOPES[name], coordinate)
+            for label, coordinate in COREGISTRATION_COORDINATES.items()
+        }
+        for name in ("A", "B", "C")
+    }
+    generated_crossings_match_oracle = all(
+        ticks[name] == constant_crossing_coordinates_oracle(SLOPES[name])
+        for name in ("A", "B", "C")
+    )
+    b_s1_tie_exact = (
+        Fraction(EXPECTED_CONSTANT_PREFIXES["B"]["S1"], abs(SLOPES["B"]))
+        == COREGISTRATION_COORDINATES["S1"]
+    )
+    b_endpoint_excluded_exact = (
+        Fraction(EXPECTED_CONSTANT_TOTALS["B"] + 1, abs(SLOPES["B"]))
+        == GENERATOR_END
+        and ticks["B"][-1] < GENERATOR_END
+    )
     prefix_details: dict[str, dict[str, int | None]] = {}
-    prefix_ok = True
+    prefix_ok = (
+        oracle_totals == EXPECTED_CONSTANT_TOTALS
+        and oracle_prefixes == EXPECTED_CONSTANT_PREFIXES
+        and generated_crossings_match_oracle
+        and b_s1_tie_exact
+        and b_endpoint_excluded_exact
+    )
     for name, chain in forward.items():
         prefix_details[name] = {}
-        for label, coordinate in COREGISTRATION_COORDINATES.items():
-            expected = sum(tick <= coordinate for tick in ticks[name])
+        for label in COREGISTRATION_COORDINATES:
+            expected = oracle_prefixes[name][label]
             observed = decode_position(chain, label)
             prefix_details[name][label] = observed
-            prefix_ok = prefix_ok and observed == expected
+            prefix_ok = (
+                prefix_ok
+                and observed == expected
+                and observed == EXPECTED_CONSTANT_PREFIXES[name][label]
+            )
     check(
         "exact counter snapshots equal supplied tick-prefix counts",
         prefix_ok,
@@ -753,6 +810,13 @@ def main() -> int:
         },
     }
     receipt["controls"] = {
+        "constant_crossing_oracle": {
+            "strict_totals": oracle_totals,
+            "literal_prefixes_match": oracle_prefixes == EXPECTED_CONSTANT_PREFIXES,
+            "generated_crossings_match": generated_crossings_match_oracle,
+            "B_S1_tie_exact": b_s1_tie_exact,
+            "B_generator_endpoint_excluded": b_endpoint_excluded_exact,
+        },
         "carry_erasure_changes_cross_reset_interval": carry_retention_load_bearing,
         "bank_and_generator_metadata_mutation_preserves_interval": (
             metadata_interval == baseline_interval

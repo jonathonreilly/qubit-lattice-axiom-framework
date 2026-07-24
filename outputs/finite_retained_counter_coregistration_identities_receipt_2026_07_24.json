@@ -127,6 +127,17 @@
     }
   },
   "controls": {
+    "constant_crossing_oracle": {
+      "strict_totals": {
+        "A": 1939,
+        "B": 1279,
+        "C": 940
+      },
+      "literal_prefixes_match": true,
+      "generated_crossings_match": true,
+      "B_S1_tie_exact": true,
+      "B_generator_endpoint_excluded": true
+    },
     "carry_erasure_changes_cross_reset_interval": true,
     "bank_and_generator_metadata_mutation_preserves_interval": true,
     "predecessor_break_makes_interval_undefined": true,

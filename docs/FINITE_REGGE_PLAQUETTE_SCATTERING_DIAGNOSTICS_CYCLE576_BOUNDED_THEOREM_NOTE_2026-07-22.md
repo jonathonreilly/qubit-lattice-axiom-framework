@@ -21,6 +21,10 @@ Controlled metadata literals: `authority: none`; `audit: unset`;
 
 **Primary runner:**
 [`scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py`](../scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py)
+**Actual-Regge route support helper:**
+[`scripts/physical_dynamical_metric_source_law_bridge_cycle576_regge_support_2026_07_22.py`](../scripts/physical_dynamical_metric_source_law_bridge_cycle576_regge_support_2026_07_22.py)
+**Plaquette-route support helper:**
+[`scripts/physical_dynamical_metric_source_law_bridge_cycle576_plaquette_support_2026_07_22.py`](../scripts/physical_dynamical_metric_source_law_bridge_cycle576_plaquette_support_2026_07_22.py)
 **Receipt:**
 [`outputs/physical_dynamical_metric_source_law_bridge_tournament_cycle576_receipt_2026_07_22.json`](../outputs/physical_dynamical_metric_source_law_bridge_tournament_cycle576_receipt_2026_07_22.json)
 **Repaired Cycle-572 source note:**
@@ -79,6 +83,14 @@ The calculation supplies the Regge complex and action, edge and metric maps,
 coupling constants and signs, finite update parameters, Route-B coordinate
 layout, Route-C coin and schedule, periodic domains, source profiles,
 tolerances, readouts, and the train/held split.
+
+Audit-packet import inventory: the primary runner ordinary-imports the
+cubic-Coxeter Regge second-variation module, the actual-Regge route helper, and
+the plaquette-route helper. The plaquette helper ordinary-imports the Regge
+helper for the shared frame representation. All three transitive helpers are
+bound through `AUDIT_INPUT_PATHS` and the runner's source-dependency closure.
+The two new helpers are packaging surfaces only, not independent claims or
+authorities.
 
 The complete supplied parameter and control inventory is:
 

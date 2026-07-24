@@ -1295,77 +1295,129 @@ def audit_selection_fingerprint(row: dict) -> str:
     ).hexdigest()
 
 
-def _runner_descendant_pids(root_pid: int) -> set[int]:
-    """Snapshot recursive descendants before they can orphan via setsid()."""
+AUDIT_RUNNER_PROCESS_TOKEN_ENV = "CODEX_AUDIT_RUNNER_PROCESS_TOKEN"
+SANDBOX_EXEC_PATH = Path("/usr/bin/sandbox-exec")
+
+
+def _runner_process_has_token(pid: int, token: str) -> bool:
+    """Revalidate a runner-owned process immediately before signaling it."""
+    marker = f"{AUDIT_RUNNER_PROCESS_TOKEN_ENV}={token}"
+    proc_environ = Path("/proc") / str(pid) / "environ"
+    if proc_environ.exists():
+        try:
+            return marker.encode("utf-8") in proc_environ.read_bytes().split(b"\0")
+        except FileNotFoundError:
+            return False
+        except OSError as exc:
+            raise RuntimeError(
+                f"cannot revalidate runner process identity for PID {pid}"
+            ) from exc
     result = subprocess.run(
-        ["ps", "-axo", "pid=,ppid="],
+        ["ps", "eww", "-p", str(pid), "-o", "command="],
         capture_output=True,
         text=True,
         check=False,
     )
     if result.returncode != 0:
-        return set()
-    children: dict[int, set[int]] = {}
+        return False
+    return marker in result.stdout.split()
+
+
+def _runner_token_processes(token: str) -> set[int]:
+    """Find live processes carrying this invocation's unguessable token."""
+    marker = f"{AUDIT_RUNNER_PROCESS_TOKEN_ENV}={token}"
+    proc_root = Path("/proc")
+    if proc_root.is_dir():
+        owned: set[int] = set()
+        try:
+            candidates = tuple(proc_root.iterdir())
+        except OSError as exc:
+            raise RuntimeError(
+                "cannot enumerate token-bound runner processes"
+            ) from exc
+        for candidate in candidates:
+            if not candidate.name.isdigit():
+                continue
+            pid = int(candidate.name)
+            if pid != os.getpid() and _runner_process_has_token(pid, token):
+                owned.add(pid)
+        return owned
+
+    result = subprocess.run(
+        ["ps", "eww", "-axo", "pid=,command="],
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    if result.returncode != 0:
+        raise RuntimeError("cannot enumerate token-bound runner processes")
+    owned: set[int] = set()
     for line in result.stdout.splitlines():
-        fields = line.split()
-        if len(fields) != 2:
+        fields = line.strip().split(maxsplit=1)
+        if len(fields) != 2 or marker not in fields[1].split():
             continue
         try:
-            pid, parent = (int(field) for field in fields)
+            pid = int(fields[0])
         except ValueError:
             continue
-        children.setdefault(parent, set()).add(pid)
-    descendants: set[int] = set()
-    frontier = list(children.get(root_pid, ()))
-    while frontier:
-        pid = frontier.pop()
-        if pid in descendants:
+        if pid != os.getpid():
+            owned.add(pid)
+    return owned
+
+
+def _signal_runner_token_processes(token: str, sig: int) -> set[int]:
+    """Signal only PIDs whose process identity still carries this token."""
+    signaled: set[int] = set()
+    for pid in _runner_token_processes(token):
+        if not _runner_process_has_token(pid, token):
             continue
-        descendants.add(pid)
-        frontier.extend(children.get(pid, ()))
-    return descendants
-
-
-def _terminate_runner_process_group(
-    process: subprocess.Popen,
-    descendant_pids: set[int] | None = None,
-) -> None:
-    """Best-effort termination for grouped and observed detached descendants."""
-    detached = set(descendant_pids or ())
-    try:
-        os.killpg(process.pid, signal.SIGTERM)
-    except ProcessLookupError:
-        pass
-    for pid in detached:
         try:
-            os.kill(pid, signal.SIGTERM)
+            os.kill(pid, sig)
         except ProcessLookupError:
-            pass
+            continue
+        signaled.add(pid)
+    return signaled
+
+
+def _terminate_runner_process_tree(
+    process: subprocess.Popen,
+    token: str,
+) -> None:
+    """Terminate token-bound descendants without remembered bare PIDs."""
+    _signal_runner_token_processes(token, signal.SIGTERM)
+
     deadline = time.monotonic() + 1.0
     while time.monotonic() < deadline:
-        survivors: set[int] = set()
-        for pid in detached:
-            try:
-                os.kill(pid, 0)
-            except ProcessLookupError:
-                continue
-            survivors.add(pid)
-        try:
-            os.killpg(process.pid, 0)
-        except ProcessLookupError:
-            if not survivors:
-                return
-        detached = survivors
+        remaining = _runner_token_processes(token)
+        if not remaining and process.poll() is not None:
+            return
+        _signal_runner_token_processes(token, signal.SIGTERM)
         time.sleep(0.02)
-    try:
-        os.killpg(process.pid, signal.SIGKILL)
-    except ProcessLookupError:
-        pass
-    for pid in detached:
-        try:
-            os.kill(pid, signal.SIGKILL)
-        except ProcessLookupError:
-            pass
+
+    _signal_runner_token_processes(token, signal.SIGKILL)
+    deadline = time.monotonic() + 1.0
+    while time.monotonic() < deadline:
+        remaining = _runner_token_processes(token)
+        if not remaining and process.poll() is not None:
+            return
+        _signal_runner_token_processes(token, signal.SIGKILL)
+        time.sleep(0.02)
+    raise RuntimeError(
+        "token-bound runner descendants survived TERM/KILL containment"
+    )
+
+
+def _runner_command(isolated_runner: Path, source_root: Path) -> list[str]:
+    """Apply kernel write containment when the host provides sandbox-exec."""
+    command = [sys.executable, str(isolated_runner)]
+    if not SANDBOX_EXEC_PATH.exists():
+        return command
+    escaped_root = str(source_root).replace("\\", "\\\\").replace('"', '\\"')
+    profile = (
+        "(version 1) (allow default) "
+        f'(deny file-write* (subpath "{escaped_root}"))'
+    )
+    return [str(SANDBOX_EXEC_PATH), "-p", profile, *command]
 
 
 def _run_repo_runner(
@@ -1415,6 +1467,7 @@ def _run_repo_runner(
             if isolated_bytes != source_bytes:
                 isolated_runner.write_bytes(source_bytes)
 
+            runner_token = uuid.uuid4().hex
             runner_env = {
                 **os.environ,
                 "PYTHONPATH": str(isolated_root / "scripts"),
@@ -1422,6 +1475,7 @@ def _run_repo_runner(
                 "GIT_CONFIG_KEY_0": "remote.origin.pushurl",
                 "GIT_CONFIG_VALUE_0": "audit-runner-push-disabled://origin",
                 "GIT_OPTIONAL_LOCKS": "0",
+                AUDIT_RUNNER_PROCESS_TOKEN_ENV: runner_token,
             }
             with tempfile.TemporaryFile(
                 mode="w+t",
@@ -1431,7 +1485,7 @@ def _run_repo_runner(
                 encoding="utf-8",
             ) as stderr_file:
                 process = subprocess.Popen(
-                    [sys.executable, str(isolated_runner)],
+                    _runner_command(isolated_runner, source_root),
                     cwd=isolated_root,
                     stdout=stdout_file,
                     stderr=stderr_file,
@@ -1439,29 +1493,35 @@ def _run_repo_runner(
                     env=runner_env,
                     start_new_session=True,
                 )
-                observed_descendants: set[int] = set()
                 deadline = time.monotonic() + timeout_sec
                 timed_out = False
-                while process.poll() is None:
-                    observed_descendants.update(
-                        _runner_descendant_pids(process.pid)
-                    )
-                    if time.monotonic() >= deadline:
-                        timed_out = True
-                        break
-                    time.sleep(0.05)
-                _terminate_runner_process_group(
-                    process,
-                    observed_descendants,
-                )
                 try:
-                    process.wait(timeout=2)
-                except subprocess.TimeoutExpired:
-                    _terminate_runner_process_group(
-                        process,
-                        observed_descendants,
-                    )
-                    process.wait()
+                    while process.poll() is None:
+                        if time.monotonic() >= deadline:
+                            timed_out = True
+                            break
+                        time.sleep(0.05)
+                finally:
+                    containment_error: BaseException | None = None
+                    try:
+                        _terminate_runner_process_tree(
+                            process,
+                            runner_token,
+                        )
+                    except BaseException as exc:
+                        containment_error = exc
+                    try:
+                        process.wait(timeout=2)
+                    except subprocess.TimeoutExpired as exc:
+                        if containment_error is None:
+                            containment_error = RuntimeError(
+                                "direct runner process survived containment"
+                            )
+                        containment_error.add_note(
+                            f"direct process wait timed out: {exc}"
+                        )
+                    if containment_error is not None:
+                        raise containment_error
                 stdout_file.seek(0)
                 stderr_file.seek(0)
                 stdout = stdout_file.read()

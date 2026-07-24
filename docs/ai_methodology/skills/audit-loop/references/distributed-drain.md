@@ -55,8 +55,13 @@ eligible to every surviving worker.
   cannot be reconciled, preserve the intended local commit and stop instead of
   resetting or replaying an uncertain push.
 - Primary and helper runners execute in disposable isolated worktrees. Their
-  process groups are terminated and the whole worktree is discarded; runner
-  cleanup never deletes deltas observed in the canonical committer checkout.
+  processes and detached children inherit a per-invocation identity token.
+  Cleanup repeatedly enumerates that token, revalidates it immediately before
+  every signal, and fails unless no token-bearing process remains; it never
+  signals a remembered bare PID. On macOS a kernel sandbox additionally denies
+  writes to the canonical checkout. Containment and whole-worktree discard are
+  both mandatory on every exit path; cleanup never deletes deltas observed in
+  the canonical committer checkout.
 - Use unique worker ids. Reusing an id is safe but defeats target dispersion
   and wastes seats.
 - Keep the combined repository-wide load near 8-10 active Codex processes,

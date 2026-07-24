@@ -3387,6 +3387,345 @@ class CampaignContractTest(unittest.TestCase):
             self.assertFalse(detached_marker.exists())
             self.assertEqual(worktrees_after, worktrees_before)
 
+    def test_runner_fast_double_fork_is_token_reaped_before_external_write(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            scripts = root / "scripts"
+            scripts.mkdir()
+            marker = root / "escaped-double-fork-marker.txt"
+            runner = scripts / "runner.py"
+            runner.write_text(
+                "import os, time\n"
+                "from pathlib import Path\n"
+                "first = os.fork()\n"
+                "if first == 0:\n"
+                "    os.setsid()\n"
+                "    second = os.fork()\n"
+                "    if second > 0:\n"
+                "        os._exit(0)\n"
+                "    time.sleep(0.35)\n"
+                f"    Path({str(marker)!r}).write_text('escaped')\n"
+                "    os._exit(0)\n"
+                "print('direct runner complete')\n",
+                encoding="utf-8",
+            )
+            subprocess.run(["git", "init", "-q", "-b", "main"], cwd=root, check=True)
+            subprocess.run(
+                ["git", "config", "user.email", "audit-test@example.invalid"],
+                cwd=root,
+                check=True,
+            )
+            subprocess.run(
+                ["git", "config", "user.name", "Audit Test"],
+                cwd=root,
+                check=True,
+            )
+            subprocess.run(["git", "add", "."], cwd=root, check=True)
+            subprocess.run(
+                ["git", "commit", "-q", "-m", "baseline"],
+                cwd=root,
+                check=True,
+            )
+            tokens = [
+                f"fast-double-fork-token-{attempt}"
+                for attempt in range(5)
+            ]
+            token_uuids = [mock.Mock(hex=token) for token in tokens]
+            with mock.patch.object(
+                batch.audit_runner,
+                "REPO_ROOT",
+                root,
+            ), mock.patch.object(
+                batch.audit_runner,
+                "SANDBOX_EXEC_PATH",
+                root / "missing-sandbox-exec",
+            ), mock.patch.object(
+                batch.audit_runner.uuid,
+                "uuid4",
+                side_effect=token_uuids,
+            ):
+                results = [
+                    batch.audit_runner._run_repo_runner(runner, 30)
+                    for _attempt in range(5)
+                ]
+                remaining = {
+                    token: batch.audit_runner._runner_token_processes(token)
+                    for token in tokens
+                }
+
+            time.sleep(0.5)
+            self.assertTrue(all(result.returncode == 0 for result in results))
+            self.assertTrue(
+                all("direct runner complete" in result.stdout for result in results)
+            )
+            self.assertTrue(all(not pids for pids in remaining.values()))
+            self.assertFalse(marker.exists())
+
+    def test_runner_pid_identity_change_is_never_signaled(self):
+        with mock.patch.object(
+            batch.audit_runner,
+            "_runner_token_processes",
+            return_value={43210},
+        ), mock.patch.object(
+            batch.audit_runner,
+            "_runner_process_has_token",
+            return_value=False,
+        ), mock.patch.object(
+            batch.audit_runner.os,
+            "kill",
+        ) as kill:
+            signaled = batch.audit_runner._signal_runner_token_processes(
+                "retired-token",
+                signal.SIGKILL,
+            )
+
+        self.assertEqual(signaled, set())
+        kill.assert_not_called()
+
+    @unittest.skipUnless(
+        batch.audit_runner.SANDBOX_EXEC_PATH.exists(),
+        "sandbox-exec kernel containment is macOS-specific",
+    )
+    def test_runner_kernel_sandbox_denies_canonical_checkout_write(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            scripts = root / "scripts"
+            scripts.mkdir()
+            marker = root / "canonical-write-marker.txt"
+            runner = scripts / "runner.py"
+            runner.write_text(
+                "from pathlib import Path\n"
+                "try:\n"
+                f"    Path({str(marker)!r}).write_text('escaped')\n"
+                "except OSError:\n"
+                "    print('canonical write blocked')\n",
+                encoding="utf-8",
+            )
+            subprocess.run(["git", "init", "-q", "-b", "main"], cwd=root, check=True)
+            subprocess.run(
+                ["git", "config", "user.email", "audit-test@example.invalid"],
+                cwd=root,
+                check=True,
+            )
+            subprocess.run(
+                ["git", "config", "user.name", "Audit Test"],
+                cwd=root,
+                check=True,
+            )
+            subprocess.run(["git", "add", "."], cwd=root, check=True)
+            subprocess.run(
+                ["git", "commit", "-q", "-m", "baseline"],
+                cwd=root,
+                check=True,
+            )
+
+            with mock.patch.object(batch.audit_runner, "REPO_ROOT", root):
+                result = batch.audit_runner._run_repo_runner(runner, 30)
+
+            self.assertEqual(result.returncode, 0)
+            self.assertIn("canonical write blocked", result.stdout)
+            self.assertFalse(marker.exists())
+
+    def test_runner_interrupt_still_reaps_process_and_discards_worktree(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            scripts = root / "scripts"
+            scripts.mkdir()
+            marker = root / "interrupt-escape-marker.txt"
+            runner = scripts / "runner.py"
+            runner.write_text(
+                "import time\n"
+                "from pathlib import Path\n"
+                "time.sleep(0.4)\n"
+                f"Path({str(marker)!r}).write_text('escaped')\n",
+                encoding="utf-8",
+            )
+            subprocess.run(["git", "init", "-q", "-b", "main"], cwd=root, check=True)
+            subprocess.run(
+                ["git", "config", "user.email", "audit-test@example.invalid"],
+                cwd=root,
+                check=True,
+            )
+            subprocess.run(
+                ["git", "config", "user.name", "Audit Test"],
+                cwd=root,
+                check=True,
+            )
+            subprocess.run(["git", "add", "."], cwd=root, check=True)
+            subprocess.run(
+                ["git", "commit", "-q", "-m", "baseline"],
+                cwd=root,
+                check=True,
+            )
+            real_sleep = time.sleep
+            interrupted = False
+
+            def interrupt_once(seconds):
+                nonlocal interrupted
+                if not interrupted and seconds == 0.05:
+                    interrupted = True
+                    raise KeyboardInterrupt
+                return real_sleep(seconds)
+
+            token = "interrupt-token"
+            token_uuid = mock.Mock(hex=token)
+            with mock.patch.object(
+                batch.audit_runner,
+                "REPO_ROOT",
+                root,
+            ), mock.patch.object(
+                batch.audit_runner,
+                "SANDBOX_EXEC_PATH",
+                root / "missing-sandbox-exec",
+            ), mock.patch.object(
+                batch.audit_runner.uuid,
+                "uuid4",
+                return_value=token_uuid,
+            ), mock.patch.object(
+                batch.audit_runner.time,
+                "sleep",
+                side_effect=interrupt_once,
+            ), self.assertRaises(KeyboardInterrupt):
+                batch.audit_runner._run_repo_runner(runner, 30)
+
+            real_sleep(0.5)
+            self.assertEqual(
+                batch.audit_runner._runner_token_processes(token),
+                set(),
+            )
+            self.assertFalse(marker.exists())
+            worktrees = subprocess.run(
+                ["git", "worktree", "list", "--porcelain"],
+                cwd=root,
+                check=True,
+                capture_output=True,
+                text=True,
+            ).stdout
+            self.assertEqual(worktrees.count("\nworktree "), 0)
+
+    def test_runner_timeout_reaps_process_before_worktree_cleanup(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            scripts = root / "scripts"
+            scripts.mkdir()
+            marker = root / "timeout-escape-marker.txt"
+            runner = scripts / "runner.py"
+            runner.write_text(
+                "import time\n"
+                "from pathlib import Path\n"
+                "time.sleep(0.4)\n"
+                f"Path({str(marker)!r}).write_text('escaped')\n",
+                encoding="utf-8",
+            )
+            subprocess.run(["git", "init", "-q", "-b", "main"], cwd=root, check=True)
+            subprocess.run(
+                ["git", "config", "user.email", "audit-test@example.invalid"],
+                cwd=root,
+                check=True,
+            )
+            subprocess.run(
+                ["git", "config", "user.name", "Audit Test"],
+                cwd=root,
+                check=True,
+            )
+            subprocess.run(["git", "add", "."], cwd=root, check=True)
+            subprocess.run(
+                ["git", "commit", "-q", "-m", "baseline"],
+                cwd=root,
+                check=True,
+            )
+            token = "timeout-token"
+            token_uuid = mock.Mock(hex=token)
+            with mock.patch.object(
+                batch.audit_runner,
+                "REPO_ROOT",
+                root,
+            ), mock.patch.object(
+                batch.audit_runner,
+                "SANDBOX_EXEC_PATH",
+                root / "missing-sandbox-exec",
+            ), mock.patch.object(
+                batch.audit_runner.uuid,
+                "uuid4",
+                return_value=token_uuid,
+            ), self.assertRaises(subprocess.TimeoutExpired):
+                batch.audit_runner._run_repo_runner(runner, 0)
+
+            time.sleep(0.5)
+            self.assertEqual(
+                batch.audit_runner._runner_token_processes(token),
+                set(),
+            )
+            self.assertFalse(marker.exists())
+
+    def test_runner_error_and_worktree_remove_failure_use_safe_fallback(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            scripts = root / "scripts"
+            scripts.mkdir()
+            runner = scripts / "runner.py"
+            runner.write_text(
+                "raise RuntimeError('expected runner failure')\n",
+                encoding="utf-8",
+            )
+            subprocess.run(["git", "init", "-q", "-b", "main"], cwd=root, check=True)
+            subprocess.run(
+                ["git", "config", "user.email", "audit-test@example.invalid"],
+                cwd=root,
+                check=True,
+            )
+            subprocess.run(
+                ["git", "config", "user.name", "Audit Test"],
+                cwd=root,
+                check=True,
+            )
+            subprocess.run(["git", "add", "."], cwd=root, check=True)
+            subprocess.run(
+                ["git", "commit", "-q", "-m", "baseline"],
+                cwd=root,
+                check=True,
+            )
+            real_run = subprocess.run
+            removal_failed = False
+
+            def fail_first_worktree_remove(command, *args, **kwargs):
+                nonlocal removal_failed
+                if (
+                    not removal_failed
+                    and list(command[:3]) == ["git", "worktree", "remove"]
+                ):
+                    removal_failed = True
+                    return subprocess.CompletedProcess(
+                        command,
+                        1,
+                        "",
+                        "injected worktree remove failure",
+                    )
+                return real_run(command, *args, **kwargs)
+
+            with mock.patch.object(
+                batch.audit_runner,
+                "REPO_ROOT",
+                root,
+            ), mock.patch.object(
+                batch.audit_runner.subprocess,
+                "run",
+                side_effect=fail_first_worktree_remove,
+            ):
+                result = batch.audit_runner._run_repo_runner(runner, 30)
+
+            self.assertTrue(removal_failed)
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("expected runner failure", result.stderr)
+            worktrees = subprocess.run(
+                ["git", "worktree", "list", "--porcelain"],
+                cwd=root,
+                check=True,
+                capture_output=True,
+                text=True,
+            ).stdout
+            self.assertEqual(worktrees.count("\nworktree "), 0)
+
     def test_inherited_campaign_lock_is_reentrant_for_child(self):
         held = batch.acquire_exclusive_drain_lock("top-level-test")
         self.assertIsNotNone(held)

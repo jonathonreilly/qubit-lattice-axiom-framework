@@ -346,7 +346,7 @@ def incidence_certificate(row: dict[str, object]) -> dict[str, object]:
     incidence_phase_classes: dict[tuple[int, int, int], set[int]] = {}
     outside_corner_support = 0
     qutrit_state_phase_classes: dict[tuple[int, int], set[int]] = {}
-    occupied_endpoint_outer_tag_one_histories = 0
+    occupied_endpoint_outer_tag_one_rows = 0
     pair_addresses = 0
     for left, right in combinations(range(6 * len(cells)), 2):
         first_cell, second_cell = cells[left // 6], cells[right // 6]
@@ -368,15 +368,16 @@ def incidence_certificate(row: dict[str, object]) -> dict[str, object]:
         qutrit_state_phase_classes.setdefault((1, 1), set()).add(required_phase)
         pair_addresses += 1
 
-        # On an actual encoded two-particle history, an occupied endpoint's
+        # Under the declared feature-word/role rule, an occupied endpoint's
         # qutrit word is 01.  If the particles share a cell the carrier is the
-        # sentinel; otherwise every carrier choice excludes the occupied mode.
-        # Hence the outer bit of the occupied endpoint is exactly zero.
+        # sentinel; otherwise every allowed carrier excludes the occupied
+        # mode.  This is an analytic address classification, not construction
+        # of the extended L-patch qutrit histories.
         if left // 6 == right // 6:
-            occupied_endpoint_outer_tag_one_histories += 0
+            occupied_endpoint_outer_tag_one_rows += 0
         else:
             for occupied in (left % 6, right % 6):
-                occupied_endpoint_outer_tag_one_histories += sum(
+                occupied_endpoint_outer_tag_one_rows += sum(
                     carrier == occupied
                     for carrier in range(6)
                     if carrier != occupied
@@ -393,7 +394,7 @@ def incidence_certificate(row: dict[str, object]) -> dict[str, object]:
         "corner_incidence_class_count": len(signatures),
         "residual_pairs_outside_three_star_corner_support": outside_corner_support,
         "lawful_endpoint_qutrit_words": lawful_qutrits,
-        "two_particle_mode_address_histories": pair_addresses,
+        "two_particle_mode_address_rows": pair_addresses,
         "qutrit_state_only_required_negative_addresses": len(pairs),
         "qutrit_state_only_required_positive_addresses": pair_addresses - len(pairs),
         "qutrit_state_only_sign_conflicts": sum(
@@ -402,13 +403,16 @@ def incidence_certificate(row: dict[str, object]) -> dict[str, object]:
         "incidence_conditioned_sign_conflicts": sum(
             len(phases) > 1 for phases in incidence_phase_classes.values()
         ),
-        "occupied_endpoint_outer_tag_one_histories": (
-            occupied_endpoint_outer_tag_one_histories
+        "declared_rule_occupied_endpoint_outer_tag_one_rows": (
+            occupied_endpoint_outer_tag_one_rows
         ),
-        "actual_occupied_endpoint_qutrit_word": 1,
+        "declared_rule_occupied_endpoint_qutrit_word": 1,
+        "extended_L_qutrit_histories_constructed": False,
+        "full_qutrit_chart_conditioning_closed": False,
         "load_bearing_qutrit_result": (
-            "state 01 occurs at both required signs; address/incidence or loop "
-            "data remains load bearing"
+            "under the declared endpoint rule, state 01 occurs at both required "
+            "signs; endpoint state alone is insufficient, while full qutrit-chart "
+            "conditioning remains open"
         ),
     }
 
@@ -595,7 +599,7 @@ def main() -> None:
     certificate = {
         "authority": "none",
         "audit": "unset",
-        "status": "finite-L-loop-rank-closed-recurrent-rule-open",
+        "status": "finite-L-loop-rank-and-declared-endpoint-class-closed-full-chart-and-recurrence-open",
         "source_crosscheck": independent_crosscheck,
         "whole_patch_transition": {
             "pairs": len(transition),
@@ -620,6 +624,7 @@ def main() -> None:
             "a target-independent recurrent plaquette law",
             "a scalar unoriented proper-cubic edge handoff",
             "a physical common-E intertwiner on the held center blocks",
+            "conditioning on constructed extended L-patch qutrit histories",
             "a route-independent obstruction, minimum substrate content, or axiom pressure",
         ),
     }
@@ -652,12 +657,14 @@ def main() -> None:
         "minimum_parity_product_channels_for_this_quadratic_subword": 3,
     }
     assert incidence["residual_pairs_outside_three_star_corner_support"] == 0
-    assert incidence["two_particle_mode_address_histories"] == 4560
+    assert incidence["two_particle_mode_address_rows"] == 4560
     assert incidence["qutrit_state_only_required_negative_addresses"] == 178
     assert incidence["qutrit_state_only_required_positive_addresses"] == 4382
     assert incidence["qutrit_state_only_sign_conflicts"] == 1
     assert incidence["incidence_conditioned_sign_conflicts"] > 0
-    assert incidence["occupied_endpoint_outer_tag_one_histories"] == 0
+    assert incidence["declared_rule_occupied_endpoint_outer_tag_one_rows"] == 0
+    assert not incidence["extended_L_qutrit_histories_constructed"]
+    assert not incidence["full_qutrit_chart_conditioning_closed"]
     assert local_order_handoff["same_color_owner_swap_pair_delta"] == 8
     assert local_order_handoff["same_color_owner_swap_alternating_rank"] == 2
     assert [

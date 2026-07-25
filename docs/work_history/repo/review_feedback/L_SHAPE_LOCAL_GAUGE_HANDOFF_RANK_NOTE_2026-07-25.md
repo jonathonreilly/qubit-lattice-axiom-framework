@@ -29,6 +29,11 @@ a recurrent plaquette law:
   obtained from the finite target comparison, so they are not promoted as an
   elementary recurrent rule.
 
+On all 4,560 two-mode addresses, the declared feature-word/role rule fixes the
+qutrit at each occupied endpoint to `01`; this endpoint state occurs at both
+required signs and is therefore insufficient. The runner does not construct
+the extended L-patch qutrit histories, so full chart conditioning remains open.
+
 The recurrent success contract therefore remains open.  Authority stays none,
 audit stays unset, and there is no shared obstruction or axiom pressure.
 
@@ -96,23 +101,29 @@ This closes the algebraic finite L correction.  It does not yet route every
 parity fan-in through a fixed elementary plaquette neighborhood, nor does it
 derive the masks without the finite exterior target.
 
-## Corner incidence and qutrit classification
+## Corner incidence and declared endpoint-qutrit classification
 
 Every residual endpoint lies in the radius-one union of the three center
 stars.  Classifying each endpoint by the bit mask of incident center stars and
 by endpoint separation produces 17 nonempty incidence classes.  Thus the
 residual is corner-supported, but not a single uniform endpoint class.
 
-The actual feature qutrit has lawful words `0,1,2`.  The runner compares all
-4,560 two-mode address histories, not a self-derived qutrit formula.  At both
-occupied endpoints the actual encoded qutrit word is always `01`: for a
-same-cell pair the carrier is sentinel, while for separated particles every
-carrier choice excludes the occupied mode.  Thus the occupied endpoint outer
-tag is one in zero histories.  Nevertheless 178 addresses require correction
-phase `-1` and 4,382 require `+1`.  The state-only qutrit class therefore has a
-real sign conflict, and incidence-only conditioning also retains conflicts.
-Endpoint qutrit state and its outer tag do not resolve the handoff; geometric
-address or additional loop/chart data remains load bearing.
+The feature qutrit has lawful words `0,1,2`. The runner compares all 4,560
+two-mode address rows against the residual, not against a self-derived phase
+formula. Under the declared feature-word/role rule, the qutrit at each occupied
+endpoint is `01`: for a same-cell pair the carrier is sentinel, while for
+separated particles every allowed carrier excludes the occupied mode. Thus the
+occupied endpoint outer tag is one in zero address rows. Nevertheless 178
+addresses require correction phase `-1` and 4,382 require `+1`. The declared
+endpoint-state class has a real sign conflict, and incidence-only conditioning
+also retains conflicts.
+
+This is an analytic classification of mode addresses under the supplied local
+rule. The runner does not construct extended L-patch qutrit rows or replay the
+source/target paths with all chart tags. It establishes that occupied-endpoint
+state alone cannot classify the sign; it does not close conditioning on the
+full qutrit chart. Geometric address or additional loop/chart data remains a
+live discriminator.
 
 Swapping only the two same-color L owners changes the required correction by
 eight pairs of rank two.  One local Z2 handoff bit is algebraically sufficient
@@ -192,10 +203,11 @@ shipped.
    fewer than five rank-two products regardless of pivot basis.
 3. **Direct pair-CZ realization — ATTEMPTED.** The 178 literal terms work but
    use a different factor class and do not provide a smaller recurrent rule.
-4. **Outer-qutrit-conditioned realization — ATTEMPTED.** All 4,560 actual
-   two-mode address histories have occupied word `01`, but split into 178
-   negative and 4,382 positive requirements; the outer tag never fires and
-   cannot split this residual.
+4. **Occupied-endpoint qutrit conditioning — ATTEMPTED.** Under the declared
+   local rule, all 4,560 two-mode address rows have occupied word `01`, but
+   split into 178 negative and 4,382 positive requirements. This endpoint
+   state cannot split the residual. Extended L-patch qutrit-chart conditioning
+   was not constructed and remains open.
 5. **Local same-color order handoff — ATTEMPTED.** One Z2 bit closes the
    eight-pair/rank-two order swap, but it does not close the baseline rank-10
    target or held blocks.
@@ -206,18 +218,20 @@ shipped.
 
 ### N2 — wall independence
 
-`W_chart` is the four-state axial stabilizer dependence of this edge word;
-`W_recur` is failure to derive a fixed held plaquette recurrence.  Retiring a
-chart orientation does not prove held recurrence, and a different recurrent
-encoding need not use this edge chart.  Neither implies the other; no inflated
-wall count is used.
+`W_qutrit` is the unconstructed extended L-patch chart conditioning; `W_chart`
+is the four-state axial stabilizer dependence of this edge word; `W_recur` is
+failure to derive a fixed held plaquette recurrence. Full qutrit replay need
+not solve chart transport or recurrence. Retiring a chart orientation does not
+prove held recurrence, and a different recurrent encoding need not use this
+edge chart. None implies another; no inflated wall count is used.
 
 ### N3 — hidden-wall scan
 
-The code and note were scanned for the skill's assumption-euphemism list.  The
+The code and note were scanned for the skill's assumption-euphemism list. The
 finite target, patch order, local charts, qutrit alphabet, scratch register,
-sector, and frame scope are all inventoried.  “Exact” refers to enumerated
-equalities or ranks.  No hidden condition was promoted after the scan.
+sector, and frame scope are all inventoried. The analytic endpoint rule and
+absence of extended qutrit histories are explicit. “Exact” refers to
+enumerated equalities or ranks, not full chart conditioning.
 
 ### N4 — residual matching
 
@@ -231,9 +245,11 @@ they are live escape routes, not witnesses for this rank statement.
 
 The runner tests quadratic pair coefficients, all `n<=2` L inputs, one L
 corner, one chain, `2x2` and `3x3` center blocks, and transported edge-word
-geometry.  It does not test arbitrary number, an infinite lattice, every
-encoding, or frame-by-frame common-`E` matrices.  Every negative phrase is
-restricted to the named finite owner/chart construction.
+geometry. It analytically classifies occupied endpoint qutrits but does not
+construct the extended L-patch qutrit histories. It also does not test
+arbitrary number, an infinite lattice, every encoding, or frame-by-frame
+common-`E` matrices. Every negative phrase is restricted to the named finite
+owner/chart construction.
 
 ### N6 — partial-closure paths
 
@@ -241,7 +257,9 @@ The four-state edge orbit can be carried by transported local chart data or
 incident plaquette loops.  The rank-two same-color commutator can be handled by
 one local Z2 bit.  A target-independent edge-plus-corner recurrence, a local
 encoding rephase, BKSF-style loop constraints, or the staggered plaquette route
-could close the residual constructively.  None requires an axiom edit.
+could close the residual constructively. Separately, an extended source/target
+qutrit replay could test conditioning on all chart sites. None requires an
+axiom edit.
 
 ### N7 — steelman
 

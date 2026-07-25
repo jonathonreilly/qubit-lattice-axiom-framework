@@ -33,7 +33,22 @@ def is_accepted_premise(claim_id: str) -> bool:
 
 
 def status_satisfies_certification(claim_id: str, status: object) -> bool:
-    """Match the pipeline's chain boundary without inventing premise policy."""
+    """Certification's chain boundary, which is STRICTLY STRONGER than retention.
+
+    Retained-grade rows and decorations of retained parents satisfy; accepted
+    premises are skipped by the caller before this is consulted. Metadata does
+    NOT satisfy, per lane_certification_config.json ("Metadata does not").
+
+    That is the whole difference from the retention boundary:
+    compute_effective_status.is_chain_satisfying_status accepts ``meta`` as
+    stable audit context for one-hop dependency closure, and this function does
+    not. The divergence is deliberate policy, but it is not symmetric with
+    audit throughput: a ``meta`` row's clean status is ``meta`` forever
+    (compute_effective_status.clean_status), so a ``meta`` row inside a lane's
+    closure is a permanent blocker that no audit and no science can clear. Read
+    a lane's ``blocking`` list with that in mind, and change this boundary only
+    as a reviewed decision about what "certified" means.
+    """
     if status in RETAINED_GRADE:
         return True
     if isinstance(status, str) and status.startswith("decoration_under_"):

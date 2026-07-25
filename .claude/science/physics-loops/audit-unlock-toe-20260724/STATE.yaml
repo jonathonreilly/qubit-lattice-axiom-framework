@@ -1,0 +1,48 @@
+campaign: audit-unlock-toe-20260724
+mode: campaign
+created: 2026-07-24
+runtime: until the science backlog is exhausted (owner directive 2026-07-24)
+current_goal: >
+  Two-lane maximum-value drive: (A) audit-unlock — drain the unaudited ledger
+  backlog via independent codex audit-loop workers so blocked rows become
+  auditable; (B) TOE-completion — advance the three open derivation obligations
+  in docs/audit/data/derivation_obligations.json via workhorse science units.
+target_status: active
+cycle_count: 1
+block_count: 0
+active_routes:
+  - lane_a_audit_unlock: independent codex audit-loop worker dispatched on a
+      clean origin/main clone (worker id audit-w-20260724-a, max-workers 2,
+      argument-less drain; coordinator owns target selection and collision
+      handling)
+  - lane_b_kcpt_science: KCPT Dirac symmetry-algebra lane; Unit 20 (block
+      bicommutant dim 992) in review; Units 8-19 landed on main, unaudited
+approach_family_coverage: >
+  Lane B currently works the representation-algebra family (commutant /
+  bicommutant / module decomposition of the L=4 staggered Dirac complex).
+  Alternative families (dynamical record-formation, transfer-operator,
+  character-theoretic census) recorded in APPROACH_REGISTRY.md.
+strongest_unresolved_proof_obligation: >
+  ac_orbit_occupancy_statistical_grain_derivation_obligation — derive the
+  occupancy/statistical-grain content currently registered as a readout-context
+  admission class (register-not-read price).
+hard_residual_under_attack: >
+  The three derivation obligations (occupancy grain, R-eta h-class/h-unit
+  readout, theta quark-determinant cross-sector readout). KCPT lane serves #1
+  directly and #3 through the U14 CP-completion / U17 Dirac-radius structures.
+files_touched: []
+open_imports: none new (campaign adds no axioms, imports, or comparators)
+no_go_routes: see NO_GO_LEDGER.md
+trace_gate: see TRACE_GATE.md
+review_findings: see REVIEW_HISTORY.md
+pr_status: see PR_BACKLOG.md
+next_exact_action: >
+  Process the U20 adversarial-verification synthesis; on clean synthesis land
+  the U20 PR and dispatch codex review-loop. In parallel, monitor the lane-A
+  audit-loop worker exit and dispatch a follow-on worker if the drain stalls
+  before the root-ready frontier is exhausted for the session.
+stop_condition: >
+  Owner stop request, or no remaining landable science block AND no dispatchable
+  audit-loop work for the session. Per-route blockers never stop the campaign
+  (Campaign Rule); a blocked lane is recorded and the next OPPORTUNITY_QUEUE
+  item is taken.

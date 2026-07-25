@@ -636,6 +636,97 @@ def sequence_digest(indices: Iterable[int]) -> str:
 PADDED_SEQUENCE_SHA256 = sequence_digest(range(T))
 
 
+def routed_primitive(primitive: Primitive) -> tuple[Primitive, ...]:
+    """Expand one ordered logical primitive into an explicit NN subword.
+
+    For a two-site primitive, the first listed operand is transported along
+    the station column until it is adjacent to the second listed operand.  The
+    original ordered matrix is then applied on that ordered adjacent pair and
+    the transport SWAPs are undone in exact reverse order.  This definition
+    handles ascending and descending columns without changing operand order.
+    """
+    if len(primitive.sites) == 1:
+        return (primitive,)
+    if len(primitive.sites) != 2:
+        raise ValueError("primitive arity must be one or two")
+    first, second = primitive.sites
+    if first == second:
+        raise ValueError("colliding two-M2 primitive")
+    step = 1 if second > first else -1
+    path = tuple(range(first, second + step, step))
+    swaps = tuple(
+        Primitive("route_swap", (path[index], path[index + 1]), S.SWAP)
+        for index in range(len(path) - 2)
+    )
+    central = Primitive(
+        primitive.kind,
+        (path[-2], path[-1]),
+        primitive.matrix,
+    )
+    return swaps + (central,) + tuple(reversed(swaps))
+
+
+def routed_primitive_certificate(primitive: Primitive) -> dict[str, int | str]:
+    """Audit an explicit routed subword, including ordered wire semantics."""
+    word = routed_primitive(primitive)
+    hasher = sha256()
+    non_nn = outside = route_kind_failures = 0
+    for gate in word:
+        hasher.update(gate.kind.encode())
+        hasher.update(repr(gate.sites).encode())
+        hasher.update(S.matrix_digest(gate.matrix).encode())
+        outside += any(site < 0 or site >= STATION_COLUMN_M2 for site in gate.sites)
+        non_nn += len(gate.sites) == 2 and abs(gate.sites[0] - gate.sites[1]) != 1
+
+    expected_length = 1 if len(primitive.sites) == 1 else 2 * abs(
+        primitive.sites[0] - primitive.sites[1]
+    ) - 1
+    length_failures = int(len(word) != expected_length)
+    central_kind_failures = central_matrix_failures = 0
+    operand_order_failures = return_failures = 0
+
+    if len(primitive.sites) == 1:
+        central = word[0]
+        central_kind_failures += central.kind != primitive.kind
+        central_matrix_failures += (
+            S.matrix_digest(central.matrix) != S.matrix_digest(primitive.matrix)
+        )
+        operand_order_failures += central.sites != primitive.sites
+    else:
+        labels = list(range(STATION_COLUMN_M2))
+        center = len(word) // 2
+        for gate in word[:center]:
+            route_kind_failures += gate.kind != "route_swap"
+            left, right = gate.sites
+            labels[left], labels[right] = labels[right], labels[left]
+        central = word[center]
+        central_kind_failures += central.kind != primitive.kind
+        central_matrix_failures += (
+            S.matrix_digest(central.matrix) != S.matrix_digest(primitive.matrix)
+        )
+        operand_order_failures += (
+            tuple(labels[site] for site in central.sites) != primitive.sites
+        )
+        for gate in word[center + 1:]:
+            route_kind_failures += gate.kind != "route_swap"
+            left, right = gate.sites
+            labels[left], labels[right] = labels[right], labels[left]
+        return_failures += labels != list(range(STATION_COLUMN_M2))
+
+    return {
+        "routed_factors": len(word),
+        "length_failures": length_failures,
+        "non_NN_factors": non_nn,
+        "outside_station_factors": outside,
+        "route_kind_failures": route_kind_failures,
+        "central_kind_failures": central_kind_failures,
+        "central_matrix_failures": central_matrix_failures,
+        "operand_order_failures": operand_order_failures,
+        "wire_return_failures": return_failures,
+        "routed_subword_sha256": hasher.hexdigest(),
+    }
+
+
 def routed_count(gate: Primitive) -> int:
     if len(gate.sites) == 1:
         return 1
@@ -647,25 +738,53 @@ def routed_count(gate: Primitive) -> int:
 
 def selector_resources() -> dict[str, int | str]:
     logical = one = two = routed = maximum_distance = 0
+    ascending = descending = adjacent = 0
+    signature_certificates: dict[tuple[str, tuple[int, ...], str], dict] = {}
+    failure_fields = (
+        "length_failures",
+        "non_NN_factors",
+        "outside_station_factors",
+        "route_kind_failures",
+        "central_kind_failures",
+        "central_matrix_failures",
+        "operand_order_failures",
+        "wire_return_failures",
+    )
+    weighted_failures = {field: 0 for field in failure_fields}
     hasher = sha256()
     for primitive in Q.iter_q_primitives():
         logical += 1
         one += len(primitive.sites) == 1
         two += len(primitive.sites) == 2
-        routed += routed_count(primitive)
+        matrix_digest = S.matrix_digest(primitive.matrix)
+        signature = (primitive.kind, primitive.sites, matrix_digest)
+        certificate = signature_certificates.get(signature)
+        if certificate is None:
+            certificate = routed_primitive_certificate(primitive)
+            signature_certificates[signature] = certificate
+        routed += int(certificate["routed_factors"])
+        hasher.update(bytes.fromhex(str(certificate["routed_subword_sha256"])))
+        for field in failure_fields:
+            weighted_failures[field] += int(certificate[field])
         if len(primitive.sites) == 2:
+            first, second = primitive.sites
+            ascending += first < second
+            descending += first > second
+            adjacent += abs(first - second) == 1
             maximum_distance = max(
-                maximum_distance, abs(primitive.sites[0] - primitive.sites[1])
+                maximum_distance, abs(first - second)
             )
-        hasher.update(primitive.kind.encode())
-        hasher.update(repr(primitive.sites).encode())
-        hasher.update(S.matrix_digest(primitive.matrix).encode())
     per_auto = routed * T + 2 * T * PACKET_LANES
-    return {
+    result: dict[str, int | str] = {
         "ROM_blocks_per_station": len(Q.blocks),
         "logical_Q_factors_per_station": logical,
         "logical_one_M2_factors_per_station": one,
         "logical_two_M2_factors_per_station": two,
+        "ascending_two_M2_factors_per_station": ascending,
+        "descending_two_M2_factors_per_station": descending,
+        "adjacent_two_M2_factors_per_station": adjacent,
+        "unique_Q_primitive_signatures": len(signature_certificates),
+        "routed_Q_factor_occurrences_checked": logical,
         "routed_Q_NN_factors_per_station": routed,
         "Q_NN_instances_all_stations": routed * T,
         "R_NN_instances_per_A_auto": 2 * T * PACKET_LANES,
@@ -673,7 +792,12 @@ def selector_resources() -> dict[str, int | str]:
         "A_auto_power_3908_executed_NN_instances": per_auto * T,
         "maximum_route_distance": maximum_distance,
         "Q_schedule_sha256": hasher.hexdigest(),
+        "Q_schedule_digest_definition": (
+            "sha256 of the ordered sequence of exact routed-subword sha256 bytes"
+        ),
     }
+    result.update({f"routed_{field}": value for field, value in weighted_failures.items()})
+    return result
 
 
 def rail_geometry_certificate() -> dict[str, int]:
@@ -714,26 +838,32 @@ def rail_geometry_certificate() -> dict[str, int]:
 
 
 def route_geometry_certificate() -> dict[str, int]:
-    failures = non_nn = edges_checked = 0
+    failures = non_nn = outside = edges_checked = 0
+    orientation_cases = 0
     for distance in range(1, STATION_COLUMN_M2):
-        labels = list(range(distance + 1))
-        route_edges = [(index, index + 1) for index in range(distance - 1)]
-        route_edges += [(distance - 1, distance)]
-        route_edges += list(reversed(route_edges[:-1]))
-        for left, right in route_edges:
-            non_nn += l1(a_coord(0, left), a_coord(0, right)) != 1
-            edges_checked += 1
-        for index in range(distance - 1):
-            labels[index], labels[index + 1] = labels[index + 1], labels[index]
-        endpoints = (labels[-2], labels[-1])
-        for index in reversed(range(distance - 1)):
-            labels[index], labels[index + 1] = labels[index + 1], labels[index]
-        failures += endpoints != (0, distance) or labels != list(range(distance + 1))
+        for sites in ((0, distance), (distance, 0)):
+            orientation_cases += 1
+            certificate = routed_primitive_certificate(
+                Primitive("orientation_probe", sites, S.CNOT)
+            )
+            edges_checked += int(certificate["routed_factors"])
+            non_nn += int(certificate["non_NN_factors"])
+            outside += int(certificate["outside_station_factors"])
+            failures += sum(int(certificate[field]) for field in (
+                "length_failures",
+                "route_kind_failures",
+                "central_kind_failures",
+                "central_matrix_failures",
+                "operand_order_failures",
+                "wire_return_failures",
+            ))
     return {
         "distances_checked": STATION_COLUMN_M2 - 1,
+        "ordered_orientation_cases": orientation_cases,
         "endpoint_or_return_failures": failures,
         "NN_edges_checked": edges_checked,
         "non_NN_edges": non_nn,
+        "outside_station_edges": outside,
     }
 
 

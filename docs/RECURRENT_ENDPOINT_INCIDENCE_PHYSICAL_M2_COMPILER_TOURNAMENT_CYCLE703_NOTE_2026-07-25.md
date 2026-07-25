@@ -83,10 +83,14 @@ Two later representations sharpen the implementation boundary.  A hardened
 fixed-coordinate executor closes a target-discriminating 323-M2 decoded-
 interface macro on all 2,629 columns, but its role refresh is a host-selected
 seven-state contraction and its 983-M2 Cycle-655 binding is supplied rather
-than re-executed.  A separate literal 335-M2 reachable-state successor expands
-the rail, matcher, token, bypass, chart, edge-work, and transit bits and is
-being retained only after independent source/deletion review; it does not
-alter the recurrent-order verdict.
+than re-executed.  A separately and adversarially replayed literal 335-M2
+reachable-state successor expands the rail, matcher, token, bypass, chart,
+edge-work, and transit bits.  It closes all 2,629 L5 stream/contact columns
+with raw residual `2.289e-16`, and a 78-row L6 particle-number-sector sample,
+while invoking every program family and returning all declared auxiliaries.
+It supplies active component-word deletions, not deletion or inverse of one
+complete composed 335-M2 word.  The Cycle-655 physical binding and recurrence
+remain open, so this literal gain does not alter the recurrent-order verdict.
 
 The recurrent retask produces a sharper constructive target.  On a
 three-center L, all six owner orders leave 178 quadratic sign pairs with
@@ -188,6 +192,8 @@ Runners:
 - [`frontier_two_star_routed_transition_physical_word_2026_07_25.py`](../scripts/frontier_two_star_routed_transition_physical_word_2026_07_25.py);
 - [`frontier_common_e_gauge_corrected_physical_rom_composition_2026_07_25.py`](../scripts/frontier_common_e_gauge_corrected_physical_rom_composition_2026_07_25.py);
 - [`frontier_two_star_fixed_register_local_executor_2026_07_25.py`](../scripts/frontier_two_star_fixed_register_local_executor_2026_07_25.py);
+- [`frontier_two_star_literal_m2_reachable_executor_2026_07_25.py`](../scripts/frontier_two_star_literal_m2_reachable_executor_2026_07_25.py);
+- [`frontier_two_star_literal_m2_deletion_domain_2026_07_25.py`](../scripts/frontier_two_star_literal_m2_deletion_domain_2026_07_25.py);
 - [`frontier_l_shape_local_gauge_handoff_rank_probe_2026_07_25.py`](../scripts/frontier_l_shape_local_gauge_handoff_rank_probe_2026_07_25.py).
 
 Each factor-private endpoint feature uses the lawful two-M2 qutrit words
@@ -365,6 +371,9 @@ Derived:
 - a target-discriminating fixed-coordinate 323-M2 decoded-interface macro
   closure, with its contracted-role and supplied Cycle-655 binding boundaries
   independently verified;
+- a literal 335-M2 reachable-state expansion with complete L5 stream/contact,
+  held 78-row samples, actual token/matcher/rail/chart/edge/transit operands,
+  returned work, wrong-target rejection, and active component-word deletions;
 - the L-residual rank-10/five-parity-channel factorization, dirty-loop return,
   held rank/distance census, and transported edge-chart covariance
   discriminator;
@@ -384,6 +393,8 @@ Open:
 - full surrounding-qutrit/chart conditioning of the L correction;
 - an end-to-end literal Cycle-655 physical decode/interface/encode binding and
   transformed-encoding 24/576 covariance for the fixed-register executor;
+- a complete literal L6 two-particle sweep, one complete-word deletion
+  intertwiner, and the complete inverse macrostep;
 - local dynamical enforcement and genesis of the combined transition charts;
 - full free-plus-seam-plus-contact physical recurrence;
 - `n>2`, full `M64^12`, more than two overlapping stars, volume collision

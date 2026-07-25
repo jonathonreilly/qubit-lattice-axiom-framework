@@ -219,8 +219,8 @@ default session is:
    only between completed batch/panel/canary phases, so it never interrupts a
    claim transaction, pipeline, lint, or push. The bound must be finite and
    non-negative. If a batch crosses the deadline, its mandatory post-batch
-   panel sweep still runs once before the bounded stop, and any hard batch
-   result remains hard.
+   panel sweep still runs once before the bounded stop, and any hard or typed
+   temporary-service batch result preserves that status.
 
    This command owns the complete control loop: drain authenticated targeted
    dispatch and cascade re-audit sources, finish pending judicial work, drain

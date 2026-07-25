@@ -493,7 +493,12 @@ def drain_lane(
             made_progress = True
         if batch_rc not in {0, batch.TRANSIENT_SERVICE_EXIT_CODE}:
             return batch_rc, made_progress
-        stop_if_runtime_limit_reached(args)
+        try:
+            stop_if_runtime_limit_reached(args)
+        except RuntimeLimitReached:
+            if batch_rc == batch.TRANSIENT_SERVICE_EXIT_CODE:
+                return batch_rc, made_progress
+            raise
         if batch_rc == batch.TRANSIENT_SERVICE_EXIT_CODE:
             transient_failures += 1
             wait_for_service_retry(

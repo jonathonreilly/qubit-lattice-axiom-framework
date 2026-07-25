@@ -3321,6 +3321,35 @@ class AutomaticPanelResumeTest(unittest.TestCase):
             ["batch-lane_a-cycle-1", "panel-after-lane_a-cycle-1"],
         )
 
+    def test_runtime_stop_after_panel_preserves_temporary_batch(self):
+        args = _args()
+        args.max_runtime_hours = 1
+        labels: list[str] = []
+
+        def fake_run(label, command, env=None):
+            labels.append(label)
+            if label.startswith("batch-"):
+                return batch.TRANSIENT_SERVICE_EXIT_CODE
+            return 0
+
+        with mock.patch.dict(
+            audit_loop.PROGRESS, {"started": 0}, clear=True
+        ), mock.patch.object(
+            audit_loop.time, "monotonic", side_effect=[3599, 3601]
+        ), mock.patch.object(
+            audit_loop, "git_head", return_value="same"
+        ), mock.patch.object(
+            audit_loop, "run_command", side_effect=fake_run
+        ):
+            rc, progressed = audit_loop.drain_lane("lane_a", args)
+
+        self.assertEqual(rc, batch.TRANSIENT_SERVICE_EXIT_CODE)
+        self.assertFalse(progressed)
+        self.assertEqual(
+            labels,
+            ["batch-lane_a-cycle-1", "panel-after-lane_a-cycle-1"],
+        )
+
     def test_nonfinite_runtime_bounds_are_rejected(self):
         for value in ("nan", "inf", "-inf"):
             with self.subTest(value=value), self.assertRaises(SystemExit):

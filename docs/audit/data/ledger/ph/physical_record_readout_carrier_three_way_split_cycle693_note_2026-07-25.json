@@ -1,24 +1,79 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T20:55:30.373172+00:00",
+  "audit_invocation_history": [
+    "f775cf0dff23475d8a83635f67d1902d"
+  ],
+  "audit_invocation_id": "f775cf0dff23475d8a83635f67d1902d",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true,
+      "runner_path": "scripts/physical_record_readout_carrier_three_way_split_cycle693_2026_07_25.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {
+      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    },
+    "dep_claim_scope": {
+      "minimal_axioms": null
+    },
+    "dep_claim_type": {
+      "minimal_axioms": "meta"
+    },
+    "dep_effective_status": {
+      "minimal_axioms": "meta"
+    },
+    "deps": [
+      "minimal_axioms"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 2.085,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/physical_record_readout_carrier_three_way_split_cycle693_2026_07_25.py": {
+        "cache_exit_code": null,
+        "cache_freshness": "missing",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": null,
+        "cache_status": null
+      }
+    },
+    "runner_hash": "d5403ebbf51d8ecfaf621d5e0983d333b8df9a7d589145095b598c530ac15ab4",
+    "runner_path": "scripts/physical_record_readout_carrier_three_way_split_cycle693_2026_07_25.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 2
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-d2057af2",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The singleton-weight factorization closes by finite additivity and content determinacy. The broader three-way non-entailment boundary does not close because its negative scope lacks the required N1\u2013N8 stress-test coverage.",
   "claim_id": "physical_record_readout_carrier_three_way_split_cycle693_note_2026-07-25",
-  "claim_scope": null,
+  "claim_scope": "Record's content determinacy and finite additivity imply unique singleton-content factorization for supplied G and O_real; the claimed non-entailment of a finite alphabet, complex operational carrier, and physical product identification was also audited.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T20:55:30.373172+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,32 +81,36 @@
     "minimal_axioms"
   ],
   "direct_in_degree": 1,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 2.085,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "For every finite record collection S, I(S) = sum_{r in S} f(c(r)), with f uniquely fixed on O_real by singleton evaluation.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls",
+    "derived_no_go_boundary"
+  ],
   "note_hash": "f534946e4b29d8b5267699f4a23462254ad7d0fb283c49ca3eb23421bde36350",
   "note_path": "docs/PHYSICAL_RECORD_READOUT_CARRIER_THREE_WAY_SPLIT_CYCLE693_NOTE_2026-07-25.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "scope_too_broad \u2014 supply a structured N1\u2013N8 packet with at least five distinct closed attack routes and executable N5 resolution evidence, then re-audit the three-way non-entailment boundary.",
   "open_dependency_paths": [],
   "previous_audits": [],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 5,
     "B": 0,
-    "C": 0,
+    "C": 1,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 6
   },
   "runner_path": "scripts/physical_record_readout_carrier_three_way_split_cycle693_2026_07_25.py",
   "title": "Record fixes additive readout form, not a finite complex event algebra \u2014 Cycle 693",
   "transitive_descendants": 2,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: The additive factorization and exhibited infinite-content/product countermodels check algebraically, but the bounded negative scope is not N1\u2013N8-complete: N1 has fewer than five distinct attack routes, N2 does not independently stress-test the three residual structures, N3 does not fully disposition the negative/primitive language, and N4 supplies no residual-witness match. Why this blocks: N5 lacks all five resolution-class tests, N6 does not test indexed partial-closure candidates against each wall, N7 provides no live strongest-steelman line with an independent resolution, and N8 provides no applicability dispositions for indexed cross-cycle echoes. Repair target: extend the current runner and packet with distinct route-specific attacks, rhetoric-resolution evidence, wall-independence and hidden-premise scans, and partial-closure/cross-cycle dispositions, then rerun the structured gate. Claim boundary until fixed: Record's (D)+(A)+(Z) clauses prove finite singleton-weight factorization for supplied G and O_real, while the broader three-way non-entailment boundary remains conditional."
 }

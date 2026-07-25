@@ -29,6 +29,7 @@ holds at exact symbolic precision.
 from __future__ import annotations
 
 from itertools import permutations, product
+import re
 import sys
 
 try:
@@ -44,23 +45,37 @@ PASS = 0
 FAIL = 0
 
 
-def check(label: str, ok: bool, detail: str = "") -> None:
+_OBSERVED_EXPECTED_RE = re.compile(r"observed = (.+?), expected = (.+)")
+
+
+def _collapse_observed_expected(detail: str) -> str:
+    """Print `observed = expected = X` only when the two agree verbatim.
+
+    Any disagreement prints uncollapsed, so a mismatch is never hidden.
+    """
+    m = _OBSERVED_EXPECTED_RE.fullmatch(detail)
+    if m is not None and m.group(1) == m.group(2):
+        return f"observed = expected = {m.group(1)}"
+    return detail
+
+
+def check(label: str, ok: bool, detail: str = "", fail_detail: str = "") -> None:
     global PASS, FAIL
     if ok:
         PASS += 1
         tag = "PASS (A)"
+        info = detail
     else:
         FAIL += 1
         tag = "FAIL (A)"
-    suffix = f"  ({detail})" if detail else ""
+        info = "; ".join(part for part in (detail, fail_detail) if part)
+    info = _collapse_observed_expected(info)
+    suffix = f"  ({info})" if info else ""
     print(f"  [{tag}] {label}{suffix}")
 
 
 def section(title: str) -> None:
-    print()
-    print("-" * 88)
-    print(title)
-    print("-" * 88)
+    print(f"\n-- {title}")
 
 
 # -------------------------------------------------------------------------
@@ -108,13 +123,11 @@ def charge_conjugate(b: tuple[int, ...]) -> tuple[int, ...]:
 
 
 def main() -> int:
-    print("=" * 88)
     print("Audit companion (exact-symbolic) for")
     print("STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17")
     print("Goal: exhaustive combinatorial verification of S_3-orbit decomposition")
     print("      (Z_2)^3 / S_3 = (L_0, L_1, L_2, L_3) with sizes (1, 3, 3, 1)")
     print("      plus charge-conjugation involution structure.")
-    print("=" * 88)
 
     n = 3  # framework spatial substrate dimension
     Z2_3 = make_z2_n(n)
@@ -126,12 +139,12 @@ def main() -> int:
     check(
         "(H1) |(Z_2)^3| = 8 by exhaustive enumeration",
         len(Z2_3) == 8,
-        detail=f"|(Z_2)^3| = {len(Z2_3)}",
+        fail_detail=f"|(Z_2)^3| = {len(Z2_3)}",
     )
     check(
         "(H1) cardinality matches 2^n = 2^3 = 8",
         len(Z2_3) == 2**n,
-        detail=f"2^{n} = {2**n}",
+        fail_detail=f"2^{n} = {2**n}",
     )
     check(
         "(H1) cardinality matches sympy Integer arithmetic",
@@ -163,7 +176,7 @@ def main() -> int:
         check(
             f"(H2) |L_{k}| = binomial(3, {k}) = {expected_binom}",
             len(levels[k]) == expected_binom,
-            detail=f"|L_{k}| = {len(levels[k])}",
+            fail_detail=f"|L_{k}| = {len(levels[k])}",
         )
 
     # Exhibit the explicit level sets and verify weight signature
@@ -174,7 +187,7 @@ def main() -> int:
     check(
         "(H2) L_0 = {(0, 0, 0)} explicitly",
         set(levels[0]) == expected_L0,
-        detail=f"L_0 = {set(levels[0])}",
+        fail_detail=f"L_0 = {set(levels[0])}",
     )
     check(
         "(H2) L_1 = {e_1, e_2, e_3} explicitly",
@@ -184,12 +197,12 @@ def main() -> int:
     check(
         "(H2) L_2 = {(1,1,0), (1,0,1), (0,1,1)} explicitly",
         set(levels[2]) == expected_L2,
-        detail=f"L_2 = {set(levels[2])}",
+        fail_detail=f"L_2 = {set(levels[2])}",
     )
     check(
         "(H2) L_3 = {(1, 1, 1)} explicitly",
         set(levels[3]) == expected_L3,
-        detail=f"L_3 = {set(levels[3])}",
+        fail_detail=f"L_3 = {set(levels[3])}",
     )
 
     # =========================================================================
@@ -199,7 +212,7 @@ def main() -> int:
     check(
         "(H3) sum_{k=0}^3 binomial(3, k) = 8 by direct summation",
         binom_sum == 8,
-        detail=f"sum = {binom_sum}",
+        fail_detail=f"sum = {binom_sum}",
     )
     check(
         "(H3) sum_{k=0}^3 binomial(3, k) = (1 + 1)^3 = 2^3 = 8",
@@ -214,7 +227,7 @@ def main() -> int:
     check(
         "(H3) 1 + 3 + 3 + 1 = 8 (partition sum check)",
         partition_sum == 8,
-        detail=f"partition sum = {partition_sum}",
+        fail_detail=f"partition sum = {partition_sum}",
     )
 
     # =========================================================================
@@ -224,7 +237,7 @@ def main() -> int:
     check(
         "(H4) |S_3| = 6",
         n_S3 == 6,
-        detail=f"|S_3| = {n_S3}",
+        fail_detail=f"|S_3| = {n_S3}",
     )
     h4_check = True
     h4_fail_details: list[str] = []
@@ -242,11 +255,8 @@ def main() -> int:
     check(
         "(H4) S_3 preserves Hamming weight on all (sigma, b) pairs",
         h4_check,
-        detail=(
-            f"6 sigmas * 8 b's = 48 instances"
-            if h4_check
-            else f"fail at {h4_fail_details[:1]}"
-        ),
+        detail="6 sigmas * 8 b's = 48 instances" if h4_check else "",
+        fail_detail=f"fail at {h4_fail_details[:1]}",
     )
 
     # =========================================================================
@@ -259,7 +269,7 @@ def main() -> int:
         check(
             f"(H5) S_3 orbit of representative {rep} ∈ L_{k} equals L_{k}",
             orbit == frozenset(levels[k]),
-            detail=f"|orbit| = {len(orbit)}, |L_{k}| = {len(levels[k])}",
+            fail_detail=f"|orbit| = {len(orbit)}, |L_{k}| = {len(levels[k])}",
         )
 
     # Transitivity check at k=1: every pair connected by some sigma
@@ -321,7 +331,7 @@ def main() -> int:
     check(
         "(H6) number of S_3 orbits on (Z_2)^3 equals 4",
         len(orbits_seen) == 4,
-        detail=f"|orbits| = {len(orbits_seen)}",
+        fail_detail=f"|orbits| = {len(orbits_seen)}",
     )
 
     # Verify orbit-cardinality vector
@@ -345,7 +355,7 @@ def main() -> int:
     check(
         "(H6) orbits cover all of (Z_2)^3 (sum of sizes = 8)",
         total_orbit_elements == 8,
-        detail=f"sum of orbit sizes = {total_orbit_elements}",
+        fail_detail=f"sum of orbit sizes = {total_orbit_elements}",
     )
 
     # Orbits are pairwise disjoint
@@ -387,7 +397,7 @@ def main() -> int:
         check(
             f"(H7) c(L_{k}) = L_{3-k}",
             c_Lk == expected_L_3mk,
-            detail=f"c(L_{k}) size = {len(c_Lk)}, L_{3-k} size = {len(expected_L_3mk)}",
+            fail_detail=f"c(L_{k}) size = {len(c_Lk)}, L_{3-k} size = {len(expected_L_3mk)}",
         )
 
     # Commutativity with S_3: c(sigma · b) = sigma · c(b)
@@ -406,11 +416,7 @@ def main() -> int:
     check(
         "(H7) c commutes with S_3 on all (sigma, b) pairs (48 instances)",
         h7_comm_check,
-        detail=(
-            "6 sigmas * 8 b's = 48 instances"
-            if h7_comm_check
-            else f"fail at {h7_comm_fail[:1]}"
-        ),
+        fail_detail=f"fail at {h7_comm_fail[:1]}",
     )
 
     # Combined S_3 x Z_2 orbits: union of (sigma · b) and (sigma · c(b))
@@ -425,13 +431,13 @@ def main() -> int:
     check(
         "(H7) combined S_3 x Z_2 action has exactly 2 orbits",
         len(s3_z2_orbits) == 2,
-        detail=f"|combined orbits| = {len(s3_z2_orbits)}",
+        fail_detail=f"|combined orbits| = {len(s3_z2_orbits)}",
     )
     combined_orbit_sizes = sorted(len(o) for o in s3_z2_orbits)
     check(
         "(H7) combined orbit cardinality vector equals (2, 6)",
         combined_orbit_sizes == [2, 6],
-        detail=f"combined sizes = {combined_orbit_sizes}",
+        fail_detail=f"combined sizes = {combined_orbit_sizes}",
     )
 
     # Identify O_paired and O_balanced
@@ -451,7 +457,7 @@ def main() -> int:
     check(
         "(H7) combined orbits cover all of (Z_2)^3 (sum = 8)",
         combined_total == 8,
-        detail=f"sum = {combined_total}",
+        fail_detail=f"sum = {combined_total}",
     )
 
     # =========================================================================
@@ -466,7 +472,7 @@ def main() -> int:
     check(
         "(H5 counter) coordinate-value partition gives (4, 4), not (1, 3, 3, 1)",
         coord_split_sizes == (4, 4) and coord_split_sizes != (1, 3, 3, 1),
-        detail=f"coord-value split = {coord_split_sizes}",
+        fail_detail=f"coord-value split = {coord_split_sizes}",
     )
 
     # =========================================================================
@@ -489,7 +495,7 @@ def main() -> int:
     check(
         "(H6 counter) Z_2^3 coordinate-flip orbit of (0,0,0) is all 8 vectors (single orbit)",
         z2_flip_orbit == set(Z2_3),
-        detail=f"|coord-flip orbit| = {len(z2_flip_orbit)}",
+        fail_detail=f"|coord-flip orbit| = {len(z2_flip_orbit)}",
     )
     check(
         "(H6 counter) coord-flip orbit count (1) != S_3 orbit count (4)",
@@ -520,21 +526,14 @@ def main() -> int:
     section("Summary")
     # =========================================================================
     print("  Verified at exact-symbolic precision:")
-    print("    (H1) |(Z_2)^3| = 8 = 2^3 (cardinality)")
-    print("    (H2) Hamming-weight levels (L_0, L_1, L_2, L_3) of sizes (1, 3, 3, 1)")
-    print("    (H3) binomial sum identity sum_k binomial(3, k) = 2^3 = 8")
-    print("    (H4) S_3 preserves Hamming weight (48 (sigma, b) instances)")
-    print("    (H5) S_3 acts transitively on each L_k (orbits = L_k)")
-    print("    (H6) S_3-orbit decomposition = (L_0, L_1, L_2, L_3) = (1, 3, 3, 1)")
-    print("    (H7) charge-conjugation c involution, pairs L_0↔L_3, L_1↔L_2")
-    print("    (H7) S_3 x Z_2 combined orbits: (2, 6)")
-    print("    Counter-examples confirm S_3 is load-bearing (not arbitrary Aut subgroup)")
-    print("    General-n cross-check: n in {1..5} confirms binomial pattern")
+    print("    (H1) 8 = 2^3; (H2) levels (1, 3, 3, 1); (H3) sum_k binomial(3, k) = 8")
+    print("    (H4) S_3 preserves hw (48 pairs); (H5) transitive on each L_k")
+    print("    (H6) S_3 orbits = (L_0, L_1, L_2, L_3) = (1, 3, 3, 1)")
+    print("    (H7) c involution, L_0↔L_3, L_1↔L_2; S_3 x Z_2 orbits (2, 6)")
+    print("    Counter-examples: S_3 load-bearing; general-n n in {1..5} binomial")
 
     print()
-    print("=" * 88)
     print(f"TOTAL: PASS={PASS}, FAIL={FAIL}")
-    print("=" * 88)
     return 0 if FAIL == 0 else 1
 
 

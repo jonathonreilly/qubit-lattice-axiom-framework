@@ -1,132 +1,101 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_staggered_dirac_substep3_bz_corner_hamming_orbit_2026_05_17.py
-runner_sha256: 7f5f6e3cbd6cfe5657d6a4afa7e46b8b0975f76a81d6d3fed9514c6a43825438
+runner_sha256: 6079124454e7a1dcd5bad83a49611acf452de612129ad54c7d91b33b5faa9ed2
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.52
+elapsed_sec: 0.29
 status: ok
 ----- stdout -----
-========================================================================================
 Audit companion (exact-symbolic) for
 STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17
 Goal: exhaustive combinatorial verification of S_3-orbit decomposition
       (Z_2)^3 / S_3 = (L_0, L_1, L_2, L_3) with sizes (1, 3, 3, 1)
       plus charge-conjugation involution structure.
-========================================================================================
 
-----------------------------------------------------------------------------------------
-Part 1: (H1) Hypercube cardinality |(Z_2)^3| = 2^3 = 8
-----------------------------------------------------------------------------------------
-  [PASS (A)] (H1) |(Z_2)^3| = 8 by exhaustive enumeration  (|(Z_2)^3| = 8)
-  [PASS (A)] (H1) cardinality matches 2^n = 2^3 = 8  (2^3 = 8)
+-- Part 1: (H1) Hypercube cardinality |(Z_2)^3| = 2^3 = 8
+  [PASS (A)] (H1) |(Z_2)^3| = 8 by exhaustive enumeration
+  [PASS (A)] (H1) cardinality matches 2^n = 2^3 = 8
   [PASS (A)] (H1) cardinality matches sympy Integer arithmetic
   [PASS (A)] (H1) all 8 enumerated elements are distinct
 
-----------------------------------------------------------------------------------------
-Part 2: (H2) Hamming-weight grading into 4 level sets
-----------------------------------------------------------------------------------------
-  [PASS (A)] (H2) Hamming-weight level sizes equal (1, 3, 3, 1)  (observed = (1, 3, 3, 1), expected = (1, 3, 3, 1))
-  [PASS (A)] (H2) |L_0| = binomial(3, 0) = 1  (|L_0| = 1)
-  [PASS (A)] (H2) |L_1| = binomial(3, 1) = 3  (|L_1| = 3)
-  [PASS (A)] (H2) |L_2| = binomial(3, 2) = 3  (|L_2| = 3)
-  [PASS (A)] (H2) |L_3| = binomial(3, 3) = 1  (|L_3| = 1)
-  [PASS (A)] (H2) L_0 = {(0, 0, 0)} explicitly  (L_0 = {(0, 0, 0)})
+-- Part 2: (H2) Hamming-weight grading into 4 level sets
+  [PASS (A)] (H2) Hamming-weight level sizes equal (1, 3, 3, 1)  (observed = expected = (1, 3, 3, 1))
+  [PASS (A)] (H2) |L_0| = binomial(3, 0) = 1
+  [PASS (A)] (H2) |L_1| = binomial(3, 1) = 3
+  [PASS (A)] (H2) |L_2| = binomial(3, 2) = 3
+  [PASS (A)] (H2) |L_3| = binomial(3, 3) = 1
+  [PASS (A)] (H2) L_0 = {(0, 0, 0)} explicitly
   [PASS (A)] (H2) L_1 = {e_1, e_2, e_3} explicitly  (L_1 = {(1, 0, 0), (0, 0, 1), (0, 1, 0)})
-  [PASS (A)] (H2) L_2 = {(1,1,0), (1,0,1), (0,1,1)} explicitly  (L_2 = {(1, 0, 1), (1, 1, 0), (0, 1, 1)})
-  [PASS (A)] (H2) L_3 = {(1, 1, 1)} explicitly  (L_3 = {(1, 1, 1)})
+  [PASS (A)] (H2) L_2 = {(1,1,0), (1,0,1), (0,1,1)} explicitly
+  [PASS (A)] (H2) L_3 = {(1, 1, 1)} explicitly
 
-----------------------------------------------------------------------------------------
-Part 3: (H3) Binomial sum identity sum_k C(3, k) = 2^3 = 8
-----------------------------------------------------------------------------------------
-  [PASS (A)] (H3) sum_{k=0}^3 binomial(3, k) = 8 by direct summation  (sum = 8)
+-- Part 3: (H3) Binomial sum identity sum_k C(3, k) = 2^3 = 8
+  [PASS (A)] (H3) sum_{k=0}^3 binomial(3, k) = 8 by direct summation
   [PASS (A)] (H3) sum_{k=0}^3 binomial(3, k) = (1 + 1)^3 = 2^3 = 8
   [PASS (A)] (H3) sum_{k=0}^3 binomial(3, k) matches |(Z_2)^3|
-  [PASS (A)] (H3) 1 + 3 + 3 + 1 = 8 (partition sum check)  (partition sum = 8)
+  [PASS (A)] (H3) 1 + 3 + 3 + 1 = 8 (partition sum check)
 
-----------------------------------------------------------------------------------------
-Part 4: (H4) S_3 preserves Hamming weight (48 instances)
-----------------------------------------------------------------------------------------
-  [PASS (A)] (H4) |S_3| = 6  (|S_3| = 6)
+-- Part 4: (H4) S_3 preserves Hamming weight (48 instances)
+  [PASS (A)] (H4) |S_3| = 6
   [PASS (A)] (H4) S_3 preserves Hamming weight on all (sigma, b) pairs  (6 sigmas * 8 b's = 48 instances)
 
-----------------------------------------------------------------------------------------
-Part 5: (H5) S_3 acts transitively on each Hamming level
-----------------------------------------------------------------------------------------
-  [PASS (A)] (H5) S_3 orbit of representative (0, 0, 0) ∈ L_0 equals L_0  (|orbit| = 1, |L_0| = 1)
-  [PASS (A)] (H5) S_3 orbit of representative (0, 0, 1) ∈ L_1 equals L_1  (|orbit| = 3, |L_1| = 3)
-  [PASS (A)] (H5) S_3 orbit of representative (0, 1, 1) ∈ L_2 equals L_2  (|orbit| = 3, |L_2| = 3)
-  [PASS (A)] (H5) S_3 orbit of representative (1, 1, 1) ∈ L_3 equals L_3  (|orbit| = 1, |L_3| = 1)
+-- Part 5: (H5) S_3 acts transitively on each Hamming level
+  [PASS (A)] (H5) S_3 orbit of representative (0, 0, 0) ∈ L_0 equals L_0
+  [PASS (A)] (H5) S_3 orbit of representative (0, 0, 1) ∈ L_1 equals L_1
+  [PASS (A)] (H5) S_3 orbit of representative (0, 1, 1) ∈ L_2 equals L_2
+  [PASS (A)] (H5) S_3 orbit of representative (1, 1, 1) ∈ L_3 equals L_3
   [PASS (A)] (H5) S_3 acts transitively on L_1 (all 9 pairs realized)
   [PASS (A)] (H5) S_3 acts transitively on L_2 (all 9 pairs realized)
 
-----------------------------------------------------------------------------------------
-Part 6: (H6) S_3-orbit decomposition equals Hamming grading
-----------------------------------------------------------------------------------------
-  [PASS (A)] (H6) number of S_3 orbits on (Z_2)^3 equals 4  (|orbits| = 4)
-  [PASS (A)] (H6) orbit cardinality vector equals (1, 3, 3, 1) as multiset  (observed = [1, 1, 3, 3], expected = [1, 1, 3, 3])
+-- Part 6: (H6) S_3-orbit decomposition equals Hamming grading
+  [PASS (A)] (H6) number of S_3 orbits on (Z_2)^3 equals 4
+  [PASS (A)] (H6) orbit cardinality vector equals (1, 3, 3, 1) as multiset  (observed = expected = [1, 1, 3, 3])
   [PASS (A)] (H6) S_3 orbits = {L_0, L_1, L_2, L_3} (Hamming-weight level sets)
-  [PASS (A)] (H6) orbits cover all of (Z_2)^3 (sum of sizes = 8)  (sum of orbit sizes = 8)
+  [PASS (A)] (H6) orbits cover all of (Z_2)^3 (sum of sizes = 8)
   [PASS (A)] (H6) orbits are pairwise disjoint (no element appears twice)  (total elements = 8, distinct = 8)
 
-----------------------------------------------------------------------------------------
-Part 7: (H7) Charge-conjugation involution c(b) = (1,1,1) - b
-----------------------------------------------------------------------------------------
+-- Part 7: (H7) Charge-conjugation involution c(b) = (1,1,1) - b
   [PASS (A)] (H7) c is an involution: c(c(b)) = b for all b ∈ (Z_2)^3
   [PASS (A)] (H7) hw(c(b)) = 3 - hw(b) for all b ∈ (Z_2)^3 (8 instances)
-  [PASS (A)] (H7) c(L_0) = L_3  (c(L_0) size = 1, L_3 size = 1)
-  [PASS (A)] (H7) c(L_1) = L_2  (c(L_1) size = 3, L_2 size = 3)
-  [PASS (A)] (H7) c(L_2) = L_1  (c(L_2) size = 3, L_1 size = 3)
-  [PASS (A)] (H7) c(L_3) = L_0  (c(L_3) size = 1, L_0 size = 1)
-  [PASS (A)] (H7) c commutes with S_3 on all (sigma, b) pairs (48 instances)  (6 sigmas * 8 b's = 48 instances)
-  [PASS (A)] (H7) combined S_3 x Z_2 action has exactly 2 orbits  (|combined orbits| = 2)
-  [PASS (A)] (H7) combined orbit cardinality vector equals (2, 6)  (combined sizes = [2, 6])
+  [PASS (A)] (H7) c(L_0) = L_3
+  [PASS (A)] (H7) c(L_1) = L_2
+  [PASS (A)] (H7) c(L_2) = L_1
+  [PASS (A)] (H7) c(L_3) = L_0
+  [PASS (A)] (H7) c commutes with S_3 on all (sigma, b) pairs (48 instances)
+  [PASS (A)] (H7) combined S_3 x Z_2 action has exactly 2 orbits
+  [PASS (A)] (H7) combined orbit cardinality vector equals (2, 6)
   [PASS (A)] (H7) O_paired = {(0,0,0), (1,1,1)} explicitly
   [PASS (A)] (H7) O_balanced = L_1 ∪ L_2 explicitly
-  [PASS (A)] (H7) combined orbits cover all of (Z_2)^3 (sum = 8)  (sum = 8)
+  [PASS (A)] (H7) combined orbits cover all of (Z_2)^3 (sum = 8)
 
-----------------------------------------------------------------------------------------
-Part 8: Counter-example for (H5) — non-Hamming partitions fail
-----------------------------------------------------------------------------------------
-  [PASS (A)] (H5 counter) coordinate-value partition gives (4, 4), not (1, 3, 3, 1)  (coord-value split = (4, 4))
+-- Part 8: Counter-example for (H5) — non-Hamming partitions fail
+  [PASS (A)] (H5 counter) coordinate-value partition gives (4, 4), not (1, 3, 3, 1)
 
-----------------------------------------------------------------------------------------
-Part 9: Counter-example for (H6) — non-S_3 actions break the orbit count
-----------------------------------------------------------------------------------------
-  [PASS (A)] (H6 counter) Z_2^3 coordinate-flip orbit of (0,0,0) is all 8 vectors (single orbit)  (|coord-flip orbit| = 8)
+-- Part 9: Counter-example for (H6) — non-S_3 actions break the orbit count
+  [PASS (A)] (H6 counter) Z_2^3 coordinate-flip orbit of (0,0,0) is all 8 vectors (single orbit)
   [PASS (A)] (H6 counter) coord-flip orbit count (1) != S_3 orbit count (4)
 
-----------------------------------------------------------------------------------------
-Part 10: General-n cross-check, n ∈ {1, 2, 3, 4, 5}
-----------------------------------------------------------------------------------------
-  [PASS (A)] (general-n) at n = 1, Hamming-weight cardinalities equal binom(1, k)  (observed = (1, 1), expected = (1, 1))
+-- Part 10: General-n cross-check, n ∈ {1, 2, 3, 4, 5}
+  [PASS (A)] (general-n) at n = 1, Hamming-weight cardinalities equal binom(1, k)  (observed = expected = (1, 1))
   [PASS (A)] (general-n) at n = 1, sum of level sizes = 2^1 = 2
-  [PASS (A)] (general-n) at n = 2, Hamming-weight cardinalities equal binom(2, k)  (observed = (1, 2, 1), expected = (1, 2, 1))
+  [PASS (A)] (general-n) at n = 2, Hamming-weight cardinalities equal binom(2, k)  (observed = expected = (1, 2, 1))
   [PASS (A)] (general-n) at n = 2, sum of level sizes = 2^2 = 4
-  [PASS (A)] (general-n) at n = 3, Hamming-weight cardinalities equal binom(3, k)  (observed = (1, 3, 3, 1), expected = (1, 3, 3, 1))
+  [PASS (A)] (general-n) at n = 3, Hamming-weight cardinalities equal binom(3, k)  (observed = expected = (1, 3, 3, 1))
   [PASS (A)] (general-n) at n = 3, sum of level sizes = 2^3 = 8
-  [PASS (A)] (general-n) at n = 4, Hamming-weight cardinalities equal binom(4, k)  (observed = (1, 4, 6, 4, 1), expected = (1, 4, 6, 4, 1))
+  [PASS (A)] (general-n) at n = 4, Hamming-weight cardinalities equal binom(4, k)  (observed = expected = (1, 4, 6, 4, 1))
   [PASS (A)] (general-n) at n = 4, sum of level sizes = 2^4 = 16
-  [PASS (A)] (general-n) at n = 5, Hamming-weight cardinalities equal binom(5, k)  (observed = (1, 5, 10, 10, 5, 1), expected = (1, 5, 10, 10, 5, 1))
+  [PASS (A)] (general-n) at n = 5, Hamming-weight cardinalities equal binom(5, k)  (observed = expected = (1, 5, 10, 10, 5, 1))
   [PASS (A)] (general-n) at n = 5, sum of level sizes = 2^5 = 32
 
-----------------------------------------------------------------------------------------
-Summary
-----------------------------------------------------------------------------------------
+-- Summary
   Verified at exact-symbolic precision:
-    (H1) |(Z_2)^3| = 8 = 2^3 (cardinality)
-    (H2) Hamming-weight levels (L_0, L_1, L_2, L_3) of sizes (1, 3, 3, 1)
-    (H3) binomial sum identity sum_k binomial(3, k) = 2^3 = 8
-    (H4) S_3 preserves Hamming weight (48 (sigma, b) instances)
-    (H5) S_3 acts transitively on each L_k (orbits = L_k)
-    (H6) S_3-orbit decomposition = (L_0, L_1, L_2, L_3) = (1, 3, 3, 1)
-    (H7) charge-conjugation c involution, pairs L_0↔L_3, L_1↔L_2
-    (H7) S_3 x Z_2 combined orbits: (2, 6)
-    Counter-examples confirm S_3 is load-bearing (not arbitrary Aut subgroup)
-    General-n cross-check: n in {1..5} confirms binomial pattern
+    (H1) 8 = 2^3; (H2) levels (1, 3, 3, 1); (H3) sum_k binomial(3, k) = 8
+    (H4) S_3 preserves hw (48 pairs); (H5) transitive on each L_k
+    (H6) S_3 orbits = (L_0, L_1, L_2, L_3) = (1, 3, 3, 1)
+    (H7) c involution, L_0↔L_3, L_1↔L_2; S_3 x Z_2 orbits (2, 6)
+    Counter-examples: S_3 load-bearing; general-n n in {1..5} binomial
 
-========================================================================================
 TOTAL: PASS=55, FAIL=0
-========================================================================================
 
 ----- stderr -----
 

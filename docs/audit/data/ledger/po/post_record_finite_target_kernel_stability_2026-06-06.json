@@ -1,42 +1,90 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T14:40:19.256323+00:00",
+  "audit_invocation_history": [
+    "73e344a2d7c54549960d986892d1fc97"
+  ],
+  "audit_invocation_id": "73e344a2d7c54549960d986892d1fc97",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true,
+      "runner_path": "scripts/frontier_post_record_finite_target_kernel_stability_2026_06_06.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 0.0,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_post_record_finite_target_kernel_stability_2026_06_06.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "d2cf5b5cfa46e1a5f10eb3a461c3d36817b427aa86c515c4ffae73cab9d91fce",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "d2cf5b5cfa46e1a5f10eb3a461c3d36817b427aa86c515c4ffae73cab9d91fce",
+    "runner_path": "scripts/frontier_post_record_finite_target_kernel_stability_2026_06_06.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-4e94f5d1",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "Expanding the kernel gives pK=(1-alpha)p+alpha*pi, so the contraction identity, stationarity, row-stochasticity, and detailed balance follow algebraically under the stated hypotheses. The chain closes only for the supplied-input bounded scope.",
   "claim_id": "post_record_finite_target_kernel_stability_2026-06-06",
-  "claim_scope": null,
+  "claim_scope": "For any finite alphabet, supplied normalized target prior pi, and supplied 0<alpha<1, the reset kernel is row-stochastic, has pi stationary, satisfies detailed balance with pi, and contracts deviations from pi by factor 1-alpha; it does not derive pi, alpha, or a physical source.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T14:40:19.256323+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "p K_{pi,alpha} - pi = (1-alpha)(p - pi).",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "derived_no_go_boundary"
+  ],
   "note_hash": "86e7265dc210d562790fdfc3d0e4a5dc24160fad9091143efd79727ce6606a42",
   "note_path": "docs/POST_RECORD_FINITE_TARGET_KERNEL_STABILITY_2026-06-06.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "missing_bridge_theorem: supply retained derivations or explicit retained bridges for the physical target prior, reset strength, and physical kernel source before seeking a clean physical-selection claim; otherwise preserve the present bounded scope.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -88,14 +136,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
+    "A": 20,
+    "B": 18,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 38
   },
   "runner_path": "scripts/frontier_post_record_finite_target_kernel_stability_2026_06_06.py",
   "title": "Post-Record Finite Target-Kernel Stability",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "The reset-kernel identities close exactly by finite probability algebra, and the runner corroborates them with exact rational checks. The target prior, reset strength, and physical realization remain supplied rather than derived, so the physical claim is conditional despite the mathematical closure. N1-N8 development-tier judgment: the kernel family establishes the narrow stability-without-selection boundary; the input limitations are explicit and distinct, the authenticated normalization occurrence is non-load-bearing, no prior-route witness is invoked, the rhetoric is restricted to this interface, indexed premises and refactors furnish no selector, the strongest steelman is additional physical dynamics selecting pi, and the cross-cycle material does not alter the scoped conclusion."
 }

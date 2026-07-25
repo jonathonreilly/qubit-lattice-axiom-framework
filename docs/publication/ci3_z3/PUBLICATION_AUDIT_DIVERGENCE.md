@@ -19,9 +19,9 @@ publication tables phrase it.
 |---|---|---:|
 | critical | `unaudited` | 225 |
 | high | `unaudited` | 164 |
-| medium | `unaudited` | 113 |
+| medium | `unaudited` | 112 |
 | critical | `audited_conditional` | 16 |
-| medium | `audited_conditional` | 8 |
+| medium | `audited_conditional` | 9 |
 | high | `audited_conditional` | 5 |
 | ? | `unresolved` | 4 |
 | medium | `audited_failed` | 3 |
@@ -470,7 +470,7 @@ publication tables phrase it.
 | medium | `cpt_particle_antiparticle_mass_equality_theorem_note_2026-05-02` | `audited_failed` | `audited_failed` | DERIVATION_ATLAS.md |
 | medium | `dm_abcc_exact_target_surface_source_cubic_closure_theorem_note_2026-04-21` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `dm_abcc_five_basin_chamber_dple_support_theorem_note_2026-04-21` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
-| medium | `dm_abcc_pmns_nonsingularity_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
+| medium | `dm_abcc_pmns_nonsingularity_theorem_note_2026-04-19` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md |
 | medium | `dm_abcc_signature_forcing_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `dm_candidate_mass_window_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `dm_effective_parent_one_clock_transfer_boundary_theorem_note_2026-04-18` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |

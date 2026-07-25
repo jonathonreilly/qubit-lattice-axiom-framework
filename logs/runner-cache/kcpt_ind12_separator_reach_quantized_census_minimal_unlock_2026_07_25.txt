@@ -1,0 +1,70 @@
+===== runner cache v1 =====
+runner: scripts/kcpt_ind12_separator_reach_quantized_census_minimal_unlock_2026_07_25.py
+runner_sha256: 086afa6972cd5f1bb5c06206451205e2e7f5f372349306876b77f9cd1aae8881
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 23.29
+status: ok
+----- stdout -----
+[INFO] reach omega(g) := overlap^2(<A_nat, g>, sep); matrix residuals are Frobenius unless a singular value is named; every SVD is economy (full_matrices=False)
+[PASS] A1: dim<D2f>=7 (=7) closed=True  [C[D2]: spectrum {0, +-2i sqrt m}]
+[PASS] A2: dim<D2f,Jfull>=8 (=8) closed=True  [adds only the kernel complex structure]
+[PASS] A3: dim A_nat=<D2f,Jfull,Seps>=16 (=16) closed=True
+[PASS] A4.1: complex structure ||Jfull^2+I||_F=1.954309572552e-15 (<1e-12)
+[PASS] A4.2: involution ||Seps^2-I||_F=0.000000000000e+00 (<1e-12)
+[PASS] A4.3: anticommutation ||Jfull.Seps+Seps.Jfull||_F=0.000000000000e+00 (<1e-12)
+[PASS] A5: per-shell restriction dims of A_nat=[4, 4, 4, 4] (=[4,4,4,4]) => one M2(C) qubit per Dirac shell
+[PASS] A6.1: dim Z(A_nat)=4 (=4)
+[PASS] A6.2: Z(A_nat)=C[M] exactly: max_m resid(Pf[m], null-span)=1.202734933519e-15 (<1e-10)
+[PASS] A7: sep blindness: overlap^2(A_nat, sep)=0.000000000000e+00 (<=1e-10, sep orthogonal to A_nat)
+[PASS] B1.1: S_eps not in G_amb (in G_amb=False, must be False: H strictly enlarges G_amb)
+[PASS] B1.2: conj by H maps G_amb -> G_amb: all 5x4 spot conjugates land in G_amb=True
+[PASS] B2: conj by H maps {D2f,Jfull,Seps} into A_nat: max_h,X resid(A_nat, h X h^T)=3.818797423440e-15 (<1e-10) => conj by H preserves A_nat
+[PASS] B3: conj by H fixes the separator: max_h ||h sep h^T - sep||_F=4.481785164435e-13 (<1e-10) => with B2, omega(g)=overlap^2(<A_nat,g>, sep) is an H-class function
+[PASS] C1.1: number of H-classes=36 (=36)
+[PASS] C1.2: class sizes sum=768 (=768, partition of G_amb)
+[PASS] C2: every class rep TRUE-closes below cap 350: all_closed=True, max closed dim=96
+[PASS] C3: every class omega matches one of {0, 1/9, 1/3, 1} within 1e-9: max match residual=3.885780586188e-16; observed labels=['0', '1', '1/3', '1/9']
+[PASS] C4: element counts by omega {0:528, 1/9:12, 1/3:96, 1:132} (={528, 12, 96, 132})
+[INFO] refined (dim, omega) census histogram [element counts]:
+       (dim= 16, omega=   0): 4
+       (dim= 24, omega=   0): 12
+       (dim= 28, omega= 1/9): 12
+       (dim= 28, omega=   1): 4
+       (dim= 32, omega=   0): 96
+       (dim= 48, omega=   0): 320
+       (dim= 76, omega=   1): 128
+       (dim= 88, omega=   0): 96
+       (dim= 96, omega= 1/3): 96
+[PASS] C5: refined (dim, omega) histogram has 9 cells (=9) and matches expected element counts
+[PASS] C6.1: order census: omega=1/3 -> 4 classes size 24 all order 8 (ok=True)
+[PASS] C6.2: order census: omega=1 -> (size,order) multiset=[(4, 4), (64, 12), (64, 12)] (=[(4,4),(64,12),(64,12)], ok=True)
+[PASS] D1: every Delta-chi(g)=Re(tr(Pa g)-tr(Pb g)) in {0, +-4 sqrt2} within 1e-9: max match residual=2.664535259100e-15; observed values=[-5.656854, 0.0, 5.656854] (4 sqrt2=5.65685424949)
+[PASS] D2.1: inversion: {Delta-chi != 0} == {omega=1/3}=True (4 classes, |Delta-chi!=0 classes|=4, 96 elements; both nonempty)
+[PASS] D2.2: every fully-reaching (omega=1) class is character-blind (Delta-chi=0)=True; reaching set nonempty=True
+[PASS] E1.1: g1=diag((-1)^{x2}).T(1,1,1) in G_amb (by matrix equality)=True
+[PASS] E1.2: order(g1)=4 (=4: a sign-dressed body-diagonal unit translation)
+[PASS] E2.1: H-orbit of g1 == {g1, g1^3, -g1, -g1^3} exactly (size 4=4, match=True)
+[PASS] E2.2: g1's class is the unique smallest reaching class: omega=1 class sizes=[4, 64, 64] (=[4,64,64], every other omega=1 class has size 64)
+[PASS] E3.1: dim A28=<A_nat,g1>=28 (=28) TRUE-closed=True
+[PASS] E3.2: omega(g1)=1.000000000000e+00 (|omega-1|=0.000e+00<1e-9, sep in A28)
+[PASS] E4: per-shell restriction dims of A28=[4, 8, 8, 8] (=[4,8,8,8])
+[PASS] E5: Wedderburn: dim Z(A28)=commutant nullspace=7 (=7, center refines C^4 -> C^7)
+[PASS] E6.1: central sampling (complex coeffs) seed=20260725: #eigenvalue clusters=7 (=7)
+[PASS] E6.2: central sampling (complex coeffs) seed=42: #eigenvalue clusters=7 (=7) [degeneracy guard]
+[PASS] E7.1: A28 ~= M2(C)^7: every spectral-idempotent blockdim dim{E X E}=[4, 4, 4, 4, 4, 4, 4] (all =4)
+[PASS] E7.2: idempotent rank multiset=[4, 4, 8, 12, 12, 12, 12] (=[4,4,8,12,12,12,12])
+[PASS] E7.3: (rank,shell-support) multiset matches {(8,{0}):1,(12,{1}):2,(12,{2}):2,(4,{3}):2} -> True (shell 0 does not split; shells 1,2,3 split in two)
+[PASS] E8.1: the two shell-2 minimal central idempotents match {Pa,Pb}: min-matching max||E-P||_F=3.159562559164e-13 (<1e-8)
+[PASS] E8.2: sep = e_a - e_b: ||sep-(Ea-Eb)||_F=3.259795005464e-13 (<1e-8) => sep is a difference of minimal central idempotents of A28
+[PASS] F1: g_ninth in G_amb=True; dim<A_nat,g_ninth>=28 (=28) closed=True; omega=1.111111111111e-01 (|omega-1/9|=3.886e-16<1e-9)
+[PASS] F2: g_zero in G_amb=True; dim<A_nat,g_zero>=48 (=48) closed=True; omega=0.000000000000e+00 (<=1e-10)
+[PASS] F3: dims in F1 and E3 are BOTH 28 (g_ninth->28, g1->28): extension dimension does NOT determine reach
+[PASS] F4: g_ur1,g_ur3 in G_amb; orders=12,12 (=12); dims=76,76 (=76) closed=True,True; omega=1.000000000000e+00,1.000000000000e+00 (=1); H-class sizes=64,64 (=64)
+[PASS] G1: membership detector sanity: overlap^2(A_nat, Pf[0]-Pf[3])=1.000000000000e+00 (=1 within 1e-9: an in-frame central difference IS seen by the same resid machinery)
+[PASS] G2: wrong-value rejector: |omega(g1)-1/3|=0.666667 (>0.5) and |omega(g_zero)-1|=1 (>0.9): the dial spread is real, not a constant readout
+[PASS] G3: perturbation rejector: gp=diag((-1)^{x1}).T(1,1,1) is NOT in G_amb (gp in G_amb=False): a wrong sign field is not even an admissible extension, so it cannot reproduce the unlock
+TOTAL: PASS=47 FAIL=0
+
+----- stderr -----
+

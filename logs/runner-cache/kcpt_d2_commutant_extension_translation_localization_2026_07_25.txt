@@ -1,0 +1,142 @@
+===== runner cache v1 =====
+runner: scripts/kcpt_d2_commutant_extension_translation_localization_2026_07_25.py
+runner_sha256: 827a24f798a1cc09ccf0adfc0618e35b003708101c5f94c802c30ed6e44f46be
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 4.82
+status: ok
+----- stdout -----
+KCPT Unit 27 runner -- extension translation localization
+exact integer group arithmetic; floating point only in G20 (D2 spectrum, tol 1e-9)
+reference groups: |B3|=48 |O|=24 |A4|=12 |D3|=6
+  PASS  REF.groups_orders                               B3=48 O=24 A4=12 D3=6 (D3 via +-allowing body-diagonal definition)
+
+========================================================================
+L = 4  (N = 64)
+========================================================================
+  PASS  L4.G1.N_is_Lcubed                               N=64 L^3=64
+  PASS  L4.G1.nComm_96N                                 nComm=6144 96N=6144
+  PASS  L4.G2.kernel_is_pmI                             |ker pi|=2 = {+I,-I}: True
+  PASS  L4.G3.all_translations_present                  |T|=64 all in Comm image: True
+  PASS  L4.G3.Ttilde_order_2N                           |T~|=128 2N=128
+  PASS  L4.G3.Ttilde_closure_eq                         closure{t~x,t~y,t~z,-I} == T~ (size 128)
+  PASS  L4.G4.S_order_48                                |S|=48
+  PASS  L4.G4.S_minusI_free                             -I not in S
+  PASS  L4.G4.S_pi_bijective                            distinct perms in S: 48
+  PASS  L4.G4.S_matrices_eq_B3ref                       extracted matrix set == reference B3 (48 mats)
+  PASS  L4.G5.section_O                                 |S cap pi^-1(O)|=24 (=|Oref|=24) subgroup=True -I-free=True
+  PASS  L4.G5.section_A4                                |S cap pi^-1(A4)|=12 (=|A4ref|=12) subgroup=True -I-free=True
+  PASS  L4.G5.section_D3                                |S cap pi^-1(D3)|=6 (=|D3ref|=6) subgroup=True -I-free=True
+  PASS  L4.G6.minusI_in_KT                              -I in K_T
+  PASS  L4.G6.KT_order                                  |K_T|=16 (XREF 16)
+  PASS  L4.G6.KT_witness_commutator                     [t~x,t~y] = -I
+  PASS  L4.G6.piKT_eq_2T                                pi(K_T)=2T (|2T|=8) and |K_T|=2|2T|=16
+  PASS  L4.G7.minusI_in_KTeven                          -I in K_Teven
+  PASS  L4.G7.KTeven_order                              |K_Teven|=8 (XREF 8)
+  PASS  L4.G7.KTeven_witness                            [lift(1,1,0),lift(1,0,1)] = -I
+  PASS  L4.G8.TevA4_down_order                          |T_even x| A4 downstairs|=384 = (N/2)*12
+  PASS  L4.G8.minusI_in_KTevA4                          -I in K_(TevA4)
+  PASS  L4.G8.KTevA4_order                              |K_(TevA4)|=768 (XREF 768)
+  PASS  L4.G8.preimage_order_12N                        |pi^-1(TevA4)|=768 = 12N
+  PASS  L4.G8.commutator_subgroup_order                 |[Comm,Comm]|=768 (12N) and -I in it
+  PASS  L4.G8.preimage_eq_commutator_subgroup           pi^-1(TevA4) == [Comm,Comm] (set equality)
+  PASS  L4.G9.KB3_minusI_free                           -I not in K(pi^-1(B3)) (|K|=12); split side coherent
+  PASS  L4.G10.beta_all_central                         all 4096 translation commutators in {+I,-I}
+  PASS  L4.G11.beta_closed_form                         beta = (-1)^{(sum s)(sum t)-s.t} on all pairs
+  PASS  L4.G12.beta_unit_matrix                         unit matrix [[1, -1, -1], [-1, 1, -1], [-1, -1, 1]]
+  PASS  L4.G13.beta_bimultiplicative                    beta(s+e,t)=beta(s,t)beta(e,t) all s, unit e, unit t (second slot by symmetry G14)
+  PASS  L4.G14.beta_alternating                         beta(s,s)=+1 all s; beta(s,t)beta(t,s)=+1 all pairs
+  PASS  L4.G15.beta_B3_invariant                        beta(As,At)=beta(s,t) for 3 B3 generators, all pairs (=> all B3 by multiplicativity in A)
+  PASS  L4.G16.beta_factors_mod2                        beta depends only on (s,t) mod 2 (64 classes consistent)
+  PASS  L4.G16.count_total_512                          512 F2 candidates
+  PASS  L4.G16.count_alternating_8                      8 alternating
+  PASS  L4.G16.count_invariant_2                        2 S3-invariant alternating
+  PASS  L4.G16.count_nontrivial_invariant_1             1 nontrivial invariant alternating
+  PASS  L4.G16.unique_match                             exactly 1 of 512 matches measured beta; it is the nontrivial invariant
+  PASS  L4.G16.rejectors_511                            511 candidates each rejected by an explicit witness pair
+  PASS  L4.G16.pullback_matches_all_pairs               unique M pulled back = measured beta on all N^2 pairs
+  PASS  L4.G17.unit_lift_order_x                        order(t~_x)=4 (=L) and (t~)^L=+I
+  PASS  L4.G17.unit_lift_order_y                        order(t~_y)=4 (=L) and (t~)^L=+I
+  PASS  L4.G17.unit_lift_order_z                        order(t~_z)=4 (=L) and (t~)^L=+I
+  PASS  L4.G18.q_matches_formula                        q((L/2)v) = (-1)^{(L/2)^2 sum_{i<j} v_i v_j} on all 8 v
+  PASS  L4.G18.q_minus_count                            q=-I count=0 (XREF 0)
+  PASS  L4.G19.struct_gens_generate_Comm                closure of 7 structural generators = |Comm| = 6144
+  PASS  L4.G19.Ttilde_normal                            conjugates of T~ generators by all 7 struct gens land in T~
+  PASS  L4.G19.Ttilde_cap_S_trivial                     T~ cap S = {+I}
+  PASS  L4.G19.order_product                            |T~|*|S|=128*48=6144 = |Comm|
+  PASS  L4.G19.TS_product_set_eq_Comm                   product set T~*S: 6144 distinct elements = Comm elementwise
+  PASS  L4.G20.spectrum_eigenvalues                     eig=[0, -4, -8, -12] (int resid 7.11e-15 < 1e-9)
+  PASS  L4.G20.spectrum_multiplicities                  mults=[8, 24, 24, 8] (XREF [8, 24, 24, 8])
+  [L=4 wall 1.8s]
+
+========================================================================
+L = 6  (N = 216)
+========================================================================
+  PASS  L6.G1.N_is_Lcubed                               N=216 L^3=216
+  PASS  L6.G1.nComm_96N                                 nComm=20736 96N=20736
+  PASS  L6.G2.kernel_is_pmI                             |ker pi|=2 = {+I,-I}: True
+  PASS  L6.G3.all_translations_present                  |T|=216 all in Comm image: True
+  PASS  L6.G3.Ttilde_order_2N                           |T~|=432 2N=432
+  PASS  L6.G3.Ttilde_closure_eq                         closure{t~x,t~y,t~z,-I} == T~ (size 432)
+  PASS  L6.G4.S_order_48                                |S|=48
+  PASS  L6.G4.S_minusI_free                             -I not in S
+  PASS  L6.G4.S_pi_bijective                            distinct perms in S: 48
+  PASS  L6.G4.S_matrices_eq_B3ref                       extracted matrix set == reference B3 (48 mats)
+  PASS  L6.G5.section_O                                 |S cap pi^-1(O)|=24 (=|Oref|=24) subgroup=True -I-free=True
+  PASS  L6.G5.section_A4                                |S cap pi^-1(A4)|=12 (=|A4ref|=12) subgroup=True -I-free=True
+  PASS  L6.G5.section_D3                                |S cap pi^-1(D3)|=6 (=|D3ref|=6) subgroup=True -I-free=True
+  PASS  L6.G6.minusI_in_KT                              -I in K_T
+  PASS  L6.G6.KT_order                                  |K_T|=54 (XREF 54)
+  PASS  L6.G6.KT_witness_commutator                     [t~x,t~y] = -I
+  PASS  L6.G6.piKT_eq_2T                                pi(K_T)=2T (|2T|=27) and |K_T|=2|2T|=54
+  PASS  L6.G7.minusI_in_KTeven                          -I in K_Teven
+  PASS  L6.G7.KTeven_order                              |K_Teven|=54 (XREF 54)
+  PASS  L6.G7.KTeven_witness                            [lift(1,1,0),lift(1,0,1)] = -I
+  PASS  L6.G8.TevA4_down_order                          |T_even x| A4 downstairs|=1296 = (N/2)*12
+  PASS  L6.G8.minusI_in_KTevA4                          -I in K_(TevA4)
+  PASS  L6.G8.KTevA4_order                              |K_(TevA4)|=2592 (XREF 2592)
+  PASS  L6.G8.preimage_order_12N                        |pi^-1(TevA4)|=2592 = 12N
+  PASS  L6.G8.commutator_subgroup_order                 |[Comm,Comm]|=2592 (12N) and -I in it
+  PASS  L6.G8.preimage_eq_commutator_subgroup           pi^-1(TevA4) == [Comm,Comm] (set equality)
+  PASS  L6.G9.KB3_minusI_free                           -I not in K(pi^-1(B3)) (|K|=12); split side coherent
+  PASS  L6.G10.beta_all_central                         all 46656 translation commutators in {+I,-I}
+  PASS  L6.G11.beta_closed_form                         beta = (-1)^{(sum s)(sum t)-s.t} on all pairs
+  PASS  L6.G12.beta_unit_matrix                         unit matrix [[1, -1, -1], [-1, 1, -1], [-1, -1, 1]]
+  PASS  L6.G13.beta_bimultiplicative                    beta(s+e,t)=beta(s,t)beta(e,t) all s, unit e, unit t (second slot by symmetry G14)
+  PASS  L6.G14.beta_alternating                         beta(s,s)=+1 all s; beta(s,t)beta(t,s)=+1 all pairs
+  PASS  L6.G15.beta_B3_invariant                        beta(As,At)=beta(s,t) for 3 B3 generators, all pairs (=> all B3 by multiplicativity in A)
+  PASS  L6.G16.beta_factors_mod2                        beta depends only on (s,t) mod 2 (64 classes consistent)
+  PASS  L6.G16.count_total_512                          512 F2 candidates
+  PASS  L6.G16.count_alternating_8                      8 alternating
+  PASS  L6.G16.count_invariant_2                        2 S3-invariant alternating
+  PASS  L6.G16.count_nontrivial_invariant_1             1 nontrivial invariant alternating
+  PASS  L6.G16.unique_match                             exactly 1 of 512 matches measured beta; it is the nontrivial invariant
+  PASS  L6.G16.rejectors_511                            511 candidates each rejected by an explicit witness pair
+  PASS  L6.G16.pullback_matches_all_pairs               unique M pulled back = measured beta on all N^2 pairs
+  PASS  L6.G17.unit_lift_order_x                        order(t~_x)=6 (=L) and (t~)^L=+I
+  PASS  L6.G17.unit_lift_order_y                        order(t~_y)=6 (=L) and (t~)^L=+I
+  PASS  L6.G17.unit_lift_order_z                        order(t~_z)=6 (=L) and (t~)^L=+I
+  PASS  L6.G18.q_matches_formula                        q((L/2)v) = (-1)^{(L/2)^2 sum_{i<j} v_i v_j} on all 8 v
+  PASS  L6.G18.q_minus_count                            q=-I count=4 (XREF 4)
+  PASS  L6.G18.q_minus_set_L6                           -I 2-torsion set = {(3,3,0),(3,0,3),(0,3,3),(3,3,3)}
+  PASS  L6.G19.struct_gens_generate_Comm                closure of 7 structural generators = |Comm| = 20736
+  PASS  L6.G19.Ttilde_normal                            conjugates of T~ generators by all 7 struct gens land in T~
+  PASS  L6.G19.Ttilde_cap_S_trivial                     T~ cap S = {+I}
+  PASS  L6.G19.order_product                            |T~|*|S|=432*48=20736 = |Comm|
+  PASS  L6.G19.TS_product_set_eq_Comm                   product set T~*S: 20736 distinct elements = Comm elementwise
+  PASS  L6.G20.spectrum_eigenvalues                     eig=[0, -3, -6, -9] (int resid 1.95e-14 < 1e-9)
+  PASS  L6.G20.spectrum_multiplicities                  mults=[8, 48, 96, 64] (XREF [8, 48, 96, 64])
+  [L=6 wall 2.8s]
+
+========================================================================
+cross-surface gates
+========================================================================
+  PASS  X.G21.beta_unit_matrix_agree                    same beta unit matrix at L=4 and L=6
+  PASS  X.G21.q_differs_across_surfaces                 q_minus_count 0 (L=4) vs 4 (L=6): (L/2)^2 parity even vs odd
+
+========================================================================
+TOTAL: PASS=110 FAIL=0
+gates=110 wall=4.7s
+
+----- stderr -----
+

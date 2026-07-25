@@ -1,45 +1,110 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T13:59:08.686069+00:00",
+  "audit_invocation_history": [
+    "d96ba3b4711241f092cb93a5c3669070"
+  ],
+  "audit_invocation_id": "d96ba3b4711241f092cb93a5c3669070",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true,
+      "runner_path": "scripts/lattice_3d_l2_wide_h0125_w4_probe.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {
+      "scripts/lattice_3d_l2_numpy_h0125_only.py": "7c4647f48a6007081f3769a00a97a01eb2f7af3d761e13d2272932913dba3e88",
+      "scripts/numpy_replay_bootstrap.py": "41d6345df67dd5e90a5d8073ad963aafca8083df9e0e0b55d4dce6fa233e09e1"
+    },
+    "load_bearing_score": 0.0,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/lattice_3d_l2_numpy_h0125_only.py": {
+        "cache_exit_code": null,
+        "cache_freshness": "missing",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": null,
+        "cache_status": null
+      },
+      "scripts/lattice_3d_l2_wide_h0125_w4_probe.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "34b072a5ac4fa812cbf4643dbbe8a8ba6c64bd82cc425beb2464cffde92e8187",
+        "cache_status": "ok"
+      },
+      "scripts/numpy_replay_bootstrap.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "41d6345df67dd5e90a5d8073ad963aafca8083df9e0e0b55d4dce6fa233e09e1",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "34b072a5ac4fa812cbf4643dbbe8a8ba6c64bd82cc425beb2464cffde92e8187",
+    "runner_path": "scripts/lattice_3d_l2_wide_h0125_w4_probe.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-228f5b10",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The supplied runner closes only the auxiliary phys_l=2 numerical fits. The claim-carrying phys_l=6 replay and closeout logs supporting the stated bounded no-go are absent.",
   "claim_id": "h0125_wider_w4_probe_note",
-  "claim_scope": null,
+  "claim_scope": "Audited only the auxiliary phys_l=2, phys_w=4, h=0.125 probe result produced by scripts/lattice_3d_l2_wide_h0125_w4_probe.py, including its transitive helper sources; not the separate retained phys_l=6 closeout replay/logs named in the note.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_last_reviewed": "2026-07-25T13:59:08.686069+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [
     "scripts/lattice_3d_l2_numpy_h0125_only.py",
     "scripts/numpy_replay_bootstrap.py"
   ],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The note claims that the separate phys_l=6 targeted replay returned alpha = 0.499 and therefore makes the wider-family lane a bounded no-go on the tested row.",
+  "load_bearing_step_class": "B",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "no_go_result"
+  ],
   "note_hash": "48733cf0efad04db89b31d5c95f0b01669ebc0d3f8f949e1c462459dcc8bad92",
   "note_path": "docs/H0125_WIDER_W4_PROBE_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "runner_artifact_issue: include scripts/lattice_3d_l2_wide_h0125_replay.py and the two named closeout logs as authenticated claim-carrying evidence, or retarget the note and ledger explicitly to the auxiliary scout result.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -199,12 +264,12 @@
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
-    "C": 0,
+    "C": 5,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 5
   },
   "runner_path": "scripts/lattice_3d_l2_wide_h0125_w4_probe.py",
   "title": "Wider `h = 0.125` `phys_w = 4` Probe Note",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: the note's only claim-carrying no-go uses the omitted phys_l=6 replay, while the supplied primary runner computes a shortened phys_l=2 scout that the note expressly says is not claim-carrying. Why this blocks: the scout stdout and an independent log-log refit verify only alpha = 0.500411 for the full window and 0.499187 for r<=1.5; N1 evidences only one finite numerical route, N2 has no multiwall set, N3 exposes no additional hidden wall, N4 has no cited residual witness, N5 lacks five-resolution testing of the no-go, N6 supplies no substitute for the missing run, N7 lacks a resolved steelman, and N8 does not independently close that artifact gap. Repair target: supply the claim-carrying replay and logs, or rewrite the row as an explicitly finite auxiliary-scout result. Claim boundary until fixed: only the printed phys_l=2, phys_w=4, h=0.125 three-strength fits near one-half are supported; no broader width-4 no-go is audited."
 }

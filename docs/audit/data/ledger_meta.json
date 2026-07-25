@@ -2,14 +2,14 @@
   "last_invalidations": [],
   "schema_version": 1,
   "stats": {
-    "dropped_gated_sources": 634,
+    "dropped_gated_sources": 635,
     "dropped_missing_notes": 0,
     "dropped_total": 0,
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 0,
-    "preserved_existing": 3876,
+    "preserved_existing": 3877,
     "re_audit_required": 0,
-    "row_count": 3876,
+    "row_count": 3877,
     "seeded_new": 0
   }
 }

@@ -17,7 +17,7 @@ file per claim), summarized in
 | Metric | Value |
 |---|---:|
 | Retained positive rows | 116 |
-| Retained bounded rows | 342 |
+| Retained bounded rows | 343 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 27 |
 
@@ -142,7 +142,7 @@ Sorted by load-bearing graph score (descending).
 - [`tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20`](../../docs/TOMITA_TENSOR_TRACE_ON_FINITE_DIM_MATRIX_NARROW_THEOREM_NOTE_2026-05-20.md) — score 0.000; audited 2026-07-25T15:03:52.540528+00:00
 - [`wolfenstein_lambda_a_product_cancellation_narrow_theorem_note_2026-05-10`](../../docs/WOLFENSTEIN_LAMBDA_A_PRODUCT_CANCELLATION_NARROW_THEOREM_NOTE_2026-05-10.md) — score 0.000; audited 2026-07-25T18:05:21.029457+00:00
 
-## Retained bounded rows (342)
+## Retained bounded rows (343)
 
 Sorted by load-bearing graph score (descending).
 
@@ -336,6 +336,7 @@ Sorted by load-bearing graph score (descending).
 - [`growing_graph_expansion_card_note`](../../docs/GROWING_GRAPH_EXPANSION_CARD_NOTE.md) — score 1.500; audited 2026-05-09T16:06:07.864023+00:00
 - [`h2t_h0125_narrow_bridge_note`](../../docs/H2T_H0125_NARROW_BRIDGE_NOTE.md) — score 1.500; audited 2026-05-25T19:50:35.236856+00:00
 - [`hard_geometry_gravity_window_note`](../../docs/HARD_GEOMETRY_GRAVITY_WINDOW_NOTE.md) — score 1.500; audited 2026-05-27T03:33:22.641799+00:00
+- [`hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25`](../../docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md) — score 1.500; audited 2026-07-25T19:26:49.705965+00:00
 - [`landau_peierls_prefactor_native_derivation_bounded_theorem_note_2026-06-13`](../../docs/LANDAU_PEIERLS_PREFACTOR_NATIVE_DERIVATION_BOUNDED_THEOREM_NOTE_2026-06-13.md) — score 1.500; audited 2026-06-21T15:24:36.984610+00:00
 - [`lattice_nn_rg_alpha_sweep_note`](../../docs/LATTICE_NN_RG_ALPHA_SWEEP_NOTE.md) — score 1.500; audited 2026-05-07T02:17:45.375642+00:00
 - [`mesoscopic_surrogate_localization_sweep_note`](../../docs/MESOSCOPIC_SURROGATE_LOCALIZATION_SWEEP_NOTE.md) — score 1.500; audited 2026-05-27T03:35:55.906852+00:00

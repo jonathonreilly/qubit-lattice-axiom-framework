@@ -31,12 +31,12 @@ Owner-approval history for axioms and primitives:
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3876 |
-| Applied audit verdicts | 865 |
-| Retained-grade rows, including boxed decorations | 485 |
+| Ledger rows | 3877 |
+| Applied audit verdicts | 866 |
+| Retained-grade rows, including boxed decorations | 486 |
 | Retained positive theorems | 116 |
 | Retained no-go rows | 0 |
-| Retained bounded rows | 342 |
+| Retained bounded rows | 343 |
 | Boxed decorations under retained parents | 27 |
 | Open gates | 2 |
 | Unaudited rows | 2653 |
@@ -333,15 +333,15 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 4510 |
+| Citation-graph nodes | 4512 |
 | Critical nodes | 755 |
 | High nodes | 444 |
 | Medium nodes | 1132 |
-| Leaf nodes | 2179 |
+| Leaf nodes | 2181 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 2138 descendants; score 271.063
+- `minimal_axioms` - critical; 2139 descendants; score 271.563
 - `graph_first_su3_integration_note` - critical; 1677 descendants; score 64.213
 - `three_generation_observable_theorem_note` - critical; 1284 descendants; score 62.328
 - `observable_principle_from_axiom_note` - critical; 1123 descendants; score 61.634

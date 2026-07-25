@@ -1,0 +1,22 @@
+loop_slug: toe-retention-source-action-20260725
+goal: "candidate-retained-grade science on the TOE lanes; attack the physical-observable / source-action / carrier bridge as a program"
+target_status: best-honest-status
+mode: campaign
+runtime: 6h
+runtime_start: "2026-07-25T14:09-04:00"
+cycles_completed: 1
+active_route: "cycle 697 — readout position/scale limits and the forced local law"
+strongest_unresolved_proof_obligation: "derive a site-anchored readout without importing the target field"
+hard_residual_attacked: "the physical-observable bridge shared by the gravity rows and the AC eta obligation"
+approach_family: "axiom-text classification under the lattice automorphism group"
+files_touched:
+  - docs/PHYSICAL_READOUT_POSITION_SCALE_LIMITS_AND_FORCED_LOCAL_LAW_CYCLE697_NOTE_2026-07-25.md
+  - scripts/physical_readout_position_scale_limits_and_forced_local_law_cycle697_2026_07_25.py
+open_imports: []
+named_conditions: [range-1 locality, offset-insensitivity, supplied scalar codomain]
+no_go_routes_recorded: 12
+trace_gate_classification: upstream_support
+review_findings: pending
+pr_status: pending
+next_exact_action: "cold-run the runner in an isolated worktree, verify the receipt against the committed blob, open the block PR"
+stop_condition: "runtime exhaustion at 20:09, or value-gate/corollary exhaustion"

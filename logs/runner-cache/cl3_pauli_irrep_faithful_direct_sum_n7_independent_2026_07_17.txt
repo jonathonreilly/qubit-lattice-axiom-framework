@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.py
+runner_sha256: e5350cc6e8f15bf4e0fae2782d0ea78a13330ea1b9732c666fa62bb3a5625f4f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.26
+status: ok
+----- stdout -----
+N7_INDEPENDENT_CHECK rho_plus_complex_rank_4 status=PASS
+N7_INDEPENDENT_CHECK rho_minus_complex_rank_4 status=PASS
+N7_INDEPENDENT_CHECK rho_plus_kernel_dim_complex_4 status=PASS
+N7_INDEPENDENT_CHECK rho_minus_kernel_dim_complex_4 status=PASS
+N7_INDEPENDENT_CHECK rho_plus_volume_character_plus_i status=PASS
+N7_INDEPENDENT_CHECK rho_minus_volume_character_minus_i status=PASS
+N7_INDEPENDENT_CHECK direct_sum_complex_rank_8_faithful status=PASS
+N7_INDEPENDENT_CHECK proper_sector_projector_rank_2 status=PASS
+N7_INDEPENDENT_CHECK proper_sector_projector_idempotent status=PASS
+N7_INDEPENDENT_CHECK proper_sector_projector_commutes_with_action status=PASS
+N7_STEELMAN_RESOLUTION wall=irreducible complexified A-module faithfulness boundary; steelman=rho_plus_direct_sum_rho_minus; individual_kernel_dim_complex=4; combined_complex_rank=8; faithful=true; reducible=true; invariant_summand_dims_complex=2,2; conclusion=faithfulness_does_not_recover_irreducibility
+
+----- stderr -----
+

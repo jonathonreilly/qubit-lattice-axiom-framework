@@ -145,7 +145,7 @@ e_+ + e_-   = ((1 - i ω) + (1 + i ω))/2 = 1,
 e_+ · e_-   = ((1 - i ω)(1 + i ω))/4    = (1 - (i ω)²)/4
             = (1 - i² ω²)/4              = (1 - (-1)(-1))/4 = 0,
 e_+²        = ((1 - i ω)/2)²             = (1 - 2 i ω + (i ω)²)/4
-            = (1 - 2 i ω + 1)/(2² ·  )    = (2 - 2 i ω)/4 = e_+,
+            = (1 - 2 i ω + 1)/4          = (2 - 2 i ω)/4 = e_+,
 e_-²        = e_-  (analogous).
 ```
 
@@ -229,6 +229,11 @@ Runner links:
   [`scripts/cl3_complexification_exclusion_stress_2026_07_13.py`](../scripts/cl3_complexification_exclusion_stress_2026_07_13.py)
 - Recorded exclusion stdout:
   [`logs/runner-cache/cl3_complexification_exclusion_stress_2026_07_13.txt`](../logs/runner-cache/cl3_complexification_exclusion_stress_2026_07_13.txt)
+- Independent faithful-direct-sum resolution runner (the N7 surface,
+  distinct from the runner used for the steelman):
+  [`scripts/cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.py`](../scripts/cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.py)
+- Recorded independent-resolution stdout:
+  [`logs/runner-cache/cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.txt`](../logs/runner-cache/cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.txt)
 
 The companion runner verifies via sympy exact rational/symbolic arithmetic
 on `2 × 2` complex matrices:

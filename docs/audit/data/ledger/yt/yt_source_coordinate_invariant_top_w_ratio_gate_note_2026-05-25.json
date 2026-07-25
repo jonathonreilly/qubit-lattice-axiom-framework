@@ -166,6 +166,91 @@
         "total_pass": 9
       },
       "verdict_rationale": "The theorem is a correct class-A chain-rule identity under its explicitly stated common-surface mass hypotheses. Its physical carrier and top-response consequences remain outside scope and are accurately disclaimed. However, the provided runner exits on a missing audit ledger before performing any symbolic identity check, so the executable evidence does not validate the claim in this packet."
+    },
+    {
+      "archived_at": "2026-07-25T08:41:28.726900+00:00",
+      "audit_date": "2026-07-25T08:40:47.169475+00:00",
+      "audit_invocation_history": [
+        "2deca1eb5ad149b9b6a94c8d8e4f151e"
+      ],
+      "audit_invocation_id": "2deca1eb5ad149b9b6a94c8d8e4f151e",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 6,
+            "B": 2,
+            "C": 0,
+            "D": 1
+          },
+          "decoration_candidate": false,
+          "dominant_class": "A",
+          "exists": true,
+          "runner_path": "scripts/frontier_yt_source_coordinate_invariant_top_w_ratio_gate.py"
+        },
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 6.248,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_yt_source_coordinate_invariant_top_w_ratio_gate.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "a548185dedc69c8b9ad7a4cadadd0df624f28d043f0a9deb1f76d499f9b23772",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "a548185dedc69c8b9ad7a4cadadd0df624f28d043f0a9deb1f76d499f9b23772",
+        "runner_path": "scripts/frontier_yt_source_coordinate_invariant_top_w_ratio_gate.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 18
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260725-e10bcbf9",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The narrow algebraic identity closes by direct differentiation, but the asserted retirement of the source-normalization blocker is not audit-closed because the runner aborts before executing its algebraic and reparameterization checks.",
+      "claim_scope": "For differentiable v with nonzero v'(h0), h-independent y_t and g_2, and the stated common-source mass laws, the derivative ratio equals sqrt(2)y_t/g_2 and is invariant under a local source reparameterization.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-25T08:40:47.169475+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "classifier_promoted_to_class_A:scripts/frontier_yt_source_coordinate_invariant_top_w_ratio_gate.py",
+      "load_bearing_step": "The common factor v'(h) cancels, yielding y_t=(g_2/sqrt(2))(dM_t/dh)/(dM_W/dh), and a local reparameterization multiplies both derivatives by the same factor.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: provide a ledger-independent sliced runner that executes Parts 2-4 and supplies current-cycle stress-test evidence for the named normalization boundary, then re-audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 9,
+        "C": 0,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "Issue: the runner aborts on the missing audit ledger before executing any load-bearing algebra or reparameterization check, leaving the bounded claim that source-coordinate normalization is unnecessary without current-cycle verification. Why this blocks: direct differentiation confirms the narrow identity when y_t and g_2 are h-independent, but the note does not state that constancy explicitly and the required claim-cementing stress evidence is unavailable. Repair target: execute a ledger-independent slice covering Parts 2-4 and make coupling constancy explicit; until then, only the conditional algebraic identity in the audited scope is supported."
     }
   ],
   "prose_corrections": [],

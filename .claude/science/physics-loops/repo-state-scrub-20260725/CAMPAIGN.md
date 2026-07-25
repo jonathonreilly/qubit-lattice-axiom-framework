@@ -165,3 +165,62 @@ with a non-bipartite triangle as the breaking mutation).
 - **R4 (owner decision, NOT dispatched):** registering the remaining
   TIER-1 orphans (70) is a policy call about what `work_history/`
   is FOR — the exclusion glob may be deliberate. Flagged, not acted on.
+
+---
+
+## PHASE 2 RESULT (2026-07-25): both repairs landed as PRs
+
+**PR #5603 — the tooling fixes (R1 + R2).**
+- R1: new `audit_lint` error `unregistered_runner_bearing_note`,
+  detected via the citation graph's own runner attribution (no new
+  regex surface, and it widens automatically with R2). Shipped with
+  a **grandfather baseline** of 398 paths — firing on the existing
+  population would have put 398 errors into `--strict` and hard-
+  blocked every lane with no drain path. Drained entries surface as
+  `..._baseline_stale` notices so **the list can only shrink**.
+  The baseline deliberately lives in `docs/audit/scripts/`, NOT
+  `docs/audit/data/`, because that directory is restored wholesale
+  from origin/main before every PR and a baseline there would have
+  each drain silently reverted. No env/flag bypass.
+- R2: `## Verification` capture, tried LAST. Both phase-1 numbers
+  re-verified on current main: LAST -> gains 52, losses 0, changes 0;
+  merged in place -> changes 5 (five named notes corrupted).
+- Churn: 4 rows re-seeded, **0 requeues** (audit queue
+  byte-identical), **0 verdicts risked**, measured twice across 17
+  intervening audit commits, identical both times.
+- Gates: vocab_lint 0 violations; pipeline PASS; `audit_lint
+  --strict` **exit 0**; `git diff --check` clean; 746 tests + 12 new.
+
+**PR #5602 — the A-registration.**
+`docs/COMMON_FRAME_PAIR_GENERATOR_EXCHANGE_CLASS_BOUNDED_THEOREM_NOTE_2026-07-25.md`
++ a NEW consolidated runner (**46/0**) + SHA-pinned cache. All three
+limitations carried as claim content, and the note explicitly records
+that the band-minimum separator FAILS (`Z^3` bipartite by `x+y+z`
+parity, `D A D = -A`, `spec(A) = -spec(A)`). Churn: **0 requeues,
+0 verdicts risked, 1 row added** (`unaudited`, `ready: true`).
+
+Design decision worth keeping: the four 2026-07-14 sources are cited
+in BACKTICKS, not markdown links — they are route inputs, not
+evidence, every step is recomputed natively, and a markdown link
+would seed a citation-graph edge to a row the seeder drops.
+
+### CORRECTION TO MY OWN PHASE-1 NUMBER
+
+I reported **470** runner-bearing excluded-path notes. Under the
+precise rule actually shipped (no ledger row, not `never_gate`d,
+graph-attributed runner existing on disk) the population is **398**.
+My looser body-mention scan reproduces at 475 and sweeps in narrative
+infrastructure (e.g. `review-loop/SKILL.md` naming `vocab_lint.py`).
+The graph detector is the right one; my count was inflated.
+
+### STILL OPEN (owner decisions, deliberately NOT acted on)
+
+- **R4: register the 398 grandfathered notes.** This is a policy
+  call about what `docs/work_history/` is FOR — the exclusion may be
+  deliberate. The debt is now recorded and cannot grow.
+- 7 pre-existing test failures (`NoGoDisciplineGateTest` x4,
+  `FingerprintV1StampingTest` x3) reproduce identically on unmodified
+  origin/main; they touch audit-verdict gates. Flagged, not touched.
+- The 95 terminal-verdict rows (58 `audited_clean`) naming runners
+  their ledger rows do not hash-pin — untouched, and the most
+  alarming remaining item.

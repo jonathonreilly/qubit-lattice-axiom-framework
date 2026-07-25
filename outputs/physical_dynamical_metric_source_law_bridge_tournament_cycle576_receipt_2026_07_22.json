@@ -4,9 +4,9 @@
   "claim_type_author_hint": "bounded_theorem",
   "authority": "none",
   "audit": "unset",
-  "runner_sha256": "371e4f65878109afd95dcb57670312dfe8666fabde811603f0f47da379235f3c",
-  "regge_support_sha256": "1211c739167236636f35a362f374a0204de8bb8476812a00cb4d3f5d0fa75430",
-  "plaquette_support_sha256": "652801a920d65735e0156ec9ad1958604cdc3b297af5c33a957e4b9b8896d440",
+  "runner_sha256": "8b82a5129eb098c9f67382340b41d9e931acdeb25991e3f784abd705a91e651b",
+  "regge_support_sha256": "dcc397cbdade106d959b4fed41177f4928c8d2d99668b549c31af13ef5f7dcf1",
+  "plaquette_support_sha256": "b5050b0df3d59b713448c399431a5028ea5c28c4c0d63e1a187a431d28a2f31d",
   "note_sha256": "cc17666541e86b536069c86883557e3574414c7b3324aaaac5840a2094c2fcd7",
   "tests_passed": 10,
   "tests_total": 10,
@@ -17,8 +17,8 @@
     "pinned_dependencies": 9,
     "missing_paths": [],
     "untracked_dependencies": [],
-    "Cycle572_receipt_sha256": "312ea93982e59dca5385a47d3054994c2d9921fa9e5ed042ddb8bc6d082b5d87",
-    "Cycle572_runner_sha256": "ee3cae3d548dbf7f28c848cdb2710521483aa66e46b4e60363627b7d2d36e9b0",
+    "Cycle572_receipt_sha256": "d565d081b6c0e01adff2fd4e6e04f5f3da6991db7264843c1ae1d4c332d1a8ed",
+    "Cycle572_runner_sha256": "cc71457e605d778ea91cf6b1ab24b6b68eca5eae5b673bde7c3cdecacffae28b",
     "Cycle572_note_sha256": "72e37ba7301e2aa6926c666304440bf370e2e22158d69e26262440d51bf07ecc"
   },
   "supplied_parameters": {

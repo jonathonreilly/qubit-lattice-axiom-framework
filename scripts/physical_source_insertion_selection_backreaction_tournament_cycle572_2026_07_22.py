@@ -60,7 +60,7 @@ AUDIT_INPUT_PATHS = (
 
 DEPENDENCIES = {
     "scripts/physical_source_insertion_selection_backreaction_cycle572_carrier_support_2026_07_22.py":
-        "5c05c0c8e4c86f1166b0a22159e644297799850ab51bd7d7348c3aec1af0c808",
+        "61cb69be454d320e97b0e82205307c885cce3b920002e72686598400d33d0126",
     "scripts/physical_source_insertion_selection_backreaction_cycle572_finite_support_2026_07_22.py":
         "a0008b105d33461d7e4615a8afe58d83e436415d1a75ddb4cb7d41ec1defdf37",
     "docs/FINITE_SOURCE_INSERTION_ALGEBRA_CARRIER_LABEL_SUPPORT_CYCLE572_BOUNDED_THEOREM_NOTE_2026-07-22.md":

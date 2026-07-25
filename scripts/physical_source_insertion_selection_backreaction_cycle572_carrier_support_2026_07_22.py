@@ -432,4 +432,3 @@ def route_c_body_diagonal() -> dict:
         "held_sparse_label_fixture_length": HELD_LENGTH,
         "physical_M2_compiler_or_minimum_claimed": False,
     }
-

@@ -360,4 +360,3 @@ def route_a_regge() -> dict:
         "Einstein_equation_or_physical_gravity_derived": False,
         "physical_site_encoding_or_intertwiner_executed": False,
     }
-

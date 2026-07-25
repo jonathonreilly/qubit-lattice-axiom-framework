@@ -1,0 +1,36 @@
+PASS the acting group is exactly the 24 proper cubic rotations and all 576 products close inside it (exact integer arithmetic) :: {'order': 24, 'products_checked': 576, 'products_outside_group': 0}
+PASS the action on the eight cube vertices is transitive and faithful :: {'vertex_orbit_size': 8, 'faithful': True}
+PASS the 28 vertex pairs classify exhaustively as 12 cube edges, 12 face diagonals and 4 body diagonals :: {'edge': 12, 'face_diagonal': 12, 'body_diagonal': 4}
+PASS the face diagonals form a single 12-element orbit and the body diagonals a single 4-element orbit, so any invariant diagonal set is a union of these two orbits :: {'face_orbit': 12, 'body_orbit': 4}
+PASS every non-degenerate tetrahedron on cube vertices uses at least one diagonal, so a triangulation cannot avoid the diagonal set entirely :: {'nondegenerate_tetrahedra': 58, 'diagonal_free': 0}
+PASS the full face-diagonal orbit is simplicially inadmissible: the two diagonals of each face meet at the face centre, which is not a vertex :: {'interior_crossings': 6}
+PASS the full body-diagonal orbit is simplicially inadmissible: all four body diagonals meet at the cube centre, which is not a vertex :: {'interior_crossings': 6}
+PASS NO-GO: no triangulation of the cube on its eight vertices is invariant under all 24 proper cubic rotations -- a nonempty invariant diagonal set must contain a full orbit, and every full orbit crosses itself at a non-vertex point :: {'argument': 'nonempty diagonal set + union-of-orbits + both orbits self-intersecting', 'holds': True}
+PASS Lagrange: a stabilizer order divides 24, and 24 is excluded by the no-go, so the attainable covariance order is at most 12 :: {'divisors_of_24': [1, 2, 3, 4, 6, 8, 12, 24], 'ceiling_upper_bound': 12}
+PASS the five-tetrahedron decomposition is a genuine triangulation: exact volumes sum to 1 and the five pieces are pairwise interior-disjoint by an exact separating-axis test :: {'total_volume': '1', 'pieces': 5, 'overlapping_pairs': 0}
+PASS the ceiling is ATTAINED: the five-tetrahedron decomposition has stabilizer of order exactly 12, so the maximum proper-cubic covariance of any Z^3-vertex cube triangulation is exactly 12 :: {'stabilizer_order': 12, 'frames': [0, 1, 2, 3, 12, 13, 14, 15, 16, 17, 18, 19]}
+PASS attaining the ceiling forces a binary chirality choice: the two alternating vertex sets each have stabilizer 12 and are exchanged by the remaining 12 rotations, so maximal covariance and full parity symmetry cannot be held together :: {'even_stabilizer': 12, 'odd_stabilizer': 12, 'exchanging_rotations': 12}
+PASS the Kuhn/Freudenthal path decomposition -- the one carried by the landed 3+1 Regge module -- attains 6, which is half the ceiling and a quarter of the full group :: {'stabilizer_order': 6, 'ceiling': 12, 'group_order': 24}
+PASS MECHANISM: the obstruction is that the 0/1 spatial direction set is closed under coordinate permutation but not under sign flip -- only the 3 even permutations preserve it, and the other 21 rotations carry some direction out of {0,1}^3, so covariance there is ill posed rather than violated. The larger folded scope of 6 is a DISTINCT count: the static tick fold absorbs a global sign, so -P acts like P on the folded object :: {'frames_carrying_a_direction_out': 21, 'frames_preserving_the_spatial_direction_set': 3, 'witness_frame': 1, 'witness': '(0, 0, 1) -> (0, 0, -1)'}
+PASS ESCAPE CONDITION: enriching the vertex set restores the full group -- the six-pyramid decomposition about the added cube centre is invariant under all 24 rotations, so the ceiling is a property of Z^3 vertices, not of cubic symmetry itself :: {'stabilizer_order': 24, 'added_vertex': 'cube centre', 'note': 'pyramids are not simplices; a simplicial refinement needs further vertices, which is the cost of the escape'}
+SUMMARY_JSON {"all_24_invariant_triangulation_exists": false, "audit": "unset", "authority": "none", "chirality_forced_at_ceiling": true, "covariance_ceiling": 12, "cycle": 690, "cycle_claim": null, "diagonal_orbits": {"body": 4, "face": 12}, "escape_requires_vertices_beyond_Z3": true, "fail_count": 0, "failures": 0, "firewalls": {"any_gravity_stress_energy_or_einstein_claim": false, "chirality_choice_called_parity_violation": false, "stabilizer_called_a_physical_symmetry": false}, "group_order": 24, "landed_kuhn_covariance": 6, "no_go": {"axiom_pressure": false, "escape_conditions": ["enrich the vertex set beyond Z^3 (face/body centres), at the cost of leaving the lattice", "accept 12 via the five-tetrahedron decomposition and declare a chirality", "accept 6, which is what the landed Kuhn complex carries"], "shared_obstruction": false, "statement": "no Z^3-vertex cube triangulation is invariant under all 24 proper cubic rotations"}, "pass": true, "pass_count": 15, "passes": 15, "resources": {"elapsed_seconds": 0.007560500002000481}, "runner_sha256": "c32ea0011a4018bd2bff34d8f4762673cf720162b1f878d3d7cf3e8da34e19a7"}
+RESULT 15 0 elapsed 0.01 s
+RESULT Z3_VERTEX_PROPER_CUBIC_COVARIANCE_CEILING_IS_EXACTLY_12
+        0.03 real         0.02 user         0.00 sys
+            22052864  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                2425  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                  19  involuntary context switches
+           530917345  instructions retired
+           140606579  cycles elapsed
+            12157408  peak memory footprint

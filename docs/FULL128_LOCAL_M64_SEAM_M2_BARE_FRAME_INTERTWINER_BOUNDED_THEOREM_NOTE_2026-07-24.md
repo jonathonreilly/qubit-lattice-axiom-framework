@@ -84,7 +84,11 @@ layout proper-cubic. The seven-mode free-plus-seam update is decomposed into
 reverse FSWAPs, nine adjacent seam FSWAPs, and 15 contact phases. Decode,
 route, apply, and re-encode gives a 504-gate nearest-neighbor data word. The
 separate one-hot schedule is supplied finite circuit structure; its substep
-index is not physical time or a transition rate.
+index is not physical time or a transition rate. That optional supporting
+controller is not composed into `E_full` or `G_physical`: its 504 clock sites,
+radius-11 12,167-site cube, and 564,333-gate macro are excluded from the
+61-site/115-touched-site/3,907-gate primary theorem census. The primary theorem
+requires only the explicitly supplied finite word order.
 
 For every unordered local pair `(i,j)`, `W_A` prepares the two corresponding
 ordered register sites in
@@ -243,9 +247,13 @@ This note claims no global literature priority for any of them.
 The new campaign result recorded here is their exact combination for this
 specific six-mode-plus-seam update: a full128 physical-M2 intertwiner with the
 stated local contact/seam block, resources, deletions, static code projectors,
-and bare-coordinate proper-cubic code-space covariance. Cycle 230 supplies the
-coarse target fixture only; this note does not turn that historical calculation
-into a recurrent law or extend an unrelated prior-art engine.
+and bare-coordinate proper-cubic code-space covariance. The
+[Cycle 230 coarse target fixture](work_history/repo/review_feedback/SPATIAL_CAR_CONTACT_SEAM_FORM_FACTOR_CYCLE230_NOTE_2026-07-17.md)
+is contextual provenance for the supplied coin/contact target only; no Cycle
+230 source object is imported, and the present source closure supplies and
+recomputes its exact finite matrices and constants directly. This note does
+not turn that historical calculation into a recurrent law or extend an
+unrelated prior-art engine.
 
 ## Dependency closure and reproducibility
 

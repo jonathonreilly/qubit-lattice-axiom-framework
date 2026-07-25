@@ -9,10 +9,12 @@ The runner claims no autonomous microscopic law, scheduler, or genesis.
 from __future__ import annotations
 
 import json
+from pathlib import Path
 import time
 
 import numpy as np
 
+import frontier_full128_25site_nn_circuit_core_2026_07_24 as CORE
 from frontier_full128_25site_nn_circuit_core_2026_07_24 import *  # noqa: F403
 
 
@@ -36,11 +38,23 @@ def check(label: str, condition: bool, detail: object = "") -> None:
         FAIL += 1
         print(f"FAIL {label} :: {detail}")
 
+
+def audit_source_closure(paths: tuple[str, ...], modules: tuple[object, ...]) -> bool:
+    repo_root = Path(__file__).resolve().parents[1]
+    resolved = tuple((repo_root / path).resolve() for path in paths)
+    declared_modules = {path for path in resolved if path.suffix == ".py"}
+    imported_modules = {Path(module.__file__).resolve() for module in modules}
+    return (
+        len(paths) == len(set(paths))
+        and all(path.is_file() and repo_root in path.parents for path in resolved)
+        and imported_modules == declared_modules
+    )
+
+
 def main() -> None:
     check(
         "ordinary repo-local imports close the declared source dependency surface",
-        len(AUDIT_INPUT_PATHS) == len(set(AUDIT_INPUT_PATHS)) == 3
-        and all(not path.startswith(("/private/", "/tmp/")) for path in AUDIT_INPUT_PATHS),
+        audit_source_closure(AUDIT_INPUT_PATHS, (CORE, CORE.P)),
         {"audit_input_paths": AUDIT_INPUT_PATHS, "campaign_fallbacks": 0},
     )
 
@@ -354,9 +368,21 @@ def main() -> None:
         ),
     }
     check(
-        "all supplied structure and open walls are inventoried",
-        supplied["layout"]["fixed_cube_M2"] > supplied["layout"]["data_M2"]
-        and len(supplied["genesis_supplied"]) == 10 and len(supplied["not_claimed"]) == 10,
+        "supplied inventory agrees with the constructed geometry, code and program",
+        supplied["layout"]["fixed_cube_M2"] == (2 * RADIUS + 1) ** 3
+        and supplied["layout"]["data_M2"] == len(set(DATA_COORDS)) == 25
+        and supplied["layout"]["routing_and_schedule_blank_M2"]
+        == len(FULL_COORDS) - len(DATA_COORDS) - len(CLOCK_COORDS)
+        and supplied["encoded_domain"]["decoded_dimension"]
+        == supplied["encoded_domain"]["local_Fock_dimension"]
+        * supplied["encoded_domain"]["seam_port_dimension"]
+        == 128
+        and supplied["constraints"]["encoded_qubits"] == 7
+        and supplied["constraints"]["CSS_cross_commutation_failures"] == 0
+        and supplied["program"]["NN_instruction_count"]
+        == len(DATA_WORD) == len(CLOCK_COORDS) == PROGRAM_LENGTH
+        and supplied["program"]["fixed_controller_A_sha256"]
+        == controller["controller_A_sha256"],
         supplied,
     )
 

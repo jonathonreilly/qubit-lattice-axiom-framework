@@ -27,6 +27,7 @@ from dataclasses import dataclass
 from itertools import combinations, permutations, product
 import json
 import math
+from pathlib import Path
 import resource
 import time
 
@@ -67,6 +68,15 @@ def check(label: str, condition: bool, detail: object = "") -> None:
     else:
         FAIL += 1
         print(f"FAIL {label} :: {detail}")
+
+
+def audit_source_closure(paths: tuple[str, ...]) -> bool:
+    repo_root = Path(__file__).resolve().parents[1]
+    resolved = tuple((repo_root / path).resolve() for path in paths)
+    return (
+        len(paths) == len(set(paths))
+        and all(path.is_file() and repo_root in path.parents for path in resolved)
+    )
 
 
 def proper_cubic_frames() -> tuple[np.ndarray, ...]:
@@ -491,7 +501,7 @@ def domain_controls() -> dict:
 def main() -> None:
     check(
         "audit-facing source has no campaign-worktree or archived-artifact dependency",
-        all(not path.startswith(("/private/", "/tmp/")) for path in AUDIT_INPUT_PATHS),
+        audit_source_closure(AUDIT_INPUT_PATHS),
         {"audit_input_paths": AUDIT_INPUT_PATHS, "runtime_nonstdlib": ("numpy",)},
     )
 

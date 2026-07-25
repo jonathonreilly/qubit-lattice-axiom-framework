@@ -26,6 +26,7 @@ from itertools import permutations, product
 import cmath
 import json
 import math
+from pathlib import Path
 import resource
 import time
 
@@ -65,6 +66,15 @@ def check(label: str, condition: bool, detail: object = "") -> None:
     else:
         FAIL += 1
         print(f"FAIL {label} :: {detail}")
+
+
+def audit_source_closure(paths: tuple[str, ...]) -> bool:
+    repo_root = Path(__file__).resolve().parents[1]
+    resolved = tuple((repo_root / path).resolve() for path in paths)
+    return (
+        len(paths) == len(set(paths))
+        and all(path.is_file() and repo_root in path.parents for path in resolved)
+    )
 
 
 def add(*rows: Coord) -> Coord:
@@ -318,6 +328,12 @@ def gadget_target(left_bit: int, right_bit: int) -> SparseState:
 
 
 def main() -> None:
+    check(
+        "audit-facing source dependency surface resolves inside the repository",
+        audit_source_closure(AUDIT_INPUT_PATHS),
+        {"audit_input_paths": AUDIT_INPUT_PATHS, "campaign_fallbacks": 0},
+    )
+
     frame_determinants = Counter(det3(frame) for frame in FRAMES)
     frame_mode_bijections = sum(len(set(mapping)) != 6 for mapping in MODE_MAPS)
     check(

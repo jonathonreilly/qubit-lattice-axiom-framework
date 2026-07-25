@@ -28,6 +28,7 @@ from collections import Counter
 from hashlib import sha256
 import json
 import math
+from pathlib import Path
 import resource
 import time
 
@@ -65,6 +66,18 @@ def check(label: str, condition: bool, detail: object = "") -> None:
     else:
         FAIL += 1
         print(f"FAIL {label} :: {detail}")
+
+
+def audit_source_closure(paths: tuple[str, ...], modules: tuple[object, ...]) -> bool:
+    repo_root = Path(__file__).resolve().parents[1]
+    resolved = tuple((repo_root / path).resolve() for path in paths)
+    declared_modules = {path for path in resolved if path.suffix == ".py"}
+    imported_modules = {Path(module.__file__).resolve() for module in modules}
+    return (
+        len(paths) == len(set(paths))
+        and all(path.is_file() and repo_root in path.parents for path in resolved)
+        and imported_modules == declared_modules
+    )
 
 
 Z = np.diag((1, -1)).astype(complex)
@@ -325,8 +338,7 @@ def placement_controls() -> dict:
 def main() -> None:
     check(
         "ordinary repo-local imports close the declared source dependency surface",
-        len(AUDIT_INPUT_PATHS) == len(set(AUDIT_INPUT_PATHS)) == 5
-        and all(not path.startswith(("/private/", "/tmp/")) for path in AUDIT_INPUT_PATHS),
+        audit_source_closure(AUDIT_INPUT_PATHS, (P, S, C, K)),
         {"audit_input_paths": AUDIT_INPUT_PATHS, "campaign_fallbacks": 0},
     )
 

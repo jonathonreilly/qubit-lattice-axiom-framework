@@ -224,3 +224,98 @@ The graph detector is the right one; my count was inflated.
 - The 95 terminal-verdict rows (58 `audited_clean`) naming runners
   their ledger rows do not hash-pin — untouched, and the most
   alarming remaining item.
+
+---
+
+## WAVE 3 RESULT (2026-07-25): both integrity items are WORSE than measured
+
+### 1. RUNNER PINNING — my phase-1 count was an UNDERCOUNT (PR #5609)
+
+"Hash-pinned" means `audit_state_snapshot.runner_hash` (legacy
+comparator fires ONLY when non-null) and `helper_runner_hashes` (the
+comparator SKIPS the entire helper channel when absent).
+`runner_sha256` and `cache_freshness` do NOT pin.
+
+| snapshot state | rows | verdicts |
+|---|---|---|
+| names a runner, `runner_hash` null/absent | **78** | 77 clean |
+| declares helpers, no `helper_runner_hashes` | **182** | 169 clean |
+
+**Union: 223 rows — 209 `audited_clean`, 208 retained-grade.**
+My phase-1 figure ("95 terminal / 58 clean") does not reproduce: the
+true clean exposure is **209**, and phase 1 **missed the helper
+channel entirely — which is the larger one.**
+
+**Structural root:** `FINGERPRINT_STAMP_VERDICTS =
+{audited_conditional, audited_failed}` — **a CLEAN verdict has never
+received a v1 fingerprint. Zero of 450 `audited_clean` rows carry
+one.** Single cause for all 223: audited before the writer recorded
+the field (`runner_hash` added 2026-05-16, `helper_runner_hashes`
+2026-07-15). Cache-never-generated: 0. Parse-invisible: 0.
+
+**37 ACTIVE integrity failures** (1 primary + 36 helper), 186 latent.
+The smoking gun: `dm_lepton_synthesis_note_2026-04-19` —
+`audited_clean`, `effective_status: retained` — names a runner
+REWRITTEN 2026-07-12 ("narrow to supplied-input S_3 selection
+table", withdrawing four observational-closure phrases and admitting
+three external inputs). **Its sibling row cites the SAME runner, was
+re-audited, and is `audited_conditional`. This row kept `retained`
+purely because it pins nothing.** Helper channel: 40 rows drifted,
+ALL substantive, 36 clean, 35 retained-grade.
+
+Repair is tooling-only: a writer gate refusing to stamp a terminal
+verdict that leaves a named runner unbound, plus a shrink-only
+baseline recording each runner's sha AT BASELINE TIME so the legacy
+population is FROZEN — further movement raises instead of passing
+silently. **Snapshot back-fill REFUSED**: writing today's sha would
+assert the auditor saw current content, which is exactly what the
+missing pin makes unknowable, and would erase the 44 measured drifts.
+
+### 2. NO-GO RETENTION — neither structural nor backlog. The verdicts
+are MADE, then DESTROYED. (PR #5607)
+
+439 no_go rows, **0 `retained_no_go`** — but
+`compute_effective_status.py:41` maps `no_go -> retained_no_go` and
+**the promotion rule works**. 53 audit commits landed `audited_clean`
+on currently-no_go rows in 14 days, in cross-confirmed pairs. All
+read `unaudited` today.
+
+**187 archived clean no_go verdicts were reset by a
+`no_go_discipline_packet_*` reason. Median lifetime 35 days; 27 under
+a day; shortest 32 MINUTES.**
+`spatial_cubic_time_anisotropy_gate_no_go` (critical, in-degree 12,
+741 descendants) has been minted clean **four times** — once by a
+five-judge judicial panel — and reads `unaudited`.
+
+Three mechanisms, each traced to a line:
+1. **No dispatch selector will ever feed a no_go row.**
+   `AUDITABLE_TYPES = {positive_theorem, bounded_theorem, open_gate}`.
+   The batch drainer produced ~1100 of 1108 verdicts in 14 days and
+   **can never produce a no-go one**; only a canary remains, ONE row
+   per loop pass against 140 ready rows.
+2. A development-tier verdict on a no_go row is **auto-reset** —
+   162 instances, including the judicial-panel verdict.
+3. A verdict WITH a packet is authenticated **against a moving
+   target**: the required field set grew with the tag unchanged, so
+   **zero shards contain `verified_values`** and replaying all 30
+   archived clean forensic packets returns malformed **30/30**. And
+   invalidation compared authority status by EQUALITY, so a
+   dependency STRENGTHENING (`meta -> retained`) invalidated the
+   citing no-go verdict. **Draining the backlog was deleting the
+   foreclosures that cited it.**
+
+**Consequence:** the ten most-cited foreclosures are all `critical`
+and all `unaudited`, and because the resets STRIP `claim_scope`,
+**the live ledger no longer records what any of them forecloses** —
+scopes had to be recovered from `previous_audits`. One row with
+in-degree 29 and 726 descendants has no recorded scope at all.
+
+Repair (0 churn): rank-decrease-only forensic invalidation matching
+the dev tier; a shared writer/reader contract for the evidence
+snapshot plus the test that would have caught the breaking change;
+and repair of the 4 `NoGoDisciplineGateTest` N7 cases, which were
+patching `REPO_ROOT` to a bare tempdir and **asserting the FAILURE
+path of the very mechanism a forensic no-go packet depends on**.
+
+**COLLISION WARNING:** those 4 tests overlap with the separately
+started owner task on the 7 pre-existing audit-gate test failures.

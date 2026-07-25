@@ -195,3 +195,82 @@ gated, and new.
 
 **RUN THE `/exercise` WALL EXERCISE BEFORE WAVE 2** — campaign rule 6
 is now triggered: a route dead-ended.
+
+---
+
+## WALL EXERCISE (2026-07-24, 6 sectors) — ranked portfolio
+
+The exercise KILLED the planned Wave 2. My intended move — "derive
+g_0/g_1 from the action's kinetic normalization" — was shown to be a
+**convention-laundering false positive**: it would re-derive an
+algebraic identity and read r = 1/2 off it only by silently adopting
+a counting convention (s = 0). A mu-rescaling falsifier was supplied.
+Running the exercise before Wave 2 was correct and I would have
+shipped a false positive otherwise.
+
+**Ranked attack vectors out of the exercise:**
+
+1. **(Ex1) The associativity/Frobenius test the landed no-go never
+   ran.** That no-go tested only positive-definiteness, Ad-invariance,
+   and scalar/traceless orthogonality. It never imposed
+   <uv, t> = <v, u^dag t>. Imposing it leaves the residual
+   (2 g_0 - g_1)(...), so the unique associative ray is the HS/trace
+   form and **g_0/g_1 = 1/2 is forced** — the cone collapses to a
+   point. 26/26 gates, two implementations. If it holds, this is a
+   NEW positive result and a correction to a landed no-go's framing.
+2. **(Ex2) The factorization r = (g_0/g_1)(w_1/w_0), only the product
+   physical.** Commutant theorem: Gamma = diag(lambda, mu, mu) sweeps
+   r transitively over (0, infinity) while fixing the module, so NO
+   invariant of any kind can select r — a selector must be a MEASURE
+   WITH ATOMS. This generalizes the Wave 1 FS result to every finite
+   group and every module invariant, in one line.
+3. **(Ex3) Positivity forbids one side.** From the landed heat-trace
+   identity, r(t) = (S + 2F)/(S - F) with F a strict sub-sum of S,
+   so **r > 1 strictly** for all t > 0, N > 1. r = 1/2 is unreachable
+   by any positive C_3-covariant spectral weight. Breach condition is
+   a NUMBER: r = 1/2 iff F/S = -1/5, which requires a GRADED operator
+   (negative contributions), turning the repo's open "a grading, not
+   a complex structure" handle into a pass/fail target.
+4. **(Ex2) Possible campaign-ender**: the registered
+   realized_state_primitive's State-Contingency Register item 4 is
+   reported to say dial settings (r = 0, 1/2, 1) are "sector data,
+   never forced" — which would contradict the closure obligation
+   itself. Must be adjudicated before any further construction.
+5. **(Ex1/Ex2) Status hygiene**: the entire foreclosure scaffolding
+   for this lane is `unaudited` on the live ledger while several
+   notes call it "retained". Do not lean on any prose status.
+
+Also flagged: the binary framing may be an **N = 3 artifact** — Z_2
+has the freedom with no fork (the horns coincide) and Z_N>=4
+dissolves it into >= 2 parameters, so only Z_3 makes it look like one
+bit. Integrality is an undischarged hidden premise, and a third value
+r = 2 is reachable.
+
+## WAVE 2 (running) — supervisor prediction, recorded BEFORE results
+
+Dispatched: steelman Ex1, steelman Ex2, adjudicate the primitive
+register, verify the breach number.
+
+**My prediction: the "tension" is not a contradiction — Ex1 and Ex2
+will turn out COMPATIBLE, and both halves are right.** Ex1 gives
+r = 2^s (g_0/g_1); with g_0/g_1 = 1/2 forced by associativity,
+r = 2^(s-1), so s = 0 gives r = 1/2 and s = 1 gives r = 1. Ex2's
+"free mode-count factor w_1/w_0" is, I predict, THE SAME OBJECT as
+Ex1's 2^s. If so, the campaign's honest outcome is a **partial
+closure**: the METRIC half of the counting bit is genuinely forced
+(new result; corrects the landed no-go by supplying the test it never
+ran), and the COUNTING half survives as the real residual —
+form-equipartition vs state-equipartition, which is the original
+count-once/count-twice bit relocated but NOT closed.
+
+If that is what comes back, the deliverable is a narrow note carrying
+(i) the associativity forcing of the metric ratio, (ii) the
+commutant theorem that no invariant can ever select r, and (iii) the
+positivity half-cone with the F/S = -1/5 breach target. All three are
+gated results and (ii)+(iii) are sharp negatives.
+
+**Risk I am holding:** Ex1's associativity requirement may be an
+IMPORT rather than a framework consequence. If the Record readout
+does not actually induce an associative form on that algebra, Ex1
+demotes from theorem to conditional and the "forcing" evaporates.
+The defend-ex1 agent is instructed to attack exactly that.

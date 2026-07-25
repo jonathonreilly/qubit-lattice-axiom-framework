@@ -81,7 +81,7 @@
   "cycles_detected": 58,
   "effective_status_counts": {
     "audit_in_progress": 2,
-    "audited_conditional": 179,
+    "audited_conditional": 180,
     "audited_failed": 43,
     "audited_numerical_match": 9,
     "audited_renaming": 27,
@@ -107,7 +107,7 @@
     "retained": 106,
     "retained_bounded": 331,
     "retained_pending_chain": 6,
-    "unaudited": 2786
+    "unaudited": 2785
   },
   "retained_pending_chain_count": 6,
   "retained_pending_chain_examples": [

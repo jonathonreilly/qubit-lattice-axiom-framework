@@ -96,7 +96,7 @@ These dispatch targets have been re-audited after their manifest's `generated_da
 | 40 | invalid_missing_claim_id | `hubble_lane5_c1_a5_minimal_carrier_axiom_audit_note_2026-04-28` | None / None / None |
 | 41 | invalid_missing_claim_id | `hubble_lane5_c1_stuck_fanout_synthesis_note_2026-04-28` | None / None / None |
 | 42 | resolved_or_superseded | `hermitian_lift_theta_h_pk_bounded_narrow_theorem_note_2026-05-17` | decoration / audited_decoration / decoration_under_cpt_exact_note |
-| 43 | resolved_or_superseded | `linear_response_second_order_kubo_note` | bounded_theorem / unaudited / unaudited |
+| 43 | resolved_or_superseded | `linear_response_second_order_kubo_note` | bounded_theorem / audited_failed / audited_failed |
 | 44 | resolved_or_superseded | `observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21` | no_go / unaudited / unaudited |
 | 45 | resolved_or_superseded | `observable_principle_p1_bridge_jones_index_subfactor_narrow_note_2026-05-21` | no_go / unaudited / unaudited |
 | 46 | resolved_or_superseded | `observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21` | no_go / unaudited / unaudited |

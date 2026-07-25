@@ -1,24 +1,79 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T08:01:16.851807+00:00",
+  "audit_invocation_history": [
+    "5a9413df8529401caa8f85efa0b9f091"
+  ],
+  "audit_invocation_id": "5a9413df8529401caa8f85efa0b9f091",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 7,
+        "B": 3,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true,
+      "runner_path": "scripts/koide_convention_invariant_scalar_selector_doublet_constancy_2026_07_12.py"
+    },
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {
+      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    },
+    "dep_claim_scope": {
+      "minimal_axioms": null
+    },
+    "dep_claim_type": {
+      "minimal_axioms": "meta"
+    },
+    "dep_effective_status": {
+      "minimal_axioms": "meta"
+    },
+    "deps": [
+      "minimal_axioms"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 6.892,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/koide_convention_invariant_scalar_selector_doublet_constancy_2026_07_12.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "5e8afefedf6b2440e48c5558e913550c9dfe29e6d38f53a9c6e7510d5534f7ce",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "5e8afefedf6b2440e48c5558e913550c9dfe29e6d38f53a9c6e7510d5534f7ce",
+    "runner_path": "scripts/koide_convention_invariant_scalar_selector_doublet_constancy_2026_07_12.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 41
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-e6a88d5a",
+  "auditor_confidence": "medium",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The exact finite algebra closes after imposing f(tau(x))=f(x), but the packet does not prove that every selector derived without an orientation choice must satisfy that invariance condition.",
   "claim_id": "koide_convention_invariant_scalar_selector_doublet_constancy_narrow_theorem_note_2026-07-12",
-  "claim_scope": null,
+  "claim_scope": "Whether the named Qubit/M_2(C) structure forces every orientation-free fixed-label scalar selector on the supplied abstract C_3 sectors to be tau-invariant and therefore doublet-constant.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T08:01:16.851807+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,32 +81,35 @@
     "minimal_axioms"
   ],
   "direct_in_degree": 3,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 6.892,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "A selector derived without an orientation choice must satisfy f(tau(x))=f(x), and therefore has equal values on the two conjugate doublet sectors.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "derived_no_go_boundary"
+  ],
   "note_hash": "e527e0c8372e6ed2b7b4e6b31cd8fb13f1608d48aab0abad8087e6ecc7ba31c4",
   "note_path": "docs/KOIDE_CONVENTION_INVARIANT_SCALAR_SELECTOR_DOUBLET_CONSTANCY_NARROW_THEOREM_NOTE_2026-07-12.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "scope_too_broad: prove a formal selector-language or naturality lemma showing that derivability from the named structure forces tau-invariance, or restrict the theorem to selectors explicitly assumed tau-invariant.",
   "open_dependency_paths": [],
   "previous_audits": [],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
+    "A": 32,
+    "B": 8,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 40
   },
   "runner_path": "scripts/koide_convention_invariant_scalar_selector_doublet_constancy_2026_07_12.py",
   "title": "Koide Convention-Invariant Scalar-Selector Doublet Constancy (Narrow Theorem)",
   "transitive_descendants": 41,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: the runner verifies the Clifford and C_3 algebra and exhaustively classifies selectors already satisfying swap invariance, but it does not derive the implication from \u201corientation-free derivability\u201d to f\u2218tau=f. Why this blocks: the two-model witness establishes an orientation ambiguity in the underlying real presentation, not a formal naturality theorem governing every admissible selector. Repair target: specify the selector language and prove its constructions commute with the conjugation automorphism. Claim boundary until fixed: conditional on f\u2218tau=f, doublet constancy and the two-block finest fixed-label fiber partition are exact; N1/N7 leave the naturality route unresolved, N2 finds that single obstruction, N3 finds no additional hidden premise, N4 has no prior-witness residual, N5 finds no stronger resolution-complete no-go, N6 supplies no registered closure, and N8 supplies no applicable retirement echo."
 }

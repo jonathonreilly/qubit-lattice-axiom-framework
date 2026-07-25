@@ -66,10 +66,10 @@ DEPENDENCY_SHA256 = {
     "physical_enlarged_link_contact_work_tournament_cycle569_2026_07_22.py":
         "c0f06a9cc9ffc4dcfe1d80b94da10bbef81ca1c74fddddac48712b0a7c332ced",
     "physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_2026_07_22.py":
-        "73ab0364fc5b8ddd9c708a3bd8910b660d36cb0d53aad388f42e2b09b970a7ac",
+        "4ef60441d31d62b1fc61c9b5e09ff3bc8f7f32d1b68bc3c548834431d24302f6",
 }
-CYCLE578_RECEIPT_SHA256 = "8546eb8d8097260d975358ec59ebb4e84681779bd1c1f98b9bc6b996bbccdd53"
-CYCLE578_NOTE_SHA256 = "2f04343e82925524accea75ce54af2c30b934da2343fa0d03f3c5da7fd9778d8"
+CYCLE578_RECEIPT_SHA256 = "7d745296b8ced52bf26b96fb13fe52024715846b6b491e6c6c6ba32aa2908ee2"
+CYCLE578_NOTE_SHA256 = "a66126cf39bf6020680da5654bcbc85b11107e1f7d955f0ff5449098a0aa5dfc"
 
 
 def check(label: str, condition: bool, detail: object = "") -> None:

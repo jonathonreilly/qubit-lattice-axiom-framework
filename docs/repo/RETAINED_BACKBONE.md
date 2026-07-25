@@ -16,12 +16,12 @@ file per claim), summarized in
 
 | Metric | Value |
 |---|---:|
-| Retained positive rows | 110 |
+| Retained positive rows | 111 |
 | Retained bounded rows | 336 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 26 |
 
-## Retained positive rows (110)
+## Retained positive rows (111)
 
 Sorted by load-bearing graph score (descending).
 
@@ -127,6 +127,7 @@ Sorted by load-bearing graph score (descending).
 - [`fm_transfer_note`](../../docs/FM_TRANSFER_NOTE.md) — score 0.000; audited 2026-04-27
 - [`gravitational_entanglement_note`](../../docs/GRAVITATIONAL_ENTANGLEMENT_NOTE.md) — score 0.000; audited 2026-04-30T19:29:34.224702+00:00
 - [`half_plane_chart_equivalence_narrow_theorem_note_2026-05-02`](../../docs/HALF_PLANE_CHART_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-02.md) — score 0.000; audited 2026-07-25T13:57:30.234389+00:00
+- [`massless_vector_null_quotient_exact_linear_algebra_theorem_note_2026-06-03`](../../docs/MASSLESS_VECTOR_NULL_QUOTIENT_EXACT_LINEAR_ALGEBRA_THEOREM_NOTE_2026-06-03.md) — score 0.000; audited 2026-07-25T16:18:43.975739+00:00
 - [`multipole_tidal_response_note`](../../docs/MULTIPOLE_TIDAL_RESPONSE_NOTE.md) — score 0.000; audited 2026-04-27
 - [`nspt_high_order_lattice_alpha_n_coefficient_external_narrow_theorem_note_2026-05-16`](../../docs/NSPT_HIGH_ORDER_LATTICE_ALPHA_N_COEFFICIENT_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md) — score 0.000; audited 2026-05-25T12:24:46.569344+00:00
 - [`post_record_source_measure_trace_normalization_prototype_2026-06-06`](../../docs/POST_RECORD_SOURCE_MEASURE_TRACE_NORMALIZATION_PROTOTYPE_2026-06-06.md) — score 0.000; audited 2026-07-25T10:49:12.912357+00:00

@@ -30,9 +30,11 @@ the actual 1536 elements of rho(H) -- never from a comparison target.  Each comp
 identity gate carries a discriminating rejector or contrast (e.g. the rho(H)-only stall at
 288 strictly below the D2-completed 576; the four unfused modules central versus P_{12+}
 non-central; the even-word rank 4 strictly below the full-word rank 8).  Rank claims carry
-SV-gap certificates.  "CP" and "chiral" are geometric labels for S_eps and the two
-chi_sgn-graded halves of the real-12 only, never a statement about Standard-Model CP or
-chirality.
+SV-gap certificates.  Unless ||.||_2 or a singular value is named explicitly, every matrix
+norm printed below is the entrywise maximum norm ||X||_max = max_ij |X_ij|.  "CP" and
+"chiral" are geometric labels for S_eps and the two chi_sgn-graded halves of the real-12
+only, never a statement about Standard-Model CP or chirality; algebra membership supplies
+no measurement/readout, physical-conservation, or superselection bridge.
 """
 import itertools
 import os
@@ -385,6 +387,8 @@ Hc = [h.astype(complex) for h in Hgrp]
 gens_H_float = [g.astype(float) for g in gens_H]
 
 # ================================= gates =====================================================
+print("[INFO] matrix norm convention: ||X|| means ||X||_max = max_ij |X_ij| unless ||.||_2/SV is named")
+
 # G01 -- J_full is a complex structure J^2 = -I
 _v01 = nrm(Jf @ Jf + I64)
 gate("G01", _v01 <= 1e-12, f"||Jfull^2 + I|| {bnd(_v01)}")
@@ -442,7 +446,7 @@ _mshell_ok = all(abs(mshellQ[i] - t) < 1e-9 for i, t in enumerate([0, -12, -8, -
 gate("G07", _idem07 <= 1e-12 and _orth07 <= 1e-12 and _sum07 <= 1e-12 and _ranks_ok and _mshell_ok
      and _fused_eq <= 1e-12 and _p12_nc07 > 0.1,
      f"ranks={ranksQ}  mshells={[round(v, 3) for v in mshellQ]}  ||Q24 - P_shell(-4)|| {bnd(_fused_eq)}  "
-     f"||[D2,P12+]||={_p12_nc07:.3g} (>0.1, fusion required)")
+     f"||[D2,P12+]||_max={_p12_nc07:.3g} (>0.1, fusion required)")
 
 # G08 -- block preservation: D2 and J_full commute with every module projector Q_i
 _d08 = max(nrm(D2r @ P - P @ D2r) for P in Qmods)
@@ -467,14 +471,13 @@ for tag_i, Zc in unfused:
 gate("G09", g09_ok and g09_ranks == [64, 64, 144, 144], "  ".join(g09_msg))
 
 # G10 -- the fused 24-block: rho(H) alone stalls at 288 = 12^2+12^2 (block-diagonal in the two
-#        H-constituents); adjoining D2 (and J_full) the closure fills to 576 = 24^2 in <=6 rounds.
+#        H-constituents); adjoining D2 alone fills the closure to 576 = 24^2 in <=6 rounds.
 Z24 = np.hstack([Zs[i_plus], Zs[i_minus]])   # 64 x 24
 _ortho24 = nrm(Z24.conj().T @ Z24 - np.eye(24))
 rows24 = np.array([(Z24.conj().T @ (h @ Z24)).ravel() for h in Hf])   # 1536 x 576
 r288, sk288, sd288, smax288 = rank_svgap(rows24)
 D24 = Z24.conj().T @ D2r @ Z24
-J24 = Z24.conj().T @ Jf @ Z24
-gens24 = [D24, J24] + [Z24.conj().T @ (g @ Z24) for g in gens_H_float]
+gens24 = [D24] + [Z24.conj().T @ (g @ Z24) for g in gens_H_float]
 Bcl = orth_rows(rows24)
 dimcl = Bcl.shape[0]
 rounds = 0
@@ -595,12 +598,17 @@ P12p = Ps[i_plus]
 _bd18 = max(nrm(P12p @ P - P @ P12p) for P in Qmods)
 _tr18 = int(round(np.trace(P12p).real))
 _id18 = nrm(P12p @ P12p - P12p)
-_nc18 = nrm(D2r @ P12p - P12p @ D2r)
+_comm18 = D2r @ P12p - P12p @ D2r
+_nc18 = nrm(_comm18)
+_op18 = float(np.linalg.norm(_comm18, 2))
 _unf = [Ps[a8], Ps[b8], Ps[i_ind12[0]], Ps[i_ind12[1]]]
 _central18 = max(max(nrm(D2r @ P - P @ D2r), nrm(Jf @ P - P @ Jf)) for P in _unf)
-gate("G18", _bd18 <= 1e-12 and _tr18 == 12 and _id18 <= 1e-12 and 0.3 <= _nc18 <= 0.4 and _central18 <= 1e-12,
+gate("G18", _bd18 <= 1e-12 and _tr18 == 12 and _id18 <= 1e-12
+     and abs(_nc18 - 1.0 / (2.0 * np.sqrt(2.0))) <= 1e-12 and abs(_op18 - 2.0) <= 1e-12
+     and _central18 <= 1e-12,
      f"max_i||[P12+,Qi]|| {bnd(_bd18)}  trace={_tr18}  idem {bnd(_id18)}  "
-     f"||[D2,P12+]||={_nc18:.3g} (non-central)  unfused Q_i central {bnd(_central18)}")
+     f"||[D2,P12+]||_max={_nc18:.3g}  ||[D2,P12+]||_2={_op18:.3g} (non-central)  "
+     f"unfused Q_i central {bnd(_central18)}")
 
 # G19 -- End_H subset A: all six constituent projectors are block-diagonal on the five modules.
 _bd19 = max(max(nrm(Ps[k] @ P - P @ Ps[k]) for P in Qmods) for k in range(n))
@@ -614,7 +622,7 @@ preserve = [
     "992 = 8^2 + 8^2 + 12^2 + 12^2 + 24^2",
     "stalls at 288 = 12^2 + 12^2 without D2 and fills to 576 = 24^2",
     "[4, 4, 4, 4, 12, 12, 12, 12]",
-    "an algebra observable, not a central charge",
+    "an algebra element, not a central idempotent",
     "dims 4 ⊊ 7 ⊊ 8 ⊊ 992",
 ]
 for i, s in enumerate(preserve, 1):

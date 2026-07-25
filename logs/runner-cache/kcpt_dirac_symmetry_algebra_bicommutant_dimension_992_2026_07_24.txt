@@ -1,21 +1,22 @@
 ===== runner cache v1 =====
 runner: scripts/kcpt_dirac_symmetry_algebra_bicommutant_dimension_992_2026_07_24.py
-runner_sha256: 4f8375f55e8453f635c821679f0d62b8abf1f7edd4a9e7556a135fe540439a8e
+runner_sha256: a7f9b900b5120836aa44ad87e05432b7b1c4c1f6cda095fe0d86d9260976fe72
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 24.52
+elapsed_sec: 22.55
 status: ok
 ----- stdout -----
+[INFO] matrix norm convention: ||X|| means ||X||_max = max_ij |X_ij| unless ||.||_2/SV is named
 [PASS] G01: ||Jfull^2 + I|| <= 1.0e-12
 [PASS] G02: ||M-D2@D2|| <= 1.0e-12  ||[D2,M]|| <= 1.0e-12  ||[Jfull,M]|| <= 1.0e-12
 [PASS] G03: ||[D2,Jfull]|| <= 1.0e-12
 [PASS] G04: |G_amb|=768  |H|=1536  |coset|=768  index-2 disjoint-union=True
 [PASS] G05: ||Gram-I|| <= 1.0e-12  dim_End_H=6
 [PASS] G06: max||P^2-P|| <= 1.0e-12  max||PiPj|| <= 1.0e-12  ||sumP-I|| <= 1.0e-12  dims=[8, 8, 12, 12, 12, 12]
-[PASS] G07: ranks=[8, 8, 12, 12, 24]  mshells=[-0.0, -12.0, -8.0, -8.0, -4.0]  ||Q24 - P_shell(-4)|| <= 1.0e-12  ||[D2,P12+]||=0.354 (>0.1, fusion required)
+[PASS] G07: ranks=[8, 8, 12, 12, 24]  mshells=[-0.0, -12.0, -8.0, -8.0, -4.0]  ||Q24 - P_shell(-4)|| <= 1.0e-12  ||[D2,P12+]||_max=0.354 (>0.1, fusion required)
 [PASS] G08: max_i||[D2,Qi]|| <= 1.0e-12  max_i||[Jfull,Qi]|| <= 1.0e-12
 [PASS] G09: V8a:rank=64(d^2=64,smin_kept=13.9,sdrop <= 1.0e-12)  V8b:rank=64(d^2=64,smin_kept=13.9,sdrop <= 1.0e-12)  V12a:rank=144(d^2=144,smin_kept=11.3,sdrop <= 1.0e-12)  V12b:rank=144(d^2=144,smin_kept=11.3,sdrop <= 1.0e-12)
-[PASS] G10: rank(rho(H)|24)=288(=12^2+12^2, smin=11.3, sdrop <= 1.0e-12)  closure<rho(H),D2>|24 ->576(=24^2) in 2 rounds (smin=3.32, sdrop <= 1.0e-12)
+[PASS] G10: rank(rho(H)|24)=288(=12^2+12^2, smin=11.3, sdrop <= 1.0e-12)  closure<rho(H),D2>|24 ->576(=24^2) in 2 rounds (smin=3.16, sdrop <= 1.0e-12)
 [PASS] G11: dim A = 64+64+144+144+576 = 992 = 8^2+8^2+12^2+12^2+24^2  (block-preservation cap 992 < 4096)
 [PASS] G12: ||D2^T+D2|| <= 1.0e-12  ||Jfull^T+Jfull|| <= 1.0e-12  max_h||h^T h - I|| <= 1.0e-12  => A = A''
 [PASS] G13: nonzero_sv=15.49  rank=1  dim_A'=5  max_dropped_sv <= 1.0e-09
@@ -23,16 +24,15 @@ status: ok
 [PASS] G15: max_m||Jfull.Pm - D2.Pm/(2√m)|| <= 1.0e-12  wrong-norm(m=2, using /2)=0.0732 (>1e-6, ~1e10x the locked residual: the √m factor is load-bearing)  kernel split +i:4 -i:4
 [PASS] G16: joint dims sorted=[4, 4, 4, 4, 12, 12, 12, 12]  #classes=8  M-shells=4  maxres_M <= 1.0e-09  maxres_J <= 1.0e-09
 [PASS] G17: full words rank=8(=8, sdrop 2.34e-12)  even words rank=4(=4=C[M], sdrop <= 1.0e-12)  4 != 8
-[PASS] G18: max_i||[P12+,Qi]|| <= 1.0e-12  trace=12  idem <= 1.0e-12  ||[D2,P12+]||=0.354 (non-central)  unfused Q_i central <= 1.0e-12
+[PASS] G18: max_i||[P12+,Qi]|| <= 1.0e-12  trace=12  idem <= 1.0e-12  ||[D2,P12+]||_max=0.354  ||[D2,P12+]||_2=2 (non-central)  unfused Q_i central <= 1.0e-12
 [PASS] G19: max over 6 constituents x 5 modules ||[P_k,Qi]|| <= 1.0e-12  (End_H block-diagonal => End_H subset A)
 [PASS] G-PIN-1: note contains preserve string #1: '64 + 64 + 144 + 144 + 576 = 992'
 [PASS] G-PIN-2: note contains preserve string #2: '992 = 8^2 + 8^2 + 12^2 + 12^2 + 24^2'
 [PASS] G-PIN-3: note contains preserve string #3: 'stalls at 288 = 12^2 + 12^2 without D2 and fills to 576 = 24^2'
 [PASS] G-PIN-4: note contains preserve string #4: '[4, 4, 4, 4, 12, 12, 12, 12]'
-[PASS] G-PIN-5: note contains preserve string #5: 'an algebra observable, not a central charge'
+[PASS] G-PIN-5: note contains preserve string #5: 'an algebra element, not a central idempotent'
 [PASS] G-PIN-6: note contains preserve string #6: 'dims 4 ⊊ 7 ⊊ 8 ⊊ 992'
 [PASS] G-PIN-LINKS: dependency links=['KCPT_DIRAC_EVEN_ALGEBRA_REACH_CHARACTER_CP_CHARGE_BOUNDED_THEOREM_NOTE_2026-07-21.md', 'KCPT_DIRAC_SYMMETRY_FIVE_MODULE_SELECTIVE_CP_FUSION_BOUNDED_THEOREM_NOTE_2026-07-21.md']
 TOTAL: PASS=26 FAIL=0
 
 ----- stderr -----
-

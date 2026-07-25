@@ -14,11 +14,31 @@ that statement:
 
 from __future__ import annotations
 
+import json
+from pathlib import Path
+
 import sympy as sp
 
 
 PASS = 0
 FAIL = 0
+
+REPO_ROOT = Path(__file__).resolve().parents[1]
+
+NOTE_REL = "docs/RECORD_FUNCTION_FINITE_SECTOR_ALGEBRA_2026-06-05.md"
+
+# Direct retained authorities for the generation specialization: the
+# C3-equivariant spectrum (A) and the Fourier-coordinate / Koide identity (B).
+AUTHORITY_A = "KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md"
+AUTHORITY_B = "CHARGED_LEPTON_REGISTERED_MASS_DFT_COORDINATE_THEOREM_NOTE_2026-07-11.md"
+AUTHORITIES = (AUTHORITY_A, AUTHORITY_B)
+
+RETAINED_GRADE = {"retained", "retained_bounded", "retained_no_go"}
+
+
+def ledger_shard(note_basename: str) -> Path:
+    rid = note_basename[:-3].lower()
+    return REPO_ROOT / "docs/audit/data/ledger" / rid[:2] / f"{rid}.json"
 
 
 def check(name: str, cond: bool, detail: str = "") -> bool:
@@ -206,6 +226,100 @@ def main() -> int:
     check("R5.2 finite additivity imposes no autonomous update law on the readout vector",
           dynamic_update.free_symbols == {u, d},
           "the vector is unchanged until an external dynamics map is supplied")
+
+    # -------------------------------------------------------------------------
+    # 6. The generation two-block power assignment and the C3/K-real readout
+    # form are not supplied here: they are the isotypic split and the Fourier
+    # coordinate identity carried by two directly cited retained authorities.
+    # This section re-derives both exactly and rejects the wrong split.
+    # -------------------------------------------------------------------------
+    a_s = sp.Symbol("a_s", real=True, nonzero=True)
+    xs, ys = sp.symbols("x_s y_s", real=True)
+    Rs = sp.Symbol("R_s", nonnegative=True)
+    ts = sp.Symbol("t_s", real=True)
+    om = sp.Rational(-1, 2) + sp.sqrt(3) * sp.I / 2
+    check("R6.0 omega is the exact primitive cube root exp(2 pi i/3)",
+          sp.simplify(om - sp.expand_complex(sp.exp(2 * sp.pi * sp.I / 3))) == 0
+          and sp.simplify(om ** 3 - 1) == 0 and sp.simplify(1 + om + om ** 2) == 0)
+
+    check("R6.1 both cited authority notes exist at their exact docs/ paths",
+          all((REPO_ROOT / "docs" / name).is_file() for name in AUTHORITIES))
+
+    note_text = (REPO_ROOT / NOTE_REL).read_text(encoding="utf-8")
+    check("R6.2 this note carries a markdown link to each authority",
+          all(f"]({name})" in note_text for name in AUTHORITIES),
+          "link targets, not backticks, are what create the ledger edge")
+
+    grades = {}
+    for name in AUTHORITIES:
+        shard = ledger_shard(name)
+        grades[name] = (json.loads(shard.read_text(encoding="utf-8")).get("effective_status")
+                        if shard.is_file() else None)
+    check("R6.3 each authority's sharded ledger row is retained-grade",
+          all(g in RETAINED_GRADE for g in grades.values()),
+          f"read from shards: {sorted(grades.values(), key=str)}")
+
+    # Authority A's spectrum, built from its own definition -- nothing here is
+    # computed from the target it is compared against.
+    b_s = xs + sp.I * ys
+    lam = [sp.simplify(sp.expand(sp.expand_complex(
+        a_s + b_s * om ** j + sp.conjugate(b_s) * om ** (-j)))) for j in range(3)]
+    mod_b_sq = xs ** 2 + ys ** 2
+
+    check("R6.4 every lambda_k is real for a real, b complex",
+          all(sp.simplify(sp.im(lam_j)) == 0 for lam_j in lam),
+          f"lambda={lam}")
+
+    b_pol = Rs * sp.cos(ts) + sp.I * Rs * sp.sin(ts)
+    lam_pol = [sp.expand_complex(sp.expand(
+        a_s + b_pol * om ** j + sp.conjugate(b_pol) * om ** (-j))) for j in range(3)]
+    check("R6.5 lambda_k = a + 2|b| cos(theta + 2 pi k/3) with |b|=R, theta=arg(b)",
+          all(sp.simplify(sp.expand_trig(sp.expand(
+              lam_pol[j] - (a_s + 2 * Rs * sp.cos(ts + 2 * sp.pi * j / 3))))) == 0
+              for j in range(3))
+          and all(sp.simplify(sp.expand_trig(sp.expand(
+              lam[j].subs({xs: Rs * sp.cos(ts), ys: Rs * sp.sin(ts)}) - lam_pol[j]))) == 0
+              for j in range(3)))
+
+    chars = [sp.Matrix([om ** (j * n) for n in range(3)]) / sp.sqrt(3) for j in range(3)]
+    gram = sp.simplify(sp.Matrix(3, 3, lambda i, j: (chars[i].conjugate().T * chars[j])[0]))
+    lam_vec = sp.Matrix(lam)
+    powers = [sp.simplify(sp.expand(sp.expand_complex(
+        (chars[j].conjugate().T * lam_vec)[0] * sp.conjugate((chars[j].conjugate().T * lam_vec)[0]))))
+        for j in range(3)]
+    check("R6.6 characters are orthonormal and the isotypic split is 3a^2 : 6|b|^2",
+          gram == sp.eye(3)
+          and sp.simplify(powers[0] - 3 * a_s ** 2) == 0
+          and sp.simplify(powers[1] + powers[2] - 6 * mod_b_sq) == 0,
+          f"singlet={powers[0]}; doublet={sp.simplify(powers[1] + powers[2])}")
+
+    S1 = sp.simplify(sum(lam))
+    S2 = sp.simplify(sp.expand(sum(lam_j ** 2 for lam_j in lam)))
+    check("R6.7 power sums are sum lambda_k = 3a and sum lambda_k^2 = 3a^2 + 6|b|^2",
+          sp.simplify(S1 - 3 * a_s) == 0
+          and sp.simplify(S2 - (3 * a_s ** 2 + 6 * mod_b_sq)) == 0
+          and sp.simplify(S2 - sum(powers)) == 0)
+
+    singlet_power = a_s ** 2
+    doublet_power = 2 * mod_b_sq
+    check("R6.8 sum lambda_k^2 = 3 (singlet + doublet) for singlet=a^2, doublet=2|b|^2",
+          sp.simplify(S2 - 3 * (singlet_power + doublet_power)) == 0,
+          "the note's displayed sector powers are the isotypic split, not a posit")
+
+    r_iso = mod_b_sq / a_s ** 2
+    q_iso = sp.simplify(S2 / S1 ** 2)
+    check("R6.9 Q = (sum lambda_k^2)/(sum lambda_k)^2 = 1/3 + (2/3)r exactly",
+          sp.simplify(q_iso - (sp.Rational(1, 3) + sp.Rational(2, 3) * r_iso)) == 0,
+          f"Q={q_iso}")
+
+    # Discriminating rejector: drop the factor 2 in the doublet power and the
+    # power-sum identity must FAIL. The check passes only on rejection.
+    wrong_doublet = mod_b_sq
+    wrong_residual = sp.simplify(S2 - 3 * (singlet_power + wrong_doublet))
+    wrong_q = sp.simplify(q_iso - (sp.Rational(1, 3) + sp.Rational(2, 3) * r_iso / 2))
+    check("R6.10 REJECTOR: doublet=|b|^2 fails the power-sum and Q identities",
+          wrong_residual != 0 and wrong_q != 0,
+          f"residual={wrong_residual} (nonzero => gate discriminates)")
 
     print(f"\nSCORECARD PASS={PASS} FAIL={FAIL}")
     print("FINDING: Record supplies finite additive readout-vector algebra;")

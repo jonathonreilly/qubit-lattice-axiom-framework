@@ -25,7 +25,7 @@
         },
         {
           "claim_id": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
-          "effective_status": "audit_in_progress"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15",
@@ -157,7 +157,7 @@
         },
         {
           "claim_id": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
-          "effective_status": "audit_in_progress"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
@@ -489,7 +489,7 @@
         },
         {
           "claim_id": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
-          "effective_status": "audit_in_progress"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",

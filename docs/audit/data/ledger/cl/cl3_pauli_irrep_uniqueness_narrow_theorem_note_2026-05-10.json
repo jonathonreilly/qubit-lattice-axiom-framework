@@ -1,10 +1,11 @@
 {
-  "audit_date": "2026-07-25T19:03:02.523174+00:00",
+  "audit_date": "2026-07-25T19:12:24.015353+00:00",
   "audit_invocation_history": [
     "3f616c6d19b84b36b697e890ab4532fc",
-    "b76ad75574cf4fb99efa5ac4ae666a80"
+    "b76ad75574cf4fb99efa5ac4ae666a80",
+    "f5d9778a12204586a4c09c81d00c8955"
   ],
-  "audit_invocation_id": "b76ad75574cf4fb99efa5ac4ae666a80",
+  "audit_invocation_id": "f5d9778a12204586a4c09c81d00c8955",
   "audit_state_snapshot": {
     "artifact_classifier_state": {
       "assert_count": 1,
@@ -58,24 +59,25 @@
     "schema": "blocker_fingerprint_v1",
     "transitive_descendants": 1768
   },
-  "audit_status": "audit_in_progress",
-  "auditor": "codex-audit-batch-A-20260725-89a87f98",
-  "auditor_confidence": "high",
+  "audit_status": "audited_conditional",
+  "auditor": "codex-judicial-1-20260725-0d1a7d09",
+  "auditor_confidence": "judicial",
   "auditor_family": "codex-gpt-5.6",
   "auditor_model": "gpt-5.6-sol",
   "auditor_reasoning_effort": "xhigh",
-  "blocker": "cross_confirmation_disagreement",
+  "blocker": null,
   "chain_closes": false,
-  "chain_closure_explanation": "The restricted packet clips both the primary runner stdout and a load-bearing span of its source, so the complete multiplication, center, ideal, and module-classification certificate cannot be independently matched to executable checks.",
+  "chain_closure_explanation": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The packet contains a self-contained algebraic route and reports 51 exact class-(A) passes, but it clips load-bearing portions of both primary-runner source and stdout. That prevents audited_clean verification while supporting the second auditor\u2019s artifact-based audited_conditional verdict; the explicit faithfulness and unitary-equivalence limitations remain derived_no_go_boundary assertions.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260725-0d1a7d09\", \"judge\": 1, \"rationale\": \"The packet contains a self-contained algebraic route and reports 51 exact class-(A) passes, but it clips load-bearing portions of both primary-runner source and stdout. That prevents audited_clean verification while supporting the second auditor\\u2019s artifact-based audited_conditional verdict; the explicit faithfulness and unitary-equivalence limitations remain derived_no_go_boundary assertions.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"The direct-sum decomposition of complexified Cl(3,0), its two dimension-two irreducible complex modules, real-restriction faithfulness, complexified kernels, and the Hermitian conditional unitary refinement.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-2-20260725-0c358d23\", \"judge\": 2, \"rationale\": \"The source derives the central-idempotent split and matrix-unit isomorphisms directly from the Clifford relations, and the visible runner evidence reports 51 exact algebraic passes. Because load-bearing portions of the primary runner source and stdout are clipped, the complete executable certificate cannot be verified; this is appropriately classified as audited_conditional with a runner-artifact repair, not as a substantive proof failure.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"The direct-sum decomposition of complexified Cl(3,0), its two dimension-two irreducible complex modules, real-restriction faithfulness, complexified kernels, and the Hermitian conditional unitary refinement.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260725-3718377e\", \"judge\": 3, \"rationale\": \"The restricted packet clips load-bearing portions of the primary runner source and current-cycle stdout, preventing full independent verification of the computational certificate. That is an audit-artifact limitation rather than evidence that the self-contained algebraic chain fails on its own terms, so the conservative applicable verdict is audited_conditional, with the explicit derived boundaries preserved.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"The direct-sum decomposition of complexified Cl(3,0), its two dimension-two irreducible complex modules, real-restriction faithfulness, complexified kernels, and the Hermitian conditional unitary refinement.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260725-c630dc8c\", \"judge\": 4, \"rationale\": \"The source gives a self-contained algebraic route from the Clifford relations through the central ideals and matrix units to the representation classification. Because load-bearing portions of the primary runner source and stdout are clipped, the complete exact certificate cannot be independently verified from this packet, making audited_clean unavailable; that packet defect supports audited_conditional rather than a scientific chain failure.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"The direct-sum decomposition of complexified Cl(3,0), its two dimension-two irreducible complex modules, real-restriction faithfulness, complexified kernels, and the Hermitian conditional unitary refinement.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-5-20260725-00c7571a\", \"judge\": 5, \"rationale\": \"The source supplies a self-contained algebraic route through the central idempotents, matrix units, module decomposition, real-restriction ranks, and Hermitian unitary refinement. The visible execution reports 51 exact class-(A) passes, but the clipped runner surfaces prevent complete executable verification, so audited_clean is unavailable while audited_conditional correctly records the packet-completeness limitation.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"The direct-sum decomposition of complexified Cl(3,0), its two dimension-two irreducible complex modules, real-restriction faithfulness, complexified kernels, and the Hermitian conditional unitary refinement.\", \"A\", null, [\"derived_no_go_boundary\"]]}]",
   "claim_id": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
-  "claim_scope": "The finite-dimensional complex representation theory of Cl(3,0), including its complexification into two M_2(C) summands, its two irreducible two-dimensional complex representations, their real-algebra faithfulness, finite-module decomposition, and the conditional unitary refinement.",
+  "claim_scope": "The direct-sum decomposition of complexified Cl(3,0), its two dimension-two irreducible complex modules, real-restriction faithfulness, complexified kernels, and the Hermitian conditional unitary refinement.",
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": "2026-07-25T19:03:02.523174+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": "2026-07-25T19:12:24.015353+00:00",
+  "claim_type_provenance": "judicial_review",
   "criticality": "critical",
   "cross_confirmation": {
+    "agreement_schema": "audit_tuple_v2",
     "first_audit": {
       "audit_date": "2026-07-25T19:03:02.523174+00:00",
       "audit_invocation_id": "3f616c6d19b84b36b697e890ab4532fc",
@@ -106,7 +108,142 @@
       "verdict": "audited_failed",
       "verdict_rationale": "The algebraic argument is plausible and the visible runner tail reports 51 class-(A) passes, but the restricted packet clips both the beginning of stdout and a load-bearing span of runner source. The omitted certificate is target-equivalent to the classification conclusion because the split, simplicity, kernels, module exhaustiveness, and conditional unitary refinement all depend on those exact checks; therefore the chain cannot be certified from this packet. Separately, the note asserts derived no-go boundaries: no irreducible complexified A-module is faithful, and bare complex-linear equivalence does not imply unitary equivalence."
     },
-    "mode": "terminal_second_pass",
+    "judicial_panel_record_v1": {
+      "cid": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+      "disagreement_fingerprint": {
+        "claim_id": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+        "first_audit_invocation_id": "3f616c6d19b84b36b697e890ab4532fc",
+        "note_hash": "f12d3279b34fb9df0f34cf678aaed362fca76d666a4aa4aad6e1fb39d064fb26",
+        "schema": "judicial_disagreement_fingerprint_v1",
+        "seat_summaries_sha256": "30490b0b3099aedc4edb2d20066fa730e2e0624c10f5d7dc7c2a4bad2985f449",
+        "second_audit_invocation_id": "b76ad75574cf4fb99efa5ac4ae666a80"
+      },
+      "failures": [],
+      "invocation_id": "f5d9778a12204586a4c09c81d00c8955",
+      "majority_count": 5,
+      "panel": 1,
+      "result": "majority_candidate",
+      "schema": "judicial_panel_record_v1",
+      "tally": [
+        {
+          "count": 5,
+          "tuple": [
+            "second",
+            "audited_conditional",
+            "positive_theorem",
+            "The direct-sum decomposition of complexified Cl(3,0), its two dimension-two irreducible complex modules, real-restriction faithfulness, complexified kernels, and the Hermitian conditional unitary refinement.",
+            "A",
+            null,
+            [
+              "derived_no_go_boundary"
+            ]
+          ]
+        }
+      ],
+      "votes": [
+        {
+          "auditor": "codex-judicial-1-20260725-0d1a7d09",
+          "first_auditor_error": "The first auditor misclassified a restricted-packet runner-artifact defect as a substantive proof failure. Because the note supplies a coherent self-contained algebraic argument and the missing verification is attributable to clipped runner evidence, the conservative disposition is audited_conditional with runner_artifact_issue, not audited_failed.",
+          "hybrid_resolution_note": null,
+          "judge": 1,
+          "judgment_rationale": "The packet contains a self-contained algebraic route and reports 51 exact class-(A) passes, but it clips load-bearing portions of both primary-runner source and stdout. That prevents audited_clean verification while supporting the second auditor\u2019s artifact-based audited_conditional verdict; the explicit faithfulness and unitary-equivalence limitations remain derived_no_go_boundary assertions.",
+          "negative_assertion_classes": [
+            "derived_no_go_boundary"
+          ],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "runner_artifact_issue: supply the complete unclipped current-cycle primary runner stdout and full primary runner source, then rerun the restricted audit.",
+          "ratified_claim_scope": "The direct-sum decomposition of complexified Cl(3,0), its two dimension-two irreducible complex modules, real-restriction faithfulness, complexified kernels, and the Hermitian conditional unitary refinement.",
+          "ratified_claim_type": "positive_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "The four elements in (12) have rank four in the canonical basis and span A_s; therefore sending E_ab^(s) to the standard matrix units defines a unital algebra isomorphism A_s -> M_2(C).",
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_conditional",
+          "second_auditor_error": "none",
+          "sided_with": "second"
+        },
+        {
+          "auditor": "codex-judicial-2-20260725-0c358d23",
+          "first_auditor_error": "The first auditor incorrectly converted a restricted-packet runner-artifact deficiency into audited_failed. The visible source presents a coherent self-contained algebraic chain, so clipped executable evidence prevents clean ratification but does not demonstrate that the theorem fails on its own terms.",
+          "hybrid_resolution_note": null,
+          "judge": 2,
+          "judgment_rationale": "The source derives the central-idempotent split and matrix-unit isomorphisms directly from the Clifford relations, and the visible runner evidence reports 51 exact algebraic passes. Because load-bearing portions of the primary runner source and stdout are clipped, the complete executable certificate cannot be verified; this is appropriately classified as audited_conditional with a runner-artifact repair, not as a substantive proof failure.",
+          "negative_assertion_classes": [
+            "derived_no_go_boundary"
+          ],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "runner_artifact_issue: supply the complete unclipped current-cycle primary runner stdout and full primary runner source, then rerun the restricted audit.",
+          "ratified_claim_scope": "The direct-sum decomposition of complexified Cl(3,0), its two dimension-two irreducible complex modules, real-restriction faithfulness, complexified kernels, and the Hermitian conditional unitary refinement.",
+          "ratified_claim_type": "positive_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "The four elements in (12) have rank four in the canonical basis and span A_s; therefore sending E_ab^(s) to the standard matrix units defines a unital algebra isomorphism A_s -> M_2(C).",
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_conditional",
+          "second_auditor_error": "none",
+          "sided_with": "second"
+        },
+        {
+          "auditor": "codex-judicial-3-20260725-3718377e",
+          "first_auditor_error": "It treated packet-level clipping of the runner source and stdout as a substantive failure of the theorem itself. The packet identifies an evidence-artifact incompleteness but demonstrates no contradiction, circularity, or unproved terminal lemma in the source, so audited_failed is too strong.",
+          "hybrid_resolution_note": null,
+          "judge": 3,
+          "judgment_rationale": "The restricted packet clips load-bearing portions of the primary runner source and current-cycle stdout, preventing full independent verification of the computational certificate. That is an audit-artifact limitation rather than evidence that the self-contained algebraic chain fails on its own terms, so the conservative applicable verdict is audited_conditional, with the explicit derived boundaries preserved.",
+          "negative_assertion_classes": [
+            "derived_no_go_boundary"
+          ],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "runner_artifact_issue: supply the complete unclipped current-cycle primary runner stdout and full primary runner source, then rerun the restricted audit.",
+          "ratified_claim_scope": "The direct-sum decomposition of complexified Cl(3,0), its two dimension-two irreducible complex modules, real-restriction faithfulness, complexified kernels, and the Hermitian conditional unitary refinement.",
+          "ratified_claim_type": "positive_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "The four elements in (12) have rank four in the canonical basis and span A_s; therefore sending E_ab^(s) to the standard matrix units defines a unital algebra isomorphism A_s -> M_2(C).",
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_conditional",
+          "second_auditor_error": "none",
+          "sided_with": "second"
+        },
+        {
+          "auditor": "codex-judicial-4-20260725-c630dc8c",
+          "first_auditor_error": "It conflates packet-level clipping with a failure of the source's derivation on its own terms. The note presents the matrix-unit and central-idempotent argument explicitly; incomplete executable verification warrants a runner-artifact conditional verdict, not audited_failed.",
+          "hybrid_resolution_note": null,
+          "judge": 4,
+          "judgment_rationale": "The source gives a self-contained algebraic route from the Clifford relations through the central ideals and matrix units to the representation classification. Because load-bearing portions of the primary runner source and stdout are clipped, the complete exact certificate cannot be independently verified from this packet, making audited_clean unavailable; that packet defect supports audited_conditional rather than a scientific chain failure.",
+          "negative_assertion_classes": [
+            "derived_no_go_boundary"
+          ],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "runner_artifact_issue: supply the complete unclipped current-cycle primary runner stdout and full primary runner source, then rerun the restricted audit.",
+          "ratified_claim_scope": "The direct-sum decomposition of complexified Cl(3,0), its two dimension-two irreducible complex modules, real-restriction faithfulness, complexified kernels, and the Hermitian conditional unitary refinement.",
+          "ratified_claim_type": "positive_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "The four elements in (12) have rank four in the canonical basis and span A_s; therefore sending E_ab^(s) to the standard matrix units defines a unital algebra isomorphism A_s -> M_2(C).",
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_conditional",
+          "second_auditor_error": "none",
+          "sided_with": "second"
+        },
+        {
+          "auditor": "codex-judicial-5-20260725-00c7571a",
+          "first_auditor_error": "The first position incorrectly converts a restricted-packet artifact defect\u2014the clipped primary-runner source and stdout\u2014into scientific failure of a self-contained proof. The packet supports a conservative runner_artifact_issue conditional verdict, not audited_failed, because no unproved or circular terminal lemma is identified in the source argument.",
+          "hybrid_resolution_note": null,
+          "judge": 5,
+          "judgment_rationale": "The source supplies a self-contained algebraic route through the central idempotents, matrix units, module decomposition, real-restriction ranks, and Hermitian unitary refinement. The visible execution reports 51 exact class-(A) passes, but the clipped runner surfaces prevent complete executable verification, so audited_clean is unavailable while audited_conditional correctly records the packet-completeness limitation.",
+          "negative_assertion_classes": [
+            "derived_no_go_boundary"
+          ],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "runner_artifact_issue: supply the complete unclipped current-cycle primary runner stdout and full primary runner source, then rerun the restricted audit.",
+          "ratified_claim_scope": "The direct-sum decomposition of complexified Cl(3,0), its two dimension-two irreducible complex modules, real-restriction faithfulness, complexified kernels, and the Hermitian conditional unitary refinement.",
+          "ratified_claim_type": "positive_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "The four elements in (12) have rank four in the canonical basis and span A_s; therefore sending E_ab^(s) to the standard matrix units defines a unital algebra isomorphism A_s -> M_2(C).",
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_conditional",
+          "second_auditor_error": "none",
+          "sided_with": "second"
+        }
+      ]
+    },
+    "mode": "judicial_panel_majority",
     "second_audit": {
       "audit_date": "2026-07-25T19:03:02.538109+00:00",
       "audit_invocation_id": "b76ad75574cf4fb99efa5ac4ae666a80",
@@ -137,20 +274,40 @@
       "verdict": "audited_conditional",
       "verdict_rationale": "The note gives a self-contained algebraic route from the Clifford relations to the central-idempotent split and matrix-unit isomorphisms, and the visible runner tail reports 51 class-(A) passes. However, the restricted packet expressly clips both the current-cycle stdout and the primary runner source across load-bearing checks, so audited_clean is unavailable. The note also asserts derived negative boundaries: no faithful irreducible complexified A-module and no upgrade from bare complex-linear to unitary equivalence without Hermitian generators, supported in the prose by explicit kernel and non-Hermitian-similarity witnesses. These are preserved as derived_no_go_boundary, while the optional structured N1-N8 packet is omitted for this development-tier non-no-go conditional verdict."
     },
-    "status": "disagreement"
+    "status": "third_confirmed_second",
+    "third_audit": {
+      "audit_date": "2026-07-25T19:12:24.015353+00:00",
+      "audit_invocation_id": "f5d9778a12204586a4c09c81d00c8955",
+      "auditor": "codex-judicial-1-20260725-0d1a7d09",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "claim_scope": "The direct-sum decomposition of complexified Cl(3,0), its two dimension-two irreducible complex modules, real-restriction faithfulness, complexified kernels, and the Hermitian conditional unitary refinement.",
+      "claim_type": "positive_theorem",
+      "first_auditor_error": "The first auditor misclassified a restricted-packet runner-artifact defect as a substantive proof failure. Because the note supplies a coherent self-contained algebraic argument and the missing verification is attributable to clipped runner evidence, the conservative disposition is audited_conditional with runner_artifact_issue, not audited_failed.",
+      "independence": "judicial_review",
+      "judgment_rationale": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The packet contains a self-contained algebraic route and reports 51 exact class-(A) passes, but it clips load-bearing portions of both primary-runner source and stdout. That prevents audited_clean verification while supporting the second auditor\u2019s artifact-based audited_conditional verdict; the explicit faithfulness and unitary-equivalence limitations remain derived_no_go_boundary assertions.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260725-0d1a7d09\", \"judge\": 1, \"rationale\": \"The packet contains a self-contained algebraic route and reports 51 exact class-(A) passes, but it clips load-bearing portions of both primary-runner source and stdout. That prevents audited_clean verification while supporting the second auditor\\u2019s artifact-based audited_conditional verdict; the explicit faithfulness and unitary-equivalence limitations remain derived_no_go_boundary assertions.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"The direct-sum decomposition of complexified Cl(3,0), its two dimension-two irreducible complex modules, real-restriction faithfulness, complexified kernels, and the Hermitian conditional unitary refinement.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-2-20260725-0c358d23\", \"judge\": 2, \"rationale\": \"The source derives the central-idempotent split and matrix-unit isomorphisms directly from the Clifford relations, and the visible runner evidence reports 51 exact algebraic passes. Because load-bearing portions of the primary runner source and stdout are clipped, the complete executable certificate cannot be verified; this is appropriately classified as audited_conditional with a runner-artifact repair, not as a substantive proof failure.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"The direct-sum decomposition of complexified Cl(3,0), its two dimension-two irreducible complex modules, real-restriction faithfulness, complexified kernels, and the Hermitian conditional unitary refinement.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260725-3718377e\", \"judge\": 3, \"rationale\": \"The restricted packet clips load-bearing portions of the primary runner source and current-cycle stdout, preventing full independent verification of the computational certificate. That is an audit-artifact limitation rather than evidence that the self-contained algebraic chain fails on its own terms, so the conservative applicable verdict is audited_conditional, with the explicit derived boundaries preserved.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"The direct-sum decomposition of complexified Cl(3,0), its two dimension-two irreducible complex modules, real-restriction faithfulness, complexified kernels, and the Hermitian conditional unitary refinement.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260725-c630dc8c\", \"judge\": 4, \"rationale\": \"The source gives a self-contained algebraic route from the Clifford relations through the central ideals and matrix units to the representation classification. Because load-bearing portions of the primary runner source and stdout are clipped, the complete exact certificate cannot be independently verified from this packet, making audited_clean unavailable; that packet defect supports audited_conditional rather than a scientific chain failure.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"The direct-sum decomposition of complexified Cl(3,0), its two dimension-two irreducible complex modules, real-restriction faithfulness, complexified kernels, and the Hermitian conditional unitary refinement.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-5-20260725-00c7571a\", \"judge\": 5, \"rationale\": \"The source supplies a self-contained algebraic route through the central idempotents, matrix units, module decomposition, real-restriction ranks, and Hermitian unitary refinement. The visible execution reports 51 exact class-(A) passes, but the clipped runner surfaces prevent complete executable verification, so audited_clean is unavailable while audited_conditional correctly records the packet-completeness limitation.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"The direct-sum decomposition of complexified Cl(3,0), its two dimension-two irreducible complex modules, real-restriction faithfulness, complexified kernels, and the Hermitian conditional unitary refinement.\", \"A\", null, [\"derived_no_go_boundary\"]]}]",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "second_auditor_error": "none",
+      "sided_with": "second",
+      "verdict": "audited_conditional"
+    }
   },
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 14,
-  "effective_status": "audit_in_progress",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [
     "scripts/cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.py"
   ],
-  "independence": "cross_family",
-  "intrinsic_status": "audit_in_progress",
+  "independence": "judicial_review",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 17.789,
-  "load_bearing_step": "The abstract matrix-unit relations identify each central ideal A_s with M_2(C), after which the central-idempotent decomposition yields exactly two irreducible complex module classes.",
+  "load_bearing_step": "The four elements in (12) have rank four in the canonical basis and span A_s; therefore sending E_ab^(s) to the standard matrix units defines a unital algebra isomorphism A_s -> M_2(C).",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
@@ -159,7 +316,7 @@
   ],
   "note_hash": "f12d3279b34fb9df0f34cf678aaed362fca76d666a4aa4aad6e1fb39d064fb26",
   "note_path": "docs/CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue: regenerate the restricted packet with the complete primary-runner source and unabridged normal and independent stdout, then re-audit every displayed identity against the executable checks.",
+  "notes_for_re_audit_if_any": "runner_artifact_issue: supply the complete unclipped current-cycle primary runner stdout and full primary runner source, then rerun the restricted audit.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1771,5 +1928,5 @@
   "runner_path": "scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py",
   "title": "Cl(3) Pauli Irrep Uniqueness Narrow Theorem",
   "transitive_descendants": 1768,
-  "verdict_rationale": "The algebraic argument is plausible and the visible runner tail reports 51 class-(A) passes, but the restricted packet clips both the beginning of stdout and a load-bearing span of runner source. The omitted certificate is target-equivalent to the classification conclusion because the split, simplicity, kernels, module exhaustiveness, and conditional unitary refinement all depend on those exact checks; therefore the chain cannot be certified from this packet. Separately, the note asserts derived no-go boundaries: no irreducible complexified A-module is faithful, and bare complex-linear equivalence does not imply unitary equivalence."
+  "verdict_rationale": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The packet contains a self-contained algebraic route and reports 51 exact class-(A) passes, but it clips load-bearing portions of both primary-runner source and stdout. That prevents audited_clean verification while supporting the second auditor\u2019s artifact-based audited_conditional verdict; the explicit faithfulness and unitary-equivalence limitations remain derived_no_go_boundary assertions.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260725-0d1a7d09\", \"judge\": 1, \"rationale\": \"The packet contains a self-contained algebraic route and reports 51 exact class-(A) passes, but it clips load-bearing portions of both primary-runner source and stdout. That prevents audited_clean verification while supporting the second auditor\\u2019s artifact-based audited_conditional verdict; the explicit faithfulness and unitary-equivalence limitations remain derived_no_go_boundary assertions.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"The direct-sum decomposition of complexified Cl(3,0), its two dimension-two irreducible complex modules, real-restriction faithfulness, complexified kernels, and the Hermitian conditional unitary refinement.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-2-20260725-0c358d23\", \"judge\": 2, \"rationale\": \"The source derives the central-idempotent split and matrix-unit isomorphisms directly from the Clifford relations, and the visible runner evidence reports 51 exact algebraic passes. Because load-bearing portions of the primary runner source and stdout are clipped, the complete executable certificate cannot be verified; this is appropriately classified as audited_conditional with a runner-artifact repair, not as a substantive proof failure.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"The direct-sum decomposition of complexified Cl(3,0), its two dimension-two irreducible complex modules, real-restriction faithfulness, complexified kernels, and the Hermitian conditional unitary refinement.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260725-3718377e\", \"judge\": 3, \"rationale\": \"The restricted packet clips load-bearing portions of the primary runner source and current-cycle stdout, preventing full independent verification of the computational certificate. That is an audit-artifact limitation rather than evidence that the self-contained algebraic chain fails on its own terms, so the conservative applicable verdict is audited_conditional, with the explicit derived boundaries preserved.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"The direct-sum decomposition of complexified Cl(3,0), its two dimension-two irreducible complex modules, real-restriction faithfulness, complexified kernels, and the Hermitian conditional unitary refinement.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260725-c630dc8c\", \"judge\": 4, \"rationale\": \"The source gives a self-contained algebraic route from the Clifford relations through the central ideals and matrix units to the representation classification. Because load-bearing portions of the primary runner source and stdout are clipped, the complete exact certificate cannot be independently verified from this packet, making audited_clean unavailable; that packet defect supports audited_conditional rather than a scientific chain failure.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"The direct-sum decomposition of complexified Cl(3,0), its two dimension-two irreducible complex modules, real-restriction faithfulness, complexified kernels, and the Hermitian conditional unitary refinement.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-5-20260725-00c7571a\", \"judge\": 5, \"rationale\": \"The source supplies a self-contained algebraic route through the central idempotents, matrix units, module decomposition, real-restriction ranks, and Hermitian unitary refinement. The visible execution reports 51 exact class-(A) passes, but the clipped runner surfaces prevent complete executable verification, so audited_clean is unavailable while audited_conditional correctly records the packet-completeness limitation.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"The direct-sum decomposition of complexified Cl(3,0), its two dimension-two irreducible complex modules, real-restriction faithfulness, complexified kernels, and the Hermitian conditional unitary refinement.\", \"A\", null, [\"derived_no_go_boundary\"]]}]"
 }

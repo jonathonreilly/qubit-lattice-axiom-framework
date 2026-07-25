@@ -1,27 +1,27 @@
 PASS the Cycle-610 runner is byte-pinned and unchanged :: 36fcb1655bbdcd75
 PASS O1 existence: both A2 roots exist at every finite L in the frozen grid (falsifier (a) does not fire) and at the held species :: {'root2_absb': [np.float64(9.940794896387296e-13), np.float64(2.2151997470208162e-10), np.float64(1.0379297295691448e-11), np.float64(3.941268688400311e-12)]}
-PASS O1 infinite-volume: the torus-integral equation has both roots, with the frozen quadrature convergence certificate (final order-shift < 1e-8, else the achieved level is reported honestly) :: {'root_b': {'theta_inf': -2.97557598922244, 'last_shift': 7.317158434716475e-09, 'converged': True}, 'root_2': {'theta_inf': 0.2780235181466161, 'last_shift': 0.0356623003348423, 'converged': False}}
-FAIL O1 convergence: finite-L roots converge to the L=inf values with certified rates and controlled error bars (falsifier (b) does not fire) :: {'root_b': {'bar': 8.487041291971309e-09, 'exp_rate': -0.5831930098307074}, 'root_2': {'bar': 0.07132205830076932, 'exp_rate': -0.0003886735881196331}}
-PASS O2 isolation: theta_2 is a transversal zero (|db/dtheta| > 1e-3) with no second zero within +-0.05 at L=inf :: {'derivative': np.float64(129513.68860476035), 'neighborhood_min': 0.010640296483585573}
+PASS O1 infinite-volume global-min diagnostic: both frozen windows contain near-zero candidates at final quadrature order; order-shift convergence is reported separately and is not implied by this row :: {'root_b': {'theta_inf': -2.97557598922244, 'last_shift': 7.317158434716475e-09, 'converged': True}, 'root_2': {'theta_inf': 0.2780235181466161, 'last_shift': 0.0356623003348423, 'converged': False}}
+FAIL O1 convergence: finite-L roots converge to the L=inf values with certified rates and controlled error bars (raw falsifier (b) row; a FAIL requires physical-versus-estimator adjudication) :: {'root_b': {'bar': 8.487041291971309e-09, 'exp_rate': -0.5831930098307074}, 'root_2': {'bar': 0.07132205830076932, 'exp_rate': -0.0003886735881196331}}
+PASS O2 global-min diagnostic: the frozen full-window candidate is a transversal isolated numerical zero; this row does not identify it with the physical theta_2 branch :: {'candidate_theta': 0.2780235181466161, 'derivative': np.float64(129513.68860476035), 'neighborhood_min': 0.010640296483585573, 'physical_theta_2_identification': False}
 PASS O2 two-line lawful domain: the ball-survivor word passes the frozen two-line certificate (two >5x peaks, per-line locked bandpass chains) :: {'lines': [-2.975417022899389, 0.3134172924175278], 'peak_mags': [454.80010838853707, 59.628043920197], 'floor': 0.08505157172770339, 'two_peaks': True, 'per_line_locked': [True, True], 'lawful': True}
 FAIL O2 vernier theorem executed: every frozen alpha row (including both folds and the 2pi null) is reconstructed within two bins from the measured line pair :: {'errors': [7.9e-05, 0.000241, 0.00012, 1.494946, 1.494901, 7.9e-05]}
 PASS O2 gold row: the reconstructed rate on the alpha = -0.7439 row is R_rec = 1.25 within 1e-3 and the frozen A-count rule yields the 5:4 advance word — the Cycle-451 advance shore reached with no refit, under the Cycle-612 association caveat (no identification) :: {'alpha_rec': 5.539405182515727, 'R_rec': 1.2499618384818343, 'a_count_word': '5:4'}
-RESULT 6 2 elapsed 1676.01 s
-     1676.61 real      1479.09 user       196.58 sys
-           811597824  maximum resident set size
+RESULT 6 2 elapsed 1637.55 s
+     1638.00 real      1467.47 user       170.05 sys
+           897581056  maximum resident set size
                    0  average shared memory size
                    0  average unshared data size
                    0  average unshared stack size
-            16016067  page reclaims
-                  70  page faults
+            15895590  page reclaims
+                  22  page faults
                    0  swaps
                    0  block input operations
                    0  block output operations
                    0  messages sent
                    0  messages received
                    0  signals received
-                 334  voluntary context switches
-               32484  involuntary context switches
-      21167820578748  instructions retired
-       5870084187683  cycles elapsed
-           503252264  peak memory footprint
+                1234  voluntary context switches
+               25779  involuntary context switches
+      21142530951303  instructions retired
+       5751671725450  cycles elapsed
+           480101648  peak memory footprint

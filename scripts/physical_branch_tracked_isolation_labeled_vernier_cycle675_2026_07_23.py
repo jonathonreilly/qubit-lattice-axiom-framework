@@ -10,7 +10,8 @@ the two sorted-pair degeneracy failures without touching the gold row.
 
 Authority: none.  Audit: unset.  Firewalls: a width proxy is a finite-order
 quadrature reading, not a decay rate or energy; joint max 674 observed,
-claiming Cycle 675; stacked on the open Cycle-662 block branch.
+claiming Cycle 675; this is the completion companion to Cycle 662 in the same
+family.
 """
 from __future__ import annotations
 import importlib.util, json, math, sys, time
@@ -21,6 +22,7 @@ import numpy as np
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 CONTRACT_SHA = "174ce1cae3edce3f888f1ecb10e6d258d9ffd23c620aea5f92d6524c74e1bf32"
+C662_SHA256 = "68535fd97782a0ef8537ed9a248948f4f956c8590f0e2c8341515bacb013ae9d"
 RECEIPT = ROOT / "outputs/physical_branch_tracked_isolation_labeled_vernier_cycle675_receipt_2026_07_23.json"
 PASS = 0; FAIL = 0
 
@@ -39,6 +41,8 @@ C610 = C662.C610; C611 = C662.C611; C622 = C662.C622
 
 def main():
     start = time.time()
+    if C662_SHA != C662_SHA256:
+        raise RuntimeError(f"dependency SHA mismatch: c662={C662_SHA}")
     receipt = {"cycle": 675, "authority": "none", "audit": "unset",
                "contract_sha256": CONTRACT_SHA, "consumed_cycle662": C662_SHA}
     # --- Row 1: branch-tracked isolation / width proxy.
@@ -77,7 +81,12 @@ def main():
     state = engine.source()
     for _ in range(256): state = engine.step(state, C662.CONTACT) * keep[..., None]
     word = C622.channel_word(engine, state, -1, C662.CONTACT)
+    # Cycle-662's computed finite-L9 primary-line input, not an observed value.
     theta_b = -2.975574708447
+    receipt["vernier_theta_b_input"] = {
+        "value": theta_b,
+        "class": "computed lattice input from the Cycle-662 L9 primary root",
+    }
     seg0 = word[64:]; sp0 = np.fft.fft(seg0)
     fr0 = 2*math.pi*np.fft.fftfreq(len(seg0)); mg0 = np.abs(sp0)
     o0 = np.argsort(mg0)[::-1]

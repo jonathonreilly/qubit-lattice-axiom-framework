@@ -39,6 +39,8 @@ FROZEN_CONTRACT_SHA256 = (
     "77a152201d9a2fab6396f087ed11cfb82aee4e76c8bc155b16acc77d5939697a"
 )
 C610_SHA256 = "36fcb1655bbdcd758b69ea1e273821e5c820f738eb63199570c8f36c7e294bac"
+C611_SHA256 = "15db2200b08bc4a5d7669975806fe51e9b8a55049f0660969d427332602bf9e8"
+C622_SHA256 = "1cd1a1a1eedd03b3d178ef65adc5f98814c3ed11e0ea37103b111d0aa09378e1"
 W5_ANCHORS = {"ball3": (0.99910937, 0.30655), "ball4": (0.99981521, 0.31182)}
 
 RECEIPT = ROOT / (
@@ -145,6 +147,13 @@ def interior_line(engine, keep_radius: int, contact: float, iters: int = 600,
 
 def main() -> int:
     start = time.time()
+    expected = (C610_SHA256, C611_SHA256, C622_SHA256)
+    observed = (C610_SHA, C611_SHA, C622_SHA)
+    if observed != expected:
+        raise RuntimeError(
+            "dependency SHA mismatch: "
+            f"c610={C610_SHA} c611={C611_SHA} c622={C622_SHA}"
+        )
     receipt: dict[str, object] = {
         "cycle": 629,
         "authority": "none",
@@ -236,10 +245,9 @@ def main() -> int:
     receipt["bs_scan"] = {"window_min": bs_min, "at_theta": 0.5 * (lo + hi),
                          "coarse_min": coarse_min, "bs_visible": bool(bs_visible)}
     check(
-        "BS-visibility sub-discriminator evaluated on the frozen window "
-        "(reported either way; visible strengthens R1 to a BS-visible second "
-        "bound state)",
-        True,
+        "full-window BS near-zero diagnostic evaluated; the candidate is "
+        "reported without identifying it as the physical second branch",
+        bs_visible,
         receipt["bs_scan"],
     )
 
@@ -262,7 +270,7 @@ def main() -> int:
         "unmasked corroborator evaluated: whether the dust-lock line exists "
         "without contact (reported; consistency with the verdict assessed in "
         "the note)",
-        True,
+        verdict != "R1_contact_dependent" or not locks_dust,
         receipt["unmasked_g0"],
     )
 

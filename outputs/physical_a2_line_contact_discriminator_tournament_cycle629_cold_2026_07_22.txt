@@ -1,25 +1,25 @@
 PASS the Cycle-610 runner is byte-pinned and unchanged :: 36fcb1655bbdcd75
 FAIL the g=0.37 interior lines reproduce the independent W5 anchors (phase within 1e-4, magnitude within 1e-5) :: {'ball3': {'abs': 0.999109373594012, 'arg': 0.30654753336866636, 'residual': 2.3497402073550424e-13, 'interior_weight': 0.9999999999999991, 'antisym': 2.919594317009366e-14}, 'ball4': None}
 PASS the frozen discriminator produces a decided reading (R1 or R2, not MIXED) with converged interior modes on every verdict row :: {'reading': 'R1_contact_dependent', 'persists_at_g0': False, 'phase_g037': 0.30654753336866636, 'phase_g0': -3.066253761813115, 'phase_g0185': -3.0263829019634225, 'phase_shift_g0_to_g037': 2.910384011997805}
-PASS BS-visibility sub-discriminator evaluated on the frozen window (reported either way; visible strengthens R1 to a BS-visible second bound state) :: {'window_min': 1.123619162708616e-10, 'at_theta': 0.29998079266839706, 'coarse_min': 0.002432005546640917, 'bs_visible': True}
+PASS full-window BS near-zero diagnostic evaluated; the candidate is reported without identifying it as the physical second branch :: {'window_min': 1.123619162708616e-10, 'at_theta': 0.29998079266839706, 'coarse_min': 0.002432005546640917, 'bs_visible': True}
 PASS unmasked corroborator evaluated: whether the dust-lock line exists without contact (reported; consistency with the verdict assessed in the note) :: {'rate_T1': -0.023185483870967742, 'locked': False, 'convention_independent': True, 'locks_at_dust_line': False}
 FAIL two-line beat word: the ball-survivor mixture's retained word shows exactly the two predicted lines (bound root and the interior line) as dominant DFT peaks within one bin :: {'predicted_lines': [-2.975574708446694, 0.30654753336866636], 'found_lines': [-2.9754126895460007, 0.3133679321968659], 'peak_mags': [454.80010838853707, 59.628043920197], 'median_floor': 0.08505157172770339, 'bin_width': 0.003165332648453192, 'survivor_norm_sq': 0.2525965797979323}
-RESULT 4 2 elapsed 55.5 s
-       56.13 real        50.13 user         5.70 sys
-           325287936  maximum resident set size
+RESULT 4 2 elapsed 43.52 s
+       43.98 real        40.65 user         3.16 sys
+           302645248  maximum resident set size
                    0  average shared memory size
                    0  average unshared data size
                    0  average unshared stack size
-               47872  page reclaims
-                  89  page faults
+               23073  page reclaims
+                 624  page faults
                    0  swaps
                    0  block input operations
                    0  block output operations
                    0  messages sent
                    0  messages received
                    0  signals received
-                 298  voluntary context switches
-               10040  involuntary context switches
-        538315105771  instructions retired
-        187367427290  cycles elapsed
-           143786896  peak memory footprint
+                 919  voluntary context switches
+                4955  involuntary context switches
+        537420574492  instructions retired
+        166010795406  cycles elapsed
+           127304664  peak memory footprint

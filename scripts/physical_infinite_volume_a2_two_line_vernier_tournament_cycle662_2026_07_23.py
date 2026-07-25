@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
-"""Cycle 662: infinite-volume A2 two-line theorem and vernier reconstruction.
+"""Cycle 662: infinite-volume A2 two-line diagnostics and vernier reconstruction.
 
-Objective 1: existence and location, in the L -> infinity limit, of BOTH
-A2-channel Birman-Schwinger roots of the Cycle-230 contact dimer — the primary
-near -2.97557 and the Cycle-629 second root near +0.29998 — via a direct
-torus-integral (Gauss-Legendre) root-find plus finite-L convergence
-certificates, with preregistered falsifiers.  Objective 2: theta_2 isolation
-bound, the two-line lawful-domain certificate, and the executed vernier
-reconstruction reaching the 5:4 advance shore in the reconstructed rate.
+Objective 1: evaluate finite-L and direct-torus-integral A2-channel
+Birman-Schwinger near-zeros for the Cycle-230 contact dimer, with
+preregistered convergence falsifiers. The full-window global-min estimator's
+second candidate is diagnostic only: branch-tracked support and the Cycle-675
+completion supersede its spurious values. Objective 2: the two-line
+lawful-domain certificate and the executed vernier reconstruction reaching
+the historically labeled 5:4 advance shore in the reconstructed rate.
 
-Work-history: joint lane max observed 661; claiming Cycle 662.  Substrate not
-on origin/main at branch cut (main max cycle 335); stacked on the cycle629
-tip; citations refer to in-tree surfaces.
+Work-history: joint lane max observed 661; claiming Cycle 662.  The
+Cycle-563--583 substrate and Cycle-610 family landed through the two parent
+PRs; this runner was rebuilt on those landed, re-frozen surfaces.
 
 Firewalls: a spectral line is not energy; the L=inf value is a
 quadrature-controlled statement, not a rigorous spectral theorem (the
@@ -41,6 +41,8 @@ FROZEN_CONTRACT_SHA256 = (
     "24199cd1ac9d3bf46db8ee59b8d83f6e27c6058dd55a07122181f4993d42f2b3"
 )
 C610_SHA256 = "36fcb1655bbdcd758b69ea1e273821e5c820f738eb63199570c8f36c7e294bac"
+C611_SHA256 = "15db2200b08bc4a5d7669975806fe51e9b8a55049f0660969d427332602bf9e8"
+C622_SHA256 = "1cd1a1a1eedd03b3d178ef65adc5f98814c3ed11e0ea37103b111d0aa09378e1"
 RECEIPT = ROOT / (
     "outputs/physical_infinite_volume_a2_two_line_vernier_tournament_"
     "cycle662_receipt_2026_07_23.json"
@@ -82,9 +84,9 @@ def load_module(name: str):
 
 C610, C610_SHA = load_module(
     "physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22")
-C611, _ = load_module(
+C611, C611_SHA = load_module(
     "physical_autonomous_bound_branch_preparation_tournament_cycle611_2026_07_22")
-C622, _ = load_module(
+C622, C622_SHA = load_module(
     "physical_deterministic_exhaust_shell_preparation_tournament_cycle622_2026_07_22")
 
 A2_36 = C610.A2_FULL.astype(complex)
@@ -185,13 +187,23 @@ def two_line_certificate(word: np.ndarray, skip: int) -> dict[str, object]:
 
 def main() -> int:
     start = time.time()
+    expected = (C610_SHA256, C611_SHA256, C622_SHA256)
+    observed = (C610_SHA, C611_SHA, C622_SHA)
+    if observed != expected:
+        raise RuntimeError(
+            "dependency SHA mismatch: "
+            f"c610={C610_SHA} c611={C611_SHA} c622={C622_SHA}"
+        )
     receipt: dict[str, object] = {
         "cycle": 662, "authority": "none", "audit": "unset",
         "frozen_contract_sha256": FROZEN_CONTRACT_SHA256,
         "consumed_cycle610_sha256": C610_SHA,
-        "stacking": "substrate landed by the parent substrate PR of this "
-        "stack (Cycles 563-583); rebuilt off cycle629 tip 53bdb7645e; "
-        "joint lane max 661, claiming 662",
+        "consumed": {"cycle610": C610_SHA, "cycle611": C611_SHA,
+                     "cycle622": C622_SHA},
+        "stacking": "Cycles 563-583 and the Cycle-610 family landed on main; "
+        "this family was rebuilt from landed main commit "
+        "b6cf38bcfcda9458aae9c9b8f332ec69989ff629; joint lane max 661, "
+        "claiming 662",
     }
     check("the Cycle-610 runner is byte-pinned and unchanged",
           C610_SHA == C610_SHA256, C610_SHA[:16])
@@ -241,9 +253,9 @@ def main() -> int:
                       "quadrature_converged": bool(shifts[-1] < 1e-8)}
     receipt["quadrature"] = quad
     check(
-        "O1 infinite-volume: the torus-integral equation has both roots, "
-        "with the frozen quadrature convergence certificate (final "
-        "order-shift < 1e-8, else the achieved level is reported honestly)",
+        "O1 infinite-volume global-min diagnostic: both frozen windows contain "
+        "near-zero candidates at final quadrature order; order-shift "
+        "convergence is reported separately and is not implied by this row",
         all(quad[n]["orders"][str(NQ_ROWS[-1])]["abs_b"] < 1e-6 for n in quad),
         {n: {"theta_inf": quad[n]["theta_inf"], "last_shift": quad[n]["shifts"][-1],
              "converged": quad[n]["quadrature_converged"]} for n in quad},
@@ -271,8 +283,8 @@ def main() -> int:
     receipt["convergence"] = conv
     check(
         "O1 convergence: finite-L roots converge to the L=inf values with "
-        "certified rates and controlled error bars (falsifier (b) does not "
-        "fire)",
+        "certified rates and controlled error bars (raw falsifier (b) row; a "
+        "FAIL requires physical-versus-estimator adjudication)",
         all(conv[n]["monotone_within_factor_1p5"] for n in conv)
         and conv["root_b"]["controlled_extrapolation_error_bar"] < 1e-4
         and conv["root_2"]["controlled_extrapolation_error_bar"] < 5e-3,
@@ -292,13 +304,20 @@ def main() -> int:
         if abs(float(t) - theta2_inf) > 5e-3
     ]
     check(
-        "O2 isolation: theta_2 is a transversal zero (|db/dtheta| > 1e-3) "
-        "with no second zero within +-0.05 at L=inf",
+        "O2 global-min diagnostic: the frozen full-window candidate is a "
+        "transversal isolated numerical zero; this row does not identify it "
+        "with the physical theta_2 branch",
         derivative > 1e-3 and min(neighbor_scan) > 1e-3,
-        {"derivative": derivative, "neighborhood_min": float(min(neighbor_scan))},
+        {"candidate_theta": theta2_inf, "derivative": derivative,
+         "neighborhood_min": float(min(neighbor_scan)),
+         "physical_theta_2_identification": False},
     )
-    receipt["isolation"] = {"derivative": derivative,
-                            "neighborhood_min": float(min(neighbor_scan))}
+    receipt["isolation"] = {
+        "candidate_theta": theta2_inf,
+        "derivative": derivative,
+        "neighborhood_min": float(min(neighbor_scan)),
+        "physical_theta_2_identification": False,
+    }
 
     # ---- Objective 2: two-line word, lawful-domain certificate, vernier.
     engine = C611.PositionEngine(C611.L_TRAIN, BETA)

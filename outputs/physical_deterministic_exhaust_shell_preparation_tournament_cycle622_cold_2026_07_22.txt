@@ -10,22 +10,22 @@ PASS lawful domain: non-antisymmetric input is refused :: {'defect': 0.070710678
 FAIL P4/P5: no certified configuration exists to test :: route D-1 never certified
 FAIL P8 internal: the masked-operator dominant phase lies within 5e-3 of the Cycle-610 root (independent worker comparison recorded in the note) :: {'abs_lambda': 0.3087251561077763, 'arg_lambda': 0.46874753709363653, 'theta0': -2.975574708446694}
 PASS D-3 mechanism probe (frozen negative-leaning prior): the P0-dephasing cascade does not purify — the bound-branch weight of the dephased ensemble does not rise above the raw value plus 0.05 :: {'weights': [0.26305, 0.13624, 0.13727, 0.11787, 0.09291, 0.05945, 0.03965, 0.03416, 0.0313]}
-RESULT 6 6 elapsed 18.85 s
-       19.50 real        18.45 user         0.84 sys
-           224477184  maximum resident set size
+RESULT 6 6 elapsed 13.79 s
+       14.19 real        13.66 user         0.42 sys
+           202457088  maximum resident set size
                    0  average shared memory size
                    0  average unshared data size
                    0  average unshared stack size
-               31281  page reclaims
-                 128  page faults
+               17426  page reclaims
+                  33  page faults
                    0  swaps
                    0  block input operations
                    0  block output operations
                    0  messages sent
                    0  messages received
                    0  signals received
-                 320  voluntary context switches
-                5420  involuntary context switches
-        237744658300  instructions retired
-         64579062527  cycles elapsed
-           136479512  peak memory footprint
+                 780  voluntary context switches
+                  93  involuntary context switches
+        237813939705  instructions retired
+         55484153199  cycles elapsed
+           123486880  peak memory footprint

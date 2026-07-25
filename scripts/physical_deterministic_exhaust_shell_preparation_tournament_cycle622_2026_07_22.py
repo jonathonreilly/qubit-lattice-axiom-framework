@@ -40,6 +40,7 @@ FROZEN_CONTRACT_SHA256 = (
     "46f9cbe09fd60cddde1f69005f87a8173d0cfbf0e5e24098c90f414ace258a55"
 )
 C610_SHA256 = "36fcb1655bbdcd758b69ea1e273821e5c820f738eb63199570c8f36c7e294bac"
+C611_SHA256 = "15db2200b08bc4a5d7669975806fe51e9b8a55049f0660969d427332602bf9e8"
 
 RECEIPT = ROOT / (
     "outputs/physical_deterministic_exhaust_shell_preparation_tournament_"
@@ -162,6 +163,11 @@ def certify_ct1pp(engine, state: np.ndarray, theta: float, contact: float) -> di
 
 def main() -> int:
     start = time.time()
+    if C610_SHA != C610_SHA256 or C611_SHA != C611_SHA256:
+        raise RuntimeError(
+            "dependency SHA mismatch: "
+            f"c610={C610_SHA} c611={C611_SHA}"
+        )
     receipt: dict[str, object] = {
         "cycle": 622,
         "authority": "none",

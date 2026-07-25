@@ -4,7 +4,12 @@
  "audit": "unset",
  "frozen_contract_sha256": "24199cd1ac9d3bf46db8ee59b8d83f6e27c6058dd55a07122181f4993d42f2b3",
  "consumed_cycle610_sha256": "36fcb1655bbdcd758b69ea1e273821e5c820f738eb63199570c8f36c7e294bac",
- "stacking": "substrate landed by the parent substrate PR of this stack (Cycles 563-583); rebuilt off cycle629 tip 53bdb7645e; joint lane max 661, claiming 662",
+ "consumed": {
+  "cycle610": "36fcb1655bbdcd758b69ea1e273821e5c820f738eb63199570c8f36c7e294bac",
+  "cycle611": "15db2200b08bc4a5d7669975806fe51e9b8a55049f0660969d427332602bf9e8",
+  "cycle622": "1cd1a1a1eedd03b3d178ef65adc5f98814c3ed11e0ea37103b111d0aa09378e1"
+ },
+ "stacking": "Cycles 563-583 and the Cycle-610 family landed on main; this family was rebuilt from landed main commit b6cf38bcfcda9458aae9c9b8f332ec69989ff629; joint lane max 661, claiming 662",
  "finite_L": {
   "9": {
    "root_b": {
@@ -152,8 +157,10 @@
   }
  },
  "isolation": {
+  "candidate_theta": 0.2780235181466161,
   "derivative": 129513.68860476035,
-  "neighborhood_min": 0.010640296483585573
+  "neighborhood_min": 0.010640296483585573,
+  "physical_theta_2_identification": false
  },
  "two_line_word": {
   "lines": [
@@ -242,7 +249,7 @@
   "a spectral line is not energy; the vernier reconstruction is retained-data analysis; reaching the 5:4 shore is algebraic reachability under the Cycle-612 association caveat",
   "no physical vernier clock is built here; two-line certificates are lawful-domain definitions for the physical side's acceptance harness"
  ],
- "elapsed_seconds": 1676.011689901352,
+ "elapsed_seconds": 1637.5496549606323,
  "pass_count": 6,
  "fail_count": 2,
  "pass": false

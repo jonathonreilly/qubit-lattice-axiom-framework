@@ -129,7 +129,7 @@
   "the detector ray lives in the matter x blank-exhaust sector; absorbed amplitude is orthogonal by exhaust occupancy \u2014 a locality fact, not a conditioning step",
   "certification uses spectral data; preparation uses only geometry and a frozen schedule"
  ],
- "elapsed_seconds": 18.85469102859497,
+ "elapsed_seconds": 13.787864923477173,
  "pass_count": 6,
  "fail_count": 6,
  "pass": false

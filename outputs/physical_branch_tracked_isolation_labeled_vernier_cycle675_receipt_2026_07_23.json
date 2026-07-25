@@ -3,7 +3,7 @@
  "authority": "none",
  "audit": "unset",
  "contract_sha256": "174ce1cae3edce3f888f1ecb10e6d258d9ffd23c620aea5f92d6524c74e1bf32",
- "consumed_cycle662": "20e315f6f331096eb05585a5c75409b1a6f80a0f9457e20681524068af4f05b1",
+ "consumed_cycle662": "68535fd97782a0ef8537ed9a248948f4f956c8590f0e2c8341515bacb013ae9d",
  "branch_tracked": {
   "orders": {
    "32": {
@@ -22,6 +22,10 @@
    "transversality": 16.0756285695807
   },
   "plateau_reference": 0.31368
+ },
+ "vernier_theta_b_input": {
+  "value": -2.975574708447,
+  "class": "computed lattice input from the Cycle-662 L9 primary root"
  },
  "labeled_vernier": [
   {
@@ -63,7 +67,7 @@
    "ok": true
   }
  ],
- "elapsed_seconds": 219.65295600891113,
+ "elapsed_seconds": 195.04354596138,
  "pass_count": 2,
  "fail_count": 0,
  "pass": true

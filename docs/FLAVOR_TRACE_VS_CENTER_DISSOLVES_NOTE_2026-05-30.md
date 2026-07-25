@@ -163,16 +163,20 @@ The current source packet does not close the science. The residuals are:
   square-root readout rather than a singular-value/Yukawa readout;
 - **block selector:** why the physical functional should be trace/dimension,
   block-count, or another native reference state;
-- **modulus selector:** why `r = 1/2` should be selected rather than merely
-  matched by `Q_trace = 2/3`;
+- **modulus selector:** whether and how `r = 1/2` is selected rather than
+  merely matched by `Q_trace = 2/3`;
 - **phase/sign chamber:** how the broader `b = |b|e^{i phi}` chamber is selected.
 
 No new axiom, measured mass input, or audit verdict is introduced here.
 
 ## Next Useful Path
 
-The highest-value closure route remains a native selector theorem: records,
-KMS/modular structure, or matter-action dynamics would need to select both the
-signed/Hermitian readout and the `r = 1/2` modulus. A theorem selecting the
+One open route is a native selector theorem: records, KMS/modular structure, or
+matter-action dynamics that select both the signed/Hermitian readout and the
+`r = 1/2` modulus. Such a theorem is a permitted result rather than a
+requirement on this packet: per
+`FLAVOR_R_HALF_IS_A_STATIONARY_POINT_NOT_FORCED_2026-06-02.md`, the special
+values of `r` are distinguished points of one family, carrying different
+sectors, not one value the framework must select. A theorem selecting the
 dimension/trace reading instead would point the packet to `r = 1`/`Q = 1`, not
 to the charged-lepton Koide value.

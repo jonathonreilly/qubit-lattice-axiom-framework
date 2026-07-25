@@ -1,7 +1,7 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 2158,
-    "decoration": 37,
+    "bounded_theorem": 2157,
+    "decoration": 38,
     "meta": 364,
     "no_go": 439,
     "open_gate": 207,
@@ -107,13 +107,14 @@
     "open_gate": 2,
     "retained": 111,
     "retained_bounded": 337,
-    "retained_pending_chain": 8,
-    "unaudited": 2689
+    "retained_pending_chain": 9,
+    "unaudited": 2688
   },
-  "retained_pending_chain_count": 8,
+  "retained_pending_chain_count": 9,
   "retained_pending_chain_examples": [
     "ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10",
     "cl3_taste_generation_theorem",
+    "electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
     "emergent_lorentz_velocity_rg_exchange_matrix_exact_support_note_2026-06-18",
     "formation_rate_law_class_reduction_bounded_note_2026-07-08",
     "pre_record_reference_state_tracial_derivation_note_2026-05-20",

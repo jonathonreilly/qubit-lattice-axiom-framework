@@ -27,6 +27,15 @@ them.
 
 Current science/open-lane follow-ups:
 
+- `2026-07-24-cycle583-landed-provenance-table-drift`
+  Scope: the Cycle-583 infinite-internal-content note and its paired
+  runner/receipt after the Cycle-578/583 substrate repair.
+  Finding: the runner and receipt enforce the repaired landed bytes, but the
+  note still prints the superseded Cycle-583 runner and Cycle-578
+  runner/receipt/note SHA-256 values.  Editing the note alone would invalidate
+  the receipt-to-note binding, so repair requires a source-side sibling-pin
+  sweep and regenerated receipt/transcript rather than a one-line table edit.
+  Disposition: `fix on main`.
 - `2026-07-19-unit-singlet-physical-consumer-projection-repair`
   Scope: the two-Ward/Step-3 notes and runners that consume the abstract
   central-positive Hilbert--Schmidt theorem, together with their canonical

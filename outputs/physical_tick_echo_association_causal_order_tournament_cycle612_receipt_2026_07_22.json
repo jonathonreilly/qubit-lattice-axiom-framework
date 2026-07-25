@@ -4,11 +4,11 @@
  "audit": "unset",
  "frozen_contract_sha256": "8c8c0082d56c79fec970af54213961db2feb4415c674796d0cefea88a75cbc2c",
  "consumed": {
-  "cycle610_runner": "10f2d837940b1f364a9c75325f15f52dbec640e6ba0b91862caaa14dce2d121c",
-  "cycle611_runner": "1b6bad7ca54d72a9ac3e7effb0ef069b5cdd6e8d31d21af3d2c2adab1e813bec",
-  "cycle610_receipt_sha256": "b3b0a412ab995c11e2161e9d33e979d1f2a808c97f1f10680b25ef778476c3ca"
+  "cycle610_runner": "36fcb1655bbdcd758b69ea1e273821e5c820f738eb63199570c8f36c7e294bac",
+  "cycle611_runner": "15db2200b08bc4a5d7669975806fe51e9b8a55049f0660969d427332602bf9e8",
+  "cycle610_receipt_sha256": "be7e6f6c29e5b914a427a5dccff3bb143eafbc9e0a5150b5c532001b3eb1b0d2"
  },
- "w4_mechanism_verdict": "COUNT-EDIT (single receiver-gated +/-1 tick edit in a dedicated post-corridor stage; both signs symmetric swaps)",
+ "comparison_scope": "A-count is a declared finite comparison convention; no campaign-only response mechanism is imported as authority",
  "a_count_table": [
   {
    "Q": 1,
@@ -108,7 +108,7 @@
   "fine_rate": -0.3128055737015332,
   "raw_control_certified": false,
   "cumulative_success": 0.00695871364018185,
-  "bound_weight_input": 0.892885
+  "bound_weight_input": 0.8928849839419933
  },
  "causal_order": {
   "consistent_admitted": [
@@ -120,11 +120,11 @@
  },
  "interpretation_firewall": [
   "a count word is not time; A-count consistency is not identification",
-  "the pi ceiling is a property of the candidate tick law, not a no-go on advance responses; count-edit mechanisms remain lawful for both signs (W4: the Cycle-451 mechanism is itself a count edit)",
+  "the pi ceiling is a property of the declared candidate tick law, not a no-go on other response mechanisms",
   "matched-ray certification uses spectral data on the certification side only; the preparation and rays consume no spectral data",
   "shared co-registrations are candidate events; the acyclicity result is a finite declared-code statement, not a lattice-wide light-cone theorem"
  ],
- "elapsed_seconds": 5.0688817501068115,
+ "elapsed_seconds": 4.718179702758789,
  "pass_count": 6,
  "fail_count": 1,
  "pass": false

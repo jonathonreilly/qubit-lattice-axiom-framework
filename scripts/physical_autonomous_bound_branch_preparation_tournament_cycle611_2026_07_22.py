@@ -39,7 +39,7 @@ C610_NAME = (
     "physical_intrinsic_tick_event_relational_duration_tournament_"
     "cycle610_2026_07_22"
 )
-C610_SHA256 = "10f2d837940b1f364a9c75325f15f52dbec640e6ba0b91862caaa14dce2d121c"
+C610_SHA256 = "36fcb1655bbdcd758b69ea1e273821e5c820f738eb63199570c8f36c7e294bac"
 FROZEN_CONTRACT_SHA256 = (
     "1dab9ebb17ac1d351651da745ca698a15a3bc94648dd38c6222022df6df77bde"
 )
@@ -315,12 +315,13 @@ def main() -> int:
     )
     receipt["noop_control"] = noop
 
-    # Lawful-domain refusal: a non-antisymmetric input is refused.
+    # Lawful-domain detection: a non-antisymmetric input is outside the domain.
     bad = engine.source()
     bad[1, 0, 0, 0] += 0.1
     defect = engine.antisym_defect(bad)
     check(
-        "lawful-domain: a non-antisymmetric input is refused",
+        "lawful-domain: a non-antisymmetric input is detected outside the "
+        "declared domain",
         defect > 1e-9,
         {"antisym_defect": defect},
     )
@@ -446,10 +447,9 @@ def main() -> int:
     receipt["route_pc"] = pc_results
     pc_weights = [r["bound_weight"] for r in pc_results]
     check(
-        "P-C: ramp fidelity trend and certification outcome are reported "
-        "against the frozen prior (monotone improvement expected, "
-        "certification uncertain)",
-        all(b >= a - 0.02 for a, b in zip(pc_weights, pc_weights[1:])),
+        "P-C frozen prior: bound weight improves monotonically with ramp "
+        "length (certification outcome separately reported)",
+        all(b >= a - 1e-9 for a, b in zip(pc_weights, pc_weights[1:])),
         {"weights": [round(w, 4) for w in pc_weights],
          "certified": [r["certified"] for r in pc_results]},
     )
@@ -500,7 +500,8 @@ def main() -> int:
         "success probability is a norm account, not Born probability",
         "certification uses spectral data; preparation does not",
         "conditioned routes are resource-accounted postselection, not "
-        "deterministic autonomy; the deterministic route is P-C",
+        "deterministic autonomy; the tested deterministic P-C candidate is "
+        "falsified",
     ]
 
     elapsed = time.time() - start

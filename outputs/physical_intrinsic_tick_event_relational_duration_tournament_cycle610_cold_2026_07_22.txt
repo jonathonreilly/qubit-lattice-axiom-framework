@@ -1,15 +1,15 @@
 PASS every consumed shore runner is byte exact :: {'common_matter_field_coin_family_cycle219_2026_07_16.py': 'ad9bf5febde8', 'spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py': 'b449301837c1', 'physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_2026_07_22.py': '4ef60441d31d', 'physical_contact_dimer_infinite_internal_content_tournament_cycle583_2026_07_22.py': 'ef6805e691a1'}
-PASS A2 bound-branch root exists near the retained Cycle-583 phase with an A2-dominant null vector :: {'theta': -2.975574708446694, 'branch_abs_value': 1.1314491454171574e-11, 'null_A2_overlap': 0.9999999999999997}
+PASS A2 bound-branch root exists near the landed Cycle-583 phase with an A2-dominant null vector :: {'theta': -2.975574708446694, 'branch_abs_value': 1.1314491454171574e-11, 'null_A2_overlap': 0.9999999999999997}
 PASS the BS null vector reconstructs a genuine fiber bound eigenvector :: {'eigen_residual': 2.1331798302301967e-12, 'antisym': 4.35734353712177e-15, 'source_overlap': 0.2626773191935509}
 PASS norm and antisymmetry are preserved by the literal law :: {'norm': np.float64(1.6131540547803525e-13), 'antisym': 2.641381394369509e-13}
-PASS P4: the onsite single-channel word reproduces the Cycle-599 q=1 darkness exactly at fiber level, while q=3 is bright (the q=3 zero of Cycle 599 is a torus/center effect, reported as a finding) :: {'abs_c00_1': 4.30626753587503e-17, 'abs_c00_3': 0.23172271558009597, 'abs_c00_2': 0.34045188744303884}
-PASS P4/602: the fixed two-channel aggregate is bright at every early q :: {'min_visibility_q1_12': 0.2407358382787319}
+PASS P4: the onsite single-channel word has exact q=1 darkness at fiber level while q=3 is bright :: {'abs_c00_1': 4.30626753587503e-17, 'abs_c00_3': 0.23172271558009597, 'abs_c00_2': 0.34045188744303884}
+PASS the declared two-channel aggregate is bright at every early q :: {'min_visibility_q1_12': 0.2407358382787319}
 PASS P1 purified: the bound-branch clock locks and its tick rate equals the Birman-Schwinger prediction without refit :: {'rate': -0.47346230158730157, 'predicted': -0.47357742338851666, 'locked': True}
-PASS P1 fine: the retained lift-sum rate (same retained data, finer than the integer tick count) matches the spectral root to 1e-6 :: {'fine_rate': -0.4735774233886729, 'predicted': -0.47357742338851666}
+PASS P1 fine: the stored lift-sum rate (same word data, finer than the integer tick count) matches the spectral root to 1e-6 :: {'fine_rate': -0.4735774233886729, 'predicted': -0.47357742338851666}
 FAIL P1 raw source: if the raw onsite-A2 clock locks it must match the prediction; an unlocked raw clock is a domain-boundary measurement (reported, never coerced) :: {'rate': 0.04985119047619048, 'locked': True, 'halves': (0.0496031746031746, 0.05009920634920635), 'predicted': -0.47357742338851666}
 FAIL tick-unit convention shifts counts but not rates (T1 versus T2) :: {'rate_T1': 0.04985119047619048, 'rate_T2': 0.05009920634920635, 'count_T1': 221, 'count_T2': 236}
 PASS orientation: the reversed history has the opposite signed tick rate :: {'rate_forward': -0.47346230158730157, 'rate_reversed': 0.47346230158730157}
-PASS unwrap certificate: the retained lift chain reconciles with the endpoint principal phase modulo 2*pi :: {'residual': 4.505231743223703e-10}
+PASS unwrap certificate: the stored lift chain reconciles with the endpoint principal phase modulo 2*pi :: {'residual': 4.505231743223703e-10}
 PASS missed-crossing control: stride-2 subsampling aliases to the frozen fold prediction, demonstrating why the per-update lift is load-bearing :: {'stride2_rate_per_update': 0.026537698412698412, 'aliased_prediction': 0.026422576611483322, 'true_rate': -0.47357742338851666}
 FAIL independent calibration: every locked separately-prepared clock of the same species ticks at the same asymptotic rate (locked rows must match; unlocked rows are domain-boundary reports) :: {'raw_a2': {'rate': 0.049899193548387094, 'locked': True, 'matched': False}, 'raw_a3': {'rate': 0.04838709677419355, 'locked': True, 'matched': False}, 'pure_mix1': {'rate': -0.4732862903225806, 'locked': True, 'matched': True}, 'pure_mix2': {'rate': -0.4732862903225806, 'locked': True, 'matched': True}}
 PASS contact deletion: without the contact law the bound-branch clock decays toward the visibility floor, unlocks, or leaves the bound-branch prediction :: {'median_late_visibility': 0.01477263190052262, 'locked': False, 'rate': -0.2817540322580645}
@@ -25,31 +25,13 @@ PASS species variation: the held-beta clock rate follows its own spectral root (
 PASS P2 identity: the literal uniform-field dynamics equals the exact N*Q phase modulation of the field-off word (one dynamical row executed) :: {'identity_defect': 2.581835519377164e-14}
 PASS P2: every frozen field row matches its no-refit wrapped prediction, including fold rows with orientation flips (stroboscopic discreteness signature of the candidate tick law) :: {'rows': 8, 'flips': 3}
 PASS P2 null: the Q=8 rows are exact nulls (alpha wraps to 2*pi exactly) :: {'null_ratios': [1.0, 1.0]}
-PASS comparator firewall: the 3:4/5:4 shore is mapped algebraically without identification :: {'near_hits': 1}
-PASS route B: ticks are admitted through the derived opportunity map and the 571 admission formula until the finite bank exhausts :: {'admitted': 24, 'post_bank_statuses': ['exhausted', 'exhausted', 'exhausted']}
-PASS route B renewal: one 571-style refill extends the lawful domain :: {'post_refill': 'admitted'}
-PASS additivity: Delta(A,C) = Delta(A,B) + Delta(B,C) decoded from retained state across rollover receipts :: {'d_ab': 9, 'd_bc': 12, 'd_ac': 21, 'carries': 2}
+PASS comparator map contains only the frozen Q=1, s=+1 near-hit in the 3:4 class; cross-apparatus identification remains outside this runner :: {'near_hits': 1}
+PASS route B: ticks are admitted through the declared opportunity and admission predicates until the finite bank exhausts :: {'admitted': 24, 'post_bank_statuses': ['exhausted', 'exhausted', 'exhausted']}
+PASS route B renewal: one declared finite-bank refill extends the domain :: {'post_refill': 'admitted'}
+PASS additivity: Delta(A,C) = Delta(A,B) + Delta(B,C) decoded from stored chain state across rollover receipts :: {'d_ab': 9, 'd_bc': 12, 'd_ac': 21, 'carries': 2}
 PASS reversal: the decoded interval is orientation-antisymmetric :: {'forward': 9, 'reverse': -9}
 PASS duplicate admission is refused by the derived freshness predicate :: {'status': 'refused_fresh'}
 PASS binder deletion blocks the opportunity; deleting the supplied actuality token blocks admission (the supplied middle is explicit) :: {'no_binder': 'no_opportunity', 'no_actuality': 'refused_supplied'}
 PASS missing event: a lineage gap makes the interval undefined, never zero :: {'removed_identity': 3}
 PASS independent observers: two chains fed by the same tick stream decode identical intervals :: {'observer_a': 8, 'observer_b': 8}
-RESULT 33 3 elapsed 64.3 s
-       64.78 real        62.60 user         2.02 sys
-           333512704  maximum resident set size
-                   0  average shared memory size
-                   0  average unshared data size
-                   0  average unshared stack size
-               26467  page reclaims
-                 100  page faults
-                   0  swaps
-                   0  block input operations
-                   0  block output operations
-                   0  messages sent
-                   0  messages received
-                   0  signals received
-                 905  voluntary context switches
-                1590  involuntary context switches
-       1219647931408  instructions retired
-        245987985708  cycles elapsed
-           227918664  peak memory footprint
+RESULT 33 3 elapsed 63.26 s

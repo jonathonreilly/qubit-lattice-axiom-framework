@@ -1,30 +1,12 @@
-PASS the Cycle-610 runner is consumed byte-pinned and unchanged :: 10f2d837940b1f36
+PASS the Cycle-610 runner is consumed byte-pinned and unchanged :: 36fcb1655bbdcd75
 PASS the position-representation engine reproduces the Cycle-610 word and the raw source bound weight :: {'rep_defect': 5.162537501411147e-14, 'raw_bound_weight': 0.2626773191935403, 'eig_residual': 2.1331798302301967e-12}
 PASS no-op control reproduces the Cycle-610 falsification: locked but convention-dependent and uncertified :: {'rate_T1': 0.049899193548387094, 'rate_T2': 0.049899193548387094, 'locked': True, 'convention_independent': False, 'certified': False}
-PASS lawful-domain: a non-antisymmetric input is refused :: {'antisym_defect': 0.14142135623730953}
+PASS lawful-domain: a non-antisymmetric input is detected outside the declared domain :: {'antisym_defect': 0.14142135623730953}
 PASS the radius-1 conditioning window is proper-cubic invariant (all 24 frames) :: {'max_mask_defect': 0}
 FAIL P-B prior: the window-conditioning cascade certifies within k <= 12 at m = 16 (raw source in, certified clock out) :: {'first_certified': None}
 PASS conditioning deletion: pure evolution leaves the bound weight at the raw value and uncertified :: {'weight': 0.2626773191931021}
 PASS P-A prior: the minus-port filter raises the bound-weight diagnostic monotonically over the certification grid :: {'8': [0.5122, 0.6887, 0.8103], '16': [0.8929, 0.909, 0.909]}
 PASS port-swap control: the plus port does not purify (the minus port is load-bearing) :: {'plus_port_weight': 0.03173352762619215, 'raw': 0.2626773191935403}
-PASS P-C: ramp fidelity trend and certification outcome are reported against the frozen prior (monotone improvement expected, certification uncertain) :: {'weights': [0.0196, 0.0041, 0.0003], 'certified': [False, False, False]}
+FAIL P-C frozen prior: bound weight improves monotonically with ramp length (certification outcome separately reported) :: {'weights': [0.0196, 0.0041, 0.0003], 'certified': [False, False, False]}
 FAIL held transfer: no certified P-B configuration to transfer :: P-B never certified
-RESULT 9 2 elapsed 16.0 s
-       16.33 real        15.84 user         0.47 sys
-           205094912  maximum resident set size
-                   0  average shared memory size
-                   0  average unshared data size
-                   0  average unshared stack size
-               17655  page reclaims
-                   5  page faults
-                   0  swaps
-                   0  block input operations
-                   0  block output operations
-                   0  messages sent
-                   0  messages received
-                   0  signals received
-                   0  voluntary context switches
-                 531  involuntary context switches
-        259061575982  instructions retired
-         61666130610  cycles elapsed
-           122815256  peak memory footprint
+RESULT 8 3 elapsed 14.96 s

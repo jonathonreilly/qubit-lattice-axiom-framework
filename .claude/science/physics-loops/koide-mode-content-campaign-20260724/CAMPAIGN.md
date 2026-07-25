@@ -93,3 +93,105 @@ assumed (see Wave 1 kill-check).
   count, in which case the binary is definitionally circular and the
   right output is a sharpened statement of that circularity. I hold
   this loosely and expect the kill-check to bite.
+
+---
+
+## WAVE 1 RESULT (2026-07-24): SHARP NEGATIVE, with a NEW structural no-go
+
+**Supervisor prediction was WRONG.** I predicted K acts as an
+antiunitary on a single copy making count-once derivable. It does
+not follow, and the stated circularity worry was correct and is
+sharper than I framed it.
+
+**The computed fact.** Frobenius-Schur indicator on the landed
+carrier: `FS(1, omega, omega-bar) = (+1, 0, 0)`. The charged-lepton
+doublet is **complex type** — neither of the two options the wave
+posed. The K/CPT structure is a REAL structure (`J^2 = +1`, rebuilt
+natively), definitively NOT quaternionic, and that is landed as
+`r`-silent.
+
+**THE NEW RESULT (this is the campaign's deliverable so far).**
+Not a case list — a structural no-go:
+
+> The `C_3`-invariant symmetric-form cone is `diag(g_0, g_1, g_1)`
+> with the singlet:doublet ratio FREE, and `r = g_0/g_1` on the
+> equal-sector locus. The two horns are the HS point `diag(3,6,6)`
+> and the flat point `diag(1,1,1)`. **FS is CONSTANT `(+1,0,0)`
+> across the entire cone while `r` sweeps `(0, infinity)`.**
+> Therefore NO reality-type invariant can ever select the count.
+
+This kills an entire attack class in one statement, and it is
+gated (95 exact sympy gates, all PASS, independently reproducing
+`KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS`).
+
+**Why FS could never have worked (the identity, not a risk).**
+`FS = 0` is not a failure to decide the count — `FS = 0` IS the
+count binary. The trichotomy is exactly `dim_R` vs `dim_C` of an
+isotype (`+1 -> x1`, `0 -> x2`, `-1 -> x4`); only `FS = 0` produces
+the factor 2 at issue, and it is precisely the value structurally
+incapable of resolving it. Relatedly, the KCPT `FS: 0 -> +1` flip
+occurs at DOUBLED complex dimension (`4->8`, `6->12`): adjoining the
+conjugator IS the doubling, so `FS = +1` can never be evidence about
+whether the doubling is physical.
+
+**Route was already foreclosed and we reproduced the foreclosure.**
+`KOIDE_R_HALF_POLARIZATION_SELECTOR_TESTED_STATIC_READOUT_NO_GO_NOTE_2026-06-08.md:157`
+carries `| Complex-type/orientation/Frobenius-Schur route | RULED
+OUT BY PRIOR as selector |`, and `:47` records
+`**Result inside the tested class: 0 of 8 survived.**` with
+"CPT / antiunitary" among the eight lenses.
+
+### THREE FLAGS THAT OUTLIVE THIS WAVE
+
+1. **The landed four-way equivalence may be WRONG.** The
+   "6 vs 12 Grassmann generators" horn is **`r`-NEUTRAL in its
+   landed realization** (`KCPT_COUPLING_TRIPLE_BEREZIN...:177-180`,
+   reproduced by gates K1-K5): it doubles singlet and doublet
+   TOGETHER, so it is not interchangeable with `w = 1/2` vs
+   `w = 1/3`. If the reduction's four-way equivalence is
+   load-bearing anywhere, it needs re-derivation. **This is the
+   highest-value loose thread in the campaign.**
+2. **Stale status label on main.**
+   `CHARGED_LEPTON_VALUE_REDUCES_TO_ONE_COUNTING_BIT_SYNTHESIS_NOTE_2026-06-05.md:72`
+   calls `koide_frobenius_isotype_split_uniqueness` `retained_no_go`;
+   the live ledger says `unaudited`. (Worker did not rely on it.)
+3. **The polarization is supplied at declaration time.** `R^3` is
+   odd-dimensional and has no integral complex-mode count; the
+   declared 6-generator surface has ALREADY complexified to `C^3`.
+   So the Berezin machinery cannot be asked to derive the count it
+   was handed. Also: on `omega + omega-bar` the equivariant
+   antiunitaries include BOTH `J^2 = +1` and `J^2 = -1`
+   representatives, and both commute with the whole K-real mass
+   family (gates Q1-Q8) — so even the wave's own premise was not
+   carrier-forced.
+
+### WHERE THIS LEAVES THE BINARY
+
+`r = g_0/g_1` is a FREE parameter of the `C_3`-invariant form cone.
+No symmetry-type, reality-type, or orientation invariant can fix it
+— that is now a theorem, not a survey. Therefore the count, if it is
+fixable at all, must be fixed by something that distinguishes the
+singlet from the doublet sector **dynamically**: the matter action's
+own kinetic/measure normalization.
+
+## WAVE 2 (next, not yet run)
+
+**Target:** derive `g_0/g_1` from the landed corner action's own
+kinetic normalization, rather than from any invariant. Concretely:
+does the landed charged-lepton corner action assign the singlet and
+doublet sectors a relative kinetic weight, and if so is it `3:6` (HS
+point, `r = 1/2`) or `1:1` (flat point, `r = 1`) or neither?
+
+**Kill-check for Wave 2 (run FIRST):** the landed no-go tested 8
+selector lenses and 0 survived — establish whether "action kinetic
+normalization" was one of the 8. If it was, this campaign is over
+and the honest output is the structural no-go above, written up as
+a narrow note.
+
+**Deliverable regardless of Wave 2's outcome:** a narrow no-go note
+carrying the FS-constant-across-the-cone theorem plus the
+`r`-neutrality correction to the 6-vs-12 horn. That is real,
+gated, and new.
+
+**RUN THE `/exercise` WALL EXERCISE BEFORE WAVE 2** — campaign rule 6
+is now triggered: a route dead-ended.

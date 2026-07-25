@@ -279,7 +279,7 @@ a primitive beyond the retained core (outside this note's scope).
 
 ## Authority notice
 
-This note is a retained **retention-analysis note** closing candidate
+This note is a **retention-analysis note** closing candidate
 class #5 (non-Q_L-block Yukawa vertex structure) as a mechanism for
 breaking Yukawa unification at M_Pl. It does **not** modify:
 

@@ -7,7 +7,7 @@
 
 ## Authority notice
 
-This note is a retained structural sub-theorem on the K-series tail of
+This note is a structural sub-theorem on the K-series tail of
 the P3 missing primitive of the master UV→IR transport obstruction
 theorem. It does not modify any authority note on `main`, does not
 alter any publication-surface table, and does not re-derive any of the

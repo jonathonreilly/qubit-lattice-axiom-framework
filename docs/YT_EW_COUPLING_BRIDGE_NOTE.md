@@ -4,7 +4,7 @@
 **Claim type:** bounded_theorem
 **Status:** bounded numerical-match scan (target-conditioned `taste_weight` scan against observed `sin^2(theta_W)(M_Z)` plus comparator checks)
 **Audit class:** G — load-bearing step is a target-conditioned numerical scan against observed EW comparators, not a derivation from the restricted packet
-**Superseded by (historical):** `COMPLETE_PREDICTION_CHAIN_2026_04_15.md` for the headline `y_t` chain; the present note is retained as a target-conditioned EW-bridge support scan, not a closed derivation
+**Superseded by (historical):** `COMPLETE_PREDICTION_CHAIN_2026_04_15.md` for the headline `y_t` chain; the present note stands as a target-conditioned EW-bridge support scan, not a closed derivation
 **Primary runner:** `scripts/frontier_yt_ew_coupling_derivation.py`
 **Supporting runner (informational):** `scripts/frontier_yt_qfp_insensitivity.py` (QFP insensitivity proxy)
 

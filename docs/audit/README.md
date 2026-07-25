@@ -282,6 +282,52 @@ pre-commit gate stops regrowth. Per row, in order of preference:
    blocker; repair those by re-auditing the actual blocker under the current
    restricted-input process.
 
+## Prose status attribution
+
+Authors may write status prose in their own notes (see "Scope-aware fields"),
+so a status word is never a lint error on its own. What is checked is prose
+that pins a retained-grade or clean status token onto a **named other claim**
+whose live row is weaker — a reader following that citation is told the
+dependency carries authority the audit lane never granted it. `audit_lint.py`
+compares the token to the target's live `effective_status` and reports the
+mismatch as a `prose_status_attribution` **notice**. It is a notice, not an
+error, because author prose stays permitted and the adjacency rule is high
+precision but not perfect.
+
+These lines go stale by a normal mechanism, which is why nothing but the
+ledger should be trusted for status: a note is audited, the note is later
+edited, `seed_audit_ledger.archive_prior_audit()` retires the verdict and
+resets the row — and every downstream sentence quoting the old verdict
+silently becomes false, because nothing in the toolchain reads those
+sentences.
+
+Two narrow shapes are **errors**:
+
+- **`retained_no_go` about a named target.** That effective_status is granted
+  only with `claim_type = no_go`, `audited_clean`, and a current No-Go
+  Discipline packet, so where the named row is weaker the label is wrong by
+  construction, not merely stale. This rule is a ratchet: the population
+  measured when it landed is grandfathered in
+  `scripts/prose_retained_no_go_attribution_baseline.txt`, keyed
+  `<note_path>::<target claim id>` so a grandfathered note still errors when it
+  labels a **new** target, and reported as a drainable
+  `prose_retained_no_go_attribution` notice. A key that no longer describes a
+  live attribution surfaces as
+  `prose_retained_no_go_attribution_baseline_stale` and must be pruned, so the
+  list can only shrink. The baseline sits beside the scripts, not under
+  `data/`, because that directory is restored wholesale from origin/main
+  before a science PR lands and a baseline there would have each drain
+  silently reverted.
+- **A status token asserted with ledger metadata** — an `audit_date`, or an
+  explicit "in the current audit ledger" / "per the ledger" claim. That
+  impersonates the ledger rather than paraphrasing it, and it is exactly the
+  form that outlives the verdict it quotes. No baseline: the ledger is the
+  ledger.
+
+The repair in both cases is the same, and it is not to write a fresher status
+word. State the **cited content** and let `data/ledger/<id[:2]>/<id>.json`
+carry the grade.
+
 ## Workflow
 
 ### Mechanical phase (cron-able)

@@ -26,7 +26,7 @@ sought elsewhere (candidate classes #2, #3, or #4 of the b-quark note).
 
 ## Authority notice
 
-This note is a retained **no-go retention-analysis note** on candidate class
+This note is a **no-go retention-analysis note** on candidate class
 #1 for closing the b-quark absolute-scale gap. It does **not** modify:
 
 - the retained Ward-identity tree-level theorem

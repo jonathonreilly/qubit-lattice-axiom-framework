@@ -33,7 +33,7 @@ precision caveat.
 
 ## Authority notice
 
-This note is a retained **propagation + m_H-specific retention
+This note is a **propagation + m_H-specific retention
 analysis**. It does **not**:
 
 - re-derive the full 3-loop SM RGE system

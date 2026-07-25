@@ -23,7 +23,7 @@ identification of:
 
 ## Authority notice
 
-This note is a retained **framework-native symbolic reduction** layer
+This note is a **framework-native symbolic reduction** layer
 on top of the prior P1 citation/verification chain. It does **not**:
 
 - modify the master obstruction theorem

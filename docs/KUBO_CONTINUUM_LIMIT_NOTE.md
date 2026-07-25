@@ -188,19 +188,19 @@ significant higher-order terms.
 
 ## Cited-authority chain (audit-explicit)
 
-The audit cites two one-hop dependencies for this note. Their current
-ledger statuses are:
+The audit cites two one-hop dependencies for this note:
 
-| Cited authority | `audit_status` | `effective_status` | `claim_type` |
-|---|---|---|---|
-| [`docs/LINEAR_RESPONSE_TRUE_KUBO_NOTE.md`](LINEAR_RESPONSE_TRUE_KUBO_NOTE.md) | audited_clean | retained_bounded | bounded_theorem |
-| [`docs/WAVE_RETARDATION_CONTINUUM_LIMIT_NOTE.md`](WAVE_RETARDATION_CONTINUUM_LIMIT_NOTE.md) | audited_clean | retained_bounded | bounded_theorem |
+| Cited authority | Cited content | Status |
+|---|---|---|
+| [`docs/LINEAR_RESPONSE_TRUE_KUBO_NOTE.md`](LINEAR_RESPONSE_TRUE_KUBO_NOTE.md) | the parallel perturbation propagator `B_j = d(amp_j)/ds` (§"Question") | status per ledger |
+| [`docs/WAVE_RETARDATION_CONTINUUM_LIMIT_NOTE.md`](WAVE_RETARDATION_CONTINUUM_LIMIT_NOTE.md) | the companion continuum-limit lane whose conclusion this lane tests (§"Question") | status per ledger |
 
-Both upstream authorities are now retained-grade (effective_status
-`retained_bounded`). The remaining audit-conditional perimeter is
-therefore not "dependency_not_retained" but the bounded scope of the
-three-point Fam1-only stabilization itself — see "Status authority and
-audit hygiene" at the top of this note.
+This note does not assert a grade for either dependency, and it does not
+assert which repair class its own row carries: both follow the live chain in
+`docs/audit/data/ledger/<id[:2]>/<id>.json`, and the audit lane alone sets
+them. What this note does fix is its own scope — the bounded three-point
+Fam1-only stabilization — see "Status authority and audit hygiene" at the top
+of this note.
 
 ## Audit-aware repair path
 

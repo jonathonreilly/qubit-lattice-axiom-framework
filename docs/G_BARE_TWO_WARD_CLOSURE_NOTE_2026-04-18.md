@@ -2,27 +2,24 @@
 
 **Date:** 2026-04-19 (originally); 2026-05-10 (audit-narrowing refresh:
 status-line scoping + dep-status table at footer).
-**Status:** `audited_conditional` per 2026-04-30 audit; the local
-two-Ward closure algebra is unchanged, but the row inherits one-hop
-dependency on five upstream authorities, of which one
-(Rep-B independence) has reached `audited_clean / retained_bounded`
-since the snapshot, one (same-1PI pinning) is `audited_conditional`,
-and three (YT_WARD, rigidity, structural normalization) remain
-`unaudited`. See "Audit boundary" footer for the full dep-status
-table.
+**Status:** the local two-Ward closure algebra is self-contained, but the
+row inherits one-hop dependency on five upstream authorities (Rep-B
+independence, same-1PI pinning, YT_WARD, rigidity, structural
+normalization). This note states no audit status for itself or for any of
+the five: status per ledger. See the "Audit boundary" footer for the
+dependency list.
 **Type:** positive_theorem (in-note algebra) under upstream-conditional
 imports.
 **Status authority:** independent audit lane only.
 **Authority role:** records the in-note class-B closure algebra
 combining Rep-B independence and the same-1PI pinning identity. Does
-**not** propose retained or promoted-status promotion until the four
-non-clean upstream authorities (same-1PI pinning, YT_WARD, rigidity,
-structural normalization) are ratified to `audited_clean`.
+**not** propose retained or promoted-status promotion; the five declared
+upstream authorities must close on the live ledger first.
 **Primary runner:** `scripts/frontier_g_bare_two_ward_closure.py`
 (`PASS=18, FAIL=0`)
 **Load-bearing theorems:**
-- [G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md](G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md) (`audited_clean / retained_bounded`, audit_date 2026-05-05)
-- [G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md](G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md) (`audited_conditional`, audit_date 2026-04-30)
+- [G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md](G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md) (status per ledger)
+- [G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md](G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md) (status per ledger)
 
 ---
 
@@ -241,24 +238,23 @@ The audit's `verdict_rationale` (load-bearing-step class B):
 > the note may be cited as conditional/supporting local structure, but
 > no retained or promoted audit status propagates through this row.*
 
-The five declared upstream authorities now sit at:
+The five declared upstream authorities, and what each supplies:
 
-| Upstream authority | Effective status (current) | Movement since 2026-04-30 audit snapshot |
+| Upstream authority | Status | Supplies |
 |---|---|---|
-| [`G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md`](G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md) | `audited_clean` / `retained_bounded` (audit_date 2026-05-05) | promoted from `audited_conditional` to `audited_clean / retained_bounded` |
-| [`G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md`](G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md) | `audited_conditional` (audit_date 2026-04-30) | unchanged |
-| [`YT_WARD_IDENTITY_DERIVATION_THEOREM.md`](YT_WARD_IDENTITY_DERIVATION_THEOREM.md) | `unaudited` | unchanged |
-| [`G_BARE_RIGIDITY_THEOREM_NOTE.md`](G_BARE_RIGIDITY_THEOREM_NOTE.md) | `unaudited` | unchanged |
-| [`G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md`](G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md) | `unaudited` | unchanged |
+| [`G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md`](G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md) | status per ledger | Rep-B form factor `F_Htt^(0)(g_bare) = 1/sqrt(6)`, `g_bare`-independent |
+| [`G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md`](G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md) | status per ledger | same-1PI coefficient identity `F_Htt^(0)(g_bare)^2 = g_bare^2/(2 N_c)` |
+| [`YT_WARD_IDENTITY_DERIVATION_THEOREM.md`](YT_WARD_IDENTITY_DERIVATION_THEOREM.md) | status per ledger | Step 3: the OGE-side scalar-singlet coefficient `Gamma_A(q²)` (§A) |
+| [`G_BARE_RIGIDITY_THEOREM_NOTE.md`](G_BARE_RIGIDITY_THEOREM_NOTE.md) | status per ledger | the operator-algebra route (§"Relationship To Other `g_bare` Routes") |
+| [`G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md`](G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md) | status per ledger | the structural Wilson-action normalization route (same §) |
 
-The Rep-B-independence dep has reached `audited_clean / retained_bounded`
-since the 2026-04-30 verdict snapshot. The same-1PI pinning dep
-remains `audited_conditional`, and three deps (YT_WARD, rigidity,
-structural normalization) remain `unaudited`. This row therefore
-stays at `audited_conditional` until those four deps are audited
-clean; the local class-B algebra and the proof in §§A--C are
-unchanged. The cached runner
-`scripts/frontier_g_bare_two_ward_closure.py` remains fresh
+This note quotes no ledger field for any of the five, and states no status
+for its own row: the independent audit lane owns every one of them, and
+`docs/audit/data/ledger/<id[:2]>/<id>.json` is the only place to read them.
+What is fixed here is the scope: the closure is chain-blocked until the
+declared deps close on the live ledger, and the local class-B algebra and
+the proof in §§A--C stand independently of any of those verdicts. The cached
+runner `scripts/frontier_g_bare_two_ward_closure.py` remains fresh
 (`PASS=18, FAIL=0`).
 
 **Cross-reference.** The same-cluster theorem note

@@ -17,7 +17,7 @@
 
 ## Authority notice
 
-This note is a retained structural sub-theorem on the loop-expansion
+This note is a structural sub-theorem on the loop-expansion
 tail of the SM-RGE transport factor `F_yt` carried by the v-matching
 decomposition of the P2 missing primitive of the master UV→IR transport
 obstruction theorem. It does not modify any authority note on `main`,

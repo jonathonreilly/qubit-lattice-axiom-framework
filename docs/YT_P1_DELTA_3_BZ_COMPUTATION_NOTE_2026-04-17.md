@@ -31,7 +31,7 @@ contribution `T_F * n_f * Delta_3 * (alpha_LM / (4 pi))` at `n_f = 6`
 
 ## Authority notice
 
-This note is a retained citation-and-bound sub-theorem that completes
+This note is a citation-and-bound sub-theorem that completes
 the **T_F n_f channel** of the three-channel color decomposition
 established in the Rep-A vs Rep-B cancellation theorem
 (`docs/YT_P1_REP_A_REP_B_CANCELLATION_THEOREM_NOTE_2026-04-17.md`,

@@ -295,6 +295,200 @@ TERMINAL_VERDICTS = {
 
 SUPPORTED_DISPATCH_SCHEMAS = {"promotion_reaudit_queue.v1"}
 
+# --- Prose status attribution ------------------------------------------------
+#
+# This README lane explicitly permits status prose in source notes ("Authors may
+# write whatever status prose they need inside source notes"), so a status word
+# is never an error on its own. What no policy permits is prose that pins a
+# retained-grade or clean status token directly onto a NAMED OTHER claim whose
+# live row is weaker: a reader following that citation is told the dependency
+# carries authority the audit lane never granted. Nothing in the toolchain
+# compared a prose status word against the row it names, which is how such lines
+# accumulated. They are reported as drainable NOTICES -- author prose stays
+# permitted, and the adjacency rule below is high precision but not perfect.
+#
+# Two narrow shapes are errors instead, because no reading of them is legitimate:
+#
+#   (i)  `retained_no_go` asserted about a named target. Promotion to that
+#        effective_status requires claim_type=no_go, audited_clean, AND a
+#        current No-Go Discipline packet; where the named row is weaker the
+#        label is wrong by construction, not merely stale.
+#   (ii) a status token asserted on the same line as ledger metadata -- an
+#        `audit_date`, or an explicit "in the current audit ledger" / "per the
+#        ledger" claim. That impersonates the ledger instead of paraphrasing it,
+#        and it is exactly what survives archive_prior_audit(): when the target
+#        note drifts, seed_audit_ledger archives the verdict and resets the row,
+#        and the hand-copied metadata downstream becomes a corpse nothing checks.
+#
+# Rule (i) is a ratchet, not a sweep: instances present when it landed are
+# grandfathered in `prose_retained_no_go_attribution_baseline.txt`, keyed
+# `<note_path>::<target claim id>` so a grandfathered note still errors when it
+# names a NEW target. A baseline key that no longer describes a live attribution
+# surfaces as a `..._baseline_stale` notice, so the list can only shrink. The
+# baseline lives beside the scripts rather than under `docs/audit/data/` because
+# that directory is restored wholesale from origin/main before a science PR
+# lands, which would silently revert every drain. Rule (ii) has no baseline.
+
+# Strength ordering used ONLY to decide whether a prose token claims more than
+# the live row records. Retained-grade tokens sit at the top because they are
+# the ones that confer citable authority. `decoration_under_<parent>` is
+# retained-grade for chain closure but is explicitly not independent content
+# (ALGEBRAIC_DECORATION_POLICY.md), so it ranks below the literal grades.
+PROSE_STATUS_STRENGTH = {
+    "retained": 100,
+    "retained_no_go": 100,
+    "retained_bounded": 95,
+    "retained_pending_chain": 80,
+    "audited_clean": 70,
+    "open_gate": 40,
+    "audited_conditional": 30,
+    "audited_numerical_match": 25,
+    "audited_renaming": 20,
+    "audited_decoration": 20,
+    "audited_failed": 10,
+    "audit_in_progress": 5,
+    "unaudited": 0,
+    "meta": 0,
+}
+PROSE_DECORATION_UNDER_STRENGTH = 35
+
+_PROSE_STATUS_TOKENS = (
+    (r"retained[_\- ]bounded", "retained_bounded"),
+    (r"retained[_\- ]no[_\- ]?go", "retained_no_go"),
+    (r"audited[_\- ]clean", "audited_clean"),
+    (r"retained[_\- ]grade", "retained"),
+    (r"\bretained\b", "retained"),
+)
+_PROSE_STATUS_TOKEN_RE = re.compile(
+    "|".join(f"(?P<t{i}>{pat})" for i, (pat, _) in enumerate(_PROSE_STATUS_TOKENS)),
+    re.I,
+)
+_PROSE_TOKEN_NAMES = {
+    f"t{i}": name for i, (_, name) in enumerate(_PROSE_STATUS_TOKENS)
+}
+
+# A reference the reader can follow to a ledger-registered note: a markdown link
+# to a `.md`, a backticked path or claim id, or a bare SHOUTY_FILENAME.md.
+_PROSE_REFERENCE_RE = re.compile(
+    r"(?:\[[^\]]{2,200}?\]\(([^)\s]*?([A-Za-z0-9_\-]+\.md))[^)]*\)"
+    r"|`([A-Za-z0-9_\-/]*?([A-Za-z0-9_\-]+\.md))`"
+    r"|`([a-z0-9_]{10,})`"
+    r"|\b([A-Z][A-Z0-9_]{9,}\.md)\b)"
+)
+
+# Negation, tense, or modality shortly before the token means the line is not
+# asserting the status now ("not retained", "would be retained", "was retained",
+# "pending retained-grade promotion", "re-audit toward retained", ...).
+_PROSE_STATUS_HEDGE_RE = re.compile(
+    r"(\bnot\b|\bno\b|\bnever\b|\bwithout\b|\black\w*|\bmissing\b|\bunless\b|\bpending\b|"
+    r"\bawait\w*|\buntil\b|\bonce\b|\bif\b|\bwould\b|\bcould\b|\bmay\b|\bmight\b|\bshould\b|\bwill\b|"
+    r"\bto\s+be\b|\btoward\w*|\btarget\w*|\bcandidate\w*|\bpropos\w*|\brequir\w*|\bneed\w*|\bre-?audit\w*|"
+    r"\bformer\w*|\bpreviou\w*|\bwas\b|\bwere\b|\barchiv\w*|\brather\s+than\b|\bupgrad\w*|\bbelow\b|"
+    r"\bor\s+its\b|\bequivalent\b)[^\n]{0,60}$",
+    re.I,
+)
+
+# Only delimiters between token and reference: this is the "label" relation
+# (a table cell, a parenthetical, a bolded tag), not a sentence that happens to
+# contain both.
+_PROSE_DELIMITER_ONLY_RE = re.compile(r"^[\s|:;,.—–\-()\[\]`*>\"']*$")
+
+_PROSE_LEDGER_IMPERSONATION_RE = re.compile(
+    r"audit_date"
+    r"|in the (?:current|live) audit ledger"
+    r"|per the (?:current |live )?(?:audit )?ledger",
+    re.I,
+)
+
+PROSE_RETAINED_NO_GO_BASELINE_NAME = (
+    "prose_retained_no_go_attribution_baseline.txt"
+)
+
+
+def prose_status_strength(status) -> int:
+    """Rank a live effective_status for the prose-attribution comparison."""
+    if not status:
+        return 0
+    if isinstance(status, str) and status.startswith("decoration_under_"):
+        return PROSE_DECORATION_UNDER_STRENGTH
+    return PROSE_STATUS_STRENGTH.get(status, 0)
+
+
+def build_prose_reference_index(rows: dict) -> tuple[dict[str, str], dict[str, str]]:
+    """Resolvers for prose references: note basename -> claim id, and
+    lowercased claim id -> claim id. Sorted so a duplicated basename (only
+    `readme.md` today) resolves deterministically."""
+    basename_to_claim_id: dict[str, str] = {}
+    claim_id_lookup: dict[str, str] = {}
+    for claim_id, row in sorted(rows.items()):
+        note_path = row.get("note_path") or ""
+        if note_path:
+            basename_to_claim_id.setdefault(
+                posixpath.basename(note_path).lower(), claim_id
+            )
+        claim_id_lookup[claim_id.lower()] = claim_id
+    return basename_to_claim_id, claim_id_lookup
+
+
+def prose_status_attributions(
+    note_body: str,
+    self_claim_id: str,
+    rows: dict,
+    basename_to_claim_id: dict[str, str],
+    claim_id_lookup: dict[str, str],
+):
+    """Yield (line_no, line, token, target_claim_id) for each line that labels a
+    named OTHER registered claim with a status token stronger than that claim's
+    live effective_status.
+
+    Deliberately trades recall for precision: the token and the reference must
+    be adjacent, separated only by delimiters, on one line, with no hedge in
+    front. A sentence that merely mentions both is not an attribution.
+    """
+    for line_no, line in enumerate(note_body.split("\n"), 1):
+        if len(line) > 1200:
+            continue
+        references: list[tuple[str, int, int]] = []
+        for match in _PROSE_REFERENCE_RE.finditer(line):
+            basename = match.group(2) or match.group(4) or match.group(6)
+            if basename:
+                target = basename_to_claim_id.get(basename.lower())
+            else:
+                target = claim_id_lookup.get((match.group(5) or "").lower())
+            if target:
+                references.append((target, match.start(), match.end()))
+        if not references:
+            continue
+        for match in _PROSE_STATUS_TOKEN_RE.finditer(line):
+            token = next(
+                name
+                for group, name in _PROSE_TOKEN_NAMES.items()
+                if match.group(group)
+            )
+            start, end = match.span()
+            if any(a <= start < b for _, a, b in references):
+                continue  # the token is part of the reference text itself
+            if _PROSE_STATUS_HEDGE_RE.search(line[:start]):
+                continue
+            for target, ref_start, ref_end in references:
+                if target == self_claim_id:
+                    continue
+                if ref_start >= end:
+                    gap = line[end:ref_start]
+                elif start >= ref_end:
+                    gap = line[ref_end:start]
+                else:
+                    continue
+                if len(gap) > 40 or not _PROSE_DELIMITER_ONLY_RE.match(gap):
+                    continue
+                if PROSE_STATUS_STRENGTH[token] <= prose_status_strength(
+                    rows[target].get("effective_status")
+                ):
+                    continue
+                yield line_no, line, token, target
+                break
+
+
 _CODEX_FAMILY_RE = re.compile(r"^codex-gpt-(\d+(?:\.\d+)*)$")
 _INLINE_MARKDOWN_LINK_RE = re.compile(
     r"(?<!!)\[[^\]\n]*\]\(\s*"
@@ -777,6 +971,24 @@ def main() -> int:
             "(should be removed by compute_effective_status; rerun the pipeline)"
         )
 
+    # Prose status attribution (see the block comment above
+    # PROSE_STATUS_STRENGTH). Resolvers and the rule-(i) grandfather baseline
+    # are built once; the per-row loop below already reads every note body.
+    prose_basename_index, prose_claim_id_index = build_prose_reference_index(rows)
+    prose_no_go_baseline_path = (
+        REPO_ROOT / "docs" / "audit" / "scripts" / PROSE_RETAINED_NO_GO_BASELINE_NAME
+    )
+    prose_no_go_baseline: set[str] = set()
+    if prose_no_go_baseline_path.exists():
+        prose_no_go_baseline = {
+            line.strip()
+            for line in prose_no_go_baseline_path.read_text(
+                encoding="utf-8"
+            ).splitlines()
+            if line.strip() and not line.strip().startswith("#")
+        }
+    prose_no_go_live: set[str] = set()
+
     # Schema and hard-rule checks.
     for cid, row in rows.items():
         a = row.get("audit_status")
@@ -793,6 +1005,51 @@ def main() -> int:
                 )
             except OSError:
                 pass
+
+        for line_no, line, token, target in prose_status_attributions(
+            note_body, cid, rows, prose_basename_index, prose_claim_id_index
+        ):
+            target_status = rows[target].get("effective_status")
+            where = f"{note_path}:{line_no}"
+            if _PROSE_LEDGER_IMPERSONATION_RE.search(line):
+                # Rule (ii): impersonating the ledger. No baseline; the ledger
+                # shards are the only status source, and a hand-copied
+                # audit_date outlives the verdict it quotes.
+                errors.append(
+                    f"{where}: prose states `{token}` for {target!r} together with ledger "
+                    f"metadata (an audit_date or an explicit ledger claim), but the live row "
+                    f"is {target_status!r}. Cite the claim, not a hand-copied ledger snapshot: "
+                    "docs/audit/data/ledger/<id[:2]>/<id>.json is the only status source, and "
+                    "seed_audit_ledger.archive_prior_audit retires a verdict without touching "
+                    "the prose that quoted it."
+                )
+                continue
+            if token == "retained_no_go":
+                # Rule (i): no live row carries this effective_status where the
+                # named target is weaker, so the label cannot be merely stale.
+                key = f"{note_path}::{target}"
+                prose_no_go_live.add(key)
+                message = (
+                    f"{where}: prose labels {target!r} `retained_no_go`, whose live "
+                    f"effective_status is {target_status!r}. retained_no_go requires "
+                    "claim_type=no_go, audited_clean, and a current No-Go Discipline packet; "
+                    "state the cited content instead of a grade."
+                )
+                if key in prose_no_go_baseline:
+                    add_notice(
+                        "prose_retained_no_go_attribution",
+                        message
+                        + f" Grandfathered in {PROSE_RETAINED_NO_GO_BASELINE_NAME}; "
+                        "drain by removing the label.",
+                    )
+                else:
+                    errors.append(message)
+                continue
+            add_notice(
+                "prose_status_attribution",
+                f"{where}: prose labels {target!r} `{token}`, but its live "
+                f"effective_status is {target_status!r}",
+            )
         source_requires_no_go = no_go_discipline_gate.source_requires_no_go_discipline(
             note_path, note_body, row.get("claim_type")
         )
@@ -1395,6 +1652,16 @@ def main() -> int:
                     "dangling_dependency",
                     f"{cid}: dangling dep {d!r} (no ledger row)",
                 )
+
+    # Grandfathered `retained_no_go` attributions that no longer exist. Reporting
+    # them keeps the baseline shrink-only: a drained key must be pruned, and it
+    # can never be re-added silently because re-adding it errors first.
+    for stale in sorted(prose_no_go_baseline - prose_no_go_live):
+        add_notice(
+            "prose_retained_no_go_attribution_baseline_stale",
+            f"{stale}: listed in {PROSE_RETAINED_NO_GO_BASELINE_NAME} but no longer "
+            "labels that target `retained_no_go`; prune the baseline entry",
+        )
 
     # Effective-status propagation sanity. A retained-grade row's deps must
     # themselves be retained-grade, metadata context, axioms, or approved

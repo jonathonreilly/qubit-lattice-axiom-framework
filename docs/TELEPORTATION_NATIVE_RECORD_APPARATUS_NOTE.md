@@ -216,14 +216,16 @@ The audit verdict (2026-05-05, see top of note) names three load-
 bearing components that are introduced as ideal/projective bounded
 model definitions rather than derived from the retained axiom: the
 Bell-stabilizer transducer, durable pointer irreversibility, and the
-local record-field carrier. The cited authority chain on this row
-currently stands as follows.
+local record-field carrier. The cited authority chain on this row is listed
+below. The dated column is a 2026-05-10 snapshot, not the current chain: live
+status is read from `docs/audit/data/ledger/<id[:2]>/<id>.json`, and where a
+snapshot value has since been superseded the cell says so.
 
 | Cited authority | Note / file | Ledger snapshot (2026-05-10) | Conditional on |
 |---|---|---|---|
 | Bounded apparatus-carrier model (this artifact) | `scripts/frontier_teleportation_native_record_apparatus.py` | runner produces the quoted certificate | bounded model only; not a derivation from `A_min` |
 | 3D+1 causal record channel parent | [`TELEPORTATION_3D1_CAUSAL_RECORD_CHANNEL_NOTE.md`](TELEPORTATION_3D1_CAUSAL_RECORD_CHANNEL_NOTE.md) | `audited_clean` (open_gate) | parent lane reference; same audit-grade open-gate scope |
-| Apparatus-dynamics closure note | [`TELEPORTATION_APPARATUS_DYNAMICS_CLOSURE_NOTE.md`](TELEPORTATION_APPARATUS_DYNAMICS_CLOSURE_NOTE.md) | `audited_clean` (bounded_theorem) | adjacent bounded result; not a substitute for the missing bridge theorems |
+| Apparatus-dynamics closure note | [`TELEPORTATION_APPARATUS_DYNAMICS_CLOSURE_NOTE.md`](TELEPORTATION_APPARATUS_DYNAMICS_CLOSURE_NOTE.md) | snapshot superseded — status per ledger | adjacent bounded result; not a substitute for the missing bridge theorems |
 | Record-field closure note | [`TELEPORTATION_RECORD_FIELD_CLOSURE_NOTE.md`](TELEPORTATION_RECORD_FIELD_CLOSURE_NOTE.md) | `audited_conditional` (open_gate) | adjacent open-gate; record-field carrier is also conditional there |
 | Measurement-record note | [`TELEPORTATION_MEASUREMENT_RECORD_NOTE.md`](TELEPORTATION_MEASUREMENT_RECORD_NOTE.md) | `audited_clean` (bounded_theorem) | bounded readout model; not a derivation of native detector dynamics |
 | Live framework-baseline anchor | [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) | `unaudited` / `meta` | the repository axiom from which the three bridge theorems must derive |

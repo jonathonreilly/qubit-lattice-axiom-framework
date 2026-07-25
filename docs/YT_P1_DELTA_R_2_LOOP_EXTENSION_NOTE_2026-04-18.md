@@ -45,7 +45,7 @@ through-2-loop central of `−4.60 %`.
 
 ## Authority notice
 
-This note is a retained **2-loop structural extension** of the P1
+This note is a **2-loop structural extension** of the P1
 ratio correction on the retained `Cl(3) × Z^3` framework surface. It
 is a faithful roll-up of two prior retained sub-theorems (the 1-loop
 master assembly and the loop-geometric bound) combined with a

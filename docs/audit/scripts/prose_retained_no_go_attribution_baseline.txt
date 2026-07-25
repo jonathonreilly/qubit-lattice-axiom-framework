@@ -1,0 +1,57 @@
+# Grandfathered `retained_no_go` prose attributions (audit_lint rule (i)).
+#
+# One `<note_path>::<target claim id>` per line. Each key names a source note
+# that labels a cited claim `retained_no_go` while that claim's live
+# effective_status is weaker. No live ledger row carries `retained_no_go`, so
+# every key here is a label the ledger does not support.
+#
+# This list is SHRINK-ONLY. A key absent from it is a hard lint error, so a
+# grandfathered note still errors when it labels a NEW target. Removing a
+# label drains its key; audit_lint then reports the leftover key as a
+# `prose_retained_no_go_attribution_baseline_stale` notice, and it must be
+# pruned. Do not add keys to silence the rule -- fix the prose.
+#
+# It lives beside the scripts rather than under docs/audit/data/ because that
+# directory is restored wholesale from origin/main before a science PR lands,
+# which would silently revert every drain.
+# Population when the rule landed: 39 keys / 28 notes / 41 lines.
+
+docs/ANOMALY_FORCES_TIME_THEOREM.md::no_per_site_chirality_theorem_note_2026-05-02
+docs/BETA6_PLAQUETTE_CLOSURE_NOTE_2026-05-29.md::gauge_vacuum_plaquette_constant_lift_obstruction_note
+docs/BETA_EFF_TWO_WITNESS_REFRESH_ASSESSMENT_NOTE_2026-06-12.md::gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03
+docs/CHARGED_LEPTON_BRANNEN_BAE_DELTA_TIER_A_BOUNDED_THEOREM_NOTE_2026-05-30.md::koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24
+docs/CHARGED_LEPTON_BRANNEN_BAE_DELTA_TIER_A_BOUNDED_THEOREM_NOTE_2026-05-30.md::koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24
+docs/CHARGED_LEPTON_BRANNEN_BAE_DELTA_TIER_A_BOUNDED_THEOREM_NOTE_2026-05-30.md::koide_delta_marked_relative_cobordism_no_go_note_2026-04-24
+docs/CLOSURE_T2_GNEWTON_REAUDIT_NOTE_2026-05-10_t2gnewton.md::self_gravity_born_hardening_note
+docs/CTE_RCONN_SPATIAL_TENSOR_COLOR_BRIDGE_IS_A_CROSS_DOMAIN_COINCIDENCE_NARROW_NO_GO_NOTE_2026-06-08.md::quark_route2_source_domain_bridge_no_go_note_2026-04-28
+docs/EW_KAPPA_SELF_ENERGY_OBJECT_PIN_MC_UNDECIDABLE_NO_GO_NOTE_2026-06-08.md::rconn_derived_note
+docs/FLAVOR_CARRIER_DELEGATION_TERMINUS_LOCAL_BLIND_2026-05-31.md::physical_lattice_necessity_note
+docs/G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A_NO_GO_NOTE_2026-06-06.md::strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16
+docs/GENERATION_DEGENERACY_MINIMAL_SYMMETRY_BREAKING_NARROW_THEOREM_NOTE_2026-05-23.md::s3_mass_matrix_no_go_note
+docs/GL_F_IDENTIFICATION_BRIDGE_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-11.md::car_from_positivity_neutrality_note_2026-06-02
+docs/GRAVITY_SIGN_NOT_FORCED_BY_ARROW_STABILITY_OR_SPECTRAL_ROUTES_NO_GO_SHARPENING_NOTE_2026-06-08.md::post_record_clock_rate_interface_2026-06-06
+docs/G_BARE_HILBERT_SCHMIDT_RIGIDITY_THEOREM_NOTE_2026-05-07.md::physical_lattice_necessity_note
+docs/HUBBLE_LANE5_C2_ATTACK_SURFACE_BIPARTITION_NARROW_THEOREM_NOTE_2026-05-27.md::hubble_lane5_c2_ckm_pmns_right_sensitive_selector_stretch_note_2026-04-29
+docs/KOIDE_DELTA_AZIMUTH_SELECTOR_IS_CHIRALITY_ODD_RECORDS_MIRROR_DEGENERACY_NO_GO_NOTE_2026-06-08.md::koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24
+docs/KOIDE_DELTA_PHASE_AND_GENERATION_COUNT_SHARE_ONE_Z2_ORIENTATION_NARROW_THEOREM_NOTE_2026-06-08.md::cl3_frame_free_ambient_chiral_grading_no_go_note_2026-06-02
+docs/KOIDE_FINITE_BETA_WEIGHT_IS_THE_PARTITION_BIT_NOTE_2026-06-02.md::koide_frobenius_isotype_split_uniqueness_note_2026-04-21
+docs/KOIDE_GAMMA5_FACTOR_BRIDGE_NO_GO_NOTE_2026-06-06.md::koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24
+docs/KOIDE_GAMMA5_FACTOR_BRIDGE_NO_GO_NOTE_2026-06-06.md::koide_delta_marked_relative_cobordism_no_go_note_2026-04-24
+docs/KOIDE_HERMITIAN_RECORDS_IMPORT_REQUIRED_NARROW_THEOREM_NOTE_2026-06-02.md::staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25
+docs/KOIDE_MATTER_ATTACHMENT_GATE_EXTRA_ASSUMPTIONS_REVIEW_NOTE_2026-06-02.md::fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28
+docs/KOIDE_MATTER_ATTACHMENT_GATE_EXTRA_ASSUMPTIONS_REVIEW_NOTE_2026-06-02.md::no_per_site_bosonic_ccr_theorem_note_2026-05-02
+docs/KOIDE_MATTER_ATTACHMENT_GATE_EXTRA_ASSUMPTIONS_REVIEW_NOTE_2026-06-02.md::no_per_site_chirality_theorem_note_2026-05-02
+docs/KOIDE_MATTER_ATTACHMENT_GATE_EXTRA_ASSUMPTIONS_REVIEW_NOTE_2026-06-02.md::staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25
+docs/OBSERVABLE_PRINCIPLE_P1_REGISTRATION_REALIZATION_PIN_CONSOLIDATION_NARROW_THEOREM_NOTE_2026-06-11.md::post_record_clock_rate_interface_2026-06-06
+docs/OBSERVABLE_PRINCIPLE_P1_REGISTRATION_REALIZATION_PIN_CONSOLIDATION_NARROW_THEOREM_NOTE_2026-06-11.md::record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06
+docs/PLANCK_HIDDEN_CHARACTER_DELTA_ZERO_POSITIVE_THEOREM_NOTE_2026-05-10_planckP2.md::physical_lattice_necessity_note
+docs/POSITIVITY_BRIDGE_REQUIRES_ORIENTATION_SIGN_NARROW_THEOREM_NOTE_2026-05-23.md::no_per_site_chirality_theorem_note_2026-05-02
+docs/RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md::rconn_derived_note
+docs/ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md::quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28
+docs/ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md::quark_route2_exact_readout_map_note_2026-04-19
+docs/ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md::quark_route2_source_domain_bridge_no_go_note_2026-04-28
+docs/SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md::post_record_clock_rate_interface_2026-06-06
+docs/SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md::single_clock_uniqueness_scope_boundary_2026-06-06
+docs/STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md::physical_lattice_necessity_note
+docs/THREE_GENERATION_OBSERVABLE_DEP_CHAIN_AUDIT_NOTE_2026-05-02.md::physical_lattice_necessity_note
+docs/THREE_GENERATION_OBSERVABLE_DEP_CHAIN_AUDIT_NOTE_2026-05-02.md::s3_mass_matrix_no_go_note

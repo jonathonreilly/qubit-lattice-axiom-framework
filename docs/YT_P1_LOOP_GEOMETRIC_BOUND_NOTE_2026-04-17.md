@@ -25,7 +25,7 @@
 
 ## Authority notice
 
-This note is a retained structural sub-theorem on the loop-expansion
+This note is a structural sub-theorem on the loop-expansion
 tail of the P1 missing primitive of the master UV→IR transport
 obstruction theorem. It does not modify any authority note on `main`,
 does not alter any publication-surface table, and does not re-derive

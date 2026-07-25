@@ -44,7 +44,7 @@ correction on the Ward ratio.
 
 ## Authority notice
 
-This note is a retained **cross-validation** of the retained central
+This note is a **cross-validation** of the central
 `Δ_R = −3.27 %` at `M_Pl`. It exercises a SECOND independent
 derivation chain (SM MSbar 2-loop RGE backward from `v` to `M_Pl`)
 against the FIRST derivation chain (three-channel Rep-A/Rep-B

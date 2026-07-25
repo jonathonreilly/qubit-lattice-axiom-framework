@@ -140,7 +140,7 @@ full-staggered-PT central `−3.77 %` supersedes.
 
 ## Authority notice
 
-This note is a retained **master assembly theorem** on the P1 ratio
+This note is a **master assembly theorem** on the P1 ratio
 correction. It is a faithful roll-up of four prior retained
 sub-theorems; it introduces no new physics. Specifically, this note
 does **not** modify:

@@ -193,7 +193,7 @@ current bounded claim scope of this note.
 
 ## Later update
 
-This note is retained because it is the first all-three-family snapshot at
+This note is kept because it is the first all-three-family snapshot at
 `H = 0.25`. It is **not** the current final read on family portability.
 
 What later changed:

@@ -163,12 +163,12 @@ reality/CPT route shrinks the residual but does not force `T >= 0`.
 | claim_id | effective status |
 |---|---|
 | [`cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10`](CPT_EXACT_REAL_ANTI_HERMITIAN_D_NARROW_THEOREM_NOTE_2026-05-10.md) | retained_bounded |
-| [`single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10`](SINGLE_CLOCK_STONE_FINITE_DIM_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md) | retained |
+| [`single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10`](SINGLE_CLOCK_STONE_FINITE_DIM_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md) | status per ledger |
 | [`pre_record_reference_state_tracial_derivation_note_2026-05-20`](PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md) | retained |
 | [`kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20`](KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md) | retained |
 | [`persistent_record_as_kraus_operator_note_2026-05-20`](PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md) | retained_bounded |
 | [`luders_rule_from_composition_consistency_note_2026-05-20`](LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md) | retained_bounded |
-| [`lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22`](LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md) | retained_bounded |
+| [`lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22`](LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md) | status per ledger |
 | [`yt_lsp_signed_record_source_readout_support_note_2026-05-24`](YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md) | retained_bounded |
 | [`koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10`](KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md) | retained |
 | [`axiom_first_reflection_positivity_theorem_note_2026-04-29`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md) | unaudited |

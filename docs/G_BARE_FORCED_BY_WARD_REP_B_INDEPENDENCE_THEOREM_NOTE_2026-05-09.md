@@ -100,14 +100,14 @@ retained-grade audit status.
 
 | Authority | Audit-lane status | Role |
 |---|---|---|
-| [`G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md`](G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md) | `retained_bounded` in the current audit ledger | provides the `g_bare`-independent Rep-B form factor `F_Htt^(0)(g_bare) = 1/sqrt(6)` |
-| [`G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md`](G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md) | `audited_conditional` | provides the same-1PI coefficient identity `F_Htt^(0)(g_bare)^2 = g_bare^2/(2 N_c)` for arbitrary `g_bare` |
+| [`G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md`](G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md) | status per ledger | provides the `g_bare`-independent Rep-B form factor `F_Htt^(0)(g_bare) = 1/sqrt(6)` |
+| [`G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md`](G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md) | status per ledger | provides the same-1PI coefficient identity `F_Htt^(0)(g_bare)^2 = g_bare^2/(2 N_c)` for arbitrary `g_bare` |
 
 The conditional upgrade would close under both authorities if both are
-retained-grade. The current `audited_conditional` status of the same-1PI
-pinning row is acknowledged in the bounded scope: until that row is
-ratified, this candidate remains chain-blocked and cannot promote a parent
-status surface.
+retained-grade. Whether either has reached that grade is not stated here:
+this note quotes no ledger field, and the audit lane alone sets both rows.
+Until the chain closes on the live ledger, this candidate remains
+chain-blocked and cannot promote a parent status surface.
 
 ## 4. Load-bearing step (class A)
 

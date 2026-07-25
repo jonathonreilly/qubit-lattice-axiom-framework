@@ -3,8 +3,8 @@
   "audit": "unset",
   "authority": "none",
   "branch_head_equality_is_scientific_dependency": false,
-  "cold_internal_elapsed_seconds": 0.24230858299415559,
-  "cold_maximum_RSS_bytes": 87277568,
+  "cold_internal_elapsed_seconds": 0.36007699999026954,
+  "cold_maximum_RSS_bytes": 83492864,
   "controls": {
     "E_G_and_inverse_tested": true,
     "all24_and_all576_tested": true,
@@ -21,7 +21,7 @@
     "transition_receipt_called_Record_or_actuality": false,
     "undefined_coerced_to_zero": false
   },
-  "definitive_run_HEAD": "69e1a7cfbc47ddd73c07e3d4ea8854226cd41389",
+  "definitive_run_HEAD": "78c10785e7cffc9e90e878f52f609adea174bd52",
   "exact_pinned_dependencies": {
     "Cycle219_runner_sha256": "ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a",
     "Cycle230_runner_sha256": "b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae",
@@ -31,9 +31,9 @@
     "Cycle569_runner_sha256": "c0f06a9cc9ffc4dcfe1d80b94da10bbef81ca1c74fddddac48712b0a7c332ced",
     "Cycle570_receipt_sha256": "f104399af621ded1b50e180e6fcce5f254008715b72191c6199fe4d583a8a806",
     "Cycle570_runner_sha256": "853abe5470efd15b154d6cb348d49795a6fa84e77a62f0b21a79105892b1d415",
-    "Cycle573_note_sha256": "7c27ee648c4865985c7286ebb8c332f6c91846cebb608aafab79222b4e2ef1b5",
-    "Cycle573_receipt_sha256": "bac4169a90f7bf45dd05fa0ea1a9febd96497ddb664fcf7673c365b456422e0a",
-    "Cycle573_runner_sha256": "e959fa0ef29787b6eaca0fa0552ad3e921541432e11cdefffda7e9255472ff77"
+    "Cycle573_note_sha256": "fb5eeabcdf7b76fd2c55737e5f0c87bcb557ddd4ec5f03569989ab8aae4d4de2",
+    "Cycle573_receipt_sha256": "61888b3dfa3e777c7b036f0c2156011155afd7c09e022c8ff8f200d1fa8b05c7",
+    "Cycle573_runner_sha256": "a9786cf68a9c669e7e7fe310a00ab9912aa404689651682ccfe3045a06e357f1"
   },
   "frozen_split": {
     "held_refit_parameters": 0,
@@ -116,7 +116,7 @@
     "route_specific_failure_promoted_to_shared_obstruction": false,
     "shared_substrate_obstruction": false
   },
-  "note_sha256": "59bc7ae275140943f017d2a31107504e19fc8871c3bb7881d5b796761ada05ec",
+  "note_sha256": "4a603896d1c659420b72c2ce261aa495aeb085017276e57e1c91ac6e1a8c27a2",
   "optimal_next_campaign": "search the unmodified massive Cycle219/contact update for a compact flat-band pair or nonlinear self-bound orbit; otherwise derive the Route-B control tag from a recyclable local QCA carrier and add a genuine Route-C envelope-clock interaction that makes the decoupled spectator control fail",
   "pass": true,
   "retained_physical_fixtures": {
@@ -184,7 +184,7 @@
     "stream_deletion_signal": 0.21567773497388604,
     "two_standard_plus_reusable_work_M2_per_cell": 75
   },
-  "runner_sha256": "7221d4ebb86fd599cf9dc7cc42535ad5ec461f99661f718c6a2b8d9317c64ba7",
+  "runner_sha256": "67aa2435d66fb34b6734cc564a82ac839525139fdc9e8c347dc1b2277d08b40b",
   "scope_boundary": {
     "Born_probability_closed": false,
     "FORMATION_Record_actuality_closed": false,

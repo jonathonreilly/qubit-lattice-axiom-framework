@@ -382,10 +382,19 @@ _idem06 = max(nrm(P @ P - P) for P in Ps)
 _orth06 = max(nrm(Ps[i] @ Ps[j]) for i in range(n) for j in range(n) if i != j)
 _sum06 = nrm(sum(Ps) - I64)
 _ranks06 = sorted(int(round(np.trace(P).real)) for P in Ps)
+_hinv06 = max(nrm(g @ P - P @ g) for g in gens_H_c for P in Ps)
+_unit06 = max(
+    nrm(
+        (Z.conj().T @ g @ Z).conj().T @ (Z.conj().T @ g @ Z)
+        - np.eye(Z.shape[1])
+    )
+    for g in gens_H_c for Z in Zs
+)
 gate("G01f", _herm06 <= TOL0 and _idem06 <= TOL0 and _orth06 <= TOL0 and _sum06 <= TOL0
-     and _ranks06 == [8, 8, 12, 12, 12, 12],
+     and _ranks06 == [8, 8, 12, 12, 12, 12] and _hinv06 <= TOL0 and _unit06 <= TOL0,
      f"max||P-P^dag|| {bnd(_herm06)}  max||P^2-P|| {bnd(_idem06)}  max||PiPj|| {bnd(_orth06)}  "
-     f"||sumP-I|| {bnd(_sum06)}  ranks={_ranks06}")
+     f"||sumP-I|| {bnd(_sum06)}  ranks={_ranks06}  max_gen||[g,P]|| {bnd(_hinv06)}  "
+     f"max restricted-unitarity defect {bnd(_unit06)}")
 
 # ============ G02 -- T1: the Dirac operator defines the grading character =====================
 gate("G02a", viol_sign == 0,
@@ -564,14 +573,16 @@ _id_k = nrm(K + Gam @ D24)
 gate("G07a", _id_k <= TOL0,
      f"exact identity [D2, P_12+] = -Gam @ D24: ||K + Gam@D24||={_id_k:.3e} ({bnd(_id_k)})")
 
+_gram_k = nrm(K.conj().T @ K - 4 * Q24)
 svK = np.linalg.svd(K, compute_uv=False)   # 64 singular values
 n_near2 = int(np.sum(np.abs(svK - 2.0) <= 1e-9))
 n_near0 = int(np.sum(svK <= 1e-9))
 sv1 = float(svK[0])
 sv24 = float(svK[23])
 sv25 = float(svK[24])
-gate("G07b", n_near2 == 24 and n_near0 == 40 and n_near2 + n_near0 == 64,
-     f"singular values of K: {n_near2} within 1e-9 of 2, {n_near0} <= 1e-9 (sv1={sv1:.16g}, "
+gate("G07b", _gram_k <= TOL0 and n_near2 == 24 and n_near0 == 40 and n_near2 + n_near0 == 64,
+     f"||K^dag K - 4Q24||={_gram_k:.3e} ({bnd(_gram_k)}); singular values of K: "
+     f"{n_near2} within 1e-9 of 2, {n_near0} <= 1e-9 (sv1={sv1:.16g}, "
      f"sv24={sv24:.16g}, sv25={sv25:.3e})")
 
 _maxsv = float(svK[0])
@@ -595,17 +606,21 @@ gate("G07e", _comm_ind12 <= TOL0,
 lambdas = []
 mvals = []
 res_scalar = []
+res_full_eig = []
 for k in range(n):
     Mblk = Zs[k].conj().T @ Mf @ Zs[k]
     d = Zs[k].shape[1]
     lam_k = float(np.trace(Mblk).real / d)
     res_scalar.append(nrm(Mblk - lam_k * np.eye(d)))
+    res_full_eig.append(nrm((Mf - lam_k * I64) @ Zs[k]))
     lambdas.append(lam_k)
     mvals.append(-lam_k / 4.0)
 _max_res_scalar = max(res_scalar)
-gate("G08a", _max_res_scalar <= TOL0,
+_max_res_full_eig = max(res_full_eig)
+gate("G08a", _max_res_scalar <= TOL0 and _max_res_full_eig <= TOL0,
      f"each of six M-blocks Z^dag M Z is scalar lambda*I: max residual={_max_res_scalar:.3e} "
-     f"({bnd(_max_res_scalar)}); lambdas={[round(v, 6) for v in lambdas]}")
+     f"({bnd(_max_res_scalar)}); full eigenspace max||(M-lambda I)Z||={_max_res_full_eig:.3e} "
+     f"({bnd(_max_res_full_eig)}); lambdas={[round(v, 6) for v in lambdas]}")
 
 m_round = [int(round(v)) for v in mvals]
 _m_derived_ok = all(abs(mvals[k] - m_round[k]) <= 1e-9 for k in range(n))
@@ -618,9 +633,9 @@ gate("G08b", _m_derived_ok and m_multiset_ok and _ident_ok,
      f"ind8s->{{{m_round[a8]},{m_round[b8]}}}=(0,3)  ind12s->{{{m_round[i_ind12[0]]},"
      f"{m_round[i_ind12[1]]}}}=(2,2)  12+/-->{{{m_round[i_plus]},{m_round[i_minus]}}}=(1,1)")
 
-_d2_ker = nrm(Zs[a8].conj().T @ D2f @ Zs[a8])
+_d2_ker = nrm(D2f @ Zs[a8])
 gate("G08c", _d2_ker <= TOL0,
-     f"m=0 ind8 (kernel shell): ||Z^dag D2 Z||={_d2_ker:.3e} ({bnd(_d2_ker)}) -- D2 vanishes "
+     f"m=0 ind8 (kernel shell): ||D2 Z||={_d2_ker:.3e} ({bnd(_d2_ker)}) -- D2 vanishes "
      f"(D2^2=0 there and D2 normal => D2=0)")
 
 
@@ -631,15 +646,15 @@ def line_fit(blk, X0):
 
 Jblk_a8 = Zs[a8].conj().T @ Jf @ Zs[a8]
 c_a8, resJ_a8 = line_fit(Jblk_a8, X0_self[a8])
-gate("G08d", resJ_a8 <= TOL0 and abs(c_a8) > 0,
+gate("G08d", resJ_a8 <= TOL0 and abs(c_a8) > SV_GAP,
      f"m=0 ind8: J_full block spans the twisted line, J_blk = c*X0: residual={resJ_a8:.3e} "
-     f"({bnd(resJ_a8)}), |c|={abs(c_a8):.6g} (>0)")
+     f"({bnd(resJ_a8)}), |c|={abs(c_a8):.6g} (>SV_GAP={SV_GAP:.0e})")
 
 D2blk_b8 = Zs[b8].conj().T @ D2f @ Zs[b8]
 c_b8, resD_b8 = line_fit(D2blk_b8, X0_self[b8])
-gate("G08e", resD_b8 <= TOL0 and abs(c_b8) > 0,
+gate("G08e", resD_b8 <= TOL0 and abs(c_b8) > SV_GAP,
      f"m=3 ind8: D2 block spans the twisted line, D2_blk = c*X0: residual={resD_b8:.3e} "
-     f"({bnd(resD_b8)}), |c|={abs(c_b8):.6g} (>0)")
+     f"({bnd(resD_b8)}), |c|={abs(c_b8):.6g} (>SV_GAP={SV_GAP:.0e})")
 
 res_ind12 = []
 c_ind12 = []
@@ -648,9 +663,10 @@ for k in i_ind12:
     ck, rk = line_fit(D2blk, X0_self[k])
     res_ind12.append(rk)
     c_ind12.append(abs(ck))
-gate("G08f", max(res_ind12) <= TOL0 and min(c_ind12) > 0,
+gate("G08f", max(res_ind12) <= TOL0 and min(c_ind12) > SV_GAP,
      f"both m=2 ind12s: D2 block spans the twisted line, D2_blk = c*X0: max residual="
-     f"{max(res_ind12):.3e} ({bnd(max(res_ind12))}), min|c|={min(c_ind12):.6g} (>0)")
+     f"{max(res_ind12):.3e} ({bnd(max(res_ind12))}), min|c|={min(c_ind12):.6g} "
+     f"(>SV_GAP={SV_GAP:.0e})")
 
 print(f"TOTAL: PASS={_P[0]} FAIL={_F[0]}")
 sys.exit(0 if _F[0] == 0 else 1)

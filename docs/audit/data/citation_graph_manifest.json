@@ -1,6 +1,6 @@
 {
- "edge_count": 15021,
- "node_count": 4491,
+ "edge_count": 15022,
+ "node_count": 4492,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -6977,6 +6977,10 @@
   "kcpt_cp_completion_under_extended_group_bounded_theorem_note_2026-07-20": {
    "deps_hash": "f2454b007e3d",
    "out_degree": 3
+  },
+  "kcpt_dirac_chisgn_covariance_schur_forced_fused_block_superstructure_bounded_theorem_note_2026-07-24": {
+   "deps_hash": "904ffe4c3c3e",
+   "out_degree": 1
   },
   "kcpt_dirac_even_algebra_reach_character_cp_charge_bounded_theorem_note_2026-07-21": {
    "deps_hash": "a5586bc5ff1d",

@@ -3,7 +3,7 @@
     "bounded_theorem": 2150,
     "decoration": 27,
     "meta": 363,
-    "no_go": 437,
+    "no_go": 438,
     "open_gate": 208,
     "positive_theorem": 678
   },
@@ -82,7 +82,7 @@
   "effective_status_counts": {
     "audit_in_progress": 2,
     "audited_conditional": 80,
-    "audited_failed": 11,
+    "audited_failed": 12,
     "audited_numerical_match": 6,
     "audited_renaming": 21,
     "decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": 1,

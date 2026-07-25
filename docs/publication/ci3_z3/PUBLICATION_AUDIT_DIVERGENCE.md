@@ -19,10 +19,10 @@ publication tables phrase it.
 |---|---|---:|
 | critical | `unaudited` | 225 |
 | high | `unaudited` | 164 |
-| medium | `unaudited` | 119 |
+| medium | `unaudited` | 118 |
 | critical | `audited_conditional` | 16 |
+| medium | `audited_conditional` | 6 |
 | high | `audited_conditional` | 5 |
-| medium | `audited_conditional` | 5 |
 | ? | `unresolved` | 4 |
 | critical | `audited_failed` | 2 |
 | critical | `audited_renaming` | 2 |
@@ -550,7 +550,7 @@ publication tables phrase it.
 | medium | `plaquette_bootstrap_framework_integration_note_2026-05-03` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `plaquette_bootstrap_framework_specific_positivity_note_2026-05-03` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `pmns_chart_constants_retention_note_2026-05-03` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
-| medium | `pmns_commutant_eigenoperator_selector_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
+| medium | `pmns_commutant_eigenoperator_selector_note` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md |
 | medium | `pmns_graph_commutant_cycle_value_boundary_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `pmns_right_polar_section_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | medium | `pmns_transfer_operator_dominant_mode_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |

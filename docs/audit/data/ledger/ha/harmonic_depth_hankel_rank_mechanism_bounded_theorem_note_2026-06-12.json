@@ -1,42 +1,90 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T07:45:25.308470+00:00",
+  "audit_invocation_history": [
+    "00a7d06a1bc34386a09735da8453d114"
+  ],
+  "audit_invocation_id": "00a7d06a1bc34386a09735da8453d114",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 8,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/frontier_harmonic_depth_hankel_rank_2026_06_12.py"
+    },
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 3.0,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_harmonic_depth_hankel_rank_2026_06_12.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "2b72d6e94b405febc681e8e858785d148b0cf165f56d245a76f2dc6ec983c384",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "2b72d6e94b405febc681e8e858785d148b0cf165f56d245a76f2dc6ec983c384",
+    "runner_path": "scripts/frontier_harmonic_depth_hankel_rank_2026_06_12.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 3
+  },
+  "audit_status": "audited_failed",
+  "auditor": "codex-audit-batch-A-20260725-58d1a27d",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The rank and capture tables are computed for the stated deterministic fixture, but the coupled-gap calculation does not compute the spectral support of the site-0/1 off-diagonal block. It uses the unrelated scalar projector P0+P1 and thresholds basis-dependent terms inside degenerate energy subspaces.",
   "claim_id": "harmonic_depth_hankel_rank_mechanism_bounded_theorem_note_2026-06-12",
-  "claim_scope": null,
+  "claim_scope": "The exact runner-defined L=3, NC=3, tau=0.35, T=256 fixture with fixed seeds, windows 64/128, relative thresholds 1e-5 through 1e-7, and coupling floor 1e-8, including its reported rank/capture ordering and coupled-gap-count boundary.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T07:45:25.308470+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 2,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_failed",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_failed",
   "load_bearing_score": 3.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The number of distinct site-0/1-coupled spectral gaps is identical across states at three each and therefore cannot explain the numerical trajectory-rank ordering.",
+  "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "derived_no_go_boundary"
+  ],
   "note_hash": "33051954a1870d77726013e2fe2c4e4b85d5c663d256d8b40e71aff9b10f25ea",
   "note_path": "docs/HARMONIC_DEPTH_HANKEL_RANK_MECHANISM_BOUNDED_THEOREM_NOTE_2026-06-12.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Recompute coupled spectral support from the gap-resolved Fourier coefficient of the actual rho_t[site0,site1] block, and add an independent rotation check within each degenerate eigenspace.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1270,14 +1318,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
-    "C": 0,
+    "A": 3,
+    "B": 2,
+    "C": 14,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 19
   },
   "runner_path": "scripts/frontier_harmonic_depth_hankel_rank_2026_06_12.py",
   "title": "The Harmonic-Depth Mechanism Located in Numerical Trajectory Rank (Window/Threshold-Relative): Censored Lower Bounds at Window 64, K=6 Smallest at Windows 64/128, Coupled-Gap Counts Identical (Bounded)",
   "transitive_descendants": 3,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: coupled_gap_count uses |(V\u2020rho0V)ab| |(V\u2020(P0+P1)V)ba|, which is not the gap-resolved coefficient of the off-diagonal site-0/1 block and is not invariant under basis rotations inside degenerate eigenspaces. Why this blocks: the runner's three-gap table does not verify the named coupled-gap observable, so the claimed explanatory boundary fails on its own terms even though the fixture-relative rank and capture tables may remain valid. Repair target: compute and threshold the summed matrix Fourier coefficient for each energy gap, with degeneracy-basis invariance checked; claim boundary until fixed: only the deterministic rank/capture data and K=6-smallest ordering are supported. No-Go Discipline judgment: N1 tests only the aggregate gap-count route; N2 has one scoped wall; N3 exposes fixed-state and fixture inputs; N4 has no authority residual; N5 lacks the five required resolution checks; N6 supplies no primitive repair; N7 leaves coupling-weight distribution open; and N8 supplies no applicable closing echo."
 }

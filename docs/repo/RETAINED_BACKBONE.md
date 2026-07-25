@@ -17,7 +17,7 @@ file per claim), summarized in
 | Metric | Value |
 |---|---:|
 | Retained positive rows | 116 |
-| Retained bounded rows | 345 |
+| Retained bounded rows | 346 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 29 |
 
@@ -142,7 +142,7 @@ Sorted by load-bearing graph score (descending).
 - [`tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20`](../../docs/TOMITA_TENSOR_TRACE_ON_FINITE_DIM_MATRIX_NARROW_THEOREM_NOTE_2026-05-20.md) — score 0.000; audited 2026-07-25T15:03:52.540528+00:00
 - [`wolfenstein_lambda_a_product_cancellation_narrow_theorem_note_2026-05-10`](../../docs/WOLFENSTEIN_LAMBDA_A_PRODUCT_CANCELLATION_NARROW_THEOREM_NOTE_2026-05-10.md) — score 0.000; audited 2026-07-25T18:05:21.029457+00:00
 
-## Retained bounded rows (345)
+## Retained bounded rows (346)
 
 Sorted by load-bearing graph score (descending).
 
@@ -409,6 +409,7 @@ Sorted by load-bearing graph score (descending).
 - [`flavor_center_trace_closed_capstone_note_2026-05-30`](../../docs/FLAVOR_CENTER_TRACE_CLOSED_CAPSTONE_NOTE_2026-05-30.md) — score 0.000; audited 2026-06-07T17:56:13.606390+00:00
 - [`flavor_native_beta_no_half_attractor_note_2026-05-30`](../../docs/FLAVOR_NATIVE_BETA_NO_HALF_ATTRACTOR_NOTE_2026-05-30.md) — score 0.000; audited 2026-07-25T13:09:18.040688+00:00
 - [`flavor_retention_law_is_a2plus_note_2026-05-31`](../../docs/FLAVOR_RETENTION_LAW_IS_A2PLUS_NOTE_2026-05-31.md) — score 0.000; audited 2026-07-25T19:47:06.599532+00:00
+- [`flavor_so2_readout_false_binary_note_2026-05-30`](../../docs/FLAVOR_SO2_READOUT_FALSE_BINARY_NOTE_2026-05-30.md) — score 0.000; audited 2026-07-25T21:24:27.030040+00:00
 - [`flavor_spin_statistics_forces_modulo_reconstruction_2026-05-31`](../../docs/FLAVOR_SPIN_STATISTICS_FORCES_MODULO_RECONSTRUCTION_2026-05-31.md) — score 0.000; audited 2026-07-12T05:33:05.271152+00:00
 - [`gate_b_grown_trapping_frontier_note`](../../docs/GATE_B_GROWN_TRAPPING_FRONTIER_NOTE.md) — score 0.000; audited 2026-04-27
 - [`gate_b_grown_trapping_frontier_v2_note`](../../docs/GATE_B_GROWN_TRAPPING_FRONTIER_V2_NOTE.md) — score 0.000; audited 2026-04-27

@@ -1,24 +1,79 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T18:41:33.719844+00:00",
+  "audit_invocation_history": [
+    "699e601b63574940aaf1a9a9eb04506a"
+  ],
+  "audit_invocation_id": "699e601b63574940aaf1a9a9eb04506a",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/single_clock_axis_datum_s4_transportable_check_2026_06_17.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {
+      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    },
+    "dep_claim_scope": {
+      "minimal_axioms": null
+    },
+    "dep_claim_type": {
+      "minimal_axioms": "meta"
+    },
+    "dep_effective_status": {
+      "minimal_axioms": "meta"
+    },
+    "deps": [
+      "minimal_axioms"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 1.5,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/single_clock_axis_datum_s4_transportable_check_2026_06_17.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "d9787ecab5c4a8152be97ba08a14c57a045802068f15b3c9865d1c0ce8337d30",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "d9787ecab5c4a8152be97ba08a14c57a045802068f15b3c9865d1c0ce8337d30",
+    "runner_path": "scripts/single_clock_axis_datum_s4_transportable_check_2026_06_17.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 1
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-b73809fb",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The runner exhaustively closes the stated transport, odd-block falsifier, and parity claims only on its L=(4,4,4,4), m=0.3, time-first surface. It neither performs the claimed m=1.7, L=(6,6,6,6), and alternate-convention checks nor proves the theorem for arbitrary even cubic-symmetric blocks.",
   "claim_id": "single_clock_antiperiodic_axis_datum_s4_transport_bounded_theorem_note_2026-06-17",
-  "claim_scope": null,
+  "claim_scope": "Finite matrix transport on the runner-tested L=(4,4,4,4), time-first staggered, m=0.3 surface, plus the odd L=(3,3,3,3) falsifier and parity-grading invariance; the broader robustness and general even-block scope is not closed.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T18:41:33.719844+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,19 +81,20 @@
     "minimal_axioms"
   ],
   "direct_in_degree": 1,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 1.5,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Since adjacent transpositions generate S4, the antiperiodic-axis label is transportable around all four axes.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "0f98f898f523d30574686e22f2c162f8fad605f74537d2b7c21465e3b4ef826a",
   "note_path": "docs/SINGLE_CLOCK_ANTIPERIODIC_AXIS_DATUM_S4_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-06-17.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "scope_too_broad: narrow the source claim and reproduction text to the runner-tested L=(4,4,4,4), m=0.3, time-first surface, or add the stated robustness checks and an analytic all-even-extent proof; add a dated source-side hygiene line requiring downstream citations to preserve the audited finite scope.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1371,14 +1427,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 22,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 22
   },
   "runner_path": "scripts/single_clock_axis_datum_s4_transportable_check_2026_06_17.py",
   "title": "Single-Clock Antiperiodic Axis Datum S4-Transport Bounded Theorem",
   "transitive_descendants": 1,
-  "verdict_rationale": null
+  "verdict_rationale": "The supplied code genuinely constructs the staggered operators and verifies 22 exact finite-dimensional algebraic checks, so the L=(4,4,4,4) core is sound. The note nevertheless says the runner checks m=1.7, L=(6,6,6,6), and an equivalent phase convention, but those checks are absent from the supplied source and stdout. A single finite even example plus one odd falsifier does not discharge the universal even cubic-symmetric-block claim, leaving a target-comparable generalization lemma unproved."
 }

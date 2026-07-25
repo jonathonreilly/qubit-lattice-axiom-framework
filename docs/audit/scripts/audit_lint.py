@@ -53,6 +53,7 @@ import premise_nodes
 import ledger_io
 import no_go_discipline_gate
 import audit_contract
+import runner_pin_gate
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
 DATA_DIR = REPO_ROOT / "docs" / "audit" / "data"
@@ -1395,6 +1396,67 @@ def main() -> int:
                     "dangling_dependency",
                     f"{cid}: dangling dep {d!r} (no ledger row)",
                 )
+
+    # Runner-pin integrity. A verdict is bound to the runner it names only
+    # through audit_state_snapshot.runner_hash / .helper_runner_hashes; those
+    # are the only fields invalidate_stale_audits can compare. A terminal
+    # verdict whose snapshot leaves a named runner unbound stands even if the
+    # runner is rewritten. Severity follows the note_hash-drift precedent
+    # above: on a retained-grade row an undetectable source change is a real
+    # integrity violation; on a non-retained row it is re-audit-pending and
+    # must not block strict lint.
+    pin_baseline = runner_pin_gate.load_baseline()
+    for cid, row in rows.items():
+        classified = runner_pin_gate.classify_row({**row, "claim_id": cid}, pin_baseline)
+        if classified is None:
+            continue
+        label, detail = classified
+        retained = is_retained_grade(row.get("effective_status"))
+        message = f"{cid}: {detail}"
+        if label == runner_pin_gate.PIN_WRITER_REGRESSION:
+            # The snapshot writer had the field and emitted nothing. Only
+            # apply_audit writes snapshots, and its runner-pin gate refuses
+            # this shape, so a hit here is a regression or a hand-edited row.
+            if retained:
+                errors.append(
+                    message + " (RETAINED-grade row: a verdict that binds no runner "
+                    "source cannot be detected as stale)"
+                )
+            else:
+                add_warning("runner_pin_writer_regression", message)
+        elif label == runner_pin_gate.PIN_BASELINE_MISSING:
+            # Pre-pin snapshot shape on a row the recorded debt does not
+            # cover. The baseline is shrink-only; nothing may enter it.
+            errors.append(
+                message + " (runner_pin_baseline.json is shrink-only; a new "
+                "unpinned terminal verdict must be pinned, not grandfathered)"
+            )
+        elif label == runner_pin_gate.PIN_BASELINE_SOURCE_DRIFTED:
+            add_warning("runner_pin_absent_and_source_drifted", message)
+        elif label == runner_pin_gate.PIN_BASELINE_NEW_DRIFT:
+            if retained:
+                errors.append(
+                    message + " (RETAINED-grade row: do not move a runner that a "
+                    "live unpinned verdict cites — the audit lane must re-look first)"
+                )
+            else:
+                add_warning("runner_pin_baseline_new_drift", message)
+        else:
+            add_notice("runner_pin_grandfathered", message)
+    pin_stale = runner_pin_gate.stale_baseline_entries(rows, pin_baseline)
+    for cid in pin_stale["drained"]:
+        add_notice(
+            "runner_pin_baseline_stale",
+            f"{cid}: runner_pin_baseline.json entry has drained (row is now pinned "
+            "or reset); drop it so the recorded debt keeps shrinking",
+        )
+    if pin_stale["absent"]:
+        add_notice(
+            "runner_pin_baseline_stale",
+            f"{len(pin_stale['absent'])} runner_pin_baseline.json entries name no "
+            f"ledger row (first: {', '.join(pin_stale['absent'][:3])}); drop them "
+            "so the recorded debt keeps shrinking",
+        )
 
     # Effective-status propagation sanity. A retained-grade row's deps must
     # themselves be retained-grade, metadata context, axioms, or approved

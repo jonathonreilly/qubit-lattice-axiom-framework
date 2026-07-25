@@ -1,0 +1,2494 @@
+{
+ "description": "Terminal-verdict ledger rows whose audit_state_snapshot predates the runner-pin fields and therefore binds no runner content. Recorded once, shrink-only: audit_lint errors on any terminal row outside this list, on any retained-grade row whose named runner content moves away from the sha recorded here, and notices every entry that has drained. Entries are never added by tooling and the recorded shas assert repository content at baseline time, never what an auditor saw.",
+ "entries": {
+  "action_power_note": {
+   "audit_date": "2026-05-03T19:47:14.612681+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "runner_path": "scripts/action_power_canonical_harness.py",
+   "runner_sha256_at_baseline": "42edf509eacb80fa08deeffbb58b2d601089e3396dd368783b53f63ae6d4150d"
+  },
+  "action_power_scaling_sweep_note": {
+   "audit_date": "2026-05-19T21:47:36.040389+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/action_universality_probe.py": "8fd9d0d7d21a8b8e27429666885a8a96f967e4971911cdc8db2d0156d2dfcc4f"
+   }
+  },
+  "alpha_lm_geometric_mean_identity_theorem_note_2026-04-24": {
+   "audit_date": "2026-07-15T18:45:38.154373+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/canonical_plaquette_surface.py": "fd681ecbecda7ab5590b72199ee5bbb4393826f0f8e40ca66f8e2e6531646693"
+   }
+  },
+  "alt_connectivity_family_basin_note": {
+   "audit_date": "2026-05-05T04:20:10.208839+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/ALT_CONNECTIVITY_FAMILY_SIGN_SWEEP.py": "c2bd8a6aa8d66ce0156274914ed34b385595c27592ea9e897ddd28de67513301",
+    "scripts/gate_b_no_restore_farfield.py": "e6af20e5f54cbd8d49578d65573fc71c9f2a0a7a77cac1f4c11c6b0e501f8373"
+   }
+  },
+  "alt_connectivity_family_failure_note": {
+   "audit_date": "2026-05-05T11:38:41.425941+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/ALT_CONNECTIVITY_FAMILY_BASIN.py": "f28cfee9c818c92988da7074a68ecf2f40326348b039853f1f26432ca8d21270",
+    "scripts/ALT_CONNECTIVITY_FAMILY_SIGN_SWEEP.py": "c2bd8a6aa8d66ce0156274914ed34b385595c27592ea9e897ddd28de67513301",
+    "scripts/gate_b_no_restore_farfield.py": "e6af20e5f54cbd8d49578d65573fc71c9f2a0a7a77cac1f4c11c6b0e501f8373"
+   }
+  },
+  "alt_connectivity_family_fm_transfer_note": {
+   "audit_date": "2026-05-05T11:39:01.965488+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/ALT_CONNECTIVITY_FAMILY_SIGN_SWEEP.py": "c2bd8a6aa8d66ce0156274914ed34b385595c27592ea9e897ddd28de67513301",
+    "scripts/gate_b_no_restore_farfield.py": "e6af20e5f54cbd8d49578d65573fc71c9f2a0a7a77cac1f4c11c6b0e501f8373"
+   }
+  },
+  "alt_connectivity_family_sign_note": {
+   "audit_date": "2026-05-04T23:31:29.820978+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/gate_b_no_restore_farfield.py": "e6af20e5f54cbd8d49578d65573fc71c9f2a0a7a77cac1f4c11c6b0e501f8373"
+   }
+  },
+  "alternative_coupled_field_probe_note": {
+   "audit_date": "2026-05-19T15:00:19.695379+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/minimal_source_driven_field_probe.py": "16768d58d878f744a7092dca878fd2cb66f6bae8a73ada64ef3fd7e785208457"
+   }
+  },
+  "anderson_phase_mu2_0001_note_2026-04-11": {
+   "audit_date": "2026-04-30T15:12:20.153570+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "runner_path": "scripts/frontier_anderson_phase_unscreened_periodic.py",
+   "runner_sha256_at_baseline": "a830167323c8446f727e43add722ade7daa596b0b592369e15711e86aeeaaa0f"
+  },
+  "asymmetry_persistence_born_note": {
+   "audit_date": "2026-05-29T21:40:44.925162+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/asymmetry_persistence_collapse_pilot.py": "e39f93682f3659b7a5343d0b24e228be936c0fe492dfd68697de0939ba5887d2",
+    "scripts/asymmetry_persistence_joint_card.py": "f70e612a5e327d92010c28353aecaf073f512aacfed8bccb0c906da4347d3d5a",
+    "scripts/asymmetry_persistence_pilot.py": "fde0bc04e19e6de2a3f0899e88b89a283e5d42854c788731f650b4e3ba73655f",
+    "scripts/gap_topological_asymmetry.py": "23a058d0937f929637aa676b503ef279ab452b95030127beefd8a6ec922629c3",
+    "scripts/gap_topological_asymmetry_layernorm_combo.py": "1a102a71830ae25e3093b968bd176305f33e3af558163ef33b24bcf1dad5e044"
+   }
+  },
+  "asymmetry_persistence_collapse_note": {
+   "audit_date": "2026-05-29T06:17:16.528267+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/asymmetry_persistence_pilot.py": "fde0bc04e19e6de2a3f0899e88b89a283e5d42854c788731f650b4e3ba73655f",
+    "scripts/gap_topological_asymmetry.py": "23a058d0937f929637aa676b503ef279ab452b95030127beefd8a6ec922629c3",
+    "scripts/gap_topological_asymmetry_layernorm_combo.py": "1a102a71830ae25e3093b968bd176305f33e3af558163ef33b24bcf1dad5e044"
+   }
+  },
+  "asymmetry_persistence_joint_card_note": {
+   "audit_date": "2026-05-17T13:20:43.861405+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/asymmetry_persistence_pilot.py": "fde0bc04e19e6de2a3f0899e88b89a283e5d42854c788731f650b4e3ba73655f",
+    "scripts/gap_topological_asymmetry.py": "23a058d0937f929637aa676b503ef279ab452b95030127beefd8a6ec922629c3",
+    "scripts/gap_topological_asymmetry_layernorm_combo.py": "1a102a71830ae25e3093b968bd176305f33e3af558163ef33b24bcf1dad5e044"
+   }
+  },
+  "asymmetry_persistence_mass_scaling_note": {
+   "audit_date": "2026-05-17T21:05:43.083600+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/asymmetry_persistence_joint_card.py": "f70e612a5e327d92010c28353aecaf073f512aacfed8bccb0c906da4347d3d5a",
+    "scripts/asymmetry_persistence_pilot.py": "fde0bc04e19e6de2a3f0899e88b89a283e5d42854c788731f650b4e3ba73655f",
+    "scripts/gap_topological_asymmetry.py": "23a058d0937f929637aa676b503ef279ab452b95030127beefd8a6ec922629c3",
+    "scripts/gap_topological_asymmetry_layernorm_combo.py": "1a102a71830ae25e3093b968bd176305f33e3af558163ef33b24bcf1dad5e044"
+   }
+  },
+  "asymmetry_persistence_mass_window_note": {
+   "audit_date": "2026-05-19T15:30:24.899813+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/asymmetry_persistence_joint_card.py": "f70e612a5e327d92010c28353aecaf073f512aacfed8bccb0c906da4347d3d5a",
+    "scripts/asymmetry_persistence_pilot.py": "fde0bc04e19e6de2a3f0899e88b89a283e5d42854c788731f650b4e3ba73655f",
+    "scripts/gap_topological_asymmetry.py": "23a058d0937f929637aa676b503ef279ab452b95030127beefd8a6ec922629c3",
+    "scripts/gap_topological_asymmetry_layernorm_combo.py": "1a102a71830ae25e3093b968bd176305f33e3af558163ef33b24bcf1dad5e044"
+   }
+  },
+  "asymmetry_persistence_pilot_note": {
+   "audit_date": "2026-05-19T14:55:14.653631+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/gap_topological_asymmetry.py": "23a058d0937f929637aa676b503ef279ab452b95030127beefd8a6ec922629c3"
+   }
+  },
+  "backreaction_note": {
+   "audit_date": "2026-06-09T12:30:36.637134+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/backreaction_poisson.py": "17244ab7bd6fd3a37f01f805f4f63eb772ace7a3013e3b750772b13a242beb16"
+   }
+  },
+  "bmv_entanglement_note_2026-04-11": {
+   "audit_date": "2026-04-30T18:42:23.195704+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/periodic_geometry.py": "2d769b7f164e14c69393db7e6d9697b204058e804ea5fb253ca71c0cb9e583c6"
+   },
+   "runner_path": "scripts/frontier_bmv_entanglement.py",
+   "runner_sha256_at_baseline": "10f0a216ee17efc4adbe87e9343fef36a3bfb0c3e849939b6177d1f3bb0b1029"
+  },
+  "bmv_threebody_note_2026-04-11": {
+   "audit_date": "2026-04-30T18:43:54.122930+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/periodic_geometry.py": "2d769b7f164e14c69393db7e6d9697b204058e804ea5fb253ca71c0cb9e583c6"
+   },
+   "runner_path": "scripts/frontier_bmv_threebody.py",
+   "runner_sha256_at_baseline": "7a7d966af4784d456a3d10e99c5808b9e9f9d69e1482457feb44d1265f6580f3"
+  },
+  "born_lane_comparison_note": {
+   "audit_date": "2026-05-24T17:47:15.376049+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/combined_gravity_scaling.py": "514b9b78c8f5c812c7d3e3c46ed75f081fa88d0b209d8d6d17b44fd95fcd4b5c",
+    "scripts/generative_causal_dag_interference.py": "61266823b2ba7a2b225f15dbd54bae3044a627a1ed59704e1a96b0846247a57f",
+    "scripts/topology_families.py": "4f61a1f86bef40d67fec5a2d640df29c1c527a6cffced37e6122d877edce06d1"
+   }
+  },
+  "branch_entanglement_robustness_note_2026-04-11": {
+   "audit_date": "2026-05-03T02:51:05.108196+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/periodic_geometry.py": "2d769b7f164e14c69393db7e6d9697b204058e804ea5fb253ca71c0cb9e583c6"
+   },
+   "runner_path": "scripts/frontier_branch_entanglement_robustness.py",
+   "runner_sha256_at_baseline": "7c3ddc19cf698c3549f861b03c4ba130f4e20e6f5ade17d660f34a43e474e2ea"
+  },
+  "causal_propagating_field_live_packet_note_2026-06-05": {
+   "audit_date": "2026-06-21T05:47:30.165796+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/evolving_network_prototype_v6.py": "5394010a8162963ce6c88171582c53ccb226a2c524439e6287eae9858bf45c7f"
+   }
+  },
+  "central_band_born_dense_sweep_note": {
+   "audit_date": "2026-05-18T12:32:03.870552+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/stochastic_collapse_born_calibration.py": "582cd51d2318f106b9dd0874eee05020e9cf39f0275cb971569ec5c1a190485b"
+   }
+  },
+  "central_band_born_largen_note": {
+   "audit_date": "2026-05-17T15:17:37.837536+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/stochastic_collapse_born_calibration.py": "582cd51d2318f106b9dd0874eee05020e9cf39f0275cb971569ec5c1a190485b"
+   }
+  },
+  "central_band_collapse_note": {
+   "audit_date": "2026-05-24T17:48:25.051481+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/central_band_layernorm_combo.py": "ede0c2eed1c75533893d356eb23c408c0f8f1ca56c82967f74e2da996f58b208",
+    "scripts/combined_gravity_scaling.py": "514b9b78c8f5c812c7d3e3c46ed75f081fa88d0b209d8d6d17b44fd95fcd4b5c",
+    "scripts/generative_causal_dag_interference.py": "61266823b2ba7a2b225f15dbd54bae3044a627a1ed59704e1a96b0846247a57f",
+    "scripts/topology_families.py": "4f61a1f86bef40d67fec5a2d640df29c1c527a6cffced37e6122d877edce06d1"
+   }
+  },
+  "central_band_collapse_strength_note": {
+   "audit_date": "2026-05-24T17:49:59.210598+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/stochastic_collapse_born_calibration.py": "582cd51d2318f106b9dd0874eee05020e9cf39f0275cb971569ec5c1a190485b"
+   }
+  },
+  "central_band_dense_boundary_note": {
+   "audit_date": "2026-05-24T17:52:38.047861+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/central_band_dense_joint_card.py": "cedcc617066154708204a78efaaf6426cc5c6e182fae2e5e303cf199eebdf5c7",
+    "scripts/central_band_layernorm_combo.py": "ede0c2eed1c75533893d356eb23c408c0f8f1ca56c82967f74e2da996f58b208",
+    "scripts/combined_gravity_scaling.py": "514b9b78c8f5c812c7d3e3c46ed75f081fa88d0b209d8d6d17b44fd95fcd4b5c",
+    "scripts/gap_topological_asymmetry.py": "23a058d0937f929637aa676b503ef279ab452b95030127beefd8a6ec922629c3",
+    "scripts/gap_topological_asymmetry_layernorm_combo.py": "1a102a71830ae25e3093b968bd176305f33e3af558163ef33b24bcf1dad5e044",
+    "scripts/generative_causal_dag_interference.py": "61266823b2ba7a2b225f15dbd54bae3044a627a1ed59704e1a96b0846247a57f",
+    "scripts/stochastic_collapse_born_calibration.py": "582cd51d2318f106b9dd0874eee05020e9cf39f0275cb971569ec5c1a190485b",
+    "scripts/topology_families.py": "4f61a1f86bef40d67fec5a2d640df29c1c527a6cffced37e6122d877edce06d1"
+   }
+  },
+  "central_band_dense_joint_highn_note": {
+   "audit_date": "2026-05-17T15:18:36.021974+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/central_band_dense_joint_card.py": "cedcc617066154708204a78efaaf6426cc5c6e182fae2e5e303cf199eebdf5c7",
+    "scripts/central_band_layernorm_combo.py": "ede0c2eed1c75533893d356eb23c408c0f8f1ca56c82967f74e2da996f58b208",
+    "scripts/combined_gravity_scaling.py": "514b9b78c8f5c812c7d3e3c46ed75f081fa88d0b209d8d6d17b44fd95fcd4b5c",
+    "scripts/gap_topological_asymmetry.py": "23a058d0937f929637aa676b503ef279ab452b95030127beefd8a6ec922629c3",
+    "scripts/gap_topological_asymmetry_layernorm_combo.py": "1a102a71830ae25e3093b968bd176305f33e3af558163ef33b24bcf1dad5e044",
+    "scripts/generative_causal_dag_interference.py": "61266823b2ba7a2b225f15dbd54bae3044a627a1ed59704e1a96b0846247a57f",
+    "scripts/stochastic_collapse_born_calibration.py": "582cd51d2318f106b9dd0874eee05020e9cf39f0275cb971569ec5c1a190485b",
+    "scripts/topology_families.py": "4f61a1f86bef40d67fec5a2d640df29c1c527a6cffced37e6122d877edce06d1"
+   }
+  },
+  "central_band_dense_joint_note": {
+   "audit_date": "2026-05-19T14:58:13.039841+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/central_band_layernorm_combo.py": "ede0c2eed1c75533893d356eb23c408c0f8f1ca56c82967f74e2da996f58b208",
+    "scripts/combined_gravity_scaling.py": "514b9b78c8f5c812c7d3e3c46ed75f081fa88d0b209d8d6d17b44fd95fcd4b5c",
+    "scripts/gap_topological_asymmetry.py": "23a058d0937f929637aa676b503ef279ab452b95030127beefd8a6ec922629c3",
+    "scripts/gap_topological_asymmetry_layernorm_combo.py": "1a102a71830ae25e3093b968bd176305f33e3af558163ef33b24bcf1dad5e044",
+    "scripts/generative_causal_dag_interference.py": "61266823b2ba7a2b225f15dbd54bae3044a627a1ed59704e1a96b0846247a57f",
+    "scripts/stochastic_collapse_born_calibration.py": "582cd51d2318f106b9dd0874eee05020e9cf39f0275cb971569ec5c1a190485b",
+    "scripts/topology_families.py": "4f61a1f86bef40d67fec5a2d640df29c1c527a6cffced37e6122d877edce06d1"
+   }
+  },
+  "central_band_dense_largen_note": {
+   "audit_date": "2026-05-24T17:53:40.052724+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/central_band_dense_joint_card.py": "cedcc617066154708204a78efaaf6426cc5c6e182fae2e5e303cf199eebdf5c7",
+    "scripts/central_band_layernorm_combo.py": "ede0c2eed1c75533893d356eb23c408c0f8f1ca56c82967f74e2da996f58b208",
+    "scripts/combined_gravity_scaling.py": "514b9b78c8f5c812c7d3e3c46ed75f081fa88d0b209d8d6d17b44fd95fcd4b5c",
+    "scripts/gap_topological_asymmetry.py": "23a058d0937f929637aa676b503ef279ab452b95030127beefd8a6ec922629c3",
+    "scripts/gap_topological_asymmetry_layernorm_combo.py": "1a102a71830ae25e3093b968bd176305f33e3af558163ef33b24bcf1dad5e044",
+    "scripts/generative_causal_dag_interference.py": "61266823b2ba7a2b225f15dbd54bae3044a627a1ed59704e1a96b0846247a57f",
+    "scripts/stochastic_collapse_born_calibration.py": "582cd51d2318f106b9dd0874eee05020e9cf39f0275cb971569ec5c1a190485b",
+    "scripts/topology_families.py": "4f61a1f86bef40d67fec5a2d640df29c1c527a6cffced37e6122d877edce06d1"
+   }
+  },
+  "central_band_layernorm_note": {
+   "audit_date": "2026-05-21T22:08:00.113358+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/combined_gravity_scaling.py": "514b9b78c8f5c812c7d3e3c46ed75f081fa88d0b209d8d6d17b44fd95fcd4b5c",
+    "scripts/generative_causal_dag_interference.py": "61266823b2ba7a2b225f15dbd54bae3044a627a1ed59704e1a96b0846247a57f",
+    "scripts/topology_families.py": "4f61a1f86bef40d67fec5a2d640df29c1c527a6cffced37e6122d877edce06d1"
+   }
+  },
+  "central_band_mass_window_note": {
+   "audit_date": "2026-05-24T17:38:10.987667+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/central_band_layernorm_combo.py": "ede0c2eed1c75533893d356eb23c408c0f8f1ca56c82967f74e2da996f58b208",
+    "scripts/combined_gravity_scaling.py": "514b9b78c8f5c812c7d3e3c46ed75f081fa88d0b209d8d6d17b44fd95fcd4b5c",
+    "scripts/generative_causal_dag_interference.py": "61266823b2ba7a2b225f15dbd54bae3044a627a1ed59704e1a96b0846247a57f",
+    "scripts/topology_families.py": "4f61a1f86bef40d67fec5a2d640df29c1c527a6cffced37e6122d877edce06d1"
+   }
+  },
+  "ckm_five_sixths_bridge_support_note": {
+   "audit_date": "2026-07-10T16:49:30.040923+00:00",
+   "audit_status": "audited_numerical_match",
+   "effective_status": "audited_numerical_match",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/canonical_plaquette_surface.py": "fd681ecbecda7ab5590b72199ee5bbb4393826f0f8e40ca66f8e2e6531646693"
+   }
+  },
+  "claude_complex_action_carryover_note": {
+   "audit_date": "2026-05-05T04:10:04.777060+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/minimal_source_driven_field_probe.py": "16768d58d878f744a7092dca878fd2cb66f6bae8a73ada64ef3fd7e785208457"
+   }
+  },
+  "claude_complex_action_grown_companion_note": {
+   "audit_date": "2026-05-11T22:49:29.676859+00:00",
+   "audit_status": "audited_clean",
+   "drift_evidence": [
+    "9e717d60cc 2026-05-27 scripts/gate_b_grown_joint_package.py"
+   ],
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/gate_b_grown_joint_package.py": "2d2ab7c6531c69165aba46309f5851b87bc069ed187edad4bd404814a097a239"
+   },
+   "source_drifted_since_verdict": true
+  },
+  "cycle_battery_note_2026-04-10": {
+   "audit_date": "2026-04-30T18:51:52.960005+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "runner_path": "scripts/frontier_staggered_cycle_battery.py",
+   "runner_sha256_at_baseline": "d139bef6390002c66cbebdb6c16e7443b05006b65b58870ab65124a241c5ec48"
+  },
+  "cycle_battery_scaled_note_2026-04-10": {
+   "audit_date": "2026-05-03T02:53:44.450230+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/frontier_staggered_cycle_battery.py": "d139bef6390002c66cbebdb6c16e7443b05006b65b58870ab65124a241c5ec48"
+   },
+   "runner_path": "scripts/frontier_staggered_cycle_battery_scaled.py",
+   "runner_sha256_at_baseline": "80c0580ee5c1704aa2c8ca1c0d86663a9dfcedfcadae1b5e04f90413c56ee24b"
+  },
+  "cycle_break_frontier_note_2026-04-10": {
+   "audit_date": "2026-05-03T03:07:40.116145+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/frontier_staggered_cycle_battery.py": "d139bef6390002c66cbebdb6c16e7443b05006b65b58870ab65124a241c5ec48"
+   },
+   "runner_path": "scripts/frontier_staggered_cycle_break_frontier.py",
+   "runner_sha256_at_baseline": "f2e70199370e758967cd387f8da3320b9f88e7ff6d887dd7d2fde00433c5a1d8"
+  },
+  "cycle_break_slice_note_2026-04-10": {
+   "audit_date": "2026-04-30T15:15:40.808645+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/frontier_staggered_cycle_battery.py": "d139bef6390002c66cbebdb6c16e7443b05006b65b58870ab65124a241c5ec48"
+   },
+   "runner_path": "scripts/frontier_staggered_cycle_break_slice.py",
+   "runner_sha256_at_baseline": "b7878110ad8dacc2f848931e7dba3f9f6d90e5587a59b60c5c36f2fc6c9f6cec"
+  },
+  "cyclic_projector_compression_narrow_theorem_note_2026-05-02": {
+   "audit_date": "2026-05-02T23:25:51.577199+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "runner_path": "scripts/frontier_cyclic_projector_compression_narrow.py",
+   "runner_sha256_at_baseline": "38aed5c7ade118569f06fd1a10f07d71846d924ee51c0c2ed354aa4b60489907"
+  },
+  "dense_prune_guard_seed_note": {
+   "audit_date": "2026-05-25T11:56:44.136205+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/causal_field_mass_scaling.py": "183d3220968bee8255d81d81b3a2804c4dc0b043d2f5c6f0822deeb0794e12a2",
+    "scripts/dense_prune_q003_joint_strict.py": "9a049d2e7f7df1ee7249fcd8dab5e216e769de56d9f1cef7e7b167319bb1d97a",
+    "scripts/three_d_joint_test.py": "683571ca41e69eccd396e900d2c044ccab748f7e0f834a294252908b538a0c02",
+    "scripts/three_d_modular_gravity_mass_scaling.py": "9b4e8d538d8d89d9ecaafa024d3d6fad848f8609128dba482e2ced372f5aa150"
+   }
+  },
+  "dirac_core_card_note": {
+   "audit_date": "2026-04-30T20:26:06.956529+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/frontier_dirac_walk_3plus1d_decoherence_probe.py": "140845fc032813614a8832b5de45b30c733a2f8902f85b2281232fb8f7ef2631",
+    "scripts/frontier_dirac_walk_3plus1d_observable_panel.py": "a83db713cce4556d432e324314a578e555c744898cc7b5dc56028d80e0ce834e",
+    "scripts/frontier_dirac_walk_3plus1d_v2.py": "eb321d213974987bc032fe285b0b09eb4056208742bb79c48f075691c9dedcff",
+    "scripts/frontier_dirac_walk_3plus1d_v3.py": "ad2c4b9859e32e7968a1eca4a1d42783815cfb8540f315ead926cbcce97d20e8",
+    "scripts/frontier_dirac_walk_3plus1d_v4_convergence.py": "a043c07f8e867ea1a39a09df0c5e1f252ddfd76df7c9dd473497aa71400a2b6d"
+   },
+   "runner_path": "scripts/frontier_dirac_walk_3plus1d_core_card.py",
+   "runner_sha256_at_baseline": "654a2a8c000e65b37b157069d941c37df2f895304968d32445b179be31c017ab"
+  },
+  "dirac_observable_panel_note": {
+   "audit_date": "2026-05-25T12:04:42.559964+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/frontier_dirac_walk_3plus1d_v2.py": "eb321d213974987bc032fe285b0b09eb4056208742bb79c48f075691c9dedcff",
+    "scripts/frontier_dirac_walk_3plus1d_v3.py": "ad2c4b9859e32e7968a1eca4a1d42783815cfb8540f315ead926cbcce97d20e8"
+   }
+  },
+  "dirac_weak_coupling_note": {
+   "audit_date": "2026-07-12T04:44:06.866893+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/frontier_dirac_walk_3plus1d_v4_convergence.py": "a043c07f8e867ea1a39a09df0c5e1f252ddfd76df7c9dd473497aa71400a2b6d"
+   }
+  },
+  "directional_b_density_stencil_note": {
+   "audit_date": "2026-05-19T14:57:14.610762+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/density_matrix_analysis.py": "3f125052aa13fd82e2d4a903d74f657d4d32835bc9f3ffdebd1bb4dfbe6a3d1b",
+    "scripts/directional_b_overlap_continuous_density_bridge_card.py": "523643fde080fdfb7f149fb093fd24ea30e0bb1ce3bfefdcbd8db7cfdf9364b0",
+    "scripts/directional_b_overlap_continuous_density_midlayer_holdout.py": "e3fc3a3e3cd315453a8158bf64f67ed89b8c21df7dd9142fee2e58a5f95d6f75",
+    "scripts/directional_b_overlap_continuous_density_tree_control.py": "6681e7d4d3145e7bd1bc091b26ee92bcd463fc848e3edf906cd842d8525b85f9",
+    "scripts/directional_b_overlap_onset_local_density_compare.py": "0e00ef5027a4cadf0005418f93b7bb45e72651bbc518a528787f78bb95ad4bb2",
+    "scripts/directional_b_readout_compare.py": "c5435de4debae3554f4648099dbb259e94fbf96db47564bdd6739d8313c1b15c",
+    "scripts/generative_causal_dag_interference.py": "61266823b2ba7a2b225f15dbd54bae3044a627a1ed59704e1a96b0846247a57f",
+    "scripts/gravity_observable_readout_scaling_compare.py": "35f33cf7fc0486d029cd4653653e7163db1483afdb887557a87af49aac67ae25",
+    "scripts/gravity_packet_local_action_flow_transfer_compare.py": "fcc0cef544de8c5e50ff86e2ca1aed44ea6e6451953067f4b8303d1c509155ec",
+    "scripts/scaling_testbench.py": "fefcf67cba51a2fedb57b24ca3f22066e4cacadee1d5f05939a517c05441a8d4",
+    "scripts/two_register_decoherence.py": "8e96914ae3f7b79a83a11422820bfedc18d070f1762da8dcd5a3bf1c52e2d3eb"
+   }
+  },
+  "dm_full_closure_same_surface_converged_thermal_selector_support_note_2026-04-16": {
+   "audit_date": "2026-04-30T20:20:19.600693+00:00",
+   "audit_status": "audited_clean",
+   "drift_evidence": [
+    "06d93b29b8 2026-06-12 scripts/dm_full_closure_same_surface_thermal_support_common.py",
+    "3e1c14d8f7 2026-05-24 scripts/canonical_plaquette_surface.py"
+   ],
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/canonical_plaquette_surface.py": "fd681ecbecda7ab5590b72199ee5bbb4393826f0f8e40ca66f8e2e6531646693",
+    "scripts/dm_full_closure_minimal_reduced_cycle_extension_map_common.py": "63d6f323675fc1d97a5453b9ae44ca0c60a9fdd5222eb176dc7d4d66f2a50097",
+    "scripts/dm_full_closure_same_surface_thermal_support_common.py": "a35b8aa9bf42484fe3467dcbf97aac42ec1039598d525b130c049b432c12dc82",
+    "scripts/dm_leptogenesis_exact_common.py": "4120a70d63082dd2115b7a9337fb91804478f706ef36f602ab210737f8f0dc41"
+   },
+   "runner_path": "scripts/frontier_dm_full_closure_same_surface_converged_thermal_selector_support.py",
+   "runner_sha256_at_baseline": "85798dbfa301bec14df01e565b0157e1d16fc498313c057fb55c1e1a057449cd",
+   "source_drifted_since_verdict": true
+  },
+  "dm_full_closure_same_surface_thermal_selector_sensitivity_boundary_note_2026-04-16": {
+   "audit_date": "2026-04-30T20:20:57.340384+00:00",
+   "audit_status": "audited_clean",
+   "drift_evidence": [
+    "06d93b29b8 2026-06-12 scripts/dm_full_closure_same_surface_thermal_support_common.py",
+    "3e1c14d8f7 2026-05-24 scripts/canonical_plaquette_surface.py"
+   ],
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/canonical_plaquette_surface.py": "fd681ecbecda7ab5590b72199ee5bbb4393826f0f8e40ca66f8e2e6531646693",
+    "scripts/dm_full_closure_minimal_reduced_cycle_extension_map_common.py": "63d6f323675fc1d97a5453b9ae44ca0c60a9fdd5222eb176dc7d4d66f2a50097",
+    "scripts/dm_full_closure_same_surface_thermal_support_common.py": "a35b8aa9bf42484fe3467dcbf97aac42ec1039598d525b130c049b432c12dc82",
+    "scripts/dm_leptogenesis_exact_common.py": "4120a70d63082dd2115b7a9337fb91804478f706ef36f602ab210737f8f0dc41"
+   },
+   "runner_path": "scripts/frontier_dm_full_closure_same_surface_thermal_selector_sensitivity_boundary.py",
+   "runner_sha256_at_baseline": "57a9267997331a3c86b32edf139725724a88a576372e2f3e126749d2b0f4e491",
+   "source_drifted_since_verdict": true
+  },
+  "dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17": {
+   "audit_date": "2026-06-15T23:17:32.891327+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/canonical_plaquette_surface.py": "fd681ecbecda7ab5590b72199ee5bbb4393826f0f8e40ca66f8e2e6531646693",
+    "scripts/dm_full_closure_minimal_reduced_cycle_extension_map_common.py": "63d6f323675fc1d97a5453b9ae44ca0c60a9fdd5222eb176dc7d4d66f2a50097",
+    "scripts/dm_full_closure_same_surface_thermal_support_common.py": "a35b8aa9bf42484fe3467dcbf97aac42ec1039598d525b130c049b432c12dc82",
+    "scripts/dm_leptogenesis_exact_common.py": "4120a70d63082dd2115b7a9337fb91804478f706ef36f602ab210737f8f0dc41"
+   }
+  },
+  "dm_lepton_synthesis_note_2026-04-19": {
+   "audit_date": "2026-04-30T19:20:01.270753+00:00",
+   "audit_status": "audited_clean",
+   "drift_evidence": [
+    "0bbf5d3be1 2026-07-12 scripts/frontier_sigma_hier_uniqueness_theorem.py",
+    "99646edd68 2026-07-12 scripts/frontier_sigma_hier_uniqueness_theorem.py"
+   ],
+   "effective_status": "retained",
+   "runner_path": "scripts/frontier_sigma_hier_uniqueness_theorem.py",
+   "runner_sha256_at_baseline": "fa68d56412f3e244bca4f2f49705a40bd4591285d9b4cd21da41197d0271f5e0",
+   "source_drifted_since_verdict": true
+  },
+  "edge_deletion_boundary_note": {
+   "audit_date": "2026-05-24T17:57:33.280265+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/inverse_problem_graph_requirements.py": "19e6c762b08527cff0814901e3bccbccd4bc647f9573b772f72be06bca740f3c"
+   }
+  },
+  "edge_deletion_boundary_sweep_note": {
+   "audit_date": "2026-05-09T15:59:59.959322+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/inverse_problem_graph_requirements.py": "19e6c762b08527cff0814901e3bccbccd4bc647f9573b772f72be06bca740f3c"
+   }
+  },
+  "eigenvalue_anderson_phase_note_2026-04-11": {
+   "audit_date": "2026-04-30T19:25:04.070817+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "runner_path": "scripts/frontier_eigenvalue_stats_and_anderson_phase.py",
+   "runner_sha256_at_baseline": "8f8ba413937e5ae6ea29e81f11b3cd7740ed9aac9cb81aa52bba2ba3570afcfe"
+  },
+  "electrostatics_card_note": {
+   "audit_date": "2026-05-04T23:50:38.970936+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/two_body_momentum_harness.py": "7cd4c698f5873b49f9a16183e78d57a0e63f83f90fa8a3fd537d4bc9ef486c24"
+   }
+  },
+  "electrostatics_superposition_proxy_note": {
+   "audit_date": "2026-05-04T23:52:26.154523+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/electric_sign_law_harness.py": "3d3241d5823bb46d8d16c8240ac6767a26beed7bdce41b94097b13ec140af098",
+    "scripts/two_body_momentum_harness.py": "7cd4c698f5873b49f9a16183e78d57a0e63f83f90fa8a3fd537d4bc9ef486c24"
+   }
+  },
+  "emergent_product_law_note": {
+   "audit_date": "2026-04-30T19:25:16.352420+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "runner_path": "scripts/frontier_emergent_product_law.py",
+   "runner_sha256_at_baseline": "0cf3e208707c8c6303a6b3b8672fd24440370c5b1cf685b5ffe64b3b2e8fc534"
+  },
+  "evolving_network_prototype_note": {
+   "audit_date": "2026-05-17T15:26:59.476634+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/self_regulating_gap_3d.py": "2ac1ddbfdf4d9180eede9edc486190053eaea75e80cbc45c0783b930bd79e0e1"
+   }
+  },
+  "evolving_network_prototype_v2_note": {
+   "audit_date": "2026-05-24T17:37:05.323451+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/self_regulating_gap_3d.py": "2ac1ddbfdf4d9180eede9edc486190053eaea75e80cbc45c0783b930bd79e0e1"
+   }
+  },
+  "evolving_network_prototype_v4_note": {
+   "audit_date": "2026-05-03T21:12:02.949613+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "runner_path": "scripts/evolving_network_prototype_v4.py",
+   "runner_sha256_at_baseline": "735ddcb3803068abbbade711f598e2e2da98a19ea6630d1fc19ddbda8e944224"
+  },
+  "evolving_network_prototype_v5_note": {
+   "audit_date": "2026-05-03T21:11:13.527791+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "runner_path": "scripts/evolving_network_prototype_v5.py",
+   "runner_sha256_at_baseline": "472ff8fcfeca2941b7aec27896f5da158fca437d32b6a7b03de7e13aab659db2"
+  },
+  "fifth_family_complex_boundary_note": {
+   "audit_date": "2026-06-10T03:26:11.088428+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/CONNECTIVITY_FAMILY_V2_ELLIPTICAL_SWEEP.py": "48f71df733166a4192974df880f47d179c68d6a6df728c658432830d88d7757d",
+    "scripts/gate_b_no_restore_farfield.py": "e6af20e5f54cbd8d49578d65573fc71c9f2a0a7a77cac1f4c11c6b0e501f8373"
+   }
+  },
+  "fifth_family_complex_note": {
+   "audit_date": "2026-06-11T14:11:42.881573+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/CONNECTIVITY_FAMILY_V2_ELLIPTICAL_SWEEP.py": "48f71df733166a4192974df880f47d179c68d6a6df728c658432830d88d7757d",
+    "scripts/gate_b_no_restore_farfield.py": "e6af20e5f54cbd8d49578d65573fc71c9f2a0a7a77cac1f4c11c6b0e501f8373"
+   }
+  },
+  "fifth_family_radial_boundary_note": {
+   "audit_date": "2026-06-10T03:09:24.983778+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/ALT_CONNECTIVITY_FAMILY_SIGN_SWEEP.py": "c2bd8a6aa8d66ce0156274914ed34b385595c27592ea9e897ddd28de67513301",
+    "scripts/CONNECTIVITY_FAMILY_V2_ELLIPTICAL_SWEEP.py": "48f71df733166a4192974df880f47d179c68d6a6df728c658432830d88d7757d",
+    "scripts/DISTANCE_LAW_PORTABILITY_COMPARE.py": "18eb8e1741f63d45df1c30652cbc3bacc9bd17853f27c87c4f00bda7e4eff918",
+    "scripts/FOURTH_FAMILY_QUADRANT_SWEEP.py": "b1edda866d16458a24398120de5f0758c47dd7ead9dfa903e5510594c41339dc",
+    "scripts/THIRD_GROWN_FAMILY_SIGN_SWEEP.py": "a60a7780284a647829629cbfd8b6d0a2e44f948ff0b1c52e13a0b1fd5b1444d7",
+    "scripts/fifth_family_radial_symmetry_orientation_certificate_2026_06_08.py": "a542e8f2dc6f985310b79cea07b4f0e629b1c6c8b41acf22b599a829a68c6604",
+    "scripts/gate_b_no_restore_farfield.py": "e6af20e5f54cbd8d49578d65573fc71c9f2a0a7a77cac1f4c11c6b0e501f8373"
+   }
+  },
+  "fifth_family_radial_fm_transfer_note": {
+   "audit_date": "2026-06-09T12:55:27.686409+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/CONNECTIVITY_FAMILY_V2_ELLIPTICAL_SWEEP.py": "48f71df733166a4192974df880f47d179c68d6a6df728c658432830d88d7757d",
+    "scripts/CONNECTIVITY_FAMILY_V2_QUADRANT_SWEEP.py": "f8373739bc37d2ee0fb4ac9e54fd6228e245881b0a606256ebf1ed0ee901390e",
+    "scripts/gate_b_no_restore_farfield.py": "e6af20e5f54cbd8d49578d65573fc71c9f2a0a7a77cac1f4c11c6b0e501f8373"
+   }
+  },
+  "fifth_family_radial_note": {
+   "audit_date": "2026-06-09T12:11:33.387553+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/CONNECTIVITY_FAMILY_V2_ELLIPTICAL_SWEEP.py": "48f71df733166a4192974df880f47d179c68d6a6df728c658432830d88d7757d",
+    "scripts/CONNECTIVITY_FAMILY_V2_QUADRANT_SWEEP.py": "f8373739bc37d2ee0fb4ac9e54fd6228e245881b0a606256ebf1ed0ee901390e",
+    "scripts/gate_b_no_restore_farfield.py": "e6af20e5f54cbd8d49578d65573fc71c9f2a0a7a77cac1f4c11c6b0e501f8373"
+   }
+  },
+  "fifth_family_radial_repaired_positive_packet_note_2026-05-29": {
+   "audit_date": "2026-06-07T17:50:51.036553+00:00",
+   "audit_status": "audited_clean",
+   "drift_evidence": [
+    "5ac508c8c8 2026-06-09 scripts/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.py",
+    "5ac508c8c8 2026-06-09 scripts/fifth_family_radial_symmetry_orientation_certificate_2026_06_08.py",
+    "931b56207b 2026-06-08 scripts/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.py",
+    "c67c14b51e 2026-06-08 scripts/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.py"
+   ],
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/ALT_CONNECTIVITY_FAMILY_SIGN_SWEEP.py": "c2bd8a6aa8d66ce0156274914ed34b385595c27592ea9e897ddd28de67513301",
+    "scripts/CONNECTIVITY_FAMILY_V2_ELLIPTICAL_SWEEP.py": "48f71df733166a4192974df880f47d179c68d6a6df728c658432830d88d7757d",
+    "scripts/CONNECTIVITY_FAMILY_V2_QUADRANT_SWEEP.py": "f8373739bc37d2ee0fb4ac9e54fd6228e245881b0a606256ebf1ed0ee901390e",
+    "scripts/DISTANCE_LAW_PORTABILITY_COMPARE.py": "18eb8e1741f63d45df1c30652cbc3bacc9bd17853f27c87c4f00bda7e4eff918",
+    "scripts/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.py": "31c03bd5abf6a95e4c8b7bae980bd37259a96c83882148b68dfd0aaad6916709",
+    "scripts/FIFTH_FAMILY_RADIAL_FM_TRANSFER.py": "0d985aaae5709fc8163991fd7a542f329fcbbe309211d51dfe27337f0d76af71",
+    "scripts/FIFTH_FAMILY_RADIAL_SWEEP.py": "6a0612d0b4142b1a7a46eaf79ed112751538cdce10b2286b294c1c6b283bafec",
+    "scripts/FOURTH_FAMILY_QUADRANT_SWEEP.py": "b1edda866d16458a24398120de5f0758c47dd7ead9dfa903e5510594c41339dc",
+    "scripts/THIRD_GROWN_FAMILY_SIGN_SWEEP.py": "a60a7780284a647829629cbfd8b6d0a2e44f948ff0b1c52e13a0b1fd5b1444d7",
+    "scripts/fifth_family_radial_symmetry_orientation_certificate_2026_06_08.py": "a542e8f2dc6f985310b79cea07b4f0e629b1c6c8b41acf22b599a829a68c6604",
+    "scripts/gate_b_no_restore_farfield.py": "e6af20e5f54cbd8d49578d65573fc71c9f2a0a7a77cac1f4c11c6b0e501f8373"
+   },
+   "source_drifted_since_verdict": true
+  },
+  "fixed_field_complex_grown_basin_v2_note": {
+   "audit_date": "2026-05-12T00:19:40.930522+00:00",
+   "audit_status": "audited_clean",
+   "drift_evidence": [
+    "9e717d60cc 2026-05-27 scripts/gate_b_grown_joint_package.py"
+   ],
+   "effective_status": "retained",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/complex_action_grown_companion.py": "59b8ff8d1a7f6c26f078f3501bb728d3b2bf0b80fff94b9212ae98ed8a9c6295",
+    "scripts/gate_b_grown_joint_package.py": "2d2ab7c6531c69165aba46309f5851b87bc069ed187edad4bd404814a097a239"
+   },
+   "source_drifted_since_verdict": true
+  },
+  "fixed_field_family_unification_note": {
+   "audit_date": "2026-05-25T11:59:07.926240+00:00",
+   "audit_status": "audited_clean",
+   "drift_evidence": [
+    "9e717d60cc 2026-05-27 scripts/gate_b_grown_joint_package.py"
+   ],
+   "effective_status": "retained",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/GATE_B_NONLABEL_SIGN_GROWN_TRANSFER.py": "3b9111df0ce6dc81dfd1002cfb5097e84f7c3bb68e593d21530b68a08c9d44ab",
+    "scripts/complex_action_grown_companion.py": "59b8ff8d1a7f6c26f078f3501bb728d3b2bf0b80fff94b9212ae98ed8a9c6295",
+    "scripts/gate_b_grown_joint_package.py": "2d2ab7c6531c69165aba46309f5851b87bc069ed187edad4bd404814a097a239"
+   },
+   "source_drifted_since_verdict": true
+  },
+  "fixed_field_grown_transfer_scout_note": {
+   "audit_date": "2026-05-12T00:20:01.571961+00:00",
+   "audit_status": "audited_clean",
+   "drift_evidence": [
+    "9e717d60cc 2026-05-27 scripts/gate_b_grown_joint_package.py"
+   ],
+   "effective_status": "retained",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/gate_b_grown_joint_package.py": "2d2ab7c6531c69165aba46309f5851b87bc069ed187edad4bd404814a097a239"
+   },
+   "source_drifted_since_verdict": true
+  },
+  "fm_transfer_note": {
+   "audit_date": "2026-04-27",
+   "audit_status": "audited_clean",
+   "drift_evidence": [
+    "a2f1a67541 2026-06-07 scripts/fm_transfer_grown_companion.py"
+   ],
+   "effective_status": "retained",
+   "runner_path": "scripts/fm_transfer_grown_companion.py",
+   "runner_sha256_at_baseline": "bc7fc5ef9243989603105405a7c82ca49426312628b76b7057db16a844e70571",
+   "source_drifted_since_verdict": true
+  },
+  "fourth_family_quadrant_note": {
+   "audit_date": "2026-05-05T04:30:11.309847+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/gate_b_no_restore_farfield.py": "e6af20e5f54cbd8d49578d65573fc71c9f2a0a7a77cac1f4c11c6b0e501f8373"
+   }
+  },
+  "gate_b_grown_trapping_frontier_note": {
+   "audit_date": "2026-04-27",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "runner_path": "scripts/gate_b_grown_trapping_frontier_probe.py",
+   "runner_sha256_at_baseline": "f3f56197b3692fa78abf4fa9e11212b0af9527ea8521e34d187d8686ee1d5f07"
+  },
+  "gate_b_grown_trapping_frontier_v2_note": {
+   "audit_date": "2026-04-27",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "runner_path": "scripts/gate_b_grown_trapping_frontier_v2.py",
+   "runner_sha256_at_baseline": "40e7c33e039de19765bda08f085ca5ccfaaf58f950ad622d27f3fd457d2a0e4e"
+  },
+  "gate_b_grown_trapping_frontier_v3_note": {
+   "audit_date": "2026-04-27",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "runner_path": "scripts/gate_b_grown_trapping_frontier_v3.py",
+   "runner_sha256_at_baseline": "be93113f175bc861f8254bb826cfc3425d17990dce715ec12411cde1baad8c42"
+  },
+  "gate_b_grown_trapping_transport_note": {
+   "audit_date": "2026-04-27",
+   "audit_status": "audited_clean",
+   "drift_evidence": [
+    "a2f1a67541 2026-06-07 scripts/gate_b_grown_trapping_transport_probe.py"
+   ],
+   "effective_status": "retained_bounded",
+   "runner_path": "scripts/gate_b_grown_trapping_transport_probe.py",
+   "runner_sha256_at_baseline": "7e058418cc3539ae18981866e936a6123487df74b95f958f8722226aa24ad0a4",
+   "source_drifted_since_verdict": true
+  },
+  "gate_b_local_stencil_connectivity_bridge_bounded_theorem_note_2026-06-18": {
+   "audit_date": "2026-07-09T06:41:59.617948+00:00",
+   "audit_status": "audited_clean",
+   "drift_evidence": [
+    "a9ab374f4f 2026-07-12 scripts/gate_b_connectivity_tolerance.py",
+    "e3c1478c55 2026-07-12 scripts/gate_b_connectivity_tolerance.py"
+   ],
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/gate_b_connectivity_tolerance.py": "54265225cd5ba224e35fb98376f14f19f57ff68cd20f25e9cc27930b681ad646"
+   },
+   "source_drifted_since_verdict": true
+  },
+  "gate_b_nonlabel_sign_grown_transfer_note": {
+   "audit_date": "2026-05-25T11:31:42.705039+00:00",
+   "audit_status": "audited_clean",
+   "drift_evidence": [
+    "9e717d60cc 2026-05-27 scripts/gate_b_grown_joint_package.py"
+   ],
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/gate_b_grown_joint_package.py": "2d2ab7c6531c69165aba46309f5851b87bc069ed187edad4bd404814a097a239"
+   },
+   "source_drifted_since_verdict": true
+  },
+  "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20": {
+   "audit_date": "2026-07-07T20:02:04.897842+00:00",
+   "audit_status": "audited_conditional",
+   "drift_evidence": [
+    "21410777a1 2026-07-16 scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py",
+    "21410777a1 2026-07-16 scripts/frontier_dm_leptogenesis_ne_projected_source_law_derivation.py",
+    "44e1b44f55 2026-07-16 scripts/frontier_gauge_vacuum_plaquette_perron_reduction_theorem.py",
+    "546dac12c0 2026-07-16 scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py",
+    "6358443240 2026-07-18 scripts/frontier_gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_2026_04_19.py",
+    "6358443240 2026-07-18 scripts/frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization.py",
+    "76e6894541 2026-07-18 scripts/frontier_gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_2026_04_19.py",
+    "76e6894541 2026-07-18 scripts/frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization.py",
+    "7e28c01cbd 2026-07-16 scripts/frontier_gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_2026_04_19.py",
+    "7e28c01cbd 2026-07-16 scripts/frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization.py",
+    "abfd82d89d 2026-07-18 scripts/frontier_gauge_vacuum_plaquette_local_environment_factorization.py",
+    "abfd82d89d 2026-07-18 scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure.py",
+    "bdbfd89e3b 2026-07-18 scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure.py",
+    "e2a79c44ec 2026-07-16 scripts/frontier_dm_leptogenesis_ne_projected_source_law_derivation.py",
+    "eea94cdfc0 2026-07-16 scripts/frontier_dm_leptogenesis_ne_projected_source_law_derivation.py"
+   ],
+   "effective_status": "audited_conditional",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/dm_leptogenesis_exact_common.py": "4120a70d63082dd2115b7a9337fb91804478f706ef36f602ab210737f8f0dc41",
+    "scripts/frontier_dm_leptogenesis_constructive_live_doublet_corner_descendant_theorem.py": "62ac5d17ad70df3ba9bd4d95433b56ee0a489b3e476350e742c275a7a7c132a1",
+    "scripts/frontier_dm_leptogenesis_constructive_live_k12_minimal_sufficiency_theorem.py": "688217a493c16feef5dd6aa274d5998e7de58349f691edeaf727f29fa7f1e865",
+    "scripts/frontier_dm_leptogenesis_dweh_even_split_transfer_layer.py": "f108d4a045cf0fa9710ec4e0ec3bf9611395e953b19c8d1327bce4237b5198d3",
+    "scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py": "f40f1b4dc97dd11cb68b3cdf614cece78ebdb89778b3f24d3bdb59a97a1746c2",
+    "scripts/frontier_dm_leptogenesis_full_microscopic_reduction.py": "329c5d87ff01853834bf711b795c1933bd0234ad647bcc8aa20b5160bb694190",
+    "scripts/frontier_dm_leptogenesis_k00_sparse_face_target_preimage_theorem.py": "1699cf75c8fb13ffbb1f9ec18601ae246e25f1b9e20ff27e6acaeb02b39598f2",
+    "scripts/frontier_dm_leptogenesis_k00_sparse_face_transfer_layer.py": "6a18ef76fbee126887855a146529eda92280d568b9eaf48dd1b46325af1f0a89",
+    "scripts/frontier_dm_leptogenesis_ne_projected_source_law_derivation.py": "7ec4d6f6c683edd5680a30df740bb8c1e574bbff5831a6e4fe3ef96422521528",
+    "scripts/frontier_dm_leptogenesis_ne_projected_source_triplet_sign_theorem.py": "eb78ed21722a474a2ced8b831b2ba784b47f8f57a185d4e3c3d6deeba33daf10",
+    "scripts/frontier_dm_leptogenesis_pmns_active_projector_reduction.py": "7c6c379d4b6e70ad78607eb3c5655d241a9a0cb42a6a1dc54607b16afc529c22",
+    "scripts/frontier_dm_leptogenesis_pmns_constructive_projected_source_selector_theorem.py": "2b37764c11e2593c2d83fd346fc3b0a5a2ad81be7f9b5daaf7d18344217e8ab8",
+    "scripts/frontier_dm_leptogenesis_pmns_cp_bridge_boundary.py": "b24c8fc3c1dc0e0ff84f03cb512391c1b0d2bfc16a51760bb94d231d131764e7",
+    "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py": "563fa74307f829d7cb673e7a6497a76aad85a5d78c378ddc1dc7b877651fd31f",
+    "scripts/frontier_dm_leptogenesis_pmns_transport_extremal_source_candidate.py": "4c9d592a7e85565d8af0220686451ebe5c38a553a0888807474c5ce8a1350e26",
+    "scripts/frontier_dm_neutrino_breaking_triplet_cp_theorem.py": "26be65c14f41b944294a8c6636324cdf865df7ab08580565c4783c589dd7381c",
+    "scripts/frontier_dm_neutrino_exact_h_source_surface_preimage_bundle_theorem.py": "10061fd219064353a68bef3c0c348bf84e9a83ead67c9783da9f4ad2de5d646e",
+    "scripts/frontier_dm_neutrino_hermitian_bridge_carrier.py": "83d978eacf3c919b0153a8268e3881f5cc266619e8afa26da61cba533c2d09d0",
+    "scripts/frontier_dm_neutrino_positive_polar_h_cp_theorem.py": "11ee73d73372c30698e05decdeee3cf8d101b4805b44026f34fbd07f145509cd",
+    "scripts/frontier_dm_neutrino_postcanonical_polar_section.py": "6c09503cbccf1b3a109332c965041248a79fa025fa36bcb8f755b851efe0c113",
+    "scripts/frontier_dm_neutrino_source_surface_active_affine_point_selection_boundary.py": "c2ea3881cf9b33005f04e80961690c61b1da915a36b479f268c79deebe878f16",
+    "scripts/frontier_dm_neutrino_source_surface_active_half_plane_theorem.py": "f539b4aa3f6da7cc83bb653316a9e98981f89f23cec7cdc00a40a0d98ec33612",
+    "scripts/frontier_dm_neutrino_source_surface_carrier_normal_form.py": "30862b9810bd34a9ba4a0848f03f9207c463a79fcde3b6c8e0a193b8e1a6c2b1",
+    "scripts/frontier_dm_neutrino_source_surface_intrinsic_slot_theorem.py": "4694e84fb6e82dc704f2c39e4a7e70016850feb2becfd9a89128672da5445c70",
+    "scripts/frontier_dm_neutrino_source_surface_shift_quotient_bundle_theorem.py": "3467693b9aadc4f1a06b41424442a4701a6c02c97603267be4ff0874c437f765",
+    "scripts/frontier_dm_neutrino_source_surface_z3_doublet_block_point_selection_theorem.py": "9f8a4b93731a23370861ec9f07f06ea8fc4f5cdcd926cdd24cdf8e382beb3695",
+    "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_exact_solve_doublet_theorem_2026_04_20.py": "93ccd8a0bbd4fc2cc2d1978d0a61c9bc10b93a48b418b2352f3a6ca1eb730a2a",
+    "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_2026_04_19.py": "4b4f2e60183c76184013d9d5371e6dbb77b033b5d5380834c423e8014bc253ff",
+    "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_rho1_least_distortion_selector_theorem_2026_04_20.py": "2f736f609f227752f8f30b0c22f28f2b6ba833ee6733ef0268ffbb7c2448f0cc",
+    "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_reduced_packet_complex_givens_selector_theorem_2026_04_20.py": "c16fe3d4ea43b2c2218afb1862169795f929ea72d64ae0ff1185e7940bdd7f63",
+    "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_2026_04_19.py": "9af6d48aad3dd89a8f3d51168d04d86bd1c857c1bae7c84f3d95aa59fcce9f2d",
+    "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_2026_04_19.py": "0cd4dd2cd40a18d52651737a7d8837f59acfd465136b525b13ea1f9e8f6eb4cf",
+    "scripts/frontier_gauge_vacuum_plaquette_first_sector_rank_one_transfer_realization_2026_04_19.py": "7fcdfa92751f29eb682de885a11a1d2fffcfea46f896241cbf2a7504ea320c9b",
+    "scripts/frontier_gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_2026_04_19.py": "a722569fafb7443841fd0f927508dbea97ac4d56282e1e590fa627b349e106f2",
+    "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py": "4fab2895211d366f83ad08d0563bf9c635c16ec2f7cccfa37eca277194724265",
+    "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_2026_04_17.py": "2968abf6179bf963da7225140daa9f4afde4fa2558d2e0c9e290337b9a03691d",
+    "scripts/frontier_gauge_vacuum_plaquette_local_environment_factorization.py": "2c0548a485e40f440f4043248cd8cb28df3fb5ca5b3326f5a08e3ba2bef238e8",
+    "scripts/frontier_gauge_vacuum_plaquette_perron_reduction_theorem.py": "fe5173577579c8fe2b12409074d7d18e1a7913f614b11c5f4b189750901f5bda",
+    "scripts/frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17.py": "1c10505013301caca0727840d2ece5d1fb83704185865c133de2100eab644721",
+    "scripts/frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization.py": "86a68b339ce0d69b660dd107633ba4a055fd981a3df98d7e864372ecf46797cb",
+    "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure.py": "a99e46182f9f2be89b8eee139b6c5c3617720e4bb6521058ac85e6048c0260c4",
+    "scripts/frontier_perron_frobenius_step2_nilpotent_chain_helper_layer_2026_04_19.py": "d920c4c4a30c89c0fdbd78b2060a7d7d9f085379772e2d4593357bc130634bec",
+    "scripts/frontier_perron_frobenius_step2_nilpotent_chain_source_response_calculus_2026_04_19.py": "092e8264a4bd5b36776e7e6b123293e8eea6e7c6c3b49b7ebd7382bbd55b4c45"
+   },
+   "source_drifted_since_verdict": true
+  },
+  "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_exact_solve_doublet_theorem_note_2026-04-20": {
+   "audit_date": "2026-05-25T23:48:13.001024+00:00",
+   "audit_status": "audited_clean",
+   "drift_evidence": [
+    "013a76175d 2026-06-04 scripts/frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17.py",
+    "025420a424 2026-05-26 scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
+    "068d3158ae 2026-07-02 scripts/frontier_dm_leptogenesis_pmns_constructive_projected_source_selector_theorem.py",
+    "1ce9a47b1e 2026-06-20 scripts/frontier_dm_leptogenesis_pmns_transport_extremal_source_candidate.py",
+    "21410777a1 2026-07-16 scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py",
+    "21410777a1 2026-07-16 scripts/frontier_dm_leptogenesis_ne_projected_source_law_derivation.py",
+    "3341c4365d 2026-06-12 scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py",
+    "40294f04c4 2026-05-30 scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
+    "43e02ba1ea 2026-06-12 scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py",
+    "44e1b44f55 2026-07-16 scripts/frontier_gauge_vacuum_plaquette_perron_reduction_theorem.py",
+    "546dac12c0 2026-07-16 scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py",
+    "5821db49d0 2026-05-26 scripts/frontier_dm_leptogenesis_pmns_transport_extremal_source_candidate.py",
+    "6358443240 2026-07-18 scripts/frontier_gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_2026_04_19.py",
+    "6358443240 2026-07-18 scripts/frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization.py",
+    "656a25f119 2026-06-20 scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_2026_04_19.py",
+    "76e6894541 2026-07-18 scripts/frontier_gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_2026_04_19.py",
+    "76e6894541 2026-07-18 scripts/frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization.py",
+    "7d3f27fe3c 2026-05-27 scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py",
+    "7e28c01cbd 2026-07-16 scripts/frontier_gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_2026_04_19.py",
+    "7e28c01cbd 2026-07-16 scripts/frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization.py",
+    "8b42f7171d 2026-05-27 scripts/frontier_dm_leptogenesis_pmns_active_projector_reduction.py",
+    "8b42f7171d 2026-05-27 scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
+    "8b42f7171d 2026-05-27 scripts/frontier_dm_leptogenesis_pmns_transport_extremal_source_candidate.py",
+    "8fa03c56d4 2026-06-15 scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py",
+    "abfd82d89d 2026-07-18 scripts/frontier_gauge_vacuum_plaquette_local_environment_factorization.py",
+    "abfd82d89d 2026-07-18 scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure.py",
+    "bdbfd89e3b 2026-07-18 scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure.py",
+    "c38fafcd9a 2026-05-28 scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
+    "c67c14b51e 2026-06-08 scripts/frontier_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_2026_04_17.py",
+    "cc9fd4ff1e 2026-05-28 scripts/frontier_dm_leptogenesis_pmns_transport_extremal_source_candidate.py",
+    "d2d28cf7a9 2026-06-13 scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py",
+    "e2a79c44ec 2026-07-16 scripts/frontier_dm_leptogenesis_ne_projected_source_law_derivation.py",
+    "eea94cdfc0 2026-07-16 scripts/frontier_dm_leptogenesis_ne_projected_source_law_derivation.py",
+    "f74b448156 2026-06-17 scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_2026_04_19.py"
+   ],
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/dm_leptogenesis_exact_common.py": "4120a70d63082dd2115b7a9337fb91804478f706ef36f602ab210737f8f0dc41",
+    "scripts/frontier_dm_leptogenesis_constructive_live_doublet_corner_descendant_theorem.py": "62ac5d17ad70df3ba9bd4d95433b56ee0a489b3e476350e742c275a7a7c132a1",
+    "scripts/frontier_dm_leptogenesis_constructive_live_k12_minimal_sufficiency_theorem.py": "688217a493c16feef5dd6aa274d5998e7de58349f691edeaf727f29fa7f1e865",
+    "scripts/frontier_dm_leptogenesis_dweh_even_split_transfer_layer.py": "f108d4a045cf0fa9710ec4e0ec3bf9611395e953b19c8d1327bce4237b5198d3",
+    "scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py": "f40f1b4dc97dd11cb68b3cdf614cece78ebdb89778b3f24d3bdb59a97a1746c2",
+    "scripts/frontier_dm_leptogenesis_full_microscopic_reduction.py": "329c5d87ff01853834bf711b795c1933bd0234ad647bcc8aa20b5160bb694190",
+    "scripts/frontier_dm_leptogenesis_k00_sparse_face_target_preimage_theorem.py": "1699cf75c8fb13ffbb1f9ec18601ae246e25f1b9e20ff27e6acaeb02b39598f2",
+    "scripts/frontier_dm_leptogenesis_k00_sparse_face_transfer_layer.py": "6a18ef76fbee126887855a146529eda92280d568b9eaf48dd1b46325af1f0a89",
+    "scripts/frontier_dm_leptogenesis_ne_projected_source_law_derivation.py": "7ec4d6f6c683edd5680a30df740bb8c1e574bbff5831a6e4fe3ef96422521528",
+    "scripts/frontier_dm_leptogenesis_ne_projected_source_triplet_sign_theorem.py": "eb78ed21722a474a2ced8b831b2ba784b47f8f57a185d4e3c3d6deeba33daf10",
+    "scripts/frontier_dm_leptogenesis_pmns_active_projector_reduction.py": "7c6c379d4b6e70ad78607eb3c5655d241a9a0cb42a6a1dc54607b16afc529c22",
+    "scripts/frontier_dm_leptogenesis_pmns_constructive_projected_source_selector_theorem.py": "2b37764c11e2593c2d83fd346fc3b0a5a2ad81be7f9b5daaf7d18344217e8ab8",
+    "scripts/frontier_dm_leptogenesis_pmns_cp_bridge_boundary.py": "b24c8fc3c1dc0e0ff84f03cb512391c1b0d2bfc16a51760bb94d231d131764e7",
+    "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py": "563fa74307f829d7cb673e7a6497a76aad85a5d78c378ddc1dc7b877651fd31f",
+    "scripts/frontier_dm_leptogenesis_pmns_transport_extremal_source_candidate.py": "4c9d592a7e85565d8af0220686451ebe5c38a553a0888807474c5ce8a1350e26",
+    "scripts/frontier_dm_neutrino_breaking_triplet_cp_theorem.py": "26be65c14f41b944294a8c6636324cdf865df7ab08580565c4783c589dd7381c",
+    "scripts/frontier_dm_neutrino_exact_h_source_surface_preimage_bundle_theorem.py": "10061fd219064353a68bef3c0c348bf84e9a83ead67c9783da9f4ad2de5d646e",
+    "scripts/frontier_dm_neutrino_hermitian_bridge_carrier.py": "83d978eacf3c919b0153a8268e3881f5cc266619e8afa26da61cba533c2d09d0",
+    "scripts/frontier_dm_neutrino_positive_polar_h_cp_theorem.py": "11ee73d73372c30698e05decdeee3cf8d101b4805b44026f34fbd07f145509cd",
+    "scripts/frontier_dm_neutrino_postcanonical_polar_section.py": "6c09503cbccf1b3a109332c965041248a79fa025fa36bcb8f755b851efe0c113",
+    "scripts/frontier_dm_neutrino_source_surface_active_affine_point_selection_boundary.py": "c2ea3881cf9b33005f04e80961690c61b1da915a36b479f268c79deebe878f16",
+    "scripts/frontier_dm_neutrino_source_surface_active_half_plane_theorem.py": "f539b4aa3f6da7cc83bb653316a9e98981f89f23cec7cdc00a40a0d98ec33612",
+    "scripts/frontier_dm_neutrino_source_surface_carrier_normal_form.py": "30862b9810bd34a9ba4a0848f03f9207c463a79fcde3b6c8e0a193b8e1a6c2b1",
+    "scripts/frontier_dm_neutrino_source_surface_intrinsic_slot_theorem.py": "4694e84fb6e82dc704f2c39e4a7e70016850feb2becfd9a89128672da5445c70",
+    "scripts/frontier_dm_neutrino_source_surface_shift_quotient_bundle_theorem.py": "3467693b9aadc4f1a06b41424442a4701a6c02c97603267be4ff0874c437f765",
+    "scripts/frontier_dm_neutrino_source_surface_z3_doublet_block_point_selection_theorem.py": "9f8a4b93731a23370861ec9f07f06ea8fc4f5cdcd926cdd24cdf8e382beb3695",
+    "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_exact_solve_doublet_theorem_2026_04_20.py": "93ccd8a0bbd4fc2cc2d1978d0a61c9bc10b93a48b418b2352f3a6ca1eb730a2a",
+    "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_2026_04_19.py": "4b4f2e60183c76184013d9d5371e6dbb77b033b5d5380834c423e8014bc253ff",
+    "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_2026_04_19.py": "9af6d48aad3dd89a8f3d51168d04d86bd1c857c1bae7c84f3d95aa59fcce9f2d",
+    "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_2026_04_19.py": "0cd4dd2cd40a18d52651737a7d8837f59acfd465136b525b13ea1f9e8f6eb4cf",
+    "scripts/frontier_gauge_vacuum_plaquette_first_sector_rank_one_transfer_realization_2026_04_19.py": "7fcdfa92751f29eb682de885a11a1d2fffcfea46f896241cbf2a7504ea320c9b",
+    "scripts/frontier_gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_2026_04_19.py": "a722569fafb7443841fd0f927508dbea97ac4d56282e1e590fa627b349e106f2",
+    "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py": "4fab2895211d366f83ad08d0563bf9c635c16ec2f7cccfa37eca277194724265",
+    "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_2026_04_17.py": "2968abf6179bf963da7225140daa9f4afde4fa2558d2e0c9e290337b9a03691d",
+    "scripts/frontier_gauge_vacuum_plaquette_local_environment_factorization.py": "2c0548a485e40f440f4043248cd8cb28df3fb5ca5b3326f5a08e3ba2bef238e8",
+    "scripts/frontier_gauge_vacuum_plaquette_perron_reduction_theorem.py": "fe5173577579c8fe2b12409074d7d18e1a7913f614b11c5f4b189750901f5bda",
+    "scripts/frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17.py": "1c10505013301caca0727840d2ece5d1fb83704185865c133de2100eab644721",
+    "scripts/frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization.py": "86a68b339ce0d69b660dd107633ba4a055fd981a3df98d7e864372ecf46797cb",
+    "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure.py": "a99e46182f9f2be89b8eee139b6c5c3617720e4bb6521058ac85e6048c0260c4",
+    "scripts/frontier_perron_frobenius_step2_nilpotent_chain_helper_layer_2026_04_19.py": "d920c4c4a30c89c0fdbd78b2060a7d7d9f085379772e2d4593357bc130634bec",
+    "scripts/frontier_perron_frobenius_step2_nilpotent_chain_source_response_calculus_2026_04_19.py": "092e8264a4bd5b36776e7e6b123293e8eea6e7c6c3b49b7ebd7382bbd55b4c45"
+   },
+   "source_drifted_since_verdict": true
+  },
+  "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19": {
+   "audit_date": "2026-06-21T11:36:46.484431+00:00",
+   "audit_status": "audited_renaming",
+   "drift_evidence": [
+    "068d3158ae 2026-07-02 scripts/frontier_dm_leptogenesis_pmns_constructive_projected_source_selector_theorem.py",
+    "21410777a1 2026-07-16 scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py",
+    "21410777a1 2026-07-16 scripts/frontier_dm_leptogenesis_ne_projected_source_law_derivation.py",
+    "44e1b44f55 2026-07-16 scripts/frontier_gauge_vacuum_plaquette_perron_reduction_theorem.py",
+    "546dac12c0 2026-07-16 scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py",
+    "6358443240 2026-07-18 scripts/frontier_gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_2026_04_19.py",
+    "6358443240 2026-07-18 scripts/frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization.py",
+    "76e6894541 2026-07-18 scripts/frontier_gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_2026_04_19.py",
+    "76e6894541 2026-07-18 scripts/frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization.py",
+    "7e28c01cbd 2026-07-16 scripts/frontier_gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_2026_04_19.py",
+    "7e28c01cbd 2026-07-16 scripts/frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization.py",
+    "abfd82d89d 2026-07-18 scripts/frontier_gauge_vacuum_plaquette_local_environment_factorization.py",
+    "abfd82d89d 2026-07-18 scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure.py",
+    "bdbfd89e3b 2026-07-18 scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure.py",
+    "e2a79c44ec 2026-07-16 scripts/frontier_dm_leptogenesis_ne_projected_source_law_derivation.py",
+    "eea94cdfc0 2026-07-16 scripts/frontier_dm_leptogenesis_ne_projected_source_law_derivation.py"
+   ],
+   "effective_status": "audited_renaming",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/dm_leptogenesis_exact_common.py": "4120a70d63082dd2115b7a9337fb91804478f706ef36f602ab210737f8f0dc41",
+    "scripts/frontier_dm_leptogenesis_constructive_live_doublet_corner_descendant_theorem.py": "62ac5d17ad70df3ba9bd4d95433b56ee0a489b3e476350e742c275a7a7c132a1",
+    "scripts/frontier_dm_leptogenesis_constructive_live_k12_minimal_sufficiency_theorem.py": "688217a493c16feef5dd6aa274d5998e7de58349f691edeaf727f29fa7f1e865",
+    "scripts/frontier_dm_leptogenesis_dweh_even_split_transfer_layer.py": "f108d4a045cf0fa9710ec4e0ec3bf9611395e953b19c8d1327bce4237b5198d3",
+    "scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py": "f40f1b4dc97dd11cb68b3cdf614cece78ebdb89778b3f24d3bdb59a97a1746c2",
+    "scripts/frontier_dm_leptogenesis_full_microscopic_reduction.py": "329c5d87ff01853834bf711b795c1933bd0234ad647bcc8aa20b5160bb694190",
+    "scripts/frontier_dm_leptogenesis_k00_sparse_face_target_preimage_theorem.py": "1699cf75c8fb13ffbb1f9ec18601ae246e25f1b9e20ff27e6acaeb02b39598f2",
+    "scripts/frontier_dm_leptogenesis_k00_sparse_face_transfer_layer.py": "6a18ef76fbee126887855a146529eda92280d568b9eaf48dd1b46325af1f0a89",
+    "scripts/frontier_dm_leptogenesis_ne_projected_source_law_derivation.py": "7ec4d6f6c683edd5680a30df740bb8c1e574bbff5831a6e4fe3ef96422521528",
+    "scripts/frontier_dm_leptogenesis_ne_projected_source_triplet_sign_theorem.py": "eb78ed21722a474a2ced8b831b2ba784b47f8f57a185d4e3c3d6deeba33daf10",
+    "scripts/frontier_dm_leptogenesis_pmns_active_projector_reduction.py": "7c6c379d4b6e70ad78607eb3c5655d241a9a0cb42a6a1dc54607b16afc529c22",
+    "scripts/frontier_dm_leptogenesis_pmns_constructive_projected_source_selector_theorem.py": "2b37764c11e2593c2d83fd346fc3b0a5a2ad81be7f9b5daaf7d18344217e8ab8",
+    "scripts/frontier_dm_leptogenesis_pmns_cp_bridge_boundary.py": "b24c8fc3c1dc0e0ff84f03cb512391c1b0d2bfc16a51760bb94d231d131764e7",
+    "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py": "563fa74307f829d7cb673e7a6497a76aad85a5d78c378ddc1dc7b877651fd31f",
+    "scripts/frontier_dm_leptogenesis_pmns_transport_extremal_source_candidate.py": "4c9d592a7e85565d8af0220686451ebe5c38a553a0888807474c5ce8a1350e26",
+    "scripts/frontier_dm_neutrino_breaking_triplet_cp_theorem.py": "26be65c14f41b944294a8c6636324cdf865df7ab08580565c4783c589dd7381c",
+    "scripts/frontier_dm_neutrino_exact_h_source_surface_preimage_bundle_theorem.py": "10061fd219064353a68bef3c0c348bf84e9a83ead67c9783da9f4ad2de5d646e",
+    "scripts/frontier_dm_neutrino_hermitian_bridge_carrier.py": "83d978eacf3c919b0153a8268e3881f5cc266619e8afa26da61cba533c2d09d0",
+    "scripts/frontier_dm_neutrino_positive_polar_h_cp_theorem.py": "11ee73d73372c30698e05decdeee3cf8d101b4805b44026f34fbd07f145509cd",
+    "scripts/frontier_dm_neutrino_postcanonical_polar_section.py": "6c09503cbccf1b3a109332c965041248a79fa025fa36bcb8f755b851efe0c113",
+    "scripts/frontier_dm_neutrino_source_surface_active_affine_point_selection_boundary.py": "c2ea3881cf9b33005f04e80961690c61b1da915a36b479f268c79deebe878f16",
+    "scripts/frontier_dm_neutrino_source_surface_active_half_plane_theorem.py": "f539b4aa3f6da7cc83bb653316a9e98981f89f23cec7cdc00a40a0d98ec33612",
+    "scripts/frontier_dm_neutrino_source_surface_carrier_normal_form.py": "30862b9810bd34a9ba4a0848f03f9207c463a79fcde3b6c8e0a193b8e1a6c2b1",
+    "scripts/frontier_dm_neutrino_source_surface_intrinsic_slot_theorem.py": "4694e84fb6e82dc704f2c39e4a7e70016850feb2becfd9a89128672da5445c70",
+    "scripts/frontier_dm_neutrino_source_surface_shift_quotient_bundle_theorem.py": "3467693b9aadc4f1a06b41424442a4701a6c02c97603267be4ff0874c437f765",
+    "scripts/frontier_dm_neutrino_source_surface_z3_doublet_block_point_selection_theorem.py": "9f8a4b93731a23370861ec9f07f06ea8fc4f5cdcd926cdd24cdf8e382beb3695",
+    "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_2026_04_19.py": "9af6d48aad3dd89a8f3d51168d04d86bd1c857c1bae7c84f3d95aa59fcce9f2d",
+    "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_2026_04_19.py": "0cd4dd2cd40a18d52651737a7d8837f59acfd465136b525b13ea1f9e8f6eb4cf",
+    "scripts/frontier_gauge_vacuum_plaquette_first_sector_rank_one_transfer_realization_2026_04_19.py": "7fcdfa92751f29eb682de885a11a1d2fffcfea46f896241cbf2a7504ea320c9b",
+    "scripts/frontier_gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_2026_04_19.py": "a722569fafb7443841fd0f927508dbea97ac4d56282e1e590fa627b349e106f2",
+    "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py": "4fab2895211d366f83ad08d0563bf9c635c16ec2f7cccfa37eca277194724265",
+    "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_2026_04_17.py": "2968abf6179bf963da7225140daa9f4afde4fa2558d2e0c9e290337b9a03691d",
+    "scripts/frontier_gauge_vacuum_plaquette_local_environment_factorization.py": "2c0548a485e40f440f4043248cd8cb28df3fb5ca5b3326f5a08e3ba2bef238e8",
+    "scripts/frontier_gauge_vacuum_plaquette_perron_reduction_theorem.py": "fe5173577579c8fe2b12409074d7d18e1a7913f614b11c5f4b189750901f5bda",
+    "scripts/frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17.py": "1c10505013301caca0727840d2ece5d1fb83704185865c133de2100eab644721",
+    "scripts/frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization.py": "86a68b339ce0d69b660dd107633ba4a055fd981a3df98d7e864372ecf46797cb",
+    "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure.py": "a99e46182f9f2be89b8eee139b6c5c3617720e4bb6521058ac85e6048c0260c4",
+    "scripts/frontier_perron_frobenius_step2_nilpotent_chain_helper_layer_2026_04_19.py": "d920c4c4a30c89c0fdbd78b2060a7d7d9f085379772e2d4593357bc130634bec",
+    "scripts/frontier_perron_frobenius_step2_nilpotent_chain_source_response_calculus_2026_04_19.py": "092e8264a4bd5b36776e7e6b123293e8eea6e7c6c3b49b7ebd7382bbd55b4c45"
+   },
+   "source_drifted_since_verdict": true
+  },
+  "gauge_vacuum_plaquette_first_sector_rank_one_factorized_class_boundary_note_2026-04-19": {
+   "audit_date": "2026-06-09T13:18:48.215479+00:00",
+   "audit_status": "audited_clean",
+   "drift_evidence": [
+    "3341c4365d 2026-06-12 scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py",
+    "43e02ba1ea 2026-06-12 scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py",
+    "8fa03c56d4 2026-06-15 scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py",
+    "abfd82d89d 2026-07-18 scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure.py",
+    "bdbfd89e3b 2026-07-18 scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure.py",
+    "d2d28cf7a9 2026-06-13 scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py"
+   ],
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/frontier_gauge_vacuum_plaquette_first_sector_rank_one_transfer_realization_2026_04_19.py": "7fcdfa92751f29eb682de885a11a1d2fffcfea46f896241cbf2a7504ea320c9b",
+    "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py": "4fab2895211d366f83ad08d0563bf9c635c16ec2f7cccfa37eca277194724265",
+    "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_2026_04_17.py": "2968abf6179bf963da7225140daa9f4afde4fa2558d2e0c9e290337b9a03691d",
+    "scripts/frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17.py": "1c10505013301caca0727840d2ece5d1fb83704185865c133de2100eab644721",
+    "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure.py": "a99e46182f9f2be89b8eee139b6c5c3617720e4bb6521058ac85e6048c0260c4"
+   },
+   "source_drifted_since_verdict": true
+  },
+  "geometry_lane_head_to_head_note": {
+   "audit_date": "2026-05-17T15:37:49.150102+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/central_band_layernorm_combo.py": "ede0c2eed1c75533893d356eb23c408c0f8f1ca56c82967f74e2da996f58b208",
+    "scripts/combined_gravity_scaling.py": "514b9b78c8f5c812c7d3e3c46ed75f081fa88d0b209d8d6d17b44fd95fcd4b5c",
+    "scripts/generative_causal_dag_interference.py": "61266823b2ba7a2b225f15dbd54bae3044a627a1ed59704e1a96b0846247a57f",
+    "scripts/topology_families.py": "4f61a1f86bef40d67fec5a2d640df29c1c527a6cffced37e6122d877edce06d1"
+   }
+  },
+  "global_coherence_off_scaffold_note": {
+   "audit_date": "2026-04-30T18:55:56.122405+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/independent_generators_heldout.py": "4fa0d5b77877d8d826b0ceb913bacb909f77f2ab27d4c9d7cb625be8f453cd76"
+   },
+   "runner_path": "scripts/global_coherence_off_scaffold.py",
+   "runner_sha256_at_baseline": "1aa688a73698edaaab22c991a11b8211f320ed47f60eee6ce7319f28fb6cd797"
+  },
+  "global_coherence_predictor_note": {
+   "audit_date": "2026-05-11T15:47:24.543919+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/independent_generators_heldout.py": "4fa0d5b77877d8d826b0ceb913bacb909f77f2ab27d4c9d7cb625be8f453cd76",
+    "scripts/universality_classifier.py": "9ddc562030928ac0fd22b0f5a611e2835f4944000b6567f7369954c8d14068de"
+   }
+  },
+  "graph_scalar_plus_spinor_note": {
+   "audit_date": "2026-04-30T19:29:21.808771+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "runner_path": "scripts/frontier_graph_scalar_plus_spinor.py",
+   "runner_sha256_at_baseline": "098d1acd49e0690cd6537be40714ddf364505b8bda4efcb305d96bae16e57166"
+  },
+  "graph_true_kg_vs_cn_note": {
+   "audit_date": "2026-04-30T19:29:27.783068+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "runner_path": "scripts/frontier_graph_true_kg_vs_cn.py",
+   "runner_sha256_at_baseline": "58368525dbc13f776107bf521dbaabad806fcff4553fefc4590ae4537f67f73e"
+  },
+  "gravitational_entanglement_note": {
+   "audit_date": "2026-04-30T19:29:34.224702+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained",
+   "runner_path": "scripts/frontier_gravitational_entanglement.py",
+   "runner_sha256_at_baseline": "9fb538c5d3540f5eb29fe93e9396b2c418aafacfb04d385ae45b7b0eb6c54f74"
+  },
+  "gravity_observable_hierarchy_note": {
+   "audit_date": "2026-05-10T17:18:54.923403+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/action_power_canonical_harness.py": "42edf509eacb80fa08deeffbb58b2d601089e3396dd368783b53f63ae6d4150d",
+    "scripts/lattice_3d_dense_10prop.py": "1eca0d9998f2629294fd043131a563355b31640187cbfcdb22c50f69a1b13b9e",
+    "scripts/lattice_mirror_hybrid.py": "28c23fe871ffc356a4a4cd9b0a8a76985a2a464c79c3389ad96651084bcb3e97",
+    "scripts/lattice_symmetry_unification_decision.py": "baa6e0f9d16de2fad7be55b9fa11b673a80f1b88005803ae4a03dc6106bb709d"
+   }
+  },
+  "h2t_h0125_narrow_bridge_note": {
+   "audit_date": "2026-05-25T19:50:35.236856+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/lattice_3d_l2_numpy.py": "6d45506cebd6c0432efe4434a81fa1ac24a70dc1446977ef857df40fefaf0d5f",
+    "scripts/numpy_replay_bootstrap.py": "41d6345df67dd5e90a5d8073ad963aafca8083df9e0e0b55d4dce6fa233e09e1"
+   }
+  },
+  "hard_geometry_gravity_window_note": {
+   "audit_date": "2026-05-27T03:33:22.641799+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/asymmetry_persistence_joint_card.py": "f70e612a5e327d92010c28353aecaf073f512aacfed8bccb0c906da4347d3d5a",
+    "scripts/asymmetry_persistence_pilot.py": "fde0bc04e19e6de2a3f0899e88b89a283e5d42854c788731f650b4e3ba73655f",
+    "scripts/central_band_dense_joint_card.py": "cedcc617066154708204a78efaaf6426cc5c6e182fae2e5e303cf199eebdf5c7",
+    "scripts/central_band_layernorm_combo.py": "ede0c2eed1c75533893d356eb23c408c0f8f1ca56c82967f74e2da996f58b208",
+    "scripts/combined_gravity_scaling.py": "514b9b78c8f5c812c7d3e3c46ed75f081fa88d0b209d8d6d17b44fd95fcd4b5c",
+    "scripts/gap_topological_asymmetry.py": "23a058d0937f929637aa676b503ef279ab452b95030127beefd8a6ec922629c3",
+    "scripts/gap_topological_asymmetry_layernorm_combo.py": "1a102a71830ae25e3093b968bd176305f33e3af558163ef33b24bcf1dad5e044",
+    "scripts/generative_causal_dag_interference.py": "61266823b2ba7a2b225f15dbd54bae3044a627a1ed59704e1a96b0846247a57f",
+    "scripts/stochastic_collapse_born_calibration.py": "582cd51d2318f106b9dd0874eee05020e9cf39f0275cb971569ec5c1a190485b",
+    "scripts/topology_families.py": "4f61a1f86bef40d67fec5a2d640df29c1c527a6cffced37e6122d877edce06d1"
+   }
+  },
+  "hard_geometry_local_note": {
+   "audit_date": "2026-04-30T19:31:06.017730+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/gap_local_asymmetry.py": "8d85a0ffdde847c87868a5688ec321866cdefba7abac3311c5866a3c6e450b8c"
+   },
+   "runner_path": "scripts/hard_geometry_local_support_pilot.py",
+   "runner_sha256_at_baseline": "bb4bd4c696c070fd52433d263faadc701a55f9f79341d81fe2c71f85bbc2abf1"
+  },
+  "higher_symmetry_gravity_probe_note": {
+   "audit_date": "2026-05-07T01:57:07.762061+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/higher_symmetry_dag.py": "095a042260ba5cbae43710544cc29678c0a9e66e066ae2311e0f4ba3d267d981",
+    "scripts/mirror_chokepoint_joint.py": "afff61d204cc8a146c0b15c1c40e2105cdcb71693de7302da791b21efe07d563"
+   }
+  },
+  "holographic_probe_note_2026-04-11": {
+   "audit_date": "2026-05-03T12:20:53.876502+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/periodic_geometry.py": "2d769b7f164e14c69393db7e6d9697b204058e804ea5fb253ca71c0cb9e583c6"
+   },
+   "runner_path": "scripts/frontier_holographic_probe.py",
+   "runner_sha256_at_baseline": "f38a3d58ff422584927ef3780a46dff6c357d15dc173270a831b35a8c1969753"
+  },
+  "i3_zero_exact_theorem_note": {
+   "audit_date": "2026-05-03T12:43:10.800116+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained",
+   "runner_path": "scripts/frontier_born_rule_derived.py",
+   "runner_sha256_at_baseline": "657f96951a89917d8b05583aa00f5bdab1d770451ef5cd6ebdd178c5a3c86b49"
+  },
+  "independent_generators_heldout_note": {
+   "audit_date": "2026-04-26",
+   "audit_status": "audited_clean",
+   "effective_status": "retained",
+   "runner_path": "scripts/independent_generators_heldout.py",
+   "runner_sha256_at_baseline": "4fa0d5b77877d8d826b0ceb913bacb909f77f2ab27d4c9d7cb625be8f453cd76"
+  },
+  "k_dependence_review_safe_note": {
+   "audit_date": "2026-05-24T18:00:18.186711+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/generative_causal_dag_interference.py": "61266823b2ba7a2b225f15dbd54bae3044a627a1ed59704e1a96b0846247a57f",
+    "scripts/k_dependence_ceiling.py": "fa07b52d380da998a7dd183d23a01ee1ec7e04bc3a43bdca929c1512228684bc"
+   }
+  },
+  "koide_cyclic_projector_block_democracy_note_2026-04-18": {
+   "audit_date": "2026-05-05T11:21:48.452312+00:00",
+   "audit_status": "audited_clean",
+   "drift_evidence": [
+    "025420a424 2026-05-26 scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
+    "40294f04c4 2026-05-30 scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
+    "8b42f7171d 2026-05-27 scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
+    "c38fafcd9a 2026-05-28 scripts/frontier_dm_leptogenesis_pmns_projector_interface.py"
+   ],
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py": "563fa74307f829d7cb673e7a6497a76aad85a5d78c378ddc1dc7b877651fd31f",
+    "scripts/frontier_dm_wilson_to_dweh_local_chain_path_algebra_target_2026_04_18.py": "e4504c7a25e82ffab2224ddeedf50b3ca98caabe5de4f395694198ce6255514b"
+   },
+   "source_drifted_since_verdict": true
+  },
+  "koide_dweh_cyclic_compression_note_2026-04-18": {
+   "audit_date": "2026-05-05T09:49:41.642799+00:00",
+   "audit_status": "audited_clean",
+   "drift_evidence": [
+    "025420a424 2026-05-26 scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
+    "40294f04c4 2026-05-30 scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
+    "8b42f7171d 2026-05-27 scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
+    "c38fafcd9a 2026-05-28 scripts/frontier_dm_leptogenesis_pmns_projector_interface.py"
+   ],
+   "effective_status": "retained",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py": "563fa74307f829d7cb673e7a6497a76aad85a5d78c378ddc1dc7b877651fd31f",
+    "scripts/frontier_dm_wilson_to_dweh_local_chain_path_algebra_target_2026_04_18.py": "e4504c7a25e82ffab2224ddeedf50b3ca98caabe5de4f395694198ce6255514b"
+   },
+   "source_drifted_since_verdict": true
+  },
+  "koide_gamma_orbit_exponential_value_law_candidate_note_2026-04-18": {
+   "audit_date": "2026-06-18T13:24:38.604232+00:00",
+   "audit_status": "audited_numerical_match",
+   "effective_status": "audited_numerical_match",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/frontier_higgs_dressed_propagator_v1.py": "78b5517beee10ec5424bb2e3094c1736be25147e88cbc562c449abd5414ac503"
+   }
+  },
+  "kubo_range_of_validity_note": {
+   "audit_date": "2026-05-05T11:26:50.315429+00:00",
+   "audit_status": "audited_decoration",
+   "effective_status": "decoration_under_linear_response_true_kubo_note",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/global_coherence_off_scaffold.py": "1aa688a73698edaaab22c991a11b8211f320ed47f60eee6ce7319f28fb6cd797",
+    "scripts/independent_generators_heldout.py": "4fa0d5b77877d8d826b0ceb913bacb909f77f2ab27d4c9d7cb625be8f453cd76",
+    "scripts/linear_response_true_kubo.py": "e59774e006c9c309c3d268ddfac65e6d4459f03891bb5c57704c53d8c680e055",
+    "scripts/universality_classifier.py": "9ddc562030928ac0fd22b0f5a611e2835f4944000b6567f7369954c8d14068de"
+   }
+  },
+  "lattice_3d_dense_spent_delay_z2_z6_endpoint_note_2026-05-29": {
+   "audit_date": "2026-06-06T18:40:20.098362+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/lattice_3d_dense_10prop.py": "1eca0d9998f2629294fd043131a563355b31640187cbfcdb22c50f69a1b13b9e"
+   }
+  },
+  "lattice_3d_dense_window_extension_note": {
+   "audit_date": "2026-04-27",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/lattice_3d_dense_10prop.py": "1eca0d9998f2629294fd043131a563355b31640187cbfcdb22c50f69a1b13b9e"
+   },
+   "runner_path": "scripts/lattice_3d_dense_window_extension.py",
+   "runner_sha256_at_baseline": "d0430a18ce3f50a603f8adf5c427476d073fb479f4807e48d6c4672cc2ed472e"
+  },
+  "lattice_3d_inverse_square_kernel_helper_note_2026-04-04": {
+   "audit_date": "2026-07-07T20:07:12.972723+00:00",
+   "audit_status": "audited_renaming",
+   "effective_status": "audited_renaming",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/action_power_canonical_harness.py": "42edf509eacb80fa08deeffbb58b2d601089e3396dd368783b53f63ae6d4150d"
+   }
+  },
+  "lattice_3d_l2_numpy_h0125_audit_note": {
+   "audit_date": "2026-05-23T20:13:16.635947+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/lattice_3d_l2_numpy.py": "6d45506cebd6c0432efe4434a81fa1ac24a70dc1446977ef857df40fefaf0d5f",
+    "scripts/numpy_replay_bootstrap.py": "41d6345df67dd5e90a5d8073ad963aafca8083df9e0e0b55d4dce6fa233e09e1"
+   }
+  },
+  "lattice_3d_l2_numpy_h0125_bridge_note": {
+   "audit_date": "2026-05-11T15:34:51.715177+00:00",
+   "audit_status": "audited_clean",
+   "drift_evidence": [
+    "73e9582fc1 2026-05-23 scripts/lattice_3d_l2_numpy.py"
+   ],
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/lattice_3d_l2_numpy.py": "6d45506cebd6c0432efe4434a81fa1ac24a70dc1446977ef857df40fefaf0d5f",
+    "scripts/numpy_replay_bootstrap.py": "41d6345df67dd5e90a5d8073ad963aafca8083df9e0e0b55d4dce6fa233e09e1"
+   },
+   "source_drifted_since_verdict": true
+  },
+  "lattice_3d_nyquist_diffraction_note": {
+   "audit_date": "2026-06-18T13:42:33.011532+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/lattice_3d_valley_linear_card.py": "d082958f8ece3fc2f3400226718c164b676810c944d6378d62f08bc3c84d235e"
+   }
+  },
+  "lattice_complementarity_note": {
+   "audit_date": "2026-05-05T11:27:11.208412+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/lattice_family_validation.py": "4d48c4078c58995752fd0a2a949b0ceb8b84917d513def6e7275024180dc95b0",
+    "scripts/lattice_mirror_distance.py": "0b035359691b65d832d7713badf66c9ae8b7efec676a04f27d43739c28b1b3fa",
+    "scripts/mirror_2d_validation.py": "7e7f84252a8356e88c3ebb0c4b2b86b4e87a8a5f0c794ac2c41e2e5e4de825b5",
+    "scripts/mirror_born_audit.py": "ccbbc2f10c2187338017a1b7020815e452240f96245718fab15ea12d86a04270"
+   }
+  },
+  "lattice_distance_law_note": {
+   "audit_date": "2026-05-17T21:00:37.930166+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/lattice_mirror_distance.py": "0b035359691b65d832d7713badf66c9ae8b7efec676a04f27d43739c28b1b3fa"
+   }
+  },
+  "lattice_kernel_transfer_norm_note": {
+   "audit_date": "2026-05-03T19:32:05.252731+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "runner_path": "scripts/lattice_kernel_transfer_norm_probe.py",
+   "runner_sha256_at_baseline": "5dae029c6905e366cc9dea3e3144d3f199c920ed51e7aeb67ca367312b2c5cbd"
+  },
+  "lattice_nn_distance_law_note": {
+   "audit_date": "2026-05-07T02:35:11.544536+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/lattice_nn_continuum.py": "8bb1945e3644e7d45b1f110ffc7e7cd233035d8b7dddababb2c36d134c1586c7"
+   }
+  },
+  "lensing_adjoint_kernel_reduced_model_note": {
+   "audit_date": "2026-04-27",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/kubo_continuum_limit.py": "0ca51f85c0dbab8c2062d423306b36c566d9a2cb1901c8079dbe3d651128ce5d",
+    "scripts/lensing_adjoint_kernel_probe.py": "14b1fba9b5c73699a127bb4d884a17b394da71f8451ee0d9f30bfe7ec2a53c5c",
+    "scripts/lensing_deflection_sweep.py": "470d4686bd13c86d02a2f2dc1faf22f96771d108971bd3fb0209dce3e2322c84"
+   },
+   "runner_path": "scripts/lensing_adjoint_kernel_reduced_model.py",
+   "runner_sha256_at_baseline": "d9ff59274d5fad3e94d82029239463fe034eeb66725702911224051e62354566"
+  },
+  "linear_response_derivation_note": {
+   "audit_date": "2026-07-12T00:29:59.777017+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "open_gate",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/global_coherence_off_scaffold.py": "1aa688a73698edaaab22c991a11b8211f320ed47f60eee6ce7319f28fb6cd797",
+    "scripts/independent_generators_heldout.py": "4fa0d5b77877d8d826b0ceb913bacb909f77f2ab27d4c9d7cb625be8f453cd76",
+    "scripts/universality_classifier.py": "9ddc562030928ac0fd22b0f5a611e2835f4944000b6567f7369954c8d14068de"
+   }
+  },
+  "linear_response_true_kubo_note": {
+   "audit_date": "2026-05-05T09:30:52.833678+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/global_coherence_off_scaffold.py": "1aa688a73698edaaab22c991a11b8211f320ed47f60eee6ce7319f28fb6cd797",
+    "scripts/independent_generators_heldout.py": "4fa0d5b77877d8d826b0ceb913bacb909f77f2ab27d4c9d7cb625be8f453cd76",
+    "scripts/universality_classifier.py": "9ddc562030928ac0fd22b0f5a611e2835f4944000b6567f7369954c8d14068de"
+   }
+  },
+  "main_open_cubic_validation_2026-04-11": {
+   "audit_date": "2026-05-01T06:59:42.486687+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "runner_path": "scripts/frontier_staggered_newton_reproduction.py",
+   "runner_sha256_at_baseline": "6103f8fb3f42e4f55d857bab099d9f7c4ab900eea09d7230ea469440dc374f49"
+  },
+  "matched_2d_4d_decoherence_note": {
+   "audit_date": "2026-05-11T15:36:39.062261+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/four_d_decoherence_large_n.py": "a77ab88d08213381dd60a324314ffc7e4e773212db3c70204121d2ad036589d8",
+    "scripts/topology_families.py": "4f61a1f86bef40d67fec5a2d640df29c1c527a6cffced37e6122d877edce06d1"
+   }
+  },
+  "memory_mu2_geometry_sweep_note_2026-04-11": {
+   "audit_date": "2026-05-01T06:39:39.138514+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "runner_path": "scripts/frontier_memory_mu2_size_sweep.py",
+   "runner_sha256_at_baseline": "66b94c0994015d71b263ae006deda5dacfe3b25696683abf741b2c8aec8c3c4d"
+  },
+  "mesoscopic_surrogate_localization_sweep_note": {
+   "audit_date": "2026-05-27T03:35:55.906852+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/quasi_persistent_relaunch_probe.py": "7b5974a35038f216927c434fd5e61a1b3ed3487587e1aa71f1144a3d3a4e4850",
+    "scripts/two_body_momentum_harness.py": "7cd4c698f5873b49f9a16183e78d57a0e63f83f90fa8a3fd537d4bc9ef486c24"
+   }
+  },
+  "mirror_2d_gravity_law_note": {
+   "audit_date": "2026-05-25T19:40:18.863053+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/mirror_born_audit.py": "ccbbc2f10c2187338017a1b7020815e452240f96245718fab15ea12d86a04270"
+   }
+  },
+  "mirror_2d_validation_note": {
+   "audit_date": "2026-05-26T02:01:43.308205+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/mirror_born_audit.py": "ccbbc2f10c2187338017a1b7020815e452240f96245718fab15ea12d86a04270"
+   }
+  },
+  "mirror_mutual_information_canonical_families_note": {
+   "audit_date": "2026-05-01T06:41:44.011530+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/mirror_chokepoint_joint.py": "afff61d204cc8a146c0b15c1c40e2105cdcb71693de7302da791b21efe07d563",
+    "scripts/mirror_scaled_joint.py": "2f9aa23016a01399354a329b962165a23022142602d73db1add52172dbbb9531",
+    "scripts/symmetry_spectrum_mirror_compare.py": "ec899100225e3e876a0ffa1090cdbb213fd6bf3b36706a6853b7b4902bc1f505"
+   },
+   "runner_path": "scripts/mirror_mutual_information_canonical_families.py",
+   "runner_sha256_at_baseline": "472aa73c2153e5943a747279ebda90f7c967ab4abea0453203a62379c6171078"
+  },
+  "moving_source_cross_family_note": {
+   "audit_date": "2026-05-05T06:47:35.160996+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/evolving_network_prototype_v6.py": "5394010a8162963ce6c88171582c53ccb226a2c524439e6287eae9858bf45c7f"
+   }
+  },
+  "moving_source_retarded_portability_note": {
+   "audit_date": "2026-05-04T23:31:50.701839+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/evolving_network_prototype_v6.py": "5394010a8162963ce6c88171582c53ccb226a2c524439e6287eae9858bf45c7f"
+   }
+  },
+  "multipole_tidal_response_note": {
+   "audit_date": "2026-04-27",
+   "audit_status": "audited_clean",
+   "effective_status": "retained",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/two_body_momentum_harness.py": "7cd4c698f5873b49f9a16183e78d57a0e63f83f90fa8a3fd537d4bc9ef486c24"
+   },
+   "runner_path": "scripts/multipole_tidal_response_probe.py",
+   "runner_sha256_at_baseline": "8118df420c2b2b2ba14494908e60c2000c1fd1fd834b52bba7d43f5c5f1d10c5"
+  },
+  "newtonian_distance_law_confirmed": {
+   "audit_date": "2026-06-08T20:53:33.252720+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/valley_linear_same_harness_compare.py": "5c4963909ccbed0fe2437a8e3ae7ee782b2f5c12b91f56617cf6c29f75a723e0"
+   }
+  },
+  "nonlabel_grown_basin_note": {
+   "audit_date": "2026-06-08T20:01:45.742520+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/gate_b_grown_joint_package.py": "2d2ab7c6531c69165aba46309f5851b87bc069ed187edad4bd404814a097a239"
+   }
+  },
+  "nonlabel_grown_drift_basin_note": {
+   "audit_date": "2026-06-09T13:51:10.097591+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/gate_b_grown_joint_package.py": "2d2ab7c6531c69165aba46309f5851b87bc069ed187edad4bd404814a097a239"
+   }
+  },
+  "oh_schur_boundary_action_note": {
+   "audit_date": "2026-07-15T17:12:16.447014+00:00",
+   "audit_status": "audited_renaming",
+   "effective_status": "audited_renaming",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/_frontier_loader.py": "64ab743a7888d6eb32ff2d72ddab846633f49a818080f9c2d88330961c96d86f",
+    "scripts/frontier_coarse_grained_exterior_law.py": "5d8fe1c6d541ca8b9aadc088462c12836e1c22c0dfb07d1f88384fb33fcd3e02",
+    "scripts/frontier_discrete_dtn_shell_kernel.py": "31cb89f1b161de258503a6a91f5c2334d041099f0f135df0aeb7078520bc0d31",
+    "scripts/frontier_finite_rank_gravity_residual.py": "29879ef1f2407e7916522a2ad9f5409dce7d5acdc0692b2d5f98fcc42c513f7d",
+    "scripts/frontier_flux_fixed_matching_theorem.py": "3ea379ef8f2642858772e3017e06a90784651f0ceb27d540d06622e5940df95d",
+    "scripts/frontier_radial_shell_matching_law.py": "0bb3dac9010b69438ad6aa1ad011ee3f2ea71eb5e830fa074333f4bd5b78d78c",
+    "scripts/frontier_same_source_metric_ansatz_scan.py": "cc0e24b12c6ed6a389cbff9b03e06754380103d8aca9d3b7903fddc3b1195b94",
+    "scripts/frontier_sewing_shell_source.py": "982afafc28f9ccd63306ad76de5e86fa4f59526fded9002fe2326a77d5dd6c01",
+    "scripts/frontier_star_shell_projector.py": "843aadd321c8795087a75fc4c9fd439ad7040c7c4d65e14be9d1a90658b5d952",
+    "scripts/frontier_universal_shell_profile.py": "34d892020e314f3edb0e7d10bc515fccfb2dbb2bf90f7c7421324c09dcc16d15"
+   }
+  },
+  "ollivier_einstein_proxy_note_2026-04-11": {
+   "audit_date": "2026-05-01T07:34:09.248317+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "runner_path": "scripts/frontier_ollivier_einstein.py",
+   "runner_sha256_at_baseline": "bd8cb8e363ad2ae7318cea8ab6d3381946e6667560be8d9dbfe53ebc869d7825"
+  },
+  "ordered_lattice_quasi_persistent_relaunch_2d_note": {
+   "audit_date": "2026-05-19T14:19:25.694084+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/lattice_2d_continuum_distance.py": "f9609d333a0fac8dc9ce602fef406ffef8fb3cdd6accc3b0c3bdbb6905dd18b5"
+   }
+  },
+  "persistent_object_blended_readout_outer_transfer_sweep_note_2026-04-16": {
+   "audit_date": "2026-05-19T15:27:39.246691+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/minimal_source_driven_field_probe.py": "16768d58d878f744a7092dca878fd2cb66f6bae8a73ada64ef3fd7e785208457",
+    "scripts/persistent_object_adaptive_readout_probe.py": "257e59d7dcf95453351fba08922776cab0036309605229c7e36470295a1952f1",
+    "scripts/persistent_object_blended_readout_boundary_probe.py": "51df7a55d05e9622ddeb29fbd21f9a8e35ab97684174a475dac3c0c1808fb153",
+    "scripts/persistent_object_blended_readout_transfer_sweep.py": "1b326e3d03c70d6c2e5ecb9067c4141fe252132507d55c363850a7d5a4f15650",
+    "scripts/persistent_object_compact_inertial_probe.py": "7285c5338f657c6867ffa4b7b2b8c5428917ed17fc682afd306ad4224c0413c2",
+    "scripts/persistent_object_compact_shared.py": "8c5ee936e4ac5873d377beff1194b716253c09858f451e0d1e1927c51b26cb9e"
+   }
+  },
+  "persistent_object_blended_readout_transfer_sweep_note_2026-04-16": {
+   "audit_date": "2026-05-12T00:30:06.593080+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/minimal_source_driven_field_probe.py": "16768d58d878f744a7092dca878fd2cb66f6bae8a73ada64ef3fd7e785208457",
+    "scripts/persistent_object_adaptive_readout_probe.py": "257e59d7dcf95453351fba08922776cab0036309605229c7e36470295a1952f1",
+    "scripts/persistent_object_compact_inertial_probe.py": "7285c5338f657c6867ffa4b7b2b8c5428917ed17fc682afd306ad4224c0413c2",
+    "scripts/persistent_object_compact_shared.py": "8c5ee936e4ac5873d377beff1194b716253c09858f451e0d1e1927c51b26cb9e"
+   }
+  },
+  "persistent_object_compact_inertial_probe_note_2026-04-16": {
+   "audit_date": "2026-05-05T10:42:06.049441+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/minimal_source_driven_field_probe.py": "16768d58d878f744a7092dca878fd2cb66f6bae8a73ada64ef3fd7e785208457",
+    "scripts/persistent_object_adaptive_readout_probe.py": "257e59d7dcf95453351fba08922776cab0036309605229c7e36470295a1952f1",
+    "scripts/persistent_object_compact_shared.py": "8c5ee936e4ac5873d377beff1194b716253c09858f451e0d1e1927c51b26cb9e"
+   }
+  },
+  "persistent_object_exact_lattice_park_note_2026-04-16": {
+   "audit_date": "2026-05-19T15:40:08.411036+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/minimal_source_driven_field_probe.py": "16768d58d878f744a7092dca878fd2cb66f6bae8a73ada64ef3fd7e785208457"
+   }
+  },
+  "persistent_object_green_scout_note": {
+   "audit_date": "2026-05-01T09:10:59.686577+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/minimal_source_driven_field_probe.py": "16768d58d878f744a7092dca878fd2cb66f6bae8a73ada64ef3fd7e785208457"
+   },
+   "runner_path": "scripts/persistent_object_green_scout.py",
+   "runner_sha256_at_baseline": "5460af463166ad1915e6ea49a436d441c589db014bcdcbf0108bb96481bcb582"
+  },
+  "persistent_object_inward_boundary_floor_diagnosis_note_2026-04-16": {
+   "audit_date": "2026-05-12T00:25:13.086147+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/minimal_source_driven_field_probe.py": "16768d58d878f744a7092dca878fd2cb66f6bae8a73ada64ef3fd7e785208457",
+    "scripts/persistent_object_adaptive_readout_probe.py": "257e59d7dcf95453351fba08922776cab0036309605229c7e36470295a1952f1",
+    "scripts/persistent_object_blended_readout_boundary_probe.py": "51df7a55d05e9622ddeb29fbd21f9a8e35ab97684174a475dac3c0c1808fb153",
+    "scripts/persistent_object_blended_readout_transfer_sweep.py": "1b326e3d03c70d6c2e5ecb9067c4141fe252132507d55c363850a7d5a4f15650",
+    "scripts/persistent_object_compact_inertial_probe.py": "7285c5338f657c6867ffa4b7b2b8c5428917ed17fc682afd306ad4224c0413c2",
+    "scripts/persistent_object_compact_shared.py": "8c5ee936e4ac5873d377beff1194b716253c09858f451e0d1e1927c51b26cb9e",
+    "scripts/persistent_object_top3_multistage_probe.py": "81a03a040d3b424014bf71aebb52632318a3e89f251159eab33e5f0a4eedb5c8"
+   }
+  },
+  "persistent_object_multistage_floor_sweep_note_2026-04-16": {
+   "audit_date": "2026-05-07T01:10:39.669093+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/minimal_source_driven_field_probe.py": "16768d58d878f744a7092dca878fd2cb66f6bae8a73ada64ef3fd7e785208457",
+    "scripts/persistent_object_compact_shared.py": "8c5ee936e4ac5873d377beff1194b716253c09858f451e0d1e1927c51b26cb9e"
+   }
+  },
+  "persistent_object_readout_localization_note": {
+   "audit_date": "2026-05-01T09:39:41.757320+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/minimal_source_driven_field_probe.py": "16768d58d878f744a7092dca878fd2cb66f6bae8a73ada64ef3fd7e785208457"
+   },
+   "runner_path": "scripts/persistent_object_readout_localization_probe.py",
+   "runner_sha256_at_baseline": "ce0e210d74d0e0683c2bf914725f914cce64e76aaf4865b75d8df245a3c3b8f2"
+  },
+  "persistent_object_top3_multistage_probe_note_2026-04-16": {
+   "audit_date": "2026-05-01T09:44:27.955677+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/minimal_source_driven_field_probe.py": "16768d58d878f744a7092dca878fd2cb66f6bae8a73ada64ef3fd7e785208457",
+    "scripts/persistent_object_adaptive_readout_probe.py": "257e59d7dcf95453351fba08922776cab0036309605229c7e36470295a1952f1",
+    "scripts/persistent_object_blended_readout_boundary_probe.py": "51df7a55d05e9622ddeb29fbd21f9a8e35ab97684174a475dac3c0c1808fb153",
+    "scripts/persistent_object_blended_readout_transfer_sweep.py": "1b326e3d03c70d6c2e5ecb9067c4141fe252132507d55c363850a7d5a4f15650",
+    "scripts/persistent_object_compact_inertial_probe.py": "7285c5338f657c6867ffa4b7b2b8c5428917ed17fc682afd306ad4224c0413c2",
+    "scripts/persistent_object_compact_shared.py": "8c5ee936e4ac5873d377beff1194b716253c09858f451e0d1e1927c51b26cb9e"
+   },
+   "runner_path": "scripts/persistent_object_top3_multistage_probe.py",
+   "runner_sha256_at_baseline": "81a03a040d3b424014bf71aebb52632318a3e89f251159eab33e5f0a4eedb5c8"
+  },
+  "persistent_object_top4_multistage_outer_transfer_sweep_note_2026-04-16": {
+   "audit_date": "2026-05-12T00:36:53.941331+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/minimal_source_driven_field_probe.py": "16768d58d878f744a7092dca878fd2cb66f6bae8a73ada64ef3fd7e785208457",
+    "scripts/persistent_object_adaptive_readout_probe.py": "257e59d7dcf95453351fba08922776cab0036309605229c7e36470295a1952f1",
+    "scripts/persistent_object_blended_readout_boundary_probe.py": "51df7a55d05e9622ddeb29fbd21f9a8e35ab97684174a475dac3c0c1808fb153",
+    "scripts/persistent_object_blended_readout_transfer_sweep.py": "1b326e3d03c70d6c2e5ecb9067c4141fe252132507d55c363850a7d5a4f15650",
+    "scripts/persistent_object_compact_inertial_probe.py": "7285c5338f657c6867ffa4b7b2b8c5428917ed17fc682afd306ad4224c0413c2",
+    "scripts/persistent_object_compact_shared.py": "8c5ee936e4ac5873d377beff1194b716253c09858f451e0d1e1927c51b26cb9e",
+    "scripts/persistent_object_top3_multistage_probe.py": "81a03a040d3b424014bf71aebb52632318a3e89f251159eab33e5f0a4eedb5c8"
+   }
+  },
+  "persistent_object_top4_multistage_transfer_sweep_note_2026-04-16": {
+   "audit_date": "2026-05-07T01:03:58.230291+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/minimal_source_driven_field_probe.py": "16768d58d878f744a7092dca878fd2cb66f6bae8a73ada64ef3fd7e785208457",
+    "scripts/persistent_object_adaptive_readout_probe.py": "257e59d7dcf95453351fba08922776cab0036309605229c7e36470295a1952f1",
+    "scripts/persistent_object_blended_readout_boundary_probe.py": "51df7a55d05e9622ddeb29fbd21f9a8e35ab97684174a475dac3c0c1808fb153",
+    "scripts/persistent_object_blended_readout_transfer_sweep.py": "1b326e3d03c70d6c2e5ecb9067c4141fe252132507d55c363850a7d5a4f15650",
+    "scripts/persistent_object_compact_inertial_probe.py": "7285c5338f657c6867ffa4b7b2b8c5428917ed17fc682afd306ad4224c0413c2",
+    "scripts/persistent_object_compact_shared.py": "8c5ee936e4ac5873d377beff1194b716253c09858f451e0d1e1927c51b26cb9e",
+    "scripts/persistent_object_top3_multistage_probe.py": "81a03a040d3b424014bf71aebb52632318a3e89f251159eab33e5f0a4eedb5c8"
+   }
+  },
+  "persistent_record_matched_compare_note": {
+   "audit_date": "2026-05-01T10:46:16.278453+00:00",
+   "audit_status": "audited_clean",
+   "drift_evidence": [
+    "a2f1a67541 2026-06-07 scripts/persistent_record_matched_compare.py"
+   ],
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/density_matrix_analysis.py": "3f125052aa13fd82e2d4a903d74f657d4d32835bc9f3ffdebd1bb4dfbe6a3d1b",
+    "scripts/entangling_env_decoherence.py": "a3c90f7f1155aa10801d989b40a5a89a22c9859366d7d23573d864e9bb5be76b",
+    "scripts/generative_causal_dag_interference.py": "61266823b2ba7a2b225f15dbd54bae3044a627a1ed59704e1a96b0846247a57f",
+    "scripts/graph_memory_scar_decoherence.py": "3011d38ef33633f3ca28eefe7df947bef520ca1fc56ffe20d9cdee8a8a9e593e",
+    "scripts/persistent_record_overlap_kernel.py": "57d4a199f7a3e735d8c06c28308c3a59adca79aafce29c01fbe72f1b30f8dc40",
+    "scripts/two_register_decoherence.py": "8e96914ae3f7b79a83a11422820bfedc18d070f1762da8dcd5a3bf1c52e2d3eb"
+   },
+   "runner_path": "scripts/persistent_record_matched_compare.py",
+   "runner_sha256_at_baseline": "85f7c6d986368a231f681f22dbb346fdc2d60d039fb25094009c7afac43f5157",
+   "source_drifted_since_verdict": true
+  },
+  "persistent_record_overlap_kernel_note": {
+   "audit_date": "2026-05-01T10:48:25.559149+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/density_matrix_analysis.py": "3f125052aa13fd82e2d4a903d74f657d4d32835bc9f3ffdebd1bb4dfbe6a3d1b",
+    "scripts/generative_causal_dag_interference.py": "61266823b2ba7a2b225f15dbd54bae3044a627a1ed59704e1a96b0846247a57f",
+    "scripts/two_register_decoherence.py": "8e96914ae3f7b79a83a11422820bfedc18d070f1762da8dcd5a3bf1c52e2d3eb"
+   },
+   "runner_path": "scripts/persistent_record_overlap_kernel.py",
+   "runner_sha256_at_baseline": "57d4a199f7a3e735d8c06c28308c3a59adca79aafce29c01fbe72f1b30f8dc40"
+  },
+  "poisson_backreaction_live_threshold_packet_note_2026-05-29": {
+   "audit_date": "2026-06-06T18:44:37.272600+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/backreaction_poisson.py": "17244ab7bd6fd3a37f01f805f4f63eb772ace7a3013e3b750772b13a242beb16"
+   }
+  },
+  "post_record_flow_thermal_stable_setting_certificate_2026-06-06": {
+   "audit_date": "2026-07-10T04:22:55.396329+00:00",
+   "audit_status": "audited_renaming",
+   "effective_status": "audited_renaming",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py": "0d65034ec4c3850f1589b5ba5857a9e4db9c80266b1763f50bd69e54171edb6e",
+    "scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py": "7a1cbbc355213aaf76dd811b5ecb7cf289460cef4ead95bc2b9049612361542e"
+   }
+  },
+  "post_record_production_dynamics_needed_row_map_2026-06-06": {
+   "audit_date": "2026-06-18T14:14:14.350877+00:00",
+   "audit_status": "audited_renaming",
+   "drift_evidence": [
+    "45dd0e9cdd 2026-07-02 scripts/frontier_post_record_audit_evidence_ladder_row_bucketing_2026_06_06.py",
+    "8c6d86f9a8 2026-06-21 scripts/frontier_post_record_audit_evidence_ladder_row_bucketing_2026_06_06.py"
+   ],
+   "effective_status": "audited_renaming",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/frontier_post_record_audit_evidence_ladder_row_bucketing_2026_06_06.py": "3a947351ceeadc9052a926aca21e3551c4a5119928f4af77ce88fc13de454397"
+   },
+   "source_drifted_since_verdict": true
+  },
+  "quark_cp_carrier_completion_note_2026-04-18": {
+   "audit_date": "2026-07-07T19:42:21.354970+00:00",
+   "audit_status": "audited_numerical_match",
+   "effective_status": "audited_numerical_match",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/canonical_plaquette_surface.py": "fd681ecbecda7ab5590b72199ee5bbb4393826f0f8e40ca66f8e2e6531646693",
+    "scripts/frontier_quark_mass_ratio_full_solve.py": "118387c384128e9a0ab7726643b8ed32e7ed807c6f3f3423c9bda7339ec619a5"
+   }
+  },
+  "quark_cp_small_correction_boundary_note_2026-06-17": {
+   "audit_date": "2026-06-21T18:28:40.749090+00:00",
+   "audit_status": "audited_conditional",
+   "drift_evidence": [
+    "42feda3a10 2026-07-07 scripts/frontier_quark_mass_ratio_full_solve.py"
+   ],
+   "effective_status": "audited_conditional",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/canonical_plaquette_surface.py": "fd681ecbecda7ab5590b72199ee5bbb4393826f0f8e40ca66f8e2e6531646693",
+    "scripts/frontier_quark_cp_carrier_completion.py": "eac39ec69d20d3524b642b6145a9d0d3c31ef92a3c218b914fef033494ade9b7",
+    "scripts/frontier_quark_mass_ratio_full_solve.py": "118387c384128e9a0ab7726643b8ed32e7ed807c6f3f3423c9bda7339ec619a5"
+   },
+   "source_drifted_since_verdict": true
+  },
+  "replay_environment_note": {
+   "audit_date": "2026-05-01T23:28:33.389906+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained",
+   "runner_path": "scripts/numpy_replay_bootstrap.py",
+   "runner_sha256_at_baseline": "41d6345df67dd5e90a5d8073ad963aafca8083df9e0e0b55d4dce6fa233e09e1"
+  },
+  "retarded_field_causality_probe_note": {
+   "audit_date": "2026-05-04T23:31:09.124684+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/causal_field_gravity.py": "bb0e4137da2988d1abd7f14cd0c4cc745fc6c3c09a50e13c16435ff8876bd48f"
+   }
+  },
+  "retarded_field_compact_refinement_note": {
+   "audit_date": "2026-05-11T15:55:41.044524+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/causal_field_gravity.py": "bb0e4137da2988d1abd7f14cd0c4cc745fc6c3c09a50e13c16435ff8876bd48f"
+   }
+  },
+  "scalar_kg_rerun_note_2026-04-10": {
+   "audit_date": "2026-05-01T21:02:06.946242+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "runner_path": "scripts/frontier_scalar_kg_16card_v2.py",
+   "runner_sha256_at_baseline": "4727daabcaedf5b216941e53b9d72d35e3ac3f9df4ab68e6a49a25106896e83a"
+  },
+  "second_grown_family_complex_note": {
+   "audit_date": "2026-05-10T16:44:56.011413+00:00",
+   "audit_status": "audited_clean",
+   "drift_evidence": [
+    "9e717d60cc 2026-05-27 scripts/gate_b_grown_joint_package.py",
+    "b616c42e13 2026-05-24 scripts/GATE_B_NONLABEL_SIGN_GROWN_TRANSFER.py"
+   ],
+   "effective_status": "retained",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/GATE_B_NONLABEL_SIGN_GROWN_TRANSFER.py": "3b9111df0ce6dc81dfd1002cfb5097e84f7c3bb68e593d21530b68a08c9d44ab",
+    "scripts/complex_action_grown_companion.py": "59b8ff8d1a7f6c26f078f3501bb728d3b2bf0b80fff94b9212ae98ed8a9c6295",
+    "scripts/gate_b_grown_joint_package.py": "2d2ab7c6531c69165aba46309f5851b87bc069ed187edad4bd404814a097a239",
+    "scripts/gate_b_no_restore_farfield.py": "e6af20e5f54cbd8d49578d65573fc71c9f2a0a7a77cac1f4c11c6b0e501f8373"
+   },
+   "source_drifted_since_verdict": true
+  },
+  "second_grown_family_sign_note": {
+   "audit_date": "2026-05-06T02:47:50.916426+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/gate_b_nonlabel_connectivity_v1.py": "3b4279cc1e3c8121c3cfb60663e276d509f292d06420a2eeb6014bfcd5d70e5f"
+   }
+  },
+  "self_consistency_structured_null_note_2026-04-11": {
+   "audit_date": "2026-05-01T06:44:58.602166+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "runner_path": "scripts/frontier_self_consistency_test.py",
+   "runner_sha256_at_baseline": "54aa2f36af37d4689108a88e8c32c56d1d4af8da964a004c74fc9ebc9fcca0c4"
+  },
+  "self_gravity_scaling_note_2026-04-10": {
+   "audit_date": "2026-05-01T23:33:38.266607+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "runner_path": "scripts/frontier_staggered_self_gravity_scaling.py",
+   "runner_sha256_at_baseline": "fef9b64d5181e11e196cc90064e62ed54567fb0d8769aed448b1f569bdbcb5c6"
+  },
+  "seventh_family_diagonal_boundary_note": {
+   "audit_date": "2026-06-07T19:00:39.442057+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/gate_b_no_restore_farfield.py": "e6af20e5f54cbd8d49578d65573fc71c9f2a0a7a77cac1f4c11c6b0e501f8373"
+   }
+  },
+  "shapiro_five_family_portability_corrected_boundary_note_2026-06-06": {
+   "audit_date": "2026-06-07T19:02:34.087751+00:00",
+   "audit_status": "audited_clean",
+   "drift_evidence": [
+    "02c2ba171f 2026-06-20 scripts/shapiro_family_portability.py"
+   ],
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/ALT_CONNECTIVITY_FAMILY_SIGN_SWEEP.py": "c2bd8a6aa8d66ce0156274914ed34b385595c27592ea9e897ddd28de67513301",
+    "scripts/DISTANCE_LAW_PORTABILITY_COMPARE.py": "18eb8e1741f63d45df1c30652cbc3bacc9bd17853f27c87c4f00bda7e4eff918",
+    "scripts/FOURTH_FAMILY_QUADRANT_SWEEP.py": "b1edda866d16458a24398120de5f0758c47dd7ead9dfa903e5510594c41339dc",
+    "scripts/THIRD_GROWN_FAMILY_SIGN_SWEEP.py": "a60a7780284a647829629cbfd8b6d0a2e44f948ff0b1c52e13a0b1fd5b1444d7",
+    "scripts/gate_b_no_restore_farfield.py": "e6af20e5f54cbd8d49578d65573fc71c9f2a0a7a77cac1f4c11c6b0e501f8373",
+    "scripts/shapiro_family_portability.py": "a47ffad1d06d692263f113207e41abf7f5b34ede192f2b1a0b58053ec6e44c15"
+   },
+   "source_drifted_since_verdict": true
+  },
+  "sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09": {
+   "audit_date": "2026-05-27T01:16:00.929136+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/SECOND_GROWN_FAMILY_SIGN_SWEEP.py": "551c91c17688b785c9bf8d26f05a1bf977e4edd831b00402ad3150b8369c0b9e",
+    "scripts/gate_b_nonlabel_connectivity_v1.py": "3b4279cc1e3c8121c3cfb60663e276d509f292d06420a2eeb6014bfcd5d70e5f"
+   }
+  },
+  "site_phase_cube_shift_intertwiner_note": {
+   "audit_date": "2026-05-02T15:37:57.008099+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained",
+   "runner_path": "scripts/frontier_site_phase_cube_shift_intertwiner.py",
+   "runner_sha256_at_baseline": "40c66466d8db2c0ddf2e4b1f369cc7913a0f764b705f827a49a11528a8ac7921"
+  },
+  "source_driven_field_recovery_h025_pocket_note": {
+   "audit_date": "2026-05-02T00:05:44.592632+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/minimal_source_driven_field_probe.py": "16768d58d878f744a7092dca878fd2cb66f6bae8a73ada64ef3fd7e785208457"
+   },
+   "runner_path": "scripts/source_driven_field_recovery_h025_pocket.py",
+   "runner_sha256_at_baseline": "10b5d55589c63dee90e7df51e392f5624d5e87d2869166c9c4e6ddf6eddb76b4"
+  },
+  "source_resolved_exact_green_scaling_note": {
+   "audit_date": "2026-05-17T14:42:11.906633+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/minimal_source_driven_field_probe.py": "16768d58d878f744a7092dca878fd2cb66f6bae8a73ada64ef3fd7e785208457"
+   }
+  },
+  "source_resolved_exact_green_self_consistent_note": {
+   "audit_date": "2026-06-18T14:54:01.146903+00:00",
+   "audit_status": "audited_numerical_match",
+   "effective_status": "audited_numerical_match",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/minimal_source_driven_field_probe.py": "16768d58d878f744a7092dca878fd2cb66f6bae8a73ada64ef3fd7e785208457"
+   }
+  },
+  "source_resolved_generated_architecture_bridge_note": {
+   "audit_date": "2026-05-01T06:32:04.931227+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/causal_field_gravity.py": "bb0e4137da2988d1abd7f14cd0c4cc745fc6c3c09a50e13c16435ff8876bd48f"
+   },
+   "runner_path": "scripts/source_resolved_generated_architecture_bridge.py",
+   "runner_sha256_at_baseline": "3916a4b7a7233cb7954e2304c8c26b62ba74c69d3ce7326f78fdd8b2c3bd27d3"
+  },
+  "source_resolved_generated_discriminator_probe_note": {
+   "audit_date": "2026-05-02T00:15:38.615895+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/causal_field_gravity.py": "bb0e4137da2988d1abd7f14cd0c4cc745fc6c3c09a50e13c16435ff8876bd48f"
+   },
+   "runner_path": "scripts/source_resolved_generated_discriminator_probe.py",
+   "runner_sha256_at_baseline": "ecd2f8d0f3647f736027a7ebcd27e07c8128b7b8958a00272088be8e2de73353"
+  },
+  "source_resolved_generated_new_family_note": {
+   "audit_date": "2026-05-02T00:17:54.043022+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/causal_field_gravity.py": "bb0e4137da2988d1abd7f14cd0c4cc745fc6c3c09a50e13c16435ff8876bd48f",
+    "scripts/source_resolved_generated_wavefield_bridge.py": "e0880eb5efe84c87041513c3818a9d1d36208547b165d4701956bca5e7fc4c11"
+   },
+   "runner_path": "scripts/source_resolved_generated_new_family_probe.py",
+   "runner_sha256_at_baseline": "8b2a044e9b994b3f0a133aac92777e07d278285e348e12ef7d7b3d8661a33c66"
+  },
+  "source_resolved_generated_support_recovery_note": {
+   "audit_date": "2026-05-02T00:21:42.274534+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/causal_field_gravity.py": "bb0e4137da2988d1abd7f14cd0c4cc745fc6c3c09a50e13c16435ff8876bd48f"
+   },
+   "runner_path": "scripts/source_resolved_generated_support_recovery.py",
+   "runner_sha256_at_baseline": "aa3321214e4832132e7d573a125b06250fcb09d79a680688a82ec99b9bacd5af"
+  },
+  "source_resolved_retarded_green_corrected_packet_note_2026-05-29": {
+   "audit_date": "2026-06-01T20:54:59.187705+00:00",
+   "audit_status": "audited_clean",
+   "drift_evidence": [
+    "c6a24edda7 2026-06-08 scripts/source_resolved_retarded_green_pocket.py"
+   ],
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/minimal_source_driven_field_probe.py": "16768d58d878f744a7092dca878fd2cb66f6bae8a73ada64ef3fd7e785208457",
+    "scripts/source_resolved_retarded_green_pocket.py": "32f21b2000052829ff9581847b9083cba9c20082db775658172d211e16d2c7a6"
+   },
+   "source_drifted_since_verdict": true
+  },
+  "source_resolved_retarded_green_pocket_note": {
+   "audit_date": "2026-06-09T14:19:50.630833+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/minimal_source_driven_field_probe.py": "16768d58d878f744a7092dca878fd2cb66f6bae8a73ada64ef3fd7e785208457"
+   }
+  },
+  "source_resolved_support_localization_split_note": {
+   "audit_date": "2026-05-02T00:33:51.756441+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/causal_field_gravity.py": "bb0e4137da2988d1abd7f14cd0c4cc745fc6c3c09a50e13c16435ff8876bd48f",
+    "scripts/minimal_source_driven_field_probe.py": "16768d58d878f744a7092dca878fd2cb66f6bae8a73ada64ef3fd7e785208457"
+   },
+   "runner_path": "scripts/source_resolved_support_localization_split_probe.py",
+   "runner_sha256_at_baseline": "fa26eee72ac0066c6d65bbc3c7061cba2d35741d08c09cfabe41c841bbab409d"
+  },
+  "source_resolved_transverse_green_corrected_boundary_note_2026-05-29": {
+   "audit_date": "2026-06-01T20:58:17.083055+00:00",
+   "audit_status": "audited_clean",
+   "drift_evidence": [
+    "c6a24edda7 2026-06-08 scripts/source_resolved_transverse_propagating_green.py"
+   ],
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/minimal_source_driven_field_probe.py": "16768d58d878f744a7092dca878fd2cb66f6bae8a73ada64ef3fd7e785208457",
+    "scripts/source_resolved_transverse_propagating_green.py": "63075d06038cffa5dbd0747d1776aefb662eff0704e5c0b2ce14c866ae99cdca"
+   },
+   "source_drifted_since_verdict": true
+  },
+  "source_resolved_wavefield_v2_note": {
+   "audit_date": "2026-05-05T04:42:28.879857+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/minimal_source_driven_field_probe.py": "16768d58d878f744a7092dca878fd2cb66f6bae8a73ada64ef3fd7e785208457",
+    "scripts/source_resolved_wavefield_escalation.py": "6b3ea8ab71643532af77fbff91d64e41fda8261ca92afb6da49d40943fb2b15f"
+   }
+  },
+  "spectral_closure_2026-04-09": {
+   "audit_date": "2026-05-02T00:36:39.451262+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "runner_path": "scripts/frontier_spectral_on_lattice.py",
+   "runner_sha256_at_baseline": "2fe2e485c32546d2ccf7f02b1f0ee364bdbd6c9bbf56c05b0eb0bba5df9c8847"
+  },
+  "staggered_backreaction_capture_closure_note": {
+   "audit_date": "2026-06-09T14:30:11.822420+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/frontier_staggered_backreaction_iterative.py": "2ac39d606949af29d6171fbd17018a9321dea4b1abf2e70ba434bcca928b3497",
+    "scripts/frontier_staggered_backreaction_prototype.py": "24df57cb18a192ea901c663d35eec1e327d9b515cbbf67f5bb4539f950e1e975",
+    "scripts/frontier_staggered_cycle_battery.py": "d139bef6390002c66cbebdb6c16e7443b05006b65b58870ab65124a241c5ec48",
+    "scripts/frontier_staggered_layered_backreaction.py": "833f1a4762d167986c9b93ce79f493c28579d6c9f975400bcd378a6b078eb0bd"
+   }
+  },
+  "staggered_backreaction_iterative_note": {
+   "audit_date": "2026-06-09T14:35:00.806907+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/frontier_staggered_backreaction_prototype.py": "24df57cb18a192ea901c663d35eec1e327d9b515cbbf67f5bb4539f950e1e975"
+   }
+  },
+  "staggered_backreaction_live_capture_packet_note_2026-05-29": {
+   "audit_date": "2026-06-07T19:11:04.694479+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/frontier_staggered_backreaction_capture_closure_harness.py": "8eee0a1c509997614b5bd488fcf048a0b157ee28f4c264e3876ef2528495b969",
+    "scripts/frontier_staggered_backreaction_iterative.py": "2ac39d606949af29d6171fbd17018a9321dea4b1abf2e70ba434bcca928b3497",
+    "scripts/frontier_staggered_backreaction_prototype.py": "24df57cb18a192ea901c663d35eec1e327d9b515cbbf67f5bb4539f950e1e975",
+    "scripts/frontier_staggered_cycle_battery.py": "d139bef6390002c66cbebdb6c16e7443b05006b65b58870ab65124a241c5ec48",
+    "scripts/frontier_staggered_layered_backreaction.py": "833f1a4762d167986c9b93ce79f493c28579d6c9f975400bcd378a6b078eb0bd"
+   }
+  },
+  "staggered_backreaction_nonlocal_closure_note": {
+   "audit_date": "2026-06-09T14:38:07.861888+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/frontier_staggered_backreaction_prototype.py": "24df57cb18a192ea901c663d35eec1e327d9b515cbbf67f5bb4539f950e1e975"
+   }
+  },
+  "staggered_backreaction_shell_spectral_note": {
+   "audit_date": "2026-05-11T16:01:44.832890+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/frontier_staggered_backreaction_prototype.py": "24df57cb18a192ea901c663d35eec1e327d9b515cbbf67f5bb4539f950e1e975"
+   }
+  },
+  "staggered_dag_note_2026-04-10": {
+   "audit_date": "2026-05-02T00:42:14.144249+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "runner_path": "scripts/frontier_staggered_dag.py",
+   "runner_sha256_at_baseline": "47bf642b2ce0e7fe21477dc8b89a19c04b5329c2fcf58d4167896fafc0e3be92"
+  },
+  "staggered_fermion_card_2026-04-10": {
+   "audit_date": "2026-05-03T21:01:42.077181+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "runner_path": "scripts/frontier_staggered_17card.py",
+   "runner_sha256_at_baseline": "a8e24820b59d208ad9e7bd8daf6e594259cb5c0dedb3fe2580bae2dde19bfeda"
+  },
+  "staggered_geometry_superposition_note_2026-04-11": {
+   "audit_date": "2026-05-01T06:50:52.733201+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/periodic_geometry.py": "2d769b7f164e14c69393db7e6d9697b204058e804ea5fb253ca71c0cb9e583c6"
+   },
+   "runner_path": "scripts/frontier_staggered_geometry_superposition_retained.py",
+   "runner_sha256_at_baseline": "5d0b476245360a8d8aeaae84925f9f72bd04649a63983a82fcaf27bc53253e8d"
+  },
+  "staggered_graph_failure_map_note": {
+   "audit_date": "2026-05-05T11:41:20.272705+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/frontier_staggered_graph_portability.py": "9d1ba530bc993b5d969f578b767142a54dd8de10d818382c0b6f6be90f084978"
+   }
+  },
+  "staggered_graph_gauge_closure_note": {
+   "audit_date": "2026-05-08T02:57:40.106289+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/frontier_staggered_graph_portability.py": "9d1ba530bc993b5d969f578b767142a54dd8de10d818382c0b6f6be90f084978",
+    "scripts/frontier_staggered_graph_portability_stress.py": "9565fd84f2b42017f7b2d44d82537f581773346ca2aefbaa5094abaa4b5c795b",
+    "scripts/frontier_staggered_layered_backreaction.py": "833f1a4762d167986c9b93ce79f493c28579d6c9f975400bcd378a6b078eb0bd"
+   }
+  },
+  "staggered_graph_gauge_closure_results_2026-04-10": {
+   "audit_date": "2026-05-08T03:01:03.682496+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/frontier_staggered_graph_portability.py": "9d1ba530bc993b5d969f578b767142a54dd8de10d818382c0b6f6be90f084978",
+    "scripts/frontier_staggered_graph_portability_stress.py": "9565fd84f2b42017f7b2d44d82537f581773346ca2aefbaa5094abaa4b5c795b",
+    "scripts/frontier_staggered_layered_backreaction.py": "833f1a4762d167986c9b93ce79f493c28579d6c9f975400bcd378a6b078eb0bd"
+   }
+  },
+  "staggered_graph_portability_stress_note": {
+   "audit_date": "2026-05-05T11:44:13.477263+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/frontier_staggered_graph_portability.py": "9d1ba530bc993b5d969f578b767142a54dd8de10d818382c0b6f6be90f084978"
+   }
+  },
+  "staggered_layered_backreaction_note": {
+   "audit_date": "2026-05-03T00:14:02.815150+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "runner_path": "scripts/frontier_staggered_layered_backreaction.py",
+   "runner_sha256_at_baseline": "833f1a4762d167986c9b93ce79f493c28579d6c9f975400bcd378a6b078eb0bd"
+  },
+  "staggered_layered_gauge_engineering_note": {
+   "audit_date": "2026-05-05T11:38:19.286802+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/frontier_staggered_graph_portability.py": "9d1ba530bc993b5d969f578b767142a54dd8de10d818382c0b6f6be90f084978",
+    "scripts/frontier_staggered_layered_backreaction.py": "833f1a4762d167986c9b93ce79f493c28579d6c9f975400bcd378a6b078eb0bd"
+   }
+  },
+  "staggered_layered_gauge_phase_diagram_note": {
+   "audit_date": "2026-05-05T12:26:04.880004+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/frontier_staggered_graph_portability.py": "9d1ba530bc993b5d969f578b767142a54dd8de10d818382c0b6f6be90f084978",
+    "scripts/frontier_staggered_layered_backreaction.py": "833f1a4762d167986c9b93ce79f493c28579d6c9f975400bcd378a6b078eb0bd"
+   }
+  },
+  "staggered_layered_loop_threshold_note": {
+   "audit_date": "2026-05-03T00:16:46.417010+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/frontier_staggered_graph_failure_map.py": "7d4da2851753cb298dc5a94864332e2117c4358dfc7348041ee43e492100ed22",
+    "scripts/frontier_staggered_graph_portability.py": "9d1ba530bc993b5d969f578b767142a54dd8de10d818382c0b6f6be90f084978",
+    "scripts/frontier_staggered_layered_backreaction.py": "833f1a4762d167986c9b93ce79f493c28579d6c9f975400bcd378a6b078eb0bd"
+   },
+   "runner_path": "scripts/frontier_staggered_layered_loop_threshold.py",
+   "runner_sha256_at_baseline": "d90ba0064e5e7126a50482eb372b8ca934e6dd03258c8a39f3107cbfca8a465f"
+  },
+  "staggered_test_mass_companion_note_2026-04-11": {
+   "audit_date": "2026-05-02T00:47:23.639365+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "runner_path": "scripts/frontier_staggered_test_mass_companion.py",
+   "runner_sha256_at_baseline": "4c3418a579c87e343fb5be7fab77001e49384d494fd23bdfcaf8a1102c5badc9"
+  },
+  "structureless_dag_gravity_note": {
+   "audit_date": "2026-05-03T00:21:55.050529+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "runner_path": "scripts/structureless_dag_gravity_harness.py",
+   "runner_sha256_at_baseline": "7815fe103e0571c093fc1b13cf8b5aa8b52ad0dad875819c2f7006444f494332"
+  },
+  "symmetry_generated_paired_chokepoint_note": {
+   "audit_date": "2026-05-02T00:58:00.494073+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/mirror_chokepoint_joint.py": "afff61d204cc8a146c0b15c1c40e2105cdcb71693de7302da791b21efe07d563"
+   },
+   "runner_path": "scripts/symmetry_generated_paired_chokepoint.py",
+   "runner_sha256_at_baseline": "8d4f4cbe80197f16501888bb68e82a87c82881954b1c85d79fad2d3b4ff8ca02"
+  },
+  "symmetry_spectrum_mirror_compare_note": {
+   "audit_date": "2026-05-02T00:59:30.186654+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "runner_path": "scripts/symmetry_spectrum_mirror_compare.py",
+   "runner_sha256_at_baseline": "ec899100225e3e876a0ffa1090cdbb213fd6bf3b36706a6853b7b4902bc1f505"
+  },
+  "taste_scalar_isotropy_theorem_note": {
+   "audit_date": "2026-05-05T09:07:06.655756+00:00",
+   "audit_status": "audited_clean",
+   "drift_evidence": [
+    "3e1c14d8f7 2026-05-24 scripts/canonical_plaquette_surface.py"
+   ],
+   "effective_status": "retained",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/canonical_plaquette_surface.py": "fd681ecbecda7ab5590b72199ee5bbb4393826f0f8e40ca66f8e2e6531646693"
+   },
+   "source_drifted_since_verdict": true
+  },
+  "teleportation_3d_operator_consistent_end_to_end_note": {
+   "audit_date": "2026-05-03T00:38:39.276138+00:00",
+   "audit_status": "audited_clean",
+   "drift_evidence": [
+    "010d4ba592 2026-06-05 scripts/frontier_teleportation_resource_from_poisson.py",
+    "0453e5284d 2026-06-18 scripts/frontier_teleportation_resource_from_poisson.py",
+    "566aeac141 2026-06-15 scripts/frontier_teleportation_resource_from_poisson.py",
+    "7447f6918b 2026-07-16 scripts/frontier_teleportation_resource_from_poisson.py",
+    "8235ba655f 2026-06-17 scripts/frontier_teleportation_taste_readout_operator_model.py",
+    "a1361f8086 2026-06-20 scripts/frontier_teleportation_resource_from_poisson.py",
+    "a2f1a67541 2026-06-07 scripts/frontier_teleportation_resource_from_poisson.py",
+    "bf7df9b06c 2026-06-13 scripts/frontier_teleportation_resource_from_poisson.py"
+   ],
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/frontier_bell_inequality.py": "1a290c8e305c53084825076a409452857feeb44d7414e1d69eb8648fff115689",
+    "scripts/frontier_teleportation_causal_channel.py": "04a8ee2f46f11cede88965e6be8308e78ec6990547ab7c617192fde121fa42da",
+    "scripts/frontier_teleportation_end_to_end_poisson.py": "cc5c21d8ee65d303567544ae1273958c6cf99007c6c0ca6fb2e92845676185c7",
+    "scripts/frontier_teleportation_operator_consistent_end_to_end.py": "c9bcc5c5a38a6cff578650dc7db536216d18daa5a3b86f7d24dc9d1ee9193184",
+    "scripts/frontier_teleportation_resource_fidelity.py": "d9ca0c36744f9aa71687c58e8fcd1437471a39eefac4857d920096d3a60e10e9",
+    "scripts/frontier_teleportation_resource_from_poisson.py": "3535f2d33e0abe98f2f921ab66dc0288a0293c8370a763189cc00708ac599ace",
+    "scripts/frontier_teleportation_taste_readout_operator_model.py": "69fde07391e2a34bfc1ddf75af625383056c416000557819bfec78e6644a48eb",
+    "scripts/teleportation_boundary_checks_2026_06_13.py": "095f958d84c2549e235defe174553aad674ee84086d2e00f2a0eed2cab6f0392"
+   },
+   "runner_path": "scripts/frontier_teleportation_3d_operator_consistent_end_to_end.py",
+   "runner_sha256_at_baseline": "20a2c4edf5e2a19ff10f1e5ba0aff682d3f4fceebca29cd77049a8779baf81b4",
+   "source_drifted_since_verdict": true
+  },
+  "teleportation_3d_resource_probe_note": {
+   "audit_date": "2026-05-11T18:15:52.623664+00:00",
+   "audit_status": "audited_clean",
+   "drift_evidence": [
+    "010d4ba592 2026-06-05 scripts/frontier_teleportation_resource_from_poisson.py",
+    "0453e5284d 2026-06-18 scripts/frontier_teleportation_resource_from_poisson.py",
+    "566aeac141 2026-06-15 scripts/frontier_teleportation_resource_from_poisson.py",
+    "7447f6918b 2026-07-16 scripts/frontier_teleportation_resource_from_poisson.py",
+    "a1361f8086 2026-06-20 scripts/frontier_teleportation_resource_from_poisson.py",
+    "a2f1a67541 2026-06-07 scripts/frontier_teleportation_resource_from_poisson.py",
+    "bf7df9b06c 2026-06-13 scripts/frontier_teleportation_resource_from_poisson.py"
+   ],
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/frontier_bell_inequality.py": "1a290c8e305c53084825076a409452857feeb44d7414e1d69eb8648fff115689",
+    "scripts/frontier_teleportation_resource_fidelity.py": "d9ca0c36744f9aa71687c58e8fcd1437471a39eefac4857d920096d3a60e10e9",
+    "scripts/frontier_teleportation_resource_from_poisson.py": "3535f2d33e0abe98f2f921ab66dc0288a0293c8370a763189cc00708ac599ace"
+   },
+   "source_drifted_since_verdict": true
+  },
+  "teleportation_adiabatic_time_evolution_note": {
+   "audit_date": "2026-05-03T00:57:30.408260+00:00",
+   "audit_status": "audited_clean",
+   "drift_evidence": [
+    "010d4ba592 2026-06-05 scripts/frontier_teleportation_resource_from_poisson.py",
+    "0453e5284d 2026-06-18 scripts/frontier_teleportation_resource_from_poisson.py",
+    "566aeac141 2026-06-15 scripts/frontier_teleportation_resource_from_poisson.py",
+    "7447f6918b 2026-07-16 scripts/frontier_teleportation_resource_from_poisson.py",
+    "a1361f8086 2026-06-20 scripts/frontier_teleportation_resource_from_poisson.py",
+    "a2f1a67541 2026-06-07 scripts/frontier_teleportation_resource_from_poisson.py",
+    "bf7df9b06c 2026-06-13 scripts/frontier_teleportation_resource_from_poisson.py"
+   ],
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/frontier_bell_inequality.py": "1a290c8e305c53084825076a409452857feeb44d7414e1d69eb8648fff115689",
+    "scripts/frontier_teleportation_adiabatic_prep_probe.py": "4bfb8c77de9afd3311fc523f85664520673722b875d0265890ef0c7875afa972",
+    "scripts/frontier_teleportation_resource_fidelity.py": "d9ca0c36744f9aa71687c58e8fcd1437471a39eefac4857d920096d3a60e10e9",
+    "scripts/frontier_teleportation_resource_from_poisson.py": "3535f2d33e0abe98f2f921ab66dc0288a0293c8370a763189cc00708ac599ace"
+   },
+   "runner_path": "scripts/frontier_teleportation_adiabatic_time_evolution.py",
+   "runner_sha256_at_baseline": "283ef2eeba63121639f1ea556bea129eca2ced287a67914e6afeb9ec016c6849",
+   "source_drifted_since_verdict": true
+  },
+  "teleportation_causal_channel_note": {
+   "audit_date": "2026-05-03T01:02:19.070823+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "runner_path": "scripts/frontier_teleportation_causal_channel.py",
+   "runner_sha256_at_baseline": "04a8ee2f46f11cede88965e6be8308e78ec6990547ab7c617192fde121fa42da"
+  },
+  "teleportation_dynamical_resource_generation_note": {
+   "audit_date": "2026-05-03T01:08:05.925263+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/frontier_bell_inequality.py": "1a290c8e305c53084825076a409452857feeb44d7414e1d69eb8648fff115689"
+   },
+   "runner_path": "scripts/frontier_teleportation_dynamical_resource_generation.py",
+   "runner_sha256_at_baseline": "a2fbc0c1fad3fb55609ab32b509db8da2d391b12262bc440af694f0baa2c57de"
+  },
+  "teleportation_logical_readout_audit": {
+   "audit_date": "2026-05-02T22:56:25.636015+00:00",
+   "audit_status": "audited_clean",
+   "drift_evidence": [
+    "010d4ba592 2026-06-05 scripts/frontier_teleportation_resource_from_poisson.py",
+    "0453e5284d 2026-06-18 scripts/frontier_teleportation_resource_from_poisson.py",
+    "566aeac141 2026-06-15 scripts/frontier_teleportation_resource_from_poisson.py",
+    "7447f6918b 2026-07-16 scripts/frontier_teleportation_resource_from_poisson.py",
+    "a1361f8086 2026-06-20 scripts/frontier_teleportation_resource_from_poisson.py",
+    "a2f1a67541 2026-06-07 scripts/frontier_teleportation_resource_from_poisson.py",
+    "bf7df9b06c 2026-06-13 scripts/frontier_teleportation_resource_from_poisson.py"
+   ],
+   "effective_status": "open_gate",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/frontier_bell_inequality.py": "1a290c8e305c53084825076a409452857feeb44d7414e1d69eb8648fff115689",
+    "scripts/frontier_teleportation_resource_fidelity.py": "d9ca0c36744f9aa71687c58e8fcd1437471a39eefac4857d920096d3a60e10e9",
+    "scripts/frontier_teleportation_resource_from_poisson.py": "3535f2d33e0abe98f2f921ab66dc0288a0293c8370a763189cc00708ac599ace"
+   },
+   "runner_path": "scripts/frontier_teleportation_logical_readout_audit.py",
+   "runner_sha256_at_baseline": "6e77955f9efbe8a52040acc8919be95d8bdbd50012c689fdb723064fa7381970",
+   "source_drifted_since_verdict": true
+  },
+  "teleportation_no_signaling_audit": {
+   "audit_date": "2026-05-03T01:34:46.456051+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "runner_path": "scripts/frontier_teleportation_protocol.py",
+   "runner_sha256_at_baseline": "f6d05d806623e945df61dda4e2ce342ea844a13ccaa1dbb689499dc329dfa308"
+  },
+  "teleportation_poisson_finite_extraction_core_bounded_note_2026-06-18": {
+   "audit_date": "2026-06-19T21:53:43.979090+00:00",
+   "audit_status": "audited_clean",
+   "drift_evidence": [
+    "7447f6918b 2026-07-16 scripts/frontier_teleportation_resource_from_poisson.py",
+    "a1361f8086 2026-06-20 scripts/frontier_teleportation_resource_from_poisson.py"
+   ],
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/frontier_bell_inequality.py": "1a290c8e305c53084825076a409452857feeb44d7414e1d69eb8648fff115689",
+    "scripts/frontier_teleportation_resource_from_poisson.py": "3535f2d33e0abe98f2f921ab66dc0288a0293c8370a763189cc00708ac599ace"
+   },
+   "source_drifted_since_verdict": true
+  },
+  "teleportation_poisson_resource_sweep_note": {
+   "audit_date": "2026-05-23T20:02:43.372804+00:00",
+   "audit_status": "audited_clean",
+   "drift_evidence": [
+    "010d4ba592 2026-06-05 scripts/frontier_teleportation_resource_from_poisson.py",
+    "0453e5284d 2026-06-18 scripts/frontier_teleportation_resource_from_poisson.py",
+    "566aeac141 2026-06-15 scripts/frontier_teleportation_resource_from_poisson.py",
+    "7447f6918b 2026-07-16 scripts/frontier_teleportation_resource_from_poisson.py",
+    "a1361f8086 2026-06-20 scripts/frontier_teleportation_resource_from_poisson.py",
+    "a2f1a67541 2026-06-07 scripts/frontier_teleportation_resource_from_poisson.py",
+    "bf7df9b06c 2026-06-13 scripts/frontier_teleportation_resource_from_poisson.py"
+   ],
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/frontier_bell_inequality.py": "1a290c8e305c53084825076a409452857feeb44d7414e1d69eb8648fff115689",
+    "scripts/frontier_teleportation_resource_from_poisson.py": "3535f2d33e0abe98f2f921ab66dc0288a0293c8370a763189cc00708ac599ace"
+   },
+   "source_drifted_since_verdict": true
+  },
+  "two_field_retarded_family_closure_note_2026-04-10": {
+   "audit_date": "2026-05-02T01:27:57.312564+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/frontier_two_field_retarded_probe.py": "44d089d3d4f1dd1c6129633f0b9be67999c0b500d924c4fe209931778db0e52d"
+   },
+   "runner_path": "scripts/frontier_two_field_retarded_family_closure.py",
+   "runner_sha256_at_baseline": "d98e1e18d529a1aa837bce49dcf2fd04450a6ec389ffd98c9328cdef9c1198c1"
+  },
+  "two_field_retarded_probe_note_2026-04-10": {
+   "audit_date": "2026-05-02T01:29:08.604974+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "runner_path": "scripts/frontier_two_field_retarded_probe.py",
+   "runner_sha256_at_baseline": "44d089d3d4f1dd1c6129633f0b9be67999c0b500d924c4fe209931778db0e52d"
+  },
+  "unification_basin_failure_note": {
+   "audit_date": "2026-06-08T21:24:29.645877+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/GATE_B_NONLABEL_SIGN_GROWN_TRANSFER.py": "3b9111df0ce6dc81dfd1002cfb5097e84f7c3bb68e593d21530b68a08c9d44ab",
+    "scripts/complex_action_grown_companion.py": "59b8ff8d1a7f6c26f078f3501bb728d3b2bf0b80fff94b9212ae98ed8a9c6295",
+    "scripts/gate_b_grown_joint_package.py": "2d2ab7c6531c69165aba46309f5851b87bc069ed187edad4bd404814a097a239"
+   }
+  },
+  "universal_qg_canonical_refinement_net_note": {
+   "audit_date": "2026-05-05T23:53:51.082225+00:00",
+   "audit_status": "audited_conditional",
+   "effective_status": "audited_conditional",
+   "runner_path": "scripts/frontier_universal_qg_canonical_refinement_net.py",
+   "runner_sha256_at_baseline": "985f76c963489edbfc8f910fb91fc13740f1dcc3d1bf62d0a706ccf8fde63c79"
+  },
+  "valley_linear_asymptotic_bridge_note": {
+   "audit_date": "2026-05-11T23:53:57.595085+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/valley_linear_same_harness_compare.py": "5c4963909ccbed0fe2437a8e3ae7ee782b2f5c12b91f56617cf6c29f75a723e0"
+   }
+  },
+  "valley_linear_mirror_transfer_note": {
+   "audit_date": "2026-05-02T02:06:53.181743+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "runner_path": "scripts/valley_linear_mirror_transfer.py",
+   "runner_sha256_at_baseline": "6fecdfa323f71b94a39a0d945d1acd2b5e15f3d935b256a3e8359c8abe2f1d8e"
+  },
+  "valley_linear_repro_note": {
+   "audit_date": "2026-05-02T02:14:54.877296+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "runner_path": "scripts/reproduction_audit_harness.py",
+   "runner_sha256_at_baseline": "b5e9d0f0a963429b0e9e3fff884ece74ed82ee8a2f0b0eee3018a0f30b38394e"
+  },
+  "valley_linear_wide_tail_note": {
+   "audit_date": "2026-06-08T10:46:05.699490+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/valley_linear_same_harness_compare.py": "5c4963909ccbed0fe2437a8e3ae7ee782b2f5c12b91f56617cf6c29f75a723e0"
+   }
+  },
+  "wave_amplification_near_horizon_note": {
+   "audit_date": "2026-04-27",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/minimal_source_driven_field_probe.py": "16768d58d878f744a7092dca878fd2cb66f6bae8a73ada64ef3fd7e785208457"
+   },
+   "runner_path": "scripts/wave_amplification_near_horizon.py",
+   "runner_sha256_at_baseline": "4d4a1f7e4c3a8b37b292eb0c3d369a15082ba3df445d6b963092013247505363"
+  },
+  "wave_direct_dm_family_scout_note": {
+   "audit_date": "2026-05-11T16:07:56.114228+00:00",
+   "audit_status": "audited_clean",
+   "drift_evidence": [
+    "68a27d8a79 2026-07-18 scripts/wave_retardation_continuum_limit.py"
+   ],
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/wave_retardation_continuum_limit.py": "a90ebbe71f18a690f94aac016c658087964cffbbc30cb686239ad594f0af9c90"
+   },
+   "source_drifted_since_verdict": true
+  },
+  "wave_direct_dm_h025_fam1_seed1_control_note": {
+   "audit_date": "2026-05-22T23:32:34.495203+00:00",
+   "audit_status": "audited_clean",
+   "drift_evidence": [
+    "68a27d8a79 2026-07-18 scripts/wave_retardation_continuum_limit.py"
+   ],
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/wave_direct_dm_h025_control_batch.py": "9a6a7fecdc82245e6939b1184607553b3390f178e6ca5bf3b5369f9b3b688255",
+    "scripts/wave_direct_dm_matched_history_probe.py": "6ed89e5a01072d2b12a8a80a5aeb1626b0546058594614eae620683bb5290211",
+    "scripts/wave_retardation_continuum_limit.py": "a90ebbe71f18a690f94aac016c658087964cffbbc30cb686239ad594f0af9c90"
+   },
+   "source_drifted_since_verdict": true
+  },
+  "wave_direct_dm_h025_fam2_seed1_control_note": {
+   "audit_date": "2026-05-23T19:39:42.325205+00:00",
+   "audit_status": "audited_clean",
+   "drift_evidence": [
+    "68a27d8a79 2026-07-18 scripts/wave_retardation_continuum_limit.py"
+   ],
+   "effective_status": "retained",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/wave_direct_dm_matched_history_probe.py": "6ed89e5a01072d2b12a8a80a5aeb1626b0546058594614eae620683bb5290211",
+    "scripts/wave_retardation_continuum_limit.py": "a90ebbe71f18a690f94aac016c658087964cffbbc30cb686239ad594f0af9c90"
+   },
+   "source_drifted_since_verdict": true
+  },
+  "wave_direct_dm_h025_feasibility_note": {
+   "audit_date": "2026-05-29T06:33:39.112533+00:00",
+   "audit_status": "audited_clean",
+   "drift_evidence": [
+    "68a27d8a79 2026-07-18 scripts/wave_retardation_continuum_limit.py"
+   ],
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/wave_direct_dm_matched_history_probe.py": "6ed89e5a01072d2b12a8a80a5aeb1626b0546058594614eae620683bb5290211",
+    "scripts/wave_retardation_continuum_limit.py": "a90ebbe71f18a690f94aac016c658087964cffbbc30cb686239ad594f0af9c90"
+   },
+   "source_drifted_since_verdict": true
+  },
+  "wave_direct_dm_h025_high_band_boundary_note": {
+   "audit_date": "2026-05-29T05:48:19.463391+00:00",
+   "audit_status": "audited_clean",
+   "drift_evidence": [
+    "68a27d8a79 2026-07-18 scripts/wave_retardation_continuum_limit.py"
+   ],
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/wave_direct_dm_matched_history_probe.py": "6ed89e5a01072d2b12a8a80a5aeb1626b0546058594614eae620683bb5290211",
+    "scripts/wave_retardation_continuum_limit.py": "a90ebbe71f18a690f94aac016c658087964cffbbc30cb686239ad594f0af9c90"
+   },
+   "source_drifted_since_verdict": true
+  },
+  "wave_direct_dm_h025_low_band_retention_note": {
+   "audit_date": "2026-05-29T05:45:58.127652+00:00",
+   "audit_status": "audited_clean",
+   "drift_evidence": [
+    "68a27d8a79 2026-07-18 scripts/wave_retardation_continuum_limit.py"
+   ],
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/wave_direct_dm_h025_control_batch.py": "9a6a7fecdc82245e6939b1184607553b3390f178e6ca5bf3b5369f9b3b688255",
+    "scripts/wave_direct_dm_matched_history_probe.py": "6ed89e5a01072d2b12a8a80a5aeb1626b0546058594614eae620683bb5290211",
+    "scripts/wave_retardation_continuum_limit.py": "a90ebbe71f18a690f94aac016c658087964cffbbc30cb686239ad594f0af9c90"
+   },
+   "source_drifted_since_verdict": true
+  },
+  "wave_static_boundary_sensitivity_note": {
+   "audit_date": "2026-05-11T22:57:20.232607+00:00",
+   "audit_status": "audited_clean",
+   "drift_evidence": [
+    "68a27d8a79 2026-07-18 scripts/wave_retardation_continuum_limit.py"
+   ],
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/wave_retardation_continuum_limit.py": "a90ebbe71f18a690f94aac016c658087964cffbbc30cb686239ad594f0af9c90"
+   },
+   "source_drifted_since_verdict": true
+  },
+  "wave_static_matrixfree_fixed_beam_boundary_note": {
+   "audit_date": "2026-05-11T22:57:40.812865+00:00",
+   "audit_status": "audited_clean",
+   "drift_evidence": [
+    "68a27d8a79 2026-07-18 scripts/wave_retardation_continuum_limit.py"
+   ],
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/wave_retardation_continuum_limit.py": "a90ebbe71f18a690f94aac016c658087964cffbbc30cb686239ad594f0af9c90"
+   },
+   "source_drifted_since_verdict": true
+  },
+  "wave_static_matrixfree_moving_source_fixed_beam_boundary_note": {
+   "audit_date": "2026-04-27",
+   "audit_status": "audited_clean",
+   "drift_evidence": [
+    "68a27d8a79 2026-07-18 scripts/wave_retardation_continuum_limit.py"
+   ],
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/wave_retardation_continuum_limit.py": "a90ebbe71f18a690f94aac016c658087964cffbbc30cb686239ad594f0af9c90"
+   },
+   "runner_path": "scripts/wave_static_matrixfree_moving_source_fixed_beam_boundary.py",
+   "runner_sha256_at_baseline": "c63e9352d162af9b79c6164170be8a49f853e0a9ccddcfddbedcbfab2998da14",
+   "source_drifted_since_verdict": true
+  },
+  "wave_static_matrixfree_shared_geometry_compare_note": {
+   "audit_date": "2026-05-24T21:09:15.810116+00:00",
+   "audit_status": "audited_clean",
+   "drift_evidence": [
+    "68a27d8a79 2026-07-18 scripts/wave_retardation_continuum_limit.py"
+   ],
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/wave_retardation_continuum_limit.py": "a90ebbe71f18a690f94aac016c658087964cffbbc30cb686239ad594f0af9c90",
+    "scripts/wave_static_direct_probe.py": "ee203fcd9bcd18f331b3bf58a5041534165c2abefe74639a6e29ec5896339fc6"
+   },
+   "source_drifted_since_verdict": true
+  },
+  "wide_lattice_h2t_distance_law_note": {
+   "audit_date": "2026-06-08T20:04:09.195018+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/valley_linear_same_harness_compare.py": "5c4963909ccbed0fe2437a8e3ae7ee782b2f5c12b91f56617cf6c29f75a723e0"
+   }
+  },
+  "wide_lattice_h2t_skeptic_audit_note": {
+   "audit_date": "2026-06-08T21:42:00.871688+00:00",
+   "audit_status": "audited_clean",
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/valley_linear_same_harness_compare.py": "5c4963909ccbed0fe2437a8e3ae7ee782b2f5c12b91f56617cf6c29f75a723e0"
+   }
+  },
+  "wilson_two_body_open_refined_note_2026-04-11": {
+   "audit_date": "2026-05-11T18:44:32.874073+00:00",
+   "audit_status": "audited_clean",
+   "drift_evidence": [
+    "2dfefa2e76 2026-05-24 scripts/frontier_wilson_two_body_open.py"
+   ],
+   "effective_status": "retained_bounded",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/frontier_wilson_two_body_open.py": "4bdf0c25421509b987b4424ce9dc6befa6281d8a4e50be49578fc60e5b01ae4f"
+   },
+   "source_drifted_since_verdict": true
+  },
+  "yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17": {
+   "audit_date": "2026-06-21T19:22:02.086790+00:00",
+   "audit_status": "audited_conditional",
+   "effective_status": "audited_conditional",
+   "helper_runner_sha256_at_baseline": {
+    "scripts/canonical_plaquette_surface.py": "fd681ecbecda7ab5590b72199ee5bbb4393826f0f8e40ca66f8e2e6531646693"
+   }
+  }
+ },
+ "recorded_against_commit": "6154f6d4a31a4b81a29c9998876bffffe6747228",
+ "schema": "runner_pin_baseline_v1"
+}

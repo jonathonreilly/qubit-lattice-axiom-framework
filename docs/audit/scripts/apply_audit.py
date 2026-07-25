@@ -48,6 +48,9 @@ import ledger_io
 # used by both the verdict writer and the live comparator.
 import compute_audit_queue
 
+# Single runner-pin predicate shared by this writer and audit_lint.
+import runner_pin_gate
+
 REPO_ROOT = Path(__file__).resolve().parents[3]
 LEDGER_PATH = REPO_ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 AXIOM_PREMISE_NODES_PATH = REPO_ROOT / "docs" / "audit" / "data" / "axiom_premise_nodes.json"
@@ -839,6 +842,19 @@ def snapshot_audit_state(row: dict, rows: dict[str, dict]) -> dict:
                 f"(baseline problems {problems}) on "
                 f"{row.get('note_path') or row.get('claim_id')}"
             )
+    # Runner-pin gate. `runner_hash` and `helper_runner_hashes` are the only
+    # channels through which invalidate_stale_audits can reopen a verdict when
+    # the runner it cites moves; a terminal verdict whose snapshot leaves
+    # either channel empty on a runner the row names is pinned to nothing.
+    # Fail here rather than write it: the resulting row is indistinguishable
+    # from a bound one until the runner silently changes under it.
+    pin_problems = runner_pin_gate.verdict_pin_problems(row, snapshot)
+    if pin_problems:
+        raise runner_pin_gate.RunnerPinIncomplete(
+            "refusing to write a terminal verdict that binds no runner source "
+            f"(pin problems {pin_problems}) on "
+            f"{row.get('note_path') or row.get('claim_id')}"
+        )
     return snapshot
 
 

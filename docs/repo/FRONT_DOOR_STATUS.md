@@ -31,15 +31,15 @@ Owner-approval history for axioms and primitives:
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3869 |
-| Applied audit verdicts | 717 |
-| Retained-grade rows, including boxed decorations | 455 |
+| Ledger rows | 3871 |
+| Applied audit verdicts | 718 |
+| Retained-grade rows, including boxed decorations | 456 |
 | Retained positive theorems | 104 |
 | Retained no-go rows | 0 |
-| Retained bounded rows | 328 |
+| Retained bounded rows | 329 |
 | Boxed decorations under retained parents | 23 |
 | Open gates | 2 |
-| Unaudited rows | 2794 |
+| Unaudited rows | 2795 |
 | Retained-pending-chain rows | 6 |
 | Audited conditional rows | 175 |
 | Audited renaming rows | 27 |
@@ -54,13 +54,13 @@ Full audit-ratified row list: [`docs/repo/RETAINED_BACKBONE.md`](RETAINED_BACKBO
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 3014 |
+| Total pending rows | 3015 |
 | Ready rows | 604 |
 | Cycle-break targets | 59 |
 | Critical pending | 635 |
 | High pending | 365 |
-| Medium pending | 815 |
-| Leaf pending | 1199 |
+| Medium pending | 814 |
+| Leaf pending | 1201 |
 
 Next ready rows by queue order:
 
@@ -332,16 +332,16 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 4503 |
+| Citation-graph nodes | 4505 |
 | Critical nodes | 755 |
 | High nodes | 444 |
 | Medium nodes | 1130 |
-| Leaf nodes | 2174 |
+| Leaf nodes | 2176 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 2132 descendants; score 269.559
-- `graph_first_su3_integration_note` - critical; 1673 descendants; score 64.209
+- `minimal_axioms` - critical; 2134 descendants; score 270.560
+- `graph_first_su3_integration_note` - critical; 1674 descendants; score 64.210
 - `three_generation_observable_theorem_note` - critical; 1281 descendants; score 62.324
 - `observable_principle_from_axiom_note` - critical; 1120 descendants; score 61.631
 - `quark_route2_exact_readout_map_note_2026-04-19` - critical; 197 descendants; score 61.629

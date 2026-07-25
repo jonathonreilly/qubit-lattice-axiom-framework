@@ -1,13 +1,13 @@
 # Audit Queue
 
-**Total pending:** 3014
+**Total pending:** 3015
 **Ready (all deps at retained-grade/metadata tiers or supplied axioms/approved primitives):** 604
 
 By criticality:
 - `critical`: 635
 - `high`: 365
-- `medium`: 815
-- `leaf`: 1199
+- `medium`: 814
+- `leaf`: 1201
 
 Auditor (current best Codex GPT model at maximum reasoning by default) should pull from the top of this list. Critical claims require cross-confirmation by a second independent clean-room auditor before `audited_clean` lands.
 
@@ -29,7 +29,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 12 | `real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08` | bounded_theorem | non_terminal_conditional | critical | 1127 | 12.64 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_real_diagonal_source_det_positivity_lemma_2026_06_08.py` |
 | 13 | `tensor_support_center_excess_law_note` | bounded_theorem | non_terminal_conditional | critical | 1098 | 19.60 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_tensor_support_center_excess_law.py` |
 | 14 | `rconn_derived_note` | no_go | unaudited | critical | 1060 | 25.05 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/rconn_matching_rule_nogo_certificate.py` |
-| 15 | `hypercharge_identification_note` | bounded_theorem | non_terminal_conditional | critical | 1041 | 20.52 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hypercharge_identification_scope_repair_2026_07_04.py` |
+| 15 | `hypercharge_identification_note` | bounded_theorem | non_terminal_conditional | critical | 1042 | 21.03 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hypercharge_identification_scope_repair_2026_07_04.py` |
 | 16 | `yt_color_projection_correction_note` | no_go | unaudited | critical | 1041 | 18.02 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_color_projection_correction.py` |
 | 17 | `yt_ew_color_projection_theorem` | no_go | unaudited | critical | 985 | 31.95 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/yt_ew_kappa_family_nogo_certificate.py` |
 | 18 | `unit_singlet_overlap_narrow_theorem_note_2026-05-02` | positive_theorem | non_terminal_failed | critical | 932 | 12.37 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_unit_singlet_overlap_narrow.py` |

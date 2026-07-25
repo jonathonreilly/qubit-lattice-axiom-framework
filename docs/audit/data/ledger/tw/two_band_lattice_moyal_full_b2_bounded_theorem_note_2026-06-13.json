@@ -1,24 +1,86 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T23:19:23.391957+00:00",
+  "audit_invocation_history": [
+    "b2ec48cbeef143a6971633ebef0448ab"
+  ],
+  "audit_invocation_id": "b2ec48cbeef143a6971633ebef0448ab",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 11,
+        "D": 3
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/frontier_two_band_lattice_moyal_full_b2_2026_06_13.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "finite_cell_two_band_closed_form_bounded_theorem_note_2026-06-13": "Fixed supplied free staggered two-band Harper cell Q=24, Ly=2, t=1, mu=1.7086, T=0.2, with the implemented finite-cell Peierls B^2 perturbation; the audited claim is equality of the finite momentum closed form and direct finite real-space Harper perturbation, not a continuum-Moyal theorem."
+    },
+    "dep_claim_type": {
+      "finite_cell_two_band_closed_form_bounded_theorem_note_2026-06-13": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "finite_cell_two_band_closed_form_bounded_theorem_note_2026-06-13": "retained_bounded"
+    },
+    "deps": [
+      "finite_cell_two_band_closed_form_bounded_theorem_note_2026-06-13"
+    ],
+    "helper_runner_hashes": {
+      "scripts/frontier_finite_cell_two_band_closed_form_2026_06_13.py": "64a4dac5cc3cc5dac84d1546b83538ac429332957d9b5faacaa44f92d99d2cc3"
+    },
+    "load_bearing_score": 0.0,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_finite_cell_two_band_closed_form_2026_06_13.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "64a4dac5cc3cc5dac84d1546b83538ac429332957d9b5faacaa44f92d99d2cc3",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_two_band_lattice_moyal_full_b2_2026_06_13.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "ebd8d851d63331445b3af69db450eb4d654b9f290fffff3eed2c6f9996bea296",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "ebd8d851d63331445b3af69db450eb4d654b9f290fffff3eed2c6f9996bea296",
+    "runner_path": "scripts/frontier_two_band_lattice_moyal_full_b2_2026_06_13.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_failed",
+  "auditor": "codex-audit-batch-A-20260725-6a935bfe",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The runner recomputes the finite-cell comparator and independently checks the Moyal source, and the reported 35.654% miss is arithmetically consistent. However, multiple displayed diagnostics in the source note disagree with the supplied current stdout, so the note does not close as written.",
   "claim_id": "two_band_lattice_moyal_full_b2_bounded_theorem_note_2026-06-13",
-  "claim_scope": null,
+  "claim_scope": "Free staggered two-band lattice Hamiltonian at mu=1.7086, T=0.2, and m in {0,0.2,0.3,0.5}: full lattice Moyal B^2 comparator versus the Q=24, Ly=2 finite-cell response after one m=0 normalization.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T23:19:23.391957+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,21 +88,24 @@
     "finite_cell_two_band_closed_form_bounded_theorem_note_2026-06-13"
   ],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_failed",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [
     "scripts/frontier_finite_cell_two_band_closed_form_2026_06_13.py"
   ],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_failed",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "After fixing the single cell normalization at m=0, the independent masses leave a maximum relative residual of 35.654% at m=0.5.",
+  "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls"
+  ],
   "note_hash": "00f60744bb18ef971560832d1946e4369e590ad07558ef46a6b00f51725de0b5",
   "note_path": "docs/TWO_BAND_LATTICE_MOYAL_FULL_B2_BOUNDED_THEOREM_NOTE_2026-06-13.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Re-audit after regenerating every displayed diagnostic and table value from the current runner, while preserving the finite-grid scope.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -100,14 +165,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
-    "C": 0,
+    "A": 7,
+    "B": 4,
+    "C": 4,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 15
   },
   "runner_path": "scripts/frontier_two_band_lattice_moyal_full_b2_2026_06_13.py",
   "title": "Two-Band Lattice Moyal Full B2 Bounded Note",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: the note's displayed finite-difference diagnostics (5.590727e-07 and 3.977) and partial-fraction residual (2.903240e-12) disagree with current stdout (5.587457e-07, 3.989, and 4.983756e-12), with additional last-digit table drift. Why this blocks: every displayed quantitative value must match executable evidence, so the source is stale even though independent arithmetic confirms the 0.38 bound and 35.654% miss. Repair target: regenerate the source diagnostics and table from the current runner, then independently recheck the star-inverse signs, factors, and relative deviations. Claim boundary until fixed: the current runner supports only the stated finite-grid comparator miss below 0.38, not a clean audit of the note as written."
 }

@@ -1,42 +1,92 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T03:01:39.221088+00:00",
+  "audit_invocation_history": [
+    "5f022f9c28e64ce1a27364ffbd6ddfe5"
+  ],
+  "audit_invocation_id": "5f022f9c28e64ce1a27364ffbd6ddfe5",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 12,
+        "B": 4,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true,
+      "runner_path": "scripts/flavor_missing_axiom_carrier_measure_2026_05_30.py"
+    },
+    "criticality": "high",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 8.322,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/flavor_missing_axiom_carrier_measure_2026_05_30.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "076a8b3f4db91991051132a0ea861347d1ed36878be44f49e6418b65c111b8c0",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "076a8b3f4db91991051132a0ea861347d1ed36878be44f49e6418b65c111b8c0",
+    "runner_path": "scripts/flavor_missing_axiom_carrier_measure_2026_05_30.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 19
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-073ef041",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The finite algebra closes, and the p-counterfamily establishes nonselection on an unconstrained additive two-sector readout model. The physical admissibility and selection bridge remains conditional, while the required negative-claim stress evidence is incomplete.",
   "claim_id": "flavor_missing_axiom_carrier_measure_note_2026-05-30",
-  "claim_scope": null,
+  "claim_scope": "Finite generator-channel Hilbert-Schmidt algebra and the bounded Record statement that additive two-sector readout coordinates do not select the Koide weight by themselves.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T03:01:39.221088+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 8,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 8.322,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "For any supplied p in (0,1), choosing d = p u / (1-p) gives d/(u+d)=p, so finite additivity leaves the normalized two-sector coordinate arbitrary.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls",
+    "conditional_wall_rationale",
+    "derived_no_go_boundary"
+  ],
   "note_hash": "6f84a176163325204df9d3851529f4d80df0deb75c298a4ff974da8faaa9f8fb",
   "note_path": "docs/FLAVOR_MISSING_AXIOM_CARRIER_MEASURE_NOTE_2026-05-30.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "other: add current-cycle stress-test output covering five distinct N1 routes and all five N5 resolution granularities, disposition the indexed N6 and N8 candidates, and rerun the bounded claim audit.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -172,14 +222,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
+    "A": 8,
+    "B": 1,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 9
   },
   "runner_path": "scripts/flavor_missing_axiom_carrier_measure_2026_05_30.py",
   "title": "Flavor - Record Exposes The Carrier-Measure Residual",
   "transitive_descendants": 19,
-  "verdict_rationale": null
+  "verdict_rationale": "The runner substantively verifies eight class-A finite-algebra checks and one class-B source-guard check. N1 provides algebraic counterfamilies but not five distinct live routes; N2 has one carrier-measure/readout-selection wall, N3 shows the supplied-measure condition is explicit, and N4 has no prior residual witness. N5 lacks live per_element, per_site, per_mode, per_block, and lattice_wide resolution evidence; N6 supplies no selector, N7 leaves equal Hilbert-Schmidt energy as an assumption, and N8 lacks candidate-by-candidate dispositions in an emitted discipline packet. The bounded algebra is sound, but the negative boundary cannot receive a clean verdict under the required stress gate."
 }

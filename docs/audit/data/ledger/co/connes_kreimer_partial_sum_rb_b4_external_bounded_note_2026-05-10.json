@@ -1,44 +1,66 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T20:22:25.439795+00:00",
+  "audit_invocation_history": [
+    "9f68d7edb5d8498084067f876bb97d97"
+  ],
+  "audit_invocation_id": "9f68d7edb5d8498084067f876bb97d97",
+  "audit_state_snapshot": {
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "connes_kreimer_birkhoff_factorization_external_narrow_theorem_note_2026-05-10": "External mathematical theorem: characters of the Connes-Kreimer rooted-tree Hopf algebra with values in a commutative unital Rota-Baxter target algebra admit the stated recursive convolution Birkhoff factorization; no CL3/framework or physics bridge is audited or claimed."
+    },
+    "dep_claim_type": {
+      "connes_kreimer_birkhoff_factorization_external_narrow_theorem_note_2026-05-10": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "connes_kreimer_birkhoff_factorization_external_narrow_theorem_note_2026-05-10": "retained"
+    },
+    "deps": [
+      "connes_kreimer_birkhoff_factorization_external_narrow_theorem_note_2026-05-10"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 1.5,
+    "runner_hash": "33b7705715acba1fb91bfb3651eaab34836f6607747b215473eaff54393b7559",
+    "transitive_descendants": 1
+  },
+  "audit_status": "audited_decoration",
+  "auditor": "codex-audit-batch-A-20260725-b3d64eb1",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "Within the stated external scope, the prefix-sum identity follows componentwise, while non-idempotence, the B4 counts, and the first-slot readout follow by direct algebra and combinatorics.",
   "claim_id": "connes_kreimer_partial_sum_rb_b4_external_bounded_note_2026-05-10",
-  "claim_scope": null,
-  "claim_type": "bounded_theorem",
+  "claim_scope": "Audited only the external bounded algebraic statement that strict prefix sums on componentwise sequence algebra form a non-idempotent weight +1 Rota-Baxter target, with B4 as an external rooted-tree test object and any alpha_LM^16 readout explicitly imported rather than derived.",
+  "claim_type": "decoration",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T20:22:25.439795+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
-  "decoration_parent_claim_id": null,
+  "decoration_parent_claim_id": "connes_kreimer_birkhoff_factorization_external_narrow_theorem_note_2026-05-10",
   "deps": [
     "connes_kreimer_birkhoff_factorization_external_narrow_theorem_note_2026-05-10"
   ],
   "direct_in_degree": 1,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "decoration_under_connes_kreimer_birkhoff_factorization_external_narrow_theorem_note_2026-05-10",
+  "effective_status_reason": "decoration_parent_retained",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "decoration_under_connes_kreimer_birkhoff_factorization_external_narrow_theorem_note_2026-05-10",
   "load_bearing_score": 1.5,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The strict prefix-sum operator satisfies P(a)P(b) = P(P(a)b + aP(b) + ab).",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "2ea08cb20971d43e2e21231151a9fb1f4a4f4ee2570c31f5134c9213ff703c28",
   "note_path": "docs/CONNES_KREIMER_PARTIAL_SUM_RB_B4_EXTERNAL_BOUNDED_NOTE_2026-05-10.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -97,14 +119,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
+    "A": 8,
+    "B": 1,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 9
   },
   "runner_path": "scripts/frontier_connes_kreimer_partial_sum_rb_b4_external_bounded.py",
   "title": "Connes-Kreimer Partial-Sum Rota-Baxter on B4 External Bounded Note",
   "transitive_descendants": 1,
-  "verdict_rationale": null
+  "verdict_rationale": "The strict-prefix Rota-Baxter identity, non-idempotence, B4 combinatorics, and first-slot consequence are class-A algebraic checks; alpha_LM^16 remains a chosen character input. With no external-comparator checks and only the retained Connes-Kreimer factorization parent plus standard mathematics, the policy assigns audited_decoration."
 }

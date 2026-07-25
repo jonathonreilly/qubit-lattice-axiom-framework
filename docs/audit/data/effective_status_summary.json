@@ -1,11 +1,11 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 2153,
+    "bounded_theorem": 2154,
     "decoration": 31,
     "meta": 363,
     "no_go": 438,
     "open_gate": 208,
-    "positive_theorem": 673
+    "positive_theorem": 672
   },
   "cycle_examples": [
     [
@@ -82,7 +82,7 @@
   "effective_status_counts": {
     "audit_in_progress": 2,
     "audited_conditional": 153,
-    "audited_failed": 37,
+    "audited_failed": 38,
     "audited_numerical_match": 9,
     "audited_renaming": 25,
     "decoration_under_abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18": 1,
@@ -105,7 +105,7 @@
     "retained": 102,
     "retained_bounded": 327,
     "retained_pending_chain": 6,
-    "unaudited": 2825
+    "unaudited": 2824
   },
   "retained_pending_chain_count": 6,
   "retained_pending_chain_examples": [

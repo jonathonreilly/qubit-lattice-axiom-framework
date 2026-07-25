@@ -1,24 +1,84 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T03:41:56.868268+00:00",
+  "audit_invocation_history": [
+    "c23960c6a3bf435f8e984931f468bb07"
+  ],
+  "audit_invocation_id": "c23960c6a3bf435f8e984931f468bb07",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 2,
+      "counts": {
+        "A": 13,
+        "B": 0,
+        "C": 1,
+        "D": 17
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true,
+      "runner_path": "scripts/frontier_ckm_down_type_scale_convention_support.py"
+    },
+    "criticality": "high",
+    "dep_axiom_premise_note_hash": {
+      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+      "scale_reference_primitive": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+    },
+    "dep_claim_scope": {
+      "minimal_axioms": null,
+      "scale_reference_primitive": null
+    },
+    "dep_claim_type": {
+      "minimal_axioms": "meta",
+      "scale_reference_primitive": "meta"
+    },
+    "dep_effective_status": {
+      "minimal_axioms": "meta",
+      "scale_reference_primitive": "meta"
+    },
+    "deps": [
+      "minimal_axioms",
+      "scale_reference_primitive"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 8.644,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_ckm_down_type_scale_convention_support.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "b051cb7ab94f2955762af2dd26d6cbd0c183b0b4ba9d8825ca1d4db759ce9d58",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "b051cb7ab94f2955762af2dd26d6cbd0c183b0b4ba9d8825ca1d4db759ce9d58",
+    "runner_path": "scripts/frontier_ckm_down_type_scale_convention_support.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 49
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-c1a4dc3e",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The exact identities close, but the broader assertion that the scale-convention-rescue route is closed lacks the required N1-N8 stress-test evidence, especially resolution-complete N5 and independently resolved N7 evidence.",
   "claim_id": "ckm_down_type_scale_convention_support_note_2026-04-22",
-  "claim_scope": null,
+  "claim_scope": "Exact determinant/Casimir identities, fixed-spectrum mixing countermodel, and shared-positive-T relative-deviation invariance, excluding certification that all scale-convention rescue routes are closed.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T03:41:56.868268+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -27,19 +87,23 @@
     "scale_reference_primitive"
   ],
   "direct_in_degree": 6,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 8.644,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Equation (5.2): (T R_pred)/(T R_common) - 1 = R_pred/R_common - 1.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls",
+    "derived_no_go_boundary"
+  ],
   "note_hash": "de648024897abd2f07f2e90d29c0f322a8802fd4a08640d405e873c3d67186d6",
   "note_path": "docs/CKM_DOWN_TYPE_SCALE_CONVENTION_SUPPORT_NOTE_2026-04-22.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "scope_too_broad: narrow the theorem to the exact shared-T invariance and local determinant/countermodel algebra, leaving route-closure prose conditional until a current-cycle N1-N8 runner supplies five distinct attack routes, resolution-complete N5 lines, complete candidate dispositions, and an independently resolved steelman.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -222,11 +286,11 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 26,
     "B": 0,
     "C": 0,
-    "D": 0,
-    "total_pass": 0
+    "D": 6,
+    "total_pass": 32
   },
   "runner_path": "scripts/frontier_ckm_down_type_scale_convention_support.py",
   "title": "CKM Down-Type Five-Sixths Algebra And Scale-Covariance Boundary",
@@ -238,5 +302,5 @@
       "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
     }
   ],
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: Although equation (5.2) and the determinant/countermodel algebra check exactly, the artifact also asserts a bounded negative route closure without a PASS-grade N1-N8 record: N1 is not evidenced as five genuinely distinct closed attack mechanisms, N2 has only the single shared-transport wall, N3 exposes no hidden admission beyond explicit hypotheses, and N4 has no prior-witness residual to match. Why this blocks: N5 lacks live per-element/per-site/per-mode/per-block/lattice-wide resolution lines, N6's indexed premise and reframe alternatives are not dispositioned as closures, N7's non-shared or observable-specific-transport steelman is not independently resolved, and N8's applicable CKM cross-cycle echoes are not addressed by the runner. Repair target: add a current-cycle N1-N8 stress runner with five distinct route classes, resolution-complete N5 evidence, complete N6/N8 dispositions, and an independently resolved N7 steelman. Claim boundary until fixed: retain only the exact determinant/Casimir identities, orientation countermodel, and shared-T cancellation as local algebraic results, not certified closure of every scale-convention rescue route."
 }

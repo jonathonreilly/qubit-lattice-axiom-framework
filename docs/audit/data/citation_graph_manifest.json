@@ -1,6 +1,6 @@
 {
- "edge_count": 15052,
- "node_count": 4501,
+ "edge_count": 15053,
+ "node_count": 4502,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -10237,6 +10237,10 @@
   "physical_lattice_necessity_note": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "physical_poisson_susceptibility_direction_repair_cycle694_note_2026-07-25": {
+   "deps_hash": "b9586de19b7c",
+   "out_degree": 1
   },
   "physical_proper_cubic_covariance_ceiling_cycle690_note_2026-07-24": {
    "deps_hash": "e3b0c44298fc",

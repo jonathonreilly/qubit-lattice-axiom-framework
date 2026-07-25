@@ -151,9 +151,11 @@ retained parent with independent content. This section takes the second
 route. The first route is not attempted here: under the framework's measure
 discipline the block-weight setting that makes the spectral ratio equal
 `2/3` is a registered per-sector pattern (a dial setting, alongside the
-other sectors' settings), so a derivation forcing it would overreach; any
-future derivation of the registered pattern itself would arrive through new
-record-side science, not through this formal row.
+other sectors' settings), so forcing it from the premises available in this
+row would overreach. That scoping is about this row, not about the setting:
+a future derivation of the registered pattern itself is not excluded here,
+and would arrive through new record-side science rather than through this
+formal row.
 
 ### Cited parent authority (one hop)
 

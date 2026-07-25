@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/common_frame_pair_generator_exchange_class_2026_07_25.py
-runner_sha256: c6d9a1da9a6be01d599963c2fb513167ce1b3c12bf4f991dd5db4745ff2c3de8
+runner_sha256: 517cfa98289e94daed044e33e727737186f0a5fc48ef0c4de6c02f00c82d6319
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.78
+elapsed_sec: 1.45
 status: ok
 ----- stdout -----
 
@@ -82,10 +82,41 @@ PASS G7d MUTATION rebuild the record configuration so both sectors carry EQUAL a
 PASS G7e on a FIXED active-edge set the identity term IS inert: exp(-i(h + beta*I)t) = exp(-i*beta*t) exp(-i*h*t) exactly, so R2 holds exactly where it is claimed and L3 is a boundary, not a contradiction
 
 ==============================================================================
+G8  the scalars-only collapse needs the CONTINUOUS group
+==============================================================================
+PASS G8a the edge-axis rotation lift is unitary with u^4 = -I, so u (x) u generates a group of order exactly 4 on the edge :: order 4
+PASS G8b COMMON-frame covariance under that FINITE group leaves Hermitian real dimension 6, not 2 -- the step down to 2 is bought by the continuous SU(2) :: dim_R=6
+PASS G8c INDEPENDENT-onsite covariance under the SAME finite group leaves Hermitian real dimension 4: a nontrivial pair law SURVIVES :: dim_R=4
+PASS G8d explicit witness Z(x)Z is Hermitian, commutes with u(x)I and with I(x)u SEPARATELY, and is not a multiple of I :: nontrivial independent-onsite-invariant pair term
+PASS G8e MUTATION rebuild the same witness against the CONTINUOUS independent generators: Z(x)Z stops being invariant, so G8c is a statement about the finite group and does not contradict G2a :: continuous group is what kills it
+PASS G8f the endpoint flip is a unitary involution that inverts the rotation lift, and the FULL order-8 common-frame edge stabiliser still leaves Hermitian real dimension 5, not 2 :: dim_R=5
+PASS G8g and with only the bare endpoint exchange the class is Hermitian real dimension 10, so the chain 16 -> 10 -> 6 -> 5 -> 2 is monotone and every step past 5 is supplied :: bare=10 continuous_common=2
+
+==============================================================================
+G9  the twisted diagonal has commutant dimension 2 for EVERY twist
+==============================================================================
+PASS G9a SYMBOLIC, for EVERY invertible W: (I(x)W)(P(x)I + I(x)P)(I(x)W)^-1 = P(x)I + I(x)(W P W^-1), so the twisted diagonal is exactly the (I(x)W)-conjugate of the diagonal -- not a sampled claim :: generic 2x2 W with det W != 0
+PASS G9b SYMBOLIC, same W: (I(x)W) SWAP (I(x)W)^-1 = (W^-1 (x) W) SWAP, so conjugation carries span{I, SWAP} onto span{I, (W^-1(x)W)SWAP} and the twisted commutant dimension is 2 for EVERY twist
+PASS G9c NATIVE solve on exact unitary twists confirms the symbolic result: complex dimension exactly 2 every time :: dims=[2, 2, 2, 2]
+PASS G9d and the solved commutant EQUALS span{I, (w^dag(x)w)SWAP} in both containments for every sampled twist :: [True, True, True, True]
+PASS G9e the R3 separator is TWIST-INVARIANT: ground-sector degeneracy is 1 for b > 0 and 3 for b < 0 for every twist, so dropping flatness does not dissolve the two-point menu :: (b>0, b<0) degeneracies=[(1, 3), (1, 3), (1, 3), (1, 3)]
+PASS G9f MUTATION rebuild the correlation with the degenerate homomorphism u -> I instead of an automorphism twist: the dimension MOVES 2 -> 4, so 'dimension 2' is carried by the twisted-diagonal construction and is not a tautology :: dim=4
+
+==============================================================================
+G10  the law's NAME is frame-relative; its holonomy is not
+==============================================================================
+PASS G10a (w^dag (x) w) SWAP is Hermitian for every sampled unitary twist, so it is an admissible pair generator, not a formal object
+PASS G10b but it is NOT in span{I, SWAP}: the span rank rises to 3, so 'the law is I - SWAP' is not a frame-invariant sentence :: rank=3
+PASS G10c MUTATION rebuild the same construction with a CENTRAL twist w = -I: the operator lands back inside span{I, SWAP} and the rank falls to 2, so G10b is carried by the twist and not by the algebra :: rank=2
+PASS G10d yet the ground-sector degeneracy of a*I + b*(w^dag(x)w)SWAP is still 1 vs 3: what the frame moves is the operator's NAME, not the separating invariant
+PASS G10e on a closed 4-cycle the twist assignment (I, I, I, w) has loop product w with exact trace 6/5, which is neither 2 nor -2, so the assignment is NOT gauge-equivalent to the flat one :: trace=6/5
+PASS G10f MUTATION apply an actual per-site re-framing to the loop product for every sampled frame: the trace does not move, so no re-framing flattens it -- dropping flatness ENLARGES the class by a link field rather than dissolving the two-point menu :: conjugation-invariant; flat loop product would have trace 2
+
+==============================================================================
 SUMMARY
 ==============================================================================
 
-PASS=46
+PASS=65
 FAIL=0
 
 ----- stderr -----

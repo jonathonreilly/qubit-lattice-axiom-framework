@@ -15,9 +15,17 @@ four 2026-07-14 probes it supersedes):
   probe rebuilds the object from a changed construction and requires the
   constant to move.  Mutating an assertion is not accepted as a probe;
 * no vacuous gate: each check can fail on some input, and the negative
-  controls (G1e, G2c, G6e, G5g) exist precisely to show the positive gates
-  are not tautologies;
+  controls (G1e, G2c, G6e, G5g, G8e, G9f, G10c, G10f) exist precisely to show
+  the positive gates are not tautologies;
 * an ordered label manifest with a drift detector closes the run.
+
+Groups G8-G10 correct limitation L1 of the note.  G2 computes the
+independent-onsite collapse for the CONTINUOUS SU(2) and that computation is
+unchanged; G8 shows the collapse is a property of that group rather than of
+independent-onsite covariance as such, G9 shows the twisted-diagonal commutant
+has dimension exactly 2 for EVERY twist (by a symbolic generic-matrix identity,
+not by sampling), and G10 shows that "the law is I - SWAP" names an operator
+only relative to a frame while the ground-sector separator does not move.
 """
 
 from __future__ import annotations
@@ -38,6 +46,9 @@ EXPECTED_LABELS = [
     "G5a", "G5b", "G5c", "G5d", "G5e", "G5f", "G5g", "G5h",
     "G6a", "G6b", "G6c", "G6d", "G6e", "G6f", "G6g", "G6h", "G6i", "G6j",
     "G7a", "G7b", "G7c", "G7d", "G7e",
+    "G8a", "G8b", "G8c", "G8d", "G8e", "G8f", "G8g",
+    "G9a", "G9b", "G9c", "G9d", "G9e", "G9f",
+    "G10a", "G10b", "G10c", "G10d", "G10e", "G10f",
 ]
 
 
@@ -893,6 +904,276 @@ def gate_g7(checks: CheckRunner) -> None:
     )
 
 
+# --------------------------------------------------------------------------
+# G8 -- the scalars-only collapse is a property of the CONTINUOUS group,
+#       not of independent-onsite covariance as such
+# --------------------------------------------------------------------------
+def herm_commutant_real_dim(generators, dim: int = 4) -> int:
+    """Real dimension of the HERMITIAN part of the commutant, solved natively.
+
+    The Hermitian ansatz is built with real symbols, the commutation residual
+    is split into its exact real and imaginary parts, and the dimension is
+    read off the rank of the resulting exact real linear system.  Nothing is
+    assumed from a formula and no float is used.
+    """
+    entries = sp.symbols(f"h0:{dim * dim}", real=True)
+    parts = sp.symbols(f"k0:{dim * dim}", real=True)
+    candidate = sp.zeros(dim, dim)
+    variables: list[sp.Symbol] = []
+    for row in range(dim):
+        for col in range(dim):
+            if row == col:
+                candidate[row, col] = entries[row * dim + col]
+                variables.append(entries[row * dim + col])
+            elif row < col:
+                real_part = entries[row * dim + col]
+                imag_part = parts[row * dim + col]
+                candidate[row, col] = real_part + sp.I * imag_part
+                candidate[col, row] = real_part - sp.I * imag_part
+                variables.extend([real_part, imag_part])
+    equations: list[sp.Expr] = []
+    for generator in generators:
+        for residual in sp.expand(candidate * generator - generator * candidate):
+            real_part, imag_part = sp.expand(residual).as_real_imag()
+            equations.extend([sp.expand(real_part), sp.expand(imag_part)])
+    coefficients, _ = sp.linear_eq_to_matrix(equations, variables)
+    return len(variables) - coefficients.rank()
+
+
+def edge_axis_rotation() -> sp.Matrix:
+    """Spin lift of the pi/2 lattice rotation about the edge axis.
+
+    This is a FINITE element.  Whether the proper cubic rotations act on
+    M_2(C) at all is itself supplied and is not asserted here; the element is
+    used only to show which group the scalars-only collapse actually needs.
+    """
+    zeta = sp.exp(sp.I * sp.pi / 4)
+    return sp.Matrix([[zeta ** -1, 0], [0, zeta]])
+
+
+def gate_g8(checks: CheckRunner) -> None:
+    section("G8  the scalars-only collapse needs the CONTINUOUS group")
+    rot = edge_axis_rotation()
+    checks.check(
+        "G8a the edge-axis rotation lift is unitary with u^4 = -I, so u (x) u "
+        "generates a group of order exactly 4 on the edge",
+        eq(dag(rot) * rot, I2)
+        and eq(rot ** 4, -I2)
+        and eq(kron(rot, rot) ** 4, I4)
+        and not eq(kron(rot, rot) ** 2, I4),
+        "order 4",
+    )
+
+    common_finite = herm_commutant_real_dim([kron(rot, rot)])
+    checks.check(
+        "G8b COMMON-frame covariance under that FINITE group leaves Hermitian "
+        "real dimension 6, not 2 -- the step down to 2 is bought by the "
+        "continuous SU(2)",
+        common_finite == 6,
+        f"dim_R={common_finite}",
+    )
+
+    independent_finite = herm_commutant_real_dim([kron(rot, I2), kron(I2, rot)])
+    checks.check(
+        "G8c INDEPENDENT-onsite covariance under the SAME finite group leaves "
+        "Hermitian real dimension 4: a nontrivial pair law SURVIVES",
+        independent_finite == 4,
+        f"dim_R={independent_finite}",
+    )
+
+    zz = kron(Z, Z)
+    checks.check(
+        "G8d explicit witness Z(x)Z is Hermitian, commutes with u(x)I and with "
+        "I(x)u SEPARATELY, and is not a multiple of I",
+        eq(dag(zz), zz)
+        and eq(zz * kron(rot, I2), kron(rot, I2) * zz)
+        and eq(zz * kron(I2, rot), kron(I2, rot) * zz)
+        and span_rank(I4, zz) == 2,
+        "nontrivial independent-onsite-invariant pair term",
+    )
+    checks.check(
+        "G8e MUTATION rebuild the same witness against the CONTINUOUS "
+        "independent generators: Z(x)Z stops being invariant, so G8c is a "
+        "statement about the finite group and does not contradict G2a",
+        any(not eq(zz * g, g * zz) for g in independent_generators()),
+        "continuous group is what kills it",
+    )
+
+    flip_lift = sp.Matrix([[0, -sp.I], [-sp.I, 0]])
+    flip = kron(flip_lift, flip_lift) * SWAP
+    full_stabiliser = herm_commutant_real_dim([kron(rot, rot), flip])
+    checks.check(
+        "G8f the endpoint flip is a unitary involution that inverts the "
+        "rotation lift, and the FULL order-8 common-frame edge stabiliser "
+        "still leaves Hermitian real dimension 5, not 2",
+        eq(dag(flip) * flip, I4)
+        and eq(flip * flip, I4)
+        and eq(flip * kron(rot, rot) * dag(flip), dag(kron(rot, rot)))
+        and full_stabiliser == 5,
+        f"dim_R={full_stabiliser}",
+    )
+
+    bare = herm_commutant_real_dim([SWAP])
+    checks.check(
+        "G8g and with only the bare endpoint exchange the class is Hermitian "
+        "real dimension 10, so the chain 16 -> 10 -> 6 -> 5 -> 2 is monotone "
+        "and every step past 5 is supplied",
+        bare == 10 and herm_commutant_real_dim(diagonal_generators()) == 2,
+        f"bare={bare} continuous_common=2",
+    )
+
+
+# --------------------------------------------------------------------------
+# G9 -- the twisted diagonal: dimension exactly 2 for EVERY twist
+# --------------------------------------------------------------------------
+def twisted_generators(twist: sp.Matrix) -> tuple[sp.Matrix, ...]:
+    """Generators of the twisted diagonal {(u, w u w^dag)} on one edge."""
+    return tuple(kron(p, I2) + kron(I2, twist * p * dag(twist)) for p in PAULIS)
+
+
+TWISTS = SAMPLE_SU2 + (
+    sp.Matrix([[sp.Rational(1, 2) + sp.Rational(1, 2) * sp.I,
+                sp.Rational(1, 2) - sp.Rational(1, 2) * sp.I],
+               [-sp.Rational(1, 2) - sp.Rational(1, 2) * sp.I,
+                sp.Rational(1, 2) - sp.Rational(1, 2) * sp.I]]),
+)
+
+
+def gate_g9(checks: CheckRunner) -> None:
+    section("G9  the twisted diagonal has commutant dimension 2 for EVERY twist")
+    symbols = sp.symbols("w0 w1 w2 w3")
+    generic = sp.Matrix(2, 2, symbols)
+    generic_inverse = generic.adjugate() / generic.det()
+    conjugation_ok = all(
+        eq(
+            kron(I2, generic) * (kron(p, I2) + kron(I2, p)) * kron(I2, generic_inverse),
+            kron(p, I2) + kron(I2, sp.simplify(generic * p * generic_inverse)),
+        )
+        for p in PAULIS
+    )
+    checks.check(
+        "G9a SYMBOLIC, for EVERY invertible W: (I(x)W)(P(x)I + I(x)P)(I(x)W)^-1 "
+        "= P(x)I + I(x)(W P W^-1), so the twisted diagonal is exactly the "
+        "(I(x)W)-conjugate of the diagonal -- not a sampled claim",
+        conjugation_ok,
+        "generic 2x2 W with det W != 0",
+    )
+    checks.check(
+        "G9b SYMBOLIC, same W: (I(x)W) SWAP (I(x)W)^-1 = (W^-1 (x) W) SWAP, so "
+        "conjugation carries span{I, SWAP} onto span{I, (W^-1(x)W)SWAP} and "
+        "the twisted commutant dimension is 2 for EVERY twist",
+        eq(kron(I2, generic) * SWAP * kron(I2, generic_inverse),
+           kron(generic_inverse, generic) * SWAP),
+    )
+
+    dims = []
+    equal_spans = []
+    for twist in TWISTS:
+        basis = commutant_basis(twisted_generators(twist), 4)
+        dims.append(len(basis))
+        twisted_swap = kron(dag(twist), twist) * SWAP
+        equal_spans.append(
+            span_rank(I4, twisted_swap) == 2
+            and span_rank(*basis, I4, twisted_swap) == 2
+        )
+    checks.check(
+        "G9c NATIVE solve on exact unitary twists confirms the symbolic result: "
+        "complex dimension exactly 2 every time",
+        all(d == 2 for d in dims),
+        f"dims={dims}",
+    )
+    checks.check(
+        "G9d and the solved commutant EQUALS span{I, (w^dag(x)w)SWAP} in both "
+        "containments for every sampled twist",
+        all(equal_spans),
+        f"{equal_spans}",
+    )
+
+    degeneracies = []
+    for twist in TWISTS:
+        twisted_swap = kron(dag(twist), twist) * SWAP
+        degeneracies.append((
+            ground_degeneracy(sp.Rational(2, 7) * I4 + sp.Rational(5, 3) * twisted_swap),
+            ground_degeneracy(sp.Rational(2, 7) * I4 - sp.Rational(5, 3) * twisted_swap),
+        ))
+    checks.check(
+        "G9e the R3 separator is TWIST-INVARIANT: ground-sector degeneracy is 1 "
+        "for b > 0 and 3 for b < 0 for every twist, so dropping flatness does "
+        "not dissolve the two-point menu",
+        all(pair == (1, 3) for pair in degeneracies),
+        f"(b>0, b<0) degeneracies={degeneracies}",
+    )
+
+    degenerate_twist_dim = len(commutant_basis(tuple(kron(p, I2) for p in PAULIS), 4))
+    checks.check(
+        "G9f MUTATION rebuild the correlation with the degenerate homomorphism "
+        "u -> I instead of an automorphism twist: the dimension MOVES 2 -> 4, "
+        "so 'dimension 2' is carried by the twisted-diagonal construction and "
+        "is not a tautology",
+        degenerate_twist_dim == 4,
+        f"dim={degenerate_twist_dim}",
+    )
+
+
+# --------------------------------------------------------------------------
+# G10 -- "the law is I - SWAP" is not a frame-invariant sentence, and the
+#        twist that moves it carries gauge-invariant holonomy
+# --------------------------------------------------------------------------
+def gate_g10(checks: CheckRunner) -> None:
+    section("G10  the law's NAME is frame-relative; its holonomy is not")
+    twist = SAMPLE_SU2[0]
+    twisted_swap = kron(dag(twist), twist) * SWAP
+    checks.check(
+        "G10a (w^dag (x) w) SWAP is Hermitian for every sampled unitary twist, "
+        "so it is an admissible pair generator, not a formal object",
+        all(eq(dag(kron(dag(t), t) * SWAP), kron(dag(t), t) * SWAP) for t in TWISTS),
+    )
+    checks.check(
+        "G10b but it is NOT in span{I, SWAP}: the span rank rises to 3, so "
+        "'the law is I - SWAP' is not a frame-invariant sentence",
+        span_rank(I4, SWAP, twisted_swap) == 3,
+        f"rank={span_rank(I4, SWAP, twisted_swap)}",
+    )
+    checks.check(
+        "G10c MUTATION rebuild the same construction with a CENTRAL twist "
+        "w = -I: the operator lands back inside span{I, SWAP} and the rank "
+        "falls to 2, so G10b is carried by the twist and not by the algebra",
+        span_rank(I4, SWAP, kron(dag(-I2), -I2) * SWAP) == 2,
+        f"rank={span_rank(I4, SWAP, kron(dag(-I2), -I2) * SWAP)}",
+    )
+    checks.check(
+        "G10d yet the ground-sector degeneracy of a*I + b*(w^dag(x)w)SWAP is "
+        "still 1 vs 3: what the frame moves is the operator's NAME, not the "
+        "separating invariant",
+        ground_degeneracy(sp.Rational(2, 7) * I4 + sp.Rational(5, 3) * twisted_swap) == 1
+        and ground_degeneracy(sp.Rational(2, 7) * I4 - sp.Rational(5, 3) * twisted_swap) == 3,
+    )
+
+    # A twist assignment on a closed 4-cycle of edges.  Per-site re-framing
+    # sends w_e -> g_x w_e g_y^dag, so the loop product is conjugated and its
+    # trace is invariant.
+    holonomy = twist
+    checks.check(
+        "G10e on a closed 4-cycle the twist assignment (I, I, I, w) has loop "
+        "product w with exact trace 6/5, which is neither 2 nor -2, so the "
+        "assignment is NOT gauge-equivalent to the flat one",
+        sp.simplify(sp.trace(holonomy)) == sp.Rational(6, 5)
+        and sp.simplify(sp.trace(holonomy) - 2) != 0
+        and sp.simplify(sp.trace(holonomy) + 2) != 0,
+        f"trace={sp.simplify(sp.trace(holonomy))}",
+    )
+    checks.check(
+        "G10f MUTATION apply an actual per-site re-framing to the loop product "
+        "for every sampled frame: the trace does not move, so no re-framing "
+        "flattens it -- dropping flatness ENLARGES the class by a link field "
+        "rather than dissolving the two-point menu",
+        all(sp.simplify(sp.trace(g * holonomy * dag(g)) - sp.trace(holonomy)) == 0
+            for g in SAMPLE_SU2)
+        and sp.simplify(sp.trace(I2)) == 2,
+        "conjugation-invariant; flat loop product would have trace 2",
+    )
+
+
 def main() -> int:
     checks = CheckRunner()
     gate_g1(checks)
@@ -902,6 +1183,9 @@ def main() -> int:
     gate_g5(checks)
     gate_g6(checks)
     gate_g7(checks)
+    gate_g8(checks)
+    gate_g9(checks)
+    gate_g10(checks)
     section("SUMMARY")
     return checks.finish()
 

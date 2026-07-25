@@ -1,7 +1,7 @@
 ---
 claim_id: common_frame_pair_generator_exchange_class_bounded_theorem_note_2026-07-25
 claim_type: bounded_theorem
-claim_scope: "Under four SUPPLIED hypotheses -- (H1) one M_2(C) site domain on the Z^3 nearest-neighbour graph; (H2) an autonomous time-independent self-adjoint pair generator; (H3) a sum of identical two-site terms; (H4) COMMON-frame SU(2) covariance, one and the same U acting on both sites of an edge -- the commutant of the diagonal frame action on two qubits has complex dimension exactly 2 and equals span{I, SWAP}, so every admissible pair generator is h = a I + b SWAP with a, b real. The licensed quotient (h, t) -> (alpha h + beta I, t/alpha) with alpha > 0 removes a and |b| and leaves exactly sign(b), and the separating invariant is the GROUND-SECTOR DEGENERACY: 1 for b > 0 (the singlet) and 3 for b < 0 (the triplet). RECORDED EXPLICITLY AS A NEGATIVE RESULT: the one-excitation band minimum is NOT a valid separator, because Z^3 nearest-neighbour adjacency is bipartite by the parity of x + y + z, the sublattice relabeling D = diag((-1)^parity) gives D A D = -A, hence spec(A) = -spec(A), and the +J and -J one-excitation bands are identical as multisets after the licensed energy shift; the separator works only on a non-bipartite graph such as the triangle, and Z^3 is not one. THREE LIMITATIONS ARE PART OF THE CLAIM, NOT CAVEATS TO IT. (L1) H4 is a PREMISE THAT CREATES the two-point menu: under INDEPENDENT onsite covariance the commutant is only the scalars, SWAP is not invariant, and no nontrivial pair law survives without a further supplied object (a connection, link variable, shared frame, or symmetry reduction). (L2) 'Exactly two' holds only for the two-site edge class under the supplied identical-pair-term ansatz H3: at three sites H_1 = SWAP_01 + SWAP_02 and H_2 = SWAP_01 SWAP_02 + SWAP_02 SWAP_01 satisfy the same Hermiticity, neighbour-exchange, and common-frame covariance hypotheses, and H_1 + eta H_2 carries a dimensionless eta moving the gap ratio (E1-E0)/(E2-E1) from 2 at eta = 0 to 1 at eta = 1/3, which a gap RATIO argument shows is removable by neither clock rescaling nor energy shift. (L3) The 'inert' identity shift is NOT inert on a record-conditioned active-edge set: on a supplied convention where an edge is active when neither endpoint carries a record, two record sectors with different active-edge counts acquire a relative phase that moves an interference term on a coherent superposition of those sectors, so the energy shift may not be discarded before the domain is fixed. NOT claimed: any selection of sign(b), of |b|, of a rate, or of a time unit; derivability of H2-H4 from Lattice/Qubit/Admissibility/Record; PAIRWISE INDEPENDENCE OF H1-H4 (none is claimed and none is audited here); a well-defined discrete update on overlapping edges; a strict light cone; any record formation rule, formation trigger, instrument, Born weight, sampling rule, actuality, or realized outcome; the general reversible-record obstruction; continuity of a disagreement minimizer; and any relativistic, chiral, fermionic, gauge, species, matter, clock-metric, or gravitational consequence. This note sets no audit verdict and asserts no PASS."
+claim_scope: "Under four SUPPLIED hypotheses -- (H1) one M_2(C) site domain on the Z^3 nearest-neighbour graph; (H2) an autonomous time-independent self-adjoint pair generator; (H3) a sum of identical two-site terms; (H4) COMMON-frame SU(2) covariance, one and the same U acting on both sites of an edge -- the commutant of the diagonal frame action on two qubits has complex dimension exactly 2 and equals span{I, SWAP}, so every admissible pair generator is h = a I + b SWAP with a, b real. The licensed quotient (h, t) -> (alpha h + beta I, t/alpha) with alpha > 0 removes a and |b| and leaves exactly sign(b), and the separating invariant is the GROUND-SECTOR DEGENERACY: 1 for b > 0 (the singlet) and 3 for b < 0 (the triplet). RECORDED EXPLICITLY AS A NEGATIVE RESULT: the one-excitation band minimum is NOT a valid separator, because Z^3 nearest-neighbour adjacency is bipartite by the parity of x + y + z, the sublattice relabeling D = diag((-1)^parity) gives D A D = -A, hence spec(A) = -spec(A), and the +J and -J one-excitation bands are identical as multisets after the licensed energy shift; the separator works only on a non-bipartite graph such as the triangle, and Z^3 is not one. Separately recorded: the class is frame-COVARIANT and not frame-fixed -- (w^dag (x) w) SWAP is Hermitian for every unitary w but is NOT in span{I, SWAP} for a non-central w, so 'the law is I - SWAP' is not a frame-invariant sentence; what is frame-invariant is the ground-sector degeneracy, which does not move. THREE LIMITATIONS ARE PART OF THE CLAIM, NOT CAVEATS TO IT. (L1) H4 is TWO premises with OPPOSITE statuses, and the two-point menu is a LOWER BOUND rather than an artifact of them. (H4a) correlation -- the edge covariance group is a TWISTED DIAGONAL {(u, w u w^dag)} rather than the independent product; (H4b) flatness -- the twist is trivial, w = I, uniformly. Flatness is SUPPLIED outright. Correlation is the half the Admissibility clause 'determined by, and vary with, the nearest-neighbor conditions' bears on, and the campaign argument that it is forced is a READING of that clause, turning on whether 'No possibility is privileged' means ray-transitivity and on how 'conditions' is typed; that argument is neither gated nor asserted here as a theorem. Three computed facts replace the earlier L1 sentence: (i) the scalars-only collapse under INDEPENDENT onsite covariance is a property of the supplied CONTINUOUS SU(2) and not of independent-onsite covariance as such -- under the finite order-4 group generated by the spin lift of the pi/2 rotation about the edge axis, independent-onsite covariance leaves a Hermitian family of REAL DIMENSION 4 with explicit witness Z (x) Z, and the common-frame chain is 16 -> 10 -> 6 -> 5 -> 2 with every step past 5 bought by the continuous group; (ii) the twisted commutant has dimension EXACTLY 2 for EVERY twist, by the exact generic-matrix identity (I(x)W)(P(x)I + I(x)P)(I(x)W)^-1 = P(x)I + I(x)(W P W^-1), and the ground-sector separator is conjugation-invariant, so dropping flatness leaves the two-point structure intact; (iii) dropping flatness ENLARGES the underdetermination -- a twist assignment on a closed 4-cycle carries a re-framing-invariant loop-product trace 6/5, so no per-site re-framing flattens it and a link field is added on top of the sign bit. Also recorded, not gated: MINIMAL_AXIOMS_2026-06-29.md does not force common-frame covariance -- the standalone word 'frame' occurs zero times in it and its only covariance clause quantifies over lattice translations and proper cubic rotations, never an internal SU(2) -- while prior art in the corpus treats a common PU(2) re-presentation as the narrow SAFE one and site-dependent frames as the horn needing an extra supplied transport. (L2) 'Exactly two' holds only for the two-site edge class under the supplied identical-pair-term ansatz H3: at three sites H_1 = SWAP_01 + SWAP_02 and H_2 = SWAP_01 SWAP_02 + SWAP_02 SWAP_01 satisfy the same Hermiticity, neighbour-exchange, and common-frame covariance hypotheses, and H_1 + eta H_2 carries a dimensionless eta moving the gap ratio (E1-E0)/(E2-E1) from 2 at eta = 0 to 1 at eta = 1/3, which a gap RATIO argument shows is removable by neither clock rescaling nor energy shift. (L3) The 'inert' identity shift is NOT inert on a record-conditioned active-edge set: on a supplied convention where an edge is active when neither endpoint carries a record, two record sectors with different active-edge counts acquire a relative phase that moves an interference term on a coherent superposition of those sectors, so the energy shift may not be discarded before the domain is fixed. NOT claimed: any selection of sign(b), of |b|, of a rate, or of a time unit; derivability of H2-H4 from Lattice/Qubit/Admissibility/Record; PAIRWISE INDEPENDENCE OF H1-H4 (none is claimed and none is audited here); a well-defined discrete update on overlapping edges; a strict light cone; any record formation rule, formation trigger, instrument, Born weight, sampling rule, actuality, or realized outcome; the general reversible-record obstruction; continuity of a disagreement minimizer; and any relativistic, chiral, fermionic, gauge, species, matter, clock-metric, or gravitational consequence. This note sets no audit verdict and asserts no PASS."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/common_frame_pair_generator_exchange_class_2026_07_25.py
@@ -38,9 +38,18 @@ The classification is genuinely useful: an arbitrary Hermitian operator on
 `C^2 ⊗ C^2` carries 16 real parameters, and under the stated hypotheses it
 collapses to two, then to one after the licensed quotient. The limitations are
 equally load-bearing, and they are the part that a summary tends to lose: the
-covariance reading is what *creates* the two-point menu rather than a
-notational convenience; the count does not survive enlarging the support past
-one edge; and the identity term is inert only on a fixed active-edge set.
+covariance premise is two premises with different statuses and the two-point
+count is a *lower* bound on the underdetermination rather than a product of
+the premise; the count does not survive enlarging the support past one edge;
+and the identity term is inert only on a fixed active-edge set.
+
+**Correction history.** An earlier revision of this note carried an L1 that
+said the opposite of what its own algebra supports — that common-frame
+covariance *creates* the menu and that under independent onsite covariance no
+nontrivial pair law survives at all. Both halves are wrong, and L1 below now
+states what is computed instead. The gates that were already here (`G2a`–`G2d`)
+were correct as computations; the error was in generalising them from the
+supplied continuous `SU(2)` to independent-onsite covariance as such.
 
 This note claims a **classification**, not a law. It selects no sign, no rate,
 no formation rule, no instrument, and no actual history.
@@ -79,7 +88,13 @@ open gates outside axiom content, and H2–H4 sit on that gate.
   nearest-neighbour two-site terms. This is an **ansatz**, and L2 below is
   precisely the cost of it.
 - **(H4) COMMON-frame covariance.** One and the same `U ∈ SU(2)` acts on both
-  sites of an edge. This is the decisive premise; see L1.
+  sites of an edge. This is really **two** premises, and L1 separates them:
+  **(H4a)** the two endpoint actions are *correlated* — the edge covariance
+  group is a twisted diagonal `{(u, w u w†)}` rather than the independent
+  product; and **(H4b)** the twist is *flat*, `w = I`, uniformly. Only H4b is
+  the "one and the same `U`" convention. Both are supplied here; L1 records
+  that they are supplied in different senses and that the classification does
+  not depend on H4b.
 
 **No pairwise independence of H1–H4 is claimed**, and the runner attempts no
 independence audit of them. They are stated as a conjunction and consumed as a
@@ -151,19 +166,157 @@ breaking mutation. `G5h` adds the independent point that the band minimum is
 not even invariant under the `β I` shift, whereas the ground-sector degeneracy
 does not move at all.
 
+**R5 (the class is frame-COVARIANT, not frame-fixed).** For a unitary `w`, the
+operator `(w† ⊗ w) SWAP` is Hermitian — this is exact, since
+`SWAP (w ⊗ w†) = (w† ⊗ w) SWAP` — so it is an admissible pair generator and not
+a formal object. But for a **non-central** `w` it is **not** in `span{I, SWAP}`:
+the span rank rises from 2 to 3. Consequently
+
+> "the law is `I − SWAP`" is **not a frame-invariant sentence**.
+
+It names an operator, and the same law re-presented through a site-dependent
+frame is `I − (w† ⊗ w) SWAP`, which lies outside the class R1 computes. What
+*is* frame-invariant is the R3 separator: unitary conjugation moves no
+eigenvalue multiplicity, so the ground-sector degeneracy of
+`a I + b (w† ⊗ w) SWAP` is still `1` for `b > 0` and `3` for `b < 0`. Gates
+`G10a`–`G10d`; `G10c` is the construction mutation — rebuild with a central
+twist `w = −I` and the operator lands back inside `span{I, SWAP}`, rank `3 → 2`.
+R1 is therefore a classification **relative to a chosen frame**, and R3, not the
+operator's name, carries the frame-independent content.
+
 ## Limitations (all three are part of the claim, not caveats to it)
 
-**L1 — common-frame covariance is a PREMISE that CREATES the two-point menu.**
-H4 is not a notational convenience; it is the physics. Under **independent**
-onsite covariance — separate `SU(2)` actions on the two sites — the commutant
-collapses to complex dimension **1**, the scalars alone; `SWAP` is not
-invariant there. Solving directly, `a I + b SWAP` is independent-onsite
-invariant only for `b = 0`. So under independent onsite covariance **no
-nontrivial pair interaction survives at all** without a further supplied
-object: a connection, a link variable, a shared frame, or a symmetry reduction.
-The axiom sentence "No possibility is privileged" does not choose between the
-two readings. Adopting the exchange class therefore imports a physical premise;
-it does not read one off a symmetry slogan. Gates `G2a`–`G2d`.
+**L1 — the covariance premise is TWO premises with opposite standing, and the
+two-point count is a LOWER BOUND, not an artifact of them.**
+
+H4 bundles **(H4a)** correlation — the edge covariance group is a twisted
+diagonal `{(u, w u w†)}` rather than the independent product — with **(H4b)**
+flatness, `w = I` uniformly. They do not stand or fall together, and the
+five items below are what the algebra and the axiom text actually give.
+
+**(i) The scalars-only collapse belongs to the supplied CONTINUOUS group, not
+to independent-onsite covariance as such.** Gates `G2a`–`G2d` compute the
+collapse for the continuous `SU(2)`: the commutant falls to complex dimension
+**1**, `SWAP` is not invariant, and `a I + b SWAP` is invariant only for
+`b = 0`. That computation stands and is unchanged. What does **not** follow is
+the general sentence. Replace the continuous group by a finite one — the
+order-4 group generated by the spin lift of the `π/2` rotation about the edge
+axis, a finite subgroup drawn from the proper cubic rotations that are the only
+rotations the Lattice axiom names — and
+independent-onsite covariance leaves a Hermitian family of **real dimension 4**,
+with the explicit Hermitian witness
+
+```text
+Z ⊗ Z,   [Z ⊗ Z, u ⊗ I] = 0   and   [Z ⊗ Z, I ⊗ u] = 0   separately,
+```
+
+which is not a multiple of `I`. Gates `G8c`, `G8d`, with construction mutation
+`G8e` (rebuild the same witness against the continuous generators and it stops
+being invariant, so `G8c` does not contradict `G2a`). Whether the proper cubic
+rotations act internally on `M_2(C)` at all is **itself supplied** and is not
+asserted here; the finite group is used only to locate which hypothesis does
+the killing. The same computation locates the rest of the descent: common-frame
+covariance under that finite group leaves real dimension **6** (`G8b`), under
+the full order-8 proper edge stabiliser **5** (`G8f`), and under the bare
+endpoint exchange alone **10** (`G8g`) — the chain
+
+```text
+16 → 10 → 6 → 5 → 2,
+```
+
+in which every step past 5 is bought with the **continuous** group and not with
+a covariance reading.
+
+**(ii) The classification does not depend on the flatness half.** For **every**
+twist the twisted commutant has dimension exactly 2. This is not a sample: for a
+*generic* invertible `W`,
+
+```text
+(I ⊗ W)(P ⊗ I + I ⊗ P)(I ⊗ W)⁻¹ = P ⊗ I + I ⊗ (W P W⁻¹),
+(I ⊗ W) SWAP (I ⊗ W)⁻¹          = (W⁻¹ ⊗ W) SWAP,
+```
+
+are exact symbolic identities (`G9a`, `G9b`), so the twisted diagonal is the
+`(I ⊗ W)`-conjugate of the diagonal and conjugation is a linear bijection on
+commutants. Hence the twisted commutant is `span{I, (w† ⊗ w) SWAP}`, confirmed
+by native solve in both containments on exact unitary twists (`G9c`, `G9d`),
+with construction mutation `G9f` (replace the automorphism twist by the
+degenerate homomorphism `u ↦ I` and the dimension moves `2 → 4`). The R3
+separator is conjugation-invariant, so the ground-sector degeneracy is `1` for
+`b > 0` and `3` for `b < 0` for **every** twist (`G9e`). Relaxing H4b leaves
+the two-point structure exactly where it was.
+
+**(iii) Dropping flatness ENLARGES the underdetermination rather than
+dissolving it.** A twist assignment on the edges transforms under per-site
+re-framing as `w_e ↦ g_x w_e g_y†`, so the loop product around a closed cycle
+is conjugated and its trace is a re-framing invariant. Exhibited exactly: the
+4-cycle assignment `(I, I, I, w)` has loop-product trace `6/5`, which is neither
+`2` nor `−2`, so **no** per-site re-framing carries it to the flat assignment
+(`G10e`, with mutation `G10f` applying actual re-framings and finding the trace
+immobile). Relaxing H4b therefore adds a link field with re-framing-invariant
+content **on top of** the sign bit. Together with (ii): **the two-point menu is
+a lower bound on the underdetermination, not a product of the premise.** By R5
+it is also not even a statement about a fixed operator — `I − SWAP` names an
+operator only relative to a chosen frame.
+
+**(iv) What the axioms do and do not say — recorded, not gated.**
+[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) does **not**
+force common-frame covariance. The standalone word "frame" occurs **zero**
+times in it — all six case-insensitive matches are inside "framework" — and its
+only covariance clause, `:57–58`, reads "There is one fixed nearest-neighbor
+admissibility rule, covariant under lattice translations and proper cubic
+rotations": spatial motions, never an internal `SU(2)`. These are textual facts
+about the memo and they are deliberately **not** gated — this runner reads no
+markdown, and a prose-needle gate would be a grep rather than a computation.
+
+The two halves are nevertheless supplied in different senses, and the note
+records the asymmetry without resolving it. **H4b is supplied outright**: it is
+a convention about which nothing in the memo speaks. **H4a is the half the
+Admissibility clause bears on** — "For each site, the available possibilities
+are determined by, and vary with, the nearest-neighbor conditions" (`:60–61`)
+is a cross-site comparison, and the campaign argument is that a rule
+equivariant under *independent* onsite relabelings of a ray-transitive group
+cannot depend on **what** a neighbour's condition is, only on whether one is
+present. That argument is a **reading** of the axiom, not a computation, and it
+turns on two things the memo does not settle: whether "No possibility is
+privileged" (`:52`) is to be read as ray-transitivity of the covariance group,
+and whether "conditions" is typed as record content or as record occupancy.
+**This note neither gates that argument nor asserts the forcing as a theorem.**
+It records only that flatness and correlation are not supplied in the same
+sense, and that the classification survives dropping flatness either way.
+
+**(v) Prior art in the corpus concludes the opposite polarity from the sentence
+this limitation used to carry.** Two surfaces, quoted exactly and referenced in
+backticks as context only — neither is consumed as evidence, neither is
+modified, and nothing here inherits status from either:
+
+- `docs/COLOR_ARENA_BONDED_PAIR_ADMISSIBILITY_CROSS_SITE_SURFACE_BOUNDED_THEOREM_NOTE_2026-07-06.md:76-78`
+  — "The Qubit axiom itself supplies that / identification: both domains carry
+  the same supplied algebraic presentation / (`M_2(C)`)". That note's own
+  frame-relativity paragraph at `:96-101` adds that "an INDEPENDENT per-site
+  presentation change (`g tensor 1`) does not commute with `S` and moves the
+  split", and registers the leftover at `:198` as "R5 frame transport … a rule
+  for comparing presentations across sites (transport) is not supplied by
+  anything in this note -- open."
+- `docs/work_history/repo/review_feedback/FOUNDATION_LICENSED_PHYSICAL_EQUIVALENCE_WEYL_PAIR_NOTE_2026-07-14.md:29-34`
+  — "The narrow safe / re-presentation is a common complex-linear
+  star-automorphism—an inner / `PU(2)` conjugation—applied to the complete
+  rule, record content, and decoder. / Neither statement licenses arbitrary
+  site-dependent quantum frames, / reflections, antiunitary conjugations,
+  boundary changes, or a quotient over / experimental protocols." Its section
+  "Common versus site-dependent frames" (`:198-216`) says of an arbitrary
+  family `U_x`: "It changes neighbor comparisons by / the relative frame
+  `U_x^dagger U_y`. A particular gauge/connection law may / make those changes
+  redundant, but the foundation does not supply that law."
+
+So the corpus treats a **common** `PU(2)` re-presentation as the narrow safe
+one and **site-dependent** frames as the horn that needs an extra supplied
+object — the reverse of the polarity the old L1 asserted. The two surfaces are
+not in agreement with each other on whether the Qubit axiom *supplies* the
+cross-site identification (the first says it does; the second, and (iv) above,
+say the foundation supplies no transport), and this note takes no side: it
+records the disagreement as the open question it is, consistent with that note's own
+residual `R5 … open`.
 
 **L2 — "exactly two parameters" holds only for the two-site edge class under
 the supplied identical-pair-term ansatz.** The count is a statement about one
@@ -218,7 +371,16 @@ This note does **not** claim, and its runner does not gate:
 - any selection of `sign(b)`, of `|b|`, of a rate, or of a time unit;
 - that H2–H4 are derivable from Lattice/Qubit/Admissibility/Record — the axiom
   memo says the opposite for dynamics;
-- pairwise independence of H1–H4;
+- that the Admissibility axiom **forces** the H4a correlation. L1(iv) records
+  that argument as an axiom **reading** turning on two unsettled words, states
+  that it is not gated here, and asserts no theorem;
+- that the proper cubic rotations act internally on `M_2(C)`. The finite group
+  in `G8` is used only to locate which hypothesis carries the scalars-only
+  collapse; its internal action is supplied and is not claimed;
+- any selection of a twist, a link field, a transport rule, a connection, or a
+  holonomy. L1(iii) exhibits one re-framing-invariant loop product to show that
+  relaxing H4b enlarges the class; it selects nothing;
+- pairwise independence of H1–H4, or of H4a from H4b;
 - a well-defined discrete update: on overlapping edges the pair terms do not
   commute, so a product update still needs an ordering/layering rule or a
   causal-invariance theorem;
@@ -244,10 +406,14 @@ The licensed negative content is bounded to L1–L3 and R4:
 
 > Under H1–H4 the two-site pair generator class is exactly `span{I, SWAP}` and
 > the licensed quotient leaves exactly `sign(b)`. Under independent onsite
-> covariance no nontrivial pair term survives. The two-parameter count does not
+> covariance **with respect to the continuous `SU(2)`** no nontrivial pair term
+> survives; that is a statement about the continuous group and not about
+> independent-onsite covariance as such, since the same covariance with respect
+> to a finite subgroup leaves real dimension 4. The two-parameter count does not
 > extend past the two-site edge class under H3. The identity term is not inert
 > on a record-conditioned active-edge set. The one-excitation band minimum is
-> not a valid sign separator on the bipartite `Z^3` graph.
+> not a valid sign separator on the bipartite `Z^3` graph. `span{I, SWAP}` is
+> not a frame-invariant description of the class.
 
 No universal no-go against a pair law, an exchange dynamics, or a deeper
 theorem deriving H2–H4 is made.
@@ -260,8 +426,12 @@ independent audit lane.**
 
   | route | strongest attempted form | outcome |
   |---|---|---|
-  | common-frame `SU(2)` covariance | commutant of `U ⊗ U` | dimension 2, `span{I, SWAP}` — the stated class |
-  | independent onsite covariance | commutant of separate `SU(2)` actions | dimension 1, scalars only — L1 |
+  | common-frame **continuous** `SU(2)` covariance | commutant of `U ⊗ U` | dimension 2, `span{I, SWAP}` — the stated class |
+  | independent onsite, **continuous** `SU(2)` | commutant of separate `SU(2)` actions | dimension 1, scalars only |
+  | independent onsite, **finite** edge-axis group | same construction, finite group | real dimension **4**, witness `Z ⊗ Z` — L1(i) |
+  | common frame, **finite** edge-axis group | commutant of `u ⊗ u`, `u` of order 4 | real dimension **6**; order-8 stabiliser gives **5** — L1(i) |
+  | **twisted** diagonal `{(u, w u w†)}` | commutant, generic invertible twist | dimension **2 for every twist**, `span{I, (w†⊗w)SWAP}` — L1(ii) |
+  | drop flatness across a closed loop | loop product under `w_e ↦ g_x w_e g_y†` | re-framing-invariant trace `6/5`: a link field is **added** — L1(iii) |
   | enlarge support to three sites | `H_1 + η H_2` under the same symmetries | independent dimensionless `η` survives — L2 |
   | remove `a` by energy shift | `β I` on a fixed active-edge set | succeeds on a fixed graph, fails on a record-conditioned graph — L3 |
   | remove `sign(b)` by rescaling | `α > 0` clock rescaling | fails; only an unlicensed `α < 0` identifies the signs |
@@ -271,7 +441,14 @@ independent audit lane.**
   | discrete layered update instead of a generator | product of overlapping pair terms | ordering/layering rule required; not supplied |
 
 - **N2 wall separation — ATTEMPTED.** Finite controls that keep one wall from
-  being silently renamed as another: covariance reading vs class size (common
+  being silently renamed as another: **group continuity vs covariance reading**
+  (the finite edge-axis group gives 6 common / 4 independent, the continuous
+  group gives 2 common / 1 independent — so "which covariance" and "which group"
+  are separate walls and the old L1 conflated them); **correlation vs flatness**
+  (every twist gives dimension 2, so H4b moves nothing in the count, while H4a
+  moves it from 1 to 2); **operator name vs invariant** (`(w†⊗w)SWAP` leaves
+  `span{I, SWAP}` while the ground-sector degeneracy does not move); covariance
+  reading vs class size (common
   frame gives dimension 2, independent onsite gives dimension 1); class size vs
   support (dimension 2 on one edge, `η` appears at three sites); scale freedom
   vs sign (`α > 0` removes `|b|`, never `sign(b)`); energy zero vs sector
@@ -282,7 +459,12 @@ independent audit lane.**
   tie several rows together. **These controls are not an independence proof,
   and no claim is made that H1–H4 are pairwise independent.**
 - **N3 hidden-wall scan — ATTEMPTED.** Exposed rather than hidden: the
-  common-versus-independent frame reading; autonomy/time-independence; the
+  common-versus-independent frame reading; **the continuity of the internal
+  group, which is what the scalars-only collapse actually needs**; **the
+  splitting of H4 into correlation and flatness, and the fact that "the law is
+  `I − SWAP`" names an operator only relative to a frame**; **whether the proper
+  cubic rotations act internally on `M_2(C)` at all, which is supplied and not
+  claimed here**; autonomy/time-independence; the
   identical-pair-term ansatz; the two-site support restriction; the
   fixed-versus-record-conditioned active-edge set and the supplied
   active-edge convention itself; the sign of `b`; the magnitude `|b|` and its
@@ -313,9 +495,14 @@ independent audit lane.**
     rhetorical hedge.
   - Entanglement **capability** is not sampling, an outcome, or a record, and
     no entanglement claim is gated here at all.
-- **N6 partial-closure path — ATTEMPTED.** (1) Test whether the common-frame
-  reading is forced by, or merely compatible with, the Admissibility covariance
-  sentence. (2) Classify the full low-support invariant term basis past one
+- **N6 partial-closure path — ATTEMPTED.** (1) Type the Admissibility axiom's
+  "conditions" — as record content or as record occupancy — and settle whether
+  "No possibility is privileged" is to be read as ray-transitivity of the
+  covariance group. L1(iv) shows those two words are the whole of what is left
+  between "H4a is a supplied premise" and "H4a is forced", and neither is
+  settled by the memo; this is a question for the owner and the audit lane, not
+  a computation this note can perform. (2) Classify the full low-support
+  invariant term basis past one
   edge, so the L2 `η` family is enumerated rather than exhibited. (3) Search for
   a conservation or index theorem fixing `sign(b)` rather than registering it.
   (4) Fix the active-edge/vacuum energy convention, or prove the superselection
@@ -335,9 +522,14 @@ independent audit lane.**
   covariance of the three-site `H_1`, `H_2` is actually computed, which is what
   makes `η` an independent invariant; (iii) the active-edge non-inertness is
   built from a record-conditioned sector pair rather than a hand-written
-  diagonal; and (iv) R4 is new — the band-minimum separator is positively
+  diagonal; (iv) R4 is new — the band-minimum separator is positively
   refuted on the bipartite `Z^3` graph and the ground-sector degeneracy is put
-  in its place.
+  in its place; and (v) R5 and L1(i)–(iii) are new — the finite-versus-continuous
+  contrast that locates the scalars-only collapse, the every-twist dimension
+  theorem proved from a generic-matrix identity rather than sampled, the
+  re-framing-invariant loop product, and the observation that `span{I, SWAP}` is
+  a frame-relative description. **The earlier revision of this note asserted the
+  contrary of L1(i)–(iii) and is corrected here**; see Purpose.
 
 ## Verification
 
@@ -348,7 +540,7 @@ Primary runner:
 python3 scripts/common_frame_pair_generator_exchange_class_2026_07_25.py
 ```
 
-Result on this note's content: **`PASS=46`, `FAIL=0`** (about 0.7 s). The PASS
+Result on this note's content: **`PASS=65`, `FAIL=0`** (about 1.4 s). The PASS
 total is a **gate count**, not a count of independent scientific facts.
 
 **Why a new runner rather than the four existing ones.** The 2026-07-14
@@ -385,7 +577,27 @@ of them. Those four surfaces and their runners are left untouched.
   bands must differ), `G6e` and `G6i` (a non-covariant decoy must fail the
   symmetry gates; sweeping `η` must move the ratio), `G7d` (rebuild the record
   configuration with equal active-edge counts; the identity term must become
-  inert).
+  inert), `G8e` (rebuild the `Z ⊗ Z` witness against the continuous generators
+  instead of the finite ones; invariance must fail), `G9f` (rebuild the
+  correlation with the degenerate homomorphism `u ↦ I` instead of an
+  automorphism twist; the dimension must move 2 → 4), `G10c` (rebuild the
+  twisted operator with a central twist; the span rank must fall 3 → 2), and
+  `G10f` (apply actual per-site re-framings to the loop product; the trace must
+  not move).
+- **The `G9a`/`G9b` twist identities are symbolic, not sampled.** They are
+  computed on a generic `2 × 2` matrix with nonzero determinant, so "dimension
+  exactly 2 for **every** twist" is proved rather than checked on instances;
+  `G9c`/`G9d` then re-derive it by native solve on exact unitary twists as an
+  independent cross-check.
+- **The Hermitian dimensions in `G8` are solved, not inferred.** The Hermitian
+  ansatz is built from real symbols, the commutation residual is split into its
+  exact real and imaginary parts, and the dimension is the corank of the
+  resulting exact real linear system.
+- **The textual facts in L1(iv) are deliberately ungated.** The word counts and
+  quotations from the axiom memo are recorded in prose with exact line
+  references and left there: gating them would require the runner to grep
+  markdown, which the design rule above forbids and which would not be
+  mathematics.
 
 Selected gate lines, verbatim:
 
@@ -404,13 +616,27 @@ PASS G6g gap ratio (E1 - E0)/(E2 - E1) = 2 at eta = 0 :: levels=[-1, 1, 2] ratio
 PASS G6h gap ratio = 1 at eta = 1/3 :: levels=[-4/3, 2/3, 8/3] ratio=1
 PASS G7c on a coherent superposition of the two record sectors the identity term MOVES the interference term ... :: witness 1 -> 1/2
 PASS G7d MUTATION ... EQUAL active-edge counts: the same identity term becomes a genuine global phase ... :: N_active=1 vs 1, witness 1 -> 1
+PASS G8c INDEPENDENT-onsite covariance under the SAME finite group leaves Hermitian real dimension 4: a nontrivial pair law SURVIVES :: dim_R=4
+PASS G8e MUTATION rebuild the same witness against the CONTINUOUS independent generators: Z(x)Z stops being invariant, so G8c is a statement about the finite group and does not contradict G2a :: continuous group is what kills it
+PASS G8g and with only the bare endpoint exchange the class is Hermitian real dimension 10, so the chain 16 -> 10 -> 6 -> 5 -> 2 is monotone and every step past 5 is supplied :: bare=10 continuous_common=2
+PASS G9a SYMBOLIC, for EVERY invertible W: (I(x)W)(P(x)I + I(x)P)(I(x)W)^-1 = P(x)I + I(x)(W P W^-1), so the twisted diagonal is exactly the (I(x)W)-conjugate of the diagonal -- not a sampled claim :: generic 2x2 W with det W != 0
+PASS G9e the R3 separator is TWIST-INVARIANT: ground-sector degeneracy is 1 for b > 0 and 3 for b < 0 for every twist, so dropping flatness does not dissolve the two-point menu :: (b>0, b<0) degeneracies=[(1, 3), (1, 3), (1, 3), (1, 3)]
+PASS G9f MUTATION rebuild the correlation with the degenerate homomorphism u -> I instead of an automorphism twist: the dimension MOVES 2 -> 4, so 'dimension 2' is carried by the twisted-diagonal construction and is not a tautology :: dim=4
+PASS G10b but it is NOT in span{I, SWAP}: the span rank rises to 3, so 'the law is I - SWAP' is not a frame-invariant sentence :: rank=3
+PASS G10c MUTATION rebuild the same construction with a CENTRAL twist w = -I: the operator lands back inside span{I, SWAP} and the rank falls to 2, so G10b is carried by the twist and not by the algebra :: rank=2
+PASS G10e on a closed 4-cycle the twist assignment (I, I, I, w) has loop product w with exact trace 6/5, which is neither 2 nor -2, so the assignment is NOT gauge-equivalent to the flat one :: trace=6/5
 ```
 
 **Gate coverage, stated plainly.** `G1`/`G2` are the classification and its
 covariance contrast; `G3` is the quotient; `G4` is the invariant; `G5` is the
 negative result R4 and is the only group that touches graph structure; `G6` is
 the three-site counterexample defeating completeness; `G7` is the
-record-conditioned active-edge boundary. **No gate composes R1–R3 with a
+record-conditioned active-edge boundary; `G8` is L1(i), locating the
+scalars-only collapse in the continuity of the group rather than in the
+covariance reading; `G9` is L1(ii), the every-twist dimension theorem and the
+twist-invariance of the separator; `G10` is R5 together with L1(iii), the
+frame-relativity of the operator's name and the re-framing-invariant loop
+product. **No gate composes R1–R3 with a
 formation rule, an instrument, a weight, or a realized outcome — nothing in
 this runner touches those, and nothing above claims them.**
 

@@ -1,44 +1,66 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T03:13:02.973128+00:00",
+  "audit_invocation_history": [
+    "faf2c18dda374ce39c6f4818186374b5"
+  ],
+  "audit_invocation_id": "faf2c18dda374ce39c6f4818186374b5",
+  "audit_state_snapshot": {
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "cpt_exact_note": "For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish."
+    },
+    "dep_claim_type": {
+      "cpt_exact_note": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "cpt_exact_note": "retained"
+    },
+    "deps": [
+      "cpt_exact_note"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 4.822,
+    "runner_hash": "3132ae507048dc5e4d73d0ade060de8e6b1f8ad1ef6ef9841431bb33e669fa1d",
+    "transitive_descendants": 19
+  },
+  "audit_status": "audited_decoration",
+  "auditor": "codex-audit-batch-A-20260725-26b8a280",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The explicit support of each D_mu proves S1-S5, and S1 places H in span_C{H_1,H_2,H_3}, proving S6. The finite runner checks faithfully corroborate the L-independent algebraic proof.",
   "claim_id": "staggered_hamiltonian_direction_decomposition_bounded_narrow_theorem_note_2026-05-17",
-  "claim_scope": null,
-  "claim_type": "bounded_theorem",
+  "claim_scope": "For the explicitly defined staggered hopping operator on a finite periodic cubic lattice with even L>=4, H=iD decomposes into three pairwise Hilbert-Schmidt-orthogonal direction summands and has zero diagonal, longer-range, cross-direction, and span-complement projections.",
+  "claim_type": "decoration",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T03:13:02.973128+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
-  "decoration_parent_claim_id": null,
+  "decoration_parent_claim_id": "cpt_exact_note",
   "deps": [
     "cpt_exact_note"
   ],
   "direct_in_degree": 1,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "decoration_under_cpt_exact_note",
+  "effective_status_reason": "decoration_parent_retained",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "decoration_under_cpt_exact_note",
   "load_bearing_score": 4.822,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "By the explicit row support of D_mu, D=sum_mu D_mu and distinct direction summands have disjoint matrix support, while H therefore lies in span_C{H_1,H_2,H_3}.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "36b4ee4456224d04310aef9c79be3a37028841d153b377f509e09b45078f4019",
   "note_path": "docs/STAGGERED_HAMILTONIAN_DIRECTION_DECOMPOSITION_BOUNDED_NARROW_THEOREM_NOTE_2026-05-17.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -98,14 +120,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 29,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 29
   },
   "runner_path": "scripts/audit_companion_staggered_hamiltonian_direction_decomposition_bounded_exact_2026_05_17.py",
   "title": "Staggered Hamiltonian Direction-Decomposition Bounded Narrow Theorem",
   "transitive_descendants": 19,
-  "verdict_rationale": null
+  "verdict_rationale": "The six formal statements are correct algebraic consequences of the retained parent construction and the definitions of D_mu and H_mu, and the runner genuinely checks the asserted identities. However, every load-bearing step is class A, there is no independent comparator, and the note reduces to one retained upstream construction plus standard matrix algebra. Under the rubric's decoration tie-breaker, this is an exact algebraic corollary rather than an independently retained bounded theorem."
 }

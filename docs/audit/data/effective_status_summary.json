@@ -1,7 +1,7 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 2150,
-    "decoration": 28,
+    "bounded_theorem": 2149,
+    "decoration": 29,
     "meta": 363,
     "no_go": 438,
     "open_gate": 208,
@@ -86,6 +86,7 @@
     "audited_numerical_match": 6,
     "audited_renaming": 21,
     "decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": 1,
+    "decoration_under_cpt_exact_note": 1,
     "decoration_under_d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12": 1,
     "decoration_under_gauge_vacuum_plaquette_reduction_existence_theorem_note": 1,
     "decoration_under_graph_first_su3_integration_note": 8,
@@ -103,7 +104,7 @@
     "retained": 96,
     "retained_bounded": 318,
     "retained_pending_chain": 5,
-    "unaudited": 2938
+    "unaudited": 2937
   },
   "retained_pending_chain_count": 5,
   "retained_pending_chain_examples": [

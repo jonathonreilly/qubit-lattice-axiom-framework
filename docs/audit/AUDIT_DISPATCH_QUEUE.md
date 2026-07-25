@@ -99,7 +99,7 @@ These dispatch targets have been re-audited after their manifest's `generated_da
 | 43 | resolved_or_superseded | `observable_principle_p1_bridge_jones_index_subfactor_narrow_note_2026-05-21` | no_go / unaudited / unaudited |
 | 44 | resolved_or_superseded | `observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21` | no_go / unaudited / unaudited |
 | 45 | resolved_or_superseded | `observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21` | no_go / unaudited / unaudited |
-| 46 | resolved_or_superseded | `staggered_hamiltonian_direction_decomposition_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem / unaudited / unaudited |
+| 46 | resolved_or_superseded | `staggered_hamiltonian_direction_decomposition_bounded_narrow_theorem_note_2026-05-17` | decoration / audited_decoration / decoration_under_cpt_exact_note |
 | 47 | resolved_or_superseded | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | positive_theorem / unaudited / unaudited |
 | 48 | resolved_or_superseded | `cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02` | positive_theorem / unaudited / unaudited |
 | 49 | resolved_or_superseded | `no_per_site_bosonic_ccr_theorem_note_2026-05-02` | no_go / unaudited / unaudited |

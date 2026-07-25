@@ -1,45 +1,110 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T14:56:58.142220+00:00",
+  "audit_invocation_history": [
+    "b08a2302c48443259dc6b93f40a17f23"
+  ],
+  "audit_invocation_id": "b08a2302c48443259dc6b93f40a17f23",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true,
+      "runner_path": "scripts/frontier_teleportation_3d_readout_convention_audit.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {
+      "scripts/frontier_teleportation_taste_readout_operator_model.py": "69fde07391e2a34bfc1ddf75af625383056c416000557819bfec78e6644a48eb",
+      "scripts/teleportation_boundary_checks_2026_06_13.py": "095f958d84c2549e235defe174553aad674ee84086d2e00f2a0eed2cab6f0392"
+    },
+    "load_bearing_score": 0.0,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_teleportation_3d_readout_convention_audit.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "3dd5262c85ba7b7c989f11a8180f03f91ac0e590658730fdc97ec413dd5a04e4",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_teleportation_taste_readout_operator_model.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "69fde07391e2a34bfc1ddf75af625383056c416000557819bfec78e6644a48eb",
+        "cache_status": "ok"
+      },
+      "scripts/teleportation_boundary_checks_2026_06_13.py": {
+        "cache_exit_code": null,
+        "cache_freshness": "missing",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": null,
+        "cache_status": null
+      }
+    },
+    "runner_hash": "3dd5262c85ba7b7c989f11a8180f03f91ac0e590658730fdc97ec413dd5a04e4",
+    "runner_path": "scripts/frontier_teleportation_3d_readout_convention_audit.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-eb454592",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The finite tensor-product calculations close, but the packet does not derive the operational premise that every traced readout must be represented by an environment-blind operator of the form O_logical tensor I_env.",
   "claim_id": "teleportation_3d_readout_convention_note",
-  "claim_scope": null,
+  "claim_scope": "Finite side=2 and side=4 3D taste-operator audit of raw xi_5 as traced retained-axis Z and Bell Z control, retained-axis Z_r/X_r, and fixed-spectator-branch restrictions.",
   "claim_type": "open_gate",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_last_reviewed": "2026-07-25T14:56:58.142220+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [
     "scripts/frontier_teleportation_taste_readout_operator_model.py",
     "scripts/teleportation_boundary_checks_2026_06_13.py"
   ],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Raw xi_5 = Z_r times the product of the two spectator Z operators, so it retains spectator signs instead of factoring as Z_r tensor I_spectator.",
+  "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "derived_no_go_boundary"
+  ],
   "note_hash": "f7200c4415d2b0f42a1c7a54ec40cf20778b4c7640175e484f397364c7010f40",
   "note_path": "docs/TELEPORTATION_3D_READOUT_CONVENTION_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained theorem deriving the environment-blind traced-readout criterion and test branch measurement, heralding, and branch-conditioned correction alternatives; add a dated downstream-hygiene line to this note's own boundary if downstream wording is narrowed.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-fresh-agent",
   "previous_audits": [
@@ -90,12 +155,12 @@
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
-    "C": 0,
+    "C": 7,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 7
   },
   "runner_path": "scripts/frontier_teleportation_3d_readout_convention_audit.py",
   "title": "Teleportation 3D Readout Convention Audit",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "Independent tensor-product algebra reproduces the logical candidate zero for raw xi_5, relative residual 1, fixed-branch signs, and raw Bell residual 1/sqrt(2) with maximum expected error 1/4. Issue: the operational requirement Z_traced = Z_r tensor I_spectator is introduced as a convention rather than derived from the supplied axioms or a retained readout authority. Why this blocks: the calculation establishes a finite model-relative factorization boundary, but not the claimed necessity for every operational traced readout; the N1-N8 judgment also lacks independent evidence resolving alternative measurement, heralding, and conditioned-correction routes. Repair target: derive or cite the missing readout bridge; claim boundary until fixed: the finite matrix factorization and residual table remain supported."
 }

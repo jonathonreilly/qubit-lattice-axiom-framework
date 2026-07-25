@@ -1,0 +1,37 @@
+{
+ "audit": "unset",
+ "authority": "none",
+ "channel_census": {
+  "density_density": 1,
+  "density_spin": 1,
+  "mixed_after_exchange": 1,
+  "spin_density": 1,
+  "spin_spin_exchange_symmetric": 3
+ },
+ "conclusion": "Carrying qubit content through the cycle-698 classification, the nearest-neighbor two-body kernel has exactly 6 covariant parameters out of 96, and 5 once record exchange is imposed. The content-blind density-density channel contributes exactly one, recovering cycle 698. The remainder is the exact budget of spin-carrying couplings the axioms' covariance permits at this order and range; none of them is selected here.",
+ "covariant_exchange_symmetric_dimension": 5,
+ "covariant_pair_kernel_dimension": 6,
+ "cycle": 699,
+ "cycle_claim": null,
+ "fail_count": 0,
+ "firewalls": {
+  "carrier_identified": false,
+  "coupling_values_selected": false,
+  "dynamics_or_measurement_claimed": false,
+  "lane_status_changed": false,
+  "new_axiom_or_primitive_proposed": false,
+  "source_action_adopted": false
+ },
+ "pass": true,
+ "pass_count": 7,
+ "proper_rotation_clause_buys": "exactly one coupling, the chiral v.(S x S') term, under the labelled axial counterfactual",
+ "resources": {
+  "elapsed_seconds": 0.9389329999685287
+ },
+ "runner_sha256": "13f289623587d5467cb0c5a08c9d9075364843a9069a21190b85a21c39c17619",
+ "spin_spin_basis": [
+  "isotropic S.S'",
+  "bond-axis (S.v)(S'.v)",
+  "chiral v.(S x S')"
+ ]
+}

@@ -1,24 +1,79 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T15:06:49.337165+00:00",
+  "audit_invocation_history": [
+    "c85bc79fb4e84790b1e1af2efa11711b"
+  ],
+  "audit_invocation_id": "c85bc79fb4e84790b1e1af2efa11711b",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 16,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/theta_sector_level_loop_insertions_closed_surface_2026_07_02.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {
+      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    },
+    "dep_claim_scope": {
+      "minimal_axioms": null
+    },
+    "dep_claim_type": {
+      "minimal_axioms": "meta"
+    },
+    "dep_effective_status": {
+      "minimal_axioms": "meta"
+    },
+    "deps": [
+      "minimal_axioms"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 0.0,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/theta_sector_level_loop_insertions_closed_surface_2026_07_02.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "a0cc51d174f92b7a999d5766f4d84ecc4f877a1085f9d29f2822f88e2dd4bdc4",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "a0cc51d174f92b7a999d5766f4d84ecc4f877a1085f9d29f2822f88e2dd4bdc4",
+    "runner_path": "scripts/theta_sector_level_loop_insertions_closed_surface_2026_07_02.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-b053b691",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The SU(2) character identity closes algebraically and the reported finite checks are numerically discriminating. The full chain does not close because the U(1) Wilson-insertion sign is stipulated in the enumerator and contradicted by the runner\u2019s top-level `n_p+q` prose, while the recoupling-boundary claim lacks the required N1/N5 stress coverage.",
   "claim_id": "theta_sector_level_loop_insertions_closed_surface_bounded_theorem_note_2026-07-02",
-  "claim_scope": null,
+  "claim_scope": "Finite-window consequences of the runner\u2019s stipulated U(1) `eff=bare-q` convention on the 2x2 torus at beta=0.7, the explicitly tested SU(2) class-trace and orthogonality identities in the stated spin window, the constructed two-cell sector-pair table, and the three-sample counterexample to an argument-independent generic coefficient.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem (finite-window abelian enumeration theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T15:06:49.337165+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,19 +81,23 @@
     "minimal_axioms"
   ],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The class-trace identity `int dU chi_{j1}(U) chi_{1/2}(U) chi_{j2}(U^dag) = N^{j2}_{1/2,j1}` supplies the nonabelian sector-pair rule.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls",
+    "derived_no_go_boundary"
+  ],
   "note_hash": "6418827450b6a25366aba5e438f12d2e6762d3b8806d739bdb2d605448a42ed4",
   "note_path": "docs/THETA_SECTOR_LEVEL_LOOP_INSERTIONS_CLOSED_SURFACE_BOUNDED_THEOREM_NOTE_2026-07-02.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "runner_artifact_issue: Reconcile the runner's `n_p+q` prose with `eff[insert_plaq] -= q`, derive the sign from an explicit Wilson-factor convention, and add a dated boundary line limiting C3 to the sampled counterexample until an analytic generic-argument decomposition and complete negative-claim stress test exist.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -100,14 +159,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
-    "C": 0,
+    "A": 4,
+    "B": 1,
+    "C": 3,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 8
   },
   "runner_path": "scripts/theta_sector_level_loop_insertions_closed_surface_2026_07_02.py",
   "title": "Loop Insertions Act at Sector Level on Closed Glued Surfaces: Abelian Insertions Are Label Shifts in the Finite Enumerated Window, Nonabelian Insertions Open the Fusion Channels at Class Trace, and the Generic-Argument Gluing Sketch Is Rejected (Bounded Theorem)",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: The runner directly assigns `eff[insert_plaq] -= q`, so A1-A4 verify consequences of the desired U(1) shift rather than derive the Wilson-insertion-to-dual-label bridge, and its top docstring instead says `n_p+q`; C3 supplies a robust three-point counterexample but not the broader recoupling-boundary conclusion. Why this blocks: N1 exposes only four routes, N2 has one convention-specific boundary so independence is vacuous, N3 reveals disclosed rather than hidden convention/background language, N4 has no prior-witness residual to match, and N5 supplies none of the five required resolution-stratified tests. Repair target: Reconcile and derive the U(1) sign from an explicit Wilson-factor convention, then either narrow C3 to its sampled counterexample or complete N6\u2019s open higher-spin/SU(3)/4D routes, resolve the N7 classical-character-calculus steelman analytically, and disposition the N8 cross-cycle echoes. Claim boundary until fixed: the packet supports finite-window consequences of the stipulated sign, the explicitly tested class-trace/orthogonality identities and constructed two-cell table, and a numerical rejection of one constant-coefficient sketch at the sampled arguments."
 }

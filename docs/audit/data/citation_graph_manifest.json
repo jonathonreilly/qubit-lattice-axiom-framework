@@ -1,6 +1,6 @@
 {
- "edge_count": 15052,
- "node_count": 4501,
+ "edge_count": 15054,
+ "node_count": 4502,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -10241,6 +10241,10 @@
   "physical_proper_cubic_covariance_ceiling_cycle690_note_2026-07-24": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "physical_record_readout_carrier_three_way_split_cycle693_note_2026-07-25": {
+   "deps_hash": "a9dcf94fe381",
+   "out_degree": 2
   },
   "physics_critic_tracker": {
    "deps_hash": "8ed7e6bfb298",

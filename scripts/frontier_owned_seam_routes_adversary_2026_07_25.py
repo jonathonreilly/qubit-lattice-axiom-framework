@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
-"""Adversarial boundary checks for the two owned-seam repair routes.
+"""Adversarial boundary checks for the owned-seam execution ladder.
 
-The direct-ROM target is commit 315788cd7e.  The sparse routed-transition
-target is commit 483b24693e.  This companion retains their executed positive
-results and checks the remaining all-seam physical composition boundary.
+The component baselines are direct-ROM commit 315788cd7e and routed-transition
+commit 483b24693e.  The successor checks cover the actual common-E direct and
+finite gauge-corrected words, fixed-interface commit 928eeb641d, and literal
+decoded-interface commit bc377db727.  The finite positives are kept distinct
+from the remaining recurrent/no-preferred-order and physical-binding gaps.
 """
 
 from __future__ import annotations
@@ -18,7 +20,11 @@ import numpy as np
 from scipy import sparse
 
 import frontier_owned_seam_carrier_givens_refresh_2026_07_25 as direct_rom
+import frontier_common_e_ordered_physical_rom_composition_2026_07_25 as common_direct
+import frontier_common_e_gauge_corrected_physical_rom_composition_2026_07_25 as common_gauge
 import frontier_two_star_fixed_register_local_executor_2026_07_25 as fixed
+import frontier_two_star_literal_m2_reachable_executor_2026_07_25 as literal
+import frontier_two_star_literal_m2_deletion_domain_2026_07_25 as literal_delete
 import frontier_two_star_routed_transition_physical_word_2026_07_25 as routed
 
 
@@ -212,7 +218,7 @@ def direct_route_checks() -> dict[str, object]:
     )
 
     check(
-        "direct-ROM common-E composition and recurrent law remain explicitly unexecuted",
+        "the 315 direct-ROM baseline stops at a composition bound and finite translation audit",
         "11 * maximum_local_intertwiner" in composition_source
         and "11 * maximum_local_leakage" in composition_source
         and "physical_two_level_primitive_audit" not in composition_source
@@ -221,6 +227,7 @@ def direct_route_checks() -> dict[str, object]:
         and not primitive["recurrent_volume_update_claimed"]
         and not held_primitive["recurrent_volume_update_claimed"],
         {
+            "baseline_commit": "315788cd7e",
             "common_physical_product_applied": False,
             "reported_composition": "11*max(local residual)",
             "finite_ROMs_are_volume_specific": (
@@ -231,6 +238,7 @@ def direct_route_checks() -> dict[str, object]:
         },
     )
     return {
+        "exact_baseline_commit": "315788cd7e",
         "descriptor_rows": len(descriptors),
         "physical_rekey_conflicts": physically_rekeyed_conflicts,
         "coefficient_association_executed": True,
@@ -238,7 +246,7 @@ def direct_route_checks() -> dict[str, object]:
         "geometric_diameter_measured": True,
         "finite_ROM_hash_inventoried": True,
         "all_torus_translations_tested": True,
-        "common_all_eleven_operator_executed": False,
+        "common_all_eleven_operator_executed_in_this_baseline": False,
         "translation_invariant_recurrent_law_derived": False,
         "source_contains_old_decoder_tautology": "0 ^ decoded ^ decoded" in direct_source,
         "candidate_sha256": sha256(direct_path.read_bytes()).hexdigest(),
@@ -664,56 +672,412 @@ def fixed_register_route_checks() -> dict[str, object]:
     }
 
 
+def literal_register_route_checks() -> dict[str, object]:
+    """Source-instrument the literal decoded-interface successor bc377db727."""
+
+    cells = len(literal.base.CELLS)
+    inventory = {
+        "data": literal.base.MODE_COUNT,
+        "role_rails": 7 * cells,
+        "charts": 2 * len(literal.base.FEATURES),
+        "tokens": cells,
+        "matcher_scratch": 5 * cells,
+        "matcher_flags": cells,
+        "bypass": 2 * cells,
+        "edge_work": len(literal.base.EDGES),
+        "transit": cells,
+    }
+    local = literal.local_literal_controls()
+    check(
+        "the literal successor stores all 335 decoded-interface M2 bits and uses a real token control",
+        set(literal.LiteralBasis.__dataclass_fields__) == set(inventory)
+        and sum(inventory.values()) == 335
+        and local["literal_decoded_interface_M2"] == 335
+        and local["matcher_cases"] == 384
+        and local["matcher_failures"] == 0
+        and local["matcher_return_failures"] == 0
+        and local["token_zero_block_cases"] == 384
+        and local["token_zero_block_failures"] == 0
+        and local["token_zero_return_failures"] == 0
+        and local["maximum_two_rail_unitarity_residual"] < TOL
+        and local["off_code_vacuum_change"] < TOL
+        and local["off_code_double_change"] < TOL,
+        {"inventory": inventory, "local_controls": local},
+    )
+
+    primitive_names = (
+        "x_data",
+        "toffoli_token_data_to_scratch",
+        "toffoli_scratch_data_to_scratch",
+        "toffoli_scratch_data_to_flag",
+        "fredkin_role_bypass",
+        "two_bypass_matrix",
+        "chart_word",
+        "apply_data_gate",
+        "swap_data_transit",
+        "cz_data_pair",
+        "cz_transit_data",
+        "cnot_data_edge",
+        "cz_data_edge",
+        "swap_data",
+        "swap_role_rail",
+        "role_refresh",
+        "coin_word",
+        "transition_word",
+        "seam_word",
+        "contact_word",
+    )
+    originals = {name: getattr(literal, name) for name in primitive_names}
+    counts: Counter[str] = Counter()
+
+    def counted(name, operation):
+        def wrapper(*args, **kwargs):
+            counts[name] += 1
+            return operation(*args, **kwargs)
+
+        return wrapper
+
+    for name, operation in originals.items():
+        setattr(literal, name, counted(name, operation))
+    try:
+        vacuum = literal.encoded_column((), 5)
+        vacuum_output, vacuum_stages = literal.execute(vacuum, True)
+    finally:
+        for name, operation in originals.items():
+            setattr(literal, name, operation)
+
+    expected_counts = {
+        "apply_data_gate": 312,
+        "chart_word": 2,
+        "cnot_data_edge": 112,
+        "coin_word": 1,
+        "contact_word": 1,
+        "cz_data_edge": 22,
+        "cz_data_pair": 158,
+        "cz_transit_data": 77,
+        "fredkin_role_bypass": 2880,
+        "role_refresh": 2,
+        "seam_word": 11,
+        "swap_data": 11,
+        "swap_data_transit": 154,
+        "swap_role_rail": 77,
+        "toffoli_scratch_data_to_flag": 288,
+        "toffoli_scratch_data_to_scratch": 1152,
+        "toffoli_token_data_to_scratch": 288,
+        "transition_word": 1,
+        "two_bypass_matrix": 720,
+        "x_data": 1440,
+    }
+    check(
+        "every declared literal program family is invoked with the advertised bounded count",
+        dict(counts) == expected_counts
+        and 2 * 2 * len(literal.base.FEATURES) == 96
+        and all(value == 0 for value in vacuum_stages.values())
+        and len(vacuum) == len(vacuum_output) == 1,
+        {
+            "source_instrumented_call_counts": dict(sorted(counts.items())),
+            "chart_CNOTs_inside_two_chart_words": 96,
+            "coin_plus_contact_apply_data_gate_calls": counts["apply_data_gate"],
+            "vacuum_stage_failures": vacuum_stages,
+        },
+    )
+
+    stream = literal.base.route_c.patch_stream(literal.base.CELLS, literal.base.EDGES)
+    contact = literal.base.route_c.patch_contact(literal.base.CELLS)
+    identity = sparse.eye(len(literal.base.FOCK_BASIS), format="csc")
+    column = next(
+        index
+        for index in range(len(literal.base.FOCK_BASIS))
+        if (stream.getcol(index) - identity.getcol(index)).nnz
+    )
+    source = literal.encoded_column(literal.base.FOCK_BASIS[column], 5)
+    observed, stages = literal.execute(source, False)
+    correct = literal.expected(contact @ stream, column, 5, 0)
+    wrong = literal.expected(contact, column, 5, 0)
+    correct_raw, correct_norm = literal.difference(observed, correct)
+    wrong_raw, wrong_norm = literal.difference(observed, wrong)
+    execute_source = inspect.getsource(literal.execute)
+    check(
+        "the literal candidate is runtime-target-independent and rejects an identity-stream target",
+        correct_raw < TOL
+        and correct_norm < TOL
+        and wrong_raw > 0.4
+        and wrong_norm > 1.4
+        and "expected(" not in execute_source
+        and "patch_stream" not in execute_source
+        and "patch_contact" not in execute_source
+        and all(value == 0 for value in stages.values()),
+        {
+            "probe_column": column,
+            "correct_target_residual": (correct_raw, correct_norm),
+            "wrong_identity_stream_residual": (wrong_raw, wrong_norm),
+            "runtime_target_operand_present": False,
+            "transition_synthesized_offline_from_target_inversion_set": True,
+        },
+    )
+
+    held_pairs = ((0, 1), (0, 6), (1, 31), (17, 44), (70, 71))
+    held_columns = (
+        0,
+        *range(1, 1 + literal.base.MODE_COUNT),
+        *(literal.base.FOCK_INDEX[pair] for pair in held_pairs),
+    )
+    main_source = inspect.getsource(literal.main)
+    check(
+        "held L6 and literal coin closure are explicitly bounded samples and inverse execution remains open",
+        len(held_columns) == 78
+        and len(held_pairs) == 5
+        and len(literal.base.FOCK_BASIS) == 2629
+        and "intertwiner(5, False, full_columns)" in main_source
+        and "intertwiner(6, False, tuple(held_columns))" in main_source
+        and "intertwiner(5, True, coin_columns)" in main_source
+        and "intertwiner(6, True, coin_columns)" in main_source
+        and "complete literal L6 stream/contact sweep" in main_source
+        and "complete inverse macrostep" in main_source
+        and "execute_inverse" not in main_source,
+        {
+            "L5_stream_contact_columns": len(literal.base.FOCK_BASIS),
+            "L6_stream_contact_sample_columns": len(held_columns),
+            "L6_two_particle_sample_columns": len(held_pairs),
+            "available_two_particle_columns": 2556,
+            "literal_coin_columns_per_size": len(held_columns),
+            "whole_literal_word_inverse_executed": False,
+        },
+    )
+
+    deletion_rows = {
+        "coin": literal_delete.coin_deletions(),
+        "transition": literal_delete.transition_deletions(),
+        "seam": literal_delete.seam_deletions(),
+        "contact": literal_delete.contact_deletions(),
+        "carrier": literal_delete.carrier_factor_deletions(),
+        "tokens": literal_delete.token_control_deletions(),
+        "charts": literal_delete.chart_deletions(),
+        "dirty_domain": literal_delete.dirty_domain(),
+    }
+    deletion_source = Path(literal_delete.__file__).read_text(encoding="utf-8")
+    check(
+        "literal component words now have active primitive deletions, but no complete-word omission residual",
+        deletion_rows["coin"]["literal_coin_factor_deletions"] == 11
+        and deletion_rows["coin"]["minimum_maximum_column_delete_residual"] > 0.005
+        and deletion_rows["transition"]["literal_transition_terms"] == 224
+        and deletion_rows["transition"]["literal_routed_SWAP_primitives"] == 154
+        and deletion_rows["transition"]["minimum_delete_CZ_residual"] > 1.9
+        and deletion_rows["seam"]["literal_seam_edges"] == 11
+        and all(
+            value > 0.9
+            for value in deletion_rows["seam"][
+                "minimum_maximum_witness_by_category"
+            ].values()
+        )
+        and deletion_rows["contact"]["literal_contact_factor_deletions"] == 180
+        and deletion_rows["carrier"]["literal_carrier_factor_deletions"] == 30
+        and deletion_rows["tokens"]["literal_token_control_pairs_deleted"] == 12
+        and deletion_rows["charts"]["literal_chart_control_deletions"] == 48
+        and not deletion_rows["dirty_domain"]["dirty_auxiliary_in_declared_code"]
+        and "literal.execute(" not in deletion_source
+        and "intertwiner(" not in deletion_source
+        and "execute_inverse" not in deletion_source,
+        {
+            "coin_gate_types": deletion_rows["coin"][
+                "literal_coin_factor_deletions"
+            ],
+            "transition_terms": deletion_rows["transition"][
+                "literal_transition_terms"
+            ],
+            "routed_SWAP_primitives": deletion_rows["transition"][
+                "literal_routed_SWAP_primitives"
+            ],
+            "seam_edges": deletion_rows["seam"]["literal_seam_edges"],
+            "contact_instances": deletion_rows["contact"][
+                "literal_contact_factor_deletions"
+            ],
+            "carrier_factor_types_at_one_cell": deletion_rows["carrier"][
+                "literal_carrier_factor_deletions"
+            ],
+            "token_control_pairs": deletion_rows["tokens"][
+                "literal_token_control_pairs_deleted"
+            ],
+            "chart_control_types": deletion_rows["charts"][
+                "literal_chart_control_deletions"
+            ],
+            "complete_335_M2_word_omission_residual_executed": False,
+        },
+    )
+    return {
+        "exact_literal_commit": "bc377db727",
+        "exact_deletion_commit": "2476b30563",
+        "literal_decoded_interface_M2": sum(inventory.values()),
+        "all_declared_program_families_invoked": True,
+        "runtime_target_operand_present": False,
+        "complete_L5_stream_contact_columns": 2629,
+        "L6_stream_contact_sample_columns": len(held_columns),
+        "literal_coin_sample_columns_per_size": len(held_columns),
+        "complete_literal_L6_stream_contact_executed": False,
+        "complete_literal_coin_sweep_executed": False,
+        "literal_component_deletion_witnesses_executed": True,
+        "complete_335_M2_word_omission_residual_executed": False,
+        "whole_literal_word_inverse_executed": False,
+        "Cycle655_binding_executed_end_to_end": False,
+        "candidate_sha256": sha256(Path(literal.__file__).read_bytes()).hexdigest(),
+    }
+
+
+def common_e_successor_checks() -> dict[str, object]:
+    """Separate the exact direct common-E failure from finite gauge closure."""
+
+    direct_execute_source = inspect.getsource(common_direct.execute_composition)
+    direct_main_source = inspect.getsource(common_direct.main)
+    gauge_execute_source = inspect.getsource(common_gauge.execute)
+    gauge_main_source = inspect.getsource(common_gauge.main)
+    check(
+        "the direct successor actually multiplies eleven physical owner ROMs on the 59941x2629 common E",
+        "state = (operator @ state).tocsc()" in direct_execute_source
+        and "target = fixture.encoding @ logical" in direct_execute_source
+        and "contact @ state" in direct_execute_source
+        and "physical_rows\"] == 59941" in direct_main_source
+        and "logical_columns\"] == 2629" in direct_main_source
+        and "len(row[\"stage_rows\"]) == 11" in direct_main_source
+        and "U_physical_E_minus_E_G_target_norm\"] > 30.0" in direct_main_source
+        and "U_physical_E_minus_E_G_target_opnorm\"] > 1.9" in direct_main_source
+        and "physical_code_leakage_norm\"] < TOL" in direct_main_source
+        and "Gram_or_isometry_used_as_intertwiner" in direct_execute_source
+        and "dense_EUE_completion_used" in direct_execute_source,
+        {
+            "actual_common_E_shape": (59941, 2629),
+            "physical_owner_ROMs_multiplied": 11,
+            "canonical_replay_terminal": (
+                "ROUTE_A_ACTUAL_COMMON_E_COMPOSITION_FALSIFIED_BY_"
+                "UNSUPPLIED_CAR_PARITY_COCYCLE"
+            ),
+            "direct_target_closes": False,
+            "final_missing_signed_columns": 240,
+        },
+    )
+
+    direct_missing, direct_pairs = common_gauge.direct_missing_pair_set()
+    local_repair = direct_pairs ^ common_gauge.SIGNED_CANDIDATE
+    check(
+        "the finite gauge successor adds the disclosed order-derived correction and closes the actual common E",
+        len(direct_missing) == 240
+        and len(common_gauge.TRANSITION) == 224
+        and len(local_repair) == 110
+        and common_gauge.TRANSITION
+        == common_gauge.SIGNED_CANDIDATE ^ common_gauge.TARGET_PAIRS
+        and "owner_physical @ correction_physical @ corrected_state" in gauge_execute_source
+        and "target_state = fixture.encoding @ target_update" in gauge_execute_source
+        and "corrected_mismatch_columns\"] == 0" in gauge_main_source
+        and "U_physical_E_minus_E_G_target_norm\"] < TOL" in gauge_main_source
+        and "candidate_without_transition_opnorm\"] > 1.9" in gauge_main_source
+        and "transition_target_derived_offline" in gauge_execute_source
+        and "runtime_target_lookup_used" in gauge_execute_source,
+        {
+            "direct_missing_columns": len(direct_missing),
+            "transition_CZ_pairs": len(common_gauge.TRANSITION),
+            "local_signed_repair_pairs": len(local_repair),
+            "transition_equals_candidate_XOR_target": True,
+            "canonical_replay_terminal": (
+                "ACTUAL_59941_ROW_GAUGE_CORRECTED_CAR_COMPILER_CLOSED"
+            ),
+        },
+    )
+
+    chain, corner = common_gauge.three_center_extension_audit()
+    check(
+        "common-E gauge closure is finite and order-derived rather than recurrent or full-covariant",
+        chain["transition_CZ_pairs"] == 328
+        and chain["maximum_transition_cell_distance"] == 2
+        and chain["current_one_transit_routing_supported"]
+        and corner["transition_CZ_pairs"] == 454
+        and corner["maximum_transition_cell_distance"] == 3
+        and corner["distance_gt_2_pairs"] == 56
+        and not corner["current_one_transit_routing_supported"]
+        and "preferred_finite_order_encoded_in_supplied_ROM\"]" in gauge_main_source
+        and "ambient_59941_row_physical_matrices_rebuilt_per_frame\": False"
+        in gauge_main_source,
+        {
+            "transition_target_derived_offline": True,
+            "preferred_finite_order_supplied": True,
+            "chain_extension": chain,
+            "L_corner_extension": corner,
+            "ambient_physical_covariance_rebuilt": False,
+            "recurrent_rule_closed": False,
+        },
+    )
+    return {
+        "exact_direct_commit": "8e873bb244",
+        "exact_gauge_commit": "0c9e7ce3a2",
+        "actual_common_E_shape": (59941, 2629),
+        "direct_actual_common_E_executed": True,
+        "direct_actual_common_E_target_closes": False,
+        "direct_missing_signed_columns": len(direct_missing),
+        "finite_gauge_corrected_common_E_executed": True,
+        "finite_gauge_corrected_common_E_closes": True,
+        "transition_target_derived_offline": True,
+        "preferred_finite_order_supplied": True,
+        "recurrent_no_preferred_order_law_closed": False,
+        "ambient_physical_covariance_rebuilt": False,
+        "direct_candidate_sha256": sha256(
+            Path(common_direct.__file__).read_bytes()
+        ).hexdigest(),
+        "gauge_candidate_sha256": sha256(
+            Path(common_gauge.__file__).read_bytes()
+        ).hexdigest(),
+    }
+
+
 def main() -> None:
     direct = direct_route_checks()
     sparse_result = sparse_route_checks()
     fixed_result = fixed_register_route_checks()
+    literal_result = literal_register_route_checks()
+    common_e_result = common_e_successor_checks()
     missing = {
-        "direct_ROM": (
-            "the directly measured eleven-owner common-E product residual using the supplied "
-            "coefficient-tagged finite ROMs, plus a volume-independent translated generator and "
-            "overlapping-fixture composition theorem before any recurrent/autonomous-law claim"
+        "direct_and_gauge_common_E": (
+            "the actual direct common-E product has now been measured and fails its target; the "
+            "finite order-derived gauge correction closes that fixture. What remains is a fixed "
+            "target-independent local gauge/chart generator that handles L-shaped and larger "
+            "overlaps without a supplied global order, plus an ambient transformed-E covariance "
+            "test before any recurrent/autonomous-law claim"
         ),
-        "sparse_route": (
-            "embed the finite encoding in a declared fixed tensor-product M2 register ambient and "
-            "replace global FOCK-label block lifts by the 378 routed local factors, eleven local "
-            "seam words, onsite contact and chart/work erase-return operands; then compute the "
-            "same-E residual and covariance of that physical operand. Free coin and mass remain "
-            "separate unless they are also included in the claimed word"
+        "decoded_sparse_baseline": (
+            "the old 125749-row direct sum remains an aggregate decoded baseline; use the literal "
+            "335-M2 successor for factor-execution claims"
         ),
-        "fixed_register_successor": (
-            "execute the supplied Cycle655 decode/interface/encode binding end to end and the counted "
-            "matcher compute/control/uncompute and bypass registers on literal "
-            "rail M2 bitstrings, including multi-rail/off-code states; execute primitive seam/contact "
-            "factors rather than aggregate formulas, extend the component deletion controls to the "
-            "literal complete word and its inverse, and compare the "
-            "transformed complete word rather than coordinate tuples before claiming a 323-M2 "
-            "physical-site compiler"
+        "literal_register_successor": (
+            "execute the supplied Cycle655 decode/interface/encode binding end to end; complete the "
+            "literal L6 stream/contact and literal coin sweeps beyond the current 78-column samples; "
+            "add omissions from the composed 335-M2 word, a whole-word inverse/off-code check, and "
+            "transformed-E covariance. The recurrent transition still needs a no-preferred-order "
+            "local replacement"
         ),
     }
     summary = {
         "authority": "none",
         "audit": "unset",
-        "status": "finite-primitive-positive-full-physical-compositions-open",
+        "status": "finite-common-E-and-literal-interface-positive-recurrent-law-open",
         "pass": FAIL == 0,
         "tests_passed": PASS,
         "tests_failed": FAIL,
-        "direct_ROM": direct,
-        "sparse_route": sparse_result,
-        "fixed_register_successor": fixed_result,
+        "direct_ROM_baseline": direct,
+        "decoded_sparse_baseline": sparse_result,
+        "fixed_register_macro_successor": fixed_result,
+        "literal_register_successor": literal_result,
+        "actual_common_E_successors": common_e_result,
         "missing_executed_objects": missing,
         "claim_ceiling": (
-            "The direct route supplies coefficient-tagged, observation-only, bounded-diameter, "
-            "hash-inventoried finite ROM primitives with full torus-translation audits. Its common-E "
-            "all-owner composition and recurrent law remain open. The sparse route supplies an exact "
-            "nearest-neighbor 224-CZ transition word and an algebraically square global-label direct-"
-            "sum completion, with the transition synthesized offline from the target inversion set, "
-            "but not a local-M2 tensor-product signed-seam physical composition. The fixed-register "
-            "successor accurately closes a target-discriminating 323-M2 decoded-interface macro "
-            "intertwiner and adds component deletion/domain controls, but the 983-M2 physical binding "
-            "is supplied rather than re-executed and the matcher/rail circuit remains contracted."
+            "The 315 baseline supplies coefficient-tagged finite ROM primitives but does not itself "
+            "compose them. The 8e actual 59941x2629 common-E direct composition does, and falsifies "
+            "the uncorrected target with 240 signed columns. The 0c finite gauge successor closes the "
+            "same common E after an explicitly target/order-derived correction; recurrence and full "
+            "ambient covariance remain open. The bc literal successor invokes every declared program "
+            "family on a real 335-M2 decoded interface, closes all 2629 L5 stream/contact columns, and "
+            "rejects a wrong target. Its L6 stream/contact and both literal coin checks cover only 78 "
+            "columns, its Cycle655 physical binding is supplied, and literal-word deletion, inverse, "
+            "full covariance, and the no-preferred-order recurrent law remain open. Cycle703 therefore "
+            "starts from a positive finite compiler baseline, not from a recurrent closure."
         ),
-        "terminal": "OWNED_SEAM_TRANSITIONS_POSITIVE_FULL_PHYSICAL_COMPOSITIONS_OPEN",
+        "terminal": "FINITE_COMMON_E_AND_LITERAL_INTERFACE_POSITIVE_RECURRENT_LAW_OPEN",
     }
     print("SUMMARY_JSON", json.dumps(summary, sort_keys=True))
     print("RESULT", summary["terminal"] if FAIL == 0 else "UNFINISHED_ADVERSARIAL_CHECK")

@@ -1,0 +1,96 @@
+===== runner cache v1 =====
+runner: scripts/kcpt_d2_graded_signed_permutation_commutant_characterization_2026_07_25.py
+runner_sha256: 32f74e910cce13cf61fc67052f874950822d3412640706ed3e67aad36c4dbe5e
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 323.75
+status: ok
+----- stdout -----
+[info] L=4 analysis done (6s), peak RSS 0.15 GB
+[info] L=6 analysis done (324s), peak RSS 0.57 GB
+
+==================== PHASE A PROBE (raw measurements) ====================
+
+---- L = 4 (N = 64) ----
+  M spectrum lam=[0, -4, -8, -12] mults=[8, 24, 24, 8]
+  D2 integer=True antisym=True support_connected=True
+  |G_amb|=768 |H|=1536 [H:G]=2 dim A_nat=16 (closed True)
+  |Stab_Aut(0)|=720 |Aut|=46080 (=N*Stab 46080) keys_distinct=True spot_verify=256/256
+  liftable=3072 (=48*N 3072) |Comm|=2*liftable=6144 commute_verify_fails=0 closure_spotcheck=400/400
+  grade(S_eps)=-1 S_eps_in_Comm=False g_r4: comm=True in_H=False in_Comm=True
+  H grade partition (+/-/neither)=(768, 768, 0) H+_subset_Comm=True
+  |<H,g_r4>|=6144 grade partition=(3072, 3072, 0) HG+_subset_Comm=True |HG cap Comm|=3072 HG==Comm=False
+  |Comm\HG|=3072 witness(grade,chi)=(1, 32) |HG\Comm|=3072 witness=(-1, 0)
+  #Comm gens=7 gens_close=True |GC|=closure(Comm,S_eps)=12288 (2*|Comm|=12288) GC grade partition=(6144, 6144, 0)
+  Comm_subset_GC=True H_subset_GC=True HG_subset_GC=True [GC:H]=8
+  grade_mult=400/400
+  dim End_Comm=7 (raw 7.000000000) dim End_<H,g_r4>=4 (raw 4.000000000) dim End_H=6 (raw 6.000000000)
+  per-shell End_<H,g_r4>: shell_commutant=[1, 1, 1, 1] shell_char=[1, 1, 1, 1] (sum 4)
+  dim <A_nat, g_r4>=52 (closed True)
+
+---- L = 6 (N = 216) ----
+  M spectrum lam=[0, -3, -6, -9] mults=[8, 48, 96, 64]
+  D2 integer=True antisym=True support_connected=True
+  |G_amb|=2592 |H|=5184 [H:G]=2 dim A_nat=16 (closed True)
+  |Stab_Aut(0)|=48 |Aut|=10368 (=N*Stab 10368) keys_distinct=True spot_verify=256/256
+  liftable=10368 (=48*N 10368) |Comm|=2*liftable=20736 commute_verify_fails=0 closure_spotcheck=400/400
+  grade(S_eps)=-1 S_eps_in_Comm=False g_r4: comm=True in_H=False in_Comm=True
+  H grade partition (+/-/neither)=(2592, 2592, 0) H+_subset_Comm=True
+  |<H,g_r4>|=20736 grade partition=(10368, 10368, 0) HG+_subset_Comm=True |HG cap Comm|=10368 HG==Comm=False
+  |Comm\HG|=10368 witness(grade,chi)=(1, 0) |HG\Comm|=10368 witness=(-1, 0)
+  #Comm gens=7 gens_close=True |GC|=closure(Comm,S_eps)=41472 (2*|Comm|=41472) GC grade partition=(20736, 20736, 0)
+  Comm_subset_GC=True H_subset_GC=True HG_subset_GC=True [GC:H]=8
+  grade_mult=400/400
+  dim End_Comm=7 (raw 7.000000000) dim End_<H,g_r4>=7 (raw 7.000000000) dim End_H=19 (raw 19.000000000)
+  per-shell End_<H,g_r4>: shell_commutant=[1, 2, 2, 2] shell_char=[1, 2, 2, 2] (sum 7)
+  dim <A_nat, g_r4>=60 (closed True)
+  sep6 rank_sum=16 ||sep6||=4.0000000000 H_inv_max=1.75e-14
+  Comm-gen displacement max=8.000000 mod-sign max=5.656854 (4*sqrt2=5.656854)
+  PERT1 grade(diag(-1)^x0)=0 (expect 0/neither) PERT2 corrupted_commutes=False (expect False)
+  omega sample (Comm\H, first 5): dim closed omega
+    om0: dim   32 closed 1 omega 0.000000000000000 [known]
+    om1: dim   32 closed 1 omega 0.000000000000000 [known]
+    om2: dim   32 closed 1 omega 0.000000000000000 [known]
+    om3: dim   32 closed 1 omega 0.000000000000000 [known]
+    om4: dim   32 closed 1 omega 0.000000000000000 [known]
+
+==================== PHASE B GATES ====================
+[GATE STRUCT_L4] PASS -- D2 int/antisym, support connected, M spectrum [0, -4, -8, -12] mults [8, 24, 24, 8], |G|=768 |H|=1536 [H:G]=2, dim A_nat=16, S_eps not in Comm
+[GATE AUT_ENUM_L4] PASS -- |Stab(0)|=720 |Aut|=46080=N*Stab, distinct keys, spot-verified 256/256 automorphisms
+[GATE LIFT_L4] PASS -- liftable=3072=48*N, |Comm|=6144=2*liftable
+[GATE COMM_VERIFY_L4] PASS -- all 6144 Comm elements commute exactly (fails 0); closure spot-check 400/400
+[GATE GRADE_SEPS_L4] PASS -- grade(S_eps)=-1 (anticommutes) => S_eps not in Comm; H not contained in Comm
+[GATE GRADE_MULT_L4] PASS -- grade multiplicative on 400/400 GC products
+[GATE GRADE_PART_L4] PASS -- H partition (768, 768, 0), <H,g_r4> partition (3072, 3072, 0), 0 neither, H+/HG+ subset Comm
+[GATE GC_L4] PASS -- |GC|=12288=12288 (pinned) =2*|Comm|, partition (6144, 6144, 0) (kernel=Comm), H and <H,g_r4> subset GC
+[GATE ORDER_COINCIDENCE_L4] PASS -- |<H,g_r4>|=6144=|Comm| but distinct groups (|Comm\HG|=3072, |HG\Comm|=3072), |HG cap Comm|=3072=|Comm|/2
+[GATE END_COMM_L4] PASS -- dim End_Comm(C^N)=7 (raw 7.000000000)
+[GATE END_HG_L4] PASS -- dim End_<H,g_r4>=4 = per-shell [1, 1, 1, 1] (shell_commutant [1, 1, 1, 1] agrees)
+[GATE END_H_L4] PASS -- dim End_H=6 (landed anchor 6), End_Comm=7 (L-stable) vs End_H growing
+[GATE WORD_R4_L4] PASS -- dim <A_nat,g_r4>=52=52 pinned (closed), g_r4 in Comm\H
+[GATE STRUCT_L6] PASS -- D2 int/antisym, support connected, M spectrum [0, -3, -6, -9] mults [8, 48, 96, 64], |G|=2592 |H|=5184 [H:G]=2, dim A_nat=16, S_eps not in Comm
+[GATE AUT_ENUM_L6] PASS -- |Stab(0)|=48 |Aut|=10368=N*Stab, distinct keys, spot-verified 256/256 automorphisms
+[GATE LIFT_L6] PASS -- liftable=10368=48*N, |Comm|=20736=2*liftable
+[GATE COMM_VERIFY_L6] PASS -- all 20736 Comm elements commute exactly (fails 0); closure spot-check 400/400
+[GATE GRADE_SEPS_L6] PASS -- grade(S_eps)=-1 (anticommutes) => S_eps not in Comm; H not contained in Comm
+[GATE GRADE_MULT_L6] PASS -- grade multiplicative on 400/400 GC products
+[GATE GRADE_PART_L6] PASS -- H partition (2592, 2592, 0), <H,g_r4> partition (10368, 10368, 0), 0 neither, H+/HG+ subset Comm
+[GATE GC_L6] PASS -- |GC|=41472=41472 (pinned) =2*|Comm|, partition (20736, 20736, 0) (kernel=Comm), H and <H,g_r4> subset GC
+[GATE ORDER_COINCIDENCE_L6] PASS -- |<H,g_r4>|=20736=|Comm| but distinct groups (|Comm\HG|=10368, |HG\Comm|=10368), |HG cap Comm|=10368=|Comm|/2
+[GATE END_COMM_L6] PASS -- dim End_Comm(C^N)=7 (raw 7.000000000)
+[GATE END_HG_L6] PASS -- dim End_<H,g_r4>=7 = per-shell [1, 2, 2, 2] (shell_commutant [1, 2, 2, 2] agrees)
+[GATE END_H_L6] PASS -- dim End_H=19 (landed anchor 19), End_Comm=7 (L-stable) vs End_H growing
+[GATE WORD_R4_L6] PASS -- dim <A_nat,g_r4>=60=60 pinned (closed), g_r4 in Comm\H, explicit !=20 exclusion (redundant given the =60 pin)
+[GATE COMM_REJECT_L4] PASS -- |Comm|_L4=6144 != 20736 (L=6 value); the two lattices differ
+[GATE SEP6_ANCHOR] PASS -- sep6 rank_sum=16, ||sep6||=4.0000000000, H-invariance 1.7e-14
+[GATE SEP6_GENSET_MOVE] PASS -- Comm generating set closes to |Comm|; sep6 moved by Comm gens: max disp 8.0000 (pinned 8), mod-sign 5.6569 (pinned 4*sqrt2) (H-specific: not Comm-invariant even up to sign)
+[GATE OMEGA_SAMPLE] PASS -- omega for 5 Comm\H elements (sample, not census): [0.0, 0.0, 0.0, 0.0, 0.0] all closed, dim 32, omega 0 each
+[GATE PERT1_NEITHER] PASS -- diag((-1)^x0) grade=0 (neither: classifier is not a commute/anticommute proxy)
+[GATE PERT2_FAIL] PASS -- Comm generator o adjacent transposition commutes=False (exact verification rejects a corrupted element)
+
+[info] total wall-clock 324s, peak RSS 0.57 GB
+
+TOTAL: PASS=32 FAIL=0
+
+----- stderr -----
+

@@ -63,7 +63,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "retained_bounded",
-  "load_bearing_score": 10.5,
+  "load_bearing_score": 10.502,
   "load_bearing_step": "Substituting the TM2 sum rule into the second-column modulus equation makes its phase-independent part exactly 2/3, leaving 2 c12 s12 s13 cos(delta_CP) = 0.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -212,6 +212,6 @@
   },
   "runner_path": "scripts/pmns_tm2_residual_consequence_runner.py",
   "title": "PMNS TM2 Residual Consequence -- Stipulated-Hypothesis Bounded Algebra Note",
-  "transitive_descendants": 723,
+  "transitive_descendants": 724,
   "verdict_rationale": "The proof is a genuine class-A algebraic closure within its expressly bounded conditional scope and does not claim to derive the stipulated residuals from the framework. The runner performs the stated exact identities and endpoint checks rather than merely printing a verdict or importing external values. No cited open authority or unclosed bridge is required for the audited implication itself."
 }

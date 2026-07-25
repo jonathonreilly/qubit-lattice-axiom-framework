@@ -85,7 +85,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 23.758,
+  "load_bearing_score": 23.76,
   "load_bearing_step": "Construct tensor_word := diag_c \u00b7 (N_f + N_fbar) \u00b7 diag_c \u00b7 (N_f + N_fbar)^T \u00b7 diag_c and directly verify P1\u2013P3 on the 25-state box.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -187,6 +187,6 @@
   },
   "runner_path": "scripts/frontier_gauge_vacuum_plaquette_finite_tensor_word_packet.py",
   "title": "Gauge-Vacuum Plaquette Finite Tensor-Word Packet \u2014 Bounded Note",
-  "transitive_descendants": 865,
+  "transitive_descendants": 866,
   "verdict_rationale": "Issue: the packet preflight marks the runner stdout as clipped in load-bearing evidence, so the complete execution certificate is unavailable. Why this matters: the visible P1\u2013P3 passes and full source support the finite result, but they cannot establish an exact source-to-stdout binding sufficient for a clean audit. Repair target: regenerate the restricted packet with complete SHA-bound stdout, or supply an independent complete calculation of construction (3) and P1\u2013P3. Claim boundary until fixed: treat P1\u2013P3 for this single finite matrix as conditionally supported, with no parent or untruncated implication."
 }

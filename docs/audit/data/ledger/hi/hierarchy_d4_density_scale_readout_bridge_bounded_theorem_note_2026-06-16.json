@@ -53,7 +53,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "decoration_under_hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10",
-  "load_bearing_score": 11.018,
+  "load_bearing_score": 11.02,
   "load_bearing_step": "From rho_* = A_ref v_ref^4 = A(L) v(L)^4 with all quantities positive, v(L)/v_ref = (A_ref/A(L))^(1/4).",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -1589,6 +1589,6 @@
   },
   "runner_path": "scripts/frontier_hierarchy_d4_density_scale_readout_bridge_2026_06_16.py",
   "title": "Hierarchy D4 Density-Scale Readout Bridge Bounded Theorem Note",
-  "transitive_descendants": 732,
+  "transitive_descendants": 733,
   "verdict_rationale": "Independent algebra confirms the inverse fourth-root ratio, its monotonic sign, and exact reference normalization. Independent finite-sum and continuum-integral checks also give A_2=1/(8u_0^2), A_4=1/(7u_0^2), and A_inf=1/(4sqrt(3)u_0^2), hence the stated endpoint ratios. Every load-bearing result is nevertheless class-A algebra over the stated readout/formula and the single retained dimensional parent, with no external comparator or independent physical identification, so the result is an algebraic decoration rather than a bounded theorem."
 }

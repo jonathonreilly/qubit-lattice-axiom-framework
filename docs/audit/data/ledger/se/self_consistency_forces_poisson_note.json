@@ -42,7 +42,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 18.104,
+  "load_bearing_score": 18.105,
   "load_bearing_step": "On this 3D cubic lattice with nearest-neighbor coupling, unscreened Poisson is the best-supported operator in the tested family and the only tested one that stays close to the Newtonian target.",
   "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
@@ -313,6 +313,6 @@
   },
   "runner_path": "scripts/frontier_self_consistent_field_equation.py",
   "title": "Self-Consistency Preference for Poisson Field Equation",
-  "transitive_descendants": 777,
+  "transitive_descendants": 778,
   "verdict_rationale": "The finite numerical results for the exact implementations are computed rather than printed from hard-coded expected values. However, the attraction comparison uses the same negative source with operators of different sign definiteness, making the Poisson-versus-biharmonic/local/random sign discriminator convention-dependent; moreover, the measured susceptibility decays as r^(-2.805), despite the claimed Poisson-kernel interpretation. The note correctly names finite-family and linear-response limitations, but a response-kernel bridge is still missing."
 }

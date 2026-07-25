@@ -106,7 +106,7 @@
   ],
   "independence": "fresh_context",
   "intrinsic_status": "retained_bounded",
-  "load_bearing_score": 13.083,
+  "load_bearing_score": 13.085,
   "load_bearing_step": "At the fixed runner constants and prescribed potential and diagonal-term definitions, the canonical runner reports four specified 17/17 score blocks, with C17 coverage qualifiers for n=11 and n=13.",
   "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
@@ -1789,6 +1789,6 @@
   },
   "runner_path": "scripts/frontier_staggered_17card_finite_scope_repair.py",
   "title": "Staggered Fermion Canonical 17-Card Finite Runner Certificate",
-  "transitive_descendants": 766,
+  "transitive_descendants": 767,
   "verdict_rationale": "The included helper source performs substantive sparse-matrix construction, evolution, eigensolution, and observable calculations; the target scores are computed outputs rather than embedded expected values. The fixed constants define the finite domain, while physical interpretation and framework realization are outside the audited scope, so no external comparator or unclosed physical identification is needed for this certificate."
 }

@@ -63,7 +63,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "retained_bounded",
-  "load_bearing_score": 12.026,
+  "load_bearing_score": 12.027,
   "load_bearing_step": "Embedded operators supported on distinct tensor factors commute because each acts as the identity on the other's factor, so O_x O_y = O_y O_x.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -185,6 +185,6 @@
   },
   "runner_path": "scripts/audit_companion_lieb_robinson_equal_time_tensor_locality_exact_2026_05_10.py",
   "title": "Lieb-Robinson (M1) Equal-Time Tensor-Locality Narrow Theorem",
-  "transitive_descendants": 736,
+  "transitive_descendants": 737,
   "verdict_rationale": "The load-bearing step is a standard algebraic identity over tensor-product operators with disjoint support. The source note explicitly rescopes away the prior physical per-site realization clause, Lieb-Robinson time evolution, continuum microcausality, and fermionic graded tensor-product claims. The provided runner genuinely constructs symbolic and Pauli tensor-product operators and checks the claimed commutators and factorization, with no hard-coded numerical target or external comparator. The ledger visibility check is non-load-bearing and does not affect closure."
 }

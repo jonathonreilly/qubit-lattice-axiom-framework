@@ -102,7 +102,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "retained",
-  "load_bearing_score": 11.522,
+  "load_bearing_score": 11.524,
   "load_bearing_step": "[f] = d and [C_M] = 0 imply [C_M f^alpha] = d alpha, so imposing mass dimension one gives d alpha = 1.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "unknown",
@@ -4489,6 +4489,6 @@
   },
   "runner_path": "scripts/frontier_hierarchy_dimensional_fourth_root_compression_narrow.py",
   "title": "Hierarchy Dimensional Fourth-Root Compression - Narrow Theorem",
-  "transitive_descendants": 734,
+  "transitive_descendants": 735,
   "verdict_rationale": "The load-bearing identity and its solution were independently checked by direct algebra, including the factor d, the dimensionless-prefactor normalization, and the d > 0 domain. The runner genuinely performs exact symbolic and rational checks consistent with the note, and the universal uniqueness statement follows from strict injectivity on positive integers rather than from the finite table alone."
 }

@@ -1,42 +1,88 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T20:21:02.070588+00:00",
+  "audit_invocation_history": [
+    "2d97ee0500d44f84b5682f57f9ac8129"
+  ],
+  "audit_invocation_id": "2d97ee0500d44f84b5682f57f9ac8129",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true,
+      "runner_path": "scripts/audit_companion_cpt_d_level_finite_lattice_algebraic_2026_05_17.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 0.0,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/audit_companion_cpt_d_level_finite_lattice_algebraic_2026_05_17.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "ae6b1a684d08e06d640ec7f3c4b103eff991e1b811d445f12b6068f2f4b8b73e",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "ae6b1a684d08e06d640ec7f3c4b103eff991e1b811d445f12b6068f2f4b8b73e",
+    "runner_path": "scripts/audit_companion_cpt_d_level_finite_lattice_algebraic_2026_05_17.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-8565c5ab",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The displayed substitution is algebraically sound, but the audit chain cannot be certified because the supplied load-bearing runner evidence is explicitly clipped. Complete execution evidence for all reported checks is missing.",
   "claim_id": "cpt_d_level_finite_lattice_algebraic_narrow_theorem_note_2026-05-17",
-  "claim_scope": null,
+  "claim_scope": "Conditional algebraic identity CPT H (CPT)^{-1}=H for a real Hermitian H and operators C, P, T satisfying the stated involution, reality, and action hypotheses.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T20:21:02.070588+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "CPT \u00b7 H \u00b7 (CPT)^{-1} = C P H P C = C(-H)C = -(-H) = H.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "74d7f1bab84ed9ba4a5b95a3869dc1bf37386fe1bd4d4aa17c91e3f2b5e13e39",
   "note_path": "docs/CPT_D_LEVEL_FINITE_LATTICE_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-17.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "runner_artifact_issue: provide complete unclipped current runner stdout or a SHA-pinned cached certificate covering all 39 checks, then re-audit.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1192,14 +1238,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 39,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 39
   },
   "runner_path": "scripts/audit_companion_cpt_d_level_finite_lattice_algebraic_2026_05_17.py",
   "title": "CPT D-Level Finite-Lattice Algebraic Identity Narrow Theorem on Real Hermitian H",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: the restricted packet explicitly marks the load-bearing runner stdout as clipped. Why this blocks: the visible class-A substitution is correct, but the packet does not provide complete execution evidence for every reported check, so clean ratification is forbidden. Repair target: provide complete unclipped current stdout or a SHA-pinned certificate covering all 39 checks. Claim boundary until fixed: retain only the conditional abstract algebraic identity under the stated hypotheses, without clean audit certification."
 }

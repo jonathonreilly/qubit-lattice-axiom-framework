@@ -1,24 +1,49 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T02:26:14.991545+00:00",
+  "audit_invocation_history": [
+    "3925647abf9743d583fcf7472aa2831e"
+  ],
+  "audit_invocation_id": "3925647abf9743d583fcf7472aa2831e",
+  "audit_state_snapshot": {
+    "criticality": "high",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "key_terminology": null,
+      "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "The elementary identities T1-T3 for signed real x_k, plus the Koide-form corollary only when every x_k is positive; no physical mass, coefficient-selection, scale, or phase derivation was audited."
+    },
+    "dep_claim_type": {
+      "key_terminology": "meta",
+      "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "key_terminology": "meta",
+      "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained"
+    },
+    "deps": [
+      "key_terminology",
+      "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 11.109,
+    "runner_hash": "d67696ed069a59d402f2670d46c1e1d625938d60a2561d6a0c95160e9f6d916e",
+    "transitive_descendants": 68
+  },
+  "audit_status": "audited_renaming",
+  "auditor": "codex-audit-batch-A-20260725-f07a2fd5",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The determinant, projector, complex-structure, and Pfaffian algebra closes the two-real-versus-one-complex slot counts. The packet does not derive the identification of the upstream circulant parameter r with one-half of that slot count.",
   "claim_id": "koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04",
-  "claim_scope": null,
+  "claim_scope": "Conditional four-cell det_C-vs-det_R fork algebra on R[Z_3] = R (+) C: supplied real versus holomorphic polarization fixes the doublet slot count and is claimed to fix the listed conditional (r, Q) branch values, without deriving or preferring a polarization.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem (conditional mechanism / route-pruning support)",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T02:26:14.991545+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -27,19 +52,20 @@
     "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
   ],
   "direct_in_degree": 10,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_renaming",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_renaming",
   "load_bearing_score": 11.109,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Counting the doublet as two real slots versus one complex slot is taken to give r = 1 versus r = 1/2, after which Q = (1 + 2r) / 3 gives the listed Q values.",
+  "load_bearing_step_class": "F",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "88f24e0eee9b3948021e383123dc9e9402f92962f3b3d4cae592fd2ad487d606",
   "note_path": "docs/KOIDE_BEREZIN_DETC_VS_DETR_FORK_MECHANISM_NOTE_2026-06-04.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "missing_bridge_theorem: derive the identification r = (doublet slot count)/2 from a retained action or readout normalization, then check that bridge independently instead of defining it in the runner.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -219,14 +245,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
+    "A": 20,
+    "B": 15,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 35
   },
   "runner_path": "scripts/berezin_detc_detr_fork_2026_06_04.py",
   "title": "Koide Berezin det_C vs det_R Fork Mechanism",
   "transitive_descendants": 68,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: the runner's r_from_slot_count(slot_count) = slot_count/2 inserts, rather than derives, the bridge from the exact real/complex mode counts to the upstream circulant parameter r; the source note never defines or proves that identification. Why this blocks: the projector, determinant, realification, and Pfaffian checks establish the 2-real-versus-1-complex count, and the retained upstream lever gives Q once r is supplied, but neither supplies the count-to-r map. Repair target: derive that map from a retained action/readout normalization or cite a retained theorem that does so, and assert it independently in the runner rather than hard-coding it. Claim boundary until fixed: the four-cell polarization/statistics slot-count separation and exact determinant/Pfaffian identities survive, but the (r, Q) branch values do not follow from the packet."
 }

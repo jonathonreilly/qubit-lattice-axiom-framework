@@ -2,6 +2,8 @@
 
 Date: 2026-07-22
 
+Claim type: bounded_theorem
+
 Authority: none. Audit: unset. Constitutional effect: none.
 
 Runners:
@@ -147,3 +149,12 @@ transcripts:     outputs/physical_tick_echo_association_causal_order_tournament_
 receipts:        the two matching *_receipt_2026_07_22.json files
 contract:        final SHA d45cad77c7d74df1951930ae796295fd8c405cc59d668f2fda98ca430b32cea1
 ```
+
+## Dependency citations
+
+These runners load and byte-pin
+[Cycle 610](PHYSICAL_INTRINSIC_TICK_EVENT_RELATIONAL_DURATION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md)
+and [Cycle 611](PHYSICAL_AUTONOMOUS_BOUND_BRANCH_PREPARATION_TOURNAMENT_CYCLE611_NOTE_2026-07-22.md),
+and through them consume the landed upstream surfaces
+[Cycle 578](PHYSICAL_INTRINSIC_CONTACT_BOUND_MOVING_TRANSITION_TOURNAMENT_CYCLE578_NOTE_2026-07-22.md)
+and [Cycle 583](PHYSICAL_CONTACT_DIMER_INFINITE_INTERNAL_CONTENT_TOURNAMENT_CYCLE583_NOTE_2026-07-22.md).

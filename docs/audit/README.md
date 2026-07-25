@@ -52,6 +52,9 @@ docs/audit/
     compute_effective_status.py      # propagate audit results down the graph
     compute_audit_dispatch_queue.py  # render dispatcher sidecars into audit_dispatch_queue.json
     audit_lint.py                    # validate ledger consistency
+    unregistered_runner_bearing_note_baseline.txt
+                                     # controlled: grandfathered runner-bearing
+                                     # notes on excluded paths (see below)
 ```
 
 Run `python3 docs/audit/scripts/ledger_io.py --materialize` before directly
@@ -215,6 +218,29 @@ exclusion must not erase audit evidence; they stay in the ledger,
 surface as `excluded_path_row_grandfathered` lint notices, and retiring
 them is an owner/audit-lane decision. Exact paths in
 `data/never_gate_source_paths.txt` always stay.
+
+Exclusion is a location gate, and it runs before claim typing: a note whose
+path matches `data/excluded_source_patterns.txt` can never acquire a claim id,
+note hash, runner pin, queue entry, or verdict, whatever `Type:` header its
+author writes. That is correct for documentation, and wrong for a note that
+names a `scripts/*.py` runner — such a note is a runner-gated result the audit
+lane cannot see. `audit_lint.py` reports that combination as an **error**,
+which keeps an excluded directory from becoming a write-only sink for
+runner-gated science. The ordinary repairs are to move the note onto an
+auditable `docs/` path, register the exact path in
+`data/never_gate_source_paths.txt`, or drop the runner reference when the note
+is narrative only.
+
+The rule is a ratchet, not a sweep. The population measured when it landed is
+listed in `scripts/unregistered_runner_bearing_note_baseline.txt` and surfaces
+as `unregistered_runner_bearing_note` notices instead of errors, so the backlog
+stays countable and drainable the same way `claim_type_defaulted` does; only a
+path absent from that baseline errors. A baseline line that no longer describes
+an unregistered runner-bearing note surfaces as an
+`unregistered_runner_bearing_note_baseline_stale` notice and should be pruned.
+Registering the notes in that baseline is a separate owner policy decision
+about what `docs/work_history/` is for; the file records the debt rather than
+settling it.
 
 ### Draining the `claim_type_defaulted` backlog
 

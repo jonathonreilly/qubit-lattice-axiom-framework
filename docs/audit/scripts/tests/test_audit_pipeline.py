@@ -2715,6 +2715,91 @@ class BuildCitationGraphParserTest(unittest.TestCase):
         self.assertEqual(helpers, {"keyword_helper"})
 
 
+class VerificationHeadingRunnerCaptureTest(unittest.TestCase):
+    """`## Verification` is the dominant house heading for naming a runner,
+    but it must be tried LAST. Measured over the whole docs tree, merging it
+    into RUNNER_SECTION_RE in place moves five notes off the runner they
+    already resolve to; trying it last is purely additive (52 notes gain a
+    runner_path, none changes the one it had)."""
+
+    def setUp(self):
+        self._tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self._tmp.cleanup)
+        self.tmp_root = Path(self._tmp.name)
+        (self.tmp_root / "scripts").mkdir(parents=True, exist_ok=True)
+
+    def _runner(self, name: str) -> str:
+        (self.tmp_root / "scripts" / name).write_text("x = 1\n", encoding="utf-8")
+        return f"scripts/{name}"
+
+    def _extract(self, body: str, rel_path: str = "SOME_NOTE.md"):
+        m = _import("build_citation_graph")
+        original = m.REPO_ROOT
+        m.REPO_ROOT = self.tmp_root
+        try:
+            return m.extract_runner(body, rel_path)
+        finally:
+            m.REPO_ROOT = original
+
+    def test_verification_heading_supplies_a_runner(self):
+        self._runner("verification_only.py")
+        body = (
+            "# A note\n\n"
+            "Some prose.\n\n"
+            "## Verification\n\n"
+            "```bash\n"
+            "python3 scripts/verification_only.py\n"
+            "```\n"
+        )
+        self.assertEqual(self._extract(body), "scripts/verification_only.py")
+
+    def test_verification_heading_works_under_an_excluded_path(self):
+        # work_history/ is excluded from the preamble fallback; the
+        # Verification section must still resolve there, because that is
+        # exactly where the unowned runner-gated results sit.
+        self._runner("work_history_runner.py")
+        body = (
+            "# A work-history note\n\n"
+            "## Verification\n\n"
+            "`scripts/work_history_runner.py`\n"
+        )
+        self.assertEqual(
+            self._extract(body, "work_history/repo/review_feedback/NOTE.md"),
+            "scripts/work_history_runner.py",
+        )
+
+    def test_verification_never_displaces_an_earlier_artifact_section(self):
+        # The regression the LAST ordering exists to prevent: a Verification
+        # section that precedes the note's own Artifacts section must not
+        # capture the runner_path.
+        self._runner("cited_comparator.py")
+        self._runner("own_runner.py")
+        body = (
+            "# A note\n\n"
+            "## Verification\n\n"
+            "Reproduced against `scripts/cited_comparator.py`.\n\n"
+            "## Artifacts\n\n"
+            "`scripts/own_runner.py`\n"
+        )
+        self.assertEqual(self._extract(body), "scripts/own_runner.py")
+
+    def test_verification_never_displaces_a_runner_label(self):
+        self._runner("labelled_runner.py")
+        self._runner("verification_helper.py")
+        body = (
+            "# A note\n\n"
+            "**Primary runner:** `scripts/labelled_runner.py`\n\n"
+            "## Verification\n\n"
+            "`scripts/verification_helper.py`\n"
+        )
+        self.assertEqual(self._extract(body), "scripts/labelled_runner.py")
+
+    def test_verification_section_regex_is_separate_from_runner_section_regex(self):
+        m = _import("build_citation_graph")
+        self.assertIsNone(m.RUNNER_SECTION_RE.search("## Verification\n"))
+        self.assertIsNotNone(m.RUNNER_VERIFICATION_SECTION_RE.search("## Verification\n"))
+
+
 class StaggeredExplicitPacketHelperTest(unittest.TestCase):
     CLAIM_ID = "staggered_fermion_card_2026-04-11"
     PRIMARY = "scripts/frontier_staggered_17card_finite_scope_repair.py"
@@ -4925,6 +5010,153 @@ class AuditLintTest(unittest.TestCase):
         self.assertIn("excluded_path_row_grandfathered", out)
         self.assertIn("lanes.audited_lane", out)
         self.assertNotIn("warnings:", out)
+
+
+class UnregisteredRunnerBearingNoteTest(unittest.TestCase):
+    """A note under an excluded source pattern can never acquire a claim id,
+    note hash, runner pin, queue entry, or verdict — seed_audit_ledger
+    .should_gate_node drops the node before claim typing runs. A note that
+    ALSO names an existing runner is therefore a runner-gated result the
+    audit lane can never see. The rule is a ratchet: the population measured
+    when it landed is grandfathered as notices, and only unlisted paths error.
+    """
+
+    def setUp(self):
+        self._tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self._tmp.cleanup)
+        self.tmp_root = Path(self._tmp.name)
+        self.fx = CleanLedgerFixture(self.tmp_root)
+        (self.tmp_root / "scripts").mkdir(parents=True, exist_ok=True)
+        (self.tmp_root / "scripts" / "sunk_result.py").write_text("x = 1\n", encoding="utf-8")
+        (self.fx.data_dir / "excluded_source_patterns.txt").write_text(
+            "# infra families\ndocs/work_history/**\n", encoding="utf-8"
+        )
+        self.baseline_path = (
+            self.tmp_root
+            / "docs"
+            / "audit"
+            / "scripts"
+            / "unregistered_runner_bearing_note_baseline.txt"
+        )
+        self.baseline_path.parent.mkdir(parents=True, exist_ok=True)
+
+    NOTE_PATH = "docs/work_history/repo/review_feedback/SUNK_RESULT_NOTE.md"
+
+    def _write_state(self, *, node_path: str | None = None, rows: dict | None = None) -> None:
+        rows = dict(rows or {})
+        self.fx.write_ledger({"schema_version": 1, "rows": rows})
+        nodes = {
+            cid: {"deps": [], "path": row.get("note_path"), "runner_path": None}
+            for cid, row in rows.items()
+        }
+        if node_path is not None:
+            nodes["work_history.repo.review_feedback.sunk_result_note"] = {
+                "deps": [],
+                "path": node_path,
+                "runner_path": "scripts/sunk_result.py",
+                "helper_runner_paths": [],
+            }
+        self.fx.write_graph({"nodes": nodes, "edges": []})
+
+    def _run(self) -> tuple[int, str]:
+        import contextlib
+        import io
+
+        m = _import("audit_lint")
+        _patch_repo_root(m, self.tmp_root)
+        buf = io.StringIO()
+        with contextlib.redirect_stdout(buf):
+            rc = m.main()
+        return rc, buf.getvalue()
+
+    def test_new_unregistered_runner_bearing_note_is_an_error(self):
+        self._write_state(node_path=self.NOTE_PATH)
+        rc, out = self._run()
+        self.assertEqual(rc, 1, out)
+        self.assertIn(self.NOTE_PATH, out)
+        self.assertIn("scripts/sunk_result.py", out)
+        self.assertIn("can never acquire a claim id", out)
+
+    def test_grandfathered_path_is_a_notice_not_an_error(self):
+        self.baseline_path.write_text(f"# baseline\n{self.NOTE_PATH}\n", encoding="utf-8")
+        self._write_state(node_path=self.NOTE_PATH)
+        rc, out = self._run()
+        self.assertEqual(rc, 0, out)
+        self.assertIn("unregistered_runner_bearing_note", out)
+        self.assertIn(self.NOTE_PATH, out)
+
+    def test_note_with_a_ledger_row_does_not_fire(self):
+        # A path kept by history-preserving exclusion is owned and auditable.
+        rows = {
+            "work_history.repo.review_feedback.sunk_result_note": {
+                "claim_id": "work_history.repo.review_feedback.sunk_result_note",
+                "note_path": self.NOTE_PATH,
+                "audit_status": "unaudited",
+                "claim_type": "meta",
+                "claim_type_provenance": "migration_hint",
+                "effective_status": "meta",
+                "criticality": "leaf",
+            }
+        }
+        self._write_state(node_path=self.NOTE_PATH, rows=rows)
+        rc, out = self._run()
+        self.assertEqual(rc, 0, out)
+        self.assertNotIn("unregistered_runner_bearing_note", out)
+
+    def test_never_gate_registered_path_does_not_fire(self):
+        (self.fx.data_dir / "never_gate_source_paths.txt").write_text(
+            f"{self.NOTE_PATH}\n", encoding="utf-8"
+        )
+        self._write_state(node_path=self.NOTE_PATH)
+        rc, out = self._run()
+        self.assertEqual(rc, 0, out)
+        self.assertNotIn("unregistered_runner_bearing_note", out)
+
+    def test_note_without_a_runner_does_not_fire(self):
+        self.fx.write_ledger({"schema_version": 1, "rows": {}})
+        self.fx.write_graph(
+            {
+                "nodes": {
+                    "work_history.repo.review_feedback.narrative": {
+                        "deps": [],
+                        "path": "docs/work_history/repo/review_feedback/NARRATIVE.md",
+                        "runner_path": None,
+                        "helper_runner_paths": [],
+                    }
+                },
+                "edges": [],
+            }
+        )
+        rc, out = self._run()
+        self.assertEqual(rc, 0, out)
+        self.assertNotIn("unregistered_runner_bearing_note", out)
+
+    def test_named_runner_missing_from_disk_does_not_fire(self):
+        self.fx.write_ledger({"schema_version": 1, "rows": {}})
+        self.fx.write_graph(
+            {
+                "nodes": {
+                    "work_history.repo.review_feedback.deleted_runner": {
+                        "deps": [],
+                        "path": "docs/work_history/repo/review_feedback/DELETED.md",
+                        "runner_path": "scripts/does_not_exist.py",
+                        "helper_runner_paths": [],
+                    }
+                },
+                "edges": [],
+            }
+        )
+        rc, out = self._run()
+        self.assertEqual(rc, 0, out)
+        self.assertNotIn("unregistered_runner_bearing_note", out)
+
+    def test_drained_baseline_entry_is_reported_as_stale(self):
+        self.baseline_path.write_text(f"# baseline\n{self.NOTE_PATH}\n", encoding="utf-8")
+        self._write_state(node_path=None)
+        rc, out = self._run()
+        self.assertEqual(rc, 0, out)
+        self.assertIn("unregistered_runner_bearing_note_baseline_stale", out)
+        self.assertIn("prune the baseline entry", out)
 
 
 class CheckStagedClaimTypingTest(unittest.TestCase):

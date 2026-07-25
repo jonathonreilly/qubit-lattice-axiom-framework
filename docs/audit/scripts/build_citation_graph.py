@@ -131,6 +131,18 @@ RUNNER_SECTION_RE = re.compile(
     r"(?:Artifact(?:\s+chain)?|Artifacts|Script|Scripts|Runner|Runners|Files|Surfaces|What\s+was\s+tested)\b.*$",
     re.IGNORECASE | re.MULTILINE,
 )
+# `## Verification` is the dominant house heading for naming a note's runner,
+# but it is deliberately NOT merged into RUNNER_SECTION_RE above: measured over
+# the whole docs tree, merging it in place moves five notes off the runner they
+# already resolve to, because a `## Verification` section can precede the
+# `## Artifacts`/`## Runner` section that carries the note's own runner. Tried
+# LAST instead (see extract_runner) it is purely additive: 52 notes gain a
+# runner_path and no note changes the runner it already had.
+RUNNER_VERIFICATION_SECTION_RE = re.compile(
+    r"^#{2,6}\s+(?:(?:Primary|Key|Audited|New|Source|Validated|Corrected(?:\s+live)?)\s+)?"
+    r"Verification\b.*$",
+    re.IGNORECASE | re.MULTILINE,
+)
 HEADING_RE = re.compile(r"^#{1,6}\s+", re.MULTILINE)
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
 
@@ -584,6 +596,14 @@ def extract_runner(body: str, rel_path: str | None = None) -> str | None:
     top_paths = list(dict.fromkeys(runner_paths("\n".join(lines[:80]))))
     if len(top_paths) == 1:
         return top_paths[0]
+
+    # Last resort: a `## Verification` section. This runs only after every
+    # pattern above has declined, so a note that already resolves through its
+    # own runner label or artifact section keeps that runner unchanged.
+    for m in RUNNER_VERIFICATION_SECTION_RE.finditer(body):
+        runner = first_runner_path(extract_section(body, m.end()))
+        if runner:
+            return runner
 
     return None
 

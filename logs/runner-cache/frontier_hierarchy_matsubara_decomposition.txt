@@ -1,106 +1,78 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_matsubara_decomposition.py
-runner_sha256: 2587ea724a43677e48294bfa6501de2cd72a482af3071b2c3b306fe849d28d99
+runner_sha256: cd61ae9b946cf2df08d63bcf9fe98db79956cf64115be230d05133fd4f07c1cf
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 3.85
 status: ok
 ----- stdout -----
 Hierarchy Matsubara decomposition
-==============================================================================
 
-==============================================================================
+PART 0: GENERAL-L_t DERIVATION FROM THE MATRIX
+0A structural extraction from build_dirac_4d_apbc, Lt in [2, 3, 4, 5, 6, 8]
+  [PASS] same-t 8x8 block is t-independent and Lt-independent, giving B_ext
+         max dev over t, over Lt, and from integer values all = 0.0
+  [PASS] different-t part is spatial-block-diagonal and equals kron(eta4_ext, S_ext)
+         off-block max = 0.0, block-vs-reference ratio max dev = 0.0
+  [PASS] eta4_ext read off the blocks equals diag((-1)^(x0+x1+x2))
+         read [1, -1, -1, 1, -1, 1, 1, -1]
+  [PASS] m*Id + u0*kron(B_ext,Id) + u0*kron(eta4_ext,S_ext) == build_dirac_4d_apbc
+         36 points, u0 in [0.6, 1.0, 1.7] x m in [0.0, 0.37], max abs dev = 0.0
+  [PASS] rejector: replacing eta4_ext by the identity does not reproduce the matrix
+         smallest max abs dev over the 36 points = 6.00e-01
+0B exact Clifford relations on the extracted operators (integer arithmetic)
+  [PASS] A_1+A_2+A_3 == B_ext, A_i^2 == -Id_8, and A_iA_j+A_jA_i == 0 for i != j
+         all seven deviations = 0; the 2-site antiperiodic ring gives T_i^2 = -Id
+  [PASS] B_ext^2 == -3*Id_8 and trace(B_ext) == 0
+  [PASS] eta4_ext^2 == Id_8 and trace(eta4_ext) == 0
+  [PASS] B_ext*eta4_ext + eta4_ext*B_ext == 0
+0C temporal spectrum, symbolic and exact, Lt = 2..16
+  [PASS] T_ext read off S_ext is a signed cyclic shift with (1/2)(T-T^-1) == S_ext
+         15 values of Lt, max abs dev = 0.0
+  [PASS] charpoly(T_ext) == lam^Lt + 1 exactly for every Lt in the range
+  [PASS] lam^Lt + 1 is squarefree, so its Lt roots exp(i(2n+1)pi/Lt) are distinct
+         gcd(p, p') == 1 and all Lt roots annihilate p, for every Lt
+  [PASS] S_ext v(z) == ((z-1/z)/2) v(z) on the T_ext eigenvector v(z) = [1,z,..,z^(Lt-1)]
+         residues reduced mod z^Lt + 1 vanish for every Lt; z^Lt = -1 closes the ring
+  [PASS] (z - 1/z)/2 == i*sin(omega) at z = exp(i*omega), so S -> i sin(omega)
+  [PASS] Lt = 2 is the only APBC extent whose temporal modes all have sin^2 omega = 1
+         exact over Lt = 2..16; maximal-gap extents = [2]
+0D symbolic multiplicity-four theorem in (theta, u0, m): one computation, every Lt
+  [PASS] K(theta)^2 == -u0^2*(3 + sin^2 theta)*Id_8 and trace K(theta) == 0
+         traceless, square a negative multiple of Id_8, so the spectrum is +-i*sqrt(c)
+  [PASS] charpoly(K) factors as (lam^2 + u0^2*(3 + sin^2 theta))^mult with mult == 4
+         factor_list returned multiplicity 4; tracelessness forces the 4+4 split
+  [PASS] det(m*Id_8 + K(theta)) == (m^2 + u0^2*(3 + sin^2 theta))^4
+         symbolic identity in theta, u0, m; holds for every temporal mode
+  [PASS] rejector: exponent 3 does not reproduce the block determinant
+         residual at (theta,u0,m) = (0.3,1.1,0.5) is 189
+  [PASS] rejector: exponent 5 does not reproduce the block determinant
+         residual at (theta,u0,m) = (0.3,1.1,0.5) is 753.4
+  [PASS] rejector: 2 + sin^2 theta in place of 3 + sin^2 theta does not reproduce the block determinant
+         residual at (theta,u0,m) = (0.3,1.1,0.5) is 193
+  symbolic section wall time = 2.5 s
+0E closing the loop to the runner's own exact_det_formula
+  [PASS] prod_n [symbolic block det at omega_n] == exact_det_formula
+         Lt in [2, 4, 6, 8] x u0 in [0.6, 0.9, 1.2] x m in [0.0, 0.1, 0.5], 36 points, max rel dev = 0.0e+00
+
 PART 1: CLOSED-FORM DETERMINANT
-==============================================================================
-  Lt=2, u0=0.6, m=0.0: direct=1.84884259e+01, exact=1.84884259e+01, rel=5.76e-16
-  Lt=2, u0=0.6, m=0.1: direct=1.95408755e+01, exact=1.95408755e+01, rel=1.82e-16
-  Lt=2, u0=0.6, m=0.5: direct=6.65416609e+01, exact=6.65416609e+01, rel=2.14e-16
-  Lt=2, u0=0.9, m=0.0: direct=1.21439531e+04, exact=1.21439531e+04, rel=1.35e-15
-  Lt=2, u0=0.9, m=0.1: direct=1.24470630e+04, exact=1.24470630e+04, rel=4.38e-16
-  Lt=2, u0=0.9, m=0.5: direct=2.20091574e+04, exact=2.20091574e+04, rel=0.00e+00
-  Lt=2, u0=1.2, m=0.0: direct=1.21165748e+06, exact=1.21165748e+06, rel=7.69e-16
-  Lt=2, u0=1.2, m=0.1: direct=1.22858867e+06, exact=1.22858867e+06, rel=9.48e-16
-  Lt=2, u0=1.2, m=0.5: direct=1.70214195e+06, exact=1.70214195e+06, rel=3.15e-15
-  Lt=4, u0=0.6, m=0.0: direct=4.03579151e+01, exact=4.03579151e+01, rel=1.76e-16
-  Lt=4, u0=0.6, m=0.1: direct=4.57993733e+01, exact=4.57993733e+01, rel=1.55e-15
-  Lt=4, u0=0.6, m=0.5: direct=7.30518396e+02, exact=7.30518396e+02, rel=1.40e-15
-  Lt=4, u0=0.9, m=0.0: direct=1.74120142e+07, exact=1.74120142e+07, rel=3.42e-15
-  Lt=4, u0=0.9, m=0.1: direct=1.84211327e+07, exact=1.84211327e+07, rel=6.07e-15
-  Lt=4, u0=0.9, m=0.5: direct=6.73104810e+07, exact=6.73104810e+07, rel=4.65e-15
-  Lt=4, u0=1.2, m=0.0: direct=1.73335925e+11, exact=1.73335925e+11, rel=2.11e-15
-  Lt=4, u0=1.2, m=0.1: direct=1.78921302e+11, exact=1.78921302e+11, rel=6.82e-16
-  Lt=4, u0=1.2, m=0.5: direct=3.76089105e+11, exact=3.76089105e+11, rel=4.87e-16
-  Lt=6, u0=0.6, m=0.0: direct=2.27967914e+02, exact=2.27967914e+02, rel=7.48e-16
-  Lt=6, u0=0.6, m=0.1: direct=2.76093470e+02, exact=2.76093470e+02, rel=1.24e-15
-  Lt=6, u0=0.6, m=0.5: direct=1.81847421e+04, exact=1.81847421e+04, rel=1.00e-15
-  Lt=6, u0=0.9, m=0.0: direct=6.46032192e+10, exact=6.46032192e+10, rel=1.18e-15
-  Lt=6, u0=0.9, m=0.1: direct=7.03569207e+10, exact=7.03569207e+10, rel=4.34e-16
-  Lt=6, u0=0.9, m=0.5: direct=4.99933767e+11, exact=4.99933767e+11, rel=6.59e-15
-  Lt=6, u0=1.2, m=0.0: direct=6.41672632e+16, exact=6.41672632e+16, rel=2.32e-14
-  Lt=6, u0=1.2, m=0.1: direct=6.73243220e+16, exact=6.73243220e+16, rel=1.15e-14
-  Lt=6, u0=1.2, m=0.5: direct=2.07274790e+17, exact=2.07274790e+17, rel=7.10e-15
-  Lt=8, u0=0.6, m=0.0: direct=1.38225440e+03, exact=1.38225440e+03, rel=8.22e-16
-  Lt=8, u0=0.6, m=0.1: direct=1.78473280e+03, exact=1.78473280e+03, rel=1.91e-15
-  Lt=8, u0=0.6, m=0.5: direct=4.76119350e+05, exact=4.76119350e+05, rel=2.08e-15
-  Lt=8, u0=0.9, m=0.0: direct=2.57293349e+14, exact=2.57293349e+14, rel=1.82e-15
-  Lt=8, u0=0.9, m=0.1: direct=2.88314106e+14, exact=2.88314106e+14, rel=1.19e-14
-  Lt=8, u0=0.9, m=0.5: direct=3.94481801e+15, exact=3.94481801e+15, rel=1.39e-15
-  Lt=8, u0=1.2, m=0.0: direct=2.54980932e+22, exact=2.54980932e+22, rel=1.50e-14
-  Lt=8, u0=1.2, m=0.1: direct=2.71855459e+22, exact=2.71855459e+22, rel=1.56e-14
-  Lt=8, u0=1.2, m=0.5: direct=1.21876455e+23, exact=1.21876455e+23, rel=2.62e-14
   [PASS] exact Matsubara determinant formula matches direct determinant
-         max relative error = 2.62e-14
+         Lt in [2, 4, 6, 8] x u0 in [0.6, 0.9, 1.2] x m in [0.0, 0.1, 0.5], 36 points, max rel dev = 2.62e-14
 
-==============================================================================
 PART 2: CLOSED-FORM FREE-ENERGY AND CONDENSATE DENSITIES
-==============================================================================
-  Lt=2, m=0.001: f_direct=1.5432096390e-07, f_exact=1.5432096384e-07, c_direct=3.0864188005e-04, c_exact=3.0864188005e-04
-  Lt=2, m=0.01: f_direct=1.5431860621e-05, f_exact=1.5431860621e-05, c_direct=3.0863244962e-03, c_exact=3.0863244962e-03
-  Lt=2, m=0.1: f_direct=1.5408332687e-03, f_exact=1.5408332687e-03, c_direct=3.0769230769e-02, c_exact=3.0769230769e-02
-  Lt=4, m=0.001: f_direct=1.7636681171e-07, f_exact=1.7636681193e-07, c_direct=3.5273356165e-04, c_exact=3.5273356165e-04
-  Lt=4, m=0.01: f_direct=1.7636373258e-05, f_exact=1.7636373258e-05, c_direct=3.5272124440e-03, c_exact=3.5272124440e-03
-  Lt=4, m=0.1: f_direct=1.7605651993e-03, f_exact=1.7605651993e-03, c_direct=3.5149384886e-02, c_exact=3.5149384886e-02
-  Lt=6, m=0.001: f_direct=1.7806264604e-07, f_exact=1.7806264607e-07, c_direct=3.5612522817e-04, c_exact=3.5612522817e-04
-  Lt=6, m=0.01: f_direct=1.7805947932e-05, f_exact=1.7805947932e-05, c_direct=3.5611256133e-03, c_exact=3.5611256133e-03
-  Lt=6, m=0.1: f_direct=1.7774356683e-03, f_exact=1.7774356683e-03, c_direct=3.5485044757e-02, c_exact=3.5485044757e-02
-  Lt=8, m=0.001: f_direct=1.7818502585e-07, f_exact=1.7818502584e-07, c_direct=3.5636998752e-04, c_exact=3.5636998752e-04
-  Lt=8, m=0.01: f_direct=1.7818185060e-05, f_exact=1.7818185060e-05, c_direct=3.5635728673e-03, c_exact=3.5635728673e-03
-  Lt=8, m=0.1: f_direct=1.7786509425e-03, f_exact=1.7786509425e-03, c_direct=3.5509180746e-02, c_exact=3.5509180746e-02
-  Lt=10, m=0.001: f_direct=1.7819381579e-07, f_exact=1.7819381554e-07, c_direct=3.5638756692e-04, c_exact=3.5638756692e-04
-  Lt=10, m=0.01: f_direct=1.7819063954e-05, f_exact=1.7819063954e-05, c_direct=3.5637486306e-03, c_exact=3.5637486306e-03
-  Lt=10, m=0.1: f_direct=1.7787380724e-03, f_exact=1.7787380724e-03, c_direct=3.5510908107e-02, c_exact=3.5510908107e-02
+  grid: Lt in [2, 4, 6, 8, 10] x u0 = 0.9 x m in [0.001, 0.01, 0.1], 15 points; log|det| taken with slogdet
   [PASS] exact free-energy density formula matches direct computation
-         max absolute error = 2.58e-16
+         max abs dev = 2.58e-16
   [PASS] exact condensate density formula matches direct computation
-         max absolute error = 6.94e-18
+         max abs dev = 6.94e-18
 
-==============================================================================
 PART 3: UV ENDPOINT INTERPRETATION
-==============================================================================
-  cond(Lt=2)  = 0.0030863245
-  cond(Lt=10) = 0.0035637486
-  ratio       = 1.1546901938
-  C_obs       = 0.9669215187
-  ratio^(-1/4)  = 0.9646807905
-  ratio^(-1/16) = 0.9910507799
+  u0=0.9, m=0.01: cond(Lt=2)=0.00308632, cond(Lt=10)=0.00356375, R=1.15469019
+  C_obs=0.96692152, R^(-1/4)=0.96468079, R^(-1/16)=0.99105078
   [PASS] dimension-4 compression is closer to the observed hierarchy prefactor than 16th-root compression
          |root4-C_obs|=0.002241, |root16-C_obs|=0.024129
 
-==============================================================================
-SCORECARD: 4 pass, 0 fail out of 4
-==============================================================================
+SCORECARD: 26 pass, 0 fail out of 26
 
 ----- stderr -----
-/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: divide by zero encountered in det
-  r = _umath_linalg.det(a, signature=signature)
-/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: overflow encountered in det
-  r = _umath_linalg.det(a, signature=signature)
-/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: invalid value encountered in det
-  r = _umath_linalg.det(a, signature=signature)
-/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
-  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
-/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
-  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
-/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
-  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
 

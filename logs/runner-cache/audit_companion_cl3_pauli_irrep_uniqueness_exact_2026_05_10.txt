@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py
-runner_sha256: 6eaf62118f0bf14a92574d4dbe175b2d197afdb6cf3018ed87e9ef1f0bfad6ce
+runner_sha256: 7da6a714975f1359e68e989f5b97def6e439da1e313fa368b92e55efed42c2f9
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 1.18
@@ -29,7 +29,7 @@ Exact multiplication table (rows multiply columns):
   [PASS (A)] A1 complete 8^3 basis associativity table  (512/512 products)
   [PASS (A)] A2 all defining Clifford relations hold in the abstract table  (9/9 relations)
   [PASS (A)] A3 ordered generator monomials give the complete canonical basis  (rank=8)
-  [PASS (A)] A4 left/right multiplication by every generator closes on the eight words  (48/48 products)
+  [PASS (A)] A4 left/right generator products match the independent canonical-word reducer  (48/48 products)
 
 ------------------------------------------------------------------------------------------------
 Part B: ordered volume element and central idempotents
@@ -86,7 +86,7 @@ Part E: representation classification and faithfulness boundary
 Part F: conditional unitary refinement for *-representations
 ------------------------------------------------------------------------------------------------
   [PASS (A)] F1 a generic Gram matrix commuting with the Pauli algebra is scalar  (commutant dimension=1)
-  [PASS (A)] F2 H=cI with c>0 gives U=T/sqrt(c) and U^dagger U=I
+  [PASS (A)] F2 computed scalar Gram normalizes a nontrivial exact intertwiner by sqrt(c), not c
   [PASS (A)] F3 a nonunitary similarity still preserves all Clifford relations  (9/9 relations)
   [PASS (A)] F4 without Hermitian generators the same-sign unitary claim is false  (T^dagger T=[[4, 0], [0, 1]])
 
@@ -98,14 +98,14 @@ Part G: live development-tier N1-N8 evidence
   N1_ROUTE route_id=finite-simple-counterexamples; route_class=numerical_or_finite_case; honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=finite exact compute of scalar and doubled module candidates; attempt=compute the scalar Clifford Groebner system and the invariant submodule plus nonscalar commutant of the doubled module; outcome=the scalar system is inconsistent and the four-dimensional doubled module is reducible
   N1_ROUTE route_id=faithful-direct-sum-carrier; route_class=alternate_carrier_or_sector; honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=alternate module carrier rho_plus direct-sum rho_minus; attempt=stack both exact complex action maps and test rank eight, invariant summands, and reducibility; outcome=the stacked carrier is faithful only because it contains both invariant chirality summands and is reducible
   N1_ROUTE route_id=gram-normalization; route_class=normalization_or_units; honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=normalization of the intertwiner Gram matrix under Hermitian generators; attempt=solve the Pauli commutant, normalize a positive scalar Gram matrix, and test the nonscalar diagonal similarity; outcome=Hermitian images force scalar normalization while the bare non-Hermitian similarity keeps a nonscalar Gram matrix
-  N2_DISPOSITION walls=(irreducible complexified A-module faithfulness boundary; bare complex-linear equivalence to unitary equivalence boundary); left_closes_right=false; right_closes_left=false; independent=true; the standard Hermitian Pauli action retains a four-dimensional complex kernel, while the non-Hermitian similar action independently has a nonscalar Gram matrix.
+  N2_DISPOSITION open_walls=0; pairwise wall-independence is not applicable. The note contains two separately scoped exact boundaries, not unresolved or load-bearing conditions: (irreducible complexified A-module faithfulness boundary; bare complex-linear equivalence to unitary equivalence boundary); the standard Hermitian Pauli action retains a four-dimensional complex kernel, while the non-Hermitian similar action independently has a nonscalar Gram matrix.
   N3_DISPOSITION hidden-wall scan closed for the finite algebra certificate: exact inputs are the displayed Clifford relations and finite-dimensional unital complex modules; Hermitian generators are kept explicit only for the conditional unitary refinement; no physical carrier, primitive, imported value, or lattice limit enters.
   N4_DISPOSITION prior_witnesses=0; every N1 route is ATTEMPTED in the current execution, so no prior residual is reused or mismatched.
   N5_RESOLUTION per_element: each exact irreducible action kills a computed nonzero opposite-ideal element, with kernel dimensions (4,4); this proves the complexified faithfulness boundary element by element.
   N5_RESOLUTION per_site: one abstract algebra copy has computed real ranks (8,8) while both complexified kernels remain nonzero; this site-shaped check is formal and does not identify a physical site carrier.
   N5_RESOLUTION per_mode: the exact central-action solve has 2 chirality choices and forces a simple module to choose exactly one, so the opposite chirality mode lies in its kernel.
   N5_RESOLUTION per_block: the two computed central blocks have dimensions (4,4); their direct-sum action has rank 8, while either irreducible block action kills the other block exactly.
-  N5_RESOLUTION lattice_wide: scope exclusion is tested against the live certificate: it contains one 8-dimensional abstract algebra factor and zero lattice extensions, so neither negative boundary is promoted to a physical lattice-wide statement.
+  N5_RESOLUTION lattice_wide: NOT TESTED and outside the theorem scope; no lattice-wide negative statement is made. The note expressly limits both boundaries to the abstract finite-algebra/module classification.
   N6_DISPOSITION partial-closure paths are explicit and require no new axiom, primitive, admission class, or imported value: stacking rho_+ direct-sum rho_- gives exact complex map rank 8 but is reducible, while the named Hermitian-generator condition gives the unitary refinement without changing the four-dimensional kernel of either irreducible complexified action.
   N7_STEELMAN_ARGUMENT mechanism=alternate module carrier rho_plus direct-sum rho_minus; attempt=stack both exact complex action maps and test rank eight, invariant summands, and reducibility; argument=a hostile reader can stack both chiral actions and obtain a faithful representation, apparently contradicting the stated complexified faithfulness boundary.
   N7_STEELMAN_RESOLUTION irreducible complexified A-module faithfulness boundary resolved: the stacked action has rank 8 precisely because it contains both central summands, and the computed invariant two-dimensional summands make it reducible; each irreducible action still has a four-dimensional opposite-ideal kernel.
@@ -138,6 +138,6 @@ Summary
 ================================================================================================
 TOTAL: PASS=51, FAIL=0
 ================================================================================================
-        1.26 real         1.21 user         0.03 sys
 
 ----- stderr -----
+

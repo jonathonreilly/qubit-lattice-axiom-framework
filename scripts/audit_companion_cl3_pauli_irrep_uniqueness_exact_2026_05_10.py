@@ -128,7 +128,6 @@ def make_resolution_records(
             (
                 ("plus_real_rank", plus_real_rank),
                 ("minus_real_rank", minus_real_rank),
-                ("abstract_factor_count", 1),
             ),
             "per_site: one abstract algebra copy has computed real ranks "
             f"({plus_real_rank},{minus_real_rank}) while both complexified "
@@ -159,31 +158,67 @@ def make_resolution_records(
         ),
         ResolutionRecord(
             "lattice_wide",
-            "SCOPE_EXCLUDED",
+            "NOT_TESTED_OUT_OF_SCOPE",
             (
-                ("abstract_factor_count", 1),
-                ("abstract_algebra_dimension", DIM),
-                ("lattice_extension_count", 0),
+                ("resolution_tested", False),
+                ("lattice_wide_claim_made", False),
             ),
-            "lattice_wide: scope exclusion is tested against the live "
-            f"certificate: it contains one {DIM}-dimensional abstract algebra "
-            "factor and zero lattice extensions, so neither negative boundary "
-            "is promoted to a physical lattice-wide statement.",
+            "lattice_wide: NOT TESTED and outside the theorem scope; no "
+            "lattice-wide negative statement is made. The note expressly "
+            "limits both boundaries to the abstract finite-algebra/module "
+            "classification.",
         ),
     )
 
 
 def resolution_records_valid(
     records: Sequence[ResolutionRecord],
-    expected: Sequence[ResolutionRecord],
 ) -> bool:
-    """Reject missing, stale, reordered, duplicated, or false N5 evidence."""
+    """Reject missing, stale, reordered, duplicated, or false N5 evidence.
+
+    The oracle is intentionally independent of ``make_resolution_records``.
+    Comparing two calls to the same constructor would reproduce a false
+    disposition instead of detecting it.
+    """
 
     names = tuple(record.resolution_class for record in records)
+    expected_dispositions = {
+        "per_element": "PROVED",
+        "per_site": "ABSTRACT_COPY_ONLY",
+        "per_mode": "PROVED",
+        "per_block": "PROVED",
+        "lattice_wide": "NOT_TESTED_OUT_OF_SCOPE",
+    }
+    expected_certificates = {
+        "per_element": (
+            ("plus_kernel_dimension", 4),
+            ("minus_kernel_dimension", 4),
+        ),
+        "per_site": (
+            ("plus_real_rank", 8),
+            ("minus_real_rank", 8),
+        ),
+        "per_mode": (("central_action_count", 2),),
+        "per_block": (
+            ("plus_ideal_dimension", 4),
+            ("minus_ideal_dimension", 4),
+            ("combined_map_rank", 8),
+        ),
+        "lattice_wide": (
+            ("resolution_tested", False),
+            ("lattice_wide_claim_made", False),
+        ),
+    }
     return (
         names == RESOLUTION_CLASSES
         and len(set(names)) == len(RESOLUTION_CLASSES)
-        and tuple(records) == tuple(expected)
+        and all(
+            record.disposition
+            == expected_dispositions[record.resolution_class]
+            and record.certificate
+            == expected_certificates[record.resolution_class]
+            for record in records
+        )
     )
 
 
@@ -191,8 +226,7 @@ def emit_development_no_go_evidence(
     *,
     routes: Sequence[NoGoRoute],
     resolutions: Sequence[ResolutionRecord],
-    expected_resolutions: Sequence[ResolutionRecord],
-    walls_independent: bool,
+    boundaries_scoped: bool,
     prior_witness_count: int,
     combined_map_rank: int,
     combined_module_reducible: bool,
@@ -202,17 +236,32 @@ def emit_development_no_go_evidence(
 ) -> None:
     """Emit a complete development-tier N1-N8 disposition after live checks."""
 
-    assert len(routes) >= 5
-    assert len({route.route_class for route in routes}) >= 5
-    assert all(route.closed for route in routes), routes
-    assert resolution_records_valid(resolutions, expected_resolutions)
-    assert walls_independent
-    assert prior_witness_count == 0
-    assert combined_map_rank == DIM
-    assert combined_module_reducible
-    assert hermitian_refinement_closes
-    assert standard_complex_kernel_dimension == 4
-    assert local_echo_controls_closed >= 2
+    gate_results = (
+        ("at least five N1 routes", len(routes) >= 5),
+        (
+            "at least five distinct N1 route classes",
+            len({route.route_class for route in routes}) >= 5,
+        ),
+        ("every N1 route closed", all(route.closed for route in routes)),
+        ("N5 records match the independent oracle", resolution_records_valid(resolutions)),
+        ("negative boundaries remain honestly scoped", boundaries_scoped),
+        ("no prior witness is silently reused", prior_witness_count == 0),
+        ("combined complex action is faithful", combined_map_rank == DIM),
+        ("combined faithful carrier is reducible", combined_module_reducible),
+        ("Hermitian refinement closes", hermitian_refinement_closes),
+        (
+            "irreducible complex action has four-dimensional kernel",
+            standard_complex_kernel_dimension == 4,
+        ),
+        ("at least two local echo controls close", local_echo_controls_closed >= 2),
+    )
+    failed_gates = [label for label, result in gate_results if not bool(result)]
+    if failed_gates:
+        section("Part G: live development-tier N1-N8 evidence")
+        for label in failed_gates:
+            check(f"G fail-closed evidence gate: {label}", False)
+        print("  N1-N8 evidence suppressed because a live gate failed.")
+        return
 
     section("Part G: live development-tier N1-N8 evidence")
     for route in routes:
@@ -225,9 +274,10 @@ def emit_development_no_go_evidence(
         )
 
     print(
-        "  N2_DISPOSITION walls=("
+        "  N2_DISPOSITION open_walls=0; pairwise wall-independence is "
+        "not applicable. The note contains two separately scoped exact "
+        "boundaries, not unresolved or load-bearing conditions: ("
         f"{COMPLEX_FAITHFULNESS_BOUNDARY}; {BARE_UNITARY_BOUNDARY}); "
-        "left_closes_right=false; right_closes_left=false; independent=true; "
         "the standard Hermitian Pauli action retains a four-dimensional "
         "complex kernel, while the non-Hermitian similar action independently "
         "has a nonscalar Gram matrix."
@@ -659,15 +709,25 @@ def main() -> int:
     )
 
     generator_closure = []
-    for element, gamma in itertools.product(basis, gammas):
-        generator_closure.extend(
-            [
-                in_span(algebra_product(element, gamma), basis),
-                in_span(algebra_product(gamma, element), basis),
-            ]
-        )
+    for element_mask, gamma_mask in itertools.product(
+        CANONICAL_MASKS, (1, 2, 4)
+    ):
+        for left_mask, right_mask in (
+            (element_mask, gamma_mask),
+            (gamma_mask, element_mask),
+        ):
+            expected_sign, expected_mask = WORD_PRODUCT_TABLE[left_mask][right_mask]
+            generator_closure.append(
+                vector_eq(
+                    algebra_product(
+                        basis_by_mask[left_mask],
+                        basis_by_mask[right_mask],
+                    ),
+                    expected_sign * basis_by_mask[expected_mask],
+                )
+            )
     check(
-        "A4 left/right multiplication by every generator closes on the eight words",
+        "A4 left/right generator products match the independent canonical-word reducer",
         sum(int(result) for result in generator_closure) == len(generator_closure),
         f"{sum(int(result) for result in generator_closure)}/"
         f"{len(generator_closure)} products",
@@ -1162,10 +1222,38 @@ def main() -> int:
         and same_span(gram_commutant, [Matrix([1, 0, 0, 1])]),
         f"commutant dimension={len(gram_commutant)}",
     )
-    positive_scalar = symbols("positive_scalar", positive=True)
+    normalization_witness = Matrix([[0, 2 * I], [2, 0]])
+    normalization_gram = adjoint(normalization_witness) * normalization_witness
+    normalization_scalar = simplify(normalization_gram.trace() / 2)
+    normalized_witness = normalization_witness / sp.sqrt(normalization_scalar)
+    witness_images = [
+        normalization_witness * sigma * normalization_witness.inv()
+        for sigma in pauli
+    ]
+    normalized_witness_images = [
+        normalized_witness * sigma * normalized_witness.inv()
+        for sigma in pauli
+    ]
     check(
-        "F2 H=cI with c>0 gives U=T/sqrt(c) and U^dagger U=I",
-        matrix_eq((positive_scalar * identity_2) / positive_scalar, identity_2),
+        "F2 computed scalar Gram normalizes a nontrivial exact intertwiner by sqrt(c), not c",
+        normalization_scalar.is_positive is True
+        and matrix_eq(
+            normalization_gram,
+            normalization_scalar * identity_2,
+        )
+        and matrix_eq(
+            adjoint(normalized_witness) * normalized_witness,
+            identity_2,
+        )
+        and all(
+            matrix_eq(left, right)
+            for left, right in zip(witness_images, normalized_witness_images)
+        )
+        and not matrix_eq(
+            adjoint(normalization_witness / normalization_scalar)
+            * (normalization_witness / normalization_scalar),
+            identity_2,
+        ),
     )
 
     nonunitary = Matrix([[2, 0], [0, 1]])
@@ -1345,11 +1433,11 @@ def main() -> int:
         and len(gram_commutant) == 1
         and same_span(gram_commutant, [Matrix([1, 0, 0, 1])])
         and matrix_eq(
-            (positive_scalar * identity_2) / positive_scalar,
+            adjoint(normalized_witness) * normalized_witness,
             identity_2,
         )
     )
-    walls_independent = (
+    boundaries_scoped = (
         plus_kernel_dimension == minus_kernel_dimension == 4
         and pauli_hermitian
         and nonunitary_boundary_witness
@@ -1437,7 +1525,6 @@ def main() -> int:
         "minus_ideal_dimension": minus_ideal_dimension,
         "combined_map_rank": combined_map_rank,
     }
-    expected_resolutions = make_resolution_records(**resolution_kwargs)
     resolutions = make_resolution_records(**resolution_kwargs)
     missing_resolution = tuple(
         record
@@ -1465,25 +1552,19 @@ def main() -> int:
         replace(
             resolutions[-1],
             disposition="PROVED",
-            description=resolutions[-1].description.replace(
-                "scope exclusion is tested",
-                "a false scope promotion mutation is injected",
+            description=(
+                "lattice_wide: a false fixture promotes the untested, excluded "
+                "resolution to a proved lattice-wide negative statement."
             ),
         ),
     )
     resolution_mutation_rejections = {
-        "missing-resolution-evidence": not resolution_records_valid(
-            missing_resolution, expected_resolutions
-        ),
-        "stale-resolution-evidence": not resolution_records_valid(
-            stale_resolution, expected_resolutions
-        ),
+        "missing-resolution-evidence": not resolution_records_valid(missing_resolution),
+        "stale-resolution-evidence": not resolution_records_valid(stale_resolution),
         "reordered-resolution-evidence": not resolution_records_valid(
-            reordered_resolution, expected_resolutions
+            reordered_resolution
         ),
-        "false-resolution-evidence": not resolution_records_valid(
-            false_resolution, expected_resolutions
-        ),
+        "false-resolution-evidence": not resolution_records_valid(false_resolution),
     }
 
     hostile_results: dict[str, bool] = {
@@ -1529,8 +1610,7 @@ def main() -> int:
     emit_development_no_go_evidence(
         routes=routes,
         resolutions=resolutions,
-        expected_resolutions=expected_resolutions,
-        walls_independent=walls_independent,
+        boundaries_scoped=boundaries_scoped,
         prior_witness_count=prior_witness_count,
         combined_map_rank=combined_map_rank,
         combined_module_reducible=combined_module_reducible,

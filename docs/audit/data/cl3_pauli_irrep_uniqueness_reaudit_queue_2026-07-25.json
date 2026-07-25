@@ -1,0 +1,44 @@
+{
+  "allowed_context_paths": [
+    "docs/audit/README.md",
+    "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+    "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+    "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+    "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+    "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+    "docs/CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md",
+    "scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py",
+    "scripts/cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.py",
+    "logs/runner-cache/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.txt",
+    "logs/runner-cache/cl3_pauli_irrep_uniqueness_n1_complete_certificate_2026-07-25.txt"
+  ],
+  "forbidden_context": [
+    "this dispatcher manifest as evidence",
+    "PR discussion as evidence",
+    "prior assistant discussion",
+    "prior audit rationales as evidence",
+    "publication-facing status summaries as evidence",
+    "generated audit queue output as evidence"
+  ],
+  "generated_date": "2026-07-25",
+  "groups": [
+    {
+      "blocked_by_group_ids": [],
+      "group_id": "cl3_pauli_irrep_uniqueness_fresh_context",
+      "order": 1,
+      "targets": [
+        {
+          "audit_question": "Fresh-context re-audit: do the current source note, exact primary runner, independent faithful-direct-sum control, and complete N1-N8 certificate establish the stated finite-dimensional Cl(3,0) algebra/module classification, real-versus-complex faithfulness boundary, and conditional unitary refinement without any proof, scope, or negative-claim discipline gap?",
+          "claim_id": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+          "current_audit_status": "unaudited",
+          "current_claim_type": "positive_theorem",
+          "current_effective_status": "unaudited",
+          "note_path": "docs/CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md"
+        }
+      ]
+    }
+  ],
+  "must_not_apply_ledger_changes_from_this_file": true,
+  "schema": "promotion_reaudit_queue.v1",
+  "status": "dispatcher_only_not_audit_verdict"
+}

@@ -4,16 +4,20 @@ purpose: discharge the runner_artifact_issue repair recorded against
   re-audit note asks for "a cached live certificate containing complete N1
   records for complex-kernel-solve, central-character-separation, and
   finite-simple-counterexamples".
-provenance: produced by an actual execution of the primary runner on this
-  tree; no record below is hand-written, reordered, or abridged.
+provenance: route and disposition records extracted from the committed primary
+  cache produced by an actual runner execution; certificate metadata is
+  authored for transport, and record indentation is normalized only.
 runner: scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py
-runner_sha256: 6eaf62118f0bf14a92574d4dbe175b2d197afdb6cf3018ed87e9ef1f0bfad6ce
+runner_sha256: 7da6a714975f1359e68e989f5b97def6e439da1e313fa368b92e55efed42c2f9
+source_cache: logs/runner-cache/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.txt
+source_cache_sha256: 459530c2e1477568fb4ba998d7c302f0f52ba426ff45dbbda93a73ec181131d5
 exit_code: 0
 n1_routes_present: 5 of 5 required route classes
 
-ALL FIVE N1 ROUTE RECORDS, COMPLETE AND VERBATIM
-(front-loaded so that neither a head slice nor a tail slice of this file
- can omit one; each line is reproduced in full, none is truncated)
+ALL FIVE N1 ROUTE RECORDS, COMPLETE AND CONTENT-IDENTICAL
+(the compact route block is front-loaded for head transport; a partial tail
+ slice that omits this block is incomplete evidence and must not be used;
+ each record is reproduced in full after indentation normalization)
 
 N1_ROUTE route_id=complex-kernel-solve; route_class=algebraic_rearrangement; honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=algebraic full-basis kernel solve for both complex actions; attempt=solve both four-by-eight complex action matrices and compare every kernel with the opposite central ideal; outcome=both exact maps have rank four and opposite-ideal kernel dimension four
 N1_ROUTE route_id=central-character-separation; route_class=symmetry_or_representation; honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=representation central-character and commutant separation; attempt=solve the central idempotent actions and every intertwiner between the plus-i and minus-i omega characters; outcome=a simple module selects one central character and the opposite-character intertwiner space is zero
@@ -21,16 +25,16 @@ N1_ROUTE route_id=finite-simple-counterexamples; route_class=numerical_or_finite
 N1_ROUTE route_id=faithful-direct-sum-carrier; route_class=alternate_carrier_or_sector; honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=alternate module carrier rho_plus direct-sum rho_minus; attempt=stack both exact complex action maps and test rank eight, invariant summands, and reducibility; outcome=the stacked carrier is faithful only because it contains both invariant chirality summands and is reducible
 N1_ROUTE route_id=gram-normalization; route_class=normalization_or_units; honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=normalization of the intertwiner Gram matrix under Hermitian generators; attempt=solve the Pauli commutant, normalize a positive scalar Gram matrix, and test the nonscalar diagonal similarity; outcome=Hermitian images force scalar normalization while the bare non-Hermitian similarity keeps a nonscalar Gram matrix
 
-N2-N8 DISPOSITIONS, COMPLETE AND VERBATIM
+N2-N8 DISPOSITIONS, COMPLETE AND CONTENT-IDENTICAL
 
-N2_DISPOSITION walls=(irreducible complexified A-module faithfulness boundary; bare complex-linear equivalence to unitary equivalence boundary); left_closes_right=false; right_closes_left=false; independent=true; the standard Hermitian Pauli action retains a four-dimensional complex kernel, while the non-Hermitian similar action independently has a nonscalar Gram matrix.
+N2_DISPOSITION open_walls=0; pairwise wall-independence is not applicable. The note contains two separately scoped exact boundaries, not unresolved or load-bearing conditions: (irreducible complexified A-module faithfulness boundary; bare complex-linear equivalence to unitary equivalence boundary); the standard Hermitian Pauli action retains a four-dimensional complex kernel, while the non-Hermitian similar action independently has a nonscalar Gram matrix.
 N3_DISPOSITION hidden-wall scan closed for the finite algebra certificate: exact inputs are the displayed Clifford relations and finite-dimensional unital complex modules; Hermitian generators are kept explicit only for the conditional unitary refinement; no physical carrier, primitive, imported value, or lattice limit enters.
 N4_DISPOSITION prior_witnesses=0; every N1 route is ATTEMPTED in the current execution, so no prior residual is reused or mismatched.
 N5_RESOLUTION per_element: each exact irreducible action kills a computed nonzero opposite-ideal element, with kernel dimensions (4,4); this proves the complexified faithfulness boundary element by element.
 N5_RESOLUTION per_site: one abstract algebra copy has computed real ranks (8,8) while both complexified kernels remain nonzero; this site-shaped check is formal and does not identify a physical site carrier.
 N5_RESOLUTION per_mode: the exact central-action solve has 2 chirality choices and forces a simple module to choose exactly one, so the opposite chirality mode lies in its kernel.
 N5_RESOLUTION per_block: the two computed central blocks have dimensions (4,4); their direct-sum action has rank 8, while either irreducible block action kills the other block exactly.
-N5_RESOLUTION lattice_wide: scope exclusion is tested against the live certificate: it contains one 8-dimensional abstract algebra factor and zero lattice extensions, so neither negative boundary is promoted to a physical lattice-wide statement.
+N5_RESOLUTION lattice_wide: NOT TESTED and outside the theorem scope; no lattice-wide negative statement is made. The note expressly limits both boundaries to the abstract finite-algebra/module classification.
 N6_DISPOSITION partial-closure paths are explicit and require no new axiom, primitive, admission class, or imported value: stacking rho_+ direct-sum rho_- gives exact complex map rank 8 but is reducible, while the named Hermitian-generator condition gives the unitary refinement without changing the four-dimensional kernel of either irreducible complexified action.
 N7_STEELMAN_ARGUMENT mechanism=alternate module carrier rho_plus direct-sum rho_minus; attempt=stack both exact complex action maps and test rank eight, invariant summands, and reducibility; argument=a hostile reader can stack both chiral actions and obtain a faithful representation, apparently contradicting the stated complexified faithfulness boundary.
 N7_STEELMAN_RESOLUTION irreducible complexified A-module faithfulness boundary resolved: the stacked action has rank 8 precisely because it contains both central summands, and the computed invariant two-dimensional summands make it reducible; each irreducible action still has a four-dimensional opposite-ideal kernel.

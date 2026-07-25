@@ -19,7 +19,7 @@ file per claim), summarized in
 | Retained positive rows | 116 |
 | Retained bounded rows | 344 |
 | Retained no-go rows | 0 |
-| Boxed decorations under retained parents | 27 |
+| Boxed decorations under retained parents | 28 |
 
 ## Retained positive rows (116)
 
@@ -495,7 +495,7 @@ Sorted by load-bearing graph score (descending).
 
 - none at present
 
-## Boxed decorations under retained parents (27)
+## Boxed decorations under retained parents (28)
 
 - [`left_handed_charge_matching_note`](../../docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md) — score 29.103; audited 2026-05-24T20:35:17.186937+00:00; under `graph_first_su3_integration_note`
 - [`ew_current_fierz_channel_decomposition_note_2026-05-01`](../../docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md) — score 22.751; audited 2026-05-23T14:25:12.301143+00:00; under `graph_first_su3_integration_note`
@@ -524,3 +524,4 @@ Sorted by load-bearing graph score (descending).
 - [`koide_rho_delta_dimensionless_dof_ratio_bridge_bounded_note_2026-05-25`](../../docs/KOIDE_RHO_DELTA_DIMENSIONLESS_DOF_RATIO_BRIDGE_BOUNDED_NOTE_2026-05-25.md) — score 0.000; audited 2026-07-25T17:52:11.054837+00:00; under `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09`
 - [`lh_doublet_eigenvalue_ratio_proof_walk_lattice_independence_bounded_note_2026-05-10`](../../docs/LH_DOUBLET_EIGENVALUE_RATIO_PROOF_WALK_LATTICE_INDEPENDENCE_BOUNDED_NOTE_2026-05-10.md) — score 0.000; audited 2026-07-25T12:39:32.935228+00:00; under `lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02`
 - [`lhcm_matter_assignment_block_proof_walk_lattice_independence_bounded_note_2026-05-10`](../../docs/LHCM_MATTER_ASSIGNMENT_BLOCK_PROOF_WALK_LATTICE_INDEPENDENCE_BOUNDED_NOTE_2026-05-10.md) — score 0.000; audited 2026-05-24T21:03:48.233481+00:00; under `graph_first_su3_integration_note`
+- [`wilson_generator_rescaling_beta_transformation_narrow_theorem_note_2026-06-16`](../../docs/WILSON_GENERATOR_RESCALING_BETA_TRANSFORMATION_NARROW_THEOREM_NOTE_2026-06-16.md) — score 0.000; audited 2026-07-25T20:04:45.384269+00:00; under `wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07`

@@ -1,44 +1,66 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T20:04:45.384269+00:00",
+  "audit_invocation_history": [
+    "3b4f6d1fa778484d8d7501ff433f10ed"
+  ],
+  "audit_invocation_id": "3b4f6d1fa778484d8d7501ff433f10ed",
+  "audit_state_snapshot": {
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07": "For every finite Gram-normalized Hermitian matrix family with real coefficients and n>=1, the defined trace deficit has the stated derivatives, quadratic coefficient, global fourth-order remainder bound, and homogeneous rescaling coefficient."
+    },
+    "dep_claim_type": {
+      "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07": "retained"
+    },
+    "deps": [
+      "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 0.0,
+    "runner_hash": "92d8459fff4336fe7842057d54464614a9bf5ef38bf2816ad18c37adbac659e0",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_decoration",
+  "auditor": "codex-audit-batch-A-20260725-b4031dcc",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The retained parent supplies q(w,s,n)=ws^2/(4n), and the claimed transformations follow by direct substitution and trace bilinearity. The result closes only as an algebraic corollary of that parent.",
   "claim_id": "wilson_generator_rescaling_beta_transformation_narrow_theorem_note_2026-06-16",
-  "claim_scope": null,
-  "claim_type": "positive_theorem",
+  "claim_scope": "For n>=1 and w,s,c>0, q(c^2w,s/c,n)=q(w,s,n) for a fixed half-Gram family; under T'=cT and s'=s/c, the exponent and q_kappa are invariant at fixed w and scale by c^2 when w'=c^2w.",
+  "claim_type": "decoration",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T20:04:45.384269+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
-  "decoration_parent_claim_id": null,
+  "decoration_parent_claim_id": "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07",
   "deps": [
     "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07"
   ],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "decoration_under_wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07",
+  "effective_status_reason": "decoration_parent_retained",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "decoration_under_wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The transformation follows from (c^2 w)(s/c)^2=w s^2, (s/c)(cT_a)=sT_a, and trace bilinearity.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "a835a24fc547b43bd9bd6918010730687b5f4bd7ff7e81f58870be85d146b292",
   "note_path": "docs/WILSON_GENERATOR_RESCALING_BETA_TRANSFORMATION_NARROW_THEOREM_NOTE_2026-06-16.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "runner_artifact_issue: provide complete unclipped primary-runner stdout; retain the classification as a decoration under the cited parent unless independent content is added.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -98,14 +120,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
+    "A": 71,
+    "B": 20,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 91
   },
   "runner_path": "scripts/wilson_generator_rescaling_beta_transformation_2026_06_16.py",
   "title": "Formal Scalar-Argument Rescaling and Gram Transformation",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "The retained authority supplies the native coefficient, and this note only substitutes the paired scalar rescaling and applies trace bilinearity to the generator rescaling. The runner contains 71 algebraic checks and 20 source or authority-surface checks, with no first-principles or external-comparator checks. The chain is correct but reduces to one retained parent plus standard algebra, so it is an exact algebraic decoration; the clipped evidence also independently forbids audited_clean."
 }

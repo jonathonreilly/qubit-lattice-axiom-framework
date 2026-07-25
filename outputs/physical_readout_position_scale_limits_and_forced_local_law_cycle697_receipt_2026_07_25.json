@@ -1,0 +1,59 @@
+{
+ "audit": "unset",
+ "authority": "none",
+ "conclusion": "Record additivity plus Lattice covariance plus range-1 locality determines any record-sourced scalar law up to two constants, and up to overall scale alone once the law is offset-insensitive. The same readout clause cannot supply a nonconstant field or any dimensionless value: those are two distinct supplied objects.",
+ "cycle": 697,
+ "cycle_claim": null,
+ "fail_count": 0,
+ "firewalls": {
+  "carrier_or_source_action_identified": false,
+  "dynamics_or_measurement_claimed": false,
+  "gravity_or_koide_lane_status_changed": false,
+  "new_axiom_or_primitive_proposed": false,
+  "site_anchored_readout_supplied": false
+ },
+ "forced_local_law": "range-1 locality + lattice covariance + additivity gives a 2-dimensional operator family span{I, Laplacian}; adding offset-insensitivity forces the Laplacian ray, leaving only overall scale",
+ "invariant_local_kernel_dimension_by_radius_squared": {
+  "1": {
+   "invariant_dimension": 2,
+   "orbits": 2,
+   "points": 7
+  },
+  "2": {
+   "invariant_dimension": 3,
+   "orbits": 3,
+   "points": 19
+  },
+  "3": {
+   "invariant_dimension": 4,
+   "orbits": 4,
+   "points": 27
+  },
+  "4": {
+   "invariant_dimension": 5,
+   "orbits": 5,
+   "points": 33
+  },
+  "5": {
+   "invariant_dimension": 6,
+   "orbits": 6,
+   "points": 57
+  },
+  "6": {
+   "invariant_dimension": 7,
+   "orbits": 7,
+   "points": 81
+  }
+ },
+ "no_dimensionless_readout": "duplication-invariance and additivity intersect only at zero, so no nonzero Record readout is dimensionless; a dimensionless target needs a supplied reference readout and reference collection",
+ "normalization_escape": "supplying a unit makes the record-count readout a candidate reference; the quotient is then duplication-invariant, but different admissible references give different values, so the choice is load-bearing",
+ "pass": true,
+ "pass_count": 11,
+ "position_blindness": "a content-only readout at every site forces a constant field; a nonconstant record-sourced field requires a supplied site-anchored readout",
+ "resources": {
+  "elapsed_seconds": 0.6262208329280838
+ },
+ "rotation_group_order": 24,
+ "runner_sha256": "4d7904425920f97a380de501e6a9a14af10f724a1eb2c360b76ba144943d6fb6",
+ "two_limits_independent": true
+}

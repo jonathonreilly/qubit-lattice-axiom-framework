@@ -105,6 +105,47 @@ The proof adds no axiom, approved primitive, selector, convention, imported
 value, or physical identification. Its only inputs are the displayed finite
 definitions and exact finite-dimensional linear algebra.
 
+## Discipline packet evidence (N1-N8)
+
+The same execution emits structured route and resolution evidence for the negative
+content of the Authority limit. The wall referenced throughout is
+**position-diagonality in the site basis**.
+
+Five distinct mechanism classes are attempted in the current cycle, each executed
+symbolically rather than argued:
+
+| Route | Mechanism class | Outcome against the wall |
+|---|---|---|
+| R1 | `diagonal_polynomial_algebra` | blocked: `<psi_k, diag(u) diag(v) diag(x) psi_k> = (1/8) sum_n u_n v_n x_n` for every `k` |
+| R2 | `offdiagonal_translation_observable` | reaches label separation, `<psi_k, T_mu psi_k> = (-1)^(k_mu)`, but every `T_mu` has zero site-basis diagonal |
+| R3 | `mixed_state_convex_combination` | blocked: `tr(rho O)` for `rho = sum_k p_k P_k` depends on `rho` only through `sum_k p_k` |
+| R4 | `eigenbasis_degeneracy_rigidity` | blocked: with all three generators every joint eigenspace has dimension `1` |
+| R5 | `lattice_extent_variation` | blocked: the `Z_L^3` construction gives profile `1/L^3` and expectation `(1/L^3) sum_n w_n` for `L = 2, 3, 4` |
+
+R2 and R4 carry the discriminating content. R2 locates the wall rather than crossing
+it: an observable that does separate the eight character labels exists, and it is off
+the position diagonal. R4 shows the uniform profile is forced by using all three
+translations rather than assumed — dropping to the two-generator subgroup `{T_x, T_y}`
+raises every joint eigenspace to dimension `2` and admits the simultaneous eigenvector
+`(psi_000 + psi_001)/sqrt(2)`, whose position profile
+
+```text
+(1/4, 0, 1/4, 0, 1/4, 0, 1/4, 0)
+```
+
+is not uniform. The runner prints this witness and gates it.
+
+The negative sentence of the Authority limit is tested at all five resolution classes
+`per_element`, `per_site`, `per_mode`, `per_block`, and `lattice_wide`: single-site
+operators `|n><n|` have expectation `1/8` in every character; the site-resolved profile
+is uniform; the symbolic diagonal expectation takes one value across all eight modes;
+the supplied `K_1` block average equals both its complement average and the whole-cell
+average; and `d<psi_k, O psi_k>/dw_n = 1/8` for every `k` and `n`, so the expectation
+depends on the weights through `sum_n w_n` alone.
+
+The residual left open here is whether `T_mu` is a physical observable, which belongs to
+a separate authority surface.
+
 ## Verification and mutation controls
 
 Run the exact certificate:
@@ -116,7 +157,7 @@ python3 scripts/flavor_carrier_momentum_type_from_translation_2026_06_15.py
 Expected:
 
 ```text
-TOTAL: PASS=10 FAIL=0
+TOTAL: PASS=21 FAIL=0
 ```
 
 The same runner exposes reviewer-reproducible mutations for translation-step

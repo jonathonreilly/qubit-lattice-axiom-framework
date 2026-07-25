@@ -1,12 +1,6 @@
 {
  "audit": "unset",
  "authority": "none",
- "axes": {
-  "A_electroweak_weight": "same normal form, different partition; a second class-A axis",
-  "A_readout_weight": "Record readout surface; one parameter per declared two-cell partition; discharged by a counting convention",
-  "B_activation_scale": "occurrence/probability surface; needs a formation or rate law, not a readout convention",
-  "C_generator_normalization": "gauge algebra surface; discharged by a unit convention"
- },
  "class_A_value_table": {
   "1/2": {
    "kappa": "2",
@@ -17,71 +11,30 @@
    "r": "1"
   }
  },
- "conclusion": "The repo's normalization residuals are not one reference choice. They are at least four parameters in three classes on three different supplied surfaces, with pairwise-disjoint defining relations and a product solution set. A counting convention that fixes the readout weight discharges neither the activation scale nor the generator normalization, so the flagship lanes do not unblock together.",
+ "conclusion": "Every number the map quotes is recomputed here from the relation its source states. The map does NOT prove the residuals independent; an earlier draft claimed that from symbol disjointness and the claim is withdrawn as true by construction. What remains is a recomputed inventory plus a recorded corpus search reporting which pairs no landed note links, including two distinct objects both written w.",
  "cycle": 701,
  "cycle_claim": null,
  "fail_count": 0,
  "firewalls": {
-  "claims_completeness_of_the_axis_list": false,
+  "claims_completeness_of_the_residual_list": false,
+  "claims_independence_or_product_structure": false,
   "convention_adopted": false,
+  "identifies_readout_weight_with_formation_weight": false,
   "lane_status_changed": false,
   "new_axiom_or_primitive_proposed": false,
   "value_selected": false
  },
  "pass": true,
- "pass_count": 8,
- "product_structure_combinations": [
-  {
-   "a_act": "1",
-   "all_three_satisfied": true,
-   "alpha": "1/3",
-   "w": "1/3"
-  },
-  {
-   "a_act": "1",
-   "all_three_satisfied": true,
-   "alpha": "1",
-   "w": "1/3"
-  },
-  {
-   "a_act": "1/5",
-   "all_three_satisfied": true,
-   "alpha": "1/3",
-   "w": "1/3"
-  },
-  {
-   "a_act": "1/5",
-   "all_three_satisfied": true,
-   "alpha": "1",
-   "w": "1/3"
-  },
-  {
-   "a_act": "1",
-   "all_three_satisfied": true,
-   "alpha": "1/3",
-   "w": "1/2"
-  },
-  {
-   "a_act": "1",
-   "all_three_satisfied": true,
-   "alpha": "1",
-   "w": "1/2"
-  },
-  {
-   "a_act": "1/5",
-   "all_three_satisfied": true,
-   "alpha": "1/3",
-   "w": "1/2"
-  },
-  {
-   "a_act": "1/5",
-   "all_three_satisfied": true,
-   "alpha": "1",
-   "w": "1/2"
-  }
- ],
- "resources": {
-  "elapsed_seconds": 0.07354216696694493
+ "pass_count": 7,
+ "residuals": {
+  "a_act": "activation scale on the occurrence/probability surface, with |b| slaved to it by the AC target",
+  "alpha": "hypercharge generator normalization on the gauge algebra surface",
+  "kappa_EW": "electroweak weighting, same two-cell shape on a different partition, with its own supplied map K_EW",
+  "w_formation": "Koide flow/formation weight; formation surface; same bijection to kappa, identification with w_readout NOT established here",
+  "w_readout": "C2 two-cell readout weighting; Record readout surface"
  },
- "runner_sha256": "4b0aa6819c085cf0f14a09cecd74b57046c837b207d46576a52d7c4caab59752"
+ "resources": {
+  "elapsed_seconds": 0.08419037493877113
+ },
+ "runner_sha256": "5229152f8d749bb85b7cb428e33b47d1b7605a66e533cd32cbdc738c146cb360"
 }

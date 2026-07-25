@@ -177,7 +177,7 @@ def sp_diag(signfn, coords, N):
 
 
 def compose(a, b):
-    """(a then b) as signed perms acting as matrices U_a then U_b: U_b U_a."""
+    """Matrix product U_a @ U_b; on column vectors b acts first, then a."""
     pa, sa = a
     pb, sb = b
     return (pb[pa], sa * sb[pa])
@@ -253,13 +253,14 @@ def build_group(lat):
 
     allbits = list(itertools.product([0, 1], repeat=6))
 
-    # enumerate candidate signed perms diag(SF) @ base @ trans, keep those commuting w/ D2
+    # enumerate candidate signed perms U_base @ U_sign @ U_translation,
+    # keeping those that commute with D2
     commuting = {}
     for base in bases:
         base_sp = sp_from_fmap(base, lambda x: 1, coords, idx, N)
         for bits in allbits:
             sf = sp_diag(make_signfn(bits), coords, N)
-            g0 = compose(base_sp, sf)  # base then sign diag
+            g0 = compose(base_sp, sf)  # U_base @ U_sign
             for t in trans:
                 g = compose(g0, t)
                 if commutes_with_D2(g, D2):
@@ -682,9 +683,9 @@ def main():
          "S_eps D2 S_eps = -D2, chi_sgn(S_eps) = -1")
 
     # B8: H is NOT the maximal signed-permutation symmetry group of D2 — explicit
-    # witness: the sign field (-1)^(x0*x1 + x0) applied first, then the four-fold
-    # rotation r4: x -> (x1, -x0, x2), commutes with D2 exactly (chi_sgn = +1)
-    # yet lies outside H
+    # witness g_r4 = diag((-1)^(x0*x1 + x0)) @ R4, where R4 implements
+    # r4: x -> (x1, -x0, x2). Thus R4 acts first and the sign field second on
+    # column vectors. This commutes with D2 exactly (chi_sgn = +1) yet lies outside H.
     r4_perm = sp_from_fmap(lambda x: (x[1], -x[0], x[2]), lambda x: 1,
                            lat["coords"], lat["idx"], N)
     r4_sign = sp_diag(lambda x: (-1) ** (int(x[0]) * int(x[1]) + int(x[0])),

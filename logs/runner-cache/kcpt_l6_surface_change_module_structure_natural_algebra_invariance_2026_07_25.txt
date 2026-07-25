@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/kcpt_l6_surface_change_module_structure_natural_algebra_invariance_2026_07_25.py
-runner_sha256: b1ecfa9697390b7af4d937db4367060871b6e0df9c9c3f0706c97f03d7402955
-timeout_sec: 300
+runner_sha256: 5038b43702ee24973c53cbc3b774e7a932e0c35e35c0f518013ad044a2d4ae53
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 80.19
+elapsed_sec: 81.60
 status: ok
 ----- stdout -----
 [info] L=6 built: N=216, M spectrum [0, -3, -6, -9], shell mults [8, 48, 96, 64] (0s)
@@ -21,7 +21,7 @@ status: ok
 [GATE B6] PASS -- chi_sgn multiplicative on 400 seeded pairs
 [GATE B7] PASS -- S_eps D2 S_eps = -D2, chi_sgn(S_eps) = -1
 [GATE B8] PASS -- dressed-r4 witness: commutes with D2 True, in H False (H not maximal)
-[info] End_H: char c_H=19, dim c_H=19, c_m(char)=[1, 4, 8, 6], c_m(dim)=[1, 4, 8, 6] (64s)
+[info] End_H: char c_H=19, dim c_H=19, c_m(char)=[1, 4, 8, 6], c_m(dim)=[1, 4, 8, 6] (65s)
 [GATE C1] PASS -- c_H=19 (char & dim), c_m=[1, 4, 8, 6], cross-shell Hom max 1.8e-16, 19=1+4+8+6
 [GATE C2s7] PASS -- isotypic tables seed 7: m0:[(8, 1)]; m1:[(24, 2)]; m2:[(12, 1), (12, 1), (12, 1), (12, 1), (24, 2)]; m3:[(8, 1), (8, 1), (24, 2)]
 [GATE C2s1234] PASS -- isotypic tables seed 1234: m0:[(8, 1)]; m1:[(24, 2)]; m2:[(12, 1), (12, 1), (12, 1), (12, 1), (24, 2)]; m3:[(8, 1), (8, 1), (24, 2)]
@@ -44,8 +44,8 @@ status: ok
 [GATE E7a] PASS -- overlap^2(A_nat, 9 complement dirs) max 8.15e-31
 [GATE E7b] PASS -- sep6 + 6 quartet diffs blind: overlap^2 max 5.89e-32
 [GATE E8] PASS -- augmented A_nat basis: overlap^2(aug, sep6) = 1.000000000000
-[info] section E done (1s)
-[info] wall-clock 80.0s, peak RSS 0.48 GB
+[info] section E done (2s)
+[info] wall-clock 81.4s, peak RSS 0.40 GB
 TOTAL: PASS=34 FAIL=0
 
 ----- stderr -----

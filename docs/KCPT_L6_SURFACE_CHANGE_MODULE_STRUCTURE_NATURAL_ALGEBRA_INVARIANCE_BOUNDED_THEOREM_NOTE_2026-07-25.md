@@ -47,11 +47,13 @@ UR: x ↦ (x₁, x₂, x₀), and the sign fields are the 64 quadratic character
 (−1)^{a·x + Σ b_{ij} x_i x_j}. It has order 2592 = 6³·12, and H = ⟨G_amb, S_eps⟩ has order
 5184 with [H : G_amb] = 2. The kernel of χ_sgn on H is exactly G_amb, and χ_sgn(S_eps) = −1.
 
-H is a symmetry group of D2, not the maximal one: an explicit dressed four-fold rotation —
-the sign field (−1)^{x₀x₁ + x₀} applied first, then r4: x ↦ (x₁, −x₀, x₂) — commutes with
-D2 exactly (χ_sgn = +1) yet lies outside H, on the L = 6 and the L = 4 surface alike
-(gates B8, E4b). All group-level counts in this note are therefore statements about this
-H, the lane's fixed comparison group, not about the full symmetry group of D2.
+H is a symmetry group of D2, not the maximal one: an explicit dressed four-fold rotation
+g_r4 = diag((−1)^{x₀x₁ + x₀}) R4, with R4 implementing
+r4: x ↦ (x₁, −x₀, x₂), commutes with D2 exactly (χ_sgn = +1) yet lies outside H, on the
+L = 6 and the L = 4 surface alike (gates B8, E4b). Under the runner's dense column-vector
+convention, R4 acts first and the sign field acts second. All group-level counts in this
+note are therefore statements about this H, the lane's fixed comparison group, not about
+the full symmetry group of D2.
 
 The runner is self-contained: it rebuilds every L = 6 object above from scratch, and also
 rebuilds the entire L = 4, N = 64 surface (adjacency, shells, complex structure, group,

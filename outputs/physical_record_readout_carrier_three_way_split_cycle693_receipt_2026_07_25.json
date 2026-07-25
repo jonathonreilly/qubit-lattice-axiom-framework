@@ -1,28 +1,24 @@
 {
- "algebra_product": "NOT entailed; unnamed third input (non-isomorphic models exhibited)",
+ "additive_factorization": "derived for each supplied additive scalar codomain and realized content set",
+ "algebra_product": "not selected by the additive Record reduct; parent already names pointwise multiplication",
  "audit": "unset",
  "authority": "none",
- "carrier": "derived from (D)+(A)+(Z)",
- "conclusion": "Record's determinacy and additivity genuinely derive the complex-linear readout carrier on record contents. They do not entail a finite alphabet, and they do not entail any algebra product -- not even up to isomorphism. The obligation should be re-stated over three inputs, one of which it already has for free.",
+ "complex_scalar_carrier": "not derived by Record; scalar codomain and operational closure remain inputs",
+ "conclusion": "Record derives singleton-content factorization for each supplied additive scalar codomain. It does not by itself supply a finite content alphabet, a complex operational carrier, or a physical event-algebra product identification.",
  "cycle": 693,
  "cycle_claim": null,
  "fail_count": 0,
- "finite_alphabet": "NOT entailed; supplied input (countermodel exhibited)",
+ "finite_alphabet": "not entailed; full-framework infinite-content countermodel exhibited",
  "firewalls": {
   "dynamics_probability_or_measurement_claimed": false,
   "new_axiom_or_primitive_proposed": false,
   "physical_carrier_identified": false,
-  "vector_space_carrier_called_an_observable_algebra": false
+  "pointwise_product_called_unnamed_input": false
  },
  "pass": true,
  "pass_count": 6,
  "resources": {
-  "elapsed_seconds": 0.07024045800790191
+  "elapsed_seconds": 0.4951286250143312
  },
- "runner_sha256": "6aa09718f2671d8587811be4883cefed93090daacb663031b276ccf5ac7c9561",
- "three_way_split": {
-  "complex_linear_carrier_C_to_the_O": "DERIVED from Record (D)+(A)+(Z)",
-  "finite_alphabet": "NOT ENTAILED -- supplied input; infinite-alphabet countermodel satisfies every Record clause",
-  "unital_algebra_product": "NOT ENTAILED and NOT NAMED by the obligation -- non-isomorphic unital products coexist on the derived carrier"
- }
+ "runner_sha256": "d5403ebbf51d8ecfaf621d5e0983d333b8df9a7d589145095b598c530ac15ab4"
 }

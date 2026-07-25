@@ -31,8 +31,8 @@ Owner-approval history for axioms and primitives:
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3875 |
-| Applied audit verdicts | 851 |
+| Ledger rows | 3876 |
+| Applied audit verdicts | 852 |
 | Retained-grade rows, including boxed decorations | 482 |
 | Retained positive theorems | 115 |
 | Retained no-go rows | 0 |
@@ -41,7 +41,7 @@ Owner-approval history for axioms and primitives:
 | Open gates | 2 |
 | Unaudited rows | 2666 |
 | Retained-pending-chain rows | 10 |
-| Audited conditional rows | 252 |
+| Audited conditional rows | 253 |
 | Audited renaming rows | 34 |
 | Audited numerical-match rows | 11 |
 | Citation cycles detected | 58 |
@@ -54,13 +54,13 @@ Full audit-ratified row list: [`docs/repo/RETAINED_BACKBONE.md`](RETAINED_BACKBO
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 2980 |
+| Total pending rows | 2981 |
 | Ready rows | 566 |
 | Cycle-break targets | 59 |
 | Critical pending | 635 |
 | High pending | 365 |
 | Medium pending | 815 |
-| Leaf pending | 1165 |
+| Leaf pending | 1166 |
 
 Next ready rows by queue order:
 
@@ -105,7 +105,7 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 | Manifest pending removals | 0 |
 | Unmanifested candidates (need pending entries) | 0 |
 | Admitted ids absent from lane candidates | 30 |
-| Live conditional/failed rows that would park | 255 |
+| Live conditional/failed rows that would park | 256 |
 | Live rows fail-open (legacy/unversioned snapshot) | 42 |
 | Lane rows already in actual ready top-10 | 3 |
 | Lane rows added since prior pass | 0 |
@@ -333,11 +333,11 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 4509 |
+| Citation-graph nodes | 4510 |
 | Critical nodes | 755 |
 | High nodes | 444 |
 | Medium nodes | 1132 |
-| Leaf nodes | 2178 |
+| Leaf nodes | 2179 |
 
 Top load-bearing rows by graph score:
 

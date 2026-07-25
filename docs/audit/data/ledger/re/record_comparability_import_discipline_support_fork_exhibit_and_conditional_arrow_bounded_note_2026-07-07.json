@@ -1,24 +1,79 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T19:23:23.824786+00:00",
+  "audit_invocation_history": [
+    "846e4dc44aed45859d31b0a6af7b65f5"
+  ],
+  "audit_invocation_id": "846e4dc44aed45859d31b0a6af7b65f5",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true,
+      "runner_path": "scripts/record_comparability_import_discipline_support_fork_arrow_2026_07_07.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {
+      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    },
+    "dep_claim_scope": {
+      "minimal_axioms": null
+    },
+    "dep_claim_type": {
+      "minimal_axioms": "meta"
+    },
+    "dep_effective_status": {
+      "minimal_axioms": "meta"
+    },
+    "deps": [
+      "minimal_axioms"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 1.5,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/record_comparability_import_discipline_support_fork_arrow_2026_07_07.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "4275cb30e2a8ae7bcfe9d4d5f32b87c81dd9934eaa3bf6fbbd4537c1da83e3c1",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "4275cb30e2a8ae7bcfe9d4d5f32b87c81dd9934eaa3bf6fbbd4537c1da83e3c1",
+    "runner_path": "scripts/record_comparability_import_discipline_support_fork_arrow_2026_07_07.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 1
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-8b880fc5",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The finite model and graph checks close, but the load-bearing Qualification quotations do not occur in the current cited authority; the runner reports those two failures. The fork-inadmissibility inference therefore lacks its stated authority as written.",
   "claim_id": "record_comparability_import_discipline_support_fork_exhibit_and_conditional_arrow_bounded_note_2026-07-07",
-  "claim_scope": null,
+  "claim_scope": "Finite same-site fork, overlap/finite-union, and DAG-order exhibits, with fork inadmissibility audited only conditionally on treating extra countermodel furniture as premise use under the current Qualification.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem - genre label means scope-pinned per the",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T19:23:23.824786+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,19 +81,25 @@
     "minimal_axioms"
   ],
   "direct_in_degree": 1,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 1.5,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "A countermodel offered against a derivability claim is load-bearing use: the model's furniture is the premise set of the argument that the sentences do not force the conclusion.",
+  "load_bearing_step_class": "B",
   "max_descendant_status": "meta",
   "max_descendant_status_rank": 25,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls",
+    "conditional_wall_rationale",
+    "derived_no_go_boundary",
+    "no_go_result"
+  ],
   "note_hash": "ce37ba34b093896ec16eb096c9802ae49439bd9d2d80858524e73d5cd786e89d",
   "note_path": "docs/RECORD_COMPARABILITY_IMPORT_DISCIPLINE_SUPPORT_FORK_EXHIBIT_AND_CONDITIONAL_ARROW_BOUNDED_NOTE_2026-07-07.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "runner_artifact_issue: Update the note's purported verbatim Qualification quotations and both runner needles to the current Minimal Axioms text, then re-audit whether that text supports the countermodel-furniture premise judgment.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -100,14 +161,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
+    "A": 41,
+    "B": 39,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 80
   },
   "runner_path": "scripts/record_comparability_import_discipline_support_fork_arrow_2026_07_07.py",
   "title": "Record Comparability: Import-Discipline Support, Fork Exhibit, And Conditional Arrow Substrate",
   "transitive_descendants": 1,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: The load-bearing Qualification quotations are stale: runner CHECK 1 finds that the current authority contains neither asserted sentence verbatim, producing two failures and exit 1; N1 enumerates five routes, but their closure rests on that missing authority text. Why this blocks: fork inadmissibility and the A1/A2 consequences depend on treating co-realization and successor furniture as barred premise use; N2 keeps that judgment independent of the supplied-DAG wall, N3 exposes the stale quotation as an authority gap, and N4 otherwise matches the disclosed residuals. Repair target: replace the quotations and runner needles with the current Qualification, then re-establish the premise-use judgment; N5's scoped vocabulary and N6's unexercised clarification route do not cure the gap, N7's per-state steelman therefore remains unresolved, and N8 supplies no applicable retirement mechanism that restores the missing citation. Claim boundary until fixed: the finite fork, finite-union, and conditional DAG computations are supported, but Model B's inadmissibility and the resulting comparability consequences are not retained from the supplied authority."
 }

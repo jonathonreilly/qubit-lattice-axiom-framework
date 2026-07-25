@@ -1,6 +1,6 @@
 {
- "edge_count": 15053,
- "node_count": 4502,
+ "edge_count": 15055,
+ "node_count": 4503,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -5017,6 +5017,10 @@
   "full128_local_m64_seam_m2_bare_frame_intertwiner_bounded_theorem_note_2026-07-24": {
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
+  },
+  "full128_two_rail_fixed_law_compositional_induction_bounded_theorem_note_2026-07-24": {
+   "deps_hash": "39bd4d637769",
+   "out_degree": 2
   },
   "full_pl_s3_atlas_cocycle_closure_theorem_note_2026-05-03": {
    "deps_hash": "3201cbadbd12",

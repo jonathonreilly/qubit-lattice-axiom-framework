@@ -1,42 +1,90 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T15:49:06.496700+00:00",
+  "audit_invocation_history": [
+    "a1180406afc144e18e2ad5687fdaad54"
+  ],
+  "audit_invocation_id": "a1180406afc144e18e2ad5687fdaad54",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true,
+      "runner_path": "scripts/record_occurrence_thinned_iid_frequency_bridge_2026_07_01.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 1.5,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/record_occurrence_thinned_iid_frequency_bridge_2026_07_01.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "ef852be4362d794b5a22a3669b38d1a61126640d5686f534ed2a93fce0d3b924",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "ef852be4362d794b5a22a3669b38d1a61126640d5686f534ed2a93fce0d3b924",
+    "runner_path": "scripts/record_occurrence_thinned_iid_frequency_bridge_2026_07_01.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 1
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-27bc91de",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The finite probability algebra closes, including normalization, multinomial/binomial counts, moments, conditioning for a>0 and m>0, and the a=0,1 limits. The chain fails only for the additional derived no-go boundary because its mandatory N1-N8 stress-test evidence is incomplete.",
   "claim_id": "record_occurrence_thinned_iid_frequency_bridge_2026-07-01",
-  "claim_scope": null,
+  "claim_scope": "For finite A, supplied activation a, supplied conditional law p, and supplied IID repetitions of K(bot)=1-a and K(v)=a p(v), the attempt counts are multinomial/binomial and recorded-only frequencies recover p after conditioning on M=m>0.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem \u2014 bounded support theorem / finite sparse-record normal form",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T15:49:06.496700+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 1,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 1.5,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "For N independent repetitions of the same kernel, a history w has product weight P(w)=product_i K(w_i).",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "derived_no_go_boundary"
+  ],
   "note_hash": "28d658df5804e64f508125bd5366b9363097caf05e4ed0d32fdfeb739a1344bb",
   "note_path": "docs/RECORD_OCCURRENCE_THINNED_IID_FREQUENCY_BRIDGE_2026-07-01.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "scope_too_broad \u2014 add five distinct route-specific no-go tests with live N5 resolution evidence and complete N7/N8 dispositions, or remove/recast the derived no-go sentence while preserving the clean finite theorem.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -88,14 +136,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
+    "A": 33,
+    "B": 32,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 65
   },
   "runner_path": "scripts/record_occurrence_thinned_iid_frequency_bridge_2026_07_01.py",
   "title": "Record Occurrence Thinned-IID Frequency Bridge",
   "transitive_descendants": 1,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: An independent expansion of sum K=1, the multinomial coefficients, marginal Bernoulli moments, and conditioning on M=m confirms the finite theorem, but the additional assertion that sparse records rule out a total-record model is a derived no-go boundary whose gate is incomplete. Why this blocks: N1 supplies fewer than five distinct evidenced attack mechanisms; N2 reduces to one overcorrection wall; N3's boundary, convention, normalization, primitive, and sector language is non-load-bearing scope disclosure; N4 has no prior witness residual; N5 lacks live per-element, per-site, per-mode, per-block, and lattice-wide resolution lines; N6 does not replace those tests; and N7-N8 therefore do not establish exhaustive negative closure. Repair target: Add route-specific live checks and resolve the steelman and cross-cycle dispositions, or recast the negative sentence as a non-claim. Claim boundary until fixed: The supplied thinned-IID kernel yields the stated finite multinomial/binomial and conditional-frequency formulas."
 }

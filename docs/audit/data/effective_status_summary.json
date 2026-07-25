@@ -105,10 +105,10 @@
     "decoration_under_plaquette_self_consistency_note": 1,
     "meta": 356,
     "open_gate": 2,
-    "retained": 113,
+    "retained": 114,
     "retained_bounded": 339,
     "retained_pending_chain": 9,
-    "unaudited": 2680
+    "unaudited": 2679
   },
   "retained_pending_chain_count": 9,
   "retained_pending_chain_examples": [

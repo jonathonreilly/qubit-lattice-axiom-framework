@@ -206,7 +206,7 @@ class FingerprintV1StampingTest(unittest.TestCase):
             "first_audit": seat,
             "second_audit": {**seat, "auditor": "second-auditor"},
         }
-        return {
+        judgment = {
             "claim_id": CLAIM_ID,
             "third_auditor": "judicial-panel",
             "auditor_family": "codex-gpt-5.6",
@@ -225,6 +225,68 @@ class FingerprintV1StampingTest(unittest.TestCase):
             "second_auditor_error": "scope incomplete",
             "hybrid_resolution_note": "bounded fixture resolution",
         }
+        return self._attest_judgment(row, judgment)
+
+    def _attest_judgment(self, row: dict, judgment: dict) -> dict:
+        """Attach the five-vote panel attestation apply_audit now requires.
+
+        Panel-majority apply is gated on an invocation- and source-bound
+        ``judicial_panel_record_v1`` (apply_audit.judicial_panel_record_error).
+        These stamping tests only care about what the writer stamps once a
+        judicial verdict is accepted, so the record is a deterministic
+        unanimous panel over this fixture's own judgment tuple. Mirrors
+        ``test_audit_pipeline.ApplyAuditTest._attest_judgment``.
+        """
+        invocation_id = judgment.setdefault(
+            "audit_invocation_id",
+            hashlib.sha256(CLAIM_ID.encode("utf-8")).hexdigest()[:32],
+        )
+        vote = {
+            field: judgment.get(field)
+            for field in (
+                "sided_with",
+                "ratified_verdict",
+                "ratified_claim_type",
+                "ratified_claim_scope",
+                "ratified_load_bearing_step",
+                "ratified_load_bearing_step_class",
+                "negative_assertion_classes",
+                "judgment_rationale",
+                "first_auditor_error",
+                "second_auditor_error",
+                "hybrid_resolution_note",
+            )
+        }
+        votes = [
+            {
+                **copy.deepcopy(vote),
+                "judge": judge,
+                "auditor": (
+                    judgment["third_auditor"]
+                    if judge == 1
+                    else f"{judgment['third_auditor']}-seat-{judge}"
+                ),
+            }
+            for judge in range(1, 6)
+        ]
+        vote_tuple = apply_audit.audit_contract.judicial_vote_tuple(votes[0])
+        judgment["judicial_panel_record_v1"] = {
+            "schema": "judicial_panel_record_v1",
+            "cid": CLAIM_ID,
+            "panel": 1,
+            "invocation_id": invocation_id,
+            "result": "majority_candidate",
+            "disagreement_fingerprint": (
+                apply_audit.audit_contract.judicial_disagreement_fingerprint(row)
+            ),
+            "majority_count": 5,
+            "votes": votes,
+            "failures": [],
+            "tally": [
+                {"tuple": [*vote_tuple[:6], list(vote_tuple[6])], "count": 5}
+            ],
+        }
+        return judgment
 
     # -- v1 completeness and parking under unchanged current state --------
 

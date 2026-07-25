@@ -396,6 +396,33 @@ def _no_go_packet(
     return packet
 
 
+def _init_runner_repo(root: Path) -> None:
+    """Commit a fixture root so live runners get an isolated HEAD checkout.
+
+    ``codex_audit_runner._run_repo_runner`` executes every runner inside a
+    disposable ``git worktree add --detach HEAD`` checkout of ``REPO_ROOT``,
+    so a fixture that runs a runner (rather than mocking its stdout) must be
+    a real repository with at least one commit. The runner's own working-tree
+    bytes are copied into that checkout, so fixture runners need not be
+    committed themselves — only the root has to be a repo.
+    """
+    subprocess.run(["git", "init", "-q", "-b", "main"], cwd=root, check=True)
+    subprocess.run(
+        ["git", "config", "user.email", "audit-test@example.invalid"],
+        cwd=root,
+        check=True,
+    )
+    subprocess.run(
+        ["git", "config", "user.name", "Audit Test"], cwd=root, check=True
+    )
+    subprocess.run(["git", "add", "-A"], cwd=root, check=True)
+    subprocess.run(
+        ["git", "commit", "-q", "--allow-empty", "-m", "fixture baseline"],
+        cwd=root,
+        check=True,
+    )
+
+
 def _import(module_name: str):
     """Force a fresh import each test."""
     if module_name in sys.modules:
@@ -8907,6 +8934,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 "print('N7_STEELMAN_RESOLUTION selector wall resolved')\n",
                 encoding="utf-8",
             )
+            _init_runner_repo(root)
             row = {
                 "claim_id": "target",
                 "note_path": "docs/target.md",
@@ -8964,6 +8992,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 "print('N7_STEELMAN_RESOLUTION boundary resolved')\n",
                 encoding="utf-8",
             )
+            _init_runner_repo(root)
             row = {
                 "claim_id": "target",
                 "note_path": "docs/target.md",
@@ -9076,6 +9105,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 "raise SystemExit(7)\n",
                 encoding="utf-8",
             )
+            _init_runner_repo(root)
             row = {
                 "claim_id": "target",
                 "note_path": "docs/target.md",
@@ -9132,12 +9162,16 @@ class NoGoDisciplineGateTest(unittest.TestCase):
     def test_duplicate_n7_helper_declaration_runs_once_and_stays_authenticated(self):
         m = _import_codex_audit_runner()
         with tempfile.TemporaryDirectory() as tmp:
-            root = Path(tmp)
+            root = Path(tmp) / "repo"
+            root.mkdir()
             m.REPO_ROOT = root
             note_path = root / "docs" / "target.md"
             runner_path = root / "scripts" / "runner.py"
             helper_path = root / "scripts" / "helper.py"
-            counter_path = root / "invocations.txt"
+            # Runners execute under a write-deny sandbox rooted at REPO_ROOT
+            # (and in a disposable checkout), so the invocation counter has to
+            # live outside the repo to survive and to be observable here.
+            counter_path = Path(tmp) / "invocations.txt"
             note_path.parent.mkdir(parents=True, exist_ok=True)
             runner_path.parent.mkdir(parents=True, exist_ok=True)
             note_path.write_text(_no_go_evidence_text(), encoding="utf-8")
@@ -9160,6 +9194,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 "    raise SystemExit(7)\n",
                 encoding="utf-8",
             )
+            _init_runner_repo(root)
             row = {
                 "claim_id": "target",
                 "note_path": "docs/target.md",

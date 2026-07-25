@@ -1,44 +1,99 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T18:32:33.533493+00:00",
+  "audit_invocation_history": [
+    "35bbf8df44b543788d01f32aaf5abb26"
+  ],
+  "audit_invocation_id": "35bbf8df44b543788d01f32aaf5abb26",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true,
+      "runner_path": "scripts/persistent_object_adaptive_readout_probe.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {
+      "scripts/minimal_source_driven_field_probe.py": "16768d58d878f744a7092dca878fd2cb66f6bae8a73ada64ef3fd7e785208457"
+    },
+    "load_bearing_score": 0.0,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/minimal_source_driven_field_probe.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "16768d58d878f744a7092dca878fd2cb66f6bae8a73ada64ef3fd7e785208457",
+        "cache_status": "ok"
+      },
+      "scripts/persistent_object_adaptive_readout_probe.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "257e59d7dcf95453351fba08922776cab0036309605229c7e36470295a1952f1",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "257e59d7dcf95453351fba08922776cab0036309605229c7e36470295a1952f1",
+    "runner_path": "scripts/persistent_object_adaptive_readout_probe.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-2c9cf64b",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The code supports the adaptive-versus-broad finite metrics, but no cited authority derives the helper propagation, source-update, calibration, and readout choices or supplies the claimed fixed-window/taper comparison.",
   "claim_id": "persistent_object_adaptive_readout_note",
-  "claim_scope": null,
+  "claim_scope": "The bounded claim that the stated entropy-guided adaptive contour outperforms fixed windows or tapers while preserving sign, near-linear scaling, and reduced detector support on the retained compact source object.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_last_reviewed": "2026-07-25T18:32:33.533493+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [
     "scripts/minimal_source_driven_field_probe.py"
   ],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The frozen readout reports adaptive F~M = 1.04 at every update, TOWARD = 12/12, support fraction 0.264, and capture 0.351.",
+  "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "87580652e765446bf6848665228231357824d7d147737ba8b2e5e3254325532b",
   "note_path": "docs/PERSISTENT_OBJECT_ADAPTIVE_READOUT_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "missing_dependency_edge: wire the retained top-3 source-object authority and fixed-window/taper comparator as direct dependencies, rerun them under the same settings, and refresh the zero-source residual.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -87,14 +142,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 1,
     "B": 0,
-    "C": 0,
+    "C": 4,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 5
   },
   "runner_path": "scripts/persistent_object_adaptive_readout_probe.py",
   "title": "Persistent Object Adaptive Readout Note",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: The runner compares the adaptive contour only with the broad readout, not with fixed windows or Gaussian tapers, and it hard-codes the propagation, source-update, calibration, and readout choices without a cited retained derivation; the source zero-source residual also differs from current stdout. Why this blocks: the advertised comparator advantage and retained source-object provenance do not follow from the restricted packet, although the adaptive-versus-broad metrics are internally computed. Repair target: cite and wire the retained top-3 source-object authority and execute or cite the fixed-window/taper comparator under identical settings, then refresh the frozen residual. Claim boundary until fixed: the stated finite runner supports 12/12 positive adaptive shifts, fitted exponents 1.04, support fraction 0.264, capture 0.351, and a roundoff-scale zero-source shift only for its chosen model and parameters."
 }

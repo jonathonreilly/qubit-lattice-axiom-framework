@@ -1,24 +1,83 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T17:04:40.052929+00:00",
+  "audit_invocation_history": [
+    "c56340265a334dbb8fdebbcd455bbde5"
+  ],
+  "audit_invocation_id": "c56340265a334dbb8fdebbcd455bbde5",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true,
+      "runner_path": "scripts/frontier_inner_automorphism_invariance_tracial_identification.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {
+      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    },
+    "dep_claim_scope": {
+      "minimal_axioms": null,
+      "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20": "Unique tracial state on the qubit-lattice quasi-local UHF algebra A = closure of the directed union of finite tensor products over lattice sites, with every finite-region restriction equal to the normalized matrix trace; no downstream physical identification of tau_infty as a reference-state premise is audited."
+    },
+    "dep_claim_type": {
+      "minimal_axioms": "meta",
+      "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "minimal_axioms": "meta",
+      "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20": "retained"
+    },
+    "deps": [
+      "minimal_axioms",
+      "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 0.0,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_inner_automorphism_invariance_tracial_identification.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "4f1d9ea3648badaa347026492fa0866e0ad49bd5b806638ce4de64ea5a0f095d",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "4f1d9ea3648badaa347026492fa0866e0ad49bd5b806638ce4de64ea5a0f095d",
+    "runner_path": "scripts/frontier_inner_automorphism_invariance_tracial_identification.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-909ec47f",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The finite-dimensional implication is independently exact: sign conjugations eliminate off-diagonal entries, permutations equalize diagonal entries, and trace normalization fixes 1/d. However, the binding preflight identifies a clipped load-bearing cited authority, so the restricted evidence graph is incomplete.",
   "claim_id": "inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20",
-  "claim_scope": null,
+  "claim_scope": "For each finite qubit region A_Lambda ~= M_d(C), every density matrix invariant under conjugation by all U(d) equals I_d/d; no pre-record-state or quasi-local identification is ratified.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T17:04:40.052929+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -27,19 +86,20 @@
     "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20"
   ],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Full unitary-conjugation invariance makes rho commute with every U in U(d), hence rho = c I_d, and Tr rho = 1 gives c = 1/d.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "4c1e0b71ff8ef9401a4e39774f66b4eb8ef362d361df9abdebdcf84d68532da0",
   "note_path": "docs/INNER_AUTOMORPHISM_INVARIANCE_TRACIAL_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-20.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "other: this is an orchestrator packet-completeness defect, not a runner or scientific-bridge defect; regenerate the packet with the complete cited Powers UHF authority, or authenticate that citation as non-load-bearing for the finite-region-only scope, then rerun the audit.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -499,14 +559,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
+    "A": 31,
+    "B": 9,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 40
   },
   "runner_path": "scripts/frontier_inner_automorphism_invariance_tracial_identification.py",
   "title": "Inner-Automorphism Invariance Identifies the Unique Tracial State",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: the finite-region algebra is sound, but the binding packet preflight declares the cited Powers UHF authority clipped and load-bearing. Why this blocks: the complete cited-evidence graph cannot be certified from the restricted packet. Repair target: provide the full authority or authenticate its removal from the load-bearing set for this finite-only claim. Claim boundary until fixed: the runner-supported finite-dimensional implication remains valid, but this audit cannot ratify clean closure."
 }

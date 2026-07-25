@@ -86,7 +86,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "audited_failed",
-  "load_bearing_score": 13.033,
+  "load_bearing_score": 13.035,
   "load_bearing_step": "Every Hermitian H is a real combination of effects; (A) and (B) define a unique real-linear functional F on Herm(M_2) with F(E)=m(E) on effects.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -5373,6 +5373,6 @@
   },
   "runner_path": "scripts/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.py",
   "title": "Busch / CFMR Effect-Valued (POVM) Gleason Theorem On The Qubit `M_2(C)` \u2014 Reproven-From-Primitives Authority Bridge Narrow Theorem Note",
-  "transitive_descendants": 740,
+  "transitive_descendants": 741,
   "verdict_rationale": "The claim quantifies over every effect functional satisfying M1\u2013M3. Partial additivity and real homogeneity are sketched, but the indispensable, weaker-than-target extension lemma in step (C)\u2014including independence of representation and additivity on arbitrary Hermitian differences\u2014is asserted without proof. All 40 runner checks begin with an already trace-form functional, so they verify reconstruction identities inside the claimed conclusion class rather than the universal implication."
 }

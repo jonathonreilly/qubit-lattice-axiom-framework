@@ -85,7 +85,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 10.508,
+  "load_bearing_score": 10.51,
   "load_bearing_step": "T\u00b7CP = (CP)*\u00b7T = CP\u00b7T, so (CPT)\u00b2 = (CP)\u00b2\u00b7T\u00b2 = I.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -203,6 +203,6 @@
   },
   "runner_path": "scripts/cpt_squared_is_identity_check.py",
   "title": "(CPT)\u00b2 = Identity on the Framework's CPT Structure",
-  "transitive_descendants": 727,
+  "transitive_descendants": 728,
   "verdict_rationale": "The retained authority proves state-space square identities for both CPK and Theta_H=PK, but it defines the declared time-reversal representative as T_H=CK and explicitly withholds a physical H_phys/CPT identification. The runner independently checks only the four-site CPK algebra. Therefore the finite-lattice algebra closes, while the claimed identification on RP-reconstructed H_phys remains an uncited physical-space bridge."
 }

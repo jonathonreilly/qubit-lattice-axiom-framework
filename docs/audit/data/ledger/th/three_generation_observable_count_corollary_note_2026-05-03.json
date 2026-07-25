@@ -74,7 +74,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_failed",
-  "load_bearing_score": 11.907,
+  "load_bearing_score": 11.919,
   "load_bearing_step": "Any quotient preserving all retained generators has an invariant kernel, so irreducibility and a nonzero target force the kernel to vanish and preserve dimension three.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -991,6 +991,6 @@
   },
   "runner_path": "scripts/frontier_three_generation_observable_count_corollary.py",
   "title": "Three-Generation Observable Count Corollary Note",
-  "transitive_descendants": 119,
+  "transitive_descendants": 120,
   "verdict_rationale": "The finite-dimensional implication is valid only after adding a nonzero-target hypothesis; as written, the zero quotient is a counterexample. The runner masks this defect by passing the claim that Q is nonzero with a literal True rather than deriving it from the theorem's hypotheses. The restricted packet also omits both authorities that the note says supply its orbit and operator-algebra inputs. N1/N7's zero-quotient stress test defeats the strongest claim; N2 has only that quotient wall, N3/N5 expose the unstated premise behind \u201cany quotient\u201d and \u201ccannot,\u201d N4 supplies no prior witness, and N6/N8 provide no candidate that inserts the missing quantifier."
 }

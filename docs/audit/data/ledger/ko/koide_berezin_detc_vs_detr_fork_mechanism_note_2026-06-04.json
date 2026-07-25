@@ -57,7 +57,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_renaming",
-  "load_bearing_score": 11.229,
+  "load_bearing_score": 11.248,
   "load_bearing_step": "Counting the doublet as two real slots versus one complex slot is taken to give r = 1 versus r = 1/2, after which Q = (1 + 2r) / 3 gives the listed Q values.",
   "load_bearing_step_class": "F",
   "max_descendant_status": "audit_in_progress",
@@ -253,6 +253,6 @@
   },
   "runner_path": "scripts/berezin_detc_detr_fork_2026_06_04.py",
   "title": "Koide Berezin det_C vs det_R Fork Mechanism",
-  "transitive_descendants": 74,
+  "transitive_descendants": 75,
   "verdict_rationale": "Issue: the runner's r_from_slot_count(slot_count) = slot_count/2 inserts, rather than derives, the bridge from the exact real/complex mode counts to the upstream circulant parameter r; the source note never defines or proves that identification. Why this blocks: the projector, determinant, realification, and Pfaffian checks establish the 2-real-versus-1-complex count, and the retained upstream lever gives Q once r is supplied, but neither supplies the count-to-r map. Repair target: derive that map from a retained action/readout normalization or cite a retained theorem that does so, and assert it independently in the runner rather than hard-coding it. Claim boundary until fixed: the four-cell polarization/statistics slot-count separation and exact determinant/Pfaffian identities survive, but the (r, Q) branch values do not follow from the packet."
 }

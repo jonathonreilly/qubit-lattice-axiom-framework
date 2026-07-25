@@ -41,7 +41,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 15.849,
+  "load_bearing_score": 15.85,
   "load_bearing_step": "On L_s=2 spatial APBC, |det(D+m)| = prod_omega [m^2 + u_0^2 (3 + sin^2 omega)]^4, with the free-energy and condensate formulas following from this factorization.",
   "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
@@ -1544,6 +1544,6 @@
   },
   "runner_path": "scripts/frontier_hierarchy_matsubara_decomposition.py",
   "title": "Hierarchy Matsubara Decomposition Note",
-  "transitive_descendants": 921,
+  "transitive_descendants": 922,
   "verdict_rationale": "Issue: the multiplicity-four Matsubara factorization is inserted into the analytic formula and checked only on a finite L_t, u_0, and m grid, rather than derived from the matrix for general L_t. Why this blocks: the determinant identity is load-bearing for both intensive-observable formulas, so sampled machine-precision agreement cannot certify its universal exactness. Repair target: supply a symbolic Fourier/block-diagonal derivation, including mode pairing and degeneracy, or narrow the theorem to the explicitly computed cases. Claim boundary until fixed: the three formulas are strongly verified finite-case results, while endpoint selection, normalization, spatial APBC justification, and alpha_LM remain named open walls outside the audited scope."
 }

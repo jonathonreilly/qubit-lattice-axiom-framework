@@ -42,7 +42,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_failed",
-  "load_bearing_score": 15.725,
+  "load_bearing_score": 15.726,
   "load_bearing_step": "After leaf peeling, every surviving order-beta^5 nonlocal term is treated as a distinct support containing one plaquette on each observed edge plus one extra distinct plaquette.",
   "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
@@ -323,6 +323,6 @@
   },
   "runner_path": "scripts/frontier_gauge_vacuum_plaquette_mixed_cumulant_audit.py",
   "title": "Gauge-Vacuum Plaquette Mixed-Cumulant Audit and First Nonlinear Coefficient",
-  "transitive_descendants": 845,
+  "transitive_descendants": 846,
   "verdict_rationale": "N1/N7 fail because the strongest stress route\u2014one repeated insertion on a leafless four-distinct support\u2014is neither enumerated nor independently resolved; the leaf lemma handles only a leaf plaquette. N2/N4 provide no independent wall or prior residual witness closing that multiplicity sector, while N3's authenticated boundary, canonical, and does-not occurrences are non-load-bearing scope disclaimers. N5 cannot be completed from the supplied stdout because it contains no per-element, per-site, per-mode, per-block, and lattice-wide resolution tests; N6/N8 supply no retained or accepted candidate that repairs the missing calculation within this packet. Separately, the cube-coefficient function inserts the two-orientation and 3^-4 contraction factors instead of deriving them, so its equality checks do not independently verify the contested coefficient."
 }

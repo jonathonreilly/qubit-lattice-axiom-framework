@@ -63,7 +63,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "retained_bounded",
-  "load_bearing_score": 11.564,
+  "load_bearing_score": 11.566,
   "load_bearing_step": "Because D is real and P D P = -D, the antiunitary Theta_H = P K sends H = iD to P(-iD)P = iD, so its Theta_H-odd projection vanishes.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "unknown",
@@ -233,6 +233,6 @@
   },
   "runner_path": "scripts/frontier_physical_hermitian_hamiltonian_and_sme_bridge.py",
   "title": "Physical Hermitian Hamiltonian And SME Bridge",
-  "transitive_descendants": 756,
+  "transitive_descendants": 757,
   "verdict_rationale": "The runner constructs D, C, P, H, and the direction-resolved hopping matrices and evaluates the claimed identities rather than printing constants or importing a contested result. Its L=4 and L=6 checks agree exactly with the load-bearing antiunitary algebra. Clean status applies only to the explicitly narrowed Hamiltonian-proxy statement, not to the withdrawn inference that all CPT-odd SME bilinear coefficients vanish."
 }

@@ -20,6 +20,11 @@ pipeline after independent review.
 **Primary runner:**
 [`scripts/frontier_unit_singlet_overlap_narrow.py`](../scripts/frontier_unit_singlet_overlap_narrow.py)
 
+The universal sentence carried by the claim scope, quoted here once on a
+single unbroken line so that it can be resolved verbatim:
+
+every normalized standard basis vector has diagonal expectation 1 / sqrt(n)
+
 The historical filename and claim ID are retained for stable references. The
 theorem itself is stated entirely in abstract matrix language. It is not a
 theorem about a physical carrier, a Wick state, a gauge sector, or an
@@ -189,33 +194,136 @@ does not infer gauge-parameter independence: such an inference would first
 require a parameter-indexed physical bridge establishing the hypotheses for
 the relevant operator at every parameter value.
 
+## Discipline packet evidence (N1-N8)
+
+The section "Edge cases and necessity of the hypotheses" is a derived
+boundary: it states which conclusions survive when a hypothesis is dropped.
+Section `D` of the primary runner recomputes that boundary line by line, so
+every disposition below is backed by live current-cycle stdout rather than
+by prose.
+
+**N1 — alternative routes to the conclusion, five distinct mechanism
+classes.** Each is attempted by recomputation at `n = 6` and reported with
+its outcome on one line of runner output.
+
+| Route | Mechanism | Attempt | Outcome |
+|---|---|---|---|
+| `positivity_relaxation` | drop positivity, keep Hermiticity, centrality, HS-unit | recompute the central HS-unit spectrum | blocked: `min_eig = -sqrt(6)/6` |
+| `hermiticity_relaxation` | drop positivity and Hermiticity, keep centrality, HS-unit | solve the HS-unit central equation over `C` | blocked: `overlap = i sqrt(6)/6` |
+| `centrality_relaxation` | drop centrality, keep positivity and HS-unit | exhibit normalized PSD non-scalar matrices | blocked: rank-one `hs_square = 1`, contaminated `H_01 = 1/2` |
+| `normalization_substitution` | substitute the Schatten-1 trace norm for the HS norm | solve the central positive trace-unit equation | blocked: `I_6/6` has `hs_square = 1/6` |
+| `parameter_indexed_inference` | infer parameter independence from an unbridged scale `a(g)` | recompute the HS square of `a(g) I_6/sqrt(6)` | blocked: `hs_square = a(g) conj(a(g))` |
+
+**N2 — wall independence.** The four routes that mutate a hypothesis are
+blocked by one wall, `hypothesis_triple_minimality`: each of the three
+hypotheses is independently necessary, so no single relaxation is absorbed
+by the others. Runner check `D6` recomputes the hypothesis bit pattern
+`(hermitian, psd, central, hs_unit)` for four explicit witnesses and fails
+if any bit differs:
+
+| Witness | Matrix | Flags |
+|---|---|---|
+| `W1` | `-I_6/sqrt(6)` | `1011` |
+| `W2` | `i I_6/sqrt(6)` | `0011` |
+| `W3` | `diag(1,0,0,0,0,0)` | `1101` |
+| `W4` | `I_6/6` | `1110` |
+
+Route `parameter_indexed_inference` is blocked by a different and
+independent wall — the absence of a physical bridge, recorded below as the
+N4 residual — not by hypothesis minimality.
+
+**N3 — hidden-wall scan.** The standard-basis presentation used in the
+proof is not a hidden wall. Section `B` of the runner rebuilds the common
+commutant from random-unitary conjugation constraints at `n = 1, 2, 3, 6`,
+with no privileged basis, and recovers the same one-dimensional commutant
+and the same normalization.
+
+**N4 — residual.** `physical_bridge_absent`, matched to the section
+"Framework and physical boundary". This is the residual that a future
+derivation would engage: supplying the three hypotheses for a named
+physical operator is the path this note opens, and nothing here forecloses
+it.
+
+**N5 — rhetoric audit.** The universal statement resolved is the single
+unbroken line quoted near the top of this note. It is resolved at all five
+resolution classes, one runner check each, at `n = 6` against the rank-one
+projector as the contrast object:
+
+| Class | Check | Content |
+|---|---|---|
+| `per_element` | `D7` | entry `(0,0)` is `sqrt(6)/6` versus `1` |
+| `per_site` | `D8` | all six basis indices give `sqrt(6)/6`; the projector gives `1` at exactly one index |
+| `per_mode` | `D9` | eigenvalue `sqrt(6)/6` with multiplicity `6` versus eigenvalue `1` once and `0` five times |
+| `per_block` | `D10` | with the bookkeeping factorization `n = N_iso N_c = 2 x 3`, every three-block mean is `sqrt(6)/6` versus block means `1/3` and `0` |
+| `lattice_wide` | `D11` | `Tr(I_6/sqrt(6)) = sqrt(6)` versus trace `1` |
+
+The statement holds uniformly at all five classes, so it carries no hidden
+resolution-dependent reading.
+
+**N6 — partial-closure scan.** Every supplied candidate is dispositioned in
+runner stdout. The four approved primitives (`minimal_axioms`,
+`scale_reference_primitive`, `kinetic_isotropy_primitive`,
+`realized_state_primitive`) do not bear on the N2 wall: none of them
+supplies the three matrix hypotheses for a physical operator, which is the
+step the wall names. The owner-governed and convention-reframe candidates
+(`staggered_dirac_realization_gate_note_2026-05-03`,
+`g_bare_rigidity_theorem_note`, `hypercharge_identification_note`) likewise
+do not bear on it, because this note asserts no framework, carrier, or
+convention claim that they could reframe.
+
+**N7 — steelman.** The strongest surviving objection is
+`centrality_relaxation`: centrality is the least physically motivated of the
+three hypotheses, and dropping it leaves an infinite family of normalized
+positive matrices, so a physical argument that only established positivity
+and normalization would appear to reach the same conclusion. The resolution
+is the `D6` bit pattern: witness `W3` is positive, normalized, and not
+scalar, so the conclusion genuinely fails without centrality; a physical
+route must establish centrality, not assume it can be dropped.
+
+**N8 — cross-cycle echo.** The supplied index contains three prior audits of
+this same claim, three retirement entries
+(`staggered_dirac_realization_gate_note_2026-05-03`,
+`strong_cp_theta_zero_note`), and sixty-seven physics-loop no-go ledger
+entries. None echoes an abstract finite-dimensional matrix uniqueness
+boundary; the entries concern lattice realization gates, convention
+selections, and framework-level walls, none of which shares this note's
+object.
+
 ## Cited dependencies
 
 None. The theorem is a self-contained finite-dimensional argument.
 
 ## Validation
 
-The primary runner has three independent command modes:
+The primary runner executes all four sections in its default invocation, so
+the canonical exact-SHA cache records every count quoted below:
 
 ```bash
-python3 scripts/frontier_unit_singlet_overlap_narrow.py --mode normal
-python3 scripts/frontier_unit_singlet_overlap_narrow.py --mode independent
-python3 scripts/frontier_unit_singlet_overlap_narrow.py --mode hostile
+python3 scripts/frontier_unit_singlet_overlap_narrow.py
 ```
 
-- `normal` constructs the matrix-unit commutator constraints, derives the
-  one-dimensional centralizer, solves the norm equation, applies positivity,
-  and recomputes all basis expectations, including `n = 1` and `n = 6`
-  (`PASS=27, FAIL=0`).
-- `independent` reconstructs the common commutant numerically from fresh
-  random-unitary conjugation constraints, checks the singular-value
-  separation and reconstruction stability across three deterministic seeds,
-  and then normalizes the recovered positive generator; it does not import
-  normal-mode result tables (`PASS=20, FAIL=0`).
-- `hostile` recomputes and rejects the wrong dimension factor, trace-norm
-  substitution, negative and non-real phase branches, noncentral normalized
-  positive matrices, off-diagonal contamination, and physical/carrier
-  inferences without a bridge (`PASS=9, FAIL=0`).
+- Section `A` (checks `A1`-`A8`) constructs the matrix-unit commutator
+  constraints, derives the one-dimensional centralizer, solves the norm
+  equation, applies positivity, and recomputes all basis expectations,
+  aggregating `n = 1, 2, 3, 6` into cross-dimension gates.
+- Section `B` (checks `B1`-`B5`) reconstructs the common commutant
+  numerically from fresh random-unitary conjugation constraints across
+  twelve deterministic seeded runs, checks singular-value separation and
+  reconstruction stability, and then normalizes the recovered positive
+  generator. It does not import section `A` result tables, and it asserts
+  tolerance bounds against a fixed `2e-10` threshold rather than printing
+  platform-dependent noise digits. Check `B4` rejects any minimum eigenvalue
+  other than `1/sqrt(n)`, so an independently reconstructed wrong value
+  fails rather than merely testing positive.
+- Section `C` (checks `C1`-`C9`) recomputes and rejects the wrong dimension
+  factor, trace-norm substitution, negative and non-real phase branches,
+  noncentral normalized positive matrices, off-diagonal contamination, and
+  physical, carrier, and gauge-parameter inferences without a bridge.
+- Section `D` (checks `D1`-`D11`, plus the N3, N4, N5, N6, N7, and N8
+  evidence lines) recomputes the discipline packet described above.
 
-The canonical exact-SHA cache records the default normal mode. Independent
-and hostile counts are recorded in the source-repair PR validation report.
+Individual sections can still be run in isolation with
+`--mode normal`, `--mode independent`, `--mode hostile`, or `--mode packet`;
+the default `--mode all` is what the cache records.
+
+Aggregate: `TOTAL: PASS=33, FAIL=0` (8 + 5 + 9 + 11).

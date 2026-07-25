@@ -29,6 +29,7 @@ Reproducibility: deterministic seeded SU(3) link configurations.
 from __future__ import annotations
 
 import math
+import re
 import sys
 
 import numpy as np
@@ -39,7 +40,15 @@ PASS_COUNT = 0
 FAIL_COUNT = 0
 
 
-def check(name: str, condition: bool, detail: str = "") -> None:
+def check(name: str, condition: bool, detail: str = "", fail_detail: str = "") -> None:
+    """Record one check and print its single status line.
+
+    `detail` prints on both PASS and FAIL. `fail_detail` carries diagnostics
+    that merely restate a quantity already asserted in `name`; it is printed
+    only on FAIL, joined to `detail` by "; ". This keeps the cached stdout
+    inside the audit packet's 6000-character budget while preserving every
+    failure diagnostic verbatim. Check count and ordering are unchanged.
+    """
     global PASS_COUNT, FAIL_COUNT
     status = "PASS" if condition else "FAIL"
     if condition:
@@ -47,8 +56,33 @@ def check(name: str, condition: bool, detail: str = "") -> None:
     else:
         FAIL_COUNT += 1
     print(f"  [{status}] {name}")
-    if detail:
-        print(f"         {detail}")
+    parts = [p for p in (detail, "" if condition else fail_detail) if p]
+    if parts:
+        print(f"         {'; '.join(parts)}")
+
+
+DET_LOG_LINE = re.compile(
+    r"(?P<head>.*log_det_direct=)(?P<direct>[^,]+)"
+    r", log_det_bridge=(?P<bridge>[^,]+)(?P<tail>,.*)"
+)
+
+
+def collapse_identical_det_logs(line: str) -> str:
+    """Print-only: collapse the two log-dets when they render byte-identically.
+
+    The two determinant computations are independent; whenever their rendered
+    values differ by even one character the full pair is printed unchanged, so
+    no disagreement can be hidden. Collapsing the identical case keeps the
+    cached stdout inside the audit packet's 6000-character budget.
+    """
+    match = DET_LOG_LINE.fullmatch(line)
+    if match is None or match.group("direct") != match.group("bridge"):
+        return line
+    return (
+        match.group("head")
+        + f"log_det_bridge={match.group('direct')}"
+        + match.group("tail")
+    )
 
 
 # ---- SU(3) generators (Gell-Mann basis) ------------------------------------
@@ -181,8 +215,7 @@ def build_eps_diagonal(L: int) -> np.ndarray:
 # ---- Bridge structural and numerical checks ---------------------------------
 
 def run_volume(L: int, scale: float, masses: list[float], rng: np.random.Generator) -> dict:
-    print()
-    print(f"=== L = {L}, scale = {scale} ===")
+    print(f"\n-- L={L}, scale={scale}")
     links = build_links(L, scale, rng)
     M_KS = build_M_KS(L, links)
     dim = M_KS.shape[0]
@@ -207,12 +240,12 @@ def run_volume(L: int, scale: float, masses: list[float], rng: np.random.Generat
     check(
         f"L={L}: M_KS has zero diagonal eps-blocks (anticommutation {{eps, M_KS}} = 0)",
         diag_block_norm < 1e-12,
-        detail=f"max |diag block| = {diag_block_norm:.3e}",
+        fail_detail=f"max |diag block| = {diag_block_norm:.3e}",
     )
     check(
         f"L={L}: M_KS lower-left block equals -K^dagger (anti-Hermiticity)",
         K_lower_check < 1e-10,
-        detail=f"max |K_lower + K^dag| = {K_lower_check:.3e}, alt-form |K_lower - (-K^dag)| = {K_lower_minus_K_dag_norm:.3e}",
+        fail_detail=f"max |K_lower + K^dag| = {K_lower_check:.3e}, alt-form |K_lower - (-K^dag)| = {K_lower_minus_K_dag_norm:.3e}",
     )
 
     # Compute SVD of K
@@ -272,9 +305,11 @@ def run_volume(L: int, scale: float, masses: list[float], rng: np.random.Generat
         )
 
         print(
-            f"  m={m:.2f}, alpha={alpha:.2f}: log_det_direct={float(log_det_direct):+.6f}, "
-            f"log_det_bridge={log_det_bridge:+.6f}, log_diff={log_diff:.2e}, "
-            f"sign_real={sign_direct_real:+.3f}, sign_imag={sign_direct_imag:+.2e}"
+            collapse_identical_det_logs(
+                f"  m={m:.2f}, alpha={alpha:.2f}: log_det_direct={float(log_det_direct):+.6f}, "
+                f"log_det_bridge={log_det_bridge:+.6f}, log_diff={log_diff:.2e}, "
+                f"sign_real={sign_direct_real:+.3f}, sign_imag={sign_direct_imag:+.2e}"
+            )
         )
 
     return {
@@ -288,19 +323,15 @@ def run_volume(L: int, scale: float, masses: list[float], rng: np.random.Generat
 
 
 def main() -> int:
-    print("=" * 78)
     print("SUPPLIED-SURFACE STAGGERED + WILSON DET-POSITIVITY VERIFIER")
-    print("=" * 78)
     print(f"seed={SEED}")
     print(f"supplied surface: M_W = r * d * I (eps-commuting); mass = m * I")
     print(f"            r = 1, d = 4 (4D); alpha = m + r * d = m + 4")
-    print()
     print("Block decomposition: eps reorders sites so eps = diag(+I, -I).")
     print("Then M = M_KS + alpha * I has eps-block form")
     print("    [[ +alpha I, +K     ],")
     print("     [ -K^dag,   +alpha I ]]")
     print("Bridge: det(M) = prod_i (alpha^2 + sigma_i^2) > 0 unconditionally.")
-    print()
 
     rng = np.random.default_rng(SEED)
 
@@ -320,7 +351,7 @@ def main() -> int:
         check(
             f"balanced sublattice n_+ = n_- on L={v['L']}",
             v["n_plus"] == v["n_minus"],
-            detail=f"n_+={v['n_plus']}, n_-={v['n_minus']}",
+            fail_detail=f"n_+={v['n_plus']}, n_-={v['n_minus']}",
         )
 
     # All m, scale combinations have det > 0
@@ -346,13 +377,10 @@ def main() -> int:
         check(
             f"L={v['L']} K block has n_+ = {n_expected} singular values",
             v["n_sigmas"] == n_expected,
-            detail=f"got {v['n_sigmas']}",
+            fail_detail=f"got {v['n_sigmas']}",
         )
 
-    print()
-    print("=" * 78)
-    print(f"SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
-    print("=" * 78)
+    print(f"\nSUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     return 0 if FAIL_COUNT == 0 else 1
 
 

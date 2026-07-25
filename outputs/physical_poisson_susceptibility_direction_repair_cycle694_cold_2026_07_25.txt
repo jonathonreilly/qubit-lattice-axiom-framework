@@ -1,0 +1,26 @@
+PASS the Poisson direction delta_phi/delta_rho = (-Laplacian)^{-1} decays with a fitted exponent that lies between the continuum target 1 and 2 at every declared box size and DECREASES monotonically toward 1 as the box grows -- the field decay is not anomalous :: {'intermediate_range_fit': {'25': 1.471, '31': 1.398, '41': 1.364}, 'continuum_target': 1.0, 'monotone_toward_target': True}
+PASS the FIT WINDOW is load-bearing: on identical data a naive full-range fit and the declared intermediate-range fit differ by more than 0.1 at every size, so an exponent quoted against a continuum target without a declared window is not a comparison :: {'naive_full_range': {'25': 1.666, '31': 1.659, '41': 1.651}, 'intermediate_range': {'25': 1.471, '31': 1.398, '41': 1.364}, 'difference': {'25': 0.195, '31': 0.261, '41': 0.286}}
+PASS the FORWARD operator (-Laplacian) is strictly local: its stencil at an interior site has support radius 1 (7 nonzero entries), so a delta_rho/delta_phi response has no power-law Green's-function tail that could be compared against 1/r :: {'stencil_nonzeros': 7, 'support_radius': 1}
+PASS the parent runner's susceptibility probe measures the OPPOSITE direction: it returns `delta_rho / delta_phi` (integrated |rho_p - rho_0| under a field bump) while its own docstring asserts 'this response kernel is the inverse Laplacian' -- these are inverse operators and only one is the Poisson kernel :: {'returns_delta_rho_over_delta_phi': True, 'docstring_claims_inverse_laplacian': True, 'parent_present': True}
+PASS the repair is specified concretely rather than left as 'a response-kernel bridge is missing': which observable to measure, which window to declare, what finite-size behaviour to expect, and which inference to stop drawing :: {'measure': 'delta_phi/delta_rho -- perturb the SOURCE density at the probe site and measure the FIELD response, which is the inverse Laplacian and therefore the object the Poisson claim concerns', 'declare': 'a fit window; this cycle uses r in [3, N//4] and reports the naive-window value alongside so the choice is auditable', 'expect': 'an exponent above the continuum target 1 at accessible box sizes, drifting downward as the box grows -- values near 1.3-1.5 at N = 25-41 are the expected finite-size signature, not a defect', 'do_not_conclude': "that a delta_rho/delta_phi exponent near 2.8 refutes a Poisson reading; that quantity is not a Green's-function tail and has no 1/r expectation"}
+SUMMARY_JSON {"audit": "unset", "authority": "none", "cycle": 694, "cycle_claim": null, "fail_count": 0, "firewalls": {"gravity_claim_made": false, "new_axiom_or_primitive_proposed": false, "physical_observable_identified": false, "source_action_bridge_supplied": false}, "pass": true, "pass_count": 5, "poisson_direction_exponents": {"25": 1.4705, "31": 1.3983, "41": 1.3645}, "repair": {"declare": "a fit window; this cycle uses r in [3, N//4] and reports the naive-window value alongside so the choice is auditable", "do_not_conclude": "that a delta_rho/delta_phi exponent near 2.8 refutes a Poisson reading; that quantity is not a Green's-function tail and has no 1/r expectation", "expect": "an exponent above the continuum target 1 at accessible box sizes, drifting downward as the box grows -- values near 1.3-1.5 at N = 25-41 are the expected finite-size signature, not a defect", "measure": "delta_phi/delta_rho -- perturb the SOURCE density at the probe site and measure the FIELD response, which is the inverse Laplacian and therefore the object the Poisson claim concerns"}, "resources": {"elapsed_seconds": 9.93437862501014}, "runner_sha256": "9a282a36d46775505d50af7b8fc9469f73950e69998524de6664d6051e625fb6", "scope": "This cycle repairs the NUMERICAL DISCRIMINATOR only. It does not supply the missing source/action or physical-observable bridge shared by the gravity lane's four conditional rows, and it makes no gravity claim. That bridge remains open and is explicitly not addressed here.", "seed": 20260725}
+RESULT 5 0 elapsed 9.93 s
+RESULT POISSON_DISCRIMINATOR_MEASURES_THE_WRONG_DIRECTION
+       10.12 real         9.73 user         0.37 sys
+          2315517952  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              253707  page reclaims
+                  15  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                 536  involuntary context switches
+         74819061617  instructions retired
+         33888009469  cycles elapsed
+          1514604704  peak memory footprint

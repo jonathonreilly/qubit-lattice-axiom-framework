@@ -1,0 +1,32 @@
+{
+ "audit": "unset",
+ "authority": "none",
+ "cycle": 694,
+ "cycle_claim": null,
+ "fail_count": 0,
+ "firewalls": {
+  "gravity_claim_made": false,
+  "new_axiom_or_primitive_proposed": false,
+  "physical_observable_identified": false,
+  "source_action_bridge_supplied": false
+ },
+ "pass": true,
+ "pass_count": 5,
+ "poisson_direction_exponents": {
+  "25": 1.4705,
+  "31": 1.3983,
+  "41": 1.3645
+ },
+ "repair": {
+  "declare": "a fit window; this cycle uses r in [3, N//4] and reports the naive-window value alongside so the choice is auditable",
+  "do_not_conclude": "that a delta_rho/delta_phi exponent near 2.8 refutes a Poisson reading; that quantity is not a Green's-function tail and has no 1/r expectation",
+  "expect": "an exponent above the continuum target 1 at accessible box sizes, drifting downward as the box grows -- values near 1.3-1.5 at N = 25-41 are the expected finite-size signature, not a defect",
+  "measure": "delta_phi/delta_rho -- perturb the SOURCE density at the probe site and measure the FIELD response, which is the inverse Laplacian and therefore the object the Poisson claim concerns"
+ },
+ "resources": {
+  "elapsed_seconds": 9.93437862501014
+ },
+ "runner_sha256": "9a282a36d46775505d50af7b8fc9469f73950e69998524de6664d6051e625fb6",
+ "scope": "This cycle repairs the NUMERICAL DISCRIMINATOR only. It does not supply the missing source/action or physical-observable bridge shared by the gravity lane's four conditional rows, and it makes no gravity claim. That bridge remains open and is explicitly not addressed here.",
+ "seed": 20260725
+}

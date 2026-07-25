@@ -17,7 +17,7 @@ file per claim), summarized in
 | Metric | Value |
 |---|---:|
 | Retained positive rows | 116 |
-| Retained bounded rows | 344 |
+| Retained bounded rows | 345 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 29 |
 
@@ -142,7 +142,7 @@ Sorted by load-bearing graph score (descending).
 - [`tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20`](../../docs/TOMITA_TENSOR_TRACE_ON_FINITE_DIM_MATRIX_NARROW_THEOREM_NOTE_2026-05-20.md) — score 0.000; audited 2026-07-25T15:03:52.540528+00:00
 - [`wolfenstein_lambda_a_product_cancellation_narrow_theorem_note_2026-05-10`](../../docs/WOLFENSTEIN_LAMBDA_A_PRODUCT_CANCELLATION_NARROW_THEOREM_NOTE_2026-05-10.md) — score 0.000; audited 2026-07-25T18:05:21.029457+00:00
 
-## Retained bounded rows (344)
+## Retained bounded rows (345)
 
 Sorted by load-bearing graph score (descending).
 
@@ -311,6 +311,7 @@ Sorted by load-bearing graph score (descending).
 - [`gate_b_local_stencil_connectivity_bridge_bounded_theorem_note_2026-06-18`](../../docs/GATE_B_LOCAL_STENCIL_CONNECTIVITY_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md) — score 2.585; audited 2026-07-09T06:41:59.617948+00:00
 - [`gravity_observable_hierarchy_note`](../../docs/GRAVITY_OBSERVABLE_HIERARCHY_NOTE.md) — score 2.585; audited 2026-05-10T17:18:54.923403+00:00
 - [`mermin_wagner_bogoliubov_textbook_import_note_2026-05-18`](../../docs/MERMIN_WAGNER_BOGOLIUBOV_TEXTBOOK_IMPORT_NOTE_2026-05-18.md) — score 2.585; audited 2026-07-25T05:24:43.268490+00:00
+- [`proper_cubic_finite_support_linear_kernel_classification_bounded_theorem_note_2026-07-25`](../../docs/PROPER_CUBIC_FINITE_SUPPORT_LINEAR_KERNEL_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-07-25.md) — score 2.585; audited 2026-07-25T20:41:47.485021+00:00
 - [`signed_gravity_interface_kodd_pfaffian_line_bundle_label_narrow_theorem_note_2026-06-12`](../../docs/SIGNED_GRAVITY_INTERFACE_KODD_PFAFFIAN_LINE_BUNDLE_LABEL_NARROW_THEOREM_NOTE_2026-06-12.md) — score 2.585; audited 2026-06-13T01:11:14.539215+00:00
 - [`source_resolved_exact_green_scaling_note`](../../docs/SOURCE_RESOLVED_EXACT_GREEN_SCALING_NOTE.md) — score 2.585; audited 2026-05-17T14:42:11.906633+00:00
 - [`staggered_fermion_card_2026-04-10`](../../docs/STAGGERED_FERMION_CARD_2026-04-10.md) — score 2.585; audited 2026-05-03T21:01:42.077181+00:00

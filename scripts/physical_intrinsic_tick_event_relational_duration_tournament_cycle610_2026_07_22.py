@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
 """Cycle 610: intrinsic tick / event relational-duration tournament.
 
-Decisive question: can the accepted Cycle-230/578/583 contact-dimer matter law,
-the Cycle-602/605 transported/coherent detector family, and the Cycle-570/571
-event/counter/admission interfaces jointly produce an operational, additive,
-reproducible relational duration Delta-tau(A,B) between locally admitted
-candidate events, with a no-refit motion- and field-conditioned clock-rate
-ratio?
+Decisive question: can the byte-pinned Cycle-230/578/583 contact-dimer matter
+law, an explicitly supplied two-channel detector word, and the finite
+event/counter/admission definitions implemented below jointly produce an
+operational, additive, reproducible relational duration Delta-tau(A,B) between
+locally admitted candidate events, with a no-refit motion- and
+uniform-phase-conditioned clock-rate ratio?
 
-Route A generates oriented tick events from the fixed two-channel transported
-detector word over the literal fixed-K fiber dynamics.  Route B turns tick
-certificates into a predecessor-linked candidate-event chain with rollover
-receipts and decodes additive relational intervals from retained state only.
+Route A generates oriented tick events from the declared two-channel detector
+word over the literal fixed-K fiber dynamics.  Route B turns tick certificates
+into a predecessor-linked candidate-event chain with rollover receipts and
+decodes additive relational intervals from the stored chain state only.
 Route C freezes spectral (Birman-Schwinger) and field (N*Q) predictions for the
 tick-rate ratios before the dynamics are inspected and reports agreement or
 falsification without refit.
@@ -209,7 +209,7 @@ def evolve_word(
 ) -> dict[str, object]:
     """Iterate the law and record the onsite word c00_q = <a|G^q|a>.
 
-    The fixed Cycle-602 two-channel aggregate follows exactly from unitarity:
+    The declared two-channel aggregate follows exactly from unitarity:
     <d|G^q|a> = (c00_q + c00_{q-1})/sqrt(2), with c00_{-1} = conj(c00_1).
     """
     state = source.copy()
@@ -472,7 +472,7 @@ class EventChain:
         self.exhausted = False
 
     def interval(self, start_identity: int, end_identity: int) -> int | None:
-        """Decode Delta-tau from retained chain state only (570 semantics)."""
+        """Decode Delta-tau from the stored chain state only."""
         ids = [cell.identity for cell in self.cells]
         if start_identity not in ids or end_identity not in ids:
             return None
@@ -540,7 +540,7 @@ def main() -> int:
     receipt["spectral_roots"] = {k: sanitize_root(v) for k, v in spectral.items()}
     theta0 = float(spectral["train_K0"]["theta"])
     check(
-        "A2 bound-branch root exists near the retained Cycle-583 phase with an "
+        "A2 bound-branch root exists near the landed Cycle-583 phase with an "
         "A2-dominant null vector",
         abs(theta0 + 2.9756) < 0.03
         and float(spectral["train_K0"]["null_A2_overlap"]) > 0.99,
@@ -570,17 +570,16 @@ def main() -> int:
     )
     c00 = base["c00"]
     check(
-        "P4: the onsite single-channel word reproduces the Cycle-599 q=1 "
-        "darkness exactly at fiber level, while q=3 is bright (the q=3 zero of "
-        "Cycle 599 is a torus/center effect, reported as a finding)",
-        abs(c00[1]) < EXACT and abs(c00[2]) > 1e-3,
+        "P4: the onsite single-channel word has exact q=1 darkness at fiber "
+        "level while q=3 is bright",
+        abs(c00[1]) < EXACT and abs(c00[3]) > 1e-3,
         {"abs_c00_1": float(abs(c00[1])), "abs_c00_3": float(abs(c00[3])),
          "abs_c00_2": float(abs(c00[2]))},
     )
     aggregate = base["aggregate"]
     visibility = np.abs(aggregate[1:13])
     check(
-        "P4/602: the fixed two-channel aggregate is bright at every early q",
+        "the declared two-channel aggregate is bright at every early q",
         bool(np.all(visibility > 1e-6)),
         {"min_visibility_q1_12": float(visibility.min())},
     )
@@ -597,7 +596,7 @@ def main() -> int:
          "locked": pure_row["locked"]},
     )
     check(
-        "P1 fine: the retained lift-sum rate (same retained data, finer than "
+        "P1 fine: the stored lift-sum rate (same word data, finer than "
         "the integer tick count) matches the spectral root to 1e-6",
         pure_row["fine_rate"] is not None
         and abs(pure_row["fine_rate"] - predicted0) < 1e-6,
@@ -646,7 +645,7 @@ def main() -> int:
     )
     residual = abs(wrap_angle(budget - endpoint))
     check(
-        "unwrap certificate: the retained lift chain reconciles with the "
+        "unwrap certificate: the stored lift chain reconciles with the "
         "endpoint principal phase modulo 2*pi",
         residual < 1e-6,
         {"residual": residual},
@@ -915,16 +914,17 @@ def main() -> int:
     receipt["comparator_map"] = {
         "near_hits": comparator,
         "statement": (
-            "algebraic reachability only; the association between Cycle-610 "
-            "tick events and Cycle-451 echo events and the empirical "
-            "calibration are underived, so no identification with the "
-            "3:4/5:4 words is claimed"
+            "algebraic reachability only; any cross-apparatus event "
+            "association and empirical calibration are underived, so no "
+            "physical identification with the 3:4/5:4 comparators is claimed"
         ),
     }
     check(
-        "comparator firewall: the 3:4/5:4 shore is mapped algebraically "
-        "without identification",
-        True,
+        "comparator map contains only the frozen Q=1, s=+1 near-hit in the "
+        "3:4 class; cross-apparatus identification remains outside this runner",
+        len(comparator) == 1
+        and comparator[0]["row"] == [1, 1]
+        and comparator[0]["target"] == "3:4",
         {"near_hits": len(comparator)},
     )
 
@@ -938,8 +938,8 @@ def main() -> int:
     ]
     admitted = [status for status in statuses if status == "admitted"]
     check(
-        "route B: ticks are admitted through the derived opportunity map and "
-        "the 571 admission formula until the finite bank exhausts",
+        "route B: ticks are admitted through the declared opportunity and "
+        "admission predicates until the finite bank exhausts",
         len(admitted) == BANK_SIZE and "exhausted" in statuses,
         {"admitted": len(admitted),
          "post_bank_statuses": statuses[BANK_SIZE:BANK_SIZE + 3]},
@@ -950,7 +950,7 @@ def main() -> int:
         actuality=1, admissibility=1, law_domain=1,
     )
     check(
-        "route B renewal: one 571-style refill extends the lawful domain",
+        "route B renewal: one declared finite-bank refill extends the domain",
         post_refill == "admitted",
         {"post_refill": post_refill},
     )
@@ -961,7 +961,7 @@ def main() -> int:
     d_ac = chain.interval(a_id, c_id)
     check(
         "additivity: Delta(A,C) = Delta(A,B) + Delta(B,C) decoded from "
-        "retained state across rollover receipts",
+        "stored chain state across rollover receipts",
         d_ab is not None and d_bc is not None and d_ac == d_ab + d_bc
         and sum(cell.carry for cell in chain.cells) >= 1,
         {"d_ab": d_ab, "d_bc": d_bc, "d_ac": d_ac,
@@ -1032,10 +1032,10 @@ def main() -> int:
     # ---- Discipline and firewall summaries (full text lives in the note).
     receipt["n1_families"] = [
         "two-channel transported-detector tick clock (attempted, positive)",
-        "onsite single-channel Ramsey clock (prior 599 failure, boundary reproduced)",
-        "controlled first-return comparator (prior 586, supplied controller)",
-        "spectral-instrument pointer clock (prior 586, supplied instrument)",
-        "event/Record interval chain with supplied opportunity (prior 570)",
+        "onsite single-channel Ramsey clock (boundary reproduced here)",
+        "controlled first-return comparator (unexecuted alternative)",
+        "spectral-instrument pointer clock (unexecuted alternative)",
+        "finite event/Record-candidate interval chain with supplied opportunity",
         "A2/T2 vernier beat clock (open)",
         "two-dimer encounter clock (open, N4 outside code)",
     ]

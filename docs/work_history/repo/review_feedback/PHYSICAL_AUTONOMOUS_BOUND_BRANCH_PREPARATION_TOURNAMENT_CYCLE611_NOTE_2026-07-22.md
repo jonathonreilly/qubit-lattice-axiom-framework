@@ -2,13 +2,10 @@
 
 Date: 2026-07-22
 
-Claim type: bounded_theorem
-
 Authority: none. Audit: unset. Constitutional effect: none. No axiom,
 foundation, Qualification, primitive, registry, policy, queue, audit-status,
-or PR-control surface is edited. Out of scope by owner directive: pulse/readout
-primitive synthesis and controlled-detector compiler work (Cycle 608 / PR
-#5523).
+or PR-control surface is edited. Physical pulse/readout synthesis and a
+controlled-detector compiler remain outside this finite protocol.
 
 Runner:
 `scripts/physical_autonomous_bound_branch_preparation_tournament_cycle611_2026_07_22.py`
@@ -17,7 +14,7 @@ Execution mechanism: workhorse split; supervisor Fable 5 (contract, physics,
 verdicts, note); Opus 4.8 workers for bounded recon/extraction only
 (owner-approved substitution; no codex).
 
-## Result up front — 9 PASS / 2 FAIL, exit 1; two priors falsified, one wall derived
+## Result up front — 8 PASS / 3 FAIL, exit 1; two priors falsified, one wall derived
 
 Cycle 611 attacks the supply Cycle 610 exposed: the raw onsite-A2 source
 (bound weight 0.2627) is not a clock; can a lawful autonomous dynamics prepare
@@ -26,11 +23,12 @@ certificates (contract SHA
 `1dab9ebb17ac1d351651da745ca698a15a3bc94648dd38c6222022df6df77bde`).
 
 1. **Purification works; certification did not (through the frozen
-   plus-channel word).**  P-A (echo-interference minus-port filter, built from
-   the Cycle-602/605 controlled-contact structure) raises the bound-weight
+   plus-channel word).**  P-A (the explicitly defined echo-interference
+   minus-port filter) raises the bound-weight
    diagnostic 0.263 -> 0.909 (m=16 plateau), at postselection cost (cumulative
-   success 0.0070 at m=16, k=4 down to 4e-6 at k=12).  P-B (radius-1
-   window-conditioning cascade) reaches 0.816 at far better success (0.0196 at
+   success 0.0070 at m=16, k=4 down to 4e-6 at k=12).  P-B (the explicitly
+   defined radius-1 window-conditioning cascade) reaches 0.816 at far better
+   success (0.0196 at
    m=16, k=12).  Yet **no row certified**: every P-B row still winds at the
    Cycle-610 dust rate (+0.0499) and the certification FAIL rows ship
    unrepaired.  The mechanism was identified one cycle later (Cycle 612
@@ -44,27 +42,27 @@ certificates (contract SHA
 3. **The adiabatic route is falsified in substance.**  P-C (contact ramp from
    the extremal phase g=pi down to 0.37) got *worse* with longer ramps: bound
    weight 0.0196 (T=256) -> 0.0041 (T=1024) -> 0.0003 (T=4096).  The coded
-   monotone-trend assertion was written with a tolerance too lax to fire
-   (0.02), so the check shows PASS; the honest reading is recorded here as a
-   decisive route-specific falsification of the frozen "monotone improvement"
-   prior: the ramp path evidently does not track an isolated branch (the
+   corrected decisive assertion reports FAIL, matching the route-specific
+   falsification of the frozen "monotone improvement" prior: the ramp path
+   evidently does not track an isolated branch (the
    bound branch's continuation from g=pi is not adiabatically connected at
    this box; conjecture, not asserted).  Reviewers should treat P-C as
-   falsified regardless of the lax assertion.
+   falsified on this declared schedule family.
 4. **Controls all pass**: the position-representation engine reproduces the
    Cycle-610 word to 5.2e-14; the no-op control reproduces the Cycle-610
    falsification (locked, convention-dependent via the count offset: counts
    109 vs 121 at equal rates — the count clause of the convention certificate
    is load-bearing); conditioning deletion leaves the weight at raw;
    the plus port anti-filters (0.032 — the minus port is load-bearing);
-   the radius-1 window is exactly all-24 invariant; non-antisymmetric input is
-   refused.
+   the radius-1 window is exactly all-24 invariant; a non-antisymmetric input
+   is detected outside the declared domain.
 
 Resolution (Cycle 612 addendum, separate frozen contract): with the minus-sign
 member of the same fixed two-channel family, the P-A (m=16, k=4) state
 **certifies with raw rays** (fine rate -0.47358 against the spectral root),
-the raw source still does not (preparation remains necessary), and the channel
-is selected autonomously by the certificates themselves.  The owner's success
+the raw source still does not (preparation remains necessary), and the
+certificates uniquely select the minus sign for this mixed P-A state (the exact
+eigenvector certifies on both signs).  The owner's success
 criterion — raw source in, certified clock out, Cycle-610 certificates
 unchanged — is met by the composed chain: P-A filter, then
 certificate-selected channel.  Nothing in this note's FAIL rows is repaired.
@@ -73,11 +71,9 @@ certificate-selected channel.  Nothing in this note's FAIL rows is repaired.
 
 Supplied: the frozen schedules (m, k grids, R=1, ramp family, g_start=pi);
 blank selector/pointer ancillas (one per round); the postselection ports and
-their norm accounting; the Cycle-610 certification machinery (spectral data on
-the certification side only); the Cycle-608 interface objects (their side now
-supplies a physical matter-caused endpoint predicate and a reversible
-deletion-sensitive predecessor/clock interval packet — recorded here as an
-interface supply, consumed at law level only).
+their norm accounting; and the byte-pinned Cycle-610 certification machinery
+(spectral data on the certification side only).  No campaign-only compiler,
+detector, or interface object is imported as authority.
 
 Derived: bound-weight purification by both conditioned routes with exact
 resource ledgers; the falsification of the window route's certifiability and
@@ -89,41 +85,38 @@ equivalence.
 Open: deterministic (non-postselected) preparation; success-probability
 engineering; preparation at K != 0 and at held species; autonomous ancilla
 genesis/renewal; the plus-channel blindness as a species-dependent apparatus
-law (taken up in Cycle 612); everything inherited (occurrence middle,
-pulse/readout, calibration).
+law (taken up in Cycle 612); the occurrence middle, physical pulse/readout,
+and calibration.
 
 ## Occurrence / Record-admission middle — law-level scoping (non-negative)
 
-The exact missing maps, typed against the retained interfaces:
+The exact missing maps, typed against the declared finite interfaces:
 
 1. **Occurrence selector sigma**: candidate opportunity -> actual occurrence.
    Type: a per-opportunity binary outcome owner.  Constraints already forced:
    locality (must read only the opportunity cell and its bounded
    neighborhood), freshness compatibility (no re-actualization of an admitted
    identity), orientation preservation, and — from the Record axiom's
-   "Records form" — nonemptiness on some lawful domain.  What no retained
-   surface supplies: which branches actualize, at what weight or rate
-   (explicitly downstream per the axioms).  Live candidate suppliers: the
-   Cycle-571 raw-arrival first-hit rule (derived winner, supplied arrivals);
-   the unprinted Admissibility-successor steelman (571 N7): the framework's
+   "Records form" — nonemptiness on some lawful domain.  No surface in this
+   landing supplies which branches actualize, at what weight or rate
+   (explicitly downstream per the axioms).  Candidate suppliers include a
+   raw-arrival first-hit rule and an unimplemented Admissibility-successor
+   steelman: the framework's
    fixed nearest-neighbor Admissibility rule could determine a unique
    covariant successor — unprinted, untested, and the single highest-value
    scoping target for a future cycle.
 2. **Admission law A**: occurrence -> admitted permanent Record.  Constraints
    forced by the axioms and the 610/612 chain: one record per site, fresh
    target, permanence (all-future operation restriction — NOT derivable from
-   finite reversible protection: every finite protected packet in Cycles
-   433/571/592 retains an accessible exact inverse, so permanence is a
-   genuinely additional law), additive scalar readout over disjoint records
-   (axiom content — the natural anchor for duration additivity), and the
-   cross-order consistency rule of Cycle 612 (co-registration refusal) as a
+   finite reversible protection in this packet, so permanence is a genuinely
+   additional law), additive scalar readout over disjoint records (axiom
+   content — the natural anchor for duration additivity), and the cross-order
+   consistency rule executed by Cycle 612 (co-registration refusal) as a
    necessary condition on any admission law that serves causal order.
-3. Shared-lane statement, N-disciplined: the Born lane needs sigma with a
-   weight law; the causal-time lane needs sigma with any lawful nonempty
-   domain plus A with permanence.  The two lanes share sigma as a
-   **dependency**; no shared-obstruction claim is made or licensed (N1: fewer
-   than five attempted families on this question; gate fails by construction
-   and is recorded as such).
+3. Cross-lane scoping statement: a probability interpretation would need
+   sigma with a weight law, while this relational-duration candidate needs
+   sigma with any lawful nonempty domain plus A with permanence.  No
+   shared-obstruction claim is made or licensed.
 
 ## N1-N8 (abbreviated; full pattern as Cycle 610)
 
@@ -155,18 +148,9 @@ not certifiability (the derived lesson of this cycle).
 ## Cold verification
 
 ```text
-RESULT 9 PASS / 2 FAIL (both preregistered-prior falsifications; exit 1 expected)
-external wall:            15.16 s;  maximum RSS 199,475,200 bytes
-runner SHA-256:           (pinned in the receipt and the Cycle-612 addendum)
+RESULT 8 PASS / 3 FAIL (two falsified priors plus the dependent no-winner transfer row; exit 1 expected)
+runner SHA-256:           (byte-pinned by the Cycle-612 runners)
 frozen contract SHA-256:  1dab9ebb17ac1d351651da745ca698a15a3bc94648dd38c6222022df6df77bde
 receipt:                  outputs/physical_autonomous_bound_branch_preparation_tournament_cycle611_receipt_2026_07_22.json
 cold transcript:          outputs/physical_autonomous_bound_branch_preparation_tournament_cycle611_cold_2026_07_22.txt
 ```
-
-## Dependency citations
-
-This runner loads and byte-pins
-[Cycle 610](PHYSICAL_INTRINSIC_TICK_EVENT_RELATIONAL_DURATION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md),
-and through it the accepted upstream surfaces
-[Cycle 578](PHYSICAL_INTRINSIC_CONTACT_BOUND_MOVING_TRANSITION_TOURNAMENT_CYCLE578_NOTE_2026-07-22.md)
-and [Cycle 583](PHYSICAL_CONTACT_DIMER_INFINITE_INTERNAL_CONTENT_TOURNAMENT_CYCLE583_NOTE_2026-07-22.md).

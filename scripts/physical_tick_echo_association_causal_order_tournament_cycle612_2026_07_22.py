@@ -2,18 +2,17 @@
 """Cycle 612: tick/echo association, pi-ceiling discriminator, matched-ray
 certification, and causal-order bridge tournament.
 
-Evaluates the frozen A-count association rule against the Cycle-451 comparator
-words given the W4 COUNT-EDIT mechanism verdict; proves the exhaustive
-pi-ceiling corollary (the 5:4 advance word is unreachable by any uniform-field
-rate shift); tests the derived detector-ray re-contamination wall by matched-
-ray certification of the Cycle-611 P-A prepared state; and executes the
-finite causal-order acyclicity/refusal semantics for co-registered two-device
-event chains.
+Evaluates a frozen A-count comparison convention on the Cycle-610 rows; proves
+the exhaustive pi-ceiling corollary (the 5:4 magnitude is unreachable by any
+declared uniform-field rate shift); tests the detector-ray re-contamination
+prediction by matched-ray certification of the Cycle-611 P-A prepared state;
+and executes the finite causal-order acyclicity/refusal semantics for
+co-registered two-device event chains.
 
-Firewalls: a count word is not time; the A-count consistency is not an
-identification of tick events with echo events; the pi ceiling is a property
-of the candidate tick law, not a no-go on advance responses (count-edit
-mechanisms remain lawful); an admitted cell is a conditional candidate Record.
+Firewalls: a count word is not time; the A-count comparison is not an
+identification of events across apparatuses; the pi ceiling is a property of
+the candidate tick law, not a no-go on other response mechanisms; an admitted
+cell is a conditional candidate Record.
 
 Authority: none.  Audit: unset.  Constitutional effect: none.
 """
@@ -36,7 +35,11 @@ sys.path.insert(0, str(ROOT / "scripts"))
 FROZEN_CONTRACT_SHA256 = (
     "8c8c0082d56c79fec970af54213961db2feb4415c674796d0cefea88a75cbc2c"
 )
-C610_SHA256 = "10f2d837940b1f364a9c75325f15f52dbec640e6ba0b91862caaa14dce2d121c"
+C610_SHA256 = "36fcb1655bbdcd758b69ea1e273821e5c820f738eb63199570c8f36c7e294bac"
+C611_SHA256 = "15db2200b08bc4a5d7669975806fe51e9b8a55049f0660969d427332602bf9e8"
+C610_RECEIPT_SHA256 = (
+    "be7e6f6c29e5b914a427a5dccff3bb143eafbc9e0a5150b5c532001b3eb1b0d2"
+)
 
 NOTE = ROOT / (
     "docs/work_history/repo/review_feedback/"
@@ -171,22 +174,30 @@ def main() -> int:
         "audit": "unset",
         "frozen_contract_sha256": FROZEN_CONTRACT_SHA256,
         "consumed": {"cycle610_runner": C610_SHA, "cycle611_runner": C611_SHA},
-        "w4_mechanism_verdict": "COUNT-EDIT (single receiver-gated +/-1 tick "
-        "edit in a dedicated post-corridor stage; both signs symmetric swaps)",
+        "comparison_scope": (
+            "A-count is a declared finite comparison convention; no "
+            "campaign-only response mechanism is imported as authority"
+        ),
     }
-    check(
-        "the Cycle-610 runner is byte-pinned and unchanged",
-        C610_SHA == C610_SHA256,
-        C610_SHA[:16],
-    )
     c610_receipt = json.loads(C610_RECEIPT.read_text())
-    receipt["consumed"]["cycle610_receipt_sha256"] = sha256(
-        C610_RECEIPT.read_bytes()
-    ).hexdigest()
+    c610_receipt_sha = sha256(C610_RECEIPT.read_bytes()).hexdigest()
+    check(
+        "the Cycle-610 and Cycle-611 runners and the consumed Cycle-610 "
+        "receipt are byte-pinned and unchanged",
+        C610_SHA == C610_SHA256
+        and C611_SHA == C611_SHA256
+        and c610_receipt_sha == C610_RECEIPT_SHA256,
+        {
+            "cycle610_runner": C610_SHA[:16],
+            "cycle611_runner": C611_SHA[:16],
+            "cycle610_receipt": c610_receipt_sha[:16],
+        },
+    )
+    receipt["consumed"]["cycle610_receipt_sha256"] = c610_receipt_sha
 
     theta0 = float(c610_receipt["spectral_roots"]["train_K0"]["theta"])
 
-    # ---- A-count association table (mechanism gate: COUNT-EDIT branch).
+    # ---- A-count comparison table (declared convention, no mechanism import).
     rows = []
     expected = {(1, 1): 3, (2, 1): 2, (3, 1): 1, (8, 1): 4, (8, -1): 4,
                 (1, -1): -3, (2, -1): -2, (3, -1): -1}
@@ -237,9 +248,7 @@ def main() -> int:
         "pi-ceiling corollary: |R| <= pi/|theta0| = 1.0556 for every uniform-"
         "field modulation on the full W=16 and W=64 lattices; the 5:4 advance "
         "word (|R| = 1.25) is unreachable by any uniform-field rate shift, "
-        "while 3:4 is reached — the two Cycle-451 response signs are "
-        "mechanically distinguishable (delay rate-reachable, advance only "
-        "edit-reachable)",
+        "while the declared A-count convention has a 3:4-class row",
         max_ratio <= ceiling + 1e-12 and max_ratio < 1.125,
         {"ceiling": ceiling, "max_ratio_found": max_ratio},
     )
@@ -273,6 +282,11 @@ def main() -> int:
         and abs(row_t1["rate"] - predicted) < bound + 1e-9
     )
     raw_control = C611.certify(engine, state, float(root["theta"]))
+    psi_b_mom, _ = C610.bound_state(
+        C611.L_TRAIN, C610.K_TRAIN_0, C611.BETA, root
+    )
+    psi_b_pos = C611.momentum_to_position(psi_b_mom, C611.L_TRAIN)
+    bound_weight_input = float(abs(np.vdot(psi_b_pos, state)) ** 2)
     check(
         "matched-ray certification: the Cycle-611 P-A (m=16, k=4) prepared "
         "state certifies through its own rays (frozen prediction), while the "
@@ -291,7 +305,7 @@ def main() -> int:
         "fine_rate": row_t1["fine_rate"],
         "raw_control_certified": bool(raw_control["certified"]),
         "cumulative_success": cumulative,
-        "bound_weight_input": 0.892885,
+        "bound_weight_input": bound_weight_input,
     }
 
     # ---- Causal-order bridge: acyclicity and inverted-registration refusal.
@@ -347,9 +361,8 @@ def main() -> int:
 
     receipt["interpretation_firewall"] = [
         "a count word is not time; A-count consistency is not identification",
-        "the pi ceiling is a property of the candidate tick law, not a no-go "
-        "on advance responses; count-edit mechanisms remain lawful for both "
-        "signs (W4: the Cycle-451 mechanism is itself a count edit)",
+        "the pi ceiling is a property of the declared candidate tick law, not "
+        "a no-go on other response mechanisms",
         "matched-ray certification uses spectral data on the certification "
         "side only; the preparation and rays consume no spectral data",
         "shared co-registrations are candidate events; the acyclicity result "

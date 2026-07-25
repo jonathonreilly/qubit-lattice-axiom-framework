@@ -2,8 +2,6 @@
 
 Date: 2026-07-22
 
-Claim type: bounded_theorem
-
 Authority: none
 
 Audit: unset
@@ -25,33 +23,35 @@ cross-implementation.
 
 ## Result up front — preregistered partial, 33 PASS / 3 FAIL, exit 1 expected
 
-Cycle 610 asks the causal-time lane's decisive question directly: can the
-accepted matter, detector, and event/counter/admission science jointly produce
-an operational, additive, reproducible relational duration between locally
-admitted candidate events, with a no-refit motion- and field-conditioned
-clock-rate ratio?  The answer is a strong constructive partial with one
-deliberate preregistered falsification.
+Cycle 610 asks whether the byte-pinned contact-dimer matter law, an explicitly
+supplied detector word, and the finite event/counter/admission definitions
+implemented in the runner jointly produce an operational, additive,
+reproducible relational-duration candidate between locally admitted candidate
+events, with no-refit motion- and uniform-phase-conditioned clock-rate ratios.
+The answer is a constructive finite-protocol partial with one deliberate
+preregistered falsification.
 
 1. **The intrinsic tick law works on the bound branch, and its rate is the
    Cycle-583 spectral surface, with no refit.**  Oriented 2*pi-crossings of
-   the retained lift chain of the fixed Cycle-602 two-channel detector word,
-   over the literal Cycle-230/578/583 fixed-K fiber law, tick at
+   the stored lift chain of the declared two-channel detector word over the
+   literal Cycle-230/578/583 fixed-K fiber law tick at
    orientation-signed rate `wrap(theta)/2*pi`.  The dynamical winding rate and
    the independently computed Birman-Schwinger A2-channel root agree to
    `1.6e-13` (fine estimator) and within the integer-tick discretization bound
    (`4.96e-4`) for the tick count itself.  A worker-independent second
    implementation of the root agrees at K=0 to `1e-11`.
-2. **The relational interval law is additive, oriented, unwrapped, local, and
-   q-free.**  Tick certificates raise candidate opportunities through the
-   derived Cycle-605 map, are admitted through the exact Cycle-571 formula
-   (with the supplied actuality/admissibility/law-domain middle explicit),
-   and append 570-style rotor/carry cells.  The decoded interval
+2. **The declared relational-interval candidate is additive, oriented,
+   unwrapped, local, and q-free on the executed finite code.**  Tick
+   certificates raise candidate opportunities through the runner's explicit
+   map, are admitted through its explicit predicate (with the supplied
+   actuality/admissibility/law-domain middle visible), and append rotor/carry
+   cells.  The decoded interval
    `Delta-tau(A,B) = 16*carries + Delta-rotor` satisfies exact additivity
    `Delta(A,C) = Delta(A,B) + Delta(B,C)` across physical rollover receipts,
    is orientation-antisymmetric, returns undefined (never zero) on lineage
    gaps, refuses duplicates by the derived freshness predicate, exhausts and
    renews its finite bank explicitly, and is decoded identically by two
-   independent observers from retained state only.  No decoder input is an
+   independent observers from stored chain state only.  No decoder input is an
    update ordinal.
 3. **Two no-refit clock-ratio bridges are constructed and pass.**
    Motion: `R(K) = wrap(theta(K))/wrap(theta(0))` — the measured lift-sum
@@ -59,14 +59,13 @@ deliberate preregistered falsification.
    (`R = 0.9986576266913` at `K = 2*pi*3/128`) and held size/momentum
    (`R = 0.9969435085809` at L13, `K = 2*pi*6/128`), resolving a real
    dispersion shift below the integer-tick bound.  Field: appending the
-   Cycle-607 `N*Q` interaction at uniform field value Q gives the exact
+   declared uniform phase modulation at label Q gives the exact
    modulation `alpha = 4*pi*s*Q/16` per update (verified against one literal
    dynamical row to `2.6e-14`), and every frozen `(Q, s)` row matches
    `R(Q,s) = wrap(theta_0 + alpha)/wrap(theta_0)`, including three
    orientation-flip fold rows and the exact `Q = 8` nulls.  This is the first
-   repo construction in which a source/field-conditioned clock-rate ratio is
-   derived from accepted candidate dynamics rather than supplied as a
-   delay/advance response law.
+   finite construction of a uniform-phase-conditioned clock-rate ratio.  A
+   physical source/field identification is not supplied by this landing.
 4. **The preregistered falsification: a lock certificate alone does not make a
    clock.**  The raw onsite-A2 source (bound-branch weight exactly
    `0.2627`, the Cycle-578 contact weight) produces a word whose winding
@@ -75,14 +74,14 @@ deliberate preregistered falsification.
    (T1 rate `0.04985` versus T2 rate `0.05010`; counts 221 versus 236).  The
    three FAIL rows are this finding, shipped unrepaired: the tick law's
    lawful domain requires BOTH the half-rate lock certificate AND
-   tick-convention independence, and the bare accepted matter source sits
+   tick-convention independence, and the bare byte-pinned matter source sits
    outside it.  Autonomous preparation of a dominant bound branch is
-   therefore the sharp remaining supply between the accepted matter law and
+   therefore the sharp remaining supply between the byte-pinned matter law and
    an autonomous matter clock.
 
 The runner deliberately exits `1` with `33 PASS / 3 FAIL`; treating the exit
 as a failed tournament, or the three rows as repairable, would be a scope
-error (the Cycle-599 packaging convention).
+error; FAIL rows are evidence, not packaging defects.
 
 There is no shared obstruction and no axiom pressure.  N1 counts three
 attempted positive families and one attempted falsified family; the
@@ -108,7 +107,7 @@ Frozen rows: train `L9`, `beta=-0.3`, `g=0.37`, `K in {0, 2*pi*3/128 x}`,
 transient skip 64; visibility floor `1e-8`; tick laws T1 (2*pi crossings) and
 T2 (odd-pi crossings); tolerance 5e-9; caps 360 s / 3 GiB.
 
-## Exact retained shore
+## Exact byte-pinned shore
 
 | artifact | SHA-256 |
 |---|---|
@@ -117,10 +116,11 @@ T2 (odd-pi crossings); tolerance 5e-9; caps 360 s / 3 GiB.
 | Cycle578 runner | `4ef60441d31d62b1fc61c9b5e09ff3bc8f7f32d1b68bc3c548834431d24302f6` |
 | Cycle583 runner | `ef6805e691a1ddd303a96f7cabd7000517e0cf33d5b1c577b20c2cbbf29aca23` |
 
-The runner byte-pins these shores and refuses drift.  The Cycle-590 physical
-compiler, Cycle-570/571 event interfaces, and Cycle-602/605 detector notes are
-consumed semantically (their grammars and formulas are reimplemented at code
-level and cited), not edited.
+The runner byte-pins these landed shores and refuses drift.  Campaign-only
+compiler, event-interface, detector, and field-interaction cycles are not
+imported as authority here.  Where their old protocols motivated the runner,
+the formulas below are explicit supplied definitions whose finite behavior is
+checked locally; their former physical interpretations do not transfer.
 
 ## Route A — intrinsic matter tick clock
 
@@ -130,9 +130,9 @@ The clock body is the literal antisymmetric two-CAR relative fiber at fixed
 total momentum K on a periodic odd box: free step
 `F_K(p) = D_K(p) (C tensor C)` with
 `D_K(p)[(d1,d2)] = exp(-i p.(e_d1 - e_d2) - i K.(e_d1 + e_d2)/2)`, then the
-onsite contact `psi <- psi + (e^{ig} - 1) P_0 psi`.  The detector is the fixed
-Cycle-602 two-channel family `d = (|a> + G|a>)/sqrt(2)` over the onsite A2
-source; by unitarity its word is exactly
+onsite contact `psi <- psi + (e^{ig} - 1) P_0 psi`.  The detector word is
+supplied here as `d = (|a> + G|a>)/sqrt(2)` over the onsite A2 source; by
+unitarity its word is exactly
 `<d|G^q|a> = (c_q + c_{q-1})/sqrt(2)`.
 
 The tick law (candidate law CT-1): lift the word's phase increments with the
@@ -140,25 +140,23 @@ principal convention on `(-pi, pi]`, defined only above the visibility floor;
 tick at each oriented crossing of the cumulative lift through a multiple of
 2*pi (T1; T2 uses odd multiples of pi as the convention control).  The
 lawful-domain certificate is: all lifts defined, half-window rates agreeing,
-and tick-convention independence.  Rates are decoded from the retained event
+and tick-convention independence.  Rates are decoded from the stored event
 chain, never from the loop ordinal.
 
 ### Structure findings
 
-- `c_1 = <a|G|a> = 0` exactly (`4.3e-17`): the q=1 darkness of Cycle 599 is
-  intrinsic to the fiber law (the coin-mixed onsite content has no
-  zero-displacement return against the antisymmetric bra).
-- `|c_3| = 0.2317` at L9: **the q=3 darkness of Cycle 599 is not intrinsic**;
-  it is a torus/center effect of the small full-torus boxes.  This narrows
-  the Cycle-599 failure mechanism.
-- The two-channel aggregate is bright at every early q
-  (minimum visibility 0.2407), reconfirming the Cycle-602 closure.
+- `c_1 = <a|G|a> = 0` exactly (`4.3e-17`): q=1 darkness is intrinsic to the
+  executed fiber law (the coin-mixed onsite content has no zero-displacement
+  return against the antisymmetric bra).
+- `|c_3| = 0.2317` at L9: q=3 is bright on the executed fiber.
+- The declared two-channel aggregate is bright at every early q (minimum
+  visibility 0.2407).
 
 ### Controls
 
 Norm and antisymmetry preserved to `2.6e-13` over 4096 updates; exact inverse
 restores the source to `1.5e-12`; the reversed history has the exactly
-opposite signed tick rate; the unwrap certificate reconciles the retained lift
+opposite signed tick rate; the unwrap certificate reconciles the stored lift
 chain with the endpoint principal phase to `4.5e-10`; stride-2 subsampling
 aliases to exactly the frozen fold prediction (`0.02654` versus true
 `-0.47358`), demonstrating why the per-update lift is load-bearing; contact
@@ -177,12 +175,11 @@ falsification rows.
 
 ## Route B — event-chain relational interval
 
-The chain composes only existing interfaces: tick certificate AND occupied
-binder -> candidate opportunity (the derived Cycle-605 map); ADMIT =
-opportunity AND actuality AND admissibility AND law-domain AND derived
-freshness (the exact Cycle-571 formula); admitted cells append with
-predecessor links, K16 rotors, and carry receipts (Cycle-570 grammar); the
-interval decoder is the Cycle-570 equation on retained state only.
+The chain is defined explicitly in the runner: tick certificate AND occupied
+binder -> candidate opportunity; ADMIT = opportunity AND actuality AND
+admissibility AND law-domain AND freshness; admitted cells append with
+predecessor links, K16 rotors, and carry receipts.  The interval decoder reads
+the stored chain state only.
 
 All frozen tests pass: exact additivity across rollovers
 (`9 + 12 = 21` with two carries), orientation antisymmetry, lineage-gap
@@ -190,17 +187,17 @@ undefined, duplicate refusal, finite-bank exhaustion with explicit status, one
 571-style refill extending the domain, binder/actuality deletion semantics,
 and independent-observer agreement.
 
-The candidate association law CT-2 — one candidate opportunity per oriented
-tick certificate — closes Cycle 602's explicitly open matter-to-event arrow
-at candidate level.  It is a candidate law: alternatives (extremum-based,
-threshold-based association) are not excluded, but all fixed conventions give
-the same rate ratios; only the tick unit is conventional.
+The candidate association definition CT-2 assigns one candidate opportunity
+per oriented tick certificate.  It does not close an external
+matter-to-occurrence bridge.  Alternatives (extremum-based, threshold-based
+association) are not excluded, but all fixed conventions give the same rate
+ratios on the declared domain; only the tick unit is conventional.
 
 ## Route C — clock-ratio bridges
 
 ### Motion (reaches the Cycle-583 spectral surface)
 
-| row | theta (this runner) | independent worker (final) | retained Cycle-578 (L11) |
+| row | theta (this runner) | independent worker (final) | landed Cycle-578 (L11) |
 |---|---|---|---|
 | L9, K=0 | `-2.975574708447` | `-2.9755747084365` | `-2.97557567317691` (L11) |
 | L9, K1=2*pi*3/128 | `-2.971580376379` | `-2.9715803763898` | `-2.972928065176` (L11) |
@@ -212,30 +209,29 @@ The worker's independent implementation confirms **all five** spectral rows to
 at most `2.3e-11`.  The verification had two stages, both recorded: the
 worker's mid-flight K != 0 continuation first collapsed onto a different
 channel (self-reported consecutive null-vector overlap 0.000, value
-`-3.0142`), which the supervisor provisionally rejected against the retained
+`-3.0142`), which the supervisor provisionally rejected against the landed
 Cycle-578 dispersion (`-2.9756 -> -2.9729` at the same K label); the worker's
 final deliverable then replaced det-minimization with smallest-singular-value
 refinement plus a predictor-corrector branch tracker (adjacent-step overlaps
 0.998-0.9998) and converged to this runner's A2-tracked branch on every row.
 The worker also reports monotone L9/L13 convergence of the K=0 root toward
-the retained Cycle-583 infinite-sum value (`1.3e-6` and `8.3e-8` gaps) and
-upward dispersion on both moving rows, both consistent with the retained
+the landed Cycle-583 infinite-sum value (`1.3e-6` and `8.3e-8` gaps) and
+upward dispersion on both moving rows, both consistent with the landed
 shore.  Disagreement between independent implementations was surfaced,
-adjudicated against retained evidence, resolved by the worker's own
+adjudicated against landed evidence, resolved by the worker's own
 diagnostics, and recorded — the cross-check performed exactly its function.
 
 Measured ratios (purified rows): train `0.998952 (ticks)` /
 `0.9986576266913 (lift sum)` versus prediction `0.9986576266911`; held
 `0.996805 (ticks)` / `0.9969435085809 (lift sum)` versus `0.9969435085806`.
 The dispersion effects (`-1.3e-3`, `-3.1e-3`) are genuinely resolved by the
-retained lift chain below the integer-tick bound.
+stored lift chain below the integer-tick bound.
 
-### Field (reaches the Cycle-607 N*Q surface)
+### Uniform-phase modulation
 
-With the Cycle-607 interaction `exp(2 pi i s N Q/16)` at uniform Q over the
-dimer support (drift off; the Cycle-607 "distinct local field values" control
-class), the N=2-sector word acquires exactly `alpha = 4 pi s Q/16` per update
-(literal dynamical row equals the modulation to `2.6e-14`).  Every frozen row
+With the explicitly supplied modulation `exp(2 pi i s N Q/16)` at uniform Q,
+the N=2-sector word acquires exactly `alpha = 4 pi s Q/16` per update (the
+literal dynamical row equals the modulation to `2.6e-14`).  Every frozen row
 matches `R(Q,s) = wrap(theta_0 + alpha)/wrap(theta_0)`:
 
 | Q | s | R predicted | orientation flip |
@@ -249,80 +245,60 @@ matches `R(Q,s) = wrap(theta_0 + alpha)/wrap(theta_0)`:
 | 8 | +/-1 | `1.0000` exactly | no |
 
 The fold rows are a stroboscopic discreteness signature of the candidate tick
-law: when the shifted step leaves the principal interval, the clock's
-apparent orientation reverses (wagon-wheel aliasing of a discrete substrate).
-The `Q = 8` rows are exact built-in nulls (`alpha = 2 pi`).  This ratio law is
-derived from the accepted `N*Q` candidate interaction with no supplied
-delay/advance response law and no fitted parameter.
+law: when the shifted step leaves the principal interval, the clock's apparent
+orientation reverses.  The `Q = 8` rows are exact built-in nulls
+(`alpha = 2 pi`).  This is an exact ratio law for the declared modulation, not
+a derivation of a physical field interaction.
 
 ### Comparator versus the 3:4 / 5:4 shore
 
 One frozen row is a near-hit: `(Q=1, s=+1)` predicts `R = 0.73605`, within
-1.9 percent of the Cycle-451 delay word `3/4` but not equal to it; exact
+1.9 percent of the rational comparator `3/4` but not equal to it; exact
 `3/4` would need `alpha = -theta_0/4 = 0.7439`, which is not on the W=16
 lattice.  Per the frozen protocol this is reported as algebraic reachability
-only.  **No identification with the Cycle-451/594 comparator words is
-claimed**: the association between Cycle-610 tick events and Cycle-451 echo
-events, and the empirical calibration, are underived; that association is the
-exact remaining law-level gap on this shore.
+only.  **No cross-apparatus identification or response mechanism is claimed**;
+those would require a landed shared-code association and empirical
+calibration.
 
-## Causal-time dependency map (mission deliverable)
+## Self-contained landing boundary
 
-| object | source cycles | code/lawful domain | derived | supplied | physical-M2 | output class | prediction surface |
-|---|---|---|---|---|---|---|---|
-| matter law G (free+contact) | 219/230/590 | complete global N<=3 code | exact update, `E G_coarse = G_physical E` at held L6, 53 M2/cell | beta, g, global cutoff, preparation | yes (590) | dynamics | mass/contact/seam fixtures |
-| A2 bound branch theta(K) | 578/583 | fixed-K fibers, finite boxes | 15x15 BS equation, pole, dispersion | infinite-volume lemma open | fiber statement of compiled law | spectral surface | Cycle-583 pole surface |
-| detector words | 599/602/605 | N=0+2 code | words at all q; opportunity map from certificate and binder | grade-changing pulse/readout primitive synthesis; rays; binder | partial (support bounds 373 M2; grammar support <= 3) | candidate opportunity | — |
-| tick law CT-1/CT-2 | **610** | locked, convention-independent words | oriented crossings; rate = wrap(theta)/2*pi; lock+convention certificates; association | crossing convention (unit only); bound-branch preparation | inherits detector row; no new physical import | candidate tick events | reaches 583 and 607 |
-| counter/interval | 570 | predecessor-linked chains | additive population; rollover decode; `Delta-tau` equation | root seed, standard, profile genesis | literal support-3 grammar | candidate endpoints | interval words |
-| admission | 571 | finite cells | freshness, first-hit, refill, protection clauses | actuality token, admissibility certificate, law-domain, permanence | support-2 grammar | conditional candidate Record | Record clauses |
-| dual-clock ratio words | 451/594/607 | shared echo events | co-registration, exact scale cancellation | delay/advance response laws, event association, calibration | 69-M2 core | relational interval candidates | 4:4 / 3:4 / 5:4 comparators |
-| field ratio law R(Q,s) | 607+**610** | uniform-Q rows | rate shift alpha = 4 pi s Q/16; folds; nulls | s, W=16, uniform configuration; non-uniform gradients open | 607 typed 16 M2/cell; 609 support-2 (NN packing open) | derived candidate ratio law | reaches 607; near-hit on 3:4 |
-| occurrence/actuality | 571/587/592/595/597 | — | candidate-law consistency, falsifiers | the actuality/admission middle (shared with the Born lane as a dependency, not a proven obstruction) | — | coherent candidates only | Born-lane shared gap |
+This landing executes four things: the byte-pinned fixed-K contact-dimer
+update, the declared two-channel word and tick certificates, the explicit
+finite predecessor/rotor/carry chain, and the declared uniform phase
+modulation.  It does not import the campaign-only compiler, detector,
+admission, field-interaction, or comparator cycles as authority.
 
-## Physical-M2 bridge status
-
-`E G_logical = G_physical E` holds exactly for the matter law at held L6
-through byte-pinned Cycle 590 (global N<=3 cutoff supplied).  The fixed-K
-fiber runs here are lawful sector statements of that same compiled law
-(Cycle-578/583 standing).  The detector family carries bounded code-space
-support upper bounds (373 M2 / 7 compiler blocks + 2 arms at Cycle 602) with
-the grade-changing pulse/readout primitive synthesis open (599/602/605) — the
-tick law adds **no new physical import** beyond that inherited family: the
-tick certificate is a function of the same retained detector word.  The
-counter/rotor/admission blocks reuse the literal CNOT/TOFFOLI/FREDKIN
-support-<=3 grammar (570/602/571).  The `N*Q` interaction is a typed exact
-16-M2/cell unitary (607) with support-two lowering and open NN packing (609).
-Route-B chain semantics are executed here as exact code-space words in the
-570/571 grammar; their primitive layouts are inherited claims of those
-cycles, not re-proved.
+Accordingly, no physical-M2 compiler equality, primitive pulse/readout
+synthesis, Record-production law, physical field/source bridge, or
+cross-apparatus response mechanism is established here.  Those meanings
+remain open even where the finite arrays and Boolean predicates reproduce an
+older campaign protocol.
 
 ## Supplied / derived / open
 
-Supplied: beta, g, finite boxes and K labels; the detector-ray family, pulse
-invocation, visibility floor, and transient skip; the crossing convention
-(tick unit only — ratios are convention-free on the lawful domain); the
+Supplied: beta, g, finite boxes and K labels; the detector word and rays,
+visibility floor, and transient skip; the crossing convention (tick unit only
+— ratios are convention-free on the lawful domain); the
 bound-branch preparation for purified rows (disclosed; the raw rows measure
 this supply's necessity); binder, actuality, admissibility, and law-domain
-tokens; the finite blank bank and refill; W=16, s, and the uniform-Q
-configuration; noiseless exact arithmetic.
+tokens; the finite blank bank and refill; W=16, s, and the uniform phase
+modulation; noiseless exact arithmetic.
 
 Derived on the declared finite codes: the A2-channel spectral roots and their
 bound eigenvectors (residuals < `2.2e-12`); the tick/rate law and its
 agreement with the spectral surface to `1.6e-13`; orientation, unwrap,
 aliasing, deletion, inverse, covariance, and calibration behavior; the
 additive, oriented, unwrapped, local, q-free relational interval with its
-full control suite; the motion and field ratio laws with fold structure and
-exact nulls; the lawful-domain certificates (lock + convention independence)
-and the measured domain boundary at bound weight 0.2627.
+full control suite; the motion and uniform-phase ratio laws with fold structure
+and exact nulls; the lawful-domain certificates (lock + convention
+independence) and the measured domain boundary at bound weight 0.2627.
 
-Open: autonomous bound-branch preparation (the sharpest new wall); objective
-occurrence and Record admission (actuality middle, shared dependency with the
-Born lane); primitive pulse/readout synthesis; root/standard/profile genesis
-and cross-device empirical calibration; association of tick events with the
-Cycle-451 echo events; non-uniform field gradients across the packet;
-alias-ceiling lift (two-line vernier); infinite-volume pole lemma; continuum,
-Lorentz, lapse, redshift, proper time, gravity, and Born meaning.
+Open: autonomous bound-branch preparation; objective occurrence and Record
+admission; physical pulse/readout synthesis; root/standard/profile genesis and
+cross-device empirical calibration; any tick-to-external-response association;
+a physical source/field interpretation and non-uniform gradients; alias-ceiling
+lift; infinite-volume pole lemma; continuum, Lorentz, lapse, redshift, proper
+time, gravity, and Born meaning.
 
 ## Six-wall ledger
 
@@ -330,10 +306,10 @@ Lorentz, lapse, redshift, proper time, gravity, and Born meaning.
 |---|---|---|
 | `C_ref` | four independently prepared clocks calibrate against one spectral standard on the lawful domain | autonomous bound-branch preparation; profile/standard genesis |
 | `C_num` | winding/spectral agreement at `1.6e-13`; exact interval arithmetic | no empirical unit or duration; alias ceiling at the pi boundary |
-| `C_wrap` | physical unwrap via retained lift chain + rollover receipts; certificate reconciles endpoint | multi-clock epoch synchronization; renewal beyond one refill |
+| `C_wrap` | unwrap via the stored lift chain + rollover receipts; certificate reconciles endpoint | multi-clock epoch synchronization; renewal beyond one refill |
 | `C_int` | actual contact drives the tick line; contact deletion collapses the clock | occurrence/actuality middle; N4 encounter clock |
-| `C_local` | decoders read only retained state; all24/576; no q input | pulse/readout primitive synthesis; NN packing of the N*Q lowering |
-| `C_source` | first derived field-conditioned clock-ratio law `R(Q,s)` with folds and nulls | uniform-Q only; no gradient, recoil, backreaction, lapse, or gravity |
+| `C_local` | decoders read only stored chain state; all24/576; no q input | physical pulse/readout synthesis and local packing remain open |
+| `C_source` | exact uniform-phase-conditioned ratio law `R(Q,s)` with folds and nulls | no physical source/field bridge, gradient, recoil, backreaction, lapse, or gravity |
 
 ## Evidence-planning coordinates (causal time)
 
@@ -350,10 +326,10 @@ handoff convention (planning aids, not probabilities or audit grades):
 
 ## Fresh N1-N8 no-go discipline
 
-N1 — Normalized families: (i) two-channel transported-detector tick clock —
+N1 — Normalized families: (i) two-channel detector-word tick clock —
 attempted, positive on the certified domain; (ii) onsite single-channel
-Ramsey clock — prior Cycle-599 failure, its q=1 boundary now shown intrinsic
-and its q=3 boundary shown torus-specific; (iii) raw-source tick clock —
+Ramsey clock — its q=1 boundary is shown intrinsic and its q=3 row bright;
+(iii) raw-source tick clock —
 attempted, falsified by convention dependence (the three FAIL rows);
 (iv) controlled first-return comparator — prior 586, supplied controller;
 (v) spectral-instrument pointer — prior 586, supplied instrument; (vi) A2/T2
@@ -409,8 +385,8 @@ domain boundary.  The remaining walls are typed, not merged.
   redshift, or proper time; the near-hit on `3:4` is algebraic reachability,
   not identification.
 - Proper-cubic covariance is not Lorentz covariance.
-- The uniform-field row is a supplied lawful field configuration;
-  non-uniform gradients remain open.
+- The uniform-phase row is a supplied mathematical modulation, not a derived
+  physical field configuration.
 - The purified source is a supplied preparation; the raw rows measure the
   lawful-domain boundary.
 
@@ -422,10 +398,9 @@ No Thirring engine is used or compared.
 (bound weight 0.2627 -> dust-locked, convention-dependent winding) makes the
 missing supply exact: a lawful, bounded, autonomous dynamics that takes the
 raw onsite-A2 source to dominant bound-branch weight.  Concrete routes:
-(a) repeated contact-conditional interference filtering through the already
-constructed Cycle-605 controlled-contact circuit (a physical spectral filter);
-(b) a dissipative binder/pointer cascade using the Cycle-590 Route-C pointer
-with explicit fresh dephasing resources; (c) adiabatic contact ramp
+(a) repeated contact-conditional interference filtering;
+(b) a dissipative binder/pointer cascade with explicit fresh dephasing
+resources; (c) adiabatic contact ramp
 `g: 0 -> 0.37` with frozen schedule.  Success contract: raw source in,
 certified locked convention-independent clock out, no spectral data consulted
 at runtime, all 610 certificates and ratio bridges rerun unchanged.  Second
@@ -437,32 +412,22 @@ test.
 
 ```text
 RESULT 33 PASS / 3 FAIL (three preregistered falsification rows; exit 1 expected)
-external wall:                68.27 s
-maximum resident set size:    343,162,880 bytes
-peak memory footprint:        224,396,200 bytes
-swaps:                        0
-runner SHA-256:               10f2d837940b1f364a9c75325f15f52dbec640e6ba0b91862caaa14dce2d121c
-receipt SHA-256:              b3b0a412ab995c11e2161e9d33e979d1f2a808c97f1f10680b25ef778476c3ca
-cold transcript SHA-256:      b5f26aeea6adcf0bba53dfa5df17433c9afbf0c9c51202e7aaad9eaeaaa022a8
+runner SHA-256:               36fcb1655bbdcd758b69ea1e273821e5c820f738eb63199570c8f36c7e294bac
+receipt:                      outputs/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_receipt_2026_07_22.json
+cold transcript:              outputs/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_cold_2026_07_22.txt
 frozen contract SHA-256:      52666bb481107d722f976a4ebb72943d802211acac84e6108dca8f5daa233406
 worker root file SHA-256:     3ef1fe2987236e4e02bdd5b9511067e3e4ec4e50b61175e23dc6505dd2c181af
 worker solver SHA-256:        a2c75d3406645884328f6d8eb23fb26f0020f11e02da79321f68d3396b2502ee
 ```
 
-The worker cross-implementation artifacts are retained outside the repository
-in the session scratchpad; the hashes above pin the worker's FINAL five-row
-deliverable.  An earlier mid-flight snapshot of the worker's incremental root
+The receipt and cold transcript are runner outputs and are cited by path rather
+than forward-hashed from this note; a legitimate rerun may change their timing
+fields without silently invalidating note provenance.
+
+The historical worker cross-implementation artifacts remain outside the
+repository and are not authority for this landing; the hashes above identify
+the reported files.  An earlier mid-flight snapshot of the worker's incremental root
 file (SHA-256
 `d27f8e84f23d9953fe137e983a624f232e2417a225b22e25d935c172f59aea24`) contained
 the later-corrected K != 0 branch hop discussed in Route C; both hashes are
 recorded so the two-stage verification is fully reconstructible.
-
-## Dependency citations
-
-This runner byte-pins or imports the accepted upstream surfaces
-[Cycle 210](PROPER_CUBIC_BOUND_OBJECT_EQUIVALENCE_CYCLE210_NOTE_2026-07-16.md),
-[Cycle 219](COMMON_MATTER_FIELD_COIN_FAMILY_CYCLE219_NOTE_2026-07-16.md),
-[Cycle 230](SPATIAL_CAR_CONTACT_SEAM_FORM_FACTOR_CYCLE230_NOTE_2026-07-17.md),
-[Cycle 578](PHYSICAL_INTRINSIC_CONTACT_BOUND_MOVING_TRANSITION_TOURNAMENT_CYCLE578_NOTE_2026-07-22.md),
-and [Cycle 583](PHYSICAL_CONTACT_DIMER_INFINITE_INTERNAL_CONTENT_TOURNAMENT_CYCLE583_NOTE_2026-07-22.md),
-whose re-frozen bytes this cycle consumes.

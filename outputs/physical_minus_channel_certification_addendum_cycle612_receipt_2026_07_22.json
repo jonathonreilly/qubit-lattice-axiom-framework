@@ -4,8 +4,8 @@
  "audit": "unset",
  "frozen_contract_sha256": "d45cad77c7d74df1951930ae796295fd8c405cc59d668f2fda98ca430b32cea1",
  "consumed": {
-  "cycle610_runner": "10f2d837940b1f364a9c75325f15f52dbec640e6ba0b91862caaa14dce2d121c",
-  "cycle611_runner": "1b6bad7ca54d72a9ac3e7effb0ef069b5cdd6e8d31d21af3d2c2adab1e813bec"
+  "cycle610_runner": "36fcb1655bbdcd758b69ea1e273821e5c820f738eb63199570c8f36c7e294bac",
+  "cycle611_runner": "15db2200b08bc4a5d7669975806fe51e9b8a55049f0660969d427332602bf9e8"
  },
  "channel_factors": {
   "plus_bound_factor": 0.013749355556730332,
@@ -81,11 +81,11 @@
   "contact_off": "none"
  },
  "interpretation_firewall": [
-  "the channel sign is apparatus structure within the fixed Cycle-602 two-channel family, selected by the law's own certificates, not by spectral data",
+  "the channel sign is apparatus structure within the declared two-channel family, selected by the law's own certificates, not by spectral data",
   "a certified rate is a dimensionless relational candidate, not proper time, lapse, or energy",
   "the plus-channel falsification rows of Cycles 610-612 stand unchanged; this addendum refines the candidate law, it does not repair preregistered failures"
  ],
- "elapsed_seconds": 8.127177953720093,
+ "elapsed_seconds": 7.568087100982666,
  "pass_count": 5,
  "fail_count": 0,
  "pass": true

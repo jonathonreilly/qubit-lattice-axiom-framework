@@ -2,7 +2,7 @@
 """Cycle 612 addendum: minus-channel certification and the autonomous
 channel-selection rule (frozen contract addendum 2).
 
-The plus-sign Cycle-602 aggregate suppresses this species' bound line by
+The declared plus-sign aggregate suppresses this species' bound line by
 |1 + e^{-i theta_b}|^2/2 = 0.0138 on mixed states; the minus channel enhances
 it by 1.972/2.  These rows certify the Cycle-611 P-A state, the raw source,
 and the exact bound eigenvector through the minus channel with raw rays, and
@@ -30,6 +30,8 @@ sys.path.insert(0, str(ROOT / "scripts"))
 FROZEN_CONTRACT_SHA256 = (
     "d45cad77c7d74df1951930ae796295fd8c405cc59d668f2fda98ca430b32cea1"
 )
+C610_SHA256 = "36fcb1655bbdcd758b69ea1e273821e5c820f738eb63199570c8f36c7e294bac"
+C611_SHA256 = "15db2200b08bc4a5d7669975806fe51e9b8a55049f0660969d427332602bf9e8"
 RECEIPT = ROOT / (
     "outputs/physical_minus_channel_certification_addendum_"
     "cycle612_receipt_2026_07_22.json"
@@ -110,12 +112,25 @@ def certify_word(word: np.ndarray, theta: float) -> dict[str, object]:
 
 def main() -> int:
     start = time.time()
+    observed_dependencies = {
+        "cycle610_runner": C610_SHA,
+        "cycle611_runner": C611_SHA,
+    }
+    expected_dependencies = {
+        "cycle610_runner": C610_SHA256,
+        "cycle611_runner": C611_SHA256,
+    }
+    if observed_dependencies != expected_dependencies:
+        raise RuntimeError(
+            "byte-pinned predecessor mismatch: "
+            f"observed={observed_dependencies!r}"
+        )
     receipt: dict[str, object] = {
         "cycle": "612-addendum",
         "authority": "none",
         "audit": "unset",
         "frozen_contract_sha256": FROZEN_CONTRACT_SHA256,
-        "consumed": {"cycle610_runner": C610_SHA, "cycle611_runner": C611_SHA},
+        "consumed": observed_dependencies,
     }
     engine = C611.PositionEngine(C611.L_TRAIN, C611.BETA)
     root = C610.bs_root(C611.L_TRAIN, C610.K_TRAIN_0, C611.BETA)
@@ -160,10 +175,9 @@ def main() -> int:
     )
     raw_minus = rows["raw_source_minus"]
     check(
-        "(b) OPEN ROW REPORTED: whether the raw onsite-A2 source certifies "
-        "through the minus channel (no frozen prior; a pass means the "
-        "autonomous clock needs no preparation at all)",
-        True,
+        "(b) the raw onsite-A2 source remains uncertified through the minus "
+        "channel, so preparation remains necessary",
+        not raw_minus["certified"],
         raw_minus,
     )
     receipt["open_row_raw_minus_certified"] = bool(raw_minus["certified"])
@@ -190,21 +204,20 @@ def main() -> int:
         else "none"
     )
     receipt["channel_selection"] = selection
-    certifying_states = [label for label in ("pa_state", "raw_source",
-                                             "bound_eigenvector")
-                         if rows[f"{label}_minus"]["certified"]
-                         or rows[f"{label}_plus"]["certified"]]
     check(
-        "(d) the certificate-based channel selector picks the minus channel "
-        "for every state that certifies on either channel, and the contact-off "
-        "deletion word selects no channel or fails certification",
-        all(selection[label] in ("minus", "both") for label in certifying_states)
+        "(d) the certificate-based selector uniquely picks minus for the P-A "
+        "mixed state, picks neither for the raw source, permits both signs for "
+        "the exact eigenvector, and the contact-off deletion fails "
+        "certification",
+        selection["pa_state"] == "minus"
+        and selection["raw_source"] == "none"
+        and selection["bound_eigenvector"] == "both"
         and not off_row["certified"],
         {"selection": selection, "contact_off_certified": off_row["certified"]},
     )
 
     receipt["interpretation_firewall"] = [
-        "the channel sign is apparatus structure within the fixed Cycle-602 "
+        "the channel sign is apparatus structure within the declared "
         "two-channel family, selected by the law's own certificates, not by "
         "spectral data",
         "a certified rate is a dimensionless relational candidate, not proper "

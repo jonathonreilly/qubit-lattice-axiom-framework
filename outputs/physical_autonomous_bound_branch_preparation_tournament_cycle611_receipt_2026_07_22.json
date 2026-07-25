@@ -3,7 +3,7 @@
  "authority": "none",
  "audit": "unset",
  "frozen_contract_sha256": "1dab9ebb17ac1d351651da745ca698a15a3bc94648dd38c6222022df6df77bde",
- "consumed_cycle610_sha256": "10f2d837940b1f364a9c75325f15f52dbec640e6ba0b91862caaa14dce2d121c",
+ "consumed_cycle610_sha256": "36fcb1655bbdcd758b69ea1e273821e5c820f738eb63199570c8f36c7e294bac",
  "parameters": {
   "beta": -0.3,
   "contact": 0.37,
@@ -236,10 +236,10 @@
   "the conditioning pointer/selector is not a Record",
   "success probability is a norm account, not Born probability",
   "certification uses spectral data; preparation does not",
-  "conditioned routes are resource-accounted postselection, not deterministic autonomy; the deterministic route is P-C"
+  "conditioned routes are resource-accounted postselection, not deterministic autonomy; the tested deterministic P-C candidate is falsified"
  ],
- "elapsed_seconds": 16.000629663467407,
- "pass_count": 9,
- "fail_count": 2,
+ "elapsed_seconds": 14.96002197265625,
+ "pass_count": 8,
+ "fail_count": 3,
  "pass": false
 }

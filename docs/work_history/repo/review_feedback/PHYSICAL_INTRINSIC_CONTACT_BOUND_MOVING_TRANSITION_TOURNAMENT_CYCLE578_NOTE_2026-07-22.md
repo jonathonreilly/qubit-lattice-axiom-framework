@@ -46,7 +46,7 @@ It separates three results that must not be conflated.
    packet made from those fibers moves by a nonzero signed group displacement
    in one update while a flattened-phase control does not. This is the
    strongest result: finite evidence for an **intrinsic contact-bound
-   dispersive composite band** in the admitted CAR matter law, not an attached
+   dispersive composite band** in the supplied CAR matter law, not an attached
    spectator rail. It is not closure of an infinite-volume bound-band theorem,
    continuum
    soliton theorem, physical velocity calibration, or proper-time clock.
@@ -382,7 +382,7 @@ finite 72-rail code, not a derivation of that code.
 1. Prove an infinite-volume contact-resolvent pole and exponential-tail bound.
 2. Search cubic irreps and three-particle contact sectors for a second band.
 3. Bind the accepted scalar/even transition dynamically to the contact dimer.
-4. Derive Route-C orientation/tag content from a recyclable admitted field.
+4. Derive Route-C orientation/tag content from a recyclable supplied field.
 5. Replace supplied `T_f` by interaction-generated composite transport.
 6. Add independent empirical scale and source probes without semantic upgrades.
 

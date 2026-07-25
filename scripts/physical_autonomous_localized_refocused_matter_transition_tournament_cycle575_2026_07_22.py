@@ -153,7 +153,9 @@ def dependency_controls() -> dict[str, object]:
         and observed == DEPENDENCY_SHA256
         and receipt_observed == RECEIPT_SHA256
         and note_hash == CYCLE573_NOTE_SHA256
-        and all(row.get("pass") is True for row in receipt_rows.values())
+        and receipt_rows[
+            "physical_matter_transition_clock_equivalence_tournament_cycle573_receipt_2026_07_22.json"
+        ].get("pass") is True
         and max(retained[key] for key in ("mass_residual", "contact_residual", "seam_residual")) < TOL,
         {
             "current_commit": current_commit(),
@@ -163,7 +165,7 @@ def dependency_controls() -> dict[str, object]:
             "receipts": receipt_observed,
             "Cycle573_note_sha256": note_hash,
             "retained": retained,
-            "evidence_source": "Cycle563 receipt fixtures (computed by its recorded run via the Cycle557/533 fixture path); Cycle569/570 receipts byte-pinned; their aggregate pass values are recorded campaign statements, not evidence consumed here",
+            "evidence_source": "Cycle563 receipt fixtures (computed by its recorded run via the Cycle557/533 fixture path); Cycle569/570 receipts are byte-pinned anchors whose aggregate pass values are not gate inputs; the runnable Cycle573 pass is consumed",
         },
     )
     return retained
@@ -966,7 +968,7 @@ def no_go_gate(retained: dict[str, object]) -> dict[str, object]:
     )
     n6 = (
         "search the unmodified massive walk for a compact flat eigenphase pair",
-        "derive the carrier star as a bound state of admitted local CAR contact",
+        "derive the carrier star as a bound state of supplied local CAR contact",
         "compile the inverse-control tag from a recyclable local QCA phase carrier",
         "retire the 36-rail tensor import through a bounded physical-M2 subcell compiler",
         "feed typed candidate pairs into a later Cycle456-compatible word builder without importing its classifier",
@@ -1008,7 +1010,7 @@ def no_go_gate(retained: dict[str, object]) -> dict[str, object]:
         "unmodified massive flat-band or nonlinear soliton construction",
         "noise, unbounded operation, synchronization, and continuum/Lorentz refinement",
         "independent empirical clock selection and dimensionful calibration",
-        "FORMATION admission, Record actuality, realized history, source gravity, and Born probability",
+        "Record formation, actuality, realized history, source gravity, and Born probability",
     )
     ledger = {
         "C_ref": "localized carrier/echo/composite transition references constructed; preparation and update content remain supplied, and the composite clock is a kinematically attached spectator",

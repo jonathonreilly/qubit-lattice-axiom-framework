@@ -261,9 +261,9 @@ def cyclic_gap(length: int, phase: float) -> float:
                 momentum = 2 * np.pi * np.asarray((ix, iy, iz), float) / length
                 values, vectors = np.linalg.eig(free_fiber(momentum))
                 overlaps = np.abs(vectors.conj().T @ A2_FULL)
-                admitted = overlaps > 1e-8
-                if np.any(admitted):
-                    distances = np.abs(np.angle(values[admitted] / z))
+                contact_coupled = overlaps > 1e-8
+                if np.any(contact_coupled):
+                    distances = np.abs(np.angle(values[contact_coupled] / z))
                     minimum = min(minimum, float(np.min(distances)))
     return minimum
 

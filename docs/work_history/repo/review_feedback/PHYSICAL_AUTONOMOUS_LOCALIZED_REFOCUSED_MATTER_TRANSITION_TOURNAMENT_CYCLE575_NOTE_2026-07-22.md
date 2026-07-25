@@ -71,7 +71,7 @@ modes.
    envelope update is removed: decoupled transition weight is
    `1.0000000000000009`, residual `5.202840303283412e-16`, and the measured
    envelope-to-clock coupling signal across held beta/source variations is
-   only `1.692755932018445e-15`. Thus the clock is kinematically attached by
+   only `2.3536266308767165e-15`. Thus the clock is kinematically attached by
    the 36-rail identity, not dynamically bound to the original matter. It is a
    conditional carried internal standard, not a derivation from six-mode
    inertia.
@@ -433,7 +433,7 @@ Open:
 5. noise, unbounded operation, synchronization, and continuum/Lorentz
    refinement;
 6. independent empirical clock selection and a dimensionful calibration;
-7. FORMATION admission, Record actuality, permanence, and realized history;
+7. Record formation, actuality, permanence, and realized history;
 8. physical source/gravity/redshift/backreaction and Born probability.
 
 ## TOE dependency ledger
@@ -526,7 +526,7 @@ no dynamical binding law exists.
 ## N6 — partial-closure paths
 
 Live import-retirement paths are to search the unmodified massive walk for a
-compact flat eigenphase pair; derive the star carrier from admitted CAR
+compact flat eigenphase pair; derive the star carrier from supplied CAR
 contact; compile the tag from a recyclable local QCA carrier; compile the
 36-rail tensor from bounded physical subcells; add a genuine envelope-clock
 binding and re-run the spectator control; build a Cycle456-compatible word

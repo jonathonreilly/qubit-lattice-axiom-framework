@@ -145,13 +145,19 @@ def dependency_controls() -> dict[str, float]:
         ancestor and observed == DEPENDENCY_SHA256
         and receipt_observed == RECEIPT_SHA256
         and note_hash == CYCLE575_NOTE_SHA256
-        and all(row.get("pass") is True for row in receipts.values())
+        and all(
+            receipts[name].get("pass") is True
+            for name in (
+                "physical_matter_transition_clock_equivalence_tournament_cycle573_receipt_2026_07_22.json",
+                "physical_autonomous_localized_refocused_matter_transition_tournament_cycle575_receipt_2026_07_22.json",
+            )
+        )
         and max(retained.values()) < TOL,
         {
             "HEAD": current_commit(), "accepted_Cycle575_commit": ACCEPTED_CYCLE575_COMMIT,
             "ancestor": ancestor, "runners": observed, "receipts": receipt_observed,
             "Cycle575_note_sha256": note_hash, "retained": retained,
-            "evidence_source": "Cycle563 receipt fixtures (computed by its recorded run via the Cycle557/533 fixture path); Cycle569 receipt byte-pinned; its aggregate pass value is a recorded campaign statement, not evidence consumed here",
+            "evidence_source": "Cycle563 receipt fixtures (computed by its recorded run via the Cycle557/533 fixture path); Cycle569 is a byte-pinned anchor whose aggregate pass value is not a gate input; runnable Cycle573/575 passes are consumed",
         },
     )
     return retained
@@ -654,8 +660,7 @@ def route_b_controls() -> dict[str, object]:
     maximum_covariance = max(
         max(row["eigen_residual"], row["norm_residual"]) for row in covariance_rows
     )
-    check(
-        "the actual Cycle230 antisymmetric contact sector gives strong finite-box evidence for a localized dispersive dimer with a gauge-fixed nonzero-K packet, CAR-fiber inverse/leakage controls, and a separately pinned physical-M2 shore",
+    finite_contact_bound_band_evidence_passed = (
         maximum_eigen_residual < EIG_TOL and minimum_contact > 0.25
         and maximum_radius < 2.1 and size_rows[-1]["seam_boundary_weight"] < 3e-3
         and minimum_overlap > 0.99 and maximum_gauge_residual < TOL
@@ -670,7 +675,11 @@ def route_b_controls() -> dict[str, object]:
         and exchange_partner_deletion_leakage > SIGNAL and malformed_rejected
         and len(frames) == 24 and len(frames)**2 == 576
         and maximum_covariance < EIG_TOL and paired_failures == 0
-        and not second_band_certified,
+        and not second_band_certified
+    )
+    check(
+        "the actual Cycle230 antisymmetric contact sector gives strong finite-box evidence for a localized dispersive dimer with a gauge-fixed nonzero-K packet, CAR-fiber inverse/leakage controls, and a separately pinned physical-M2 shore",
+        finite_contact_bound_band_evidence_passed,
         {
             "size_rows": size_rows, "coupling_source_rows": source_rows,
             "held_L11_band_rows": band_rows,
@@ -734,7 +743,8 @@ def route_b_controls() -> dict[str, object]:
         "second_window_rows": second_rows,
         "second_stable_bound_band_certified": second_band_certified,
         "internal_beat_transition_closed": False,
-        "finite_contact_bound_band_evidence_passed": True,
+        "finite_contact_bound_band_evidence_passed":
+            finite_contact_bound_band_evidence_passed,
         "infinite_volume_bound_band_theorem_closed": False,
         "physical_M2_bound_state_embedding_closed": False,
     }
@@ -1023,7 +1033,7 @@ def no_go_gate(retained: dict[str, float]) -> dict[str, object]:
         walls[2]: "error correction, renewal resources, and stability under iteration",
         walls[3]: "an independent measured scale and calibration map",
         walls[4]: "a dynamical source field and backreaction law",
-        walls[5]: "admission, actuality, and measure-selection laws",
+        walls[5]: "Record formation, actuality, and measure-selection laws",
     }
     pairwise = tuple(
         (
@@ -1060,7 +1070,7 @@ def no_go_gate(retained: dict[str, float]) -> dict[str, object]:
         "continue the contact-band resolvent calculation to an infinite-volume pole and exponential-tail bound",
         "search cubic irreps and three-particle contact sectors for a second stable bound band",
         "couple the bound dimer to the accepted scalar/even transition rather than attach a spectator tag",
-        "derive the orientation/tag carrier from an admitted recyclable local phase field",
+        "derive the orientation/tag carrier from a supplied recyclable local phase field",
         "replace Route-C supplied translation with interaction-generated dimer transport",
         "run independent source coupling and empirical-scale probes without calling wrapped phase energy",
     )
@@ -1425,7 +1435,7 @@ def main() -> int:
             "in volume, decompose the bound spectrum by proper-cubic irreps, and "
             "search the three-particle/contact sector for a second co-moving "
             "localized band with a local observable cross term; only then attack "
-            "the Route-C 66-rail import through an admitted recyclable "
+            "the Route-C 66-rail import through a supplied recyclable "
             "orientation/tag carrier"
         ),
     }

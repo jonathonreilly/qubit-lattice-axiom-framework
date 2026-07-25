@@ -160,20 +160,18 @@ def dependency_controls() -> dict[str, object]:
         "Cycle563_mass_residual": receipts["physical_held_sparse_order_retirement_cycle563_receipt_2026_07_21.json"]["fixtures"]["Cycle219_mass_residual"],
         "Cycle563_contact_residual": receipts["physical_held_sparse_order_retirement_cycle563_receipt_2026_07_21.json"]["fixtures"]["Cycle230_contact_factorization_residual"],
         "Cycle563_seam_residual": receipts["physical_held_sparse_order_retirement_cycle563_receipt_2026_07_21.json"]["fixtures"]["Cycle230_axis_seam_residual"],
-        "Cycle570_pass": receipts["physical_joint_clock_accumulator_contraction_bridge_cycle570_receipt_2026_07_22.json"]["pass"],
     }
     check(
         "accepted Cycle570 commit is ancestral, the Cycle219/230/563/569/570 shore artifacts are byte-exact, and retained physics evidence is consumed from the Cycle563 receipt's computed fixtures",
         accepted_base_is_ancestor()
         and observed == DEPENDENCY_SHA256 and receipt_observed == RECEIPT_SHA256
-        and all(receipt.get("pass") is True for receipt in receipts.values())
         and max(evidence[key] for key in evidence if key.endswith("residual")) < 5e-10,
         {"current_commit": current_commit(),
          "accepted_Cycle570_commit": ACCEPTED_CYCLE570_COMMIT,
          "accepted_Cycle570_is_ancestor": accepted_base_is_ancestor(),
          "runners": observed, "receipts": receipt_observed,
          "retained_fixtures": evidence,
-         "evidence_source": "Cycle563 receipt fixtures (computed by its recorded run via the Cycle557/533 fixture path); Cycle569/570 receipts byte-pinned; their aggregate pass values are recorded campaign statements, not evidence consumed here"},
+         "evidence_source": "Cycle563 receipt fixtures (computed by its recorded run via the Cycle557/533 fixture path); Cycle569/570 receipts are byte-pinned anchors whose aggregate pass values are not gate inputs"},
     )
     return evidence
 
@@ -847,7 +845,7 @@ def no_go_inventory_controls(started: float, fixtures, route_a, route_b, route_c
     n6 = (
         "derive a localized trap from the accepted free-plus-contact law",
         "test a refocused freely moving packet without host-chosen mirrors",
-        "couple the recyclable ledger to admitted FORMATION without calling it actuality",
+        "couple the recyclable ledger to a supplied Record-formation bridge without calling it actuality",
         "replace finite base-16 capacity with an autonomous stabilizing reservoir",
         "compare against an independently selected face-carrier or field-transition standard",
         "establish empirical scaling and controlled continuum/Lorentz transport",
@@ -881,7 +879,7 @@ def no_go_inventory_controls(started: float, fixtures, route_a, route_b, route_c
     open_items = (
         "localized autonomous recurrence under the accepted untrapped full stream",
         "derivation/selection of trap, transition preparation and transport law",
-        "FORMATION admission, Record actuality, permanence and realized history",
+        "Record formation, actuality, permanence and realized history",
         "unbounded recyclable reservoir, stability, noise and synchronization",
         "independent empirical clock equivalence and dimensionful scale",
         "continuum/Lorentz/proper-time theorem, source/gravity and Born probability",

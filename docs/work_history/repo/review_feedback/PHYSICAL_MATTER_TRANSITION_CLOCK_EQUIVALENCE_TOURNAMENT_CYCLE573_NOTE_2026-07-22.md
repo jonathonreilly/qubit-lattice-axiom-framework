@@ -55,7 +55,7 @@ matter-transition equivalence plus finite recyclable calibration, not proper
 time**. The transition preparation, beta, trap, path, contact/source law,
 finite ledger, and noiseless gates remain supplied. Localized autonomous
 transport, empirical scale, independent-clock universality, continuum/Lorentz
-control, FORMATION admission, Record actuality, and realized history remain
+control, Record formation, actuality, and realized history remain
 open.
 
 No shared obstruction survives the positive routes. There is no axiom
@@ -350,7 +350,7 @@ Open:
 1. a localized autonomous recurrence under the accepted untrapped full stream;
 2. derivation or physical selection of transition preparation, trap,
    refocusing, transport, and comparison law;
-3. FORMATION admission, Record actuality, permanence, and realized history;
+3. Record formation, actuality, permanence, and realized history;
 4. unbounded recyclable resources, stability, noise, and synchronization;
 5. equivalence to an independently generated clock and empirical dimensionful
    scale; and
@@ -431,10 +431,11 @@ untested. “Equivalence” refers only to the declared transition receipt.
 
 Live routes are to derive a localized trap from free-plus-contact dynamics;
 refocus a freely moving packet without host-chosen mirror cadence; bind the
-recyclable ledger to admitted FORMATION without calling it actuality; replace
-finite capacity by autonomous stabilization; compare an independently selected
-face-carrier or field transition; and establish empirical scale with controlled
-continuum/Lorentz transport. None presently requires an axiom edit.
+recyclable ledger to a supplied Record-formation bridge without calling it
+actuality; replace finite capacity by autonomous stabilization; compare an
+independently selected face-carrier or field transition; and establish
+empirical scale with controlled continuum/Lorentz transport. None presently
+requires an axiom edit.
 
 ## N7 — strongest actionable steelman
 

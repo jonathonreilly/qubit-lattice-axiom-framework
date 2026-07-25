@@ -16,12 +16,12 @@ file per claim), summarized in
 
 | Metric | Value |
 |---|---:|
-| Retained positive rows | 107 |
+| Retained positive rows | 108 |
 | Retained bounded rows | 332 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 26 |
 
-## Retained positive rows (107)
+## Retained positive rows (108)
 
 Sorted by load-bearing graph score (descending).
 
@@ -119,6 +119,7 @@ Sorted by load-bearing graph score (descending).
 - [`ckm_inverse_square_structural_sum_rule_narrow_theorem_note_2026-05-10`](../../docs/CKM_INVERSE_SQUARE_STRUCTURAL_SUM_RULE_NARROW_THEOREM_NOTE_2026-05-10.md) — score 1.500; audited 2026-07-25T12:43:21.790713+00:00
 - [`fixed_field_grown_transfer_scout_note`](../../docs/FIXED_FIELD_GROWN_TRANSFER_SCOUT_NOTE.md) — score 1.500; audited 2026-05-12T00:20:01.571961+00:00
 - [`koide_gamma_orbit_cyclic_return_candidate_note_2026-04-18`](../../docs/KOIDE_GAMMA_ORBIT_CYCLIC_RETURN_CANDIDATE_NOTE_2026-04-18.md) — score 1.500; audited 2026-05-10T16:06:44.033908+00:00
+- [`powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20`](../../docs/POWERS_UHF_TRACIAL_UNIQUENESS_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md) — score 1.500; audited 2026-07-25T13:31:02.550349+00:00
 - [`staggered_graph_gauge_closure_results_2026-04-10`](../../docs/STAGGERED_GRAPH_GAUGE_CLOSURE_RESULTS_2026-04-10.md) — score 1.500; audited 2026-05-08T03:01:03.682496+00:00
 - [`acphilambda_c3_resolvent_determinant_holonomy_coupling_narrow_theorem_note_2026-07-12`](../../docs/ACPHILAMBDA_C3_RESOLVENT_DETERMINANT_HOLONOMY_COUPLING_NARROW_THEOREM_NOTE_2026-07-12.md) — score 0.000; audited 2026-07-12T19:01:41Z
 - [`central_band_born_largen_note`](../../docs/CENTRAL_BAND_BORN_LARGEN_NOTE.md) — score 0.000; audited 2026-05-17T15:17:37.837536+00:00

@@ -1,24 +1,47 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T13:31:02.550349+00:00",
+  "audit_invocation_history": [
+    "6d2ab72311fc48e2a9d0db2595811e4d"
+  ],
+  "audit_invocation_id": "6d2ab72311fc48e2a9d0db2595811e4d",
+  "audit_state_snapshot": {
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {
+      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    },
+    "dep_claim_scope": {
+      "minimal_axioms": null
+    },
+    "dep_claim_type": {
+      "minimal_axioms": "meta"
+    },
+    "dep_effective_status": {
+      "minimal_axioms": "meta"
+    },
+    "deps": [
+      "minimal_axioms"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 1.5,
+    "runner_hash": null,
+    "transitive_descendants": 1
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-audit-batch-A-20260725-846770b2",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "Compatible normalized traces define a state on the dense local algebra and extend continuously to its C*-closure. Every tracial state has the same finite-region restrictions, so continuity forces global equality.",
   "claim_id": "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20",
-  "claim_scope": null,
+  "claim_scope": "Unique tracial state on the qubit-lattice quasi-local UHF algebra A = closure of the directed union of finite tensor products over lattice sites, with every finite-region restriction equal to the normalized matrix trace; no downstream physical identification of tau_infty as a reference-state premise is audited.",
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem candidate (narrow theorem)",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T13:31:02.550349+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,19 +49,20 @@
     "minimal_axioms"
   ],
   "direct_in_degree": 1,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "retained",
+  "effective_status_reason": "self",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "retained",
   "load_bearing_score": 1.5,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Any tracial state agrees with the normalized trace on every finite-region algebra, hence on the dense local subalgebra, and norm-continuity extends that agreement to all of A.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "4d8d4f1c7702ee4e0992508f8aec376d96497fa42378a5e49cb57612b68f484c",
   "note_path": "docs/POWERS_UHF_TRACIAL_UNIQUENESS_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "A second auditor should preserve the stated exclusion of the downstream physical reference-state identification and read the infinite-product density notation only through its finite-region restrictions.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -368,5 +392,5 @@
   "runner_path": null,
   "title": "Powers UHF Tracial Uniqueness on the Qubit-Lattice Quasi-Local Algebra (Narrow)",
   "transitive_descendants": 1,
-  "verdict_rationale": null
+  "verdict_rationale": "The matrix-unit proof of finite-dimensional trace uniqueness, the tensor-dimension normalization in the restriction calculation, and the density/continuity uniqueness argument all check independently. No runner was supplied, but the load-bearing proof is exact and does not require computation. Equation (7) is correct on every finite region; the broader physical reference-state identification is outside the audited scope."
 }

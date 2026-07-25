@@ -1,7 +1,7 @@
 {
  "audit": "unset",
  "authority": "none",
- "conclusion": "Strict Record additivity forbids every interaction term, so no source action is a scalar readout. The minimal position-carrying extension is a two-body kernel; lattice covariance reduces it at nearest-neighbor range to a single constant, the adjacent-pair count. That functional is additive only for separated collections, it supplies a site-anchored value as the marginal cost of a test record, and the field operator it induces lies in the same two-dimensional family the law-side classification gives.",
+ "conclusion": "Under the strict reading, Record additivity excludes irreducible multi-record terms from the scalar readout; it does not exclude a separate interaction law or dynamics. The minimal relational position-carrying extension is a two-body kernel; under the named downstream-law conditions, proper-cubic covariance reduces it at nearest-neighbor range to a single constant, the adjacent-pair count. That functional is additive only for separated collections, it supplies a site-anchored value as the marginal cost of a test record, and the field operator it induces lies in the same two-dimensional family as the landed law-side classification.",
  "cycle": 698,
  "cycle_claim": null,
  "fail_count": 0,
@@ -18,9 +18,9 @@
  "pass_count": 6,
  "range_1_pair_kernel_parameters": 1,
  "resources": {
-  "elapsed_seconds": 0.042616582941263914
+  "elapsed_seconds": 0.06436954194214195
  },
- "runner_sha256": "b3fa0a7c29fc6b58be0fd1f985612f5c6b0cb6b73514fb311b0d97043487b7cb",
+ "runner_sha256": "805e2259f71f4cf036bca4b8f91bb2589f78ad9213c13343147989e6518f8b35",
  "site_anchored_readout_shape": "the field at a site is the marginal readout cost of a test record placed there; at an empty site it is defined only through that test record",
- "strict_additivity_forbids_interaction": true
+ "strict_additivity_boundary": "no irreducible multi-record term occurs in the scalar readout under the strict reading"
 }

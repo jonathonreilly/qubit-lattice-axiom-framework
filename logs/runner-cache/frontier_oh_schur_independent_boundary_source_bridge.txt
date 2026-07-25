@@ -1,0 +1,103 @@
+===== runner cache v1 =====
+runner: scripts/frontier_oh_schur_independent_boundary_source_bridge.py
+runner_sha256: 0ddedcfb7ec3404892c07cf4c4a7281bf4051fd94fabcd66219a9aadb9b0a024
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 2.70
+status: ok
+----- stdout -----
+Independent boundary source from the microscopic source: Schur bridge theorem
+seed=20260725  sizes=(13, 15, 17)  cutoff_radius=4.0
+
+LEGEND  err = rel ||x - x_ref||_inf / ||x_ref||_inf; x = S^-1 j_micro(rho) and x_ref =
+f_true in 4a-4f, f_inf = ||f_true||_inf. ||.||_inf of a matrix = max |entry|, not the
+induced norm. Below tolerance: 2, 3, 4a-4f, 7a, 8a -- exact algebraic identities of the
+three-block elimination, gating the implementation, not the physics. Above a floor:
+5a-5c, 6a-6c, 7b-7d, 8b -- these with gate 1 carry the contingent content. No gate can
+detect a j reconstructed from the target trace, since j_micro = S f_true identically;
+trace-independence is a property of which arguments the construction reads
+(independent_boundary_source takes rho and the operator blocks, never a trace),
+established by inspection of the source, not by a number.
+GATES (once per size unless the gate text says otherwise)
+    1  separation lemma: nnz(H_Ib)=nnz(H_bI)=0, blocks disjoint and summing to n, both eliminations non-vacuous (nnz(H_tI)>0, nnz(H_tb)>0). t_box = sites of t on the box's outermost interior layer, box artefact not shell
+    2  S is SPD: sym = ||S - S^T||_inf < 1e-09, lambda_min(S) > 0
+    3  joint = ||S - S_joint||_inf < 1e-09 IS the separation lemma's numerical content (S_joint: one Schur complement onto t over I u b). split = ||S - (Lambda_R - interior)||_inf < 1e-09 is one elimination spelled two ways, not an independent route. interior = ||H_tI H_II^-1 H_It||_inf, gap = ||S - Lambda_R||_inf
+   4a  reconstruction from rho alone, point source at centre: err < 1e-09
+   4b  same, random source in I: err < 1e-09
+   4c  same, random source in b: err < 1e-09
+   4d  same, random source on I, t, b: err < 1e-09
+   5a  rejector, drop the -H_tb H_bb^-1 rho_b term: err > 1e-03
+   5b  same, drop the -H_tI H_II^-1 rho_I term: err > 1e-03
+   5c  same, drop the rho_t term: err > 1e-03
+   6a  rejector, Lambda_R alone is not the stationarity operator: err of Lambda_R^-1 j_micro > 1e-03
+   7a  TAUTOLOGY EXHIBIT (deliberate): resid = ||Lambda_R g - (H_0 u_g)|_t||_inf < 1e-09 for an ARBITRARY trace g (scale = ||Lambda_R g||_inf); it vanishes for any g, so it fixes no trace
+   7b  j_taut(f_true) - j_micro = H_tI H_II^-1 H_It f_true exactly, so rel = that difference / ||j_micro||_inf measures the interior Schur term's relative size; rel > 1e-03
+   8a  rho perturbed inside I: err of the new prediction < 1e-09
+   8b  the perturbation moved f_pred: moved = err of f_pred' vs f_pred > 1e-06
+   4e  stationarity rerun on the exact local O_h class, size 15 only: err < 1e-09 vs f_true = phi|_t from the class, self-guard xchk < 1e-09 (full solve of rho = H_0 phi)
+   4f  same on the exact finite-rank class, size 15 only: err < 1e-09, xchk < 1e-09
+   6b  same on the exact local O_h class, size 15 only: err > 1e-03
+   6c  same on the exact finite-rank class, size 15 only: err > 1e-03
+   7c  same on the exact local O_h class, size 15 only: rel > 1e-03
+   7d  same on the exact finite-rank class, size 15 only: rel > 1e-03
+
+RESULTS
+  size=13
+     1  ok   nnz_Ib=0 nnz_bI=0 |I|=257 |t|=782 |b|=292 sum=1331 n=1331 disjoint=True nnz_tI=294 nnz_tb=648 t_box=602
+     2  ok   sym=4.440892e-16 lambda_min=6.049261875e-01
+     3  ok   split=0.000000e+00 joint=8.881784e-16 interior=6.188088e-01 gap=6.188088e-01
+    4a  ok   err=1.107992e-14 f_inf=7.671668e-03
+    4b  ok   err=6.409667e-15 f_inf=3.810636e-01
+    4c  ok   err=3.470925e-15 f_inf=3.198638e-01
+    4d  ok   err=3.954689e-15 f_inf=8.702811e-01
+    5a  ok   err=4.175394e-01
+    5b  ok   err=2.661020e-01
+    5c  ok   err=1.013921e+00
+    6a  ok   err=2.387521e-01
+    7a  ok   resid=8.881784e-15 scale=1.827391e+01
+    7b  ok   rel=1.901801e-01
+    8a  ok   err=3.827607e-15
+    8b  ok   moved=5.776783e-04
+  size=15
+     1  ok   nnz_Ib=0 nnz_bI=0 |I|=257 |t|=1052 |b|=888 sum=2197 n=2197 disjoint=True nnz_tI=294 nnz_tb=1152 t_box=866
+     2  ok   sym=4.440892e-16 lambda_min=5.507655684e-01
+     3  ok   split=8.881784e-16 joint=8.881784e-16 interior=6.188088e-01 gap=6.188088e-01
+    4a  ok   err=1.396884e-14 f_inf=9.438078e-03
+    4b  ok   err=9.426632e-15 f_inf=4.122130e-01
+    4c  ok   err=5.767796e-15 f_inf=5.485866e-01
+    4d  ok   err=6.854863e-15 f_inf=1.295691e+00
+    4e  ok   err=1.280216e-14 xchk=1.454791e-15 rho_t=1.075529e-16 rho_b=7.979728e-17 f_inf=2.384842e-02
+    4f  ok   err=1.378019e-14 xchk=1.224906e-15 rho_t=3.053113e-16 rho_b=2.081668e-16 f_inf=9.063740e-02
+    5a  ok   err=5.717319e-01
+    5b  ok   err=2.472237e-01
+    5c  ok   err=6.526345e-01
+    6a  ok   err=5.113928e-01
+    6b  ok   err=7.180982e-01
+    6c  ok   err=7.151571e-01
+    7a  ok   resid=7.105427e-15 scale=1.788311e+01
+    7b  ok   rel=5.832805e-01
+    7c  ok   rel=2.765731e+00
+    7d  ok   rel=2.754925e+00
+    8a  ok   err=6.339742e-15
+    8b  ok   moved=4.167462e-04
+  size=17
+     1  ok   nnz_Ib=0 nnz_bI=0 |I|=257 |t|=1364 |b|=1754 sum=3375 n=3375 disjoint=True nnz_tI=294 nnz_tb=1452 t_box=1178
+     2  ok   sym=5.551115e-16 lambda_min=5.118567811e-01
+     3  ok   split=8.881784e-16 joint=8.881784e-16 interior=6.188088e-01 gap=6.188088e-01
+    4a  ok   err=1.113781e-14 f_inf=1.074681e-02
+    4b  ok   err=7.600553e-15 f_inf=4.309105e-01
+    4c  ok   err=6.530465e-15 f_inf=4.845192e-01
+    4d  ok   err=7.043622e-15 f_inf=1.245206e+00
+    5a  ok   err=5.032162e-01
+    5b  ok   err=3.123370e-01
+    5c  ok   err=7.329871e-01
+    6a  ok   err=3.528884e-01
+    7a  ok   resid=8.881784e-15 scale=1.845706e+01
+    7b  ok   rel=3.987182e-01
+    8a  ok   err=6.150760e-15
+    8b  ok   moved=4.542326e-04
+
+TOTAL: PASS=51 FAIL=0
+
+----- stderr -----
+

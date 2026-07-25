@@ -85,7 +85,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 11.016,
+  "load_bearing_score": 11.018,
   "load_bearing_step": "H_phys(C|E\u27e9) = -C H_phys|E\u27e9 = -E(C|E\u27e9), using C H_phys C = -H_phys.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -203,6 +203,6 @@
   },
   "runner_path": "scripts/staggered_chiral_symmetry_check.py",
   "title": "Staggered Cl(3) Hamiltonian Has Chiral-Symmetric Spectrum: \u03c3(H_phys) = \u2212\u03c3(H_phys)",
-  "transitive_descendants": 731,
+  "transitive_descendants": 732,
   "verdict_rationale": "Issue: the spectral-pairing proof is exact, but the note additionally calls H=iD the framework's physical Hamiltonian and labels the unitary C spectral flip as particle-hole symmetry. Why this blocks: the retained authority expressly limits H to a Hermitian lift and disclaims physical Hamiltonian and physical discrete-symmetry identifications. Repair target: supply a retained bridge for those identifications or remove them from the scope and C1. Claim boundary until fixed: CHC=-H implies \u00b1 spectral pairing, equal multiplicities, zero trace, balanced sublattices, and a C-graded zero-mode space for the finite operator H=iD."
 }

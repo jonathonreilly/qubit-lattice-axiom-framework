@@ -31,17 +31,17 @@ Owner-approval history for axioms and primitives:
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3877 |
-| Applied audit verdicts | 880 |
+| Ledger rows | 3879 |
+| Applied audit verdicts | 881 |
 | Retained-grade rows, including boxed decorations | 488 |
 | Retained positive theorems | 116 |
 | Retained no-go rows | 0 |
 | Retained bounded rows | 344 |
 | Boxed decorations under retained parents | 28 |
 | Open gates | 3 |
-| Unaudited rows | 2639 |
+| Unaudited rows | 2640 |
 | Retained-pending-chain rows | 10 |
-| Audited conditional rows | 269 |
+| Audited conditional rows | 270 |
 | Audited renaming rows | 34 |
 | Audited numerical-match rows | 11 |
 | Citation cycles detected | 58 |
@@ -54,12 +54,12 @@ Full audit-ratified row list: [`docs/repo/RETAINED_BACKBONE.md`](RETAINED_BACKBO
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 2975 |
+| Total pending rows | 2977 |
 | Ready rows | 560 |
 | Cycle-break targets | 59 |
 | Critical pending | 635 |
-| High pending | 365 |
-| Medium pending | 815 |
+| High pending | 366 |
+| Medium pending | 816 |
 | Leaf pending | 1160 |
 
 Next ready rows by queue order:
@@ -105,7 +105,7 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 | Manifest pending removals | 0 |
 | Unmanifested candidates (need pending entries) | 0 |
 | Admitted ids absent from lane candidates | 30 |
-| Live conditional/failed rows that would park | 278 |
+| Live conditional/failed rows that would park | 279 |
 | Live rows fail-open (legacy/unversioned snapshot) | 41 |
 | Lane rows already in actual ready top-10 | 3 |
 | Lane rows added since prior pass | 0 |
@@ -333,19 +333,19 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 4512 |
+| Citation-graph nodes | 4514 |
 | Critical nodes | 755 |
-| High nodes | 444 |
-| Medium nodes | 1132 |
+| High nodes | 445 |
+| Medium nodes | 1133 |
 | Leaf nodes | 2181 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 2139 descendants; score 271.563
-- `graph_first_su3_integration_note` - critical; 1677 descendants; score 64.213
-- `three_generation_observable_theorem_note` - critical; 1284 descendants; score 62.328
-- `observable_principle_from_axiom_note` - critical; 1123 descendants; score 61.634
+- `minimal_axioms` - critical; 2141 descendants; score 272.565
+- `graph_first_su3_integration_note` - critical; 1678 descendants; score 64.213
+- `three_generation_observable_theorem_note` - critical; 1285 descendants; score 62.329
+- `observable_principle_from_axiom_note` - critical; 1124 descendants; score 61.636
 - `quark_route2_exact_readout_map_note_2026-04-19` - critical; 197 descendants; score 61.629
-- `plaquette_self_consistency_note` - critical; 1259 descendants; score 49.299
-- `key_terminology` - critical; 1306 descendants; score 44.852
-- `minimal_axioms_2026-05-03` - critical; 1154 descendants; score 44.174
+- `plaquette_self_consistency_note` - critical; 1260 descendants; score 49.300
+- `key_terminology` - critical; 1307 descendants; score 44.853
+- `minimal_axioms_2026-05-03` - critical; 1155 descendants; score 44.175

@@ -61,7 +61,7 @@
   ],
   "independence": "fresh_context",
   "intrinsic_status": "audited_renaming",
-  "load_bearing_score": 18.74,
+  "load_bearing_score": 18.741,
   "load_bearing_step": "Therefore, in the canonical normalized basis the link-holonomy expression carries no independent multiplicative bare coupling; standard notation rewrites this as g_bare = 1.",
   "load_bearing_step_class": "F",
   "max_descendant_status": "audit_in_progress",
@@ -784,6 +784,6 @@
   },
   "runner_path": "scripts/frontier_g_bare_rigidity_theorem.py",
   "title": "Gauge-Normalization Rigidity Theorem",
-  "transitive_descendants": 1208,
+  "transitive_descendants": 1209,
   "verdict_rationale": "The spectral-theorem bridge correctly supplies a traceless-Hermitian logarithm for each finite SU(3) link, and the matrix checks correctly show that scalar dilation changes the fixed generator Gram form. The load-bearing move to g_bare = 1 is nevertheless an explicit notation rewrite: the runner verifies only that multiplying coefficients by g multiplies A_op by g. Because no action-level or Hamiltonian-level coupling is analyzed, the claimed removal of a physical bare parameter reduces to coordinate relabeling."
 }

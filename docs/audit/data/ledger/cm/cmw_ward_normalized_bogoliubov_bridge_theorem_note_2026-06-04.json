@@ -1,24 +1,81 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T20:11:16.603116+00:00",
+  "audit_invocation_history": [
+    "9af2dcd2e3ad42dc9c2f479968a080ea"
+  ],
+  "audit_invocation_id": "9af2dcd2e3ad42dc9c2f479968a080ea",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true,
+      "runner_path": "scripts/cmw_ward_normalized_bogoliubov_bridge_2026_06_04.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29": "The audited claim is only the periodic lattice IR-sum threshold for E_k = 2 sum_mu(1-cos k_mu): d <= 2 is IR-divergent and d >= 3 is IR-finite in the continuum scaling proxy, with finite lattice enumerations matching this threshold for d in {1,2,3,4}.",
+      "mermin_wagner_bogoliubov_textbook_import_note_2026-05-18": "Finite Gibbs-state Bogoliubov inequality and lattice IR-sum certificate only; excludes Ward-normalized order-parameter extraction and the no-continuous-symmetry-SSB conclusion."
+    },
+    "dep_claim_type": {
+      "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29": "bounded_theorem",
+      "mermin_wagner_bogoliubov_textbook_import_note_2026-05-18": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29": "retained_bounded",
+      "mermin_wagner_bogoliubov_textbook_import_note_2026-05-18": "retained_bounded"
+    },
+    "deps": [
+      "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29",
+      "mermin_wagner_bogoliubov_textbook_import_note_2026-05-18"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 1.5,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/cmw_ward_normalized_bogoliubov_bridge_2026_06_04.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "d5619cef8209eec250f5b3f917b04b333e1d033298b7cea0ceb5e8d9ae83a688",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "d5619cef8209eec250f5b3f917b04b333e1d033298b7cea0ceb5e8d9ae83a688",
+    "runner_path": "scripts/cmw_ward_normalized_bogoliubov_bridge_2026_06_04.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 1
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-33bc55f4",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The algebraic implication closes once W1-W4 are granted, but the restricted packet does not establish those Ward-normalized hypotheses with L-independent constants for a concrete framework Hamiltonian and order pair.",
   "claim_id": "cmw_ward_normalized_bogoliubov_bridge_theorem_note_2026-06-04",
-  "claim_scope": null,
+  "claim_scope": "Finite-volume algebraic bridge under explicit W1-W4 hypotheses from the divergent Z^d lattice IR sum I_d(L) to the bound |m_L|^2 <= beta C_A C_H/(2 c_W^2 I_d(L)) and hence m_L -> 0 when I_d(L) diverges.",
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem (exact finite-volume support theorem under W1-W4 hypotheses)",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T20:11:16.603116+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -27,19 +84,20 @@
     "mermin_wagner_bogoliubov_textbook_import_note_2026-05-18"
   ],
   "direct_in_degree": 1,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 1.5,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Averaging the per-mode lower bound over nonzero momenta and applying W2 gives C_A >= (2 c_W^2 |m_L|^2/(beta C_H)) I_d(L).",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "30634056c811c974bfe581db370453e8e1b3af8a88201e6d0207330a1ffeaa36",
   "note_path": "docs/CMW_WARD_NORMALIZED_BOGOLIUBOV_BRIDGE_THEOREM_NOTE_2026-06-04.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained model-specific operator-construction theorem establishing W1-W4 with L-independent constants for the intended framework Hamiltonian and order pair, then re-audit this bridge.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -103,14 +161,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 7,
     "B": 0,
-    "C": 0,
+    "C": 10,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 17
   },
   "runner_path": "scripts/cmw_ward_normalized_bogoliubov_bridge_2026_06_04.py",
   "title": "CMW Ward-Normalized Bogoliubov Bridge Theorem",
   "transitive_descendants": 1,
-  "verdict_rationale": null
+  "verdict_rationale": "The algebra from W1-W4 to the displayed order-parameter bound is correct, and the runner independently checks the rearrangement and lattice IR-sum behavior. However, the packet does not establish W1-W4 for any concrete framework Hamiltonian/order pair; in particular, the substantive Ward normalization remains a supplied hypothesis. The exact implication is therefore sound, but its framework application remains conditional."
 }

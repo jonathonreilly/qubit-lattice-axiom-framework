@@ -42,7 +42,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_failed",
-  "load_bearing_score": 16.031,
+  "load_bearing_score": 16.033,
   "load_bearing_step": "The continuation is unique because each eigenvalue exp(-i t E_k) is entire and the spectral expansion is finite.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -1395,6 +1395,6 @@
   },
   "runner_path": "scripts/audit_companion_single_clock_stone_finite_dim_exact_2026_05_10.py",
   "title": "Single-Clock Stone Finite-Dim Uniqueness Narrow Theorem",
-  "transitive_descendants": 739,
+  "transitive_descendants": 740,
   "verdict_rationale": "N1-N3 and the equality T^n=U(-in\u03c4) are valid under the stated finite-dimensional hypotheses. The runner checks a concrete diagonal example and the prescribed exponential's group and ODE identities, but never tests uniqueness among all analytic interpolants. For any nonzero matrix A, F(z)=U(z)+sin(\u03c0 i z/\u03c4)A agrees with U at every z=-in\u03c4 yet differs elsewhere; uniqueness follows only after separately imposing the fixed-generator one-parameter-group form. The note's auxiliary counterexample to the removed (*) condition is a valid derived negative boundary, but it does not repair this analytic-continuation overclaim."
 }

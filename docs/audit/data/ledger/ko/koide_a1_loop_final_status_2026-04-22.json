@@ -42,7 +42,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 10.01,
+  "load_bearing_score": 10.012,
   "load_bearing_step": "Substituting tr(Phi) = 3a and tr(Phi^2) = 3a^2 + 6r^2 into V(Phi) := [2 tr(Phi)^2 - 3 tr(Phi^2)]^2 gives V(Phi) = 81(a^2 - 2r^2)^2.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -1550,6 +1550,6 @@
   },
   "runner_path": "scripts/frontier_koide_a1_ansatz_algebra_certificate.py",
   "title": "Koide Quartic-Ansatz Algebra Bounded Certificate",
-  "transitive_descendants": 728,
+  "transitive_descendants": 729,
   "verdict_rationale": "Issue: the runner correctly verifies the symbolic consequences, but the quartic ansatz and formal trace data are supplied inputs rather than derived from any cited retained-grade authority. Why this blocks: the restricted packet supports only a theorem conditional on those premises, not framework-internal closure. Repair target: derive the ansatz, and the trace parameterization if intended as framework content, from accepted or retained inputs with a runner that constructs them. Claim boundary until fixed: the displayed factorization, zero locus, and formal c^2 and Q values are exact under the declared definitions."
 }

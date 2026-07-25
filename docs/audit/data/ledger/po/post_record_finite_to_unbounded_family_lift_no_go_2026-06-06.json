@@ -29,7 +29,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 11.012,
+  "load_bearing_score": 11.014,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -3001,6 +3001,6 @@
   },
   "runner_path": "scripts/frontier_post_record_finite_to_unbounded_family_lift_nogo_2026_06_06.py",
   "title": "Post-Record Finite-To-Unbounded Family-Lift No-Go",
-  "transitive_descendants": 729,
+  "transitive_descendants": 730,
   "verdict_rationale": null
 }

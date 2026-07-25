@@ -75,7 +75,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 10.012,
+  "load_bearing_score": 10.014,
   "load_bearing_step": "The explicit highest-weight vector gives m_(p,q)(p+q)>=1, making the nonnegative coefficient series strictly positive for beta>0, while Schur orthogonality yields the diagonal stabilized finite-test convolution action.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -1357,6 +1357,6 @@
   },
   "runner_path": "scripts/audit_companion_gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026_06_07.py",
   "title": "Gauge Wilson SU(3) All-Weight Positive-Coefficient Formal Bridge",
-  "transitive_descendants": 729,
+  "transitive_descendants": 730,
   "verdict_rationale": "Issue: the note's exact SU(3) argument is internally coherent, but the restricted runner stdout is clipped before the load-bearing Pieri-occurrence and independent-decomposition evidence, so the advertised 50-pass certificate is not fully inspectable. Why this blocks: the packet preflight forbids a clean verdict even though the included runner source shows a plausible exact implementation and the displayed convolution checks pass. Repair target: rerender the complete SHA-pinned stdout, including Parts 1\u20133 and every labeled check, then repeat the restricted audit. Claim boundary until fixed: the two statements remain supported by the written algebra, but retained-grade executable cross-verification is conditional on complete evidence rendering."
 }

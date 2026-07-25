@@ -1,46 +1,76 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T12:39:32.935228+00:00",
+  "audit_invocation_history": [
+    "3824413aff3d4f72a295c31ffd210e29"
+  ],
+  "audit_invocation_id": "3824413aff3d4f72a295c31ffd210e29",
+  "audit_state_snapshot": {
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "graph_first_selector_derivation_note": "Audited the algebraic derivation of the graph-native weak-axis selector from the canonical one-step shifts on the 8-vertex taste cube, including its normalized axis-minimum and residual Z2 structure.",
+      "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+      "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "Exact structural eigenvalue ratio 1:(-3) on the Sym\u00b2 and Anti\u00b2 LH-doublet sub-decompositions under the graph-first selected-axis commutant decomposition, excluding normalization, SM hypercharge identification, charge formula, and anomaly claims."
+    },
+    "dep_claim_type": {
+      "graph_first_selector_derivation_note": "positive_theorem",
+      "graph_first_su3_integration_note": "positive_theorem",
+      "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "decoration"
+    },
+    "dep_effective_status": {
+      "graph_first_selector_derivation_note": "retained",
+      "graph_first_su3_integration_note": "retained",
+      "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "decoration_under_graph_first_su3_integration_note"
+    },
+    "deps": [
+      "graph_first_selector_derivation_note",
+      "graph_first_su3_integration_note",
+      "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 0.0,
+    "runner_hash": "4fa918b73fb5481ed83e3ec926a2c9077406f0ebceb17b8457c7dcae3468029b",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_decoration",
+  "auditor": "codex-audit-batch-A-20260725-7bd29df2",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The exact algebra closes from the retained-grade 6-and-2 multiplicities, but it closes only as a corollary of the cited narrow ratio result rather than as an independent theorem.",
   "claim_id": "lh_doublet_eigenvalue_ratio_proof_walk_lattice_independence_bounded_note_2026-05-10",
-  "claim_scope": null,
-  "claim_type": "bounded_theorem",
+  "claim_scope": "Exact algebraic 1:(-3) eigenvalue-ratio corollary on the cited 6-state Sym\u00b2 and 2-state Anti\u00b2 LH-doublet decomposition, with no staggered-Dirac realization input in the proof path.",
+  "claim_type": "decoration",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T12:39:32.935228+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
-  "decoration_parent_claim_id": null,
+  "decoration_parent_claim_id": "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
   "deps": [
     "graph_first_su3_integration_note",
     "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
     "graph_first_selector_derivation_note"
   ],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "decoration_under_lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
+  "effective_status_reason": "decoration_parent_retained",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "decoration_under_lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Tracelessness gives 6\u03b1 + 2\u03b2 = 0, hence \u03b2 = -3\u03b1 and \u03b1:\u03b2 = 1:(-3).",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "4601c79215608571c749630c18f7c3dc582cffddf06330516eff4a7e47f7461a",
   "note_path": "docs/LH_DOUBLET_EIGENVALUE_RATIO_PROOF_WALK_LATTICE_INDEPENDENCE_BOUNDED_NOTE_2026-05-10.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Re-check runner packaging: the final authority-status check raised FileNotFoundError for docs/audit/data/audit_ledger.json after the independently checkable arithmetic and 58 preceding checks completed.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -164,14 +194,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
+    "A": 3,
+    "B": 55,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 58
   },
   "runner_path": "scripts/frontier_lh_doublet_eigenvalue_ratio_proof_walk_lattice_independence.py",
   "title": "LH-Doublet Eigenvalue Ratio Proof-Walk Lattice-Independence Bounded Note",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: The note repeats the cited narrow theorem's 6\u03b1 + 2\u03b2 = 0 \u21d2 \u03b2 = -3\u03b1 algebra and adds no independent comparator or physical content. Why this blocks: although the calculation is exact and its proof path does not consume staggered-Dirac realization machinery, it reduces to one upstream ratio claim plus standard arithmetic and therefore is not a standalone bounded theorem. Repair target: retag the row as a decoration of the cited narrow ratio theorem. Claim boundary until fixed: the exact 1:(-3) algebraic corollary on the supplied 6+2 decomposition remains valid."
 }

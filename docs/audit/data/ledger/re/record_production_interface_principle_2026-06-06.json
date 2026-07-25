@@ -1,24 +1,47 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T15:50:32.792310+00:00",
+  "audit_invocation_history": [
+    "3347fc9f2a014862a8ef1c21100df293"
+  ],
+  "audit_invocation_id": "3347fc9f2a014862a8ef1c21100df293",
+  "audit_state_snapshot": {
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {
+      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    },
+    "dep_claim_scope": {
+      "minimal_axioms": null
+    },
+    "dep_claim_type": {
+      "minimal_axioms": "meta"
+    },
+    "dep_effective_status": {
+      "minimal_axioms": "meta"
+    },
+    "deps": [
+      "minimal_axioms"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 0.0,
+    "runner_hash": "9885e559aea0286ad51de02baf64409b1d1b28261c4147429014c744da4d8a4d",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_renaming",
+  "auditor": "codex-audit-batch-A-20260725-1b76ffe0",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The runner hard-codes the layer memberships and a binary one-hot example, then checks legacy 2026-06-05 wording. The current accepted authority supplies neither the claimed pre-record state/effect surface nor a finite record alphabet with append and coarse-graining dynamics.",
   "claim_id": "record_production_interface_principle_2026-06-06",
-  "claim_scope": null,
+  "claim_scope": "Proposed interface nomenclature separating Qubit possibilities, a separately supplied formation bridge, and permanent readable records; no finite-alphabet or post-record dynamics theorem is established.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T15:50:32.792310+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,19 +49,24 @@
     "minimal_axioms"
   ],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_renaming",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_renaming",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The three axioms already provide the required type split: Quantum supplies the pre-record qubit algebra, Record supplies the post-record durable atom and additive readout, and Record does not supply the production bridge.",
+  "load_bearing_step_class": "F",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls",
+    "conditional_wall_rationale",
+    "derived_no_go_boundary"
+  ],
   "note_hash": "13978d5263a1b91e660a2bfd9f2ba5c27d2030e73113da9ae1eea3a20c609e32",
   "note_path": "docs/RECORD_PRODUCTION_INTERFACE_PRINCIPLE_2026-06-06.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "missing_bridge_theorem: derive and cite the map from current admissible M_2(C) possibilities to a finite record alphabet and append/count/coarse-graining semantics, or narrow this note to the axiomatic possibility/locked-record distinction and add a dated downstream-hygiene line to this note's own boundary.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -204,14 +232,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
+    "A": 15,
+    "B": 13,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 28
   },
   "runner_path": "scripts/frontier_record_production_interface_principle_2026_06_06.py",
   "title": "Record Production Interface Principle",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: The load-bearing identification is a class-F relabeling because the runner declares pre-record, formation, and post-record output sets and a binary one-hot model, then verifies consequences of those declarations rather than deriving the memberships from the current four-axiom authority. Why this blocks: The accepted authority defines a state as a configuration of records and supplies an M_2(C) possibility domain plus permanent readable records, but no pre-record state/effect surface, finite record alphabet, binary atoms, append actions, or coarse-graining dynamics; the runner instead checks superseded 2026-06-05 wording. N1-N8 judgment: N1 has fewer than five distinct attacks, N2 does not establish wall independence, N3 exposes hidden finite-alphabet and append premises, N4 has no residual witness, N5 does not test the categorical rhetoric across resolutions, N6 closes only the possibility/locked-record core, N7 leaves an encoded-selector steelman open, and N8 lists similar record-formation/firewall mechanisms without dispositions. Repair target: Supply a retained carrier/interface theorem or explicitly retype the three layers as nomenclature; Claim boundary until fixed: only the distinction between available possibilities, separately supplied formation rules, and permanent readable records follows from the accepted authority."
 }

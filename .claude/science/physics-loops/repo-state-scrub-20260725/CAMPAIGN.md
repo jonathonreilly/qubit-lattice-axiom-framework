@@ -319,3 +319,58 @@ path of the very mechanism a forensic no-go packet depends on**.
 
 **COLLISION WARNING:** those 4 tests overlap with the separately
 started owner task on the 7 pre-existing audit-gate test failures.
+
+---
+
+## WAVE 4 RESULT (2026-07-25): prose/ledger + registry repaired
+
+**PR #5610 — prose/ledger.** All phase-1 counts reproduced EXACTLY.
+Batch 1 lint ships NOTICE-level for the general case (README:63-65
+permits status prose in notes) with two hard sub-rules; the
+`retained_no_go` rule is grandfathered but keyed `<path>::<target>`
+so **a grandfathered note still ERRORS on a new target**. The
+ledger-impersonation rule ships with NO baseline — batch 2 drained
+all 3 instances. Churn **0 requeues, 0 verdicts risked** (below the
+predicted 1). Post-merge state simulated against main: 0 hard
+errors, 0 stale keys — the PR cannot turn main red on merge.
+
+Two notes had drawn INFERENCES FROM FALSE PREMISES, which is the
+real harm this defect class does:
+- KUBO concluded its own repair class from "both upstream
+  authorities are now retained-grade" — one of them is
+  `audited_failed`.
+- G_BARE_TWO_WARD_CLOSURE carried a five-row "Effective status
+  (current)" table with **fabricated `audit_date`s** and a
+  **self-assigned `audited_conditional`**.
+
+**PR #5608 — registry integrity.** 3 of 3 registered obligations
+have registry-vs-note mismatches (6 distinct divergences), and
+`audit_lint` **never opens the note** — `self_liquidation_condition`
+is read by ZERO rules. Worse: the unregistered `:170` gate is used
+as an `evidence_locator` to CLOSE ROUTES in 6 audited shards. Of 8
+memo gate bullets, 5 are fully unregistered. `axiom_premise_nodes`
+`note` field is read by zero tools. The new reconciliation lint
+REPORTS and never repairs, with 6 divergences grandfathered — but
+the `claim_type == open_gate` check is deliberately
+**NOT grandfatherable**, because it closes a laundering hole where a
+retyped-and-cleared obligation becomes `retained_bounded`
+(215 transitive descendants, in-degree 36 at risk).
+
+Zero-churn is structural here: **no ledger row has a `note_path`
+under `docs/audit/data/` or `docs/audit/scripts/`** (0 of 3873).
+
+### OWNER DECISIONS REFUSED (correctly)
+
+1. `PMNS_HW1_SOURCE_TRANSFER_BOUNDARY_NOTE.md:139` — the 26th self
+   over-claim and the only one whose row is not `unaudited`
+   (`audited_conditional`, in-degree 5). Editing it ARCHIVES that
+   verdict. Shipped 25/26 at zero churn instead. **Spending a
+   verdict to delete an adjective is an owner call.**
+2. 39 grandfathered `retained_no_go` keys recorded, not settled.
+3. Batch 4 (420 notice-level lines / ~174 notes, requeue 0) not
+   attempted — deliberately sequenced AFTER the lint so the pattern
+   does not regrow.
+4. An 8th test failure beyond the named 7 —
+   `CleanupWorktreeBranchTest` — is environmental (a stale
+   registered worktree breaking `git worktree add`); left alone
+   because pruning is shared repo state.

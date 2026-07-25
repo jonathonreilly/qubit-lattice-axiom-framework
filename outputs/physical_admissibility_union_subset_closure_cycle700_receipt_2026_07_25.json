@@ -14,9 +14,9 @@
   "new_axiom_or_primitive_proposed": false
  },
  "pass": true,
- "pass_count": 5,
+ "pass_count": 6,
  "resources": {
-  "elapsed_seconds": 0.08613599999807775
+  "elapsed_seconds": 0.09115100000053644
  },
- "runner_sha256": "dcf2e466b368da973595170894240f6bef3cff8fd921083f416986dba248b045"
+ "runner_sha256": "68e8d85d0aaf0f13b4c96949158637d73ca0691db9448791059daf265c3b8deb"
 }

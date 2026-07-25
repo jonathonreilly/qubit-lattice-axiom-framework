@@ -17,7 +17,7 @@ file per claim), summarized in
 | Metric | Value |
 |---|---:|
 | Retained positive rows | 110 |
-| Retained bounded rows | 333 |
+| Retained bounded rows | 334 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 26 |
 
@@ -136,7 +136,7 @@ Sorted by load-bearing graph score (descending).
 - [`staggered_graph_portability_stress_note`](../../docs/STAGGERED_GRAPH_PORTABILITY_STRESS_NOTE.md) — score 0.000; audited 2026-05-05T11:44:13.477263+00:00
 - [`tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20`](../../docs/TOMITA_TENSOR_TRACE_ON_FINITE_DIM_MATRIX_NARROW_THEOREM_NOTE_2026-05-20.md) — score 0.000; audited 2026-07-25T15:03:52.540528+00:00
 
-## Retained bounded rows (333)
+## Retained bounded rows (334)
 
 Sorted by load-bearing graph score (descending).
 
@@ -405,6 +405,7 @@ Sorted by load-bearing graph score (descending).
 - [`geometry_superposition_dag_ensemble_note_2026-04-11`](../../docs/GEOMETRY_SUPERPOSITION_DAG_ENSEMBLE_NOTE_2026-04-11.md) — score 0.000; audited 2026-05-11T16:56:57.088386+00:00
 - [`graph_scalar_plus_spinor_note`](../../docs/GRAPH_SCALAR_PLUS_SPINOR_NOTE.md) — score 0.000; audited 2026-04-30T19:29:21.808771+00:00
 - [`gravitational_memory_note_2026-04-11`](../../docs/GRAVITATIONAL_MEMORY_NOTE_2026-04-11.md) — score 0.000; audited 2026-05-24T17:58:40.011911+00:00
+- [`guard_reconciliation_note`](../../docs/GUARD_RECONCILIATION_NOTE.md) — score 0.000; audited 2026-07-25T15:20:56.621242+00:00
 - [`hard_geometry_local_note`](../../docs/HARD_GEOMETRY_LOCAL_NOTE.md) — score 0.000; audited 2026-04-30T19:31:06.017730+00:00
 - [`harmonic_ladder_weight_law_bounded_theorem_note_2026-06-12`](../../docs/HARMONIC_LADDER_WEIGHT_LAW_BOUNDED_THEOREM_NOTE_2026-06-12.md) — score 0.000; audited 2026-07-09T09:58:33.053752+00:00
 - [`hkd_correspondence_general_charts_bounded_theorem_note_2026-06-12`](../../docs/HKD_CORRESPONDENCE_GENERAL_CHARTS_BOUNDED_THEOREM_NOTE_2026-06-12.md) — score 0.000; audited 2026-06-18T13:13:39.073671+00:00

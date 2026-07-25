@@ -1,9 +1,10 @@
 {
   "audit_date": null,
   "audit_invocation_history": [
-    "c6e695d44dc949cd8a39e72050f2786c"
+    "c6e695d44dc949cd8a39e72050f2786c",
+    "115dd93ab3f34d05bdaeb11a724abf2a"
   ],
-  "audit_invocation_id": "c6e695d44dc949cd8a39e72050f2786c",
+  "audit_invocation_id": "115dd93ab3f34d05bdaeb11a724abf2a",
   "audit_state_snapshot": null,
   "audit_status": "audit_in_progress",
   "auditor": null,
@@ -11,7 +12,7 @@
   "auditor_family": null,
   "auditor_model": null,
   "auditor_reasoning_effort": null,
-  "blocker": "awaiting_cross_confirmation",
+  "blocker": "cross_confirmation_disagreement",
   "chain_closes": null,
   "chain_closure_explanation": null,
   "claim_id": "yt_source_action_support_packet_note_2026-05-22",
@@ -51,8 +52,38 @@
       "verdict": "audited_clean",
       "verdict_rationale": "The load-bearing result is a genuine finite algebraic identity, not a definition, renaming, tuned numerical match, or external comparison. The runner independently evaluates the three mathematical equalities on a finite sample, while the note supplies the general finite-block proof. The remaining runner checks are scope and repository-state guards and do not provide or purport to provide physical neutral EW/Higgs closure."
     },
-    "second_audit": null,
-    "status": "awaiting_second"
+    "second_audit": {
+      "audit_date": "2026-07-25T01:32:07.151022+00:00",
+      "audit_invocation_id": "115dd93ab3f34d05bdaeb11a724abf2a",
+      "auditor": "codex-audit-batch-B-20260725-ee4e03ed",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "chain_closes": false,
+      "chain_closure_explanation": "The three uniform-baseline identities close algebraically, but the row\u2019s completeness claim about the named remaining Y_T gates is not established by the restricted evidence or an N1\u2013N8 stress test.",
+      "claim_scope": "Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.",
+      "claim_type": "bounded_theorem",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "For S_h(epsilon)=S_0(epsilon)-sum_x h_x epsilon_x, the normalized ratio exp(-S_h)/exp(-S_0) is the same exponential RN source family.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale"
+      ],
+      "notes_for_re_audit_if_any": "scope_too_broad: Run a route-specific N1\u2013N8 stress test with live evidence, then either validate or qualify the exhaustive \u201csingle authority question\u201d and four-gate boundary; record the resulting qualification in a dated hygiene line in this note so its hash re-enters audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 7,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict": "audited_conditional",
+      "verdict_rationale": "Issue: The exponential-tilt identities are exact on the uniform finite baseline, but the note additionally presents four remaining gates as an exhaustive Y_T boundary without the required negative-claim stress evidence. Why this blocks: N1 has fewer than five tested mechanisms; N2 wall independence and N3 hidden-premise scanning are absent; N4 has no matched witness residuals; N5 resolution rhetoric is untested; N6 indexed partial closures are undispositioned; N7 has no resolved steelman; and N8 echoes are undispositioned. Repair target: Execute N1\u2013N8 with route-specific live evidence and validate, collapse, expand, or qualify the gate list. Claim boundary until fixed: Only source composition, the origin score, and the uniform-baseline RN/action identity are supported; no completeness claim about physical Y_T obstructions is established."
+    },
+    "status": "disagreement"
   },
   "decoration_parent_claim_id": null,
   "deps": [],

@@ -85,7 +85,7 @@
   ],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 14.714,
+  "load_bearing_score": 14.716,
   "load_bearing_step": "The exponential character expansion has coefficients c_\u03bb(\u03b1)=sum_(n\u22650)(\u03b1/2)^n M_(\u03bb,n)/n!\u22650 because every tensor-product multiplicity M_(\u03bb,n) is a nonnegative integer.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -465,6 +465,6 @@
   },
   "runner_path": "scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py",
   "title": "Reflection positivity \u2014 finite-volume `SU(N)` Wilson temporal-gauge bridge by a direct representation-ring proof",
-  "transitive_descendants": 839,
+  "transitive_descendants": 840,
   "verdict_rationale": "The mathematical chain presented in the source closes on its stated finite two-slice pure-gauge scope, and the available runner record reports 34 passes with no failures. However, the rendered live stdout is clipped before its N1-N3 evidence and supplies no live independent-helper stdout, so the mandatory authenticated N1-N8 packet for an audited_clean verdict cannot be constructed from this restricted packet. This is an audit-artifact completeness limitation rather than a substantive defect in the theorem."
 }

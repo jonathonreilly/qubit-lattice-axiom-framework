@@ -85,7 +85,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 11.494,
+  "load_bearing_score": 11.496,
   "load_bearing_step": "Because tr(H^3)=3a^3+18a|b|^2+3(b^3+bbar^3) and det(H)=a^3+b^3+bbar^3\u22123a|b|^2 retain cos(3 arg b), a generic phase rotation is not a spectral symmetry and Path A does not derive the SO(2) quotient.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -1699,6 +1699,6 @@
   },
   "runner_path": "scripts/frontier_koide_mru_demotion_bridge_corollary_2026_06_18.py",
   "title": "Koide MRU Formal Demotion Note",
-  "transitive_descendants": 720,
+  "transitive_descendants": 721,
   "verdict_rationale": "The runner performs genuine class-A symbolic and finite-matrix checks and verifies the claimed phase sensitivity, while its source-boundary checks are class B. N1\u2013N2 test only the alternate-observable Path A and leave future phase-channel decoupling routes open; N3\u2013N5 show explicit boundary rhetoric, no prior residual witness, and no five-resolution exhaustive test. N6\u2013N7 find no supplied primitive or reframe closing the physical scalar-measure quotient, while the strongest spectral-symmetry steelman is defeated by the cubic-trace and determinant counterexample. N8 is packet-complete, but the note does not disposition the indexed cross-cycle alternatives, so its honest route-local negative result cannot receive a clean negative-claim verdict."
 }

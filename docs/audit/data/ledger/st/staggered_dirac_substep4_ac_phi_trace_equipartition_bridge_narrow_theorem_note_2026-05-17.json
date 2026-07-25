@@ -53,7 +53,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
-  "load_bearing_score": 10.664,
+  "load_bearing_score": 10.665,
   "load_bearing_step": "Using H=aI+bC+b\u0304C\u00b2 and the zero diagonals of C and C\u00b2, every basis expectation equals a=Tr(H)/3.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -128,6 +128,6 @@
   },
   "runner_path": "scripts/audit_companion_staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_2026_05_17.py",
   "title": "Staggered-Dirac Substep 4 \u2014 AC_\u03c6 Trace-Equipartition Bridge Narrow Theorem",
-  "transitive_descendants": 1146,
+  "transitive_descendants": 1147,
   "verdict_rationale": "The abstract algebra is correct: an independent commutant calculation gives span{I,C,C\u00b2}, and Hermiticity gives the stated coefficient pairing, after which trace equipartition and the eigenvalue formula follow. The runner checks the ansatz, diagonal and trace identities, characteristic polynomial, and a generic finite case, although its single non-circulant counterexample does not establish uniqueness. Because the note is an exact standard-mathematics corollary of one retained parent, with no external comparator or independent physical bridge, it is algebraic decoration rather than a standalone positive theorem. The physical hw=1 identification is explicitly excluded."
 }

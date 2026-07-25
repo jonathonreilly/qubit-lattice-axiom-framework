@@ -31,7 +31,7 @@ Owner-approval history for axioms and primitives:
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3862 |
+| Ledger rows | 3863 |
 | Applied audit verdicts | 552 |
 | Retained-grade rows, including boxed decorations | 431 |
 | Retained positive theorems | 96 |
@@ -39,7 +39,7 @@ Owner-approval history for axioms and primitives:
 | Retained bounded rows | 316 |
 | Boxed decorations under retained parents | 19 |
 | Open gates | 2 |
-| Unaudited rows | 2951 |
+| Unaudited rows | 2952 |
 | Retained-pending-chain rows | 5 |
 | Audited conditional rows | 77 |
 | Audited renaming rows | 19 |
@@ -54,13 +54,13 @@ Full audit-ratified row list: [`docs/repo/RETAINED_BACKBONE.md`](RETAINED_BACKBO
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 3043 |
+| Total pending rows | 3044 |
 | Ready rows | 633 |
 | Cycle-break targets | 59 |
 | Critical pending | 635 |
 | High pending | 371 |
 | Medium pending | 838 |
-| Leaf pending | 1199 |
+| Leaf pending | 1200 |
 
 Next ready rows by queue order:
 
@@ -219,13 +219,13 @@ Non-lane rows deferred by the simulated interleave (positions lost; complete lis
 - `dm_leptogenesis_dweh_even_split_transfer_layer_note_2026-04-19`: -12
 - `hadron_lane1_sqrt_sigma_b5_framework_link_audit_note_2026-04-30`: -11
 - `lensing_finite_path_explanation_note`: -11
-- `koide_r_half_dynamical_determinant_route_pruning_no_go_note_2026-06-08`: -11
+- `ckm_mass_basis_nni_structural_identities_narrow_theorem_note_2026-06-17`: -11
 - `su3_cube_index_graph_shortcut_open_gate_note_2026-05-03`: -10
 - `record_history_order_time_rate_firewall_2026-06-05`: -10
 - `dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16`: -10
 - `record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06`: -10
 - `dm_pmns_asymptotic_source_no_go_note_2026-04-20`: -10
-- `ckm_mass_basis_nni_structural_identities_narrow_theorem_note_2026-06-17`: -10
+- `koide_r_half_dynamical_determinant_route_pruning_no_go_note_2026-06-08`: -10
 - `dm_live_constants_canonical_edge_certificate_note_2026-06-18`: -10
 - `gate_b_poisson_self_gravity_note`: -9
 - `poisson_self_gravity_loop_v3_note`: -9
@@ -329,19 +329,19 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 4482 |
+| Citation-graph nodes | 4483 |
 | Critical nodes | 755 |
 | High nodes | 442 |
 | Medium nodes | 1117 |
-| Leaf nodes | 2168 |
+| Leaf nodes | 2169 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 2115 descendants; score 269.047
-- `graph_first_su3_integration_note` - critical; 1668 descendants; score 64.205
-- `three_generation_observable_theorem_note` - critical; 1276 descendants; score 62.319
+- `minimal_axioms` - critical; 2116 descendants; score 269.048
+- `graph_first_su3_integration_note` - critical; 1669 descendants; score 64.206
+- `three_generation_observable_theorem_note` - critical; 1277 descendants; score 62.320
 - `quark_route2_exact_readout_map_note_2026-04-19` - critical; 197 descendants; score 61.629
-- `observable_principle_from_axiom_note` - critical; 1115 descendants; score 61.624
-- `plaquette_self_consistency_note` - critical; 1251 descendants; score 49.290
-- `key_terminology` - critical; 1298 descendants; score 44.843
-- `minimal_axioms_2026-05-03` - critical; 1146 descendants; score 44.164
+- `observable_principle_from_axiom_note` - critical; 1116 descendants; score 61.625
+- `plaquette_self_consistency_note` - critical; 1252 descendants; score 49.291
+- `key_terminology` - critical; 1299 descendants; score 44.844
+- `minimal_axioms_2026-05-03` - critical; 1147 descendants; score 44.165

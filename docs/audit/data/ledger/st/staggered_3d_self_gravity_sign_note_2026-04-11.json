@@ -42,7 +42,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 9.996,
+  "load_bearing_score": 9.998,
   "load_bearing_step": "In centered 3D self-gravity on the primary staggered architecture, contraction is robust but sign-selective trajectory closure still fails.",
   "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
@@ -1464,6 +1464,6 @@
   },
   "runner_path": "scripts/frontier_staggered_3d_self_gravity_sign.py",
   "title": "3D Staggered Self-Gravity Contraction / Sign Note",
-  "transitive_descendants": 721,
+  "transitive_descendants": 722,
   "verdict_rationale": "The runner genuinely performs six nonlinear lattice evolutions and supports the principal width, core, drift, and shell-gradient values; it is not a print-only certificate. The physical self-gravity model and observable bridge are introduced rather than derived from the accepted premises, while the negative result tests only one centered finite-time surface and cannot establish a general trajectory-sign no-go. Per-step normalization also makes the machine-clean norm result non-independent, and the note reports 2.220e-16 for the side-11 attractive norm drift where stdout reports 1.110e-16. The supported result is therefore a conditional finite-fixture positive/negative split."
 }

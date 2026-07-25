@@ -85,7 +85,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 10.19,
+  "load_bearing_score": 10.192,
   "load_bearing_step": "In complete temporal gauge, the temporal plaquette reduces to U_(t,x;0i)=U_i(t+1,x)U_i(t,x)^\u2020, supplying the reduced mixed-plaquette surface used by the theorem.",
   "load_bearing_step_class": "B",
   "max_descendant_status": "audit_in_progress",
@@ -1516,6 +1516,6 @@
   },
   "runner_path": "scripts/frontier_gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_verifier.py",
   "title": "Gauge OS Step 1 \u2014 Wilson Plaquette Decomposition and Symmetrized Reflection-Hermiticity in the Trivial-Holonomy `U_0=I` Sector (Narrow Theorem)",
-  "transitive_descendants": 825,
+  "transitive_descendants": 826,
   "verdict_rationale": "Issue: Equation (19) is load-bearing, but its cited authority is packet-clipped before the supporting derivation, while the runner checks only that the dependency file exists. Why this blocks: the local algebraic and finite controls pass, but file presence and same-path numerical checks cannot certify the cited dependency chain as rendered. Repair target: provide the complete authority and an independent derivation of the \u03bc=0, \u03bd=i substitution from (1), including factor ordering and mixed-boundary use. Claim boundary until fixed: the evidence supports only the declared finite U_0=I sector; its derived negative boundary is the single nontrivial-holonomy wall P(x)\u2260I, supported by conjugacy and the SU(3) H control, without promoting downstream coverage exclusions into further no-go claims."
 }

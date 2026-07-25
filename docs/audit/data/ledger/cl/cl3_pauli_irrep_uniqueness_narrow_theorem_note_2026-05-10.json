@@ -46,7 +46,7 @@
   ],
   "independence": "fresh_context",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 17.782,
+  "load_bearing_score": 17.783,
   "load_bearing_step": "The four elements in (12) have rank four and span each ideal A_s, so sending them to the standard matrix units defines an algebra isomorphism A_s to M_2(C).",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -1613,6 +1613,6 @@
   },
   "runner_path": "scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py",
   "title": "Cl(3) Pauli Irrep Uniqueness Narrow Theorem",
-  "transitive_descendants": 1760,
+  "transitive_descendants": 1761,
   "verdict_rationale": "The class-A derivation supports the stated decomposition, module classification, faithfulness distinction, and conditional unitary refinement, and no mathematical contradiction was found. N2 through N8 are dispositioned, including the independent N7 resolution and authenticated index metadata. N1 cannot pass from the rendered packet because only faithful-direct-sum-carrier and gram-normalization appear as complete live route records; complex-kernel-solve and central-character-separation are absent, while finite-simple-counterexamples is clipped. This is a runner-evidence defect rather than evidence against the theorem."
 }

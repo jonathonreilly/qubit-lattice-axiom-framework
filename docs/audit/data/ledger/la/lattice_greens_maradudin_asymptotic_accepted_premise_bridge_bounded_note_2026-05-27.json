@@ -92,7 +92,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 10.076,
+  "load_bearing_score": 10.077,
   "load_bearing_step": "(B4) The leading Green-kernel coefficient is c = 1/(4 pi) for the framework operator, using the parent framework-local theorem plus (B1)-(B3).",
   "load_bearing_step_class": "B",
   "max_descendant_status": "audit_in_progress",
@@ -1729,6 +1729,6 @@
   },
   "runner_path": "scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py",
   "title": "Cubic-Lattice Green's Function Asymptotic Native Reroute",
-  "transitive_descendants": 762,
+  "transitive_descendants": 763,
   "verdict_rationale": "The mathematical route is consistent with the retained-bounded parent: B1 and B2 are standard identities, B3 is a finite residual computation, and B4 imports the parent\u2019s asymptotic conclusion. However, the packet preflight identifies the runner stdout as clipped load-bearing evidence, so the complete certificate is an unresolved evidentiary obligation and audited_clean is forbidden. This is a runner-artifact defect rather than a demonstrated scientific contradiction."
 }

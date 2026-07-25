@@ -27,6 +27,7 @@
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
+    "scripts/physical_source_insertion_selection_backreaction_cycle572_carrier_support_2026_07_22.py",
     "scripts/physical_source_insertion_selection_backreaction_cycle572_finite_support_2026_07_22.py"
   ],
   "independence": null,
@@ -36,7 +37,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "46fc6d404d5b7ef973d1ef6475c802575eaedb17122b9c425217d837382acd4e",
+  "note_hash": "72e37ba7301e2aa6926c666304440bf370e2e22158d69e26262440d51bf07ecc",
   "note_path": "docs/FINITE_SOURCE_INSERTION_ALGEBRA_CARRIER_LABEL_SUPPORT_CYCLE572_BOUNDED_THEOREM_NOTE_2026-07-22.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

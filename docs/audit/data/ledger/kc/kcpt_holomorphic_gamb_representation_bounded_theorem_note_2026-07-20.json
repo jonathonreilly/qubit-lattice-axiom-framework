@@ -32,7 +32,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 4.0,
+  "load_bearing_score": 4.17,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -53,6 +53,6 @@
   },
   "runner_path": "scripts/kcpt_holomorphic_gamb_representation_2026_07_20.py",
   "title": "KCPT holomorphic G_amb-representation: the complex 32-plane splits multiplicity-free as 4 (+) 4 (+) 6 (+) 6 (+) 12",
-  "transitive_descendants": 7,
+  "transitive_descendants": 8,
   "verdict_rationale": null
 }

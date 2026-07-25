@@ -41,7 +41,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 19.794,
+  "load_bearing_score": 19.801,
   "load_bearing_step": "Using TDT=D, PDP=-D, and CDC=-D gives CP(TDT)PC=C(-D)C=D, while PK(iD)K^{-1}P=-iPDP=iD.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -359,6 +359,6 @@
   },
   "runner_path": "scripts/audit_companion_cpt_exact_real_anti_hermitian_d_exact_2026_05_10.py",
   "title": "CPT Exact \u2014 Real Anti-Hermitian D Narrow Theorem (C1+C2 only, post-2026-05-12 narrowing)",
-  "transitive_descendants": 221,
+  "transitive_descendants": 222,
   "verdict_rationale": "The restricted C1\u2013C2 implication is valid class-A algebra, and the runner genuinely evaluates the relevant matrix identities. Clean certification of the note as written is blocked by an artifact mismatch: the note says the runner checks a framework-specific cubic L=4 construction with [C,P]=0 and Theta^2=+I, while the source builds a nonliteral four-dimensional mirror-chain example and stdout reports +I=False and -I=True. These discrepancies are non-load-bearing for scoped C1\u2013C2 but require correction before the artifact is clean. For N1\u2013N8, the substantive negative boundary concerning failure of unconditional scalar C3 lacks the five-mechanism attack set, resolution-level rhetoric checks, steelman resolution, and candidate dispositions required to certify that boundary."
 }

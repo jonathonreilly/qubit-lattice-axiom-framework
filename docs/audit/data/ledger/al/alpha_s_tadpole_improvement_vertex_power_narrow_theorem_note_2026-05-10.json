@@ -63,7 +63,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "retained",
-  "load_bearing_score": 13.65,
+  "load_bearing_score": 13.651,
   "load_bearing_step": "From the definitions alpha_LM := alpha_bare/u_0 and alpha_s(v) := alpha_bare/u_0^2, the stated identities follow by direct algebra over positive reals.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -84,6 +84,6 @@
   },
   "runner_path": "scripts/frontier_alpha_s_tadpole_improvement_vertex_power_narrow.py",
   "title": "Tadpole-Improvement Vertex-Power Narrow Theorem",
-  "transitive_descendants": 1135,
+  "transitive_descendants": 1136,
   "verdict_rationale": "Independent symbolic checking confirms T1-T6: the vertex-power identities, geometric-mean/log form, constant-ratio chain, u_0=1 boundary, unique positive inverse, and P^(1/4) substitution all reduce to zero residuals under the stated positivity assumptions. The runner source performs genuine symbolic and numerical algebra checks rather than hard-coding a contested physical value, and its documentary scope guards do not enter the load-bearing proof. The verdict is clean only for the narrow abstract algebraic theorem, not for any parent alpha_s(M_Z), plaquette, Wilson-action, or bare-normalization claim."
 }

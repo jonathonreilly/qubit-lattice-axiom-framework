@@ -1,0 +1,22 @@
+{
+ "audit": "unset",
+ "authority": "none",
+ "conclusion": "Admissible configurations are closed under neither disjoint union nor sub-collection: explicit covariant nearest-neighbor rules break each. Union closure is restored, for every nearest-neighbor rule, exactly when the closed one-neighborhoods are disjoint. The Record additivity clause therefore carries an implicit domain condition in both directions, and any argument that composes two configurations must state the separation hypothesis.",
+ "cycle": 700,
+ "cycle_claim": null,
+ "duplication_needs": "disjoint closed one-neighborhoods, not merely disjoint sites",
+ "fail_count": 0,
+ "firewalls": {
+  "axiom_reading_ratified": false,
+  "dynamics_or_formation_rule_claimed": false,
+  "exhibited_rule_claimed_to_be_the_framework_rule": false,
+  "lane_status_changed": false,
+  "new_axiom_or_primitive_proposed": false
+ },
+ "pass": true,
+ "pass_count": 5,
+ "resources": {
+  "elapsed_seconds": 0.08613599999807775
+ },
+ "runner_sha256": "dcf2e466b368da973595170894240f6bef3cff8fd921083f416986dba248b045"
+}

@@ -46,7 +46,15 @@ PASS = 0
 FAIL = 0
 
 
-def check(name: str, condition: bool, detail: str = "") -> bool:
+def check(
+    name: str, condition: bool, detail: str = "", fail_detail: str = ""
+) -> bool:
+    """Print one check line.
+
+    ``detail`` is printed on PASS and on FAIL; ``fail_detail`` carries
+    diagnostic text (paths, echoed expectations) that only restates the
+    check label, so it is printed on FAIL only.
+    """
     global PASS, FAIL
     status = "PASS" if condition else "FAIL"
     if condition:
@@ -54,19 +62,22 @@ def check(name: str, condition: bool, detail: str = "") -> bool:
     else:
         FAIL += 1
     msg = f"{status}: {name}"
-    if detail:
-        msg += f" ({detail})"
+    extra = detail
+    if not condition and fail_detail:
+        extra = f"{detail}; {fail_detail}" if detail else fail_detail
+    if extra:
+        msg += f" ({extra})"
     print("  " + msg)
     return condition
 
 
 def part0_source_firewall() -> None:
     """Verify the source note carries the required boundary phrases."""
-    print("\n== Part 0: source firewall ==")
+    print("\n-- P0 source firewall")
     check(
         "source note file exists",
         NOTE_PATH.is_file(),
-        str(NOTE_PATH.relative_to(ROOT)),
+        fail_detail=str(NOTE_PATH.relative_to(ROOT)),
     )
     note = NOTE_PATH.read_text(encoding="utf-8")
     note_flat = " ".join(note.split())
@@ -92,7 +103,7 @@ def part0_source_firewall() -> None:
     ]
     for phrase in required:
         check(
-            f"source contains required phrase: {phrase}",
+            f"phrase present: {phrase}",
             phrase in note or phrase in note_flat,
         )
 
@@ -112,14 +123,14 @@ def part0_source_firewall() -> None:
     ]
     for phrase in forbidden:
         check(
-            f"source note excludes forbidden phrase: {phrase}",
+            f"forbidden phrase absent: {phrase}",
             phrase not in note and phrase not in note_flat,
         )
 
 
 def part1_symbol_normalization_symbolic() -> None:
     """(B1) sympy: lambda(k) = |k|^2 + O(|k|^4) on Z^3."""
-    print("\n== Part 1: (B1) symbol normalization (sympy) ==")
+    print("\n-- P1 (B1) symbol norm (sympy)")
     kx, ky, kz = sp.symbols("kx ky kz", real=True)
     lam = 6 - 2 * (sp.cos(kx) + sp.cos(ky) + sp.cos(kz))
     # Taylor expand at k=0 to fourth order
@@ -141,7 +152,7 @@ def part1_symbol_normalization_symbolic() -> None:
     check(
         "(B1) sympy: lambda(k) at order 2 equals kx^2 + ky^2 + kz^2",
         sp.simplify(deg2 - target) == 0,
-        f"deg2 = {sp.simplify(deg2)}",
+        fail_detail=f"deg2 = {sp.simplify(deg2)}",
     )
 
     # Check: there is no order-3 term (cosine is even, so symmetry kills it)
@@ -182,7 +193,7 @@ def part1_symbol_normalization_symbolic() -> None:
 
 def part1b_symbol_normalization_numerical() -> None:
     """(B1) numerical: lambda(k) / |k|^2 -> 1 as |k| -> 0."""
-    print("\n== Part 1b: (B1) symbol normalization (numerical) ==")
+    print("\n-- P1b (B1) symbol norm (numeric)")
     for eps in (1e-1, 5e-2, 2.5e-2, 1.25e-2):
         sym_axis = 6.0 - 2.0 * (math.cos(eps) + math.cos(0.0) + math.cos(0.0))
         ratio_axis = sym_axis / (eps * eps)
@@ -204,7 +215,7 @@ def part1b_symbol_normalization_numerical() -> None:
 
 def part2_unit_flux_symbolic() -> None:
     """(B2) sympy: continuum kernel 1/(4 pi r) carries unit outward flux."""
-    print("\n== Part 2: (B2) continuum-kernel unit flux (sympy) ==")
+    print("\n-- P2 (B2) unit flux (sympy)")
     r = sp.Symbol("r", positive=True)
     phi = 1 / (4 * sp.pi * r)
     grad_phi_radial = sp.diff(phi, r)
@@ -227,7 +238,7 @@ def part2_unit_flux_symbolic() -> None:
     check(
         "(B2) sympy: int_{S^2} R^2 * (1/(4 pi R^2)) dOmega = 1",
         sp.simplify(flux - 1) == 0,
-        f"flux = {flux}",
+        fail_detail=f"flux = {flux}",
     )
     # Sanity at multiple radii numerically
     for radius in (1.0, 2.0, 5.0, 10.0, 100.0):
@@ -237,7 +248,7 @@ def part2_unit_flux_symbolic() -> None:
         check(
             f"(B2) numerical: flux at R={radius:.1f} equals 1.0",
             math.isclose(flux_num, 1.0, rel_tol=0.0, abs_tol=1e-15),
-            f"flux={flux_num:.16f}",
+            fail_detail=f"flux={flux_num:.16f}",
         )
 
 
@@ -265,7 +276,7 @@ def graph_laplacian_on_kernel(x: tuple[int, int, int]) -> float:
 
 def part3_lattice_harmonic_residual() -> None:
     """(B3) numerical: (-Delta_lat)(1/(4 pi r)) = O(r^-5) at axis."""
-    print("\n== Part 3: (B3) lattice-harmonic residual decay ==")
+    print("\n-- P3 (B3) residual decay")
     previous = None
     scaled_history = []
     for radius in (16, 32, 64, 128):
@@ -300,7 +311,7 @@ def part3_lattice_harmonic_residual() -> None:
 
 def part4_framework_constant_identification() -> None:
     """(B4) c = 1/(4 pi) is the framework-stencil asymptotic constant."""
-    print("\n== Part 4: (B4) framework constant identification ==")
+    print("\n-- P4 (B4) constant identification")
     # Symbolic: parameterise G(r) = c / r and check that the only c
     # making (-Delta_lat) (G) asymptotically consistent with a unit
     # point source is c = 1/(4 pi).
@@ -328,13 +339,13 @@ def part4_framework_constant_identification() -> None:
     check(
         "(B4) numerical: 4 pi = 12.566370614...",
         math.isclose(four_pi, 12.566370614359172, rel_tol=1e-15),
-        f"4 pi = {four_pi:.12f}",
+        fail_detail=f"4 pi = {four_pi:.12f}",
     )
 
 
 def part5_dependency_status() -> None:
     """Verify load-bearing one-hop dependency is framework-local."""
-    print("\n== Part 5: dependency status check ==")
+    print("\n-- P5 dependency status")
     parent = (
         ROOT
         / "docs/LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md"
@@ -342,7 +353,7 @@ def part5_dependency_status() -> None:
     check(
         "Parent Maradudin wrapper note file exists",
         parent.is_file(),
-        str(parent.relative_to(ROOT)),
+        fail_detail=str(parent.relative_to(ROOT)),
     )
     parent_text = parent.read_text(encoding="utf-8") if parent.is_file() else ""
     check(
@@ -356,7 +367,7 @@ def part5_dependency_status() -> None:
     check(
         "Parent normalization certificate runner exists",
         cert_runner.is_file(),
-        str(cert_runner.relative_to(ROOT)),
+        fail_detail=str(cert_runner.relative_to(ROOT)),
     )
     cert_cache = (
         ROOT / "logs/runner-cache/lattice_greens_z3_asymptotic_normalization_certificate.txt"
@@ -364,19 +375,19 @@ def part5_dependency_status() -> None:
     check(
         "Parent normalization certificate cache exists",
         cert_cache.is_file(),
-        str(cert_cache.relative_to(ROOT)),
+        fail_detail=str(cert_cache.relative_to(ROOT)),
     )
     axioms = ROOT / "docs/MINIMAL_AXIOMS_2026-06-05.md"
     check(
         "MINIMAL_AXIOMS_2026-06-05.md exists",
         axioms.is_file(),
-        str(axioms.relative_to(ROOT)),
+        fail_detail=str(axioms.relative_to(ROOT)),
     )
 
 
 def part6_no_forbidden_imports() -> None:
     """No PDG / Monte Carlo / fitted value imported."""
-    print("\n== Part 6: no forbidden imports ==")
+    print("\n-- P6 no forbidden imports")
     note = NOTE_PATH.read_text(encoding="utf-8")
     forbidden_substrings = [
         "PDG " + "obs " + "value",
@@ -389,14 +400,14 @@ def part6_no_forbidden_imports() -> None:
     ]
     for phrase in forbidden_substrings:
         check(
-            f"source note excludes literature comparator: {phrase}",
+            f"comparator absent: {phrase}",
             phrase not in note,
         )
 
 
 def part7_no_new_axioms() -> None:
     """No new repo vocabulary or repo-wide axiom introduced."""
-    print("\n== Part 7: no new axioms or vocabulary ==")
+    print("\n-- P7 no new axioms")
     note = NOTE_PATH.read_text(encoding="utf-8")
     note_flat = " ".join(note.split())
     # Verify the note explicitly disclaims new axioms

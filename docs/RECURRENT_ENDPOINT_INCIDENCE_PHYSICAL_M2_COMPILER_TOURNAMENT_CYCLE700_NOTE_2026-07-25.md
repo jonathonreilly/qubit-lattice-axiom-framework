@@ -14,8 +14,10 @@ surface.
 
 ## Result up front
 
-The tournament makes a substantial constructive advance but does **not** yet
-close the requested recurrent compiler.
+The tournament closes the complete sparse routed chart-transition subword and
+two adjacent physical seams, but it does **not** yet close the complete bounded
+two-star physical compiler.  Recurrent tiling and the infinite lattice remain
+strictly further open.
 
 There is now one explicit physical branch encoding `E_refresh` for the complete
 vacuum/one/two sector of two overlapping maximal stars:
@@ -27,18 +29,20 @@ vacuum/one/two sector of two overlapping maximal stars:
 - Gram raw maximum `2.220446049250313e-16` at L5 and held L6;
 - zero invalid qutrit words, missing columns, or shared-view equality failures.
 
-On this same encoding, a bounded reversible carrier/chart refresh compiles the
-physical six-mode coin and the subsequent local contact block:
+On this same encoding, the independently executed positive rows are:
 
 ```text
-E_refresh (C_contact C_coin)
-  = G_physical,coin+contact E_refresh.
+coin + local contact,
+one signed-carrier seam,
+two adjacent signed-carrier seams + their 12-CZ transition.
 ```
 
-The maximum raw intertwiner residual is `9.703360914001336e-17` and the maximum
-raw code-leakage residual is `1.1188630228279524e-16`, identically on L5 and
-held L6.  This retires the prior stale-feature-copy coin failure without a
-dense augmented-code completion, global parity service, or host query.
+Coin plus local contact has maximum raw intertwiner
+`9.703360914001337e-17` and raw code leakage
+`1.1188630228279524e-16`, identically at L5 and held L6.  One seam closes with
+exact zero residual/leakage; two adjacent seams also close exactly after the
+sparse transition.  No dense augmented completion, global parity service or
+host query is used in these rows.
 
 The first seam is now also constructive on `E_refresh`.  The actual qutrit
 phase flips one carrier component in 10 of 79 two-cell columns.  A derived
@@ -56,12 +60,29 @@ passes all 24 frames and 576 products.
 
 The corresponding finite all-eleven phase algebra is exact: the previously
 mismatched 224 columns are corrected by 224 derived CZ terms (33 same-cell,
-114 neighbor and 77 distance-two), with zero phase residual.  What remains is
-physical routing and returned-work composition of that finite word across the
-overlapping stars, followed by recurrent overlap/collision control.  No global
-decoded mode ordering was substituted.  Consequently this package does not
-claim a complete recurrent free-plus-seam-plus-contact physical word, full
-`M64^12`, or an infinite-lattice compiler.
+114 neighbor and 77 distance-two).  Each distance-two term has one common star
+center and is routed as `SWAP-CZ-SWAP`, giving 378 nearest-neighbor two-M2
+factors.  All 10,516 `n<=2` input/dirty-transit cases return data and two
+transit M2 exactly.  On decoded occupation space the corrected stream,
+contact and full update have zero logical operator residual.  The physical
+routing geometry is translation-compatible and passes all 24 proper-cubic
+frames and 576 products.
+
+An adversarial replay rejected the runner's advertised full physical
+intertwiner: its `factorized_intertwiner` evaluates
+`G (I-E_refresh^dagger E_refresh)` and never consumes the constructed physical
+word, so an unrelated nontrivial logical unitary also passes at roundoff.  The
+runner inventories all eleven signed seams but does not apply their physical
+maps sequentially to the 59,941-ray common encoding or test the shared-chart
+poststate.  The transition-after-seams control fails on 100 columns with
+residual `2`, confirming that the unexecuted ordering is load-bearing.
+
+The immediate remaining object is therefore the actual common-`E_refresh`
+composition of routed transition, eleven physical signed-carrier seams and
+contact, with returned shared charts.  Only after that comes recurrent
+placement/collision beyond two stars, `n>2`, and primitive genesis/enforcement.
+No global decoded mode ordering was substituted.  This package does not claim
+full `M64^12`, a volume theorem or an infinite-lattice compiler.
 
 ## Inputs and historical discriminants
 
@@ -133,7 +154,8 @@ Runners:
 - [`frontier_two_star_qutrit_physical_update_integration_2026_07_25.py`](../scripts/frontier_two_star_qutrit_physical_update_integration_2026_07_25.py);
 - [`frontier_two_star_full128_coin_covariant_feature_refresh_2026_07_25.py`](../scripts/frontier_two_star_full128_coin_covariant_feature_refresh_2026_07_25.py);
 - [`frontier_two_star_signed_carrier_single_seam_transport_2026_07_25.py`](../scripts/frontier_two_star_signed_carrier_single_seam_transport_2026_07_25.py);
-- [`frontier_two_adjacent_seam_chart_transition_2026_07_25.py`](../scripts/frontier_two_adjacent_seam_chart_transition_2026_07_25.py).
+- [`frontier_two_adjacent_seam_chart_transition_2026_07_25.py`](../scripts/frontier_two_adjacent_seam_chart_transition_2026_07_25.py);
+- [`frontier_two_star_routed_transition_physical_word_2026_07_25.py`](../scripts/frontier_two_star_routed_transition_physical_word_2026_07_25.py).
 
 Each factor-private endpoint feature uses the lawful two-M2 qutrit words
 `00`, `10`, and `01`; `11` is locally excluded.  Two support-four equality
@@ -179,14 +201,30 @@ close two adjacent signed-carrier seams with zero same-`E` intertwiner and
 leakage.  Deleting any one CZ gives column residual `2`.  One maximal-star
 prefix with `k=1...6` seams requires respectively `0,12,36,72,120,180` CZs,
 the closed law `6k(k-1)`.  Applying the same derivation to the finite two-star
-fixture gives the exact 224-term algebraic correction above.  That final row
-is not promoted to a physical compiler until nearest-neighbor routing,
-returned work and the combined chart constraints are executed.
+fixture gives the exact 224-term algebraic correction above.  That runner
+stops at algebra; the next runner supplies the required physical routing and
+returned work.
 
-The supplied finite word has 47,124 pre-expansion ordinals, one station-zero
-token, returned controller work, zero runtime measurements/parity/order
-queries, and exact zero-/two-token controls.  Its ordinal is circuit order,
-not physical time.
+The routed-transition runner physically promotes the transition subword, not
+the full compiler.  All 77 distance-two
+CZs have a unique common star center.  `SWAP-CZ-SWAP` is exact for all eight
+endpoint/transit basis values and for arbitrary transit input, so no clean
+parity bus is imported.  The full word has 224 CZ and 154 SWAP factors (686
+CNOT/CZ after SWAP decomposition), maximum primitive support two M2 and cell
+distance one.  One reusable transit M2 per star center is returned.
+
+Across 2,629 columns and four transit states there are zero transition phase,
+data or work-return failures.  Omitting any transition macro has a residual-2
+witness; deleting the first or last routing SWAP and deleting the routed CZ
+are all active.  Each signed-carrier word separately returns qutrit, role,
+matcher and carrier work.  Their eleven-fold physical composition on the
+common encoding remains unexecuted.
+
+The pre-transition refresh/controller inventory has 47,124 pre-expansion
+ordinals; the routed transition adds the 378 two-M2 factors counted above.
+The controller uses one station-zero token, returns its work, performs zero
+runtime measurement/parity/order queries, and has exact zero-/two-token
+controls.  Its ordinal is circuit order, not physical time.
 
 ## Route C — staggered/time-multiplexed feature word
 
@@ -204,9 +242,10 @@ residual `1.6653345369377348e-16`, seam deletion and duplication residuals `2`,
 contact deletion `0.3678930670560824`, and wrong factor order
 `1.990327350532773`.
 
-The route remains partial because the charts are supplied and the logical
-update is not coupled to one complete physical `E`.  Its schedule counter is
-not physical time.
+This route remains partial in isolation because its charts are supplied and
+its logical update is not coupled to one complete physical `E`.  Route B uses
+its fixed owner schedule as one input to the still-partial composite word
+above.  The schedule counter is not physical time.
 
 ## Label-space shortcut and physical support audit
 
@@ -235,11 +274,14 @@ above is already one such larger-support partial closure.
 ## Covariance, sizes, mass, and controls
 
 All constructive rows use L5 as train and L6 as held/no-refit.  The qutrit
-gauge, refresh carrier, logical update, and feature schedules close all 24
-proper-cubic frames and all 576 ordered products.  The refresh carrier has
-17,280 product cases with zero failures.  L5/L6 block placements have zero
-collisions.  Covariance is a rotated finite word family on the declared code;
-canonical off-code word invariance is not claimed.
+gauge, refresh carrier, routed transition, logical update, and feature
+schedules close all 24 proper-cubic frames and all 576 ordered products.  The
+refresh carrier has 17,280 product cases with zero failures.  The physical
+routing geometry has zero frame/product failures and zero L5/L6 placement or
+transit-center collisions.  Translation controls cover 750 L5 and 1,296 held
+L6 oriented two-star placements without refit.  Covariance is a rotated finite
+word family on the declared code; canonical off-code word invariance is not
+claimed.
 
 The two-star logical update preserves the Cycle-219 one-particle mass:
 
@@ -278,16 +320,20 @@ Derived:
 - one bounded signed-carrier physical seam closing exactly on that `E`;
 - one adjacent pair of physical seams closing exactly via a sparse 12-CZ
   transition, plus the exact finite 224-CZ all-eleven algebraic candidate;
+- a 378-factor nearest-neighbor routing of that candidate and a complete
+  decoded-occupation transition subword with arbitrary transit return;
 - held-size stability, constant overhead, mass preservation, and 24/576
   covariance;
-- the exact first eleven-chart transition residuals.
+- exact retirement of the eleven-chart transition residual and active
+  primitive/macro deletions.
 
 Open:
 
-- bounded nearest-neighbor routing and returned-work composition of the exact
-  224-CZ eleven-seam transition on `E_refresh`;
-- local enforcement of the combined transition charts and recurrent
-  overlap/collision beyond the finite two-star patch;
+- an executed common-`E_refresh` composition of the routed transition, all
+  eleven signed-carrier seam maps, shared-chart refresh and contact;
+- recurrent overlap/placement/collision for translated two-star words beyond
+  the one finite patch, after the prior row closes;
+- local dynamical enforcement and genesis of the combined transition charts;
 - full free-plus-seam-plus-contact physical recurrence;
 - `n>2`, full `M64^12`, more than two overlapping stars, volume collision
   control, and an infinite-lattice recurrence theorem;
@@ -299,12 +345,12 @@ Open:
 
 ## Claim boundary
 
-This is a positive bounded compiler advance and a route-by-route disposition.
-It is not a complete recurrent physical-M2 compiler.  Static projectors are
-not physical energy.  Gate ordinals are not time or rates.  Pointer/feature
-copying is not a framework Record.  No wrapped phase is called energy.  No
-source, gravity, probability, minimum content, shared obstruction, or axiom
-pressure is claimed.
+This is a positive bounded compiler advance and a route-by-route disposition,
+not yet a complete two-star, recurrent-lattice or infinite-volume compiler.
+Static projectors are not physical energy.  Gate ordinals are not time or
+rates.  Pointer/feature copying is not a framework Record.  No wrapped phase
+is called energy.  No source, gravity, probability, minimum content, shared
+obstruction, or axiom pressure is claimed.
 
 The exact three-factor support defect receives a separate N1--N8 scope audit
 in its adversarial note.  It is not generalized to the successful larger
@@ -312,12 +358,11 @@ support routes or to the substrate.
 
 ## Optimal next experiment
 
-The adjacent overlap and full finite phase algebra have succeeded.  The next
-experiment is now a direct physical materialization of the derived 224-CZ
-word: route every distance-two CZ with bounded returned swaps, enforce the
-combined chart locally, and execute the eleven seams sequentially on the same
-`E_refresh`.  Require zero work residue, intertwiner and leakage after the
-complete exterior word, followed by local contact.  Then repeat on three
-overlapping maximal stars to test whether the finite transition rule is truly
-recurrent.  Only after that closes should the compiler be connected to the
-Cycle-612 matter-caused endpoint/causal-interval harness.
+The finite routed transition has succeeded, but the full physical composition
+must come first.  Materialize one sparse operator per signed seam on the common
+59,941-ray encoding; execute transition first, then all eleven seam maps, then
+contact; and inspect every shared chart/work register after every stage.
+Require a residual against the actual `G_physical`, not an isometry identity.
+In parallel, a three-star transition/placement experiment can test whether the
+sparse cocycle itself scales, but it does not substitute for this two-star
+composition.  The Cycle-612 bridge remains gated on closing the latter.

@@ -1,0 +1,26 @@
+{
+ "audit": "unset",
+ "authority": "none",
+ "conclusion": "Strict Record additivity forbids every interaction term, so no source action is a scalar readout. The minimal position-carrying extension is a two-body kernel; lattice covariance reduces it at nearest-neighbor range to a single constant, the adjacent-pair count. That functional is additive only for separated collections, it supplies a site-anchored value as the marginal cost of a test record, and the field operator it induces lies in the same two-dimensional family the law-side classification gives.",
+ "cycle": 698,
+ "cycle_claim": null,
+ "fail_count": 0,
+ "firewalls": {
+  "axiom_text_reinterpreted_as_authority": false,
+  "carrier_identified": false,
+  "dynamics_or_measurement_claimed": false,
+  "gravity_or_koide_lane_status_changed": false,
+  "new_axiom_or_primitive_proposed": false,
+  "source_action_adopted": false
+ },
+ "law_and_source_routes_agree": true,
+ "pass": true,
+ "pass_count": 6,
+ "range_1_pair_kernel_parameters": 1,
+ "resources": {
+  "elapsed_seconds": 0.042616582941263914
+ },
+ "runner_sha256": "b3fa0a7c29fc6b58be0fd1f985612f5c6b0cb6b73514fb311b0d97043487b7cb",
+ "site_anchored_readout_shape": "the field at a site is the marginal readout cost of a test record placed there; at an empty site it is defined only through that test record",
+ "strict_additivity_forbids_interaction": true
+}

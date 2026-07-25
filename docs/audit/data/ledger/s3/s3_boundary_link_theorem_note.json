@@ -42,7 +42,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 14.243,
+  "load_bearing_score": 14.244,
   "load_bearing_step": "Exhaustive enumeration verifies that every nonempty proper P with both Q_3 sides connected has K_simp(P) a PL 2-disk, while the R=2..6 bridge cross-check identifies each audited cubical link with that closure.",
   "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
@@ -1631,6 +1631,6 @@
   },
   "runner_path": "scripts/frontier_s3_boundary_link_theorem.py",
   "title": "S^3 Boundary-Link Disk Bounded Certificate",
-  "transitive_descendants": 1211,
+  "transitive_descendants": 1212,
   "verdict_rationale": "Issue: the source reports 121 PASS as 120 EXACT and 1 BOUNDED, while completed runner stdout reports 119 EXACT and 2 BOUNDED. Why this blocks: the evidence contradicts the source\u2019s current-revision accounting, preventing clean source-level certification even though the load-bearing 1162/1162 bridge and 126/126 Proposition Z results agree. Repair target: correct the accounting and regenerate the restricted packet. Claim boundary until fixed: the stated R=2..6 and Proposition Z results remain supported; the artifact\u2019s large-coordinate qualification is bounded-with-named-walls and conditional-wall rationale, while its 24 unrealizable subset types form a derived no-go boundary."
 }

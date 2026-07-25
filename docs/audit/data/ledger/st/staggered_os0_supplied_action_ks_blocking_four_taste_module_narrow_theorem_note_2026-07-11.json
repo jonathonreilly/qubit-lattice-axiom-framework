@@ -102,7 +102,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "retained_bounded",
-  "load_bearing_score": 11.209,
+  "load_bearing_score": 11.211,
   "load_bearing_step": "Entrywise conjugation by P(t) gives equation (2), while the explicitly constructed unitary U gives U^dagger alpha_mu U = gamma_mu tensor I_4 and the gamma words span M_4(C).",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -1310,6 +1310,6 @@
   },
   "runner_path": "scripts/frontier_staggered_os0_supplied_action_ks_blocking_four_taste_module_2026_07_11.py",
   "title": "Defined Four-Bit Periodic Difference Operator: Exact Blocking and Module Decomposition",
-  "transitive_descendants": 1183,
+  "transitive_descendants": 1184,
   "verdict_rationale": "The source is a self-contained theorem about a defined operator, and its load-bearing steps are genuine algebraic identities rather than imported physical premises or symbol renamings. The runner constructs the blocked matrices, signed-flip generators, projectors, unitary intertwiner, and restricted gamma matrices and checks the claimed identities with exact symbolic arithmetic. Its physical-language exclusions only delimit the theorem\u2019s scope and are not used to establish the positive algebraic conclusion."
 }

@@ -42,7 +42,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 11.002,
+  "load_bearing_score": 11.004,
   "load_bearing_step": "The relation O(a,conj(b)) = O(a,b)^T preserves the spectrum and is asserted to prevent a conjugation-odd spectral term.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -1445,6 +1445,6 @@
   },
   "runner_path": "scripts/frontier_koide_emergent_time_eta_conjugation_parity_2026_05_30.py",
   "title": "Koide Emergent-Time Eta Conjugation-Parity Bounded Note",
-  "transitive_descendants": 724,
+  "transitive_descendants": 725,
   "verdict_rationale": "The runner genuinely checks the stated matrix identities, conjugation-even spectra, and zero curl of A = sum_k g(lambda_k) d lambda_k; it is not merely printing expected constants. It does not establish vanishing of eigenvector-dependent Berry/eta contributions for a transpose-preserving extension, because transpose equality constrains eigenvalues but not the parameter-space eigenvector connection. For no-go discipline, N1/N7 leave complex, holomorphic, and eigenvector-dependent routes open; N2 identifies the residual spectral-to-eigenvector wall; N3/N5 rhetoric is bounded but lacks per-resolution execution; N4 has no retained prior witness; and N6/N8 provide no accepted closure of that residual."
 }

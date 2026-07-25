@@ -26,13 +26,13 @@
     "kcpt_dirac_symmetry_five_module_selective_cp_fusion_bounded_theorem_note_2026-07-21",
     "kcpt_dirac_even_algebra_reach_character_cp_charge_bounded_theorem_note_2026-07-21"
   ],
-  "direct_in_degree": 0,
+  "direct_in_degree": 1,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 0.0,
+  "load_bearing_score": 1.5,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -53,6 +53,6 @@
   },
   "runner_path": "scripts/kcpt_dirac_symmetry_algebra_bicommutant_dimension_992_2026_07_24.py",
   "title": "KCPT Dirac-symmetry algebra bicommutant dimension: the generated algebra \ud835\udc9c = \u27e8D2, J_full, \u03c1(H)\u27e9 IS the full five-block matrix algebra M\u2088 \u2295 M\u2088 \u2295 M\u2081\u2082 \u2295 M\u2081\u2082 \u2295 M\u2082\u2084 of complex dimension 992 \u2014 block preservation caps it at 992 < 4096 and per-block Burnside fullness makes every inequality an equality, with the fill localized to the fused 24-block (288 \u2192 576), the abelian Dirac pair \u27e8D2, J_full\u27e9 = C\u2078 realizing a radius\u00d7chirality bigrading, and the geometric CP-idempotent P\u2081\u2082\u208a lying in \ud835\udc9c but not in its center",
-  "transitive_descendants": 0,
+  "transitive_descendants": 1,
   "verdict_rationale": null
 }

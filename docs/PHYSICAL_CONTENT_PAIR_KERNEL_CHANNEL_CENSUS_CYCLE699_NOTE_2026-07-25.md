@@ -35,8 +35,27 @@ matrix in the computation is an exact integer. The runner verifies that this
 assignment is a homomorphism on the proper cubic group, fixes the identity
 component, and has character `1 + tr(R)`.
 
-No choice was made here: the action follows from Qubit's presentation and
-Lattice's rotations.
+### Three named conditions, stated rather than claimed
+
+The sentence above should not be read as "nothing was assumed". Three
+identifications are load-bearing and none is written in the axiom text:
+
+1. **Rotations act on the possibility domain by spin conjugation.** The
+   Admissibility axiom says the nearest-neighbour rule is covariant under
+   proper cubic rotations, so rotations do act on the possibility structure;
+   that the action is conjugation by the corresponding spin element is the
+   natural identification for the `M_2(C)` / `Cl(3,0)` presentation, and it is
+   the one used here. It is a named condition, not an axiom sentence.
+2. **Contents are taken in the Hermitian real form.** The count is performed on
+   `span_R{I, sigma_1, sigma_2, sigma_3}` rather than on all of `M_2(C)`. The
+   complex case is a different count and is out of scope.
+3. **Record exchange is imposed as `K(-v, o', o) = K(v, o, o')`.** That is the
+   condition appropriate to an unordered pair of records. It is reported
+   separately from the covariance count throughout, so a reader who rejects it
+   can read the 6 instead of the 5.
+
+Every number below is stated against these three conditions. Reject any of
+them and the census changes.
 
 ## The count
 
@@ -111,6 +130,19 @@ of the five couplings. Improper elements are not implemented by conjugation
 with a spin element at all, so extending the group requires choosing how they
 act; the counterfactual is offered to isolate the dependence, not to argue for
 either group.
+
+**The framework's own improper-action question is already owned elsewhere, and
+this note defers to it.**
+[Admissibility-rule covariance extension classified](ADMISSIBILITY_RULE_COVARIANCE_EXTENSION_CLASSIFICATION_OPENNESS_ACHIRAL_ORIENTED_FRAME_MINIMAL_CHIRAL_CHANNEL_BOUNDED_THEOREM_NOTE_2026-07-03.md)
+asks the same proper-versus-full-cubic question on the same six directions, for
+the *admissibility rule* rather than for a two-body readout kernel, and it
+takes the improper action on rule values to be complex-antilinear, re-earned
+from the `Cl(3,0)` presentation. That is a more framework-motivated choice than
+the axial convention used above. This note does not compete with it: the
+objects differ (rule colorings by a `k`-letter condition alphabet there, a
+trilinear form on the Hermitian real form of `M_2(C)` here), and the axial
+extension here is labelled a counterfactual precisely because the principled
+improper action is that note's subject, not this one's.
 
 ## What this does not do
 

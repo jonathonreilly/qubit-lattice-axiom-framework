@@ -3350,6 +3350,59 @@ class AutomaticPanelResumeTest(unittest.TestCase):
             ["batch-lane_a-cycle-1", "panel-after-lane_a-cycle-1"],
         )
 
+    def test_runtime_consumed_by_batch_backoff_preserves_temporary_exit(self):
+        args = _args()
+        args.max_runtime_hours = 1
+        labels: list[str] = []
+
+        def fake_run(label, command, env=None):
+            labels.append(label)
+            if label.startswith("batch-"):
+                return batch.TRANSIENT_SERVICE_EXIT_CODE
+            return 0
+
+        with mock.patch.dict(
+            audit_loop.PROGRESS, {"started": 0}, clear=True
+        ), mock.patch.object(
+            audit_loop.time, "monotonic", side_effect=[3500, 3500, 3590]
+        ), mock.patch.object(
+            audit_loop, "git_head", return_value="same"
+        ), mock.patch.object(
+            audit_loop, "run_command", side_effect=fake_run
+        ), mock.patch.object(
+            audit_loop.time, "sleep"
+        ) as sleep:
+            rc, progressed = audit_loop.drain_lane("lane_a", args)
+
+        self.assertEqual(rc, batch.TRANSIENT_SERVICE_EXIT_CODE)
+        self.assertFalse(progressed)
+        self.assertEqual(
+            labels,
+            ["batch-lane_a-cycle-1", "panel-after-lane_a-cycle-1"],
+        )
+        sleep.assert_called_once_with(10)
+
+    def test_runtime_consumed_by_panel_backoff_preserves_temporary_exit(self):
+        args = _args()
+        args.max_runtime_hours = 1
+        with mock.patch.dict(
+            audit_loop.PROGRESS, {"started": 0}, clear=True
+        ), mock.patch.object(
+            audit_loop.time, "monotonic", return_value=3601
+        ), mock.patch.object(
+            audit_loop,
+            "run_command",
+            return_value=batch.TRANSIENT_SERVICE_EXIT_CODE,
+        ) as run_command:
+            rc = audit_loop.run_panel(
+                args,
+                "panel-test",
+                required_after_batch=True,
+            )
+
+        self.assertEqual(rc, batch.TRANSIENT_SERVICE_EXIT_CODE)
+        run_command.assert_called_once()
+
     def test_nonfinite_runtime_bounds_are_rejected(self):
         for value in ("nan", "inf", "-inf"):
             with self.subTest(value=value), self.assertRaises(SystemExit):
@@ -4779,6 +4832,50 @@ class CampaignContractTest(unittest.TestCase):
 
         self.assertEqual(rc, 0)
         self.assertEqual(canary_calls, 2)
+        lock.close.assert_called_once_with()
+
+    def test_runtime_consumed_by_forensic_backoff_preserves_temporary_exit(self):
+        lock = mock.Mock()
+        with tempfile.TemporaryDirectory() as tmp, mock.patch.object(
+            audit_loop, "validate_requested_lanes"
+        ), mock.patch.object(
+            batch, "load_campaign_exclusion_records", return_value=[]
+        ), mock.patch.object(
+            batch, "load_campaign_selection_skip_records", return_value=[]
+        ), mock.patch.object(
+            batch, "acquire_exclusive_drain_lock", return_value=lock
+        ), mock.patch.object(
+            batch, "clean_main_error", return_value=None
+        ), mock.patch.object(
+            batch, "sync_origin_main", return_value=(True, "same")
+        ), mock.patch.object(
+            audit_loop, "audit_status_snapshot", return_value={}
+        ), mock.patch.object(
+            audit_loop, "git_head", return_value="same"
+        ), mock.patch.object(
+            audit_loop, "run_panel", return_value=0
+        ), mock.patch.object(
+            audit_loop, "blocking_lanes", return_value=[]
+        ), mock.patch.object(
+            audit_loop, "drain_lane", return_value=(0, False)
+        ), mock.patch.object(
+            audit_loop,
+            "run_forensic_canary",
+            return_value=batch.TRANSIENT_SERVICE_EXIT_CODE,
+        ), mock.patch.object(
+            audit_loop, "wait_for_service_retry", return_value=True
+        ) as wait_for_retry:
+            rc = audit_loop.main(
+                [
+                    "--campaign-workdir",
+                    tmp,
+                    "--worker-id",
+                    "worker-alpha",
+                ]
+            )
+
+        self.assertEqual(rc, batch.TRANSIENT_SERVICE_EXIT_CODE)
+        wait_for_retry.assert_called_once()
         lock.close.assert_called_once_with()
 
     def test_verdict_summary_never_rematerializes_ledger_cache(self):

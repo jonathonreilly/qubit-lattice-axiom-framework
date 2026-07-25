@@ -241,13 +241,15 @@ def wait_for_service_retry(
     args: argparse.Namespace,
     context: str,
     consecutive_failures: int,
-) -> None:
+) -> bool:
+    """Back off once and report whether the runtime bound was consumed."""
     delay = min(
         args.service_retry_initial_sec
         * (2 ** min(consecutive_failures - 1, 20)),
         args.service_retry_max_sec,
     )
     remaining = remaining_runtime_seconds(args)
+    runtime_consumed = remaining is not None and remaining <= delay
     if remaining is not None:
         delay = min(delay, max(0.0, remaining))
     emit(
@@ -257,6 +259,7 @@ def wait_for_service_retry(
     )
     if delay > 0:
         time.sleep(delay)
+    return runtime_consumed
 
 
 def git_head() -> str:
@@ -434,13 +437,19 @@ def run_panel(
     attempts = 0
     while True:
         if attempts or not required_after_batch:
-            stop_if_runtime_limit_reached(args)
+            try:
+                stop_if_runtime_limit_reached(args)
+            except RuntimeLimitReached:
+                if transient_failures:
+                    return batch.TRANSIENT_SERVICE_EXIT_CODE
+                raise
         attempts += 1
         rc = run_command(label, panel_command(args))
         if rc != batch.TRANSIENT_SERVICE_EXIT_CODE:
             return rc
         transient_failures += 1
-        wait_for_service_retry(args, label, transient_failures)
+        if wait_for_service_retry(args, label, transient_failures):
+            return batch.TRANSIENT_SERVICE_EXIT_CODE
 
 
 def drain_lane(
@@ -501,11 +510,17 @@ def drain_lane(
             raise
         if batch_rc == batch.TRANSIENT_SERVICE_EXIT_CODE:
             transient_failures += 1
-            wait_for_service_retry(
+            runtime_consumed = wait_for_service_retry(
                 args,
                 f"batch-{label}-after-panel",
                 transient_failures,
             )
+            if runtime_consumed:
+                return batch_rc, made_progress
+            try:
+                stop_if_runtime_limit_reached(args)
+            except RuntimeLimitReached:
+                return batch_rc, made_progress
             continue
         transient_failures = 0
         if after == before and after_exclusions == before_exclusions:
@@ -1088,11 +1103,17 @@ def main(argv: list[str] | None = None) -> int:
                 rc = run_forensic_canary(args, forensic_attempted)
                 if rc == batch.TRANSIENT_SERVICE_EXIT_CODE:
                     forensic_service_failures += 1
-                    wait_for_service_retry(
+                    runtime_consumed = wait_for_service_retry(
                         args,
                         "forensic-canary",
                         forensic_service_failures,
                     )
+                    if runtime_consumed:
+                        return rc
+                    try:
+                        stop_if_runtime_limit_reached(args)
+                    except RuntimeLimitReached:
+                        return rc
                     continue
                 if rc != 0:
                     return rc

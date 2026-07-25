@@ -104,11 +104,11 @@
     "decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23": 1,
     "decoration_under_plaquette_self_consistency_note": 1,
     "meta": 356,
-    "open_gate": 2,
+    "open_gate": 3,
     "retained": 116,
     "retained_bounded": 343,
     "retained_pending_chain": 10,
-    "unaudited": 2652
+    "unaudited": 2651
   },
   "retained_pending_chain_count": 10,
   "retained_pending_chain_examples": [

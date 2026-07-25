@@ -1,44 +1,66 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T17:52:11.054837+00:00",
+  "audit_invocation_history": [
+    "37abf78a43034c80ba52401a08cd9c74"
+  ],
+  "audit_invocation_id": "37abf78a43034c80ba52401a08cd9c74",
+  "audit_state_snapshot": {
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "Pure algebraic Fourier/character identities relating H = aI + bC + b\u0304C\u00b2 on R \u00d7 C to the C_3 character coefficients of its eigenvalue triple."
+    },
+    "dep_claim_type": {
+      "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "retained"
+    },
+    "deps": [
+      "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 0.0,
+    "runner_hash": "77445108ae4caecd6e02a102fbafb057ff0c8a879a3753ce8facb8707afe34f8",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_decoration",
+  "auditor": "codex-audit-batch-A-20260725-188e5d9a",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The retained authority supplies the C_3 surface with b in C, and standard real-dimension counting gives dim_R(b)=2 and dim_R(Herm_3)=9. Their exact ratio is therefore 2/9 within the stated scope.",
   "claim_id": "koide_rho_delta_dimensionless_dof_ratio_bridge_bounded_note_2026-05-25",
-  "claim_scope": null,
-  "claim_type": "bounded_theorem",
+  "claim_scope": "Given the retained C_3 circulant surface and the explicitly selected complex coordinate b, elementary real-dimension counting yields dim_R(b)/dim_R(Herm_3)=2/9; no physical Koide or radian bridge is included.",
+  "claim_type": "decoration",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T17:52:11.054837+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
-  "decoration_parent_claim_id": null,
+  "decoration_parent_claim_id": "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
   "deps": [
     "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09"
   ],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+  "effective_status_reason": "decoration_parent_retained",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "dim_R(C)=2 and dim_R(Herm_3)=9, so rho_delta_C3=2/9.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "7c8a1008aae14a2d1a629d4c7796a3bf4f69eae99d66034257784558d63053e4",
   "note_path": "docs/KOIDE_RHO_DELTA_DIMENSIONLESS_DOF_RATIO_BRIDGE_BOUNDED_NOTE_2026-05-25.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -151,14 +173,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 8,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 8
   },
   "runner_path": "scripts/koide_rho_delta_dimensionless_dof_ratio_runner.py",
   "title": "Koide rho_delta = 2/9 C_3 DOF-Ratio Bridge",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "The arithmetic and dimension count are correct, exact, and fully supported by the retained one-hop authority plus standard finite-dimensional linear algebra. However, every load-bearing step is class A, there are no external comparator checks, and the result is an algebraic corollary of a single retained parent rather than an independent bounded theorem. The appropriate classification is therefore decoration under that retained parent."
 }

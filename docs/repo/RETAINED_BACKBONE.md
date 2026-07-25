@@ -17,7 +17,7 @@ file per claim), summarized in
 | Metric | Value |
 |---|---:|
 | Retained positive rows | 96 |
-| Retained bounded rows | 316 |
+| Retained bounded rows | 317 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 19 |
 
@@ -122,7 +122,7 @@ Sorted by load-bearing graph score (descending).
 - [`replay_environment_note`](../../docs/REPLAY_ENVIRONMENT_NOTE.md) — score 0.000; audited 2026-05-01T23:28:33.389906+00:00
 - [`staggered_graph_portability_stress_note`](../../docs/STAGGERED_GRAPH_PORTABILITY_STRESS_NOTE.md) — score 0.000; audited 2026-05-05T11:44:13.477263+00:00
 
-## Retained bounded rows (316)
+## Retained bounded rows (317)
 
 Sorted by load-bearing graph score (descending).
 
@@ -190,6 +190,7 @@ Sorted by load-bearing graph score (descending).
 - [`ordered_lattice_quasi_persistent_relaunch_2d_note`](../../docs/ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_2D_NOTE.md) — score 8.459; audited 2026-05-19T14:19:25.694084+00:00
 - [`lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05`](../../docs/LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md) — score 8.392; audited 2026-07-11T22:29:04.561861+00:00
 - [`asymmetry_persistence_joint_card_note`](../../docs/ASYMMETRY_PERSISTENCE_JOINT_CARD_NOTE.md) — score 8.322; audited 2026-05-17T13:20:43.861405+00:00
+- [`staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23`](../../docs/STAGGERED_AXIS_SYMMETRY_IS_S3_NARROW_THEOREM_NOTE_2026-05-23.md) — score 8.322; audited 2026-07-25T02:51:36.570924+00:00
 - [`valley_linear_wide_tail_note`](../../docs/VALLEY_LINEAR_WIDE_TAIL_NOTE.md) — score 8.307; audited 2026-06-08T10:46:05.699490+00:00
 - [`wave_direct_dm_h025_low_band_retention_note`](../../docs/WAVE_DIRECT_DM_H025_LOW_BAND_RETENTION_NOTE.md) — score 8.307; audited 2026-05-29T05:45:58.127652+00:00
 - [`lensing_deflection_note`](../../docs/LENSING_DEFLECTION_NOTE.md) — score 8.281; audited 2026-07-12T19:45:47.536574+00:00

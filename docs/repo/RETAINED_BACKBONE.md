@@ -17,7 +17,7 @@ file per claim), summarized in
 | Metric | Value |
 |---|---:|
 | Retained positive rows | 110 |
-| Retained bounded rows | 335 |
+| Retained bounded rows | 336 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 26 |
 
@@ -136,7 +136,7 @@ Sorted by load-bearing graph score (descending).
 - [`staggered_graph_portability_stress_note`](../../docs/STAGGERED_GRAPH_PORTABILITY_STRESS_NOTE.md) — score 0.000; audited 2026-05-05T11:44:13.477263+00:00
 - [`tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20`](../../docs/TOMITA_TENSOR_TRACE_ON_FINITE_DIM_MATRIX_NARROW_THEOREM_NOTE_2026-05-20.md) — score 0.000; audited 2026-07-25T15:03:52.540528+00:00
 
-## Retained bounded rows (335)
+## Retained bounded rows (336)
 
 Sorted by load-bearing graph score (descending).
 
@@ -428,6 +428,7 @@ Sorted by load-bearing graph score (descending).
 - [`persistent_object_readout_localization_note`](../../docs/PERSISTENT_OBJECT_READOUT_LOCALIZATION_NOTE.md) — score 0.000; audited 2026-05-01T09:39:41.757320+00:00
 - [`persistent_object_top3_multistage_probe_note_2026-04-16`](../../docs/PERSISTENT_OBJECT_TOP3_MULTISTAGE_PROBE_NOTE_2026-04-16.md) — score 0.000; audited 2026-05-01T09:44:27.955677+00:00
 - [`post_record_stable_kernel_count_audit_interface_2026-06-06`](../../docs/POST_RECORD_STABLE_KERNEL_COUNT_AUDIT_INTERFACE_2026-06-06.md) — score 0.000; audited 2026-07-25T15:35:07.389401+00:00
+- [`post_record_stable_kernel_expected_frequency_interface_2026-06-06`](../../docs/POST_RECORD_STABLE_KERNEL_EXPECTED_FREQUENCY_INTERFACE_2026-06-06.md) — score 0.000; audited 2026-07-25T15:36:30.809053+00:00
 - [`pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22`](../../docs/PWC_DERIVATION_FROM_CUMULANT_GENERATING_FUNCTIONAL_NARROW_THEOREM_NOTE_2026-05-22.md) — score 0.000; audited 2026-07-25T12:26:20.399223+00:00
 - [`s3_endpoint_fiber_uniform_lift_support_2026-06-27`](../../docs/S3_ENDPOINT_FIBER_UNIFORM_LIFT_SUPPORT_2026-06-27.md) — score 0.000; audited 2026-07-09T11:30:22.012429+00:00
 - [`scalar_kg_rerun_note_2026-04-10`](../../docs/SCALAR_KG_RERUN_NOTE_2026-04-10.md) — score 0.000; audited 2026-05-01T21:02:06.946242+00:00

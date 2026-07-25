@@ -16,12 +16,12 @@ file per claim), summarized in
 
 | Metric | Value |
 |---|---:|
-| Retained positive rows | 101 |
+| Retained positive rows | 102 |
 | Retained bounded rows | 327 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 22 |
 
-## Retained positive rows (101)
+## Retained positive rows (102)
 
 Sorted by load-bearing graph score (descending).
 
@@ -111,6 +111,7 @@ Sorted by load-bearing graph score (descending).
 - [`connes_kreimer_birkhoff_factorization_external_narrow_theorem_note_2026-05-10`](../../docs/CONNES_KREIMER_BIRKHOFF_FACTORIZATION_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-10.md) — score 3.500; audited 2026-05-10T23:32:19.027006+00:00
 - [`gauge_vacuum_plaquette_spatial_environment_tensor_transfer_one_word_packet_narrow_theorem_note_2026-05-10`](../../docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER_ONE_WORD_PACKET_NARROW_THEOREM_NOTE_2026-05-10.md) — score 3.500; audited 2026-05-11T16:54:42.296723+00:00
 - [`asymmetry_persistence_mass_scaling_note`](../../docs/ASYMMETRY_PERSISTENCE_MASS_SCALING_NOTE.md) — score 2.585; audited 2026-05-17T21:05:43.083600+00:00
+- [`post_record_directed_certificate_examples_2026-06-06`](../../docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md) — score 2.585; audited 2026-07-25T08:52:20.045785+00:00
 - [`generation_dial_local_stability_grammar_2026-06-05`](../../docs/GENERATION_DIAL_LOCAL_STABILITY_GRAMMAR_2026-06-05.md) — score 2.085; audited 2026-07-11T23:26:40.409989+00:00
 - [`asymmetry_persistence_born_note`](../../docs/ASYMMETRY_PERSISTENCE_BORN_NOTE.md) — score 1.500; audited 2026-05-29T21:40:44.925162+00:00
 - [`axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06`](../../docs/AXIOM_FIRST_LATTICE_NOETHER_ABSTRACT_BILINEAR_CONTINUITY_NARROW_THEOREM_NOTE_2026-06-06.md) — score 1.500; audited 2026-06-07T00:03:35.443886+00:00

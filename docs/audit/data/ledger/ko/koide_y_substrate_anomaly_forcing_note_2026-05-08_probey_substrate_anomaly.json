@@ -1,42 +1,92 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T14:14:01.066202+00:00",
+  "audit_invocation_history": [
+    "f1f6b01da7b84cbf8ca838bcdd6f0535"
+  ],
+  "audit_invocation_id": "f1f6b01da7b84cbf8ca838bcdd6f0535",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true,
+      "runner_path": "scripts/cl3_koide_y_substrate_anomaly_2026_05_08_probeY_substrate_anomaly.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 1.5,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/cl3_koide_y_substrate_anomaly_2026_05_08_probeY_substrate_anomaly.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "1f13feb06053c29bdbeda6ba0fc8d768ace2b56c15c0cfe7707264608019ef91",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "1f13feb06053c29bdbeda6ba0fc8d768ace2b56c15c0cfe7707264608019ef91",
+    "runner_path": "scripts/cl3_koide_y_substrate_anomaly_2026_05_08_probeY_substrate_anomaly.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 1
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-d65b88a0",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The exact counterfamilies close algebraically once the standard perturbative anomaly formulas and SU(2) Witten parity theorem are assumed. The restricted packet supplies neither as a cited or accepted authority, so the required derivation from the approved premise surface is missing.",
   "claim_id": "koide_y_substrate_anomaly_forcing_note_2026-05-08_probey_substrate_anomaly",
-  "claim_scope": null,
+  "claim_scope": "Bounded anomaly-only no-selection result for color rank, generation count, left-handed matter partition, absolute hypercharge normalization, and the BAE operator-coefficient condition; no positive Standard Model carrier derivation was audited.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T14:14:01.066202+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 1,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 1.5,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "For every odd N_c >= 3, the displayed rational hypercharges make all four perturbative anomaly traces vanish while N_c+1 is even, yielding anomaly-free counterexamples with N_c not equal to 3.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls",
+    "derived_no_go_boundary",
+    "no_go_result"
+  ],
   "note_hash": "3d91af5ab18b26b440c6e284e87de71519240c961e2990e95119a789cc1761ed",
   "note_path": "docs/KOIDE_Y_SUBSTRATE_ANOMALY_FORCING_NOTE_2026-05-08_probeY_substrate_anomaly.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "missing_dependency_edge: Add a one-hop retained or accepted authority stating the perturbative anomaly-trace formulas and Witten parity theorem, and add a dated downstream-hygiene line to this note's own boundary recording that dependency repair.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -87,14 +137,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
+    "A": 31,
+    "B": 8,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 39
   },
   "runner_path": "scripts/cl3_koide_y_substrate_anomaly_2026_05_08_probeY_substrate_anomaly.py",
   "title": "Probe Y-Substrate-Anomaly: Bounded Anomaly-Forcing Boundary",
   "transitive_descendants": 1,
-  "verdict_rationale": null
+  "verdict_rationale": "The runner genuinely evaluates exact rational traces, parity, generation additivity, scaling, and limited vectorlike/category checks, but it assumes rather than derives the anomaly formulas and Witten theorem. Because section 2 supplies no authority and explicitly requires the load-bearing step to derive from the axiom surface, the bounded conclusion is conditional on uncited field-theory inputs. N1 and N2 support several distinct counterroutes and their separate scopes; N3 exposes the standard-input premise, while N4 supplies no prior residual witness. N5 lacks the required multiresolution execution evidence, N6 supplies no accepted candidate closing the missing authority, N7 remains conditional on the imported anomaly laws, and N8 supplies no applicable echo that repairs that gap."
 }

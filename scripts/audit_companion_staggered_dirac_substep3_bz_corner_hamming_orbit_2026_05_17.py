@@ -29,6 +29,7 @@ holds at exact symbolic precision.
 from __future__ import annotations
 
 from itertools import permutations, product
+import re
 import sys
 
 try:
@@ -44,23 +45,39 @@ PASS = 0
 FAIL = 0
 
 
-def check(label: str, ok: bool, detail: str = "") -> None:
+_OBSERVED_EXPECTED = re.compile(r"observed = (.*), expected = (.*)")
+
+
+def check(label: str, ok: bool, detail: str = "", fail_detail: str = "") -> None:
+    """Record one class-(A) check and print exactly one line of evidence.
+
+    `detail` is always shown; `fail_detail` carries diagnostics that merely echo
+    the value already asserted in `label`, so it is printed only when the check
+    fails.  The audit packet renders at most 6000 characters of runner stdout,
+    and this compaction keeps the complete per-check execution evidence for all
+    checks inside that budget without dropping any check or any distinct value.
+    """
     global PASS, FAIL
     if ok:
         PASS += 1
         tag = "PASS (A)"
+        shown = detail
     else:
         FAIL += 1
         tag = "FAIL (A)"
-    suffix = f"  ({detail})" if detail else ""
-    print(f"  [{tag}] {label}{suffix}")
+        shown = "; ".join(d for d in (detail, fail_detail) if d)
+    matched = _OBSERVED_EXPECTED.fullmatch(shown)
+    if matched and matched.group(1) == matched.group(2):
+        shown = f"observed = expected = {matched.group(1)}"
+    suffix = f" ({shown})" if shown else ""
+    print(f"[{tag}] {label}{suffix}")
 
 
 def section(title: str) -> None:
-    print()
-    print("-" * 88)
-    print(title)
-    print("-" * 88)
+    # Compact rendering: one short banner line per part.  The audit packet
+    # renders at most 6000 characters of runner stdout, so decorative rules
+    # are omitted to keep the complete per-check evidence inside the budget.
+    print(f"\n-- {title}")
 
 
 # -------------------------------------------------------------------------
@@ -108,13 +125,11 @@ def charge_conjugate(b: tuple[int, ...]) -> tuple[int, ...]:
 
 
 def main() -> int:
-    print("=" * 88)
     print("Audit companion (exact-symbolic) for")
     print("STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17")
     print("Goal: exhaustive combinatorial verification of S_3-orbit decomposition")
     print("      (Z_2)^3 / S_3 = (L_0, L_1, L_2, L_3) with sizes (1, 3, 3, 1)")
     print("      plus charge-conjugation involution structure.")
-    print("=" * 88)
 
     n = 3  # framework spatial substrate dimension
     Z2_3 = make_z2_n(n)
@@ -126,12 +141,12 @@ def main() -> int:
     check(
         "(H1) |(Z_2)^3| = 8 by exhaustive enumeration",
         len(Z2_3) == 8,
-        detail=f"|(Z_2)^3| = {len(Z2_3)}",
+        fail_detail=f"|(Z_2)^3| = {len(Z2_3)}",
     )
     check(
         "(H1) cardinality matches 2^n = 2^3 = 8",
         len(Z2_3) == 2**n,
-        detail=f"2^{n} = {2**n}",
+        fail_detail=f"2^{n} = {2**n}",
     )
     check(
         "(H1) cardinality matches sympy Integer arithmetic",
@@ -163,7 +178,7 @@ def main() -> int:
         check(
             f"(H2) |L_{k}| = binomial(3, {k}) = {expected_binom}",
             len(levels[k]) == expected_binom,
-            detail=f"|L_{k}| = {len(levels[k])}",
+            fail_detail=f"|L_{k}| = {len(levels[k])}",
         )
 
     # Exhibit the explicit level sets and verify weight signature
@@ -199,7 +214,7 @@ def main() -> int:
     check(
         "(H3) sum_{k=0}^3 binomial(3, k) = 8 by direct summation",
         binom_sum == 8,
-        detail=f"sum = {binom_sum}",
+        fail_detail=f"sum = {binom_sum}",
     )
     check(
         "(H3) sum_{k=0}^3 binomial(3, k) = (1 + 1)^3 = 2^3 = 8",
@@ -214,7 +229,7 @@ def main() -> int:
     check(
         "(H3) 1 + 3 + 3 + 1 = 8 (partition sum check)",
         partition_sum == 8,
-        detail=f"partition sum = {partition_sum}",
+        fail_detail=f"partition sum = {partition_sum}",
     )
 
     # =========================================================================
@@ -224,7 +239,7 @@ def main() -> int:
     check(
         "(H4) |S_3| = 6",
         n_S3 == 6,
-        detail=f"|S_3| = {n_S3}",
+        fail_detail=f"|S_3| = {n_S3}",
     )
     h4_check = True
     h4_fail_details: list[str] = []
@@ -321,7 +336,7 @@ def main() -> int:
     check(
         "(H6) number of S_3 orbits on (Z_2)^3 equals 4",
         len(orbits_seen) == 4,
-        detail=f"|orbits| = {len(orbits_seen)}",
+        fail_detail=f"|orbits| = {len(orbits_seen)}",
     )
 
     # Verify orbit-cardinality vector
@@ -345,7 +360,7 @@ def main() -> int:
     check(
         "(H6) orbits cover all of (Z_2)^3 (sum of sizes = 8)",
         total_orbit_elements == 8,
-        detail=f"sum of orbit sizes = {total_orbit_elements}",
+        fail_detail=f"sum of orbit sizes = {total_orbit_elements}",
     )
 
     # Orbits are pairwise disjoint
@@ -406,11 +421,7 @@ def main() -> int:
     check(
         "(H7) c commutes with S_3 on all (sigma, b) pairs (48 instances)",
         h7_comm_check,
-        detail=(
-            "6 sigmas * 8 b's = 48 instances"
-            if h7_comm_check
-            else f"fail at {h7_comm_fail[:1]}"
-        ),
+        fail_detail=f"fail at {h7_comm_fail[:1]}",
     )
 
     # Combined S_3 x Z_2 orbits: union of (sigma · b) and (sigma · c(b))
@@ -425,13 +436,13 @@ def main() -> int:
     check(
         "(H7) combined S_3 x Z_2 action has exactly 2 orbits",
         len(s3_z2_orbits) == 2,
-        detail=f"|combined orbits| = {len(s3_z2_orbits)}",
+        fail_detail=f"|combined orbits| = {len(s3_z2_orbits)}",
     )
     combined_orbit_sizes = sorted(len(o) for o in s3_z2_orbits)
     check(
         "(H7) combined orbit cardinality vector equals (2, 6)",
         combined_orbit_sizes == [2, 6],
-        detail=f"combined sizes = {combined_orbit_sizes}",
+        fail_detail=f"combined sizes = {combined_orbit_sizes}",
     )
 
     # Identify O_paired and O_balanced
@@ -451,7 +462,7 @@ def main() -> int:
     check(
         "(H7) combined orbits cover all of (Z_2)^3 (sum = 8)",
         combined_total == 8,
-        detail=f"sum = {combined_total}",
+        fail_detail=f"sum = {combined_total}",
     )
 
     # =========================================================================
@@ -466,7 +477,7 @@ def main() -> int:
     check(
         "(H5 counter) coordinate-value partition gives (4, 4), not (1, 3, 3, 1)",
         coord_split_sizes == (4, 4) and coord_split_sizes != (1, 3, 3, 1),
-        detail=f"coord-value split = {coord_split_sizes}",
+        fail_detail=f"coord-value split = {coord_split_sizes}",
     )
 
     # =========================================================================
@@ -489,7 +500,7 @@ def main() -> int:
     check(
         "(H6 counter) Z_2^3 coordinate-flip orbit of (0,0,0) is all 8 vectors (single orbit)",
         z2_flip_orbit == set(Z2_3),
-        detail=f"|coord-flip orbit| = {len(z2_flip_orbit)}",
+        fail_detail=f"|coord-flip orbit| = {len(z2_flip_orbit)}",
     )
     check(
         "(H6 counter) coord-flip orbit count (1) != S_3 orbit count (4)",
@@ -519,22 +530,16 @@ def main() -> int:
     # =========================================================================
     section("Summary")
     # =========================================================================
-    print("  Verified at exact-symbolic precision:")
-    print("    (H1) |(Z_2)^3| = 8 = 2^3 (cardinality)")
-    print("    (H2) Hamming-weight levels (L_0, L_1, L_2, L_3) of sizes (1, 3, 3, 1)")
-    print("    (H3) binomial sum identity sum_k binomial(3, k) = 2^3 = 8")
-    print("    (H4) S_3 preserves Hamming weight (48 (sigma, b) instances)")
-    print("    (H5) S_3 acts transitively on each L_k (orbits = L_k)")
-    print("    (H6) S_3-orbit decomposition = (L_0, L_1, L_2, L_3) = (1, 3, 3, 1)")
-    print("    (H7) charge-conjugation c involution, pairs L_0↔L_3, L_1↔L_2")
-    print("    (H7) S_3 x Z_2 combined orbits: (2, 6)")
-    print("    Counter-examples confirm S_3 is load-bearing (not arbitrary Aut subgroup)")
-    print("    General-n cross-check: n in {1..5} confirms binomial pattern")
+    print("Verified at exact-symbolic precision:")
+    print("(H1) |(Z_2)^3| = 8 = 2^3; (H2) levels (L_0..L_3) sizes (1, 3, 3, 1);")
+    print("(H3) sum_k binomial(3, k) = 2^3 = 8; (H4) S_3 preserves Hamming weight (48);")
+    print("(H5) S_3 transitive on each L_k (orbits = L_k);")
+    print("(H6) S_3-orbit decomposition = (L_0, L_1, L_2, L_3) = (1, 3, 3, 1);")
+    print("(H7) c involution pairs L_0<->L_3, L_1<->L_2; S_3 x Z_2 orbits (2, 6).")
+    print("Counter-examples confirm S_3 is load-bearing; general-n n in {1..5} checked.")
 
     print()
-    print("=" * 88)
     print(f"TOTAL: PASS={PASS}, FAIL={FAIL}")
-    print("=" * 88)
     return 0 if FAIL == 0 else 1
 
 

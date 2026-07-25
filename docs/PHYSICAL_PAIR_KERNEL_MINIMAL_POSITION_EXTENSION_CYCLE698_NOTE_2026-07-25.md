@@ -1,4 +1,4 @@
-# The minimal position-carrying extension of the readout clause is a pair kernel, and covariance leaves one constant — Cycle 698
+# The minimal relational position-carrying extension is a pair kernel, and conditional covariance leaves one constant — Cycle 698
 
 Date: 2026-07-25
 
@@ -11,7 +11,7 @@ adopted, and no reading of the axiom text is ratified.
 
 Runner: `scripts/physical_pair_kernel_minimal_position_extension_cycle698_2026_07_25.py`
 (6 PASS / 0 FAIL, exit 0; exact integer and `Fraction` arithmetic in every
-decisive row, with a negative control in each).
+decisive row).
 
 ## The question
 
@@ -38,28 +38,50 @@ answered:
 > the carrier, source action, or dimensionless readout normalization."
 > — audit verdict on `ac_reta_hclass_hunit_readout_derivation_obligation`
 
-What is the *smallest* structure that carries position, and what does the
-framework's own covariance already say about its shape? This note classifies
-that structure. It does not adopt it.
+What is the *smallest relational* structure that carries position, and what
+does proper-cubic covariance say about its shape under a named downstream-law
+class? This note classifies that conditional structure. It does not adopt it.
 
-## M1 — read strictly, the additivity clause forbids interaction
+## M1 — read strictly, additivity forbids irreducible multi-record readout terms
 
 Records occupy distinct sites, since a site never carries more than one record.
 If "pairwise-disjoint records" therefore covers every pair of distinct records,
 additivity applies to *every* splitting of *every* collection.
 
-On a four-record fixture the runner solves the resulting linear system exactly:
+For any finite collection `S`, the strict reading gives the disjoint
+decomposition `S = disjoint-union_{r in S} {r}`. Iterating the axiom's
+additivity sentence therefore gives
+
+```text
+I(S) = sum_{r in S} I({r}),
+```
+
+with the empty case supplied by `I(empty)=0`. Thus every Möbius/cluster
+coefficient supported on two or more records is zero. This uses the Record text
+alone; none of M2's conditions 1–4 enters.
+
+This arbitrary-finite singleton factorization is already proved on `main` in
+[Cycle 693](PHYSICAL_RECORD_READOUT_CARRIER_THREE_WAY_SPLIT_CYCLE693_NOTE_2026-07-25.md).
+M1 is its interaction-term corollary and scoped application, not a new
+additivity theorem.
+
+On a four-record fixture the runner reproduces the result by solving the
+resulting linear system exactly:
 the space of additive functionals is exactly 4-dimensional — one weight per
 record — and a concrete one-body functional lies in it. Extending the unknowns
 to the full 10-parameter two-body cluster space
 `F(S) = sum_i w_i + sum_{i<j} K_ij` and re-imposing additivity returns the same
-4-dimensional one-body space, with **every pair coefficient exactly zero**. The
-unconstrained space has all 10 dimensions, which is the negative control.
+4-dimensional one-body space, with **every pair coefficient exactly zero**. A
+concrete pair-only term has a nonzero additivity defect, which is the negative
+control.
 
-So no interaction energy is a scalar readout, at any order above one. This is
-the exact reason the audit verdicts can say Record additivity does not
-determine a source action: a source action is a two-body object, and the clause
-as read admits none.
+So, under this reading, the scalar Record readout itself contains no
+irreducible multi-record interaction term. This does **not** exclude
+interactions in a separate action or dynamics, exclude one-body readout values
+whose record contents carry environment-correlated information, or say that
+every possible source action is two-body. It explains only why Record
+additivity does not by itself supply an interacting pair term in the scalar
+readout.
 
 ### The reading is load-bearing, and this note rules on nothing
 
@@ -67,9 +89,10 @@ There is a second available reading in which "pairwise-disjoint" means
 *separated* rather than merely *distinct*. The two readings are not
 physically equivalent, and M3 below shows exactly where they part company: the
 adjacent-pair readout is additive for well-separated collections and fails only
-on contact. Under the strict reading the framework has no interactions; under
-the separated reading a nearest-neighbor interaction is compatible with the
-clause.
+on contact. Under the strict reading the scalar readout has no irreducible
+multi-record term; under the separated reading a nearest-neighbor pair term is
+compatible with the clause. Neither reading decides whether a separate
+interaction law or dynamics exists.
 
 This note takes no position on which reading is intended. It records that the
 choice has a physical consequence, that the consequence is exactly one contact
@@ -77,7 +100,8 @@ term, and that the runner exhibits it.
 
 ## M2 — covariance classifies the pair kernel, and range 1 leaves one constant
 
-The minimal position-carrying extension adds a two-body term
+The minimal relational extension that preserves translation covariance and
+introduces displacement dependence adds a two-body term
 `K(s(r) - s(r'), c(r), c(r'))`. Translation covariance makes it depend on the
 displacement alone. Proper cubic covariance about each site makes it a function
 on proper-octahedral orbits of the displacement.
@@ -90,8 +114,10 @@ needed to make the kernel two-sided; the runner checks that containment
 explicitly. Dropping the rotations leaves all six free, which is the negative
 control.
 
-The minimal covariant local two-body readout is therefore one constant times
-the number of adjacent record pairs.
+Within the named class below, the range-1 covariant local two-body readout is
+therefore one constant times the number of adjacent record pairs. This is the
+face-shell specialization of the already-landed general kernel
+classification, not a new orbit-count theorem.
 
 ### The hypotheses of M2 are supplied, not derived
 
@@ -129,10 +155,18 @@ For `A = {(0,0,0), (1,0,0)}` the runner computes exactly:
 | `A` with `B = {(5,0,0), (6,0,0)}` | 2 | 2 | yes |
 | `A` with `B = {(2,0,0), (3,0,0)}` | 3 | 2 | no, excess 1 |
 
-The two collections occupy disjoint sites in both rows; only adjacency differs,
-and the excess is exactly the number of cross bonds. This is the precise sense
-in which a two-body readout lives outside the Record class without being
-pathological.
+The two collections occupy disjoint sites in both rows; only adjacency differs.
+In general every adjacent pair in `A union B` is either internal to `A`,
+internal to `B`, or a cross bond, so
+
+```text
+pairs(A union B) - pairs(A) - pairs(B) = cross_bonds(A,B).
+```
+
+The runner compares the two sides directly and exhausts every ordered pair of
+disjoint subsets of a five-site line, including empty subsets. This is the
+precise sense in which a two-body readout lives outside the strict Record class
+without being pathological.
 
 ## M4 — the field is the marginal readout cost of a test record
 
@@ -169,7 +203,10 @@ That is the same two-dimensional family the landed
 gives at range 1, by an argument that never mentions a source. Two different
 questions — "what operator can a covariant local law use?" and "what field can
 a covariant local pair kernel induce?" — land on the same two constants. The agreement is a consistency check on both, not a new
-premise.
+premise or a new operator-classification theorem. The runner checks the matrix
+identity entrywise and, through a separate nonconstant probe-vector action,
+checks the adjacency and Laplacian actions without relying only on the shared
+matrix constructor.
 
 ## What this does not do
 
@@ -177,7 +214,8 @@ premise.
   Hamiltonian, a probability rule, or a formation rule. The pair kernel is
   exhibited as the classified *shape* of the missing object.
 - It does not rule on the reading of "pairwise-disjoint". It records that the
-  reading has a consequence and what that consequence is.
+  reading has a consequence for irreducible multi-record terms in the scalar
+  readout and what that consequence is.
 - It does not fix the one remaining constant, its sign, or its units, and it
   does not claim the physical range is nearest-neighbor. Range 1 is a named
   condition; at larger range the kernel has one constant per octahedral orbit.
@@ -201,19 +239,21 @@ The classification in M2 is computed at the displacement level and is
 box-independent; the `5^3` periodic box appears only in M5's operator identity,
 where the comparison is entrywise and exact. M1's fixture has four records,
 which is the smallest size carrying a nontrivial two-body space; the conclusion
-that additivity kills every pair coefficient is a linear-algebra fact at that
-size and is stated as such rather than as an asymptotic claim. Every decisive
+that additivity kills every irreducible multi-record term is carried by the
+arbitrary-finite singleton proof above, while the runner reproduces its
+two-body specialization on that fixture. Every decisive
 equality is exact integer or `Fraction` arithmetic; there is no floating-point
-comparison and no fit. Three-body and higher terms, content-dependent kernels,
-infinite collections, and any physical interpretation of the constant are
-outside scope.
+comparison and no fit. Explicit three-body and higher kernel classifications,
+content-dependent kernels, infinite collections, and any physical
+interpretation of the constant are outside scope.
 
 ## Dependency citations
 
 The runner imports nothing from the repository. The load-bearing framework
 authority is [Minimal axioms](MINIMAL_AXIOMS_2026-06-29.md).
 [Cycle 693](PHYSICAL_RECORD_READOUT_CARRIER_THREE_WAY_SPLIT_CYCLE693_NOTE_2026-07-25.md)
-is cited for the singleton-weight factorization it established, and
+is prior art for the arbitrary-finite singleton-weight factorization used in
+M1, and
 [Proper-cubic finite-support linear-kernel classification](PROPER_CUBIC_FINITE_SUPPORT_LINEAR_KERNEL_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-07-25.md)
 for the range-1 family that M5 compares against; neither is load-bearing for
 this runner's arithmetic.

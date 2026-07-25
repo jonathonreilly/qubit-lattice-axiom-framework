@@ -8,13 +8,13 @@ record locks one admissible element of the one-site possibility domain, whose
 algebraic presentation is `M_2(C)`.  This cycle carries that content through
 the same classification and counts what survives.
 
-The action is fixed by the axioms and needs no new input.  Proper cubic
-rotations act on displacements by the rotation matrix.  They act on the
-one-site possibility domain by conjugation with the corresponding spin
-element; on the Hermitian real form `span_R{I, sigma_1, sigma_2, sigma_3}`
-that action is exactly the identity on `I` and the same rotation matrix on the
-Pauli vector, so the sign ambiguity of the spin element cancels and every
-matrix below is an exact integer.
+The action used here is a supplied theorem condition, not an additional axiom
+consequence.  Proper cubic rotations act on displacements by the rotation
+matrix, and the one-site possibility domain is conditionally identified with
+spin conjugation.  On the supplied Hermitian real form
+`span_R{I, sigma_1, sigma_2, sigma_3}` that action is the identity on `I` and
+the same rotation matrix on the Pauli vector, so the sign ambiguity of the spin
+element cancels and every matrix below is an exact integer.
 
 Counted object: a real trilinear form
 
@@ -188,7 +188,8 @@ def main() -> int:
         )
 
     hom_ok = True
-    for a in proper[:8]:
+    group_closed = all(matmul3(a, b) in proper for a in proper for b in proper)
+    for a in proper:
         for b in proper:
             if content_matrix(matmul3(a, b)) != matmul_int(
                 content_matrix(a), content_matrix(b)
@@ -205,13 +206,14 @@ def main() -> int:
         for R in proper
     )
     check(
-        "R1 conjugation by the spin element acts on the Hermitian real form as "
-        "trivial-plus-vector, is a homomorphism on the proper cubic group, "
-        "leaves the identity component fixed, and has character 1 + tr(R)",
-        hom_ok and identity_fixed and trace_ok and len(proper) == 24,
+        "R1 the supplied trivial-plus-vector content action is a homomorphism "
+        "on the proper cubic group, leaves the identity component fixed, and "
+        "has character 1 + tr(R)",
+        hom_ok and group_closed and identity_fixed and trace_ok and len(proper) == 24,
         {
             "group_order": len(proper),
-            "homomorphism_on_sampled_pairs": hom_ok,
+            "group_closed_on_all_pairs": group_closed,
+            "homomorphism_on_all_24x24_pairs": hom_ok,
             "identity_component_invariant": identity_fixed,
             "character_is_1_plus_trace": trace_ok,
         },
@@ -226,10 +228,10 @@ def main() -> int:
     def cindex(vi: int, a: int, b: int) -> int:
         return (vi * NC + a) * NC + b
 
-    def constraint_rows(with_exchange: bool) -> list[list[F]]:
+    def constraint_rows(group, action, with_exchange: bool) -> list[list[F]]:
         rows: list[list[F]] = []
-        for R in proper:
-            cm = content_matrix(R)
+        for R in group:
+            cm = action(R)
             for vi, v in enumerate(FACES):
                 wj = FIDX[apply(R, v)]
                 for a in range(NC):
@@ -258,8 +260,9 @@ def main() -> int:
                             rows.append(row)
         return rows
 
-    dim_cov = nullity(constraint_rows(False), dim)
-    dim_cov_exch = nullity(constraint_rows(True), dim)
+    proper_rows = constraint_rows(proper, content_matrix, False)
+    dim_cov = nullity(proper_rows, dim)
+    dim_cov_exch = nullity(constraint_rows(proper, content_matrix, True), dim)
 
     # ------------------------------------------------------------------
     # R3  independent character count must agree
@@ -290,7 +293,9 @@ def main() -> int:
     # ------------------------------------------------------------------
     # R4  channel census: density-density, density-spin, spin-spin
     # ------------------------------------------------------------------
-    def channel_dim(pairs_ab: list[tuple[int, int]], with_exchange: bool) -> int:
+    def channel_dim(
+        pairs_ab: list[tuple[int, int]], group, action, with_exchange: bool
+    ) -> int:
         """Invariant dimension on the span of the given content-index pairs.
 
         The exchange condition maps (a,b) to (b,a), so it is only imposed when
@@ -302,8 +307,8 @@ def main() -> int:
         sidx = {t: i for i, t in enumerate(sub)}
         n = len(sub)
         rows: list[list[F]] = []
-        for R in proper:
-            cm = content_matrix(R)
+        for R in group:
+            cm = action(R)
             for vi, v in enumerate(FACES):
                 wj = FIDX[apply(R, v)]
                 for a, b in pairs_ab:
@@ -333,11 +338,11 @@ def main() -> int:
     MIXED = DV + VD
     VV = [(i, j) for i in (1, 2, 3) for j in (1, 2, 3)]
 
-    dd = channel_dim(DD, True)
-    dv = channel_dim(DV, False)
-    vd = channel_dim(VD, False)
-    mixed_exch = channel_dim(MIXED, True)
-    vv = channel_dim(VV, True)
+    dd = channel_dim(DD, proper, content_matrix, True)
+    dv = channel_dim(DV, proper, content_matrix, False)
+    vd = channel_dim(VD, proper, content_matrix, False)
+    mixed_exch = channel_dim(MIXED, proper, content_matrix, True)
+    vv = channel_dim(VV, proper, content_matrix, True)
     census = {
         "density_density": dd,
         "density_spin": dv,
@@ -351,7 +356,11 @@ def main() -> int:
         "R4 the channel census splits the covariant kernel, and its "
         "density-density channel reproduces cycle 698's single content-blind "
         "constant",
-        reproduces_698 and dv == vd and all(v >= 0 for v in census.values()),
+        reproduces_698
+        and dv == 1
+        and vd == 1
+        and mixed_exch == 1
+        and vv == 3,
         census,
     )
     summary["channel_census"] = census
@@ -359,8 +368,8 @@ def main() -> int:
     # ------------------------------------------------------------------
     # R5  the census sums correctly and the exchange condition is not vacuous
     # ------------------------------------------------------------------
-    dd_noex = channel_dim(DD, False)
-    vv_noex = channel_dim(VV, False)
+    dd_noex = channel_dim(DD, proper, content_matrix, False)
+    vv_noex = channel_dim(VV, proper, content_matrix, False)
     parts_sum = dd_noex + dv + vd + vv_noex
     # exchange acts WITHIN the density-density and spin-spin channels but maps
     # density-spin onto spin-density, so its whole effect is to identify the
@@ -390,18 +399,23 @@ def main() -> int:
     )
 
     # ------------------------------------------------------------------
-    # R6  negative control: dropping the rotations leaves everything free
+    # R6  negative control: a single-coefficient seed violates covariance
     # ------------------------------------------------------------------
-    free_dim = nullity([], dim)
+    single_coefficient_seed = cindex(FIDX[(1, 0, 0)], 0, 0)
+    seed_violates_covariance = any(
+        row[single_coefficient_seed] != 0 for row in proper_rows
+    )
     check(
-        "R6 without the proper cubic rotations the kernel space is entirely "
-        "free at 96 parameters, so the covariance clause is doing all of the "
-        "reduction",
-        free_dim == dim and dim_cov < dim,
+        "R6 a single-coefficient seed violates proper-cubic covariance, and "
+        "the covariance equations reduce the 96-parameter coefficient space",
+        seed_violates_covariance and dim_cov < dim,
         {
-            "unconstrained": free_dim,
+            "unconstrained_parameter_count_by_definition": dim,
             "covariant": dim_cov,
             "reduction_factor": f"{dim} -> {dim_cov}",
+            "single_coefficient_negative_control_violates_covariance": (
+                seed_violates_covariance
+            ),
         },
     )
 
@@ -444,7 +458,19 @@ def main() -> int:
                             return False
         return True
 
+    def is_exchange_symmetric(fn) -> bool:
+        for vi, v in enumerate(FACES):
+            mj = FIDX[tuple(-c for c in v)]
+            for a in range(3):
+                for b in range(3):
+                    if fn(mj, b, a) != fn(vi, a, b):
+                        return False
+        return True
+
     invariance = {name: is_invariant(fn, proper) for name, fn in forms.items()}
+    exchange_symmetry = {
+        name: is_exchange_symmetric(fn) for name, fn in forms.items()
+    }
     vectors = [
         [F(fn(vi, a, b)) for vi in range(NV) for a in range(3) for b in range(3)]
         for fn in forms.values()
@@ -454,11 +480,15 @@ def main() -> int:
     check(
         "R7 the three named forms -- isotropic, bond-axis, and chiral -- are "
         "each exactly invariant under the proper cubic group and are linearly "
-        "independent, so they are a basis for the 3-dimensional spin-spin "
-        "channel",
-        all(invariance.values()) and independent and vv == 3,
+        "independent and record-exchange symmetric, so they are a basis for the "
+        "3-dimensional spin-spin channel",
+        all(invariance.values())
+        and all(exchange_symmetry.values())
+        and independent
+        and vv == 3,
         {
             "invariance": invariance,
+            "record_exchange_symmetry": exchange_symmetry,
             "rank_of_the_three_forms": len(piv),
             "spin_spin_channel_dimension": vv,
         },
@@ -473,7 +503,7 @@ def main() -> int:
     # the group requires CHOOSING how they act; the standard choice treats the
     # Pauli vector as axial.  This block is a labelled counterfactual, not a
     # framework claim, and it isolates exactly which coupling the word
-    # "proper" is responsible for.
+    # "proper" is responsible for under that chosen extension.
     full_cubic = signed_permutations()
 
     def content_matrix_axial(R) -> list[list[int]]:
@@ -510,22 +540,55 @@ def main() -> int:
     others_survive = (
         axial_inv["isotropic S.S'"] and axial_inv["bond-axis (S.v)(S'.v)"]
     )
+    dim_full_axial = nullity(
+        constraint_rows(full_cubic, content_matrix_axial, False), dim
+    )
+    dim_full_axial_exch = nullity(
+        constraint_rows(full_cubic, content_matrix_axial, True), dim
+    )
+    dd_full_axial = channel_dim(DD, full_cubic, content_matrix_axial, True)
+    mixed_full_axial = channel_dim(
+        MIXED, full_cubic, content_matrix_axial, True
+    )
+    vv_full_axial = channel_dim(VV, full_cubic, content_matrix_axial, True)
+    couplings_lost = dim_cov_exch - dim_full_axial_exch
     check(
         "R8 counterfactual: extending to the full cubic group with an axial "
-        "Pauli vector kills exactly the chiral coupling and leaves the other "
-        "two, so the Lattice axiom's restriction to PROPER rotations is "
-        "load-bearing for exactly one of the five couplings",
-        agrees_on_proper and chiral_dies and others_survive,
+        "Pauli vector takes the exchange-symmetric count from 5 to 3: it kills "
+        "the mixed density-spin coupling and the chiral spin-spin coupling, "
+        "while density-density and the other two spin-spin forms survive",
+        agrees_on_proper
+        and len(full_cubic) == 48
+        and chiral_dies
+        and others_survive
+        and dim_full_axial == 3
+        and dim_full_axial_exch == 3
+        and dd_full_axial == 1
+        and mixed_full_axial == 0
+        and vv_full_axial == 2
+        and couplings_lost == 2,
         {
             "axial_extension_agrees_on_proper_subgroup": agrees_on_proper,
             "invariance_under_full_cubic_group": axial_inv,
-            "couplings_lost": 1,
+            "full_cubic_group_order": len(full_cubic),
+            "full_axial_dimension_without_exchange": dim_full_axial,
+            "full_axial_dimension_with_exchange": dim_full_axial_exch,
+            "full_axial_channel_census": {
+                "density_density": dd_full_axial,
+                "mixed_after_exchange": mixed_full_axial,
+                "spin_spin": vv_full_axial,
+            },
+            "couplings_lost": couplings_lost,
         },
     )
-    summary["proper_rotation_clause_buys"] = (
-        "exactly one coupling, the chiral v.(S x S') term, under the labelled "
-        "axial counterfactual"
-    )
+    summary["labelled_axial_counterfactual"] = {
+        "proper_exchange_symmetric_dimension": dim_cov_exch,
+        "full_cubic_exchange_symmetric_dimension": dim_full_axial_exch,
+        "lost_channels": [
+            "mixed density-spin",
+            "chiral v.(S x S')",
+        ],
+    }
 
     summary["conclusion"] = (
         f"Carrying qubit content through the cycle-698 classification, the "
@@ -533,8 +596,9 @@ def main() -> int:
         f"parameters out of 96, and {dim_cov_exch} once record exchange is "
         f"imposed. The content-blind density-density channel contributes "
         f"exactly one, recovering cycle 698. The remainder is the exact "
-        f"budget of spin-carrying couplings the axioms' covariance permits at "
-        f"this order and range; none of them is selected here."
+        f"budget of spin-carrying couplings permitted by the supplied "
+        f"trivial-plus-vector proper-cubic action at this order and range; "
+        f"none of them is selected here."
     )
     summary["firewalls"] = {
         "source_action_adopted": False,

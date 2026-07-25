@@ -8,6 +8,30 @@ step now requires. Cycles 697 and 698 were swept before their PRs were opened
 but their command records were reconstructed here after #5611 landed; cycle 699
 was swept in the landed format from the start.
 
+## Review-loop theorem-statement refresh — 2026-07-25
+
+Review-loop repeated the statement-level search on current `origin/main` at
+`fbd9dd622e03692a3d518fb69b0d0e910e9385b5`, rather than relying on the lane
+names or the earlier campaign snapshot.
+
+- The arbitrary-finite theorem
+  `I(S) = sum_{r in S} I({r})` is already proved more generally in
+  `PHYSICAL_RECORD_READOUT_CARRIER_THREE_WAY_SPLIT_CYCLE693_NOTE_2026-07-25.md`.
+  Cycle 698 M1 is its irreducible-multi-record-term corollary, not new theorem
+  content.
+- The proper-cubic orbit-indicator classification and the range-1
+  `span{I, Delta}` identity are already proved in
+  `PROPER_CUBIC_FINITE_SUPPORT_LINEAR_KERNEL_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-07-25.md`.
+  Cycle 698 M2/M5 are pair-shell applications and consistency checks. The
+  marginal test-record interpretation and exact cross-bond defect are the
+  remaining reusable delta.
+- Searches for the Cycle 699 statement — a proper-cubic invariant trilinear
+  pair kernel on the six face displacements with Hermitian
+  `1 plus vector` content, the `96 -> 6 -> 5` dimension count, and the
+  density/mixed/spin-spin `1 + 1 + 3` census — found no theorem on current
+  `main`. The adjacent admissibility-rule coloring theorem below remains a
+  different object and improper-action convention.
+
 ## Cycle 699 — content pair-kernel channel census
 
 **Searched commit:** `ab6e6bd8d96fb5b7f1fe6712a7bb426c8df1c1e1`

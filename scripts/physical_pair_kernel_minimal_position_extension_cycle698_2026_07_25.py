@@ -3,18 +3,22 @@
 clause is a two-body kernel, and lattice covariance classifies it.
 
 Cycle 693 showed that content determinacy plus finite additivity force every
-scalar readout into the singleton-weight form.  Cycle 697 showed that such a
-readout is position-blind and never dimensionless.  This cycle asks the
-positive question: what is the smallest structure that carries position, and
-what does the framework's own covariance say about it?
+scalar readout into the singleton-weight form.  An earlier rejected block
+showed that such a readout is position-blind and cannot be both nonzero and
+duplication-invariant; it did not exclude dimensionless extensive readouts such
+as the record count.  This cycle asks the positive question: what is the
+smallest relational structure that carries position, and what does proper-cubic
+covariance say about it under the named downstream-law conditions?
 
-M1  Read strictly, the additivity clause forbids interaction.  Records occupy
-    distinct sites, so every finite record collection is pairwise disjoint and
-    additivity applies to every splitting.  The space of additive functionals
-    on a four-site fixture is exactly the four-dimensional one-body space, and
-    intersecting the two-body cluster space with additivity returns the same
-    one-body space: every pair coefficient is killed.  No interaction energy is
-    a scalar readout at any order above one.
+M1  Read strictly, the additivity clause forbids irreducible multi-record terms
+    in the scalar readout.  Records occupy distinct sites, so every finite
+    record collection is pairwise disjoint and additivity applies to every
+    splitting.  The space of additive functionals on a four-site fixture is
+    exactly the four-dimensional one-body space, and intersecting the two-body
+    cluster space with additivity returns the same one-body space: every pair
+    coefficient is killed.  This does not forbid interactions in a separate
+    action or dynamics, or information about an environment encoded in a
+    singleton record's content.
 
 M2  The minimal extension is a two-body kernel `K(s(r) - s(r'), c(r), c(r'))`.
     Translation covariance makes it depend on the displacement only; proper
@@ -251,23 +255,33 @@ def main() -> int:
         all(v[nsites + pi] == 0 for pi in range(len(pairs)))
         for v in additive_cluster
     )
-    # negative control: without additivity the space is the full 10 parameters
-    free_cluster = nullspace([], npar)
+    # negative control: a concrete pair-only term violates additivity
+    pair_probe = [F(0)] * npar
+    pair_probe[nsites] = F(1)
+    pair_probe_defect = (
+        cluster_value(pair_probe, frozenset({0, 1}))
+        - cluster_value(pair_probe, frozenset({0}))
+        - cluster_value(pair_probe, frozenset({1}))
+    )
     check(
         "M1b intersecting the 10-parameter two-body cluster space with strict "
         "additivity returns the 4-dimensional one-body space with every pair "
-        "coefficient zero, while the unconstrained space has all 10",
+        "coefficient zero, while a concrete pair-only term has a nonzero "
+        "additivity defect",
         len(additive_cluster) == nsites
         and pair_block_zero
-        and len(free_cluster) == npar,
+        and pair_probe_defect != 0,
         {
             "cluster_parameters": npar,
             "additive_intersection_dimension": len(additive_cluster),
             "all_pair_coefficients_zero": pair_block_zero,
-            "unconstrained_dimension": len(free_cluster),
+            "pair_only_probe_defect": pair_probe_defect,
         },
     )
-    summary["strict_additivity_forbids_interaction"] = True
+    summary["strict_additivity_boundary"] = (
+        "no irreducible multi-record term occurs in the scalar readout under "
+        "the strict reading"
+    )
 
     # ------------------------------------------------------------------
     # M2  covariance classifies the two-body kernel; range 1 gives ONE constant
@@ -287,18 +301,21 @@ def main() -> int:
             rows3.append(row)
     kernel_basis = nullspace(rows3, len(shell))
     inversion_included = any(apply(g, (1, 0, 0)) == (-1, 0, 0) for g in proper)
-    # negative control: translations alone leave all six free
-    free_shell = nullspace([], len(shell))
+    single_face = [F(1) if v == (1, 0, 0) else F(0) for v in shell]
+    single_face_violates = any(
+        sum(row[i] * single_face[i] for i in range(len(shell))) != 0
+        for row in rows3
+    )
     check(
         "M2 the proper cubic rotations act transitively on the six face "
         "displacements, so the nearest-neighbor two-body kernel is exactly one "
         "constant; the displacement reversal is already inside the proper "
-        "group, and without rotations all six stay free",
-        len(kernel_basis) == 1 and inversion_included and len(free_shell) == 6,
+        "group, while a single-face kernel violates the covariance equations",
+        len(kernel_basis) == 1 and inversion_included and single_face_violates,
         {
             "range_1_pair_kernel_dimension": len(kernel_basis),
             "reversal_in_proper_group": inversion_included,
-            "dimension_without_rotations": len(free_shell),
+            "single_face_negative_control_violates_covariance": single_face_violates,
         },
     )
     summary["range_1_pair_kernel_parameters"] = len(kernel_basis)
@@ -312,19 +329,40 @@ def main() -> int:
     far_additive = pair_count(A + B_far) == pair_count(A) + pair_count(B_far)
     touch_fails = pair_count(A + B_touch) != pair_count(A) + pair_count(B_touch)
     contact_excess = pair_count(A + B_touch) - pair_count(A) - pair_count(B_touch)
+    cross_bonds = sum(1 for a in A for b in B_touch if adjacent(a, b))
     disjoint_sites = len(set(A + B_touch)) == len(A) + len(B_touch)
+    fixture_sites = [(i, 0, 0) for i in range(5)]
+    fixture_subsets = [
+        list(s)
+        for k in range(len(fixture_sites) + 1)
+        for s in itertools.combinations(fixture_sites, k)
+    ]
+    exhaustive_cross_bond_identity = all(
+        pair_count(a + b) - pair_count(a) - pair_count(b)
+        == sum(1 for x in a for y in b if adjacent(x, y))
+        for a in fixture_subsets
+        for b in fixture_subsets
+        if set(a).isdisjoint(b)
+    )
     check(
         "M3 the adjacent-pair readout is additive for well-separated "
         "collections and fails exactly on contact, by exactly the number of "
         "cross bonds, even though the two collections occupy disjoint sites",
-        far_additive and touch_fails and contact_excess == 1 and disjoint_sites,
+        far_additive
+        and touch_fails
+        and contact_excess == cross_bonds
+        and cross_bonds > 0
+        and disjoint_sites
+        and exhaustive_cross_bond_identity,
         {
             "pairs_A": pair_count(A),
             "pairs_B_far": pair_count(B_far),
             "pairs_A_plus_B_far": pair_count(A + B_far),
             "pairs_A_plus_B_touching": pair_count(A + B_touch),
             "contact_excess": contact_excess,
+            "independently_counted_cross_bonds": cross_bonds,
             "sites_disjoint": disjoint_sites,
+            "exhaustive_disjoint_pairs_on_five_site_line": exhaustive_cross_bond_identity,
         },
     )
 
@@ -340,6 +378,7 @@ def main() -> int:
         return sum(1 for r in cfg if adjacent(x, r))
 
     empty_sites = [(2, 0, 0), (0, 0, 1), (9, 9, 9)]
+    sites_are_empty = all(x not in config for x in empty_sites)
     marginal_matches = all(
         marginal(x, config) == neighbours_occupied(x, config) for x in empty_sites
     )
@@ -354,10 +393,11 @@ def main() -> int:
         "M4 the marginal readout cost of a test record equals the number of "
         "occupied neighbors, so the pair kernel supplies a site-anchored value; "
         "it varies across empty sites and across occupied records",
-        marginal_matches and field_varies and occupied_varies,
+        sites_are_empty and marginal_matches and field_varies and occupied_varies,
         {
             "field_at_empty_sites": field_values,
             "field_at_occupied_records": occ_field,
+            "test_sites_unoccupied": sites_are_empty,
             "marginal_equals_neighbour_count": marginal_matches,
         },
     )
@@ -410,15 +450,51 @@ def main() -> int:
     basis_cols = [flat(ident), flat(lap)]
     aniso_excluded = not in_span(flat(aniso), basis_cols)
     pair_field_in_span = in_span(flat(pair_field), basis_cols)
+    probe = [F((17 * i + 5) % 23 - 11) for i in range(n)]
+
+    def matvec(mat: list[list[F]], vec: list[F]) -> list[F]:
+        return [sum((mat[i][j] * vec[j] for j in range(n)), F(0)) for i in range(n)]
+
+    direct_pair_action = [
+        sum(
+            (
+                probe[idx[tuple((s[k] + v[k]) % size for k in range(3))]]
+                for v in FACES
+            ),
+            F(0),
+        )
+        for s in sites
+    ]
+    direct_lap_action = [
+        sum(
+            (
+                probe[idx[tuple((s[k] + v[k]) % size for k in range(3))]]
+                - probe[idx[s]]
+                for v in FACES
+            ),
+            F(0),
+        )
+        for s in sites
+    ]
+    independent_action_match = (
+        matvec(pair_field, probe) == direct_pair_action
+        and matvec(ident, probe) == probe
+        and matvec(lap, probe) == direct_lap_action
+        and all(
+            direct_pair_action[i] == 6 * probe[i] + direct_lap_action[i]
+            for i in range(n)
+        )
+    )
     check(
         "M5 the field operator induced by the range-1 pair kernel equals "
         "6*I + Laplacian exactly, so it lies inside the two-dimensional family "
         "the law-side classification gives, while a single-axis pair kernel "
         "does not",
-        matches and pair_field_in_span and aniso_excluded,
+        matches and independent_action_match and pair_field_in_span and aniso_excluded,
         {
             "induced_operator": "6*I + Laplacian",
             "exact_entrywise_match": matches,
+            "independent_nonconstant_probe_action_match": independent_action_match,
             "pair_field_in_span_by_exact_solve": pair_field_in_span,
             "anisotropic_kernel_excluded_by_exact_solve": aniso_excluded,
             "box": f"{size}^3 periodic",
@@ -427,14 +503,16 @@ def main() -> int:
     summary["law_and_source_routes_agree"] = True
 
     summary["conclusion"] = (
-        "Strict Record additivity forbids every interaction term, so no source "
-        "action is a scalar readout. The minimal position-carrying extension is "
-        "a two-body kernel; lattice covariance reduces it at nearest-neighbor "
-        "range to a single constant, the adjacent-pair count. That functional "
-        "is additive only for separated collections, it supplies a site-anchored "
-        "value as the marginal cost of a test record, and the field operator it "
-        "induces lies in the same two-dimensional family the law-side "
-        "classification gives."
+        "Under the strict reading, Record additivity excludes irreducible "
+        "multi-record terms from the scalar readout; it does not exclude a "
+        "separate interaction law or dynamics. The minimal relational "
+        "position-carrying extension is a two-body kernel; under the named "
+        "downstream-law conditions, proper-cubic covariance reduces it at "
+        "nearest-neighbor range to a single constant, the adjacent-pair count. "
+        "That functional is additive only for separated collections, it "
+        "supplies a site-anchored value as the marginal cost of a test record, "
+        "and the field operator it induces lies in the same two-dimensional "
+        "family as the landed law-side classification."
     )
     summary["firewalls"] = {
         "source_action_adopted": False,
@@ -465,7 +543,7 @@ def main() -> int:
     if FAIL:
         print("RESULT PAIR_KERNEL_MINIMAL_POSITION_EXTENSION_FAILED")
         return 1
-    print("RESULT PAIR_KERNEL_IS_THE_MINIMAL_POSITION_CARRYING_EXTENSION")
+    print("RESULT PAIR_KERNEL_RELATIONAL_EXTENSION_CLASSIFICATION_COMPLETE")
     return 0
 
 

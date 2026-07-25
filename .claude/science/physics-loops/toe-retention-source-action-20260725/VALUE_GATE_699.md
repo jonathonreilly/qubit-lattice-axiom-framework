@@ -41,8 +41,9 @@ shape; the note defers to it on the framework's principled improper action.
 New content: the 96 -> 6 -> 5 count with two independent derivations
 (exact nullspace over `Q` and a Burnside character average), the channel census
 (1 density-density, 1 mixed after exchange, 3 spin-spin), the exhibited
-spin-spin basis, and the isolation of the chiral coupling as what the axiom's
-word "proper" is responsible for.
+spin-spin basis, and a labelled axial full-cubic counterfactual. The repaired
+counterfactual takes 5 -> 3: it removes both the mixed density-spin coupling
+and the chiral spin-spin coupling. It is not framework content.
 
 ## V3 — could the audit lane do it from retained primitives plus standard math?
 
@@ -57,9 +58,9 @@ presented as axiom content.
 
 Yes. Two independent computations of the same dimension agreeing is not a
 restatement, and the exhibited basis is checked against all 24 group elements
-at all 54 coefficient positions rather than on sampled inputs. The
-proper-versus-improper result is a falsifiable structural finding: it predicts
-exactly one coupling is lost, and the runner checks precisely that.
+at all 54 coefficient positions rather than on sampled inputs. The labelled
+axial counterfactual is also checked on the full 96-coordinate system and by
+channel: it predicts exactly two couplings are lost, mixed and chiral.
 
 ## V5 — one-step variant?
 

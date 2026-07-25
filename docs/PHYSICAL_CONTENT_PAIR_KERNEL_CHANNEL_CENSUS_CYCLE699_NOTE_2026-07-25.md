@@ -1,4 +1,4 @@
-# The framework's covariance permits exactly five nearest-neighbour two-body couplings, and one of them exists only because the rotations are proper — Cycle 699
+# Under four supplied conditions, proper-cubic covariance permits exactly five nearest-neighbour two-body couplings — Cycle 699
 
 Date: 2026-07-25
 
@@ -24,18 +24,20 @@ action" — into a number.
 
 This cycle counts. It selects nothing.
 
-## The group action is supplied, not chosen
+## The content action is a supplied theorem condition, not framework content
 
-Proper cubic rotations act on displacements by the rotation matrix. They act on
-the one-site possibility domain by conjugation with the corresponding spin
-element. On the Hermitian real form `C = span_R{I, sigma_1, sigma_2, sigma_3}`
-that action is exactly the identity on `I` and the same rotation matrix on the
-Pauli vector, so the sign ambiguity of the spin element cancels and every
-matrix in the computation is an exact integer. The runner verifies that this
-assignment is a homomorphism on the proper cubic group, fixes the identity
-component, and has character `1 + tr(R)`.
+Proper cubic rotations act on displacements by the rotation matrix. This
+bounded theorem additionally conditions on their action on the one-site
+possibility domain being conjugation with the corresponding spin element. On
+the Hermitian real form `C = span_R{I, sigma_1, sigma_2, sigma_3}` that supplied
+action is exactly the identity on `I` and the same rotation matrix on the Pauli
+vector, so the sign ambiguity of the spin element cancels and every matrix in
+the computation is an exact integer. The runner verifies on all `24 x 24`
+group-element pairs that the resulting trivial-plus-vector assignment is a
+homomorphism, fixes the identity component, and has character `1 + tr(R)`. It
+does not derive the spin-conjugation identification from the axioms.
 
-### Three named conditions, stated rather than claimed
+### Four named conditions, stated rather than claimed
 
 The sentence above should not be read as "nothing was assumed". Three
 identifications are load-bearing and none is written in the axiom text:
@@ -89,12 +91,16 @@ records imposes.
 | after joint cubic covariance | **6** |
 | after record exchange as well | **5** |
 
-The 6 is computed twice, independently: once as the exact nullspace of the
+The 6 is computed twice, independently after the same group and supplied
+representation have been fixed: once as the exact nullspace of the
 covariance system over `Q`, and once as the Burnside character average
 `(1/24) sum_R fix_6(R) (1 + tr R)^2`. A linear-algebra count and a
-character-theoretic count agree; neither is derived from the other. Without the
-rotations all 96 stay free, so the covariance clause is doing the entire
-reduction.
+character-theoretic count agree; neither implementation consumes or encodes
+the other's result. They intentionally share the theorem's group/action input,
+so agreement does not independently validate that supplied physical
+identification. A single-coefficient negative control violates the covariance
+equations; the unconstrained coefficient space has 96 coordinates by
+definition.
 
 ## The census
 
@@ -124,33 +130,43 @@ chiral       v . (S x S')
 ```
 
 These are the familiar isotropic, pseudo-dipolar, and antisymmetric forms of a
-nearest-neighbour bond. That the framework's own covariance produces exactly
-this triple, and no fourth, is the content of the count.
+nearest-neighbour bond. That proper-cubic covariance under the four supplied
+conditions produces exactly this triple, and no fourth, is the content of the
+count.
 
-## What the word "proper" is doing
+## Labelled axial full-cubic counterfactual
 
 The Lattice axiom says *proper* cubic rotations. The chiral form
 `v . (S x S')` is invariant under all 24 of them precisely because
 `det R = +1`.
 
 As a labelled counterfactual — not a framework claim — the runner extends the
-group to all 48 cubic elements with the Pauli vector treated as axial, the
+group to all 48 cubic elements with the Pauli vector treated as axial, a
 standard choice, and verifies that the extension agrees with the supplied
-action on the proper subgroup. Under that extension the chiral coupling is no
-longer invariant while the other two survive.
+action on the proper subgroup. Under that extension the chiral spin-spin
+coupling is no longer invariant while the other two spin-spin forms survive.
+The mixed density-spin form is also lost: the displacement is polar while the
+Pauli vector is axial, so their scalar product is odd under an improper
+element. The exact full-system and channel solves give
 
-So the axiom's restriction to proper rotations is load-bearing for exactly one
-of the five couplings. Improper elements are not implemented by conjugation
-with a spin element at all, so extending the group requires choosing how they
-act; the counterfactual is offered to isolate the dependence, not to argue for
-either group.
+| labelled action | density-density | mixed after exchange | spin-spin | total |
+|---|---:|---:|---:|---:|
+| proper cubic | 1 | 1 | 3 | 5 |
+| full cubic, axial Pauli vector | 1 | 0 | 2 | 3 |
+
+Thus this particular axial extension removes two of the five proper-cubic
+couplings, the mixed and chiral channels. Improper elements are not implemented
+by conjugation with a spin element at all, so extending the group requires
+choosing how they act; the counterfactual reports the consequence of that
+choice and does not attribute it to framework content or argue for either
+group.
 
 **The framework's own improper-action question is already owned elsewhere, and
 this note defers to it.**
 [Admissibility-rule covariance extension classified](ADMISSIBILITY_RULE_COVARIANCE_EXTENSION_CLASSIFICATION_OPENNESS_ACHIRAL_ORIENTED_FRAME_MINIMAL_CHIRAL_CHANNEL_BOUNDED_THEOREM_NOTE_2026-07-03.md)
 asks the same proper-versus-full-cubic question on the same six directions, for
 the *admissibility rule* rather than for a two-body readout kernel, and it
-takes the improper action on rule values to be complex-antilinear, re-earned
+   takes the improper action on rule values to be complex-antilinear, re-earned
 from the `Cl(3,0)` presentation. That is a more framework-motivated choice than
 the axial convention used above. This note does not compete with it: the
 objects differ (rule colorings by a `k`-letter condition alphabet there, a
@@ -192,6 +208,8 @@ property of the content action is verified rather than assumed. The three
 exhibited forms are checked for invariance against all 24 group elements and
 all 54 coefficient positions, not on sampled inputs. The axial extension in the
 counterfactual is a named choice and is flagged as such in the runner and here.
+Its full `96`-coordinate solve includes all channels rather than inferring a
+five-coupling conclusion from the spin-spin basis alone.
 
 ## Dependency citations
 

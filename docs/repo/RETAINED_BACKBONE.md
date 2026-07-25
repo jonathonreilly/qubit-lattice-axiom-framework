@@ -17,7 +17,7 @@ file per claim), summarized in
 | Metric | Value |
 |---|---:|
 | Retained positive rows | 97 |
-| Retained bounded rows | 318 |
+| Retained bounded rows | 319 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 21 |
 
@@ -123,7 +123,7 @@ Sorted by load-bearing graph score (descending).
 - [`replay_environment_note`](../../docs/REPLAY_ENVIRONMENT_NOTE.md) — score 0.000; audited 2026-05-01T23:28:33.389906+00:00
 - [`staggered_graph_portability_stress_note`](../../docs/STAGGERED_GRAPH_PORTABILITY_STRESS_NOTE.md) — score 0.000; audited 2026-05-05T11:44:13.477263+00:00
 
-## Retained bounded rows (318)
+## Retained bounded rows (319)
 
 Sorted by load-bearing graph score (descending).
 
@@ -232,6 +232,7 @@ Sorted by load-bearing graph score (descending).
 - [`lattice_complementarity_note`](../../docs/LATTICE_COMPLEMENTARITY_NOTE.md) — score 6.024; audited 2026-05-05T11:27:11.208412+00:00
 - [`wigner_mode_low_d_sublattice_theorem_note_2026-05-02`](../../docs/WIGNER_MODE_LOW_D_SUBLATTICE_THEOREM_NOTE_2026-05-02.md) — score 6.024; audited 2026-06-09T11:48:39.094317+00:00
 - [`action_power_scaling_sweep_note`](../../docs/ACTION_POWER_SCALING_SWEEP_NOTE.md) — score 6.000; audited 2026-05-19T21:47:36.040389+00:00
+- [`extensional_nearest_neighbor_rule_deep_probe_2026-07-13`](../../docs/EXTENSIONAL_NEAREST_NEIGHBOR_RULE_DEEP_PROBE_2026-07-13.md) — score 6.000; audited 2026-07-25T04:07:04.912769+00:00
 - [`lattice_kernel_transfer_norm_note`](../../docs/LATTICE_KERNEL_TRANSFER_NORM_NOTE.md) — score 5.807; audited 2026-05-03T19:32:05.252731+00:00
 - [`cycle_battery_note_2026-04-10`](../../docs/CYCLE_BATTERY_NOTE_2026-04-10.md) — score 5.585; audited 2026-04-30T18:51:52.960005+00:00
 - [`lattice_3d_l2_numpy_h0125_bridge_note`](../../docs/LATTICE_3D_L2_NUMPY_H0125_BRIDGE_NOTE.md) — score 5.585; audited 2026-05-11T15:34:51.715177+00:00

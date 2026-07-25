@@ -1,42 +1,90 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T22:31:49.362971+00:00",
+  "audit_invocation_history": [
+    "7020fe8153c84a1aaf5f52d9755ae5c5"
+  ],
+  "audit_invocation_id": "7020fe8153c84a1aaf5f52d9755ae5c5",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 7,
+        "B": 1,
+        "C": 0,
+        "D": 5
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true,
+      "runner_path": "scripts/flavor_a1prime_debt_and_data_2026_05_30.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 0.0,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/flavor_a1prime_debt_and_data_2026_05_30.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "3bddf3ef36c214183077b18872b85a4da218fdf03e4a20cf80a7b7f05e2268ef",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "3bddf3ef36c214183077b18872b85a4da218fdf03e4a20cf80a7b7f05e2268ef",
+    "runner_path": "scripts/flavor_a1prime_debt_and_data_2026_05_30.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-20082474",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The coefficient calculation closes, but the packet does not establish that the real doublet's complex-slot interpretation is extra structure or exhaust the relevant complex representations and commuting phase actions.",
   "claim_id": "flavor_a1prime_debt_and_data_note_2026-05-30",
-  "claim_scope": null,
+  "claim_scope": "On the supplied real R[Z3] tracial basis, J-I occupies two real group-element directions.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T22:31:49.362971+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "In the basis {e,g,g^2}, J-I=g+g^2 has coefficient vector (0,1,1), hence two nonzero real-basis components.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "derived_no_go_boundary"
+  ],
   "note_hash": "02f8488777a00fdc914bbaccfdc963761b5b0b8b1f8f4fb4c6490ad620eae78e",
   "note_path": "docs/FLAVOR_A1PRIME_DEBT_AND_DATA_NOTE_2026-05-30.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "scope_too_broad: split off the exact real-basis support theorem and add a dated downstream-hygiene line to this note's own boundary; separately prove or retract the complex-slot and continuous-U(1) boundary.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -172,14 +220,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 5,
     "B": 0,
     "C": 0,
-    "D": 0,
-    "total_pass": 0
+    "D": 4,
+    "total_pass": 9
   },
   "runner_path": "scripts/flavor_a1prime_debt_and_data_2026_05_30.py",
   "title": "Flavor A1prime Carrier-Measure Boundary",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: The exact Gram and coefficient algebra closes, but the runner does not derive the further assertion that treating the real doublet as one complex slot is extra structure; its phase check does not audit the doublet's complex structure or commutant. Why this blocks: N1 supplies fewer than five distinct attack routes; N2 leaves one carrier/counting boundary; N3 finds explicit rather than hidden scope terms; N4 has no prior residual witnesses; and N5 lacks all-resolution testing. Repair target: N6 leaves convention/relabeling and alternate-representation routes open, the N7 steelman R[Z3]\u2245R\u2295C may make a complex-slot reading intrinsic, and N8's similar-boundary candidates are not dispositioned. Claim boundary until fixed: J-I has coefficient vector (0,1,1) in the supplied real basis, while the quoted mass, splitting, and angle calculations remain external comparators."
 }

@@ -1,41 +1,98 @@
-# KCPT — ind12 Separator Reach: the Native Qubit Frame 𝒜_nat = M₂(C)^⊕4, a Reach-Quantized Census over All 768 Ambient Single-Element Extensions with ω ∈ {0, 1/9, 1/3, 1}, and the Minimal Central Unlock A28 ≅ M₂(C)^⊕7 in which sep = e_a − e_b (Bounded Theorem)
+# KCPT — ind12 Separator Reach: a Numerically Resolved Census over 768 Ambient Single-Element Extensions and a 28-Dimensional Central Extension (Bounded Theorem)
 
 **Type:** bounded_theorem
 **Date:** 2026-07-25
-**Lane:** KCPT (periodic L = 4, N = 64 staggered qubit lattice on the 4³ torus)
-**Registry id:** `kcpt_ind12_separator_reach_quantized_census_minimal_unlock`
+**Lane:** KCPT (periodic L = 4, N = 64 staggered lattice on the 4³ torus)
 
 ## Opening
 
-The bicommutant-dimension note found that the center Z(𝒜) = C⁵ of the Dirac-symmetry algebra carries one direction more than C[M] = C⁴, the extra direction being the ind12 separator sep = P_a − P_b splitting the shell m = 2 into the two rank-12 H-constituents, and its "Two paths this opens" asked which lattice-native subalgebras — word algebras in D2, J_full and individual ambient-group elements — realize the intermediate charge resolutions C[M] ⊊ C[D2] ⊊ ⟨D2, J_full⟩ ⊊ 𝒜, representing each resolution step by a concrete lattice operator rather than an abstract idempotent. This note answers that question for the ind12 separator within the family of single ambient-group-element extensions of the native readout algebra 𝒜_nat = ⟨D2, J_full, S_eps⟩, by a census over ALL 768 of them. The census is exact and quantized: the reach of sep into a single-element extension takes only four values {0, 1/9, 1/3, 1}, and within this family the separator first becomes central in one explicit minimal extension.
+The bicommutant-dimension note found that the center Z(𝒜) = C⁵ of the Dirac-symmetry
+algebra has one direction beyond C[M] = C⁴: the ind12 separator
+sep = P_a − P_b, which splits shell m = 2 into two rank-12 H-constituents. This note
+examines that separator within the family of single ambient-group-element extensions of
+
+  𝒜_nat := ⟨D2, J_full, S_eps⟩.
+
+On the fixed surface and at the stated tolerances, a census of all 768 extensions
+numerically resolves four reach values {0, 1/9, 1/3, 1}. It also identifies a smallest
+reaching H-class and an explicit 28-dimensional extension in which sep is numerically
+represented as a difference of minimal central idempotents.
 
 ## Claim boundary
 
-This is a bounded theorem on one fixed finite surface: the periodic L = 4, N = 64 staggered lattice, with the integer antisymmetric adjacency D2, the bulk operator M = D2² (shells λ_m = −4m, dims [8, 24, 24, 8] for m = 0, 1, 2, 3), the total complex structure J_full (J_full² = −I), the lattice-parity involution S_eps = diag((−1)^(x₁+x₂+x₃)), the ambient group G_amb of order 768 (integer signed-permutation matrices, hence real orthogonal), and the extended group H = ⟨G_amb, S_eps⟩ of order 1536. It reuses, unchanged, the six multiplicity-free H-constituents C⁶⁴ = 8 + 8 + 12 + 12 + 12⁺ + 12⁻, and defines P_a, P_b as the two rank-12 constituents on shell m = 2 (the tagged ind12 pair) with sep := P_a − P_b. It fixes no new free parameter, selects no bulk sign-family member, chooses no dynamics; it is r-neutral and orientation-neutral; and it takes no external numerical or literature input. "CP" and "chiral" nowhere enter; the only labels are the lattice-native operators and the ambient group. Unless a singular value or another norm is named explicitly, every displayed matrix norm is the Frobenius norm ‖X‖_F. Reach is measured by overlap²(B, sep) := 1 − resid(B, sep)² with resid the residual of the unit-normalized sep against an orthonormal basis B of the extension; every load-bearing quantity — each dimension, order, rank, cluster count, character value, and residual — is recomputed from the real matrices and checked, with an explicit wrong-value rejector or a contrast computation, by the companion runner `scripts/kcpt_ind12_separator_reach_quantized_census_minimal_unlock_2026_07_25.py`.
+The surface is the periodic L = 4, N = 64 staggered lattice with integer antisymmetric
+adjacency D2; M = D2²; shell eigenvalues λ_m = −4m and inherited shell dimensions
+[8, 24, 24, 8]; J_full² = −I; S_eps = diag((−1)^(x₁+x₂+x₃)); the 768-element signed-
+permutation group G_amb; and H = ⟨G_amb, S_eps⟩. It reuses the six multiplicity-free
+H-constituents C⁶⁴ = 8 + 8 + 12 + 12 + 12⁺ + 12⁻ and defines P_a and P_b as the tagged
+rank-12 pair on shell m = 2, with sep := P_a − P_b.
+
+No new free parameter, dynamics, bulk sign-family member, external numerical value, or
+literature input is introduced. The result is r-neutral and orientation-neutral. No
+physical CP, chirality, measurement, readout, conservation, superselection, or Record
+identification is asserted. Unless a singular value or another norm is named, matrix
+norms are Frobenius norms.
+
+For an orthonormal basis B, define
+
+  resid(B, sep) := ‖sep/‖sep‖_F − Π_B(sep/‖sep‖_F)‖_F,
+  overlap²(B, sep) := 1 − resid(B, sep)².
+
+The companion runner recomputes and gates the new algebra dimensions, closure results,
+class counts, reach values, character values, center dimensions, numerical separation
+margins, idempotent ranks, and residuals used below. The order of H and the starting shell
+dimensions are inherited construction checks, not claimed as newly re-gated results.
 
 ## Construction recap
 
-The runner rebuilds the surface from bare sites, object-for-object identical to the construction section of the Unit-21 runner `scripts/kcpt_dirac_chisgn_covariance_schur_forced_superstructure_2026_07_24.py` (which is itself identical to the Unit-20 construction), and is fully self-contained (no import or exec of any other file): the lattice and coordinates, the staggered signs η_μ, the integer D2, M = D2², the four shell projectors Pf[m], the kernel complex structure, J_bulk := Σ_m D2·Pf[m]/(2√m) (m = 1, 2, 3), J_full, S_eps, the ambient group Gamb (768 integer matrices) and its integer generators gens_G, the extended generators, the six constituent projectors Ps with their tags, and the two ind12 indices i_ind12 on shell 2. The separator is defined once as `Pa = Ps[i_ind12[0]]`, `Pb = Ps[i_ind12[1]]`, `sep = Pa − Pb`. The six multiplicity-free constituents are supplied by the five-module note (cited transitively through the two dependency notes below); no other object is imported. The ambient-group order 768 is re-gated here (`C1.2`); the extended-group order |H| = 1536 and the shell dims [8, 24, 24, 8] are gated in the Unit-21 runner's own battery and are inherited with the construction, not re-gated here.
+The runner rebuilds the lattice, coordinates, staggered signs η_μ, D2, M, four shell
+projectors Pf[m], the kernel complex structure, J_bulk, J_full, S_eps, G_amb, H generators,
+the six constituent projectors, and the tagged ind12 pair. It is self-contained and does
+not import or execute another runner. The separator is defined once as
+`sep = Ps[i_ind12[0]] - Ps[i_ind12[1]]`.
 
-## T1 — the native qubit frame 𝒜_nat and the resolution ladder
+The 768-element ambient-group order is re-gated by `CENSUS-ELEMENT-COUNT`. The order of H
+and the shell dimensions are inherited from the Schur-forced fused-block construction.
 
-Let 𝒜_nat := ⟨D2, J_full, S_eps⟩ be the complex associative unital algebra generated by the three lattice-native operators. Word-algebra closure reaches TRUE closure (empty frontier below cap 350) at dim_C 𝒜_nat = 16 (`A3`), through the strict commutative-then-noncommutative tower dim⟨D2⟩ = 7 (`A1`, C[D2] with spectrum {0, ±2i√m}) and dim⟨D2, J_full⟩ = 8 (`A2`, adjoining only the kernel complex structure). The generating relations J_full² = −I, S_eps² = I, {J_full, S_eps} = 0 hold to ‖·‖_F < 1e-12 (`A4`). Restricting the 16 basis elements to each Dirac shell, the per-shell spans Pf[m]·X·Pf[m] have dimension [4, 4, 4, 4] (`A5`): 𝒜_nat ≅ M₂(C)^⊕4 — one qubit per Dirac shell. Its center is four-dimensional and equals C[M]: the commutant-in-𝒜_nat nullspace has dim Z(𝒜_nat) = 4, and each shell projector Pf[m] sits in the null-span with resid < 1e-10 (`A6`, Z(𝒜_nat) = C[M] exactly). Assembling the tower gives the resolution ladder realized entirely by lattice-native subalgebras,
+## Native frame and resolution ladder
 
-  C[M] (dim 4) ⊂ C[D2] (dim 7) ⊂ ⟨D2, J_full⟩ (dim 8) ⊂ 𝒜_nat (dim 16) ⊂ 𝒜 (dim 992),
+The word algebras numerically true-close below cap 350 at
 
-which answers the bicommutant note's request up to the native qubit frame: every step through dim 16 is a concrete word algebra in D2, J_full, S_eps.
+- dim_C⟨D2⟩ = 7;
+- dim_C⟨D2, J_full⟩ = 8; and
+- dim_C 𝒜_nat = 16.
 
-## T2 — exact blindness of the separator to the native frame
+The relations J_full² = −I, S_eps² = I, and {J_full, S_eps} = 0 hold with residual below
+1e-12. The per-shell restriction dimensions are [4, 4, 4, 4]. The commutant-in-𝒜_nat
+nullspace has dimension 4, its largest dropped singular value is below 1e-8, its smallest
+kept singular value exceeds 1e-4, and every Pf[m] has residual below 1e-10 against that
+nullspace. Thus the finite computation numerically resolves
 
-The separator sep = P_a − P_b is exactly orthogonal to the native frame: overlap²(𝒜_nat, sep) ≤ 1e-10 (`A7`). The native qubit frame registers the shell partition (its center is C[M]) and the qubit degree of freedom over each shell, and NONE of the ind12 split. Stated in register-not-read terms: within the native readout frame the ind12 separator is not constituted content — no operator of 𝒜_nat carries it — so any registration of the split must come from an extension of the frame, which the census below counts.
+  𝒜_nat ≅ M₂(C)^⊕4,   Z(𝒜_nat) = C[M],
 
-## T3 — H-stability and the reach-quantized census
+at the stated tolerances, and the following concrete word-algebra ladder:
 
-Conjugation by H maps the generating triple {D2, J_full, S_eps} back into 𝒜_nat: for every h in the five H-generators and every X ∈ {D2, J_full, S_eps}, resid(B₁₆, h·X·hᵀ) < 1e-10 against the 𝒜_nat basis B₁₆ (`B2`); conjugation by H fixes the separator itself, ‖h·sep·hᵀ − sep‖_F < 1e-10 for every generator (`B3`); and S_eps ∉ Gamb while conjugation by H carries Gamb into Gamb (`B1`). These three license the class function: the reach
+  C[M] (dim 4) ⊂ C[D2] (dim 7) ⊂ ⟨D2, J_full⟩ (dim 8)
+  ⊂ 𝒜_nat (dim 16) ⊂ 𝒜 (dim 992).
+
+## Separator non-membership in the native frame
+
+The computation gives |overlap²(𝒜_nat, sep)| ≤ 1e-10. Accordingly, sep is not represented
+in 𝒜_nat at the stated tolerance. This is only a finite operator-algebra non-membership
+statement. It does not imply that a physical split is unread, unrecorded, or impossible;
+nor does it select a measurement or readout context.
+
+## H-stability and reach census
+
+Conjugation by the five H-generators preserves 𝒜_nat to residual below 1e-10, fixes sep to
+residual below 1e-10, and normalizes G_amb by integer matrix equality. Therefore
 
   ω(g) := overlap²(⟨𝒜_nat, g⟩, sep)
 
-is constant on H-conjugation classes of Gamb — ⟨𝒜_nat, h·g·hᵀ⟩ = h·⟨𝒜_nat, g⟩·hᵀ by `B2`, and the overlap against sep is unchanged under conjugation by `B3`. Over all 36 H-classes (`C1`: 36 classes, sizes summing to 768) every single-element extension ⟨𝒜_nat, g⟩ reaches TRUE closure below cap 350 (`C2`), and ω takes EXACTLY the four values {0, 1/9, 1/3, 1} (`C3`, matched within 1e-9), with element counts {528, 12, 96, 132} (`C4`). Refined by true-closed dimension, the census has exactly nine cells (`C5`, measured element counts):
+is numerically invariant on the computed H-conjugacy classes. The 36 classes partition all
+768 elements. Every representative true-closes below cap 350. At match tolerance 1e-9,
+the observed reach labels are {0, 1/9, 1/3, 1}, with element counts
+{528, 12, 96, 132}. The joint histogram is:
 
 | closed dim | ω = 0 | ω = 1/9 | ω = 1/3 | ω = 1 |
 |-----------:|------:|--------:|--------:|------:|
@@ -49,84 +106,135 @@ is constant on H-conjugation classes of Gamb — ⟨𝒜_nat, h·g·hᵀ⟩ = h�
 | 96 | · | · | 96 | · |
 | **total** | **528** | **12** | **96** | **132** |
 
-The order census (`C6`) resolves the two nonzero-but-partial and full tiers: the ω = 1/3 tier is four classes of size 24, every element of order 8; the ω = 1 tier is one class of size 4 (order 4) together with two classes of size 64 (order 12).
+The ω = 1/3 tier consists of four size-24 classes whose representatives have order 8. The
+ω = 1 tier consists of one size-4 class of order 4 and two size-64 classes of order 12.
 
-## T4 — character-blindness inversion
+## Character/reach relation
 
-Define the separating character Δχ(g) := Re(tr(P_a g) − tr(P_b g)). Over all class reps Δχ takes only the three values {0, +4√2, −4√2} (`D1`, 4√2 = 5.656854…, matched within 1e-9). The character-seeing set {Δχ ≠ 0} is EXACTLY the four order-8 classes (96 elements) — and these are precisely the classes STUCK at ω = 1/3; every fully-reaching (ω = 1) class is character-blind, Δχ = 0 (`D2`, set equality with both sides nonempty). The naive expectation — that the elements whose characters distinguish the pair {P_a, P_b} are the ones that constitute the split — is INVERTED at the algebra level: the elements that see the split through their character are exactly the ones that never fully reach it, while the elements that fully reach it are exactly the ones whose character is blind to it.
+For Δχ(g) := Re(tr(P_a g) − tr(P_b g)), the computed class representatives match
+{0, +4√2, −4√2} within 1e-9. At the same tolerance, the nonzero-Δχ classes are the four
+ω = 1/3 classes, while every ω = 1 class has Δχ = 0. This is a numerical set match on the
+fixed class census, not a symbolic theorem about other surfaces or extension families.
 
-## T5 — the minimal central unlock A28 ≅ M₂(C)^⊕7
+## The 28-dimensional central extension
 
-The unique smallest reaching class is {g1, g1⁻¹, −g1, −g1⁻¹} (`E2`, size 4 by matrix equality; every other ω = 1 class has size 64), with
+Define
 
-  g1 = diag((−1)^{x₂}) · T₍₁,₁,₁₎     (a sign-dressed body-diagonal unit translation, order 4),
+  g1 = diag((−1)^{x₂}) · T₍₁,₁,₁₎.
 
-built directly as the sign field (−1)^{x₂} times the unit translation T₍₁,₁,₁₎; g1 ∈ Gamb by matrix equality and has order 4 (`E1`). The single-element extension A28 := ⟨𝒜_nat, g1⟩ reaches TRUE closure at dim 28 with ω(g1) = 1, so sep ∈ A28 (`E3`), with per-shell restriction dims [4, 8, 8, 8] (`E4`). The Wedderburn structure of A28 is M₂(C)^⊕7: the commutant nullspace has dim Z(A28) = 7 (`E5`), complex-coefficient central sampling returns exactly seven eigenvalue clusters for both seeds (`E6`, degeneracy guard), and each of the seven spectral idempotents E has block dimension dim{E·X·E} = 4 (`E7`, A28 ≅ M₂(C)^⊕7), with idempotent rank multiset {4, 4, 8, 12, 12, 12, 12} and shell support: the rank-8 block on shell 0 only (shell 0 does NOT split), the two rank-12 blocks on shell 1, two rank-12 on shell 2, and two rank-4 on shell 3. So the center refines C⁴ → C⁷, splitting shells 1, 2, 3 in two each. The two shell-2 minimal central idempotents match the constituent pair {P_a, P_b} exactly (`E8`, min-matching max ‖E − P‖_F < 1e-8), and therefore
+Integer matrix equality verifies g1 ∈ G_amb and g1⁴ = I. Its H-orbit is exactly
+{g1, g1³, −g1, −g1³}; the other fully reaching classes have size 64. The extension
 
-  sep = e_a − e_b,
+  A28 := ⟨𝒜_nat, g1⟩
 
-a difference of minimal central idempotents of A28 (‖sep − (E_a − E_b)‖_F < 1e-8). The separator that the native frame is blind to (T2) becomes a genuine central charge of this one minimal extension.
+numerically true-closes at dimension 28, has ω(g1) = 1 within 1e-9, and has per-shell
+restriction dimensions [4, 8, 8, 8]. Its computed center has dimension 7, with largest
+null singular value below 1e-8 and smallest kept singular value above 1e-4. Two
+deterministic complex central samples each resolve seven eigenvalue clusters; their
+maximum within-cluster gaps are below 1e-8 and their minimum between-cluster gaps exceed
+1e-4.
 
-## T6 — the shift-direction dial
+The generators make A28 a finite-dimensional *-algebra:
+D2* = −D2, J_full* = −J_full, S_eps* = S_eps, and g1* = g1³. The seven sampled central
+idempotents have numerical corner dimensions 4, so the computation resolves
 
-Holding the sign field (−1)^{x₂} fixed and varying only the translation direction turns reach into a discrete dial. Shift (1,1,1) gives ω = 1 at dim 28 (g1, above); shift (1,1,3) gives ω = 1/9 at dim 28 (`F1`, g_ninth ∈ Gamb); shift (1,1,2) gives ω = 0 at dim 48 (`F2`, g_zero ∈ Gamb). The ω = 1 and ω = 1/9 extensions are BOTH dim 28 (`F3`): the extension dimension does not determine the reach. A different admissible family — the sign-dressed axis rotations g_ur1, g_ur3 (order 12) — TRUE-closes at dim 76 with ω = 1 and H-class size 64 (`F4`): full reach also occurs far above the minimal class, but the minimal reaching class remains the unique size-4 one.
+  A28 ≅ M₂(C)^⊕7
 
-## Register-not-read reading
+at the stated tolerances. Their ranks are {4, 4, 8, 12, 12, 12, 12}, with shell supports
+8@0 | 12,12@1 | 12,12@2 | 4,4@3. The two shell-2 idempotents match {P_a, P_b} within
+1e-8, and ‖sep − (e_a − e_b)‖_F < 1e-8. Thus sep is numerically represented as a
+difference of minimal central idempotents in A28. No physical “charge” interpretation is
+attached to this centrality statement.
 
-Stated strictly as a finite-algebra result about registration: the ind12 split is registered content of the full readout context (the center of 𝒜 carries it, bicommutant note), and this unit determines exactly which ambient single-element extensions of the native frame constitute that registration — finding the constitution quantized, ω ∈ {0, 1/9, 1/3, 1}, and first central in the explicit minimal extension A28. No operator here "measures" or "reads" a pre-record value; the separator, the reach ω, and the central idempotents e_a, e_b are constituted in the record stack, and every statement is an algebraic containment, not a physical measurement, conservation, or superselection bridge.
+## Shift-direction contrasts
+
+With the sign field (−1)^{x₂} fixed, shift (1,1,1) gives ω = 1 at dimension 28;
+shift (1,1,3) gives ω = 1/9 at dimension 28; and shift (1,1,2) gives
+|ω| ≤ 1e-10 at dimension 48. Thus extension dimension alone does not determine the
+observed reach. Two sign-dressed axis rotations give dimension 76, ω = 1, order 12, and
+H-class size 64, showing a second full-reach route above the smallest class.
+
+## No-Go Discipline for the bounded non-membership statement
+
+The negative statement in scope is only: `sep` is not represented in the computed
+16-dimensional 𝒜_nat at the stated finite-surface tolerance.
+
+- **N1 — alternative routes:** five route families were stress-tested: true word-monoid
+  closure; Hilbert–Schmidt projection residual; the Z(𝒜_nat) = C[M] characterization;
+  shell-wise M₂ central-scalar structure; and an independent block-QR/right-multiplication
+  span reconstruction with a tolerance sweep.
+- **N2 — wall independence:** there is one operative numerical wall, the fixed finite
+  matrix surface with explicit tolerances; no second physical impossibility wall is used.
+- **N3 — hidden walls:** no registration, readout, Record, dynamics, continuum, or
+  arbitrary-L premise is inferred from algebra membership.
+- **N4 — residual matching:** the residual supports only numerical non-membership in
+  𝒜_nat; the rhetoric is restricted to that residual.
+- **N5 — rhetoric:** the claim is limited to this 64×64 representation and this generated
+  algebra, not all sites, modes, surfaces, or physical contexts.
+- **N6 — partial closure:** the 1/9 and 1/3 tiers and the fully reaching A28 extension are
+  retained as explicit routes outside 𝒜_nat; no universal no-go is claimed.
+- **N7 — steelman:** a tolerance-dependent rank misclassification is the strongest
+  objection. Independent tolerance sweeps preserved dimensions 16 and 28 from 1e-7
+  through 1e-11, while the live center gaps separate kept values near 2 from null values
+  below 5e-15. This supports the numerical claim, not an exact symbolic one.
+- **N8 — cross-cycle echo:** earlier KCPT reviews warn against promoting fixed-operator or
+  algebra-exclusion results into universal physical no-go claims. This statement preserves
+  that boundary.
+
+**No-Go disposition:** PASS for the narrowed numerical operator-algebra statement.
 
 ## Boundary / honest-auditor read
 
-This is a statement about the fixed finite L = 4, N = 64 lattice alone. Only integer dimensions, orders, ranks, cluster counts, and tolerance-separated residuals and character values are gated, each with an explicit wrong-value rejector or a contrast computation. It is a numerical class-A verification at the stated tolerances: the census rationals {0, 1/9, 1/3, 1} and the counts {528, 12, 96, 132} are measured to 1e-9, not proved symbolically. The census covers single-element extensions only — multi-element extensions, subgroup extensions, and the full chains between 𝒜_nat and 𝒜 are unexplored here. No continuum limit, dynamics, or physical identification of g1 is asserted beyond its explicit lattice-native form diag((−1)^{x₂})·T₍₁,₁,₁₎; the ω values are this-lattice facts. The observation 1/9 = (1/3)² is recorded as an unexplained numerical coincidence on this surface, not a claim of any relation between the two tiers. The dependency notes carry an open KCPT dependency chain that this note inherits; this note asserts no grade and no publication-usable claim. The periodic boundary, the g = I counting metric, and the chosen J_full sign-family representative are inherited finite-surface inputs, not outputs of this note.
+This is a numerical class-A verification on one fixed L = 4 surface. The reach labels and
+counts are measured to 1e-9, not symbolically proved. The census covers single-element
+extensions only. Multi-element extensions, subgroup extensions, other surfaces, continuum
+limits, dynamics, and physical identifications remain open. The observation
+1/9 = (1/3)² is an unexplained numerical coincidence here. The periodic boundary, the
+g = I counting metric, and the chosen J_full sign-family representative are inherited
+finite-surface inputs. Both direct dependencies are unaudited; this note asserts no audit
+grade or publication-usable status and requires an independent audit.
 
 ## Two paths this opens
 
-- The census is a single-surface fact at L = 4; the next path this opens is the L-dependence of the census — whether the {0, 1/9, 1/3, 1} reach spectrum and the nine-cell (dim, ω) refinement persist or refine at L = 6, 8, and whether the 1/9 = (1/3)² coincidence survives a change of surface.
-- A28 realizes only the first central refinement C⁴ → C⁷ from a single element; the next path this opens is the subgroup lattice between 𝒜_nat and 𝒜 — which chains of single-element unlocks realize the full Z(𝒜) = C⁵ refinement of the bicommutant note, and what registered content of the record stack corresponds to the sign-dressed body-diagonal translation g1 that first makes the ind12 separator central.
+- Test whether the four reach labels and nine-cell histogram persist or refine at
+  L = 6 and L = 8.
+- Classify multi-element and subgroup extensions between 𝒜_nat and 𝒜, keeping algebraic
+  containment separate from any physical interpretation.
 
 ## Runner evidence
 
-Companion runner `scripts/kcpt_ind12_separator_reach_quantized_census_minimal_unlock_2026_07_25.py` reports `TOTAL: PASS=47 FAIL=0`. Each row prints its measured number; every structural / completeness row carries a live wrong-value rejector or a contrast computation wired to FAIL if the implemented object were wrong. Reach uses overlap²; dimensions are gated only at TRUE closure (empty frontier below cap 350); every SVD passes `full_matrices=False`. The battery A1–G3 with expected values:
+The companion runner
+`scripts/kcpt_ind12_separator_reach_quantized_census_minimal_unlock_2026_07_25.py`
+reports `TOTAL: PASS=49 FAIL=0`. Each gate uses a descriptive scientific name:
 
-| Gate | Checks (expected value) | What it discriminates |
-|------|--------------------------|-----------------------|
-| `A1` | dim⟨D2⟩ = 7 at TRUE closure (spectrum {0, ±2i√m}) | rejects a wrong Dirac spectrum / eigenvalue count. |
-| `A2` | dim⟨D2, J_full⟩ = 8 (adds only the kernel complex structure) | rejects a J_full that adds bulk directions. |
-| `A3` | dim 𝒜_nat = 16 at TRUE closure | rejects a non-closing or wrong-dimension native frame. |
-| `A4` | ‖J_full² + I‖_F, ‖S_eps² − I‖_F, ‖{J_full, S_eps}‖_F all < 1e-12 | rejects a non-complex-structure J or a non-anticommuting grading. |
-| `A5` | per-shell restriction dims [4, 4, 4, 4] ⇒ one qubit per Dirac shell | rejects a frame that is not M₂(C) per shell. |
-| `A6` | dim Z(𝒜_nat) = 4; each Pf[m] resid < 1e-10 ⇒ Z(𝒜_nat) = C[M] | rejects a center larger or smaller than C[M]. |
-| `A7` | overlap²(𝒜_nat, sep) ≤ 1e-10 (exact blindness) | rejects a frame that already registers the split. |
-| `B1` | S_eps ∉ Gamb; conjugation by H carries Gamb into Gamb | rejects a mis-identified stabilizing group. |
-| `B2` | resid(B₁₆, h·X·hᵀ) < 1e-10 for all 5 h, X ∈ {D2, J_full, S_eps} | conjugation by H preserves 𝒜_nat (fails if the triple is not H-stable). |
-| `B3` | ‖h·sep·hᵀ − sep‖_F < 1e-10 for all 5 h | with B2, licenses ω as an H-class function (fails if the separator itself moves under H). |
-| `C1` | 36 H-classes; class sizes sum to 768 | rejects a wrong class partition. |
-| `C2` | every class rep TRUE-closes below cap 350 (max closed dim 96) | rejects a capped (invalid) dimension gate. |
-| `C3` | every class ω ∈ {0, 1/9, 1/3, 1} within 1e-9 | rejects any fifth reach value. |
-| `C4` | element counts {0: 528, 1/9: 12, 1/3: 96, 1: 132} | rejects a miscount of the reach tiers. |
-| `C5` | refined (dim, ω) histogram = the nine cells above | rejects a wrong dim×reach joint distribution. |
-| `C6` | ω = 1/3 → 4 classes size 24, order 8; ω = 1 → one size-4 (order 4) + two size-64 (order 12) | rejects a wrong order structure of the tiers. |
-| `D1` | Δχ(g) ∈ {0, +4√2, −4√2} within 1e-9 (√2 from np.sqrt, never a decimal literal) | rejects a wrong separating-character spectrum. |
-| `D2` | {Δχ ≠ 0} == {ω = 1/3} (4 classes, 96 elements); every ω = 1 class Δχ = 0; both sides nonempty | rejects the naive (non-inverted) reading; the live inversion gate. |
-| `E1` | g1 = diag((−1)^{x₂})·T₍₁,₁,₁₎ ∈ Gamb by matrix equality; order(g1) = 4 | rejects a wrong minimal-unlock element. |
-| `E2` | H-orbit of g1 = {g1, g1³, −g1, −g1³} (size 4); unique smallest reaching class (others size 64) | rejects a non-minimal or non-unique unlock class. |
-| `E3` | dim A28 = 28 at TRUE closure; ω(g1) = 1 (sep ∈ A28) | rejects a non-reaching extension. |
-| `E4` | per-shell restriction dims of A28 = [4, 8, 8, 8] | rejects a wrong per-shell refinement. |
-| `E5` | dim Z(A28) = 7 (commutant nullspace, null tol 1e-8) | rejects a wrong center dimension (C⁴ → C⁷ refinement). |
-| `E6` | complex-coefficient central sampling = 7 clusters for BOTH seeds 20260725 and 42 | rejects a real-coefficient degeneracy false positive. |
-| `E7` | each of 7 spectral idempotents blockdim 4 (M₂(C)^⊕7); rank multiset {4, 4, 8, 12, 12, 12, 12}; shell support (8@0 \| 12,12@1 \| 12,12@2 \| 4,4@3) | rejects a wrong block/rank/shell structure. |
-| `E8` | shell-2 pair matches {P_a, P_b} (max ‖E − P‖_F < 1e-8); ‖sep − (e_a − e_b)‖_F < 1e-8 | rejects any assignment where sep is not a difference of minimal central idempotents. |
-| `F1` | g_ninth = diag((−1)^{x₂})·T₍₁,₁,₃₎ ∈ Gamb; dim 28; ω = 1/9 | rejects a wrong 1/9-tier value. |
-| `F2` | g_zero = diag((−1)^{x₂})·T₍₁,₁,₂₎ ∈ Gamb; dim 48; ω ≤ 1e-10 | rejects a wrong 0-tier value. |
-| `F3` | F1 and E3 dims both 28 (extension dimension does not determine reach) | rejects the dimension-determines-reach hypothesis. |
-| `F4` | g_ur1, g_ur3 ∈ Gamb; order 12; dim 76; ω = 1; H-class size 64 | rejects the claim that full reach is unique to the minimal class. |
-| `G1` | overlap²(𝒜_nat, Pf[0] − Pf[3]) = 1 within 1e-9 | membership-detector sanity: an in-frame central difference IS seen by the same resid machinery reporting sep at 0. |
-| `G2` | \|ω(g1) − 1/3\| > 0.5 and \|ω(g_zero) − 1\| > 0.9 | wrong-value rejector: the dial spread is real, not a constant readout. |
-| `G3` | gp = diag((−1)^{x₁})·T₍₁,₁,₁₎ ∉ Gamb ⇒ gate on non-membership | perturbation rejector: a wrong sign field is not even an admissible extension. |
+| Gate | Expected value |
+|------|----------------|
+| `NATIVE-D2-ALGEBRA` | dim⟨D2⟩ = 7 at true closure. |
+| `NATIVE-DIRAC-PAIR` | dim⟨D2,J_full⟩ = 8 at true closure. |
+| `NATIVE-FRAME-DIM` | dim 𝒜_nat = 16 at true closure. |
+| `NATIVE-COMPLEX-STRUCTURE`, `NATIVE-PARITY-INVOLUTION`, `NATIVE-GRADING-ANTICOMMUTATION` | defining relation residuals below 1e-12. |
+| `NATIVE-SHELL-BLOCKS` | shell dimensions [4,4,4,4]. |
+| `NATIVE-CENTER-DIM`, `NATIVE-CENTER-GAP`, `NATIVE-CENTER-CM` | center dimension 4, live null/kept gap, shell projectors in the center span. |
+| `NATIVE-SEPARATOR-ORTHOGONALITY` | Absolute overlap²(𝒜_nat,sep) ≤ 1e-10. |
+| `STABILITY-PARITY-OUTSIDE-AMBIENT`, `STABILITY-AMBIENT-NORMALITY` | H extension and normalization checks. |
+| `STABILITY-NATIVE-FRAME`, `STABILITY-SEPARATOR` | H preserves 𝒜_nat and sep below 1e-10. |
+| `CENSUS-CLASS-COUNT`, `CENSUS-ELEMENT-COUNT` | 36 classes and 768 elements. |
+| `CENSUS-TRUE-CLOSURE`, `CENSUS-REACH-SPECTRUM`, `CENSUS-REACH-COUNTS`, `CENSUS-DIM-REACH-HISTOGRAM` | closure and four-tier/nine-cell census. |
+| `CENSUS-THIRD-ORDERS`, `CENSUS-FULL-REACH-ORDERS` | order structure of nonzero tiers. |
+| `CHARACTER-SPECTRUM`, `CHARACTER-THIRD-INVERSION`, `CHARACTER-FULL-BLINDNESS` | character/reach numerical set relations. |
+| `UNLOCK-MINIMAL-ELEMENT-MEMBERSHIP`, `UNLOCK-MINIMAL-ELEMENT-ORDER`, `UNLOCK-MINIMAL-ELEMENT-ORBIT`, `UNLOCK-MINIMAL-CLASS` | g1 and its smallest reaching class. |
+| `UNLOCK-ALGEBRA-DIM`, `UNLOCK-FULL-REACH`, `UNLOCK-SHELL-DIMS` | A28 closure, reach, and shell dimensions. |
+| `UNLOCK-CENTER-DIM`, `UNLOCK-CENTER-GAP` | center dimension 7 and live null/kept gap. |
+| `UNLOCK-CENTER-CLUSTERS-PRIMARY`, `UNLOCK-CENTER-CLUSTERS-CONTRAST` | seven well-separated clusters for both seeds. |
+| `UNLOCK-WEDDERBURN-BLOCKS`, `UNLOCK-IDEMPOTENT-RANKS`, `UNLOCK-SHELL-SUPPORTS` | seven numerical M₂ corners, ranks, and shell supports. |
+| `UNLOCK-SHELL2-IDEMPOTENTS`, `UNLOCK-SEPARATOR-IDEMPOTENTS` | shell-2 and separator matches below 1e-8. |
+| `SHIFT-REACH-NINTH`, `SHIFT-REACH-ZERO`, `SHIFT-DIMENSION-CONTRAST`, `ROTATION-FULL-REACH` | shift and rotation contrasts. |
+| `REACH-IN-FRAME-CONTROL`, `REACH-DIAL-CONTRAST`, `REACH-SIGNFIELD-PERTURBATION` | independent discriminating controls. |
 
 ## Dependencies
 
-- [the bicommutant-dimension note (Unit 20)](KCPT_DIRAC_SYMMETRY_ALGEBRA_BICOMMUTANT_DIMENSION_992_BOUNDED_THEOREM_NOTE_2026-07-24.md) — supplies the algebra 𝒜 of dim 992, its center Z(𝒜) = C⁵ ⊋ C[M] = C⁴, and the ind12 separator sep = P_a − P_b as the fifth central direction; its "Two paths this opens" poses the resolution-ladder question this note answers for the native frame.
-- [the Schur-forced fused-block superstructure note (Unit 21)](KCPT_DIRAC_CHISGN_COVARIANCE_SCHUR_FORCED_FUSED_BLOCK_SUPERSTRUCTURE_BOUNDED_THEOREM_NOTE_2026-07-24.md) — supplies the construction section reused verbatim by this note's runner (the lattice, D2, M, J_full, S_eps, the ambient group, the six constituent projectors and their tags).
+- [the bicommutant-dimension note](KCPT_DIRAC_SYMMETRY_ALGEBRA_BICOMMUTANT_DIMENSION_992_BOUNDED_THEOREM_NOTE_2026-07-24.md) — supplies 𝒜, its center, and the ind12 separator.
+- [the Schur-forced fused-block superstructure note](KCPT_DIRAC_CHISGN_COVARIANCE_SCHUR_FORCED_FUSED_BLOCK_SUPERSTRUCTURE_BOUNDED_THEOREM_NOTE_2026-07-24.md) — supplies the finite lattice, operators, groups, and constituent projectors reused by the runner.
 
-The five-module note and all earlier units enter only transitively, through the two notes above; they appear here as backticked basenames or by name only, never as dependency links. No links to any non-KCPT doc.
+Earlier notes enter transitively through these two direct dependencies. No non-KCPT document
+is a load-bearing dependency.

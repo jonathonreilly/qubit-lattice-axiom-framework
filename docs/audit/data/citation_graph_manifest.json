@@ -1,6 +1,6 @@
 {
- "edge_count": 15047,
- "node_count": 4499,
+ "edge_count": 15049,
+ "node_count": 4500,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -7008,6 +7008,10 @@
   },
   "kcpt_holomorphic_reality_cp_census_frobenius_schur_bounded_theorem_note_2026-07-20": {
    "deps_hash": "ffc2e8867685",
+   "out_degree": 2
+  },
+  "kcpt_ind12_separator_reach_quantized_census_minimal_unlock_bounded_theorem_note_2026-07-25": {
+   "deps_hash": "70d0424b983a",
    "out_degree": 2
   },
   "kcpt_kahler_triple_ambient_invariant_metric_symplectic_bounded_theorem_note_2026-07-19": {

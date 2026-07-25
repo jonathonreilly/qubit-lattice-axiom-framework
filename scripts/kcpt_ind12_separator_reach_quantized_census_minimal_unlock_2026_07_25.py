@@ -1,44 +1,29 @@
 #!/usr/bin/env python3
-"""KCPT ind12 separator: native qubit frame, reach-quantized census, minimal central unlock.
+"""KCPT ind12 separator: native frame, reach census, and central extension.
 
 On the fixed finite L = 4, N = 64 staggered lattice this runner answers, for the ind12
 separator sep = P_a - P_b, the question of which lattice-native subalgebras realize the
-intermediate charge resolutions between C[M] and the full symmetry algebra. It builds every
+intermediate algebra resolutions between C[M] and the full symmetry algebra. It builds every
 object from the bare site construction and the real matrices only (self-contained; no import
 or exec of any other runner), then runs a class-A finite-dimensional gate battery:
 
-  Part A  the native qubit frame A_nat = <D2, J_full, S_eps> has dim_C = 16, closed, with
-          relations J_full^2 = -I, S_eps^2 = I, {J_full, S_eps} = 0; per-shell restriction
-          dim 4 on all four Dirac shells (one M2(C) per Dirac shell); center = C[M]; and sep
-          is exactly orthogonal to A_nat (native readout blindness to the ind12 split).
-  Part B  H-stability lemma: conjugation by H maps the generating triple {D2, J_full, S_eps}
-          into A_nat, so reach omega(g) := overlap^2 of sep with <A_nat, g> is an H-class
-          function on G_amb.
-  Part C  reach-quantized census over all 36 H-classes: every extension TRUE-closes below
-          cap 350; omega takes exactly the four values {0, 1/9, 1/3, 1} with element counts
-          {528, 12, 96, 132}; a nine-cell refined (dim, omega) histogram; and an order census.
-  Part D  character-blindness inversion: Delta-chi(g) = tr(P_a g) - tr(P_b g) in {0, +-4 sqrt2}
-          is nonzero exactly on the four order-8 classes stuck at omega = 1/3; every
-          fully-reaching element is character-blind.
-  Part E  minimal central unlock: A28 = <A_nat, g1> with g1 = diag((-1)^{x2}) . T(1,1,1) has
-          dim 28 and is isomorphic to M2(C)^7; the center refines C^4 -> C^7; the shell-2
-          central pair is exactly {P_a, P_b}, so sep = e_a - e_b, a difference of minimal
-          central idempotents of A28.
-  Part F  shift-direction dial: same sign field (-1)^{x2}, three shifts giving omega in
-          {1, 1/9, 0}.
-  Part G  discriminating rejectors: an in-frame central difference IS seen; the dial spread
-          is real; a wrong sign field does not reproduce the unlock.
+  - A_nat = <D2, J_full, S_eps> true-closes at dimension 16, has four-dimensional
+    restrictions on every Dirac shell, and has center C[M] at the stated tolerances.
+  - sep has overlap^2 at numerical zero against A_nat.
+  - H stabilizes A_nat and sep, making the computed reach invariant on the H-classes.
+  - The 36-class census resolves four reach labels and a nine-cell dimension/reach histogram.
+  - A28 = <A_nat, g1> true-closes at dimension 28 and numerically resolves seven M2(C)
+    summands, with sep represented as the difference of two minimal central idempotents.
+  - Shift and rotation contrasts exercise the same reach machinery away from the target.
 
 ANTI-FABRICATION DISCIPLINE.  Every dimension, reach value, character difference, rank,
-residual and cluster count below is recomputed from the real integer/float matrices D2f,
-Jfull, Seps, the constituent frames Zs / projectors Ps and the actual 768 elements of G_amb
--- never from a comparison target.  Reach is read by the same resid machinery for every
-gate: the in-frame central difference P_shell(0) - P_shell(3) at overlap^2 = 1 (Part G) and
-sep at overlap^2 = 0 (Part A) come from that one function.  Every reach and dimension gate is
-taken only at TRUE closure (empty frontier below cap), never on a capped basis.  Unless a
-singular value is named explicitly, matrix residuals use the Frobenius norm; every SVD passes
-full_matrices=False (economy).  "CP" and "chiral" are geometric labels for S_eps and the two
-chi_sgn-graded halves of the real-12 only, never a Standard-Model statement.
+residual, cluster count, and numerical separation margin claimed by this runner is recomputed
+from D2f, Jfull, Seps, the constituent projectors, and the 768 elements of G_amb. Reach is
+read by the same residual machinery for every gate. Every reach and dimension gate is taken
+only at true closure (empty frontier below cap), never on a capped basis. Unless a singular
+value is named, matrix residuals use the Frobenius norm; every SVD uses economy form. Any CP
+or chirality tokens retained in construction tags are geometric provenance labels only, not
+physical identifications.
 """
 import itertools
 import sys
@@ -46,10 +31,10 @@ import sys
 import numpy as np
 
 L, N = 4, 64
-TOL0 = 1e-12       # exact-class float residual
+TOL0 = 1e-12       # matrix-equality-class float residual
 TOL_J = 1e-9       # J_full covariance residual
 SV_NULL = 1e-8     # census null-space cut
-SV_GAP = 1e-4      # census kept-singular-value floor
+SV_GAP = 1e-4      # kept-singular-value / inter-cluster floor
 TOL_EIG = 1e-8     # holomorphic eigenvector selection (construction)
 TOL_COMM = 1e-6    # commutant SVD cut (construction)
 
@@ -58,7 +43,7 @@ def eqm(a, b):
     return np.array_equal(a, b)
 
 
-# ================= construction (object-identical to the Unit-20 runner) =====================
+# ================= finite-surface construction ================================================
 def idx(a, b, c):
     return (a * L + b) * L + c
 
@@ -261,7 +246,7 @@ def split_block(Z, basis_mats, r, d):
     return None, None, -1
 
 
-# 5 holomorphic G_amb-idempotents on W (Unit-12 census)
+# Five holomorphic G_amb idempotents on W from the constituent census.
 Cgens = [Bh.conj().T @ g.astype(complex) @ Bh for g in gens_G]
 dimcW = commutant_dim(Cgens, 32)
 BsW = commutant_basis(Cgens, 32, dimcW)
@@ -272,7 +257,7 @@ ranksW = [ranksW[i] for i in order]
 PW = [z @ z.conj().T for z in subZW]
 PHm = [Seps.astype(complex) @ p @ Seps.astype(complex) for p in PW]
 
-# the SIX CP-completed H-constituents (Unit 14)
+# The six H-constituents after geometric parity completion.
 gens_Hc = [g.astype(complex) for g in gens_H]
 constituents = []  # (tag, Z, wrank, is_split)
 for k in range(len(PW)):
@@ -293,7 +278,7 @@ for k in range(len(PW)):
         for h_i, zz in enumerate(subZb):
             constituents.append((f"split12_{'+' if h_i == 0 else '-'}(W{wrank})", zz, wrank, True))
 
-# ============================= derived objects (Unit-20 conventions) =========================
+# ============================= derived operator-algebra objects ===============================
 I64 = np.eye(64)
 tags = [c[0] for c in constituents]
 Zs = [c[1] for c in constituents]
@@ -317,7 +302,7 @@ gens_H_c = [g.astype(complex) for g in gens_H]
 
 
 # =============================== helpers & gate machinery ====================================
-# the ind12 separator (the fifth central direction of Unit 20)
+# The ind12 separator (the fifth central direction of the bicommutant construction).
 Pa = Ps[i_ind12[0]]
 Pb = Ps[i_ind12[1]]
 sep = Pa - Pb
@@ -416,6 +401,13 @@ def center_of(Xlist, gens, tol=SV_NULL):
     return len(null_idx), zmats, s
 
 
+def sv_margins(s, tol=SV_NULL):
+    """Return the largest numerical-null and smallest kept singular values."""
+    dropped = [float(x) for x in s if x < tol]
+    kept = [float(x) for x in s if x >= tol]
+    return max(dropped, default=0.0), min(kept, default=float("inf"))
+
+
 def elt_order(g, cap=64):
     P = g.astype(np.int64)
     cur = P.copy()
@@ -434,67 +426,76 @@ def frob(A):
     return float(np.linalg.norm(A))
 
 
-# native qubit frame basis, reused across Parts A, B, G
+# Native-frame basis, reused by the stability and contrast gates.
 Bnat, nat_closed = word_algebra([D2f, Jfull, Seps])
 Xnat = rowmats(Bnat)
 
 print("[INFO] reach omega(g) := overlap^2(<A_nat, g>, sep); matrix residuals are Frobenius "
       "unless a singular value is named; every SVD is economy (full_matrices=False)")
 
-# ================================== PART A -- native qubit frame ==============================
+# ================================== native frame ===============================================
 B_d2, cl_d2 = word_algebra([D2f])
-gate("A1", cl_d2 and B_d2.shape[0] == 7,
+gate("NATIVE-D2-ALGEBRA", cl_d2 and B_d2.shape[0] == 7,
      f"dim<D2f>={B_d2.shape[0]} (=7) closed={cl_d2}  [C[D2]: spectrum {{0, +-2i sqrt m}}]")
 
 B_dj, cl_dj = word_algebra([D2f, Jfull])
-gate("A2", cl_dj and B_dj.shape[0] == 8,
+gate("NATIVE-DIRAC-PAIR", cl_dj and B_dj.shape[0] == 8,
      f"dim<D2f,Jfull>={B_dj.shape[0]} (=8) closed={cl_dj}  [adds only the kernel complex structure]")
 
-gate("A3", nat_closed and Bnat.shape[0] == 16,
+gate("NATIVE-FRAME-DIM", nat_closed and Bnat.shape[0] == 16,
      f"dim A_nat=<D2f,Jfull,Seps>={Bnat.shape[0]} (=16) closed={nat_closed}")
 
 _j2 = frob(Jfull @ Jfull + I64)
 _s2 = frob(Seps @ Seps - I64)
 _ac = frob(Jfull @ Seps + Seps @ Jfull)
-gate("A4.1", _j2 < 1e-12, f"complex structure ||Jfull^2+I||_F={_j2:.12e} (<1e-12)")
-gate("A4.2", _s2 < 1e-12, f"involution ||Seps^2-I||_F={_s2:.12e} (<1e-12)")
-gate("A4.3", _ac < 1e-12, f"anticommutation ||Jfull.Seps+Seps.Jfull||_F={_ac:.12e} (<1e-12)")
+gate("NATIVE-COMPLEX-STRUCTURE", _j2 < 1e-12,
+     f"complex structure ||Jfull^2+I||_F={_j2:.12e} (<1e-12)")
+gate("NATIVE-PARITY-INVOLUTION", _s2 < 1e-12,
+     f"involution ||Seps^2-I||_F={_s2:.12e} (<1e-12)")
+gate("NATIVE-GRADING-ANTICOMMUTATION", _ac < 1e-12,
+     f"anticommutation ||Jfull.Seps+Seps.Jfull||_F={_ac:.12e} (<1e-12)")
 
 shell_dims_nat = [span_dim([Pf[m] @ X @ Pf[m] for X in Xnat]) for m in range(4)]
-gate("A5", shell_dims_nat == [4, 4, 4, 4],
-     f"per-shell restriction dims of A_nat={shell_dims_nat} (=[4,4,4,4]) => one M2(C) qubit per Dirac shell")
+gate("NATIVE-SHELL-BLOCKS", shell_dims_nat == [4, 4, 4, 4],
+     f"per-shell restriction dims of A_nat={shell_dims_nat} (=[4,4,4,4])")
 
 dimZnat, zmats_nat, _s_nat = center_of(Xnat, [D2f, Jfull, Seps])
+_nat_null_max, _nat_kept_min = sv_margins(_s_nat)
 centerB_nat = orthonormal_basis(zmats_nat)
 res_shell = [resid(centerB_nat, Pf[m]) for m in range(4)]
-gate("A6.1", dimZnat == 4, f"dim Z(A_nat)={dimZnat} (=4)")
-gate("A6.2", max(res_shell) < 1e-10,
-     f"Z(A_nat)=C[M] exactly: max_m resid(Pf[m], null-span)={max(res_shell):.12e} (<1e-10)")
+gate("NATIVE-CENTER-DIM", dimZnat == 4, f"dim Z(A_nat)={dimZnat} (=4)")
+gate("NATIVE-CENTER-GAP", _nat_null_max < SV_NULL and _nat_kept_min > SV_GAP,
+     f"center SVD margin: largest null={_nat_null_max:.12e} (<{SV_NULL:.1e}); "
+     f"smallest kept={_nat_kept_min:.12e} (>{SV_GAP:.1e})")
+gate("NATIVE-CENTER-CM", max(res_shell) < 1e-10,
+     f"Z(A_nat) numerically matches C[M]: max_m resid(Pf[m], null-span)="
+     f"{max(res_shell):.12e} (<1e-10)")
 
 ov_sep_nat = overlap2(Bnat, sep)
-gate("A7", ov_sep_nat <= 1e-10,
-     f"sep blindness: overlap^2(A_nat, sep)={ov_sep_nat:.12e} (<=1e-10, sep orthogonal to A_nat)")
+gate("NATIVE-SEPARATOR-ORTHOGONALITY", abs(ov_sep_nat) <= 1e-10,
+     f"sep non-membership: overlap^2(A_nat, sep)={ov_sep_nat:.12e} "
+     f"(|overlap^2|<=1e-10 at the stated tolerance)")
 
-# ================================== PART B -- H-stability lemma ===============================
+# ================================== H stability ===============================================
 _seps_not_gamb = Seps_int.tobytes() not in Gamb_set
 _conj_ok = all((h @ g @ h.T).tobytes() in Gamb_set for h in Hgens for g in gens_G)
-gate("B1.1", _seps_not_gamb,
+gate("STABILITY-PARITY-OUTSIDE-AMBIENT", _seps_not_gamb,
      f"S_eps not in G_amb (in G_amb={not _seps_not_gamb}, must be False: H strictly enlarges G_amb)")
-gate("B1.2", _conj_ok,
+gate("STABILITY-AMBIENT-NORMALITY", _conj_ok,
      f"conj by H maps G_amb -> G_amb: all {len(Hgens)}x{len(gens_G)} spot conjugates land in G_amb={_conj_ok}")
 
 Hgens_f = [h.astype(float) for h in Hgens]
 res_b2 = max(resid(Bnat, h @ X @ h.T) for h in Hgens_f for X in [D2f, Jfull, Seps])
-gate("B2", res_b2 < 1e-10,
+gate("STABILITY-NATIVE-FRAME", res_b2 < 1e-10,
      f"conj by H maps {{D2f,Jfull,Seps}} into A_nat: max_h,X resid(A_nat, h X h^T)={res_b2:.12e} "
      f"(<1e-10) => conj by H preserves A_nat")
 
 res_b3 = max(frob(h @ sep @ h.T - sep) for h in Hgens_f)
-gate("B3", res_b3 < 1e-10,
+gate("STABILITY-SEPARATOR", res_b3 < 1e-10,
      f"conj by H fixes the separator: max_h ||h sep h^T - sep||_F={res_b3:.12e} "
-     f"(<1e-10) => with B2, omega(g)=overlap^2(<A_nat,g>, sep) is an H-class function")
+     f"(<1e-10) => with native-frame stability, omega is numerically H-class invariant")
 
-# ================================== PART C -- reach-quantized census ==========================
+# ================================== reach census ===============================================
 # partition G_amb into H-conjugation classes (orbit-closure BFS over Hgens)
 elts = {g.tobytes(): g for g in Gamb}
 unassigned = dict(elts)
@@ -533,24 +534,25 @@ for ci, c in enumerate(classes):
 
 _nclass = len(classes)
 _sizesum = sum(r["size"] for r in records)
-gate("C1.1", _nclass == 36, f"number of H-classes={_nclass} (=36)")
-gate("C1.2", _sizesum == 768, f"class sizes sum={_sizesum} (=768, partition of G_amb)")
+gate("CENSUS-CLASS-COUNT", _nclass == 36, f"number of H-classes={_nclass} (=36)")
+gate("CENSUS-ELEMENT-COUNT", _sizesum == 768,
+     f"class sizes sum={_sizesum} (=768, partition of G_amb)")
 
 _all_closed = all(r["closed"] for r in records)
 _max_dim = max(r["dim"] for r in records)
-gate("C2", _all_closed and _max_dim < 350,
+gate("CENSUS-TRUE-CLOSURE", _all_closed and _max_dim < 350,
      f"every class rep TRUE-closes below cap 350: all_closed={_all_closed}, max closed dim={_max_dim}")
 
 _max_ores = max(r["ores"] for r in records)
 _vals = sorted(set(RAT_LABELS[r["oi"]] for r in records))
-gate("C3", _max_ores < 1e-9,
+gate("CENSUS-REACH-SPECTRUM", _max_ores < 1e-9,
      f"every class omega matches one of {{0, 1/9, 1/3, 1}} within 1e-9: max match residual="
      f"{_max_ores:.12e}; observed labels={_vals}")
 
 counts = [0, 0, 0, 0]
 for r in records:
     counts[r["oi"]] += r["size"]
-gate("C4", counts == [528, 12, 96, 132],
+gate("CENSUS-REACH-COUNTS", counts == [528, 12, 96, 132],
      f"element counts by omega {{0:{counts[0]}, 1/9:{counts[1]}, 1/3:{counts[2]}, 1:{counts[3]}}} "
      f"(={{528, 12, 96, 132}})")
 
@@ -563,25 +565,25 @@ expected_hist = {(16, 0): 4, (24, 0): 12, (28, 1): 12, (28, 3): 4, (32, 0): 96,
 print("[INFO] refined (dim, omega) census histogram [element counts]:")
 for key in sorted(hist):
     print(f"       (dim={key[0]:>3}, omega={RAT_LABELS[key[1]]:>4}): {hist[key]}")
-gate("C5", hist == expected_hist,
+gate("CENSUS-DIM-REACH-HISTOGRAM", hist == expected_hist,
      f"refined (dim, omega) histogram has {len(hist)} cells (=9) and matches expected element counts")
 
 oned3 = [r for r in records if r["oi"] == 2]
 one1 = [r for r in records if r["oi"] == 3]
 _c6a = len(oned3) == 4 and all(r["size"] == 24 and r["order"] == 8 for r in oned3)
 _c6b = sorted((r["size"], r["order"]) for r in one1) == [(4, 4), (64, 12), (64, 12)]
-gate("C6.1", _c6a,
+gate("CENSUS-THIRD-ORDERS", _c6a,
      f"order census: omega=1/3 -> {len(oned3)} classes size 24 all order 8 (ok={_c6a})")
-gate("C6.2", _c6b,
+gate("CENSUS-FULL-REACH-ORDERS", _c6b,
      f"order census: omega=1 -> (size,order) multiset={sorted((r['size'], r['order']) for r in one1)} "
      f"(=[(4,4),(64,12),(64,12)], ok={_c6b})")
 
-# ================================== PART D -- character-blindness inversion ====================
+# ================================== character/reach relation ===================================
 FOURSQRT2 = 4.0 * np.sqrt(2.0)
 dchi_targets = [0.0, FOURSQRT2, -FOURSQRT2]
 max_dchi_res = max(min(abs(r["dchi"] - t) for t in dchi_targets) for r in records)
 dchi_seen = sorted(set(round(r["dchi"], 6) for r in records))
-gate("D1", max_dchi_res < 1e-9,
+gate("CHARACTER-SPECTRUM", max_dchi_res < 1e-9,
      f"every Delta-chi(g)=Re(tr(Pa g)-tr(Pb g)) in {{0, +-4 sqrt2}} within 1e-9: max match "
      f"residual={max_dchi_res:.12e}; observed values={dchi_seen} (4 sqrt2={FOURSQRT2:.12g})")
 
@@ -590,20 +592,22 @@ set_third = set(r["idx"] for r in records if r["oi"] == 2)
 set_reach = set(r["idx"] for r in records if r["oi"] == 3)
 _elts_dchi = sum(r["size"] for r in records if abs(r["dchi"]) > 1e-6)
 _omega1_blind = all(abs(r["dchi"]) < 1e-6 for r in records if r["oi"] == 3)
-gate("D2.1", set_dchi == set_third and len(set_dchi) > 0 and len(set_third) > 0,
+gate("CHARACTER-THIRD-INVERSION",
+     set_dchi == set_third and len(set_dchi) > 0 and len(set_third) > 0,
      f"inversion: {{Delta-chi != 0}} == {{omega=1/3}}={set_dchi == set_third} "
      f"(4 classes, |Delta-chi!=0 classes|={len(set_dchi)}, {_elts_dchi} elements; both nonempty)")
-gate("D2.2", _omega1_blind and len(set_reach) > 0,
+gate("CHARACTER-FULL-BLINDNESS", _omega1_blind and len(set_reach) > 0,
      f"every fully-reaching (omega=1) class is character-blind (Delta-chi=0)={_omega1_blind}; "
      f"reaching set nonempty={len(set_reach) > 0}")
 
-# ================================== PART E -- minimal central unlock A28 =======================
+# ================================== 28-dimensional central extension ============================
 g1 = np.diag(SF[(0, 1, 0, 0, 0, 0)]) @ TR[(1, 1, 1)]        # diag((-1)^{x2}) . T(1,1,1)
 g1f = g1.astype(float)
 ord_g1 = elt_order(g1)
-gate("E1.1", g1.tobytes() in Gamb_set,
+gate("UNLOCK-MINIMAL-ELEMENT-MEMBERSHIP", g1.tobytes() in Gamb_set,
      f"g1=diag((-1)^{{x2}}).T(1,1,1) in G_amb (by matrix equality)={g1.tobytes() in Gamb_set}")
-gate("E1.2", ord_g1 == 4, f"order(g1)={ord_g1} (=4: a sign-dressed body-diagonal unit translation)")
+gate("UNLOCK-MINIMAL-ELEMENT-ORDER", ord_g1 == 4,
+     f"order(g1)={ord_g1} (=4: a sign-dressed body-diagonal unit translation)")
 
 # H-orbit of g1 (same conjugation BFS)
 orb = {g1.tobytes(): g1}
@@ -621,28 +625,32 @@ while frontier:
 g1_3 = g1 @ g1 @ g1
 target_orbit = {g1.tobytes(), g1_3.tobytes(), (-g1).tobytes(), (-g1_3).tobytes()}
 one1_sizes = sorted(r["size"] for r in one1)
-gate("E2.1", set(orb.keys()) == target_orbit and len(orb) == 4,
+gate("UNLOCK-MINIMAL-ELEMENT-ORBIT", set(orb.keys()) == target_orbit and len(orb) == 4,
      f"H-orbit of g1 == {{g1, g1^3, -g1, -g1^3}} exactly (size {len(orb)}=4, "
      f"match={set(orb.keys()) == target_orbit})")
-gate("E2.2", one1_sizes == [4, 64, 64],
+gate("UNLOCK-MINIMAL-CLASS", one1_sizes == [4, 64, 64],
      f"g1's class is the unique smallest reaching class: omega=1 class sizes={one1_sizes} "
      f"(=[4,64,64], every other omega=1 class has size 64)")
 
 B28, cl28 = word_algebra([D2f, Jfull, Seps, g1f])
 X28 = rowmats(B28)
 ov_g1 = overlap2(B28, sep)
-gate("E3.1", cl28 and B28.shape[0] == 28,
+gate("UNLOCK-ALGEBRA-DIM", cl28 and B28.shape[0] == 28,
      f"dim A28=<A_nat,g1>={B28.shape[0]} (=28) TRUE-closed={cl28}")
-gate("E3.2", abs(ov_g1 - 1.0) < 1e-9,
+gate("UNLOCK-FULL-REACH", abs(ov_g1 - 1.0) < 1e-9,
      f"omega(g1)={ov_g1:.12e} (|omega-1|={abs(ov_g1 - 1.0):.3e}<1e-9, sep in A28)")
 
 shell_dims_28 = [span_dim([Pf[m] @ X @ Pf[m] for X in X28]) for m in range(4)]
-gate("E4", shell_dims_28 == [4, 8, 8, 8],
+gate("UNLOCK-SHELL-DIMS", shell_dims_28 == [4, 8, 8, 8],
      f"per-shell restriction dims of A28={shell_dims_28} (=[4,8,8,8])")
 
 dimZ28, zmats_28, _s28 = center_of(X28, [D2f, Jfull, Seps, g1f])
-gate("E5", dimZ28 == 7,
-     f"Wedderburn: dim Z(A28)=commutant nullspace={dimZ28} (=7, center refines C^4 -> C^7)")
+_a28_null_max, _a28_kept_min = sv_margins(_s28)
+gate("UNLOCK-CENTER-DIM", dimZ28 == 7,
+     f"dim Z(A28)=commutant nullspace={dimZ28} (=7, center refines C^4 -> C^7)")
+gate("UNLOCK-CENTER-GAP", _a28_null_max < SV_NULL and _a28_kept_min > SV_GAP,
+     f"center SVD margin: largest null={_a28_null_max:.12e} (<{SV_NULL:.1e}); "
+     f"smallest kept={_a28_kept_min:.12e} (>{SV_GAP:.1e})")
 
 
 def count_clusters(zmats, seed, tol=1e-6):
@@ -658,17 +666,23 @@ def count_clusters(zmats, seed, tol=1e-6):
             groups.append([j])
         else:
             groups[-1].append(j)
-    return groups, w, V
+    max_intra = max(float(w[g[-1]] - w[g[0]]) for g in groups)
+    min_inter = min(float(w[groups[j + 1][0]] - w[groups[j][-1]])
+                    for j in range(len(groups) - 1))
+    return groups, w, V, max_intra, min_inter
 
 
-groups_a, _, _ = count_clusters(zmats_28, 20260725)
-groups_b, _, _ = count_clusters(zmats_28, 42)
-gate("E6.1", len(groups_a) == 7,
-     f"central sampling (complex coeffs) seed=20260725: #eigenvalue clusters={len(groups_a)} (=7)")
-gate("E6.2", len(groups_b) == 7,
-     f"central sampling (complex coeffs) seed=42: #eigenvalue clusters={len(groups_b)} (=7) [degeneracy guard]")
+groups_a, w_a, V_a, _intra_a, _inter_a = count_clusters(zmats_28, 20260725)
+groups_b, _, _, _intra_b, _inter_b = count_clusters(zmats_28, 42)
+gate("UNLOCK-CENTER-CLUSTERS-PRIMARY",
+     len(groups_a) == 7 and _intra_a < SV_NULL and _inter_a > SV_GAP,
+     f"central sampling seed=20260725: clusters={len(groups_a)} (=7); "
+     f"max intra={_intra_a:.12e} (<{SV_NULL:.1e}); min inter={_inter_a:.12e} (>{SV_GAP:.1e})")
+gate("UNLOCK-CENTER-CLUSTERS-CONTRAST",
+     len(groups_b) == 7 and _intra_b < SV_NULL and _inter_b > SV_GAP,
+     f"central sampling seed=42: clusters={len(groups_b)} (=7); "
+     f"max intra={_intra_b:.12e} (<{SV_NULL:.1e}); min inter={_inter_b:.12e} (>{SV_GAP:.1e})")
 
-groups_a, w_a, V_a = count_clusters(zmats_28, 20260725)
 idems = [V_a[:, g] @ V_a[:, g].conj().T for g in groups_a]
 blockdims = [span_dim([E @ X @ E for X in X28]) for E in idems]
 ranks_e = [int(round(np.trace(E).real)) for E in idems]
@@ -678,11 +692,12 @@ for rk, sup in zip(ranks_e, supports):
     support_ms[(rk, sup)] = support_ms.get((rk, sup), 0) + 1
 expected_support_ms = {(8, frozenset({0})): 1, (12, frozenset({1})): 2,
                        (12, frozenset({2})): 2, (4, frozenset({3})): 2}
-gate("E7.1", all(bd == 4 for bd in blockdims),
-     f"A28 ~= M2(C)^7: every spectral-idempotent blockdim dim{{E X E}}={sorted(blockdims)} (all =4)")
-gate("E7.2", sorted(ranks_e) == [4, 4, 8, 12, 12, 12, 12],
+gate("UNLOCK-WEDDERBURN-BLOCKS", all(bd == 4 for bd in blockdims),
+     f"A28 numerically resolves M2(C)^7: spectral-idempotent blockdims="
+     f"{sorted(blockdims)} (all =4)")
+gate("UNLOCK-IDEMPOTENT-RANKS", sorted(ranks_e) == [4, 4, 8, 12, 12, 12, 12],
      f"idempotent rank multiset={sorted(ranks_e)} (=[4,4,8,12,12,12,12])")
-gate("E7.3", support_ms == expected_support_ms,
+gate("UNLOCK-SHELL-SUPPORTS", support_ms == expected_support_ms,
      f"(rank,shell-support) multiset matches {{(8,{{0}}):1,(12,{{1}}):2,(12,{{2}}):2,(4,{{3}}):2}} "
      f"-> {support_ms == expected_support_ms} (shell 0 does not split; shells 1,2,3 split in two)")
 
@@ -698,30 +713,33 @@ if len(shell2_idems) == 2:
     else:
         Ea, Eb, _best = E2, E1, m2
     _sepdiff = frob(sep - (Ea - Eb))
-gate("E8.1", len(shell2_idems) == 2 and _best < 1e-8,
+gate("UNLOCK-SHELL2-IDEMPOTENTS", len(shell2_idems) == 2 and _best < 1e-8,
      f"the two shell-2 minimal central idempotents match {{Pa,Pb}}: min-matching "
      f"max||E-P||_F={_best:.12e} (<1e-8)")
-gate("E8.2", _sepdiff < 1e-8,
+gate("UNLOCK-SEPARATOR-IDEMPOTENTS", _sepdiff < 1e-8,
      f"sep = e_a - e_b: ||sep-(Ea-Eb)||_F={_sepdiff:.12e} (<1e-8) => sep is a difference of "
      f"minimal central idempotents of A28")
 
-# ================================== PART F -- shift-direction dial =============================
+# ================================== shift-direction contrasts =================================
 g_ninth = np.diag(SF[(0, 1, 0, 0, 0, 0)]) @ TR[(1, 1, 3)]
 g_zero = np.diag(SF[(0, 1, 0, 0, 0, 0)]) @ TR[(1, 1, 2)]
 Bn9, cln9 = word_algebra([D2f, Jfull, Seps, g_ninth.astype(float)])
 ov_n9 = overlap2(Bn9, sep)
-gate("F1", g_ninth.tobytes() in Gamb_set and cln9 and Bn9.shape[0] == 28 and abs(ov_n9 - 1.0 / 9.0) < 1e-9,
+gate("SHIFT-REACH-NINTH",
+     g_ninth.tobytes() in Gamb_set and cln9 and Bn9.shape[0] == 28
+     and abs(ov_n9 - 1.0 / 9.0) < 1e-9,
      f"g_ninth in G_amb={g_ninth.tobytes() in Gamb_set}; dim<A_nat,g_ninth>={Bn9.shape[0]} (=28) "
      f"closed={cln9}; omega={ov_n9:.12e} (|omega-1/9|={abs(ov_n9-1.0/9.0):.3e}<1e-9)")
 
 Bz, clz = word_algebra([D2f, Jfull, Seps, g_zero.astype(float)])
 ov_z = overlap2(Bz, sep)
-gate("F2", g_zero.tobytes() in Gamb_set and clz and Bz.shape[0] == 48 and ov_z <= 1e-10,
+gate("SHIFT-REACH-ZERO",
+     g_zero.tobytes() in Gamb_set and clz and Bz.shape[0] == 48 and abs(ov_z) <= 1e-10,
      f"g_zero in G_amb={g_zero.tobytes() in Gamb_set}; dim<A_nat,g_zero>={Bz.shape[0]} (=48) "
-     f"closed={clz}; omega={ov_z:.12e} (<=1e-10)")
+     f"closed={clz}; omega={ov_z:.12e} (|omega|<=1e-10)")
 
-gate("F3", Bn9.shape[0] == 28 and B28.shape[0] == 28,
-     f"dims in F1 and E3 are BOTH 28 (g_ninth->{Bn9.shape[0]}, g1->{B28.shape[0]}): "
+gate("SHIFT-DIMENSION-CONTRAST", Bn9.shape[0] == 28 and B28.shape[0] == 28,
+     f"g_ninth and g1 extension dims are both 28 ({Bn9.shape[0]}, {B28.shape[0]}): "
      f"extension dimension does NOT determine reach")
 
 g_ur1 = np.diag(SF[(0, 0, 0, 1, 1, 0)]) @ UR @ TR[(0, 0, 1)]
@@ -742,7 +760,7 @@ def class_size_of(gmat):
 
 sz_u1 = class_size_of(g_ur1)
 sz_u3 = class_size_of(g_ur3)
-gate("F4",
+gate("ROTATION-FULL-REACH",
      g_ur1.tobytes() in Gamb_set and g_ur3.tobytes() in Gamb_set
      and elt_order(g_ur1) == 12 and elt_order(g_ur3) == 12
      and clu1 and clu3 and Bu1.shape[0] == 76 and Bu3.shape[0] == 76
@@ -752,26 +770,26 @@ gate("F4",
      f"{Bu3.shape[0]} (=76) closed={clu1},{clu3}; omega={ov_u1:.12e},{ov_u3:.12e} (=1); "
      f"H-class sizes={sz_u1},{sz_u3} (=64)")
 
-# ================================== PART G -- discriminating rejectors =========================
+# ================================== discriminating controls ====================================
 ov_g1_central = overlap2(Bnat, Pf[0] - Pf[3])
-gate("G1", abs(ov_g1_central - 1.0) < 1e-9,
+gate("REACH-IN-FRAME-CONTROL", abs(ov_g1_central - 1.0) < 1e-9,
      f"membership detector sanity: overlap^2(A_nat, Pf[0]-Pf[3])={ov_g1_central:.12e} "
      f"(=1 within 1e-9: an in-frame central difference IS seen by the same resid machinery)")
 
 _g2 = abs(ov_g1 - 1.0 / 3.0) > 0.5 and abs(ov_z - 1.0) > 0.9
-gate("G2", _g2,
+gate("REACH-DIAL-CONTRAST", _g2,
      f"wrong-value rejector: |omega(g1)-1/3|={abs(ov_g1-1.0/3.0):.6g} (>0.5) and "
-     f"|omega(g_zero)-1|={abs(ov_z-1.0):.6g} (>0.9): the dial spread is real, not a constant readout")
+     f"|omega(g_zero)-1|={abs(ov_z-1.0):.6g} (>0.9): the reach contrast is nonconstant")
 
 gp = np.diag(SF[(1, 0, 0, 0, 0, 0)]) @ TR[(1, 1, 1)]        # wrong sign field (-1)^{x1} . T(1,1,1)
 if gp.tobytes() in Gamb_set:
     Bgp, clgp = word_algebra([D2f, Jfull, Seps, gp.astype(float)])
     ovp = overlap2(Bgp, sep)
-    gate("G3", abs(ovp - 1.0) > 1e-3,
+    gate("REACH-SIGNFIELD-PERTURBATION", abs(ovp - 1.0) > 1e-3,
          f"perturbation rejector: gp=diag((-1)^{{x1}}).T(1,1,1) in G_amb; measured omega(gp)={ovp:.12e}, "
          f"|omega(gp)-1|={abs(ovp-1.0):.6g} (>1e-3): a wrong sign field does NOT reproduce the unlock")
 else:
-    gate("G3", True,
+    gate("REACH-SIGNFIELD-PERTURBATION", True,
          f"perturbation rejector: gp=diag((-1)^{{x1}}).T(1,1,1) is NOT in G_amb "
          f"(gp in G_amb={gp.tobytes() in Gamb_set}): a wrong sign field is not even an admissible "
          f"extension, so it cannot reproduce the unlock")

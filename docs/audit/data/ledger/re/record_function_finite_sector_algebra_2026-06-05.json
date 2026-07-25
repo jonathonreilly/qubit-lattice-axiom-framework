@@ -42,7 +42,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 13.006,
+  "load_bearing_score": 13.008,
   "load_bearing_step": "Finite additivity gives I(A) = chi_A \u00b7 v, while the supplied two-block and C3 definitions algebraically give rho = 2r and Q = 1/3 + (2/3)r.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -4971,6 +4971,6 @@
   },
   "runner_path": "scripts/record_function_finite_sector_algebra_2026_06_05.py",
   "title": "Record Function Finite Sector Algebra",
-  "transitive_descendants": 726,
+  "transitive_descendants": 727,
   "verdict_rationale": "The runner genuinely performs 21 symbolic or exhaustive finite class-A checks and supports the finite-additivity, incidence-composition, scale-invariance, and displayed conditional identities. However, the generation-sector powers and C3/K-real lambda form are supplied without a direct retained or accepted authority, while the accepted Record premise supplies only finite scalar additivity. The asserted negative boundary is narrow: the arbitrary-ratio family supports absence of value selection, and finite additivity contains no update-law premise, but these checks do not certify a broader no-go. For N1-N8, only these narrow mechanisms are evidenced, the two walls are distinct, no prior residual witness is invoked, rhetoric-resolution testing is not exhaustive, indexed alternatives do not supply the missing generation bridge, and the strongest steelman\u2014adding retained weighting, dynamics, or generation-readout authority\u2014remains outside the packet."
 }

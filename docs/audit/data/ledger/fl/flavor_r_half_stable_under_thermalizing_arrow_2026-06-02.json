@@ -74,7 +74,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 11.57,
+  "load_bearing_score": 11.585,
   "load_bearing_step": "For g(r)=sqrt(r/2), g'(1/2)=1/2<1, so r=1/2 is stable under the supplied map.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -348,6 +348,6 @@
   },
   "runner_path": "scripts/flavor_r_half_stable_under_thermalizing_arrow_2026_06_02.py",
   "title": "Flavor \u2014 r=1/2 is stable for the supplied two-sector reverse map `g(r)=sqrt(r/2)`; physical-arrow selection remains open.",
-  "transitive_descendants": 94,
+  "transitive_descendants": 95,
   "verdict_rationale": "Issue: The runner sets a=1 and b=1, so the r=1 endpoint [0,0,3] is verified only on the phase-aligned b/a=1 slice, whereas r=|b|\u00b2/a\u00b2=1 leaves the phase free. Why this blocks: for generic complex b with |b|=a, the spectrum of aI+bC+conj(b)C\u00b2 differs, so the full stated scope does not follow. Repair target: add and justify the phase constraint or state the phase-dependent endpoint spectrum and extend the runner accordingly. Claim boundary until fixed: stability under the supplied scalar map, HS equipartition, and the Q identity remain supported, but generic r=1 endpoint exclusion does not."
 }

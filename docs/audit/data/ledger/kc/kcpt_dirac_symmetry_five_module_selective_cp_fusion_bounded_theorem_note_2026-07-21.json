@@ -19,20 +19,20 @@
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "leaf",
+  "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
     "kcpt_cp_completion_under_extended_group_bounded_theorem_note_2026-07-20",
     "kcpt_symplectic_leg_chisgn_covariance_omega_pairing_bounded_theorem_note_2026-07-20"
   ],
-  "direct_in_degree": 1,
+  "direct_in_degree": 2,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 1.5,
+  "load_bearing_score": 2.585,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -53,6 +53,6 @@
   },
   "runner_path": "scripts/kcpt_dirac_symmetry_five_module_selective_cp_fusion_2026_07_21.py",
   "title": "KCPT Dirac-symmetry five-module selective CP-fusion: the generated algebra \ud835\udc9c = \u27e8D2, J_full, \u03c1(H)\u27e9 has center C\u2075 \u2014 fusing only the unique \u03c7_sgn-swap pair {12\u207a,12\u207b} into one irreducible 24 while resolving the M-degenerate induced-12 pair \u2014 with C[M] \u228a Z(\ud835\udc9c) \u228a End_H at dims 4 \u228a 5 \u228a 6",
-  "transitive_descendants": 1,
+  "transitive_descendants": 2,
   "verdict_rationale": null
 }

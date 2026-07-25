@@ -102,7 +102,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "retained_bounded",
-  "load_bearing_score": 15.787,
+  "load_bearing_score": 15.788,
   "load_bearing_step": "The Berezin integral selects the top-degree term, whose Grassmann reordering yields the Leibniz sum for det(M), while graded commutativity gives a minus sign when two odd elements are exchanged.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -195,6 +195,6 @@
   },
   "runner_path": "scripts/audit_companion_spin_statistics_berezin_determinant_exact_2026_05_10.py",
   "title": "Spin-Statistics \u2014 Berezin Determinant Narrow Theorem",
-  "transitive_descendants": 1248,
+  "transitive_descendants": 1249,
   "verdict_rationale": "This is a genuine class-(A) algebraic closure from explicitly stated finite-Grassmann hypotheses, without a physical-field identification or imported numerical premise. The runner performs 19 exact algebraic checks of the Leibniz determinant formula, exterior-algebra relations, antisymmetry, and stated corollaries; although it does not implement the full exponential coefficient extraction, that general step is supplied by the source proof. The clean scope fixes the Berezin-measure orientation and excludes normalized correlators when det(M)=0."
 }

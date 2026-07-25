@@ -74,7 +74,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 10.443,
+  "load_bearing_score": 10.459,
   "load_bearing_step": "The triangle inequality gives \u03a3_k|\u03bb_k| \u2265 |\u03a3_k\u03bb_k| = 3a, hence Q(V) \u2264 Q(S), with equality exactly when no \u03bb_k is negative.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -228,6 +228,6 @@
   },
   "runner_path": "scripts/frontier_koide_signed_vs_singular_value_readout_narrow.py",
   "title": "Koide Signed-Eigenvalue vs Singular-Value Readout Narrow Theorem",
-  "transitive_descendants": 86,
+  "transitive_descendants": 87,
   "verdict_rationale": "The source proof and full runner code support a genuine class-(A) algebraic result: the readouts share the numerator, while the triangle inequality controls their denominators and the exact samples establish \u03b8-dependence. The note also asserts a qualified derived negative boundary: outside the closed nonnegative-spectrum window, the singular-value readout does not retain Q=2/3 at r=1/2. However, the authenticated runner stdout is explicitly clipped and omits the load-bearing earlier checks, so the packet preflight forbids audited_clean until complete execution evidence is supplied."
 }

@@ -1,24 +1,81 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T03:23:34.436308+00:00",
+  "audit_invocation_history": [
+    "4ad7f4e56599417fa9f339f7b77153df"
+  ],
+  "audit_invocation_id": "4ad7f4e56599417fa9f339f7b77153df",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/frontier_alpha_s_direct_wilson_loop_static_certificate.py"
+    },
+    "criticality": "high",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+      "plaquette_self_consistency_note": "For a fixed finite periodic L^4 SU(3) Wilson lattice with compact Haar product measure and specified beta, P_bar is bounded and has a unique finite expectation; the runner supplies finite diagnostics, not a physical 0.5934 certificate."
+    },
+    "dep_claim_type": {
+      "graph_first_su3_integration_note": "positive_theorem",
+      "plaquette_self_consistency_note": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "graph_first_su3_integration_note": "retained",
+      "plaquette_self_consistency_note": "retained_bounded"
+    },
+    "deps": [
+      "graph_first_su3_integration_note",
+      "plaquette_self_consistency_note"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 8.281,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_alpha_s_direct_wilson_loop_static_certificate.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "8751432f0659773f743b192ccb0a2c50a66a04f93afd692f5786f56011c74e2a",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "8751432f0659773f743b192ccb0a2c50a66a04f93afd692f5786f56011c74e2a",
+    "runner_path": "scripts/frontier_alpha_s_direct_wilson_loop_static_certificate.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 54
+  },
+  "audit_status": "audited_failed",
+  "auditor": "codex-audit-batch-A-20260725-fe7e6860",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The runner validates supplied JSON fields and simple positivity/count predicates, but it does not recompute the recorded observables, establish configuration provenance, or test the claimed Cornell/static-force internal consistency.",
   "claim_id": "alpha_s_direct_wilson_loop_derivation_theorem_note_2026-04-30",
-  "claim_scope": null,
+  "claim_scope": "Bounded validation of metadata, counts, positivity/finiteness predicates, and authority-firewall fields in the supplied beta=6 Wilson-loop/static-potential certificate; no physical alpha_s(M_Z) bridge.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T03:23:34.436308+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -27,19 +84,20 @@
     "plaquette_self_consistency_note"
   ],
   "direct_in_degree": 5,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_failed",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_failed",
   "load_bearing_score": 8.281,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The recorded Cornell/static-force diagnostics are finite and internally consistent on the certificate surface.",
+  "load_bearing_step_class": "B",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "80efaee9b8c902f4734becbed1aef34681012e5298692cdf31bd602e5f543a0b",
   "note_path": "docs/ALPHA_S_DIRECT_WILSON_LOOP_DERIVATION_THEOREM_NOTE_2026-04-30.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Re-audit after the runner recomputes the Cornell/static-force consistency relations from the recorded potential data and authenticates the claimed saved-configuration evidence, or after the note is narrowed to the literal JSON predicates checked.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -363,14 +421,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
+    "A": 3,
+    "B": 13,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 16
   },
   "runner_path": "scripts/frontier_alpha_s_direct_wilson_loop_static_certificate.py",
   "title": "Direct Wilson-Loop Static-Potential Certificate Gate",
   "transitive_descendants": 54,
-  "verdict_rationale": null
+  "verdict_rationale": "The completed runner reports 16 passing checks, and its source confirms that it loads the supplied certificate and evaluates the displayed schema, count, positivity, finiteness, and firewall predicates. Those are class-B checks of recorded inputs rather than an independent computation. More importantly, the runner never recomputes Cornell parameters, force-scheme values, or cross-field consistency, so the stated internal-consistency claim does not close even within the bounded certificate scope."
 }

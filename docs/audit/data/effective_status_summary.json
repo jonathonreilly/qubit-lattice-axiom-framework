@@ -1,6 +1,6 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 2149,
+    "bounded_theorem": 2150,
     "decoration": 29,
     "meta": 363,
     "no_go": 438,
@@ -82,7 +82,7 @@
   "effective_status_counts": {
     "audit_in_progress": 2,
     "audited_conditional": 89,
-    "audited_failed": 16,
+    "audited_failed": 17,
     "audited_numerical_match": 6,
     "audited_renaming": 21,
     "decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": 1,

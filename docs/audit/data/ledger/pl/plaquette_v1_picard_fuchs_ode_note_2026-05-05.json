@@ -63,7 +63,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "retained_bounded",
-  "load_bearing_score": 15.14,
+  "load_bearing_score": 15.142,
   "load_bearing_step": "The finite runner verifies that the displayed third-order ODE annihilates the J(beta) Taylor series through the tested truncation and that its Frobenius branch agrees with direct Weyl integration at beta in {2,4,6,8,10}, yielding J'(6)/J(6)=0.422531739650.",
   "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
@@ -365,6 +365,6 @@
   },
   "runner_path": "scripts/frontier_su3_v1_picard_fuchs_ode_2026_05_05.py",
   "title": "Plaquette V=1 Picard-Fuchs ODE \u2014 Finite-Runner Certificate Note",
-  "transitive_descendants": 797,
+  "transitive_descendants": 798,
   "verdict_rationale": "The claim is explicitly narrowed to a finite certificate, and the supplied runner output supports exactly that bounded scope. There are no cited upstream authorities or open dependency paths in the packet, and the all-order Picard-Fuchs and Frobenius-branch assertions are excluded from scope. The beta=6 decimal is hard-coded as a displayed-value tolerance check in the runner, but it is also recomputed by direct Weyl integration and independently reproduced, so the bounded result does not reduce to an external numerical match."
 }

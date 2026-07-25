@@ -54,7 +54,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "retained_bounded",
-  "load_bearing_score": 11.496,
+  "load_bearing_score": 11.498,
   "load_bearing_step": "The d'Alembertian wave-equation runner establishes finite-speed propagation, static-limit Poisson recovery, qualitative retardation, propagator mass linearity, and wave/Poisson agreement while explicitly failing 1/r radiation and Newton-like propagator distance law.",
   "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
@@ -168,6 +168,6 @@
   },
   "runner_path": "scripts/frontier_wave_equation_gravity.py",
   "title": "Wave Equation Gravity: Promoting Poisson to d'Alembertian",
-  "transitive_descendants": 721,
+  "transitive_descendants": 722,
   "verdict_rationale": "The note no longer claims the two failed stronger results: strict 1/r radiation and Newton-like propagator distance law are both marked not established, matching the runner output. The retained positive assertions are computed directly by the supplied runner rather than imported from cited authorities or hard-coded as output constants. The audit is clean only for the bounded finite-lattice numerical theorem stated in the narrowed note, not for continuum gravitational radiation or a continuum Newtonian propagator law."
 }

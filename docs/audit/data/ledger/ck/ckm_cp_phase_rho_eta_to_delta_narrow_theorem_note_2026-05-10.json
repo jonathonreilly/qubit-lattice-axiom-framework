@@ -1,42 +1,88 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T06:00:18.273229+00:00",
+  "audit_invocation_history": [
+    "6856c863e6d7436d93dab0d950de99ac"
+  ],
+  "audit_invocation_id": "6856c863e6d7436d93dab0d950de99ac",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 4
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true,
+      "runner_path": "scripts/frontier_ckm_cp_phase_rho_eta_to_delta_narrow.py"
+    },
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 3.322,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_ckm_cp_phase_rho_eta_to_delta_narrow.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "d054a5b852f7c7daca65fb59004b9c5e3380c4f9785b4a31a3b6b77468a1ff3a",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "d054a5b852f7c7daca65fb59004b9c5e3380c4f9785b4a31a3b6b77468a1ff3a",
+    "runner_path": "scripts/frontier_ckm_cp_phase_rho_eta_to_delta_narrow.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 4
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-c08cc625",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The displayed algebra independently closes on inspection, but the audit chain cannot be certified from this restricted packet because the current runner stdout is clipped before the load-bearing T1-T4 checks.",
   "claim_id": "ckm_cp_phase_rho_eta_to_delta_narrow_theorem_note_2026-05-10",
-  "claim_scope": null,
+  "claim_scope": "The abstract coordinate, principal-branch trigonometric, integer-k, and J_0 substitution identities T1-T9, plus the explicitly diagnostic finite Wolfenstein-truncated witness T10; no physical selection of the substituted inputs was audited.",
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T06:00:18.273229+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 2,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 3.322,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Substituting rho^2 = r^2 w_axis and eta^2 = r^2 w_perp into the angle definitions and using w_axis + w_perp = 1 yields the coordinate-angle identities, while direct substitution of lambda^2 and A^2 yields the stated J_0 factorisation.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "508a4a28f5c99958e0b47f1dbdabb59bd08de996f6578d5e2eb6be9306f3d830",
   "note_path": "docs/CKM_CP_PHASE_RHO_ETA_TO_DELTA_NARROW_THEOREM_NOTE_2026-05-10.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "runner_artifact_issue: Re-render and supply the complete current runner stdout, especially the omitted T1-T4 checks, then re-audit against the full 30-check output.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1247,14 +1293,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 30,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 30
   },
   "runner_path": "scripts/frontier_ckm_cp_phase_rho_eta_to_delta_narrow.py",
   "title": "CKM CP-Phase rho-eta to delta Narrow Theorem",
   "transitive_descendants": 4,
-  "verdict_rationale": null
+  "verdict_rationale": "The source proof and included runner code implement genuine class-A substitution and cancellation, and independent inspection confirms the formulas, factors, branch choice, and stated diagnostic character of T10. The rendered stdout nevertheless clips the load-bearing T1-T4 evidence, so the packet-completeness preflight forbids audited_clean despite the reported 30/0 summary. This is an audit-artifact condition, not an identified mathematical contradiction or hidden physical import."
 }

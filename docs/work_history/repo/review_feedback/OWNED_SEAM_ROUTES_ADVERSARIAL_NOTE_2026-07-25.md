@@ -4,14 +4,16 @@
 
 **Date:** 2026-07-25
 
-**Reviewed commits:** `315788cd7e`, `928eeb641d` (including fixed-interface
-predecessor `a8928b71aa` and decoded predecessor `483b24693e`)
+**Reviewed commits:** component baselines `315788cd7e`, `483b24693e`; common-E
+successors `8e873bb244`, `0c9e7ce3a2`; fixed-interface successors
+`928eeb641d`, `bc377db727`, `f9d6dea19a`, `2476b30563`
 
 **Authority:** none
 
 **Audit:** unset
 
-**Status:** finite primitive constructions positive; full physical compositions open
+**Status:** finite common-E and literal decoded-interface constructions positive;
+recurrent/no-preferred-order law open
 
 ## Comparative verdict
 
@@ -31,10 +33,26 @@ correctly calls this a 323-M2 decoded-interface executor. Its 983-M2 physical
 placement uses a separately supplied Cycle655 binding which is not re-executed
 end to end, and its matcher/rail circuit remains contracted.
 
-Neither runner executes a full local-M2 all-eleven update on the common
-encoding. The sparse owner now says this explicitly: the repaired object is a
-decoded compiler candidate, not a physical-site compiler. This is an
-equivalent-gap disposition, not a no-go.
+Two later layers materially change the comparative boundary. Commit
+`8e873bb244` actually multiplies all eleven 59,941-row physical owner ROMs on
+the common 2,629-column `E`; the uncorrected direct target fails with 240
+signed columns and operator-norm residual above 1.9. Commit `0c9e7ce3a2` then
+adds the disclosed 224-CZ correction synthesized offline from the target
+inversion set and closes that finite common-E intertwiner and leakage. This is
+a real finite compiler closure, but it retains the supplied preferred global
+order and does not give a recurrent local gauge law.
+
+Commit `bc377db727` separately replaces the contracted role/matcher execution
+with actual bits for all 335 decoded-interface M2s. It invokes every declared
+program family and closes the complete 2,629-column L5 stream/contact basis.
+L6 stream/contact and both literal coin checks use only 78 columns—vacuum, all
+72 singles, and five of 2,556 pairs. Commit `2476b30563` adds active deletion
+witnesses inside the literal component words; it does not omit gates from one
+complete 335-M2 `execute` intertwiner or execute its inverse. The Cycle655
+physical binding and full transformed-E covariance also remain open.
+
+The following first table preserves the exact component-baseline verdicts; it
+must not be read as the ceiling of their later successors.
 
 | Obligation | Direct ROM `315788cd7e` | Sparse route `928eeb641d` |
 | --- | --- | --- |
@@ -54,6 +72,14 @@ equivalent-gap disposition, not a no-go.
 | Operand-level physical-word covariance | open | open; coordinate census only |
 | Common-code intertwiner/leakage residual | open | closed for constrained macro word; open for literal M2 word |
 | Recurrent/autonomous lattice law | open | open |
+
+| Successor | Executed outcome | Exact boundary |
+| --- | --- | --- |
+| Direct common E `8e873bb244` | actual `59941 x 2629` all-owner product | target fails: 240 signed columns |
+| Gauge common E `0c9e7ce3a2` | corrected finite intertwiner/leakage close | correction is target/order-derived; recurrence open |
+| Fixed macro `928eeb641d` | all 2,629 constrained columns at L5/L6 | 323-M2 decoded macro; 983 binding supplied |
+| Literal M2 `bc377db727` | all program families; complete L5 stream/contact | L6 and coin are 78-column samples; inverse open |
+| Literal deletions `2476b30563` | component primitive activity/domain witnesses | no complete-word omission residual |
 
 ## Direct-ROM route
 
@@ -111,10 +137,46 @@ The two finite-volume ROM hashes differ, and the runner explicitly sets
 and L6 does not yet give one volume-independent translated generator or a
 collision/composition theorem for overlapping recurrent fixtures.
 
-The direct all-eleven result also remains `11 * max(local residual)` in
-`composed_update_controls`; no common physical product is applied. The exact
-remaining direct obligation is therefore the common-`E` product/residual and
-the recurrent/autonomous-law bridge, not the finite primitive synthesis.
+At the exact `315788cd7e` baseline, the direct all-eleven result remains
+`11 * max(local residual)` in `composed_update_controls`; that runner applies
+no common physical product. This component-level statement remains accurate,
+but the later common-E successors below retire its execution gap.
+
+## Actual common-E successor ladder
+
+### The uncorrected direct word is executed and fails its target
+
+Commit `8e873bb244` builds the actual 59,941-row common encoding at both L5 and
+held L6, starts from the previously executed physical-coin equality, and then
+multiplies eleven coefficient-tagged owner ROM matrices plus physical contact.
+Each stage is compared with `E` times the independent exterior target; no Gram
+identity or dense `E U E^dagger` completion substitutes for the product.
+
+The physical word exactly realizes its local tensor action and has negligible
+code leakage, but that action is not the requested exterior update. The final
+target residual is `30.9838667697` with operator norm `2.0`, with exactly 240
+missing negative columns. Thus the direct common-E object is no longer
+unexecuted: it is an executed negative result for this finite ordered target.
+
+### The finite gauge correction closes, with its preferred order disclosed
+
+Commit `0c9e7ce3a2` composes the same physical owner ROMs with bounded
+occupation decoders, 112 local signed-seam CZ factors, and the routed 224-CZ
+transition. The corrected physical state is compared directly with the same
+59,941-by-2,629 target at L5 and held L6. On held L6, the intertwiner norm is
+`1.6126630825e-14` and leakage norm is `2.8197273794e-14`; removing the
+transition leaves operator norm `2.0`.
+
+The correction is not target-independent synthesis. Its transition is exactly
+`SIGNED_CANDIDATE XOR TARGET_PAIRS`, where `TARGET_PAIRS` is the offline
+inversion set of the supplied finite mode order. The runtime word does not
+query the target, global parity, or an order service, but the frozen ROM still
+encodes that preferred order. The three-center chain admits the current
+distance-two transit routing, while the L corner has 56 distance-three pairs
+and does not. Ambient 59,941-row matrices are not rebuilt under all frames.
+Finite common-E closure is therefore positive; the recurrent/no-preferred-
+order and full physical-covariance obligations remain open. Cycle703 starts
+from this finite baseline rather than from a recurrent closure.
 
 ## Sparse routed-transition route
 
@@ -294,95 +356,111 @@ translation level is `fixed operand addresses only`. The result supports the
 stated coordinate geometry and supplied carrier marginals, not covariance of
 the complete executed or literal M2 word.
 
-### No-Go Discipline gate for the physical-site downgrade
+## Literal 335-M2 successor `bc377db727` and deletion audit `2476b30563`
+
+The exact literal runner independently replays 3/3 checks with terminal
+`LITERAL_M2_TWO_STAR_STREAM_CLOSED_RECURRENT_GAUGE_OPEN`. Its register count is
+exactly 335: 72 data, 84 role rails, 48 charts, 12 tokens, 60 matcher scratch,
+12 matcher flags, 24 bypass, 11 edge work, and 12 transit M2s. Source
+instrumentation of one full call observes every declared program family,
+including 1,728 matcher Toffolis, 2,880 controlled Fredkins, 720 lifted
+two-rail matrices, 224 transition CZs with 154 route SWAPs, all seam operands,
+132 coin factors, and 180 contact factors.
+
+The complete L5 stream/contact sweep closes all 2,629 columns with maximum
+column residual `6.47e-16`. The first nontrivial literal column rejects an
+identity-stream target at norm `sqrt(2)`, while the correct independently built
+target is below `4.1e-16`; `execute` never calls the target builder. The
+transition itself remains synthesized offline from the target inversion set.
+
+The held scope is narrower. L6 stream/contact contains 78 columns: vacuum, all
+72 singles, and five of 2,556 pairs. Both literal coin rows use that same
+78-column sample at L5 and L6. These rows touch each particle-number sector but
+do not span the two-particle subspace. The complete L6 stream/contact sweep,
+complete literal coin sweep, whole inverse, end-to-end Cycle655 binding, and
+transformed-E covariance remain open.
+
+The exact deletion successor replays 8/8 checks with terminal
+`LITERAL_M2_DELETIONS_ACTIVE_RECURRENT_GAUGE_OPEN`. It provides genuine
+activity witnesses for all 224 transition terms and 154 route SWAPs, every
+seam instance, all 180 contact instances, the 11 coin gate types, 30 carrier
+factor types at one cell, 12 token-control pairs, and 48 chart-control types.
+These are omissions inside literal component words. The deletion runner never
+calls the complete `literal.execute` or its intertwiner, so it does not yet
+measure omission of a primitive from one full 335-M2 target comparison.
+
+### No-Go Discipline gate for the current recurrent/physical boundary
 
 **Gate result: FAIL for any route-independent no-go; ship only the equivalent-
-gap downgrade above.**
+gap boundary below.**
 
-- **N1 — Alternatives.** Seven materially distinct checks were separated:
-  actual data/coin matrices (attempted, positive); target discrimination
-  (attempted, positive); decoded-versus-physical source identity (attempted,
-  accurately narrowed); compressed one-hot role execution (attempted, exposes
-  the gap); separate matcher and primitive bindings (positive but uncomposed);
-  component deletion/domain controls (attempted, positive); and literal
-  multi-rail whole-word inverse/deletion/covariance (not attempted). End-to-end
-  Cycle655 binding and literal factor composition are live completion routes,
-  so a no-go is premature.
-- **N2 — Wall collapse.** Missing matcher composition, missing off-code
-  execution, and the mismatch between counted and executed role factors are one
-  factor-realization wall. The unreexecuted Cycle655 physical binding and
-  whole-word covariance are independent walls. Recurrent transition synthesis
-  is a separate later-scale obligation and is not used to reject the bounded
-  fixture.
-- **N3 — Hidden conditions.** The exactly-one-hot role sector, clean matcher and
-  edge work, global `n <= 2` restriction, offline target-derived transition,
-  supplied tensor carrier and Cycle655 binding, numerical drop threshold,
-  clean-transit coin test, and component/resource provenance of deletion
-  controls are explicit. No "standard" physical gate execution is inferred
-  from a factor or placement count. The phrase-scan hit `canonical row`
-  elsewhere in this note names a deterministic finite-ROM index and is non-
-  load-bearing context.
-- **N4 — Residual matching.** The runner's `E_fixed G = G_macro E_fixed`
-  residual matches the constrained macro claim. Individual deletion and local-
-  domain residuals match their component claims. Neither matches a residual
-  for an end-to-end 983-M2 binding, full `2^323` unitary, primitive factor
-  trace, whole-word deletion/inverse, or complete-word covariance; those are
-  therefore not credited as closed.
-- **N5 — Resolution.** Data-bit and encoded-column execution are tested;
-  one-hot carrier-sector macros are tested; individual matcher truth tables are
-  tested separately, as are vacuum/double states of individual lifted Givens.
-  Multi-rail whole-word off-code states, the composed primitive word, complete
-  two-star M2 unitary, end-to-end Cycle655 binding, and lattice-wide recurrence
-  are not tested. The phrase "physical-site compiler" is narrowed accordingly.
-- **N6 — Partial closure.** The supplied Cycle655 decode/encode and Cycle656
-  matcher/Fredkin decompositions plus two-rail Givens are an explicit completion
-  path: compose them on actual data, rail, scratch, flag, and bypass bits;
-  compare their restriction with the present macro; then rerun deletions on
-  that word. This needs no new axiom.
-- **N7 — Steelman.** A hostile reviewer can plausibly recover the claimed result:
-  every contracted role block has already been expressed as five unitary
-  two-rail factors, the clean matcher truth table and Toffoli/Fredkin expansions
-  are separately available, and seam/contact phases are commuting basis
-  formulas. The hardened component deletion controls further reduce the work
-  needed for a literal composition plus off-code inverse/deletion tests. That
-  actionable route could close the gap without changing the finite target,
-  forbids a no-go, and makes the present finding an implementation gap.
-- **N8 — Cross-cycle echo.** The preceding rectangular and decoded-direct-sum
-  gaps were both narrowed constructively within this same branch sequence. The
-  fixed-interface source downgrade and component controls are another real
-  advance. The proper response is to request the next literal factor
-  composition, not promote the current missing execution to a shared
-  obstruction.
+- **N1 — Alternatives.** Actual literal rail/matcher execution is attempted and
+  positive at L5; primitive component deletions are attempted and positive;
+  target discrimination is positive. Complete literal L6 and coin sweeps,
+  whole-word omission/inverse, end-to-end Cycle655 binding, transformed-E
+  covariance, and a no-preferred-order overlap law remain distinct live routes.
+- **N2 — Wall collapse.** The former factor-realization wall is retired by the
+  335-M2 successor. Sampling/inverse, physical binding, covariance, and
+  recurrent gauge synthesis are independent remaining walls; none is multiplied
+  into several rhetorical variants.
+- **N3 — Hidden conditions.** The global `n <= 2` sector, all-one clean token
+  initialization on encoded columns, clean matcher/bypass/edge work, five-pair
+  held sample, numerical drop threshold, supplied Cycle655 binding, and offline
+  target/order-derived transition are explicit. The phrase-scan hit `canonical
+  row` elsewhere in this note names a deterministic ROM index and is non-load-
+  bearing context.
+- **N4 — Residual matching.** The literal residual matches the full L5
+  stream/contact claim and only the declared 78-column held/coin samples.
+  Component omission residuals match gate activity, not an omitted-gate full
+  intertwiner. The common-E gauge residual matches finite order-derived closure,
+  not recurrent synthesis or full physical covariance.
+- **N5 — Resolution.** The ladder tests finite ROM rows, actual 59,941-row
+  common-E matrices, reachable literal 335-M2 code columns, local dirty/off-code
+  witnesses, and bounded overlap diagnostics. It does not test the full
+  `2^335` matrix, all L6 columns, the 983-M2 landed binding, arbitrary volume,
+  or an infinite-lattice recurrence.
+- **N6 — Partial closure.** The existing literal executor can run the remaining
+  2,551 L6 pair columns, compose its inverse, and accept primitive-omission
+  switches. The supplied Cycle655 gates provide an end-to-end binding route.
+  Cycle703's endpoint-incidence/loop tournament supplies constructive recurrent
+  candidates. None requires an axiom edit.
+- **N7 — Steelman.** The finite result is close to a stronger compiler: every
+  declared literal family is invoked, all L5 columns close, component gates are
+  active, and the finite gauge common-E word already closes. Completing L6,
+  inverse/deletion, and the physical binding is direct engineering; replacing
+  the frozen inversion ROM by a local overlap law is an actionable research
+  route. Those routes forbid a no-go.
+- **N8 — Cross-cycle echo.** The rectangular, direct-sum, contracted-register,
+  qutrit-classification, and literal-factor gaps were each narrowed by later
+  successors. The correct response is to keep the remaining scopes explicit
+  and continue the recurrent tournament, not promote them to a shared
+  obstruction or axiom pressure.
 
 ## Exact missing executed objects
 
-For the direct route, use the supplied coefficient-tagged finite ROMs to apply
-all eleven owners on one common encoding and compute the direct intertwiner and
-leakage. Before a recurrent/autonomous claim, additionally supply one volume-
-independent translated generator and prove collision-safe composition for
-overlapping translated two-star fixtures.
+The direct common-E execution is no longer missing: its uncorrected target
+fails, and the finite gauge-corrected target closes. The next common-E object is
+a target-independent, volume-independent local gauge/chart generator that
+reproduces the finite result without a supplied preferred global order and
+composes collision-safely on L-shaped and larger overlaps. Rebuild that
+physical word and `E` under frames rather than limiting covariance to logical
+action and operand addresses.
 
-For the sparse route, retain the now-positive target-discriminating fixed-
-coordinate decoded-interface result. Re-execute the supplied Cycle655 decode,
-the interface word, and Cycle655 encode end to end on the declared 983-M2
-placement. Within the interface, replace each seven-valued role coordinate
-with seven actual rail bits and include the matcher scratch, flag, and bypass
-bits in the executed state. Compose the matcher compute/control/uncompute and
-the counted two-rail factors rather than selecting a precontracted matrix on
-the host. Likewise trace the seam and contact primitives rather than only
-their aggregate basis formulas. Compare that literal word with the separately
-constructed target by computing
+For the literal register route, re-execute the supplied Cycle655 decode, the
+335-M2 interface word, and Cycle655 encode end to end on the declared physical
+placement. Run all 2,629 L6 stream/contact columns and all 2,629 literal coin
+columns at L5 and L6. Add a reverse macrostep and primitive omission switches
+inside the complete `literal.execute`, then compare the full and omitted words
+with the separately constructed target by computing
 
 ```text
 ||U_physical E_refresh - E_refresh G_target||
 ```
 
-and common-code leakage at L5 and held L6. Extend the now-positive component
-deletion/domain witnesses to primitive omissions from the complete word, add
-whole-word inverse and multi-rail off-code controls, then rebuild and compare
-the complete word under frames and translations. The same-encoding coin macro
-and mass fixture are already positive; the remaining issue is literal factor
-execution and the supplied physical binding, not their logical target.
+and common-code leakage at both sizes. The literal factor-execution gap is
+closed on the complete L5 reachable basis; the remaining issues are held/full-
+coin scope, complete-word inverse/deletion, the supplied physical binding,
+full covariance, and recurrent gauge synthesis.
 
 ## Reproduction
 
@@ -392,5 +470,5 @@ PYTHONPATH=scripts:<route-b-scripts>:<route-c-scripts> \
 ```
 
 The companion terminates with
-`OWNED_SEAM_TRANSITIONS_POSITIVE_FULL_PHYSICAL_COMPOSITIONS_OPEN` when all
+`FINITE_COMMON_E_AND_LITERAL_INTERFACE_POSITIVE_RECURRENT_LAW_OPEN` when all
 adversarial controls behave as reconstructed.

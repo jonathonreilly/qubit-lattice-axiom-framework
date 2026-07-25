@@ -1,44 +1,103 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T19:21:55.678061+00:00",
+  "audit_invocation_history": [
+    "e981a5b469f741aca0a355753b0ec206"
+  ],
+  "audit_invocation_id": "e981a5b469f741aca0a355753b0ec206",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true,
+      "runner_path": "scripts/source_resolved_self_consistent_generated_transfer.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {
+      "scripts/causal_field_gravity.py": "bb0e4137da2988d1abd7f14cd0c4cc745fc6c3c09a50e13c16435ff8876bd48f"
+    },
+    "load_bearing_score": 0.0,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/causal_field_gravity.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "bb0e4137da2988d1abd7f14cd0c4cc745fc6c3c09a50e13c16435ff8876bd48f",
+        "cache_status": "ok"
+      },
+      "scripts/source_resolved_self_consistent_generated_transfer.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "9ebe338a166658ba60715c131e624f2ab9002692ccb8111cff9b09eb8739a391",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "9ebe338a166658ba60715c131e624f2ab9002692ccb8111cff9b09eb8739a391",
+    "runner_path": "scripts/source_resolved_self_consistent_generated_transfer.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-fb761e42",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The finite-run arithmetic closes for the supplied program, but the compact generated DAG, propagation law, calibrated field, centroid readout, and physical sign/scaling identifications are not derived from an accepted premise or cited retained bridge. The claimed physical transfer conclusion therefore remains conditional.",
   "claim_id": "source_resolved_self_consistent_generated_transfer_note",
-  "claim_scope": null,
+  "claim_scope": "For family seeds 0..3, the specified 16-layer compact generated DAGs, source strengths, kernel, calibrated gain, and one self-consistency update, the runner reports exact zero-source reduction, 0/4 TOWARD rows, and a self-consistent mass-scaling exponent of -0.30.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_last_reviewed": "2026-07-25T19:21:55.678061+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [
     "scripts/causal_field_gravity.py"
   ],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The frozen sweep gives TOWARD rows 0/4 and a self-consistent Green F~M exponent of -0.30.",
+  "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls",
+    "derived_no_go_boundary",
+    "stretch_attempt_negative"
+  ],
   "note_hash": "908735e564951c04918530aa8dc868bbd2a0adc1bf9444bd8ce8f1cab6ea5215",
   "note_path": "docs/SOURCE_RESOLVED_SELF_CONSISTENT_GENERATED_TRANSFER_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "missing_bridge_theorem: derive or cite retained bridges for the compact generated-DAG dynamics, Green-field calibration, detector-centroid observable, and TOWARD/Newtonian interpretation, then rerun and independently verify the finite sweep.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-fresh-agent",
   "previous_audits": [
@@ -120,14 +179,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 1,
     "B": 0,
-    "C": 0,
+    "C": 4,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 5
   },
   "runner_path": "scripts/source_resolved_self_consistent_generated_transfer.py",
   "title": "Source-Resolved Self-Consistent Generated Transfer",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "Independent arithmetic reproduces the displayed ratios, their mean 0.750, and the log-log exponents 0.43 and -0.30; the code also makes zero-source propagation identical by construction. However, the generated DAG, propagation rule, Green kernel, source selection, gain normalization, one-step update, centroid observable, and physical TOWARD/Newtonian interpretation are load-bearing inputs not supplied by the axioms or cited retained authorities. N1-N4: only the finite numerical route and instantaneous control are attempted; alternate ensembles or limits, normalizations, update dynamics, and readouts remain untested, sign and scaling are separate boundaries, the model choices are hidden premises, and no retained residual witness is supplied. N5-N8: the negative language is resolved only for four-seed averaged rows, the supplied primitives do not close the dynamics or readout bridges, the strongest steelman is a reproducible finite-model result, and the cross-cycle echoes provide no retained authority that broadens it."
 }

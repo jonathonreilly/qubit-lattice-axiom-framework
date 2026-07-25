@@ -1,0 +1,88 @@
+{
+  "status": "cycle563-held-sparse-and-bounded-order-retirement",
+  "authority": "none",
+  "audit": "unset",
+  "runner_sha256": "444a5c0fb3cb1758236ddefaeb472d0002cadb256d3c4df723fd562129c7325b",
+  "note_sha256": "5f8cf7ddd3124a6377077936195667298e6723ac36734c8aaadbf70bccc7fdf8",
+  "parent_certificate_sha256": "5fe4bae3d14597597a43fc5f7ca86eb6cff55d3a2e73fdf296c11164a49f2bad",
+  "tests_passed": 16,
+  "tests_total": 16,
+  "pass": true,
+  "elapsed_seconds_internal": 254.4428261249559,
+  "timed_wall_seconds": 254.98,
+  "maximum_RSS_bytes": 1650229248,
+  "process_swap_count": 0,
+  "independent_dense_sparse_control_L3": {
+    "complete_coordinates": 708724,
+    "full_sweep_residual": 3.3368817458306674e-16,
+    "deleted_contact_sweep_residual": 3.312730852221813e-16
+  },
+  "complete_held_L4_sparse_N3_update": {
+    "periodic_cells": 64,
+    "CAR_modes": 384,
+    "complete_coordinates": 9437505,
+    "independent_pairs": 73536,
+    "independent_triples": 9363584,
+    "sparse_state_payload_bytes": 152182784,
+    "prior_dense_four_tensor_estimate_bytes": 3623878656,
+    "maximum_norm_residual": 1.7763568394002505e-15,
+    "maximum_inverse_residual": 2.6140030275971448e-15,
+    "deleted_one_star_residual": 0.5188692966404957,
+    "deleted_all_contact_residual": 0.20761962160323605,
+    "deleted_all_contact_triple_residual": 0.20735676492581315,
+    "maximum_all24_covariance_residual": 4.785268958017254e-16,
+    "all24_failures": 0,
+    "code_space_intertwiner_residual": 0.0
+  },
+  "selected_factor_order_retirement": {
+    "L3_cell_color_layers": 3,
+    "L4_cell_color_layers": 2,
+    "L3_anticommuting_NN_edges": 81,
+    "L4_anticommuting_NN_edges": 192,
+    "nonnearest_or_same_color_anticommuting_rows": 0,
+    "L3_inverted_edges": 36,
+    "L4_inverted_edges": 96,
+    "L3_exhaustive_local_correction_rows": 1728,
+    "L4_exhaustive_local_correction_rows": 4608,
+    "L3_disjoint_correction_layers": 6,
+    "L4_disjoint_correction_layers": 5,
+    "pairwise_reordering_identity_residual": 0.0,
+    "minimum_deleted_correction_residual": 0.9999999999999998,
+    "runtime_global_lexicographic_traversal": false,
+    "runtime_parity_Jordan_Wigner_order_or_frame_service": false
+  },
+  "route_disposition": {
+    "route_B": "exact and strongest literal result at 53 live M2 per cell; branch labels retained through bounded local corrections",
+    "route_C": "exact returned-slot result with q plus current physical-pattern corrections; supplied rail remains larger",
+    "correction_free_colored_route": "narrowly falsified by required local signs only",
+    "maximum_controls_per_local_correction": 14,
+    "maximum_clean_conjunction_work_M2": 12,
+    "existing_Cycle560_work_suffices": true
+  },
+  "update_traversal_boundary": {
+    "held_L4_disjoint_physical_footprint_layers": 10,
+    "same_layer_collisions": 0,
+    "delete_first_layer_residual": 1.2330324572058697,
+    "reverse_layer_order_residual": 1.407172240120703,
+    "length_dependent_global_star_traversal_retired": true,
+    "bounded_layer_order_convention_retired": false,
+    "layer_order_called_time_or_duration": false
+  },
+  "fixtures": {
+    "Cycle219_mass_residual": 8.7159799596118e-16,
+    "Cycle230_contact_factorization_residual": 2.149937642474629e-15,
+    "Cycle230_axis_seam_residual": 0.0,
+    "proper_cubic_frames": 24,
+    "frame_products": 576
+  },
+  "scope_boundary": {
+    "arbitrary_size_or_all_sector_compiler_closed": false,
+    "N4_or_number_change_closed": false,
+    "fixed_reference_or_blank_genesis_closed": false,
+    "selected_to_rough_transducer_closed": false,
+    "autonomous_causal_update_law_closed": false,
+    "shared_substrate_obstruction": false,
+    "axiom_pressure": false,
+    "broad_no_go_gate": "FAIL / DO NOT SHIP"
+  }
+}

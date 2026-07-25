@@ -6,7 +6,7 @@
 pipeline-derived after audit. This note does not set, predict, or propose an
 audit outcome.
 **Primary runner:** [`scripts/record_function_finite_sector_algebra_2026_06_05.py`](../scripts/record_function_finite_sector_algebra_2026_06_05.py)
-(sympy + finite subset checks; **SCORECARD 21 PASS / 0 FAIL**).
+(sympy + finite subset checks; **SCORECARD 32 PASS / 0 FAIL**).
 **Cached log:** [`logs/runner-cache/record_function_finite_sector_algebra_2026_06_05.txt`](../logs/runner-cache/record_function_finite_sector_algebra_2026_06_05.txt).
 
 ## Scope and honesty
@@ -125,7 +125,30 @@ gives `d/(u+d)=p`. Thus Record alone cannot select a value.
 
 ## Generation-dial specialization
 
-For the generation two-sector readout, the sector powers are
+For the generation two-sector readout, the two sectors are the `C3` isotypic
+components of the real `C3`-equivariant readout triple. That triple is not
+posited here. The retained
+[Abstract Hermitian-Circulant Fourier Invariant Theorem](KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md)
+supplies it exactly: with `C` the cyclic shift, `omega = exp(2 pi i/3)`, and
+`f_k = (1, omega^k, omega^(2k))^T/sqrt(3)` satisfying `C f_k = omega^k f_k`,
+
+```text
+Herm_circ(3) = { H(a,b) = a I + b C + conjugate(b) C^2 : a in R, b in C },
+lambda_k     = a + b omega^k + conjugate(b) omega^(-k),
+```
+
+and those `lambda_k` "are real for all `a in R` and `b in C`". The `f_k` are
+orthonormal, `f_0` carries the trivial character and `(f_1,f_2)` carry the
+two-dimensional block, so the readout power splits over the two isotypic
+sectors as
+
+```text
+|<f_0, lambda>|^2                     = 3a^2,
+|<f_1, lambda>|^2 + |<f_2, lambda>|^2 = 6|b|^2.
+```
+
+Dividing out the common factor `3`, the sector powers are therefore not a
+supplied assignment but the isotypic split itself:
 
 ```text
 singlet readout = a^2,
@@ -152,8 +175,8 @@ s = log2(rho) = log2(2r).
 ```
 
 For the named `Q` endpoint entries, the finite generation readout packet uses
-the standard three-slot Koide structural coordinate attached to the supplied
-`C3`/`K`-real generation context:
+the standard three-slot Koide structural coordinate on that same
+`C3`/`K`-real generation readout:
 
 ```text
 Q = (sum_k lambda_k^2) / (sum_k lambda_k)^2.
@@ -163,8 +186,15 @@ Here the `K`/CPT-real `C3`-equivariant square-root readout has the finite
 character form
 
 ```text
-lambda_k = a + 2|b| cos(theta + 2 pi k/3),     k=0,1,2.
+lambda_k = a + 2|b| cos(theta + 2 pi k/3),     k=0,1,2,
 ```
+
+with `theta = arg(b)`. Neither this coordinate form nor the identity
+`Q = 1/3 + (2/3)r` derived below is assumed here. The retained
+[Registered Positive Mass Triple: Exact C3 Fourier Coordinates and Koide Identity](CHARGED_LEPTON_REGISTERED_MASS_DFT_COORDINATE_THEOREM_NOTE_2026-07-11.md)
+proves both for **any** positive real triple with `z_j = sqrt(m_j)`, obtaining
+`z_j = a + 2|c| cos(phi + 2 pi j/3)` and `Q = 1/3 + 2r/3` with `r = |c|^2/a^2`;
+that note's `c` is this note's `b`, and its `phi` is this note's `theta`.
 
 The `C3` character sums give, exactly,
 
@@ -188,6 +218,11 @@ Q = (singlet readout + doublet readout)/(3 singlet readout).
 
 This is a structural coordinate on the supplied generation readout, not a
 probability, dynamics, occupancy selector, or measured-mass assertion.
+
+The two retained authorities cited above supply the real `C3`-equivariant
+spectrum and the coordinate identity used here; naming that reality condition
+`K`/CPT-real is the standing readout-context pin carried elsewhere in the
+framework, and is not re-derived here.
 
 The named endpoints are:
 
@@ -229,7 +264,18 @@ The runner verifies:
 - generation specialization `rho=2r`, `s=log2(rho)`, and the two named
   endpoints;
 - the finite `C3`/`K`-real power-sum definition of the generation `Q`
-  coordinate, deriving `Q = 1/3 + (2/3)r` before endpoint substitution.
+  coordinate, deriving `Q = 1/3 + (2/3)r` before endpoint substitution;
+- that both cited authority notes exist, that this note links to each of them,
+  and that each one's sharded ledger row carries a retained effective status
+  read from the shard file;
+- exactly, from `lambda_k = a + b omega^k + conjugate(b) omega^(-k)`: reality
+  of every `lambda_k`, the equivalent character form
+  `a + 2|b| cos(theta + 2 pi k/3)`, orthonormality of the `f_k`, the isotypic
+  power split `3a^2 : 6|b|^2`, the power sums `3a` and `3a^2 + 6|b|^2`, their
+  agreement with `3 (singlet + doublet)`, and `Q = 1/3 + (2/3)r`;
+- a discriminating rejector: the alternative assignment `doublet = |b|^2`
+  fails to reproduce `sum_k lambda_k^2`, so the power-split gate is not
+  tautological.
 
 ## Net
 

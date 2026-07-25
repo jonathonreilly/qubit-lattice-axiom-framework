@@ -51,7 +51,22 @@ TORUS_SAMPLES = [
 ]
 
 
-def check(name: str, condition: bool, detail: str = "", bucket: str = "SUPPORT") -> None:
+def check(
+    name: str,
+    condition: bool,
+    detail: str = "",
+    bucket: str = "SUPPORT",
+    fail_detail: str = "",
+) -> None:
+    """Emit exactly one status line per check, plus an optional detail line.
+
+    The audited packet renders this runner's cached stdout inside a 6000
+    character budget, so quantities that are already printed verbatim in the
+    report block above the checks are carried on ``fail_detail`` instead of
+    ``detail``: they stay silent while the check passes and are printed
+    alongside ``detail`` (joined by "; ") the moment it fails, so no failure
+    diagnostic is lost.
+    """
     global THEOREM_PASS, SUPPORT_PASS, FAIL
     status = "PASS" if condition else "FAIL"
     if condition:
@@ -62,8 +77,11 @@ def check(name: str, condition: bool, detail: str = "", bucket: str = "SUPPORT")
     else:
         FAIL += 1
     print(f"  [{status}] [{bucket}] {name}")
-    if detail:
-        print(f"         {detail}")
+    line = detail
+    if not condition and fail_detail:
+        line = f"{detail}; {fail_detail}" if detail else fail_detail
+    if line:
+        print(f"         {line}")
 
 
 # ---------------------------------------------------------------------------
@@ -771,10 +789,7 @@ def main() -> int:
         np.linalg.eigvalsh(negative_effective_square["transfer"]).min()
     )
 
-    print("=" * 88)
     print("GAUGE-VACUUM WILSON TRANSFER / SPATIAL-MIXED SOURCE SUPPORT")
-    print("=" * 88)
-    print()
     print("Exact SU(3) character data")
     print(f"  tensor levels checked                    = 0..{NMAX_TENSOR}")
     print(f"  dimension sums                           = {dimension_sums}")
@@ -827,32 +842,32 @@ def main() -> int:
             for level in levels
             for multiplicity in level.values()
         ),
-        detail=f"checked all dominant weights through tensor level {NMAX_TENSOR}",
+        fail_detail=f"checked all dominant weights through tensor level {NMAX_TENSOR}",
     )
     check(
         "the representation-ring decomposition preserves dimension 6^n",
         dimension_sums == [6**n for n in range(NMAX_TENSOR + 1)],
-        detail=f"dimension sums = {dimension_sums}",
+        fail_detail=f"dimension sums = {dimension_sums}",
     )
     check(
         "positive Taylor weights give nonnegative truncated Wilson coefficients",
         coefficient_minimum >= 0.0,
-        detail=f"minimum checked partial coefficient = {coefficient_minimum:.6e}",
+        fail_detail=f"minimum checked partial coefficient = {coefficient_minimum:.6e}",
     )
     check(
         "multiplication by chi_(1,0) obeys the exact SU(3) recurrence",
         fundamental_error < 1.0e-10,
-        detail=f"maximum error = {fundamental_error:.3e}",
+        fail_detail=f"maximum error = {fundamental_error:.3e}",
     )
     check(
         "multiplication by chi_(0,1) obeys the exact conjugate recurrence",
         antifundamental_error < 1.0e-10,
-        detail=f"maximum error = {antifundamental_error:.3e}",
+        fail_detail=f"maximum error = {antifundamental_error:.3e}",
     )
     check(
         "the real plaquette source obeys the exact six-neighbor recurrence",
         combined_error < 1.0e-10 and recurrence_symmetry_error < TOL,
-        detail=(
+        fail_detail=(
             f"combined error = {combined_error:.3e}, "
             f"symmetry error = {recurrence_symmetry_error:.3e}"
         ),
@@ -860,7 +875,7 @@ def main() -> int:
     check(
         "dominant-weight boundary terms omit exactly the negative labels",
         boundary_omissions_ok,
-        detail=(
+        fail_detail=(
             "neighbor counts at (0,0),(1,0),(0,1),(1,1) = "
             f"{list(boundary_counts.values())}"
         ),
@@ -869,13 +884,13 @@ def main() -> int:
     check(
         "sampled SU(3) Wilson positive-type Gram matrices are positive semidefinite",
         positive_gram_minimum >= -TOL,
-        detail=f"minimum eigenvalue = {positive_gram_minimum:.6e}",
+        fail_detail=f"minimum eigenvalue = {positive_gram_minimum:.6e}",
         bucket="SUPPORT",
     )
     check(
         "the finite square pullback is an isometry onto the three class functions",
         pullback_error < TOL and group_basis_error < TOL,
-        detail=f"errors={pullback_error:.3e}, {group_basis_error:.3e}",
+        fail_detail=f"errors={pullback_error:.3e}, {group_basis_error:.3e}",
         bucket="SUPPORT",
     )
     check(
@@ -883,7 +898,7 @@ def main() -> int:
         q_minimum >= -TOL
         and transfer_minimum >= -TOL
         and factorization_error < TOL,
-        detail=(
+        fail_detail=(
             f"lambda_min(Q)={q_minimum:.3e}, "
             f"lambda_min(T)={transfer_minimum:.3e}, "
             f"factor error={factorization_error:.3e}"
@@ -893,7 +908,7 @@ def main() -> int:
     check(
         "projected convolution equals temporal-link integration on selected square configurations",
         temporal_kernel_error < TOL,
-        detail=f"maximum selected-pair error = {temporal_kernel_error:.3e}",
+        fail_detail=f"maximum selected-pair error = {temporal_kernel_error:.3e}",
         bucket="SUPPORT",
     )
     check(
@@ -954,13 +969,13 @@ def main() -> int:
     check(
         "pointwise positive symmetry alone does not imply quadratic-form positivity",
         np.all(pointwise_counterexample > 0.0) and counterexample_minimum < 0.0,
-        detail=f"counterexample minimum eigenvalue = {counterexample_minimum:.1f}",
+        fail_detail=f"counterexample minimum eigenvalue = {counterexample_minimum:.1f}",
         bucket="SUPPORT",
     )
     check(
         "the wrong plaquette word fails gauge invariance while the oriented word passes",
         correct_orientation_error < TOL and wrong_orientation_error > 0.1,
-        detail=(
+        fail_detail=(
             f"correct error={correct_orientation_error:.3e}, "
             f"wrong error={wrong_orientation_error:.3e}"
         ),
@@ -972,7 +987,7 @@ def main() -> int:
         and abs(trace_value - wrong_half_trace) > 1.0e-5
         and abs(trace_value - missing_half_trace) > 1.0e-5
         and abs(trace_value - wrong_haar_trace) > 1.0,
-        detail=(
+        fail_detail=(
             f"slice={abs(spatial_single_value-wrong_slice_placement_value):.3e}, "
             f"half(doubled/missing)={abs(trace_value-wrong_half_trace):.3e}/"
             f"{abs(trace_value-missing_half_trace):.3e}, "
@@ -983,14 +998,14 @@ def main() -> int:
     check(
         "negative effective mixed coupling is detected outside the source-positivity domain",
         negative_effective_minimum < -1.0e-6,
-        detail=f"minimum eigenvalue = {negative_effective_minimum:.6e}",
+        fail_detail=f"minimum eigenvalue = {negative_effective_minimum:.6e}",
         bucket="SUPPORT",
     )
     check(
         "the compressed recurrence spectrum stays inside the plaquette support interval",
         recurrence_eigenvalues.min() >= -0.5 - TOL
         and recurrence_eigenvalues.max() <= 1.0 + TOL,
-        detail=(
+        fail_detail=(
             f"spectrum=[{recurrence_eigenvalues.min():.6f}, "
             f"{recurrence_eigenvalues.max():.6f}]"
         ),
@@ -998,9 +1013,7 @@ def main() -> int:
     )
 
     print()
-    print("=" * 88)
     print(f"SUMMARY: THEOREM PASS={THEOREM_PASS} SUPPORT={SUPPORT_PASS} FAIL={FAIL}")
-    print("=" * 88)
     return 0 if FAIL == 0 else 1
 
 

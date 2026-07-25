@@ -17,7 +17,7 @@ file per claim), summarized in
 | Metric | Value |
 |---|---:|
 | Retained positive rows | 109 |
-| Retained bounded rows | 332 |
+| Retained bounded rows | 333 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 26 |
 
@@ -135,7 +135,7 @@ Sorted by load-bearing graph score (descending).
 - [`replay_environment_note`](../../docs/REPLAY_ENVIRONMENT_NOTE.md) — score 0.000; audited 2026-05-01T23:28:33.389906+00:00
 - [`staggered_graph_portability_stress_note`](../../docs/STAGGERED_GRAPH_PORTABILITY_STRESS_NOTE.md) — score 0.000; audited 2026-05-05T11:44:13.477263+00:00
 
-## Retained bounded rows (332)
+## Retained bounded rows (333)
 
 Sorted by load-bearing graph score (descending).
 
@@ -415,6 +415,7 @@ Sorted by load-bearing graph score (descending).
 - [`lattice_3d_l2_numpy_h0125_audit_note`](../../docs/LATTICE_3D_L2_NUMPY_H0125_AUDIT_NOTE.md) — score 0.000; audited 2026-05-23T20:13:16.635947+00:00
 - [`lattice_3d_nyquist_diffraction_note`](../../docs/LATTICE_3D_NYQUIST_DIFFRACTION_NOTE.md) — score 0.000; audited 2026-06-18T13:42:33.011532+00:00
 - [`lensing_adjoint_kernel_reduced_model_note`](../../docs/LENSING_ADJOINT_KERNEL_REDUCED_MODEL_NOTE.md) — score 0.000; audited 2026-04-27
+- [`lh_template_retained_substrate_i3_independence_narrow_theorem_note_2026-05-23`](../../docs/LH_TEMPLATE_RETAINED_SUBSTRATE_I3_INDEPENDENCE_NARROW_THEOREM_NOTE_2026-05-23.md) — score 0.000; audited 2026-07-25T14:55:16.023263+00:00
 - [`literature_backmatch_live_scan_note`](../../docs/LITERATURE_BACKMATCH_LIVE_SCAN_NOTE.md) — score 0.000; audited 2026-05-01T06:58:35.729340+00:00
 - [`main_open_cubic_validation_2026-04-11`](../../docs/MAIN_OPEN_CUBIC_VALIDATION_2026-04-11.md) — score 0.000; audited 2026-05-01T06:59:42.486687+00:00
 - [`mirror_grown_combined_note`](../../docs/MIRROR_GROWN_COMBINED_NOTE.md) — score 0.000; audited 2026-05-18T12:35:59.484275+00:00

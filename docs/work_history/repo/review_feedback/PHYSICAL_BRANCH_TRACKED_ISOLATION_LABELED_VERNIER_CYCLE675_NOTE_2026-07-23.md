@@ -1,5 +1,7 @@
 # Branch-tracked theta_2 isolation and labeled vernier repair — Cycle 675
 
+Claim type: bounded_theorem
+
 Date: 2026-07-23. Authority: none. Audit: unset. Completion rows for the
 Cycle-662 block (contract Addendum A, SHA
 `174ce1cae3edce3f888f1ecb10e6d258d9ffd23c620aea5f92d6524c74e1bf32`, frozen
@@ -27,3 +29,10 @@ claiming 675.
 
 Firewalls: quadrature-controlled statements, not the open rigorous lemma; the
 5:4 reachability carries the Cycle-612 association caveat verbatim.
+
+## Dependency citations
+
+This runner byte-pins
+[Cycle 662](PHYSICAL_INFINITE_VOLUME_A2_TWO_LINE_VERNIER_TOURNAMENT_CYCLE662_NOTE_2026-07-23.md),
+and the 5:4 wording retains the association caveat from
+[Cycle 612](PHYSICAL_TICK_ECHO_ASSOCIATION_CAUSAL_ORDER_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md).

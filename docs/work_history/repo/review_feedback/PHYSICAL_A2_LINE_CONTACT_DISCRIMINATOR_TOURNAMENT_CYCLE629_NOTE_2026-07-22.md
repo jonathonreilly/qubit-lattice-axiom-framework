@@ -1,5 +1,7 @@
 # Physical A2-line contact discriminator tournament — Cycle 629
 
+Claim type: bounded_theorem
+
 Date: 2026-07-22. Authority: none. Audit: unset. Constitutional effect: none.
 
 Runner:
@@ -138,3 +140,11 @@ Held verification of theta_2 (L13 and beta = -0.35 BS scans plus ball
 spectra), a width/isolation bound, and the two-line lawful-domain extension
 of the Cycle-610 certificates — the three prerequisites the vernier build
 decision needs.
+
+## Dependency citations
+
+This runner byte-pins
+[Cycle 610](PHYSICAL_INTRINSIC_TICK_EVENT_RELATIONAL_DURATION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md),
+[Cycle 611](PHYSICAL_AUTONOMOUS_BOUND_BRANCH_PREPARATION_TOURNAMENT_CYCLE611_NOTE_2026-07-22.md),
+and
+[Cycle 622](PHYSICAL_DETERMINISTIC_EXHAUST_SHELL_PREPARATION_TOURNAMENT_CYCLE622_NOTE_2026-07-22.md).

@@ -1,5 +1,7 @@
 # Physical infinite-volume A2 two-line / vernier tournament — Cycle 662
 
+Claim type: bounded_theorem
+
 Date: 2026-07-23. Authority: none. Audit: unset. Constitutional effect: none.
 Runner: `scripts/physical_infinite_volume_a2_two_line_vernier_tournament_cycle662_2026_07_23.py`
 Contract SHA `24199cd1ac9d3bf46db8ee59b8d83f6e27c6058dd55a07122181f4993d42f2b3`
@@ -124,3 +126,15 @@ is built. Certification-side spectral data only; no control-plane changes.
 RESULT 6 PASS / 2 FAIL, exit 1 expected; wall approximately 28 minutes. Receipt, cold
 transcript, and the independent worker grid are committed beside this note;
 contract and dependency pins are inside the receipt.
+
+## Dependency citations
+
+This runner byte-pins
+[Cycle 610](PHYSICAL_INTRINSIC_TICK_EVENT_RELATIONAL_DURATION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md),
+[Cycle 611](PHYSICAL_AUTONOMOUS_BOUND_BRANCH_PREPARATION_TOURNAMENT_CYCLE611_NOTE_2026-07-22.md),
+and
+[Cycle 622](PHYSICAL_DETERMINISTIC_EXHAUST_SHELL_PREPARATION_TOURNAMENT_CYCLE622_NOTE_2026-07-22.md).
+Its torus-integral geometry directly reuses
+[Cycle 210](PROPER_CUBIC_BOUND_OBJECT_EQUIVALENCE_CYCLE210_NOTE_2026-07-16.md),
+and its A-count wording retains the association caveat from
+[Cycle 612](PHYSICAL_TICK_ECHO_ASSOCIATION_CAUSAL_ORDER_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md).

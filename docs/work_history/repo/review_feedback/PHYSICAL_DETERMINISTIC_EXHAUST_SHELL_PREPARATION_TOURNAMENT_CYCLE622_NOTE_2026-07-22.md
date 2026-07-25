@@ -1,5 +1,7 @@
 # Physical deterministic exhaust-shell preparation tournament — Cycle 622
 
+Claim type: bounded_theorem
+
 Date: 2026-07-22. Authority: none. Audit: unset. Constitutional effect: none.
 
 Runner:
@@ -159,3 +161,12 @@ masked_eigen.json  eda675d3d4e96ae995f20e23345f42e93b13b58564bca363a338837cf8ef9
 masked_eigen.py    cc1563ce6ef28b0c2fda5f86c97b3a67f728ed46afa62c6b10c062ff44057add
 This appendix changes only the human-readable note; the runner, receipt, and
 cold transcript remain byte-frozen as run.
+
+## Dependency citations
+
+This runner byte-pins
+[Cycle 610](PHYSICAL_INTRINSIC_TICK_EVENT_RELATIONAL_DURATION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md)
+and
+[Cycle 611](PHYSICAL_AUTONOMOUS_BOUND_BRANCH_PREPARATION_TOURNAMENT_CYCLE611_NOTE_2026-07-22.md),
+and directly reuses the proper-cubic frames from
+[Cycle 210](PROPER_CUBIC_BOUND_OBJECT_EQUIVALENCE_CYCLE210_NOTE_2026-07-16.md).

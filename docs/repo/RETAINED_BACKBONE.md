@@ -17,7 +17,7 @@ file per claim), summarized in
 | Metric | Value |
 |---|---:|
 | Retained positive rows | 116 |
-| Retained bounded rows | 349 |
+| Retained bounded rows | 350 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 29 |
 
@@ -142,7 +142,7 @@ Sorted by load-bearing graph score (descending).
 - [`tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20`](../../docs/TOMITA_TENSOR_TRACE_ON_FINITE_DIM_MATRIX_NARROW_THEOREM_NOTE_2026-05-20.md) — score 0.000; audited 2026-07-25T15:03:52.540528+00:00
 - [`wolfenstein_lambda_a_product_cancellation_narrow_theorem_note_2026-05-10`](../../docs/WOLFENSTEIN_LAMBDA_A_PRODUCT_CANCELLATION_NARROW_THEOREM_NOTE_2026-05-10.md) — score 0.000; audited 2026-07-25T18:05:21.029457+00:00
 
-## Retained bounded rows (349)
+## Retained bounded rows (350)
 
 Sorted by load-bearing graph score (descending).
 
@@ -345,6 +345,7 @@ Sorted by load-bearing graph score (descending).
 - [`mirror_mutual_information_canonical_families_note`](../../docs/MIRROR_MUTUAL_INFORMATION_CANONICAL_FAMILIES_NOTE.md) — score 1.500; audited 2026-05-01T06:41:44.011530+00:00
 - [`moving_source_cross_family_note`](../../docs/MOVING_SOURCE_CROSS_FAMILY_NOTE.md) — score 1.500; audited 2026-05-05T06:47:35.160996+00:00
 - [`persistent_record_matched_compare_note`](../../docs/PERSISTENT_RECORD_MATCHED_COMPARE_NOTE.md) — score 1.500; audited 2026-05-01T10:46:16.278453+00:00
+- [`post_record_supplied_family_lift_certificate_interface_2026-06-06`](../../docs/POST_RECORD_SUPPLIED_FAMILY_LIFT_CERTIFICATE_INTERFACE_2026-06-06.md) — score 1.500; audited 2026-07-25T21:59:52.065841+00:00
 - [`qnm_control_hardening_note`](../../docs/QNM_CONTROL_HARDENING_NOTE.md) — score 1.500; audited 2026-05-01T11:47:10.820083+00:00
 - [`retardation_discriminator_note`](../../docs/RETARDATION_DISCRIMINATOR_NOTE.md) — score 1.500; audited 2026-05-23T20:05:22.201726+00:00
 - [`retarded_field_compact_refinement_note`](../../docs/RETARDED_FIELD_COMPACT_REFINEMENT_NOTE.md) — score 1.500; audited 2026-05-11T15:55:41.044524+00:00

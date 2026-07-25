@@ -1,44 +1,66 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T11:20:02.772224+00:00",
+  "audit_invocation_history": [
+    "bdfcf3fbd50a4fd08e7ddcd455875147"
+  ],
+  "audit_invocation_id": "bdfcf3fbd50a4fd08e7ddcd455875147",
+  "audit_state_snapshot": {
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": "The standalone rational-function algebra identity \u03b2(g,N)=2N/g^2 under g\u21a6g/c, the invariant product \u03b2g^2=2N, and the associated positive-rational orbit/injectivity statements for \u03b2-values in the image."
+    },
+    "dep_claim_type": {
+      "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": "retained"
+    },
+    "deps": [
+      "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 0.0,
+    "runner_hash": "3a9bb4ac56a0ee7804c5329bf82c601c76b3e4803ddb4d21ce7229104d04a110",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_decoration",
+  "auditor": "codex-audit-batch-A-20260725-d975108e",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The scoped algebra is correct and acyclic: the retained parent proves the general identity, and this row only specializes its symbols. The physical Wilson-action interpretation is expressly outside scope.",
   "claim_id": "beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08",
-  "claim_scope": null,
-  "claim_type": "bounded_theorem",
+  "claim_scope": "Symbolic specialization of the retained identity \u03b2(g,N)g\u00b2=2N and its invariance under (g,\u03b2)\u21a6(g/c,c\u00b2\u03b2), using the names (g,N)=(g_bare,N_c).",
+  "claim_type": "decoration",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T11:20:02.772224+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
-  "decoration_parent_claim_id": null,
+  "decoration_parent_claim_id": "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10",
   "deps": [
     "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10"
   ],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10",
+  "effective_status_reason": "decoration_parent_retained",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Under the joint rescaling, (c\u00b2\u03b2)\u00b7(g\u00b2/c\u00b2)=\u03b2\u00b7g\u00b2=2N.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "7dc49524a57a38fa239e8d49b1ce9e27185e997c43419bcb1ff0d38858e15056",
   "note_path": "docs/BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Re-audit only if the source gains independent content beyond the retained parent; any clean-theorem attempt also requires unclipped load-bearing runner evidence.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -506,14 +528,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
+    "A": 108,
+    "B": 47,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 155
   },
   "runner_path": "scripts/frontier_beta_gbare_squared_rescaling_invariance.py",
   "title": "\u03b2\u00b7g_bare\u00b2 = 2 N_c Abstract Joint-Rescaling Algebra Lemma",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "Direct substitution independently confirms \u03b2(g/c,N)=c\u00b2\u03b2(g,N), product invariance, and every displayed rational-table value. However, the note explicitly identifies its algebraic core as the already-retained upstream identity and adds only symbolic specialization, with no external comparator or independent physical content; this meets the decoration rule. The packet\u2019s clipped-evidence preflight also independently forbids audited_clean."
 }

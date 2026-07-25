@@ -1,7 +1,7 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 2158,
-    "decoration": 31,
+    "bounded_theorem": 2157,
+    "decoration": 32,
     "meta": 363,
     "no_go": 438,
     "open_gate": 208,
@@ -86,6 +86,7 @@
     "audited_numerical_match": 9,
     "audited_renaming": 27,
     "decoration_under_abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18": 1,
+    "decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": 1,
     "decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": 1,
     "decoration_under_cpt_exact_note": 1,
     "decoration_under_d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12": 1,
@@ -105,7 +106,7 @@
     "retained": 104,
     "retained_bounded": 328,
     "retained_pending_chain": 6,
-    "unaudited": 2796
+    "unaudited": 2795
   },
   "retained_pending_chain_count": 6,
   "retained_pending_chain_examples": [

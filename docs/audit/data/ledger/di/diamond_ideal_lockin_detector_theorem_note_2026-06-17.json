@@ -1,42 +1,88 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T03:21:13.699043+00:00",
+  "audit_invocation_history": [
+    "f98c5b9c8c4a430b8bf540b04f97176a"
+  ],
+  "audit_invocation_id": "f98c5b9c8c4a430b8bf540b04f97176a",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true,
+      "runner_path": "scripts/diamond_ideal_lockin_detector_theorem.py"
+    },
+    "criticality": "high",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 6.585,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/diamond_ideal_lockin_detector_theorem.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "3615fedb25de4c93fe2ae49237c7712da11823de126d60a96cf15ce437715bcc",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "3615fedb25de4c93fe2ae49237c7712da11823de126d60a96cf15ce437715bcc",
+    "runner_path": "scripts/diamond_ideal_lockin_detector_theorem.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 11
+  },
+  "audit_status": "audited_failed",
+  "auditor": "codex-audit-batch-A-20260725-82efe3da",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The channel identities and affine-delay slope close for positive amplitude. But the note explicitly includes A_z = 0 while stating the phase formula without qualification; atan2(0,0) is undefined, so the theorem as written fails its stated degenerate case.",
   "claim_id": "diamond_ideal_lockin_detector_theorem_note_2026-06-17",
-  "claim_scope": null,
+  "claim_scope": "The stated ideal detector map for a stipulated delayed sinusoid under integer-cycle averaging, including its unqualified phase formula, affine-delay slope, and controls.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T03:21:13.699043+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 6,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_failed",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_failed",
   "load_bearing_score": 6.585,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Substituting the stipulated delayed sinusoid into the integer-cycle averages gives X_z = A_z cos(omega tau_z), Y_z = A_z sin(omega tau_z), and hence phi_z = omega tau_z mod 2*pi.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "dca6a217bbe95682e9cf638e0a6b19ea1ad462bbb7efb44bfc122e780fb8a70b",
   "note_path": "docs/DIAMOND_IDEAL_LOCKIN_DETECTOR_THEOREM_NOTE_2026-06-17.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Add an explicit A_z > 0 domain condition to the phase theorem, state that phase is undefined for the drive-off control, and add a corresponding degenerate-domain runner assertion.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -88,14 +134,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 6,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 6
   },
   "runner_path": "scripts/diamond_ideal_lockin_detector_theorem.py",
   "title": "Diamond Ideal Lock-In Detector Theorem Note",
   "transitive_descendants": 11,
-  "verdict_rationale": null
+  "verdict_rationale": "Direct cycle-average algebra supports the X and Y formulas and the nondegenerate phase/slope result. The runner\u2019s asserted checks all pass, but it tests drive-off only as a channel-null control and never validates the phase claim at A_z = 0. Because that admitted case makes atan2(Y_z,X_z) undefined, the source\u2019s unqualified theorem does not close on its own stated domain."
 }

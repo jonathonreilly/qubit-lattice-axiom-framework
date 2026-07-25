@@ -101,6 +101,18 @@ unrefitted diagnostic grows from ranks `2,4,10,16,36` on adjacent-pair, chain,
 L, `2x2`, and `3x3` center fixtures.  This growth concerns the supplied
 whole-patch target comparison; it is not a recurrence no-go.
 
+Extracting successively larger finite dictionaries does not yet turn that
+target comparison into a recurrence.  The adjacent-edge word `H` and L-corner
+word `K` close the adjacent and L fixtures.  Adding the four-channel
+plaquette quotient `P` closes the `2x2` fixture exactly; one returned dirty
+loop M2 executes all 6,568 declared `n<=2` plaquette cases with zero phase or
+return failure.  Frozen without refit, the same `H/K/P` dictionary misses 482
+pairs with rank 24 on held `3x3` centers and 680 pairs with rank 48 on the
+held `2x2x2` cube.  Exhausting all 16 plaquette subsets on `3x3` and all 64
+on the cube proves that this is not a wrong binary choice of the extracted
+plaquette words.  This is a route-specific falsification of the finite
+`H/K/P` extrapolation, not a recurrence no-go.
+
 An unoriented scalar edge selector is insufficient for that representation:
 the four proper-cubic rotations fixing a `+x` edge produce four distinct
 24-pair words.  The transported 24-frame family itself composes exactly over
@@ -377,6 +389,9 @@ Derived:
 - the L-residual rank-10/five-parity-channel factorization, dirty-loop return,
   held rank/distance census, and transported edge-chart covariance
   discriminator;
+- the target-extracted four-channel plaquette quotient, exact `H/K/P` closure
+  through the `2x2` training fixture, and its held `3x3`/cube falsification
+  with exhaustive local plaquette-subset controls;
 - held-size stability, constant overhead, mass preservation, and 24/576
   covariance;
 - exact retirement of the eleven-chart transition residual and active

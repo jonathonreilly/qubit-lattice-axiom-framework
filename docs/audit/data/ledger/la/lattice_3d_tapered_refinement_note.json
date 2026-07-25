@@ -1,44 +1,101 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T21:40:32.810010+00:00",
+  "audit_invocation_history": [
+    "066dc4e13ded467caa17aaf57c5e8572"
+  ],
+  "audit_invocation_id": "066dc4e13ded467caa17aaf57c5e8572",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true,
+      "runner_path": "scripts/lattice_3d_tapered_refinement.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {
+      "scripts/lattice_3d_dense_10prop.py": "1eca0d9998f2629294fd043131a563355b31640187cbfcdb22c50f69a1b13b9e"
+    },
+    "load_bearing_score": 0.0,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/lattice_3d_dense_10prop.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "1eca0d9998f2629294fd043131a563355b31640187cbfcdb22c50f69a1b13b9e",
+        "cache_status": "ok"
+      },
+      "scripts/lattice_3d_tapered_refinement.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "43e9f68918ea11860a4e1aedf19ef8e0f16a9b6130e72d822388244ae084d528",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "43e9f68918ea11860a4e1aedf19ef8e0f16a9b6130e72d822388244ae084d528",
+    "runner_path": "scripts/lattice_3d_tapered_refinement.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-591c7868",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The runner computes the reported finite-harness trends, but the restricted chain does not derive the imported BETA, K, LAM, and binning constants, the spent-delay dynamics, or the physical readout identifications from the supplied axioms. The note's two Born residuals also disagree with current stdout.",
   "claim_id": "lattice_3d_tapered_refinement_note",
-  "claim_scope": null,
+  "claim_scope": "For the fixed y-tapered 3D spent-delay harness at h=1.0 and h=0.5, the code reports machine-scale third-order interference, zero k=0 centroid shift, increased MI, d_TV, and decoherence under refinement, negative centroid, P_near, and side-bias shifts, and no positive distance-law sample.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_last_reviewed": "2026-07-25T21:40:32.810010+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [
     "scripts/lattice_3d_dense_10prop.py"
   ],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "On both tested spacings, all three gravity observables remain negative, so this branch does not recover hierarchy-clean attraction.",
+  "load_bearing_step_class": "B",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "stretch_attempt_negative"
+  ],
   "note_hash": "79b5abbeadaae8a15e1f13b0bedec940d59e2c9f36c5faaaaf66c8b894428283",
   "note_path": "docs/LATTICE_3D_TAPERED_REFINEMENT_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "scope_too_broad: narrow the note to deterministic outputs under explicitly imposed BETA, K, LAM, binning, action, and readout definitions; update both Born entries to current stdout and report distance support against all six tested offsets.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -112,14 +169,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
+    "A": 2,
+    "B": 14,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 16
   },
   "runner_path": "scripts/lattice_3d_tapered_refinement.py",
   "title": "3D Tapered Refinement Note",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "Independent algebra confirms that k=0 removes all field dependence from the propagation phase and that the sign classifier maps three negative shifts to AWAY. The current stdout reproduces the MI, d_TV, decoherence, and gravity entries, but its Born residuals, 6.63e-16 and 1.80e-15, do not equal the note's 5.42e-16 and 1.91e-15. The helper supplies load-bearing parameters BETA=0.8, K=5, LAM=10, and N_YBINS=8, while the action and physical readout meanings lack a cited retained bridge from the supplied axioms. The negative result is therefore supported only as a two-spacing stretch-attempt outcome; alternate actions, topology families, and readouts remain untested."
 }

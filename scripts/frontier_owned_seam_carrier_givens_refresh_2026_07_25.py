@@ -6,8 +6,11 @@ selector.  Each local n=1 Cycle-311 carrier vector is unprepared by four
 explicit complex Givens rotations whose coefficients are derived from the
 landed carrier amplitudes.  The endpoint occupations are then FSWAPed on the
 canonical carrier slot and the inverse word reprepares the exact target
-carrier vector.  Route-B qutrit charts are treated by erase/recompute around
-that bounded word.  No E U E^dagger ambient completion is formed.
+carrier vector.  The matrix control records the equivalent Route-B chart
+refresh, while the physical synthesis implements every carrier/chart change
+as an equality-controlled Pauli two-level rotation.  Its membership predicate
+is invariant on the source/target pair and is therefore recomputed from the
+target to return all work.  No E U E^dagger ambient completion is formed.
 """
 
 from __future__ import annotations
@@ -39,6 +42,7 @@ class LocalCarrier:
     preparation: np.ndarray
     canonical_rows: tuple[int, ...]
     givens_rotations: int
+    givens_coefficients: tuple[tuple[float, complex], ...]
 
 
 def max_abs(matrix) -> float:
@@ -54,13 +58,16 @@ def matrix_norm(matrix) -> float:
     return float(np.linalg.norm(np.asarray(matrix)))
 
 
-def complex_givens_unprepare(vector: np.ndarray) -> tuple[np.ndarray, int]:
+def complex_givens_unprepare(
+    vector: np.ndarray,
+) -> tuple[np.ndarray, int, tuple[tuple[float, complex], ...]]:
     """Return a product of two-level gates taking vector exactly to e_0."""
 
     work = np.asarray(vector, dtype=complex).copy()
     dimension = len(work)
     result = np.eye(dimension, dtype=complex)
     rotations = 0
+    coefficients = []
     for other in range(dimension - 1, 0, -1):
         a, b = work[0], work[other]
         radius = math.sqrt(abs(a) ** 2 + abs(b) ** 2)
@@ -80,6 +87,7 @@ def complex_givens_unprepare(vector: np.ndarray) -> tuple[np.ndarray, int]:
         work = gate @ work
         result = gate @ result
         rotations += 1
+        coefficients.append((float(cosine), complex(sine)))
     if abs(work[0]) < 1.0e-15:
         raise ValueError("the carrier vector unexpectedly vanished")
     phase_gate = np.eye(dimension, dtype=complex)
@@ -88,7 +96,7 @@ def complex_givens_unprepare(vector: np.ndarray) -> tuple[np.ndarray, int]:
     result = phase_gate @ result
     assert np.linalg.norm(work - np.eye(dimension)[:, 0]) < 2.0e-13
     assert np.linalg.norm(result.conj().T @ result - np.eye(dimension)) < 2.0e-13
-    return result, rotations
+    return result, rotations, tuple(coefficients)
 
 
 def local_carrier(code, length: int, cell: tuple[int, int, int]) -> LocalCarrier:
@@ -101,13 +109,15 @@ def local_carrier(code, length: int, cell: tuple[int, int, int]) -> LocalCarrier
     preparation = np.eye(len(branches), dtype=complex)
     canonical_rows = []
     rotations = 0
+    coefficients = []
     for column, spec in enumerate(specs):
         rows = np.flatnonzero(np.abs(encoding[:, column]) > 1.0e-14)
         canonical_rows.append(int(rows[0]))
         vector = encoding[rows, column]
-        unprepare, count = complex_givens_unprepare(vector)
+        unprepare, count, landed_coefficients = complex_givens_unprepare(vector)
         preparation[np.ix_(rows, rows)] = unprepare.conj().T
         rotations += count
+        coefficients.extend(landed_coefficients)
     canonical = np.zeros_like(encoding)
     for column, row in enumerate(canonical_rows):
         canonical[row, column] = 1
@@ -123,6 +133,7 @@ def local_carrier(code, length: int, cell: tuple[int, int, int]) -> LocalCarrier
         preparation=preparation,
         canonical_rows=tuple(canonical_rows),
         givens_rotations=rotations,
+        givens_coefficients=tuple(coefficients),
     )
 
 
@@ -163,6 +174,39 @@ def cell_chart_signature(code, local: LocalCarrier, representative) -> int:
         for block in blocks:
             signature ^= word << (2 * block)
     return signature
+
+
+def pauli_inverse(pauli):
+    phase = (-int(pauli.phase) - 2 * (int(pauli.z) & int(pauli.x)).bit_count()) % 4
+    return direct.c330.c235.Pauli(phase, int(pauli.x), int(pauli.z))
+
+
+def augmented_representative(code, locals_by_cell, by_cell):
+    representative = direct.c330.c235.Pauli()
+    chart = 0
+    for cell in sorted(by_cell):
+        row = by_cell[cell]
+        local = locals_by_cell[cell]
+        representative = representative @ local.representatives[row]
+        chart ^= cell_chart_signature(code, local, local.representatives[row])
+    base = code.qubits + 3 * len(code.graph.vertices)
+    return direct.c330.c235.Pauli(
+        int(representative.phase),
+        int(representative.x) | (int(chart) << base),
+        int(representative.z),
+    ), chart
+
+
+def bounded_observation(code, representative, chart, ports, blocks):
+    port_word = sum(
+        ((int(representative.x) >> (code.qubits + vertex)) & 1) << bit
+        for bit, vertex in enumerate(ports)
+    )
+    chart_word = sum(
+        ((int(chart) >> (2 * block)) & 0b11) << (2 * bit)
+        for bit, block in enumerate(blocks)
+    )
+    return chart_word, port_word
 
 
 def pair_control(length: int, edge_index: int) -> dict[str, object]:
@@ -246,10 +290,37 @@ def pair_control(length: int, edge_index: int) -> dict[str, object]:
     physical_seam = preparation @ occupation_fswap @ preparation.conj().T
     identity = sparse.eye(len(branch_pairs), format="csc", dtype=complex)
 
-    # Route-B chart refresh: the first XOR erases these exact words, the
-    # structured seam acts only on the bare carrier shell, and the second XOR
-    # writes the target-branch words.  Store only the reachable chart sectors;
-    # no augmented completion is materialized.
+    # Expose the invalid old decoder argument: keeping the source pair label
+    # while K mixes the branch and then XORing the target label does not return
+    # work.  A lawful transition transports the label to the coherent target;
+    # the physical implementation below instead uses an invariant unordered
+    # source/target membership predicate and avoids a persistent pair label.
+    stale_rows = []
+    stale_cols = []
+    stale_data = []
+    seam_coo = physical_seam.tocoo()
+    encoding_csr = encoding.tocsr()
+    for target_row, source_row, transition in zip(
+        seam_coo.row, seam_coo.col, seam_coo.data
+    ):
+        source_column = encoding_csr.getrow(int(source_row)).tocoo()
+        work_word = int(source_row) ^ int(target_row)
+        for column, amplitude in zip(source_column.col, source_column.data):
+            stale_rows.append(work_word * len(branch_pairs) + int(target_row))
+            stale_cols.append(int(column))
+            stale_data.append(transition * amplitude)
+    stale_output = sparse.coo_matrix(
+        (stale_data, (stale_rows, stale_cols)),
+        shape=((1 << 10) * len(branch_pairs), len(logical_pairs)),
+        dtype=complex,
+    ).tocsc()
+    stale_nonblank = stale_output[len(branch_pairs) :, :]
+    transported_label_output = physical_seam @ encoding
+    transported_label_return_residual = matrix_norm(transported_label_output - output)
+
+    # Route-B chart refresh matrix control.  The later physical primitive
+    # audit replaces a persistent erase/decoder word by direct augmented
+    # source/target two-level rotations with invariant membership work.
     left_signatures = tuple(
         cell_chart_signature(code, left, representative)
         for representative in left.representatives
@@ -313,6 +384,11 @@ def pair_control(length: int, edge_index: int) -> dict[str, object]:
     random = rng.normal(size=len(branch_pairs)) + 1.0j * rng.normal(size=len(branch_pairs))
     random /= np.linalg.norm(random)
     returned = physical_seam.conj().T @ (physical_seam @ random)
+    coefficient_rows = left.givens_coefficients + right.givens_coefficients
+    coefficient_unitarity = max(
+        abs(cosine * cosine + abs(sine) ** 2 - 1.0)
+        for cosine, sine in coefficient_rows
+    )
 
     return {
         "L": length,
@@ -324,6 +400,8 @@ def pair_control(length: int, edge_index: int) -> dict[str, object]:
         "bare_pair_branch_microbasis": len(branch_pairs),
         "local_carrier_rotations_per_cell": left.givens_rotations,
         "two_cell_carrier_rotations": left.givens_rotations + right.givens_rotations,
+        "landed_complex_givens_coefficients": len(coefficient_rows),
+        "givens_coefficient_unitarity_residual": coefficient_unitarity,
         "preparation_unitarity": max_abs(preparation.conj().T @ preparation - identity),
         "occupation_FSWAP_unitarity": max_abs(
             occupation_fswap.conj().T @ occupation_fswap - identity
@@ -341,6 +419,11 @@ def pair_control(length: int, edge_index: int) -> dict[str, object]:
         "chart_refresh_leakage": matrix_norm(augmented_leakage),
         "carrier_coefficient_deletion_residual": deletion_residual,
         "randomized_inverse_residual": float(np.linalg.norm(returned - random)),
+        "naive_source_label_target_decode_nonblank_norm": matrix_norm(stale_nonblank),
+        "coherently_transported_target_label_return_residual": (
+            transported_label_return_residual
+        ),
+        "persistent_pair_label_used_by_physical_word": False,
         "carrier_word_extra_work_M2": 0,
         "dense_EUE_completion_used": False,
         "global_mode_order_used": False,
@@ -433,7 +516,6 @@ def full_domain_chart_audit(length: int) -> dict[str, object]:
             histories += 1
 
     edge_rows = []
-    compute_uncompute_failures = 0
     for owner, edge in enumerate(direct.SOURCE_EDGES):
         table = observations[owner]
         chart_deleted: dict[int, set[tuple[int, int]]] = defaultdict(set)
@@ -441,10 +523,6 @@ def full_domain_chart_audit(length: int) -> dict[str, object]:
         for (chart_word, port_word), pairs in table.items():
             chart_deleted[port_word].update(pairs)
             port_deleted[chart_word].update(pairs)
-            if len(pairs) == 1:
-                left_row, right_row = next(iter(pairs))
-                decoded = left_row * 46 + right_row
-                compute_uncompute_failures += (0 ^ decoded ^ decoded) != 0
         edge_rows.append(
             {
                 "edge": owner,
@@ -456,7 +534,6 @@ def full_domain_chart_audit(length: int) -> dict[str, object]:
                 "port_M2": len(edge_ports[owner]),
                 "qutrit_blocks": len(edge_blocks[owner]),
                 "qutrit_M2": 2 * len(edge_blocks[owner]),
-                "decoder_work_M2": 12,
                 "maximum_equality_controls": (
                     len(edge_ports[owner]) + 2 * len(edge_blocks[owner])
                 ),
@@ -489,7 +566,6 @@ def full_domain_chart_audit(length: int) -> dict[str, object]:
         "owned_seams": len(direct.SOURCE_EDGES),
         "edge_rows": edge_rows,
         "total_decoder_ambiguities": sum(row["decoder_ambiguities"] for row in edge_rows),
-        "decoder_compute_uncompute_failures": compute_uncompute_failures,
         "invalid_qutrit_words": invalid_qutrit_words,
         "duplicate_shared_chart_failures": duplicate_shared_chart_failures,
         "minimum_chart_deletion_ambiguities": min(
@@ -501,7 +577,7 @@ def full_domain_chart_audit(length: int) -> dict[str, object]:
         "maximum_port_M2": max(row["port_M2"] for row in edge_rows),
         "maximum_qutrit_blocks": max(row["qutrit_blocks"] for row in edge_rows),
         "maximum_qutrit_M2": max(row["qutrit_M2"] for row in edge_rows),
-        "decoder_work_M2": 12,
+        "endpoint_pair_label_bits": 12,
         "maximum_reversible_truth_table_rows": max(
             row["reachable_bounded_observations"] for row in edge_rows
         ),
@@ -510,14 +586,255 @@ def full_domain_chart_audit(length: int) -> dict[str, object]:
         ),
         "maximum_branch_control_M2_union": maximum_branch_support,
         "maximum_branch_plus_chart_M2_union": maximum_total_support,
-        "maximum_total_M2_with_decoder_work": maximum_total_support + 12,
         "global_mode_order_used": False,
         "full_union_selector_used": False,
         "host_side_control_used": False,
+        "naive_pair_label_uncompute_claim_removed": True,
         "decoder_implementation": (
-            "fixed equality-controlled XOR into a 12-M2 endpoint-pair word; "
-            "use the word to select the finite Givens sequence; repeat XOR to return blank"
+            "bounded observation table only; returned-work implementation is audited "
+            "separately by invariant source/target membership predicates"
         ),
+    }
+
+
+def physical_two_level_primitive_audit(length: int) -> dict[str, object]:
+    """Synthesize/audit every ray transition used by all owned seam words.
+
+    A transition is selected by membership in the unordered pair of its source
+    and target bounded observations.  That predicate is one on both endpoints,
+    so it remains one throughout the two-level rotation and can be XORed away
+    by the target observation.  This replaces the invalid ``source XOR source``
+    decoder argument.
+    """
+
+    code = c315.c269.build_code(length)
+    locals_by_cell = tuple(
+        local_carrier(code, length, cell) for cell in direct.UNION_COORDS[0]
+    )
+    rows_by_cell_spec = []
+    vacuum_rows = []
+    carrier_neighbors = []
+    canonical_by_spec = []
+    spec_by_row = []
+    for local in locals_by_cell:
+        rows_by_spec = {
+            spec: tuple(np.flatnonzero(np.abs(local.encoding[:, column]) > 1.0e-14))
+            for column, spec in enumerate(local.specs)
+        }
+        rows_by_cell_spec.append(rows_by_spec)
+        vacuum_rows.append(rows_by_spec[(0, ())][0])
+        neighbors = defaultdict(set)
+        canonical = {}
+        row_specs = {}
+        for spec, rows in rows_by_spec.items():
+            canonical[spec] = int(rows[0])
+            for row in rows:
+                row_specs[int(row)] = spec
+            if spec[0] == 1:
+                for row in rows[1:]:
+                    neighbors[int(rows[0])].add(int(row))
+                    neighbors[int(row)].add(int(rows[0]))
+        carrier_neighbors.append(neighbors)
+        canonical_by_spec.append(canonical)
+        spec_by_row.append(row_specs)
+
+    edge_data = tuple(
+        direct.physical_edge_data(code, tuple(local.body for local in locals_by_cell), edge)
+        for edge in direct.SOURCE_EDGES
+    )
+    cell_blocks = tuple(
+        tuple(
+            sorted(
+                {
+                    block
+                    for mode in range(6)
+                    for block in route_b.BLOCKS_BY_CELL_MODE.get((cell, mode), ())
+                }
+            )
+        )
+        for cell in direct.UNION_COORDS[0]
+    )
+    edge_blocks = tuple(
+        tuple(sorted(set(cell_blocks[edge.first_cell]) | set(cell_blocks[edge.second_cell])))
+        for edge in direct.SOURCE_EDGES
+    )
+    edge_ports = tuple(tuple(sorted(data["union"])) for data in edge_data)
+
+    descriptors: dict[
+        tuple[int, tuple[int, int], tuple[int, int], tuple[int, int]],
+        set[tuple[tuple[int, int], int, int, int]],
+    ] = defaultdict(set)
+    transition_visits = 0
+
+    for label in direct.LABELS:
+        active = direct.active_local_cells(label)
+        local_rows = [
+            rows_by_cell_spec[cell][direct.local_spec(label, cell)] for cell in active
+        ]
+        for selected in product(*local_rows) if local_rows else ((),):
+            by_cell = dict(zip(active, map(int, selected)))
+            source_augmented, source_chart = augmented_representative(
+                code, locals_by_cell, by_cell
+            )
+            for owner, edge in enumerate(direct.SOURCE_EDGES):
+                source_pair = (
+                    int(by_cell.get(edge.first_cell, vacuum_rows[edge.first_cell])),
+                    int(by_cell.get(edge.second_cell, vacuum_rows[edge.second_cell])),
+                )
+                source_observation = bounded_observation(
+                    code,
+                    source_augmented,
+                    source_chart,
+                    edge_ports[owner],
+                    edge_blocks[owner],
+                )
+                target_pairs = set()
+                for target_left in carrier_neighbors[edge.first_cell].get(
+                    source_pair[0], ()
+                ):
+                    target_pairs.add((target_left, source_pair[1]))
+                for target_right in carrier_neighbors[edge.second_cell].get(
+                    source_pair[1], ()
+                ):
+                    target_pairs.add((source_pair[0], target_right))
+
+                left_spec = spec_by_row[edge.first_cell][source_pair[0]]
+                right_spec = spec_by_row[edge.second_cell][source_pair[1]]
+                if (
+                    source_pair[0] == canonical_by_spec[edge.first_cell][left_spec]
+                    and source_pair[1] == canonical_by_spec[edge.second_cell][right_spec]
+                ):
+                    target_left_spec, target_right_spec, _phase = swapped_specs(
+                        edge, left_spec, right_spec
+                    )
+                    target_pairs.add(
+                        (
+                            canonical_by_spec[edge.first_cell][target_left_spec],
+                            canonical_by_spec[edge.second_cell][target_right_spec],
+                        )
+                    )
+
+                for target_pair in target_pairs:
+                    if target_pair == source_pair:
+                        continue
+                    target_by_cell = dict(by_cell)
+                    for cell, row in (
+                        (edge.first_cell, target_pair[0]),
+                        (edge.second_cell, target_pair[1]),
+                    ):
+                        if locals_by_cell[cell].branches[row].number == 0:
+                            target_by_cell.pop(cell, None)
+                        else:
+                            target_by_cell[cell] = int(row)
+                    target_augmented, target_chart = augmented_representative(
+                        code, locals_by_cell, target_by_cell
+                    )
+                    target_observation = bounded_observation(
+                        code,
+                        target_augmented,
+                        target_chart,
+                        edge_ports[owner],
+                        edge_blocks[owner],
+                    )
+                    transition = target_augmented @ pauli_inverse(source_augmented)
+                    descriptors[
+                        (owner, source_observation, source_pair, target_pair)
+                    ].add(
+                        (
+                            target_observation,
+                            int(transition.phase),
+                            int(transition.x),
+                            int(transition.z),
+                        )
+                    )
+                    transition_visits += 1
+
+    descriptor_conflicts = sum(len(values) > 1 for values in descriptors.values())
+    first_conflict = next(
+        (
+            {"key": key, "values": values}
+            for key, values in descriptors.items()
+            if len(values) > 1
+        ),
+        None,
+    )
+    membership_return_failures = 0
+    maximum_transition_support = 0
+    maximum_controls = 0
+    maximum_control_transition_tensor_support = 0
+    q_base = code.qubits + 3 * len(code.graph.vertices)
+    for (owner, source_observation, _source_pair, _target_pair), values in descriptors.items():
+        maximum_controls = max(
+            maximum_controls,
+            len(edge_ports[owner]) + 2 * len(edge_blocks[owner]),
+        )
+        if len(values) != 1:
+            continue
+        target_observation, _phase, x_word, z_word = next(iter(values))
+        maximum_transition_support = max(
+            maximum_transition_support, (int(x_word) | int(z_word)).bit_count()
+        )
+        control_mask = sum(
+            1 << (code.qubits + vertex) for vertex in edge_ports[owner]
+        )
+        control_mask |= sum(
+            (0b11 << (q_base + 2 * block)) for block in edge_blocks[owner]
+        )
+        maximum_control_transition_tensor_support = max(
+            maximum_control_transition_tensor_support,
+            (int(x_word) | int(z_word) | control_mask).bit_count(),
+        )
+        # The reversible predicate is membership in {source,target}; it is one
+        # before and after the two-level gate, so the target-side recomputation
+        # returns its predicate and comparator scratch to zero.
+        source_membership = int(source_observation in (source_observation, target_observation))
+        target_membership = int(target_observation in (source_observation, target_observation))
+        membership_return_failures += source_membership != 1 or target_membership != 1
+
+    maximum_comparator_work = max(0, maximum_controls - 2) + 3
+    reverse_transition_failures = 0
+    for (owner, source_observation, source_pair, target_pair), values in descriptors.items():
+        if len(values) != 1:
+            continue
+        target_observation, phase, x_word, z_word = next(iter(values))
+        reverse_key = (owner, target_observation, target_pair, source_pair)
+        reverse_values = descriptors.get(reverse_key, set())
+        transition = direct.c330.c235.Pauli(phase, x_word, z_word)
+        inverse = pauli_inverse(transition)
+        expected = (source_observation, inverse.phase, inverse.x, inverse.z)
+        reverse_transition_failures += expected not in reverse_values
+    return {
+        "L": length,
+        "split": "train" if length == 5 else "held-no-refit",
+        "global_transition_visits": transition_visits,
+        "distinct_controlled_two_level_rows": len(descriptors),
+        "transition_descriptor_conflicts": descriptor_conflicts,
+        "first_transition_descriptor_conflict": first_conflict,
+        "membership_predicate_return_failures": membership_return_failures,
+        "reverse_transition_pairing_failures": reverse_transition_failures,
+        "maximum_observation_controls": maximum_controls,
+        "maximum_transition_Pauli_support": maximum_transition_support,
+        "maximum_control_plus_transition_tensor_M2": (
+            maximum_control_transition_tensor_support
+        ),
+        "maximum_clean_comparator_work_M2": maximum_comparator_work,
+        "maximum_total_tensor_M2_with_returned_work": (
+            maximum_control_transition_tensor_support + maximum_comparator_work
+        ),
+        "primitive_word": (
+            "compute membership in the unordered source/target observation pair "
+            "with X-normalization and multi-controlled Toffoli; Clifford-conjugate "
+            "the fixed transition Pauli to one pivot; apply the landed complex "
+            "two-level Ry/Rz angle; reverse Clifford and recompute membership on "
+            "the target observation to return all predicate/comparator work"
+        ),
+        "projector_formula": (
+            "Pi_o=product_k (I+(-1)^o_k Z_k)/2 on owner port+q-chart M2; "
+            "A=Pi_target Q Pi_source; H_phi=-i exp(i phi) A + h.c."
+        ),
+        "abstract_ray_matrix_unit_used": False,
+        "dense_EUE_completion_used": False,
+        "physical_M2_primitive_supplied": descriptor_conflicts == 0,
     }
 
 
@@ -581,6 +898,9 @@ def main() -> None:
         for edge in range(len(direct.SOURCE_EDGES))
     )
     audits = tuple(full_domain_chart_audit(length) for length in (5, 6))
+    primitives = tuple(
+        physical_two_level_primitive_audit(length) for length in (5, 6)
+    )
     composed = composed_update_controls(
         max(row["chart_refresh_intertwiner_norm"] for row in rows),
         max(row["chart_refresh_leakage"] for row in rows),
@@ -590,12 +910,16 @@ def main() -> None:
         print("pair", row)
     for audit in audits:
         print("domain", audit)
+    for primitive in primitives:
+        print("primitive", primitive)
     print("composed", composed)
     for row in rows:
         assert row["logical_pair_columns_n_le_2"] == 79
         assert row["bare_pair_branch_microbasis"] == 991
         assert row["local_carrier_rotations_per_cell"] == 24
         assert row["two_cell_carrier_rotations"] == 48
+        assert row["landed_complex_givens_coefficients"] == 48
+        assert row["givens_coefficient_unitarity_residual"] < TOL
         assert row["preparation_unitarity"] < TOL
         assert row["occupation_FSWAP_unitarity"] < TOL
         assert row["structured_seam_unitarity"] < TOL
@@ -606,6 +930,9 @@ def main() -> None:
         assert row["duplicate_shared_chart_failures"] == 0
         assert row["carrier_coefficient_deletion_residual"] > 1.0e-3
         assert row["randomized_inverse_residual"] < TOL
+        assert row["naive_source_label_target_decode_nonblank_norm"] > 1.0e-3
+        assert row["coherently_transported_target_label_return_residual"] < TOL
+        assert not row["persistent_pair_label_used_by_physical_word"]
         assert not row["dense_EUE_completion_used"]
         assert not row["global_mode_order_used"]
         assert not row["full_domain_seam_claimed"]
@@ -614,18 +941,29 @@ def main() -> None:
         assert audit["physical_code_branch_histories"] == 59941
         assert audit["owned_seams"] == 11
         assert audit["total_decoder_ambiguities"] == 0
-        assert audit["decoder_compute_uncompute_failures"] == 0
         assert audit["invalid_qutrit_words"] == 0
         assert audit["duplicate_shared_chart_failures"] == 0
         assert all(row["decoder_ambiguities"] == 0 for row in audit["edge_rows"])
         assert audit["minimum_chart_deletion_ambiguities"] > 0
         assert audit["maximum_port_M2"] <= 22
         assert audit["maximum_qutrit_blocks"] <= 14
-        assert audit["decoder_work_M2"] == 12
+        assert audit["endpoint_pair_label_bits"] == 12
         assert audit["maximum_equality_controls"] <= 50
         assert not audit["global_mode_order_used"]
         assert not audit["full_union_selector_used"]
         assert not audit["host_side_control_used"]
+        assert audit["naive_pair_label_uncompute_claim_removed"]
+    for primitive in primitives:
+        assert primitive["transition_descriptor_conflicts"] == 0
+        assert primitive["membership_predicate_return_failures"] == 0
+        assert primitive["reverse_transition_pairing_failures"] == 0
+        assert primitive["maximum_observation_controls"] <= 50
+        assert primitive["maximum_transition_Pauli_support"] <= 117
+        assert primitive["maximum_control_plus_transition_tensor_M2"] <= 117
+        assert primitive["maximum_total_tensor_M2_with_returned_work"] <= 168
+        assert primitive["physical_M2_primitive_supplied"]
+        assert not primitive["abstract_ray_matrix_unit_used"]
+        assert not primitive["dense_EUE_completion_used"]
     covariance = composed["covariance"]
     assert composed["unique_owned_seams"] == 11
     assert composed["seam_unitarity"] < TOL

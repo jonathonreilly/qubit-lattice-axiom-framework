@@ -1,42 +1,88 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T16:42:27.014430+00:00",
+  "audit_invocation_history": [
+    "f088f210e22d46a59ef1b136db21123b"
+  ],
+  "audit_invocation_id": "f088f210e22d46a59ef1b136db21123b",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true,
+      "runner_path": "scripts/frontier_universal_gr_newton_tensor_scalar_consistency.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 0.0,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_universal_gr_newton_tensor_scalar_consistency.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "5f64278b40e69c783e9d65fd4b343de9b3d9e186cd0815eab02d2b2921deccf0",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "5f64278b40e69c783e9d65fd4b343de9b3d9e186cd0815eab02d2b2921deccf0",
+    "runner_path": "scripts/frontier_universal_gr_newton_tensor_scalar_consistency.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-7d7fa49e",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The numerical code path closes for its explicitly chosen toy operator. No supplied authority derives the massive lattice-Dirac tensor carrier, stress vertex, or parameter choice from the framework baseline, so the diagnostic does not close as a framework theorem.",
   "claim_id": "universal_gr_newton_tensor_scalar_consistency_bounded_theorem_note_2026-06-08",
-  "claim_scope": null,
+  "claim_scope": "Bounded shared-Laplacian-shape diagnostic for the Z^3 scalar Green tail and the finite sampled tensor-channel response on the runner's grid.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T16:42:27.014430+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The sampled tensor response Pi_TT(k)-Pi_TT(0) is positive and approximately proportional to 2-2 cos(k) at the two smallest sampled momenta.",
+  "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "bb97585a0adac494064b1a388eb5931f087c1bb32b62030d9c6ef6bc3213c855",
   "note_path": "docs/UNIVERSAL_GR_NEWTON_TENSOR_SCALAR_CONSISTENCY_BOUNDED_THEOREM_NOTE_2026-06-08.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "missing_bridge_theorem: derive and retain the lattice-Dirac tensor carrier and stress/source normalization used by the runner, then rerun the independent trace and scalar-quadrature checks.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -90,12 +136,12 @@
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
-    "C": 0,
+    "C": 3,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 3
   },
   "runner_path": "scripts/frontier_universal_gr_newton_tensor_scalar_consistency.py",
   "title": "Scalar Green Tail and Tensor Stiffness Shared-Laplacian Diagnostic",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: the tensor-side computation assumes the massive lattice-Dirac operator, m=0.7, and the particular stress vertex rather than deriving that carrier from the supplied axioms. Why this blocks: an independent closed-form Pauli-trace check confirms the reported 0.02208 and 0.01887 ratios, and independent Brillouin-zone quadrature confirms the scalar samples, but these checks establish only the defined toy model, not a framework tensor surface. Repair target: supply a retained derivation or bridge for the tensor carrier and stress normalization, or explicitly make the runner-defined toy action a stated conditional hypothesis. Claim boundary until fixed: the N=10, m=0.7 toy calculation and the three scalar samples support finite numerical compatibility only; the note's listed non-results are coverage boundaries, not no-go assertions."
 }

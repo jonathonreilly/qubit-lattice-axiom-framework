@@ -1,42 +1,88 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T15:58:14.650431+00:00",
+  "audit_invocation_history": [
+    "6de1c917e1144c6ca3a662822804724d"
+  ],
+  "audit_invocation_id": "6de1c917e1144c6ca3a662822804724d",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true,
+      "runner_path": "scripts/audit_companion_koide_dimensionless_objection_toy_conditional_algebraic_checks.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 0.0,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/audit_companion_koide_dimensionless_objection_toy_conditional_algebraic_checks.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "23945fc051ddb0a24118b4b0602bd54794e18072f0fc55e4635392de1ec875e0",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "23945fc051ddb0a24118b4b0602bd54794e18072f0fc55e4635392de1ec875e0",
+    "runner_path": "scripts/audit_companion_koide_dimensionless_objection_toy_conditional_algebraic_checks.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-6b905f38",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The four independent proof branches close by exact field arithmetic, affine inversion, and elementary matrix algebra on their stated rational domains. No scientific dependency or physical interpretation is imported.",
   "claim_id": "koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16",
-  "claim_scope": null,
+  "claim_scope": "Self-contained exact rational identities T1\u2013T4 over Q, including the stated domain, fiber, witnesses, affine bijections, projector identities, and endomorphism dimensions, with no physical interpretation.",
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T15:58:14.650431+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Solving the defining equations and multiplying the displayed matrices yields R(s,z)-2/3=2z/[3(1+s-z)], zeta^{-1}(t)=(t+1)/2, the stated projector identities and dimensions, and c=t-eta(1-s).",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "6e4c14c9b82af937bb56df483d5730cfe5222b75faf2e3b21e44ee5ab79eaa47",
   "note_path": "docs/KOIDE_DIMENSIONLESS_OBJECTION_TOY_CONDITIONAL_ALGEBRAIC_CHECKS_NARROW_THEOREM_NOTE_2026-05-16.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "runner_artifact_issue: add current-cycle N1\u2013N8 stress-test evidence, including five distinct route surfaces and authenticated N7/N8 dispositions, so the otherwise closed theorem can satisfy the packet's mandatory clean-verdict gate.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -467,14 +513,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 40,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 40
   },
   "runner_path": "scripts/audit_companion_koide_dimensionless_objection_toy_conditional_algebraic_checks.py",
   "title": "Two-Channel Rational Functions and Exact Projectors \u2014 Positive Theorem",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "T1\u2013T4 are correct on the stated domains, and the supplied runner source performs substantive exact Fraction and matrix computations rather than merely printing expected constants. The supplied normal run reports 40/40 passing checks and reveals no scientific dependency. Clean certification is nevertheless withheld because this packet mandates structured N1\u2013N8 evidence for every clean verdict, while the supplied live stdout does not provide the route-specific and cross-cycle evidence required to authenticate a PASS packet."
 }

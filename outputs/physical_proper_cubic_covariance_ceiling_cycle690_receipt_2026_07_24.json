@@ -19,13 +19,13 @@
   "stabilizer_called_a_physical_symmetry": false
  },
  "group_order": 24,
- "landed_kuhn_covariance": 6,
+ "kuhn_covariance": 6,
  "no_go": {
   "axiom_pressure": false,
   "escape_conditions": [
-   "enrich the vertex set beyond Z^3 (face/body centres), at the cost of leaving the lattice",
+   "enrich the vertex set beyond Z^3 (cube and face centres), at the cost of leaving the lattice",
    "accept 12 via the five-tetrahedron decomposition and declare a chirality",
-   "accept 6, which is what the landed Kuhn complex carries"
+   "accept the standard Kuhn complex's scope of 6"
   ],
   "shared_obstruction": false,
   "statement": "no Z^3-vertex cube triangulation is invariant under all 24 proper cubic rotations"
@@ -34,7 +34,7 @@
  "pass_count": 15,
  "passes": 15,
  "resources": {
-  "elapsed_seconds": 0.007560500002000481
+  "elapsed_seconds": 0.09833474998595193
  },
- "runner_sha256": "c32ea0011a4018bd2bff34d8f4762673cf720162b1f878d3d7cf3e8da34e19a7"
+ "runner_sha256": "9abedad0cabef3ff7dde0f012968e27163f82353602b307aaf8a96304be982fa"
 }

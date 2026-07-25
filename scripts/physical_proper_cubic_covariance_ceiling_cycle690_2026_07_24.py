@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Cycle 690: the proper-cubic covariance ceiling of Z^3-vertex simplicial substrates.
+"""Cycle 690: proper-cubic covariance of eight-vertex unit-cube triangulations.
 
-Every real-space Regge construction this repository builds stands on a
-simplicial decomposition whose vertices are lattice sites. This cycle asks a
-prior question about that substrate, exactly and combinatorially:
+The landed real-space Regge construction repeats a fixed eight-vertex
+triangulation of each unit cube. This cycle asks a prior question about that
+local substrate, exactly and combinatorially:
 
-    for how many of the 24 proper cubic rotations can such a decomposition be
-    covariant at all?
+    for how many of the 24 proper cubic rotations can such a unit-cube
+    triangulation be invariant?
 
 The answer is a hard ceiling, not a numerical shortfall. Every quantity below
 is computed in exact integer or exact rational arithmetic on the eight cube
@@ -21,11 +21,11 @@ Result:
     orbit self-intersects at a non-vertex point.
   * The ceiling is therefore at most 12 by Lagrange, and 12 is attained by the
     five-tetrahedron decomposition -- so the maximum is exactly 12.
-  * Attaining 12 forces a binary chirality choice: the two alternating vertex
-    sets each have stabilizer 12 and are exchanged by the remaining 12
-    rotations. Maximal covariance and parity symmetry cannot both be held.
-  * The Kuhn/Freudenthal decomposition carried by the landed 3+1 Regge module
-    attains 6.
+  * Attaining 12 forces a binary combinatorial chirality choice: the
+    order-12 stabilizer is the unique index-2 subgroup, and the remaining
+    rotations exchange the two members of a ceiling-attaining pair.
+  * The standard Kuhn/Freudenthal decomposition attains 6. Source inspection
+    identifies it with the landed module's constant-tick spatial complex.
 
 Firewalls: a stabilizer is not a symmetry of a physical law; a lattice
 chirality choice is not parity violation; this cycle makes no gravity, stress,
@@ -92,6 +92,22 @@ def matmul(a, b):
                  for i in range(3))
 
 
+def inverse_rotation(m):
+    return tuple(tuple(m[j][i] for j in range(3)) for i in range(3))
+
+
+def generated_subgroup(generators):
+    identity = tuple(tuple(int(i == j) for j in range(3)) for i in range(3))
+    subgroup = {identity}
+    generators = set(generators)
+    while True:
+        pool = subgroup | generators
+        expanded = pool | {matmul(a, b) for a in pool for b in pool}
+        if expanded == subgroup:
+            return frozenset(subgroup)
+        subgroup = expanded
+
+
 def act_vertex(m, v: tuple[int, ...]) -> tuple[int, ...]:
     """Rotate a cube vertex about the cube centre (1/2,1/2,1/2). Exact: the
     doubled coordinate 2v-1 is an odd integer vector and stays one."""
@@ -100,8 +116,31 @@ def act_vertex(m, v: tuple[int, ...]) -> tuple[int, ...]:
     return tuple((c + 1) // 2 for c in r)
 
 
+def act_point(m, v):
+    """Rotate an integer or rational point about the cube centre, exactly."""
+    centre = (Fraction(1, 2),) * 3
+    d = sub(v, centre)
+    r = tuple(sum(Fraction(m[i][k]) * d[k] for k in range(3))
+              for i in range(3))
+    return tuple(r[i] + centre[i] for i in range(3))
+
+
 def act_set(m, vs):
     return frozenset(act_vertex(m, v) for v in vs)
+
+
+def act_complex(m, complex_):
+    return frozenset(
+        frozenset(act_vertex(m, v) for v in simplex)
+        for simplex in complex_
+    )
+
+
+def act_point_complex(m, complex_):
+    return frozenset(
+        frozenset(act_point(m, v) for v in simplex)
+        for simplex in complex_
+    )
 
 
 # --------------------------------------------------- exact rational geometry --
@@ -225,7 +264,19 @@ def main() -> int:
           len(bx) == 6, {"interior_crossings": len(bx)})
 
     # -- R8: the no-go -------------------------------------------------------
-    nogo = len(diagless) == 0 and len(fx) > 0 and len(bx) > 0
+    orbit_partition_complete = (
+        len(of) == len(face) == 12
+        and len(ob) == len(body) == 4
+        and of == {frozenset(p) for p in face}
+        and ob == {frozenset(p) for p in body}
+    )
+    nogo = (
+        len(G) == 24
+        and orbit_partition_complete
+        and len(diagless) == 0
+        and len(fx) > 0
+        and len(bx) > 0
+    )
     check("NO-GO: no triangulation of the cube on its eight vertices is "
           "invariant under all 24 proper cubic rotations -- a nonempty invariant "
           "diagonal set must contain a full orbit, and every full orbit crosses "
@@ -240,7 +291,9 @@ def main() -> int:
     ceiling = max(d for d in divisors if d < 24)
     check("Lagrange: a stabilizer order divides 24, and 24 is excluded by the "
           "no-go, so the attainable covariance order is at most 12",
-          ceiling == 12, {"divisors_of_24": divisors, "ceiling_upper_bound": ceiling})
+          nogo and len(G) == 24 and ceiling == 12,
+          {"full_invariance_excluded": nogo, "divisors_of_24": divisors,
+           "ceiling_upper_bound": ceiling})
 
     # -- R10: the ceiling is attained ----------------------------------------
     even = tuple(v for v in VERTS if sum(v) % 2 == 0)
@@ -250,6 +303,7 @@ def main() -> int:
         nbrs = tuple(w for w in even if sum(abs(v[i] - w[i]) for i in range(3)) == 1)
         corner_tets.append((v,) + nbrs)
     five = [even] + corner_tets
+    five_complex = frozenset(frozenset(t) for t in five)
     total = sum(tet_volume(t) for t in five)
     # exact disjointness: each tetrahedron lies in a closed cell of the
     # arrangement of the four planes bounding the central tetrahedron
@@ -280,32 +334,48 @@ def main() -> int:
     overlaps = [(i, j) for i, j in itertools.combinations(range(5), 2)
                 if not interiors_disjoint(five[i], five[j])]
     stab_even = stabilizer(act_set, frozenset(even))
+    stab_five = stabilizer(act_complex, five_complex)
     check("the five-tetrahedron decomposition is a genuine triangulation: exact "
           "volumes sum to 1 and the five pieces "
           "are pairwise interior-disjoint by an exact separating-axis test",
-          total == 1 and not overlaps,
+          len(five) == 5 and all(tet_volume(t) > 0 for t in five)
+          and total == 1 and not overlaps,
           {"total_volume": str(total), "pieces": len(five),
            "overlapping_pairs": len(overlaps)})
     check("the ceiling is ATTAINED: the five-tetrahedron decomposition has "
           "stabilizer of order exactly 12, so the maximum proper-cubic "
           "covariance of any Z^3-vertex cube triangulation is exactly 12",
-          len(stab_even) == 12,
-          {"stabilizer_order": len(stab_even), "frames": list(stab_even)})
-    summary["covariance_ceiling"] = len(stab_even)
+          len(stab_five) == 12 and set(stab_five) == set(stab_even),
+          {"full_complex_stabilizer_order": len(stab_five),
+           "central_tetrahedron_stabilizer_order": len(stab_even),
+           "frames": list(stab_five)})
+    summary["covariance_ceiling"] = len(stab_five)
 
     # -- R11: attaining the ceiling forces a chirality choice -----------------
     stab_odd = stabilizer(act_set, frozenset(odd))
     swap = [i for i, m in enumerate(G) if act_set(m, frozenset(even)) == frozenset(odd)]
-    check("attaining the ceiling forces a binary chirality choice: the two "
-          "alternating vertex sets each have stabilizer 12 and are exchanged by "
-          "the remaining 12 rotations, so maximal covariance and full parity "
-          "symmetry cannot be held together",
-          len(stab_even) == 12 and len(stab_odd) == 12 and len(swap) == 12,
+    commutators = {
+        matmul(matmul(matmul(a, b), inverse_rotation(a)), inverse_rotation(b))
+        for a in G for b in G
+    }
+    derived = generated_subgroup(commutators)
+    even_subgroup = frozenset(G[i] for i in stab_even)
+    unique_index_two = len(derived) == 12 and derived == even_subgroup
+    check("attaining the ceiling forces a binary combinatorial chirality choice: "
+          "the commutator subgroup has order 12, so every index-2 stabilizer is "
+          "the unique alternating-set stabilizer; the other 12 rotations exchange "
+          "the two members of the ceiling-attaining pair",
+          len(stab_five) == 12 and unique_index_two
+          and len(stab_odd) == 12 and len(swap) == 12,
           {"even_stabilizer": len(stab_even), "odd_stabilizer": len(stab_odd),
+           "derived_subgroup_order": len(derived),
+           "unique_index_two_subgroup": unique_index_two,
            "exchanging_rotations": len(swap)})
-    summary["chirality_forced_at_ceiling"] = (len(swap) == 12)
+    summary["chirality_forced_at_ceiling"] = (
+        len(stab_five) == 12 and unique_index_two and len(swap) == 12
+    )
 
-    # -- R12: what the landed substrate actually attains ----------------------
+    # -- R12: standard Kuhn/Freudenthal comparison ----------------------------
     kuhn = set()
     for perm in itertools.permutations(range(3)):
         cur = [0, 0, 0]
@@ -317,17 +387,13 @@ def main() -> int:
         kuhn.add(frozenset(vs))
     kuhn = frozenset(kuhn)
 
-    def act_complex(m, kx):
-        return frozenset(frozenset(act_vertex(m, v) for v in s) for s in kx)
-
     stab_kuhn = stabilizer(act_complex, kuhn)
-    check("the Kuhn/Freudenthal path decomposition -- the one carried by the "
-          "landed 3+1 Regge module -- attains 6, which is half the ceiling and a "
-          "quarter of the full group",
+    check("the standard Kuhn/Freudenthal path decomposition attains 6, which is "
+          "half the ceiling and a quarter of the full group",
           len(stab_kuhn) == 6,
-          {"stabilizer_order": len(stab_kuhn), "ceiling": len(stab_even),
+          {"stabilizer_order": len(stab_kuhn), "ceiling": len(stab_five),
            "group_order": len(G)})
-    summary["landed_kuhn_covariance"] = len(stab_kuhn)
+    summary["kuhn_covariance"] = len(stab_kuhn)
 
     # -- R13: the mechanism, exhibited ---------------------------------------
     spatial = [v for v in VERTS if any(v)]
@@ -339,51 +405,90 @@ def main() -> int:
                 carried_out.append((i, v, w))
                 break
     preserving = 24 - len(carried_out)
+    spatial_set = frozenset(spatial)
+    negative_spatial_set = frozenset(
+        tuple(-c for c in v) for v in spatial_set
+    )
+    preserving_up_to_global_sign = []
+    for i, m in enumerate(G):
+        image = frozenset(
+            tuple(sum(m[r][k] * v[k] for k in range(3)) for r in range(3))
+            for v in spatial_set
+        )
+        if image in (spatial_set, negative_spatial_set):
+            preserving_up_to_global_sign.append(i)
     check("MECHANISM: the obstruction is that the 0/1 spatial direction set is "
           "closed under coordinate permutation but not under sign flip -- only the "
           "3 even permutations preserve it, and the other 21 rotations carry some "
           "direction out of {0,1}^3, so covariance there is ill posed rather than "
-          "violated. The larger folded scope of 6 is a DISTINCT count: the static "
-          "tick fold absorbs a global sign, so -P acts like P on the folded object",
-          len(carried_out) == 21 and preserving == 3,
+          "violated. The unoriented up-to-global-sign direction set has the distinct "
+          "scope 6, exactly matching the Kuhn complex stabilizer",
+          len(carried_out) == 21 and preserving == 3
+          and len(preserving_up_to_global_sign) == 6
+          and set(preserving_up_to_global_sign) == set(stab_kuhn),
           {"frames_carrying_a_direction_out": len(carried_out),
            "frames_preserving_the_spatial_direction_set": preserving,
+           "frames_preserving_up_to_global_sign":
+               len(preserving_up_to_global_sign),
            "witness_frame": carried_out[0][0] if carried_out else None,
            "witness": f"{carried_out[0][1]} -> {carried_out[0][2]}"
                       if carried_out else None})
 
     # -- R14: the escape condition -------------------------------------------
     centre = (Fraction(1, 2), Fraction(1, 2), Fraction(1, 2))
-    faces = []
+    cube_faces = []
     for axis in range(3):
         for val in (0, 1):
             fv = [v for v in VERTS if v[axis] == val]
-            faces.append(tuple(fv))
-    pyramids = frozenset(frozenset(f) for f in faces)
-
-    def act_pyr(m, ps):
-        return frozenset(frozenset(act_vertex(m, v) for v in s) for s in ps)
-
-    stab_pyr = stabilizer(act_pyr, pyramids)
+            cube_faces.append(tuple(fv))
+    refined_tets = []
+    for face_vertices in cube_faces:
+        face_centre = tuple(
+            sum(Fraction(v[i]) for v in face_vertices) / len(face_vertices)
+            for i in range(3)
+        )
+        face_edges = [
+            (a, b) for a, b in itertools.combinations(face_vertices, 2)
+            if edge_class(a, b) == "edge"
+        ]
+        for a, b in face_edges:
+            refined_tets.append((centre, face_centre, a, b))
+    refined_complex = frozenset(frozenset(t) for t in refined_tets)
+    refined_total = sum(tet_volume(t) for t in refined_tets)
+    refined_overlaps = [
+        (i, j) for i, j in itertools.combinations(range(len(refined_tets)), 2)
+        if not interiors_disjoint(refined_tets[i], refined_tets[j])
+    ]
+    stab_refined = stabilizer(act_point_complex, refined_complex)
+    added_vertices = {
+        v for simplex in refined_complex for v in simplex if v not in VERTS
+    }
     check("ESCAPE CONDITION: enriching the vertex set restores the full group -- "
-          "the six-pyramid decomposition about the added cube centre is invariant "
-          "under all 24 rotations, so the ceiling is a property of Z^3 vertices, "
-          "not of cubic symmetry itself",
-          len(stab_pyr) == 24,
-          {"stabilizer_order": len(stab_pyr), "added_vertex": "cube centre",
-           "note": "pyramids are not simplices; a simplicial refinement needs "
-                   "further vertices, which is the cost of the escape"})
-    summary["escape_requires_vertices_beyond_Z3"] = (len(stab_pyr) == 24)
+          "the exact 24-tetrahedron refinement through the cube centre and six "
+          "face centres is interior-disjoint, has total volume 1, and is invariant "
+          "under all 24 rotations",
+          len(refined_complex) == 24 and len(added_vertices) == 7
+          and refined_total == 1 and not refined_overlaps
+          and len(stab_refined) == 24,
+          {"stabilizer_order": len(stab_refined),
+           "tetrahedra": len(refined_complex),
+           "added_vertices": len(added_vertices),
+           "total_volume": str(refined_total),
+           "overlapping_pairs": len(refined_overlaps)})
+    summary["escape_requires_vertices_beyond_Z3"] = (
+        nogo and len(refined_complex) == 24 and len(added_vertices) == 7
+        and refined_total == 1 and not refined_overlaps
+        and len(stab_refined) == 24
+    )
 
     summary["no_go"] = {
         "statement": "no Z^3-vertex cube triangulation is invariant under all 24 "
                      "proper cubic rotations",
-        "escape_conditions": ["enrich the vertex set beyond Z^3 (face/body "
+        "escape_conditions": ["enrich the vertex set beyond Z^3 (cube and face "
                               "centres), at the cost of leaving the lattice",
                               "accept 12 via the five-tetrahedron decomposition "
                               "and declare a chirality",
-                              "accept 6, which is what the landed Kuhn complex "
-                              "carries"],
+                              "accept the standard Kuhn complex's scope of 6"],
         "shared_obstruction": False,
         "axiom_pressure": False,
     }

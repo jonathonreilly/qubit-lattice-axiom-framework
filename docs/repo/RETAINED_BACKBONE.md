@@ -16,12 +16,12 @@ file per claim), summarized in
 
 | Metric | Value |
 |---|---:|
-| Retained positive rows | 117 |
+| Retained positive rows | 118 |
 | Retained bounded rows | 351 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 29 |
 
-## Retained positive rows (117)
+## Retained positive rows (118)
 
 Sorted by load-bearing graph score (descending).
 
@@ -134,6 +134,7 @@ Sorted by load-bearing graph score (descending).
 - [`massless_vector_null_quotient_exact_linear_algebra_theorem_note_2026-06-03`](../../docs/MASSLESS_VECTOR_NULL_QUOTIENT_EXACT_LINEAR_ALGEBRA_THEOREM_NOTE_2026-06-03.md) — score 0.000; audited 2026-07-25T16:18:43.975739+00:00
 - [`multipole_tidal_response_note`](../../docs/MULTIPOLE_TIDAL_RESPONSE_NOTE.md) — score 0.000; audited 2026-04-27
 - [`nspt_high_order_lattice_alpha_n_coefficient_external_narrow_theorem_note_2026-05-16`](../../docs/NSPT_HIGH_ORDER_LATTICE_ALPHA_N_COEFFICIENT_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md) — score 0.000; audited 2026-05-25T12:24:46.569344+00:00
+- [`post_record_character_path_channel_weight_prototype_2026-06-06`](../../docs/POST_RECORD_CHARACTER_PATH_CHANNEL_WEIGHT_PROTOTYPE_2026-06-06.md) — score 0.000; audited 2026-07-25T23:29:56.399632+00:00
 - [`post_record_source_measure_trace_normalization_prototype_2026-06-06`](../../docs/POST_RECORD_SOURCE_MEASURE_TRACE_NORMALIZATION_PROTOTYPE_2026-06-06.md) — score 0.000; audited 2026-07-25T10:49:12.912357+00:00
 - [`proper_cubic_scalar_even_antipodal_transition_lemma_note_2026-07-23`](../../docs/PROPER_CUBIC_SCALAR_EVEN_ANTIPODAL_TRANSITION_LEMMA_NOTE_2026-07-23.md) — score 0.000; audited 2026-07-25T12:25:00.054259+00:00
 - [`quark_route2_double_local_projector_normalization_bridge_conditional_note_2026-06-21`](../../docs/QUARK_ROUTE2_DOUBLE_LOCAL_PROJECTOR_NORMALIZATION_BRIDGE_CONDITIONAL_NOTE_2026-06-21.md) — score 0.000; audited 2026-07-25T12:23:38.189606+00:00

@@ -1,45 +1,113 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T07:29:39.868527+00:00",
+  "audit_invocation_history": [
+    "5cfb26f54aef478a934d0bd58a29f541"
+  ],
+  "audit_invocation_id": "5cfb26f54aef478a934d0bd58a29f541",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true,
+      "runner_path": "scripts/mesoscopic_surrogate_threshold_2d.py"
+    },
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {
+      "scripts/lattice_2d_continuum_distance.py": "f9609d333a0fac8dc9ce602fef406ffef8fb3cdd6accc3b0c3bdbb6905dd18b5",
+      "scripts/mesoscopic_surrogate_two_stage_2d.py": "68001c72715fe59dd4485a68ce30f08f4848445cf1fe48f6d64947d813650507"
+    },
+    "load_bearing_score": 6.5,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/lattice_2d_continuum_distance.py": {
+        "cache_exit_code": null,
+        "cache_freshness": "missing",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": null,
+        "cache_status": null
+      },
+      "scripts/mesoscopic_surrogate_threshold_2d.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "8152dcf928894f513d87761849d684980ae89a01028ecb9d1a0ad83e21c2efec",
+        "cache_status": "ok"
+      },
+      "scripts/mesoscopic_surrogate_two_stage_2d.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "68001c72715fe59dd4485a68ce30f08f4848445cf1fe48f6d64947d813650507",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "8152dcf928894f513d87761849d684980ae89a01028ecb9d1a0ad83e21c2efec",
+    "runner_path": "scripts/mesoscopic_surrogate_threshold_2d.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 31
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-f2c5ea53",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The runner computes the five reported finite-sweep checks, but the restricted packet supplies no retained authority deriving or identifying its hard-coded propagation law, action, and constants with the retained 2D framework family. The result therefore closes only conditionally on that implemented harness.",
   "claim_id": "mesoscopic_surrogate_threshold_2d_note",
-  "claim_scope": null,
+  "claim_scope": "Finite 2D ordered-lattice support sweep over topN = 1,2,3,4,5,6,7,8,9,10,12,16,20,25,32,40,49,64,81 under the stated two-stage stability criteria.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T07:29:39.868527+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 3,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [
     "scripts/lattice_2d_continuum_distance.py",
     "scripts/mesoscopic_surrogate_two_stage_2d.py"
   ],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 6.5,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Every scanned topN value stayed stable.",
+  "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls",
+    "conditional_wall_rationale",
+    "derived_no_go_boundary",
+    "stretch_attempt_negative"
+  ],
   "note_hash": "6d8fce11bdee32d7a2d921d318d0c470aaa87137eb351ea9dabd9534064d467f",
   "note_path": "docs/MESOSCOPIC_SURROGATE_THRESHOLD_2D_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "missing_dependency_edge: cite a retained authority defining this exact 2D propagation and surrogate harness as the retained family, or narrow the source to an implementation-specific finite computation and add a dated downstream-hygiene line to this note's own boundary.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -249,12 +317,12 @@
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
-    "C": 0,
+    "C": 5,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 5
   },
   "runner_path": "scripts/mesoscopic_surrogate_threshold_2d.py",
   "title": "Mesoscopic Surrogate Threshold 2D Note",
   "transitive_descendants": 31,
-  "verdict_rationale": null
+  "verdict_rationale": "The code genuinely computes all listed rows and supports the reported finite numerical inequalities, rather than merely printing expected values. It nevertheless imports an ad hoc 2D propagation model with fixed BETA, K, field strength, action, and source construction that no cited retained authority connects to the claimed retained framework family. N1/N7 leave lattice-scale, boundary-state, dynamical-action, normalization, alternate-observable, and additional finite-case attacks untested; N2 identifies the unsupported harness-to-family bridge as the surviving wall, N3's boundary and registered phrases add no authority, N4 has no prior residual witness, and N5 supplies no five-resolution stress test. N6's indexed premises and open gates and N8's cross-cycle records provide no independent closure of that bridge, so the negative conclusion remains a conditional bounded stretch result."
 }

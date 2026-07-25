@@ -86,7 +86,7 @@ These dispatch targets have been re-audited after their manifest's `generated_da
 | 31 | resolved_or_superseded | `ew_current_fierz_channel_decomposition_note_2026-05-01` | decoration / audited_decoration / decoration_under_graph_first_su3_integration_note |
 | 32 | resolved_or_superseded | `rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17` | bounded_theorem / unaudited / unaudited |
 | 33 | resolved_or_superseded | `action_normalization_note` | no_go / unaudited / unaudited |
-| 34 | resolved_or_superseded | `packet_memory_note` | bounded_theorem / unaudited / unaudited |
+| 34 | resolved_or_superseded | `packet_memory_note` | bounded_theorem / audited_conditional / audited_conditional |
 | 35 | resolved_or_superseded | `sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28` | no_go / unaudited / unaudited |
 | 36 | resolved_or_superseded | `weak_coupling_sign_sensitivity_note_2026-04-11` | open_gate / audited_conditional / audited_conditional |
 | 37 | resolved_or_superseded | `work_history.yt.yt_unbounded_program_note` | open_gate / unaudited / unaudited |

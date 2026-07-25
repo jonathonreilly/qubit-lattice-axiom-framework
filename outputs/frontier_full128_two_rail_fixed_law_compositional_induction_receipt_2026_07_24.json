@@ -1,0 +1,232 @@
+{
+  "artifact": "frontier_full128_two_rail_fixed_law_compositional_induction_receipt_2026_07_24",
+  "date": "2026-07-24",
+  "cycle": 656,
+  "authority": "none",
+  "audit": "unset",
+  "claim_type": "bounded_theorem",
+  "status": "bounded-fixed-law-compositional-induction-certificate",
+  "pass": true,
+  "base_commit": "da96fef67181623a8ef280cc26da6727f8e1b1ce",
+  "package_scope": "A positive bounded compositional induction on the exact supplied station-zero one-token, fixed-program, clean-ancilla genesis. The exhaustive 3908-step trace, composed with the Cycle655 decoded intertwiner, proves A_auto^3908 E_combined = E_combined G_coarse without forming the infeasible full global matrix.",
+  "note": {
+    "path": "docs/FULL128_TWO_RAIL_FIXED_LAW_COMPOSITIONAL_INDUCTION_BOUNDED_THEOREM_NOTE_2026-07-24.md",
+    "bytes": 14813,
+    "sha256": "1419a5cd285d85ddee0a0edb2fd2b03392dc068abeaaafcce1e90191abf0e0c0"
+  },
+  "primary_run": {
+    "runner": "scripts/frontier_full128_two_rail_fixed_law_cycle656_probe_2026_07_24.py",
+    "runner_bytes": 27932,
+    "runner_sha256": "475e2e8360624a439c1680778f53c2555a54cf38cb501bd4b6c949cfce5c14c2",
+    "cache": "logs/runner-cache/frontier_full128_two_rail_fixed_law_cycle656_probe_2026_07_24.txt",
+    "cache_bytes": 17352,
+    "cache_sha256": "3a529a715ab0b67983e6a1e7098556cd8f9fdc8fa55ba328863e8ba6e5319483",
+    "input_fingerprint_sha256": "91f1ea0dd8ec239e6601f04074319a7ccca10039a337a23bff71c47098b8c06e",
+    "timeout_sec": 180,
+    "exit_code": 0,
+    "cache_status": "ok",
+    "tests_passed": 7,
+    "tests_failed": 0,
+    "terminal": "FULL128_TWO_RAIL_FIXED_LAW_CYCLE656_CERTIFICATE"
+  },
+  "source_dependency_closure": [
+    {
+      "path": "scripts/frontier_full128_two_rail_fixed_law_core_2026_07_24.py",
+      "bytes": 25229,
+      "sha256": "59b67dac6e0c22a9bb0a390812d7032a36b1c757e388b1080b7d696960d5c27c"
+    },
+    {
+      "path": "scripts/frontier_full128_two_rail_fixed_law_cycle656_probe_2026_07_24.py",
+      "bytes": 27932,
+      "sha256": "475e2e8360624a439c1680778f53c2555a54cf38cb501bd4b6c949cfce5c14c2"
+    },
+    {
+      "path": "docs/FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md",
+      "bytes": 14703,
+      "sha256": "79e07213087f11e0fc387c5ff3920e63c3ad2b9aaac97437e4d772a3a9e5a095"
+    },
+    {
+      "path": "scripts/frontier_full128_cycle_encoder_2026_07_24.py",
+      "bytes": 36632,
+      "sha256": "17eca725b72943d8804147dd800be044ffaa80dc209588adb37ae6543d0fa935"
+    },
+    {
+      "path": "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py",
+      "bytes": 32492,
+      "sha256": "e79b733bd3b8e273a2094679e6175b5d1f253ebef1a33b96544519cbdf278e13"
+    },
+    {
+      "path": "scripts/frontier_full128_25site_nn_supplied_schedule_2026_07_24.py",
+      "bytes": 18654,
+      "sha256": "c8cfa4ec5d97aa0bcb5e36fa4e3edf65bd70a9243544c5a52d25a14266f24e1c"
+    },
+    {
+      "path": "scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py",
+      "bytes": 29115,
+      "sha256": "94f0fbd1212e210d0e073c3a80cdc2f92afa3c9807f981bd220625a67e8d94a0"
+    },
+    {
+      "path": "scripts/frontier_full128_code_projectors_2026_07_24.py",
+      "bytes": 14150,
+      "sha256": "f561714d036c8c7568b1772110303d6c0da11c6d73c9df3bdcbae2db632f5b44"
+    },
+    {
+      "path": "scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py",
+      "bytes": 38220,
+      "sha256": "ecae9048b4ee2d257315072cb7120335109f362fa7007573c46a82a1f0ed4195"
+    }
+  ],
+  "definition": {
+    "Q": "the replicated 3908-block clean-ancilla ROM selector",
+    "R": "two explicit disjoint nearest-neighbour packet-lane SWAP layers",
+    "A_auto": "A_auto = R Q, with chronological action Q then R",
+    "E_combined": "the Cycle655 E_full packet at station 0 with one token and the declared B, program, flag, scratch and bypass genesis"
+  },
+  "primary_orbit": {
+    "steps": 3908,
+    "selected_events": 3908,
+    "token_zero_station_visits": 15268556,
+    "trace_sha256": "d2d9cd8e422397b0f063b158f25e6f61107450be02386d106d75d61df0b382cd",
+    "selected_sequence_sha256": "f8f1ca483eafdfc99020c06c6c661e6cb0f6a2a852f2f6f58c3547820d0c5be5",
+    "padded_word_sequence_sha256": "f8f1ca483eafdfc99020c06c6c661e6cb0f6a2a852f2f6f58c3547820d0c5be5",
+    "first_event": [0, 0, 0],
+    "last_event": [3907, 3907, 0],
+    "packet_return_station": 0,
+    "live_count_failures": 0,
+    "b_vacuum_failures": 0,
+    "program_change_failures": 0,
+    "ancilla_change_failures": 0,
+    "final_failures": 0
+  },
+  "selector_certificate": {
+    "ROM_blocks": 3908,
+    "lawful_records": 3908,
+    "lawful_ROM_pair_checks": 15272464,
+    "matching_ROM_pairs": 3908,
+    "single_bit_mismatch_cases": 128964,
+    "single_bit_mismatch_fires": 0,
+    "token_zero_match_fires": 0,
+    "clean_flag_scratch_reset_failures": 0,
+    "matrix_opcode_classes": 26,
+    "maximum_opcode_unitarity_residual": 9.42129743476075e-16,
+    "Toffoli_residual": 7.346882794269506e-16,
+    "Fredkin_residual": 7.346882794269506e-16,
+    "maximum_controlled_one_action_residual": 0.0,
+    "maximum_two_M2_bypass_residual": 0.0
+  },
+  "rail_and_route_certificate": {
+    "layer1_edges": 453328,
+    "layer2_edges": 453328,
+    "layer1_vertex_collisions": 0,
+    "layer2_vertex_collisions": 0,
+    "layer1_non_NN": 0,
+    "layer2_non_NN": 0,
+    "route_distances_checked": 183,
+    "route_endpoint_or_return_failures": 0,
+    "route_NN_edges_checked": 33489,
+    "route_non_NN_edges": 0
+  },
+  "imported_cycle655_intertwiner": {
+    "word_sha256": "a2e461d4984e4901fa0e8902c289ed2543da7545370891b96f2b50c6ba7f0fbf",
+    "word_factors": 3907,
+    "padded_factors": 3908,
+    "decoded_columns": 128,
+    "cycle_fibres_per_column": 32768,
+    "pair_matrix_shape": [32, 32],
+    "padding_action_residual": 0.0,
+    "pair_preparation_residual": 0.0,
+    "pair_inverse_residual": 8.92674853442885e-16,
+    "maximum_register_norm_residual": 2.3314683517128287e-15,
+    "register_contact_residual": 0.0,
+    "port_contact_residual": 0.0,
+    "maximum_full128_EG_residual": 8.40686768501364e-15,
+    "full_global_matrix_executed": false,
+    "proof_method": "exhaustive fixed-law factor trace composed with the Cycle655 local-matrix/full128 decoded intertwiner"
+  },
+  "hostile_controls": {
+    "wrong_layer_order": {
+      "definition": "A_hostile = Q R",
+      "history_head": [1, 2, 3, 4],
+      "history_tail": [3905, 3906, 3907, 0],
+      "history_matches_lawful": false
+    },
+    "token_offset": {
+      "return_position": 1,
+      "history_head": [1, 2, 3, 4],
+      "history_tail": [3905, 3906, 3907, 0],
+      "history_matches_lawful": false
+    },
+    "dirty_ancilla": {
+      "token_zero_dirty_scratch_false_fire": 1,
+      "scratch_returned_to_dirty_input": true,
+      "maximum_token_zero_dirty_bypass_change": 2.0
+    },
+    "zero_token": {
+      "selected_events": 0,
+      "payload_returned": true,
+      "B_nonvacuum": 0
+    },
+    "two_tokens": {
+      "selected_events": 7816,
+      "histories_equal": false
+    },
+    "ROM_deletion": {
+      "removed_factor": 17,
+      "selected_events": 3907,
+      "missing_factors": [17],
+      "history_matches_lawful": false
+    },
+    "nonidentity_program_flip": {
+      "station": 17,
+      "original_gate_kind": "outer_decode",
+      "gate_minus_identity_residual": 2.0,
+      "record_hamming_distance": 4,
+      "selected_events": 3907,
+      "missing_factors": [17],
+      "history_matches_lawful": false
+    }
+  },
+  "resources": {
+    "physical_footprint_M2": 1172400,
+    "ROM_blocks_per_station": 3908,
+    "logical_Q_factors_per_station": 4216662,
+    "routed_Q_NN_factors_per_station": 86464312,
+    "Q_NN_instances_all_stations": 337902531296,
+    "R_NN_instances_per_A_auto": 906656,
+    "A_auto_NN_instances": 337903437952,
+    "A_auto_power_3908_executed_NN_instances": 1320526635516416,
+    "maximum_route_distance": 183,
+    "Q_schedule_sha256": "ed0e20087b27f351cd358a4a8dabd370337d250a67e98c58baf0bafda4f556bd"
+  },
+  "supplied": [
+    "the Cycle655 repo-native full128 combined word and finite matrix table",
+    "the 3908 fixed station records, cassette orientation and selector-before-shift order",
+    "the station-zero live-token position and E_full packet placement",
+    "B/vacuum plus zero flag, scratch and bypass genesis",
+    "the exact controlled one-M2 lifts, Fredkin bypass and routed selector library",
+    "the finite Q, R and A_auto circuit blueprints",
+    "the proper-cubic rotated cassette family, mode labels, couplings and factor order"
+  ],
+  "open": [
+    "dynamical preparation or enforcement of token, program and clean-ancilla genesis",
+    "a recurrent translation-invariant or multi-cell shared-port stream law",
+    "one canonical off-code cassette invariant under every proper-cubic frame",
+    "physical time, rate, energy, source, Record, occurrence or Born meaning",
+    "optimality, minimum content, no-go or axiom-pressure conclusions"
+  ],
+  "claim_boundary": {
+    "recurrent_translation_invariant_law": false,
+    "genesis_enforcement": false,
+    "global_matrix_certificate": false,
+    "physical_time_or_source": false,
+    "Record_or_Born_meaning": false,
+    "optimality_or_minimum": false,
+    "no_go_or_axiom_pressure": false
+  },
+  "dependency_hygiene": {
+    "ordinary_repo_native_imports": true,
+    "temporary_or_external_sources": 0,
+    "missing_declared_inputs": 0,
+    "over_40000_byte_source_files": 0
+  }
+}

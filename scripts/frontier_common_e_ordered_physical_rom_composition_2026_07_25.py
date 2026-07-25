@@ -85,6 +85,7 @@ class GlobalFixture:
     histories: tuple[tuple[int, ...], ...]
     history_to_row: dict[tuple[int, ...], int]
     reducer_phases: np.ndarray
+    auxiliary_words: tuple[int, ...]
     encoding: sparse.csc_matrix
 
 
@@ -108,6 +109,7 @@ def build_global_fixture(length: int) -> GlobalFixture:
     history_to_row: dict[tuple[int, ...], int] = {}
     history_by_row: list[tuple[int, ...] | None] = []
     phase_by_row: list[complex] = []
+    auxiliary_by_row: list[int] = []
     rows = []
     columns = []
     values = []
@@ -124,6 +126,7 @@ def build_global_fixture(length: int) -> GlobalFixture:
                 code, locals_by_cell, by_cell
             )
             physical_row, reducer_phase = reducer.reduce(representative)
+            auxiliary = int(representative.x) >> code.qubits
             history = list(vacuum_rows)
             amplitude = 1.0 + 0j
             for cell, row in by_cell.items():
@@ -133,12 +136,15 @@ def build_global_fixture(length: int) -> GlobalFixture:
             if physical_row == len(history_by_row):
                 history_by_row.append(history_key)
                 phase_by_row.append(complex(reducer_phase))
+                auxiliary_by_row.append(auxiliary)
             else:
                 collisions += history_by_row[physical_row] != history_key
                 if history_by_row[physical_row] != history_key:
                     raise ValueError("the common qutrit E lost one branch history")
                 if abs(phase_by_row[physical_row] - reducer_phase) > TOL:
                     raise ValueError("one physical history acquired inconsistent reducer phase")
+                if auxiliary_by_row[physical_row] != auxiliary:
+                    raise ValueError("one reduced row acquired inconsistent auxiliary M2 bits")
             history_to_row[history_key] = physical_row
             rows.append(physical_row)
             columns.append(column)
@@ -168,6 +174,7 @@ def build_global_fixture(length: int) -> GlobalFixture:
         histories=tuple(history for history in history_by_row if history is not None),
         history_to_row=history_to_row,
         reducer_phases=np.asarray(phase_by_row, dtype=complex),
+        auxiliary_words=tuple(auxiliary_by_row),
         encoding=encoding,
     )
 

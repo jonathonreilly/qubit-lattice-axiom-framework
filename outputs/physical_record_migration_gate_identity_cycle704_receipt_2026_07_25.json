@@ -1,0 +1,25 @@
+{
+ "audit": "unset",
+ "authority": "none",
+ "conclusion": "Record migration, left explicitly open by two landed notes, cannot be decided by any readout argument: migration preserves the content multiset and every Record readout is a function of that multiset alone. Admissibility does see it, and the migration gate is strictly weaker than the formation gate for short moves, because a mover vacates its origin and so sees one fewer occupied neighbour. Consequently a rule cannot bound record density by bounding formation alone: if records may migrate, denser configurations are reachable than the formation gate admits. Whether they may migrate is not settled here.",
+ "cycle": 704,
+ "cycle_claim": null,
+ "fail_count": 0,
+ "firewalls": {
+  "axiom_text_edit_proposed": false,
+  "formation_rule_supplied": false,
+  "lane_status_changed": false,
+  "migration_semantics_adopted": false,
+  "new_axiom_or_primitive_proposed": false,
+  "permanence_reading_adopted": false
+ },
+ "gate_relation": "formation and migration gates differ by exactly one neighbour for moves from an adjacent origin, and agree otherwise; migration is strictly more permissive for short moves",
+ "pass": true,
+ "pass_count": 4,
+ "readout_cannot_decide_migration": true,
+ "resources": {
+  "elapsed_seconds": 7.199996616691351e-05
+ },
+ "runner_sha256": "abc625bdf5d25abe4326585d0bee3a0356016733218c08ac1d69287cec87f38f",
+ "semantics_split_reported_not_chosen": true
+}

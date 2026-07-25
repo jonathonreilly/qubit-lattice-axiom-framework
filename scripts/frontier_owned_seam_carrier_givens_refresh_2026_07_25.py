@@ -204,7 +204,7 @@ def pauli_inverse(pauli):
 def augmented_representative(code, locals_by_cell, by_cell):
     representative = direct.c330.c235.Pauli()
     chart = 0
-    for cell in sorted(by_cell):
+    for cell in sorted(by_cell, key=lambda index: locals_by_cell[index].cell):
         row = by_cell[cell]
         local = locals_by_cell[cell]
         representative = representative @ local.representatives[row]
@@ -1191,12 +1191,14 @@ def composed_update_controls(maximum_local_intertwiner: float, maximum_local_lea
         "one_particle_eigen_residual": float(
             np.linalg.norm(one_particle @ uniform - eigenvalue * uniform)
         ),
-        "eleven_seam_intertwiner_norm_bound": 11 * maximum_local_intertwiner,
-        "eleven_seam_leakage_norm_bound": 11 * maximum_local_leakage,
+        "sum_of_pair_fixture_intertwiner_residuals": 11 * maximum_local_intertwiner,
+        "sum_of_pair_fixture_leakage_residuals": 11 * maximum_local_leakage,
         "composition_argument": (
-            "each owned seam maps the same common code to itself; the all-column "
-            "bounded-chart decoder audit therefore applies inductively after every seam"
+            "pair-fixture closure does not establish common-E composition: the "
+            "actual 59,941-row execution in the common-E runner finds the missing "
+            "graded CAR parity cocycle"
         ),
+        "common_E_composition_executed_here": False,
         "covariance": covariance,
         "dense_EUE_completion_used": False,
         "full_union_selector_used": False,
@@ -1351,7 +1353,7 @@ def main() -> None:
     assert not boundary["derived_translation_invariant_recurrent_law"]
     assert not boundary["recurrent_volume_update_claimed"]
     assert not boundary["axiom_pressure_claimed"]
-    print("ELEVEN_OWNED_CARRIER_GIVENS_SEAMS_AND_CONTACT_CLOSED_ON_COMMON_DOMAIN")
+    print("LOCAL_OWNED_CARRIER_GIVENS_PRIMITIVES_CLOSED_GLOBAL_COMMON_E_UNSET_HERE")
 
 
 if __name__ == "__main__":

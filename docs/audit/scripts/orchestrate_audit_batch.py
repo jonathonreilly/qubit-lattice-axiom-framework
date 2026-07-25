@@ -115,6 +115,46 @@ PACKET_COMPLETION_EXIT_GRACE_SECONDS = 10
 COMMAND_TERMINATION_GRACE_SECONDS = 5
 INHERITED_DRAIN_LOCK_FD_ENV = "AUDIT_DRAIN_LOCK_FD"
 LANE_CERTIFICATION_PATH = "docs/audit/data/lane_certification.json"
+TRANSIENT_SERVICE_FAILURE_RESULT = "worker_transient_service_unavailable"
+TRANSIENT_SERVICE_EXIT_CODE = getattr(os, "EX_TEMPFAIL", 75)
+WORKER_FAILURE_LOG_TAIL_BYTES = 256 * 1024
+WORKER_FAILURE_LOG_TAIL_LINES = 80
+TRANSIENT_SERVICE_MARKERS = (
+    "biscuit_baker_service_me_circuit_open",
+    "service unavailable",
+    "bad gateway",
+    "gateway timeout",
+    "upstream connect error",
+    "connection reset by peer",
+    "connection closed before completed",
+    "http 502",
+    "http 503",
+    "http 504",
+    "status 502",
+    "status 503",
+    "status 504",
+    "status code 502",
+    "status code 503",
+    "status code 504",
+)
+NON_RETRYABLE_SERVICE_MARKERS = (
+    "insufficient_quota",
+    "usage limit",
+    "quota exceeded",
+    "out of credit",
+    "out of credits",
+    "credit balance",
+    "billing",
+    "unauthorized",
+    "forbidden",
+    "authentication failed",
+    "invalid api key",
+    "invalid_api_key",
+    "status 401",
+    "status 403",
+    "status code 401",
+    "status code 403",
+)
 
 
 def _repo_identity() -> str:
@@ -1239,6 +1279,41 @@ def packet_completion_pass(
     return completed
 
 
+def retryable_service_failure_marker(text: str) -> str | None:
+    """Classify a bounded terminal diagnostic as a transient service outage."""
+    tail = "\n".join(text.splitlines()[-WORKER_FAILURE_LOG_TAIL_LINES:]).lower()
+    if any(marker in tail for marker in NON_RETRYABLE_SERVICE_MARKERS):
+        return None
+    return next(
+        (marker for marker in TRANSIENT_SERVICE_MARKERS if marker in tail),
+        None,
+    )
+
+
+def retryable_worker_service_failure(job: dict) -> str | None:
+    """Return the matched transient service marker from a bounded log tail.
+
+    A worker exit has no scientific authority. Only a narrow allowlist of
+    transport/backend outage signatures is retryable, and any credit,
+    authentication, or policy marker wins over that allowlist. Unknown exits
+    remain hard failures.
+    """
+    log_path = job.get("log_path")
+    if not isinstance(log_path, Path) or not log_path.is_file():
+        return None
+    try:
+        with log_path.open("rb") as handle:
+            handle.seek(0, os.SEEK_END)
+            size = handle.tell()
+            handle.seek(max(0, size - WORKER_FAILURE_LOG_TAIL_BYTES))
+            decoded = handle.read(WORKER_FAILURE_LOG_TAIL_BYTES).decode(
+                "utf-8", errors="replace"
+            )
+    except OSError:
+        return None
+    return retryable_service_failure_marker(decoded)
+
+
 def finalize_worker(job: dict) -> tuple[dict | None, dict]:
     cid = job["cid"]
     base = {"cid": cid, "pass": job["pass"]}
@@ -1246,6 +1321,17 @@ def finalize_worker(job: dict) -> tuple[dict | None, dict]:
         return None, {**base, "result": "stall_killed"}
     raw_output = job["raw_output"]
     if job.get("returncode") != 0:
+        transient_marker = retryable_worker_service_failure(job)
+        if transient_marker is not None:
+            return None, {
+                **base,
+                "result": TRANSIENT_SERVICE_FAILURE_RESULT,
+                "detail": (
+                    "auditor transport/backend outage; "
+                    f"matched={transient_marker!r}; "
+                    f"log={job['log_path'].name}"
+                ),
+            }
         return None, {**base, "result": f"worker_exit_{job.get('returncode')}"}
     if not raw_output.exists() or raw_output.stat().st_size <= MIN_DELIVERY_BYTES:
         return None, {**base, "result": "no_size_qualified_delivery"}
@@ -3348,19 +3434,11 @@ def main() -> int:
             encoding="utf-8",
         )
         print(f"report: {workdir / 'report.jsonl'}")
-    blocked = report_has_hard_blocker(report)
-    return finish(1 if blocked else 0)
+    return finish(report_exit_code(report))
 
 
-def report_has_hard_blocker(report: list[dict]) -> bool:
-    """Return true only for outcomes that cannot be resumed canonically.
-
-    A cross-seat disagreement is not a failed audit round. It is an explicit
-    handoff to ``orchestrate_judicial_panel.py``. The top-level audit-loop
-    orchestrator consumes that handoff immediately and then resumes the same
-    lane, so returning nonzero here would incorrectly collapse a normal
-    control-flow edge into a campaign stop.
-    """
+def hard_blocking_report_items(report: list[dict]) -> list[dict]:
+    """Return outcomes that were not resolved by a governed companion."""
     accepted = (
         SUCCESS_RESULTS
         | RESUMABLE_HANDOFF_RESULTS
@@ -3379,8 +3457,10 @@ def report_has_hard_blocker(report: list[dict]) -> bool:
         if item.get("result") == CLAIM_TRANSACTION_QUARANTINE_RESULT
     }
     quarantine_companions = SCHEMA_INVALID_RESULTS | {"critical_peer_pending"}
-    return any(
-        item.get("result") not in accepted
+    return [
+        item
+        for item in report
+        if item.get("result") not in accepted
         and not (
             item.get("cid") in recovered
             and item.get("result") in quarantine_companions
@@ -3389,8 +3469,32 @@ def report_has_hard_blocker(report: list[dict]) -> bool:
             item.get("cid") in transaction_quarantined
             and item.get("result") == "apply_or_gate_failed"
         )
-        for item in report
-    )
+    ]
+
+
+def report_exit_code(report: list[dict]) -> int:
+    """Return success, temporary-service failure, or hard failure."""
+    blockers = hard_blocking_report_items(report)
+    if not blockers:
+        return 0
+    if all(
+        item.get("result") == TRANSIENT_SERVICE_FAILURE_RESULT
+        for item in blockers
+    ):
+        return TRANSIENT_SERVICE_EXIT_CODE
+    return 1
+
+
+def report_has_hard_blocker(report: list[dict]) -> bool:
+    """Return true only for outcomes that cannot be resumed canonically.
+
+    A cross-seat disagreement is not a failed audit round. It is an explicit
+    handoff to ``orchestrate_judicial_panel.py``. The top-level audit-loop
+    orchestrator consumes that handoff immediately and then resumes the same
+    lane, so returning nonzero here would incorrectly collapse a normal
+    control-flow edge into a campaign stop.
+    """
+    return bool(hard_blocking_report_items(report))
 
 
 def append_judicial_handoffs(

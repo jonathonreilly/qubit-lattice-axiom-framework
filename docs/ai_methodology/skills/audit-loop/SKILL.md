@@ -212,6 +212,13 @@ default session is:
    python3 docs/audit/scripts/orchestrate_audit_loop.py --max-workers 4
    ```
 
+   The canonical command has no wall-clock limit and keeps draining until its
+   governed fixed point or a verified resource/integrity blocker. When the
+   operator explicitly requests a bounded campaign, add
+   `--max-runtime-hours 12` (or the requested duration). The limit is checked
+   only between completed batch/panel/canary phases, so it never interrupts a
+   claim transaction, pipeline, lint, or push.
+
    This command owns the complete control loop: drain authenticated targeted
    dispatch and cascade re-audit sources, finish pending judicial work, drain
    configured development lanes in order, drain every other eligible
@@ -349,6 +356,17 @@ failures. This boundary is fail-closed and does not weaken any audit gate.
   blindly repeat an uncertain push. If fetch or ancestry proof is unavailable,
   preserve the local intended commit and hard-stop with
   `push_reconciliation_required`; do not reset to a stale remote-tracking ref.
+- **Auditor service retryable:** a nonzero auditor exit is retryable only when
+  the bounded worker-log tail contains an allowlisted backend/transport outage
+  signature (for example HTTP 502/503/504, service-unavailable circuit-open, or
+  a reset upstream connection) and contains no credit, quota, authentication,
+  billing, or policy marker. Batch, judicial-panel, and forensic-canary seats
+  propagate the same typed temporary-service exit. The top-level orchestrator
+  still finishes the mandatory panel sweep after a batch, then retries the
+  affected canonical phase with capped exponential backoff. The failed seat
+  mints no verdict and is not converted into a scientific or campaign
+  quarantine result. Credit/authentication and unknown worker exits remain
+  hard stops.
 - **Global hard stop:** dirty or divergent source state, failed rollback,
   repository invariant failure, unclassifiable generated diff, corrupted
   campaign state, unavailable required audit model, authentication failure

@@ -21,6 +21,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 import orchestrate_audit_batch as batch
 import orchestrate_audit_loop as audit_loop
+import orchestrate_judicial_panel as panel
 
 
 class GeneratedProvenanceRecoveryTest(unittest.TestCase):
@@ -669,12 +670,15 @@ def _args() -> argparse.Namespace:
         max_workers=4,
         worker_id="",
         max_passes=0,
+        max_runtime_hours=0,
         max_lane_cycles=0,
         batch_rounds=6,
         stall_minutes=45,
         runner_timeout_sec=120,
         codex_timeout_sec=2700,
         push_retries=3,
+        service_retry_initial_sec=60,
+        service_retry_max_sec=900,
         dispatch_science_fixes=False,
         skip_forensic_canary=True,
         dry_run=False,
@@ -696,6 +700,44 @@ class BatchExitSemanticsTest(unittest.TestCase):
     def test_validation_failure_remains_hard(self):
         report = [{"cid": "row", "result": "validation_failed"}]
         self.assertTrue(batch.report_has_hard_blocker(report))
+
+    def test_transient_service_failure_uses_temporary_exit(self):
+        report = [{
+            "cid": "row",
+            "result": batch.TRANSIENT_SERVICE_FAILURE_RESULT,
+        }]
+        self.assertTrue(batch.report_has_hard_blocker(report))
+        self.assertEqual(
+            batch.report_exit_code(report),
+            batch.TRANSIENT_SERVICE_EXIT_CODE,
+        )
+
+    def test_transient_service_failure_does_not_mask_hard_peer(self):
+        report = [
+            {
+                "cid": "retryable",
+                "result": batch.TRANSIENT_SERVICE_FAILURE_RESULT,
+            },
+            {"cid": "hard", "result": "worker_exit_1"},
+        ]
+        self.assertEqual(batch.report_exit_code(report), 1)
+
+    def test_judicial_service_failure_uses_temporary_exit(self):
+        report = [{
+            "cid": "row",
+            "result": panel.PANEL_TRANSIENT_SERVICE_RESULT,
+        }]
+        self.assertEqual(
+            panel.report_exit_code(report, []),
+            batch.TRANSIENT_SERVICE_EXIT_CODE,
+        )
+        self.assertEqual(
+            panel.report_exit_code(
+                report + [{"cid": "hard", "result": "panel_delivery_short"}],
+                [],
+            ),
+            1,
+        )
 
     def test_campaign_quarantine_makes_only_its_schema_failures_resumable(self):
         report = [
@@ -773,6 +815,77 @@ class SchemaRecoveryTest(unittest.TestCase):
 
         self.assertIn('"projector-kernel obstruction"', guidance)
         self.assertIn("copy the exact mechanism string", guidance)
+
+    def test_worker_503_is_typed_as_retryable_service_failure(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            log = root / "worker.log"
+            log.write_text(
+                "reconnecting 5/5\n"
+                "HTTP 503 Service Unavailable: "
+                "biscuit_baker_service_me_circuit_open\n",
+                encoding="utf-8",
+            )
+            job = {
+                "cid": "row",
+                "pass": 1,
+                "stalled": False,
+                "returncode": 1,
+                "raw_output": root / "missing.json",
+                "log_path": log,
+            }
+
+            envelope, result = batch.finalize_worker(job)
+
+        self.assertIsNone(envelope)
+        self.assertEqual(
+            result["result"],
+            batch.TRANSIENT_SERVICE_FAILURE_RESULT,
+        )
+        self.assertIn("biscuit_baker_service_me_circuit_open", result["detail"])
+
+    def test_credit_marker_wins_over_transient_service_marker(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            log = root / "worker.log"
+            log.write_text(
+                "HTTP 503 Service Unavailable\nusage limit reached\n",
+                encoding="utf-8",
+            )
+            job = {
+                "cid": "row",
+                "pass": 1,
+                "stalled": False,
+                "returncode": 1,
+                "raw_output": root / "missing.json",
+                "log_path": log,
+            }
+
+            envelope, result = batch.finalize_worker(job)
+
+        self.assertIsNone(envelope)
+        self.assertEqual(result["result"], "worker_exit_1")
+
+    def test_judicial_vote_503_is_typed_as_retryable_service_failure(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            log = root / "judge.log"
+            log.write_text(
+                "unexpected status 503 Service Unavailable\n",
+                encoding="utf-8",
+            )
+            vote, status = panel.collect_vote({
+                "stalled": False,
+                "returncode": 1,
+                "raw_output": root / "missing.json",
+                "log_path": log,
+            })
+
+        self.assertIsNone(vote)
+        self.assertEqual(
+            status,
+            f"{batch.TRANSIENT_SERVICE_FAILURE_RESULT}:service unavailable",
+        )
 
     def test_campaign_quarantine_persists_exact_failures_once(self):
         report = [
@@ -2922,6 +3035,61 @@ class AutomaticPanelResumeTest(unittest.TestCase):
             ["batch-lane_a-cycle-1", "panel-after-lane_a-cycle-1"],
         )
 
+    def test_transient_service_failure_panels_backs_off_and_retries(self):
+        args = _args()
+        heads = iter(["same", "same", "same", "same"])
+        labels: list[str] = []
+
+        def fake_run(label, command, env=None):
+            labels.append(label)
+            if label == "batch-lane_a-cycle-1":
+                return batch.TRANSIENT_SERVICE_EXIT_CODE
+            return 0
+
+        with mock.patch.object(
+            audit_loop, "git_head", side_effect=lambda: next(heads)
+        ), mock.patch.object(
+            audit_loop, "run_command", side_effect=fake_run
+        ), mock.patch.object(audit_loop.time, "sleep") as sleep:
+            rc, progressed = audit_loop.drain_lane("lane_a", args)
+
+        self.assertEqual(rc, 0)
+        self.assertFalse(progressed)
+        self.assertEqual(
+            labels,
+            [
+                "batch-lane_a-cycle-1",
+                "panel-after-lane_a-cycle-1",
+                "batch-lane_a-cycle-2",
+                "panel-after-lane_a-cycle-2",
+            ],
+        )
+        sleep.assert_called_once_with(60)
+
+    def test_judicial_panel_service_failure_retries_in_place(self):
+        args = _args()
+        with mock.patch.object(
+            audit_loop,
+            "run_command",
+            side_effect=[batch.TRANSIENT_SERVICE_EXIT_CODE, 0],
+        ) as run_command, mock.patch.object(audit_loop.time, "sleep") as sleep:
+            rc = audit_loop.run_panel(args, "panel-test")
+
+        self.assertEqual(rc, 0)
+        self.assertEqual(run_command.call_count, 2)
+        sleep.assert_called_once_with(60)
+
+    def test_runtime_limit_stops_before_starting_another_batch(self):
+        args = _args()
+        args.max_runtime_hours = 1
+        with mock.patch.dict(audit_loop.PROGRESS, {"started": 0}, clear=True), \
+             mock.patch.object(audit_loop.time, "monotonic", return_value=3601), \
+             mock.patch.object(audit_loop, "run_command") as run_command, \
+             self.assertRaises(audit_loop.RuntimeLimitReached):
+            audit_loop.drain_lane("lane_a", args)
+
+        run_command.assert_not_called()
+
     def test_quarantine_only_batch_progress_resumes_until_stable(self):
         args = _args()
         heads = iter(["same", "same", "same", "same"])
@@ -2966,6 +3134,7 @@ class CampaignContractTest(unittest.TestCase):
 
         self.assertNotIn("--development-helper", help_text)
         self.assertNotIn("--coordinator", help_text)
+        self.assertIn("--max-runtime-hours", help_text)
 
     def test_packet_fingerprint_normalizes_transport_bounded_virtual_index(self):
         row = {"claim_id": "target", "deps": []}
@@ -4009,6 +4178,44 @@ class CampaignContractTest(unittest.TestCase):
                 rc = audit_loop.run_forensic_canary(args)
 
             self.assertEqual(rc, 1)
+            self.assertFalse(args.campaign_quarantine_file.exists())
+
+    def test_forensic_503_uses_temporary_service_exit(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            campaign = Path(tmp)
+            args = _args()
+            args.campaign_workdir = campaign
+            args.campaign_quarantine_file = (
+                campaign / "campaign-row-exclusions.jsonl"
+            )
+            claim_id = "forensic_row"
+
+            def fake_run(_label, command, env=None):
+                log = Path(command[command.index("--run-log-path") + 1])
+                log.write_text(
+                    json.dumps(
+                        {
+                            "claim_id": claim_id,
+                            "phase": "codex_failed",
+                            "stderr": (
+                                "HTTP 503 Service Unavailable: "
+                                "biscuit_baker_service_me_circuit_open"
+                            ),
+                        }
+                    )
+                    + "\n",
+                    encoding="utf-8",
+                )
+                return 1
+
+            with mock.patch.object(
+                audit_loop,
+                "first_ready_forensic_claim",
+                return_value=claim_id,
+            ), mock.patch.object(audit_loop, "run_command", side_effect=fake_run):
+                rc = audit_loop.run_forensic_canary(args)
+
+            self.assertEqual(rc, batch.TRANSIENT_SERVICE_EXIT_CODE)
             self.assertFalse(args.campaign_quarantine_file.exists())
 
     def test_forensic_zero_exit_without_terminal_outcome_fails_closed(self):

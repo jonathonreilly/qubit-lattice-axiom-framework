@@ -1,24 +1,52 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T13:43:37.150623+00:00",
+  "audit_invocation_history": [
+    "f199af683cbe4cbb8e583f85ad5f4aae"
+  ],
+  "audit_invocation_id": "f199af683cbe4cbb8e583f85ad5f4aae",
+  "audit_state_snapshot": {
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {
+      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+      "realized_state_primitive": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+    },
+    "dep_claim_scope": {
+      "minimal_axioms": null,
+      "realized_state_primitive": null
+    },
+    "dep_claim_type": {
+      "minimal_axioms": "meta",
+      "realized_state_primitive": "meta"
+    },
+    "dep_effective_status": {
+      "minimal_axioms": "meta",
+      "realized_state_primitive": "meta"
+    },
+    "deps": [
+      "minimal_axioms",
+      "realized_state_primitive"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 0.0,
+    "runner_hash": "11f46a51227145e2e6c8a297ceaebd12d47369392380f5121dcd942f86c3e828",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_renaming",
+  "auditor": "codex-audit-batch-A-20260725-a3b1d464",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The bounded mapping closes because the cited accepted premises state the mapped requirements verbatim or by immediate exclusion logic. The finite witnesses illustrate those requirements but establish no additional theorem.",
   "claim_id": "rstar_dtotality_axiom_text_instances_bounded_note_2026-07-02",
-  "claim_scope": null,
+  "claim_scope": "The quoted R* finite-additivity/content-determination and D-totality domain-totality clauses are faithful relabelings of accepted Record and law-domain premise text, illustrated by finite witnesses; no downstream closure follows.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T13:43:37.150623+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -27,19 +55,20 @@
     "realized_state_primitive"
   ],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_renaming",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_renaming",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "R* clauses 1\u20132 are the Record axiom's finite-additivity/content-determination requirements, and D-totality is the law sentence applied to the rule's stated supplied domain.",
+  "load_bearing_step_class": "F",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "b8903900bdba7231d1ec7644ac9750a2e7dc00f13dd0421cb1a02bbd1a47a4d8",
   "note_path": "docs/RSTAR_DTOTALITY_AXIOM_TEXT_INSTANCES_BOUNDED_NOTE_2026-07-02.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "other: Reclassify the artifact as a meta clause-mapping note, or add a genuinely non-definitional result if bounded-theorem status is intended.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -166,14 +195,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
+    "A": 11,
+    "B": 10,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 21
   },
   "runner_path": "scripts/frontier_rstar_dtotality_axiom_text_instances_2026_07_02.py",
   "title": "R* And D-Totality Clauses As Axiom-Text Instances (Bounded Note)",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "The accepted Record and law-domain premises contain the quoted requirements, and the runner's finite set and rule checks correctly illustrate them. The load-bearing move only identifies the labels R* and D-totality with requirements already stated in those premises; it derives no new framework content, and the realized-state domain-certificate check is hard-coded as None. The bounded mapping therefore closes on its stated terms but is a class-F renaming rather than a theorem-level derivation."
 }

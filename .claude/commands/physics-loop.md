@@ -117,17 +117,23 @@ worktree/lock conflict, or documented global queue exhaustion.
   `main`, merge PRs, or open PRs without enough review surface for
   `review-loop`.
 
-## Execution Mechanism (standing — 2026-06-12)
+## Execution Mechanism (standing — 2026-06-12; executor updated 2026-07-24)
 
 All execution under this command runs through the workhorse split (see the
 `workhorse` skill): the model running in this chat plans, writes specs, reviews every diff
-line-by-line, and lands; the strongest configured text worker via `codex exec`
-executes bounded note/runner drafting, scratch computation, structured
-extraction, and panel lens execution (lenses run `-s read-only`; verdict
-synthesis is never delegated).
+line-by-line, and lands; bounded note/runner drafting, scratch computation,
+structured extraction, and panel lens execution are farmed to the strongest
+configured Claude Opus execution worker (owner directive 2026-07-24; Agent tool
+`model: "opus"` / Workflow `model: 'opus', effort: 'max'` — resolves to the
+newest available Opus), one agent per spec, same spec contracts and
+anti-fabrication clauses; verdict synthesis is never delegated. The codex
+worker retains the independent review-loop and audit-loop lanes only (owner
+grant 2026-07-09), never science execution.
 No-go planning discipline applies: read the actual no-go note's primary text
 and plan against its exact audited scope, never its title or a secondary
 summary; if work reveals no-go language broader than its audited
 `claim_scope`, queue a narrowing repair PR. Where this command references
-review-loop or audit steps, those lanes are owner-operated (standing rule
-2026-06-11): prepare the PR/review surface and hand off; never run them.
+review-loop or audit steps, those lanes are independent (standing rule
+2026-06-11, dispatch grant 2026-07-09): prepare the PR/review surface and
+dispatch the independent lane or hand off; never perform review/audit
+judgment in the planning chat.

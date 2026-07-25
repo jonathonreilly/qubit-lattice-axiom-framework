@@ -7,16 +7,16 @@
     "peak_memory_footprint_is_a_separately_reported_external_metric": true,
     "seconds": 360.0
   },
-  "cold_internal_elapsed_seconds": 61.32320195896318,
-  "cold_maximum_RSS_bytes": 2319958016,
-  "definitive_run_HEAD": "d73ae344764a5f3a31cadbcfa6467a8fe06b386c",
+  "cold_internal_elapsed_seconds": 67.0582199160126,
+  "cold_maximum_RSS_bytes": 2356969472,
+  "definitive_run_HEAD": "15b7bc1bf7e74cf7e8a0b8ffcf58f48e0af49d74",
   "exact_pinned_dependencies": {
-    "Cycle578_note": "2f04343e82925524accea75ce54af2c30b934da2343fa0d03f3c5da7fd9778d8",
-    "Cycle578_receipt": "8546eb8d8097260d975358ec59ebb4e84681779bd1c1f98b9bc6b996bbccdd53",
+    "Cycle578_note": "a66126cf39bf6020680da5654bcbc85b11107e1f7d955f0ff5449098a0aa5dfc",
+    "Cycle578_receipt": "7d745296b8ced52bf26b96fb13fe52024715846b6b491e6c6c6ba32aa2908ee2",
     "common_matter_field_coin_family_cycle219_2026_07_16.py": "ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a",
     "physical_enlarged_link_contact_work_tournament_cycle569_2026_07_22.py": "c0f06a9cc9ffc4dcfe1d80b94da10bbef81ca1c74fddddac48712b0a7c332ced",
     "physical_held_sparse_order_retirement_cycle563_2026_07_21.py": "444a5c0fb3cb1758236ddefaeb472d0002cadb256d3c4df723fd562129c7325b",
-    "physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_2026_07_22.py": "73ab0364fc5b8ddd9c708a3bd8910b660d36cb0d53aad388f42e2b09b970a7ac",
+    "physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_2026_07_22.py": "4ef60441d31d62b1fc61c9b5e09ff3bc8f7f32d1b68bc3c548834431d24302f6",
     "spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py": "b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae"
   },
   "interpretation_firewall": {
@@ -625,7 +625,7 @@
     ],
     "three_CAR_mode_absence_theorem": false
   },
-  "runner_sha256": "687adfc11d823329a40445bc9f02aada93fd64f4617bf25857c5bdf0fd68cfe7",
+  "runner_sha256": "ef6805e691a1ddd303a96f7cabd7000517e0cf33d5b1c577b20c2cbbf29aca23",
   "scope_boundary": {
     "CAR_fiber_result_is_physical_M2_compiler": false,
     "audit": "unset",

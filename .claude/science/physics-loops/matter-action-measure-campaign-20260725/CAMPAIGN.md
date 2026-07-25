@@ -411,3 +411,67 @@ on main).
 Caution recorded: the local worktree ledger diverges from
 origin/main by 1111 shards; all statuses above were re-read from
 origin/main blobs.
+
+---
+
+## L1 CORRECTION LANDED on PR #5602 (2026-07-25)
+
+All three refutations verified natively (26/0 scratch runner BEFORE
+touching the repo). Runner now **65/0** (was 46/0) with 19 new gates,
+each claimed constant carrying a construction-mutation probe.
+
+**One refutation was OVERSTATED and the corrector refused to
+propagate it — correctly.** I passed "(H4a) correlation is FORCED by
+Admissibility" downstream as settled. Its own source report actually
+qualifies it as "FORCED, *conditional on one axiom reading*",
+resting on (P1) reading "no possibility is privileged" as
+ray-transitivity and (P2) typing the untyped word "conditions" as
+record *content*. **That is a reading, not a theorem.** The note now
+records the asymmetry (flatness supplied outright; correlation the
+half Admissibility bears on), names BOTH unsettled words, and states
+that the forcing is neither gated nor asserted. My own error:
+I relayed a conditional as a fact.
+
+**A corpus contradiction the corrector surfaced and refused to
+resolve unilaterally:** `COLOR_ARENA...:76-78` says "the Qubit axiom
+itself supplies that identification", while the axiom text contains
+"frame" zero times. Those disagree. The note quotes both and takes
+no side — consistent with COLOR_ARENA's own `R5 ... open`.
+
+**Proved rather than sampled:** dimension 2 for EVERY twist, via the
+exact identities `(I(x)W)(P(x)I + I(x)P)(I(x)W)^-1 = P(x)I +
+I(x)(W P W^-1)` and `(I(x)W) SWAP (I(x)W)^-1 = (W^-1 (x) W) SWAP`
+on a GENERIC invertible `W` — so the twisted diagonal is a conjugate
+of the diagonal.
+
+**The dimension chain, now measured with the framework's own finite
+group:** independent-onsite under the order-4 spin lift leaves **4**
+(witness `Z(x)Z`); common-frame under the same finite group gives 6;
+the full order-8 edge stabiliser 5; bare endpoint exchange 10.
+Chain `16 -> 10 -> 6 -> 5 -> 2`.
+
+**Frame-invariance finding confirmed:** `(w^dag (x) w) SWAP` is
+Hermitian but has span-rank 3 against `{I, SWAP}` — so "the law is
+`I - SWAP`" is NOT a frame-invariant sentence, though the spectrum
+with multiplicity is unchanged.
+
+**Deviation I endorse:** generated surfaces were restored to the
+BRANCH's committed state rather than literally from current
+origin/main, because origin/main is 1100+ shards ahead of this
+branch's base and a literal restore would have (a) pulled all of that
+into the PR and (b) reverted the `citation_graph_manifest.json`
+graph-delta acknowledgment that `repo_invariants_check.py` REQUIRES
+for a new note. Byte-identical to the merge-base for every listed
+path; the newly generated shard was deleted, not committed. Correct
+call.
+
+## REMAINING INTEGRITY ITEMS (dispatched as the next wave)
+
+1. **95 terminal-verdict rows — 58 of them `audited_clean` — name a
+   runner their ledger row does not hash-pin.** 58 clean verdicts
+   pinned to nothing. Most alarming open item in the repo.
+2. **ZERO `no_go` rows are retained anywhere** (438 rows: 437
+   `unaudited`, 1 `audited_conditional` and unrelated). If that is
+   structural rather than backlog, EVERY foreclosure the framework
+   relies on is ungraded — and this session alone leaned on landed
+   no-gos a dozen times.

@@ -82,7 +82,7 @@
   "effective_status_counts": {
     "audit_in_progress": 2,
     "audited_conditional": 185,
-    "audited_failed": 44,
+    "audited_failed": 45,
     "audited_numerical_match": 9,
     "audited_renaming": 27,
     "decoration_under_abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18": 1,
@@ -108,7 +108,7 @@
     "retained": 107,
     "retained_bounded": 331,
     "retained_pending_chain": 6,
-    "unaudited": 2777
+    "unaudited": 2776
   },
   "retained_pending_chain_count": 6,
   "retained_pending_chain_examples": [

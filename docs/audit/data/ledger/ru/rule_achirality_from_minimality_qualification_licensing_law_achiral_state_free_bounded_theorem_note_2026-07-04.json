@@ -1,24 +1,79 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T12:51:45.261504+00:00",
+  "audit_invocation_history": [
+    "7ad4244b151c4bc5bd63485480e5a5ec"
+  ],
+  "audit_invocation_id": "7ad4244b151c4bc5bd63485480e5a5ec",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true,
+      "runner_path": "scripts/rule_achirality_substrate_minimality_bit_count_2026_07_04.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {
+      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    },
+    "dep_claim_scope": {
+      "minimal_axioms": null
+    },
+    "dep_claim_type": {
+      "minimal_axioms": "meta"
+    },
+    "dep_effective_status": {
+      "minimal_axioms": "meta"
+    },
+    "deps": [
+      "minimal_axioms"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 2.5,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/rule_achirality_substrate_minimality_bit_count_2026_07_04.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "08dccc32f14d208323ef713fec463d61aaeebc94df1c29358af43eb2253985b7",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "08dccc32f14d208323ef713fec463d61aaeebc94df1c29358af43eb2253985b7",
+    "runner_path": "scripts/rule_achirality_substrate_minimality_bit_count_2026_07_04.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 3
+  },
+  "audit_status": "audited_failed",
+  "auditor": "codex-audit-batch-A-20260725-df89346c",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The runner supports algebraic facts about its defined toy rules, but it does not prove that spatial reflections are mere Cl(3,0) presentation freedom or that J2 is unfixed by the full supplied structure. Its E3 history neither implements a global one-record-per-site configuration nor derives physical reachability.",
   "claim_id": "rule_achirality_from_minimality_qualification_licensing_law_achiral_state_free_bounded_theorem_note_2026-07-04",
-  "claim_scope": null,
+  "claim_scope": "The defined six-direction toy rules exhibit a reflection-fixed rule and a size-two J2-conjugate pair, but the audit does not establish the claimed framework-level licensing or record-state reachability.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem (exact finite rule-space diagnostic: the",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T12:51:45.261504+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,19 +81,23 @@
     "minimal_axioms"
   ],
   "direct_in_degree": 1,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_failed",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_failed",
   "load_bearing_score": 2.5,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The decisive step is that the Qualification allegedly makes an unfixed J2 handedness unlawful without a supplied source and therefore directly licenses the achiral witness while permitting a chiral record state.",
+  "load_bearing_step_class": "B",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls",
+    "conditional_wall_rationale"
+  ],
   "note_hash": "6bbb51231a49171a27e4331126a124c33830bb7399febdb4d50d4c7fc9bf2167",
   "note_path": "docs/RULE_ACHIRALITY_FROM_MINIMALITY_QUALIFICATION_LICENSING_LAW_ACHIRAL_STATE_FREE_BOUNDED_THEOREM_NOTE_2026-07-04.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Re-audit after the exact accepted Qualification text is used, full-structure nonselection of J2 is proved, and E3 is replaced by a genuine globally admissible one-record-per-site construction with a justified reachability notion.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -100,14 +159,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 14,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 14
   },
   "runner_path": "scripts/rule_achirality_substrate_minimality_bit_count_2026_07_04.py",
   "title": "Bounded Rule-Achirality Diagnostic from the Qualification: a Chiral Rule Branch Needs an Unfixed Reflection-Odd Bit, While Chiral States Remain Allowed",
   "transitive_descendants": 3,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: The authority says that an unfixed choice remains a named conditional or open dependency; it does not contain the note's quoted \u201ca law may not depend ... unless admitted\u201d clause, and testing one mirror-even summary does not prove that J2 is unfixed by the whole supplied structure. Why this blocks: the toy symmetries may be correct, but framework licensing and state reachability do not follow; under N1-N8, the supplied-source route remains open (N1), N2 reduces to one conditional, unsupported presentation and reachability assumptions remain (N3), no matching prior residual closes them (N4), the rhetoric remains bounded (N5), registry or reframe routes remain possible (N6), the internal-property and record-semantics steelman succeeds (N7), and cross-cycle retirement mechanisms remain open (N8). Repair target: cite the exact accepted axiom text, prove that the handed selector is not fixed by the full supplied lattice/qubit structure, and construct an actual global one-record-per-site configuration whose neighbor conditions satisfy R_align with a derived reachability relation. Claim boundary until fixed: only the defined toy rules' reflection-fixed witness, size-two J2 mirror pair, and associated algebraic oddness checks are supported; the conditional licensing wall and record-state reachability are not."
 }

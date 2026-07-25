@@ -40,7 +40,8 @@ does not derive the spin-conjugation identification from the axioms.
 ### Four named conditions, stated rather than claimed
 
 The sentence above should not be read as "nothing was assumed". Three
-identifications are load-bearing and none is written in the axiom text:
+identifications plus one algebraic-class condition are load-bearing, and none
+is written in the axiom text:
 
 1. **Rotations act on the possibility domain by spin conjugation.** The
    Admissibility axiom says the nearest-neighbour rule is covariant under
@@ -120,8 +121,8 @@ recovered as a special case.
 ## The spin–spin basis, exhibited
 
 The runner exhibits three explicit forms, verifies each is exactly invariant
-under all 24 proper rotations, and verifies they are linearly independent, so
-they are a basis for that channel:
+under all 24 proper rotations and symmetric under record exchange, and verifies
+they are linearly independent, so they are a basis for that channel:
 
 ```text
 isotropic    S . S'
@@ -166,7 +167,7 @@ this note defers to it.**
 [Admissibility-rule covariance extension classified](ADMISSIBILITY_RULE_COVARIANCE_EXTENSION_CLASSIFICATION_OPENNESS_ACHIRAL_ORIENTED_FRAME_MINIMAL_CHIRAL_CHANNEL_BOUNDED_THEOREM_NOTE_2026-07-03.md)
 asks the same proper-versus-full-cubic question on the same six directions, for
 the *admissibility rule* rather than for a two-body readout kernel, and it
-   takes the improper action on rule values to be complex-antilinear, re-earned
+takes the improper action on rule values to be complex-antilinear, re-earned
 from the `Cl(3,0)` presentation. That is a more framework-motivated choice than
 the axial convention used above. This note does not compete with it: the
 objects differ (rule colorings by a `k`-letter condition alphabet there, a
@@ -182,9 +183,10 @@ improper action is that note's subject, not this one's.
 - It does not claim the physical range is nearest-neighbour. At larger range
   the count grows with the octahedral orbit structure of the support ball.
 - It does not derive that the two-body extension is licensed at all. Cycle 698
-  showed that the additivity clause, read strictly, forbids it; this cycle
-  counts what the extension would contain if licensed, and that conditional is
-  stated rather than resolved.
+  showed that the additivity clause, read strictly, excludes an irreducible
+  pair term from the scalar readout; it did not exclude a separate action or
+  dynamics. This cycle counts what the extension would contain if licensed,
+  and that conditional is stated rather than resolved.
 - It does not treat the contents as anything but the Hermitian real form. The
   complex case, higher-body terms, and content-dependent range are outside
   scope.
@@ -194,7 +196,7 @@ improper action is that note's subject, not this one's.
 
 | residual | state |
 |---|---|
-| source action | **counted**: 5 independent nearest-neighbour two-body couplings, with an exhibited basis. Values, signs, range, and licensing all remain open. |
+| conditional pair-kernel budget | **counted** under the four supplied conditions: 5 independent nearest-neighbour two-body couplings, with an exhibited basis. Values, signs, range, and licensing all remain open. |
 | site-anchored readout | shape derived in cycle 698; existence still gated by the additivity reading. |
 | reference normalization | untouched. An *intensive* dimensionless target needs a selected reference; a dimensionless extensive count does not. |
 | carrier | untouched. |
@@ -203,13 +205,15 @@ improper action is that note's subject, not this one's.
 
 Every decisive equality is exact integer or `Fraction` arithmetic; there is no
 floating-point comparison, no sampling, and no fit. The two independent counts
-of the same dimension are the principal internal check, and the homomorphism
-property of the content action is verified rather than assumed. The three
+of the same dimension are the principal internal check. The supplied action's
+internal homomorphism property is verified rather than assumed, while its
+identification with record contents remains a named condition. The three
 exhibited forms are checked for invariance against all 24 group elements and
-all 54 coefficient positions, not on sampled inputs. The axial extension in the
-counterfactual is a named choice and is flagged as such in the runner and here.
-Its full `96`-coordinate solve includes all channels rather than inferring a
-five-coupling conclusion from the spin-spin basis alone.
+all 54 coefficient positions, and for exchange symmetry, not on sampled
+inputs. The axial extension in the counterfactual is a named choice and is
+flagged as such in the runner and here. Its full `96`-coordinate solve includes
+all channels rather than inferring a five-coupling conclusion from the
+spin-spin basis alone.
 
 ## Dependency citations
 

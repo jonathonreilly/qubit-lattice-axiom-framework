@@ -95,8 +95,9 @@ compatible with the clause. Neither reading decides whether a separate
 interaction law or dynamics exists.
 
 This note takes no position on which reading is intended. It records that the
-choice has a physical consequence, that the consequence is exactly one contact
-term, and that the runner exhibits it.
+choice has a physical consequence. In the runner's five-site fixture that
+consequence is exactly one contact term; in general the defect is the number of
+cross-boundary nearest-neighbor bonds.
 
 ## M2 — covariance classifies the pair kernel, and range 1 leaves one constant
 
@@ -111,8 +112,9 @@ displacements, so the runner's exact solve returns kernel dimension **1**.
 Displacement reversal is already inside the proper rotation group — the 180°
 rotation about `z` sends `e_1` to `-e_1` — so no separate symmetry assumption is
 needed to make the kernel two-sided; the runner checks that containment
-explicitly. Dropping the rotations leaves all six free, which is the negative
-control.
+explicitly. Without covariance all six coordinate values are free by
+definition; the runner's negative control instead exhibits a single-face
+kernel and checks that a proper rotation takes it out of itself.
 
 Within the named class below, the range-1 covariant local two-body readout is
 therefore one constant times the number of adjacent record pairs. This is the
@@ -170,9 +172,9 @@ without being pathological.
 
 ## M4 — the field is the marginal readout cost of a test record
 
-The pair kernel supplies a site-anchored value — the thing a position-blind
-readout can never supply — and it supplies it in one specific shape. The runner
-verifies exactly that for every tested site
+The pair kernel supplies a direct displacement-dependent site-anchored value
+that a content-only singleton readout does not supply, and it supplies it in
+one specific shape. The runner verifies exactly that for every tested site
 
 ```text
 pairs(S + {x}) - pairs(S) = number of occupied neighbors of x
@@ -229,7 +231,7 @@ matrix constructor.
 | residual | state after 698 |
 |---|---|
 | site-anchored readout | **shape derived**: the marginal cost of a test record. Its existence still requires the two-body extension, which the strict reading of the additivity clause excludes. |
-| source action | **shape classified**: a two-body kernel on octahedral orbits; one constant at range 1. Value, sign, and range remain open. |
+| candidate pair readout/source extension | **shape classified** under the named conditions: a two-body kernel on octahedral orbits; one constant at range 1. Value, sign, range, and licensing remain open. |
 | reference normalization | untouched by this cycle; still open. A dimensionless *intensive* target needs a selected reference; a dimensionless extensive count does not. |
 | carrier | untouched. |
 

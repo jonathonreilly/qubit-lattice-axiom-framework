@@ -32,16 +32,16 @@ Owner-approval history for axioms and primitives:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3875 |
-| Applied audit verdicts | 844 |
+| Applied audit verdicts | 845 |
 | Retained-grade rows, including boxed decorations | 481 |
 | Retained positive theorems | 115 |
 | Retained no-go rows | 0 |
 | Retained bounded rows | 339 |
 | Boxed decorations under retained parents | 27 |
 | Open gates | 2 |
-| Unaudited rows | 2673 |
+| Unaudited rows | 2672 |
 | Retained-pending-chain rows | 10 |
-| Audited conditional rows | 246 |
+| Audited conditional rows | 247 |
 | Audited renaming rows | 34 |
 | Audited numerical-match rows | 11 |
 | Citation cycles detected | 58 |
@@ -105,7 +105,7 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 | Manifest pending removals | 0 |
 | Unmanifested candidates (need pending entries) | 0 |
 | Admitted ids absent from lane candidates | 30 |
-| Live conditional/failed rows that would park | 249 |
+| Live conditional/failed rows that would park | 250 |
 | Live rows fail-open (legacy/unversioned snapshot) | 42 |
 | Lane rows already in actual ready top-10 | 3 |
 | Lane rows added since prior pass | 0 |

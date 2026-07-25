@@ -1,42 +1,90 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T04:56:34.338849+00:00",
+  "audit_invocation_history": [
+    "b204f286f7c442088c9d2797f7e9edd2"
+  ],
+  "audit_invocation_id": "b204f286f7c442088c9d2797f7e9edd2",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 1,
+        "B": 0,
+        "C": 7,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/frontier_hubble_lane5_c1_a6_bilinear_active_block_support_boundary.py"
+    },
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 6.755,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_hubble_lane5_c1_a6_bilinear_active_block_support_boundary.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "d34a4693fb3e55711f326e9783fa83a7cea9bcea619649205f5f7f8952c87fd8",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "d34a4693fb3e55711f326e9783fa83a7cea9bcea619649205f5f7f8952c87fd8",
+    "runner_path": "scripts/frontier_hubble_lane5_c1_a6_bilinear_active_block_support_boundary.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 26
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-f0170a09",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "On the stipulated CAR Fock space, a_i^dagger a_j|k>=delta_jk|i> manually yields all matrix units and M_4(C); the Pauli-tensor gamma matrices satisfy Cl_4 exactly, while the exhibited conjugations and rescaling establish non-uniqueness. The framework-level chain does not close because no supplied authority derives the stipulated four-mode event-cell/CAR/P_A carrier from the registered premises.",
   "claim_id": "hubble_lane5_c1_a6_bilinear_active_block_support_boundary_note_2026-04-29",
-  "claim_scope": null,
+  "claim_scope": "Given a stipulated four-mode CAR Fock cell and rank-four weight-one P_A, compressed bilinears generate M_4(C), host Cl_4(C), and are non-unique under the exhibited permutation, phase, and common-rescaling transformations.",
   "claim_type": "positive_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_last_reviewed": "2026-07-25T04:56:34.338849+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 4,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 6.755,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "On the one-particle sector P_A H_cell, the bilinears E_ij=P_A a_i^dagger a_j P_A act exactly as matrix units, E_ij E_kl=delta_jk E_il.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "derived_no_go_boundary"
+  ],
   "note_hash": "02b31a25717595aa59703348468521f90ed72b776f397ea8c65e21c00bf80497",
   "note_path": "docs/HUBBLE_LANE5_C1_A6_BILINEAR_ACTIVE_BLOCK_SUPPORT_BOUNDARY_NOTE_2026-04-29.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "missing_bridge_theorem: derive the C^16 four-mode event-cell/CAR carrier and its weight-one P_A sector from registered premises, then rerun independent matrix-unit, Clifford, and non-uniqueness checks.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -131,14 +179,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 9,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 9
   },
   "runner_path": "scripts/frontier_hubble_lane5_c1_a6_bilinear_active_block_support_boundary.py",
   "title": "Lane 5 `(C1)` A6 Bilinear Active-Block Support/Boundary Note",
   "transitive_descendants": 26,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: The restricted packet supplies no accepted or retained authority deriving the time-locked C^16 four-mode event cell, P_A=P_{|S|=1}, or its four-mode CAR carrier from the registered framework premises; N3 therefore exposes the note's \u201cprimitive event cell\u201d wording as a load-bearing unsupported premise. Why this blocks: Although independent CAR algebra confirms the matrix-unit, Clifford, and rescaling calculations, they remain conditional on that carrier; for the scoped negative boundary, N1/N7 exhibit only permutation, phase-conjugation, and common-rescaling routes, N2 does not establish independence of coframe and action-unit selection, N4 cites no residual witness, N5 does not test all five resolutions, N6 supplies no selector through the approved scale primitive, and N8 is not used to foreclose any route. Repair target: Supply a retained carrier theorem deriving the four-mode Fock/CAR surface and P_A sector from registered premises, then independently recheck the exact identities. Claim boundary until fixed: The safe result is the conditional finite-algebra theorem plus non-uniqueness under the three exhibited transformations, not a framework-derived carrier or exhaustive selector impossibility."
 }

@@ -17,7 +17,7 @@ file per claim), summarized in
 | Metric | Value |
 |---|---:|
 | Retained positive rows | 98 |
-| Retained bounded rows | 321 |
+| Retained bounded rows | 322 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 21 |
 
@@ -124,7 +124,7 @@ Sorted by load-bearing graph score (descending).
 - [`replay_environment_note`](../../docs/REPLAY_ENVIRONMENT_NOTE.md) — score 0.000; audited 2026-05-01T23:28:33.389906+00:00
 - [`staggered_graph_portability_stress_note`](../../docs/STAGGERED_GRAPH_PORTABILITY_STRESS_NOTE.md) — score 0.000; audited 2026-05-05T11:44:13.477263+00:00
 
-## Retained bounded rows (321)
+## Retained bounded rows (322)
 
 Sorted by load-bearing graph score (descending).
 
@@ -280,6 +280,7 @@ Sorted by load-bearing graph score (descending).
 - [`central_band_dense_joint_highn_note`](../../docs/CENTRAL_BAND_DENSE_JOINT_HIGHN_NOTE.md) — score 2.585; audited 2026-05-17T15:18:36.021974+00:00
 - [`continuum_limit_note`](../../docs/CONTINUUM_LIMIT_NOTE.md) — score 2.585; audited 2026-05-23T18:13:56.019683+00:00
 - [`d2_sign_boundary_mass_collapse_bounded_theorem_note_2026-06-12`](../../docs/D2_SIGN_BOUNDARY_MASS_COLLAPSE_BOUNDED_THEOREM_NOTE_2026-06-12.md) — score 2.585; audited 2026-06-14T02:26:00.768235+00:00
+- [`gate_b_finite_path_sum_propagation_bridge_bounded_theorem_note_2026-06-18`](../../docs/GATE_B_FINITE_PATH_SUM_PROPAGATION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md) — score 2.585; audited 2026-07-25T05:47:09.636599+00:00
 - [`gate_b_local_stencil_connectivity_bridge_bounded_theorem_note_2026-06-18`](../../docs/GATE_B_LOCAL_STENCIL_CONNECTIVITY_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md) — score 2.585; audited 2026-07-09T06:41:59.617948+00:00
 - [`gravity_observable_hierarchy_note`](../../docs/GRAVITY_OBSERVABLE_HIERARCHY_NOTE.md) — score 2.585; audited 2026-05-10T17:18:54.923403+00:00
 - [`matched_2d_4d_decoherence_note`](../../docs/MATCHED_2D_4D_DECOHERENCE_NOTE.md) — score 2.585; audited 2026-05-11T15:36:39.062261+00:00

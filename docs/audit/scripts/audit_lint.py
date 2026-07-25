@@ -1478,6 +1478,74 @@ def main() -> int:
                             "relying on audit-loop selection"
                         )
 
+    # A runner-bearing note under an excluded source pattern can never acquire
+    # a claim id, note hash, runner pin, queue entry, or verdict:
+    # seed_audit_ledger.should_gate_node drops the node before claim typing
+    # runs, so no amount of author diligence registers the result. That makes
+    # an excluded directory a write-only sink for runner-gated science.
+    #
+    # This is a ratchet, not a sweep. The current population is grandfathered
+    # in unregistered_runner_bearing_note_baseline.txt and reported as a
+    # drainable notice; only a path absent from that baseline is an error. The
+    # baseline lives beside the scripts rather than in docs/audit/data/ because
+    # that directory is restored wholesale from origin/main before a science PR
+    # lands, which would silently revert every drain.
+    if graph and excluded_source_patterns:
+        baseline_path = (
+            REPO_ROOT
+            / "docs"
+            / "audit"
+            / "scripts"
+            / "unregistered_runner_bearing_note_baseline.txt"
+        )
+        baseline: set[str] = set()
+        if baseline_path.exists():
+            baseline = {
+                line.strip()
+                for line in baseline_path.read_text(encoding="utf-8").splitlines()
+                if line.strip() and not line.strip().startswith("#")
+            }
+        live_unregistered: set[str] = set()
+        for cid, node in sorted(graph.get("nodes", {}).items()):
+            if cid in rows:
+                continue
+            node_path = node.get("path") or ""
+            if not node_path or node_path in never_gate_source_paths:
+                continue
+            if not any(fnmatchcase(node_path, pat) for pat in excluded_source_patterns):
+                continue
+            node_runners = [
+                r
+                for r in [node.get("runner_path"), *(node.get("helper_runner_paths") or [])]
+                if r and (REPO_ROOT / r).exists()
+            ]
+            if not node_runners:
+                continue
+            live_unregistered.add(node_path)
+            if node_path in baseline:
+                add_notice(
+                    "unregistered_runner_bearing_note",
+                    f"{node_path}: names runner(s) {sorted(set(node_runners))} but matches "
+                    "data/excluded_source_patterns.txt, so seeding creates no ledger row; "
+                    "grandfathered in unregistered_runner_bearing_note_baseline.txt and "
+                    "drainable by moving the note onto an auditable path"
+                )
+            else:
+                errors.append(
+                    f"{node_path}: names runner(s) {sorted(set(node_runners))} but matches "
+                    "data/excluded_source_patterns.txt, so seed_audit_ledger.should_gate_node "
+                    "drops it and the result can never acquire a claim id, note hash, runner "
+                    "pin, queue entry, or verdict. Move the note onto an auditable docs/ path, "
+                    "or register the exact path in docs/audit/data/never_gate_source_paths.txt, "
+                    "or drop the runner reference if the note is narrative only."
+                )
+        for stale in sorted(baseline - live_unregistered):
+            add_notice(
+                "unregistered_runner_bearing_note_baseline_stale",
+                f"{stale}: listed in unregistered_runner_bearing_note_baseline.txt but no "
+                "longer an unregistered runner-bearing note; prune the baseline entry"
+            )
+
     # Graph health: cycles (informational).
     cycle_count = 0
     if graph:

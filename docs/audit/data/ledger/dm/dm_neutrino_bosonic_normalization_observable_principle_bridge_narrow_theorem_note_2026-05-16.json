@@ -1,42 +1,88 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T05:10:50.256993+00:00",
+  "audit_invocation_history": [
+    "2e7afbb05c714614a460e536ef991e9c"
+  ],
+  "audit_invocation_id": "2e7afbb05c714614a460e536ef991e9c",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 37,
+        "B": 0,
+        "C": 0,
+        "D": 9
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true,
+      "runner_path": "scripts/audit_companion_dm_neutrino_bosonic_normalization_observable_principle_bridge_exact_2026_05_16.py"
+    },
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 2.585,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/audit_companion_dm_neutrino_bosonic_normalization_observable_principle_bridge_exact_2026_05_16.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "2b24e96fca5107b7661d1601820e8314d54524eca28d862560e062c58689d127",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "2b24e96fca5107b7661d1601820e8314d54524eca28d862560e062c58689d127",
+    "runner_path": "scripts/audit_companion_dm_neutrino_bosonic_normalization_observable_principle_bridge_exact_2026_05_16.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 2
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-fa31c7d9",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The source-level identities support the stated finite-dimensional ratio, but the restricted packet explicitly marks the load-bearing runner stdout as clipped. Complete execution evidence is therefore missing from the audit chain.",
   "claim_id": "dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16",
-  "claim_scope": null,
+  "claim_scope": "Finite-dimensional C^16 matrix algebra for the raw-to-Hermitian-completion Frobenius ratio of Y=P_R \u0393_1 P_L, with scalar-baseline determinant formulas audited only as diagnostics.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T05:10:50.256993+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 2,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 2.585,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Using anticommutation and involutivity, Y\u2020Y=P_L, so Tr(Y\u2020Y)=8 while Tr(\u0393_1\u2020\u0393_1)=16, giving the ratio 1/sqrt(2).",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "2a2667ab5e4d9309bfd1b1b1d63e1cda1a923bcc2672fd820fa09a9c429f4fa4",
   "note_path": "docs/DM_NEUTRINO_BOSONIC_NORMALIZATION_OBSERVABLE_PRINCIPLE_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "runner_artifact_issue: provide an unclipped, invocation-bound stdout block or complete cached certificate covering all 44 primary-runner checks, then re-audit.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1444,14 +1490,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 44,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 44
   },
   "runner_path": "scripts/audit_companion_dm_neutrino_bosonic_normalization_observable_principle_bridge_exact_2026_05_16.py",
   "title": "DM Neutrino Bosonic Normalization \u2014 Observable-Principle Bridge Narrow Theorem",
   "transitive_descendants": 2,
-  "verdict_rationale": null
+  "verdict_rationale": "The displayed matrix algebra is internally consistent: anticommutation gives the chiral interchange identities, Y\u2020Y=P_L, equal chiral ranks, and the stated trace ratio; the determinant diagnostics also follow algebraically. The runner source performs genuine exact-symbolic checks rather than merely printing constants. Nevertheless, the binding packet-completeness preflight identifies the supplied load-bearing stdout as clipped and forbids audited_clean until complete execution evidence is supplied."
 }

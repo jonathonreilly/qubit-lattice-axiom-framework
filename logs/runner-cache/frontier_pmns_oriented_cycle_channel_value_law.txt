@@ -1,58 +1,97 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_pmns_oriented_cycle_channel_value_law.py
-runner_sha256: 531e8147f7aa2e6e9c13b9f5ddf6b03ae7862a18e968627d815d5f748b7f79ec
-timeout_sec: 120
+runner_sha256: 1f20a838a2ca3f6afb6bc93c5e308f64514d1c0a099b22b62ef190b32d829f15
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.20
 status: ok
 ----- stdout -----
-========================================================================================
-PMNS ORIENTED CYCLE CHANNEL VALUE LAW
-========================================================================================
+== ORIENTED-CYCLE COORDINATE-EXTRACTION LEMMA
+Scope:
+  Exact finite matrix algebra for a supplied complex 3x3 block.
 
-Question:
-  Can the remaining positive carrier on the retained PMNS active class
-  be equipped with an exact axiom-native observable/value law?
+== PART 0: SOURCE SCOPE FIREWALL
+  [PASS] source note states scope phrase: **Claim type:** bounded_theorem
+  [PASS] source note states scope phrase: supplied complex `3 x 3` matrix `A`
+  [PASS] source note states scope phrase: The title, theorem, and runner do not interpret `c` as a physical observable
+  [PASS] source note states scope phrase: consistency-only
+  [PASS] source note states scope phrase: remaining `missing_bridge_theorem` is explicit
+  [PASS] source note states scope phrase: Record-compatible physical observable/readout map
+  [PASS] source note states scope phrase: framework construction identifying which matrix-valued block is `A`
+  [PASS] source note states scope phrase: separate state, parameter, or selector law fixing the numerical cycle
+  [PASS] source note states scope phrase: scripts/frontier_pmns_oriented_cycle_channel_value_law.py
+  [PASS] source note excludes stale overclaim: exact native observable/value law
+  [PASS] source note excludes stale overclaim: remaining positive carrier on the retained PMNS active class
+  [PASS] source note excludes stale overclaim: equips the oriented cycle channel with a native observable law
+  [PASS] source note excludes stale overclaim: same values are read from the lower-level active response profile
+  [PASS] runner excludes target-derived fixture helper: active_operator
+  [PASS] runner excludes target-derived fixture helper: sector_operator_fixture_from_effective_block
+  [PASS] runner excludes target-derived fixture helper: active_response_columns_from_sector_operator
+  [PASS] runner excludes target-derived fixture helper: derive_active_block_from_response_columns
+  [PASS] runner failure status is nonzero when failures exist
+  [PASS] runner success status is zero when no failures exist
+  [PASS] stable claim id is preserved
 
-========================================================================================
-PART 1: THE EXACT COORDINATE CYCLE PROJECTS TO THE FORWARD CYCLE OPERATOR
-========================================================================================
-  [PASS] The projected coordinate-cycle unitary equals the forward cycle C  (error=0.00e+00)
-  [PASS] Its adjoint is the backward cycle C^2
+== PART 1: SUPPLIED PROJECTED-CYCLE AND BASIS IDENTITIES
+  [PASS] The supplied triplet embedding is isometric
+  [PASS] The supplied 8x8 cycle representation is unitary
+  [PASS] The supplied 8x8 cycle representation has order three
+  [PASS] The supplied compression identity gives C  (error=0.00e+00)
+  [PASS] The projected coordinate projectors are E11,E22,E33
+  [PASS] The projected coordinate projectors are mutually orthogonal
+  [PASS] The projected coordinate projectors resolve I3
+  [PASS] P1 C = E12
+  [PASS] P2 C = E23
+  [PASS] P3 C = E31
+  [PASS] The ordered edge basis is Hilbert--Schmidt orthonormal
 
-========================================================================================
-PART 2: PROJECTED SCALAR PROJECTORS SUPPLY THE FORWARD-CYCLE EDGE BASIS
-========================================================================================
-  [PASS] The projected scalar site projectors are exactly E11, E22, E33
-  [PASS] Multiplying by the projected forward cycle gives E12
-  [PASS] Multiplying by the projected forward cycle gives E23
-  [PASS] Multiplying by the projected forward cycle gives E31
+== PART 2: GENERIC COMPLEX-MATRIX COORDINATE EXTRACTION
+  [PASS] all nine standard matrix units obey the coordinate and projection identities
+  [PASS] matrix 1: diag(A C^dagger) extracts A12,A23,A31  (error=0.00e+00)
+  [PASS] matrix 1: trace coordinates equal diag(A C^dagger)  (error=0.00e+00)
+  [PASS] matrix 1: basis reconstruction equals the explicit forward-cycle slots  (error=0.00e+00)
+  [PASS] matrix 1: reconstruction residual is orthogonal to the cycle basis  (error=0.00e+00)
+  [PASS] matrix 2: diag(A C^dagger) extracts A12,A23,A31  (error=0.00e+00)
+  [PASS] matrix 2: trace coordinates equal diag(A C^dagger)  (error=0.00e+00)
+  [PASS] matrix 2: basis reconstruction equals the explicit forward-cycle slots  (error=0.00e+00)
+  [PASS] matrix 2: reconstruction residual is orthogonal to the cycle basis  (error=0.00e+00)
+  [PASS] matrix 3: diag(A C^dagger) extracts A12,A23,A31  (error=0.00e+00)
+  [PASS] matrix 3: trace coordinates equal diag(A C^dagger)  (error=0.00e+00)
+  [PASS] matrix 3: basis reconstruction equals the explicit forward-cycle slots  (error=0.00e+00)
+  [PASS] matrix 3: reconstruction residual is orthogonal to the cycle basis  (error=0.00e+00)
+  [PASS] matrix 4: diag(A C^dagger) extracts A12,A23,A31  (error=0.00e+00)
+  [PASS] matrix 4: trace coordinates equal diag(A C^dagger)  (error=0.00e+00)
+  [PASS] matrix 4: basis reconstruction equals the explicit forward-cycle slots  (error=0.00e+00)
+  [PASS] matrix 4: reconstruction residual is orthogonal to the cycle basis  (error=0.00e+00)
+  [PASS] matrix 5: diag(A C^dagger) extracts A12,A23,A31  (error=0.00e+00)
+  [PASS] matrix 5: trace coordinates equal diag(A C^dagger)  (error=0.00e+00)
+  [PASS] matrix 5: basis reconstruction equals the explicit forward-cycle slots  (error=0.00e+00)
+  [PASS] matrix 5: reconstruction residual is orthogonal to the cycle basis  (error=0.00e+00)
 
-========================================================================================
-PART 3: EXACT VALUE LAW FOR ANY CANONICAL ACTIVE BLOCK
-========================================================================================
-  [PASS] The native coefficient law reads the three forward-cycle values exactly  (coeffs=[0.41    +0.j       0.28    +0.j       0.436335+0.318138j])
-  [PASS] The forward-cycle part rebuilds exactly from the native edge basis  (error=0.00e+00)
-  [PASS] The mean oriented-cycle amplitude matches the existing transport odd mode  (sigma=(0.37544495149618734+0.10604605642960852j))
+== PART 3: FORWARD-CYCLE PROJECTION IDENTITIES
+  [PASS] The forward-cycle projection is complex-linear
+  [PASS] The forward-cycle projection is idempotent
+  [PASS] The extracted coordinates reconstruct every basis vector
+  [PASS] A matrix with no E12,E23,E31 entries projects to zero
 
-========================================================================================
-PART 4: THE SAME VALUE LAW HOLDS ON THE ACTIVE RESPONSE PROFILE
-========================================================================================
-  [PASS] The lower-level active response profile recovers the same forward-cycle coefficients exactly  (coeffs=[0.41    -0.j       0.28    -0.j       0.436335+0.318138j])
+== PART 4: HOSTILE WRONG-CYCLE AND WRONG-BASIS CONTROLS
+  [PASS] Using the reverse cycle fails to extract the forward-cycle coordinates  (|delta|=4.666905)
+  [PASS] Using the reverse-edge basis fails to extract A12,A23,A31  (|delta|=4.666905)
+  [PASS] Keeping the coordinates but permuting the ordered basis breaks reconstruction  (|delta|=2.698148)
+  [PASS] The extractor rejects a matrix outside the stated 3x3 scope
 
-========================================================================================
-RESULT
-========================================================================================
-  Exact native oriented-cycle observable law:
-    - the projected coordinate cycle gives the forward cycle operator C
-    - projected scalar site projectors give the edge basis E12,E23,E31
-    - the forward-cycle values are exactly diag(A C^dagger)
-    - the same values are read from the lower-level active response profile
+== RESULT
+  Bounded algebraic oriented-cycle coordinate-extraction lemma:
+    - the supplied finite projection gives C and E12,E23,E31
+    - diag(A C^dagger) gives the exact coordinates for any supplied
+      complex 3x3 matrix A
+    - those coordinates reconstruct exactly the orthogonal forward-cycle
+      projection of A
 
-  This equips the remaining positive carrier with an exact native value law.
-  It still does not select those values from the sole axiom alone.
+  No physical carrier, Record readout, A-selection, or value-selection
+  bridge is supplied. Any response-fixture round trip is consistency-only.
 
-PASS=10 FAIL=0
+PASS=60 FAIL=0
 
 ----- stderr -----
 

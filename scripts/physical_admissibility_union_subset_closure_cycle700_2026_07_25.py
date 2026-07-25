@@ -126,6 +126,39 @@ def rule_A0(count: int) -> bool:
 RULES = {"A2plus": rule_A2plus, "A0": rule_A0}
 
 
+# --------------------------------------------------------------------------
+# the stronger witnesses: availability is NEVER empty
+# --------------------------------------------------------------------------
+# An objection to the rules above is that an empty available set is degenerate.
+# These two rules never produce one.  Their available sets are proper nonempty
+# subsets that shrink or grow with the neighbor conditions, exactly as the
+# axiom's "vary with" requires, and a configuration now records WHICH
+# possibility each record locked.  "c0" stands for a central element of the
+# one-site algebra and "c1" for a non-central one; nothing below depends on
+# which elements they are, only that there are at least two.
+
+CONTENTS = ("c0", "c1")
+
+
+def avail_shrink_on_crowding(count: int) -> tuple[str, ...]:
+    """Both possibilities available until two neighbors are occupied."""
+    return CONTENTS if count < 2 else ("c0",)
+
+
+def avail_grow_on_contact(count: int) -> tuple[str, ...]:
+    """Only the central possibility available when isolated."""
+    return CONTENTS if count > 0 else ("c0",)
+
+
+def admissible_typed(cfg: dict, avail) -> bool:
+    """Every record's locked content must lie in its available set."""
+    occ = frozenset(cfg)
+    return all(
+        content in avail(occupied_neighbour_count(site, occ))
+        for site, content in cfg.items()
+    )
+
+
 def admissible(cfg: frozenset[Vec], rule, every_site: bool) -> bool:
     """occupied-only semantics, or every-site semantics over the closed hull."""
     sites = closed_neighbourhood(cfg) if every_site else set(cfg)
@@ -289,6 +322,52 @@ def main() -> int:
             "admissible_configuration": sorted(W),
             "inadmissible_strict_subset": sorted(sub),
             "rule": "A0: available set empty exactly when no neighbor occupied",
+        },
+    )
+
+    # ------------------------------------------------------------------
+    # U2b / U3b  the same two failures with never-empty availability
+    # ------------------------------------------------------------------
+    # union: a record locked a non-central possibility, then gained neighbors
+    P1 = {(0, 0, 0): "c1"}
+    P2 = {(1, 0, 0): "c0", (-1, 0, 0): "c0"}
+    PU = {**P1, **P2}
+    union_typed = (
+        admissible_typed(P1, avail_shrink_on_crowding)
+        and admissible_typed(P2, avail_shrink_on_crowding)
+        and not admissible_typed(PU, avail_shrink_on_crowding)
+        and not (set(P1) & set(P2))
+    )
+    # subset: removing a neighbor withdraws the possibility already locked
+    Q = {(0, 0, 0): "c1", (1, 0, 0): "c0"}
+    Qsub = {(0, 0, 0): "c1"}
+    subset_typed = (
+        admissible_typed(Q, avail_grow_on_contact)
+        and not admissible_typed(Qsub, avail_grow_on_contact)
+        and set(Qsub) < set(Q)
+    )
+    never_empty = all(
+        len(avail_shrink_on_crowding(c)) > 0 and len(avail_grow_on_contact(c)) > 0
+        for c in range(7)
+    ) and all(
+        len(set(avail_shrink_on_crowding(c))) < len(CONTENTS)
+        or len(set(avail_grow_on_contact(c))) < len(CONTENTS)
+        for c in (0, 2)
+    )
+    check(
+        "U2b/U3b both closure failures persist under rules whose available set "
+        "is never empty: availability is a proper nonempty subset that varies "
+        "with the neighbor conditions, and a record's already-locked "
+        "possibility is withdrawn by joining or by splitting",
+        union_typed and subset_typed and never_empty,
+        {
+            "union_witness": {str(k): v for k, v in PU.items()},
+            "subset_witness": {str(k): v for k, v in Q.items()},
+            "availability_never_empty": never_empty,
+            "rules": [
+                "both available until 2 neighbors occupied, then central only",
+                "central only when isolated, both on contact",
+            ],
         },
     )
 

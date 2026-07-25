@@ -11,7 +11,7 @@ adopted, no reading of the axiom text is ratified, and **no rule exhibited here
 is claimed to be the framework's rule**.
 
 Runner: `scripts/physical_admissibility_union_subset_closure_cycle700_2026_07_25.py`
-(5 PASS / 0 FAIL, exit 0; exact integer and set arithmetic in every decisive
+(6 PASS / 0 FAIL, exit 0; exact integer and set arithmetic in every decisive
 row).
 
 ## The question
@@ -48,7 +48,8 @@ A0     : the available set is empty exactly when a site has no occupied
          nearest neighbor
 ```
 
-Both depend only on the nearest-neighbor conditions; the runner verifies each
+These two are the simplest witnesses; the stronger never-empty versions are in
+U2b/U3b below. Both depend only on the nearest-neighbor conditions; the runner verifies each
 is translation-covariant and proper-cubic-covariant on a `5^3` window against
 translations and rotations, and that each available set genuinely *varies* with
 the neighbor conditions, as the axiom requires. Neither is proposed as the
@@ -85,6 +86,34 @@ inadmissible, because the remaining record now has none.
 
 So for some legitimate instances of the axiom, a sub-collection of a readable
 configuration is not itself a readable configuration.
+
+## U2b / U3b — the same two failures with never-empty availability
+
+The obvious objection to `A2plus` and `A0` is that an empty available set is
+degenerate, so the witnesses might be strawmen. Both failures survive without
+one.
+
+Take availability to be a proper **nonempty** subset that varies with the
+neighbour conditions, and let a configuration record *which* possibility each
+record locked. Write `c0` for a central element of the one-site algebra and
+`c1` for a non-central one; nothing depends on which, only that there are at
+least two.
+
+**Union, with availability shrinking on crowding.** Available set is both
+possibilities until two neighbours are occupied, then `c0` only. Let
+`P1 = {(0,0,0) locks c1}` and `P2 = {(1,0,0) locks c0, (-1,0,0) locks c0}`.
+Each is admissible. In the union, `(0,0,0)` has two occupied neighbours, so `c1`
+is no longer available to it — a possibility that was already locked is
+withdrawn — and the union is inadmissible.
+
+**Sub-collection, with availability growing on contact.** Available set is `c0`
+only when isolated, both on contact. `Q = {(0,0,0) locks c1, (1,0,0) locks c0}`
+is admissible. Dropping the second record leaves `(0,0,0)` isolated, where `c1`
+is unavailable, so the strict subset is inadmissible.
+
+The runner verifies that neither rule ever returns an empty available set. So
+the closure failures are not an artefact of degenerate availability; they follow
+from availability varying at all, which the axiom requires.
 
 ## U4 — the exact separation, valid for every nearest-neighbor rule
 

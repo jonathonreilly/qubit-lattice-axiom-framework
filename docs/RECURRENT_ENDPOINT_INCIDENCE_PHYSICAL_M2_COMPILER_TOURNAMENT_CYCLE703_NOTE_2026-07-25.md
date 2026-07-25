@@ -192,6 +192,19 @@ repairs a hidden local decoder phase but leaves the 240-column CAR cocycle and
 the exact residuals reported above.  Its detailed boundary is recorded in
 [`ROUTE_A_ACTUAL_COMMON_E_COMPOSITION_NOTE_2026-07-25.md`](work_history/repo/review_feedback/ROUTE_A_ACTUAL_COMMON_E_COMPOSITION_NOTE_2026-07-25.md).
 
+A later direct escape asks whether the remaining sign can be absorbed into a
+static diagonal rephase of that same occupation register.  It cannot.  Since
+the stream `S` is an involution, every such coboundary obeys
+`delta_S f(n)=delta_S f(Sn)`, independently of the range or degree of `f`.
+The actual residual violates this on `4`, `22`, and `34` two-particle stream
+orbits in the adjacent, L, and square fixtures, and on `100` and `156` held
+orbits in `3x3` and cube fixtures.  One witness is reconstructed directly
+from the Cycle-330 grammar rather than from the predecessor residual helper.
+The full N1--N8 gate in
+[`CYCLE703_LOCAL_ENCODING_REPHASE_COHOMOLOGY_NOTE_2026-07-25.md`](work_history/repo/review_feedback/CYCLE703_LOCAL_ENCODING_REPHASE_COHOMOLOGY_NOTE_2026-07-25.md)
+limits this exact negative to same-register static diagonal rephasing;
+auxiliary-updated, two-frame, non-diagonal, and local-gauge routes remain live.
+
 ## Route B — sparse qutrit gauge and full128 refresh
 
 Runners:
@@ -392,6 +405,9 @@ Derived:
 - the target-extracted four-channel plaquette quotient, exact `H/K/P` closure
   through the `2x2` training fixture, and its held `3x3`/cube falsification
   with exhaustive local plaquette-subset controls;
+- the same-register diagonal-rephase involution obstruction, including an
+  independent Cycle-330 orbit witness, unrestricted per-patch quadratic
+  systems, bounded covariant basis routing, and a full N1--N8 scope audit;
 - held-size stability, constant overhead, mass preservation, and 24/576
   covariance;
 - exact retirement of the eleven-chart transition residual and active

@@ -1,24 +1,86 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T05:07:01.209320+00:00",
+  "audit_invocation_history": [
+    "c5cf0f1fcdaf40ba8524be62ab478b52"
+  ],
+  "audit_invocation_id": "c5cf0f1fcdaf40ba8524be62ab478b52",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 7,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/frontier_teleportation_taste_readout_operator_model.py"
+    },
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "teleportation_retained_axis_operator_algebra_closure_note": "Finite-grid algebraic closure of RALA(a) for dims 1,2,3, sides 2,4, all retained axes, including axis Pauli/Bell membership, native-Z and fixed-X membership conditions, base/fiber commutation, Pauli XOR composition, and ideal logical teleportation closure."
+    },
+    "dep_claim_type": {
+      "teleportation_retained_axis_operator_algebra_closure_note": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "teleportation_retained_axis_operator_algebra_closure_note": "retained_bounded"
+    },
+    "deps": [
+      "teleportation_retained_axis_operator_algebra_closure_note"
+    ],
+    "helper_runner_hashes": {
+      "scripts/teleportation_boundary_checks_2026_06_13.py": "095f958d84c2549e235defe174553aad674ee84086d2e00f2a0eed2cab6f0392"
+    },
+    "load_bearing_score": 2.585,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_teleportation_taste_readout_operator_model.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "69fde07391e2a34bfc1ddf75af625383056c416000557819bfec78e6644a48eb",
+        "cache_status": "ok"
+      },
+      "scripts/teleportation_boundary_checks_2026_06_13.py": {
+        "cache_exit_code": null,
+        "cache_freshness": "missing",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": null,
+        "cache_status": null
+      }
+    },
+    "runner_hash": "69fde07391e2a34bfc1ddf75af625383056c416000557819bfec78e6644a48eb",
+    "runner_path": "scripts/frontier_teleportation_taste_readout_operator_model.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 2
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-15572861",
+  "auditor_confidence": "medium",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The finite block calculation closes, but the cited load-bearing authority is clipped and the current runner exits before downstream boundary checks because the helper cannot find audit_ledger.json.",
   "claim_id": "teleportation_taste_readout_operator_model_note",
-  "claim_scope": null,
+  "claim_scope": "Finite KS cell/taste operator-factorization classification on even hypercubic grids, numerically audited for d=1,2,3 and L=2,4 with the last taste bit retained, including the d>1 native-parity negative boundary; physical apparatus and noise are excluded.",
   "claim_type": "open_gate",
   "claim_type_author_hint": "open_gate",
   "claim_type_author_hint_raw": "open_gate",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T05:07:01.209320+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,22 +88,27 @@
     "teleportation_retained_axis_operator_algebra_closure_note"
   ],
   "direct_in_degree": 2,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [
     "scripts/teleportation_boundary_checks_2026_06_13.py"
   ],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 2.585,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "For d>1, flipping a spectator taste bit changes sigma_s while retaining b, so Z_native has opposite +Z_logical and -Z_logical environment blocks and cannot factor as one O_logical tensor I_env.",
+  "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "derived_no_go_boundary"
+  ],
   "note_hash": "ab81171cd96c0ea3ebdabcdce9d73d1696a5aad6247c4ad7a9f4ce28340f3e2b",
   "note_path": "docs/TELEPORTATION_TASTE_READOUT_OPERATOR_MODEL_NOTE.md",
-  "notes_for_re_audit_if_any": null,
-  "open_dependency_paths": [],
+  "notes_for_re_audit_if_any": "runner_artifact_issue: regenerate the restricted packet with the cited closure note unabridged, include the audit-ledger and conclusion-boundary fixture required by the helper, and rerun the primary runner.",
+  "open_dependency_paths": [
+    "docs/TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md"
+  ],
   "previous_audits": [
     {
       "archived_at": "2026-05-04T12:32:51.254641+00:00",
@@ -1552,12 +1619,12 @@
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
-    "C": 0,
+    "C": 90,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 90
   },
   "runner_path": "scripts/frontier_teleportation_taste_readout_operator_model.py",
   "title": "Teleportation Taste Readout/Operator Model",
   "transitive_descendants": 2,
-  "verdict_rationale": null
+  "verdict_rationale": "The matrix construction and an independent block calculation support the finite classification: for d>1 the spectator-character average vanishes, giving relative residual 1 for Z_native, 1/sqrt(2) for the native Z+ and mixed Bell projectors, and sqrt(1-1/n_env) for fixed projectors. For the asserted derived negative boundary, N1's axis-adapted, apparatus-blind, tolerance-bounded, and heralded routes change the operator or protocol conditions; N2 has one spectator-sign mechanism; N3 finds no hidden premise needed by the identity; N4 matches the retained authority's residual; N5 is resolved per block and across the finite grid; N6 leaves physical implementation open; N7's heralding steelman narrows protocol scope; and N8 reveals no applicable contrary echo in the supplied evidence. However, the cited authority is packet-clipped, preventing full verification of the claimed RALA uniqueness/T1-T8 surface, and the current runner exits before its downstream boundary checks because the helper lacks audit_ledger.json. The result is therefore conditional on a complete authority packet and executable boundary fixture, rather than scientifically failed by the finite operator calculation."
 }

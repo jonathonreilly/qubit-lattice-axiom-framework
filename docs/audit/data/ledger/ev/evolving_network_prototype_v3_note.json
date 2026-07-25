@@ -1,44 +1,102 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T22:51:17.287599+00:00",
+  "audit_invocation_history": [
+    "55e05cf9700548eabb45b78ad18038a8"
+  ],
+  "audit_invocation_id": "55e05cf9700548eabb45b78ad18038a8",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 4
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true,
+      "runner_path": "scripts/evolving_network_prototype_v3.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {
+      "scripts/self_regulating_gap_3d.py": "2ac1ddbfdf4d9180eede9edc486190053eaea75e80cbc45c0783b930bd79e0e1"
+    },
+    "load_bearing_score": 2.822,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/evolving_network_prototype_v3.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "e774ce150769e9950a0d64d93245b643deab96fe709efdcd960d12014fa03636",
+        "cache_status": "ok"
+      },
+      "scripts/self_regulating_gap_3d.py": {
+        "cache_exit_code": null,
+        "cache_freshness": "missing",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": null,
+        "cache_status": null
+      }
+    },
+    "runner_hash": "e774ce150769e9950a0d64d93245b643deab96fe709efdcd960d12014fa03636",
+    "runner_path": "scripts/evolving_network_prototype_v3.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 4
+  },
+  "audit_status": "audited_failed",
+  "auditor": "codex-audit-batch-A-20260725-c82b5e24",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The runner supports undefined imposed purity and nonconvergence, but `spine_ok` checks only that protected node identifiers were not deleted; it does not verify surviving source-to-detector edge connectivity, and its fallback can select an unverified layer-wise node sequence. The claimed connectivity-preserving comparator therefore lacks its required observable check.",
   "claim_id": "evolving_network_prototype_v3_note",
-  "claim_scope": null,
+  "claim_scope": "Across the frozen six-seed sweeps at n_layers 20, 30, and 40 and d_min 0.10, 0.20, and 0.30, v3 claims a connectivity-preserving imposed backbone control while reporting finite imposed gaps, undefined imposed detector purity, and no convergence of the generated rule; no Gate B advantage is claimed.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_last_reviewed": "2026-07-25T22:51:17.287599+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 1,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_failed",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [
     "scripts/self_regulating_gap_3d.py"
   ],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_failed",
   "load_bearing_score": 2.822,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The imposed control now preserves the backbone corridor, with `spine_ok = 1.00` across the frozen sweep, although imposed detector purity remains `nan`.",
+  "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls",
+    "stretch_attempt_negative"
+  ],
   "note_hash": "5a05bf13750ee439902143539d11bbff887f6957e03b583259ef88911224e793",
   "note_path": "docs/EVOLVING_NETWORK_PROTOTYPE_V3_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Re-audit after `spine_ok` is replaced by an explicit surviving-edge source-to-detector path check and the control either matches the generated removal budget or narrows all same-budget language.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -152,5 +210,5 @@
   "runner_path": "scripts/evolving_network_prototype_v3.py",
   "title": "Evolving Network Prototype V3 Note",
   "transitive_descendants": 4,
-  "verdict_rationale": null
+  "verdict_rationale": "The code performs the finite sweep rather than printing expected constants, and its output supports `imposed_pur = nan` and `conv = 0`; however, `spine_ok` tests protected-node survival rather than source-to-detector connectivity, while the fallback spine is not edge-validated and the reported removal budgets are materially unequal. N1/N7 provide no executed alternative-route steelman; N2 leaves connectivity verification and comparator-budget matching as distinct unresolved walls; N3/N5 show explicit negative rhetoric rather than a hidden premise; and N4 supplies no prior residual witness. N6's supplied premises and indexed reframes do not repair these runner-local defects, and N8's cross-cycle candidates cannot replace current execution evidence. The narrower negative observations remain supported, but the asserted control discipline does not close on its own terms."
 }

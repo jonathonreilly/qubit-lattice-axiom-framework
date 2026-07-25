@@ -63,18 +63,27 @@ PASS = 0
 FAIL = 0
 
 
-def check(label: str, ok: bool, detail: str = "") -> None:
+def check(label: str, ok: bool, detail: str = "", fail_detail: str = "") -> None:
+    """Emit exactly one line per check.
+
+    Rendered stdout is cached verbatim into the audit packet, which enforces a
+    6000-character budget, so `detail` carries only content that appears
+    nowhere else on the line. `fail_detail` holds diagnostic text that merely
+    restates what the label already asserts: it is printed only on FAIL, where
+    the extra context is needed and the budget no longer binds.
+    """
     global PASS, FAIL
     if ok:
         PASS += 1
     else:
         FAIL += 1
     tag = "PASS (A)" if ok else "FAIL (A)"
-    print(f"  [{tag}] {label}  ({detail})")
+    shown = detail if ok else "; ".join(part for part in (detail, fail_detail) if part)
+    print(f"  [{tag}] {label}  ({shown})" if shown else f"  [{tag}] {label}")
 
 
 def section(title: str) -> None:
-    print("\n" + "-" * 88 + f"\n{title}\n" + "-" * 88)
+    print(f"\n-- {title}")
 
 
 # =============================================================================
@@ -326,7 +335,7 @@ check(
         missing_dimension_mutant[key] == d_su3(1, 0) * fundamental_example[key]
         for key in fundamental_example
     ),
-    detail="mutant gives Tr D_(1,0)(V), exactly three times the required contraction",
+    fail_detail="mutant gives Tr D_(1,0)(V), exactly three times the required contraction",
 )
 
 
@@ -380,7 +389,7 @@ dimension_cancellation_ok = all(
 check(
     "(T2) d_lambda in Z cancels 1/d_mu and gives the exact 25 x 25 identity",
     dimension_cancellation_ok,
-    detail="dimension-weighted raw convolution matrix assembled before rho",
+    fail_detail="dimension-weighted raw convolution matrix assembled before rho",
 )
 
 
@@ -448,7 +457,8 @@ n_diff = sum(1 for i in range(len(B_N)) if rho1[i] != rho2[i])
 check(
     "(T3) Two distinct coefficient sequences rho^(1) != rho^(2) differ in exactly the perturbed entries",
     n_diff == 2 and rho1[INDEX[(2, 1)]] != rho2[INDEX[(2, 1)]],
-    detail=f"entries differing = {n_diff} (one symmetric pair perturbed: (2,1) and (1,2))",
+    detail=f"entries differing = {n_diff}",
+    fail_detail="one symmetric pair perturbed: (2,1) and (1,2)",
 )
 
 # Verify the corresponding diagonal operators agree on every basis weight EXCEPT
@@ -467,7 +477,7 @@ for i, (p, q) in enumerate(B_N):
 check(
     "(T3) Diagonal operators agree on every (p,q) except the perturbed pair",
     agree_ok,
-    detail="all unaltered eigenvalues are identical between R^(1) and R^(2)",
+    fail_detail="all unaltered eigenvalues are identical between R^(1) and R^(2)",
 )
 check(
     "(T3) Diagonal operators disagree on exactly the perturbed pair (2,1) and (1,2)",
@@ -540,7 +550,7 @@ for target in B_N:
 check(
     "concrete trivial instance: rho = (1, 0, ..., 0) gives projection onto chi_(0,0)",
     ok_trivial,
-    detail="C_{Z/Z_(0,0)} chi_(p,q) = 1 if (p,q)=(0,0) else 0",
+    fail_detail="C_{Z/Z_(0,0)} chi_(p,q) = 1 if (p,q)=(0,0) else 0",
 )
 
 
@@ -801,55 +811,52 @@ check(
 # =============================================================================
 section("Narrow theorem summary")
 # =============================================================================
-print("""
-  Narrow B_4 theorem statement:
+print("""HYPOTHESIS:
+  Fix N = 4 with B_4 = {(p, q) : 0 <= p, q <= 4}.
+  Let (rho_(p,q))_(p,q in B_4) be an abstract real sequence with:
+    rho_(p,q) >= 0,
+    rho_(p,q) = rho_(q,p),
+    rho_(0,0) = 1.
+  Define
+    R chi_(p,q) = rho_(p,q) chi_(p,q),
+    Z(W)       = sum_(p,q in B_4) d_(p,q) rho_(p,q) chi_(p,q)(W),
+    Z_(0,0)    = d_(0,0) rho_(0,0) = 1,
+    C_{Z/Z_(0,0)} f (V) = int_{SU(3)} (Z(V W^{-1}) / Z_(0,0)) f(W) dW,
+    with normalized Haar probability measure dW.
 
-  HYPOTHESIS:
-    Fix N = 4 with B_4 = {(p, q) : 0 <= p, q <= 4}.
-    Let (rho_(p,q))_(p,q in B_4) be an abstract real sequence with:
-      rho_(p,q) >= 0,
-      rho_(p,q) = rho_(q,p),
-      rho_(0,0) = 1.
-    Define
-      R chi_(p,q) = rho_(p,q) chi_(p,q),
-      Z(W)       = sum_(p,q in B_4) d_(p,q) rho_(p,q) chi_(p,q)(W),
-      Z_(0,0)    = d_(0,0) rho_(0,0) = 1,
-      C_{Z/Z_(0,0)} f (V) = int_{SU(3)} (Z(V W^{-1}) / Z_(0,0)) f(W) dW,
-      with normalized Haar probability measure dW.
+CONCLUSION:
+  (T1)  Schur character orthogonality on B_4:
+            <chi_(p,q), chi_(p',q')>_Haar
+               = int_{SU(3)} chi_(p,q)(W) conj(chi_(p',q')(W)) dW
+               = delta_((p,q),(p',q')).
 
-  CONCLUSION:
-    (T1)  Schur character orthogonality on B_4:
-              <chi_(p,q), chi_(p',q')>_Haar
-                 = int_{SU(3)} chi_(p,q)(W) conj(chi_(p',q')(W)) dW
-                 = delta_((p,q),(p',q')).
+  (T2)  Diagonal-action identity:
+            C_{Z/Z_(0,0)} chi_(p,q) = rho_(p,q) chi_(p,q)  on V_4.
 
-    (T2)  Diagonal-action identity:
-              C_{Z/Z_(0,0)} chi_(p,q) = rho_(p,q) chi_(p,q)  on V_4.
+  (T3)  Coefficient uniqueness:
+            R^(1) = R^(2)  iff  rho^(1) = rho^(2) on B_4.
 
-    (T3)  Coefficient uniqueness:
-              R^(1) = R^(2)  iff  rho^(1) = rho^(2) on B_4.
+  (T4)  R is positive, self-adjoint (in the Schur-orthonormal character basis),
+        and commutes with the conjugation swap (p,q) <-> (q,p).
 
-    (T4)  R is positive, self-adjoint (in the Schur-orthonormal character basis),
-          and commutes with the conjugation swap (p,q) <-> (q,p).
+INPUT AND AUTHORITY SURFACE:
+  The complete input is the finite B_4 SU(3) character basis, normalized
+  Haar probability measure, an abstract real nonnegative swap-symmetric
+  sequence with rho_(0,0) = 1, and standard compact-group representation
+  algebra.
 
-  INPUT AND AUTHORITY SURFACE:
-    The complete input is the finite B_4 SU(3) character basis, normalized
-    Haar probability measure, an abstract real nonnegative swap-symmetric
-    sequence with rho_(0,0) = 1, and standard compact-group representation
-    algebra.
+OUTPUT SURFACE:
+  T1 Schur orthogonality; T2 equality of normalized convolution and diagonal
+  action on V_4; T3 coefficient uniqueness; T4 positivity,
+  self-adjointness, and swap symmetry.
 
-  OUTPUT SURFACE:
-    T1 Schur orthogonality; T2 equality of normalized convolution and diagonal
-    action on V_4; T3 coefficient uniqueness; T4 positivity,
-    self-adjointness, and swap symmetry.
-
-  PARENT PROGRAM DIVISION OF LABOR:
-    A physical Wilson-environment coefficient result supplies the sequence
-    with its own source authority. This theorem supplies the algebraic
-    convolution/diagonal equivalence after that typed input is present.
+PARENT PROGRAM DIVISION OF LABOR:
+  A physical Wilson-environment coefficient result supplies the sequence
+  with its own source authority. This theorem supplies the algebraic
+  convolution/diagonal equivalence after that typed input is present.
 """)
 
 
-print(f"\n{'='*88}\n  TOTAL: PASS={PASS}, FAIL={FAIL}\n{'='*88}")
+print(f"\n  TOTAL: PASS={PASS}, FAIL={FAIL}")
 print(f"PASS={PASS} FAIL={FAIL}")
 sys.exit(1 if FAIL > 0 else 0)

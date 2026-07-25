@@ -1,53 +1,41 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_su3_character_diagonal_convolution_equivalence_narrow.py
-runner_sha256: cb80613c581f7a42c446bc3a0670dac14dd7ca2fa5fb70d7de6febdd0ccf4890
+runner_sha256: 3c1d6dbe572cba6d74d9d5dcc11834aa0e84122a7322af384d7b80738976d9ad
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 9.22
+elapsed_sec: 14.67
 status: ok
 ----- stdout -----
 
-----------------------------------------------------------------------------------------
-Part 1 (T1): Schur orthogonality on the finite B_4 truncation
-----------------------------------------------------------------------------------------
+-- Part 1 (T1): Schur orthogonality on the finite B_4 truncation
   Using N_GRID = 80 for Weyl integration; matrix size 25 x 25
   [PASS (A)] Schur orthogonality off-diagonal: <chi_(p,q), chi_(p',q')> = 0 for (p,q) != (p',q') on test pairs  (off-diag pairs=72, ok=72, max err=6.805e-16)
   [PASS (A)] Schur orthogonality diagonal: <chi_(p,q), chi_(p,q)> = 1 on test weights  (diag weights=9, ok=9, max abs deviation=1.199e-14)
 
-----------------------------------------------------------------------------------------
-Part 2 (T2): exact matrix-index contraction for character convolution
-----------------------------------------------------------------------------------------
+-- Part 2 (T2): exact matrix-index contraction for character convolution
   [PASS (A)] (T2) a generic fundamental/antifundamental matrix-element contraction is zero  (mechanically checked all 27 (a,b,c) coefficients)
   [PASS (A)] (T2) a generic same-fundamental contraction is Tr D_(1,0)(V) / 3  (symbolic polynomial={(0, 0): Fraction(1, 3), (1, 1): Fraction(1, 3), (2, 2): Fraction(1, 3)})
   [PASS (A)] (T2) raw matrix-element contraction vanishes for every unequal B_4 irrep pair  (checked 600 inequivalent pairs before applying rho)
   [PASS (A)] (T2) raw same-irrep contraction equals Tr D_mu(V) / d_mu throughout B_4  (checked all 25 dimensions, from 1 through 125)
-  [PASS (A)] hostile control rejects a missing 1/d_mu factor  (mutant gives Tr D_(1,0)(V), exactly three times the required contraction)
-  [PASS (A)] (T2) d_lambda in Z cancels 1/d_mu and gives the exact 25 x 25 identity  (dimension-weighted raw convolution matrix assembled before rho)
+  [PASS (A)] hostile control rejects a missing 1/d_mu factor
+  [PASS (A)] (T2) d_lambda in Z cancels 1/d_mu and gives the exact 25 x 25 identity
   [PASS (A)] (T2) For abstract rational positive-symmetric (rho_(p,q)): the contracted finite sum gives C_{Z/Z_(0,0)} chi_(p,q) = rho_(p,q) chi_(p,q) for every (p,q) in B_4  (all 25 weights in B_4 pass exact matrix-polynomial comparison)
 
-----------------------------------------------------------------------------------------
-Part 3 (T3): uniqueness of (rho_(p,q)) for the diagonal operator R
-----------------------------------------------------------------------------------------
-  [PASS (A)] (T3) Two distinct coefficient sequences rho^(1) != rho^(2) differ in exactly the perturbed entries  (entries differing = 2 (one symmetric pair perturbed: (2,1) and (1,2)))
-  [PASS (A)] (T3) Diagonal operators agree on every (p,q) except the perturbed pair  (all unaltered eigenvalues are identical between R^(1) and R^(2))
+-- Part 3 (T3): uniqueness of (rho_(p,q)) for the diagonal operator R
+  [PASS (A)] (T3) Two distinct coefficient sequences rho^(1) != rho^(2) differ in exactly the perturbed entries  (entries differing = 2)
+  [PASS (A)] (T3) Diagonal operators agree on every (p,q) except the perturbed pair
   [PASS (A)] (T3) Diagonal operators disagree on exactly the perturbed pair (2,1) and (1,2)  (R^(1)[(2,1)] = 0.07692307692307693, R^(2)[(2,1)] = 0.08333333333333333)
 
-----------------------------------------------------------------------------------------
-Part 4 (T4): positivity, self-adjointness, conjugation-symmetry of R
-----------------------------------------------------------------------------------------
+-- Part 4 (T4): positivity, self-adjointness, conjugation-symmetry of R
   [PASS (A)] (T4) R is positive: rho_(p,q) >= 0 on every weight in B_4  (min rho = 0.00125 >= 0)
   [PASS (A)] (T4) R is self-adjoint (diagonal with real entries)  (||R - R^T||_inf = 0.000e+00)
   [PASS (A)] (T4) R commutes with the conjugation swap (p,q) <-> (q,p)  (||[swap, R]||_inf = 0.000e+00)
   [PASS (A)] (T2) Trivial-channel normalization: rho_(0,0) = 1 exactly  (|rho_(0,0) - 1| = 0.000e+00)
 
-----------------------------------------------------------------------------------------
-Part 5: concrete instance — trivial coefficient sequence collapses to projection
-----------------------------------------------------------------------------------------
-  [PASS (A)] concrete trivial instance: rho = (1, 0, ..., 0) gives projection onto chi_(0,0)  (C_{Z/Z_(0,0)} chi_(p,q) = 1 if (p,q)=(0,0) else 0)
+-- Part 5: concrete instance — trivial coefficient sequence collapses to projection
+  [PASS (A)] concrete trivial instance: rho = (1, 0, ..., 0) gives projection onto chi_(0,0)
 
-----------------------------------------------------------------------------------------
-Part 6: independent deterministic Haar-SU(3) convolution check
-----------------------------------------------------------------------------------------
+-- Part 6: independent deterministic Haar-SU(3) convolution check
   [PASS (A)] explicit low-irrep character formulas reproduce their dimensions at the identity  (dimensions=[1, 3, 3, 8, 6, 6, 10, 10])
   [PASS (A)] explicit character formulas agree with the independent Weyl formula on hostile torus points  (max formula disagreement=1.708e-15)
   [PASS (A)] deterministic Ginibre-QR samples lie in SU(3)  (max unitary err=1.443e-15, max det err=1.342e-15)
@@ -56,60 +44,53 @@ Part 6: independent deterministic Haar-SU(3) convolution check
   [PASS (A)] hostile control rejects conjugating the target character chi_mu(W)  (mutant is 25.5 sigma from the claimed fundamental action and tracks the antifundamental)
   [PASS (A)] hostile control rejects a convolution helper that merely returns rho_target  (lookup-only value=0.400000, Haar estimate=0.903981+0.039124j, separation=27.2 sigma)
 
-----------------------------------------------------------------------------------------
-Narrow theorem summary
-----------------------------------------------------------------------------------------
+-- Narrow theorem summary
+HYPOTHESIS:
+  Fix N = 4 with B_4 = {(p, q) : 0 <= p, q <= 4}.
+  Let (rho_(p,q))_(p,q in B_4) be an abstract real sequence with:
+    rho_(p,q) >= 0,
+    rho_(p,q) = rho_(q,p),
+    rho_(0,0) = 1.
+  Define
+    R chi_(p,q) = rho_(p,q) chi_(p,q),
+    Z(W)       = sum_(p,q in B_4) d_(p,q) rho_(p,q) chi_(p,q)(W),
+    Z_(0,0)    = d_(0,0) rho_(0,0) = 1,
+    C_{Z/Z_(0,0)} f (V) = int_{SU(3)} (Z(V W^{-1}) / Z_(0,0)) f(W) dW,
+    with normalized Haar probability measure dW.
 
-  Narrow B_4 theorem statement:
+CONCLUSION:
+  (T1)  Schur character orthogonality on B_4:
+            <chi_(p,q), chi_(p',q')>_Haar
+               = int_{SU(3)} chi_(p,q)(W) conj(chi_(p',q')(W)) dW
+               = delta_((p,q),(p',q')).
 
-  HYPOTHESIS:
-    Fix N = 4 with B_4 = {(p, q) : 0 <= p, q <= 4}.
-    Let (rho_(p,q))_(p,q in B_4) be an abstract real sequence with:
-      rho_(p,q) >= 0,
-      rho_(p,q) = rho_(q,p),
-      rho_(0,0) = 1.
-    Define
-      R chi_(p,q) = rho_(p,q) chi_(p,q),
-      Z(W)       = sum_(p,q in B_4) d_(p,q) rho_(p,q) chi_(p,q)(W),
-      Z_(0,0)    = d_(0,0) rho_(0,0) = 1,
-      C_{Z/Z_(0,0)} f (V) = int_{SU(3)} (Z(V W^{-1}) / Z_(0,0)) f(W) dW,
-      with normalized Haar probability measure dW.
+  (T2)  Diagonal-action identity:
+            C_{Z/Z_(0,0)} chi_(p,q) = rho_(p,q) chi_(p,q)  on V_4.
 
-  CONCLUSION:
-    (T1)  Schur character orthogonality on B_4:
-              <chi_(p,q), chi_(p',q')>_Haar
-                 = int_{SU(3)} chi_(p,q)(W) conj(chi_(p',q')(W)) dW
-                 = delta_((p,q),(p',q')).
+  (T3)  Coefficient uniqueness:
+            R^(1) = R^(2)  iff  rho^(1) = rho^(2) on B_4.
 
-    (T2)  Diagonal-action identity:
-              C_{Z/Z_(0,0)} chi_(p,q) = rho_(p,q) chi_(p,q)  on V_4.
+  (T4)  R is positive, self-adjoint (in the Schur-orthonormal character basis),
+        and commutes with the conjugation swap (p,q) <-> (q,p).
 
-    (T3)  Coefficient uniqueness:
-              R^(1) = R^(2)  iff  rho^(1) = rho^(2) on B_4.
+INPUT AND AUTHORITY SURFACE:
+  The complete input is the finite B_4 SU(3) character basis, normalized
+  Haar probability measure, an abstract real nonnegative swap-symmetric
+  sequence with rho_(0,0) = 1, and standard compact-group representation
+  algebra.
 
-    (T4)  R is positive, self-adjoint (in the Schur-orthonormal character basis),
-          and commutes with the conjugation swap (p,q) <-> (q,p).
+OUTPUT SURFACE:
+  T1 Schur orthogonality; T2 equality of normalized convolution and diagonal
+  action on V_4; T3 coefficient uniqueness; T4 positivity,
+  self-adjointness, and swap symmetry.
 
-  INPUT AND AUTHORITY SURFACE:
-    The complete input is the finite B_4 SU(3) character basis, normalized
-    Haar probability measure, an abstract real nonnegative swap-symmetric
-    sequence with rho_(0,0) = 1, and standard compact-group representation
-    algebra.
-
-  OUTPUT SURFACE:
-    T1 Schur orthogonality; T2 equality of normalized convolution and diagonal
-    action on V_4; T3 coefficient uniqueness; T4 positivity,
-    self-adjointness, and swap symmetry.
-
-  PARENT PROGRAM DIVISION OF LABOR:
-    A physical Wilson-environment coefficient result supplies the sequence
-    with its own source authority. This theorem supplies the algebraic
-    convolution/diagonal equivalence after that typed input is present.
+PARENT PROGRAM DIVISION OF LABOR:
+  A physical Wilson-environment coefficient result supplies the sequence
+  with its own source authority. This theorem supplies the algebraic
+  convolution/diagonal equivalence after that typed input is present.
 
 
-========================================================================================
   TOTAL: PASS=24, FAIL=0
-========================================================================================
 PASS=24 FAIL=0
 
 ----- stderr -----

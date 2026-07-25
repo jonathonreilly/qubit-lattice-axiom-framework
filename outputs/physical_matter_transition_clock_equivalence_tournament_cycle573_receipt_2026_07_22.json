@@ -3,8 +3,8 @@
   "audit": "unset",
   "authority": "none",
   "branch_head_equality_is_scientific_dependency": false,
-  "cold_internal_elapsed_seconds": 0.15873850003117695,
-  "cold_maximum_RSS_bytes": 75563008,
+  "cold_internal_elapsed_seconds": 0.17202837497461587,
+  "cold_maximum_RSS_bytes": 75464704,
   "controls": {
     "E_G_and_inverse_tested": true,
     "constant_bounded_overhead_on_declared_code": true,
@@ -18,7 +18,7 @@
     "transition_receipt_called_Record_or_actuality": false,
     "undefined_coerced_to_zero": false
   },
-  "definitive_run_descendant_HEAD": "5d609e37eacb9790ca741c4914ad2bbc3f2d86c7",
+  "definitive_run_descendant_HEAD": "7cfacf9ac082829debd3ff0d26d8ac6d625d8a54",
   "exact_pinned_dependencies": {
     "Cycle219_runner_sha256": "ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a",
     "Cycle230_runner_sha256": "b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae",
@@ -72,7 +72,7 @@
     "route_specific_failure_promoted_to_shared_obstruction": false,
     "shared_substrate_obstruction": false
   },
-  "note_sha256": "7c27ee648c4865985c7286ebb8c332f6c91846cebb608aafab79222b4e2ef1b5",
+  "note_sha256": "fb5eeabcdf7b76fd2c55737e5f0c87bcb557ddd4ec5f03569989ab8aae4d4de2",
   "optimal_next_campaign": "derive or falsify autonomous localized/refocused transport of the scalar-even transition under the accepted free-plus-contact stream, then compare it against a dynamically independent face-carrier or field standard under source variation while keeping the recyclable work rail blank",
   "pass": true,
   "retained_physical_fixtures": {
@@ -127,7 +127,7 @@
     "total_active_M2": 48,
     "two_word_retained_ledger_M2": 32
   },
-  "runner_sha256": "e959fa0ef29787b6eaca0fa0552ad3e921541432e11cdefffda7e9255472ff77",
+  "runner_sha256": "a9786cf68a9c669e7e7fe310a00ab9912aa404689651682ccfe3045a06e357f1",
   "scope_boundary": {
     "Born_probability_closed": false,
     "FORMATION_Record_actuality_closed": false,

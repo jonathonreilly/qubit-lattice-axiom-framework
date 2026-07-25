@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Adversarial physical-M2 audit of the Cycle-659 edge-sign translator.
+"""Adversarial physical-M2 audit of the campaign edge-sign translator.
 
-The corrected Cycle-659 candidate classifies AB/BA branch signs from Pauli
+The corrected campaign candidate classifies AB/BA branch signs from Pauli
 *preparation labels* with x_e(1-t_u)(1-t_v), and explicitly leaves a physical
 matrix-unit synthesis open.  This runner tests that open tensor-factor route:
 can one unitary on the outer-edge M2 and its two endpoint-tag M2s perform the

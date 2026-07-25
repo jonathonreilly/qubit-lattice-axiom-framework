@@ -1,44 +1,165 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
-  "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "audit_date": "2026-07-25T19:03:02.523174+00:00",
+  "audit_invocation_history": [
+    "3f616c6d19b84b36b697e890ab4532fc",
+    "b76ad75574cf4fb99efa5ac4ae666a80"
+  ],
+  "audit_invocation_id": "b76ad75574cf4fb99efa5ac4ae666a80",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true,
+      "runner_path": "scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py"
+    },
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {
+      "scripts/cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.py": "e5350cc6e8f15bf4e0fae2782d0ea78a13330ea1b9732c666fa62bb3a5625f4f"
+    },
+    "load_bearing_score": 17.789,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "7da6a714975f1359e68e989f5b97def6e439da1e313fa368b92e55efed42c2f9",
+        "cache_status": "ok"
+      },
+      "scripts/cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "e5350cc6e8f15bf4e0fae2782d0ea78a13330ea1b9732c666fa62bb3a5625f4f",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "7da6a714975f1359e68e989f5b97def6e439da1e313fa368b92e55efed42c2f9",
+    "runner_path": "scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 1768
+  },
+  "audit_status": "audit_in_progress",
+  "auditor": "codex-audit-batch-A-20260725-89a87f98",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": "cross_confirmation_disagreement",
+  "chain_closes": false,
+  "chain_closure_explanation": "The restricted packet clips both the primary runner stdout and a load-bearing span of its source, so the complete multiplication, center, ideal, and module-classification certificate cannot be independently matched to executable checks.",
   "claim_id": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
-  "claim_scope": null,
+  "claim_scope": "The finite-dimensional complex representation theory of Cl(3,0), including its complexification into two M_2(C) summands, its two irreducible two-dimensional complex representations, their real-algebra faithfulness, finite-module decomposition, and the conditional unitary refinement.",
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint_after_invalidation",
+  "claim_type_last_reviewed": "2026-07-25T19:03:02.523174+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "critical",
-  "cross_confirmation": null,
+  "cross_confirmation": {
+    "first_audit": {
+      "audit_date": "2026-07-25T19:03:02.523174+00:00",
+      "audit_invocation_id": "3f616c6d19b84b36b697e890ab4532fc",
+      "auditor": "codex-audit-batch-A-20260725-89a87f98",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "chain_closes": false,
+      "chain_closure_explanation": "The restricted packet clips both the primary runner stdout and a load-bearing span of its source, so the complete multiplication, center, ideal, and module-classification certificate cannot be independently matched to executable checks.",
+      "claim_scope": "The finite-dimensional complex representation theory of Cl(3,0), including its complexification into two M_2(C) summands, its two irreducible two-dimensional complex representations, their real-algebra faithfulness, finite-module decomposition, and the conditional unitary refinement.",
+      "claim_type": "positive_theorem",
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The abstract matrix-unit relations identify each central ideal A_s with M_2(C), after which the central-idempotent decomposition yields exactly two irreducible complex module classes.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "notes_for_re_audit_if_any": "runner_artifact_issue: regenerate the restricted packet with the complete primary-runner source and unabridged normal and independent stdout, then re-audit every displayed identity against the executable checks.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 51,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 51
+      },
+      "verdict": "audited_failed",
+      "verdict_rationale": "The algebraic argument is plausible and the visible runner tail reports 51 class-(A) passes, but the restricted packet clips both the beginning of stdout and a load-bearing span of runner source. The omitted certificate is target-equivalent to the classification conclusion because the split, simplicity, kernels, module exhaustiveness, and conditional unitary refinement all depend on those exact checks; therefore the chain cannot be certified from this packet. Separately, the note asserts derived no-go boundaries: no irreducible complexified A-module is faithful, and bare complex-linear equivalence does not imply unitary equivalence."
+    },
+    "mode": "terminal_second_pass",
+    "second_audit": {
+      "audit_date": "2026-07-25T19:03:02.538109+00:00",
+      "audit_invocation_id": "b76ad75574cf4fb99efa5ac4ae666a80",
+      "auditor": "codex-audit-batch-B-20260725-6a8c093a",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "chain_closes": false,
+      "chain_closure_explanation": "The source presents a self-contained algebraic argument, but the packet clips the primary runner stdout and source across load-bearing checks. The complete exact certificate and hostile-control coverage therefore cannot be independently verified from the restricted evidence.",
+      "claim_scope": "The direct-sum decomposition of complexified Cl(3,0), its two dimension-two irreducible complex modules, real-restriction faithfulness, complexified kernels, and the Hermitian conditional unitary refinement.",
+      "claim_type": "positive_theorem",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The four elements in (12) have rank four in the canonical basis and span A_s; therefore sending E_ab^(s) to the standard matrix units defines a unital algebra isomorphism A_s -> M_2(C).",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "notes_for_re_audit_if_any": "runner_artifact_issue: supply the complete unclipped current-cycle primary runner stdout and full primary runner source, then rerun the restricted audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 51,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 51
+      },
+      "verdict": "audited_conditional",
+      "verdict_rationale": "The note gives a self-contained algebraic route from the Clifford relations to the central-idempotent split and matrix-unit isomorphisms, and the visible runner tail reports 51 class-(A) passes. However, the restricted packet expressly clips both the current-cycle stdout and the primary runner source across load-bearing checks, so audited_clean is unavailable. The note also asserts derived negative boundaries: no faithful irreducible complexified A-module and no upgrade from bare complex-linear to unitary equivalence without Hermitian generators, supported in the prose by explicit kernel and non-Hermitian-similarity witnesses. These are preserved as derived_no_go_boundary, while the optional structured N1-N8 packet is omitted for this development-tier non-no-go conditional verdict."
+    },
+    "status": "disagreement"
+  },
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 14,
-  "effective_status": "unaudited",
+  "effective_status": "audit_in_progress",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
     "scripts/cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.py"
   ],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audit_in_progress",
   "load_bearing_score": 17.789,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The abstract matrix-unit relations identify each central ideal A_s with M_2(C), after which the central-idempotent decomposition yields exactly two irreducible complex module classes.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "derived_no_go_boundary"
+  ],
   "note_hash": "f12d3279b34fb9df0f34cf678aaed362fca76d666a4aa4aad6e1fb39d064fb26",
   "note_path": "docs/CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "runner_artifact_issue: regenerate the restricted packet with the complete primary-runner source and unabridged normal and independent stdout, then re-audit every displayed identity against the executable checks.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1641,14 +1762,14 @@
     }
   ],
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 51,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 51
   },
   "runner_path": "scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py",
   "title": "Cl(3) Pauli Irrep Uniqueness Narrow Theorem",
   "transitive_descendants": 1768,
-  "verdict_rationale": null
+  "verdict_rationale": "The algebraic argument is plausible and the visible runner tail reports 51 class-(A) passes, but the restricted packet clips both the beginning of stdout and a load-bearing span of runner source. The omitted certificate is target-equivalent to the classification conclusion because the split, simplicity, kernels, module exhaustiveness, and conditional unitary refinement all depend on those exact checks; therefore the chain cannot be certified from this packet. Separately, the note asserts derived no-go boundaries: no irreducible complexified A-module is faithful, and bare complex-linear equivalence does not imply unitary equivalence."
 }

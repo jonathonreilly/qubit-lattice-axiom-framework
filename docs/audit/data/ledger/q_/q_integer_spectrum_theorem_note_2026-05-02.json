@@ -1,24 +1,47 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T09:23:16.757186+00:00",
+  "audit_invocation_history": [
+    "fb014cb739a34b7688f1bbe5c11037d3"
+  ],
+  "audit_invocation_id": "fb014cb739a34b7688f1bbe5c11037d3",
+  "audit_state_snapshot": {
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {
+      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    },
+    "dep_claim_scope": {
+      "minimal_axioms": null
+    },
+    "dep_claim_type": {
+      "minimal_axioms": "meta"
+    },
+    "dep_effective_status": {
+      "minimal_axioms": "meta"
+    },
+    "deps": [
+      "minimal_axioms"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 7.055,
+    "runner_hash": "92f46b04b8308cb92dcc54c831b0a48df977dea1f97581842e1785756702ebf6",
+    "transitive_descendants": 46
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-audit-batch-A-20260725-0b0788df",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The accepted Qubit premise supplies each local algebra M_2(C); rank-one projection theory and tensor-factor commutativity then give a tensor-product eigenbasis indexed by binary strings. Their Hamming weights yield the stated spectrum and binomial multiplicities, while summing n_x=(I\u2212\u03c3_{3,x})/2 yields the Pauli-coordinate formula.",
   "claim_id": "q_integer_spectrum_theorem_note_2026-05-02",
-  "claim_scope": null,
+  "claim_scope": "For every finite N-site tensor product of qubit algebras and arbitrary local rank-one projections n_x, Q_total=\u03a3_x n_x has spectrum {0,\u2026,N}, binomial multiplicities, and the stated Pauli-coordinate form; no physical charge identification is included.",
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T09:23:16.757186+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,19 +49,20 @@
     "minimal_axioms"
   ],
   "direct_in_degree": 3,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "retained",
+  "effective_status_reason": "self",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "retained",
   "load_bearing_score": 7.055,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The commuting tensor-factor projections have a joint basis labelled by \u03bd\u2208{0,1}^N, on which Q_total has eigenvalue \u03a3_x\u03bd_x.",
+  "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "63def01c06e37f5fecad20750aa43a93cee68d75bf9366f43d875fd9a58d1113",
   "note_path": "docs/Q_INTEGER_SPECTRUM_THEOREM_NOTE_2026-05-02.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -551,14 +575,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
-    "C": 0,
+    "A": 3,
+    "B": 1,
+    "C": 3,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 7
   },
   "runner_path": "scripts/q_integer_spectrum_check.py",
   "title": "Per-Site Qubit Occupation Count Has Integer Spectrum",
   "transitive_descendants": 46,
-  "verdict_rationale": null
+  "verdict_rationale": "The current accepted Qubit premise supplies M_2(C), and the source\u2019s tensor-product argument correctly turns arbitrary rank-one local projections into commuting binary-valued operators. An independent algebraic check reproduces the spectrum, multiplicities, parity dimensions, half-filling statement, and Pauli-coordinate normalization, including the degenerate N=0 case. The N=4 runner is a valid finite witness rather than the proof of the general theorem; the general closure is supplied analytically, with only non-substantive historical \u201cAxiom 1\u201d naming remaining."
 }

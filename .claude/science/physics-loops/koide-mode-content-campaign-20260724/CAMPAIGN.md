@@ -379,3 +379,114 @@ major and publishable negative) or contains `r = 1/2` alone (which
 would be the breakthrough). I expect non-empty and NOT uniquely
 `1/2`, but the degenerate-spectrum exclusion of `r = 1` is the most
 promising positive lead the campaign has produced.
+
+---
+
+## WAVE 3 RESULT (2026-07-24): DECISIVE NEGATIVE. Campaign converts.
+
+Three independent agents. **Agent 1 reported a closure; agents 2 and
+3 independently refuted its two load-bearing steps.** The closure is
+NOT accepted. Recording this in full because the near-miss is the
+instructive part.
+
+### What agent 1 claimed (177/0 gates)
+
+That (P1) was wrong in one line — `ex3_literature_templates.md:395-397`
+read the operator `G = w_triv P_triv + w_nontriv P_doublet` as a form
+matrix, dropping the coefficient-surface Gram `diag(3,6,6)`, and the
+dropped factor is exactly 2 (the counting bit itself), so (P1)
+silently sets `nu = 2` and then reports count-once unreachable.
+Corrected: `gamma = (1+2x)/(2(1-x))`, `gamma(0) = 1/2` at the retained
+HS point, `F/S = -1/5` evaporates (true count-once breach is
+`F/S = 0`, attained by the PSD covariant weight at `N = 3`).
+Intersection: count-twice needs `x < 0`, forbidden by positive
+weights, hence EXCLUDED; count-once admissible on `x` in `[0, 1/4)`
+giving `r` in `[1/2, 1)` with Koide at the closed lower endpoint.
+
+### Why it is REFUTED (two independent agents, converging)
+
+1. **The `r = 1` exclusion dies on the SIGNED branch.** The
+   eigenvalues are NOT the masses: `m_k = lambda_k^2` is `B_map`, a
+   registered UNADOPTED residual atom that the landed note says is
+   explicitly "not laundered through R-D or Record". Agent 2 built
+   three exact witnesses (`theta = pi/6, pi/12, pi/2`) where `r = 1`
+   carries three DISTINCT NONZERO masses; agent 3 independently gave
+   the witness `(1, 2, -2/3)` yielding `Q = 1` with masses
+   `(1, 4, 4/9)`. "`r = 1` means two massless leptons" is FALSE
+   unconditionally.
+2. **Agent 1's own correction is itself 2-fold ambiguous by exactly
+   the counting bit.** Agent 3: the weights-to-cone-point
+   identification is ambiguous by precisely
+   `Tr P_1 / Tr P_0 = 2`, and under the HS-referenced induction BOTH
+   horns are reachable, at `F/S = 0` and `F/S = 1/4`, with
+   `F >= 0`. So the identification needed to run the argument
+   already encodes the bit it purports to decide. This is the same
+   dropped-factor-2 error agent 1 correctly diagnosed in (P1),
+   turned around on agent 1.
+
+**PRIOR ART nobody cited.**
+`KOIDE_EQUIPARTITION_ENDPOINT_REGISTRATION_ASYMMETRY_BOUNDED_THEOREM_NOTE_2026-07-12.md`
+landed TWELVE DAYS before this campaign opened, and its title
+already carries both halves: the `r = 1` positive branch is forced
+to `(3a,0,0)`, AND "Allowing Signs Restores `r = 1`
+Non-Degeneracy but Unpins `Q`". Zero waves and zero exercise sectors
+cited it. Wave 2 rediscovered its first half and dropped its T4,
+which refutes the lead. **Campaign process failure: no wave ran a
+prior-art sweep on its own headline result.**
+
+### THE STRUCTURAL FINDING (this is the real result)
+
+**The campaign attacked the wrong conjunct.** The owner-registered
+closure criterion
+(`AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md:19-24`)
+is a CONJUNCTION. The conjunct this campaign spent three waves on
+(`det_C` vs `|det_C|^2`) is **already discharged AND explicitly
+`r`-neutral** by the one retained route map the criterion itself
+names: `ACPHILAMBDA_OCCUPANCY_DETERMINANT_POWER_SPLIT_..._2026-07-04.md:102`
+states "`r` remains a free dial". The FIRST conjunct — **derive the
+physical matter action and its measure** — no wave ever attempted,
+and `MINIMAL_AXIOMS_2026-06-29.md:170` places it OUTSIDE axiom
+content. The obligation is therefore gated behind a strictly larger
+open gate and is **not dischargeable by any currently visible
+route**.
+
+So the counting bit, as this campaign framed it, was never the thing
+that decides `r`. That is worth knowing and is the campaign's real
+deliverable.
+
+### LEDGER / GOVERNANCE FINDINGS FOR THE OWNER
+
+- 71 transitive dependents of the demoted premise, with **ZERO**
+  retained-grade rows among them; no silent premise leak found in
+  the four unrouted count-once users.
+- `lane_certification.json`: `charged_lepton_koide_value` is blocked
+  by **24 rows, two of them `audited_failed`** — so even discharging
+  this obligation would not certify the lane.
+- 33 of 37 counting-bit scaffolding rows lack retained-grade
+  standing (89%); corpus-wide **75 rows / 279 lines** carry prose
+  status labels contradicting the live ledger.
+- The `owner_governed_premise_nodes.json` channel is absent from
+  origin/main and machine-enforced (`audit_lint.py:683-686`).
+- Contested pair flagged: the only `retained_bounded` row in sight,
+  `flavor_r_half_is_a_stationary_point_not_forced_2026-06-02`, says
+  the forcing framing was retired — contested by the later LIVE
+  obligation.
+
+## CAMPAIGN DISPOSITION
+
+**Convert to a decisive negative.** Do NOT ship any `r`-selecting
+claim: three waves produced no selector, and the one apparent closure
+is refuted twice over. The honest, gated, publishable content is:
+(i) the commutant theorem (no invariant of any kind can select `r`,
+any finite group); (ii) the two-sided positivity analysis with BOTH
+sides' identification ambiguities exhibited; (iii) the signed-branch
+witnesses killing the degenerate-exclusion route; (iv) the
+wrong-conjunct structural finding.
+
+**Do NOT re-walk:** reality-type/FS selectors; the associativity
+import; the degenerate-spectrum exclusion; the `F/S = -1/5` breach
+(it evaporates under the corrected Gram).
+
+**The real target, if the owner wants this lane closed, is the FIRST
+conjunct: derive the physical matter action and its measure.** That
+is a strictly larger gate and is outside current axiom content.

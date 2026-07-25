@@ -17,7 +17,7 @@ file per claim), summarized in
 | Metric | Value |
 |---|---:|
 | Retained positive rows | 103 |
-| Retained bounded rows | 327 |
+| Retained bounded rows | 328 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 22 |
 
@@ -129,7 +129,7 @@ Sorted by load-bearing graph score (descending).
 - [`replay_environment_note`](../../docs/REPLAY_ENVIRONMENT_NOTE.md) — score 0.000; audited 2026-05-01T23:28:33.389906+00:00
 - [`staggered_graph_portability_stress_note`](../../docs/STAGGERED_GRAPH_PORTABILITY_STRESS_NOTE.md) — score 0.000; audited 2026-05-05T11:44:13.477263+00:00
 
-## Retained bounded rows (327)
+## Retained bounded rows (328)
 
 Sorted by load-bearing graph score (descending).
 
@@ -214,6 +214,7 @@ Sorted by load-bearing graph score (descending).
 - [`finite_rank_gravity_residual_helper_note_2026-04-14`](../../docs/FINITE_RANK_GRAVITY_RESIDUAL_HELPER_NOTE_2026-04-14.md) — score 7.600; audited 2026-06-18T03:05:58.140636+00:00
 - [`gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_exact_solve_doublet_theorem_note_2026-04-20`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_EXACT_SOLVE_DOUBLET_THEOREM_NOTE_2026-04-20.md) — score 7.585; audited 2026-05-25T23:48:13.001024+00:00
 - [`gauge_vacuum_plaquette_su3_full_slice_product_fubini_factorization_note_2026-06-06`](../../docs/GAUGE_VACUUM_PLAQUETTE_SU3_FULL_SLICE_PRODUCT_FUBINI_FACTORIZATION_NOTE_2026-06-06.md) — score 7.477; audited 2026-06-07T16:03:17.644920+00:00
+- [`gravitomagnetic_note`](../../docs/GRAVITOMAGNETIC_NOTE.md) — score 7.409; audited 2026-07-25T10:01:08.147159+00:00
 - [`koide_cyclic_projector_block_democracy_note_2026-04-18`](../../docs/KOIDE_CYCLIC_PROJECTOR_BLOCK_DEMOCRACY_NOTE_2026-04-18.md) — score 7.392; audited 2026-05-05T11:21:48.452312+00:00
 - [`dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16`](../../docs/DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md) — score 7.115; audited 2026-07-25T06:48:32.525863+00:00
 - [`dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17`](../../docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_SERIES_TAIL_SUPPORT_NOTE_2026-04-17.md) — score 7.115; audited 2026-06-15T23:17:32.891327+00:00

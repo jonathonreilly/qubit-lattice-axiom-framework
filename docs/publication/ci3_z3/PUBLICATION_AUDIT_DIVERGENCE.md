@@ -19,7 +19,7 @@ publication tables phrase it.
 |---|---|---:|
 | critical | `unaudited` | 225 |
 | high | `unaudited` | 164 |
-| medium | `unaudited` | 111 |
+| medium | `unaudited` | 110 |
 | critical | `audited_conditional` | 16 |
 | medium | `audited_conditional` | 9 |
 | high | `audited_conditional` | 5 |
@@ -35,7 +35,7 @@ publication tables phrase it.
 | medium | `audited_numerical_match` | 1 |
 | medium | `audited_renaming` | 1 |
 
-**Total non-retained-grade rows in publication tables:** 551
+**Total non-retained-grade rows in publication tables:** 550
 
 ## Per-row breakdown
 
@@ -507,7 +507,6 @@ publication tables phrase it.
 | medium | `gauge_vacuum_plaquette_u1_density_sign_alternation_narrow_note_2026-05-17` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `gellmann_completeness_theorem_note_2026-05-02` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `gr_class_expansion_finite_rank_target_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
-| medium | `gravitomagnetic_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `hadron_lane1_chiral_condensate_banks_casher_scoping_support_note_2026-04-27` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `hadron_mass_lane1_theorem_plan_support_note_2026-04-27` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `hadronic_charges_from_quark_y_note_2026-05-02` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |

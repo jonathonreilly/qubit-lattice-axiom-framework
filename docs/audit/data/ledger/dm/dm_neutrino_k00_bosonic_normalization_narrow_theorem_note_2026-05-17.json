@@ -1,42 +1,88 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T11:08:40.712814+00:00",
+  "audit_invocation_history": [
+    "06a1701c06b64c0c931b7a35c97b8830"
+  ],
+  "audit_invocation_id": "06a1701c06b64c0c931b7a35c97b8830",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 28,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true,
+      "runner_path": "scripts/audit_companion_dm_neutrino_k00_bosonic_normalization_exact_2026_05_17.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 0.0,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/audit_companion_dm_neutrino_k00_bosonic_normalization_exact_2026_05_17.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "c2d02b7ed35f77269d39d4715849cfb8c0652bbdacbcf6a27a67ce65f27a493e",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "c2d02b7ed35f77269d39d4715849cfb8c0652bbdacbcf6a27a67ce65f27a493e",
+    "runner_path": "scripts/audit_companion_dm_neutrino_k00_bosonic_normalization_exact_2026_05_17.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_failed",
+  "auditor": "codex-audit-batch-A-20260725-8eb3b50b",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The projector and determinant algebra closes, but the source overstates (W) for all real j even though j = -m makes the logarithm undefined. Its R2 justification is also false for the runner\u2019s displayed B: the rows do not individually have zero sum.",
   "claim_id": "dm_neutrino_k00_bosonic_normalization_narrow_theorem_note_2026-05-17",
-  "claim_scope": null,
+  "claim_scope": "The finite-dimensional projector, spectrum, determinant-response, and trace corollaries (S1)-(S2), (E1)-(E2), (W), and (R1)-(R2) on the explicit 3 x 3 and 2 x 2 matrices and scalar baselines.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T11:08:40.712814+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_failed",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_failed",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Because F00 and F_row are rank-one projectors, their scalar-baseline determinant ratios both equal 1 + j/m, yielding the response log|1 + j/m|.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "bc4af4ee9f3aa2227f60bdd6cebaf7e4a31813a6d35dddabbba1faf12f552bba",
   "note_path": "docs/DM_NEUTRINO_K00_BOSONIC_NORMALIZATION_NARROW_THEOREM_NOTE_2026-05-17.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Re-audit after restricting (W) consistently to m + j != 0 and replacing the false row-wise-zero justification for R2 with the actual total-entry-sum cancellation, while explicitly supplying or citing the breaking-triplet matrix.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1256,14 +1302,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 19,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 19
   },
   "runner_path": "scripts/audit_companion_dm_neutrino_k00_bosonic_normalization_exact_2026_05_17.py",
   "title": "DM Neutrino `K00` Bosonic Normalization Narrow Theorem",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: the Conclusion asserts (W) for every real j, but at j = -m both deformed determinants vanish and log|1 + j/m| is undefined; additionally, R2 is justified by the false statement that every row of B has zero row-sum. Why this blocks: the runner checks polynomial ratios and the aggregate trace but does not validate either the universal logarithmic domain or the claimed row-wise premise, so the source does not close as written. Repair target: impose m + j != 0 throughout, state the correct total-entry-sum cancellation for R2, and make B an explicit or cited input. Claim boundary until fixed: the projector, spectrum, determinant-polynomial, and R1 identities are exact; (W) holds only off the determinant zero, and the runner\u2019s R2 trace result does not validate its stated justification."
 }

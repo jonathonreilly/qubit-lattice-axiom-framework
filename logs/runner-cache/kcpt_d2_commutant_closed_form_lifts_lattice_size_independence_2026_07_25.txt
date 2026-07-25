@@ -1,0 +1,102 @@
+===== runner cache v1 =====
+runner: scripts/kcpt_d2_commutant_closed_form_lifts_lattice_size_independence_2026_07_25.py
+runner_sha256: 45813246c7490265ad69450430979d24773bfeb88c04c8f68ab64a2504e08b6a
+input_fingerprint_sha256: 02d98592d4c2ad1e5896610eec57bd83e45aa9061d2135ca56d0b54679fe3442
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 62.24
+status: ok
+----- stdout -----
+KCPT Unit 28 -- closed-form lifts and lattice-size independence
+D2, support structures and the reference enumeration come from scripts/kcpt_d2_graded_signed_permutation_commutant_characterization_2026_07_25.py
+constructive L = (4, 6, 8, 10, 12); exhaustive-enumeration anchor L = (4, 6, 8, 10)
+
+[L = 4]
+  PASS  G1_TRANSLIFT_L4        closed-form zeta_nu lift commutes with D2 on all 64^2 entries: 3/3
+  PASS  G2_UNIQUE_L4           support graph connected (64 sites), BFS propagation from s(0)=+1 reproduces zeta_nu exactly 3/3 -> sign solution unique, two lifts +-
+  PASS  G4_BETA_L4             [t_a,t_b] central 9/9 and = -1 iff a!=b; bimultiplicative extension matches (-1)^[(sum s)(sum t) - s.t] on 64/64 class pairs
+  PASS  G4X_LIFTPROD_L4        commutators of ACTUAL lift products on all 8x8 class reps are central 64/64 and match the extension 64/64
+  PASS  G6_ORDER_Q_L4          (t_nu)^k sign field = zeta_nu^k 12/12, order exactly 4 with (t_nu)^L=+I; q matches formula 8/8; L=0 mod 4 -> q trivial on all 8 v; q=-I set empty
+  PASS  G5A_FLIP_L4            single-site sign flips of zeta_nu break commutation 192/192 (exhaustive N=64 site set, 3 nu)
+  PASS  G5B_MASK_L4            the 7 alternative exponent masks per nu all break commutation 21/21; the mask {mu : mu > nu} commutes 3/3
+  PASS  G7_B3_L4               all 48 B_3 matrices lift by consistent sign propagation 48/48, 48 distinct permutation parts; connected support graph -> exactly two lifts +- each
+  PASS  G8_SHEAR_L4            shear [[1,1,0],[0,1,0],[0,0,1]] det=1, lattice bijection, not a signed permutation: propagation inconsistent -> NOT liftable
+  PASS  G3_ENUM_L4             closed-form t_nu and -t_nu both present in the enumerated Comm 3/3, and the enumerated lifts of that permutation are exactly two 3/3
+  PASS  G7E_ENUM_L4            each constructed point-group lift and its negative lie in the enumerated Comm key set 48/48, with exactly two enumerated lifts each 48/48
+  PASS  G9S_SUPPORT_L4         support-graph Aut census nStab=720 nAut=46080 (=nStab*N); liftable nLift=3072 = 48N; support-graph Aut is STRICTLY LARGER than the liftable subgroup here (46080 > 3072)
+  PASS  G9_COUNTS_L4           constructed 3072 distinct fingerprints x 2 signs = 6144 = 96N; enumerated nComm=6144 = 96N = constructed (EXACT equality)
+  PASS  G10_CLOSURE_L4         closure of {t_x,t_y,t_z,-I} + 48 point-group lifts (52 gens) has order 6144 and key set EQUAL to the enumerated Comm
+
+[L = 6]
+  PASS  G1_TRANSLIFT_L6        closed-form zeta_nu lift commutes with D2 on all 216^2 entries: 3/3
+  PASS  G2_UNIQUE_L6           support graph connected (216 sites), BFS propagation from s(0)=+1 reproduces zeta_nu exactly 3/3 -> sign solution unique, two lifts +-
+  PASS  G4_BETA_L6             [t_a,t_b] central 9/9 and = -1 iff a!=b; bimultiplicative extension matches (-1)^[(sum s)(sum t) - s.t] on 64/64 class pairs
+  PASS  G4X_LIFTPROD_L6        commutators of ACTUAL lift products on all 8x8 class reps are central 64/64 and match the extension 64/64
+  PASS  G6_ORDER_Q_L6          (t_nu)^k sign field = zeta_nu^k 18/18, order exactly 6 with (t_nu)^L=+I; q matches formula 8/8; L=2 mod 4 -> q=-I on the four v with >=2 odd entries; q=-I set [(0, 1, 1), (1, 0, 1), (1, 1, 0), (1, 1, 1)]
+  PASS  G5A_FLIP_L6            single-site sign flips of zeta_nu break commutation 648/648 (exhaustive N=216 site set, 3 nu)
+  PASS  G5B_MASK_L6            the 7 alternative exponent masks per nu all break commutation 21/21; the mask {mu : mu > nu} commutes 3/3
+  PASS  G7_B3_L6               all 48 B_3 matrices lift by consistent sign propagation 48/48, 48 distinct permutation parts; connected support graph -> exactly two lifts +- each
+  PASS  G8_SHEAR_L6            shear [[1,1,0],[0,1,0],[0,0,1]] det=1, lattice bijection, not a signed permutation: propagation inconsistent -> NOT liftable
+  PASS  G3_ENUM_L6             closed-form t_nu and -t_nu both present in the enumerated Comm 3/3, and the enumerated lifts of that permutation are exactly two 3/3
+  PASS  G7E_ENUM_L6            each constructed point-group lift and its negative lie in the enumerated Comm key set 48/48, with exactly two enumerated lifts each 48/48
+  PASS  G9S_SUPPORT_L6         support-graph Aut census nStab=48 nAut=10368 (=nStab*N); liftable nLift=10368 = 48N; support-graph Aut equals the liftable subgroup
+  PASS  G9_COUNTS_L6           constructed 10368 distinct fingerprints x 2 signs = 20736 = 96N; enumerated nComm=20736 = 96N = constructed (EXACT equality)
+  PASS  G10_CLOSURE_L6         closure of {t_x,t_y,t_z,-I} + 48 point-group lifts (52 gens) has order 20736 and key set EQUAL to the enumerated Comm
+
+[L = 8]
+  PASS  G1_TRANSLIFT_L8        closed-form zeta_nu lift commutes with D2 on all 512^2 entries: 3/3
+  PASS  G2_UNIQUE_L8           support graph connected (512 sites), BFS propagation from s(0)=+1 reproduces zeta_nu exactly 3/3 -> sign solution unique, two lifts +-
+  PASS  G4_BETA_L8             [t_a,t_b] central 9/9 and = -1 iff a!=b; bimultiplicative extension matches (-1)^[(sum s)(sum t) - s.t] on 64/64 class pairs
+  PASS  G6_ORDER_Q_L8          (t_nu)^k sign field = zeta_nu^k 24/24, order exactly 8 with (t_nu)^L=+I; q matches formula 8/8; L=0 mod 4 -> q trivial on all 8 v; q=-I set empty
+  PASS  G5A_FLIP_L8            single-site sign flips of zeta_nu break commutation 96/96 (deterministic 32-site stride N//32 site set, 3 nu)
+  PASS  G5B_MASK_L8            the 7 alternative exponent masks per nu all break commutation 21/21; the mask {mu : mu > nu} commutes 3/3
+  PASS  G7_B3_L8               all 48 B_3 matrices lift by consistent sign propagation 48/48, 48 distinct permutation parts; connected support graph -> exactly two lifts +- each
+  PASS  G8_SHEAR_L8            shear [[1,1,0],[0,1,0],[0,0,1]] det=1, lattice bijection, not a signed permutation: propagation inconsistent -> NOT liftable
+  PASS  G3_ENUM_L8             closed-form t_nu and -t_nu both present in the enumerated Comm 3/3, and the enumerated lifts of that permutation are exactly two 3/3
+  PASS  G7E_ENUM_L8            each constructed point-group lift and its negative lie in the enumerated Comm key set 48/48, with exactly two enumerated lifts each 48/48
+  PASS  G9S_SUPPORT_L8         support-graph Aut census nStab=48 nAut=24576 (=nStab*N); liftable nLift=24576 = 48N; support-graph Aut equals the liftable subgroup
+  PASS  G9_COUNTS_L8           constructed 24576 distinct fingerprints x 2 signs = 49152 = 96N; enumerated nComm=49152 = 96N = constructed (EXACT equality)
+
+[L = 10]
+  PASS  G1_TRANSLIFT_L10       closed-form zeta_nu lift commutes with D2 on all 1000^2 entries: 3/3
+  PASS  G2_UNIQUE_L10          support graph connected (1000 sites), BFS propagation from s(0)=+1 reproduces zeta_nu exactly 3/3 -> sign solution unique, two lifts +-
+  PASS  G4_BETA_L10            [t_a,t_b] central 9/9 and = -1 iff a!=b; bimultiplicative extension matches (-1)^[(sum s)(sum t) - s.t] on 64/64 class pairs
+  PASS  G6_ORDER_Q_L10         (t_nu)^k sign field = zeta_nu^k 30/30, order exactly 10 with (t_nu)^L=+I; q matches formula 8/8; L=2 mod 4 -> q=-I on the four v with >=2 odd entries; q=-I set [(0, 1, 1), (1, 0, 1), (1, 1, 0), (1, 1, 1)]
+  PASS  G5A_FLIP_L10           single-site sign flips of zeta_nu break commutation 96/96 (deterministic 32-site stride N//32 site set, 3 nu)
+  PASS  G5B_MASK_L10           the 7 alternative exponent masks per nu all break commutation 21/21; the mask {mu : mu > nu} commutes 3/3
+  PASS  G7_B3_L10              all 48 B_3 matrices lift by consistent sign propagation 48/48, 48 distinct permutation parts; connected support graph -> exactly two lifts +- each
+  PASS  G8_SHEAR_L10           shear [[1,1,0],[0,1,0],[0,0,1]] det=1, lattice bijection, not a signed permutation: propagation inconsistent -> NOT liftable
+  PASS  G3_ENUM_L10            closed-form t_nu and -t_nu both present in the enumerated Comm 3/3, and the enumerated lifts of that permutation are exactly two 3/3
+  PASS  G7E_ENUM_L10           each constructed point-group lift and its negative lie in the enumerated Comm key set 48/48, with exactly two enumerated lifts each 48/48
+  PASS  G9S_SUPPORT_L10        support-graph Aut census nStab=48 nAut=48000 (=nStab*N); liftable nLift=48000 = 48N; support-graph Aut equals the liftable subgroup
+  PASS  G9_COUNTS_L10          constructed 48000 distinct fingerprints x 2 signs = 96000 = 96N; enumerated nComm=96000 = 96N = constructed (EXACT equality)
+
+[L = 12]
+  PASS  G1_TRANSLIFT_L12       closed-form zeta_nu lift commutes with D2 on all 1728^2 entries: 3/3
+  PASS  G2_UNIQUE_L12          support graph connected (1728 sites), BFS propagation from s(0)=+1 reproduces zeta_nu exactly 3/3 -> sign solution unique, two lifts +-
+  PASS  G4_BETA_L12            [t_a,t_b] central 9/9 and = -1 iff a!=b; bimultiplicative extension matches (-1)^[(sum s)(sum t) - s.t] on 64/64 class pairs
+  PASS  G6_ORDER_Q_L12         (t_nu)^k sign field = zeta_nu^k 36/36, order exactly 12 with (t_nu)^L=+I; q matches formula 8/8; L=0 mod 4 -> q trivial on all 8 v; q=-I set empty
+  PASS  G5A_FLIP_L12           single-site sign flips of zeta_nu break commutation 96/96 (deterministic 32-site stride N//32 site set, 3 nu)
+  PASS  G5B_MASK_L12           the 7 alternative exponent masks per nu all break commutation 21/21; the mask {mu : mu > nu} commutes 3/3
+  PASS  G7_B3_L12              all 48 B_3 matrices lift by consistent sign propagation 48/48, 48 distinct permutation parts; connected support graph -> exactly two lifts +- each
+  PASS  G8_SHEAR_L12           shear [[1,1,0],[0,1,0],[0,0,1]] det=1, lattice bijection, not a signed permutation: propagation inconsistent -> NOT liftable
+  PASS  G9_COUNTS_L12          constructed 82944 distinct fingerprints x 2 signs = 165888 = 96N: this is a LOWER BOUND |Comm(D2)| >= 96N (no enumeration run at L=12)
+
+[SUMMARY]
+    L     N   constr      nComm    nLift    nStab     nAut  q=-I set
+    4    64     6144       6144     3072      720    46080  empty
+    6   216    20736      20736    10368       48    10368  [(0, 1, 1), (1, 0, 1), (1, 1, 0), (1, 1, 1)]
+    8   512    49152      49152    24576       48    24576  empty
+   10  1000    96000      96000    48000       48    48000  [(0, 1, 1), (1, 0, 1), (1, 1, 0), (1, 1, 1)]
+   12  1728   165888  >= 165888        -        -        -  empty
+
+[CROSS-L]
+  PASS  XL_96N                 constructed count = 96N at every L in (4, 6, 8, 10, 12)
+  PASS  XL_ENUM_EQ             enumerated nComm = 96N and nLift = 48N at every L in (4, 6, 8, 10) (equality with the construction is anchored ONLY here)
+  PASS  XL_DICHOTOMY           2-torsion dichotomy holds at every L: q trivial for L=0 mod 4, q=-I on exactly 4 points for L=2 mod 4
+
+========================================================================
+TOTAL: PASS=64 FAIL=0
+
+----- stderr -----
+

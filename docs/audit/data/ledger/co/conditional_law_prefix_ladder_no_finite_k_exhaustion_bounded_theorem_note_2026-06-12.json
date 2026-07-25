@@ -1,42 +1,90 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T22:14:43.333125+00:00",
+  "audit_invocation_history": [
+    "edebaeb8fae64168a68af53f39b1b530"
+  ],
+  "audit_invocation_id": "edebaeb8fae64168a68af53f39b1b530",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 5,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/frontier_conditional_law_prefix_ladder_persistence_2026_06_12.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 0.0,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_conditional_law_prefix_ladder_persistence_2026_06_12.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "fae50c084efc0e659223a8e51f18b068c5ef914dceeca165ae274ddf5d2f1588",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "fae50c084efc0e659223a8e51f18b068c5ef914dceeca165ae274ddf5d2f1588",
+    "runner_path": "scripts/frontier_conditional_law_prefix_ladder_persistence_2026_06_12.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-baa4f678",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The runner source computes the finite ladder comparisons, but the authenticated stdout omits the load-bearing seed-4242 adequate rows k=2..6. The aggregate X3d summary does not replace complete execution evidence for those rows.",
   "claim_id": "conditional_law_prefix_ladder_no_finite_k_exhaustion_bounded_theorem_note_2026-06-12",
-  "claim_scope": null,
+  "claim_scope": "Fixed L=3 runner object; cap-11/12-stable selected rows at cap 12; seeds 4242, 99, and 7; prefix k=2..8; the literal adequacy gate min_active_family>=8 and active_families>=2^(k-1); and the fixed 300-draw seeded permutation null. Only the observed adequate rows under this gate are audited.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T22:14:43.333125+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Under the family-adequacy gate, every seed clears at every adequate k: seed 4242 through k=6, seed 99 through k=4, and seed 7 through k=7, with zero adequate-grade failures.",
+  "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls"
+  ],
   "note_hash": "fde0049a36205d4d9b88bd260ba37ae46b2719a81a2fedcc11db906d6c0881e3",
   "note_path": "docs/CONDITIONAL_LAW_PREFIX_LADDER_NO_FINITE_K_EXHAUSTION_BOUNDED_THEOREM_NOTE_2026-06-12.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "runner_artifact_issue: supply an unclipped authenticated runner stdout or sliced certificate containing the seed-4242 adequate k=2..6 rows and the complete nine-check execution, then re-audit.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1369,13 +1417,13 @@
   "prose_status": "clean",
   "runner_check_breakdown": {
     "A": 0,
-    "B": 0,
-    "C": 0,
+    "B": 2,
+    "C": 7,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 9
   },
   "runner_path": "scripts/frontier_conditional_law_prefix_ladder_persistence_2026_06_12.py",
   "title": "The Record-Conditional Structure Shows No Exhaustion Anywhere in the Adequate-Family Range: Every Seed Clears Its Nulls at Every Adequate k (k_max = 6/4/7), With All Higher-k Entries Family-Inadequate and Reported Only (Bounded)",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "The source and runner code scope a finite runner-object result rather than an asymptotic law, and the code genuinely computes the ladder and seeded-null comparisons; two anchor checks are class B and seven substantive checks are class C. However, the authenticated stdout is clipped where the seed-4242 adequate k=2..6 row evidence would appear, so the aggregate X3d PASS cannot establish complete load-bearing execution closure. The bounded non-exhaustion assertion therefore remains conditional on an unclipped execution certificate; higher k, other periods, and asymptotic behavior remain explicit scope boundaries."
 }

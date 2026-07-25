@@ -274,3 +274,108 @@ IMPORT rather than a framework consequence. If the Record readout
 does not actually induce an associative form on that algebra, Ex1
 demotes from theorem to conditional and the "forcing" evaporates.
 The defend-ex1 agent is instructed to attack exactly that.
+
+---
+
+## WAVE 2 RESULT (2026-07-24)
+
+**Prediction CONFIRMED on the central point.** Both defenders
+independently concluded Ex1 and Ex2 never conflicted: EX1's `s` and
+EX2's `nu` are the SAME residual (`nu = 2^s`), and
+`r = 2^s (g_0/g_1)` IS `r = (g_0/g_1)(w_1/w_0)`. There was no
+arithmetic contradiction.
+
+**The risk I flagged BIT, exactly as flagged.** Ex1's algebra is
+correct (72/72 gates, and strengthenable: Frobenius + scalar/traceless
+orthogonality gives HS with NO group at all) — but the ASSOCIATIVITY
+CONDITION IS AN IMPORT, not a framework consequence. The corpus has
+already adjudicated this laundering: `MINIMAL_AXIOMS_2026-06-29.md:170`
+puts source/action and physical-observable identification OUTSIDE
+axiom content; `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md:45-57,63-69`
+carries the readout identification as a declared Boundary with a
+landed independence no-go, and classifies Record additivity as
+`W = sum_i phi(x_i)` with `phi` FREE (log, not linear, in its
+best-supported case). **Ex1 demotes from theorem to conditional.**
+
+**Worse for the campaign's hoped direction: granting the bridge in
+full does not give `r = 1/2` — it argues for `r = 1`.** The Frobenius
+family on `Herm_circ(3)` is exactly `{Tr(rho X^dag Y)}`, which after
+K-reality is verbatim the landed free dial; closure comes only from
+isotype orthogonality, and on that dial orthogonality holds exactly at
+`r = 1`. Independently, the second defender: the object associativity
+pins is the TRACE, whose own block weights are
+`Tr P_0 : Tr P_1 = 1 : 2`, giving `r = 1`; and the `(1,1)` weighting
+is the value of NO linear functional on the algebra.
+
+### THE TWO NEW RESULTS WORTH THE WAVE
+
+1. **Positivity of the SPECTRUM bounds the PRODUCT (not a factor):**
+   `e_2 = 3(a^2 - |b|^2) > 0` implies **`r < 1` STRICTLY**, with
+   `r = 1` forcing the degenerate spectrum `(3a, 0, 0)` (exact
+   witness `(1, 1/2) -> (1, 3/2)`: spectrum `(2, 1/2, 1/2)` ->
+   `(4, -1/2, -1/2)`). **The horns are ASYMMETRIC: `r = 1/2` is
+   INTERIOR, `r = 1` is on the BOUNDARY.** This also refutes EX2's
+   clause that the Gamma-breaking list fixes "only the metric
+   factor" — the positive cone is algebra content and it constrains
+   the product. 83/0 gates, 12 mutation probes.
+2. **Record additivity does NOT fix `w_1/w_0`, and this is now
+   COMPUTED rather than asserted:** the space of finitely additive
+   readouts on the 2-letter record alphabet is exactly
+   2-dimensional (one free ratio after scale), and no symmetry can
+   equate two inequivalent letters. `axiom_premise_nodes.json:25`
+   and `MINIMAL_AXIOMS_2026-06-29.md:152-155` explicitly exclude
+   weighting, normalization, K/CPT structure and central-sector
+   decomposition from Record. EX2's own escape hatch ("exhibit the
+   set") is circular: both `(1,2)` and `(1,1)` are cardinalities of
+   landed framework-supplied sets — the fibre counts on the two
+   sides of one K/CPT quotient.
+
+Also: EX2's "only the product is physical" redundancy is FICTITIOUS
+as a symmetry (the algebra is `R x R x R`, automorphism group the
+finite `S_3`, which fixes `g_0/g_1` exactly). Honest statement:
+"one factor is still unsourced", not "only the product is physical".
+
+### PRIMITIVE ADJUDICATION: campaign is NOT closed by foundation
+
+The quote is verbatim-accurate (`REALIZED_STATE_PRIMITIVE_NOTE:93`)
+but the paraphrase dropped its governing scope: it sits in the
+**Informative** State-Contingency Register (`:71`), whose own text
+says it "records current examples" and "is documentation, not an
+additional gate" (`:73-74`). It records non-supply BY THE PRIMITIVE,
+not underivability in principle. Affirmatively contradicted:
+`derivation_obligations.json` registers
+`ac_orbit_occupancy_statistical_grain_derivation_obligation` —
+target VERBATIM this campaign's question — as a LIVE `open_gate`,
+sourced to a note dated one month AFTER the primitive, and
+governance records the count-once horn as DEMOTED from owner-adopted
+premise to open derivation obligation
+(`TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md:9-18,37-42`).
+
+### REPO-HYGIENE FINDING (report to owner)
+
+**33 of 37 counting-bit scaffolding rows have no retained-grade
+standing live (89%); corpus-wide 75 rows / 279 lines in this lane
+carry prose status labels that contradict the live ledger.** Do not
+lean on any prose status in this lane.
+
+## WAVE 3 (dispatched) — the positivity contradiction
+
+Two gated results now point OPPOSITE ways and cannot both be about
+the same object:
+- Exercise sector 3: positive `C_3`-covariant SPECTRAL WEIGHTS force
+  `r(t) = (S+2F)/(S-F) > 1` strictly, so `r = 1/2` is unreachable.
+- Wave 2 defender: positivity of the SPECTRUM of the Hermitian
+  element forces `r < 1` strictly, so `r = 1` is unreachable except
+  at a degenerate rank-1 spectrum.
+
+**Supervisor prediction, recorded before Wave 3 results:** these are
+positivity conditions on DIFFERENT objects (a weight/measure versus
+an element's spectrum), so both can hold — and if they do, they
+squeeze from opposite sides and the physically admissible window is
+narrow. The valuable outcome is not "one is wrong" but a precise
+statement of which object each constrains, and whether the
+intersection is empty (a no-go against BOTH horns, which would be a
+major and publishable negative) or contains `r = 1/2` alone (which
+would be the breakthrough). I expect non-empty and NOT uniquely
+`1/2`, but the degenerate-spectrum exclusion of `r = 1` is the most
+promising positive lead the campaign has produced.

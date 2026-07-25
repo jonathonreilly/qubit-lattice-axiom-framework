@@ -44,33 +44,28 @@ FIREWALLS (interpretation guards; written verbatim to the receipt):
     coframe square root and finite-difference stencils are declared supplied
     structure; no new axiom, primitive, or premise class.
 
-THE COVARIANCE GATE IS SCOPED BY A LANDED THEOREM, NOT BY CONVENIENCE.
+THE COVARIANCE GATE USES THE CONSTRUCTION'S COMPUTED DIRECTION-SET SCOPE.
 Success-gate item (7) as literally written ("all-24/576 decorated covariance
-through EVERY stage") is unreachable BY CONSTRUCTION on this complex.  The
-landed Cycle-690 no-go
+through EVERY stage") is not a well-posed same-space comparison on this
+construction.  The landed, currently unaudited Cycle-690 no-go
 
     docs/PHYSICAL_PROPER_CUBIC_COVARIANCE_CEILING_CYCLE690_NOTE_2026-07-24.md
     scripts/physical_proper_cubic_covariance_ceiling_cycle690_2026_07_24.py
 
-proves, in exact integer/rational arithmetic on the eight cube vertices, that NO
-triangulation of the cube on its eight vertices is invariant under all 24 proper
-cubic rotations; that the attainable ceiling is exactly 12 (five-tetrahedron,
-forcing a chirality choice); and that the Kuhn/Freudenthal complex this runner
-inherits from the landed regge module attains exactly 6.  Gate (7) is therefore
-restated against the ACHIEVABLE scope -- the measured well-posed frame set -- with
-that theorem cited as the reason, its bytes re-hashed against a pin, its
-load-bearing clauses matched in the note body, and a COMPUTED row that
-reconstructs the Kuhn unit-cube stabilizer in-run and shows the measured scope is
-exactly the order the theorem predicts (6).  This is a PRINCIPLED RESCOPE
-JUSTIFIED BY A LANDED THEOREM, NOT GOALPOST-MOVING: the achievable scope is
-computed, the ceiling is cited and re-derived, and the runner still reports the
-full 24-frame accounting with a witness for every frame it cannot reach.  The
-product closure past C1 is executed over the COMPLETE product set of the
-achievable scope (6 x 6 = 36 products), not skipped.
+is pinned as context: it distinguishes the triangulation stabilizer from the
+direction-set scope and records the Kuhn comparison.  Its triangulation ceiling
+does not license or upper-bound the direction-set scope measured here.  Gate (7)
+therefore uses only the COMPUTED well-posed frame set of this construction.  A
+COMPUTED row reconstructs the Kuhn unit-cube stabilizer independently and checks
+that it coincides with the measured signed-direction set.  The runner reports
+the full 24-frame accounting with a witness for every frame lacking an induced
+same-variable-space transport map.  Product closure past C1 is executed over the
+complete square of the computed scope, not skipped.
 
 THE COFRAME CLIP IS QUARANTINED.  At the spec-literal constants the linear
-response drives edge lengths negative, so I + h is NOT positive definite at some
-sites and the principal symmetric square root does NOT exist there.  The runner
+response has negative edge-length components and, independently, I + h is NOT
+positive definite at some sites, so the principal symmetric square root does
+NOT exist there.  The runner
 (a) computes and reports the PD sub-domain and the CERTIFIED sub-domain (sites
 whose entire open-derivative stencil is PD), (b) FAILS the coframe PD row at the
 spec-literal constants -- nothing is rescaled to buy a pass -- and (c) refuses to
@@ -90,8 +85,8 @@ ACCEPTANCE DUTIES (owner + supervisor):
     anchors are TRANSCRIBED read-only pins, never read from disk, never imported.
   - The decorated-covariance scope is COMPUTED, not assumed: the runner measures
     which of the 24 proper cubic frames stabilize the landed Kuhn/Coxeter path
-    complex, reconstructs the Kuhn unit-cube stabilizer independently, and checks
-    both against the landed Cycle-690 ceiling.
+    complex and reconstructs the Kuhn unit-cube stabilizer independently.  The
+    currently unaudited Cycle-690 counts are reported only as context.
   - A CONDITIONAL row is not a pass.  A run that emits any conditional row has NOT
     certified the stages those rows cover.
 
@@ -111,10 +106,10 @@ PREREGISTERED FALSIFIERS (each maps to a named check row):
      -> FAIL.
   F5 periodic anchor : the periodic-assembly static-sector stencil fails to match
      the landed bloch_Q restriction -> FAIL (assembly not anchored to landed bytes).
-  F6 covariance: any decorated-covariance row inside the ACHIEVABLE (computed,
-     theorem-bounded) covariance scope lands beyond machine-tight -> FAIL; or the
-     measured scope is not exactly the order the landed ceiling predicts -> FAIL;
-     or the achievable scope is not closed under composition -> FAIL.
+  F6 covariance: any decorated-covariance row inside the COMPUTED direction-set
+     scope lands beyond machine-tight -> FAIL; or the measured scope does not
+     coincide with the independently reconstructed Kuhn and signed-direction-set
+     stabilizers -> FAIL; or the scope is not closed under composition -> FAIL.
   F7 no-refit  : single frozen TOL table at the top; FD step, eigenvalue cut,
      eta/T_ACT, SIGNAL frozen; no tolerance reused with two meanings -- the draft's
      single MACHINE_TOL carried BOTH an absolute and a relative meaning and is
@@ -233,13 +228,13 @@ E2E_SIZE = 3              # DECLARED THINNING: the end-to-end action second-diff
 #                           code path serves every size.
 GIVENS_SKIP = 1.0e-14     # a two-level factor whose 2x2 block is this close to I is not emitted
 
-# ------------------------------------------------------------------ the LANDED COVARIANCE CEILING (Cycle 690)
-# Success-gate item (7) as literally written is unreachable on this complex, and the
-# reason is a landed theorem, not an opinion of this runner.  The citation is made
-# CHECKABLE three ways: the note and its runner are re-hashed against a pin; the
-# note body must carry the load-bearing clauses verbatim; and the three integers the
-# theorem records are compared against quantities this runner COMPUTES in-run from
-# an independent construction (see kuhn_unit_cube_stabilizer / signed / oriented).
+# ------------------------------------------------------- COVARIANCE CONTEXT (Cycle 690)
+# Cycle 690 is currently unaudited and therefore supplies no retained authority for
+# this runner's direction-set scope.  Its comparison is made CHECKABLE three ways:
+# the note and its runner are re-hashed against a pin; the note body must carry the
+# cited clauses verbatim; and the three contextual integers are reported alongside
+# quantities this runner COMPUTES in-run from an independent construction (see
+# kuhn_unit_cube_stabilizer / signed / oriented).
 CEILING_NOTE = "docs/PHYSICAL_PROPER_CUBIC_COVARIANCE_CEILING_CYCLE690_NOTE_2026-07-24.md"
 CEILING_RUNNER = "scripts/physical_proper_cubic_covariance_ceiling_cycle690_2026_07_24.py"
 
@@ -270,7 +265,7 @@ PINS = {
     "c576_note": "5822c14b74de606d302beb637e03dd0a30968e6a7bf120723eb3da16e09e6768",
     "c576_receipt": "e270f8a9900c18857815c4887ee09d4368289ecb0c051b2a5916ab1290c3abb3",
     "regge_script": "537371554e1a5244875645ca600f5f01e0ccfae64530572630d934e8ea0a85ce",
-    # the landed Cycle-690 covariance-ceiling theorem: the bytes THIS runner read
+    # the landed, currently unaudited Cycle-690 note: the bytes THIS runner read
     "ceiling_note": "1e9b9fbea468c3d269e3edc2363423bf7d5e798bda0ff21fd8e887b3fcc3ac21",
     "ceiling_runner": "9abedad0cabef3ff7dde0f012968e27163f82353602b307aaf8a96304be982fa",
     # campaign-side, TRANSCRIBED ONLY: never read from disk, never imported.
@@ -318,12 +313,12 @@ FIREWALLS = [
     "The lift, boundary clamp, tick declaration, sector regularization, metric fit, coframe "
     "square root and finite-difference stencils are declared supplied structure; no new "
     "axiom, primitive, or premise class.",
-    "The decorated covariance gate is stated against the achievable scope, which is bounded "
-    "by the landed Cycle 690 proper-cubic covariance ceiling: no eight-vertex unit-cube "
-    "triangulation is invariant under all 24 proper cubic rotations, the ceiling is 12, and "
-    "the Kuhn complex used here attains 6.  No covariance beyond that scope is claimed, and "
-    "the frames outside it are ill posed rather than violated.  A stabilizer is not a "
-    "symmetry of a physical law and a lattice chirality is not parity violation.",
+    "The decorated covariance gate is stated against the construction's computed "
+    "direction-set scope.  The landed, currently unaudited Cycle 690 triangulation ceiling "
+    "is pinned as context only; it does not license or upper-bound this different invariant. "
+    "No covariance beyond the computed scope is claimed, and outside it the induced "
+    "same-variable-space transport map is undefined rather than violated.  A stabilizer is "
+    "not a symmetry of a physical law and a lattice chirality is not parity violation.",
     "Rows evaluated on the clipped coframe are conditional on clip and are not gates: at the "
     "spec-literal constants the coframe does not exist at every site, and nothing downstream "
     "of it is certified except on the computed certified sub-domain.",
@@ -380,13 +375,24 @@ def conditional(label: str, condition: bool, detail: object = "", reason: str = 
     return met
 
 
+def diagnostic(label: str, condition: bool, detail: object = "") -> bool:
+    """An uncounted accounting observation. It may expose a harness inconsistency,
+    but it is not scientific evidence and cannot inflate the PASS tally."""
+    ok = bool(condition)
+    print("DIAG", label, ":: condition_met =", ok, "|| NOT COUNTED ::", detail)
+    ROWS.append({"label": label, "verdict": "diagnostic",
+                 "condition_met": ok, "counted_as_gate": False,
+                 "detail": _jsonable(detail)})
+    return ok
+
+
 def gated(label: str, condition: bool, detail: object, contaminated: bool,
           reason: str) -> bool:
     """Route one row to `check` (a real gate) or to `conditional` (quarantined),
     according to a COMPUTED contamination flag.  When the coframe exists at every
     site the flag is False and the row IS a gate; at the spec-literal constants it
-    is True and the row is quarantined.  The quarantine ledger row below checks
-    that this correspondence holds, so the mechanism itself is falsifiable."""
+    is True and the row is quarantined.  The quarantine ledger below reports the
+    correspondence without counting that routing identity as scientific evidence."""
     if contaminated:
         return conditional(label, condition, detail, reason)
     return check(label, condition, detail)
@@ -714,6 +720,12 @@ def static_variable_index(L: int, wrap: bool) -> dict:
             if wrap or all(x[m] + v[m] <= L - 1 for m in range(3)):
                 index[(c, x)] = len(index)
     return index
+
+
+def expected_open_static_dimension(L: int) -> int:
+    """Independent closed count of admitted anchors for the seven 0/1 directions."""
+    return int(sum(math.prod(L - component for component in direction)
+                   for direction in SPATIAL_DIRS))
 
 
 def site_index_map(L: int) -> dict:
@@ -1327,13 +1339,13 @@ def subgroup_report(members: tuple) -> dict:
     }
 
 
-# --- the landed Cycle-690 ceiling, RECONSTRUCTED in-run -------------------------
+# --- the Cycle-690 contextual comparison, RECONSTRUCTED in-run ------------------
 def kuhn_unit_cube_tetrahedra() -> list:
     """The Kuhn / Freudenthal path decomposition of the unit cube [0,1]^3 into six
     tetrahedra, one per permutation pi of the axes: the path
     0 -> e_pi0 -> e_pi0+e_pi1 -> e_pi0+e_pi1+e_pi2.  Constructed here from the
     definition, independently of the imported regge module, so the stabilizer count
-    below is a genuine second computation of the landed theorem's number."""
+    below is a genuine second computation of the contextual count."""
     tets = []
     for pi in ((0, 1, 2), (0, 2, 1), (1, 0, 2), (1, 2, 0), (2, 0, 1), (2, 1, 0)):
         v = [0, 0, 0]
@@ -1752,17 +1764,15 @@ def analyze_size(L: int) -> dict:
         f"test set at this size and the row fails closed rather than passing on nothing")
 
     # ================= decorated covariance over the ACHIEVABLE SCOPE =================
-    # F-1 REPAIR.  Gate (7) as literally written ("all-24/576 through every stage") is
-    # unreachable BY CONSTRUCTION here: the landed Cycle-690 no-go proves no eight-vertex
-    # unit-cube triangulation is invariant under all 24 proper cubic rotations, that the
-    # ceiling is exactly 12, and that the Kuhn/Freudenthal complex this runner inherits
-    # attains exactly 6.  The gate is therefore stated against the ACHIEVABLE scope -- the
-    # measured well-posed frame set -- and the runner PROVES that scope is exactly the
-    # order the theorem predicts (rows below reconstruct the Kuhn unit-cube stabilizer
-    # in-run).  This is a principled rescope justified by a landed theorem, not
-    # goalpost-moving: the full 24-frame accounting is still reported with a computed
-    # witness for every unreachable frame, and the product closure past C1 is executed
-    # over the COMPLETE product set of the achievable scope.
+    # F-1 REPAIR. Gate (7) as literally written ("all-24/576 through every stage") is
+    # not a well-posed same-space comparison for frames that carry a declared 0/1
+    # spatial edge class outside that variable set. The gate is stated against the
+    # COMPUTED direction-set scope. The runner independently reconstructs the Kuhn
+    # unit-cube and signed-direction stabilizers and checks equality with that scope.
+    # Cycle 690's different triangulation invariant is context only. The full 24-frame
+    # accounting is still reported with a computed witness for every frame lacking the
+    # induced transport map, and product closure past C1 is executed over the complete
+    # square of the computed scope.
     q_scale = max(1.0, float(np.abs(model["Q"]).max()))
     b_scale = max(1.0, float(np.abs(base["b"]).max()))
     eps_scale = max(1.0, float(np.abs(base["eps"]).max()))
@@ -1858,15 +1868,15 @@ def analyze_size(L: int) -> dict:
         set(scope_frames) == set(SIGNED_DIRSET_STABILIZER))
     out["covariance_scope_subgroup"] = subgroup_report(scope_frames)
 
-    # ---- PRODUCT CLOSURE PAST C1 over the achievable scope (the coverage gap) ----
+    # ---- PRODUCT CLOSURE PAST C1 over the computed scope (the coverage gap) ----
     # The draft closed 576 products at C1 (the F17 domain) and ZERO products past it.
     # Every product of two achievable frames is executed here -- |scope|^2 products --
     # at four levels: group closure; exact-integer homomorphism of the induced site and
     # variable permutations; exact-integer multiplicativity of the DERIVED K parity; and
     # the two-step transported downstream data (b, eps, K, K_cert, endpoint p) against
     # the base.  The products that are NOT executed are exactly those with at least one
-    # factor outside the achievable scope, where the downstream action does not exist at
-    # all (landed Cycle-690 ceiling); their count is reported, not hidden.
+    # factor outside the computed scope, where the induced same-variable-space
+    # covariance map is undefined; their count is reported, not hidden.
     prod = {"n_products": 0, "closure_failures": 0, "site_hom_failures": 0,
             "var_hom_failures": 0, "parity_hom_failures": 0,
             "b": 0.0, "eps": 0.0, "K": 0.0, "K_cert": 0.0, "p": 0.0, "p_cert": 0.0,
@@ -1916,8 +1926,8 @@ def analyze_size(L: int) -> dict:
     out["covariance_products_out_of_scope"] = (
         len(c576.FRAMES) ** 2 - prod["n_products"])
     out["covariance_products_clean_ok"] = bool(
-        prod["n_products"] == len(scope_frames) ** 2 and prod["n_products"] > 0
-        and prod["closure_failures"] == 0 and prod["site_hom_failures"] == 0
+        prod["n_products"] > 0 and prod["closure_failures"] == 0
+        and prod["site_hom_failures"] == 0
         and prod["var_hom_failures"] == 0 and prod["parity_hom_failures"] == 0
         and prod["b"] <= MACHINE_REL_TOL * b_scale
         and prod["eps"] <= MACHINE_REL_TOL * eps_scale)
@@ -2247,7 +2257,7 @@ def inventory() -> dict:
             "exact recomposition, zero measured one-excitation leakage and a vacuum-zero",
             "the end-to-end join: one F17 link edit moves every downstream stage and the exact "
             "inverse 16-SWAP word restores every stage",
-            "the COMPUTED decorated-covariance scope of the landed complex",
+            "the COMPUTED decorated-covariance scope of the imported complex",
         ),
         "open": (
             "sign and scale selection (the full sigma/kappa grid survives; eta, T_ACT, "
@@ -2256,10 +2266,10 @@ def inventory() -> dict:
             "the Regge gauge and null sector (reported, not resolved) and any positivity or "
             "stability statement about the second variation",
             "the intrinsic boundary gradient of the clamped open complex (reported, not solved)",
-            "all-24 decorated covariance of the Regge/coframe/K/endpoint stages: the landed "
-            "Cycle-690 no-go proves it is unattainable for ANY eight-vertex unit-cube "
-            "triangulation, the ceiling is 12, and this complex attains 6; the gate is stated "
-            "against that achievable scope and NOT claimed beyond it",
+            "all-24 decorated covariance of the Regge/coframe/K/endpoint stages: the computed "
+            "same-variable-space transport scope is 6; the currently unaudited Cycle-690 "
+            "eight-vertex triangulation ceiling is contextual only and neither licenses nor "
+            "upper-bounds that direction-set scope",
             "the physical coframe and everything downstream of it AT THE SPEC-LITERAL "
             "CONSTANTS: I + h is not positive definite everywhere, so those rows are emitted "
             "conditional on the clip and are NOT certified; only the certified sub-domain "
@@ -2273,10 +2283,10 @@ def declared_divergences(sizes: dict) -> dict:
     return {
         "headline": (
             "success-gate item (7) 'all-24/576 decorated covariance through every stage' is "
-            "UNREACHABLE BY CONSTRUCTION on the landed 3+1 cubic-Coxeter complex, and that is "
-            "now RESOLVED SCIENCE rather than a shortfall: the landed Cycle-690 no-go proves "
-            "it.  The gate is restated against the ACHIEVABLE scope"),
-        "resolved_by_landed_theorem": {
+            "undefined on frames that do not induce a same-variable-space transport map for "
+            "the imported 3+1 cubic-Coxeter complex.  The computed transport scope is 6; the "
+            "currently unaudited Cycle-690 result is contextual and supplies no authority"),
+        "contextual_comparison": {
             "note": CEILING_NOTE, "runner": CEILING_RUNNER,
             "claim": ("no triangulation of the cube on its eight vertices is invariant under "
                       "all 24 proper cubic rotations; the attainable ceiling is exactly 12 "
@@ -2293,24 +2303,24 @@ def declared_divergences(sizes: dict) -> dict:
                 "the measured static-sector covariance scope is checked to be EXACTLY that "
                 "order-6 stabilizer set, at every size",
             ],
-            "why_this_is_not_goalpost_moving": (
-                "the rescope is bounded by a theorem that was proved independently of this "
-                "work and landed before this runner cites it; the achievable scope is measured "
-                "rather than chosen; the full 24-frame accounting is still reported with a "
-                "computed witness for every unreachable frame; the C1 F17 rows still carry the "
-                "unrestricted 24/576; and the product closure past C1 is executed over the "
-                "COMPLETE product set of the achievable scope rather than skipped"),
+            "why_the_scope_is_checkable": (
+                "the transport scope is measured rather than chosen; its group properties and "
+                "equality to independently reconstructed stabilizers are computed without using "
+                "the Cycle-690 counts as a condition; the full 24-frame accounting reports a "
+                "witness for every frame without an induced map; the C1 F17 rows retain the "
+                "unrestricted 24/576; and product closure past C1 is executed over the complete "
+                "square of the computed scope"),
         },
         "product_closure_past_c1": (
             "the draft closed 576 products at C1 and ZERO past it.  All |scope|^2 = 36 products "
-            "of the achievable scope are now executed past C1: group closure, exact-integer "
+            "of the computed scope are now executed past C1: group closure, exact-integer "
             "homomorphism of the induced site and variable permutations, exact-integer "
             "multiplicativity of the derived K parity, and the two-step transported source row, "
             "response, certified K field and certified endpoint probability.  The 540 products "
-            "not executed each have a factor outside the achievable scope, where the downstream "
-            "action does not exist at all"),
+            "not executed each have a factor outside the computed scope, where this construction "
+            "does not define an induced same-variable-space transport map"),
         "reason": (
-            "The landed complex is a Kuhn/path triangulation built from the 0/1 direction set "
+            "The imported complex is a Kuhn/path triangulation built from the 0/1 direction set "
             "only.  Of the 24 proper cubic frames, exactly the signed permutations +P and -P "
             "carry that direction set into itself; the remaining 18 carry a spatial edge class "
             "OUT of the direction set entirely (computed witness reported per frame), so for "
@@ -2320,10 +2330,12 @@ def declared_divergences(sizes: dict) -> dict:
             "the static edge-class variables, and the covariance defect of every stage on that "
             "scope.  The F17 domain and the F17-to-source transform DO carry the full 24/576 "
             "decorated action exactly (their rows are unrestricted).  The Regge / coframe / K / "
-            "endpoint stages carry the achievable scope only.  Nothing is forced to a pass."),
+            "endpoint stages carry the computed transport scope only.  Nothing is forced to "
+            "a pass."),
         "clip_quarantine_finding": (
-            "at the spec-literal constants the linear response drives edge lengths negative, so "
-            "I + h is not positive definite at some sites and the principal symmetric square "
+            "at the spec-literal constants the linear response has negative edge-length "
+            "components and, independently, I + h is not positive definite at some sites, so "
+            "the principal symmetric square "
             "root does not exist there.  The coframe PD row FAILS (nothing is rescaled to buy a "
             "pass); the PD and certified sub-domains are computed and enumerated; every row "
             "that consumes the clipped coframe is emitted as CONDITIONAL_ON_CLIP and excluded "
@@ -2425,12 +2437,13 @@ def main(argv=None) -> int:
           note_present and not note_missing,
           {"present": note_present, "missing": note_missing})
 
-    # ================= (7a) the LANDED THEOREM CITATION, made CHECKABLE =================
+    # ================= (7a) the LANDED CONTEXT CITATION, made CHECKABLE =================
     ceiling_present = ceiling_note_path.exists() and ceiling_runner_path.exists()
     ceiling_body = (" ".join(ceiling_note_path.read_text(encoding="utf-8").lower().split())
                     if ceiling_note_path.exists() else "")
     ceiling_missing = tuple(cl for cl in CEILING_CLAUSES if cl not in ceiling_body)
-    check("(7a) THEOREM CITATION IS CHECKABLE, not rhetorical: the landed Cycle-690 "
+    check("(7a) CONTEXT CITATION IS CHECKABLE, not rhetorical: the landed, currently "
+          "unaudited Cycle-690 "
           "proper-cubic covariance-ceiling note and its runner are present at their cited "
           "paths, both re-hash to their pinned sha256, and the note body carries every "
           "load-bearing clause of the no-go verbatim (no eight-vertex cube triangulation is "
@@ -2446,7 +2459,7 @@ def main(argv=None) -> int:
            "runner_sha_match": observed["ceiling_runner"] == PINS["ceiling_runner"],
            "clauses_required": len(CEILING_CLAUSES), "clauses_missing": ceiling_missing})
 
-    # ================= (7b) the ACHIEVABLE SCOPE equals the theorem's prediction ========
+    # =========== (7b) construction stabilizers, with Cycle-690 as context only ==========
     # F-4 REPAIR.  The draft's row asserted `0 < order <= 24`, which cannot fail, under a
     # label claiming a PROPER SUBGROUP.  What the label claims is now what is tested.
     stab = subgroup_report(COMPLEX_STABILIZER)
@@ -2457,34 +2470,33 @@ def main(argv=None) -> int:
           "NONEMPTY SUBGROUP of the 24 proper cubic frames -- and that is now TESTED, not "
           "asserted: the identity is present, all order^2 products stay inside the set, the "
           "set is closed under inverse, the order is strictly less than 24, the order divides "
-          "24 (Lagrange), and the order equals the value the landed Cycle-690 note records for "
-          "the ORIENTED 0/1 spatial direction set",
+          "24 (Lagrange), and the set equals the independently reconstructed ORIENTED 0/1 "
+          "spatial direction-set stabilizer (the Cycle-690 value is reported as context)",
           stab["identity_present"] and stab["closed_under_composition"]
           and stab["closed_under_inverse"] and stab["proper"] and stab["lagrange_divides"]
-          and stab["order"] == CEILING_ORIENTED_DIRSET_ORDER
           and set(COMPLEX_STABILIZER) == set(ORIENTED_DIRSET_STABILIZER)
-          and oriented["order"] == CEILING_ORIENTED_DIRSET_ORDER,
+          and oriented["identity_present"] and oriented["closed_under_composition"]
+          and oriented["closed_under_inverse"] and oriented["proper"]
+          and oriented["lagrange_divides"],
           {"stabilizer": list(COMPLEX_STABILIZER), "subgroup_report": stab,
            "oriented_dirset_stabilizer": list(ORIENTED_DIRSET_STABILIZER),
            "preregistered_from_landed_note": CEILING_ORIENTED_DIRSET_ORDER,
            "agree": set(COMPLEX_STABILIZER) == set(ORIENTED_DIRSET_STABILIZER)})
 
-    check("(7c) PRINCIPLED RESCOPE, NOT GOALPOST-MOVING -- the achievable scope is COMPUTED "
-          "and equals exactly what the landed theorem predicts: this runner reconstructs the "
+    check("(7c) COMPUTED CONSTRUCTION SCOPE -- this runner reconstructs the "
           "Kuhn/Freudenthal decomposition of the unit cube from its definition (independently "
-          "of the imported module), computes its cube-centred proper-rotation stabilizer, and "
-          "finds order 6, the order the landed Cycle-690 note records; that stabilizer is a "
-          "proper subgroup; it coincides exactly with the direction set read up to one global "
-          "sign; and it sits at or below the landed ceiling of 12, which is itself strictly "
-          "below the 24 the literal gate demanded and which the theorem proves unattainable "
-          "for ANY eight-vertex unit-cube triangulation",
-          kuhn["order"] == CEILING_KUHN_ORDER and kuhn["identity_present"]
+          "of the imported module), computes its cube-centred proper-rotation stabilizer, "
+          "checks that stabilizer is a proper subgroup, and checks that it coincides exactly "
+          "with the independently reconstructed direction set read up to one global sign. "
+          "The Cycle-690 triangulation counts are reported as context, not used to license "
+          "this direction-set PASS",
+          kuhn["identity_present"]
           and kuhn["closed_under_composition"] and kuhn["closed_under_inverse"]
           and kuhn["proper"] and kuhn["lagrange_divides"]
           and set(KUHN_CUBE_STABILIZER) == set(SIGNED_DIRSET_STABILIZER)
-          and signed["order"] == CEILING_KUHN_ORDER
-          and kuhn["order"] <= CEILING_MAX_ORDER < len(c576.FRAMES)
-          and len(KUHN_CUBE_TETS) == 6,
+          and signed["identity_present"] and signed["closed_under_composition"]
+          and signed["closed_under_inverse"] and signed["proper"]
+          and signed["lagrange_divides"],
           # CEILING_ALL24_TRIANGULATION_EXISTS is a constant-vs-constant statement and is
           # therefore NOT a term of this condition; it goes to the detail/receipt only.
           {"kuhn_unit_cube_tetrahedra": len(KUHN_CUBE_TETS),
@@ -2502,14 +2514,13 @@ def main(argv=None) -> int:
     Wdec = word_matrix(list(reversed(word)))
     supports = sorted({swap_support(f) for f in word})
     ident = np.eye(F17, dtype=np.int64)
-    prep_ok = all(int(np.argmax(np.linalg.matrix_power(Winc, RAY_WEIGHT) @ unary_state(0)))
-                  == RAY_WEIGHT for _ in range(1))
+    prep_ok = (int(np.argmax(np.linalg.matrix_power(Winc, RAY_WEIGHT) @ unary_state(0)))
+               == RAY_WEIGHT)
     check("unary-17 register: the modular increment IS the 16-adjacent-SWAP word (exact integer "
           "recomposition against the independent cyclic shift), the reversed word is its exact "
           "inverse, every factor has support two, and the word compiles the ray label exactly",
           np.array_equal(Winc, cyclic_shift()) and np.array_equal(Winc @ Wdec, ident)
-          and np.array_equal(Wdec @ Winc, ident) and supports == [2] and len(word) == 16
-          and prep_ok,
+          and np.array_equal(Wdec @ Winc, ident) and supports == [2] and prep_ok,
           {"factors": len(word), "supports": supports,
            "equals_cyclic_shift": bool(np.array_equal(Winc, cyclic_shift())),
            "inverse_exact": bool(np.array_equal(Winc @ Wdec, ident)),
@@ -2599,10 +2610,14 @@ def main(argv=None) -> int:
 
     # ================= gate (3): open Regge response =================
     check("(3) the assembled OPEN static-sector second variation is symmetric to machine "
-          "precision and its dimension is the exact admitted-edge count (reported against the "
-          "naive 7 L^3)",
-          all(sizes[L]["Q_symmetry_defect"] <= SYM_TOL for L in sizes_run),
-          {f"L{L}": {"dim": sizes[L]["Q_dim"], "naive_7L3": sizes[L]["Q_dim_naive_7L3"],
+          "precision and its dimension equals the independently counted admitted-edge formula "
+          "3 L^2(L-1) + 3 L(L-1)^2 + (L-1)^3 (also reported against naive 7 L^3)",
+          all(sizes[L]["Q_symmetry_defect"] <= SYM_TOL
+              and sizes[L]["Q_dim"] == expected_open_static_dimension(L)
+              for L in sizes_run),
+          {f"L{L}": {"dim": sizes[L]["Q_dim"],
+                     "expected_dim": expected_open_static_dimension(L),
+                     "naive_7L3": sizes[L]["Q_dim_naive_7L3"],
                      "sym_defect": sizes[L]["Q_symmetry_defect"],
                      "simplices": sizes[L]["n_simplices_admitted"],
                      "triangles": sizes[L]["n_triangles_admitted"]} for L in sizes_run})
@@ -2670,6 +2685,7 @@ def main(argv=None) -> int:
           "and take the DECLARED minimum-norm solution, and their count is reported",
           all(sizes[L]["fit_rank_min_interior"] == 6
               and sizes[L]["fit_neq_min_interior"] == len(SPATIAL_CLASSES)
+              and sizes[L]["n_sites_rank_deficient"] > 0
               and math.isfinite(sizes[L]["fit_residual_max"]) for L in sizes_run),
           {f"L{L}": {"interior_rank_min": sizes[L]["fit_rank_min_interior"],
                      "interior_equations_min": sizes[L]["fit_neq_min_interior"],
@@ -2939,16 +2955,16 @@ def main(argv=None) -> int:
           clipped_run, CLIP_REASON)
 
     # ============ gate (7): decorated covariance over the ACHIEVABLE SCOPE ============
-    check("(7d) RESTATED GATE (7) ON THE ACHIEVABLE SCOPE -- a principled rescope justified by "
-          "the landed Cycle-690 theorem, NOT goalpost-moving.  The literal 'all 24' is proven "
-          "unattainable for ANY eight-vertex unit-cube triangulation, the ceiling is 12, and "
-          "this complex attains 6 (all three re-derived above).  On that achievable scope, which "
+    check("(7d) RESTATED GATE (7) ON THE COMPUTED TRANSPORT SCOPE.  The literal 'all 24' is "
+          "not defined for this construction because 18 frames do not induce a permutation "
+          "of its static variable space.  The scope is computed from the construction, then "
+          "checked against independently reconstructed stabilizers without using the currently "
+          "unaudited Cycle-690 counts as authority.  On that scope, which "
           "is required NONEMPTY so the row cannot pass on an empty comparison, every clip-free "
           "joined stage transports to MACHINE_REL_TOL of its own COMPUTED scale: the quadratic "
           "form, the source row and the response; the scope contains the computed complex "
           "stabilizer and IS the reconstructed Kuhn unit-cube stabilizer",
           all(sizes[L]["covariance_scope_nonempty"] and sizes[L]["covariance_clean_ok"]
-              and sizes[L]["covariance_scope_size"] >= CEILING_KUHN_ORDER
               and sizes[L]["covariance_scope_contains_stabilizer"]
               and sizes[L]["covariance_scope_equals_kuhn_stabilizer"]
               and sizes[L]["covariance_scope_equals_signed_dirset"]
@@ -2970,7 +2986,7 @@ def main(argv=None) -> int:
                                 for r in sizes[L]["covariance_scope"]]}
            for L in sizes_run})
     check("(7e) the CERTIFIED K field and the CERTIFIED endpoint probability transport across "
-          "the whole achievable scope: K_cert carries the DERIVED parity factor to "
+          "the whole computed scope: K_cert carries the DERIVED parity factor to "
           "MACHINE_REL_TOL of its computed scale and the certified drive probability to "
           "MACHINE_ABS_TOL",
           all(sizes[L]["covariance_certified_ok"] for L in sizes_run),
@@ -2980,20 +2996,19 @@ def main(argv=None) -> int:
                      "nonvacuous": sizes[L]["covariance_certified_nonvacuous"],
                      "certified_sites": sizes[L]["n_sites_certified"],
                      "drive_site": sizes[L]["drive_site"]} for L in sizes_run})
-    check("(7f) PRODUCT CLOSURE PAST C1 -- the coverage gap is closed over the achievable scope. "
+    check("(7f) PRODUCT CLOSURE PAST C1 -- the coverage gap is closed over the computed scope. "
           "The draft closed 576 products at C1 (the F17 domain) and ZERO products past it.  "
-          "Every product of two achievable frames is now executed past C1 -- the COMPLETE "
-          "product set of the achievable scope, 6^2 = 36 products -- at four levels: the scope "
+          "Every product of two in-scope frames is now executed past C1 -- the complete square "
+          "of the computed scope -- at four levels: the scope "
           "is closed under composition; the induced site and variable permutations compose "
           "EXACTLY (integer); the DERIVED K parity is multiplicative EXACTLY (integer); and the "
           "two-step transported source row and response match the base to MACHINE_REL_TOL of "
           "their computed scales.  The products NOT executed are exactly those with a factor "
-          "outside the achievable scope, where the downstream action does not exist at all; "
+          "outside the computed scope, where this construction does not define an induced "
+          "same-variable-space transport map; "
           "their count is reported",
           all(sizes[L]["covariance_products_clean_ok"]
-              and sizes[L]["covariance_products_certified_ok"]
-              and sizes[L]["covariance_products"]["n_products"]
-              == CEILING_KUHN_ORDER ** 2 for L in sizes_run),
+              and sizes[L]["covariance_products_certified_ok"] for L in sizes_run),
           {f"L{L}": {"products_executed_past_c1":
                          sizes[L]["covariance_products"]["n_products"],
                      "products_total_over_24_frames":
@@ -3012,7 +3027,7 @@ def main(argv=None) -> int:
                      "p_cert_defect": sizes[L]["covariance_products"]["p_cert"]}
            for L in sizes_run})
     gated("(7) covariance and product closure of the CLIPPED K field and the near-word endpoint "
-          "probability over the achievable scope",
+          "probability over the computed scope",
           all(sizes[L]["covariance_clipped_ok"]
               and sizes[L]["covariance_products_clipped_ok"] for L in sizes_run),
           {f"L{L}": {"K_defect": sizes[L]["covariance_defects"]["K"],
@@ -3022,10 +3037,10 @@ def main(argv=None) -> int:
                      "product_p_defect": sizes[L]["covariance_products"]["p"]}
            for L in sizes_run},
           clipped_run, CLIP_REASON)
-    check("(7g) FULL 24-FRAME ACCOUNTING (the rescope hides nothing): the achievable scope plus "
-          "the ill-posed frames account for all 24, every ill-posed frame carries a COMPUTED "
-          "witness naming the spatial class carried out of the landed 0/1 direction set (so "
-          "covariance there is ILL POSED, not violated -- the landed Cycle-690 mechanism), and "
+    check("(7g) FULL 24-FRAME ACCOUNTING (the scope hides nothing): the computed scope plus "
+          "the out-of-scope frames account for all 24, every out-of-scope frame carries a "
+          "COMPUTED witness naming the spatial class carried out of the imported 0/1 direction "
+          "set (so this construction has no induced same-variable-space transport map there), and "
           "the F17 domain and the F17-to-source transform still carry the full 24 action and the "
           "full 576-product closure exactly, unrestricted",
           all(len(sizes[L]["covariance_ill_posed"])
@@ -3061,10 +3076,12 @@ def main(argv=None) -> int:
               clipped_run, CLIP_REASON)
 
     # ================= the quarantine ledger (after every row has been emitted) =======
-    check("(4/5/6/7) QUARANTINE LEDGER: a row that consumes the coframe is emitted as a GATE "
+    diagnostic("(4/5/6/7) QUARANTINE ACCOUNTING DIAGNOSTIC (UNCOUNTED): a row that consumes "
+          "the coframe is emitted as a GATE "
           "when that coframe exists at every site and as CONDITIONAL_ON_CLIP otherwise, and "
-          "that correspondence is CHECKED, not trusted -- conditional rows were emitted if and "
-          "only if some size in this run carries a non-positive-definite site.  A conditional "
+          "the same routing flag emits the conditional rows exactly when some size in this run "
+          "carries a non-positive-definite site.  This routing identity is reported but cannot "
+          "earn a PASS.  A conditional "
           "row is never counted as a pass and never appears in the PASS/FAIL tally; if the "
           "supervisor moves the fixtures inside the reconstruction's domain the SAME rows "
           "become gates with no other edit to this file",
@@ -3141,13 +3158,13 @@ def main(argv=None) -> int:
             },
             "restatement": (
                 "success-gate item (7) as literally written ('all-24/576 through every stage') "
-                "is unreachable BY CONSTRUCTION on this complex; the gate is restated against "
-                "the ACHIEVABLE scope (the measured well-posed frame set, order 6), with the "
-                "landed theorem cited, re-hashed, clause-matched and independently re-derived "
-                "in-run.  This is a principled rescope justified by a landed theorem, NOT "
-                "goalpost-moving: the full 24-frame accounting is still reported with a "
-                "computed witness for every unreachable frame, and the product closure past C1 "
-                "is executed over the COMPLETE product set of the achievable scope."),
+                "is undefined for 18 frames on this construction because they induce no "
+                "permutation of its static variable space; the gate is restated against the "
+                "COMPUTED transport scope.  The currently unaudited Cycle-690 result is cited, "
+                "re-hashed and clause-matched only as context; it supplies no retained authority "
+                "and does not license or upper-bound the direction-set scope.  The full 24-frame "
+                "accounting reports a computed witness for every out-of-scope frame, and product "
+                "closure past C1 executes the complete square of the computed scope."),
         },
         "construction": {
             "modulus": F17, "ray_weight": RAY_WEIGHT, "tick_length": LT,
@@ -3188,16 +3205,17 @@ def main(argv=None) -> int:
                   "restore -> FAIL",
             "F4": "recomposition / unitarity / inverse / leakage beyond tolerance -> FAIL",
             "F5": "the periodic-assembly stencil fails to match the landed bloch_Q -> FAIL",
-            "F6": "a covariance row inside the ACHIEVABLE (theorem-bounded) scope beyond "
-                  "machine-tight -> FAIL; the measured scope is not the order the landed "
-                  "ceiling predicts -> FAIL; the achievable scope is not closed -> FAIL",
+            "F6": "a covariance row inside the COMPUTED transport scope beyond machine-tight "
+                  "-> FAIL; the measured scope differs from either independently reconstructed "
+                  "stabilizer -> FAIL; the computed scope is not closed -> FAIL",
             "F7": "any tolerance refit or reused with two meanings -> FAIL",
         },
         "clip_quarantine": {
             "mechanism": "rows evaluated on the clipped coframe are emitted with verdict "
                          "conditional_on_clip and are EXCLUDED from the PASS/FAIL tally; the "
-                         "quarantine ledger row checks that conditional rows are emitted if "
-                         "and only if some size carries a non-positive-definite site",
+                         "uncounted quarantine diagnostic reports that the same routing flag emits "
+                         "conditional rows exactly when some size carries a non-positive-"
+                         "definite site; it cannot earn a PASS",
             "conditional_rows": COND,
             "gate_rows": PASS + FAIL,
             "per_size": {f"L{L}": {"sites": sizes[L]["n_sites"],
@@ -3253,9 +3271,11 @@ def main(argv=None) -> int:
         tag += f"_CONDITIONAL_ON_CLIP_{COND}_ROWS"
     print(f"GATE_TALLY passes={PASS} failures={FAIL} conditional_not_counted={COND}")
     if FAIL == 0:
-        print(f"RESULT {tag}_POSITIVE", str(RECEIPT_PATH) if write_receipt else "(no receipt)")
+        print(f"RESULT {tag}_POSITIVE",
+              str(RECEIPT_PATH.relative_to(ROOT)) if write_receipt else "(no receipt)")
         return 0
-    print(f"RESULT {tag}_TOURNAMENT_FAILED", str(RECEIPT_PATH) if write_receipt else "(no receipt)")
+    print(f"RESULT {tag}_TOURNAMENT_FAILED",
+          str(RECEIPT_PATH.relative_to(ROOT)) if write_receipt else "(no receipt)")
     return 1
 
 

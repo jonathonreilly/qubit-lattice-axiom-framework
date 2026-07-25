@@ -12,18 +12,20 @@ Runner: `scripts/physical_open_coframe_k_endpoint_compiler_cycle696_2026_07_25.p
 
 ## What is executed
 
-One joined chain on the decorated F17 domain, in open real space: the F17 flux
-state feeds a local lawful source transform; the source drives the real-space
-Regge second variation assembled from the landed frontier module's local
-primitives on an open spatial box with no wrap; the response metric yields
-site-local coframes whose open finite-difference derivative supplies K; and K
-drives a unitary endpoint coupling lowered to a support-two word with an
-exact-recomposition certificate. The tick direction retains the landed module's
-3+1 identification; "open real space" refers to the three spatial directions.
+One joined construction is attempted on the decorated F17 domain, in open real
+space: the F17 flux state feeds a local supplied source transform; the source
+drives the real-space Regge second variation assembled from the landed frontier
+module's local primitives on an open spatial box with no wrap; the response
+metric attempts site-local coframes; wherever those coframes exist, their open
+finite-difference derivative supplies K; and K drives a unitary endpoint
+coupling lowered to a support-two word with an exact-recomposition certificate.
+The tick direction retains the landed module's 3+1 identification; "open real
+space" refers to the three spatial directions.
 
-This closes, on declared fixtures, the two Cycle-626 Route-C residuals — no
-open real space coframe derivative, and the F17-to-Regge source transform — and
-executes the join those cycles did not.
+This executes the proposed F17-to-Regge source transform and the supplied open
+coframe-derivative construction. It does not close the full-fixture physical
+coframe derivative: the declared response leaves the reconstruction's domain,
+and the certified sub-domain is empty at `L=6`.
 
 ## Covariance scope, and its honest licence
 
@@ -39,8 +41,8 @@ recorded rather than hidden.
 ## Conditional on clip
 
 At the spec-literal source coupling the linear response drives reconstructed
-edge lengths negative at the port sites, so `I + h` is not positive definite
-there and the principal symmetric square root does not exist. That row FAILS and
+edge lengths negative at the port sites, and `I + h` is not positive definite
+there, so the principal symmetric square root does not exist. That row FAILS and
 is not rescaled to buy a pass. Every downstream row that would otherwise consume
 the clipped square root is reported as conditional on clip and is excluded from
 the pass/fail tally; only rows running on the certified sub-domain, where the

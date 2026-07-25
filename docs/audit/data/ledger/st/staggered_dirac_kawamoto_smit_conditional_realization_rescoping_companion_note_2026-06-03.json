@@ -1,24 +1,45 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T16:55:14.662530+00:00",
+  "audit_invocation_history": [
+    "06b10596d2b949e9aa0a1f5498a55c59"
+  ],
+  "audit_invocation_id": "06b10596d2b949e9aa0a1f5498a55c59",
+  "audit_state_snapshot": {
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06": "Uniqueness up to global sign of the scalar Z_2 edge-flip grading on nearest-neighbor Z^3, its multiplication by the central Pauli Cl(3) pseudoscalar, and edgewise anticommutation with arbitrary nearest-neighbor odd stencils."
+    },
+    "dep_claim_type": {
+      "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06": "retained_bounded"
+    },
+    "deps": [
+      "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 0.0,
+    "runner_hash": "ccf761fb04ecea3572d32e60f4d89e2ec6e85021cb7b435013a2b6c6937f0889",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_renaming",
+  "auditor": "codex-audit-batch-A-20260725-513ce53d",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The retained authority closes epsilon uniqueness and the nearest-neighbor chirality sign reversal. The packet supplies no derivation identifying the hard-coded eta functions as the Kawamoto-Smit phase surface.",
   "claim_id": "staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_note_2026-06-03",
-  "claim_scope": null,
+  "claim_scope": "The bounded identification of the retained scalar chirality field with the displayed three-dimensional Kawamoto-Smit eta phase surface and its global-phase stability.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem.",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T16:55:14.662530+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,19 +47,20 @@
     "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06"
   ],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_renaming",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_renaming",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Given the chirality-parity bridge, the finite Kawamoto-Smit phases are eta_1(x)=1, eta_2(x)=(-1)^x_1, and eta_3(x)=(-1)^(x_1+x_2).",
+  "load_bearing_step_class": "F",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "4e9b25cc6d6353df2e125235297e07d409822b97df08700bdad9ba9fa692fa8f",
   "note_path": "docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_CONDITIONAL_REALIZATION_RESCOPING_COMPANION_NOTE_2026-06-03.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "missing_dependency_edge: add the named eta-holonomy base-flux theorem as a direct dependency, include its derivation of the ordered eta phases, and make the runner independently verify that derivation rather than its own definitions.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -140,14 +162,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 7,
     "B": 0,
-    "C": 0,
+    "C": 2,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 9
   },
   "runner_path": "scripts/frontier_staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_verifier.py",
   "title": "Staggered Dirac Kawamoto-Smit Conditional Realization Rescoping Companion",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: the runner defines each eta function by the displayed formula and then compares that definition with the same formula, while its phase-gauge check concerns only the chirality ratio. Why this blocks: the retained chirality-parity authority derives total parity epsilon but does not derive the ordered eta_mu factors or identify them with the Kawamoto-Smit phase surface. Repair target: supply the named eta-holonomy derivation as a direct dependency and test its spin-diagonal connection identity independently. Claim boundary until fixed: epsilon uniqueness and the scalar nearest-neighbor chirality sign reversal remain supported, but the eta-phase identification is only a renaming in this packet."
 }

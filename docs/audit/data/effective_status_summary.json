@@ -83,7 +83,7 @@
     "audit_in_progress": 2,
     "audited_conditional": 213,
     "audited_failed": 54,
-    "audited_numerical_match": 10,
+    "audited_numerical_match": 11,
     "audited_renaming": 31,
     "decoration_under_abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18": 1,
     "decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": 1,
@@ -108,7 +108,7 @@
     "retained": 110,
     "retained_bounded": 336,
     "retained_pending_chain": 7,
-    "unaudited": 2725
+    "unaudited": 2724
   },
   "retained_pending_chain_count": 7,
   "retained_pending_chain_examples": [

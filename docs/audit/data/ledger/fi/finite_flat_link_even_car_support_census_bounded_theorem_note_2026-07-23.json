@@ -26,7 +26,10 @@
   "direct_in_degree": 0,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
-  "helper_runner_paths": [],
+  "helper_runner_paths": [
+    "scripts/frontier_finite_flat_link_even_car_support_census_factors_2026_07_23.py",
+    "scripts/frontier_finite_flat_link_even_car_support_census_graph_2026_07_23.py"
+  ],
   "independence": null,
   "intrinsic_status": "unaudited",
   "load_bearing_score": 0.0,
@@ -34,7 +37,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "07bb097d76a5803dd1c1ff3b4d04acecd14b5a4d507c364080ad28009ca5c78a",
+  "note_hash": "8fe3d4f6c98596a6160ed2640f17399aa4b454437bd680f0c3c3a4d43d5e8b72",
   "note_path": "docs/FINITE_FLAT_LINK_EVEN_CAR_SUPPORT_CENSUS_BOUNDED_THEOREM_NOTE_2026-07-23.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

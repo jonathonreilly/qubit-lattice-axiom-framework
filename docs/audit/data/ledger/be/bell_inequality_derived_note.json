@@ -37,7 +37,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "retained_bounded",
-  "load_bearing_score": 9.875,
+  "load_bearing_score": 9.892,
   "load_bearing_step": "For the explicitly defined finite Hamiltonian H = H1\u2297I + I\u2297H1 + G \u03a3_ij V(i,j)|i><i|\u2297|j><j|, the Horodecki CHSH computation gives |S| > 2 at the listed nonzero G values and |S| = 2 at G = 0.",
   "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
@@ -256,6 +256,6 @@
   },
   "runner_path": "scripts/frontier_bell_inequality.py",
   "title": "Bell Inequality (CHSH) Violation with Explicit Cl(3) Taste Measurements (Conditional Model Surface)",
-  "transitive_descendants": 82,
+  "transitive_descendants": 83,
   "verdict_rationale": "The load-bearing step is class C for the narrowed finite model: the runner constructs the lattice, Clifford/taste operators, Poisson kernel, Hamiltonian, eigenstates, and CHSH matrix from the stated inputs. The displayed taste identities follow algebraically from x_mu = 2X_mu + eta_mu, and independent spot recomputation reproduces representative 1D, 2D, and 3D CHSH entries. The selected G values are part of the bounded model claim rather than an imported calibrated external comparator, so this is not class G on the audited scope. No broader physical or framework-native Bell theorem is ratified here."
 }

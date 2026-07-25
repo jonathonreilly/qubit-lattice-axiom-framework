@@ -29,7 +29,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 8.748,
+  "load_bearing_score": 8.785,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -195,6 +195,6 @@
   },
   "runner_path": "scripts/frontier_staggered_self_consistent_two_body.py",
   "title": "Staggered Self-Consistent Two-Body Channel on an Open 3D Lattice",
-  "transitive_descendants": 37,
+  "transitive_descendants": 38,
   "verdict_rationale": null
 }

@@ -74,7 +74,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 14.013,
+  "load_bearing_score": 14.016,
   "load_bearing_step": "Because the irreducible summands A_1 and E occur with multiplicity one, Schur's lemma makes every invariant Hermitian operator scalar on each summand.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -167,6 +167,6 @@
   },
   "runner_path": "scripts/frontier_s3_mass_matrix_no_go.py",
   "title": "S_3 Mass-Matrix Conditional Degeneracy Lemma",
-  "transitive_descendants": 1460,
+  "transitive_descendants": 1463,
   "verdict_rationale": "Issue: The A_1 direct-sum E carrier is a supplied hypothesis rather than a result derived from retained framework content. Why this blocks: The correct algebraic proof and runner establish only the conditional representation-theory statement. Repair target: Add and audit a carrier-identification bridge if promotion to a physical-carrier claim is intended. Claim boundary until fixed: No physical-generation, lattice-taste, or hw=1 carrier conclusion follows."
 }

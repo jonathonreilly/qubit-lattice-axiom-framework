@@ -29,7 +29,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 4.407,
+  "load_bearing_score": 4.5,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -160,6 +160,6 @@
   },
   "runner_path": "scripts/frontier_universal_gr_invariant_frame_obstruction.py",
   "title": "Universal GR Invariant-Frame Obstruction Note",
-  "transitive_descendants": 14,
+  "transitive_descendants": 15,
   "verdict_rationale": null
 }

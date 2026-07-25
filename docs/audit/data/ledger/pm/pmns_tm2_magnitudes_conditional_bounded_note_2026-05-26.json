@@ -63,7 +63,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "retained_bounded",
-  "load_bearing_score": 11.992,
+  "load_bearing_score": 11.996,
   "load_bearing_step": "The electron-row sum fixes |U_e1|^2 = 2/3 - s^2, while the first- and third-column sums together with mu-tau equality fix the remaining paired entries as 1/6 + s^2/2 and (1 - s^2)/2.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -156,6 +156,6 @@
   },
   "runner_path": "scripts/pmns_tm2_magnitudes_conditional_runner.py",
   "title": "PMNS TM2 Magnitudes Conditional Matrix -- Bounded Note",
-  "transitive_descendants": 719,
+  "transitive_descendants": 721,
   "verdict_rationale": "The claim is a correct finite-dimensional algebraic theorem within its explicitly conditional scope and does not purport to derive the PMNS residual assumptions or a value of s^2. The runner exactly verifies 41 algebraic instances and structural checks, although it encodes the displayed matrix and samples finitely many parameter values; the general closure therefore rests on the note's direct symbolic proof. No empirical comparator, tuned input, renaming, or unclosed cited authority enters the audited conclusion."
 }

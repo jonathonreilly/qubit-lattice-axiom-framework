@@ -1,5 +1,5 @@
 {
- "as_of_date": "2026-07-24",
+ "as_of_date": "2026-07-25",
  "lane_ids": [
   "a3_option_c_brannen_rivero_physical_lattice_bounded_obstruction_note_2026-05-08_optc",
   "a3_r1_review_confirms_obstruction_note_2026-05-08_r1hr",
@@ -501,7 +501,6 @@
   "universal_gr_invariant_nonlinear_completion_note",
   "universal_gr_isotropic_glue_operator_note",
   "universal_gr_isotropic_schur_localization_note",
-  "universal_gr_lorentzian_global_atlas_closure_note",
   "universal_gr_lorentzian_signature_extension_note",
   "universal_gr_positive_background_extension_note",
   "universal_gr_positive_background_local_closure_note",

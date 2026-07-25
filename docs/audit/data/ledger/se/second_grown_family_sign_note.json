@@ -58,7 +58,7 @@
   ],
   "independence": "fresh_context",
   "intrinsic_status": "retained_bounded",
-  "load_bearing_score": 12.1,
+  "load_bearing_score": 12.115,
   "load_bearing_step": "The sweep passed on all tested rows: drift values 0.0, 0.1, 0.2, 0.3, 0.5 across seeds 0, 1, 2, for 15/15 rows passed.",
   "load_bearing_step_class": "C",
   "max_descendant_status": "retained_no_go",
@@ -225,6 +225,6 @@
   },
   "runner_path": "scripts/SECOND_GROWN_FAMILY_SIGN_SWEEP.py",
   "title": "Second Grown Family Signed-Source Note",
-  "transitive_descendants": 96,
+  "transitive_descendants": 97,
   "verdict_rationale": "The runner is not a print-only artifact and does not hard-code the reported row values; it computes source fields, propagates amplitudes, measures detector centroid shifts, and applies explicit pass criteria. The note's conclusion is narrow and matches the completed runner output: 15/15 tested drift-seed rows pass, with exact zero and neutral baselines and near-linear charge scaling. No cited upstream authority is imported, and no external comparator or tuned observational value is used."
 }

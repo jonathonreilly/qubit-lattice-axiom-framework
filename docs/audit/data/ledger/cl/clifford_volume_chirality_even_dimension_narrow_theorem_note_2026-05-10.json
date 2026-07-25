@@ -74,7 +74,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 13.934,
+  "load_bearing_score": 13.937,
   "load_bearing_step": "For odd n, centrality and invertibility of the volume element imply that every internal element anticommuting with all generators is zero.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -1725,6 +1725,6 @@
   },
   "runner_path": "scripts/audit_companion_clifford_volume_chirality_even_dimension_exact.py",
   "title": "Clifford Volume-Element Chirality Forces Even Total Dimension Narrow Theorem",
-  "transitive_descendants": 1382,
+  "transitive_descendants": 1385,
   "verdict_rationale": "The source gives a sound algebraic proof from the Clifford relations, covering the even construction, the odd internal-kernel exclusion, and the d_s=3 parity consequence. The runner source genuinely constructs and solves the full coefficient systems, supplies independent matrix checks and mutation falsifiers, and reports 79 class-A passes. N1 clean certification nevertheless fails because the rendered current-cycle stdout contains only three complete route records; the first two are absent or truncated, and runner source cannot substitute for live ATTEMPTED-route evidence. N2 has one internal-kernel wall, N3's boundary and canonical occurrences are non-load-bearing, N4 has no prior-ruled route, N5 supplies all five resolutions, N6 candidates do not close or alter the pure Clifford issue, N7 resolves the external-carrier steelman, and N8 exposes no applicable current-scope echo, leaving only the N1 artifact deficiency."
 }

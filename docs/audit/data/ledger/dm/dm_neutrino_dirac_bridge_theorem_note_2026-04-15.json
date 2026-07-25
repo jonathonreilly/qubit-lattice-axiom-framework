@@ -74,7 +74,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 18.294,
+  "load_bearing_score": 18.298,
   "load_bearing_step": "`{M(phi), gamma_5} = 0`; therefore `P_L M(phi) P_L = P_R M(phi) P_R = 0`, so `M(phi)` is purely chiral off-diagonal.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -1780,6 +1780,6 @@
   },
   "runner_path": "scripts/frontier_dm_neutrino_dirac_bridge_theorem.py",
   "title": "DM Neutrino Dirac Bridge Theorem Note",
-  "transitive_descendants": 887,
+  "transitive_descendants": 889,
   "verdict_rationale": "For the displayed matrices and real phi, the anticommutation and Xi_5 commutation/block conclusions are algebraically sound, and all 28 reported checks are class-A identity checks. However, the runner neither checks Hermiticity nor proves the identities for arbitrary phi, and the referenced exact companion is not supplied. The source also treats the M(phi) family and gamma_5 convention as admitted upstream inputs while providing no one-hop authority. For the asserted Xi_5 negative boundary, N1/N7 contain one direct finite-matrix route, N2/N3 expose the admitted provenance, N4 has no prior witness, N5 lacks an all-resolution execution, and the N6/N8 indexes do not repair those omissions."
 }

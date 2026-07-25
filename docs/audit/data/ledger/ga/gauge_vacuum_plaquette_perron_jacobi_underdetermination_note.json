@@ -42,7 +42,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 12.726,
+  "load_bearing_score": 12.73,
   "load_bearing_step": "The runner exhibits two explicit admissible positive residual source-sector environment operators with m_1^(A) != m_1^(B).",
   "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
@@ -288,6 +288,6 @@
   },
   "runner_path": "scripts/frontier_gauge_vacuum_plaquette_perron_jacobi_underdetermination.py",
   "title": "Gauge-Vacuum Plaquette Perron/Jacobi Underdetermination",
-  "transitive_descendants": 846,
+  "transitive_descendants": 848,
   "verdict_rationale": "Issue: the runner proves only a 36-state NMAX=5 truncation, while the note presents its witnesses as operators on the full source sector and calls the resulting non-uniqueness exact. Why this blocks: positivity and differing moments for a non-invariant finite truncation do not establish the corresponding full-sector obstruction without an analytic lift or cutoff-stability theorem. N1-N8 gate: N1 tests local-factor, symmetry, residual-sector, Perron-state, and sampled finite-case routes only at finite size; N2 identifies the physical compression and residual-diagonality walls; N3 finds those admissions explicit rather than hidden; N4 supplies no retained prior witness for the lift; N5 lacks the required five-resolution execution; N6 finds no indexed premise closing the lift; N7 leaves the finite-box steelman unresolved at full-sector scope; and N8 supplies related echoes but no independent closure. Repair target and claim boundary until fixed: add an analytic untruncated counterexample or narrow the theorem explicitly to the NMAX=5 witness, while retaining the physical Wilson and full-sector conclusions as open."
 }

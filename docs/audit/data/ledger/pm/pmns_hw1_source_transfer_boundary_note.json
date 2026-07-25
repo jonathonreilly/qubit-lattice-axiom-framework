@@ -52,7 +52,7 @@
   ],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 12.077,
+  "load_bearing_score": 12.081,
   "load_bearing_step": "Stacking the supplied response columns gives K = (I - lam * delta)^-1, so delta = (I - K^-1) / lam recovers the same effective block obtained directly by the Schur complement.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -528,6 +528,6 @@
   },
   "runner_path": "scripts/frontier_pmns_hw1_source_transfer_boundary.py",
   "title": "PMNS HW1 Source-Transfer Boundary",
-  "transitive_descendants": 763,
+  "transitive_descendants": 765,
   "verdict_rationale": "Within the narrowed fixture-conditional scope, the Part 4 identity is valid and the completed runner reports agreement at numerical precision. The result remains conditional because the sector operators, tau classifier, probe weights, and response-column convention are admitted, while the runner constructs its fixtures from hard-coded active and passive blocks rather than deriving them from the accepted framework premises. N1: direct Schur evaluation is the only tested alternative route; N2: fixture selection and tau/probe conventions are independent walls; N3: the note exposes those admissions; N4: no prior retained residual witness is supplied; N5: negative language is bounded to transfer-only blindness and current-bank nonderivation; N6: indexed premises and reframes do not close the walls; N7: the direct Schur path is the strongest steelman; N8: the cross-cycle index supplies no applicable closure of the missing source-pack derivation."
 }

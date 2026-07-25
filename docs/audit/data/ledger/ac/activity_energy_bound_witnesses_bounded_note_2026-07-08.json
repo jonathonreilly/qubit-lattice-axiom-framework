@@ -1,42 +1,88 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T17:17:32.098658+00:00",
+  "audit_invocation_history": [
+    "9110cc120d474b868375cb489a5d8187"
+  ],
+  "audit_invocation_id": "9110cc120d474b868375cb489a5d8187",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 5,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/activity_energy_bound_witnesses_2026_07_08.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 1.5,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/activity_energy_bound_witnesses_2026_07_08.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "f91246325209109045acd6a95190426c2f10b97ca124438630bbdae07f4dd3c3",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "f91246325209109045acd6a95190426c2f10b97ca124438630bbdae07f4dd3c3",
+    "runner_path": "scripts/activity_energy_bound_witnesses_2026_07_08.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 1
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-ca8f4b79",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The exact operator inequality and finite toy outputs close from the stated mathematical inputs, but the record-opportunity interpretation does not close because AO is an explicitly supplied, unproved bridge.",
   "claim_id": "activity_energy_bound_witnesses_bounded_note_2026-07-08",
-  "claim_scope": null,
+  "claim_scope": "For normalized finite-dimensional states and a declared local-term Hamiltonian decomposition, the exact local-activity bound and the stated dense-model and one-particle finite toy diagnostics; any record-opportunity interpretation remains conditional on AO.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T17:17:32.098658+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 1,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 1.5,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Terms disjoint from R vanish under the partial trace, while contractivity, the triangle inequality, and ||[h_X,rho]||_1 <= 2||h_X||||rho||_1 give a_R <= 2 sum_{X intersects R} ||h_X||.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "fe7bd02fc78dce4f454ea004a42592fd9a92108633d2266ac5a2d9dc3c850ddb",
   "note_path": "docs/ACTIVITY_ENERGY_BOUND_WITNESSES_BOUNDED_NOTE_2026-07-08.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "missing_bridge_theorem: retain a derivation of AO, or explicitly restrict the audited row to the operator bound and toy diagnostics and add a dated downstream-hygiene line to this note's boundary.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -92,13 +138,13 @@
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
-    "B": 0,
-    "C": 0,
+    "B": 1,
+    "C": 3,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 4
   },
   "runner_path": "scripts/activity_energy_bound_witnesses_2026_07_08.py",
   "title": "Local Activity Bound And Finite Toy Witnesses Conditional On A Record-Opportunity Bridge",
   "transitive_descendants": 1,
-  "verdict_rationale": null
+  "verdict_rationale": "The operator inequality closes algebraically: disjoint Hamiltonian terms vanish after the partial trace, and standard trace-norm inequalities yield the stated bound. The runner genuinely computes the finite dense-model and chain diagnostics; its sampled bound check supports but does not replace the analytic proof. However, AO is expressly supplied rather than derived, so the optional record-opportunity reading remains conditional."
 }

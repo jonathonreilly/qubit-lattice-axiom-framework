@@ -33,7 +33,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 6.085,
+  "load_bearing_score": 6.2,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -54,6 +54,6 @@
   },
   "runner_path": "scripts/kcpt_cp_completion_under_extended_group_2026_07_20.py",
   "title": "KCPT CP-completion under the extended group H = \u27e8G_amb, S_eps\u27e9: the unique real 12 splits into CP-even 12\u207a and CP-odd 12\u207b, and the 20 complex modes CP-double with their anti-holomorphic conjugates",
-  "transitive_descendants": 11,
+  "transitive_descendants": 12,
   "verdict_rationale": null
 }

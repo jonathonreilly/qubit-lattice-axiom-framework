@@ -48,7 +48,7 @@
   ],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 13.081,
+  "load_bearing_score": 13.083,
   "load_bearing_step": "Multiplying each supplied flavor equation by its integrating factor and integrating gives Y_alpha(Z) = Psi_[z_0,Z](P_alpha), hence F_[z_0,Z](P) = sum_alpha Psi_[z_0,Z](P_alpha).",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -1516,6 +1516,6 @@
   },
   "runner_path": "scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py",
   "title": "DM Leptogenesis Conditional Flavor-Column Functional Identity",
-  "transitive_descendants": 765,
+  "transitive_descendants": 766,
   "verdict_rationale": "The integrating-factor formula is a correct class-A identity conditional on the stated differential equations, profiles, initial data, and simplex column. The runner performs substantive analytic and numerical checks, while its physical kernel, constants, and packet remain supplied fixtures. Consequently the finite conditional result is supported, but it is not framework-internal closure."
 }

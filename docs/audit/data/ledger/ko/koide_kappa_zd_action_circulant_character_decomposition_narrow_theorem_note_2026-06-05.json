@@ -84,7 +84,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_failed",
-  "load_bearing_score": 10.087,
+  "load_bearing_score": 10.089,
   "load_bearing_step": "Hence the complex line C \u00b7 C^k \u2282 M_d(C) is the eigenspace of rho with eigenvalue omega^k.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -186,6 +186,6 @@
   },
   "runner_path": "scripts/audit_companion_koide_kappa_zd_action_character_2026_06_05.py",
   "title": "Koide kappa Z_d-Action Circulant Character Decomposition Narrow Theorem",
-  "transitive_descendants": 768,
+  "transitive_descendants": 769,
   "verdict_rationale": "Issue: C2 identifies C \u00b7 C^k as the eigenspace in M_d(C), although clock conjugation has a d-dimensional eigenvalue-omega^k space spanned by the matrix units E_{i,i+k}. Why this blocks: the runner checks only the action matrix in the C-power basis and therefore does not establish the source's ambient M_d(C) eigenspace statement. Repair target: qualify C2 and the claim scope so that C \u00b7 C^k is the eigenspace within the complex circulant subalgebra, or merely an eigenline in M_d(C). Claim boundary until fixed: equation (4) supports the character decomposition of circulants and the resulting real trivial/doublet/sign decomposition, but not the asserted full-M_d(C) eigenspace identification."
 }

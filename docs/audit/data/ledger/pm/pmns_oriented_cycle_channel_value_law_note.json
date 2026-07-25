@@ -75,7 +75,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 18.607,
+  "load_bearing_score": 18.609,
   "load_bearing_step": "Direct multiplication gives (c_1,c_2,c_3)=diag(A C^dagger)=(A_12,A_23,A_31), so these coordinates reconstruct the orthogonal forward-cycle projection of A.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -1540,6 +1540,6 @@
   },
   "runner_path": "scripts/frontier_pmns_oriented_cycle_channel_value_law.py",
   "title": "Oriented-Cycle Coordinate-Extraction Lemma",
-  "transitive_descendants": 779,
+  "transitive_descendants": 780,
   "verdict_rationale": "The note states a correctly bounded finite-dimensional algebra lemma, and the included runner source genuinely computes the asserted cycle, coordinate, and projection identities without importing a physical premise or target-derived fixture. However, the packet explicitly identifies its runner stdout as clipped load-bearing evidence and forbids audited_clean until a complete execution artifact is supplied."
 }

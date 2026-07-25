@@ -1,24 +1,100 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T04:48:26.489929+00:00",
+  "audit_invocation_history": [
+    "c8675ff79b64420696c5613769b50050"
+  ],
+  "audit_invocation_id": "c8675ff79b64420696c5613769b50050",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true,
+      "runner_path": "scripts/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.py"
+    },
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {
+      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    },
+    "dep_claim_scope": {
+      "minimal_axioms": null,
+      "post_record_measure_weight_normalization_subdivision_2026-06-06": null
+    },
+    "dep_claim_type": {
+      "minimal_axioms": "meta",
+      "post_record_measure_weight_normalization_subdivision_2026-06-06": "meta"
+    },
+    "dep_effective_status": {
+      "minimal_axioms": "meta",
+      "post_record_measure_weight_normalization_subdivision_2026-06-06": "meta"
+    },
+    "deps": [
+      "minimal_axioms",
+      "post_record_measure_weight_normalization_subdivision_2026-06-06"
+    ],
+    "helper_runner_hashes": {
+      "scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py": "d5163379c32ce2f751d83004b33c10f9fc3bffa38ada04039dba7587716395d5",
+      "scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py": "0d65034ec4c3850f1589b5ba5857a9e4db9c80266b1763f50bd69e54171edb6e"
+    },
+    "load_bearing_score": 2.585,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "d5163379c32ce2f751d83004b33c10f9fc3bffa38ada04039dba7587716395d5",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "0d65034ec4c3850f1589b5ba5857a9e4db9c80266b1763f50bd69e54171edb6e",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "sha_mismatch",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "dfb0b5995decd08e88966c3b8edbad95387bb9addd3b36df99f469ab49970069",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "56624ee7dcb19d3f8f6b7b23446bbf7f808183ab9d9c67a0e9ef17086c68939f",
+    "runner_path": "scripts/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 2
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-48f28d68",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "Within the narrowed supplied-packet scope, exact Fraction arithmetic establishes normalization and the positive-definite quadratic checks before ledger bookkeeping begins. Selector/readout/tangent authority is outside this scope, and current row-bucket coverage remains uncertified because the ledger file was absent.",
   "claim_id": "post_record_selector_tangent_readout_weight_prototype_2026-06-06",
-  "claim_scope": null,
+  "claim_scope": "Exact finite normalization and 2x2 positive-definite quadratic/readout-weight arithmetic for one supplied packet; neither selector authority nor current row-bucket coverage is established.",
   "claim_type": "open_gate",
   "claim_type_author_hint": "open_gate",
   "claim_type_author_hint_raw": "open_gate",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T04:48:26.489929+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -27,23 +103,26 @@
     "post_record_measure_weight_normalization_subdivision_2026-06-06"
   ],
   "direct_in_degree": 2,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [
     "scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py",
     "scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py"
   ],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 2.585,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "supplied finite tangent/readout carrier + supplied positive tangent metric or Hessian + supplied nonnegative readout weights + exact normalization and quadratic check => finite readout/tangent weight arithmetic inside that supplied packet",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "d5ce7a14ca15a56969b3d8325670ee439388816633f156ce1b55443e64868d65",
   "note_path": "docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md",
-  "notes_for_re_audit_if_any": null,
-  "open_dependency_paths": [],
+  "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained derivation or approved-premise registration for the carrier, readout weights/map, and positive tangent metric/Hessian; also include docs/audit/data/audit_ledger.json in the runner checkout so row coverage can be rechecked.",
+  "open_dependency_paths": [
+    "docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md"
+  ],
   "previous_audits": [
     {
       "archived_at": "2026-06-06T22:40:12.415162+00:00",
@@ -1876,14 +1955,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
+    "A": 7,
+    "B": 51,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 58
   },
   "runner_path": "scripts/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.py",
   "title": "Post-Record Selector/Tangent Readout Weight Prototype",
   "transitive_descendants": 2,
-  "verdict_rationale": null
+  "verdict_rationale": "The code performs class-A Fraction arithmetic for supplied weights and a supplied 2x2 metric, and the visible execution passes normalization, positive-definiteness, quadratic, projection, and rejection checks before reaching ledger-dependent bookkeeping. This establishes only the conditional finite packet: the carrier, weights, metric/Hessian, readout map, and selector authority are supplied rather than derived, while the cited subdivision authority is itself meta/conditional support. The runner then exits on FileNotFoundError for audit_ledger.json, so current bucket coverage is not certified, but that failure occurs after the scoped arithmetic checks."
 }

@@ -1,24 +1,81 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T18:46:30.154353+00:00",
+  "audit_invocation_history": [
+    "dcaa6a8660894a26b235efcf7cdadc59"
+  ],
+  "audit_invocation_id": "dcaa6a8660894a26b235efcf7cdadc59",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 6,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/frontier_koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "For real symmetric H on R^3 satisfying {H, \u0393_\u03c7} = 0, every nonzero-eigenvalue eigenvector obeys \u27e8v|\u0393_\u03c7|v\u27e9 = 0 and hence Q(v) = 2/3 and the stated Fourier norm split.",
+      "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "The elementary identities T1-T3 for signed real x_k, plus the Koide-form corollary only when every x_k is positive; no physical mass, coefficient-selection, scale, or phase derivation was audited."
+    },
+    "dep_claim_type": {
+      "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "positive_theorem",
+      "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "retained",
+      "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained"
+    },
+    "deps": [
+      "koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
+      "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 2.5,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "e42b04c651df2cc1fe50a6c0ecddfe88702f3c0e7fa1d6ee5a875ef012dab7ac",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "e42b04c651df2cc1fe50a6c0ecddfe88702f3c0e7fa1d6ee5a875ef012dab7ac",
+    "runner_path": "scripts/frontier_koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 3
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-26d511dc",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The primary runner supports the finite-dimensional reconciliation, but the packet explicitly clips both load-bearing authority texts. The chain therefore cannot be verified end-to-end from the supplied one-hop inputs.",
   "claim_id": "koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01",
-  "claim_scope": null,
+  "claim_scope": "Finite C3 algebraic reconciliation: a nonzero anticommuting Hermitian 3x3 operator gives Q(v)=2/3 on nonzero-eigenvalue eigenvectors while its spectral quotient has a zero denominator, whereas a commuting Hermitian circulant at r=1/2 has spectral quotient 2/3; no physical readout selector is asserted.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T18:46:30.154353+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -27,19 +84,22 @@
     "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
   ],
   "direct_in_degree": 1,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 2.5,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "They compute `Q=2/3` from different objects.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "derived_no_go_boundary"
+  ],
   "note_hash": "0ffb4deb4906308ab4357383a4a453c834c76c1cdd8e52357cc917a00d4ce162",
   "note_path": "docs/KOIDE_ANTICOMMUTING_EIGENVECTOR_VS_EIGENVALUE_READOUT_RECONCILIATION_NOTE_2026-06-01.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "other: regenerate the restricted packet with full, unclipped text for both load-bearing authorities, then rerun this audit.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -220,14 +280,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 14,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 14
   },
   "runner_path": "scripts/frontier_koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation.py",
   "title": "Koide Anticommuting Eigenvector and Circulant Eigenvalue Readouts Are Consistent",
   "transitive_descendants": 3,
-  "verdict_rationale": null
+  "verdict_rationale": "The runner computes the finite matrix identities and reports 14/14 passing checks, supporting the reconciliation of eigenvector and eigenvalue readouts. The only negative assertion is the derived boundary that the spectral quotient of a nonzero odd-dimensional anticommuting operator has a vanishing denominator; the note does not exclude other readout classes, and its lack of a physical selector is scope hygiene rather than a universal no-go. Because both retained load-bearing authorities are explicitly clipped, their full hypotheses and bridge content cannot be authenticated, so the result remains conditional on packet repair."
 }

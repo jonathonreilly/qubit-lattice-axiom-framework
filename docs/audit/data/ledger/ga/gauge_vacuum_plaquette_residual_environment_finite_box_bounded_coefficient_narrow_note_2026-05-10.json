@@ -1,24 +1,45 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T23:17:58.751459+00:00",
+  "audit_invocation_history": [
+    "357608e0c9fd466282a971979fbc8940"
+  ],
+  "audit_invocation_id": "357608e0c9fd466282a971979fbc8940",
+  "audit_state_snapshot": {
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "Float64 finite-box evaluation at x=2 and 0<=p,q<=4 of the stipulated SU(3) Haar character integrals and normalized rho values, including the disclosed cross-route and refinement checks, without a physical Wilson-environment or plaquette identification."
+    },
+    "dep_claim_type": {
+      "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "retained_bounded"
+    },
+    "deps": [
+      "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 0.0,
+    "runner_hash": "a054dfc7adb114316dcb3bb21f60e28959bc14571af1df5626fb666963e5548d",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-audit-batch-A-20260725-1cbd846d",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "Schur matrix-element orthogonality independently yields the stated character-convolution factor 1/d_(p,q), so the d_(p,q) and c_0 normalizations cancel exactly. The retained-bounded companion supplies the positive conjugation-symmetric finite coefficient packet used in the bounded instantiation.",
   "claim_id": "gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow_note_2026-05-10",
-  "claim_scope": null,
+  "claim_scope": "On the finite box 0 <= p,q <= 4, normalized central convolution has character eigenvalues rho_(p,q), and the retained-bounded rho(6) packet defines one positive conjugation-symmetric diagonal instance; the consumer packaging remains purely definitional.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T23:17:58.751459+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,19 +47,20 @@
     "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
   ],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "retained_bounded",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Using chi_a * chi_b = (delta_(a,b)/d_a) chi_a, normalized convolution by Z = c_0 sum_b d_b rho_b chi_b gives C_Z chi_a = rho_a chi_a on the finite character sector.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "ff58bf6c253324db2553c163480b73e9fc5338b91ea41f18610bc0f00c3cd955",
   "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_FINITE_BOX_BOUNDED_COEFFICIENT_NARROW_NOTE_2026-05-10.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "A second auditor should rederive equation (8)'s 1/d_a normalization independently because the runner's N2 error check compares the same encoded expression to itself.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -147,14 +169,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
+    "A": 11,
+    "B": 3,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 14
   },
   "runner_path": "scripts/frontier_gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow.py",
   "title": "Gauge-Vacuum Plaquette Residual-Environment Finite-Box Bounded-Coefficient Narrow Note",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "Schur matrix-element orthogonality independently establishes the convolution identity, including its representation-dimension normalization, and the remaining structural properties follow exactly from a real nonnegative diagonal operator. The retained-bounded companion supplies the finite rho(6) values, positivity, and conjugation symmetry needed for the numerical instantiation. The construct-then-strip package is correctly disclosed as definitional bookkeeping, and no physical residual-environment identification is inferred."
 }

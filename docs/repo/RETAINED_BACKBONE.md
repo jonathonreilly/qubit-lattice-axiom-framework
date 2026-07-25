@@ -17,7 +17,7 @@ file per claim), summarized in
 | Metric | Value |
 |---|---:|
 | Retained positive rows | 117 |
-| Retained bounded rows | 350 |
+| Retained bounded rows | 351 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 29 |
 
@@ -143,7 +143,7 @@ Sorted by load-bearing graph score (descending).
 - [`tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20`](../../docs/TOMITA_TENSOR_TRACE_ON_FINITE_DIM_MATRIX_NARROW_THEOREM_NOTE_2026-05-20.md) — score 0.000; audited 2026-07-25T15:03:52.540528+00:00
 - [`wolfenstein_lambda_a_product_cancellation_narrow_theorem_note_2026-05-10`](../../docs/WOLFENSTEIN_LAMBDA_A_PRODUCT_CANCELLATION_NARROW_THEOREM_NOTE_2026-05-10.md) — score 0.000; audited 2026-07-25T18:05:21.029457+00:00
 
-## Retained bounded rows (350)
+## Retained bounded rows (351)
 
 Sorted by load-bearing graph score (descending).
 
@@ -153,13 +153,13 @@ Sorted by load-bearing graph score (descending).
 - [`gauge_vacuum_plaquette_reduction_existence_theorem_note`](../../docs/GAUGE_VACUUM_PLAQUETTE_REDUCTION_EXISTENCE_THEOREM_NOTE.md) — score 18.935; audited 2026-07-22T17:50:03.273685+00:00
 - [`dm_leptogenesis_pmns_projector_interface_note_2026-04-16`](../../docs/DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md) — score 18.592; audited 2026-07-21T18:21:47.783638+00:00
 - [`universal_gr_lorentzian_global_atlas_closure_note`](../../docs/UNIVERSAL_GR_LORENTZIAN_GLOBAL_ATLAS_CLOSURE_NOTE.md) — score 18.304; audited 2026-07-25T00:54:14.776289+00:00
+- [`gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09`](../../docs/GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md) — score 16.780; audited 2026-07-22T18:17:30.257788+00:00
 - [`spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10`](../../docs/SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md) — score 15.796; audited 2026-07-18T01:07:50.223817+00:00
 - [`rp_p2_gauge_extension_and_realization_residual_note_2026-05-28`](../../docs/RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md) — score 15.711; audited 2026-07-23T23:57:13.115858+00:00
 - [`gate_b_grown_distance_law_note`](../../docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md) — score 15.629; audited 2026-05-05T00:56:01.672707+00:00
 - [`pl_topology_infrastructure_textbook_import_note_2026-05-17`](../../docs/PL_TOPOLOGY_INFRASTRUCTURE_TEXTBOOK_IMPORT_NOTE_2026-05-17.md) — score 15.276; audited 2026-05-26T19:25:11.724360+00:00
 - [`plaquette_v1_picard_fuchs_ode_note_2026-05-05`](../../docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md) — score 15.155; audited 2026-06-08T18:55:20.964216+00:00
 - [`claude_complex_action_grown_companion_note`](../../docs/CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md) — score 14.858; audited 2026-05-11T22:49:29.676859+00:00
-- [`gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09`](../../docs/GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md) — score 13.780; audited 2026-07-22T18:17:30.257788+00:00
 - [`hierarchy_spatial_bc_and_u0_scaling_note`](../../docs/HIERARCHY_SPATIAL_BC_AND_U0_SCALING_NOTE.md) — score 13.750; audited 2026-05-05T09:59:06.642371+00:00
 - [`valley_linear_action_note`](../../docs/VALLEY_LINEAR_ACTION_NOTE.md) — score 13.190; audited 2026-05-11T22:50:45.104109+00:00
 - [`staggered_fermion_card_2026-04-11`](../../docs/STAGGERED_FERMION_CARD_2026-04-11.md) — score 13.094; audited 2026-07-22T20:52:57.904885+00:00
@@ -421,6 +421,7 @@ Sorted by load-bearing graph score (descending).
 - [`gate_b_grown_trapping_frontier_v3_note`](../../docs/GATE_B_GROWN_TRAPPING_FRONTIER_V3_NOTE.md) — score 0.000; audited 2026-04-27
 - [`gate_b_grown_trapping_transport_note`](../../docs/GATE_B_GROWN_TRAPPING_TRANSPORT_NOTE.md) — score 0.000; audited 2026-04-27
 - [`gauge_vacuum_plaquette_first_sector_rank_one_factorized_class_boundary_note_2026-04-19`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_RANK_ONE_FACTORIZED_CLASS_BOUNDARY_NOTE_2026-04-19.md) — score 0.000; audited 2026-06-09T13:18:48.215479+00:00
+- [`gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow_note_2026-05-10`](../../docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_FINITE_BOX_BOUNDED_COEFFICIENT_NARROW_NOTE_2026-05-10.md) — score 0.000; audited 2026-07-25T23:17:58.751459+00:00
 - [`geometry_superposition_dag_ensemble_note_2026-04-11`](../../docs/GEOMETRY_SUPERPOSITION_DAG_ENSEMBLE_NOTE_2026-04-11.md) — score 0.000; audited 2026-05-11T16:56:57.088386+00:00
 - [`graph_scalar_plus_spinor_note`](../../docs/GRAPH_SCALAR_PLUS_SPINOR_NOTE.md) — score 0.000; audited 2026-04-30T19:29:21.808771+00:00
 - [`gravitational_memory_note_2026-04-11`](../../docs/GRAVITATIONAL_MEMORY_NOTE_2026-04-11.md) — score 0.000; audited 2026-05-24T17:58:40.011911+00:00

@@ -1,4 +1,4 @@
-# The normalization residuals are independent axes on three supplied surfaces, not one reference choice — Cycle 701
+# The named normalization residuals, recomputed, and which pairs the corpus does not link — Cycle 701
 
 Date: 2026-07-25
 
@@ -7,149 +7,138 @@ Claim type: meta
 Authority: none. Audit: unset. Constitutional effect: none. This cycle edits no
 axiom, foundation, Qualification, primitive, registry, policy, queue,
 audit-status, or PR-control surface. **No convention is adopted, no value is
-selected, and no ruling is made.** This note is a navigation and owner decision
-surface, in the sense of
-`CROSS_LANE_DEPENDENCY_MAP_NOTE_2026-04-30.md` (lane dependencies) and
-`WALLS_ATTACK_20260702_ADJUDICATION_BRIEF_META_NOTE_2026-07-02.md` (campaign
-adjudication); this one maps normalization parameters instead.
+selected, no identification between parameters is asserted, and no ruling is
+made.** This is a navigation artifact, in the sense of
+`CROSS_LANE_DEPENDENCY_MAP_NOTE_2026-04-30.md` (which maps lane dependencies)
+and `WALLS_ATTACK_20260702_ADJUDICATION_BRIEF_META_NOTE_2026-07-02.md` (which
+indexes a campaign); this one inventories normalization residuals.
 
 Runner: `scripts/physical_normalization_axis_map_cycle701_2026_07_25.py`
-(8 PASS / 0 FAIL, exit 0; exact rational and exact symbolic arithmetic, with a
-negative control on the decisive test).
+(7 PASS / 0 FAIL, exit 0; exact rational and exact symbolic arithmetic).
 
-## The question, and the wrong answer it is easy to give
+## What this note is, and what an earlier draft got wrong
 
 Several lanes each terminate at "one free normalization parameter". It is
-tempting to read those as the same object, so that one owner convention would
-discharge them together and several flagship lanes would unblock at once.
-
-**That reading is false, and this note's own campaign made the mistake before
-checking.** An earlier handoff in this campaign asserted that the two live AC
+tempting to read those as one object, so that a single owner convention would
+discharge them together and several flagship lanes would unblock at once. **An
+earlier handoff in this campaign asserted exactly that**, saying the live AC
 routes and the reference-normalization object "terminate at the same object, a
-selected reference". They do not. The correction is the content of this note.
+selected reference".
 
-## The axes
+The first attempt to correct that went too far in the other direction. It
+claimed the residuals are provably *independent*, on the grounds that their
+transcribed defining equations use disjoint symbols. A cluster-cap evaluator
+judged that largely true by construction — separately transcribed equations
+trivially use different symbols, and that cannot rule out a semantic
+identification. **That claim is withdrawn and does not appear below.**
 
-| axis | fixed by | supplied surface | what would discharge it |
-|---|---|---|---|
-| **A1** readout weight `w` | the C2 two-cell normal form `I_w(x_A,x_B) = x_A + w·x_B` | Record readout | a counting convention |
-| **A2** electroweak weight `kappa_EW` | `Pi_phys = C + kappa_EW·S` — the *same* normal form, a *different* partition | Record readout | a counting convention, separately |
-| **B** activation scale `a_act` | the AC event-rate match at `delta = 2/9` | occurrence / probability | a formation or rate law |
-| **C** generator normalization `alpha` | hypercharge tracelessness plus a unit choice | gauge algebra | a unit convention |
+What is left is deliberately narrower and is two things:
+
+1. a **recomputed inventory** — every number quoted here is recomputed by the
+   runner from the relation its source states, not transcribed; and
+2. a **recorded corpus search** — which pairs of residuals no landed note
+   links. That is a statement about the repository at a named commit, not a
+   theorem about physics.
+
+## The recomputed inventory
+
+| residual | relation recomputed | surface its source places it on |
+|---|---|---|
+| `w_readout` | C2 two-cell weighting `I_w(x_A,x_B) = x_A + w·x_B` | Record readout |
+| `w_formation` | Koide flow weight, `kappa = 2w/(1-w)`, `r = (1-w)/(2w)` | formation |
+| `kappa_EW` | `Pi_phys = C + kappa_EW·S`, with supplied map `K_EW = 1/(8/9 + kappa_EW/9)` | Record readout / EW channel |
+| `a_act` | AC event-rate match at `delta = 2/9` | occurrence and probability |
+| `alpha` | hypercharge tracelessness `6α + 2β = 0` plus a unit choice | gauge algebra |
 
 The list is **not claimed complete**. `g_bare`, `c_iso`, and the
 scale-reference primitive are further convention degrees of freedom recorded
 elsewhere; `G_BARE_C_ISO_CONVENTION_ORBIT_INVARIANCE_NARROW_THEOREM_NOTE_2026-05-17.md`
-already treats three of them as independent within its own lane. This note maps
-the four above because they are the ones the current flagship-lane obstructions
-name.
+already treats three of them within its own lane.
 
-## A — the readout weights, and why there is more than one
+What the runner recomputes:
 
-The C2 normal form is in exact bijection with the Koide flow coordinates. The
-runner verifies `kappa = 2w/(1-w)` and `w = kappa/(2+kappa)` are mutually
-inverse on six rational samples, that `kappa = 1/r` throughout, and that
-`w = 0, 1` are genuine poles rather than silently mapped points.
+- **A1** — `kappa = 2w/(1-w)` and `w = kappa/(2+kappa)` are mutually inverse on
+  six rational samples, `kappa = 1/r` throughout, and `w = 0, 1` are genuine
+  poles rather than silently mapped points.
+- **A2** — the declared counting values: `w = 1/2` gives `r = 1/2, kappa = 2`;
+  `w = 1/3` gives `r = 1, kappa = 1`. The choice changes the answer.
+- **A3** — the electroweak weighting has the same two-cell *shape*: substituting
+  the electroweak names into the C2 form reproduces it identically. Shared
+  shape is recorded; **no identification is asserted**.
+- **A4** — the supplied `K_EW` map recomputes to `9/8` at `kappa_EW = 0`, has
+  its pole at `kappa_EW = -8`, and is not the A1 bijection in disguise.
+- **B1** — matching the AC event-rate ratio to `2/3` at `delta = 2/9` pins the
+  ratio and reproduces the landed relation `|b| = a_act/(3√3 sin(2/9))`; the
+  ratio contains no `a_act`, so the **activation scale** is what stays free,
+  with `|b|` slaved to it.
+- **C1** — tracelessness gives `β = -3α`, fixing the ratio `+1 : -3` and leaving
+  the whole line free, including `α = 0`; only the unit convention that the
+  trivial block reads unit charge selects `α = 1/3`.
 
-The two declared counting conventions select different physics:
+## Two different objects are both written `w`
 
-| `w` | `r` | `kappa` |
-|---|---|---|
-| 1/3 | 1 | 1 |
-| 1/2 | **1/2** | 2 |
+The C2 note's `w` weights a two-cell **readout**. The Koide flow note's `w` is a
+**formation** weight — that note's title says so, and it states that the kappa
+bookkeeping residual and the formation/equipartition residual are one scalar
+object in two coordinates, under its own named conditional identifications.
 
-So the counting convention is load-bearing, not cosmetic.
+Both satisfy `kappa = 2w/(1-w)`. The runner records that this is the whole of
+what the arithmetic establishes: **satisfying a shared relation is not identity
+of the objects.** They are carried as distinct symbols here, and the earlier
+draft's slide from one to the other is the specific error this section exists to
+prevent.
 
-The electroweak weighting `Pi_phys = C + kappa_EW·S` has the **same normal
-form**: substituting the electroweak names into the Koide form reproduces it
-identically, which the runner checks symbolically. That is exactly why it is a
-*second* axis and not the same parameter — same shape, different partition. A
-convention that fixes the weight on one partition says nothing about the other.
+## The recorded corpus search
 
-## B — the activation scale is not a readout weight
+Searched at `origin/main` `a17b5e74a8b0ea5926553579cdf20115e93ea1c2`.
 
-The AC event-rate route gives
+| # | question | command | result |
+|---|---|---|---|
+| Q1 | is the C2 readout weight identified with the Koide formation weight? | `git grep -n -iE "C2.{0,40}formation weight\|formation weight.{0,40}C2\|readout weight.{0,30}(is\|equals).{0,20}formation weight" origin/main -- 'docs/*.md'` | **no hits** |
+| Q2 | does any landed note link `kappa_EW` to `w` or `kappa`? | `git grep -n -iE "kappa_EW.{0,60}(kappa[^_]\|w\b)\|..." origin/main -- 'docs/*.md'` | hits are `kappa_EW`'s own supplied map and index rows; `CANONICAL_TWO_CELL_CONTEXT_C3_EW_INSTANCE_BOUNDED_NOTE_2026-07-02.md` verifies the EW frame as a two-cell instance and **explicitly declines** to set `kappa_EW` |
+| Q3 | does any landed note link `a_act` to a weighting parameter? | `git grep -n -iE "a_act.{0,70}(weight\|kappa\|alpha)\|..." origin/main -- 'docs/*.md'` | **no hits** |
 
-```text
-omega_clock / a_act = 2 sqrt(3) |b| sin(delta) / a_act.
-```
+So, as of that commit, **no landed note links the readout weighting, the
+formation weight, the activation scale, and the generator normalization to one
+another.** That is the honest form of the observation. It is a fact about what
+has been written, and it is exactly the kind of fact a later note could
+overturn by supplying an identification.
 
-Matching the target `Phi = 2/3` at `delta = 2/9` is solved exactly by the
-runner and reproduces the landed relation
-`|b| = a_act / (3 sqrt(3) sin(2/9))`. The runner then checks the structurally
-important part: the *ratio* `|b|/a_act` is pinned and contains no `a_act`, so
-what remains free is the **activation scale**, with `|b|` slaved to it.
+## What follows for planning, and what does not
 
-`a_act` is an activation probability and `|b|` a coupling magnitude. Neither is
-a weight on record content. This axis lives on the occurrence and probability
-surfaces, which the axioms explicitly withhold — every formation rule is
-downstream content. **No readout convention reaches it.**
+**Follows.** There is no landed basis for expecting one convention to discharge
+these together. A plan that plugs the readout weighting and then treats the AC
+obligations as unblocked is, at present, unsupported by anything in the corpus.
 
-## C — the generator normalization
-
-On the hypercharge two-block surface, tracelessness `6α + 2β = 0` gives
-`β = -3α`, fixing the ratio `+1 : -3` and leaving the entire line free — the
-runner confirms that every point of the line, including `α = 0`, satisfies it.
-Only the convention that the trivial block reads unit charge selects
-`α = 1/3`. This is the gauge algebra surface, not the readout surface.
-
-## The independence result
-
-The decisive check is not that each axis is free — each lane already says so —
-but that they are independent.
-
-**D1.** The defining relations have pairwise-disjoint variable sets: no readout
-weight occurs in the AC rate relation or the hypercharge relation, and neither
-`a_act`, `|b|`, `α`, nor `β` occurs in the readout normal form.
-
-**D2.** All eight combinations of representative choices across the three
-classes are jointly satisfiable. The joint solution set is therefore a product,
-and fixing any one coordinate leaves the others exactly as free as before.
-
-**D3 — the negative control.** The same disjointness test applied to `kappa`
-and `w`, which are the *same* axis in different coordinates, correctly detects
-them as dependent. Without this row the test would prove nothing.
-
-## The owner decision surface (stated, NOT adopted)
-
-For each axis, what an adoption would buy and what it would not:
-
-- **Adopt a counting convention for `w`.** Buys `r` and `kappa` on that
-  partition — `w = 1/2` gives `r = 1/2`, `w = 1/3` gives `r = 1`. Buys nothing
-  on `kappa_EW`, `a_act`, or `alpha`.
-- **Adopt a counting convention for `kappa_EW`.** Buys the electroweak
-  weighting. Independent of the above.
-- **Adopt a unit convention for `alpha`.** Buys the normalized hypercharge
-  assignment. Cheapest of the four: the structural ratio `+1 : -3` is already
-  exact, so only a scale is at stake.
-- **`a_act` cannot be discharged by convention in the same sense.** It is a
-  rate on the occurrence surface. Fixing it is adopting a formation or rate
-  law, which is a materially larger commitment than a counting or unit choice,
-  and it is the one the axioms most explicitly withhold.
-
-The practical consequence: **the flagship lanes do not unblock together.** Work
-that discharges the readout axis leaves the AC obligations exactly where they
-were.
+**Does not follow.** That they are *incapable* of being linked. The absence of a
+landed identification is not a proof of independence, and this note does not
+claim one. Supplying such an identification is a legitimate and potentially
+high-value target; if it exists, it would be worth more than any single
+convention adoption.
 
 ## What this note does not do
 
-- It adopts nothing, selects no value, and rules on no reading.
-- It does not claim the axis list is complete.
-- It does not derive any of the four parameters, or show any of them
-  underivable in principle — each lane's own no-go owns that question.
-- It changes no lane, row, or obligation status.
-- It is `meta`: a navigation artifact, not a theorem about physics.
+- It adopts nothing, selects no value, asserts no identification, rules on no
+  reading.
+- It does not claim the residual list is complete.
+- It does not claim the residuals are independent, and it withdraws an earlier
+  draft's claim to that effect.
+- It does not derive any of the parameters, or show any underivable — each
+  lane's own no-go owns that question.
+- It changes no lane, row, or obligation status. It is `meta`.
 
 ## Scope for independent review
 
-Every quoted number is recomputed by the runner rather than copied: the
-bijection and its poles, the `w -> (r, kappa)` table, the symbolic identity of
-the two normal forms, the exact solution of the AC rate match, and the
-hypercharge line. The independence claim is a statement about the *declared*
-defining relations as quoted from the cited notes; if a lane's real defining
-relation involves variables its note does not display, the disjointness
-conclusion for that lane would need rechecking. That is the main way this map
-could be wrong, and it is why D3 exists.
+Every quoted number is recomputed rather than copied: the bijection and its
+poles, the `w -> (r, kappa)` table, the symbolic shape match of the two
+weightings, the `K_EW` map with its value at zero and its pole, the exact
+solution of the AC rate match, and the hypercharge line. The corpus claims are
+searches at a named commit with the commands displayed, and they are negative
+results about the repository — the standard caveat for a negative search
+applies, and a differently-phrased search could find a link these three missed.
+The surface attributions come from each source's own words; where a source
+attaches conditional identifications, as the Koide flow note does, that
+conditionality is preserved rather than flattened.
 
 ## Dependency citations
 
@@ -157,6 +146,8 @@ The runner imports nothing from the repository. Navigation context, not
 load-bearing: `C2_WEIGHTING_NORMAL_FORM_ONE_PARAMETER_UNIQUENESS_BOUNDED_NOTE_2026-07-02.md`,
 `KOIDE_KAPPA_FLOW_CLASS_IS_THE_FORMATION_WEIGHT_IN_FLOW_COORDINATES_BOUNDED_THEOREM_NOTE_2026-07-12.md`,
 `EW_KAPPA_WEIGHTING_NOT_AXIOM_DERIVABLE_NO_GO_NOTE_2026-06-09.md`,
+`EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md`,
+`CANONICAL_TWO_CELL_CONTEXT_C3_EW_INSTANCE_BOUNDED_NOTE_2026-07-02.md`,
 `ACPHILAMBDA_R_ETA_DOUBLET_CLOCK_RATE_NORMALIZATION_NO_GO_NOTE_2026-07-04.md`,
 `HYPERCHARGE_IDENTIFICATION_NOTE.md`,
 `G_BARE_C_ISO_CONVENTION_ORBIT_INVARIANCE_NARROW_THEOREM_NOTE_2026-05-17.md`,

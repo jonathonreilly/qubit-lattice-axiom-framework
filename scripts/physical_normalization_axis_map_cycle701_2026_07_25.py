@@ -1,36 +1,37 @@
 #!/usr/bin/env python3
-"""Cycle 701: the repo's normalization freedoms are three independent axes on
-three different supplied surfaces, not one reference choice.
+"""Cycle 701: the named normalization residuals, recomputed, and which pairs
+the corpus actually links.
 
 Several lanes each terminate at "one free normalization parameter".  It is
 tempting -- and this campaign's own earlier handoff made the mistake -- to read
-those as the same object, so that one owner convention would discharge them
-together.  This runner checks that reading and finds it false.
+them as one object, so that a single owner convention would discharge them
+together.
 
-The axes, with the equations each is fixed by:
+This runner does NOT claim to prove those parameters independent.  An earlier
+draft did, by observing that their transcribed defining equations use disjoint
+symbols; a cluster-cap evaluator correctly judged that largely true by
+construction, and it is withdrawn.  Symbol disjointness in separately
+transcribed equations cannot rule out a semantic identification.
 
-A  Readout weight.  The C2 weighting normal form on a two-cell
-   content-determined additive readout is `I_w(x_A, x_B) = x_A + w x_B`.  It is
-   in exact bijection with the Koide flow coordinates,
-   `kappa = 2w/(1-w)` and `r = (1-w)/(2w)`.  Its declared candidate values come
-   from counting conventions, `w in {1/3, 1/2}`.  The electroweak weighting
-   `Pi_phys = C + kappa_EW S` has the SAME normal form on a different
-   partition, so it is a second class-A axis, not the same parameter.
+What this runner does is narrower and checkable: it recomputes every number the
+map quotes, from the relation each source states, so the map rests on
+recomputation rather than transcription.
 
-B  Occurrence rate scale.  The AC event-rate route gives
-   `omega_clock / a_act = 2 sqrt(3) |b| sin(delta) / a_act`.  Matching the
-   target `Phi = 2/3` at `delta = 2/9` fixes only the RATIO, leaving the
-   activation scale `a_act` free with `|b|` slaved to it.
+  A1  the readout/flow bijection kappa = 2w/(1-w), w = kappa/(2+kappa),
+      kappa = 1/r, and its poles at w = 0, 1.
+  A2  the declared counting values, w in {1/3, 1/2}, and what each selects.
+  A3  the electroweak weighting has the same two-cell shape,
+      Pi_phys = C + kappa_EW S, on a different partition.
+  A4  the supplied electroweak map K_EW(kappa_EW) = 1/(8/9 + kappa_EW/9),
+      its value 9/8 at kappa_EW = 0, and its pole at kappa_EW = -8.
+  B1  the AC event-rate match at delta = 2/9 pins the ratio |b|/a_act and
+      leaves the activation scale free.
+  C1  hypercharge tracelessness fixes the ratio +1:-3 and not the scale.
 
-C  Generator normalization.  On the hypercharge two-block surface,
-   tracelessness `6 alpha + 2 beta = 0` fixes the ratio `+1 : -3` and nothing
-   else; the scale is fixed only by choosing which block reads unit charge.
-
-The decisive check is not that each is free -- each lane already says so -- but
-that the three are INDEPENDENT: their defining relations have pairwise-disjoint
-variable sets, so the joint solution set is a product and fixing any one
-coordinate leaves the others exactly as free as before.  That is verified
-constructively by exhibiting joint assignments across all combinations.
+Whether any two of these parameters are the same object is a question about
+the corpus and about physics, not about this arithmetic.  The accompanying note
+reports the corpus side as a recorded search, and reports it as "no landed note
+links these", which is a statement about the repository rather than a theorem.
 
 No axiom or primitive is proposed or adopted, no convention is adopted, and no
 value is selected.  Every scored row uses exact rational or exact symbolic
@@ -132,7 +133,7 @@ def main() -> int:
         and r_of_w(F(1, 2)) != r_of_w(F(1, 3))
     )
     check(
-        "A2 the two declared counting conventions select different physics: "
+        "A2 the two declared counting values recompute to different physics: "
         "w=1/2 gives r=1/2 and kappa=2, w=1/3 gives r=1; the convention is "
         "load-bearing, not cosmetic",
         selects,
@@ -150,13 +151,13 @@ def main() -> int:
     # weight on the first cell.  Substituting the EW names into the Koide form
     # reproduces the EW form identically.
     same_shape = sp.simplify(koide_form.subs({xa: C, xb: S, w: kEW}) - ew_form) == 0
-    # but they are different parameters: they weight different partitions, so
-    # no substitution makes one determine the other
+    # they weight different partitions and are carried as distinct symbols; a
+    # shared shape is not an identification, and none is asserted
     distinct_symbols = len({w, kEW}) == 2 and w != kEW
     check(
-        "A3 the electroweak weighting has the same two-cell normal form as the "
-        "readout weight, so it is a second class-A axis on a different "
-        "partition rather than the same parameter",
+        "A3 the electroweak weighting has the same two-cell shape as the "
+        "readout weighting, on a different partition; shared shape is recorded, "
+        "and no identification between the two parameters is asserted",
         same_shape and distinct_symbols,
         {
             "koide_form": str(koide_form),
@@ -219,111 +220,75 @@ def main() -> int:
     )
 
     # ------------------------------------------------------------------
-    # D1  the three axes are independent: disjoint variable sets
+    # A4  the supplied electroweak map, recomputed
     # ------------------------------------------------------------------
-    vars_A = {w}
-    vars_A2 = {kEW}
-    vars_B = {b_abs, a_act}
-    vars_C = {al, be}
-    groups = {"A_readout_w": vars_A, "A_ew": vars_A2, "B_rate": vars_B, "C_gauge": vars_C}
-    pairwise_disjoint = all(
-        not (v1 & v2)
-        for (n1, v1), (n2, v2) in itertools.combinations(groups.items(), 2)
-    )
-    # and the defining relations really only involve their own group
-    rel_B_syms = (sp.Eq(rate_ratio, target)).free_symbols
-    rel_C_syms = traceless.free_symbols
-    b_clean = not (rel_B_syms & (vars_A | vars_A2 | vars_C))
-    c_clean = not (rel_C_syms & (vars_A | vars_A2 | vars_B))
+    K_EW = 1 / (sp.Rational(8, 9) + kEW / 9)
+    at_zero = sp.simplify(K_EW.subs(kEW, 0) - sp.Rational(9, 8)) == 0
+    pole_at_minus8 = sp.simplify(sp.denom(sp.together(K_EW)).subs(kEW, -8)) == 0
+    # it is its own relation, with its own pole: not the A1 bijection
+    differs_from_A1 = sp.simplify(K_EW - 2 * kEW / (1 - kEW)) != 0
     check(
-        "D1 the three classes' defining relations have pairwise-disjoint "
-        "variable sets: no readout weight occurs in the AC rate relation or "
-        "the hypercharge relation, and vice versa",
-        pairwise_disjoint and b_clean and c_clean,
+        "A4 the supplied electroweak map K_EW = 1/(8/9 + kappa_EW/9) "
+        "recomputes to 9/8 at kappa_EW=0, has its pole at kappa_EW=-8, and is "
+        "not the A1 bijection in disguise",
+        at_zero and pole_at_minus8 and differs_from_A1,
         {
-            "groups": {k: sorted(str(s) for s in v) for k, v in groups.items()},
-            "pairwise_disjoint": pairwise_disjoint,
-            "AC_relation_free_of_other_axes": b_clean,
-            "hypercharge_relation_free_of_other_axes": c_clean,
+            "K_EW(0)": str(sp.simplify(K_EW.subs(kEW, 0))),
+            "pole_at_minus_8": bool(pole_at_minus8),
+            "distinct_from_readout_bijection": bool(differs_from_A1),
         },
     )
 
     # ------------------------------------------------------------------
-    # D2  product structure, exhibited constructively
+    # W  the two objects written "w" are not shown to be the same object
     # ------------------------------------------------------------------
-    # every combination of representative choices is jointly satisfiable, so
-    # fixing one axis leaves the others exactly as free as before
-    combos = []
-    ok = True
-    for w_val in (F(1, 3), F(1, 2)):
-        for a_val in (sp.Integer(1), sp.Rational(1, 5)):
-            for al_val in (sp.Rational(1, 3), sp.Integer(1)):
-                b_val = sol[0].subs(a_act, a_val)
-                sat_B = (
-                    sp.simplify(
-                        rate_ratio.subs({b_abs: b_val, a_act: a_val}) - target
-                    )
-                    == 0
-                )
-                sat_C = sp.simplify(6 * al_val + 2 * line.subs(al, al_val)) == 0
-                sat_A = r_of_w(w_val) in (F(1), F(1, 2))
-                if not (sat_A and sat_B and sat_C):
-                    ok = False
-                combos.append(
-                    {
-                        "w": str(w_val),
-                        "a_act": str(a_val),
-                        "alpha": str(al_val),
-                        "all_three_satisfied": bool(sat_A and sat_B and sat_C),
-                    }
-                )
+    # The C2 note's w weights a two-cell READOUT.  The Koide flow note's w is a
+    # FORMATION weight.  Both satisfy the same bijection to kappa, and that is
+    # the whole of what the arithmetic says: satisfying the same relation is
+    # not identity of the objects.  This row records that explicitly so the map
+    # cannot be read as asserting the identification.
+    w_readout, w_formation = sp.symbols("w_readout w_formation")
+    same_relation = sp.simplify(
+        (2 * w_readout / (1 - w_readout)).subs(w_readout, w_formation)
+        - 2 * w_formation / (1 - w_formation)
+    ) == 0
+    still_distinct_symbols = w_readout != w_formation
     check(
-        "D2 all eight combinations of representative choices on the three axes "
-        "are jointly satisfiable, so the joint solution set is a product and a "
-        "convention adopted on one axis discharges no other",
-        ok and len(combos) == 8,
-        {"combinations_checked": len(combos), "all_satisfiable": ok},
-    )
-    summary["product_structure_combinations"] = combos
-
-    # ------------------------------------------------------------------
-    # D3  the negative control: a genuinely dependent pair is detected
-    # ------------------------------------------------------------------
-    # kappa and w are NOT independent -- they are the same axis in different
-    # coordinates.  The same test must catch that, or it proves nothing.
-    kap = sp.Symbol("kappa")
-    dependent_rel = sp.Eq(kap, 2 * w / (1 - w))
-    shares = bool(dependent_rel.free_symbols & vars_A)
-    check(
-        "D3 negative control: the same disjointness test applied to kappa and "
-        "w detects that they are dependent, so the test is not vacuous",
-        shares,
+        "W both objects written w satisfy the same bijection to kappa, and "
+        "that is all the arithmetic establishes: satisfying a shared relation "
+        "is not identity, so the readout weight and the formation weight are "
+        "carried as distinct symbols here",
+        same_relation and still_distinct_symbols,
         {
-            "relation": str(dependent_rel),
-            "shares_a_variable_with_axis_A": shares,
+            "shared_relation": "kappa = 2w/(1-w)",
+            "identification_asserted": False,
+            "note": "the corpus side of this question is a recorded search in the note, not arithmetic",
         },
     )
 
-    summary["axes"] = {
-        "A_readout_weight": "Record readout surface; one parameter per declared two-cell partition; discharged by a counting convention",
-        "A_electroweak_weight": "same normal form, different partition; a second class-A axis",
-        "B_activation_scale": "occurrence/probability surface; needs a formation or rate law, not a readout convention",
-        "C_generator_normalization": "gauge algebra surface; discharged by a unit convention",
+    summary["residuals"] = {
+        "w_readout": "C2 two-cell readout weighting; Record readout surface",
+        "w_formation": "Koide flow/formation weight; formation surface; same bijection to kappa, identification with w_readout NOT established here",
+        "kappa_EW": "electroweak weighting, same two-cell shape on a different partition, with its own supplied map K_EW",
+        "a_act": "activation scale on the occurrence/probability surface, with |b| slaved to it by the AC target",
+        "alpha": "hypercharge generator normalization on the gauge algebra surface",
     }
     summary["conclusion"] = (
-        "The repo's normalization residuals are not one reference choice. They "
-        "are at least four parameters in three classes on three different "
-        "supplied surfaces, with pairwise-disjoint defining relations and a "
-        "product solution set. A counting convention that fixes the readout "
-        "weight discharges neither the activation scale nor the generator "
-        "normalization, so the flagship lanes do not unblock together."
+        "Every number the map quotes is recomputed here from the relation its "
+        "source states. The map does NOT prove the residuals independent; an "
+        "earlier draft claimed that from symbol disjointness and the claim is "
+        "withdrawn as true by construction. What remains is a recomputed "
+        "inventory plus a recorded corpus search reporting which pairs no "
+        "landed note links, including two distinct objects both written w."
     )
     summary["firewalls"] = {
         "convention_adopted": False,
         "value_selected": False,
         "lane_status_changed": False,
         "new_axiom_or_primitive_proposed": False,
-        "claims_completeness_of_the_axis_list": False,
+        "claims_completeness_of_the_residual_list": False,
+        "claims_independence_or_product_structure": False,
+        "identifies_readout_weight_with_formation_weight": False,
     }
     summary["resources"] = {"elapsed_seconds": perf_counter() - started}
     summary["runner_sha256"] = sha256(Path(__file__).read_bytes()).hexdigest()
@@ -343,9 +308,9 @@ def main() -> int:
     print("SUMMARY_JSON", json.dumps(summary, sort_keys=True, default=str))
     print(f"RESULT {PASS} {FAIL} elapsed {perf_counter() - started:.2f} s")
     if FAIL:
-        print("RESULT NORMALIZATION_AXIS_MAP_FAILED")
+        print("RESULT NORMALIZATION_RESIDUAL_INVENTORY_FAILED")
         return 1
-    print("RESULT NORMALIZATION_AXES_ARE_INDEPENDENT")
+    print("RESULT NORMALIZATION_RESIDUALS_RECOMPUTED_AND_UNLINKED_PAIRS_RECORDED")
     return 0
 
 

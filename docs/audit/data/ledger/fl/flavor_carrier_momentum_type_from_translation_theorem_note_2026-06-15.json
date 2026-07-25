@@ -43,7 +43,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 11.737,
+  "load_bearing_score": 11.738,
   "load_bearing_step": "For every translation character, every position-diagonal operator has expectation (1/8) sum_n w_n, whereas the rank-one character projectors satisfy <psi_k, P_q psi_k> = delta_(kq).",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -276,6 +276,6 @@
   },
   "runner_path": "scripts/flavor_carrier_momentum_type_from_translation_2026_06_15.py",
   "title": "Finite Translation-Character Profiles and Projectors Theorem",
-  "transitive_descendants": 1206,
+  "transitive_descendants": 1207,
   "verdict_rationale": "Issue: the exact finite equalities pass, but the mandatory clean-verdict N1-N8 evidence packet cannot be completed from the supplied runner stdout. Why this blocks: the stdout does not evidence five distinct N1 mechanism classes or the five required N5 resolution tests, so an audited-clean result would violate the packet rules. Repair target: extend the current-cycle runner evidence with the required distinct stress routes and resolution-class tests, then rerun the restricted audit. Claim boundary until fixed: the displayed finite-cell identities remain exactly runner-supported, but clean audit ratification is withheld."
 }

@@ -31,8 +31,8 @@ Owner-approval history for axioms and primitives:
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3868 |
-| Applied audit verdicts | 714 |
+| Ledger rows | 3869 |
+| Applied audit verdicts | 715 |
 | Retained-grade rows, including boxed decorations | 454 |
 | Retained positive theorems | 104 |
 | Retained no-go rows | 0 |
@@ -41,7 +41,7 @@ Owner-approval history for axioms and primitives:
 | Open gates | 2 |
 | Unaudited rows | 2796 |
 | Retained-pending-chain rows | 6 |
-| Audited conditional rows | 173 |
+| Audited conditional rows | 174 |
 | Audited renaming rows | 27 |
 | Audited numerical-match rows | 9 |
 | Citation cycles detected | 58 |
@@ -54,12 +54,12 @@ Full audit-ratified row list: [`docs/repo/RETAINED_BACKBONE.md`](RETAINED_BACKBO
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 3014 |
+| Total pending rows | 3015 |
 | Ready rows | 605 |
 | Cycle-break targets | 59 |
 | Critical pending | 635 |
 | High pending | 365 |
-| Medium pending | 814 |
+| Medium pending | 815 |
 | Leaf pending | 1200 |
 
 Next ready rows by queue order:
@@ -105,7 +105,7 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 | Manifest pending removals | 0 |
 | Unmanifested candidates (need pending entries) | 0 |
 | Admitted ids absent from lane candidates | 30 |
-| Live conditional/failed rows that would park | 159 |
+| Live conditional/failed rows that would park | 160 |
 | Live rows fail-open (legacy/unversioned snapshot) | 42 |
 | Lane rows already in actual ready top-10 | 3 |
 | Lane rows added since prior pass | 0 |
@@ -177,9 +177,9 @@ Lane rows advanced by the simulated interleave (positions gained; complete list)
 - `g_bare_dynamical_fixation_obstruction_note_2026-04-18`: +30
 - `koide_q_readout_factorization_theorem_2026-04-22`: +13
 - `koide_q_onsite_source_domain_no_go_synthesis_note_2026-04-25`: +13
+- `pmns_commutant_eigenoperator_selector_note`: +13
 - `dm_abcc_pmns_nonsingularity_theorem_note_2026-04-19`: +13
 - `koide_frobenius_isotype_split_uniqueness_note_2026-04-21`: +12
-- `pmns_commutant_eigenoperator_selector_note`: +12
 - `no_per_site_bosonic_ccr_theorem_note_2026-05-02`: +12
 - `koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24`: +11
 - `industrial_sdp_bootstrap_infrastructure_note_2026-05-03`: +11
@@ -209,7 +209,6 @@ Lane rows advanced by the simulated interleave (positions gained; complete list)
 - `sigma_hier_uniqueness_theorem_note_2026-04-19`: +4
 - `cpt_particle_antiparticle_mass_equality_theorem_note_2026-05-02`: +4
 - `yt_color_projection_correction_note`: +3
-- `three_generation_observable_count_corollary_note_2026-05-03`: +3
 - `koide_q_delta_residual_cohomology_obstruction_no_go_note_2026-04-24`: +3
 - `koide_dimensionless_note_2026-04-24`: +3
 - `koide_transport_gap_constant_no_go_note_2026-04-20`: +3
@@ -218,6 +217,7 @@ Lane rows advanced by the simulated interleave (positions gained; complete list)
 - `gauge_vacuum_plaquette_constant_lift_obstruction_note`: +2
 - `gauge_vacuum_plaquette_mixed_cumulant_audit_note`: +2
 - `action_normalization_note`: +2
+- `three_generation_observable_count_corollary_note_2026-05-03`: +2
 - `planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25`: +2
 - `nonlinear_born_gravity_note`: +2
 - `unit_singlet_overlap_narrow_theorem_note_2026-05-02`: +1
@@ -226,9 +226,9 @@ Lane rows advanced by the simulated interleave (positions gained; complete list)
 - `area_law_algebraic_spectrum_entropy_no_go_note_2026-04-25`: +1
 
 Non-lane rows deferred by the simulated interleave (positions lost; complete list):
+- `koide_r_half_dynamical_determinant_route_pruning_no_go_note_2026-06-08`: -13
 - `lensing_finite_path_explanation_note`: -13
 - `hadron_lane1_sqrt_sigma_b5_framework_link_audit_note_2026-04-30`: -12
-- `koide_r_half_dynamical_determinant_route_pruning_no_go_note_2026-06-08`: -12
 - `dm_pmns_asymptotic_source_no_go_note_2026-04-20`: -11
 - `su3_cube_index_graph_shortcut_open_gate_note_2026-05-03`: -10
 - `record_history_order_time_rate_firewall_2026-06-05`: -10
@@ -292,7 +292,6 @@ Non-lane rows deferred by the simulated interleave (positions lost; complete lis
 - `gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02`: -3
 - `koide_emergent_time_eta_conjugation_parity_bounded_note_2026-05-30`: -3
 - `poisson_self_gravity_mechanism_note`: -3
-- `link_local_first_variation_selector_bridge_narrow_theorem_note_2026-05-10`: -3
 - `first_order_coframe_unconditionality_no_go_theorem_note_2026-04-30`: -3
 - `ac_reta_hclass_hunit_readout_derivation_obligation`: -3
 - `substrate_to_p_a_forcing_theorem_note_2026-04-30`: -3
@@ -310,6 +309,7 @@ Non-lane rows deferred by the simulated interleave (positions lost; complete lis
 - `staggered_3d_self_gravity_sign_note_2026-04-11`: -2
 - `koide_q_two_thirds_z3_character_norm_split_recasting_theorem_note_2026-05-10`: -2
 - `kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04`: -2
+- `link_local_first_variation_selector_bridge_narrow_theorem_note_2026-05-10`: -2
 - `koide_q_dred_normalization_freedom_no_go_note_2026-06-15`: -2
 - `cl3_complexification_split_narrow_theorem_note_2026-05-10`: -1
 - `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10`: -1
@@ -332,19 +332,19 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 4502 |
+| Citation-graph nodes | 4503 |
 | Critical nodes | 755 |
 | High nodes | 444 |
-| Medium nodes | 1129 |
+| Medium nodes | 1130 |
 | Leaf nodes | 2174 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 2131 descendants; score 269.558
-- `graph_first_su3_integration_note` - critical; 1672 descendants; score 64.208
-- `three_generation_observable_theorem_note` - critical; 1280 descendants; score 62.323
-- `observable_principle_from_axiom_note` - critical; 1119 descendants; score 61.629
+- `minimal_axioms` - critical; 2132 descendants; score 269.559
+- `graph_first_su3_integration_note` - critical; 1673 descendants; score 64.209
+- `three_generation_observable_theorem_note` - critical; 1281 descendants; score 62.324
+- `observable_principle_from_axiom_note` - critical; 1120 descendants; score 61.631
 - `quark_route2_exact_readout_map_note_2026-04-19` - critical; 197 descendants; score 61.629
-- `plaquette_self_consistency_note` - critical; 1255 descendants; score 49.295
-- `key_terminology` - critical; 1302 descendants; score 44.848
-- `minimal_axioms_2026-05-03` - critical; 1150 descendants; score 44.169
+- `plaquette_self_consistency_note` - critical; 1256 descendants; score 49.296
+- `key_terminology` - critical; 1303 descendants; score 44.849
+- `minimal_axioms_2026-05-03` - critical; 1151 descendants; score 44.170

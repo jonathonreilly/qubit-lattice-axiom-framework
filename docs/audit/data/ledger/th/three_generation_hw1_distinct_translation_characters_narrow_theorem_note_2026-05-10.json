@@ -52,7 +52,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "retained_pending_chain",
-  "load_bearing_score": 17.649,
+  "load_bearing_score": 17.651,
   "load_bearing_step": "Because the three factor projectors commute, P(s) is the joint eigenprojector, giving P(chi(X_i)) = e_i e_i^T and zero for the other five sign triples.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -170,6 +170,6 @@
   },
   "runner_path": "scripts/audit_companion_three_generation_hw1_distinct_characters_exact.py",
   "title": "Three-Generation `hw=1` Distinct Translation Characters Narrow Theorem",
-  "transitive_descendants": 802,
+  "transitive_descendants": 803,
   "verdict_rationale": "The runner genuinely instantiates the stated matrices and performs exact symbolic algebra; it is not merely printing expected results. All load-bearing checks are class (A), with no external comparator or new physical content. The note explicitly repackages the distinct-character and projector portion of the named parent observable theorem, so it is an exact algebraic decoration rather than an independent bounded theorem."
 }

@@ -32,7 +32,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 2.5,
+  "load_bearing_score": 2.822,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -53,6 +53,6 @@
   },
   "runner_path": "scripts/kcpt_dirac_even_algebra_reach_character_cp_charge_2026_07_21.py",
   "title": "KCPT Dirac-even algebra reach: the H-invariant part of the lattice-Dirac word algebra \u27e8D2, J_full\u27e9 equals C[M] and reaches four of the six commutant dimensions, and the two missing charges \u2014 the one separating 12\u207a \u2194 12\u207b and the one separating the two induced-12 \u2014 are character-level isotypic projectors",
-  "transitive_descendants": 3,
+  "transitive_descendants": 4,
   "verdict_rationale": null
 }

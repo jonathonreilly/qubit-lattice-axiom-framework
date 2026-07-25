@@ -46,7 +46,7 @@
   ],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 11.605,
+  "load_bearing_score": 11.607,
   "load_bearing_step": "Small centroid and phase-ramp shifts appear at nonzero coupling, but the matched-null loop does not converge cleanly enough to promote the tested family to a self-gravity mechanism.",
   "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
@@ -477,6 +477,6 @@
   },
   "runner_path": "scripts/poisson_self_gravity_loop_v3.py",
   "title": "Poisson Self-Gravity Loop V3 Note \u2014 Nonzero-Coupling Falsifier (Binding)",
-  "transitive_descendants": 778,
+  "transitive_descendants": 779,
   "verdict_rationale": "Issue: the live computation supports the printed finite rows, but N1/N7 leave stronger iteration, lattice-limit, alternative-dynamics, and alternative-observable routes untested, so the strongest steelman is unresolved. Why this blocks: N2 shows that small response and failure to meet tolerance are independent limitations; N3 exposes the kernel, gain, relaxation, cutoff, and readout as load-bearing model choices; N4 supplies no retained one-hop residual witness. N5 lacks per-element, per-site, per-mode, per-block, and lattice-wide live checks for the negative rhetoric, while N6 candidates do not derive the chosen dynamics and N8's similar self-gravity records are contextual rather than proof for this runner. Repair target and claim boundary until fixed: retain only the nine computed shifts and six-step residuals, derive or explicitly condition the model/readout choices, and do not infer general nonconvergence or mechanism exclusion."
 }

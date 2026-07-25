@@ -102,7 +102,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "retained",
-  "load_bearing_score": 19.762,
+  "load_bearing_score": 19.763,
   "load_bearing_step": "With B_beta := D_beta^(1/2) M_beta, the identity T_beta = B_beta^* B_beta holds, while M_beta is positive, invertible, and swap-commuting.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -1755,6 +1755,6 @@
   },
   "runner_path": "scripts/frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization.py",
   "title": "Gauge-Vacuum Plaquette Supplied-Diagonal Source-Sector Factorization Theorem",
-  "transitive_descendants": 867,
+  "transitive_descendants": 868,
   "verdict_rationale": "The theorem is a genuine finite-dimensional algebraic closure over explicitly supplied J_N, beta, and diagonal kappa data, not a definition or tuned match. Independent derivation verifies the exponential properties of M_beta, the matrix-element contraction, Gram orientation, swap symmetry, invertible-congruence rank and kernel formulas, and extremal spectral bounds; the runner supplies complementary exact, numerical, and mutation checks. The source correctly excludes any identification with an actual Wilson compression, so no physical bridge is silently imported."
 }

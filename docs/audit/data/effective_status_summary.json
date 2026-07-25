@@ -1,6 +1,6 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 2157,
+    "bounded_theorem": 2158,
     "decoration": 31,
     "meta": 363,
     "no_go": 438,
@@ -81,7 +81,7 @@
   "cycles_detected": 58,
   "effective_status_counts": {
     "audit_in_progress": 2,
-    "audited_conditional": 173,
+    "audited_conditional": 174,
     "audited_failed": 43,
     "audited_numerical_match": 9,
     "audited_renaming": 27,

@@ -50,7 +50,7 @@
   ],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 12.592,
+  "load_bearing_score": 12.594,
   "load_bearing_step": "For the encoded staggered unit-cell Hamiltonian, H(K, phi)^2 = -(1 + phi^2) I_8 at every hw=1 corner.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -1535,6 +1535,6 @@
   },
   "runner_path": "scripts/frontier_pmns_uniform_scalar_deformation_boundary.py",
   "title": "PMNS Uniform Scalar Deformation Boundary",
-  "transitive_descendants": 771,
+  "transitive_descendants": 772,
   "verdict_rationale": "Issue: The runner genuinely verifies 22 finite algebra/model checks, but it instantiates the retained blocks as scalar matrices and imports the one-sided-minimal classifier rather than deriving either from a cited retained or accepted premise. Why this blocks: the corner-square identity establishes equal spectra for the encoded Hamiltonian, not the asserted exhaustive physical map from the admitted uniform scalar/Coleman-Weinberg lane to the most general retained lepton pair. No-go discipline: N1 lacks five distinct live-tested alternative mechanisms; N2 leaves independent sector-scalarity and classifier-acceptance walls; N3 exposes the uncited admitted-lane and sector selection; N4 has no retained prior witness; and N5 lacks live per-element, per-site, per-mode, per-block, and lattice-wide resolution tests. N6 supplies no candidate closing the missing bridge, N7 lacks an independent steelman resolution, and N8's indexed echoes are not authority; the safe boundary is therefore only algebraic rejection of scalar fixtures by the encoded classifier."
 }

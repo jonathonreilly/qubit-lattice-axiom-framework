@@ -1,42 +1,90 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T11:10:18.213745+00:00",
+  "audit_invocation_history": [
+    "afefa34be0184aa9a58a438c131cfc2d"
+  ],
+  "audit_invocation_id": "afefa34be0184aa9a58a438c131cfc2d",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 48,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true,
+      "runner_path": "scripts/audit_companion_dm_neutrino_codd_bosonic_normalization_exact_2026_05_17.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 0.0,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/audit_companion_dm_neutrino_codd_bosonic_normalization_exact_2026_05_17.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "34fc22e66a4ae87d6c374a94b69fd66f186b2109a603acb83bf5dc8479deb1e8",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "34fc22e66a4ae87d6c374a94b69fd66f186b2109a603acb83bf5dc8479deb1e8",
+    "runner_path": "scripts/audit_companion_dm_neutrino_codd_bosonic_normalization_exact_2026_05_17.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-3dd94539",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The spectra, cubic identities, determinant ratios, and corollaries follow directly from the three explicit matrices with no load-bearing dependencies. The clipped stdout is an audit-artifact completeness defect, not a mathematical gap in the displayed derivation.",
   "claim_id": "dm_neutrino_codd_bosonic_normalization_narrow_theorem_note_2026-05-17",
-  "claim_scope": null,
+  "claim_scope": "Exact finite-dimensional spectra, cubic identities, and scalar-baseline log-absolute-determinant equality for the three explicitly supplied matrices S_cls, T_gamma, and Z_odd.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T11:10:18.213745+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Because each explicit generator has nonzero spectrum {+1,-1} and only differing null multiplicity, each satisfies M^3=M and det(m I_n+jM)/m^n=1-j^2/m^2.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "derived_no_go_boundary"
+  ],
   "note_hash": "bd7a2f0a34e40774b07ae97eaf7d340c2626e1bc065bad5d7f54bb3218f9fdb3",
   "note_path": "docs/DM_NEUTRINO_CODD_BOSONIC_NORMALIZATION_NARROW_THEOREM_NOTE_2026-05-17.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "runner_artifact_issue: provide the complete unclipped stdout from the primary exact-symbolic runner, including all 32 executed checks and the final total.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1254,14 +1302,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 32,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 32
   },
   "runner_path": "scripts/audit_companion_dm_neutrino_codd_bosonic_normalization_exact_2026_05_17.py",
   "title": "DM Neutrino `c_odd` Bosonic Normalization Narrow Theorem",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "Direct finite-dimensional calculation verifies the claimed spectra, cubic identities, determinant equality, and corollaries. The runner source genuinely constructs the matrices and performs symbolic operations; all 32 reported checks are class A, with no imported or tuned values. For the derived non-scalar-baseline boundary, N1 does not establish a universal no-go, N2 has one scalar-baseline scope condition, N3/N5 negative phrases are scope language, N4 has no prior residual, N6 supplies no relevant closer, N7's broader-equality steelman is defeated only by the displayed finite counterexample, and N8 echoes are inapplicable. Nevertheless, the binding preflight identifies clipped load-bearing stdout and forbids audited_clean, so the verdict is conditional solely pending complete runner evidence."
 }

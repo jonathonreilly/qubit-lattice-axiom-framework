@@ -1,0 +1,136 @@
+{
+ "cycle": 622,
+ "authority": "none",
+ "audit": "unset",
+ "frozen_contract_sha256": "46f9cbe09fd60cddde1f69005f87a8173d0cfbf0e5e24098c90f414ace258a55",
+ "consumed": {
+  "cycle610_runner": "36fcb1655bbdcd758b69ea1e273821e5c820f738eb63199570c8f36c7e294bac",
+  "cycle611_runner": "15db2200b08bc4a5d7669975806fe51e9b8a55049f0660969d427332602bf9e8"
+ },
+ "cycle_number_collision": "campaign branch reaches Cycle 621 and carries unrelated Cycle 610/611/612 notes; this lane claims Cycle 622 per owner directive",
+ "parameters": {
+  "n_prep_grid": [
+   64,
+   128,
+   256
+  ],
+  "r_shell_grid": [
+   3,
+   4
+  ],
+  "Q_cert": 2048,
+  "Q_skip": 64
+ },
+ "route_d1": [
+  {
+   "R_shell": 3,
+   "N_prep": 64,
+   "survivor_norm_sq": 0.46058898900802125,
+   "exhaust_norm_sq": 0.5394110109919681,
+   "ledger_defect": 1.0658141036401503e-14,
+   "exhaust_registers": 13952,
+   "purity": 0.44890622238512123,
+   "antisym_defect": 8.862964847752503e-16,
+   "selected_channel": "plus",
+   "certified": false,
+   "rate_minus": -0.2247983870967742,
+   "fine_minus": -0.2246006155445136
+  },
+  {
+   "R_shell": 3,
+   "N_prep": 128,
+   "survivor_norm_sq": 0.368826267189731,
+   "exhaust_norm_sq": 0.631173732810249,
+   "ledger_defect": 1.9984014443252818e-14,
+   "exhaust_registers": 27904,
+   "purity": 0.4429467498602949,
+   "antisym_defect": 8.912561215988145e-16,
+   "selected_channel": "plus",
+   "certified": false,
+   "rate_minus": -0.22933467741935484,
+   "fine_minus": -0.22961183996400267
+  },
+  {
+   "R_shell": 3,
+   "N_prep": 256,
+   "survivor_norm_sq": 0.2525965797979321,
+   "exhaust_norm_sq": 0.7474034202020354,
+   "ledger_defect": 3.26405569239796e-14,
+   "exhaust_registers": 55808,
+   "purity": 0.40175124573490684,
+   "antisym_defect": 7.917699565206628e-16,
+   "selected_channel": "plus",
+   "certified": false,
+   "rate_minus": -0.1849798387096774,
+   "fine_minus": -0.18525676303980385
+  },
+  {
+   "R_shell": 4,
+   "N_prep": 64,
+   "survivor_norm_sq": 0.5433577036784714,
+   "exhaust_norm_sq": 0.45664229632151554,
+   "ledger_defect": 1.3766765505351941e-14,
+   "exhaust_registers": 24704,
+   "purity": 0.4461320572044493,
+   "antisym_defect": 1.0568213422052075e-15,
+   "selected_channel": "plus",
+   "certified": false,
+   "rate_minus": -0.3004032258064516,
+   "fine_minus": -0.3002081734966411
+  },
+  {
+   "R_shell": 4,
+   "N_prep": 128,
+   "survivor_norm_sq": 0.465197243478833,
+   "exhaust_norm_sq": 0.5348027565211465,
+   "ledger_defect": 2.2426505097428162e-14,
+   "exhaust_registers": 49408,
+   "purity": 0.47429224695430255,
+   "antisym_defect": 1.164674128451687e-15,
+   "selected_channel": "minus",
+   "certified": false,
+   "rate_minus": -0.23941532258064516,
+   "fine_minus": -0.23969448623524042
+  },
+  {
+   "R_shell": 4,
+   "N_prep": 256,
+   "survivor_norm_sq": 0.38501315568520905,
+   "exhaust_norm_sq": 0.6149868443147519,
+   "ledger_defect": 3.952393967665557e-14,
+   "exhaust_registers": 98816,
+   "purity": 0.4738444009094242,
+   "antisym_defect": 1.2818637113990361e-15,
+   "selected_channel": "plus",
+   "certified": false,
+   "rate_minus": -0.23084677419354838,
+   "fine_minus": -0.23112465016386693
+  }
+ ],
+ "masked_operator_R3": {
+  "abs_lambda": 0.3087251561077763,
+  "arg_lambda": 0.46874753709363653,
+  "theta0": -2.975574708446694
+ },
+ "route_d3_weights": [
+  0.26305,
+  0.13624,
+  0.13727,
+  0.11787,
+  0.09291,
+  0.05945,
+  0.03965,
+  0.03416,
+  0.0313
+ ],
+ "interpretation_firewall": [
+  "a preparation schedule is not time; exhaust registers are not Records",
+  "the survivor/exhaust split is an exact coherent norm ledger, not Born probability",
+  "the detector ray lives in the matter x blank-exhaust sector; absorbed amplitude is orthogonal by exhaust occupancy \u2014 a locality fact, not a conditioning step",
+  "certification uses spectral data; preparation uses only geometry and a frozen schedule"
+ ],
+ "elapsed_seconds": 18.85469102859497,
+ "pass_count": 6,
+ "fail_count": 6,
+ "pass": false
+}

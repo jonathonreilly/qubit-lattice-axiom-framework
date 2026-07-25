@@ -1,0 +1,31 @@
+PASS the Cycle-610 runner is byte-pinned and unchanged :: 36fcb1655bbdcd75
+PASS the Chebyshev shell family is exactly invariant under all 24 frames :: {'defect_sites': 0}
+PASS D-1 ledger: matter plus exhaust norm equals one to 1e-12 at every step of every row (no discarded weight, no renormalization) :: {'max_ledger': 3.952393967665557e-14, 'max_antisym': 1.2818637113990361e-15}
+FAIL P1: D-1 certifies at (R_shell=3, N_prep>=128) with the minus channel selected by CT-1'' (raw source in, certified clock out, deterministically) :: {'first_certified': None}
+FAIL P1 survivor-norm band: the frozen [0.10, 0.35] prediction for the certified R3 rows (a falsifiable magnitude claim, not a certification condition) :: {'survivor_norms': []}
+FAIL P1 purity: offline purity exceeds 0.95 on the certified rows :: {'purities': []}
+FAIL P2 contact-off: without the contact law the absorber drains essentially everything (the absorber is a bound-state existence detector) and nothing certifies :: {'survivor': 0.1905345056736696, 'certified': False}
+PASS P3 absorber-off: plain unitary evolution of the raw source stays uncertified on both channels :: {'selected': 'none', 'certified': False}
+PASS lawful domain: non-antisymmetric input is refused :: {'defect': 0.07071067811865477}
+FAIL P4/P5: no certified configuration exists to test :: route D-1 never certified
+FAIL P8 internal: the masked-operator dominant phase lies within 5e-3 of the Cycle-610 root (independent worker comparison recorded in the note) :: {'abs_lambda': 0.3087251561077763, 'arg_lambda': 0.46874753709363653, 'theta0': -2.975574708446694}
+PASS D-3 mechanism probe (frozen negative-leaning prior): the P0-dephasing cascade does not purify — the bound-branch weight of the dephased ensemble does not rise above the raw value plus 0.05 :: {'weights': [0.26305, 0.13624, 0.13727, 0.11787, 0.09291, 0.05945, 0.03965, 0.03416, 0.0313]}
+RESULT 6 6 elapsed 18.85 s
+       19.50 real        18.45 user         0.84 sys
+           224477184  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               31281  page reclaims
+                 128  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 320  voluntary context switches
+                5420  involuntary context switches
+        237744658300  instructions retired
+         64579062527  cycles elapsed
+           136479512  peak memory footprint

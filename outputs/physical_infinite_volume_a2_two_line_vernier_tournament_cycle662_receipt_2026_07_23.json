@@ -1,0 +1,249 @@
+{
+ "cycle": 662,
+ "authority": "none",
+ "audit": "unset",
+ "frozen_contract_sha256": "24199cd1ac9d3bf46db8ee59b8d83f6e27c6058dd55a07122181f4993d42f2b3",
+ "consumed_cycle610_sha256": "36fcb1655bbdcd758b69ea1e273821e5c820f738eb63199570c8f36c7e294bac",
+ "stacking": "substrate landed by the parent substrate PR of this stack (Cycles 563-583); rebuilt off cycle629 tip 53bdb7645e; joint lane max 661, claiming 662",
+ "finite_L": {
+  "9": {
+   "root_b": {
+    "theta": -2.975574708448596,
+    "abs_b": 8.369595749543721e-12
+   },
+   "root_2": {
+    "theta": 0.31384998465453723,
+    "abs_b": 9.940794896387296e-13
+   }
+  },
+  "13": {
+   "root_b": {
+    "theta": -2.975575908169387,
+    "abs_b": 1.3820284978313468e-11
+   },
+   "root_2": {
+    "theta": 0.16692471294672723,
+    "abs_b": 2.2151997470208162e-10
+   }
+  },
+  "17": {
+   "root_b": {
+    "theta": -2.975575984418749,
+    "abs_b": 1.8490237380489466e-11
+   },
+   "root_2": {
+    "theta": 0.3136811339191751,
+    "abs_b": 1.0379297295691448e-11
+   }
+  },
+  "21": {
+   "root_b": {
+    "theta": -2.975575990392323,
+    "abs_b": 2.1194614552138906e-12
+   },
+   "root_2": {
+    "theta": 0.3136832761125431,
+    "abs_b": 3.941268688400311e-12
+   }
+  }
+ },
+ "held_beta": {
+  "9": {
+   "root_b": {
+    "theta": -2.9622626181481437,
+    "abs_b": 1.1988692247056675e-11
+   },
+   "root_2": {
+    "theta": 0.35901040319475747,
+    "abs_b": 3.2149199935894086e-12
+   }
+  },
+  "17": {
+   "root_b": {
+    "theta": -2.9622633575743786,
+    "abs_b": 1.8897576955896786e-11
+   },
+   "root_2": {
+    "theta": 0.3427156930213513,
+    "abs_b": 4.745186853384159e-11
+   }
+  }
+ },
+ "quadrature": {
+  "root_b": {
+   "orders": {
+    "24": {
+     "theta": -2.9755756466494603,
+     "abs_b": 1.6386099614790072e-11
+    },
+    "32": {
+     "theta": -2.975575937857995,
+     "abs_b": 7.204462037322767e-11
+    },
+    "40": {
+     "theta": -2.9755759819052816,
+     "abs_b": 1.1482144345336999e-10
+    },
+    "48": {
+     "theta": -2.97557598922244,
+     "abs_b": 1.0875731411689497e-10
+    }
+   },
+   "shifts": [
+    2.912085346196136e-07,
+    4.404728670692748e-08,
+    7.317158434716475e-09
+   ],
+   "theta_inf": -2.97557598922244,
+   "quadrature_converged": true
+  },
+  "root_2": {
+   "orders": {
+    "24": {
+     "theta": 0.17560514122322685,
+     "abs_b": 2.005375788663867e-08
+    },
+    "32": {
+     "theta": 0.3136860749850092,
+     "abs_b": 2.299138754404433e-11
+    },
+    "40": {
+     "theta": 0.3136858184814584,
+     "abs_b": 1.840329316012515e-10
+    },
+    "48": {
+     "theta": 0.2780235181466161,
+     "abs_b": 4.653469057347367e-08
+    }
+   },
+   "shifts": [
+    0.13808093376178238,
+    2.5650355084394505e-07,
+    0.0356623003348423
+   ],
+   "theta_inf": 0.2780235181466161,
+   "quadrature_converged": false
+  }
+ },
+ "convergence": {
+  "root_b": {
+   "residuals": {
+    "9": 1.2807738438702643e-06,
+    "13": 8.105305315808664e-08,
+    "17": 4.803691222576845e-09,
+    "21": 1.1698828572548337e-09
+   },
+   "exp_rate_per_L": -0.5831930098307074,
+   "power_exponent": -8.259570152543942,
+   "monotone_within_factor_1p5": true,
+   "controlled_extrapolation_error_bar": 8.487041291971309e-09
+  },
+  "root_2": {
+   "residuals": {
+    "9": 0.03582646650792115,
+    "13": 0.11109880519988885,
+    "17": 0.03565761577255905,
+    "21": 0.03565975796592702
+   },
+   "exp_rate_per_L": -0.0003886735881196331,
+   "power_exponent": -0.005504655771589198,
+   "monotone_within_factor_1p5": false,
+   "controlled_extrapolation_error_bar": 0.07132205830076932
+  }
+ },
+ "isolation": {
+  "derivative": 129513.68860476035,
+  "neighborhood_min": 0.010640296483585573
+ },
+ "two_line_word": {
+  "lines": [
+   -2.975417022899389,
+   0.3134172924175278
+  ],
+  "peak_mags": [
+   454.80010838853707,
+   59.628043920197
+  ],
+  "floor": 0.08505157172770339,
+  "two_peaks": true,
+  "per_line_locked": [
+   true,
+   true
+  ],
+  "lawful": true
+ },
+ "vernier": [
+  {
+   "alpha_true": 0.0,
+   "alpha_rec": 7.884279977448617e-05,
+   "wrap_error": 7.88427997746588e-05,
+   "ok": true,
+   "lines_measured": [
+    -2.975417022899389,
+    0.3134172924175278
+   ]
+  },
+  {
+   "alpha_true": 0.7853981633974483,
+   "alpha_rec": 0.7851569500037088,
+   "wrap_error": 0.00024121339373950335,
+   "ok": true,
+   "lines_measured": [
+    -2.190400822456833,
+    1.098557306393908
+   ]
+  },
+  {
+   "alpha_true": -0.7439,
+   "alpha_rec": 5.539405182515727,
+   "wrap_error": 0.00011987533614110646,
+   "ok": true,
+   "lines_measured": [
+    -0.43044444850703334,
+    2.5639120902930266
+   ],
+   "R_rec": 1.2499618384818343,
+   "a_count_word": "5:4",
+   "reaches_5_4": true
+  },
+  {
+   "alpha_true": 2.0,
+   "alpha_rec": 3.4949460183599745,
+   "wrap_error": 1.4949460183599745,
+   "ok": false,
+   "lines_measured": [
+    -0.9804389644029841,
+    -0.9750117407492533
+   ]
+  },
+  {
+   "alpha_true": -2.9,
+   "alpha_rec": 4.8780865244124865,
+   "wrap_error": 1.4949012172329006,
+   "ok": false,
+   "lines_measured": [
+    0.4026147405756042,
+    0.4082155027601817
+   ]
+  },
+  {
+   "alpha_true": 6.283185307179586,
+   "alpha_rec": 7.884279977448617e-05,
+   "wrap_error": 7.884279977421471e-05,
+   "ok": true,
+   "lines_measured": [
+    -2.975417022899389,
+    0.3134172924175278
+   ]
+  }
+ ],
+ "interpretation_firewall": [
+  "the L=inf values are quadrature-controlled statements with stated error bars, not a rigorous spectral theorem; the contact-cyclic lemma remains open",
+  "a spectral line is not energy; the vernier reconstruction is retained-data analysis; reaching the 5:4 shore is algebraic reachability under the Cycle-612 association caveat",
+  "no physical vernier clock is built here; two-line certificates are lawful-domain definitions for the physical side's acceptance harness"
+ ],
+ "elapsed_seconds": 1676.011689901352,
+ "pass_count": 6,
+ "fail_count": 2,
+ "pass": false
+}

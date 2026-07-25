@@ -423,6 +423,32 @@ def _import_codex_audit_runner():
     return module
 
 
+def _init_git_fixture_repo(root: Path) -> None:
+    """Make a REPO_ROOT fixture a real repo so live runner execution works.
+
+    `codex_audit_runner._run_repo_runner` executes every runner inside a
+    detached `git worktree` created from REPO_ROOT. A bare tempdir has no
+    HEAD, so the worktree add raises, `get_independent_runner_stdout` catches
+    it, and the evidence role silently becomes
+    `runner_stdout_independent_failed`. Without this the N7 live-authentication
+    tests assert against the failure path instead of the path a forensic no-go
+    packet actually depends on. Call after the fixture files are written.
+    """
+    env = {
+        **os.environ,
+        "GIT_AUTHOR_NAME": "audit-fixture",
+        "GIT_AUTHOR_EMAIL": "audit-fixture@example.invalid",
+        "GIT_COMMITTER_NAME": "audit-fixture",
+        "GIT_COMMITTER_EMAIL": "audit-fixture@example.invalid",
+    }
+    for command in (
+        ["git", "init", "--quiet", "-b", "main", str(root)],
+        ["git", "-C", str(root), "add", "-A"],
+        ["git", "-C", str(root), "commit", "--quiet", "-m", "fixture"],
+    ):
+        subprocess.run(command, check=True, capture_output=True, env=env)
+
+
 def _import_repo_script(filename: str):
     """Import one repo-root runner under a fresh, test-specific name."""
     module_name = f"repo_script_under_test_{Path(filename).stem}"
@@ -7934,7 +7960,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         changed = json.loads(json.dumps(manifest))
         changed["docs/AUTH.md"]["effective_status"] = "audited_conditional"
         self.assertIn(
-            "effective_status drifted",
+            "effective_status weakened",
             m.evidence_snapshot_current_error(packet, changed) or "",
         )
         changed = json.loads(json.dumps(manifest))
@@ -7947,6 +7973,101 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "path universe changed",
             m.evidence_snapshot_current_error(packet, changed) or "",
         )
+
+    def test_strengthened_authority_is_growth_signal_not_invalidation(self):
+        """A cited authority getting stronger must not delete the verdict.
+
+        Strict equality on `effective_status` made the audit lane's own
+        throughput destructive: promoting a dependency wiped the no-go row
+        citing it, while the development tier (`invalidate_stale_audits`
+        rank rule) never invalidates on a rank increase.
+        """
+        m = _import("no_go_discipline_gate")
+        manifest = self._manifest()
+        manifest["docs/AUTH.md"] = {
+            "path": "docs/AUTH.md", "roles": ["authority"],
+            "text": "Authority text with a canonical boundary.",
+            "effective_status": "unaudited", "accepted_premise_type": None,
+        }
+        packet = _no_go_packet()
+        _set_no_go_scan_coverage(packet, manifest)
+        packet["evidence_snapshot"] = m.build_evidence_snapshot(packet, manifest)
+        self.assertIsNone(m.evidence_snapshot_current_error(packet, manifest))
+        for stronger in ("retained_bounded", "retained", "retained_no_go"):
+            changed = json.loads(json.dumps(manifest))
+            changed["docs/AUTH.md"]["effective_status"] = stronger
+            self.assertIsNone(
+                m.evidence_snapshot_current_error(packet, changed),
+                f"{stronger} must not invalidate an authenticated verdict",
+            )
+            growth = m.evidence_snapshot_index_growth(packet, changed)
+            self.assertIn(
+                f"authority_strengthened:unaudited->{stronger}",
+                growth.get("docs/AUTH.md", []),
+            )
+
+    def test_evidence_snapshot_writer_satisfies_reader(self):
+        """The writer must emit every entry field the reader demands.
+
+        On 2026-07-11 the reader's required entry-field set grew under an
+        unchanged `no_go_evidence_snapshot_v1` tag, so every snapshot already
+        stored became unreadable and each affected row was reset with an
+        undifferentiated `no_go_discipline_packet_invalid`. This binds the two
+        halves of the contract together.
+        """
+        m = _import("no_go_discipline_gate")
+        manifest = self._manifest()
+        manifest["docs/AUTH.md"] = {
+            "path": "docs/AUTH.md", "roles": ["authority"],
+            "text": "Authority text with a canonical boundary.",
+            "effective_status": "retained", "accepted_premise_type": None,
+        }
+        packet = _no_go_packet()
+        _set_no_go_scan_coverage(packet, manifest)
+        snapshot = m.build_evidence_snapshot(packet, manifest)
+        self.assertEqual(snapshot["schema"], m.EVIDENCE_SNAPSHOT_SCHEMA)
+        for path, entry in snapshot["entries"].items():
+            absent = sorted(
+                m.EVIDENCE_SNAPSHOT_ENTRY_REQUIRED_FIELDS - set(entry)
+            )
+            self.assertEqual(absent, [], f"{path} is missing {absent}")
+        packet["evidence_snapshot"] = snapshot
+        self.assertIsNone(m.evidence_snapshot_schema_defect(packet))
+        self.assertIsNotNone(m.evidence_manifest_from_snapshot(packet))
+
+    def test_legacy_snapshot_shape_is_reported_as_a_migration(self):
+        """A pre-expansion snapshot must not read as corruption."""
+        m = _import("no_go_discipline_gate")
+        manifest = self._manifest()
+        packet = _no_go_packet()
+        _set_no_go_scan_coverage(packet, manifest)
+        snapshot = m.build_evidence_snapshot(packet, manifest)
+        legacy_path = sorted(snapshot["entries"])[0]
+        snapshot["entries"][legacy_path].pop("verified_values")
+        packet["evidence_snapshot"] = snapshot
+        defect = m.evidence_snapshot_schema_defect(packet)
+        self.assertIn("predates the current entry shape", defect or "")
+        self.assertIn("verified_values", defect or "")
+        self.assertIn(
+            "verified_values",
+            m.evidence_snapshot_current_error(packet, manifest) or "",
+        )
+
+    def test_snapshot_status_rank_matches_pipeline(self):
+        """The gate's local rank copy must track the canonical table."""
+        m = _import("no_go_discipline_gate")
+        pipeline = _import("compute_effective_status")
+        self.assertEqual(m.SNAPSHOT_STATUS_RANK, pipeline.RANK)
+        self.assertEqual(
+            m.snapshot_status_rank("decoration_under_parent"),
+            pipeline.status_rank("decoration_under_parent"),
+        )
+        for status in list(pipeline.RANK) + [None, "nonsense"]:
+            self.assertEqual(
+                m.snapshot_status_rank(status),
+                pipeline.status_rank(status),
+                status,
+            )
 
     def test_directional_wall_collapse_removes_the_dependent_wall(self):
         m = _import("no_go_discipline_gate")
@@ -9222,6 +9343,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 "print('N7_STEELMAN_RESOLUTION selector wall resolved')\n",
                 encoding="utf-8",
             )
+            _init_git_fixture_repo(root)
             row = {
                 "claim_id": "target",
                 "note_path": "docs/target.md",
@@ -9279,6 +9401,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 "print('N7_STEELMAN_RESOLUTION boundary resolved')\n",
                 encoding="utf-8",
             )
+            _init_git_fixture_repo(root)
             row = {
                 "claim_id": "target",
                 "note_path": "docs/target.md",
@@ -9391,6 +9514,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 "raise SystemExit(7)\n",
                 encoding="utf-8",
             )
+            _init_git_fixture_repo(root)
             row = {
                 "claim_id": "target",
                 "note_path": "docs/target.md",
@@ -9452,29 +9576,15 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             note_path = root / "docs" / "target.md"
             runner_path = root / "scripts" / "runner.py"
             helper_path = root / "scripts" / "helper.py"
-            counter_path = root / "invocations.txt"
             note_path.parent.mkdir(parents=True, exist_ok=True)
             runner_path.parent.mkdir(parents=True, exist_ok=True)
             note_path.write_text(_no_go_evidence_text(), encoding="utf-8")
             runner_path.write_text("print('primary')\n", encoding="utf-8")
-            # Stateful helper: the first invocation exits zero with the N7
-            # resolution marker; any second invocation emits a long failure
-            # tail (no clipping marker) and exits nonzero. Canonical dedup must
-            # keep the duplicate declaration from ever triggering that second
-            # invocation, so the authenticated role cannot be poisoned by a
-            # later markerless failure tail on the same evidence surface.
             helper_path.write_text(
-                "import pathlib\n"
-                f"c = pathlib.Path({str(counter_path)!r})\n"
-                "n = int(c.read_text()) if c.exists() else 0\n"
-                "c.write_text(str(n + 1))\n"
-                "if n == 0:\n"
-                "    print('N7_STEELMAN_RESOLUTION selector wall resolved')\n"
-                "else:\n"
-                "    print('POISON ' + 'y' * 9000)\n"
-                "    raise SystemExit(7)\n",
+                "print('N7_STEELMAN_RESOLUTION selector wall resolved')\n",
                 encoding="utf-8",
             )
+            _init_git_fixture_repo(root)
             row = {
                 "claim_id": "target",
                 "note_path": "docs/target.md",
@@ -9484,8 +9594,28 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 "deps": [],
             }
             manifest: dict[str, dict] = {}
-            with mock.patch.object(
-                m, "get_runner_stdout", return_value=_no_go_evidence_text(),
+            # Invocation count is asserted with a call-through spy rather than
+            # a counter file the helper writes: `_run_repo_runner` executes in
+            # a disposable checkout under `sandbox-exec` with `file-write*`
+            # denied across REPO_ROOT, so no runner can carry state between
+            # invocations by design. The spy measures the dedup property
+            # directly while the helper still executes live.
+            invocations: list[str] = []
+            real_independent = m.get_independent_runner_stdout
+
+            def counting_independent(helper: str, timeout_sec: int):
+                invocations.append(helper)
+                return real_independent(helper, timeout_sec)
+
+            with (
+                mock.patch.object(
+                    m, "get_runner_stdout", return_value=_no_go_evidence_text(),
+                ),
+                mock.patch.object(
+                    m,
+                    "get_independent_runner_stdout",
+                    side_effect=counting_independent,
+                ),
             ):
                 m.render_prompt(
                     row,
@@ -9504,7 +9634,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 )
             )
             # The helper ran exactly once; the duplicate declaration was dropped.
-            self.assertEqual(counter_path.read_text(), "1")
+            self.assertEqual(invocations, ["scripts/helper.py"])
             self.assertEqual(
                 manifest[independent_path]["roles"],
                 ["runner_stdout_independent"],
@@ -9512,7 +9642,6 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             self.assertIn(
                 "selector wall resolved", manifest[independent_path]["text"]
             )
-            self.assertNotIn("POISON", manifest[independent_path]["text"])
 
     def test_n7_authenticated_role_revoked_by_failed_sibling(self):
         m = _import("no_go_discipline_gate")

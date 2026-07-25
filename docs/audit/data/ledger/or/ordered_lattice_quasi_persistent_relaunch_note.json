@@ -1,24 +1,86 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T01:02:07.635965+00:00",
+  "audit_invocation_history": [
+    "c2da5c7a783d4ee3b858dfe501a0f2a6"
+  ],
+  "audit_invocation_id": "c2da5c7a783d4ee3b858dfe501a0f2a6",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true,
+      "runner_path": "scripts/ordered_lattice_quasi_persistent_relaunch.py"
+    },
+    "criticality": "high",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "ordered_lattice_quasi_persistent_relaunch_2d_note": "A bounded numerical replay of the six-row metric table for one fixed 2D ordered-lattice harness and one fixed Gaussian/top-k packet recipe."
+    },
+    "dep_claim_type": {
+      "ordered_lattice_quasi_persistent_relaunch_2d_note": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "ordered_lattice_quasi_persistent_relaunch_2d_note": "retained_bounded"
+    },
+    "deps": [
+      "ordered_lattice_quasi_persistent_relaunch_2d_note"
+    ],
+    "helper_runner_hashes": {
+      "scripts/lattice_3d_valley_linear_card.py": "d082958f8ece3fc2f3400226718c164b676810c944d6378d62f08bc3c84d235e"
+    },
+    "load_bearing_score": 8.426,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/lattice_3d_valley_linear_card.py": {
+        "cache_exit_code": null,
+        "cache_freshness": "missing",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": null,
+        "cache_status": null
+      },
+      "scripts/ordered_lattice_quasi_persistent_relaunch.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "3925b6785fb1c53d319a12d0b45e5159bb81bbf84b521fb05c79d88106d7d6ab",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "3925b6785fb1c53d319a12d0b45e5159bb81bbf84b521fb05c79d88106d7d6ab",
+    "runner_path": "scripts/ordered_lattice_quasi_persistent_relaunch.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 42
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-1798cdd0",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The fixed-harness numerical table is reproduced by genuine computation. The further interpretation as a quasi-persistent surrogate lacks a declared acceptance threshold, phase-aware packet-equivalence rule, and robustness test.",
   "claim_id": "ordered_lattice_quasi_persistent_relaunch_note",
-  "claim_scope": null,
+  "claim_scope": "A frozen numerical replay on the h=0.5, W=8, L=12 harness for point and compact5 seeds using top-5 compression and relaunch; no threshold-certified quasi-persistence conclusion is included.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_last_reviewed": "2026-07-25T01:02:07.635965+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,21 +88,22 @@
     "ordered_lattice_quasi_persistent_relaunch_2d_note"
   ],
   "direct_in_degree": 6,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [
     "scripts/lattice_3d_valley_linear_card.py"
   ],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 8.426,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Compressing the detector-layer packet to a top-5 support state preserves most downstream free-profile identity, making the quasi-persistent surrogate plausible as a bounded control object.",
+  "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "8cca657ff79b572a68180f1926b85b530b56f18e89da75e9b705b859fc51b803",
   "note_path": "docs/ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "scope_too_broad: narrow this note\u2019s safe read to the frozen numerical replay, add assertions for every reported metric, and add a dated downstream-hygiene line to this note\u2019s own boundary before re-audit; alternatively supply a phase-aware re-identification criterion and acceptance threshold.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -166,12 +229,12 @@
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
-    "C": 0,
+    "C": 14,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 14
   },
   "runner_path": "scripts/ordered_lattice_quasi_persistent_relaunch.py",
   "title": "Ordered-Lattice Quasi-Persistent Relaunch Note",
   "transitive_descendants": 42,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: The runner reproduces the fourteen reported metrics, but the step from high relaunch profile overlap to a \u201cquasi-persistent surrogate\u201d has no declared acceptance threshold, packet-equivalence rule, or robustness test; the positive-square-root relaunch also discards phase information. Why this blocks: the computation certifies a frozen probability-profile replay, not the physical re-identification asserted by the safe read. Repair target: either narrow the note to the numerical replay and assert every listed metric, or supply a phase-aware re-identification criterion tested beyond the two seeds. Claim boundary until fixed: the fixed-harness table is supported, while quasi-persistence remains conditional."
 }

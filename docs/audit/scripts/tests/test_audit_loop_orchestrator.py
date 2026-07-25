@@ -668,7 +668,6 @@ def _args() -> argparse.Namespace:
         lane=None,
         max_workers=4,
         worker_id="",
-        development_helper=False,
         max_passes=0,
         max_lane_cycles=0,
         batch_rounds=6,
@@ -2962,6 +2961,12 @@ class AutomaticPanelResumeTest(unittest.TestCase):
 
 
 class CampaignContractTest(unittest.TestCase):
+    def test_cli_exposes_no_coordinator_or_helper_role(self):
+        help_text = audit_loop.build_parser().format_help()
+
+        self.assertNotIn("--development-helper", help_text)
+        self.assertNotIn("--coordinator", help_text)
+
     def test_packet_fingerprint_normalizes_transport_bounded_virtual_index(self):
         row = {"claim_id": "target", "deps": []}
         rows = {"target": row}
@@ -4084,7 +4089,8 @@ class CampaignContractTest(unittest.TestCase):
         self.assertEqual(rc, 2)
         run_panel.assert_not_called()
 
-    def test_development_helper_skips_panels_and_priority_lane_duplication(self):
+    def test_default_worker_runs_complete_flow_with_generated_identity(self):
+        generated = mock.Mock(hex="0123456789abcdef")
         with tempfile.TemporaryDirectory() as tmp, mock.patch.object(
             audit_loop, "validate_requested_lanes"
         ), mock.patch.object(
@@ -4096,30 +4102,41 @@ class CampaignContractTest(unittest.TestCase):
         ), mock.patch.object(
             audit_loop, "git_head", return_value="same"
         ), mock.patch.object(
-            audit_loop, "run_panel"
+            audit_loop, "run_panel", return_value=0
         ) as run_panel, mock.patch.object(
-            audit_loop, "blocking_lanes"
+            audit_loop, "blocking_lanes", return_value=[("lane_a", 1)]
         ) as blocking_lanes, mock.patch.object(
             audit_loop, "drain_lane", return_value=(0, False)
-        ) as drain_lane:
+        ) as drain_lane, mock.patch.object(
+            audit_loop.uuid, "uuid4", return_value=generated
+        ):
             rc = audit_loop.main(
                 [
                     "--dry-run",
-                    "--development-helper",
-                    "--worker-id",
-                    "employee-alpha",
+                    "--skip-forensic-canary",
                     "--campaign-workdir",
                     tmp,
                 ]
             )
 
         self.assertEqual(rc, 0)
-        run_panel.assert_not_called()
-        blocking_lanes.assert_not_called()
-        drain_lane.assert_called_once()
-        self.assertIsNone(drain_lane.call_args.args[0])
+        run_panel.assert_called_once()
+        blocking_lanes.assert_called_once_with(None)
+        self.assertEqual(
+            [(call.args[0], call.kwargs.get("source")) for call in drain_lane.call_args_list],
+            [
+                (None, "dispatch"),
+                (None, "reaudit"),
+                ("lane_a", None),
+                (None, None),
+            ],
+        )
+        worker_ids = {
+            call.args[1].worker_id for call in drain_lane.call_args_list
+        }
+        self.assertEqual(worker_ids, {"worker-0123456789ab"})
 
-    def test_coordinator_continues_after_claim_local_forensic_exclusion(self):
+    def test_worker_continues_after_claim_local_forensic_exclusion(self):
         lock = mock.Mock()
         canary_calls = 0
 
@@ -4161,7 +4178,7 @@ class CampaignContractTest(unittest.TestCase):
                     "--campaign-workdir",
                     tmp,
                     "--worker-id",
-                    "coordinator",
+                    "worker-alpha",
                 ]
             )
 
@@ -4183,6 +4200,7 @@ class CampaignContractTest(unittest.TestCase):
 
     def test_inner_batches_share_campaign_quarantine_and_dispatch_policy(self):
         args = _args()
+        args.worker_id = "worker-alpha"
         args.campaign_quarantine_file = Path("/tmp/campaign/quarantine.jsonl")
         args.campaign_selection_skip_file = Path(
             "/tmp/campaign/selector-skips.jsonl"
@@ -4194,6 +4212,9 @@ class CampaignContractTest(unittest.TestCase):
         self.assertIn(str(args.campaign_quarantine_file), command)
         self.assertIn("--campaign-selection-skip-file", command)
         self.assertIn(str(args.campaign_selection_skip_file), command)
+        self.assertIn("--worker-id", command)
+        self.assertIn("worker-alpha", command)
+        self.assertNotIn("worker-alpha", audit_loop.panel_command(args))
         self.assertNotIn("--dispatch-science-fixes", command)
 
         args.dispatch_science_fixes = True

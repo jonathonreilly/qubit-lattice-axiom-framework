@@ -1,45 +1,73 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T03:09:22.007323+00:00",
+  "audit_invocation_history": [
+    "0ba6eb8fdd274adc8e9e91534a113823"
+  ],
+  "audit_invocation_id": "0ba6eb8fdd274adc8e9e91534a113823",
+  "audit_state_snapshot": {
+    "criticality": "high",
+    "dep_axiom_premise_note_hash": {
+      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    },
+    "dep_claim_scope": {
+      "kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05": "Finite-dimensional Kraus\u2013Choi correspondence on finite qubit-region matrix algebras, using the unnormalized Choi convention consistently for reconstruction, Kraus extraction, CP/TP conditions, and the two stated mixed-convention scaling failures.",
+      "minimal_axioms": null
+    },
+    "dep_claim_type": {
+      "kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05": "positive_theorem",
+      "minimal_axioms": "meta"
+    },
+    "dep_effective_status": {
+      "kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05": "retained",
+      "minimal_axioms": "meta"
+    },
+    "deps": [
+      "kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05",
+      "minimal_axioms"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 9.67,
+    "runner_hash": "6fd41f2ccc6ab1bf0195aa7518fb521d45fb338ec7e92d9317d807ce0060401b",
+    "transitive_descendants": 71
+  },
+  "audit_status": "audited_decoration",
+  "auditor": "codex-audit-batch-A-20260725-4089a269",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The finite-region result follows as an exact specialization of the retained parent correspondence using A_\u039b \u2245 M_{2^|\u039b|}(\u2102). It adds no independent theorem beyond that parent.",
   "claim_id": "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
-  "claim_scope": null,
-  "claim_type": "positive_theorem",
+  "claim_scope": "Finite-region specialization of the retained single-convention Kraus\u2013Choi correspondence to A_\u039b = \u2297_{x\u2208\u039b} M_2(\u2102) \u2245 M_{2^|\u039b|}(\u2102), excluding infinite-volume channels and specific record dynamics.",
+  "claim_type": "decoration",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem candidate (narrow theorem)",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T03:09:22.007323+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "high",
   "cross_confirmation": null,
-  "decoration_parent_claim_id": null,
+  "decoration_parent_claim_id": "kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05",
   "deps": [
     "kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05",
     "minimal_axioms"
   ],
   "direct_in_degree": 7,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "decoration_under_kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05",
+  "effective_status_reason": "decoration_parent_retained",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "decoration_under_kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05",
   "load_bearing_score": 9.67,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Because A_\u039b = \u2297_{x\u2208\u039b} M_2(\u2102) is isomorphic to M_d(\u2102) with d = 2^|\u039b|, the retained finite-matrix Kraus\u2013Choi correspondence applies directly.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "586eca5586f097f59542a05d6b4fcac07363ca7df42394fcc9c3f27bc2ea7794",
   "note_path": "docs/KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Retag this row as decoration under the retained normalization-reconciled Kraus\u2013Choi parent; any later clean-theorem reconsideration must include the full unclipped parent authority.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1871,14 +1899,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
+    "A": 11,
+    "B": 5,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 16
   },
   "runner_path": "scripts/kraus_choi_normalization_convention_check_2026_06_05.py",
   "title": "Kraus\u2013Choi Representation on the Qubit-Lattice CPTP Map Algebra (Narrow)",
   "transitive_descendants": 71,
-  "verdict_rationale": null
+  "verdict_rationale": "The retained parent already states the same single-convention Kraus\u2013Choi correspondence on the finite qubit-lattice substrate; this note\u2019s only load-bearing move is the exact identification A_\u039b \u2245 M_{2^|\u039b|}(\u2102). The runner supplies eleven algebraic checks and five source-note marker checks, with no external comparator or independent physical content. The chain therefore closes only as decoration under that parent, and the packet\u2019s clipped load-bearing authority independently forbids an audited-clean promotion."
 }

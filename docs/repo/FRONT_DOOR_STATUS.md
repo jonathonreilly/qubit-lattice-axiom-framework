@@ -32,14 +32,14 @@ Owner-approval history for axioms and primitives:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3864 |
-| Applied audit verdicts | 567 |
-| Retained-grade rows, including boxed decorations | 433 |
+| Applied audit verdicts | 568 |
+| Retained-grade rows, including boxed decorations | 434 |
 | Retained positive theorems | 96 |
 | Retained no-go rows | 0 |
 | Retained bounded rows | 318 |
-| Boxed decorations under retained parents | 19 |
+| Boxed decorations under retained parents | 20 |
 | Open gates | 2 |
-| Unaudited rows | 2939 |
+| Unaudited rows | 2938 |
 | Retained-pending-chain rows | 5 |
 | Audited conditional rows | 87 |
 | Audited renaming rows | 21 |
@@ -54,11 +54,11 @@ Full audit-ratified row list: [`docs/repo/RETAINED_BACKBONE.md`](RETAINED_BACKBO
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 3041 |
+| Total pending rows | 3040 |
 | Ready rows | 630 |
 | Cycle-break targets | 59 |
 | Critical pending | 635 |
-| High pending | 367 |
+| High pending | 366 |
 | Medium pending | 838 |
 | Leaf pending | 1201 |
 
@@ -110,7 +110,7 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 | Lane rows already in actual ready top-10 | 3 |
 | Lane rows added since prior pass | 0 |
 | Lane rows removed since prior pass | 2 |
-| Non-lane rows deferred by simulated interleave | 102 |
+| Non-lane rows deferred by simulated interleave | 99 |
 
 Named lane membership churn since the prior pass:
 - removed: `matter_inertial_closure_note`
@@ -197,21 +197,18 @@ Lane rows advanced by the simulated interleave (positions gained; complete list)
 - `yt_color_projection_correction_note`: +3
 - `koide_q_delta_residual_cohomology_obstruction_no_go_note_2026-04-24`: +3
 - `koide_dimensionless_note_2026-04-24`: +3
-- `planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25`: +3
 - `koide_q_bridge_single_primitive_note_2026-04-22`: +3
 - `s3_mass_matrix_conditional_degeneracy_note_2026-07-11`: +2
 - `yt_ew_color_projection_theorem`: +2
 - `gauge_vacuum_plaquette_constant_lift_obstruction_note`: +2
 - `gauge_vacuum_plaquette_mixed_cumulant_audit_note`: +2
 - `action_normalization_note`: +2
-- `area_law_algebraic_spectrum_entropy_no_go_note_2026-04-25`: +2
+- `planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25`: +2
 - `cpt_particle_antiparticle_lifetime_equality_theorem_note_2026-05-02`: +2
 - `unit_singlet_overlap_narrow_theorem_note_2026-05-02`: +1
 - `yt_ew_m_residual_note_2026-05-02`: +1
 - `gauge_vacuum_plaquette_perron_jacobi_underdetermination_note`: +1
-- `area_law_multipocket_selector_no_go_note_2026-04-25`: +1
-- `gauge_vacuum_plaquette_spectral_measure_theorem_note`: +1
-- `koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24`: +1
+- `area_law_algebraic_spectrum_entropy_no_go_note_2026-04-25`: +1
 - `gravitomagnetic_note`: +1
 - `cpt_particle_antiparticle_mass_equality_theorem_note_2026-05-02`: +1
 
@@ -286,7 +283,6 @@ Non-lane rows deferred by the simulated interleave (positions lost; complete lis
 - `poisson_self_gravity_mechanism_note`: -3
 - `link_local_first_variation_selector_bridge_narrow_theorem_note_2026-05-10`: -3
 - `ac_reta_hclass_hunit_readout_derivation_obligation`: -3
-- `kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20`: -3
 - `gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17`: -3
 - `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10`: -2
 - `clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10`: -2
@@ -314,8 +310,6 @@ Non-lane rows deferred by the simulated interleave (positions lost; complete lis
 - `koide_a1_loop_final_status_2026-04-22`: -1
 - `cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10`: -1
 - `charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10`: -1
-- `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22`: -1
-- `record_markov_generator_embeddability_boundary_2026-06-06`: -1
 - `third_grown_family_boundary_note`: -1
 - `koide_q_dred_normalization_freedom_no_go_note_2026-06-15`: -1
 

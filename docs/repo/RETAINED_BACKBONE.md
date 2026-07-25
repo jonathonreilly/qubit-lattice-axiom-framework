@@ -19,7 +19,7 @@ file per claim), summarized in
 | Retained positive rows | 96 |
 | Retained bounded rows | 318 |
 | Retained no-go rows | 0 |
-| Boxed decorations under retained parents | 19 |
+| Boxed decorations under retained parents | 20 |
 
 ## Retained positive rows (96)
 
@@ -449,7 +449,7 @@ Sorted by load-bearing graph score (descending).
 
 - none at present
 
-## Boxed decorations under retained parents (19)
+## Boxed decorations under retained parents (20)
 
 - [`left_handed_charge_matching_note`](../../docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md) — score 29.093; audited 2026-05-24T20:35:17.186937+00:00; under `graph_first_su3_integration_note`
 - [`ew_current_fierz_channel_decomposition_note_2026-05-01`](../../docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md) — score 22.743; audited 2026-05-23T14:25:12.301143+00:00; under `graph_first_su3_integration_note`
@@ -464,6 +464,7 @@ Sorted by load-bearing graph score (descending).
 - [`hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16`](../../docs/HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md) — score 11.014; audited 2026-07-22T20:02:06.117902+00:00; under `hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10`
 - [`abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18`](../../docs/ABJ_SCALE_FREE_NATIVE_ABELIAN_ANOMALY_CORE_BOUNDARY_NOTE_2026-06-18.md) — score 10.933; audited 2026-06-21T06:10:08.172181+00:00; under `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23`
 - [`staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_narrow_theorem_note_2026-05-17`](../../docs/STAGGERED_DIRAC_SUBSTEP4_AC_PHI_TRACE_EQUIPARTITION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md) — score 10.665; audited 2026-07-24T00:10:24.511472+00:00; under `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09`
+- [`kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20`](../../docs/KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md) — score 9.670; audited 2026-07-25T03:09:22.007323+00:00; under `kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05`
 - [`kubo_range_of_validity_note`](../../docs/KUBO_RANGE_OF_VALIDITY_NOTE.md) — score 6.024; audited 2026-05-05T11:26:50.315429+00:00; under `linear_response_true_kubo_note`
 - [`lhcm_matter_assignment_su3_block_representation_narrow_theorem_note_2026-05-17`](../../docs/LHCM_MATTER_ASSIGNMENT_SU3_BLOCK_REPRESENTATION_NARROW_THEOREM_NOTE_2026-05-17.md) — score 5.255; audited 2026-07-10T03:19:43.094692+00:00; under `graph_first_su3_integration_note`
 - [`cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02`](../../docs/CLUSTER_DECOMPOSITION_DELTA_X_FINITE_LAMBDA_AXIS_PERMUTATION_NARROW_NOTE_2026-06-02.md) — score 2.500; audited 2026-06-03T02:09:41.602441+00:00; under `cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19`

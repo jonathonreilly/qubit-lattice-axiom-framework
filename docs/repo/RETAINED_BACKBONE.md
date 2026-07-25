@@ -17,7 +17,7 @@ file per claim), summarized in
 | Metric | Value |
 |---|---:|
 | Retained positive rows | 115 |
-| Retained bounded rows | 339 |
+| Retained bounded rows | 340 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 27 |
 
@@ -141,7 +141,7 @@ Sorted by load-bearing graph score (descending).
 - [`tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20`](../../docs/TOMITA_TENSOR_TRACE_ON_FINITE_DIM_MATRIX_NARROW_THEOREM_NOTE_2026-05-20.md) — score 0.000; audited 2026-07-25T15:03:52.540528+00:00
 - [`wolfenstein_lambda_a_product_cancellation_narrow_theorem_note_2026-05-10`](../../docs/WOLFENSTEIN_LAMBDA_A_PRODUCT_CANCELLATION_NARROW_THEOREM_NOTE_2026-05-10.md) — score 0.000; audited 2026-07-25T18:05:21.029457+00:00
 
-## Retained bounded rows (339)
+## Retained bounded rows (340)
 
 Sorted by load-bearing graph score (descending).
 
@@ -432,6 +432,7 @@ Sorted by load-bearing graph score (descending).
 - [`newtonian_distance_law_confirmed`](../../docs/NEWTONIAN_DISTANCE_LAW_CONFIRMED.md) — score 0.000; audited 2026-06-08T20:53:33.252720+00:00
 - [`nonlabel_grown_drift_basin_note`](../../docs/NONLABEL_GROWN_DRIFT_BASIN_NOTE.md) — score 0.000; audited 2026-06-09T13:51:10.097591+00:00
 - [`ollivier_einstein_proxy_note_2026-04-11`](../../docs/OLLIVIER_EINSTEIN_PROXY_NOTE_2026-04-11.md) — score 0.000; audited 2026-05-01T07:34:09.248317+00:00
+- [`pairwise_commuting_endpoint_symmetric_edge_hamiltonian_classification_and_strict_qca_boundary_bounded_theorem_note_2026-07-12`](../../docs/PAIRWISE_COMMUTING_ENDPOINT_SYMMETRIC_EDGE_HAMILTONIAN_CLASSIFICATION_AND_STRICT_QCA_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-12.md) — score 0.000; audited 2026-07-25T18:31:03.913539+00:00
 - [`persistent_object_green_scout_note`](../../docs/PERSISTENT_OBJECT_GREEN_SCOUT_NOTE.md) — score 0.000; audited 2026-05-01T09:10:59.686577+00:00
 - [`persistent_object_readout_localization_note`](../../docs/PERSISTENT_OBJECT_READOUT_LOCALIZATION_NOTE.md) — score 0.000; audited 2026-05-01T09:39:41.757320+00:00
 - [`persistent_object_top3_multistage_probe_note_2026-04-16`](../../docs/PERSISTENT_OBJECT_TOP3_MULTISTAGE_PROBE_NOTE_2026-04-16.md) — score 0.000; audited 2026-05-01T09:44:27.955677+00:00

@@ -1,24 +1,77 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T10:27:17.199953+00:00",
+  "audit_invocation_history": [
+    "4dfc2cd8be0d4777a032b464751a39c5"
+  ],
+  "audit_invocation_id": "4dfc2cd8be0d4777a032b464751a39c5",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 0,
+      "counts": {
+        "A": 12,
+        "B": 0,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true,
+      "runner_path": "scripts/frontier_su3_low_rank_picard_fuchs_odes_2026_05_05.py"
+    },
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "Finite-runner certificate only: truncated Taylor-series ODE residual through the runner window, finite numerical agreement at beta=2,4,6,8,10, and the beta=6 logarithmic-derivative readout; no all-order Picard-Fuchs or all-order branch-identification claim was audited."
+    },
+    "dep_claim_type": {
+      "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "retained_bounded"
+    },
+    "deps": [
+      "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 7.522,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_su3_low_rank_picard_fuchs_odes_2026_05_05.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "1dc670652a4b043906452c56fcce6fbf3d9e27fbb76805026fa3acce85fff905",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "1dc670652a4b043906452c56fcce6fbf3d9e27fbb76805026fa3acce85fff905",
+    "runner_path": "scripts/frontier_su3_low_rank_picard_fuchs_odes_2026_05_05.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 64
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-3b288be7",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The finite Taylor-nullspace and four-point numerical checks do not establish that the actual analytic SU(3) character integrals satisfy the displayed ODEs. An all-order annihilation proof or an explicit narrowing to the finite computational certificate is missing.",
   "claim_id": "su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05",
-  "claim_scope": null,
+  "claim_scope": "The source note's seven displayed order-3 Picard-Fuchs equations for the actual SU(3) character integrals, with bounded-search and finite-sample qualifications.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T10:27:17.199953+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,19 +79,20 @@
     "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
   ],
   "direct_in_degree": 3,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 7.522,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The runner fits rational null vectors to order-50 Bessel-determinant Taylor series and checks the resulting ODE evolutions against direct values at beta in {2, 4, 6, 8}.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "d4c27e90f58332360ae7f51f0d9cf55bc70aad635440b0b76f9882c1f9b834c7",
   "note_path": "docs/SU3_LOW_RANK_IRREP_PICARD_FUCHS_ODES_NOTE_2026-05-05.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "scope_too_broad: Narrow the claim to the exact finite Taylor-residual and four-point numerical certificate, update the reported errors to current stdout, and add a dated downstream-hygiene line to this note's own boundary; alternatively supply an independent all-order annihilation proof.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1538,14 +1592,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 7,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 7
   },
   "runner_path": "scripts/frontier_su3_low_rank_picard_fuchs_odes_2026_05_05.py",
   "title": "SU(3) Low-Rank Irrep Character Coefficients: Picard-Fuchs ODE Catalog",
   "transitive_descendants": 64,
-  "verdict_rationale": null
+  "verdict_rationale": "The current runner reproduces all seven displayed coefficient families, and independent substitution of the displayed leading Taylor data cancels each residual through the orders determined by those supplied coefficients. However, the runner checks only a finite Taylor truncation and four numerical points, while the retained V=1 authority expressly disclaims all-order exactness; this does not prove the displayed equations for the actual analytic integrals. The source's claimed maximum error of 3.1e-8 is also stale against the current (3,0) stdout value 6.808e-8, and its (2,0) error differs from the current 3.473e-9."
 }

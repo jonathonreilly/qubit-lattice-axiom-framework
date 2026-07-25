@@ -1,24 +1,77 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T06:42:19.078000+00:00",
+  "audit_invocation_history": [
+    "b65d2913cd164b13812a9e00d25bb44e"
+  ],
+  "audit_invocation_id": "b65d2913cd164b13812a9e00d25bb44e",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 9,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/abj_residual_gw_not_necessary_runner.py"
+    },
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "cpt_exact_note": "For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish."
+    },
+    "dep_claim_type": {
+      "cpt_exact_note": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "cpt_exact_note": "retained"
+    },
+    "deps": [
+      "cpt_exact_note"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 3.585,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/abj_residual_gw_not_necessary_runner.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "eddf6bbb89014c86a2c7d6aa56ffc6e691cccfcf12c8057a46bb8e93739dd94e",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "eddf6bbb89014c86a2c7d6aa56ffc6e691cccfcf12c8057a46bb8e93739dd94e",
+    "runner_path": "scripts/abj_residual_gw_not_necessary_runner.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 5
+  },
+  "audit_status": "audited_failed",
+  "auditor": "codex-audit-batch-A-20260725-354c8428",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The identity H(m)^2=K^2+m^2I excludes zeros only for m\u22600; it does not establish zero spectral flow through m=0. The U=1 calculation also supplies no implication that chi\u22600 or Q\u22600 is the correct remaining domain for a nonzero A[1,U].",
   "claim_id": "abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28",
-  "claim_scope": null,
+  "claim_scope": "The bounded claim that the free/flat epsilon-gap and A[1,1]=0 force zero spectral flow and justify retargeting P1' to a chi\u22600 or Q\u22600 background.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T06:42:19.078000+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,19 +79,23 @@
     "cpt_exact_note"
   ],
   "direct_in_degree": 2,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_failed",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_failed",
   "load_bearing_score": 3.585,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "H(m)^2=K^2+m^2I, hence no eigenvalue crosses zero for m\u22600, so spectral flow is identically zero and P1' should target a chi\u22600 or Q\u22600 background.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls",
+    "derived_no_go_boundary"
+  ],
   "note_hash": "5c6075d0eed06ac0f48cda22824970d553ebabde486cde350d65e494d87ce2bb",
   "note_path": "docs/ABJ_RESIDUAL_GW_NOT_NECESSARY_NARROW_THEOREM_NOTE_2026-05-28.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Re-audit after the proof treats both signs of m and the crossing at m=0, and supplies a theorem connecting the flat-background result to the proposed chi/Q residual.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -98,14 +155,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 36,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 36
   },
   "runner_path": "scripts/abj_residual_gw_not_necessary_runner.py",
   "title": "ABJ Residual Correction: Ginsparg-Wilson Is Not the Obstruction (eps-Gap + chi=0)",
   "transitive_descendants": 5,
-  "verdict_rationale": null
+  "verdict_rationale": "The runner genuinely verifies the finite-dimensional identities and A[1,1]=0 on the two free lattices, but it samples only positive nonzero masses and therefore does not compute spectral flow through m=0. More importantly, a result at U=1 cannot by itself establish that nontrivial chi or Q is the correct remaining route; that missing implication is target-equivalent to the claimed residual correction. The scoped negative facts are therefore narrower than the theorem presented."
 }

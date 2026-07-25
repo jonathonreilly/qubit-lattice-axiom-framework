@@ -1,0 +1,12706 @@
+{
+ "acceptance_duties": [
+  "The supervisor owns all verdicts, the claimed cycle number, line-by-line review, execution and any promotion; this runner only computes rows and writes its receipt.",
+  "Re-hash the imported c576 runner and the landed regge module against the pinned sha256 before trusting any anchor row; the campaign-side c626/c615/c620 anchors are transcribed read-only pins, never read from disk and never imported.",
+  "The decorated-covariance scope is computed, not assumed: the runner measures which of the 24 proper cubic frames stabilize the landed Kuhn/Coxeter path complex and reports that subgroup; the declared divergence is reported, not forced to a pass."
+ ],
+ "audit": "unset",
+ "authority": "none",
+ "check_rows": [
+  {
+   "counted_as_gate": true,
+   "detail": {
+    "c576_note": {
+     "match": true,
+     "observed": "5822c14b74de606d302beb637e03dd0a30968e6a7bf120723eb3da16e09e6768",
+     "pinned": "5822c14b74de606d302beb637e03dd0a30968e6a7bf120723eb3da16e09e6768"
+    },
+    "c576_receipt": {
+     "match": true,
+     "observed": "e270f8a9900c18857815c4887ee09d4368289ecb0c051b2a5916ab1290c3abb3",
+     "pinned": "e270f8a9900c18857815c4887ee09d4368289ecb0c051b2a5916ab1290c3abb3"
+    },
+    "c576_script": {
+     "match": true,
+     "observed": "8b82a5129eb098c9f67382340b41d9e931acdeb25991e3f784abd705a91e651b",
+     "pinned": "8b82a5129eb098c9f67382340b41d9e931acdeb25991e3f784abd705a91e651b"
+    },
+    "ceiling_note": {
+     "match": true,
+     "observed": "1e9b9fbea468c3d269e3edc2363423bf7d5e798bda0ff21fd8e887b3fcc3ac21",
+     "pinned": "1e9b9fbea468c3d269e3edc2363423bf7d5e798bda0ff21fd8e887b3fcc3ac21"
+    },
+    "ceiling_runner": {
+     "match": true,
+     "observed": "9abedad0cabef3ff7dde0f012968e27163f82353602b307aaf8a96304be982fa",
+     "pinned": "9abedad0cabef3ff7dde0f012968e27163f82353602b307aaf8a96304be982fa"
+    },
+    "regge_script": {
+     "match": true,
+     "observed": "537371554e1a5244875645ca600f5f01e0ccfae64530572630d934e8ea0a85ce",
+     "pinned": "537371554e1a5244875645ca600f5f01e0ccfae64530572630d934e8ea0a85ce"
+    }
+   },
+   "label": "imported c576 runner, landed regge module, c576 note and receipt, and the landed Cycle-690 covariance-ceiling note and runner all match their pinned sha256",
+   "pass": true,
+   "verdict": "pass"
+  },
+  {
+   "counted_as_gate": true,
+   "detail": {
+    "missing": [],
+    "present": true
+   },
+   "label": "paired note present on disk with every firewall clause",
+   "pass": true,
+   "verdict": "pass"
+  },
+  {
+   "counted_as_gate": true,
+   "detail": {
+    "clauses_missing": [],
+    "clauses_required": 8,
+    "note": "docs/PHYSICAL_PROPER_CUBIC_COVARIANCE_CEILING_CYCLE690_NOTE_2026-07-24.md",
+    "note_sha_match": true,
+    "runner": "scripts/physical_proper_cubic_covariance_ceiling_cycle690_2026_07_24.py",
+    "runner_sha_match": true
+   },
+   "label": "(7a) THEOREM CITATION IS CHECKABLE, not rhetorical: the landed Cycle-690 proper-cubic covariance-ceiling note and its runner are present at their cited paths, both re-hash to their pinned sha256, and the note body carries every load-bearing clause of the no-go verbatim (no eight-vertex cube triangulation is invariant under all 24 proper cubic rotations; the ceiling is exactly 12; the Kuhn/Freudenthal complex attains 6; the 0/1 direction set is not closed under sign flip; covariance is ill posed rather than violated off the stabilizer)",
+   "pass": true,
+   "verdict": "pass"
+  },
+  {
+   "counted_as_gate": true,
+   "detail": {
+    "agree": true,
+    "oriented_dirset_stabilizer": [
+     15,
+     18,
+     23
+    ],
+    "preregistered_from_landed_note": 3,
+    "stabilizer": [
+     15,
+     18,
+     23
+    ],
+    "subgroup_report": {
+     "closed_under_composition": true,
+     "closed_under_inverse": true,
+     "frames_total": 24,
+     "identity_present": true,
+     "inverses_escaping": [],
+     "lagrange_divides": true,
+     "order": 3,
+     "products_checked": 9,
+     "products_escaping": [],
+     "proper": true
+    }
+   },
+   "label": "(7b) the frames stabilizing the landed Kuhn/Coxeter path-simplex set form a PROPER NONEMPTY SUBGROUP of the 24 proper cubic frames -- and that is now TESTED, not asserted: the identity is present, all order^2 products stay inside the set, the set is closed under inverse, the order is strictly less than 24, the order divides 24 (Lagrange), and the order equals the value the landed Cycle-690 note records for the ORIENTED 0/1 spatial direction set",
+   "pass": true,
+   "verdict": "pass"
+  },
+  {
+   "counted_as_gate": true,
+   "detail": {
+    "all24_invariant_triangulation_exists": false,
+    "kuhn_cube_stabilizer": [
+     1,
+     4,
+     9,
+     15,
+     18,
+     23
+    ],
+    "kuhn_subgroup_report": {
+     "closed_under_composition": true,
+     "closed_under_inverse": true,
+     "frames_total": 24,
+     "identity_present": true,
+     "inverses_escaping": [],
+     "lagrange_divides": true,
+     "order": 6,
+     "products_checked": 36,
+     "products_escaping": [],
+     "proper": true
+    },
+    "kuhn_unit_cube_tetrahedra": 6,
+    "literal_gate_demanded": 24,
+    "preregistered_ceiling_from_landed_note": 12,
+    "preregistered_kuhn_order_from_landed_note": 6,
+    "signed_dirset_stabilizer": [
+     1,
+     4,
+     9,
+     15,
+     18,
+     23
+    ]
+   },
+   "label": "(7c) PRINCIPLED RESCOPE, NOT GOALPOST-MOVING -- the achievable scope is COMPUTED and equals exactly what the landed theorem predicts: this runner reconstructs the Kuhn/Freudenthal decomposition of the unit cube from its definition (independently of the imported module), computes its cube-centred proper-rotation stabilizer, and finds order 6, the order the landed Cycle-690 note records; that stabilizer is a proper subgroup; it coincides exactly with the direction set read up to one global sign; and it sits at or below the landed ceiling of 12, which is itself strictly below the 24 the literal gate demanded and which the theorem proves unattainable for ANY eight-vertex unit-cube triangulation",
+   "pass": true,
+   "verdict": "pass"
+  },
+  {
+   "counted_as_gate": true,
+   "detail": {
+    "equals_cyclic_shift": true,
+    "factors": 16,
+    "inverse_exact": true,
+    "prepared_label": 3,
+    "supports": [
+     2
+    ]
+   },
+   "label": "unary-17 register: the modular increment IS the 16-adjacent-SWAP word (exact integer recomposition against the independent cyclic shift), the reversed word is its exact inverse, every factor has support two, and the word compiles the ray label exactly",
+   "pass": true,
+   "verdict": "pass"
+  },
+  {
+   "counted_as_gate": true,
+   "detail": {
+    "extrapolation_gap": 4.122072905232699e-09,
+    "order_max": 1.9957,
+    "order_min": 1.9957,
+    "subset": [
+     0,
+     3,
+     5,
+     7,
+     13,
+     19,
+     20,
+     21
+    ]
+   },
+   "label": "FD Richardson consistency on a declared random subset of local Hessians: the measured convergence order matches the preregistered 2.0 within 0.15, and the extrapolated Hessian agrees with the finest step",
+   "pass": true,
+   "verdict": "pass"
+  },
+  {
+   "counted_as_gate": true,
+   "detail": {
+    "L3": {
+     "div_anchor": 1,
+     "gauss_match": true,
+     "interior_nonzero": [],
+     "no_wrap": true,
+     "port_total": 1
+    },
+    "L6": {
+     "div_anchor": 1,
+     "gauss_match": true,
+     "interior_nonzero": [],
+     "no_wrap": true,
+     "port_total": 1
+    },
+    "L7": {
+     "div_anchor": 1,
+     "gauss_match": true,
+     "interior_nonzero": [],
+     "no_wrap": true,
+     "port_total": 1
+    }
+   },
+   "label": "(1) rebuilt decorated F17 open domain: divergence ONE at the anchor, ZERO at every other interior site, port outflow total ONE mod 17, all labels lawful, no wrap edge anywhere, and the Gauss work state recomputed from the link state alone reproduces the declared table exactly",
+   "pass": true,
+   "verdict": "pass"
+  },
+  {
+   "counted_as_gate": true,
+   "detail": {
+    "L3": {
+     "anchor_orbit_size": 1,
+     "closure_failures": 0,
+     "rotation_mismatches": 0
+    },
+    "L6": {
+     "anchor_orbit_size": 8,
+     "closure_failures": 0,
+     "rotation_mismatches": 0
+    },
+    "L7": {
+     "anchor_orbit_size": 1,
+     "closure_failures": 0,
+     "rotation_mismatches": 0
+    }
+   },
+   "label": "(1) all 24 decorated rotations act on the domain (build-rotated state equals the transported state exactly) and all 576 products close on the decorated action (site map + link map + anchor map, exact integer)",
+   "pass": true,
+   "verdict": "pass"
+  },
+  {
+   "counted_as_gate": true,
+   "detail": {
+    "L3": 1,
+    "L6": [
+     [
+      2,
+      2,
+      2
+     ],
+     [
+      2,
+      2,
+      3
+     ],
+     [
+      2,
+      3,
+      2
+     ],
+     [
+      2,
+      3,
+      3
+     ],
+     [
+      3,
+      2,
+      2
+     ],
+     [
+      3,
+      2,
+      3
+     ],
+     [
+      3,
+      3,
+      2
+     ],
+     [
+      3,
+      3,
+      3
+     ]
+    ],
+    "L7": 1
+   },
+   "label": "(1) the L6 anchor orbit under the 24 decorated rotations is exactly the eight central sites {2,3}^3, while odd sizes keep the single central anchor",
+   "pass": true,
+   "verdict": "pass"
+  },
+  {
+   "counted_as_gate": true,
+   "detail": {
+    "L3": {
+     "changed_sites": 2,
+     "port_total_after": 15
+    },
+    "L6": {
+     "changed_sites": 2,
+     "port_total_after": 15
+    },
+    "L7": {
+     "changed_sites": 2,
+     "port_total_after": 15
+    }
+   },
+   "label": "(1) boundary deletion is detected: deleting one port link moves the divergence at exactly the two incident sites and breaks the port outflow total",
+   "pass": true,
+   "verdict": "pass"
+  },
+  {
+   "counted_as_gate": true,
+   "detail": {
+    "L3": {
+     "rho_anchor": 0.17,
+     "rho_port": -0.51,
+     "support": [
+      [
+       1,
+       1,
+       1
+      ]
+     ]
+    },
+    "L6": {
+     "rho_anchor": 0.17,
+     "rho_port": -0.51,
+     "support": [
+      [
+       2,
+       2,
+       2
+      ]
+     ]
+    },
+    "L7": {
+     "rho_anchor": 0.17,
+     "rho_port": -0.51,
+     "support": [
+      [
+       3,
+       3,
+       3
+      ]
+     ]
+    }
+   },
+   "label": "(2) the local lawful F17-to-source transform is supported EXACTLY on the anchor in the interior, carries the declared centred lift, and the ports carry the outflow",
+   "pass": true,
+   "verdict": "pass"
+  },
+  {
+   "counted_as_gate": true,
+   "detail": {
+    "L3": 0.0,
+    "L6": 0.0,
+    "L7": 0.0
+   },
+   "label": "(2) flux-off null is EXACT: a zero flux state gives an identically zero source field",
+   "pass": true,
+   "verdict": "pass"
+  },
+  {
+   "counted_as_gate": true,
+   "detail": {
+    "L3": 0.0,
+    "L6": 0.0,
+    "L7": 0.0
+   },
+   "label": "(2) the source transform is EXACTLY covariant under all 24 decorated rotations (rotated state's source field equals the permuted source field)",
+   "pass": true,
+   "verdict": "pass"
+  },
+  {
+   "counted_as_gate": true,
+   "detail": {
+    "L3": {
+     "incident_moved": 0.17000000000000004,
+     "link": [
+      [
+       1,
+       1,
+       1
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "link_separation": 0,
+     "n_unchanged_sites": 25,
+     "unchanged_defect": 0.0
+    },
+    "L6": {
+     "incident_moved": 0.17000000000000004,
+     "link": [
+      [
+       2,
+       2,
+       4
+      ],
+      [
+       2,
+       2,
+       5
+      ]
+     ],
+     "link_separation": 2,
+     "n_unchanged_sites": 214,
+     "unchanged_defect": 0.0
+    },
+    "L7": {
+     "incident_moved": 0.17000000000000004,
+     "link": [
+      [
+       1,
+       3,
+       3
+      ],
+      [
+       0,
+       3,
+       3
+      ]
+     ],
+     "link_separation": 2,
+     "n_unchanged_sites": 341,
+     "unchanged_defect": 0.0
+    }
+   },
+   "label": "(2) the source transform is EXACTLY local: editing the computed most-distant ray link leaves every non-incident site's source value unchanged while the incident sites do move -- and the non-incident set is required to be NONEMPTY, so the row cannot pass on an empty comparison",
+   "pass": true,
+   "verdict": "pass"
+  },
+  {
+   "counted_as_gate": true,
+   "detail": {
+    "L3": {
+     "dim": 98,
+     "naive_7L3": 189,
+     "simplices": 384,
+     "sym_defect": 0.0,
+     "triangles": 1112
+    },
+    "L6": {
+     "dim": 1115,
+     "naive_7L3": 1512,
+     "simplices": 6000,
+     "sym_defect": 0.0,
+     "triangles": 14360
+    },
+    "L7": {
+     "dim": 1854,
+     "naive_7L3": 2401,
+     "simplices": 10368,
+     "sym_defect": 0.0,
+     "triangles": 24264
+    }
+   },
+   "label": "(3) the assembled OPEN static-sector second variation is symmetric to machine precision and its dimension is the exact admitted-edge count (reported against the naive 7 L^3)",
+   "pass": true,
+   "verdict": "pass"
+  },
+  {
+   "counted_as_gate": true,
+   "detail": {
+    "L3": {
+     "defect": 7.000456303529745e-07,
+     "momenta": [
+      [
+       1,
+       0,
+       0
+      ],
+      [
+       1,
+       1,
+       0
+      ],
+      [
+       1,
+       1,
+       1
+      ],
+      [
+       2,
+       1,
+       0
+      ],
+      [
+       0,
+       0,
+       0
+      ]
+     ],
+     "scale": 16.0
+    },
+    "L6": {
+     "defect": 7.000456339056882e-07,
+     "momenta": [
+      [
+       1,
+       0,
+       0
+      ],
+      [
+       1,
+       1,
+       0
+      ],
+      [
+       1,
+       1,
+       1
+      ],
+      [
+       2,
+       1,
+       0
+      ],
+      [
+       0,
+       0,
+       0
+      ]
+     ],
+     "scale": 16.0
+    },
+    "L7": {
+     "defect": 7.000456943018207e-07,
+     "momenta": [
+      [
+       1,
+       0,
+       0
+      ],
+      [
+       1,
+       1,
+       0
+      ],
+      [
+       1,
+       1,
+       1
+      ],
+      [
+       2,
+       1,
+       0
+      ],
+      [
+       0,
+       0,
+       0
+      ]
+     ],
+     "scale": 16.0
+    }
+   },
+   "label": "(3) PERIODIC ANCHOR (landed bytes): the periodic-wrap assembly built from the SAME local Hessians, Fourier-transformed at declared commensurate momenta, matches LT * regge.bloch_Q restricted to the static spatial sector",
+   "pass": true,
+   "verdict": "pass"
+  },
+  {
+   "counted_as_gate": true,
+   "detail": {
+    "boundary_directional_gradient": -9.12219688755636,
+    "fd2": -586.4600780114415,
+    "flat_action": 1167.5627088978906,
+    "quad": -586.4599480909537,
+    "rel_gap": 2.2153343668654212e-07
+   },
+   "label": "(3) END-TO-END: the numerical second difference of the ACTUAL open action S = sum_t A_t delta_t (recomputed from THETA/AREA at perturbed lengths) equals eps^T Q_open eps -- boundary admission, tick folding, index maps and the local Hessian cache are all validated at once",
+   "pass": true,
+   "verdict": "pass"
+  },
+  {
+   "counted_as_gate": true,
+   "detail": {
+    "L3": {
+     "b_null_component": 0.0,
+     "clears_absolute_too": true,
+     "dim": 98,
+     "eig_max": 1.4634993194748391,
+     "eig_min": -63.3405952623559,
+     "eps_absmax": 1.5536772720022347,
+     "n_neg": 96,
+     "n_pos": 2,
+     "null_dim": 0,
+     "regular_residual": 3.0881813983443114e-13,
+     "relative_scale_used": 17.068018614962792,
+     "smallest_abs_eig": 0.4724164785040565,
+     "tolerance": 1.7068018614962794e-08
+    },
+    "L6": {
+     "b_null_component": 0.0,
+     "clears_absolute_too": true,
+     "dim": 1115,
+     "eig_max": 4.324189770013411,
+     "eig_min": -65.35493797218415,
+     "eps_absmax": 27.039013743222824,
+     "n_neg": 1043,
+     "n_pos": 72,
+     "null_dim": 0,
+     "regular_residual": 2.073064845941921e-11,
+     "relative_scale_used": 16.66212956960419,
+     "smallest_abs_eig": 0.0021375115367672946,
+     "tolerance": 1.6662129569604192e-08
+    },
+    "L7": {
+     "b_null_component": 0.0,
+     "clears_absolute_too": true,
+     "dim": 1854,
+     "eig_max": 4.651388753031815,
+     "eig_min": -65.53562776389,
+     "eps_absmax": 1.921096242346071,
+     "n_neg": 1716,
+     "n_pos": 138,
+     "null_dim": 0,
+     "regular_residual": 1.1281235463812079e-12,
+     "relative_scale_used": 16.662129569604186,
+     "smallest_abs_eig": 0.011046029734520318,
+     "tolerance": 1.666212956960419e-08
+    }
+   },
+   "label": "(3) the response solve is a genuine solve on the regular sector: the residual of Q eps* + b on the regular sector is within MACHINE_REL_TOL of the RELATIVE scale max(1, |b|) -- the scale is reported with the row (null dimension and spectrum reported, NOT resolved; no positivity claim)",
+   "pass": true,
+   "verdict": "pass"
+  },
+  {
+   "counted_as_gate": true,
+   "detail": {
+    "L3": {
+     "b": 0.0,
+     "eps": 0.0
+    },
+    "L6": {
+     "b": 0.0,
+     "eps": 0.0
+    },
+    "L7": {
+     "b": 0.0,
+     "eps": 0.0
+    }
+   },
+   "label": "(3) flux-off gives EXACTLY zero source row and EXACTLY zero response",
+   "pass": true,
+   "verdict": "pass"
+  },
+  {
+   "counted_as_gate": true,
+   "detail": {
+    "L3": {
+     "distant_defect": Infinity,
+     "geometry_admits_test": false,
+     "link": [
+      [
+       1,
+       1,
+       1
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "link_separation": 0,
+     "moved": 1.235762584734469,
+     "n_distant_vars": 0,
+     "reason": "empty distant set: at L=3 the longest ray link reaches Chebyshev separation 0 from the anchor, so no static variable sits at separation >= 2 from both endpoints of any link; the falsifier has no test set at this size and the row fails closed rather than passing on nothing"
+    },
+    "L6": {
+     "distant_defect": 0.0,
+     "geometry_admits_test": true,
+     "link": [
+      [
+       2,
+       2,
+       4
+      ],
+      [
+       2,
+       2,
+       5
+      ]
+     ],
+     "link_separation": 2,
+     "moved": 1.2357625847344686,
+     "n_distant_vars": 962,
+     "reason": "ok"
+    },
+    "L7": {
+     "distant_defect": 0.0,
+     "geometry_admits_test": true,
+     "link": [
+      [
+       1,
+       3,
+       3
+      ],
+      [
+       0,
+       3,
+       3
+      ]
+     ],
+     "link_separation": 2,
+     "moved": 1.2357625847344689,
+     "n_distant_vars": 1665,
+     "reason": "ok"
+    }
+   },
+   "label": "(3) the source row is LOCAL and the falsifier FAILS CLOSED: the test link is the computed most-distant ray link, the distant variable set (Chebyshev separation >= 2 from both endpoints) is required to be NONEMPTY, every distant b entry is exactly unchanged, and the near entries do move.  The draft maxed over this set seeded with 0.0, so at a size where the set is empty it reported no defect and passed on nothing; an empty set is now an infinite defect",
+   "pass": false,
+   "verdict": "fail"
+  },
+  {
+   "counted_as_gate": true,
+   "detail": {
+    "L3": {
+     "fit_residual_max": 0.45098553124382695,
+     "fit_residual_max_interior": 0.08113832809410654,
+     "interior_equations_min": 7,
+     "interior_rank_min": 6,
+     "rank_deficient_sites": 12,
+     "rank_min_anywhere": 4,
+     "sites": 27
+    },
+    "L6": {
+     "fit_residual_max": 345.1068154553897,
+     "fit_residual_max_interior": 66.15156277305232,
+     "interior_equations_min": 7,
+     "interior_rank_min": 6,
+     "rank_deficient_sites": 30,
+     "rank_min_anywhere": 4,
+     "sites": 216
+    },
+    "L7": {
+     "fit_residual_max": 1.6046194411895427,
+     "fit_residual_max_interior": 0.5014436753713976,
+     "interior_equations_min": 7,
+     "interior_rank_min": 6,
+     "rank_deficient_sites": 36,
+     "rank_min_anywhere": 4,
+     "sites": 343
+    }
+   },
+   "label": "(4) the site-local metric fit is OVERDETERMINED and full rank at every deep-interior site (all seven spatial classes present, six metric components, residual reported); at the boundary the open box supplies fewer classes, those sites are rank deficient and take the DECLARED minimum-norm solution, and their count is reported",
+   "pass": true,
+   "verdict": "pass"
+  },
+  {
+   "counted_as_gate": true,
+   "detail": {
+    "L3": {
+     "eps_absmax": 1.5536772720022347,
+     "h_absmax": 0.974895467972994,
+     "min_edge_length": -0.4422228405985891,
+     "pd_min": -0.07267785900168396,
+     "response_amplitude": 1.0,
+     "sites_not_pd": 6,
+     "source_scale": 0.17
+    },
+    "L6": {
+     "eps_absmax": 27.039013743222824,
+     "h_absmax": 585.8541981970556,
+     "min_edge_length": -25.590285129667862,
+     "pd_min": -317.6051887313826,
+     "response_amplitude": 1.0,
+     "sites_not_pd": 196,
+     "source_scale": 0.17
+    },
+    "L7": {
+     "eps_absmax": 1.921096242346071,
+     "h_absmax": 2.2732772277435287,
+     "min_edge_length": -0.9210962423460709,
+     "pd_min": -0.588222723726417,
+     "response_amplitude": 1.0,
+     "sites_not_pd": 66,
+     "source_scale": 0.17
+    }
+   },
+   "label": "(4) the coframe e = principal symmetric square root of I + h EXISTS at every site: I + h positive definite with the declared margin, and every reconstructed edge length is positive (if the linear response drives an edge through zero the fit and the square root are outside their domain -- reported, never repaired)",
+   "pass": false,
+   "verdict": "fail"
+  },
+  {
+   "counted_as_gate": true,
+   "detail": {
+    "L3": {
+     "accounting_ok": true,
+     "certified": 8,
+     "certified_drive_site": [
+      2,
+      2,
+      2
+     ],
+     "certified_sites": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       2
+      ],
+      [
+       0,
+       2,
+       0
+      ],
+      [
+       0,
+       2,
+       2
+      ],
+      [
+       2,
+       0,
+       0
+      ],
+      [
+       2,
+       0,
+       2
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       2,
+       2,
+       2
+      ]
+     ],
+     "clip_used": true,
+     "near_word_certified": false,
+     "near_word_site": [
+      2,
+      1,
+      1
+     ],
+     "non_pd_sites": [
+      [
+       0,
+       1,
+       1
+      ],
+      [
+       1,
+       0,
+       1
+      ],
+      [
+       1,
+       1,
+       0
+      ],
+      [
+       1,
+       1,
+       2
+      ],
+      [
+       1,
+       2,
+       1
+      ],
+      [
+       2,
+       1,
+       1
+      ]
+     ],
+     "not_pd": 6,
+     "pd": 21,
+     "sites": 27,
+     "stencil_closure_ok": true
+    },
+    "L6": {
+     "accounting_ok": true,
+     "certified": 0,
+     "certified_drive_site": null,
+     "certified_sites": [],
+     "clip_used": true,
+     "near_word_certified": false,
+     "near_word_site": [
+      3,
+      2,
+      2
+     ],
+     "non_pd_sites": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       0,
+       3
+      ],
+      [
+       0,
+       0,
+       4
+      ],
+      [
+       0,
+       0,
+       5
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ],
+      [
+       0,
+       1,
+       2
+      ],
+      [
+       0,
+       1,
+       3
+      ],
+      [
+       0,
+       1,
+       4
+      ],
+      [
+       0,
+       1,
+       5
+      ],
+      [
+       0,
+       2,
+       1
+      ],
+      [
+       0,
+       2,
+       2
+      ],
+      [
+       0,
+       2,
+       3
+      ],
+      [
+       0,
+       2,
+       4
+      ],
+      [
+       0,
+       3,
+       0
+      ],
+      [
+       0,
+       3,
+       1
+      ],
+      [
+       0,
+       3,
+       2
+      ],
+      [
+       0,
+       3,
+       3
+      ],
+      [
+       0,
+       3,
+       4
+      ],
+      [
+       0,
+       4,
+       0
+      ],
+      [
+       0,
+       4,
+       1
+      ],
+      [
+       0,
+       4,
+       2
+      ],
+      [
+       0,
+       4,
+       3
+      ],
+      [
+       0,
+       4,
+       4
+      ],
+      [
+       0,
+       4,
+       5
+      ],
+      [
+       0,
+       5,
+       0
+      ],
+      [
+       0,
+       5,
+       1
+      ],
+      [
+       0,
+       5,
+       4
+      ],
+      [
+       0,
+       5,
+       5
+      ],
+      [
+       1,
+       0,
+       0
+      ],
+      [
+       1,
+       0,
+       1
+      ],
+      [
+       1,
+       0,
+       2
+      ],
+      [
+       1,
+       0,
+       3
+      ],
+      [
+       1,
+       0,
+       4
+      ],
+      [
+       1,
+       0,
+       5
+      ],
+      [
+       1,
+       1,
+       0
+      ],
+      [
+       1,
+       1,
+       2
+      ],
+      [
+       1,
+       1,
+       3
+      ],
+      [
+       1,
+       1,
+       4
+      ],
+      [
+       1,
+       1,
+       5
+      ],
+      [
+       1,
+       2,
+       0
+      ],
+      [
+       1,
+       2,
+       1
+      ],
+      [
+       1,
+       2,
+       2
+      ],
+      [
+       1,
+       2,
+       3
+      ],
+      [
+       1,
+       2,
+       4
+      ],
+      [
+       1,
+       2,
+       5
+      ],
+      [
+       1,
+       3,
+       0
+      ],
+      [
+       1,
+       3,
+       1
+      ],
+      [
+       1,
+       3,
+       2
+      ],
+      [
+       1,
+       3,
+       3
+      ],
+      [
+       1,
+       3,
+       4
+      ],
+      [
+       1,
+       3,
+       5
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       1,
+       4,
+       1
+      ],
+      [
+       1,
+       4,
+       2
+      ],
+      [
+       1,
+       4,
+       3
+      ],
+      [
+       1,
+       4,
+       4
+      ],
+      [
+       1,
+       4,
+       5
+      ],
+      [
+       1,
+       5,
+       0
+      ],
+      [
+       1,
+       5,
+       1
+      ],
+      [
+       1,
+       5,
+       2
+      ],
+      [
+       1,
+       5,
+       3
+      ],
+      [
+       1,
+       5,
+       4
+      ],
+      [
+       1,
+       5,
+       5
+      ],
+      [
+       2,
+       0,
+       1
+      ],
+      [
+       2,
+       0,
+       2
+      ],
+      [
+       2,
+       0,
+       3
+      ],
+      [
+       2,
+       0,
+       4
+      ],
+      [
+       2,
+       1,
+       0
+      ],
+      [
+       2,
+       1,
+       1
+      ],
+      [
+       2,
+       1,
+       2
+      ],
+      [
+       2,
+       1,
+       3
+      ],
+      [
+       2,
+       1,
+       4
+      ],
+      [
+       2,
+       1,
+       5
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       2,
+       2,
+       1
+      ],
+      [
+       2,
+       2,
+       2
+      ],
+      [
+       2,
+       2,
+       3
+      ],
+      [
+       2,
+       2,
+       4
+      ],
+      [
+       2,
+       2,
+       5
+      ],
+      [
+       2,
+       3,
+       0
+      ],
+      [
+       2,
+       3,
+       1
+      ],
+      [
+       2,
+       3,
+       2
+      ],
+      [
+       2,
+       3,
+       3
+      ],
+      [
+       2,
+       3,
+       4
+      ],
+      [
+       2,
+       3,
+       5
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       1
+      ],
+      [
+       2,
+       4,
+       2
+      ],
+      [
+       2,
+       4,
+       3
+      ],
+      [
+       2,
+       4,
+       4
+      ],
+      [
+       2,
+       4,
+       5
+      ],
+      [
+       2,
+       5,
+       1
+      ],
+      [
+       2,
+       5,
+       2
+      ],
+      [
+       2,
+       5,
+       3
+      ],
+      [
+       2,
+       5,
+       4
+      ],
+      [
+       2,
+       5,
+       5
+      ],
+      [
+       3,
+       0,
+       0
+      ],
+      [
+       3,
+       0,
+       1
+      ],
+      [
+       3,
+       0,
+       2
+      ],
+      [
+       3,
+       0,
+       3
+      ],
+      [
+       3,
+       0,
+       4
+      ],
+      [
+       3,
+       1,
+       0
+      ],
+      [
+       3,
+       1,
+       1
+      ],
+      [
+       3,
+       1,
+       2
+      ],
+      [
+       3,
+       1,
+       3
+      ],
+      [
+       3,
+       1,
+       4
+      ],
+      [
+       3,
+       1,
+       5
+      ],
+      [
+       3,
+       2,
+       0
+      ],
+      [
+       3,
+       2,
+       1
+      ],
+      [
+       3,
+       2,
+       2
+      ],
+      [
+       3,
+       2,
+       3
+      ],
+      [
+       3,
+       2,
+       4
+      ],
+      [
+       3,
+       2,
+       5
+      ],
+      [
+       3,
+       3,
+       0
+      ],
+      [
+       3,
+       3,
+       1
+      ],
+      [
+       3,
+       3,
+       2
+      ],
+      [
+       3,
+       3,
+       3
+      ],
+      [
+       3,
+       3,
+       4
+      ],
+      [
+       3,
+       3,
+       5
+      ],
+      [
+       3,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       1
+      ],
+      [
+       3,
+       4,
+       2
+      ],
+      [
+       3,
+       4,
+       3
+      ],
+      [
+       3,
+       4,
+       4
+      ],
+      [
+       3,
+       4,
+       5
+      ],
+      [
+       3,
+       5,
+       1
+      ],
+      [
+       3,
+       5,
+       2
+      ],
+      [
+       3,
+       5,
+       3
+      ],
+      [
+       3,
+       5,
+       4
+      ],
+      [
+       4,
+       0,
+       0
+      ],
+      [
+       4,
+       0,
+       1
+      ],
+      [
+       4,
+       0,
+       2
+      ],
+      [
+       4,
+       0,
+       3
+      ],
+      [
+       4,
+       0,
+       4
+      ],
+      [
+       4,
+       0,
+       5
+      ],
+      [
+       4,
+       1,
+       0
+      ],
+      [
+       4,
+       1,
+       1
+      ],
+      [
+       4,
+       1,
+       2
+      ],
+      [
+       4,
+       1,
+       3
+      ],
+      [
+       4,
+       1,
+       4
+      ],
+      [
+       4,
+       1,
+       5
+      ],
+      [
+       4,
+       2,
+       0
+      ],
+      [
+       4,
+       2,
+       1
+      ],
+      [
+       4,
+       2,
+       2
+      ],
+      [
+       4,
+       2,
+       3
+      ],
+      [
+       4,
+       2,
+       4
+      ],
+      [
+       4,
+       2,
+       5
+      ],
+      [
+       4,
+       3,
+       0
+      ],
+      [
+       4,
+       3,
+       1
+      ],
+      [
+       4,
+       3,
+       2
+      ],
+      [
+       4,
+       3,
+       3
+      ],
+      [
+       4,
+       3,
+       4
+      ],
+      [
+       4,
+       3,
+       5
+      ],
+      [
+       4,
+       4,
+       0
+      ],
+      [
+       4,
+       4,
+       1
+      ],
+      [
+       4,
+       4,
+       2
+      ],
+      [
+       4,
+       4,
+       3
+      ],
+      [
+       4,
+       4,
+       5
+      ],
+      [
+       4,
+       5,
+       0
+      ],
+      [
+       4,
+       5,
+       1
+      ],
+      [
+       4,
+       5,
+       2
+      ],
+      [
+       4,
+       5,
+       3
+      ],
+      [
+       4,
+       5,
+       4
+      ],
+      [
+       4,
+       5,
+       5
+      ],
+      [
+       5,
+       0,
+       0
+      ],
+      [
+       5,
+       0,
+       1
+      ],
+      [
+       5,
+       0,
+       4
+      ],
+      [
+       5,
+       0,
+       5
+      ],
+      [
+       5,
+       1,
+       0
+      ],
+      [
+       5,
+       1,
+       1
+      ],
+      [
+       5,
+       1,
+       2
+      ],
+      [
+       5,
+       1,
+       3
+      ],
+      [
+       5,
+       1,
+       4
+      ],
+      [
+       5,
+       1,
+       5
+      ],
+      [
+       5,
+       2,
+       1
+      ],
+      [
+       5,
+       2,
+       2
+      ],
+      [
+       5,
+       2,
+       3
+      ],
+      [
+       5,
+       2,
+       4
+      ],
+      [
+       5,
+       2,
+       5
+      ],
+      [
+       5,
+       3,
+       1
+      ],
+      [
+       5,
+       3,
+       2
+      ],
+      [
+       5,
+       3,
+       3
+      ],
+      [
+       5,
+       3,
+       4
+      ],
+      [
+       5,
+       4,
+       0
+      ],
+      [
+       5,
+       4,
+       1
+      ],
+      [
+       5,
+       4,
+       2
+      ],
+      [
+       5,
+       4,
+       3
+      ],
+      [
+       5,
+       4,
+       4
+      ],
+      [
+       5,
+       4,
+       5
+      ],
+      [
+       5,
+       5,
+       0
+      ],
+      [
+       5,
+       5,
+       1
+      ],
+      [
+       5,
+       5,
+       2
+      ],
+      [
+       5,
+       5,
+       4
+      ],
+      [
+       5,
+       5,
+       5
+      ]
+     ],
+     "not_pd": 196,
+     "pd": 20,
+     "sites": 216,
+     "stencil_closure_ok": true
+    },
+    "L7": {
+     "accounting_ok": true,
+     "certified": 103,
+     "certified_drive_site": [
+      5,
+      5,
+      3
+     ],
+     "certified_sites": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       0,
+       2
+      ],
+      [
+       0,
+       0,
+       6
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ],
+      [
+       0,
+       1,
+       2
+      ],
+      [
+       0,
+       1,
+       3
+      ],
+      [
+       0,
+       2,
+       0
+      ],
+      [
+       0,
+       2,
+       1
+      ],
+      [
+       0,
+       2,
+       2
+      ],
+      [
+       0,
+       3,
+       1
+      ],
+      [
+       0,
+       3,
+       6
+      ],
+      [
+       0,
+       6,
+       0
+      ],
+      [
+       0,
+       6,
+       3
+      ],
+      [
+       0,
+       6,
+       6
+      ],
+      [
+       1,
+       0,
+       0
+      ],
+      [
+       1,
+       0,
+       1
+      ],
+      [
+       1,
+       0,
+       2
+      ],
+      [
+       1,
+       0,
+       3
+      ],
+      [
+       1,
+       1,
+       0
+      ],
+      [
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       2
+      ],
+      [
+       1,
+       1,
+       3
+      ],
+      [
+       1,
+       1,
+       4
+      ],
+      [
+       1,
+       2,
+       0
+      ],
+      [
+       1,
+       2,
+       1
+      ],
+      [
+       1,
+       2,
+       2
+      ],
+      [
+       1,
+       3,
+       0
+      ],
+      [
+       1,
+       3,
+       1
+      ],
+      [
+       1,
+       4,
+       1
+      ],
+      [
+       2,
+       0,
+       0
+      ],
+      [
+       2,
+       0,
+       1
+      ],
+      [
+       2,
+       0,
+       2
+      ],
+      [
+       2,
+       1,
+       0
+      ],
+      [
+       2,
+       1,
+       1
+      ],
+      [
+       2,
+       1,
+       2
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       2,
+       2,
+       1
+      ],
+      [
+       2,
+       2,
+       2
+      ],
+      [
+       2,
+       2,
+       3
+      ],
+      [
+       2,
+       2,
+       4
+      ],
+      [
+       2,
+       3,
+       2
+      ],
+      [
+       2,
+       4,
+       2
+      ],
+      [
+       2,
+       4,
+       4
+      ],
+      [
+       2,
+       5,
+       5
+      ],
+      [
+       3,
+       0,
+       1
+      ],
+      [
+       3,
+       0,
+       6
+      ],
+      [
+       3,
+       1,
+       0
+      ],
+      [
+       3,
+       1,
+       1
+      ],
+      [
+       3,
+       2,
+       2
+      ],
+      [
+       3,
+       3,
+       3
+      ],
+      [
+       3,
+       4,
+       4
+      ],
+      [
+       3,
+       5,
+       5
+      ],
+      [
+       3,
+       5,
+       6
+      ],
+      [
+       3,
+       6,
+       0
+      ],
+      [
+       3,
+       6,
+       5
+      ],
+      [
+       4,
+       1,
+       1
+      ],
+      [
+       4,
+       2,
+       2
+      ],
+      [
+       4,
+       2,
+       4
+      ],
+      [
+       4,
+       3,
+       4
+      ],
+      [
+       4,
+       4,
+       2
+      ],
+      [
+       4,
+       4,
+       3
+      ],
+      [
+       4,
+       4,
+       4
+      ],
+      [
+       4,
+       4,
+       5
+      ],
+      [
+       4,
+       4,
+       6
+      ],
+      [
+       4,
+       5,
+       4
+      ],
+      [
+       4,
+       5,
+       5
+      ],
+      [
+       4,
+       5,
+       6
+      ],
+      [
+       4,
+       6,
+       4
+      ],
+      [
+       4,
+       6,
+       5
+      ],
+      [
+       4,
+       6,
+       6
+      ],
+      [
+       5,
+       2,
+       5
+      ],
+      [
+       5,
+       3,
+       5
+      ],
+      [
+       5,
+       3,
+       6
+      ],
+      [
+       5,
+       4,
+       4
+      ],
+      [
+       5,
+       4,
+       5
+      ],
+      [
+       5,
+       4,
+       6
+      ],
+      [
+       5,
+       5,
+       2
+      ],
+      [
+       5,
+       5,
+       3
+      ],
+      [
+       5,
+       5,
+       4
+      ],
+      [
+       5,
+       5,
+       5
+      ],
+      [
+       5,
+       5,
+       6
+      ],
+      [
+       5,
+       6,
+       3
+      ],
+      [
+       5,
+       6,
+       4
+      ],
+      [
+       5,
+       6,
+       5
+      ],
+      [
+       5,
+       6,
+       6
+      ],
+      [
+       6,
+       0,
+       0
+      ],
+      [
+       6,
+       0,
+       3
+      ],
+      [
+       6,
+       0,
+       6
+      ],
+      [
+       6,
+       3,
+       0
+      ],
+      [
+       6,
+       3,
+       5
+      ],
+      [
+       6,
+       4,
+       4
+      ],
+      [
+       6,
+       4,
+       5
+      ],
+      [
+       6,
+       4,
+       6
+      ],
+      [
+       6,
+       5,
+       3
+      ],
+      [
+       6,
+       5,
+       4
+      ],
+      [
+       6,
+       5,
+       5
+      ],
+      [
+       6,
+       5,
+       6
+      ],
+      [
+       6,
+       6,
+       0
+      ],
+      [
+       6,
+       6,
+       4
+      ],
+      [
+       6,
+       6,
+       5
+      ],
+      [
+       6,
+       6,
+       6
+      ]
+     ],
+     "clip_used": true,
+     "near_word_certified": false,
+     "near_word_site": [
+      4,
+      3,
+      3
+     ],
+     "non_pd_sites": [
+      [
+       0,
+       0,
+       4
+      ],
+      [
+       0,
+       1,
+       5
+      ],
+      [
+       0,
+       3,
+       3
+      ],
+      [
+       0,
+       3,
+       4
+      ],
+      [
+       0,
+       4,
+       0
+      ],
+      [
+       0,
+       4,
+       3
+      ],
+      [
+       0,
+       4,
+       5
+      ],
+      [
+       0,
+       5,
+       1
+      ],
+      [
+       0,
+       5,
+       4
+      ],
+      [
+       1,
+       0,
+       5
+      ],
+      [
+       1,
+       2,
+       6
+      ],
+      [
+       1,
+       3,
+       3
+      ],
+      [
+       1,
+       3,
+       4
+      ],
+      [
+       1,
+       4,
+       3
+      ],
+      [
+       1,
+       5,
+       0
+      ],
+      [
+       1,
+       5,
+       6
+      ],
+      [
+       1,
+       6,
+       2
+      ],
+      [
+       1,
+       6,
+       5
+      ],
+      [
+       2,
+       1,
+       6
+      ],
+      [
+       2,
+       3,
+       5
+      ],
+      [
+       2,
+       3,
+       6
+      ],
+      [
+       2,
+       5,
+       3
+      ],
+      [
+       2,
+       6,
+       1
+      ],
+      [
+       2,
+       6,
+       3
+      ],
+      [
+       2,
+       6,
+       6
+      ],
+      [
+       3,
+       0,
+       3
+      ],
+      [
+       3,
+       0,
+       4
+      ],
+      [
+       3,
+       1,
+       3
+      ],
+      [
+       3,
+       1,
+       4
+      ],
+      [
+       3,
+       2,
+       5
+      ],
+      [
+       3,
+       2,
+       6
+      ],
+      [
+       3,
+       3,
+       0
+      ],
+      [
+       3,
+       3,
+       1
+      ],
+      [
+       3,
+       3,
+       5
+      ],
+      [
+       3,
+       3,
+       6
+      ],
+      [
+       3,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       1
+      ],
+      [
+       3,
+       5,
+       2
+      ],
+      [
+       3,
+       5,
+       3
+      ],
+      [
+       3,
+       6,
+       2
+      ],
+      [
+       3,
+       6,
+       3
+      ],
+      [
+       4,
+       0,
+       0
+      ],
+      [
+       4,
+       0,
+       3
+      ],
+      [
+       4,
+       0,
+       5
+      ],
+      [
+       4,
+       1,
+       3
+      ],
+      [
+       4,
+       3,
+       0
+      ],
+      [
+       4,
+       3,
+       1
+      ],
+      [
+       4,
+       5,
+       0
+      ],
+      [
+       5,
+       0,
+       1
+      ],
+      [
+       5,
+       0,
+       4
+      ],
+      [
+       5,
+       1,
+       0
+      ],
+      [
+       5,
+       1,
+       6
+      ],
+      [
+       5,
+       2,
+       3
+      ],
+      [
+       5,
+       3,
+       2
+      ],
+      [
+       5,
+       3,
+       3
+      ],
+      [
+       5,
+       4,
+       0
+      ],
+      [
+       5,
+       6,
+       1
+      ],
+      [
+       6,
+       1,
+       2
+      ],
+      [
+       6,
+       1,
+       5
+      ],
+      [
+       6,
+       2,
+       1
+      ],
+      [
+       6,
+       2,
+       3
+      ],
+      [
+       6,
+       2,
+       6
+      ],
+      [
+       6,
+       3,
+       2
+      ],
+      [
+       6,
+       3,
+       3
+      ],
+      [
+       6,
+       5,
+       1
+      ],
+      [
+       6,
+       6,
+       2
+      ]
+     ],
+     "not_pd": 66,
+     "pd": 277,
+     "sites": 343,
+     "stencil_closure_ok": true
+    }
+   },
+   "label": "(4) THE CLIP IS QUARANTINED: the PD sub-domain (sites where I + h is positive definite at the declared margin, so the principal symmetric square root EXISTS) and the CERTIFIED sub-domain (sites whose entire declared open-derivative stencil lies inside the PD sub-domain) are both computed and enumerated site by site; the two counts account for the whole box; the certified set is a subset of the PD set; and the certified set is independently reproduced as the stencil closure of the PD set",
+   "pass": true,
+   "verdict": "pass"
+  },
+  {
+   "counted_as_gate": true,
+   "detail": {
+    "L3": {
+     "probe_amplitude": 0.01,
+     "probe_pd_min": 0.9723179964144393,
+     "probe_sites_not_pd": 0
+    },
+    "L6": {
+     "probe_amplitude": 0.01,
+     "probe_pd_min": 0.9625287715249022,
+     "probe_sites_not_pd": 0
+    },
+    "L7": {
+     "probe_amplitude": 0.01,
+     "probe_pd_min": 0.9596045298289001,
+     "probe_sites_not_pd": 0
+    }
+   },
+   "label": "(4) the F1 PROBE COFRAME EXISTS: I + PROBE_AMP * M(s) is positive definite at the declared margin at every site, so its principal symmetric square root is a genuine coframe and the two F1 falsifiers below are asked of an object that is defined (unlike the physical coframe at the spec-literal constants, which is not)",
+   "pass": true,
+   "verdict": "pass"
+  },
+  {
+   "counted_as_gate": true,
+   "detail": {
+    "L3": {
+     "boundary_gap": 0.02189170896974546,
+     "boundary_sites": 26
+    },
+    "L6": {
+     "boundary_gap": 0.02141360667829878,
+     "boundary_sites": 152
+    },
+    "L7": {
+     "boundary_gap": 0.02062162261398498,
+     "boundary_sites": 218
+    }
+   },
+   "label": "(4) F1a OPEN-DERIVATIVE FALSIFIER fires on the probe coframe: the OPEN K field and the mod-L wrapped variant DIFFER at the boundary-adjacent sites, so the open one-sided derivative is not a vacuous relabelling of the wrapped one",
+   "pass": true,
+   "verdict": "pass"
+  },
+  {
+   "counted_as_gate": true,
+   "detail": {
+    "L3": {
+     "deleted_interior_gap_structurally_zero": 0.0,
+     "leak_outside_readers": 0.0,
+     "moved_inside_readers": 0.030000000000000027,
+     "n_non_readers": 23,
+     "n_readers": 4,
+     "probe_site": [
+      0,
+      0,
+      0
+     ],
+     "wrapped_stencil_leak_proving_the_row_fires": 0.0050000000000000044
+    },
+    "L6": {
+     "deleted_interior_gap_structurally_zero": 0.0,
+     "leak_outside_readers": 0.0,
+     "moved_inside_readers": 0.029999999999999916,
+     "n_non_readers": 212,
+     "n_readers": 4,
+     "probe_site": [
+      0,
+      0,
+      0
+     ],
+     "wrapped_stencil_leak_proving_the_row_fires": 0.0050000000000000044
+    },
+    "L7": {
+     "deleted_interior_gap_structurally_zero": 0.0,
+     "leak_outside_readers": 0.0,
+     "moved_inside_readers": 0.029999999999999916,
+     "n_non_readers": 339,
+     "n_readers": 4,
+     "probe_site": [
+      0,
+      0,
+      0
+     ],
+     "wrapped_stencil_leak_proving_the_row_fires": 0.0050000000000000044
+    }
+   },
+   "label": "(4) F1b STENCIL-LOCALITY FALSIFIER (replaces the draft's structurally unfalsifiable interior half): perturbing the probe coframe's diagonal at one declared site moves K ONLY at the sites whose DECLARED open stencil reads that site and leaves K EXACTLY unchanged at every other site; both sets are required nonempty; and the same perturbation under the WRAPPED stencil is measured to leak outside that reader set, which is the proof that this row can fire.  The deleted half compared open_derivative with wrapped_derivative on the deep-interior mask, where the two evaluate the identical expression, so its gap was exactly 0.0 by construction",
+   "pass": true,
+   "verdict": "pass"
+  },
+  {
+   "condition_met": true,
+   "counted_as_gate": false,
+   "detail": {
+    "L3": {
+     "K_absmax": 0.3584475229650872,
+     "boundary_gap": 0.3114971387731284,
+     "deep_interior_sites": 1,
+     "sites_not_pd": 6
+    },
+    "L6": {
+     "K_absmax": 22.924551172038424,
+     "boundary_gap": 10.10350673891811,
+     "deep_interior_sites": 64,
+     "sites_not_pd": 196
+    },
+    "L7": {
+     "K_absmax": 1.1485226990910895,
+     "boundary_gap": 0.9990823370279743,
+     "deep_interior_sites": 125,
+     "sites_not_pd": 66
+    }
+   },
+   "label": "(4) F1a on the PHYSICAL coframe: the OPEN and wrapped K fields differ at the boundary-adjacent sites",
+   "quarantine_reason": "the physical coframe does not exist at every site at the spec-literal constants; this K field carries clipped square-root eigenvalues",
+   "verdict": "conditional_on_clip"
+  },
+  {
+   "counted_as_gate": true,
+   "detail": {
+    "L3": {
+     "K": 7.771561172376096e-16,
+     "clip_used": false,
+     "e_minus_I": 2.6614158809512183e-16,
+     "h": 2.5376526277146454e-16,
+     "sites_not_pd": 0
+    },
+    "L6": {
+     "K": 7.771561172376096e-16,
+     "clip_used": false,
+     "e_minus_I": 2.6614158809512183e-16,
+     "h": 2.5376526277146454e-16,
+     "sites_not_pd": 0
+    },
+    "L7": {
+     "K": 7.771561172376096e-16,
+     "clip_used": false,
+     "e_minus_I": 2.6614158809512183e-16,
+     "h": 2.5376526277146454e-16,
+     "sites_not_pd": 0
+    }
+   },
+   "label": "(4) flux-off collapses the whole geometric stage EXACTLY, on a coframe that EXISTS: h = 0, e = I (positive definite at every site, no clip used anywhere on this branch, checked not assumed), K_tr = 0",
+   "pass": true,
+   "verdict": "pass"
+  },
+  {
+   "counted_as_gate": true,
+   "detail": {
+    "L3": {
+     "K_cert_absmax": 0.08503388243777588,
+     "certified_sites": 8,
+     "dim": 54,
+     "inverse": 2.220446049250313e-16,
+     "unitarity": 2.220446049250313e-16
+    },
+    "L6": {
+     "K_cert_absmax": 0.0,
+     "certified_sites": 0,
+     "dim": 432,
+     "inverse": 0.0,
+     "unitarity": 0.0
+    },
+    "L7": {
+     "K_cert_absmax": 0.3978790333854716,
+     "certified_sites": 103,
+     "dim": 686,
+     "inverse": 2.220446049250313e-16,
+     "unitarity": 2.220446049250313e-16
+    }
+   },
+   "label": "(5) CERTIFIED SUB-DOMAIN: the endpoint evolution driven by the certified K field is unitary and exactly invertible on the declared code space (dimension 2 L^3), and the certified sub-domain is NONEMPTY and carries a nonzero K, so this is not a statement about the identity matrix",
+   "pass": false,
+   "verdict": "fail"
+  },
+  {
+   "counted_as_gate": true,
+   "detail": {
+    "L3": {
+     "drive_site": [
+      2,
+      2,
+      2
+     ],
+     "leakage": 0.0,
+     "norm": 1.0000000000000002,
+     "offsite": 0.0
+    },
+    "L6": {
+     "drive_site": null,
+     "leakage": 0.0,
+     "norm": 0.0,
+     "offsite": Infinity
+    },
+    "L7": {
+     "drive_site": [
+      5,
+      5,
+      3
+     ],
+     "leakage": 0.0,
+     "norm": 0.9999999999999999,
+     "offsite": 0.0
+    }
+   },
+   "label": "(5) CERTIFIED SUB-DOMAIN: one-excitation conservation is MEASURED, not asserted -- the largest modulus of U_cert outside the matter-position block-diagonal is zero and the certified drive word keeps unit norm with no off-site weight",
+   "pass": false,
+   "verdict": "fail"
+  },
+  {
+   "counted_as_gate": true,
+   "detail": {
+    "L3": {
+     "deleted_U_cert": 0.0,
+     "deleted_p": 0.0,
+     "drive_site": [
+      2,
+      2,
+      2
+     ],
+     "drive_site_certified": true,
+     "p_certified_drive": 0.0072133499871009175,
+     "vacuum_U": 7.771561172376096e-16,
+     "vacuum_p": 1.509929076399593e-31
+    },
+    "L6": {
+     "deleted_U_cert": 0.0,
+     "deleted_p": 0.0,
+     "drive_site": null,
+     "drive_site_certified": false,
+     "p_certified_drive": 0.0,
+     "vacuum_U": 7.771561172376096e-16,
+     "vacuum_p": 0.0
+    },
+    "L7": {
+     "deleted_U_cert": 0.0,
+     "deleted_p": 0.0,
+     "drive_site": [
+      5,
+      5,
+      3
+     ],
+     "drive_site_certified": true,
+     "p_certified_drive": 0.1501282956998299,
+     "vacuum_U": 7.771561172376096e-16,
+     "vacuum_p": 0.0
+    }
+   },
+   "label": "(5) VACUUM-ZERO and DELETION sensitivity on objects that EXIST: with the flux off the whole chain drives U to the identity (and the flux-off coframe is I, checked above), the endpoint is exactly unmoved, deleting the K field collapses the driven response to that same vacuum baseline and drives U_cert to the identity too, and the DRIVEN certified word moves the endpoint by more than the declared signal",
+   "pass": false,
+   "verdict": "fail"
+  },
+  {
+   "counted_as_gate": true,
+   "detail": {
+    "L3": {
+     "kappa_min_separation": 0.0054067486820502785,
+     "kappa_probabilities": {
+      "0.5": 0.0018066013050506392,
+      "1.0": 0.0072133499871009175,
+      "2.0": 0.028645270276258027
+     },
+     "y_quadrature": {
+      "-1": -0.16924913670757094,
+      "1": 0.16924913670757094
+     }
+    },
+    "L6": {
+     "kappa_min_separation": 0.0,
+     "kappa_probabilities": {
+      "0.5": 0.0,
+      "1.0": 0.0,
+      "2.0": 0.0
+     },
+     "y_quadrature": {
+      "-1": 0.0,
+      "1": 0.0
+     }
+    },
+    "L7": {
+     "kappa_min_separation": 0.11107072819551861,
+     "kappa_probabilities": {
+      "0.5": 0.03905756750431131,
+      "1.0": 0.1501282956998299,
+      "2.0": 0.5103591621203776
+     },
+     "y_quadrature": {
+      "-1": 0.7143942623792392,
+      "1": -0.7143942623792392
+     }
+    }
+   },
+   "label": "(5) CERTIFIED SUB-DOMAIN: the sign grid is reported and BOTH signs occur (sigma flips the endpoint Y-quadrature sign), the kappa grid changes the endpoint probability, and NEITHER is selected -- all grid values reported",
+   "pass": false,
+   "verdict": "fail"
+  },
+  {
+   "counted_as_gate": true,
+   "detail": {
+    "L3": {
+     "cap": 1485,
+     "census": {
+      "max_support": 2,
+      "n_factors": 8,
+      "n_support_two": 8
+     },
+     "diagonal_residue": 1.3877787807814457e-17,
+     "factor_unitarity": 2.220446049250313e-16,
+     "recomposition": 1.3877787807814457e-17,
+     "swept": 1431
+    },
+    "L6": {
+     "cap": 93528,
+     "census": {
+      "max_support": 0,
+      "n_factors": 0,
+      "n_support_two": 0
+     },
+     "diagonal_residue": 0.0,
+     "factor_unitarity": 0.0,
+     "recomposition": 0.0,
+     "swept": 93096
+    },
+    "L7": {
+     "cap": 235641,
+     "census": {
+      "max_support": 2,
+      "n_factors": 103,
+      "n_support_two": 103
+     },
+     "diagonal_residue": 5.551115123125783e-17,
+     "factor_unitarity": 2.220446049250313e-16,
+     "recomposition": 5.551115123125783e-17,
+     "swept": 234955
+    }
+   },
+   "label": "(5) CERTIFIED SUB-DOMAIN support-two Givens lowering: the recomposed product of the stored two-level factors reproduces U_cert within tolerance, at least one factor is emitted, every emitted factor is unitary, every emitted factor moves EXACTLY two basis states, and the census stays inside the declared cap",
+   "pass": false,
+   "verdict": "fail"
+  },
+  {
+   "condition_met": true,
+   "counted_as_gate": false,
+   "detail": {
+    "L3": {
+     "dim": 54,
+     "inverse": 2.220446049250313e-16,
+     "unitarity": 2.220446049250313e-16
+    },
+    "L6": {
+     "dim": 432,
+     "inverse": 3.9968028886505635e-15,
+     "unitarity": 3.774758283725532e-15
+    },
+    "L7": {
+     "dim": 686,
+     "inverse": 2.220446049250313e-16,
+     "unitarity": 2.220446049250313e-16
+    }
+   },
+   "label": "(5) the endpoint evolution on the PHYSICAL K field is unitary and exactly invertible",
+   "quarantine_reason": "evaluated on U = expm(-i T H(K)) with K built from the clipped coframe; at the spec-literal constants that coframe does not exist at every site",
+   "verdict": "conditional_on_clip"
+  },
+  {
+   "condition_met": true,
+   "counted_as_gate": false,
+   "detail": {
+    "L3": {
+     "leakage": 0.0,
+     "near_word_certified": false,
+     "norm": 0.9999999999999999,
+     "offsite": 0.0,
+     "p_far": 0.007213349987100913,
+     "p_near": 0.05461335010308559
+    },
+    "L6": {
+     "leakage": 0.0,
+     "near_word_certified": false,
+     "norm": 0.9999999999999993,
+     "offsite": 0.0,
+     "p_far": 0.6790834366917472,
+     "p_near": 0.022577731777998218
+    },
+    "L7": {
+     "leakage": 0.0,
+     "near_word_certified": false,
+     "norm": 1.0,
+     "offsite": 0.0,
+     "p_far": 0.03198720939027626,
+     "p_near": 0.0026373690839250974
+    }
+   },
+   "label": "(5) one-excitation conservation on the PHYSICAL K field, and the declared near word drives the endpoint past the declared signal",
+   "quarantine_reason": "evaluated on U = expm(-i T H(K)) with K built from the clipped coframe; at the spec-literal constants that coframe does not exist at every site",
+   "verdict": "conditional_on_clip"
+  },
+  {
+   "condition_met": true,
+   "counted_as_gate": false,
+   "detail": {
+    "L3": {
+     "cap": 1485,
+     "census": {
+      "max_support": 2,
+      "n_factors": 27,
+      "n_support_two": 27
+     },
+     "kappa_min_separation": 0.04076832793857849,
+     "kappa_probabilities": {
+      "0.5": 0.013845022164507094,
+      "1.0": 0.05461335010308559,
+      "2.0": 0.2065229283744136
+     },
+     "recomposition": 2.220446049250313e-16,
+     "swept": 1431,
+     "y_quadrature": {
+      "-1": -0.45444793802416306,
+      "1": 0.45444793802416306
+     }
+    },
+    "L6": {
+     "cap": 93528,
+     "census": {
+      "max_support": 2,
+      "n_factors": 216,
+      "n_support_two": 216
+     },
+     "kappa_min_separation": 0.06569417944503769,
+     "kappa_probabilities": {
+      "0.5": 0.9943233426164498,
+      "1.0": 0.022577731777998218,
+      "2.0": 0.0882719112230359
+     },
+     "recomposition": 1.7763568394002505e-15,
+     "swept": 93096,
+     "y_quadrature": {
+      "-1": 0.29710589227249584,
+      "1": -0.29710589227249584
+     }
+    },
+    "L7": {
+     "cap": 235641,
+     "census": {
+      "max_support": 2,
+      "n_factors": 343,
+      "n_support_two": 343
+     },
+     "kappa_min_separation": 0.00197759150649214,
+     "kappa_probabilities": {
+      "0.5": 0.0006597775774329576,
+      "1.0": 0.0026373690839250974,
+      "2.0": 0.010521653472961015
+     },
+     "recomposition": 2.220446049250313e-16,
+     "swept": 234955,
+     "y_quadrature": {
+      "-1": -0.10257511137191622,
+      "1": 0.10257511137191622
+     }
+    }
+   },
+   "label": "(5) sigma/kappa grids and the support-two Givens lowering on the PHYSICAL K field",
+   "quarantine_reason": "evaluated on U = expm(-i T H(K)) with K built from the clipped coframe; at the spec-literal constants that coframe does not exist at every site",
+   "verdict": "conditional_on_clip"
+  },
+  {
+   "counted_as_gate": true,
+   "detail": {
+    "L3": {
+     "drive_site": [
+      2,
+      2,
+      2
+     ],
+     "edit_delta_K_cert": 0.14073017187173276,
+     "edit_delta_U_cert": 0.14026610524859234,
+     "edit_delta_b": 1.235762584734469,
+     "edit_delta_eps": 0.8245183010634269,
+     "edit_delta_p_cert": 0.010045321024879579,
+     "edit_delta_rho": 0.17000000000000004,
+     "edit_div_changed_sites": 2,
+     "edit_label_after": 4,
+     "edit_label_before": 3,
+     "edit_link": [
+      [
+       1,
+       1,
+       1
+      ],
+      [
+       2,
+       1,
+       1
+      ]
+     ],
+     "edit_n_cert": 8
+    },
+    "L6": {
+     "drive_site": null,
+     "edit_delta_K_cert": 0.0,
+     "edit_delta_U_cert": 0.0,
+     "edit_delta_b": 1.2357625847344686,
+     "edit_delta_eps": 5.318269599876878,
+     "edit_delta_p_cert": 0.0,
+     "edit_delta_rho": 0.17,
+     "edit_div_changed_sites": 2,
+     "edit_label_after": 4,
+     "edit_label_before": 3,
+     "edit_link": [
+      [
+       2,
+       2,
+       2
+      ],
+      [
+       3,
+       2,
+       2
+      ]
+     ],
+     "edit_n_cert": 0
+    },
+    "L7": {
+     "drive_site": [
+      5,
+      5,
+      3
+     ],
+     "edit_delta_K_cert": 0.6025525236527993,
+     "edit_delta_U_cert": 0.45531752315961127,
+     "edit_delta_b": 1.2357625847344686,
+     "edit_delta_eps": 0.7744217014264565,
+     "edit_delta_p_cert": 0.1501282956998299,
+     "edit_delta_rho": 0.17,
+     "edit_div_changed_sites": 2,
+     "edit_label_after": 4,
+     "edit_label_before": 3,
+     "edit_link": [
+      [
+       3,
+       3,
+       3
+      ],
+      [
+       4,
+       3,
+       3
+      ]
+     ],
+     "edit_n_cert": 77
+    }
+   },
+   "label": "(6) F3 JOIN EDIT, on the stages that are UPSTREAM of the coframe and therefore free of the clip, plus the CERTIFIED sub-domain downstream: one F17 link increment (applied through its 16-SWAP word) moves the divergence at exactly two sites, the source field, the source row, the response, the certified K field, the certified unitary and the certified endpoint probability",
+   "pass": false,
+   "verdict": "fail"
+  },
+  {
+   "counted_as_gate": true,
+   "detail": {
+    "L3": {
+     "edit_label_reverted": 3,
+     "edit_register_exact": true,
+     "revert_delta_K_cert": 0.0,
+     "revert_delta_b": 0.0,
+     "revert_delta_eps": 0.0,
+     "revert_delta_p_cert": 0.0,
+     "revert_delta_rho": 0.0,
+     "revert_scales": {
+      "K": 1.0,
+      "K_cert": 1.0,
+      "b": 4.872916063004967,
+      "eps": 1.5536772720022347,
+      "rho": 1.0
+     }
+    },
+    "L6": {
+     "edit_label_reverted": 3,
+     "edit_register_exact": true,
+     "revert_delta_K_cert": 0.0,
+     "revert_delta_b": 0.0,
+     "revert_delta_eps": 0.0,
+     "revert_delta_p_cert": Infinity,
+     "revert_delta_rho": 0.0,
+     "revert_scales": {
+      "K": 22.924551172038424,
+      "K_cert": 1.0,
+      "b": 2.182292086962299,
+      "eps": 27.039013743222824,
+      "rho": 1.0
+     }
+    },
+    "L7": {
+     "edit_label_reverted": 3,
+     "edit_register_exact": true,
+     "revert_delta_K_cert": 0.0,
+     "revert_delta_b": 0.0,
+     "revert_delta_eps": 0.0,
+     "revert_delta_p_cert": 0.0,
+     "revert_delta_rho": 0.0,
+     "revert_scales": {
+      "K": 1.1485226990910895,
+      "K_cert": 1.0,
+      "b": 2.182292086962299,
+      "eps": 1.921096242346071,
+      "rho": 1.0
+     }
+    }
+   },
+   "label": "(6) the exact inverse 16-SWAP word restores the register exactly (integer) and every clip-free stage to MACHINE_REL_TOL of that stage's own COMPUTED scale (each scale is reported with the row; the certified K field and the certified endpoint probability are included, the clipped stages are quarantined below)",
+   "pass": false,
+   "verdict": "fail"
+  },
+  {
+   "condition_met": true,
+   "counted_as_gate": false,
+   "detail": {
+    "L3": {
+     "edit_delta_K": 0.9551232476149378,
+     "edit_delta_U": 0.816384923129311,
+     "edit_delta_e": 0.9357275805927326,
+     "edit_delta_h": 1.313550544670711,
+     "edit_delta_p_near": 0.04391850220914342,
+     "revert_delta_K": 0.0,
+     "revert_delta_p_near": 0.0
+    },
+    "L6": {
+     "edit_delta_K": 4.7860850883709,
+     "edit_delta_U": 1.9749205011245257,
+     "edit_delta_e": 4.400032280970855,
+     "edit_delta_h": 236.38566650261214,
+     "edit_delta_p_near": 0.07907829763866647,
+     "revert_delta_K": 0.0,
+     "revert_delta_p_near": 0.0
+    },
+    "L7": {
+     "edit_delta_K": 0.7534299194254059,
+     "edit_delta_U": 0.7348606219330542,
+     "edit_delta_e": 0.7145503012723737,
+     "edit_delta_h": 2.021801920218128,
+     "edit_delta_p_near": 0.024139457846244185,
+     "revert_delta_K": 0.0,
+     "revert_delta_p_near": 0.0
+    }
+   },
+   "label": "(6) F3 JOIN EDIT and inverse-word restore on the CLIPPED downstream stages: the metric, the physical coframe, the physical K field, the physical unitary and the near-word endpoint probability",
+   "quarantine_reason": "evaluated on U = expm(-i T H(K)) with K built from the clipped coframe; at the spec-literal constants that coframe does not exist at every site",
+   "verdict": "conditional_on_clip"
+  },
+  {
+   "counted_as_gate": true,
+   "detail": {
+    "L3": {
+     "cycle690_triangulation_ceiling": 12,
+     "defects": {
+      "Q": 1.2434497875801753e-10,
+      "b": 1.687538997430238e-14,
+      "eps": 8.106093574156148e-11
+     },
+     "equals_kuhn_stabilizer": true,
+     "frames": [
+      [
+       1,
+       -1
+      ],
+      [
+       4,
+       -1
+      ],
+      [
+       9,
+       -1
+      ],
+      [
+       15,
+       1
+      ],
+      [
+       18,
+       1
+      ],
+      [
+       23,
+       1
+      ]
+     ],
+     "measured_direction_set_scope": 6,
+     "note": "these are DIFFERENT invariants (Cycle 695); the triangulation ceiling is 12 and does not license this direction-set scope",
+     "relative_only_stages": [],
+     "scales": {
+      "K": 1.0,
+      "K_cert": 1.0,
+      "Q": 29.452136694480856,
+      "b": 4.872916063004967,
+      "eps": 1.5536772720022347
+     },
+     "scope_size": 6,
+     "subgroup": {
+      "closed_under_composition": true,
+      "closed_under_inverse": true,
+      "frames_total": 24,
+      "identity_present": true,
+      "inverses_escaping": [],
+      "lagrange_divides": true,
+      "order": 6,
+      "products_checked": 36,
+      "products_escaping": [],
+      "proper": true
+     }
+    },
+    "L6": {
+     "cycle690_triangulation_ceiling": 12,
+     "defects": {
+      "Q": 1.2434497875801753e-10,
+      "b": 1.1102230246251565e-14,
+      "eps": 1.509911484731674e-08
+     },
+     "equals_kuhn_stabilizer": true,
+     "frames": [
+      [
+       1,
+       -1
+      ],
+      [
+       4,
+       -1
+      ],
+      [
+       9,
+       -1
+      ],
+      [
+       15,
+       1
+      ],
+      [
+       18,
+       1
+      ],
+      [
+       23,
+       1
+      ]
+     ],
+     "measured_direction_set_scope": 6,
+     "note": "these are DIFFERENT invariants (Cycle 695); the triangulation ceiling is 12 and does not license this direction-set scope",
+     "relative_only_stages": [
+      "K",
+      "eps"
+     ],
+     "scales": {
+      "K": 22.924551172038424,
+      "K_cert": 1.0,
+      "Q": 29.452136694480856,
+      "b": 2.182292086962299,
+      "eps": 27.039013743222824
+     },
+     "scope_size": 6,
+     "subgroup": {
+      "closed_under_composition": true,
+      "closed_under_inverse": true,
+      "frames_total": 24,
+      "identity_present": true,
+      "inverses_escaping": [],
+      "lagrange_divides": true,
+      "order": 6,
+      "products_checked": 36,
+      "products_escaping": [],
+      "proper": true
+     }
+    },
+    "L7": {
+     "cycle690_triangulation_ceiling": 12,
+     "defects": {
+      "Q": 1.2434497875801753e-10,
+      "b": 1.1102230246251565e-14,
+      "eps": 8.542147544865486e-10
+     },
+     "equals_kuhn_stabilizer": true,
+     "frames": [
+      [
+       1,
+       -1
+      ],
+      [
+       4,
+       -1
+      ],
+      [
+       9,
+       -1
+      ],
+      [
+       15,
+       1
+      ],
+      [
+       18,
+       1
+      ],
+      [
+       23,
+       1
+      ]
+     ],
+     "measured_direction_set_scope": 6,
+     "note": "these are DIFFERENT invariants (Cycle 695); the triangulation ceiling is 12 and does not license this direction-set scope",
+     "relative_only_stages": [],
+     "scales": {
+      "K": 1.1485226990910895,
+      "K_cert": 1.0,
+      "Q": 29.452136694480856,
+      "b": 2.182292086962299,
+      "eps": 1.921096242346071
+     },
+     "scope_size": 6,
+     "subgroup": {
+      "closed_under_composition": true,
+      "closed_under_inverse": true,
+      "frames_total": 24,
+      "identity_present": true,
+      "inverses_escaping": [],
+      "lagrange_divides": true,
+      "order": 6,
+      "products_checked": 36,
+      "products_escaping": [],
+      "proper": true
+     }
+    }
+   },
+   "label": "(7d) RESTATED GATE (7) ON THE ACHIEVABLE SCOPE -- a principled rescope justified by the landed Cycle-690 theorem, NOT goalpost-moving.  The literal 'all 24' is proven unattainable for ANY eight-vertex unit-cube triangulation, the ceiling is 12, and this complex attains 6 (all three re-derived above).  On that achievable scope, which is required NONEMPTY so the row cannot pass on an empty comparison, every clip-free joined stage transports to MACHINE_REL_TOL of its own COMPUTED scale: the quadratic form, the source row and the response; the scope contains the computed complex stabilizer and IS the reconstructed Kuhn unit-cube stabilizer",
+   "pass": true,
+   "verdict": "pass"
+  },
+  {
+   "counted_as_gate": true,
+   "detail": {
+    "L3": {
+     "K_cert_defect": 5.909273070869858e-12,
+     "K_cert_scale": 1.0,
+     "certified_sites": 8,
+     "drive_site": [
+      2,
+      2,
+      2
+     ],
+     "nonvacuous": true,
+     "p_cert_defect": 5.911417189086166e-14
+    },
+    "L6": {
+     "K_cert_defect": 0.0,
+     "K_cert_scale": 1.0,
+     "certified_sites": 0,
+     "drive_site": null,
+     "nonvacuous": false,
+     "p_cert_defect": 0.0
+    },
+    "L7": {
+     "K_cert_defect": 8.143553054118513e-10,
+     "K_cert_scale": 1.0,
+     "certified_sites": 103,
+     "drive_site": [
+      5,
+      5,
+      3
+     ],
+     "nonvacuous": true,
+     "p_cert_defect": 2.6264135311038217e-10
+    }
+   },
+   "label": "(7e) the CERTIFIED K field and the CERTIFIED endpoint probability transport across the whole achievable scope: K_cert carries the DERIVED parity factor to MACHINE_REL_TOL of its computed scale and the certified drive probability to MACHINE_ABS_TOL",
+   "pass": false,
+   "verdict": "fail"
+  },
+  {
+   "counted_as_gate": true,
+   "detail": {
+    "L3": {
+     "K_cert_defect": 5.909273070869858e-12,
+     "b_defect": 1.687538997430238e-14,
+     "closure_failures": 0,
+     "eps_defect": 8.106093574156148e-11,
+     "p_cert_defect": 5.911417189086166e-14,
+     "parity_hom_failures": 0,
+     "products_executed_past_c1": 36,
+     "products_out_of_scope": 540,
+     "products_total_over_24_frames": 576,
+     "site_hom_failures": 0,
+     "var_hom_failures": 0
+    },
+    "L6": {
+     "K_cert_defect": 0.0,
+     "b_defect": 1.1102230246251565e-14,
+     "closure_failures": 0,
+     "eps_defect": 1.509911484731674e-08,
+     "p_cert_defect": Infinity,
+     "parity_hom_failures": 0,
+     "products_executed_past_c1": 36,
+     "products_out_of_scope": 540,
+     "products_total_over_24_frames": 576,
+     "site_hom_failures": 0,
+     "var_hom_failures": 0
+    },
+    "L7": {
+     "K_cert_defect": 8.143553054118513e-10,
+     "b_defect": 1.1102230246251565e-14,
+     "closure_failures": 0,
+     "eps_defect": 8.542147544865486e-10,
+     "p_cert_defect": 2.6264135311038217e-10,
+     "parity_hom_failures": 0,
+     "products_executed_past_c1": 36,
+     "products_out_of_scope": 540,
+     "products_total_over_24_frames": 576,
+     "site_hom_failures": 0,
+     "var_hom_failures": 0
+    }
+   },
+   "label": "(7f) PRODUCT CLOSURE PAST C1 -- the coverage gap is closed over the achievable scope. The draft closed 576 products at C1 (the F17 domain) and ZERO products past it.  Every product of two achievable frames is now executed past C1 -- the COMPLETE product set of the achievable scope, 6^2 = 36 products -- at four levels: the scope is closed under composition; the induced site and variable permutations compose EXACTLY (integer); the DERIVED K parity is multiplicative EXACTLY (integer); and the two-step transported source row and response match the base to MACHINE_REL_TOL of their computed scales.  The products NOT executed are exactly those with a factor outside the achievable scope, where the downstream action does not exist at all; their count is reported",
+   "pass": false,
+   "verdict": "fail"
+  },
+  {
+   "condition_met": true,
+   "counted_as_gate": false,
+   "detail": {
+    "L3": {
+     "K_defect": 8.555742225802021e-11,
+     "K_scale": 1.0,
+     "p_defect": 1.5287077159698015e-13,
+     "product_K_defect": 8.555742225802021e-11,
+     "product_p_defect": 1.5287077159698015e-13
+    },
+    "L6": {
+     "K_defect": 1.645744163170093e-08,
+     "K_scale": 22.924551172038424,
+     "p_defect": 6.296013051187987e-10,
+     "product_K_defect": 1.645744163170093e-08,
+     "product_p_defect": 6.296013051187987e-10
+    },
+    "L7": {
+     "K_defect": 8.143553054118513e-10,
+     "K_scale": 1.1485226990910895,
+     "p_defect": 3.690194851080353e-12,
+     "product_K_defect": 8.143553054118513e-10,
+     "product_p_defect": 3.690194851080353e-12
+    }
+   },
+   "label": "(7) covariance and product closure of the CLIPPED K field and the near-word endpoint probability over the achievable scope",
+   "quarantine_reason": "evaluated on U = expm(-i T H(K)) with K built from the clipped coframe; at the spec-literal constants that coframe does not exist at every site",
+   "verdict": "conditional_on_clip"
+  },
+  {
+   "counted_as_gate": true,
+   "detail": {
+    "L3": {
+     "anchored_localization_variant_defect": 5.340639267988962,
+     "c1_576_closure_failures": 0,
+     "frames_total": 24,
+     "ill_posed_frames": 18,
+     "scope_size": 6,
+     "witness_example": {
+      "frame": 0,
+      "image": [
+       0,
+       -1,
+       1
+      ],
+      "spatial_class": [
+       0,
+       1,
+       1
+      ]
+     }
+    },
+    "L6": {
+     "anchored_localization_variant_defect": 3.7299913344822393,
+     "c1_576_closure_failures": 0,
+     "frames_total": 24,
+     "ill_posed_frames": 18,
+     "scope_size": 6,
+     "witness_example": {
+      "frame": 0,
+      "image": [
+       0,
+       -1,
+       1
+      ],
+      "spatial_class": [
+       0,
+       1,
+       1
+      ]
+     }
+    },
+    "L7": {
+     "anchored_localization_variant_defect": 3.7299913344822393,
+     "c1_576_closure_failures": 0,
+     "frames_total": 24,
+     "ill_posed_frames": 18,
+     "scope_size": 6,
+     "witness_example": {
+      "frame": 0,
+      "image": [
+       0,
+       -1,
+       1
+      ],
+      "spatial_class": [
+       0,
+       1,
+       1
+      ]
+     }
+    }
+   },
+   "label": "(7g) FULL 24-FRAME ACCOUNTING (the rescope hides nothing): the achievable scope plus the ill-posed frames account for all 24, every ill-posed frame carries a COMPUTED witness naming the spatial class carried out of the landed 0/1 direction set (so covariance there is ILL POSED, not violated -- the landed Cycle-690 mechanism), and the F17 domain and the F17-to-source transform still carry the full 24 action and the full 576-product closure exactly, unrestricted",
+   "pass": true,
+   "verdict": "pass"
+  },
+  {
+   "counted_as_gate": true,
+   "detail": {
+    "L6": {
+     "anchor_carry_endpoint_defect": 6.29234098853404e-10,
+     "anchor_carry_endpoint_defect_cert": Infinity,
+     "anchor_carry_frame": 1,
+     "anchor_carry_in_covariance_scope": true,
+     "anchor_carry_moving_frames": 21,
+     "anchor_carry_new_anchor": [
+      3,
+      3,
+      3
+     ],
+     "anchor_carry_rho_defect": 0.0
+    }
+   },
+   "label": "(7h) L6 ANCHOR CARRY: a centre-orbit rotation that carries the anchor to another of the eight central sites transports the whole chain -- the source field exactly and the CERTIFIED endpoint response to MACHINE_ABS_TOL",
+   "pass": false,
+   "verdict": "fail"
+  },
+  {
+   "condition_met": true,
+   "counted_as_gate": false,
+   "detail": {
+    "L6": 6.29234098853404e-10
+   },
+   "label": "(7) L6 ANCHOR CARRY of the CLIPPED near-word endpoint response",
+   "quarantine_reason": "evaluated on U = expm(-i T H(K)) with K built from the clipped coframe; at the spec-literal constants that coframe does not exist at every site",
+   "verdict": "conditional_on_clip"
+  },
+  {
+   "counted_as_gate": true,
+   "detail": {
+    "any_size_clipped": true,
+    "conditional_rows": 7,
+    "gate_rows": 40,
+    "per_size_certified": {
+     "L3": 8,
+     "L6": 0,
+     "L7": 103
+    },
+    "per_size_not_pd": {
+     "L3": 6,
+     "L6": 196,
+     "L7": 66
+    }
+   },
+   "label": "(4/5/6/7) QUARANTINE LEDGER: a row that consumes the coframe is emitted as a GATE when that coframe exists at every site and as CONDITIONAL_ON_CLIP otherwise, and that correspondence is CHECKED, not trusted -- conditional rows were emitted if and only if some size in this run carries a non-positive-definite site.  A conditional row is never counted as a pass and never appears in the PASS/FAIL tally; if the supervisor moves the fixtures inside the reconstruction's domain the SAME rows become gates with no other edit to this file",
+   "pass": true,
+   "verdict": "pass"
+  },
+  {
+   "counted_as_gate": true,
+   "detail": {
+    "MACHINE_ABS_TOL": 1e-09,
+    "MACHINE_REL_TOL": 1e-09,
+    "budget": 600.0,
+    "elapsed_seconds": 4.88,
+    "per_size_seconds": {
+     "L3": 0.7,
+     "L6": 1.17,
+     "L7": 2.82
+    },
+    "stages_passing_only_relatively": {
+     "L3": [],
+     "L6": [
+      "K",
+      "eps"
+     ],
+     "L7": []
+    }
+   },
+   "label": "(8) the run completed inside the declared cold-runtime budget with a single frozen tolerance table.  F7 REPAIR: the draft's MACHINE_TOL was declared absolute and then used as a relative multiplier; it is split into MACHINE_ABS_TOL and MACHINE_REL_TOL, each with exactly one meaning and the same numeric value (this separates meanings, it does not loosen anything).  The stages that clear the RELATIVE reading but NOT the absolute one are computed and reported per size, so no verdict rests on an unstated reading of a tolerance",
+   "pass": true,
+   "verdict": "pass"
+  }
+ ],
+ "claim_boundaries": {
+  "K_is_a_rate": false,
+  "K_is_energy": false,
+  "K_is_unique_physical_stress": false,
+  "PR5557_harness_compiled": false,
+  "attraction_language_used": false,
+  "c620_periodic_bloch_K_reproduced": false,
+  "certified_object": "constructive open-real-space coframe derivative, F17-to-Regge source transform, and joined K-to-endpoint compiler on the declared open fixtures",
+  "five_over_four_ADVANCE_count_edit_driven": false,
+  "gauge_null_sector_resolved": false,
+  "new_axiom_primitive_or_premise_class_added": false,
+  "open_to_periodic_equivalence_claimed": false,
+  "periodic_bloch_data_in_the_executed_path": false,
+  "positivity_or_stability_claimed_for_regge_second_variation": false,
+  "regulator_selected": false,
+  "response_is_gravity": false,
+  "sign_or_scale_selected": false,
+  "three_over_four_DELAY_association_used": false,
+  "unique_coupling_normalization": false,
+  "wrapped_phase_is_energy": false
+ },
+ "clip_quarantine": {
+  "conditional_rows": 7,
+  "gate_rows": 42,
+  "mechanism": "rows evaluated on the clipped coframe are emitted with verdict conditional_on_clip and are EXCLUDED from the PASS/FAIL tally; the quarantine ledger row checks that conditional rows are emitted if and only if some size carries a non-positive-definite site",
+  "per_size": {
+   "L3": {
+    "certified": 8,
+    "certified_sites": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      2
+     ],
+     [
+      0,
+      2,
+      0
+     ],
+     [
+      0,
+      2,
+      2
+     ],
+     [
+      2,
+      0,
+      0
+     ],
+     [
+      2,
+      0,
+      2
+     ],
+     [
+      2,
+      2,
+      0
+     ],
+     [
+      2,
+      2,
+      2
+     ]
+    ],
+    "drive_site": [
+     2,
+     2,
+     2
+    ],
+    "non_pd_sites": [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0
+     ],
+     [
+      1,
+      1,
+      2
+     ],
+     [
+      1,
+      2,
+      1
+     ],
+     [
+      2,
+      1,
+      1
+     ]
+    ],
+    "not_pd": 6,
+    "pd": 21,
+    "sites": 27
+   },
+   "L6": {
+    "certified": 0,
+    "certified_sites": [],
+    "drive_site": null,
+    "non_pd_sites": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      0,
+      3
+     ],
+     [
+      0,
+      0,
+      4
+     ],
+     [
+      0,
+      0,
+      5
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      0,
+      1,
+      2
+     ],
+     [
+      0,
+      1,
+      3
+     ],
+     [
+      0,
+      1,
+      4
+     ],
+     [
+      0,
+      1,
+      5
+     ],
+     [
+      0,
+      2,
+      1
+     ],
+     [
+      0,
+      2,
+      2
+     ],
+     [
+      0,
+      2,
+      3
+     ],
+     [
+      0,
+      2,
+      4
+     ],
+     [
+      0,
+      3,
+      0
+     ],
+     [
+      0,
+      3,
+      1
+     ],
+     [
+      0,
+      3,
+      2
+     ],
+     [
+      0,
+      3,
+      3
+     ],
+     [
+      0,
+      3,
+      4
+     ],
+     [
+      0,
+      4,
+      0
+     ],
+     [
+      0,
+      4,
+      1
+     ],
+     [
+      0,
+      4,
+      2
+     ],
+     [
+      0,
+      4,
+      3
+     ],
+     [
+      0,
+      4,
+      4
+     ],
+     [
+      0,
+      4,
+      5
+     ],
+     [
+      0,
+      5,
+      0
+     ],
+     [
+      0,
+      5,
+      1
+     ],
+     [
+      0,
+      5,
+      4
+     ],
+     [
+      0,
+      5,
+      5
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      0,
+      2
+     ],
+     [
+      1,
+      0,
+      3
+     ],
+     [
+      1,
+      0,
+      4
+     ],
+     [
+      1,
+      0,
+      5
+     ],
+     [
+      1,
+      1,
+      0
+     ],
+     [
+      1,
+      1,
+      2
+     ],
+     [
+      1,
+      1,
+      3
+     ],
+     [
+      1,
+      1,
+      4
+     ],
+     [
+      1,
+      1,
+      5
+     ],
+     [
+      1,
+      2,
+      0
+     ],
+     [
+      1,
+      2,
+      1
+     ],
+     [
+      1,
+      2,
+      2
+     ],
+     [
+      1,
+      2,
+      3
+     ],
+     [
+      1,
+      2,
+      4
+     ],
+     [
+      1,
+      2,
+      5
+     ],
+     [
+      1,
+      3,
+      0
+     ],
+     [
+      1,
+      3,
+      1
+     ],
+     [
+      1,
+      3,
+      2
+     ],
+     [
+      1,
+      3,
+      3
+     ],
+     [
+      1,
+      3,
+      4
+     ],
+     [
+      1,
+      3,
+      5
+     ],
+     [
+      1,
+      4,
+      0
+     ],
+     [
+      1,
+      4,
+      1
+     ],
+     [
+      1,
+      4,
+      2
+     ],
+     [
+      1,
+      4,
+      3
+     ],
+     [
+      1,
+      4,
+      4
+     ],
+     [
+      1,
+      4,
+      5
+     ],
+     [
+      1,
+      5,
+      0
+     ],
+     [
+      1,
+      5,
+      1
+     ],
+     [
+      1,
+      5,
+      2
+     ],
+     [
+      1,
+      5,
+      3
+     ],
+     [
+      1,
+      5,
+      4
+     ],
+     [
+      1,
+      5,
+      5
+     ],
+     [
+      2,
+      0,
+      1
+     ],
+     [
+      2,
+      0,
+      2
+     ],
+     [
+      2,
+      0,
+      3
+     ],
+     [
+      2,
+      0,
+      4
+     ],
+     [
+      2,
+      1,
+      0
+     ],
+     [
+      2,
+      1,
+      1
+     ],
+     [
+      2,
+      1,
+      2
+     ],
+     [
+      2,
+      1,
+      3
+     ],
+     [
+      2,
+      1,
+      4
+     ],
+     [
+      2,
+      1,
+      5
+     ],
+     [
+      2,
+      2,
+      0
+     ],
+     [
+      2,
+      2,
+      1
+     ],
+     [
+      2,
+      2,
+      2
+     ],
+     [
+      2,
+      2,
+      3
+     ],
+     [
+      2,
+      2,
+      4
+     ],
+     [
+      2,
+      2,
+      5
+     ],
+     [
+      2,
+      3,
+      0
+     ],
+     [
+      2,
+      3,
+      1
+     ],
+     [
+      2,
+      3,
+      2
+     ],
+     [
+      2,
+      3,
+      3
+     ],
+     [
+      2,
+      3,
+      4
+     ],
+     [
+      2,
+      3,
+      5
+     ],
+     [
+      2,
+      4,
+      0
+     ],
+     [
+      2,
+      4,
+      1
+     ],
+     [
+      2,
+      4,
+      2
+     ],
+     [
+      2,
+      4,
+      3
+     ],
+     [
+      2,
+      4,
+      4
+     ],
+     [
+      2,
+      4,
+      5
+     ],
+     [
+      2,
+      5,
+      1
+     ],
+     [
+      2,
+      5,
+      2
+     ],
+     [
+      2,
+      5,
+      3
+     ],
+     [
+      2,
+      5,
+      4
+     ],
+     [
+      2,
+      5,
+      5
+     ],
+     [
+      3,
+      0,
+      0
+     ],
+     [
+      3,
+      0,
+      1
+     ],
+     [
+      3,
+      0,
+      2
+     ],
+     [
+      3,
+      0,
+      3
+     ],
+     [
+      3,
+      0,
+      4
+     ],
+     [
+      3,
+      1,
+      0
+     ],
+     [
+      3,
+      1,
+      1
+     ],
+     [
+      3,
+      1,
+      2
+     ],
+     [
+      3,
+      1,
+      3
+     ],
+     [
+      3,
+      1,
+      4
+     ],
+     [
+      3,
+      1,
+      5
+     ],
+     [
+      3,
+      2,
+      0
+     ],
+     [
+      3,
+      2,
+      1
+     ],
+     [
+      3,
+      2,
+      2
+     ],
+     [
+      3,
+      2,
+      3
+     ],
+     [
+      3,
+      2,
+      4
+     ],
+     [
+      3,
+      2,
+      5
+     ],
+     [
+      3,
+      3,
+      0
+     ],
+     [
+      3,
+      3,
+      1
+     ],
+     [
+      3,
+      3,
+      2
+     ],
+     [
+      3,
+      3,
+      3
+     ],
+     [
+      3,
+      3,
+      4
+     ],
+     [
+      3,
+      3,
+      5
+     ],
+     [
+      3,
+      4,
+      0
+     ],
+     [
+      3,
+      4,
+      1
+     ],
+     [
+      3,
+      4,
+      2
+     ],
+     [
+      3,
+      4,
+      3
+     ],
+     [
+      3,
+      4,
+      4
+     ],
+     [
+      3,
+      4,
+      5
+     ],
+     [
+      3,
+      5,
+      1
+     ],
+     [
+      3,
+      5,
+      2
+     ],
+     [
+      3,
+      5,
+      3
+     ],
+     [
+      3,
+      5,
+      4
+     ],
+     [
+      4,
+      0,
+      0
+     ],
+     [
+      4,
+      0,
+      1
+     ],
+     [
+      4,
+      0,
+      2
+     ],
+     [
+      4,
+      0,
+      3
+     ],
+     [
+      4,
+      0,
+      4
+     ],
+     [
+      4,
+      0,
+      5
+     ],
+     [
+      4,
+      1,
+      0
+     ],
+     [
+      4,
+      1,
+      1
+     ],
+     [
+      4,
+      1,
+      2
+     ],
+     [
+      4,
+      1,
+      3
+     ],
+     [
+      4,
+      1,
+      4
+     ],
+     [
+      4,
+      1,
+      5
+     ],
+     [
+      4,
+      2,
+      0
+     ],
+     [
+      4,
+      2,
+      1
+     ],
+     [
+      4,
+      2,
+      2
+     ],
+     [
+      4,
+      2,
+      3
+     ],
+     [
+      4,
+      2,
+      4
+     ],
+     [
+      4,
+      2,
+      5
+     ],
+     [
+      4,
+      3,
+      0
+     ],
+     [
+      4,
+      3,
+      1
+     ],
+     [
+      4,
+      3,
+      2
+     ],
+     [
+      4,
+      3,
+      3
+     ],
+     [
+      4,
+      3,
+      4
+     ],
+     [
+      4,
+      3,
+      5
+     ],
+     [
+      4,
+      4,
+      0
+     ],
+     [
+      4,
+      4,
+      1
+     ],
+     [
+      4,
+      4,
+      2
+     ],
+     [
+      4,
+      4,
+      3
+     ],
+     [
+      4,
+      4,
+      5
+     ],
+     [
+      4,
+      5,
+      0
+     ],
+     [
+      4,
+      5,
+      1
+     ],
+     [
+      4,
+      5,
+      2
+     ],
+     [
+      4,
+      5,
+      3
+     ],
+     [
+      4,
+      5,
+      4
+     ],
+     [
+      4,
+      5,
+      5
+     ],
+     [
+      5,
+      0,
+      0
+     ],
+     [
+      5,
+      0,
+      1
+     ],
+     [
+      5,
+      0,
+      4
+     ],
+     [
+      5,
+      0,
+      5
+     ],
+     [
+      5,
+      1,
+      0
+     ],
+     [
+      5,
+      1,
+      1
+     ],
+     [
+      5,
+      1,
+      2
+     ],
+     [
+      5,
+      1,
+      3
+     ],
+     [
+      5,
+      1,
+      4
+     ],
+     [
+      5,
+      1,
+      5
+     ],
+     [
+      5,
+      2,
+      1
+     ],
+     [
+      5,
+      2,
+      2
+     ],
+     [
+      5,
+      2,
+      3
+     ],
+     [
+      5,
+      2,
+      4
+     ],
+     [
+      5,
+      2,
+      5
+     ],
+     [
+      5,
+      3,
+      1
+     ],
+     [
+      5,
+      3,
+      2
+     ],
+     [
+      5,
+      3,
+      3
+     ],
+     [
+      5,
+      3,
+      4
+     ],
+     [
+      5,
+      4,
+      0
+     ],
+     [
+      5,
+      4,
+      1
+     ],
+     [
+      5,
+      4,
+      2
+     ],
+     [
+      5,
+      4,
+      3
+     ],
+     [
+      5,
+      4,
+      4
+     ],
+     [
+      5,
+      4,
+      5
+     ],
+     [
+      5,
+      5,
+      0
+     ],
+     [
+      5,
+      5,
+      1
+     ],
+     [
+      5,
+      5,
+      2
+     ],
+     [
+      5,
+      5,
+      4
+     ],
+     [
+      5,
+      5,
+      5
+     ]
+    ],
+    "not_pd": 196,
+    "pd": 20,
+    "sites": 216
+   },
+   "L7": {
+    "certified": 103,
+    "certified_sites": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      0,
+      2
+     ],
+     [
+      0,
+      0,
+      6
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      0,
+      1,
+      2
+     ],
+     [
+      0,
+      1,
+      3
+     ],
+     [
+      0,
+      2,
+      0
+     ],
+     [
+      0,
+      2,
+      1
+     ],
+     [
+      0,
+      2,
+      2
+     ],
+     [
+      0,
+      3,
+      1
+     ],
+     [
+      0,
+      3,
+      6
+     ],
+     [
+      0,
+      6,
+      0
+     ],
+     [
+      0,
+      6,
+      3
+     ],
+     [
+      0,
+      6,
+      6
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      0,
+      2
+     ],
+     [
+      1,
+      0,
+      3
+     ],
+     [
+      1,
+      1,
+      0
+     ],
+     [
+      1,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      2
+     ],
+     [
+      1,
+      1,
+      3
+     ],
+     [
+      1,
+      1,
+      4
+     ],
+     [
+      1,
+      2,
+      0
+     ],
+     [
+      1,
+      2,
+      1
+     ],
+     [
+      1,
+      2,
+      2
+     ],
+     [
+      1,
+      3,
+      0
+     ],
+     [
+      1,
+      3,
+      1
+     ],
+     [
+      1,
+      4,
+      1
+     ],
+     [
+      2,
+      0,
+      0
+     ],
+     [
+      2,
+      0,
+      1
+     ],
+     [
+      2,
+      0,
+      2
+     ],
+     [
+      2,
+      1,
+      0
+     ],
+     [
+      2,
+      1,
+      1
+     ],
+     [
+      2,
+      1,
+      2
+     ],
+     [
+      2,
+      2,
+      0
+     ],
+     [
+      2,
+      2,
+      1
+     ],
+     [
+      2,
+      2,
+      2
+     ],
+     [
+      2,
+      2,
+      3
+     ],
+     [
+      2,
+      2,
+      4
+     ],
+     [
+      2,
+      3,
+      2
+     ],
+     [
+      2,
+      4,
+      2
+     ],
+     [
+      2,
+      4,
+      4
+     ],
+     [
+      2,
+      5,
+      5
+     ],
+     [
+      3,
+      0,
+      1
+     ],
+     [
+      3,
+      0,
+      6
+     ],
+     [
+      3,
+      1,
+      0
+     ],
+     [
+      3,
+      1,
+      1
+     ],
+     [
+      3,
+      2,
+      2
+     ],
+     [
+      3,
+      3,
+      3
+     ],
+     [
+      3,
+      4,
+      4
+     ],
+     [
+      3,
+      5,
+      5
+     ],
+     [
+      3,
+      5,
+      6
+     ],
+     [
+      3,
+      6,
+      0
+     ],
+     [
+      3,
+      6,
+      5
+     ],
+     [
+      4,
+      1,
+      1
+     ],
+     [
+      4,
+      2,
+      2
+     ],
+     [
+      4,
+      2,
+      4
+     ],
+     [
+      4,
+      3,
+      4
+     ],
+     [
+      4,
+      4,
+      2
+     ],
+     [
+      4,
+      4,
+      3
+     ],
+     [
+      4,
+      4,
+      4
+     ],
+     [
+      4,
+      4,
+      5
+     ],
+     [
+      4,
+      4,
+      6
+     ],
+     [
+      4,
+      5,
+      4
+     ],
+     [
+      4,
+      5,
+      5
+     ],
+     [
+      4,
+      5,
+      6
+     ],
+     [
+      4,
+      6,
+      4
+     ],
+     [
+      4,
+      6,
+      5
+     ],
+     [
+      4,
+      6,
+      6
+     ],
+     [
+      5,
+      2,
+      5
+     ],
+     [
+      5,
+      3,
+      5
+     ],
+     [
+      5,
+      3,
+      6
+     ],
+     [
+      5,
+      4,
+      4
+     ],
+     [
+      5,
+      4,
+      5
+     ],
+     [
+      5,
+      4,
+      6
+     ],
+     [
+      5,
+      5,
+      2
+     ],
+     [
+      5,
+      5,
+      3
+     ],
+     [
+      5,
+      5,
+      4
+     ],
+     [
+      5,
+      5,
+      5
+     ],
+     [
+      5,
+      5,
+      6
+     ],
+     [
+      5,
+      6,
+      3
+     ],
+     [
+      5,
+      6,
+      4
+     ],
+     [
+      5,
+      6,
+      5
+     ],
+     [
+      5,
+      6,
+      6
+     ],
+     [
+      6,
+      0,
+      0
+     ],
+     [
+      6,
+      0,
+      3
+     ],
+     [
+      6,
+      0,
+      6
+     ],
+     [
+      6,
+      3,
+      0
+     ],
+     [
+      6,
+      3,
+      5
+     ],
+     [
+      6,
+      4,
+      4
+     ],
+     [
+      6,
+      4,
+      5
+     ],
+     [
+      6,
+      4,
+      6
+     ],
+     [
+      6,
+      5,
+      3
+     ],
+     [
+      6,
+      5,
+      4
+     ],
+     [
+      6,
+      5,
+      5
+     ],
+     [
+      6,
+      5,
+      6
+     ],
+     [
+      6,
+      6,
+      0
+     ],
+     [
+      6,
+      6,
+      4
+     ],
+     [
+      6,
+      6,
+      5
+     ],
+     [
+      6,
+      6,
+      6
+     ]
+    ],
+    "drive_site": [
+     5,
+     5,
+     3
+    ],
+    "non_pd_sites": [
+     [
+      0,
+      0,
+      4
+     ],
+     [
+      0,
+      1,
+      5
+     ],
+     [
+      0,
+      3,
+      3
+     ],
+     [
+      0,
+      3,
+      4
+     ],
+     [
+      0,
+      4,
+      0
+     ],
+     [
+      0,
+      4,
+      3
+     ],
+     [
+      0,
+      4,
+      5
+     ],
+     [
+      0,
+      5,
+      1
+     ],
+     [
+      0,
+      5,
+      4
+     ],
+     [
+      1,
+      0,
+      5
+     ],
+     [
+      1,
+      2,
+      6
+     ],
+     [
+      1,
+      3,
+      3
+     ],
+     [
+      1,
+      3,
+      4
+     ],
+     [
+      1,
+      4,
+      3
+     ],
+     [
+      1,
+      5,
+      0
+     ],
+     [
+      1,
+      5,
+      6
+     ],
+     [
+      1,
+      6,
+      2
+     ],
+     [
+      1,
+      6,
+      5
+     ],
+     [
+      2,
+      1,
+      6
+     ],
+     [
+      2,
+      3,
+      5
+     ],
+     [
+      2,
+      3,
+      6
+     ],
+     [
+      2,
+      5,
+      3
+     ],
+     [
+      2,
+      6,
+      1
+     ],
+     [
+      2,
+      6,
+      3
+     ],
+     [
+      2,
+      6,
+      6
+     ],
+     [
+      3,
+      0,
+      3
+     ],
+     [
+      3,
+      0,
+      4
+     ],
+     [
+      3,
+      1,
+      3
+     ],
+     [
+      3,
+      1,
+      4
+     ],
+     [
+      3,
+      2,
+      5
+     ],
+     [
+      3,
+      2,
+      6
+     ],
+     [
+      3,
+      3,
+      0
+     ],
+     [
+      3,
+      3,
+      1
+     ],
+     [
+      3,
+      3,
+      5
+     ],
+     [
+      3,
+      3,
+      6
+     ],
+     [
+      3,
+      4,
+      0
+     ],
+     [
+      3,
+      4,
+      1
+     ],
+     [
+      3,
+      5,
+      2
+     ],
+     [
+      3,
+      5,
+      3
+     ],
+     [
+      3,
+      6,
+      2
+     ],
+     [
+      3,
+      6,
+      3
+     ],
+     [
+      4,
+      0,
+      0
+     ],
+     [
+      4,
+      0,
+      3
+     ],
+     [
+      4,
+      0,
+      5
+     ],
+     [
+      4,
+      1,
+      3
+     ],
+     [
+      4,
+      3,
+      0
+     ],
+     [
+      4,
+      3,
+      1
+     ],
+     [
+      4,
+      5,
+      0
+     ],
+     [
+      5,
+      0,
+      1
+     ],
+     [
+      5,
+      0,
+      4
+     ],
+     [
+      5,
+      1,
+      0
+     ],
+     [
+      5,
+      1,
+      6
+     ],
+     [
+      5,
+      2,
+      3
+     ],
+     [
+      5,
+      3,
+      2
+     ],
+     [
+      5,
+      3,
+      3
+     ],
+     [
+      5,
+      4,
+      0
+     ],
+     [
+      5,
+      6,
+      1
+     ],
+     [
+      6,
+      1,
+      2
+     ],
+     [
+      6,
+      1,
+      5
+     ],
+     [
+      6,
+      2,
+      1
+     ],
+     [
+      6,
+      2,
+      3
+     ],
+     [
+      6,
+      2,
+      6
+     ],
+     [
+      6,
+      3,
+      2
+     ],
+     [
+      6,
+      3,
+      3
+     ],
+     [
+      6,
+      5,
+      1
+     ],
+     [
+      6,
+      6,
+      2
+     ]
+    ],
+    "not_pd": 66,
+    "pd": 277,
+    "sites": 343
+   }
+  }
+ },
+ "conditional_rows_not_counted": 7,
+ "construction": {
+  "K_trace_form": "K_tr(s) = sum_i [D_i^open e]_(ii)(s) (declared reading)",
+  "T_ACT": 1.0,
+  "boundary_clamp": "only simplices/triangles whose spatial vertices lie in [0,L-1]^3",
+  "end_to_end_action_size": 3,
+  "eta": 1.0,
+  "kappa_grid": [
+   0.5,
+   1.0,
+   2.0
+  ],
+  "kappa_main": 1.0,
+  "metric_fit": "least squares on the incident-edge lengths per site, 7 classes vs 6 metric components; boundary sites take the minimum-norm solution",
+  "modulus": 17,
+  "n_spatial_classes": 7,
+  "ray_weight": 3,
+  "response_amplitude": 1.0,
+  "sector_regularization": "absolute eigenvalue cut |lambda| < NULL_TOL, reported",
+  "seed": 20260723,
+  "sigma_grid": [
+   -1,
+   1
+  ],
+  "sigma_main": 1,
+  "source_scale": 0.17,
+  "spatial_edge_classes": [
+   [
+    0,
+    0,
+    1,
+    0
+   ],
+   [
+    0,
+    1,
+    0,
+    0
+   ],
+   [
+    0,
+    1,
+    1,
+    0
+   ],
+   [
+    1,
+    0,
+    0,
+    0
+   ],
+   [
+    1,
+    0,
+    1,
+    0
+   ],
+   [
+    1,
+    1,
+    0,
+    0
+   ],
+   [
+    1,
+    1,
+    1,
+    0
+   ]
+  ],
+  "tick_identification": "periodic (the landed 3+1 module's structure); OPEN means the three SPATIAL directions",
+  "tick_length": 2
+ },
+ "covariance_ceiling": {
+  "computed_in_run": {
+   "kuhn_cube_stabilizer": [
+    1,
+    4,
+    9,
+    15,
+    18,
+    23
+   ],
+   "kuhn_cube_stabilizer_order": 6,
+   "kuhn_unit_cube_tetrahedra": 6,
+   "oriented_dirset_stabilizer": [
+    15,
+    18,
+    23
+   ],
+   "path_complex_stabilizer": [
+    15,
+    18,
+    23
+   ],
+   "signed_dirset_stabilizer": [
+    1,
+    4,
+    9,
+    15,
+    18,
+    23
+   ]
+  },
+  "note": "docs/PHYSICAL_PROPER_CUBIC_COVARIANCE_CEILING_CYCLE690_NOTE_2026-07-24.md",
+  "note_sha256_pinned": "1e9b9fbea468c3d269e3edc2363423bf7d5e798bda0ff21fd8e887b3fcc3ac21",
+  "preregistered": {
+   "all24_invariant_triangulation_exists": false,
+   "kuhn_order": 6,
+   "max_order": 12,
+   "oriented_dirset_order": 3
+  },
+  "restatement": "success-gate item (7) as literally written ('all-24/576 through every stage') is unreachable BY CONSTRUCTION on this complex; the gate is restated against the ACHIEVABLE scope (the measured well-posed frame set, order 6), with the landed theorem cited, re-hashed, clause-matched and independently re-derived in-run.  This is a principled rescope justified by a landed theorem, NOT goalpost-moving: the full 24-frame accounting is still reported with a computed witness for every unreachable frame, and the product closure past C1 is executed over the COMPLETE product set of the achievable scope.",
+  "runner": "scripts/physical_proper_cubic_covariance_ceiling_cycle690_2026_07_24.py",
+  "runner_sha256_pinned": "9abedad0cabef3ff7dde0f012968e27163f82353602b307aaf8a96304be982fa"
+ },
+ "covariance_scope": {
+  "computed_stabilizer": [
+   15,
+   18,
+   23
+  ],
+  "frames_total": 24,
+  "stabilizer_order": 3
+ },
+ "cycle_claim": null,
+ "date": "2026-07-23",
+ "declared_divergences": {
+  "L6_anchor_carry": {
+   "6": {
+    "anchor_carry_endpoint_defect": 6.29234098853404e-10,
+    "anchor_carry_endpoint_defect_cert": Infinity,
+    "anchor_carry_frame": 1,
+    "anchor_carry_in_covariance_scope": true,
+    "anchor_carry_moving_frames": 21,
+    "anchor_carry_new_anchor": [
+     3,
+     3,
+     3
+    ],
+    "anchor_carry_rho_defect": 0.0
+   }
+  },
+  "clip_quarantine_finding": "at the spec-literal constants the linear response drives edge lengths negative, so I + h is not positive definite at some sites and the principal symmetric square root does not exist there.  The coframe PD row FAILS (nothing is rescaled to buy a pass); the PD and certified sub-domains are computed and enumerated; every row that consumes the clipped coframe is emitted as CONDITIONAL_ON_CLIP and excluded from the PASS/FAIL tally; and the same physics is gated on the certified sub-domain object, which is built only from a coframe that exists.",
+  "computed_kuhn_cube_stabilizer": [
+   1,
+   4,
+   9,
+   15,
+   18,
+   23
+  ],
+  "computed_kuhn_cube_stabilizer_order": 6,
+  "computed_signed_dirset_stabilizer": [
+   1,
+   4,
+   9,
+   15,
+   18,
+   23
+  ],
+  "computed_stabilizer_frame_indices": [
+   15,
+   18,
+   23
+  ],
+  "computed_stabilizer_order": 3,
+  "frames_total": 24,
+  "headline": "success-gate item (7) 'all-24/576 decorated covariance through every stage' is UNREACHABLE BY CONSTRUCTION on the landed 3+1 cubic-Coxeter complex, and that is now RESOLVED SCIENCE rather than a shortfall: the landed Cycle-690 no-go proves it.  The gate is restated against the ACHIEVABLE scope",
+  "ill_posed_frames": {
+   "3": [
+    {
+     "frame": 0,
+     "image": [
+      0,
+      -1,
+      1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 2,
+     "image": [
+      -1,
+      1,
+      0
+     ],
+     "spatial_class": [
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "frame": 3,
+     "image": [
+      0,
+      1,
+      -1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 5,
+     "image": [
+      0,
+      -1,
+      1
+     ],
+     "spatial_class": [
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "frame": 6,
+     "image": [
+      -1,
+      1,
+      0
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 7,
+     "image": [
+      -1,
+      0,
+      1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 8,
+     "image": [
+      -1,
+      0,
+      1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 10,
+     "image": [
+      -1,
+      1,
+      0
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 11,
+     "image": [
+      -1,
+      1,
+      0
+     ],
+     "spatial_class": [
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "frame": 12,
+     "image": [
+      1,
+      0,
+      -1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 13,
+     "image": [
+      1,
+      -1,
+      0
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 14,
+     "image": [
+      1,
+      0,
+      -1
+     ],
+     "spatial_class": [
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "frame": 16,
+     "image": [
+      0,
+      -1,
+      1
+     ],
+     "spatial_class": [
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "frame": 17,
+     "image": [
+      1,
+      -1,
+      0
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 19,
+     "image": [
+      1,
+      0,
+      -1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 20,
+     "image": [
+      1,
+      0,
+      -1
+     ],
+     "spatial_class": [
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "frame": 21,
+     "image": [
+      0,
+      -1,
+      1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 22,
+     "image": [
+      0,
+      1,
+      -1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    }
+   ],
+   "6": [
+    {
+     "frame": 0,
+     "image": [
+      0,
+      -1,
+      1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 2,
+     "image": [
+      -1,
+      1,
+      0
+     ],
+     "spatial_class": [
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "frame": 3,
+     "image": [
+      0,
+      1,
+      -1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 5,
+     "image": [
+      0,
+      -1,
+      1
+     ],
+     "spatial_class": [
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "frame": 6,
+     "image": [
+      -1,
+      1,
+      0
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 7,
+     "image": [
+      -1,
+      0,
+      1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 8,
+     "image": [
+      -1,
+      0,
+      1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 10,
+     "image": [
+      -1,
+      1,
+      0
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 11,
+     "image": [
+      -1,
+      1,
+      0
+     ],
+     "spatial_class": [
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "frame": 12,
+     "image": [
+      1,
+      0,
+      -1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 13,
+     "image": [
+      1,
+      -1,
+      0
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 14,
+     "image": [
+      1,
+      0,
+      -1
+     ],
+     "spatial_class": [
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "frame": 16,
+     "image": [
+      0,
+      -1,
+      1
+     ],
+     "spatial_class": [
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "frame": 17,
+     "image": [
+      1,
+      -1,
+      0
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 19,
+     "image": [
+      1,
+      0,
+      -1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 20,
+     "image": [
+      1,
+      0,
+      -1
+     ],
+     "spatial_class": [
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "frame": 21,
+     "image": [
+      0,
+      -1,
+      1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 22,
+     "image": [
+      0,
+      1,
+      -1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    }
+   ],
+   "7": [
+    {
+     "frame": 0,
+     "image": [
+      0,
+      -1,
+      1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 2,
+     "image": [
+      -1,
+      1,
+      0
+     ],
+     "spatial_class": [
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "frame": 3,
+     "image": [
+      0,
+      1,
+      -1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 5,
+     "image": [
+      0,
+      -1,
+      1
+     ],
+     "spatial_class": [
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "frame": 6,
+     "image": [
+      -1,
+      1,
+      0
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 7,
+     "image": [
+      -1,
+      0,
+      1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 8,
+     "image": [
+      -1,
+      0,
+      1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 10,
+     "image": [
+      -1,
+      1,
+      0
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 11,
+     "image": [
+      -1,
+      1,
+      0
+     ],
+     "spatial_class": [
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "frame": 12,
+     "image": [
+      1,
+      0,
+      -1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 13,
+     "image": [
+      1,
+      -1,
+      0
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 14,
+     "image": [
+      1,
+      0,
+      -1
+     ],
+     "spatial_class": [
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "frame": 16,
+     "image": [
+      0,
+      -1,
+      1
+     ],
+     "spatial_class": [
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "frame": 17,
+     "image": [
+      1,
+      -1,
+      0
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 19,
+     "image": [
+      1,
+      0,
+      -1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 20,
+     "image": [
+      1,
+      0,
+      -1
+     ],
+     "spatial_class": [
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "frame": 21,
+     "image": [
+      0,
+      -1,
+      1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 22,
+     "image": [
+      0,
+      1,
+      -1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    }
+   ]
+  },
+  "landed_ceiling_max_order": 12,
+  "measured_scope": {
+   "3": [
+    {
+     "K": 8.555742225802021e-11,
+     "K_cert": 5.909273070869858e-12,
+     "K_parity": -1,
+     "Q": 1.2434497875801753e-10,
+     "b": 1.687538997430238e-14,
+     "b_anchor_variant": 5.340639267988962,
+     "eps": 8.105738302788268e-11,
+     "frame": 1,
+     "p": 1.4875600751196316e-13,
+     "p_cert": 5.911417189086166e-14
+    },
+    {
+     "K": 8.555742225802021e-11,
+     "K_cert": 5.908162847845233e-12,
+     "K_parity": -1,
+     "Q": 1.2434497875801753e-10,
+     "b": 1.687538997430238e-14,
+     "b_anchor_variant": 5.340639267988962,
+     "eps": 8.1059381429327e-11,
+     "frame": 4,
+     "p": 1.4693107841523556e-13,
+     "p_cert": 5.911417189086166e-14
+    },
+    {
+     "K": 8.555742225802021e-11,
+     "K_cert": 5.908384892450158e-12,
+     "K_parity": -1,
+     "Q": 1.2434497875801753e-10,
+     "b": 1.687538997430238e-14,
+     "b_anchor_variant": 5.340639267988962,
+     "eps": 8.106093574156148e-11,
+     "frame": 9,
+     "p": 1.5287077159698015e-13,
+     "p_cert": 5.911417189086166e-14
+    },
+    {
+     "K": 1.2989609388114332e-14,
+     "K_cert": 3.552713678800501e-15,
+     "K_parity": 1,
+     "Q": 7.105427357601002e-15,
+     "b": 3.774758283725532e-15,
+     "b_anchor_variant": 1.7763568394002505e-15,
+     "eps": 1.2323475573339238e-14,
+     "frame": 15,
+     "p": 3.608224830031759e-16,
+     "p_cert": 0.0
+    },
+    {
+     "K": 1.2989609388114332e-14,
+     "K_cert": 3.552713678800501e-15,
+     "K_parity": 1,
+     "Q": 7.105427357601002e-15,
+     "b": 3.774758283725532e-15,
+     "b_anchor_variant": 1.7763568394002505e-15,
+     "eps": 1.2323475573339238e-14,
+     "frame": 18,
+     "p": 1.0408340855860843e-16,
+     "p_cert": 0.0
+    },
+    {
+     "K": 0.0,
+     "K_cert": 0.0,
+     "K_parity": 1,
+     "Q": 0.0,
+     "b": 0.0,
+     "b_anchor_variant": 0.0,
+     "eps": 0.0,
+     "frame": 23,
+     "p": 0.0,
+     "p_cert": 0.0
+    }
+   ],
+   "6": [
+    {
+     "K": 1.645744163170093e-08,
+     "K_cert": 0.0,
+     "K_parity": -1,
+     "Q": 1.2434497875801753e-10,
+     "b": 1.1102230246251565e-14,
+     "b_anchor_variant": 3.7299913344822393,
+     "eps": 1.5098926553491765e-08,
+     "frame": 1,
+     "p": 6.29234098853404e-10,
+     "p_cert": NaN
+    },
+    {
+     "K": 1.645744163170093e-08,
+     "K_cert": 0.0,
+     "K_parity": -1,
+     "Q": 1.2434497875801753e-10,
+     "b": 1.1102230246251565e-14,
+     "b_anchor_variant": 3.7299913344822393,
+     "eps": 1.5099079320179953e-08,
+     "frame": 4,
+     "p": 6.292953623476816e-10,
+     "p_cert": NaN
+    },
+    {
+     "K": 1.645744163170093e-08,
+     "K_cert": 0.0,
+     "K_parity": -1,
+     "Q": 1.2434497875801753e-10,
+     "b": 1.1102230246251565e-14,
+     "b_anchor_variant": 3.7299913344822393,
+     "eps": 1.509911484731674e-08,
+     "frame": 9,
+     "p": 6.296013051187987e-10,
+     "p_cert": NaN
+    },
+    {
+     "K": 1.4130030479009292e-11,
+     "K_cert": 0.0,
+     "K_parity": 1,
+     "Q": 7.105427357601002e-15,
+     "b": 3.1086244689504383e-15,
+     "b_anchor_variant": 8.881784197001252e-16,
+     "eps": 1.1938006139189383e-11,
+     "frame": 15,
+     "p": 1.290287321431549e-13,
+     "p_cert": NaN
+    },
+    {
+     "K": 1.4130030479009292e-11,
+     "K_cert": 0.0,
+     "K_parity": 1,
+     "Q": 7.105427357601002e-15,
+     "b": 3.1086244689504383e-15,
+     "b_anchor_variant": 8.881784197001252e-16,
+     "eps": 1.1938006139189383e-11,
+     "frame": 18,
+     "p": 4.14591971864553e-13,
+     "p_cert": NaN
+    },
+    {
+     "K": 0.0,
+     "K_cert": 0.0,
+     "K_parity": 1,
+     "Q": 0.0,
+     "b": 0.0,
+     "b_anchor_variant": 0.0,
+     "eps": 0.0,
+     "frame": 23,
+     "p": 0.0,
+     "p_cert": NaN
+    }
+   ],
+   "7": [
+    {
+     "K": 8.143553054118513e-10,
+     "K_cert": 8.143553054118513e-10,
+     "K_parity": -1,
+     "Q": 1.2434497875801753e-10,
+     "b": 1.1102230246251565e-14,
+     "b_anchor_variant": 3.7299913344822393,
+     "eps": 8.542147544865486e-10,
+     "frame": 1,
+     "p": 3.68499588482285e-12,
+     "p_cert": 2.6264135311038217e-10
+    },
+    {
+     "K": 8.143553054118513e-10,
+     "K_cert": 8.143553054118513e-10,
+     "K_parity": -1,
+     "Q": 1.2434497875801753e-10,
+     "b": 1.1102230246251565e-14,
+     "b_anchor_variant": 3.7299913344822393,
+     "eps": 8.542147544865486e-10,
+     "frame": 4,
+     "p": 3.682343926308951e-12,
+     "p_cert": 2.623841144355765e-10
+    },
+    {
+     "K": 8.143553054118513e-10,
+     "K_cert": 8.143553054118513e-10,
+     "K_parity": -1,
+     "Q": 1.2434497875801753e-10,
+     "b": 1.1102230246251565e-14,
+     "b_anchor_variant": 3.7299913344822393,
+     "eps": 8.542147544865486e-10,
+     "frame": 9,
+     "p": 3.690194851080353e-12,
+     "p_cert": 2.6246921303041404e-10
+    },
+    {
+     "K": 7.326916851013721e-13,
+     "K_cert": 6.480371794737039e-13,
+     "K_parity": 1,
+     "Q": 7.105427357601002e-15,
+     "b": 3.1086244689504383e-15,
+     "b_anchor_variant": 8.881784197001252e-16,
+     "eps": 5.11528319702137e-13,
+     "frame": 15,
+     "p": 1.4870483316942185e-14,
+     "p_cert": 8.723577415992168e-14
+    },
+    {
+     "K": 7.326916851013721e-13,
+     "K_cert": 6.480371794737039e-13,
+     "K_parity": 1,
+     "Q": 7.105427357601002e-15,
+     "b": 3.1086244689504383e-15,
+     "b_anchor_variant": 8.881784197001252e-16,
+     "eps": 5.11528319702137e-13,
+     "frame": 18,
+     "p": 7.095452697614135e-15,
+     "p_cert": 1.7866264023780332e-13
+    },
+    {
+     "K": 0.0,
+     "K_cert": 0.0,
+     "K_parity": 1,
+     "Q": 0.0,
+     "b": 0.0,
+     "b_anchor_variant": 0.0,
+     "eps": 0.0,
+     "frame": 23,
+     "p": 0.0,
+     "p_cert": 0.0
+    }
+   ]
+  },
+  "product_closure_past_c1": "the draft closed 576 products at C1 and ZERO past it.  All |scope|^2 = 36 products of the achievable scope are now executed past C1: group closure, exact-integer homomorphism of the induced site and variable permutations, exact-integer multiplicativity of the derived K parity, and the two-step transported source row, response, certified K field and certified endpoint probability.  The 540 products not executed each have a factor outside the achievable scope, where the downstream action does not exist at all",
+  "reason": "The landed complex is a Kuhn/path triangulation built from the 0/1 direction set only.  Of the 24 proper cubic frames, exactly the signed permutations +P and -P carry that direction set into itself; the remaining 18 carry a spatial edge class OUT of the direction set entirely (computed witness reported per frame), so for them decorated covariance of any edge-length object is ILL POSED, not violated.  The runner MEASURES the scope instead of assuming it: it reports the frames that stabilize the path-simplex set (frame_preserves_complex), the frames that act on the static edge-class variables, and the covariance defect of every stage on that scope.  The F17 domain and the F17-to-source transform DO carry the full 24/576 decorated action exactly (their rows are unrestricted).  The Regge / coframe / K / endpoint stages carry the achievable scope only.  Nothing is forced to a pass.",
+  "resolved_by_landed_theorem": {
+   "claim": "no triangulation of the cube on its eight vertices is invariant under all 24 proper cubic rotations; the attainable ceiling is exactly 12 (five-tetrahedron, forcing a chirality choice); the Kuhn/Freudenthal complex this runner inherits attains exactly 6",
+   "how_this_runner_makes_the_citation_checkable": [
+    "the note and its runner are re-hashed against a pinned sha256",
+    "the note body must carry the load-bearing clauses verbatim",
+    "the Kuhn unit-cube decomposition is reconstructed IN-RUN from its definition and its cube-centred proper-rotation stabilizer is computed to be 6, the order the note records",
+    "the oriented and the up-to-global-sign direction-set stabilizers are computed separately (3 and 6) and checked against the note's two counts",
+    "the measured static-sector covariance scope is checked to be EXACTLY that order-6 stabilizer set, at every size"
+   ],
+   "note": "docs/PHYSICAL_PROPER_CUBIC_COVARIANCE_CEILING_CYCLE690_NOTE_2026-07-24.md",
+   "runner": "scripts/physical_proper_cubic_covariance_ceiling_cycle690_2026_07_24.py",
+   "why_this_is_not_goalpost_moving": "the rescope is bounded by a theorem that was proved independently of this work and landed before this runner cites it; the achievable scope is measured rather than chosen; the full 24-frame accounting is still reported with a computed witness for every unreachable frame; the C1 F17 rows still carry the unrestricted 24/576; and the product closure past C1 is executed over the COMPLETE product set of the achievable scope rather than skipped"
+  },
+  "second_finding": "the declared trace form K_tr = sum_i [D_i^open e]_(ii) is parity-ODD, not a scalar: under a negated-permutation frame the coframe diagonal permutes but every lattice derivative reverses, so K_tr -> -K_tr.  The covariance rows use that DERIVED factor; the endpoint probability, being even in K, is invariant either way.",
+  "stabilizer_frames": [
+   [
+    [
+     0,
+     0,
+     1
+    ],
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ]
+   ],
+   [
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     1
+    ],
+    [
+     1,
+     0,
+     0
+    ]
+   ],
+   [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     1
+    ]
+   ]
+  ],
+  "third_finding": "the per-triangle deficit-gradient row is localized BARYCENTRICALLY over the triangle's three vertices.  The min-vertex-anchored alternative breaks inversion covariance (its measured defect is reported alongside every covariance row), because the minimum vertex of a triangle is not carried to the minimum vertex of its image."
+ },
+ "fd_richardson": {
+  "extrapolation_gap": 4.122072905232699e-09,
+  "order_max": 1.9957025693849295,
+  "order_min": 1.9957025693849295,
+  "orders": [
+   1.9957025693849295,
+   1.9957025693849295,
+   1.9957025693849295,
+   1.9957025693849295,
+   1.9957025693849295,
+   1.9957025693849295,
+   1.9957025693849295,
+   1.9957025693849295
+  ],
+  "subset": [
+   0,
+   3,
+   5,
+   7,
+   13,
+   19,
+   20,
+   21
+  ]
+ },
+ "interpretation_firewall": [
+  "The certified object is a constructive open-real-space coframe derivative, an F17-to-Regge source transform, and a joined K-to-endpoint compiler on the declared open fixtures; K is not a rate, not a unique physical stress, not energy; the wrapped phase is not energy; the response is not gravity and not attraction language; there is no unique coupling normalization.",
+  "The c620 periodic Bloch K is a different object, pinned as context only and deliberately not reproduced; no open-to-periodic equivalence is claimed; no periodic Bloch data enters the executed path (the landed bloch_Q appears only in the anchor row).",
+  "No sign, scale or regulator selection: the full sigma and kappa grid survives; no 3/4 DELAY association, no PR5557 harness compilation, no 5/4 ADVANCE count-edit driving.",
+  "The Regge gauge and null sector is reported, not resolved; no positivity and no stability claim about the Regge second variation is made.",
+  "The lift, boundary clamp, tick declaration, sector regularization, metric fit, coframe square root and finite-difference stencils are declared supplied structure; no new axiom, primitive, or premise class.",
+  "The decorated covariance gate is stated against the achievable scope, which is bounded by the landed Cycle 690 proper-cubic covariance ceiling: no eight-vertex unit-cube triangulation is invariant under all 24 proper cubic rotations, the ceiling is 12, and the Kuhn complex used here attains 6.  No covariance beyond that scope is claimed, and the frames outside it are ill posed rather than violated.  A stabilizer is not a symmetry of a physical law and a lattice chirality is not parity violation.",
+  "Rows evaluated on the clipped coframe are conditional on clip and are not gates: at the spec-literal constants the coframe does not exist at every site, and nothing downstream of it is certified except on the computed certified sub-domain."
+ ],
+ "inventory": {
+  "derived": [
+   "the decorated F17 open domain invariants (divergence one at the anchor, zero at every other interior site, port total one, 24-orbit, 576 closure) as computed rows",
+   "the executed local lawful F17-to-source transform with exact covariance, exact flux-off null and exact locality",
+   "the OPEN real-space static Regge second variation assembled from the landed local primitives, matched to the landed bloch_Q under Fourier transform on the periodic variant and to the ACTUAL open action by end-to-end second difference",
+   "the site-local coframe field and the OPEN finite-difference K with a firing wrapped-variant falsifier and exact deep-interior locality",
+   "the full unitary K-to-endpoint compiler, its support-two Givens lowering with exact recomposition, zero measured one-excitation leakage and a vacuum-zero",
+   "the end-to-end join: one F17 link edit moves every downstream stage and the exact inverse 16-SWAP word restores every stage",
+   "the COMPUTED decorated-covariance scope of the landed complex"
+  ],
+  "open": [
+   "sign and scale selection (the full sigma/kappa grid survives; eta, T_ACT, SRC_SCALE and the response amplitude are declared, not derived)",
+   "any gravity / stress / energy / rate identification (explicitly NOT claimed)",
+   "the Regge gauge and null sector (reported, not resolved) and any positivity or stability statement about the second variation",
+   "the intrinsic boundary gradient of the clamped open complex (reported, not solved)",
+   "all-24 decorated covariance of the Regge/coframe/K/endpoint stages: the landed Cycle-690 no-go proves it is unattainable for ANY eight-vertex unit-cube triangulation, the ceiling is 12, and this complex attains 6; the gate is stated against that achievable scope and NOT claimed beyond it",
+   "the physical coframe and everything downstream of it AT THE SPEC-LITERAL CONSTANTS: I + h is not positive definite everywhere, so those rows are emitted conditional on the clip and are NOT certified; only the certified sub-domain object carries gates",
+   "continuum, nonlinear and strong-field extensions; endogenous source law"
+  ],
+  "supplied": [
+   "the landed 3+1 cubic-Coxeter path complex and its THETA/AREA/PAIRS5/DIRS15/cell_simplices/edge_class/TRI_CLASSES/STARS primitives (imported, re-hashed)",
+   "the landed bloch_Q, used ONLY as the periodic anchor comparator (never in the executed path)",
+   "c576's 24 proper cubic frames and the SOURCE_COUPLING scale",
+   "the decorated F17 open domain: anchor, six axial rays of weight 3, ports, unary-17 registers",
+   "the centred lift Z17 -> Z, the open boundary clamp, the LT=2 tick declaration",
+   "the static spatial sector (7 spatial edge classes, constant along the tick, temporal classes frozen flat)",
+   "the declared sector regularization (absolute eigenvalue cut), least-squares metric fit, principal coframe square root, open/one-sided FD stencils",
+   "eta, T_ACT, the sigma and kappa grids, SRC_SCALE, the response amplitude and the frozen tolerance table"
+  ]
+ },
+ "observed_sha256": {
+  "c576_note": "5822c14b74de606d302beb637e03dd0a30968e6a7bf120723eb3da16e09e6768",
+  "c576_receipt": "e270f8a9900c18857815c4887ee09d4368289ecb0c051b2a5916ab1290c3abb3",
+  "c576_script": "8b82a5129eb098c9f67382340b41d9e931acdeb25991e3f784abd705a91e651b",
+  "ceiling_note": "1e9b9fbea468c3d269e3edc2363423bf7d5e798bda0ff21fd8e887b3fcc3ac21",
+  "ceiling_runner": "9abedad0cabef3ff7dde0f012968e27163f82353602b307aaf8a96304be982fa",
+  "regge_script": "537371554e1a5244875645ca600f5f01e0ccfae64530572630d934e8ea0a85ce"
+ },
+ "pass": false,
+ "pins": {
+  "c576_note": "5822c14b74de606d302beb637e03dd0a30968e6a7bf120723eb3da16e09e6768",
+  "c576_receipt": "e270f8a9900c18857815c4887ee09d4368289ecb0c051b2a5916ab1290c3abb3",
+  "c576_script": "8b82a5129eb098c9f67382340b41d9e931acdeb25991e3f784abd705a91e651b",
+  "c615_note": "58ceb8fcd82a808535ea2c7cc67084eec159255d4c38c368bbc2fa67b4c90a3f",
+  "c615_runner": "e9649a3193590a0caeccb832d8738bbaa39ca3ca08a44131cd5cfe47a68f015e",
+  "c620_note": "0e9a4a827ee62d8122094109a09ecd1bd1c8a5b605ac1f8a8d1bc1c9a615cef0",
+  "c620_runner": "a79a8b8e5e21e9e9cb352867cd9e5f4ec63832a3f324978f54c43c4a0eafb08c",
+  "c626_note": "1346e9c5aec6206642e64059eeff0b49d59df33f8fe0584c7c8537d3e2760893",
+  "c626_receipt": "ab8489e9875e362d2b496b1f92464e6c5c642eb3cdb72b1755e77c4d70b752f6",
+  "c626_runner": "a775cb759ebd4a54ca4707dd99540256658d5f70315afbb6685058fd568911cf",
+  "campaign_head": "fb0ab5636e557d8de1da8e643f419867ae69197a",
+  "ceiling_note": "1e9b9fbea468c3d269e3edc2363423bf7d5e798bda0ff21fd8e887b3fcc3ac21",
+  "ceiling_runner": "9abedad0cabef3ff7dde0f012968e27163f82353602b307aaf8a96304be982fa",
+  "regge_script": "537371554e1a5244875645ca600f5f01e0ccfae64530572630d934e8ea0a85ce"
+ },
+ "preregistered_falsifiers": {
+  "F1a": "open and wrapped K coincide at the boundary (the open derivative is a vacuous relabelling) -> FAIL",
+  "F1b": "a coframe edit at one site moves K outside the DECLARED open stencil's reader set (the open derivative is not local) -> FAIL.  This replaces the draft's 'open and wrapped agree in the interior' half, which compared two identical expressions on the interior mask and could never fire",
+  "F2": "any nonzero downstream of a zero flux state -> FAIL",
+  "F3": "a stage fails to move under a link edit, or the inverse word fails to restore -> FAIL",
+  "F4": "recomposition / unitarity / inverse / leakage beyond tolerance -> FAIL",
+  "F5": "the periodic-assembly stencil fails to match the landed bloch_Q -> FAIL",
+  "F6": "a covariance row inside the ACHIEVABLE (theorem-bounded) scope beyond machine-tight -> FAIL; the measured scope is not the order the landed ceiling predicts -> FAIL; the achievable scope is not closed -> FAIL",
+  "F7": "any tolerance refit or reused with two meanings -> FAIL"
+ },
+ "resources": {
+  "elapsed_seconds": 4.877266165975016,
+  "peak_rss_mb": 1119.328125
+ },
+ "runner_role": "bounded drafting worker output; supervisor owns all verdicts",
+ "sizes": {
+  "L3": {
+   "K_absmax": 0.3584475229650872,
+   "K_at_anchor": -4.2778711129010105e-11,
+   "K_cert_absmax": 0.08503388243777588,
+   "L": 3,
+   "Q_dim": 98,
+   "Q_dim_naive_7L3": 189,
+   "Q_periodic_dim": 189,
+   "Q_symmetry_defect": 0.0,
+   "all_variables_touched": true,
+   "anchor": [
+    1,
+    1,
+    1
+   ],
+   "anchor_orbit": [
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor_orbit_size": 1,
+   "b_locality_far_defect": Infinity,
+   "b_locality_geometry_admits_test": false,
+   "b_locality_max_link_separation": 0,
+   "b_locality_moved": 1.235762584734469,
+   "b_locality_n_distant_vars": 0,
+   "b_locality_reason": "empty distant set: at L=3 the longest ray link reaches Chebyshev separation 0 from the anchor, so no static variable sits at separation >= 2 from both endpoints of any link; the falsifier has no test set at this size and the row fails closed rather than passing on nothing",
+   "b_norm": 17.068018614962792,
+   "b_null_component": 0.0,
+   "boundary_deletion_changed_sites": 2,
+   "boundary_deletion_port_total": 15,
+   "cert_givens_factor_census": {
+    "max_support": 2,
+    "n_factors": 8,
+    "n_support_two": 8
+   },
+   "cert_givens_factor_unitarity": 2.220446049250313e-16,
+   "cert_givens_offdiag_residue": 1.3877787807814457e-17,
+   "cert_givens_recomposition_defect": 1.3877787807814457e-17,
+   "cert_givens_swept_pairs": 1431,
+   "cert_inverse_defect": 2.220446049250313e-16,
+   "cert_kappa_min_separation": 0.0054067486820502785,
+   "cert_kappa_probabilities": {
+    "0.5": 0.0018066013050506392,
+    "1.0": 0.0072133499871009175,
+    "2.0": 0.028645270276258027
+   },
+   "cert_leakage": 0.0,
+   "cert_norm_drive": 1.0000000000000002,
+   "cert_p_drive": 0.0072133499871009175,
+   "cert_p_offsite": 0.0,
+   "cert_sigma_flips": true,
+   "cert_sigma_y_quadrature": {
+    "-1": -0.16924913670757094,
+    "1": 0.16924913670757094
+   },
+   "cert_unitarity_defect": 2.220446049250313e-16,
+   "certified_matches_stencil_closure": true,
+   "certified_sites": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     2
+    ],
+    [
+     0,
+     2,
+     0
+    ],
+    [
+     0,
+     2,
+     2
+    ],
+    [
+     2,
+     0,
+     0
+    ],
+    [
+     2,
+     0,
+     2
+    ],
+    [
+     2,
+     2,
+     0
+    ],
+    [
+     2,
+     2,
+     2
+    ]
+   ],
+   "clip_used": true,
+   "closure_failures_576": 0,
+   "coframe_pd_min": -0.07267785900168396,
+   "covariance_certified_nonvacuous": true,
+   "covariance_certified_ok": true,
+   "covariance_clean_ok": true,
+   "covariance_clipped_ok": true,
+   "covariance_defects": {
+    "K": 8.555742225802021e-11,
+    "K_cert": 5.909273070869858e-12,
+    "Q": 1.2434497875801753e-10,
+    "b": 1.687538997430238e-14,
+    "b_anchor_variant": 5.340639267988962,
+    "eps": 8.106093574156148e-11,
+    "p": 1.5287077159698015e-13,
+    "p_cert": 5.911417189086166e-14
+   },
+   "covariance_ill_posed": [
+    {
+     "frame": 0,
+     "image": [
+      0,
+      -1,
+      1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 2,
+     "image": [
+      -1,
+      1,
+      0
+     ],
+     "spatial_class": [
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "frame": 3,
+     "image": [
+      0,
+      1,
+      -1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 5,
+     "image": [
+      0,
+      -1,
+      1
+     ],
+     "spatial_class": [
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "frame": 6,
+     "image": [
+      -1,
+      1,
+      0
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 7,
+     "image": [
+      -1,
+      0,
+      1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 8,
+     "image": [
+      -1,
+      0,
+      1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 10,
+     "image": [
+      -1,
+      1,
+      0
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 11,
+     "image": [
+      -1,
+      1,
+      0
+     ],
+     "spatial_class": [
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "frame": 12,
+     "image": [
+      1,
+      0,
+      -1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 13,
+     "image": [
+      1,
+      -1,
+      0
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 14,
+     "image": [
+      1,
+      0,
+      -1
+     ],
+     "spatial_class": [
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "frame": 16,
+     "image": [
+      0,
+      -1,
+      1
+     ],
+     "spatial_class": [
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "frame": 17,
+     "image": [
+      1,
+      -1,
+      0
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 19,
+     "image": [
+      1,
+      0,
+      -1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 20,
+     "image": [
+      1,
+      0,
+      -1
+     ],
+     "spatial_class": [
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "frame": 21,
+     "image": [
+      0,
+      -1,
+      1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 22,
+     "image": [
+      0,
+      1,
+      -1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    }
+   ],
+   "covariance_products": {
+    "K": 8.555742225802021e-11,
+    "K_cert": 5.909273070869858e-12,
+    "b": 1.687538997430238e-14,
+    "closure_failures": 0,
+    "eps": 8.106093574156148e-11,
+    "escapes": [],
+    "n_products": 36,
+    "p": 1.5287077159698015e-13,
+    "p_cert": 5.911417189086166e-14,
+    "parity_hom_failures": 0,
+    "site_hom_failures": 0,
+    "var_hom_failures": 0
+   },
+   "covariance_products_certified_ok": true,
+   "covariance_products_clean_ok": true,
+   "covariance_products_clipped_ok": true,
+   "covariance_products_out_of_scope": 540,
+   "covariance_products_total_24": 576,
+   "covariance_relative_only_stages": [],
+   "covariance_scales": {
+    "K": 1.0,
+    "K_cert": 1.0,
+    "Q": 29.452136694480856,
+    "b": 4.872916063004967,
+    "eps": 1.5536772720022347
+   },
+   "covariance_scope": [
+    {
+     "K": 8.555742225802021e-11,
+     "K_cert": 5.909273070869858e-12,
+     "K_parity": -1,
+     "Q": 1.2434497875801753e-10,
+     "b": 1.687538997430238e-14,
+     "b_anchor_variant": 5.340639267988962,
+     "eps": 8.105738302788268e-11,
+     "frame": 1,
+     "p": 1.4875600751196316e-13,
+     "p_cert": 5.911417189086166e-14
+    },
+    {
+     "K": 8.555742225802021e-11,
+     "K_cert": 5.908162847845233e-12,
+     "K_parity": -1,
+     "Q": 1.2434497875801753e-10,
+     "b": 1.687538997430238e-14,
+     "b_anchor_variant": 5.340639267988962,
+     "eps": 8.1059381429327e-11,
+     "frame": 4,
+     "p": 1.4693107841523556e-13,
+     "p_cert": 5.911417189086166e-14
+    },
+    {
+     "K": 8.555742225802021e-11,
+     "K_cert": 5.908384892450158e-12,
+     "K_parity": -1,
+     "Q": 1.2434497875801753e-10,
+     "b": 1.687538997430238e-14,
+     "b_anchor_variant": 5.340639267988962,
+     "eps": 8.106093574156148e-11,
+     "frame": 9,
+     "p": 1.5287077159698015e-13,
+     "p_cert": 5.911417189086166e-14
+    },
+    {
+     "K": 1.2989609388114332e-14,
+     "K_cert": 3.552713678800501e-15,
+     "K_parity": 1,
+     "Q": 7.105427357601002e-15,
+     "b": 3.774758283725532e-15,
+     "b_anchor_variant": 1.7763568394002505e-15,
+     "eps": 1.2323475573339238e-14,
+     "frame": 15,
+     "p": 3.608224830031759e-16,
+     "p_cert": 0.0
+    },
+    {
+     "K": 1.2989609388114332e-14,
+     "K_cert": 3.552713678800501e-15,
+     "K_parity": 1,
+     "Q": 7.105427357601002e-15,
+     "b": 3.774758283725532e-15,
+     "b_anchor_variant": 1.7763568394002505e-15,
+     "eps": 1.2323475573339238e-14,
+     "frame": 18,
+     "p": 1.0408340855860843e-16,
+     "p_cert": 0.0
+    },
+    {
+     "K": 0.0,
+     "K_cert": 0.0,
+     "K_parity": 1,
+     "Q": 0.0,
+     "b": 0.0,
+     "b_anchor_variant": 0.0,
+     "eps": 0.0,
+     "frame": 23,
+     "p": 0.0,
+     "p_cert": 0.0
+    }
+   ],
+   "covariance_scope_contains_stabilizer": true,
+   "covariance_scope_equals_kuhn_stabilizer": true,
+   "covariance_scope_equals_signed_dirset": true,
+   "covariance_scope_frames": [
+    1,
+    4,
+    9,
+    15,
+    18,
+    23
+   ],
+   "covariance_scope_nonempty": true,
+   "covariance_scope_size": 6,
+   "covariance_scope_subgroup": {
+    "closed_under_composition": true,
+    "closed_under_inverse": true,
+    "frames_total": 24,
+    "identity_present": true,
+    "inverses_escaping": [],
+    "lagrange_divides": true,
+    "order": 6,
+    "products_checked": 36,
+    "products_escaping": [],
+    "proper": true
+   },
+   "deleted_U_cert_defect": 0.0,
+   "deleted_p": 0.0,
+   "deleted_vs_vacuum": 1.509929076399593e-31,
+   "div_anchor": 1,
+   "drive_site": [
+    2,
+    2,
+    2
+   ],
+   "drive_site_certified": true,
+   "e2e_action_flat": 1167.5627088978906,
+   "e2e_boundary_gradient": -9.12219688755636,
+   "e2e_fd2": -586.4600780114415,
+   "e2e_quadratic_form": -586.4599480909537,
+   "e2e_rel_gap": 2.2153343668654212e-07,
+   "edit_delta_K": 0.9551232476149378,
+   "edit_delta_K_cert": 0.14073017187173276,
+   "edit_delta_U": 0.816384923129311,
+   "edit_delta_U_cert": 0.14026610524859234,
+   "edit_delta_b": 1.235762584734469,
+   "edit_delta_e": 0.9357275805927326,
+   "edit_delta_eps": 0.8245183010634269,
+   "edit_delta_h": 1.313550544670711,
+   "edit_delta_p_cert": 0.010045321024879579,
+   "edit_delta_p_near": 0.04391850220914342,
+   "edit_delta_rho": 0.17000000000000004,
+   "edit_div_changed_sites": 2,
+   "edit_label_after": 4,
+   "edit_label_before": 3,
+   "edit_label_reverted": 3,
+   "edit_link": [
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     2,
+     1,
+     1
+    ]
+   ],
+   "edit_n_cert": 8,
+   "edit_register_exact": true,
+   "eig_max": 1.4634993194748391,
+   "eig_min": -63.3405952623559,
+   "endpoint_dim": 54,
+   "eps_absmax": 1.5536772720022347,
+   "fit_neq_min_interior": 7,
+   "fit_rank_min": 4,
+   "fit_rank_min_interior": 6,
+   "fit_residual_max": 0.45098553124382695,
+   "fit_residual_max_interior": 0.08113832809410654,
+   "flux_off_K_absmax": 7.771561172376096e-16,
+   "flux_off_b_absmax": 0.0,
+   "flux_off_clip_used": false,
+   "flux_off_coframe_defect": 2.6614158809512183e-16,
+   "flux_off_eps_absmax": 0.0,
+   "flux_off_h_absmax": 2.5376526277146454e-16,
+   "flux_off_n_sites_not_pd": 0,
+   "flux_off_rho_absmax": 0.0,
+   "gauss_table_matches": true,
+   "givens_cap": 1485,
+   "givens_factor_census": {
+    "max_support": 2,
+    "n_factors": 27,
+    "n_support_two": 27
+   },
+   "givens_factor_unitarity": 2.220446049250313e-16,
+   "givens_offdiag_residue": 5.551115123125783e-17,
+   "givens_recomposition_defect": 2.220446049250313e-16,
+   "givens_swept_pairs": 1431,
+   "h_absmax": 0.974895467972994,
+   "interior_nonzero_sites": [],
+   "inverse_defect": 2.220446049250313e-16,
+   "kappa_min_separation": 0.04076832793857849,
+   "kappa_probabilities": {
+    "0.5": 0.013845022164507094,
+    "1.0": 0.05461335010308559,
+    "2.0": 0.2065229283744136
+   },
+   "labels_lawful": true,
+   "leakage": 0.0,
+   "locality_link": [
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     0,
+     1,
+     1
+    ]
+   ],
+   "locality_link_separation": 0,
+   "min_perturbed_edge_length": -0.4422228405985891,
+   "n_deep_interior_sites": 1,
+   "n_links": 6,
+   "n_negative_eigs": 96,
+   "n_positive_eigs": 2,
+   "n_simplices_admitted": 384,
+   "n_sites": 27,
+   "n_sites_certified": 8,
+   "n_sites_not_pd": 6,
+   "n_sites_pd": 21,
+   "n_sites_rank_deficient": 12,
+   "n_triangles_admitted": 1112,
+   "near_word_certified": false,
+   "near_word_site": [
+    2,
+    1,
+    1
+   ],
+   "no_wrap_edges": true,
+   "non_pd_sites": [
+    [
+     0,
+     1,
+     1
+    ],
+    [
+     1,
+     0,
+     1
+    ],
+    [
+     1,
+     1,
+     0
+    ],
+    [
+     1,
+     1,
+     2
+    ],
+    [
+     1,
+     2,
+     1
+    ],
+    [
+     2,
+     1,
+     1
+    ]
+   ],
+   "norm_near": 0.9999999999999999,
+   "null_dim": 0,
+   "p_far": 0.007213349987100913,
+   "p_near": 0.05461335010308559,
+   "p_near_offsite": 0.0,
+   "pd_domain_accounting_ok": true,
+   "pd_sites": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     1
+    ],
+    [
+     0,
+     0,
+     2
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     2,
+     0
+    ],
+    [
+     0,
+     2,
+     1
+    ],
+    [
+     0,
+     2,
+     2
+    ],
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     0,
+     2
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     2,
+     0
+    ],
+    [
+     1,
+     2,
+     2
+    ],
+    [
+     2,
+     0,
+     0
+    ],
+    [
+     2,
+     0,
+     1
+    ],
+    [
+     2,
+     0,
+     2
+    ],
+    [
+     2,
+     1,
+     0
+    ],
+    [
+     2,
+     1,
+     2
+    ],
+    [
+     2,
+     2,
+     0
+    ],
+    [
+     2,
+     2,
+     1
+    ],
+    [
+     2,
+     2,
+     2
+    ]
+   ],
+   "periodic_anchor_defect": 7.000456303529745e-07,
+   "periodic_anchor_momenta": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     0
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     2,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "periodic_anchor_scale": 16.0,
+   "port_outflow_total": 1,
+   "ports": [
+    [
+     2,
+     1,
+     1
+    ],
+    [
+     0,
+     1,
+     1
+    ],
+    [
+     1,
+     2,
+     1
+    ],
+    [
+     1,
+     0,
+     1
+    ],
+    [
+     1,
+     1,
+     2
+    ],
+    [
+     1,
+     1,
+     0
+    ]
+   ],
+   "probe_boundary_gap": 0.02189170896974546,
+   "probe_locality_leak": 0.0,
+   "probe_locality_leak_under_wrapped_stencil": 0.0050000000000000044,
+   "probe_locality_moved": 0.030000000000000027,
+   "probe_n_boundary_sites": 26,
+   "probe_n_non_readers": 23,
+   "probe_n_not_pd": 0,
+   "probe_n_readers": 4,
+   "probe_pd_min": 0.9723179964144393,
+   "probe_site": [
+    0,
+    0,
+    0
+   ],
+   "regular_residual": 3.0881813983443114e-13,
+   "revert_delta_K": 0.0,
+   "revert_delta_K_cert": 0.0,
+   "revert_delta_b": 0.0,
+   "revert_delta_eps": 0.0,
+   "revert_delta_p_cert": 0.0,
+   "revert_delta_p_near": 0.0,
+   "revert_delta_rho": 0.0,
+   "revert_scales": {
+    "K": 1.0,
+    "K_cert": 1.0,
+    "b": 4.872916063004967,
+    "eps": 1.5536772720022347,
+    "rho": 1.0
+   },
+   "rho_anchor": 0.17,
+   "rho_covariance_defect_24": 0.0,
+   "rho_interior_support": [
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "rho_locality_defect": 0.0,
+   "rho_locality_moved": 0.17000000000000004,
+   "rho_locality_n_unchanged_sites": 25,
+   "rho_port": -0.51,
+   "rotation_mismatches": 0,
+   "seconds": 0.7041479590116069,
+   "sigma_flips": true,
+   "sigma_y_quadrature": {
+    "-1": -0.45444793802416306,
+    "1": 0.45444793802416306
+   },
+   "smallest_abs_eig": 0.4724164785040565,
+   "unitarity_defect": 2.220446049250313e-16,
+   "vacuum_U_defect": 7.771561172376096e-16,
+   "vacuum_p": 1.509929076399593e-31,
+   "wrapped_boundary_gap": 0.3114971387731284,
+   "wrapped_interior_gap_diagnostic_structurally_zero": 0.0
+  },
+  "L6": {
+   "K_absmax": 22.924551172038424,
+   "K_at_anchor": -0.5865898703432761,
+   "K_cert_absmax": 0.0,
+   "L": 6,
+   "Q_dim": 1115,
+   "Q_dim_naive_7L3": 1512,
+   "Q_periodic_dim": 1512,
+   "Q_symmetry_defect": 0.0,
+   "all_variables_touched": true,
+   "anchor": [
+    2,
+    2,
+    2
+   ],
+   "anchor_carry_endpoint_defect": 6.29234098853404e-10,
+   "anchor_carry_endpoint_defect_cert": Infinity,
+   "anchor_carry_frame": 1,
+   "anchor_carry_in_covariance_scope": true,
+   "anchor_carry_moving_frames": 21,
+   "anchor_carry_new_anchor": [
+    3,
+    3,
+    3
+   ],
+   "anchor_carry_rho_defect": 0.0,
+   "anchor_orbit": [
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ]
+   ],
+   "anchor_orbit_size": 8,
+   "b_locality_far_defect": 0.0,
+   "b_locality_geometry_admits_test": true,
+   "b_locality_max_link_separation": 2,
+   "b_locality_moved": 1.2357625847344686,
+   "b_locality_n_distant_vars": 962,
+   "b_locality_reason": "ok",
+   "b_norm": 16.66212956960419,
+   "b_null_component": 0.0,
+   "boundary_deletion_changed_sites": 2,
+   "boundary_deletion_port_total": 15,
+   "cert_givens_factor_census": {
+    "max_support": 0,
+    "n_factors": 0,
+    "n_support_two": 0
+   },
+   "cert_givens_factor_unitarity": 0.0,
+   "cert_givens_offdiag_residue": 0.0,
+   "cert_givens_recomposition_defect": 0.0,
+   "cert_givens_swept_pairs": 93096,
+   "cert_inverse_defect": 0.0,
+   "cert_kappa_min_separation": 0.0,
+   "cert_kappa_probabilities": {
+    "0.5": 0.0,
+    "1.0": 0.0,
+    "2.0": 0.0
+   },
+   "cert_leakage": 0.0,
+   "cert_norm_drive": 0.0,
+   "cert_p_drive": 0.0,
+   "cert_p_offsite": Infinity,
+   "cert_sigma_flips": false,
+   "cert_sigma_y_quadrature": {
+    "-1": 0.0,
+    "1": 0.0
+   },
+   "cert_unitarity_defect": 0.0,
+   "certified_matches_stencil_closure": true,
+   "certified_sites": [],
+   "clip_used": true,
+   "closure_failures_576": 0,
+   "coframe_pd_min": -317.6051887313826,
+   "covariance_certified_nonvacuous": false,
+   "covariance_certified_ok": false,
+   "covariance_clean_ok": true,
+   "covariance_clipped_ok": true,
+   "covariance_defects": {
+    "K": 1.645744163170093e-08,
+    "K_cert": 0.0,
+    "Q": 1.2434497875801753e-10,
+    "b": 1.1102230246251565e-14,
+    "b_anchor_variant": 3.7299913344822393,
+    "eps": 1.509911484731674e-08,
+    "p": 6.296013051187987e-10,
+    "p_cert": 0.0
+   },
+   "covariance_ill_posed": [
+    {
+     "frame": 0,
+     "image": [
+      0,
+      -1,
+      1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 2,
+     "image": [
+      -1,
+      1,
+      0
+     ],
+     "spatial_class": [
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "frame": 3,
+     "image": [
+      0,
+      1,
+      -1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 5,
+     "image": [
+      0,
+      -1,
+      1
+     ],
+     "spatial_class": [
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "frame": 6,
+     "image": [
+      -1,
+      1,
+      0
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 7,
+     "image": [
+      -1,
+      0,
+      1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 8,
+     "image": [
+      -1,
+      0,
+      1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 10,
+     "image": [
+      -1,
+      1,
+      0
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 11,
+     "image": [
+      -1,
+      1,
+      0
+     ],
+     "spatial_class": [
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "frame": 12,
+     "image": [
+      1,
+      0,
+      -1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 13,
+     "image": [
+      1,
+      -1,
+      0
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 14,
+     "image": [
+      1,
+      0,
+      -1
+     ],
+     "spatial_class": [
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "frame": 16,
+     "image": [
+      0,
+      -1,
+      1
+     ],
+     "spatial_class": [
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "frame": 17,
+     "image": [
+      1,
+      -1,
+      0
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 19,
+     "image": [
+      1,
+      0,
+      -1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 20,
+     "image": [
+      1,
+      0,
+      -1
+     ],
+     "spatial_class": [
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "frame": 21,
+     "image": [
+      0,
+      -1,
+      1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 22,
+     "image": [
+      0,
+      1,
+      -1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    }
+   ],
+   "covariance_products": {
+    "K": 1.645744163170093e-08,
+    "K_cert": 0.0,
+    "b": 1.1102230246251565e-14,
+    "closure_failures": 0,
+    "eps": 1.509911484731674e-08,
+    "escapes": [],
+    "n_products": 36,
+    "p": 6.296013051187987e-10,
+    "p_cert": Infinity,
+    "parity_hom_failures": 0,
+    "site_hom_failures": 0,
+    "var_hom_failures": 0
+   },
+   "covariance_products_certified_ok": false,
+   "covariance_products_clean_ok": true,
+   "covariance_products_clipped_ok": true,
+   "covariance_products_out_of_scope": 540,
+   "covariance_products_total_24": 576,
+   "covariance_relative_only_stages": [
+    "K",
+    "eps"
+   ],
+   "covariance_scales": {
+    "K": 22.924551172038424,
+    "K_cert": 1.0,
+    "Q": 29.452136694480856,
+    "b": 2.182292086962299,
+    "eps": 27.039013743222824
+   },
+   "covariance_scope": [
+    {
+     "K": 1.645744163170093e-08,
+     "K_cert": 0.0,
+     "K_parity": -1,
+     "Q": 1.2434497875801753e-10,
+     "b": 1.1102230246251565e-14,
+     "b_anchor_variant": 3.7299913344822393,
+     "eps": 1.5098926553491765e-08,
+     "frame": 1,
+     "p": 6.29234098853404e-10,
+     "p_cert": NaN
+    },
+    {
+     "K": 1.645744163170093e-08,
+     "K_cert": 0.0,
+     "K_parity": -1,
+     "Q": 1.2434497875801753e-10,
+     "b": 1.1102230246251565e-14,
+     "b_anchor_variant": 3.7299913344822393,
+     "eps": 1.5099079320179953e-08,
+     "frame": 4,
+     "p": 6.292953623476816e-10,
+     "p_cert": NaN
+    },
+    {
+     "K": 1.645744163170093e-08,
+     "K_cert": 0.0,
+     "K_parity": -1,
+     "Q": 1.2434497875801753e-10,
+     "b": 1.1102230246251565e-14,
+     "b_anchor_variant": 3.7299913344822393,
+     "eps": 1.509911484731674e-08,
+     "frame": 9,
+     "p": 6.296013051187987e-10,
+     "p_cert": NaN
+    },
+    {
+     "K": 1.4130030479009292e-11,
+     "K_cert": 0.0,
+     "K_parity": 1,
+     "Q": 7.105427357601002e-15,
+     "b": 3.1086244689504383e-15,
+     "b_anchor_variant": 8.881784197001252e-16,
+     "eps": 1.1938006139189383e-11,
+     "frame": 15,
+     "p": 1.290287321431549e-13,
+     "p_cert": NaN
+    },
+    {
+     "K": 1.4130030479009292e-11,
+     "K_cert": 0.0,
+     "K_parity": 1,
+     "Q": 7.105427357601002e-15,
+     "b": 3.1086244689504383e-15,
+     "b_anchor_variant": 8.881784197001252e-16,
+     "eps": 1.1938006139189383e-11,
+     "frame": 18,
+     "p": 4.14591971864553e-13,
+     "p_cert": NaN
+    },
+    {
+     "K": 0.0,
+     "K_cert": 0.0,
+     "K_parity": 1,
+     "Q": 0.0,
+     "b": 0.0,
+     "b_anchor_variant": 0.0,
+     "eps": 0.0,
+     "frame": 23,
+     "p": 0.0,
+     "p_cert": NaN
+    }
+   ],
+   "covariance_scope_contains_stabilizer": true,
+   "covariance_scope_equals_kuhn_stabilizer": true,
+   "covariance_scope_equals_signed_dirset": true,
+   "covariance_scope_frames": [
+    1,
+    4,
+    9,
+    15,
+    18,
+    23
+   ],
+   "covariance_scope_nonempty": true,
+   "covariance_scope_size": 6,
+   "covariance_scope_subgroup": {
+    "closed_under_composition": true,
+    "closed_under_inverse": true,
+    "frames_total": 24,
+    "identity_present": true,
+    "inverses_escaping": [],
+    "lagrange_divides": true,
+    "order": 6,
+    "products_checked": 36,
+    "products_escaping": [],
+    "proper": true
+   },
+   "deleted_U_cert_defect": 0.0,
+   "deleted_p": 0.0,
+   "deleted_vs_vacuum": 0.0,
+   "div_anchor": 1,
+   "drive_site": null,
+   "drive_site_certified": false,
+   "edit_delta_K": 4.7860850883709,
+   "edit_delta_K_cert": 0.0,
+   "edit_delta_U": 1.9749205011245257,
+   "edit_delta_U_cert": 0.0,
+   "edit_delta_b": 1.2357625847344686,
+   "edit_delta_e": 4.400032280970855,
+   "edit_delta_eps": 5.318269599876878,
+   "edit_delta_h": 236.38566650261214,
+   "edit_delta_p_cert": 0.0,
+   "edit_delta_p_near": 0.07907829763866647,
+   "edit_delta_rho": 0.17,
+   "edit_div_changed_sites": 2,
+   "edit_label_after": 4,
+   "edit_label_before": 3,
+   "edit_label_reverted": 3,
+   "edit_link": [
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ]
+   ],
+   "edit_n_cert": 0,
+   "edit_register_exact": true,
+   "eig_max": 4.324189770013411,
+   "eig_min": -65.35493797218415,
+   "endpoint_dim": 432,
+   "eps_absmax": 27.039013743222824,
+   "fit_neq_min_interior": 7,
+   "fit_rank_min": 4,
+   "fit_rank_min_interior": 6,
+   "fit_residual_max": 345.1068154553897,
+   "fit_residual_max_interior": 66.15156277305232,
+   "flux_off_K_absmax": 7.771561172376096e-16,
+   "flux_off_b_absmax": 0.0,
+   "flux_off_clip_used": false,
+   "flux_off_coframe_defect": 2.6614158809512183e-16,
+   "flux_off_eps_absmax": 0.0,
+   "flux_off_h_absmax": 2.5376526277146454e-16,
+   "flux_off_n_sites_not_pd": 0,
+   "flux_off_rho_absmax": 0.0,
+   "gauss_table_matches": true,
+   "givens_cap": 93528,
+   "givens_factor_census": {
+    "max_support": 2,
+    "n_factors": 216,
+    "n_support_two": 216
+   },
+   "givens_factor_unitarity": 4.440892098500626e-16,
+   "givens_offdiag_residue": 6.106226635438361e-16,
+   "givens_recomposition_defect": 1.7763568394002505e-15,
+   "givens_swept_pairs": 93096,
+   "h_absmax": 585.8541981970556,
+   "interior_nonzero_sites": [],
+   "inverse_defect": 3.9968028886505635e-15,
+   "kappa_min_separation": 0.06569417944503769,
+   "kappa_probabilities": {
+    "0.5": 0.9943233426164498,
+    "1.0": 0.022577731777998218,
+    "2.0": 0.0882719112230359
+   },
+   "labels_lawful": true,
+   "leakage": 0.0,
+   "locality_link": [
+    [
+     2,
+     2,
+     4
+    ],
+    [
+     2,
+     2,
+     5
+    ]
+   ],
+   "locality_link_separation": 2,
+   "min_perturbed_edge_length": -25.590285129667862,
+   "n_deep_interior_sites": 64,
+   "n_links": 15,
+   "n_negative_eigs": 1043,
+   "n_positive_eigs": 72,
+   "n_simplices_admitted": 6000,
+   "n_sites": 216,
+   "n_sites_certified": 0,
+   "n_sites_not_pd": 196,
+   "n_sites_pd": 20,
+   "n_sites_rank_deficient": 30,
+   "n_triangles_admitted": 14360,
+   "near_word_certified": false,
+   "near_word_site": [
+    3,
+    2,
+    2
+   ],
+   "no_wrap_edges": true,
+   "non_pd_sites": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     1
+    ],
+    [
+     0,
+     0,
+     3
+    ],
+    [
+     0,
+     0,
+     4
+    ],
+    [
+     0,
+     0,
+     5
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     1,
+     1
+    ],
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     3
+    ],
+    [
+     0,
+     1,
+     4
+    ],
+    [
+     0,
+     1,
+     5
+    ],
+    [
+     0,
+     2,
+     1
+    ],
+    [
+     0,
+     2,
+     2
+    ],
+    [
+     0,
+     2,
+     3
+    ],
+    [
+     0,
+     2,
+     4
+    ],
+    [
+     0,
+     3,
+     0
+    ],
+    [
+     0,
+     3,
+     1
+    ],
+    [
+     0,
+     3,
+     2
+    ],
+    [
+     0,
+     3,
+     3
+    ],
+    [
+     0,
+     3,
+     4
+    ],
+    [
+     0,
+     4,
+     0
+    ],
+    [
+     0,
+     4,
+     1
+    ],
+    [
+     0,
+     4,
+     2
+    ],
+    [
+     0,
+     4,
+     3
+    ],
+    [
+     0,
+     4,
+     4
+    ],
+    [
+     0,
+     4,
+     5
+    ],
+    [
+     0,
+     5,
+     0
+    ],
+    [
+     0,
+     5,
+     1
+    ],
+    [
+     0,
+     5,
+     4
+    ],
+    [
+     0,
+     5,
+     5
+    ],
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     0,
+     1
+    ],
+    [
+     1,
+     0,
+     2
+    ],
+    [
+     1,
+     0,
+     3
+    ],
+    [
+     1,
+     0,
+     4
+    ],
+    [
+     1,
+     0,
+     5
+    ],
+    [
+     1,
+     1,
+     0
+    ],
+    [
+     1,
+     1,
+     2
+    ],
+    [
+     1,
+     1,
+     3
+    ],
+    [
+     1,
+     1,
+     4
+    ],
+    [
+     1,
+     1,
+     5
+    ],
+    [
+     1,
+     2,
+     0
+    ],
+    [
+     1,
+     2,
+     1
+    ],
+    [
+     1,
+     2,
+     2
+    ],
+    [
+     1,
+     2,
+     3
+    ],
+    [
+     1,
+     2,
+     4
+    ],
+    [
+     1,
+     2,
+     5
+    ],
+    [
+     1,
+     3,
+     0
+    ],
+    [
+     1,
+     3,
+     1
+    ],
+    [
+     1,
+     3,
+     2
+    ],
+    [
+     1,
+     3,
+     3
+    ],
+    [
+     1,
+     3,
+     4
+    ],
+    [
+     1,
+     3,
+     5
+    ],
+    [
+     1,
+     4,
+     0
+    ],
+    [
+     1,
+     4,
+     1
+    ],
+    [
+     1,
+     4,
+     2
+    ],
+    [
+     1,
+     4,
+     3
+    ],
+    [
+     1,
+     4,
+     4
+    ],
+    [
+     1,
+     4,
+     5
+    ],
+    [
+     1,
+     5,
+     0
+    ],
+    [
+     1,
+     5,
+     1
+    ],
+    [
+     1,
+     5,
+     2
+    ],
+    [
+     1,
+     5,
+     3
+    ],
+    [
+     1,
+     5,
+     4
+    ],
+    [
+     1,
+     5,
+     5
+    ],
+    [
+     2,
+     0,
+     1
+    ],
+    [
+     2,
+     0,
+     2
+    ],
+    [
+     2,
+     0,
+     3
+    ],
+    [
+     2,
+     0,
+     4
+    ],
+    [
+     2,
+     1,
+     0
+    ],
+    [
+     2,
+     1,
+     1
+    ],
+    [
+     2,
+     1,
+     2
+    ],
+    [
+     2,
+     1,
+     3
+    ],
+    [
+     2,
+     1,
+     4
+    ],
+    [
+     2,
+     1,
+     5
+    ],
+    [
+     2,
+     2,
+     0
+    ],
+    [
+     2,
+     2,
+     1
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     2,
+     2,
+     4
+    ],
+    [
+     2,
+     2,
+     5
+    ],
+    [
+     2,
+     3,
+     0
+    ],
+    [
+     2,
+     3,
+     1
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     2,
+     3,
+     4
+    ],
+    [
+     2,
+     3,
+     5
+    ],
+    [
+     2,
+     4,
+     0
+    ],
+    [
+     2,
+     4,
+     1
+    ],
+    [
+     2,
+     4,
+     2
+    ],
+    [
+     2,
+     4,
+     3
+    ],
+    [
+     2,
+     4,
+     4
+    ],
+    [
+     2,
+     4,
+     5
+    ],
+    [
+     2,
+     5,
+     1
+    ],
+    [
+     2,
+     5,
+     2
+    ],
+    [
+     2,
+     5,
+     3
+    ],
+    [
+     2,
+     5,
+     4
+    ],
+    [
+     2,
+     5,
+     5
+    ],
+    [
+     3,
+     0,
+     0
+    ],
+    [
+     3,
+     0,
+     1
+    ],
+    [
+     3,
+     0,
+     2
+    ],
+    [
+     3,
+     0,
+     3
+    ],
+    [
+     3,
+     0,
+     4
+    ],
+    [
+     3,
+     1,
+     0
+    ],
+    [
+     3,
+     1,
+     1
+    ],
+    [
+     3,
+     1,
+     2
+    ],
+    [
+     3,
+     1,
+     3
+    ],
+    [
+     3,
+     1,
+     4
+    ],
+    [
+     3,
+     1,
+     5
+    ],
+    [
+     3,
+     2,
+     0
+    ],
+    [
+     3,
+     2,
+     1
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     4
+    ],
+    [
+     3,
+     2,
+     5
+    ],
+    [
+     3,
+     3,
+     0
+    ],
+    [
+     3,
+     3,
+     1
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     3,
+     4
+    ],
+    [
+     3,
+     3,
+     5
+    ],
+    [
+     3,
+     4,
+     0
+    ],
+    [
+     3,
+     4,
+     1
+    ],
+    [
+     3,
+     4,
+     2
+    ],
+    [
+     3,
+     4,
+     3
+    ],
+    [
+     3,
+     4,
+     4
+    ],
+    [
+     3,
+     4,
+     5
+    ],
+    [
+     3,
+     5,
+     1
+    ],
+    [
+     3,
+     5,
+     2
+    ],
+    [
+     3,
+     5,
+     3
+    ],
+    [
+     3,
+     5,
+     4
+    ],
+    [
+     4,
+     0,
+     0
+    ],
+    [
+     4,
+     0,
+     1
+    ],
+    [
+     4,
+     0,
+     2
+    ],
+    [
+     4,
+     0,
+     3
+    ],
+    [
+     4,
+     0,
+     4
+    ],
+    [
+     4,
+     0,
+     5
+    ],
+    [
+     4,
+     1,
+     0
+    ],
+    [
+     4,
+     1,
+     1
+    ],
+    [
+     4,
+     1,
+     2
+    ],
+    [
+     4,
+     1,
+     3
+    ],
+    [
+     4,
+     1,
+     4
+    ],
+    [
+     4,
+     1,
+     5
+    ],
+    [
+     4,
+     2,
+     0
+    ],
+    [
+     4,
+     2,
+     1
+    ],
+    [
+     4,
+     2,
+     2
+    ],
+    [
+     4,
+     2,
+     3
+    ],
+    [
+     4,
+     2,
+     4
+    ],
+    [
+     4,
+     2,
+     5
+    ],
+    [
+     4,
+     3,
+     0
+    ],
+    [
+     4,
+     3,
+     1
+    ],
+    [
+     4,
+     3,
+     2
+    ],
+    [
+     4,
+     3,
+     3
+    ],
+    [
+     4,
+     3,
+     4
+    ],
+    [
+     4,
+     3,
+     5
+    ],
+    [
+     4,
+     4,
+     0
+    ],
+    [
+     4,
+     4,
+     1
+    ],
+    [
+     4,
+     4,
+     2
+    ],
+    [
+     4,
+     4,
+     3
+    ],
+    [
+     4,
+     4,
+     5
+    ],
+    [
+     4,
+     5,
+     0
+    ],
+    [
+     4,
+     5,
+     1
+    ],
+    [
+     4,
+     5,
+     2
+    ],
+    [
+     4,
+     5,
+     3
+    ],
+    [
+     4,
+     5,
+     4
+    ],
+    [
+     4,
+     5,
+     5
+    ],
+    [
+     5,
+     0,
+     0
+    ],
+    [
+     5,
+     0,
+     1
+    ],
+    [
+     5,
+     0,
+     4
+    ],
+    [
+     5,
+     0,
+     5
+    ],
+    [
+     5,
+     1,
+     0
+    ],
+    [
+     5,
+     1,
+     1
+    ],
+    [
+     5,
+     1,
+     2
+    ],
+    [
+     5,
+     1,
+     3
+    ],
+    [
+     5,
+     1,
+     4
+    ],
+    [
+     5,
+     1,
+     5
+    ],
+    [
+     5,
+     2,
+     1
+    ],
+    [
+     5,
+     2,
+     2
+    ],
+    [
+     5,
+     2,
+     3
+    ],
+    [
+     5,
+     2,
+     4
+    ],
+    [
+     5,
+     2,
+     5
+    ],
+    [
+     5,
+     3,
+     1
+    ],
+    [
+     5,
+     3,
+     2
+    ],
+    [
+     5,
+     3,
+     3
+    ],
+    [
+     5,
+     3,
+     4
+    ],
+    [
+     5,
+     4,
+     0
+    ],
+    [
+     5,
+     4,
+     1
+    ],
+    [
+     5,
+     4,
+     2
+    ],
+    [
+     5,
+     4,
+     3
+    ],
+    [
+     5,
+     4,
+     4
+    ],
+    [
+     5,
+     4,
+     5
+    ],
+    [
+     5,
+     5,
+     0
+    ],
+    [
+     5,
+     5,
+     1
+    ],
+    [
+     5,
+     5,
+     2
+    ],
+    [
+     5,
+     5,
+     4
+    ],
+    [
+     5,
+     5,
+     5
+    ]
+   ],
+   "norm_near": 0.9999999999999993,
+   "null_dim": 0,
+   "p_far": 0.6790834366917472,
+   "p_near": 0.022577731777998218,
+   "p_near_offsite": 0.0,
+   "pd_domain_accounting_ok": true,
+   "pd_sites": [
+    [
+     0,
+     0,
+     2
+    ],
+    [
+     0,
+     2,
+     0
+    ],
+    [
+     0,
+     2,
+     5
+    ],
+    [
+     0,
+     3,
+     5
+    ],
+    [
+     0,
+     5,
+     2
+    ],
+    [
+     0,
+     5,
+     3
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     2,
+     0,
+     0
+    ],
+    [
+     2,
+     0,
+     5
+    ],
+    [
+     2,
+     5,
+     0
+    ],
+    [
+     3,
+     0,
+     5
+    ],
+    [
+     3,
+     5,
+     0
+    ],
+    [
+     3,
+     5,
+     5
+    ],
+    [
+     4,
+     4,
+     4
+    ],
+    [
+     5,
+     0,
+     2
+    ],
+    [
+     5,
+     0,
+     3
+    ],
+    [
+     5,
+     2,
+     0
+    ],
+    [
+     5,
+     3,
+     0
+    ],
+    [
+     5,
+     3,
+     5
+    ],
+    [
+     5,
+     5,
+     3
+    ]
+   ],
+   "periodic_anchor_defect": 7.000456339056882e-07,
+   "periodic_anchor_momenta": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     0
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     2,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "periodic_anchor_scale": 16.0,
+   "port_outflow_total": 1,
+   "ports": [
+    [
+     5,
+     2,
+     2
+    ],
+    [
+     0,
+     2,
+     2
+    ],
+    [
+     2,
+     5,
+     2
+    ],
+    [
+     2,
+     0,
+     2
+    ],
+    [
+     2,
+     2,
+     5
+    ],
+    [
+     2,
+     2,
+     0
+    ]
+   ],
+   "probe_boundary_gap": 0.02141360667829878,
+   "probe_locality_leak": 0.0,
+   "probe_locality_leak_under_wrapped_stencil": 0.0050000000000000044,
+   "probe_locality_moved": 0.029999999999999916,
+   "probe_n_boundary_sites": 152,
+   "probe_n_non_readers": 212,
+   "probe_n_not_pd": 0,
+   "probe_n_readers": 4,
+   "probe_pd_min": 0.9625287715249022,
+   "probe_site": [
+    0,
+    0,
+    0
+   ],
+   "regular_residual": 2.073064845941921e-11,
+   "revert_delta_K": 0.0,
+   "revert_delta_K_cert": 0.0,
+   "revert_delta_b": 0.0,
+   "revert_delta_eps": 0.0,
+   "revert_delta_p_cert": Infinity,
+   "revert_delta_p_near": 0.0,
+   "revert_delta_rho": 0.0,
+   "revert_scales": {
+    "K": 22.924551172038424,
+    "K_cert": 1.0,
+    "b": 2.182292086962299,
+    "eps": 27.039013743222824,
+    "rho": 1.0
+   },
+   "rho_anchor": 0.17,
+   "rho_covariance_defect_24": 0.0,
+   "rho_interior_support": [
+    [
+     2,
+     2,
+     2
+    ]
+   ],
+   "rho_locality_defect": 0.0,
+   "rho_locality_moved": 0.17000000000000004,
+   "rho_locality_n_unchanged_sites": 214,
+   "rho_port": -0.51,
+   "rotation_mismatches": 0,
+   "seconds": 1.1687383750104345,
+   "sigma_flips": true,
+   "sigma_y_quadrature": {
+    "-1": 0.29710589227249584,
+    "1": -0.29710589227249584
+   },
+   "smallest_abs_eig": 0.0021375115367672946,
+   "unitarity_defect": 3.774758283725532e-15,
+   "vacuum_U_defect": 7.771561172376096e-16,
+   "vacuum_p": 0.0,
+   "wrapped_boundary_gap": 10.10350673891811,
+   "wrapped_interior_gap_diagnostic_structurally_zero": 0.0
+  },
+  "L7": {
+   "K_absmax": 1.1485226990910895,
+   "K_at_anchor": 1.3020140521291523e-10,
+   "K_cert_absmax": 0.3978790333854716,
+   "L": 7,
+   "Q_dim": 1854,
+   "Q_dim_naive_7L3": 2401,
+   "Q_periodic_dim": 2401,
+   "Q_symmetry_defect": 0.0,
+   "all_variables_touched": true,
+   "anchor": [
+    3,
+    3,
+    3
+   ],
+   "anchor_orbit": [
+    [
+     3,
+     3,
+     3
+    ]
+   ],
+   "anchor_orbit_size": 1,
+   "b_locality_far_defect": 0.0,
+   "b_locality_geometry_admits_test": true,
+   "b_locality_max_link_separation": 2,
+   "b_locality_moved": 1.2357625847344689,
+   "b_locality_n_distant_vars": 1665,
+   "b_locality_reason": "ok",
+   "b_norm": 16.662129569604186,
+   "b_null_component": 0.0,
+   "boundary_deletion_changed_sites": 2,
+   "boundary_deletion_port_total": 15,
+   "cert_givens_factor_census": {
+    "max_support": 2,
+    "n_factors": 103,
+    "n_support_two": 103
+   },
+   "cert_givens_factor_unitarity": 2.220446049250313e-16,
+   "cert_givens_offdiag_residue": 5.551115123125783e-17,
+   "cert_givens_recomposition_defect": 5.551115123125783e-17,
+   "cert_givens_swept_pairs": 234955,
+   "cert_inverse_defect": 2.220446049250313e-16,
+   "cert_kappa_min_separation": 0.11107072819551861,
+   "cert_kappa_probabilities": {
+    "0.5": 0.03905756750431131,
+    "1.0": 0.1501282956998299,
+    "2.0": 0.5103591621203776
+   },
+   "cert_leakage": 0.0,
+   "cert_norm_drive": 0.9999999999999999,
+   "cert_p_drive": 0.1501282956998299,
+   "cert_p_offsite": 0.0,
+   "cert_sigma_flips": true,
+   "cert_sigma_y_quadrature": {
+    "-1": 0.7143942623792392,
+    "1": -0.7143942623792392
+   },
+   "cert_unitarity_defect": 2.220446049250313e-16,
+   "certified_matches_stencil_closure": true,
+   "certified_sites": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     1
+    ],
+    [
+     0,
+     0,
+     2
+    ],
+    [
+     0,
+     0,
+     6
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     1,
+     1
+    ],
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     3
+    ],
+    [
+     0,
+     2,
+     0
+    ],
+    [
+     0,
+     2,
+     1
+    ],
+    [
+     0,
+     2,
+     2
+    ],
+    [
+     0,
+     3,
+     1
+    ],
+    [
+     0,
+     3,
+     6
+    ],
+    [
+     0,
+     6,
+     0
+    ],
+    [
+     0,
+     6,
+     3
+    ],
+    [
+     0,
+     6,
+     6
+    ],
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     0,
+     1
+    ],
+    [
+     1,
+     0,
+     2
+    ],
+    [
+     1,
+     0,
+     3
+    ],
+    [
+     1,
+     1,
+     0
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     2
+    ],
+    [
+     1,
+     1,
+     3
+    ],
+    [
+     1,
+     1,
+     4
+    ],
+    [
+     1,
+     2,
+     0
+    ],
+    [
+     1,
+     2,
+     1
+    ],
+    [
+     1,
+     2,
+     2
+    ],
+    [
+     1,
+     3,
+     0
+    ],
+    [
+     1,
+     3,
+     1
+    ],
+    [
+     1,
+     4,
+     1
+    ],
+    [
+     2,
+     0,
+     0
+    ],
+    [
+     2,
+     0,
+     1
+    ],
+    [
+     2,
+     0,
+     2
+    ],
+    [
+     2,
+     1,
+     0
+    ],
+    [
+     2,
+     1,
+     1
+    ],
+    [
+     2,
+     1,
+     2
+    ],
+    [
+     2,
+     2,
+     0
+    ],
+    [
+     2,
+     2,
+     1
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     2,
+     2,
+     4
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     2,
+     4,
+     2
+    ],
+    [
+     2,
+     4,
+     4
+    ],
+    [
+     2,
+     5,
+     5
+    ],
+    [
+     3,
+     0,
+     1
+    ],
+    [
+     3,
+     0,
+     6
+    ],
+    [
+     3,
+     1,
+     0
+    ],
+    [
+     3,
+     1,
+     1
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     4,
+     4
+    ],
+    [
+     3,
+     5,
+     5
+    ],
+    [
+     3,
+     5,
+     6
+    ],
+    [
+     3,
+     6,
+     0
+    ],
+    [
+     3,
+     6,
+     5
+    ],
+    [
+     4,
+     1,
+     1
+    ],
+    [
+     4,
+     2,
+     2
+    ],
+    [
+     4,
+     2,
+     4
+    ],
+    [
+     4,
+     3,
+     4
+    ],
+    [
+     4,
+     4,
+     2
+    ],
+    [
+     4,
+     4,
+     3
+    ],
+    [
+     4,
+     4,
+     4
+    ],
+    [
+     4,
+     4,
+     5
+    ],
+    [
+     4,
+     4,
+     6
+    ],
+    [
+     4,
+     5,
+     4
+    ],
+    [
+     4,
+     5,
+     5
+    ],
+    [
+     4,
+     5,
+     6
+    ],
+    [
+     4,
+     6,
+     4
+    ],
+    [
+     4,
+     6,
+     5
+    ],
+    [
+     4,
+     6,
+     6
+    ],
+    [
+     5,
+     2,
+     5
+    ],
+    [
+     5,
+     3,
+     5
+    ],
+    [
+     5,
+     3,
+     6
+    ],
+    [
+     5,
+     4,
+     4
+    ],
+    [
+     5,
+     4,
+     5
+    ],
+    [
+     5,
+     4,
+     6
+    ],
+    [
+     5,
+     5,
+     2
+    ],
+    [
+     5,
+     5,
+     3
+    ],
+    [
+     5,
+     5,
+     4
+    ],
+    [
+     5,
+     5,
+     5
+    ],
+    [
+     5,
+     5,
+     6
+    ],
+    [
+     5,
+     6,
+     3
+    ],
+    [
+     5,
+     6,
+     4
+    ],
+    [
+     5,
+     6,
+     5
+    ],
+    [
+     5,
+     6,
+     6
+    ],
+    [
+     6,
+     0,
+     0
+    ],
+    [
+     6,
+     0,
+     3
+    ],
+    [
+     6,
+     0,
+     6
+    ],
+    [
+     6,
+     3,
+     0
+    ],
+    [
+     6,
+     3,
+     5
+    ],
+    [
+     6,
+     4,
+     4
+    ],
+    [
+     6,
+     4,
+     5
+    ],
+    [
+     6,
+     4,
+     6
+    ],
+    [
+     6,
+     5,
+     3
+    ],
+    [
+     6,
+     5,
+     4
+    ],
+    [
+     6,
+     5,
+     5
+    ],
+    [
+     6,
+     5,
+     6
+    ],
+    [
+     6,
+     6,
+     0
+    ],
+    [
+     6,
+     6,
+     4
+    ],
+    [
+     6,
+     6,
+     5
+    ],
+    [
+     6,
+     6,
+     6
+    ]
+   ],
+   "clip_used": true,
+   "closure_failures_576": 0,
+   "coframe_pd_min": -0.588222723726417,
+   "covariance_certified_nonvacuous": true,
+   "covariance_certified_ok": true,
+   "covariance_clean_ok": true,
+   "covariance_clipped_ok": true,
+   "covariance_defects": {
+    "K": 8.143553054118513e-10,
+    "K_cert": 8.143553054118513e-10,
+    "Q": 1.2434497875801753e-10,
+    "b": 1.1102230246251565e-14,
+    "b_anchor_variant": 3.7299913344822393,
+    "eps": 8.542147544865486e-10,
+    "p": 3.690194851080353e-12,
+    "p_cert": 2.6264135311038217e-10
+   },
+   "covariance_ill_posed": [
+    {
+     "frame": 0,
+     "image": [
+      0,
+      -1,
+      1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 2,
+     "image": [
+      -1,
+      1,
+      0
+     ],
+     "spatial_class": [
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "frame": 3,
+     "image": [
+      0,
+      1,
+      -1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 5,
+     "image": [
+      0,
+      -1,
+      1
+     ],
+     "spatial_class": [
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "frame": 6,
+     "image": [
+      -1,
+      1,
+      0
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 7,
+     "image": [
+      -1,
+      0,
+      1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 8,
+     "image": [
+      -1,
+      0,
+      1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 10,
+     "image": [
+      -1,
+      1,
+      0
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 11,
+     "image": [
+      -1,
+      1,
+      0
+     ],
+     "spatial_class": [
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "frame": 12,
+     "image": [
+      1,
+      0,
+      -1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 13,
+     "image": [
+      1,
+      -1,
+      0
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 14,
+     "image": [
+      1,
+      0,
+      -1
+     ],
+     "spatial_class": [
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "frame": 16,
+     "image": [
+      0,
+      -1,
+      1
+     ],
+     "spatial_class": [
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "frame": 17,
+     "image": [
+      1,
+      -1,
+      0
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 19,
+     "image": [
+      1,
+      0,
+      -1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 20,
+     "image": [
+      1,
+      0,
+      -1
+     ],
+     "spatial_class": [
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "frame": 21,
+     "image": [
+      0,
+      -1,
+      1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "frame": 22,
+     "image": [
+      0,
+      1,
+      -1
+     ],
+     "spatial_class": [
+      0,
+      1,
+      1
+     ]
+    }
+   ],
+   "covariance_products": {
+    "K": 8.143553054118513e-10,
+    "K_cert": 8.143553054118513e-10,
+    "b": 1.1102230246251565e-14,
+    "closure_failures": 0,
+    "eps": 8.542147544865486e-10,
+    "escapes": [],
+    "n_products": 36,
+    "p": 3.690194851080353e-12,
+    "p_cert": 2.6264135311038217e-10,
+    "parity_hom_failures": 0,
+    "site_hom_failures": 0,
+    "var_hom_failures": 0
+   },
+   "covariance_products_certified_ok": true,
+   "covariance_products_clean_ok": true,
+   "covariance_products_clipped_ok": true,
+   "covariance_products_out_of_scope": 540,
+   "covariance_products_total_24": 576,
+   "covariance_relative_only_stages": [],
+   "covariance_scales": {
+    "K": 1.1485226990910895,
+    "K_cert": 1.0,
+    "Q": 29.452136694480856,
+    "b": 2.182292086962299,
+    "eps": 1.921096242346071
+   },
+   "covariance_scope": [
+    {
+     "K": 8.143553054118513e-10,
+     "K_cert": 8.143553054118513e-10,
+     "K_parity": -1,
+     "Q": 1.2434497875801753e-10,
+     "b": 1.1102230246251565e-14,
+     "b_anchor_variant": 3.7299913344822393,
+     "eps": 8.542147544865486e-10,
+     "frame": 1,
+     "p": 3.68499588482285e-12,
+     "p_cert": 2.6264135311038217e-10
+    },
+    {
+     "K": 8.143553054118513e-10,
+     "K_cert": 8.143553054118513e-10,
+     "K_parity": -1,
+     "Q": 1.2434497875801753e-10,
+     "b": 1.1102230246251565e-14,
+     "b_anchor_variant": 3.7299913344822393,
+     "eps": 8.542147544865486e-10,
+     "frame": 4,
+     "p": 3.682343926308951e-12,
+     "p_cert": 2.623841144355765e-10
+    },
+    {
+     "K": 8.143553054118513e-10,
+     "K_cert": 8.143553054118513e-10,
+     "K_parity": -1,
+     "Q": 1.2434497875801753e-10,
+     "b": 1.1102230246251565e-14,
+     "b_anchor_variant": 3.7299913344822393,
+     "eps": 8.542147544865486e-10,
+     "frame": 9,
+     "p": 3.690194851080353e-12,
+     "p_cert": 2.6246921303041404e-10
+    },
+    {
+     "K": 7.326916851013721e-13,
+     "K_cert": 6.480371794737039e-13,
+     "K_parity": 1,
+     "Q": 7.105427357601002e-15,
+     "b": 3.1086244689504383e-15,
+     "b_anchor_variant": 8.881784197001252e-16,
+     "eps": 5.11528319702137e-13,
+     "frame": 15,
+     "p": 1.4870483316942185e-14,
+     "p_cert": 8.723577415992168e-14
+    },
+    {
+     "K": 7.326916851013721e-13,
+     "K_cert": 6.480371794737039e-13,
+     "K_parity": 1,
+     "Q": 7.105427357601002e-15,
+     "b": 3.1086244689504383e-15,
+     "b_anchor_variant": 8.881784197001252e-16,
+     "eps": 5.11528319702137e-13,
+     "frame": 18,
+     "p": 7.095452697614135e-15,
+     "p_cert": 1.7866264023780332e-13
+    },
+    {
+     "K": 0.0,
+     "K_cert": 0.0,
+     "K_parity": 1,
+     "Q": 0.0,
+     "b": 0.0,
+     "b_anchor_variant": 0.0,
+     "eps": 0.0,
+     "frame": 23,
+     "p": 0.0,
+     "p_cert": 0.0
+    }
+   ],
+   "covariance_scope_contains_stabilizer": true,
+   "covariance_scope_equals_kuhn_stabilizer": true,
+   "covariance_scope_equals_signed_dirset": true,
+   "covariance_scope_frames": [
+    1,
+    4,
+    9,
+    15,
+    18,
+    23
+   ],
+   "covariance_scope_nonempty": true,
+   "covariance_scope_size": 6,
+   "covariance_scope_subgroup": {
+    "closed_under_composition": true,
+    "closed_under_inverse": true,
+    "frames_total": 24,
+    "identity_present": true,
+    "inverses_escaping": [],
+    "lagrange_divides": true,
+    "order": 6,
+    "products_checked": 36,
+    "products_escaping": [],
+    "proper": true
+   },
+   "deleted_U_cert_defect": 0.0,
+   "deleted_p": 0.0,
+   "deleted_vs_vacuum": 0.0,
+   "div_anchor": 1,
+   "drive_site": [
+    5,
+    5,
+    3
+   ],
+   "drive_site_certified": true,
+   "edit_delta_K": 0.7534299194254059,
+   "edit_delta_K_cert": 0.6025525236527993,
+   "edit_delta_U": 0.7348606219330542,
+   "edit_delta_U_cert": 0.45531752315961127,
+   "edit_delta_b": 1.2357625847344686,
+   "edit_delta_e": 0.7145503012723737,
+   "edit_delta_eps": 0.7744217014264565,
+   "edit_delta_h": 2.021801920218128,
+   "edit_delta_p_cert": 0.1501282956998299,
+   "edit_delta_p_near": 0.024139457846244185,
+   "edit_delta_rho": 0.17,
+   "edit_div_changed_sites": 2,
+   "edit_label_after": 4,
+   "edit_label_before": 3,
+   "edit_label_reverted": 3,
+   "edit_link": [
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     4,
+     3,
+     3
+    ]
+   ],
+   "edit_n_cert": 77,
+   "edit_register_exact": true,
+   "eig_max": 4.651388753031815,
+   "eig_min": -65.53562776389,
+   "endpoint_dim": 686,
+   "eps_absmax": 1.921096242346071,
+   "fit_neq_min_interior": 7,
+   "fit_rank_min": 4,
+   "fit_rank_min_interior": 6,
+   "fit_residual_max": 1.6046194411895427,
+   "fit_residual_max_interior": 0.5014436753713976,
+   "flux_off_K_absmax": 7.771561172376096e-16,
+   "flux_off_b_absmax": 0.0,
+   "flux_off_clip_used": false,
+   "flux_off_coframe_defect": 2.6614158809512183e-16,
+   "flux_off_eps_absmax": 0.0,
+   "flux_off_h_absmax": 2.5376526277146454e-16,
+   "flux_off_n_sites_not_pd": 0,
+   "flux_off_rho_absmax": 0.0,
+   "gauss_table_matches": true,
+   "givens_cap": 235641,
+   "givens_factor_census": {
+    "max_support": 2,
+    "n_factors": 343,
+    "n_support_two": 343
+   },
+   "givens_factor_unitarity": 4.440892098500626e-16,
+   "givens_offdiag_residue": 1.6653345369377348e-16,
+   "givens_recomposition_defect": 2.220446049250313e-16,
+   "givens_swept_pairs": 234955,
+   "h_absmax": 2.2732772277435287,
+   "interior_nonzero_sites": [],
+   "inverse_defect": 2.220446049250313e-16,
+   "kappa_min_separation": 0.00197759150649214,
+   "kappa_probabilities": {
+    "0.5": 0.0006597775774329576,
+    "1.0": 0.0026373690839250974,
+    "2.0": 0.010521653472961015
+   },
+   "labels_lawful": true,
+   "leakage": 0.0,
+   "locality_link": [
+    [
+     1,
+     3,
+     3
+    ],
+    [
+     0,
+     3,
+     3
+    ]
+   ],
+   "locality_link_separation": 2,
+   "min_perturbed_edge_length": -0.9210962423460709,
+   "n_deep_interior_sites": 125,
+   "n_links": 18,
+   "n_negative_eigs": 1716,
+   "n_positive_eigs": 138,
+   "n_simplices_admitted": 10368,
+   "n_sites": 343,
+   "n_sites_certified": 103,
+   "n_sites_not_pd": 66,
+   "n_sites_pd": 277,
+   "n_sites_rank_deficient": 36,
+   "n_triangles_admitted": 24264,
+   "near_word_certified": false,
+   "near_word_site": [
+    4,
+    3,
+    3
+   ],
+   "no_wrap_edges": true,
+   "non_pd_sites": [
+    [
+     0,
+     0,
+     4
+    ],
+    [
+     0,
+     1,
+     5
+    ],
+    [
+     0,
+     3,
+     3
+    ],
+    [
+     0,
+     3,
+     4
+    ],
+    [
+     0,
+     4,
+     0
+    ],
+    [
+     0,
+     4,
+     3
+    ],
+    [
+     0,
+     4,
+     5
+    ],
+    [
+     0,
+     5,
+     1
+    ],
+    [
+     0,
+     5,
+     4
+    ],
+    [
+     1,
+     0,
+     5
+    ],
+    [
+     1,
+     2,
+     6
+    ],
+    [
+     1,
+     3,
+     3
+    ],
+    [
+     1,
+     3,
+     4
+    ],
+    [
+     1,
+     4,
+     3
+    ],
+    [
+     1,
+     5,
+     0
+    ],
+    [
+     1,
+     5,
+     6
+    ],
+    [
+     1,
+     6,
+     2
+    ],
+    [
+     1,
+     6,
+     5
+    ],
+    [
+     2,
+     1,
+     6
+    ],
+    [
+     2,
+     3,
+     5
+    ],
+    [
+     2,
+     3,
+     6
+    ],
+    [
+     2,
+     5,
+     3
+    ],
+    [
+     2,
+     6,
+     1
+    ],
+    [
+     2,
+     6,
+     3
+    ],
+    [
+     2,
+     6,
+     6
+    ],
+    [
+     3,
+     0,
+     3
+    ],
+    [
+     3,
+     0,
+     4
+    ],
+    [
+     3,
+     1,
+     3
+    ],
+    [
+     3,
+     1,
+     4
+    ],
+    [
+     3,
+     2,
+     5
+    ],
+    [
+     3,
+     2,
+     6
+    ],
+    [
+     3,
+     3,
+     0
+    ],
+    [
+     3,
+     3,
+     1
+    ],
+    [
+     3,
+     3,
+     5
+    ],
+    [
+     3,
+     3,
+     6
+    ],
+    [
+     3,
+     4,
+     0
+    ],
+    [
+     3,
+     4,
+     1
+    ],
+    [
+     3,
+     5,
+     2
+    ],
+    [
+     3,
+     5,
+     3
+    ],
+    [
+     3,
+     6,
+     2
+    ],
+    [
+     3,
+     6,
+     3
+    ],
+    [
+     4,
+     0,
+     0
+    ],
+    [
+     4,
+     0,
+     3
+    ],
+    [
+     4,
+     0,
+     5
+    ],
+    [
+     4,
+     1,
+     3
+    ],
+    [
+     4,
+     3,
+     0
+    ],
+    [
+     4,
+     3,
+     1
+    ],
+    [
+     4,
+     5,
+     0
+    ],
+    [
+     5,
+     0,
+     1
+    ],
+    [
+     5,
+     0,
+     4
+    ],
+    [
+     5,
+     1,
+     0
+    ],
+    [
+     5,
+     1,
+     6
+    ],
+    [
+     5,
+     2,
+     3
+    ],
+    [
+     5,
+     3,
+     2
+    ],
+    [
+     5,
+     3,
+     3
+    ],
+    [
+     5,
+     4,
+     0
+    ],
+    [
+     5,
+     6,
+     1
+    ],
+    [
+     6,
+     1,
+     2
+    ],
+    [
+     6,
+     1,
+     5
+    ],
+    [
+     6,
+     2,
+     1
+    ],
+    [
+     6,
+     2,
+     3
+    ],
+    [
+     6,
+     2,
+     6
+    ],
+    [
+     6,
+     3,
+     2
+    ],
+    [
+     6,
+     3,
+     3
+    ],
+    [
+     6,
+     5,
+     1
+    ],
+    [
+     6,
+     6,
+     2
+    ]
+   ],
+   "norm_near": 1.0,
+   "null_dim": 0,
+   "p_far": 0.03198720939027626,
+   "p_near": 0.0026373690839250974,
+   "p_near_offsite": 0.0,
+   "pd_domain_accounting_ok": true,
+   "pd_sites": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     1
+    ],
+    [
+     0,
+     0,
+     2
+    ],
+    [
+     0,
+     0,
+     3
+    ],
+    [
+     0,
+     0,
+     5
+    ],
+    [
+     0,
+     0,
+     6
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     1,
+     1
+    ],
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     3
+    ],
+    [
+     0,
+     1,
+     4
+    ],
+    [
+     0,
+     1,
+     6
+    ],
+    [
+     0,
+     2,
+     0
+    ],
+    [
+     0,
+     2,
+     1
+    ],
+    [
+     0,
+     2,
+     2
+    ],
+    [
+     0,
+     2,
+     3
+    ],
+    [
+     0,
+     2,
+     4
+    ],
+    [
+     0,
+     2,
+     5
+    ],
+    [
+     0,
+     2,
+     6
+    ],
+    [
+     0,
+     3,
+     0
+    ],
+    [
+     0,
+     3,
+     1
+    ],
+    [
+     0,
+     3,
+     2
+    ],
+    [
+     0,
+     3,
+     5
+    ],
+    [
+     0,
+     3,
+     6
+    ],
+    [
+     0,
+     4,
+     1
+    ],
+    [
+     0,
+     4,
+     2
+    ],
+    [
+     0,
+     4,
+     4
+    ],
+    [
+     0,
+     4,
+     6
+    ],
+    [
+     0,
+     5,
+     0
+    ],
+    [
+     0,
+     5,
+     2
+    ],
+    [
+     0,
+     5,
+     3
+    ],
+    [
+     0,
+     5,
+     5
+    ],
+    [
+     0,
+     5,
+     6
+    ],
+    [
+     0,
+     6,
+     0
+    ],
+    [
+     0,
+     6,
+     1
+    ],
+    [
+     0,
+     6,
+     2
+    ],
+    [
+     0,
+     6,
+     3
+    ],
+    [
+     0,
+     6,
+     4
+    ],
+    [
+     0,
+     6,
+     5
+    ],
+    [
+     0,
+     6,
+     6
+    ],
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     0,
+     1
+    ],
+    [
+     1,
+     0,
+     2
+    ],
+    [
+     1,
+     0,
+     3
+    ],
+    [
+     1,
+     0,
+     4
+    ],
+    [
+     1,
+     0,
+     6
+    ],
+    [
+     1,
+     1,
+     0
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     2
+    ],
+    [
+     1,
+     1,
+     3
+    ],
+    [
+     1,
+     1,
+     4
+    ],
+    [
+     1,
+     1,
+     5
+    ],
+    [
+     1,
+     1,
+     6
+    ],
+    [
+     1,
+     2,
+     0
+    ],
+    [
+     1,
+     2,
+     1
+    ],
+    [
+     1,
+     2,
+     2
+    ],
+    [
+     1,
+     2,
+     3
+    ],
+    [
+     1,
+     2,
+     4
+    ],
+    [
+     1,
+     2,
+     5
+    ],
+    [
+     1,
+     3,
+     0
+    ],
+    [
+     1,
+     3,
+     1
+    ],
+    [
+     1,
+     3,
+     2
+    ],
+    [
+     1,
+     3,
+     5
+    ],
+    [
+     1,
+     3,
+     6
+    ],
+    [
+     1,
+     4,
+     0
+    ],
+    [
+     1,
+     4,
+     1
+    ],
+    [
+     1,
+     4,
+     2
+    ],
+    [
+     1,
+     4,
+     4
+    ],
+    [
+     1,
+     4,
+     5
+    ],
+    [
+     1,
+     4,
+     6
+    ],
+    [
+     1,
+     5,
+     1
+    ],
+    [
+     1,
+     5,
+     2
+    ],
+    [
+     1,
+     5,
+     3
+    ],
+    [
+     1,
+     5,
+     4
+    ],
+    [
+     1,
+     5,
+     5
+    ],
+    [
+     1,
+     6,
+     0
+    ],
+    [
+     1,
+     6,
+     1
+    ],
+    [
+     1,
+     6,
+     3
+    ],
+    [
+     1,
+     6,
+     4
+    ],
+    [
+     1,
+     6,
+     6
+    ],
+    [
+     2,
+     0,
+     0
+    ],
+    [
+     2,
+     0,
+     1
+    ],
+    [
+     2,
+     0,
+     2
+    ],
+    [
+     2,
+     0,
+     3
+    ],
+    [
+     2,
+     0,
+     4
+    ],
+    [
+     2,
+     0,
+     5
+    ],
+    [
+     2,
+     0,
+     6
+    ],
+    [
+     2,
+     1,
+     0
+    ],
+    [
+     2,
+     1,
+     1
+    ],
+    [
+     2,
+     1,
+     2
+    ],
+    [
+     2,
+     1,
+     3
+    ],
+    [
+     2,
+     1,
+     4
+    ],
+    [
+     2,
+     1,
+     5
+    ],
+    [
+     2,
+     2,
+     0
+    ],
+    [
+     2,
+     2,
+     1
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     2,
+     2,
+     4
+    ],
+    [
+     2,
+     2,
+     5
+    ],
+    [
+     2,
+     2,
+     6
+    ],
+    [
+     2,
+     3,
+     0
+    ],
+    [
+     2,
+     3,
+     1
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     2,
+     3,
+     4
+    ],
+    [
+     2,
+     4,
+     0
+    ],
+    [
+     2,
+     4,
+     1
+    ],
+    [
+     2,
+     4,
+     2
+    ],
+    [
+     2,
+     4,
+     3
+    ],
+    [
+     2,
+     4,
+     4
+    ],
+    [
+     2,
+     4,
+     5
+    ],
+    [
+     2,
+     4,
+     6
+    ],
+    [
+     2,
+     5,
+     0
+    ],
+    [
+     2,
+     5,
+     1
+    ],
+    [
+     2,
+     5,
+     2
+    ],
+    [
+     2,
+     5,
+     4
+    ],
+    [
+     2,
+     5,
+     5
+    ],
+    [
+     2,
+     5,
+     6
+    ],
+    [
+     2,
+     6,
+     0
+    ],
+    [
+     2,
+     6,
+     2
+    ],
+    [
+     2,
+     6,
+     4
+    ],
+    [
+     2,
+     6,
+     5
+    ],
+    [
+     3,
+     0,
+     0
+    ],
+    [
+     3,
+     0,
+     1
+    ],
+    [
+     3,
+     0,
+     2
+    ],
+    [
+     3,
+     0,
+     5
+    ],
+    [
+     3,
+     0,
+     6
+    ],
+    [
+     3,
+     1,
+     0
+    ],
+    [
+     3,
+     1,
+     1
+    ],
+    [
+     3,
+     1,
+     2
+    ],
+    [
+     3,
+     1,
+     5
+    ],
+    [
+     3,
+     1,
+     6
+    ],
+    [
+     3,
+     2,
+     0
+    ],
+    [
+     3,
+     2,
+     1
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     4
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     3,
+     4
+    ],
+    [
+     3,
+     4,
+     2
+    ],
+    [
+     3,
+     4,
+     3
+    ],
+    [
+     3,
+     4,
+     4
+    ],
+    [
+     3,
+     4,
+     5
+    ],
+    [
+     3,
+     4,
+     6
+    ],
+    [
+     3,
+     5,
+     0
+    ],
+    [
+     3,
+     5,
+     1
+    ],
+    [
+     3,
+     5,
+     4
+    ],
+    [
+     3,
+     5,
+     5
+    ],
+    [
+     3,
+     5,
+     6
+    ],
+    [
+     3,
+     6,
+     0
+    ],
+    [
+     3,
+     6,
+     1
+    ],
+    [
+     3,
+     6,
+     4
+    ],
+    [
+     3,
+     6,
+     5
+    ],
+    [
+     3,
+     6,
+     6
+    ],
+    [
+     4,
+     0,
+     1
+    ],
+    [
+     4,
+     0,
+     2
+    ],
+    [
+     4,
+     0,
+     4
+    ],
+    [
+     4,
+     0,
+     6
+    ],
+    [
+     4,
+     1,
+     0
+    ],
+    [
+     4,
+     1,
+     1
+    ],
+    [
+     4,
+     1,
+     2
+    ],
+    [
+     4,
+     1,
+     4
+    ],
+    [
+     4,
+     1,
+     5
+    ],
+    [
+     4,
+     1,
+     6
+    ],
+    [
+     4,
+     2,
+     0
+    ],
+    [
+     4,
+     2,
+     1
+    ],
+    [
+     4,
+     2,
+     2
+    ],
+    [
+     4,
+     2,
+     3
+    ],
+    [
+     4,
+     2,
+     4
+    ],
+    [
+     4,
+     2,
+     5
+    ],
+    [
+     4,
+     2,
+     6
+    ],
+    [
+     4,
+     3,
+     2
+    ],
+    [
+     4,
+     3,
+     3
+    ],
+    [
+     4,
+     3,
+     4
+    ],
+    [
+     4,
+     3,
+     5
+    ],
+    [
+     4,
+     3,
+     6
+    ],
+    [
+     4,
+     4,
+     0
+    ],
+    [
+     4,
+     4,
+     1
+    ],
+    [
+     4,
+     4,
+     2
+    ],
+    [
+     4,
+     4,
+     3
+    ],
+    [
+     4,
+     4,
+     4
+    ],
+    [
+     4,
+     4,
+     5
+    ],
+    [
+     4,
+     4,
+     6
+    ],
+    [
+     4,
+     5,
+     1
+    ],
+    [
+     4,
+     5,
+     2
+    ],
+    [
+     4,
+     5,
+     3
+    ],
+    [
+     4,
+     5,
+     4
+    ],
+    [
+     4,
+     5,
+     5
+    ],
+    [
+     4,
+     5,
+     6
+    ],
+    [
+     4,
+     6,
+     0
+    ],
+    [
+     4,
+     6,
+     1
+    ],
+    [
+     4,
+     6,
+     2
+    ],
+    [
+     4,
+     6,
+     3
+    ],
+    [
+     4,
+     6,
+     4
+    ],
+    [
+     4,
+     6,
+     5
+    ],
+    [
+     4,
+     6,
+     6
+    ],
+    [
+     5,
+     0,
+     0
+    ],
+    [
+     5,
+     0,
+     2
+    ],
+    [
+     5,
+     0,
+     3
+    ],
+    [
+     5,
+     0,
+     5
+    ],
+    [
+     5,
+     0,
+     6
+    ],
+    [
+     5,
+     1,
+     1
+    ],
+    [
+     5,
+     1,
+     2
+    ],
+    [
+     5,
+     1,
+     3
+    ],
+    [
+     5,
+     1,
+     4
+    ],
+    [
+     5,
+     1,
+     5
+    ],
+    [
+     5,
+     2,
+     0
+    ],
+    [
+     5,
+     2,
+     1
+    ],
+    [
+     5,
+     2,
+     2
+    ],
+    [
+     5,
+     2,
+     4
+    ],
+    [
+     5,
+     2,
+     5
+    ],
+    [
+     5,
+     2,
+     6
+    ],
+    [
+     5,
+     3,
+     0
+    ],
+    [
+     5,
+     3,
+     1
+    ],
+    [
+     5,
+     3,
+     4
+    ],
+    [
+     5,
+     3,
+     5
+    ],
+    [
+     5,
+     3,
+     6
+    ],
+    [
+     5,
+     4,
+     1
+    ],
+    [
+     5,
+     4,
+     2
+    ],
+    [
+     5,
+     4,
+     3
+    ],
+    [
+     5,
+     4,
+     4
+    ],
+    [
+     5,
+     4,
+     5
+    ],
+    [
+     5,
+     4,
+     6
+    ],
+    [
+     5,
+     5,
+     0
+    ],
+    [
+     5,
+     5,
+     1
+    ],
+    [
+     5,
+     5,
+     2
+    ],
+    [
+     5,
+     5,
+     3
+    ],
+    [
+     5,
+     5,
+     4
+    ],
+    [
+     5,
+     5,
+     5
+    ],
+    [
+     5,
+     5,
+     6
+    ],
+    [
+     5,
+     6,
+     0
+    ],
+    [
+     5,
+     6,
+     2
+    ],
+    [
+     5,
+     6,
+     3
+    ],
+    [
+     5,
+     6,
+     4
+    ],
+    [
+     5,
+     6,
+     5
+    ],
+    [
+     5,
+     6,
+     6
+    ],
+    [
+     6,
+     0,
+     0
+    ],
+    [
+     6,
+     0,
+     1
+    ],
+    [
+     6,
+     0,
+     2
+    ],
+    [
+     6,
+     0,
+     3
+    ],
+    [
+     6,
+     0,
+     4
+    ],
+    [
+     6,
+     0,
+     5
+    ],
+    [
+     6,
+     0,
+     6
+    ],
+    [
+     6,
+     1,
+     0
+    ],
+    [
+     6,
+     1,
+     1
+    ],
+    [
+     6,
+     1,
+     3
+    ],
+    [
+     6,
+     1,
+     4
+    ],
+    [
+     6,
+     1,
+     6
+    ],
+    [
+     6,
+     2,
+     0
+    ],
+    [
+     6,
+     2,
+     2
+    ],
+    [
+     6,
+     2,
+     4
+    ],
+    [
+     6,
+     2,
+     5
+    ],
+    [
+     6,
+     3,
+     0
+    ],
+    [
+     6,
+     3,
+     1
+    ],
+    [
+     6,
+     3,
+     4
+    ],
+    [
+     6,
+     3,
+     5
+    ],
+    [
+     6,
+     3,
+     6
+    ],
+    [
+     6,
+     4,
+     0
+    ],
+    [
+     6,
+     4,
+     1
+    ],
+    [
+     6,
+     4,
+     2
+    ],
+    [
+     6,
+     4,
+     3
+    ],
+    [
+     6,
+     4,
+     4
+    ],
+    [
+     6,
+     4,
+     5
+    ],
+    [
+     6,
+     4,
+     6
+    ],
+    [
+     6,
+     5,
+     0
+    ],
+    [
+     6,
+     5,
+     2
+    ],
+    [
+     6,
+     5,
+     3
+    ],
+    [
+     6,
+     5,
+     4
+    ],
+    [
+     6,
+     5,
+     5
+    ],
+    [
+     6,
+     5,
+     6
+    ],
+    [
+     6,
+     6,
+     0
+    ],
+    [
+     6,
+     6,
+     1
+    ],
+    [
+     6,
+     6,
+     3
+    ],
+    [
+     6,
+     6,
+     4
+    ],
+    [
+     6,
+     6,
+     5
+    ],
+    [
+     6,
+     6,
+     6
+    ]
+   ],
+   "periodic_anchor_defect": 7.000456943018207e-07,
+   "periodic_anchor_momenta": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     0
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     2,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "periodic_anchor_scale": 16.0,
+   "port_outflow_total": 1,
+   "ports": [
+    [
+     6,
+     3,
+     3
+    ],
+    [
+     0,
+     3,
+     3
+    ],
+    [
+     3,
+     6,
+     3
+    ],
+    [
+     3,
+     0,
+     3
+    ],
+    [
+     3,
+     3,
+     6
+    ],
+    [
+     3,
+     3,
+     0
+    ]
+   ],
+   "probe_boundary_gap": 0.02062162261398498,
+   "probe_locality_leak": 0.0,
+   "probe_locality_leak_under_wrapped_stencil": 0.0050000000000000044,
+   "probe_locality_moved": 0.029999999999999916,
+   "probe_n_boundary_sites": 218,
+   "probe_n_non_readers": 339,
+   "probe_n_not_pd": 0,
+   "probe_n_readers": 4,
+   "probe_pd_min": 0.9596045298289001,
+   "probe_site": [
+    0,
+    0,
+    0
+   ],
+   "regular_residual": 1.1281235463812079e-12,
+   "revert_delta_K": 0.0,
+   "revert_delta_K_cert": 0.0,
+   "revert_delta_b": 0.0,
+   "revert_delta_eps": 0.0,
+   "revert_delta_p_cert": 0.0,
+   "revert_delta_p_near": 0.0,
+   "revert_delta_rho": 0.0,
+   "revert_scales": {
+    "K": 1.1485226990910895,
+    "K_cert": 1.0,
+    "b": 2.182292086962299,
+    "eps": 1.921096242346071,
+    "rho": 1.0
+   },
+   "rho_anchor": 0.17,
+   "rho_covariance_defect_24": 0.0,
+   "rho_interior_support": [
+    [
+     3,
+     3,
+     3
+    ]
+   ],
+   "rho_locality_defect": 0.0,
+   "rho_locality_moved": 0.17000000000000004,
+   "rho_locality_n_unchanged_sites": 341,
+   "rho_port": -0.51,
+   "rotation_mismatches": 0,
+   "seconds": 2.8187230419716798,
+   "sigma_flips": true,
+   "sigma_y_quadrature": {
+    "-1": -0.10257511137191622,
+    "1": 0.10257511137191622
+   },
+   "smallest_abs_eig": 0.011046029734520318,
+   "unitarity_defect": 2.220446049250313e-16,
+   "vacuum_U_defect": 7.771561172376096e-16,
+   "vacuum_p": 0.0,
+   "wrapped_boundary_gap": 0.9990823370279743,
+   "wrapped_interior_gap_diagnostic_structurally_zero": 0.0
+  }
+ },
+ "sizes_declared": [
+  3,
+  6,
+  7
+ ],
+ "sizes_run": [
+  3,
+  6,
+  7
+ ],
+ "tests_passed": 30,
+ "tests_total": 42,
+ "thinned_run": false,
+ "tolerance_meanings": {
+  "F7_repair": "the draft declared ONE MACHINE_TOL as absolute and then used it as a relative multiplier; the two meanings are now two names with the same numeric value, so no verdict was loosened, and every relative row reports the scale it divided by",
+  "MACHINE_ABS_TOL": "absolute agreement of two float computations of one dimensionless O(1) object (probabilities, parities)",
+  "MACHINE_REL_TOL": "agreement relative to the object's COMPUTED scale max(1, |object|_max); dimensionful objects only"
+ },
+ "tolerances": {
+  "ANCHOR_TOL": 1e-05,
+  "COFRAME_PD_MARGIN": 1e-06,
+  "EXACT_TOL": 1e-12,
+  "FD_E2E_REL_TOL": 0.0001,
+  "FD_H": 0.0001,
+  "FD_H_ACTION": 0.0001,
+  "FD_ORDER": 2.0,
+  "FD_ORDER_TOL": 0.15,
+  "GIVENS_SKIP": 1e-14,
+  "GIVENS_TOL": 1e-10,
+  "LEAK_TOL": 1e-12,
+  "LOCALITY_MIN_SEP": 2,
+  "MACHINE_ABS_TOL": 1e-09,
+  "MACHINE_REL_TOL": 1e-09,
+  "NULL_TOL": 1e-08,
+  "PROBE_AMP": 0.01,
+  "SIGNAL": 1e-06,
+  "SYM_TOL": 1e-10,
+  "UNITARY_TOL": 1e-11,
+  "WALL_BUDGET_S": 600.0
+ }
+}

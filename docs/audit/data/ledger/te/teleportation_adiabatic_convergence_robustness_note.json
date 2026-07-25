@@ -1,31 +1,117 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T13:25:25.450259+00:00",
+  "audit_invocation_history": [
+    "b13d84e44fd84f8b89353ffc33e41b29"
+  ],
+  "audit_invocation_id": "b13d84e44fd84f8b89353ffc33e41b29",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "exists": true,
+      "runner_path": "scripts/frontier_teleportation_adiabatic_convergence_robustness.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {
+      "scripts/frontier_bell_inequality.py": "1a290c8e305c53084825076a409452857feeb44d7414e1d69eb8648fff115689",
+      "scripts/frontier_teleportation_adiabatic_prep_probe.py": "4bfb8c77de9afd3311fc523f85664520673722b875d0265890ef0c7875afa972",
+      "scripts/frontier_teleportation_adiabatic_time_evolution.py": "283ef2eeba63121639f1ea556bea129eca2ced287a67914e6afeb9ec016c6849",
+      "scripts/frontier_teleportation_resource_fidelity.py": "d9ca0c36744f9aa71687c58e8fcd1437471a39eefac4857d920096d3a60e10e9",
+      "scripts/frontier_teleportation_resource_from_poisson.py": "3535f2d33e0abe98f2f921ab66dc0288a0293c8370a763189cc00708ac599ace"
+    },
+    "load_bearing_score": 0.0,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_bell_inequality.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "1a290c8e305c53084825076a409452857feeb44d7414e1d69eb8648fff115689",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_teleportation_adiabatic_convergence_robustness.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "8424847aa8d9c26f3602d49373f7a4c792093037d4cf51a550a36f24cf427e49",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_teleportation_adiabatic_prep_probe.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "4bfb8c77de9afd3311fc523f85664520673722b875d0265890ef0c7875afa972",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_teleportation_adiabatic_time_evolution.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "283ef2eeba63121639f1ea556bea129eca2ced287a67914e6afeb9ec016c6849",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_teleportation_resource_fidelity.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "d9ca0c36744f9aa71687c58e8fcd1437471a39eefac4857d920096d3a60e10e9",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_teleportation_resource_from_poisson.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "3535f2d33e0abe98f2f921ab66dc0288a0293c8370a763189cc00708ac599ace",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "8424847aa8d9c26f3602d49373f7a4c792093037d4cf51a550a36f24cf427e49",
+    "runner_path": "scripts/frontier_teleportation_adiabatic_convergence_robustness.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-9395cfe4",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The finite matrix-model convergence and control checks close numerically, including the independent propagator comparison and the manually checked fidelity relation. The restricted packet does not derive the selected Hamiltonian/ramp or coordinate last-bit carrier/readout from the framework premise surface.",
   "claim_id": "teleportation_adiabatic_convergence_robustness_note",
-  "claim_scope": null,
+  "claim_scope": "Finite-time convergence and small-control robustness of the 2D 4x4 smoothstep T=40 candidate as an ideal reduced taste-qubit teleportation diagnostic.",
   "claim_type": "open_gate",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_last_reviewed": "2026-07-25T13:25:25.450259+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [
     "scripts/frontier_bell_inequality.py",
     "scripts/frontier_teleportation_adiabatic_prep_probe.py",
@@ -33,16 +119,17 @@
     "scripts/frontier_teleportation_resource_fidelity.py",
     "scripts/frontier_teleportation_resource_from_poisson.py"
   ],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "This supports treating the T=40, 320-step row as numerically stable for this first artifact.",
+  "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "66958ee3c85518aaab87ca18e8eb6e52cd72422fb107151eeb5a52ab76ef5b1f",
   "note_path": "docs/TELEPORTATION_ADIABATIC_CONVERGENCE_ROBUSTNESS_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "missing_bridge_theorem: add retained dependencies deriving the selected Poisson/staggered Hamiltonian path and last-taste carrier/readout, or narrow the source to an abstract coordinate-bit reduced-state diagnostic.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-fresh-agent",
   "previous_audits": [
@@ -93,12 +180,12 @@
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
-    "C": 0,
+    "C": 11,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 11
   },
   "runner_path": "scripts/frontier_teleportation_adiabatic_convergence_robustness.py",
   "title": "Teleportation Adiabatic Convergence and Robustness Note",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: The matrix computation supports the reported convergence and finite controls, but no cited authority derives the uniform-hopping/Poisson Hamiltonian and coordinate last-bit trace as the claimed Kogut-Susskind taste-qubit carrier/readout. Why this blocks: the runner computes consistently after those choices but does not derive their physical identification from the supplied premise surface. Repair target: cite retained Hamiltonian/ramp and carrier/readout derivations, or narrow the note to an abstract finite-model coordinate-bit diagnostic. Claim boundary until fixed: the T=40, 320-step finite-model numbers and listed comparisons are supported, not a native preparation or physical-readout theorem."
 }

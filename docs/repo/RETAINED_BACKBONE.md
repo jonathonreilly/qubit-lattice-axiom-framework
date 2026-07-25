@@ -16,12 +16,12 @@ file per claim), summarized in
 
 | Metric | Value |
 |---|---:|
-| Retained positive rows | 112 |
+| Retained positive rows | 113 |
 | Retained bounded rows | 337 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 26 |
 
-## Retained positive rows (112)
+## Retained positive rows (113)
 
 Sorted by load-bearing graph score (descending).
 
@@ -122,6 +122,7 @@ Sorted by load-bearing graph score (descending).
 - [`powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20`](../../docs/POWERS_UHF_TRACIAL_UNIQUENESS_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md) — score 1.500; audited 2026-07-25T13:31:02.550349+00:00
 - [`staggered_graph_gauge_closure_results_2026-04-10`](../../docs/STAGGERED_GRAPH_GAUGE_CLOSURE_RESULTS_2026-04-10.md) — score 1.500; audited 2026-05-08T03:01:03.682496+00:00
 - [`acphilambda_c3_resolvent_determinant_holonomy_coupling_narrow_theorem_note_2026-07-12`](../../docs/ACPHILAMBDA_C3_RESOLVENT_DETERMINANT_HOLONOMY_COUPLING_NARROW_THEOREM_NOTE_2026-07-12.md) — score 0.000; audited 2026-07-12T19:01:41Z
+- [`alpha_s_heavy_threshold_matching_kernel_theorem_note_2026-06-18`](../../docs/ALPHA_S_HEAVY_THRESHOLD_MATCHING_KERNEL_THEOREM_NOTE_2026-06-18.md) — score 0.000; audited 2026-07-25T17:20:33.273091+00:00
 - [`bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28`](../../docs/BBN_ETA10_TO_OMEGA_B_H2_COEFFICIENT_ADMISSION_BRIDGE_BOUNDED_NOTE_2026-05-28.md) — score 0.000; audited 2026-07-25T17:19:01.367351+00:00
 - [`central_band_born_largen_note`](../../docs/CENTRAL_BAND_BORN_LARGEN_NOTE.md) — score 0.000; audited 2026-05-17T15:17:37.837536+00:00
 - [`dm_lepton_synthesis_note_2026-04-19`](../../docs/DM_LEPTON_SYNTHESIS_NOTE_2026-04-19.md) — score 0.000; audited 2026-04-30T19:20:01.270753+00:00

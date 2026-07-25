@@ -197,3 +197,119 @@ positivity. If one of them fails a constraint the menu collapses to
 a point and the result inverts into a FORCING theorem, which would be
 even better. I expect both to survive, but the adversarial wave must
 try hard to kill one of them.
+
+---
+
+## WAVE 2 RESULT (2026-07-25): the Wave 1 headline is PRIOR ART. Second occurrence.
+
+**All three agents independently found it.** The entire Wave 1
+headline — commutant = `span{I, SWAP}`, the shift + positive-scale
+quotient leaving only `sign(b)`, "precisely two nonzero
+orientations", and the ground-sector reversal — is already in the
+corpus **verbatim**, dated **2026-07-14** (eleven days before this
+campaign opened), across four surfaces under
+`docs/work_history/repo/review_feedback/`:
+`QUBIT_SYMMETRY_EXCHANGE_LAW_REDUCTION_PROBE_NOTE_2026-07-14.md:21-28,53-59`;
+`SINGLE_INVARIANT_ACTION_STEELMAN_ATTACK_NOTE_2026-07-14.md:152-159`;
+`RELATIONAL_QUBIT_...:67-69`; `FULL_LAW_INVENTORY_...:316-319,335-337`.
+**Two repo runners already compute it**
+(`scripts/qubit_symmetry_exchange_law_reduction_probe_2026_07_14.py:87-94,108-111,121,127-128`).
+
+Why Wave 1 missed it: it grepped `I - SWAP` while the prior art
+writes `-SWAP`; the surfaces live under `work_history/`; and **they
+carry no claim id and no ledger shard** (one says "Authority: none").
+
+**This is the SECOND prior-art failure in two consecutive campaigns.**
+The Koide campaign rediscovered a twelve-day-old theorem and dropped
+the half that refuted it; this campaign rediscovered an eleven-day-old
+result and dropped THREE limitations. The mandatory-prior-art rule
+was already in force and still failed, because the sweep was run on
+the conclusion's WORDING rather than on its MATHEMATICAL CONTENT.
+
+### THE THREE DROPPED LIMITATIONS, each of which bites
+
+1. **The premise CREATES the menu rather than narrowing it.** The
+   common-frame covariance reading is a NEW PHYSICAL PREMISE: under
+   *independent* onsite covariance the commutant is only the scalars
+   and NO nontrivial pair law survives at all. The two-point menu is
+   an artifact of choosing common-frame covariance.
+2. **"Exactly two" is FALSE for the matter law.** It holds only for
+   the two-site edge class under a supplied identical-pair-term
+   ansatz. At three sites, `H_1 + eta H_2` carries a dimensionless
+   `eta` moving a gap ratio 2 -> 1 that neither clock rescaling nor
+   energy shift removes (gated in the prior art, reproduced exactly).
+   So the completeness claim — the one thing I thought was new — is
+   wrong.
+3. **The "inert" identity shift is NOT inert** on a
+   record-conditioned active-edge set.
+
+**Fourth correction:** the claim that this fills the gap at
+`ACPHILAMBDA_RECORD_OUTCOME_...2026-07-04.md:110-116` is FALSE. That
+sentence is about "two inequivalent matter ACTIONS or Gaussian
+MEASURES"; the object here is a LOCAL INTERACTION. The residuals
+mismatch and the gap is not filled.
+
+### MY OWN VERIFIED SEPARATOR WAS WRONG
+
+I personally verified the band-minimum separator (`k = 0` vs
+`k = (pi,pi,pi)`) and reported it as solid. **It is not invariant.**
+The bipartite staggered relabeling gives exactly `D A D = -A`, moving
+the band minimum, so `k -> k + (pi,pi,pi)` IS `b -> -b` up to an
+inert constant; re-anchored, the two symbols are identical and both
+bands have width 12. The relabeling-proof invariant is the
+**ground-sector dimension** (singlet-1 vs triplet-3), which no
+unitary or antiunitary can move (`(W (x) W^dag) SWAP = -SWAP` is
+impossible for every `W`: `|tr W|^2 >= 0` vs `-4`). The prior art had
+the correct invariant; I checked the wrong one and it survived my
+check because it is true pointwise and false as an invariant.
+
+### THE ONE GENUINELY NEW RESULT (142/0 exact gates)
+
+**Spatial bond-reflection positivity kills `I - SWAP`.** With
+`exp(-beta H)`, the crossing-bond form is `m = (b/2) P E`,
+`E = diag(1,-1,1)`, and `det(m) = -(b/2)^3` for EVERY site-local
+frame `P` in `SO(3)`, so `b < 0` forces a positive eigenvalue and RP
+fails at small `beta` in every frame; the reflected Gram at the
+minimal reflected edge has eigenvalue `-2 e^{-beta} sinh(beta) < 0`
+for all `beta > 0`. `I + SWAP` survives.
+
+**But it is conditional on two supplied inputs, one of them serious:**
+a Gibbs measure, and an **IMPROPER lattice reflection** — and the
+axiom motion group is gated as PROPER (order 24, all `det = +1`;
+`diag(1,1,-1)` is absent). So the reflection doing the killing is not
+framework-native. Twelve other constraints (Admissibility, Record,
+cubic covariance, hermiticity, locality, spectral positivity, the
+kinetic-isotropy primitive at its exact boundary, doubling,
+sign-problem, temporal transfer positivity) each cut ZERO.
+
+Also noted: the repo's RP lane reflects in a TEMPORAL plane, which is
+why a temporal reflection cannot see this bit and a spatial one can;
+and `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28`
+is `audited_failed` on the live ledger.
+
+## CAMPAIGN DISPOSITION
+
+**No shippable positive from this wave.** The witness is prior art,
+its completeness claim is false, its separator was wrong, and the one
+new result rests on a non-framework-native reflection.
+
+**The durable finding is governance, and it is the same root cause as
+both prior-art failures:** significant, RUNNER-GATED results
+(Schur-Weyl commutant, the sign-of-`b` analysis, the ground-sector
+invariant, the three-site `eta` counterexample) are sitting in
+`docs/work_history/review_feedback/` as **unowned prose with no claim
+id and no ledger row**, one explicitly marked "Authority: none",
+while the lane's registered scaffolding is ~89-100% `unaudited` and
+carries 44 mutually circular prose/ledger contradictions. Two
+campaigns in a row burned a wave rediscovering that material. **The
+repo has a capture problem, not (only) a physics problem.**
+
+**Recommended next step, for the owner to choose:**
+(A) Land the 2026-07-14 material as a proper claim-id'd note with the
+    ledger row it never got — converting unowned prose into a citable
+    authority, which is cheap and stops the rediscovery loop; or
+(B) Attack the actual open physics the prior art names: whether
+    common-frame covariance is forced or supplied — since under
+    independent-onsite covariance there is NO menu, that single
+    question decides whether the matter law is underdetermined at all.
+    That is the real gate and it is now sharply stated.

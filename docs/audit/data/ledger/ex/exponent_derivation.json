@@ -1,24 +1,45 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T19:06:14.342644+00:00",
+  "audit_invocation_history": [
+    "c412e21a18894bbc8b91feca63c098ca"
+  ],
+  "audit_invocation_id": "c412e21a18894bbc8b91feca63c098ca",
+  "audit_state_snapshot": {
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "matched_2d_4d_decoherence_note": "Pinned matched 2D-vs-4D decoherence replay for the named generator routines and default arguments, showing the reported pur_min/<k>/r4 table and alpha delta do not support 4D exponent flattening in this bounded pocket."
+    },
+    "dep_claim_type": {
+      "matched_2d_4d_decoherence_note": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "matched_2d_4d_decoherence_note": "retained_bounded"
+    },
+    "deps": [
+      "matched_2d_4d_decoherence_note"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 0.0,
+    "runner_hash": "75b68fcd68009a341ce4e67d3170d660fce961f558de50a5f528ca5e7d9a16fc",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-audit-batch-A-20260725-9defbe8b",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The retained-bounded authority supplies the matched rows and exponent fits; independently, -2.704 < -0.158 and -2.704 - (-0.158) = -2.546, so the bounded scope-repair conclusion follows. No claim beyond the current matched harness is ratified.",
   "claim_id": "exponent_derivation",
-  "claim_scope": null,
+  "claim_scope": "Audited only the bounded scope-repair claim that the old dimension-only exponent story remains heuristic and is blocked from theorem status by the retained matched 2D/4D replay.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T19:06:14.342644+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,19 +47,20 @@
     "matched_2d_4d_decoherence_note"
   ],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "retained_bounded",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The matched replay is not evidence for the old \u201chigher dimension makes alpha flatter\u201d reading in the matched pocket.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "11262e40c7f18201c4eb8bd68adcc60d8f1a9bcbb1f54288bc507462f6b722c1",
   "note_path": "docs/EXPONENT_DERIVATION.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Re-check only the non-load-bearing runner line setting old_prediction=-1.5/3; the audited conclusion relies instead on the supplied exponent ordering and exact delta.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -263,14 +285,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
+    "A": 13,
+    "B": 9,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 22
   },
   "runner_path": "scripts/frontier_exponent_derivation_scope_repair.py",
   "title": "Decoherence Exponent Dimensional-Heuristic Boundary Note",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "The supplied retained-bounded authority reproduces exactly the five rows and fitted exponents used here. Independently, the exponent difference is -2.546, the 4D estimate is farther from zero than the 2D estimate, and all five mean-degree differences are 0.24\u20130.36, below the runner\u2019s 0.40 criterion; therefore the narrow matched-pocket scope repair closes. The runner checks copied inputs and source firewalls rather than recomputing the fits, but the audited scope does not present those fits as a new first-principles result."
 }

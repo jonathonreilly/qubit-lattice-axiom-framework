@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/free_staggered_d_dimensional_two_step_many_body_transfer_2026_07_20.py
+runner_sha256: 196dc97003ff066ac7d9b397e1e08e77a02929a2fc79a2ebed73b4680df1ad9e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.64
+status: ok
+----- stdout -----
+PASS: G1 corner algebra rebuilt from the fold rule (d = 2, 3): Gamma_mu Hermitian, Gamma_mu^2 = I, anticommuting, S(k)^2 = (sum_mu s_mu^2) I with SYMBOLIC s_mu (scalar square), and the general-period mode count prod(L_mu/2) * 2^d = prod L_mu (d = 3 symbolic)
+PASS: G2 SUPPORT-ONLY degenerate L = 2 mass-only recurrence (mode counts 2^2, 2^3): H_hop = 0 EXACTLY at L = 2, so this gate carries NO d-dimensional content and does not exercise the staggered phases or S(k); it checks only the mass-only minimal polynomial T^2 - (2+4m^2)T + I = 0 and that trace pins multiplicity 2^d for each of e^{+-2 arcsinh m} (symbolic m)
+PASS: G3 d = 2, L = 4 position-space faithfulness: H_hop is real antisymmetric with charpoly(H_hop^2) = lam^4 (lam+1)^8 (lam+2)^4 (eigenvalues -(sin^2 p1 + sin^2 p2) with the exact multiplicities; exercises the staggered phases)
+PASS: G4 corner-coupled block (d = 2): at k = (pi/2, pi/2), S = Gamma_1 + Gamma_2 with S^2 = 2I (genuine off-diagonal coupling), and at k = (pi/2, 0); minimal polynomial T^2 - (2+4R)T + I = 0 with R = m^2 + Sigma and trace 4(2+4R) => multiplicity 2^d = 4 per eigenvalue (symbolic m)
+PASS: G5 per-mode Riesz projectors (symbolic sigma, m): idempotent, orthogonal, complete, eigen-relations; reciprocity Lp Lm = 1; strict split via R(1+R) - R^2 = R > 0 and Lm = (sqrt(1+R) - sqrt(R))^2 in (0,1) as a square with reciprocal partner
+PASS: G6 one-mode coherent->exterior bridge GIVEN the supplied exponential kernel form (a conditional input, per the RP note; supplying that form IS the coherent-state form of the operator identification, so this gate cannot and does not derive it): normal-ordered kernel of diag(1, lambda) equals exp(lambda w) exactly (nilpotent ring), vacuum element = 1, and the C-scaling leaves constant-term residual C - 1 whose zero set is C = 1 (a bookkeeping statement, NOT an independent discrimination)
+PASS: G7 SUPPORT-ONLY generic four-mode exterior/Jordan-Wigner bookkeeping (16-dim dense, FREE symbolic t; the mode count is the one d = 2, L = 2 instantiates, but the gate carries no d-dimensional content and never touches S(k), the staggered phases, or E_d): occupation Gamma = diag(t^|S|) intertwines every creation operator (for a diagonal kernel this check is sign-convention-blind — stated honestly), fixes the vacuum, AND the CAR anticommutators {a_i, a_j^dag} = delta_ij, {a_i^dag, a_j^dag} = 0 hold for all ordered pairs INCLUDING i = j (nilpotency) — these discriminate a JW-sign-stripping mutation of THIS runner's own matrices, i.e. they verify the chosen Fock representation satisfies the CAR; they do NOT derive the physical CAR metric, the reflected inner product, or the action-to-Fock identification; -log(t^|S|)/2 = E|S| at t = e^{-2E}, Tr = (1+t)^4 = det(I + t I), and B^T B = Gamma with B = kron^4 diag(1, sqrt(t))
+PASS: G8 SUPPORT-ONLY generic eight-mode subset bookkeeping (256-dim, subset-indexed scalars, NO dense matrix; the mode count is the one d = 3, L = 2 instantiates, but the gate carries no d-dimensional content): occupation-weight bookkeeping via action on basis vectors for all 8 modes (target and scalar only — for diagonal kernels the intertwiner carries no sign content; the JW-sign discrimination is G7's CAR gate), per-entry log identity, Tr = (1+t)^8 (both routes), and the B-square bookkeeping
+PASS: G9 canonical-pin discrimination (non-degenerate diag(2,3,5)): the W-conjugate preserves trace (= det(1+t) = 72); its multiplicativity conjunct is TRUE BY CONSTRUCTION of this diagonal instance and is NOT an independent oracle (the abstract conjugation argument is the corner note's); the genuine discriminations are that the W-conjugate BREAKS the creation intertwiner and the log identity while the canonical Gamma satisfies the intertwiner for every mode
+PASS: N1 dispersion note: phases, mode equation, fold rule, the only-dimension-dependent-step sentence, taste degeneracy, forward/backward channel, even periods, one-particle boundary
+PASS: N2 RP note: projector display, finite-norm selection sentence, coherent kernel, defining intertwiner, 1+1d scope
+PASS: N3 corner note: intertwiner, positive log, trace, direct sums, the pin sentence, the does-not-infer boundary, and the operator-identification prerequisite -- which this note does NOT discharge (it carries the same conditional to general d)
+PASS: N4 axiom memo supplies no dynamics
+PASS: N5 self-pin needles (anti-drift for the target note's RETRACTED-CLAIM boundary; NOT independent evidence)
+PASS: N6 ABSENCE gate on the target note's LIVE claim surface (YAML claim_scope + all body sections except the N5 rhetoric-audit bullet, which quotes the retractions verbatim): none of the round-2 RETRACTED phrases -- 'C = 1 derived', 'action-level', 'supplies the prerequisite', 'un-built bridge', 'operator identification the landed corner-note names as an unsupplied prerequisite', 'it does not infer -- it derives' -- may reappear; restoring any of them FAILS this gate (the N5 presence needles cannot detect restoration by themselves)
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

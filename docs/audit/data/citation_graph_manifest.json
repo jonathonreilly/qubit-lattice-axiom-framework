@@ -1,6 +1,6 @@
 {
- "edge_count": 14993,
- "node_count": 4481,
+ "edge_count": 14997,
+ "node_count": 4482,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -4953,6 +4953,10 @@
   "free_staggered_3plus1_same_action_transfer_gaussian_continuum_bounded_theorem_note_2026-07-12": {
    "deps_hash": "73a7a5f4762a",
    "out_degree": 5
+  },
+  "free_staggered_d_dimensional_two_step_many_body_transfer_identity_note_2026-07-20": {
+   "deps_hash": "c36c88957066",
+   "out_degree": 4
   },
   "free_staggered_pole_residue_dirac_carrier_car_relabeling_bounded_theorem_note_2026-07-17": {
    "deps_hash": "02cde96f4a48",

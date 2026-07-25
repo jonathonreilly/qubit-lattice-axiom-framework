@@ -1,24 +1,77 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T08:43:01.523302+00:00",
+  "audit_invocation_history": [
+    "7951c677fd304e8690662b26f73fb652"
+  ],
+  "audit_invocation_id": "7951c677fd304e8690662b26f73fb652",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true,
+      "runner_path": "scripts/action_universality_probe.py"
+    },
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "action_power_scaling_sweep_note": "Bounded replay on the fixed 3D ordered dense lattice with h=0.5, W=10, L=12, kernel 1/L^2 with h^2 measure, field s/r, and S=L(1-f^p), showing F\u221dM=p for p in {0.5, 0.75, 1.0, 1.5, 2.0} and monotonic tail steepening without promoting a universal tail law."
+    },
+    "dep_claim_type": {
+      "action_power_scaling_sweep_note": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "action_power_scaling_sweep_note": "retained_bounded"
+    },
+    "deps": [
+      "action_power_scaling_sweep_note"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 6.454,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/action_universality_probe.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "8fd9d0d7d21a8b8e27429666885a8a96f967e4971911cdc8db2d0156d2dfcc4f",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "8fd9d0d7d21a8b8e27429666885a8a96f967e4971911cdc8db2d0156d2dfcc4f",
+    "runner_path": "scripts/action_universality_probe.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 30
+  },
+  "audit_status": "audited_failed",
+  "auditor": "codex-audit-batch-A-20260725-5fcb2b01",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The runner reproduces the finite numerical rows, but not the stated selection rule: S=-Lf has \u2202S/\u2202f=-L<0 and is f-linear, yet the runner reports AWAY, exposing an unacknowledged baseline/free-phase condition. The asserted analytic 1/b bridge is also absent from the packet.",
   "claim_id": "action_uniqueness_note",
-  "claim_scope": null,
+  "claim_scope": "The reported Born cleanliness, response directions, and F~M exponents for the eight tested action laws on the fixed h=0.5, W=8, L=12 ordered-lattice family, together with the claimed valley-linear selection rule.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_last_reviewed": "2026-07-25T08:43:01.523302+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,19 +79,20 @@
     "action_power_scaling_sweep_note"
   ],
   "direct_in_degree": 3,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_failed",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_failed",
   "load_bearing_score": 6.454,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "\u201cNewtonian gravity = phase valley + f-linear at weak field.\u201d",
+  "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "982859030c522e770a8886a19faaf6f26e9414f23e73d224982b67dadd4c7a0d",
   "note_path": "docs/ACTION_UNIQUENESS_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Recheck the corrected phase-baseline criterion, an explicit signed-response exponent for S=-Lf, and any supplied 1/b derivation.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -166,12 +220,12 @@
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
-    "C": 0,
+    "C": 8,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 8
   },
   "runner_path": "scripts/action_universality_probe.py",
   "title": "Action Universality: F\u221dM exponent = power of f in the action",
   "transitive_descendants": 30,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: the note classifies S=-Lf as a phase hill even though its field derivative is negative, while its own runner reports that this f-linear valley gives AWAY. Why this blocks: the stated two-condition selection rule fails on a tested row and silently needs an additional background-phase condition such as g(0)=1; the claimed analytic 1/b result is also not supplied. Repair target: state and derive the missing baseline condition, add a signed-response check for S=-Lf, and supply or remove the 1/b derivation claim. Claim boundary until fixed: the finite numerical rows and the three tested weak-field-linear actions with an L background remain artifact-supported, but the necessity and selection-rule language is not established."
 }

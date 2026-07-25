@@ -1,24 +1,84 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T15:06:05.186693+00:00",
+  "audit_invocation_history": [
+    "fe03b4f8d89e4458978aac2a7563738c"
+  ],
+  "audit_invocation_id": "fe03b4f8d89e4458978aac2a7563738c",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 10,
+        "B": 3,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true,
+      "runner_path": "scripts/frontier_correlator_cycle_phases_dichotomy_2026_06_12.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {
+      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+      "realized_state_primitive": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+    },
+    "dep_claim_scope": {
+      "minimal_axioms": null,
+      "realized_state_primitive": null
+    },
+    "dep_claim_type": {
+      "minimal_axioms": "meta",
+      "realized_state_primitive": "meta"
+    },
+    "dep_effective_status": {
+      "minimal_axioms": "meta",
+      "realized_state_primitive": "meta"
+    },
+    "deps": [
+      "minimal_axioms",
+      "realized_state_primitive"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 0.0,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_correlator_cycle_phases_dichotomy_2026_06_12.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "b3e3b36286267b8d91c8440501429289b8ace7a6e6c3d7c66bd2c5e7f6f42d49",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "b3e3b36286267b8d91c8440501429289b8ace7a6e6c3d7c66bd2c5e7f6f42d49",
+    "runner_path": "scripts/frontier_correlator_cycle_phases_dichotomy_2026_06_12.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-f868bc09",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The proper rank-one/rank-two projector result closes, but the theorem\u2019s phrase \u201cany nonzero band spectral projector\u201d also includes the full-rank identity projector, whose directed edge product vanishes and whose phase is undefined. The runner checks only rank-one/rank-two projectors.",
   "claim_id": "correlator_cycle_phases_readback_blind_or_state_contingent_bounded_note_2026-06-12",
-  "claim_scope": null,
+  "claim_scope": "The identity-readback, proper rank-one/rank-two Fourier-projector, beta in {1,4} finite thermal, and symmetric |delta| inversion checks on the specified three-site Hermitian circulant family, including only the tested-class no-middleman boundary.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T15:06:05.186693+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -27,19 +87,24 @@
     "realized_state_primitive"
   ],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "For the classes actually tested by the runner, the only outcomes are readback, blindness, or state-contingent registered data.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls",
+    "derived_no_go_boundary",
+    "stretch_attempt_negative"
+  ],
   "note_hash": "d185ee30276c4182910099012ff3aee5c6307f2f4fb8e10f8f1e0d379121c10f",
   "note_path": "docs/CORRELATOR_CYCLE_PHASES_READBACK_BLIND_OR_STATE_CONTINGENT_BOUNDED_NOTE_2026-06-12.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "scope_too_broad: replace \u201cany nonzero band spectral projector\u201d with \u201cany proper nonzero rank-one/rank-two band spectral projector,\u201d explicitly exclude the full-rank identity projector because its cycle phase is undefined, and re-audit after the note hash changes.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1509,14 +1574,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
+    "A": 17,
+    "B": 13,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 30
   },
   "runner_path": "scripts/frontier_correlator_cycle_phases_dichotomy_2026_06_12.py",
   "title": "Tested Identity/Projector/Thermal Correlator Cycle Phases on the Circulant Surface Are Readback, Blind, or State-Contingent (Bounded)",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: the projector theorem quantifies over any nonzero band spectral projector, while the proof, repair scope, and runner cover only proper rank-one/rank-two projectors; the full-rank identity has zero directed edges and no defined cycle phase. Why this blocks: the source is not correct as written even though its proper-projector core, identity readback, thermal counterexamples, and determinant inversion independently check out. Repair target: narrow the theorem sentence and add an executable degenerate-case guard documenting why rank three is excluded. Claim boundary until fixed: only the proper rank-one/rank-two projector statement is supported; N1 records identity, projector, thermal, finite-comparator, and direct-inversion attacks while leaving exhaustion and non-circulant routes open, N2 collapses the three behaviors to one tested-class boundary, N3 makes the supplied-surface and registered-state limitations explicit, N4 imports no mismatched prior witness, N5 restricts the negative rhetoric to tested classes, N6 preserves ordinary partial-closure paths, N7 accepts the moving-eigenvector steelman, and N8 uses similar prior patterns only as context."
 }

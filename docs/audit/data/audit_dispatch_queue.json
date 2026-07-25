@@ -3236,9 +3236,9 @@
       "state": "retired"
     },
     {
-      "actual_audit_status": "unaudited",
+      "actual_audit_status": "audited_conditional",
       "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "unaudited",
+      "actual_effective_status": "audited_conditional",
       "audit_question": "Does the finite Hilbert-Schmidt color projection identity qualify as positive_theorem without promoting kappa_EW matching?",
       "claim_id": "rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17",
       "expected_current_audit_status": "audited_clean",
